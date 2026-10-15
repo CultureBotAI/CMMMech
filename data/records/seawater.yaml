@@ -1,0 +1,149 @@
+id: cmmmech:seawater
+name: Seawater
+material_kind: primary_resource
+description: >-
+  Naturally occurring marine saline water considered as a dissolved-material
+  extraction feed. It is a variable aqueous resource, distinct from elemental
+  uranium, a mineral species, a manufactured salt product and desalination
+  concentrate. The curated study used natural seawater in a laboratory dialysis
+  experiment with nutrient-supported bacterial growth. Its composition and
+  response do not define all seawater. No criticality designation or external
+  material identifier is inferred from its constituents.
+sources:
+  - id: yuan2019
+    title: >-
+      Yuan, Yu, Yang, Wen, Guo, Wang and Wang (2019). Ultrafast Recovery of
+      Uranium from Seawater by Bacillus velezensis Strain UUS-1 with Innate
+      Anti-Biofouling Activity. Advanced Science 6(18):1900961;
+      DOI 10.1002/advs.201900961. Full published XML, Sections 2.1-2.5 and 4,
+      Figures 2-6; PMC6755527, PMID 31559134.
+    url: https://doi.org/10.1002/advs.201900961
+    accessed_on: '2026-10-15'
+  - id: yuan2019_si
+    title: >-
+      Supporting Information to Yuan et al. (2019), DOI 10.1002/advs.201900961;
+      nine-page ADVS-6-1900961-s001.pdf from EuropePMC supplementaryFiles.
+      Figure S2 (p. 4), Table S1 (p. 8), Table S2 (p. 9).
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6755527/supplementaryFiles
+    accessed_on: '2026-10-15'
+  - id: ncbi492670
+    title: >-
+      NCBI Taxonomy 492670, Bacillus velezensis, species; current authority
+      checked 2026-10-15. Species identifier does not identify strain UUS-1.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=492670&mode=info
+    accessed_on: '2026-10-15'
+  - id: mk092976
+    title: >-
+      GenBank MK092976.1, Bacillus velezensis strain UUS-1 partial 16S ribosomal
+      RNA gene, 1533 bp; version and strain qualifier verified 2026-10-15.
+    url: https://www.ncbi.nlm.nih.gov/nuccore/MK092976.1
+    accessed_on: '2026-10-15'
+  - id: snva00000000
+    title: >-
+      GenBank SNVA00000000.1, Bacillus velezensis strain UUS-1 whole-genome
+      shotgun project, version 01 comprising SNVA01000001-SNVA01000034;
+      source qualifiers checked 2026-10-15.
+    url: https://www.ncbi.nlm.nih.gov/nuccore/SNVA00000000.1
+    accessed_on: '2026-10-15'
+mechanisms:
+  - id: uus1_natural_seawater_uranium_immobilization
+    name: UUS-1 cell-associated uranium immobilization in natural seawater
+    process: biosorption
+    microbial: true
+    organisms:
+      - id: NCBITaxon:492670
+        label: Bacillus velezensis
+    description: >-
+      Growing Bacillus velezensis UUS-1 in a nutrient-containing dialysis tube
+      was associated with declining uranium in the surrounding natural seawater
+      and uranium measured in harvested cells. This supports cell-associated
+      immobilization under the laboratory protocol. Biosorption is a broad
+      process label here: adsorption, intracellular accumulation and other
+      contributions were not quantitatively partitioned in this natural-water
+      arm. Separate spiked-media and cell-debris experiments suggest involvement
+      of carboxyl- and amino-containing material, without establishing a specific
+      protein or a unique in situ uptake pathway. An isolated uranium product,
+      regeneration performance and industrial deployment were not demonstrated.
+    context: >-
+      Section 4 describes 10 microlitres of exponential-phase UUS-1 culture
+      in a 3 kDa dialysis tube with 1 mL seawater, 25 mg tryptone and 15 mg
+      yeast extract, immersed in 1 L natural seawater at 30 degrees C with
+      moderate shaking for 48 h; three independent experiments. No uranium
+      addition is described for this arm. External-water uranium was measured
+      by ICP-MS every 12 h, viable cells by dilution counting, and harvested
+      cells by ICP-MS at 48 h. Figure 6b plots declining water uranium and
+      increasing bacterial numbers; Section 2.5 reports 24.33% immobilization
+      and 213.89 +/- 9.01 mg U/kg final dry bacterial cells. These are reported
+      assay outcomes, not an independently closed mass balance or product yield.
+      The tube volume increased during growth. Figure 6e provides a no-UUS-1
+      tube comparison for surface fouling, but Figure 6b does not display a
+      matched no-cell uranium time course. Nutrient uranium blanks, membrane
+      sorption, cellular washing/digestion details and final uranium partition
+      among all compartments are not resolved in the inspected methods.
+      Natural seawater sampling location/date and assay pH are not specified;
+      the pH 7.2 spiked-medium and pH 7.0 cell/debris protocols are separate.
+      Section 2.1 identifies beach sand from Haikou as the strain isolation
+      source, whereas the WGS submission says seawater from Haikou. That
+      provenance discrepancy does not identify the assay-water collection site.
+    evidence:
+      - source_ref: yuan2019
+        supports: support
+        explanation: >-
+          Section 2.5, Figure 6a-c and the final Section 4 method establish
+          the natural-water dialysis treatment, cell growth, water uranium
+          depletion and harvested-cell uranium. These observations support
+          a qualified laboratory immobilization claim for this strain and
+          nutrient-supported protocol, without generalizing to seawater-wide
+          performance or uranium product recovery.
+      - source_ref: yuan2019
+        supports: partial
+        explanation: >-
+          Sections 2.2-2.3 and Figures 2-4 concern uranium-spiked LB/seawater
+          broth or simulated seawater and prepared cell debris. Group shielding
+          and proteinase treatment change adsorption, but do not identify an
+          individual binding protein; loss of biomass during proteinase
+          treatment complicates attribution. XPS is interpreted by the authors
+          as retained U(VI), not evidence of U(VI)-to-U(IV) reduction. These
+          supporting assays do not directly establish the molecular mechanism
+          in unspiked natural seawater. Genome cluster predictions and reduced
+          surface fouling do not establish which antimicrobial compound caused
+          the observed effect.
+      - source_ref: yuan2019_si
+        supports: partial
+        explanation: >-
+          Table S2 distinguishes final wet cells, final dry cells and initial
+          culture normalization; its seawater U cell is 3.10 micrograms/kg,
+          despite the general mg/kg header. The reported 9.46 +/- 0.39 mg U/g
+          initial cultures and 6.26 x 10^5 concentration ratio in Section 2.5
+          must not be relabeled as final-biomass capacity. The initial-culture
+          U concentration 9456.59 mg/kg divided by 0.00310 mg/kg seawater does
+          not reproduce the tabulated ratio 625746.40. Initial biomass/media
+          accounting is unresolved, so neither headline quantity is accepted
+          as a comparable performance metric. Table S2 also cannot assign
+          other accumulated elements uniquely to seawater rather than added
+          nutrients. No structured concentration observations are curated.
+      - source_ref: mk092976
+        supports: support
+        explanation: >-
+          The current GenBank record retains version MK092976.1 and explicitly
+          identifies UUS-1 and taxon 492670, consistent with the study's
+          16S-based attribution and Figure S2. This grounds the reported strain
+          attribution without independently repeating species delimitation.
+      - source_ref: snva00000000
+        supports: context_only
+        explanation: >-
+          The WGS master record explicitly identifies strain UUS-1, taxon
+          492670 and 34 component sequences. Its isolation-source qualifier
+          differs from the paper's beach-sand description; a genome accession
+          does not independently establish metal uptake or metabolite production.
+curation_history:
+  - timestamp: '2026-10-15T18:30:36Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Curated the seawater resource identity and qualified laboratory UUS-1
+      uranium immobilization from the full primary article and supplement.
+      Preserved assay boundaries, initial-culture accounting uncertainty,
+      strain-source discrepancy, controls and deployment limitations.
+history_refs:
+  - history/records/seawater/2026-10-15T183036Z-codex-708f2e.yaml

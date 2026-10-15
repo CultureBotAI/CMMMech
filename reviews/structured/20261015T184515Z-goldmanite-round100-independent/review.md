@@ -1,0 +1,520 @@
+# Independent scientific review of Goldmanite
+
+- Review: 20261015T184515Z-goldmanite-round100-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T18:31:27.930333Z
+- Finished UTC: 2026-10-15T18:45:15.191434Z
+- Reviewer: codex /root/round100_sulfates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Accepted mineral identity and qualified abiotic laboratory crystallization are supported; specimen, run, valence, purity and deployment limits remain explicit.
+
+## Scope And Provenance
+
+Entire maintained owner and CREATE history, claim-bearing primary methods/results/figures/tables, dated authority, bounded notices and duplicate searches.
+
+Selection: Parent-assigned independent review after author freeze.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base b6831c1da19b475ea048baea4ba5c10b96d678af.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:goldmanite | data/records/goldmanite.yaml | maintained | Goldmanite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent primary-evidence assessment | passed | True | cmmmech:goldmanite | Exact maintained owner, original methods/results/figures/tables, authority and bounded contrary-evidence searches inspected. |
+| Independent named strict validation | passed | True | cmmmech:goldmanite | Actual terminal result: 2 checked, 0 failed. |
+| Completed coordinator batch check 1 | passed | True | cmmmech:goldmanite | Actual completed receipt and retained log verified; exact frozen owner hash unchanged. |
+| Completed coordinator batch check 2 | passed | True | cmmmech:goldmanite | Actual completed receipt and retained log verified; exact frozen owner hash unchanged. |
+| Completed coordinator batch check 3 | passed | True | cmmmech:goldmanite | Actual completed receipt and retained log verified; exact frozen owner hash unchanged. |
+| Completed coordinator batch check 4 | passed | True | cmmmech:goldmanite | Actual completed receipt and retained log verified; exact frozen owner hash unchanged. |
+
+## Scientific And Domain Assessments
+
+### Exact species and substituted natural material
+
+identity: supported. Targets: cmmmech:goldmanite.
+
+Current accepted goldmanite identity is distinct from the characterized natural mixture of garnet endmembers.
+
+IMA A/1963-003 and Ca3V3+2(SiO4)3 agree. Laguna prospect-pit grains are not described as pure endmember. The 59.8 mole-percent calculation is neither phase fraction nor extraction yield. Original chemical methods could not resolve Fe/V valence; inferred trivalence and possible earlier spinel interference remain explicit.
+
+### Two separate abiotic experiments
+
+scope: supported. Targets: cmmmech:goldmanite.
+
+Ito run 6 and the Strens synthesis have correctly separated protocols and provenance.
+
+Ito Table2 run6: nominal G-c gel precipitated with NH4OH/(NH4)2CO3; initially V4+, dried below100 C; sealed2-5mm gold tubing with retained water, no extra water; added ascorbic acid; 760 C/15000 psi/24 h. No measured oxygen fugacity or complete initial pH. Strens: Ca:V3:2 glass with excess silica, 530 C/3.0 kbar/30 days and stated hematite-magnetite buffer; limited recipe/apparatus detail is not filled by Ito methods.
+
+### Diffraction identity and distinct characterization runs
+
+evidence: supported. Targets: cmmmech:goldmanite.
+
+Formation observations are supported without transferring purity or site-valence claims between runs.
+
+Ito lists goldmanite alone for run6, but Table5 diffraction is run2 and Table8 bulk chemistry is run5. Run1 produces hydrated calcium silicate/VO2 without goldmanite; other recipes produce mixed products. Author attribution of minor V4+ to oxide impurities does not establish every garnet site. Figure3 is not run6-specific. Uncontrolled atmosphere and limited products do not prove reversible equilibrium.
+
+### Measured properties versus calculated values and yield
+
+quantity: supported. Targets: cmmmech:goldmanite.
+
+No invented yield denominator or replication is introduced.
+
+Strens measured n=1.834 +/-0.003 and cell edge12.070 +/-0.005 angstrom, distinct from estimates corrected for natural garnet composition. Theoretical yield has no supplied measured mass balance or uncertainty. Ito phase fractions, isolated V recovery and run6-specific quantitative purity were not measured. Separate recipes and characterized runs are not replicate trials.
+
+### Material form, biology, criticality and deployment
+
+scope: supported. Targets: cmmmech:goldmanite.
+
+No constituent criticality or microbial/industrial inference is imported.
+
+Criticality is unrecorded, not claimed absent; no jurisdiction/list/edition designation is inherited from elemental vanadium. Recorded mechanisms are abiotic reagent-based laboratory crystallization with microbial:false. No organism, strain, consortium, biomass state or biological control applies. Geological context and natural mineral identity do not establish microbial causality or resource recovery.
+
+### Frozen current owner and review independence
+
+provenance: supported. Targets: cmmmech:goldmanite.
+
+Native inspect hashes and separate canonical history preserve an auditable working-tree review.
+
+Trusted base b6831c1da19b475ea048baea4ba5c10b96d678af and exact owner/history/dossier/schema hashes captured before assessment. Reviewer authored separate sulfate records and did not edit these vanadium owners. Inline CREATE and linked canonical history are distinct. Named check independently executed; batch evidence attached only after its actual terminal receipt/log and unchanged owner hash were verified.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/goldmanite.yaml; Entire exact maintained owner, captured through native inspect before assessment. | supports | Identity, sources, run-specific mechanism statements, contradictory outcomes, scope limits and provenance independently assessed. |
+| history | history/records/goldmanite/2026-10-15T182657Z-codex-3d562d.yaml; Complete canonical CREATE, inline curation_history and history_refs. | supports | Actual actor/model, UTC session, exact owner path and described work agree; inline event and canonical session remain distinct. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September 2026 official list, status definitions p1; exact goldmanite row on PDF page 84. | supports | Independent current authority PDF inspection confirms accepted species, ideal formula and numbered approval identifier. |
+| search | Independent bounded source-notice and duplicate searches; /private/tmp/cmm-round100-sulfates-research/vanadium-review-search.json; /private/tmp/cmm-round100-sulfates-research/vanadium-review-dedup.txt | context_only | Returned search sets surfaced no correction/retraction notice affecting the curated claims. Shared Ito evidence is separate species-specific experimental arms, not duplicate replication. Generic discovery mentions are not duplicate maintained owners. |
+| named | uv run --locked cmmmech validate data/records/goldmanite.yaml data/records/haradaite.yaml; /private/tmp/cmm-round100-sulfates-research/vanadium-named-validation.log | supports | Independently executed named strict validation completed with 2 checked and 0 failed. Schema validity does not establish scientific truth. |
+| dossier | research/sources/round100-vanadium/20261015T182934Z.md; Paired frozen JSON/Markdown dossier, primary acquisitions and deferred leads. | supports | Source identity, access, exact run attribution, uncertainty and owner/history mapping checked against the independently inspected originals. |
+| ito | https://doi.org/10.2465/minerj1953.4.299; Ito 1965 complete 18-page original; common methods pp300-301; Table 2 p303, Table 5 p306, Fig3 p310, chemical methods p311 and Table 8 p312 and discussion pp313-315. | supports | Species-specific run assignment, precursor preparation, pressure/temperature/duration, diffraction versus bulk chemistry, mixed/null products and uncontrolled atmosphere independently checked; original figures and tables visually inspected. |
+| moench | https://msaweb.org/AmMin/AM49/AM49_644.pdf; Moench and Meyrowitz 1964 pp644-655; locality/separation pp646-648, Table1 p649, methods and Tables3-4 pp650-652, valence/composition discussion pp652-653. | supports | Fine Laguna grains, substituted natural garnet, total vanadium reported as V2O3 despite unavailable chemical valence determination, possible earlier spinel contamination and calculated 59.8 mole-percent endmember checked. |
+| strens | https://msaweb.org/AmMin/AM50/AM50_260.pdf; Strens 1965 p260, complete one-page note visually inspected. | supports | Independent glass-based synthesis at 530 C, 3.0 kbar, 30 days under stated hematite-magnetite buffer; measured cell edge/refractive index distinguished from corrected natural estimates and an unquantified theoretical-yield statement. |
+| batch | /private/tmp/cmm-round100-final-gates.json; Completed coordinator receipt and retained log /private/tmp/cmm-round100-final-gates.log, log SHA256 1d26fc881828a6ce668c84c6458674b6be8a6af044068c144323a7200677e32d. | supports | Verified exact trusted base, four terminal zero exits, log hash, unchanged corpus inputs and exact reviewed owner hashes. These whole-corpus commands were executed by the coordinator, not independently repeated by this reviewer. |
+
+## Limits And Additional Notes
+
+- Original natural garnet chemistry did not directly resolve V/Fe valence; ideal V3+ identity and substituted natural composition are different claims.
+- Ito powder diffraction, bulk chemical analysis and selected synthesis conditions use different runs. No site-specific redox or quantitative phase-purity reanalysis was performed.
+- The short Strens note lacks a complete apparatus/recipe, replication and quantified mass balance; its yield wording is not a numerical recovery result.
+- Later structural/elasticity sources in the dossier remain future leads, not newly assessed claims in this record. No microbial extraction, industrial deployment or isolated-metal recovery is established.
+- Primary sources acquired by the vanadium curator were independently inspected here; current IMA copy was independently acquired in the sulfate lane. This does not imply independent experimental replication.
+- No supported corrective findings remain at any severity, and no record corrections were made by this reviewer. Source limitations are preserved rather than converted into unsupported assertions.
+- The whole-corpus checks are coordinator executions, verified by actual completed receipt, log hash and frozen input hashes. The structured review corpus must be checked again after persistence.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T184515Z-goldmanite-round100-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Goldmanite
+started_at: '2026-10-15T18:31:27.930333Z'
+finished_at: '2026-10-15T18:45:15.191434Z'
+reviewer:
+  identity: codex /root/round100_sulfates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The vanadium-lane agent authored this owner. I curated separate
+    voltaite/pertlikite records, independently inspected the frozen target and primary
+    evidence, and made no vanadium owner/history edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Accepted mineral identity and qualified abiotic laboratory crystallization
+  are supported; specimen, run, valence, purity and deployment limits remain explicit.
+source:
+  git_revision: b6831c1da19b475ea048baea4ba5c10b96d678af
+  state: working_tree
+  inputs:
+  - path: data/records/goldmanite.yaml
+    sha256: 02ed7a5f86826088ea63dda56b5d401532164a211ddbf932d0135b414751d59f
+    role: target
+  - path: history/records/goldmanite/2026-10-15T182657Z-codex-3d562d.yaml
+    sha256: 7cdf2b36da326ced4c5e65f3257a8c894a2e5d203ae4957341783e67737e5dc6
+    role: context
+  - path: research/sources/round100-vanadium/20261015T182934Z.json
+    sha256: 3050468f5a8f84ac502221ee73db14fb319301b4cf07fcdf242fc9b6fa7fcf6d
+    role: context
+  - path: research/sources/round100-vanadium/20261015T182934Z.md
+    sha256: 0c7dc6b5dbed2bb54bd5df3bcedab101bf201b68fb88539341e03bd287bef177
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire maintained owner and CREATE history, claim-bearing primary methods/results/figures/tables,
+    dated authority, bounded notices and duplicate searches.
+  selection: Parent-assigned independent review after author freeze.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:goldmanite
+targets:
+- target_id: cmmmech:goldmanite
+  path: data/records/goldmanite.yaml
+  label: Goldmanite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/goldmanite.yaml
+    role: maintained_record
+checks:
+- check_id: science
+  name: Independent primary-evidence assessment
+  required: true
+  status: passed
+  summary: Exact maintained owner, original methods/results/figures/tables, authority
+    and bounded contrary-evidence searches inspected.
+  target_ids:
+  - cmmmech:goldmanite
+  evidence_ids:
+  - owner
+  - ima
+  - search
+  - ito
+  - moench
+  - strens
+- check_id: named
+  name: Independent named strict validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/goldmanite.yaml data/records/haradaite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Actual terminal result: 2 checked, 0 failed.'
+  target_ids:
+  - cmmmech:goldmanite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch check 1
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed receipt and retained log verified; exact frozen owner
+    hash unchanged.
+  target_ids:
+  - cmmmech:goldmanite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch check 2
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed receipt and retained log verified; exact frozen owner
+    hash unchanged.
+  target_ids:
+  - cmmmech:goldmanite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch check 3
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base b6831c1da19b475ea048baea4ba5c10b96d678af
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed receipt and retained log verified; exact frozen owner
+    hash unchanged.
+  target_ids:
+  - cmmmech:goldmanite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch check 4
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed receipt and retained log verified; exact frozen owner
+    hash unchanged.
+  target_ids:
+  - cmmmech:goldmanite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/goldmanite.yaml
+  locator: Entire exact maintained owner, captured through native inspect before assessment.
+  accessed_at: '2026-10-15T18:45:15.191434Z'
+  support: supports
+  summary: Identity, sources, run-specific mechanism statements, contradictory outcomes,
+    scope limits and provenance independently assessed.
+  snapshot_sha256: 02ed7a5f86826088ea63dda56b5d401532164a211ddbf932d0135b414751d59f
+- evidence_id: history
+  kind: record_content
+  reference: history/records/goldmanite/2026-10-15T182657Z-codex-3d562d.yaml
+  locator: Complete canonical CREATE, inline curation_history and history_refs.
+  accessed_at: '2026-10-15T18:45:15.191434Z'
+  support: supports
+  summary: Actual actor/model, UTC session, exact owner path and described work agree;
+    inline event and canonical session remain distinct.
+  snapshot_sha256: 7cdf2b36da326ced4c5e65f3257a8c894a2e5d203ae4957341783e67737e5dc6
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 official list, status definitions p1; exact goldmanite row
+    on PDF page 84.
+  accessed_at: '2026-10-15T18:45:15.191434Z'
+  support: supports
+  summary: Independent current authority PDF inspection confirms accepted species,
+    ideal formula and numbered approval identifier.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: search
+  kind: search
+  reference: Independent bounded source-notice and duplicate searches
+  locator: /private/tmp/cmm-round100-sulfates-research/vanadium-review-search.json;
+    /private/tmp/cmm-round100-sulfates-research/vanadium-review-dedup.txt
+  accessed_at: '2026-10-15T18:45:15.191434Z'
+  support: context_only
+  summary: Returned search sets surfaced no correction/retraction notice affecting
+    the curated claims. Shared Ito evidence is separate species-specific experimental
+    arms, not duplicate replication. Generic discovery mentions are not duplicate
+    maintained owners.
+  search_scope: Four exact queries retained in search receipt, official J-STAGE article/issue
+    metadata and inspected originals; rg --no-ignore --hidden --follow across data/research/reviews/history,
+    round100 and referenced round99 vanadium raw roots, and all-253-issue integration
+    snapshot. Bounded search, including hidden and ignored files and relevant symlinks,
+    does not establish exhaustive literature absence.
+  snapshot_sha256: 5f753cf760628dec662b942d1f828b34d628117c2ab6bb00690aea341f1a849f
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/goldmanite.yaml data/records/haradaite.yaml
+  locator: /private/tmp/cmm-round100-sulfates-research/vanadium-named-validation.log
+  accessed_at: '2026-10-15T18:45:15.191434Z'
+  support: supports
+  summary: Independently executed named strict validation completed with 2 checked
+    and 0 failed. Schema validity does not establish scientific truth.
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round100-vanadium/20261015T182934Z.md
+  locator: Paired frozen JSON/Markdown dossier, primary acquisitions and deferred
+    leads.
+  accessed_at: '2026-10-15T18:45:15.191434Z'
+  support: supports
+  summary: Source identity, access, exact run attribution, uncertainty and owner/history
+    mapping checked against the independently inspected originals.
+  snapshot_sha256: 0c7dc6b5dbed2bb54bd5df3bcedab101bf201b68fb88539341e03bd287bef177
+- evidence_id: ito
+  kind: primary_source
+  reference: https://doi.org/10.2465/minerj1953.4.299
+  locator: Ito 1965 complete 18-page original; common methods pp300-301; Table 2 p303,
+    Table 5 p306, Fig3 p310, chemical methods p311 and Table 8 p312 and discussion
+    pp313-315.
+  accessed_at: '2026-10-15T18:45:15.191434Z'
+  support: supports
+  summary: Species-specific run assignment, precursor preparation, pressure/temperature/duration,
+    diffraction versus bulk chemistry, mixed/null products and uncontrolled atmosphere
+    independently checked; original figures and tables visually inspected.
+  snapshot_sha256: 710483df8b93b1e0da3f03d7476bce8c5b5309d9eac35e38d0c9fa190c407c21
+- evidence_id: moench
+  kind: primary_source
+  reference: https://msaweb.org/AmMin/AM49/AM49_644.pdf
+  locator: Moench and Meyrowitz 1964 pp644-655; locality/separation pp646-648, Table1
+    p649, methods and Tables3-4 pp650-652, valence/composition discussion pp652-653.
+  accessed_at: '2026-10-15T18:45:15.191434Z'
+  support: supports
+  summary: Fine Laguna grains, substituted natural garnet, total vanadium reported
+    as V2O3 despite unavailable chemical valence determination, possible earlier spinel
+    contamination and calculated 59.8 mole-percent endmember checked.
+  snapshot_sha256: a1b9f8f3b2ee327d8faa73015d9428b6b770066b204f5d7f0befbf8be43ed01f
+- evidence_id: strens
+  kind: primary_source
+  reference: https://msaweb.org/AmMin/AM50/AM50_260.pdf
+  locator: Strens 1965 p260, complete one-page note visually inspected.
+  accessed_at: '2026-10-15T18:45:15.191434Z'
+  support: supports
+  summary: Independent glass-based synthesis at 530 C, 3.0 kbar, 30 days under stated
+    hematite-magnetite buffer; measured cell edge/refractive index distinguished from
+    corrected natural estimates and an unquantified theoretical-yield statement.
+  snapshot_sha256: 296f58aa1ec9f0cc597734a6a504e020738f1c73a0b4db2013965fb2d77a332a
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round100-final-gates.json
+  locator: Completed coordinator receipt and retained log /private/tmp/cmm-round100-final-gates.log,
+    log SHA256 1d26fc881828a6ce668c84c6458674b6be8a6af044068c144323a7200677e32d.
+  accessed_at: '2026-10-15T18:45:15.191434Z'
+  support: supports
+  summary: Verified exact trusted base, four terminal zero exits, log hash, unchanged
+    corpus inputs and exact reviewed owner hashes. These whole-corpus commands were
+    executed by the coordinator, not independently repeated by this reviewer.
+  snapshot_sha256: 3a6f970f9a5bb1e442804dd5529b6eb0acfdcb76a9311cda62204cf368c6b939
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact species and substituted natural material
+  outcome: supported
+  summary: Current accepted goldmanite identity is distinct from the characterized
+    natural mixture of garnet endmembers.
+  details: IMA A/1963-003 and Ca3V3+2(SiO4)3 agree. Laguna prospect-pit grains are
+    not described as pure endmember. The 59.8 mole-percent calculation is neither
+    phase fraction nor extraction yield. Original chemical methods could not resolve
+    Fe/V valence; inferred trivalence and possible earlier spinel interference remain
+    explicit.
+  target_ids:
+  - cmmmech:goldmanite
+  evidence_ids:
+  - owner
+  - ima
+  - moench
+- assessment_id: conditions
+  area: scope
+  topic: Two separate abiotic experiments
+  outcome: supported
+  summary: Ito run 6 and the Strens synthesis have correctly separated protocols and
+    provenance.
+  details: 'Ito Table2 run6: nominal G-c gel precipitated with NH4OH/(NH4)2CO3; initially
+    V4+, dried below100 C; sealed2-5mm gold tubing with retained water, no extra water;
+    added ascorbic acid; 760 C/15000 psi/24 h. No measured oxygen fugacity or complete
+    initial pH. Strens: Ca:V3:2 glass with excess silica, 530 C/3.0 kbar/30 days and
+    stated hematite-magnetite buffer; limited recipe/apparatus detail is not filled
+    by Ito methods.'
+  target_ids:
+  - cmmmech:goldmanite
+  evidence_ids:
+  - owner
+  - ito
+  - strens
+- assessment_id: outcome
+  area: evidence
+  topic: Diffraction identity and distinct characterization runs
+  outcome: supported
+  summary: Formation observations are supported without transferring purity or site-valence
+    claims between runs.
+  details: Ito lists goldmanite alone for run6, but Table5 diffraction is run2 and
+    Table8 bulk chemistry is run5. Run1 produces hydrated calcium silicate/VO2 without
+    goldmanite; other recipes produce mixed products. Author attribution of minor
+    V4+ to oxide impurities does not establish every garnet site. Figure3 is not run6-specific.
+    Uncontrolled atmosphere and limited products do not prove reversible equilibrium.
+  target_ids:
+  - cmmmech:goldmanite
+  evidence_ids:
+  - owner
+  - ito
+- assessment_id: quantity
+  area: quantity
+  topic: Measured properties versus calculated values and yield
+  outcome: supported
+  summary: No invented yield denominator or replication is introduced.
+  details: Strens measured n=1.834 +/-0.003 and cell edge12.070 +/-0.005 angstrom,
+    distinct from estimates corrected for natural garnet composition. Theoretical
+    yield has no supplied measured mass balance or uncertainty. Ito phase fractions,
+    isolated V recovery and run6-specific quantitative purity were not measured. Separate
+    recipes and characterized runs are not replicate trials.
+  target_ids:
+  - cmmmech:goldmanite
+  evidence_ids:
+  - owner
+  - ito
+  - strens
+  - moench
+- assessment_id: criticality
+  area: scope
+  topic: Material form, biology, criticality and deployment
+  outcome: supported
+  summary: No constituent criticality or microbial/industrial inference is imported.
+  details: Criticality is unrecorded, not claimed absent; no jurisdiction/list/edition
+    designation is inherited from elemental vanadium. Recorded mechanisms are abiotic
+    reagent-based laboratory crystallization with microbial:false. No organism, strain,
+    consortium, biomass state or biological control applies. Geological context and
+    natural mineral identity do not establish microbial causality or resource recovery.
+  target_ids:
+  - cmmmech:goldmanite
+  evidence_ids:
+  - owner
+  - ima
+  dimensions:
+  - name: material_form
+    value: mineral species
+    definition: Separate from an element, commodity or mixed secondary resource.
+    evidence_ids:
+    - owner
+    - ima
+  - name: criticality
+    value: not asserted
+    definition: No jurisdiction/list/edition designation attached.
+    evidence_ids:
+    - owner
+  - name: biomass
+    value: not applicable; abiotic
+    definition: No live, dead or unspecified microbial biomass participates in the
+      recorded experiments.
+    evidence_ids:
+    - owner
+    - ito
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen current owner and review independence
+  outcome: supported
+  summary: Native inspect hashes and separate canonical history preserve an auditable
+    working-tree review.
+  details: Trusted base b6831c1da19b475ea048baea4ba5c10b96d678af and exact owner/history/dossier/schema
+    hashes captured before assessment. Reviewer authored separate sulfate records
+    and did not edit these vanadium owners. Inline CREATE and linked canonical history
+    are distinct. Named check independently executed; batch evidence attached only
+    after its actual terminal receipt/log and unchanged owner hash were verified.
+  target_ids:
+  - cmmmech:goldmanite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- Original natural garnet chemistry did not directly resolve V/Fe valence; ideal V3+
+  identity and substituted natural composition are different claims.
+- Ito powder diffraction, bulk chemical analysis and selected synthesis conditions
+  use different runs. No site-specific redox or quantitative phase-purity reanalysis
+  was performed.
+- The short Strens note lacks a complete apparatus/recipe, replication and quantified
+  mass balance; its yield wording is not a numerical recovery result.
+- Later structural/elasticity sources in the dossier remain future leads, not newly
+  assessed claims in this record. No microbial extraction, industrial deployment or
+  isolated-metal recovery is established.
+notes:
+- Primary sources acquired by the vanadium curator were independently inspected here;
+  current IMA copy was independently acquired in the sulfate lane. This does not imply
+  independent experimental replication.
+- No supported corrective findings remain at any severity, and no record corrections
+  were made by this reviewer. Source limitations are preserved rather than converted
+  into unsupported assertions.
+- The whole-corpus checks are coordinator executions, verified by actual completed
+  receipt, log hash and frozen input hashes. The structured review corpus must be
+  checked again after persistence.
+```

@@ -13,11 +13,11 @@
   </div>
   <div class="stat-card">
     <div class="stat-number">{{ total_mechanisms }}</div>
-    <div class="stat-label">Biological Mechanisms</div>
+    <div class="stat-label">Curated Mechanisms</div>
   </div>
   <div class="stat-card">
     <div class="stat-number">{{ materials_with_mechs }}</div>
-    <div class="stat-label">Materials with Bio-Mechanisms</div>
+    <div class="stat-label">Materials with Mechanisms</div>
   </div>
   <div class="stat-card">
     <div class="stat-number">{{ critical_materials_count }}</div>
@@ -26,7 +26,7 @@
 </div>
 
 <h2>Material Kinds</h2>
-<p>Records are classified into six distinct material kinds to preserve the boundary between chemical elements, crystalline minerals, commercial commodities, and secondary waste feeds.</p>
+<p>Records distinguish chemical elements, mineral species and groups, commodities, and primary and secondary resources.</p>
 
 <ul class="cards">
   {% for k in kinds %}
@@ -42,8 +42,8 @@
   {% endfor %}
 </ul>
 
-<h2>Microbial Transformation Processes</h2>
-<p>Each biological mechanism captures experimental feedstocks, microbial agents, reaction conditions, and formal evidence evaluations.</p>
+<h2>Curated Processes</h2>
+<p>Mechanism records describe biological and abiotic processes, with experimental materials, conditions, evidence and limitations. Microbial involvement is stated explicitly.</p>
 
 <ul class="cards">
   {% for m in processes %}
@@ -108,7 +108,7 @@
     <li><strong>Chemical identity separation:</strong> An element (e.g. <em>Lithium</em>) is strictly distinct from its mineral hosts (e.g. <em>Spodumene</em>, <em>Jadarite</em>) and its commercial form.</li>
     <li><strong>Mechanism evidence boundaries:</strong> Laboratory solubilization or binding is explicitly distinguished from full industrial recovery, elemental yield, or isolated pure metal.</li>
     <li><strong>Negative &amp; control evidence:</strong> Abiotic controls, matched acid baselines, and null results are recorded alongside positive extraction claims to prevent inflated efficacy.</li>
-    <li><strong>Structured provenance:</strong> Every material links to primary research citations, ChEBI, and NCBI Taxonomy identifiers.</li>
+    <li><strong>Structured provenance:</strong> Records cite their evidence sources and include material or organism identifiers where verified.</li>
   </ul>
 </div>
 {% endblock %}

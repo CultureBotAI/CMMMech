@@ -1,0 +1,90 @@
+{
+  "timestamp_utc": "2026-10-15T18:50:56.573446Z",
+  "scope": "Preparatory finding only; final publication package not frozen or accepted.",
+  "finding": {
+    "id": "homepage-biological-overclaim",
+    "issue_key": "CMMMech:round100:homepage-mechanism-labels",
+    "severity": "minor",
+    "status": "open",
+    "summary": "Homepage labels all counted mechanisms and process categories biological/microbial, while five newly added mechanisms are explicitly abiotic.",
+    "affected": [
+      "src/cmmmech/templates/index.html:16",
+      "src/cmmmech/templates/index.html:20",
+      "src/cmmmech/templates/index.html:45",
+      "src/cmmmech/templates/index.html:46"
+    ],
+    "proposal": "Use neutral mechanism/material/process labels and prose that allow abiotic evidence; preserve counting logic and scientific owner bytes.",
+    "acceptance": "Regenerate pages, check homepage labels and counts, preserve all record hashes, run affected renderer checks and appropriate existing tests."
+  },
+  "inputs": [
+    {
+      "path": "src/cmmmech/templates/index.html",
+      "sha256": "fe4ebe26311dbcb6cb45775e07da7b90f46188d0bc1317c0ee50553355d6a2fb"
+    },
+    {
+      "path": "scripts/render_pages.py",
+      "sha256": "f1aaa6c382b057a4e4f2702a24e2bebb974403703e4e3b055fffdda024797357"
+    },
+    {
+      "path": "pages/index.html",
+      "sha256": "0d13f75ec8ab6582544e27900757b2419caea197c85f99be2571f472adca5a90"
+    },
+    {
+      "path": "data/records/goldmanite.yaml",
+      "sha256": "02ed7a5f86826088ea63dda56b5d401532164a211ddbf932d0135b414751d59f"
+    },
+    {
+      "path": "data/records/haradaite.yaml",
+      "sha256": "3254359adeb4d0e78c35d8afdb83819e54507341369451e71ee93df2108f0c06"
+    },
+    {
+      "path": "data/records/pentagonite.yaml",
+      "sha256": "b9df9885b6850d0e03cf5d30220e806e060b618fe07166804574a375598235ed"
+    },
+    {
+      "path": "data/records/seawater.yaml",
+      "sha256": "3eca7555a6f0a9f377001f5968a9924b73d014179255a4c1d4a6bcf412850ec5"
+    }
+  ],
+  "new_mechanisms": [
+    {
+      "path": "data/records/goldmanite.yaml",
+      "count": 2
+    },
+    {
+      "path": "data/records/haradaite.yaml",
+      "count": 1
+    },
+    {
+      "path": "data/records/pentagonite.yaml",
+      "count": 2
+    },
+    {
+      "path": "data/records/seawater.yaml",
+      "count": 1
+    }
+  ],
+  "dedup": "253 all-state issues searched for exact biological labels and related page/count phrases; only unrelated closed stevensite locator #263 matched incidentally. Hidden/ignored/followed bounded template/docs/review/report searches included source files.",
+  "audit_id": "20261015T185056Z-homepage-labels-initial",
+  "reviewed_revision": "b6831c1da19b475ea048baea4ba5c10b96d678af",
+  "working_changes": "Maintained homepage template is unchanged from the base; regenerated index includes six added mechanisms and four mechanism-bearing materials. Final package remains unfrozen.",
+  "reviewer": {
+    "identity": "codex /root/round100_pentagonite",
+    "model": "GPT-6",
+    "scope": "Independent presentation/provenance audit, not self-review of pentagonite science."
+  },
+  "verdict": "revise",
+  "counts": {
+    "base_total_mechanisms": 490,
+    "current_total_mechanisms": 496,
+    "base_materials_with_mechanisms": 401,
+    "current_materials_with_mechanisms": 405,
+    "new_abiotic_mechanisms": 5,
+    "new_biological_mechanisms": 1
+  },
+  "limitations": [
+    "Final package/report review is pending.",
+    "No scientific owner or existing scientific review is changed or invalidated by this presentation finding.",
+    "No preflight, merge or remote-main verification is claimed."
+  ]
+}

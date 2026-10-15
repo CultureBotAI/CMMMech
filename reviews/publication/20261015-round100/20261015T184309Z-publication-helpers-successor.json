@@ -1,0 +1,81 @@
+{
+  "audit_id": "20261015T184309Z-publication-helpers-successor",
+  "timestamp_utc": "2026-10-15T18:43:09.948582Z",
+  "reviewer": {
+    "identity": "codex /root/round100_pentagonite",
+    "model": "GPT-6",
+    "independence": "independent; coordinator authored correction and tests; reviewer made no helper changes"
+  },
+  "reviewed_revision": "b6831c1da19b475ea048baea4ba5c10b96d678af",
+  "scope": "Exact coverage-receipt correction and independent regression/reproduction assessment. Earlier verifier assessment remains scoped to its recorded unchanged bytes.",
+  "previous_occurrences": [
+    {
+      "audit": "reviews/publication/20261015-round100/20261015T184111Z-publication-helpers-independent.json",
+      "sha256": "721582ecfeee59e67469602fc51e16d4ece3329a6bec0313cab4d081195d7a72",
+      "finding": "coverage-output-exclusive",
+      "issue_key": "CMMMech:round100:coverage-receipt-exclusivity"
+    }
+  ],
+  "issue": {
+    "number": 367,
+    "url": "https://github.com/CultureBotAI/CMMMech/issues/367",
+    "state_observed": "OPEN"
+  },
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round100-isolated-coverage-before-exclusive.py",
+      "sha256": "a7233d12b1f245d4c073933da755765d63d02dcdb15359797557fa6c4f9506ca"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-isolated-coverage.py",
+      "sha256": "58715e5e3c924c1a16a3bb3393a612bf94ee4e6c733c16edc405c057f91ea75b"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-coverage-receipt-tests.py",
+      "sha256": "64335d244a83bae82733b3d5aebea9236d133d2c9a572cb1bca6ada0257ac09e"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-sulfates-independent-review/coverage-receipt-tests-independent.log",
+      "sha256": "39db24e5f81afd8acf9e0bb55983b5cca58d1bbc506e37249bd2ee3a97be2a6f"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-helper-successor-c5l698nd/reproduction.json",
+      "sha256": "2ed213cb1e5acba11df6f329fd5c2c6b33720397621d7645f361155a7680562e"
+    }
+  ],
+  "verdict": "pass_with_limitations",
+  "disposition": {
+    "issue_key": "CMMMech:round100:coverage-receipt-exclusivity",
+    "status": "code_finding_resolved",
+    "reason": "The exact correction explicitly rejects existing files/symlinks and opens the receipt with mode x. It preserves the reviewed original. Independent five-case tests passed, and full-helper reproduction now refuses the dangling path without creating its target.",
+    "issue_closure": "Not asserted. The issue also requires actual exact-hash scientific coverage in the completed publication workflow, still pending."
+  },
+  "checks": [
+    {
+      "name": "Diff inspection",
+      "result": "Only receipt-writing block changed; coverage selection and expected counts unchanged."
+    },
+    {
+      "name": "Independent regression execution",
+      "command": ".venv/bin/python /private/tmp/cmm-round100-coverage-receipt-tests.py",
+      "exit_code": 0,
+      "result": "5 tests passed: normal receipt, occupied regular file, existing symlink, dangling symlink, competing creator."
+    },
+    {
+      "name": "Full helper dangling-symlink regression",
+      "exit_code": 1,
+      "expected": "Nonzero FileExistsError",
+      "result": "Output remains a symlink and absent target remains absent; expected refusal confirmed in a new empty fixture."
+    }
+  ],
+  "remaining_work": [
+    "Finalize and reconcile counts after native scientific reviews are saved.",
+    "Run actual exact-tree preflight and exact-hash scientific coverage using corrected helper bytes; retain receipt before closing the review issue.",
+    "Verify remote retained review-base tags and eventual main-only postmerge clone separately."
+  ],
+  "limitations": [
+    "This supplementary audit is not an executed corpus preflight, merge or scientific review.",
+    "Current config counts were provisional during helper assessment; this successor does not certify them.",
+    "No prior review or helper bytes were overwritten by the reviewer."
+  ]
+}
