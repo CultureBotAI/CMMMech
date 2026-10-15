@@ -1,0 +1,133 @@
+{
+  "review_id": "20261015T175203Z-commit-helper-amendment",
+  "kind": "runtime_commit_helper_amendment",
+  "repository": "CultureBotAI/CMMMech",
+  "reviewed_base": "beb757591995399e079d8892e8e27f8130f6bc5c",
+  "started_at": "2026-10-15T17:48:37.263563+00:00",
+  "finished_at": "2026-10-15T17:52:03.312093+00:00",
+  "reviewer": "codex /root/round99_sulfates",
+  "model": "GPT-6",
+  "independence": "Independent of vanadium agent implementation. Read complete original/current helper and exact diff, independently executed the inspected regression suite, made no helper or Git/GitHub edits.",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "findings": [
+    {
+      "finding_id": "OPH1",
+      "issue_key": "round99-reviewed-markdown-hardbreak-check",
+      "severity": "minor",
+      "status": "resolved",
+      "title": "Preserve reviewed Markdown hard breaks through a precise whitespace exception",
+      "description": "The original staged Git check rejected exactly two intentional trailing double spaces in the already reviewed dossier. The amendment admits only the exact known diagnostic and exact complete dossier bytes while all other results fail.",
+      "issue": "https://github.com/CultureBotAI/CMMMech/issues/363"
+    }
+  ],
+  "unresolved_findings": [],
+  "prior_review": {
+    "path": "reviews/publication/20261015-round99/20261015T172841Z-runtime-static-independent.json",
+    "sha256": "91c0d3e4a62bfcc1754c77ad90f64b889f30a45ed089aad0f433c8c60f53eb20"
+  },
+  "amended_helper": {
+    "path": "/private/tmp/cmm-round99-commit.py",
+    "before_sha256": "74d13a0ea171dac8ebc158e05e64ebddb7b02ee02458f984adb64aa1df477c59",
+    "after_sha256": "8aba55b56d686d2ae52c927503005e99cc0666fe055fcd961ea9d50374da8a55",
+    "original_copy": "/private/tmp/cmm-round99-commit-before-whitespace.py"
+  },
+  "unchanged_helpers": [
+    {
+      "path": "/private/tmp/cmm-round99-publish.py",
+      "sha256": "2a64fa27a8dc07446cbfc4d0aa2b962eaf297e8e89eba04ee9964bf6a51454b2"
+    },
+    {
+      "path": "/private/tmp/cmm-round99-enqueue.py",
+      "sha256": "afa6cd6715d429f3ff9fbb007c2bd28e952e39daf3f82846cf5eeb7092aa636c"
+    },
+    {
+      "path": "/private/tmp/cmm-round99-cleanup.py",
+      "sha256": "957d2f91a8624a66613fc47f3f8ce64474acc9e30c21e4d61c0655b5867aaa73"
+    },
+    {
+      "path": "/private/tmp/cmm-round99-sync-main.py",
+      "sha256": "2316fe2cd85627e2c5847dd9dec27fd48de2456f77e6b4c67aaeff1a79c31b83"
+    },
+    {
+      "path": "/private/tmp/cmm-round99-hosted-five.py",
+      "sha256": "8c5737b8b83b9ae1b2a721538d352252b4bca68db636408f8ac4ca503045378d"
+    },
+    {
+      "path": "/private/tmp/cmm-round99-isolated-verification.py",
+      "sha256": "9e11ec0bc62d1abc16f072cb723eb22ce23a1e673a558be4304380ddefc3b337"
+    },
+    {
+      "path": "/private/tmp/cmm-round99-isolated-coverage.py",
+      "sha256": "82b3ef70a4c51ad3819f5d22088c28cde1927c854e08cdd25ca8c00a672744f8"
+    },
+    {
+      "path": "/private/tmp/cmm-round99-archive.py",
+      "sha256": "552446d1842d927d59dd1fb91a2afe0c59e4c6c874d5793ee2544e2c0dda7fd4"
+    },
+    {
+      "path": "/private/tmp/cmm-round99-final-gates.py",
+      "sha256": "a1cfded0b1b964389a61e608b68a21c892a9df4b77db28c952b5a155410fb705"
+    },
+    {
+      "path": "/private/tmp/cmm-round99-review-check-final.py",
+      "sha256": "54dc263eaa9201c113bb5e0d1ffa5b5e57e5e51207b1d9b2618e9d769c167fd0"
+    },
+    {
+      "path": "/private/tmp/cmm-round99-preservation-check.py",
+      "sha256": "56ef69cfc8bf1ff513bdfd170670426402f9c76e38840d79f8d9c8a41fcb27f6"
+    },
+    {
+      "path": "/private/tmp/cmm_round99_guards.py",
+      "sha256": "ba27f24f39adf39bdc6a0f36d1de7d881ee4710cd3f9bf04430b0c9c7297a231"
+    }
+  ],
+  "tests": {
+    "passed": true,
+    "tests_run": 13,
+    "failures": 0,
+    "errors": 0,
+    "independently_executed": true,
+    "receipt": {
+      "path": "/private/tmp/cmm-round99-commit-amendment-independent/independent-regression.json",
+      "sha256": "8aaab53e35ae2ac5cfb5d98ef536e537a166271c026b9524898eafb285be363a"
+    },
+    "log": {
+      "path": "/private/tmp/cmm-round99-commit-amendment-independent/independent-regression.log",
+      "sha256": "82798fdd844d392e49beab6fda5b80d6de37334ecda8ce1f5e0a556825a91ace"
+    },
+    "test": {
+      "path": "/private/tmp/cmm-round99-vanadium-review/test-commit-whitespace.py",
+      "sha256": "24a6409c87ac1604fa1f2891bad101bcf4aa09d8d959a48d07cc7f5d3bc48b57"
+    }
+  },
+  "issue": "https://github.com/CultureBotAI/CMMMech/issues/363",
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round99-commit-whitespace-implementation.json",
+      "sha256": "7311ac2ecef9fbeab30b97a27dd97aeefe27aea7b7e9fc36d166b47551934530"
+    },
+    {
+      "path": "/private/tmp/cmm-round99-commit-amendment-independent/initial-capture.json",
+      "sha256": "d98f502743f855e5357f3e33e026351fc0a1aceeaf72cbf6fc21dd8300f07917"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round99-20261015/research/sources/round99-vanadium/20261015T171641Z.md",
+      "sha256": "5158c229141bb43e36ff7f9d8c85622a1db402d5854b361b76f4f92e8c2922d3"
+    }
+  ],
+  "diff": "--- /private/tmp/cmm-round99-commit-before-whitespace.py\n+++ /private/tmp/cmm-round99-commit.py\n@@ -5,6 +5,26 @@\n sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()\n def git(*a):return subprocess.check_output(['git',*a],cwd=W,text=True).strip()\n def files_under(directory,pattern):return {str(p.relative_to(W)):sha(p) for p in sorted((W/directory).rglob(pattern)) if p.is_file() and not p.is_symlink()}\n+# Preserve the reviewed dossier bytes: only these two Markdown hard breaks may\n+# trigger Git whitespace diagnostics. Any other status, output, or bytes fail.\n+HARDBREAK_PATH='research/sources/round99-vanadium/20261015T171641Z.md'\n+HARDBREAK_SHA256='5158c229141bb43e36ff7f9d8c85622a1db402d5854b361b76f4f92e8c2922d3'\n+HARDBREAK_LINES=(b'UTC: 2026-10-15T17:16:41.657713+00:00  \\n',b'Base: `beb757591995399e079d8892e8e27f8130f6bc5c`  \\n')\n+HARDBREAK_DIAGNOSTIC=b''.join(HARDBREAK_PATH.encode()+f':{line_number}: trailing whitespace.\\n'.encode()+b'+'+line for line_number,line in zip((3,4),HARDBREAK_LINES))\n+def check_diff_whitespace(*,staged=False):\n+ command=['git','diff']+(['--cached'] if staged else [])+['--check']\n+ result=subprocess.run(command,cwd=W,capture_output=True)\n+ if result.returncode==0 and result.stdout==b'' and result.stderr==b'':return\n+ if result.returncode!=2 or result.stdout!=HARDBREAK_DIAGNOSTIC or result.stderr!=b'':\n+  raise RuntimeError(f'Unapproved Git whitespace check result: {command!r}; status={result.returncode}; stdout={result.stdout!r}; stderr={result.stderr!r}')\n+ if staged:\n+  content=subprocess.check_output(['git','show',':'+HARDBREAK_PATH],cwd=W)\n+ else:\n+  path=W/HARDBREAK_PATH\n+  if not path.is_file() or path.is_symlink():raise RuntimeError('Hard-break exception requires the regular reviewed dossier file')\n+  content=path.read_bytes()\n+ if hashlib.sha256(content).hexdigest()!=HARDBREAK_SHA256 or content.splitlines(keepends=True)[2:4]!=list(HARDBREAK_LINES):\n+  raise RuntimeError('Hard-break exception requires the exact reviewed dossier hash and double-space lines')\n def guard(cfg,g,rv,cv,prep,actual,records,histories,reviews,bindings):\n  base=cfg['base'];expected=[['just','check'],['uv','run','--locked','cmmmech','validate','--require-records'],['uv','run','--locked','cmmmech','validate-history','--base',base],['uv','run','--locked','python','scripts/render_pages.py','--check']]\n  assert g['base']==base and g['worktree']==str(W) and g['exit_code']==0 and g['inputs_unchanged']\n@@ -59,7 +79,7 @@\n   if f.startswith(('data/records/','history/records/','reviews/structured/')):\n    x=subprocess.run(['git','cat-file','-e',cfg['base']+':'+f],cwd=W,capture_output=True);assert x.returncode!=0\n  assert git('ls-remote','origin','refs/heads/main').split()[0]==cfg['base']\n- subprocess.run(['git','diff','--check'],cwd=W,check=True)\n+ check_diff_whitespace()\n  return cfg,files,actual,bindings\n \n def main():\n@@ -74,7 +94,7 @@\n   assert sorted(git('diff','--cached','--name-only').splitlines())==files\n   for f in files:\n    staged=subprocess.check_output(['git','show',':'+f],cwd=W);assert hashlib.sha256(staged).hexdigest()==actual[f]\n-  subprocess.run(['git','diff','--cached','--check'],cwd=W,check=True)\n+  check_diff_whitespace(staged=True)\n   verify_publication_bindings(T,{name:bindings[name] for name in publication_bindings(T)})\n   subprocess.run(['git','commit','-m',cfg['title']],cwd=W,check=True)\n   assert not git('status','--porcelain=v1','--untracked-files=all')\n",
+  "assessments": [
+    "Only one inserted checker/constants block and two call-site replacements differ from the accepted original; reversing those exact changes reproduces original source bytes. All other twelve core helper hashes match the original runtime audit.",
+    "The exception requires Git status2, exact complete stdout diagnostic for dossier lines3/4, and empty stderr. Status0 requires empty stdout/stderr. Missing/reordered/extra output, different statuses or any stderr are rejected. No global whitespace configuration or broad path exclusion was introduced.",
+    "On the exception path the entire dossier SHA256 and exact double-space lines are required. Working mode requires a regular nonsymlink file; staged mode reads the indexed blob with git show and verifies that blob instead of trusting disk. Read failures propagate. Existing prepared manifest and staged-content guards remain unchanged.",
+    "Independently executed thirteen inspected mock-only cases: clean and exact allowed paths; extra/missing/reordered/changed diagnostic; changed complete file and index-only bytes; wrong status; stderr; wrong spaces despite adjusted hash; missing/symlinked file; index read failure; both real helper call sites. All passed; no Git subprocess or mutation occurred in the suite.",
+    "Implementer captured the original actual staged status2 diagnostic at17:48:25; those retained bytes match the exception constants and independently verified dossier. My17:48:37 read occurred after root recovery unstaging, when actual cached check was clean. The review does not misattribute the original failing-index observation as my independent execution."
+  ],
+  "limitations": [
+    "This is acceptance of the narrow commit helper amendment, not proof of successful live commit or hosted publication. Root must rebuild exact publication bindings and rerun its precommit checks before invoking.",
+    "The initial runtime review remains immutable; hosted consumers must explicitly verify this single commit.py amendment chain while retaining the original other-twelve hashes. Separate readonly-helper adaptation review is required.",
+    "The thirteen new tests are mock-only and scoped to this behavior. Existing core guard/receipt regression evidence remains distinct; provider failure and race behavior is not newly tested.",
+    "Any later helper byte change invalidates this exact-hash acceptance. The preserved original and recovery receipts remain separately auditable."
+  ]
+}

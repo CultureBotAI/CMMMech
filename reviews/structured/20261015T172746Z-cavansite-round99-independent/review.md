@@ -1,0 +1,604 @@
+# Independent scientific review of Cavansite
+
+- Review: 20261015T172746Z-cavansite-round99-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T17:20:58.043643Z
+- Finished UTC: 2026-10-15T17:27:46.768117Z
+- Reviewer: codex /root/round99_sulfates (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+Cavansite identity and qualified abiotic dehydration are supported; one minor source-interpretation overstatement requires a narrow wording correction.
+
+## Scope And Provenance
+
+Entire exact maintained owner and CREATE history, claim-bearing original methods/results/graphics and relevant deposits, dated authority and bounded notice/duplicate checks.
+
+Selection: Parent-assigned independent per-record review after author freeze.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base beb757591995399e079d8892e8e27f8130f6bc5c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:cavansite | data/records/cavansite.yaml | maintained | Cavansite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent original evidence assessment | passed | True | cmmmech:cavansite | Exact target and claim-bearing primary evidence/authority inspected; findings separately recorded. |
+| Independent named strict validation | passed | True | cmmmech:cavansite | Two records checked; zero failed. |
+| Completed coordinator batch check 1 | passed | True | cmmmech:cavansite | Actual completed receipt and log verified against frozen current input; whole-corpus check executed by coordinator. |
+| Completed coordinator batch check 2 | passed | True | cmmmech:cavansite | Actual completed receipt and log verified against frozen current input; whole-corpus check executed by coordinator. |
+| Completed coordinator batch check 3 | passed | True | cmmmech:cavansite | Actual completed receipt and log verified against frozen current input; whole-corpus check executed by coordinator. |
+| Completed coordinator batch check 4 | passed | True | cmmmech:cavansite | Actual completed receipt and log verified against frozen current input; whole-corpus check executed by coordinator. |
+
+## Scientific And Domain Assessments
+
+### Species, space-group settings and formula dispute
+
+identity: supported. Targets: cmmmech:cavansite.
+
+Species identity and setting change are supported.
+
+IMA1967-019/currentCa(V4+O)(Si4O10)(H2O)4; originalPcmn and2012Pnma differ by a/c setting. Pentagonite distinct. 2009H3O+/OH model is disputed by2012 located-but-restrained H/BVS, not substituted for IMA or universally disproved for every sample.
+
+### Measured specimen and temperature series
+
+scope: supported. Targets: cmmmech:cavansite.
+
+Record retains laboratory protocol and its constraints.
+
+OneWagholi crystal~0.1x0.1x0.5mm/open0.1mmcapillary/dryN2,25Csteps to250 then50to400 withat least 30minhold; repeatedmeasurements same crystal. Breakage150-175C lowers later usable reflections; occupancy/Uconstraints explicitly limit exact hydrous interpretations.
+
+### Approximate hydration versus diffraction model
+
+quantity: supported. Targets: cmmmech:cavansite.
+
+Residual occupancy and metadata contradictions are not flattened.
+
+Table 2bO9.105(8)at75C,Table 2dO8.24(4)at350C andFig3domission are directly retained against simplified3/2/1waterformula. Cell/diffrnCIFtags296(2)forheatedblocks are wrong as temperature authority; Table 1/rundescription govern. No mass-balance or direct metal-recovery claim.
+
+### Independent protocols and version-specific disagreement
+
+evidence: supported. Targets: cmmmech:cavansite.
+
+Thermal outcomes are scoped to protocols and models.
+
+Ishida air 10 C/min powder vs Danisi dry N2 single crystal vs Martucci preprint air 5 K/min powder differ in samples/time/acquisition. Authors possible kinetic/domain/refinement explanations are not proven causal isolation. Preprint final publisher version not checked, and detailed contradictory O8 trajectory values are not imported.
+
+### Meaning of intermediate amorphous phase
+
+consistency: concern. Targets: cmmmech:cavansite.
+
+One categorical contradiction claim overstates source interpretation.
+
+Ishida abstract links intermediate phase absence to lack of reversible cavansite/pentagonite transition. Terminal amorphous products pp246/249 can coexist with absence of a phase intermediate between dimorphs. Record should preserve explicit ambiguity rather than assert contradiction.
+
+### Criticality, biological and scale scope
+
+scope: supported. Targets: cmmmech:cavansite.
+
+No unsupported criticality or industrial inference present.
+
+Criticality is unrecorded, not claimed absent; no constituent list designation inherited. Abiotic mechanism microbialfalse with no organismIDs, live biomass or biological controls. Mineral observations are laboratory research, not industrial deployment.
+
+### Exact frozen owner and truthful history
+
+provenance: supported. Targets: cmmmech:cavansite.
+
+Working-tree provenance is explicit and auditable.
+
+Nativeinspect captured trustedbasebeb757591995399e079d8892e8e27f8130f6bc5c and exact owner/history/dossier/schema bytes. Independent reviewer has no owner authorship. Canonical/inlineCREATE separate. Named check independently executed; coordinator whole-corpus evidence added only after actual terminal receipt verified.
+
+## Findings
+
+### f1: Qualify the scope of Ishida abstract intermediate-phase wording
+
+minor / open / confirmed; issue key: cavansite-ishida-intermediate-phase-scope.
+
+The owner calls the abstract statement of no intermediate amorphous phase conflicting with the observed terminal amorphous product. Intermediate can refer to a phase between the two dimorphs, so a contradiction is not established. Preserve the ambiguous abstract alongside explicit terminal products and avoid inferring that cavansite cannot become amorphous. The measured outcome and existing qualified mechanism remain supported.
+
+## Recommended Actions And Acceptance Checks
+
+### a1
+
+Replace categorical contradiction wording with explicit abstract-scope ambiguity, preserving terminal amorphization and protocol distinctions; append truthful EDIT history and retain historical CREATE/dossier/review.
+
+- Reinspect revised owner and history with native review capture.
+- Compare Ishida abstractp241, Figure4p244 and terminal-product discussionpp246/249; do not imply universal absence of amorphization.
+- Run named validation, completed justcheck/strict/history gates and independent successor linked to this exact finding.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/cavansite.yaml; Entire exact owner captured with native inspect before assessment. | supports | Identity, evidence explanations, conditions, limits and provenance inspected. |
+| history | history/records/cavansite/2026-10-15T171531Z-codex-e6ddca.yaml; Complete canonical CREATE, inline event and history_refs. | supports | Actual actor, timestamp, target and described work agree; inline and canonical histories are distinct. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Status definitions and exact cavansite row on PDF page 38. | supports | Dated accepted species, ideal formula and status verified independently from official PDF. |
+| search | Independent bounded notice and duplicate search; /private/tmp/cmm-round99-vanadium-independent/search-observations.json; dedup.json and dedup-followup.json. | context_only | No affecting correction notice surfaced in returned sets. Generic older mineral mentions and discovery leads are not duplicate curated records. |
+| named | uv run --locked cmmmech validate data/records/roscoelite.yaml data/records/cavansite.yaml; /private/tmp/cmm-round99-vanadium-independent/named-validation.log | supports | Independently executed combined strict validation: 2 checked, 0 failed. This does not establish scientific truth. |
+| dossier | research/sources/round99-vanadium/20261015T171641Z.md; Paired source-discovery dossier and frozen hashes. | supports | Acquisition provenance, source/version limitations, methods, deferred leads and owner/history mapping checked. |
+| staples | https://msaweb.org/AmMin/AM58/AM58_405.pdf; Staples etal1973 pp405-407 original description; composition and crystal-system distinction, visually inspected. | supports | Natural Oregon cavansite and pentagonite are distinct species; old bulk water assay uncertain, final structure-supported formula retained. |
+| danisi | https://www.rruff.net/odr/view/downloadfile/80260; Danisi2012 originalpp1874-1880, methods/Table 1, Tables2a-d/4, Figures1-4; deposit AM-12-079 Tables3/5/6 and printed CIF sections at PDF12-43. | supports | One natural crystal in dryN2, stepwise diffraction-model water changes, breakage150-175C, restrained H positions and commonU limits inspected. Pcmn/Pnma axis change, residualO9.105(8)/O8.24(4) and high-T metadata296(2) verified. |
+| ishida | https://doi.org/10.2465/jmps.070724b; Ishida2009 abstractp241; methodspp242-244; Figures1/4/6; textpp246/249 and hydrous-species discussion. | partial | Powder in air 10 C/min, surviving pattern after coolingfrom400C and later amorphous product supported. H positions not directly resolved; hydrous-ion model inferred. Abstract intermediate-phase wording has ambiguous scope. |
+| martucci | https://iris.unife.it/retrieve/e309ade1-2f37-3969-e053-3a05fe0a2c94/ejm150060-1.pdf; 46-page institutional preprint: referee/responsepp2-9 distinct; methodspp15-17; discussionpp21-23; Figures7-8 PDF36-37; supplementary site tablesPDF41-42. | partial | Separate groundWagholi aliquots air5K/min and alternative occupancy model supported. No split positions; authors speculate time/dimensions/disorder explanations. Figure/site-table O8 residuals and editor comments limit detailed trajectory; no exact preprint-derived water values imported. |
+| version | https://sfera.unife.it/handle/11392/2364250; Institutional catalogue file labels independently opened live2026-10-15. | context_only | ejm150060-1.pdf explicitly Pre-print; final publisher file separately listed restricted. Accessible manuscript is not represented as the checked final2016version. |
+| batch | /private/tmp/cmm-round99-final-gates.json; Completed coordinator receipt; retained log /private/tmp/cmm-round99-final-gates.log SHA256 6b50e673bf8464f508b0d24e93a59356c74dab8f8c082c3a5cc73c5b7c17b574 | supports | Verified exact base, terminal exits, unchanged target hashes and actual log hash. just check: 317 passed/3 skipped; strict corpus:481 checked/0failed; history:550/0; pages current. These are coordinator executions, not independently rerun suites. |
+
+## Limits And Additional Notes
+
+- The institutional2016 manuscript includes referee frontmatter and internal editorial notes; final publisher PDF was not inspected and exact water trajectories are not imported.
+- Diffraction occupancy and restrained H-site models are not direct water mass balance; one broken crystal does not establish universal collapse temperature.
+- No independent re-refinement of deposited CIFs or validation against reflection intensities performed.
+- Source abstract intermediate-phase scope remains ambiguous pending the narrow owner wording correction.
+- No microbial mechanism, isolated V recovery or industrial deployment established.
+- Raw primary sources were acquired by the curator and independently inspected by this reviewer; current IMA authority copy was independently acquired in my sulfate lane. No claim of independent experimental replication.
+- Whole-corpus gates are coordinator executions; their actual completed receipt/log and reviewed input hashes must be checked before saving. Review corpus check follows artifact persistence.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T172746Z-cavansite-round99-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Cavansite
+started_at: '2026-10-15T17:20:58.043643Z'
+finished_at: '2026-10-15T17:27:46.768117Z'
+reviewer:
+  identity: codex /root/round99_sulfates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The vanadium-lane agent authored this owner. I curated separate
+    kornelite/quenstedtite records, independently inspected the frozen vanadium target
+    and original evidence, and made no vanadium owner/history edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: Cavansite identity and qualified abiotic dehydration are supported; one minor
+  source-interpretation overstatement requires a narrow wording correction.
+source:
+  git_revision: beb757591995399e079d8892e8e27f8130f6bc5c
+  state: working_tree
+  inputs:
+  - path: data/records/cavansite.yaml
+    sha256: e4a9567a506dde04ea6be9f6e5ca2f6a9655379c7474b27ebe55fd52fda52d35
+    role: target
+  - path: history/records/cavansite/2026-10-15T171531Z-codex-e6ddca.yaml
+    sha256: 89c27e75ccb0d578be34a4fe0e319f9b07d2b34d639da2b86698e1f0b6d40da7
+    role: context
+  - path: research/sources/round99-vanadium/20261015T171641Z.json
+    sha256: 5f051b9604062eb52ed64d0fdf9391486130ef92cb57e41d9da2a57210093b6a
+    role: context
+  - path: research/sources/round99-vanadium/20261015T171641Z.md
+    sha256: 5158c229141bb43e36ff7f9d8c85622a1db402d5854b361b76f4f92e8c2922d3
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire exact maintained owner and CREATE history, claim-bearing original
+    methods/results/graphics and relevant deposits, dated authority and bounded notice/duplicate
+    checks.
+  selection: Parent-assigned independent per-record review after author freeze.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:cavansite
+targets:
+- target_id: cmmmech:cavansite
+  path: data/records/cavansite.yaml
+  label: Cavansite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cavansite.yaml
+    role: maintained_record
+checks:
+- check_id: science
+  name: Independent original evidence assessment
+  required: true
+  status: passed
+  summary: Exact target and claim-bearing primary evidence/authority inspected; findings
+    separately recorded.
+  target_ids:
+  - cmmmech:cavansite
+  evidence_ids:
+  - owner
+  - ima
+  - search
+  - staples
+  - danisi
+  - ishida
+  - martucci
+  - version
+- check_id: named
+  name: Independent named strict validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/roscoelite.yaml data/records/cavansite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Two records checked; zero failed.
+  target_ids:
+  - cmmmech:cavansite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch check 1
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed receipt and log verified against frozen current input;
+    whole-corpus check executed by coordinator.
+  target_ids:
+  - cmmmech:cavansite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch check 2
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed receipt and log verified against frozen current input;
+    whole-corpus check executed by coordinator.
+  target_ids:
+  - cmmmech:cavansite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch check 3
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base beb757591995399e079d8892e8e27f8130f6bc5c
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed receipt and log verified against frozen current input;
+    whole-corpus check executed by coordinator.
+  target_ids:
+  - cmmmech:cavansite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch check 4
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed receipt and log verified against frozen current input;
+    whole-corpus check executed by coordinator.
+  target_ids:
+  - cmmmech:cavansite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/cavansite.yaml
+  locator: Entire exact owner captured with native inspect before assessment.
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: supports
+  summary: Identity, evidence explanations, conditions, limits and provenance inspected.
+  snapshot_sha256: e4a9567a506dde04ea6be9f6e5ca2f6a9655379c7474b27ebe55fd52fda52d35
+- evidence_id: history
+  kind: record_content
+  reference: history/records/cavansite/2026-10-15T171531Z-codex-e6ddca.yaml
+  locator: Complete canonical CREATE, inline event and history_refs.
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: supports
+  summary: Actual actor, timestamp, target and described work agree; inline and canonical
+    histories are distinct.
+  snapshot_sha256: 89c27e75ccb0d578be34a4fe0e319f9b07d2b34d639da2b86698e1f0b6d40da7
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Status definitions and exact cavansite row on PDF page 38.
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: supports
+  summary: Dated accepted species, ideal formula and status verified independently
+    from official PDF.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: search
+  kind: search
+  reference: Independent bounded notice and duplicate search
+  locator: /private/tmp/cmm-round99-vanadium-independent/search-observations.json;
+    dedup.json and dedup-followup.json.
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: context_only
+  summary: No affecting correction notice surfaced in returned sets. Generic older
+    mineral mentions and discovery leads are not duplicate curated records.
+  snapshot_sha256: 7519f73ddcc63deb0b7b4a9b1e71afcaa46aa58f43ece87aa1029a3bebbc718c
+  search_scope: Queries and official URLs in the retained search receipt. rg --no-ignore
+    --hidden --follow across data/history/research/reviews, round99 raw and referenced
+    round38/39/97 roots. Search scope bounded; no exhaustive literature or fleet absence
+    claim.
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/roscoelite.yaml data/records/cavansite.yaml
+  locator: /private/tmp/cmm-round99-vanadium-independent/named-validation.log
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: supports
+  summary: 'Independently executed combined strict validation: 2 checked, 0 failed.
+    This does not establish scientific truth.'
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round99-vanadium/20261015T171641Z.md
+  locator: Paired source-discovery dossier and frozen hashes.
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: supports
+  summary: Acquisition provenance, source/version limitations, methods, deferred leads
+    and owner/history mapping checked.
+  snapshot_sha256: 5158c229141bb43e36ff7f9d8c85622a1db402d5854b361b76f4f92e8c2922d3
+- evidence_id: staples
+  kind: primary_source
+  reference: https://msaweb.org/AmMin/AM58/AM58_405.pdf
+  locator: Staples etal1973 pp405-407 original description; composition and crystal-system
+    distinction, visually inspected.
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: supports
+  summary: Natural Oregon cavansite and pentagonite are distinct species; old bulk
+    water assay uncertain, final structure-supported formula retained.
+  snapshot_sha256: b4c97e61c89f721d1264e2286e19dedc67aa888054e0392b245a064b59d50790
+- evidence_id: danisi
+  kind: primary_source
+  reference: https://www.rruff.net/odr/view/downloadfile/80260
+  locator: Danisi2012 originalpp1874-1880, methods/Table 1, Tables2a-d/4, Figures1-4;
+    deposit AM-12-079 Tables3/5/6 and printed CIF sections at PDF12-43.
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: supports
+  summary: One natural crystal in dryN2, stepwise diffraction-model water changes,
+    breakage150-175C, restrained H positions and commonU limits inspected. Pcmn/Pnma
+    axis change, residualO9.105(8)/O8.24(4) and high-T metadata296(2) verified.
+  snapshot_sha256: e68437a213746e48379e591d8080b0e634086bf8ccb8c9e1da36683561f02062
+- evidence_id: ishida
+  kind: primary_source
+  reference: https://doi.org/10.2465/jmps.070724b
+  locator: Ishida2009 abstractp241; methodspp242-244; Figures1/4/6; textpp246/249
+    and hydrous-species discussion.
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: partial
+  summary: Powder in air 10 C/min, surviving pattern after coolingfrom400C and later
+    amorphous product supported. H positions not directly resolved; hydrous-ion model
+    inferred. Abstract intermediate-phase wording has ambiguous scope.
+  snapshot_sha256: c1a23a8fc6ec158b42eedc49c329aa5e336f04d131c4c017d55b1bcf8df96b02
+- evidence_id: martucci
+  kind: primary_source
+  reference: https://iris.unife.it/retrieve/e309ade1-2f37-3969-e053-3a05fe0a2c94/ejm150060-1.pdf
+  locator: '46-page institutional preprint: referee/responsepp2-9 distinct; methodspp15-17;
+    discussionpp21-23; Figures7-8 PDF36-37; supplementary site tablesPDF41-42.'
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: partial
+  summary: Separate groundWagholi aliquots air5K/min and alternative occupancy model
+    supported. No split positions; authors speculate time/dimensions/disorder explanations.
+    Figure/site-table O8 residuals and editor comments limit detailed trajectory;
+    no exact preprint-derived water values imported.
+  snapshot_sha256: dd3c1741a029bbeb07d12a41da25b3d8a556dd635e8ea183004cd7d3ffe5eae9
+- evidence_id: version
+  kind: authority
+  reference: https://sfera.unife.it/handle/11392/2364250
+  locator: Institutional catalogue file labels independently opened live2026-10-15.
+  accessed_at: '2026-10-15T17:26:49.172460Z'
+  support: context_only
+  summary: ejm150060-1.pdf explicitly Pre-print; final publisher file separately listed
+    restricted. Accessible manuscript is not represented as the checked final2016version.
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round99-final-gates.json
+  locator: Completed coordinator receipt; retained log /private/tmp/cmm-round99-final-gates.log
+    SHA256 6b50e673bf8464f508b0d24e93a59356c74dab8f8c082c3a5cc73c5b7c17b574
+  accessed_at: '2026-10-15T17:27:46.768117Z'
+  support: supports
+  summary: 'Verified exact base, terminal exits, unchanged target hashes and actual
+    log hash. just check: 317 passed/3 skipped; strict corpus:481 checked/0failed;
+    history:550/0; pages current. These are coordinator executions, not independently
+    rerun suites.'
+  snapshot_sha256: 800a6c96a2a0b7b295bb6da45e37135a079eab19856f91c566fc43965ad2f390
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species, space-group settings and formula dispute
+  outcome: supported
+  summary: Species identity and setting change are supported.
+  details: IMA1967-019/currentCa(V4+O)(Si4O10)(H2O)4; originalPcmn and2012Pnma differ
+    by a/c setting. Pentagonite distinct. 2009H3O+/OH model is disputed by2012 located-but-restrained
+    H/BVS, not substituted for IMA or universally disproved for every sample.
+  target_ids:
+  - cmmmech:cavansite
+  evidence_ids:
+  - owner
+  - ima
+  - staples
+  - danisi
+  - ishida
+- assessment_id: conditions
+  area: scope
+  topic: Measured specimen and temperature series
+  outcome: supported
+  summary: Record retains laboratory protocol and its constraints.
+  details: OneWagholi crystal~0.1x0.1x0.5mm/open0.1mmcapillary/dryN2,25Csteps to250
+    then50to400 withat least 30minhold; repeatedmeasurements same crystal. Breakage150-175C
+    lowers later usable reflections; occupancy/Uconstraints explicitly limit exact
+    hydrous interpretations.
+  target_ids:
+  - cmmmech:cavansite
+  evidence_ids:
+  - owner
+  - danisi
+- assessment_id: outcome
+  area: quantity
+  topic: Approximate hydration versus diffraction model
+  outcome: supported
+  summary: Residual occupancy and metadata contradictions are not flattened.
+  details: Table 2bO9.105(8)at75C,Table 2dO8.24(4)at350C andFig3domission are directly
+    retained against simplified3/2/1waterformula. Cell/diffrnCIFtags296(2)forheatedblocks
+    are wrong as temperature authority; Table 1/rundescription govern. No mass-balance
+    or direct metal-recovery claim.
+  target_ids:
+  - cmmmech:cavansite
+  evidence_ids:
+  - owner
+  - danisi
+- assessment_id: protocols
+  area: evidence
+  topic: Independent protocols and version-specific disagreement
+  outcome: supported
+  summary: Thermal outcomes are scoped to protocols and models.
+  details: Ishida air 10 C/min powder vs Danisi dry N2 single crystal vs Martucci
+    preprint air 5 K/min powder differ in samples/time/acquisition. Authors possible
+    kinetic/domain/refinement explanations are not proven causal isolation. Preprint
+    final publisher version not checked, and detailed contradictory O8 trajectory
+    values are not imported.
+  target_ids:
+  - cmmmech:cavansite
+  evidence_ids:
+  - owner
+  - danisi
+  - ishida
+  - martucci
+  - version
+- assessment_id: ambiguity
+  area: consistency
+  topic: Meaning of intermediate amorphous phase
+  outcome: concern
+  summary: One categorical contradiction claim overstates source interpretation.
+  details: Ishida abstract links intermediate phase absence to lack of reversible
+    cavansite/pentagonite transition. Terminal amorphous products pp246/249 can coexist
+    with absence of a phase intermediate between dimorphs. Record should preserve
+    explicit ambiguity rather than assert contradiction.
+  target_ids:
+  - cmmmech:cavansite
+  evidence_ids:
+  - owner
+  - ishida
+- assessment_id: criticality
+  area: scope
+  topic: Criticality, biological and scale scope
+  outcome: supported
+  summary: No unsupported criticality or industrial inference present.
+  details: Criticality is unrecorded, not claimed absent; no constituent list designation
+    inherited. Abiotic mechanism microbialfalse with no organismIDs, live biomass
+    or biological controls. Mineral observations are laboratory research, not industrial
+    deployment.
+  target_ids:
+  - cmmmech:cavansite
+  evidence_ids:
+  - owner
+  dimensions:
+  - name: material_form
+    value: mineral species
+    definition: Identity distinct from element/commodity/secondaryresource
+    evidence_ids:
+    - owner
+    - ima
+  - name: criticality
+    value: not asserted
+    definition: No jurisdiction/list/edition claim imported
+    evidence_ids:
+    - owner
+  - name: biomass
+    value: not applicable; abiotic
+    definition: No organism or biomass participates in recorded experiment
+    evidence_ids:
+    - owner
+- assessment_id: provenance
+  area: provenance
+  topic: Exact frozen owner and truthful history
+  outcome: supported
+  summary: Working-tree provenance is explicit and auditable.
+  details: Nativeinspect captured trustedbasebeb757591995399e079d8892e8e27f8130f6bc5c
+    and exact owner/history/dossier/schema bytes. Independent reviewer has no owner
+    authorship. Canonical/inlineCREATE separate. Named check independently executed;
+    coordinator whole-corpus evidence added only after actual terminal receipt verified.
+  target_ids:
+  - cmmmech:cavansite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - named
+  - batch
+findings:
+- finding_id: f1
+  issue_key: cavansite-ishida-intermediate-phase-scope
+  category: consistency
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Qualify the scope of Ishida abstract intermediate-phase wording
+  description: The owner calls the abstract statement of no intermediate amorphous
+    phase conflicting with the observed terminal amorphous product. Intermediate can
+    refer to a phase between the two dimorphs, so a contradiction is not established.
+    Preserve the ambiguous abstract alongside explicit terminal products and avoid
+    inferring that cavansite cannot become amorphous. The measured outcome and existing
+    qualified mechanism remain supported.
+  target_ids:
+  - cmmmech:cavansite
+  field_paths:
+  - mechanisms[0].evidence[2].explanation
+  evidence_ids:
+  - owner
+  - ishida
+  rule_id: preserve-uncertainty-and-source-scope
+  native_severity: minor
+  normalization_reason: Bounded wording overstatement in an otherwise qualified comparison;
+    identity and dehydration outcome unaffected.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cavansite.yaml
+    role: maintained_record
+actions:
+- action_id: a1
+  description: Replace categorical contradiction wording with explicit abstract-scope
+    ambiguity, preserving terminal amorphization and protocol distinctions; append
+    truthful EDIT history and retain historical CREATE/dossier/review.
+  finding_ids:
+  - f1
+  target_ids:
+  - cmmmech:cavansite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cavansite.yaml
+    role: maintained_record
+  acceptance_checks:
+  - Reinspect revised owner and history with native review capture.
+  - Compare Ishida abstractp241, Figure4p244 and terminal-product discussionpp246/249;
+    do not imply universal absence of amorphization.
+  - Run named validation, completed justcheck/strict/history gates and independent
+    successor linked to this exact finding.
+limitations:
+- The institutional2016 manuscript includes referee frontmatter and internal editorial
+  notes; final publisher PDF was not inspected and exact water trajectories are not
+  imported.
+- Diffraction occupancy and restrained H-site models are not direct water mass balance;
+  one broken crystal does not establish universal collapse temperature.
+- No independent re-refinement of deposited CIFs or validation against reflection
+  intensities performed.
+- Source abstract intermediate-phase scope remains ambiguous pending the narrow owner
+  wording correction.
+- No microbial mechanism, isolated V recovery or industrial deployment established.
+notes:
+- Raw primary sources were acquired by the curator and independently inspected by
+  this reviewer; current IMA authority copy was independently acquired in my sulfate
+  lane. No claim of independent experimental replication.
+- Whole-corpus gates are coordinator executions; their actual completed receipt/log
+  and reviewed input hashes must be checked before saving. Review corpus check follows
+  artifact persistence.
+```

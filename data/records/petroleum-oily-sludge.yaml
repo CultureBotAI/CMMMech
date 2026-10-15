@@ -1,0 +1,181 @@
+id: cmmmech:petroleum-oily-sludge
+name: Petroleum oily sludge
+material_kind: secondary_resource
+description: >-
+  Heterogeneous oil-, water- and solid-bearing residues generated in petroleum
+  handling and processing, with feed-dependent metals and metalloids. This
+  resource context includes the characterized crude-oil tank-bottom sludge from
+  Karoon Oil and Gas Company in Iran studied by Nejad et al. (2020), and the
+  distinct weathering-pit refinery sludge collected in Bahrain in March 2020
+  studied by Hentati et al. (2022). It is not raw crude oil, produced water,
+  petroleum coke, combustion ash, or oil-sands froth-treatment tailings. Neither
+  constituent criticality nor economic recoverability is assigned to the mixed
+  residue. Lower reported residual metal concentrations in one laboratory
+  treatment do not establish metal extraction, biomass capture, or recovery.
+sources:
+  - id: nejad2020
+    title: >-
+      Nejad et al. (2020), Remediation of oily sludge wastes using biosurfactant
+      produced by bacterial isolate Pseudomonas balearica strain Z8,
+      Journal of Environmental Health Science and Engineering 18:531–539,
+      DOI 10.1007/s40201-020-00480-1; complete publisher/PMC HTML,
+      methods, Tables 1–3 and Figures 1–7
+    url: https://doi.org/10.1007/s40201-020-00480-1
+    accessed_on: '2026-10-15'
+  - id: ahmadi2017
+    title: >-
+      Ahmadi et al. (2017), A novel salt-tolerant bacterial consortium for
+      biodegradation of saline and recalcitrant petrochemical wastewater,
+      DOI 10.1016/j.jenvman.2017.01.010; complete article supplied as
+      Nejad2020 ESM1, sections 2.1–2.2, 3.2.3 and Figure 2; isolate provenance
+      only, not an oily-sludge metal-recovery experiment
+    url: https://doi.org/10.1016/j.jenvman.2017.01.010
+    accessed_on: '2026-10-15'
+  - id: hentati2022
+    title: >-
+      Hentati et al. (2022), Biotreatment of oily sludge by a bacterial
+      consortium: Effect of bioprocess conditions on biodegradation efficiency
+      and bacterial community structure, Frontiers in Microbiology 13:998076,
+      DOI 10.3389/fmicb.2022.998076; feed characterization and supplementary
+      Table S1; distinct Bahrain feed and hydrocarbon assays
+    url: https://doi.org/10.3389/fmicb.2022.998076
+    accessed_on: '2026-10-15'
+  - id: ncbi_balearica
+    title: >-
+      NCBI Taxonomy 74829, Stutzerimonas balearica, species rank;
+      Pseudomonas balearica is a synonym; current species label does not
+      independently authenticate the experimental stock
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=74829
+    accessed_on: '2026-10-15'
+  - id: genbank_z8
+    title: >-
+      NCBI GenBank KX495190.2, Stutzerimonas balearica strain Z8 partial
+      16S ribosomal RNA gene from petrochemical wastewater in Iran;
+      inspected current sequence version, whose GenBank COMMENT states it
+      replaced KX495190.1 on 2017-02-21; the accession references the
+      Ahmadi2017 isolate-context study
+    url: https://www.ncbi.nlm.nih.gov/nuccore/KX495190.2
+    accessed_on: '2026-10-15'
+  - id: spectro_arcos
+    title: >-
+      SPECTRO manufacturer product description, SPECTRO ARCOS ICP-OES;
+      context for the incompatible ICP-MS/model wording in Nejad2020,
+      not verification of the instrument actually used
+    url: https://www.spectro.com/products/icp-oes-aes-spectrometers/arcos-inductively-coupled-plasma
+    accessed_on: '2026-10-15'
+mechanisms:
+  - id: culture_associated_residual_concentration_change
+    name: Qualified culture-associated residual metal concentration changes
+    process: other
+    microbial: true
+    organisms:
+      - id: NCBITaxon:74829
+        label: Stutzerimonas balearica
+    description: >-
+      Nejad2020 Table 3 reports lower residual than initial concentrations during
+      treatment with the live isolate called Pseudomonas balearica Z8 by the
+      authors: nickel 23 to 17 mg/kg, copper 14 to 11 mg/kg and zinc 168 to
+      148 mg/kg. These are source-reported concentration comparisons in an
+      incompletely specified sampled fraction and mass basis, not measured
+      metal-mass removal or recovery. The proposed biosorption explanation is
+      untested: no separate biomass metal assay, dissolved-metal balance or
+      isolated recovered product is reported. The table alone cannot establish
+      microbial causation or distinguish dilution and sampling/partition changes.
+    context: >-
+      The Iranian crude-oil tank-bottom feed was a black semisolid; Table 1
+      reports pH 7.1 and 19% solids. Acclimation used 10 g oily sludge in 100 mL
+      mineral enrichment medium, a 250 mL flask and 5 mL pure-culture nutrient
+      broth at OD600 2. The enrichment recipe itself supplies Fe, Mn and trace
+      Zn, Co, Mo and Cu, so it is not a metal-free input. These acclimation
+      quantities are not a verified dose for every later treatment vessel.
+      One-factor sludge assays explored nitrogen source, 1:1–1:7 sludge/water
+      ratios reported as v/v, and 20–60 degrees C over 80 days. The abstract
+      and Figure 7 caption name NH4Cl for the selected 40-degree-C, 1:7
+      condition, but the nitrogen and ratio prose instead names ammonium
+      sulfate; the exact recipe underlying Table 3 is therefore unresolved.
+      Table 3 says only before/after treatment under selected conditions,
+      without its own sampling day, residual-phase separation, wet/dry basis,
+      replicate uncertainty, biomass removal procedure or matched metal-control
+      results. The approximately 2% uninoculated-control change concerns total
+      petroleum hydrocarbons, not metals, and does not prove a sterile control.
+      The metal method digests a 2 g sample using HNO3/H2O2, reduces the volume,
+      dilutes to 100 mL and centrifuges the digest at 3000 rpm for 10 minutes.
+      It calls the instrument ICP-MS while naming SPECTRO ARCOS, which the
+      manufacturer describes as ICP-OES; the platform actually used is not
+      resolved. The text's 18–36% metal-removal range excludes Table 3's
+      zinc entry rendered as 11/9%; slash-form decimal tokens are not silently
+      normalized. No structured concentration observations are assigned because
+      analysis dates and sampled-fraction/denominator details are missing.
+      Laboratory treatment of an industrial-origin feed does not establish
+      industrial deployment, a recoverable metal reserve or treatment economics.
+    evidence:
+      - source_ref: nejad2020
+        supports: partial
+        explanation: >-
+          Methods, Tables 1 and 3 and Figure 7 support the identity of the
+          real tank-bottom feed and the reported before/after concentration
+          comparison associated with culture treatment. Missing phase and mass
+          balances, metal controls, replicate uncertainty and conflicting
+          nitrogen recipes prevent stronger causal, biosorption or extraction
+          claims. Table 2 and the adjoining text also interchange the
+          rhamnolipid assignments for m/z 503 and 529; Figure 6 provides selected
+          ion traces, not a causal test of metal binding. No particular
+          rhamnolipid congener is assigned responsibility here.
+      - source_ref: ahmadi2017
+        supports: context_only
+        explanation: >-
+          The complete ESM1 is the earlier 2017 petrochemical-wastewater study,
+          rather than additional oily-sludge metal data. Its isolation,
+          16S-based identification and phylogeny support the reported Z8 lineage;
+          consortium COD performance cannot be transferred to Z8-specific metal
+          removal from oily sludge.
+      - source_ref: ncbi_balearica
+        supports: context_only
+        explanation: >-
+          The current species name and historical synonym justify the species
+          CURIE and label. This mapping is not a strain identifier or proof of
+          the composition and identity of the later experimental stock.
+      - source_ref: genbank_z8
+        supports: context_only
+        explanation: >-
+          The deposited partial 16S sequence explicitly bears strain Z8 and the
+          original wastewater study. It corroborates the reported isolate label,
+          without a genome-level identity claim or authentication of the 2020
+          experimental culture.
+      - source_ref: spectro_arcos
+        supports: context_only
+        explanation: >-
+          The manufacturer's optical-emission designation exposes the article's
+          ICP-MS/model inconsistency; it does not resolve the laboratory's
+          actual instrument, calibration or analytical recovery.
+      - source_ref: hentati2022
+        supports: context_only
+        explanation: >-
+          The separate Bahrain weathering-pit feed contains nickel, vanadium
+          and other elements in Table S1. AK6 experiments quantify extractable
+          hydrocarbons and community composition, not metal release, capture
+          or isolated recovery. They neither replicate nor repair Nejad2020's
+          residual-metal comparison and must not be treated as metal extraction
+          evidence.
+curation_history:
+  - timestamp: '2026-10-15T17:14:38Z'
+    curator: codex /root/round99_resources (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Curated petroleum oily-sludge resource identity and narrowly qualified
+      culture-associated residual metal concentrations from complete primary
+      HTML, figures, supplements and current taxonomy; retained uncertain
+      sampled fractions, conflicting recipes, missing balances and the
+      distinction from hydrocarbon biodegradation and isolated metal recovery.
+  - timestamp: '2026-10-15T17:29:16Z'
+    curator: codex /root/round99_resources (GPT-6; Codex)
+    action: EDIT
+    summary: >-
+      Corrected the GenBank source title and URL to the actually inspected
+      KX495190.2, retaining its stated 2017-02-21 replacement of .1.
+      Addressed review issue 361 without changing the species, strain,
+      material scope or qualified experimental comparison; the earlier
+      CREATE history and source dossier remain preserved.
+history_refs:
+  - history/records/petroleum-oily-sludge/2026-10-15T171447Z-codex-f0409f.yaml
+  - history/records/petroleum-oily-sludge/2026-10-15T172921Z-codex-469dfb.yaml
