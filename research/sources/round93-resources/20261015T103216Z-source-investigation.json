@@ -1,0 +1,535 @@
+{
+  "timestamp": "2026-10-15T10:32:16.720419+00:00",
+  "researcher": "Codex (GPT-6; Codex), /root/round68_new_frontier",
+  "base": "e0bffe8eb1c6e359f35d9c52c74a95a4efdc2b9d",
+  "worktree": "/private/tmp/CMMMech-expansion-round93-20261015",
+  "record": "data/records/pig-manure.yaml",
+  "record_sha256": "20caf6979236a7b9464da8e1f43fe1f95547f7d8cc0dc2576ff6b676f418a124",
+  "history": "history/records/pig-manure/2026-10-15T103022Z-codex-0ab705.yaml",
+  "history_sha256": "afb4ad70190451f8c3dcfd9b5e0f0e801713c9c8dadbadc545c2aa0c29921681",
+  "report_path": "research/sources/round93-resources/20261015T103216Z-source-investigation.md",
+  "report_sha256": "eb88638cd11d87fe04b6e1a74a9e93dd6aa88e8a649bc0013cb9555ffc5ee985",
+  "search_provider": "web search; primary sources independently inspected",
+  "query_date": "2026-10-15",
+  "queries": [
+    "copper anode slime bioleaching bacteria fungi full text",
+    "poultry litter ash bioleaching phosphorus bacteria full text",
+    "\"anode slime\" \"bioleaching\"",
+    "\"Release of soluble phosphorus\" Damietta pdf",
+    "\"Release of soluble phosphorus\" \"subtilis\" journal",
+    "site.journals.ekb.eg \"poultry litter\" phosphorus",
+    "\"Scientific Journal\" \"Damietta\" \"2015\" \"5\" 101",
+    "\"Damietta\" \"biodegradation\" poultry",
+    "\"poultry litter\" \"bioleaching\" phosphorus primary",
+    "site.sjdfs.journals.ekb.eg \"litter\"",
+    "\"poultry litter\" \"phosphorus\" \"Bacillus\" solubilization extraction",
+    "\"poultry manure\" \"bioleaching\" phosphorus fungi",
+    "\"Bioleaching of heavy metals from pig manure\" sulfur concentration DOI",
+    "\"10.1016/j.heliyon.2018.e00778\" correction retraction erratum",
+    "\"10.1016/j.scitotenv.2018.03.140\" pdf",
+    "\"pig manure\" \"bioleaching\" \"sterile\""
+  ],
+  "acquisition": [
+    {
+      "timestamp": "2026-10-15T10:23:37.497346+00:00",
+      "attempts": [
+        {
+          "url": "https://sjdfs.journals.ekb.eg/article_194469.html",
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        },
+        {
+          "url": "https://sjdfs.journals.ekb.eg/",
+          "error": "<urlopen error [Errno 8] nodename nor servname provided, or not known>"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-15T10:24:00.440118+00:00",
+      "attempts": [
+        {
+          "url": "https://sjdfs.journals.ekb.eg/article_194469.html",
+          "error": "HTTP Error 429: Too Many Requests"
+        },
+        {
+          "url": "https://sjdfs.journals.ekb.eg/",
+          "error": "HTTP Error 429: Too Many Requests"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-15T10:24:37.016255+00:00",
+      "attempts": [
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/fullTextXML",
+          "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/fullTextXML",
+          "status": 200,
+          "content_type": "application/xml",
+          "path": "/private/tmp/cmm-round93-resources-research/wei2018.xml",
+          "bytes": 90156,
+          "sha256": "d59cfd9fd2864a5ce09355907fba718240829d05616040046580f22078fbea20"
+        },
+        {
+          "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6129760",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://api.crossref.org/works/10.1016/j.heliyon.2018.e00778",
+          "final_url": "https://api.crossref.org/works/10.1016/j.heliyon.2018.e00778",
+          "status": 200,
+          "content_type": "application/json",
+          "path": "/private/tmp/cmm-round93-resources-research/wei2018-crossref.json",
+          "bytes": 16470,
+          "sha256": "17de69a4e4a82fa2186d91e8b2562315db29a5558960350966586e05e570d91c"
+        },
+        {
+          "url": "https://journals.ekb.eg/article_194469.html",
+          "error": "HTTP Error 429: Too Many Requests"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-15T10:26:35.087099+00:00",
+      "attempts": [
+        {
+          "url": "https://europepmc.org/articles/PMC6129760?pdf=render",
+          "error": "HTTP Error 403: Forbidden"
+        },
+        {
+          "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/supplementaryFiles",
+          "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/supplementaryFiles",
+          "status": 200,
+          "content_type": "application/zip",
+          "path": "/private/tmp/cmm-round93-resources-research/wei2018-assets.zip",
+          "bytes": 1523396,
+          "magic": "b'PK\\x03\\x04\\x14\\x00\\x08\\x08\\x08\\x001['",
+          "sha256": "aebc8af6956c823c7bb217e854abf7b2aa0e2d42af987e55a6c46ccb8a3a6291"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/utils/oa/oa.fcgi?id=PMC6129760",
+          "error": "HTTP Error 404: Not Found"
+        },
+        {
+          "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=930&retmode=xml",
+          "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=930&retmode=xml",
+          "status": 200,
+          "content_type": "text/xml; charset=UTF-8",
+          "path": "/private/tmp/cmm-round93-resources-research/ncbi930.xml",
+          "bytes": 4951,
+          "magic": "b'<?xml versio'",
+          "sha256": "1ac710626a004467c8fbe0248715cc6d01360e721fbdb8f681edd536c8fc1cbc"
+        }
+      ]
+    },
+    {
+      "timestamp": "2026-10-15T10:26:43.837285+00:00",
+      "attempts": [
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6129760/",
+          "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6129760/",
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "path": "/private/tmp/cmm-round93-resources-research/wei2018-pmc.html",
+          "bytes": 184950,
+          "magic": "b'\\n<!DOCTYPE h'",
+          "sha256": "f75149f8e0ae6920f6a7931e809c66ef0741fb9fe23b25c2b34ee06cbcb7e5f1"
+        },
+        {
+          "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6129760/pdf/main.pdf",
+          "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6129760/pdf/main.pdf",
+          "status": 200,
+          "content_type": "text/html; charset=utf-8",
+          "path": "/private/tmp/cmm-round93-resources-research/wei2018-pmc.pdf",
+          "bytes": 1817,
+          "magic": "b'\\n\\n\\n\\n<html>\\n '",
+          "sha256": "d2804b4f6c068abbeb0327984be48dacf72159c7213f767cd48cc929dbb03849"
+        },
+        {
+          "url": "https://ars.els-cdn.com/content/image/1-s2.0-S2405844017339725-gr4.jpg",
+          "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S2405844017339725-gr4.jpg",
+          "status": 200,
+          "content_type": "image/jpeg",
+          "path": "/private/tmp/cmm-round93-resources-research/wei2018-gr4.jpg",
+          "bytes": 88848,
+          "magic": "b'\\xff\\xd8\\xff\\xe0\\x00\\x10JFIF\\x00\\x01'",
+          "sha256": "854b66a8d958e596e7e4eabf524bbae2d75c76797fc810e6b64477d14b15672a"
+        }
+      ]
+    }
+  ],
+  "raw_files": [
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/fullTextXML",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/fullTextXML",
+      "status": 200,
+      "content_type": "application/xml",
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018.xml",
+      "bytes": 90156,
+      "sha256": "d59cfd9fd2864a5ce09355907fba718240829d05616040046580f22078fbea20",
+      "acquired_at": "2026-10-15T10:24:37.016255+00:00",
+      "role": "acquired_artifact"
+    },
+    {
+      "url": "https://api.crossref.org/works/10.1016/j.heliyon.2018.e00778",
+      "final_url": "https://api.crossref.org/works/10.1016/j.heliyon.2018.e00778",
+      "status": 200,
+      "content_type": "application/json",
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-crossref.json",
+      "bytes": 16470,
+      "sha256": "17de69a4e4a82fa2186d91e8b2562315db29a5558960350966586e05e570d91c",
+      "acquired_at": "2026-10-15T10:24:37.016255+00:00",
+      "role": "acquired_artifact"
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/supplementaryFiles",
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/supplementaryFiles",
+      "status": 200,
+      "content_type": "application/zip",
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-assets.zip",
+      "bytes": 1523396,
+      "magic": "b'PK\\x03\\x04\\x14\\x00\\x08\\x08\\x08\\x001['",
+      "sha256": "aebc8af6956c823c7bb217e854abf7b2aa0e2d42af987e55a6c46ccb8a3a6291",
+      "acquired_at": "2026-10-15T10:26:35.087099+00:00",
+      "role": "acquired_artifact"
+    },
+    {
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=930&retmode=xml",
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=930&retmode=xml",
+      "status": 200,
+      "content_type": "text/xml; charset=UTF-8",
+      "path": "/private/tmp/cmm-round93-resources-research/ncbi930.xml",
+      "bytes": 4951,
+      "magic": "b'<?xml versio'",
+      "sha256": "1ac710626a004467c8fbe0248715cc6d01360e721fbdb8f681edd536c8fc1cbc",
+      "acquired_at": "2026-10-15T10:26:35.087099+00:00",
+      "role": "acquired_artifact"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6129760/",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6129760/",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-pmc.html",
+      "bytes": 184950,
+      "magic": "b'\\n<!DOCTYPE h'",
+      "sha256": "f75149f8e0ae6920f6a7931e809c66ef0741fb9fe23b25c2b34ee06cbcb7e5f1",
+      "acquired_at": "2026-10-15T10:26:43.837285+00:00",
+      "role": "acquired_artifact"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6129760/pdf/main.pdf",
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6129760/pdf/main.pdf",
+      "status": 200,
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-pmc.pdf",
+      "bytes": 1817,
+      "magic": "b'\\n\\n\\n\\n<html>\\n '",
+      "sha256": "d2804b4f6c068abbeb0327984be48dacf72159c7213f767cd48cc929dbb03849",
+      "acquired_at": "2026-10-15T10:26:43.837285+00:00",
+      "role": "rejected_html_challenge"
+    },
+    {
+      "url": "https://ars.els-cdn.com/content/image/1-s2.0-S2405844017339725-gr4.jpg",
+      "final_url": "https://ars.els-cdn.com/content/image/1-s2.0-S2405844017339725-gr4.jpg",
+      "status": 200,
+      "content_type": "image/jpeg",
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-gr4.jpg",
+      "bytes": 88848,
+      "magic": "b'\\xff\\xd8\\xff\\xe0\\x00\\x10JFIF\\x00\\x01'",
+      "sha256": "854b66a8d958e596e7e4eabf524bbae2d75c76797fc810e6b64477d14b15672a",
+      "acquired_at": "2026-10-15T10:26:43.837285+00:00",
+      "role": "acquired_artifact"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr1.gif",
+      "bytes": 12029,
+      "sha256": "178e9734aa6b991434cd6db0aeb478f8938fcfff43e69e0d1eda8bdfc835a5c7",
+      "role": "original_main_thumbnail",
+      "parent_archive": "/private/tmp/cmm-round93-resources-research/wei2018-assets.zip",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/supplementaryFiles"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr1.jpg",
+      "bytes": 259404,
+      "sha256": "a2b3b21aa5e4d767caa8a5b4b9127b992995749d4b771298af2f5bc8a053148d",
+      "role": "original_main_figure",
+      "parent_archive": "/private/tmp/cmm-round93-resources-research/wei2018-assets.zip",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/supplementaryFiles"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr2.gif",
+      "bytes": 10494,
+      "sha256": "efecb9daa258f7b34e9250eb90c899494b6474b0448b2738e37042102cfbdd47",
+      "role": "original_main_thumbnail",
+      "parent_archive": "/private/tmp/cmm-round93-resources-research/wei2018-assets.zip",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/supplementaryFiles"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr2.jpg",
+      "bytes": 134874,
+      "sha256": "be2f6a33e0b1b34defe03e6f9f249cba269710f415118bf9120fa2968ce426f4",
+      "role": "original_main_figure",
+      "parent_archive": "/private/tmp/cmm-round93-resources-research/wei2018-assets.zip",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/supplementaryFiles"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr3.gif",
+      "bytes": 8613,
+      "sha256": "a704341f31c6605c98529c9009253fda8e60d5a00e0137d0363fd6821dfcec2f",
+      "role": "original_main_thumbnail",
+      "parent_archive": "/private/tmp/cmm-round93-resources-research/wei2018-assets.zip",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/supplementaryFiles"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr3.jpg",
+      "bytes": 82067,
+      "sha256": "f8231bbf1ce0eb9f5c7b1ae0925ade6db4332c6490edd366484d04ed7afa6817",
+      "role": "original_main_figure",
+      "parent_archive": "/private/tmp/cmm-round93-resources-research/wei2018-assets.zip",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/supplementaryFiles"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr4.gif",
+      "bytes": 12749,
+      "sha256": "5178d79eb6f54ede0adb3daa239544a3779d847bb5d75f5e47583fde43823eb8",
+      "role": "original_main_thumbnail",
+      "parent_archive": "/private/tmp/cmm-round93-resources-research/wei2018-assets.zip",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/supplementaryFiles"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr4.jpg",
+      "bytes": 343458,
+      "sha256": "2b75046dc7eb53d18de7ccc49e61b123608f7deb04f2e0db556df65c69c13ef7",
+      "role": "original_main_figure",
+      "parent_archive": "/private/tmp/cmm-round93-resources-research/wei2018-assets.zip",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/supplementaryFiles"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr5.gif",
+      "bytes": 8719,
+      "sha256": "41b6739c684f841b55030822c1ca32abef8a87a3d48dbf6ebef2d76f47ea1967",
+      "role": "original_main_thumbnail",
+      "parent_archive": "/private/tmp/cmm-round93-resources-research/wei2018-assets.zip",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/supplementaryFiles"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr5.jpg",
+      "bytes": 80748,
+      "sha256": "094bb6da8b083ee17f60f060e4b92e2b590e17afee01de7293dd418f75726599",
+      "role": "original_main_figure",
+      "parent_archive": "/private/tmp/cmm-round93-resources-research/wei2018-assets.zip",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/supplementaryFiles"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr6.gif",
+      "bytes": 11176,
+      "sha256": "cdef6aec9f50356c7ba391531b3bf54ffa1fc7c6e2c9992669553cd7a242cffe",
+      "role": "original_main_thumbnail",
+      "parent_archive": "/private/tmp/cmm-round93-resources-research/wei2018-assets.zip",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/supplementaryFiles"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr6.jpg",
+      "bytes": 336840,
+      "sha256": "01106403196341a217eae8e8b682b033befffbdbf55cde1741fa3e9f3a58a2b1",
+      "role": "original_main_figure",
+      "parent_archive": "/private/tmp/cmm-round93-resources-research/wei2018-assets.zip",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/supplementaryFiles"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr7.gif",
+      "bytes": 11052,
+      "sha256": "60dff5f6dc45940796f6fba267a3148866b289921712030f501bc11735a8c5cb",
+      "role": "original_main_thumbnail",
+      "parent_archive": "/private/tmp/cmm-round93-resources-research/wei2018-assets.zip",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/supplementaryFiles"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr7.jpg",
+      "bytes": 416941,
+      "sha256": "6a225c2947a3b862e57673b070a7ffcdc73f5837441efb4b28bd6d35a6cbc101",
+      "role": "original_main_figure",
+      "parent_archive": "/private/tmp/cmm-round93-resources-research/wei2018-assets.zip",
+      "source_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6129760/supplementaryFiles"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/tbl1.xml",
+      "bytes": 1730,
+      "sha256": "d3349b37fa12fdd79225808696b4679fe8f402ad0849bfe872dbc5e922e04ad0",
+      "role": "derived_exact_table_subtree",
+      "parent_original": "/private/tmp/cmm-round93-resources-research/wei2018.xml"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/tbl2.xml",
+      "bytes": 2122,
+      "sha256": "34bbe52c094d01d629d505608699056086e6fdc8e07028210b0f0fca149c0a9e",
+      "role": "derived_exact_table_subtree",
+      "parent_original": "/private/tmp/cmm-round93-resources-research/wei2018.xml"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/tbl3.xml",
+      "bytes": 1070,
+      "sha256": "8d898bcf784a98f32eaccfc48b6664c58b308c11759f6831f983b59ea9f7c0ff",
+      "role": "derived_exact_table_subtree",
+      "parent_original": "/private/tmp/cmm-round93-resources-research/wei2018.xml"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/tbl4.xml",
+      "bytes": 2234,
+      "sha256": "0ffdb76a46b488fbab2bf8522eb23bfc6210e2eee3866a2dc4475115cdffd8fc",
+      "role": "derived_exact_table_subtree",
+      "parent_original": "/private/tmp/cmm-round93-resources-research/wei2018.xml"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/tbl5.xml",
+      "bytes": 1093,
+      "sha256": "eb4101ebf1b372445f1c37dd40abfa38bdc932674d6d7d4a90e757fb77213b79",
+      "role": "derived_exact_table_subtree",
+      "parent_original": "/private/tmp/cmm-round93-resources-research/wei2018.xml"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-resources-research/tbl6.xml",
+      "bytes": 2356,
+      "sha256": "83ed152ffdbd91e0141b8da21a9c4764fa7913f04932a7a6c958a0da2038e32a",
+      "role": "derived_exact_table_subtree",
+      "parent_original": "/private/tmp/cmm-round93-resources-research/wei2018.xml"
+    }
+  ],
+  "assessment": {
+    "timestamp": "2026-10-15T10:28:08.100679+00:00",
+    "accepted_source": {
+      "doi": "10.1016/j.heliyon.2018.e00778",
+      "pmcid": "PMC6129760",
+      "original_full_jats": "/private/tmp/cmm-round93-resources-research/wei2018.xml",
+      "original_full_html": "/private/tmp/cmm-round93-resources-research/wei2018-pmc.html",
+      "original_figures": [
+        "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr1.jpg",
+        "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr2.jpg",
+        "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr3.jpg",
+        "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr4.jpg",
+        "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr5.jpg",
+        "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr6.jpg",
+        "/private/tmp/cmm-round93-resources-research/wei2018-assets/gr7.jpg"
+      ],
+      "tables": [
+        {
+          "id": "tbl1",
+          "label": "Table 1",
+          "path": "/private/tmp/cmm-round93-resources-research/tbl1.xml",
+          "sha256": "d3349b37fa12fdd79225808696b4679fe8f402ad0849bfe872dbc5e922e04ad0"
+        },
+        {
+          "id": "tbl2",
+          "label": "Table 2",
+          "path": "/private/tmp/cmm-round93-resources-research/tbl2.xml",
+          "sha256": "34bbe52c094d01d629d505608699056086e6fdc8e07028210b0f0fca149c0a9e"
+        },
+        {
+          "id": "tbl3",
+          "label": "Table 3",
+          "path": "/private/tmp/cmm-round93-resources-research/tbl3.xml",
+          "sha256": "8d898bcf784a98f32eaccfc48b6664c58b308c11759f6831f983b59ea9f7c0ff"
+        },
+        {
+          "id": "tbl4",
+          "label": "Table 4",
+          "path": "/private/tmp/cmm-round93-resources-research/tbl4.xml",
+          "sha256": "0ffdb76a46b488fbab2bf8522eb23bfc6210e2eee3866a2dc4475115cdffd8fc"
+        },
+        {
+          "id": "tbl5",
+          "label": "Table 5",
+          "path": "/private/tmp/cmm-round93-resources-research/tbl5.xml",
+          "sha256": "eb4101ebf1b372445f1c37dd40abfa38bdc932674d6d7d4a90e757fb77213b79"
+        },
+        {
+          "id": "tbl6",
+          "label": "Table 6",
+          "path": "/private/tmp/cmm-round93-resources-research/tbl6.xml",
+          "sha256": "83ed152ffdbd91e0141b8da21a9c4764fa7913f04932a7a6c958a0da2038e32a"
+        }
+      ],
+      "supplementary_material_count_in_full_jats": 0,
+      "archive_members": 14,
+      "archive_contents": "Seven paired main-figure JPG/GIF assets; no separate supplementary document.",
+      "license": "CC BY-NC-ND4.0 per original permissions; originals retained outsideGit, dossier paraphrases only.",
+      "pdf_status": "EPMC PDF403; PMC .pdf route returned HTML challenge, not acceptedPDF."
+    },
+    "assessment": {
+      "feed": "Fresh pig manure from a localTianjin China pigfarm; stored4C and diluted2%w/v. No invented facility-specific split.",
+      "organism": "Enriched indigenous community. All clones from a further salt-medium enrichment reportedly98%similar to A.thiooxidans; insufficient for confirmed species/strain assignment. No organismCURIE planned.",
+      "controls": "All displayed arms inoculated at different sulfur doses; no sterile, uninoculated or zero-sulfur comparator.",
+      "positive": "Culture-associated acidification, sulfate increase and unequal Cu/Zn/Mn mobilization; higher sulfur2\u21928g/L accelerates,8\u219210 little additionalbenefit.",
+      "negative": "N/P/K/TOC concentration decreases in residual manure; no isolated metal or nutrient product, dewaterability/safety/deployment notdirectlydemonstrated.",
+      "quantitative_scope": "0.45micrometre-filtered AAS liquid endpoint; paper defines initialsolidmetal vsaqueousmetal mass in kinetic model, but inoculum/sampling and finalvolume accounting unresolved.",
+      "contradictions": [
+        "Section3.1 lists ORP>200mVtimes6,6,8,11days for2,5,8,10g/L in reverse ordering toFigure1b; usequalitativegraphicdoseeffectonly.",
+        "Table4 sulfur concentration headingmg/L conflictsMethods/figuresg/L.",
+        "Figure7caption says totalnitrate/totalphosphate, whereasMethods/axes saytotalnitrogen/totalphosphorus. No nitrateororthophosphate assignment.",
+        "Table1/Figure7TOC589.52mg/kginitial versusTable6carbon39.57wt% haveunresolvedanalyticalbasis/unitcompatibility.",
+        "Methods2.4 says two-day metalsampling, Figure4 includesdaily points; sampling/replicate protocolunresolved.",
+        "Fig6 after-treatment sulfur dose notexplicit; operationalTessierfractions notmineralphase/speciationorprovensafety."
+      ]
+    },
+    "dedup": {
+      "mode": "rg --no-ignore --hidden --follow; actualfeed/normalizedDOI",
+      "maintained_roots": [
+        "data/records",
+        "research",
+        "reviews",
+        "history"
+      ],
+      "termset": [
+        "pig manure",
+        "swine manure",
+        "e00778",
+        "10.1016/j.scitotenv.2018.03.140",
+        "poultry litter"
+      ],
+      "maintained_exact_candidate_matches": 0,
+      "relevant_raw_roots": [
+        "/private/tmp/cmm-round86-resources-research",
+        "/private/tmp/cmm-round57-anode-slime-research",
+        "/private/tmp/cmm-round89-resources-research"
+      ],
+      "raw_hits": "Two unrelated reference mentions in round89; no imported assay evidence.",
+      "issue_inventory": "/private/tmp/cmm-round93-initial-issues.json",
+      "issue_count": 219,
+      "matching_issues": [],
+      "bounds": "No machinewide or universalabsenceclaim."
+    },
+    "deferred": [
+      {
+        "candidate": "rawcopperanodeslime",
+        "reason": "Priorround57 copperautoclaveslime is downstream telluriumprocessresidue, notrawanodeslime. Currentraw hits abiotic/modelLCA notdirectmicrobialoriginal."
+      },
+      {
+        "candidate": "poultrylitter",
+        "citation": "El-Katonyetal2015 ScientificJournalforDamiettaFacultyofScience5(1):101\u2013109; RGuploadDOI10.13140/RG.2.1.5004.9045",
+        "reason": "Onlyabstractauthoruploadverified; officialjournalroutes429. RG291284655same-titlepagecontainsunrelatedsalinitypaper; rejectedidentity. No measurementsadopted."
+      },
+      {
+        "doi": "10.1016/j.scitotenv.2018.03.140",
+        "reason": "Relatedbiocharstudy citedforcloneanalysis; originalnotacquiredthisround, no quantitativeorindependentreplicationclaim."
+      }
+    ]
+  },
+  "named_validation": {
+    "command": [
+      "uv",
+      "run",
+      "--locked",
+      "cmmmech",
+      "validate",
+      "data/records/pig-manure.yaml",
+      "--require-records"
+    ],
+    "exit_code": 0,
+    "log": "/private/tmp/cmm-round93-resources-research/named-validation.log",
+    "log_sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+    "result": "Checked 1 record(s); 0 failed."
+  },
+  "baseline_receipt": "/private/tmp/cmm-round93-baseline.json",
+  "baseline_sha256": "ec62b954f0a6692f566620fb625512372177c0cdad33f3d59592e2e6b6187bf1",
+  "status": "curated_pending_independent_review",
+  "source_followup_draft": "/private/tmp/cmm-round93-pig-manure-source-followup.md"
+}

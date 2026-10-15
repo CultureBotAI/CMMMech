@@ -1,0 +1,11 @@
+--- /private/tmp/cmm-round93-hosted-before-locator-20261015T105216Z.py
++++ /private/tmp/cmm-round93-hosted-peer.py
+@@ -87,7 +87,7 @@
+   need(any(e['kind']=='primary_source' and e['support']=='supports' for e in v['evidence']),'No supporting primary evidence selected')
+   for e in v['evidence']:
+    if e['kind']!='primary_source':continue
+-   loc=e.get('locator','');m=re.search(r'(?:Actual local artifact|Artifact):\s*(/private/tmp/.*)$',loc,re.I);need(m is not None,'No exact raw primary locator '+e['evidence_id']);p=Path(m.group(1).strip());need(p.is_file() and p.stat().st_size>0 and sha(p)==e['snapshot_sha256'],'Primary source binding fails '+str(p));primary.append({'review_id':v['review_id'],'evidence_id':e['evidence_id'],**binding(p),'bytes':p.stat().st_size})
++   loc=e.get('locator','');m=re.search(r'(?:(?:Actual local artifact|Artifact):\s*|local artifact\s+)(/private/tmp/.*)$',loc,re.I);need(m is not None,'No exact raw primary locator '+e['evidence_id']);p=Path(m.group(1).strip());need(p.is_file() and p.stat().st_size>0 and sha(p)==e['snapshot_sha256'],'Primary source binding fails '+str(p));primary.append({'review_id':v['review_id'],'evidence_id':e['evidence_id'],**binding(p),'bytes':p.stat().st_size})
+   selected.append({'slug':r['slug'],'id':r['id'],'owner':binding(rp),'history':[binding(W/h) for h in r['history_refs']],'review':binding(vpath),'markdown':binding(vpath.with_suffix('.md')),'review_id':v['review_id'],'reviewer':v['reviewer'],'verdict':v['verdict']})
+  result['native_finding_dispositions']=verify_native_lineage([y(x['review']['path']) for x in selected],[y(W/p) for p in paths if p.startswith('reviews/structured/') and p.endswith('/review.yaml')],lambda p:y(W/p),lambda p:sha(W/p))
+  result.update(selected_scientific_reviews=selected,primary_evidence_bindings=primary,report=binding(reportp),authorship='Authored pig-manure; its independent phosphate-agent scientific review is relied upon. Independently reviewed thallium and beudantite. This is operational package/hosted verification, not fresh scientific self-acceptance.')

@@ -1,0 +1,442 @@
+# Independent scientific review of Beudantite
+
+- Review: 20261015T105724Z-beudantite-round93-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T10:36:20.245148Z
+- Finished UTC: 2026-10-15T10:57:24.835925Z
+- Reviewer: codex /root/round68_new_frontier (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of natural beudantite identity and specimen-specific crystal2 refinement, with synthetic dissolution data retained only as context for a substituted heterogeneous preparation. No microbial mechanism, pure-endmember rate or recovery claim is imported; no corrective finding.
+
+## Scope And Provenance
+
+Whole exact owner, linked history and bounded complete original evidence including all claim-bearing graphics and relevant supplementary content.
+
+Selection: Assigned target captured through native inspect before scientific judgment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base e0bffe8eb1c6e359f35d9c52c74a95a4efdc2b9d.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:beudantite | data/records/beudantite.yaml | maintained | Beudantite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:beudantite | Actual reviewer command checked2records,0failed. |
+| Completed coordinator batch command1 | passed | True | cmmmech:beudantite | Actual terminal receipt/log verified, no reviewer rerun. |
+| Completed coordinator batch command2 | passed | True | cmmmech:beudantite | Actual terminal receipt/log verified, no reviewer rerun. |
+| Completed coordinator batch command3 | passed | True | cmmmech:beudantite | Actual terminal receipt/log verified, no reviewer rerun. |
+| Completed coordinator batch command4 | passed | True | cmmmech:beudantite | Actual terminal receipt/log verified, no reviewer rerun. |
+
+## Scientific And Domain Assessments
+
+### Natural mineral identity
+
+identity: supported. Targets: cmmmech:beudantite.
+
+Ideal identity is independently authoritative; naturalTsumeb primary specimen is compositionally variable and distinct fromcorkite/plumbojarosite/element concepts.
+
+### Specimen-specific structural characterization
+
+evidence: supported. Targets: cmmmech:beudantite.
+
+Published methods and graphics support crystal2 dimensions/refinement only; unsuccessful othercrystals and unresolveddisorder are retained. Missing depositedfactors limits replication rather than published identity.
+
+### Synthetic dissolution transfer limits
+
+scope: supported. Targets: cmmmech:beudantite.
+
+Strong hydronium/sulfate substitution and initialgrain heterogeneity justify context-only2024 evidence. No phase-specific mechanism or pure-endmember environmental stability follows from persistent bulkXRD/AsV.
+
+### Assay basis and absence of recovery
+
+quantity: supported. Targets: cmmmech:beudantite.
+
+Source normalizes aqueouscontent to solidmass; quantities remain bounded to0.06g/40mL,sacrificialtriplicates,56days. Reaction/unit/FePbconflicts and no isolatedproduct prevent recovery claims.
+
+### Immutable source, actor and completed checks
+
+provenance: supported. Targets: cmmmech:beudantite.
+
+Exact native owner/history capture, source artifacts and independently checked named/batch receipts support a bounded qualified acceptance. Raw access limitations and working-tree state are explicit.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/beudantite.yaml; Whole exact native-captured maintained owner. Artifact: /private/tmp/CMMMech-expansion-round93-20261015/data/records/beudantite.yaml | supports | Material identity, evidence scope and explicit limitations independently assessed; owner bytes unchanged. |
+| history | history/records/beudantite/2026-10-15T103244Z-codex-8b8718.yaml; Canonical CREATE sidecar, inline event and history_refs. Artifact: /private/tmp/CMMMech-expansion-round93-20261015/history/records/beudantite/2026-10-15T103244Z-codex-8b8718.yaml | supports | Actual GPT-6/codex actor, timestamps and addition target agree. Reviewer did not author or edit this record/history. |
+| named | Independent strict named validation; Actual completed uv run --locked cmmmech validate --require-records data/records/thallium.yaml data/records/beudantite.yaml. Artifact: /private/tmp/cmm-round93-independent-named.log | supports | Checked2records;0failed; not a claim of scientific proof. |
+| batch | /private/tmp/cmm-round93-final-gates.json; Actual FOUR coordinator commands from 2026-10-15T10:49:26.284362+00:00 to 2026-10-15T10:56:52.828787+00:00; log /private/tmp/cmm-round93-final-gates.log SHA256 efc4d81c12b0a2d142f10d38e0c4e29aa1ff803d533f2bcbaf8b4e62020d437a; all exits0, exact owner hashes stable. Artifact: /private/tmp/cmm-round93-final-gates.json | supports | Receipt, commands, log bytes, base/worktree and exact unchanged owner independently verified; suite not rerun by reviewer. |
+| search | Bounded notice and experiment-lineage review; Exact source DOI/title notice queries and hidden/ignored/followed maintained lineage search. Artifact: /private/tmp/cmm-round93-independent-search.json | context_only | No applicable corrective notice surfaced in the inspected results; no universal absence or full replication claim. |
+| natural | https://www.rruff.net/doclib/cm/vol26/CM26_923.pdf; Complete10-page original; compositionTable1/p924; crystal1–3 methodspp925–927; Tables2/3/5 and Figures1–3pp926–929; discussionpp929–930. Artifact: /private/tmp/cmm-round93-sulfates-research/beudantite1988.pdf | supports | Tsumeb specimen zoning, Al/Fe and As/S variability are explicit. Crystal2 refined with644 unique reflections toR3.7%,a7.3151(9),c17.0355(5),R-3m. Crystal1 profile problems and crystal3 triclinic distortion/unknown composition prevent universal symmetry claims. Pb lone-pair account remains proposed; depositedTable4 was unavailable, so no independent re-refinement is asserted. |
+| synthetic | https://doi.org/10.1016/j.jhazmat.2024.136382; Complete9-page article plus institutional cover; Sections2.2–3.2, allFigures1–4 and Table1; publishedpp2–7/PDF3–8. Artifact: /private/tmp/cmm-round93-sulfates-research/beudantite2024.pdf | context_only | Pb0.32(H3O)0.68Fe3(AsO4)0.32(SO4)1.68(OH)6 and some initial grains withoutAs/Pb do not identify pure natural endmember.0.06g/40mL,22C,pH2/4/6/8,triplicate destructive56-day dissolution context agrees. Concentrations normalized per solid mass and persistentXRD do not prove rates or indefinite stability. Feunit, reaction and idealFe/Pbcomparison conflicts are not imported as quantitative truth. |
+| si | https://doi.org/10.1016/j.jhazmat.2024.136382; Valid original official DOCX supplement, native text/media plus all9 rendered pages independently inspected; FiguresS1–S7. Basename attempt does not indicate failed acquisition. Artifact: /private/tmp/cmm-round93-sulfates-research/beudantite2024-si-attempt.docx | context_only | All seven figures show initialXRD/SEM/SAED/heterogeneous elemental maps, fitting,day56 maps and pitting. Cover advertises10pages/1table, but inspected DOCX has zero native tables and nine rendered pages; no unseen table inferred. Residual pitting/local fits are not quantitative recovered-product evidence. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Complete current authority, definitionspage1 and Beudantite rowpage25 visually inspected. Artifact: /private/tmp/cmm-round93-sulfates-research/ima2026-09.pdf | supports | IdealPbFe3+(3)(AsO4)(SO4)(OH)6;Rd/1987specialprocedure is redefinition, not individual approval accession. No fabricated external identifier or criticality. |
+| handbook | https://handbookofmineralogy.org/pdfs/beudantite.pdf; Complete one-page Handbook identity entry, chemistry,cell data,occurrence and references. Artifact: /private/tmp/cmm-round93-sulfates-research/beudantite-handbook.pdf | supports | Mineral identity corroborated; unrelated specimen compositions and later references do not turn the1988 crystal2 result into a universal endmember measurement. |
+
+## Limits And Additional Notes
+
+- 1988 separately deposited Table4structure factors were not acquired; no independent re-refinement. Published naturalcrystal2 identity remains supported, without generalizing symmetry tocrystal3 or every specimen.
+- 2024 synthetic preparation has marked hydronium/sulfate substitution and heterogeneous initial grains. It is context only; no pure-endmember mechanism or quantitative stability transfer.
+- Official2024DOCX cover claims ten pages andone table, but native content has seven figures/no table and rendersninepages. Complete acquired content was inspected; unavailable advertised content not invented.
+- No microbial organism/mechanism, isolated product or industrial operation is established; no criticality inherited.
+- Bounded notice/lineage search and existing original artifacts do not establish exhaustive absence of counterliterature. No new laboratory experiment or independent structural refinement was conducted.
+- Start is actual persisted native inspection completion time from filesystem metadata; reading and assessment followed capture. No fabricated earlier clock time.
+- Raw primaries are outside Git; snapshot hashes and exact local artifacts are supplied. The scientific verdict addresses this immutable owner state, not authored pig-manure.
+- The shared original sulfate dossier is retained as historical context; its corkite acquisition count is explicitly superseded by the bound 20261015T104946Z addendum. This unrelated count correction does not alter the independently reviewed beudantite owner or primary assessment.
+- First native inspect invocation rejected a targets-list document rather than required mapping; same target was recaptured successfully with canonical wrapper before judgment. No saved native review was overwritten.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T105724Z-beudantite-round93-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Beudantite
+started_at: '2026-10-15T10:36:20.245148Z'
+finished_at: '2026-10-15T10:57:24.835925Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored pig-manure, not beudantite. Native target
+    capture completed before scientific judgment; independently read complete1988
+    original and2024 main/SI, all claim-bearing published figures/tables and current
+    IMA/Handbook. No owner edits or re-refinement.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of natural beudantite identity and specimen-specific
+  crystal2 refinement, with synthetic dissolution data retained only as context for
+  a substituted heterogeneous preparation. No microbial mechanism, pure-endmember
+  rate or recovery claim is imported; no corrective finding.
+source:
+  git_revision: e0bffe8eb1c6e359f35d9c52c74a95a4efdc2b9d
+  state: working_tree
+  inputs:
+  - path: data/records/beudantite.yaml
+    sha256: cc2ccaf3c1efd7c88e2b14a576de3f2c5450f55cebd3be239f099896e917f368
+    role: target
+  - path: history/records/beudantite/2026-10-15T103244Z-codex-8b8718.yaml
+    sha256: 8f8651c13aae70fe1063ee767de936ca1b5ff2530d3ff286e11d15ed24e44bc6
+    role: context
+  - path: research/sources/round93-sulfates/20261015T103631Z-source-investigation.md
+    sha256: 5fd5c217f4d63e92f866c461095be813e08153b59602b14b852ec342d3b71054
+    role: context
+  - path: research/sources/round93-sulfates/20261015T103631Z-source-investigation.json
+    sha256: dcaf5a3c96534b2a5568228e07013ed323aa8edf4dee3f044f850edc94d185b9
+    role: context
+  - path: research/sources/round93-sulfates/20261015T104946Z-corkite-acquisition-correction.md
+    sha256: e41cca6dace20f580917aaeb5612eb726ad0198e066f952c85fc17a971def2b3
+    role: context
+  - path: research/sources/round93-sulfates/20261015T104946Z-corkite-acquisition-correction.json
+    sha256: 9e67585891fb7046109d0f18835c1515d0f03f08910325ac4912d887837cfb92
+    role: context
+scope:
+  description: Whole exact owner, linked history and bounded complete original evidence
+    including all claim-bearing graphics and relevant supplementary content.
+  selection: Assigned target captured through native inspect before scientific judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:beudantite
+targets:
+- target_id: cmmmech:beudantite
+  path: data/records/beudantite.yaml
+  label: Beudantite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/beudantite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate --require-records data/records/thallium.yaml
+    data/records/beudantite.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual reviewer command checked2records,0failed.
+  target_ids:
+  - cmmmech:beudantite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch command1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt/log verified, no reviewer rerun.
+  target_ids:
+  - cmmmech:beudantite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch command2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt/log verified, no reviewer rerun.
+  target_ids:
+  - cmmmech:beudantite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch command3
+  command: uv run --locked cmmmech validate-history --base e0bffe8eb1c6e359f35d9c52c74a95a4efdc2b9d
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt/log verified, no reviewer rerun.
+  target_ids:
+  - cmmmech:beudantite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch command4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt/log verified, no reviewer rerun.
+  target_ids:
+  - cmmmech:beudantite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/beudantite.yaml
+  locator: 'Whole exact native-captured maintained owner. Artifact: /private/tmp/CMMMech-expansion-round93-20261015/data/records/beudantite.yaml'
+  accessed_at: '2026-10-15T10:57:24.835925Z'
+  support: supports
+  snapshot_sha256: cc2ccaf3c1efd7c88e2b14a576de3f2c5450f55cebd3be239f099896e917f368
+  summary: Material identity, evidence scope and explicit limitations independently
+    assessed; owner bytes unchanged.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/beudantite/2026-10-15T103244Z-codex-8b8718.yaml
+  locator: 'Canonical CREATE sidecar, inline event and history_refs. Artifact: /private/tmp/CMMMech-expansion-round93-20261015/history/records/beudantite/2026-10-15T103244Z-codex-8b8718.yaml'
+  accessed_at: '2026-10-15T10:57:24.835925Z'
+  support: supports
+  snapshot_sha256: 8f8651c13aae70fe1063ee767de936ca1b5ff2530d3ff286e11d15ed24e44bc6
+  summary: Actual GPT-6/codex actor, timestamps and addition target agree. Reviewer
+    did not author or edit this record/history.
+- evidence_id: named
+  kind: validation
+  reference: Independent strict named validation
+  locator: 'Actual completed uv run --locked cmmmech validate --require-records data/records/thallium.yaml
+    data/records/beudantite.yaml. Artifact: /private/tmp/cmm-round93-independent-named.log'
+  accessed_at: '2026-10-15T10:57:24.835925Z'
+  support: supports
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+  summary: Checked2records;0failed; not a claim of scientific proof.
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round93-final-gates.json
+  locator: 'Actual FOUR coordinator commands from 2026-10-15T10:49:26.284362+00:00
+    to 2026-10-15T10:56:52.828787+00:00; log /private/tmp/cmm-round93-final-gates.log
+    SHA256 efc4d81c12b0a2d142f10d38e0c4e29aa1ff803d533f2bcbaf8b4e62020d437a; all exits0,
+    exact owner hashes stable. Artifact: /private/tmp/cmm-round93-final-gates.json'
+  accessed_at: '2026-10-15T10:57:24.835925Z'
+  support: supports
+  snapshot_sha256: 00514e030fe956f3d0911d6085903163a88908d960ce5c30d914c4f737abba9d
+  summary: Receipt, commands, log bytes, base/worktree and exact unchanged owner independently
+    verified; suite not rerun by reviewer.
+- evidence_id: search
+  kind: search
+  reference: Bounded notice and experiment-lineage review
+  locator: 'Exact source DOI/title notice queries and hidden/ignored/followed maintained
+    lineage search. Artifact: /private/tmp/cmm-round93-independent-search.json'
+  accessed_at: '2026-10-15T10:57:24.835925Z'
+  support: context_only
+  snapshot_sha256: 8719fed8fd98e0cb0b0d108e21373646a60447ffc457ea6354dd8bc483a4eb04
+  summary: No applicable corrective notice surfaced in the inspected results; no universal
+    absence or full replication claim.
+  search_scope: Exact DOI/title queries documented in bound search receipt; current
+    data/records,research,reviews,history with hidden/ignored/followed links, not
+    machinewide.
+- evidence_id: natural
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/cm/vol26/CM26_923.pdf
+  locator: 'Complete10-page original; compositionTable1/p924; crystal1–3 methodspp925–927;
+    Tables2/3/5 and Figures1–3pp926–929; discussionpp929–930. Artifact: /private/tmp/cmm-round93-sulfates-research/beudantite1988.pdf'
+  accessed_at: '2026-10-15T10:57:24.835925Z'
+  support: supports
+  snapshot_sha256: fb23a65a8f22ff26b0e247f372e7243c71d666f10a254e869c18593cd16e4a9b
+  summary: Tsumeb specimen zoning, Al/Fe and As/S variability are explicit. Crystal2
+    refined with644 unique reflections toR3.7%,a7.3151(9),c17.0355(5),R-3m. Crystal1
+    profile problems and crystal3 triclinic distortion/unknown composition prevent
+    universal symmetry claims. Pb lone-pair account remains proposed; depositedTable4
+    was unavailable, so no independent re-refinement is asserted.
+- evidence_id: synthetic
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.jhazmat.2024.136382
+  locator: 'Complete9-page article plus institutional cover; Sections2.2–3.2, allFigures1–4
+    and Table1; publishedpp2–7/PDF3–8. Artifact: /private/tmp/cmm-round93-sulfates-research/beudantite2024.pdf'
+  accessed_at: '2026-10-15T10:57:24.835925Z'
+  support: context_only
+  snapshot_sha256: fd4d4ea2a9ae8279900238a4061e60781183d1aa3179062746e5b958b2b0bf2e
+  summary: Pb0.32(H3O)0.68Fe3(AsO4)0.32(SO4)1.68(OH)6 and some initial grains withoutAs/Pb
+    do not identify pure natural endmember.0.06g/40mL,22C,pH2/4/6/8,triplicate destructive56-day
+    dissolution context agrees. Concentrations normalized per solid mass and persistentXRD
+    do not prove rates or indefinite stability. Feunit, reaction and idealFe/Pbcomparison
+    conflicts are not imported as quantitative truth.
+- evidence_id: si
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.jhazmat.2024.136382
+  locator: 'Valid original official DOCX supplement, native text/media plus all9 rendered
+    pages independently inspected; FiguresS1–S7. Basename attempt does not indicate
+    failed acquisition. Artifact: /private/tmp/cmm-round93-sulfates-research/beudantite2024-si-attempt.docx'
+  accessed_at: '2026-10-15T10:57:24.835925Z'
+  support: context_only
+  snapshot_sha256: 0e37930416a529073ee632bb04de929ec1a193c8b54a1fade97d89faa4fb4956
+  summary: All seven figures show initialXRD/SEM/SAED/heterogeneous elemental maps,
+    fitting,day56 maps and pitting. Cover advertises10pages/1table, but inspected
+    DOCX has zero native tables and nine rendered pages; no unseen table inferred.
+    Residual pitting/local fits are not quantitative recovered-product evidence.
+- evidence_id: ima
+  kind: database
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'Complete current authority, definitionspage1 and Beudantite rowpage25
+    visually inspected. Artifact: /private/tmp/cmm-round93-sulfates-research/ima2026-09.pdf'
+  accessed_at: '2026-10-15T10:57:24.835925Z'
+  support: supports
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  summary: IdealPbFe3+(3)(AsO4)(SO4)(OH)6;Rd/1987specialprocedure is redefinition,
+    not individual approval accession. No fabricated external identifier or criticality.
+- evidence_id: handbook
+  kind: database
+  reference: https://handbookofmineralogy.org/pdfs/beudantite.pdf
+  locator: 'Complete one-page Handbook identity entry, chemistry,cell data,occurrence
+    and references. Artifact: /private/tmp/cmm-round93-sulfates-research/beudantite-handbook.pdf'
+  accessed_at: '2026-10-15T10:57:24.835925Z'
+  support: supports
+  snapshot_sha256: b44cf508b2365f5d213a4bef101b080cdbdabf4c12e1671365235f2e78d3bdf8
+  summary: Mineral identity corroborated; unrelated specimen compositions and later
+    references do not turn the1988 crystal2 result into a universal endmember measurement.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Natural mineral identity
+  outcome: supported
+  summary: Ideal identity is independently authoritative; naturalTsumeb primary specimen
+    is compositionally variable and distinct fromcorkite/plumbojarosite/element concepts.
+  target_ids:
+  - cmmmech:beudantite
+  evidence_ids:
+  - natural
+  - ima
+  - handbook
+  - owner
+- assessment_id: structure
+  area: evidence
+  topic: Specimen-specific structural characterization
+  outcome: supported
+  summary: Published methods and graphics support crystal2 dimensions/refinement only;
+    unsuccessful othercrystals and unresolveddisorder are retained. Missing depositedfactors
+    limits replication rather than published identity.
+  target_ids:
+  - cmmmech:beudantite
+  evidence_ids:
+  - natural
+- assessment_id: context
+  area: scope
+  topic: Synthetic dissolution transfer limits
+  outcome: supported
+  summary: Strong hydronium/sulfate substitution and initialgrain heterogeneity justify
+    context-only2024 evidence. No phase-specific mechanism or pure-endmember environmental
+    stability follows from persistent bulkXRD/AsV.
+  target_ids:
+  - cmmmech:beudantite
+  evidence_ids:
+  - synthetic
+  - si
+- assessment_id: quantity
+  area: quantity
+  topic: Assay basis and absence of recovery
+  outcome: supported
+  summary: Source normalizes aqueouscontent to solidmass; quantities remain bounded
+    to0.06g/40mL,sacrificialtriplicates,56days. Reaction/unit/FePbconflicts and no
+    isolatedproduct prevent recovery claims.
+  target_ids:
+  - cmmmech:beudantite
+  evidence_ids:
+  - synthetic
+  - si
+- assessment_id: provenance
+  area: provenance
+  topic: Immutable source, actor and completed checks
+  outcome: supported
+  summary: Exact native owner/history capture, source artifacts and independently
+    checked named/batch receipts support a bounded qualified acceptance. Raw access
+    limitations and working-tree state are explicit.
+  target_ids:
+  - cmmmech:beudantite
+  evidence_ids:
+  - owner
+  - history
+  - named
+  - batch
+  - search
+findings: []
+actions: []
+limitations:
+- 1988 separately deposited Table4structure factors were not acquired; no independent
+  re-refinement. Published naturalcrystal2 identity remains supported, without generalizing
+  symmetry tocrystal3 or every specimen.
+- 2024 synthetic preparation has marked hydronium/sulfate substitution and heterogeneous
+  initial grains. It is context only; no pure-endmember mechanism or quantitative
+  stability transfer.
+- Official2024DOCX cover claims ten pages andone table, but native content has seven
+  figures/no table and rendersninepages. Complete acquired content was inspected;
+  unavailable advertised content not invented.
+- No microbial organism/mechanism, isolated product or industrial operation is established;
+  no criticality inherited.
+- Bounded notice/lineage search and existing original artifacts do not establish exhaustive
+  absence of counterliterature. No new laboratory experiment or independent structural
+  refinement was conducted.
+notes:
+- Start is actual persisted native inspection completion time from filesystem metadata;
+  reading and assessment followed capture. No fabricated earlier clock time.
+- Raw primaries are outside Git; snapshot hashes and exact local artifacts are supplied.
+  The scientific verdict addresses this immutable owner state, not authored pig-manure.
+- The shared original sulfate dossier is retained as historical context; its corkite
+  acquisition count is explicitly superseded by the bound 20261015T104946Z addendum.
+  This unrelated count correction does not alter the independently reviewed beudantite
+  owner or primary assessment.
+- First native inspect invocation rejected a targets-list document rather than required
+  mapping; same target was recaptured successfully with canonical wrapper before judgment.
+  No saved native review was overwritten.
+```

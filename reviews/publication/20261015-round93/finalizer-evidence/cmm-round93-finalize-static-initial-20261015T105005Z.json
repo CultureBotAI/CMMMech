@@ -1,0 +1,31 @@
+{
+  "recorded_at": "2026-10-15T10:50:05.800622Z",
+  "passed": false,
+  "scope": "Independent operational static review only; no top-level execution or Git/GitHub mutation. Authored lithium owners separately; no self scientific acceptance.",
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round93-finalize.py",
+      "sha256": "972a6d7412d57fb2832e8f400816c6bf40f6fa22a4aee72c7d22f5a28d92f1c0",
+      "snapshot": "/private/tmp/cmm-round93-finalize-static-initial-20261015T105005Z-finalize.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round93-finalize-binding-probe.json",
+      "sha256": "44249449031bb3ec47b9735cc6db578e6e7792e7281989aafceacfa7ff354e86"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "OP1",
+      "issue_key": "round93-finalize-hosted-receipt-binding",
+      "severity": "minor",
+      "status": "open",
+      "summary": "Finalizer accepts hosted success summaries without reconciling exact logical run identities or source receipt hash bindings; accepted peer PR number is also not tested.",
+      "evidence": "Actual AST-extracted assertions accept a peer with pr999 for target330 and a hosted receipt with five unrelated role names and no run/head/workflow identities. Existing hosted producer records the required exact inputs and responses; it is not alleged defective.",
+      "acceptance": "Require peer.pr equals actual published PR. Reconcile hosted.inputs paths/hashes to exact commit/config/queue/peer/preflight/review body and preflight log. Require exact five roles and identities/jobs consistent with retained producer responses. Focused cases reject wrong PR, changed receipt binding and wrong role/head."
+    }
+  ],
+  "limits": [
+    "Only source at recorded hash assessed; future runtime receipts and publication not asserted.",
+    "Copy plan validates source files, unique basenames and hashes before mkdir;7333 original entries checked."
+  ]
+}

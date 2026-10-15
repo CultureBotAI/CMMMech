@@ -1,0 +1,42 @@
+--- /private/tmp/cmm-round93-finalize-static-initial-20261015T105005Z-finalize.py	2026-10-15 03:50:05
++++ /private/tmp/cmm-round93-finalize.py	2026-10-15 03:52:16
+@@ -18,10 +18,35 @@
+  cv=json.loads(Path(d['coverage_receipt']).read_text());assert cv['passed'] and all(cv[k]==v for k,v in cfg['counts'].items())
+ merge=clean['merge'];n=pr['pr']['number'];assert clean['local_branch_absent'] and clean['remote_branch_absent'] and track['absent'] and sync['passed'] and sync['main_clean']
+ assert all(clean[k]==c[k] for k in ['base','head','tree']) and sync['merge']==post['merge_commit']==merge and sync['tree']==c['tree']
+-assert hosted['passed'] and hosted['all_five_hosted_runs_and_jobs_succeeded'] and hosted['pr']==n and hosted['merge']==merge and all(hosted[k]==c[k] for k in ['base','head','tree']) and len(hosted['runs'])==5 and not hosted['findings'] and not hosted['pending']
+-for r in hosted['runs'].values():assert r['status']=='completed' and r['conclusion']=='success' and r['jobs'] and all(j['status']=='completed' and j['conclusion']=='success' for j in r['jobs'])
+-assert peer['passed'] and sha(peerpath)==posted['peer_sha256'] and all(peer[k]==c[k] for k in ['base','head','tree'])
+-draft=peer['comment_draft'];assert sha(draft['path'])==draft['sha256']==posted['body_sha256'] and posted['review']['body']==Path(draft['path']).read_text() and posted['review']['commit_id']==c['head'] and posted['review']['state']=='COMMENTED'
++assert hosted['passed'] and hosted['all_five_hosted_runs_and_jobs_succeeded'] and hosted['pr']==n and hosted['merge']==merge and all(hosted[k]==c[k] for k in ['base','head','tree']) and not hosted['findings'] and not hosted['pending']
++roles={'required_pr':('pull_request',c['head'],'validate-strict.yaml','validate-strict'),'merge_group':('merge_group',merge,'validate-strict.yaml','validate-strict'),'main_validation':('push',merge,'validate-strict.yaml','validate-strict'),'main_integrity':('push',merge,'verify-merge-integrity.yaml','merge-integrity'),'pages_deployment':('push',merge,'pages.yaml','deploy')}
++assert set(hosted['runs'])==set(hosted['selected_run_ids'])==set(roles)
++assert len(set(hosted['selected_run_ids'].values()))==5
++queue=load('queue-receipt');assert queue['exit_code']==0 and queue['topic']==c and queue['pr']['number']==n and queue['live_main']==c['base']
++assert queue['preflight_sha256']==sha(T/'cmm-round93-preflight-committed-terminal.json') and queue['preflight_log_sha256']==pre['log_sha256']
++assert peer['passed'] and peer['pr']==n and sha(peerpath)==posted['peer_sha256'] and all(peer[k]==c[k] for k in ['base','head','tree'])
++draft=peer['comment_draft'];assert sha(draft['path'])==draft['sha256']==posted['body_sha256']==queue['review_body_sha256'] and posted['review']['body']==Path(draft['path']).read_text() and posted['review']['commit_id']==c['head'] and posted['review']['state']=='COMMENTED'
++assert posted['review']['id'] in queue['hosted_review_ids'] and posted['review']['html_url'].startswith(f'https://github.com/CultureBotAI/CMMMech/pull/{n}#')
++expected_inputs={'commit':T/'cmm-round93-commit-receipt.json','queue':T/'cmm-round93-queue-receipt.json','config':T/'cmm-round93-helper-config.json','peer':peerpath,'preflight':T/'cmm-round93-preflight-committed-terminal.json','posted_review_body':Path(draft['path']),'preflight_log':Path(pre['log'])}
++for label,path in expected_inputs.items():
++ item=hosted['inputs'][label];assert Path(item['path']).resolve()==path.resolve() and item['sha256']==sha(path) and item['bytes']==path.stat().st_size
++for role,(event,head,workflow,requiredjob) in roles.items():
++ r=hosted['runs'][role];raw=hosted['responses'][role+'_actual']['data'];closing=hosted['responses'][role+'_closing']['data']
++ assert hosted['responses'][role+'_actual']['exit_code']==hosted['responses'][role+'_closing']['exit_code']==0
++ assert r['id']==hosted['selected_run_ids'][role]==raw['id']==closing['id'] and r['head_sha']==raw['head_sha']==closing['head_sha']==head
++ assert r['event']==raw['event']==closing['event']==event and r['path']==raw['path']==closing['path']=='.github/workflows/'+workflow
++ assert r['status']==raw['status']==closing['status']=='completed' and r['conclusion']==raw['conclusion']==closing['conclusion']=='success'
++ assert r['run_attempt']==raw['run_attempt']==closing['run_attempt'] and type(r['run_attempt']) is int and r['run_attempt']>0
++ assert raw['repository']['full_name']==closing['repository']['full_name']=='CultureBotAI/CMMMech'
++ branch=r['head_branch'];assert branch==raw['head_branch']==closing['head_branch']
++ assert (branch==c['branch'] if role=='required_pr' else branch.startswith('gh-readonly-queue/main/') if role=='merge_group' else branch=='main')
++ jobs_response=hosted['responses'][role+'_jobs'];assert jobs_response['exit_code']==0
++ assert jobs_response['command']==['gh','api','--method','GET',f"repos/CultureBotAI/CMMMech/actions/runs/{r['id']}/attempts/{r['run_attempt']}/jobs?per_page=100",'--paginate','--slurp']
++ pages=jobs_response['data'];jobs=[j for page in pages for j in page['jobs']];assert len(jobs)==pages[0]['total_count']==len(r['jobs']) and len({j['id'] for j in jobs})==len(jobs)
++ assert any(j['name']==requiredjob for j in jobs)
++ for summary,job in zip(r['jobs'],jobs):
++  assert all(summary.get(k)==job.get(k) for k in ['id','run_id','head_sha','run_attempt','name','status','conclusion','html_url'])
++  assert job['run_id']==r['id'] and job['head_sha']==head and ('run_attempt' not in job or (type(job['run_attempt']) is int and job['run_attempt']==r['run_attempt'])) and job['status']=='completed' and job['conclusion']=='success'
+ issues=load('issue-ledger');corrected=load('corrective-issue-ledger');assert hosted['issue_states']=={str(x['number']):x['state'].lower() for x in issues+corrected}
+ assert git(MAIN,'rev-parse','HEAD')==merge and git(MAIN,'rev-parse','HEAD^{tree}')==c['tree'] and git(MAIN,'branch','--show-current')=='main' and not git(MAIN,'status','--porcelain=v1','--untracked-files=all')
+ assert git(MAIN,'ls-remote','origin','refs/heads/main').split()==[merge,'refs/heads/main'] and not git(MAIN,'ls-remote','origin','refs/heads/'+c['branch'])

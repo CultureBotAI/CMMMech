@@ -1,0 +1,17 @@
+{
+  "recorded_at": "2026-10-15T10:54:23.381636+00:00",
+  "passed": true,
+  "issue": {
+    "body": "Independent static review of the new round93 external finalizer found an operational receipt-binding gap (OP1; stable key `round93-finalize-hosted-receipt-binding`). Its initial assertions accepted a peer receipt for the wrong PR number and five arbitrary successful workflow-role entries. The hosted-five producer already verifies the actual API observations; this finding concerns the final report consumer, not an observed hosted failure or a scientific-record defect.\n\nBefore runtime, bind the peer to the actual PR and the hosted producer's input hashes to the current commit/config/queue/preflight/peer/comment receipts. Require the five specific workflow roles and reconcile their run/event/head/attempt/job identities with the retained raw producer responses. Keep the copy-plan prevalidation and original-main preservation guards.\n\nAcceptance: independent negative cases must reject mismatched PR, input hashes and role/run/job identities while accepting a coherent fixture; preserve the initial observation, fixed helper and successor evidence. Actual postmerge finalization remains a later runtime gate. This is distinct from #326, which concerns posting the COMMENT before finalization.\n\nInitial evidence: `cmm-round93-finalize-static-initial-20261015T105005Z.{json,md}` and the independently retained original helper snapshot. No finalization was executed before review.\n",
+    "closedAt": "2026-10-15T10:54:21Z",
+    "number": 330,
+    "state": "CLOSED",
+    "title": "Bind final publication report to exact hosted receipts and workflow identities",
+    "url": "https://github.com/CultureBotAI/CMMMech/issues/330"
+  },
+  "initial_receipt_sha256": "b208df614ec98c795697e2657199621225b7b2c4facb8eefe2e3d8890ab75a29",
+  "successor": "/private/tmp/cmm-round93-finalize-static-successor-20261015T105315Z.json",
+  "successor_sha256": "929501339638ee25e82d7921792805855d4008ed908c0fc0506a0d5f3942d300",
+  "comment_sha256": "39b5666ed7dd546e0ceef3b1be7ac58728f59aa36b73ec45cd9a71c4e7ded4a2",
+  "evidence_manifest": "reviews/publication/20261015-round93/finalizer-evidence/manifest.json"
+}

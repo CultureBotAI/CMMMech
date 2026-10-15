@@ -1,0 +1,370 @@
+{
+  "created_at": "2026-10-15T10:49:46.529075Z",
+  "kind": "source_dossier_correction",
+  "issue": 328,
+  "issue_url": "https://github.com/CultureBotAI/CMMMech/issues/328",
+  "finding_id": "F1",
+  "issue_key": "cmmmech.corkite.round93.dataset-acquisition-count",
+  "scope": "Author correction of acquisition metadata; independent scientific successor is separately required.",
+  "original_dossier_preserved": true,
+  "correction": {
+    "old_statement": "All 24 distinct linked files acquired.",
+    "new_statement": "23 of 24 linked files acquired; Figure 2/Undried_corkite_Raman.ngs returned HTTP 404 and was not inspected.",
+    "affected_original_dossier_fields": [
+      "Markdown paragraph describing corkite dataset acquisition",
+      "JSON assessment.corkite_dataset"
+    ],
+    "source_title_before": "Ferrenti et al. Public PARADIM dataset accompanying the corkite study, DOI 10.34863/pq8p-sj50. Original diffraction, refinement, spectroscopy, thermal, magnetic and heat-capacity files. All 24 distinct linked files acquired; Fe R3m/R-3m refinement text inspected as supporting data, not independently re-refined. This is the same experimental lineage as the article.",
+    "source_title_after": "Ferrenti et al. Public PARADIM dataset accompanying the corkite study, DOI 10.34863/pq8p-sj50. Original diffraction, refinement, spectroscopy, thermal, magnetic and heat-capacity files. Of 24 distinct linked files, 23 were acquired; Figure 2/Undried_corkite_Raman.ngs returned HTTP 404 and was not inspected. Fe R3m/R-3m refinement text was inspected as supporting data, not independently re-refined. This is the same experimental lineage as the article.",
+    "scientific_interpretations_unchanged": true,
+    "parsed_change_scope": [
+      "sources[3].title",
+      "append curation_history EDIT",
+      "append history_refs EDIT"
+    ]
+  },
+  "acquisition": {
+    "requested": 24,
+    "successful": 23,
+    "missing": [
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Undried_corkite_Raman.ngs",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 2/Undried_corkite_Raman.ngs",
+        "started_at": "2026-10-15T10:29:04.792865+00:00",
+        "error": "HTTP Error 404: Not Found",
+        "finished_at": "2026-10-15T10:29:05.160856+00:00"
+      }
+    ],
+    "successful_artifacts": [
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%201/Fe-corkite_pXRD_pattern.raw",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 1/Fe-corkite_pXRD_pattern.raw",
+        "started_at": "2026-10-15T10:29:03.433337+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%201/Fe-corkite_pXRD_pattern.raw",
+        "content_type": "application/octet-stream",
+        "bytes": 27922,
+        "sha256": "753134e7af9f5e175d0434fbcaaf3209e30f900725bfda384e39e93939a69c38",
+        "signature": "RAW4.00\u0000��\u0000\u000007/04/2022\u0000\u000016:30:",
+        "finished_at": "2026-10-15T10:29:03.835993+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%201/Fe-corkite_R3m_refinement.pro",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 1/Fe-corkite_R3m_refinement.pro",
+        "started_at": "2026-10-15T10:29:03.434437+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%201/Fe-corkite_R3m_refinement.pro",
+        "content_type": "application/octet-stream",
+        "bytes": 79648,
+        "sha256": "280bbbadab9305f0a49885d44bfddec2e89086676c244f8b71ae05745716c342",
+        "signature": "\r\nr_exp 1.633553657 r_exp_dash",
+        "finished_at": "2026-10-15T10:29:03.978597+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%201/Fe-corkite_R-3m_refinement.pro",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 1/Fe-corkite_R-3m_refinement.pro",
+        "started_at": "2026-10-15T10:29:03.434781+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%201/Fe-corkite_R-3m_refinement.pro",
+        "content_type": "application/octet-stream",
+        "bytes": 79471,
+        "sha256": "88794b02d75f013ffa012534e640981e38a2e85d72b8d7222f00922041fdd74a",
+        "signature": "\r\nr_exp 1.633684106 r_exp_dash",
+        "finished_at": "2026-10-15T10:29:03.978304+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%201/Ga-corkite_pXRD_pattern.raw",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 1/Ga-corkite_pXRD_pattern.raw",
+        "started_at": "2026-10-15T10:29:03.435065+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%201/Ga-corkite_pXRD_pattern.raw",
+        "content_type": "application/octet-stream",
+        "bytes": 13931,
+        "sha256": "1ed9bb134f05b89e1bd66c2195beb6ce4cf8b30f0c6d3ade47b613833e6af698",
+        "signature": "RAW4.00\u0000��\u0000\u000001/27/2022\u0000\u000008:22:",
+        "finished_at": "2026-10-15T10:29:03.817570+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%201/Ga-corkite_refinement.pro",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 1/Ga-corkite_refinement.pro",
+        "started_at": "2026-10-15T10:29:03.435333+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%201/Ga-corkite_refinement.pro",
+        "content_type": "application/octet-stream",
+        "bytes": 32665,
+        "sha256": "71f2eb40f3a53cc8bbfd576808178efd5c24dd7bc5cc1c17081b9a25f7bcae62",
+        "signature": "\r\nr_exp 1.705255023 r_exp_dash",
+        "finished_at": "2026-10-15T10:29:03.853249+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Undried_corkite_IR.csv",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 2/Undried_corkite_IR.csv",
+        "started_at": "2026-10-15T10:29:03.817668+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Undried_corkite_IR.csv",
+        "content_type": "application/octet-stream",
+        "bytes": 538501,
+        "sha256": "8ae617dbffc92d7eb7655f76b632a0798687fef3622f6ea6fb3cd918ac0df6da",
+        "signature": "5.250250e+002,1.936503e-002\r\n5",
+        "finished_at": "2026-10-15T10:29:04.636854+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Undried_corkite_IR.spa",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 2/Undried_corkite_IR.spa",
+        "started_at": "2026-10-15T10:29:03.836121+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Undried_corkite_IR.spa",
+        "content_type": "application/octet-stream",
+        "bytes": 479696,
+        "sha256": "644cab85e8cea9dbeac18feea2df0e2e1e7309256e1d13d58fa095cf6d26ec3c",
+        "signature": "Spectral Data File\r\n\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "finished_at": "2026-10-15T10:29:04.542685+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Dried_corkite_IR.csv",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 2/Dried_corkite_IR.csv",
+        "started_at": "2026-10-15T10:29:03.853335+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Dried_corkite_IR.csv",
+        "content_type": "application/octet-stream",
+        "bytes": 550841,
+        "sha256": "ee9df1798f1a4c0107d450fbc6d3dbb65ac1138b457a9974a82b437b7a026e32",
+        "signature": "5.250250e+002,3.120493e-002\r\n5",
+        "finished_at": "2026-10-15T10:29:04.793500+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Dried_corkite_IR.spa",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 2/Dried_corkite_IR.spa",
+        "started_at": "2026-10-15T10:29:03.978399+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Dried_corkite_IR.spa",
+        "content_type": "application/octet-stream",
+        "bytes": 479696,
+        "sha256": "d332e1a52a8cb37f685fd932d0ed531212d2b646f706f62b383a5c3c49a5e549",
+        "signature": "Spectral Data File\r\n\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "finished_at": "2026-10-15T10:29:04.792794+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Dried_corkite_IR_background.csv",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 2/Dried_corkite_IR_background.csv",
+        "started_at": "2026-10-15T10:29:03.978690+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Dried_corkite_IR_background.csv",
+        "content_type": "application/octet-stream",
+        "bytes": 557029,
+        "sha256": "c05733535b130b8ba32bc423b5e26125c4ecc2b03a1553f3a70d5574f34319bb",
+        "signature": "5.250250e+002,-6.812123e-003\r\n",
+        "finished_at": "2026-10-15T10:29:04.791285+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Dried_corkite_IR_background.spa",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 2/Dried_corkite_IR_background.spa",
+        "started_at": "2026-10-15T10:29:04.542771+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Dried_corkite_IR_background.spa",
+        "content_type": "application/octet-stream",
+        "bytes": 479696,
+        "sha256": "f5e6915f206d3a9114a69712be9331158c0035f0f59c6853f416d2632c12d8c9",
+        "signature": "Spectral Data File\r\n\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000",
+        "finished_at": "2026-10-15T10:29:05.307466+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Undried_corkite_Raman.txt",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 2/Undried_corkite_Raman.txt",
+        "started_at": "2026-10-15T10:29:04.636948+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Undried_corkite_Raman.txt",
+        "content_type": "text/plain",
+        "bytes": 42804,
+        "sha256": "19a2908cb2d15da1d500be2e1632f06795a3883d55ef31a17049d08ba24f11ab",
+        "signature": "100.06584\t0.5\r\n101.95993\t0.473",
+        "finished_at": "2026-10-15T10:29:05.026503+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Undried_corkite_Raman_Si_standard.txt",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 2/Undried_corkite_Raman_Si_standard.txt",
+        "started_at": "2026-10-15T10:29:04.791362+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Undried_corkite_Raman_Si_standard.txt",
+        "content_type": "text/plain",
+        "bytes": 19782,
+        "sha256": "c56d3f7434e753e07ccd589a6405936549910bd26ea03c19c39bfe45249f84ab",
+        "signature": "158.18297\t5.8000002\r\n160.56868",
+        "finished_at": "2026-10-15T10:29:05.232996+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Dried_corkite_Raman_Si_standard.txt",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 2/Dried_corkite_Raman_Si_standard.txt",
+        "started_at": "2026-10-15T10:29:04.793569+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Dried_corkite_Raman_Si_standard.txt",
+        "content_type": "text/plain",
+        "bytes": 36939,
+        "sha256": "d8987bc7e0e2b908eaf0fba6aee91043c3b6e4f9cbb8c404c3a85eccfb1d3c63",
+        "signature": "100.04074\t2.9000001\r\n100.65939",
+        "finished_at": "2026-10-15T10:29:05.234117+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Dried_corkite_Raman_Si_standard.ngs",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 2/Dried_corkite_Raman_Si_standard.ngs",
+        "started_at": "2026-10-15T10:29:05.026597+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%202/Dried_corkite_Raman_Si_standard.ngs",
+        "content_type": "application/octet-stream",
+        "bytes": 7935,
+        "sha256": "55cd46abb5dce0207f0a273b770337c4e07c3b5b3090895cf4e4452f8c49eebb",
+        "signature": "NGSNextGen\u0003\u0000\u0000\u0000\u0001\u00001\u001f\u0000\u0000�\u001e\u0000\u0000�b�ڜ",
+        "finished_at": "2026-10-15T10:29:05.351750+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%203/Corkite_TGA_DTA.txt",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 3/Corkite_TGA_DTA.txt",
+        "started_at": "2026-10-15T10:29:05.160946+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%203/Corkite_TGA_DTA.txt",
+        "content_type": "text/plain",
+        "bytes": 1946000,
+        "sha256": "faebd3fd3740554b6e730f667083a1027a339823c16abee36642f7708c731eab",
+        "signature": "��C\u0000L\u0000O\u0000S\u0000E\u0000D\u0000\r\u0000\n\u0000V\u0000e\u0000r\u0000s\u0000i\u0000o\u0000",
+        "finished_at": "2026-10-15T10:29:06.434703+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%204/Undried_corkite_magnetic.dat",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 4/Undried_corkite_magnetic.dat",
+        "started_at": "2026-10-15T10:29:05.233065+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%204/Undried_corkite_magnetic.dat",
+        "content_type": "application/octet-stream",
+        "bytes": 1266368,
+        "sha256": "08b056e60100e112a3210e84fb53bfc7c3281af0c94c8fdc4775ff8f40604f7f",
+        "signature": "[Header]\r\n; MPMS3 Data File (d",
+        "finished_at": "2026-10-15T10:29:06.084353+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%204/Dried_corkite_magnetic.dat",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 4/Dried_corkite_magnetic.dat",
+        "started_at": "2026-10-15T10:29:05.234210+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%204/Dried_corkite_magnetic.dat",
+        "content_type": "application/octet-stream",
+        "bytes": 885014,
+        "sha256": "dfcc69b17516e0991cb315dca9bbb73698bef11bdb7f97a8987578818f99a669",
+        "signature": "[Header]\r\n; MPMS3 Data File (d",
+        "finished_at": "2026-10-15T10:29:05.921542+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%204/KFe3%28OH%296%28SeO4%292_%28bartlett2005long%29.csv",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 4/KFe3(OH)6(SeO4)2_(bartlett2005long).csv",
+        "started_at": "2026-10-15T10:29:05.307573+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%204/KFe3%28OH%296%28SeO4%292_%28bartlett2005long%29.csv",
+        "content_type": "application/octet-stream",
+        "bytes": 2521,
+        "sha256": "d4abed5dd6db51782fd05fdb47dfdda26766977a5d8c946bf1ec31c2d833ff92",
+        "signature": "2.7587527631665267, 0.03403565",
+        "finished_at": "2026-10-15T10:29:05.545797+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%204/KFe3%28SO4%29%28OH%296_%28Grohol2003%29.csv",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 4/KFe3(SO4)(OH)6_(Grohol2003).csv",
+        "started_at": "2026-10-15T10:29:05.351834+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%204/KFe3%28SO4%29%28OH%296_%28Grohol2003%29.csv",
+        "content_type": "application/octet-stream",
+        "bytes": 1481,
+        "sha256": "7674178a476130232a685fb1b534d0b0e162248f9f1dbc995d9f2c3efcc97f5b",
+        "signature": "7.460237131289716, 0.019490203",
+        "finished_at": "2026-10-15T10:29:05.584011+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%204/Pb0p5Fe3%28OH%296%28SO4%292_%28bartlett2005long%29.csv",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 4/Pb0p5Fe3(OH)6(SO4)2_(bartlett2005long).csv",
+        "started_at": "2026-10-15T10:29:05.545889+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%204/Pb0p5Fe3%28OH%296%28SO4%292_%28bartlett2005long%29.csv",
+        "content_type": "application/octet-stream",
+        "bytes": 2444,
+        "sha256": "e052af44c8f7555829e57ad5603ed893574a28f822ae24c490c734ec085deb35",
+        "signature": "5.6163879322133, 0.01999381942",
+        "finished_at": "2026-10-15T10:29:05.852027+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%205/Fe-corkite_HC.dat",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 5/Fe-corkite_HC.dat",
+        "started_at": "2026-10-15T10:29:05.584112+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%205/Fe-corkite_HC.dat",
+        "content_type": "application/octet-stream",
+        "bytes": 39572,
+        "sha256": "3ea599166d2a8e7e690319e742765c4c30a3c700bcf593269565e14a914ccae5",
+        "signature": "[Header]\r\nTITLE,ML_PPMS_202202",
+        "finished_at": "2026-10-15T10:29:05.922081+00:00"
+      },
+      {
+        "url": "https://data.paradim.org/doi/pq8p-sj50/Figure%205/Ga-corkite_HC.dat",
+        "path": "/private/tmp/cmm-round93-sulfates-research/corkite-dataset/Figure 5/Ga-corkite_HC.dat",
+        "started_at": "2026-10-15T10:29:05.852122+00:00",
+        "status": 200,
+        "final_url": "https://data.paradim.org/doi/pq8p-sj50/Figure%205/Ga-corkite_HC.dat",
+        "content_type": "application/octet-stream",
+        "bytes": 39155,
+        "sha256": "fa22ce81b3bcf1fcc89a69cc15d2629e136dedde680ab6c05ec31a980120ad3a",
+        "signature": "[Header]\r\nTITLE,ML_PPMS_202202",
+        "finished_at": "2026-10-15T10:29:06.277058+00:00"
+      }
+    ]
+  },
+  "validation": {
+    "command": "uv run --locked cmmmech validate data/records/corkite.yaml",
+    "exit_code": 0,
+    "checked_records": 1,
+    "failed_records": 0
+  },
+  "inputs": [
+    {
+      "path": "research/sources/round93-sulfates/20261015T103631Z-source-investigation.md",
+      "sha256": "5fd5c217f4d63e92f866c461095be813e08153b59602b14b852ec342d3b71054",
+      "bytes": 7535
+    },
+    {
+      "path": "research/sources/round93-sulfates/20261015T103631Z-source-investigation.json",
+      "sha256": "dcaf5a3c96534b2a5568228e07013ed323aa8edf4dee3f044f850edc94d185b9",
+      "bytes": 28942
+    },
+    {
+      "path": "reviews/structured/20261015T104245Z-corkite-round93-acquisition-count-initial/review.yaml",
+      "sha256": "b1776ad163cdeb9df3261a84cb8037eec108f1fca6c17a06ba3026eff438b58a",
+      "bytes": 10251
+    },
+    {
+      "path": "/private/tmp/cmm-round93-sulfates-research/corkite-before-acquisition-correction.yaml",
+      "sha256": "cea8fbcca0aac128e0626704539c0191450e98e598b0a52434c1b09a106be6db",
+      "bytes": 9226
+    },
+    {
+      "path": "data/records/corkite.yaml",
+      "sha256": "6ac28cbe83b7eb4fbdedb43df6e260d0d7882e7672b60899136b996d6b025326",
+      "bytes": 9675
+    },
+    {
+      "path": "history/records/corkite/2026-10-15T104829Z-codex-37c824.yaml",
+      "sha256": "d991a7c7a21ff938d9325c2f57f4cceaf8912d713a972b2f67464ffe62a5ab6b",
+      "bytes": 767
+    },
+    {
+      "path": "/private/tmp/cmm-round93-sulfates-research/acquisition-dataset-files.json",
+      "sha256": "b94b0735b1fa67514e6680244874b8a0a9c37e6cc4654cf6e93cd16a9909cc8e",
+      "bytes": 15516
+    },
+    {
+      "path": "/private/tmp/cmm-round93-sulfates-research/corkite-corrected-validation.log",
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+      "bytes": 31
+    }
+  ],
+  "limitations": [
+    "The unavailable native Raman file was not acquired or inspected; no alternative-route success is claimed.",
+    "Published article graphics and the successfully acquired data support the existing narrow scientific interpretation; this correction supplies no new measurement or independent refinement.",
+    "Original dossier count claims remain historical and are superseded only by this explicit correction; original accepted_artifacts already excluded the failed request."
+  ]
+}

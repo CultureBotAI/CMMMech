@@ -1,0 +1,45 @@
+--- /private/tmp/cmm-round92-hosted-five.py
++++ /private/tmp/cmm-round93-hosted-five.py
+@@ -1,5 +1,5 @@
+ #!/usr/bin/env python3
+-"""Read-only round92 five-workflow verification. Requires an actual postmerge handoff.
++"""Read-only round93 five-workflow verification. Requires an actual postmerge handoff.
+ 
+ All Git/GitHub operations are reads. Only unique external JSON/Markdown receipts
+ are written; no workflow dispatch, retry, cancellation, or repository mutation.
+@@ -16,7 +16,7 @@
+ 
+ REPO = 'CultureBotAI/CMMMech'
+ TMP = Path('/private/tmp')
+-PREFIX = 'cmm-round92'
++PREFIX = 'cmm-round93'
+ ROLES = {
+     'required_pr': ('validate-strict.yaml', 'validate-strict'),
+     'merge_group': ('validate-strict.yaml', 'validate-strict'),
+@@ -154,7 +154,7 @@
+                         default=TMP / (PREFIX + '-preflight-committed-terminal.json'))
+     parser.add_argument('--config', type=Path, default=TMP / (PREFIX + '-helper-config.json'))
+     parser.add_argument('--review-body', type=Path, default=TMP / (PREFIX + '-hosted-review-comment.md'))
+-    parser.add_argument('--worktree', type=Path, default=TMP / 'CMMMech-expansion-round92-20261015')
++    parser.add_argument('--worktree', type=Path, default=TMP / 'CMMMech-expansion-round93-20261015')
+     parser.add_argument('--issue-state', action='append', default=[], metavar='NUMBER=open|closed',
+                         help='Explicit current issue scope; repeat for each issue, never inherited from another round.')
+     return parser.parse_args()
+@@ -163,7 +163,7 @@
+ def main():
+     args = arguments()
+     out = dict(started_at=now(), reviewer='codex /root/round68_iron_sulfides',
+-               authorship='Authored loellingite, independently scientifically reviewed by frontier; independently reviewed woodhouseite and svanbergite. This is operational hosted-run verification, not independent re-review of my own science.',
++               authorship='Authored beudantite and corkite, independently scientifically reviewed by frontier and phosphates; independently reviewed triphylite and lithiophilite. This is operational hosted-run verification, not independent re-review of my own science.',
+                pr=args.pr, head=args.head, tree=args.tree, base=args.base, merge=args.merge,
+                worktree=str(args.worktree), helper_sha256=digest(__file__), inputs={},
+                responses={}, findings=[], pending=[], runs={}, selected_run_ids={},
+@@ -374,7 +374,7 @@
+     with output.open('x') as stream:
+         stream.write(encoded)
+     markdown = TMP / (stem + '.md')
+-    lines = [f'Round92 hosted workflow verification: {out["verdict"]}', '',
++    lines = [f'Round93 hosted workflow verification: {out["verdict"]}', '',
+              f'PR #{args.pr}; head `{args.head}`; merge `{args.merge}`; tree `{args.tree}`.', '',
+              out['authorship'], '', f'Observed {out["started_at"]} to {out["finished_at"]}.', '',
+              '| Role | Run | Attempt | Result |', '| --- | --- | --- | --- |']
