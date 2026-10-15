@@ -1,0 +1,464 @@
+# Independent scientific review of Paracoquimbite
+
+- Review: 20261015T162817Z-paracoquimbite-round98-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T16:20:16.175247Z
+- Finished UTC: 2026-10-15T16:28:17.471140Z
+- Reviewer: codex /root/round98_resources (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of current mineral identity and source-scoped abiotic crystallization. Experimental uncertainty, source conflicts and missing validation/scale evidence are retained; no corrective owner finding.
+
+## Scope And Provenance
+
+Entire exact assigned owner/history, full primary original and relevant figures/tables, current nomenclature and bounded notice/dedup checks.
+
+Selection: Parent-assigned independent per-record review after curator freeze.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 56be9949049d47fc9e065b8c016e25bc247752e6.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:paracoquimbite | data/records/paracoquimbite.yaml | maintained | Paracoquimbite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent original evidence and authority assessment | passed | True | cmmmech:paracoquimbite | Original methods, results, claim-bearing graphics and current authority/nomenclature checked against the frozen target; source limitations retained. |
+| Independent named strict validation | passed | True | cmmmech:paracoquimbite | One record checked; zero failed, independently executed on frozen target. |
+| Completed coordinator batch check 1 | passed | True | cmmmech:paracoquimbite | Verified actual completed coordinator receipt, retained log hash and unchanged target input; not a claimed independent duplicate execution. |
+| Completed coordinator batch check 2 | passed | True | cmmmech:paracoquimbite | Verified actual completed coordinator receipt, retained log hash and unchanged target input; not a claimed independent duplicate execution. |
+| Completed coordinator batch check 3 | passed | True | cmmmech:paracoquimbite | Verified actual completed coordinator receipt, retained log hash and unchanged target input; not a claimed independent duplicate execution. |
+| Completed coordinator batch check 4 | passed | True | cmmmech:paracoquimbite | Verified actual completed coordinator receipt, retained log hash and unchanged target input; not a claimed independent duplicate execution. |
+
+## Scientific And Domain Assessments
+
+### Current ferric sulfate identity and old formula
+
+identity: supported. Targets: cmmmech:paracoquimbite.
+
+The current species boundary is correct.
+
+IMA Rd2019s.p.; trigonal idealFe(III)4(SO4)6(H2O)12·6H2O equals doubled oldFe2(SO4)3·9H2O. Newsletter19-F distinguishes Al-essential coquimbite and homeotypic group; older polymorph wording is scoped historically. No mineralCURIE invented.
+
+### Actual synthesis and material source
+
+scope: supported. Targets: cmmmech:paracoquimbite.
+
+Laboratory chemical preparation is clearly specified.
+
+Analytical-grade amorphous ferric sulfate2.93g,3.1mLwater+0.526mL96%H2SO4mixed/cooled before dissolution; open vial1year atRT/30–40%RH; mother liquor remained at filtration; driedRT. Rhomboclasewarning is source procedure caveat. No natural/wastefeed, organism, biological controls, exactRT/pH, synthesis replicate count or product yield provided.
+
+### Diffraction assignment and mineral-specific measurement scope
+
+evidence: supported. Targets: cmmmech:paracoquimbite.
+
+Paracoquimbite assignment is supported without importing the other mineral assays.
+
+Figure1bcrystals and synchrotron powderR-3/Table4 support assignment; experimental microprobe35spots and single-crystal work are explicitly kornelite-only. Paracoquimbite water refinement used an analogous selenate model;Hpositions not experimentally determined. No CIF/raw refinement reproduced because deposit remained unavailable.
+
+### Hydration and thermodynamic inference
+
+quantity: supported. Targets: cmmmech:paracoquimbite.
+
+Uncertain hydration/model values remain separate from recovery and measured equilibrium.
+
+TG9.02/9.38waters perFe2(SO4)3depend on plateau endpoint; adopted9-water diffraction composition is a distinct basis. Measured dissolution versus derived formation enthalpy and assumed entropies are distinct; owner imports no quantitative thermochemistry. Figure6illustrative phase boundaries depend strongly on estimated entropy, not measured universal stability.
+
+### Criticality, organisms and scale
+
+scope: supported. Targets: cmmmech:paracoquimbite.
+
+No unsupported criticality or deployment claim is present.
+
+Criticality is unrecorded, not declared absent; no constituent designation inherited. Abiotic mechanism has microbialfalse and no organismIDs. Laboratory specimen/synthesis is not industry deployment or metal recovery.
+
+### Exact inputs and truthful history
+
+provenance: supported. Targets: cmmmech:paracoquimbite.
+
+Frozen maintained owner and CREATE provenance are auditable.
+
+Nativeinspect source hashes checked against current bytes at trustedbase. Independent review author curated separate ponded-ash owner only. Inline and canonicalCREATE are distinct. Completed root batch receipt/log checked; reviewchecker follows saving.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/paracoquimbite.yaml; Complete exact maintained owner captured by native inspect before assessment. | supports | Identity, source-scoped mechanism, quantitative limits and provenance inspected. |
+| history | history/records/paracoquimbite/2026-10-15T161644Z-codex-4f8363.yaml; Complete canonical CREATE plus separate inline event/history_refs. | supports | Actual codex/GPT-6 actor, target, time and described work agree; immutable existing history is not rewritten. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Definitions pages1–2 and exact species row PDFpage164 independently verified in official web reader and local rendered page. | supports | Dated accepted species, formula and G/Rd status checked; historical year/special procedure is not a new-mineral accession. |
+| search | Independent bounded notices, nomenclature and related-source investigation; /private/tmp/cmm-round98-sulfates-independent/search-observations.json; hidden/ignored/followed maintained and cited raw roots in dedup.json. | context_only | No affecting notice surfaced in returned searches. Newsletter52 corrigendum corrects Petrovite only; source limitations not erased. |
+| named | uv run --locked cmmmech validate data/records/paracoquimbite.yaml; /private/tmp/cmm-round98-sulfates-independent/paracoquimbite-validation.log | supports | Independent strict validation passed; this does not establish scientific correctness. |
+| batch | /private/tmp/cmm-round98-final-gates.json; Completed coordinator receipt and retained log /private/tmp/cmm-round98-final-gates.log SHA256 3cbfb275299b89e9ed4f64d2c4ddc456d383da3bbecc7145ca7600a532ec4bbe | supports | Exact base, command exits, input-map identity and actual log hash verified; whole-corpus scientific-review check follows review saving. |
+| dossier | research/sources/round98-sulfates/20261015T161746Z-source-investigation.md; Paired source investigation with raw-file acquisition receipts and deferred evidence. | context_only | Source acquisition/experiment lineage understood independently; dossier is not accepted as a substitute for original reading. |
+| primary | https://doi.org/10.2138/am.2009.3179; Complete9-page original; printed1621methods,1622Figure1b/2,1623–1624hydration/structure,1625Table4–6,1626–1627Figure6/entropy limits inspected; independent page renders. | supports | Year-long acidified-ferric-sulfate synthesis and synchrotron powder phase assignment support a bounded abiotic mechanism. Kornelite-only microprobe/single-crystal data excluded. |
+| newsletter | https://ejm.copernicus.org/articles/32/1/2020/; Section3 IMA19-F; official linked corrigendum opened in full and addresses Petrovite only. | supports | Paracoquimbite idealFe4(SO4)6(H2O)12·6H2O and Al-essential coquimbite are homeotypic group members, not compositionally identical dimorphs. |
+
+## Limits And Additional Notes
+
+- 2009supplementary Table/CIF deposit was unavailable; printAM-09-052 versus current indexAM-09-062 remains unresolved. Detailed coordinates/raw-refinement reproducibility are excluded.
+- No experimentalHpositions for paracoquimbite; water count follows the stated structural model, with TGendpoint uncertainty retained.
+- Later2025boundary work and dataset remain discovery leads, not independently audited evidence in this record.
+- No microbial mechanism, isolated iron product balance, general equilibrium field or industrial deployment is established.
+- Shared acquisition is disclosed; originals and authorities were independently inspected after native target capture. This reviewer made no sulfate owner/history edits.
+- Raw source artifacts stay outside Git; the review persists evidence-linked assessment rather than copyrighted originals.
+- Whole-corpus commands were executed by coordinator; actual completed receipt, log hash and current target hashes were verified without duplicate-suite claims.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T162817Z-paracoquimbite-round98-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Paracoquimbite
+started_at: '2026-10-15T16:20:16.175247Z'
+finished_at: '2026-10-15T16:28:17.471140Z'
+reviewer:
+  identity: codex /root/round98_resources
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The sulfate curator authored this record. I authored the separate
+    ponded-coal-ash resource owner, independently read the exact sulfate inputs and
+    primary evidence, and made no sulfate record/history edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of current mineral identity and source-scoped abiotic
+  crystallization. Experimental uncertainty, source conflicts and missing validation/scale
+  evidence are retained; no corrective owner finding.
+source:
+  git_revision: 56be9949049d47fc9e065b8c016e25bc247752e6
+  state: working_tree
+  inputs:
+  - path: data/records/paracoquimbite.yaml
+    sha256: 8cddc9f1df1e2445484b9a6a181b1bb0e22d9c173f1910018cb3ace258ea7d56
+    role: target
+  - path: history/records/paracoquimbite/2026-10-15T161644Z-codex-4f8363.yaml
+    sha256: a56a00d65e520527ebf9380591863dcbb0106cea30bc6e6f824e409c6728fb3b
+    role: context
+  - path: research/sources/round98-sulfates/20261015T161746Z-source-investigation.md
+    sha256: 7a1fb8ba39085f9e727b63f695f5178f00573dc0929bf6eb055dcc70524c36ec
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire exact assigned owner/history, full primary original and relevant
+    figures/tables, current nomenclature and bounded notice/dedup checks.
+  selection: Parent-assigned independent per-record review after curator freeze.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:paracoquimbite
+targets:
+- target_id: cmmmech:paracoquimbite
+  path: data/records/paracoquimbite.yaml
+  label: Paracoquimbite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/paracoquimbite.yaml
+    role: maintained_record
+checks:
+- check_id: science
+  name: Independent original evidence and authority assessment
+  required: true
+  status: passed
+  summary: Original methods, results, claim-bearing graphics and current authority/nomenclature
+    checked against the frozen target; source limitations retained.
+  target_ids:
+  - cmmmech:paracoquimbite
+  evidence_ids:
+  - primary
+  - ima
+  - search
+- check_id: named
+  name: Independent named strict validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/paracoquimbite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: One record checked; zero failed, independently executed on frozen target.
+  target_ids:
+  - cmmmech:paracoquimbite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch check 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual completed coordinator receipt, retained log hash and unchanged
+    target input; not a claimed independent duplicate execution.
+  target_ids:
+  - cmmmech:paracoquimbite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch check 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual completed coordinator receipt, retained log hash and unchanged
+    target input; not a claimed independent duplicate execution.
+  target_ids:
+  - cmmmech:paracoquimbite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch check 3
+  command: uv run --locked cmmmech validate-history --base 56be9949049d47fc9e065b8c016e25bc247752e6
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual completed coordinator receipt, retained log hash and unchanged
+    target input; not a claimed independent duplicate execution.
+  target_ids:
+  - cmmmech:paracoquimbite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch check 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual completed coordinator receipt, retained log hash and unchanged
+    target input; not a claimed independent duplicate execution.
+  target_ids:
+  - cmmmech:paracoquimbite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/paracoquimbite.yaml
+  locator: Complete exact maintained owner captured by native inspect before assessment.
+  accessed_at: '2026-10-15T16:28:17.471140Z'
+  support: supports
+  summary: Identity, source-scoped mechanism, quantitative limits and provenance inspected.
+  snapshot_sha256: 8cddc9f1df1e2445484b9a6a181b1bb0e22d9c173f1910018cb3ace258ea7d56
+- evidence_id: history
+  kind: record_content
+  reference: history/records/paracoquimbite/2026-10-15T161644Z-codex-4f8363.yaml
+  locator: Complete canonical CREATE plus separate inline event/history_refs.
+  accessed_at: '2026-10-15T16:28:17.471140Z'
+  support: supports
+  summary: Actual codex/GPT-6 actor, target, time and described work agree; immutable
+    existing history is not rewritten.
+  snapshot_sha256: a56a00d65e520527ebf9380591863dcbb0106cea30bc6e6f824e409c6728fb3b
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions pages1–2 and exact species row PDFpage164 independently verified
+    in official web reader and local rendered page.
+  accessed_at: '2026-10-15T16:28:17.471140Z'
+  support: supports
+  summary: Dated accepted species, formula and G/Rd status checked; historical year/special
+    procedure is not a new-mineral accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: search
+  kind: search
+  reference: Independent bounded notices, nomenclature and related-source investigation
+  locator: /private/tmp/cmm-round98-sulfates-independent/search-observations.json;
+    hidden/ignored/followed maintained and cited raw roots in dedup.json.
+  accessed_at: '2026-10-15T16:28:17.471140Z'
+  support: context_only
+  summary: No affecting notice surfaced in returned searches. Newsletter52 corrigendum
+    corrects Petrovite only; source limitations not erased.
+  search_scope: 'Queries: "10.2138/am.2009.3179" correction erratum; "10.3390/min11040392"
+    correction retraction; paracoquimbite "19-F" IMA; szomolnokite melanterite dehydration
+    "75" "100"; first returned web sets on 2026-10-15, no date/domain filters or exhaustive
+    pagination. Independent rg --no-ignore --hidden --follow across records, research,
+    reviews, history and cited round95/96/97/98 sulfate raw directories; exact command/results
+    in dedup.json.'
+  snapshot_sha256: 84ddb8fa9f67c9bf8ac4501ac183a040f69aafe80032d6ead8b5150c0839dce8
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/paracoquimbite.yaml
+  locator: /private/tmp/cmm-round98-sulfates-independent/paracoquimbite-validation.log
+  accessed_at: '2026-10-15T16:28:17.471140Z'
+  support: supports
+  summary: Independent strict validation passed; this does not establish scientific
+    correctness.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round98-final-gates.json
+  locator: Completed coordinator receipt and retained log /private/tmp/cmm-round98-final-gates.log
+    SHA256 3cbfb275299b89e9ed4f64d2c4ddc456d383da3bbecc7145ca7600a532ec4bbe
+  accessed_at: '2026-10-15T16:28:17.471140Z'
+  support: supports
+  summary: Exact base, command exits, input-map identity and actual log hash verified;
+    whole-corpus scientific-review check follows review saving.
+  snapshot_sha256: d75dfd3bf78265dd50a250045bc62898f2680e05a2b44c19235c1674b7b2909d
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round98-sulfates/20261015T161746Z-source-investigation.md
+  locator: Paired source investigation with raw-file acquisition receipts and deferred
+    evidence.
+  accessed_at: '2026-10-15T16:28:17.471140Z'
+  support: context_only
+  summary: Source acquisition/experiment lineage understood independently; dossier
+    is not accepted as a substitute for original reading.
+  snapshot_sha256: 7a1fb8ba39085f9e727b63f695f5178f00573dc0929bf6eb055dcc70524c36ec
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.2138/am.2009.3179
+  locator: Complete9-page original; printed1621methods,1622Figure1b/2,1623–1624hydration/structure,1625Table4–6,1626–1627Figure6/entropy
+    limits inspected; independent page renders.
+  accessed_at: '2026-10-15T16:28:17.471140Z'
+  support: supports
+  summary: Year-long acidified-ferric-sulfate synthesis and synchrotron powder phase
+    assignment support a bounded abiotic mechanism. Kornelite-only microprobe/single-crystal
+    data excluded.
+  snapshot_sha256: 113a577071a54ba6504f23daa2d06fe03e7cc0158fabeba22a502ce7624c3241
+- evidence_id: newsletter
+  kind: authority
+  reference: https://ejm.copernicus.org/articles/32/1/2020/
+  locator: Section3 IMA19-F; official linked corrigendum opened in full and addresses
+    Petrovite only.
+  accessed_at: '2026-10-15T16:28:17.471140Z'
+  support: supports
+  summary: Paracoquimbite idealFe4(SO4)6(H2O)12·6H2O and Al-essential coquimbite are
+    homeotypic group members, not compositionally identical dimorphs.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Current ferric sulfate identity and old formula
+  outcome: supported
+  summary: The current species boundary is correct.
+  details: IMA Rd2019s.p.; trigonal idealFe(III)4(SO4)6(H2O)12·6H2O equals doubled
+    oldFe2(SO4)3·9H2O. Newsletter19-F distinguishes Al-essential coquimbite and homeotypic
+    group; older polymorph wording is scoped historically. No mineralCURIE invented.
+  target_ids:
+  - cmmmech:paracoquimbite
+  evidence_ids:
+  - owner
+  - ima
+  - newsletter
+  - primary
+- assessment_id: protocol
+  area: scope
+  topic: Actual synthesis and material source
+  outcome: supported
+  summary: Laboratory chemical preparation is clearly specified.
+  details: Analytical-grade amorphous ferric sulfate2.93g,3.1mLwater+0.526mL96%H2SO4mixed/cooled
+    before dissolution; open vial1year atRT/30–40%RH; mother liquor remained at filtration;
+    driedRT. Rhomboclasewarning is source procedure caveat. No natural/wastefeed,
+    organism, biological controls, exactRT/pH, synthesis replicate count or product
+    yield provided.
+  target_ids:
+  - cmmmech:paracoquimbite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: outcome
+  area: evidence
+  topic: Diffraction assignment and mineral-specific measurement scope
+  outcome: supported
+  summary: Paracoquimbite assignment is supported without importing the other mineral
+    assays.
+  details: Figure1bcrystals and synchrotron powderR-3/Table4 support assignment; experimental
+    microprobe35spots and single-crystal work are explicitly kornelite-only. Paracoquimbite
+    water refinement used an analogous selenate model;Hpositions not experimentally
+    determined. No CIF/raw refinement reproduced because deposit remained unavailable.
+  target_ids:
+  - cmmmech:paracoquimbite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: quantity
+  area: quantity
+  topic: Hydration and thermodynamic inference
+  outcome: supported
+  summary: Uncertain hydration/model values remain separate from recovery and measured
+    equilibrium.
+  details: TG9.02/9.38waters perFe2(SO4)3depend on plateau endpoint; adopted9-water
+    diffraction composition is a distinct basis. Measured dissolution versus derived
+    formation enthalpy and assumed entropies are distinct; owner imports no quantitative
+    thermochemistry. Figure6illustrative phase boundaries depend strongly on estimated
+    entropy, not measured universal stability.
+  target_ids:
+  - cmmmech:paracoquimbite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: criticality
+  area: scope
+  topic: Criticality, organisms and scale
+  outcome: supported
+  summary: No unsupported criticality or deployment claim is present.
+  details: Criticality is unrecorded, not declared absent; no constituent designation
+    inherited. Abiotic mechanism has microbialfalse and no organismIDs. Laboratory
+    specimen/synthesis is not industry deployment or metal recovery.
+  target_ids:
+  - cmmmech:paracoquimbite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Exact inputs and truthful history
+  outcome: supported
+  summary: Frozen maintained owner and CREATE provenance are auditable.
+  details: Nativeinspect source hashes checked against current bytes at trustedbase.
+    Independent review author curated separate ponded-ash owner only. Inline and canonicalCREATE
+    are distinct. Completed root batch receipt/log checked; reviewchecker follows
+    saving.
+  target_ids:
+  - cmmmech:paracoquimbite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- 2009supplementary Table/CIF deposit was unavailable; printAM-09-052 versus current
+  indexAM-09-062 remains unresolved. Detailed coordinates/raw-refinement reproducibility
+  are excluded.
+- No experimentalHpositions for paracoquimbite; water count follows the stated structural
+  model, with TGendpoint uncertainty retained.
+- Later2025boundary work and dataset remain discovery leads, not independently audited
+  evidence in this record.
+- No microbial mechanism, isolated iron product balance, general equilibrium field
+  or industrial deployment is established.
+notes:
+- Shared acquisition is disclosed; originals and authorities were independently inspected
+  after native target capture. This reviewer made no sulfate owner/history edits.
+- Raw source artifacts stay outside Git; the review persists evidence-linked assessment
+  rather than copyrighted originals.
+- Whole-corpus commands were executed by coordinator; actual completed receipt, log
+  hash and current target hashes were verified without duplicate-suite claims.
+```

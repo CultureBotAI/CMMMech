@@ -1,0 +1,127 @@
+id: cmmmech:ponded-coal-ash
+name: Ponded mixed coal ash
+material_kind: secondary_resource
+description: >-
+  Mixed fly and bottom ash deposited in coal-combustion ash ponds, represented here
+  by a sample from a Philippine circulating-fluidized-bed power plant burning local
+  and imported coal. The mixture is a distinct secondary resource from separately
+  collected coal fly ash, pure coal bottom ash and coal-gasification slag. Its
+  fly-to-bottom ratio, residence time and plant identity are unreported. A laboratory
+  mixed-culture study supports qualified metal mobilization from the mixed feed;
+  it does not resolve either ash component's individual response or establish an
+  isolated metal product, criticality designation or industrial deployment.
+sources:
+- id: pangayao_2015
+  title: >-
+    Pangayao, van Hullebusch, Gallardo and Bacani (2015). Bioleaching of trace metals
+    from coal ash using mixed culture of Acidithiobacillus albertensis and
+    Acidithiobacillus thiooxidans. Journal of Engineering Science and Technology,
+    Special Issue on SOMCHE 2014 and RSCE 2014 Conference, 36-45. Sections 2.1-2.5,
+    Figures 1-2, Tables 1-5 and Sections 3.1-3.5; complete 10-page original.
+  url: https://jestec.taylors.edu.my/Special%20Issue%208_SOMCHE_2014/SOMCHE%202014_8_2015_036_045.pdf
+  accessed_on: '2026-10-15'
+- id: ncbi_albertensis
+  title: 'NCBI Taxonomy 119978: Acidithiobacillus albertensis, species.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=119978
+  accessed_on: '2026-10-15'
+- id: ncbi_thiooxidans
+  title: 'NCBI Taxonomy 930: Acidithiobacillus thiooxidans, species.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930
+  accessed_on: '2026-10-15'
+- id: atcc_albertensis
+  title: 'ATCC 35403 culture catalogue: Acidithiobacillus albertensis; lists DSM 14366.'
+  url: https://www.atcc.org/products/35403
+  accessed_on: '2026-10-15'
+- id: atcc_thiooxidans
+  title: 'ATCC 19377 culture catalogue: Acidithiobacillus thiooxidans; lists DSM 14887.'
+  url: https://www.atcc.org/products/19377
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: mixed_acidophile_mobilization
+  name: Culture-associated metal mobilization from mixed pond ash
+  process: bioleaching
+  description: >-
+    Pangayao and colleagues measured zinc, manganese, chromium, iron and copper
+    in filtered liquors following 15-day contact of the mixed ash with source-designated
+    A. albertensis ATCC 35403 and A. thiooxidans ATCC 19377 cultures. Lower final pH
+    and reported metal solubilization are consistent with culture-associated acid
+    leaching. Added sulfuric acid and the absence of matched uninoculated controls
+    prevent assignment of the full response to microbial sulfur oxidation or to
+    either organism separately. No isolated recovered metal was demonstrated.
+  context: >-
+    The pond ash was dried at 105 degrees C for 24 hours and sieved using a stated
+    number-200 mesh; the paper's accompanying 0.075-micrometre value is inconsistent
+    and is not accepted as a verified particle cutoff. The source reports DSMZ-supplied
+    cultures under ATCC designations; catalogue correspondence does not authenticate
+    the experimental stocks or their mixing ratio, which is unreported. Cultures were
+    incubated for 10 days at 30 degrees C and 160 rpm in a medium containing ammonium
+    sulfate, magnesium sulfate, calcium chloride, potassium dihydrogen phosphate and
+    10 g/L elemental sulfur. Leaching used 250 mL flasks containing 100 mL medium,
+    1-5 g ash, 1-5 mL inoculum and 1-3 g added sulfur, at 30 degrees C and 160 rpm.
+    Ash/medium were autoclaved at 121 degrees C for 15 minutes and adjusted with
+    1 M sulfuric acid from pH 6.5-8 to pH 2 before sulfur and inoculum addition.
+    The 17-run Box-Behnken design includes repeated central settings; duplicate runs
+    are reported. After 15 days, 0.45-micrometre cellulose-acetate-filtered liquor was
+    nitric-acid-preserved for ICP-OES. No acid-only, uninoculated or no-sulfur series
+    is displayed, and no sulfur balance or direct organism-specific growth assay is
+    supplied. This is a flask experiment with industrial-origin feed, not an
+    industrial treatment demonstration.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:119978
+    label: Acidithiobacillus albertensis
+  - id: NCBITaxon:930
+    label: Acidithiobacillus thiooxidans
+  evidence:
+  - source_ref: pangayao_2015
+    supports: support
+    explanation: >-
+      Sections 2.2-2.5 and 3.1-3.3, Figures 1-2 and Tables 1-3 support the mixed-feed
+      identity, treatment and filtered-liquor assays. Table 3 reports run-specific
+      maxima of 56.69% Zn and 69.32% Cu in run 13, 70.68% Mn in run 15, and 79.86%
+      Cr and 70.74% Fe in run 17; these are not one combined optimum or isolated
+      product yields. Figure 2 and Section 3.2 show final pH approximately 0.61-1.39
+      after the initial chemical adjustment to pH 2.
+  - source_ref: pangayao_2015
+    supports: partial
+    explanation: >-
+      The paper labels Table 3 values as percent metal leached but does not give
+      the calculation equation, initial-feed digestion procedure, blank corrections,
+      raw liquor concentrations or complete solution/residue mass balance. Its
+      reported total feed concentrations in Section 3.1 therefore do not independently
+      validate the percentage denominator. Added chemical acid, unquantified inoculum
+      chemistry and missing matched controls limit microbial attribution; pH decline
+      alone does not establish growth or sulfur-oxidation causality. Neither species
+      contribution nor fly-ash/bottom-ash-specific extraction is resolved.
+  - source_ref: pangayao_2015
+    supports: partial
+    explanation: >-
+      Section 3.3 states 59.69% maximal Zn whereas Table 3, abstract and conclusion
+      give 56.69%. Table 5 is numerical model optimization, not a separately described
+      validation experiment; its Zn prediction 56.88% conflicts with abstract 56.38%,
+      and its 1 g sulfur settings for Zn/Mn contradict the conclusion's general 3 g
+      optimum. The inoculum main effect is reported nonsignificant. Table 4 gives
+      Fe/Cu lack-of-fit p-values 0.0417/0.0416 despite broad model-adequacy wording.
+      These source inconsistencies and statistical limitations prevent a validated
+      optimum, universal enhancement or scale-up performance claim.
+  - source_ref: atcc_albertensis
+    supports: context_only
+    explanation: >-
+      The catalogue corroborates the source's ATCC 35403 species designation and
+      DSM 14366 correspondence. It does not establish purity, growth or the strain's
+      separate causal contribution in the mixed-culture experiment.
+  - source_ref: atcc_thiooxidans
+    supports: context_only
+    explanation: >-
+      The catalogue corroborates ATCC 19377 as A. thiooxidans and lists DSM 14887.
+      This is culture-identity context, not an independent ash-leaching experiment.
+curation_history:
+- timestamp: '2026-10-15T16:16:05.719620+00:00'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: >-
+    Created the distinct mixed pond-ash secondary-resource owner with primary
+    culture-associated solubilization evidence, verified species identifiers and
+    explicit control, denominator, source-conflict and scale limits.
+history_refs:
+- history/records/ponded-coal-ash/2026-10-15T161610Z-codex-6e98b8.yaml

@@ -8,13 +8,18 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 471 material records.
+The catalogue currently contains 476 material records.
 
-The [latest curation report](research/ingests/round97-frontier-20261015.md) links
+The [latest curation report](research/ingests/round98-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Ludlamite](data/records/ludlamite.yaml) | Qualified air-heating oxidation of natural crystals | Lower-temperature diffraction retention; unidentified ferric product at the higher setting |
+| [Paracoquimbite](data/records/paracoquimbite.yaml) | Abiotic precipitation and synthetic-crystal structure | Inaccessible supplement and phase-stability model limits; no microbial formation claim |
+| [Ponded mixed coal ash](data/records/ponded-coal-ash.yaml) | Culture-associated metal mobilization from mixed fly and bottom ash | Added acid, missing matched controls, conflicting maxima and unvalidated model optimization |
+| [Regerite](data/records/regerite.yaml) | Natural-crystal chemistry, structure and deposited model | Calculated water, unresolved hydrogen and titanium assignments; no extraction mechanism |
+| [Szomolnokite](data/records/szomolnokite.yaml) | Transient sulfate hydrate in an abiotic heating experiment | Mixed phases and conflicting thermal descriptions; no universal transition temperature |
 | [Coquimbite](data/records/coquimbite.yaml) | Current aluminium-essential species identity and natural-crystal structure | Historical formula superseded; no microbial transformation claim |
 | [Eosphorite](data/records/eosphorite.yaml) | Natural-crystal chemistry and neutron diffraction with corrected hydrogen assignments | One specimen, model omissions and source labeling limits |
 | [Fish-bone residues](data/records/fish-bone-residues.yaml) | Culture-associated phosphorus mobilization in columns and broth | Low-dose null, inoculum phosphorus, unmatched controls and timing conflicts |

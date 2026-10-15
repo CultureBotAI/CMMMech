@@ -1,0 +1,151 @@
+{
+  "main": {
+    "command": [
+      "gh",
+      "api",
+      "repos/CultureBotAI/CMMMech/git/ref/heads/main"
+    ],
+    "exit_code": 0,
+    "data": {
+      "ref": "refs/heads/main",
+      "node_id": "REF_kwDOU9ZlV69yZWZzL2hlYWRzL21haW4",
+      "url": "https://api.github.com/repos/CultureBotAI/CMMMech/git/refs/heads/main",
+      "object": {
+        "sha": "56be9949049d47fc9e065b8c016e25bc247752e6",
+        "type": "commit",
+        "url": "https://api.github.com/repos/CultureBotAI/CMMMech/git/commits/56be9949049d47fc9e065b8c016e25bc247752e6"
+      }
+    },
+    "stderr": ""
+  },
+  "rules": {
+    "command": [
+      "gh",
+      "api",
+      "repos/CultureBotAI/CMMMech/rules/branches/main"
+    ],
+    "exit_code": 0,
+    "data": [
+      {
+        "type": "pull_request",
+        "parameters": {
+          "required_approving_review_count": 0,
+          "dismiss_stale_reviews_on_push": false,
+          "required_reviewers": [],
+          "require_code_owner_review": false,
+          "dismissal_restriction": {
+            "enabled": false,
+            "allowed_actors": []
+          },
+          "require_last_push_approval": false,
+          "required_review_thread_resolution": false,
+          "require_extra_approval_for_unattributed_changes": true,
+          "allowed_merge_methods": [
+            "merge",
+            "squash",
+            "rebase"
+          ]
+        },
+        "ruleset_source_type": "Repository",
+        "ruleset_source": "CultureBotAI/CMMMech",
+        "ruleset_id": 24692449
+      },
+      {
+        "type": "required_status_checks",
+        "parameters": {
+          "strict_required_status_checks_policy": false,
+          "do_not_enforce_on_create": false,
+          "required_status_checks": [
+            {
+              "context": "validate-strict",
+              "integration_id": 15368
+            }
+          ]
+        },
+        "ruleset_source_type": "Repository",
+        "ruleset_source": "CultureBotAI/CMMMech",
+        "ruleset_id": 24692449
+      },
+      {
+        "type": "merge_queue",
+        "parameters": {
+          "merge_method": "SQUASH",
+          "max_entries_to_build": 3,
+          "min_entries_to_merge": 1,
+          "max_entries_to_merge": 1,
+          "min_entries_to_merge_wait_minutes": 5,
+          "grouping_strategy": "ALLGREEN",
+          "check_response_timeout_minutes": 120
+        },
+        "ruleset_source_type": "Repository",
+        "ruleset_source": "CultureBotAI/CMMMech",
+        "ruleset_id": 24692449
+      }
+    ],
+    "stderr": ""
+  },
+  "issue3": {
+    "command": [
+      "gh",
+      "issue",
+      "view",
+      "3",
+      "--repo",
+      "CultureBotAI/CMMMech",
+      "--json",
+      "number,state,title,url"
+    ],
+    "exit_code": 0,
+    "data": {
+      "number": 3,
+      "state": "CLOSED",
+      "title": "Complete CLAW-supported fleet admission and governed integration",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/3"
+    },
+    "stderr": ""
+  },
+  "claw_admission": {
+    "command": [
+      "gh",
+      "pr",
+      "view",
+      "581",
+      "--repo",
+      "CultureBotAI/CLAW",
+      "--json",
+      "number,state,title,url,mergeCommit"
+    ],
+    "exit_code": 1,
+    "data": "",
+    "stderr": "GraphQL: Could not resolve to a Repository with the name 'CultureBotAI/CLAW'. (repository)\n"
+  },
+  "claw_convergence": {
+    "command": [
+      "gh",
+      "issue",
+      "view",
+      "580",
+      "--repo",
+      "CultureBotAI/CLAW",
+      "--json",
+      "number,state,title,url"
+    ],
+    "exit_code": 1,
+    "data": "",
+    "stderr": "GraphQL: Could not resolve to a Repository with the name 'CultureBotAI/CLAW'. (repository)\n"
+  },
+  "shepherd_runs": {
+    "command": [
+      "gh",
+      "api",
+      "repos/CultureBotAI/CMMMech/actions/workflows/pr-shepherd.yml/runs?per_page=1"
+    ],
+    "exit_code": 0,
+    "data": {
+      "total_count": 0,
+      "workflow_runs": []
+    },
+    "stderr": ""
+  },
+  "recorded_at": "2026-10-15T16:14:27.234706+00:00"
+}
