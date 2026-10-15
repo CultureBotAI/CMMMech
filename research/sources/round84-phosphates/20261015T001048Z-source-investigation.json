@@ -1,0 +1,480 @@
+{
+  "schema": "cmmmech-source-investigation-local-v1",
+  "timestamp": "2026-10-15T00:10:48.953697+00:00",
+  "actor": {
+    "name": "codex",
+    "model": "GPT-6",
+    "agent_tool": "codex",
+    "lane": "/root/round68_phosphates"
+  },
+  "worktree": "/private/tmp/CMMMech-expansion-round84-20261014",
+  "base": "57b84777066e9c0c43adcc92602dbd1021f52b48",
+  "branch": "curate/cmm-expansion-round84-20261014",
+  "selection": {
+    "accepted_owner": "cmmmech:metavivianite",
+    "rationale": "Distinct approved mineral with complete abiotic mixed-phase synthesis and carefully qualified microbial intermediate evidence; direct XRD evidence is not transferred to the enrichment.",
+    "other_candidates": "Annabergite/erythrite/plumbogummite/corkite and potassium struvite prior gaps were read, not silently promoted or retried through unchanged denied downloads. Taranakite remains an unassessed alternate; no second owner."
+  },
+  "queries": {
+    "provider": "web.run search_query",
+    "execution_window_utc": "2026-10-14 late23:5x through2026-10-15 00:06; exact per-query instants were not retained",
+    "recorded_at": "2026-10-15T00:10:48.953697+00:00",
+    "filters": "No explicit domain or recency filters; initial returned result sets only, not exhaustive pagination.",
+    "strings": [
+      "\"annabergite\" bacteria biomineralization",
+      "\"erythrite\" microbial transformation fungi",
+      "\"olivenite\" fungal biotransformation",
+      "\"plumbogummite\" microbial precipitation",
+      "\"Ferrier\" \"erythrite\" thesis",
+      "\"Fungal transformation\" \"cobalt-bearing\" full thesis",
+      "\"annabergite\" \"bioreduction\"",
+      "\"corkite\" \"fungi\" mineral",
+      "\"taranakite\" \"bacteria\"",
+      "\"struvite-(K)\" \"bacteria\"",
+      "\"ludlamite\" \"microbial\"",
+      "\"phosphophyllite\" \"bacteria\"",
+      "\"K-struvite\" biomineralization bacteria",
+      "\"potassium struvite\" bacteria mineral precipitation",
+      "\"taranakite\" fungi synthesis",
+      "\"metavivianite\" microbial oxidation",
+      "\"anaerobic\" \"metavivianite\" bacteria",
+      "\"metavivianite\" \"bacteria\" \"Straub\"",
+      "\"Solid State Oxidation of Fe(II) in Vivianite\"",
+      "\"Transformation of vivianite\" \"2009\" pdf",
+      "\"metavivianite\" \"2020\" correction retraction Chiba",
+      "\"Metavivianite\" \"2012\" \"formula revision\"",
+      "\"Solid State Oxidation\" vivianite Weber",
+      "\"Transformation of vivianite by anaerobic\" filetype:pdf",
+      "\"94ff46a2-b9ac-41ea-bd0e-635c776caca1\"",
+      "\"Metavivianite\" \"Chiba\" \"corrigendum\"",
+      "\"Chukanov\" \"725\" \"741\" pdf metavivianite",
+      "\"Solid State Oxidation of Fe(II) in Vivianite\" thesis author",
+      "\"1472-4669.2009.00203\" supplement",
+      "\"Miot\" \"gbi203\" supporting",
+      "\"Formation and redox reactions\" Erbs correction",
+      "\"Transformation of vivianite\" correction retraction"
+    ],
+    "outcome": "Primary ETH and J-STAGE sources acquired; author-hosted Miot original adds a separate counterexample. No actionable correction/retraction notice appeared in the bounded selected queries/current Crossref relation metadata; this is not exhaustive absence."
+  },
+  "dedup": {
+    "flags": "rg --no-ignore --hidden --follow",
+    "selected_pattern": "metavivianite|200417|00203\\.x|004796330|Marianne Erbs",
+    "maintained_roots": [
+      "data/records",
+      "research",
+      "reviews",
+      "history"
+    ],
+    "checkouts": [
+      "/private/tmp/CMMMech-expansion-round84-20261014",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech"
+    ],
+    "maintained_outcome": "No matching target or selected study term before new owner creation; current398-owner list inspected. Existing vivianite/siderite owners use a distinct Sanchez-Roman2015 experiment.",
+    "raw_roots": [
+      "/private/tmp/cmm-round16-vivianite-raw",
+      "/private/tmp/cmm-round77-phosphates-research",
+      "/private/tmp/cmm-round80-phosphates-research",
+      "/private/tmp/cmm-round81-phosphates-research",
+      "/private/tmp/cmm-round82-phosphates-research",
+      "/private/tmp/cmm-round83-phosphates-research",
+      "/private/tmp/cmm-round69-phosphates-research",
+      "/private/tmp/cmm-round68-phosphates-research/rruff-home.html"
+    ],
+    "raw_outcome": "Hits were retained IMA identity and generic RRUFF index entries within prior dedup logs, not an accepted record or curated selected experiment. Text/XML/JSON/Markdown/HTML searched; not a machine-wide binary-content exhaustion claim."
+  },
+  "accepted_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/chiba2020.pdf",
+      "url": "https://www.jstage.jst.go.jp/article/jmps/115/6/115_200417/_pdf",
+      "locator": "Complete5pages; Figures1–4/Tables1–2, all visually inspected.",
+      "role": "primary",
+      "source_ref": "chiba_2020",
+      "bytes": 1216000,
+      "sha256": "112e385df89292ddaa7785c50a46ec33e00f1e78d6e1b89f409d820409122820"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/eth-api-thesis.pdf",
+      "url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/94ff46a2-b9ac-41ea-bd0e-635c776caca1/content",
+      "locator": "Complete168-page thesis; accepted scope Chapter2 printed17–42=PDF36–61, full text and Figures2.1–2.10/Tables2.1–2.2 checked. Chapter7 supporting-info TOC concerns other thesis experiments.",
+      "role": "primary",
+      "source_ref": "erbs_2004",
+      "bytes": 10749824,
+      "sha256": "9108aafcee47f5adfaeac094a98194f21f006aee1126185984fa7244a018135d"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/miot2009.pdf",
+      "url": "https://uni-tuebingen.de/fileadmin/Uni_Tuebingen/Fakultaeten/MatNat/Fachbereiche/Geowissenschaften/Arbeitsgruppen/Angewandte_Geowissenschaften/Geomikrobiologie/Publications/2009/2009_Miot_Geobiology_Vivianite.pdf",
+      "locator": "Complete12-page original; Methods375 and Fig2 p377 selected XRD counterexample; main Figures1–6/Tables1–2 inspected, but inaccessible SI excluded from accepted numerical claims.",
+      "role": "primary",
+      "source_ref": "miot_2009",
+      "bytes": 1061170,
+      "sha256": "dc09378b0ca506155406e84e9bf6d31a81039589b345d92aa6b64c651f209fec"
+    },
+    {
+      "path": "/private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf",
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "locator": "Retained original reused; current authority home page points to September2026 edition. Exact row PDF143; definition/distribution PDF1–2.",
+      "role": "authority",
+      "source_ref": "ima_2026_09",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/metavivianite-handbook.pdf",
+      "url": "https://www.handbookofmineralogy.org/pdfs/metavivianite.pdf",
+      "locator": "Complete one-page historical Handbook version1. Variable formula predates current IMA ideal composition.",
+      "role": "authority",
+      "source_ref": "handbook_metavivianite",
+      "bytes": 53495,
+      "sha256": "286360239761e73e755f8690ba369a5298f6f8936b7262a4b1bd30800830eef6"
+    }
+  ],
+  "acquisitions": [
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/eth-thesis.pdf",
+      "url": "https://www.research-collection.ethz.ch/bitstreams/94ff46a2-b9ac-41ea-bd0e-635c776caca1/download",
+      "at": "2026-10-14T23:59:34.600830+00:00",
+      "final_url": "https://www.research-collection.ethz.ch/bitstreams/94ff46a2-b9ac-41ea-bd0e-635c776caca1/download",
+      "status": 500,
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 497262,
+      "sha256": "3aa6e1730fed0b2ce9cdc68c782912330719fc803b66fdce44570a35f163b132",
+      "magic": "b'<!DOCTYPE html><'"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/chiba2020.pdf",
+      "url": "https://www.jstage.jst.go.jp/article/jmps/115/6/115_200417/_pdf",
+      "at": "2026-10-14T23:59:34.602112+00:00",
+      "final_url": "https://www.jstage.jst.go.jp/article/jmps/115/6/115_200417/_pdf",
+      "status": 200,
+      "content_type": "application/pdf;charset=UTF-8",
+      "bytes": 1216000,
+      "sha256": "112e385df89292ddaa7785c50a46ec33e00f1e78d6e1b89f409d820409122820",
+      "magic": "b'%PDF-1.6\\r%\\xe2\\xe3\\xcf\\xd3\\r\\n'"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/metavivianite-handbook.pdf",
+      "url": "https://www.handbookofmineralogy.org/pdfs/metavivianite.pdf",
+      "at": "2026-10-14T23:59:34.602492+00:00",
+      "final_url": "https://www.handbookofmineralogy.org/pdfs/metavivianite.pdf",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 53495,
+      "sha256": "286360239761e73e755f8690ba369a5298f6f8936b7262a4b1bd30800830eef6",
+      "magic": "b'%PDF-1.6\\r%\\xe2\\xe3\\xcf\\xd3\\r\\n'"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/miot2009-si-publisher.pdf",
+      "url": "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fj.1472-4669.2009.00203.x&file=GBI_203_sm_FigS1-S2_Data+S1.pdf",
+      "accessed_at": "2026-10-15T00:06:05.464858+00:00",
+      "status": 403,
+      "type": "text/html; charset=UTF-8",
+      "final_url": "https://onlinelibrary.wiley.com/action/downloadSupplement?doi=10.1111%2Fj.1472-4669.2009.00203.x&file=GBI_203_sm_FigS1-S2_Data+S1.pdf",
+      "bytes": 5885,
+      "sha256": "b379c53869f1cfebef1bdb7b730f8a779210db715146050e803984f53328eecf",
+      "magic": "b'<!DOCTYPE html><html lang'"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/miot2009-si-static.pdf",
+      "url": "https://onlinelibrary.wiley.com/doi/suppl/10.1111/j.1472-4669.2009.00203.x/supinfo/GBI_203_sm_FigS1-S2_Data%20S1.pdf",
+      "accessed_at": "2026-10-15T00:06:05.466147+00:00",
+      "status": 403,
+      "type": "text/html; charset=UTF-8",
+      "final_url": "https://onlinelibrary.wiley.com/doi/suppl/10.1111/j.1472-4669.2009.00203.x/supinfo/GBI_203_sm_FigS1-S2_Data%20S1.pdf",
+      "bytes": 5782,
+      "sha256": "479c29d5b887fe4ce346ec182026ed8c4140e52f32a5d4786b61d3913677fc70",
+      "magic": "b'<!DOCTYPE html><html lang'"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/ima-root.html",
+      "url": "https://cnmnc.units.it/",
+      "accessed_at": "2026-10-15T00:06:05.467001+00:00",
+      "status": 200,
+      "type": "text/html; charset=UTF-8",
+      "final_url": "https://cnmnc.units.it/",
+      "bytes": 26639,
+      "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9",
+      "magic": "b'<!DOCTYPE html><!-- HTML5'"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/miot2009-crossref.json",
+      "url": "https://api.crossref.org/works/10.1111/j.1472-4669.2009.00203.x",
+      "accessed_at": "2026-10-15T00:06:05.467627+00:00",
+      "status": 200,
+      "type": "application/json",
+      "final_url": "https://api.crossref.org/works/10.1111/j.1472-4669.2009.00203.x",
+      "bytes": 9999,
+      "sha256": "e41c90555483a2c7a116d8e377c8bfba719fcfd27d6377ca14c742926cecf0d6",
+      "magic": "b'{\"status\":\"ok\",\"message-t'"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/chukanov2012.pdf",
+      "url": "https://rruff.info/uploads/MM76_725.pdf",
+      "final_url": "https://www.rruff.net/uploads/MM76_725.pdf",
+      "accessed_at": "2026-10-15T00:01:38.072117+00:00",
+      "status": 404,
+      "type": "text/html; charset=utf-8",
+      "bytes": 216,
+      "sha256": "36057b00c90c4774924365b7bfca4d17c2a6c90fa9f05b81825fcbe181ba0497",
+      "magic": "b'<!DOCTYPE html><html lang=\"en\"><head><me'"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/eth-api-thesis.pdf",
+      "url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/94ff46a2-b9ac-41ea-bd0e-635c776caca1/content",
+      "final_url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/94ff46a2-b9ac-41ea-bd0e-635c776caca1/content",
+      "accessed_at": "2026-10-15T00:01:38.073395+00:00",
+      "status": 200,
+      "type": "application/pdf;charset=UTF-8",
+      "bytes": 10749824,
+      "sha256": "9108aafcee47f5adfaeac094a98194f21f006aee1126185984fa7244a018135d",
+      "magic": "b'%PDF-1.6\\n%\\xf6\\xe4\\xfc\\xdf\\n1 0 obj\\n<<\\n/Type /Catalog'"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/eth-bitstream-metadata.json",
+      "url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/94ff46a2-b9ac-41ea-bd0e-635c776caca1",
+      "final_url": "https://www.research-collection.ethz.ch/server/api/core/bitstreams/94ff46a2-b9ac-41ea-bd0e-635c776caca1",
+      "accessed_at": "2026-10-15T00:01:38.073738+00:00",
+      "status": 200,
+      "type": "application/hal+json;charset=UTF-8",
+      "bytes": 2133,
+      "sha256": "2a32395895292228c9a1e2028b95464c98bcc2a0c1fc96c8366ec33f487c5aa4",
+      "magic": "b'{\\n  \"id\" : \"94ff46a2-b9ac-41ea-bd0e-635c'"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/chukanov2012-arizona.pdf",
+      "url": "https://rruff.geo.arizona.edu/doclib/MinMag/Volume_76/76-3-725.pdf",
+      "accessed_at": "2026-10-15T00:03:17.067086+00:00",
+      "error": "URLError(TimeoutError('timed out'))"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/miot2009.pdf",
+      "url": "https://uni-tuebingen.de/fileadmin/Uni_Tuebingen/Fakultaeten/MatNat/Fachbereiche/Geowissenschaften/Arbeitsgruppen/Angewandte_Geowissenschaften/Geomikrobiologie/Publications/2009/2009_Miot_Geobiology_Vivianite.pdf",
+      "accessed_at": "2026-10-15T00:03:17.070003+00:00",
+      "status": 200,
+      "type": "application/pdf",
+      "final_url": "https://uni-tuebingen.de/fileadmin/Uni_Tuebingen/Fakultaeten/MatNat/Fachbereiche/Geowissenschaften/Arbeitsgruppen/Angewandte_Geowissenschaften/Geomikrobiologie/Publications/2009/2009_Miot_Geobiology_Vivianite.pdf",
+      "bytes": 1061170,
+      "sha256": "dc09378b0ca506155406e84e9bf6d31a81039589b345d92aa6b64c651f209fec",
+      "magic": "b'%PDF-1.3\\n%\\xe4\\xe3\\xcf\\xd2\\n106 0 obj'"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/chiba2020-landing.html",
+      "url": "https://www.jstage.jst.go.jp/article/jmps/115/6/115_200417/_article",
+      "accessed_at": "2026-10-15T00:03:17.071541+00:00",
+      "status": 200,
+      "type": "text/html;charset=utf-8",
+      "final_url": "https://www.jstage.jst.go.jp/article/jmps/115/6/115_200417/_article",
+      "bytes": 83684,
+      "sha256": "a1f8f92aaca4364ea1cadc3a1d2dcc162caa20f11ab1f87d1dc4d64e6ecd42c0",
+      "magic": "b'<!DOCTYPE html>\\r\\n<html l'"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/ima-current.html",
+      "url": "https://cnmnc.units.it/ima-master-list",
+      "accessed_at": "2026-10-15T00:03:17.072949+00:00",
+      "status": 404,
+      "type": "text/html; charset=iso-8859-1",
+      "final_url": "https://cnmnc.units.it/ima-master-list",
+      "bytes": 196,
+      "sha256": "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880",
+      "magic": "b'<!DOCTYPE HTML PUBLIC \"-'"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/chiba2020-crossref.json",
+      "url": "https://api.crossref.org/works/10.2465/jmps.200417",
+      "accessed_at": "2026-10-15T00:03:17.074164+00:00",
+      "status": 200,
+      "type": "application/json",
+      "final_url": "https://api.crossref.org/works/10.2465/jmps.200417",
+      "bytes": 10052,
+      "sha256": "25cfa239270dcda0aa2250e48e9c684c42bb991d33f2a3d12dd1ca616aec36bf",
+      "magic": "b'{\"status\":\"ok\",\"message-'"
+    }
+  ],
+  "supporting_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/selected-maintained-dedup.txt",
+      "url": "local evidence",
+      "locator": "Exact retained acquisition/search/check bytes.",
+      "role": "supporting",
+      "source_ref": null,
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/selected-raw-dedup.txt",
+      "url": "local evidence",
+      "locator": "Exact retained acquisition/search/check bytes.",
+      "role": "supporting",
+      "source_ref": null,
+      "bytes": 1218482,
+      "sha256": "f81d5c30d2a3a08e6403bd8c758cfbfc3af17a5bf9d3eff01111d436805958f7"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/selected-cited-raw-dedup.txt",
+      "url": "local evidence",
+      "locator": "Exact retained acquisition/search/check bytes.",
+      "role": "supporting",
+      "source_ref": null,
+      "bytes": 1218201,
+      "sha256": "4980e8dea48efeb22f6e07f4ca08544542cceca578d494589b5eec547242c450"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/named-validation.json",
+      "url": "local evidence",
+      "locator": "Exact retained acquisition/search/check bytes.",
+      "role": "supporting",
+      "source_ref": null,
+      "bytes": 605,
+      "sha256": "38f1d2220371671cffb2091a95c61f2982076fb823499cae82456b9a50cb9d42"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/named-validation.log",
+      "url": "local evidence",
+      "locator": "Exact retained acquisition/search/check bytes.",
+      "role": "supporting",
+      "source_ref": null,
+      "bytes": 31,
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/frozen-record.json",
+      "url": "local evidence",
+      "locator": "Exact retained acquisition/search/check bytes.",
+      "role": "supporting",
+      "source_ref": null,
+      "bytes": 1213,
+      "sha256": "a75085011dd523607d0143da71a86fd73517a739bea1e142951b26c90d6a0441"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/eth-bitstream-metadata.json",
+      "url": "local evidence",
+      "locator": "Exact retained acquisition/search/check bytes.",
+      "role": "supporting",
+      "source_ref": null,
+      "bytes": 2133,
+      "sha256": "2a32395895292228c9a1e2028b95464c98bcc2a0c1fc96c8366ec33f487c5aa4"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/chiba2020-crossref.json",
+      "url": "local evidence",
+      "locator": "Exact retained acquisition/search/check bytes.",
+      "role": "supporting",
+      "source_ref": null,
+      "bytes": 10052,
+      "sha256": "25cfa239270dcda0aa2250e48e9c684c42bb991d33f2a3d12dd1ca616aec36bf"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/miot2009-crossref.json",
+      "url": "local evidence",
+      "locator": "Exact retained acquisition/search/check bytes.",
+      "role": "supporting",
+      "source_ref": null,
+      "bytes": 9999,
+      "sha256": "e41c90555483a2c7a116d8e377c8bfba719fcfd27d6377ca14c742926cecf0d6"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/chiba2020-landing.html",
+      "url": "local evidence",
+      "locator": "Exact retained acquisition/search/check bytes.",
+      "role": "supporting",
+      "source_ref": null,
+      "bytes": 83684,
+      "sha256": "a1f8f92aaca4364ea1cadc3a1d2dcc162caa20f11ab1f87d1dc4d64e6ecd42c0"
+    },
+    {
+      "path": "/private/tmp/cmm-round84-phosphates-research/ima-root.html",
+      "url": "local evidence",
+      "locator": "Exact retained acquisition/search/check bytes.",
+      "role": "supporting",
+      "source_ref": null,
+      "bytes": 26639,
+      "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9"
+    }
+  ],
+  "evidence_assessment": {
+    "abiotic": "Chiba2020 Fig3 directly supports metavivianite plus vivianite/spheniscidite at source-labelled S50/S60. Methods has contradictory S65 sample label. No purephase mass/yield. Fig1/2 demonstrate alternate oxidation endpoints; XANES is bulk mixture characterization.",
+    "enrichment": "Erbs2004 chapter2 uses Bremen mixed enrichment, not a named pure taxon. Initial solids form abiotically. Metavivianite-like label is only provisional; no XRD, 26/38% FeIII spectral areas, no phase mass. Both Fe oxidation controls and incomplete reaction retained. Dark/lightgreen samples differed despite simultaneous inoculation.",
+    "counterexample": "Miot2009 BoFeN1 is a different strain/medium experiment; main Fig2 shows mostly amorphous4day/1year products. Narrow comparison only, no claim of direct replication or proof Erbs is false.",
+    "identity": "IMA1973-049 accepted formula controls. Historical Handbook/thesis variable formula and redox assignment not substituted for modern mineral species.",
+    "criticality": "No dated direct designation asserted; element/mineral/resource identities remain distinct.",
+    "scale": "Laboratory chemical syntheses/enrichment cultures only; no extraction or industrial recovery claims."
+  },
+  "access_limits": [
+    "ETH /download initialHTTP500 HTML rejected; publicAPI yielded complete168p PDF. Repository metadata gives a different original size/MD5 than delivered PDF with auto-generated cover; exact delivered SHA is retained, metadata checksum is not used to certify these bytes.",
+    "Chukanov2012 RRUFF uploads route404; alternate Arizona route timedout. Not claimed acquired/read; current IMA anchors modern identity and Chiba independently cites formula revision.",
+    "Miot official announced Supplement PDF directaction and conventionalstatic routesHTTP403; preserve HTML failures. No quantitative XAS/STXM/SI-dependent mechanism imported.",
+    "Chiba live landing explicitly lists Supplementarymaterial(0); this is a bounded current-page observation. Erbs full thesis is available, accepted chapter2 and its graphics inspected; other chapters were not scientifically curated."
+  ],
+  "rights": "Fulltext/rawgraphics outsideGit. Chiba copyright JapanAssociationMineralogicalSciences; ETH notice InCopyright-NonCommercialUsePermitted; Miot Blackwell copyright; Handbook allrightsreserved; IMA redistribution terms read. No source PDFs/images vendored.",
+  "baseline": {
+    "started_at": "2026-10-14T23:57:56.371043+00:00",
+    "worktree": "/private/tmp/CMMMech-expansion-round84-20261014",
+    "base": "57b84777066e9c0c43adcc92602dbd1021f52b48",
+    "commands": [
+      {
+        "command": [
+          "uv",
+          "sync",
+          "--quiet",
+          "--locked",
+          "--extra",
+          "dev",
+          "--offline"
+        ],
+        "started_at": "2026-10-14T23:57:56.371645+00:00",
+        "finished_at": "2026-10-14T23:57:59.803591+00:00",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "just",
+          "check"
+        ],
+        "started_at": "2026-10-14T23:57:59.803613+00:00",
+        "finished_at": "2026-10-15T00:05:38.870736+00:00",
+        "exit_code": 0
+      }
+    ],
+    "log": "/private/tmp/cmm-round84-baseline.log",
+    "finished_at": "2026-10-15T00:05:38.871987+00:00",
+    "passed": true,
+    "log_sha256": "80d3175318f1668886bc6f33b46aee7bea0ebbc3e119b601f0984423a4fd12fb"
+  },
+  "freeze": {
+    "frozen_at": "2026-10-15T00:09:04.017099+00:00",
+    "base": "57b84777066e9c0c43adcc92602dbd1021f52b48",
+    "worktree": "/private/tmp/CMMMech-expansion-round84-20261014",
+    "files": [
+      {
+        "path": "data/records/metavivianite.yaml",
+        "sha256": "08f50a56a622fceb4f76c6312a05e32b57150e525bd2340baa10b75f09aad1d9",
+        "bytes": 10303
+      },
+      {
+        "path": "history/records/metavivianite/2026-10-15T000832Z-codex-fec0c5.yaml",
+        "sha256": "51beb165f024845a386ce74e71822af5870e46ebcbf0fe40413f91b544ba4acf",
+        "bytes": 960
+      }
+    ],
+    "validation": {
+      "worktree": "/private/tmp/CMMMech-expansion-round84-20261014",
+      "base": "57b84777066e9c0c43adcc92602dbd1021f52b48",
+      "started_at": "2026-10-15T00:09:00.531659+00:00",
+      "finished_at": "2026-10-15T00:09:04.015318+00:00",
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "cmmmech",
+        "validate",
+        "/private/tmp/CMMMech-expansion-round84-20261014/data/records/metavivianite.yaml",
+        "--require-records"
+      ],
+      "exit_code": 0,
+      "log": "/private/tmp/cmm-round84-phosphates-research/named-validation.log",
+      "log_sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e"
+    }
+  },
+  "status": "Author curation complete; independent scientific review and batch gates pending."
+}

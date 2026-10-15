@@ -1,0 +1,469 @@
+# Independent scientific review of cinnabar
+
+- Review: 20261015T001753Z-cinnabar-round84-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T00:09:30.419894Z
+- Finished UTC: 2026-10-15T00:17:53.398394Z
+- Reviewer: codex /root/round68_phosphates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of distinct alpha-HgS cinnabar identity and community-associated aqueous mercury mobilization in laboratory oxic microcosms. Source-assigned feed, unequal controls, uncertain replication, isolated-strain null and unresolved Fe/S pathway remain explicit; no recovered-product or industrial claim.
+
+## Scope And Provenance
+
+Whole exact cinnabar owner and canonical CREATE; material identity, complete original experiment, all graphics, controls, operational measurement and limits.
+
+Selection: Assigned canonical mineral owner; native inspect before record judgment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 57b84777066e9c0c43adcc92602dbd1021f52b48.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:cinnabar | data/records/cinnabar.yaml | maintained | Cinnabar |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:cinnabar | Actual 2026-10-15T00:14:28.407399+00:00 to 2026-10-15T00:14:32.193012+00:00; one record, zero failures. |
+| Completed coordinator batch gate 1 | passed | True | cmmmech:cinnabar | Actual 2026-10-15T00:10:06.369132+00:00 to 2026-10-15T00:15:51.105025+00:00; terminal exit 0 and unchanged owner inputs. |
+| Completed coordinator batch gate 2 | passed | True | cmmmech:cinnabar | Actual 2026-10-15T00:15:51.105057+00:00 to 2026-10-15T00:16:02.832452+00:00; terminal exit 0 and unchanged owner inputs. |
+| Completed coordinator batch gate 3 | passed | True | cmmmech:cinnabar | Actual 2026-10-15T00:16:02.832478+00:00 to 2026-10-15T00:16:08.502535+00:00; terminal exit 0 and unchanged owner inputs. |
+| Completed coordinator batch gate 4 | passed | True | cmmmech:cinnabar | Actual 2026-10-15T00:16:08.502569+00:00 to 2026-10-15T00:16:14.599798+00:00; terminal exit 0 and unchanged owner inputs. |
+
+## Scientific And Domain Assessments
+
+### Species, polymorph and experimental feed
+
+identity: supported. Targets: cmmmech:cinnabar.
+
+Current IMA/Handbook support cinnabar identity. Commercial greater-than99.99-percent Alfa Aesar feed remains source assigned, with no displayed feed diffractogram or post-irradiation polymorph refinement. No criticality is inherited from Hg.
+
+### Microcosm conditions and controls
+
+evidence: supported. Targets: cmmmech:cinnabar.
+
+August2008 live/killed/uninoculated arms,2g feed,pH3.25,150mL oxic versus100mL anoxic/abiotic,100microlitre biomass,7.88 versus8.12microgram protein,21°C unshaken and30/18-day windows agree with Methods. Irradiation and particle-size limitations are explicit.
+
+### Operationally filtered Hg and no recovery denominator
+
+quantity: supported. Targets: cmmmech:cinnabar.
+
+Figures2–3 show live oxic cinnabar above killed and an anoxic initial pulse/decline.0.02micrometre filtration plusBrCl/CVAFS measures filtered totalHg, not independent dissolved-ion speciation or mass-balance recovery. No calcine/metacinnabar maximum or equilibrium multiplier is assigned to cinnabar.
+
+### Community association and competing mechanisms
+
+evidence: supported. Targets: cmmmech:cinnabar.
+
+Figure4 supports associated FeII depletion, not direct sulfidic-surface enzymology. Figure6 is hypothetical; the separately cultured Thiomonas isolate gave a null. Unpurged water and outside-glovebox sampling qualify oxygen necessity. No causal taxon or strain mapping is invented.
+
+### Replication and contradictory controls
+
+evidence: supported. Targets: cmmmech:cinnabar.
+
+Figure2 reports n=3/±8percent whereas Methods lists25 reactors without independent biological replication. Abiotic Hg is unplotted and pp25 versus28–30 conflict; these limits and unmatched volumes/biomass prevent overprecise attribution.
+
+### Laboratory mobilization and separation of lineages
+
+scope: supported. Targets: cmmmech:cinnabar.
+
+No product recovery, environmental flux, detoxification or industrial deployment follows. Separate Hg-nitrate tolerance assays and preliminary conference descriptions are not independent cinnabar recoveries.
+
+### Exact source/history and actual checks
+
+provenance: supported. Targets: cmmmech:cinnabar.
+
+Canonical native capture, exact source/authority hashes, separate inline/canonical actor events and independently executed named check are bound. Four actual coordinator gates were verified without claiming new laboratory verification.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/cinnabar.yaml; All exact inspected fields. Artifact: /private/tmp/CMMMech-expansion-round84-20261014/data/records/cinnabar.yaml | supports | The qualified mineral and experimental scopes remain consistent. |
+| history | history/records/cinnabar/2026-10-15T000648Z-codex-f789b3.yaml; Complete canonical CREATE sidecar and separate inline event. Artifact: /private/tmp/CMMMech-expansion-round84-20261014/history/records/cinnabar/2026-10-15T000648Z-codex-f789b3.yaml | supports | Actual codex/GPT-6 actor, UTC events, target and change description agree; no reviewer owner/history edits. |
+| main | https://doi.org/10.1111/gbi.12066; Complete original pp20–33 read. Table1 p22, Table2 p23 and Figures1–6 pp25–28/30 visually inspected. Methods pp22–24; oxic/anoxic results pp25–27/Figures2–4; isolate null and activity-quotient scope p29; control wording pp25/28–30; hypothetical Figure6 p30. Artifact: /private/tmp/cmm-round84-sulfides-research/jew2014.pdf | supports | Supports community-associated mobilization from source-assigned cinnabar; exact controls, method differences, null and inference limits agree with the record. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September2026 exact cinnabar row PDF46 and definitions PDF1 independently visually inspected. Artifact: /private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf | context_only | HgS, grandfathered G, original year unknown; no fabricated approval accession. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/cinnabar.pdf; Complete one-page version1 entry independently read/visually inspected, crystal data and polymorphism. Artifact: /private/tmp/cmm-round84-sulfides-research/cinnabar-handbook.pdf | context_only | Point group32 and P3121/P3221 support trigonal alpha-HgS within the broader hexagonal heading; distinct metacinnabar/hypercinnabar. |
+| dedup | /private/tmp/cmm-round84-cinnabar-review/dedup.json; Exact query, roots, exit status and result-file checksum. Artifact: /private/tmp/cmm-round84-cinnabar-review/dedup.json | context_only | Existing mercury/metacinnabar context is not a second cinnabar owner or independent replication. |
+| notices | /private/tmp/cmm-round84-cinnabar-review/search-assessment.json; Exact query strings and accessed metadata/publisher routes. Artifact: /private/tmp/cmm-round84-cinnabar-review/search-assessment.json | context_only | No actionable corrective notice surfaced. Preliminary conference summaries are same-study lineage; Vazquez2015 concerns separate metacinnabar. |
+| named | /private/tmp/cmm-round84-cinnabar-review/named-validation.json; Actual independent check; log /private/tmp/cmm-round84-cinnabar-review/named-validation.log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e. Artifact: /private/tmp/cmm-round84-cinnabar-review/named-validation.json | supports | One record, zero failures. |
+| batch | /private/tmp/cmm-round84-final-gates.json; All FOUR completed coordinator commands 2026-10-15T00:10:06.368513+00:00 to 2026-10-15T00:16:14.701329+00:00; log /private/tmp/cmm-round84-final-gates.log SHA256 ec292e14422380cfff4b3e7607210f30dcbf4dc16dc9952e945f2d456396d18d. Artifact: /private/tmp/cmm-round84-final-gates.json | supports | Exact worktree/base, vectors, terminal exits and unchanged target bytes verified. |
+
+## Limits And Additional Notes
+
+- No displayed commercial cinnabar-feed diffractogram or quantitative phase refinement; chemical purity and source label do not prove post-irradiation polymorph purity.
+- The unresolved natural consortium is not a defined causal strain. Direct sulfur oxidation, indirect Fe cycling and nonmetabolic organic ligands remain alternatives; separate Thiomonas culture gave a null.
+- Different water volumes, protein amounts, unknown particle distribution and irradiation effects limit matched attribution. n=3 in figure captions is not demonstrably three biological reactor replicates.
+- Operational filtration and totalHg measurement do not exclude smaller colloids or establish HgII speciation, a whole-system mass balance or an isolated recovered product.
+- Residual oxygen and external sampling qualify the anoxic comparator. Abiotic-control Hg prose conflicts across the source and its series is absent from Figure2.
+- The activity quotient derives from metacinnabar day3 and is not a measured cinnabar recovery factor.
+- No supplement citation was identified in the complete original. The live publisher page was inaccessible through the reviewer web tool, so a comprehensive current supplement inventory is not claimed.
+- Bounded search found no actionable notice; this is not proof that no correction or counterevidence exists. Validation verifies structure/provenance, not scientific truth.
+- A preliminary unsaved review draft retained inspect target kind record, which the saver rejected. It was normalized to maintained before successful persistence; canonical ID, owner/history bytes and the scientific assessment were unchanged. The rejected draft and log remain external.
+- Start is the retained native inspect capture filesystem UTC timestamp; scientific assessment followed that capture.
+- No owner/history edit was made by this reviewer. All primary and authority evidence has an exact nonempty local artifact SHA256.
+- The scientific acceptance is independent of this reviewer’s metavivianite authorship; the latter requires root’s independent review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T001753Z-cinnabar-round84-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of cinnabar
+started_at: '2026-10-15T00:09:30.419894Z'
+finished_at: '2026-10-15T00:17:53.398394Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored metavivianite, not cinnabar or its history.
+    Cinnabar was curated by round68_iron_sulfides. Native inspection of exact maintained
+    bytes preceded scientific assessment. Shared source acquisition is disclosed;
+    the complete 14-page original, all six figures/two tables and identity authorities
+    were independently read and visually checked. No laboratory replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of distinct alpha-HgS cinnabar identity and community-associated
+  aqueous mercury mobilization in laboratory oxic microcosms. Source-assigned feed,
+  unequal controls, uncertain replication, isolated-strain null and unresolved Fe/S
+  pathway remain explicit; no recovered-product or industrial claim.
+source:
+  git_revision: 57b84777066e9c0c43adcc92602dbd1021f52b48
+  state: working_tree
+  inputs:
+  - path: data/records/cinnabar.yaml
+    sha256: 9c85bcd4302594920ff22b9d08263ee5368bd5467cca930089287377e5404e3d
+    role: target
+  - path: history/records/cinnabar/2026-10-15T000648Z-codex-f789b3.yaml
+    sha256: cab649332d536e8af0abc987df74bb642766b020a405b705a85f510f31e34940
+    role: context
+scope:
+  description: Whole exact cinnabar owner and canonical CREATE; material identity,
+    complete original experiment, all graphics, controls, operational measurement
+    and limits.
+  selection: Assigned canonical mineral owner; native inspect before record judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:cinnabar
+targets:
+- target_id: cmmmech:cinnabar
+  path: data/records/cinnabar.yaml
+  label: Cinnabar
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cinnabar.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/cinnabar.yaml --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual 2026-10-15T00:14:28.407399+00:00 to 2026-10-15T00:14:32.193012+00:00;
+    one record, zero failures.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch gate 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual 2026-10-15T00:10:06.369132+00:00 to 2026-10-15T00:15:51.105025+00:00;
+    terminal exit 0 and unchanged owner inputs.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual 2026-10-15T00:15:51.105057+00:00 to 2026-10-15T00:16:02.832452+00:00;
+    terminal exit 0 and unchanged owner inputs.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch gate 3
+  command: uv run --locked cmmmech validate-history --base 57b84777066e9c0c43adcc92602dbd1021f52b48
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual 2026-10-15T00:16:02.832478+00:00 to 2026-10-15T00:16:08.502535+00:00;
+    terminal exit 0 and unchanged owner inputs.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual 2026-10-15T00:16:08.502569+00:00 to 2026-10-15T00:16:14.599798+00:00;
+    terminal exit 0 and unchanged owner inputs.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/cinnabar.yaml
+  locator: 'All exact inspected fields. Artifact: /private/tmp/CMMMech-expansion-round84-20261014/data/records/cinnabar.yaml'
+  accessed_at: '2026-10-15T00:17:53.398394Z'
+  support: supports
+  summary: The qualified mineral and experimental scopes remain consistent.
+  snapshot_sha256: 9c85bcd4302594920ff22b9d08263ee5368bd5467cca930089287377e5404e3d
+- evidence_id: history
+  kind: record_content
+  reference: history/records/cinnabar/2026-10-15T000648Z-codex-f789b3.yaml
+  locator: 'Complete canonical CREATE sidecar and separate inline event. Artifact:
+    /private/tmp/CMMMech-expansion-round84-20261014/history/records/cinnabar/2026-10-15T000648Z-codex-f789b3.yaml'
+  accessed_at: '2026-10-15T00:17:53.398394Z'
+  support: supports
+  summary: Actual codex/GPT-6 actor, UTC events, target and change description agree;
+    no reviewer owner/history edits.
+  snapshot_sha256: cab649332d536e8af0abc987df74bb642766b020a405b705a85f510f31e34940
+- evidence_id: main
+  kind: primary_source
+  reference: https://doi.org/10.1111/gbi.12066
+  locator: 'Complete original pp20–33 read. Table1 p22, Table2 p23 and Figures1–6
+    pp25–28/30 visually inspected. Methods pp22–24; oxic/anoxic results pp25–27/Figures2–4;
+    isolate null and activity-quotient scope p29; control wording pp25/28–30; hypothetical
+    Figure6 p30. Artifact: /private/tmp/cmm-round84-sulfides-research/jew2014.pdf'
+  accessed_at: '2026-10-15T00:17:53.398394Z'
+  support: supports
+  summary: Supports community-associated mobilization from source-assigned cinnabar;
+    exact controls, method differences, null and inference limits agree with the record.
+  snapshot_sha256: 90c11154ced02064b1b4bacc83e394930fcf299d42f710698de37c550776a840
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'September2026 exact cinnabar row PDF46 and definitions PDF1 independently
+    visually inspected. Artifact: /private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf'
+  accessed_at: '2026-10-15T00:17:53.398394Z'
+  support: context_only
+  summary: HgS, grandfathered G, original year unknown; no fabricated approval accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/cinnabar.pdf
+  locator: 'Complete one-page version1 entry independently read/visually inspected,
+    crystal data and polymorphism. Artifact: /private/tmp/cmm-round84-sulfides-research/cinnabar-handbook.pdf'
+  accessed_at: '2026-10-15T00:17:53.398394Z'
+  support: context_only
+  summary: Point group32 and P3121/P3221 support trigonal alpha-HgS within the broader
+    hexagonal heading; distinct metacinnabar/hypercinnabar.
+  snapshot_sha256: d4fbdcded67d455015b034e7141db8ca13a9f62b5f793f02212b86b5b1a59f23
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round84-cinnabar-review/dedup.json
+  locator: 'Exact query, roots, exit status and result-file checksum. Artifact: /private/tmp/cmm-round84-cinnabar-review/dedup.json'
+  accessed_at: '2026-10-15T00:17:53.398394Z'
+  support: context_only
+  summary: Existing mercury/metacinnabar context is not a second cinnabar owner or
+    independent replication.
+  snapshot_sha256: d4169f39dbd14597836f145f5e6abb3c045956f4cbd84015e47ebf77b8dfac65
+  search_scope: rg --no-ignore --hidden --follow across current and main records/research/reviews/history
+    plus round82 and round84 cited sulfide raw roots; 86 matching paths, bounded scope.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round84-cinnabar-review/search-assessment.json
+  locator: 'Exact query strings and accessed metadata/publisher routes. Artifact:
+    /private/tmp/cmm-round84-cinnabar-review/search-assessment.json'
+  accessed_at: '2026-10-15T00:17:53.398394Z'
+  support: context_only
+  summary: No actionable corrective notice surfaced. Preliminary conference summaries
+    are same-study lineage; Vazquez2015 concerns separate metacinnabar.
+  snapshot_sha256: 4a4c1f485fbed55fcca0fd95cc094de92548de168e62828abb1d73db36f02abc
+  search_scope: Three web searches on2026-10-15, first returned result sets without
+    domain/date filters; full-title institutional metadata and publisher open attempt.
+    No comprehensive live SI inventory claim.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round84-cinnabar-review/named-validation.json
+  locator: 'Actual independent check; log /private/tmp/cmm-round84-cinnabar-review/named-validation.log
+    SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e. Artifact:
+    /private/tmp/cmm-round84-cinnabar-review/named-validation.json'
+  accessed_at: '2026-10-15T00:17:53.398394Z'
+  support: supports
+  summary: One record, zero failures.
+  snapshot_sha256: 7d1e6aeb63cf8854d2847656b9e10f6ee0683f8bcb8c253fc31361a6972e3746
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round84-final-gates.json
+  locator: 'All FOUR completed coordinator commands 2026-10-15T00:10:06.368513+00:00
+    to 2026-10-15T00:16:14.701329+00:00; log /private/tmp/cmm-round84-final-gates.log
+    SHA256 ec292e14422380cfff4b3e7607210f30dcbf4dc16dc9952e945f2d456396d18d. Artifact:
+    /private/tmp/cmm-round84-final-gates.json'
+  accessed_at: '2026-10-15T00:17:53.398394Z'
+  support: supports
+  summary: Exact worktree/base, vectors, terminal exits and unchanged target bytes
+    verified.
+  snapshot_sha256: 1ca4fa2e94577c45db1dba50d1894b3d89984bc911cfccf4fc59725ebf155eba
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species, polymorph and experimental feed
+  outcome: supported
+  summary: Current IMA/Handbook support cinnabar identity. Commercial greater-than99.99-percent
+    Alfa Aesar feed remains source assigned, with no displayed feed diffractogram
+    or post-irradiation polymorph refinement. No criticality is inherited from Hg.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - owner
+  - ima
+  - handbook
+  - main
+- assessment_id: conditions
+  area: evidence
+  topic: Microcosm conditions and controls
+  outcome: supported
+  summary: August2008 live/killed/uninoculated arms,2g feed,pH3.25,150mL oxic versus100mL
+    anoxic/abiotic,100microlitre biomass,7.88 versus8.12microgram protein,21°C unshaken
+    and30/18-day windows agree with Methods. Irradiation and particle-size limitations
+    are explicit.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - owner
+  - main
+- assessment_id: outcome
+  area: quantity
+  topic: Operationally filtered Hg and no recovery denominator
+  outcome: supported
+  summary: Figures2–3 show live oxic cinnabar above killed and an anoxic initial pulse/decline.0.02micrometre
+    filtration plusBrCl/CVAFS measures filtered totalHg, not independent dissolved-ion
+    speciation or mass-balance recovery. No calcine/metacinnabar maximum or equilibrium
+    multiplier is assigned to cinnabar.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - owner
+  - main
+- assessment_id: causality
+  area: evidence
+  topic: Community association and competing mechanisms
+  outcome: supported
+  summary: Figure4 supports associated FeII depletion, not direct sulfidic-surface
+    enzymology. Figure6 is hypothetical; the separately cultured Thiomonas isolate
+    gave a null. Unpurged water and outside-glovebox sampling qualify oxygen necessity.
+    No causal taxon or strain mapping is invented.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - owner
+  - main
+- assessment_id: uncertainty
+  area: evidence
+  topic: Replication and contradictory controls
+  outcome: supported
+  summary: Figure2 reports n=3/±8percent whereas Methods lists25 reactors without
+    independent biological replication. Abiotic Hg is unplotted and pp25 versus28–30
+    conflict; these limits and unmatched volumes/biomass prevent overprecise attribution.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - owner
+  - main
+- assessment_id: scope
+  area: scope
+  topic: Laboratory mobilization and separation of lineages
+  outcome: supported
+  summary: No product recovery, environmental flux, detoxification or industrial deployment
+    follows. Separate Hg-nitrate tolerance assays and preliminary conference descriptions
+    are not independent cinnabar recoveries.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - owner
+  - main
+  - notices
+- assessment_id: provenance
+  area: provenance
+  topic: Exact source/history and actual checks
+  outcome: supported
+  summary: Canonical native capture, exact source/authority hashes, separate inline/canonical
+    actor events and independently executed named check are bound. Four actual coordinator
+    gates were verified without claiming new laboratory verification.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - owner
+  - history
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- No displayed commercial cinnabar-feed diffractogram or quantitative phase refinement;
+  chemical purity and source label do not prove post-irradiation polymorph purity.
+- The unresolved natural consortium is not a defined causal strain. Direct sulfur
+  oxidation, indirect Fe cycling and nonmetabolic organic ligands remain alternatives;
+  separate Thiomonas culture gave a null.
+- Different water volumes, protein amounts, unknown particle distribution and irradiation
+  effects limit matched attribution. n=3 in figure captions is not demonstrably three
+  biological reactor replicates.
+- Operational filtration and totalHg measurement do not exclude smaller colloids or
+  establish HgII speciation, a whole-system mass balance or an isolated recovered
+  product.
+- Residual oxygen and external sampling qualify the anoxic comparator. Abiotic-control
+  Hg prose conflicts across the source and its series is absent from Figure2.
+- The activity quotient derives from metacinnabar day3 and is not a measured cinnabar
+  recovery factor.
+- No supplement citation was identified in the complete original. The live publisher
+  page was inaccessible through the reviewer web tool, so a comprehensive current
+  supplement inventory is not claimed.
+- Bounded search found no actionable notice; this is not proof that no correction
+  or counterevidence exists. Validation verifies structure/provenance, not scientific
+  truth.
+notes:
+- A preliminary unsaved review draft retained inspect target kind record, which the
+  saver rejected. It was normalized to maintained before successful persistence; canonical
+  ID, owner/history bytes and the scientific assessment were unchanged. The rejected
+  draft and log remain external.
+- Start is the retained native inspect capture filesystem UTC timestamp; scientific
+  assessment followed that capture.
+- No owner/history edit was made by this reviewer. All primary and authority evidence
+  has an exact nonempty local artifact SHA256.
+- The scientific acceptance is independent of this reviewer’s metavivianite authorship;
+  the latter requires root’s independent review.
+```

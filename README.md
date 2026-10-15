@@ -8,10 +8,18 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 398 material records.
+The catalogue currently contains 403 material records.
+
+The [latest curation report](research/ingests/round84-frontier-20261014.md) links
+the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Brochantite](data/records/brochantite.yaml) | Fungal-associated copper oxalate formation on synthetic mineral and roof patina | Source phase assignment, ambiguous product denominator and limited controls |
+| [Atacamite](data/records/atacamite.yaml) | Fungal-associated copper oxalate formation on synthetic mineral | Growth inhibition at the highest loading; no isolated recovery yield |
+| [Cinnabar](data/records/cinnabar.yaml) | Laboratory mercury mobilization by a live AMD consortium | Isolate null result, unmatched controls and no recovered product |
+| [Metavivianite](data/records/metavivianite.yaml) | Abiotic mixed-phase synthesis and a provisional culture intermediate | Microbial phase identity unresolved; oxidation can bypass metavivianite |
+| [Natural silica-sand feed](data/records/silica-sand.yaml) | Resting-cell iron reduction in natural sand feeds | Acid-extractable slurry iron is not a dissolved-only extraction or recovery yield |
 | [Cuprite](data/records/cuprite.yaml) | Fungal-associated alteration of commercial Cu2O | Agar clearance and shared oxalate assignment do not establish mass-balanced recovery |
 | [Parasymplesite](data/records/parasymplesite.yaml) | Qualified ferrous-arsenate phase assignment during bacterial ferrihydrite reduction | Mixed products, conflicting source arm labels and simultaneous arsenic mobilization |
 | [Bismuthinite](data/records/bismuthinite.yaml) | Abiotic low-temperature synthesis of a diffraction-assigned Bi2S3 phase | Incomplete recipe, inferred growth mechanism and no microbial claim |

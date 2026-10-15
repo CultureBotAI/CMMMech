@@ -1,0 +1,52 @@
+--- /private/tmp/cmm-round83-isolated-verification.py
++++ /private/tmp/cmm-round84-isolated-verification.py
+@@ -2,9 +2,9 @@
+ import argparse, datetime, hashlib, json, os, re, subprocess, sys, tarfile
+ from pathlib import Path
+ 
+-BASE='6719e1fc18d122bde9ffa947ff70b6b7266622d3'
++BASE='57b84777066e9c0c43adcc92602dbd1021f52b48'
+ REMOTE='https://github.com/CultureBotAI/CMMMech.git'
+-BRANCH='curate/cmm-expansion-round83-20261014'
++BRANCH='curate/cmm-expansion-round84-20261014'
+ TAG='refs/tags/review-base/cmm-source-survey-20261009'
+ TAG_OBJECT='fc4040c3abcd28f0a9cc52467e308100144ad1fd'
+ TAG_COMMIT='c0adc2c0763e1515ed07dc712b024974d98fb342'
+@@ -12,7 +12,7 @@
+ parser.add_argument('mode',choices=['preflight','postmerge'])
+ parser.add_argument('--topic-head',required=True)
+ parser.add_argument('--expected-tree',required=True)
+-parser.add_argument('--source',default='/private/tmp/CMMMech-expansion-round83-20261014')
++parser.add_argument('--source',default='/private/tmp/CMMMech-expansion-round84-20261014')
+ parser.add_argument('--merge-commit')
+ parser.add_argument('--run-id',help='Unique letters/digits/hyphens suffix; default actual UTC timestamp')
+ args=parser.parse_args()
+@@ -23,8 +23,8 @@
+ run_id=args.run_id or datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
+ if not re.fullmatch('[A-Za-z0-9-]+',run_id):parser.error('Unsafe run ID.')
+ source=Path(args.source).resolve()
+-clone=Path('/private/tmp')/f'CMMMech-round83-{args.mode}-{run_id}'
+-prefix=Path('/private/tmp')/f'cmm-round83-{args.mode}-{run_id}'
++clone=Path('/private/tmp')/f'CMMMech-round84-{args.mode}-{run_id}'
++prefix=Path('/private/tmp')/f'cmm-round84-{args.mode}-{run_id}'
+ receipt_path=Path(str(prefix)+'-terminal.json')
+ coverage_path=Path(str(prefix)+'-coverage.json')
+ log_path=Path(str(prefix)+'.log')
+@@ -89,7 +89,7 @@
+    require(all(not m.name.startswith('/') and '..' not in Path(m.name).parts and '.git' not in Path(m.name).parts for m in archive.getmembers()),'Unsafe archive member.')
+    archive.extractall(clone,filter='data')
+   git(clone,'add','--all')
+-  git(clone,'-c','user.name=codex','-c','user.email=codex@localhost','-c','commit.gpgsign=false','commit','-m','Synthetic squash verification for reviewed round83 integration tree')
++  git(clone,'-c','user.name=codex','-c','user.email=codex@localhost','-c','commit.gpgsign=false','commit','-m','Synthetic squash verification for reviewed round84 integration tree')
+   require(git(clone,'rev-parse','HEAD^')==BASE,'Synthetic commit parent differs from trusted main base.')
+   receipt['synthetic_commit']=git(clone,'rev-parse','HEAD')
+  else:
+@@ -103,7 +103,7 @@
+  run(['uv','run','--locked','cmmmech','validate','--require-records'],cwd=clone)
+  run(['uv','run','--locked','cmmmech','validate-history','--base',BASE],cwd=clone)
+  run(['just','review-check','--base',BASE,'--require-reviews'],cwd=clone)
+- run([str(clone/'.venv/bin/python'),'/private/tmp/cmm-round83-isolated-coverage.py','--clone',str(clone),'--output',str(coverage_path)],cwd=clone)
++ run([str(clone/'.venv/bin/python'),'/private/tmp/cmm-round84-isolated-coverage.py','--clone',str(clone),'--output',str(coverage_path)],cwd=clone)
+  coverage=json.loads(coverage_path.read_text());require(coverage['passed'],'Exact coverage/count/base audit failed.')
+  receipt['coverage_receipt']=str(coverage_path)
+  receipt['counts']={k:coverage[k] for k in ['record_count','history_count','structured_review_count','review_base_count','covered_records']}

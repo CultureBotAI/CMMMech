@@ -1,0 +1,518 @@
+# Independent scientific review of natural silica-sand feed
+
+- Review: 20261015T001812Z-silica-sand-round84-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T00:08:44.102740Z
+- Finished UTC: 2026-10-15T00:18:12.328033Z
+- Reviewer: codex /root/round68_iron_sulfides (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Distinct natural mixed silica feed and laboratory resting-cell-associated iron reduction are supported, with operational extraction, separate feeds, weak shuttle effects and source/control limits preserved.
+
+## Scope And Provenance
+
+Entire maintained owner/CREATE history; original Chapter2 methods and complete Chapter5 silica microcosms with all graphics/tables, relevant appendix, authorities, source conflicts and actual checks. Other thesis chapters are outside the accepted scientific assessment.
+
+Selection: Assigned frozen owner; native source/target capture preceded judgment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 57b84777066e9c0c43adcc92602dbd1021f52b48.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:silica-sand | data/records/silica-sand.yaml | maintained | Natural silica-sand feed |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent strict named validation | passed | True | cmmmech:silica-sand | Actual reviewer execution exit0; one record, zero failures. |
+| Actual coordinator batch gate 1 | passed | True | cmmmech:silica-sand | Actual execution 2026-10-15T00:10:06.369132+00:00 to 2026-10-15T00:15:51.105025+00:00; receipt/log and unchanged owner digest verified. |
+| Actual coordinator batch gate 2 | passed | True | cmmmech:silica-sand | Actual execution 2026-10-15T00:15:51.105057+00:00 to 2026-10-15T00:16:02.832452+00:00; receipt/log and unchanged owner digest verified. |
+| Actual coordinator batch gate 3 | passed | True | cmmmech:silica-sand | Actual execution 2026-10-15T00:16:02.832478+00:00 to 2026-10-15T00:16:08.502535+00:00; receipt/log and unchanged owner digest verified. |
+| Actual coordinator batch gate 4 | passed | True | cmmmech:silica-sand | Actual execution 2026-10-15T00:16:08.502569+00:00 to 2026-10-15T00:16:14.599798+00:00; receipt/log and unchanged owner digest verified. |
+
+## Scientific And Domain Assessments
+
+### Geological resource and feed separation
+
+identity: supported. Targets: cmmmech:silica-sand.
+
+Silica2 is disaggregated Oakamoor/Moneystone rock; Silica3 is uncemented Grandcourt Lower Greensand. Quartz-dominated mixed material is a primary resource, not a pure mineral, elemental silicon or purity-defined product. Sample composition and results are not pooled; no constituent criticality transferred.
+
+### Species, culture and biomass state
+
+identity: supported. Targets: cmmmech:silica-sand.
+
+TaxId24 and catalogue CIP80.40 equivalence support nomenclature while experimental authentication remains unknown. Washed viable stationary-phase cells in saline nongrowth assays are distinct from growth, a purified enzyme or killed biomass.
+
+### Cell-density and shuttle assays
+
+evidence: supported. Targets: cmmmech:silica-sand.
+
+Figure5.2 uses2.5gSilica3,3.5/7mLstock and30°C; Figure5.3 uses2.4g and4mLstock. Stated stock density is not final reactor density. General80mLsaline/lactate/N2/dark/shaking methods and figure-specific contexts are retained. Silica2 Figure5.1 at20°C is explicitly separate.
+
+### Operational Fe(II) endpoint and denominators
+
+quantity: supported. Targets: cmmmech:silica-sand.
+
+Unfiltered slurry plus2MHCl for approximately24h precedes filtration and phenanthroline. Assay concentrations include acid-extractable solid-associated Fe(II); they do not quantify dissolved-only Fe, reactor-normalized rates or isolated iron yield. Figure5.2 day-one0.24/0.12mmol/L and Figure5.3 fifteen-day0.224/0.186mmol/L are supported at the stated scope.
+
+### Controls, null effects and causal alternatives
+
+evidence: supported. Targets: cmmmech:silica-sand.
+
+Nonzero blanks have incompletely mapped cell-free versus cell-and-donor-free recipes. Three replicate errors do not resolve that matching limitation. Small AQDS differences and no-shuttle responses do not establish universal mediator necessity, a unique contact pathway or a genetic mechanism. No added killed-cell comparison is invented.
+
+### Before/after phase and local analytical limits
+
+evidence: supported. Targets: cmmmech:silica-sand.
+
+Similar XRD patterns do not show a clear new crystalline product; FTIR changes also occur in blanks. Local EDX Fe nondetection without detection limit/bulk balance is not complete removal, and the displayed Mössbauer spectrum is untreated material only. SEM differences do not identify a uniquely dissolved Fe mineral or purified silica quality.
+
+### Version, figure identity and external scope
+
+evidence: supported. Targets: cmmmech:silica-sand.
+
+Deposited tracked edits and overlapping numbering are disclosed. Figure5.4 caption saysSand2 while surrounding discussion saysSand3, so no feed-specific quantitative inference uses it. Related journal abstract yield and separate scale-up chapters are not imported into this microcosm record.
+
+### Exact independent review and actual checks
+
+provenance: supported. Targets: cmmmech:silica-sand.
+
+Reviewer authored cinnabar, not silica-sand. Native target/source capture preceded owner judgment; initial short owner-repository metadata was normalized in a new canonical inspection before persistence without modifying earlier capture. Owner and history remained unchanged. Source acquisition was shared but reading and original graphical assessment were independent.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/silica-sand.yaml; Entire frozen maintained owner. Actual local artifact: /private/tmp/CMMMech-expansion-round84-20261014/data/records/silica-sand.yaml | supports | Natural feed identity, biological preparation, operational analytical endpoint and bounded outcomes independently assessed. |
+| history | history/records/silica-sand/2026-10-15T000631Z-codex-5ebae5.yaml; Complete canonical CREATE and separate inline event. Actual local artifact: /private/tmp/CMMMech-expansion-round84-20261014/history/records/silica-sand/2026-10-15T000631Z-codex-5ebae5.yaml | supports | Actual codex/GPT-6 actor, timestamps, owner target and history linkage agree. |
+| primary | https://theses.ncl.ac.uk/jspui/bitstream/10443/1346/1/Yahaya12.pdf; Complete acquired 297-page original; independently read front cover/declaration, Chapter 2 methods (especially printed31–40/PDF50–59), complete Chapter 5 (printed107–131/PDF126–150), and Appendix5.1 (PDF289–290). All Chapter5 Figures5.1–5.15 and Tables5.1–5.2 visually checked, together with relevant Chapter2 tables/experimental diagrams. Actual local artifact: /private/tmp/cmm-round84-resources-research/yahaya2012-thesis.pdf | supports | Official deposited thesis supports narrowly scoped resting-cell-associated iron reduction. Separate feeds, small shuttle effects, incomplete blank mapping, unfiltered-slurry extraction and visible editorial artifacts are retained. This does not claim scientific review of every unrelated chapter. |
+| landing | https://theses.ncl.ac.uk/jspui/handle/10443/1346; Official repository metadata and original-PDF link. Actual local artifact: /private/tmp/cmm-round84-resources-research/thesis-landing.html | supports | Repository issue year2012 differs from September2011 original cover/declaration; version distinction is explicit. |
+| taxon | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=24&amp;mode=Info; Complete current TaxId24 taxonomy XML and type-material entries. Actual local artifact: /private/tmp/cmm-round84-resources-research/ncbi24.xml | supports | Shewanella putrefaciens species mapping is supported; the identifier does not authenticate the actual stored experimental culture. |
+| culture | https://www.jcm.riken.jp/cgi-bin/jcm/jcm_number?JCM=20190; JCM20190 type-strain catalogue and equivalent collection designations. Actual local artifact: /private/tmp/cmm-round84-resources-research/jcm20190.html | supports | CIP80.40 is an equivalent collection designation; this corroborates nomenclature, not experimental sequence authentication. |
+| named | /private/tmp/cmm-round84-silica-independent/named-validation.log; Actual independent strict named validation. Actual local artifact: /private/tmp/cmm-round84-silica-independent/named-validation.log | supports | One checked record; zero failed, command exit0. |
+| batch | /private/tmp/cmm-round84-final-gates.json; Actual terminal coordinator four-command receipt. Actual local artifact: /private/tmp/cmm-round84-final-gates.json | supports | Trusted base, exact unchanged record input, actual command list and four successful outcomes independently checked. |
+| batch_log | /private/tmp/cmm-round84-final-gates.log; Complete batch output digest verified against receipt. Actual local artifact: /private/tmp/cmm-round84-final-gates.log | supports | Structural suite, strict nonempty corpus, canonical history and generated-page validation passed. |
+| dedup | /private/tmp/cmm-round84-silica-independent/maintained-dedup.txt; Hidden/ignored-inclusive followed search of data/records, research, reviews and history for silica-sand and exact thesis/journal identifiers. Actual local artifact: /private/tmp/cmm-round84-silica-independent/maintained-dedup.txt | context_only | Current resource and existing mineral/industrial-material context kept distinct. Author bounded original-main and cited-raw searches were also inspected; no global novelty or exhaustion claim. |
+| notices | /private/tmp/cmm-round84-silica-independent/web-notices.json; Three current exact-title/repository-identifier correction and related-result queries; first returned result sets retained. Actual local artifact: /private/tmp/cmm-round84-silica-independent/web-notices.json | context_only | No applicable notice found in inspected bounded results. A related journal abstract is neither full-original verification nor independent replication and its yield is not imported. |
+
+## Limits And Additional Notes
+
+- Deposited thesis retains editorial changes/comments and inconsistent numbering; phase/control and feed-label uncertainties remain explicit.
+- No raw-instrument reanalysis, authentication of stored culture, complete Fe mass balance, isolated recovery or industrial operation established.
+- Source reading covers the full relevant methods and silica-microcosm chapter, plus relevant appendix; complete acquisition of297pages is not a claim to reassess every chapter.
+- Bounded literature/notice searches do not prove exhaustive absence of corrections or contrary evidence.
+- Shared source acquisition is not independent experimental replication; this is an independent assessment of the accepted evidence.
+- Hosted CI/publication/postmerge checks are separate future operational gates.
+- Initial unsaved draft was rejected because three evidence rows used kind identifier, which is not a native schema enum. Preserved invalid draft and rejection note externally; corrected metadata to authority/database before the sole successful persistence. Evidence artifacts, owner/history and scientific assessments were unchanged.
+- Actual review start was recorded before substantive assessment; initial inspection and fresh canonical owner-repository inspection are both retained externally. No saved review was rewritten.
+- Every accepted primary/identifier row binds a real nonempty artifact by absolute path and SHA256. Canonical target cmmmech:silica-sand is used consistently.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T001812Z-silica-sand-round84-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of natural silica-sand feed
+started_at: '2026-10-15T00:08:44.102740Z'
+finished_at: '2026-10-15T00:18:12.328033Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Owner/history authored by round68_new_frontier. Reviewer authored
+    cinnabar only, independently inspected exact target before judgment and read relevant
+    complete original chapters/figures, and made no owner edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Distinct natural mixed silica feed and laboratory resting-cell-associated
+  iron reduction are supported, with operational extraction, separate feeds, weak
+  shuttle effects and source/control limits preserved.
+source:
+  git_revision: 57b84777066e9c0c43adcc92602dbd1021f52b48
+  state: working_tree
+  inputs:
+  - path: data/records/silica-sand.yaml
+    sha256: 5bbd5618ce6bb4cdf9738e4fe16386517e204ac6752abd6182b2e4864d356808
+    role: target
+  - path: history/records/silica-sand/2026-10-15T000631Z-codex-5ebae5.yaml
+    sha256: 758091b4637338784a053e4608b099e8c3ab14e043ad416e2b38c558ed2d5bdc
+    role: context
+  - path: research/sources/round84-resources/20261015T000755Z-source-investigation.json
+    sha256: 3c564876e9f79f44d4293b1be99a666dc522c8b15fcc59a0effe681fc566912a
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire maintained owner/CREATE history; original Chapter2 methods and
+    complete Chapter5 silica microcosms with all graphics/tables, relevant appendix,
+    authorities, source conflicts and actual checks. Other thesis chapters are outside
+    the accepted scientific assessment.
+  selection: Assigned frozen owner; native source/target capture preceded judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:silica-sand
+targets:
+- target_id: cmmmech:silica-sand
+  path: data/records/silica-sand.yaml
+  label: Natural silica-sand feed
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/silica-sand.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Independent strict named validation
+  command: uv run --locked cmmmech validate data/records/silica-sand.yaml --require-records
+  status: passed
+  required: true
+  summary: Actual reviewer execution exit0; one record, zero failures.
+  target_ids:
+  - cmmmech:silica-sand
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Actual coordinator batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-15T00:10:06.369132+00:00 to 2026-10-15T00:15:51.105025+00:00;
+    receipt/log and unchanged owner digest verified.
+  target_ids:
+  - cmmmech:silica-sand
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batch_log
+- check_id: batch1
+  name: Actual coordinator batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-15T00:15:51.105057+00:00 to 2026-10-15T00:16:02.832452+00:00;
+    receipt/log and unchanged owner digest verified.
+  target_ids:
+  - cmmmech:silica-sand
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batch_log
+- check_id: batch2
+  name: Actual coordinator batch gate 3
+  command: uv run --locked cmmmech validate-history --base 57b84777066e9c0c43adcc92602dbd1021f52b48
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-15T00:16:02.832478+00:00 to 2026-10-15T00:16:08.502535+00:00;
+    receipt/log and unchanged owner digest verified.
+  target_ids:
+  - cmmmech:silica-sand
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batch_log
+- check_id: batch3
+  name: Actual coordinator batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-15T00:16:08.502569+00:00 to 2026-10-15T00:16:14.599798+00:00;
+    receipt/log and unchanged owner digest verified.
+  target_ids:
+  - cmmmech:silica-sand
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batch_log
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/silica-sand.yaml
+  locator: 'Entire frozen maintained owner. Actual local artifact: /private/tmp/CMMMech-expansion-round84-20261014/data/records/silica-sand.yaml'
+  accessed_at: '2026-10-15T00:18:12.328033Z'
+  support: supports
+  summary: Natural feed identity, biological preparation, operational analytical endpoint
+    and bounded outcomes independently assessed.
+  snapshot_sha256: 5bbd5618ce6bb4cdf9738e4fe16386517e204ac6752abd6182b2e4864d356808
+- evidence_id: history
+  kind: record_content
+  reference: history/records/silica-sand/2026-10-15T000631Z-codex-5ebae5.yaml
+  locator: 'Complete canonical CREATE and separate inline event. Actual local artifact:
+    /private/tmp/CMMMech-expansion-round84-20261014/history/records/silica-sand/2026-10-15T000631Z-codex-5ebae5.yaml'
+  accessed_at: '2026-10-15T00:18:12.328033Z'
+  support: supports
+  summary: Actual codex/GPT-6 actor, timestamps, owner target and history linkage
+    agree.
+  snapshot_sha256: 758091b4637338784a053e4608b099e8c3ab14e043ad416e2b38c558ed2d5bdc
+- evidence_id: primary
+  kind: primary_source
+  reference: https://theses.ncl.ac.uk/jspui/bitstream/10443/1346/1/Yahaya12.pdf
+  locator: 'Complete acquired 297-page original; independently read front cover/declaration,
+    Chapter 2 methods (especially printed31–40/PDF50–59), complete Chapter 5 (printed107–131/PDF126–150),
+    and Appendix5.1 (PDF289–290). All Chapter5 Figures5.1–5.15 and Tables5.1–5.2 visually
+    checked, together with relevant Chapter2 tables/experimental diagrams. Actual
+    local artifact: /private/tmp/cmm-round84-resources-research/yahaya2012-thesis.pdf'
+  accessed_at: '2026-10-15T00:18:12.328033Z'
+  support: supports
+  summary: Official deposited thesis supports narrowly scoped resting-cell-associated
+    iron reduction. Separate feeds, small shuttle effects, incomplete blank mapping,
+    unfiltered-slurry extraction and visible editorial artifacts are retained. This
+    does not claim scientific review of every unrelated chapter.
+  snapshot_sha256: 5360dc03aad9fc7cd38b340e43fad45f4c01ecb7da433ac00fe455646d9d61e5
+- evidence_id: landing
+  kind: authority
+  reference: https://theses.ncl.ac.uk/jspui/handle/10443/1346
+  locator: 'Official repository metadata and original-PDF link. Actual local artifact:
+    /private/tmp/cmm-round84-resources-research/thesis-landing.html'
+  accessed_at: '2026-10-15T00:18:12.328033Z'
+  support: supports
+  summary: Repository issue year2012 differs from September2011 original cover/declaration;
+    version distinction is explicit.
+  snapshot_sha256: 328dcec722feb56444fe3151db646598ce5f18e7cdf622f30175660ea0c6b031
+- evidence_id: taxon
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=24&mode=Info
+  locator: 'Complete current TaxId24 taxonomy XML and type-material entries. Actual
+    local artifact: /private/tmp/cmm-round84-resources-research/ncbi24.xml'
+  accessed_at: '2026-10-15T00:18:12.328033Z'
+  support: supports
+  summary: Shewanella putrefaciens species mapping is supported; the identifier does
+    not authenticate the actual stored experimental culture.
+  snapshot_sha256: 2b3e211bdac2b627d490c0e54135aff4c766246541207fc344acc7e570e6338b
+- evidence_id: culture
+  kind: authority
+  reference: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_number?JCM=20190
+  locator: 'JCM20190 type-strain catalogue and equivalent collection designations.
+    Actual local artifact: /private/tmp/cmm-round84-resources-research/jcm20190.html'
+  accessed_at: '2026-10-15T00:18:12.328033Z'
+  support: supports
+  summary: CIP80.40 is an equivalent collection designation; this corroborates nomenclature,
+    not experimental sequence authentication.
+  snapshot_sha256: 774be695198f1535605f457afefd8069e0957556d5bc9ad730ba4e54dadc6383
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round84-silica-independent/named-validation.log
+  locator: 'Actual independent strict named validation. Actual local artifact: /private/tmp/cmm-round84-silica-independent/named-validation.log'
+  accessed_at: '2026-10-15T00:18:12.328033Z'
+  support: supports
+  summary: One checked record; zero failed, command exit0.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round84-final-gates.json
+  locator: 'Actual terminal coordinator four-command receipt. Actual local artifact:
+    /private/tmp/cmm-round84-final-gates.json'
+  accessed_at: '2026-10-15T00:18:12.328033Z'
+  support: supports
+  summary: Trusted base, exact unchanged record input, actual command list and four
+    successful outcomes independently checked.
+  snapshot_sha256: 1ca4fa2e94577c45db1dba50d1894b3d89984bc911cfccf4fc59725ebf155eba
+- evidence_id: batch_log
+  kind: validation
+  reference: /private/tmp/cmm-round84-final-gates.log
+  locator: 'Complete batch output digest verified against receipt. Actual local artifact:
+    /private/tmp/cmm-round84-final-gates.log'
+  accessed_at: '2026-10-15T00:18:12.328033Z'
+  support: supports
+  summary: Structural suite, strict nonempty corpus, canonical history and generated-page
+    validation passed.
+  snapshot_sha256: ec292e14422380cfff4b3e7607210f30dcbf4dc16dc9952e945f2d456396d18d
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round84-silica-independent/maintained-dedup.txt
+  locator: 'Hidden/ignored-inclusive followed search of data/records, research, reviews
+    and history for silica-sand and exact thesis/journal identifiers. Actual local
+    artifact: /private/tmp/cmm-round84-silica-independent/maintained-dedup.txt'
+  accessed_at: '2026-10-15T00:18:12.328033Z'
+  support: context_only
+  summary: Current resource and existing mineral/industrial-material context kept
+    distinct. Author bounded original-main and cited-raw searches were also inspected;
+    no global novelty or exhaustion claim.
+  snapshot_sha256: 0550711abd3b29b9296619b51e59d431a957b981af4944d8965a7f336d0e0832
+  search_scope: rg --no-ignore --hidden --follow; silica[- ]sand, 10443/1346 and 10.4314/bajopas.v11i1.16s;
+    bounded author source-search inventory.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round84-silica-independent/web-notices.json
+  locator: 'Three current exact-title/repository-identifier correction and related-result
+    queries; first returned result sets retained. Actual local artifact: /private/tmp/cmm-round84-silica-independent/web-notices.json'
+  accessed_at: '2026-10-15T00:18:12.328033Z'
+  support: context_only
+  summary: No applicable notice found in inspected bounded results. A related journal
+    abstract is neither full-original verification nor independent replication and
+    its yield is not imported.
+  snapshot_sha256: 0d48dc53e4c036a42cbad405f23ec7916f8a2918bc1970e0ac91f9610ec0b321
+  search_scope: Exact thesis title correction/erratum; Yahaya Shewanella silica-sand
+    CIP8040/AQDS follow-up; exact10443/1346 revised/correction. Direct original internal
+    conflicts also checked.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Geological resource and feed separation
+  outcome: supported
+  summary: Silica2 is disaggregated Oakamoor/Moneystone rock; Silica3 is uncemented
+    Grandcourt Lower Greensand. Quartz-dominated mixed material is a primary resource,
+    not a pure mineral, elemental silicon or purity-defined product. Sample composition
+    and results are not pooled; no constituent criticality transferred.
+  target_ids:
+  - cmmmech:silica-sand
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: organism
+  area: identity
+  topic: Species, culture and biomass state
+  outcome: supported
+  summary: TaxId24 and catalogue CIP80.40 equivalence support nomenclature while experimental
+    authentication remains unknown. Washed viable stationary-phase cells in saline
+    nongrowth assays are distinct from growth, a purified enzyme or killed biomass.
+  target_ids:
+  - cmmmech:silica-sand
+  evidence_ids:
+  - record
+  - primary
+  - taxon
+  - culture
+- assessment_id: conditions
+  area: evidence
+  topic: Cell-density and shuttle assays
+  outcome: supported
+  summary: Figure5.2 uses2.5gSilica3,3.5/7mLstock and30°C; Figure5.3 uses2.4g and4mLstock.
+    Stated stock density is not final reactor density. General80mLsaline/lactate/N2/dark/shaking
+    methods and figure-specific contexts are retained. Silica2 Figure5.1 at20°C is
+    explicitly separate.
+  target_ids:
+  - cmmmech:silica-sand
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: assay
+  area: quantity
+  topic: Operational Fe(II) endpoint and denominators
+  outcome: supported
+  summary: Unfiltered slurry plus2MHCl for approximately24h precedes filtration and
+    phenanthroline. Assay concentrations include acid-extractable solid-associated
+    Fe(II); they do not quantify dissolved-only Fe, reactor-normalized rates or isolated
+    iron yield. Figure5.2 day-one0.24/0.12mmol/L and Figure5.3 fifteen-day0.224/0.186mmol/L
+    are supported at the stated scope.
+  target_ids:
+  - cmmmech:silica-sand
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: causality
+  area: evidence
+  topic: Controls, null effects and causal alternatives
+  outcome: supported
+  summary: Nonzero blanks have incompletely mapped cell-free versus cell-and-donor-free
+    recipes. Three replicate errors do not resolve that matching limitation. Small
+    AQDS differences and no-shuttle responses do not establish universal mediator
+    necessity, a unique contact pathway or a genetic mechanism. No added killed-cell
+    comparison is invented.
+  target_ids:
+  - cmmmech:silica-sand
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: mineralogy
+  area: evidence
+  topic: Before/after phase and local analytical limits
+  outcome: supported
+  summary: Similar XRD patterns do not show a clear new crystalline product; FTIR
+    changes also occur in blanks. Local EDX Fe nondetection without detection limit/bulk
+    balance is not complete removal, and the displayed Mössbauer spectrum is untreated
+    material only. SEM differences do not identify a uniquely dissolved Fe mineral
+    or purified silica quality.
+  target_ids:
+  - cmmmech:silica-sand
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: contradictions
+  area: evidence
+  topic: Version, figure identity and external scope
+  outcome: supported
+  summary: Deposited tracked edits and overlapping numbering are disclosed. Figure5.4
+    caption saysSand2 while surrounding discussion saysSand3, so no feed-specific
+    quantitative inference uses it. Related journal abstract yield and separate scale-up
+    chapters are not imported into this microcosm record.
+  target_ids:
+  - cmmmech:silica-sand
+  evidence_ids:
+  - record
+  - primary
+  - landing
+  - notices
+- assessment_id: provenance
+  area: provenance
+  topic: Exact independent review and actual checks
+  outcome: supported
+  summary: Reviewer authored cinnabar, not silica-sand. Native target/source capture
+    preceded owner judgment; initial short owner-repository metadata was normalized
+    in a new canonical inspection before persistence without modifying earlier capture.
+    Owner and history remained unchanged. Source acquisition was shared but reading
+    and original graphical assessment were independent.
+  target_ids:
+  - cmmmech:silica-sand
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - batch_log
+findings: []
+actions: []
+limitations:
+- Deposited thesis retains editorial changes/comments and inconsistent numbering;
+  phase/control and feed-label uncertainties remain explicit.
+- No raw-instrument reanalysis, authentication of stored culture, complete Fe mass
+  balance, isolated recovery or industrial operation established.
+- Source reading covers the full relevant methods and silica-microcosm chapter, plus
+  relevant appendix; complete acquisition of297pages is not a claim to reassess every
+  chapter.
+- Bounded literature/notice searches do not prove exhaustive absence of corrections
+  or contrary evidence.
+- Shared source acquisition is not independent experimental replication; this is an
+  independent assessment of the accepted evidence.
+- Hosted CI/publication/postmerge checks are separate future operational gates.
+notes:
+- Initial unsaved draft was rejected because three evidence rows used kind identifier,
+  which is not a native schema enum. Preserved invalid draft and rejection note externally;
+  corrected metadata to authority/database before the sole successful persistence.
+  Evidence artifacts, owner/history and scientific assessments were unchanged.
+- Actual review start was recorded before substantive assessment; initial inspection
+  and fresh canonical owner-repository inspection are both retained externally. No
+  saved review was rewritten.
+- Every accepted primary/identifier row binds a real nonempty artifact by absolute
+  path and SHA256. Canonical target cmmmech:silica-sand is used consistently.
+```

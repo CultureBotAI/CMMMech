@@ -1,0 +1,104 @@
+id: cmmmech:atacamite
+name: Atacamite
+material_kind: mineral
+description: Atacamite is the orthorhombic copper hydroxychloride mineral Cu2Cl(OH)3. It is
+  distinct from elemental copper, other copper minerals and mixed corrosion patinas. The laboratory
+  mineral experiment below used a synthetic preparation. No criticality designation is inherited
+  from copper.
+sources:
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Atacamite row, PDF page 17;
+    introductory status definitions. G, 1797 denotes grandfathered status and original-description
+    year, not an approval number.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-15'
+- id: handbook_atacamite
+  title: Handbook of Mineralogy. Atacamite, Cu2Cl(OH)3. Complete single-page identity, composition
+    and crystallographic description.
+  url: https://www.handbookofmineralogy.org/pdfs/atacamite.pdf
+  accessed_on: '2026-10-15'
+- id: joseph2012
+  title: Joseph et al. (2012). Protection of Metal Artifacts with the Formation of Metal-Oxalates
+    Complexes by Beauveria bassiana. Frontiers in Microbiology 2:270; published 9 January 2012,
+    eCollection 2011. Complete eight-page article, Table 1 and Figures 1-8, especially mineral
+    assays in Figure 1 and separate acid assay in Figure 3.
+  url: https://doi.org/10.3389/fmicb.2011.00270
+  accessed_on: '2026-10-15'
+- id: ncbi_bassiana
+  title: NCBI Taxonomy 176275. Beauveria bassiana, species node.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=176275
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: bassiana_associated_oxalate_formation
+  name: Fungal-associated copper oxalate formation on synthetic atacamite
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:176275
+    label: Beauveria bassiana
+  description: Laboratory cultures of Beauveria bassiana grew on synthetic atacamite-containing
+    malt agar and the authors assigned copper oxalate products. This supports a qualified culture-associated
+    transformation and precipitation observation. Acid-mediated dissolution followed by precipitation
+    is a proposed explanation; neither causal necessity of oxalate nor isolated-metal recovery
+    was established.
+  context: The live, unnamed Beauveria bassiana isolate came from copper-contaminated vineyard
+    soil at Bevaix Abbey, Neuchatel, Switzerland. The article mentions a local collection deposit
+    but supplies no accession; the species TaxID does not identify the isolate. Synthetic substrate
+    was prepared using cited chemical methods, exposed to UV for 30 minutes and added after
+    medium autoclaving. Malt agar contained 12 g/L malt and 15 g/L agar; incubation was at room
+    temperature in the dark, with numerical temperature and pH unspecified. Five-mm square fungal
+    plugs were used. Radial growth was followed in two perpendicular directions every 3-4 days
+    over 18 days. The methods specify two or three replicates, whereas Figure 1 specifies three
+    with standard errors. Figure 1 labels loadings 10, 20 and 50 g/L Cu(II) compounds, while
+    the caption and prose vary between copper, Cu(II) and compound concentrations; no elemental-copper
+    conversion is accepted. Copper-free malt agar was the growth comparison. No matched mineral-only
+    sterile, killed-cell, pH-matched or acid-specific control is reported for this mineral assay.
+    The silver-arm sterile control cannot be transferred. Separate product estimates used cultures
+    after three months, dried at 60 degrees C, ground below 40 micrometres and pressed as 800-mg
+    samples for Cu-K-alpha XRD, with a copper oxalate dihydrate/quartz calibration.
+  evidence:
+  - source_ref: joseph2012
+    supports: support
+    explanation: Figure 1A and Results show growth at the labelled 10 and 20 g/L loadings, but
+      full growth inhibition at 50 g/L atacamite. Figure 1B displays product estimates for the
+      lower loadings; its missing 50-g/L bar is not treated as a measured zero product yield.
+      The MATA series is named in text and Figure 1 but omitted from Table 1; no unstated standard
+      MATA recipe is inferred.
+  - source_ref: joseph2012
+    supports: partial
+    explanation: Results page 5 assigns moolooite, CuC2O4.nH2O with n below 1, to products on
+      all three copper media using ESEM, XRD and FTIR, partly referring to Joseph et al. 2011
+      for characterization. The complete 2012 article was inspected, but does not display the
+      original powder patterns for these mineral arms. The accepted outcome is the authors'
+      copper-oxalate product assignment, not independent confirmation of hydration, phase purity
+      or complete substrate conversion. The related 2011 article's original graphics were not
+      successfully acquired in this investigation and are not accepted as directly inspected
+      evidence.
+  - source_ref: joseph2012
+    supports: partial
+    explanation: Figure 1B provides semiquantitative XRD estimates after three months. Its caption
+      uses percentage of dry treated mycelium, while methods describe dried culture and Results
+      use an ambiguous amount-of-copper denominator. The prose percentages are not unambiguously
+      mapped to each mineral arm. No numerical extraction efficiency or recovered-product yield
+      is imported; neither a copper mass balance nor purified product recovery was demonstrated.
+  - source_ref: joseph2012
+    supports: partial
+    explanation: Figure 3 and organic-acid methods concern separate mineral-free malt-agar cultures
+      after 21 days at 8 or 12 g/L malt. Oxalic acid was detected among eleven acid standards.
+      This supports an oxalate-producing phenotype, not proof that oxalate is the sole or necessary
+      cause in the mineral arm. Reported production-rate units and extrapolated quantities are
+      unresolved and are not imported or silently corrected. No industrial deployment or long-term
+      conservation performance follows from these laboratory observations.
+  - source_ref: ncbi_bassiana
+    supports: context_only
+    explanation: The live authority resolves NCBITaxon:176275 to Beauveria bassiana at species
+      rank. It does not verify the unnamed study isolate, strain accession or causal pathway.
+curation_history:
+- timestamp: '2026-10-15T00:08:15.724112Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Added atacamite mineral identity and qualified laboratory fungal-associated copper
+    oxalate formation; preserved source concentration/product-denominator ambiguity and phase/control
+    limits.
+history_refs:
+- history/records/atacamite/2026-10-15T000817Z-codex-36807b.yaml
