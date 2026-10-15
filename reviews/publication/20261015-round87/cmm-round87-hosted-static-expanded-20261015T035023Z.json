@@ -1,0 +1,44 @@
+{
+  "timestamp": "2026-10-15T03:50:23.102689Z",
+  "reviewer": "codex /root/round68_iron_sulfides",
+  "scope": "Expanded exact external-helper occurrence before root builder correction; no execution or Git/GH mutations.",
+  "verdict": "needs_correction",
+  "passed": false,
+  "previous_observation": {
+    "path": "/private/tmp/cmm-round87-hosted-static-initial-20261015T034920Z.json",
+    "sha256": "f665037043d422bd71642dcb75dfd82dca172c09d32e7c7709fc436735d5489e"
+  },
+  "snapshots": [
+    {
+      "path": "/private/tmp/cmm-round87-hosted-static-initial-20261015T034920Z-peer_checks.py",
+      "sha256": "2b604b672732057f211aa8cf183785532838578c4964f11b1c4bf4388a624867"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-hosted-static-expanded-20261015T035023Z-build-manifest.py",
+      "sha256": "b2564ee3e322b0f92e0331594e24a615e240202df01f0a23b30fadcd7b794251"
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "HP1",
+      "issue_key": "round87-hosted-native-finding-status",
+      "severity": "minor",
+      "status": "open",
+      "occurrences": [
+        {
+          "path": "/private/tmp/cmm-round87-hosted-static-initial-20261015T034920Z-peer_checks.py",
+          "line": 50,
+          "expression": "f['status'] in ('resolved','dismissed')"
+        },
+        {
+          "path": "/private/tmp/cmm-round87-build-manifest.py",
+          "line": 25,
+          "expression": "f['status'] in ('resolved','dismissed')"
+        }
+      ],
+      "description": "Both hosted lineage selection and manifest selection use schema-invalid dismissed instead of rejected. Legitimate native rejected dispositions will fail closed. Current cohort has no such actual disposition yet; no scientific finding or executed publication failure is alleged.",
+      "acceptance": "Use native resolved/rejected terminal statuses. Preserve conservative rejection of accepted_risk absent explicit assessed authorization. Actual extracted predicates should accept resolved/rejected and reject open/deferred/dismissed/accepted_risk, with all lineage checks retained."
+    }
+  ],
+  "provenance_note": "The initial JSON numbered the hosted expression line53; the immutable source snapshot unambiguously locates it at line50. This expanded occurrence corrects that locator without changing the initial artifact. An external preparatory script failed after saving an additional builder snapshot due to a datetime import typo; no helper or repository content changed."
+}

@@ -1,0 +1,122 @@
+id: cmmmech:secondary-aluminium-dross
+name: Secondary aluminium dross
+material_kind: secondary_resource
+description: >-
+  Heterogeneous residual aluminium dross after an earlier recovery of metallic
+  aluminium from primary dross by screening or flux-assisted remelting. This
+  source-defined secondary dross is narrower than the umbrella aluminium-dross
+  category; the accepted specimen came from an aluminium remelting plant in
+  Guangxi, China. It contains metallic aluminium, aluminium oxides and nitride,
+  magnesium-aluminium spinel, and other oxides and process salts. It is not a
+  mineral species, elemental aluminium, bauxite residue, spent potlining, or
+  an automatically equivalent feed to an unspecified aluminium-smelting slag.
+  Laboratory chemical extraction is documented without a microbial mechanism,
+  inherited criticality designation, or demonstrated industrial deployment.
+sources:
+  - id: lv2022
+    title: >-
+      Lv, Xie, Wu, Li, Yang, Han, Liu and Zhao (2022). Effective Extraction of
+      the Al Element from Secondary Aluminum Dross Using a Combined Dry
+      Pressing and Alkaline Roasting Process. Materials 15(16):5686.
+      DOI 10.3390/ma15165686. Complete 16-page original, Sections 1-4,
+      Figures 1-11 and Tables 1-4; published 18 August 2022.
+    url: https://doi.org/10.3390/ma15165686
+    accessed_on: '2026-10-15'
+mechanisms:
+  - id: alkaline_roasting_caustic_leaching
+    name: Abiotic roasting and caustic extraction from secondary aluminium dross
+    process: separation
+    microbial: false
+    description: >-
+      Alkali-assisted roasting altered the mixed dross to sodium-aluminate-rich
+      clinkers that were subsequently leached with caustic liquor. Before/after
+      diffraction and solid compositions support aluminium mobilization and
+      residual insoluble phases. The reported recovery is a magnesium-normalized
+      clinker-to-residue estimate, not an independently closed original-waste
+      mass balance or an isolated aluminium or alumina product yield.
+    context: >-
+      The real plant specimen is characterized in Section 2.1, Figure 2 and
+      Table 1, including 38.23 wt.% total Al; this is not its metallic-Al
+      fraction. Section 2.2 used 100 g dross mixed with alkali, dry pressed at
+      30 MPa into cylinders 20 mm in diameter and 40 mm long. Samples were
+      heated in a corundum crucible in air at 10 degrees C/min, held for 1 h,
+      cooled in a desiccator, crushed through 200 mesh, and leached; residues
+      were filtered and repeatedly rinsed with boiling water. The final
+      condition stated in the abstract and Section 3.5/Table 4 is 1150 degrees
+      C roasting, Na2CO3/Al2O3 molar ratio 1.3, followed by 90 degrees C
+      leaching for 30 min at liquid-to-solid ratio 10 mL/g. Section 2.2 states
+      60 g/L caustic, while Table 2 expresses this as C(Na2O) and lists
+      alpha_k = 3.0 without a complete liquor preparation recipe. The Table 2
+      carbonate-ratio series instead specifies 1100 degrees C roasting and
+      60 min leaching. These distinct source conditions are retained rather
+      than collapsed into one unqualified reproduction protocol. No cells,
+      microbial products or biological treatment arm were used.
+    evidence:
+      - source_ref: lv2022
+        supports: support
+        explanation: >-
+          Sections 2.1-2.3, Figures 2 and 6-7, and Tables 1 and 4 support a
+          mixed industrial feed and altered roasted/residual assemblages.
+          Sodium aluminate is assigned in the clinkers; magnesium oxide,
+          residual spinel and aluminium-silicate phases remain in the residues.
+          These source-assigned phases do not establish quantitative conversion
+          of every original Al host or product purity. The generic introductory
+          low metallic-Al description of secondary dross is distinct from the
+          specimen's 38.23 wt.% total elemental Al.
+      - source_ref: lv2022
+        supports: support
+        explanation: >-
+          Section 3.2.1, the carbonate-ratio panel Figure 5d, Section 3.5/Table 4
+          and Conclusions report 90.79% Al and 92.03% Na recovery for the
+          selected carbonate route. Section 2.3 derives recovery from XRF
+          compositions of roasted clinkers and leaching residues using their
+          Mg ratio. This relies on magnesium as a conserved solid tracer;
+          Equations 1-2 also have incomplete printed brackets. These are
+          source-reported solid-balance estimates, not directly measured
+          solution inventory or overall original-dross-to-product recovery.
+          Added sodium carbonate and caustic contribute sodium, so the Na
+          value is not recovery of sodium initially present in the waste.
+          Figure 8a shows a rapid initial increase and a later plateau; higher
+          liquid-to-solid ratios beyond 10 mL/g give little further improvement
+          in the separate 60 degrees C Figure 8b series.
+      - source_ref: lv2022
+        supports: partial
+        explanation: >-
+          Section 3.2.1 reports slightly higher selected extraction with NaOH
+          but rejects it for subsequent work because moisture uptake caused
+          AlN hydrolysis, ammonia release and collapse of the pressed samples
+          into slurry. No quantitative ammonia comparison or untreated-dross
+          leaching control is presented, and no independent replicate counts
+          or error bars are specified. Figure 5's caption interchanges the
+          descriptions of panels b and c relative to their axes and plotted
+          alkali labels; Table 2 and the final optimized recipe also differ.
+          Figure 7's caption calls the varied ratios mass ratios, whereas
+          its labels and the text use n(N/A). The XRD method states a
+          10-60 degree scan, while the initial-feed Figure 2 extends to
+          90 degrees. These reporting limits preclude a uniquely reconstructed
+          protocol or an unqualified global optimum.
+      - source_ref: lv2022
+        supports: partial
+        explanation: >-
+          Sections 3.4-3.5 and Figures 8-11 provide fitted kinetics, thermal
+          curves and selected microscopy/EDS, not unique proof of a controlling
+          molecular step. The reported 9.69 kJ/mol activation energy and
+          layer-diffusion interpretation remain model dependent. Lower N and
+          Cl concentrations in Table 4 do not alone close a gas or total-mass
+          balance after reagent addition; neither recovered condensate purity
+          nor complete environmental detoxification is established. The source
+          alternates chlorate and chloride terminology despite a chloride-ion
+          assay. Figure 1's alumina-production endpoint is a process proposal;
+          the Conclusions leave desilication and crystal-seed decomposition
+          for future work, so no isolated alumina product is claimed here.
+curation_history:
+  - timestamp: '2026-10-15T03:51:53.820238Z'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Created a post-metal-recovery secondary aluminium dross resource using the
+      complete original laboratory study. Preserved mixed-feed identity, source
+      recipe and graphical conflicts, Mg-normalized extraction denominators,
+      missing product balances and the absence of microbial treatment.
+history_refs:
+  - history/records/secondary-aluminium-dross/2026-10-15T035130Z-codex-1557d9.yaml

@@ -1,0 +1,4 @@
+from pathlib import Path
+from datetime import datetime,timezone
+import json,runpy
+p=Path('/private/tmp');lib=runpy.run_path(str(p/'cmm-round57-recover-original.py'),run_name='snapshot_library');src=p/'cmm-round87-preservation-before.json';before=json.loads(src.read_text());out=p/'cmm-round87-preservation-precommit.json';assert not out.exists();current={'main':lib['snapshot'](lib['MAIN'],False),'skill':lib['snapshot'](lib['SKILL'],True)};tag=lib['retained_tag']();assert current==before['snapshots'],'Unrelated checkout changed; do not overwrite';assert tag==before['retained_tag'];r=dict(recorded_at=datetime.now(timezone.utc).isoformat(),passed=True,original_snapshot=str(src),original_snapshot_sha256=lib['sha'](src),entry_counts={k:len(v['files']) for k,v in current.items()},scope=before['scope'],retained_tag=tag);lib['save'](out,r);print(json.dumps(r,indent=2))

@@ -1,0 +1,32 @@
+{
+  "timestamp": "2026-10-15T04:10:52.307240+00:00",
+  "reviewer": "codex /root/round68_phosphates",
+  "passed": false,
+  "scope": "Auditor implementation self-diagnosis; not a scientific owner or frozen publication-package defect.",
+  "finding": {
+    "finding_id": "A1",
+    "issue_key": "round87-final-auditor-native-status-scope",
+    "severity": "minor",
+    "status": "open",
+    "description": "Whole-module string exclusion of dismissed incorrectly rejects unrelated GitHub review-state text. Native status predicates themselves are correct.",
+    "affected_path": "/private/tmp/cmm-round87-final-package-audit.py",
+    "line": 146
+  },
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round87-final-package-audit.py",
+      "sha256": "9c8c6495e9e14f0c4fe34f8541d3a49e3379f86d956ba6d60cbb2b1f3858b793"
+    },
+    {
+      "path": "/private/tmp/cmm-round87-final-package-audit-runtime.log",
+      "sha256": "4e1997d2edbaf69f1acc8904d3a2ecfb708883fa1a649e3fd300f455093e1d32"
+    },
+    {
+      "path": "/private/tmp/cmm_round87_peer_checks.py",
+      "sha256": "5d9fc844507d96693d5b3b8e9092b698248ea06cb339de2076e37160fed10fe1"
+    }
+  ],
+  "actual_exit_code": 1,
+  "no_final_audit_pair_saved": true,
+  "proposed_correction": "Parse only actual verify_native_lineage function status-membership AST; require exactly two f[status] resolved/rejected whitelist predicates. Preserve all other package guards."
+}

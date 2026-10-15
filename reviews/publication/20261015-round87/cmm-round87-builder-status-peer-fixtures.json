@@ -1,0 +1,39 @@
+{
+  "source": "/private/tmp/cmm-round87-build-manifest.py",
+  "source_sha256": "f254392f50592cc4eb94c0193e41dd7b99d2ca7b6a7b5c8df721529698f21d93",
+  "actual_assert_ast": "Assert(test=Call(func=Name(id='all', ctx=Load()), args=[GeneratorExp(elt=Compare(left=Subscript(value=Name(id='f', ctx=Load()), slice=Constant(value='status'), ctx=Load()), ops=[In()], comparators=[Tuple(elts=[Constant(value='resolved'), Constant(value='rejected')], ctx=Load())]), generators=[comprehension(target=Name(id='f', ctx=Store()), iter=Subscript(value=Name(id='v', ctx=Load()), slice=Constant(value='findings'), ctx=Load()), is_async=0)])]))",
+  "passed": true,
+  "cases": [
+    {
+      "status": "resolved",
+      "accepted": true,
+      "passed": true
+    },
+    {
+      "status": "rejected",
+      "accepted": true,
+      "passed": true
+    },
+    {
+      "status": "open",
+      "accepted": false,
+      "passed": true
+    },
+    {
+      "status": "deferred",
+      "accepted": false,
+      "passed": true
+    },
+    {
+      "status": "accepted_risk",
+      "accepted": false,
+      "passed": true
+    },
+    {
+      "status": "dismissed",
+      "accepted": false,
+      "passed": true
+    }
+  ],
+  "scope": "Only actual selector assert extracted; no top-level builder execution or maintained writes."
+}

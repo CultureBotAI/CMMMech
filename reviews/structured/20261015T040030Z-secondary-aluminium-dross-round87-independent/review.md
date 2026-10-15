@@ -1,0 +1,461 @@
+# Independent scientific review of secondary aluminium dross
+
+- Review: 20261015T040030Z-secondary-aluminium-dross-round87-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T03:53:23Z
+- Finished UTC: 2026-10-15T04:00:30.049303Z
+- Reviewer: codex /root/round68_iron_sulfides (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of a distinct post-metal-recovery secondary aluminium dross resource and laboratory abiotic alkaline roasting/leaching. Mixed feed, conflicting recipes and Mg-normalized elemental extraction are retained without product-yield, complete-detoxification, microbial or industrial claims.
+
+## Scope And Provenance
+
+Whole exact maintained owner, canonical CREATE and source dossier; complete accepted primary assessed at the stated locators.
+
+Selection: Assigned canonical target; native inspect completed before judgment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9deef8843b7efcf2dd2586c2a13f47b72231e336.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:secondary-aluminium-dross | data/records/secondary-aluminium-dross.yaml | maintained | Secondary aluminium dross |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:secondary-aluminium-dross | Actual one record checked, zero failures; explicit terminal receipt/log verified. |
+| Completed coordinator batch gate 1 | passed | True | cmmmech:secondary-aluminium-dross | Actual completed coordinator execution verified; not an independent rerun. |
+| Completed coordinator batch gate 2 | passed | True | cmmmech:secondary-aluminium-dross | Actual completed coordinator execution verified; not an independent rerun. |
+| Completed coordinator batch gate 3 | passed | True | cmmmech:secondary-aluminium-dross | Actual completed coordinator execution verified; not an independent rerun. |
+| Completed coordinator batch gate 4 | passed | True | cmmmech:secondary-aluminium-dross | Actual completed coordinator execution verified; not an independent rerun. |
+
+## Scientific And Domain Assessments
+
+### Secondary resource and feed form
+
+identity: supported. Targets: cmmmech:secondary-aluminium-dross.
+
+The source-defined residue follows prior metallic-Al recovery from primary dross. Guangxi plant material contains mixed Al metal/oxides/nitride/spinel/salts; Table1 total Al38.23wt% is distinct from its metallic-Al fraction. It is not a mineral species or an interchangeable unnamed smelting slag.
+
+### Pretreatment, chemical route and arms
+
+evidence: supported. Targets: cmmmech:secondary-aluminium-dross.
+
+100g dross,30MPa dry pressing,20mm diameter/40mm length,10C/min air roasting held1h,200mesh crushing and caustic leaching are supported. The final1150C/1.3molar/90C/30min/10mL-g recipe is not conflated with Table2 1100C/60min series or Figure8b60C series. No cells or microbial products are used.
+
+### Al and Na balance denominators
+
+quantity: supported. Targets: cmmmech:secondary-aluminium-dross.
+
+The90.79%Al and92.03%Na estimates use Mg-normalized clinker/residue XRF compositions, not directly measured solution inventory, original-feed closed mass balance or isolated-product yield. Added sodium reagents preclude treating the Na value as waste-derived recovery.
+
+### Source discrepancies and controls
+
+evidence: supported. Targets: cmmmech:secondary-aluminium-dross.
+
+Table2 versus final recipe, Figure5b/c caption interchange, Figure7 mass/molar wording, XRD scan limits and incomplete equation brackets/caustic recipe remain explicit. No replicate/error-bar basis, untreated-dross leaching control or conserved-Mg validation is invented. NaOH slurry/ammonia observations are descriptive.
+
+### Kinetics, environment and deployment
+
+scope: supported. Targets: cmmmech:secondary-aluminium-dross.
+
+9.69kJ/mol and layer-diffusion are model-dependent. Lower solid N/Cl concentrations do not close emissions or total balance. Figure1 alumina endpoint is proposed and downstream desilication/crystal-seed decomposition remains future work. Plant feed origin is not industrial deployment; no microbial or inherited criticality claim is made.
+
+### Exact owner, history and completed checks
+
+provenance: supported. Targets: cmmmech:secondary-aluminium-dross.
+
+Native inspect precedes judgment; frozen owner/CREATE/dossier hashes and actual GPT-6/codex attribution verified. Accepted primary is a nonempty actual16-page PDF; all source evidence locators bind bytes. Independent named and completed four batch gates passed; owner/history unchanged by reviewer.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/secondary-aluminium-dross.yaml; Whole frozen input captured by native inspect before judgment. Actual local artifact: /private/tmp/CMMMech-expansion-round87-20261015/data/records/secondary-aluminium-dross.yaml | supports | Exact owner and canonical CREATE agree; separate inline event records actual curator and creation scope. No reviewer edits. |
+| history | history/records/secondary-aluminium-dross/2026-10-15T035130Z-codex-1557d9.yaml; Whole frozen input captured by native inspect before judgment. Actual local artifact: /private/tmp/CMMMech-expansion-round87-20261015/history/records/secondary-aluminium-dross/2026-10-15T035130Z-codex-1557d9.yaml | supports | Exact owner and canonical CREATE agree; separate inline event records actual curator and creation scope. No reviewer edits. |
+| primary | https://doi.org/10.3390/ma15165686; Complete 16-page original read; all Figures 1–11 and Tables 1–4 visually inspected. Methods/Equations 1–2 PDF3–5; Table2 PDF6, Figures5–7 PDF7–10; Figure8 PDF11; Table4/Section3.5 PDF13; conclusions PDF15. Actual local artifact: /private/tmp/cmm-round87-resources-research/lv2022.pdf | supports | Real secondary-dross feed, laboratory abiotic roasting/leaching, source-reported Mg-normalized Al/Na estimates, protocol discrepancies and unsupported product/emission inferences are correctly bounded. |
+| xml | https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9414100/fullTextXML; Complete original JATS cross-check of article identity, methods, tables, figures and supplement declarations. Actual local artifact: /private/tmp/cmm-round87-resources-research/lv2022.xml | context_only | No separate supplementary-material node in this acquired original; PDF/XML belong to the same study, not independent replication. |
+| metadata | https://api.crossref.org/works/10.3390/ma15165686; Exact DOI/title/year and relation/update metadata inspected. Actual local artifact: /private/tmp/cmm-round87-resources-research/lv2022-crossref.json | context_only | Metadata corroborates citation identity; empty relation/update fields do not prove absence of all corrections. |
+| assessment | /private/tmp/cmm-round87-dross-independent/evidence-assessment.json; Retained independent full-primary/16-page graphic and correction-search assessment with source hashes. Actual local artifact: /private/tmp/cmm-round87-dross-independent/evidence-assessment.json | context_only | Exact source discrepancies and inspected access scope recorded; no missing source is represented as read. |
+| notices | /private/tmp/cmm-round87-dross-independent/notice-search.json; Two exact DOI/title correction/conflict queries and first returned results. Actual local artifact: /private/tmp/cmm-round87-dross-independent/notice-search.json | context_only | No separate correction notice surfaced in bounded results. This does not establish global absence. |
+| dedup | /private/tmp/cmm-round87-dross-independent/bounded-dedup.txt; rg --hidden --no-ignore --follow for secondary aluminium/aluminum dross or ma15165686 across maintained records,research,reviews,history. Actual local artifact: /private/tmp/cmm-round87-dross-independent/bounded-dedup.txt | context_only | Current owner/dossier and historical contextual occurrences inspected; no unrestricted global novelty claim. |
+| named | /private/tmp/cmm-round87-dross-independent/named-validation.json; Actual independent named check 2026-10-15T03:57:13.297947Z to 2026-10-15T03:57:18.361595Z; log /private/tmp/cmm-round87-dross-independent/named-validation-terminal.log SHA256 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e. Actual local artifact: /private/tmp/cmm-round87-dross-independent/named-validation.json | supports | One record, zero failures; explicit terminal code and actual log verified. |
+| batch | /private/tmp/cmm-round87-final-gates.json; Actual four coordinator commands 2026-10-15T03:53:37.426856+00:00 to 2026-10-15T03:59:28.557512+00:00; log /private/tmp/cmm-round87-final-gates.log SHA256 a8afdbc30428c1a0e44c20c1ae7de706d1dc20a3549a39917a1b697b5b0faad7. Actual local artifact: /private/tmp/cmm-round87-final-gates.json | supports | Exact base/worktree/commands, terminal exits, log bytes and unchanged owner hash verified; no claim of a separate reviewer batch rerun. |
+
+## Limits And Additional Notes
+
+- Source recipe/graphical inconsistencies and incomplete liquor preparation prevent a unique reproduction protocol.
+- Mg-normalized solid-balance estimates lack an independently closed feed/solution/wash/loss balance or isolated alumina product yield.
+- No quantitative ammonia control, replicate/error-bar basis, or complete gas/environmental balance is supplied. Kinetic fitting does not uniquely establish a molecular mechanism.
+- No supplement is announced in the inspected complete PDF/XML. Bounded correction/conflict searches do not establish global absence.
+- Structural checks do not establish scientific truth; no independent laboratory replication or industrial deployment is claimed.
+- No scientific owner, history or prior review was edited by this reviewer.
+- Source clarification follow-up is justified by retained primary discrepancies, not a manufactured current owner defect.
+- The exact nonempty original PDF and its original page renders were assessed; no failed or derived substitute is mislabeled as original.
+- Initial external unsaved draft lacked required search_scope fields and was rejected before bundle creation; that draft is preserved externally. Explicit bounded scopes added without changing owner, scientific judgment or original evidence bytes.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T040030Z-secondary-aluminium-dross-round87-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of secondary aluminium dross
+started_at: '2026-10-15T03:53:23Z'
+finished_at: '2026-10-15T04:00:30.049303Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored alabandite, not this resource owner/history/dossier.
+    Curator-shared acquisition is disclosed; full original text, all16pages of graphics/tables
+    and source contradictions were independently assessed after native target inspection.
+    No laboratory replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of a distinct post-metal-recovery secondary aluminium
+  dross resource and laboratory abiotic alkaline roasting/leaching. Mixed feed, conflicting
+  recipes and Mg-normalized elemental extraction are retained without product-yield,
+  complete-detoxification, microbial or industrial claims.
+source:
+  git_revision: 9deef8843b7efcf2dd2586c2a13f47b72231e336
+  state: working_tree
+  inputs:
+  - path: data/records/secondary-aluminium-dross.yaml
+    sha256: 7b93f8a63f5a8f39ba2e14b08ee020a50918a7343342aadd92d6f0527c15b4f8
+    role: target
+  - path: history/records/secondary-aluminium-dross/2026-10-15T035130Z-codex-1557d9.yaml
+    sha256: 9c6ebd6f472f2d0641e7b9aa12f0023c34da4f95ae963724297948ad0fd18773
+    role: context
+  - path: research/sources/round87-resources/20261015T035225Z-source-investigation.json
+    sha256: ec0a026846d2130977b84a2983a20a1e85a3e74a3e47886d7dc918fa0497bf54
+    role: context
+  - path: research/sources/round87-resources/20261015T035225Z-source-investigation.md
+    sha256: f918fac04060161568a9661bc12c8c2804e2bcfeaba97a279434d5782a01a658
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Whole exact maintained owner, canonical CREATE and source dossier;
+    complete accepted primary assessed at the stated locators.
+  selection: Assigned canonical target; native inspect completed before judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:secondary-aluminium-dross
+targets:
+- target_id: cmmmech:secondary-aluminium-dross
+  path: data/records/secondary-aluminium-dross.yaml
+  label: Secondary aluminium dross
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/secondary-aluminium-dross.yaml
+    role: maintained scientific record
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/secondary-aluminium-dross.yaml
+    --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual one record checked, zero failures; explicit terminal receipt/log
+    verified.
+  target_ids:
+  - cmmmech:secondary-aluminium-dross
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch gate 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator execution verified; not an independent rerun.
+  target_ids:
+  - cmmmech:secondary-aluminium-dross
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator execution verified; not an independent rerun.
+  target_ids:
+  - cmmmech:secondary-aluminium-dross
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch gate 3
+  command: uv run --locked cmmmech validate-history --base 9deef8843b7efcf2dd2586c2a13f47b72231e336
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator execution verified; not an independent rerun.
+  target_ids:
+  - cmmmech:secondary-aluminium-dross
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator execution verified; not an independent rerun.
+  target_ids:
+  - cmmmech:secondary-aluminium-dross
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/secondary-aluminium-dross.yaml
+  locator: 'Whole frozen input captured by native inspect before judgment. Actual
+    local artifact: /private/tmp/CMMMech-expansion-round87-20261015/data/records/secondary-aluminium-dross.yaml'
+  accessed_at: '2026-10-15T03:59:44.226101Z'
+  support: supports
+  summary: Exact owner and canonical CREATE agree; separate inline event records actual
+    curator and creation scope. No reviewer edits.
+  snapshot_sha256: 7b93f8a63f5a8f39ba2e14b08ee020a50918a7343342aadd92d6f0527c15b4f8
+- evidence_id: history
+  kind: record_content
+  reference: history/records/secondary-aluminium-dross/2026-10-15T035130Z-codex-1557d9.yaml
+  locator: 'Whole frozen input captured by native inspect before judgment. Actual
+    local artifact: /private/tmp/CMMMech-expansion-round87-20261015/history/records/secondary-aluminium-dross/2026-10-15T035130Z-codex-1557d9.yaml'
+  accessed_at: '2026-10-15T03:59:44.226101Z'
+  support: supports
+  summary: Exact owner and canonical CREATE agree; separate inline event records actual
+    curator and creation scope. No reviewer edits.
+  snapshot_sha256: 9c6ebd6f472f2d0641e7b9aa12f0023c34da4f95ae963724297948ad0fd18773
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/ma15165686
+  locator: 'Complete 16-page original read; all Figures 1–11 and Tables 1–4 visually
+    inspected. Methods/Equations 1–2 PDF3–5; Table2 PDF6, Figures5–7 PDF7–10; Figure8
+    PDF11; Table4/Section3.5 PDF13; conclusions PDF15. Actual local artifact: /private/tmp/cmm-round87-resources-research/lv2022.pdf'
+  accessed_at: '2026-10-15T03:59:44.226101Z'
+  support: supports
+  summary: Real secondary-dross feed, laboratory abiotic roasting/leaching, source-reported
+    Mg-normalized Al/Na estimates, protocol discrepancies and unsupported product/emission
+    inferences are correctly bounded.
+  snapshot_sha256: 868d2a28e26beddd8fa5c761f454108f2d325c575b976854fcf528657b20ff93
+- evidence_id: xml
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC9414100/fullTextXML
+  locator: 'Complete original JATS cross-check of article identity, methods, tables,
+    figures and supplement declarations. Actual local artifact: /private/tmp/cmm-round87-resources-research/lv2022.xml'
+  accessed_at: '2026-10-15T03:59:44.226101Z'
+  support: context_only
+  summary: No separate supplementary-material node in this acquired original; PDF/XML
+    belong to the same study, not independent replication.
+  snapshot_sha256: 4b37f6b016fe79e90808e16e63578f62d06539860e0347f33c0306589b6a7ffc
+- evidence_id: metadata
+  kind: database
+  reference: https://api.crossref.org/works/10.3390/ma15165686
+  locator: 'Exact DOI/title/year and relation/update metadata inspected. Actual local
+    artifact: /private/tmp/cmm-round87-resources-research/lv2022-crossref.json'
+  accessed_at: '2026-10-15T03:59:44.226101Z'
+  support: context_only
+  summary: Metadata corroborates citation identity; empty relation/update fields do
+    not prove absence of all corrections.
+  snapshot_sha256: c1993ba00a35eef7fd36fa54e60975a8075286d19e13de19147746b38d908293
+- evidence_id: assessment
+  kind: search
+  reference: /private/tmp/cmm-round87-dross-independent/evidence-assessment.json
+  locator: 'Retained independent full-primary/16-page graphic and correction-search
+    assessment with source hashes. Actual local artifact: /private/tmp/cmm-round87-dross-independent/evidence-assessment.json'
+  accessed_at: '2026-10-15T03:59:44.226101Z'
+  support: context_only
+  summary: Exact source discrepancies and inspected access scope recorded; no missing
+    source is represented as read.
+  snapshot_sha256: aac43e658b50ea24700d37c358cdf8e0239db9de77c6aaa5e5e7aebf6c98d245
+  search_scope: Complete accepted Lv2022 16-page original PDF/XML, original Figures1–11/Tables1–4,
+    all page renders; original metadata and source discrepancies only.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round87-dross-independent/notice-search.json
+  locator: 'Two exact DOI/title correction/conflict queries and first returned results.
+    Actual local artifact: /private/tmp/cmm-round87-dross-independent/notice-search.json'
+  accessed_at: '2026-10-15T03:59:44.226101Z'
+  support: context_only
+  summary: No separate correction notice surfaced in bounded results. This does not
+    establish global absence.
+  snapshot_sha256: 4a4822d9010a1ff2cf6688d6bb0d13747f21a6cc160ed41fea94f205b74cd134
+  search_scope: Two exact DOI/title correction and source-condition conflict searches
+    on2026-10-15; first returned web result sets and acquired Crossref relation/update
+    metadata. No exhaustive absence claim.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round87-dross-independent/bounded-dedup.txt
+  locator: 'rg --hidden --no-ignore --follow for secondary aluminium/aluminum dross
+    or ma15165686 across maintained records,research,reviews,history. Actual local
+    artifact: /private/tmp/cmm-round87-dross-independent/bounded-dedup.txt'
+  accessed_at: '2026-10-15T03:59:44.226101Z'
+  support: context_only
+  summary: Current owner/dossier and historical contextual occurrences inspected;
+    no unrestricted global novelty claim.
+  snapshot_sha256: 2070c97a98cdc584f912109b3978e131932425af85d92cc5c857a09265dfeea4
+  search_scope: Current round87 worktree data/records,research,reviews,history via
+    rg --hidden --no-ignore --follow and exact source DOI/resource text; no assertion
+    of exhaustive coverage beyond these roots.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round87-dross-independent/named-validation.json
+  locator: 'Actual independent named check 2026-10-15T03:57:13.297947Z to 2026-10-15T03:57:18.361595Z;
+    log /private/tmp/cmm-round87-dross-independent/named-validation-terminal.log SHA256
+    6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e. Actual local
+    artifact: /private/tmp/cmm-round87-dross-independent/named-validation.json'
+  accessed_at: '2026-10-15T03:59:44.226101Z'
+  support: supports
+  summary: One record, zero failures; explicit terminal code and actual log verified.
+  snapshot_sha256: a3a6531f1f42b10e5b3170c6404956591b5bc309298c62dcf02e595cbc063303
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round87-final-gates.json
+  locator: 'Actual four coordinator commands 2026-10-15T03:53:37.426856+00:00 to 2026-10-15T03:59:28.557512+00:00;
+    log /private/tmp/cmm-round87-final-gates.log SHA256 a8afdbc30428c1a0e44c20c1ae7de706d1dc20a3549a39917a1b697b5b0faad7.
+    Actual local artifact: /private/tmp/cmm-round87-final-gates.json'
+  accessed_at: '2026-10-15T03:59:44.226101Z'
+  support: supports
+  summary: Exact base/worktree/commands, terminal exits, log bytes and unchanged owner
+    hash verified; no claim of a separate reviewer batch rerun.
+  snapshot_sha256: 44a4c7f881c6e50b617e8d9df7c1abf51c1f149bcdeaba1625be12a62721a962
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Secondary resource and feed form
+  outcome: supported
+  summary: The source-defined residue follows prior metallic-Al recovery from primary
+    dross. Guangxi plant material contains mixed Al metal/oxides/nitride/spinel/salts;
+    Table1 total Al38.23wt% is distinct from its metallic-Al fraction. It is not a
+    mineral species or an interchangeable unnamed smelting slag.
+  target_ids:
+  - cmmmech:secondary-aluminium-dross
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: conditions
+  area: evidence
+  topic: Pretreatment, chemical route and arms
+  outcome: supported
+  summary: 100g dross,30MPa dry pressing,20mm diameter/40mm length,10C/min air roasting
+    held1h,200mesh crushing and caustic leaching are supported. The final1150C/1.3molar/90C/30min/10mL-g
+    recipe is not conflated with Table2 1100C/60min series or Figure8b60C series.
+    No cells or microbial products are used.
+  target_ids:
+  - cmmmech:secondary-aluminium-dross
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: outcomes
+  area: quantity
+  topic: Al and Na balance denominators
+  outcome: supported
+  summary: The90.79%Al and92.03%Na estimates use Mg-normalized clinker/residue XRF
+    compositions, not directly measured solution inventory, original-feed closed mass
+    balance or isolated-product yield. Added sodium reagents preclude treating the
+    Na value as waste-derived recovery.
+  target_ids:
+  - cmmmech:secondary-aluminium-dross
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: uncertainty
+  area: evidence
+  topic: Source discrepancies and controls
+  outcome: supported
+  summary: Table2 versus final recipe, Figure5b/c caption interchange, Figure7 mass/molar
+    wording, XRD scan limits and incomplete equation brackets/caustic recipe remain
+    explicit. No replicate/error-bar basis, untreated-dross leaching control or conserved-Mg
+    validation is invented. NaOH slurry/ammonia observations are descriptive.
+  target_ids:
+  - cmmmech:secondary-aluminium-dross
+  evidence_ids:
+  - owner
+  - primary
+  - xml
+- assessment_id: inference
+  area: scope
+  topic: Kinetics, environment and deployment
+  outcome: supported
+  summary: 9.69kJ/mol and layer-diffusion are model-dependent. Lower solid N/Cl concentrations
+    do not close emissions or total balance. Figure1 alumina endpoint is proposed
+    and downstream desilication/crystal-seed decomposition remains future work. Plant
+    feed origin is not industrial deployment; no microbial or inherited criticality
+    claim is made.
+  target_ids:
+  - cmmmech:secondary-aluminium-dross
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Exact owner, history and completed checks
+  outcome: supported
+  summary: Native inspect precedes judgment; frozen owner/CREATE/dossier hashes and
+    actual GPT-6/codex attribution verified. Accepted primary is a nonempty actual16-page
+    PDF; all source evidence locators bind bytes. Independent named and completed
+    four batch gates passed; owner/history unchanged by reviewer.
+  target_ids:
+  - cmmmech:secondary-aluminium-dross
+  evidence_ids:
+  - owner
+  - history
+  - named
+  - batch
+  - assessment
+findings: []
+actions: []
+limitations:
+- Source recipe/graphical inconsistencies and incomplete liquor preparation prevent
+  a unique reproduction protocol.
+- Mg-normalized solid-balance estimates lack an independently closed feed/solution/wash/loss
+  balance or isolated alumina product yield.
+- No quantitative ammonia control, replicate/error-bar basis, or complete gas/environmental
+  balance is supplied. Kinetic fitting does not uniquely establish a molecular mechanism.
+- No supplement is announced in the inspected complete PDF/XML. Bounded correction/conflict
+  searches do not establish global absence.
+- Structural checks do not establish scientific truth; no independent laboratory replication
+  or industrial deployment is claimed.
+notes:
+- No scientific owner, history or prior review was edited by this reviewer.
+- Source clarification follow-up is justified by retained primary discrepancies, not
+  a manufactured current owner defect.
+- The exact nonempty original PDF and its original page renders were assessed; no
+  failed or derived substitute is mislabeled as original.
+- Initial external unsaved draft lacked required search_scope fields and was rejected
+  before bundle creation; that draft is preserved externally. Explicit bounded scopes
+  added without changing owner, scientific judgment or original evidence bytes.
+```

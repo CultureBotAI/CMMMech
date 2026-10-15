@@ -1,0 +1,343 @@
+schema_version: 1.0.0
+review_id: 20261015T040227Z-alabandite-round87-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of alabandite
+started_at: '2026-10-15T03:52:57.517003Z'
+finished_at: '2026-10-15T04:02:27.126349Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored simonkolleite, not alabandite or its history;
+    alabandite curator is codex /root/round68_iron_sulfides. Shared source acquisitions
+    are disclosed. Native inspect completed before record-level judgment, followed
+    by independent full original text/graphics, authority and taxon checks. No laboratory
+    replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of distinct cubic MnS identity and source-assigned alabandite
+  fraction contents during mixed-ore flotation with freeze-dried bacterial biomass.
+  Phase assignment, causal control, content denominators and the overall null benefit
+  are accurately bounded.
+source:
+  git_revision: 9deef8843b7efcf2dd2586c2a13f47b72231e336
+  state: working_tree
+  inputs:
+  - path: data/records/alabandite.yaml
+    sha256: 085e54b5b6e7e0f58544fde77d4ba0b55f3c6a8b13fccecc8efb6875530dfcee
+    role: target
+  - path: history/records/alabandite/2026-10-15T035058Z-codex-0be089.yaml
+    sha256: 08d53a70aa2b0ce31da216ee09a4591452ed8a8570bc5ee4ebfcf53860eaa5b0
+    role: context
+  - path: research/sources/round87-sulfides/20261015T035104Z-source-investigation.json
+    sha256: b9e337ee4712ea127bc65916e81197c606fa8486ff3266345e5a508fd18b892b
+    role: context
+  - path: research/sources/round87-sulfides/20261015T035104Z-source-investigation.md
+    sha256: a096c22da029bd9e225e831042b0367885423a9bdcefc2bb22f5f184657efc6c
+    role: context
+scope:
+  description: Whole exact maintained owner, canonical CREATE and source dossier,
+    with all claim-bearing original graphics and authoritative identities.
+  selection: Assigned canonical target; native inspection completed before record-level
+    judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:alabandite
+targets:
+- target_id: cmmmech:alabandite
+  path: data/records/alabandite.yaml
+  label: Alabandite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/alabandite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/alabandite.yaml --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed independent command checked one record with zero failures.
+  target_ids:
+  - cmmmech:alabandite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch command 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal coordinator receipt/log independently verified; not a claim
+    of reviewer rerun.
+  target_ids:
+  - cmmmech:alabandite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal coordinator receipt/log independently verified; not a claim
+    of reviewer rerun.
+  target_ids:
+  - cmmmech:alabandite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch command 3
+  command: uv run --locked cmmmech validate-history --base 9deef8843b7efcf2dd2586c2a13f47b72231e336
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal coordinator receipt/log independently verified; not a claim
+    of reviewer rerun.
+  target_ids:
+  - cmmmech:alabandite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal coordinator receipt/log independently verified; not a claim
+    of reviewer rerun.
+  target_ids:
+  - cmmmech:alabandite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/alabandite.yaml
+  locator: 'Whole exact maintained owner after native inspect. Artifact: /private/tmp/CMMMech-expansion-round87-20261015/data/records/alabandite.yaml'
+  accessed_at: '2026-10-15T03:59:03.519919Z'
+  support: supports
+  summary: All identity, mechanism, conditions, evidence, limitations and references
+    checked.
+  snapshot_sha256: 085e54b5b6e7e0f58544fde77d4ba0b55f3c6a8b13fccecc8efb6875530dfcee
+- evidence_id: history
+  kind: record_content
+  reference: history/records/alabandite/2026-10-15T035058Z-codex-0be089.yaml
+  locator: 'Canonical CREATE and attached history_refs, distinct inline CREATE. Artifact:
+    /private/tmp/CMMMech-expansion-round87-20261015/history/records/alabandite/2026-10-15T035058Z-codex-0be089.yaml'
+  accessed_at: '2026-10-15T03:59:03.519919Z'
+  support: supports
+  summary: Actor codex/GPT-6, target and actual new-record scope agree; no reviewer
+    edits.
+  snapshot_sha256: 08d53a70aa2b0ce31da216ee09a4591452ed8a8570bc5ee4ebfcf53860eaa5b0
+- evidence_id: main
+  kind: primary_source
+  reference: https://www.journalssystem.com/ppmp/pdf-79310-15375?filename=Bio-beneficiation-of-mult.pdf
+  locator: 'Complete eleven-page official PDF read and visually inspected: printed291–299,
+    blank page10 and duplicate landscape Table4 page11. All Tables1–6 and Figures1–2
+    checked; full-size Tables2/4/6 independently inspected. Artifact: /private/tmp/cmm-round87-sulfides-research/langwaldt2007.pdf'
+  accessed_at: '2026-10-15T03:59:03.519919Z'
+  support: supports
+  summary: Primary supports natural mixed-ore source assignment and fraction compositions
+    in BIO11/BIO15. Table6 BIO11 feed1.3%,CC3 0.7%;BIO15 feed1.1%,CC3 2.4%. Table4
+    1.79% assigned mineral with Mn58.47%,S36.43%,Fe3.24%. Content is not recovery;
+    chemical-reference Mn53% is not a bacterial result. Overall bioflotation null
+    is retained.
+  snapshot_sha256: 55a8c03cb5999c2d7e4c42bac13f8d9d8c7d007b829a86cd3989949e756d9769
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'September2026 exact Alabandite row PDF5 and status definitions PDF1–2
+    independently inspected. Artifact: /private/tmp/cmm-round87-sulfides-research/ima-2026-09.pdf'
+  accessed_at: '2026-10-15T03:59:03.519919Z'
+  support: context_only
+  summary: MnS, grandfathered G,year1832. No commodity or criticality inheritance.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/alabandite.pdf
+  locator: 'Complete one-page entry visually inspected. Artifact: /private/tmp/cmm-round87-sulfides-research/alabandite-handbook.pdf'
+  accessed_at: '2026-10-15T03:59:03.519919Z'
+  support: context_only
+  summary: Cubic MnS distinct from rambergite; ore identity remains source-assigned
+    because the experiment lacks polymorph-specific diffraction.
+  snapshot_sha256: efd2083ec5fdaa85cbd038e306f19d403e63458473f8292b0ccbd706742fd554
+- evidence_id: taxon
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1281
+  locator: 'Current retained authority XML independently parsed, species1281/name/rank
+    checked; live browser also opened. Artifact: /private/tmp/cmm-round87-sulfides-research/ncbi1281.xml'
+  accessed_at: '2026-10-15T03:59:03.519919Z'
+  support: context_only
+  summary: Staphylococcus carnosus species only; no type-strain transfer to unaccessioned
+    freeze-dried study biomass.
+  snapshot_sha256: bc90f8ffdaf17a67f4e052ec3ccb65a1405e75b441d62f3df6f31b51f6d8d735
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round87-minerals-research/alabandite-review-dedup.json
+  locator: 'Actual hidden/ignored-inclusive followed-symlink search commands and results.
+    Artifact: /private/tmp/cmm-round87-minerals-research/alabandite-review-dedup.json'
+  accessed_at: '2026-10-15T03:59:03.519919Z'
+  support: context_only
+  summary: Distinct owner; earlier graphite context shares the same experiment and
+    is not independent replication.
+  snapshot_sha256: 6d0274794f44610229d6af4ec85bdb45277d8cf16dae4aaf65d609fa729f1e2f
+  search_scope: Current worktree and original main records/research/reviews/history
+    plus assigned raw roots, hidden/ignored and followed links; full primary PDF assessed
+    independently.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round87-minerals-research/alabandite-review-search.json
+  locator: 'Actual exact-title/correction/organism queries and official publisher
+    scope recorded. Artifact: /private/tmp/cmm-round87-minerals-research/alabandite-review-search.json'
+  accessed_at: '2026-10-15T03:59:03.519919Z'
+  support: context_only
+  summary: No matching correction surfaced within returned sets; not an exhaustive
+    absence claim. Publisher metadata spelling/date discrepancy does not change primary
+    claims.
+  snapshot_sha256: 473eebb06551d53e7d9d72be58e92484a109ff986db9afdd198e3c9f8339326b
+  search_scope: First returned web search sets on2026-10-15; official publisher article/issue
+    metadata and current taxon browser. Different-organism papers not treated as equivalent
+    replications.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round87-minerals-research/alabandite-named-validation.log
+  locator: 'Independent command terminal exit0 observed. Artifact: /private/tmp/cmm-round87-minerals-research/alabandite-named-validation.log'
+  accessed_at: '2026-10-15T03:59:03.519919Z'
+  support: supports
+  summary: Checked1record;0failed.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round87-final-gates.json
+  locator: 'All FOUR actual commands, 2026-10-15T03:53:37.426856+00:00 to 2026-10-15T03:59:28.557512+00:00;
+    log /private/tmp/cmm-round87-final-gates.log SHA256 a8afdbc30428c1a0e44c20c1ae7de706d1dc20a3549a39917a1b697b5b0faad7.
+    Artifact: /private/tmp/cmm-round87-final-gates.json'
+  accessed_at: '2026-10-15T04:02:27.126349Z'
+  support: supports
+  summary: Actual terminal command exits, trusted base/worktree, log and unchanged
+    owner input hash independently verified. Reviewer did not rerun coordinator batch.
+  snapshot_sha256: 44a4c7f881c6e50b617e8d9df7c1abf51c1f149bcdeaba1625be12a62721a962
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species versus ore and polymorph assignment
+  outcome: supported
+  summary: IMA and Handbook establish cubic alabandite MnS; the experiment reports
+    a mixed Talvivaara black-shale phase assigned by SEM/EDAX/mineral liberation and
+    microprobe, with no direct phase-specific diffraction. Record preserves source
+    assignment and iron-bearing composition instead of claiming pure ideal MnS. No
+    criticality asserted.
+  target_ids:
+  - cmmmech:alabandite
+  evidence_ids:
+  - owner
+  - main
+  - ima
+  - handbook
+- assessment_id: conditions
+  area: evidence
+  topic: Biomass state and assay arms
+  outcome: supported
+  summary: 'Freeze-dried Staphylococcus carnosus does not establish viability or metabolism.
+    One-kilogram ore subsamples, grinding45min,waterglass500g/t,d80 78micrometres,4dm3cell,air3dm3/min,1800rpm
+    and unspecified25%basis match Methods. Conditioning pH6.4–6.6 is separated from
+    Table2 operating pH: BIO11 rougher4/cleaner5.6–7.7 versus BIO15 10.5/9.0–9.8.
+    Biomass3000vs1600g/t and KAX1300vs800g/t differ.'
+  target_ids:
+  - cmmmech:alabandite
+  evidence_ids:
+  - owner
+  - main
+  - taxon
+- assessment_id: quantities
+  area: quantity
+  topic: Fraction content versus recovery
+  outcome: supported
+  summary: Table6 values are mineral percentages within separate products and feeds.
+    They provide neither paired alabandite mass balance nor isolated manganese product
+    yield. Table4 element percentages apply to source-assigned mineral, not total
+    ore. Zero cells lack limits of detection. Table5 BIO20 and nickel figures cannot
+    be assigned to BIO15 alabandite.
+  target_ids:
+  - cmmmech:alabandite
+  evidence_ids:
+  - owner
+  - main
+- assessment_id: causality
+  area: evidence
+  topic: Unmatched controls and explicit null outcome
+  outcome: supported
+  summary: Reference tests without bacteria assess overall flotation but Table6 has
+    no otherwise matched bacteria-free alabandite fraction series; changed pH/reagent
+    doses preclude unique microbial causation. No pure-mineral adhesion/surface test.
+    Overall recovery/grade improvement was not substantial, xanthate remained necessary;
+    conventional chemical Mn53% cannot be transferred to biomass.
+  target_ids:
+  - cmmmech:alabandite
+  evidence_ids:
+  - owner
+  - main
+- assessment_id: scope
+  area: scope
+  topic: Laboratory and shared study lineage
+  outcome: supported
+  summary: Pilot biomass cultivation and large ore shipment do not turn1kg flotation
+    assays into industrial deployment. The same2007paper already used in graphite
+    context is explicitly one study; no new independent replication is claimed. No
+    recovered Mn product or strain-accession assertion.
+  target_ids:
+  - cmmmech:alabandite
+  evidence_ids:
+  - owner
+  - main
+  - dedup
+- assessment_id: provenance
+  area: provenance
+  topic: Exact state and validation
+  outcome: supported
+  summary: Native inspect precedes judgment; exact owner, canonical CREATE and dossier
+    hashes are bound. Current primary/authority/database rows point to nonempty local
+    bytes and verified hashes. Independent named validation and all FOUR actual completed
+    batch gates passed; no owner/history edit by reviewer.
+  target_ids:
+  - cmmmech:alabandite
+  evidence_ids:
+  - owner
+  - history
+  - named
+  - dedup
+  - notices
+  - batch
+findings: []
+actions: []
+limitations:
+- Source-assigned alabandite within mixed ore lacks a direct polymorph test or pure-mineral
+  experiment.
+- Unmatched pH and reagent/biomass doses, no replicate uncertainty, missing viability/temperature/duration
+  and unspecified slurry-percent basis constrain causality.
+- Fraction content is not mineral recovery; the accepted study found no substantial
+  overall bioflotation benefit.
+- No supplement is linked in the inspected complete article/publisher page; no exhaustive
+  archive inventory is claimed.
+- Bounded notice/counterevidence search is not global completeness; no laboratory
+  replication or new instrument analysis.
+notes:
+- No owner/history edits or disposition changes by this reviewer.
+- Start is the actual initial inspection-output creation timestamp; inspect terminal
+  exit0 preceded record-level judgment. The initial unsaved review draft used target
+  kind record, accepted by inspect but rejected by the saver enum. Retained external
+  diagnostic and draft; corrected to maintained and recaptured identical source hashes
+  before the sole successful save. Scientific assessment and owner/history bytes unchanged.

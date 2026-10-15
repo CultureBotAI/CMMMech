@@ -1,0 +1,126 @@
+{
+  "at": "2026-10-15T03:49:40.903464+00:00",
+  "passed": true,
+  "cases": [
+    {
+      "name": "clean_current_manifest",
+      "expected_accept": true,
+      "passed": true,
+      "resolved_occurrences": 0
+    },
+    {
+      "name": "exact_resolution",
+      "expected_accept": true,
+      "passed": true,
+      "resolved_occurrences": 1
+    },
+    {
+      "name": "transitive_resolution",
+      "expected_accept": true,
+      "passed": true,
+      "resolved_occurrences": 1
+    },
+    {
+      "name": "missing_disposition",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Earlier open finding omitted by selected final review"
+    },
+    {
+      "name": "unresolved_final",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Selected review has an unsupported or unresolved finding disposition"
+    },
+    {
+      "name": "schema_valid_rejected",
+      "expected_accept": true,
+      "passed": true,
+      "resolved_occurrences": 1
+    },
+    {
+      "name": "invalid_dismissed",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Selected review has an unsupported or unresolved finding disposition"
+    },
+    {
+      "name": "accepted_risk_requires_explicit_policy",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Selected review has an unsupported or unresolved finding disposition"
+    },
+    {
+      "name": "changed_stable_key",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Prior finding identity/key differs"
+    },
+    {
+      "name": "changed_occurrence_id",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Prior finding identity/key differs"
+    },
+    {
+      "name": "foreign_repository",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Unexpected external occurrence requires explicit assessment"
+    },
+    {
+      "name": "changed_target",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Prior target differs"
+    },
+    {
+      "name": "cyclic_or_unbound_chain",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Successor does not bind exact prior native bytes"
+    },
+    {
+      "name": "missing_predecessor",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Prior native occurrence missing"
+    },
+    {
+      "name": "duplicate_issue_key",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Duplicate selected stable issue key"
+    },
+    {
+      "name": "wrong_predecessor_hash",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Successor does not bind exact prior native bytes"
+    },
+    {
+      "name": "missing_predecessor_hash",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Successor does not bind exact prior native bytes"
+    },
+    {
+      "name": "missing_markdown",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Prior Markdown counterpart missing"
+    },
+    {
+      "name": "selected_final_outside_commit",
+      "expected_accept": false,
+      "passed": true,
+      "rejection": "Selected review not in committed current package"
+    }
+  ],
+  "case_count": 19,
+  "source": "/private/tmp/cmm_round87_peer_checks.py",
+  "source_sha256": "5d9fc844507d96693d5b3b8e9092b698248ea06cb339de2076e37160fed10fe1",
+  "fixture_source": "/private/tmp/cmm-round87-lineage-fixtures-corrected.py",
+  "fixture_sha256": "c1da9615031f872ccf9fc64f086423706c99793c9c0333cea1248cfd0f3edc0d",
+  "scope": "Actual verify_native_lineage AST extracted without top-level helper execution; temporary synthetic files only. Does not exercise hosted APIs or imply publication acceptance."
+}

@@ -1,0 +1,51 @@
+{
+  "timestamp": "2026-10-15T04:10:52.498271+00:00",
+  "passed": true,
+  "cases": [
+    {
+      "name": "actual-valid-native-and-unrelated-dismissed",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "unrelated-comment-addition",
+      "expected": true,
+      "actual": true,
+      "passed": true
+    },
+    {
+      "name": "invalid-native-dismissed",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "name": "missing-native-whitelist",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "name": "wrong-native-status",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    },
+    {
+      "name": "wrong-target-function",
+      "expected": false,
+      "actual": false,
+      "passed": true
+    }
+  ],
+  "successor": {
+    "path": "/private/tmp/cmm-round87-final-package-audit-scoped.py",
+    "sha256": "08a4256861b80729264e593e5e0c90d0874b1c5455874b97d0fa20a15c31ea6c"
+  },
+  "module": {
+    "path": "/private/tmp/cmm_round87_peer_checks.py",
+    "sha256": "5d9fc844507d96693d5b3b8e9092b698248ea06cb339de2076e37160fed10fe1"
+  },
+  "scope": "Six meaningful fixtures execute only the actual successor pure AST predicate; no top-level audit, network, Git or package writes."
+}
