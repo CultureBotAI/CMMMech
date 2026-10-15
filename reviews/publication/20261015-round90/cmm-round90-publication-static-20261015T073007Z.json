@@ -1,0 +1,25 @@
+{
+  "recorded_at": "2026-10-15T07:30:07.714433+00:00",
+  "scope": "Static preparation review only, no helper execution or Git/GitHub mutation. Four current native reviews are not alleged scientifically defective.",
+  "source": "/private/tmp/cmm-round90-publication-audit.py",
+  "sha256": "ea40dd67811f3275e3b11f0b533227f8d3bbfddc77b3ceaec635e1bc4723e5ba",
+  "snapshot": "/private/tmp/cmm-round90-publication-static-20261015T073007Z.py",
+  "verdict": "needs_scoped_guard_completion",
+  "observations": [
+    {
+      "id": "S1",
+      "severity": "minor",
+      "description": "Selected native review checks owner bytes as a source input but does not require owner ID/path in review targets and owner ID in reviewed_target_ids. Input-only context could be mistaken for direct acceptance.",
+      "acceptance": "Require exact target ID/path and reviewed scope ID for each selected row; bind selected review SHA and Markdown identity against report if reported."
+    },
+    {
+      "id": "S2",
+      "severity": "informational",
+      "description": "Exact-head GitHub check name/app/result is fetched, but strict check-run object and underlying workflow-run/job identity are not retained in the receipt.",
+      "acceptance": "Retain inspected check-run identity and verify workflow run path/event/head/job where current hosted verification scope claims it."
+    }
+  ],
+  "limitations": [
+    "No current owner defect inferred. Runtime preflight, hosted status and final package remains separate."
+  ]
+}

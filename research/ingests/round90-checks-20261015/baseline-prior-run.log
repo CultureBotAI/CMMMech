@@ -1,0 +1,87 @@
+$ ['git', '-C', '/private/tmp/CMMMech-expansion-round89-20261015', 'rev-parse', '1b80bc501ff4de7fa052dcb3151a49201d1909e6^{tree}']
+fa1c457b5e2e602dea36a1de1a234db68237f6da
+
+$ ['git', '-C', '/private/tmp/CMMMech-expansion-round89-20261015', 'show-ref', '--verify', '--quiet', 'refs/heads/curate/cmm-expansion-round89-20261015']
+
+$ ['git', '-C', '/private/tmp/CMMMech-expansion-round89-20261015', 'ls-remote', '--exit-code', 'https://github.com/CultureBotAI/CMMMech.git', 'refs/heads/curate/cmm-expansion-round89-20261015']
+
+$ ['git', 'clone', '--single-branch', '--branch', 'main', '--no-tags', 'https://github.com/CultureBotAI/CMMMech.git', '/private/tmp/CMMMech-round89-postmerge-published']
+Cloning into '/private/tmp/CMMMech-round89-postmerge-published'...
+Updating files:  26% (1242/4749)Updating files:  27% (1283/4749)Updating files:  28% (1330/4749)Updating files:  29% (1378/4749)Updating files:  30% (1425/4749)Updating files:  31% (1473/4749)Updating files:  32% (1520/4749)Updating files:  33% (1568/4749)Updating files:  34% (1615/4749)Updating files:  35% (1663/4749)Updating files:  36% (1710/4749)Updating files:  37% (1758/4749)Updating files:  38% (1805/4749)Updating files:  39% (1853/4749)Updating files:  40% (1900/4749)Updating files:  41% (1948/4749)Updating files:  42% (1995/4749)Updating files:  43% (2043/4749)Updating files:  44% (2090/4749)Updating files:  45% (2138/4749)Updating files:  46% (2185/4749)Updating files:  47% (2233/4749)Updating files:  48% (2280/4749)Updating files:  49% (2328/4749)Updating files:  50% (2375/4749)Updating files:  51% (2422/4749)Updating files:  51% (2435/4749)Updating files:  52% (2470/4749)Updating files:  53% (2517/4749)Updating files:  54% (2565/4749)Updating files:  55% (2612/4749)Updating files:  56% (2660/4749)Updating files:  57% (2707/4749)Updating files:  58% (2755/4749)Updating files:  59% (2802/4749)Updating files:  60% (2850/4749)Updating files:  61% (2897/4749)Updating files:  62% (2945/4749)Updating files:  63% (2992/4749)Updating files:  64% (3040/4749)Updating files:  65% (3087/4749)Updating files:  66% (3135/4749)Updating files:  67% (3182/4749)Updating files:  68% (3230/4749)Updating files:  69% (3277/4749)Updating files:  70% (3325/4749)Updating files:  71% (3372/4749)Updating files:  72% (3420/4749)Updating files:  73% (3467/4749)Updating files:  74% (3515/4749)Updating files:  75% (3562/4749)Updating files:  76% (3610/4749)Updating files:  77% (3657/4749)Updating files:  78% (3705/4749)Updating files:  79% (3752/4749)Updating files:  80% (3800/4749)Updating files:  81% (3847/4749)Updating files:  82% (3895/4749)Updating files:  82% (3899/4749)Updating files:  83% (3942/4749)Updating files:  84% (3990/4749)Updating files:  85% (4037/4749)Updating files:  86% (4085/4749)Updating files:  87% (4132/4749)Updating files:  88% (4180/4749)Updating files:  89% (4227/4749)Updating files:  90% (4275/4749)Updating files:  91% (4322/4749)Updating files:  92% (4370/4749)Updating files:  93% (4417/4749)Updating files:  94% (4465/4749)Updating files:  95% (4512/4749)Updating files:  96% (4560/4749)Updating files:  97% (4607/4749)Updating files:  98% (4655/4749)Updating files:  99% (4702/4749)Updating files: 100% (4749/4749)Updating files: 100% (4749/4749), done.
+
+$ ['git', '-C', '/private/tmp/CMMMech-round89-postmerge-published', 'config', '--get-all', 'remote.origin.fetch']
++refs/heads/main:refs/remotes/origin/main
+
+$ ['git', '-C', '/private/tmp/CMMMech-round89-postmerge-published', 'fetch', 'origin', '--tags']
+From https://github.com/CultureBotAI/CMMMech
+ * [new tag]         review-base/cmm-source-survey-20261009 -> review-base/cmm-source-survey-20261009
+
+$ ['git', '-C', '/private/tmp/CMMMech-round89-postmerge-published', 'rev-parse', 'refs/tags/review-base/cmm-source-survey-20261009']
+fc4040c3abcd28f0a9cc52467e308100144ad1fd
+
+$ ['git', '-C', '/private/tmp/CMMMech-round89-postmerge-published', 'rev-parse', 'refs/tags/review-base/cmm-source-survey-20261009^{commit}']
+c0adc2c0763e1515ed07dc712b024974d98fb342
+
+$ ['git', '-C', '/private/tmp/CMMMech-round89-postmerge-published', 'ls-remote', 'origin', 'refs/tags/review-base/cmm-source-survey-20261009', 'refs/tags/review-base/cmm-source-survey-20261009^{}']
+fc4040c3abcd28f0a9cc52467e308100144ad1fd	refs/tags/review-base/cmm-source-survey-20261009
+c0adc2c0763e1515ed07dc712b024974d98fb342	refs/tags/review-base/cmm-source-survey-20261009^{}
+
+$ ['git', '-C', '/private/tmp/CMMMech-round89-postmerge-published', 'rev-parse', 'HEAD']
+2d9fe2b6aa62fed3385111929dee3c4ea1f1b2a1
+
+$ ['git', '-C', '/private/tmp/CMMMech-round89-postmerge-published', 'rev-parse', 'HEAD^']
+b797f1be3d9d7b45444e0e3f54f3845d8aeeb1ae
+
+$ ['git', '-C', '/private/tmp/CMMMech-round89-postmerge-published', 'rev-list', '--parents', '-n', '1', 'HEAD']
+2d9fe2b6aa62fed3385111929dee3c4ea1f1b2a1 b797f1be3d9d7b45444e0e3f54f3845d8aeeb1ae
+
+$ ['git', '-C', '/private/tmp/CMMMech-round89-postmerge-published', 'rev-parse', 'HEAD^{tree}']
+fa1c457b5e2e602dea36a1de1a234db68237f6da
+
+$ ['uv', 'sync', '--quiet', '--locked', '--extra', 'dev', '--offline']
+
+$ ['just', 'check']
+uv run --locked --extra dev python scripts/check.py
+All checks passed!
+........................................................................ [ 22%]
+........................................................................ [ 45%]
+........................................................................ [ 67%]
+.............................................................sss........ [ 90%]
+................................                                         [100%]
+317 passed, 3 skipped in 559.46s (0:09:19)
+Checked 426 record(s); 0 failed.
+Checked 488 history record(s); 0 error(s).
+
+$ ['uv', 'run', '--locked', 'cmmmech', 'validate', '--require-records']
+Checked 426 record(s); 0 failed.
+
+$ ['uv', 'run', '--locked', 'cmmmech', 'validate-history', '--base', 'b797f1be3d9d7b45444e0e3f54f3845d8aeeb1ae']
+Checked 488 history record(s); 0 error(s).
+
+$ ['just', 'review-check', '--base', 'b797f1be3d9d7b45444e0e3f54f3845d8aeeb1ae', '--require-reviews']
+uv run python scripts/record_review.py check "$@"
+topClass is deprecated - use top_class
+{
+  "repository": "CultureBotAI/CMMMech",
+  "valid_reviews": 505,
+  "coverage": "declared_scopes_only"
+}
+
+$ ['/private/tmp/CMMMech-round89-postmerge-published/.venv/bin/python', '/private/tmp/cmm-round89-isolated-coverage.py', '--clone', '/private/tmp/CMMMech-round89-postmerge-published', '--output', '/private/tmp/cmm-round89-postmerge-published-coverage.json']
+{
+  "recorded_at": "2026-10-15T07:05:55.324451+00:00",
+  "root": "/private/tmp/CMMMech-round89-postmerge-published",
+  "record_count": 426,
+  "history_count": 488,
+  "structured_review_count": 505,
+  "review_base_count": 90,
+  "covered_records": 426,
+  "scope": "Hidden/ignored-inclusive filesystem enumeration follows relevant symlinks with cycle prevention. Current record ID, target path, reviewed target scope and exact SHA256 must match completed positive scientific reviews; context-only successors cannot substitute. This supplements the canonical review checker.",
+  "passed": true
+}
+
+$ ['git', '-C', '/private/tmp/CMMMech-round89-postmerge-published', 'status', '--porcelain=v1', '--untracked-files=all']
+
+$ ['git', '-C', '/private/tmp/CMMMech-round89-postmerge-published', 'rev-parse', 'HEAD^{tree}']
+fa1c457b5e2e602dea36a1de1a234db68237f6da
+

@@ -1,0 +1,78 @@
+{
+  "started_at": "2026-10-15T07:23:10.091730+00:00",
+  "finished_at": "2026-10-15T07:23:10.110396+00:00",
+  "reviewer": "codex /root/round68_new_frontier",
+  "authorship": "Authored coal-gasification-slag; this is an independent static operational review of root-authored helpers, not scientific acceptance of that record.",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "scope": "Read complete five current helper sources and compare against round89 predecessors. Parse AST only. No top-level helper, clone, mutation, GitHub operation or test-suite execution.",
+  "files": [
+    {
+      "path": "/private/tmp/cmm-round90-isolated-verification.py",
+      "sha256": "2e748de7b32d3a4e5fa2eba698636c5383ad058bbe12cddb45a6c808cd00b20e",
+      "predecessor": "/private/tmp/cmm-round89-isolated-verification.py",
+      "predecessor_sha256": "a70d9c47ff040b53d9d8be277101128a25d6ee2bfc26470dfe2ef133c20f17d8",
+      "literal_substitution_only": false,
+      "additional_diff": "--- normalized89\n+++ actual90\n@@ -99,7 +99,8 @@\n  require(git(clone,'rev-parse','HEAD^{tree}')==args.expected_tree,'Fresh squash/main tree differs from exact reviewed topic tree.')\n  no_topic()\n  run(['uv','sync','--quiet','--locked','--extra','dev','--offline'],cwd=clone)\n- if args.mode=='postmerge':run(['just','check'],cwd=clone)\n+ # The exact-tree full suite passed before publication. Fresh checks here target\n+ # record/history/review provenance after squash and branch deletion.\n  run(['uv','run','--locked','cmmmech','validate','--require-records'],cwd=clone)\n  run(['uv','run','--locked','cmmmech','validate-history','--base',BASE],cwd=clone)\n  run(['just','review-check','--base',BASE,'--require-reviews'],cwd=clone)\n"
+    },
+    {
+      "path": "/private/tmp/cmm-round90-isolated-coverage.py",
+      "sha256": "5e0ab9f34019a2e773aaa23d4ecde6d6a16cbe79c11bcba68e72593951823c2c",
+      "predecessor": "/private/tmp/cmm-round89-isolated-coverage.py",
+      "predecessor_sha256": "f48d131527092acdb21fcdff6b142766d2709ee15e6cc47b6df7f95781b3f099",
+      "literal_substitution_only": true,
+      "additional_diff": ""
+    },
+    {
+      "path": "/private/tmp/cmm-round90-final-gates.py",
+      "sha256": "150f2a5f8d188c448ada2609eb926616cac37947b2398a7c136b2b9fd62be025",
+      "predecessor": "/private/tmp/cmm-round89-final-gates.py",
+      "predecessor_sha256": "3b46435c36aee8a739517b7d4b2cdd5a5e306b395e19aff5c9c5dc5831b2b1d3",
+      "literal_substitution_only": true,
+      "additional_diff": ""
+    },
+    {
+      "path": "/private/tmp/cmm-round90-review-check-final.py",
+      "sha256": "0d7bb44c43b1a1d0e20ad56e60dbdd3306a28ca32bf59ab27139acf5347b005f",
+      "predecessor": "/private/tmp/cmm-round89-review-check-final.py",
+      "predecessor_sha256": "18271658301d3760f69eaeeafa51baa773dd634fde30f89d2769340af52d322b",
+      "literal_substitution_only": true,
+      "additional_diff": ""
+    },
+    {
+      "path": "/private/tmp/cmm-round90-sync-main.py",
+      "sha256": "748bb65cd07b7e7a4a3a92f8a2e82c2383d99164d3393c9e83d20c60cee50040",
+      "predecessor": "/private/tmp/cmm-round89-sync-main.py",
+      "predecessor_sha256": "e6865de7634cfcd1d86808b06799a55b4bcc52e2de0c7d245f3c9b63e1b29b28",
+      "literal_substitution_only": false,
+      "additional_diff": "--- normalized89\n+++ actual90\n@@ -6,7 +6,10 @@\n assert cleanup['local_branch_absent'] and cleanup['remote_branch_absent'] and cleanup['tree']==c['tree'] and cleanup['head']==c['head']\n assert post['exit_code']==0 and post['mode']=='postmerge' and post['merge_commit']==merge and post['trusted_base']==c['base'] and post['expected_tree']==c['tree'] and post['topic_head']==c['head']\n assert sha(post['log'])==post['log_sha256'] and all(x['exit_code'] in x['allowed_exit_codes'] for x in post['commands'])\n-assert any(x['command']==['just','check'] and x['exit_code']==0 for x in post['commands'])\n+for required in [['uv','run','--locked','cmmmech','validate','--require-records'],['uv','run','--locked','cmmmech','validate-history','--base',c['base']],['just','review-check','--base',c['base'],'--require-reviews']]:\n+ assert any(x['command']==required and x['exit_code']==0 for x in post['commands'])\n+gates=json.loads((p/'cmm-round90-final-gates.json').read_text());assert gates['exit_code']==0 and gates['inputs_unchanged'] and sha(gates['log'])==gates['log_sha256']\n+assert any(x['command']==['just','check'] and x['exit_code']==0 for x in gates['commands'])\n assert post['counts']==json.loads((p/'cmm-round90-helper-config.json').read_text())['counts']\n a=snapshot(main,False);b=snapshot(skill,True);assert a==before['snapshots']['main'] and b==before['snapshots']['skill'];assert lib['retained_tag']()==before['retained_tag']\n assert a['branch']=='main' and a['head']==c['base'] and not a['status']\n"
+    }
+  ],
+  "config": {
+    "path": "/private/tmp/cmm-round90-helper-config.json",
+    "sha256": "92e79e900212b3a78a6d77cc1eaddbc67286a985cda37fd94f79025706e20e2b",
+    "counts": {
+      "record_count": 430,
+      "history_count": 492,
+      "structured_review_count": 509,
+      "review_base_count": 91,
+      "covered_records": 430
+    },
+    "status": "provisional forecast, not measured final census"
+  },
+  "findings": [],
+  "verified": [
+    "Three checking helpers differ only by specified round/base substitutions.",
+    "Fresh verification keeps single-main clone, absent topic object, immutable annotated tag, exact synthetic/merged tree and sole trusted parent checks, strict record/history/native review checks and exact current hash coverage.",
+    "Only additional verification change removes repeated postmerge full suite; source checkout operations remain read-only.",
+    "Sync retains snapshot equality, ignored/nontracked collision checks, immutable tag, exact merged tree/sole parent, fast-forward-only update and post-update preservation checks.",
+    "Local full suite remains required by final-gates and new sync guard; full command status and log digest checked."
+  ],
+  "limitations": [
+    "Static assurance only; actual final package, committed identity, CI, queue, cleanup and postmerge receipts remain runtime prerequisites.",
+    "The new sync local-gate check verifies success and log integrity but does not itself compare gate base/worktree or record input hashes to the reviewed commit. Final package/commit audit must establish that provenance; this review does not claim exact-tree full-suite binding from sync alone.",
+    "Coverage helper supplements canonical review validation; its positive-review hash matching is not a replacement for finding-lineage validation.",
+    "Count configuration is provisional and must be rebound to actual final census.",
+    "Source comparison and AST parsing do not prove behavior at runtime."
+  ]
+}

@@ -1,0 +1,45 @@
+{
+  "started_at": "2026-10-15T07:30:56.916170+00:00",
+  "finished_at": "2026-10-15T07:30:56.916185+00:00",
+  "reviewer": "codex /root/round68_new_frontier",
+  "scientific_review": false,
+  "verdict": "needs_curation",
+  "passed": false,
+  "source": "/private/tmp/cmm-round90-publication-audit.py",
+  "sha256": "ea40dd67811f3275e3b11f0b533227f8d3bbfddc77b3ceaec635e1bc4723e5ba",
+  "snapshot": "/private/tmp/cmm-round90-publication-static-20261015T073007Z.py",
+  "previous_observation": {
+    "path": "/private/tmp/cmm-round90-publication-static-20261015T073007Z.json",
+    "sha256": "6eea79c6ad1db030a6c959838d97a6856fb5f94a84f58db6dc9d46943c5a8e13"
+  },
+  "findings": [
+    {
+      "finding_id": "OP1",
+      "issue_key": "CMMMech.round90.publication-review-target-ci-binding",
+      "severity": "minor",
+      "status": "open",
+      "description": "Two bounded assurance gaps in compact publication helper before use: direct scientific target/scope identity is not checked, and exact strict workflow/run/job identity is not verified and retained. Existing record science is not alleged defective.",
+      "occurrences": [
+        {
+          "line_start": 26,
+          "line_end": 32,
+          "description": "Matching owner bytes in source.inputs can be context only; selected review must directly target and review this owner."
+        },
+        {
+          "line_start": 47,
+          "line_end": 53,
+          "description": "Strict check name/app/head/success checked but check-run object is discarded and underlying workflow identity/job not bound."
+        }
+      ],
+      "acceptance_checks": [
+        "Require row owner ID in scope.reviewed_target_ids and exact owner target_id/path in targets; verify selected review and Markdown SHA against report where recorded.",
+        "Resolve successful strict check-run to actual GitHub Actions workflow run and job; verify exact head, pull_request event, maintained validate-strict workflow path/name and successful job identity, retaining API evidence.",
+        "Reinspect exact corrected helper and retain immutable predecessor/successor provenance; actual hosted runtime acceptance still awaits successful committed preflight and required CI."
+      ]
+    }
+  ],
+  "notes": [
+    "Initial observation marked CI retention informational; this expanded operational finding assigns minor severity to the combined assurance contract per coordinator scope. Original observation remains immutable.",
+    "No execution of the helper, no target record change and no Git/GitHub mutation."
+  ]
+}

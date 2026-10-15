@@ -8,13 +8,17 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 426 material records.
+The catalogue currently contains 430 material records.
 
-The [latest curation report](research/ingests/round89-frontier-20261015.md) links
+The [latest curation report](research/ingests/round90-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Coal gasification slag](data/records/coal-gasification-slag.yaml) | Abiotic leaching and preparation of a mixed flocculant | Parallel acid treatments and gravimetric losses; no element-specific recovery yield |
+| [Crandallite](data/records/crandallite.yaml) | Abiotic synthesis and thermal dehydroxylation | Mixed phases; biological assays of a different phosphorite fraction are excluded |
+| [Goyazite](data/records/goyazite.yaml) | Natural-crystal identity and abiotic synthesis and transformation | Nominal starting-gel composition, impurities and method-dependent thermal peaks |
+| [Heazlewoodite](data/records/heazlewoodite.yaml) | Controlled comparison of synthetic nickel-sulfide dissolution | No microbial enhancement; sterilization and surface-phase uncertainties remain |
 | [Felsőbányaite](data/records/felsobanyaite.yaml) | Primary natural-crystal identity and dated nomenclature | Poorly ordered basaluminite equivalence unresolved; microbial claims deferred |
 | [Flue-gas-desulfurization wastewater](data/records/flue-gas-desulfurization-wastewater.yaml) | Real-feed pilot biological treatment and original assay workbook | Corrected selenium assays, sustained target failure and no isolated product recovery |
 | [Struvite-(K)](data/records/struvite-k.yaml) | Abiotic synthesis and battery-washwater precipitation | Mixed phases, concentration-based removal and a second-cycle null result |
