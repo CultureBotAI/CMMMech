@@ -1,0 +1,174 @@
+{
+  "recorded_at": "2026-10-15T18:19:00.632180+00:00",
+  "main": {
+    "command": [
+      "git",
+      "ls-remote",
+      "origin",
+      "refs/heads/main"
+    ],
+    "exit_code": 0,
+    "data": "b6831c1da19b475ea048baea4ba5c10b96d678af\trefs/heads/main",
+    "stderr": ""
+  },
+  "open_prs": {
+    "command": [
+      "gh",
+      "pr",
+      "list",
+      "--repo",
+      "CultureBotAI/CMMMech",
+      "--state",
+      "open",
+      "--limit",
+      "100",
+      "--json",
+      "number,title,headRefName,headRefOid,url"
+    ],
+    "exit_code": 0,
+    "data": [],
+    "stderr": ""
+  },
+  "rules": {
+    "command": [
+      "gh",
+      "api",
+      "repos/CultureBotAI/CMMMech/rules/branches/main"
+    ],
+    "exit_code": 0,
+    "data": [
+      {
+        "type": "pull_request",
+        "parameters": {
+          "required_approving_review_count": 0,
+          "dismiss_stale_reviews_on_push": false,
+          "required_reviewers": [],
+          "require_code_owner_review": false,
+          "dismissal_restriction": {
+            "enabled": false,
+            "allowed_actors": []
+          },
+          "require_last_push_approval": false,
+          "required_review_thread_resolution": false,
+          "require_extra_approval_for_unattributed_changes": true,
+          "allowed_merge_methods": [
+            "merge",
+            "squash",
+            "rebase"
+          ]
+        },
+        "ruleset_source_type": "Repository",
+        "ruleset_source": "CultureBotAI/CMMMech",
+        "ruleset_id": 24692449
+      },
+      {
+        "type": "required_status_checks",
+        "parameters": {
+          "strict_required_status_checks_policy": false,
+          "do_not_enforce_on_create": false,
+          "required_status_checks": [
+            {
+              "context": "validate-strict",
+              "integration_id": 15368
+            }
+          ]
+        },
+        "ruleset_source_type": "Repository",
+        "ruleset_source": "CultureBotAI/CMMMech",
+        "ruleset_id": 24692449
+      },
+      {
+        "type": "merge_queue",
+        "parameters": {
+          "merge_method": "SQUASH",
+          "max_entries_to_build": 3,
+          "min_entries_to_merge": 1,
+          "max_entries_to_merge": 1,
+          "min_entries_to_merge_wait_minutes": 5,
+          "grouping_strategy": "ALLGREEN",
+          "check_response_timeout_minutes": 120
+        },
+        "ruleset_source_type": "Repository",
+        "ruleset_source": "CultureBotAI/CMMMech",
+        "ruleset_id": 24692449
+      }
+    ],
+    "stderr": ""
+  },
+  "admission": {
+    "command": [
+      "gh",
+      "pr",
+      "view",
+      "581",
+      "--repo",
+      "CultureBotAI/culturebotai-claw",
+      "--json",
+      "state,mergeCommit,url"
+    ],
+    "exit_code": 0,
+    "data": {
+      "mergeCommit": {
+        "oid": "849f336e025510316a5f235eb0af8547b8bd50cc"
+      },
+      "state": "MERGED",
+      "url": "https://github.com/CultureBotAI/culturebotai-claw/pull/581"
+    },
+    "stderr": ""
+  },
+  "admission_issue": {
+    "command": [
+      "gh",
+      "issue",
+      "view",
+      "580",
+      "--repo",
+      "CultureBotAI/culturebotai-claw",
+      "--json",
+      "state,url"
+    ],
+    "exit_code": 0,
+    "data": {
+      "state": "CLOSED",
+      "url": "https://github.com/CultureBotAI/culturebotai-claw/issues/580"
+    },
+    "stderr": ""
+  },
+  "shepherd": {
+    "command": [
+      "gh",
+      "run",
+      "list",
+      "--repo",
+      "CultureBotAI/CMMMech",
+      "--workflow",
+      "pr-shepherd.yml",
+      "--limit",
+      "10",
+      "--json",
+      "databaseId,status,conclusion,headSha,url"
+    ],
+    "exit_code": 0,
+    "data": [],
+    "stderr": ""
+  },
+  "cmm_issue3": {
+    "body": "The initial CMMMech audit found fleet admission, canonical shared curation history, vendored governance, PR shepherd deployment and native merge queue configuration pending. PR #1 establishes the scientific corpus and local review process; its Markdown reviews do not implement canonical curation history.\n\nEvidence: [dated integration audit](https://github.com/CultureBotAI/CMMMech/blob/2961df4540675b2d07aa7aa658776d779233d6c3/docs/integration-status.md). The audit distinguishes verified repository state from unknown App/credential readiness and includes hidden and ignored local files in absence checks.\n\nFollow CLAW's supported [onboard-mech process](https://github.com/CultureBotAI/culturebotai-claw/blob/20aae24502ad6a76a1a2c6cdb1eb0d5c8ce42838/.claude/skills/onboard-mech/SKILL.md); re-read the current authority before execution. Use clean isolated worktrees and preserve the dirty local CLAW checkout.\n\nAcceptance criteria, in dependency order:\n\n- Reverify committed candidate and authority revisions. Register CMMMech in the fleet/configuration, consumer manifest, research enum and queue-policy contracts, with measured capability declarations and serialization round trips.\n- Record only measured outstanding artifact paths in CLAW's supported incomplete-consumer ledger when needed; remove the entry on completion.\n- Adopt canonical shared/history schemas through the supported governed release. Implement CMMMech-owned history adapters, `just new-history`, provenance-preserving record history and meaningful gate tests.\n- Publish an immutable canonical release and coordinate synchronization/re-pinning of every consumer derived from its manifest. Run consumer checks and fleet audit at the same authority revision. Do not hand-copy governed artifacts or invent a pin.\n- Verify PR shepherd App/configuration readiness without exposing credentials.\n- Retain reviewed queue plan, authorized apply receipt and successful configuration check. Prove one reviewed PR merges through a real native merge group, recording reviewed head, merge-group SHA, Actions run and merge commit.\n\nThis is follow-up integration work, not a blocker for the first scientifically reviewed local corpus. Enabling a workflow trigger alone does not satisfy queue deployment. Cross-repository releases and settings changes must be handled in that integration's authorized scope.\n",
+    "labels": [],
+    "number": 3,
+    "state": "CLOSED",
+    "title": "Complete CLAW-supported fleet admission and governed integration",
+    "url": "https://github.com/CultureBotAI/CMMMech/issues/3"
+  },
+  "issue_inventory": {
+    "count": 253,
+    "scope": "all states, limit1000, full body search",
+    "snapshot_path": "/private/tmp/cmm-round100-integration-status.json",
+    "sha256": "eaf7b8c16779945ea736ee92267804b2d1a15c4960f0f977bcccbf04811963dc"
+  },
+  "governed_sync": {
+    "result": "PASS:22 governed artifacts match pinned CLAW revision",
+    "log_sha256": "3b073aa29da7dc3996edbe18c83d0d6593ba6d03238b663efc40286be4cf428e"
+  },
+  "scope": "Read-only current integration verification; no governance or queue configuration change. Zero observed shepherd runs is not evidence that credentials are absent. Use CLAW supported admission and synchronizer for future integration."
+}

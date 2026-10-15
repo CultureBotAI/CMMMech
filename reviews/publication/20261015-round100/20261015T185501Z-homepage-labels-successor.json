@@ -1,0 +1,84 @@
+{
+  "audit_id": "20261015T185501Z-homepage-labels-successor",
+  "timestamp_utc": "2026-10-15T18:55:01.703774Z",
+  "reviewed_revision": "b6831c1da19b475ea048baea4ba5c10b96d678af",
+  "reviewer": {
+    "identity": "codex /root/round100_pentagonite",
+    "model": "GPT-6",
+    "scope": "Independent presentation/provenance assessment, not self-acceptance of pentagonite science."
+  },
+  "previous_occurrences": [
+    {
+      "audit": "reviews/publication/20261015-round100/20261015T185056Z-homepage-labels-initial.json",
+      "finding": "homepage-biological-overclaim",
+      "issue_key": "CMMMech:round100:homepage-mechanism-labels"
+    }
+  ],
+  "issue": {
+    "number": 368,
+    "url": "https://github.com/CultureBotAI/CMMMech/issues/368"
+  },
+  "verdict": "pass",
+  "disposition": {
+    "issue_key": "CMMMech:round100:homepage-mechanism-labels",
+    "status": "resolved",
+    "reason": "Maintained and rendered text now uses neutral mechanism/process labels, acknowledges biological and abiotic evidence, names six material kinds, and qualifies identifier mappings. Counts and counting logic are unchanged; all 487 scientific owner hashes still match the completed batch receipt."
+  },
+  "inputs": [
+    {
+      "path": "reviews/publication/20261015-round100/20261015T185056Z-homepage-labels-initial.json",
+      "sha256": "bce6b3bbd0a0706bb482140d3c858cfa0d463b907c9408a07df88d981bb3b01e"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-homepage-checks.json",
+      "sha256": "1168b0e686983f3f5423263630b6373aef61d4b8a1a905f72c98d4c0743df280"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-homepage-checks.log",
+      "sha256": "b03faee0429fe562051be4241289115a0b31bddb57378caf3643b829bf68a169"
+    },
+    {
+      "path": "src/cmmmech/templates/index.html",
+      "sha256": "362c23f1d87fcced2671f819a86bec38abee784679d8ce7c2ef5632252acd5de"
+    },
+    {
+      "path": "scripts/render_pages.py",
+      "sha256": "f1aaa6c382b057a4e4f2702a24e2bebb974403703e4e3b055fffdda024797357"
+    },
+    {
+      "path": "pages/index.html",
+      "sha256": "896e71b4827dad1eba4f3f02d321a170b58edf0b55b3df135e001b5fa68c8f9a"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-package-peer/homepage-render-check.log",
+      "sha256": "b798d21a609b296cdc2aeb317f68fc259c4e86ee43942b4a3c5008b32b9bfa5e"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-homepage-review-issue.json",
+      "sha256": "273dfdcf6b07b492c403b0610ed8bb84edeb187a34301c7fee1aadd3323d3916"
+    }
+  ],
+  "checks": [
+    {
+      "command": "uv run --locked python scripts/render_pages.py --check",
+      "executor": "independent reviewer",
+      "exit_code": 0,
+      "log": "/private/tmp/cmm-round100-package-peer/homepage-render-check.log"
+    },
+    {
+      "command": "uv run --locked --extra dev pytest -q tests/test_render_pages.py",
+      "executor": "coordinator; actual completed receipt and log verified",
+      "exit_code": 0,
+      "result": "9 passed"
+    },
+    {
+      "name": "Exact copy/count/owner comparison",
+      "result": "Template diff changes presentation wording only. Script unchanged, 496 mechanisms and 405 materials with mechanisms preserved; all 487 owner hashes unchanged. Exact old-label absence checked in maintained/generated homepage, including hidden/ignored direct paths."
+    }
+  ],
+  "limitations": [
+    "The full just check preceded this text-only template correction; affected renderer tests and independent generated-page check passed afterward. The exact publication commit must still receive normal CI.",
+    "No scientific review, native review bundle or history sidecar changed.",
+    "Final package/provenance review is a separate observation; no preflight, merge or issue closure is asserted by this audit."
+  ]
+}

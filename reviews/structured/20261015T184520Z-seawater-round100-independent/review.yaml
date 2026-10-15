@@ -1,0 +1,389 @@
+schema_version: 1.0.0
+review_id: 20261015T184520Z-seawater-round100-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Seawater
+started_at: '2026-10-15T18:39:56.124306Z'
+finished_at: '2026-10-15T18:45:20.430522Z'
+reviewer:
+  identity: codex /root/round100_vanadium
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The root coordinator authored this owner. I curated separate
+    goldmanite/haradaite records and independently inspected this exact frozen owner
+    and primary evidence without editing its record, history or source dossier.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified natural-water UUS-1 immobilization is supported, with explicit
+  control, normalization, process and provenance limits.
+source:
+  git_revision: b6831c1da19b475ea048baea4ba5c10b96d678af
+  state: working_tree
+  inputs:
+  - path: data/records/seawater.yaml
+    sha256: 3eca7555a6f0a9f377001f5968a9924b73d014179255a4c1d4a6bcf412850ec5
+    role: target
+  - path: history/records/seawater/2026-10-15T183036Z-codex-708f2e.yaml
+    sha256: 66315766ed6d0023bdd547504eebe936b66c728730bbd374352b203936f2e730
+    role: context
+  - path: research/sources/round100-seawater/20261015T183320Z.json
+    sha256: 1893e6b319fe65f68ebfbc3ff5649828d30277d69752c5d3e9dbc5ce688cd9f1
+    role: context
+  - path: research/sources/round100-seawater/20261015T183320Z.md
+    sha256: 07a3f419d1ce2a4af90c163ed0541747302b48908634d98199e987d26c9d8ad0
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire frozen maintained record, canonical CREATE and inline provenance,
+    dated identifiers, complete accessible claim-bearing original methods/results
+    and relevant figures/tables/supplement, source dossier, and bounded counterevidence
+    and duplicate searches.
+  selection: Parent-assigned independent review after author freeze.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:seawater
+targets:
+- target_id: cmmmech:seawater
+  path: data/records/seawater.yaml
+  label: Seawater
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/seawater.yaml
+    role: maintained_record
+checks:
+- check_id: science
+  name: Independent primary-evidence assessment
+  required: true
+  status: passed
+  summary: Exact owner and claim-bearing primary evidence independently assessed;
+    preserved uncertainties are recorded below.
+  target_ids:
+  - cmmmech:seawater
+  evidence_ids:
+  - owner
+  - history
+  - search
+- check_id: named
+  name: Independent named record validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/seawater.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 1 record; 0 failed.
+  target_ids:
+  - cmmmech:seawater
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch check 1
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual completed receipt, unchanged reviewed owner and complete
+    log hash. This is coordinator execution, not an independently rerun suite.
+  target_ids:
+  - cmmmech:seawater
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch check 2
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual completed receipt, unchanged reviewed owner and complete
+    log hash. This is coordinator execution, not an independently rerun suite.
+  target_ids:
+  - cmmmech:seawater
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch check 3
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base b6831c1da19b475ea048baea4ba5c10b96d678af
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual completed receipt, unchanged reviewed owner and complete
+    log hash. This is coordinator execution, not an independently rerun suite.
+  target_ids:
+  - cmmmech:seawater
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch check 4
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual completed receipt, unchanged reviewed owner and complete
+    log hash. This is coordinator execution, not an independently rerun suite.
+  target_ids:
+  - cmmmech:seawater
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/seawater.yaml
+  locator: Entire exact owner captured with native inspect before judging; frozen
+    hash verified again before review drafting.
+  accessed_at: '2026-10-15T18:42:27.289046Z'
+  support: supports
+  summary: Identity, conditions, outcomes and caveats match the independently assessed
+    scope.
+  snapshot_sha256: 3eca7555a6f0a9f377001f5968a9924b73d014179255a4c1d4a6bcf412850ec5
+- evidence_id: history
+  kind: record_content
+  reference: history/records/seawater/2026-10-15T183036Z-codex-708f2e.yaml
+  locator: Complete canonical CREATE and distinct inline event/history_refs.
+  accessed_at: '2026-10-15T18:42:27.289046Z'
+  support: supports
+  summary: Actual GPT-6 curator metadata, target and described changes agree. No earlier
+    authorship invented.
+  snapshot_sha256: 66315766ed6d0023bdd547504eebe936b66c728730bbd374352b203936f2e730
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round100-seawater/20261015T183320Z.md
+  locator: Paired JSON/Markdown discovery handoff and source/version inventory.
+  accessed_at: '2026-10-15T18:42:27.289046Z'
+  support: supports
+  summary: Acquisition versus reuse and deferred leads are explicit; review does not
+    treat the curator dossier as independent scientific replication.
+  snapshot_sha256: 07a3f419d1ce2a4af90c163ed0541747302b48908634d98199e987d26c9d8ad0
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/seawater.yaml
+  locator: /private/tmp/cmm-round100-seawater-independent/named-validation.log
+  accessed_at: '2026-10-15T18:42:27.289046Z'
+  support: supports
+  summary: 'Independently executed named validation: one record checked, zero failed.'
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: search
+  kind: search
+  reference: Independent bounded correction/retraction and duplicate searches
+  locator: /private/tmp/cmm-round100-seawater-independent/search-observations.json;
+    /private/tmp/cmm-round100-seawater-independent/dedup.json
+  accessed_at: '2026-10-15T18:42:27.289046Z'
+  support: context_only
+  summary: No affecting formal notice surfaced in the returned search sets. Related
+    studies and neighboring identities are not duplicate owners; inspected source
+    inconsistencies remain explicit.
+  snapshot_sha256: 0d65b231edcb3263fc28b668ab71e7f2c3fa838b060833fa2fcdffcd377ca4b2
+  search_scope: Exact queries in receipt; rg --no-ignore --hidden --follow across
+    explicitly listed maintained roots, referenced raw directories and 253 all-state
+    issues. Hidden and ignored files included, symlinks followed. No machine-wide
+    or exhaustive literature absence claim.
+- evidence_id: article
+  kind: primary_source
+  reference: https://doi.org/10.1002/advs.201900961
+  locator: Published complete XML; Sections 2.1-2.5 and 4; Figures 2-6 visually inspected.
+  accessed_at: '2026-10-15T18:42:27.289046Z'
+  support: supports
+  summary: Natural-water dialysis assay, spiked-media/debris arms, cell-associated
+    uranium, genomic claims and controls independently checked.
+  snapshot_sha256: 90995c1b02c92e2cb7dfd5c393f11b51d2cee50bc3647ffb26a616ffb337299b
+- evidence_id: si
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6755527/supplementaryFiles
+  locator: Complete nine-page ADVS-6-1900961-s001.pdf; Figure S2 p4, Table S1 p8 and
+    Table S2 p9; Table S2 visually inspected and U ratios recalculated.
+  accessed_at: '2026-10-15T18:42:27.289046Z'
+  support: supports
+  summary: Final dry-cell denominator is distinct from initial cultures. The reported
+    initial-culture concentration ratio is not reproduced by the table values.
+  snapshot_sha256: 66c9bba47e8c117c6730832f0316539e39a73fbe1fbe3bcfff529847ce0535e9
+- evidence_id: taxon
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=492670&mode=info
+  locator: Species name/rank in current NCBI page and explicit taxon qualifiers in
+    independently fetched accessions.
+  accessed_at: '2026-10-15T18:42:27.289046Z'
+  support: supports
+  summary: NCBITaxon:492670 grounds Bacillus velezensis at species rank, not a unique
+    strain or activity.
+  snapshot_sha256: 5caca513a26fbe33ab881aac04fd63961e28b7891e00f5c2279fd2ed4dda81e6
+- evidence_id: 16s
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/MK092976.1
+  locator: Independently fetched current eutils GenBank text, VERSION/FEATURES.
+  accessed_at: '2026-10-15T18:42:27.289046Z'
+  support: supports
+  summary: Version .1, 1533 bp partial 16S, UUS-1 and taxon492670 agree; sequence
+    evidence is not an independent uptake experiment.
+  snapshot_sha256: b13cab6ccfd256d8e52811d83ffc380b044ae364bc62d06a5f4264558a017a71
+- evidence_id: wgs
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/nuccore/SNVA00000000.1
+  locator: Independently fetched current eutils master record; WGS range and source
+    qualifiers.
+  accessed_at: '2026-10-15T18:42:27.289046Z'
+  support: partial
+  summary: Version01 comprises SNVA01000001-SNVA01000034. Source says seawater, Haikou,
+    2017-12-30; paper says beach sand. Conflict retained without resolving assay-water
+    collection.
+  snapshot_sha256: 7f84b13123d44a50029e3d0efc66c0d532cf84075088d47656012afe80491b31
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round100-final-gates.json
+  locator: Completed coordinator receipt; /private/tmp/cmm-round100-final-gates.log
+    SHA256 1d26fc881828a6ce668c84c6458674b6be8a6af044068c144323a7200677e32d
+  accessed_at: '2026-10-15T18:45:20.430522Z'
+  support: supports
+  summary: All four terminal exit codes are zero and recorded owners unchanged. just
+    check, strict corpus validation, trusted-base history and rendered-page freshness
+    passed. This review bundle is subsequently validated and saved through the native
+    helper.
+  snapshot_sha256: 3a6f970f9a5bb1e442804dd5529b6eb0acfdcb76a9311cda62204cf368c6b939
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Resource and organism identity
+  outcome: supported
+  summary: Natural seawater is appropriately scoped as primary_resource.
+  details: Distinct from uranium element, mineral species, manufactured salts and
+    desalination concentrate. Species492670 is correctly labeled; UUS-1 is grounded
+    through the paper and two versioned accessions. Sand-versus-seawater strain provenance
+    is unresolved, not silently harmonized.
+  target_ids:
+  - cmmmech:seawater
+  evidence_ids:
+  - owner
+  - article
+  - taxon
+  - 16s
+  - wgs
+- assessment_id: conditions
+  area: scope
+  topic: Natural-water arm and biomass state
+  outcome: supported
+  summary: Growing-cell assay and nutrient-supported laboratory conditions are correctly
+    bounded.
+  details: 10 microlitres exponential culture, 1 mL seawater, 25 mg tryptone plus
+    15 mg yeast extract in 3 kDa dialysis tube, immersed in 1 L natural water; 30
+    C, moderate shaking, 48 h, three independent experiments. No U addition described.
+    Sampling every 12 h and final cell ICP-MS agree; pH values from separate protocols
+    are not imported.
+  target_ids:
+  - cmmmech:seawater
+  evidence_ids:
+  - owner
+  - article
+- assessment_id: controls
+  area: evidence
+  topic: Comparators and causal scope
+  outcome: supported
+  summary: Observed cell-associated immobilization is supported without uniquely attributing
+    water depletion.
+  details: Figure 6b lacks a matched no-cell U trajectory; Figure 6e addresses surface
+    fouling only. Nutrient/membrane blanks, full compartment balance, washing/digestion
+    and source-water collection remain unresolved. Added nutrients and growing biomass
+    prevent treating cells as a fixed-mass passive sorbent.
+  target_ids:
+  - cmmmech:seawater
+  evidence_ids:
+  - owner
+  - article
+  - si
+- assessment_id: quantity
+  area: quantity
+  topic: Mass units and denominators
+  outcome: supported
+  summary: Reported final dry-cell concentration and water decline remain qualified
+    assay outcomes.
+  details: 24.33% water immobilization and 213.89 +/- 9.01 mg U/kg final dry cells
+    are not isolated-product yield. Table S2 water U is 3.10 micrograms/kg despite
+    general mg/kg header. 9456.59/0.00310 = 3050512.9, not reported 625746.40; 213.89/0.00310
+    = 68996.77. Initial-culture 9456.59 mg/kg (9.46 mg/g) is excluded as a comparable
+    final-biomass capacity. Reviewer arithmetic diagnoses inconsistency, not a replacement
+    corrected measurement. No structured observations or additive-element source attribution
+    asserted.
+  target_ids:
+  - cmmmech:seawater
+  evidence_ids:
+  - owner
+  - article
+  - si
+- assessment_id: mechanism
+  area: evidence
+  topic: Process classification and molecular inference
+  outcome: supported
+  summary: Biosorption is acceptable only with the explicit broad-label qualification.
+  details: Record says adsorption, intracellular accumulation and other routes were
+    not quantitatively partitioned in natural water. Spiked LB/seawater, simulated
+    seawater and prepared debris are separate experiments; the 90-second adsorption
+    observation is not transferred. Proteinase treatment loses43.69% of the biomass,
+    confounding binding attribution. Authors interpret XPS as retained U(VI), not
+    U(IV) reduction. Cluster predictions do not demonstrate specific antimicrobial
+    production or cause the fouling outcome.
+  target_ids:
+  - cmmmech:seawater
+  evidence_ids:
+  - owner
+  - article
+  - si
+- assessment_id: criticality
+  area: scope
+  topic: Criticality and deployment
+  outcome: supported
+  summary: Neither criticality nor deployment is inferred.
+  details: Criticality is unasserted rather than claimed absent. No jurisdiction/list/edition
+    imported from constituent uranium. Laboratory water depletion does not establish
+    isolated uranium product, regeneration, recovery economics or industrial deployment.
+  target_ids:
+  - cmmmech:seawater
+  evidence_ids:
+  - owner
+  - article
+- assessment_id: provenance
+  area: provenance
+  topic: Exact frozen revision and history
+  outcome: supported
+  summary: Working-tree provenance and independent review are explicit.
+  details: Native inspect preceded judgment and exact source/owner/history hashes
+    were rechecked. Canonical CREATE and inline history are distinct; actual GPT-6
+    metadata retained. Named validation independently executed; coordinator whole-corpus
+    gates were added only after actual terminal receipt, base, log and unchanged target
+    hashes were verified.
+  target_ids:
+  - cmmmech:seawater
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- Natural-water uranium fate is not a closed compartment mass balance; no matched
+  no-cell uranium timecourse is shown.
+- Initial-culture normalization and Table S2 ratio disagree; no corrected value or
+  full culture/media accounting is established.
+- Paper and WGS disagree about strain isolation source; neither establishes assay-water
+  collection site/date.
+- Complete published XML and nine-page supplement were inspected; a publisher PDF
+  was not accessible. No experiment, species delimitation or primary analytical data
+  were independently replicated.
+notes:
+- Final assessment drafting timestamps are actual; preliminary independent source
+  inspection and native capture preceded this drafting interval.
+- Primary artifacts were acquired by the curator or reused from prior acquisition
+  and independently inspected here; current accession requests for seawater and the
+  IMA download used for mineral authority were independently checked. No independent
+  experimental replication is claimed.
+- Whole-corpus gates are coordinator executions, verified from actual completed receipt/log.
+  The native review corpus check follows persistence; no future check is represented
+  as already run.

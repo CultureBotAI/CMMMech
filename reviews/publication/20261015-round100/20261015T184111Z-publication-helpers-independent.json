@@ -1,0 +1,93 @@
+{
+  "audit_id": "20261015T184111Z-publication-helpers-independent",
+  "timestamp_utc": "2026-10-15T18:41:11.960970Z",
+  "reviewer": {
+    "identity": "codex /root/round100_pentagonite",
+    "model": "GPT-6",
+    "independence": "independent; helpers authored by coordinator; no helper edits by reviewer"
+  },
+  "reviewed_revision": "b6831c1da19b475ea048baea4ba5c10b96d678af",
+  "working_changes": "Uncommitted round100 records and reviews; temporary helpers outside Git. This audit does not claim preflight executed.",
+  "scope": "Supplementary publication-verification code audit: main-only clone, exact base/topic/tree, retained-base availability, tag fetch, checks and coverage, receipt exclusivity.",
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round100-isolated-verification.py",
+      "sha256": "055854012976be4a7144676d30ad72748858bbe710a7d112d76af6b4b18b331d"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-isolated-coverage.py",
+      "sha256": "a7233d12b1f245d4c073933da755765d63d02dcdb15359797557fa6c4f9506ca"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-helper-config.json",
+      "sha256": "959395a35d7c3c858abab45d09bb3e16f2d495ba11cdd6c4067657d4d81d9f2c"
+    }
+  ],
+  "verdict": "revise",
+  "findings": [
+    {
+      "id": "coverage-output-exclusive",
+      "issue_key": "CMMMech:round100:coverage-receipt-exclusivity",
+      "severity": "minor",
+      "status": "open",
+      "description": "The coverage helper checks output.exists() then calls output.write_text(). A dangling output symlink is not detected by exists() and is followed; the final write is not exclusive. The wrapper rejects an existing symlink before invocation, mitigating ordinary wrapper use, but the child helper lacks its own exclusive reservation.",
+      "affected_path": "/private/tmp/cmm-round100-isolated-coverage.py",
+      "locator": "final output.exists()/write_text block",
+      "evidence": {
+        "path": "/private/tmp/cmm-round100-helper-audit-1wd7gzvk/reproduction.json",
+        "sha256": "18c720dea55c7e50878186d8a396cdd3e5e78b31c4385d75383afa253d302a05",
+        "exit_code": 1,
+        "interpretation": "Empty fixture intentionally fails expected corpus counts, but still writes through the dangling receipt symlink to the previously absent target. This is not a failed scientific corpus check."
+      },
+      "acceptance": "Use exclusive receipt creation and reject existing regular files, dangling symlinks and occupied symlinks; verify normal creation; preserve existing bytes and never overwrite an earlier receipt."
+    }
+  ],
+  "supported_checks": [
+    "Syntax parsed for both helpers without executing publication workflow.",
+    "Mechanical diff of coverage helper versus round99 changed only the configured JSON path.",
+    "Verifier pins configured base/branch, supplied topic tree, clean topic HEAD before preflight and single-parent exact base after merge.",
+    "Fresh main-only clone uses --single-branch --branch main --no-tags then explicit tag fetch; fetch refspec and absent topic commit are checked before and after extraction/checks.",
+    "Archive extraction uses a bounded fresh clone and data filter; tracked removed paths are removed only there; synthetic parent and exact resulting tree are asserted.",
+    "Offline schema/history/structured-review commands require exit zero. Coverage additionally matches current record ID, target path, scope and exact SHA256 to completed positive scientific reviews, and checks every retained review base as a commit.",
+    "Verifier receipts/log are created with exclusive mode and retain command outcomes, hashes, counts and unchanged config; child coverage output exclusivity is the one finding.",
+    "Postmerge mode verifies local and remote topic-branch absence and exact merged parent/tree."
+  ],
+  "limitations": [
+    "No clone/preflight/merge command was run by this reviewer.",
+    "Counts in current helper config remain explicitly provisional until six scientific record reviews are saved and reconciled.",
+    "Remote review-base tags and their peeled commits are a separate coordinator verification; availability alone does not prove remote retention.",
+    "Current audit covers recorded helper bytes. Revisions require a successor audit; no previous report is overwritten."
+  ],
+  "reproduction": {
+    "timestamp": "2026-10-15T18:40:18.629695+00:00",
+    "helper_sha256": "a7233d12b1f245d4c073933da755765d63d02dcdb15359797557fa6c4f9506ca",
+    "scope": "Only a newly created empty fixture tree and output symlink/target in this unique audit directory; no repository Git or helper mutation. Count failure is expected for empty fixture.",
+    "command": [
+      "/private/tmp/CMMMech-expansion-round100-20261015/.venv/bin/python",
+      "/private/tmp/cmm-round100-isolated-coverage.py",
+      "--clone",
+      "/private/tmp/cmm-round100-helper-audit-1wd7gzvk/empty-clone",
+      "--output",
+      "/private/tmp/cmm-round100-helper-audit-1wd7gzvk/receipt.json"
+    ],
+    "exit_code": 1,
+    "stdout": "{\n  \"recorded_at\": \"2026-10-15T18:40:18.582318+00:00\",\n  \"root\": \"/private/tmp/cmm-round100-helper-audit-1wd7gzvk/empty-clone\",\n  \"record_count\": 0,\n  \"history_count\": 0,\n  \"structured_review_count\": 0,\n  \"review_base_count\": 0,\n  \"covered_records\": 0,\n  \"scope\": \"Hidden/ignored-inclusive filesystem enumeration follows relevant symlinks with cycle prevention. Current record ID, target path, reviewed target scope and exact SHA256 must match completed positive scientific reviews; context-only successors cannot substitute. This supplements the canonical review checker.\",\n  \"passed\": false\n}\n",
+    "stderr": "",
+    "output_is_symlink": true,
+    "target_created": true,
+    "receipt_path": "/private/tmp/cmm-round100-helper-audit-1wd7gzvk/receipt.json",
+    "target_path": "/private/tmp/cmm-round100-helper-audit-1wd7gzvk/previously-absent-target.json",
+    "syntax_checks": [
+      {
+        "path": "/private/tmp/cmm-round100-isolated-verification.py",
+        "sha256": "055854012976be4a7144676d30ad72748858bbe710a7d112d76af6b4b18b331d",
+        "ast_parse": "passed"
+      },
+      {
+        "path": "/private/tmp/cmm-round100-isolated-coverage.py",
+        "sha256": "a7233d12b1f245d4c073933da755765d63d02dcdb15359797557fa6c4f9506ca",
+        "ast_parse": "passed"
+      }
+    ]
+  }
+}
