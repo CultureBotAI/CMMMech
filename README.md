@@ -8,13 +8,19 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 403 material records.
+The catalogue currently contains 409 material records.
 
-The [latest curation report](research/ingests/round84-frontier-20261014.md) links
+The [latest curation report](research/ingests/round85-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Wurtzite](data/records/wurtzite.yaml) | Mixed ZnS precipitation in sulfate-reducing cultures | Unresolved communities, mixed phases and no mineral-specific recovery yield |
+| [Hydrozincite](data/records/hydrozincite.yaml) | Field microbial-associated zinc carbonate precipitation | Community association and sterile-organic morphology counterexamples |
+| [Zincite](data/records/zincite.yaml) | Fungal-conditioned ZnO transformation and separate abiotic dissolution | Residual zincite, source dose conflicts and no isolated recovery yield |
+| [Titanogypsum](data/records/titanogypsum.yaml) | Yeast-associated fluoride redistribution in real plant waste | Lower filtered fluoride, null phosphorus response and unproven reuse safety |
+| [Azurite](data/records/azurite.yaml) | Source-assigned minor phase in mixed bacterial precipitates | Strain/sample-lineage and removal-assay inconsistencies |
+| [Tenorite](data/records/tenorite.yaml) | Heated CuO product from a fungal-conditioned precursor | Abiotic thermal stage, mixed composition and unresolved phase assignments |
 | [Brochantite](data/records/brochantite.yaml) | Fungal-associated copper oxalate formation on synthetic mineral and roof patina | Source phase assignment, ambiguous product denominator and limited controls |
 | [Atacamite](data/records/atacamite.yaml) | Fungal-associated copper oxalate formation on synthetic mineral | Growth inhibition at the highest loading; no isolated recovery yield |
 | [Cinnabar](data/records/cinnabar.yaml) | Laboratory mercury mobilization by a live AMD consortium | Isolate null result, unmatched controls and no recovered product |

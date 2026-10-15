@@ -1,0 +1,476 @@
+schema_version: 1.0.0
+review_id: 20261015T013234Z-zincite-round85-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Zincite
+started_at: '2026-10-15T01:22:39Z'
+finished_at: '2026-10-15T01:32:34.986679Z'
+reviewer:
+  identity: codex /root/round68_iron_sulfides
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Owner/history authored by round68_phosphates; reviewer authored
+    wurtzite only, independently inspected exact target before assessment, read primary
+    originals and figures, and made no owner edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Zincite-structured ZnO partial transformation in fungal-conditioned liquid
+  and separate abiotic specimen dissolution are supported with mixed-phase, concentration,
+  control and provenance limits retained.
+source:
+  git_revision: 51adf4be6c544642f6bf54a4e7f514adb84aa34e
+  state: working_tree
+  inputs:
+  - path: data/records/zincite.yaml
+    sha256: 0fbdd9973615d12b5a3b3dbedc4c052899fbb473f498ceea9f2060238dde36a2
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/zincite/2026-10-15T011944Z-codex-797b25.yaml
+    sha256: 105757707fbc188ce321d9d8a0d66c4b81a51f1258a49c085dfc12e0c5654572
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Full maintained owner and canonical CREATE; accepted full primary main
+    text, claim-bearing original graphics/tables, relevant supplements, identities,
+    internal contradictions and actual validation.
+  selection: Assigned frozen owner; canonical native source/target inspection completed
+    before owner judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:zincite
+targets:
+- target_id: cmmmech:zincite
+  path: data/records/zincite.yaml
+  label: Zincite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/zincite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent strict named validation
+  command: uv run --locked cmmmech validate data/records/hydrozincite.yaml data/records/zincite.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Actual reviewer run exit0; two checked records, zero failures.
+  target_ids:
+  - cmmmech:zincite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Completed coordinator batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual terminal run 2026-10-15T01:22:50.828855+00:00 to 2026-10-15T01:31:26.415505+00:00;
+    unchanged owner hash and log digest verified.
+  target_ids:
+  - cmmmech:zincite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batchlog
+- check_id: batch1
+  name: Completed coordinator batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual terminal run 2026-10-15T01:31:26.415715+00:00 to 2026-10-15T01:31:45.874908+00:00;
+    unchanged owner hash and log digest verified.
+  target_ids:
+  - cmmmech:zincite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batchlog
+- check_id: batch2
+  name: Completed coordinator batch gate 3
+  command: uv run --locked cmmmech validate-history --base 51adf4be6c544642f6bf54a4e7f514adb84aa34e
+  status: passed
+  required: true
+  summary: Actual terminal run 2026-10-15T01:31:45.874937+00:00 to 2026-10-15T01:31:56.553967+00:00;
+    unchanged owner hash and log digest verified.
+  target_ids:
+  - cmmmech:zincite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batchlog
+- check_id: batch3
+  name: Completed coordinator batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual terminal run 2026-10-15T01:31:56.553994+00:00 to 2026-10-15T01:32:08.065969+00:00;
+    unchanged owner hash and log digest verified.
+  target_ids:
+  - cmmmech:zincite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+  - batchlog
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/zincite.yaml
+  locator: 'Entire frozen owner. Actual local artifact: /private/tmp/CMMMech-expansion-round85-20261015/data/records/zincite.yaml'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Independent exact-record assessment; no reviewer edits.
+  snapshot_sha256: 0fbdd9973615d12b5a3b3dbedc4c052899fbb473f498ceea9f2060238dde36a2
+- evidence_id: history
+  kind: record_content
+  reference: history/records/zincite/2026-10-15T011944Z-codex-797b25.yaml
+  locator: 'Complete canonical CREATE plus inline event. Actual local artifact: /private/tmp/CMMMech-expansion-round85-20261015/history/records/zincite/2026-10-15T011944Z-codex-797b25.yaml'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Canonical target, actor/model, event and history link agree.
+  snapshot_sha256: 105757707fbc188ce321d9d8a0d66c4b81a51f1258a49c085dfc12e0c5654572
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'Official retained September 2026 original, definitions page1 and species
+    row PDFpage241. Actual local artifact: /private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Species formula/status independently checked visually; G and historical
+    year are not numbered approvals.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/zincite.pdf
+  locator: 'Complete one-page original; independently visually checked. Actual local
+    artifact: /private/tmp/cmm-round85-phosphates-research/zincite-handbook.pdf'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Species composition, symmetry and geological occurrence support identity
+    rather than constituent criticality.
+  snapshot_sha256: 47115d10b7dbd3fcc2714f06aad0466eca248a8d77ca9dae5a80d6c3947a0d10
+- evidence_id: sebesta
+  kind: primary_source
+  reference: https://doi.org/10.3390/jof6040210
+  locator: 'Complete10-page publisher original, all methods/results/discussion and
+    Figures1–5 independently assessed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/zincite2020-main.pdf'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Commercial zincite-structured particles partly converted in fungal-conditioned
+    liquid; separate live-culture dose/unit conflicts and lack of phase-arm matched
+    controls retained.
+  snapshot_sha256: 0e57e247e141666ad937ee68ce704dbbc18e06b26e386b96f9f27b2930c7a454
+- evidence_id: sebesta_si
+  kind: primary_source
+  reference: https://doi.org/10.3390/jof6040210
+  locator: 'Complete6-page official SI text read; original TableS1 and FigureS1 visually
+    checked. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/zincite2020-si/jof-06-00210-s001.pdf'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Separate ionic-Zn growth/toxicity experiment is not nanoparticle conversion
+    yield or matching phase-arm control.
+  snapshot_sha256: 2e24be842766e0bceaff123b99258564dbf113993ac0d607fa642b83188b90cb
+- evidence_id: koskela
+  kind: primary_source
+  reference: https://doi.org/10.1039/D1SC06667F
+  locator: 'Complete13-page NSF manuscript read including synthetic controls, natural-zincite
+    subsection and thermal context; all4 main original graphics visually checked.
+    Actual local artifact: /private/tmp/cmm-round85-phosphates-research/zincite2022-nsf.pdf'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Natural-specimen75°C24h dissolution is distinct from synthetic kinetic
+    experiments and later complex thermolysis; supplier provenance remains unverified.
+  snapshot_sha256: 5023f49d8f539e7bdc3f26a04c7da0bb2bcaddbce576a7b6fe03731d39f348f1
+- evidence_id: koskela_si
+  kind: primary_source
+  reference: https://doi.org/10.1039/D1SC06667F
+  locator: 'Complete21-page ESI text examined; source-arm FiguresS29–S31 (PDF18–19),
+    starting-materialS1–S3 (PDF1–2), and separate thermolysisS32–S33 (PDF20) independently
+    viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/zincite2022-si/SC-013-D1SC06667F-s012.pdf'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Powder diffraction, visual dissolution and NMR support bounded mineral/solute
+    identification. Unrelated computational coordinate/CIF datasets are not independently
+    reanalyzed; synthetic kinetics are not transferred to the natural arm.
+  snapshot_sha256: ec14ab5c79462b2d9211a0f3ebf3d54489cf2493de77209b0f06b48eb9db5f51
+- evidence_id: niger
+  kind: database
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=info
+  locator: 'Complete current taxonomy XML; direct TaxId/ScientificName/Rank inspected.
+    Actual local artifact: /private/tmp/cmm-round85-phosphates-research/taxon5061.xml'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: NCBITaxon5061 maps Aspergillus niger at species rank, not authentication
+    of CBS140837 experimental stock.
+  snapshot_sha256: d668c305ba04f31ca50a1582a5a9c85d6547109cbc132a097d5d2185a8c34ff8
+- evidence_id: sebestfig1
+  kind: primary_source
+  reference: https://doi.org/10.3390/jof6040210
+  locator: 'Original Figure1 independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/zincite2020-jof-06-00210-g001.jpg'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Exact axes, mixtures and analytical limits independently compared with
+    owner; no recovered yield inferred.
+  snapshot_sha256: d5d9cd0ba2388470abfc4092981544a34b2daa49d8c18237a2e7fa89cda97cbf
+- evidence_id: sebestfig2
+  kind: primary_source
+  reference: https://doi.org/10.3390/jof6040210
+  locator: 'Original Figure2 independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/zincite2020-jof-06-00210-g002.jpg'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Exact axes, mixtures and analytical limits independently compared with
+    owner; no recovered yield inferred.
+  snapshot_sha256: afc7314b61e05d14fbc43d72a8622347744ac42b44fcc2d5dc1fba77965dfc6f
+- evidence_id: sebestfig3
+  kind: primary_source
+  reference: https://doi.org/10.3390/jof6040210
+  locator: 'Original Figure3 independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/zincite2020-jof-06-00210-g003.jpg'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Exact axes, mixtures and analytical limits independently compared with
+    owner; no recovered yield inferred.
+  snapshot_sha256: fabf6cfa1cf498b6d88165e8f9497dfbf3e675b7e96ee7cfc441d794a381d175
+- evidence_id: sebestfig4
+  kind: primary_source
+  reference: https://doi.org/10.3390/jof6040210
+  locator: 'Original Figure4 independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/zincite2020-jof-06-00210-g004.jpg'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Exact axes, mixtures and analytical limits independently compared with
+    owner; no recovered yield inferred.
+  snapshot_sha256: 52fbff2f93c1d543963ed58c8bd5ae7e543259ebd7235b8e0b296cc919648277
+- evidence_id: sebestfig5
+  kind: primary_source
+  reference: https://doi.org/10.3390/jof6040210
+  locator: 'Original Figure5 independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/zincite2020-jof-06-00210-g005.jpg'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Exact axes, mixtures and analytical limits independently compared with
+    owner; no recovered yield inferred.
+  snapshot_sha256: 26bdb27ea65c61bf2e4b7eaadfcde0c064956e8c0c59ab9d3bc8148aa480b494
+- evidence_id: koskelafig1
+  kind: primary_source
+  reference: https://doi.org/10.1039/D1SC06667F
+  locator: 'Original main Figure1 independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/zincite2022-si/d1sc06667f-f1.jpg'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Synthetic-complex structural/kinetic/model context is distinguished from
+    natural-mineral measurements.
+  snapshot_sha256: 58fd7547af7752da3f54a1b3cea5f63989bd7baac794840dd3712d27ec5a9e7e
+- evidence_id: koskelafig2
+  kind: primary_source
+  reference: https://doi.org/10.1039/D1SC06667F
+  locator: 'Original main Figure2 independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/zincite2022-si/d1sc06667f-f2.jpg'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Synthetic-complex structural/kinetic/model context is distinguished from
+    natural-mineral measurements.
+  snapshot_sha256: 63e3db3daa5e57eed4e56154518b85ac085badf733fab2f335405bd2c9dd84a6
+- evidence_id: koskelafig3
+  kind: primary_source
+  reference: https://doi.org/10.1039/D1SC06667F
+  locator: 'Original main Figure3 independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/zincite2022-si/d1sc06667f-f3.jpg'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Synthetic-complex structural/kinetic/model context is distinguished from
+    natural-mineral measurements.
+  snapshot_sha256: b12703147f917346abf18c1858fce40e7cfbd9be4d4fc110592ffc0296792d8f
+- evidence_id: koskelafig4
+  kind: primary_source
+  reference: https://doi.org/10.1039/D1SC06667F
+  locator: 'Original main Figure4 independently viewed. Actual local artifact: /private/tmp/cmm-round85-phosphates-research/zincite2022-si/d1sc06667f-f4.jpg'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Synthetic-complex structural/kinetic/model context is distinguished from
+    natural-mineral measurements.
+  snapshot_sha256: ff7b7f21256cfd1ed55566e51ca99ae6b29e207bc3da3d205b5befc8beda3ac4
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round85-zinc-independent/named-validation.log
+  locator: 'Independent reviewer strict named run. Actual local artifact: /private/tmp/cmm-round85-zinc-independent/named-validation.log'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Actual exit0, two records checked, zero failures.
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round85-final-gates.json
+  locator: 'Actual completed four-command batch receipt. Actual local artifact: /private/tmp/cmm-round85-final-gates.json'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Exact base/worktree/input digest, command list and exit codes verified.
+  snapshot_sha256: 265694b8cec9b7c39325508f7811fea2ad2b656d6553c62449c545255123e748
+- evidence_id: batchlog
+  kind: validation
+  reference: /private/tmp/cmm-round85-final-gates.log
+  locator: 'Actual complete batch output digest independently verified. Actual local
+    artifact: /private/tmp/cmm-round85-final-gates.log'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: supports
+  summary: Structural tests, strict corpus, canonical history and generated pages
+    passed.
+  snapshot_sha256: eaff9b50e0f61675b41fd2ead3e28a22a7673f273f263808e7cd9cc6b851acd9
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round85-zinc-independent/web-notices.json
+  locator: 'Four exact-DOI correction/erratum searches; inspected returned results
+    retained. Actual local artifact: /private/tmp/cmm-round85-zinc-independent/web-notices.json'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: context_only
+  summary: No applicable correction identified in these bounded results; not an exhaustive
+    absence claim.
+  snapshot_sha256: 53201994c2bb8bec439ffae9923c3ed0eeb3a15b5a01d0276976fcf00949ceaa
+  search_scope: Four exact accepted DOI searches with correction/erratum/retraction
+    terms; source internal conflicts examined directly.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round85-zinc-independent/maintained-dedup.txt
+  locator: 'Followed hidden/ignored-inclusive current records/research/reviews/history
+    search by species and exact DOI. Actual local artifact: /private/tmp/cmm-round85-zinc-independent/maintained-dedup.txt'
+  accessed_at: '2026-10-15T01:32:34.986679Z'
+  support: context_only
+  summary: Existing contextual mentions and prior deferral are distinguished from
+    current species owners. Author original-main/cited-raw search inventory was also
+    read; no machine-wide novelty claim.
+  snapshot_sha256: cbd9325d1b3812ca4e35f1de0b46c394a1e76a935397fd0f61283894b504e1c2
+  search_scope: rg --hidden --no-ignore --follow in data/records research reviews
+    history, hydrozincite/zincite and four accepted DOIs; bounded author original-main
+    and cited raw inventory.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species versus material and experiment
+  outcome: supported
+  summary: Authoritative formula and symmetry support a distinct mineral owner. Synthetic
+    analogues or mixed field samples are explicitly bounded. No inherited zinc criticality,
+    mineral purity, recovered yield or industrial deployment asserted.
+  target_ids:
+  - cmmmech:zincite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+- assessment_id: organism
+  area: identity
+  topic: Species and source strain
+  outcome: supported
+  summary: Species5061 supports Aspergillus niger nomenclature; CBS140837 is source-reported,
+    not independently authenticated. Upstream mycelial conditioning differs from live-cell
+    reaction and no sterility is inferred from0.45µm filtration.
+  target_ids:
+  - cmmmech:zincite
+  evidence_ids:
+  - record
+  - sebesta
+  - niger
+- assessment_id: phase
+  area: evidence
+  topic: Partial fungal-conditioned-liquid transformation
+  outcome: supported
+  summary: Figure4 explicitly retains zincite plus assigned zinc oxalate dihydrate
+    after5days; TEMFigure5 lacks spatial phase mapping. No matching unconditioned/pH/pure-oxalate
+    phase control proves exclusive oxalate necessity or core-shell structure. The
+    owner keeps the observed mixture.
+  target_ids:
+  - cmmmech:zincite
+  evidence_ids:
+  - record
+  - sebesta
+  - sebestfig4
+  - sebestfig5
+- assessment_id: amounts
+  area: quantity
+  topic: Source concentrations and inferred conversion
+  outcome: supported
+  summary: 11.6to1.2mM oxalate decline yields the source43mg/8.6% estimate, not isolated
+    or XRD-quantified product. Independent formula check of0.0033gZnO/50mL givesabout53mgZn/L
+    versus6.5 nominal; Figure2c also exceeds6.5. Owner correctly declines uptake/cross-form
+    balance and treats<3kDa as operational.
+  target_ids:
+  - cmmmech:zincite
+  evidence_ids:
+  - record
+  - sebesta
+  - sebestfig2
+  - sebesta_si
+- assessment_id: natural
+  area: evidence
+  topic: Abiotic natural-specimen arm
+  outcome: supported
+  summary: S29–S31 show assigned ZnO phase, disappearance of visible solids and assigned
+    solute NMR after75°C24h with3eqMeIm/2.4eqthiophenol. Supplier-described Polish
+    natural origin is unauthenticated. No measured100% mass recovery, impurity absence,
+    replicate count or feed balance is asserted.
+  target_ids:
+  - cmmmech:zincite
+  evidence_ids:
+  - record
+  - koskela
+  - koskela_si
+- assessment_id: boundaries
+  area: evidence
+  topic: Synthetic controls and unrelated downstream stages
+  outcome: supported
+  summary: Single-ligand controls and synthetic-powder kinetics inform context but
+    do not quantify natural-specimen rates. The thermalZnS residue comes from complex
+    crystals, not a demonstrated recovered yield from this specimen. Synthetic kinetic
+    SI rate-table/plot inconsistency is outside adopted numeric claims.
+  target_ids:
+  - cmmmech:zincite
+  evidence_ids:
+  - record
+  - koskela
+  - koskela_si
+- assessment_id: provenance
+  area: provenance
+  topic: Independent exact-byte review and actual validation
+  outcome: supported
+  summary: Reviewer authored wurtzite, not this owner. Canonical native capture preceded
+    owner judgment; original preparatory capture was preserved and repository identity
+    normalized before any persisted review. Shared acquisitions were independently
+    read and original graphics checked; no owner edits.
+  target_ids:
+  - cmmmech:zincite
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - batchlog
+findings: []
+actions: []
+limitations:
+- No independent experimental replication, raw-instrument reanalysis, phase-refinement
+  reproduction or authenticated experimental stock is claimed.
+- All accepted quantities retain their original arm, operational denominator and unresolved
+  source conflicts; no recovery or deployment claim added.
+- Bounded notice/dedup searches do not prove exhaustive absence of contrary publications.
+- Shared source acquisition is not independent experimental replication; independent
+  review concerns exact owner bytes and primary evidence.
+- Publication, hosted CI and postmerge gates are separate future operational checks.
+- Commercial synthetic ZnO and source-described natural zincite remain distinct. Polish
+  specimen geology and stock purity are not independently established.
+- Full main and relevant ESI evidence inspected; unrelated computational coordinates/CIF
+  data and every synthetic-rate fit were not independently reanalyzed.
+notes:
+- Actual review start and canonical inspection retained externally. Earlier preparatory
+  repository label was normalized in a fresh inspection before owner-level assessment;
+  no saved scientific review was rewritten.
+- A preliminary validation-help command used a nonexistent scripts/validate_records.py
+  path and exited2 without validation; the subsequent actual cmmmech strict named
+  command is the accepted exit0 check.
+- Every accepted primary and authority entry binds an actual nonempty local artifact
+  with absolute locator and SHA256. Failed downloads are excluded.

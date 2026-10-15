@@ -1,0 +1,2734 @@
+{
+  "started_at": "2026-10-15T01:44:15.470493Z",
+  "finished_at": "2026-10-15T01:45:03.307938Z",
+  "filename_note": "013041Z is the observed preparation/reservation timestamp; started_at/finished_at are actual later execution times.",
+  "reviewer": "codex /root/round68_iron_sulfides",
+  "authorship": "Authored wurtzite, independently scientifically accepted by phosphate reviewer. Independently reviewed hydrozincite and zincite. This audit checks operational publication consistency and does not self-accept authored science.",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "unresolved_corrective_findings": 0,
+  "worktree": "/private/tmp/CMMMech-expansion-round85-20261015",
+  "base": "51adf4be6c544642f6bf54a4e7f514adb84aa34e",
+  "branch": "curate/cmm-expansion-round85-20261015",
+  "state": "working_tree",
+  "counts": {
+    "record_count": 409,
+    "history_count": 468,
+    "structured_review_count": 485,
+    "review_base_count": 86,
+    "covered_records": 409
+  },
+  "issues": {
+    "corrected_review_issues": [
+      291
+    ],
+    "closed_source_issues": [],
+    "open_source_issues": [
+      286,
+      287,
+      288,
+      289,
+      290
+    ]
+  },
+  "working_inputs": [
+    {
+      "path": "README.md",
+      "sha256": "7f3aabaf4ea19bbddf9a4f409cb498befd0b014b6e1284203fad12a41ffe4eb1"
+    },
+    {
+      "path": "data/records/azurite.yaml",
+      "sha256": "10f41fc69980d6adc1213e715fafa37d08a4eacf6f4d917c8ede804b2a20261f"
+    },
+    {
+      "path": "data/records/hydrozincite.yaml",
+      "sha256": "f8844db2bfa5387f935c677474d10cd198a9eb2979cfac99d5bff79c0706443e"
+    },
+    {
+      "path": "data/records/tenorite.yaml",
+      "sha256": "e5b0bfd564a30686d9ca03cdc24b971bafd0f213624d377ff71dd3b050037112"
+    },
+    {
+      "path": "data/records/titanogypsum.yaml",
+      "sha256": "da978617d7f84a63f2904ee3e78a682c3ff8d0644e85b64d86ff1da5ab409f72"
+    },
+    {
+      "path": "data/records/wurtzite.yaml",
+      "sha256": "3023a9fa6aa8f6f82b2284252f7245ad85ab1ff297f5cddaee53e61f2f4590a3"
+    },
+    {
+      "path": "data/records/zincite.yaml",
+      "sha256": "0fbdd9973615d12b5a3b3dbedc4c052899fbb473f498ceea9f2060238dde36a2"
+    },
+    {
+      "path": "history/records/azurite/2026-10-15T012057Z-codex-d55d50.yaml",
+      "sha256": "5347888f6c2c64bd1c0ef730777f22b858236bf7f2534a6b176844bb128b6fea"
+    },
+    {
+      "path": "history/records/hydrozincite/2026-10-15T011935Z-codex-2a3b67.yaml",
+      "sha256": "15455b9a72b34125ac17a2522f2fe7729358d57f8d87eb71a510a5e5a1db93e6"
+    },
+    {
+      "path": "history/records/tenorite/2026-10-15T012116Z-codex-1abab6.yaml",
+      "sha256": "0d6d4159894605ea39ff0fe8aee9c31dc03002c3c3df574a9f4a889be8341aae"
+    },
+    {
+      "path": "history/records/titanogypsum/2026-10-15T012037Z-codex-1bad0c.yaml",
+      "sha256": "9fbfc9ce9651546c6b7fd58680ca1b4a66813235ef9b81cf13b99ca4412c4bec"
+    },
+    {
+      "path": "history/records/wurtzite/2026-10-15T011942Z-codex-2cd232.yaml",
+      "sha256": "0134924e4afe1e980457c802a12753e7452f59da7c3279808e16b733eba770ea"
+    },
+    {
+      "path": "history/records/zincite/2026-10-15T011944Z-codex-797b25.yaml",
+      "sha256": "105757707fbc188ce321d9d8a0d66c4b81a51f1258a49c085dfc12e0c5654572"
+    },
+    {
+      "path": "pages/browse.html",
+      "sha256": "31ef0f7ee4755c36dc16ac31684fdb8fe7b1f726c7a79ece81b5e50e69f05cd4"
+    },
+    {
+      "path": "pages/index.html",
+      "sha256": "a3b3cc9dfe3e9aaeae72185924dc8fd933fffde88d77cf517e60520c3d68d475"
+    },
+    {
+      "path": "pages/index.json",
+      "sha256": "30119f3f7bb79426b5b9a0093c0fa683f06afbe75376f108e7b69a9e3bdf0a72"
+    },
+    {
+      "path": "pages/kinds/commodity.html",
+      "sha256": "a0800b34507d865b0efb4a568fa5e900f75c6d06a3618d25aa5ed5642c5131a0"
+    },
+    {
+      "path": "pages/kinds/element.html",
+      "sha256": "8a8983838b98508b87d4f6eff9bf086cc7deb6666f1f9cc31f1cea0114ca4d7a"
+    },
+    {
+      "path": "pages/kinds/mineral.html",
+      "sha256": "377c710e78f7e70864d0b9f27b60dd0b394e5f3f1e35be8c8b31278d705fcdd7"
+    },
+    {
+      "path": "pages/kinds/mineral_group.html",
+      "sha256": "7c2aa11694cadbdef855af6c722491ecbc06eead59e582700823ff7e9950910e"
+    },
+    {
+      "path": "pages/kinds/primary_resource.html",
+      "sha256": "59269710313cc4148f831e2cfec43ea27864dbdb5ae8a6cae598bdcad7436453"
+    },
+    {
+      "path": "pages/kinds/secondary_resource.html",
+      "sha256": "f7f802a9bac2766179cbc072c439f3a6d8c4f1576f1545ebe4e63599ca3172f4"
+    },
+    {
+      "path": "pages/materials/azurite.html",
+      "sha256": "7284a0aa30df94a24383a9c6e6630b774d73a99feeec03064ff9d46a391af44b"
+    },
+    {
+      "path": "pages/materials/hydrozincite.html",
+      "sha256": "2c3bf18dcad5ea0f2ed4bd48944c43e84a4d36bfcb74c4c2993a6be611ba3076"
+    },
+    {
+      "path": "pages/materials/tenorite.html",
+      "sha256": "16ffc2e68aaceef7749e14513f7ce474c4c7e6c8b5f4414cd272f4b33b5ae907"
+    },
+    {
+      "path": "pages/materials/titanogypsum.html",
+      "sha256": "c74cf6ac7edfb9b24540691b5861c185034dfb207509303853014bbf95ce5818"
+    },
+    {
+      "path": "pages/materials/wurtzite.html",
+      "sha256": "8b2eea5df3995f84579579073ba0c3b51e3c5941ae1d418167ad4ad4b7f7cf5d"
+    },
+    {
+      "path": "pages/materials/zincite.html",
+      "sha256": "225e7b7db09456f24394406ec53610e9aa835fdd6a87fd57837aaca768c96ddc"
+    },
+    {
+      "path": "pages/processes/bioleaching.html",
+      "sha256": "31ef8f6b1b0158412dfc126a84a6d64c9373e5294e0a9bed767c44607bb53f3a"
+    },
+    {
+      "path": "pages/processes/biomineralization.html",
+      "sha256": "5e0514eefbfbec3ee548c14fea8de767efc174453000cfa2be8ee780ba980e70"
+    },
+    {
+      "path": "pages/processes/biosorption.html",
+      "sha256": "a8132cc188628ef6ae4cb9a98c82e1fd6d8ad560bc56eca1746d84797ae93512"
+    },
+    {
+      "path": "pages/processes/other.html",
+      "sha256": "74272f6cc26a9f91f63789d6a57c923a66c86b1c2741ace2b2b3fdbbbfbf21c7"
+    },
+    {
+      "path": "pages/processes/recovery.html",
+      "sha256": "2f7c6ef2f66b02de5dec227aa4b2890b6c658913d0a44a10d90a219957c1aa49"
+    },
+    {
+      "path": "pages/processes/redox_transformation.html",
+      "sha256": "4a0e5c37edbcdf6c73fe5b74fdf9436e85a59c6db79edb94332ccc302ca81fbb"
+    },
+    {
+      "path": "pages/processes/separation.html",
+      "sha256": "63be3774c86b26abbcdfb648fe27cd992a11905bf58ff2b95d620bb12c03600b"
+    },
+    {
+      "path": "research/ingests/round85-checks-20261015/baseline.json",
+      "sha256": "9d1d5c2f943e603d73a445abb9a7a2f4e5a709f14b5f92eca97a7c96036e4533"
+    },
+    {
+      "path": "research/ingests/round85-checks-20261015/baseline.log",
+      "sha256": "2ec2fce9c9f3b5c90e239a2b0d41a23196621da9cc3578ce572aeea40c9ab676"
+    },
+    {
+      "path": "research/ingests/round85-checks-20261015/final-gates.json",
+      "sha256": "265694b8cec9b7c39325508f7811fea2ad2b656d6553c62449c545255123e748"
+    },
+    {
+      "path": "research/ingests/round85-checks-20261015/final-gates.log",
+      "sha256": "eaff9b50e0f61675b41fd2ead3e28a22a7673f273f263808e7cd9cc6b851acd9"
+    },
+    {
+      "path": "research/ingests/round85-checks-20261015/governed-check.json",
+      "sha256": "21abb76dd990e198a6e24a5bc315d565afdf895fbfb6c4bef9c7508ac7478385"
+    },
+    {
+      "path": "research/ingests/round85-checks-20261015/governed-check.log",
+      "sha256": "3b073aa29da7dc3996edbe18c83d0d6593ba6d03238b663efc40286be4cf428e"
+    },
+    {
+      "path": "research/ingests/round85-checks-20261015/local-coverage.json",
+      "sha256": "68ea06274184b34285e2095ddc00bd8c77735d0a1b688cc7ed5cd7d541574b21"
+    },
+    {
+      "path": "research/ingests/round85-checks-20261015/preservation-precommit.json",
+      "sha256": "be3572577af1c4b069434b6daa06040c1574d26dbd999c326ba299283e2696cb"
+    },
+    {
+      "path": "research/ingests/round85-checks-20261015/review-check-final.json",
+      "sha256": "bbd73ca82f4475680b3be6e2d8bed6bb532f89df7c71ef763db95e3c37db0bed"
+    },
+    {
+      "path": "research/ingests/round85-checks-20261015/review-check-final.log",
+      "sha256": "1e02f56441679a3681f35b0d5429cb69c90545b3e39d0234d174dee3ae4ba0cb"
+    },
+    {
+      "path": "research/ingests/round85-frontier-20261015.json",
+      "sha256": "0c0f4e5f3be3c56ffb1da016ebfeb26ca4f4712eed30fbc14f25bdcf772fa173"
+    },
+    {
+      "path": "research/ingests/round85-frontier-20261015.md",
+      "sha256": "88f668e35a586b10722fbce240bef88cea9c91d9d20f3d61a1b3494ac8ad62f2"
+    },
+    {
+      "path": "research/sources/round85-copper-minerals-20261015/report.json",
+      "sha256": "17a0272ab5f1ffb67b507af862e4310716e983d9908b09884aca97b78304883b"
+    },
+    {
+      "path": "research/sources/round85-copper-minerals-20261015/report.md",
+      "sha256": "fa647816d8a048267d7dd1485e3a3150a7a09cf2cbf558de41e06d8c29bb5316"
+    },
+    {
+      "path": "research/sources/round85-resources/20261015T012241Z-source-investigation.json",
+      "sha256": "568b8a2dd2e4b2e9fc2aa359251a51a9facf023256e4133d9b8dc93a8ccd93e6"
+    },
+    {
+      "path": "research/sources/round85-resources/20261015T012241Z-source-investigation.md",
+      "sha256": "f6cc8196cf84ac9b5a60d2e6b71ff583648693342a61600ec0ab8ac859dd6484"
+    },
+    {
+      "path": "research/sources/round85-wurtzite-20261015/report.json",
+      "sha256": "8cf561c8ab25b11dbcf292a0f7d5da797d786aae0b998254b3b54a816d9ec616"
+    },
+    {
+      "path": "research/sources/round85-wurtzite-20261015/report.md",
+      "sha256": "92e45c21ad9a785e12beab94bcc5003f0db12bc29a6c9f1d492f0b5fa7a42e6b"
+    },
+    {
+      "path": "research/sources/round85-zinc-20261015/report.json",
+      "sha256": "75a19d689655ddba2e7f5cd48ce54a71d68e2657f5ec8e51566e7c758be44f86"
+    },
+    {
+      "path": "research/sources/round85-zinc-20261015/report.md",
+      "sha256": "255f584630ea5c1ba04e69dbe33d2ff68b95678ad9106f7b8acc47c3442c24a8"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round57-recover-original.py",
+      "sha256": "a7c9487654d05821423a7d95844ac1289e80b5958107f1372cc0d0d3ed07906b"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-cleanup.py",
+      "sha256": "01fa00579ab75a05765d9b5acd24a5b588db77c8b4840b79b357d82c4dc7688e"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-commit.py",
+      "sha256": "8e9042374ea233a2b9b70657216504e109f50596d86f215ce2be1d2953484e18"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-enqueue.py",
+      "sha256": "86719af78b0fb0d7108e71e773f3a6a9ee8fc3dc5764c48f07514ec3ac2018a5"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-final-gates.py",
+      "sha256": "84fdec02b3e2c4cf346b599b29bb638ee2d2f88df90a25cdc3e57b018d9738cd"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-helper-config.json",
+      "sha256": "baa3b9791b1e7e6393e93077d5108e66ebea263a587b437f4b701bffd5634689"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-isolated-coverage.py",
+      "sha256": "e0d29b4d393d3cdcdc73a705bb2ee619c282080306e39f753a12eaee6711ed36"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-isolated-verification.py",
+      "sha256": "8802358da3b2f0c74c46f9d8d81420e47fbd5d2016c5f4cc727c088bb733242f"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-open-pr.py",
+      "sha256": "cf3fdaa05f8573b72128d6e486ede846978a7d3fedc9136bcbc3e2aaf3391710"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-post-review.py",
+      "sha256": "2308e293ec11f5ab9718c35f811267555619cafb52df71c044d19dc6881c03af"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-review-check-final.py",
+      "sha256": "3ceeaec90c6a65fb46868efb3e48ea0153ffe02ba04c7d6b770606c453830bc7"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-sync-main.py",
+      "sha256": "17aaebe9b035169d3209dd73c2e66902c48b4f7ab16131e4583af356a82c75dd"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/20261015T012555Z-operational-static.json",
+      "sha256": "492c6b6c5e3e3989889fa16ce7ebc2a224d66aa5a73a6be60f4f8e5bb1dfe598"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/20261015T012555Z-operational-static.md",
+      "sha256": "2753b38a1fb571ba6bde5427728618a7adb35e124dbaeffd54ffdd778bc718a3"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/20261015T012731Z-azurite-dossier-locator-initial.json",
+      "sha256": "1ab75e99c78394e508541471be4ee9d3aabc6990a0799a016bb60abcc393be6d"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/20261015T012731Z-azurite-dossier-locator-initial.md",
+      "sha256": "b1fd1c8594d1463b6225e48bc00655153b5d8c2522f27a3af4f4e57fa9ded6d5"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/20261015T012949Z-azurite-dossier-locator-resolution.json",
+      "sha256": "e4600229bf4f5d7443a260bc3aa12cabc7ef5ad32b1d7cf19869d7a24391781f"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/20261015T012949Z-azurite-dossier-locator-resolution.md",
+      "sha256": "3d5dfba1c73b945f2f2f73e3bfffc6341475501ba67ee2d618ac2d75daee0f5c"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/claw-admission.json",
+      "sha256": "f89ed075782dad239c8021c3ce4ee1250521f5257371a047e3fff7c1c8ea2efc"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/claw-convergence.json",
+      "sha256": "e8cd1458c3781c33c30db3100ce1c5398d6dc568466d8b05522cf8d8e377bdaa"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/cmm-round85-closeout-static-20261015T013642Z.json",
+      "sha256": "d650ec807dba349f3e1e541ac91de42b2e06f17de42001088e44949dee107adf"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/cmm-round85-closeout-static-20261015T013642Z.md",
+      "sha256": "284e993b72d7164d8e50ebe4aee4f157f4b8917dec7f8af1b20f1ffd6fa88fe9"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/cmm-round85-hosted-audit-paginated.py",
+      "sha256": "eb207ba390b8311330e21b94ba0dc02af7761377435c39c3412b99956ad6c866"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/cmm-round85-hosted-helper-static-20261015T013133Z.json",
+      "sha256": "6703ae2b2f2d0cefb7e7115bbec0fda12ff230be1569db48a40ae97681569970"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/cmm-round85-hosted-helper-static-20261015T013133Z.md",
+      "sha256": "ce6d4d75e58ff4be67b85076f3f97dd22c80876dcd2422da55a322406d6e23e5"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/cmm-round85-hosted-pagination-check.json",
+      "sha256": "77891f08bb380c55a735ac351dbc98bd8f40cf1a04fae7aadbdf272914602abb"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/cmm-round85-hosted-peer.py",
+      "sha256": "e4c618ef70202f445a5845b88ebf652ca5d4f5d9e881af2c49869a5c38b3a634"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/cmm-round85-independent-closeout.py",
+      "sha256": "0d11b58f106e994bd44cdff4edfae93fe653df4443f2cc664b76d58d2884679c"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/cmm-round85-peer-helper-final-derivation.json",
+      "sha256": "371c37ff3678b1e6e7842cb529e68feb59e2fc9cac3f09a9ad675650a58d6fa0"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/cmm_round85_peer_checks.py",
+      "sha256": "256acf1a2c476b80dc75586c5f8b6972ef29ea25f6a6da33b923d0d049f81790"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/effective-rules.json",
+      "sha256": "b44e72b3e1d20331612c24febf9db8edfb58dc09f530c9846ca8970a6d32e3d2"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/initialization.json",
+      "sha256": "b91fe759ad49677cc64264fa0fe5f6a2417a212d5858f78f2b7fb65de1770a64"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/integration-issue3.json",
+      "sha256": "40ec28ecfca5663c82602799a6dcf5b6e0c0bd9796d1852110196b2e9fe88b78"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/issues-posted.json",
+      "sha256": "6531257866926d41ce44b36b6c95957528d7e6d013348a27e803e6269cd3bdc0"
+    },
+    {
+      "path": "reviews/publication/20261015-round85/shepherd-status.json",
+      "sha256": "0c84b7e9c3bf8f7ced4c288b4c94231f12e202f4e5412b243e0c046507fc9acc"
+    },
+    {
+      "path": "reviews/structured/20261015T013234Z-hydrozincite-round85-independent/review.md",
+      "sha256": "a11dee477e7f46aeec0348289a2e879b18e934124432790dbae56850380f7128"
+    },
+    {
+      "path": "reviews/structured/20261015T013234Z-hydrozincite-round85-independent/review.yaml",
+      "sha256": "bad451f7ed1ae6b2b666258ed1883e5b6cdb4677f6e5cf35913941d6de09d551"
+    },
+    {
+      "path": "reviews/structured/20261015T013234Z-zincite-round85-independent/review.md",
+      "sha256": "818db89662dbe6e2c5d955a4f4ddcce6b8750cfb3f44a9871580fdabd6afffc6"
+    },
+    {
+      "path": "reviews/structured/20261015T013234Z-zincite-round85-independent/review.yaml",
+      "sha256": "ba76deef1b6386da36d87596e25b958217314ddb81f23a24e4fa1f3defd1fdb7"
+    },
+    {
+      "path": "reviews/structured/20261015T013238Z-wurtzite-round85-independent/review.md",
+      "sha256": "800d5475ca74df7edffb9f9bf537e15f5f5e4c539505a59a6e6b2d4b469f0c14"
+    },
+    {
+      "path": "reviews/structured/20261015T013238Z-wurtzite-round85-independent/review.yaml",
+      "sha256": "d069b1b10514c9f189a0ec63bdd7c9a91489ca04f98bfddbd292f0dbfdf27f0f"
+    },
+    {
+      "path": "reviews/structured/20261015T013243Z-azurite-round85-independent/review.md",
+      "sha256": "98c306f74adcb639c0142ba06b962452e3d27ae129d07838af6baad96e053582"
+    },
+    {
+      "path": "reviews/structured/20261015T013243Z-azurite-round85-independent/review.yaml",
+      "sha256": "a034f149b0050f04b2167d396a460b9887267e1a5e88a9699e51a294ab612df5"
+    },
+    {
+      "path": "reviews/structured/20261015T013250Z-tenorite-round85-independent/review.md",
+      "sha256": "4154c2f4ec8eeade6602a37e9028b81b07be909248dbef77572fbeb8701e8cd9"
+    },
+    {
+      "path": "reviews/structured/20261015T013250Z-tenorite-round85-independent/review.yaml",
+      "sha256": "64f2df21d63d3e20b78f33956887fee171029fcc93f4e6af76de4b958467298f"
+    },
+    {
+      "path": "reviews/structured/20261015T013338Z-titanogypsum-round85-independent/review.md",
+      "sha256": "e666bf301457b61231e77e6f22a8a257651e076e7e5e81ce8a2bfaee8d5b0061"
+    },
+    {
+      "path": "reviews/structured/20261015T013338Z-titanogypsum-round85-independent/review.yaml",
+      "sha256": "de174987c2b530e184ac30d84e303256d3ad2d6262af2a116501329c5e190934"
+    }
+  ],
+  "final_scientific_reviews": [
+    {
+      "record": "data/records/wurtzite.yaml",
+      "sha256": "3023a9fa6aa8f6f82b2284252f7245ad85ab1ff297f5cddaee53e61f2f4590a3",
+      "review": "reviews/structured/20261015T013238Z-wurtzite-round85-independent/review.yaml",
+      "review_sha256": "d069b1b10514c9f189a0ec63bdd7c9a91489ca04f98bfddbd292f0dbfdf27f0f",
+      "reviewer": {
+        "identity": "codex /root/round68_phosphates",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Reviewer authored hydrozincite/zincite, not this owner or history. Wurtzite curator is round68_iron_sulfides; copper owners were authored by round68_new_frontier with root source research. Shared acquisition is disclosed; original claim-bearing text/graphics, authorities and identifiers were independently checked after native inspection. No laboratory replication."
+      },
+      "verdict": "pass_with_limitations"
+    },
+    {
+      "record": "data/records/hydrozincite.yaml",
+      "sha256": "f8844db2bfa5387f935c677474d10cd198a9eb2979cfac99d5bff79c0706443e",
+      "review": "reviews/structured/20261015T013234Z-hydrozincite-round85-independent/review.yaml",
+      "review_sha256": "bad451f7ed1ae6b2b666258ed1883e5b6cdb4677f6e5cf35913941d6de09d551",
+      "reviewer": {
+        "identity": "codex /root/round68_iron_sulfides",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Owner/history authored by round68_phosphates; reviewer authored wurtzite only, independently inspected exact target before assessment, read primary originals and figures, and made no owner edits."
+      },
+      "verdict": "pass_with_limitations"
+    },
+    {
+      "record": "data/records/zincite.yaml",
+      "sha256": "0fbdd9973615d12b5a3b3dbedc4c052899fbb473f498ceea9f2060238dde36a2",
+      "review": "reviews/structured/20261015T013234Z-zincite-round85-independent/review.yaml",
+      "review_sha256": "ba76deef1b6386da36d87596e25b958217314ddb81f23a24e4fa1f3defd1fdb7",
+      "reviewer": {
+        "identity": "codex /root/round68_iron_sulfides",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Owner/history authored by round68_phosphates; reviewer authored wurtzite only, independently inspected exact target before assessment, read primary originals and figures, and made no owner edits."
+      },
+      "verdict": "pass_with_limitations"
+    },
+    {
+      "record": "data/records/titanogypsum.yaml",
+      "sha256": "da978617d7f84a63f2904ee3e78a682c3ff8d0644e85b64d86ff1da5ab409f72",
+      "review": "reviews/structured/20261015T013338Z-titanogypsum-round85-independent/review.yaml",
+      "review_sha256": "de174987c2b530e184ac30d84e303256d3ad2d6262af2a116501329c5e190934",
+      "reviewer": {
+        "identity": "codex /root",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Frontier agent authored this record/history. Root independently inspected primary claim-bearing methods/results, Table1 and Figures1-7, supplementtext/graphics and taxonomy, then assessed the exact inspected maintained bytes without editing the owner. Downloads shared, assessment independent."
+      },
+      "verdict": "pass_with_limitations"
+    },
+    {
+      "record": "data/records/azurite.yaml",
+      "sha256": "10f41fc69980d6adc1213e715fafa37d08a4eacf6f4d917c8ede804b2a20261f",
+      "review": "reviews/structured/20261015T013243Z-azurite-round85-independent/review.yaml",
+      "review_sha256": "a034f149b0050f04b2167d396a460b9887267e1a5e88a9699e51a294ab612df5",
+      "reviewer": {
+        "identity": "codex /root/round68_phosphates",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Reviewer authored hydrozincite/zincite, not this owner or history. Wurtzite curator is round68_iron_sulfides; copper owners were authored by round68_new_frontier with root source research. Shared acquisition is disclosed; original claim-bearing text/graphics, authorities and identifiers were independently checked after native inspection. No laboratory replication."
+      },
+      "verdict": "pass_with_limitations"
+    },
+    {
+      "record": "data/records/tenorite.yaml",
+      "sha256": "e5b0bfd564a30686d9ca03cdc24b971bafd0f213624d377ff71dd3b050037112",
+      "review": "reviews/structured/20261015T013250Z-tenorite-round85-independent/review.yaml",
+      "review_sha256": "64f2df21d63d3e20b78f33956887fee171029fcc93f4e6af76de4b958467298f",
+      "reviewer": {
+        "identity": "codex /root/round68_phosphates",
+        "kind": "agent",
+        "model": "GPT-6",
+        "independence": "independent",
+        "independence_basis": "Reviewer authored hydrozincite/zincite, not this owner or history. Wurtzite curator is round68_iron_sulfides; copper owners were authored by round68_new_frontier with root source research. Shared acquisition is disclosed; original claim-bearing text/graphics, authorities and identifiers were independently checked after native inspection. No laboratory replication."
+      },
+      "verdict": "pass_with_limitations"
+    }
+  ],
+  "primary_source_bindings": [
+    {
+      "review": "20261015T013238Z-wurtzite-round85-independent",
+      "evidence_id": "main",
+      "kind": "primary_source",
+      "reference": "https://hdl.handle.net/10334/2563",
+      "sha256": "088266e2a2a87aad68c73ceb55620f328c03618b89fe1b48f96f2f8a54be8d20",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-sulfides-research/castillo-unia-thesis.pdf",
+          "sha256": "088266e2a2a87aad68c73ceb55620f328c03618b89fe1b48f96f2f8a54be8d20",
+          "bytes": 4547862
+        }
+      ]
+    },
+    {
+      "review": "20261015T013238Z-wurtzite-round85-independent",
+      "evidence_id": "ima",
+      "kind": "authority",
+      "reference": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf",
+          "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+          "bytes": 3129886
+        }
+      ]
+    },
+    {
+      "review": "20261015T013238Z-wurtzite-round85-independent",
+      "evidence_id": "handbook",
+      "kind": "authority",
+      "reference": "https://www.handbookofmineralogy.org/pdfs/wurtzite.pdf",
+      "sha256": "16d58b02258e3b151b5ddcd8ba0d78154a1e168946bed29d5674d8246a0eb4b6",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-sulfides-research/wurtzite-handbook.pdf",
+          "sha256": "16d58b02258e3b151b5ddcd8ba0d78154a1e168946bed29d5674d8246a0eb4b6",
+          "bytes": 47687
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-hydrozincite-round85-independent",
+      "evidence_id": "ima",
+      "kind": "authority",
+      "reference": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf",
+          "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+          "bytes": 3129886
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-hydrozincite-round85-independent",
+      "evidence_id": "handbook",
+      "kind": "authority",
+      "reference": "https://www.handbookofmineralogy.org/pdfs/hydrozincite.pdf",
+      "sha256": "5627deedc4f239c16927f925d8ec621f05b5b3152e7da2da9928885fc25e79fe",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite-handbook.pdf",
+          "sha256": "5627deedc4f239c16927f925d8ec621f05b5b3152e7da2da9928885fc25e79fe",
+          "bytes": 53127
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-hydrozincite-round85-independent",
+      "evidence_id": "podda",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.1128/AEM.66.11.5092-5098.2000",
+      "sha256": "1ae9718a6a45e9d48b50edf7b9169cc7d839ecbc98493f3620af674535db975f",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2000-pmc.html",
+          "sha256": "1ae9718a6a45e9d48b50edf7b9169cc7d839ecbc98493f3620af674535db975f",
+          "bytes": 155800
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-hydrozincite-round85-independent",
+      "evidence_id": "ngwenya",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.1098/rsif.2014.0845",
+      "sha256": "0df419f18324bc28d0d84ed43da1d27bf465b67f344b76da58bd662b20c4ebe5",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-pmc.html",
+          "sha256": "0df419f18324bc28d0d84ed43da1d27bf465b67f344b76da58bd662b20c4ebe5",
+          "bytes": 162526
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-hydrozincite-round85-independent",
+      "evidence_id": "poddafig1",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.1128/AEM.66.11.5092-5098.2000",
+      "sha256": "ab3fff1153abffd2a566717958ce0ca67018f8a905a97ecbb9ce571cb482517f",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2000-am1100677001.jpg",
+          "sha256": "ab3fff1153abffd2a566717958ce0ca67018f8a905a97ecbb9ce571cb482517f",
+          "bytes": 30142
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-hydrozincite-round85-independent",
+      "evidence_id": "poddafig2",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.1128/AEM.66.11.5092-5098.2000",
+      "sha256": "42360dcc839facb776c748443f9765d2604f72125b916ba63a2aa4ed52a9f019",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2000-am1100677002.jpg",
+          "sha256": "42360dcc839facb776c748443f9765d2604f72125b916ba63a2aa4ed52a9f019",
+          "bytes": 21706
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-hydrozincite-round85-independent",
+      "evidence_id": "poddafig3",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.1128/AEM.66.11.5092-5098.2000",
+      "sha256": "4a272aa292e2c7d6b79e5bdce689133e097da650161e29541e4a2f5985ac4f5e",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2000-am1100677003.jpg",
+          "sha256": "4a272aa292e2c7d6b79e5bdce689133e097da650161e29541e4a2f5985ac4f5e",
+          "bytes": 78632
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-hydrozincite-round85-independent",
+      "evidence_id": "poddafig4",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.1128/AEM.66.11.5092-5098.2000",
+      "sha256": "cc3a2a16fb25d2db88533dc8ec6cd4cc1bb889c05176a76e79eb1e315863d0b7",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2000-am1100677004.jpg",
+          "sha256": "cc3a2a16fb25d2db88533dc8ec6cd4cc1bb889c05176a76e79eb1e315863d0b7",
+          "bytes": 83403
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-hydrozincite-round85-independent",
+      "evidence_id": "ngwenyafig1",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.1098/rsif.2014.0845",
+      "sha256": "48b232d801c20e9de3b5927825a6c3d3856ecc8474d72aa60733bc176deb1df2",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g1.jpg",
+          "sha256": "48b232d801c20e9de3b5927825a6c3d3856ecc8474d72aa60733bc176deb1df2",
+          "bytes": 115243
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-hydrozincite-round85-independent",
+      "evidence_id": "ngwenyafig2",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.1098/rsif.2014.0845",
+      "sha256": "bb6c9efc212a0e65c3b9e4da9293d6ceac9a6936bbb6a64fa475f6320ee36c23",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g2.jpg",
+          "sha256": "bb6c9efc212a0e65c3b9e4da9293d6ceac9a6936bbb6a64fa475f6320ee36c23",
+          "bytes": 167641
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-hydrozincite-round85-independent",
+      "evidence_id": "ngwenyafig3",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.1098/rsif.2014.0845",
+      "sha256": "96c6ed7ca1d2da893010c6ddccea2162fd726e9318d909f8c745be7b6b6d0491",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g3.jpg",
+          "sha256": "96c6ed7ca1d2da893010c6ddccea2162fd726e9318d909f8c745be7b6b6d0491",
+          "bytes": 299799
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-hydrozincite-round85-independent",
+      "evidence_id": "ngwenyafig4",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.1098/rsif.2014.0845",
+      "sha256": "e4383c6befe576a0ff421831d9fce36f9dc45914e656d3359212392544f9e608",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g4.jpg",
+          "sha256": "e4383c6befe576a0ff421831d9fce36f9dc45914e656d3359212392544f9e608",
+          "bytes": 261656
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-hydrozincite-round85-independent",
+      "evidence_id": "ngwenyafig5",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.1098/rsif.2014.0845",
+      "sha256": "061d8b0b76b1d229a7b1c1348cebd835924aaec6f0744dae22d55b3eea55640d",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g5.jpg",
+          "sha256": "061d8b0b76b1d229a7b1c1348cebd835924aaec6f0744dae22d55b3eea55640d",
+          "bytes": 76827
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-hydrozincite-round85-independent",
+      "evidence_id": "ngwenyafig6",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.1098/rsif.2014.0845",
+      "sha256": "ea883e41da913acf762b4ed8b2ed7db9bc5c782eb9ebc1bf78f14aa9f17ba9a9",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g6.jpg",
+          "sha256": "ea883e41da913acf762b4ed8b2ed7db9bc5c782eb9ebc1bf78f14aa9f17ba9a9",
+          "bytes": 141214
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-zincite-round85-independent",
+      "evidence_id": "ima",
+      "kind": "authority",
+      "reference": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf",
+          "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+          "bytes": 3129886
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-zincite-round85-independent",
+      "evidence_id": "handbook",
+      "kind": "authority",
+      "reference": "https://www.handbookofmineralogy.org/pdfs/zincite.pdf",
+      "sha256": "47115d10b7dbd3fcc2714f06aad0466eca248a8d77ca9dae5a80d6c3947a0d10",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/zincite-handbook.pdf",
+          "sha256": "47115d10b7dbd3fcc2714f06aad0466eca248a8d77ca9dae5a80d6c3947a0d10",
+          "bytes": 55510
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-zincite-round85-independent",
+      "evidence_id": "sebesta",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.3390/jof6040210",
+      "sha256": "0e57e247e141666ad937ee68ce704dbbc18e06b26e386b96f9f27b2930c7a454",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-main.pdf",
+          "sha256": "0e57e247e141666ad937ee68ce704dbbc18e06b26e386b96f9f27b2930c7a454",
+          "bytes": 1891215
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-zincite-round85-independent",
+      "evidence_id": "sebesta_si",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.3390/jof6040210",
+      "sha256": "2e24be842766e0bceaff123b99258564dbf113993ac0d607fa642b83188b90cb",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-si/jof-06-00210-s001.pdf",
+          "sha256": "2e24be842766e0bceaff123b99258564dbf113993ac0d607fa642b83188b90cb",
+          "bytes": 1034704
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-zincite-round85-independent",
+      "evidence_id": "koskela",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.1039/D1SC06667F",
+      "sha256": "5023f49d8f539e7bdc3f26a04c7da0bb2bcaddbce576a7b6fe03731d39f348f1",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/zincite2022-nsf.pdf",
+          "sha256": "5023f49d8f539e7bdc3f26a04c7da0bb2bcaddbce576a7b6fe03731d39f348f1",
+          "bytes": 692858
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-zincite-round85-independent",
+      "evidence_id": "koskela_si",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.1039/D1SC06667F",
+      "sha256": "ec14ab5c79462b2d9211a0f3ebf3d54489cf2493de77209b0f06b48eb9db5f51",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/zincite2022-si/SC-013-D1SC06667F-s012.pdf",
+          "sha256": "ec14ab5c79462b2d9211a0f3ebf3d54489cf2493de77209b0f06b48eb9db5f51",
+          "bytes": 2615198
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-zincite-round85-independent",
+      "evidence_id": "niger",
+      "kind": "database",
+      "reference": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=info",
+      "sha256": "d668c305ba04f31ca50a1582a5a9c85d6547109cbc132a097d5d2185a8c34ff8",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/taxon5061.xml",
+          "sha256": "d668c305ba04f31ca50a1582a5a9c85d6547109cbc132a097d5d2185a8c34ff8",
+          "bytes": 4988
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-zincite-round85-independent",
+      "evidence_id": "sebestfig1",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.3390/jof6040210",
+      "sha256": "d5d9cd0ba2388470abfc4092981544a34b2daa49d8c18237a2e7fa89cda97cbf",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-jof-06-00210-g001.jpg",
+          "sha256": "d5d9cd0ba2388470abfc4092981544a34b2daa49d8c18237a2e7fa89cda97cbf",
+          "bytes": 50567
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-zincite-round85-independent",
+      "evidence_id": "sebestfig2",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.3390/jof6040210",
+      "sha256": "afc7314b61e05d14fbc43d72a8622347744ac42b44fcc2d5dc1fba77965dfc6f",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-jof-06-00210-g002.jpg",
+          "sha256": "afc7314b61e05d14fbc43d72a8622347744ac42b44fcc2d5dc1fba77965dfc6f",
+          "bytes": 79493
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-zincite-round85-independent",
+      "evidence_id": "sebestfig3",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.3390/jof6040210",
+      "sha256": "fabf6cfa1cf498b6d88165e8f9497dfbf3e675b7e96ee7cfc441d794a381d175",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-jof-06-00210-g003.jpg",
+          "sha256": "fabf6cfa1cf498b6d88165e8f9497dfbf3e675b7e96ee7cfc441d794a381d175",
+          "bytes": 71083
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-zincite-round85-independent",
+      "evidence_id": "sebestfig4",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.3390/jof6040210",
+      "sha256": "52fbff2f93c1d543963ed58c8bd5ae7e543259ebd7235b8e0b296cc919648277",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-jof-06-00210-g004.jpg",
+          "sha256": "52fbff2f93c1d543963ed58c8bd5ae7e543259ebd7235b8e0b296cc919648277",
+          "bytes": 99197
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-zincite-round85-independent",
+      "evidence_id": "sebestfig5",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.3390/jof6040210",
+      "sha256": "26bdb27ea65c61bf2e4b7eaadfcde0c064956e8c0c59ab9d3bc8148aa480b494",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-jof-06-00210-g005.jpg",
+          "sha256": "26bdb27ea65c61bf2e4b7eaadfcde0c064956e8c0c59ab9d3bc8148aa480b494",
+          "bytes": 83672
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-zincite-round85-independent",
+      "evidence_id": "koskelafig1",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.1039/D1SC06667F",
+      "sha256": "58fd7547af7752da3f54a1b3cea5f63989bd7baac794840dd3712d27ec5a9e7e",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/zincite2022-si/d1sc06667f-f1.jpg",
+          "sha256": "58fd7547af7752da3f54a1b3cea5f63989bd7baac794840dd3712d27ec5a9e7e",
+          "bytes": 83171
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-zincite-round85-independent",
+      "evidence_id": "koskelafig2",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.1039/D1SC06667F",
+      "sha256": "63e3db3daa5e57eed4e56154518b85ac085badf733fab2f335405bd2c9dd84a6",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/zincite2022-si/d1sc06667f-f2.jpg",
+          "sha256": "63e3db3daa5e57eed4e56154518b85ac085badf733fab2f335405bd2c9dd84a6",
+          "bytes": 118539
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-zincite-round85-independent",
+      "evidence_id": "koskelafig3",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.1039/D1SC06667F",
+      "sha256": "b12703147f917346abf18c1858fce40e7cfbd9be4d4fc110592ffc0296792d8f",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/zincite2022-si/d1sc06667f-f3.jpg",
+          "sha256": "b12703147f917346abf18c1858fce40e7cfbd9be4d4fc110592ffc0296792d8f",
+          "bytes": 79554
+        }
+      ]
+    },
+    {
+      "review": "20261015T013234Z-zincite-round85-independent",
+      "evidence_id": "koskelafig4",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.1039/D1SC06667F",
+      "sha256": "ff7b7f21256cfd1ed55566e51ca99ae6b29e207bc3da3d205b5befc8beda3ac4",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-phosphates-research/zincite2022-si/d1sc06667f-f4.jpg",
+          "sha256": "ff7b7f21256cfd1ed55566e51ca99ae6b29e207bc3da3d205b5befc8beda3ac4",
+          "bytes": 102202
+        }
+      ]
+    },
+    {
+      "review": "20261015T013338Z-titanogypsum-round85-independent",
+      "evidence_id": "chen",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.3389/fbioe.2021.777957",
+      "sha256": "6d1dab33b635d2cf38ea6cf0565c93ea862cee355424c4fa22725f1f804f557f",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-resources-research/chen2021.pdf",
+          "sha256": "6d1dab33b635d2cf38ea6cf0565c93ea862cee355424c4fa22725f1f804f557f",
+          "bytes": 4076336
+        }
+      ]
+    },
+    {
+      "review": "20261015T013338Z-titanogypsum-round85-independent",
+      "evidence_id": "si",
+      "kind": "primary_source",
+      "reference": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8758580/supplementaryFiles",
+      "sha256": "5a7e99a2cbad3f443b0b890a3712ba5574b3e63839bba4489240319d790d0ed7",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-resources-research/chen2021-DataSheet1.docx",
+          "sha256": "5a7e99a2cbad3f443b0b890a3712ba5574b3e63839bba4489240319d790d0ed7",
+          "bytes": 1013408
+        }
+      ]
+    },
+    {
+      "review": "20261015T013338Z-titanogypsum-round85-independent",
+      "evidence_id": "taxonomy",
+      "kind": "database",
+      "reference": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5537&retmode=xml",
+      "sha256": "b404b5c2420eab018827b5a49a261dfab1f71135525dc685bd9f3e97c40b67b9",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-resources-research/ncbi5537.xml",
+          "sha256": "b404b5c2420eab018827b5a49a261dfab1f71135525dc685bd9f3e97c40b67b9",
+          "bytes": 11866
+        }
+      ]
+    },
+    {
+      "review": "20261015T013243Z-azurite-round85-independent",
+      "evidence_id": "main",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.2323/jgam.2016.03.001",
+      "sha256": "b6e7f94a43e8c29959b505cb320f11894bd37c1dcf4ba1db18f4c147d46c567c",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-copper-minerals-research/kang2016.pdf",
+          "sha256": "b6e7f94a43e8c29959b505cb320f11894bd37c1dcf4ba1db18f4c147d46c567c",
+          "bytes": 409253
+        }
+      ]
+    },
+    {
+      "review": "20261015T013243Z-azurite-round85-independent",
+      "evidence_id": "ima",
+      "kind": "authority",
+      "reference": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf",
+          "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+          "bytes": 3129886
+        }
+      ]
+    },
+    {
+      "review": "20261015T013243Z-azurite-round85-independent",
+      "evidence_id": "handbook",
+      "kind": "authority",
+      "reference": "https://www.handbookofmineralogy.org/pdfs/azurite.pdf",
+      "sha256": "790565c74eb83ef9330179375f2ac3d185919640ba64261926741b7a09d4319a",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-copper-minerals-research/azurite-handbook.pdf",
+          "sha256": "790565c74eb83ef9330179375f2ac3d185919640ba64261926741b7a09d4319a",
+          "bytes": 53619
+        }
+      ]
+    },
+    {
+      "review": "20261015T013243Z-azurite-round85-independent",
+      "evidence_id": "sequence",
+      "kind": "database",
+      "reference": "https://www.ncbi.nlm.nih.gov/nuccore/KJ485701.1",
+      "sha256": "389db98755811797520b768008a3a8c0fa96bb944d41d775e3bfbed0bff3646e",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-copper-minerals-research/strain-sequences.gb",
+          "sha256": "389db98755811797520b768008a3a8c0fa96bb944d41d775e3bfbed0bff3646e",
+          "bytes": 6236
+        }
+      ]
+    },
+    {
+      "review": "20261015T013243Z-azurite-round85-independent",
+      "evidence_id": "taxonomy",
+      "kind": "database",
+      "reference": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=334736",
+      "sha256": "a555f23febbb031cafca70ff57316a96eb884d69cc20dff2b83c068352cde3ac",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-copper-minerals-research/taxonomy.xml",
+          "sha256": "a555f23febbb031cafca70ff57316a96eb884d69cc20dff2b83c068352cde3ac",
+          "bytes": 8162
+        }
+      ]
+    },
+    {
+      "review": "20261015T013250Z-tenorite-round85-independent",
+      "evidence_id": "main",
+      "kind": "primary_source",
+      "reference": "https://doi.org/10.3390/biology10030233",
+      "sha256": "dcd840a3d531b9bffab16e4823ea4cc8a7ba473bf9da6e29aa434826c7813d31",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-copper-minerals-research/fouda2021.pdf",
+          "sha256": "dcd840a3d531b9bffab16e4823ea4cc8a7ba473bf9da6e29aa434826c7813d31",
+          "bytes": 2308773
+        }
+      ]
+    },
+    {
+      "review": "20261015T013250Z-tenorite-round85-independent",
+      "evidence_id": "ima",
+      "kind": "authority",
+      "reference": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf",
+          "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+          "bytes": 3129886
+        }
+      ]
+    },
+    {
+      "review": "20261015T013250Z-tenorite-round85-independent",
+      "evidence_id": "handbook",
+      "kind": "authority",
+      "reference": "https://www.handbookofmineralogy.org/pdfs/tenorite.pdf",
+      "sha256": "70e13ac0b4319b51deb5bb372c0eaf9582bf523160943f2211dd454223e35e70",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-copper-minerals-research/tenorite-handbook.pdf",
+          "sha256": "70e13ac0b4319b51deb5bb372c0eaf9582bf523160943f2211dd454223e35e70",
+          "bytes": 50951
+        }
+      ]
+    },
+    {
+      "review": "20261015T013250Z-tenorite-round85-independent",
+      "evidence_id": "sequence",
+      "kind": "database",
+      "reference": "https://www.ncbi.nlm.nih.gov/nuccore/KY465752.1",
+      "sha256": "389db98755811797520b768008a3a8c0fa96bb944d41d775e3bfbed0bff3646e",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-copper-minerals-research/strain-sequences.gb",
+          "sha256": "389db98755811797520b768008a3a8c0fa96bb944d41d775e3bfbed0bff3646e",
+          "bytes": 6236
+        }
+      ]
+    },
+    {
+      "review": "20261015T013250Z-tenorite-round85-independent",
+      "evidence_id": "taxonomy",
+      "kind": "database",
+      "reference": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061",
+      "sha256": "a555f23febbb031cafca70ff57316a96eb884d69cc20dff2b83c068352cde3ac",
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round85-copper-minerals-research/taxonomy.xml",
+          "sha256": "a555f23febbb031cafca70ff57316a96eb884d69cc20dff2b83c068352cde3ac",
+          "bytes": 8162
+        }
+      ]
+    }
+  ],
+  "source_dossiers": [
+    {
+      "path": "/private/tmp/CMMMech-expansion-round85-20261015/research/sources/round85-copper-minerals-20261015/report.json",
+      "sha256": "17a0272ab5f1ffb67b507af862e4310716e983d9908b09884aca97b78304883b",
+      "bytes": 9658
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round85-20261015/research/sources/round85-resources/20261015T012241Z-source-investigation.json",
+      "sha256": "568b8a2dd2e4b2e9fc2aa359251a51a9facf023256e4133d9b8dc93a8ccd93e6",
+      "bytes": 16789
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round85-20261015/research/sources/round85-wurtzite-20261015/report.json",
+      "sha256": "8cf561c8ab25b11dbcf292a0f7d5da797d786aae0b998254b3b54a816d9ec616",
+      "bytes": 26504
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round85-20261015/research/sources/round85-zinc-20261015/report.json",
+      "sha256": "75a19d689655ddba2e7f5cd48ce54a71d68e2657f5ec8e51566e7c758be44f86",
+      "bytes": 55768
+    }
+  ],
+  "resolved_corrective_findings": [
+    {
+      "issue": 291,
+      "finding_id": "D1",
+      "issue_key": "cmmmech:round85-azurite-dossier-figure8-locator",
+      "initial": {
+        "path": "/private/tmp/CMMMech-expansion-round85-20261015/reviews/publication/20261015-round85/20261015T012731Z-azurite-dossier-locator-initial.json",
+        "sha256": "1ab75e99c78394e508541471be4ee9d3aabc6990a0799a016bb60abcc393be6d",
+        "bytes": 1498
+      },
+      "successor": {
+        "path": "/private/tmp/CMMMech-expansion-round85-20261015/reviews/publication/20261015-round85/20261015T012949Z-azurite-dossier-locator-resolution.json",
+        "sha256": "e4600229bf4f5d7443a260bc3aa12cabc7ef5ad32b1d7cf19869d7a24391781f",
+        "bytes": 3082
+      },
+      "corrected_dossier": {
+        "path": "/private/tmp/CMMMech-expansion-round85-20261015/research/sources/round85-copper-minerals-20261015/report.json",
+        "sha256": "17a0272ab5f1ffb67b507af862e4310716e983d9908b09884aca97b78304883b",
+        "bytes": 9658
+      },
+      "source": {
+        "path": "/private/tmp/cmm-round85-copper-minerals-research/kang2016.pdf",
+        "sha256": "b6e7f94a43e8c29959b505cb320f11894bd37c1dcf4ba1db18f4c147d46c567c",
+        "bytes": 409253
+      },
+      "scope": "One source-dossier locator only. Exact reverse comparison is a reconstruction calculation, not falsely claimed retained original. Native owner/history and scientific judgments unchanged; remote closure awaits merge."
+    }
+  ],
+  "dossier_bindings": [
+    {
+      "path": "/private/tmp/cmm-round85-copper-minerals-research/kang2016.pdf",
+      "sha256": "b6e7f94a43e8c29959b505cb320f11894bd37c1dcf4ba1db18f4c147d46c567c",
+      "bytes": 409253
+    },
+    {
+      "path": "/private/tmp/cmm-round85-copper-minerals-research/li2017.pdf",
+      "sha256": "0b393c1f4d8f466c0771233da9e0de9b72bd847bbad6cfd0645e79128f37363d",
+      "bytes": 1653824
+    },
+    {
+      "path": "/private/tmp/cmm-round85-copper-minerals-research/fouda2021.pdf",
+      "sha256": "dcd840a3d531b9bffab16e4823ea4cc8a7ba473bf9da6e29aa434826c7813d31",
+      "bytes": 2308773
+    },
+    {
+      "path": "/private/tmp/cmm-round85-copper-minerals-research/fouda2021.xml",
+      "sha256": "9405078ee407eb36ef63912a97e2e1f2c5a60a0dc5a4b18d63ccf62314e9cfd6",
+      "bytes": 180780
+    },
+    {
+      "path": "/private/tmp/cmm-round85-copper-minerals-research/xue2022.pdf",
+      "sha256": "dcfecba8d02532e40e0e28557e56c817816ddea97d0569b5b8a862abd28dd857",
+      "bytes": 16197388
+    },
+    {
+      "path": "/private/tmp/cmm-round85-copper-minerals-research/azurite-handbook.pdf",
+      "sha256": "790565c74eb83ef9330179375f2ac3d185919640ba64261926741b7a09d4319a",
+      "bytes": 53619
+    },
+    {
+      "path": "/private/tmp/cmm-round85-copper-minerals-research/tenorite-handbook.pdf",
+      "sha256": "70e13ac0b4319b51deb5bb372c0eaf9582bf523160943f2211dd454223e35e70",
+      "bytes": 50951
+    },
+    {
+      "path": "/private/tmp/cmm-round85-copper-minerals-research/strain-sequences.gb",
+      "sha256": "389db98755811797520b768008a3a8c0fa96bb944d41d775e3bfbed0bff3646e",
+      "bytes": 6236
+    },
+    {
+      "path": "/private/tmp/cmm-round85-copper-minerals-research/taxonomy.xml",
+      "sha256": "a555f23febbb031cafca70ff57316a96eb884d69cc20dff2b83c068352cde3ac",
+      "bytes": 8162
+    },
+    {
+      "path": "/private/tmp/cmm-round85-copper-minerals-research/ima-home.html",
+      "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9",
+      "bytes": 26639
+    },
+    {
+      "path": "/private/tmp/cmm-round85-copper-minerals-research/kang2016-crossref.json",
+      "sha256": "df9daa8b5cf29fdea6ee9c084a1c3baab01d4d85f77c9b3513cbb438e5249d6f",
+      "bytes": 12109
+    },
+    {
+      "path": "/private/tmp/cmm-round85-copper-minerals-research/li2017-crossref.json",
+      "sha256": "104c7938fdf1d3a98870f9bb58befd0d7617a9962183b1daf72e52c506650daa",
+      "bytes": 28671
+    },
+    {
+      "path": "/private/tmp/cmm-round85-copper-minerals-research/fouda2021-crossref.json",
+      "sha256": "48c8dbd2e3491e0015cc32b5406793fc29c499d9f728bce36968b77d865a2d5f",
+      "bytes": 36188
+    },
+    {
+      "path": "/private/tmp/cmm-round85-copper-minerals-research/acquisition-initial.json",
+      "sha256": "c8fd68250cf1bd8c4f1cf8a6a431ea74a20c68d7c60f9702b6713f00e8388792",
+      "bytes": 2294
+    },
+    {
+      "path": "/private/tmp/cmm-round85-copper-minerals-research/acquisition-extra.json",
+      "sha256": "c7bccde6f98469e29771844efff41ab00ec1964fbb26541dc83f40f8398c1c2e",
+      "bytes": 4626
+    },
+    {
+      "path": "/private/tmp/cmm-round85-copper-minerals-research/taxonomy-acquisition.json",
+      "sha256": "30d9f0d552ee8e830474d67b7eaf0d6bc8897f6a742ddb7c1d83705b6167c390",
+      "bytes": 321
+    },
+    {
+      "path": "/private/tmp/cmm-round85-copper-minerals-research/raw-dedup.json",
+      "sha256": "e45008776ff5f261f3736595749a51cfb305444de7f5229d013bdbf8a1e04449",
+      "bytes": 398315
+    },
+    {
+      "path": "/private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "bytes": 3129886
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/chen2021.pdf",
+      "sha256": "6d1dab33b635d2cf38ea6cf0565c93ea862cee355424c4fa22725f1f804f557f",
+      "bytes": 4076336
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/chen2021.xml",
+      "sha256": "def8d63d7ccf65111c4a986ab145a38ac150a8655a8a3bc1edff05b77a4cc39a",
+      "bytes": 123115
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/chen2021.html",
+      "sha256": "6020b85cb7e96feb51413411feedc048ddf9a8bb8f3a6ed269971c3c3f825873",
+      "bytes": 942573
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/chen2021-supplementary.zip",
+      "sha256": "00cf10e685fd3d989daff006e2a898a958176fe9b4212deccb79321af66845ff",
+      "bytes": 2283808
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/chen2021-DataSheet1.docx",
+      "sha256": "5a7e99a2cbad3f443b0b890a3712ba5574b3e63839bba4489240319d790d0ed7",
+      "bytes": 1013408
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/chen2021-si-image1.png",
+      "sha256": "51c1024371d10631432eb5675da062172007e4e381eb58e161bc09bfa65079a0",
+      "bytes": 8135
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/chen2021-si-image2.tiff",
+      "sha256": "bc5569d1f18d89e2ae0d33b563be4af4c713008b7160a5ecb86de3f802398f13",
+      "bytes": 992114
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/ncbi5537.xml",
+      "sha256": "b404b5c2420eab018827b5a49a261dfab1f71135525dc685bd9f3e97c40b67b9",
+      "bytes": 11866
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/chen2021-crossref.json",
+      "sha256": "18773cd3bb3a93d50f9b5b474a5f2ce826b1348bc9c02521bf7de4335fc38833",
+      "bytes": 23559
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/malekian2019-api.xml",
+      "sha256": "1864ab1013c1bbc7a1a58e499be95952f4aef1c1bd97c579a0b9106254820799",
+      "bytes": 1890
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/malekian2019-openalex.json",
+      "sha256": "0367af4d1b32197188d30b5e0a48fb201f3ecaf8518e9238ad9a79c098ccfd71",
+      "bytes": 17992
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/titanogypsum-draft.yaml",
+      "sha256": "9bd0965555fc75f1c83840305fe21e3b5ca636421458bd8d40ce0f6896d748e4",
+      "bytes": 7522
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/dedup.json",
+      "sha256": "296f716af6ea466714cce8de0118a9c68fae4e4d5c21669f273cd92168476c5d",
+      "bytes": 1614
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/search-log.json",
+      "sha256": "1e371e9757f0f34f85f5567796cbb9bc3de265993dfdf4716f50f1d097ac4d61",
+      "bytes": 1651
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/chen2021.pdf",
+      "sha256": "6d1dab33b635d2cf38ea6cf0565c93ea862cee355424c4fa22725f1f804f557f",
+      "bytes": 4076336
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/chen2021.xml",
+      "sha256": "def8d63d7ccf65111c4a986ab145a38ac150a8655a8a3bc1edff05b77a4cc39a",
+      "bytes": 123115
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/chen2021.html",
+      "sha256": "6020b85cb7e96feb51413411feedc048ddf9a8bb8f3a6ed269971c3c3f825873",
+      "bytes": 942573
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/chen2021-crossref.json",
+      "sha256": "18773cd3bb3a93d50f9b5b474a5f2ce826b1348bc9c02521bf7de4335fc38833",
+      "bytes": 23559
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/malekian2019-openalex.json",
+      "sha256": "0367af4d1b32197188d30b5e0a48fb201f3ecaf8518e9238ad9a79c098ccfd71",
+      "bytes": 17992
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/chen2021-supplementary.zip",
+      "sha256": "00cf10e685fd3d989daff006e2a898a958176fe9b4212deccb79321af66845ff",
+      "bytes": 2283808
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/mucilaginosa-esearch.xml",
+      "sha256": "4471e35ad6574aa15a8a69bb26c6a65ad707dd89bd36bfad617112e8abf30db4",
+      "bytes": 605
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/malekian2019-api.xml",
+      "sha256": "1864ab1013c1bbc7a1a58e499be95952f4aef1c1bd97c579a0b9106254820799",
+      "bytes": 1890
+    },
+    {
+      "path": "/private/tmp/cmm-round85-resources-research/ncbi5537.xml",
+      "sha256": "b404b5c2420eab018827b5a49a261dfab1f71135525dc685bd9f3e97c40b67b9",
+      "bytes": 11866
+    },
+    {
+      "path": "/private/tmp/cmm-round85-initial-issues.json",
+      "sha256": "1993d1caf146060081e03235a4e807b8dfcc147e43e5bac5921432ffd57b86c6",
+      "bytes": 1438266
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round85-20261015/data/records/wurtzite.yaml",
+      "sha256": "3023a9fa6aa8f6f82b2284252f7245ad85ab1ff297f5cddaee53e61f2f4590a3",
+      "bytes": 8542
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round85-20261015/history/records/wurtzite/2026-10-15T011942Z-codex-2cd232.yaml",
+      "sha256": "0134924e4afe1e980457c802a12753e7452f59da7c3279808e16b733eba770ea",
+      "bytes": 899
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round85-20261015/data/records/wurtzite.yaml",
+      "sha256": "3023a9fa6aa8f6f82b2284252f7245ad85ab1ff297f5cddaee53e61f2f4590a3",
+      "bytes": 8542
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/named-validation.log",
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+      "bytes": 31
+    },
+    {
+      "path": "/private/tmp/cmm-round85-baseline.json",
+      "sha256": "9d1d5c2f943e603d73a445abb9a7a2f4e5a709f14b5f92eca97a7c96036e4533",
+      "bytes": 904
+    },
+    {
+      "path": "/private/tmp/cmm-round85-initial-issues.json",
+      "sha256": "1993d1caf146060081e03235a4e807b8dfcc147e43e5bac5921432ffd57b86c6",
+      "bytes": 1438266
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-unia-thesis.pdf",
+      "sha256": "088266e2a2a87aad68c73ceb55620f328c03618b89fe1b48f96f2f8a54be8d20",
+      "bytes": 4547862
+    },
+    {
+      "path": "/private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "bytes": 3129886
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/wurtzite-handbook.pdf",
+      "sha256": "16d58b02258e3b151b5ddcd8ba0d78154a1e168946bed29d5674d8246a0eb4b6",
+      "bytes": 47687
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-unia-thesis.pdf",
+      "sha256": "088266e2a2a87aad68c73ceb55620f328c03618b89fe1b48f96f2f8a54be8d20",
+      "bytes": 4547862
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023.xml",
+      "sha256": "10d784b650296bd9824e74713459afc159fb7569f2fd4501e32bdf09e5513349",
+      "bytes": 124146
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023.pdf",
+      "sha256": "731e144c97dadb6580deffa83dcd79efff5170eb78829c9253bf3f0090cf289b",
+      "bytes": 3263018
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/wurtzite-handbook.pdf",
+      "sha256": "16d58b02258e3b151b5ddcd8ba0d78154a1e168946bed29d5674d8246a0eb4b6",
+      "bytes": 47687
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/crossref-castillo2012.json",
+      "sha256": "e7a3244f97bec2e72c70ba1aa9abd2169582df46ff2ef745099a5595a76c9aac",
+      "bytes": 15714
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/crossref-zns2023.json",
+      "sha256": "b43c39dd85222ce28364bd1c59905e0d398f21676c077593bb31597f695aaa21",
+      "bytes": 24008
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/acquire.py",
+      "sha256": "3981423793b058cff21ae2360e516c5ad07f766b911df0cd9cb79dd39093b00a",
+      "bytes": 1739
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/acquisition-initial.json",
+      "sha256": "26eed04c56eff8b6f5a072ddb0855fe862b389a3fe564e761eb2bf68f22a13f7",
+      "bytes": 3014
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/bounded-raw-dedup.txt",
+      "sha256": "8c8c4f6f01d3bf425cf3685538a7df95ad7c30f535fee0ad463b45825336e081",
+      "bytes": 60719
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p42.png",
+      "sha256": "cb7f9ec8a44dd4c7ed0f554601580a12aee497c6e2431cdbcccee1c90117af73",
+      "bytes": 1022809
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p43.png",
+      "sha256": "18dc31d150ea755ee3622a9af7f5df42fc8b4c1de01a295785d7fd708c604836",
+      "bytes": 11021
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p44.png",
+      "sha256": "09013dd94f5b825d8ac2f5d88131b0b0bed9a7f03cffef33c92615ecb8997f86",
+      "bytes": 138181
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p45.png",
+      "sha256": "69ff90bf06c89dfb1a14e921e5a09327d1be4bbbdda014dd025a99ce32463a95",
+      "bytes": 10928
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p46.png",
+      "sha256": "987b9c351cdf9ec4d96eac01ab76673ff1e3fee0f2090efc2338e97241f8af9e",
+      "bytes": 125763
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p47.png",
+      "sha256": "c094e8416b3b942bcc8227481a80f1821994056c4899a631cf8445c566971def",
+      "bytes": 192406
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p48.png",
+      "sha256": "293eec1fa30daa950411ea525e8925dd0d4c3a52e1c17e1f440c8adf9b4a69a6",
+      "bytes": 229497
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p49.png",
+      "sha256": "3f7c18c99589d6985f2f82ffdce614ca4f17c25457e8603969433d29fb90d5a1",
+      "bytes": 219566
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p50.png",
+      "sha256": "913af61d3a23d956e9018c2ace17b1d30ca2e7f0f68b9ec9bcafcfc43dc09d95",
+      "bytes": 594140
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p51.png",
+      "sha256": "a82fb139c643ea2d9d18b7fed17f65dbc322f90989901ff7c33a2dab7e4a14c4",
+      "bytes": 225084
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p52.png",
+      "sha256": "ab93d18ed776999f0c4218f173183024049d8911f33adfffbe67a04f91aace51",
+      "bytes": 189751
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p53.png",
+      "sha256": "5133e0fd49c198bcafc7f1c2de91014172a6e303f6da7a612e716e87b0e3ea3e",
+      "bytes": 168902
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p54.png",
+      "sha256": "cfd5ca395635819e176422255ddb4b31ac23c800b67a9680c848d574c2c6a1a4",
+      "bytes": 265804
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p55.png",
+      "sha256": "518fa73c7f752020d760b0bd4748f944a95cd09ec7d81babcb692dabebfe7d7f",
+      "bytes": 656489
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p56.png",
+      "sha256": "1e027360f6196a4e1e59c0a2c643ba5fc39f05caf4d0092d5862d34de286a0ac",
+      "bytes": 443572
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p57.png",
+      "sha256": "ab3c3a94e45aef4853b9b27a2b34ae6542ef7971d3ac601ca32e084924a3e77b",
+      "bytes": 186762
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p58.png",
+      "sha256": "98ab7fa09af43e8e93a0b1f6db523da771ca671ce69e405b6c22af7bf45f36c3",
+      "bytes": 548525
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p59.png",
+      "sha256": "5970536a175e88423c2e1046945f6e0a9dae3b50a99bd258d51fe605324c6236",
+      "bytes": 242329
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p60.png",
+      "sha256": "b95a92bda7be03feaebfa78b4d6c552af2f668f825358eb59adb8959538c23e2",
+      "bytes": 238294
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p61.png",
+      "sha256": "dc49064d61e914569b1cba82e6562baaa49ac15c94d4fe43cbddcf5ae0eecb81",
+      "bytes": 239284
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p62.png",
+      "sha256": "600121e485d0c154f0c392bfc97738fe6ee5d5c563ef2f8b7068d2fc0de237ac",
+      "bytes": 219304
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-ch2-p63.png",
+      "sha256": "2c416db684522ccab6fde5f1b0e761b127fef0ac0edeb5fd8dd91893d0f94ece",
+      "bytes": 30919
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-unia-thesis.pdf",
+      "sha256": "088266e2a2a87aad68c73ceb55620f328c03618b89fe1b48f96f2f8a54be8d20",
+      "bytes": 4547862
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/castillo-unia-thesis.txt",
+      "sha256": "d38b5ee01a83714ce4e901963e7b2d51b6d83f4ea74b799141c57d356998d3c8",
+      "bytes": 292828
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/crossref-castillo2012.json",
+      "sha256": "e7a3244f97bec2e72c70ba1aa9abd2169582df46ff2ef745099a5595a76c9aac",
+      "bytes": 15714
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/crossref-zns2023.json",
+      "sha256": "b43c39dd85222ce28364bd1c59905e0d398f21676c077593bb31597f695aaa21",
+      "bytes": 24008
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/dedup-root-0.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/dedup-root-0.txt",
+      "sha256": "c56b7e1e6d39f1fc7c8306bf8737490af71005fd980795da8fe00e9fd05ecedc",
+      "bytes": 167
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/dedup-root-1.stderr",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/dedup-root-1.txt",
+      "sha256": "8dbcd10510f57234f7b72a7b50420733d2c0dc96558d0c2cb025f8fc99abb7dc",
+      "bytes": 144
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/dedup-summary.json",
+      "sha256": "fe25fde5d7f350506d880e0101d5b2d3e01c603b0ac10365998d6a64d3266b17",
+      "bytes": 2304
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/final-maintained-dedup.txt",
+      "sha256": "e7f66bf0b9e934464ad7cad49fc0cae39d48ef2d3a87e320d3b18ca3d056aeae",
+      "bytes": 96
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/ima-definitions-p1.png",
+      "sha256": "7d639e0e0a04c146ecd8c00a6ea991c85116267491d046ae3b6a7ad81e63317a",
+      "bytes": 116516
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/ima-wurtzite-p236.png",
+      "sha256": "37401c5ccb474b403f8d211d03beeb7e2d8805a8ed7ae38c417869dd0035f955",
+      "bytes": 288607
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/ima-wurtzite.txt",
+      "sha256": "a5149f2f5593aa4d998b07b39518ffabcb5d1a8250ce007f9f9f1fc4ef670fd9",
+      "bytes": 3849
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/named-validation.json",
+      "sha256": "95e18c8ee0b8bb6260a0b22f320540f78be5a886d7e2bd69ab340e40eb866cf7",
+      "bytes": 875
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/named-validation.log",
+      "sha256": "6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e",
+      "bytes": 31
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/round85-correction.json",
+      "sha256": "fab07ea7afed323fb11fdf25d4aeb3e3e753ff7951f28307725f5389e1d3b86d",
+      "bytes": 32065
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/round85-search1.json",
+      "sha256": "b53494e74866d547bd0ed7ae26c47a5ddd1932980aec89eac82a1afcb8d6f5a9",
+      "bytes": 31442
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/round85-search2.json",
+      "sha256": "e643227cc8ed140eacc7245018735de534361feec5429fefa00ea2950d2e2eb5",
+      "bytes": 32822
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/round85-search3.json",
+      "sha256": "6877840ff3b2b4081acab6e10aa46ab6d39f3d0676829ee3a35a60b3c2d5ebaa",
+      "bytes": 32669
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/round85-search4.json",
+      "sha256": "041073bbac6704d91ad68c2181941821094d918c2212a22882151f847e500194",
+      "bytes": 28456
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/round85-wurtzite-fullweb.json",
+      "sha256": "5e7ea5459569b3ea4709144202d4a9a417b29c8b9d842c537b48432b178a9390",
+      "bytes": 454
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/source-assessment-draft.md",
+      "sha256": "446dc61e7b1a740e7015dcc546aaf7bb30ed7cef1a0cc7d363628048c71b7f76",
+      "bytes": 11717
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/source-issue-draft.md",
+      "sha256": "2412d8f3e547b42f6cc7a229e9b1d0c81368a6d350440ef08931c9e4fb9ed1f9",
+      "bytes": 2714
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/study-doi-dedup.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/wurtzite-draft.yaml",
+      "sha256": "f8550475241a3910695ae3efa60a68666b015acf9a82b232891f8f8b2fbfa19a",
+      "bytes": 8039
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/wurtzite-handbook-p1.png",
+      "sha256": "fa08652ef40b32c8c89378f48bb507b2b4dbd412c9aac3485edf3d70ab3b0b2d",
+      "bytes": 191990
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/wurtzite-handbook.pdf",
+      "sha256": "16d58b02258e3b151b5ddcd8ba0d78154a1e168946bed29d5674d8246a0eb4b6",
+      "bytes": 47687
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/wurtzite-handbook.txt",
+      "sha256": "70b6933f91bfeaf70947ceaad944eb02c70ba4a7f1880b9929241ae385b03185",
+      "bytes": 2996
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/wurtzite-study-dedup.txt",
+      "sha256": "e7f66bf0b9e934464ad7cad49fc0cae39d48ef2d3a87e320d3b18ca3d056aeae",
+      "bytes": 96
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p1.png",
+      "sha256": "7a03ec810f034facf197f976b57d3ed54b47b591ef303cb67b23ed21a7533878",
+      "bytes": 286782
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p10.png",
+      "sha256": "2b70c9b5de11ec780a7104af744d8235250db9c396c9920f653750d8cb763fb7",
+      "bytes": 418052
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p11.png",
+      "sha256": "3404ae430a2e5214f0fd9fd149655dc9de66688a0f260fa5556c81a4dafa28cb",
+      "bytes": 233696
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p12.png",
+      "sha256": "c161382631a0c40c0632b317d6e33e8359b5080bf7050ab7ea422e22e323f667",
+      "bytes": 337102
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p13.png",
+      "sha256": "1014469f4607aed8d507be62cac1964fcf8e9781062282e7bf1665f8bb20f884",
+      "bytes": 379602
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p14.png",
+      "sha256": "a039d16cebb48c4642856bfc23458171227f52137877486cca657cb3d77ba8bf",
+      "bytes": 147392
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p2.png",
+      "sha256": "8078c4afa64a224c04d87b45712b65f06111bf9b0856171b6f4284d084f3f9ec",
+      "bytes": 275266
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p3.png",
+      "sha256": "26bfe7bca093b6ebc1f10260e281d9c42d81bc1da3cbf8e9dd3be91c5167b3e5",
+      "bytes": 275811
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p4.png",
+      "sha256": "55741c3043db4f89f734a735b65b9c683042bc8ea1faf3f09c03eb47f3cfee5d",
+      "bytes": 359594
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p5.png",
+      "sha256": "fc37aa2e42d70ccafb891a31b5648d480781e7e641a83848b3b325d99f3fef45",
+      "bytes": 209712
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p6.png",
+      "sha256": "9ae3a90de07d7442d1d1159be5245962e86be36c6086a527f681da24c82d66ae",
+      "bytes": 277753
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p7.png",
+      "sha256": "b16668cc0e08390dc9442e6eb0e36edc84cd45a9831d14b5b5b00e648b65ddec",
+      "bytes": 227319
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p8.png",
+      "sha256": "826695a0741dcf4bedd1fe459e53c8d8c8e97f3ab1ec14a90166ea53225d3716",
+      "bytes": 245969
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-p9.png",
+      "sha256": "2e33b0fe695a2fd1add4131130d983878f05f5b76311c6a56a253176190a4879",
+      "bytes": 207789
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023-phase-consistency.json",
+      "sha256": "90918a66f28d642b7fc9b197416d808b47fb8122f1a68505c53b1e8e5b6a1861",
+      "bytes": 920
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023.pdf",
+      "sha256": "731e144c97dadb6580deffa83dcd79efff5170eb78829c9253bf3f0090cf289b",
+      "bytes": 3263018
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023.txt",
+      "sha256": "3fdd9067800241402fa006d12d42858d3e3842ba91c0e19ed296c6df4a911b99",
+      "bytes": 47350
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/zns2023.xml",
+      "sha256": "10d784b650296bd9824e74713459afc159fb7569f2fd4501e32bdf09e5513349",
+      "bytes": 124146
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sulfides-research/source-issue-draft.md",
+      "sha256": "2412d8f3e547b42f6cc7a229e9b1d0c81368a6d350440ef08931c9e4fb9ed1f9",
+      "bytes": 2714
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round85-20261015/research/sources/round85-wurtzite-20261015/report.md",
+      "sha256": "92e45c21ad9a785e12beab94bcc5003f0db12bc29a6c9f1d492f0b5fa7a42e6b",
+      "bytes": 12450
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2000-pmc.html",
+      "sha256": "1ae9718a6a45e9d48b50edf7b9169cc7d839ecbc98493f3620af674535db975f",
+      "bytes": 155800
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-pmc.html",
+      "sha256": "0df419f18324bc28d0d84ed43da1d27bf465b67f344b76da58bd662b20c4ebe5",
+      "bytes": 162526
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2000-am1100677001.jpg",
+      "sha256": "ab3fff1153abffd2a566717958ce0ca67018f8a905a97ecbb9ce571cb482517f",
+      "bytes": 30142
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2000-am1100677002.jpg",
+      "sha256": "42360dcc839facb776c748443f9765d2604f72125b916ba63a2aa4ed52a9f019",
+      "bytes": 21706
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2000-am1100677003.jpg",
+      "sha256": "4a272aa292e2c7d6b79e5bdce689133e097da650161e29541e4a2f5985ac4f5e",
+      "bytes": 78632
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2000-am1100677004.jpg",
+      "sha256": "cc3a2a16fb25d2db88533dc8ec6cd4cc1bb889c05176a76e79eb1e315863d0b7",
+      "bytes": 83403
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2000-M1.gif",
+      "sha256": "caa0382939f8beb8ac9525137051f0a6bd7d27e0aa4670a6db7de329e3bc40a2",
+      "bytes": 2734
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2000-M2.gif",
+      "sha256": "63acc98095e6768230928013d7d06999442464e81e5542b3f0bd922b79a908ce",
+      "bytes": 1440
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2000-M3.gif",
+      "sha256": "bd9167fd98ba61c9e2e98175a4fb8601e4b593a298d7e88bdc30c672300747d7",
+      "bytes": 2683
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g1.jpg",
+      "sha256": "48b232d801c20e9de3b5927825a6c3d3856ecc8474d72aa60733bc176deb1df2",
+      "bytes": 115243
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g2.jpg",
+      "sha256": "bb6c9efc212a0e65c3b9e4da9293d6ceac9a6936bbb6a64fa475f6320ee36c23",
+      "bytes": 167641
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g3.jpg",
+      "sha256": "96c6ed7ca1d2da893010c6ddccea2162fd726e9318d909f8c745be7b6b6d0491",
+      "bytes": 299799
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-i1.jpg",
+      "sha256": "26fb3835b208d07819c05b76c07b92c321eea6a3eb1cda6c2a913f33cf9bc487",
+      "bytes": 926
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-i2.jpg",
+      "sha256": "3c799f3af4bacbc05082e7d01913d827547e894b40f8da71582d6f901924a6bb",
+      "bytes": 656
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g4.jpg",
+      "sha256": "e4383c6befe576a0ff421831d9fce36f9dc45914e656d3359212392544f9e608",
+      "bytes": 261656
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-e1.jpg",
+      "sha256": "31fafddd3ccfd8be453b5039fae2f05feae47e983473a08b1d3dfef89abcf87c",
+      "bytes": 9357
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g5.jpg",
+      "sha256": "061d8b0b76b1d229a7b1c1348cebd835924aaec6f0744dae22d55b3eea55640d",
+      "bytes": 76827
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-e2.jpg",
+      "sha256": "b744baa5bc2ce5eff5b2c250bed7d57bb9aabe649926e7c84bf9a945cd98751c",
+      "bytes": 3806
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-e3.jpg",
+      "sha256": "d83932fc965eb38f41d6a28ae62a8930ba6d0ea337e8469999d77c8f5cf8788e",
+      "bytes": 3673
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-g6.jpg",
+      "sha256": "ea883e41da913acf762b4ed8b2ed7db9bc5c782eb9ebc1bf78f14aa9f17ba9a9",
+      "bytes": 141214
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-i3.jpg",
+      "sha256": "a112b73a693466d4dc898efde5b8ed2a59a09e8e132f66555da1d3b79bb7f175",
+      "bytes": 856
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-rsif20140845-i4.jpg",
+      "sha256": "26fb3835b208d07819c05b76c07b92c321eea6a3eb1cda6c2a913f33cf9bc487",
+      "bytes": 926
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020.xml",
+      "sha256": "5e0687a7e4e6ff4e0a7fefc8f05609cb51e5377589aa57e8f7bc524b53ba91f5",
+      "bytes": 84419
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-pmc.html",
+      "sha256": "be8c0b68ee3c3ca26a3d437ad376d3bc61605320e397243faade4ced1c81bde6",
+      "bytes": 183776
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2022-nsf.pdf",
+      "sha256": "5023f49d8f539e7bdc3f26a04c7da0bb2bcaddbce576a7b6fe03731d39f348f1",
+      "bytes": 692858
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2022-supplements.zip",
+      "sha256": "372ba62d785b2a90fd98a5a733464f0cf366cb1b3d29d9acd84d62d8650220a9",
+      "bytes": 2975134
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-jof-06-00210-g001.jpg",
+      "sha256": "d5d9cd0ba2388470abfc4092981544a34b2daa49d8c18237a2e7fa89cda97cbf",
+      "bytes": 50567
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-jof-06-00210-g002.jpg",
+      "sha256": "afc7314b61e05d14fbc43d72a8622347744ac42b44fcc2d5dc1fba77965dfc6f",
+      "bytes": 79493
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-jof-06-00210-g003.jpg",
+      "sha256": "fabf6cfa1cf498b6d88165e8f9497dfbf3e675b7e96ee7cfc441d794a381d175",
+      "bytes": 71083
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-jof-06-00210-g004.jpg",
+      "sha256": "52fbff2f93c1d543963ed58c8bd5ae7e543259ebd7235b8e0b296cc919648277",
+      "bytes": 99197
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-jof-06-00210-g005.jpg",
+      "sha256": "26bdb27ea65c61bf2e4b7eaadfcde0c064956e8c0c59ab9d3bc8148aa480b494",
+      "bytes": 83672
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-main.pdf",
+      "sha256": "0e57e247e141666ad937ee68ce704dbbc18e06b26e386b96f9f27b2930c7a454",
+      "bytes": 1891215
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite-handbook.pdf",
+      "sha256": "5627deedc4f239c16927f925d8ec621f05b5b3152e7da2da9928885fc25e79fe",
+      "bytes": 53127
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite-handbook.pdf",
+      "sha256": "47115d10b7dbd3fcc2714f06aad0466eca248a8d77ca9dae5a80d6c3947a0d10",
+      "bytes": 55510
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/taxon5061.xml",
+      "sha256": "d668c305ba04f31ca50a1582a5a9c85d6547109cbc132a097d5d2185a8c34ff8",
+      "bytes": 4988
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-supplements.zip",
+      "sha256": "b06e3155213037756c4563270d35351f55ba51cfb26fe5dddb9f2dd0eb775ffd",
+      "bytes": 1403718
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/cnmnc-current.html",
+      "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9",
+      "bytes": 26639
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-crossref.json",
+      "sha256": "dcf76a4c83af0c53d3344d07f7212502b23491be055c4fe37a40bdd202125f16",
+      "bytes": 7817
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-crossref.json",
+      "sha256": "e682a5fb874987da31e531bec6bb0d6f21c611b620a3076b39574e263dda1309",
+      "bytes": 21592
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2022-crossref.json",
+      "sha256": "ea9e3d67470c7396594becc7afed9714effb6c3d23316494923ece7081a15601",
+      "bytes": 15170
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2020-si/jof-06-00210-s001.pdf",
+      "sha256": "2e24be842766e0bceaff123b99258564dbf113993ac0d607fa642b83188b90cb",
+      "bytes": 1034704
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2022-si/SC-013-D1SC06667F-s012.pdf",
+      "sha256": "ec14ab5c79462b2d9211a0f3ebf3d54489cf2493de77209b0f06b48eb9db5f51",
+      "bytes": 2615198
+    },
+    {
+      "path": "/private/tmp/cmm-round80-carbonates-research/ima2026-09.pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "bytes": 3129886
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014.xml",
+      "sha256": "b3d7c33f5298b5a9cff4ba3365673d9b38e99e48e34a31eb4ad9b3f5a09ae55c",
+      "bytes": 150
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2022.xml",
+      "sha256": "b507eb3e2efaa2498637fc6a332bdc5ebec970deb2d3ab3164aa9a7d2925862d",
+      "bytes": 114246
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-publisher.pdf",
+      "sha256": "146cf8aa89a01beca75d81ab5503ef5cb5eb954666b7f5dc8deb8dc9a954f8ea",
+      "bytes": 5602
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2000.xml",
+      "sha256": "f0c8f7e2b84d21b33d2bac8c6e77942f59630bd4fdc886ba6648bb1868ac4971",
+      "bytes": 148
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2022-main.pdf",
+      "sha256": "73b757ddf82caf6ba67ae6d2757f42232b7a04a9cc5c5f9ea08e19ce61fbfcab",
+      "bytes": 5597
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite2022-landing.html",
+      "sha256": "34e78f9d206fa3964ae5b080670421260a1675f71cf78614aa72e502363967bf",
+      "bytes": 5600
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-landing.html",
+      "sha256": "d7a3be75d7a07826384780bf65807f55e18453c131f37ab03b222218423150ec",
+      "bytes": 5590
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2000-pmc.pdf",
+      "sha256": "e77adf40563eb29601f4e80dfabf691acf6897f17ced019f04486d865da6d321",
+      "bytes": 1817
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2014-pmc.pdf",
+      "sha256": "2a6526704617e617ec5814710d5164351ffee5056b1c60c4ab846a78e97f3266",
+      "bytes": 1817
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/hydrozincite2000-crossref.json",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/private/tmp/cmm-round85-baseline.json",
+      "sha256": "9d1d5c2f943e603d73a445abb9a7a2f4e5a709f14b5f92eca97a7c96036e4533",
+      "bytes": 904
+    },
+    {
+      "path": "/private/tmp/cmm-round85-phosphates-research/zincite-source-followup.md",
+      "sha256": "e9607caa058bdcd319bfef230e899f334f85c0b3466cd78fad8b1726ce8e9047",
+      "bytes": 2637
+    }
+  ],
+  "receipts": [
+    {
+      "path": "/private/tmp/cmm-round85-baseline.json",
+      "sha256": "9d1d5c2f943e603d73a445abb9a7a2f4e5a709f14b5f92eca97a7c96036e4533",
+      "bytes": 904,
+      "retained_paths": [
+        "research/ingests/round85-checks-20261015/baseline.json"
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round85-baseline.log",
+      "sha256": "2ec2fce9c9f3b5c90e239a2b0d41a23196621da9cc3578ce572aeea40c9ab676",
+      "bytes": 683,
+      "retained_paths": [
+        "research/ingests/round85-checks-20261015/baseline.log"
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round85-final-gates.json",
+      "sha256": "265694b8cec9b7c39325508f7811fea2ad2b656d6553c62449c545255123e748",
+      "bytes": 45942,
+      "retained_paths": [
+        "research/ingests/round85-checks-20261015/final-gates.json"
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round85-final-gates.log",
+      "sha256": "eaff9b50e0f61675b41fd2ead3e28a22a7673f273f263808e7cd9cc6b851acd9",
+      "bytes": 969,
+      "retained_paths": [
+        "research/ingests/round85-checks-20261015/final-gates.log"
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round85-review-check-final.json",
+      "sha256": "bbd73ca82f4475680b3be6e2d8bed6bb532f89df7c71ef763db95e3c37db0bed",
+      "bytes": 473,
+      "retained_paths": [
+        "research/ingests/round85-checks-20261015/review-check-final.json"
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round85-review-check-final.log",
+      "sha256": "1e02f56441679a3681f35b0d5429cb69c90545b3e39d0234d174dee3ae4ba0cb",
+      "bytes": 194,
+      "retained_paths": [
+        "research/ingests/round85-checks-20261015/review-check-final.log"
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round85-local-coverage.json",
+      "sha256": "68ea06274184b34285e2095ddc00bd8c77735d0a1b688cc7ed5cd7d541574b21",
+      "bytes": 248115,
+      "retained_paths": [
+        "research/ingests/round85-checks-20261015/local-coverage.json"
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round85-governed-check.json",
+      "sha256": "21abb76dd990e198a6e24a5bc315d565afdf895fbfb6c4bef9c7508ac7478385",
+      "bytes": 335,
+      "retained_paths": [
+        "research/ingests/round85-checks-20261015/governed-check.json"
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round85-governed-check.log",
+      "sha256": "3b073aa29da7dc3996edbe18c83d0d6593ba6d03238b663efc40286be4cf428e",
+      "bytes": 57,
+      "retained_paths": [
+        "research/ingests/round85-checks-20261015/governed-check.log"
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round85-preservation-precommit.json",
+      "sha256": "be3572577af1c4b069434b6daa06040c1574d26dbd999c326ba299283e2696cb",
+      "bytes": 678,
+      "retained_paths": [
+        "research/ingests/round85-checks-20261015/preservation-precommit.json"
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round85-hosted-helper-static-20261015T013133Z.json",
+      "sha256": "6703ae2b2f2d0cefb7e7115bbec0fda12ff230be1569db48a40ae97681569970",
+      "bytes": 3828,
+      "retained_paths": [
+        "reviews/publication/20261015-round85/cmm-round85-hosted-helper-static-20261015T013133Z.json"
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round85-hosted-pagination-check.json",
+      "sha256": "77891f08bb380c55a735ac351dbc98bd8f40cf1a04fae7aadbdf272914602abb",
+      "bytes": 5978,
+      "retained_paths": [
+        "reviews/publication/20261015-round85/cmm-round85-hosted-pagination-check.json"
+      ]
+    }
+  ],
+  "configuration": {
+    "path": "/private/tmp/cmm-round85-helper-config.json",
+    "sha256": "69bd3583b7ad71854c203e2dc54d1117d62b882d154a57dbb4096cbf6ccc9e3b",
+    "bytes": 900
+  },
+  "intended_native_selection": {
+    "path": "/private/tmp/cmm-round85-final-native-selection.json",
+    "sha256": "69612e74ab6934ba104878b6b1da017164cc776b9a2abf26a694b659b9717042",
+    "bytes": 393
+  },
+  "review_bases": [
+    "075c1ca032b68162eb8350b7e8d9bfe9530ca143",
+    "09c15cbfb7699e40ae4648b6b414784a00b488db",
+    "0f4d8ff9e4919714e3dd902dc3573e95922a65fb",
+    "11a0b0f8e2714f1863304faf408da4ce0e7c5b53",
+    "14ceff0da3e19d6d36426d33f4cf577b8e64760f",
+    "188ce7cb6f6dd1b7966b527546d80f9b4fb7fcec",
+    "18c9f3dd5005e14142b8a0b7e13bb84870e1731a",
+    "19d0972767b266f86a256a3f36f0f7177ab4cf25",
+    "19e7b84fdfe6c4ec24f9d2b727afd5f7f3d2902a",
+    "1d40bb5d7496a02b937acc1f6ef3aec5af5d32e7",
+    "1e3d834112099855c0398459415d0022336055f5",
+    "1e52585c9019a32d37f959e0dafa00ae431f28c4",
+    "1ef6fdde620a4053fbfff99c51065082dce32d39",
+    "215cb3f4f9940b3785cf8ca20ecb28d2acc89950",
+    "268498d0a9748f3a18955e35f175f67115f88b97",
+    "26cb0688effb2f71e4a570c416f6f43ff858c5ab",
+    "2b975ae5327b94ac3c1e6583378408add2b8d1f2",
+    "38cef46aabbcb2b49536ed8c265c63646ff1da3d",
+    "3ac02ecf15ba53e28b15b2f4afcdcb083d0a226c",
+    "3f1350b24b4f6248ed2e17caade936c15af9be93",
+    "3fc8b873487ed2c1c253ecf131d99e09b8b8d452",
+    "4504ab1c5a005ea31e65318c3b3f206d6fbf44ed",
+    "466cb14cbc271ba73ba05e89ed188cfd113d06ea",
+    "4aed29a1ed91171b9491bc3be2f6f003b2a4289a",
+    "4cb10d22d5542370cf5fac27288907ec0d42308c",
+    "4df8fe16fc1625d789d28bb7ec727d48785c1a26",
+    "51adf4be6c544642f6bf54a4e7f514adb84aa34e",
+    "55fd1947e80f67ec91dfe63e7bf15f72d822cefb",
+    "57b84777066e9c0c43adcc92602dbd1021f52b48",
+    "5892e9a0aca54ef3f45d2ce87a6dcfb80d1569da",
+    "58e7aef16a9643438cf621fa9fb402e9d325dc65",
+    "59e24ec38d9c7b377dcfeade1637b298aab9623e",
+    "5b4a463f700bceb441f7b669f58a5e60823d2841",
+    "5c83f27fa4d916a8432894e07031c2b5c7451a09",
+    "623b19fe2ac59b8328d0af3002a6c0da4ee064a7",
+    "6719e1fc18d122bde9ffa947ff70b6b7266622d3",
+    "6ea63a8c98e22fd3c6794b17c77f7909c3b851a2",
+    "6ea9ddfa2cf6bd74a700186cb3e8251cd51eff58",
+    "762508748eaa4f857179fa6f3450765bc62ebd6a",
+    "7629ab50846229c87987d7fa0ac12389212bb70f",
+    "76509ff65c70edb5f212b6b4217febe5493bb0f3",
+    "76cd81d310a6ccb4cf7bdebcc61be050d0863222",
+    "78ba2f4c84ff84be64b0da23e603f59c761905aa",
+    "79ed7d69ea654d1b67bbf74bb931ff70c4c6913e",
+    "80899a3d3ea5c0f7c5d54f1b3583e43768e92767",
+    "884152be5ef2accab670b604ddb344f4a55bf1d3",
+    "8f8abedfce68f932e4f6f333a5470ee5f3897ff4",
+    "925a93db824261d146a14900b8367c88d25cbd71",
+    "930ce995269f0ded5df009eb5916162971eb1f58",
+    "934bb36319e857321840c0ae145664ca6910c382",
+    "94d743a1b8bb3fe595f96e88f4cdb54a4ee72375",
+    "98e787e8d61593797aef1ed29840b2315a0cc6e5",
+    "9b397b1f215381208c3381b175b3da8b6fe31399",
+    "9f37042ef36b8f20ebf44f8228f6a4b5d27e00c3",
+    "9fa187ff5a455f495cfa2635e60c413b6763370d",
+    "a1d46ce5ca9958ff4cbd8a3b6aaf83bc8710ae0c",
+    "a2e2c82f11d97982f0cc1ae6be452a42b24a0ff0",
+    "a2f08edab1307aba4281ce1e2a54d84bca88a889",
+    "a524756f3f4f90d81f89035fa7f85f1e1897b99d",
+    "a5528a4807ba14fd8088a557ad105ac10ca62965",
+    "b19103bb393096e405bbecd2808a1aa0e01bb200",
+    "b6014c43b8174904e80f71df22be2251a802b418",
+    "b701555aa8b06a51f94a4d97bed7f3ebf96ab439",
+    "b714ce2bd8050d5e19ed9ca072460ba2b8154c3b",
+    "b85c2c2c753fe83a2fc21f073ee1e49675ae647e",
+    "baedff25eafad1516270916a651af6754ffa5996",
+    "bee4f42bb622ae0a0999f8f3e3dac31f14282278",
+    "bf1f7000014287805ea7c44341a3ce9e112e6689",
+    "c081a749cd63feafcc25414f5ad006d1f78f1e36",
+    "c0adc2c0763e1515ed07dc712b024974d98fb342",
+    "c4b2a6c21a2ff54d1fdd3965ac98a6d90effba7a",
+    "d09a5611767d94fd196393b31d44cb8cf6657f7f",
+    "d20fc229fe61a08e36a2889d89e0f4ce7c06c4a9",
+    "d26b03c7e8346b0caabb106f1aaf8acc3ed51623",
+    "d57f45621cbe465eb13dfb6cc26cc4197d98f90e",
+    "d7183efeb2e528d6d88f0b69da41323642b8fa85",
+    "d88bd5c0f89f9f2fcd80debfd9bd3a2b1a7786a5",
+    "dcfbedb78bfd682ad06f2ff4517241f490e4f401",
+    "e305dcc67e526e585349c60f849567f4c2bfc835",
+    "e3ac010053a78aad7650bb2608a1f0110e4cd8bf",
+    "e5e70cfc93a3aa68a166eba7bbbd3dc1053ce60d",
+    "e8a5f936607481446e4897e3bf2e0d10f0556632",
+    "e98bdfaba62869faf5112ef281a9371d2a04d78e",
+    "ea4b9370fdb3d1ab23e5f43f6f9fe5f8d46a31e3",
+    "f3d674806df8f5fd7925e46f1dcfec70cace706a",
+    "f83cf867a38c470b4347f721d9ea9370c3019eaf"
+  ],
+  "current_helpers": [
+    {
+      "path": "/private/tmp/cmm-round85-commit.py",
+      "sha256": "8e9042374ea233a2b9b70657216504e109f50596d86f215ce2be1d2953484e18",
+      "bytes": 4445
+    },
+    {
+      "path": "/private/tmp/cmm-round85-open-pr.py",
+      "sha256": "cf3fdaa05f8573b72128d6e486ede846978a7d3fedc9136bcbc3e2aaf3391710",
+      "bytes": 2114
+    },
+    {
+      "path": "/private/tmp/cmm-round85-post-review.py",
+      "sha256": "2308e293ec11f5ab9718c35f811267555619cafb52df71c044d19dc6881c03af",
+      "bytes": 1984
+    },
+    {
+      "path": "/private/tmp/cmm-round85-enqueue.py",
+      "sha256": "86719af78b0fb0d7108e71e773f3a6a9ee8fc3dc5764c48f07514ec3ac2018a5",
+      "bytes": 4813
+    },
+    {
+      "path": "/private/tmp/cmm-round85-cleanup.py",
+      "sha256": "01fa00579ab75a05765d9b5acd24a5b588db77c8b4840b79b357d82c4dc7688e",
+      "bytes": 3129
+    },
+    {
+      "path": "/private/tmp/cmm-round85-sync-main.py",
+      "sha256": "17aaebe9b035169d3209dd73c2e66902c48b4f7ab16131e4583af356a82c75dd",
+      "bytes": 4902
+    },
+    {
+      "path": "/private/tmp/cmm-round85-isolated-verification.py",
+      "sha256": "8802358da3b2f0c74c46f9d8d81420e47fbd5d2016c5f4cc727c088bb733242f",
+      "bytes": 9563
+    },
+    {
+      "path": "/private/tmp/cmm-round85-isolated-coverage.py",
+      "sha256": "e0d29b4d393d3cdcdc73a705bb2ee619c282080306e39f753a12eaee6711ed36",
+      "bytes": 3329
+    },
+    {
+      "path": "/private/tmp/cmm-round85-review-check-final.py",
+      "sha256": "3ceeaec90c6a65fb46868efb3e48ea0153ffe02ba04c7d6b770606c453830bc7",
+      "bytes": 955
+    },
+    {
+      "path": "/private/tmp/cmm-round85-final-gates.py",
+      "sha256": "84fdec02b3e2c4cf346b599b29bb638ee2d2f88df90a25cdc3e57b018d9738cd",
+      "bytes": 2506
+    },
+    {
+      "path": "/private/tmp/cmm-round85-build-manifest.py",
+      "sha256": "c8d2783c3895068c2ae1de7c25d66db7543981b23fe2273f1bfd8305cb561f0f",
+      "bytes": 6129
+    }
+  ],
+  "static_helper_bindings": [
+    {
+      "current": {
+        "path": "/private/tmp/cmm-round85-final-gates.py",
+        "sha256": "84fdec02b3e2c4cf346b599b29bb638ee2d2f88df90a25cdc3e57b018d9738cd",
+        "bytes": 2506
+      },
+      "snapshot": {
+        "path": "/private/tmp/CMMMech-expansion-round85-20261015/reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-final-gates.py",
+        "sha256": "84fdec02b3e2c4cf346b599b29bb638ee2d2f88df90a25cdc3e57b018d9738cd",
+        "bytes": 2506
+      },
+      "historical_configuration": false
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmm-round85-review-check-final.py",
+        "sha256": "3ceeaec90c6a65fb46868efb3e48ea0153ffe02ba04c7d6b770606c453830bc7",
+        "bytes": 955
+      },
+      "snapshot": {
+        "path": "/private/tmp/CMMMech-expansion-round85-20261015/reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-review-check-final.py",
+        "sha256": "3ceeaec90c6a65fb46868efb3e48ea0153ffe02ba04c7d6b770606c453830bc7",
+        "bytes": 955
+      },
+      "historical_configuration": false
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmm-round85-isolated-verification.py",
+        "sha256": "8802358da3b2f0c74c46f9d8d81420e47fbd5d2016c5f4cc727c088bb733242f",
+        "bytes": 9563
+      },
+      "snapshot": {
+        "path": "/private/tmp/CMMMech-expansion-round85-20261015/reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-isolated-verification.py",
+        "sha256": "8802358da3b2f0c74c46f9d8d81420e47fbd5d2016c5f4cc727c088bb733242f",
+        "bytes": 9563
+      },
+      "historical_configuration": false
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmm-round85-isolated-coverage.py",
+        "sha256": "e0d29b4d393d3cdcdc73a705bb2ee619c282080306e39f753a12eaee6711ed36",
+        "bytes": 3329
+      },
+      "snapshot": {
+        "path": "/private/tmp/CMMMech-expansion-round85-20261015/reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-isolated-coverage.py",
+        "sha256": "e0d29b4d393d3cdcdc73a705bb2ee619c282080306e39f753a12eaee6711ed36",
+        "bytes": 3329
+      },
+      "historical_configuration": false
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmm-round85-commit.py",
+        "sha256": "8e9042374ea233a2b9b70657216504e109f50596d86f215ce2be1d2953484e18",
+        "bytes": 4445
+      },
+      "snapshot": {
+        "path": "/private/tmp/CMMMech-expansion-round85-20261015/reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-commit.py",
+        "sha256": "8e9042374ea233a2b9b70657216504e109f50596d86f215ce2be1d2953484e18",
+        "bytes": 4445
+      },
+      "historical_configuration": false
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmm-round85-open-pr.py",
+        "sha256": "cf3fdaa05f8573b72128d6e486ede846978a7d3fedc9136bcbc3e2aaf3391710",
+        "bytes": 2114
+      },
+      "snapshot": {
+        "path": "/private/tmp/CMMMech-expansion-round85-20261015/reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-open-pr.py",
+        "sha256": "cf3fdaa05f8573b72128d6e486ede846978a7d3fedc9136bcbc3e2aaf3391710",
+        "bytes": 2114
+      },
+      "historical_configuration": false
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmm-round85-post-review.py",
+        "sha256": "2308e293ec11f5ab9718c35f811267555619cafb52df71c044d19dc6881c03af",
+        "bytes": 1984
+      },
+      "snapshot": {
+        "path": "/private/tmp/CMMMech-expansion-round85-20261015/reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-post-review.py",
+        "sha256": "2308e293ec11f5ab9718c35f811267555619cafb52df71c044d19dc6881c03af",
+        "bytes": 1984
+      },
+      "historical_configuration": false
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmm-round85-enqueue.py",
+        "sha256": "86719af78b0fb0d7108e71e773f3a6a9ee8fc3dc5764c48f07514ec3ac2018a5",
+        "bytes": 4813
+      },
+      "snapshot": {
+        "path": "/private/tmp/CMMMech-expansion-round85-20261015/reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-enqueue.py",
+        "sha256": "86719af78b0fb0d7108e71e773f3a6a9ee8fc3dc5764c48f07514ec3ac2018a5",
+        "bytes": 4813
+      },
+      "historical_configuration": false
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmm-round85-cleanup.py",
+        "sha256": "01fa00579ab75a05765d9b5acd24a5b588db77c8b4840b79b357d82c4dc7688e",
+        "bytes": 3129
+      },
+      "snapshot": {
+        "path": "/private/tmp/CMMMech-expansion-round85-20261015/reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-cleanup.py",
+        "sha256": "01fa00579ab75a05765d9b5acd24a5b588db77c8b4840b79b357d82c4dc7688e",
+        "bytes": 3129
+      },
+      "historical_configuration": false
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmm-round85-sync-main.py",
+        "sha256": "17aaebe9b035169d3209dd73c2e66902c48b4f7ab16131e4583af356a82c75dd",
+        "bytes": 4902
+      },
+      "snapshot": {
+        "path": "/private/tmp/CMMMech-expansion-round85-20261015/reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-sync-main.py",
+        "sha256": "17aaebe9b035169d3209dd73c2e66902c48b4f7ab16131e4583af356a82c75dd",
+        "bytes": 4902
+      },
+      "historical_configuration": false
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmm-round57-recover-original.py",
+        "sha256": "a7c9487654d05821423a7d95844ac1289e80b5958107f1372cc0d0d3ed07906b",
+        "bytes": 10885
+      },
+      "snapshot": {
+        "path": "/private/tmp/CMMMech-expansion-round85-20261015/reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round57-recover-original.py",
+        "sha256": "a7c9487654d05821423a7d95844ac1289e80b5958107f1372cc0d0d3ed07906b",
+        "bytes": 10885
+      },
+      "historical_configuration": false
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmm-round85-helper-config.json",
+        "sha256": "69bd3583b7ad71854c203e2dc54d1117d62b882d154a57dbb4096cbf6ccc9e3b",
+        "bytes": 900
+      },
+      "snapshot": {
+        "path": "/private/tmp/CMMMech-expansion-round85-20261015/reviews/publication/20261015-round85/20261015T012555Z-operational-static-sources/cmm-round85-helper-config.json",
+        "sha256": "baa3b9791b1e7e6393e93077d5108e66ebea263a587b437f4b701bffd5634689",
+        "bytes": 728
+      },
+      "historical_configuration": true
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmm-round85-hosted-peer.py",
+        "sha256": "e4c618ef70202f445a5845b88ebf652ca5d4f5d9e881af2c49869a5c38b3a634",
+        "bytes": 14671
+      },
+      "retained": {
+        "path": "/private/tmp/cmm-round85-hosted-peer.py",
+        "sha256": "e4c618ef70202f445a5845b88ebf652ca5d4f5d9e881af2c49869a5c38b3a634",
+        "bytes": 14671,
+        "retained_paths": [
+          "reviews/publication/20261015-round85/cmm-round85-hosted-peer.py"
+        ]
+      }
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmm_round85_peer_checks.py",
+        "sha256": "256acf1a2c476b80dc75586c5f8b6972ef29ea25f6a6da33b923d0d049f81790",
+        "bytes": 15405
+      },
+      "retained": {
+        "path": "/private/tmp/cmm_round85_peer_checks.py",
+        "sha256": "256acf1a2c476b80dc75586c5f8b6972ef29ea25f6a6da33b923d0d049f81790",
+        "bytes": 15405,
+        "retained_paths": [
+          "reviews/publication/20261015-round85/cmm_round85_peer_checks.py"
+        ]
+      }
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmm-round85-hosted-audit-paginated.py",
+        "sha256": "eb207ba390b8311330e21b94ba0dc02af7761377435c39c3412b99956ad6c866",
+        "bytes": 21493
+      },
+      "retained": {
+        "path": "/private/tmp/cmm-round85-hosted-audit-paginated.py",
+        "sha256": "eb207ba390b8311330e21b94ba0dc02af7761377435c39c3412b99956ad6c866",
+        "bytes": 21493,
+        "retained_paths": [
+          "reviews/publication/20261015-round85/cmm-round85-hosted-audit-paginated.py"
+        ]
+      }
+    }
+  ],
+  "integration_bindings": [
+    {
+      "path": "/private/tmp/cmm-round85-effective-rules.json",
+      "sha256": "b44e72b3e1d20331612c24febf9db8edfb58dc09f530c9846ca8970a6d32e3d2",
+      "bytes": 1159,
+      "retained_paths": [
+        "reviews/publication/20261015-round85/effective-rules.json"
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round85-claw-admission.json",
+      "sha256": "f89ed075782dad239c8021c3ce4ee1250521f5257371a047e3fff7c1c8ea2efc",
+      "bytes": 133,
+      "retained_paths": [
+        "reviews/publication/20261015-round85/claw-admission.json"
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round85-claw-convergence.json",
+      "sha256": "e8cd1458c3781c33c30db3100ce1c5398d6dc568466d8b05522cf8d8e377bdaa",
+      "bytes": 135,
+      "retained_paths": [
+        "reviews/publication/20261015-round85/claw-convergence.json"
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round85-integration-issue3.json",
+      "sha256": "40ec28ecfca5663c82602799a6dcf5b6e0c0bd9796d1852110196b2e9fe88b78",
+      "bytes": 87,
+      "retained_paths": [
+        "reviews/publication/20261015-round85/integration-issue3.json"
+      ]
+    },
+    {
+      "path": "/private/tmp/cmm-round85-shepherd-status.json",
+      "sha256": "0c84b7e9c3bf8f7ced4c288b4c94231f12e202f4e5412b243e0c046507fc9acc",
+      "bytes": 230,
+      "retained_paths": [
+        "reviews/publication/20261015-round85/shepherd-status.json"
+      ]
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round85-20261015/scripts/.vendored_canon_ref",
+      "sha256": "698af47e96e93fe96e81910bb140593a79c2b92c4688892edeab9b63244ec5bf",
+      "bytes": 41
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round85-20261015/.github/workflows/pr-shepherd.yml",
+      "sha256": "3230756053abfa76afb6f65c3615106617273246a00598758d1b37ded82d687b",
+      "bytes": 10956
+    }
+  ],
+  "pr_body": {
+    "path": "/private/tmp/cmm-round85-pr-body.md",
+    "sha256": "9d92f46dcbab1ddc833d9021c164487c54527018b46dc20249e6f6818a9ec0c5",
+    "bytes": 1782
+  },
+  "live_issue_states": [
+    {
+      "number": 286,
+      "state": "open",
+      "title": "Clarify Segura2023 minor wurtzite indexing before accepting phase evidence",
+      "body_sha256": "2412d8f3e547b42f6cc7a229e9b1d0c81368a6d350440ef08931c9e4fb9ed1f9",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/286"
+    },
+    {
+      "number": 287,
+      "state": "open",
+      "title": "Resolve zincite2020 dose and Zn balance inconsistencies before quantitative curation",
+      "body_sha256": "e9607caa058bdcd319bfef230e899f334f85c0b3466cd78fad8b1726ce8e9047",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/287"
+    },
+    {
+      "number": 288,
+      "state": "open",
+      "title": "Clarify titanogypsum2021 loading, fluoride balance and mixed phase assignments",
+      "body_sha256": "98f115c1add6cae61d355608b51ce1923faed17c047dfeecbae7b67e7225b090",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/288"
+    },
+    {
+      "number": 289,
+      "state": "open",
+      "title": "Resolve azurite2016 strain, phase-sample lineage and copper-removal recipe",
+      "body_sha256": "9d9a0a86859a19d5e3980a77f6fbecb3dbe684accc94a4e3fdf3d8f1b627f18f",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/289"
+    },
+    {
+      "number": 290,
+      "state": "open",
+      "title": "Clarify tenorite2021 thermal phase formation and mixed-product evidence",
+      "body_sha256": "5cf267b086938ac6d5615582de80e8c4e2ddad4cef4c3280a15ccc68aadde05d",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/290"
+    },
+    {
+      "number": 291,
+      "state": "open",
+      "title": "Correct round85 azurite dossier Figure 8 page locator",
+      "body_sha256": "c2ec6eb0bc6285d9a2ffc14a8b1fa73173c588582f280afa0cb71c0055d7fe7d",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/291"
+    }
+  ],
+  "preservation": {
+    "fresh_snapshot_match": true,
+    "retained_tag_match": true,
+    "scope": "All original-main nontracked and unrelated-skill tracked/nontracked entries, including hidden/ignored files. Git administration and external symlink-target contents excluded; link targets and modes retained."
+  },
+  "auditor": {
+    "path": "/private/tmp/cmm-round85-final-package-audit.py",
+    "sha256": "8b619f4b50b82ab3b5629fe629a0654315bd938ab59f481ac88300dec61ccff1",
+    "bytes": 26368
+  },
+  "findings": [],
+  "limitations": [
+    "Precommit publication audit; exact hosted head/diff/CI, committed isolated preflight, native queue merge, branch cleanup and fresh-main checks are separate future gates.",
+    "Complete current-hash science coverage and exact authority/original bindings are verified; no instrument reanalysis or laboratory replication is performed.",
+    "Source issues286\u2013290 remain open; dossier locator issue291 is corrected with independent disposition and will close through the proposed PR. Source uncertainty is preserved in qualified native reviews, not falsely counted as corrected record defects.",
+    "Historical fleet admission/convergence is distinguished from this repository snapshot; manual/comment-only shepherd does not establish credential/model readiness or current whole-fleet convergence.",
+    "Ten operational helpers are rebound to independent static audit snapshots and exact predecessor transformations. The provisional static configuration is historical; current final configuration is separately rebound. The new manifest builder was manually read; syntax checking is not runtime success.",
+    "Hidden/ignored census follows relevant links with cycle prevention; Git commit candidate enumeration uses Git scope. Protected snapshots exclude Git administration and external symlink target contents."
+  ]
+}

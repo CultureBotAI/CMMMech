@@ -34,10 +34,10 @@
   <div>
     <label for="record-kind">Material Kind</label>
     <select id="record-kind">
-      <option value="">All kinds (51)</option>
+      <option value="">All kinds (54)</option>
       <option value="element">Element (65)</option>
-      <option value="mineral">Mineral (194)</option>
-      <option value="secondary_resource">Secondary resource (79)</option>
+      <option value="mineral">Mineral (199)</option>
+      <option value="secondary_resource">Secondary resource (80)</option>
       <option value="commodity">Commodity (32)</option>
       <option value="primary_resource">Primary resource (26)</option>
       <option value="mineral_group">Mineral group (7)</option>
@@ -48,12 +48,12 @@
     <select id="record-mechanism">
       <option value="">All processes</option>
       <option value="bioleaching">Bioleaching (137)</option>
-      <option value="biomineralization">Biomineralization (85)</option>
+      <option value="biomineralization">Biomineralization (89)</option>
       <option value="redox_transformation">Redox transformation (45)</option>
-      <option value="biosorption">Biosorption (13)</option>
+      <option value="biosorption">Biosorption (14)</option>
       <option value="separation">Separation (14)</option>
       <option value="recovery">Recovery (13)</option>
-      <option value="other">Other (51)</option>
+      <option value="other">Other (54)</option>
     </select>
   </div>
   <div>
@@ -66,7 +66,7 @@
   <button type="reset">Clear filters</button>
 </form>
 
-<p id="record-count" role="status" aria-live="polite">51 materials</p>
+<p id="record-count" role="status" aria-live="polite">54 materials</p>
 <p id="record-empty" hidden>No materials match your query or filters. Clear filters to show all.</p>
 
 <div class="record-table-scroll" role="region" aria-label="Materials table" tabindex="0">
@@ -870,6 +870,34 @@
         <span style="color: var(--muted); font-size: .85rem;">—</span>
       </td>
     </tr>
+    <tr data-kind="mineral"
+        data-mechanisms="biomineralization other"
+        data-critical="false"
+        data-search="hydrozincite hydrozincite mineral hydrozincite is the monoclinic zinc hydroxycarbonate mineral zn5(co3)2(oh)6, listed by ima-cnmnc in september 2026 with grandfathered status g and original-description year 1853, not a numbered approval. it is distinct from smithsonite, zincite, elemental zinc and mixed zinc-bearing sediments. the curated evidence concerns hydrozincite-bearing field mats associated with photosynthetic microorganisms and a separate sterile precipitation experiment. it supports a qualified biological association rather than a pure-culture demonstration of microbial necessity, a phase-specific metal recovery yield, or industrial deployment. no criticality designation is inherited from zinc. biomineralization other">
+      <td>
+        <a href="../materials/hydrozincite.html"><strong>Hydrozincite</strong></a>
+        <p class="record-desc">Hydrozincite is the monoclinic zinc hydroxycarbonate mineral Zn5(CO3)2(OH)6, listed by IMA-CNMNC in September 2026 with grandfathered status G and original-description year 1853, not a numbered approval. It is distinct from smithsonite, zincite, elemental zinc and mixed zinc-bearing sediments. The curated evidence concerns hydrozincite-bearing field mats associated with photosynthetic microorganisms and a separate sterile precipitation experiment. It supports a qualified biological association rather than a pure-culture demonstration of microbial necessity, a phase-specific metal recovery yield, or industrial deployment. No criticality designation is inherited from zinc.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>2</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
     <tr data-kind="secondary_resource"
         data-mechanisms="bioleaching other"
         data-critical="false"
@@ -1379,6 +1407,33 @@
         <span style="color: var(--muted); font-size: .85rem;">—</span>
       </td>
     </tr>
+    <tr data-kind="mineral"
+        data-mechanisms="other"
+        data-critical="false"
+        data-search="tenorite tenorite mineral tenorite is the monoclinic copper(ii) oxide mineral cuo, distinct from cuprite (cu2o), elemental copper and unspecified copper-oxide nanoparticles. the september 2026 ima list records approved status a with a 1962 special-procedure action, not a sequential approval number. the accepted experiment concerns a synthetic analogue assigned to monoclinic cuo after heating material conditioned with fungal biomass filtrate. it does not establish direct living-cell formation, phase purity or isolated copper recovery. no elemental copper criticality designation is inherited. other">
+      <td>
+        <a href="../materials/tenorite.html"><strong>Tenorite</strong></a>
+        <p class="record-desc">Tenorite is the monoclinic copper(II) oxide mineral CuO, distinct from cuprite (Cu2O), elemental copper and unspecified copper-oxide nanoparticles. The September 2026 IMA list records approved status A with a 1962 special-procedure action, not a sequential approval number. The accepted experiment concerns a synthetic analogue assigned to monoclinic CuO after heating material conditioned with fungal biomass filtrate. It does not establish direct living-cell formation, phase purity or isolated copper recovery. No elemental copper criticality designation is inherited.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>1</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+        </div>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+    </tr>
     <tr data-kind="element"
         data-mechanisms="other"
         data-critical="true"
@@ -1530,6 +1585,36 @@
       </td>
       <td>
         <div><code>CHEBI:33331</code></div>
+      </td>
+    </tr>
+    <tr data-kind="mineral"
+        data-mechanisms="biomineralization other"
+        data-critical="false"
+        data-search="zincite zincite mineral zincite is the hexagonal zno mineral species listed by ima-cnmnc in september 2026 with grandfathered status g and original-description year 1845, not a numbered approval. the handbook documents natural zn-dominant oxide with possible mn substitution. this owner is distinct from elemental zinc, hydrozincite, zinc oxalate and mixed zinc-bearing wastes. evidence below concerns commercial zincite-structured zno in fungal experiments and a separate source-described natural zincite specimen in an abiotic dissolution experiment. commercial particles are synthetic analogues, not natural ore. no criticality designation, phase-specific recovery yield or industrial deployment is asserted. biomineralization other aspergillus niger ncbitaxon:5061">
+      <td>
+        <a href="../materials/zincite.html"><strong>Zincite</strong></a>
+        <p class="record-desc">Zincite is the hexagonal ZnO mineral species listed by IMA-CNMNC in September 2026 with grandfathered status G and original-description year 1845, not a numbered approval. The Handbook documents natural Zn-dominant oxide with possible Mn substitution. This owner is distinct from elemental zinc, hydrozincite, zinc oxalate and mixed zinc-bearing wastes. Evidence below concerns commercial zincite-structured ZnO in fungal experiments and a separate source-described natural zincite specimen in an abiotic dissolution experiment. Commercial particles are synthetic analogues, not natural ore. No criticality designation, phase-specific recovery yield or industrial deployment is asserted.</p>
+      </td>
+      <td>
+        <span class="badge">mineral</span>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
+      </td>
+      <td>
+        <strong>2</strong>
+        <div style="margin-top: .2rem;">
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
+          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+        </div>
+      </td>
+      <td>
+        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+          <li>Aspergillus niger</li>
+        </ul>
+      </td>
+      <td>
+        <span style="color: var(--muted); font-size: .85rem;">—</span>
       </td>
     </tr>
     <tr data-kind="element"

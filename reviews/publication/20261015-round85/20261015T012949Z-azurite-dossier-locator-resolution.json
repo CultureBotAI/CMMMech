@@ -1,0 +1,60 @@
+{
+  "timestamp_utc": "2026-10-15T01:29:49.442388+00:00",
+  "reviewer": "codex /root/round68_phosphates",
+  "scientific_review": false,
+  "passed": true,
+  "verdict": "resolved",
+  "findings": [
+    {
+      "finding_id": "D1",
+      "issue_key": "cmmmech:round85-azurite-dossier-figure8-locator",
+      "severity": "minor",
+      "status": "resolved",
+      "previous_occurrences": [
+        {
+          "path": "reviews/publication/20261015-round85/20261015T012731Z-azurite-dossier-locator-initial.json",
+          "sha256": "1ab75e99c78394e508541471be4ee9d3aabc6990a0799a016bb60abcc393be6d",
+          "finding_id": "D1",
+          "issue_key": "cmmmech:round85-azurite-dossier-figure8-locator"
+        }
+      ],
+      "github_issue": "https://github.com/CultureBotAI/CMMMech/issues/291",
+      "issue_state_at_review": "OPEN pending PR merge; this artifact resolves the local metadata defect and does not assert remote closure",
+      "path": "research/sources/round85-copper-minerals-20261015/report.json",
+      "field": "accepted[slug=azurite].locators",
+      "before_sha256": "c9b5fd7e1de34e5765b7732afd388f97fb30c3cf0c384108205b137da3734418",
+      "after_sha256": "17a0272ab5f1ffb67b507af862e4310716e983d9908b09884aca97b78304883b",
+      "old_value": "Kang2016 complete7-page original; Methods pp207-208, Fig7 p210, Fig8 p211. Figures1-8 and Table1 inspected.",
+      "new_value": "Kang2016 complete7-page original; Methods pp207-208, Fig7 p210, Fig8 p210 (PDF page5), with discussion p211. Figures1-8 and Table1 inspected.",
+      "verification": "Reverse only exact locator substring reproduces the initial entire-file byte SHA256; parsed comparison independently confirms exactly one locator field changes. Reconstructed bytes are a verification calculation, not falsely claimed retained original.",
+      "source_path": "/private/tmp/cmm-round85-copper-minerals-research/kang2016.pdf",
+      "source_sha256": "b6e7f94a43e8c29959b505cb320f11894bd37c1dcf4ba1db18f4c147d46c567c",
+      "source_locator": "Original PDF page5 printed210, bottom-right Figure8; page6 printed211 carries the discussion"
+    }
+  ],
+  "unchanged_owner_history_inputs": [
+    {
+      "path": "data/records/azurite.yaml",
+      "sha256": "10f41fc69980d6adc1213e715fafa37d08a4eacf6f4d917c8ede804b2a20261f",
+      "role": "target"
+    },
+    {
+      "path": "history/records/azurite/2026-10-15T012057Z-codex-d55d50.yaml",
+      "sha256": "5347888f6c2c64bd1c0ef730777f22b858236bf7f2534a6b176844bb128b6fea",
+      "role": "context"
+    },
+    {
+      "path": "data/records/tenorite.yaml",
+      "sha256": "e5b0bfd564a30686d9ca03cdc24b971bafd0f213624d377ff71dd3b050037112",
+      "role": "target"
+    },
+    {
+      "path": "history/records/tenorite/2026-10-15T012116Z-codex-1abab6.yaml",
+      "sha256": "0d6d4159894605ea39ff0fe8aee9c31dc03002c3c3df574a9f4a889be8341aae",
+      "role": "context"
+    }
+  ],
+  "limitations": [
+    "No record/history/scientific assessment or native finding disposition changed. No full scientific or validation rerun was warranted for this one dossier locator."
+  ]
+}
