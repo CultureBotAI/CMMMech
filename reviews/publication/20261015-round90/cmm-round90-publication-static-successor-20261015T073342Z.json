@@ -1,0 +1,46 @@
+{
+  "started_at": "2026-10-15T07:33:42.984900+00:00",
+  "finished_at": "2026-10-15T07:33:42.986941+00:00",
+  "reviewer": "codex /root/round68_new_frontier",
+  "scientific_review": false,
+  "passed": true,
+  "verdict": "resolved_static_pending_runtime",
+  "helper": {
+    "path": "/private/tmp/cmm-round90-publication-audit.py",
+    "sha256": "1947590bda4d8ea72a669ac0a7d929a522abe504f79f48c6fec5d8cc3a699351",
+    "snapshot": "/private/tmp/cmm-round90-publication-static-successor-20261015T073342Z.py"
+  },
+  "findings": [
+    {
+      "finding_id": "OP1",
+      "issue_key": "CMMMech.round90.publication-review-target-ci-binding",
+      "severity": "minor",
+      "status": "resolved",
+      "github_issue": 313,
+      "previous_occurrences": [
+        {
+          "path": "/private/tmp/cmm-round90-publication-static-expanded-20261015T073056Z.json",
+          "sha256": "781d4f9dfd63821fa7a85d8ebd2361110425bdf9dd4fed98335eecc6a4c4400e",
+          "finding_id": "OP1",
+          "issue_key": "CMMMech.round90.publication-review-target-ci-binding"
+        }
+      ],
+      "disposition": "Corrected source now explicitly requires exact record ID/path in targets and ID in reviewed_target_ids. Hosted path resolves the successful exact-head check to pull_request workflow at maintained validate-strict.yaml, validates complete paginated successful jobs on the same run/head, and retains check/run/job API evidence. Static guard correction is complete; actual live evidence is still a runtime prerequisite."
+    }
+  ],
+  "regression": {
+    "path": "/private/tmp/cmm-round90-target-guard-regression.json",
+    "sha256": "2620ace568a9cd6ec3cb53d0e2cdf1b5749b2f689d5080c2ecaaabcb6cae2ffa",
+    "cases": 5,
+    "passed": true,
+    "independently_rerun": false,
+    "review": "Read root actual-AST receipt, checked exact helper digest and each expected positive/negative case against the pure predicate; no redundant rerun."
+  },
+  "diff": "--- initial\n+++ corrected\n@@ -1,12 +1,14 @@\n from pathlib import Path\n from datetime import datetime,timezone\n-import argparse,hashlib,json,os,subprocess,yaml\n+import argparse,hashlib,json,os,re,subprocess,yaml\n p=argparse.ArgumentParser();p.add_argument('--pr',type=int);a=p.parse_args()\n T=Path('/private/tmp');W=T/'CMMMech-expansion-round90-20261015';repo='CultureBotAI/CMMMech';sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();now=lambda:datetime.now(timezone.utc).isoformat()\n def run(cmd):return subprocess.check_output(cmd,cwd=W,text=True).strip()\n def git(*a):return run(['git',*a])\n def api(path):return json.loads(run(['gh','api',path]))\n def pages(path):return [x for page in json.loads(run(['gh','api',path+'?per_page=100','--paginate','--slurp'])) for x in page]\n+def has_reviewed_target(review, record_id, path):\n+ return record_id in review.get('scope',{}).get('reviewed_target_ids',[]) and any(t.get('target_id')==record_id and t.get('path')==path for t in review.get('targets',[]))\n c=json.loads((T/'cmm-round90-commit-receipt.json').read_text());cfg=json.loads((T/'cmm-round90-helper-config.json').read_text());assert c['base']==cfg['base'] and c['branch']==cfg['branch']\n assert git('rev-parse','HEAD')==c['head'] and git('rev-parse','HEAD^{tree}')==c['tree'] and git('rev-list','--parents','-n','1','HEAD').split()==[c['head'],c['base']]\n assert not git('status','--porcelain=v1','--untracked-files=all')\n@@ -24,6 +26,7 @@\n for row in report['records']:\n  record=yaml.safe_load((W/row['path']).read_text());v=yaml.safe_load((W/row['review']['path']).read_text());assert row['sha256']==sha(W/row['path']) and row['id']==record['id'] and row['history_refs']==record['history_refs']\n  assert v['scientific_review'] and v['completion']=='completed' and v['verdict'] in ['pass','pass_with_limitations'] and v['reviewer']['independence']=='independent' and v['source']['git_revision']==c['base']\n+ assert has_reviewed_target(v,record['id'],row['path'])\n  assert all(sha(W/i['path'])==i['sha256'] for i in v['source']['inputs'])\n  assert any(i['path']==row['path'] and i['sha256']==row['sha256'] for i in v['source']['inputs'])\n  assert all(any(i['path']==h and i['sha256']==sha(W/h) for i in v['source']['inputs']) for h in record['history_refs'])\n@@ -47,6 +50,12 @@\n  runs=api(f'repos/{repo}/commits/{c[\"head\"]}/check-runs?per_page=100');assert runs['total_count']<=100\n  required=[x for x in runs['check_runs'] if x['name']=='validate-strict' and x['app']['id']==15368 and x['head_sha']==c['head']];assert required\n  strict=max(required,key=lambda x:x['id']);assert strict['status']=='completed' and strict['conclusion']=='success'\n+ run_match=re.search(r'/actions/runs/(\\d+)',strict['details_url']);assert run_match\n+ workflow=api(f'repos/{repo}/actions/runs/{run_match.group(1)}');assert workflow['head_sha']==c['head'] and workflow['event']=='pull_request' and workflow['path']=='.github/workflows/validate-strict.yaml' and workflow['status']=='completed' and workflow['conclusion']=='success'\n+ job_pages=json.loads(run(['gh','api',f'repos/{repo}/actions/runs/{workflow[\"id\"]}/jobs?per_page=100','--paginate','--slurp']));jobs=[j for page in job_pages for j in page['jobs']];assert len(jobs)==job_pages[0]['total_count'] and len({j['id'] for j in jobs})==len(jobs)\n+ assert any(j['name']=='validate-strict' for j in jobs) and all(j['run_id']==workflow['id'] and j['head_sha']==c['head'] and j['status']=='completed' and j['conclusion']=='success' for j in jobs)\n+ d.update(required_check_run=strict,workflow_run=workflow,workflow_jobs=jobs)\n+\n  checks=json.loads(run(['gh','pr','checks',str(a.pr),'--repo',repo,'--required','--json','name,state,bucket,link']));assert checks and all(x['bucket']=='pass' for x in checks) and any(x['name']=='validate-strict' for x in checks)\n  pre=json.loads((T/'cmm-round90-preflight-committed-terminal.json').read_text());assert pre['mode']=='preflight' and pre['exit_code']==0 and pre['trusted_base']==c['base'] and pre['topic_head']==c['head'] and pre['expected_tree']==c['tree'] and pre['counts']==cfg['counts'] and sha(pre['log'])==pre['log_sha256']\n  assert api(f'repos/{repo}/git/ref/heads/main')['object']['sha']==c['base']\n",
+  "limitations": [
+    "Complete source and normalized diff inspected, AST parsed only. No top-level helper/Git/GitHub runtime or mutation.",
+    "Actual selected current reviews and live PR workflow/run/job identity will be checked against produced runtime receipts before hosted COMMENT.",
+    "Provisional counts/config and future branch/queue/postmerge status are not accepted by this static result.",
+    "Source scientific acceptance remains separately independent; reviewer authored coal-gasification-slag and did not self-accept its science."
+  ]
+}

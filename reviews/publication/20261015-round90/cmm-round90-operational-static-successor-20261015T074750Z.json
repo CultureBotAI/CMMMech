@@ -1,0 +1,125 @@
+{
+  "started_at": "2026-10-15T07:47:50.894754+00:00",
+  "finished_at": "2026-10-15T07:47:50.986706+00:00",
+  "reviewer": "codex /root/round68_new_frontier",
+  "authorship": "Independent static review of root-authored sync changes. Authored coal-gasification-slag; no scientific self-acceptance.",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "scope": "Read complete current sync helper and snapshot library; reconstruct exact previously reviewed sync bytes and compare; parse AST without executing helpers. Read-only identity checks of the five original surviving edits and backups. No Git/GitHub/network operation, unrelated restoration or test-suite execution.",
+  "previous_review": {
+    "path": "/private/tmp/cmm-round90-operational-static-20261015T072310Z.json",
+    "sha256": "2f3939532adffe1dacada6e34cfbcc2043c95ef0c3c5d59839c07c1f5c6f40b0",
+    "sync_sha256": "748bb65cd07b7e7a4a3a92f8a2e82c2383d99164d3393c9e83d20c60cee50040"
+  },
+  "files": [
+    {
+      "path": "/private/tmp/cmm-round90-sync-main.py",
+      "sha256": "6d9a35769bddcc43a29ca4a39648f2a8c4918e7fed134c6eef0b619b5bae4021",
+      "snapshot": "/private/tmp/cmm-round90-operational-static-successor-20261015T074750Z-sync-main.py"
+    },
+    {
+      "path": "/private/tmp/cmm-round57-recover-original.py",
+      "sha256": "a7c9487654d05821423a7d95844ac1289e80b5958107f1372cc0d0d3ed07906b"
+    }
+  ],
+  "preservation_receipt": {
+    "path": "/private/tmp/cmm-round90-preservation-precommit.json",
+    "sha256": "88f1d2e5ec188779dd2b2c0483c3dd64616e1b266c3499e0b5df5c406481eb4f",
+    "before_path": "/private/tmp/cmm-round90-preservation-before.json",
+    "before_sha256": "a0921fe61c85a9fc8041492ac60a96f17ccdf041e3b4bf7287934dcd3e2ba5d7"
+  },
+  "observed_preservation_scope": {
+    "main_preserved_in_root_receipt": true,
+    "unrelated_skill_preserved": false,
+    "counts": {
+      "main": 7187,
+      "skill_baseline": 7389,
+      "skill_still_matching": 3509,
+      "skill_missing": 3880,
+      "skill_changed": 0
+    },
+    "skill_git_pointer_present_at_review": false,
+    "cause": "Unknown; no process attribution established by this review."
+  },
+  "verified_dirty_edits": [
+    {
+      "path": ".claude/skills/cmmmech-discover-sources/SKILL.md",
+      "original": "/private/tmp/CMMMech-add-record-skill-20261010/.claude/skills/cmmmech-discover-sources/SKILL.md",
+      "backup": "/private/tmp/cmm-round90-preserved-skill-edits-20261015/.claude/skills/cmmmech-discover-sources/SKILL.md",
+      "identity": {
+        "kind": "file",
+        "mode": 420,
+        "bytes": 9530,
+        "sha256": "f05618c116fb1e58f7ea01d65a8bfd53306d35569240f1b8fe54504d4dcfb549"
+      },
+      "baseline_and_backup_match": true
+    },
+    {
+      "path": "CLAUDE.md",
+      "original": "/private/tmp/CMMMech-add-record-skill-20261010/CLAUDE.md",
+      "backup": "/private/tmp/cmm-round90-preserved-skill-edits-20261015/CLAUDE.md",
+      "identity": {
+        "kind": "file",
+        "mode": 420,
+        "bytes": 2328,
+        "sha256": "5a947ff9de7e825362e1e0f8a8c70470db09cfd8a98bbc7a200aeef8ec427d7f"
+      },
+      "baseline_and_backup_match": true
+    },
+    {
+      "path": "README.md",
+      "original": "/private/tmp/CMMMech-add-record-skill-20261010/README.md",
+      "backup": "/private/tmp/cmm-round90-preserved-skill-edits-20261015/README.md",
+      "identity": {
+        "kind": "file",
+        "mode": 420,
+        "bytes": 8544,
+        "sha256": "6c3b4d65b6b8aa38011b767e76fc4e7b278b3c409fc3bbd04e8c384e2ef703f2"
+      },
+      "baseline_and_backup_match": true
+    },
+    {
+      "path": ".claude/skills/cmmmech-add-record/SKILL.md",
+      "original": "/private/tmp/CMMMech-add-record-skill-20261010/.claude/skills/cmmmech-add-record/SKILL.md",
+      "backup": "/private/tmp/cmm-round90-preserved-skill-edits-20261015/.claude/skills/cmmmech-add-record/SKILL.md",
+      "identity": {
+        "kind": "file",
+        "mode": 420,
+        "bytes": 10226,
+        "sha256": "43003f1f61daeb8297d3961f2c0a6299b75025059375714643bb257d018a6c5c"
+      },
+      "baseline_and_backup_match": true
+    },
+    {
+      "path": ".claude/skills/cmmmech-add-record/agents/openai.yaml",
+      "original": "/private/tmp/CMMMech-add-record-skill-20261010/.claude/skills/cmmmech-add-record/agents/openai.yaml",
+      "backup": "/private/tmp/cmm-round90-preserved-skill-edits-20261015/.claude/skills/cmmmech-add-record/agents/openai.yaml",
+      "identity": {
+        "kind": "file",
+        "mode": 420,
+        "bytes": 117,
+        "sha256": "7825374cafeda8e12eb45593ac942945192caa517c19ed981a9589c4e074d5cc"
+      },
+      "baseline_and_backup_match": true
+    }
+  ],
+  "additional_diff": "--- exact previously reviewed round90 sync\n+++ current deviation-aware sync\n@@ -11,7 +11,9 @@\n gates=json.loads((p/'cmm-round90-final-gates.json').read_text());assert gates['exit_code']==0 and gates['inputs_unchanged'] and sha(gates['log'])==gates['log_sha256']\n assert any(x['command']==['just','check'] and x['exit_code']==0 for x in gates['commands'])\n assert post['counts']==json.loads((p/'cmm-round90-helper-config.json').read_text())['counts']\n-a=snapshot(main,False);b=snapshot(skill,True);assert a==before['snapshots']['main'] and b==before['snapshots']['skill'];assert lib['retained_tag']()==before['retained_tag']\n+deviation=json.loads((p/'cmm-round90-preservation-precommit.json').read_text());assert deviation['passed'] and deviation['main_preserved'] and deviation['unrelated_skill_preserved'] is False\n+for x in deviation['dirty_edit_backups']:assert lib['identity'](Path(x['backup']))==x['identity']\n+a=snapshot(main,False);assert a==before['snapshots']['main'];assert lib['retained_tag']()==before['retained_tag']\n assert a['branch']=='main' and a['head']==c['base'] and not a['status']\n assert textgit(main,'ls-remote','origin','refs/heads/main').split()[0]==merge\n assert textgit(main,'rev-parse','origin/main')==merge and textgit(main,'rev-parse',merge+'^{tree}')==c['tree']\n@@ -20,8 +22,8 @@\n for group,other in [(incoming,nontracked),(nontracked,incoming)]:\n  for name in group:assert name not in other and not {str(q) for q in Path(name).parents if str(q)!='.'}.intersection(other),name\n git(main,'merge','--ff-only','--no-edit','--no-autostash',merge)\n-after=snapshot(main,False);other=snapshot(skill,True)\n+after=snapshot(main,False)\n assert after['head']==merge and after['tree']==c['tree'] and after['branch']=='main' and not after['status'] and after['files']==a['files']\n-assert other==b and lib['retained_tag']()==before['retained_tag']\n-d={'recorded_at':datetime.now(timezone.utc).isoformat(),'passed':True,'merge':merge,'tree':c['tree'],'main':str(main),'main_clean':True,'main_nontracked_preserved':True,'unrelated_skill_preserved':True,'retained_tag_preserved':True,'preserved_entry_counts':{'main':len(after['files']),'skill':len(other['files'])},'scope':before['snapshots']['main']['scope']+'; '+before['snapshots']['skill']['scope'],'postmerge_receipt_sha256':sha(p/'cmm-round90-postmerge-published-terminal.json')}\n+assert lib['retained_tag']()==before['retained_tag']\n+d={'recorded_at':datetime.now(timezone.utc).isoformat(),'passed':True,'merge':merge,'tree':c['tree'],'main':str(main),'main_clean':True,'main_nontracked_preserved':True,'unrelated_skill_preserved':False,'unrelated_skill_deviation_receipt':str(p/'cmm-round90-preservation-precommit.json'),'dirty_edits_backup_verified':True,'retained_tag_preserved':True,'preserved_entry_counts':{'main':len(after['files']),'skill_baseline':len(before['snapshots']['skill']['files'])},'scope':before['snapshots']['main']['scope']+'; unrelated skill deviation recorded separately, no restoration or deletion performed','postmerge_receipt_sha256':sha(p/'cmm-round90-postmerge-published-terminal.json')}\n out.write_text(json.dumps(d,indent=2)+'\\n');print(json.dumps(d,indent=2))\n",
+  "findings": [],
+  "verified": [
+    "Original main complete hidden/ignored nontracked snapshot equality remains required before synchronization, with exact clean branch/base and retained tag.",
+    "Cleanup and fresh postmerge identity, strict record/history/native-review commands, census and log hashes remain required; local final full-suite gate is separately hash checked.",
+    "Live remote main, local remote-tracking main, exact merge tree and sole trusted parent remain guarded, along with incoming tracked/nontracked path and ancestor collisions.",
+    "Only repository mutation remains guarded fast-forward of original main. Current helper does not write, restore or delete the unrelated skill checkout.",
+    "After fast-forward the main branch/head/tree/clean state and all nontracked bytes must still match; retained tag remains unchanged.",
+    "All five receipt-listed backup files and surviving original user edits presently match their exact baseline modes, sizes and hashes; reviewed receipt contains exactly the five baseline dirty/untracked paths.",
+    "Output explicitly records unrelated_skill_preserved:false and links the deviation receipt rather than claiming full unrelated preservation."
+  ],
+  "limitations": [
+    "Static acceptance only; no synchronization or publication runtime was executed by this reviewer.",
+    "Missing 3880 unrelated baseline entries and absent .git pointer are an observed preservation deviation, not a passing full-checkout preservation result. The cause is unknown.",
+    "Current 3509/3880 counts are bound to the root receipt; this narrow review independently reopened only the five user-edit originals/backups and exact .git path, not the complete unrelated tree.",
+    "The helper checks listed backups before main synchronization; it does not reconstruct missing files or claim continued preservation of all unrelated checkout state.",
+    "Local full-suite exact-commit provenance still relies on the separate final package/commit audit, as disclosed in the prior static review.",
+    "No final CI, queue, cleanup, postmerge or sync success is inferred."
+  ]
+}

@@ -1,0 +1,508 @@
+# Independent scientific review of heazlewoodite
+
+- Review: 20261015T074208Z-heazlewoodite-round90-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T07:23:57.482670Z
+- Finished UTC: 2026-10-15T07:42:08.371006Z
+- Reviewer: codex /root/round68_new_frontier (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of distinct mineral identity and a limited mixed-culture leaching observation that does not demonstrate microbial enhancement. No supported corrective owner defect found.
+
+## Scope And Provenance
+
+Full frozen mineral owner and its canonical/inline provenance; complete claim-bearing original experimental sections and appendices, not every unrelated equation or program listing in the ten-part thesis.
+
+Selection: Assigned exact maintained record; canonical inspect captured current owner/history/schema before judgment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 2d9fe2b6aa62fed3385111929dee3c4ea1f1b2a1.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:heazlewoodite | data/records/heazlewoodite.yaml | maintained | Heazlewoodite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent strict named validation | passed | True | cmmmech:heazlewoodite | Actual independent named validation checked1record,0failed; retained log verified. |
+| Completed batch gate 1 | passed | True | cmmmech:heazlewoodite | Actual coordinator execution 2026-10-15T07:31:22.240616+00:00 through 2026-10-15T07:39:53.139917+00:00; receipt/log independently verified. |
+| Completed batch gate 2 | passed | True | cmmmech:heazlewoodite | Actual coordinator execution 2026-10-15T07:39:53.139955+00:00 through 2026-10-15T07:40:16.229374+00:00; receipt/log independently verified. |
+| Completed batch gate 3 | passed | True | cmmmech:heazlewoodite | Actual coordinator execution 2026-10-15T07:40:16.229404+00:00 through 2026-10-15T07:40:28.044405+00:00; receipt/log independently verified. |
+| Completed batch gate 4 | passed | True | cmmmech:heazlewoodite | Actual coordinator execution 2026-10-15T07:40:28.044432+00:00 through 2026-10-15T07:40:36.307343+00:00; receipt/log independently verified. |
+
+## Scientific And Domain Assessments
+
+### Mineral versus synthetic analogue, ore and constituent element
+
+identity: supported. Targets: cmmmech:heazlewoodite.
+
+The species authority and source characterization are correctly separated. Initial and residual source-assigned phases support this scoped analogue record; criticality and member-level microbial taxonomy are not invented.
+
+### Culture state, substrate and control comparability
+
+evidence: supported. Targets: cmmmech:heazlewoodite.
+
+The source supports active unresolved mixed culture and ferric-cycle participation. Specified loading, medium, pH, temperature and aeration are nominal; actual control chemistry, nonsterilized mineral, probe fouling and slurry-sampling limitations remain explicit.
+
+### Negative enhancement result and assay denominator
+
+evidence: supported. Targets: cmmmech:heazlewoodite.
+
+Original plotted and raw solution data substantiate later sterile advantage, not a general claim that microbes cannot dissolve the mineral. The source concentration reference is not an isolated-metal yield. Differing test durations and culture histories do not establish replicated effect size.
+
+### Residue phase, biomass proxy and model limitations
+
+evidence: supported. Targets: cmmmech:heazlewoodite.
+
+Source-assigned millerite rims and compact coatings do not isolate a microbial inhibitory compound or prove direct attack. Operational nitrogen estimates and fitted-model shortcomings are disclosed, with laboratory scope preserved.
+
+### Original date, immutable history and completed gates
+
+provenance: supported. Targets: cmmmech:heazlewoodite.
+
+Original titlepage establishes1986. Native-inspected owner/history hashes remain unchanged; independent named and actual four batch gates passed. No reviewer curation or publication success is asserted.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/heazlewoodite.yaml; Complete frozen owner after native inspection. Actual local artifact: /private/tmp/CMMMech-expansion-round90-20261015/data/records/heazlewoodite.yaml | supports | Exact current mineral identity and qualified mixed-culture mechanism assessed. |
+| history | history/records/heazlewoodite/2026-10-15T072252Z-codex-e952f6.yaml; Canonical CREATE and distinct inline event. Actual local artifact: /private/tmp/CMMMech-expansion-round90-20261015/history/records/heazlewoodite/2026-10-15T072252Z-codex-e952f6.yaml | supports | Actual actor, model, target, date and scope agree; no reviewer owner edits. |
+| primary1 | https://wiredspace.wits.ac.za/server/api/core/bitstreams/9a5ca334-3b5e-4ec0-abe4-8826e0e895f8/content; Original titlepage (i). Actual local artifact: /private/tmp/cmm-round90-sulfides-research/huberts-part001.pdf | supports | The original dissertation is dated1986; later catalogue deposit date is not publication year. |
+| primary2 | https://wiredspace.wits.ac.za/server/api/core/bitstreams/ae0fc13d-5e79-4b3e-920e-5c74757ef962/content; Methods3.1–3.3, printedpp28–33; original Figures3.1–3.2. Actual local artifact: /private/tmp/cmm-round90-sulfides-research/huberts-part002.pdf | supports | Synthetic specimen preparation, medium and apparatus distinguish the actual laboratory feed from natural ores. |
+| primary3 | https://wiredspace.wits.ac.za/server/api/core/bitstreams/14c6afa0-b193-4293-990c-b41048608b08/content; Methods3.4–3.6 pp34–43; results4.3 pp49–61; original Figures4.4–4.9. Actual local artifact: /private/tmp/cmm-round90-sulfides-research/huberts-part003.pdf | supports | Source methods, analytical denominators and later sterile advantage support a conditional null enhancement result. |
+| primary4 | https://wiredspace.wits.ac.za/server/api/core/bitstreams/d6ad9485-1ff2-46f9-a661-dccc189be597/content; Results4.3.5–4.4 pp62–68, Figures4.10–4.14; discussion5.3/6 pp77–86, Figures5.5–5.6. Actual local artifact: /private/tmp/cmm-round90-sulfides-research/huberts-part004.pdf | supports | Residue phase assignments and model limitations preserve the distinction between observed dissolution and proposed inhibition. |
+| primary5 | https://wiredspace.wits.ac.za/server/api/core/bitstreams/bfd2cbbf-7995-4a26-8b7d-ad1bf9d6ed04/content; AppendixA.2.1, printedpp107–116; synthesis TablesA.2–A.4, final phase characterization p115. Actual local artifact: /private/tmp/cmm-round90-sulfides-research/huberts-part005.pdf | supports | Repeated heating yielded a source-characterized synthetic analogue; near-purity is not a refined absolute phase fraction. |
+| primary6 | https://wiredspace.wits.ac.za/server/api/core/bitstreams/f69cc56e-e317-4cc9-85e0-66deea15218c/content; AppendicesA.2.3–A.2.5, pp133–141; culture maintenance, semi-aseptic procedure, sampling and nitrogen assays. Actual local artifact: /private/tmp/cmm-round90-sulfides-research/huberts-part006.pdf | supports | The actual culture remains unresolved; control sterility is limited by stated handling and observation. |
+| primary7 | https://wiredspace.wits.ac.za/server/api/core/bitstreams/38da7938-abaa-42a4-8010-ea43ade0fcf5/content; AppendixA.2.5 pp142–143 and C5 TableA.36 pp163–164 (PDFpp22–23); control/electrode conditions. Actual local artifact: /private/tmp/cmm-round90-sulfides-research/huberts-part007.pdf | supports | Actual pH and redox deviations and changing peroxide protocol constrain causal attribution. |
+| primary8 | https://wiredspace.wits.ac.za/server/api/core/bitstreams/a7f6f7cb-f827-40c2-b24a-c88b068a74fc/content; TablesA.39–A.43 pp167–170 (PDFpp2–5); TypeD data; original FiguresA.7–A.26 pp174–183. Actual local artifact: /private/tmp/cmm-round90-sulfides-research/huberts-part008.pdf | supports | Raw solution and operational biomass measurements corroborate the reported trends; neither purified-product yield nor replicated causal effect is established. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September2026 original, definitionsp1 and Heazlewoodite rowp91 visually checked. Actual local artifact: /private/tmp/cmm-round89-sulfides-research/ima-2026-09.pdf | supports | Ni3S2 mineral, G status and1897 original-description year confirmed; year is not an approval accession. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/heazlewoodite.pdf; Complete one-page official entry; original graphic/table inspected and live official PDF opened. Actual local artifact: /private/tmp/cmm-round89-sulfides-research/heazlewoodite-handbook.pdf | supports | Formula and R32 space group in hexagonal setting agree with the owner; no nickel-element criticality transferred. |
+| search | /private/tmp/cmm-round90-heazlewoodite-review/search-and-scope.json; Exact independent queries, route limits and source-scope notes. Actual local artifact: /private/tmp/cmm-round90-heazlewoodite-review/search-and-scope.json | context_only | Bounded correction/counterevidence search found no affecting notice; different abiotic studies remain unadopted context. |
+| dedup | /private/tmp/cmm-round90-heazlewoodite-review/dedup-paths.txt; Bounded maintained identity/study search. Actual local artifact: /private/tmp/cmm-round90-heazlewoodite-review/dedup-paths.txt | context_only | Prior species mentions and source-deferral lineage remain distinct from the new exact owner. |
+| named | /private/tmp/cmm-round90-heazlewoodite-review/named-validation.json; Actual independent strict named command and retained output log. Actual local artifact: /private/tmp/cmm-round90-heazlewoodite-review/named-validation.json | supports | Checked one record with zero failures. |
+| batch | /private/tmp/cmm-round90-final-gates.json; Actual four-command batch receipt; log /private/tmp/cmm-round90-final-gates.log SHA256 1c86ccef9076bfde989a9256a4c740fe4ba1a9eac097c4de0ff76c70272f9597. Actual local artifact: /private/tmp/cmm-round90-final-gates.json | supports | Exact command list, four zero exits, unchanged owner hashes and log digest independently verified. |
+
+## Limits And Additional Notes
+
+- Living mixed culture has no resolved strain/member sequence; organism-specific causality is unestablished.
+- Synthetic source-characterized material is not a natural ore or proven absolutely pure phase. The source reports diffraction assignments but does not display full initial diffraction traces/refined phase balance.
+- HgCl2/peroxide controls and imperfect pH/redox matching constrain causal interpretation; TypeD is not an identical factorial microbial comparator.
+- No purified nickel product, industrial deployment, replicated biological effect estimate or quantitative inhibitor identity is established.
+- This review inspected all claim-bearing original sections and graphics, not every theoretical derivation/code listing in the full dissertation. Searches are bounded; validation is not scientific proof.
+- The initial inspect used an incorrect schema path and failed before judgment. Successful inspection then captured the correct schema and frozen owner/history; no invalid review was persisted.
+- Original PDFs remain outside Git. Eight accepted primary-part rows bind exact nonempty original bytes; part009–010 theoretical listings/references are available but not needed for accepted claims.
+- No fresh full-suite result is inferred from baseline reuse; batch checks above are actual current executions. Canonical review-check follows this saved bundle separately.
+- The first unsaved native draft used equivalent +00:00 UTC timestamps rejected by the schema. The original unsaved draft is retained externally; timestamps were normalized to the required Z form before this sole saved observation. Scientific assertions and captured inputs are unchanged.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T074208Z-heazlewoodite-round90-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of heazlewoodite
+started_at: '2026-10-15T07:23:57.482670Z'
+finished_at: '2026-10-15T07:42:08.371006Z'
+reviewer:
+  identity: codex /root/round68_new_frontier
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Iron agent authored this owner/history; this reviewer authored
+    unrelated coal-gasification-slag. Shared acquisition is disclosed. Reviewer independently
+    inspected source methods, raw tables, figures and authority after native inspection,
+    without editing the target.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 2d9fe2b6aa62fed3385111929dee3c4ea1f1b2a1
+  state: working_tree
+  inputs:
+  - path: data/records/heazlewoodite.yaml
+    sha256: edffc21a2b5750369280beb133ce91de9a8e99f71872062566ef265e538d610a
+    role: target
+  - path: history/records/heazlewoodite/2026-10-15T072252Z-codex-e952f6.yaml
+    sha256: df3c651dd1298eaa9ab6ea2bae25e2260ed7708958a326b78898c52d10a13656
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:heazlewoodite
+  path: data/records/heazlewoodite.yaml
+  label: Heazlewoodite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/heazlewoodite.yaml
+    role: maintained_record
+scope:
+  description: Full frozen mineral owner and its canonical/inline provenance; complete
+    claim-bearing original experimental sections and appendices, not every unrelated
+    equation or program listing in the ten-part thesis.
+  selection: Assigned exact maintained record; canonical inspect captured current
+    owner/history/schema before judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:heazlewoodite
+summary: Qualified acceptance of distinct mineral identity and a limited mixed-culture
+  leaching observation that does not demonstrate microbial enhancement. No supported
+  corrective owner defect found.
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/heazlewoodite.yaml
+  locator: 'Complete frozen owner after native inspection. Actual local artifact:
+    /private/tmp/CMMMech-expansion-round90-20261015/data/records/heazlewoodite.yaml'
+  accessed_at: '2026-10-15T07:41:35.554568Z'
+  support: supports
+  summary: Exact current mineral identity and qualified mixed-culture mechanism assessed.
+  snapshot_sha256: edffc21a2b5750369280beb133ce91de9a8e99f71872062566ef265e538d610a
+- evidence_id: history
+  kind: record_content
+  reference: history/records/heazlewoodite/2026-10-15T072252Z-codex-e952f6.yaml
+  locator: 'Canonical CREATE and distinct inline event. Actual local artifact: /private/tmp/CMMMech-expansion-round90-20261015/history/records/heazlewoodite/2026-10-15T072252Z-codex-e952f6.yaml'
+  accessed_at: '2026-10-15T07:41:35.554568Z'
+  support: supports
+  summary: Actual actor, model, target, date and scope agree; no reviewer owner edits.
+  snapshot_sha256: df3c651dd1298eaa9ab6ea2bae25e2260ed7708958a326b78898c52d10a13656
+- evidence_id: primary1
+  kind: primary_source
+  reference: https://wiredspace.wits.ac.za/server/api/core/bitstreams/9a5ca334-3b5e-4ec0-abe4-8826e0e895f8/content
+  locator: 'Original titlepage (i). Actual local artifact: /private/tmp/cmm-round90-sulfides-research/huberts-part001.pdf'
+  accessed_at: '2026-10-15T07:41:35.554568Z'
+  support: supports
+  summary: The original dissertation is dated1986; later catalogue deposit date is
+    not publication year.
+  snapshot_sha256: f1c1a49bea1f70a750e5cd6492ab01961226d127709f0917b52905a90f284ddb
+- evidence_id: primary2
+  kind: primary_source
+  reference: https://wiredspace.wits.ac.za/server/api/core/bitstreams/ae0fc13d-5e79-4b3e-920e-5c74757ef962/content
+  locator: 'Methods3.1–3.3, printedpp28–33; original Figures3.1–3.2. Actual local
+    artifact: /private/tmp/cmm-round90-sulfides-research/huberts-part002.pdf'
+  accessed_at: '2026-10-15T07:41:35.554568Z'
+  support: supports
+  summary: Synthetic specimen preparation, medium and apparatus distinguish the actual
+    laboratory feed from natural ores.
+  snapshot_sha256: 0e4ec8afe025690e0f03d31ee2d2c3846e2686f7d21ae01057966c20e0ae10c8
+- evidence_id: primary3
+  kind: primary_source
+  reference: https://wiredspace.wits.ac.za/server/api/core/bitstreams/14c6afa0-b193-4293-990c-b41048608b08/content
+  locator: 'Methods3.4–3.6 pp34–43; results4.3 pp49–61; original Figures4.4–4.9. Actual
+    local artifact: /private/tmp/cmm-round90-sulfides-research/huberts-part003.pdf'
+  accessed_at: '2026-10-15T07:41:35.554568Z'
+  support: supports
+  summary: Source methods, analytical denominators and later sterile advantage support
+    a conditional null enhancement result.
+  snapshot_sha256: 4302e3c56d67060822a2b65002df83ff57db9a8a5db149ed04a319f2159d6f1e
+- evidence_id: primary4
+  kind: primary_source
+  reference: https://wiredspace.wits.ac.za/server/api/core/bitstreams/d6ad9485-1ff2-46f9-a661-dccc189be597/content
+  locator: 'Results4.3.5–4.4 pp62–68, Figures4.10–4.14; discussion5.3/6 pp77–86, Figures5.5–5.6.
+    Actual local artifact: /private/tmp/cmm-round90-sulfides-research/huberts-part004.pdf'
+  accessed_at: '2026-10-15T07:41:35.554568Z'
+  support: supports
+  summary: Residue phase assignments and model limitations preserve the distinction
+    between observed dissolution and proposed inhibition.
+  snapshot_sha256: a6592b5ff505669e544a628737e0b2a43ee797bc77eda74ec46e83e5f351346e
+- evidence_id: primary5
+  kind: primary_source
+  reference: https://wiredspace.wits.ac.za/server/api/core/bitstreams/bfd2cbbf-7995-4a26-8b7d-ad1bf9d6ed04/content
+  locator: 'AppendixA.2.1, printedpp107–116; synthesis TablesA.2–A.4, final phase
+    characterization p115. Actual local artifact: /private/tmp/cmm-round90-sulfides-research/huberts-part005.pdf'
+  accessed_at: '2026-10-15T07:41:35.554568Z'
+  support: supports
+  summary: Repeated heating yielded a source-characterized synthetic analogue; near-purity
+    is not a refined absolute phase fraction.
+  snapshot_sha256: 018256e8881863372b3b6c8b1e77079809d77ec5b0ef1e3014c8655e6c98bb1b
+- evidence_id: primary6
+  kind: primary_source
+  reference: https://wiredspace.wits.ac.za/server/api/core/bitstreams/f69cc56e-e317-4cc9-85e0-66deea15218c/content
+  locator: 'AppendicesA.2.3–A.2.5, pp133–141; culture maintenance, semi-aseptic procedure,
+    sampling and nitrogen assays. Actual local artifact: /private/tmp/cmm-round90-sulfides-research/huberts-part006.pdf'
+  accessed_at: '2026-10-15T07:41:35.554568Z'
+  support: supports
+  summary: The actual culture remains unresolved; control sterility is limited by
+    stated handling and observation.
+  snapshot_sha256: 5f22547a3396e1165cfc67359b63d82d7f127ad2df32a400d966c07319354355
+- evidence_id: primary7
+  kind: primary_source
+  reference: https://wiredspace.wits.ac.za/server/api/core/bitstreams/38da7938-abaa-42a4-8010-ea43ade0fcf5/content
+  locator: 'AppendixA.2.5 pp142–143 and C5 TableA.36 pp163–164 (PDFpp22–23); control/electrode
+    conditions. Actual local artifact: /private/tmp/cmm-round90-sulfides-research/huberts-part007.pdf'
+  accessed_at: '2026-10-15T07:41:35.554568Z'
+  support: supports
+  summary: Actual pH and redox deviations and changing peroxide protocol constrain
+    causal attribution.
+  snapshot_sha256: e7ed9618552960707c76c4529ccd9c52d0ad7f5fd90bdd450b03c5b8da449db6
+- evidence_id: primary8
+  kind: primary_source
+  reference: https://wiredspace.wits.ac.za/server/api/core/bitstreams/a7f6f7cb-f827-40c2-b24a-c88b068a74fc/content
+  locator: 'TablesA.39–A.43 pp167–170 (PDFpp2–5); TypeD data; original FiguresA.7–A.26
+    pp174–183. Actual local artifact: /private/tmp/cmm-round90-sulfides-research/huberts-part008.pdf'
+  accessed_at: '2026-10-15T07:41:35.554568Z'
+  support: supports
+  summary: Raw solution and operational biomass measurements corroborate the reported
+    trends; neither purified-product yield nor replicated causal effect is established.
+  snapshot_sha256: 53827f5d7a1ec71fac71ddd151365f8117dbe64d4632b87518c81defa5af185e
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'September2026 original, definitionsp1 and Heazlewoodite rowp91 visually
+    checked. Actual local artifact: /private/tmp/cmm-round89-sulfides-research/ima-2026-09.pdf'
+  accessed_at: '2026-10-15T07:41:35.554568Z'
+  support: supports
+  summary: Ni3S2 mineral, G status and1897 original-description year confirmed; year
+    is not an approval accession.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/heazlewoodite.pdf
+  locator: 'Complete one-page official entry; original graphic/table inspected and
+    live official PDF opened. Actual local artifact: /private/tmp/cmm-round89-sulfides-research/heazlewoodite-handbook.pdf'
+  accessed_at: '2026-10-15T07:41:35.554568Z'
+  support: supports
+  summary: Formula and R32 space group in hexagonal setting agree with the owner;
+    no nickel-element criticality transferred.
+  snapshot_sha256: 1a3c435d09ff31ff8e9fe0ee7e37c5abbea148498785e58ee9d0bed1c85b9026
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round90-heazlewoodite-review/search-and-scope.json
+  locator: 'Exact independent queries, route limits and source-scope notes. Actual
+    local artifact: /private/tmp/cmm-round90-heazlewoodite-review/search-and-scope.json'
+  accessed_at: '2026-10-15T07:41:35.554568Z'
+  support: context_only
+  summary: Bounded correction/counterevidence search found no affecting notice; different
+    abiotic studies remain unadopted context.
+  snapshot_sha256: 6a8affed8a9fb3e22190cd56e2317d03320ee4478972059c410178a40343426e
+  search_scope: Three exact queries retained in notes, original Handbook opened, repository
+    route failure disclosed; maintained search includes hidden/ignored files and follows
+    relevant symlinks. No exhaustive absence claim.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round90-heazlewoodite-review/dedup-paths.txt
+  locator: 'Bounded maintained identity/study search. Actual local artifact: /private/tmp/cmm-round90-heazlewoodite-review/dedup-paths.txt'
+  accessed_at: '2026-10-15T07:41:35.554568Z'
+  support: context_only
+  summary: Prior species mentions and source-deferral lineage remain distinct from
+    the new exact owner.
+  snapshot_sha256: 7d37955f99d4d91d9e57053ec84220ac3c3555bb11f3bb3eadde520b957f2d12
+  search_scope: rg --no-ignore --hidden --follow -l -i heazlewoodite|10539/16901|Huberts.*1986
+    data/records research reviews history; known raw roots round89/90 sulfides inspected,
+    not the entire machine.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round90-heazlewoodite-review/named-validation.json
+  locator: 'Actual independent strict named command and retained output log. Actual
+    local artifact: /private/tmp/cmm-round90-heazlewoodite-review/named-validation.json'
+  accessed_at: '2026-10-15T07:41:35.554568Z'
+  support: supports
+  summary: Checked one record with zero failures.
+  snapshot_sha256: f0049906922ecd94d33928388d03df602309cdca0ba4faea18d8f6114f8433c3
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round90-final-gates.json
+  locator: 'Actual four-command batch receipt; log /private/tmp/cmm-round90-final-gates.log
+    SHA256 1c86ccef9076bfde989a9256a4c740fe4ba1a9eac097c4de0ff76c70272f9597. Actual
+    local artifact: /private/tmp/cmm-round90-final-gates.json'
+  accessed_at: '2026-10-15T07:41:35.554568Z'
+  support: supports
+  summary: Exact command list, four zero exits, unchanged owner hashes and log digest
+    independently verified.
+  snapshot_sha256: 97ff07840865710c94165cef77f67f446a28d5d0a014b49524b0e354513eed55
+checks:
+- check_id: named
+  name: Independent strict named validation
+  command: uv run --locked cmmmech validate data/records/heazlewoodite.yaml --require-records
+  status: passed
+  required: true
+  summary: Actual independent named validation checked1record,0failed; retained log
+    verified.
+  target_ids:
+  - cmmmech:heazlewoodite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed batch gate 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-15T07:31:22.240616+00:00 through 2026-10-15T07:39:53.139917+00:00;
+    receipt/log independently verified.
+  target_ids:
+  - cmmmech:heazlewoodite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-15T07:39:53.139955+00:00 through 2026-10-15T07:40:16.229374+00:00;
+    receipt/log independently verified.
+  target_ids:
+  - cmmmech:heazlewoodite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed batch gate 3
+  command: uv run --locked cmmmech validate-history --base 2d9fe2b6aa62fed3385111929dee3c4ea1f1b2a1
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-15T07:40:16.229404+00:00 through 2026-10-15T07:40:28.044405+00:00;
+    receipt/log independently verified.
+  target_ids:
+  - cmmmech:heazlewoodite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual coordinator execution 2026-10-15T07:40:28.044432+00:00 through 2026-10-15T07:40:36.307343+00:00;
+    receipt/log independently verified.
+  target_ids:
+  - cmmmech:heazlewoodite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral versus synthetic analogue, ore and constituent element
+  outcome: supported
+  summary: The species authority and source characterization are correctly separated.
+    Initial and residual source-assigned phases support this scoped analogue record;
+    criticality and member-level microbial taxonomy are not invented.
+  target_ids:
+  - cmmmech:heazlewoodite
+  evidence_ids:
+  - record
+  - ima
+  - handbook
+  - primary2
+  - primary4
+  - primary5
+- assessment_id: methods
+  area: evidence
+  topic: Culture state, substrate and control comparability
+  outcome: supported
+  summary: The source supports active unresolved mixed culture and ferric-cycle participation.
+    Specified loading, medium, pH, temperature and aeration are nominal; actual control
+    chemistry, nonsterilized mineral, probe fouling and slurry-sampling limitations
+    remain explicit.
+  target_ids:
+  - cmmmech:heazlewoodite
+  evidence_ids:
+  - record
+  - primary2
+  - primary3
+  - primary6
+  - primary7
+- assessment_id: outcome
+  area: evidence
+  topic: Negative enhancement result and assay denominator
+  outcome: supported
+  summary: Original plotted and raw solution data substantiate later sterile advantage,
+    not a general claim that microbes cannot dissolve the mineral. The source concentration
+    reference is not an isolated-metal yield. Differing test durations and culture
+    histories do not establish replicated effect size.
+  target_ids:
+  - cmmmech:heazlewoodite
+  evidence_ids:
+  - record
+  - primary3
+  - primary8
+- assessment_id: causality
+  area: evidence
+  topic: Residue phase, biomass proxy and model limitations
+  outcome: supported
+  summary: Source-assigned millerite rims and compact coatings do not isolate a microbial
+    inhibitory compound or prove direct attack. Operational nitrogen estimates and
+    fitted-model shortcomings are disclosed, with laboratory scope preserved.
+  target_ids:
+  - cmmmech:heazlewoodite
+  evidence_ids:
+  - record
+  - primary3
+  - primary4
+  - primary6
+  - primary8
+- assessment_id: provenance
+  area: provenance
+  topic: Original date, immutable history and completed gates
+  outcome: supported
+  summary: Original titlepage establishes1986. Native-inspected owner/history hashes
+    remain unchanged; independent named and actual four batch gates passed. No reviewer
+    curation or publication success is asserted.
+  target_ids:
+  - cmmmech:heazlewoodite
+  evidence_ids:
+  - record
+  - history
+  - primary1
+  - named
+  - batch
+  - search
+  - dedup
+findings: []
+actions: []
+limitations:
+- Living mixed culture has no resolved strain/member sequence; organism-specific causality
+  is unestablished.
+- Synthetic source-characterized material is not a natural ore or proven absolutely
+  pure phase. The source reports diffraction assignments but does not display full
+  initial diffraction traces/refined phase balance.
+- HgCl2/peroxide controls and imperfect pH/redox matching constrain causal interpretation;
+  TypeD is not an identical factorial microbial comparator.
+- No purified nickel product, industrial deployment, replicated biological effect
+  estimate or quantitative inhibitor identity is established.
+- This review inspected all claim-bearing original sections and graphics, not every
+  theoretical derivation/code listing in the full dissertation. Searches are bounded;
+  validation is not scientific proof.
+notes:
+- The initial inspect used an incorrect schema path and failed before judgment. Successful
+  inspection then captured the correct schema and frozen owner/history; no invalid
+  review was persisted.
+- Original PDFs remain outside Git. Eight accepted primary-part rows bind exact nonempty
+  original bytes; part009–010 theoretical listings/references are available but not
+  needed for accepted claims.
+- No fresh full-suite result is inferred from baseline reuse; batch checks above are
+  actual current executions. Canonical review-check follows this saved bundle separately.
+- The first unsaved native draft used equivalent +00:00 UTC timestamps rejected by
+  the schema. The original unsaved draft is retained externally; timestamps were normalized
+  to the required Z form before this sole saved observation. Scientific assertions
+  and captured inputs are unchanged.
+```

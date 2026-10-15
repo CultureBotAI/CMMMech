@@ -1,0 +1,373 @@
+schema_version: 1.0.0
+review_id: 20261015T074100Z-coal-gasification-slag-round90-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of coal gasification slag
+started_at: '2026-10-15T07:24:58.603144Z'
+finished_at: '2026-10-15T07:41:00.345516Z'
+reviewer:
+  identity: codex /root/round68_phosphates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer authored crandallite and goyazite, not this resource
+    owner/history. Curator is codex /root/round68_new_frontier. Accepted complete
+    primary text and all figures/tables were independently assessed after native capture;
+    source archive was independently enumerated. No laboratory replication or owner
+    edit.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of the heterogeneous secondary-resource identity and
+  laboratory abiotic parallel acid leaching followed by mixed flocculant preparation.
+  Gravimetric loss, wastewater concentration removal, null ammonia response and contradictory
+  source details are accurately bounded. No corrective owner finding.
+source:
+  git_revision: 2d9fe2b6aa62fed3385111929dee3c4ea1f1b2a1
+  state: working_tree
+  inputs:
+  - path: data/records/coal-gasification-slag.yaml
+    sha256: eb3030529d996be96b29e4adc4bdd37dfa81c68084fe77dc64817ab01c0b4fba
+    role: target
+scope:
+  description: Whole exact maintained resource owner, canonical CREATE and paired
+    source dossier; complete accepted primary original, all14main figures and5tables,
+    archived JATS, supplement-asset inventory and bounded current notice/lineage checks.
+  selection: Assigned canonical owner inspected before final judgment, with exact
+    frozen byte hash.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:coal-gasification-slag
+targets:
+- target_id: cmmmech:coal-gasification-slag
+  path: data/records/coal-gasification-slag.yaml
+  label: Coal gasification slag
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/coal-gasification-slag.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/coal-gasification-slag.yaml
+    --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Actual independent command completed: one record, zero failures.'
+  target_ids:
+  - cmmmech:coal-gasification-slag
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch command 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and retained log independently verified; no reviewer
+    rerun claimed.
+  target_ids:
+  - cmmmech:coal-gasification-slag
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and retained log independently verified; no reviewer
+    rerun claimed.
+  target_ids:
+  - cmmmech:coal-gasification-slag
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch command 3
+  command: uv run --locked cmmmech validate-history --base 2d9fe2b6aa62fed3385111929dee3c4ea1f1b2a1
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and retained log independently verified; no reviewer
+    rerun claimed.
+  target_ids:
+  - cmmmech:coal-gasification-slag
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual terminal receipt and retained log independently verified; no reviewer
+    rerun claimed.
+  target_ids:
+  - cmmmech:coal-gasification-slag
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/coal-gasification-slag.yaml
+  locator: 'Complete canonical owner after native inspect. Artifact: /private/tmp/CMMMech-expansion-round90-20261015/data/records/coal-gasification-slag.yaml'
+  accessed_at: '2026-10-15T07:33:38.765045Z'
+  support: supports
+  summary: Distinct heterogeneous gasification resource; source-specific abiotic leaching
+    and mixed product reuse, not a mineral/commodity or inherited criticality.
+  snapshot_sha256: eb3030529d996be96b29e4adc4bdd37dfa81c68084fe77dc64817ab01c0b4fba
+- evidence_id: history
+  kind: record_content
+  reference: history/records/coal-gasification-slag/2026-10-15T071639Z-codex-2bd5d7.yaml
+  locator: 'Canonical CREATE plus actual earlier inline CREATE and exact history_ref.
+    Artifact: /private/tmp/CMMMech-expansion-round90-20261015/history/records/coal-gasification-slag/2026-10-15T071639Z-codex-2bd5d7.yaml'
+  accessed_at: '2026-10-15T07:33:38.765045Z'
+  support: supports
+  summary: Target, actor codex/GPT-6, times and described changes agree. Inline and
+    sidecar times remain distinct.
+  snapshot_sha256: ea3e12a37ddb23b035ea6f647024e5ec25b3590221293b5862ddcf77d588f893
+- evidence_id: methods
+  kind: primary_source
+  reference: https://doi.org/10.1039/D3RA07232K
+  locator: 'Complete15-page original read; Sections2.1–2.4, Figure1 and Table1, printed2706–2708/PDF2–4.
+    Artifact: /private/tmp/cmm-round90-resources-research/pan2024-mirror.pdf'
+  accessed_at: '2026-10-15T07:33:38.765045Z'
+  support: supports
+  summary: Figure1 and separate methods specify parallel fresh-slag HCl/HAc contacts,
+    followed by liquor blending, pH adjustment, heating, aging and drying. Supplied
+    industrial origin does not establish deployed recovery.815-degree-C ashing is
+    analytical XRF preparation, not all-leach pretreatment.
+  snapshot_sha256: d0aea7e870649a7c70c226b20a1f65b7cafe8ab3ef94121e91659e93524e1a79
+- evidence_id: loss
+  kind: primary_source
+  reference: https://doi.org/10.1039/D3RA07232K
+  locator: 'Equation1/PDF3; Section3.1 and Figure2/PDF5; conclusion/PDF14. Artifact:
+    /private/tmp/cmm-round90-resources-research/pan2024-mirror.pdf'
+  accessed_at: '2026-10-15T07:33:38.765045Z'
+  support: supports
+  summary: 85.76% and44.32% are separate mass-loss endpoints from initial and water-washed
+    dry-residue masses. They are not measured Al/Fe yields or additive steps. Selected
+    temperature/time/concentration/ratio and reduced response at50–60degreesC are
+    correctly qualified.
+  snapshot_sha256: d0aea7e870649a7c70c226b20a1f65b7cafe8ab3ef94121e91659e93524e1a79
+- evidence_id: product
+  kind: primary_source
+  reference: https://doi.org/10.1039/D3RA07232K
+  locator: 'Sections3.2–3.3, Figures3–5/PDF6–8, Tables2–3/PDF7; Figure11/PDF12. Artifact:
+    /private/tmp/cmm-round90-resources-research/pan2024-mirror.pdf'
+  accessed_at: '2026-10-15T07:33:38.765045Z'
+  support: supports
+  summary: 3:2 liquor mixture, pH3.5,70degreesC3h,24h aging produces source-designated
+    mixed PAFAC. Feed oxide analysis after ashing and unashed elemental product composition
+    are incomparable yield denominators. NaCl diffraction and reagent-derived Na/Cl
+    preclude pure-metal interpretation.
+  snapshot_sha256: d0aea7e870649a7c70c226b20a1f65b7cafe8ab3ef94121e91659e93524e1a79
+- evidence_id: reuse
+  kind: primary_source
+  reference: https://doi.org/10.1039/D3RA07232K
+  locator: 'Sections2.3 and3.4, Figures6–7/PDF8–9, Table4/PDF9. Artifact: /private/tmp/cmm-round90-resources-research/pan2024-mirror.pdf'
+  accessed_at: '2026-10-15T07:33:38.765045Z'
+  support: supports
+  summary: 200mL jar assay conditions and domestic-sewage reported endpoint values
+    match. Ammonia-N remains below10% in the dose assay. Separate comparator endpoints
+    are not pooled with dose optimization; literature rows in Table4 are not new independent
+    assays.
+  snapshot_sha256: d0aea7e870649a7c70c226b20a1f65b7cafe8ab3ef94121e91659e93524e1a79
+- evidence_id: conflicts
+  kind: primary_source
+  reference: https://doi.org/10.1039/D3RA07232K
+  locator: 'Section3.2.1/Figure3B/PDF6; Section4.1/Figure8/Table5/PDF9–10; Section4.2.1/Figure10/PDF10–11;
+    Section2.1/PDF2. Figures9,11–14 also inspected. Artifact: /private/tmp/cmm-round90-resources-research/pan2024-mirror.pdf'
+  accessed_at: '2026-10-15T07:33:38.765045Z'
+  support: supports
+  summary: Original ratio-bar, kinetic-panel/table and zeta-direction conflicts are
+    accurately preserved. No fitted parameter or proposed adsorption/bridging narrative
+    becomes uniquely established causality. Cow-pasture source of so-called aquaculture
+    wastewater remains explicit. Source issue311 is unresolved.
+  snapshot_sha256: d0aea7e870649a7c70c226b20a1f65b7cafe8ab3ef94121e91659e93524e1a79
+- evidence_id: jats
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10790280/fullTextXML
+  locator: 'Complete original archived JATS, methods/results/tables corroborated against
+    publisher-layout original. Artifact: /private/tmp/cmm-round90-resources-research/pan2024.xml'
+  accessed_at: '2026-10-15T07:33:38.765045Z'
+  support: supports
+  summary: DOI, author list,2024publication and source-specific claim text agree;
+    source equations and graph captions retain the same interpretive limits.
+  snapshot_sha256: b17b20a5ffb0cf58513871232a175c4c71a9c180c0afff1c1ed4a3d883da4f08
+- evidence_id: supplement
+  kind: validation
+  reference: /private/tmp/cmm-round90-slag-independent/independent-supplement-proof.json
+  locator: 'Independent ZIP member enumeration and JATS supplement-node count. Artifact:
+    /private/tmp/cmm-round90-slag-independent/independent-supplement-proof.json'
+  accessed_at: '2026-10-15T07:33:38.765045Z'
+  support: supports
+  summary: 30 assets total:28main-figure JPG/GIF files, graphical abstract and Table1
+    JPG. No separate SI document in inspected acquired materials; no broader absence
+    claim.
+  snapshot_sha256: 586ac8f8ec6d1592a53c6080f94f264f1fcb269093048f757aa4e53e6b2a55ec
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round90-resources/20261015T071841Z-source-investigation.json
+  locator: 'Complete author source investigation, original hashes, failures, deferred
+    sources and exact30-member inventory. Artifact: /private/tmp/CMMMech-expansion-round90-20261015/research/sources/round90-resources/20261015T071841Z-source-investigation.json'
+  accessed_at: '2026-10-15T07:33:38.765045Z'
+  support: supports
+  summary: Main original is a genuine15-page PDF; rejected HTML/challenge and absent
+    guessed SI are not evidence. Microbial-carbonation leads are deferred, not imported.
+  snapshot_sha256: 8544ffa5190516796c41658fe536d84bb084f25aedf0c3160c526df1158bc579
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round90-slag-independent/named-validation.log
+  locator: 'Actual independent named strict validator exit0. Artifact: /private/tmp/cmm-round90-slag-independent/named-validation.log'
+  accessed_at: '2026-10-15T07:33:38.765045Z'
+  support: supports
+  summary: One record checked, zero failed.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: notices
+  kind: search
+  reference: Bounded current original-source notice and local-lineage check
+  locator: 'Exact queries, result scope, live primary URLs and hidden/ignored/followed-link
+    local capture. Artifact: /private/tmp/cmm-round90-slag-independent/bounded-search.json'
+  accessed_at: '2026-10-15T07:33:38.765045Z'
+  support: context_only
+  summary: No applicable notice surfaced in this bounded set; internal contradictions
+    provide direct limiting evidence.
+  snapshot_sha256: dcf630540c945b8fcf70b8dcd06bc9689f3253c33a2c359ce94c126c9c72edfa
+  search_scope: Two exact DOI/title notice queries and returned result sets, publisher/PubMed
+    identity corroboration and current Crossref metadata, plus hidden/ignored/followed-link
+    exact identity/DOI searches across maintained roots. No exhaustive absence claim.
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round90-final-gates.json
+  locator: 'All FOUR actual coordinator commands; 2026-10-15T07:31:22.240041+00:00
+    to 2026-10-15T07:40:36.422782+00:00; retained log /private/tmp/cmm-round90-final-gates.log
+    SHA256 1c86ccef9076bfde989a9256a4c740fe4ba1a9eac097c4de0ff76c70272f9597. Artifact:
+    /private/tmp/cmm-round90-final-gates.json'
+  accessed_at: '2026-10-15T07:41:00.345516Z'
+  support: supports
+  summary: Terminal receipt, log hash, base/worktree, exact command vectors and unchanged
+    target inputs independently verified; no reviewer rerun claimed.
+  snapshot_sha256: 97ff07840865710c94165cef77f67f446a28d5d0a014b49524b0e354513eed55
+- evidence_id: dossier_correction
+  kind: validation
+  reference: /private/tmp/cmm-round90-slag-independent/20261015T073338Z-dossier-archive-member-count-resolution.json
+  locator: 'Exact initial D1 and successor verification for source-dossier metadata
+    correction, tracked by issue312. Artifact: /private/tmp/cmm-round90-slag-independent/20261015T073338Z-dossier-archive-member-count-resolution.json'
+  accessed_at: '2026-10-15T07:41:00.345516Z'
+  support: context_only
+  summary: Thirty archive members are correctly counted; only the MD sentence and
+    dependent JSON digest/amendment changed. The original overly strict unchanged-JSON
+    acceptance was corrected transparently. Scientific owner/history are unchanged.
+  snapshot_sha256: 53191234fce5c4b0bff5d13cd121f7d5c54610dad8fc751b34bf6ba318aff893
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Processing-defined resource, feed and criticality boundary
+  outcome: supported
+  summary: Coal gasification crude/fine slag is distinct from fly ash and coal-beneficiation
+    waste. Only the supplied CGCS is experimentally covered; no biological or mineral
+    identifier is invented and no criticality is inherited.
+  target_ids:
+  - cmmmech:coal-gasification-slag
+  evidence_ids:
+  - owner
+  - methods
+  - dossier
+- assessment_id: mechanism
+  area: evidence
+  topic: Abiotic parallel leaches and mixed-product preparation
+  outcome: supported
+  summary: Exact reagent arms, conditions and downstream preparation are source-supported.
+    Microbial:false is correct. Process recovery denotes mixed chemical reuse, not
+    recovered metals; no industrial operation or exclusive mechanistic proof is claimed.
+  target_ids:
+  - cmmmech:coal-gasification-slag
+  evidence_ids:
+  - owner
+  - methods
+  - product
+- assessment_id: quantity
+  area: quantity
+  topic: Mass-loss and wastewater endpoint denominators
+  outcome: supported
+  summary: The gravimetric loss definition, analytical-basis mismatch, lack of elemental
+    balances, distinct assay values and ammonia null are retained. No combined recovery
+    fraction or phase-specific yield is invented.
+  target_ids:
+  - cmmmech:coal-gasification-slag
+  evidence_ids:
+  - loss
+  - product
+  - reuse
+- assessment_id: limits
+  area: scope
+  topic: Controls, negative outcomes and internal source contradictions
+  outcome: supported
+  summary: Absent matched water-only/acid-reagent blanks, unknown feed details, limited
+    safety data and unproven molecular pathway remain limitations. All14figures and5tables
+    were inspected; graph/text/model conflicts match source311.
+  target_ids:
+  - cmmmech:coal-gasification-slag
+  evidence_ids:
+  - methods
+  - loss
+  - reuse
+  - conflicts
+  - supplement
+- assessment_id: provenance
+  area: provenance
+  topic: Exact record/history and full primary acquisition
+  outcome: supported
+  summary: Native inspection preceded final assessment, exact frozen owner is unchanged,
+    CREATE and inline events are actual separate records. Accepted complete PDF/JATS
+    and original graphical evidence support the narrow claims; failed routes and unassessed
+    future studies are excluded.
+  target_ids:
+  - cmmmech:coal-gasification-slag
+  evidence_ids:
+  - owner
+  - history
+  - jats
+  - dossier
+  - named
+  - notices
+  - batch
+  - dossier_correction
+findings: []
+actions: []
+limitations:
+- The source uses parallel acid contacts on separate portions; mass-loss endpoints
+  cannot be interpreted as sequential or elemental recovery. No complete dissolved-element/product/residue
+  mass balance, isolated pure-metal yield or residual-carbon correction is supplied.
+- Industrial source of feed does not establish industrial deployment. No microbial
+  culture or biologically produced acid is involved in the accepted experiment; no
+  criticality designation is inherited.
+- No matched water-only leach or acid/reagent-only flocculation blank is reported
+  alongside the accepted endpoints. Proposed kinetic/adsorption/bridging mechanisms
+  are not uniquely proved by fits, microscopy or zeta potential.
+- Source Figure3B versus text, Figure8 versus Table5, zeta-direction text and cow-pasture/aquaculture
+  terminology remain unresolved under source issue311. No unsupported reconciliation
+  or omitted negative outcome was introduced.
+- No separate SI document was announced in the inspected main/JATS or found in the
+  acquired30-asset archive. This bounded check is not proof that additional data cannot
+  exist.
+- Notice and literature searches were bounded. Deferred microbial-carbonation studies
+  were not acquired/assessed as experiments and are not imported.
+notes:
+- No maintained owner/history changes by reviewer. Source-dossier archive-count metadata
+  D1 was preserved separately, corrected under issue312 and independently resolved
+  with exact before/after evidence. It is not a record-level scientific finding and
+  does not resolve source issue311.
+- The start time is the creation time of the preserved initial native-target preparation
+  file. Final completion followed actual named and all four coordinator checks; no
+  unrun test is claimed.

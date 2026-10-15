@@ -1,0 +1,87 @@
+{
+  "timestamp": "2026-10-15T07:33:38.612380Z",
+  "review_id": "20261015T073338Z-dossier-archive-member-count-resolution",
+  "reviewer": "codex /root/round68_phosphates",
+  "scientific_review": false,
+  "scope": "Independent exact-diff verification of source-report archive-count correction and necessary provenance digest update. No new record scientific acceptance.",
+  "base": "2d9fe2b6aa62fed3385111929dee3c4ea1f1b2a1",
+  "worktree": "/private/tmp/CMMMech-expansion-round90-20261015",
+  "passed": true,
+  "verdict": "pass",
+  "unresolved_corrective_findings": 0,
+  "issue": "https://github.com/CultureBotAI/CMMMech/issues/312",
+  "finding_id": "D1",
+  "issue_key": "cmmmech:round90-slag-dossier-archive-member-count",
+  "status": "resolved",
+  "previous_occurrences": [
+    {
+      "review_id": "20261015T073047Z-dossier-archive-member-count-initial",
+      "finding_id": "D1",
+      "path": "/private/tmp/cmm-round90-slag-independent/20261015T073047Z-dossier-archive-member-count-initial.json",
+      "sha256": "be380c28103587e4277e52e4fd1bb47a99bc068aee901416119462ea8891af6d",
+      "issue_key": "cmmmech:round90-slag-dossier-archive-member-count"
+    }
+  ],
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round90-slag-independent/20261015T073047Z-dossier-archive-member-count-initial.json",
+      "sha256": "be380c28103587e4277e52e4fd1bb47a99bc068aee901416119462ea8891af6d"
+    },
+    {
+      "path": "/private/tmp/cmm-round90-slag-independent/20261015T073047Z-dossier-archive-member-count-initial-source.md",
+      "sha256": "682f4c0b82e9b7324cbd13357b72e0e038d114f42a30ff568c0bef362ba43a57"
+    },
+    {
+      "path": "/private/tmp/cmm-round90-dossier-json-before-correction.json",
+      "sha256": "25c35be5f3957a2bff9715fed3af5fb3a7601f4f1e5bbc4c620001e2a32cbbcf"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round90-20261015/research/sources/round90-resources/20261015T071841Z-source-investigation.md",
+      "sha256": "1a470467f95fd19610bd48c2e39d5780008d7511df715b357f6f0430b94e42f1"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round90-20261015/research/sources/round90-resources/20261015T071841Z-source-investigation.json",
+      "sha256": "8544ffa5190516796c41658fe536d84bb084f25aedf0c3160c526df1158bc579"
+    },
+    {
+      "path": "/private/tmp/cmm-round90-resources-research/pan2024-supplement.zip",
+      "sha256": "d8032bf310df6e40ab1547f311e6382d761c3ae67952f2a6a176db8b7a6404ec"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round90-20261015/data/records/coal-gasification-slag.yaml",
+      "sha256": "eb3030529d996be96b29e4adc4bdd37dfa81c68084fe77dc64817ab01c0b4fba"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round90-20261015/history/records/coal-gasification-slag/2026-10-15T071639Z-codex-2bd5d7.yaml",
+      "sha256": "ea3e12a37ddb23b035ea6f647024e5ec25b3590221293b5862ddcf77d588f893"
+    }
+  ],
+  "before_after": {
+    "markdown": {
+      "before": "682f4c0b82e9b7324cbd13357b72e0e038d114f42a30ff568c0bef362ba43a57",
+      "after": "1a470467f95fd19610bd48c2e39d5780008d7511df715b357f6f0430b94e42f1",
+      "exact_single_replacement": true
+    },
+    "json": {
+      "before": "25c35be5f3957a2bff9715fed3af5fb3a7601f4f1e5bbc4c620001e2a32cbbcf",
+      "after": "8544ffa5190516796c41658fe536d84bb084f25aedf0c3160c526df1158bc579",
+      "changed_keys": [
+        "report_sha256",
+        "review_correction"
+      ],
+      "archive_inventory_unchanged": true
+    }
+  },
+  "acceptance": [
+    "Independent original ZIP enumeration confirms30 members:28 main-figure assets plus graphical abstract and Table1 JPG.",
+    "Markdown differs by exactly the declared sentence replacement.",
+    "JSON differs only in refreshed report_sha256 and appended explicit review_correction; scientific claims, archive inventory and other fields are unchanged.",
+    "Exact frozen owner and CREATE history hashes are unchanged."
+  ],
+  "acceptance_clarification": "Initial D1 proposed leaving the entire JSON unchanged. That criterion overlooked its report_sha256 field and was too strict. The existing JSON inventory was already correct, but refreshing the MD digest plus an explicit amendment is necessary and independently verified. The initial observation is preserved unmodified.",
+  "diff": "--- initial report\n+++ corrected report\n@@ -18,7 +18,7 @@\n \n - Complete original15-page publisher-layout PDF acquired from the indexed Semantic Scholar mirror: `/private/tmp/cmm-round90-resources-research/pan2024-mirror.pdf`; SHA256 `d0aea7e870649a7c70c226b20a1f65b7cafe8ab3ef94121e91659e93524e1a79`. It identifies the DOI/authors/volume/page range and CC BY-NC3.0 license. All15pages were extracted and rendered; all14main figures and all5tables were inspected, including high-resolution individual pages3,5\u201313 for the accepted claims and conflicts.\n - Original archived JATS acquired from [EuropePMC](https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10790280/fullTextXML): `pan2024.xml`; SHA256 `b17b20a5ffb0cf58513871232a175c4c71a9c180c0afff1c1ed4a3d883da4f08`. Main-text identity, methods and table contents corroborate the PDF.\n-- EuropePMC `supplementaryFiles` archive was downloaded and enumerated: `pan2024-supplement.zip`; SHA256 `d8032bf310df6e40ab1547f311e6382d761c3ae67952f2a6a176db8b7a6404ec`. Its28members are paired main-figure JPG/GIF assets. Neither inspected full text/JATS nor archive announces a separate SI document. This is a bounded source check, not an assertion that no additional data can exist. The guessed publisher supplement route returned404 and is not treated as an acquired supplement.\n+- EuropePMC `supplementaryFiles` archive was downloaded and enumerated: `pan2024-supplement.zip`; SHA256 `d8032bf310df6e40ab1547f311e6382d761c3ae67952f2a6a176db8b7a6404ec`. Its 30 members comprise 28 paired JPG/GIF assets for Figures 1\u201314, plus the graphical abstract and Table 1 JPG. Neither inspected full text/JATS nor archive announces a separate SI document. This is a bounded source check, not an assertion that no additional data can exist. The guessed publisher supplement route returned404 and is not treated as an acquired supplement.\n - Direct publisher PDF returned403; publisher HTML in the web reader initially failed but the indexed original text/landing page corroborated bibliographic identity. The NCBI OA-package endpoint returned404. Exact acquisition URLs/statuses/times/types/byte counts/hashes are in the paired JSON and raw acquisition receipts. Failed requests did not become primary files.\n - Crossref original metadata gives an empty relation mapping and no update-to/updated-by fields. The explicit DOI/title correction/retraction search did not surface a notice in this bounded pass. This does not establish absence from every notice service. Full original graphical evidence, rather than abstract text, supports the record.\n \n",
+  "limitations": [
+    "This resolves the documented local dossier error, not source issue311 or the primary paper uncertainties.",
+    "GitHub issue312 closure is not asserted here; publication is coordinated separately."
+  ]
+}
