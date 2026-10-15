@@ -8,13 +8,20 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 494 material records.
+The catalogue currently contains 501 material records.
 
-The [latest curation report](research/ingests/round101-frontier-20261015.md) links
+The [latest curation report](research/ingests/round102-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Borax](data/records/borax.yaml) | Laboratory-recrystallized borax structure and abiotic thermal dehydration | Distinct powder and single-crystal protocols; conflicting DSC range |
+| [Carbonatite-associated rare-earth ore](data/records/carbonatite-associated-rare-earth-ore.yaml) | Culture pretreatment followed by acid leaching of a real ore | Missing matched sterile-medium pretreatment; bulk extraction is not a mineral-specific recovery yield |
+| [Navajoite](data/records/navajoite.yaml) | Original identity and later diffraction reassessment | Mixed or reidentified specimens, inherited chemical analysis and unresolved structure |
+| [Pascoite](data/records/pascoite.yaml) | Natural-crystal structure and checked diffraction deposits | Hydration/site-model limits; no demonstrated extraction mechanism |
+| [Tincalconite](data/records/tincalconite.yaml) | Natural identity, synthetic refinements and abiotic humidity cycling | Model/formula conflicts and mixed-feed humidity endpoints |
+| [Uranium-mine tailings](data/records/uranium-mine-tailings.yaml) | Consortium-associated leaching and separate ion exchange | Missing sterile control and conflicting uranium endpoint values |
+| [Zinc leach residue](data/records/zinc-leach-residue.yaml) | Abiotic acid leaching and redox smelting of separate feeds | Aqueous extraction and slag inventory loss are not isolated product yields |
 | [Acid mine drainage](data/records/acid-mine-drainage.yaml) | Biogenic-gas precipitation and enriched-community treatment of separate real waters | Missing balances and numerical controls; concentration changes are not recovery yields |
 | [Kernite](data/records/kernite.yaml) | Natural-crystal identity, chemistry and hydrogen disorder | Specimen-specific assays, censored trace elements and incomplete supplemental access |
 | [Laueite](data/records/laueite.yaml) | Natural-crystal identity and epitaxy | Competing valence interpretation, measured versus refined composition and deposited quality alerts |

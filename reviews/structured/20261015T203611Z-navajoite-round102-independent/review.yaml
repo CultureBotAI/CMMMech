@@ -1,0 +1,325 @@
+schema_version: 1.0.0
+review_id: 20261015T203611Z-navajoite-round102-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Navajoite
+started_at: '2026-10-15T20:25:44.831832Z'
+finished_at: '2026-10-15T20:36:11.220637Z'
+reviewer:
+  identity: codex /root/round100_pentagonite
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from vanadium curator /root/round100_vanadium.
+    This reviewer authored borax/tincalconite, independently inspected vanadium evidence
+    after exact capture, and made no vanadium owner/history edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of the exact identity-only mineral record; source conflicts,
+  shared chemistry and model limits are preserved. No supported corrective owner finding.
+source:
+  git_revision: 1c2a3bb043c4bd267a3d911d0e77b029c742689e
+  state: working_tree
+  inputs:
+  - path: data/records/navajoite.yaml
+    sha256: 221f8c3cdc2a71785f07cf0081f23f16dc908d723a847d29a11ec3834a962881
+    role: target
+  - path: history/records/navajoite/2026-10-15T202357Z-codex-d45c4e.yaml
+    sha256: 3fa90445ffc2213c5a24251119905dbe19beec31922d02be4998d4168b5a108e
+    role: context
+  - path: research/sources/round102-vanadium/20261015T202416Z-source-investigation.json
+    sha256: 6335c64b657b7b4563e7bd565807b62c2e09a3b0879eab675215fa7f79c307db
+    role: context
+  - path: research/sources/round102-vanadium/20261015T202416Z-source-investigation.md
+    sha256: 5f0cdcd3c27966f94a3a09e876e0b934e69a6d318a55aca3a314e8121d478f06
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire frozen owner and CREATE, current IMA identity, claim-bearing
+    primary original methods/results/figures/tables and relevant deposits; bounded
+    correction/conflict search.
+  selection: Coordinator-assigned independent review after separate-curator freeze.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:navajoite
+targets:
+- target_id: cmmmech:navajoite
+  path: data/records/navajoite.yaml
+  label: Navajoite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/navajoite.yaml
+    role: maintained_record
+checks:
+- check_id: science
+  name: Independent original-evidence assessment
+  required: true
+  status: passed
+  summary: Primary claims, source boundaries and relevant figures/tables checked.
+  target_ids:
+  - cmmmech:navajoite
+  evidence_ids:
+  - ima
+  - weeks1955
+  - evans1990
+  - search
+- check_id: named
+  name: Independent named validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/pascoite.yaml data/records/navajoite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual independent execution, 2 records checked and 0 failed.
+  target_ids:
+  - cmmmech:navajoite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Verified coordinator batch check 1
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual receipt and retained log hash; not a second reviewer execution.
+  target_ids:
+  - cmmmech:navajoite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Verified coordinator batch check 2
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual receipt and retained log hash; not a second reviewer execution.
+  target_ids:
+  - cmmmech:navajoite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Verified coordinator batch check 3
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 1c2a3bb043c4bd267a3d911d0e77b029c742689e
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual receipt and retained log hash; not a second reviewer execution.
+  target_ids:
+  - cmmmech:navajoite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Verified coordinator batch check 4
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual receipt and retained log hash; not a second reviewer execution.
+  target_ids:
+  - cmmmech:navajoite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/navajoite.yaml
+  locator: Entire exact frozen owner.
+  accessed_at: '2026-10-15T20:36:11.220637Z'
+  support: supports
+  summary: Material identity, source boundaries and absence of unsupported mechanisms
+    assessed.
+  snapshot_sha256: 221f8c3cdc2a71785f07cf0081f23f16dc908d723a847d29a11ec3834a962881
+- evidence_id: history
+  kind: record_content
+  reference: history/records/navajoite/2026-10-15T202357Z-codex-d45c4e.yaml
+  locator: Canonical CREATE and separate inline CREATE.
+  accessed_at: '2026-10-15T20:36:11.220637Z'
+  support: supports
+  summary: Actual actor/model, target, timestamps and described changes align.
+  snapshot_sha256: 3fa90445ffc2213c5a24251119905dbe19beec31922d02be4998d4168b5a108e
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round102-vanadium/20261015T202416Z-source-investigation.json
+  locator: Paired source dossier, acquisition/reuse receipts and source limits.
+  accessed_at: '2026-10-15T20:36:11.220637Z'
+  support: context_only
+  summary: Author handoff is context; primary originals and deposited artifacts were
+    independently inspected.
+  snapshot_sha256: 6335c64b657b7b4563e7bd565807b62c2e09a3b0879eab675215fa7f79c307db
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions page 1 and exact rendered row on PDF page 153.
+  accessed_at: '2026-10-15T20:36:11.220637Z'
+  support: supports
+  summary: September 2026 species formula and grandfathered status verified; year
+    is original description, not a numbered approval or criticality designation.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: weeks1955
+  kind: primary_source
+  reference: https://msaweb.org/AmMin/AM40/AM40_207.pdf
+  locator: Complete six-page original; occurrence 207–209, preparation/Table 1 p.
+    209, impurity/valence/storage interpretations 210, tentative Tables 2–3 pp. 211–212;
+    critical OCR omissions resolved visually.
+  accessed_at: '2026-10-15T20:36:11.220637Z'
+  support: supports
+  summary: Selected 1952 material remained imperfect. Fe partition and reduced-V attribution
+    are inferred; original formula/indexing were tentative. Natural corvusite oxidation
+    and nearly-year storage-water change do not establish controlled or microbial
+    transformation.
+  snapshot_sha256: 4aedf9f980d77905da53499b738fdd76e01e626026de56994739f89fa4ee453d
+- evidence_id: evans1990
+  kind: primary_source
+  reference: https://msaweb.org/AmMin/AM75/AM75_508.pdf
+  locator: Complete 14-page original available; navajoite pp. 517–519 and rendered
+    Table 7 including footnotes; adjacent Table 6 explicitly bokite.
+  accessed_at: '2026-10-15T20:36:11.220637Z'
+  support: supports
+  summary: USNM 106900(type?) new powder/fiber diffraction uses C-centered C2/m indexing;
+    probable bokite lines and misidentified other specimens are retained. Revised
+    formula fits reused Sherwood 1955 chemistry. Structural principle remains unknown,
+    not a solved atomic model.
+  snapshot_sha256: c6605aa475f9c1e6542095c20b5f62361a2664d64e994b143b7a8826cdf3d1f8
+- evidence_id: search
+  kind: search
+  reference: Independent bounded local and web review
+  locator: /private/tmp/cmm-round102-vanadium-review/search.json and dedup.json.
+  accessed_at: '2026-10-15T20:36:11.220637Z'
+  support: context_only
+  summary: No attributable formal correction affecting these bounded claims surfaced
+    in returned sets. Bibliographic/model disagreements already in the owners remain
+    explicit. Newly surfaced source leads are not full-text evidence.
+  search_scope: 'Four current queries: pascoite exact 2005 DOI plus correction/erratum/retraction;
+    navajoite Weeks/Evans correction/structure; 1966 pascoite title 16H2O; navajoite
+    microbial/extraction/structure 2024–2026. Live IUCr index and DTU 2020 author-institution
+    abstract inspected; MAC live open failed, acquired official artifacts inspected.
+    Hidden/ignored/followed rg covered data/research/reviews/history/local skills,
+    cited round 101/102 vanadium raw and 261-issue title/body snapshot. 43 files matched.
+    No machine-wide, issue-comment or literature-completeness assertion.'
+  snapshot_sha256: 617139e7157005e218ab2e8310f5bfc9d372871d3df1aae40488514b8302b265
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/pascoite.yaml data/records/navajoite.yaml
+  locator: /private/tmp/cmm-round102-vanadium-review/validation.log
+  accessed_at: '2026-10-15T20:36:11.220637Z'
+  support: supports
+  summary: 'Independent execution exited 0: two checked, zero failed.'
+  snapshot_sha256: 4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round102-final-gates.json
+  locator: /private/tmp/cmm-round102-final-gates.log; SHA256 5ee1c9e4474da08bc2b3ea0ff0316ffb5f9f5861ce2efcca816f9f3238a95b85
+  accessed_at: '2026-10-15T20:36:11.220637Z'
+  support: supports
+  summary: Coordinator terminal four-command receipt and log hash verified. All commands
+    exit 0 and all recorded owner hashes unchanged; no duplicate independent full-suite
+    execution claimed.
+  snapshot_sha256: 27bacebde96bb1b572897eb3ca5ed83263195f774c2871a4d734f18a2d5d46fe
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species and historical formula
+  outcome: supported
+  summary: Species and historical formula is represented within the inspected evidence.
+  details: Current IMA (V5+,Fe3+)10O24·12H2O, G, 1954 is distinguished from the full
+    1955 publication and tentative V2O5·3H2O model. Associated corvusite/bokite and
+    mixed uranium–vanadium ore are not the same target.
+  target_ids:
+  - cmmmech:navajoite
+  evidence_ids:
+  - ima
+  - weeks1955
+  - evans1990
+- assessment_id: specimens
+  area: evidence
+  topic: Impure natural specimens and tentative alteration
+  outcome: supported
+  summary: Impure natural specimens and tentative alteration is represented within
+    the inspected evidence.
+  details: Original chemically selected material had residual impurity and uncertain
+    Fe/reduced-V partitioning. The authors proposed corvusite oxidation and observed
+    water change during storage, without a controlled time-series transformation experiment.
+    The owner correctly omits a quantified or microbial mechanism.
+  target_ids:
+  - cmmmech:navajoite
+  evidence_ids:
+  - weeks1955
+  - owner
+- assessment_id: reassessment
+  area: provenance
+  topic: New diffraction versus reused chemical analysis
+  outcome: supported
+  summary: New diffraction versus reused chemical analysis is represented within the
+    inspected evidence.
+  details: The 1990 Table 7 identifies USNM 106900 with uncertain type status, distinguishes
+    new CrKalpha data from 1955 CuKalpha data, and identifies probable bokite lines.
+    Its empirical formula reuses Sherwood chemistry and does not solve the atomic
+    structure. Table 6 is not assigned to navajoite.
+  target_ids:
+  - cmmmech:navajoite
+  evidence_ids:
+  - evans1990
+  - weeks1955
+  - owner
+- assessment_id: scope
+  area: scope
+  topic: Criticality, biology, quantities and deployment
+  outcome: supported
+  summary: Identity-only scope is defensible.
+  details: No organism, strain, biomass, microbial causal role, controlled recovery
+    yield, isolated product or industrial deployment is invented. Criticality and
+    external identifiers are unrecorded, not inferred from vanadium and not an assertion
+    of noncriticality. Historical structural/chemistry values do not become mechanism
+    outcomes.
+  target_ids:
+  - cmmmech:navajoite
+  evidence_ids:
+  - owner
+  - ima
+- assessment_id: provenance
+  area: provenance
+  topic: Exact source capture and actual CREATE
+  outcome: supported
+  summary: Reviewed bytes and current curation provenance align.
+  details: Native inspect preceded judgment and captured trusted 1c2a3bb base with
+    honest working-tree state. Different agent authored this owner/history; reviewer
+    authored borates and made no vanadium owner changes. All captured owner/history/dossier/schema
+    hashes rechecked before save. Primary reuse is disclosed, final coordinator checks
+    distinguished from independent named execution.
+  target_ids:
+  - cmmmech:navajoite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- Atomic structure, original impurity/valence partition and exact type status remain
+  unresolved by these sources.
+- The 1990 chemical reinterpretation is dependent on 1955 chemistry, not an independent
+  assay.
+- Newly surfaced 2020 soil-community and 2023 synthetic-nanorod leads were seen at
+  author-institution/publisher abstract level only; they are not transferred to this
+  natural mineral record or declared absent.
+- Search/acquisition scope is bounded; no universal absence of corrections, alternative
+  models or microbial mechanisms is asserted.
+notes:
+- Shared prior-round primary downloads were reused with exact hashes and independently
+  inspected; official pascoite deposits were acquired this round.
+- Separate publication wording/helper audits do not alter the scientific owner or
+  this verdict.
+- Structured whole-corpus validation follows bundle creation; no previous review or
+  history is overwritten.

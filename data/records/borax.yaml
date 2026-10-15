@@ -1,0 +1,101 @@
+id: cmmmech:borax
+name: Borax
+material_kind: mineral
+description: >-
+  Borax is the Na2B4O5(OH)4(H2O)8 mineral species in the September 2026
+  IMA-CNMNC list, with grandfathered status G. The list leaves its original
+  description year and original locality unresolved; no sequential IMA
+  approval identifier is assigned here. Its structural formula is equivalent
+  in bulk composition to sodium tetraborate decahydrate, Na2B4O7·10H2O.
+  This species is distinct from elemental boron, the borates commodity,
+  manufactured products sold as borax, tincalconite, kernite and anhydrous
+  sodium tetraborate phases. Nishiyasu and Kyono's thermal experiments
+  characterized commercial reagent and recrystallized material, not a natural
+  ore or an industrial recovery operation. Their borax single-crystal
+  refinements were monoclinic C2/c. No commodity criticality or microbial
+  activity is inherited.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC, The New IMA List of Minerals, September 2026: PDF page 28,
+      Borax row; pages 1-2, status and original-description definitions and terms.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-15'
+  - id: nishiyasu2024
+    title: >-
+      Nishiyasu and Kyono (2024), Thermal behavior of borax,
+      Na2B4O5(OH)4·8H2O, American Mineralogist 109, 533-539,
+      DOI 10.2138/am-2023-8970. Institutional Revision 1 manuscript:
+      Methods pp. 7-11, Results pp. 12-18, Figures 1-6 pp. 32-37,
+      Table 1 pp. 38-39; associated Supplementary Tables S1-S2 inspected.
+    url: https://tsukuba.repo.nii.ac.jp/records/2010200
+    accessed_on: '2026-10-15'
+mechanisms:
+  - id: abiotic-thermal-dehydration
+    name: Heating-associated transformation of reagent borax to tincalconite
+    process: other
+    description: >-
+      In situ powder diffraction observed loss of borax reflections and
+      appearance of tincalconite during heating. The measured temperature
+      behavior depends on the preparation, containment and measurement
+      protocol; it is not a universal natural transition threshold or an
+      isolated boron recovery yield.
+    context: >-
+      The starting material was guaranteed-reagent-grade sodium tetraborate
+      decahydrate from Fujifilm Wako. Single crystals were recrystallized
+      from saturated aqueous solution at 293 K. For the powder-XRD arm,
+      material was loaded in a 0.7-mm Lindemann capillary with one end fully
+      open, heated in ambient atmosphere from 303 to 473 K in 10-K steps,
+      held 5 min at each temperature before a 3-min synchrotron exposure.
+      A separate single crystal was protected with nitrocellulose adhesive
+      in a capillary and measured from 113 to 323 K in 30-K steps using
+      nitrogen-gas temperature control; its crystallinity was lost at 333 K.
+      These are separate experimental arms, not a continuous single-crystal
+      refinement through the powder phase transition. No organisms were used.
+    microbial: false
+    evidence:
+      - source_ref: nishiyasu2024
+        supports: support
+        explanation: >-
+          Manuscript p. 12 and Figure 2 show borax reflections nearly
+          unchanged through 353 K, weakening above 363 K and no longer
+          observed at 403 K. Reflections assigned to tincalconite appeared
+          above 353 K and persisted weakly to 473 K. The powder patterns
+          establish a phase transformation within diffraction sensitivity;
+          neither peak disappearance nor peak heights provide a weighed
+          conversion fraction, reaction rate or element recovery yield.
+      - source_ref: nishiyasu2024
+        supports: partial
+        explanation: >-
+          Table 1, Figures 4-5 and Supplementary Tables S1-S2 show stronger
+          thermal expansion along b and relatively small B-O bond changes
+          over the separate 113-323 K single-crystal series. The manuscript
+          reports no resolved loss of water/hydroxyl oxygen site occupancy
+          at 323 K within its refinement uncertainty. Proposed persistence
+          of borate structural units through transformation combines these
+          refinements, comparison with earlier tincalconite structures and
+          quantum-chemical calculations; it is not direct time-resolved
+          tracking of individual units or a demonstrated palaeoenvironmental
+          indicator.
+      - source_ref: nishiyasu2024
+        supports: partial
+        explanation: >-
+          The DSC arm used approximately 10 mg each of borax and an
+          alpha-alumina reference, 10 K/min and argon at 50 mL/min. Its
+          Methods p. 7 states a heating endpoint of 323 K, whereas Results
+          p. 12 and Figure 1 report endothermic maxima at 349 and 408 K.
+          This unresolved source inconsistency prevents asserting a fully
+          reconciled DSC temperature program. The authors attribute
+          DSC/XRD differences to open versus semi-open measurement systems.
+          The separate loss of single-crystal diffraction at 333 K is not
+          substituted for the powder transition. Repeated thermal cycles,
+          a matched humidity-control series, quantified boron recovery and
+          industrial deployment were not demonstrated by these experiments.
+curation_history:
+  - timestamp: '2026-10-15T20:23:57.642830Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created an IMA-grounded borax mineral species record with bounded reagent thermal dehydration and retained DSC protocol inconsistency.
+history_refs:
+  - history/records/borax/2026-10-15T202401Z-codex-c79658.yaml

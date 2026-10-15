@@ -1,0 +1,158 @@
+{
+  "review_version": 1,
+  "review_type": "independent corrected-template successor with disposable regressions",
+  "recorded_at": "2026-10-15T20:46:32.262788+00:00",
+  "reviewer": {
+    "identity": "codex /root/round100_vanadium",
+    "model": "GPT-6",
+    "independence": "independent from root-authored corrections"
+  },
+  "trusted_base": "1c2a3bb043c4bd267a3d911d0e77b029c742689e",
+  "predecessor": {
+    "path": "reviews/publication/20261015-round102/20261015T204341Z-prior-helper-reuse-guard-review.json",
+    "sha256": "001e31ef4fe33116447aa186ec13687ade8681f02691c91ec40091def1e53a80",
+    "markdown": "reviews/publication/20261015-round102/20261015T204341Z-prior-helper-reuse-guard-review.md"
+  },
+  "scope": "Corrected round102 mutation/collector templates only; all retain deliberate ROUND102_* binding sentinels. The complete templates were not executed. Isolated source AST assertions, command arguments and the collector workflow function were tested using disposable repositories and in-memory API fixtures.",
+  "status": "guard corrections supported; concrete publication bindings and execution approval pending",
+  "dispositions": [
+    {
+      "key": "R102-OPS-001",
+      "status": "resolved_in_reviewed_template",
+      "issue": "https://github.com/CultureBotAI/CMMMech/issues/383",
+      "change": "Finalizer rejects direct newly-tracked/preserved-inventory collisions before merge and adds --no-overwrite-ignore. Before/after byte, mode and symlink checks remain.",
+      "evidence": "Regression cases1\u20134: inventory collision refuses; an ignored collision absent from the old inventory is protected by the merge flag; safe fast-forward preserves unrelated ignored content; prior unguarded argv reproduces overwrite only in the disposable control."
+    },
+    {
+      "key": "R102-OPS-002",
+      "status": "resolved_in_reviewed_template",
+      "issue": "https://github.com/CultureBotAI/CMMMech/issues/383",
+      "change": "Cleanup detaches, confirms no worktree advertises the branch, and deletes its ref using update-ref -d with the expected old OID. Branch configuration is intentionally retained. Remote explicit lease remains.",
+      "evidence": "Regression cases5\u20137: concurrently advanced branch is preserved by CAS refusal; exact expected branch is deleted with detached HEAD/config unchanged; another disposable worktree owning the branch triggers the source ownership assertion before deletion."
+    },
+    {
+      "key": "R102-OPS-003",
+      "status": "resolved_in_reviewed_template",
+      "issue": "https://github.com/CultureBotAI/CMMMech/issues/383",
+      "change": "Queue explicitly binds base ref main, expected topic branch and both repository names before its existing SHA/tree/review/preflight checks.",
+      "evidence": "Regression case8 evaluates the exact source assertion against intended and four wrong-ref/repository fixtures; wrong alternatives are rejected."
+    },
+    {
+      "key": "R102-OPS-004",
+      "status": "resolved_in_reviewed_template",
+      "issue": "https://github.com/CultureBotAI/CMMMech/issues/383",
+      "change": "Collector re-lists matching workflow/event/SHA runs and requires the selected latest ID and attempt to remain unchanged. It additionally checks the merge parent and queue-base ancestry.",
+      "evidence": "Regression case9 runs only the extracted workflow function with in-memory API responses: unchanged evidence passes, a newer matching run or incremented attempt fails freshness. Source inspection verifies ancestry and event/SHA predicates."
+    }
+  ],
+  "inputs_and_evidence": [
+    {
+      "role": "corrected round102 template, not executed and not concretely bound",
+      "original_path": "/private/tmp/cmm-round102-queue.py",
+      "snapshot_path": "reviews/publication/20261015-round102/20261015T204632Z-corrected-template-guard-successor-sources/cmm-round102-queue.py",
+      "sha256": "b20c8e9eca9387ae5287b824a8a1d6f356becde6f233139f5c6d8ae87bc258ef",
+      "bytes": 5456
+    },
+    {
+      "role": "corrected round102 template, not executed and not concretely bound",
+      "original_path": "/private/tmp/cmm-round102-cleanup.py",
+      "snapshot_path": "reviews/publication/20261015-round102/20261015T204632Z-corrected-template-guard-successor-sources/cmm-round102-cleanup.py",
+      "sha256": "ebd9cff9c152689409c889d1624992a61992a71914e89e7d4b8b025ff4b71e2e",
+      "bytes": 3393
+    },
+    {
+      "role": "corrected round102 template, not executed and not concretely bound",
+      "original_path": "/private/tmp/cmm-round102-finalize.py",
+      "snapshot_path": "reviews/publication/20261015-round102/20261015T204632Z-corrected-template-guard-successor-sources/cmm-round102-finalize.py",
+      "sha256": "96cc190f420851402471b9100846c8ec19797e7715b82f07c91e8fac27a65838",
+      "bytes": 4684
+    },
+    {
+      "role": "corrected round102 template, not executed and not concretely bound",
+      "original_path": "/private/tmp/cmm-round102-hosted-final-collector.py",
+      "snapshot_path": "reviews/publication/20261015-round102/20261015T204632Z-corrected-template-guard-successor-sources/cmm-round102-hosted-final-collector.py",
+      "sha256": "97755654e2b6c41f39c6adc84719fd5a29dbd597728c08d382a51c2ae3b4938c",
+      "bytes": 7844
+    },
+    {
+      "role": "independent disposable-fixture regression evidence",
+      "original_path": "/private/tmp/cmm-round102-vanadium-research/operational-guard-regression.py",
+      "snapshot_path": "reviews/publication/20261015-round102/20261015T204632Z-corrected-template-guard-successor-sources/isolated-guard-regression.py",
+      "sha256": "f6db03ebc7fa7b0cc547f9c6f1e6e326e58b79863c443a0f311a40c84891bf23",
+      "bytes": 12306
+    },
+    {
+      "role": "independent disposable-fixture regression evidence",
+      "original_path": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/receipt.json",
+      "snapshot_path": "reviews/publication/20261015-round102/20261015T204632Z-corrected-template-guard-successor-sources/isolated-guard-regression-receipt.json",
+      "sha256": "68e0ef25d3121e6c2a8a4df8f1b947ada80173b7db3111957702063c350e5b8d",
+      "bytes": 28586
+    }
+  ],
+  "regression": {
+    "status": "passed",
+    "started_at": "2026-10-15T20:45:39.897293+00:00",
+    "finished_at": "2026-10-15T20:45:43.787391+00:00",
+    "cases": [
+      {
+        "name": "preserved-inventory collision rejected before merge",
+        "status": "passed",
+        "details": "Exact corrected AST preflight rejects the newly tracked ignored path; HEAD and bytes unchanged."
+      },
+      {
+        "name": "merge flag protects collision absent from old inventory",
+        "status": "passed",
+        "details": "Exact corrected merge argv refuses an ignored path even when it was not captured in the earlier preservation inventory; HEAD, bytes and mode remain unchanged."
+      },
+      {
+        "name": "non-colliding fast-forward succeeds",
+        "status": "passed",
+        "details": "Exact corrected merge argv advances HEAD and preserves unrelated ignored bytes."
+      },
+      {
+        "name": "prior behavior reproduces ignored overwrite in disposable control",
+        "status": "passed",
+        "details": "Prior merge argv overwrites the disposable ignored file, establishing that the regression exercises the identified failure path."
+      },
+      {
+        "name": "advanced local branch refuses expected-old-OID deletion",
+        "status": "passed",
+        "details": "A branch advance after capture makes the exact corrected CAS deletion fail; the advanced reference and detached HEAD survive."
+      },
+      {
+        "name": "exact local branch deletion succeeds and retains configuration",
+        "status": "passed",
+        "details": "Expected OID matches; branch disappears, detached HEAD and harmless branch configuration remain."
+      },
+      {
+        "name": "worktree-owned branch refuses deletion before CAS",
+        "status": "passed",
+        "details": "The exact corrected ownership assertion rejects a topic branch checked out in another disposable worktree."
+      },
+      {
+        "name": "PR identity fixtures bind both refs and repositories",
+        "status": "passed",
+        "details": "Exact corrected queue assertion accepts intended identities and rejects four wrong-ref/repository alternatives."
+      },
+      {
+        "name": "collector fixtures reject newer runs and attempts",
+        "status": "passed",
+        "details": "Exact corrected workflow function runs only against in-memory API responses. Stable evidence passes; newer matching run and incremented attempt each fail freshness."
+      }
+    ],
+    "original_receipt_path": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/receipt.json",
+    "original_receipt_sha256": "68e0ef25d3121e6c2a8a4df8f1b947ada80173b7db3111957702063c350e5b8d",
+    "copied_receipt_path": "reviews/publication/20261015-round102/20261015T204632Z-corrected-template-guard-successor-sources/isolated-guard-regression-receipt.json"
+  },
+  "findings": [],
+  "limitations": [
+    "No real CMMMech Git refs, original-main files, remote repository or GitHub API were touched by the regressions. All Git mutations were confined to newly created disposable directories beneath the receipt root.",
+    "Template placeholders are intentional. Concrete head/tree/PR/preflight bindings, issue state expectations, source hashes and final acquisition evidence still need a separate pre-execution review after rebinding. This artifact is not permission to run unbound templates.",
+    "The finalizer still deliberately relies on coordinator semantic PASS assessment of hosted evidence before invocation; loading/hashing that file alone does not establish acceptance.",
+    "Worktree-ownership reads, workflow re-listing and live-main checks remain non-atomic observations. The expected-old-OID deletion protects against a changed local ref, but no guarantee against every concurrent worktree operation or later remote change is asserted.",
+    "Queue ancestry plus tree/event/SHA checks add evidence; the final concrete queue commit must still be linked to the actual PR/merge-group event in the hosted assessment.",
+    "Direct inventory intersection is additional evidence; the Git no-overwrite-ignore behavior is independently exercised for an ignored collision not present in the earlier inventory.",
+    "No entire publication helper was invoked, and no actual merge, queue admission, branch cleanup or original-main fast-forward is claimed."
+  ],
+  "verdict": "pass_with_limits_for_guard_changes_only"
+}

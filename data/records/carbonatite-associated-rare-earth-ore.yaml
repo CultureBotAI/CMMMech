@@ -1,0 +1,161 @@
+id: cmmmech:carbonatite-associated-rare-earth-ore
+name: Carbonatite-associated rare-earth ore
+material_kind: primary_resource
+description: >-
+  Naturally occurring, mixed rare-earth-bearing ore associated with
+  alkaline-carbonatite deposits, anchored here to the tested Mushgia Khudag
+  material from Mongolia. The deposit association does not establish that
+  every sampled rock meets a modal carbonatite classification. The curated
+  feed contains quartz, apatite, calcite and other phases, with monazite and
+  parisite assignments; it is neither a pure mineral nor a processed waste.
+  Laboratory culture pretreatment followed by sulfuric-acid leaching is
+  represented as a treatment-associated observation with unresolved causal
+  controls. Neither industrial deployment nor inherited criticality is asserted.
+sources:
+  - id: bayarsaikhan2025
+    title: >-
+      Bayarsaikhan et al. (2025). Enhanced recovery of rare earth elements
+      from carbonatite ore by biological pretreatment. RSC Advances
+      15:4628-4635. DOI 10.1039/D4RA07845D; Sections 2.1.1-2.2.4 and 3.1-3.3,
+      Tables 1-2 and Figures 1-8. Full PMC XML and original figure assets
+      inspected; publisher PDF access was unavailable.
+    url: https://doi.org/10.1039/D4RA07845D
+    accessed_on: '2026-10-15'
+  - id: pmc11811698
+    title: >-
+      PMC11811698 full-text deposit of Bayarsaikhan et al.,
+      PMID 39935465; published 11 February 2025, collection dated
+      6 February 2025. Same primary experiment as the RSC article.
+    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC11811698/fullTextXML
+    accessed_on: '2026-10-15'
+  - id: thiobacillus_sequence
+    title: >-
+      ENA/INSDC OR053813.1: Thiobacillus denitrificans strain 2mn,
+      partial 16S ribosomal RNA gene, 1254 bases; version 1,
+      created 14 June 2023 and updated 15 June 2023.
+    url: https://www.ebi.ac.uk/ena/browser/view/OR053813.1
+    accessed_on: '2026-10-15'
+  - id: bacillus_sequence
+    title: >-
+      ENA/INSDC OR053804.1: Bacillus cereus strain 1mn,
+      partial 16S ribosomal RNA gene, 1381 bases; version 1,
+      created 14 June 2023 and updated 15 June 2023.
+    url: https://www.ebi.ac.uk/ena/browser/view/OR053804.1
+    accessed_on: '2026-10-15'
+  - id: ncbi_taxonomy
+    title: >-
+      NCBI Taxonomy 36861 Thiobacillus denitrificans and 1396 Bacillus cereus,
+      both species-rank entries; these do not identify strains or prove
+      individual contributions to a mixed-culture assay.
+    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=36861,1396&retmode=xml
+    accessed_on: '2026-10-15'
+  - id: bayarsaikhan2025_comparative
+    title: >-
+      Bayarsaikhan et al. (2025). Comparative Study of Bioleaching Efficiency
+      of Rare Earth Element from Different Carbonatite Ores in Mongolia.
+      Metallurgical and Materials Engineering 31(3):300-309,
+      DOI 10.63278/1371. Publisher-linked 13-page manuscript inspected;
+      related study-family context, not independent replication.
+    url: https://doi.org/10.63278/1371
+    accessed_on: '2026-10-15'
+mechanisms:
+  - id: culture_pretreatment_acid_leach_association
+    name: Culture-pretreatment-associated increase in subsequent acid leaching
+    process: bioleaching
+    microbial: true
+    organisms:
+      - id: NCBITaxon:36861
+        label: Thiobacillus denitrificans
+      - id: NCBITaxon:1396
+        label: Bacillus cereus
+    description: >-
+      A source-labelled Tmix culture pretreatment was followed by higher
+      dissolved rare-earth signals during subsequent sulfuric-acid treatment
+      than direct acid leaching of untreated ore. The experiment included
+      microbial cultures, but no matched sterile-medium pretreatment isolates
+      their contribution from acidic, iron- and sulfate-bearing medium chemistry.
+      Mineral and surface changes were observed; cooperative microbial action,
+      organic-acid production and the precise dissolution pathway remain
+      hypotheses. The final acid-leaching stage is chemical, not demonstrated
+      microbial recovery of a separated product.
+    context: >-
+      Section 2.1.1 sampled the Mushgia Khudag deposit in Tsogt-Ovoo soum,
+      Omnogovi province, Mongolia; ore was crushed below 12.5 mm and ground
+      below 0.074 mm. Section 2.1.2 reports Tmix grown in 9K medium from
+      chalcopyrite-ore isolates and names the two sequence accessions above.
+      ENA labels those sequences as strains 2mn and 1mn; their presence does
+      not establish exhaustive community composition or separate causal roles.
+      A separate ore-derived, source-labelled Bacillus sp. culture in NBRIP
+      medium was also tested. Its printed identifier 4TH0UUSC016 could not be
+      resolved and is not mapped to either Tmix member. Section 2.1.3 used 40 g
+      ore with 80 mL of each culture in separate 250 mL flasks, 30 degrees C,
+      200 rpm for 7 days. Solids were filtered, rinsed twice and dried at
+      60 degrees C before 1.0 M sulfuric-acid leaching at solid/liquid ratio
+      1:6, 30 degrees C, 200 rpm for 20 h. Experiments were duplicates with
+      standard deviations reported. ICP-OES measured total-element leachate
+      concentrations; XRD, FTIR, pH, ORP and zeta potential characterized
+      associated changes. No purified REE product was isolated.
+    evidence:
+      - source_ref: bayarsaikhan2025
+        supports: support
+        explanation: >-
+          Sections 2.1.1-2.2.4 and 3.1-3.3, Tables 1-2 and Figures 2-8 support
+          the mixed-ore identity and treatment-associated observation.
+          Figure 3 labels TREE leaching as 27.29% for acid alone, 38.74% for
+          Tmix plus acid and 29.09% for the separate Bacillus-labelled culture
+          plus acid, versus 2.40% and 0.003% for the respective culture-only
+          contacts. These are the article's reported solution-based extraction
+          percentages, not independently reconciled whole-process yields or
+          isolated-product recovery. Weak culture-only release is preserved;
+          the abstract's implication of no direct REE dissolution is too broad.
+      - source_ref: bayarsaikhan2025
+        supports: partial
+        explanation: >-
+          Methods do not specify a matched sterile 9K/NBRIP pretreatment or
+          a killed-cell control. They do not present a complete balance across
+          pretreatment liquid, rinses, dried residue and acid leachate; the
+          percentage equation uses initial ore mass without fully resolving
+          interstage losses. Figure 5's initial pretreatment pH values do not
+          match the later prose values of 1.6 and 4.0, so neither pair is
+          promoted to a resolved initial-pH condition. The separate culture's
+          Gram-negative description and unresolved printed identifier further
+          limit its taxonomy. No measured organic-acid profile, oxygen uptake
+          or direct cell-mineral localization establishes the proposed
+          mechanism. Zeta potential was measured in filtered suspensions,
+          not as a direct assay of mineral-specific attachment or metabolism.
+          Reduced acid consumption, environmental benefit and industrial
+          feasibility are not demonstrated by these batch measurements.
+      - source_ref: thiobacillus_sequence
+        supports: context_only
+        explanation: >-
+          The exact accession cited for Tmix resolves to the deposited
+          Thiobacillus denitrificans strain 2mn partial 16S sequence and
+          taxon cross-reference 36861; this is sequence provenance, not
+          experimental proof of the member's metabolic contribution.
+      - source_ref: bacillus_sequence
+        supports: context_only
+        explanation: >-
+          The exact accession cited for Tmix resolves to the deposited
+          Bacillus cereus strain 1mn partial 16S sequence and taxon
+          cross-reference 1396. It does not resolve the separate
+          Bacillus-labelled NBRIP culture or demonstrate strain purity.
+      - source_ref: bayarsaikhan2025_comparative
+        supports: context_only
+        explanation: >-
+          Sections 2.1-2.3 and 3.1-3.2, Tables 1-2 and Figures 2-6 of the
+          publisher-linked manuscript compare Mushgia Khudag and Lugiin Gol
+          ores with the same Tmix accessions but different particle-size and
+          loading conditions. Reported ore chemistry also differs. Shared
+          investigators, culture accessions and sites prevent treating this
+          as independent replication; no sample-lot equivalence is proven.
+          Its culture comparisons and particle-size trends are not transferred
+          into the RSC pretreatment assay, and they do not supply its missing
+          sterile-medium control or validate a universal microbial advantage.
+curation_history:
+  - timestamp: '2026-10-15T20:23:42.296700+00:00'
+    curator: Codex (GPT-6; Codex)
+    action: CREATE
+    summary: >-
+      Curated a mixed natural ore and qualified pretreatment-associated acid leaching from full primary XML and original figures, resolved Tmix accessions and species labels, and preserved taxonomic and causal limits.
+history_refs:
+  - history/records/carbonatite-associated-rare-earth-ore/2026-10-15T202338Z-codex-8bde1e.yaml

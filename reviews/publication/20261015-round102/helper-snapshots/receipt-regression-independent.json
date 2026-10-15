@@ -1,0 +1,67 @@
+{
+  "recorded_at": "2026-10-15T20:36:34.917947+00:00",
+  "passed": true,
+  "cases": [
+    {
+      "helper": "/private/tmp/cmm-round102-final-gates.py",
+      "case": "fresh receipt",
+      "passed": true
+    },
+    {
+      "helper": "/private/tmp/cmm-round102-final-gates.py",
+      "case": "existing regular file preserved",
+      "passed": true
+    },
+    {
+      "helper": "/private/tmp/cmm-round102-final-gates.py",
+      "case": "existing symlink and target preserved",
+      "passed": true
+    },
+    {
+      "helper": "/private/tmp/cmm-round102-final-gates.py",
+      "case": "dangling symlink refused without creating target",
+      "passed": true
+    },
+    {
+      "helper": "/private/tmp/cmm-round102-final-gates.py",
+      "case": "competing creator between check and open preserved",
+      "passed": true
+    },
+    {
+      "helper": "/private/tmp/cmm-round102-preservation-before-commit-check.py",
+      "case": "fresh receipt",
+      "passed": true
+    },
+    {
+      "helper": "/private/tmp/cmm-round102-preservation-before-commit-check.py",
+      "case": "existing regular file preserved",
+      "passed": true
+    },
+    {
+      "helper": "/private/tmp/cmm-round102-preservation-before-commit-check.py",
+      "case": "existing symlink and target preserved",
+      "passed": true
+    },
+    {
+      "helper": "/private/tmp/cmm-round102-preservation-before-commit-check.py",
+      "case": "dangling symlink refused without creating target",
+      "passed": true
+    },
+    {
+      "helper": "/private/tmp/cmm-round102-preservation-before-commit-check.py",
+      "case": "competing creator between check and open preserved",
+      "passed": true
+    }
+  ],
+  "scope": "Actual AST-extracted write_receipt functions from the corrected helpers; only isolated temporary files. Competing creation injected at the file-open boundary. No corpus or live publication receipts touched.",
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round102-final-gates.py",
+      "sha256": "c8644044df00fb702327436c67e4bf374b63775ea3be25142abde1151ff3f550"
+    },
+    {
+      "path": "/private/tmp/cmm-round102-preservation-before-commit-check.py",
+      "sha256": "828b5cf02e475cfb1faa7d21698e8439d942ea796fe77c3f568706add1e34dc1"
+    }
+  ]
+}

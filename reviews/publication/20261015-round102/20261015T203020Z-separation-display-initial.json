@@ -1,0 +1,48 @@
+{
+  "review_id": "20261015T203020Z-separation-display-initial",
+  "recorded_at": "2026-10-15T20:30:20.342006+00:00",
+  "reviewer": {
+    "identity": "codex /root/round100_pentagonite",
+    "model": "GPT-6"
+  },
+  "base": "1c2a3bb043c4bd267a3d911d0e77b029c742689e",
+  "state": "working_tree",
+  "scope": "Bounded publication wording review; not a new independent scientific acceptance of reviewer-authored borax.",
+  "inputs": [
+    {
+      "path": "scripts/render_pages.py",
+      "sha256": "5f19c2ffb75edbd9be144b6d8b338a74e49467b4acd3b5d2a2bea7622bc8254d"
+    },
+    {
+      "path": "pages/index.html",
+      "sha256": "75e0e21fd8cd234a9c4adf78b8111438774665ce50a1b7037d908e7b8c82022f"
+    },
+    {
+      "path": "pages/processes/separation.html",
+      "sha256": "eef08148bbfd1c6cb72a0cbf01cf749bd3c1c3198364acf0900895d67a843bde"
+    },
+    {
+      "path": "data/records/uranium-mine-tailings.yaml",
+      "sha256": "a217692da8148f706ce40260f18f1cd83d56b01e60eb3f3e21ba01c52535dfca"
+    },
+    {
+      "path": "data/records/zinc-leach-residue.yaml",
+      "sha256": "ea520360db699961992304f933eb8dd4225eab72ceb02148941394aab846511d"
+    }
+  ],
+  "findings": [
+    {
+      "issue_key": "CMMMech:publication:separation-microbial-scope",
+      "severity": "minor",
+      "status": "open",
+      "description": "Maintained PROCESS_NAMES/PROCESS_BLURBS label every separation as Bioseparation using microbial biomolecules. The generated homepage and category reproduce this while this batch includes explicitly microbial:false commercial-resin sorption and acid separation. The label/prose overstate biological involvement.",
+      "acceptance_checks": "Use neutral Separation and prose covering selective partitioning with involvement specified per record, regenerate pages and run affected render tests/freshness. Preserve scientific owners and counting logic."
+    }
+  ],
+  "corrections": "None by reviewer.",
+  "unresolved_questions": "No scientific owner correction is required by this presentation finding.",
+  "verdict": "needs_curation",
+  "limitations": [
+    "No complete corpus prose audit or publication readiness assertion."
+  ]
+}

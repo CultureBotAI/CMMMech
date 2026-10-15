@@ -1,0 +1,1007 @@
+{
+  "started_at": "2026-10-15T20:45:39.897293+00:00",
+  "finished_at": "2026-10-15T20:45:43.787391+00:00",
+  "status": "passed",
+  "scope": "Disposable local Git repositories and isolated AST guard/function fixtures only. Complete publication templates were never executed. No real CMMMech refs, original-main files, remote repository or GitHub API were touched.",
+  "test_script": "/private/tmp/cmm-round102-vanadium-research/operational-guard-regression.py",
+  "test_script_sha256": "f6db03ebc7fa7b0cc547f9c6f1e6e326e58b79863c443a0f311a40c84891bf23",
+  "template_sources": [
+    {
+      "path": "/private/tmp/cmm-round102-queue.py",
+      "sha256": "b20c8e9eca9387ae5287b824a8a1d6f356becde6f233139f5c6d8ae87bc258ef",
+      "contains_binding_sentinels": true
+    },
+    {
+      "path": "/private/tmp/cmm-round102-cleanup.py",
+      "sha256": "ebd9cff9c152689409c889d1624992a61992a71914e89e7d4b8b025ff4b71e2e",
+      "contains_binding_sentinels": true
+    },
+    {
+      "path": "/private/tmp/cmm-round102-finalize.py",
+      "sha256": "96cc190f420851402471b9100846c8ec19797e7715b82f07c91e8fac27a65838",
+      "contains_binding_sentinels": true
+    },
+    {
+      "path": "/private/tmp/cmm-round102-hosted-final-collector.py",
+      "sha256": "97755654e2b6c41f39c6adc84719fd5a29dbd597728c08d382a51c2ae3b4938c",
+      "contains_binding_sentinels": true
+    }
+  ],
+  "cases": [
+    {
+      "name": "preserved-inventory collision rejected before merge",
+      "status": "passed",
+      "details": "Exact corrected AST preflight rejects the newly tracked ignored path; HEAD and bytes unchanged."
+    },
+    {
+      "name": "merge flag protects collision absent from old inventory",
+      "status": "passed",
+      "details": "Exact corrected merge argv refuses an ignored path even when it was not captured in the earlier preservation inventory; HEAD, bytes and mode remain unchanged."
+    },
+    {
+      "name": "non-colliding fast-forward succeeds",
+      "status": "passed",
+      "details": "Exact corrected merge argv advances HEAD and preserves unrelated ignored bytes."
+    },
+    {
+      "name": "prior behavior reproduces ignored overwrite in disposable control",
+      "status": "passed",
+      "details": "Prior merge argv overwrites the disposable ignored file, establishing that the regression exercises the identified failure path."
+    },
+    {
+      "name": "advanced local branch refuses expected-old-OID deletion",
+      "status": "passed",
+      "details": "A branch advance after capture makes the exact corrected CAS deletion fail; the advanced reference and detached HEAD survive."
+    },
+    {
+      "name": "exact local branch deletion succeeds and retains configuration",
+      "status": "passed",
+      "details": "Expected OID matches; branch disappears, detached HEAD and harmless branch configuration remain."
+    },
+    {
+      "name": "worktree-owned branch refuses deletion before CAS",
+      "status": "passed",
+      "details": "The exact corrected ownership assertion rejects a topic branch checked out in another disposable worktree."
+    },
+    {
+      "name": "PR identity fixtures bind both refs and repositories",
+      "status": "passed",
+      "details": "Exact corrected queue assertion accepts intended identities and rejects four wrong-ref/repository alternatives."
+    },
+    {
+      "name": "collector fixtures reject newer runs and attempts",
+      "status": "passed",
+      "details": "Exact corrected workflow function runs only against in-memory API responses. Stable evidence passes; newer matching run and incremented attempt each fail freshness."
+    }
+  ],
+  "commands": [
+    {
+      "at": "2026-10-15T20:45:39.980762+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/ignored-collision",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "init",
+        "-q",
+        "-b",
+        "main"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:40.036138+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/ignored-collision",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "add",
+        ".gitignore",
+        "seed.txt"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:40.113495+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/ignored-collision",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "commit",
+        "-q",
+        "-m",
+        "base"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:40.160964+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/ignored-collision",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "d67d1762088f290096569f6c1034d04f6904b5d2\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:40.224289+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/ignored-collision",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "checkout",
+        "-q",
+        "-b",
+        "incoming"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:40.279907+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/ignored-collision",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "add",
+        "-f",
+        "collision.txt"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:40.373875+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/ignored-collision",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "commit",
+        "-q",
+        "-m",
+        "target"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:40.432656+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/ignored-collision",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "75f84d88241b1e63a27c956d5654b855cc986e67\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:40.498982+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/ignored-collision",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "checkout",
+        "-q",
+        "main"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:40.565581+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/ignored-collision",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "diff",
+        "--name-only",
+        "--diff-filter=A",
+        "d67d1762088f290096569f6c1034d04f6904b5d2",
+        "75f84d88241b1e63a27c956d5654b855cc986e67"
+      ],
+      "exit_code": 0,
+      "stdout": "collision.txt\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:40.618649+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/ignored-collision",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "d67d1762088f290096569f6c1034d04f6904b5d2\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:40.669333+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/ignored-collision",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "diff",
+        "--name-only",
+        "--diff-filter=A",
+        "d67d1762088f290096569f6c1034d04f6904b5d2",
+        "75f84d88241b1e63a27c956d5654b855cc986e67"
+      ],
+      "exit_code": 0,
+      "stdout": "collision.txt\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:40.730845+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/ignored-collision",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "merge",
+        "--ff-only",
+        "--no-overwrite-ignore",
+        "75f84d88241b1e63a27c956d5654b855cc986e67"
+      ],
+      "exit_code": 1,
+      "stdout": "Updating d67d176..75f84d8\n",
+      "stderr": "error: The following untracked working tree files would be overwritten by merge:\n\tcollision.txt\nPlease move or remove them before you merge.\nAborting\n"
+    },
+    {
+      "at": "2026-10-15T20:45:40.779619+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/ignored-collision",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "d67d1762088f290096569f6c1034d04f6904b5d2\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:40.850287+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/safe-fast-forward",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "init",
+        "-q",
+        "-b",
+        "main"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:40.915032+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/safe-fast-forward",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "add",
+        ".gitignore",
+        "seed.txt"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:40.999257+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/safe-fast-forward",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "commit",
+        "-q",
+        "-m",
+        "base"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:41.050245+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/safe-fast-forward",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "d67d1762088f290096569f6c1034d04f6904b5d2\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:41.129021+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/safe-fast-forward",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "checkout",
+        "-q",
+        "-b",
+        "incoming"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:41.189215+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/safe-fast-forward",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "add",
+        "-f",
+        "collision.txt"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:41.274598+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/safe-fast-forward",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "commit",
+        "-q",
+        "-m",
+        "target"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:41.325589+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/safe-fast-forward",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "b346c2802d6fc8578fc07dd8708ab375a855308f\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:41.389651+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/safe-fast-forward",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "checkout",
+        "-q",
+        "main"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:41.440075+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/safe-fast-forward",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "diff",
+        "--name-only",
+        "--diff-filter=A",
+        "d67d1762088f290096569f6c1034d04f6904b5d2",
+        "b346c2802d6fc8578fc07dd8708ab375a855308f"
+      ],
+      "exit_code": 0,
+      "stdout": "collision.txt\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:41.519815+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/safe-fast-forward",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "merge",
+        "--ff-only",
+        "--no-overwrite-ignore",
+        "b346c2802d6fc8578fc07dd8708ab375a855308f"
+      ],
+      "exit_code": 0,
+      "stdout": "Updating d67d176..b346c28\nFast-forward\n collision.txt | 1 +\n 1 file changed, 1 insertion(+)\n create mode 100644 collision.txt\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:41.565547+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/safe-fast-forward",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "b346c2802d6fc8578fc07dd8708ab375a855308f\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:41.626032+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/old-behavior-control",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "init",
+        "-q",
+        "-b",
+        "main"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:41.681941+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/old-behavior-control",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "add",
+        ".gitignore",
+        "seed.txt"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:41.758853+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/old-behavior-control",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "commit",
+        "-q",
+        "-m",
+        "base"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:41.806458+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/old-behavior-control",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "bd0c6fbac29c4a105013ac91a693e4cf3a420fdc\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:41.868546+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/old-behavior-control",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "checkout",
+        "-q",
+        "-b",
+        "incoming"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:41.925076+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/old-behavior-control",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "add",
+        "-f",
+        "collision.txt"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:41.999316+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/old-behavior-control",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "commit",
+        "-q",
+        "-m",
+        "target"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:42.048511+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/old-behavior-control",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "df95d4414605223a8281db3b8a60dc5429dea9f5\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:42.109973+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/old-behavior-control",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "checkout",
+        "-q",
+        "main"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:42.197047+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/old-behavior-control",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "merge",
+        "--ff-only",
+        "df95d4414605223a8281db3b8a60dc5429dea9f5"
+      ],
+      "exit_code": 0,
+      "stdout": "Updating bd0c6fb..df95d44\nFast-forward\n collision.txt | 1 +\n 1 file changed, 1 insertion(+)\n create mode 100644 collision.txt\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:42.250403+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/old-behavior-control",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "df95d4414605223a8281db3b8a60dc5429dea9f5\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:42.317778+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "init",
+        "-q",
+        "-b",
+        "main"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:42.371334+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "add",
+        "seed"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:42.458292+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "commit",
+        "-q",
+        "-m",
+        "base"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:42.508546+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "6931e1610b87b5206d7514aacbd7f03174d98bee\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:42.560675+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "branch",
+        "topic"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:42.655173+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "commit",
+        "-q",
+        "-am",
+        "advanced"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:42.705953+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "b3643e01997103bed4840cd3dce6589801348b9f\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:42.764094+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "checkout",
+        "-q",
+        "--detach",
+        "6931e1610b87b5206d7514aacbd7f03174d98bee"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:42.819398+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "config",
+        "branch.topic.description",
+        "keep harmless configuration"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:42.870054+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "worktree",
+        "list",
+        "--porcelain"
+      ],
+      "exit_code": 0,
+      "stdout": "worktree /private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion\nHEAD 6931e1610b87b5206d7514aacbd7f03174d98bee\ndetached\n\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:42.919515+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "update-ref",
+        "refs/heads/topic",
+        "b3643e01997103bed4840cd3dce6589801348b9f",
+        "6931e1610b87b5206d7514aacbd7f03174d98bee"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:42.965844+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "update-ref",
+        "-d",
+        "refs/heads/topic",
+        "6931e1610b87b5206d7514aacbd7f03174d98bee"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": "error: cannot lock ref 'refs/heads/topic': is at b3643e01997103bed4840cd3dce6589801348b9f but expected 6931e1610b87b5206d7514aacbd7f03174d98bee\n"
+    },
+    {
+      "at": "2026-10-15T20:45:43.009972+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "rev-parse",
+        "refs/heads/topic"
+      ],
+      "exit_code": 0,
+      "stdout": "b3643e01997103bed4840cd3dce6589801348b9f\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:43.053107+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "6931e1610b87b5206d7514aacbd7f03174d98bee\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:43.108443+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "update-ref",
+        "refs/heads/topic",
+        "6931e1610b87b5206d7514aacbd7f03174d98bee",
+        "b3643e01997103bed4840cd3dce6589801348b9f"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:43.156369+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "worktree",
+        "list",
+        "--porcelain"
+      ],
+      "exit_code": 0,
+      "stdout": "worktree /private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion\nHEAD 6931e1610b87b5206d7514aacbd7f03174d98bee\ndetached\n\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:43.207430+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "update-ref",
+        "-d",
+        "refs/heads/topic",
+        "6931e1610b87b5206d7514aacbd7f03174d98bee"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:43.255960+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "show-ref",
+        "--verify",
+        "--quiet",
+        "refs/heads/topic"
+      ],
+      "exit_code": 1,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:43.328036+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "rev-parse",
+        "HEAD"
+      ],
+      "exit_code": 0,
+      "stdout": "6931e1610b87b5206d7514aacbd7f03174d98bee\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:43.404499+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "config",
+        "branch.topic.description"
+      ],
+      "exit_code": 0,
+      "stdout": "keep harmless configuration\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:43.462244+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "branch",
+        "topic",
+        "6931e1610b87b5206d7514aacbd7f03174d98bee"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:43.593667+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "worktree",
+        "add",
+        "-q",
+        "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/owned-worktree",
+        "topic"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:43.708133+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "worktree",
+        "list",
+        "--porcelain"
+      ],
+      "exit_code": 0,
+      "stdout": "worktree /private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion\nHEAD 6931e1610b87b5206d7514aacbd7f03174d98bee\ndetached\n\nworktree /private/tmp/cmm-round102-guard-regression-20261015T204539Z/owned-worktree\nHEAD 6931e1610b87b5206d7514aacbd7f03174d98bee\nbranch refs/heads/topic\n\n",
+      "stderr": ""
+    },
+    {
+      "at": "2026-10-15T20:45:43.777547+00:00",
+      "cwd": "/private/tmp/cmm-round102-guard-regression-20261015T204539Z/deletion",
+      "command": [
+        "git",
+        "-c",
+        "core.hooksPath=/dev/null",
+        "rev-parse",
+        "refs/heads/topic"
+      ],
+      "exit_code": 0,
+      "stdout": "6931e1610b87b5206d7514aacbd7f03174d98bee\n",
+      "stderr": ""
+    }
+  ],
+  "non_atomic_limit": "Worktree ownership and final remote evidence observations remain non-atomic; CAS protects a changed local OID, and no perpetual freshness guarantee is asserted."
+}
