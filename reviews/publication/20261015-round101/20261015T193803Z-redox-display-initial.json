@@ -1,0 +1,386 @@
+{
+  "recorded_at": "2026-10-15T19:38:03.382867+00:00",
+  "reviewer": "codex /root/round100_pentagonite; GPT-6",
+  "base": "e8cfa60c53e4c94c6093e23fe983cc71fb59e12f",
+  "scope": "Independent bounded publication display review, not a new scientific owner review. No maintained/generated edits.",
+  "reviewed_files": {
+    "scripts/render_pages.py": "f1aaa6c382b057a4e4f2702a24e2bebb974403703e4e3b055fffdda024797357",
+    "pages/processes/redox_transformation.html": "c7e3a7e30ac389f72de2ab27b9af13f8962cb50fe991602542ce0973a96e8499",
+    "data/records/montroseite.yaml": "6db8dd6407d289895446e73a87fee295318c1bbe01d6b7fd2d668948f9f5e203",
+    "data/records/paramontroseite.yaml": "31759cf0806da0ef377764711654fd27859582ccf26462f638f3690c40f3c783",
+    "data/records/anilite.yaml": "97f8f8eb0d55379bfcb9815ca4ea72ea9cbc71b3fbae79f2a951f2ae92f33d50"
+  },
+  "finding": {
+    "issue_key": "CMMMech:publication-redox-blurb-microbial-scope",
+    "severity": "minor",
+    "status": "open",
+    "owner": "scripts/render_pages.py:PROCESS_BLURBS.redox_transformation",
+    "description": "The category introduction restricts oxidation-reduction to enzymatic or cell-surface reactions, but its membership includes explicitly microbial:false mineral weathering and laboratory heating mechanisms.",
+    "evidence": [
+      "scripts/render_pages.py line 61",
+      "pages/processes/redox_transformation.html line 27; Montroseite, Paramontroseite and Anilite cards",
+      "Exact YAML mechanisms microbial:false"
+    ],
+    "recommended_correction": "Oxidation\u2013reduction reactions that alter metal valence states; microbial involvement is specified in each record.",
+    "acceptance_checks": [
+      "Change maintained blurb without owner or category-membership edits.",
+      "Regenerate pages and confirm neutral wording on category introduction.",
+      "Run affected page tests and rendering --check.",
+      "Independently recheck exact correction and save linked successor."
+    ]
+  },
+  "counts": {
+    "redox_records": 57,
+    "redox_mechanisms": 60,
+    "explicit_abiotic_mechanisms": 15
+  },
+  "members": [
+    {
+      "path": "data/records/akaganeite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/anilite.yaml",
+      "mechanisms": 1,
+      "microbial": 0,
+      "abiotic": 1
+    },
+    {
+      "path": "data/records/antimony.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/asbolane.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/biogas-desulfurization-sulfur-residue.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/chlorite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/chromite-ore-processing-residue.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/chromite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/chromium.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/copper-autoclave-slime.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/digenite.yaml",
+      "mechanisms": 1,
+      "microbial": 0,
+      "abiotic": 1
+    },
+    {
+      "path": "data/records/feroxyhyte.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/ferrihydrite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/galena.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/hauerite.yaml",
+      "mechanisms": 1,
+      "microbial": 0,
+      "abiotic": 1
+    },
+    {
+      "path": "data/records/heterogenite.yaml",
+      "mechanisms": 1,
+      "microbial": 0,
+      "abiotic": 1
+    },
+    {
+      "path": "data/records/heterosite.yaml",
+      "mechanisms": 1,
+      "microbial": 0,
+      "abiotic": 1
+    },
+    {
+      "path": "data/records/illite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/jarosite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/lepidocrocite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/lithiophilite.yaml",
+      "mechanisms": 1,
+      "microbial": 0,
+      "abiotic": 1
+    },
+    {
+      "path": "data/records/ludlamite.yaml",
+      "mechanisms": 1,
+      "microbial": 0,
+      "abiotic": 1
+    },
+    {
+      "path": "data/records/maghemite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/manganese.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/manganite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/metacinnabar.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/metavivianite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/molybdenum.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/montmorillonite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/montroseite.yaml",
+      "mechanisms": 1,
+      "microbial": 0,
+      "abiotic": 1
+    },
+    {
+      "path": "data/records/ningyoite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/nontronite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/orpiment.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/osmium.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/palladium.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/palygorskite.yaml",
+      "mechanisms": 2,
+      "microbial": 1,
+      "abiotic": 1
+    },
+    {
+      "path": "data/records/paramontroseite.yaml",
+      "mechanisms": 2,
+      "microbial": 0,
+      "abiotic": 2
+    },
+    {
+      "path": "data/records/phosphoferrite.yaml",
+      "mechanisms": 1,
+      "microbial": 0,
+      "abiotic": 1
+    },
+    {
+      "path": "data/records/platinum.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/plumbojarosite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/pyrite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/pyrolusite.yaml",
+      "mechanisms": 1,
+      "microbial": 0,
+      "abiotic": 1
+    },
+    {
+      "path": "data/records/rare-earth-rich-deep-sea-mud.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/rhodium.yaml",
+      "mechanisms": 2,
+      "microbial": 2,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/riebeckite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/selenium.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/silica-sand.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/silver.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/spent-steel-pickling-liquors.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/stibnite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/tellurium.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/thallium.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/titanium.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/triphylite.yaml",
+      "mechanisms": 1,
+      "microbial": 0,
+      "abiotic": 1
+    },
+    {
+      "path": "data/records/uramphite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/uraninite.yaml",
+      "mechanisms": 1,
+      "microbial": 1,
+      "abiotic": 0
+    },
+    {
+      "path": "data/records/violarite.yaml",
+      "mechanisms": 1,
+      "microbial": 0,
+      "abiotic": 1
+    }
+  ],
+  "verdict": "needs_correction",
+  "limitations": [
+    "Bounded one-category presentation review; no taxonomy redesign or new mechanism acceptance.",
+    "No assertion that other category blurbs are correct."
+  ]
+}

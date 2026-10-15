@@ -1,0 +1,393 @@
+schema_version: 1.0.0
+review_id: 20261015T194350Z-acid-mine-drainage-round101-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Acid mine drainage
+started_at: '2026-10-15T19:33:57.210324Z'
+finished_at: '2026-10-15T19:43:50.038410Z'
+reviewer:
+  identity: codex /root/round100_vanadium
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The root coordinator authored this owner. I curated the separate
+    montroseite/paramontroseite owners and independently inspected this frozen resource,
+    histories and primary evidence without editing them.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified laboratory treatment of distinct real drainage samples is supported
+  without treating concentration changes as recovery yields or assigning an unproven
+  causal organism.
+source:
+  git_revision: e8cfa60c53e4c94c6093e23fe983cc71fb59e12f
+  state: working_tree
+  inputs:
+  - path: data/records/acid-mine-drainage.yaml
+    sha256: cb7c908b4eb6482de97abed1d0f6a3501d9e04abd9ff8c9ae6f20c431ebff6e6
+    role: target
+  - path: history/records/acid-mine-drainage/2026-10-15T193244Z-codex-81a0ec.yaml
+    sha256: 80e7534a1e65bb610c1834ed1d58d33cde0506f31095a76610a63831f26c075f
+    role: context
+  - path: research/sources/round101-amd/20261015T193414Z-source-investigation.json
+    sha256: 67d8958855b229f8644a847fb001ba40bebd095fe04467251bed799c9dd5828a
+    role: context
+  - path: research/sources/round101-amd/20261015T193414Z-source-investigation.md
+    sha256: aab92f9c431d7bcb25c14ba907e62a5e25fb2ee142568989d14197d262c1031d
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire frozen maintained record, canonical CREATE and inline provenance,
+    dated identities, complete accessible claim-bearing original methods/results,
+    relevant figures/tables/supplements, source dossier and bounded correction/counterevidence/duplicate
+    searches.
+  selection: Parent-assigned independent review after author freeze.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:acid-mine-drainage
+targets:
+- target_id: cmmmech:acid-mine-drainage
+  path: data/records/acid-mine-drainage.yaml
+  label: Acid mine drainage
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/acid-mine-drainage.yaml
+    role: maintained_record
+checks:
+- check_id: science
+  name: Independent primary-evidence assessment
+  required: true
+  status: passed
+  summary: Exact owner, complete accessible claim-bearing primary evidence and deposited
+    supplements assessed; source limitations preserved below.
+  target_ids:
+  - cmmmech:acid-mine-drainage
+  evidence_ids:
+  - owner
+  - history
+  - search
+- check_id: named
+  name: Independent named record validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/acid-mine-drainage.yaml data/records/phosphophyllite.yaml
+    data/records/laueite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 3 records; 0 failed. This target was one of those three frozen
+    owners.
+  target_ids:
+  - cmmmech:acid-mine-drainage
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch check 1
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual terminal receipt, exact base, log hash and unchanged reviewed
+    owner; not an independently rerun suite.
+  target_ids:
+  - cmmmech:acid-mine-drainage
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch check 2
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual terminal receipt, exact base, log hash and unchanged reviewed
+    owner; not an independently rerun suite.
+  target_ids:
+  - cmmmech:acid-mine-drainage
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch check 3
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base e8cfa60c53e4c94c6093e23fe983cc71fb59e12f
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual terminal receipt, exact base, log hash and unchanged reviewed
+    owner; not an independently rerun suite.
+  target_ids:
+  - cmmmech:acid-mine-drainage
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch check 4
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual terminal receipt, exact base, log hash and unchanged reviewed
+    owner; not an independently rerun suite.
+  target_ids:
+  - cmmmech:acid-mine-drainage
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/acid-mine-drainage.yaml
+  locator: Entire exact frozen owner captured by native inspect before scientific
+    judgment; hash verified before drafting.
+  accessed_at: '2026-10-15T19:43:50.038410Z'
+  support: supports
+  summary: Identity, evidence scope, source references and limitations agree with
+    the assessed primary evidence.
+  snapshot_sha256: cb7c908b4eb6482de97abed1d0f6a3501d9e04abd9ff8c9ae6f20c431ebff6e6
+- evidence_id: history
+  kind: record_content
+  reference: history/records/acid-mine-drainage/2026-10-15T193244Z-codex-81a0ec.yaml
+  locator: Complete canonical CREATE, distinct inline event and linked history_refs.
+  accessed_at: '2026-10-15T19:43:50.038410Z'
+  support: supports
+  summary: Actual GPT-6 curator metadata, target and described additions agree; no
+    invented earlier authorship.
+  snapshot_sha256: 80e7534a1e65bb610c1834ed1d58d33cde0506f31095a76610a63831f26c075f
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round101-amd/20261015T193414Z-source-investigation.md
+  locator: Paired source-investigation JSON/Markdown; original acquisition, reuse
+    and access bounds.
+  accessed_at: '2026-10-15T19:43:50.038410Z'
+  support: supports
+  summary: Source acquisition and prior-study reuse are transparent. The dossier is
+    provenance and curator interpretation, not independent scientific replication.
+  snapshot_sha256: aab92f9c431d7bcb25c14ba907e62a5e25fb2ee142568989d14197d262c1031d
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/acid-mine-drainage.yaml
+    data/records/phosphophyllite.yaml data/records/laueite.yaml
+  locator: /private/tmp/cmm-round101-independent-reviews/named-validation.log
+  accessed_at: '2026-10-15T19:43:50.038410Z'
+  support: supports
+  summary: 'Independently executed validation of these three frozen owners: 3 records
+    checked; 0 failed.'
+  snapshot_sha256: 10c82c02ccbb2c9d0b1dd25497ab97be593452ac7d5d9b18fe4b18777cbf7058
+- evidence_id: search
+  kind: search
+  reference: Independent bounded correction/retraction and duplicate searches
+  locator: /private/tmp/cmm-round101-independent-reviews/search-observations.json;
+    /private/tmp/cmm-round101-independent-reviews/dedup.json
+  accessed_at: '2026-10-15T19:43:50.038410Z'
+  support: context_only
+  summary: No affecting formal notice surfaced in the bounded returned sets. Related
+    studies are follow-up leads; source conflicts retained rather than silently harmonized.
+  snapshot_sha256: e87f8ea7b66acbe97656812062d2ffb2bf10727c10646e1c07236672b27bc85d
+  search_scope: Exact queries retained; first returned sets, no exhaustive pagination.
+    rg --no-ignore --hidden --follow covered explicit maintained data/research/reviews/history/docs,
+    relevant raw directories and 257 all-state issue title/body snapshot. No machine-wide
+    or issue-comment-wide absence claim.
+- evidence_id: silva
+  kind: primary_source
+  reference: https://doi.org/10.3390/met9020206
+  locator: Complete retained nine-page original; Sections 2.1-2.3, Tables 1-4, Figures
+    1-5; original pages 2-5 and 7 independently visually checked.
+  accessed_at: '2026-10-15T19:43:50.038410Z'
+  support: supports
+  summary: Upstream sulfidogenic reactor and downstream real-water bottles are distinct.
+    Solid collection and covellite assignment are supported; unresolved Table 3 mass
+    entries and missing product balance limit quantitative recovery.
+  snapshot_sha256: 0217821d7f1fc4cbf92b98ab5598eb9738232b12df8d92799c702c3563967bcd
+- evidence_id: akinpelu
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.heliyon.2021.e07241
+  locator: Complete final six-page original, Sections 2.1-2.5/3.1-3.2; Tables 1-5,
+    Figures 1-3. Original pages 2, 4 and 5 independently visually checked.
+  accessed_at: '2026-10-15T19:43:50.038410Z'
+  support: supports
+  summary: Methods, media, feed stages and concentration comparisons checked. Biochemical
+    attribution, quantitative microbial enhancement and recovered product are not
+    established by these observations.
+  snapshot_sha256: fa49a84f5a882b0a88cbea5fb471c9b552ca8246564d3799b0956c979b10aecb
+- evidence_id: si
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8215182/supplementaryFiles
+  locator: Complete official mmc1.docx Table S1 extracted and read, including hydrogen-sulfide
+    test; original figure assets inspected with main PDF.
+  accessed_at: '2026-10-15T19:43:50.038410Z'
+  support: partial
+  summary: Pooled biochemical responses do not isolate member-specific causality or
+    directly measure a sulfate-reduction enzyme.
+  snapshot_sha256: b11b207ff14a7aeb9522d46de31c3c9257c1938f966b9091385f5a4ba087ace4
+- evidence_id: ena
+  kind: database
+  reference: https://www.ebi.ac.uk/ena/portal/api/filereport?accession=SRP149893&result=read_run&fields=study_accession,study_title,experiment_accession,run_accession,scientific_name,sample_accession&format=tsv
+  locator: Independent current ENA fetch at 2026-10-15T19:38:53Z; complete returned
+    run inventory.
+  accessed_at: '2026-10-15T19:43:50.038410Z'
+  support: partial
+  summary: SRR7269217, PRJNA474088, SRX4172875 and SAMN09291489 resolve to wastewater
+    metagenome; inventory does not map both Sa and Sb labels to distinct runs.
+  snapshot_sha256: fa67724579d057dcd8e0e06cdcd5119ffff1570b9fbb6882162ef0c89a726d66
+- evidence_id: publication
+  kind: database
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=PMCID:PMC8215182&format=json&resultType=core
+  locator: Independent current EuropePMC CORE response at 2026-10-15T19:38:54Z, title/DOI/PMID/publication
+    type/license.
+  accessed_at: '2026-10-15T19:43:50.038410Z'
+  support: supports
+  summary: PMC8215182 and PMID34189300 resolve to the Akinpelu2021 article. No correction/retraction
+    link is returned in this response; that is bounded metadata coverage, not a universal
+    absence claim.
+  snapshot_sha256: d8fbecf4656bb14fb659ec29f79df7c345bcd8e184fd1a840ce9333271e12b62
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round101-final-gates.json
+  locator: Completed coordinator receipt; /private/tmp/cmm-round101-final-gates.log
+    SHA256 2320daf3c6b3b3f75fa6fa8a39ecda326cf050d44c1db85a09d64500ac114a93
+  accessed_at: '2026-10-15T19:43:50.038410Z'
+  support: supports
+  summary: Four terminal zero exits, unchanged reviewed owners and matching log hash
+    verified. Suite execution belongs to coordinator; native review save/check occurs
+    afterward.
+  snapshot_sha256: 16d55c5a2ece1b9050cac9f6aae1bce7ffb49913bee965eba7ca3f8102bf2646
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Material identity and study boundaries
+  outcome: supported
+  summary: Mining-generated liquid is correctly scoped as a secondary resource.
+  details: The Brazilian copper-mine and Mpumalanga samples have separate source-specific
+    compositions. Natural ore, elemental copper, mining solids and the covellite product
+    are not merged. The record explicitly identifies the Silva2019 experiment already
+    represented in covellite, preventing false independent replication.
+  target_ids:
+  - cmmmech:acid-mine-drainage
+  evidence_ids:
+  - owner
+  - silva
+  - akinpelu
+  - search
+- assessment_id: conditions
+  area: scope
+  topic: Biomass, substrate and conditions
+  outcome: supported
+  summary: Upstream biological gas generation and downstream precipitation remain
+    separate.
+  details: 'Silva2019: separate 1 L real-water bottles, pH 5.1, Cu 325 mg/L, 48/96
+    h, filtration and 60 C overnight drying; upstream 2.3 L mixed acidophilic consortium,
+    pH 4.5, 30 C, 40 rpm, 150 mL/min N2/CO2 70/30, Cu-free synthetic feed. These reactor
+    settings are not assigned to the bottles. Akinpelu2021: screened stored drainage,
+    Postgate enrichment, 21 d adaptation at 35 C/250 rpm, weekly 70% broth replacement,
+    daily 100 mL additions for seven days then 14 d static batch. Incomplete volume
+    and effluent accounting remains explicit.'
+  target_ids:
+  - cmmmech:acid-mine-drainage
+  evidence_ids:
+  - owner
+  - silva
+  - akinpelu
+- assessment_id: quantity
+  area: quantity
+  topic: Concentration and product denominators
+  outcome: supported
+  summary: Reported concentrations are not promoted to isolated-product recovery or
+    purity.
+  details: Silva Table 3 Cu/S wt% pairs sum to 161.66 and 177.05%, and the mass-entry
+    ratios are labeled molar elsewhere; no corrected numbers are substituted. No final
+    aqueous Cu or collected solid mass closes a balance. Akinpelu Table 5 raw/post
+    Cu 0.46 +/- 0.05 versus 0.04 +/- 0.001 mg/L and Fe 2308 +/- 5.51 versus 260.3
+    +/- 2.78 mg/L agree with the source. Exact day/fraction and meaning of uncertainty
+    remain unresolved. ICP-OES does not establish ionic valence; media, dilution and
+    losses confound mass recovery.
+  target_ids:
+  - cmmmech:acid-mine-drainage
+  evidence_ids:
+  - owner
+  - silva
+  - akinpelu
+- assessment_id: controls
+  area: evidence
+  topic: Controls and causal specificity
+  outcome: supported
+  summary: Mechanism scope matches what the controls and assays support.
+  details: No matched chemical-H2S comparison establishes a unique microbial necessity
+    in the Silva study. The Akinpelu consortium-free control is mentioned without
+    numerical outcomes in inspected main figures/tables or Table S1. Triplicate measurements
+    do not demonstrate independent biological reactors. Community abundance, pooled
+    biochemical tests and proposed aminopeptidase roles do not identify a causal strain/enzyme
+    or mineral product. The process labels separation and other are conservative and
+    justified by the explicit text.
+  target_ids:
+  - cmmmech:acid-mine-drainage
+  evidence_ids:
+  - owner
+  - silva
+  - akinpelu
+  - si
+  - ena
+- assessment_id: limits
+  area: scope
+  topic: Criticality and deployment
+  outcome: supported
+  summary: No criticality or industrial performance is inherited.
+  details: The mineral product, solution depletion and industrial origin of mine water
+    are not deployment evidence. No jurisdiction/list/edition claim is made. The current
+    mixed-community accession is provenance, not a strain activity assertion.
+  target_ids:
+  - cmmmech:acid-mine-drainage
+  evidence_ids:
+  - owner
+  - silva
+  - akinpelu
+  - ena
+- assessment_id: provenance
+  area: provenance
+  topic: Exact working revision and curation history
+  outcome: supported
+  summary: Working changes, independent review and execution provenance are explicit.
+  details: Native inspect preceded scientific judgment; owner/history/schema/dossier
+    hashes were rechecked at final drafting. AMD dossier-only wording/storage corrections
+    were recaptured without changing the owner or primary claims. Canonical CREATE
+    and inline history are distinct. Named validation was independently executed;
+    coordinator whole-corpus gates were included only after actual terminal receipt
+    and trusted base verification.
+  target_ids:
+  - cmmmech:acid-mine-drainage
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- 'Neither study provides a closed phase-resolved mass balance, isolated copper yield,
+  product purity or demonstrated industrial deployment. Source-evidence follow-up:
+  https://github.com/CultureBotAI/CMMMech/issues/370.'
+- The 2019 composition entries, mass-versus-molar wording and isolated CuS98 label
+  remain source inconsistencies; current version notes and prior v2 reconciliation
+  are not a newly acquired v2 binary.
+- The 2021 control outcomes, precise Table 5 sampling day/fraction, feed/effluent
+  accounting and biological replication remain unresolved.
+- One public sequence run does not map both study sample labels or establish an organism-specific
+  mechanism. No strain CURIE or causal enzyme assignment is curated.
+- Full published originals and relevant supplements were inspected; no experiment,
+  raw analytical data analysis or product characterization was independently repeated.
+notes:
+- Native capture and preliminary independent assessment began at the recorded start;
+  final drafting and artifact hashes are actual. No owner corrections were supported
+  or made.
+- Primary artifacts were acquired by the author or reused from prior retained downloads
+  and independently inspected here. Fresh ENA and EuropePMC authority requests for
+  AMD were independently made; earlier sandbox DNS failures, including a mistaken
+  PMID-based request that received no response, remain in the failed acquisition receipt,
+  superseded by the successful PMCID lookup.
+- The saved review does not claim independent experimental replication, exhaustive
+  literature absence or native-review checks performed before persistence. Whole-corpus
+  checks are coordinator executions verified from actual completed receipts.

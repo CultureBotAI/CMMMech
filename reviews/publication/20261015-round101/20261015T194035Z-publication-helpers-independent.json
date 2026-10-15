@@ -1,0 +1,68 @@
+{
+  "recorded_at": "2026-10-15T19:40:35.908873+00:00",
+  "reviewer": "codex /root/round100_pentagonite; GPT-6",
+  "scope": "Independent read-only comparison and guard audit of round101 temporary operational verification helpers and provisional configuration. No helper run, clone, branch/GitHub mutation, or new scientific review.",
+  "inputs": {
+    "/private/tmp/cmm-round101-isolated-coverage.py": {
+      "sha256": "2b4471dd7706ac093c0ec02844a05a4624c99f52844c716bd824546efcfa6c99"
+    },
+    "/private/tmp/cmm-round101-isolated-verification.py": {
+      "sha256": "faec78c6e9c45a5dc7e1cb130b2b90b1848d805675f6f2edc6091301bcc7d917"
+    },
+    "/private/tmp/cmm-round101-helper-config.json": {
+      "sha256": "eb5fe3022ee426e350f230e9ca3ad537ac8fa9796431df922fb7c2b7cd90f309"
+    },
+    "/private/tmp/cmm-round100-isolated-coverage.py": {
+      "sha256": "58715e5e3c924c1a16a3bb3393a612bf94ee4e6c733c16edc405c057f91ea75b"
+    },
+    "/private/tmp/cmm-round100-isolated-verification.py": {
+      "sha256": "055854012976be4a7144676d30ad72748858bbe710a7d112d76af6b4b18b331d"
+    },
+    "/private/tmp/cmm-round100-helper-config.json": {
+      "sha256": "0fb3d078bcf542d45155278788716362d5ed1af1e6375754f66b63f4ddebd33c"
+    },
+    "/private/tmp/CMMMech-expansion-round101-20261015/reviews/publication/20261015-round100/20261015T184309Z-publication-helpers-successor.json": {
+      "sha256": "026139c0e527ef941032ab9ff1fc04af236ffda4181871a901747fd86e2e8230"
+    }
+  },
+  "source_snapshot": "reviews/publication/20261015-round101/20261015T194035Z-publication-helper-source-snapshots.json",
+  "source_snapshot_sha256": "67fe48ec169f61eeff87d2110e78c50798d136bc6feedb15e77a163b96d4298d",
+  "comparisons": [
+    {
+      "helper": "coverage",
+      "only_round_base_path_bindings_changed": true,
+      "syntax_parse_passed": true
+    },
+    {
+      "helper": "verification",
+      "only_round_base_path_bindings_changed": true,
+      "syntax_parse_passed": true
+    }
+  ],
+  "checks": [
+    "Both helpers match prior corrected round100 bytes exactly after replacing only round number/base; AST syntax parsing passed.",
+    "Config binds exact trusted base, current worktree/branch and seven intended slugs. Counts remain explicitly provisional.",
+    "Verification requires exact topic tree, clean exact topic HEAD in preflight, main-only --no-tags clone followed by explicit tag fetch, and absence of topic commit before and after tests.",
+    "Synthetic preflight verifies trusted parent/tree; postmerge requires exact single parent and merged tree plus local/remote branch absence.",
+    "Required validation/history/native-review/coverage commands record actual exits and retained log hash; config hash is checked unchanged.",
+    "Coverage requires current exact owner SHA, target ID/path, reviewed scope and completed positive scientific review, plus every distinct base available as a commit.",
+    "Prior #367 exclusive receipt correction remains unchanged: refuses occupied file/symlink and uses open(x), preserving prior concurrent-creator protection.",
+    "Receipt paths are unique and exclusively created; reviewer executed no publication helper."
+  ],
+  "provisional_expected_counts": {
+    "record_count": 494,
+    "history_count": 565,
+    "structured_review_count": 582,
+    "review_base_count": 102,
+    "covered_records": 494
+  },
+  "findings": [],
+  "verdict": "pass_with_limitations",
+  "limitations": [
+    "No preflight/postmerge has run in this audit; actual exact committed head/tree, all required command exits and receipt/log hashes remain later gates.",
+    "494 records/565 histories/582 reviews/102 bases/494 covered records are expectations requiring actual completed native reviews and exact-hash coverage reconciliation.",
+    "Remote retained-tag targets and hosted review/CI/native-queue/merged lifecycle are outside this helper audit.",
+    "No new regression tests were added or run: normalized source equality proves unchanged behavior from the previously corrected and tested helper.",
+    "The helper SHA must be rechecked before execution/publication; this audit covers only the recorded bytes."
+  ]
+}

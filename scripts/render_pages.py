@@ -58,7 +58,7 @@ PROCESS_LABELS = {
 PROCESS_BLURBS = {
     "bioleaching": "Microbial solubilization and mobilization of target metals from ores, concentrates, and wastes.",
     "biomineralization": "Biological precipitation, crystallization, and synthesis of mineral phases or nanoparticles.",
-    "redox_transformation": "Enzymatic or cell-surface oxidation-reduction reactions altering metal valence states.",
+    "redox_transformation": "Oxidation-reduction reactions that alter metal valence states; microbial involvement is specified in each record.",
     "biosorption": "Passive binding and retention of metal ions by microbial cell walls and biomass.",
     "separation": "Selective partition or affinity purification using microbial biomolecules (e.g. lanmodulin).",
     "recovery": "Integrated microbial processing schemes yielding concentrated or isolated materials.",

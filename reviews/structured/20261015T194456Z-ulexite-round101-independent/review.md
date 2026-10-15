@@ -1,0 +1,579 @@
+# Independent scientific review of Ulexite
+
+- Review: 20261015T194456Z-ulexite-round101-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T19:34:26.147695Z
+- Finished UTC: 2026-10-15T19:44:56.350542Z
+- Reviewer: codex /root/round100_sulfates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Accepted ulexite identity and bounded abiotic rehydration observations are supported; distinct heat treatments, mixed phases, a high-temperature null result, source inconsistencies and mechanistic uncertainty remain explicit.
+
+## Scope And Provenance
+
+Entire frozen maintained owner and canonical CREATE history; dated mineral authority; complete claim-bearing primary methods, results, figures and tables; access limitations and bounded contrary-evidence searches.
+
+Selection: Parent-assigned independent review after author freeze.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base e8cfa60c53e4c94c6093e23fe983cc71fb59e12f.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:ulexite | data/records/ulexite.yaml | maintained | Ulexite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent primary-evidence assessment | passed | True | cmmmech:ulexite | Exact owner, main originals, claim-bearing methods/results/figures/tables, current authority and bounded notice searches independently inspected. |
+| Independent named strict validation | passed | True | cmmmech:ulexite | Actual independent terminal result: 2 checked, 0 failed. |
+| Completed coordinator batch check 1 | passed | True | cmmmech:ulexite | Actual completed coordinator receipt and retained log verified; exact frozen target, history, dossier and schema hashes unchanged. |
+| Completed coordinator batch check 2 | passed | True | cmmmech:ulexite | Actual completed coordinator receipt and retained log verified; exact frozen target, history, dossier and schema hashes unchanged. |
+| Completed coordinator batch check 3 | passed | True | cmmmech:ulexite | Actual completed coordinator receipt and retained log verified; exact frozen target, history, dossier and schema hashes unchanged. |
+| Completed coordinator batch check 4 | passed | True | cmmmech:ulexite | Actual completed coordinator receipt and retained log verified; exact frozen target, history, dossier and schema hashes unchanged. |
+
+## Scientific And Domain Assessments
+
+### Accepted species and separate thermal products
+
+identity: supported. Targets: cmmmech:ulexite.
+
+Ulexite species identity is separate from commodities, other borate hydrates and laboratory altered material.
+
+IMA G/1850 and NaCaB5O6(OH)6(H2O)5 agree. Ghose natural Boron Mine material supports triclinic P-1 with isolated pentaborate groups and hydrogen-bonded Na/Ca coordination. Heated products are assigned phases or diffraction-amorphous material rather than automatically additional accepted mineral species. Identity evidence and the humidity experiment use distinct specimens and studies.
+
+### Natural material, pretreatment and humidity protocol
+
+scope: supported. Targets: cmmmech:ulexite.
+
+The record retains the actual laboratory conditions without inferring biological causality or a controlled humidity series.
+
+Kramer, California natural material from a mineral supplier was ground with acetone in an agate mortar. Approximately 50 mg portions in Pt crucibles entered a preheated furnace, held in air 1 h, then cooled to 20 C in a dry silica-gel desiccator. Separate sealed high-humidity exposure used wetted tissues at approximately 100% RH/20 C, monitored by thermo-hygrometer. Synchrotron powder diffraction and morphology supply discrete 3/7-day observations. No organism/strain/biomass, matched equal-duration low-RH comparator or reported replication is supplied; none is invented.
+
+### Discrete phase changes, mixed products and null outcome
+
+evidence: supported. Targets: cmmmech:ulexite.
+
+A limited diffraction return to ulexite is not generalized into complete reversibility of every heat treatment.
+
+Fig. 1: 120 C/1 h product shows ulexite after 3 days high RH with no reported remaining dehydrated-ulexite reflections. Fig. 2 separately uses 100 C/1 h and 7 days and is not the Fig. 1 protocol. Figs. 3-5: 180/220/500 C products initially diffraction-amorphous, then ulexite + borax; weaker 500 C peaks are not a quantitative fraction. Fig. 6: 600 C treatment retains NaCaB5O9 with ulexite after RH exposure. CaB2O4 made at 1000 C was unchanged after 7 days; probertite was not detected. No weighed 100% yield, shorter completion time or isolated boron product is asserted.
+
+### Hypothesized pathway and source inconsistencies
+
+evidence: supported. Targets: cmmmech:ulexite.
+
+Dissolution-reprecipitation and borate-unit inheritance remain interpretations with unresolved mass balance.
+
+The paper favors microscopic inheritance and dissolution-reprecipitation but humidity assays do not quantify elemental balance or water uptake. The fate of Ca when borax forms remains unresolved; p. 5 combines possible undetected Ca-rich material with a Na-release statement, so the record correctly avoids a measured balanced reaction. Ex situ 600 C/1 h is distinct from the cited 647 C event at 10 C/min, not a universal threshold. The 2026 dehydrated-ulexite structure source remains an unavailable deferred lead; no atomic coordinates from it are asserted. The Fig. 7 schematic does not prove the unmeasured mechanism.
+
+### Material form, criticality, biology and deployment
+
+scope: supported. Targets: cmmmech:ulexite.
+
+Species-level mineral evidence does not inherit commodity criticality or biological/industrial causality.
+
+Criticality is unrecorded rather than asserted absent; no jurisdiction/list/edition designation is inherited from boron or borates. These are mineral species records, distinct from an element, commodity or secondary resource. Kernite has no asserted extraction mechanism; ulexite explicitly records an abiotic humidity experiment with microbial:false. No organism, strain, consortium or biomass state is implied. Neither natural occurrence, optical properties nor furnace experiments establish isolated boron recovery or industrial deployment.
+
+### Exact current owner and independent scientific review
+
+provenance: supported. Targets: cmmmech:ulexite.
+
+Native inspect, frozen hashes and separate history preserve an auditable working-tree assessment.
+
+Trusted base e8cfa60c53e4c94c6093e23fe983cc71fb59e12f and exact owner/history/dossier/schema hashes were captured before assessment and rechecked at finalization. This reviewer authored separate phosphate records and made no borate owner/history edits. Inline curation_history and canonical CREATE sidecar are distinct. Named validation was independently executed; batch results were adopted only after the actual final receipt, log hash and unchanged input hashes were verified.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/ulexite.yaml; Complete maintained owner captured through native inspect before scientific assessment. | supports | Identity, source attribution, claim-specific scope, uncertainty and provenance checked against exact frozen bytes. |
+| history | history/records/ulexite/2026-10-15T193208Z-codex-f60534.yaml; Complete canonical CREATE session, distinct inline curation_history and history_refs. | supports | Actor/model, UTC timestamp, owner path and description agree with the frozen current creation; reviewer did not author or change this history. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September 2026 official PDF; status/year definitions p1, terms p2; exact ulexite row on PDF page 223. | supports | Visually inspected official row confirms accepted name, ideal species formula, grandfathered G status and original-description year rather than a numbered IMA approval identifier. |
+| dossier | research/sources/round101-borates/20261015T193228Z-source-investigation.md; Paired frozen source dossier JSON/Markdown, acquisitions, provisional leads and source limitations. | supports | Source identity and access, exact experimental scope, uncertainty and target/history mapping checked independently against the main originals. |
+| search | Independent bounded notice and duplicate searches; /private/tmp/cmm-round101-borates-independent-review/search-results.json; dedup.json; issue-hits.json; current J-STAGE article landing. | context_only | Returned source-notice searches and inspected primary article metadata did not identify a formal correction/retraction affecting these claims. Generic discovery mentions, the commodity/element records and separate hydrated species are not duplicate owners. This is bounded search coverage, not proof of exhaustive absence. |
+| access | /private/tmp/cmm-round101-borates-independent-review/independent-access.json; Independent HTTP access retries and current J-STAGE article metadata snapshot. | context_only | Kernite deposited-data index retries returned HTTP 406 and a refused connection; this review does not claim Tables S1-S3 were acquired. The ulexite final article landing returned HTTP 200, identifying final online release 2025-09-04 and advance release 2025-07-31 as versions of one study. |
+| counterevidence | /private/tmp/cmm-round101-borates-independent-review/counterevidence-search.json; Two supplementary scientific queries; counterevidence-open.json and counterevidence-access.json preserve the resulting source/access checks. | context_only | Queries for ulexite dehydration/rehydration, humidity, amorphous material, borax and reversibility, and for kernite hydrogen disorder/neutron diffraction returned the 2025 final study, its same-author 2024 conference precursor, older thermal studies and the 2020 kernite study. No independent contradiction of the bounded retained observations was established from these returned sets. Older thermal sources remain search leads rather than acquired full-text evidence. |
+| named | uv run --locked cmmmech validate data/records/kernite.yaml data/records/ulexite.yaml; /private/tmp/cmm-round101-borates-independent-review/named-validation.json | supports | Reviewer independently executed named validation: 2 checked, 0 failed. Structural validity alone does not prove scientific truth. |
+| batch | /private/tmp/cmm-round101-final-gates.json; Completed coordinator receipt and retained log /private/tmp/cmm-round101-final-gates.log, log SHA256 2320daf3c6b3b3f75fa6fa8a39ecda326cf050d44c1db85a09d64500ac114a93. | supports | Verified exact trusted base, all four actual terminal zero exits, retained log hash, unchanged record inputs and exact frozen owner/history/dossier/schema hashes. These whole-corpus commands were executed by the coordinator, not repeated by this reviewer. |
+| ghose | https://msaweb.org/AmMin/AM63/AM63_160.pdf; Ghose, Wan and Clark 1978, complete 12-page original, American Mineralogist 63:160-171. Natural specimen and refinement pp. 160-162, Table 1; structural discussion pp. 163-169 and Figures 1-6/Tables 2-10. All main pages and figures visually inspected. | supports | Natural Boron Mine, California crystal, triclinic P-1, isolated pentaborate groups and hydrogen-bonded sodium/calcium coordination network verified. The record does not infer microorganisms or recovery from structure or optics. |
+| yamaguchi | https://doi.org/10.2465/jmps.250417; Yamaguchi et al. 2025, final 10-page VOR, Journal of Mineralogical and Petrological Sciences 120:023. Methods p. 2; Fig. 1 p. 3; Figs. 2/3 p. 4; Figs. 4/5 p. 6; Fig. 6 and CaB2O4 null p. 7; proposed structure scheme Fig. 7 p. 8. All 10 pages and Figures 1-7 visually inspected. | supports | Distinct preparation and high-humidity conditions, diffraction changes, mixed borax/anhydrous products, negative high-temperature result, unresolved calcium fate and microscopic hypotheses independently checked. Final VOR and 29-page advance pre-proof are one study, not independent replication. |
+
+## Limits And Additional Notes
+
+- No reported replication, matched equal-duration low-humidity comparator, controlled humidity series, quantified water uptake or elemental mass balance. Diffraction sensitivity and discrete 3/7-day observations bound the phase claims.
+- The microscopic dissolution-reprecipitation and structural-unit inheritance proposals were not independently demonstrated; calcium fate during borax formation remains unresolved and source wording is internally awkward.
+- The source cited an in-press dehydrated-ulexite structural study, now bibliographically 2026, whose original remains access-limited. Its uninspected atomic coordinates are not evidence for this record.
+- The 1978 main paper was fully inspected, but its separately deposited observed/calculated structure factors were not acquired or re-refined. Identity claims do not require inventing those data.
+- Laboratory humidity-induced phase changes do not establish isolated boron recovery, industrial operation or microbial extraction. Search coverage for notices and contradictory studies remains bounded.
+- Primary PDFs acquired by the borate curator were independently read and visually inspected here; the current official IMA rows were also visually inspected. This is an independent assessment, not independent experimental replication.
+- No supported corrective findings remain at any severity. No record corrections were made by this reviewer. The verdict retains source-access, measurement and transfer limits explicitly.
+- Whole-corpus check outcomes are coordinator executions, verified only after actual completion and frozen-input checks. Run the structured review corpus checker after these bundles are persisted.
+- The same group's one-page JpGU 2024 SMP23-P04 conference precursor uses broad reversibility wording while enumerating dehydrated, amorphous and anhydrous phases. It is not an independent replication and does not displace the final 2025 main article's specific retained anhydrous phase and CaB2O4 null result. The conference abstract was parsed, but its visual screenshot/direct download was unavailable. No owner correction follows from that preliminary wording.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T194456Z-ulexite-round101-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Ulexite
+started_at: '2026-10-15T19:34:26.147695Z'
+finished_at: '2026-10-15T19:44:56.350542Z'
+reviewer:
+  identity: codex /root/round100_sulfates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: The borate-lane agent authored this owner. I curated separate
+    phosphophyllite/laueite records, independently inspected the frozen borate target
+    and primary evidence, and made no borate owner/history edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: e8cfa60c53e4c94c6093e23fe983cc71fb59e12f
+  state: working_tree
+  inputs:
+  - path: data/records/ulexite.yaml
+    sha256: 1955c662cbfd6e48816acdbc28f9432a028ffea875e42bca58d6b4e04e3f0242
+    role: target
+  - path: history/records/ulexite/2026-10-15T193208Z-codex-f60534.yaml
+    sha256: e2db14057227e9dc33017f8c4d30d8c730a7aa90a1206f30b0253015d2488ad8
+    role: context
+  - path: research/sources/round101-borates/20261015T193228Z-source-investigation.json
+    sha256: 1ec4614f074c7eeb05bc0c5018731360d192fa2e3ad4f25d9b1a3ba3969b1c89
+    role: context
+  - path: research/sources/round101-borates/20261015T193228Z-source-investigation.md
+    sha256: 4fbf867f3a2f1a6623326a9a7ec9c0ec330b38e0fc604df488429d34cd66ce18
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire frozen maintained owner and canonical CREATE history; dated
+    mineral authority; complete claim-bearing primary methods, results, figures and
+    tables; access limitations and bounded contrary-evidence searches.
+  selection: Parent-assigned independent review after author freeze.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:ulexite
+targets:
+- target_id: cmmmech:ulexite
+  path: data/records/ulexite.yaml
+  label: Ulexite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/ulexite.yaml
+    role: maintained_record
+checks:
+- check_id: science
+  name: Independent primary-evidence assessment
+  required: true
+  status: passed
+  summary: Exact owner, main originals, claim-bearing methods/results/figures/tables,
+    current authority and bounded notice searches independently inspected.
+  target_ids:
+  - cmmmech:ulexite
+  evidence_ids:
+  - owner
+  - ima
+  - search
+  - ghose
+  - yamaguchi
+- check_id: named
+  name: Independent named strict validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/kernite.yaml data/records/ulexite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Actual independent terminal result: 2 checked, 0 failed.'
+  target_ids:
+  - cmmmech:ulexite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch check 1
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator receipt and retained log verified; exact frozen
+    target, history, dossier and schema hashes unchanged.
+  target_ids:
+  - cmmmech:ulexite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch check 2
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator receipt and retained log verified; exact frozen
+    target, history, dossier and schema hashes unchanged.
+  target_ids:
+  - cmmmech:ulexite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch check 3
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base e8cfa60c53e4c94c6093e23fe983cc71fb59e12f
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator receipt and retained log verified; exact frozen
+    target, history, dossier and schema hashes unchanged.
+  target_ids:
+  - cmmmech:ulexite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch check 4
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual completed coordinator receipt and retained log verified; exact frozen
+    target, history, dossier and schema hashes unchanged.
+  target_ids:
+  - cmmmech:ulexite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/ulexite.yaml
+  locator: Complete maintained owner captured through native inspect before scientific
+    assessment.
+  accessed_at: '2026-10-15T19:44:56.350542Z'
+  support: supports
+  summary: Identity, source attribution, claim-specific scope, uncertainty and provenance
+    checked against exact frozen bytes.
+  snapshot_sha256: 1955c662cbfd6e48816acdbc28f9432a028ffea875e42bca58d6b4e04e3f0242
+- evidence_id: history
+  kind: record_content
+  reference: history/records/ulexite/2026-10-15T193208Z-codex-f60534.yaml
+  locator: Complete canonical CREATE session, distinct inline curation_history and
+    history_refs.
+  accessed_at: '2026-10-15T19:44:56.350542Z'
+  support: supports
+  summary: Actor/model, UTC timestamp, owner path and description agree with the frozen
+    current creation; reviewer did not author or change this history.
+  snapshot_sha256: e2db14057227e9dc33017f8c4d30d8c730a7aa90a1206f30b0253015d2488ad8
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 official PDF; status/year definitions p1, terms p2; exact
+    ulexite row on PDF page 223.
+  accessed_at: '2026-10-15T19:44:56.350542Z'
+  support: supports
+  summary: Visually inspected official row confirms accepted name, ideal species formula,
+    grandfathered G status and original-description year rather than a numbered IMA
+    approval identifier.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round101-borates/20261015T193228Z-source-investigation.md
+  locator: Paired frozen source dossier JSON/Markdown, acquisitions, provisional leads
+    and source limitations.
+  accessed_at: '2026-10-15T19:44:56.350542Z'
+  support: supports
+  summary: Source identity and access, exact experimental scope, uncertainty and target/history
+    mapping checked independently against the main originals.
+  snapshot_sha256: 4fbf867f3a2f1a6623326a9a7ec9c0ec330b38e0fc604df488429d34cd66ce18
+- evidence_id: search
+  kind: search
+  reference: Independent bounded notice and duplicate searches
+  locator: /private/tmp/cmm-round101-borates-independent-review/search-results.json;
+    dedup.json; issue-hits.json; current J-STAGE article landing.
+  accessed_at: '2026-10-15T19:44:56.350542Z'
+  support: context_only
+  summary: Returned source-notice searches and inspected primary article metadata
+    did not identify a formal correction/retraction affecting these claims. Generic
+    discovery mentions, the commodity/element records and separate hydrated species
+    are not duplicate owners. This is bounded search coverage, not proof of exhaustive
+    absence.
+  search_scope: 'Four queries: exact DOI 10.2465/jmps.250417 plus correction erratum
+    retraction; exact DOI 10.2138/am-2020-7433 plus correction erratum retraction;
+    kernite AM-20-97433 supplemental; ulexite Ghose 1978 correction. First returned
+    result sets, no date restriction. rg --no-ignore --hidden --follow across records/research/reviews/history,
+    borate and phosphate round101 raw roots; all-257-issue snapshot searched by name.
+    Hidden/ignored files and relevant followed symlinks included within these roots,
+    not whole-machine or exhaustive PDF-binary semantics.'
+  snapshot_sha256: f300a841e36d1a20cc92053818ff7c2dd850019a8b5aad2b475aec1b6d21e58c
+- evidence_id: access
+  kind: search
+  reference: /private/tmp/cmm-round101-borates-independent-review/independent-access.json
+  locator: Independent HTTP access retries and current J-STAGE article metadata snapshot.
+  accessed_at: '2026-10-15T19:44:56.350542Z'
+  support: context_only
+  summary: Kernite deposited-data index retries returned HTTP 406 and a refused connection;
+    this review does not claim Tables S1-S3 were acquired. The ulexite final article
+    landing returned HTTP 200, identifying final online release 2025-09-04 and advance
+    release 2025-07-31 as versions of one study.
+  search_scope: 'Three exact URL requests only: MSA September2020 deposit index at
+    msaweb.org and minsocam.org, and the final J-STAGE 120/1/120_250417 article landing.
+    This does not establish that supplementary files are globally unavailable.'
+  snapshot_sha256: baccb5dfd2cd943e479ff7c44b1a4d5978268b1b1e9645152ed69fa209477d6c
+- evidence_id: counterevidence
+  kind: search
+  reference: /private/tmp/cmm-round101-borates-independent-review/counterevidence-search.json
+  locator: Two supplementary scientific queries; counterevidence-open.json and counterevidence-access.json
+    preserve the resulting source/access checks.
+  accessed_at: '2026-10-15T19:44:56.350542Z'
+  support: context_only
+  summary: Queries for ulexite dehydration/rehydration, humidity, amorphous material,
+    borax and reversibility, and for kernite hydrogen disorder/neutron diffraction
+    returned the 2025 final study, its same-author 2024 conference precursor, older
+    thermal studies and the 2020 kernite study. No independent contradiction of the
+    bounded retained observations was established from these returned sets. Older
+    thermal sources remain search leads rather than acquired full-text evidence.
+  search_scope: First returned result sets, without date restriction. The one-page
+    2024 conference abstract was parsed in full by the web reader; screenshot and
+    direct acquisition failed. An older ScienceDirect thermal-study landing returned
+    HTTP403. Abstract/metadata-only leads do not support new quantitative owner claims.
+  snapshot_sha256: e787cb7b5d812a413904252052a1d8c2276f796f8619d783851d4be0e5ed5f63
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/kernite.yaml data/records/ulexite.yaml
+  locator: /private/tmp/cmm-round101-borates-independent-review/named-validation.json
+  accessed_at: '2026-10-15T19:44:56.350542Z'
+  support: supports
+  summary: 'Reviewer independently executed named validation: 2 checked, 0 failed.
+    Structural validity alone does not prove scientific truth.'
+  snapshot_sha256: 41ec75ec09fe972615a2c710ff2cf8b9570e2144a5aba7d08c09710c056fe46e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round101-final-gates.json
+  locator: Completed coordinator receipt and retained log /private/tmp/cmm-round101-final-gates.log,
+    log SHA256 2320daf3c6b3b3f75fa6fa8a39ecda326cf050d44c1db85a09d64500ac114a93.
+  accessed_at: '2026-10-15T19:44:56.350542Z'
+  support: supports
+  summary: Verified exact trusted base, all four actual terminal zero exits, retained
+    log hash, unchanged record inputs and exact frozen owner/history/dossier/schema
+    hashes. These whole-corpus commands were executed by the coordinator, not repeated
+    by this reviewer.
+  snapshot_sha256: 16d55c5a2ece1b9050cac9f6aae1bce7ffb49913bee965eba7ca3f8102bf2646
+- evidence_id: ghose
+  kind: primary_source
+  reference: https://msaweb.org/AmMin/AM63/AM63_160.pdf
+  locator: Ghose, Wan and Clark 1978, complete 12-page original, American Mineralogist
+    63:160-171. Natural specimen and refinement pp. 160-162, Table 1; structural discussion
+    pp. 163-169 and Figures 1-6/Tables 2-10. All main pages and figures visually inspected.
+  accessed_at: '2026-10-15T19:44:56.350542Z'
+  support: supports
+  summary: Natural Boron Mine, California crystal, triclinic P-1, isolated pentaborate
+    groups and hydrogen-bonded sodium/calcium coordination network verified. The record
+    does not infer microorganisms or recovery from structure or optics.
+  snapshot_sha256: 187748d066b28033a32c69957c8f3f9326493476165d867ba299711ade99e178
+- evidence_id: yamaguchi
+  kind: primary_source
+  reference: https://doi.org/10.2465/jmps.250417
+  locator: Yamaguchi et al. 2025, final 10-page VOR, Journal of Mineralogical and
+    Petrological Sciences 120:023. Methods p. 2; Fig. 1 p. 3; Figs. 2/3 p. 4; Figs.
+    4/5 p. 6; Fig. 6 and CaB2O4 null p. 7; proposed structure scheme Fig. 7 p. 8.
+    All 10 pages and Figures 1-7 visually inspected.
+  accessed_at: '2026-10-15T19:44:56.350542Z'
+  support: supports
+  summary: Distinct preparation and high-humidity conditions, diffraction changes,
+    mixed borax/anhydrous products, negative high-temperature result, unresolved calcium
+    fate and microscopic hypotheses independently checked. Final VOR and 29-page advance
+    pre-proof are one study, not independent replication.
+  snapshot_sha256: a129c5ec021a074f3792aa395218325994053da99b9d864af98785f00aa10afd
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Accepted species and separate thermal products
+  outcome: supported
+  summary: Ulexite species identity is separate from commodities, other borate hydrates
+    and laboratory altered material.
+  details: IMA G/1850 and NaCaB5O6(OH)6(H2O)5 agree. Ghose natural Boron Mine material
+    supports triclinic P-1 with isolated pentaborate groups and hydrogen-bonded Na/Ca
+    coordination. Heated products are assigned phases or diffraction-amorphous material
+    rather than automatically additional accepted mineral species. Identity evidence
+    and the humidity experiment use distinct specimens and studies.
+  target_ids:
+  - cmmmech:ulexite
+  evidence_ids:
+  - owner
+  - ima
+  - ghose
+  - yamaguchi
+- assessment_id: conditions
+  area: scope
+  topic: Natural material, pretreatment and humidity protocol
+  outcome: supported
+  summary: The record retains the actual laboratory conditions without inferring biological
+    causality or a controlled humidity series.
+  details: Kramer, California natural material from a mineral supplier was ground
+    with acetone in an agate mortar. Approximately 50 mg portions in Pt crucibles
+    entered a preheated furnace, held in air 1 h, then cooled to 20 C in a dry silica-gel
+    desiccator. Separate sealed high-humidity exposure used wetted tissues at approximately
+    100% RH/20 C, monitored by thermo-hygrometer. Synchrotron powder diffraction and
+    morphology supply discrete 3/7-day observations. No organism/strain/biomass, matched
+    equal-duration low-RH comparator or reported replication is supplied; none is
+    invented.
+  target_ids:
+  - cmmmech:ulexite
+  evidence_ids:
+  - owner
+  - yamaguchi
+- assessment_id: outcomes
+  area: evidence
+  topic: Discrete phase changes, mixed products and null outcome
+  outcome: supported
+  summary: A limited diffraction return to ulexite is not generalized into complete
+    reversibility of every heat treatment.
+  details: 'Fig. 1: 120 C/1 h product shows ulexite after 3 days high RH with no reported
+    remaining dehydrated-ulexite reflections. Fig. 2 separately uses 100 C/1 h and
+    7 days and is not the Fig. 1 protocol. Figs. 3-5: 180/220/500 C products initially
+    diffraction-amorphous, then ulexite + borax; weaker 500 C peaks are not a quantitative
+    fraction. Fig. 6: 600 C treatment retains NaCaB5O9 with ulexite after RH exposure.
+    CaB2O4 made at 1000 C was unchanged after 7 days; probertite was not detected.
+    No weighed 100% yield, shorter completion time or isolated boron product is asserted.'
+  target_ids:
+  - cmmmech:ulexite
+  evidence_ids:
+  - owner
+  - yamaguchi
+- assessment_id: interpretation
+  area: evidence
+  topic: Hypothesized pathway and source inconsistencies
+  outcome: supported
+  summary: Dissolution-reprecipitation and borate-unit inheritance remain interpretations
+    with unresolved mass balance.
+  details: The paper favors microscopic inheritance and dissolution-reprecipitation
+    but humidity assays do not quantify elemental balance or water uptake. The fate
+    of Ca when borax forms remains unresolved; p. 5 combines possible undetected Ca-rich
+    material with a Na-release statement, so the record correctly avoids a measured
+    balanced reaction. Ex situ 600 C/1 h is distinct from the cited 647 C event at
+    10 C/min, not a universal threshold. The 2026 dehydrated-ulexite structure source
+    remains an unavailable deferred lead; no atomic coordinates from it are asserted.
+    The Fig. 7 schematic does not prove the unmeasured mechanism.
+  target_ids:
+  - cmmmech:ulexite
+  evidence_ids:
+  - owner
+  - yamaguchi
+  - dossier
+  - counterevidence
+- assessment_id: criticality
+  area: scope
+  topic: Material form, criticality, biology and deployment
+  outcome: supported
+  summary: Species-level mineral evidence does not inherit commodity criticality or
+    biological/industrial causality.
+  details: Criticality is unrecorded rather than asserted absent; no jurisdiction/list/edition
+    designation is inherited from boron or borates. These are mineral species records,
+    distinct from an element, commodity or secondary resource. Kernite has no asserted
+    extraction mechanism; ulexite explicitly records an abiotic humidity experiment
+    with microbial:false. No organism, strain, consortium or biomass state is implied.
+    Neither natural occurrence, optical properties nor furnace experiments establish
+    isolated boron recovery or industrial deployment.
+  target_ids:
+  - cmmmech:ulexite
+  evidence_ids:
+  - owner
+  - ima
+  dimensions:
+  - name: material_form
+    value: mineral species
+    definition: Distinct from an element, commodity, separate hydrate or secondary
+      resource.
+    evidence_ids:
+    - owner
+    - ima
+  - name: criticality
+    value: not asserted
+    definition: No authority/jurisdiction/list/edition designation is attached.
+    evidence_ids:
+    - owner
+  - name: biomass
+    value: not applicable; no biological mechanism asserted
+    definition: No organism/strain or living/dead biomass participates in the curated
+      evidence.
+    evidence_ids:
+    - owner
+- assessment_id: provenance
+  area: provenance
+  topic: Exact current owner and independent scientific review
+  outcome: supported
+  summary: Native inspect, frozen hashes and separate history preserve an auditable
+    working-tree assessment.
+  details: Trusted base e8cfa60c53e4c94c6093e23fe983cc71fb59e12f and exact owner/history/dossier/schema
+    hashes were captured before assessment and rechecked at finalization. This reviewer
+    authored separate phosphate records and made no borate owner/history edits. Inline
+    curation_history and canonical CREATE sidecar are distinct. Named validation was
+    independently executed; batch results were adopted only after the actual final
+    receipt, log hash and unchanged input hashes were verified.
+  target_ids:
+  - cmmmech:ulexite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - named
+  - batch
+findings: []
+actions: []
+notes:
+- Primary PDFs acquired by the borate curator were independently read and visually
+  inspected here; the current official IMA rows were also visually inspected. This
+  is an independent assessment, not independent experimental replication.
+- No supported corrective findings remain at any severity. No record corrections were
+  made by this reviewer. The verdict retains source-access, measurement and transfer
+  limits explicitly.
+- Whole-corpus check outcomes are coordinator executions, verified only after actual
+  completion and frozen-input checks. Run the structured review corpus checker after
+  these bundles are persisted.
+- The same group's one-page JpGU 2024 SMP23-P04 conference precursor uses broad reversibility
+  wording while enumerating dehydrated, amorphous and anhydrous phases. It is not
+  an independent replication and does not displace the final 2025 main article's specific
+  retained anhydrous phase and CaB2O4 null result. The conference abstract was parsed,
+  but its visual screenshot/direct download was unavailable. No owner correction follows
+  from that preliminary wording.
+summary: Accepted ulexite identity and bounded abiotic rehydration observations are
+  supported; distinct heat treatments, mixed phases, a high-temperature null result,
+  source inconsistencies and mechanistic uncertainty remain explicit.
+limitations:
+- No reported replication, matched equal-duration low-humidity comparator, controlled
+  humidity series, quantified water uptake or elemental mass balance. Diffraction
+  sensitivity and discrete 3/7-day observations bound the phase claims.
+- The microscopic dissolution-reprecipitation and structural-unit inheritance proposals
+  were not independently demonstrated; calcium fate during borax formation remains
+  unresolved and source wording is internally awkward.
+- The source cited an in-press dehydrated-ulexite structural study, now bibliographically
+  2026, whose original remains access-limited. Its uninspected atomic coordinates
+  are not evidence for this record.
+- The 1978 main paper was fully inspected, but its separately deposited observed/calculated
+  structure factors were not acquired or re-refined. Identity claims do not require
+  inventing those data.
+- Laboratory humidity-induced phase changes do not establish isolated boron recovery,
+  industrial operation or microbial extraction. Search coverage for notices and contradictory
+  studies remains bounded.
+```

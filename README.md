@@ -8,13 +8,20 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 487 material records.
+The catalogue currently contains 494 material records.
 
-The [latest curation report](research/ingests/round100-frontier-20261015.md) links
+The [latest curation report](research/ingests/round101-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Acid mine drainage](data/records/acid-mine-drainage.yaml) | Biogenic-gas precipitation and enriched-community treatment of separate real waters | Missing balances and numerical controls; concentration changes are not recovery yields |
+| [Kernite](data/records/kernite.yaml) | Natural-crystal identity, chemistry and hydrogen disorder | Specimen-specific assays, censored trace elements and incomplete supplemental access |
+| [Laueite](data/records/laueite.yaml) | Natural-crystal identity and epitaxy | Competing valence interpretation, measured versus refined composition and deposited quality alerts |
+| [Montroseite](data/records/montroseite.yaml) | Natural-crystal identity and inferred weathering | Altered intergrowths and historical correction; no controlled conversion experiment |
+| [Paramontroseite](data/records/paramontroseite.yaml) | Natural identity and abiotic oxidative heating | Fe-rich mixed feed, protocol dependence and conflicting product fractions |
+| [Phosphophyllite](data/records/phosphophyllite.yaml) | Natural-crystal structure and composition variability | Locality-specific substitution and unavailable individual analyses |
+| [Ulexite](data/records/ulexite.yaml) | Abiotic humidity-driven rehydration after heating | Mixed and unreversed products, unresolved calcium fate and unmeasured recovery |
 | [Cavansite](data/records/cavansite.yaml) | Natural-crystal thermal dehydration | Refined water occupancy, disputed hydrogen assignments and protocol dependence |
 | [Kornelite](data/records/kornelite.yaml) | Abiotic synthesis and provisional culture-associated phase labels | Variable hydration, mixed patterns and no matched sterile mineralogical control |
 | [Petroleum oily sludge](data/records/petroleum-oily-sludge.yaml) | Qualified culture-associated residual metal concentration changes | Unresolved sampled fraction, conflicting recipes and missing metal mass balance |

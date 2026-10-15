@@ -1,0 +1,467 @@
+# Independent scientific review of Phosphophyllite
+
+- Review: 20261015T194350Z-phosphophyllite-round101-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T19:34:09.528671Z
+- Finished UTC: 2026-10-15T19:43:50.174479Z
+- Reviewer: codex /root/round100_vanadium (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Distinct natural phosphophyllite identity and qualified specimen composition variability are supported by primary structure and analytical studies.
+
+## Scope And Provenance
+
+Entire frozen maintained record, canonical CREATE and inline provenance, dated identities, complete accessible claim-bearing original methods/results, relevant figures/tables/supplements, source dossier and bounded correction/counterevidence/duplicate searches.
+
+Selection: Parent-assigned independent review after author freeze.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base e8cfa60c53e4c94c6093e23fe983cc71fb59e12f.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:phosphophyllite | data/records/phosphophyllite.yaml | maintained | Phosphophyllite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent primary-evidence assessment | passed | True | cmmmech:phosphophyllite | Exact owner, complete accessible claim-bearing primary evidence and deposited supplements assessed; source limitations preserved below. |
+| Independent named record validation | passed | True | cmmmech:phosphophyllite | Checked 3 records; 0 failed. This target was one of those three frozen owners. |
+| Completed coordinator batch check 1 | passed | True | cmmmech:phosphophyllite | Verified actual terminal receipt, exact base, log hash and unchanged reviewed owner; not an independently rerun suite. |
+| Completed coordinator batch check 2 | passed | True | cmmmech:phosphophyllite | Verified actual terminal receipt, exact base, log hash and unchanged reviewed owner; not an independently rerun suite. |
+| Completed coordinator batch check 3 | passed | True | cmmmech:phosphophyllite | Verified actual terminal receipt, exact base, log hash and unchanged reviewed owner; not an independently rerun suite. |
+| Completed coordinator batch check 4 | passed | True | cmmmech:phosphophyllite | Verified actual terminal receipt, exact base, log hash and unchanged reviewed owner; not an independently rerun suite. |
+
+## Scientific And Domain Assessments
+
+### Species identity and authority
+
+identity: supported. Targets: cmmmech:phosphophyllite.
+
+Phosphophyllite is correctly distinct from zinc and related phosphate minerals.
+
+Current IMA G status and ideal Zn2Fe(II)(PO4)2(H2O)4 formula agree with the owner. Historical year 1920 is not treated as a numbered IMA approval. Hopeite/parahopeite are related identities, not synonyms.
+
+### Specimen and structural support
+
+evidence: supported. Targets: cmmmech:phosphophyllite.
+
+Natural Potosi crystal refinement supports the bounded structure claim.
+
+Hill1977 uses measured three-dimensional X-ray intensities and resolves earlier structural ambiguity in P21/c. Zn/P tetrahedral sheets linked through Fe-bearing octahedra are supported; the record does not generalize this crystal to bulk resources or other localities. AM-77-046 supplies associated structure factors, not a second experiment.
+
+### Composition and ratio interpretation
+
+quantity: supported. Targets: cmmmech:phosphophyllite.
+
+Mn variability remains specimen-specific and the reported ratio remains a weight ratio.
+
+Dunn/Norberg analyzed fourteen specimens partially: eleven Hagendorf and three Potosi. Their 51:49 Mn:Fe weight ratio is explicitly insufficient, with analytical uncertainty, for a distinct Mn-dominant species. It is not a refined occupancy or atomic ratio. The unpublished per-specimen table was not acquired; water was determined on only one Potosi specimen.
+
+### Mechanism, criticality and deployment
+
+scope: supported. Targets: cmmmech:phosphophyllite.
+
+Identity-only curation is appropriate.
+
+Natural diffraction and microprobe studies establish no microbial extraction, treatment yield or industrial deployment. No constituent criticality is imported; no jurisdiction/list/edition is asserted. Laboratory structure analysis is not a recovery experiment.
+
+### Exact working revision and curation history
+
+provenance: supported. Targets: cmmmech:phosphophyllite.
+
+Working changes, independent review and execution provenance are explicit.
+
+Native inspect preceded scientific judgment; owner/history/schema/dossier hashes were rechecked at final drafting. Canonical CREATE and inline history are distinct. Named validation was independently executed; coordinator whole-corpus gates were included only after actual terminal receipt and trusted base verification.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/phosphophyllite.yaml; Entire exact frozen owner captured by native inspect before scientific judgment; hash verified before drafting. | supports | Identity, evidence scope, source references and limitations agree with the assessed primary evidence. |
+| history | history/records/phosphophyllite/2026-10-15T193208Z-codex-e41697.yaml; Complete canonical CREATE, distinct inline event and linked history_refs. | supports | Actual GPT-6 curator metadata, target and described additions agree; no invented earlier authorship. |
+| dossier | research/sources/round101-phosphates/20261015T193202Z-source-investigation.md; Paired source-investigation JSON/Markdown; original acquisition, reuse and access bounds. | supports | Source acquisition and prior-study reuse are transparent. The dossier is provenance and curator interpretation, not independent scientific replication. |
+| named | uv run --locked cmmmech validate data/records/acid-mine-drainage.yaml data/records/phosphophyllite.yaml data/records/laueite.yaml; /private/tmp/cmm-round101-independent-reviews/named-validation.log | supports | Independently executed validation of these three frozen owners: 3 records checked; 0 failed. |
+| search | Independent bounded correction/retraction and duplicate searches; /private/tmp/cmm-round101-independent-reviews/search-observations.json; /private/tmp/cmm-round101-independent-reviews/dedup.json | context_only | No affecting formal notice surfaced in the bounded returned sets. Related studies are follow-up leads; source conflicts retained rather than silently harmonized. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September 2026 issuing-authority list, status definitions pages 1-2 and phosphophyllite row PDF page 172; row visually checked. | supports | Grandfathered species Zn2Fe2+(PO4)2(H2O)4, historical year 1920. This is an ideal species formula and a G status, not a numbered modern approval or a specimen assay. |
+| hill | https://msaweb.org/AmMin/AM62/AM62_812.pdf; Complete six-page Hill1977 original, pp812-817, Tables2-4 and Figure1; complete rendered contact sheet visually inspected. | supports | One Potosi crystal and three-dimensional X-ray refinement support monoclinic P21/c and linkage through Fe-bearing octahedra. Earlier competing models and hydrogen-coordinate limits are explicit. |
+| deposit | https://msaweb.org/MSA/AmMin/Supplemental_Data/Vol%2062%20p0812%20AM-77-046.pdf; Twelve-page original archive, title PDF p9 and structure-factor tables pp10-11 visually inspected. | supports | The deposit belongs to the same Hill study; it does not constitute an independent replicate. No structure re-refinement performed. |
+| dunn | https://msaweb.org/AmMin/AM62/AM62_818.pdf; Complete one-page original, p818, visually and textually inspected. | supports | Eleven Hagendorf and three Potosi partial analyses, one water determination and source-qualified 51:49 Mn:Fe weight ratio agree. Unpublished individual analyses were not supplied in the note. |
+| batch | /private/tmp/cmm-round101-final-gates.json; Completed coordinator receipt; /private/tmp/cmm-round101-final-gates.log SHA256 2320daf3c6b3b3f75fa6fa8a39ecda326cf050d44c1db85a09d64500ac114a93 | supports | Four terminal zero exits, unchanged reviewed owners and matching log hash verified. Suite execution belongs to coordinator; native review save/check occurs afterward. |
+
+## Limits And Additional Notes
+
+- The individual fourteen-specimen analytical table was not published in the inspected note or acquired; reported partial analyses cannot be expanded into a complete specimen-level dataset.
+- The structural result is from one Potosi natural crystal, not a universal composition for all phosphophyllite localities.
+- The 51:49 Mn:Fe value is a source weight ratio with analytical uncertainty, not proof of a separate Mn-dominant species.
+- No diffraction re-refinement, independent chemical assay or microbial/recovery study is claimed.
+- Native capture and preliminary independent assessment began at the recorded start; final drafting and artifact hashes are actual. No owner corrections were supported or made.
+- Primary artifacts were acquired by the phosphate author and independently inspected here, including the issuing-authority list and primary originals/deposits. No independent experimental replication or crystallographic re-refinement is claimed.
+- The saved review does not claim independent experimental replication, exhaustive literature absence or native-review checks performed before persistence. Whole-corpus checks are coordinator executions verified from actual completed receipts.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261015T194350Z-phosphophyllite-round101-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Phosphophyllite
+started_at: '2026-10-15T19:34:09.528671Z'
+finished_at: '2026-10-15T19:43:50.174479Z'
+reviewer:
+  identity: codex /root/round100_vanadium
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: A different curation agent authored this phosphate owner. I
+    authored only the separate montroseite/paramontroseite lane and independently
+    inspected this frozen owner and sources without editing them.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Distinct natural phosphophyllite identity and qualified specimen composition
+  variability are supported by primary structure and analytical studies.
+source:
+  git_revision: e8cfa60c53e4c94c6093e23fe983cc71fb59e12f
+  state: working_tree
+  inputs:
+  - path: data/records/phosphophyllite.yaml
+    sha256: 81e2d02433dd326360bd1d72386be47d242e78383f1a0be02e1476da44c20be2
+    role: target
+  - path: history/records/phosphophyllite/2026-10-15T193208Z-codex-e41697.yaml
+    sha256: 23d7e9f9f5717d642146a38b3b5a2220e6ce1532c12d298de16c581975ac6ff2
+    role: context
+  - path: research/sources/round101-phosphates/20261015T193202Z-source-investigation.json
+    sha256: 07112b8dcfba5c8b89c27db6cd5947478a95e8b65dddfe3be23a6f9cad1ec59e
+    role: context
+  - path: research/sources/round101-phosphates/20261015T193202Z-source-investigation.md
+    sha256: 01231ed8703b38fb0f84f323a35e6002e09543c030b53e561ddc6bdaf3925790
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire frozen maintained record, canonical CREATE and inline provenance,
+    dated identities, complete accessible claim-bearing original methods/results,
+    relevant figures/tables/supplements, source dossier and bounded correction/counterevidence/duplicate
+    searches.
+  selection: Parent-assigned independent review after author freeze.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:phosphophyllite
+targets:
+- target_id: cmmmech:phosphophyllite
+  path: data/records/phosphophyllite.yaml
+  label: Phosphophyllite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/phosphophyllite.yaml
+    role: maintained_record
+checks:
+- check_id: science
+  name: Independent primary-evidence assessment
+  required: true
+  status: passed
+  summary: Exact owner, complete accessible claim-bearing primary evidence and deposited
+    supplements assessed; source limitations preserved below.
+  target_ids:
+  - cmmmech:phosphophyllite
+  evidence_ids:
+  - owner
+  - history
+  - search
+- check_id: named
+  name: Independent named record validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/acid-mine-drainage.yaml data/records/phosphophyllite.yaml
+    data/records/laueite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 3 records; 0 failed. This target was one of those three frozen
+    owners.
+  target_ids:
+  - cmmmech:phosphophyllite
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Completed coordinator batch check 1
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual terminal receipt, exact base, log hash and unchanged reviewed
+    owner; not an independently rerun suite.
+  target_ids:
+  - cmmmech:phosphophyllite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch check 2
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual terminal receipt, exact base, log hash and unchanged reviewed
+    owner; not an independently rerun suite.
+  target_ids:
+  - cmmmech:phosphophyllite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch check 3
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base e8cfa60c53e4c94c6093e23fe983cc71fb59e12f
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual terminal receipt, exact base, log hash and unchanged reviewed
+    owner; not an independently rerun suite.
+  target_ids:
+  - cmmmech:phosphophyllite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed coordinator batch check 4
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Verified actual terminal receipt, exact base, log hash and unchanged reviewed
+    owner; not an independently rerun suite.
+  target_ids:
+  - cmmmech:phosphophyllite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/phosphophyllite.yaml
+  locator: Entire exact frozen owner captured by native inspect before scientific
+    judgment; hash verified before drafting.
+  accessed_at: '2026-10-15T19:43:50.174479Z'
+  support: supports
+  summary: Identity, evidence scope, source references and limitations agree with
+    the assessed primary evidence.
+  snapshot_sha256: 81e2d02433dd326360bd1d72386be47d242e78383f1a0be02e1476da44c20be2
+- evidence_id: history
+  kind: record_content
+  reference: history/records/phosphophyllite/2026-10-15T193208Z-codex-e41697.yaml
+  locator: Complete canonical CREATE, distinct inline event and linked history_refs.
+  accessed_at: '2026-10-15T19:43:50.174479Z'
+  support: supports
+  summary: Actual GPT-6 curator metadata, target and described additions agree; no
+    invented earlier authorship.
+  snapshot_sha256: 23d7e9f9f5717d642146a38b3b5a2220e6ce1532c12d298de16c581975ac6ff2
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round101-phosphates/20261015T193202Z-source-investigation.md
+  locator: Paired source-investigation JSON/Markdown; original acquisition, reuse
+    and access bounds.
+  accessed_at: '2026-10-15T19:43:50.174479Z'
+  support: supports
+  summary: Source acquisition and prior-study reuse are transparent. The dossier is
+    provenance and curator interpretation, not independent scientific replication.
+  snapshot_sha256: 01231ed8703b38fb0f84f323a35e6002e09543c030b53e561ddc6bdaf3925790
+- evidence_id: named
+  kind: validation
+  reference: uv run --locked cmmmech validate data/records/acid-mine-drainage.yaml
+    data/records/phosphophyllite.yaml data/records/laueite.yaml
+  locator: /private/tmp/cmm-round101-independent-reviews/named-validation.log
+  accessed_at: '2026-10-15T19:43:50.174479Z'
+  support: supports
+  summary: 'Independently executed validation of these three frozen owners: 3 records
+    checked; 0 failed.'
+  snapshot_sha256: 10c82c02ccbb2c9d0b1dd25497ab97be593452ac7d5d9b18fe4b18777cbf7058
+- evidence_id: search
+  kind: search
+  reference: Independent bounded correction/retraction and duplicate searches
+  locator: /private/tmp/cmm-round101-independent-reviews/search-observations.json;
+    /private/tmp/cmm-round101-independent-reviews/dedup.json
+  accessed_at: '2026-10-15T19:43:50.174479Z'
+  support: context_only
+  summary: No affecting formal notice surfaced in the bounded returned sets. Related
+    studies are follow-up leads; source conflicts retained rather than silently harmonized.
+  snapshot_sha256: e87f8ea7b66acbe97656812062d2ffb2bf10727c10646e1c07236672b27bc85d
+  search_scope: Exact queries retained; first returned sets, no exhaustive pagination.
+    rg --no-ignore --hidden --follow covered explicit maintained data/research/reviews/history/docs,
+    relevant raw directories and 257 all-state issue title/body snapshot. No machine-wide
+    or issue-comment-wide absence claim.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 issuing-authority list, status definitions pages 1-2 and
+    phosphophyllite row PDF page 172; row visually checked.
+  accessed_at: '2026-10-15T19:43:50.174479Z'
+  support: supports
+  summary: Grandfathered species Zn2Fe2+(PO4)2(H2O)4, historical year 1920. This is
+    an ideal species formula and a G status, not a numbered modern approval or a specimen
+    assay.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: hill
+  kind: primary_source
+  reference: https://msaweb.org/AmMin/AM62/AM62_812.pdf
+  locator: Complete six-page Hill1977 original, pp812-817, Tables2-4 and Figure1;
+    complete rendered contact sheet visually inspected.
+  accessed_at: '2026-10-15T19:43:50.174479Z'
+  support: supports
+  summary: One Potosi crystal and three-dimensional X-ray refinement support monoclinic
+    P21/c and linkage through Fe-bearing octahedra. Earlier competing models and hydrogen-coordinate
+    limits are explicit.
+  snapshot_sha256: 7780b73fdadbdfbd62dec71505ce539a9dd1a3a9629ffde5a876792ccb0fbb00
+- evidence_id: deposit
+  kind: primary_source
+  reference: https://msaweb.org/MSA/AmMin/Supplemental_Data/Vol%2062%20p0812%20AM-77-046.pdf
+  locator: Twelve-page original archive, title PDF p9 and structure-factor tables
+    pp10-11 visually inspected.
+  accessed_at: '2026-10-15T19:43:50.174479Z'
+  support: supports
+  summary: The deposit belongs to the same Hill study; it does not constitute an independent
+    replicate. No structure re-refinement performed.
+  snapshot_sha256: 1965bfc8dc2d639465ddfbf9d5886bde6525bba187be21bec78362dae2b995bc
+- evidence_id: dunn
+  kind: primary_source
+  reference: https://msaweb.org/AmMin/AM62/AM62_818.pdf
+  locator: Complete one-page original, p818, visually and textually inspected.
+  accessed_at: '2026-10-15T19:43:50.174479Z'
+  support: supports
+  summary: Eleven Hagendorf and three Potosi partial analyses, one water determination
+    and source-qualified 51:49 Mn:Fe weight ratio agree. Unpublished individual analyses
+    were not supplied in the note.
+  snapshot_sha256: 886190ba8fdaf99b234b1a8382b3690320c23edfedf87ecb06d72386788bc7f1
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round101-final-gates.json
+  locator: Completed coordinator receipt; /private/tmp/cmm-round101-final-gates.log
+    SHA256 2320daf3c6b3b3f75fa6fa8a39ecda326cf050d44c1db85a09d64500ac114a93
+  accessed_at: '2026-10-15T19:43:50.174479Z'
+  support: supports
+  summary: Four terminal zero exits, unchanged reviewed owners and matching log hash
+    verified. Suite execution belongs to coordinator; native review save/check occurs
+    afterward.
+  snapshot_sha256: 16d55c5a2ece1b9050cac9f6aae1bce7ffb49913bee965eba7ca3f8102bf2646
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species identity and authority
+  outcome: supported
+  summary: Phosphophyllite is correctly distinct from zinc and related phosphate minerals.
+  details: Current IMA G status and ideal Zn2Fe(II)(PO4)2(H2O)4 formula agree with
+    the owner. Historical year 1920 is not treated as a numbered IMA approval. Hopeite/parahopeite
+    are related identities, not synonyms.
+  target_ids:
+  - cmmmech:phosphophyllite
+  evidence_ids:
+  - owner
+  - ima
+  - hill
+- assessment_id: structure
+  area: evidence
+  topic: Specimen and structural support
+  outcome: supported
+  summary: Natural Potosi crystal refinement supports the bounded structure claim.
+  details: Hill1977 uses measured three-dimensional X-ray intensities and resolves
+    earlier structural ambiguity in P21/c. Zn/P tetrahedral sheets linked through
+    Fe-bearing octahedra are supported; the record does not generalize this crystal
+    to bulk resources or other localities. AM-77-046 supplies associated structure
+    factors, not a second experiment.
+  target_ids:
+  - cmmmech:phosphophyllite
+  evidence_ids:
+  - owner
+  - hill
+  - deposit
+- assessment_id: composition
+  area: quantity
+  topic: Composition and ratio interpretation
+  outcome: supported
+  summary: Mn variability remains specimen-specific and the reported ratio remains
+    a weight ratio.
+  details: 'Dunn/Norberg analyzed fourteen specimens partially: eleven Hagendorf and
+    three Potosi. Their 51:49 Mn:Fe weight ratio is explicitly insufficient, with
+    analytical uncertainty, for a distinct Mn-dominant species. It is not a refined
+    occupancy or atomic ratio. The unpublished per-specimen table was not acquired;
+    water was determined on only one Potosi specimen.'
+  target_ids:
+  - cmmmech:phosphophyllite
+  evidence_ids:
+  - owner
+  - dunn
+- assessment_id: scope
+  area: scope
+  topic: Mechanism, criticality and deployment
+  outcome: supported
+  summary: Identity-only curation is appropriate.
+  details: Natural diffraction and microprobe studies establish no microbial extraction,
+    treatment yield or industrial deployment. No constituent criticality is imported;
+    no jurisdiction/list/edition is asserted. Laboratory structure analysis is not
+    a recovery experiment.
+  target_ids:
+  - cmmmech:phosphophyllite
+  evidence_ids:
+  - owner
+  - hill
+  - dunn
+- assessment_id: provenance
+  area: provenance
+  topic: Exact working revision and curation history
+  outcome: supported
+  summary: Working changes, independent review and execution provenance are explicit.
+  details: Native inspect preceded scientific judgment; owner/history/schema/dossier
+    hashes were rechecked at final drafting. Canonical CREATE and inline history are
+    distinct. Named validation was independently executed; coordinator whole-corpus
+    gates were included only after actual terminal receipt and trusted base verification.
+  target_ids:
+  - cmmmech:phosphophyllite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- The individual fourteen-specimen analytical table was not published in the inspected
+  note or acquired; reported partial analyses cannot be expanded into a complete specimen-level
+  dataset.
+- The structural result is from one Potosi natural crystal, not a universal composition
+  for all phosphophyllite localities.
+- The 51:49 Mn:Fe value is a source weight ratio with analytical uncertainty, not
+  proof of a separate Mn-dominant species.
+- No diffraction re-refinement, independent chemical assay or microbial/recovery study
+  is claimed.
+notes:
+- Native capture and preliminary independent assessment began at the recorded start;
+  final drafting and artifact hashes are actual. No owner corrections were supported
+  or made.
+- Primary artifacts were acquired by the phosphate author and independently inspected
+  here, including the issuing-authority list and primary originals/deposits. No independent
+  experimental replication or crystallographic re-refinement is claimed.
+- The saved review does not claim independent experimental replication, exhaustive
+  literature absence or native-review checks performed before persistence. Whole-corpus
+  checks are coordinator executions verified from actual completed receipts.
+```
