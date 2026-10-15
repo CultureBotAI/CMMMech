@@ -1,0 +1,89 @@
+id: cmmmech:zeunerite
+name: Zeunerite
+material_kind: mineral
+description: Zeunerite is the copper uranyl arsenate mineral Cu(UO2)2(AsO4)2(H2O)4·8H2O in the September
+  2026 IMA list, with grandfathered status G. The year 1872 denotes its original description, not a numbered
+  IMA approval. Its ideal twelve-water composition is distinct from eight-water metazeunerite, phosphate
+  torbernite, calcium meta-autunite and elemental uranium, copper or arsenic. Synthetic-crystal X-ray
+  diffraction and a later partially deuterated synthetic-powder neutron study support P4/nnc models under
+  their respective conditions. Hydrogen positions and disorder are model-dependent; these experiments
+  do not establish natural-specimen homogeneity, long-term containment, a universal dehydration threshold
+  or an extraction yield. No criticality or microbial activity is inferred from composition.
+sources:
+- id: ima_2026_09
+  title: 'IMA-CNMNC. The New IMA List of Minerals, September 2026. Zeunerite row, PDF page 240: Cu(UO2)2(AsO4)2(H2O)4·8H2O,
+    G, 1872; definitions on page 1. Current authority PDF acquired and row visually checked.'
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-15'
+- id: locock2003
+  title: 'Locock AJ and Burns PC (2003). Crystal structures and synthesis of the copper-dominant members
+    of the autunite and meta-autunite groups: torbernite, zeunerite, metatorbernite and metazeunerite.
+    Canadian Mineralogist 41:489-502. DOI 10.2113/gscanmin.41.2.489. Complete 14-page original rechecked,
+    especially pages 490-492, 497-499 and Tables 1, 3, 7 and 11. Figures 1-4 illustrate the phosphate
+    analogues, not additional zeunerite experiments. CISTI reflection deposit remains unacquired.'
+  url: https://www.rruff.net/doclib/cm/vol41/CM41_489.pdf
+  accessed_on: '2026-10-15'
+- id: maciver_jones_thesis
+  title: MacIver-Jones F. The Structure, Stability, and Synthesis of Copper Autunite Minerals with Implications
+    for Uranium Remediation. PhD thesis, University of Edinburgh. Institutional item 1842/40395, DOI 10.7488/era/3163,
+    issued 2023-03-13 as MacIver-JonesF_2023.pdf; title page says 2021. Complete 272-page deposited PDF
+    acquired; Chapters 2-3 (printed pages 61-107), including Figures 3.1-3.14, Tables 3.1-3.12 and Appendices
+    3.1-3.3 inspected. Zeunerite neutron results are thesis evidence; the linked 2021 IUCrJ paper and
+    AIRSS calculations concern metatorbernite.
+  url: https://era.ed.ac.uk/handle/1842/40395
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: abiotic_crystallization
+  name: Abiotic laboratory crystallization of a synthetic zeunerite analogue
+  process: other
+  microbial: false
+  description: Copper, uranyl and arsenate reagents produced crystals or powder assigned to zeunerite
+    by diffraction. Slow gel growth and solution precipitation are separate laboratory preparations; neither
+    is a microbial process or a demonstrated industrial recovery operation.
+  context: Locock and Burns grew zeunerite at room temperature over three weeks by slow diffusion of reported
+    0.167 M H5As3O10 and 0.5 M uranyl-nitrate solutions into copper-bearing silica gel. A crystal was
+    epoxy-coated to limit dehydration before room-temperature MoK-alpha single-crystal diffraction. Separately,
+    MacIver-Jones precipitated material from uranyl nitrate in 0.2 M nitric acid, copper nitrate and arsenic
+    acid, matured it for 48 h, filtered and washed it, and dried it at room temperature. Subsequent repeated
+    reflux in D2O at 75 degrees C prepared the neutron sample; residual H was detected by FTIR. The zeunerite
+    refinement used data collected at 50 degrees C, not an untreated natural crystal. Neither preparation
+    supplies a mass-balanced metal recovery yield.
+  evidence:
+  - source_ref: locock2003
+    supports: support
+    explanation: Pages 490-492 and Tables 1, 3 and 7 support synthetic twelve-water zeunerite in P4/nnc.
+      The refined cell is a = 7.1797(3) and c = 20.857(1) angstrom, with R1 = 1.6% for 468 observed unique
+      reflections. Page 498 identifies pseudo-I-centering and argues that observed reflections require
+      P-centering, disagreeing with the earlier Hennig et al. I4/mmm model. This is the authors' interpretation
+      of their dataset, not an independent re-refinement here.
+  - source_ref: locock2003
+    supports: partial
+    explanation: Hydrogen positions were refined with O-H distance constraints and fixed isotropic displacement
+      parameters. Page 497 presumes equivalence to natural zeunerite from compatible cell dimensions;
+      natural material was not the measured crystal. The hydrothermal 220-degree-C synthesis and twinning
+      refinements belong to metazeunerite and are not zeunerite results. The inaccessible Hennig full
+      text and CISTI reflection deposit limit independent adjudication of the competing model.
+  - source_ref: maciver_jones_thesis
+    supports: support
+    explanation: Printed pages 61-65 and 77-82, Figures 3.1-3.3 and Tables 3.1-3.4 support preparation
+      and a P4/nnc neutron model of partially deuterated zeunerite at 50 degrees C, with twelve water
+      molecules per formula unit. Figures 3.8-3.9 and pages 93-97 propose a split H/D site and hydrogen-bond
+      network. The model used soft bond restraints and constrained displacement parameters; AIRSS verification
+      was performed only for metatorbernite.
+  - source_ref: maciver_jones_thesis
+    supports: partial
+    explanation: The source calls the sample container stainless steel in Chapter 2 but vanadium in Chapter
+      3. Copper occupancy uncertainty is 1.00(2) in prose versus 1.00(3) in Table 3.1; water-angle uncertainties
+      also differ between prose and Table 3.3. Appendix 3.2 repeats a zeunerite caption despite phosphorus-labelled
+      spectra, so it is not used as a zeunerite assay. The proposed hydrogen-bond explanation for greater
+      stability than torbernite remains a hypothesis, with neutron analysis of torbernite requested as
+      future work. Raw neutron runs were not reanalysed. No quantitative solubility, microbial mechanism
+      or long-term field performance is established by this scoped structural evidence.
+curation_history:
+- timestamp: '2026-10-15T23:02:38.475765Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Added current-IMA zeunerite identity and separate abiotic synthetic preparations, with deposited-thesis
+    neutron evidence, competing models and explicit version, assay, refinement and access limitations.
+history_refs:
+- history/records/zeunerite/2026-10-15T230242Z-codex-013ae0.yaml

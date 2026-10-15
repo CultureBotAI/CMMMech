@@ -1,0 +1,123 @@
+{
+  "recorded_at": "2026-10-15T23:10:07.812812+00:00",
+  "reviewer": {
+    "identity": "codex /root/round104_uranium",
+    "model": "GPT-6",
+    "independence": "independent",
+    "basis": "Different agent from helper adapter/coordinator /root; read-only inspection and inert AST probes only."
+  },
+  "reviewed_revision": "ee4ea8c2efa351a688946660c9ddc70560c3e86e",
+  "state": "working_tree_and_temporary_helpers",
+  "scope": "Eight temporary publication helpers plus helper config and retained round104-to-round105 adaptation diffs. Exact hashes are captured below. Original main is read-only during review.",
+  "helper_hashes": {
+    "/private/tmp/cmm-round105-commit.py": "9e8be149450b57a88266899aa25e2c06d655c948f5975d2c25ceea1950428f63",
+    "/private/tmp/cmm-round105-push-pr.py": "fb48de55bcacdbe2737f0c9610c74bab8c59ab28f74307cda9cb63d900c9d182",
+    "/private/tmp/cmm-round105-queue.py": "cb82f239f5f9baabd03c94bf79a12d95936b71dd23f7978827556bea26e482b1",
+    "/private/tmp/cmm-round105-cleanup.py": "bc4106fae42c81af38a94b14d2b3ae23c26178d61c14861ab0f2e7a44a9b48d2",
+    "/private/tmp/cmm-round105-finalize.py": "5aa0bdcbc7380fd14b0872b1c0abacb4285f835324179810b73c8b1a4145e55b",
+    "/private/tmp/cmm-round105-publication-guards.py": "8e43ad95dff9238e2d30c21ae5be45ea4182bc8e5d557c255500535acbdf28e9",
+    "/private/tmp/cmm-round105-isolated-verification.py": "6fd45e79f046d09983628f74ee018642b2d9ac5a3fb8af305096b74bf4366494",
+    "/private/tmp/cmm-round105-isolated-coverage.py": "c55b6a821cea71931cd977823f0c5c8304e46cff3d0e01ff490be13f494e7bb7",
+    "/private/tmp/cmm-round105-helper-config.json": "897d5d6ef43df93687e674ed3c8d106f457d028c5f85679d76ddd2ba84cc765b"
+  },
+  "findings": [
+    {
+      "finding_id": "PUB105-1",
+      "severity": "minor",
+      "status": "open",
+      "title": "Finalization accepts incomplete postmerge validation evidence",
+      "owner_paths": [
+        "/private/tmp/cmm-round105-finalize.py",
+        "/private/tmp/cmm-round105-publication-guards.py"
+      ],
+      "evidence": {
+        "name": "finalize_accepts_incomplete_postmerge_evidence",
+        "accepted": true,
+        "method": "Execute exact AST prefix through hosted-assessment checks; stop before preservation inspection or any Git command.",
+        "inputs": {
+          "commands": [],
+          "coverage_passed": false,
+          "config_sha256": "wrong",
+          "helper_sha256": "wrong"
+        },
+        "implication": "The checked prefix would allow progression to main-preservation/fetch/fast-forward operations despite incomplete postmerge gate evidence. No external or repository mutation was executed."
+      },
+      "required_correction": "Before any main fetch or fast-forward, require exact postmerge mode/base/topic/tree/merge binding, a complete required successful validation command set, successful coverage and measured counts, and current config/helper digests matching the commit receipt and postmerge receipt. Retain existing log and coverage digest verification.",
+      "acceptance_checks": [
+        "A valid postmerge receipt is accepted.",
+        "An empty command set and each missing required validation/coverage command are rejected.",
+        "A nonzero required gate, failed coverage or changed counts is rejected.",
+        "Changed current or receipt config/verification/coverage/guard digests are rejected.",
+        "All evidence checks precede the first main mutation."
+      ]
+    },
+    {
+      "finding_id": "PUB105-2",
+      "severity": "minor",
+      "status": "open",
+      "title": "Cleanup deletion does not verify the Git remote repository",
+      "owner_paths": [
+        "/private/tmp/cmm-round105-cleanup.py"
+      ],
+      "evidence": {
+        "name": "cleanup_does_not_bind_git_origin",
+        "accepted": true,
+        "method": "Execute exact cleanup try-body with inert Git/API fixtures; no subprocess functions are available.",
+        "configured_origin": "https://github.com/other-owner/unrelated.git",
+        "origin_queried": false,
+        "deletion_commands": [
+          [
+            "push",
+            "origin",
+            "--force-with-lease=refs/heads/curate/cmm-expansion-round105-20261015:ROUND105_TOPIC_HEAD",
+            ":refs/heads/curate/cmm-expansion-round105-20261015"
+          ],
+          [
+            "update-ref",
+            "-d",
+            "refs/heads/curate/cmm-expansion-round105-20261015",
+            "ROUND105_TOPIC_HEAD"
+          ]
+        ],
+        "implication": "An otherwise matching branch SHA on a changed origin is deleted without verifying the repository URL. SHA lease protects branch content, not repository identity."
+      },
+      "required_correction": "Require the expected CMMMech origin URL before any remote branch deletion, alongside the existing exact SHA lease and local compare-and-delete guards.",
+      "acceptance_checks": [
+        "Expected origin with all existing PR/tree/SHA guards satisfied is accepted.",
+        "A different origin is rejected before git push, checkout or update-ref.",
+        "Moved remote or local refs remain rejected and the inspected worktree stays preserved."
+      ]
+    }
+  ],
+  "positive_checks": [
+    "Commit requires terminal complete batch checks, unchanged current record hashes, scientific coverage, explicit allowed paths, clean tracked changes, one-parent base and expected origin.",
+    "Push binds config/guard digests, exact head/tree/branch/parent, origin, absent remote branch and live base before publication.",
+    "Queue requires successful isolated preflight with required validations, coverage, current helper/config hashes, exact PR text/files/head/base, required hosted check, native squash queue rules, assessed discussion and immediate live-main comparison.",
+    "Cleanup verifies actual merged PR, sole base parent and exact tree, retains the worktree, uses a remote SHA lease and local compare-and-delete, and preserves review provenance tags.",
+    "Fresh verification constructs a squash-shaped tree or checks actual merge in a main-only clone with fetched tags and without topic commit availability; current scientific review coverage matches IDs, paths and hashes.",
+    "Original-main finalization compares retained nontracked byte hashes, sizes, modes and symlink targets, rejects added-path collisions and uses --no-overwrite-ignore."
+  ],
+  "checks": [
+    {
+      "name": "AST syntax parse of eight inspected Python helpers",
+      "status": "passed"
+    },
+    {
+      "name": "Inert exact-AST negative probes",
+      "status": "failed_as_guard_expectation",
+      "details": "Both deliberately invalid inputs advanced past their relevant guard blocks; no subprocess or GitHub calls were executed."
+    }
+  ],
+  "limitations": [
+    "ROUND105 topic/tree/PR/preflight/issue placeholders and provisional counts intentionally await coordinator binding. This audit is not publication authorization or a claim that hosted checks passed.",
+    "The probes demonstrate missing guard checks, not an observed wrong-repository deletion or incomplete real validation run.",
+    "The retained original-main preservation inventory was inspected by structure and bound hash; this audit does not independently enumerate all current original-main content.",
+    "Pure receipt checks are defense in depth under trusted local invocation; assertions are not hardened against an adversarial Python runtime."
+  ],
+  "verdict": "changes_requested",
+  "corrections": "None applied by reviewer; initial audit remains immutable. Coordinator will address findings and request a successor review.",
+  "unresolved_questions": [
+    "Exact final topic/tree/PR/issue bindings and measured corpus counts remain pending.",
+    "Native queue and final hosted/latest-attempt evidence must be assessed after those events occur."
+  ]
+}

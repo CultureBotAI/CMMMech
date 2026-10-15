@@ -1,0 +1,130 @@
+id: cmmmech:inderite
+name: Inderite
+material_kind: mineral
+description: >-
+  Inderite is the Mg[B3O3(OH)5](H2O)4·H2O mineral species in the
+  September 2026 IMA-CNMNC list, with status A and year notation
+  1962 s.p. for a special procedure, not a fabricated sequential approval
+  identifier. It is distinct from its dimorph kurnakovite, from
+  inderborite, elemental boron and the borates commodity. Gatta et al.
+  studied natural Kramer Deposit, California, material by EPMA-WDS,
+  laser-ablation mass spectrometry and neutron diffraction. The P21/c
+  structure comprises borate-ring/Mg-polyhedron clusters connected by
+  hydrogen bonds, with four Mg-bound water molecules and one interstitial
+  water per formula unit. The chemical characterization is specimen
+  specific, including modest electron-beam damage and an assumed B/H
+  stoichiometry in the EPMA formula; it is not a resource-grade survey.
+  Commodity criticality and microbial activity are not inherited.
+sources:
+  - id: ima_2026_09
+    title: >-
+      IMA-CNMNC, The New IMA List of Minerals, September 2026: PDF page
+      101, Inderite row; pages 1-2, status and special-procedure definitions.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-15'
+  - id: gatta2024
+    title: >-
+      Gatta, Capelli, Comboni and Cannaò (2024), On the crystal-chemistry
+      of inderite, Mg[B3O3(OH)5](H2O)4·H2O, Physics and Chemistry of
+      Minerals 51, 21, DOI 10.1007/s00269-024-01281-w. Complete 18-page
+      publisher PDF acquired from the German National Library: methods
+      pp. 2-4; Tables 1-5; Figures 1-2; discussion pp. 9-17.
+    url: https://d-nb.info/1342532252/34
+    accessed_on: '2026-10-15'
+  - id: gatta2024_cif
+    title: >-
+      Gatta et al. (2024), original publisher supplementary CIF with
+      280-K unsplit, 280-K split-site and 10-K neutron models. The
+      data-block labels say inderborite, but the mineral-name fields,
+      MgB3H15O13 formula, cells and P21/c symmetry identify inderite.
+      The file contains a malformed Mg atom-type token; it is not
+      represented here as a validated machine-ready dataset.
+    url: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs00269-024-01281-w/MediaObjects/269_2024_1281_MOESM1_ESM.cif
+    accessed_on: '2026-10-15'
+  - id: comboni2023
+    title: >-
+      Comboni et al. (2023), On the anomalous high-pressure phase
+      transition of inderite, MgB3O3(OH)5·5H2O, Solid State Sciences
+      140, 107187, DOI 10.1016/j.solidstatesciences.2023.107187.
+      Inspected institutional accepted manuscript labelled Revision_1,
+      25 pages: methods pp. 5-11; Tables 1-2 pp. 7-8 and 13; Figures
+      1-5 and embedded Figure S1; results pp. 14-21. Publisher full
+      text, separate Tables S1-S2 and pressure CIFs were not acquired.
+    url: https://air.unimi.it/retrieve/6d06b12a-4745-4081-b216-108bcab61556/Inderite_Post-Print.pdf
+    accessed_on: '2026-10-15'
+mechanisms:
+  - id: abiotic-pressure-transition
+    name: Reconstructive pressure-induced transition in natural inderite
+    process: other
+    description: >-
+      Single-crystal diffraction detected a transition from the ambient
+      P21/c structure to the P21/n structure labelled inderite-II by
+      the authors. They solved and refined the high-pressure structure
+      and interpreted a boron coordination increase from three to four
+      oxygen neighbours. The experimental label does not establish a
+      separately approved natural mineral species. Recovery of the
+      starting phase upon decompression is observed in this experiment;
+      it does not establish a reversible industrial processing cycle.
+    context: >-
+      A single approximately 20 x 15 x 10 micrometre crystal from the
+      Borax open-pit mine, Boron, California, was compressed in a
+      membrane-driven diamond-anvil cell at ESRF ID15b using helium
+      and ruby pressure calibration with uncertainty of 0.05 GPa.
+      Table 1 reaches 17.04(5) GPa and includes three decompression
+      points. The inspected methods do not specify a calibrated
+      sample-temperature series. The separate 2024 neutron measurements
+      at 280 and 10 K are not high-pressure measurements on this crystal.
+      No organism, extraction yield, recovered boron product or concrete
+      performance was measured by this pressure experiment.
+    microbial: false
+    evidence:
+      - source_ref: comboni2023
+        supports: support
+        explanation: >-
+          Accepted-manuscript Table 1 and sections 4.1, 4.3 and 5 put
+          the last low-pressure point at 6.15(5) GPa and first
+          high-pressure point at 6.45(5) GPa. Figure 3 identifies the
+          high-pressure diffraction pattern at 6.45(5) GPa. The authors
+          report an approximately 7% discontinuity after dividing the
+          doubled high-pressure cell volume by two for comparison.
+          Table 1 retains the high-pressure cell at 5.43(5) GPa during
+          decompression and recovers the starting cell at ambient
+          pressure; it does not locate a precise reverse-transition
+          pressure. Table 2 reports fitted bulk moduli of 26.5(7) and
+          41(5) GPa, respectively, using third-order Birch-Murnaghan fits.
+      - source_ref: comboni2023
+        supports: partial
+        explanation: >-
+          The abstract and section 3.1 instead give a 6.45-6.94 GPa
+          transition interval, while also identifying the high-pressure
+          cell at 6.45 GPa. The manuscript abstract gives 37(4) GPa for
+          the high-pressure bulk modulus, conflicting with Table 2 and
+          results at 41(5) GPa. Its section 4.3 mentions 17.41(5) GPa,
+          beyond the last Table 1 point. These discrepancies remain
+          unresolved; the tables are identified explicitly rather than
+          silently harmonized into one precise threshold or maximum.
+          Hydrogen sites were absent from the starting refinement model,
+          and unavailable pressure CIFs/SI limit verification of detailed
+          water-site assignments and bond-length changes. The reported
+          coordination interpretation is not a directly tracked hydrogen
+          mechanism or an oxidation-state change of boron.
+      - source_ref: gatta2024
+        supports: context_only
+        explanation: >-
+          Neutron methods and Tables 2-5 independently characterize the
+          ambient-pressure structure at 280 and 10 K, locating fifteen
+          independent hydrogen sites. A two-position O9w model with
+          occupancies 0.60(10) and 0.40(10) was supported at 280 K but
+          not at 10 K. Its cause remains unclear, with absorption
+          correction limitations noted on p. 10. This is not independent
+          replication of the pressure transition. Page 16 repeats the
+          disputed 6.45-6.94 GPa interval; its contextual summary does
+          not resolve the original paper's internal disagreement.
+curation_history:
+  - timestamp: '2026-10-15T23:03:46.714906Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: >-
+      Created a distinct inderite mineral owner with natural-specimen neutron identity and a bounded abiotic pressure transition, retaining manuscript pressure and modulus conflicts, recovery limits and unavailable pressure deposits.
+history_refs:
+  - history/records/inderite/2026-10-15T230400Z-codex-5eb117.yaml

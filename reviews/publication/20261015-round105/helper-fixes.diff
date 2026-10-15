@@ -1,0 +1,78 @@
+--- before/cmm-round105-publication-guards.py
++++ after/cmm-round105-publication-guards.py
+@@ -44,3 +44,41 @@
+     assert assessment['tree'] == tree
+     assert assessment['merge_sha'] == merge
+     assert assessment['all_five_latest_attempts_successful'] is True
++
++
++def check_postmerge_receipt(cfg, commit, verification, coverage, digest, coverage_helper):
++    """Require actual successful postmerge gates bound to the reviewed inputs."""
++    base = cfg['base']
++    assert cfg['status'] == FINAL_CONFIG_STATUS
++    assert commit['exit_code'] == 0 and commit['base'] == base
++    assert verification['mode'] == 'postmerge' and verification['exit_code'] == 0
++    assert verification['trusted_base'] == base
++    assert verification['topic_head'] == commit['head']
++    assert verification['expected_tree'] == commit['tree']
++    assert verification['config_sha256'] == commit['config_sha256']
++    assert verification['helper_sha256'] == commit['verification_helper_sha256']
++    assert digest(coverage_helper) == commit['coverage_helper_sha256']
++    assert digest(verification['log']) == verification['log_sha256']
++    assert digest(verification['coverage']['path']) == verification['coverage']['sha256']
++    assert coverage['passed'] is True
++    assert coverage['root'] == verification['clone']
++    assert verification['counts'] == cfg['counts']
++    assert all(coverage[key] == value for key, value in cfg['counts'].items())
++    clone = verification['clone']
++    required = [
++        ['uv', 'run', '--locked', 'cmmmech', 'validate', '--require-records'],
++        ['uv', 'run', '--locked', 'cmmmech', 'validate-history', '--base', base],
++        ['just', 'review-check', '--base', base, '--require-reviews'],
++        [clone + '/.venv/bin/python', coverage_helper, '--clone', clone,
++         '--output', verification['coverage']['path']],
++    ]
++    commands = verification['commands']
++    assert commands and all(row['exit_code'] in row['allowed_exit_codes'] for row in commands)
++    for command in required:
++        matches = [row for row in commands if row['command'] == command]
++        assert len(matches) == 1
++        assert matches[0]['exit_code'] == 0 and matches[0]['cwd'] == clone
++
++
++def check_cleanup_origin(origin):
++    assert origin == EXPECTED_ORIGIN
+
+--- before/cmm-round105-cleanup.py
++++ after/cmm-round105-cleanup.py
+@@ -1,5 +1,6 @@
+ from pathlib import Path
+-import datetime,hashlib,json,subprocess,sys,re
++import datetime,hashlib,json,subprocess,sys,re,runpy
++guards=runpy.run_path("/private/tmp/cmm-round105-publication-guards.py")
+ T=Path('/private/tmp');W=T/'CMMMech-expansion-round105-20261015';REPO='CultureBotAI/CMMMech';BASE='ee4ea8c2efa351a688946660c9ddc70560c3e86e';HEAD='ROUND105_TOPIC_HEAD';TREE='ROUND105_TOPIC_TREE';BRANCH='curate/cmm-expansion-round105-20261015';MERGE=sys.argv[1];assert re.fullmatch('[0-9a-f]{40}',MERGE)
+ now=lambda:datetime.datetime.now(datetime.timezone.utc).isoformat();o=T/'cmm-round105-cleanup-receipt.json';f=o.open('x');r={'started_at':now(),'merge_commit':MERGE,'head':HEAD,'base':BASE,'tree':TREE,'branch':BRANCH,'commands':[]};json.dump({'state':'in_progress'},f);f.flush()
+ def run(cmd,allowed=(0,)):
+@@ -7,6 +8,7 @@
+ def git(*a,**kw):return run(['git',*a],**kw)
+ def api(path):return json.loads(run(['gh','api',f'repos/{REPO}/'+path]))
+ try:
++ guards['check_cleanup_origin'](git('remote','get-url','origin'))
+  q=json.loads((T/'cmm-round105-queue-receipt.json').read_text());assert q['exit_code']==0 and q['head']==HEAD and q['base']==BASE
+  p=api('pulls/ROUND105_PR_NUMBER');assert p['merged'] and p['state']=='closed' and p['merge_commit_sha']==MERGE and p['head']['sha']==HEAD
+  c=api('git/commits/'+MERGE);assert [x['sha'] for x in c['parents']]==[BASE] and c['tree']['sha']==TREE
+
+--- before/cmm-round105-finalize.py
++++ after/cmm-round105-finalize.py
+@@ -13,6 +13,11 @@
+   if b['kind']=='symlink':assert x.is_symlink() and os.readlink(x)==b['target'] and stat.S_IMODE(x.lstat().st_mode)==b['mode'],name
+   else:assert x.is_file() and not x.is_symlink() and x.stat().st_size==b['bytes'] and sha(x)==b['sha256'] and stat.S_IMODE(x.stat().st_mode)==b['mode'],name
+ try:
++ commit=json.loads((T/'cmm-round105-commit-receipt.json').read_text());cfg=json.loads((T/'cmm-round105-helper-config.json').read_text())
++ for name,key in [('publication-guards.py','publication_guards_sha256'),('helper-config.json','config_sha256'),('isolated-verification.py','verification_helper_sha256'),('isolated-coverage.py','coverage_helper_sha256')]:assert sha(T/('cmm-round105-'+name))==commit[key]
++ p=json.loads(Path(args.postmerge).read_text());cv=json.loads(Path(p['coverage']['path']).read_text())
++ guards['check_postmerge_receipt'](cfg,commit,p,cv,sha,str(T/'cmm-round105-isolated-coverage.py'))
++ guards['check_cleanup_origin'](git('remote','get-url','origin'))
+  p=json.loads(Path(args.postmerge).read_text());assert p['mode']=='postmerge' and p['exit_code']==0 and p['trusted_base']==BASE and p['topic_head']==HEAD and p['expected_tree']==TREE;MERGE=p['merge_commit'];assert sha(p['log'])==p['log_sha256'];assert sha(p['coverage']['path'])==p['coverage']['sha256'];assert all(c['exit_code'] in c['allowed_exit_codes'] for c in p['commands'])
+  c=json.loads((T/'cmm-round105-cleanup-receipt.json').read_text());assert c['exit_code']==0 and c['merge_commit']==MERGE and c['local_branch_absent'] and c['remote_branch_absent']
+  # The hosted assessment is manually inspected by the coordinator before invocation.

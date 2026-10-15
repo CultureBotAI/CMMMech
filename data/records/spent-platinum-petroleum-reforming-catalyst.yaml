@@ -1,0 +1,72 @@
+id: cmmmech:spent-platinum-petroleum-reforming-catalyst
+name: Spent platinum petroleum-reforming catalyst
+material_kind: secondary_resource
+description: Used platinum-bearing catalyst from petroleum reforming, represented by a source-described
+  monometallic Pt/Al2O3 catalyst. This use-defined secondary resource is distinct from automotive converters,
+  nickel steam-reforming catalysts, refinery hydroprocessing catalysts, fresh catalyst and elemental platinum.
+  The selected feed composition does not define every reforming formulation. No constituent criticality
+  or mineral identifier is inherited.
+sources:
+- id: sun_2015
+  title: Sun, Kim, Min, Song and Cho (2015). Recovery of Platinum from Chloride Leaching Solutions of
+    Spent Reforming Catalysts by Ion Exchange. Materials Transactions 56(5):738-742. DOI 10.2320/matertrans.M2015027.
+    Complete five-page publisher PDF; sections 2-3, Tables 1-6 and Figures 1-6.
+  url: https://doi.org/10.2320/matertrans.M2015027
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: anion_exchange_and_selective_elution
+  name: Anion exchange and selective platinum elution from real catalyst leachate
+  process: separation
+  microbial: false
+  description: A commercial quaternary-ammonium anion-exchange resin loaded platinum and iron from an
+    acidic spent-catalyst leachate. Sequential dilute hydrochloric acid and thiourea elution separated
+    an iron-rich fraction and a platinum-bearing liquid. This is an abiotic laboratory separation, not
+    microbial activity or production of isolated platinum metal.
+  context: 'Sun et al. section 2.1 identifies actual spent Pt/Al2O3 catalyst leachate. Table 1 gives feed
+    Pt 0.25, Fe 0.07, Al 45.78 and Si 0.08 mass%, with minor other elements; its plant and service duration
+    are unspecified. Table 2 gives Pt 124, Fe 23.7, Al 4870 and Si 5.4 mg/dm3 in 5.9 kmol/m3 HCl. The
+    Introduction and Figure 6 attribute pretreatment to a previous study: roasting at 800 degrees C and
+    HCl/H2O2 leaching; Figure 6 adds 5 hours and 10 degrees C/min for roasting. Those details are contextual
+    rather than a newly verified complete leaching protocol. Diaion SA10AP resin was used as received.
+    Batch experiments at 25 degrees C mixed 20 mL liquor with 0.5-100 g/dm3 resin for 24 hours; liquid
+    metals were measured by ICP and resin loading inferred by balance. Columns were 250 by 10 mm at 25
+    degrees C with downward flow at 1.5 mL/min. The breakthrough arm used 1 g resin; the separation arm
+    used 5 g resin and 200 cm3 real leachate. Independent replicate counts and uncertainty estimates for
+    these arms are not clearly reported.'
+  evidence:
+  - source_ref: sun_2015
+    supports: support
+    explanation: 'Sections 3.1.2 and 3.2.2, Figure 2: Pt and Fe co-loaded while Al and Si largely remained
+      in solution. The 5 g column arm reports 99.7% of feed-liquor Pt and 99.6% of feed-liquor Fe loaded.
+      Sections 3.2.3-3.2.4 and Figures 4-5 report iron removal with 0.0001 mol/dm3 HCl, followed by 0.1
+      mol/dm3 thiourea eluting 99.6% of loaded Pt within 20 bed volumes. These percentages have different
+      denominators and are not whole-catalyst metal yields.'
+  - source_ref: sun_2015
+    supports: partial
+    explanation: 'Section 3.2.4 reports 99.3% Pt recovery from the leaching solution and 99.6% purity.
+      Figure 6 ends in Pt-containing effluent: no isolated metallic product or independently quantified
+      bulk product-purity assay is established. Overall catalyst-to-product recovery, resin reuse, industrial
+      operation and economic performance are not demonstrated.'
+  - source_ref: sun_2015
+    supports: partial
+    explanation: Section 3.1.1, Table 4 and Figure 1 fit a separate synthetic PtCl4 solution at 124 mg/dm3
+      Pt and 5 kmol/m3 HCl. The 128.1 mg/g Langmuir/Sips capacity is a fitted parameter, not measured
+      capacity in the real multi-element leachate. Good model fit does not uniquely prove a molecular
+      adsorption mechanism; the paper's proposed ion-exchange/speciation equations are not independent
+      speciation measurements.
+  - source_ref: sun_2015
+    supports: partial
+    explanation: Tables 5-6 retain less effective comparison eluents. Increasing batch HCl from 0.0001
+      to 0.01 mol/dm3 reduced reported Fe elution from 99.9% to 83.2%. Table 6 reports Pt elution as nil
+      for NaCl/NaOH, 1% for Na2S2O3, 4.7% for HNO3 and 5% for Na2CO3. Prose instead describes Na2S2O3
+      as unable to elute Pt and both HNO3/Na2CO3 as below 5%; these small table/text discrepancies are
+      unresolved. The greater-than-99.9% thiourea value is a batch loaded-resin elution result, distinct
+      from the column and whole-process figures.
+curation_history:
+- timestamp: '2026-10-15T23:02:05.197548+00:00'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Created a distinct spent petroleum-reforming catalyst resource with real-leachate laboratory
+    ion exchange, explicit synthetic-arm separation and elution denominator limits.
+history_refs:
+- history/records/spent-platinum-petroleum-reforming-catalyst/2026-10-15T230210Z-codex-34907d.yaml

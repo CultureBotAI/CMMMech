@@ -8,13 +8,18 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 515 material records.
+The catalogue currently contains 520 material records.
 
-The [latest curation report](research/ingests/round104-frontier-20261015.md) links
+The [latest curation report](research/ingests/round105-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Inderborite](data/records/inderborite.yaml) | Natural identity, neutron structure and abiotic pressure response | Source endpoint/angle conflicts and constrained hydrogen model |
+| [Inderite](data/records/inderite.yaml) | Natural identity, neutron structure and abiotic pressure transition | Mislabeled CIF block names and conflicting pressure/modulus values |
+| [Monazite-(Sm)](data/records/monazite-sm.yaml) | Natural mineral identity and original sample chemistry | IMA approval-year discrepancy and unavailable individual analyses; microbial phase assignment deferred |
+| [Spent platinum petroleum-reforming catalyst](data/records/spent-platinum-petroleum-reforming-catalyst.yaml) | Abiotic anion exchange and selective elution of real leachate | Synthetic isotherm separated; liquid recovery is not isolated platinum product |
+| [Zeunerite](data/records/zeunerite.yaml) | Current mineral identity and separate synthetic structural studies | Constrained models, thesis version/container conflicts and no inferred field performance |
 | [Autunite](data/records/autunite.yaml) | Current mineral identity and synthetic-crystal structure | Partial calcium occupancy and constrained hydrogen model; proposed hydrate remains distinct |
 | [Inyoite](data/records/inyoite.yaml) | Natural identity and laboratory high-pressure diffraction | Conflicting pressure and cell-volume values across manuscript and deposits |
 | [Rhabdophane-(Ce)](data/records/rhabdophane-ce.yaml) | Natural identity and abiotic hydrothermal replacement | Run-mass and low-pH conversion discrepancies; no microbial recovery claim |
