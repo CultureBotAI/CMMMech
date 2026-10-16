@@ -1,0 +1,364 @@
+schema_version: 1.0.0
+review_id: 20261016T061142Z-cordylite-ce-round113-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Cordylite-(Ce)
+started_at: '2026-10-16T06:01:42.318006Z'
+finished_at: '2026-10-16T06:11:42.864885Z'
+reviewer:
+  identity: codex /root/round104_borates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_ree. No target owner/history/dossier
+    edits. Reviewer authored unrelated mcallisterite/tunellite records. Shared original
+    acquisitions disclosed; primary text and relevant figures/tables independently
+    assessed after native capture.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Species identity, material boundaries and the stated experimental or observational
+  scope are supported. No corrective owner finding in this review.
+source:
+  git_revision: 9ebff7bf980911e7be86bf19d865aeeca8450781
+  state: working_tree
+  inputs:
+  - path: data/records/cordylite-ce.yaml
+    sha256: 4bc7a2b0c356b084d9bdac2c4c1b03c97fb9a303e6b7d1698d548376acad003b
+    role: target
+  - path: docs/record-review-profile.md
+    sha256: 01c6f39d0d097876a0446131270df58bb32fa15804c66487419c171719d3ddc0
+    role: context
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/cordylite-ce/2026-10-16T055807Z-codex-root-round104-ree-0bf858.yaml
+    sha256: 61082469e2df5ef9f2ba576b1fcb44db3acb29a27fe8176a2703874c33221f73
+    role: context
+  - path: research/sources/round113-ree/20261016T060000Z-source-investigation.json
+    sha256: 3ec941dab393126d474cbf9f903f491f8e9615081468ff6d80a0c5b79c41fe8c
+    role: context
+  - path: research/sources/round113-ree/20261016T060000Z-source-investigation.md
+    sha256: daa0375794507dbe469d07631ddc4970cb90c3390fd5bca2eed0e8275f04fadd
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:cordylite-ce
+  path: data/records/cordylite-ce.yaml
+  label: Cordylite-(Ce)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cordylite-ce.yaml
+    role: maintained record
+scope:
+  description: Complete assigned owner, identity, primary evidence, experimental/observational
+    limits and history. Other records and publication operations excluded.
+  selection: Assigned frozen owner; native capture before assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:cordylite-ce
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate --require-records data/records/kukharenkoite-ce.yaml
+    data/records/cordylite-ce.yaml
+  status: passed
+  required: true
+  summary: Checked 2 record(s); 0 failed. Actual 2026-10-16T06:02:46.317078+00:00
+    through 2026-10-16T06:02:49.834979+00:00
+  target_ids:
+  - cmmmech:cordylite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Completed coordinator batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T06:05:54.995960+00:00 through 2026-10-16T06:10:28.420371+00:00
+    in /private/tmp/CMMMech-expansion-round113-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:cordylite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Completed coordinator batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T06:10:28.420392+00:00 through 2026-10-16T06:10:39.020688+00:00
+    in /private/tmp/CMMMech-expansion-round113-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:cordylite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch command 3
+  command: uv run --locked cmmmech validate-history --base 9ebff7bf980911e7be86bf19d865aeeca8450781
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T06:10:39.020714+00:00 through 2026-10-16T06:10:44.664882+00:00
+    in /private/tmp/CMMMech-expansion-round113-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:cordylite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T06:10:44.664912+00:00 through 2026-10-16T06:10:49.443511+00:00
+    in /private/tmp/CMMMech-expansion-round113-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:cordylite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/cordylite-ce.yaml
+  locator: Complete frozen owner, captured before assessment.
+  accessed_at: '2026-10-16T06:11:42.864885Z'
+  support: supports
+  summary: Current IMA September 2026 p. 50 verifies (Na,Ca,□)BaCe2(CO3)4(F,O), renamed
+    status Rn and 1987 special procedure. This is not an approval accession, and the
+    current formula is kept separate from the 1998 idealized model. The record is
+    a natural mineral species, not an REE commodity or ore.
+  snapshot_sha256: 4bc7a2b0c356b084d9bdac2c4c1b03c97fb9a303e6b7d1698d548376acad003b
+- evidence_id: history
+  kind: record_content
+  reference: history/records/cordylite-ce/2026-10-16T055807Z-codex-root-round104-ree-0bf858.yaml
+  locator: Canonical CREATE plus distinct inline event; actor, target and actual timestamps
+    checked.
+  accessed_at: '2026-10-16T06:11:42.864885Z'
+  support: supports
+  summary: Codex/GPT-6 metadata and new-owner provenance are supported.
+  snapshot_sha256: 61082469e2df5ef9f2ba576b1fcb44db3acb29a27fe8176a2703874c33221f73
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions p. 1 and rows pp.50/118 visually checked; independent borate-lane
+    authority acquisition has the same current SHA256.
+  accessed_at: '2026-10-16T06:11:42.864885Z'
+  support: supports
+  summary: Species names, formulas and identifier scopes verified.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round113-ree/20261016T060000Z-source-investigation.json
+  locator: Full paired source dossier, original acquisitions and final freeze independently
+    inspected.
+  accessed_at: '2026-10-16T06:11:42.864885Z'
+  support: context_only
+  summary: Context supports provenance; it is not a substitute for originals.
+  snapshot_sha256: 3ec941dab393126d474cbf9f903f491f8e9615081468ff6d80a0c5b79c41fe8c
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round113-borates-research/review-ree-web.json
+  locator: Independent exact DOI/title correction/erratum/retraction queries on 2026-10-16;
+    the direct DOI open returned an internal tool error.
+  accessed_at: '2026-10-16T06:11:42.864885Z'
+  support: context_only
+  summary: No affecting correction identified in returned sets; bounded search only.
+  snapshot_sha256: 10cd10c06c88605ff4872666aa3e44215258c6f2fb7b42d8c4f8ae9bdb87317c
+  search_scope: Exact 1996/1998 DOI and structural-title notice queries; first returned
+    sets; current authority PDF and curator acquisition metadata also independently
+    inspected, not exhaustive literature coverage.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round113-borates-research/review-ree-dedup.json
+  locator: Six matching owner/context files in current records/research/reviews/history.
+  accessed_at: '2026-10-16T06:11:42.864885Z'
+  support: context_only
+  summary: No distinct duplicate owner found within this bounded current text scope;
+    curator broader precreation inventory independently read.
+  snapshot_sha256: 1af0c420224e77117348c7f3e9689fe55cb098f7b9ead462ccc9b465b32dbec3
+  search_scope: rg --no-ignore --hidden --follow over named W roots; kukharenkoite/cordylite
+    names and slugs, exact DOIs and IMA:1995-040. Ignored files included; no machine-wide
+    absence claim.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round113-borates-research/review-ree-named-validation.json
+  locator: Actual independent named validation, exact current target hashes.
+  accessed_at: '2026-10-16T06:11:42.864885Z'
+  support: supports
+  summary: Two records checked, zero failures.
+  snapshot_sha256: 38232212b4c5a4276dc5d3cd255a83191c8a7fc20233e07b9ba7954389dd63df
+- evidence_id: baseline
+  kind: validation
+  reference: /private/tmp/cmm-round113-baseline.json
+  locator: Completed initial baseline, retained log hash b1861eeb51558385c0da031e0b119409c420c5ec39f7d301c7255884988e1833
+  accessed_at: '2026-10-16T06:11:42.864885Z'
+  support: context_only
+  summary: Baseline context, not final-state validation.
+  snapshot_sha256: eecefe5e5a30cbd3497d3722d79528f87946a6d289959ef9e3a3c3e91b9851d5
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round113-final-gates.json
+  locator: Actual four-command final batch, base/cwd/unique rows/zero exits/unchanged
+    target hashes; log hash 47d61c9a50c6857f5b058589ca16d022891a4c7dc7bbcd065bfc5c3c7863d907
+  accessed_at: '2026-10-16T06:11:42.864885Z'
+  support: supports
+  summary: Required batch checks passed. Later native whole-corpus and publication
+    gates are separate.
+  snapshot_sha256: 44d42e6f650408fed95cf49a83cad6a12d0a52329961f3f5cc960a659da7ccc4
+- evidence_id: original
+  kind: primary_source
+  reference: https://doi.org/10.2138/am-1998-1-219
+  locator: Complete seven-page original read/all pages visually inspected; methods
+    p. 179, Tables 1–2 p. 180, enlarged Table 5 p. 181, Figures 1–2 and discussion
+    pp. 182–183.
+  accessed_at: '2026-10-16T06:11:42.864885Z'
+  support: supports
+  summary: Giester et al. 1998 abstract and pp. 179–181 distinguish six chemically
+    characterized specimens from seven X-ray refinements. The original Flink M.M.
+    no. 392 crystal, Narssarssuk 1*, was damaged by the beam and has only qualitative
+    EDX Na evidence. Table 5 footnotes exclude that crystal from chemical analyses,
+    mark selected Na measured by DCP and calculate CO2 by difference. Page 183 reports
+    no reliable water analyses. The owner accurately avoids treating these as complete
+    direct microprobe results. Methods p. 179 and Tables 1–2 support the seven P63/mmc
+    refinements and lack of conclusive preference for attempted P-62c. The 1998 formula
+    (Na1-xCax/2)BaCe2(CO3)4F uses Ce as a proxy for summed REE; Na/Ca cannot be determined
+    from scattering alone because Ca scatters approximately twice Na. Chemistry constrains
+    that substitution. Figures 1–2 and discussion pp. 182–183 support comparative
+    structural identity with historical baiyuneboite, rather than a processing experiment.
+    The claim is attributed to this comparative/type-material study; no access to
+    every earlier Chinese original is implied.
+  snapshot_sha256: b77495b11d3bbc496680412bb8f1191c6c30d8e618dbb2ce381862ba891c97f4
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species identity and scope
+  outcome: supported
+  summary: Current IMA September 2026 p. 50 verifies (Na,Ca,□)BaCe2(CO3)4(F,O), renamed
+    status Rn and 1987 special procedure. This is not an approval accession, and the
+    current formula is kept separate from the 1998 idealized model. The record is
+    a natural mineral species, not an REE commodity or ore.
+  target_ids:
+  - cmmmech:cordylite-ce
+  evidence_ids:
+  - record
+  - ima
+- assessment_id: natural
+  area: evidence
+  topic: Natural characterization and measurement provenance
+  outcome: supported
+  summary: Giester et al. 1998 abstract and pp. 179–181 distinguish six chemically
+    characterized specimens from seven X-ray refinements. The original Flink M.M.
+    no. 392 crystal, Narssarssuk 1*, was damaged by the beam and has only qualitative
+    EDX Na evidence. Table 5 footnotes exclude that crystal from chemical analyses,
+    mark selected Na measured by DCP and calculate CO2 by difference. Page 183 reports
+    no reliable water analyses. The owner accurately avoids treating these as complete
+    direct microprobe results.
+  target_ids:
+  - cmmmech:cordylite-ce
+  evidence_ids:
+  - record
+  - original
+- assessment_id: mechanism
+  area: evidence
+  topic: Experiment, observation and causal limits
+  outcome: supported
+  summary: Methods p. 179 and Tables 1–2 support the seven P63/mmc refinements and
+    lack of conclusive preference for attempted P-62c. The 1998 formula (Na1-xCax/2)BaCe2(CO3)4F
+    uses Ce as a proxy for summed REE; Na/Ca cannot be determined from scattering
+    alone because Ca scatters approximately twice Na. Chemistry constrains that substitution.
+    Figures 1–2 and discussion pp. 182–183 support comparative structural identity
+    with historical baiyuneboite, rather than a processing experiment. The claim is
+    attributed to this comparative/type-material study; no access to every earlier
+    Chinese original is implied.
+  target_ids:
+  - cmmmech:cordylite-ce
+  evidence_ids:
+  - record
+  - original
+  dimensions:
+  - name: material_form
+    value: Seven natural diffraction specimens, six with quantitative chemistry, from
+      four localities.
+    definition: The original M.M.392 crystal is separately constrained by beam damage.
+    evidence_ids:
+    - original
+  - name: conditions
+    value: Single-crystal Mo X-ray measurements and distinct chemical methods.
+    definition: Characterization and model selection do not constitute a mineral-processing
+      assay.
+    evidence_ids:
+    - original
+  - name: outcome
+    value: Comparative structure/nomenclature with chemistry-constrained Na/Ca substitution.
+    definition: No recovery yield, direct water measurement or pure-Ce endmember is
+      inferred.
+    evidence_ids:
+    - original
+- assessment_id: scope
+  area: evidence
+  topic: Criticality, microbial and deployment boundaries
+  outcome: supported
+  summary: No jurisdiction/list/edition criticality claim, microbial causation, ore
+    recovery efficiency or industrial deployment is asserted.
+  target_ids:
+  - cmmmech:cordylite-ce
+  evidence_ids:
+  - record
+  - original
+- assessment_id: provenance
+  area: provenance
+  topic: Exact bytes, histories and completed checks
+  outcome: supported
+  summary: Captured inputs and frozen hashes are unchanged. Actual canonical/inline
+    events and completed checks support provenance.
+  target_ids:
+  - cmmmech:cordylite-ce
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - dossier
+  - search
+  - dedup
+findings: []
+actions: []
+limitations:
+- The beam-damaged original crystal has no quantitative chemical analysis; qualitative
+  EDX does not establish a Na concentration.
+- Calculated CO2, DCP Na and unavailable reliable H2O must remain separate from microprobe
+  measurements.
+- The 1998 Ce proxy and Na/Ca/vacancy model are not identical to the broader current
+  IMA formula.
+- Deposited anisotropic displacement Table 3 AM-98-005 was not acquired; printed coordinates/distances
+  were checked without independent rerefinement or exhaustive verification of earlier
+  originals.
+- Bounded notice and identity searches do not establish exhaustive literature coverage.
+  Shared source acquisition is not independent experimental replication.
+- No criticality claim is made; omission does not mean the material is absent from
+  every criticality list.
+- Native whole-corpus review validation and exact-head publication checks are separate
+  later gates.
+notes:
+- Pre-judgment source/input capture is retained externally. The initial draft used
+  target kind record instead of maintained; content validation rejected it before
+  save. A later typed capture preserves identical input hashes and corrects only target
+  annotation. No maintained target edits by this reviewer.
+- Qualified source limitations are not manufactured corrective findings.

@@ -1,0 +1,162 @@
+schema_version: 1.0.0
+review_id: 20261016T060327Z-aluminium-salt-slag-round113-initial
+kind: record
+repository: CultureBotAI/CMMMech
+title: Initial independent aluminium salt slag mass-accounting review
+started_at: '2026-10-16T06:01:33.116382Z'
+finished_at: '2026-10-16T06:03:27.514908Z'
+reviewer:
+  identity: codex /root/round104_uranium
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored the resource owner/history/dossier; reviewer authored
+    unrelated uranium records and independently read original article, methods, Table5
+    and Figure12. No resource owner was edited by reviewer.
+skill: .claude/skills/review-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: 'One minor overbroad mass-balance limitation: the article does provide a
+  scaled solids/salt balance and reported elemental closure. The missing gas/water
+  and production-scale evidence should be specified rather than implying that reported
+  accounting is absent.'
+source:
+  git_revision: 9ebff7bf980911e7be86bf19d865aeeca8450781
+  state: working_tree
+  inputs:
+  - path: data/records/aluminium-salt-slag.yaml
+    sha256: 9de7256e82080148fe68c1663421e9a1369d5b1e5b203dded85491dd2190e5c6
+    role: target
+  - path: history/records/aluminium-salt-slag/2026-10-16T055723Z-codex-8110f0.yaml
+    sha256: 6ee93ae46bad57fbc4b4b358fc46c1d792dd45ea8a6511cc331c4439938d2173
+    role: context
+  - path: research/ingests/round113-resources-20261016.json
+    sha256: 8c3557a2c0a8a79cbb286f0e06905c6e4a1191f2b0f1b7ff7b3948fffdc5e72d
+    role: context
+  - path: research/ingests/round113-resources-20261016.md
+    sha256: 2982ee66f8d9720c6ddfecbd39c27dc8d00667bd582878f85189d338bb5ae6d3
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:aluminium-salt-slag
+  path: data/records/aluminium-salt-slag.yaml
+  label: aluminium-salt-slag
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/aluminium-salt-slag.yaml
+    role: maintained
+scope:
+  description: Scoped corrective review of mass-accounting representation against
+    original Section4/Figure12. Full final record review and batch gates remain pending.
+  selection: Assigned root-authored maintained resource, complete inspect captured
+    after initial path typo failed; actual bytes checked before this finding was finalized.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:aluminium-salt-slag
+checks:
+- check_id: named
+  name: Independent named validation of both assigned resource records
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/zinc-purification-hot-filter-cake.yaml
+    data/records/aluminium-salt-slag.yaml
+  exit_code: 0
+  summary: Checked 2 record(s); 0 failed.
+  target_ids:
+  - cmmmech:aluminium-salt-slag
+- check_id: batch
+  name: Final batch gates
+  required: true
+  status: unavailable
+  summary: Pending final corrections; no successful batch result asserted.
+  target_ids:
+  - cmmmech:aluminium-salt-slag
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/aluminium-salt-slag.yaml
+  locator: mechanisms[0].description and mechanisms[0].evidence[2]
+  accessed_at: '2026-10-16T06:03:27.514908Z'
+  support: partial
+  summary: Description says incomplete process mass balance and final evidence calls
+    Figure12 a proposed flowsheet without retaining its reported solids/salt accounting.
+  snapshot_sha256: 9de7256e82080148fe68c1663421e9a1369d5b1e5b203dded85491dd2190e5c6
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/min12091141
+  locator: Original published PDF page13, Section4 and Figure12 visually inspected;
+    /private/tmp/cmm-round113-resources-research/salt2022.pdf
+  accessed_at: '2026-10-16T06:03:27.514908Z'
+  support: refutes
+  summary: Section4 reports24.2%mass dissolved and Figure12 scales481kgfeed to116.4kgrecovered
+    salt plus364.6kgtreatedslag. It reports90%purity,92%overall salt recovery and
+    titration/FAAS elemental closure error up to+0.15%K, distinct from direct gas/water
+    accounting or a production-scale trial.
+  snapshot_sha256: 1de081bed6342ed56108dc4b709f907b8c47adc13aeb2bad0b7c460ff9c53dd1
+assessments:
+- assessment_id: mass-accounting
+  area: evidence
+  topic: Reported scaled solids balance versus missing process measurements
+  outcome: concern
+  summary: Retain the reported scaled balance and narrow the limitation to actual
+    unmeasured gas/water flows and unverified industrial operation.
+  target_ids:
+  - cmmmech:aluminium-salt-slag
+  evidence_ids:
+  - owner
+  - primary
+findings:
+- finding_id: mass-balance-scope
+  issue_key: aluminium-salt-slag-mass-balance-scope
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Mass-balance limitation omits the reported scaled solids accounting
+  description: The generic incomplete-process-balance wording is too broad without
+    acknowledging Section4/Figure12. The paper does report scaled solid products and
+    elemental checks; missing direct gas/water accounting and production-scale verification
+    are narrower defensible limitations.
+  target_ids:
+  - cmmmech:aluminium-salt-slag
+  field_paths:
+  - mechanisms[0].description
+  - mechanisms[0].evidence[2].explanation
+  evidence_ids:
+  - owner
+  - primary
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/aluminium-salt-slag.yaml
+    role: scientific_record
+actions:
+- action_id: qualify-accounting
+  description: Acknowledge the source-reported scaled solids/salt balance, distinguish
+    it from the direct90minute chloride measurement and retain absent gas/water and
+    industrial validation. Append actual EDIT provenance and save linked successor.
+  finding_ids:
+  - mass-balance-scope
+  target_ids:
+  - cmmmech:aluminium-salt-slag
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/aluminium-salt-slag.yaml
+    role: scientific_record
+  acceptance_checks:
+  - Explicitly retain481→116.4+364.6kg as source scaled accounting, not a full-batch
+    industrial trial.
+  - Specify absent direct gas/water balance and independently demonstrated production-scale
+    flux reuse; retain91.2%chloride at90min and reported92%salt-recovery calculation
+    as distinct metrics.
+  - Run named and final batch gates and resolve exact initial occurrence in a new
+    native review.
+limitations:
+- Initial bounded observation only; final complete scientific review and batch gates
+  remain pending.
+- No independent reproduction of the source mass balance, gas accounting or remelting
+  test was performed.

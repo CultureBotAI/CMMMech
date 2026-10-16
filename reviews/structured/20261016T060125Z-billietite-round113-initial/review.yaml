@@ -1,0 +1,137 @@
+schema_version: 1.0.0
+review_id: 20261016T060125Z-billietite-round113-initial
+kind: record
+repository: CultureBotAI/CMMMech
+title: Initial independent billietite methods review
+started_at: '2026-10-16T05:59:58.443797Z'
+finished_at: '2026-10-16T06:01:25.876471Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Uranium agent authored owner/history. Root independently inspected
+    original methods and exact working bytes.
+skill: .claude/skills/review-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: 'One minor quantitative-role error: 10 mL denotes solution volume, not vessel
+  capacity. Final scientific review and batch gates remain pending.'
+source:
+  git_revision: 9ebff7bf980911e7be86bf19d865aeeca8450781
+  state: working_tree
+  inputs:
+  - path: data/records/billietite.yaml
+    sha256: 5eb254774816d3397cc6ac877c0645310543dfef5ce2b55b567aac1a3fced9ef
+    role: target
+  - path: history/records/billietite/2026-10-16T055903Z-codex-212b70.yaml
+    sha256: 5930772c4d6210c955a2dfc84016ee34e43eb88cc596ac385232f35a2ca97577
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- kind: maintained
+  label: Billietite
+  owner_paths:
+  - path: data/records/billietite.yaml
+    repository: CultureBotAI/CMMMech
+    role: maintained_record
+  path: data/records/billietite.yaml
+  target_id: cmmmech:billietite
+scope:
+  description: Scoped initial review of the dissolution methods and exact owner.
+  selection: Native inspected named working record before assessment.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:billietite
+checks:
+- check_id: named
+  name: Named validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/billietite.yaml
+  exit_code: 0
+  summary: Checked 1 record(s); 0 failed.
+  target_ids:
+  - cmmmech:billietite
+- check_id: batch
+  name: Final batch gates
+  required: true
+  status: unavailable
+  summary: Final batch is still being completed; no final gate outcome asserted.
+  target_ids:
+  - cmmmech:billietite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/billietite.yaml
+  locator: mechanisms[0].context
+  accessed_at: '2026-10-16T06:01:25.876471Z'
+  support: partial
+  summary: Owner describes a 10 mL polyethylene cup.
+  snapshot_sha256: 5eb254774816d3397cc6ac877c0645310543dfef5ce2b55b567aac1a3fced9ef
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.2113/gscanmin.45.4.945
+  locator: Page 949 Experimental, right column; original PDF page5 visually inspected;
+    /private/tmp/cmm-round113-uranium-research/billietite2007.pdf
+  accessed_at: '2026-10-16T06:01:25.876471Z'
+  support: refutes
+  summary: Source explicitly places each crystal in a small polyethylene cup containing
+    10 mL solution; no cup capacity is specified.
+  snapshot_sha256: 0448fbf2ddd9b36326e8dc317c9365d753ee32dee9a13a5ae2c8ee759384b762
+assessments:
+- assessment_id: volume
+  area: quantity
+  topic: Solution amount versus vessel capacity
+  outcome: concern
+  summary: Retain the reported 10 mL solution and remove unsupported cup capacity.
+  target_ids:
+  - cmmmech:billietite
+  evidence_ids:
+  - owner
+  - primary
+findings:
+- finding_id: solution-volume
+  issue_key: billietite-solution-volume-role
+  category: quantity
+  severity: minor
+  status: open
+  certainty: confirmed
+  title: Solution volume was assigned to the vessel
+  description: The context says 10 mL polyethylene cup; page949 specifies a cup containing
+    10 mL solution. Revise to preserve the measured solution volume without inventing
+    capacity.
+  target_ids:
+  - cmmmech:billietite
+  field_paths:
+  - mechanisms[0].context
+  evidence_ids:
+  - owner
+  - primary
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/billietite.yaml
+    role: scientific_record
+actions:
+- action_id: correct-volume
+  description: Correct the maintained context and append actual EDIT history, then
+    save a linked successor on final bytes.
+  finding_ids:
+  - solution-volume
+  target_ids:
+  - cmmmech:billietite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/billietite.yaml
+    role: scientific_record
+  acceptance_checks:
+  - State 10 mL solution in a polyethylene cup; no capacity claim.
+  - Named validation and final required gates pass; successor retains exact initial
+    finding occurrence.
+limitations:
+- This is a scoped initial observation; full final scientific review and batch checks
+  are pending.

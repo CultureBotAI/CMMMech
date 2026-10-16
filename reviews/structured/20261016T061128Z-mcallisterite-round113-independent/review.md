@@ -1,0 +1,474 @@
+# Independent scientific review of mcallisterite
+
+- Review: 20261016T061128Z-mcallisterite-round113-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-16T06:01:23.422708Z
+- Finished UTC: 2026-10-16T06:11:28.103660Z
+- Reviewer: codex /root/round104_ree (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Mcallisterite passes with limitations: current mineral identity, mixed natural-sample characterization and the separate synthetic stepped-heating observations are supported. Null results and the source water-fraction inconsistency remain visible; no corrective owner defect was found.
+
+## Scope And Provenance
+
+Exact frozen mcallisterite owner, source claims and canonical/inline creation provenance; wider follow-up leads and hosted publication excluded.
+
+Selection: Assigned target captured with native inspect before independent scientific assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ebff7bf980911e7be86bf19d865aeeca8450781.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:mcallisterite | data/records/mcallisterite.yaml | maintained | Mcallisterite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:mcallisterite | Two records checked with zero failures; subprocess receipt and exact hashes verified. |
+| Final batch command 1 | passed | True | cmmmech:mcallisterite | Coordinator execution 2026-10-16T06:05:54.995960+00:00 through 2026-10-16T06:10:28.420371+00:00; terminal receipt and log digest verified independently. |
+| Final batch command 2 | passed | True | cmmmech:mcallisterite | Coordinator execution 2026-10-16T06:10:28.420392+00:00 through 2026-10-16T06:10:39.020688+00:00; terminal receipt and log digest verified independently. |
+| Final batch command 3 | passed | True | cmmmech:mcallisterite | Coordinator execution 2026-10-16T06:10:39.020714+00:00 through 2026-10-16T06:10:44.664882+00:00; terminal receipt and log digest verified independently. |
+| Final batch command 4 | passed | True | cmmmech:mcallisterite | Coordinator execution 2026-10-16T06:10:44.664912+00:00 through 2026-10-16T06:10:49.443511+00:00; terminal receipt and log digest verified independently. |
+
+## Scientific And Domain Assessments
+
+### Species and analytical materials
+
+identity: supported. Targets: cmmmech:mcallisterite.
+
+Current name/formula/IMA1963-012 are supported. Natural Mott prospect mixtures, separately synthesized crystals and elemental/commodity boron are not conflated.
+
+### Impurity-adjusted natural chemistry
+
+quantity: supported. Targets: cmmmech:mcallisterite.
+
+Tables4–5 subtract assumed impurity contributions from impure B/C samples; the owner correctly avoids representing their normalized values as pure-mineral direct measurements. Powder impurity peaks are retained.
+
+### Synthetic sequential heating
+
+evidence: supported. Targets: cmmmech:mcallisterite.
+
+Half-gram synthetic material, sixteen hours per step105–450°C and additional sixteen hours at280/400/450°C are supported. These are cumulative sequence results, not independent equilibrium boundaries or an ore-processing assay.
+
+### Mass loss and null observations
+
+quantity: supported. Targets: cmmmech:mcallisterite.
+
+Table3 gives zero loss at105/115°C, cumulative5.10wt% at130°C,22.62wt% at140°C and35.24wt% after second450°C hold. Calculated water35.15wt% is explicitly calculated. Prose half-total statement is not adopted; no discrete intermediate/product identity is inferred.
+
+### Laboratory alteration and missing controls
+
+scope: supported. Targets: cmmmech:mcallisterite.
+
+Abiotic thermal dehydration is bounded to this synthetic protocol. Replication, atmosphere and evolved-gas identity are unspecified; no microbial strain, isolated boron yield, deployment or criticality designation is introduced.
+
+### Frozen inputs and completed checks
+
+provenance: supported. Targets: cmmmech:mcallisterite.
+
+Native inspection captured exact owner, canonical CREATE history, paired dossier and schema bytes before judgment. Final captured inputs remain unchanged; initial capture is retained and the later context-only inventory correction has a separately verified exact transform. Independent named validation and the actual completed coordinator batch/history checks passed. Saved-review validation and publication are later gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| initial_capture | /private/tmp/cmm-round113-ree-research/borate-review-mcallisterite-inspect.json; Initial native capture before scientific judgment; additive context capture followed a one-character deferred-source inventory correction. | context_only | Original review start and exact original inputs are retained; later context correction does not rewrite this observation. |
+| record | data/records/mcallisterite.yaml; Complete exact working-tree bytes at /private/tmp/CMMMech-expansion-round113-20261016/data/records/mcallisterite.yaml | supports | Identity, scientific descriptions, source-level claims, mechanism scope and inline CREATE independently checked. |
+| history | history/records/mcallisterite/2026-10-16T055923Z-codex-7edb86.yaml; Complete canonical CREATE at /private/tmp/CMMMech-expansion-round113-20261016/history/records/mcallisterite/2026-10-16T055923Z-codex-7edb86.yaml | supports | Actual actor codex, GPT-6/codex metadata, timestamp and target correspond to this addition; inline and canonical events remain distinct. |
+| dossier | research/sources/round113-borates/20261016T060107Z-source-investigation.json; Paired source investigation; acquisition and access limits checked independently against original artifacts. /private/tmp/CMMMech-expansion-round113-20261016/research/sources/round113-borates/20261016T060107Z-source-investigation.json | context_only | Context for source provenance and deferred evidence; not a substitute for the original papers. |
+| search | /private/tmp/cmm-round113-ree-research/borate-review-search.json; Two exact title/mineral correction queries and two mineral microbial countersearches; separate initial broad notice searches retained. | context_only | No directly affecting formal notice or mineral-specific microbial mechanism identified in returned sets. Known structural revision/internal conflicts remain explicit; no universal absence claim. |
+| dedup | /private/tmp/cmm-round113-ree-research/borate-review-dedup.txt; Hidden, ignored and followed search across worktree records, research, reviews and history; curator broader dedup includes original-main ignored reports and cited raw roots. | context_only | Target identities occur in the assigned owners; other current-record references are contextual. Curator broader pre-curation dedup was independently inspected. |
+| source_paths | /private/tmp/cmm-round113-ree-research/borate-review-source-path-check.json; All cited absolute artifact paths and SHA256 values in the source dossier independently checked. | context_only | Raw provenance is readable and exact; this does not substitute for scientific inspection. |
+| context_correction | /private/tmp/cmm-round113-ree-research/borate-review-context-correction.json; Exact before/after dossier bytes and unchanged accepted owners/history/Markdown independently verified. | context_only | Deferred2019 figure inventory corrected from1–5 to1–4; prior native captures preserved and additive fresh context inspected. No2019 scientific claim is accepted. |
+| named | /private/tmp/cmm-round113-ree-research/borate-review-named-validation.json; Independent two-owner strict validation with exact hashes and actual subprocess timestamps. | supports | Two records checked; zero failed. 2026-10-16T06:03:53.942526Z through 2026-10-16T06:03:57.415120Z |
+| batch | /private/tmp/cmm-round113-final-gates.json; Coordinator terminal receipt; base, worktree, exact four commands, successful outcomes, unchanged owner hashes and log SHA256 independently verified. Log /private/tmp/cmm-round113-final-gates.log SHA256 47d61c9a50c6857f5b058589ca16d022891a4c7dc7bbcd065bfc5c3c7863d907 | supports | Actual completed local batch, not an inferred check or hosted publication result. |
+| primary | https://msaweb.org/AmMin/AM50/AM50_629.pdf; Full 12-page original pp.629–640 independently read and visually inspected, Tables1–5/Figures1–2; synthetic chemical properties p.633, Table3 heating p.636, natural impurity calculations pp.637–638, synthesis and failed evaporation p.639. /private/tmp/cmm-round113-borates-research/mcallisterite1965.pdf | supports | Natural Mott prospect material retains impurities; synthetic crystals support accurate physical/single-crystal properties and the separate half-gram stepped-heating experiment. The 16-hour sequential holds, repeated280/400/450°C, zero105/115°C losses and cumulative table values match the owner. Table/prose140°C water-fraction conflict remains explicit. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Fresh shared current September2026 authority PDF, definitions p.1 and Mcallisterite row p.138 visually checked; exact PDF hash matches independent REE download. /private/tmp/cmm-round113-borates-research/ima2026-09.pdf | supports | Current approved mineral Mcallisterite, Mg2[B6O7(OH)6]2·9H2O, IMA1963-012; historical Macallisterite spelling/oxide formula refers to this species. |
+
+## Limits And Additional Notes
+
+- The original lacks controlled atmosphere, replication and evolved-gas analysis; mass loss is interpreted as water and no heated-phase structure is established.
+- Natural impurity-subtraction and synthetic experimental arms cannot be pooled. Later2014/2019 leads are deferred, not evidence independently accepted in this review.
+- Shared source acquisition is disclosed. Bounded correction and hidden/ignored dedup searches do not establish exhaustive absence.
+- Working-tree review at the retained base. Record validation is separate from scientific truth; native review-check and committed-head/hosted publication remain separate.
+- No owner/history/dossier correction was needed for these borate targets. Unavailable original deposits and retained source conflicts remain limitations.
+- No self-authored REE record is scientifically reviewed in this observation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261016T061128Z-mcallisterite-round113-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of mcallisterite
+started_at: '2026-10-16T06:01:23.422708Z'
+finished_at: '2026-10-16T06:11:28.103660Z'
+reviewer:
+  identity: codex /root/round104_ree
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_borates; no edits
+    to the reviewed borate owner/history/dossier. Reviewer authored unrelated kukharenkoite-(Ce)
+    and cordylite-(Ce) records. Source acquisition was shared, then original articles
+    and authority were independently inspected.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 9ebff7bf980911e7be86bf19d865aeeca8450781
+  state: working_tree
+  inputs:
+  - path: data/records/mcallisterite.yaml
+    sha256: 199009423ed1f432fc2e7bf5f7c71ed9961c571eb5759de7c4a00fb6b196cbb7
+    role: target
+  - path: history/records/mcallisterite/2026-10-16T055923Z-codex-7edb86.yaml
+    sha256: cad5d1469422ca7b891597d405f3d484400c0927bc9f0cf54e9ca3c6aa5debdd
+    role: context
+  - path: research/sources/round113-borates/20261016T060107Z-source-investigation.json
+    sha256: 6800fda7ec0c3e0998a03e9e2b54bfbd5326a58070cb75e8347265915758dea8
+    role: context
+  - path: research/sources/round113-borates/20261016T060107Z-source-investigation.md
+    sha256: 2ad64692dee3456253d9eddb1e78c1be98bff749019e887e76bf78463e054b78
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:mcallisterite
+  path: data/records/mcallisterite.yaml
+  label: Mcallisterite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/mcallisterite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/mcallisterite/2026-10-16T055923Z-codex-7edb86.yaml
+    role: canonical_history
+scope:
+  description: Exact frozen mcallisterite owner, source claims and canonical/inline
+    creation provenance; wider follow-up leads and hosted publication excluded.
+  selection: Assigned target captured with native inspect before independent scientific
+    assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:mcallisterite
+evidence:
+- evidence_id: initial_capture
+  kind: record_content
+  reference: /private/tmp/cmm-round113-ree-research/borate-review-mcallisterite-inspect.json
+  locator: Initial native capture before scientific judgment; additive context capture
+    followed a one-character deferred-source inventory correction.
+  accessed_at: '2026-10-16T06:11:28.103660Z'
+  support: context_only
+  summary: Original review start and exact original inputs are retained; later context
+    correction does not rewrite this observation.
+  snapshot_sha256: a93ef7042e9da013a9b973df365b8af3523696bcd737fb280dd103fd7663d8ed
+- evidence_id: record
+  kind: record_content
+  reference: data/records/mcallisterite.yaml
+  locator: Complete exact working-tree bytes at /private/tmp/CMMMech-expansion-round113-20261016/data/records/mcallisterite.yaml
+  accessed_at: '2026-10-16T06:11:28.103660Z'
+  support: supports
+  summary: Identity, scientific descriptions, source-level claims, mechanism scope
+    and inline CREATE independently checked.
+  snapshot_sha256: 199009423ed1f432fc2e7bf5f7c71ed9961c571eb5759de7c4a00fb6b196cbb7
+- evidence_id: history
+  kind: record_content
+  reference: history/records/mcallisterite/2026-10-16T055923Z-codex-7edb86.yaml
+  locator: Complete canonical CREATE at /private/tmp/CMMMech-expansion-round113-20261016/history/records/mcallisterite/2026-10-16T055923Z-codex-7edb86.yaml
+  accessed_at: '2026-10-16T06:11:28.103660Z'
+  support: supports
+  summary: Actual actor codex, GPT-6/codex metadata, timestamp and target correspond
+    to this addition; inline and canonical events remain distinct.
+  snapshot_sha256: cad5d1469422ca7b891597d405f3d484400c0927bc9f0cf54e9ca3c6aa5debdd
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round113-borates/20261016T060107Z-source-investigation.json
+  locator: Paired source investigation; acquisition and access limits checked independently
+    against original artifacts. /private/tmp/CMMMech-expansion-round113-20261016/research/sources/round113-borates/20261016T060107Z-source-investigation.json
+  accessed_at: '2026-10-16T06:11:28.103660Z'
+  support: context_only
+  summary: Context for source provenance and deferred evidence; not a substitute for
+    the original papers.
+  snapshot_sha256: 6800fda7ec0c3e0998a03e9e2b54bfbd5326a58070cb75e8347265915758dea8
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round113-ree-research/borate-review-search.json
+  locator: Two exact title/mineral correction queries and two mineral microbial countersearches;
+    separate initial broad notice searches retained.
+  accessed_at: '2026-10-16T06:11:28.103660Z'
+  support: context_only
+  summary: No directly affecting formal notice or mineral-specific microbial mechanism
+    identified in returned sets. Known structural revision/internal conflicts remain
+    explicit; no universal absence claim.
+  snapshot_sha256: 5d61d70382f074bce8dc443a75fbcfdf24372d1a5d24c29f1fb8451f47134a2f
+  search_scope: Returned web sets for four queries recorded verbatim; no date or domain
+    filter. Publisher metadata and secondary search snippets were not scientific support.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round113-ree-research/borate-review-dedup.txt
+  locator: Hidden, ignored and followed search across worktree records, research,
+    reviews and history; curator broader dedup includes original-main ignored reports
+    and cited raw roots.
+  accessed_at: '2026-10-16T06:11:28.103660Z'
+  support: context_only
+  summary: Target identities occur in the assigned owners; other current-record references
+    are contextual. Curator broader pre-curation dedup was independently inspected.
+  snapshot_sha256: 4efb379a3b0f6f1dcbd26e987fe8b5bf7c852338dd393dd733aeea4e90221dbc
+  search_scope: Bounded text roots and identifiers/DOIs recorded in paired search
+    receipt; not the whole filesystem or unextracted binary content.
+- evidence_id: source_paths
+  kind: record_content
+  reference: /private/tmp/cmm-round113-ree-research/borate-review-source-path-check.json
+  locator: All cited absolute artifact paths and SHA256 values in the source dossier
+    independently checked.
+  accessed_at: '2026-10-16T06:11:28.103660Z'
+  support: context_only
+  summary: Raw provenance is readable and exact; this does not substitute for scientific
+    inspection.
+  snapshot_sha256: 34a19a3bd3acd156c81f0e6247c08d866ecb0392ca3fa97e594913d54a94809b
+- evidence_id: context_correction
+  kind: record_content
+  reference: /private/tmp/cmm-round113-ree-research/borate-review-context-correction.json
+  locator: Exact before/after dossier bytes and unchanged accepted owners/history/Markdown
+    independently verified.
+  accessed_at: '2026-10-16T06:11:28.103660Z'
+  support: context_only
+  summary: Deferred2019 figure inventory corrected from1–5 to1–4; prior native captures
+    preserved and additive fresh context inspected. No2019 scientific claim is accepted.
+  snapshot_sha256: ce62f49caa8cb44ce498e36ec2400f385b48baa92886840815201619bd0fc3be
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round113-ree-research/borate-review-named-validation.json
+  locator: Independent two-owner strict validation with exact hashes and actual subprocess
+    timestamps.
+  accessed_at: '2026-10-16T06:11:28.103660Z'
+  support: supports
+  summary: Two records checked; zero failed. 2026-10-16T06:03:53.942526Z through 2026-10-16T06:03:57.415120Z
+  snapshot_sha256: 0b8693eee0ed579c3f699d686162c2d2fd2131c754ee0b6be1f7bd8fe2002268
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round113-final-gates.json
+  locator: Coordinator terminal receipt; base, worktree, exact four commands, successful
+    outcomes, unchanged owner hashes and log SHA256 independently verified. Log /private/tmp/cmm-round113-final-gates.log
+    SHA256 47d61c9a50c6857f5b058589ca16d022891a4c7dc7bbcd065bfc5c3c7863d907
+  accessed_at: '2026-10-16T06:11:28.103660Z'
+  support: supports
+  summary: Actual completed local batch, not an inferred check or hosted publication
+    result.
+  snapshot_sha256: 44d42e6f650408fed95cf49a83cad6a12d0a52329961f3f5cc960a659da7ccc4
+- evidence_id: primary
+  kind: primary_source
+  reference: https://msaweb.org/AmMin/AM50/AM50_629.pdf
+  locator: Full 12-page original pp.629–640 independently read and visually inspected,
+    Tables1–5/Figures1–2; synthetic chemical properties p.633, Table3 heating p.636,
+    natural impurity calculations pp.637–638, synthesis and failed evaporation p.639.
+    /private/tmp/cmm-round113-borates-research/mcallisterite1965.pdf
+  accessed_at: '2026-10-16T06:11:28.103660Z'
+  support: supports
+  summary: Natural Mott prospect material retains impurities; synthetic crystals support
+    accurate physical/single-crystal properties and the separate half-gram stepped-heating
+    experiment. The 16-hour sequential holds, repeated280/400/450°C, zero105/115°C
+    losses and cumulative table values match the owner. Table/prose140°C water-fraction
+    conflict remains explicit.
+  snapshot_sha256: 85391e3900e0239c16537261f2d3468a1e7979fd694f1815d281655beed22276
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Fresh shared current September2026 authority PDF, definitions p.1 and Mcallisterite
+    row p.138 visually checked; exact PDF hash matches independent REE download. /private/tmp/cmm-round113-borates-research/ima2026-09.pdf
+  accessed_at: '2026-10-16T06:11:28.103660Z'
+  support: supports
+  summary: Current approved mineral Mcallisterite, Mg2[B6O7(OH)6]2·9H2O, IMA1963-012;
+    historical Macallisterite spelling/oxide formula refers to this species.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/mcallisterite.yaml data/records/tunellite.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Two records checked with zero failures; subprocess receipt and exact hashes
+    verified.
+  target_ids:
+  - cmmmech:mcallisterite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Final batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T06:05:54.995960+00:00 through 2026-10-16T06:10:28.420371+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:mcallisterite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Final batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T06:10:28.420392+00:00 through 2026-10-16T06:10:39.020688+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:mcallisterite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Final batch command 3
+  command: uv run --locked cmmmech validate-history --base 9ebff7bf980911e7be86bf19d865aeeca8450781
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T06:10:39.020714+00:00 through 2026-10-16T06:10:44.664882+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:mcallisterite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Final batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T06:10:44.664912+00:00 through 2026-10-16T06:10:49.443511+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:mcallisterite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species and analytical materials
+  outcome: supported
+  summary: Current name/formula/IMA1963-012 are supported. Natural Mott prospect mixtures,
+    separately synthesized crystals and elemental/commodity boron are not conflated.
+  target_ids:
+  - cmmmech:mcallisterite
+  evidence_ids:
+  - record
+  - ima
+  - primary
+- assessment_id: chemistry
+  area: quantity
+  topic: Impurity-adjusted natural chemistry
+  outcome: supported
+  summary: Tables4–5 subtract assumed impurity contributions from impure B/C samples;
+    the owner correctly avoids representing their normalized values as pure-mineral
+    direct measurements. Powder impurity peaks are retained.
+  target_ids:
+  - cmmmech:mcallisterite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: thermal
+  area: evidence
+  topic: Synthetic sequential heating
+  outcome: supported
+  summary: Half-gram synthetic material, sixteen hours per step105–450°C and additional
+    sixteen hours at280/400/450°C are supported. These are cumulative sequence results,
+    not independent equilibrium boundaries or an ore-processing assay.
+  target_ids:
+  - cmmmech:mcallisterite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: measurements
+  area: quantity
+  topic: Mass loss and null observations
+  outcome: supported
+  summary: Table3 gives zero loss at105/115°C, cumulative5.10wt% at130°C,22.62wt%
+    at140°C and35.24wt% after second450°C hold. Calculated water35.15wt% is explicitly
+    calculated. Prose half-total statement is not adopted; no discrete intermediate/product
+    identity is inferred.
+  target_ids:
+  - cmmmech:mcallisterite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: scope
+  area: scope
+  topic: Laboratory alteration and missing controls
+  outcome: supported
+  summary: Abiotic thermal dehydration is bounded to this synthetic protocol. Replication,
+    atmosphere and evolved-gas identity are unspecified; no microbial strain, isolated
+    boron yield, deployment or criticality designation is introduced.
+  target_ids:
+  - cmmmech:mcallisterite
+  evidence_ids:
+  - record
+  - primary
+  - ima
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen inputs and completed checks
+  outcome: supported
+  summary: Native inspection captured exact owner, canonical CREATE history, paired
+    dossier and schema bytes before judgment. Final captured inputs remain unchanged;
+    initial capture is retained and the later context-only inventory correction has
+    a separately verified exact transform. Independent named validation and the actual
+    completed coordinator batch/history checks passed. Saved-review validation and
+    publication are later gates.
+  target_ids:
+  - cmmmech:mcallisterite
+  evidence_ids:
+  - record
+  - history
+  - dossier
+  - named
+  - batch
+findings: []
+actions: []
+summary: 'Mcallisterite passes with limitations: current mineral identity, mixed natural-sample
+  characterization and the separate synthetic stepped-heating observations are supported.
+  Null results and the source water-fraction inconsistency remain visible; no corrective
+  owner defect was found.'
+limitations:
+- The original lacks controlled atmosphere, replication and evolved-gas analysis;
+  mass loss is interpreted as water and no heated-phase structure is established.
+- Natural impurity-subtraction and synthetic experimental arms cannot be pooled. Later2014/2019
+  leads are deferred, not evidence independently accepted in this review.
+- Shared source acquisition is disclosed. Bounded correction and hidden/ignored dedup
+  searches do not establish exhaustive absence.
+- Working-tree review at the retained base. Record validation is separate from scientific
+  truth; native review-check and committed-head/hosted publication remain separate.
+notes:
+- No owner/history/dossier correction was needed for these borate targets. Unavailable
+  original deposits and retained source conflicts remain limitations.
+- No self-authored REE record is scientifically reviewed in this observation.
+```

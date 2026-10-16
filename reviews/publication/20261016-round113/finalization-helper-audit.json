@@ -1,0 +1,72 @@
+{
+  "review_kind": "additive_static_publication_helper_audit",
+  "recorded_at": "2026-10-16T06:11:07.597048+00:00",
+  "reviewer": "Codex /root/round104_ree (GPT-6; codex)",
+  "base": "9ebff7bf980911e7be86bf19d865aeeca8450781",
+  "worktree": "/private/tmp/CMMMech-expansion-round113-20261016",
+  "predecessor": {
+    "path": "reviews/publication/20261016-round113/helper-audit.json",
+    "sha256": "a1f5355a5006e5fbd977b4439f073bff9e842e5d23cfbef6f36df0a4233b50a6"
+  },
+  "helpers": [
+    {
+      "path": "/private/tmp/cmm-round113-finalize.py",
+      "sha256": "73920f06537600a47c7259fa17c0b7666ab544cb642f544d99dc9f54f0c4b4a0",
+      "predecessor_path": "/private/tmp/cmm-round112-finalize.py",
+      "predecessor_sha256": "4952009a989078d8979b80eb9b12be917e60c29e6da6c27daf56c483cc8a39e2",
+      "normalized_diff": [
+        "--- \n",
+        "+++ \n",
+        "@@ -42,7 +42,7 @@\n",
+        "  c=json.loads((T/'cmm-round113-cleanup-receipt.json').read_text());assert c['exit_code']==0 and c['merge_commit']==MERGE and c['local_branch_absent'] and c['remote_branch_absent']",
+        "  # Require explicit semantic acceptance bound to the exact retained acquisition and evidence.",
+        "  h=json.loads(Path(args.hosted_assessment).read_text());validate_semantic_assessment(h,json.loads((T/'cmm-round113-push-receipt.json').read_text())['pr']['number'],T/'cmm-round113-hosted-final/acquisition-receipt.json',sha,lambda path:json.loads(Path(path).read_text()));assert h['state']=='completed' and h['exit_code']==0 and h['finished_at'] and h['all_five_latest_attempts_successful'] and h['topic_head']==HEAD and h['tree']==TREE and h['merge_sha']==MERGE and h['base']==BASE;assert {x['label'] for x in h['runs']}=={'pr-strict','queue-strict','main-strict','merge-integrity','pages'} and all(x['passed'] for x in h['runs']);assert all(sha(x['output'])==x['sha256'] for x in h['queries']);r['hosted_assessment']={'path':args.hosted_assessment,'sha256':sha(args.hosted_assessment)}",
+        "- before=T/'cmm-round113-preservation-before.json';d=json.loads(before.read_text());assert sha(before)=='237aa360b28b8b135572425e0546f86db75f02b7773dbbd11100a4b9d770c6ab';assert Path(d['main']['path'])==M",
+        "+ before=T/'cmm-round113-preservation-before.json';d=json.loads(before.read_text());assert sha(before)=='e152a9b087337a778fad4178dc7bd9b3b763a3a3c326f77d33d48c8e3d8df66d';assert Path(d['main']['path'])==M",
+        "  assert git('branch','--show-current')=='main' and git('rev-parse','HEAD')==BASE and not git('status','--porcelain=v1','--untracked-files=all');baseline_unchanged(d)",
+        "  assert git('ls-remote','origin','refs/heads/main').split()==[MERGE,'refs/heads/main']",
+        "  git('fetch','origin','main','--tags');assert git('rev-parse','origin/main')==MERGE;assert git('rev-list','--parents','-n','1',MERGE).split()==[MERGE,BASE];assert git('rev-parse',MERGE+'^{tree}')==TREE"
+      ],
+      "syntax_valid": true
+    },
+    {
+      "path": "/private/tmp/cmm-round113-archive.py",
+      "sha256": "7273e956b4b1c1a7a51499e07d36af46119a3c98616ae451b7aa1f4e88d1f5af",
+      "predecessor_path": "/private/tmp/cmm-round112-archive.py",
+      "predecessor_sha256": "d66e61632393e17c52b6c20e6eec62531d88bced8c3d27759a71f30963cf866c",
+      "normalized_diff": [
+        "--- \n",
+        "+++ \n",
+        "@@ -2,7 +2,7 @@\n",
+        " from datetime import datetime,timezone",
+        " import hashlib,json,shutil,subprocess",
+        " T=Path('/private/tmp');M=Path('/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech');out=M/'reports/publication/round113-20261016';sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest()",
+        "-f=json.loads((T/'cmm-round113-final-preservation.json').read_text());assert f['exit_code']==0 and f['finished_at'] and f['preserved_nontracked_entries']==12881",
+        "+f=json.loads((T/'cmm-round113-final-preservation.json').read_text());assert f['exit_code']==0 and f['finished_at'] and f['preserved_nontracked_entries']==13257",
+        " assert subprocess.check_output(['git','-C',str(M),'rev-parse','HEAD'],text=True).strip()==f['merge_commit']",
+        " assert not subprocess.check_output(['git','-C',str(M),'status','--porcelain=v1','--untracked-files=all'],text=True).strip()",
+        " assert subprocess.run(['git','-C',str(M),'check-ignore','--quiet',str(out)]).returncode==0"
+      ],
+      "syntax_valid": true
+    }
+  ],
+  "preservation_baseline": {
+    "path": "/private/tmp/cmm-round113-preservation-before.json",
+    "sha256": "e152a9b087337a778fad4178dc7bd9b3b763a3a3c326f77d33d48c8e3d8df66d",
+    "entries": 13257
+  },
+  "checks": [
+    "Full static read and AST/compile of both scripts without importing or executing their main bodies. Compared against round112 after explicit namespace/base normalization; only the preservation receipt digest and expected entry count differ.",
+    "Finalizer checks current commit/config/helper digests, exact postmerge base/topic/tree, successful required commands in the clone, coverage counts and hashes, log digest, and cleanup result before original-main mutation.",
+    "Finalizer requires a named positive independent hosted semantic assessment bound to the exact collector bytes and all five successful workflows, with completed hashed annotations/discussions/job-log sections; raw collector success alone is insufficient.",
+    "Original main must be at the trusted base and clean with the expected origin; all 13,257 baseline hidden/ignored/nontracked entries are checked by bytes/mode/symlink target before and after fast-forward. Newly tracked path collisions, remote main mismatch, unexpected merge parent/tree, surviving topic refs or altered retained tag fail closed.",
+    "Archive requires successful final preservation and current merged main, requires the destination to be ignored, creates it exclusively, rejects symlink source files, verifies every copied digest, and preserves tracked cleanliness. Hosted job logs nested under hosted-final are included recursively."
+  ],
+  "findings": [],
+  "verdict": "pass_with_limitations",
+  "limitations": [
+    "Static helper review only; no Git, network, clone, finalizer or archive operation was executed. Actual committed-head, postmerge, hosted semantic and preservation receipts remain future evidence.",
+    "The archive deliberately retains raw scientific downloads and fresh clones in their original temporary paths; this scope is explicit in its manifest."
+  ],
+  "independence": "Reviewer authored the current REE pair and separate scientific reviews of the borate pair, but did not author or alter these publication helpers."
+}

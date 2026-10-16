@@ -1,0 +1,271 @@
+schema_version: 1.0.0
+review_id: 20261016T061124Z-billietite-round113-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Billietite
+started_at: '2026-10-16T06:04:59.047000Z'
+finished_at: '2026-10-16T06:11:24.063014Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Uranium agent authored owner/history and corrected the reported
+    methods finding. Root independently checked exact bytes, original evidence and
+    source figures; shared acquisition does not substitute for assessment.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Narrow evidence-backed claims supported; source uncertainties retained. Initial
+  minor volume-role finding resolved.
+source:
+  git_revision: 9ebff7bf980911e7be86bf19d865aeeca8450781
+  state: working_tree
+  inputs:
+  - path: data/records/billietite.yaml
+    sha256: 29f1a2b6d7f98fc1c8a601725bc5d7bf0153ece58f91d1989c6823a175b05ca2
+    role: target
+  - path: history/records/billietite/2026-10-16T055903Z-codex-212b70.yaml
+    sha256: 5930772c4d6210c955a2dfc84016ee34e43eb88cc596ac385232f35a2ca97577
+    role: context
+  - path: history/records/billietite/2026-10-16T060248Z-codex-86b20e.yaml
+    sha256: 7713fcf254a86ac230f172a3606a09a3727c3fa72365e67f2f6a98c347146533
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- kind: maintained
+  label: Billietite
+  owner_paths:
+  - path: data/records/billietite.yaml
+    repository: CultureBotAI/CMMMech
+    role: maintained_record
+  path: data/records/billietite.yaml
+  target_id: cmmmech:billietite
+scope:
+  description: Entire final owner and actual history, independently assessed at claim
+    level; no experimental replication or model refitting.
+  selection: Native capture of exact final owner before final assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:billietite
+checks:
+- check_id: batch0
+  name: Required final gate
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  summary: Actual terminal receipt and log verified; exact record hash matches.
+  target_ids:
+  - cmmmech:billietite
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Required final gate
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  summary: Actual terminal receipt and log verified; exact record hash matches.
+  target_ids:
+  - cmmmech:billietite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Required final gate
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 9ebff7bf980911e7be86bf19d865aeeca8450781
+  exit_code: 0
+  summary: Actual terminal receipt and log verified; exact record hash matches.
+  target_ids:
+  - cmmmech:billietite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Required final gate
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  summary: Actual terminal receipt and log verified; exact record hash matches.
+  target_ids:
+  - cmmmech:billietite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/billietite.yaml
+  locator: Exact final native-inspected working bytes; retained /private/tmp/CMMMech-expansion-round113-20261016/data/records/billietite.yaml
+  accessed_at: '2026-10-16T06:11:24.063014Z'
+  snapshot_sha256: 29f1a2b6d7f98fc1c8a601725bc5d7bf0153ece58f91d1989c6823a175b05ca2
+  support: supports
+  summary: Complete owner independently checked against accepted primary sources and
+    scoped uncertainty.
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/billietite/2026-10-16T055903Z-codex-212b70.yaml
+  locator: Entire canonical session and separate inline event; retained /private/tmp/CMMMech-expansion-round113-20261016/history/records/billietite/2026-10-16T055903Z-codex-212b70.yaml
+  accessed_at: '2026-10-16T06:11:24.063014Z'
+  snapshot_sha256: 5930772c4d6210c955a2dfc84016ee34e43eb88cc596ac385232f35a2ca97577
+  support: supports
+  summary: Actual actor, target, event and finished work match; CREATE and subsequent
+    correction remain separate.
+- evidence_id: history1
+  kind: record_content
+  reference: history/records/billietite/2026-10-16T060248Z-codex-86b20e.yaml
+  locator: Entire canonical session and separate inline event; retained /private/tmp/CMMMech-expansion-round113-20261016/history/records/billietite/2026-10-16T060248Z-codex-86b20e.yaml
+  accessed_at: '2026-10-16T06:11:24.063014Z'
+  snapshot_sha256: 7713fcf254a86ac230f172a3606a09a3727c3fa72365e67f2f6a98c347146533
+  support: supports
+  summary: Actual actor, target, event and finished work match; CREATE and subsequent
+    correction remain separate.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions and visually checked rows pages26 and49; retained /private/tmp/cmm-round113-uranium-research/ima202609.pdf
+  accessed_at: '2026-10-16T06:11:24.063014Z'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  support: supports
+  summary: Billietite is grandfathered1947, compreignacite approved1964-026; formulas
+    and statuses supported without inherited criticality.
+- evidence_id: identity
+  kind: primary_source
+  reference: https://doi.org/10.2113/gscanmin.44.5.1197
+  locator: Natural-specimen methods and refinement pp1198-1199; structure and interlayer
+    discussion pp1201-1204; p1198 visually checked; retained /private/tmp/cmm-round113-uranium-research/billietite2006-rruff.pdf
+  accessed_at: '2026-10-16T06:11:24.063014Z'
+  snapshot_sha256: 0ba036ee1b2c9ed0320ac6ed45c48c2ce401d66ae941aac8c52b35b1b632eecf
+  support: supports
+  summary: Shaba untwinned crystal, Pbn21 and eight-water revision support the scoped
+    natural identity. Hydrogen bonding inferred, not directly located hydrogen.
+- evidence_id: experiment
+  kind: primary_source
+  reference: https://doi.org/10.2113/gscanmin.45.4.945
+  locator: Methods pp949-950, results pp950-954, Figures3-5/8 and relief discussion
+    p958; original pages5,6,10,13,14 visually checked; retained /private/tmp/cmm-round113-uranium-research/billietite2007.pdf
+  accessed_at: '2026-10-16T06:11:24.063014Z'
+  snapshot_sha256: 0448fbf2ddd9b36326e8dc317c9365d753ee32dee9a13a5ae2c8ee759384b762
+  support: supports
+  summary: One crystal in10mLsolution, different surface preparations/times, source
+    salt/specimen-label conflicts, Pb null-pit arm and exsitu relief versus rate distinctions
+    checked. No isolated-product yield.
+- evidence_id: search
+  kind: search
+  reference: Independent bounded owner and notice queries
+  locator: Exact hidden/ignored/followed current-owner search and web query record;
+    retained /private/tmp/cmm-round113-uranium-independent-search.json
+  accessed_at: '2026-10-16T06:11:24.063014Z'
+  snapshot_sha256: 15ed3a37d25eee7789f2719d1bb6a346b9902f98979e21de24258b81b8bc31d0
+  support: context_only
+  summary: No duplicate owner or affecting notice identified within the stated search
+    scope; pre-existing uranophane context is not an owner of either new identity.
+  search_scope: Current data/records including hidden/ignored files and relevant symlinks;
+    first returned DOI/title correction/retraction search windows on2026-10-16. Not
+    global absence or exhaustion.
+- evidence_id: batch
+  kind: validation
+  reference: Final exact-byte batch gates
+  locator: Four command rows, terminal outcome, base/worktree/log hashes; retained
+    /private/tmp/cmm-round113-final-gates.json
+  accessed_at: '2026-10-16T06:11:24.063014Z'
+  snapshot_sha256: 44d42e6f650408fed95cf49a83cad6a12d0a52329961f3f5cc960a659da7ccc4
+  support: supports
+  summary: just check, require-records, trusted-base histories and generated-page
+    check all pass on unchanged owner bytes.
+- evidence_id: prior
+  kind: prior_review
+  reference: reviews/structured/20261016T060125Z-billietite-round113-initial/review.yaml
+  locator: Initial solution-volume finding; retained /private/tmp/CMMMech-expansion-round113-20261016/reviews/structured/20261016T060125Z-billietite-round113-initial/review.yaml
+  accessed_at: '2026-10-16T06:11:24.063014Z'
+  snapshot_sha256: 26ecf1779b070bea1365ddf4e012c7d9b1e4479a73b579c86ac1f99077e21971
+  support: context_only
+  summary: Initial error remains immutable; successor explicitly resolves the exact
+    occurrence.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Natural mineral and experimental material
+  outcome: supported
+  summary: Natural species, hydration and separate experimental specimens remain explicit.
+  target_ids:
+  - cmmmech:billietite
+  evidence_ids:
+  - owner
+  - ima
+  - identity
+- assessment_id: science
+  area: evidence
+  topic: Abiotic observations and causal limits
+  outcome: supported
+  summary: The accepted surface observations are source-specific. Source-label conflicts
+    are excluded, model adsorption/protonation is not directly observed, and AFM relief
+    is not a bulk extraction rate. The solution-volume transcription is corrected.
+  target_ids:
+  - cmmmech:billietite
+  evidence_ids:
+  - owner
+  - experiment
+- assessment_id: provenance
+  area: provenance
+  topic: Curation and source versions
+  outcome: supported
+  summary: Canonical actual histories, primary-source versions, named locators and
+    limits are retained.
+  target_ids:
+  - cmmmech:billietite
+  evidence_ids:
+  - history0
+  - search
+  - batch
+findings:
+- finding_id: solution-volume-resolved
+  issue_key: billietite-solution-volume-role
+  category: quantity
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Solution volume correctly assigned
+  description: Final context states10mLsolution in a polyethylene cup, without asserting
+    capacity.
+  target_ids:
+  - cmmmech:billietite
+  field_paths:
+  - mechanisms[0].context
+  evidence_ids:
+  - owner
+  - experiment
+  - prior
+  - history1
+  - batch
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/billietite.yaml
+    role: scientific_record
+  disposition_reason: Primary page949 and corrected final bytes agree; actual EDIT
+    session records the correction and final checks pass.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261016T060125Z-billietite-round113-initial
+    finding_id: solution-volume
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/476
+actions: []
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261016T060125Z-billietite-round113-initial
+  relationship: Resolves scoped initial methods finding after correction and final
+    validation
+limitations:
+- Independent agent review is not external human peer review.
+- Claim-bearing text and selected primary figures/tables inspected, not every page
+  independently visually reread.
+- Unacquired structure-factor deposits and final typeset2017 article remain unavailable;
+  no raw structure or transport-model reproduction.
+- Retained source contradictions cannot be resolved by offline validation or bounded
+  web searching.
