@@ -1,0 +1,504 @@
+# Independent scientific review of Bainbridgeite-(YCe)
+
+- Review: 20261016T052336Z-bainbridgeite-yce-round112-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-16T05:16:54.342681Z
+- Finished UTC: 2026-10-16T05:23:36.516684Z
+- Reviewer: codex /root/round104_borates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Species identity, material boundaries and the stated experimental or observational scope are supported. No corrective owner finding in this review.
+
+## Scope And Provenance
+
+Complete assigned owner, identity, primary evidence, experimental/observational limits and history. Other records and publication operations excluded.
+
+Selection: Assigned frozen owner; native capture before assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base e3a638e04d9e64cbda7c26d277bdf4f5e7d1e3ae.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:bainbridgeite-yce | data/records/bainbridgeite-yce.yaml | maintained | Bainbridgeite-(YCe) |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:bainbridgeite-yce | Checked 2 record(s); 0 failed. Actual 2026-10-16T05:18:34.565538+00:00 through 2026-10-16T05:18:38.837555+00:00 |
+| Completed coordinator batch command 1 | passed | True | cmmmech:bainbridgeite-yce | Actual execution 2026-10-16T05:17:37.662362+00:00 through 2026-10-16T05:23:06.499523+00:00 in /private/tmp/CMMMech-expansion-round112-20261016. Receipt/log/current target bytes independently verified. |
+| Completed coordinator batch command 2 | passed | True | cmmmech:bainbridgeite-yce | Actual execution 2026-10-16T05:23:06.499548+00:00 through 2026-10-16T05:23:16.807287+00:00 in /private/tmp/CMMMech-expansion-round112-20261016. Receipt/log/current target bytes independently verified. |
+| Completed coordinator batch command 3 | passed | True | cmmmech:bainbridgeite-yce | Actual execution 2026-10-16T05:23:16.807325+00:00 through 2026-10-16T05:23:22.416153+00:00 in /private/tmp/CMMMech-expansion-round112-20261016. Receipt/log/current target bytes independently verified. |
+| Completed coordinator batch command 4 | passed | True | cmmmech:bainbridgeite-yce | Actual execution 2026-10-16T05:23:22.416175+00:00 through 2026-10-16T05:23:27.151993+00:00 in /private/tmp/CMMMech-expansion-round112-20261016. Receipt/log/current target bytes independently verified. |
+
+## Scientific And Domain Assessments
+
+### Species identity and scope
+
+identity: supported. Targets: cmmmech:bainbridgeite-yce.
+
+The current IMA September 2026 row, PDF page 19, verifies approved species IMA 2020-065 and Na2Ba2YCe(CO3)6(H2O)3. The two-element suffix describes dominant cations at separate sites. It is distinct from the NdCe species, alicewilsonite-(YCe), elemental Y/Ce/Ba and mixed resources.
+
+### Natural characterization and measurement provenance
+
+evidence: supported. Targets: cmmmech:bainbridgeite-yce.
+
+The complete 2024 Part 3 original, pp. 184–187 and Figures 1–2/Table 1, supports holotype CMNMC 46324 from Mont Saint-Hilaire, five analyses averaging 8.24 wt% Y2O3 and 8.38 wt% Ce2O3, and separate additional specimens. Methods p. 187 specifies 20 kV, 10 nA and 20–50 micrometre beams with time-dependent intensity corrections. CO2 and water were calculated from stoichiometry because material was insufficient; IR is qualitative evidence of water.
+
+### Experiment, observation and causal limits
+
+evidence: supported. Targets: cmmmech:bainbridgeite-yce.
+
+No extraction or controlled transformation is claimed. The 293 K triclinic P1 model, rounded R1=0.040 and 21:79 twin, agrees with Table 3 and deposited CIF. Text p. 189 and Table 4 constrain atom assignments using chemistry, scattering and charge balance, omit Ca, and represent light/heavy lanthanides by Ce/Dy. There are no H atom coordinates. Table 6 compares experimentally refined Y6 scattering 40.1 electrons against assigned-model 38.3; this is not a direct site-specific elemental assay. The 2026 Part 5 pp. 420–421/Figures 1–2 identifies an NdCe rim on the photographed YCe holotype crystal, with an intermediate YCe/AliceYCe zone; its PXRD and SXRD explicitly average mixed phases and are not substituted for the 2024 model. Natural intergrowth/replacement and unquantified HCl effervescence do not establish extraction or recovery.
+
+### Criticality, microbial and deployment boundaries
+
+evidence: supported. Targets: cmmmech:bainbridgeite-yce.
+
+No jurisdiction/list/edition criticality claim, microbial causation, ore recovery efficiency or industrial deployment is asserted.
+
+### Exact bytes, histories and completed checks
+
+provenance: supported. Targets: cmmmech:bainbridgeite-yce.
+
+Captured inputs and frozen hashes are unchanged. Actual canonical/inline events and completed checks support provenance.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/bainbridgeite-yce.yaml; Complete frozen owner, captured before assessment. | supports | The current IMA September 2026 row, PDF page 19, verifies approved species IMA 2020-065 and Na2Ba2YCe(CO3)6(H2O)3. The two-element suffix describes dominant cations at separate sites. It is distinct from the NdCe species, alicewilsonite-(YCe), elemental Y/Ce/Ba and mixed resources. |
+| history | history/records/bainbridgeite-yce/2026-10-16T051318Z-codex-root-round104-ree-6cc98c.yaml; Canonical CREATE plus distinct inline event; actor, target and actual timestamps checked. | supports | Codex/GPT-6 metadata and new-owner provenance are supported. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Definitions p. 1 and rows pp.7/19 visually checked; independent borate-lane authority acquisition has the same current SHA256. | supports | Species names, formulas and identifier scopes verified. |
+| dossier | research/sources/round112-ree/20261016T051500Z-source-investigation.json; Full paired source dossier, original acquisitions and final freeze independently inspected. | context_only | Context supports provenance; it is not a substitute for originals. |
+| search | /private/tmp/cmm-round112-borates-research/review-ree-web.json; Independent exact DOI correction/erratum/retraction queries and direct publisher opens on 2026-10-16. | context_only | No affecting correction identified in returned sets; bounded search only. |
+| dedup | /private/tmp/cmm-round112-borates-research/review-ree-dedup.json; Nine matching context files in current records/research/reviews/history. | context_only | No distinct duplicate owner found within this bounded current text scope; curator broader precreation inventory independently read. |
+| named | /private/tmp/cmm-round112-borates-research/review-ree-named-validation.json; Actual independent named validation, exact current target hashes. | supports | Two records checked, zero failures. |
+| baseline | /private/tmp/cmm-round112-baseline.json; Completed initial baseline, retained log hash 827265f8973a655d42c858609f868150b9ae1a13fa6ff71139574dec62707f7e | context_only | Baseline context, not final-state validation. |
+| batch | /private/tmp/cmm-round112-final-gates.json; Actual four-command final batch, base/cwd/unique rows/zero exits/unchanged target hashes; log hash f6e95074e1034b872d873b0caf50b42b2bc1ce6aeab595195dc489fa37c2614b | supports | Required batch checks passed. Later native whole-corpus and publication gates are separate. |
+| original | https://doi.org/10.5194/ejm-36-183-2024; Complete 12-page original read; Figures1–8/Tables1–7 visually inspected, including methods p187 and constrained model pp188–191. | supports | The complete 2024 Part 3 original, pp. 184–187 and Figures 1–2/Table 1, supports holotype CMNMC 46324 from Mont Saint-Hilaire, five analyses averaging 8.24 wt% Y2O3 and 8.38 wt% Ce2O3, and separate additional specimens. Methods p. 187 specifies 20 kV, 10 nA and 20–50 micrometre beams with time-dependent intensity corrections. CO2 and water were calculated from stoichiometry because material was insufficient; IR is qualitative evidence of water. No extraction or controlled transformation is claimed. The 293 K triclinic P1 model, rounded R1=0.040 and 21:79 twin, agrees with Table 3 and deposited CIF. Text p. 189 and Table 4 constrain atom assignments using chemistry, scattering and charge balance, omit Ca, and represent light/heavy lanthanides by Ce/Dy. There are no H atom coordinates. Table 6 compares experimentally refined Y6 scattering 40.1 electrons against assigned-model 38.3; this is not a direct site-specific elemental assay. The 2026 Part 5 pp. 420–421/Figures 1–2 identifies an NdCe rim on the photographed YCe holotype crystal, with an intermediate YCe/AliceYCe zone; its PXRD and SXRD explicitly average mixed phases and are not substituted for the 2024 model. Natural intergrowth/replacement and unquantified HCl effervescence do not establish extraction or recovery. |
+| cif | https://doi.org/10.5194/ejm-36-183-2024-supplement; Official Supplement/bainbridgeite-(YCe).cif header, symmetry, atom-site loops and hydrogen metadata; 293(2) K, R1=.0396 and inversion twin .215(14). | supports | CIF supports the qualified structural scope and absent H coordinates. Associated XY has24436 numeric two-column rows; format/endpoints inspected without rerefinement. |
+| context2026 | https://doi.org/10.5194/ejm-38-419-2026; Part5 pp420–421/Figures1–2 and p428; read original text and visually checked p421. | context_only | Later study identifies the photographed YCe holotype core/intermediate zone/NdCe rim and explicitly limits both diffraction datasets to mixed-phase averages; no full NdCe curation inferred. |
+
+## Limits And Additional Notes
+
+- The natural holotype is zoned; chemistry from five selected analyses is not whole-crystal homogeneity or an ore assay.
+- CO2/H2O are calculated; the constrained and twinned structural model omits hydrogen and uses lanthanide scattering proxies. No independent diffraction refinement was performed.
+- The 2024 optical/powder inconsistencies and carbon-site label permutations are retained in the source dossier but omitted as precise owner claims. Experimental and assigned-model Y6 scattering differ.
+- The 2026 NdCe work was inspected for the directly relevant sampling and mixed-phase boundary; this review does not accept a complete new NdCe record or mechanism.
+- Bounded notice and identity searches do not establish exhaustive literature coverage. Shared source acquisition is not independent experimental replication.
+- No criticality claim is made; omission does not mean the material is absent from every criticality list.
+- Native whole-corpus review validation and exact-head publication checks are separate later gates.
+- Pre-judgment capture and actual command receipts retained externally. No maintained target edits by this reviewer.
+- Qualified source limitations are not manufactured corrective findings.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261016T052336Z-bainbridgeite-yce-round112-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Bainbridgeite-(YCe)
+started_at: '2026-10-16T05:16:54.342681Z'
+finished_at: '2026-10-16T05:23:36.516684Z'
+reviewer:
+  identity: codex /root/round104_borates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_ree. No target owner/history/dossier
+    edits. Reviewer authored unrelated probertite/priceite records. Shared original
+    acquisitions disclosed; primary text and relevant figures/tables independently
+    assessed after native capture.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Species identity, material boundaries and the stated experimental or observational
+  scope are supported. No corrective owner finding in this review.
+source:
+  git_revision: e3a638e04d9e64cbda7c26d277bdf4f5e7d1e3ae
+  state: working_tree
+  inputs:
+  - path: data/records/bainbridgeite-yce.yaml
+    sha256: ff8a8bc1cb5f180d599138784ec50cfa725f80ef833e4266be6a0387616185fa
+    role: target
+  - path: history/records/bainbridgeite-yce/2026-10-16T051318Z-codex-root-round104-ree-6cc98c.yaml
+    sha256: e0cd45795a10097ab4b57e5f245f8b42f4ff7ce7df4443e02818ce186bdf4751
+    role: context
+  - path: research/sources/round112-ree/20261016T051500Z-source-investigation.json
+    sha256: 04dd3e8b0208537f2445bc285f757a03103085f922922260edeadbcf136b4f62
+    role: context
+  - path: research/sources/round112-ree/20261016T051500Z-source-investigation.md
+    sha256: 360dea15681518f29bee78c5bfe240cb19af4dd858c6bfaa1f29b98f9fbe07b8
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:bainbridgeite-yce
+  path: data/records/bainbridgeite-yce.yaml
+  label: Bainbridgeite-(YCe)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/bainbridgeite-yce.yaml
+    role: maintained record
+scope:
+  description: Complete assigned owner, identity, primary evidence, experimental/observational
+    limits and history. Other records and publication operations excluded.
+  selection: Assigned frozen owner; native capture before assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:bainbridgeite-yce
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/bainbridgeite-yce.yaml data/records/alicewilsonite-yla.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Checked 2 record(s); 0 failed. Actual 2026-10-16T05:18:34.565538+00:00
+    through 2026-10-16T05:18:38.837555+00:00
+  target_ids:
+  - cmmmech:bainbridgeite-yce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Completed coordinator batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T05:17:37.662362+00:00 through 2026-10-16T05:23:06.499523+00:00
+    in /private/tmp/CMMMech-expansion-round112-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:bainbridgeite-yce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Completed coordinator batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T05:23:06.499548+00:00 through 2026-10-16T05:23:16.807287+00:00
+    in /private/tmp/CMMMech-expansion-round112-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:bainbridgeite-yce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch command 3
+  command: uv run --locked cmmmech validate-history --base e3a638e04d9e64cbda7c26d277bdf4f5e7d1e3ae
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T05:23:16.807325+00:00 through 2026-10-16T05:23:22.416153+00:00
+    in /private/tmp/CMMMech-expansion-round112-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:bainbridgeite-yce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T05:23:22.416175+00:00 through 2026-10-16T05:23:27.151993+00:00
+    in /private/tmp/CMMMech-expansion-round112-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:bainbridgeite-yce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/bainbridgeite-yce.yaml
+  locator: Complete frozen owner, captured before assessment.
+  accessed_at: '2026-10-16T05:23:36.516684Z'
+  support: supports
+  summary: The current IMA September 2026 row, PDF page 19, verifies approved species
+    IMA 2020-065 and Na2Ba2YCe(CO3)6(H2O)3. The two-element suffix describes dominant
+    cations at separate sites. It is distinct from the NdCe species, alicewilsonite-(YCe),
+    elemental Y/Ce/Ba and mixed resources.
+  snapshot_sha256: ff8a8bc1cb5f180d599138784ec50cfa725f80ef833e4266be6a0387616185fa
+- evidence_id: history
+  kind: record_content
+  reference: history/records/bainbridgeite-yce/2026-10-16T051318Z-codex-root-round104-ree-6cc98c.yaml
+  locator: Canonical CREATE plus distinct inline event; actor, target and actual timestamps
+    checked.
+  accessed_at: '2026-10-16T05:23:36.516684Z'
+  support: supports
+  summary: Codex/GPT-6 metadata and new-owner provenance are supported.
+  snapshot_sha256: e0cd45795a10097ab4b57e5f245f8b42f4ff7ce7df4443e02818ce186bdf4751
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions p. 1 and rows pp.7/19 visually checked; independent borate-lane
+    authority acquisition has the same current SHA256.
+  accessed_at: '2026-10-16T05:23:36.516684Z'
+  support: supports
+  summary: Species names, formulas and identifier scopes verified.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round112-ree/20261016T051500Z-source-investigation.json
+  locator: Full paired source dossier, original acquisitions and final freeze independently
+    inspected.
+  accessed_at: '2026-10-16T05:23:36.516684Z'
+  support: context_only
+  summary: Context supports provenance; it is not a substitute for originals.
+  snapshot_sha256: 04dd3e8b0208537f2445bc285f757a03103085f922922260edeadbcf136b4f62
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round112-borates-research/review-ree-web.json
+  locator: Independent exact DOI correction/erratum/retraction queries and direct
+    publisher opens on 2026-10-16.
+  accessed_at: '2026-10-16T05:23:36.516684Z'
+  support: context_only
+  summary: No affecting correction identified in returned sets; bounded search only.
+  snapshot_sha256: 99269d23c9089980497fbd10db32394614275789afbd154a0f52644a05486f2a
+  search_scope: Exact two 2024 and one 2026 DOI notice queries; first returned sets
+    and primary publisher landing pages, not exhaustive literature coverage.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round112-borates-research/review-ree-dedup.json
+  locator: Nine matching context files in current records/research/reviews/history.
+  accessed_at: '2026-10-16T05:23:36.516684Z'
+  support: context_only
+  summary: No distinct duplicate owner found within this bounded current text scope;
+    curator broader precreation inventory independently read.
+  snapshot_sha256: 3987b9f0ab1a4ac0629efd7e408d23bc0bbac04724b1b08a9c3755354830a7e0
+  search_scope: rg --no-ignore --hidden --follow over named W roots; bainbridgeite-(YCe)/alicewilsonite-(YLa)
+    names and slugs, exact DOIs and IMA:2020-065/2021-047. Ignored files included;
+    no machine-wide absence claim.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round112-borates-research/review-ree-named-validation.json
+  locator: Actual independent named validation, exact current target hashes.
+  accessed_at: '2026-10-16T05:23:36.516684Z'
+  support: supports
+  summary: Two records checked, zero failures.
+  snapshot_sha256: fb118374a965071615021e18cf2283b496805e878e8a6ff400fb65c5bd804ac8
+- evidence_id: baseline
+  kind: validation
+  reference: /private/tmp/cmm-round112-baseline.json
+  locator: Completed initial baseline, retained log hash 827265f8973a655d42c858609f868150b9ae1a13fa6ff71139574dec62707f7e
+  accessed_at: '2026-10-16T05:23:36.516684Z'
+  support: context_only
+  summary: Baseline context, not final-state validation.
+  snapshot_sha256: 532830035662c0492a185af8e26d7be76d4eccc65581417e676418c28ea7fb5b
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round112-final-gates.json
+  locator: Actual four-command final batch, base/cwd/unique rows/zero exits/unchanged
+    target hashes; log hash f6e95074e1034b872d873b0caf50b42b2bc1ce6aeab595195dc489fa37c2614b
+  accessed_at: '2026-10-16T05:23:36.516684Z'
+  support: supports
+  summary: Required batch checks passed. Later native whole-corpus and publication
+    gates are separate.
+  snapshot_sha256: 5211cc2ab6a7cc4d7143f4e604ef6abbbd51ce3e9cd8727d5ef9083acd14c2b5
+- evidence_id: original
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-36-183-2024
+  locator: Complete 12-page original read; Figures1–8/Tables1–7 visually inspected,
+    including methods p187 and constrained model pp188–191.
+  accessed_at: '2026-10-16T05:23:36.516684Z'
+  support: supports
+  summary: The complete 2024 Part 3 original, pp. 184–187 and Figures 1–2/Table 1,
+    supports holotype CMNMC 46324 from Mont Saint-Hilaire, five analyses averaging
+    8.24 wt% Y2O3 and 8.38 wt% Ce2O3, and separate additional specimens. Methods p.
+    187 specifies 20 kV, 10 nA and 20–50 micrometre beams with time-dependent intensity
+    corrections. CO2 and water were calculated from stoichiometry because material
+    was insufficient; IR is qualitative evidence of water. No extraction or controlled
+    transformation is claimed. The 293 K triclinic P1 model, rounded R1=0.040 and
+    21:79 twin, agrees with Table 3 and deposited CIF. Text p. 189 and Table 4 constrain
+    atom assignments using chemistry, scattering and charge balance, omit Ca, and
+    represent light/heavy lanthanides by Ce/Dy. There are no H atom coordinates. Table
+    6 compares experimentally refined Y6 scattering 40.1 electrons against assigned-model
+    38.3; this is not a direct site-specific elemental assay. The 2026 Part 5 pp.
+    420–421/Figures 1–2 identifies an NdCe rim on the photographed YCe holotype crystal,
+    with an intermediate YCe/AliceYCe zone; its PXRD and SXRD explicitly average mixed
+    phases and are not substituted for the 2024 model. Natural intergrowth/replacement
+    and unquantified HCl effervescence do not establish extraction or recovery.
+  snapshot_sha256: 18d1a8e35e4e18b4d019fcc26024dfe70806f85f5fd30f28619ea306b98e1fea
+- evidence_id: cif
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-36-183-2024-supplement
+  locator: Official Supplement/bainbridgeite-(YCe).cif header, symmetry, atom-site
+    loops and hydrogen metadata; 293(2) K, R1=.0396 and inversion twin .215(14).
+  accessed_at: '2026-10-16T05:23:36.516684Z'
+  support: supports
+  summary: CIF supports the qualified structural scope and absent H coordinates. Associated
+    XY has24436 numeric two-column rows; format/endpoints inspected without rerefinement.
+  snapshot_sha256: 41bd397a911674a7bfab8738e30cafafcb9e23bc7c085bfdccbfc49a854cab6c
+- evidence_id: context2026
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-38-419-2026
+  locator: Part5 pp420–421/Figures1–2 and p428; read original text and visually checked
+    p421.
+  accessed_at: '2026-10-16T05:23:36.516684Z'
+  support: context_only
+  summary: Later study identifies the photographed YCe holotype core/intermediate
+    zone/NdCe rim and explicitly limits both diffraction datasets to mixed-phase averages;
+    no full NdCe curation inferred.
+  snapshot_sha256: 087bb792baf93b8ebdc388c9d4fc079fe5f0eed50e6949f845499b70d99c06d1
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species identity and scope
+  outcome: supported
+  summary: The current IMA September 2026 row, PDF page 19, verifies approved species
+    IMA 2020-065 and Na2Ba2YCe(CO3)6(H2O)3. The two-element suffix describes dominant
+    cations at separate sites. It is distinct from the NdCe species, alicewilsonite-(YCe),
+    elemental Y/Ce/Ba and mixed resources.
+  target_ids:
+  - cmmmech:bainbridgeite-yce
+  evidence_ids:
+  - record
+  - ima
+- assessment_id: natural
+  area: evidence
+  topic: Natural characterization and measurement provenance
+  outcome: supported
+  summary: The complete 2024 Part 3 original, pp. 184–187 and Figures 1–2/Table 1,
+    supports holotype CMNMC 46324 from Mont Saint-Hilaire, five analyses averaging
+    8.24 wt% Y2O3 and 8.38 wt% Ce2O3, and separate additional specimens. Methods p.
+    187 specifies 20 kV, 10 nA and 20–50 micrometre beams with time-dependent intensity
+    corrections. CO2 and water were calculated from stoichiometry because material
+    was insufficient; IR is qualitative evidence of water.
+  target_ids:
+  - cmmmech:bainbridgeite-yce
+  evidence_ids:
+  - record
+  - original
+- assessment_id: mechanism
+  area: evidence
+  topic: Experiment, observation and causal limits
+  outcome: supported
+  summary: No extraction or controlled transformation is claimed. The 293 K triclinic
+    P1 model, rounded R1=0.040 and 21:79 twin, agrees with Table 3 and deposited CIF.
+    Text p. 189 and Table 4 constrain atom assignments using chemistry, scattering
+    and charge balance, omit Ca, and represent light/heavy lanthanides by Ce/Dy. There
+    are no H atom coordinates. Table 6 compares experimentally refined Y6 scattering
+    40.1 electrons against assigned-model 38.3; this is not a direct site-specific
+    elemental assay. The 2026 Part 5 pp. 420–421/Figures 1–2 identifies an NdCe rim
+    on the photographed YCe holotype crystal, with an intermediate YCe/AliceYCe zone;
+    its PXRD and SXRD explicitly average mixed phases and are not substituted for
+    the 2024 model. Natural intergrowth/replacement and unquantified HCl effervescence
+    do not establish extraction or recovery.
+  target_ids:
+  - cmmmech:bainbridgeite-yce
+  evidence_ids:
+  - record
+  - original
+  - cif
+  - context2026
+  dimensions:
+  - name: material_form
+    value: Natural holotype CMNMC 46324; selected microprobe analyses separated from
+      other specimens and a later-identified NdCe rim.
+    definition: Species-specific characterization is not a uniform whole-crystal or
+      ore assay.
+    evidence_ids:
+    - original
+    - cif
+    - context2026
+  - name: conditions
+    value: WDS 20 kV, 10 nA, 20–50 micrometre beam; SXRD 293 K.
+    definition: Characterization conditions, not leaching conditions.
+    evidence_ids:
+    - original
+    - cif
+    - context2026
+  - name: outcome
+    value: Five-analysis Y2O3/Ce2O3 means and constrained P1 model with twin refinement.
+    definition: Oxide concentrations and structural assignments do not measure isolated-product
+      recovery.
+    evidence_ids:
+    - original
+    - cif
+    - context2026
+- assessment_id: scope
+  area: evidence
+  topic: Criticality, microbial and deployment boundaries
+  outcome: supported
+  summary: No jurisdiction/list/edition criticality claim, microbial causation, ore
+    recovery efficiency or industrial deployment is asserted.
+  target_ids:
+  - cmmmech:bainbridgeite-yce
+  evidence_ids:
+  - record
+  - original
+  - cif
+  - context2026
+- assessment_id: provenance
+  area: provenance
+  topic: Exact bytes, histories and completed checks
+  outcome: supported
+  summary: Captured inputs and frozen hashes are unchanged. Actual canonical/inline
+    events and completed checks support provenance.
+  target_ids:
+  - cmmmech:bainbridgeite-yce
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - dossier
+  - search
+  - dedup
+findings: []
+actions: []
+limitations:
+- The natural holotype is zoned; chemistry from five selected analyses is not whole-crystal
+  homogeneity or an ore assay.
+- CO2/H2O are calculated; the constrained and twinned structural model omits hydrogen
+  and uses lanthanide scattering proxies. No independent diffraction refinement was
+  performed.
+- The 2024 optical/powder inconsistencies and carbon-site label permutations are retained
+  in the source dossier but omitted as precise owner claims. Experimental and assigned-model
+  Y6 scattering differ.
+- The 2026 NdCe work was inspected for the directly relevant sampling and mixed-phase
+  boundary; this review does not accept a complete new NdCe record or mechanism.
+- Bounded notice and identity searches do not establish exhaustive literature coverage.
+  Shared source acquisition is not independent experimental replication.
+- No criticality claim is made; omission does not mean the material is absent from
+  every criticality list.
+- Native whole-corpus review validation and exact-head publication checks are separate
+  later gates.
+notes:
+- Pre-judgment capture and actual command receipts retained externally. No maintained
+  target edits by this reviewer.
+- Qualified source limitations are not manufactured corrective findings.
+```

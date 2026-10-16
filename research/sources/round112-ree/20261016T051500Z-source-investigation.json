@@ -1,0 +1,448 @@
+{
+  "schema": "cmmmech-source-investigation-local-v1",
+  "timestamp_utc": "2026-10-16T05:15:00.607882+00:00",
+  "actor": "codex /root/round104_ree",
+  "model": "GPT-6",
+  "tool": "codex",
+  "worktree": "/private/tmp/CMMMech-expansion-round112-20261016",
+  "base": "e3a638e04d9e64cbda7c26d277bdf4f5e7d1e3ae",
+  "scope": "Two new natural mineral identities; controlled transformation, recovery, biology and criticality are not asserted.",
+  "selection": [
+    {
+      "slug": "bainbridgeite-yce",
+      "kind": "mineral",
+      "identifier": "IMA:2020-065",
+      "primary_doi": "10.5194/ejm-36-183-2024",
+      "decision": "Curate specimen-resolved identity and limited characterization; include current 2026 holotype-rim qualification."
+    },
+    {
+      "slug": "alicewilsonite-yla",
+      "kind": "mineral",
+      "identifier": "IMA:2021-047",
+      "primary_doi": "10.5194/ejm-36-301-2024",
+      "decision": "Curate natural Paratoo holotype identity with measured/calculated and model boundaries."
+    }
+  ],
+  "search": {
+    "date_utc": "2026-10-16",
+    "provider": "web search tool plus official Copernicus/Crossref/CNMNC downloads",
+    "queries": [
+      "ancylite Ce La crystal structure original mineral primary PDF",
+      "mckelveyite Nd ewaldite mineral crystal structure 2023 primary paper",
+      "ancylite lanthanum cerium hydrothermal synthesis dissolution carbonate primary",
+      "site:ejm.copernicus.org \"Mckelveyite\" \"Part 3\"",
+      "site:ejm.copernicus.org \"Mckelveyite\" \"Part 4\"",
+      "\"10.5194/ejm-36-183-2024\" correction corrigendum retraction",
+      "\"10.5194/ejm-36-301-2024\" correction corrigendum retraction",
+      "\"bainbridgeite-(YCe)\" dissolution hydrothermal transformation microbial",
+      "\"alicewilsonite-(YLa)\" alteration synthesis microbial",
+      "\"10.5194/ejm-38-419-2026\" correction corrigendum retraction",
+      "\"alicewilsonite-(YLa)\" \"O19\" \"CIF\""
+    ],
+    "coverage": "Returned result sets only, no exhaustive pagination; query discovery responses for the first five queries were inspected but not serialized. Counterevidence result snapshots are retained. No affecting correction/retraction identified in returned sets or the two 2024 Crossref relation/update fields; this is not an exhaustive absence claim.",
+    "raw_result_refs": [
+      {
+        "path": "/private/tmp/cmm-round112-ree-research/web-counter-primary.json",
+        "sha256": "a9b262feb5f3169626af6266a5a26b23ceb2b3583dc561e07f22a489e5c767c7",
+        "bytes": 24297
+      },
+      {
+        "path": "/private/tmp/cmm-round112-ree-research/web-last-counter.json",
+        "sha256": "d6c5e3e5849804cc5950e2fab753f4ced48bb326bb77b8989793362c1598b98e",
+        "bytes": 11958
+      }
+    ],
+    "local_dedup": {
+      "candidate-dedup.json": {
+        "started_at": "2026-10-16T05:05:56.334095+00:00",
+        "finished_at": "2026-10-16T05:05:56.529745+00:00",
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-i",
+          "-l",
+          "alicewilsonite.?\\(?YLa|bainbridgeite|mckelveyite|ancylite",
+          "/private/tmp/CMMMech-expansion-round112-20261016/data/records",
+          "/private/tmp/CMMMech-expansion-round112-20261016/research",
+          "/private/tmp/CMMMech-expansion-round112-20261016/reviews",
+          "/private/tmp/CMMMech-expansion-round112-20261016/history",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports",
+          "/private/tmp/cmm-round111-ree-research",
+          "/private/tmp/cmm-round110-ree-research",
+          "/private/tmp/cmm-round109-ree-research"
+        ],
+        "cwd": "/private/tmp/CMMMech-expansion-round112-20261016",
+        "exit_code": 0,
+        "stderr": "",
+        "roots_missing": [],
+        "matched_file_count": 66,
+        "raw": "/private/tmp/cmm-round112-ree-research/candidate-dedup-files.txt",
+        "raw_sha256": "98351d93904984c90baceb51892a8376a6e1bdd2409cadc1af84499a9d47e5ae",
+        "boundary": "Hidden/ignored included, relevant symlinks followed. Named worktree text roots, main ignored reports and cited preceding REE roots; not machine-wide or unextracted binaries."
+      },
+      "selected-literal-dedup.json": {
+        "timestamp_utc": "2026-10-16T05:06:54.031072+00:00",
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-n",
+          "-i",
+          "-F",
+          "-e",
+          "alicewilsonite-(YLa)",
+          "-e",
+          "alicewilsonite-yla",
+          "-e",
+          "bainbridgeite-(YCe)",
+          "-e",
+          "bainbridgeite-yce",
+          "-e",
+          "10.5194/ejm-36-183-2024",
+          "-e",
+          "10.5194/ejm-36-301-2024",
+          "-e",
+          "IMA:2020-065",
+          "-e",
+          "IMA:2021-047",
+          "/private/tmp/CMMMech-expansion-round112-20261016/data/records",
+          "/private/tmp/CMMMech-expansion-round112-20261016/research",
+          "/private/tmp/CMMMech-expansion-round112-20261016/reviews",
+          "/private/tmp/CMMMech-expansion-round112-20261016/history",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports",
+          "/private/tmp/cmm-round111-ree-research",
+          "/private/tmp/cmm-round110-ree-research",
+          "/private/tmp/cmm-round109-ree-research"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "match_line_count": 89,
+        "raw": "/private/tmp/cmm-round112-ree-research/selected-literal-dedup.txt",
+        "sha256": "5b7dc2d60f9eb44524226f16b805975e056a489feb7a17ed52aa5c9919088f66",
+        "scope": "Hidden/ignored/followed explicit roots, literal names/slugs/DOIs and IMA CURIEs. Original candidate regex is retained but its YLa alternative had extra escaping; this independent literal search governs selected-pair conclusions."
+      },
+      "current-owner-dedup.json": {
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-n",
+          "-i",
+          "-F",
+          "-e",
+          "alicewilsonite-(YLa)",
+          "-e",
+          "alicewilsonite-yla",
+          "-e",
+          "bainbridgeite-(YCe)",
+          "-e",
+          "bainbridgeite-yce",
+          "-e",
+          "10.5194/ejm-36-183-2024",
+          "-e",
+          "10.5194/ejm-36-301-2024",
+          "-e",
+          "2020-065",
+          "-e",
+          "2021-047",
+          "data/records"
+        ],
+        "cwd": "/private/tmp/CMMMech-expansion-round112-20261016",
+        "exit_code": 0,
+        "raw_sha256": "ca81c5aa48a12bda2d5593d7329db2261355a3c1b4c85cbc4d65526d0e34eb21",
+        "matches": 1,
+        "interpretation": "Context only in existing AliceYCe; no selected id/name/IMA identity owner in searched hidden/ignored/followed record files."
+      }
+    },
+    "identity_interpretation": "Selected literal names/slugs/DOIs/IMA identifiers occurred as prior-source context, not selected current owners. Existing AliceYCe description is the sole current-owner text match. All named roots include hidden/ignored files and followed symlinks; unextracted binaries and unrelated home/temp directories are outside the claim.",
+    "issues": {
+      "inventory": {
+        "path": "/private/tmp/cmm-round112-open-issues.json",
+        "sha256": "7dfb3908f968b1c8feef32374b189970540cfae0c56cf2cfbd795486b13775d7",
+        "bytes": 385364
+      },
+      "count": 161,
+      "coverage": "Open titles/bodies only; comments excluded. Existing #463 concerns AliceYCe rather than either selected owner. Root should deduplicate proposed source follow-ups against its final all-state inventory."
+    }
+  },
+  "acquisition": [
+    {
+      "name": "bainbridgeite2024.pdf",
+      "url": "https://ejm.copernicus.org/articles/36/183/2024/ejm-36-183-2024.pdf",
+      "started_at": "2026-10-16T05:06:42.265243+00:00",
+      "finished_at": "2026-10-16T05:07:07.823841+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "path": "/private/tmp/cmm-round112-ree-research/bainbridgeite2024.pdf",
+      "bytes": 9677063,
+      "sha256": "18d1a8e35e4e18b4d019fcc26024dfe70806f85f5fd30f28619ea306b98e1fea",
+      "content_verified": "pdf"
+    },
+    {
+      "name": "bainbridgeite2024.xml",
+      "url": "https://ejm.copernicus.org/articles/36/183/2024/ejm-36-183-2024.xml",
+      "started_at": "2026-10-16T05:06:42.266028+00:00",
+      "finished_at": "2026-10-16T05:06:44.396443+00:00",
+      "status": 200,
+      "content_type": "application/xml",
+      "path": "/private/tmp/cmm-round112-ree-research/bainbridgeite2024.xml",
+      "bytes": 243616,
+      "sha256": "7dcaf454c8d758b96b1aae936333e808fa2f4a09e06892f9946d4b2317eaf021",
+      "content_verified": "text_candidate"
+    },
+    {
+      "name": "bainbridgeite2024.html",
+      "url": "https://ejm.copernicus.org/articles/36/183/2024/",
+      "started_at": "2026-10-16T05:06:42.266518+00:00",
+      "finished_at": "2026-10-16T05:06:44.203013+00:00",
+      "status": 200,
+      "content_type": "text/html",
+      "path": "/private/tmp/cmm-round112-ree-research/bainbridgeite2024.html",
+      "bytes": 271638,
+      "sha256": "c89eaf40bdba57c5d0939477341419f868a01cba32d93e16c74359f65eeb67af",
+      "content_verified": "text_candidate"
+    },
+    {
+      "name": "bainbridgeite2024.zip",
+      "url": "https://ejm.copernicus.org/articles/36/183/2024/ejm-36-183-2024-supplement.zip",
+      "started_at": "2026-10-16T05:06:42.266951+00:00",
+      "finished_at": "2026-10-16T05:06:45.055331+00:00",
+      "status": 200,
+      "content_type": "application/zip",
+      "path": "/private/tmp/cmm-round112-ree-research/bainbridgeite2024.zip",
+      "bytes": 477344,
+      "sha256": "c8842622fedd45a339c7346cc4c9a5eed59f7d6dfa7bdd394a3eaf3d1d90c435",
+      "content_verified": "zip"
+    },
+    {
+      "name": "bainbridgeite2024-crossref.json",
+      "url": "https://api.crossref.org/works/10.5194/ejm-36-183-2024",
+      "started_at": "2026-10-16T05:06:44.203114+00:00",
+      "finished_at": "2026-10-16T05:06:44.876313+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "path": "/private/tmp/cmm-round112-ree-research/bainbridgeite2024-crossref.json",
+      "bytes": 10353,
+      "sha256": "b35586dc007703aeeb61da778791ecfaa6735dec2835a7237a7e52a98bab7355",
+      "content_verified": "text_candidate"
+    },
+    {
+      "name": "alicewilsonite-yla2024.pdf",
+      "url": "https://ejm.copernicus.org/articles/36/301/2024/ejm-36-301-2024.pdf",
+      "started_at": "2026-10-16T05:06:44.396545+00:00",
+      "finished_at": "2026-10-16T05:06:54.369936+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "path": "/private/tmp/cmm-round112-ree-research/alicewilsonite-yla2024.pdf",
+      "bytes": 3269432,
+      "sha256": "17a65c134a4284ee1394e53ab6fde6c41c5b7ae9ac22a1924f60139ec99151f5",
+      "content_verified": "pdf"
+    },
+    {
+      "name": "alicewilsonite-yla2024.xml",
+      "url": "https://ejm.copernicus.org/articles/36/301/2024/ejm-36-301-2024.xml",
+      "started_at": "2026-10-16T05:06:44.876450+00:00",
+      "finished_at": "2026-10-16T05:06:46.793178+00:00",
+      "status": 200,
+      "content_type": "application/xml",
+      "path": "/private/tmp/cmm-round112-ree-research/alicewilsonite-yla2024.xml",
+      "bytes": 220163,
+      "sha256": "09fa883f4cce597e10c610f8fc21e7688df033c7d1d08a74f6e0490fae223653",
+      "content_verified": "text_candidate"
+    },
+    {
+      "name": "alicewilsonite-yla2024.html",
+      "url": "https://ejm.copernicus.org/articles/36/301/2024/",
+      "started_at": "2026-10-16T05:06:45.055440+00:00",
+      "finished_at": "2026-10-16T05:06:47.479981+00:00",
+      "status": 200,
+      "content_type": "text/html",
+      "path": "/private/tmp/cmm-round112-ree-research/alicewilsonite-yla2024.html",
+      "bytes": 253117,
+      "sha256": "4031c4bfd018c3c3ee2e0da3d3478dad7b096ed27c622581ed5a69cf36d25c71",
+      "content_verified": "text_candidate"
+    },
+    {
+      "name": "alicewilsonite-yla2024.zip",
+      "url": "https://ejm.copernicus.org/articles/36/301/2024/ejm-36-301-2024-supplement.zip",
+      "started_at": "2026-10-16T05:06:46.793297+00:00",
+      "finished_at": "2026-10-16T05:06:50.117513+00:00",
+      "status": 200,
+      "content_type": "application/zip",
+      "path": "/private/tmp/cmm-round112-ree-research/alicewilsonite-yla2024.zip",
+      "bytes": 680089,
+      "sha256": "12761e5fe57bd00af539da6f0fb298bfe704627f86e9eb7366ff190a0b1273e3",
+      "content_verified": "zip"
+    },
+    {
+      "name": "alicewilsonite-yla2024-crossref.json",
+      "url": "https://api.crossref.org/works/10.5194/ejm-36-301-2024",
+      "started_at": "2026-10-16T05:06:47.480076+00:00",
+      "finished_at": "2026-10-16T05:06:48.400025+00:00",
+      "status": 200,
+      "content_type": "application/json",
+      "path": "/private/tmp/cmm-round112-ree-research/alicewilsonite-yla2024-crossref.json",
+      "bytes": 15266,
+      "sha256": "3f7a4b07551443c252ecd139edd9d372028ef44d6e13cc044004435917d904b5",
+      "content_verified": "text_candidate"
+    },
+    {
+      "name": "ima2026-09.pdf",
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "started_at": "2026-10-16T05:06:48.400130+00:00",
+      "finished_at": "2026-10-16T05:06:53.544688+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "path": "/private/tmp/cmm-round112-ree-research/ima2026-09.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "content_verified": "pdf"
+    },
+    {
+      "name": "ima-home.html",
+      "url": "https://cnmnc.units.it/",
+      "started_at": "2026-10-16T05:06:50.117625+00:00",
+      "finished_at": "2026-10-16T05:06:51.049180+00:00",
+      "status": 200,
+      "content_type": "text/html; charset=UTF-8",
+      "path": "/private/tmp/cmm-round112-ree-research/ima-home.html",
+      "bytes": 26639,
+      "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9",
+      "content_verified": "text_candidate"
+    },
+    {
+      "name": "bainbridgeite-ndce2026.html",
+      "url": "https://ejm.copernicus.org/articles/38/419/2026/",
+      "started_at": "2026-10-16T05:06:51.049273+00:00",
+      "finished_at": "2026-10-16T05:06:53.956181+00:00",
+      "status": 200,
+      "content_type": "text/html",
+      "path": "/private/tmp/cmm-round112-ree-research/bainbridgeite-ndce2026.html",
+      "bytes": 259866,
+      "sha256": "fd10aa7956e1a311f3479620998357ea167f3ffe426a9e11a8b1bd53c1b3cb31",
+      "content_verified": "text_candidate"
+    },
+    {
+      "url": "https://ejm.copernicus.org/articles/38/419/2026/ejm-38-419-2026.pdf",
+      "path": "/private/tmp/cmm-round112-ree-research/bainbridgeite-ndce2026.pdf",
+      "accessed_utc": "2026-10-16T05:11:30.613181+00:00",
+      "status": 200,
+      "content_type": "application/pdf",
+      "bytes": 4259799,
+      "sha256": "087bb792baf93b8ebdc388c9d4fc079fe5f0eed50e6949f845499b70d99c06d1"
+    },
+    {
+      "url": "https://ejm.copernicus.org/articles/38/419/2026/ejm-38-419-2026-supplement.zip",
+      "path": "/private/tmp/cmm-round112-ree-research/bainbridgeite-ndce2026-supplement.zip",
+      "accessed_utc": "2026-10-16T05:11:39.372395+00:00",
+      "status": 200,
+      "content_type": "application/zip",
+      "bytes": 530613,
+      "sha256": "ee3a81d625e081d29ad136e71e0da41491abde03bcdad3447cdccca210a69cf0"
+    }
+  ],
+  "supplement_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round112-ree-research/alicewilsonite-yla2024-supplement/alicewilsonite-(YLa).xy",
+      "sha256": "e5a243d71269043b98b105939b762c130973afabf75104f078b38f32e6735c51",
+      "bytes": 842366
+    },
+    {
+      "path": "/private/tmp/cmm-round112-ree-research/alicewilsonite-yla2024-supplement/alicewilsonite-(YLa).cif",
+      "sha256": "5012a07e21f9c96cdda6037c30ec055285ce366c4fc1930c28af754562af37e3",
+      "bytes": 691527
+    },
+    {
+      "path": "/private/tmp/cmm-round112-ree-research/bainbridgeite-ndce2026-supplement/Bainbridgeite-(NdCe).cif",
+      "sha256": "b36d02dbf76e11682d0d4f0a6dddbbdf75695030640346a3459158f764db9083",
+      "bytes": 1107495
+    },
+    {
+      "path": "/private/tmp/cmm-round112-ree-research/bainbridgeite2024-supplement/Supplement/bainbridgeite-(YCe).cif",
+      "sha256": "41bd397a911674a7bfab8738e30cafafcb9e23bc7c085bfdccbfc49a854cab6c",
+      "bytes": 31433
+    },
+    {
+      "path": "/private/tmp/cmm-round112-ree-research/bainbridgeite2024-supplement/Supplement/bainbridgeite-(YCe).xy",
+      "sha256": "311c1e85d253cfabadacdbc19c7407c72fa1409d17303f80bdcdbe12217cbefb",
+      "bytes": 873125
+    }
+  ],
+  "scientific_inspection": {
+    "bainbridgeite2024": "All 12 original PDF pages read and rendered/viewed, including Figures1–8, Tables1–7 and methods. Holotype CMNMC46324 chemistry kept distinct from three additional specimens. Official CIF metadata, P1, 293(2)K, atom-site loops, hydrogen treatment and constrained proxy model checked; XY header and first/last numeric rows inspected (24437 total lines including header).",
+    "alicewilsonite2024": "All 10 original PDF pages read and rendered/viewed, Figures1–4, Tables1–6 and methods. CMNMC89063/KNR44330 provenance checked. Official CIF metadata/site loops, split half-occupied C/O sites and absence of H coordinates checked; XY header and first/last numeric rows inspected (23636 lines including header).",
+    "ima": "Fresh official September2026 PDF and current home link; page1 definitions, page7 YLa and page19 YCe rows visually checked. Both approved species; ideal formula is not an elemental identifier or criticality classification.",
+    "bainbridgeite2026_context": "Full 11-page PDF and official CIF acquired. Bounded current-context inspection covers occurrence/methods pp.419–421 and Figures1–2 visually, discussion pp.427–428 and CIF identity/formula metadata. No full new NdCe owner or quantitative structure assessment performed. Its PXRD and SXRD are explicitly mixed YCe/NdCe; only the core/rim sampling qualification is reused."
+  },
+  "claim_limits": {
+    "measured": "2024 WDS electron-microprobe REE oxide means retain species/specimen/n and units; exact values are prose, not mg/kg observation objects.",
+    "calculated": "Water and CO2 calculated due material scarcity; IR only supports hydration qualitatively. Crystallographic proxies/constraints and poor crystal quality are explicit.",
+    "nulls": "Below-detection entries remain censored and are not zeros; YLa Ce below detection is not literal absence.",
+    "scale": "Natural geological occurrence and laboratory characterization only. Qualitative HCl effervescence has no concentration/time/yield; no recovery or deployment claim.",
+    "criticality": "Not assessed; no host-mineral inheritance from Y, Ce or La."
+  },
+  "source_discrepancies": {
+    "bainbridgeite-yce": [
+      "2024 abstract 2V(measured)=45(4) degrees versus p.187 body 48(4); omitted from owner.",
+      "2024 Table 2/abstract d=2.263(23) angstrom versus comparative Table 7 2.236(23); the latter is repeated in 2024 Part4 Table6. No disputed powder metric curated.",
+      "2024 Table 6 Y6 experimental scattering 40.1 electrons versus assigned-model 38.3; preserved in owner, no element-specific site measurement inferred.",
+      "2024 Table4 C4/C5/C6 coordinate labels are permuted relative to the official CIF; detailed label-specific bonding is not imported.",
+      "Ideal oxide-composition prose labels the 27.40 wt% carbon dioxide equivalent as CO3, whereas analytical Table1 uses CO2; owner uses authority formula and qualified measured REE oxides, not that prose token.",
+      "2026 follow-up Figures1–2 and p.428 identify YCe cores, intermediate YCe/AliceYCe zones and NdCe rims. This sampling qualification is retained; its explicitly mixed diffraction model is not substituted for the 2024 YCe model."
+    ],
+    "alicewilsonite-yla": [
+      "Table4 O19b coordinates 0.763(4),0.657(4),0.699(5) appear under CIF O20A, and further water labels are permuted. The owner explicitly withholds label-specific bonding.",
+      "Main-text ideal oxide calculation says CO3 30.59 wt%, while Table1 uses CO2 for its calculated 29.78 wt%; this prose token is excluded.",
+      "Figure3 labels La6 whereas the text/Table4/CIF label the La-dominant site La3; site-label comparison is not treated as an independent elemental assay.",
+      "CIF model-density 3.453 and paper empirical-formula density 3.37 g/cm3 use different composition representations; neither is a measured density and neither is curated.",
+      "CIF sphere radius 0.400 mm exceeds the listed 0.044 mm maximum crystal dimension; deposit/processing clarification is needed before reusing absorption geometry. No absorption coefficient or transmission-derived claim curated."
+    ]
+  },
+  "reuse": {
+    "articles": "2024 and2026 articles are CC BY4.0. Supplement covers say CC BY4.0 but warn individual parts may differ. No bulk primary text, PDF, CIF, XY or raw recursive match output is committed.",
+    "authority": "IMA master list described as official regularly updated work in progress; edition pinned and original file retained outside Git.",
+    "data_shape": "CIF structure-model loops and two-column PXRD arrays are not independent experiments. No bulk import, no synthetic measurements, no pooled specimens."
+  },
+  "deferred": [
+    {
+      "lead": "Bainbridgeite-(NdCe), IMA2023-018, DOI10.5194/ejm-38-419-2026",
+      "reason": "Useful newly discovered future owner, but selected current batch remains two. A separate full scientific assessment must preserve mixed-diffraction sampling."
+    },
+    {
+      "lead": "Ancylite-(Ce)/(La), calcioancylite-(La), current ancylite nomenclature",
+      "reason": "Discovery leads only; original identity/analytical boundaries not resolved during this bounded selection. No exhaustion claim."
+    }
+  ],
+  "validation": {
+    "path": "/private/tmp/cmm-round112-ree-research/named-validation.json",
+    "sha256": "e24ef60a9abdd8e57cb092eff11c710699a646c8670306d08c55fc8dc3793e97",
+    "bytes": 1643
+  },
+  "inputs": [
+    {
+      "path": "/private/tmp/CMMMech-expansion-round112-20261016/data/records/bainbridgeite-yce.yaml",
+      "sha256": "ff8a8bc1cb5f180d599138784ec50cfa725f80ef833e4266be6a0387616185fa",
+      "bytes": 4329
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round112-20261016/history/records/bainbridgeite-yce/2026-10-16T051318Z-codex-root-round104-ree-6cc98c.yaml",
+      "sha256": "e0cd45795a10097ab4b57e5f245f8b42f4ff7ce7df4443e02818ce186bdf4751",
+      "bytes": 1110
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round112-20261016/data/records/alicewilsonite-yla.yaml",
+      "sha256": "23c7c787cc66e77bff11f488f2a35edb493ca700da0e70e6d094add2c62df8b6",
+      "bytes": 3783
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round112-20261016/history/records/alicewilsonite-yla/2026-10-16T051326Z-codex-root-round104-ree-1a3831.yaml",
+      "sha256": "b3aaa6aa686a3848101ebc5ab26c4300b90698773abba44d5caa459db5e87faf",
+      "bytes": 1005
+    }
+  ],
+  "status": "Named validation passed; independent native scientific reviews and root batch gates remain pending at dossier save."
+}
