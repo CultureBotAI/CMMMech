@@ -1,0 +1,68 @@
+{
+  "recorded_at": "2026-10-16T00:53:33.766870+00:00",
+  "reviewer": "codex /root/round104_ree (GPT-6)",
+  "author": "codex /root/round104_borates",
+  "kind": "independent static publication-helper successor review",
+  "base": "27d842b3e6239bf60565f93c958d3f2cad395037",
+  "passed": true,
+  "verdict": "pass_with_limitations",
+  "executed_mutations": false,
+  "previous_observation": {
+    "path": "/private/tmp/cmm-round107-queue-cleanup-independent-initial.json",
+    "sha256": "32fb1bfa71f866fc54ad2f2d6807ecbe453e1901c235e84b046ba73e3cd4f7f3"
+  },
+  "bindings": {
+    "/private/tmp/cmm-round107-queue.py": "f505913f2e09aa4a20e10fc4c8b202bf3e24434bf526ca6e4bb018bac826d4f7",
+    "/private/tmp/cmm-round107-cleanup.py": "4598476ee178073ae56e9bdce9eca5cf66a3f0c6630f195b0eee7f0e559f3e30"
+  },
+  "findings": [
+    {
+      "issue_key": "round107-queue-preflight-command-location",
+      "severity": "minor",
+      "status": "resolved",
+      "issue": 425,
+      "previous_occurrence": {
+        "path": "/private/tmp/cmm-round107-queue-cleanup-independent-initial.json",
+        "sha256": "32fb1bfa71f866fc54ad2f2d6807ecbe453e1901c235e84b046ba73e3cd4f7f3",
+        "issue_key": "round107-queue-preflight-command-location"
+      },
+      "resolution": "Each of four required commands must appear exactly once, exit zero and run at the isolated clone cwd. Independent wrong-cwd and duplicate fixtures are rejected."
+    },
+    {
+      "issue_key": "round107-queue-independent-release-verdict",
+      "severity": "minor",
+      "status": "resolved",
+      "issue": 425,
+      "previous_occurrence": {
+        "path": "/private/tmp/cmm-round107-queue-cleanup-independent-initial.json",
+        "sha256": "32fb1bfa71f866fc54ad2f2d6807ecbe453e1901c235e84b046ba73e3cd4f7f3",
+        "issue_key": "round107-queue-independent-release-verdict"
+      },
+      "resolution": "Queue requires completed, passed and positive-verdict independent release assessment with exact repository/PR/base/head/tree; assessment hash is bound to posted-review receipt and all snapshots rechecked before admission. Independent missing/wrong-field fixtures are rejected."
+    }
+  ],
+  "evidence": [
+    {
+      "path": "/private/tmp/cmm-round107-queue-independent-tests.json",
+      "sha256": "107825efbc1a038b63e0a6f29878bc50d9c67b8c47b07b50046e993036a8fe58",
+      "description": "27 independent pure guard/static-order cases passed; no main or subprocess execution."
+    },
+    {
+      "path": "/private/tmp/cmm-round107-borates-research/helper-lifecycle-mock-tests-final.json",
+      "sha256": "a5feda35dc8e0b2060c615dafd8205190fa7632c20ec027b72a6d6f23b083ab9"
+    }
+  ],
+  "positive_checks": [
+    "Commit/PR completion, repository/branch/base/head/tree and immutable config/helper hashes are bound.",
+    "Live required CI, SQUASH/ALLGREEN queue policy, exact file list and unchanged discussions precede queue call.",
+    "Cleanup verifies squash parent/tree, observed main and merged PR, source/corrective issue states, retains evidence tag and detached worktree.",
+    "Remote deletion uses --force-with-lease exact head; local deletion uses update-ref -d exact old head.",
+    "Cleanup requires both corrective issues424 and425 closed, while source issues418\u2013423 remain open.",
+    "Remote and local compare-and-swap deletion commands and detached worktree/evidence-tag preservation remain unchanged."
+  ],
+  "limitations": [
+    "These are static and synthetic checks of the frozen helper bytes; actual commit/head/tree/PR/preflight and hosted review receipts remain future exact bindings.",
+    "No queue, merge, deletion or GitHub message was executed during this review. Root remains responsible for actual receipt validation and publication.",
+    "Live-main observation before queue is not an atomic base lock; squash parent/tree is checked again after merge."
+  ]
+}

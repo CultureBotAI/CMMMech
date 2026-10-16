@@ -1,0 +1,39 @@
+{
+  "recorded_at": "2026-10-16T00:51:13.804153+00:00",
+  "reviewer": "codex /root/round104_ree (GPT-6)",
+  "author": "codex /root/round104_borates",
+  "kind": "independent static publication-helper audit",
+  "base": "27d842b3e6239bf60565f93c958d3f2cad395037",
+  "passed": false,
+  "verdict": "needs_hardening",
+  "executed_mutations": false,
+  "bindings": {
+    "/private/tmp/cmm-round107-queue.py": "85b1a0cb9ad4b96fa5be5d743527621457fb33c80daa5de2e7f1ee2cad40936e",
+    "/private/tmp/cmm-round107-cleanup.py": "f9d84a05c7a995e7fbf2a86d898c679fc9ad443dd0dd3b35414da3ab8f467684"
+  },
+  "findings": [
+    {
+      "issue_key": "round107-queue-preflight-command-location",
+      "severity": "minor",
+      "description": "check_preflight accepts duplicate required command rows and wrong command cwd; synthetic pure-function probe confirms acceptance. Require exactly one successful row per required command with cwd equal to clone.",
+      "evidence": "Pure check_preflight call with four valid command vectors all at /private/tmp/wrong-checkout plus duplicate validation row returned normally. No subprocess or live mutation called."
+    },
+    {
+      "issue_key": "round107-queue-independent-release-verdict",
+      "severity": "minor",
+      "description": "Queue checks the posted COMMENT identity/body but never binds a positive independent release-assessment verdict to base/head/tree. Add exact assessment passed/head/tree/base guard and snapshot its hash before admission.",
+      "evidence": "Complete queue source inspected; no independent-release-assessment load or passed assertion present. Actual release review has not yet been produced."
+    }
+  ],
+  "positive_checks": [
+    "Commit/PR completion, repository/branch/base/head/tree and immutable config/helper hashes are bound.",
+    "Live required CI, SQUASH/ALLGREEN queue policy, exact file list and unchanged discussions precede queue call.",
+    "Cleanup verifies squash parent/tree, observed main and merged PR, source/corrective issue states, retains evidence tag and detached worktree.",
+    "Remote deletion uses --force-with-lease exact head; local deletion uses update-ref -d exact old head."
+  ],
+  "limits": [
+    "Precommit static assessment; actual head/tree/PR receipts and future exact preflight cannot yet be accepted.",
+    "Fixture probe checks pure validation only and is not hosted execution or an adverse publication event.",
+    "Manual coordinator review may already prevent these cases; recommended guards make the helper fail closed itself."
+  ]
+}

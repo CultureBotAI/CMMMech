@@ -1,0 +1,123 @@
+{
+  "review_id": "round107-finalization-helper-review",
+  "timestamp_utc": "2026-10-16T00:48:27.875151+00:00",
+  "reviewer": {
+    "name": "Codex",
+    "model": "GPT-6",
+    "agent_tool": "codex",
+    "independent": true,
+    "independence_basis": "Root adapted finalization/archive helpers; reviewer inspected exact scripts, comparison with round106, and inert fixtures without modifying or executing the complete helpers."
+  },
+  "base": "27d842b3e6239bf60565f93c958d3f2cad395037",
+  "worktree": "/private/tmp/CMMMech-expansion-round107-20261016",
+  "scope": "Read-only independent review of round107 final-preservation and additive local archive adapters, compared with round106. Queue/cleanup107 and actual hosted/publication outcomes are explicitly excluded; another reviewer owns those helpers.",
+  "inputs": {
+    "/private/tmp/cmm-round107-finalize.py": "848015e32a4d2740fcfaa7f01c167843c976f5e735b4a08d96fac856b968edc7",
+    "/private/tmp/cmm-round107-archive.py": "da7a1448e73a054780d362ed277791d37145e1f8240ce6838dd3ca04054b4f31",
+    "/private/tmp/cmm-round106-finalize.py": "8f941db82c79aae0a1bb4d287e3a323686035d715af9aae2f47b7abffe2c47de",
+    "/private/tmp/cmm-round106-archive.py": "5b4c933fdcc3108c2f58cab09026f151fff97e9829bc890e2e56b019efa3f126",
+    "/private/tmp/cmm-round107-publication-guards.py": "5a0e5474250ec0e8b70df1aca99d00f57fa8b8d5d688f85f354d46cd54818cf4",
+    "/private/tmp/cmm-round107-helper-config.json": "3cda11670608d704a9975908e6cad59528f973f27b310e4aa9f7cc129c8174d0",
+    "/private/tmp/cmm-round107-preservation-before.json": "480557f5665cc8dcd2dee5bf582b3d70febb3c5298977e3059b95e313a2bc90f",
+    "/private/tmp/cmm-round106-cleanup.py": "ba7ccf7c7779ca96c531809d5e930a19a3597971ec860e68665ca61d8affb840"
+  },
+  "evidence": [
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/finalization-adapter-probes.json",
+      "sha256": "ac84bb53aa173e490ddc826ca1cff898d92e994191873195d332489afb11a20d",
+      "summary": "12 passing exact-function fixture and static ordering checks; no subprocess or Git/GitHub call executed."
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/audit-finalization-adapters.py",
+      "sha256": "122410ad943915035e5150971ae90f74ef373c71e1de433a573dd04fcd51cb65",
+      "summary": "Standalone inert probe implementation retained outside maintained source."
+    }
+  ],
+  "findings": [],
+  "findings_by_severity": {
+    "critical": 0,
+    "major": 0,
+    "minor": 0,
+    "advisory": 0
+  },
+  "corrections": [],
+  "checks": [
+    {
+      "name": "exact byte/mode/symlink fixture accepted",
+      "outcome": "passed",
+      "expected_rejection": false
+    },
+    {
+      "name": "changed file bytes rejected",
+      "outcome": "passed",
+      "expected_rejection": true
+    },
+    {
+      "name": "changed file mode rejected",
+      "outcome": "passed",
+      "expected_rejection": true
+    },
+    {
+      "name": "changed symlink target rejected",
+      "outcome": "passed",
+      "expected_rejection": true
+    },
+    {
+      "name": "regular file replaced by symlink rejected",
+      "outcome": "passed",
+      "expected_rejection": true
+    },
+    {
+      "name": "restored exact fixture accepted",
+      "outcome": "passed",
+      "expected_rejection": false
+    },
+    {
+      "name": "new archive file copied and digest verified",
+      "outcome": "passed",
+      "expected_rejection": false
+    },
+    {
+      "name": "existing archive file refused",
+      "outcome": "passed",
+      "expected_rejection": true
+    },
+    {
+      "name": "source symlink refused",
+      "outcome": "passed",
+      "expected_rejection": true
+    },
+    {
+      "name": "existing destination bytes unchanged",
+      "outcome": "passed",
+      "expected_rejection": false
+    },
+    {
+      "name": "pre-mutation guard ordering retained",
+      "outcome": "passed"
+    },
+    {
+      "name": "archive exclusive path/file and retained tag guards present",
+      "outcome": "passed"
+    }
+  ],
+  "assessment": [
+    "Finalizer derives topic HEAD/TREE from this round commit receipt and validates its helper/config hashes and strict postmerge receipt through the unchanged guard contract before mutation.",
+    "Pinned baseline is 27d842b3e6239bf60565f93c958d3f2cad395037; original-main inventory hash 480557f5665cc8dcd2dee5bf582b3d70febb3c5298977e3059b95e313a2bc90f matches inspected inventory with 10971 nontracked entries, including hidden/ignored files and three symlinks.",
+    "Before main fast-forward, clean main/base, expected origin and remote main, exact merge parent/tree, preserved bytes/modes/symlink targets and new-tracked-path collisions are checked. git merge --ff-only --no-overwrite-ignore is retained; inventory and clean state are checked again afterward.",
+    "Annotated review-base tag object and peeled target are checked locally and remotely; no tag deletion is performed.",
+    "Archive requires absent nonsymlink destination within original-main root and ignored manifest location. mkdir and exclusive x/xb files reject existing paths; source and destination digests match, symlinks are excluded, and original inventory is rechecked after writing.",
+    "Updated archive prose names the seven agreed owners, issue424 and source follow-ups418\u2013423. It is a future output template, not evidence that gates, merge, closure or archive have already occurred.",
+    "Branch deletion is delegated to separately reviewed round107 cleanup. Prior106 CAS semantics were read as context only; no claim is made about uninspected107 cleanup."
+  ],
+  "unresolved_questions": [
+    "Final measured config, commit receipt, HEAD/TREE/PR bindings and actual postmerge/hosted receipts remain future prerequisites.",
+    "Separate queue/cleanup107 review must establish its exact CAS and issue-state bindings."
+  ],
+  "verdict": "pass_with_limitations",
+  "limitations": [
+    "Static/inert helper review does not certify publication execution or hosted checks.",
+    "No review of new concurrent code changes after the captured input hashes.",
+    "No complete mutation helper was imported or executed."
+  ]
+}

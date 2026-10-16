@@ -1,0 +1,265 @@
+schema_version: 1.0.0
+review_id: 20261016T005328Z-parauranophane-round107-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of parauranophane
+started_at: '2026-10-16T00:40:37.427588Z'
+finished_at: '2026-10-16T00:53:28.428196Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Uranium agent authored this owner/history; root authored separate
+    ferrochrome resource and independently assessed these mineral bytes and primary
+    evidence without editing them.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Accept the scoped mineral identity and qualified laboratory evidence; no
+  corrective owner defect supported.
+source:
+  git_revision: 27d842b3e6239bf60565f93c958d3f2cad395037
+  state: working_tree
+  inputs:
+  - path: data/records/parauranophane.yaml
+    sha256: fe68e3a09f93d1095747bddd8eb322f7acf48c32b7b20220324cfd9b25d9f861
+    role: target
+  - path: history/records/parauranophane/2026-10-16T003740Z-codex-52a448.yaml
+    sha256: 0c2f52f5fe669f0eaaa30ed3693b6320762c3afdbf7bc81cbd1d2c7b96b674c9
+    role: context
+targets:
+- kind: maintained
+  label: Parauranophane
+  owner_paths:
+  - path: data/records/parauranophane.yaml
+    repository: CultureBotAI/CMMMech
+    role: maintained_record
+  path: data/records/parauranophane.yaml
+  target_id: cmmmech:parauranophane
+scope:
+  description: Entire owner/history and primary evidence relevant to accepted claims;
+    no independent raw-data reanalysis.
+  selection: Exact owner and canonical sidecar captured using native inspect before
+    assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:parauranophane
+checks:
+- check_id: named
+  name: Independent two-record validation
+  command: uv run --locked cmmmech validate data/records/uranophane.yaml data/records/parauranophane.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual root execution session1593 terminal9c5bb7:2records,0failed.
+  target_ids:
+  - cmmmech:parauranophane
+  evidence_ids:
+  - owner
+- check_id: batch1
+  name: Completed batch gate 1
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal receipt/log and unchanged input hashes verified.
+  target_ids:
+  - cmmmech:parauranophane
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed batch gate 2
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal receipt/log and unchanged input hashes verified.
+  target_ids:
+  - cmmmech:parauranophane
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed batch gate 3
+  command: uv run --locked cmmmech validate-history --base 27d842b3e6239bf60565f93c958d3f2cad395037
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal receipt/log and unchanged input hashes verified.
+  target_ids:
+  - cmmmech:parauranophane
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed batch gate 4
+  command: uv run --locked python scripts/render_pages.py --check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal receipt/log and unchanged input hashes verified.
+  target_ids:
+  - cmmmech:parauranophane
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/parauranophane.yaml
+  locator: 'Entire frozen owner Local artifact: /private/tmp/CMMMech-expansion-round107-20261016/data/records/parauranophane.yaml'
+  accessed_at: '2026-10-16T00:53:28.428196Z'
+  snapshot_sha256: fe68e3a09f93d1095747bddd8eb322f7acf48c32b7b20220324cfd9b25d9f861
+  support: supports
+  summary: All accepted identity and experiment claims assessed against original sources;
+    no edit by this reviewer.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/parauranophane/2026-10-16T003740Z-codex-52a448.yaml
+  locator: 'Canonical CREATE plus separate inline event Local artifact: /private/tmp/CMMMech-expansion-round107-20261016/history/records/parauranophane/2026-10-16T003740Z-codex-52a448.yaml'
+  accessed_at: '2026-10-16T00:53:28.428196Z'
+  snapshot_sha256: 0c2f52f5fe669f0eaaa30ed3693b6320762c3afdbf7bc81cbd1d2c7b96b674c9
+  support: supports
+  summary: Actual actor, timestamp, target and change are consistent.
+- evidence_id: ima
+  kind: database
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'Rows on PDF pages166 and224 independently visually checked Local artifact:
+    /private/tmp/cmm-round107-uranium-research/ima202609.pdf'
+  accessed_at: '2026-10-16T00:53:28.428196Z'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  support: supports
+  summary: Current mineral identities share ideal chemistry but are distinct polymorphs;
+    Rn2022s.p. is not a unique approval accession.
+- evidence_id: nomenclature
+  kind: primary_source
+  reference: https://ejm.copernicus.org/articles/34/463/2022/
+  locator: 'Section3, printedp467/PDF5 visually checked; live official search result
+    checked Local artifact: /private/tmp/cmm-round107-uranium-research/newsletter69.pdf'
+  accessed_at: '2026-10-16T00:53:28.428196Z'
+  snapshot_sha256: fcb93f5aab27b41269040fef7aaf14552c20e164183badbc8820380afed00998
+  support: supports
+  summary: August2022 nomenclature maps alpha to uranophane and beta to parauranophane.
+- evidence_id: cesbron
+  kind: primary_source
+  reference: https://doi.org/10.1180/minmag.1993.057.387.12
+  locator: 'Complete8-page text read; originalpp304-307,Table1-2,Fig3-4 visually checked
+    Local artifact: /private/tmp/cmm-round107-uranium-research/uranophane1993-mirror.pdf'
+  accessed_at: '2026-10-16T00:53:28.428196Z'
+  snapshot_sha256: b0373feb5f302557ac65d1068b0c42b5876481f9b34dc85f9be2d61c50820a09
+  support: supports
+  summary: NaturalNopalI diffraction is separate from roughly50hydrothermal preparations
+    across several uranylsilicates. Alpha synthesis conditions and failedbeta preparations
+    are bounded; no yields/equilibrium boundary or universal impossibility.
+- evidence_id: schindler
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.gca.2009.01.031
+  locator: 'Accepted-claim methods/results/discussion text; originalPDFpp4,6,8,9,11-13,15-16,20-21
+    visually checked, includingTables1-4 andFigure3/10 Local artifact: /private/tmp/cmm-round107-uranium-research/uranophane2009.pdf'
+  accessed_at: '2026-10-16T00:53:28.428196Z'
+  snapshot_sha256: 14fc71868c23981cc34dafcebcaf357a416b0015b40aeec89c50856db9f537d7
+  support: supports
+  summary: Natural singlecrystals and synthetic powders remain separate. Initial/finalpH,
+    matrix-related missingCa, sourcecaption conflicts, secondary-phase control and
+    XPS model limits are preserved.
+- evidence_id: search
+  kind: search
+  reference: Independent primary-metadata and correction search
+  locator: 'Exactqueries and returned primary links Local artifact: /private/tmp/cmm-round107-uranium-independent-search.json'
+  accessed_at: '2026-10-16T00:53:28.428196Z'
+  snapshot_sha256: 31d3a5701e5f400eb810b1a4c46f5fef633ca7dadda4ecdc98ae5a7565bcc6fe
+  support: context_only
+  summary: No affecting notice surfaced in the bounded returned windows; no universal
+    absence assertion.
+  search_scope: Three exactDOI/topic web searches with returned top-result windows,
+    no exhaustive paging; original primary PDFs independently inspected.
+- evidence_id: dedup
+  kind: search
+  reference: Curator bounded hidden/ignored-inclusive inventory
+  locator: 'Listed roots and matched contexts inspected; no fresh machine-wide scan
+    Local artifact: /private/tmp/cmm-round107-uranium-research/dedup-final.json'
+  accessed_at: '2026-10-16T00:53:28.428196Z'
+  snapshot_sha256: b0c1230c34c74b6a2b7c7a812beb2d82cbe4c5f790fb43b1e227979246c05b3d
+  support: context_only
+  summary: Distinct owners and historicalalpha/beta mapping retained. Inventory includes
+    hidden/ignored files, relevant symlinks and299issue titles/bodies, not comments.
+  search_scope: 'Curator inventory independently examined: declared worktree/mainignoredreports/citedrawroots,14651unique
+    files; binarycontent not exhaustive.'
+- evidence_id: batch
+  kind: validation
+  reference: Completed root batch receipt
+  locator: 'Terminal commands and logSHA 4185f25a993d68b080a9c2a474ce5862e8284f6665a760daa83540e913968f84
+    Local artifact: /private/tmp/cmm-round107-final-gates.json'
+  accessed_at: '2026-10-16T00:53:28.428196Z'
+  snapshot_sha256: 9ecba8d70f57d4bf2df433becdf3581dca4a634de4fd5294f1c66f4aaf6b1d4c
+  support: supports
+  summary: All four actual batch gates passed with unchanged record inputs.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Current mineral and historical polymorph boundaries
+  outcome: supported
+  summary: Two distinct species, neither anelementnorcommodity; no inheritedcriticality.
+  target_ids:
+  - cmmmech:parauranophane
+  evidence_ids:
+  - ima
+  - nomenclature
+  - owner
+  - dedup
+- assessment_id: science
+  area: evidence
+  topic: Primary experimental support
+  outcome: supported
+  summary: Current-name parauranophane retains naturalNopalI diffraction identity
+    and only the explicitlybeta-labelled pH3.5/3h XPS nullcomparison. Alpha powderrelease
+    rates and coatingidentifications are not transferred. Failed1993beta synthesis
+    remains a restricted negative result.
+  target_ids:
+  - cmmmech:parauranophane
+  evidence_ids:
+  - cesbron
+  - schindler
+  - owner
+- assessment_id: quantity
+  area: quantity
+  topic: Measured versus fitted and inferred outcomes
+  outcome: supported
+  summary: Units, arms, pHbasis and analytical/model limitations are explicit; no
+    graphdigitized absolute rates or incompatiblemg/kg observations.
+  target_ids:
+  - cmmmech:parauranophane
+  evidence_ids:
+  - schindler
+  - cesbron
+  - owner
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen owner and append-only history
+  outcome: supported
+  summary: Native inspect binds exact owner/historybytes at trustedmainbase; actual
+    finished checks and accesslimits retained.
+  target_ids:
+  - cmmmech:parauranophane
+  evidence_ids:
+  - history
+  - owner
+  - search
+  - batch
+findings: []
+actions: []
+limitations:
+- The accepted XPS null is a fitted surface comparison after washing/drying/vacuum,
+  not proof of no dissolution or unchanged bulk valence. Companion XPS papers were
+  not independently read.
+- Generic uranophane labels andCa-arm duration conflicts preclude wider beta treatment
+  claims. Beta-specific finalpH and independentreaction replication remain unclear.
+- Independent root review inspected accepted-claim text and selected original graphics,
+  not all24pages visually; no raw-data reanalysis or thermodynamic stability proof.
+- Bounded correction searches do not establish universalabsence. Exacthead publication
+  and hostedCI are later gates.

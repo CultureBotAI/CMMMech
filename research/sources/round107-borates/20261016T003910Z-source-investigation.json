@@ -1,0 +1,540 @@
+{
+  "schema": "cmmmech.source-investigation.round107-borates.v1",
+  "timestamp_utc": "2026-10-16T00:39:10.728696Z",
+  "actor": {
+    "name": "codex",
+    "model": "GPT-6",
+    "tool": "codex"
+  },
+  "worktree": "/private/tmp/CMMMech-expansion-round107-20261016",
+  "base": "27d842b3e6239bf60565f93c958d3f2cad395037",
+  "branch": "curate/cmm-expansion-round107-20261016",
+  "scope": "Two new owners: calcioveatchite mineral identity and mixed ludwigite-ore primary resource with a bounded abiotic laboratory separation. No other owner, schema, validator, Git or GitHub mutations.",
+  "search_log": [
+    {
+      "provider": "web search",
+      "date_utc": "2026-10-16",
+      "queries": [
+        "boracite mineral dissolution extraction thermal behavior original article PDF",
+        "ludwigite boron extraction roasting leaching Mg2FeBO5 primary open access",
+        "calcioveatchite mineral 2024 Minerals 14 901 crystallography"
+      ],
+      "response_path": null,
+      "scope_and_result": "First returned result set. Raw first response was not retained; selected primary leads were subsequently acquired. No exhaustive search claim."
+    },
+    {
+      "provider": "web search",
+      "date_utc": "2026-10-16",
+      "queries": [
+        "\"Water Leaching Kinetics of Boron from the Alkali-Activated Ludwigite Ore\"",
+        "\"ludwigite\" bioleaching microbial",
+        "\"10.3390/min14090901\" correction erratum retraction"
+      ],
+      "response_path": "/private/tmp/cmm-round107-borates-research/web-search03.json",
+      "scope_and_result": "First returned result set; metadata and primary acquisition leads, not proof of a microbial mechanism."
+    },
+    {
+      "provider": "web search",
+      "date_utc": "2026-10-16",
+      "queries": [
+        "\"10.3390/molecules29040826\" correction retraction erratum",
+        "\"10.3390/min14090901\" correction erratum retraction",
+        "\"Water leaching of boron from soda-ash-activated ludwigite ore\" pdf",
+        "\"An innovative process for extracting boron\" ludwigite pdf 2014"
+      ],
+      "response_path": "/private/tmp/cmm-round107-borates-research/web-search05.json",
+      "scope_and_result": "First returned result set. No affecting notice identified. 2017 publisher preview and 2014 metadata are not complete originals."
+    },
+    {
+      "provider": "web search",
+      "date_utc": "2026-10-16",
+      "queries": [
+        "\"10.1016/j.hydromet.2016.11.004\" filetype:pdf",
+        "\"Water leaching of boron\" \"Liang\" pdf 2017 -site:sciencedirect.com -site:mindat.org",
+        "\"10.3390/molecules29040826\" erratum correction retraction site:mdpi.com",
+        "\"10.3390/min14090901\" correction retraction site:mdpi.com"
+      ],
+      "response_path": "/private/tmp/cmm-round107-borates-research/web-search06.json",
+      "scope_and_result": "First returned result set. No accessible complete 2017 primary or affecting correction identified; bounded result only."
+    },
+    {
+      "provider": "web open/find",
+      "date_utc": "2026-10-16",
+      "urls": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC10893144/",
+        "https://www.mdpi.com/2075-163X/14/9/901",
+        "https://cnmnc.units.it/"
+      ],
+      "response_path": "/private/tmp/cmm-round107-borates-research/web-search02.json",
+      "scope_and_result": "PMC browser challenge; publisher calcioveatchite full text and official IMA homepage accessible. PDF and Europe PMC XML subsequently acquired through public URLs."
+    },
+    {
+      "provider": "web open/find",
+      "date_utc": "2026-10-16",
+      "urls": [
+        "https://www.mdpi.com/1420-3049/29/4/826"
+      ],
+      "find_queries": [
+        "Supplementary Materials",
+        ".cif",
+        "2026-09"
+      ],
+      "response_path": "/private/tmp/cmm-round107-borates-research/web-search04.json",
+      "scope_and_result": "Molecules publisher HTML returned 429. No supplementary/CIF match in inspected calcioveatchite publisher text. Official raw homepage separately confirms September 2026 list. No claim of universal deposit absence."
+    }
+  ],
+  "acquisition_log": [
+    {
+      "name": "ludwigite2024.pdf",
+      "url": "https://mdpi-res.com/d_attachment/molecules/molecules-29-00826/article_deploy/molecules-29-00826.pdf",
+      "started_at": "2026-10-16T00:30:39.471633+00:00",
+      "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+      "finished_at": "2026-10-16T00:30:39.508456+00:00",
+      "receipt": "/private/tmp/cmm-round107-borates-research/acquisition01.json"
+    },
+    {
+      "name": "ludwigite2024.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10893144/fullTextXML",
+      "started_at": "2026-10-16T00:30:39.472369+00:00",
+      "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+      "finished_at": "2026-10-16T00:30:39.508133+00:00",
+      "receipt": "/private/tmp/cmm-round107-borates-research/acquisition01.json"
+    },
+    {
+      "name": "calcioveatchite2024.html",
+      "url": "https://www.mdpi.com/2075-163X/14/9/901",
+      "started_at": "2026-10-16T00:30:39.472688+00:00",
+      "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+      "finished_at": "2026-10-16T00:30:39.508366+00:00",
+      "receipt": "/private/tmp/cmm-round107-borates-research/acquisition01.json"
+    },
+    {
+      "name": "calcioveatchite2024-crossref.json",
+      "url": "https://api.crossref.org/works/10.3390/min14090901",
+      "started_at": "2026-10-16T00:30:39.472981+00:00",
+      "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+      "finished_at": "2026-10-16T00:30:39.507833+00:00",
+      "receipt": "/private/tmp/cmm-round107-borates-research/acquisition01.json"
+    },
+    {
+      "name": "ludwigite2024-crossref.json",
+      "url": "https://api.crossref.org/works/10.3390/molecules29040826",
+      "started_at": "2026-10-16T00:30:39.507876+00:00",
+      "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+      "finished_at": "2026-10-16T00:30:39.509232+00:00",
+      "receipt": "/private/tmp/cmm-round107-borates-research/acquisition01.json"
+    },
+    {
+      "name": "ima-home.html",
+      "url": "https://cnmnc.units.it/index.php",
+      "started_at": "2026-10-16T00:30:39.508166+00:00",
+      "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+      "finished_at": "2026-10-16T00:30:39.509324+00:00",
+      "receipt": "/private/tmp/cmm-round107-borates-research/acquisition01.json"
+    },
+    {
+      "name": "reused-calcioveatchite2024.pdf",
+      "reused_from": "/private/tmp/cmm-round106-borates-research/calcioveatchite2024.pdf",
+      "checked_at": "2026-10-16T00:30:39.513904+00:00",
+      "path": "/private/tmp/cmm-round107-borates-research/reused-calcioveatchite2024.pdf",
+      "bytes": 3480968,
+      "sha256": "1623370d85fe10bd2fd7a719ca8c07fdf854e841696ed1b9a678aa449df702c1",
+      "note": "Previously acquired original bytes reused and rechecked; not a fresh download. Original acquisition receipt remains in round106 raw directory.",
+      "receipt": "/private/tmp/cmm-round107-borates-research/acquisition01.json"
+    },
+    {
+      "name": "reused-ima2026-09.pdf",
+      "reused_from": "/private/tmp/cmm-round106-borates-research/ima2026-09.pdf",
+      "checked_at": "2026-10-16T00:30:39.527620+00:00",
+      "path": "/private/tmp/cmm-round107-borates-research/reused-ima2026-09.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "note": "Previously acquired original bytes reused and rechecked; not a fresh download. Original acquisition receipt remains in round106 raw directory.",
+      "receipt": "/private/tmp/cmm-round107-borates-research/acquisition01.json"
+    },
+    {
+      "name": "ludwigite2024.pdf",
+      "url": "https://mdpi-res.com/d_attachment/molecules/molecules-29-00826/article_deploy/molecules-29-00826.pdf",
+      "started_at": "2026-10-16T00:31:01.747881+00:00",
+      "prior_attempt": "acquisition01.json; sandbox DNS unavailable",
+      "status": 200,
+      "final_url": "https://mdpi-res.com/d_attachment/molecules/molecules-29-00826/article_deploy/molecules-29-00826.pdf",
+      "content_type": "application/pdf",
+      "path": "/private/tmp/cmm-round107-borates-research/ludwigite2024.pdf",
+      "bytes": 1229285,
+      "sha256": "35e5f52adead0ffbfb519c99e51c82ef9fb5285398fc9abb11036324f36ec101",
+      "leading_bytes": "b'%PDF-1.7\\n%\\xe2\\xe3\\xcf\\xd3\\n6 0 obj\\n<</Filter/FlateDe'",
+      "finished_at": "2026-10-16T00:31:02.390744+00:00",
+      "receipt": "/private/tmp/cmm-round107-borates-research/acquisition02.json"
+    },
+    {
+      "name": "ludwigite2024.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10893144/fullTextXML",
+      "started_at": "2026-10-16T00:31:01.749145+00:00",
+      "prior_attempt": "acquisition01.json; sandbox DNS unavailable",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10893144/fullTextXML",
+      "content_type": "application/xml",
+      "path": "/private/tmp/cmm-round107-borates-research/ludwigite2024.xml",
+      "bytes": 116331,
+      "sha256": "da746d2f68947b269e2aefd2942daf2d1e96a79d25b18e87e09ee42e609849db",
+      "leading_bytes": "b'\\n<!DOCTYPE article\\n  PUBLIC \"-//NLM//DTD'",
+      "finished_at": "2026-10-16T00:31:02.981340+00:00",
+      "receipt": "/private/tmp/cmm-round107-borates-research/acquisition02.json"
+    },
+    {
+      "name": "calcioveatchite2024.html",
+      "url": "https://www.mdpi.com/2075-163X/14/9/901",
+      "started_at": "2026-10-16T00:31:01.749509+00:00",
+      "prior_attempt": "acquisition01.json; sandbox DNS unavailable",
+      "error": "<HTTPError 403: 'Forbidden'>",
+      "finished_at": "2026-10-16T00:31:01.951213+00:00",
+      "receipt": "/private/tmp/cmm-round107-borates-research/acquisition02.json"
+    },
+    {
+      "name": "calcioveatchite2024-crossref.json",
+      "url": "https://api.crossref.org/works/10.3390/min14090901",
+      "started_at": "2026-10-16T00:31:01.749798+00:00",
+      "prior_attempt": "acquisition01.json; sandbox DNS unavailable",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.3390/min14090901",
+      "content_type": "application/json",
+      "path": "/private/tmp/cmm-round107-borates-research/calcioveatchite2024-crossref.json",
+      "bytes": 14255,
+      "sha256": "ef2c14942fd942b1bdc98fe3e289b88b237d93df4c716ea94dd5b6b8c6b761bc",
+      "leading_bytes": "b'{\"status\":\"ok\",\"message-type\":\"work\",\"me'",
+      "finished_at": "2026-10-16T00:31:02.207454+00:00",
+      "receipt": "/private/tmp/cmm-round107-borates-research/acquisition02.json"
+    },
+    {
+      "name": "ludwigite2024-crossref.json",
+      "url": "https://api.crossref.org/works/10.3390/molecules29040826",
+      "started_at": "2026-10-16T00:31:01.951261+00:00",
+      "prior_attempt": "acquisition01.json; sandbox DNS unavailable",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.3390/molecules29040826",
+      "content_type": "application/json",
+      "path": "/private/tmp/cmm-round107-borates-research/ludwigite2024-crossref.json",
+      "bytes": 18300,
+      "sha256": "5c6ef832d564c4d36567d8faf6a5494fac5b5646f4d69c096c657d25038c5b10",
+      "leading_bytes": "b'{\"status\":\"ok\",\"message-type\":\"work\",\"me'",
+      "finished_at": "2026-10-16T00:31:02.323936+00:00",
+      "receipt": "/private/tmp/cmm-round107-borates-research/acquisition02.json"
+    },
+    {
+      "name": "ima-home.html",
+      "url": "https://cnmnc.units.it/index.php",
+      "started_at": "2026-10-16T00:31:02.207504+00:00",
+      "prior_attempt": "acquisition01.json; sandbox DNS unavailable",
+      "status": 200,
+      "final_url": "https://cnmnc.units.it/index.php",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "/private/tmp/cmm-round107-borates-research/ima-home.html",
+      "bytes": 26639,
+      "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9",
+      "leading_bytes": "b'<!DOCTYPE html><!-- HTML5 -->\\r\\n<html pre'",
+      "finished_at": "2026-10-16T00:31:02.968558+00:00",
+      "receipt": "/private/tmp/cmm-round107-borates-research/acquisition02.json"
+    }
+  ],
+  "deduplication": {
+    "at": "2026-10-16T00:35:42.243853+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-l",
+      "-i",
+      "calcioveatchite|ludwigite|2020-011|SrCaB11O16|molecules29040826|min14090901|hydromet[.]2016[.]11[.]004",
+      "-g",
+      "!**/.git/**",
+      "-g",
+      "!**/.venv/**",
+      "-g",
+      "!**/node_modules/**",
+      "-g",
+      "!**/__pycache__/**",
+      "/private/tmp/CMMMech-expansion-round107-20261016/data/records",
+      "/private/tmp/CMMMech-expansion-round107-20261016/research",
+      "/private/tmp/CMMMech-expansion-round107-20261016/reviews",
+      "/private/tmp/CMMMech-expansion-round107-20261016/history",
+      "/private/tmp/CMMMech-expansion-round107-20261016/.claude",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech",
+      "/private/tmp/cmm-round10-b-f-raw",
+      "/private/tmp/cmm-round12-aluminium-boron-raw",
+      "/private/tmp/cmm-round76-hectorite-research",
+      "/private/tmp/cmm-round101-borates-research",
+      "/private/tmp/cmm-round102-borates-research",
+      "/private/tmp/cmm-round103-borates-research",
+      "/private/tmp/cmm-round104-borates-research",
+      "/private/tmp/cmm-round105-borates-research",
+      "/private/tmp/cmm-round106-borates-research"
+    ],
+    "exit_code": 0,
+    "stdout": "/private/tmp/cmm-round103-borates-research/mac-depository.html\n/private/tmp/cmm-round103-borates-research/szaibelyite1998-thesis.txt\n/private/tmp/CMMMech-expansion-round107-20261016/data/records/veatchite.yaml\n/private/tmp/cmm-round103-borates-research/ima2026-09.txt\n/private/tmp/cmm-round101-borates-research/ima2026-09.txt\n/private/tmp/cmm-round103-borates-research/szaibelyite2001.txt\n/private/tmp/cmm-round103-borates-research/szaibelyite1998-thesis.html\n/private/tmp/cmm-round102-borates-research/ima2026-09.txt\n/private/tmp/CMMMech-expansion-round107-20261016/research/sources/round106-borates/20261015T235406Z-source-investigation.json\n/private/tmp/CMMMech-expansion-round107-20261016/history/records/veatchite/2026-10-15T235132Z-codex-b4cb8c.yaml\n/private/tmp/CMMMech-expansion-round107-20261016/research/sources/round106-borates/20261015T235406Z-source-investigation.md\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records/veatchite.yaml\n/private/tmp/CMMMech-expansion-round107-20261016/reviews/structured/20261016T000310Z-veatchite-round106-independent/review.yaml\n/private/tmp/CMMMech-expansion-round107-20261016/reviews/structured/20261016T000310Z-veatchite-round106-independent/review.md\n/private/tmp/cmm-round104-borates-research/ima2026-09.txt\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/sources/round106-borates/20261015T235406Z-source-investigation.json\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/sources/round106-borates/20261015T235406Z-source-investigation.md\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/ingests/round106-frontier-20261015.json\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/ingests/round106-frontier-20261015.md\n/private/tmp/CMMMech-expansion-round107-20261016/reviews/structured/20261016T000310Z-pinnoite-round106-independent/review.yaml\n/private/tmp/CMMMech-expansion-round107-20261016/reviews/structured/20261016T000310Z-pinnoite-round106-independent/review.md\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews/structured/20261016T000310Z-pinnoite-round106-independent/review.yaml\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews/structured/20261016T000310Z-pinnoite-round106-independent/review.md\n/private/tmp/CMMMech-expansion-round107-20261016/research/ingests/round106-frontier-20261015.json\n/private/tmp/CMMMech-expansion-round107-20261016/research/ingests/round106-frontier-20261015.md\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews/structured/20261016T000310Z-veatchite-round106-independent/review.yaml\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews/structured/20261016T000310Z-veatchite-round106-independent/review.md\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history/records/veatchite/2026-10-15T235132Z-codex-b4cb8c.yaml\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports/publication/round106-20261015/cmm-round106-release-review/issue-412.json\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports/publication/round106-20261015/cmm-round106-release-review/independent-review.json\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports/publication/round106-20261015/cmm-round106-release-review/files.json\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports/publication/round106-20261015/cmm-round106-release-review/independent-structural-inspection.json\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports/publication/round106-20261015/cmm-round106-hosted-final/issue-412.json\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports/publication/round106-20261015/cmm-round106-hosted-final/queue-base-ancestry.json\n/private/tmp/cmm-round106-borates-research/acquire02.py\n/private/tmp/cmm-round105-borates-research/ima2026-09.txt\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports/publication/round106-20261015/receipts/cmm-round106-source-issues.json\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports/publication/round106-20261015/receipts/cmm-round106-cleanup-receipt.json\n/private/tmp/cmm-round106-borates-research/source-issue-veatchite.md\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports/publication/round106-20261015/receipts/cmm-round106-issue-create-20261015T235549Z.json\n/private/tmp/cmm-round106-borates-research/dedup-initial-output.txt\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/pages/kinds/mineral.html\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports/publication/round106-20261015/receipts/cmm-round106-queue-receipt.json\n/private/tmp/cmm-round106-borates-research/web-search03.json\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports/publication/round106-20261015/receipts/cmm-round106-issue-drafts.json\n/private/tmp/cmm-round106-borates-research/web-search11.json\n/private/tmp/cmm-round106-borates-research/acquisition02.json\n/private/tmp/cmm-round106-borates-research/dedup-initial.json\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports/publication/round106-20261015/receipts/cmm-round106-hosted-final-assessment.json\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/pages/browse.html\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports/publication/round106-20261015/receipts/cmm-round106-hosted-final-inspection.json\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports/publication/round106-20261015/receipts/cmm-round106-created-issue-412.json\n/private/tmp/cmm-round106-borates-research/issue-dedup.json\n/private/tmp/cmm-round106-borates-research/calcioveatchite2024.txt\n/private/tmp/cmm-round106-borates-research/write_dossier.py\n/private/tmp/cmm-round106-borates-research/veatchite-draft.yaml\n/private/tmp/cmm-round106-borates-research/ima2026-09.txt\n/private/tmp/cmm-round106-borates-research/dedup-corrected.json\n/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/pages/materials/veatchite.html\n",
+    "stderr": "",
+    "scope": "Hidden and ignored files included; relevant symlinks followed. Original-main bounded read only; no project/environment command there. Cited raw roots101–106 and10/12/76. Git metadata, environments, node caches and unextracted binary content excluded; no machine-wide absence claim.",
+    "interpretation": "Context matches are expected (prior veatchite owner, IMA lists, source dossiers). No distinct calcioveatchite or ludwigite-ore maintained owner in these bounded hidden/ignored/followed roots before curation."
+  },
+  "issue_deduplication": {
+    "inventory": "/private/tmp/cmm-round107-issues-start.json",
+    "population": 299,
+    "scope": "all-state titles/bodies, not comments",
+    "matched": [
+      {
+        "body": "The proposed veatchite owner preserves the distinction between a mineral species, its polytypes and the subsequently approved calcioveatchite species. This is a primary-source clarification task; the owner does not assert a pure-Sr composition for the disputed specimen.\n\n[Grice and Pring2012](https://doi.org/10.2138/am.2012.3889), American Mineralogist97:489–495, Table1/p.489 studied NMNH145911(1A), NMNH113264(1M) and RG701/1(2M). The2M crystal was a substitute from Penobsquis/Sussex, New Brunswick, not the preserved California type crystal. Table2c/p.491 gives the smaller cation site as Sr0.4870(6), Ca0.5130 and the text explicitly notes slight Ca dominance and possible new-species status. The separate original CIF deposit AM-12-015 was not acquired; the publisher index route was unavailable.\n\n[Pekov et al.2024](https://doi.org/10.3390/min14090901), Minerals14:901, establishes calcioveatchite (IMA2020-011) with one Ca-dominant cation site. Sections5.1–5.2/pp.14–16 discuss the species boundary and infer possible calcioveatchite zones in Penobsquis samples from earlier composition ranges. It does not directly reanalyse the exact2012 RG701/1 crystal; the new holotype is a1M sample from Nepskoe.\n\nAcceptance conditions:\n\n1. Recover the three original AM-12-015 CIFs and any structure-factor files with publisher provenance/checksums. Verify specimen labels, site-occupancy constraints, uncertainties and whether the printed second Ca2 label in Table2c refers to the first or second cation site.\n2. Seek specimen-linked modern chemical/structural reassessment or authoritative clarification for RG701/1. Preserve the historical study name separately from a modern species determination; do not silently relabel every veatchite2M as calcioveatchite.\n3. Compare the abstract and Table1 discrepancy in1M c (6.6272 vs6.6276 Å) and1A beta uncertainty(12 vs1), recording corrected values only when the source basis is clear.\n4. Keep p.494 geological temperature/pressure associations separate from experimentally determined transition boundaries. Add no microbial or extraction mechanism without a qualifying primary study.\n5. If supported new evidence changes the owner, append history and obtain a new independent scientific review; otherwise retain this as a documented source limit.\n\nDedup:293 all-state issue titles/bodies in `/private/tmp/cmm-round106-issues-start.json`, SHA256`2bb14b523069a58f790586c937a8c5e9dc99d1991a5143b2288e38f0e4a19956`, searched2026-10-15T23:49:18Z for names/DOIs; no match. Issue comments were not supplied/searched.\n",
+        "labels": [],
+        "number": 412,
+        "state": "OPEN",
+        "title": "Resolve veatchite2012 specimen identity at the calcioveatchite boundary and recover its CIF deposit",
+        "updatedAt": "2026-10-15T23:55:54Z",
+        "url": "https://github.com/CultureBotAI/CMMMech/issues/412"
+      }
+    ],
+    "inventory_sha256": "5e4ab6ca3aa1d87b171717e36a96b0a768e455421f7dd206192f322f92d994ab"
+  },
+  "sources": [
+    {
+      "key": "ima_2026_09",
+      "role": "current mineral identity authority",
+      "decision": "pursue",
+      "version": "September 2026 official 244-page list; reused exact round106 PDF, current homepage independently fetched",
+      "path": "/private/tmp/cmm-round107-borates-research/reused-ima2026-09.pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "locators": [
+        "PDF page 1 definitions",
+        "PDF page 35 Calcioveatchite row"
+      ],
+      "assessment": "Calcioveatchite SrCaB11O16(OH)5(H2O), approved A, 2020-011. Authority corroborates species identity, not criticality or recovery. No IMA identifier applied to mixed ludwigite ore."
+    },
+    {
+      "key": "pekov2024",
+      "doi": "10.3390/min14090901",
+      "role": "primary natural-mineral characterization",
+      "decision": "pursue narrowly",
+      "version": "18-page publisher original, published 2 September 2024; CC BY 4.0; reused round106 acquisition and newly reviewed throughout",
+      "path": "/private/tmp/cmm-round107-borates-research/reused-calcioveatchite2024.pdf",
+      "sha256": "1623370d85fe10bd2fd7a719ca8c07fdf854e841696ed1b9a678aa449df702c1",
+      "locators": [
+        "pp. 3-6 specimens and methods",
+        "p. 7 water determination",
+        "p. 8 Table 1 and Figure 6",
+        "pp. 10-13 Tables 3-7",
+        "pp. 14-16 species boundary and Figures 7-8",
+        "p. 17 data availability"
+      ],
+      "assessment": "Nepskoe natural holotype 97013; four-spot EMPA and single-crystal diffraction. Eleven-coordinate site is Sr dominant and ten-coordinate site is Ca dominant. This supports a distinct ordered mineral species; it is not a pure ideal end member. The specific 2012 veatchite RG701/1 sample was not reanalyzed here.",
+      "limits": [
+        "10.22 wt% holotype water is calculated; 10.07 wt% is a separate gross multi-crystal Penfield mean of three analyses.",
+        "Prose minimum SrO 17.1 wt% appears to use ideal calculated Table 1 column 2, not a measured endpoint. Table 1 measured columns and spot ranges are kept separate.",
+        "Complete structure tables and images inspected; original CIF/reflections not acquired. Refinement not rerun.",
+        "IR doublet interpretation is not used to infer extra formula waters or additional independent water sites.",
+        "Rock dissolution is preparation; no microbial, extraction yield, criticality or deployment claim."
+      ]
+    },
+    {
+      "key": "liang2024",
+      "doi": "10.3390/molecules29040826",
+      "pmid": "38398578",
+      "pmcid": "PMC10893144",
+      "role": "primary laboratory processing study",
+      "decision": "pursue narrowly",
+      "version": "18-page publisher original, published 12 February 2024; CC BY 4.0; Europe PMC XML version 1 is the same study",
+      "path": "/private/tmp/cmm-round107-borates-research/ludwigite2024.pdf",
+      "sha256": "35e5f52adead0ffbfb519c99e51c82ef9fb5285398fc9abb11036324f36ec101",
+      "locators": [
+        "pp. 3-5 sections 2.1.1-2.1.3/Figures 1-3",
+        "pp. 6-8 Figures 4-6",
+        "pp. 9-14 equations 4-11/Table 1",
+        "pp. 14-15 Table 2/Figure 9/methods",
+        "pp. 15-16 conclusions/data availability"
+      ],
+      "assessment": "Mixed geological boron-iron concentrate, subsequently soda-ash-roasted at 1050 degrees C for 60 min with 20 wt% reagent per concentrate. Author-reported boron leaching 93.71% at 180 degrees C, 6 h, 8 mL/g, representative size 52.31 micrometres. Table 2 is reduced feed, not original ore. Leachate evaporite includes metaborate dihydrate and carbonate monohydrate; no pure isolated-product yield.",
+      "limits": [
+        "Exact mine/sample identifier and original phase proportions not established. Original ore is not a pure mineral and has no assigned external mineral ID.",
+        "Specific analytical calculation and leach procedure explicitly referred to unacquired 2017 full original; gas/flow, denominator, sampling and replicates are not reconstructed.",
+        "Low-temperature prose calls boron unextractable despite reported ~72% results and nonzero Figure 1 curves.",
+        "All-under-74-micrometre method conflicts with a 92.94-micrometre representative size. Section 3.2.4 defines representative size as D50 although earlier text calls it average.",
+        "Equation 11 and conclusion print positive outer exponent, unlike Equation 4. Not silently repaired or used predictively. Rate-constant/time units and global intercept derivation not independently reconstructed.",
+        "8.812 kJ/mol is fitted apparent activation energy; diffusion control is an inference, not unique elementary-mechanism proof.",
+        "Figure 4 uses 60.16 micrometres rather than best-result 52.31; Figure 5 uses a 60-min residue and unequal magnifications. No pooling these arms.",
+        "No demonstrated microbial activity, industrial operation, complete mass balance or mineral-specific extraction."
+      ]
+    },
+    {
+      "key": "liang2017",
+      "doi": "10.1016/j.hydromet.2016.11.004",
+      "role": "cited prior analytical/roasting methods",
+      "decision": "defer",
+      "acquisition": "Publisher abstract and partial Materials preview only; bounded exact-title/DOI PDF searches did not recover full original.",
+      "limits": "Preview concerns 25 wt% Na2CO3 and 100% CO optimum; cannot supply missing conditions for 2024 20 wt% batch. No recipe or quantitative outcome imported."
+    },
+    {
+      "key": "li2014",
+      "doi": "10.1016/j.mineng.2013.10.030",
+      "role": "cited earlier ore characterization",
+      "decision": "defer",
+      "acquisition": "Metadata/reference and search lead only; complete primary not acquired.",
+      "limits": "No sample composition, recovery yield or process condition imported."
+    },
+    {
+      "key": "later_scaleup",
+      "doi": "10.1016/j.jece.2025.119518",
+      "role": "later processing lead",
+      "decision": "defer",
+      "acquisition": "Search metadata/abstract lead only; not acquired or reviewed in full.",
+      "limits": "No scale-up or industrial deployment claims transferred to the 2024 laboratory record."
+    }
+  ],
+  "visual_inspection": {
+    "reused-calcioveatchite2024.pdf": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "ludwigite2024.pdf": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "reused-ima2026-09.pdf": [
+      1,
+      35
+    ]
+  },
+  "correction_search": {
+    "coverage": "Exact DOI/title correction, retraction and erratum searches, including publisher-restricted queries; both Crossref relation/update fields and Europe PMC XML inspected. No affecting notice identified in these bounded results. Not exhaustive.",
+    "crossref": "Both DOI metadata have empty relation and absent update-to/updated-by fields; publication dates verified against original pages.",
+    "xml": [
+      {
+        "tag": "related-article",
+        "matches": []
+      },
+      {
+        "tag": "supplementary-material",
+        "matches": []
+      },
+      {
+        "tag": "ext-link",
+        "matches": []
+      },
+      {
+        "tag": "article-version",
+        "matches": [
+          "<article-version article-version-type=\"pmc-version\">1</article-version>"
+        ]
+      }
+    ]
+  },
+  "reuse": {
+    "raw": "Full PDFs/XML, extracted text and page images retained outside Git. Only original assessments and provenance enter repository.",
+    "terms": "Both 2024 papers are CC BY 4.0 (https://creativecommons.org/licenses/by/4.0/). Official IMA list used for bounded identity verification; no bulk redistribution.",
+    "data_model": "No automated importer, dataset join or digitized measurement table. All percentages, wt% values and fitted kinetic values stay qualified prose; native concentration-observation contract is not stretched."
+  },
+  "checks": {
+    "baseline_receipt": {
+      "state": "completed",
+      "base": "27d842b3e6239bf60565f93c958d3f2cad395037",
+      "worktree": "/private/tmp/CMMMech-expansion-round107-20261016",
+      "started_at": "2026-10-16T00:28:54.852939+00:00",
+      "commands": [
+        {
+          "command": [
+            "uv",
+            "sync",
+            "--quiet",
+            "--locked",
+            "--extra",
+            "dev",
+            "--offline"
+          ],
+          "started_at": "2026-10-16T00:28:54.854172+00:00",
+          "finished_at": "2026-10-16T00:28:58.079399+00:00",
+          "exit_code": 0
+        },
+        {
+          "command": [
+            "just",
+            "check"
+          ],
+          "started_at": "2026-10-16T00:28:58.079434+00:00",
+          "finished_at": "2026-10-16T00:35:16.079315+00:00",
+          "exit_code": 0
+        }
+      ],
+      "exit_code": 0,
+      "finished_at": "2026-10-16T00:35:16.079460+00:00",
+      "log": "/private/tmp/cmm-round107-baseline.log",
+      "log_sha256": "9e5774ef26487d5f888822621d15caea9fe5b73e82efdd5fe4c0192f77468740"
+    },
+    "named_validation": {
+      "started_at": "2026-10-16T00:37:47.642518+00:00",
+      "finished_at": "2026-10-16T00:37:59.466189+00:00",
+      "command": [
+        "uv",
+        "run",
+        "--locked",
+        "cmmmech",
+        "validate",
+        "data/records/calcioveatchite.yaml",
+        "data/records/ludwigite-ore.yaml"
+      ],
+      "environment": {
+        "UV_OFFLINE": "1",
+        "UV_CACHE_DIR": "/private/tmp/cmmmech-uv-cache",
+        "PYTHONDONTWRITEBYTECODE": "1"
+      },
+      "worktree": "/private/tmp/CMMMech-expansion-round107-20261016",
+      "base": "27d842b3e6239bf60565f93c958d3f2cad395037",
+      "exit_code": 0,
+      "stdout": "Checked 2 record(s); 0 failed.\n",
+      "stderr": "",
+      "files": {
+        "data/records/calcioveatchite.yaml": "124baa6951a2fcb650fa2a3df2c5eedfe89001ac73c9b8586767cdb7e4848839",
+        "data/records/ludwigite-ore.yaml": "c55996420abc0062e76e4f91370f9dd2d28e508d77604fe17d23f6dba38ff5c5",
+        "history/records/calcioveatchite/2026-10-16T003727Z-codex-d63f26.yaml": "10cda98c8614048105facb5bce082fa1a3ce7a0f0243ca29177d2ad258ea9c63",
+        "history/records/ludwigite-ore/2026-10-16T003737Z-codex-890fd7.yaml": "67240f2e4f8ac07da648de3341ee36ecb9a2a71dd83e0d1b206734c0067631df"
+      }
+    },
+    "pending": "Final batch/history/native-review gates and independent scientific reviews are not yet complete at this dossier timestamp."
+  },
+  "priorities": [
+    "Independent review of both exact owners and histories.",
+    "Resolve calcioveatchite measured SrO endpoint and acquire original refinement data; distinct from issue 412.",
+    "Recover specimen-linked 2017 methods and resolve 2024 analytical/model/grain-size conflicts before strengthening the ore record.",
+    "Assess later scale-up primary originals separately before any deployment claim."
+  ],
+  "source_followup_draft": "/private/tmp/cmm-round107-borates-research/source-followups.md",
+  "raw_manifest": "/private/tmp/cmm-round107-borates-research/raw-manifest-before-curation.json"
+}

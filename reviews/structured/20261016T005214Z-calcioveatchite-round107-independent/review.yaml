@@ -1,0 +1,335 @@
+schema_version: 1.0.0
+review_id: 20261016T005214Z-calcioveatchite-round107-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of calcioveatchite
+started_at: '2026-10-16T00:41:39.988642Z'
+finished_at: '2026-10-16T00:52:14.407079Z'
+reviewer:
+  identity: codex /root/round104_ree
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_borates; no edits
+    to the reviewed borate owner/history/dossier. Reviewer authored unrelated lanthanite-(Nd)
+    and xenotime-(Yb) records. Source acquisition was shared, then original articles
+    and authority were independently inspected.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 27d842b3e6239bf60565f93c958d3f2cad395037
+  state: working_tree
+  inputs:
+  - path: data/records/calcioveatchite.yaml
+    sha256: 124baa6951a2fcb650fa2a3df2c5eedfe89001ac73c9b8586767cdb7e4848839
+    role: target
+  - path: history/records/calcioveatchite/2026-10-16T003727Z-codex-d63f26.yaml
+    sha256: 10cda98c8614048105facb5bce082fa1a3ce7a0f0243ca29177d2ad258ea9c63
+    role: context
+  - path: research/sources/round107-borates/20261016T003910Z-source-investigation.json
+    sha256: 1a887adbf15d0bd2181ce3fdb3914017820c0b31ebc9f7cb6f917b06dfb4d50b
+    role: context
+  - path: research/sources/round107-borates/20261016T003910Z-source-investigation.md
+    sha256: 6848661b0e4bcd370f3e35aad2ea3e582c664d5cba08d40f91b69b49ffb50f8c
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:calcioveatchite
+  path: data/records/calcioveatchite.yaml
+  label: calcioveatchite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/calcioveatchite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/calcioveatchite/2026-10-16T003727Z-codex-d63f26.yaml
+    role: canonical_history
+scope:
+  description: Exact frozen calcioveatchite owner, source claims and canonical/inline
+    creation provenance; wider follow-up leads and hosted publication excluded.
+  selection: Assigned target captured with native inspect before independent scientific
+    assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:calcioveatchite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/calcioveatchite.yaml
+  locator: Complete exact working-tree bytes at /private/tmp/CMMMech-expansion-round107-20261016/data/records/calcioveatchite.yaml
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: supports
+  summary: Identity, scientific descriptions, source-level claims, mechanism scope
+    and inline CREATE independently checked.
+  snapshot_sha256: 124baa6951a2fcb650fa2a3df2c5eedfe89001ac73c9b8586767cdb7e4848839
+- evidence_id: history
+  kind: record_content
+  reference: history/records/calcioveatchite/2026-10-16T003727Z-codex-d63f26.yaml
+  locator: Complete canonical CREATE at /private/tmp/CMMMech-expansion-round107-20261016/history/records/calcioveatchite/2026-10-16T003727Z-codex-d63f26.yaml
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: supports
+  summary: Actual actor codex, GPT-6/codex metadata, timestamp and target correspond
+    to this addition; inline and canonical events remain distinct.
+  snapshot_sha256: 10cda98c8614048105facb5bce082fa1a3ce7a0f0243ca29177d2ad258ea9c63
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round107-borates/20261016T003910Z-source-investigation.json
+  locator: Paired source investigation; acquisition and access limits checked independently
+    against original artifacts. /private/tmp/CMMMech-expansion-round107-20261016/research/sources/round107-borates/20261016T003910Z-source-investigation.json
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: context_only
+  summary: Context for source provenance and deferred evidence; not a substitute for
+    the original papers.
+  snapshot_sha256: 1a887adbf15d0bd2181ce3fdb3914017820c0b31ebc9f7cb6f917b06dfb4d50b
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round107-ree-research/borate-review-search.json
+  locator: Four exact DOI/title correction/retraction queries; raw response retained.
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: context_only
+  summary: No affecting notice identified in returned sets. Known internal conflicts
+    remain explicit; no universal absence claim.
+  snapshot_sha256: 59f3c2bf5aea43bd19c8b86574cdb1d047950bae3ce07f1679daafe3478012b8
+  search_scope: First returned web sets for four queries recorded verbatim; current
+    Crossref relation/update fields also checked. Metadata and secondary search snippets
+    were not scientific support.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round107-ree-research/borate-review-dedup.txt
+  locator: Hidden, ignored and followed search across worktree records, research,
+    reviews and history; curator broader dedup includes original-main ignored reports
+    and cited raw roots.
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: context_only
+  summary: Existing veatchite-context use of the calcioveatchite source is distinct
+    from this new species owner. Ludwigite ore remains distinct from a mineral species.
+  snapshot_sha256: f723b2590aa56c48f0a31dcdb34171c9af1064247dea1a49d3408f3a8f22942b
+  search_scope: Bounded text roots and identifiers/DOIs recorded in paired search
+    receipt; not the whole filesystem or unextracted binary content.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round107-ree-research/borate-review-named-validation.json
+  locator: Independent two-owner strict validation with exact hashes and actual subprocess
+    timestamps.
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: supports
+  summary: Two records checked; zero failed. 2026-10-16T00:42:48.209748+00:00 through
+    2026-10-16T00:42:53.866306+00:00
+  snapshot_sha256: 46d8d2f255830999a395f4c03a41c9fc17736b999839ca92c165ced7c80751cb
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round107-final-gates.json
+  locator: Coordinator terminal receipt; base, worktree, exact four commands, successful
+    outcomes, unchanged owner hashes and log SHA256 independently verified. Log /private/tmp/cmm-round107-final-gates.log
+    SHA256 4185f25a993d68b080a9c2a474ce5862e8284f6665a760daa83540e913968f84
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: supports
+  summary: Actual completed local batch, not an inferred check or hosted publication
+    result.
+  snapshot_sha256: 9ecba8d70f57d4bf2df433becdf3581dca4a634de4fd5294f1c66f4aaf6b1d4c
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/min14090901
+  locator: Complete 18-page article available and text read; original PDF pages 3–5,7–16
+    independently viewed, covering all Figures 1–8 and Tables 1–8, methods, composition,
+    refinement and nomenclature. /private/tmp/cmm-round107-borates-research/reused-calcioveatchite2024.pdf
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: supports
+  summary: Pekov et al. 2024 supports natural Nepskoe type specimen identity and measured/ideal
+    chemistry boundaries. This is a preserved round106 acquisition, not a newly downloaded
+    original.
+  snapshot_sha256: 1623370d85fe10bd2fd7a719ca8c07fdf854e841696ed1b9a678aa449df702c1
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Current September 2026 definitions p1 and calcioveatchite row p35 viewed;
+    fresh same-edition authority independently acquired for REE curation and matches
+    this hash. /private/tmp/cmm-round107-borates-research/reused-ima2026-09.pdf
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: supports
+  summary: Accepted species IMA 2020-011, ideal SrCaB11O16(OH)5.H2O, Russia; mineral
+    species is distinct from veatchite and elemental Sr/Ca/B.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: metadata
+  kind: authority
+  reference: https://api.crossref.org/works/10.3390/min14090901
+  locator: Current metadata acquired by curator, independently read at /private/tmp/cmm-round107-borates-research/calcioveatchite2024-crossref.json
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: context_only
+  summary: DOI/title/year verified. Empty relation/update fields are not proof no
+    notice exists.
+  snapshot_sha256: ef2c14942fd942b1bdc98fe3e289b88b237d93df4c716ea94dd5b6b8c6b761bc
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/calcioveatchite.yaml data/records/ludwigite-ore.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Two records checked with zero failures; subprocess receipt and exact hashes
+    verified.
+  target_ids:
+  - cmmmech:calcioveatchite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Final batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T00:44:33.569603+00:00 through 2026-10-16T00:51:25.649736+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:calcioveatchite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Final batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T00:51:25.651660+00:00 through 2026-10-16T00:51:42.046800+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:calcioveatchite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Final batch command 3
+  command: uv run --locked cmmmech validate-history --base 27d842b3e6239bf60565f93c958d3f2cad395037
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T00:51:42.047805+00:00 through 2026-10-16T00:51:50.294344+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:calcioveatchite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Final batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T00:51:50.295710+00:00 through 2026-10-16T00:51:57.934762+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:calcioveatchite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Accepted species and exact type material
+  outcome: supported
+  summary: IMA 2020-011 and the original distinguish calcioveatchite from Sr-dominant
+    veatchite; borehole 130 at 911 m, Nepskoe and source-reported Fersman holotype97013
+    describe the studied type. The specimen number is not independently verified as
+    an external controlled identifier.
+  target_ids:
+  - cmmmech:calcioveatchite
+  evidence_ids:
+  - record
+  - ima
+  - primary
+- assessment_id: chemistry
+  area: evidence
+  topic: Ideal formula, microprobe and water measurements
+  outcome: supported
+  summary: Four holotype WDS spots at 20 kV/10 nA with5×5 µm area give CaO 7.05, SrO
+    20.70 and B2O3 61.96 wt%; empirical Sr1.23Ca0.78B10.99O16(OH)5.H2O remains distinct
+    from ideal chemistry. Water 10.22 wt% is structure-derived; three separate gross
+    multicrystal Penfield values average 10.07 wt% and are not same-preparation microprobe
+    confirmation.
+  target_ids:
+  - cmmmech:calcioveatchite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: structure
+  area: evidence
+  topic: Structural model and site-based species boundary
+  outcome: supported
+  summary: Single-crystal refinement at293(2) K supports P21, Z2, Sr-dominant eleven-coordinate
+    and Ca-dominant ten-coordinate sites. H atoms were Fourier located with distance/thermal
+    restraints, not freely measured without constraints. The Sr1.5Ca0.5 boundary and
+    earlier Canadian chemistry discussion do not reclassify every historical veatchite
+    specimen.
+  target_ids:
+  - cmmmech:calcioveatchite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: conflict
+  area: consistency
+  topic: Reported SrO range
+  outcome: supported
+  summary: The prose lower bound17.1 wt% corresponds to calculated ideal column 2
+    at17.11, not the lowest measured analysis. The owner preserves that discrepancy
+    instead of reporting the theoretical value as measured.
+  target_ids:
+  - cmmmech:calcioveatchite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: scope
+  area: scope
+  topic: Biology, criticality and extraction scope
+  outcome: supported
+  summary: No inherited criticality list or organism/biomass claim is asserted. Water-insoluble
+    residue collection after host-salt dissolution is specimen preparation, not quantified
+    recovery performance or industrial deployment.
+  target_ids:
+  - cmmmech:calcioveatchite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen inputs and completed checks
+  outcome: supported
+  summary: Native inspection captured exact owner/history/dossier/schema bytes before
+    judgment; all remain unchanged. Independent named validation and actual coordinator
+    batch/history checks passed. Saved-review validation and publication are later
+    gates.
+  target_ids:
+  - cmmmech:calcioveatchite
+  evidence_ids:
+  - record
+  - history
+  - dossier
+  - named
+  - batch
+findings: []
+actions: []
+summary: Qualified acceptance of mineral identity and natural-specimen characterization;
+  no supported corrective record defect.
+limitations:
+- Original CIF/reflections and raw microprobe data were not acquired; printed structural
+  tables and figures were checked without independent re-refinement. The article states
+  underlying data are available on request.
+- Reported SrO-range and preparation-specific water differences remain explicit. Broader
+  reassignment of historical Ca-rich veatchite specimens is not established.
+- Shared source acquisition is disclosed. Bounded correction and hidden/ignored dedup
+  searches do not establish exhaustive absence.
+- Working-tree review at the retained base. Record validation is separate from scientific
+  truth; native review-check and committed-head/hosted publication remain separate.
+notes:
+- No owner/history correction was needed; unavailable originals and retained internal
+  source conflicts are limitations, not invented corrective defects.
+- No self-authored REE record is scientifically reviewed in this observation.

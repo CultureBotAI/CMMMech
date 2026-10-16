@@ -1,0 +1,68 @@
+{
+  "recorded_at": "2026-10-16T00:53:01.222390+00:00",
+  "reviewed_revision": "27d842b3e6239bf60565f93c958d3f2cad395037",
+  "review_kind": "author remediation verification; independent successor requested",
+  "reviewer": "codex /root/round104_borates (GPT-6)",
+  "independence": "author_verification",
+  "issue": "https://github.com/CultureBotAI/CMMMech/issues/425",
+  "issue_disposition": "fix prepared; GitHub issue remains open pending authorized PR/merge lifecycle",
+  "predecessors": [
+    {
+      "path": "reviews/publication/20261016-round107/helper-lifecycle-review.json",
+      "sha256": "5f4917cd6bf534370229812779f2173f23b0577a5f48e6b11a2940edc3fcb639"
+    },
+    {
+      "path": "reviews/publication/20261016-round107/queue-cleanup-initial-review.json",
+      "sha256": "32fb1bfa71f866fc54ad2f2d6807ecbe453e1901c235e84b046ba73e3cd4f7f3"
+    }
+  ],
+  "changes": [
+    {
+      "path": "/private/tmp/cmm-round107-queue.py",
+      "initial_sha256": "85b1a0cb9ad4b96fa5be5d743527621457fb33c80daa5de2e7f1ee2cad40936e",
+      "final_sha256": "f505913f2e09aa4a20e10fc4c8b202bf3e24434bf526ca6e4bb018bac826d4f7",
+      "snapshot": "/private/tmp/cmm-round107-borates-research/helper-lifecycle-audit/queue-final.py",
+      "diff": "/private/tmp/cmm-round107-borates-research/helper-lifecycle-audit/queue-initial-to-final.diff",
+      "diff_sha256": "8ff2a797993c77fdf9457ef27b793296724a786e68683ab5235f0d5cfaf641c5"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-cleanup.py",
+      "initial_sha256": "f9d84a05c7a995e7fbf2a86d898c679fc9ad443dd0dd3b35414da3ab8f467684",
+      "final_sha256": "4598476ee178073ae56e9bdce9eca5cf66a3f0c6630f195b0eee7f0e559f3e30",
+      "snapshot": "/private/tmp/cmm-round107-borates-research/helper-lifecycle-audit/cleanup-final.py",
+      "diff": "/private/tmp/cmm-round107-borates-research/helper-lifecycle-audit/cleanup-initial-to-final.diff",
+      "diff_sha256": "9d430b242841d900d8bcdf7ec176fc2e3762ea50b8bed59690c0ec0d83f8ffdb"
+    }
+  ],
+  "resolutions": [
+    {
+      "issue_key": "round107-queue-preflight-command-location",
+      "initial_severity": "minor",
+      "status": "corrected_pending_independent_successor",
+      "correction": "Require exactly one matching row per required preflight command, exit0 and cwd exactly the isolated clone.",
+      "regression": "Each of four required commands tested independently for wrong cwd and duplicate successful rows; all eight fixtures rejected before mutation."
+    },
+    {
+      "issue_key": "round107-queue-independent-release-verdict",
+      "initial_severity": "minor",
+      "status": "corrected_pending_independent_successor",
+      "correction": "Require completed positive verdict and passed=true from exact repository/PR/head/tree/base independent review. Record and recheck its digest; posted review receipt must bind independent_review_sha256 to those bytes.",
+      "regression": "Missing, pending, failed, wrong repository/PR/head/tree/base/verdict, modified-after-read assessment, missing or wrong posted digest all reject before mutation."
+    }
+  ],
+  "other_requested_change": "Cleanup requires source issues418\u2013423open and corrective424+425closed after exact squash verification and before deletion. Separate negative fixture verifies425open refuses deletion.",
+  "tests": {
+    "receipt": "/private/tmp/cmm-round107-borates-research/helper-lifecycle-mock-tests-final.json",
+    "sha256": "a5feda35dc8e0b2060c615dafd8205190fa7632c20ec027b72a6d6f23b083ab9",
+    "cases": 79,
+    "passed": true,
+    "execution_scope": "Synthetic temporary fixtures only; subprocess.run replaced with strict expected-command dispatcher. No Git, gh, network or project commands executed. All mutation calls below are mocks."
+  },
+  "findings_remaining": [],
+  "unresolved_questions": [
+    "Separate independent successor assessment pending.",
+    "Actual commit/PR/preflight/review receipts and hosted outcomes remain future work; none are asserted successful by these mocks."
+  ],
+  "verdict": "author_fix_verified_with_limitations",
+  "executed_mutations": false
+}
