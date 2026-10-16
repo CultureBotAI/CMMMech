@@ -1,0 +1,457 @@
+{
+  "schema": "cmmmech-source-investigation-v1",
+  "recorded_at": "2026-10-16T01:35:28.613318Z",
+  "author": {
+    "actor": "codex",
+    "model": "GPT-6",
+    "tool": "codex",
+    "role": "curator; independent scientific review pending"
+  },
+  "repository": {
+    "worktree": "/private/tmp/CMMMech-expansion-round108-20261016",
+    "branch": "curate/cmm-expansion-round108-20261016",
+    "trusted_base": "26661b7f033d4bdb915e48e71080aa5774b4c3d6",
+    "baseline": "/private/tmp/cmm-round108-baseline.json",
+    "baseline_sha256": "79bd16a41889a65c6686b6161e03287b92a832762760c2f9533121be9b39f0ae",
+    "baseline_terminal_pass": true
+  },
+  "scope": "Two distinct uranium-host mineral species. Abiotic mechanisms are laboratory observations; criticality lists/organisms are notclaimed. No commercial commodity orsecondaryresource identity conflation.",
+  "ranked_handoff": [
+    {
+      "priority": 1,
+      "record": "data/records/soddyite.yaml",
+      "decision": "curated_pending_independent_review",
+      "basis": "Primary flow/batchdissolution andsecondaryprecipitation experiment plusnaturalidentity."
+    },
+    {
+      "priority": 2,
+      "record": "data/records/sklodowskite.yaml",
+      "decision": "curated_pending_independent_review",
+      "basis": "Primary naturalcrystalidentity plusseparateMg hydrothermaltransformation."
+    }
+  ],
+  "maintained_artifacts": {
+    "data/records/soddyite.yaml": "346601a9ef95444ac9cf161bbcd8c41132a22d6e73c3d1517c97bdd6c0d68adf",
+    "history/records/soddyite/2026-10-16T013344Z-codex-965e52.yaml": "2bfe3de2fa41b21910feb880a2a347bdd951c3863730d8683b7a1aff2f705aef",
+    "data/records/sklodowskite.yaml": "53c0316236367e088f6db964b0193c0775b92540049a46948705d25a8c9cc289",
+    "history/records/sklodowskite/2026-10-16T013411Z-codex-4dd638.yaml": "7947e852ffca5fe689816cc0dedc9b961f920b074df572a18ddf0e321188baf3"
+  },
+  "sources": [
+    {
+      "key": "ima202609",
+      "role": "current mineral identity authority",
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "version": "September 2026",
+      "file": "/private/tmp/cmm-round108-uranium-research/ima202609.pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "inspection": "Definitions page1 and exact sklodowskite page201/soddyite page202 rows visually inspected; not all244pages read.",
+      "finding": "Both G; 1924 and1922 are original-description years, not approval IDs. Current sklodowskite formula distinguishes coordinated4waters and2otherwaters, equivalent bulk6waters.",
+      "reuse": "Authority list terms apply; full PDF retained outside Git."
+    },
+    {
+      "key": "giammar2002",
+      "role": "primary abiotic dissolution/secondary precipitation",
+      "doi": "10.1016/S0016-7037(02)00927-4",
+      "file": "/private/tmp/cmm-round108-uranium-research/giammar2002.pdf",
+      "sha256": "deaf899af9116124cbbab3dc98b0c4630cbb50234d9eb95333278400303cb813",
+      "inspection": "All11pages3235–3245 visually and textually inspected, Figures1–9 and Tables1–2. No supplement is declared in original article; publisher preview was inspected, not an exhaustive ancillary-data search.",
+      "finding": "Synthetic powder batch/flow22±2°C pH6 inNaNO3/MES. Secondary clarkeite-like assignment is not unique; lower U release in100µM addedSi arm. Rates calculated from measured effluent/residence/loading/BET, batch fits have differenttimewindows.",
+      "limitations": [
+        "Section3.3 means0.70±0.11/0.45±0.06 versus abstract/section4.4 0.71/0.44 µmol U m−2h−1; statistic undefined.",
+        "Batch pH stability inferred; later Si sampleslost; solidsadheredwalls; endpoint1680/1683h and lateU1.9–2.5/1.9–2.7µM differ acrosssections.",
+        "XRD cannot uniquely separateclarkeite andsodiumuranates; noisolatedyield/industrial/microbialclaim.",
+        "EquilibriumTable2 recalculations andFigure9 are models, not measuredphasefractions."
+      ],
+      "metadata": "Original2002 study confirmed by Crossref, publisher metadata andauthorinstitution record; recent repository indexing is not new publication.",
+      "reuse": "Elsevier2002 allrightsreserved; public mirror is readingaccess, not permission toredistribute."
+    },
+    {
+      "key": "plasil2018",
+      "role": "primary new natural-crystal diffraction within review article; general sections are secondary context",
+      "doi": "10.3390/min8120551",
+      "file": "/private/tmp/cmm-round108-uranium-research/plasil2018.pdf",
+      "sha256": "f96034e17b57086c19566d0f63f9b28bc94bc8c47de52e368c391204ba87e3d4",
+      "xml_sha256": "b9bd974934c08189eb97daac3e2ae38d39fe90831b6dae78f5ad616c9402187e",
+      "supplement_sha256": "93d5831799465f56cbd9984daac3c90dec82c0114a849281894f01e83b34eeed",
+      "inspection": "All15pages read/visuallychecked includingFigures1–8 Tables1–3; completepublisherXML inspected forlinked originalSI; ZIP4CIF inventoryandrepresentative primary fields of soddyite/sklodowskite reviewed (metadata, symmetry, cell,refinement, hydrogen treatment/coordinates). Reflection lists acquired but not independently re-refined.",
+      "finding": "Section2.1/2Table2 newnaturalMuseumLuxembourg crystals support both identities. SklodowskiteC2/m, correctedhydroxyl inference; distinguishCu mineral. Museumsource doesnotidentify the crystalsas photographedlocality specimens.",
+      "limitations": [
+        "Sklodowskitebeta105.882(14) articleversus105.882(3)CIF; soddyitec18.6576(11)versus18.6576(7).",
+        "CIF publicationtemplates incomplete andsklodowskite formulaCu0 do notidentifyseparatearticle/Cubearingmaterial.",
+        "SklodowskiteCIF hascelltemperature293(13) andambient289K; notused asan exactthermal experiment.",
+        "Table1 places soddyite underweeksitegroup whereassection3 separates2:1soddyite from2:5weeksite; no inheritedgroupassignment. Section3 text about increasingU:Si andhigherSi is internally confusing, not adopted.",
+        "Section6 is secondary synthesisreview; primary1997 traced beforeacceptingformation."
+      ],
+      "reuse": "CCBY4.0 statedonpage15; onlycitationandassessmenttracked,rawarchiveexternal."
+    },
+    {
+      "key": "vochten1997",
+      "role": "primary synthetic sklodowskite formation",
+      "url": "https://www.rruff.net/doclib/cm/vol35/CM35_735.pdf",
+      "file": "/private/tmp/cmm-round108-uranium-research/vochten1997.pdf",
+      "sha256": "e1318999e81c0e2da373a60798c71675b279b42c6ac4c29fa4a2af188cd5658d",
+      "inspection": "All7originalpages735–741 read/visuallychecked, all3figuresand4tables. No SI declared inoriginal; no DOIverified inboundedsearch.",
+      "finding": "Page736 separateMgSO4 arm:2M185°C1.3MPa24h repeateduntilnegativequalitativeKtest;powderidentificationsupportedTable4page740.",
+      "limitations": [
+        "Unknowncyclecount/loading/volume/pH/yield/phasefractions/Kdetectionlimit/independentreplication.",
+        "NegativeKsupernatanttest isnotzeroKsolid orquantitativeconversion. PrecursorpH11.5/7days/reagentloads cannottransfer toMgarm.",
+        "Table3solubility andFigures1–3 focusboltwoodite/sodiumboltwoodite, notsklodowskite. Na-armfluorinatedbyproduct isnotassignedMgarm.",
+        "Noexactionexchangeversusdissolution-reprecipitationmechanism resolved."
+      ],
+      "metadata": "Originaltitleall5authorsvolume35:735–741confirmedfromPDFandUSGSbibliography;1995received/1996accepted distinctfrom1997publication.",
+      "reuse": "Reuse license unknown; publicRRUFFcopy forreading,fulltext/rendersoutsideGit."
+    }
+  ],
+  "dedup": {
+    "timestamp": "2026-10-16T01:32:17.598967+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "-i",
+      "soddyite|sklodowskite|cuprosklodowskite|10\\.1016/S0016-7037\\(02\\)00927-4|10\\.3390/min8120551|10\\.1016/j\\.chemgeo\\.2010\\.03\\.021|CM35_735|A new method of synthesis of boltwoodite",
+      "/private/tmp/CMMMech-expansion-round108-20261016/data/records",
+      "/private/tmp/CMMMech-expansion-round108-20261016/research",
+      "/private/tmp/CMMMech-expansion-round108-20261016/reviews",
+      "/private/tmp/CMMMech-expansion-round108-20261016/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports",
+      "/private/tmp/cmm-round57-mineral-research",
+      "/private/tmp/cmm-round82-stolzite-research",
+      "/private/tmp/cmm-round103-uranium-research",
+      "/private/tmp/cmm-round104-uranium-research",
+      "/private/tmp/cmm-round105-uranium-research",
+      "/private/tmp/cmm-round106-uranium-research",
+      "/private/tmp/cmm-round107-uranium-research"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "missing_roots": [],
+    "raw_match_path": "/private/tmp/cmm-round108-uranium-research/dedup-final-matches.txt",
+    "raw_match_sha256": "ef3182e4e39f446cdef55e2e0731bb1f564f7c5e95164b5a5de52d95de84c264",
+    "matched_files": [
+      "/private/tmp/cmm-round103-uranium-research/ima202609.txt",
+      "/private/tmp/cmm-round103-uranium-research/mac-depository.response",
+      "/private/tmp/cmm-round103-uranium-research/web-search-responses.json",
+      "/private/tmp/cmm-round104-uranium-research/ima202609.txt",
+      "/private/tmp/cmm-round105-uranium-research/edinburgh-thesis.txt",
+      "/private/tmp/cmm-round105-uranium-research/local-inventory.json",
+      "/private/tmp/cmm-round105-uranium-research/round105CorrectionsSearch.txt",
+      "/private/tmp/cmm-round106-uranium-research/ima202609.txt",
+      "/private/tmp/cmm-round107-uranium-research/ima202609.txt",
+      "/private/tmp/cmm-round107-uranium-research/uranophane1993-crossref.json",
+      "/private/tmp/cmm-round107-uranium-research/uranophane1993-mirror.txt",
+      "/private/tmp/cmm-round107-uranium-research/uranophane2009-crossref.json",
+      "/private/tmp/cmm-round107-uranium-research/uranophane2009.txt",
+      "/private/tmp/cmm-round107-uranium-research/web-search-results.json",
+      "/private/tmp/cmm-round57-mineral-research/raw/ima2026-pdf-text.txt",
+      "/private/tmp/cmm-round57-mineral-research/web-searches.json"
+    ],
+    "issue_inventory": {
+      "path": "/private/tmp/cmm-round108-issues-start.json",
+      "issues": 307,
+      "matching_title_body": [],
+      "comments_included": false
+    },
+    "scope": "Bounded hidden/ignored/symlink-followed maintained owners, histories, reviews and discovery; original main equivalent trees plus ignored reports; relevant cited raw roots. Current108 drafts excluded. No machine-wide absence assertion; binary PDF images are not exhaustively searchable."
+  },
+  "dedup_assessment": "No dedicated owner oracceptedsourceentry found indeclared maintainedtrees beforewrites, includingignored/hidden/followedpaths. Allmatchedfileswereexternalrawartifacts: IMAinventories, discoveryresults, priorpapersbibliography/context andthesis; noabsenceclaimoutsidedeclaredscope. Initialmisspelled57/82rootscorrected infinalsearch; no missingroots.",
+  "search": {
+    "provider": "web.run live search",
+    "date_utc": "2026-10-16",
+    "queries": [
+      "soddyite dissolution kinetics uranium silicate full text PDF",
+      "sklodowskite cuprosklodowskite dissolution structure primary PDF",
+      "\"Equilibrium and kinetic aspects\" soddyite pdf Giammar Hering",
+      "\"Mineralogy, Crystallography and Structural Complexity of Natural Uranyl Silicates\" 2018",
+      "sklodowskite dissolution hydrothermal synthesis primary study full text",
+      "\"soddyite\" \"Giammar\" \"caltech\"",
+      "\"Synthesis and characterization of 1:1 layered uranyl silicate mineral phases\" pdf",
+      "\"sklodowskite\" \"10.1016\" \"2010\" synthesis",
+      "site.authors.library.caltech.edu \"soddyite\"",
+      "Giammar Hering 2002 3235 3245 pdf",
+      "\"Geochemistry of uranium at mineral-water interfaces\" Caltech",
+      "soddyite Giammar Hering site:authors.library.caltech.edu",
+      "Giammar \"Geochemistry\" site:thesis.library.caltech.edu",
+      "\"soddyite\" \"Giammar\" filetype:pdf -site:123dok.com -site:researchgate.net",
+      "\"A new method of synthesis of boltwoodite\" pdf",
+      "\"min8120551\" supplementary cif",
+      "\"10.1016/S0016-7037(02)00927-4\" correction retraction",
+      "\"10.3390/min8120551\" correction retraction",
+      "\"min8120551\" (correction OR erratum OR retraction)",
+      "\"Giammar\" \"soddyite\" (correction OR erratum OR retraction)",
+      "\"min8120551\" \"supplementary\"",
+      "\"Vochten\" \"sklodowskite\" \"1997\" correction erratum retraction",
+      "\"A new method of synthesis of boltwoodite\" DOI"
+    ],
+    "coverage": "First returned results only; noexhaustivepagination, noportal-widecoverage. Typo query site.authors.library.caltech.edu retainedasactuallyused; subsequentlycorrectedtosite: syntax. No geographic/datefilters beyondquerystrings.",
+    "saved_response_path": "/private/tmp/cmm-round108-uranium-research/web-search-results.json",
+    "saved_response_sha256": "27204b848af7173d326217a32769230c0b4b5e5c54b0d760e8f648bf387ad662",
+    "saved_response_limit": "Queries throughweb07 savedasrawtoolresponses; last Vochtenidentifier/correctionquery returnedprimaryPDF/USGSbibliography andnocorrectionnotice, summarizedhere.",
+    "corrections": "ExactDOI/name pluscorrection/erratum/retractiontermsfoundnorelevantnotice inreturnedresults. Crossref2002/2018messageshaveemptyrelationandno update-to/updated-by. This boundednegative doesnotprovethereisno correction."
+  },
+  "acquisitions": [
+    {
+      "receipt": "/private/tmp/cmm-round108-uranium-research/acquisition01-sandbox-failure.json",
+      "sha256": "61fababe38d3dcfab0acf2c954674465ce2cc984d3d8f3b8c2af19bd766cf642",
+      "attempts": [
+        {
+          "name": "giammar2002.pdf",
+          "url": "https://repository.geologyscience.ru/bitstream/handle/123456789/30581/Giam_02.pdf?isAllowed=y&sequence=1",
+          "started_at": "2026-10-16T01:26:17.191215+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+          "finished_at": "2026-10-16T01:26:17.252853+00:00"
+        },
+        {
+          "name": "plasil2018.pdf",
+          "url": "https://pdfs.semanticscholar.org/8ada/addf2274312228dfcd8c95ddec446abf1393.pdf",
+          "started_at": "2026-10-16T01:26:17.198151+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+          "finished_at": "2026-10-16T01:26:17.252596+00:00"
+        },
+        {
+          "name": "plasil2018-publisher.html",
+          "url": "https://www.mdpi.com/2075-163X/8/12/551",
+          "started_at": "2026-10-16T01:26:17.213064+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+          "finished_at": "2026-10-16T01:26:17.252223+00:00"
+        },
+        {
+          "name": "ima202609.pdf",
+          "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+          "started_at": "2026-10-16T01:26:17.216150+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+          "finished_at": "2026-10-16T01:26:17.253264+00:00"
+        },
+        {
+          "name": "giammar2002-crossref.json",
+          "url": "https://api.crossref.org/works/10.1016%2FS0016-7037%2802%2900927-4",
+          "started_at": "2026-10-16T01:26:17.252274+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+          "finished_at": "2026-10-16T01:26:17.253911+00:00"
+        },
+        {
+          "name": "plasil2018-crossref.json",
+          "url": "https://api.crossref.org/works/10.3390%2Fmin8120551",
+          "started_at": "2026-10-16T01:26:17.252633+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+          "finished_at": "2026-10-16T01:26:17.254123+00:00"
+        },
+        {
+          "name": "wall2010-crossref.json",
+          "url": "https://api.crossref.org/works/10.1016%2Fj.chemgeo.2010.03.021",
+          "started_at": "2026-10-16T01:26:17.252896+00:00",
+          "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+          "finished_at": "2026-10-16T01:26:17.254379+00:00"
+        }
+      ]
+    },
+    {
+      "receipt": "/private/tmp/cmm-round108-uranium-research/acquisition01.json",
+      "sha256": "2fb49d3f2d96292c246f76eb6336513818785c9fbcf650358e44459037b6943e",
+      "attempts": [
+        {
+          "name": "giammar2002.pdf",
+          "url": "https://repository.geologyscience.ru/bitstream/handle/123456789/30581/Giam_02.pdf?isAllowed=y&sequence=1",
+          "started_at": "2026-10-16T01:26:30.141427+00:00",
+          "status": 200,
+          "final_url": "https://repository.geologyscience.ru/server/api/core/bitstreams/d5fde6e3-9ddb-4704-8608-92a294f6f14a/content",
+          "content_type": "application/pdf;charset=UTF-8",
+          "bytes": 245046,
+          "sha256": "deaf899af9116124cbbab3dc98b0c4630cbb50234d9eb95333278400303cb813",
+          "is_pdf": true,
+          "finished_at": "2026-10-16T01:26:34.679048+00:00"
+        },
+        {
+          "name": "plasil2018.pdf",
+          "url": "https://pdfs.semanticscholar.org/8ada/addf2274312228dfcd8c95ddec446abf1393.pdf",
+          "started_at": "2026-10-16T01:26:30.142853+00:00",
+          "status": 200,
+          "final_url": "https://pdfs.semanticscholar.org/8ada/addf2274312228dfcd8c95ddec446abf1393.pdf",
+          "content_type": "application/pdf",
+          "bytes": 3846084,
+          "sha256": "f96034e17b57086c19566d0f63f9b28bc94bc8c47de52e368c391204ba87e3d4",
+          "is_pdf": true,
+          "finished_at": "2026-10-16T01:26:31.238345+00:00"
+        },
+        {
+          "name": "plasil2018-publisher.html",
+          "url": "https://www.mdpi.com/2075-163X/8/12/551",
+          "started_at": "2026-10-16T01:26:30.143345+00:00",
+          "error": "<HTTPError 403: 'Forbidden'>",
+          "finished_at": "2026-10-16T01:26:30.350252+00:00"
+        },
+        {
+          "name": "ima202609.pdf",
+          "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+          "started_at": "2026-10-16T01:26:30.143752+00:00",
+          "status": 200,
+          "final_url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+          "content_type": "application/pdf",
+          "bytes": 3129886,
+          "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+          "is_pdf": true,
+          "finished_at": "2026-10-16T01:26:32.239182+00:00"
+        },
+        {
+          "name": "giammar2002-crossref.json",
+          "url": "https://api.crossref.org/works/10.1016%2FS0016-7037%2802%2900927-4",
+          "started_at": "2026-10-16T01:26:30.350304+00:00",
+          "status": 200,
+          "final_url": "https://api.crossref.org/works/10.1016%2FS0016-7037%2802%2900927-4",
+          "content_type": "application/json",
+          "bytes": 12063,
+          "sha256": "c2fdfc8f55fd9e401ecd53a1dcbc32eeeec2bf00ae1a33a756e36baabdc76822",
+          "is_pdf": false,
+          "finished_at": "2026-10-16T01:26:30.643634+00:00"
+        },
+        {
+          "name": "plasil2018-crossref.json",
+          "url": "https://api.crossref.org/works/10.3390%2Fmin8120551",
+          "started_at": "2026-10-16T01:26:30.643692+00:00",
+          "status": 200,
+          "final_url": "https://api.crossref.org/works/10.3390%2Fmin8120551",
+          "content_type": "application/json",
+          "bytes": 20925,
+          "sha256": "698c73ce846ff8830ac18b0b036b99af60313b3b6588fb436d06705f1e83a287",
+          "is_pdf": false,
+          "finished_at": "2026-10-16T01:26:31.240144+00:00"
+        },
+        {
+          "name": "wall2010-crossref.json",
+          "url": "https://api.crossref.org/works/10.1016%2Fj.chemgeo.2010.03.021",
+          "started_at": "2026-10-16T01:26:31.238932+00:00",
+          "status": 200,
+          "final_url": "https://api.crossref.org/works/10.1016%2Fj.chemgeo.2010.03.021",
+          "content_type": "application/json",
+          "bytes": 16487,
+          "sha256": "f7b04c87079dadf584eb45dd2e5f88309323106126a90872bf4ad64c370a8aa3",
+          "is_pdf": false,
+          "finished_at": "2026-10-16T01:26:31.604377+00:00"
+        }
+      ]
+    },
+    {
+      "receipt": "/private/tmp/cmm-round108-uranium-research/acquisition02.json",
+      "sha256": "1d04d600d1ddccc74b3093071980be4b57ea9616f219173d194cdfb15d223ce5",
+      "attempts": [
+        {
+          "name": "vochten1997.pdf",
+          "url": "https://rruff.geo.arizona.edu/doclib/cm/vol35/CM35_735.pdf",
+          "started_at": "2026-10-16T01:29:58.049843+00:00",
+          "error": "URLError(TimeoutError('timed out'))",
+          "finished_at": "2026-10-16T01:30:43.100899+00:00"
+        },
+        {
+          "name": "plasil2018-supplement.html",
+          "url": "https://www.mdpi.com/2075-163X/8/12/551/s1",
+          "started_at": "2026-10-16T01:29:58.050997+00:00",
+          "error": "<HTTPError 403: 'Forbidden'>",
+          "finished_at": "2026-10-16T01:29:58.167212+00:00"
+        },
+        {
+          "name": "plasil2018.xml",
+          "url": "https://mdpi-res.com/d_attachment/minerals/minerals-08-00551/article_deploy/minerals-08-00551.xml",
+          "started_at": "2026-10-16T01:29:58.051332+00:00",
+          "status": 200,
+          "final_url": "https://mdpi-res.com/d_attachment/minerals/minerals-08-00551/article_deploy/minerals-08-00551.xml",
+          "content_type": "text/xml;charset=UTF-8",
+          "bytes": 141359,
+          "sha256": "b9bd974934c08189eb97daac3e2ae38d39fe90831b6dae78f5ad616c9402187e",
+          "is_pdf": false,
+          "finished_at": "2026-10-16T01:29:58.416157+00:00"
+        },
+        {
+          "name": "plasil2018-supplement.zip",
+          "url": "https://mdpi-res.com/d_attachment/minerals/minerals-08-00551/article_deploy/minerals-08-00551-s001.zip",
+          "started_at": "2026-10-16T01:29:58.051615+00:00",
+          "status": 200,
+          "final_url": "https://mdpi-res.com/d_attachment/minerals/minerals-08-00551/article_deploy/minerals-08-00551-s001.zip",
+          "content_type": "application/zip",
+          "bytes": 91986,
+          "sha256": "93d5831799465f56cbd9984daac3c90dec82c0114a849281894f01e83b34eeed",
+          "is_pdf": false,
+          "finished_at": "2026-10-16T01:29:58.414296+00:00"
+        }
+      ]
+    },
+    {
+      "receipt": "/private/tmp/cmm-round108-uranium-research/acquisition03.json",
+      "sha256": "6c7cea92f39eed7cc8d28a28fc37a6c37609205212f5e8b2b1881dccb49bb739",
+      "attempts": [
+        {
+          "name": "vochten1997.pdf",
+          "url": "https://rruff.info/rruff_1.0/uploads/CM35_735.pdf",
+          "started_at": "2026-10-16T01:31:09.580906+00:00",
+          "error": "<HTTPError 404: 'Not Found'>",
+          "finished_at": "2026-10-16T01:31:10.221865+00:00"
+        }
+      ]
+    },
+    {
+      "receipt": "/private/tmp/cmm-round108-uranium-research/acquisition04.json",
+      "sha256": "dfaa96901eccb0c4130d1a7f35d415e87b0e817780fcdd0c53609e0c993dca9b",
+      "attempts": [
+        {
+          "name": "vochten1997.pdf",
+          "url": "https://rruff.info/doclib/cm/vol35/CM35_735.pdf",
+          "started_at": "2026-10-16T01:31:19.040890+00:00",
+          "status": 200,
+          "final_url": "https://www.rruff.net/doclib/cm/vol35/CM35_735.pdf",
+          "content_type": "application/pdf",
+          "bytes": 864549,
+          "sha256": "e1318999e81c0e2da373a60798c71675b279b42c6ac4c29fa4a2af188cd5658d",
+          "is_pdf": true,
+          "finished_at": "2026-10-16T01:31:19.940199+00:00"
+        }
+      ]
+    }
+  ],
+  "supplement_manifest": [
+    {
+      "name": "cuprosklodowskite_final.cif",
+      "bytes": 135956,
+      "sha256": "87a2fd325e3ef0e48ca9c3491a5f2896ba9424d686b4c9ac8c9cf36da6860f00"
+    },
+    {
+      "name": "oursinite_final.cif",
+      "bytes": 69159,
+      "sha256": "43c068aa6faffaa4da2bdb4eead0350c4844a3e8f0456a2eb0c3b9ceed25d635"
+    },
+    {
+      "name": "sklodowskite_final.cif",
+      "bytes": 89162,
+      "sha256": "23cf68160de6e6b15a467838ab6be7d9bb7d34d10c7174041f595db1187d4e56"
+    },
+    {
+      "name": "soddyite_final.cif",
+      "bytes": 54014,
+      "sha256": "0f2eb00c4e668e0cc29ab226725a45e7e965c088a690e4157cc8b5d19e463f84"
+    }
+  ],
+  "deferred": [
+    {
+      "candidate": "Wall,Clark,McHale2010 synthesis",
+      "doi": "10.1016/j.chemgeo.2010.03.021",
+      "state": "publisherpreview/abstractandCrossrefmetadataonly",
+      "reason": "Fullprimarymethods/SI notacquired; noresultsadopted. Legitimaterepositoryorcoauthordeposit accessneeded beforeexpandedsklodowskiteformation/surfaceareaclaims."
+    },
+    {
+      "candidate": "Cuprosklodowskite",
+      "state": "currentIMArowtextand2018fullarticle/SIZIPacquired; ownCIFnotreviewedindetail",
+      "reason": "DistinctCumineral; thirdowneroutsideapprovedpairscope. Do notinferitsmechanismfromMgstudy."
+    },
+    {
+      "candidate": "1997SKB dissolutiontechnicalreport;2007soddyitesolubility/calorimetry;1962sklodowskitestructure;Giammar2001Caltechthesis",
+      "state": "discoveryleads",
+      "reason": "Noadditionalclaimsaccepted; fullprimaryreviewandclaimdeduprequired."
+    }
+  ],
+  "schema_assessment": "Existingmineral/materialkind, nonmicrobialothermechanism andclaim-levelsupport/partial/context_only suffice. Rates/structuralparametersremainqualifiedprose; noabuse ofsource-cell mg/kg observation fields andnoschemachange.",
+  "validation": "Named strict validation completed: cmmmech validate data/records/soddyite.yaml data/records/sklodowskite.yaml --require-records; exit0, Checked2records0failed. Scientific independent review and root final batch gates pending."
+}

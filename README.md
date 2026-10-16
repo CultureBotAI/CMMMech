@@ -8,13 +8,20 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 534 material records.
+The catalogue currently contains 541 material records.
 
-The [latest curation report](research/ingests/round107-frontier-20261016.md) links
+The [latest curation report](research/ingests/round108-frontier-20261016.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Boracite](data/records/boracite.yaml) | Natural mineral identity and temperature-driven structural transitions | Mg-rich specimen behavior separated from Fe-rich members and instrument calibration |
+| [Larderellite](data/records/larderellite.yaml) | Thermal transformation of a characterized natural borate sample | Mixed feed, conflicting mass-loss summaries and proposed gas assignments |
+| [Lanthanite-(Ce)](data/records/lanthanite-ce.yaml) | Natural identity and synthetic carbonate phase progression | Phase fractions are not recovery yields; conflicting intermediate labels retained |
+| [Lanthanite-(La)](data/records/lanthanite-la.yaml) | Natural identity and synthetic dehydration/rehydration | Residual tengerite prevents a complete-return claim |
+| [Soddyite](data/records/soddyite.yaml) | Abiotic dissolution and secondary uranium precipitation | Synthetic powder separated from natural-crystal data; secondary phase not uniquely resolved |
+| [Sklodowskite](data/records/sklodowskite.yaml) | Natural identity and synthetic hydrothermal formation | Qualitative potassium endpoint is not a measured conversion yield |
+| [Tannery wastewater](data/records/tannery-wastewater.yaml) | Chromium removal by heat-inactivated fungal biomass | Real feed batches separated from synthetic solutions; no isolated-product or deployment claim |
 | [Calcioveatchite](data/records/calcioveatchite.yaml) | Natural calcium borate identity and ordered crystal structure | Specimen-specific composition and unresolved SrO range discrepancy |
 | [Ludwigite ore](data/records/ludwigite-ore.yaml) | Abiotic alkali activation and water leaching of mixed boron-bearing feed | Bulk leaching is not a mineral-specific or isolated-product yield |
 | [Lanthanite-(Nd)](data/records/lanthanite-nd.yaml) | Natural mineral identity and crystal structure | Hydrogen-model and unacquired crystallographic deposit limits |
