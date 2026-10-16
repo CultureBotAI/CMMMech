@@ -8,13 +8,20 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 520 material records.
+The catalogue currently contains 527 material records.
 
-The [latest curation report](research/ingests/round105-frontier-20261015.md) links
+The [latest curation report](research/ingests/round106-frontier-20261015.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Pinnoite](data/records/pinnoite.yaml) | Natural mineral identity and vibrational characterization | Conflicting water and band assignments; no accepted processing claims |
+| [Veatchite](data/records/veatchite.yaml) | Natural mineral identity and separate polytype refinements | Geological associations are not measured transition boundaries |
+| [Monazite-(Gd)](data/records/monazite-gd.yaml) | Mixed-REE natural mineral identity and electron-diffraction structure | Ideal formula separated from specimen composition; no bulk powder XRD claim |
+| [Xenotime-(Gd)](data/records/xenotime-gd.yaml) | Distinct natural Gd phosphate and corrected Raman evidence | Published2026 correction retained; original CIF remains unavailable |
+| [Saléeite](data/records/saleeite.yaml) | Natural-specimen crystal structure | EDS versus refinement scope and unacquired reflection deposit explicit |
+| [Sabugalite](data/records/sabugalite.yaml) | Historical natural-sample laboratory dehydration | Mixed phases, nonequilibrium heating and water-loss denominator retained |
+| [Spent nickel steam-reforming catalyst](data/records/spent-nickel-steam-reforming-catalyst.yaml) | Abiotic laboratory EDTA extraction | Conflicting plots/protocols; nickel-bearing solution is not isolated metal |
 | [Inderborite](data/records/inderborite.yaml) | Natural identity, neutron structure and abiotic pressure response | Source endpoint/angle conflicts and constrained hydrogen model |
 | [Inderite](data/records/inderite.yaml) | Natural identity, neutron structure and abiotic pressure transition | Mislabeled CIF block names and conflicting pressure/modulus values |
 | [Monazite-(Sm)](data/records/monazite-sm.yaml) | Natural mineral identity and original sample chemistry | IMA approval-year discrepancy and unavailable individual analyses; microbial phase assignment deferred |

@@ -1,0 +1,75 @@
+id: cmmmech:spent-nickel-steam-reforming-catalyst
+name: Spent nickel steam-reforming catalyst
+material_kind: secondary_resource
+description: Used nickel-bearing catalyst from primary steam reforming, represented by a spent nickel-oxide/alumina
+  formulation supplied by an unnamed fertilizer plant. This use-defined secondary resource is distinct
+  from vegetable-oil hydrogenation catalyst, platinum petroleum-reforming catalyst, fresh catalyst and
+  elemental nickel. The selected feed composition does not define every steam-reforming formulation. No
+  constituent criticality or mineral identifier is inherited.
+sources:
+- id: oza_2011_edta
+  title: Oza, Rachit; Shah, Nikhil; Patel, Sanjay (2011). Extraction of Nickel from Spent Catalyst Using
+    EDTA as Chelating Agent. Nature Environment and Pollution Technology 10(2):197-200. Complete four-page
+    publisher original; Materials and Methods, Results and Discussion, Conclusion, Tables 1-2 and Figures
+    1-5. No DOI verified.
+  url: https://neptjournal.com/upload-images/NL-32-6-(6)B-1633com.pdf
+  accessed_on: '2026-10-15'
+mechanisms:
+- id: edta_extraction_acid_dechelation
+  name: EDTA extraction and acid dechelation of nickel from spent steam-reforming catalyst
+  process: separation
+  microbial: false
+  description: Disodium EDTA in alkaline solution extracted nickel from prepared spent catalyst; acid
+    dechelation separated reusable EDTA from a nickel-bearing solution. This is an abiotic laboratory
+    experiment. The paper describes a nickel nitrate solution after nitric-acid treatment, not an isolated
+    metallic nickel product.
+  context: The abstract and Table 1 identify primary steam-reformer catalyst from a local fertilizer company.
+    Table 1 reports nickel oxide 16%, alumina 78%, calcium oxide below 6% and silicon below 0.1%, all
+    by weight; 16% NiO is not 16% elemental nickel. The original pellets were cylindrical, 1.5 cm outer
+    diameter, 1 cm inner diameter and 1 cm long. Methods describe crushing 100 g to 5 mm, coke removal
+    at 600 degrees C for 6 hours, then screening to 1-2 mm. Laboratory batch extraction used 5 g prepared
+    catalyst and EDTA dissolved with NaOH at pH 10-12. The source names pH 10 for its extraction comparisons
+    and reported best conditions. Methods describe filtration of alumina residue, nitric-acid dechelation,
+    EDTA filtration, washing with hot distilled water and drying at 80 degrees C. Nickel analysis used
+    AAS and UV-visible spectrophotometry at 394 nm. Replicate counts, error bars, a full nickel mass balance
+    and cycle-resolved EDTA reuse data are not established.
+  evidence:
+  - source_ref: oza_2011_edta
+    supports: support
+    explanation: The abstract, Results and Discussion on page 200, and Conclusion report up to 95% nickel
+      extraction after 7 hours at 1 M EDTA, solid:liquid 1:10 g/mL, 1-2 mm particles, pH 10, 400 rpm and
+      90 degrees C. This is the authors' reported laboratory extraction result, subject to the internal
+      inconsistencies below; it is not an independently reconciled mass-balance yield or evidence of isolated
+      product recovery.
+  - source_ref: oza_2011_edta
+    supports: partial
+    explanation: Methods on page 198 state a 4-6 hour reaction, whereas the abstract and conclusion name
+      7 hours; Table 2 spans 0-8 hours. Table 2 labels concentration as acid concentration 10-80% by volume,
+      unlike the EDTA series of 0.1-1.0 M in the results. Its solid:liquid range ends at 1:30 while the
+      results also test 1:40. These protocol discrepancies remain unresolved.
+  - source_ref: oza_2011_edta
+    supports: partial
+    explanation: Figures 2-4 on page 199 give visibly different extraction values at nominally shared
+      30 degrees C, 1 M EDTA, solid:liquid 1:10 g/mL, 400 rpm and 5 hours. Figures 4 and 5 also disagree
+      at nominally shared 90 degrees C and 5 hours. No precise values are inferred from these plots or
+      silently reconciled; confidence in the numerical response surface and reported optimum is limited.
+  - source_ref: oza_2011_edta
+    supports: partial
+    explanation: Figure 1 labels sulfuric/hydrochloric acid in dechelation, whereas the abstract and methods
+      specify nitric acid. The printed nickel formula, complex charge and calibration equation do not
+      independently establish solution speciation or a validated calibration. The record follows the explicit
+      methods for the named arm and does not adopt the printed reaction stoichiometry as verified chemistry.
+  - source_ref: oza_2011_edta
+    supports: partial
+    explanation: The Conclusion reports 97-99% EDTA recovery and describes repeated reuse and economic
+      viability, but no cycle-resolved performance, independent economic assessment or industrial implementation
+      is demonstrated. Extraction into solution and EDTA recovery are different endpoints; no universal
+      selectivity, closed-loop performance or commercial-scale recovery claim is accepted.
+curation_history:
+- timestamp: '2026-10-15T23:51:39.376500+00:00'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Created a use-defined spent nickel steam-reforming catalyst resource with narrowly qualified
+    laboratory EDTA extraction and explicit protocol, figure and product-scope limitations.
+history_refs:
+- history/records/spent-nickel-steam-reforming-catalyst/2026-10-15T235153Z-codex-1f46bd.yaml

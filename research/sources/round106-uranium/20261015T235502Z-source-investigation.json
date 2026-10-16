@@ -1,0 +1,770 @@
+{
+  "recorded_at": "2026-10-15T23:55:02.359274+00:00",
+  "researcher": {
+    "name": "codex",
+    "model": "GPT-6",
+    "agent_tool": "codex",
+    "task": "round104_uranium continuing round106"
+  },
+  "worktree": "/private/tmp/CMMMech-expansion-round106-20261015",
+  "base": "af6cbead934deb4667764fa4a325246158ee4a0a",
+  "branch": "curate/cmm-expansion-round106-20261015",
+  "scope": "Two distinct new uranium-phosphate mineral owners; saléeite identity/structure and sabugalite historical dehydration. No inferred criticality, microbial transformation, industrial use or uranium recovery.",
+  "skills": [
+    ".claude/skills/cmmmech-add-record/SKILL.md",
+    ".claude/skills/cmmmech-discover-sources/SKILL.md"
+  ],
+  "baseline": {
+    "state": "completed",
+    "base": "af6cbead934deb4667764fa4a325246158ee4a0a",
+    "worktree": "/private/tmp/CMMMech-expansion-round106-20261015",
+    "started_at": "2026-10-15T23:43:38.336402+00:00",
+    "commands": [
+      {
+        "command": [
+          "uv",
+          "sync",
+          "--quiet",
+          "--locked",
+          "--extra",
+          "dev",
+          "--offline"
+        ],
+        "started_at": "2026-10-15T23:43:38.337311+00:00",
+        "finished_at": "2026-10-15T23:43:40.878048+00:00",
+        "exit_code": 0
+      },
+      {
+        "command": [
+          "just",
+          "check"
+        ],
+        "started_at": "2026-10-15T23:43:40.878081+00:00",
+        "finished_at": "2026-10-15T23:49:50.073482+00:00",
+        "exit_code": 0
+      }
+    ],
+    "exit_code": 0,
+    "finished_at": "2026-10-15T23:49:50.073624+00:00",
+    "log": "/private/tmp/cmm-round106-baseline.log",
+    "log_sha256": "93775e3fb44f0e40fac3ab9adc5f67b107db4d6c1143b1a4b591eabf1d361919"
+  },
+  "dedup": {
+    "at": "2026-10-15T23:50:48.350809+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-l",
+      "-i",
+      "sal[eé]eite|sabugalite|0028-2527|asgp.2016.009|AM36_671|s10973-005-(6916|9994)|BF00309466|BF01913913",
+      "/private/tmp/CMMMech-expansion-round106-20261015/data/records",
+      "/private/tmp/CMMMech-expansion-round106-20261015/research",
+      "/private/tmp/CMMMech-expansion-round106-20261015/reviews",
+      "/private/tmp/CMMMech-expansion-round106-20261015/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/private/tmp/cmm-round80-phosphates-research",
+      "/private/tmp/cmm-round81-phosphates-research",
+      "/private/tmp/cmm-round83-phosphates-research",
+      "/private/tmp/cmm-round36-autunite-research",
+      "/private/tmp/cmm-round69-meta-autunite-research",
+      "/private/tmp/cmm-round74-phosphates-research",
+      "/private/tmp/cmm-round103-uranium-research",
+      "/private/tmp/cmm-round104-uranium-research",
+      "/private/tmp/cmm-round105-uranium-research"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "matched_files": [
+      "/private/tmp/cmm-round81-phosphates-research/write-dossier.py",
+      "/private/tmp/CMMMech-expansion-round106-20261015/research/sources/round81-phosphates/20261014T205001Z.md",
+      "/private/tmp/cmm-round83-phosphates-research/search-log.json",
+      "/private/tmp/cmm-round80-phosphates-research/handbook-saleeite.txt",
+      "/private/tmp/cmm-round36-autunite-research/raw/ima-page-142.txt",
+      "/private/tmp/CMMMech-expansion-round106-20261015/research/sources/round81-phosphates/20261014T205001Z.json",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/sources/round81-phosphates/20261014T205001Z.md",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/sources/round81-phosphates/20261014T205001Z.json",
+      "/private/tmp/cmm-round36-autunite-research/raw/smeaton-web-captures.json",
+      "/private/tmp/cmm-round83-phosphates-research/dedup-initial.txt",
+      "/private/tmp/cmm-round80-phosphates-research/dedup-candidates.json",
+      "/private/tmp/cmm-round80-phosphates-research/acquire-secondary.py",
+      "/private/tmp/cmm-round83-phosphates-research/retained-search-results.json",
+      "/private/tmp/cmm-round80-phosphates-research/acquisition-secondary.json",
+      "/private/tmp/cmm-round36-autunite-research/raw/dedup-downloads-hits.txt",
+      "/private/tmp/cmm-round83-phosphates-research/write-dossier.py",
+      "/private/tmp/cmm-round80-phosphates-research/zhong2021.txt",
+      "/private/tmp/CMMMech-expansion-round106-20261015/research/sources/round83-phosphates/20261014T225525Z-source-investigation.md",
+      "/private/tmp/CMMMech-expansion-round106-20261015/research/sources/round83-phosphates/20261014T225525Z-source-investigation.json",
+      "/private/tmp/cmm-round80-phosphates-research/dedup-candidates.txt",
+      "/private/tmp/cmm-round80-phosphates-research/crossref-zhong.json",
+      "/private/tmp/cmm-round80-phosphates-research/write-dossier.py",
+      "/private/tmp/cmm-round80-phosphates-research/zhong2021.xml",
+      "/private/tmp/CMMMech-expansion-round106-20261015/research/sources/round80-phosphates/20261014T194626Z.json",
+      "/private/tmp/CMMMech-expansion-round106-20261015/research/sources/round80-phosphates/20261014T194626Z.md",
+      "/private/tmp/cmm-round104-uranium-research/current-correction-search.json",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/sources/round83-phosphates/20261014T225525Z-source-investigation.md",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/sources/round83-phosphates/20261014T225525Z-source-investigation.json",
+      "/private/tmp/cmm-round104-uranium-research/metatorbernite2021.html",
+      "/private/tmp/cmm-round104-uranium-research/metatorbernite2021-published.txt",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/sources/round80-phosphates/20261014T194626Z.json",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/sources/round80-phosphates/20261014T194626Z.md",
+      "/private/tmp/cmm-round104-uranium-research/ima202609.txt",
+      "/private/tmp/cmm-round105-uranium-research/prior-2021-normalized.txt",
+      "/private/tmp/cmm-round105-uranium-research/edinburgh-thesis.txt",
+      "/private/tmp/cmm-round105-uranium-research/local-inventory.json",
+      "/private/tmp/cmm-round105-uranium-research/round105CorrectionsSearch.txt",
+      "/private/tmp/CMMMech-expansion-round106-20261015/reviews/publication/20261014-round80/20261014T195300Z-publication-final.json",
+      "/private/tmp/cmm-round74-phosphates-research/dedup-initial.txt",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews/publication/20261014-round80/20261014T195300Z-publication-final.json",
+      "/private/tmp/cmm-round103-uranium-research/web-search-responses.json",
+      "/private/tmp/cmm-round103-uranium-research/ima202609.txt"
+    ],
+    "unavailable_roots": [],
+    "issue_inventory_count": 293,
+    "issue_title_body_matches": [],
+    "limits": "Name and identity/study-key search includes hidden, ignored and followed relevant symlink files. Bounded specified roots, not whole machine. Issues searched title/body only, not comments. Record inventory separately inspects id/name across 520 worktree owners."
+  },
+  "owner_inventory": {
+    "path": "/private/tmp/cmm-round106-uranium-research/owner-inventory.json",
+    "count": 520,
+    "method": "Gitignore-independent followed file inventory and id/name extraction before writes; not complete semantic YAML parsing."
+  },
+  "queries": {
+    "provider": "web.run",
+    "date": "2026-10-15 UTC",
+    "exact_reproducible_queries": [
+      "\"saléeite\" \"Locock\" 2004 crystal structures",
+      "\"Thermal decomposition of sabugalite\" pdf",
+      "\"sabugalite\" \"1984\" structure pdf",
+      "\"saleeite\" \"thermal\" Frost pdf",
+      "\"10.1127/ejm/2016/0028-2527\" correction erratum",
+      "\"10.14241/asgp.2016.009\" correction erratum",
+      "\"Studies of uranium minerals\" \"Sabugalite\" correction",
+      "\"Saléeite\" \"Wojcieszyce\" filetype:pdf",
+      "\"saléeite\" \"2016.009\" pdf",
+      "\"Crystal structure of bassetite\" \"2527\" erratum",
+      "\"Sabugalite\" \"1951\" \"retraction\"",
+      "Frondel 1951 \"Saléeite and novacekite\" pdf",
+      "\"Studies of uranium minerals (IX)\" \"AM36\""
+    ],
+    "filters": "No date/domain filters; first returned sets, no exhaustive pagination.",
+    "coverage_note": "Additional exploratory queries and URL opens retained in round106Search*/Fulltext* captures. Listed set is reproducible minimum coverage, not exhaustive capture of every exploratory query."
+  },
+  "acquisitions": {
+    "acquisition01.json": [
+      {
+        "requested_url": "https://orbi.uliege.be/bitstream/2268/198238/1/ejm.2016.0028-2527.full.pdf",
+        "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-structure.pdf",
+        "started_at": "2026-10-15T23:44:15.509125+00:00",
+        "status": 200,
+        "final_url": "https://orbi.uliege.be/bitstream/2268/198238/1/ejm.2016.0028-2527.full.pdf",
+        "content_type": "application/pdf",
+        "bytes": 465227,
+        "sha256": "c49dbf39de3f3fb4d44367ddc10bc6ad83ba56a152a055c4aafe6bacaaff4872",
+        "pdf_magic": true,
+        "finished_at": "2026-10-15T23:44:17.551340+00:00"
+      },
+      {
+        "requested_url": "https://www.asgp.pl/sites/default/files/volumes/86_2_211_218.pdf",
+        "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-poland.pdf",
+        "started_at": "2026-10-15T23:44:15.510417+00:00",
+        "error": "URLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'www.asgp.pl'. (_ssl.c:1032)\"))",
+        "finished_at": "2026-10-15T23:44:16.231366+00:00"
+      },
+      {
+        "requested_url": "https://citeseerx.ist.psu.edu/document?doi=f4444afda6d59c02768222e4f81a0be56690f4eb&repid=rep1&type=pdf",
+        "path": "/private/tmp/cmm-round106-uranium-research/sabugalite2006.pdf",
+        "started_at": "2026-10-15T23:44:15.510794+00:00",
+        "status": 404,
+        "final_url": "https://web.archive.org/web/20251230112235/https://citeseerx.ist.psu.edu//document?doi=f4444afda6d59c02768222e4f81a0be56690f4eb&repid=rep1&type=pdf",
+        "content_type": "text/html",
+        "bytes": 142615,
+        "sha256": "ea02aa9e59e86b91888a44af8774de0553334d2a0fa4629bbe0b4a18d4e50d74",
+        "pdf_magic": false,
+        "finished_at": "2026-10-15T23:44:16.537909+00:00"
+      },
+      {
+        "requested_url": "https://www.rruff.net/doclib/am/vol36/AM36_671.pdf",
+        "path": "/private/tmp/cmm-round106-uranium-research/sabugalite1951.pdf",
+        "started_at": "2026-10-15T23:44:15.511178+00:00",
+        "status": 200,
+        "final_url": "https://www.rruff.net/doclib/am/vol36/AM36_671.pdf",
+        "content_type": "application/pdf",
+        "bytes": 617810,
+        "sha256": "1840596f3e7b58561e1c39650eb3fe16bd56050a2e0fef70771b7e27974406b6",
+        "pdf_magic": true,
+        "finished_at": "2026-10-15T23:44:16.274700+00:00"
+      },
+      {
+        "requested_url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+        "path": "/private/tmp/cmm-round106-uranium-research/ima202609.pdf",
+        "started_at": "2026-10-15T23:44:16.231407+00:00",
+        "status": 200,
+        "final_url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+        "content_type": "application/pdf",
+        "bytes": 3129886,
+        "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+        "pdf_magic": true,
+        "finished_at": "2026-10-15T23:44:18.493350+00:00"
+      },
+      {
+        "requested_url": "https://api.crossref.org/works?query.title=Thermal%20decomposition%20of%20sabugalite&rows=5",
+        "path": "/private/tmp/cmm-round106-uranium-research/sabugalite2006-crossref-query.json",
+        "started_at": "2026-10-15T23:44:16.274753+00:00",
+        "status": 200,
+        "final_url": "https://api.crossref.org/works?query.title=Thermal%20decomposition%20of%20sabugalite&rows=5",
+        "content_type": "application/json",
+        "bytes": 22546,
+        "sha256": "2f32ec0a94c4ebec9bae4ddec29979235f3aa7be709908e816a5601d5df22c05",
+        "pdf_magic": false,
+        "finished_at": "2026-10-15T23:44:16.716614+00:00"
+      },
+      {
+        "requested_url": "https://api.crossref.org/works/10.1127/ejm/2016/0028-2527",
+        "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-crossref.json",
+        "started_at": "2026-10-15T23:44:16.537939+00:00",
+        "status": 200,
+        "final_url": "https://api.crossref.org/works/10.1127/ejm/2016/0028-2527",
+        "content_type": "application/json",
+        "bytes": 2572,
+        "sha256": "3431eee72c1f0a570d386f266838b08444e90fc4e9944b9ef4b0b7816fca5514",
+        "pdf_magic": false,
+        "finished_at": "2026-10-15T23:44:16.889722+00:00"
+      }
+    ],
+    "acquisition02-sandbox-network-failure.json": [
+      {
+        "requested_url": "https://geojournals.pgi.gov.pl/asgp/article/download/25469/17331/34843",
+        "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-poland.pdf",
+        "started_at": "2026-10-15T23:47:38.974205+00:00",
+        "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+        "finished_at": "2026-10-15T23:47:39.024507+00:00"
+      },
+      {
+        "requested_url": "https://api.crossref.org/works/10.14241/asgp.2016.009",
+        "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-poland-crossref.json",
+        "started_at": "2026-10-15T23:47:38.975157+00:00",
+        "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+        "finished_at": "2026-10-15T23:47:39.024749+00:00"
+      },
+      {
+        "requested_url": "https://api.crossref.org/works/10.1007/s10973-005-6916-0",
+        "path": "/private/tmp/cmm-round106-uranium-research/sabugalite2006-original-crossref.json",
+        "started_at": "2026-10-15T23:47:38.975513+00:00",
+        "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+        "finished_at": "2026-10-15T23:47:39.024843+00:00"
+      },
+      {
+        "requested_url": "https://api.crossref.org/works/10.1007/s10973-005-9994-0",
+        "path": "/private/tmp/cmm-round106-uranium-research/sabugalite2006-erratum-crossref.json",
+        "started_at": "2026-10-15T23:47:38.975860+00:00",
+        "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+        "finished_at": "2026-10-15T23:47:39.025168+00:00"
+      }
+    ],
+    "acquisition02.json": [
+      {
+        "requested_url": "https://geojournals.pgi.gov.pl/asgp/article/download/25469/17331/34843",
+        "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-poland.pdf",
+        "started_at": "2026-10-15T23:47:49.617082+00:00",
+        "error": "URLError(gaierror(8, 'nodename nor servname provided, or not known'))",
+        "finished_at": "2026-10-15T23:47:59.846970+00:00"
+      },
+      {
+        "requested_url": "https://api.crossref.org/works/10.14241/asgp.2016.009",
+        "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-poland-crossref.json",
+        "started_at": "2026-10-15T23:47:49.618410+00:00",
+        "status": 200,
+        "final_url": "https://api.crossref.org/works/10.14241/asgp.2016.009",
+        "content_type": "application/json",
+        "bytes": 1724,
+        "sha256": "ecb1435a46a06f0e75da9b34f69fb187998f23e1cf29c8036bb32a031203d28e",
+        "pdf_magic": false,
+        "finished_at": "2026-10-15T23:47:50.055624+00:00"
+      },
+      {
+        "requested_url": "https://api.crossref.org/works/10.1007/s10973-005-6916-0",
+        "path": "/private/tmp/cmm-round106-uranium-research/sabugalite2006-original-crossref.json",
+        "started_at": "2026-10-15T23:47:49.618807+00:00",
+        "status": 200,
+        "final_url": "https://api.crossref.org/works/10.1007/10973.1572-8943",
+        "content_type": "application/json",
+        "bytes": 1288,
+        "sha256": "b79b1f5f5eeffce7823f5dbb1fc94f3f96c70aa9dcb94ddf54756326b766b609",
+        "pdf_magic": false,
+        "finished_at": "2026-10-15T23:47:50.285738+00:00"
+      },
+      {
+        "requested_url": "https://api.crossref.org/works/10.1007/s10973-005-9994-0",
+        "path": "/private/tmp/cmm-round106-uranium-research/sabugalite2006-erratum-crossref.json",
+        "started_at": "2026-10-15T23:47:49.619181+00:00",
+        "status": 200,
+        "final_url": "https://api.crossref.org/works/10.1007/s10973-005-9994-0",
+        "content_type": "application/json",
+        "bytes": 8098,
+        "sha256": "63cc2c1f7f29143bce6071b12d0bd855a4548746d13057cf68eb80f10078e6dc",
+        "pdf_magic": false,
+        "finished_at": "2026-10-15T23:47:50.054099+00:00"
+      }
+    ],
+    "acquisition03.json": {
+      "requested_url": "https://asgp.pl/sites/default/files/volumes/86_2_211_218.pdf",
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-poland.pdf",
+      "started_at": "2026-10-15T23:48:30.036221+00:00",
+      "error": "URLError(SSLCertVerificationError(1, \"[SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: Hostname mismatch, certificate is not valid for 'asgp.pl'. (_ssl.c:1032)\"))",
+      "finished_at": "2026-10-15T23:48:30.827293+00:00"
+    }
+  },
+  "sources": [
+    {
+      "id": "ima_2026_09",
+      "role": "current mineral identity authority",
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "version": "September 2026",
+      "decision": "accept identities only",
+      "inspected": "Fresh PDF; definitions page 1 and exact Sabugalite/Saléeite rows page 190 visually checked; searchable text license statement checked.",
+      "limits": "G is grandfathered. 1951/1932 are description years, not numbered approval IDs. No elemental identifier or criticality status transferred.",
+      "terms": "Document states CC BY-SA 3.0 Unported. Only attributed factual assessment retained, no bulk PDF committed."
+    },
+    {
+      "id": "dal_bo2016",
+      "role": "primary natural-specimen structural identity",
+      "doi": "10.1127/ejm/2016/0028-2527",
+      "url": "https://orbi.uliege.be/handle/2268/198238",
+      "version": "Institutional PDF marked PrePub Article; repository labels Publisher postprint. Crossref final journal metadata 28(3):663-675, published-print 2016-09-23; not a new 2026 study.",
+      "decision": "accept bounded saléeite identity; no transformation mechanism",
+      "inspected": "Complete 13-page text and every rendered original page, Figures 1-6, Tables 1-8. Natural Shinkolobwe provenance pages 2-3; methods and cell Table 1 pages 3-4; occupancy/H model Table 3 pages 5-7. Reference list and discussion through page 13.",
+      "supports": "Natural saléeite single-crystal X-ray P21/n model at 293(2) K; cell, hydration model and interlayer structure.",
+      "limits": "Qualitative EDS found no Fe or As, but model refines 0.97(1) Mg/0.03(1) Fe. H positions use distance restraints and constrained displacement parameters. Percent-labelled twin-proportion values are not converted to a percentage. CSD-430599 deposit unacquired; no re-refinement. Bassetite oxidation does not establish a saléeite mechanism.",
+      "terms": "Copyright2016 Schweizerbart shown in PDF. Raw PDF stays outside checkout."
+    },
+    {
+      "id": "frondel1951",
+      "role": "original description and primary natural-sample thermal assay",
+      "url": "https://www.rruff.net/doclib/am/vol36/AM36_671.pdf",
+      "version": "American Mineralogist36(1951):671-679, original9-page scan; received1951-01-19 is not experimental date.",
+      "decision": "accept bounded historical dehydration plus null synthesis context",
+      "inspected": "All9 original pages visually inspected and extracted text read; Tables1-6 including chemistryTable4 p675, thermalTables5-6 pp677-678 and negative synthesis p679.",
+      "supports": "Mina da Quarta Seira natural material heated at44/68/101/117/135/165°C; unchanged/mixed/new source-assigned meta-II powder patterns; Table6 loss of original water3.4/20/57/63/82/91%. Moist-air optical changes with persistent heated-product pattern; failed synthesis routes retained.",
+      "limits": "No duration/rate/atmosphere/humidity/mass/replication supplied. Constant-weight language coexists with non-equilibrium optical heterogeneity. Historical meta-II is source assignment, not independently resolved modern species. Kariz admixture and water-by-difference differ from Mina and another direct-water specimen. Historical symmetry uncertain. Water exposure is not a dissolution rate; no uranium recovery.",
+      "terms": "Reading access via mineralogical archive; redistribution license unestablished. No raw pages committed."
+    },
+    {
+      "id": "siuda2016",
+      "role": "field occurrence and proposed formation lead",
+      "doi": "10.14241/asgp.2016.009",
+      "url": "https://geojournals.pgi.gov.pl/asgp/article/view/25469",
+      "decision": "defer mechanism and measurements",
+      "inspected": "Official landing and Crossref title/authors/DOI. Indexed excerpts only; PDF listing briefly exposed by web open, but subsequent text/screenshots failed. No complete bytes or figures acquired.",
+      "limits": "Journal www/bare-domain TLS hostname mismatch; PGI download DNS/timeouts. No TLS bypass. Indexed metatorbernite/beam-water-loss caveats and inferred pH require original methods/figures.",
+      "terms": "Unknown reuse rights."
+    },
+    {
+      "id": "vochten1983",
+      "role": "later synthesis, solubility and structure lead",
+      "doi": "10.1007/BF00309466",
+      "decision": "defer",
+      "inspected": "Bibliographic lead in IMA and search metadata; no complete primary article.",
+      "limits": "No accepted synthesis, monoclinic-model, solubility or electrokinetic values from abstract.",
+      "terms": "Unknown."
+    },
+    {
+      "id": "frost2006",
+      "role": "later thermal study and correction lead",
+      "doi_candidates": [
+        "10.1007/s10973-005-6916-0",
+        "10.1007/s10973-005-9994-0"
+      ],
+      "url": "https://link.springer.com/article/10.1007/s10973-005-9994-0",
+      "decision": "defer measurements and original/correction attribution",
+      "inspected": "Publisher explicitly labels9994-0 as Erratum to Thermal decomposition of sabugalite. Exact Crossref original request redirects to journal10.1007/10973.1572-8943, listing6916-0 as alias. Publisher original-article link loops to erratum. CiteSeer route returned archived404HTML; QUT robots restriction respected.",
+      "limits": "Neither complete original nor correction read. Metadata anomalies do not establish corrected scientific error. Indexed temperature inconsistencies not admitted. sabugalite2006.pdf is HTML, not paper.",
+      "terms": "Subscription access; no bypass."
+    },
+    {
+      "id": "other_deferred",
+      "role": "reference-chain leads",
+      "decision": "defer",
+      "references": [
+        "10.1007/BF01913913",
+        "Frondel1951 Studies of uranium minerals(IX), AmMineral36:680-686",
+        "10.1111/rge.12019"
+      ],
+      "inspected": "Discovery metadata only.",
+      "limits": "No new measurements accepted."
+    },
+    {
+      "id": "zhong2021",
+      "role": "previous microbial precipitate evidence",
+      "doi": "10.3389/fmicb.2021.676391",
+      "decision": "retain saléeite-species deferral",
+      "inspected": "Round80/81/83 reports read; retained round80 analytical/results/conclusion text targeted recheck, not fresh acquisition or full new review.",
+      "limits": "Source calls product saleeite-like. EDS/FTIR do not resolve hydrate/mineral species. No mineral-specific microbial entry inferred."
+    }
+  ],
+  "records": [
+    {
+      "path": "data/records/saleeite.yaml",
+      "sha256": "f193bef3cdd0912e8d78f3516bfeb1a7674b23456cc4ca89f7ca9bf19ddfac16",
+      "validation": {
+        "command": "uv run --locked cmmmech validate data/records/saleeite.yaml",
+        "exit_code": 0,
+        "result": "Checked 1 record(s); 0 failed.",
+        "scope": "Current named record plus referenced history; not final corpus gate."
+      }
+    },
+    {
+      "path": "data/records/sabugalite.yaml",
+      "sha256": "246ece1435a6391cf55c8c73691d7cd6d6de5dc5de694bc9958bc84187442705",
+      "validation": {
+        "command": "uv run --locked cmmmech validate data/records/sabugalite.yaml",
+        "exit_code": 0,
+        "result": "Checked 1 record(s); 0 failed.",
+        "scope": "Current named record plus referenced history; not final corpus gate."
+      }
+    }
+  ],
+  "corrections": "Bounded exact DOI/title correction/retraction searches and available Crossref records checked. Linked2006 erratum deferred. No relevant correction to accepted sources found in returned sets; not proof none exists.",
+  "schema_assessment": "Existing mineral identity/nonmicrobial other-process fields suffice. No schema changes. Lattice parameters, temperature and water-loss percentages are prose, not mg/kg concentration observations.",
+  "followup_drafts": [
+    "/private/tmp/cmm-round106-uranium-research/source-followup-sabugalite.md",
+    "/private/tmp/cmm-round106-uranium-research/source-followup-saleeite.md"
+  ],
+  "priorities": [
+    "Independent final-byte scientific reviews and root-coordinated full gates.",
+    "Later sabugalite original/correction and1983 fulltext before expansion.",
+    "Complete saléeite field figures/CSD deposit and species-resolving microbial evidence."
+  ],
+  "artifacts": [
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/acquire01.py",
+      "bytes": 1857,
+      "sha256": "7f489a0c337482312ebbc74edf020855a141482b48aef6487daf5a4290502591"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/acquire02.py",
+      "bytes": 1523,
+      "sha256": "514711737b3d23a824e2f5f91d2430eaf586ef6799630d31055677b5444ad074"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/acquire03.py",
+      "bytes": 1047,
+      "sha256": "a3b2549551308269d6a1859a90448c67cd3a7363639ae2cb10d99fdd5dd28d05"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/acquisition01.json",
+      "bytes": 3979,
+      "sha256": "67858272d58a5f0e5ea30abd98183f86d3abf1d1ea354a426fdd9fbed80ab84f"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/acquisition02-sandbox-network-failure.json",
+      "bytes": 1515,
+      "sha256": "652a3e6fcdaba3ec0100ac3183ff6c7bbb6700320dae84177a5cc044dc7dbc0b"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/acquisition02.json",
+      "bytes": 2035,
+      "sha256": "63f78310a1f2be5c9a6fc8f1e7192c1513684c8146c786c85159f9e08b47cab8"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/acquisition03.json",
+      "bytes": 461,
+      "sha256": "23498cbede54544b2cc226f5e9cfaca7bd725825fb5f56aa863dea60c3424f23"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/dedup-cited-raw.json",
+      "bytes": 1933,
+      "sha256": "844e74668c7ab2f9043ff934e05b8d45fdfc87c3e295eee93db911b12bac12b3"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/dedup-final.json",
+      "bytes": 5662,
+      "sha256": "12fbe0f27a4993e716bcc6e6b03974cf5eb9a4878c0815f81104a7eea87edcef"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/dedup-final.py",
+      "bytes": 2055,
+      "sha256": "98bcfc0b3194fd447b79d19f2b7d4e7158afdb7e107ad39138a44a49b161312b"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/dedup01.json",
+      "bytes": 2243,
+      "sha256": "8c9255f1db397f9a62cad18873d45a230880150ac5750ddaa36a6ae0dc6881a6"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/finalize-dossier.py",
+      "bytes": 18634,
+      "sha256": "766bbb532665680352c8a37677957a173a21bc8c90d93fc0bd06d115d5b84de0"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/ima202609-p1.png",
+      "bytes": 214335,
+      "sha256": "0c4e65ff317ff2f017f7e602e3241240abf6549f9645e879bf95a0af6eaf6583"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/ima202609-p142.png",
+      "bytes": 227008,
+      "sha256": "2ff0158eb030b488122fef26eefe83d7069038220536928576c680182bc1b589"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/ima202609-p15.png",
+      "bytes": 232493,
+      "sha256": "cf9d0a5d463d5fe0f40eb382e8f3e01c89249d0c83950db309e9d76015c52a73"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/ima202609-p190.png",
+      "bytes": 226149,
+      "sha256": "cafdc77830017b7cec6ebb4ed3108f514607d682849a223c58152581a9279d79"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/ima202609.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/ima202609.txt",
+      "bytes": 814545,
+      "sha256": "136bbdcfe32ab8bc4792cb22e3978759a7b88d44d8b48630a885bc22b6d4d1ca"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/owner-inventory.json",
+      "bytes": 96439,
+      "sha256": "0b63120d2164dee3156b27ac4ccd841f3e4ab39c9e96f2c516650b3a85ecf607"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/round106Corrections1.txt",
+      "bytes": 20184,
+      "sha256": "0fd1f671875943702105b300c8b0cea0b9b5f9620b5c2294712f79da6ee5eefa"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/round106Fulltext1.txt",
+      "bytes": 25602,
+      "sha256": "a1bdab42e6d19d1add873df73aee60aae6f240872a1158b57322d0426014c35a"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/round106Fulltext2.txt",
+      "bytes": 12334,
+      "sha256": "c262966127e54cd7d9da3c7bc6a2d025b387167c5c130a82ae0c2ac969020cf4"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/round106PolandComplete.txt",
+      "bytes": 1904,
+      "sha256": "a406b6ee9269655dcff6b4914cf2a2515706a0aeae3c57adb0afc64ecd54dee1"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/round106PolandFull.txt",
+      "bytes": 1291,
+      "sha256": "5eb430d388c7f1041a65835aa4296f2d1400c5ae587e487a01f4364970bffbb4"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/round106Search2.txt",
+      "bytes": 24434,
+      "sha256": "044d2559120d605218763bd817bf2a91c1c8909dbdb427266c3fae53374f2c2e"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/round106Search3.txt",
+      "bytes": 27321,
+      "sha256": "a4399e047ffe0c0cc3c6491f6c4bd7cf3224cd2ae0b39fa07cabe96130d64a68"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/round106Search4.txt",
+      "bytes": 25622,
+      "sha256": "0027bf9d40357bc99d6f2b9029cc1ee5f747f987cc75ea01c65bdffc42860bb7"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/round106Search5.txt",
+      "bytes": 25794,
+      "sha256": "46737981d59a9c3c911a699f3302726a79ecdf0d5bd66cd3da3200d570cf2058"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/round106Search6.txt",
+      "bytes": 26226,
+      "sha256": "7bebd8bce880930ff6499bce09a9d11bc22e80f5ecce800bf9754198741b31c7"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/sabugalite-draft.yaml",
+      "bytes": 5451,
+      "sha256": "863208d139cb8596801fff10a60f70bd575f575b48f3ddf37b7e1024136a4c6c"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/sabugalite1951-p1.png",
+      "bytes": 235339,
+      "sha256": "88713f319ad1e429aa90f0e7f5ec70884e176ed3b72f3dff9beee98d83b4dcaa"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/sabugalite1951-p2.png",
+      "bytes": 208199,
+      "sha256": "ab6a020c1e1985eb45fe0a8118339662454f6784a9e6bd1a574c5e6f9d29bdb8"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/sabugalite1951-p3.png",
+      "bytes": 197301,
+      "sha256": "038f901f9586707e0056237c2785b49474eac42232b8370103dc763c0e75eafe"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/sabugalite1951-p4.png",
+      "bytes": 196243,
+      "sha256": "757e76c603ab12ab64259deee26c245246a7e79e0a511990576605327623494d"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/sabugalite1951-p5.png",
+      "bytes": 167915,
+      "sha256": "89da0e39db11932dbc09deb87dc46c2480fb8cdb4ae55a4fbfc942554e0b387c"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/sabugalite1951-p6.png",
+      "bytes": 242746,
+      "sha256": "defd3fa54a9f8b4d8fffe6d382be4406ceff7bbe8153fff6a95e15c23ce6c1ff"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/sabugalite1951-p7.png",
+      "bytes": 208397,
+      "sha256": "b598ae50041b6a1af7c0726538441b449229fa4b4309361be1c361548738422b"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/sabugalite1951-p8.png",
+      "bytes": 200234,
+      "sha256": "9da0e2521e9f706daf0d0f8f29e95d4d25c654f95dda1cc81f4af4a1d754c5a4"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/sabugalite1951-p9.png",
+      "bytes": 218238,
+      "sha256": "929c2bead64e220bf34cd9878541dab841ce5dc5bafd1a520e244936d65c4ab1"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/sabugalite1951.pdf",
+      "bytes": 617810,
+      "sha256": "1840596f3e7b58561e1c39650eb3fe16bd56050a2e0fef70771b7e27974406b6"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/sabugalite1951.txt",
+      "bytes": 22096,
+      "sha256": "c67892b04f4d3fab43728f48d000c02a2a0db364f567fd2785fb56413662c028"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/sabugalite2006-crossref-query.json",
+      "bytes": 22546,
+      "sha256": "2f32ec0a94c4ebec9bae4ddec29979235f3aa7be709908e816a5601d5df22c05"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/sabugalite2006-erratum-crossref.json",
+      "bytes": 8098,
+      "sha256": "63cc2c1f7f29143bce6071b12d0bd855a4548746d13057cf68eb80f10078e6dc"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/sabugalite2006-original-crossref.json",
+      "bytes": 1288,
+      "sha256": "b79b1f5f5eeffce7823f5dbb1fc94f3f96c70aa9dcb94ddf54756326b766b609"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/sabugalite2006.pdf",
+      "bytes": 142615,
+      "sha256": "ea02aa9e59e86b91888a44af8774de0553334d2a0fa4629bbe0b4a18d4e50d74"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite-draft.yaml",
+      "bytes": 2747,
+      "sha256": "813dc91662792cedb8ceceb91370156a748c1551057741222641d14d8a30eace"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-crossref.json",
+      "bytes": 2572,
+      "sha256": "3431eee72c1f0a570d386f266838b08444e90fc4e9944b9ef4b0b7816fca5514"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-poland-crossref.json",
+      "bytes": 1724,
+      "sha256": "ecb1435a46a06f0e75da9b34f69fb187998f23e1cf29c8036bb32a031203d28e"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-structure-p1.png",
+      "bytes": 229379,
+      "sha256": "cf97ce54e0240ec2a66feb2b74eafabd680cd7a63df4094f18db3808a5db2552"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-structure-p10.png",
+      "bytes": 267256,
+      "sha256": "59aa652a1ee174495585e214c1e6b4bf85a65fdb79dd9cca8074be186781a631"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-structure-p11.png",
+      "bytes": 343541,
+      "sha256": "70aec775bdbf86f6c90caa2eaf506b287a2d7a4927d98f0edb15d58ab768899b"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-structure-p12.png",
+      "bytes": 310041,
+      "sha256": "844b188b0dcd5ea0959adfa2477e36fa0e1269e30772615f87971a034fc906c5"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-structure-p13.png",
+      "bytes": 87346,
+      "sha256": "87ba34a55ba827cc953ce489c446061598f0a17284bc7c508426e3da577e063e"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-structure-p2.png",
+      "bytes": 331143,
+      "sha256": "520baf6e71822295b72a6df8e5dc469f8fe521453c8cb5f3552afbff78e044c5"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-structure-p3.png",
+      "bytes": 647928,
+      "sha256": "3dc558d606fe08e586b8f809adac56a3a81e7c0d59072f53ad76298d3f306999"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-structure-p4.png",
+      "bytes": 220976,
+      "sha256": "8226b253f9c5df33284d8779412e6f00dd21b944fa2ca30280292ccd0214548d"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-structure-p5.png",
+      "bytes": 206626,
+      "sha256": "7f1fb3710e780e379b0d261d7d2027e33f3dba8ff94a782879525ddd206b3866"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-structure-p6.png",
+      "bytes": 202612,
+      "sha256": "24820669043fb1e1e052bb7b1205d0aec88278bddf09018f95529c3c30003224"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-structure-p7.png",
+      "bytes": 194951,
+      "sha256": "7b900e345f430ed8b776fd87fbe4783e6484f0afdc9a049d98bf204269f4f6c6"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-structure-p8.png",
+      "bytes": 316957,
+      "sha256": "9ef9c4ec9596ab95003833d91f5abb4c08b6e5a9c01051d90325c0bff8413add"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-structure-p9.png",
+      "bytes": 341262,
+      "sha256": "1b598b4d21dddfca25ccec75e68df540419cbca95005560ca48fa4ca531cf789"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-structure.pdf",
+      "bytes": 465227,
+      "sha256": "c49dbf39de3f3fb4d44367ddc10bc6ad83ba56a152a055c4aafe6bacaaff4872"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/saleeite2016-structure.txt",
+      "bytes": 45690,
+      "sha256": "c85bedc0b634425ffc3cce7927bdad2bbecdb01f6bdc7d3b3bb38fab42bad476"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/source-followup-sabugalite.md",
+      "bytes": 2602,
+      "sha256": "2fe704e2073071bbe4ff43c79e99f7b6b6e6c5190fec1f753d62b629d52bda82"
+    },
+    {
+      "path": "/private/tmp/cmm-round106-uranium-research/source-followup-saleeite.md",
+      "bytes": 2555,
+      "sha256": "1680ee5b60f3d157c0cdb21584803085c49464b9287009d427efb4ca131b05f2"
+    }
+  ],
+  "limits": "No machine-wide or issue-comment search; no unseen deposit/figure verified. Main read-only. Dossier is not independent record acceptance or publication completion."
+}

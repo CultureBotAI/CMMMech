@@ -1,0 +1,152 @@
+{
+  "review_id": "20261015T235934Z-round106-publication-helpers-independent",
+  "recorded_at": "2026-10-15T23:59:34.184425+00:00",
+  "reviewer": {
+    "identity": "codex /root/round104_borates",
+    "model": "GPT-6",
+    "agent_tool": "codex",
+    "independence": "Independent of coordinator who adapted the publication helpers; reviewer authored pinnoite and veatchite, not these helpers."
+  },
+  "base": "af6cbead934deb4667764fa4a325246158ee4a0a",
+  "scope": "All sixteen entries in adaptation.json; compare corrected round105 originals and inspect current publication control flow. This is a prepublication helper audit, not a claim of completed PR, queue, merge or hosted gates.",
+  "verdict": "pass_with_limitations",
+  "findings": [],
+  "corrections": [],
+  "evidence": [
+    {
+      "path": "/private/tmp/cmm-round106-helper-audit/independent-focused-probes.json",
+      "sha256": "9011e0792da98708c3c5c78ba1bf4c3c4fbc09b6f3fd6704b03bbb245d54e2dd",
+      "summary": "Twelve focused pure-guard fixture cases passed; all sixteen current helpers parsed and independently snapshotted."
+    },
+    {
+      "path": "/private/tmp/cmm-round106-helper-audit/adaptation.json",
+      "sha256": "0a13b61727a28e2d7941379deee1ab4cef4cbb62cdeafc8856db71ca4d3327b4",
+      "summary": "Original adaptation manifest and exact diffs from corrected round105 inspected."
+    },
+    {
+      "path": "/private/tmp/cmm-round106-source-issue-bindings.json",
+      "sha256": "40612052d22c400875d9ae03f2483e046357ba77df3715a2605bcdec5513f738",
+      "summary": "Subsequent actual source issue-list binding inspected; all source follow-ups remain open and corrective issue list is empty."
+    }
+  ],
+  "helper_inputs": [
+    {
+      "path": "/private/tmp/cmm-round106-isolated-coverage.py",
+      "sha256": "270f65d7c2d51dfbd9ba64499cee67cc1174b9ba7b66bae7349fed820ffd28c1",
+      "snapshot": "/private/tmp/cmm-round106-helper-audit/independent-audited-isolated-coverage.py",
+      "parsed": true
+    },
+    {
+      "path": "/private/tmp/cmm-round106-isolated-verification.py",
+      "sha256": "82a8dd5205ca4b12e3285539ab558b87db49bb15530f0993b138f4aaa51f8a56",
+      "snapshot": "/private/tmp/cmm-round106-helper-audit/independent-audited-isolated-verification.py",
+      "parsed": true
+    },
+    {
+      "path": "/private/tmp/cmm-round106-queue.py",
+      "sha256": "32742d68cbb3db6e7a37397395d9478d0fd7db8083301861989850bf8bf636e2",
+      "snapshot": "/private/tmp/cmm-round106-helper-audit/independent-audited-queue.py",
+      "parsed": true
+    },
+    {
+      "path": "/private/tmp/cmm-round106-cleanup.py",
+      "sha256": "df22b6d6ef164f1cbc11640c213e8377e84c8ee2c631643993aa92c28f8f95fd",
+      "snapshot": "/private/tmp/cmm-round106-helper-audit/independent-audited-cleanup.py",
+      "parsed": true
+    },
+    {
+      "path": "/private/tmp/cmm-round106-push-pr.py",
+      "sha256": "82e051fca300089054e3c00a024bc9bc72443637c017d8f68936886e4f51d59a",
+      "snapshot": "/private/tmp/cmm-round106-helper-audit/independent-audited-push-pr.py",
+      "parsed": true
+    },
+    {
+      "path": "/private/tmp/cmm-round106-commit.py",
+      "sha256": "0569914b468201aa57575404374526820b2d79156f6ce434558f530d9df1f29f",
+      "snapshot": "/private/tmp/cmm-round106-helper-audit/independent-audited-commit.py",
+      "parsed": true
+    },
+    {
+      "path": "/private/tmp/cmm-round106-hosted-final-collector.py",
+      "sha256": "49216558b11f9a96260974a339938930de5f0da1a21325b95344be2ba7a74596",
+      "snapshot": "/private/tmp/cmm-round106-helper-audit/independent-audited-hosted-final-collector.py",
+      "parsed": true
+    },
+    {
+      "path": "/private/tmp/cmm-round106-finalize.py",
+      "sha256": "727950a5f9c40e5b1017e62e05b369adde5450e93e17e1357c63b23c85b95bf3",
+      "snapshot": "/private/tmp/cmm-round106-helper-audit/independent-audited-finalize.py",
+      "parsed": true
+    },
+    {
+      "path": "/private/tmp/cmm-round106-review-bases.py",
+      "sha256": "82669c85648bbfa1b5a32bc012d56962a601b4ac29c87c07a009d42cbd81d11d",
+      "snapshot": "/private/tmp/cmm-round106-helper-audit/independent-audited-review-bases.py",
+      "parsed": true
+    },
+    {
+      "path": "/private/tmp/cmm-round106-preservation-before-commit-check.py",
+      "sha256": "1a8708a6073ad52ac7ab7c906528bb6a01cb8ae9ea84ae3300c5168d76ceb4d8",
+      "snapshot": "/private/tmp/cmm-round106-helper-audit/independent-audited-preservation-before-commit-check.py",
+      "parsed": true
+    },
+    {
+      "path": "/private/tmp/cmm-round106-review-check-final.py",
+      "sha256": "efbe5c2d72c4286c0d083ad185ae9c96ee0bf2eb4d20ba8c050fc6f4736a33a6",
+      "snapshot": "/private/tmp/cmm-round106-helper-audit/independent-audited-review-check-final.py",
+      "parsed": true
+    },
+    {
+      "path": "/private/tmp/cmm-round106-publication-guards.py",
+      "sha256": "856355925dc1ff75b95e52ca23e85affd7e6f58b4c58fb703714596947b6ac23",
+      "snapshot": "/private/tmp/cmm-round106-helper-audit/independent-audited-publication-guards.py",
+      "parsed": true
+    },
+    {
+      "path": "/private/tmp/cmm-round106-integration-check.py",
+      "sha256": "d8d1f1b26d3573734373f33414eea921ba5b3648948da452a5ce039adf3bf572",
+      "snapshot": "/private/tmp/cmm-round106-helper-audit/independent-audited-integration-check.py",
+      "parsed": true
+    },
+    {
+      "path": "/private/tmp/cmm-round106-release-acquire.py",
+      "sha256": "cdfba4faa79794fa2dc74d670272f2cfa99f58c39e9b7e5b2b244e66836e43dd",
+      "snapshot": "/private/tmp/cmm-round106-helper-audit/independent-audited-release-acquire.py",
+      "parsed": true
+    },
+    {
+      "path": "/private/tmp/cmm-round106-final-gates.py",
+      "sha256": "d617f18da2ffa461b018208ade6bdbbce0cb36b67f0fce166c25cc85fd0a9724",
+      "snapshot": "/private/tmp/cmm-round106-helper-audit/independent-audited-final-gates.py",
+      "parsed": true
+    }
+  ],
+  "configuration": {
+    "path": "/private/tmp/cmm-round106-helper-config.json",
+    "sha256": "889ddeb448d7bd0800fbfd99d20abd8c9dfa680db86917dd93347e3b1a71eaed",
+    "status": "Provisional; bind measured final counts before publication."
+  },
+  "assessments": [
+    "The new round106 base, worktree and branch are consistent across helper mutation paths. Final-gate record-count expectation changes from515 plus slugs to520 plus seven slugs. The fixture probes reject prior-round gate/review bases and a wrong history base.",
+    "The unchanged gate guard requires terminal successful commands, matching log digests, current record hashes and measured coverage. Actual provisional configuration rejects commit and push admission. Empty counts are not represented as measured results.",
+    "Push checks exact local head/tree/parent, expected origin, absent remote topic branch and fresh main. Queue checks exact PR head/base/body/files, strict required check, reviewed commit and current rules, then reads live main immediately before admission.",
+    "Cleanup checks expected origin, exact merged PR head, squash parent/tree, main and topic refs before lease-protected remote deletion and compare-and-swap local ref deletion. It detaches and retains the worktree. Original-main finalization checks baseline hidden/ignored entries, modes and symlinks, blocks newly tracked path collisions and uses no-overwrite-ignore fast-forward.",
+    "Fresh-clone verification uses main plus retained tags, requires the original topic commit to be absent, recreates only the reviewed tree for synthetic squash preflight, and validates actual merged tree and parent postmerge. Finalization retains the corrected round105 guard requiring every postmerge command, current helper/config digests and coverage binding.",
+    "Hosted collection retains separate PR, merge-queue, main strict, merge-integrity and Pages latest-attempt/job/check/annotation evidence, including final freshness checks. Results still require coordinator assessment; none are claimed here."
+  ],
+  "unresolved_questions": [],
+  "limitations": [
+    "Exact head, tree, PR and preflight path remain intentionally unbound until obtained. Final measured config and those substitutions must be rechecked before their corresponding action; this observation does not approve arbitrary future edits.",
+    "Twelve tests exercise focused pure guards with inert fixtures; no mutation helper, Git operation, network request or corpus test was executed by these probes. Full prior-round fault matrix was not repeated because executable guard behavior is unchanged.",
+    "The queue live-main read is not an atomic base lock. The merge queue plus exact postmerge parent/tree checks remain required.",
+    "This review does not certify independent scientific correctness of every record; per-record independent review artifacts provide that separately."
+  ],
+  "validation": {
+    "focused_probe_count": 12,
+    "focused_probes_passed": true,
+    "parsed_helper_count": 15,
+    "final_corpus_gates": "pending at observation",
+    "exact_committed_head_review": "pending",
+    "hosted_publication": "pending"
+  }
+}
