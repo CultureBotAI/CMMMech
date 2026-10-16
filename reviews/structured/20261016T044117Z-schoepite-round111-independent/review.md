@@ -1,0 +1,330 @@
+# Independent scientific review of schoepite
+
+- Review: 20261016T044117Z-schoepite-round111-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-16T04:35:23.344891Z
+- Finished UTC: 2026-10-16T04:41:17.761991Z
+- Reviewer: codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Narrow accepted scientific claims supported; original source inconsistencies and experimental limits retained. No maintained-record correction identified in this review scope.
+
+## Scope And Provenance
+
+Entire assigned owner/history and claim-bearing primary evidence; no experiment replication or diffraction re-refinement.
+
+Selection: Native inspect captured final working-tree inputs before acceptance.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a43774bf15a206b04e59c7525e93fdb334325d6.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:schoepite | data/records/schoepite.yaml | maintained | schoepite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Completed batch gate 1 | passed | True | cmmmech:schoepite | Terminal success and retained log verified; owner hash matches native capture. |
+| Completed batch gate 2 | passed | True | cmmmech:schoepite | Terminal success and retained log verified; owner hash matches native capture. |
+| Completed batch gate 3 | passed | True | cmmmech:schoepite | Terminal success and retained log verified; owner hash matches native capture. |
+| Completed batch gate 4 | passed | True | cmmmech:schoepite | Terminal success and retained log verified; owner hash matches native capture. |
+
+## Scientific And Domain Assessments
+
+### Mineral identity and experimental material scope
+
+identity: supported. Targets: cmmmech:schoepite.
+
+Current mineral formula and status are supported; specimens, synthetic analogues and adjacent minerals remain distinct.
+
+### Primary transformation and dissolution evidence
+
+evidence: supported. Targets: cmmmech:schoepite.
+
+Natural specimen-specific alteration remains distinct from2018 structural reassignment and metaschoepite product perspective. Cell change is not a conversion yield; mixed starting material, lack of direct water-loss assay, poorly resolved products and untested reversibility are disclosed. Modern axis setting is not substituted into older cell labels.
+
+### Curation and evidence provenance
+
+provenance: supported. Targets: cmmmech:schoepite.
+
+Actual CREATE sidecar and separate inline event; raw versions and bounded search limits explicit.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/schoepite.yaml; Entire native-inspected owner; local artifact /private/tmp/CMMMech-expansion-round111-20261016/data/records/schoepite.yaml | supports | Exact owner bytes and every accepted scientific claim independently assessed. |
+| history0 | history/records/schoepite/2026-10-16T042745Z-codex-978ad2.yaml; Canonical sidecar plus distinct inline event; local artifact /private/tmp/CMMMech-expansion-round111-20261016/history/records/schoepite/2026-10-16T042745Z-codex-978ad2.yaml | supports | Actual actor/model, target, time and described curation match this change. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Current mineral rows PDF22 and194 independently visually inspected; local artifact /private/tmp/cmm-round111-uranium-research/ima202609.pdf | supports | Current species formula/status verified; no invented accession or inherited criticality. |
+| dossier | research/sources/round111-uranium/20261016T043005Z-source-investigation.json; Acquisition, dedup and source-boundary manifest; local artifact /private/tmp/CMMMech-expansion-round111-20261016/research/sources/round111-uranium/20261016T043005Z-source-investigation.json | context_only | Maintained scientific statements were independently checked against actual primary files; dossier is provenance context. |
+| search | Independent notice and contradiction search; Four exact DOI/title queries and hidden/ignored/followed full current record-tree search; local artifact /private/tmp/cmm-round111-uranium-independent-search.json | context_only | No affecting new notice in returned results; current owners distinct and shared1998 experiment explicitly cross-referenced. |
+| structure | https://doi.org/10.3190/jgeosci.252; Methods, Tables1/2 and symmetry discussion; original PDF3 visually checked; text through conclusions; local artifact /private/tmp/cmm-round111-uranium-research/schoepite2018.pdf | supports | Pbca, RGM2708 cell, formula, density and297K settings agree with original. Second-crystal residual conflict is retained. |
+| supplement | https://www.jgeosci.org/detail/jgeosci.252/supplementary/; Formula sum, density, cell, temperature and refinement fields; companion S1 inspected; local artifact /private/tmp/cmm-round111-uranium-research/schoepite2018.cif | context_only | CIF H36 differs from main-formula H18; density metadata conflicts retained.296.57K is compatible with rounded297K. No re-refinement performed. |
+| experiment | https://www.rruff.net/doclib/cm/vol36/CM36_831.pdf; Methods pp835-836, Table3, p837 original image, and contrasting alteration pp836-839; local artifact /private/tmp/cmm-round110-uranium-research/finch1998.pdf | supports | The20C ten-hour X-ray sequence,14.26 to14.0angstrom, prior minor metaschoepite and contrasting two-year specimen stability match original. Coatings and source/interior sampling are separate. |
+| batch | Completed exact-byte batch receipt; Terminal commands, base/cwd, log hash and final owner hash checked; local artifact /private/tmp/cmm-round111-final-gates-v2.json | supports | Required batch gates passed with scientific inputs unchanged. |
+
+## Limits And Additional Notes
+
+- Independent agent assessment is not external human peer review.
+- Claim-bearing original images and text checked; not every source page was independently visually reread.
+- Source formula/refinement/specimen conflicts remain explicitly unresolved; no inaccessible primary is accepted as inspected.
+- Bounded searches do not establish source exhaustion, and no experiment or structure refinement was replicated.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261016T044117Z-schoepite-round111-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of schoepite
+started_at: '2026-10-16T04:35:23.344891Z'
+finished_at: '2026-10-16T04:41:17.761991Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Separate uranium agent authored the owner/history; root curated
+    a different tailings record and independently assessed uranium primary evidence
+    and final bytes without editing the owners.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Narrow accepted scientific claims supported; original source inconsistencies
+  and experimental limits retained. No maintained-record correction identified in
+  this review scope.
+source:
+  git_revision: 6a43774bf15a206b04e59c7525e93fdb334325d6
+  state: working_tree
+  inputs:
+  - path: data/records/schoepite.yaml
+    sha256: 6a91191737174a9504a1f6606f8d9126dc08ee1e16c67025c294f66b18ccde00
+    role: target
+  - path: history/records/schoepite/2026-10-16T042745Z-codex-978ad2.yaml
+    sha256: 1693228f6a1ab7f9d8e34682534c98e4d571944941038a9df1a53c2f046cade2
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:schoepite
+  path: data/records/schoepite.yaml
+  label: schoepite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/schoepite.yaml
+    role: maintained_record
+scope:
+  description: Entire assigned owner/history and claim-bearing primary evidence; no
+    experiment replication or diffraction re-refinement.
+  selection: Native inspect captured final working-tree inputs before acceptance.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:schoepite
+checks:
+- check_id: batch1
+  name: Completed batch gate 1
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal success and retained log verified; owner hash matches native capture.
+  target_ids:
+  - cmmmech:schoepite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed batch gate 2
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal success and retained log verified; owner hash matches native capture.
+  target_ids:
+  - cmmmech:schoepite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed batch gate 3
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 6a43774bf15a206b04e59c7525e93fdb334325d6
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal success and retained log verified; owner hash matches native capture.
+  target_ids:
+  - cmmmech:schoepite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed batch gate 4
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal success and retained log verified; owner hash matches native capture.
+  target_ids:
+  - cmmmech:schoepite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/schoepite.yaml
+  locator: Entire native-inspected owner; local artifact /private/tmp/CMMMech-expansion-round111-20261016/data/records/schoepite.yaml
+  accessed_at: '2026-10-16T04:41:17.761991Z'
+  snapshot_sha256: 6a91191737174a9504a1f6606f8d9126dc08ee1e16c67025c294f66b18ccde00
+  support: supports
+  summary: Exact owner bytes and every accepted scientific claim independently assessed.
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/schoepite/2026-10-16T042745Z-codex-978ad2.yaml
+  locator: Canonical sidecar plus distinct inline event; local artifact /private/tmp/CMMMech-expansion-round111-20261016/history/records/schoepite/2026-10-16T042745Z-codex-978ad2.yaml
+  accessed_at: '2026-10-16T04:41:17.761991Z'
+  snapshot_sha256: 1693228f6a1ab7f9d8e34682534c98e4d571944941038a9df1a53c2f046cade2
+  support: supports
+  summary: Actual actor/model, target, time and described curation match this change.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Current mineral rows PDF22 and194 independently visually inspected; local
+    artifact /private/tmp/cmm-round111-uranium-research/ima202609.pdf
+  accessed_at: '2026-10-16T04:41:17.761991Z'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  support: supports
+  summary: Current species formula/status verified; no invented accession or inherited
+    criticality.
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round111-uranium/20261016T043005Z-source-investigation.json
+  locator: Acquisition, dedup and source-boundary manifest; local artifact /private/tmp/CMMMech-expansion-round111-20261016/research/sources/round111-uranium/20261016T043005Z-source-investigation.json
+  accessed_at: '2026-10-16T04:41:17.761991Z'
+  snapshot_sha256: 4ad55740de3344ad5c29cb84e8f66af58b35c02c07f6e7bd3100bd5e552989a8
+  support: context_only
+  summary: Maintained scientific statements were independently checked against actual
+    primary files; dossier is provenance context.
+- evidence_id: search
+  kind: search
+  reference: Independent notice and contradiction search
+  locator: Four exact DOI/title queries and hidden/ignored/followed full current record-tree
+    search; local artifact /private/tmp/cmm-round111-uranium-independent-search.json
+  accessed_at: '2026-10-16T04:41:17.761991Z'
+  snapshot_sha256: 6559b0f16e62124cd85cc80a4d9f59ff7b2b48b935c9fee593ab626dc210e318
+  support: context_only
+  summary: No affecting new notice in returned results; current owners distinct and
+    shared1998 experiment explicitly cross-referenced.
+  search_scope: Web first returned windows on2026-10-16; local data/records tree includes
+    hidden/ignored and symlinks. Not exhaustive global literature clearance.
+- evidence_id: structure
+  kind: primary_source
+  reference: https://doi.org/10.3190/jgeosci.252
+  locator: Methods, Tables1/2 and symmetry discussion; original PDF3 visually checked;
+    text through conclusions; local artifact /private/tmp/cmm-round111-uranium-research/schoepite2018.pdf
+  accessed_at: '2026-10-16T04:41:17.761991Z'
+  snapshot_sha256: 82705045759ae72f0e652e7ccb27333540e847e6055d19110e8a21db98f5a91c
+  support: supports
+  summary: Pbca, RGM2708 cell, formula, density and297K settings agree with original.
+    Second-crystal residual conflict is retained.
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://www.jgeosci.org/detail/jgeosci.252/supplementary/
+  locator: Formula sum, density, cell, temperature and refinement fields; companion
+    S1 inspected; local artifact /private/tmp/cmm-round111-uranium-research/schoepite2018.cif
+  accessed_at: '2026-10-16T04:41:17.761991Z'
+  snapshot_sha256: 7bf4c8c9904efadfa139f77d41f4c3fe23a31eac79fdd32e4eb48703c6dd94c0
+  support: context_only
+  summary: CIF H36 differs from main-formula H18; density metadata conflicts retained.296.57K
+    is compatible with rounded297K. No re-refinement performed.
+- evidence_id: experiment
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/cm/vol36/CM36_831.pdf
+  locator: Methods pp835-836, Table3, p837 original image, and contrasting alteration
+    pp836-839; local artifact /private/tmp/cmm-round110-uranium-research/finch1998.pdf
+  accessed_at: '2026-10-16T04:41:17.761991Z'
+  snapshot_sha256: 243319fb16fe8c5cb25c873f2da41a31d3ed2e2e7f4b4b07bbda011a82e5aeb8
+  support: supports
+  summary: The20C ten-hour X-ray sequence,14.26 to14.0angstrom, prior minor metaschoepite
+    and contrasting two-year specimen stability match original. Coatings and source/interior
+    sampling are separate.
+- evidence_id: batch
+  kind: validation
+  reference: Completed exact-byte batch receipt
+  locator: Terminal commands, base/cwd, log hash and final owner hash checked; local
+    artifact /private/tmp/cmm-round111-final-gates-v2.json
+  accessed_at: '2026-10-16T04:41:17.761991Z'
+  snapshot_sha256: babf8dd6e86e7b0c056b2cfd8b2e10e1b6084b49f09016eea4258ff71734a516
+  support: supports
+  summary: Required batch gates passed with scientific inputs unchanged.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral identity and experimental material scope
+  outcome: supported
+  summary: Current mineral formula and status are supported; specimens, synthetic
+    analogues and adjacent minerals remain distinct.
+  target_ids:
+  - cmmmech:schoepite
+  evidence_ids:
+  - owner
+  - ima
+- assessment_id: science
+  area: evidence
+  topic: Primary transformation and dissolution evidence
+  outcome: supported
+  summary: Natural specimen-specific alteration remains distinct from2018 structural
+    reassignment and metaschoepite product perspective. Cell change is not a conversion
+    yield; mixed starting material, lack of direct water-loss assay, poorly resolved
+    products and untested reversibility are disclosed. Modern axis setting is not
+    substituted into older cell labels.
+  target_ids:
+  - cmmmech:schoepite
+  evidence_ids:
+  - owner
+  - experiment
+- assessment_id: provenance
+  area: provenance
+  topic: Curation and evidence provenance
+  outcome: supported
+  summary: Actual CREATE sidecar and separate inline event; raw versions and bounded
+    search limits explicit.
+  target_ids:
+  - cmmmech:schoepite
+  evidence_ids:
+  - history0
+  - dossier
+  - search
+findings: []
+actions: []
+limitations:
+- Independent agent assessment is not external human peer review.
+- Claim-bearing original images and text checked; not every source page was independently
+  visually reread.
+- Source formula/refinement/specimen conflicts remain explicitly unresolved; no inaccessible
+  primary is accepted as inspected.
+- Bounded searches do not establish source exhaustion, and no experiment or structure
+  refinement was replicated.
+```

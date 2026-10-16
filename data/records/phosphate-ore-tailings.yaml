@@ -1,0 +1,138 @@
+id: cmmmech:phosphate-ore-tailings
+name: Phosphate-ore tailings
+material_kind: secondary_resource
+description: >-
+  Residual material from phosphate-ore processing, distinct from phosphate
+  rock as a commodity, a phosphate concentrate, phosphogypsum and a pure
+  phosphate mineral. The curated example is the Florida phosphate tailings
+  specimen studied by Somasundaran and colleagues, described as predominantly
+  clay-bearing and supplied by Florida University, USA. The paper does not
+  identify its mine or processing plant. Composition and leaching behavior
+  are specimen-specific; constituent rare earth elements do not confer a
+  criticality designation on this resource.
+sources:
+  - id: somasundaran2018
+    title: >-
+      Somasundaran P, Hussien S, Patra P and El Shall H (2018).
+      Environmentally Benign Bio-Leaching Extraction of Rare Earth Elements
+      from Non-Conventional Resources. Annals of Microbiology and Research
+      2(1):54-60. DOI 10.36959/958/570. Complete seven-page publisher PDF
+      inspected, including methods pp.54-55, Table 1 and Figures 1-8.
+      Tailings and concentrate results are separate experimental feeds.
+    url: https://scholars.direct/Articles/microbiology/amr-2-009.pdf
+    accessed_on: '2026-10-16'
+  - id: ncbi_ferrooxidans
+    title: >-
+      NCBI Taxonomy, taxon 920, Acidithiobacillus ferrooxidans, rank species.
+      This identifier does not resolve the study's unspecified ATCC strain.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
+    accessed_on: '2026-10-16'
+  - id: ncbi_niger
+    title: >-
+      NCBI Taxonomy, taxon 5061, Aspergillus niger, rank species. This is the
+      authors' species identification, not a verified strain or genome
+      accession for their phosphate-concentrate isolate.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=info
+    accessed_on: '2026-10-16'
+mechanisms:
+  - id: culture_associated_ree_leaching
+    name: Culture-associated rare earth leaching in bacterial and fungal arms
+    process: bioleaching
+    microbial: true
+    description: >-
+      Separate living cultures identified as Acidithiobacillus ferrooxidans
+      and Aspergillus niger were incubated with phosphate tailings in
+      laboratory shake flasks. The paper reports aggregate rare earth
+      signal in clarified leachate. Without matched sterile or acid-matched
+      leaching controls, these observations establish culture-associated
+      leaching but not a microbial increment, an exclusive biochemical
+      pathway or recovery of an isolated rare earth product.
+    context: >-
+      Methods p.55 describe 500 mL flasks with 250 mL medium, 1% pulp
+      density, 30 degrees C and 150 rpm. The bacterial arm used ferrous
+      sulfate 9K medium adjusted to leaching pH 1.7, distinct from growth
+      medium pH 2.5, and 1 mL stationary-phase inoculum reported as
+      approximately 5 x 10^8 cells/mL. Its ATCC accession is unspecified.
+      The fungus was isolated from phosphate concentrate and ore-adapted;
+      it used modified Czapek-Dox liquid medium, with pH 7.5 in Figure 4.
+      Methods report autoclaving fungal samples and medium at 121 degrees C,
+      but conflict between one mL culture and two mL spore inoculum.
+      The received tailings particle size was about 147 micrometres;
+      Figures 3-4 explicitly specify ground 75 micrometre particles for
+      both accepted time-series arms. Later optimization compares several
+      separately ground size classes.
+      The nominal 2-3 day bacterial and 24 h fungal methods conflict with
+      time-series figures extending to six and five days, respectively.
+      Figures 1-2 show pure-culture growth curves, without explicit paired
+      with-feed and without-feed series. They are not uninoculated
+      leaching controls. Leachate was filtered through
+      Whatman No.1 paper and centrifuged at 7000 rpm for more than ten
+      minutes before an Arsenazo I colorimetric assay near 520 nm. This is
+      an operational aggregate assay, not an element-resolved analysis.
+      The paper does not supply sufficient calibration, interference or
+      mass-balance information to independently validate its absolute
+      extraction percentages. These are laboratory observations, not
+      evidence of industrial deployment or environmental or economic superiority.
+    organisms:
+      - id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+      - id: NCBITaxon:5061
+        label: Aspergillus niger
+    evidence:
+      - source_ref: somasundaran2018
+        supports: support
+        explanation: >-
+          Methods pp.54-55 and Figures 3-4 support the narrow observation
+          that the authors tested the two named cultures separately on
+          Florida phosphate tailings and reported rare earth signal in
+          clarified liquid. The species labels are the authors' assignments;
+          neither a strain accession nor sequence-based identification is
+          supplied for the experimental organisms.
+      - source_ref: somasundaran2018
+        supports: partial
+        explanation: >-
+          Figure 3 and the accompanying text report approximately 45%
+          leached from tailings by day three in the bacterial arm, whereas
+          Figure 4 and text report approximately 22.5% in the fungal arm.
+          These are source-reported assay-based fractions, not independently
+          validated yields or isolated-product recovery. The corresponding
+          concentrate results, 70% and 42.5%, do not belong to tailings.
+          Different media and pH and the absence of matched sterile leaching
+          arms prevent interpreting the comparison as intrinsic species
+          efficiency or proof of microbial necessity. Figure 3's caption
+          identifies duplicate experiments; this does not establish the
+          replication of every other experimental series.
+      - source_ref: somasundaran2018
+        supports: partial
+        explanation: >-
+          Table 1 prints total tailings REE content as 304 ppm, while its
+          listed elemental cells sum to 305 ppm; the concentrate cells sum
+          to 889 ppm versus a printed total of 826 ppm. No corrected total
+          is inferred. Separate particle-size and pulp-density experiments
+          report tailings maxima of 48% and 38%, but Figure 8 labels pulp
+          density mg/50 mL while methods and prose use g/50 mL. Together
+          with inconsistent timing and inoculum wording, these discrepancies
+          prevent adopting a single verified optimized recipe. The record
+          preserves the reported time-series observations with these limits.
+      - source_ref: somasundaran2018
+        supports: context_only
+        explanation: >-
+          Equations and discussion propose iron oxidation, ferric hydrolysis
+          and fungal organic-acid complexation. They do not directly measure
+          the relevant metabolites or isolate their causal contributions in
+          these tailings experiments. Discussion p.60 also refers to monazite
+          isolates ML3-1 and WE3-F in wording not reconciled with this study's
+          stated methods; those strains, feed and concentrations are not
+          attributed to the Florida tailings experiment.
+curation_history:
+  - timestamp: '2026-10-16T04:26:58.190965Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: Added process-defined phosphate tailings and qualified culture-associated leaching evidence with controls, assay and source-consistency limits.
+  - timestamp: '2026-10-16T04:35:42.936385Z'
+    curator: codex (GPT-6; codex)
+    action: EDIT
+    summary: Corrected the time-series particle size to 75 micrometres and the pure-culture growth-figure scope after independent review issue464.
+history_refs:
+  - history/records/phosphate-ore-tailings/2026-10-16T042651Z-codex-0ce69c.yaml
+  - history/records/phosphate-ore-tailings/2026-10-16T043521Z-codex-20f330.yaml

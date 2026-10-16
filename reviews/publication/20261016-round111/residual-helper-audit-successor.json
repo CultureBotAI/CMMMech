@@ -1,0 +1,88 @@
+{
+  "timestamp_utc": "2026-10-16T04:40:12.194271+00:00",
+  "reviewer": "codex /root/round104_borates (GPT-6; codex)",
+  "base": "6a43774bf15a206b04e59c7525e93fdb334325d6",
+  "worktree": "/private/tmp/CMMMech-expansion-round111-20261016",
+  "scope": "Independent bounded successor review of report producer correction under issue465. Other four helper bytes unchanged from the initial review. No report construction, publication or cleanup execution.",
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round111-build-report.py",
+      "sha256": "d10cb8568f9b8fee57e65c6bccdb9281b35f5d178842165f356d26c2795b3df8",
+      "bytes": 10564
+    },
+    {
+      "path": "/private/tmp/cmm-round111-cleanup.py",
+      "sha256": "6a222473c5a3d94d6a8960bc7eb63668ccb3943a88f38b8489e4c0fbc810369f",
+      "bytes": 3860
+    },
+    {
+      "path": "/private/tmp/cmm-round111-finalize.py",
+      "sha256": "d7c6316af76b2ba612b645836ed43d0b541b195230b9878c6a820d0b25256022",
+      "bytes": 6604
+    },
+    {
+      "path": "/private/tmp/cmm-round111-archive.py",
+      "sha256": "04f20d90409322023104b459b90940d43ea43ce2c2fc9bc8af930a8269497e9a",
+      "bytes": 2293
+    },
+    {
+      "path": "/private/tmp/cmm-round111-hosted-final-collector.py",
+      "sha256": "7fc1224a3a2ac0e3bbf9d6f04c9f6188821d44abed1f46f7678b7a6199a62a80",
+      "bytes": 10823
+    }
+  ],
+  "predecessor": {
+    "path": "reviews/publication/20261016-round111/residual-helper-audit-initial.json",
+    "sha256": "93457c3be5c00af93838cdbdeece0f0eb3635e943c19de2cfdac533c5db1e063",
+    "finding_id": "F1",
+    "issue_key": "round111-report-final-gate-receipt-binding"
+  },
+  "issue": "https://github.com/CultureBotAI/CMMMech/issues/465",
+  "checks": [
+    {
+      "name": "Actual pure receipt validator",
+      "passed": true,
+      "case_count": 44,
+      "path": "/private/tmp/cmm-round111-report-receipt-successor-probes.json",
+      "sha256": "8571d0b1f03ee97bf01bc87a5572381d9efcea4e0b62e091acb2a278990fed2d",
+      "script": "/private/tmp/cmm-round111-report-receipt-successor-probes.py",
+      "script_sha256": "de5a4c8106b4e4372f7f377edfdcbb5a32ffca7c749bd03557e6c089153a9acf"
+    },
+    {
+      "name": "Actual invocation ordering",
+      "passed": true,
+      "detail": "AST verifies one exact current-base/worktree/log/hash invocation, a current scientific record hash map computed beforehand, and validator execution before every report/config write."
+    },
+    {
+      "name": "Actual pending receipt fails closed",
+      "passed": true,
+      "detail": "At audit time the live v2 receipt was in_progress and was rejected; no final scientific gate pass is inferred."
+    },
+    {
+      "name": "Remaining helper identity",
+      "passed": true,
+      "detail": "Cleanup/finalizer/archive/hosted collector exact hashes unchanged; initial bounded conclusions retained."
+    }
+  ],
+  "findings": [],
+  "dispositions": [
+    {
+      "finding_id": "F1",
+      "issue_key": "round111-report-final-gate-receipt-binding",
+      "status": "resolved",
+      "previous_path": "reviews/publication/20261016-round111/residual-helper-audit-initial.json",
+      "previous_sha256": "93457c3be5c00af93838cdbdeece0f0eb3635e943c19de2cfdac533c5db1e063",
+      "correction": "The report producer now requires exact base/worktree, terminal receipt/log, four ordered required successful commands with aware in-batch timestamps, strict boolean unchanged flag, integer zero exits and equality with the current complete record hash map.",
+      "evidence": [
+        "/private/tmp/cmm-round111-report-receipt-successor-probes.json",
+        "/private/tmp/cmm-round111-build-report-successor-reviewed.py"
+      ],
+      "acceptance": "44 inert cases passed: valid fixture accepted; wrong identities/logs/times/commands/exit types/hash maps rejected. Actual pending receipt rejected. No maintained record changes."
+    }
+  ],
+  "unresolved_questions": [
+    "Terminal corrected batch, final report/config, native corpus checks and exact-head hosted publication remain later gates.",
+    "The fixture proves guard behavior; it is not execution of the final four scientific commands."
+  ],
+  "verdict": "pass_with_limitations"
+}

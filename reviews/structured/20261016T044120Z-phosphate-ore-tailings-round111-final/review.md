@@ -1,0 +1,659 @@
+# Independent final scientific review of phosphate-ore tailings
+
+- Review: 20261016T044120Z-phosphate-ore-tailings-round111-final
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-16T04:36:01.800572Z
+- Finished UTC: 2026-10-16T04:41:20.326811Z
+- Reviewer: codex /root/round104_uranium (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The corrected phosphate-tailings record is defensible for narrowly scoped culture-associated aggregate rare earth leaching. Both initial minor figure-context findings are resolved with explicit lineage under issue464. Source assay/control/protocol limits remain; neither microbial necessity nor an isolated recovered product is established.
+
+## Scope And Provenance
+
+Complete one-record scientific assessment, final CREATE/EDIT provenance and frozen source dossier/schema, original seven-page primary article and independent figure/authority checks, with explicit resolution of both prior findings.
+
+Selection: Exactly one root-authored target independently assigned to reviewer.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a43774bf15a206b04e59c7525e93fdb334325d6.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:phosphate-ore-tailings | data/records/phosphate-ore-tailings.yaml | maintained | Phosphate-ore tailings |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent final named strict validation | passed | True | cmmmech:phosphate-ore-tailings | Checked 1 record(s); 0 failed. |
+| Coordinator completed replacement batch command1 | passed | True | cmmmech:phosphate-ore-tailings | Actual terminal receipt and log verified, exact command exit0 and final owner input matches. |
+| Coordinator completed replacement batch command2 | passed | True | cmmmech:phosphate-ore-tailings | Actual terminal receipt and log verified, exact command exit0 and final owner input matches. |
+| Coordinator completed replacement batch command3 | passed | True | cmmmech:phosphate-ore-tailings | Actual terminal receipt and log verified, exact command exit0 and final owner input matches. |
+| Coordinator completed replacement batch command4 | passed | True | cmmmech:phosphate-ore-tailings | Actual terminal receipt and log verified, exact command exit0 and final owner input matches. |
+
+## Scientific And Domain Assessments
+
+### Process-defined feed and criticality boundaries
+
+identity: supported. Targets: cmmmech:phosphate-ore-tailings.
+
+The owner denotes phosphate-ore tailings, not concentrate, commodity, phosphogypsum or a pure phase.
+
+The curated Florida University sample is described as about80%clays with received size147micrometres. Mine/plant and mineral-resolved REE hosts are not established. Sample composition is not universal; constituent REEs do not supply a jurisdiction/list/edition criticality claim.
+
+### Taxon, strain and living culture scope
+
+identity: supported. Targets: cmmmech:phosphate-ore-tailings.
+
+Species-level grounding matches author assignments while strain uncertainty is preserved.
+
+Bacterial ATCC accession is absent from the article. The fungal isolate came from phosphate concentrate; no sequence, genome or authenticated stock is supplied. Official type-strain IDs are not substituted. This is living culture exposure, not inactive-biomass sorption. iModulonDB is not applicable to the source/claim type; no transcriptomic or gene-level evidence is asserted.
+
+### Corrected particle size and growth-figure scope
+
+consistency: supported. Targets: cmmmech:phosphate-ore-tailings.
+
+Both initial curator defects are resolved by exact figure-supported descriptions.
+
+Received147micrometres remains separate from ground75micrometre Figures3–4 arms and later32/53/75/105micrometre optimization. Figures1–2 are pure-culture curves, without explicit paired feed/no-feed series. The owner preserves the source-method2–3day/24hour versus6/5day time-series conflict, fungal one/two mL inoculum wording, 9K leachingpH1.7 versus growthpH2.5, fungal Figure4pH7.5 and separate media.
+
+### Aggregate leachate signals and experimental denominators
+
+evidence: supported. Targets: cmmmech:phosphate-ore-tailings.
+
+Reported tailings45%/22.5% time-series outcomes match original figures without conversion to recovered-product yields.
+
+Figures3–4 show source-reported aggregate REEs leached, not independently validated element-specific efficiencies. Concentrate70%/42.5% is excluded from tailings. Figure3 duplicates do not establish replication for every series. Different medium/pH conditions and no matched sterile/acid-matched leaching arms prevent interpreting relative fractions as intrinsic species efficiency or microbial necessity.
+
+### Operational assay and source contradictions
+
+evidence: supported. Targets: cmmmech:phosphate-ore-tailings.
+
+The owner retains analytical and reporting uncertainty instead of inventing corrected measurements.
+
+Filtration and centrifugation precede an ArsenazoI colorimetric signal near520nm. Assay calibration, interference, mass balance and element-specific analysis are insufficiently supplied. Table1 tailings cells sum305 versus printed304ppm; concentrate889 versus826ppm. Figure8mg/50mL versus methods/proseg/50mL and Figure5concentrateg/10mL are source conflicts; no single verified optimized recipe is accepted.
+
+### Proposed mechanisms, recovery and deployment
+
+scope: supported. Targets: cmmmech:phosphate-ore-tailings.
+
+Culture-associated leaching is defensible; exclusive biochemical pathways and industrial claims remain unaccepted.
+
+Ferric hydrolysis, iron oxidation and fungal organic-acid complexation are proposed by source equations/discussion without directly measured causal contributions. Monazite ML3-1/WE3-F prose is not transferred to Florida tailings. No isolated REE product, direct metabolite quantification, sterile leaching increment, industrial deployment, economic superiority or environmental superiority is demonstrated.
+
+### Immutable initial findings, actual corrections and final checks
+
+provenance: supported. Targets: cmmmech:phosphate-ore-tailings.
+
+The successor binds final inspected owner/history/dossier and preserves the earlier observation.
+
+Actual independent named validation and coordinator completed replacement gates were verified. Initial native artifact remains immutable with both explicit previous occurrences. Source notice/access limits remain open; no fresh whole-corpus scientific reassessment is claimed. Reviewer authored unrelated schoepite/becquerelite and independently reviewed this root-authored target.
+
+## Findings
+
+### growth-comparison: Growth figures do not display the claimed feed comparison
+
+minor / resolved / confirmed; issue key: cmmmech.phosphate-ore-tailings.growth-comparison.
+
+Mechanism context says Figures1–2 compare growth with and without feed. The original figures show pure-culture growth curves, with no explicit paired feed/no-feed series. Retain the absence of uninoculated leaching controls and avoid asserting a comparison supported only by a section heading.
+
+Disposition: Final context accurately describes pure-culture growth curves without explicit paired with-feed/without-feed series; original Figures1–2 independently reinspected.
+
+### time-series-particle-size: Accepted time-series particle size is omitted and misleadingly assigned to optimization
+
+minor / resolved / confirmed; issue key: cmmmech.phosphate-ore-tailings.time-series-particle-size.
+
+Mechanism context gives received tailings size about147micrometres and says separately ground classes belong to later optimization. Figures3–4, which support the accepted45%/22.5% outcomes, explicitly use75micrometres. State the figure-specific size for both time-series arms and retain received-feed and later optimization scope separately.
+
+Disposition: Final context assigns75micrometres to both accepted Figures3–4 time-series arms, separately from received147micrometre feed and later optimization; original captions independently reinspected.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/phosphate-ore-tailings.yaml; Entire final maintained owner, captured by native inspect before successor assessment. | supports | Exact final bytes explicitly distinguish received 147 micrometre tailings, both 75 micrometre time series, later size optimization, and pure-culture growth figures without an explicit paired feed comparison. |
+| primary | https://scholars.direct/Articles/microbiology/amr-2-009.pdf; Original complete seven-page publisher PDF, pp.54–60, all methods, Table1, Figures1–8, results and references. All seven original page renders were independently visually inspected. | supports | Somasundaran, Hussien, Patra and El Shall (2018), DOI10.36959/958/570. The narrow culture-associated tailings leaching observation is supported; source limitations and untested mechanism claims remain distinct. |
+| growth | https://scholars.direct/Articles/microbiology/amr-2-009.pdf; Printed p.56, original Figures1–2 and captions; retained phosphate-page-3.png. | supports | Figure1 shows bacterial OD/pH and Figure2 one fungal dry-weight series. Captions identify pure cultures. The corrected record does not turn the broader section heading into a displayed paired feed/no-feed experiment. |
+| particles | https://scholars.direct/Articles/microbiology/amr-2-009.pdf; Printed p.57, original Figures3–4 and captions, compared with received-feed description p.54. | supports | Both time series explicitly specify 75 micrometres, 1% pulp, 30 C and 150 rpm. The bacterial curve reaches approximately45% tailings by day3; fungal reaches approximately22.5%. Concentrate curves70%/42.5% are separate. |
+| figures | /private/tmp/cmm-round111-uranium-research/tailings-review-source-manifest.json; Original Table1 and Figures5–8, especially tailings Figure6 versus Figure8 and concentrate Figure5 versus Figure7. | supports | Source totals and pulp-density-unit discrepancies are real and remain qualified. Figures1–2 are growth curves; Figures3–4 are time series; Figures5–8 are separate size/pulp optimization. Different series are not pooled into a verified recipe. |
+| identifiers | /private/tmp/cmm-round111-uranium-research/tailings-review-web.json; Fresh independently opened official NCBI pages920 and5061 and publisher article DOI/authors/date. | supports | NCBITaxon920 is species Acidithiobacillus ferrooxidans and5061 species Aspergillus niger. Type-strain accessions on authority pages do not identify the unspecified experimental ATCC strain or authenticate the fungal isolate. |
+| bibliography | /private/tmp/cmm-round111-resources-research/crossref-phosphate.json; Retained Crossref response independently read against original PDF title page and live publisher entry. | supports | DOI10.36959/958/570, title and publication26November2018 agree. Crossref author given/family fields are inconsistently entered; original title-page author order is retained. Relation is empty and update-to absent in this response. |
+| notices | /private/tmp/cmm-round111-uranium-research/tailings-review-web.json; Bounded exact DOI correction/erratum/retraction and exact title correction searches, plus publisher and Crossref update fields, on16October2026. | context_only | No relevant notice surfaced in those returned results. Earlier same-title2016 conference material is a lead, not inspected full text or independent replication. This is not a claim of exhaustive notice absence. |
+| dedup | /private/tmp/cmm-round111-uranium-research/tailings-review-dedup.json; Independent hidden/ignored-inclusive, followed rg search of W data/records,research,reviews,history; ignored main reports; cited resource raw roots110/111. Binary primary PDF separately inspected. | context_only | Eight matching paths, no second dedicated owner in these bounded roots. The raw match list is external and hashed. No machine-wide absence or source-exhaustion assertion. |
+| history | history/records/phosphate-ore-tailings/2026-10-16T043521Z-codex-20f330.yaml; Actual linked canonical EDIT and separate inline EDIT, with unchanged canonical CREATE and preserved initial native review. | supports | Root corrected the two figure-context defects under issue464. Actual actor/model/tool and timestamp are retained. This reviewer did not edit the target or its history. |
+| prior | reviews/structured/20261016T043352Z-phosphate-ore-tailings-round111-initial/review.yaml; Exact immutable initial finding bundle and both stable finding occurrences. | supports | Initial scientific observation remains preserved. The current review closes the two supported curator defects using corrected bytes and primary figures; unresolved source gaps remain limitations. |
+| named | /private/tmp/cmm-round111-uranium-research/tailings-review-validation-final.json; Actual independent final named strict validation receipt with exact command, cwd, base and owner hash. | supports | Checked1record;0failed. Structural validity is not proof of scientific truth. |
+| batch | /private/tmp/cmm-round111-final-gates-v2.json; Actual replacement four-command terminal receipt: exact worktree/base/command list, all zero exits, log digest and unchanged final owner input independently verified. | supports | Replacement gates bind corrected bytes. Earlier batch was deliberately interrupted by coordinator and retained as failed/interrupted evidence, not interpreted as a scientific or test regression. |
+
+## Limits And Additional Notes
+
+- The original source lacks matched sterile or acid-matched leaching arms, a sufficiently characterized aggregate-assay calibration/interference/mass balance, and authenticated experimental strain accessions.
+- Source timing, inoculum, totals and pulp-density units remain unresolved; the current owner does not promote them into a verified optimized recipe.
+- The same-title2016 conference full text and FIPR material were not independently obtained. HTTP200 HTML is not treated as a PDF, and no uninspected supplement or independent replication is claimed.
+- No laboratory replication, specimen authentication, element-specific yield verification, direct metabolite measurement or industrial deployment review was performed.
+- Bounded notice and hidden/ignored-inclusive duplicate searches do not establish universal absence or source exhaustion. Structural checks are not whole-corpus scientific verification.
+- Source-evidence follow-up issue461 is distinct from the two curator defects resolved under464.
+- The earlier batch was intentionally interrupted; only the independently verified replacement final-gates-v2 receipt supports final structural acceptance.
+- Reviewer authorship of unrelated schoepite/becquerelite owners is disclosed. Initial review YAML/Markdown remains immutable.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261016T044120Z-phosphate-ore-tailings-round111-final
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent final scientific review of phosphate-ore tailings
+started_at: '2026-10-16T04:36:01.800572Z'
+finished_at: '2026-10-16T04:41:20.326811Z'
+reviewer:
+  identity: codex /root/round104_uranium
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored and corrected target/history/dossier. Reviewer
+    authored unrelated schoepite/becquerelite records; independently inspected complete
+    original article and all figures, current official species identifiers and exact
+    final target bytes without editing the target.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The corrected phosphate-tailings record is defensible for narrowly scoped
+  culture-associated aggregate rare earth leaching. Both initial minor figure-context
+  findings are resolved with explicit lineage under issue464. Source assay/control/protocol
+  limits remain; neither microbial necessity nor an isolated recovered product is
+  established.
+source:
+  git_revision: 6a43774bf15a206b04e59c7525e93fdb334325d6
+  state: working_tree
+  inputs:
+  - path: data/records/phosphate-ore-tailings.yaml
+    sha256: 50362c4b71b2aa4a5c2fa184ee9333ea90ca07c40dcd90554a24bef01409cc59
+    role: target
+  - path: history/records/phosphate-ore-tailings/2026-10-16T042651Z-codex-0ce69c.yaml
+    sha256: da6d32773eb749a630a857aeeabd590ad6ab10020c9afd15e5a8abad307cb159
+    role: context
+  - path: history/records/phosphate-ore-tailings/2026-10-16T043521Z-codex-20f330.yaml
+    sha256: fe47e7710a70f181c7092c46243269f19e7d7563385b42ba3d9e26e7d86fb81b
+    role: context
+  - path: research/sources/round111-resources/20261016-source-investigation.json
+    sha256: 26ceedd8825a3062c2654f5dc2144bd0fa1b01435cfbb280ca26d182699a3207
+    role: context
+  - path: research/sources/round111-resources/20261016-source-investigation.md
+    sha256: 27050d169b304ba0fc6425d2be9ac7e0bf9e4df42d3354c32e1440b8b8bb1dab
+    role: context
+  - path: reviews/structured/20261016T043352Z-phosphate-ore-tailings-round111-initial/review.yaml
+    sha256: bb9867b1a7631080fa87e81e2770a05c914b7da96b874acb3743235945862f09
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:phosphate-ore-tailings
+  path: data/records/phosphate-ore-tailings.yaml
+  label: Phosphate-ore tailings
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/phosphate-ore-tailings.yaml
+    role: maintained_record
+scope:
+  description: Complete one-record scientific assessment, final CREATE/EDIT provenance
+    and frozen source dossier/schema, original seven-page primary article and independent
+    figure/authority checks, with explicit resolution of both prior findings.
+  selection: Exactly one root-authored target independently assigned to reviewer.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:phosphate-ore-tailings
+checks:
+- check_id: named
+  name: Independent final named strict validation
+  status: passed
+  required: true
+  summary: Checked 1 record(s); 0 failed.
+  target_ids:
+  - cmmmech:phosphate-ore-tailings
+  command: uv run --locked cmmmech validate data/records/phosphate-ore-tailings.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Coordinator completed replacement batch command1
+  status: passed
+  required: true
+  summary: Actual terminal receipt and log verified, exact command exit0 and final
+    owner input matches.
+  target_ids:
+  - cmmmech:phosphate-ore-tailings
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Coordinator completed replacement batch command2
+  status: passed
+  required: true
+  summary: Actual terminal receipt and log verified, exact command exit0 and final
+    owner input matches.
+  target_ids:
+  - cmmmech:phosphate-ore-tailings
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Coordinator completed replacement batch command3
+  status: passed
+  required: true
+  summary: Actual terminal receipt and log verified, exact command exit0 and final
+    owner input matches.
+  target_ids:
+  - cmmmech:phosphate-ore-tailings
+  command: uv run --locked cmmmech validate-history --base 6a43774bf15a206b04e59c7525e93fdb334325d6
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Coordinator completed replacement batch command4
+  status: passed
+  required: true
+  summary: Actual terminal receipt and log verified, exact command exit0 and final
+    owner input matches.
+  target_ids:
+  - cmmmech:phosphate-ore-tailings
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/phosphate-ore-tailings.yaml
+  locator: Entire final maintained owner, captured by native inspect before successor
+    assessment.
+  summary: Exact final bytes explicitly distinguish received 147 micrometre tailings,
+    both 75 micrometre time series, later size optimization, and pure-culture growth
+    figures without an explicit paired feed comparison.
+  accessed_at: '2026-10-16T04:41:20.326811Z'
+  support: supports
+  snapshot_sha256: 50362c4b71b2aa4a5c2fa184ee9333ea90ca07c40dcd90554a24bef01409cc59
+- evidence_id: primary
+  kind: primary_source
+  reference: https://scholars.direct/Articles/microbiology/amr-2-009.pdf
+  locator: Original complete seven-page publisher PDF, pp.54–60, all methods, Table1,
+    Figures1–8, results and references. All seven original page renders were independently
+    visually inspected.
+  summary: Somasundaran, Hussien, Patra and El Shall (2018), DOI10.36959/958/570.
+    The narrow culture-associated tailings leaching observation is supported; source
+    limitations and untested mechanism claims remain distinct.
+  accessed_at: '2026-10-16T04:41:20.326811Z'
+  support: supports
+  snapshot_sha256: aa1016557644efc02904878a6784fe8f070676060a456cc8c1e7dba21537646f
+- evidence_id: growth
+  kind: primary_source
+  reference: https://scholars.direct/Articles/microbiology/amr-2-009.pdf
+  locator: Printed p.56, original Figures1–2 and captions; retained phosphate-page-3.png.
+  summary: Figure1 shows bacterial OD/pH and Figure2 one fungal dry-weight series.
+    Captions identify pure cultures. The corrected record does not turn the broader
+    section heading into a displayed paired feed/no-feed experiment.
+  accessed_at: '2026-10-16T04:41:20.326811Z'
+  support: supports
+  snapshot_sha256: 9f6a48c8654246cfc97449834ac15e52551e09c79b158615a6ca1851a12ee35c
+- evidence_id: particles
+  kind: primary_source
+  reference: https://scholars.direct/Articles/microbiology/amr-2-009.pdf
+  locator: Printed p.57, original Figures3–4 and captions, compared with received-feed
+    description p.54.
+  summary: Both time series explicitly specify 75 micrometres, 1% pulp, 30 C and 150
+    rpm. The bacterial curve reaches approximately45% tailings by day3; fungal reaches
+    approximately22.5%. Concentrate curves70%/42.5% are separate.
+  accessed_at: '2026-10-16T04:41:20.326811Z'
+  support: supports
+  snapshot_sha256: 6d0a1a560fd54d11c2e4951a5e1adb51b01af946523f2641e80c562a3c974577
+- evidence_id: figures
+  kind: primary_source
+  reference: /private/tmp/cmm-round111-uranium-research/tailings-review-source-manifest.json
+  locator: Original Table1 and Figures5–8, especially tailings Figure6 versus Figure8
+    and concentrate Figure5 versus Figure7.
+  summary: Source totals and pulp-density-unit discrepancies are real and remain qualified.
+    Figures1–2 are growth curves; Figures3–4 are time series; Figures5–8 are separate
+    size/pulp optimization. Different series are not pooled into a verified recipe.
+  accessed_at: '2026-10-16T04:41:20.326811Z'
+  support: supports
+  snapshot_sha256: 3608b196d734c287146a5e692160c93ca1dc0138768fba3751a0f7546d089117
+- evidence_id: identifiers
+  kind: authority
+  reference: /private/tmp/cmm-round111-uranium-research/tailings-review-web.json
+  locator: Fresh independently opened official NCBI pages920 and5061 and publisher
+    article DOI/authors/date.
+  summary: NCBITaxon920 is species Acidithiobacillus ferrooxidans and5061 species
+    Aspergillus niger. Type-strain accessions on authority pages do not identify the
+    unspecified experimental ATCC strain or authenticate the fungal isolate.
+  accessed_at: '2026-10-16T04:41:20.326811Z'
+  support: supports
+  snapshot_sha256: 71df3ca2433becbedb5c8f86e3f5d968b62cd38d0f10ffb71b5ff5db8e62a723
+- evidence_id: bibliography
+  kind: primary_source
+  reference: /private/tmp/cmm-round111-resources-research/crossref-phosphate.json
+  locator: Retained Crossref response independently read against original PDF title
+    page and live publisher entry.
+  summary: DOI10.36959/958/570, title and publication26November2018 agree. Crossref
+    author given/family fields are inconsistently entered; original title-page author
+    order is retained. Relation is empty and update-to absent in this response.
+  accessed_at: '2026-10-16T04:41:20.326811Z'
+  support: supports
+  snapshot_sha256: 1cf4ee8e36519fa5ab3bf346f36452df188ff3b7256b847c84b3e51f19a9ff75
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round111-uranium-research/tailings-review-web.json
+  locator: Bounded exact DOI correction/erratum/retraction and exact title correction
+    searches, plus publisher and Crossref update fields, on16October2026.
+  summary: No relevant notice surfaced in those returned results. Earlier same-title2016
+    conference material is a lead, not inspected full text or independent replication.
+    This is not a claim of exhaustive notice absence.
+  accessed_at: '2026-10-16T04:41:20.326811Z'
+  support: context_only
+  snapshot_sha256: 71df3ca2433becbedb5c8f86e3f5d968b62cd38d0f10ffb71b5ff5db8e62a723
+  search_scope: Bounded exact DOI correction/erratum/retraction and exact title correction
+    searches, plus publisher and Crossref update fields, on16October2026. No relevant
+    notice surfaced in those returned results. Earlier same-title2016 conference material
+    is a lead, not inspected full text or independent replication. This is not a claim
+    of exhaustive notice absence.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round111-uranium-research/tailings-review-dedup.json
+  locator: Independent hidden/ignored-inclusive, followed rg search of W data/records,research,reviews,history;
+    ignored main reports; cited resource raw roots110/111. Binary primary PDF separately
+    inspected.
+  summary: Eight matching paths, no second dedicated owner in these bounded roots.
+    The raw match list is external and hashed. No machine-wide absence or source-exhaustion
+    assertion.
+  accessed_at: '2026-10-16T04:41:20.326811Z'
+  support: context_only
+  snapshot_sha256: bb0365e15c13941a2f3dde404ff58430bb41e01f6c433ed875a7755db2fa3958
+  search_scope: Independent hidden/ignored-inclusive, followed rg search of W data/records,research,reviews,history;
+    ignored main reports; cited resource raw roots110/111. Binary primary PDF separately
+    inspected. Eight matching paths, no second dedicated owner in these bounded roots.
+    The raw match list is external and hashed. No machine-wide absence or source-exhaustion
+    assertion.
+- evidence_id: history
+  kind: record_content
+  reference: history/records/phosphate-ore-tailings/2026-10-16T043521Z-codex-20f330.yaml
+  locator: Actual linked canonical EDIT and separate inline EDIT, with unchanged canonical
+    CREATE and preserved initial native review.
+  summary: Root corrected the two figure-context defects under issue464. Actual actor/model/tool
+    and timestamp are retained. This reviewer did not edit the target or its history.
+  accessed_at: '2026-10-16T04:41:20.326811Z'
+  support: supports
+  snapshot_sha256: fe47e7710a70f181c7092c46243269f19e7d7563385b42ba3d9e26e7d86fb81b
+- evidence_id: prior
+  kind: record_content
+  reference: reviews/structured/20261016T043352Z-phosphate-ore-tailings-round111-initial/review.yaml
+  locator: Exact immutable initial finding bundle and both stable finding occurrences.
+  summary: Initial scientific observation remains preserved. The current review closes
+    the two supported curator defects using corrected bytes and primary figures; unresolved
+    source gaps remain limitations.
+  accessed_at: '2026-10-16T04:41:20.326811Z'
+  support: supports
+  snapshot_sha256: bb9867b1a7631080fa87e81e2770a05c914b7da96b874acb3743235945862f09
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round111-uranium-research/tailings-review-validation-final.json
+  locator: Actual independent final named strict validation receipt with exact command,
+    cwd, base and owner hash.
+  summary: Checked1record;0failed. Structural validity is not proof of scientific
+    truth.
+  accessed_at: '2026-10-16T04:41:20.326811Z'
+  support: supports
+  snapshot_sha256: cc7c013e7bce334d9bef98acc28103084d0a6094aab053380233d81a4a0f1364
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round111-final-gates-v2.json
+  locator: 'Actual replacement four-command terminal receipt: exact worktree/base/command
+    list, all zero exits, log digest and unchanged final owner input independently
+    verified.'
+  summary: Replacement gates bind corrected bytes. Earlier batch was deliberately
+    interrupted by coordinator and retained as failed/interrupted evidence, not interpreted
+    as a scientific or test regression.
+  accessed_at: '2026-10-16T04:41:20.326811Z'
+  support: supports
+  snapshot_sha256: babf8dd6e86e7b0c056b2cfd8b2e10e1b6084b49f09016eea4258ff71734a516
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Process-defined feed and criticality boundaries
+  outcome: supported
+  summary: The owner denotes phosphate-ore tailings, not concentrate, commodity, phosphogypsum
+    or a pure phase.
+  details: The curated Florida University sample is described as about80%clays with
+    received size147micrometres. Mine/plant and mineral-resolved REE hosts are not
+    established. Sample composition is not universal; constituent REEs do not supply
+    a jurisdiction/list/edition criticality claim.
+  target_ids:
+  - cmmmech:phosphate-ore-tailings
+  evidence_ids:
+  - owner
+  - primary
+  - dedup
+- assessment_id: organism
+  area: identity
+  topic: Taxon, strain and living culture scope
+  outcome: supported
+  summary: Species-level grounding matches author assignments while strain uncertainty
+    is preserved.
+  details: Bacterial ATCC accession is absent from the article. The fungal isolate
+    came from phosphate concentrate; no sequence, genome or authenticated stock is
+    supplied. Official type-strain IDs are not substituted. This is living culture
+    exposure, not inactive-biomass sorption. iModulonDB is not applicable to the source/claim
+    type; no transcriptomic or gene-level evidence is asserted.
+  target_ids:
+  - cmmmech:phosphate-ore-tailings
+  evidence_ids:
+  - owner
+  - primary
+  - identifiers
+- assessment_id: protocol
+  area: consistency
+  topic: Corrected particle size and growth-figure scope
+  outcome: supported
+  summary: Both initial curator defects are resolved by exact figure-supported descriptions.
+  details: Received147micrometres remains separate from ground75micrometre Figures3–4
+    arms and later32/53/75/105micrometre optimization. Figures1–2 are pure-culture
+    curves, without explicit paired feed/no-feed series. The owner preserves the source-method2–3day/24hour
+    versus6/5day time-series conflict, fungal one/two mL inoculum wording, 9K leachingpH1.7
+    versus growthpH2.5, fungal Figure4pH7.5 and separate media.
+  target_ids:
+  - cmmmech:phosphate-ore-tailings
+  evidence_ids:
+  - owner
+  - primary
+  - growth
+  - particles
+  - history
+  - prior
+- assessment_id: outcomes
+  area: evidence
+  topic: Aggregate leachate signals and experimental denominators
+  outcome: supported
+  summary: Reported tailings45%/22.5% time-series outcomes match original figures
+    without conversion to recovered-product yields.
+  details: Figures3–4 show source-reported aggregate REEs leached, not independently
+    validated element-specific efficiencies. Concentrate70%/42.5% is excluded from
+    tailings. Figure3 duplicates do not establish replication for every series. Different
+    medium/pH conditions and no matched sterile/acid-matched leaching arms prevent
+    interpreting relative fractions as intrinsic species efficiency or microbial necessity.
+  target_ids:
+  - cmmmech:phosphate-ore-tailings
+  evidence_ids:
+  - owner
+  - primary
+  - particles
+- assessment_id: analytical
+  area: evidence
+  topic: Operational assay and source contradictions
+  outcome: supported
+  summary: The owner retains analytical and reporting uncertainty instead of inventing
+    corrected measurements.
+  details: Filtration and centrifugation precede an ArsenazoI colorimetric signal
+    near520nm. Assay calibration, interference, mass balance and element-specific
+    analysis are insufficiently supplied. Table1 tailings cells sum305 versus printed304ppm;
+    concentrate889 versus826ppm. Figure8mg/50mL versus methods/proseg/50mL and Figure5concentrateg/10mL
+    are source conflicts; no single verified optimized recipe is accepted.
+  target_ids:
+  - cmmmech:phosphate-ore-tailings
+  evidence_ids:
+  - owner
+  - primary
+  - figures
+- assessment_id: causality
+  area: scope
+  topic: Proposed mechanisms, recovery and deployment
+  outcome: supported
+  summary: Culture-associated leaching is defensible; exclusive biochemical pathways
+    and industrial claims remain unaccepted.
+  details: Ferric hydrolysis, iron oxidation and fungal organic-acid complexation
+    are proposed by source equations/discussion without directly measured causal contributions.
+    Monazite ML3-1/WE3-F prose is not transferred to Florida tailings. No isolated
+    REE product, direct metabolite quantification, sterile leaching increment, industrial
+    deployment, economic superiority or environmental superiority is demonstrated.
+  target_ids:
+  - cmmmech:phosphate-ore-tailings
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Immutable initial findings, actual corrections and final checks
+  outcome: supported
+  summary: The successor binds final inspected owner/history/dossier and preserves
+    the earlier observation.
+  details: Actual independent named validation and coordinator completed replacement
+    gates were verified. Initial native artifact remains immutable with both explicit
+    previous occurrences. Source notice/access limits remain open; no fresh whole-corpus
+    scientific reassessment is claimed. Reviewer authored unrelated schoepite/becquerelite
+    and independently reviewed this root-authored target.
+  target_ids:
+  - cmmmech:phosphate-ore-tailings
+  evidence_ids:
+  - owner
+  - history
+  - prior
+  - named
+  - batch
+  - notices
+  - bibliography
+findings:
+- finding_id: growth-comparison
+  issue_key: cmmmech.phosphate-ore-tailings.growth-comparison
+  title: Growth figures do not display the claimed feed comparison
+  category: evidence
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  target_ids:
+  - cmmmech:phosphate-ore-tailings
+  field_paths:
+  - mechanisms[0].context
+  evidence_ids:
+  - owner
+  - history
+  - prior
+  - named
+  - batch
+  - growth
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/phosphate-ore-tailings.yaml
+    role: maintained_record
+  description: Mechanism context says Figures1–2 compare growth with and without feed.
+    The original figures show pure-culture growth curves, with no explicit paired
+    feed/no-feed series. Retain the absence of uninoculated leaching controls and
+    avoid asserting a comparison supported only by a section heading.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261016T043352Z-phosphate-ore-tailings-round111-initial
+    finding_id: growth-comparison
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/464
+  disposition_reason: Final context accurately describes pure-culture growth curves
+    without explicit paired with-feed/without-feed series; original Figures1–2 independently
+    reinspected.
+- finding_id: time-series-particle-size
+  issue_key: cmmmech.phosphate-ore-tailings.time-series-particle-size
+  title: Accepted time-series particle size is omitted and misleadingly assigned to
+    optimization
+  category: evidence
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  target_ids:
+  - cmmmech:phosphate-ore-tailings
+  field_paths:
+  - mechanisms[0].context
+  evidence_ids:
+  - owner
+  - history
+  - prior
+  - named
+  - batch
+  - particles
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/phosphate-ore-tailings.yaml
+    role: maintained_record
+  description: Mechanism context gives received tailings size about147micrometres
+    and says separately ground classes belong to later optimization. Figures3–4, which
+    support the accepted45%/22.5% outcomes, explicitly use75micrometres. State the
+    figure-specific size for both time-series arms and retain received-feed and later
+    optimization scope separately.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261016T043352Z-phosphate-ore-tailings-round111-initial
+    finding_id: time-series-particle-size
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/464
+  disposition_reason: Final context assigns75micrometres to both accepted Figures3–4
+    time-series arms, separately from received147micrometre feed and later optimization;
+    original captions independently reinspected.
+actions: []
+limitations:
+- The original source lacks matched sterile or acid-matched leaching arms, a sufficiently
+  characterized aggregate-assay calibration/interference/mass balance, and authenticated
+  experimental strain accessions.
+- Source timing, inoculum, totals and pulp-density units remain unresolved; the current
+  owner does not promote them into a verified optimized recipe.
+- The same-title2016 conference full text and FIPR material were not independently
+  obtained. HTTP200 HTML is not treated as a PDF, and no uninspected supplement or
+  independent replication is claimed.
+- No laboratory replication, specimen authentication, element-specific yield verification,
+  direct metabolite measurement or industrial deployment review was performed.
+- Bounded notice and hidden/ignored-inclusive duplicate searches do not establish
+  universal absence or source exhaustion. Structural checks are not whole-corpus scientific
+  verification.
+notes:
+- Source-evidence follow-up issue461 is distinct from the two curator defects resolved
+  under464.
+- The earlier batch was intentionally interrupted; only the independently verified
+  replacement final-gates-v2 receipt supports final structural acceptance.
+- Reviewer authorship of unrelated schoepite/becquerelite owners is disclosed. Initial
+  review YAML/Markdown remains immutable.
+```
