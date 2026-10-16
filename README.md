@@ -8,13 +8,21 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 570 material records.
+The catalogue currently contains 578 material records.
 
-The [latest curation report](research/ingests/round112-frontier-20261016.md) links
+The [latest curation report](research/ingests/round113-frontier-20261016.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Mcallisterite](data/records/mcallisterite.yaml) | Natural borate identity and synthetic thermal behavior | Distinct natural impurities, water-loss fractions and deferred synthesis data |
+| [Tunellite](data/records/tunellite.yaml) | Natural structure and abiotic thermal observations | Heating-rate conflicts and historical product identity remain unresolved |
+| [Kukharenkoite-(Ce)](data/records/kukharenkoite-ce.yaml) | Natural mineral identity and crystal structure | Specimen chemistry and model/deposit limits retained |
+| [Cordylite-(Ce)](data/records/cordylite-ce.yaml) | Natural identity and structural refinement | Historical names and proxy scattering models kept explicit |
+| [Billietite](data/records/billietite.yaml) | Natural identity and laboratory surface alteration | Exsitu observations, source-label conflicts and no bulk recovery yield |
+| [Compreignacite](data/records/compreignacite.yaml) | Synthetic K-phase dissolution in flow columns | Natural/synthetic hydration, K/Na arms and modeled rates kept distinct |
+| [Zinc purification hot filter cake](data/records/zinc-purification-hot-filter-cake.yaml) | Abiotic acid/peroxide dissolution of real purification residue | Conflicting selectivity, dosing and product-recovery limits retained |
+| [Aluminium salt slag](data/records/aluminium-salt-slag.yaml) | Water leaching and mixed-salt crystallization | Chloride removal, scaled mass balance and proposed reuse distinguished |
 | [Studtite](data/records/studtite.yaml) | Natural identity and abiotic thermal/aqueous phase changes | Method-dependent transitions and surface-only models retained |
 | [Metastudtite](data/records/metastudtite.yaml) | Natural identity and synthetic transformation evidence | Mixed precursors, model-dependent products and qualified rehydration |
 | [Bainbridgeite-(YCe)](data/records/bainbridgeite-yce.yaml) | Holotype mineral identity and structure | Later rim reassignment and source/deposit discrepancies retained |

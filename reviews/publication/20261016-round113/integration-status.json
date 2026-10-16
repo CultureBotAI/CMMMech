@@ -1,0 +1,142 @@
+{
+  "rules": {
+    "command": [
+      "gh",
+      "api",
+      "repos/CultureBotAI/CMMMech/rules/branches/main"
+    ],
+    "exit_code": 0,
+    "data": [
+      {
+        "type": "pull_request",
+        "parameters": {
+          "required_approving_review_count": 0,
+          "dismiss_stale_reviews_on_push": false,
+          "required_reviewers": [],
+          "require_code_owner_review": false,
+          "dismissal_restriction": {
+            "enabled": false,
+            "allowed_actors": []
+          },
+          "require_last_push_approval": false,
+          "required_review_thread_resolution": false,
+          "require_extra_approval_for_unattributed_changes": true,
+          "allowed_merge_methods": [
+            "merge",
+            "squash",
+            "rebase"
+          ]
+        },
+        "ruleset_source_type": "Repository",
+        "ruleset_source": "CultureBotAI/CMMMech",
+        "ruleset_id": 24692449
+      },
+      {
+        "type": "required_status_checks",
+        "parameters": {
+          "strict_required_status_checks_policy": false,
+          "do_not_enforce_on_create": false,
+          "required_status_checks": [
+            {
+              "context": "validate-strict",
+              "integration_id": 15368
+            }
+          ]
+        },
+        "ruleset_source_type": "Repository",
+        "ruleset_source": "CultureBotAI/CMMMech",
+        "ruleset_id": 24692449
+      },
+      {
+        "type": "merge_queue",
+        "parameters": {
+          "merge_method": "SQUASH",
+          "max_entries_to_build": 3,
+          "min_entries_to_merge": 1,
+          "max_entries_to_merge": 1,
+          "min_entries_to_merge_wait_minutes": 5,
+          "grouping_strategy": "ALLGREEN",
+          "check_response_timeout_minutes": 120
+        },
+        "ruleset_source_type": "Repository",
+        "ruleset_source": "CultureBotAI/CMMMech",
+        "ruleset_id": 24692449
+      }
+    ],
+    "stderr": ""
+  },
+  "admission": {
+    "command": [
+      "gh",
+      "pr",
+      "view",
+      "581",
+      "--repo",
+      "CultureBotAI/culturebotai-claw",
+      "--json",
+      "state,number,mergedAt,mergeCommit,url"
+    ],
+    "exit_code": 0,
+    "data": {
+      "mergeCommit": {
+        "oid": "849f336e025510316a5f235eb0af8547b8bd50cc"
+      },
+      "mergedAt": "2026-10-08T02:08:09Z",
+      "number": 581,
+      "state": "MERGED",
+      "url": "https://github.com/CultureBotAI/culturebotai-claw/pull/581"
+    },
+    "stderr": ""
+  },
+  "issue3": {
+    "command": [
+      "gh",
+      "issue",
+      "view",
+      "3",
+      "--repo",
+      "CultureBotAI/CMMMech",
+      "--json",
+      "state,number,closedAt,url"
+    ],
+    "exit_code": 0,
+    "data": {
+      "closedAt": "2026-10-08T06:32:26Z",
+      "number": 3,
+      "state": "CLOSED",
+      "url": "https://github.com/CultureBotAI/CMMMech/issues/3"
+    },
+    "stderr": ""
+  },
+  "shepherd_runs": {
+    "command": [
+      "gh",
+      "run",
+      "list",
+      "--repo",
+      "CultureBotAI/CMMMech",
+      "--workflow",
+      "pr-shepherd.yml",
+      "--limit",
+      "100",
+      "--json",
+      "databaseId,status,conclusion,url"
+    ],
+    "exit_code": 0,
+    "data": [],
+    "stderr": ""
+  },
+  "governed_check": {
+    "command": [
+      "bash",
+      "scripts/check_vendored_sync.sh"
+    ],
+    "exit_code": 0,
+    "pin": "a5d562962c75a2ad9efd8160b548df5944315422",
+    "log": "/private/tmp/cmm-round113-governed-check.log",
+    "log_sha256": "3b073aa29da7dc3996edbe18c83d0d6593ba6d03238b663efc40286be4cf428e",
+    "summary": "OK: 22 governed artifacts match the pinned claw revision"
+  },
+  "recorded_at": "2026-10-16T05:58:42.885092+00:00",
+  "assessment": "CLAW admission, history/reviews and governed artifacts are installed; native SQUASH/ALLGREEN queue requires validate-strict. PR shepherd is manual/comment-only; returned run list is retained without credential-absence inference. A supported operational exercise remains follow-up. Future admission/governed changes must use CLAW supported admission/synchronization. No governed copies edited."
+}
