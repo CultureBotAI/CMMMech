@@ -1,0 +1,111 @@
+{
+  "recorded_at": "2026-10-16T01:51:17.268493Z",
+  "scope": "Independent static and inert assertion audit of two temporary receipt consumers; no consumer body, Git, GitHub or maintained owner mutation executed.",
+  "reviewer": "codex /root/round104_borates (GPT-6)",
+  "independence": "Reviewer authored the separate borate owners and La/Ce scientific reviews, not either audited consumer.",
+  "base": "26661b7f033d4bdb915e48e71080aa5774b4c3d6",
+  "worktree": "/private/tmp/CMMMech-expansion-round108-20261016",
+  "completion": "completed",
+  "verdict": "needs_curation",
+  "source_hashes": {
+    "report": {
+      "path": "/private/tmp/cmm-round108-build-report.py",
+      "sha256": "238637696101bca5c52df2ddf8cf30b9ae5ec0d30269d96f72203e17452a76fe"
+    },
+    "uranium": {
+      "path": "/private/tmp/cmm-round108-save-uranium-reviews.py",
+      "sha256": "ceb90de914adbf89b60d3154d4526d23344b69caccfed377531774bdadd142a9"
+    }
+  },
+  "probe_scope": "Only exact AST assertion nodes were executed with synthetic fixtures and an inert path/digest provider. These probes demonstrate missing guards, not a false report or saved review having actually been produced.",
+  "probes": [
+    {
+      "case": "provisional empty measured counts",
+      "consumer": "report",
+      "invalid_fixture_accepted": true
+    },
+    {
+      "case": "wrong gate base",
+      "consumer": "report",
+      "invalid_fixture_accepted": true
+    },
+    {
+      "case": "wrong review-check base",
+      "consumer": "report",
+      "invalid_fixture_accepted": true
+    },
+    {
+      "case": "current owner differs from gate input",
+      "consumer": "report",
+      "invalid_fixture_accepted": true
+    },
+    {
+      "case": "missing required commands",
+      "consumer": "report",
+      "invalid_fixture_accepted": true
+    },
+    {
+      "case": "wrong gate base",
+      "consumer": "uranium",
+      "invalid_fixture_accepted": true
+    },
+    {
+      "case": "wrong worktree",
+      "consumer": "uranium",
+      "invalid_fixture_accepted": true
+    },
+    {
+      "case": "current owner differs from gate input",
+      "consumer": "uranium",
+      "invalid_fixture_accepted": true
+    },
+    {
+      "case": "missing required commands",
+      "consumer": "uranium",
+      "invalid_fixture_accepted": true
+    },
+    {
+      "case": "failed command within exit-zero envelope",
+      "consumer": "uranium",
+      "invalid_fixture_accepted": true
+    }
+  ],
+  "findings": [
+    {
+      "finding_id": "F1",
+      "issue_key": "round108-report-receipt-bindings",
+      "severity": "minor",
+      "status": "open",
+      "title": "Report consumer permits provisional counts and stale successful receipts",
+      "locator": "/private/tmp/cmm-round108-build-report.py:6-8,17",
+      "description": "Empty config counts make all(count comparisons) vacuous. The report consumer does not require finalized config or bind gates/review-check to configured base, required command set, current owner bytes and matching coverage. Five inert invalid receipt fixtures pass its entire initial assertion block. Downstream commit guards mitigate publication, but do not make the report consumer independently truthful.",
+      "acceptance_checks": [
+        "Require finalized config and measured nonempty required count keys.",
+        "Reuse the existing check_gate_receipts contract with a digest function rooted at W; bind expected worktree and coverage root.",
+        "Compare current record hashes with the gate record_inputs and coverage rows before reporting exact final-byte coverage.",
+        "Reject provisional config, wrong base, missing commands and stale hashes in inert negative tests; retain a complete positive fixture."
+      ]
+    },
+    {
+      "finding_id": "F2",
+      "issue_key": "round108-uranium-review-gate-bindings",
+      "severity": "minor",
+      "status": "open",
+      "title": "Positive uranium review builder does not bind the gate to the inspected owner",
+      "locator": "/private/tmp/cmm-round108-save-uranium-reviews.py:else branch after initial checks",
+      "description": "The positive branch checks completion, envelope exit, unchanged flag and log digest, but omits trusted base/worktree, all four unique successful required commands and record_inputs equality with the exact native-inspected owner. Five inert invalid gate fixtures pass that assertion. The native capture does bind owner/history bytes correctly; the gap is the separate validation claim.",
+      "acceptance_checks": [
+        "Assert configured trusted base, exact worktree and current owner hash == capture target hash == gate record_inputs[owner].",
+        "Require each of just check, strict nonempty validate, validate-history with trusted base and render_pages --check exactly once and exit zero.",
+        "Reject wrong base/worktree, stale owner hash, missing/duplicate/failed commands with inert tests.",
+        "Keep existing initial finding bundle immutable; successor must retain exact stable key and previous occurrence."
+      ]
+    }
+  ],
+  "other_assessment": "Report prose, seven owner paths, relative Markdown links, nine expected native artifacts, source issues 427-431 and corrective issues 432-434 match the planned prepublication scope. No hosted CI/merge is claimed. Uranium successor uses the initial exact review ID and F108-SKL-1, and the new native capture hashes all listed owner/context inputs; no lineage defect found. A new corrective issue will require updating the report issue set.",
+  "limits": [
+    "Corrected final gates and final native review checker were pending at audit time.",
+    "No repeat uranium science review; source interpretation remains the independent root reviewer responsibility.",
+    "No claims about future report generation or publication success."
+  ]
+}

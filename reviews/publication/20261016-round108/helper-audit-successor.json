@@ -1,0 +1,111 @@
+{
+  "reviewed_at": "2026-10-16T01:43:52.170621+00:00",
+  "reviewer": {
+    "identity": "codex /root/round104_uranium",
+    "model": "GPT-6",
+    "independence": "Independently inspected coordinator session-helper adaptations; authored unrelated uranyl owners and this review, not the audited helpers."
+  },
+  "scope": "Successor for exact two fixes under issue433 plus additive retention of initial/successor raw audit directories; no main() or external operation invoked.",
+  "prior_review": {
+    "path": "reviews/publication/20261016-round108/helper-audit-initial.json",
+    "sha256": "86afded24452bf0740b2eb9f66d8e339e45a0b1c8c1ea3dc3775608ea855b1eb"
+  },
+  "issue": "https://github.com/CultureBotAI/CMMMech/issues/433",
+  "verdict": "pass_with_limitations",
+  "findings": [
+    {
+      "id": "PUB108-1",
+      "severity": "minor",
+      "path": "/private/tmp/cmm-round108-release-acquire.py",
+      "locator": "issue(n), `if n in []`",
+      "finding": "No issue events are ever acquired before the independent release assessment. This is a concrete disabled collection branch, not an inference from missing remote data.",
+      "proof": [
+        "issue-777",
+        "issue-777-comments"
+      ],
+      "acceptance": "Request paginated events for every source and corrective issue, preserve all raw pages/query receipts, and run an inert actual-function probe demonstrating issue, comments and events for an arbitrary issue number.",
+      "status": "resolved",
+      "previous_occurrence": {
+        "review": "reviews/publication/20261016-round108/helper-audit-initial.json",
+        "finding_id": "PUB108-1"
+      },
+      "disposition": "Exact repair independently inspected and affected actual-function/source probe passed."
+    },
+    {
+      "id": "PUB108-2",
+      "severity": "minor",
+      "path": "/private/tmp/cmm-round108-archive.py",
+      "locator": "generated README summary heading",
+      "finding": "The round108 archive is labelled Round107 publication receipt.",
+      "acceptance": "Generate Round108 in the heading and verify no Round107 publication heading remains in the current helper bytes, while keeping operational archive guards unchanged.",
+      "status": "resolved",
+      "previous_occurrence": {
+        "review": "reviews/publication/20261016-round108/helper-audit-initial.json",
+        "finding_id": "PUB108-2"
+      },
+      "disposition": "Exact repair independently inspected and affected actual-function/source probe passed."
+    }
+  ],
+  "evidence": {
+    "finished_at": "2026-10-16T01:43:52.169531+00:00",
+    "passed": true,
+    "changes": [
+      {
+        "path": "/private/tmp/cmm-round108-release-acquire.py",
+        "before_sha256": "781fda90b261cc2a8094a1ac81fe335c66c4b1e8283b92a53d914eb506a10b24",
+        "after_sha256": "8505a1a58c6ed16f0b0bf77baa0e8b20359c3622e5342008d5fa6f6743678884",
+        "diff": "--- /private/tmp/cmm-round108-uranium-research/publication-audit-initial/cmm-round108-release-acquire.py\n+++ /private/tmp/cmm-round108-release-acquire.py\n@@ -23,7 +23,7 @@\n def issue(n):\n     request('issue-'+str(n),repo+'/issues/'+str(n))\n     request('issue-'+str(n)+'-comments',repo+'/issues/'+str(n)+'/comments?per_page=100',True)\n-    if n in []:request('issue-'+str(n)+'-events',repo+'/issues/'+str(n)+'/events?per_page=100',True)\n+    request('issue-'+str(n)+'-events',repo+'/issues/'+str(n)+'/events?per_page=100',True)\n with ThreadPoolExecutor(max_workers=4) as pool:list(pool.map(issue,[i['number'] for k in ('source_issues','corrective_issues') for i in json.loads((W/'research/ingests/round108-frontier-20261016.json').read_text())[k]]))\n checks=json.loads((out/'head-checks.json').read_text())\n for page in checks:\n"
+      },
+      {
+        "path": "/private/tmp/cmm-round108-archive.py",
+        "before_sha256": "653c4eb235d837d749017a2818b4a6b19d697023c2c29a0c941e7216e00f3681",
+        "after_sha256": "32123efa194772c466a8d8b982b7c96d9b92e2c683c6e35e3c845d16519891bd",
+        "diff": "--- /private/tmp/cmm-round108-uranium-research/publication-audit-initial/cmm-round108-archive.py\n+++ /private/tmp/cmm-round108-archive.py\n@@ -28,13 +28,13 @@\n     for p in sorted(T.iterdir()):\n      if p.name.startswith('cmm-round108-') and p.is_file() and not p.is_symlink() and p.suffix in ('.json','.md','.py','.log') and p.name!='cmm-round108-archive-receipt.json':copy(p,archive/'receipts'/p.name)\n     selected=[]\n-    for name in ('cmm-round108-release-review','cmm-round108-hosted-final','cmm-round108-operational-guard-audit','cmm-round108-hosted-independent','cmm-round108-helper-audit'):\n+    for name in ('cmm-round108-release-review','cmm-round108-hosted-final','cmm-round108-operational-guard-audit','cmm-round108-hosted-independent','cmm-round108-helper-audit', 'cmm-round108-uranium-research/publication-audit-initial', 'cmm-round108-uranium-research/publication-audit-successor'):\n      root=T/name\n      if not root.exists():continue\n      assert root.is_dir() and not root.is_symlink();selected.append(str(root))\n      for p in sorted(root.rglob('*')):\n       if p.is_file() and not p.is_symlink() and p.suffix in ('.json','.md','.py','.log','.stderr','.diff','.txt'):copy(p,archive/name/p.relative_to(root))\n-    summary=f'''# Round107 publication receipt\n+    summary=f'''# Round108 publication receipt\n \n PR: {pr['html_url']}\n Merged commit: `{merge}`\n"
+      }
+    ],
+    "actual_issue_function_calls": [
+      [
+        [
+          "issue-777",
+          "repos/CultureBotAI/CMMMech/issues/777"
+        ],
+        {}
+      ],
+      [
+        [
+          "issue-777-comments",
+          "repos/CultureBotAI/CMMMech/issues/777/comments?per_page=100",
+          true
+        ],
+        {}
+      ],
+      [
+        [
+          "issue-777-events",
+          "repos/CultureBotAI/CMMMech/issues/777/events?per_page=100",
+          true
+        ],
+        {}
+      ]
+    ],
+    "tests": [
+      "actual issue function captures all three surfaces",
+      "issue events uses paginated endpoint",
+      "heading current round",
+      "only two exact raw audit directories added",
+      "added directory paths are relative without traversal",
+      "all operational archive guards unchanged",
+      "no other acquisition logic changed"
+    ],
+    "scope": "No main function, subprocess, Git or GitHub invoked."
+  },
+  "test_receipt": {
+    "path": "/private/tmp/cmm-round108-uranium-research/publication-audit-successor/probe-results.json",
+    "sha256": "fe1bc367abcc536350be0fc7f46f8210448d731607d8533edf52f919e6bc0c8e"
+  },
+  "limitations": [
+    "Only corrected acquisition/archive helpers reassessed; exact diff permits two fixes and the explicitly requested retention paths, with operational archive guards unchanged.",
+    "No final gates, commit/tree/PR or hosted success asserted; provisional config and corrected gate receipt substitutions remain future inputs.",
+    "Initial immutable28binding probes retained; no redundant corpus checks."
+  ]
+}

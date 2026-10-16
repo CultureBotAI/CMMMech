@@ -1,0 +1,345 @@
+schema_version: 1.0.0
+review_id: 20261016T015843Z-boracite-round108-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of boracite
+started_at: '2026-10-16T01:37:03.931768Z'
+finished_at: '2026-10-16T01:58:43.798491Z'
+reviewer:
+  identity: codex /root/round104_ree
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_borates; no edits
+    to the reviewed borate owner/history/dossier. Reviewer authored unrelated lanthanite-(La)
+    and lanthanite-(Ce) records. Source acquisition was shared, then original articles
+    and authority were independently inspected.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 26661b7f033d4bdb915e48e71080aa5774b4c3d6
+  state: working_tree
+  inputs:
+  - path: data/records/boracite.yaml
+    sha256: 07246fc293a22a34791f882a00b87bd16a351494fadaa20f421db9869b55f9c9
+    role: target
+  - path: history/records/boracite/2026-10-16T013317Z-codex-a18f42.yaml
+    sha256: b002ec9b5d590050a9af4045904d387d307c21668609f1e35cf835723fb41118
+    role: context
+  - path: research/sources/round108-borates/20261016T013530Z-source-investigation.json
+    sha256: 34625c3acab2974337e317fbecfe97b54b65241724a0153efd36f978bf5ddfb0
+    role: context
+  - path: research/sources/round108-borates/20261016T013530Z-source-investigation.md
+    sha256: 5507691dece703902f080e6fede6a37ad772fbd6466a71ca205de9cb006477c4
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:boracite
+  path: data/records/boracite.yaml
+  label: boracite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/boracite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/boracite/2026-10-16T013317Z-codex-a18f42.yaml
+    role: canonical_history
+scope:
+  description: Exact frozen boracite owner, source claims and canonical/inline creation
+    provenance; wider follow-up leads and hosted publication excluded.
+  selection: Assigned target captured with native inspect before independent scientific
+    assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:boracite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/boracite.yaml
+  locator: Complete exact working-tree bytes at /private/tmp/CMMMech-expansion-round108-20261016/data/records/boracite.yaml
+  accessed_at: '2026-10-16T01:58:43.798491Z'
+  support: supports
+  summary: Identity, scientific descriptions, source-level claims, mechanism scope
+    and inline CREATE independently checked.
+  snapshot_sha256: 07246fc293a22a34791f882a00b87bd16a351494fadaa20f421db9869b55f9c9
+- evidence_id: history
+  kind: record_content
+  reference: history/records/boracite/2026-10-16T013317Z-codex-a18f42.yaml
+  locator: Complete canonical CREATE at /private/tmp/CMMMech-expansion-round108-20261016/history/records/boracite/2026-10-16T013317Z-codex-a18f42.yaml
+  accessed_at: '2026-10-16T01:58:43.798491Z'
+  support: supports
+  summary: Actual actor codex, GPT-6/codex metadata, timestamp and target correspond
+    to this addition; inline and canonical events remain distinct.
+  snapshot_sha256: b002ec9b5d590050a9af4045904d387d307c21668609f1e35cf835723fb41118
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round108-borates/20261016T013530Z-source-investigation.json
+  locator: Paired source investigation; acquisition and access limits checked independently
+    against original artifacts. /private/tmp/CMMMech-expansion-round108-20261016/research/sources/round108-borates/20261016T013530Z-source-investigation.json
+  accessed_at: '2026-10-16T01:58:43.798491Z'
+  support: context_only
+  summary: Context for source provenance and deferred evidence; not a substitute for
+    the original papers.
+  snapshot_sha256: 34625c3acab2974337e317fbecfe97b54b65241724a0153efd36f978bf5ddfb0
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round108-ree-research/borate-review-search.json
+  locator: Four exact DOI/title correction/retraction queries; raw response retained.
+  accessed_at: '2026-10-16T01:58:43.798491Z'
+  support: context_only
+  summary: No affecting notice identified in returned sets. Known internal conflicts
+    remain explicit; no universal absence claim.
+  snapshot_sha256: 4b6e2815b72d51a975d6697b4d6c4dc9e78167e3d830abf257a59210f04f70d1
+  search_scope: First returned web sets for four queries recorded verbatim; two additional
+    2020 queries retained separately. Publisher metadata and secondary search snippets
+    were not scientific support.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round108-ree-research/borate-review-dedup.txt
+  locator: Hidden, ignored and followed search across worktree records, research,
+    reviews and history; curator broader dedup includes original-main ignored reports
+    and cited raw roots.
+  accessed_at: '2026-10-16T01:58:43.798491Z'
+  support: context_only
+  summary: No additional accepted owner identified in the stated current-record roots.
+    Hydroboracite substring matches, authority rows and research leads are context
+    rather than duplicate owners; curator broader dedup was inspected.
+  snapshot_sha256: 8f7a247efb4efe8ca73d1bf25e4d074d13615523240f70851635baca6ebebea7
+  search_scope: Bounded text roots and identifiers/DOIs recorded in paired search
+    receipt; not the whole filesystem or unextracted binary content.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round108-ree-research/borate-review-named-validation.json
+  locator: Independent two-owner strict validation with exact hashes and actual subprocess
+    timestamps.
+  accessed_at: '2026-10-16T01:58:43.798491Z'
+  support: supports
+  summary: Two records checked; zero failed. 2026-10-16T01:40:30.661978Z through 2026-10-16T01:40:37.951623Z
+  snapshot_sha256: 49cd43fd98de5bba1bfefebee50d225913d970fe2fe608d69a4cbc29de5d7e6c
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round108-final-gates-corrected.json
+  locator: Coordinator terminal receipt; base, worktree, exact four commands, successful
+    outcomes, unchanged owner hashes and log SHA256 independently verified. Log /private/tmp/cmm-round108-final-gates-corrected.log
+    SHA256 5c8e9ffb118d8290f52f07d9d3b3bd8b15c182730d381ebf391e682f0bf0f921
+  accessed_at: '2026-10-16T01:58:43.798491Z'
+  support: supports
+  summary: Actual completed local batch, not an inferred check or hosted publication
+    result.
+  snapshot_sha256: b537f2550a758f2e973b21f657129e0922fe41ea0cde632899d354d5bf11daf3
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.rruff.net/odr/view/downloadfile/72815
+  locator: Complete original 12-page Burns and Carpenter 1996 article independently
+    read and all pages visually checked, including Tables 1–6 and Figures 1–5; pp.
+    883–885 methods, Table 3 intervals, pp. 888–889 model limitations. /private/tmp/cmm-round108-borates-research/boracite1996.pdf
+  accessed_at: '2026-10-16T01:58:43.798491Z'
+  support: supports
+  summary: Natural Mg-rich EB/S4A/S4B observations support a bounded solid-state transition.
+    Fe-rich specimens and borrowed synthetic-endmember results are separate arms.
+  snapshot_sha256: 35248e41cca8bd9884c5f13216ca06207b2af106e58b97c72410f587cf407ebd
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 official IMA list, p. 1 definitions and p. 28 Boracite row,
+    independently viewed; freshly acquired same-edition authority hash matches the
+    reviewer's independent REE download. /private/tmp/cmm-round108-borates-research/ima2026-09.pdf
+  accessed_at: '2026-10-16T01:58:43.798491Z'
+  support: supports
+  summary: Mg3B7O13Cl; grandfathered status G and historical year 1789. The year is
+    not an approval accession; species remains distinct from its group, Fe-rich analogues
+    and elemental boron.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/boracite.yaml data/records/larderellite.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Two records checked with zero failures; subprocess receipt and exact hashes
+    verified.
+  target_ids:
+  - cmmmech:boracite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Final batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T01:49:02.417308+00:00 through 2026-10-16T01:56:53.802683+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:boracite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Final batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T01:56:53.804308+00:00 through 2026-10-16T01:57:25.194808+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:boracite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Final batch command 3
+  command: uv run --locked cmmmech validate-history --base 26661b7f033d4bdb915e48e71080aa5774b4c3d6
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T01:57:25.238299+00:00 through 2026-10-16T01:57:57.366084+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:boracite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Final batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T01:57:57.367958+00:00 through 2026-10-16T01:58:25.187030+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:boracite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species and natural specimens
+  outcome: supported
+  summary: Current IMA and the original distinguish Mg-rich natural boracite from
+    trembathite/congolite. EB is an England specimen of unknown exact locality; S4A/S4B
+    are CMN F93-20-4 from New Brunswick evaporites. The museum number is source provenance,
+    not an independently verified controlled identifier.
+  target_ids:
+  - cmmmech:boracite
+  evidence_ids:
+  - record
+  - ima
+  - primary
+- assessment_id: chemistry
+  area: evidence
+  topic: Measured versus calculated chemistry
+  outcome: supported
+  summary: Table 2 uses electron-probe Mg/Fe/Mn/Cl analyses, stoichiometric B2O3 and
+    normalization of Mg+Fe+Mn to three. The record retains the 105.39 wt% EB analytical
+    total and does not portray calculated boron as an assay. The summary composition
+    (Mg2.83Fe0.17)B7O13Cl is reported for the natural EB arm.
+  target_ids:
+  - cmmmech:boracite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: conditions
+  area: evidence
+  topic: Distinct optical and diffraction measurements
+  outcome: supported
+  summary: Approximately 30-micrometre optical sections on a Linkam stage have a stated
+    2 °C calibration uncertainty. Separate ground-powder/Si/Pt-strip measurements
+    have 10 °C temperature uncertainty and about three-hour scans. Table 3 values
+    272±5, 287±3 and 283±2 °C are onset/completion ranges associated with zoning,
+    not replicate errors or diffraction calibration uncertainties. Unreported heating
+    rate and atmosphere remain unspecified.
+  target_ids:
+  - cmmmech:boracite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: outcome
+  area: evidence
+  topic: Solid-state transition rather than extraction
+  outcome: supported
+  summary: Optical symmetry change and powder unit-cell discontinuities support the
+    orthorhombic/cubic transition. Approximate 0.12% EB and 0.06% S4A cell-volume
+    increases on cooling are faithfully attributed and are not boron recovery fractions.
+    Warm-water host-halite removal was preparation, not an extraction assay.
+  target_ids:
+  - cmmmech:boracite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: conflicts
+  area: consistency
+  topic: Model and broader-series limits
+  outcome: supported
+  summary: Cubic constraints on low-symmetry powder fits, unresolved alternative Landau
+    expansions and imperfect agreement of the Fe-rich trend with optical evidence
+    remain explicit. The previous-study 264 °C synthetic value and Fe-rich species
+    observations are not relabelled as new natural boracite results.
+  target_ids:
+  - cmmmech:boracite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: scope
+  area: scope
+  topic: No inherited criticality or biological deployment
+  outcome: supported
+  summary: The record asserts an abiotic laboratory transformation only. It assigns
+    no criticality list, microorganism, mineral dissolution, isolated-product recovery
+    or industrial deployment unsupported by the original.
+  target_ids:
+  - cmmmech:boracite
+  evidence_ids:
+  - record
+  - primary
+  - ima
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen inputs and completed checks
+  outcome: supported
+  summary: Native inspection captured exact owner/dossier/schema bytes before judgment;
+    unchanged canonical histories named in owner_paths were added explicitly in a
+    subsequent native context capture. Original and additive captures are preserved;
+    all bound inputs remain unchanged. Independent named validation and actual coordinator
+    batch/history checks passed. Saved-review validation and publication are later
+    gates.
+  target_ids:
+  - cmmmech:boracite
+  evidence_ids:
+  - record
+  - history
+  - dossier
+  - named
+  - batch
+findings: []
+actions: []
+summary: Qualified acceptance of distinct boracite identity and specimen-specific
+  abiotic laboratory phase-transition evidence; no supported corrective owner defect.
+limitations:
+- Raw diffraction/optical measurements and an independent stoichiometry assay were
+  not acquired; no re-refinement, uncertainty reconstruction or fitted-model selection
+  was performed.
+- The full 1996 paper reports no DOI established by this investigation. The distinct
+  1997 infrared follow-up was not independently acquired or used as direct support.
+- The analytical total, assumed boron stoichiometry, powder constraints and broader-series
+  model disagreement remain source limitations rather than silently repaired measurements.
+- Shared source acquisition is disclosed. Bounded correction and hidden/ignored dedup
+  searches do not establish exhaustive absence.
+- Working-tree review at the retained base. Record validation is separate from scientific
+  truth; native review-check and committed-head/hosted publication remain separate.
+notes:
+- No owner/history correction was needed; unavailable originals and retained internal
+  source conflicts are limitations, not invented corrective defects.
+- No self-authored REE record is scientifically reviewed in this observation.

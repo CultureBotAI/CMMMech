@@ -1,0 +1,127 @@
+{
+  "started_at": "2026-10-16T01:40:12.086754+00:00",
+  "finished_at": "2026-10-16T01:41:45.366645+00:00",
+  "reviewer": {
+    "identity": "codex /root/round104_uranium",
+    "model": "GPT-6",
+    "independence": "Independently inspected coordinator session-helper adaptations; authored unrelated uranyl owners and this review, not the audited helpers."
+  },
+  "base": "26661b7f033d4bdb915e48e71080aa5774b4c3d6",
+  "worktree": "/private/tmp/CMMMech-expansion-round108-20261016",
+  "scope": "Bounded read-only review of twelve round108 publication helpers and provisional config; no helper main(), external mutation, or original-main environment command executed.",
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round108-publication-guards.py",
+      "snapshot": "/private/tmp/cmm-round108-uranium-research/publication-audit-initial/cmm-round108-publication-guards.py",
+      "sha256": "ff58c3336f0b2e3ac6bec7b8385373e5aa5f2afc79fb4d2953545e81cd4c020c"
+    },
+    {
+      "path": "/private/tmp/cmm-round108-commit.py",
+      "snapshot": "/private/tmp/cmm-round108-uranium-research/publication-audit-initial/cmm-round108-commit.py",
+      "sha256": "11d6a3fd218d4481e440da9602679dc8cc5b0dee0689bff5f2d85b7485dd3197"
+    },
+    {
+      "path": "/private/tmp/cmm-round108-push-pr.py",
+      "snapshot": "/private/tmp/cmm-round108-uranium-research/publication-audit-initial/cmm-round108-push-pr.py",
+      "sha256": "0cb805937ba7315e2dc3fa78e08d9132d636d4bd058945eca879e93de628d50b"
+    },
+    {
+      "path": "/private/tmp/cmm-round108-isolated-verification.py",
+      "snapshot": "/private/tmp/cmm-round108-uranium-research/publication-audit-initial/cmm-round108-isolated-verification.py",
+      "sha256": "62de64c58bf981ffe732234424155cf96a4465b08b0c420f7a926f15b081b97e"
+    },
+    {
+      "path": "/private/tmp/cmm-round108-isolated-coverage.py",
+      "snapshot": "/private/tmp/cmm-round108-uranium-research/publication-audit-initial/cmm-round108-isolated-coverage.py",
+      "sha256": "d9044942d3e335d92003af6f642596fa82f8e0ca8644d7e3141b4fcfc3899bd7"
+    },
+    {
+      "path": "/private/tmp/cmm-round108-queue.py",
+      "snapshot": "/private/tmp/cmm-round108-uranium-research/publication-audit-initial/cmm-round108-queue.py",
+      "sha256": "28b2190b07bda373d712bada465ba741f5e1dba1ef502d1fff6d1f11be915f09"
+    },
+    {
+      "path": "/private/tmp/cmm-round108-cleanup.py",
+      "snapshot": "/private/tmp/cmm-round108-uranium-research/publication-audit-initial/cmm-round108-cleanup.py",
+      "sha256": "97601c44e2f4b9e64736497e94df48656791f3b62913b78d34fbae5dbdbdd895"
+    },
+    {
+      "path": "/private/tmp/cmm-round108-post-review.py",
+      "snapshot": "/private/tmp/cmm-round108-uranium-research/publication-audit-initial/cmm-round108-post-review.py",
+      "sha256": "c0ba47e9891f9dbe5aafd75f6acde849ce193778c2435997dbc1f79f5f2beb78"
+    },
+    {
+      "path": "/private/tmp/cmm-round108-release-acquire.py",
+      "snapshot": "/private/tmp/cmm-round108-uranium-research/publication-audit-initial/cmm-round108-release-acquire.py",
+      "sha256": "781fda90b261cc2a8094a1ac81fe335c66c4b1e8283b92a53d914eb506a10b24"
+    },
+    {
+      "path": "/private/tmp/cmm-round108-finalize.py",
+      "snapshot": "/private/tmp/cmm-round108-uranium-research/publication-audit-initial/cmm-round108-finalize.py",
+      "sha256": "1de70d831606f6028b49cb32c78fb257e6f6b9f1a4df8e5768c14e4d0a778652"
+    },
+    {
+      "path": "/private/tmp/cmm-round108-hosted-final-collector.py",
+      "snapshot": "/private/tmp/cmm-round108-uranium-research/publication-audit-initial/cmm-round108-hosted-final-collector.py",
+      "sha256": "9416c75b287fd9dea5516f01a2e202586c737376c22f5a8fce551c0e7f93fc7e"
+    },
+    {
+      "path": "/private/tmp/cmm-round108-archive.py",
+      "snapshot": "/private/tmp/cmm-round108-uranium-research/publication-audit-initial/cmm-round108-archive.py",
+      "sha256": "653c4eb235d837d749017a2818b4a6b19d697023c2c29a0c941e7216e00f3681"
+    },
+    {
+      "path": "/private/tmp/cmm-round108-helper-config.json",
+      "snapshot": "/private/tmp/cmm-round108-uranium-research/publication-audit-initial/cmm-round108-helper-config.json",
+      "sha256": "a4d59e06d20619dc24dacce49731f3ae123c338865cff1cbc3ae918ad413c57c"
+    }
+  ],
+  "tests": {
+    "path": "/private/tmp/cmm-round108-uranium-research/publication-audit-initial/probe.py",
+    "sha256": "4f831cf032be23068b0a391a6eef6eb29bbd904de1a3316cc279d711418e2fe2",
+    "receipt": "/private/tmp/cmm-round108-uranium-research/publication-audit-initial/probe-results.json",
+    "receipt_sha256": "3a515e492dd358f253c65b06d710d6a9d3ba3f7e32326300a98125e786f78bcd",
+    "passed": true,
+    "count": 28
+  },
+  "findings": [
+    {
+      "id": "PUB108-1",
+      "severity": "minor",
+      "path": "/private/tmp/cmm-round108-release-acquire.py",
+      "locator": "issue(n), `if n in []`",
+      "finding": "No issue events are ever acquired before the independent release assessment. This is a concrete disabled collection branch, not an inference from missing remote data.",
+      "proof": [
+        "issue-777",
+        "issue-777-comments"
+      ],
+      "acceptance": "Request paginated events for every source and corrective issue, preserve all raw pages/query receipts, and run an inert actual-function probe demonstrating issue, comments and events for an arbitrary issue number."
+    },
+    {
+      "id": "PUB108-2",
+      "severity": "minor",
+      "path": "/private/tmp/cmm-round108-archive.py",
+      "locator": "generated README summary heading",
+      "finding": "The round108 archive is labelled Round107 publication receipt.",
+      "acceptance": "Generate Round108 in the heading and verify no Round107 publication heading remains in the current helper bytes, while keeping operational archive guards unchanged."
+    }
+  ],
+  "verdict": "needs_changes",
+  "positive_checks": [
+    "Current base and topic branch bound throughout operational gates; exact commit/tree receipts, local and remote origin checks, reviewed file hashes, review/discussion checks, live main check immediately before queue admission.",
+    "Queue and cleanup actual binding functions reject provisional counts, cross-round base/branch, malformed head, changed helper digests, unfinished PR receipt, mismatched repository/head/base/body and unsafe file paths in inert probes.",
+    "Cleanup verifies merged tree and single parent, retained topic head, clean worktree and expected issue dispositions before deleting only the expected remote ref with exact-head lease and local ref with compare-and-swap. Worktree remains detached and historical evidence tag remains unchanged.",
+    "Finalizer contains the expected preservation SHA ed62a05a29c7967fe05640fdc8c6d7aef0c69849a02b33ac65538b79767f5807, pre/post byte/mode/symlink checks, collision rejection and --ff-only --no-overwrite-ignore. Main operations are Git and preservation/archive filesystem operations; project/uv/environment commands occur only in isolated clones.",
+    "Archive checks its new ignored directory and refuses occupied archive paths; source and destination bytes are verified.",
+    "Final collector binds receipts, validates actual merge tree/parent and queue ancestry, retains five workflow latest attempts/jobs/checks/annotations, nested review-thread pagination, discussion and every issue event surface."
+  ],
+  "limitations": [
+    "Config counts/status remain intentionally provisional; no commitment, hosted pass, issue disposition, or readiness is certified. Future measured report and actual identity receipts still require coordinator binding and final release assessment.",
+    "Release GraphQL contains historical literal 417 only as a template immediately replaced by actual prn; no active request uses that number. Prefer neutral placeholder for readability, but this is not classified as a wrong-PR request.",
+    "Collector aggregate pass presently checks run/attempt/job conclusions; independent final hosted assessment must also inspect retained check conclusions and all annotations, not trust aggregate alone.",
+    "No full network or mutation integration test; probes execute pure definitions only. No global absence claim or source exhaustion claim."
+  ],
+  "unresolved_questions": [
+    "Actual topic/head/tree/PR and measured counts do not yet exist; publication remains blocked on future successful receipts."
+  ]
+}
