@@ -1,0 +1,368 @@
+schema_version: 1.0.0
+review_id: 20261016T044107Z-alicewilsonite-yce-round111-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Alicewilsonite-(YCe)
+started_at: '2026-10-16T04:31:06.934289Z'
+finished_at: '2026-10-16T04:41:07.921170Z'
+reviewer:
+  identity: codex /root/round104_borates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_ree. No target owner/history/dossier
+    edits. Reviewer authored unrelated ginorite/sulfoborite records. Shared original
+    acquisitions disclosed; primary text and relevant figures/tables independently
+    assessed after native capture.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Species identity, material boundaries and the stated experimental or observational
+  scope are supported. No corrective owner finding in this review.
+source:
+  git_revision: 6a43774bf15a206b04e59c7525e93fdb334325d6
+  state: working_tree
+  inputs:
+  - path: data/records/alicewilsonite-yce.yaml
+    sha256: 32da51cf9109f74a8eb40c15162279992015977a5edf41047eb5eac8f379182b
+    role: target
+  - path: history/records/alicewilsonite-yce/2026-10-16T042751Z-codex-root-round104-ree-c7c944.yaml
+    sha256: 69c1276f4c71b2915ab6f88301dafbfb9efab06aca1b7e87054920e11a0513d8
+    role: context
+  - path: research/sources/round111-ree/20261016T043038Z-source-investigation.json
+    sha256: 3c8e22c583de26b23d6fabe6b91b1d29e938446107f62b832ed19f8aed0d8604
+    role: context
+  - path: research/sources/round111-ree/20261016T043038Z-source-investigation.md
+    sha256: 4d9b1c755ad904c8e21ff039e8b85b31f846ae7350ab2b90be5d0fba72e2b618
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:alicewilsonite-yce
+  path: data/records/alicewilsonite-yce.yaml
+  label: Alicewilsonite-(YCe)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/alicewilsonite-yce.yaml
+    role: maintained record
+scope:
+  description: Complete assigned owner, identity, primary evidence, experimental/observational
+    limits and history. Other records and publication operations excluded.
+  selection: Assigned frozen owner; native capture before assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:alicewilsonite-yce
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate --require-records data/records/donnayite-y.yaml
+    data/records/alicewilsonite-yce.yaml
+  status: passed
+  required: true
+  summary: Checked 2 record(s); 0 failed. Actual 2026-10-16T04:33:53.097986+00:00
+    through 2026-10-16T04:33:56.686702+00:00
+  target_ids:
+  - cmmmech:alicewilsonite-yce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Completed coordinator batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T04:36:05.485483+00:00 through 2026-10-16T04:40:25.687272+00:00
+    in /private/tmp/CMMMech-expansion-round111-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:alicewilsonite-yce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Completed coordinator batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T04:40:25.687294+00:00 through 2026-10-16T04:40:36.144648+00:00
+    in /private/tmp/CMMMech-expansion-round111-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:alicewilsonite-yce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch command 3
+  command: uv run --locked cmmmech validate-history --base 6a43774bf15a206b04e59c7525e93fdb334325d6
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T04:40:36.144671+00:00 through 2026-10-16T04:40:41.989848+00:00
+    in /private/tmp/CMMMech-expansion-round111-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:alicewilsonite-yce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T04:40:41.989868+00:00 through 2026-10-16T04:40:46.832464+00:00
+    in /private/tmp/CMMMech-expansion-round111-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:alicewilsonite-yce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/alicewilsonite-yce.yaml
+  locator: Complete frozen owner, captured before assessment.
+  accessed_at: '2026-10-16T04:41:07.921170Z'
+  support: supports
+  summary: Current IMA p. 6 verifies approved IMA 2020-055 and Na2Sr2YCe(CO3)6(H2O)3.
+    The paired suffix denotes dominant cations at separate sites, not bulk concentration
+    ranking. Species remains distinct from donnayite-(Y), the La species, elements
+    and mixed ores.
+  snapshot_sha256: 32da51cf9109f74a8eb40c15162279992015977a5edf41047eb5eac8f379182b
+- evidence_id: history
+  kind: record_content
+  reference: history/records/alicewilsonite-yce/2026-10-16T042751Z-codex-root-round104-ree-c7c944.yaml
+  locator: Canonical CREATE plus distinct inline event; actor, target and actual timestamps
+    checked.
+  accessed_at: '2026-10-16T04:41:07.921170Z'
+  support: supports
+  summary: Codex/GPT-6 metadata and new-owner provenance are supported.
+  snapshot_sha256: 69c1276f4c71b2915ab6f88301dafbfb9efab06aca1b7e87054920e11a0513d8
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions p. 1 and rows pp.6/59 visually checked; independent borate-lane
+    authority acquisition has the same current SHA256.
+  accessed_at: '2026-10-16T04:41:07.921170Z'
+  support: supports
+  summary: Species names, formulas and identifier scopes verified.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round111-ree/20261016T043038Z-source-investigation.json
+  locator: Full paired source dossier, original acquisitions and final freeze independently
+    inspected.
+  accessed_at: '2026-10-16T04:41:07.921170Z'
+  support: context_only
+  summary: Context supports provenance; it is not a substitute for originals.
+  snapshot_sha256: 3c8e22c583de26b23d6fabe6b91b1d29e938446107f62b832ed19f8aed0d8604
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round111-borates-research/review-ree-web.json
+  locator: Independent exact DOI correction/erratum/retraction queries and direct
+    publisher opens on 2026-10-16.
+  accessed_at: '2026-10-16T04:41:07.921170Z'
+  support: context_only
+  summary: No affecting correction identified in returned sets; bounded search only.
+  snapshot_sha256: eb5a101eaa7fe32c5945de3aa659a1af338df9083c65ff64d807b7bc43612ddb
+  search_scope: Exact two 2023 DOI notice queries; first returned sets and primary
+    publisher landing pages, not exhaustive literature coverage.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round111-borates-research/review-ree-dedup.json
+  locator: 84 context lines in current records/research/reviews/history.
+  accessed_at: '2026-10-16T04:41:07.921170Z'
+  support: context_only
+  summary: No distinct duplicate owner found within this bounded current text scope;
+    curator broader precreation inventory independently read.
+  snapshot_sha256: 5e36631c48f05787ff4e9cfa69ad2b6466e6a3745cc87d639a561a5faa06fb3c
+  search_scope: rg --no-ignore --hidden --follow over named W roots; donnayite/alicewilsonite
+    names, exact DOIs and IMA:2020-055. Ignored files included; no machine-wide absence
+    claim.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round111-borates-research/review-ree-named-validation.json
+  locator: Actual independent named validation, exact current target hashes.
+  accessed_at: '2026-10-16T04:41:07.921170Z'
+  support: supports
+  summary: Two records checked, zero failures.
+  snapshot_sha256: c0ae6a079235bcb25f5a3ac0c449ba7c410a8f6fa39da81bf7cfd600f40776dc
+- evidence_id: baseline
+  kind: validation
+  reference: /private/tmp/cmm-round111-baseline.json
+  locator: Completed initial baseline, retained log hash 78c9567b3cb9b67ae8fc1324dbaf6458a1bb8b5e9eff4765e8b84e6c7941ddd9
+  accessed_at: '2026-10-16T04:41:07.921170Z'
+  support: context_only
+  summary: Baseline context, not final-state validation.
+  snapshot_sha256: 3ab645b29b9438a269b1dfd736ac5c2d7fb19e3165d1fb691fb2d2b8bf387413
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round111-final-gates-v2.json
+  locator: Actual four-command final batch, base/cwd/unique rows/zero exits/unchanged
+    target hashes; log hash 5682a14ac6f0d897ab8524672ad383066384e67aa5eb4ee6de3cc794f7850346
+  accessed_at: '2026-10-16T04:41:07.921170Z'
+  support: supports
+  summary: Required batch checks passed. Later native whole-corpus and publication
+    gates are separate.
+  snapshot_sha256: babf8dd6e86e7b0c056b2cfd8b2e10e1b6084b49f09016eea4258ff71734a516
+- evidence_id: original
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-35-143-2023
+  locator: Full 13-page original read; Figures 1–6, Tables1–5 and discussion pp. 152–153
+    independently checked. Methods p. 146, chemistry p. 147, IR/HCl p. 148 and structure
+    pp. 150–151.
+  accessed_at: '2026-10-16T04:41:07.921170Z'
+  support: supports
+  summary: The full original pp. 144–148, Figures 1–4 and Table 1 support holotype
+    CMNMC 53660, an alicewilsonite outer rim surrounding donnayite/gaidonnayite, with
+    the SXRD grain selected from the rim. WDS used 20 kV, 10 nA, 20–50 micrometre
+    beams and time-dependent intensity correction. The six-analysis means 8.52 wt%
+    Y2O3 and 9.52 wt% Ce2O3 are not bulk mixed-crystal or recovery values. Water and
+    CO2 are calculated because insufficient pure phase could be separated; IR qualitatively
+    supports water. No controlled mechanism is curated. The 293 K P 1 model rounded
+    R1=0.055 and inversion twin 87:13 are supported by Table 3 and CIF. Figures 5–6,
+    Table 4 and CIF preserve omitted Ca, proxy Ce/Dy and unlocated hydrogen. Prose
+    Sr1 Ce0.23 differs from Table 4/CIF 0.22; Rint 0.062 differs from CIF 0.0394,
+    also printed beside unique reflections. Geological replacement is an interpretation,
+    and qualitative room-temperature HCl effervescence has no concentration, duration
+    or recovery denominator.
+  snapshot_sha256: d783f7c74f4708ebcdd212d391aff0055a038a1c4ae921d00e819e99b409a47f
+- evidence_id: cif
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-35-143-2023-supplement
+  locator: Official Supplement/alicewilsonite-(YCe).cif, Sr1/Ce1 sites, hydrogen validation
+    response and agreement metadata; numeric XY file availability.
+  accessed_at: '2026-10-16T04:41:07.921170Z'
+  support: supports
+  summary: CIF supports qualified model; confirms Ce1=.22, R-equivalents=.0394 and
+    explicitly missing hydrogen added manually to formula.
+  snapshot_sha256: a0c3fc52dbdbf55af8a7a5c83f61092bd1509d60a7ab1c764c3788ddd70d2ecd
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species identity and scope
+  outcome: supported
+  summary: Current IMA p. 6 verifies approved IMA 2020-055 and Na2Sr2YCe(CO3)6(H2O)3.
+    The paired suffix denotes dominant cations at separate sites, not bulk concentration
+    ranking. Species remains distinct from donnayite-(Y), the La species, elements
+    and mixed ores.
+  target_ids:
+  - cmmmech:alicewilsonite-yce
+  evidence_ids:
+  - record
+  - ima
+- assessment_id: natural
+  area: evidence
+  topic: Natural characterization and measurement provenance
+  outcome: supported
+  summary: The full original pp. 144–148, Figures 1–4 and Table 1 support holotype
+    CMNMC 53660, an alicewilsonite outer rim surrounding donnayite/gaidonnayite, with
+    the SXRD grain selected from the rim. WDS used 20 kV, 10 nA, 20–50 micrometre
+    beams and time-dependent intensity correction. The six-analysis means 8.52 wt%
+    Y2O3 and 9.52 wt% Ce2O3 are not bulk mixed-crystal or recovery values. Water and
+    CO2 are calculated because insufficient pure phase could be separated; IR qualitatively
+    supports water.
+  target_ids:
+  - cmmmech:alicewilsonite-yce
+  evidence_ids:
+  - record
+  - original
+- assessment_id: mechanism
+  area: evidence
+  topic: Experiment, observation and causal limits
+  outcome: supported
+  summary: No controlled mechanism is curated. The 293 K P 1 model rounded R1=0.055
+    and inversion twin 87:13 are supported by Table 3 and CIF. Figures 5–6, Table
+    4 and CIF preserve omitted Ca, proxy Ce/Dy and unlocated hydrogen. Prose Sr1 Ce0.23
+    differs from Table 4/CIF 0.22; Rint 0.062 differs from CIF 0.0394, also printed
+    beside unique reflections. Geological replacement is an interpretation, and qualitative
+    room-temperature HCl effervescence has no concentration, duration or recovery
+    denominator.
+  target_ids:
+  - cmmmech:alicewilsonite-yce
+  evidence_ids:
+  - record
+  - original
+  - cif
+  dimensions:
+  - name: material_form
+    value: Outer alicewilsonite-(YCe) rim of zoned holotype CMNMC 53660.
+    definition: Inner donnayite/gaidonnayite material is excluded from the selected
+      SXRD grain.
+    evidence_ids:
+    - original
+    - cif
+  - name: conditions
+    value: WDS at 20 kV, 10 nA, 20–50 micrometre beam; SXRD 293 K; qualitative HCl
+      at room temperature.
+    definition: No reported HCl concentration, contact duration or yield is invented.
+    evidence_ids:
+    - original
+    - cif
+  - name: outcome
+    value: Six-analysis oxide means and a constrained P1, 87:13 twin model.
+    definition: Characterization and qualitative dissolution, not isolated product
+      recovery.
+    evidence_ids:
+    - original
+    - cif
+- assessment_id: scope
+  area: evidence
+  topic: Criticality, microbial and deployment boundaries
+  outcome: supported
+  summary: No jurisdiction/list/edition criticality claim, microbial causation, ore
+    recovery efficiency or industrial deployment is asserted. iModulonDB does not
+    apply to this abiotic mineral evidence.
+  target_ids:
+  - cmmmech:alicewilsonite-yce
+  evidence_ids:
+  - record
+  - original
+  - cif
+- assessment_id: provenance
+  area: provenance
+  topic: Exact bytes, histories and completed checks
+  outcome: supported
+  summary: Captured inputs and frozen hashes are unchanged. Actual canonical/inline
+    events and completed checks support provenance.
+  target_ids:
+  - cmmmech:alicewilsonite-yce
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - dossier
+  - search
+  - dedup
+findings: []
+actions: []
+limitations:
+- The holotype is zoned; the selected rim crystal, six microprobe analyses and qualitative
+  IR cannot be treated as uniform bulk composition.
+- H2O and CO2 were not measured, and the poor-quality structure model lacks reliable
+  hydrogen positions and uses cation proxies.
+- Prose/table/CIF occupancy and agreement differences remain unresolved; no independent
+  diffraction refinement was performed.
+- Natural replacement relations and unquantified HCl dissolution do not establish
+  a controlled extraction or recovery process.
+- Bounded notice and identity searches do not establish exhaustive literature coverage.
+  Shared source acquisition is not independent experimental replication.
+- No criticality claim is made; omission does not mean the material is absent from
+  every criticality list.
+- Native whole-corpus review validation and exact-head publication checks are separate
+  later gates.
+notes:
+- Pre-judgment capture and actual command receipts retained externally. No maintained
+  target edits by this reviewer.
+- Qualified source limitations are not manufactured corrective findings.

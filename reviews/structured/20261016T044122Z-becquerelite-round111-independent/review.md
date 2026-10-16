@@ -1,0 +1,320 @@
+# Independent scientific review of becquerelite
+
+- Review: 20261016T044122Z-becquerelite-round111-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-16T04:35:26.620879Z
+- Finished UTC: 2026-10-16T04:41:22.016200Z
+- Reviewer: codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Narrow accepted scientific claims supported; original source inconsistencies and experimental limits retained. No maintained-record correction identified in this review scope.
+
+## Scope And Provenance
+
+Entire assigned owner/history and claim-bearing primary evidence; no experiment replication or diffraction re-refinement.
+
+Selection: Native inspect captured final working-tree inputs before acceptance.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 6a43774bf15a206b04e59c7525e93fdb334325d6.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:becquerelite | data/records/becquerelite.yaml | maintained | becquerelite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Completed batch gate 1 | passed | True | cmmmech:becquerelite | Terminal success and retained log verified; owner hash matches native capture. |
+| Completed batch gate 2 | passed | True | cmmmech:becquerelite | Terminal success and retained log verified; owner hash matches native capture. |
+| Completed batch gate 3 | passed | True | cmmmech:becquerelite | Terminal success and retained log verified; owner hash matches native capture. |
+| Completed batch gate 4 | passed | True | cmmmech:becquerelite | Terminal success and retained log verified; owner hash matches native capture. |
+
+## Scientific And Domain Assessments
+
+### Mineral identity and experimental material scope
+
+identity: supported. Targets: cmmmech:becquerelite.
+
+Current mineral formula and status are supported; specimens, synthetic analogues and adjacent minerals remain distinct.
+
+### Primary transformation and dissolution evidence
+
+evidence: supported. Targets: cmmmech:becquerelite.
+
+Condition-dependent acidic surface morphology is supported. The record separates synthesized2006 crystals from incompletely mapped2011 arms, pit change from mass-normalized release, and U-rich coatings from dissolution. Later XPS supports chemical environment, not pure mineral-product identity or quantified passivation; no microbial or industrial claim is inferred.
+
+### Curation and evidence provenance
+
+provenance: supported. Targets: cmmmech:becquerelite.
+
+Actual CREATE sidecar and separate inline event; raw versions and bounded search limits explicit.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/becquerelite.yaml; Entire native-inspected owner; local artifact /private/tmp/CMMMech-expansion-round111-20261016/data/records/becquerelite.yaml | supports | Exact owner bytes and every accepted scientific claim independently assessed. |
+| history0 | history/records/becquerelite/2026-10-16T042748Z-codex-d1861f.yaml; Canonical sidecar plus distinct inline event; local artifact /private/tmp/CMMMech-expansion-round111-20261016/history/records/becquerelite/2026-10-16T042748Z-codex-d1861f.yaml | supports | Actual actor/model, target, time and described curation match this change. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Current mineral rows PDF22 and194 independently visually inspected; local artifact /private/tmp/cmm-round111-uranium-research/ima202609.pdf | supports | Current species formula/status verified; no invented accession or inherited criticality. |
+| dossier | research/sources/round111-uranium/20261016T043005Z-source-investigation.json; Acquisition, dedup and source-boundary manifest; local artifact /private/tmp/CMMMech-expansion-round111-20261016/research/sources/round111-uranium/20261016T043005Z-source-investigation.json | context_only | Maintained scientific statements were independently checked against actual primary files; dossier is provenance context. |
+| search | Independent notice and contradiction search; Four exact DOI/title queries and hidden/ignored/followed full current record-tree search; local artifact /private/tmp/cmm-round111-uranium-independent-search.json | context_only | No affecting new notice in returned results; current owners distinct and shared1998 experiment explicitly cross-referenced. |
+| experiment | https://doi.org/10.2113/gscanmin.44.5.1207; Original pp1212,1213,1219 and1221-1223 text; PDF6 Table1 and PDF13 proof note visually inspected; Figures4-9 context; local artifact /private/tmp/cmm-round111-uranium-research/becquerelite2006-author.pdf | supports | Synthetic recipe, exposure volumes/durations, cation molarities and morphology directions agree. Equal normality does not imply equal ionic strength; proof-stage U-rich precipitation correction is retained. |
+| followup | https://doi.org/10.1524/ract.2011.1802; Methods pp80-82; original Figure2 PDF6 and Figure8/9 PDF10 visually inspected; Table3 and coating discussion pp88-92; local artifact /private/tmp/cmm-round111-uranium-research/integrated2011.pdf | supports | New in-situ/XPS observations are separated from reused2006 imaging.0/4/8/11min are relative to first image, fluid replaced every20min, and distinct coating-arm durations retained. Incomplete specimen mapping and phase assignment remain limits. |
+| batch | Completed exact-byte batch receipt; Terminal commands, base/cwd, log hash and final owner hash checked; local artifact /private/tmp/cmm-round111-final-gates-v2.json | supports | Required batch gates passed with scientific inputs unchanged. |
+
+## Limits And Additional Notes
+
+- Independent agent assessment is not external human peer review.
+- Claim-bearing original images and text checked; not every source page was independently visually reread.
+- Source formula/refinement/specimen conflicts remain explicitly unresolved; no inaccessible primary is accepted as inspected.
+- Bounded searches do not establish source exhaustion, and no experiment or structure refinement was replicated.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261016T044122Z-becquerelite-round111-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of becquerelite
+started_at: '2026-10-16T04:35:26.620879Z'
+finished_at: '2026-10-16T04:41:22.016200Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Separate uranium agent authored the owner/history; root curated
+    a different tailings record and independently assessed uranium primary evidence
+    and final bytes without editing the owners.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Narrow accepted scientific claims supported; original source inconsistencies
+  and experimental limits retained. No maintained-record correction identified in
+  this review scope.
+source:
+  git_revision: 6a43774bf15a206b04e59c7525e93fdb334325d6
+  state: working_tree
+  inputs:
+  - path: data/records/becquerelite.yaml
+    sha256: 7cb3bfb70ceb19783ec96f29b1a64bd489010e0fb0b5d8aa29d56f48a8acdd04
+    role: target
+  - path: history/records/becquerelite/2026-10-16T042748Z-codex-d1861f.yaml
+    sha256: 0433e3fd8d0304ff18abd80644795b1e733b122ed7abb590b314ace90b76cddd
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:becquerelite
+  path: data/records/becquerelite.yaml
+  label: becquerelite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/becquerelite.yaml
+    role: maintained_record
+scope:
+  description: Entire assigned owner/history and claim-bearing primary evidence; no
+    experiment replication or diffraction re-refinement.
+  selection: Native inspect captured final working-tree inputs before acceptance.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:becquerelite
+checks:
+- check_id: batch1
+  name: Completed batch gate 1
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal success and retained log verified; owner hash matches native capture.
+  target_ids:
+  - cmmmech:becquerelite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed batch gate 2
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal success and retained log verified; owner hash matches native capture.
+  target_ids:
+  - cmmmech:becquerelite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed batch gate 3
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 6a43774bf15a206b04e59c7525e93fdb334325d6
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal success and retained log verified; owner hash matches native capture.
+  target_ids:
+  - cmmmech:becquerelite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed batch gate 4
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal success and retained log verified; owner hash matches native capture.
+  target_ids:
+  - cmmmech:becquerelite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/becquerelite.yaml
+  locator: Entire native-inspected owner; local artifact /private/tmp/CMMMech-expansion-round111-20261016/data/records/becquerelite.yaml
+  accessed_at: '2026-10-16T04:41:22.016200Z'
+  snapshot_sha256: 7cb3bfb70ceb19783ec96f29b1a64bd489010e0fb0b5d8aa29d56f48a8acdd04
+  support: supports
+  summary: Exact owner bytes and every accepted scientific claim independently assessed.
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/becquerelite/2026-10-16T042748Z-codex-d1861f.yaml
+  locator: Canonical sidecar plus distinct inline event; local artifact /private/tmp/CMMMech-expansion-round111-20261016/history/records/becquerelite/2026-10-16T042748Z-codex-d1861f.yaml
+  accessed_at: '2026-10-16T04:41:22.016200Z'
+  snapshot_sha256: 0433e3fd8d0304ff18abd80644795b1e733b122ed7abb590b314ace90b76cddd
+  support: supports
+  summary: Actual actor/model, target, time and described curation match this change.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Current mineral rows PDF22 and194 independently visually inspected; local
+    artifact /private/tmp/cmm-round111-uranium-research/ima202609.pdf
+  accessed_at: '2026-10-16T04:41:22.016200Z'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  support: supports
+  summary: Current species formula/status verified; no invented accession or inherited
+    criticality.
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round111-uranium/20261016T043005Z-source-investigation.json
+  locator: Acquisition, dedup and source-boundary manifest; local artifact /private/tmp/CMMMech-expansion-round111-20261016/research/sources/round111-uranium/20261016T043005Z-source-investigation.json
+  accessed_at: '2026-10-16T04:41:22.016200Z'
+  snapshot_sha256: 4ad55740de3344ad5c29cb84e8f66af58b35c02c07f6e7bd3100bd5e552989a8
+  support: context_only
+  summary: Maintained scientific statements were independently checked against actual
+    primary files; dossier is provenance context.
+- evidence_id: search
+  kind: search
+  reference: Independent notice and contradiction search
+  locator: Four exact DOI/title queries and hidden/ignored/followed full current record-tree
+    search; local artifact /private/tmp/cmm-round111-uranium-independent-search.json
+  accessed_at: '2026-10-16T04:41:22.016200Z'
+  snapshot_sha256: 6559b0f16e62124cd85cc80a4d9f59ff7b2b48b935c9fee593ab626dc210e318
+  support: context_only
+  summary: No affecting new notice in returned results; current owners distinct and
+    shared1998 experiment explicitly cross-referenced.
+  search_scope: Web first returned windows on2026-10-16; local data/records tree includes
+    hidden/ignored and symlinks. Not exhaustive global literature clearance.
+- evidence_id: experiment
+  kind: primary_source
+  reference: https://doi.org/10.2113/gscanmin.44.5.1207
+  locator: Original pp1212,1213,1219 and1221-1223 text; PDF6 Table1 and PDF13 proof
+    note visually inspected; Figures4-9 context; local artifact /private/tmp/cmm-round111-uranium-research/becquerelite2006-author.pdf
+  accessed_at: '2026-10-16T04:41:22.016200Z'
+  snapshot_sha256: 543ce1e24174bcb9afcb8f5ad7aba16262516e0bda410160366d79543738b735
+  support: supports
+  summary: Synthetic recipe, exposure volumes/durations, cation molarities and morphology
+    directions agree. Equal normality does not imply equal ionic strength; proof-stage
+    U-rich precipitation correction is retained.
+- evidence_id: followup
+  kind: primary_source
+  reference: https://doi.org/10.1524/ract.2011.1802
+  locator: Methods pp80-82; original Figure2 PDF6 and Figure8/9 PDF10 visually inspected;
+    Table3 and coating discussion pp88-92; local artifact /private/tmp/cmm-round111-uranium-research/integrated2011.pdf
+  accessed_at: '2026-10-16T04:41:22.016200Z'
+  snapshot_sha256: 2a9da721bba320bd2a905f60faeba4bcd319f2dcc8a28c68378cb4fc54b61387
+  support: supports
+  summary: New in-situ/XPS observations are separated from reused2006 imaging.0/4/8/11min
+    are relative to first image, fluid replaced every20min, and distinct coating-arm
+    durations retained. Incomplete specimen mapping and phase assignment remain limits.
+- evidence_id: batch
+  kind: validation
+  reference: Completed exact-byte batch receipt
+  locator: Terminal commands, base/cwd, log hash and final owner hash checked; local
+    artifact /private/tmp/cmm-round111-final-gates-v2.json
+  accessed_at: '2026-10-16T04:41:22.016200Z'
+  snapshot_sha256: babf8dd6e86e7b0c056b2cfd8b2e10e1b6084b49f09016eea4258ff71734a516
+  support: supports
+  summary: Required batch gates passed with scientific inputs unchanged.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral identity and experimental material scope
+  outcome: supported
+  summary: Current mineral formula and status are supported; specimens, synthetic
+    analogues and adjacent minerals remain distinct.
+  target_ids:
+  - cmmmech:becquerelite
+  evidence_ids:
+  - owner
+  - ima
+- assessment_id: science
+  area: evidence
+  topic: Primary transformation and dissolution evidence
+  outcome: supported
+  summary: Condition-dependent acidic surface morphology is supported. The record
+    separates synthesized2006 crystals from incompletely mapped2011 arms, pit change
+    from mass-normalized release, and U-rich coatings from dissolution. Later XPS
+    supports chemical environment, not pure mineral-product identity or quantified
+    passivation; no microbial or industrial claim is inferred.
+  target_ids:
+  - cmmmech:becquerelite
+  evidence_ids:
+  - owner
+  - experiment
+- assessment_id: provenance
+  area: provenance
+  topic: Curation and evidence provenance
+  outcome: supported
+  summary: Actual CREATE sidecar and separate inline event; raw versions and bounded
+    search limits explicit.
+  target_ids:
+  - cmmmech:becquerelite
+  evidence_ids:
+  - history0
+  - dossier
+  - search
+findings: []
+actions: []
+limitations:
+- Independent agent assessment is not external human peer review.
+- Claim-bearing original images and text checked; not every source page was independently
+  visually reread.
+- Source formula/refinement/specimen conflicts remain explicitly unresolved; no inaccessible
+  primary is accepted as inspected.
+- Bounded searches do not establish source exhaustion, and no experiment or structure
+  refinement was replicated.
+```

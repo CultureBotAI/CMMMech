@@ -8,13 +8,20 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 555 material records.
+The catalogue currently contains 562 material records.
 
-The [latest curation report](research/ingests/round110-frontier-20261016.md) links
+The [latest curation report](research/ingests/round111-frontier-20261016.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Schoepite](data/records/schoepite.yaml) | Current mineral identity and natural-crystal alteration | Revised symmetry, mixed products and conflicting CIF metadata retained |
+| [Becquerelite](data/records/becquerelite.yaml) | Abiotic surface dissolution and later coating characterization | Synthetic specimens, reused experiments and secondary precipitation kept distinct |
+| [Donnayite-(Y)](data/records/donnayite-y.yaml) | Revised natural-mineral identity and structure | Historical cotype reassignments and different analytical specimens retained |
+| [Alicewilsonite-(YCe)](data/records/alicewilsonite-yce.yaml) | Natural identity, chemistry and crystal structure | Zoned specimen and calculated volatile components; no extraction claim |
+| [Ginorite](data/records/ginorite.yaml) | Natural identity, structure and specimen-specific thermal response | Source temperature conflicts and unverified thermal product sequence |
+| [Sulfoborite](data/records/sulfoborite.yaml) | Natural mineral identity and published crystal structure | Current variable OH/F formula differs from historical ideal model |
+| [Phosphate-ore tailings](data/records/phosphate-ore-tailings.yaml) | Culture-associated rare earth leaching in laboratory flasks | Missing sterile leaching controls, aggregate assay and inconsistent source methods |
 | [Natroboltwoodite](data/records/natroboltwoodite.yaml) | Abiotic dissolution of a characterized synthetic sodium uranyl silicate | Hydration differs from the current mineral formula; low-bicarbonate decreases retained |
 | [Metaschoepite](data/records/metaschoepite.yaml) | Natural-mineral context and humidity-dependent synthetic dehydration | Mixed phases, batch differences and inconsistent source timing retained |
 | [Burbankite](data/records/burbankite.yaml) | Natural identity and synthetic La-Ca carbonate formation | Mixed synthesis product and disputed thermal values; analogue is not natural-ore recovery |
