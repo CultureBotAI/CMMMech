@@ -8,13 +8,21 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 594 material records.
+The catalogue currently contains 602 material records.
 
-The [latest curation report](research/ingests/round115-frontier-20261016.md) links
+The [latest curation report](research/ingests/round116-frontier-20261016.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Ezcurrite](data/records/ezcurrite.yaml) | Natural borate identity and laboratory thermal observations | Inferred reactions and unidentified products remain qualified |
+| [Rivadavite](data/records/rivadavite.yaml) | Natural borate identity and laboratory thermal observations | Later atomic structure note remains inaccessible |
+| [Caysichite-(Y)](data/records/caysichite-y.yaml) | Original Canadian identity and separate thermal experiments | Later Russian material has unresolved species equivalence |
+| [Kuliokite-(Y)](data/records/kuliokite-y.yaml) | Natural material and crystal characterization | Site interpretation is distinct from REE separation |
+| [Uranopilite](data/records/uranopilite.yaml) | Natural identity and structural evidence | Hydrogen inference and published/deposited model differences retained |
+| [Zippeite](data/records/zippeite.yaml) | Natural identity and powder diffraction evidence | Natural K2/four-water species distinguished from synthetic K3 material |
+| [Titanite](data/records/titanite.yaml) | Laboratory hydrochloric-acid decomposition of mixed concentrate | Feed, preparation and analytical ambiguities preclude quantified yield |
+| [Lorenzenite](data/records/lorenzenite.yaml) | Natural crystal identity and structure | Ramsayite is a synonym; no processing mechanism inferred |
 | [Ameghinite](data/records/ameghinite.yaml) | Natural borate identity and thermal observations | Distinct synthetic polymorph and inferred reactions remain separate |
 | [Aristarainite](data/records/aristarainite.yaml) | Natural borate identity and structure | Historical hydration formula revised by structural evidence |
 | [Calcioburbankite](data/records/calcioburbankite.yaml) | Natural carbonate identity and diffraction evidence | Distinct from burbankite and unresolved formation-study leads |

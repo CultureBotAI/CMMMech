@@ -1,0 +1,115 @@
+{
+  "review_id": "round116-publication-helper-static-audit",
+  "timestamp_utc": "2026-10-16T09:38:51.737346+00:00",
+  "repository": "CultureBotAI/CMMMech",
+  "base": "5d3c48e255705e269096c43cf1c5508a5178ecc1",
+  "worktree": "/private/tmp/CMMMech-expansion-round116-20261016",
+  "reviewer": "codex /root/round104_borates (GPT-6)",
+  "independence": "Independent static reviewer of root-authored operational helpers; reviewer authored ezcurrite/rivadavite and independently reviewed the REE pair, not publication helper implementation.",
+  "completion": "completed",
+  "verdict": "pass_with_limitations",
+  "passed": true,
+  "scope": "Bounded read-only source inspection of five named round116 publication helpers and exact normalized lineage diffs. No mutation helper executed; no future commit, PR, queue, merge, hosted result or preservation outcome asserted.",
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round116-publish.py",
+      "sha256": "45b9aca53324cbab7927ebd3bbc905ab84a373a5eb1cda81327eec96c8cd0af1",
+      "bytes": 6057
+    },
+    {
+      "path": "/private/tmp/cmm-round116-queue.py",
+      "sha256": "f0d12b7c4ecaacd404a596a4f3e915f52ba5e5eeec4ef0e32c2dc53c2b5531c2",
+      "bytes": 12354
+    },
+    {
+      "path": "/private/tmp/cmm-round116-isolated-verification.py",
+      "sha256": "643d5af2770048733c6e20f2ce958ff02008ec707e360d7614f37b6f97975f98",
+      "bytes": 5754
+    },
+    {
+      "path": "/private/tmp/cmm-round116-cleanup.py",
+      "sha256": "aee108d35dadaf0995c988d61eb82bf219193ce2baabfc5927fcb74e25c88f36",
+      "bytes": 3969
+    },
+    {
+      "path": "/private/tmp/cmm-round116-finalize.py",
+      "sha256": "3a00c84b328cd9505cbe659384d174e2090f7e649f29bafe4532ba0a6a78e9fd",
+      "bytes": 7946
+    }
+  ],
+  "comparisons": [
+    {
+      "current": "/private/tmp/cmm-round116-publish.py",
+      "prior": "/private/tmp/cmm-round115-publish.py",
+      "prior_sha256": "040c19f21633210b933f1a84b3e44630491d347f7383c6c87ce15a1e315751a6",
+      "normalized_diff": "/private/tmp/cmm-round116-helper-audit-publish-diff.md",
+      "diff_sha256": "06209becf8783f664f2f498e011a6fb2d5705c0ca04846b637c97fa501676676",
+      "assessment": "Source cohort changes from recovery to titanium; otherwise namespace/base adaptation."
+    },
+    {
+      "current": "/private/tmp/cmm-round116-queue.py",
+      "prior": "/private/tmp/cmm-round115-r2-queue.py",
+      "prior_sha256": "1320aca864ce839b218924628342ea8765faf10bba3bd38425dc0ee34ccd8d4e",
+      "normalized_diff": "/private/tmp/cmm-round116-helper-audit-queue-diff.md",
+      "diff_sha256": "b20b39cf4ed9a6802efd5f6b580242f7c59fcf9a86caf0389e93a552956e60a8",
+      "assessment": "Namespace/base only"
+    },
+    {
+      "current": "/private/tmp/cmm-round116-isolated-verification.py",
+      "prior": "/private/tmp/cmm-round115-r2-isolated-verification.py",
+      "prior_sha256": "7b771255c05ae48128d0a36341ab5927fb8349cc724f7734c8fcd65b5af3af20",
+      "normalized_diff": "/private/tmp/cmm-round116-helper-audit-isolated-verification-diff.md",
+      "diff_sha256": "b20b39cf4ed9a6802efd5f6b580242f7c59fcf9a86caf0389e93a552956e60a8",
+      "assessment": "Namespace/base only"
+    },
+    {
+      "current": "/private/tmp/cmm-round116-cleanup.py",
+      "prior": "/private/tmp/cmm-round115-r2-cleanup.py",
+      "prior_sha256": "0620db95ef6e4228bb2870260a6cea5e3b09a2ceb84bc935b09d31c151a6ecbe",
+      "normalized_diff": "/private/tmp/cmm-round116-helper-audit-cleanup-diff.md",
+      "diff_sha256": "b20b39cf4ed9a6802efd5f6b580242f7c59fcf9a86caf0389e93a552956e60a8",
+      "assessment": "Namespace/base only"
+    },
+    {
+      "current": "/private/tmp/cmm-round116-finalize.py",
+      "prior": "/private/tmp/cmm-round115-r2-finalize.py",
+      "prior_sha256": "d74a5a278c2fc6b67cf5d8dec431bf7f869f6d05e08ed4c565e65e57d48b295c",
+      "normalized_diff": "/private/tmp/cmm-round116-helper-audit-finalize-diff.md",
+      "diff_sha256": "9f71f979dc84f2525640f07472992ce5f0a90b9b098fce6c9f4d53becf234cb5",
+      "assessment": "Preservation inventory digest updated to verified round116 baseline; otherwise namespace/base adaptation."
+    }
+  ],
+  "checks": [
+    {
+      "name": "Python syntax parse",
+      "result": "passed",
+      "method": "ast.parse of actual source bytes; no import or lifecycle execution."
+    },
+    {
+      "name": "Current namespace/base scan",
+      "result": "passed",
+      "method": "All five exact files use round116 and trusted base; no round115 or old-base token retained in these files."
+    },
+    {
+      "name": "Preservation baseline binding",
+      "result": "passed",
+      "path": "/private/tmp/cmm-round116-preservation-before.json",
+      "sha256": "388a05189e3f16db37e292ef300cdc18d9a8c52c455045bb1c3dcc1693e98daf",
+      "entries": 14441,
+      "method": "Literal finalizer digest matches actual inventory bytes; no claim of later unchanged-file verification."
+    }
+  ],
+  "assessments": [
+    "Publisher binds actual completed scientific gates, canonical review receipt, current owner and matching review hashes, measured config/report counts and scoped staging; requires sole trusted parent and clean topic checkout, then one explicit new branch push and one PR create.",
+    "Queue preserves exact commit/tree/PR/config/body bindings, successful unique preflight rows in their actual clone, independent positive release assessment and posted-review digest, live required checks/rules, paginated discussion state and immediately prior live main observation. Native queue checks remain necessary because the final base read is not atomic.",
+    "Fresh-clone verification maintains main-only remote refspec, explicit retained tags, absence of topic commit, exact synthetic/merged tree and sole parent, native review coverage, immutable helper/config hashes and clean verification tree.",
+    "Cleanup validates completed receipts and live merged repo/head/tree/parent/main plus current config hash and issue states, then compare-and-swap deletion of only the topic ref after detaching the retained worktree.",
+    "Finalizer requires actual post-deletion clone success, exact hosted semantic acceptance bound to collector/evidence hashes, original-main baseline hash/modes/symlink targets before and after guarded fast-forward, no newly tracked collisions, branch absence and unchanged retained remote tag."
+  ],
+  "findings": [],
+  "limitations": [
+    "Static adaptation audit is not actual publication acceptance. Measured final config, commit/head/tree/PR, live checks/discussion, synthetic preflight and postmerge/hosted/preservation receipts remain later gates.",
+    "Existing algorithms were not re-executed or exhaustively model-checked. Scope covers five named files and their preserved predecessors, not unrelated machine files or all historic publication scripts.",
+    "Original-main environment and project commands were not run; the only main-related read was its already captured external preservation inventory."
+  ]
+}
