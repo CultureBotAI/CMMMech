@@ -8,13 +8,21 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 586 material records.
+The catalogue currently contains 594 material records.
 
-The [latest curation report](research/ingests/round114-frontier-20261016.md) links
+The [latest curation report](research/ingests/round115-frontier-20261016.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Ameghinite](data/records/ameghinite.yaml) | Natural borate identity and thermal observations | Distinct synthetic polymorph and inferred reactions remain separate |
+| [Aristarainite](data/records/aristarainite.yaml) | Natural borate identity and structure | Historical hydration formula revised by structural evidence |
+| [Calcioburbankite](data/records/calcioburbankite.yaml) | Natural carbonate identity and diffraction evidence | Distinct from burbankite and unresolved formation-study leads |
+| [Gysinite-(Nd)](data/records/gysinite-nd.yaml) | Natural neodymium carbonate identity | Revised type-locality provenance retained |
+| [Andersonite](data/records/andersonite.yaml) | Natural identity and laboratory thermal alteration | Ideal versus refined hydration and radiation-label discrepancy preserved |
+| [Rutherfordine](data/records/rutherfordine.yaml) | Natural identity and synthetic carbonate preparation | Product characterization kept separate from recovery yield |
+| [Tin-copper solder](data/records/tin-copper-solder.yaml) | Commercial product and culture-associated leaching | Feed, strain, biomass and control uncertainty retained |
+| [Spent ITO targets](data/records/spent-ito-targets.yaml) | Solid secondary feed and laboratory chloride separation | Missing supplementary assays preclude quantitative expansion |
 | [Kaliborite](data/records/kaliborite.yaml) | Natural borate identity and abiotic thermal alteration | Distinct specimens and conflicting amorphous-product formulas retained |
 | [Preobrazhenskite](data/records/preobrazhenskite.yaml) | Natural magnesium-borate identity and crystal structure | Hydrogen-site interpretation remains qualified |
 | [Ancylite-(Ce)](data/records/ancylite-ce.yaml) | Natural carbonate identity and primary structure evidence | Ce-dominant crystal kept distinct from La species and mixtures |

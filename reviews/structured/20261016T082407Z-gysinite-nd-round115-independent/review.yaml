@@ -1,0 +1,365 @@
+schema_version: 1.0.0
+review_id: 20261016T082407Z-gysinite-nd-round115-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Gysinite-(Nd)
+started_at: '2026-10-16T08:14:30.566456Z'
+finished_at: '2026-10-16T08:24:07.898189Z'
+reviewer:
+  identity: codex /root/round104_borates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_ree; no target,
+    history or dossier edits. Reviewer authored unrelated ameghinite/aristarainite
+    owners. Shared acquired originals disclosed; admitted evidence and claim-bearing
+    figures/tables independently assessed after native capture.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Current species identity, bounded original natural characterization and preserved
+  source limits are supported. No corrective owner finding.
+source:
+  git_revision: f97c978dcfb98269ea46fa6a9d02a6fb0253e111
+  state: working_tree
+  inputs:
+  - path: data/records/gysinite-nd.yaml
+    sha256: 7baa06a84cd78e2dde9eb81f31dca9abd716d9390143197f2c30afc0a7a69b90
+    role: target
+  - path: docs/record-review-profile.md
+    sha256: 01c6f39d0d097876a0446131270df58bb32fa15804c66487419c171719d3ddc0
+    role: context
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/gysinite-nd/2026-10-16T080644Z-codex-root-round104-ree-8eb613.yaml
+    sha256: 7ec6c6a0fc57c04dca792c995eee8df7fad5a98b93ca69233f6bc191f6a3a1c3
+    role: context
+  - path: research/sources/round115-ree/20261016T081007Z-source-investigation.json
+    sha256: b5a9cffcdf21132cbca35575344b1595e9e1c117cd39bafc5efed441940c65d7
+    role: context
+  - path: research/sources/round115-ree/20261016T081007Z-source-investigation.md
+    sha256: 512b4dda309f3313025163782626bfd1494cfbb80ec80b0481976913d90f250e
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:gysinite-nd
+  path: data/records/gysinite-nd.yaml
+  label: Gysinite-(Nd)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/gysinite-nd.yaml
+    role: maintained record
+scope:
+  description: Assigned exact owner, primary/authority evidence, histories, analytical
+    boundaries and qualification; other owners and publication operations excluded.
+  selection: Frozen assigned target captured natively before judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:gysinite-nd
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/calcioburbankite.yaml data/records/gysinite-nd.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Checked 2 record(s); 0 failed. Actual 2026-10-16T08:16:26.954915+00:00
+    through 2026-10-16T08:16:33.159247+00:00
+  target_ids:
+  - cmmmech:gysinite-nd
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Completed coordinator batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual 2026-10-16T08:14:13.624210+00:00 through 2026-10-16T08:22:36.137080+00:00
+    in /private/tmp/CMMMech-expansion-round115-20261016. Receipt/log and exact owner
+    hash verified.
+  target_ids:
+  - cmmmech:gysinite-nd
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Completed coordinator batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual 2026-10-16T08:22:36.137115+00:00 through 2026-10-16T08:23:22.916959+00:00
+    in /private/tmp/CMMMech-expansion-round115-20261016. Receipt/log and exact owner
+    hash verified.
+  target_ids:
+  - cmmmech:gysinite-nd
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch command 3
+  command: uv run --locked cmmmech validate-history --base f97c978dcfb98269ea46fa6a9d02a6fb0253e111
+  status: passed
+  required: true
+  summary: Actual 2026-10-16T08:23:22.916995+00:00 through 2026-10-16T08:23:34.671741+00:00
+    in /private/tmp/CMMMech-expansion-round115-20261016. Receipt/log and exact owner
+    hash verified.
+  target_ids:
+  - cmmmech:gysinite-nd
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual 2026-10-16T08:23:34.671776+00:00 through 2026-10-16T08:23:44.531322+00:00
+    in /private/tmp/CMMMech-expansion-round115-20261016. Receipt/log and exact owner
+    hash verified.
+  target_ids:
+  - cmmmech:gysinite-nd
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/gysinite-nd.yaml
+  locator: Complete frozen owner captured before assessment.
+  accessed_at: '2026-10-16T08:24:07.898189Z'
+  support: supports
+  summary: The current IMA September 2026 p.88 gives PbNd(CO3)2(OH)(H2O), renamed
+    status and 1987 special procedure. This is a nomenclature action, not a species-specific
+    approval accession. Pb-Nd carbonate identity is distinct from Pb-free synthetic
+    Nd carbonates and La/Ce counterparts.
+  snapshot_sha256: 7baa06a84cd78e2dde9eb81f31dca9abd716d9390143197f2c30afc0a7a69b90
+- evidence_id: history
+  kind: record_content
+  reference: history/records/gysinite-nd/2026-10-16T080644Z-codex-root-round104-ree-8eb613.yaml
+  locator: Actual canonical CREATE and distinct inline event.
+  accessed_at: '2026-10-16T08:24:07.898189Z'
+  support: supports
+  summary: Target, actor codex/GPT-6 and times accurately record curation.
+  snapshot_sha256: 7ec6c6a0fc57c04dca792c995eee8df7fad5a98b93ca69233f6bc191f6a3a1c3
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions p.1 and species rows pp.35/88 visually checked.
+  accessed_at: '2026-10-16T08:24:07.898189Z'
+  support: supports
+  summary: Current name, formula and identifier/status scope verified.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: original
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/am/vol70/AM70_1314.pdf
+  locator: Complete four-page original pp1314–1317 read and all pages visually inspected.
+    Specimen and cell determinations p1314; powder Table1 and morphology Figures1–2
+    p1315; Table 2 chemistry/TG and interpretation p1316; references p1317.
+  accessed_at: '2026-10-16T08:24:07.898189Z'
+  support: supports
+  summary: Original Geneva 410/85 was labelled schuilingite from Shinkolobwe. The
+    1995 official type catalogue p14 instead assigns Kasompi based on assemblage and
+    lists 410/85 and 435/60; the owner preserves both label and later reassignment
+    rather than inventing a verified new collection locality. Twenty-one microprobe
+    analyses support Nd-dominant Pb-La-Nd chemistry, slight variation and no particular
+    zoning. Carbon was measured but water obtained by difference. The 10 mg TG combined
+    loss is about 23 wt%, versus 20.1 + 6.1 = 26.2 wt% Table 2 means; source agreement
+    language is not treated as reconciliation. Film-derived and subsequently refined
+    cell dimensions are distinct determinations; Pmcn is supported by the admitted
+    original. Density 4.82 g/cm3 is calculated, not measured. Cold dilute-HCl effervescence
+    is qualitative, and proposed geological REE provenance is interpretive. No atomic
+    occupancies/H positions are adopted from the separately cited but unacquired 1985
+    refinement or secondary summaries.
+  snapshot_sha256: 7f934163dacc11fa2b913577c3d52216aad6f6490d652ae74dffa948bab89a67
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round115-ree/20261016T081007Z-source-investigation.json
+  locator: Final paired handoff; 30 explicit path/hash bindings independently verified.
+  accessed_at: '2026-10-16T08:24:07.898189Z'
+  support: context_only
+  summary: Source context gives reproducible acquisition and scope; originals assessed
+    independently.
+  snapshot_sha256: b5a9cffcdf21132cbca35575344b1595e9e1c117cd39bafc5efed441940c65d7
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round115-borates-research/review-ree-web.json
+  locator: Independent notice queries and bounded failed opens of later indexed primary
+    refinements.
+  accessed_at: '2026-10-16T08:24:07.898189Z'
+  support: context_only
+  summary: No relevant notice affecting admitted original claims identified; no exhaustive
+    absence claim. Indexed snippets are not full-text atomic-model evidence.
+  snapshot_sha256: f474866cbfe10567947442c824c52d8180fd9ca09ae4ab279131cf895e31caa9
+  search_scope: Exact names/year correction, erratum and retraction queries; current
+    IMA query; returned sets only. No claim that inaccessible later papers were assessed.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round115-borates-research/review-ree-dedup.json
+  locator: Current scoped identity/DOI search and broader curator precreation search
+    read.
+  accessed_at: '2026-10-16T08:24:07.898189Z'
+  support: context_only
+  summary: Expected assigned owners/context match; no distinct duplicate owner identified
+    within bounds.
+  snapshot_sha256: 84eedbba37c7fe247515e00b5dbf967d7d9466d1c3fdc6a2061f6a084b2de0b0
+  search_scope: rg --hidden --no-ignore --follow over W records/research/reviews/history;
+    names, IMA1993-001 and DOI10.1134/1.1420820. Not machine-wide.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round115-borates-research/review-ree-named-validation.json
+  locator: Independent actual named validation bound to exact current target hashes.
+  accessed_at: '2026-10-16T08:24:07.898189Z'
+  support: supports
+  summary: Two records checked; zero failures.
+  snapshot_sha256: 9b64ebcef15fe89636e79948fb892bbcf864478bf0709d02596284b6d70bbf38
+- evidence_id: baseline
+  kind: validation
+  reference: /private/tmp/cmm-round115-baseline.json
+  locator: Completed baseline, log SHA 00843c59e0bf384f33105aeda4ac175444d586f3f6361c09c91ed064526d9a53
+  accessed_at: '2026-10-16T08:24:07.898189Z'
+  support: context_only
+  summary: Initial-state context only.
+  snapshot_sha256: 8651a70974aca8c76ff0fd750f43cd61a39d1cf775c5c5929ac369e9288c4928
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round115-final-gates.json
+  locator: Completed four-command batch; exact base/cwd, unique successful commands,
+    unchanged target hashes and retained log SHA 46f8098674f6197b2eabd022019feaa1c8609989a5395c364a1d26e2ae76dba0
+  accessed_at: '2026-10-16T08:24:07.898189Z'
+  support: supports
+  summary: Required checks completed and independently bound to this observation.
+  snapshot_sha256: a4961d4886685d1dee2e32cefac92f59918148398b3cd4d909e7e214efb1d31f
+- evidence_id: catalogue
+  kind: authority
+  reference: https://biblio.naturalsciences.be/rbins-publications/working-documents-of-the-royal-belgian-institute-of-natural-sciences/77-1995-mineral-species-first-described-from-zaire-and-their-type-mineral-specimens/irscnb_p5535_00a0dbp_77-text.pdf
+  locator: Catalogue definitions printed p5/PDF3 and gysinite entry printed p14/PDF12,
+    both visually inspected.
+  accessed_at: '2026-10-16T08:24:07.898189Z'
+  support: supports
+  summary: Kasompi assignment based on mineral association and both Geneva accession
+    numbers are explicitly printed; label provenance is retained.
+  snapshot_sha256: 50fd87c2d3e07f6b3284bb294c6d5fca9fd44d6e0fa609a2760f6886ab58475e
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Material and identifier boundaries
+  outcome: supported
+  summary: The current IMA September 2026 p.88 gives PbNd(CO3)2(OH)(H2O), renamed
+    status and 1987 special procedure. This is a nomenclature action, not a species-specific
+    approval accession. Pb-Nd carbonate identity is distinct from Pb-free synthetic
+    Nd carbonates and La/Ce counterparts.
+  target_ids:
+  - cmmmech:gysinite-nd
+  evidence_ids:
+  - record
+  - ima
+- assessment_id: natural
+  area: evidence
+  topic: Specimen and analytical evidence
+  outcome: supported
+  summary: Original Geneva 410/85 was labelled schuilingite from Shinkolobwe. The
+    1995 official type catalogue p14 instead assigns Kasompi based on assemblage and
+    lists 410/85 and 435/60; the owner preserves both label and later reassignment
+    rather than inventing a verified new collection locality. Twenty-one microprobe
+    analyses support Nd-dominant Pb-La-Nd chemistry, slight variation and no particular
+    zoning. Carbon was measured but water obtained by difference. The 10 mg TG combined
+    loss is about 23 wt%, versus 20.1 + 6.1 = 26.2 wt% Table 2 means; source agreement
+    language is not treated as reconciliation.
+  target_ids:
+  - cmmmech:gysinite-nd
+  evidence_ids:
+  - record
+  - original
+  - catalogue
+- assessment_id: boundary
+  area: evidence
+  topic: Model and process limits
+  outcome: supported
+  summary: Film-derived and subsequently refined cell dimensions are distinct determinations;
+    Pmcn is supported by the admitted original. Density 4.82 g/cm3 is calculated,
+    not measured. Cold dilute-HCl effervescence is qualitative, and proposed geological
+    REE provenance is interpretive. No atomic occupancies/H positions are adopted
+    from the separately cited but unacquired 1985 refinement or secondary summaries.
+  target_ids:
+  - cmmmech:gysinite-nd
+  evidence_ids:
+  - record
+  - original
+  dimensions:
+  - name: material_form
+    value: Natural Geneva museum specimen and a 10 mg thermogravimetric portion.
+    definition: Microprobe means and bulk thermal loss are not automatically identical
+      sample measurements.
+    evidence_ids:
+    - original
+  - name: measurement
+    value: Twenty-one microprobe analyses, film and refined diffraction cells, thermogravimetry.
+    definition: Water by difference and calculated density are distinguished from
+      direct measurement.
+    evidence_ids:
+    - original
+  - name: outcome
+    value: Pb-Nd carbonate identification with qualified empirical composition.
+    definition: Qualitative effervescence and geological interpretation do not establish
+      extraction or recovery.
+    evidence_ids:
+    - original
+- assessment_id: scope
+  area: evidence
+  topic: Criticality, organism and deployment claims
+  outcome: supported
+  summary: No criticality jurisdiction/list/edition claim, microbial causation, quantitative
+    recovery or industrial deployment is asserted. Qualitative acid observations are
+    not promoted into mechanisms.
+  target_ids:
+  - cmmmech:gysinite-nd
+  evidence_ids:
+  - record
+  - original
+- assessment_id: provenance
+  area: provenance
+  topic: Exact inputs and actual checks
+  outcome: supported
+  summary: All nine captured inputs are unchanged; canonical/inline histories and
+    current target validation plus completed batch are verified.
+  target_ids:
+  - cmmmech:gysinite-nd
+  evidence_ids:
+  - record
+  - history
+  - dossier
+  - search
+  - dedup
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- Water by difference and discrepant combined volatile loss limit exact empirical
+  hydration.
+- Historical label and later assemblage-based locality reassignment are not newly
+  verified sampling provenance.
+- Original refinement/deposited reflection data remain unacquired; no independent
+  atomic refinement performed.
+- Bounded searches do not establish exhaustive coverage. No criticality claim does
+  not establish absence from every list.
+- Full native review and exact-head publication gates are separate subsequent checks;
+  this is scientific record acceptance.
+notes:
+- No reviewed input was changed. Existing qualified source discrepancies remain limitations,
+  not manufactured curator defects.
+- Full original accepted papers and relevant authority/catalogue pages were visually
+  assessed; inaccessible later studies and excluded formation experiments were not
+  independently accepted.
