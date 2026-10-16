@@ -1,0 +1,433 @@
+schema_version: 1.0.0
+review_id: 20261016T025727Z-copper-anode-slime-round109-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of copper anode slime
+started_at: '2026-10-16T02:48:57.209016Z'
+finished_at: '2026-10-16T02:57:27.358897Z'
+reviewer:
+  identity: codex /root/round104_uranium
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored the copper owner/history/dossier. Reviewer authored
+    unrelated boltwoodite/cuprosklodowskite records; independently inspected the complete
+    copper primary text, original figures, source asset checksums and current identifier
+    evidence, and did not edit this target.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The frozen copper-anode-slime record is scientifically defensible for its
+  material identity and bounded laboratory acid-chloride leaching claim. Unreconciled
+  feed/liquor accounting, missing full-size precipitation figures, absent recovery
+  balance and unproven deployment remain explicit. No supported corrective record
+  finding remains.
+source:
+  git_revision: a11e47d1c90806e056bd60610a0edd2cf77813a9
+  state: working_tree
+  inputs:
+  - path: data/records/copper-anode-slime.yaml
+    sha256: 2bfe9e35d282c686fb5352e77db3da5aadbc2b69c409cceca5fe8ff64281f373
+    role: target
+  - path: history/records/copper-anode-slime/2026-10-16T024802Z-codex-e179af.yaml
+    sha256: 69bd4424058d653668a9690b27ddcbe35f168b76823c13ef5c372f29c026ac80
+    role: context
+  - path: research/sources/round109-resources/20261016-source-investigation.json
+    sha256: a68adafa9646a1bec4d407ed07dca61344fbe2eb31e91f0acf68f676d85b3ffb
+    role: context
+  - path: research/sources/round109-resources/20261016-source-investigation.md
+    sha256: 855a78c2ce7c5182f1a8835a5105bea6f0b0e38aae6d36cbdb005334c507f3e9
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:copper-anode-slime
+  path: data/records/copper-anode-slime.yaml
+  label: Copper anode slime
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/copper-anode-slime.yaml
+    role: maintained_record
+scope:
+  description: Complete copper-anode-slime owner, linked CREATE history, schema and
+    frozen source dossier; independent primary, figure, identity and claim-level assessment.
+  selection: Exactly one maintained record selected by path and ID.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:copper-anode-slime
+checks:
+- check_id: named
+  name: Independent named strict validation
+  status: passed
+  required: true
+  summary: Checked 1 record(s); 0 failed.
+  target_ids:
+  - cmmmech:copper-anode-slime
+  command: uv run --locked cmmmech validate data/records/copper-anode-slime.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: batch1
+  name: Coordinator completed batch command 1
+  status: passed
+  required: true
+  summary: Actual terminal receipt and log independently verified; exact command exit
+    0 and frozen owner input match.
+  target_ids:
+  - cmmmech:copper-anode-slime
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Coordinator completed batch command 2
+  status: passed
+  required: true
+  summary: Actual terminal receipt and log independently verified; exact command exit
+    0 and frozen owner input match.
+  target_ids:
+  - cmmmech:copper-anode-slime
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Coordinator completed batch command 3
+  status: passed
+  required: true
+  summary: Actual terminal receipt and log independently verified; exact command exit
+    0 and frozen owner input match.
+  target_ids:
+  - cmmmech:copper-anode-slime
+  command: uv run --locked cmmmech validate-history --base a11e47d1c90806e056bd60610a0edd2cf77813a9
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Coordinator completed batch command 4
+  status: passed
+  required: true
+  summary: Actual terminal receipt and log independently verified; exact command exit
+    0 and frozen owner input match.
+  target_ids:
+  - cmmmech:copper-anode-slime
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/copper-anode-slime.yaml
+  locator: Complete maintained record, every material, mechanism, evidence and history
+    statement; initial native inspection captured before assessment.
+  summary: Current owner bytes match initial and final context inspections and the
+    actual completed batch input.
+  accessed_at: '2026-10-16T02:57:27.358897Z'
+  support: supports
+  snapshot_sha256: 2bfe9e35d282c686fb5352e77db3da5aadbc2b69c409cceca5fe8ff64281f373
+- evidence_id: history
+  kind: record_content
+  reference: history/records/copper-anode-slime/2026-10-16T024802Z-codex-e179af.yaml
+  locator: Canonical CREATE history and separate inline event, attached reference
+    and actual actor/tool/model.
+  summary: The history describes this creation session without inventing older curation
+    or source provenance.
+  accessed_at: '2026-10-16T02:57:27.358897Z'
+  support: supports
+  snapshot_sha256: 69bd4424058d653668a9690b27ddcbe35f168b76823c13ef5c372f29c026ac80
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1021/acsomega.2c07251
+  locator: 'Complete archived published JATS XML: front matter, all main-text sections,
+    Tables 1–4, all figure captions, Conclusions and references.'
+  summary: Independently read in full. Archived published version 1; online 2023-03-10,
+    print issue 2023-03-21. Original acquisition was by coordinator, not the reviewer.
+  accessed_at: '2026-10-16T02:57:27.358897Z'
+  support: supports
+  snapshot_sha256: 93af45c740d5bb9ddf997e8aedd2e1963f57b4d91cd4e093290dc0b38db356de
+- evidence_id: figures
+  kind: primary_source
+  reference: /private/tmp/cmm-round109-uranium-research/copper-review-source-manifest.json
+  locator: 'Original JPEGs mapped from JATS: Figures 1–5 (ao2c07251_0002 through _0006),
+    graphical abstract (_0009), and separately obtained equation 1.'
+  summary: All listed images were visually inspected. Original full-size Figures 6–7
+    were not available; their captions/text and miniature abstract labels do not replace
+    full pattern inspection.
+  accessed_at: '2026-10-16T02:57:27.358897Z'
+  support: supports
+  snapshot_sha256: eb884e77870b39b33c270dbd4284dc38a2389c7de6cfbe4c4f5c8f418cf67168
+- evidence_id: crc
+  kind: primary_source
+  reference: /private/tmp/cmm-round109-uranium-research/copper-review-asset-verification.json
+  locator: Independent local-header/raw-deflate/data-descriptor inspection of the
+    interrupted original asset ZIP.
+  summary: All six accepted original JPEG entries independently match CRC32, compressed
+    and uncompressed lengths, and recovered-file bytes. The incomplete archive and
+    partial final entry are not represented as complete.
+  accessed_at: '2026-10-16T02:57:27.358897Z'
+  support: supports
+  snapshot_sha256: a7ed7a1b3c451b54c4f21eb1bc4b585ad027f502109a138d98d1a96a95554f6c
+- evidence_id: bibliography
+  kind: primary_source
+  reference: https://pubmed.ncbi.nlm.nih.gov/36969429/
+  locator: Fresh official PubMed and ACS indexed metadata, retained Crossref/Europe
+    PMC metadata and full primary XML.
+  summary: DOI 10.1021/acsomega.2c07251, PMID 36969429, PMCID PMC10034837, title,
+    four authors, year 2023, ACS Omega 8(11):10022–10029 agree. Direct PMC opening
+    returned a challenge; direct PubMed opening failed, with successful official search
+    results retained.
+  accessed_at: '2026-10-16T02:57:27.358897Z'
+  support: supports
+  snapshot_sha256: c96e9fcb37921bf495cafdc9a91283018101ce5ace9c7de0bf2c94d02b6f0e07
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round109-uranium-research/copper-review-web.json
+  locator: Bounded exact DOI/title erratum, correction and retraction queries; official
+    publisher/PubMed indexed results; Crossref relation/update fields.
+  summary: No affecting notice surfaced in the returned search window. This does not
+    establish universal absence or complete review of citing literature.
+  accessed_at: '2026-10-16T02:57:27.358897Z'
+  support: context_only
+  snapshot_sha256: c96e9fcb37921bf495cafdc9a91283018101ce5ace9c7de0bf2c94d02b6f0e07
+  search_scope: Bounded exact DOI/title erratum, correction and retraction queries;
+    official publisher/PubMed indexed results; Crossref relation/update fields. No
+    affecting notice surfaced in the returned search window. This does not establish
+    universal absence or complete review of citing literature.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round109-uranium-research/copper-review-dedup.json
+  locator: Recorded independent rg --no-ignore --hidden --follow search of worktree
+    records/research/reviews/history and current source root.
+  summary: 'Existing copper-autoclave-slime owner was read: a distinct downstream
+    processing residue and different 2014 microbial study. Contextual or deferred
+    anode-slime mentions are not duplicate maintained owners.'
+  accessed_at: '2026-10-16T02:57:27.358897Z'
+  support: context_only
+  snapshot_sha256: 5e58ba590b48845327cf92878aecdd51c3c59ca694032e4af0cfaf10d668c716
+  search_scope: 'Recorded independent rg --no-ignore --hidden --follow search of worktree
+    records/research/reviews/history and current source root. Existing copper-autoclave-slime
+    owner was read: a distinct downstream processing residue and different 2014 microbial
+    study. Contextual or deferred anode-slime mentions are not duplicate maintained
+    owners.'
+- evidence_id: dedup-raw
+  kind: search
+  reference: /private/tmp/cmm-round109-uranium-research/copper-review-dedup-cited-raw.json
+  locator: Follow-up hidden/ignored-inclusive, followed search of actual cited raw
+    roots 57, 74-pv and 102.
+  summary: The initially guessed raw74 path was missing and was not counted as searched.
+    The actual dossier-resolved pv root is included here. Matches are contextual source/provenance
+    references; this bounded search makes no machinewide absence claim.
+  accessed_at: '2026-10-16T02:57:27.358897Z'
+  support: context_only
+  snapshot_sha256: 0346975a2d34b554c091a525285fecc2320fcf381f27277390e5f9e51c3b44f1
+  search_scope: Follow-up hidden/ignored-inclusive, followed search of actual cited
+    raw roots 57, 74-pv and 102. The initially guessed raw74 path was missing and
+    was not counted as searched. The actual dossier-resolved pv root is included here.
+    Matches are contextual source/provenance references; this bounded search makes
+    no machinewide absence claim.
+- evidence_id: balance
+  kind: primary_source
+  reference: /private/tmp/cmm-round109-resources-research/conditional-mass-balance.json
+  locator: Independently checked conditional arithmetic using Table 1 wt% and stated
+    10 mL/g against Table 4 mg/L.
+  summary: Assuming unchanged liquor volume and the same feed, maxima are Cu 21430,
+    Sb 5805, Bi 2868 and As 5569 mg/L; Table 4 does not directly reconcile. Unreported
+    feed or volume changes remain possible. No corrected experimental value is invented.
+  accessed_at: '2026-10-16T02:57:27.358897Z'
+  support: context_only
+  snapshot_sha256: a500fb7f77026121e03c436945705133d3b16784008d47613a3e9a04aaec83d1
+- evidence_id: validation
+  kind: validation
+  reference: /private/tmp/cmm-round109-uranium-research/copper-review-validation.json
+  locator: Independent named strict validator, actual terminal execution receipt,
+    frozen owner digest.
+  summary: Checked 1 record; 0 failed. This schema result does not replace the independent
+    scientific assessment.
+  accessed_at: '2026-10-16T02:57:27.358897Z'
+  support: supports
+  snapshot_sha256: f4672b5f378d1f37f41c668257858b6a8a2de7cf0516150115d25b7475cd7f10
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round109-final-gates.json
+  locator: 'Coordinator actual terminal four-command receipt: exact worktree/base,
+    commands, all exit codes 0, unchanged owner input and matching retained log digest.'
+  summary: Full check, nonempty validation, canonical history and rendered pages passed.
+    Reviewer verified the completed receipt and log rather than claiming another corpus
+    execution.
+  accessed_at: '2026-10-16T02:57:27.358897Z'
+  support: supports
+  snapshot_sha256: bcc373fdff60063fbe3c70df3634ea3532fbe628ed76f1be61dcbc8b7174150d
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct secondary resource, source feed and constituent scope
+  outcome: supported
+  summary: The heterogeneous anode-slime identity is supported and separated from
+    other copper materials.
+  details: Guixi copper-smelter anode slime is the studied electrolytic-refining feed,
+    not a pure mineral, elemental copper, flue dust, or the distinct downstream copper-autoclave-slime
+    residue. Table 1 composition Cu 21.43 wt%, Sb 5.805%, Bi 2.868% and As 5.569%
+    is source-specific. Table 3 within-element phase distribution is not bulk mineral
+    abundance. No jurisdiction/list/edition claim is made and constituent criticality
+    is not inherited.
+  target_ids:
+  - cmmmech:copper-anode-slime
+  evidence_ids:
+  - owner
+  - primary
+  - figures
+  - dedup
+  - dedup-raw
+- assessment_id: methods
+  area: evidence
+  topic: Actual leaching protocol, analytical methods and comparative controls
+  outcome: supported
+  summary: The bounded abiotic leaching claim matches the inspected primary methods
+    and original Figure 5.
+  details: The selected condition is 4 mol/L sulfuric acid, 120 g/L sodium chloride,
+    70°C, 2 h and 10 mL/g. Figure 5a/b concentration series were conducted at 80°C
+    and are kept separate from the 70°C selection; temperature and time series are
+    not treated as a single factorial optimization. The zero-added-chloride comparison
+    is explicit. XRF, chemical dissolution with ICP-AES, XRD, SEM/EDS and laser sizing
+    support the reported characterization. Unspecified sample mass, stirring speed,
+    replication and uncertainty remain unfilled; this is not a microbial experiment
+    and no organism identifier is appropriate.
+  target_ids:
+  - cmmmech:copper-anode-slime
+  evidence_ids:
+  - owner
+  - primary
+  - figures
+- assessment_id: mechanism
+  area: evidence
+  topic: Measured comparative dissolution and inferred chloride chemistry
+  outcome: supported
+  summary: Comparative leaching is supported while the detailed molecular explanation
+    stays qualified.
+  details: Original Figure 5 supports increased Sb/Bi leaching with added chloride
+    under the tested conditions and nonuniform element responses to acid concentration,
+    temperature and time. The record does not claim a universal optimum, new kinetic
+    fit or directly measured aqueous complex distribution. Chloride-complex formation
+    and suppression of insoluble phases are author interpretations. Source-reported
+    leaching percentages are not independently reconciled whole-process recoveries.
+  target_ids:
+  - cmmmech:copper-anode-slime
+  evidence_ids:
+  - owner
+  - primary
+  - figures
+  - balance
+- assessment_id: numbers
+  area: consistency
+  topic: Feed composition, liquid accounting and censored endpoints
+  outcome: supported
+  summary: The source accounting limitations are preserved rather than silently repaired.
+  details: Table 4 initial liquid Cu 25880, Sb 29450, Bi 28050 and As 24000 mg/L does
+    not directly reconcile with Table 1 and 10 mL/g under unchanged-volume/same-feed
+    assumptions. Those assumptions are stated, with possible unreported feed or volume
+    changes left unresolved. A concentration decrease does not establish isolated
+    recovery without solution volumes and product masses. Final Sb <5 mg/L remains
+    censored rather than converted into zero. The study’s 98% precipitation reports
+    are attributed and not accepted as independently verified recoveries.
+  target_ids:
+  - cmmmech:copper-anode-slime
+  evidence_ids:
+  - owner
+  - primary
+  - balance
+  - figures
+- assessment_id: downstream
+  area: scope
+  topic: Hydrolysis stages, acid concentration and product identification limits
+  outcome: supported
+  summary: Precipitation is correctly separated from the accepted leaching mechanism.
+  details: The text’s two hydrolysis stages use 80°C and H+ concentrations 0.8 then
+    0.2 g/L; these are not pH values. NaOH dosing/volumes, precipitation times and
+    product masses are not supplied. Sb4O5Cl2 and BiOCl assignments and thermodynamic
+    diagrams remain attributed context only because original full-size Figures 6–7
+    were unavailable. Caption/text inspection and the graphical abstract do not establish
+    independent pattern validation. Modeled concentrations are not measured precipitation
+    outcomes.
+  target_ids:
+  - cmmmech:copper-anode-slime
+  evidence_ids:
+  - owner
+  - primary
+  - figures
+  - crc
+- assessment_id: scale
+  area: scope
+  topic: Experimental scale, endpoint and proposed process extensions
+  outcome: supported
+  summary: Industrial feed origin is not used to assert industrial deployment.
+  details: The study is laboratory work with real refinery material. No organism,
+    biological transformation, deployed recovery circuit, demonstrated product usability
+    or complete environmental assessment is inferred. Proposed arsenic stabilization
+    and return of Cu-bearing liquor to electrolysis are not recast as executed recovery
+    experiments. No regulator, gene, locus or transcriptomic statement is made, so
+    iModulonDB is not applicable.
+  target_ids:
+  - cmmmech:copper-anode-slime
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Source version, recovered original assets, review independence and actual
+    checks
+  outcome: supported
+  summary: The final review is tied to unchanged inspected bytes and verified evidence
+    provenance.
+  details: The complete archived published XML and six verified original JPEG entries
+    were independently inspected. The interrupted source archive is explicitly incomplete.
+    Bibliographic identifiers and dates agree across primary and official indexed
+    metadata. Initial target inspection preceded assessment; final context inspection
+    adds the frozen dossier without changing target/history/schema bytes. Canonical
+    and inline CREATE events remain distinct. Named validation and the coordinator
+    completed batch are accurately distinguished. Reviewer authored unrelated uranium
+    owners, not this copper record.
+  target_ids:
+  - cmmmech:copper-anode-slime
+  evidence_ids:
+  - owner
+  - history
+  - primary
+  - figures
+  - crc
+  - bibliography
+  - notices
+  - validation
+  - batch
+findings: []
+actions: []
+limitations:
+- Original full-size Figures 6–7 were unavailable after bounded coordinator acquisition
+  attempts; no independent product-pattern or thermodynamic-diagram validation is
+  claimed.
+- Primary acquisition was by coordinator; reviewer independently inspected the original
+  XML/images and verified the six JPEG entries against original ZIP CRC and length
+  descriptors. The archive remains incomplete.
+- No author outreach, replicated experiment, new data digitization, solution-volume
+  reconstruction, product-mass inventory, error estimate or complete metal balance
+  was performed.
+- Notice and hidden/ignored-inclusive duplicate searches are bounded to declared queries/roots
+  and do not establish universal absence or source exhaustion.
+- Source-reported precipitation and overall recovery claims remain qualified; laboratory
+  treatment of industrial-origin feed does not establish deployment.
+notes:
+- No corrective issue was manufactured; unresolved source limitations are already
+  represented in the owner and are candidates for source follow-up.
+- Coordinator batch execution is independently receipt/log-verified, not another reviewer
+  whole-corpus test run.
+- This is an independent review of the root-authored copper target; reviewer authorship
+  of two other batch records is disclosed.

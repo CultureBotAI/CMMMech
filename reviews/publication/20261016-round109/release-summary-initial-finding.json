@@ -1,0 +1,39 @@
+{
+  "recorded_at": "2026-10-16T03:09:54.853182+00:00",
+  "reviewer": "codex /root/round104_ree (GPT-6)",
+  "scope": "Exact committed-head release coherence; owners/history/native reviews unchanged.",
+  "head": "4b7835d65f6691308899ebce371520f7b6616aa2",
+  "tree": "250112900790a1cfdb28bc2f79fe8ba8abf65353",
+  "base": "a11e47d1c90806e056bd60610a0edd2cf77813a9",
+  "finding": {
+    "key": "round109-kozoite-la-readme-evidence-boundary",
+    "severity": "minor",
+    "status": "open",
+    "path": "README.md",
+    "locator": "New Kozoite-(La) catalogue row, Evidence boundary cell",
+    "observed": "Mixed phases and time-axis inconsistencies prevent recovery claims",
+    "problem": "Summary transfers a general 2025-source time-axis concern to an accepted 35 °C arm whose Table 1 and Figure 1b times/fractions agree. The current owner excludes a separate 80 °C fraction discrepancy and does not claim a time-axis inconsistency in its accepted arm.",
+    "evidence": [
+      "data/records/kozoite-la.yaml: mechanism description/context/evidence; 24 h,192 h,360 h and separate 80 °C Table1/Figure1d discrepancy",
+      "research/sources/round109-ree/20261016T024504Z-source-investigation.json: accepted 35 °C arm and withdrawn preliminary misreading"
+    ],
+    "proposed_correction": "Crystalline phase fractions are not elemental recovery; separate high-temperature values conflict",
+    "required_followup": "Revise summary only; retain owner/history/native source-input bytes and disclose this release-level finding. No changed scientific claim requires a new owner review."
+  },
+  "bindings": [
+    {
+      "path": "/private/tmp/CMMMech-expansion-round109-20261016/README.md",
+      "sha256": "22d29ebc20af123c0444681f48b3c463f7ee2e8f7e192eaf1f7d793bd47a4221"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round109-20261016/data/records/kozoite-la.yaml",
+      "sha256": "823779b67c334476a84665caf92ee47124b9d30fe9912639a128a70005c2cafc"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round109-20261016/research/sources/round109-ree/20261016T024504Z-source-investigation.json",
+      "sha256": "1013018b810b5d02368ed8191626121b15b3e3fad1c9418bcb15dd1848a14f65"
+    }
+  ],
+  "verdict": "needs_documentation_correction",
+  "note": "Reviewer authored the kozoite owner. This is release-summary coherence, not a self-scientific acceptance. An unsaved external release-context draft had over-broad time-unit wording too; it was corrected before semantic verdict and preserved separately."
+}
