@@ -322,13 +322,14 @@ def render(out_dir: Path) -> None:
     map_html = env.get_template("map.html").render(
         root="",
         map_data=map_data,
-        map_data_json=json.dumps(map_data, separators=(",", ":")),
+        map_data_json=json.dumps(map_data, separators=(",", ":")).replace("</", "<\\/"),
         kinds_counts=kinds_counts,
         process_counts=process_counts,
     )
     (out_dir / "map.html").write_text(map_html, encoding="utf-8")
 
     # Build and render graph.html (material -> process -> organism mechanism network)
+    from urllib.parse import quote
     graph_nodes: list[dict[str, Any]] = []
     graph_edges: list[dict[str, Any]] = []
     seen_nodes: set[str] = set()
@@ -379,7 +380,7 @@ def render(out_dir: Path) -> None:
                         "label": org.get("label", oid),
                         "type": "organism",
                         "kind": "organism",
-                        "href": curie_url(oid) or f"browse.html?q={org.get('label', oid)}",
+                        "href": curie_url(oid) or f"browse.html?q={quote(str(org.get('label', oid)))}",
                         "count": 1,
                     })
                 graph_edges.append({
@@ -392,7 +393,7 @@ def render(out_dir: Path) -> None:
     graph_html = env.get_template("graph.html").render(
         root="",
         graph_data=graph_data,
-        graph_data_json=json.dumps(graph_data, separators=(",", ":")),
+        graph_data_json=json.dumps(graph_data, separators=(",", ":")).replace("</", "<\\/"),
         kinds_counts=kinds_counts,
         process_counts=process_counts,
     )

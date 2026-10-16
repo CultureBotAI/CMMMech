@@ -213,9 +213,15 @@
       : `${G.nodes.length} nodes · ${G.edges.length} edges`;
   }
 
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+
   function pick(mx, my) {
+    const { matchedNodes, hasFilter } = activeSet();
     let best = null, bestD = 14 * 14;
     for (const n of G.nodes) {
+      if (hasFilter && !matchedNodes.has(n.id)) continue;
       const dx = sx(n.x) - mx, dy = sy(n.y) - my;
       const d = dx * dx + dy * dy;
       if (d < bestD) { bestD = d; best = n; }
@@ -242,7 +248,7 @@
     const h = pick(mx, my);
     if (h !== hover) { hover = h; draw(); }
     if (h) {
-      tip.innerHTML = `<strong>${h.label}</strong><br><span>${h.type} · ${(h.kind || '').replace(/_/g, ' ')}</span>`;
+      tip.innerHTML = `<strong>${esc(h.label)}</strong><br><span>${esc(h.type)} · ${esc((h.kind || '').replace(/_/g, ' '))}</span>`;
       tip.style.left = Math.min(W - 240, Math.max(8, mx + 12)) + 'px';
       tip.style.top = Math.max(8, my - 36) + 'px';
       tip.hidden = false;

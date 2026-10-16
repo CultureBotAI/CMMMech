@@ -110,13 +110,17 @@
   };
   toggleHolder.appendChild(allBtn);
 
+  function esc(s) {
+    return String(s == null ? '' : s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;').replace(/'/g, '&#39;');
+  }
+
   D.classes.forEach((cls, i) => {
     const b = document.createElement('button');
     b.type = 'button';
     b.className = 'pill facet-pill';
     b.title = 'Click to toggle · Shift-click to solo';
     const label = cls.replace(/_/g, ' ');
-    b.innerHTML = `<span class="sw" style="background:${colors[i]}"></span><span class="facet-pill-name">${label}</span><small>${counts[i]}</small>`;
+    b.innerHTML = `<span class="sw" style="background:${colors[i]}"></span><span class="facet-pill-name">${esc(label)}</span><small>${counts[i]}</small>`;
     b.onclick = (e) => {
       if (e.shiftKey) {
         const solo = active.filter(Boolean).length === 1 && active[i];
@@ -256,8 +260,8 @@
     if (h !== hover) { hover = h; draw(); }
     if (h >= 0) {
       const p = D.points[h];
-      const procs = (p[5] && p[5].length) ? ' · ' + p[5].join(', ') : '';
-      tip.innerHTML = `<strong>${p[4]}</strong><br><span>${p[3]} · ${D.classes[p[2]].replace(/_/g, ' ')}${procs}</span>`;
+      const procs = (p[5] && p[5].length) ? ' · ' + p[5].map(esc).join(', ') : '';
+      tip.innerHTML = `<strong>${esc(p[4])}</strong><br><span>${esc(p[3])} · ${esc(D.classes[p[2]].replace(/_/g, ' '))}${procs}</span>`;
       tip.style.left = Math.min(W - 240, Math.max(8, mx + 12)) + 'px';
       tip.style.top = Math.max(8, my - 36) + 'px';
       tip.hidden = false;
