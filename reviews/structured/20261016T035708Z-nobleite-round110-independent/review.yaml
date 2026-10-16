@@ -1,0 +1,346 @@
+schema_version: 1.0.0
+review_id: 20261016T035708Z-nobleite-round110-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of nobleite
+started_at: '2026-10-16T03:51:29.849724Z'
+finished_at: '2026-10-16T03:57:08.942083Z'
+reviewer:
+  identity: codex /root/round104_ree
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_borates; no edits
+    to the reviewed borate owner/history/dossier. Reviewer authored unrelated burbankite
+    and synchysite-(Ce) records. Source acquisition was shared, then original articles
+    and authority were independently inspected.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 0482e7b0af9b18685dabe310dbe86487b6ac4226
+  state: working_tree
+  inputs:
+  - path: data/records/nobleite.yaml
+    sha256: 1dade2cc18afd089d40a11279e0640c44849a80afa56459e8c0e5463ca8094ca
+    role: target
+  - path: history/records/nobleite/2026-10-16T034619Z-codex-365f4f.yaml
+    sha256: 6b205d66c8580a069ea8e6d4075ea72c2719aa153f2d9ba60d41ea06b9a49812
+    role: context
+  - path: research/sources/round110-borates/20261016T034830Z-source-investigation.json
+    sha256: 238e21ccf8a515f283e8c5d656f7d9fa6889eba9197c06aaa0d91249b9acec8b
+    role: context
+  - path: research/sources/round110-borates/20261016T034830Z-source-investigation.md
+    sha256: cc44c05262b62fcd0b932f6bbd3b80c89de82908f8a798feaae97466f3087f4d
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:nobleite
+  path: data/records/nobleite.yaml
+  label: Nobleite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/nobleite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/nobleite/2026-10-16T034619Z-codex-365f4f.yaml
+    role: canonical_history
+scope:
+  description: Exact frozen nobleite owner, source claims and canonical/inline creation
+    provenance; wider follow-up leads and hosted publication excluded.
+  selection: Assigned target captured with native inspect before independent scientific
+    assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:nobleite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/nobleite.yaml
+  locator: Complete exact working-tree bytes at /private/tmp/CMMMech-expansion-round110-20261016/data/records/nobleite.yaml
+  accessed_at: '2026-10-16T03:57:08.942083Z'
+  support: supports
+  summary: Identity, scientific descriptions, source-level claims, mechanism scope
+    and inline CREATE independently checked.
+  snapshot_sha256: 1dade2cc18afd089d40a11279e0640c44849a80afa56459e8c0e5463ca8094ca
+- evidence_id: history
+  kind: record_content
+  reference: history/records/nobleite/2026-10-16T034619Z-codex-365f4f.yaml
+  locator: Complete canonical CREATE at /private/tmp/CMMMech-expansion-round110-20261016/history/records/nobleite/2026-10-16T034619Z-codex-365f4f.yaml
+  accessed_at: '2026-10-16T03:57:08.942083Z'
+  support: supports
+  summary: Actual actor codex, GPT-6/codex metadata, timestamp and target correspond
+    to this addition; inline and canonical events remain distinct.
+  snapshot_sha256: 6b205d66c8580a069ea8e6d4075ea72c2719aa153f2d9ba60d41ea06b9a49812
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round110-borates/20261016T034830Z-source-investigation.json
+  locator: Paired source investigation; acquisition and access limits checked independently
+    against original artifacts. /private/tmp/CMMMech-expansion-round110-20261016/research/sources/round110-borates/20261016T034830Z-source-investigation.json
+  accessed_at: '2026-10-16T03:57:08.942083Z'
+  support: context_only
+  summary: Context for source provenance and deferred evidence; not a substitute for
+    the original papers.
+  snapshot_sha256: 238e21ccf8a515f283e8c5d656f7d9fa6889eba9197c06aaa0d91249b9acec8b
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round110-ree-research/borate-review-search.json
+  locator: Three initial mineral/year or exact-DOI correction queries; two focused
+    DOI/title follow-up queries retained separately.
+  accessed_at: '2026-10-16T03:57:08.942083Z'
+  support: context_only
+  summary: No affecting notice identified in returned sets. Known internal conflicts
+    remain explicit; no universal absence claim.
+  snapshot_sha256: ae0961cc292e176d0c62585aa79587a21eacdc59fe97724fb5610128541b4aca
+  search_scope: First returned web sets for three queries recorded verbatim; no date
+    or domain filter. Publisher metadata and secondary search snippets were not scientific
+    support.
+- evidence_id: search_followup
+  kind: search
+  reference: /private/tmp/cmm-round110-ree-research/borate-review-search-followup.json
+  locator: Two focused exact-DOI/title queries and returned results.
+  accessed_at: '2026-10-16T03:57:08.942083Z'
+  support: context_only
+  summary: No affecting correction found in these returned sets; primary institutional
+    and publisher metadata confirm article identity only.
+  snapshot_sha256: a51aea945118e679624679e62b57049448b8cf0ca540b351793f202bdbc46cc4
+  search_scope: Returned search results only; no exhaustive absence claim.
+- evidence_id: dossier_fix
+  kind: record_content
+  reference: reviews/publication/20261016-round110/20261016T035530Z-borate-dossier-paths-successor.json
+  locator: Independent successor for issue451, with exact initial artifact/hash and
+    all six raw path/size/hash checks.
+  accessed_at: '2026-10-16T03:57:08.942083Z'
+  support: supports
+  summary: Two erroneous filename spaces were corrected; the owner scientific bytes
+    and raw evidence did not change. Fresh native inspect binds corrected context.
+  snapshot_sha256: f6705bfb44155d5ba4254464c52da2add3bb0e8c22db51e136366f908d0c63fe
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round110-ree-research/borate-review-dedup.txt
+  locator: Hidden, ignored and followed search across worktree records, research,
+    reviews and history; curator broader dedup includes original-main ignored reports
+    and cited raw roots.
+  accessed_at: '2026-10-16T03:57:08.942083Z'
+  support: context_only
+  summary: Only the two assigned current owners occur in the stated current-record
+    roots. Earlier research mentions are context, not duplicate owners; curator broader
+    dedup was inspected.
+  snapshot_sha256: 7354a487e7c02f0d32415437be5acb9ab9b87627b4f1712395e57c2dd4a6c642
+  search_scope: Bounded text roots and identifiers/DOIs recorded in paired search
+    receipt; not the whole filesystem or unextracted binary content.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round110-ree-research/borate-review-named-validation.json
+  locator: Independent two-owner strict validation with exact hashes and actual subprocess
+    timestamps.
+  accessed_at: '2026-10-16T03:57:08.942083Z'
+  support: supports
+  summary: Two records checked; zero failed. 2026-10-16T03:52:27.584349+00:00 through
+    2026-10-16T03:52:30.379804+00:00
+  snapshot_sha256: 46eaf4457d3b8fca1ff35cad85621fccd3c445829001319e41aa7bc03cfddd8e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round110-final-gates.json
+  locator: Coordinator terminal receipt; base, worktree, exact four commands, successful
+    outcomes, unchanged owner hashes and log SHA256 independently verified. Log /private/tmp/cmm-round110-final-gates.log
+    SHA256 deaa335863d7038fa0324fd322f01d57562c229dd3f7e8816c396bc78443333a
+  accessed_at: '2026-10-16T03:57:08.942083Z'
+  support: supports
+  summary: Actual completed local batch, not an inferred check or hosted publication
+    result.
+  snapshot_sha256: ed153240d4c5826f0436aa5b996d00e0eed289dd884396599de811fc1fb085c6
+- evidence_id: primary
+  kind: primary_source
+  reference: https://msaweb.org/AmMin/AM46/AM46_560.pdf
+  locator: Complete 12-page original read; Figures 1–2 and Tables 1–3 visually checked,
+    especially crystallography p. 564, natural/synthetic diffraction pp. 565–567,
+    own synthesis p. 569 and relationship caveat p. 570. /private/tmp/cmm-round110-borates-research/nobleite1961-msa.pdf
+  accessed_at: '2026-10-16T03:57:08.942083Z'
+  support: supports
+  summary: Own CaO/boric-acid precipitation and comparison with natural nobleite are
+    supported. The source points to Table 1 in the synthesis paragraph, while the
+    actual powder comparison is Table 2. Natural chemical analysis is a separate 0.500
+    g sample.
+  snapshot_sha256: defcd9e0d9e2d695762aa74c06dbf3f0bbec854d485057d1cc0241bd6a2170fe
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 list, definitions page 1 and Nobleite row page 156, independently
+    visually checked. /private/tmp/cmm-round110-borates-research/ima2026-09.pdf
+  accessed_at: '2026-10-16T03:57:08.942083Z'
+  support: supports
+  summary: Approved A species CaB6O9(OH)2(H2O)3 and 1967 s.p. special-procedure notation;
+    no unique approval ID inferred.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/nobleite.yaml data/records/gowerite.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Two records checked with zero failures; subprocess receipt and exact hashes
+    verified.
+  target_ids:
+  - cmmmech:nobleite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Final batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T03:52:09.968678+00:00 through 2026-10-16T03:56:26.718446+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:nobleite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Final batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T03:56:26.718469+00:00 through 2026-10-16T03:56:36.846721+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:nobleite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Final batch command 3
+  command: uv run --locked cmmmech validate-history --base 0482e7b0af9b18685dabe310dbe86487b6ac4226
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T03:56:36.846741+00:00 through 2026-10-16T03:56:42.595299+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:nobleite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Final batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T03:56:42.595329+00:00 through 2026-10-16T03:56:48.640530+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:nobleite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species and formula
+  outcome: supported
+  summary: Current IMA formula, approved status and nonunique special-procedure year
+    are supported. CaO·3B2O3·4H2O expands to the same CaB6O14H8 elemental inventory.
+    Mineral identity is kept separate from elemental boron, gowerite and the commodity.
+  target_ids:
+  - cmmmech:nobleite
+  evidence_ids:
+  - record
+  - primary
+  - ima
+- assessment_id: recipe
+  area: evidence
+  topic: Own precipitation experiment
+  outcome: supported
+  summary: Page 569 directly supports 1.6 g CaO, 10.0 g boric acid, 25 mL water, 30
+    h stirring at 48°C, then 10 days at 68°C, filtration and sequential water/methanol/acetone
+    washes. Table 2 identifies the synthetic material as Erd's preparation. The stated
+    phase outcome is supported without adding pH, yield, purity fraction, replication
+    or mass balance.
+  target_ids:
+  - cmmmech:nobleite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: limits
+  area: scope
+  topic: Natural observations and quantitative boundaries
+  outcome: supported
+  summary: Natural chemistry and weathering interpretations are not transferred to
+    the laboratory product. Source's Table 1 pointer is correctly repaired in the
+    owner to Table 2. Preferred orientation and different radiation conditions limit
+    intensity comparisons. No simple nobleite–gowerite hydration relationship, microbial
+    role or industrial recovery is inferred.
+  target_ids:
+  - cmmmech:nobleite
+  evidence_ids:
+  - record
+  - primary
+  - ima
+- assessment_id: criticality
+  area: grounding
+  topic: Criticality and biological attribution
+  outcome: supported
+  summary: No criticality claim is made and no jurisdiction/list is inferred from
+    mineral chemistry. The explicit microbial:false precipitation mechanism is abiotic;
+    no taxon or industrial feed is asserted.
+  target_ids:
+  - cmmmech:nobleite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen inputs and completed checks
+  outcome: supported
+  summary: Native inspection captured exact owner, canonical CREATE history, paired
+    dossier and schema bytes before judgment. Original pre-assessment capture is retained;
+    after the independently verified two-filename dossier correction for issue451,
+    a fresh context capture was made. All final bound inputs remain unchanged. Independent
+    named validation and actual coordinator batch/history checks passed. Saved-review
+    validation and publication are later gates.
+  target_ids:
+  - cmmmech:nobleite
+  evidence_ids:
+  - record
+  - history
+  - dossier
+  - dossier_fix
+  - named
+  - batch
+findings: []
+actions: []
+summary: Nobleite identity and bounded original abiotic precipitation are supported.
+  No corrective owner finding; natural chemistry, older secondary solubility and unproved
+  interconversion remain separate. A separate dossier-locator finding is addressed
+  through its immutable publication review chain.
+limitations:
+- The 1961 synthesis lacks quantitative phase purity, isolated yield, solution mass
+  balance, pH and replicate count; qualitative phase identification is the admitted
+  result.
+- Nikolaev and Chelishcheva 1940 solubility evidence and the 2004 structure revision
+  were not independently acquired for this review; no new claims from their secondary
+  summaries are admitted.
+- No independent experiment, structure re-refinement or direct demonstration of natural
+  weathering causality was performed.
+- Shared source acquisition is disclosed. Bounded correction and hidden/ignored dedup
+  searches do not establish exhaustive absence.
+- Working-tree review at the retained base. Record validation is separate from scientific
+  truth; native review-check and committed-head/hosted publication remain separate.
+notes:
+- No owner/history correction was needed. Dossier-only issue451 was resolved in its
+  saved independent successor; the two source-filename strings were corrected and
+  context freshly captured. Unavailable originals and retained source conflicts remain
+  limitations.
+- No self-authored REE record is scientifically reviewed in this observation.

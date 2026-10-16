@@ -1,0 +1,94 @@
+id: cmmmech:burbankite
+name: Burbankite
+material_kind: mineral
+description: A natural anhydrous carbonate mineral with the IMA-CNMNC September 2026 formula
+  (Na,Ca)3(Sr,Ba,Ce)3(CO3)5. It is grandfathered; the listed 1953 value is an original-description
+  year, not an IMA approval accession. This record denotes the mineral species, not the
+  entire burbankite group, its constituent elements, or a carbonatite ore. Pecora and Kerr
+  (1953) characterized natural hexagonal burbankite from calcite-rich veins at the Vermiculite
+  Prospects, Big Sandy Creek, Bearpaw Mountains, Montana. Powder and single-crystal diffraction
+  support the mineral characterization. Their chemical preparation remained about 96 percent
+  burbankite by grain count, with about 3 percent ancylite and 1 percent other minerals;
+  Table 2 separately gives the impure analysis and an impurity-adjusted calculation. The
+  corrected chemistry is not a direct pure-phase measurement. The authors reported vigorous
+  effervescence in cold dilute (1:5) HCl, but did not establish a leaching yield, rate or
+  isolated rare-earth product. Observed weathering assemblages contained several minerals
+  and do not resolve a unique reaction pathway. A later synthetic Na-Ca-La carbonate with
+  burbankite structure is treated below as an experimental analogue, not as the measured
+  composition of these natural specimens. No dated criticality designation or microbial
+  mechanism is asserted.
+sources:
+- id: ima2026
+  title: IMA-CNMNC, The New IMA List of Minerals, September 2026; field definitions PDF
+    page 1 and Burbankite row page 32 (grandfathered, 1953).
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-16'
+- id: pecora1953
+  title: Pecora WT and Kerr JH (1953), Burbankite and calkinsite, two new carbonate minerals
+    from Montana. American Mineralogist 38:1169–1183. Full original; burbankite pp.1169–1176,
+    Tables 1–3 and Figures 1–2; impurity accounting pp.1172–1174.
+  url: https://www.rruff.net/doclib/am/vol38/AM38_1169.pdf
+  accessed_on: '2026-10-16'
+- id: milani2022
+  title: Milani S et al. (2022), High-pressure and high-temperature structure and equation
+    of state of Na3Ca2La(CO3)5 burbankite. European Journal of Mineralogy 34:351–358. DOI
+    10.5194/ejm-34-351-2022; synthesis p.352/Figure 1, chemistry and structure pp.353–355/Tables
+    1–3.
+  url: https://doi.org/10.5194/ejm-34-351-2022
+  accessed_on: '2026-10-16'
+- id: milani2022supp
+  title: 'Milani et al. (2022), official supplement: seven-page Tables S1–S4/Figures S1–S3
+    and burbankite.cif. Synthetic composition and acquisition metadata; thermal data extend
+    to 628 K in Table S4.'
+  url: https://doi.org/10.5194/ejm-34-351-2022-supplement
+  accessed_on: '2026-10-16'
+mechanisms:
+- id: synthetic_la_ca_analogue_formation
+  name: High-pressure formation of a synthetic La-Ca carbonate with burbankite structure
+  process: other
+  microbial: false
+  description: Milani et al. synthesized a burbankite-structure carbonate from a nominal
+    Na3Ca2La(CO3)5 mixture at 5 GPa and 1073 K for 24 h. The recovered laboratory assemblage
+    also contained a Ca-rich La oxide, so it was not a demonstrated pure carbonate product.
+    Electron microprobe analysis and single-crystal X-ray diffraction characterize the carbonate;
+    its ambient structure was refined in P63mc. This establishes formation and La incorporation
+    in a synthetic analogue. It does not demonstrate recovery from a natural ore, quantitative
+    La capture, a species-wide compositional endmember or industrial deployment.
+  context: 'Carbonate powders in the stated stoichiometric proportions were sealed in a
+    platinum capsule 3.5 mm long and 2 mm in diameter and heated in a multi-anvil apparatus
+    at about 40 K/min. The reported temperature accuracy was ±20 K and assumed pressure
+    uncertainty ±3 percent. Starting powder identities, purities and mass, phase yield and
+    independent synthesis replication are not specified. Twenty microprobe points characterize
+    the synthetic carbonate, not twenty independent synthesis runs. The nominal formula
+    differs from its reported analytical composition; the prose and Table 1 state a five-oxygen
+    normalization without explicitly distinguishing metal-oxide oxygen from the full carbonate
+    formula. A metal-oxide-only basis could explain that wording, so it is not treated as
+    proof of an erroneous formula. Na uncertainty is (14) in the prose/CIF and (13) in Table
+    1. No exact analytical formula is adopted here. Separate pressure and temperature diffraction
+    arms must not be pooled with the synthesis. Thermal coverage and fitted coefficients
+    conflict between abstract/methods and published tables/results: the reported 746 K maximum
+    exceeds the 628 K maximum in Table 5 and Supplement Table S4, and the abstract and Results
+    give different thermal-expansion coefficients. No disputed thermal coefficient, extrapolated
+    mantle density or natural phase stability boundary is adopted.'
+  evidence:
+  - source_ref: milani2022
+    supports: support
+    explanation: Experimental p.352 and Figure 1 establish the conditions and mixed recovered
+      assemblage. Results pp.353–355 and Tables 1–3 characterize the synthetic carbonate
+      and refined structure; they support the bounded laboratory formation claim, not natural-ore
+      recovery or pure-product yield.
+  - source_ref: milani2022supp
+    supports: partial
+    explanation: The CIF explicitly identifies a synthetic source made at 5 GPa and 1073
+      K. Tables S1–S4 and Figures S1–S3 provide structure and elastic context; Table S4
+      ends at 628 K. These files do not resolve all printed formula/thermal inconsistencies
+      or provide a phase yield.
+curation_history:
+- timestamp: '2026-10-16T03:43:33.998046Z'
+  curator: codex /root/round104_ree (GPT-6; codex)
+  action: CREATE
+  summary: Added verified species identity and bounded primary characterization, distinguishing
+    natural mineral, synthetic analogue and mixed-resource evidence; preserved source limitations
+    and omitted unestablished criticality or microbial claims.
+history_refs:
+- history/records/burbankite/2026-10-16T034356Z-codex-root-round104-ree-db84a2.yaml
