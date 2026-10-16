@@ -1,0 +1,131 @@
+{
+  "completed_at": "2026-10-16T07:04:00.733985+00:00",
+  "completion": "completed",
+  "verdict": "needs_changes",
+  "scope": "Read-only static audit of five round114 publication helpers versus exact round113 predecessors; no lifecycle helper, Git/GitHub mutation, project gate or native scientific review executed. Config counts and issue bindings are pending.",
+  "reviewer": {
+    "actor": "codex",
+    "model": "GPT-6",
+    "disclosure": "Authored round114 uranium owners; independently assessed parent titanium owners. Did not author these five publication adapters."
+  },
+  "worktree": "/private/tmp/CMMMech-expansion-round114-20261016",
+  "base": "93f90797512dc8d1db3df9ce2e4994c475b1a4fe",
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round114-publish.py",
+      "sha256": "e54d9594daa222b8db4d5fd927fb307b44f277f38d7fbfcd77b4889b00e823bb",
+      "bytes": 6077
+    },
+    {
+      "path": "/private/tmp/cmm-round113-publish.py",
+      "sha256": "2e9a812a4f287211395fef3ed545bf314871c6449d26a7f8385e04719ff2e8a8",
+      "bytes": 6148
+    },
+    {
+      "path": "/private/tmp/cmm-round114-isolated-verification.py",
+      "sha256": "425cbac5fc3067e9c13f5155d9b267d7b9f9bc160ba0ce241ff89fdbf3485293",
+      "bytes": 5754
+    },
+    {
+      "path": "/private/tmp/cmm-round113-isolated-verification.py",
+      "sha256": "b98cfdae93ec492eeae7b74b099f7aac3f35c53e67a0b7da228f59f3df2a2720",
+      "bytes": 5754
+    },
+    {
+      "path": "/private/tmp/cmm-round114-isolated-coverage.py",
+      "sha256": "e4ea72158c36de721e4ba56c53aac5236690d959198a871bb6f7b01c70e05f5b",
+      "bytes": 3515
+    },
+    {
+      "path": "/private/tmp/cmm-round113-isolated-coverage.py",
+      "sha256": "7a22710a7ac1c8cb1bd2a188fd6c9c9a71a774b5cdf3810345616b6059c06d16",
+      "bytes": 3515
+    },
+    {
+      "path": "/private/tmp/cmm-round114-queue.py",
+      "sha256": "5f3ac2e25c9d7147c884b48e573d0d766c686331224015befb0c1536a0484dc0",
+      "bytes": 12354
+    },
+    {
+      "path": "/private/tmp/cmm-round113-queue.py",
+      "sha256": "c084ffd7645e4a8e90dfbdc465d36ee16cb53b5bfb39604aefaf3be4f6268a91",
+      "bytes": 12354
+    },
+    {
+      "path": "/private/tmp/cmm-round114-cleanup.py",
+      "sha256": "cb90ccbc38216878eceeea37386bc66547477cd4e46203e02056b48027c3066c",
+      "bytes": 3969
+    },
+    {
+      "path": "/private/tmp/cmm-round113-cleanup.py",
+      "sha256": "d0488969d9bef0b2cfd840d8f7a3ad70b60f91be1989d852ca50551dd764aeb7",
+      "bytes": 3860
+    }
+  ],
+  "normalized_diffs": [
+    {
+      "helper": "publish",
+      "remaining_diff_after_identity_substitutions": "--- 113-normalized\n\n+++ 114-actual\n\n@@ -5,7 +5,7 @@\n\n sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();now=lambda:datetime.now(timezone.utc).isoformat()\n def validate_required_receipts(g,rc,cv):\n  assert g['state']=='completed' and g['exit_code']==0 and g['base']==BASE and g['worktree']==str(W) and g['inputs_unchanged'] is True\n- assert g['log']==str(T/'cmm-round114-final-gates.log') and sha(g['log'])==g['log_sha256']\n+ assert g['log']==str(T/'cmm-round114-final-gates-corrected.log') and sha(g['log'])==g['log_sha256']\n  required=[['just','check'],['uv','run','--locked','cmmmech','validate','--require-records'],['uv','run','--locked','cmmmech','validate-history','--base',BASE],['uv','run','--locked','python','scripts/render_pages.py','--check']]\n  assert [x['command'] for x in g['commands']]==required\n  start=datetime.fromisoformat(g['started_at']);finish=datetime.fromisoformat(g['finished_at']);assert start.tzinfo and finish.tzinfo and start<=finish\n@@ -25,7 +25,7 @@\n\n  assert git('remote','get-url','origin')==ORIGIN and git('branch','--show-current')==BRANCH\n  if args.mode=='commit':\n   assert git('rev-parse','HEAD')==BASE\n-  g=json.loads((T/'cmm-round114-final-gates.json').read_text());rc=json.loads((T/'cmm-round114-review-check-final.json').read_text());cv=json.loads((T/'cmm-round114-local-coverage.json').read_text())\n+  g=json.loads((T/'cmm-round114-final-gates-corrected.json').read_text());rc=json.loads((T/'cmm-round114-review-check-final.json').read_text());cv=json.loads((T/'cmm-round114-local-coverage.json').read_text())\n   validate_required_receipts(g,rc,cv);assert all(cv[k]==v for k,v in cfg['counts'].items())\n   for row in cv['records']:\n    assert sha(W/row['path'])==row['sha256']\n@@ -33,7 +33,7 @@\n\n    for review in row['matching_scientific_reviews']:assert sha(W/review['path'])==review['review_sha256']\n   for path,digest in g['record_inputs'].items():assert sha(W/path)==digest\n   report=json.loads((W/'research/ingests/round114-frontier-20261016.json').read_text());assert report['counts']==cfg['counts'] and report['base']==BASE\n-  paths=['README.md','pages','research/ingests/round114-frontier-20261016.json','research/ingests/round114-frontier-20261016.md','research/ingests/round114-resources-20261016.json','research/ingests/round114-resources-20261016.md','reviews/publication/20261016-round114']+[f'research/sources/round114-{x}' for x in ['borates','ree','uranium']]+[f'data/records/{x}.yaml' for x in cfg['slugs']]+[f'history/records/{x}' for x in cfg['slugs']]+sorted({str(Path(x).parent) for x in report['review_artifacts']})\n+  paths=['README.md','pages','research/ingests/round114-frontier-20261016.json','research/ingests/round114-frontier-20261016.md','reviews/publication/20261016-round114']+[f'research/sources/round114-{x}' for x in ['borates','ree','uranium','titanium']]+[f'data/records/{x}.yaml' for x in cfg['slugs']]+[f'history/records/{x}' for x in cfg['slugs']]+sorted({str(Path(x).parent) for x in report['review_artifacts']})\n   git('add','--',*paths);files=git('diff','--cached','--name-only').splitlines();assert files and all(any(f==p or f.startswith(p+'/') for p in paths) for f in files);assert not git('diff','--name-only');git('diff','--cached','--check');hashes={p:sha(W/p) for p in files};git('commit','-m',cfg['title']);assert not git('status','--porcelain=v1','--untracked-files=all');head=git('rev-parse','HEAD');tree=git('rev-parse','HEAD^{tree}');assert git('rev-list','--parents','-n','1','HEAD').split()==[head,BASE];r.update(head=head,tree=tree,files=files,hashes=hashes,helpers=helpers)\n  else:\n   c=json.loads((T/'cmm-round114-commit-receipt.json').read_text());assert c['exit_code']==0 and c['helpers']==helpers;assert git('rev-parse','HEAD')==c['head'] and git('rev-parse','HEAD^{tree}')==c['tree'] and not git('status','--porcelain=v1','--untracked-files=all');assert git('ls-remote','origin','refs/heads/main').split()==[BASE,'refs/heads/main'];assert not git('ls-remote','origin','refs/heads/'+BRANCH)"
+    },
+    {
+      "helper": "isolated-verification",
+      "remaining_diff_after_identity_substitutions": ""
+    },
+    {
+      "helper": "isolated-coverage",
+      "remaining_diff_after_identity_substitutions": ""
+    },
+    {
+      "helper": "queue",
+      "remaining_diff_after_identity_substitutions": ""
+    },
+    {
+      "helper": "cleanup",
+      "remaining_diff_after_identity_substitutions": "--- 113-normalized\n\n+++ 114-actual\n\n@@ -19,7 +19,8 @@\n\n  assert api('git/ref/heads/main')['object']['sha']==merge\n  assert git('rev-parse','HEAD')==head and git('rev-parse','HEAD^{tree}')==tree and git('branch','--show-current')==BRANCH and not git('status','--porcelain=v1','--untracked-files=all')\n  assert all(sha(W/k)==v for k,v in c['hashes'].items())\n- cfg=json.loads((T/'cmm-round114-helper-config.json').read_text());resolved=cfg['resolved_review_issues'];remaining=cfg['remaining_source_issues']\n+ config=T/'cmm-round114-helper-config.json';assert sha(config)==c['helpers'][str(config)], 'Publication configuration changed after commit'\n+ cfg=json.loads(config.read_text());resolved=cfg['resolved_review_issues'];remaining=cfg['remaining_source_issues']\n  issues={str(n):api(f'issues/{n}') for n in resolved+remaining}\n  assert all(issues[str(n)]['state']=='closed' for n in resolved);assert all(issues[str(n)]['state']=='open' for n in remaining)\n  tag='refs/tags/review-base/cmm-source-survey-20261009';assert git('rev-parse',tag)=='fc4040c3abcd28f0a9cc52467e308100144ad1fd' and git('rev-parse',tag+'^{}')=='c0adc2c0763e1515ed07dc712b024974d98fb342'"
+    }
+  ],
+  "checks": [
+    {
+      "check": "Python AST parse for all ten source snapshots",
+      "passed": true
+    },
+    {
+      "check": "Exact-file byte search for prior round113 namespace and prior base",
+      "passed": true,
+      "scope": "All five supplied files read in full; hidden/ignored status is irrelevant to these explicit paths. No machine-wide absence claim."
+    },
+    {
+      "check": "Current W/base/branch and fresh-clone command working directories",
+      "passed": true
+    },
+    {
+      "check": "Commit/push current gates and coverage/hash binding, exact head/tree/files, native queue/release-review binding and live main last read",
+      "passed": true
+    },
+    {
+      "check": "Cleanup merged PR and exact parent/tree, clean detached worktree preservation, remote force-with-lease deletion and local expected-old update-ref deletion",
+      "passed": true
+    }
+  ],
+  "findings": [
+    {
+      "id": "PUB114-1",
+      "severity": "minor",
+      "path": "/private/tmp/cmm-round114-cleanup.py",
+      "locator": "cfg=json.loads(...helper-config.json...) immediately before resolved/open issue checks",
+      "finding": "Cleanup consumes current config issue dispositions without binding the config bytes to the successful commit/queue helper snapshot. A post-queue config edit could remove or change required issue states while all head/tree/receipt identity guards still pass.",
+      "evidence": "commit and queue bind config through helpers/current digests; cleanup only reads its resolved_review_issues and remaining_source_issues. No hash assertion for that config is present in the inspected cleanup source.",
+      "suggested_correction": "Before consuming current config, assert its SHA256 equals c[\"helpers\"][str(config_path)] (and preferably the matching push receipt value already expected from queue).",
+      "acceptance": "Untouched bound config passes; a byte-changed config is rejected before any issue query or remote/local branch deletion; wrong/missing committed config digest fails closed."
+    }
+  ],
+  "pending_binding_obligations": [
+    "Final helper-config counts/issue sets and report do not yet exist; verify and freeze before commit.",
+    "Current publish consumes final-gates.json/log; if correction produces a new gate path, bind publisher and review consumers to the actual completed successor receipt while preserving prior receipt.",
+    "No PR/head/preflight/hosted success is asserted by this preparation audit."
+  ],
+  "limitations": [
+    "Static full-source review only, with AST parsing and normalized diffs; no runtime or negative helper execution.",
+    "Concurrent source changes require a successor audit against fresh hashes."
+  ]
+}

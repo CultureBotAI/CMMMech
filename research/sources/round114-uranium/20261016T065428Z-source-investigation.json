@@ -1,0 +1,280 @@
+{
+  "recorded_at": "2026-10-16T06:54:28.566450+00:00",
+  "repository": "CultureBotAI/CMMMech",
+  "worktree": "/private/tmp/CMMMech-expansion-round114-20261016",
+  "base": "93f90797512dc8d1db3df9ce2e4994c475b1a4fe",
+  "curator": {
+    "actor_name": "codex",
+    "actor_type": "ai_agent",
+    "model": "GPT-6",
+    "agent_tool": "codex"
+  },
+  "scope": "Two uranium mineral owners; no criticality, microbial or industrial deployment claim. Primary evidence investigation and author curation, not independent scientific review.",
+  "selection": [
+    {
+      "rank": 1,
+      "record": "curite",
+      "reason": "Distinct grandfathered Pb uranyl mineral with complete primary synthetic batch dissolution/AFM study and natural structural refinement.",
+      "mapping": "mineral; abiotic process other; measurements retained only in qualified prose."
+    },
+    {
+      "rank": 2,
+      "record": "vandenbrandeite",
+      "reason": "Distinct grandfathered Cu uranyl mineral with primary natural-crystal identity and thermal alteration study.",
+      "mapping": "mineral; abiotic process other; no unsupported generic transformation enum or mg/kg observations."
+    }
+  ],
+  "dedup": {
+    "at": "2026-10-16T06:50:18.305895+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-l",
+      "-i",
+      "curite|vandenbrandeite|uranopilite|10\\.2113/gscanmin\\.44\\.2\\.415|10\\.1039/c8ra09557d|10\\.1039/c9ra09047a|10\\.1023/a:1013182917829|10\\.2138/am-2022-8272",
+      "/private/tmp/CMMMech-expansion-round114-20261016/data/records",
+      "/private/tmp/CMMMech-expansion-round114-20261016/research",
+      "/private/tmp/CMMMech-expansion-round114-20261016/reviews",
+      "/private/tmp/CMMMech-expansion-round114-20261016/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports",
+      "/private/tmp/cmm-round110-uranium-research",
+      "/private/tmp/cmm-round111-uranium-research",
+      "/private/tmp/cmm-round112-uranium-research",
+      "/private/tmp/cmm-round113-uranium-research"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "matching_paths": 32,
+    "record_owner_matches": [
+      "/private/tmp/CMMMech-expansion-round114-20261016/data/records/metastudtite.yaml"
+    ],
+    "raw_output_path": "/private/tmp/cmm-round114-uranium-research/dedup-final-matches.txt",
+    "raw_output_sha256": "4f034248d5373f985b45fa36f722123feef840e7221eeae301eb0489dcb19133",
+    "scope": "Hidden and ignored files included, relevant symlinks followed. Bounded maintained/ignored report/referenced prior raw roots; no machine-wide absence claim."
+  },
+  "issue_dedup": {
+    "at": "2026-10-16T06:52:01.303019+00:00",
+    "inventory": "/private/tmp/cmm-round114-open-issues.json",
+    "sha256": "521605c3cb93ffc3b809a9108c1077940510e75fc6651a192cf3c2f91c09ef33",
+    "count": 170,
+    "queries": [
+      "curite",
+      "vandenbrandeite",
+      "1013182917829",
+      "c9ra09047a",
+      "c8ra09557d",
+      "44.2.415"
+    ],
+    "matches": [],
+    "scope": "Supplied open issue title/body snapshot flattened from paginated array; comments and closed issues not included. Earlier issue-dedup.json erroneously counted page arrays and is superseded by this result."
+  },
+  "search_log": {
+    "recorded_at": "2026-10-16T06:54:28.566450+00:00",
+    "provider": "web.run search_query; direct primary acquisitions separately logged",
+    "queries": [
+      "curite crystal structure Burns 1997 dissolution uranium mineral PDF",
+      "vandenbrandeite crystal structure 2017 PDF thermal behavior",
+      "uranopilite crystal structure dissolution primary PDF",
+      "\"Dissolution of uranyl-oxide-hydroxy-hydrate minerals\" \"Curite\" pdf 2005 417",
+      "\"vandenbrandeite\" \"c9ra09047a\" supplementary pdf",
+      "\"curite\" \"10.2113\" \"2005\"",
+      "\"curite\" \"Schindler\" \"44\" \"415\" pdf -researchgate",
+      "site:frankhawthorne.com \"curite\" \"Dissolution\"",
+      "\"10.2113/gscanmin.44.2.415\"",
+      "site:frankhawthorne.com/_files/ \"DISSOLUTION\" \"I. CURITE\" -BILLIETITE -FOURMARIERITE",
+      "\"Schindler\" \"Curite\" \"415\" filetype:pdf -researchgate -billietite",
+      "\"c9ra09047a1.pdf\"",
+      "\"curite\" \"CM44\" \"415\"",
+      "\"vandenbrandeite\" \"2023\" \"695\"",
+      "\"curite\" \"2019\" \"10058\" hydrogen",
+      "\"10.2113/gscanmin.44.2.415\" correction erratum retraction",
+      "\"10.1039/c9ra09047a\" correction retraction",
+      "\"Characterization of vandenbrandeite\" pdf",
+      "\"10.2138/am-2022-8272\" pdf supplement",
+      "\"vandenbrandeite\" \"Frankland\" site:nora.nerc.ac.uk",
+      "\"vandenbrandeite\" \"am-2022-8272\" \"surrey\"",
+      "\"vandenbrandeite\" \"Frankland\" pdf 2023 -researchgate",
+      "\"vandenbrandeite\" \"10.1023\" correction retraction",
+      "\"curite\" \"c8ra09557d\" correction",
+      "\"8272FranklandPreprint.pdf\"",
+      "\"Characterization of vandenbrandeite\" site:openresearch.surrey.ac.uk",
+      "\"8272Frankland\" -site:s3.eu-central-1.amazonaws.com",
+      "\"Characterization of vandenbrandeite\" Surrey openresearch 2023 pdf",
+      "\"c9ra09047a\" \"suppdata\"",
+      "\"c8ra09557d\" \"suppdata\""
+    ],
+    "filters": "No date filter; literal site/minus operators retained in queries. Returned initial result sets only, no exhaustive pagination.",
+    "notice_assessment": "No applicable correction/retraction identified in these returned results or acquired DOI metadata; bounded search, not proof none exists. Initial search year2005 was corrected against actual2006 article and Crossref."
+  },
+  "primary_evidence": [
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/ima202609.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "role": "current identity authority",
+      "inspection": "Fresh official September2026 PDF: page1 definitions; curite page53, vandenbrandeite page226. G and original-description years, not approvalIDs.",
+      "license": "CC BY-SA 3.0"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/curite2006-author.pdf",
+      "bytes": 1368777,
+      "sha256": "42df36d71581587d0b3eb535a5e79b96de82355b8c216a3e9fcfd65daa0f2311",
+      "role": "primary synthetic dissolution experiment",
+      "inspection": "Complete17pp text and Figures1–10 visually examined; recipe419–420, results420–426, models427–429. No supplementary file advertised in inspected article.",
+      "license": "Publication copyright; redistribution permission not established"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/curite2019-publisher-mirror.pdf",
+      "bytes": 1059173,
+      "sha256": "93dad5ccad37751bc8bcda3a8ea75076c5b9df878b4af98fe731f8269b40ef39",
+      "role": "primary natural-crystal identity plus computation",
+      "inspection": "Complete6pp text, original Figure1–2 and Tables1–3 inspected. XRD on natural Shinkolobwe specimen separate from Torque water-orientation model. ESI unavailable.",
+      "license": "CC BY-NC 3.0 printed on article"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/vandenbrandeite2002.pdf",
+      "bytes": 296688,
+      "sha256": "49c5c43c0848f193fdca9dd7602864bda73d847e66f97643de7b216d82b14040",
+      "role": "primary natural thermal transformation",
+      "inspection": "Complete7pp text and Figures1,4–6 visually inspected; Figure2–3 H/D assignment not adopted. Methods177–178, thermal180–181, SEM182–183. Earlier Cejka1994 TG/DTA not acquired.",
+      "license": "Copyright2002 Kluwer; redistribution permission not established"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/vandenbrandeite2019-publisher-mirror.pdf",
+      "bytes": 1523915,
+      "sha256": "0b37e39aeb52375d6bbfc4da697c75130bda9cb2be645dab4a503cf10d7e698b",
+      "role": "primary natural-crystal identity plus computation",
+      "inspection": "Complete19pp acquired. Identity methods40711, structural results40712–40714 and Table1/Figure1 inspected; thermodynamic computational scope read, no numerical predictions adopted. Unavailable supplementary CIFs/tables not claimed inspected.",
+      "license": "CC BY-NC 3.0 printed on article"
+    }
+  ],
+  "additional_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/curite2000.pdf",
+      "bytes": 371896,
+      "sha256": "34d9dc5d365b767f70585d2f99a9f2af672400bdd741d673394f3114102b14ef"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/curite2019.xml",
+      "bytes": 70613,
+      "sha256": "3ca6cfeaf6a462857976eebb17eebf4a01b96a6bea01af2f76f723013d37bd56"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/vandenbrandeite2019.xml",
+      "bytes": 244172,
+      "sha256": "d91889298c4b3988491854e851f25f339221b38e2fe51b1d3c83643c66b6a3cf"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/crossref-curite2006.json",
+      "bytes": 2132,
+      "sha256": "797bad2e86f8237366bc3ed0dc82d38989d702202c45ab7e3a6667f1db1a0054"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/crossref-curite2019.json",
+      "bytes": 13595,
+      "sha256": "04160f88e49bbbda4d027fae6e7b64ae737ec7b4f75df4e8ef9e923806c97c8d"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/crossref-vandenbrandeite2019.json",
+      "bytes": 55666,
+      "sha256": "8b4775bc193a84be9be0757a86956beb5f61d7946bc7890c605e97351857be87"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/crossref-vanden2002-search.json",
+      "bytes": 85277,
+      "sha256": "aa9718db467c758c21f477b859049f0a05dd62b4cdbb3080106fb0efb6e3bc7a"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/crossref-vanden2023.json",
+      "bytes": 25815,
+      "sha256": "3d4fe023a8a1c12fdc7aa33d0b3f03951e45a834488fbe2b0c7fca2ced79867c"
+    }
+  ],
+  "acquisition_receipts": [
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/acquisition01.json",
+      "bytes": 2818,
+      "sha256": "31e011ef604ea43a8177175ae3f3d410f35ffa7b63133bff0d8137267025365d"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/acquisition02.json",
+      "bytes": 4580,
+      "sha256": "0b8fccb6e6e91442b5f7ec0f30fbd7126f78d904c71cbd92cbfcebe9331ce898"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/acquisition03.json",
+      "bytes": 3283,
+      "sha256": "bbbf1de0007efe2165c73858fb9ee5bae56be313f38acb2a3832da720d25da59"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/acquisition04.json",
+      "bytes": 3335,
+      "sha256": "c07b647674534f6461d3a1178b2f38dfe686bb8314a3a81e886d3ede513c0899"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/acquisition05.json",
+      "bytes": 2006,
+      "sha256": "d83337291ab2dc4dd834eeaa2a2ad39cf62167b0bfa747d95dda7226bcf89dc3"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-uranium-research/acquisition06.json",
+      "bytes": 2180,
+      "sha256": "925518b0c9bd426618b3feeec5955aa84826acb227e7fa094793bec1932b825f"
+    }
+  ],
+  "owner_freeze": {
+    "at": "2026-10-16T06:52:41.331857+00:00",
+    "files": {
+      "data/records/curite.yaml": "80065e1804a54175e496d51df415867bb645f5f000d70a486738f07fe767e3d8",
+      "history/records/curite/2026-10-16T065204Z-codex-e7dc88.yaml": "fe617aa476edbe808c640bdfe3683371cef529044f0dab66cc3a32b0c0eb4727",
+      "data/records/vandenbrandeite.yaml": "7e2fe85151c9023197b7933d178a6681138a2c4ff76a8178905c32cec42dceb9",
+      "history/records/vandenbrandeite/2026-10-16T065207Z-codex-c006f0.yaml": "2076802bbee34969ac368eca7394d2af8c80ae1e1a0764e0845ccd69af6bc9f9"
+    },
+    "validation": {
+      "curite": "Checked 1 record(s); 0 failed. Exit0",
+      "vandenbrandeite": "Initial single-file validation rejected invalid process enum transformation; corrected to supported other, repeat Checked 1 record(s); 0 failed. Exit0"
+    }
+  },
+  "source_conflicts": {
+    "curite": [
+      "2006 methods all24h versus pH3.5 results12h.",
+      "Weakly acidic Sr initialpH5.5 versus results5.8; not assumed identical precisecondition.",
+      "Abstract observed[110] versus body[011]; avoid disputedindices.",
+      "Pit relief not absolute dissolution; hillock swelling/precipitation unresolved; Sr adsorption/nonstoichiometry inferred.",
+      "2019 abstract per-unit-cell Pb wording does not replace structural formula; record avoids ambiguous numericalPb count. WaterH require Torque; proposed charge-compensation not directly resolved."
+    ],
+    "vandenbrandeite": [
+      "2002 sample selected from kasolite-bearing natural specimen; EDAX Cu/U metal-normalized, not whole-mineral grade.",
+      "Methods300–950°C versus reported250–380°C9.04%loss without rawcurve; do not adopt quantitative massloss.",
+      "Amorphous wordingabout600 versusabout700°C; no single universal onset claimed.",
+      "900°C mixedoxide XRD assignment reported in text; underlyingpatterns notplotted.",
+      "2019 computedmechanical/thermodynamic outputs not laboratory performance evidence."
+    ]
+  },
+  "access_limits": [
+    "Ordinary sandbox DNS failures retained in acquisition01; subsequent public-download commands used approved network access.",
+    "Curite2006 guessed RRUFF route404, replaced by actual coauthor-page PDF.",
+    "RSC2019 publisher PDF403, publishedPDFs legitimately acquired from public indexed mirrors and completeXML fromEuropePMC.",
+    "RSC guessed supplementary routes404 and EuropePMC supplementaryFiles timedout; noSI/CIF claims.",
+    "Vandenbrandeite2023 DOI10.2138/am-2022-8272 verified metadata, publisher403, official-preprint connection refused; institutional/indexed signed link discovery did not provide acquired original. Deferred.",
+    "Curite2000 original acquired as context but not needed for accepted claims; no independent re-refinement."
+  ],
+  "deferred": [
+    {
+      "candidate": "vandenbrandeite2023",
+      "need": "Acquire complete final or identified accepted manuscript plus associateddata; assess specimen-specific newer characterization before extending."
+    },
+    {
+      "candidate": "uranopilite",
+      "need": "Initial discovery lead only; not curated, no exhaustion claim."
+    }
+  ],
+  "validation": {
+    "curite": "Checked 1 record(s); 0 failed. Exit0",
+    "vandenbrandeite": "Initial single-file validation rejected invalid process enum transformation; corrected to supported other, repeat Checked 1 record(s); 0 failed. Exit0"
+  },
+  "handoff": "Owners/history frozen for independent root review. Fullbatch/history/reviewgate run by root separately; no pass inferred from namedvalidation. No schema/validator changes needed.",
+  "reuse": "Full primary literature, renders, rawmatches and metadata remain outsideGit; this compact dossier summarizes claims and hashes, not bulk content."
+}
