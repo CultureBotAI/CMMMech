@@ -13,14 +13,25 @@
   <nav>
     <a href="../index.html">Home</a>
     <a href="../browse.html">Browse</a>
+    <a href="../map.html">Text map</a>
+    <a href="../graph.html">Mechanism graph</a>
+    <a href="../index.json">JSON</a>
+    <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">Schema</a>
     <a href="https://github.com/CultureBotAI/CMMMech">GitHub</a>
+    <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </header>
 <main>
-<div class="breadcrumbs">
-  <a href="../index.html">CMMMech</a> &gt;
-  <a href="../kinds/mineral.html">Mineral</a> &gt;
-  <span>Willemite</span>
+<div class="page-top-bar">
+  <div class="breadcrumbs">
+    <a href="../index.html">CMMMech</a> &gt;
+    <a href="../kinds/mineral.html">Mineral</a> &gt;
+    <span>Willemite</span>
+  </div>
+  <form class="page-search" action="../browse.html" method="get" role="search">
+    <input type="search" name="q" placeholder="Search materials…" aria-label="Search materials">
+    <button type="submit">Search</button>
+  </form>
 </div>
 
 <h1>
@@ -30,22 +41,48 @@
 
 <p class="lede">Willemite is the zinc orthosilicate mineral Zn2SiO4, listed by IMA-CNMNC in September 2026 with grandfathered status G and original-description year 1830. It is distinct from hemimorphite, zincite, elemental zinc and mixed zinc-bearing ores or slags. The evidence concerns willemite assigned within weathered smelting slag associated with a lichen, and a separate synthetic analogue in laboratory acid leaching. The field study does not establish the lichen&#39;s necessary causal contribution, and the synthetic feed has unresolved composition inconsistencies. No inherited criticality, phase-specific recovered-product yield or industrial deployment is asserted.</p>
 
+<p style="margin: .4rem 0 1rem; font-size: .9rem; color: var(--muted);">
+  <strong>Explore across X-Mech:</strong>
+  <a href="https://culturebotai.github.io/MediaIngredientMech/app/?q=Willemite">MediaIngredientMech</a> ·
+  <a href="https://culturebotai.github.io/CultureMech/app/?q=Willemite">CultureMech</a> ·
+  <a href="https://culturebotai.github.io/CommunityMech/?q=Willemite">CommunityMech</a> ·
+  <a href="https://culturebotai.github.io/HabitatMech/browse.html?q=Willemite">HabitatMech</a> ·
+  <a href="https://culturebotai.github.io/TraitMech/pages/browse.html?q=Willemite">TraitMech</a> ·
+  <a href="../graph.html?q=Willemite">CMMMech Network Graph</a>
+</p>
+
 
 
 <div class="detail-section">
-  <h3>Microbial &amp; Biochemical Mechanisms (2)</h3>
+  <h2>Microbial &amp; Biochemical Mechanisms (2)</h2>
+  <svg viewBox="0 0 720 130" role="img" aria-label="Mechanism flow for Willemite" style="width:100%;max-width:720px;height:auto;margin:.4rem 0 .8rem;background:var(--surface);border:1px solid var(--line);border-radius:8px;display:block;">
+    <rect x="14" y="49" width="160" height="32" rx="6" fill="var(--pastel-a)" stroke="var(--accent)" />
+    <text x="94" y="69" text-anchor="middle" font-size="11" font-weight="700" fill="var(--ink)">Willemite</text>
+    <line x1="174" y1="65" x2="250" y2="28" stroke="var(--accent)" stroke-width="1.4" />
+    <rect x="250" y="15" width="150" height="26" rx="5" fill="var(--card)" stroke="var(--line)" />
+    <text x="325" y="32" text-anchor="middle" font-size="10.5" font-weight="600" fill="var(--accent)">bioleaching</text>
+    <line x1="400" y1="28" x2="446" y2="28" stroke="var(--muted)" stroke-width="1.2" />
+    <rect x="446" y="15" width="258" height="26" rx="5" fill="var(--card)" stroke="var(--line)" />
+    <text x="575" y="32" text-anchor="middle" font-size="10" fill="var(--ink)">Lichen-associated alteration of willem (Stereocaulon exutu)</text>
+    <line x1="174" y1="65" x2="250" y2="66" stroke="var(--accent)" stroke-width="1.4" />
+    <rect x="250" y="53" width="150" height="26" rx="5" fill="var(--card)" stroke="var(--line)" />
+    <text x="325" y="70" text-anchor="middle" font-size="10.5" font-weight="600" fill="var(--accent)">other</text>
+    <line x1="400" y1="66" x2="446" y2="66" stroke="var(--muted)" stroke-width="1.2" />
+    <rect x="446" y="53" width="258" height="26" rx="5" fill="var(--card)" stroke="var(--line)" />
+    <text x="575" y="70" text-anchor="middle" font-size="10" fill="var(--ink)">Laboratory acid dissolution of a synth</text>
+  </svg>
   <div class="mechanism-box" id="mechanism-lichen_associated_slag_weathering">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
-      <h4 style="margin: 0; font-size: 1.15rem;">Lichen-associated alteration of willemite assigned within mixed slag</h4>
+      <h3 style="margin: 0; font-size: 1.15rem;">Lichen-associated alteration of willemite assigned within mixed slag</h3>
       <div>
         <span class="badge">bioleaching</span>
-        <span class="badge" style="background: #e2f5e8; color: #1d733a;">Microbial</span>
+        <span class="badge badge-support">Microbial</span>
       </div>
     </div>
 
     <p style="margin: .4rem 0 .2rem; font-size: .92rem;">
       <strong>Associated Organisms:</strong>
-        <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=373707" target="_blank" rel="noopener"><em>Stereocaulon exutum</em> (<code>NCBITaxon:373707</code>)</a>    </p>
+        <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=373707" target="_blank" rel="noopener"><em>Stereocaulon exutum</em> (<code>NCBITaxon:373707</code>)</a> <a href="https://culturebotai.github.io/TaxonMech/browse.html?q=Stereocaulon%20exutum" title="Search Stereocaulon exutum in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>    </p>
 
     <p style="margin: .5rem 0; font-size: .95rem;">Willemite-bearing portions of smelting slag beneath Stereocaulon exutum showed hyphal penetration, etch pits and Zn-depleted weathered material. These field observations support a biological association with alteration. They do not isolate a lichen-specific dissolution pathway from other microorganisms or abiotic weathering; organic-acid dissolution and chelation remain proposed explanations.</p>
 
@@ -78,7 +115,7 @@
   </div>
   <div class="mechanism-box" id="mechanism-abiotic_sulfuric_acid_leaching">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
-      <h4 style="margin: 0; font-size: 1.15rem;">Laboratory acid dissolution of a synthetic willemite-assigned feed</h4>
+      <h3 style="margin: 0; font-size: 1.15rem;">Laboratory acid dissolution of a synthetic willemite-assigned feed</h3>
       <div>
         <span class="badge">other</span>
       </div>
@@ -117,7 +154,7 @@
 </div>
 
 <div class="detail-section">
-  <h3>Sources &amp; References</h3>
+  <h2>Sources &amp; References</h2>
   <ol style="padding-left: 1.2rem; margin: .4rem 0;">
     <li id="source-ima_2026_09" style="margin-bottom: .6rem; font-size: .92rem;">
       <strong>ima_2026_09</strong>: IMA-CNMNC, The New IMA List of Minerals, September 2026. Retained official original: definitions PDF page 1 and Willemite row page 235, Zn2(SiO4), G, 1830. This is a dated authority edition, not a claim that the live issuing-site index was accessible in this investigation.
@@ -148,7 +185,7 @@
 </div>
 
 <div class="detail-section">
-  <h3>Curation History</h3>
+  <h2>Curation History</h2>
   <table style="font-size: .88rem;">
     <thead>
       <tr>
@@ -174,7 +211,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · generated by <code>scripts/render_pages.py</code></p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (602 materials · 589 mechanisms · latest curation 2026-10-16 · corpus digest <code>b29dc11eae0a</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

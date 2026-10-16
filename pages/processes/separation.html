@@ -13,7 +13,12 @@
   <nav>
     <a href="../index.html">Home</a>
     <a href="../browse.html">Browse</a>
+    <a href="../map.html">Text map</a>
+    <a href="../graph.html">Mechanism graph</a>
+    <a href="../index.json">JSON</a>
+    <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">Schema</a>
     <a href="https://github.com/CultureBotAI/CMMMech">GitHub</a>
+    <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </header>
 <main>
@@ -26,900 +31,1006 @@
 <h1>Separation Mechanisms</h1>
 <p class="lede">Selective partitioning by biological or abiotic processes. See each record for microbial involvement, experimental conditions and recovery limits.</p>
 
-<form id="record-filters" class="record-filters" hidden>
-  <div>
-    <label for="record-query">Search materials</label>
-    <input id="record-query" type="search" placeholder="Name, formula, organism, process…">
-  </div>
-  <div>
-    <label for="record-kind">Material Kind</label>
-    <select id="record-kind">
-      <option value="">All kinds (29)</option>
-      <option value="element">Element (66)</option>
-      <option value="mineral">Mineral (354)</option>
-      <option value="secondary_resource">Secondary resource (111)</option>
-      <option value="commodity">Commodity (33)</option>
-      <option value="primary_resource">Primary resource (31)</option>
-      <option value="mineral_group">Mineral group (7)</option>
-    </select>
-  </div>
-  <div>
-    <label for="record-mechanism">Mechanism Process</label>
-    <select id="record-mechanism">
-      <option value="">All processes</option>
-      <option value="bioleaching">Bioleaching (157)</option>
-      <option value="biomineralization">Biomineralization (94)</option>
-      <option value="redox_transformation">Redox transformation (58)</option>
-      <option value="biosorption">Biosorption (16)</option>
-      <option value="separation">Separation (29)</option>
-      <option value="recovery">Recovery (19)</option>
-      <option value="other">Other (141)</option>
-    </select>
-  </div>
-  <div>
-    <label for="record-criticality">Criticality</label>
-    <select id="record-criticality">
-      <option value="">All criticality</option>
-      <option value="critical">Designated Critical</option>
-    </select>
-  </div>
-  <button type="reset">Clear filters</button>
-</form>
+<div class="browse-layout">
+  <aside class="facet-sidebar">
+    <h2>Filter records</h2>
+    <form id="record-filters" class="record-filters" hidden>
+      <div>
+        <label for="record-query">Search materials</label>
+        <input id="record-query" name="q" type="search" placeholder="Name, formula, organism, process…">
+      </div>
+      <div>
+        <label for="record-kind">Material Kind</label>
+        <select id="record-kind">
+          <option value="">All kinds (29)</option>
+          <option value="element">Element (66)</option>
+          <option value="mineral">Mineral (354)</option>
+          <option value="secondary_resource">Secondary resource (111)</option>
+          <option value="commodity">Commodity (33)</option>
+          <option value="primary_resource">Primary resource (31)</option>
+          <option value="mineral_group">Mineral group (7)</option>
+        </select>
+      </div>
+      <div>
+        <label for="record-mechanism">Mechanism Process</label>
+        <select id="record-mechanism">
+          <option value="">All processes</option>
+          <option value="bioleaching">Bioleaching (157)</option>
+          <option value="biomineralization">Biomineralization (94)</option>
+          <option value="redox_transformation">Redox transformation (58)</option>
+          <option value="biosorption">Biosorption (16)</option>
+          <option value="separation">Separation (29)</option>
+          <option value="recovery">Recovery (19)</option>
+          <option value="other">Other (141)</option>
+        </select>
+      </div>
+      <div>
+        <label for="record-criticality">Criticality</label>
+        <select id="record-criticality">
+          <option value="">All criticality</option>
+          <option value="critical">Designated Critical</option>
+        </select>
+      </div>
+      <div>
+        <label for="record-sort">Sort by</label>
+        <select id="record-sort" name="sort">
+          <option value="name-asc">Material name (A–Z)</option>
+          <option value="name-desc">Material name (Z–A)</option>
+          <option value="mechs-desc">Mechanisms (high–low)</option>
+          <option value="orgs-desc">Microbial agents (high–low)</option>
+          <option value="kind-asc">Material kind (A–Z)</option>
+          <option value="crit-desc">Criticality (critical first)</option>
+        </select>
+      </div>
+      <button type="reset">Clear filters</button>
+      <p id="record-count" role="status" aria-live="polite" style="margin: .2rem 0 0; font-size: .85rem; color: var(--muted);">29 materials</p>
+      <p style="margin: .2rem 0 0; font-size: .82rem;"><a href="../index.json" download>Download index.json</a></p>
+    </form>
+  </aside>
 
-<p id="record-count" role="status" aria-live="polite">29 materials</p>
-<p id="record-empty" hidden>No materials match your query or filters. Clear filters to show all.</p>
+  <div class="browse-main">
+    <p id="record-empty" hidden>No materials match your query or filters. Clear filters to show all.</p>
 
-<div class="record-table-scroll" role="region" aria-label="Materials table" tabindex="0">
-<table id="record-table">
-  <caption>Curated Materials and Minerals</caption>
-  <thead>
-    <tr>
-      <th scope="col">Material</th>
-      <th scope="col">Kind</th>
-      <th scope="col">Criticality</th>
-      <th scope="col">Mechanisms</th>
-      <th scope="col">Microbial Agents</th>
-      <th scope="col">Identifier</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="other separation"
-        data-critical="false"
-        data-search="acid mine drainage acid-mine-drainage secondary_resource acidic, metal- and sulfate-bearing drainage generated when mining exposes sulfide-bearing materials to oxidation. this record denotes the heterogeneous liquid mine-derived feed, distinct from natural ore, individual dissolved elements, coal-mine-drainage treatment solids, and isolated precipitate phases. the characterized brazilian copper-mine and south african mining-facility waters below are separate source-specific samples, not a universal composition or interchangeable reactor feed. no constituent criticality designation or industrial recovery performance is transferred to this resource. other separation">
-      <td>
-        <a href="../materials/acid-mine-drainage.html"><strong>Acid mine drainage</strong></a>
-        <p class="record-desc">Acidic, metal- and sulfate-bearing drainage generated when mining exposes sulfide-bearing materials to oxidation. This record denotes the heterogeneous liquid mine-derived feed, distinct from natural ore, individual dissolved elements, coal-mine-drainage treatment solids, and isolated precipitate phases. The characterized Brazilian copper-mine and South African mining-facility waters below are separate source-specific samples, not a universal composition or interchangeable reactor feed. No constituent criticality designation or industrial recovery performance is transferred to this resource.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>2</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="mineral"
-        data-mechanisms="separation"
-        data-critical="false"
-        data-search="alabandite alabandite mineral alabandite is the cubic manganese sulfide mineral, ideal formula mns, grandfathered in the september 2026 ima list. it is distinct from the mns polymorph rambergite, elemental manganese and a whole polymetallic ore. the accepted experiment identifies alabandite as one component of natural talvivaara black shale and measures its content in fractions from laboratory flotation with freeze-dried bacterial biomass. this is not pure-mineral testing, proof of a microbial surface mechanism, manganese product recovery or a criticality designation inherited from mn. separation staphylococcus carnosus ncbitaxon:1281">
-      <td>
-        <a href="../materials/alabandite.html"><strong>Alabandite</strong></a>
-        <p class="record-desc">Alabandite is the cubic manganese sulfide mineral, ideal formula MnS, grandfathered in the September 2026 IMA list. It is distinct from the MnS polymorph rambergite, elemental manganese and a whole polymetallic ore. The accepted experiment identifies alabandite as one component of natural Talvivaara black shale and measures its content in fractions from laboratory flotation with freeze-dried bacterial biomass. This is not pure-mineral testing, proof of a microbial surface mechanism, manganese product recovery or a criticality designation inherited from Mn.</p>
-      </td>
-      <td>
-        <span class="badge">mineral</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Staphylococcus carnosus</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="separation"
-        data-critical="false"
-        data-search="aluminium salt slag aluminium-salt-slag secondary_resource salt-flux-bearing mixed slag from aluminium scrap remelting, containing process salts and oxide-rich solids. the accepted study sampled a rotary furnace batch from a brazilian recycler using nacl/kcl flux. this resource is defined by salt-flux remelting origin, distinct from the existing post-metal-recovery secondary aluminium dross specimen, generic smelting slag, bauxite residue, elemental aluminium or a single mineral. laboratory water leaching and recovered salt crystals are documented; microbial action, inherited criticality and industrial deployment of this recipe are not. separation">
-      <td>
-        <a href="../materials/aluminium-salt-slag.html"><strong>Aluminium salt slag</strong></a>
-        <p class="record-desc">Salt-flux-bearing mixed slag from aluminium scrap remelting, containing process salts and oxide-rich solids. The accepted study sampled a rotary furnace batch from a Brazilian recycler using NaCl/KCl flux. This resource is defined by salt-flux remelting origin, distinct from the existing post-metal-recovery secondary aluminium dross specimen, generic smelting slag, bauxite residue, elemental aluminium or a single mineral. Laboratory water leaching and recovered salt crystals are documented; microbial action, inherited criticality and industrial deployment of this recipe are not.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="bioleaching separation"
-        data-critical="false"
-        data-search="basic-oxygen-furnace steel slag basic-oxygen-furnace-steel-slag secondary_resource steelmaking slag identified by primary studies as basic-oxygen-furnace (bof), or linz-donawitz converter, slag. the separately studied feeds are a december 2016 sample from yarborough, scunthorpe, uk, and a sample supplied by an unnamed austrian steelmaking company in the 2022 study. this process-defined secondary resource is distinct from electric-arc-furnace slag or dust, blast-furnace residues, copper smelter slag, constituent elements and individual mineral species. these heterogeneous samples do not define all bof slags. no inherited elemental identifier or criticality designation is assigned. bioleaching separation">
-      <td>
-        <a href="../materials/basic-oxygen-furnace-steel-slag.html"><strong>Basic-oxygen-furnace steel slag</strong></a>
-        <p class="record-desc">Steelmaking slag identified by primary studies as basic-oxygen-furnace (BOF), or Linz-Donawitz converter, slag. The separately studied feeds are a December 2016 sample from Yarborough, Scunthorpe, UK, and a sample supplied by an unnamed Austrian steelmaking company in the 2022 study. This process-defined secondary resource is distinct from electric-arc-furnace slag or dust, blast-furnace residues, copper smelter slag, constituent elements and individual mineral species. These heterogeneous samples do not define all BOF slags. No inherited elemental identifier or criticality designation is assigned.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>4</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="mineral"
-        data-mechanisms="separation"
-        data-critical="false"
-        data-search="cassiterite cassiterite mineral cassiterite is the mineral species with ima-approved formula sno2. the september 2026 ima list records grandfathered status g and original description year 1832; that year is not an ima approval identifier. the mineral is distinct from elemental tin, a tin commodity, and a cassiterite-bearing experimental feed. the curated separation study used a brazilian mineral sample reported as 84.7% pure by x-ray fluorescence, rather than a demonstrated pure sno2 phase. no criticality designation is inherited from tin. separation rhodococcus opacus ncbitaxon:37919">
-      <td>
-        <a href="../materials/cassiterite.html"><strong>Cassiterite</strong></a>
-        <p class="record-desc">Cassiterite is the mineral species with IMA-approved formula SnO2. The September 2026 IMA list records grandfathered status G and original description year 1832; that year is not an IMA approval identifier. The mineral is distinct from elemental tin, a tin commodity, and a cassiterite-bearing experimental feed. The curated separation study used a Brazilian mineral sample reported as 84.7% pure by X-ray fluorescence, rather than a demonstrated pure SnO2 phase. No criticality designation is inherited from tin.</p>
-      </td>
-      <td>
-        <span class="badge">mineral</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Rhodococcus opacus</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="separation"
-        data-critical="false"
-        data-search="ferrochrome slag ferrochrome-slag secondary_resource mixed slag generated during smelting of chromite-bearing feed to produce ferrochrome alloy. the curated experiment used waste supplied by zimasco at kwekwe, zimbabwe. this processing-derived resource is distinct from chromite ore, physical beneficiation tailings, chromite ore processing residue from chemical chromium extraction, the ferrochrome alloy product and individual slag mineral phases. composition varies with feed and process; the selected sample is not a universal specification. no constituent criticality designation or mineral identifier is inherited. separation">
-      <td>
-        <a href="../materials/ferrochrome-slag.html"><strong>Ferrochrome slag</strong></a>
-        <p class="record-desc">Mixed slag generated during smelting of chromite-bearing feed to produce ferrochrome alloy. The curated experiment used waste supplied by Zimasco at Kwekwe, Zimbabwe. This processing-derived resource is distinct from chromite ore, physical beneficiation tailings, chromite ore processing residue from chemical chromium extraction, the ferrochrome alloy product and individual slag mineral phases. Composition varies with feed and process; the selected sample is not a universal specification. No constituent criticality designation or mineral identifier is inherited.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="separation"
-        data-critical="false"
-        data-search="flue-gas-desulfurization wastewater flue-gas-desulfurization-wastewater secondary_resource liquid residual streams generated by wet flue-gas desulfurization and associated wastewater treatment, distinct from solid fgd gypsum, coal ash, elemental selenium and natural mineral resources. the accepted experiment concerns a particular coal-power-plant effluent after physical/chemical pretreatment and dilution, not an invariant composition or all fgd streams. its selenium-bearing residuals were investigated for treatment; no marketable recovered selenium product or inherited criticality is asserted. separation">
-      <td>
-        <a href="../materials/flue-gas-desulfurization-wastewater.html"><strong>Flue-gas-desulfurization wastewater</strong></a>
-        <p class="record-desc">Liquid residual streams generated by wet flue-gas desulfurization and associated wastewater treatment, distinct from solid FGD gypsum, coal ash, elemental selenium and natural mineral resources. The accepted experiment concerns a particular coal-power-plant effluent after physical/chemical pretreatment and dilution, not an invariant composition or all FGD streams. Its selenium-bearing residuals were investigated for treatment; no marketable recovered selenium product or inherited criticality is asserted.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="mineral"
-        data-mechanisms="separation"
-        data-critical="false"
-        data-search="fluorite fluorite mineral fluorite is the calcium fluoride mineral caf2, listed with grandfathered status g in the ima-cnmnc september 2026 mineral list. its original-description year is unresolved in that list; no numbered approval accession is asserted. the handbook of mineralogy describes cubic fluorite and natural hydrothermal, sedimentary and igneous occurrences. this mineral owner is distinct from the traded fluorspar commodity and elemental fluorine. the experiments below use ground natural crystals reported as 99% caf2 and concern bacterial-cell-associated flocculation and settling. they establish neither mineral dissolution nor production of a specified fluorspar grade. no criticality designation is inherited from the commodity or element, and no industrial deployment is claimed. separation corynebacterium xerosis ncbitaxon:1725">
-      <td>
-        <a href="../materials/fluorite.html"><strong>Fluorite</strong></a>
-        <p class="record-desc">Fluorite is the calcium fluoride mineral CaF2, listed with grandfathered status G in the IMA-CNMNC September 2026 mineral list. Its original-description year is unresolved in that list; no numbered approval accession is asserted. The Handbook of Mineralogy describes cubic fluorite and natural hydrothermal, sedimentary and igneous occurrences. This mineral owner is distinct from the traded fluorspar commodity and elemental fluorine. The experiments below use ground natural crystals reported as 99% CaF2 and concern bacterial-cell-associated flocculation and settling. They establish neither mineral dissolution nor production of a specified fluorspar grade. No criticality designation is inherited from the commodity or element, and no industrial deployment is claimed.</p>
-      </td>
-      <td>
-        <span class="badge">mineral</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Corynebacterium xerosis</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="mineral"
-        data-mechanisms="separation"
-        data-critical="false"
-        data-search="löllingite loellingite mineral löllingite, commonly written loellingite, is the orthorhombic iron arsenide mineral with ideal formula feas2. the september 2026 ima list records it as grandfathered, with original-description year 1845. it is distinct from arsenopyrite, skutterudite, elemental arsenic and a mixed arsenic-bearing ore. natural compositions need not be exact endmembers. the accepted microbial experiment concerns a quantified loellingite-arsenopyrite feed mixed with pyrite, not purified loellingite. its flotation response does not establish dissolved-metal extraction, an isolated loellingite product or industrial deployment. no constituent-element criticality is inherited. separation leptospirillum ferrooxidans ncbitaxon:180">
-      <td>
-        <a href="../materials/loellingite.html"><strong>Löllingite</strong></a>
-        <p class="record-desc">Löllingite, commonly written loellingite, is the orthorhombic iron arsenide mineral with ideal formula FeAs2. The September 2026 IMA list records it as grandfathered, with original-description year 1845. It is distinct from arsenopyrite, skutterudite, elemental arsenic and a mixed arsenic-bearing ore. Natural compositions need not be exact endmembers. The accepted microbial experiment concerns a quantified loellingite-arsenopyrite feed mixed with pyrite, not purified loellingite. Its flotation response does not establish dissolved-metal extraction, an isolated loellingite product or industrial deployment. No constituent-element criticality is inherited.</p>
-      </td>
-      <td>
-        <span class="badge">mineral</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Leptospirillum ferrooxidans</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="separation"
-        data-critical="false"
-        data-search="ludwigite boron-iron ore ludwigite-ore primary_resource ludwigite ore denotes a heterogeneous boron-bearing iron ore or its beneficiated boron-iron concentrate, represented here by the mixed geological feed used by liang et al. (2024). it is not the mineral species ludwigite, elemental boron or iron, a borates commodity specification, or the secondary residue left after processing. the experimental substrate for water leaching was a soda-ash-roasted derivative of that concentrate; its altered composition must not be assigned to the original ore. the paper&#39;s table 2 reports 5.12 wt% b2o3 and 58.23 wt% total iron in this reduced feed, and figure 9 identifies metallic iron, sodium magnesium silicate, sodium silicate and magnesium-ferrous oxide. its bulk-feed result cannot establish which individual original boron mineral supplied the dissolved boron. the exact mine/sample identifier and original batch mineral proportions are not established in the inspected 2024 article, which refers to earlier work for the ore characterization. no constituent&#39;s criticality designation is transferred to this resource. separation">
-      <td>
-        <a href="../materials/ludwigite-ore.html"><strong>Ludwigite boron-iron ore</strong></a>
-        <p class="record-desc">Ludwigite ore denotes a heterogeneous boron-bearing iron ore or its beneficiated boron-iron concentrate, represented here by the mixed geological feed used by Liang et al. (2024). It is not the mineral species ludwigite, elemental boron or iron, a borates commodity specification, or the secondary residue left after processing. The experimental substrate for water leaching was a soda-ash-roasted derivative of that concentrate; its altered composition must not be assigned to the original ore. The paper&#39;s Table 2 reports 5.12 wt% B2O3 and 58.23 wt% total iron in this reduced feed, and Figure 9 identifies metallic iron, sodium magnesium silicate, sodium silicate and magnesium-ferrous oxide. Its bulk-feed result cannot establish which individual original boron mineral supplied the dissolved boron. The exact mine/sample identifier and original batch mineral proportions are not established in the inspected 2024 article, which refers to earlier work for the ore characterization. No constituent&#39;s criticality designation is transferred to this resource.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="element"
-        data-mechanisms="separation"
-        data-critical="true"
-        data-search="praseodymium praseodymium element the element pr, distinct from dissolved pr(iii), its salts and oxides, pr-containing magnet alloys and ore or waste resources. the us2025 designation applies to the named praseodymium mineral commodity. evidence below concerns cell-free protein chromatography of a synthetic binary solution, not microbial growth on an ore or industrial recovery. chebi:49828 praseodymium atom separation methylobacterium sp. 13mftsu3.1m2 ncbitaxon:1502776 united states of america usgs final list of critical minerals (critical)">
-      <td>
-        <a href="../materials/praseodymium.html"><strong>Praseodymium</strong></a>
-        <p class="record-desc">The element Pr, distinct from dissolved Pr(III), its salts and oxides, Pr-containing magnet alloys and ore or waste resources. The US2025 designation applies to the named praseodymium mineral commodity. Evidence below concerns cell-free protein chromatography of a synthetic binary solution, not microbial growth on an ore or industrial recovery.</p>
-      </td>
-      <td>
-        <span class="badge">element</span>
-      </td>
-      <td>
-        <span class="badge badge-critical">Critical</span>
-        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
-          United States of America USGS Final List of Critical Minerals (critical)
-        </div>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Methylobacterium sp. 13MFTsu3.1M2</li>
-        </ul>
-      </td>
-      <td>
-        <div><code>CHEBI:49828</code></div>
-      </td>
-    </tr>
-    <tr data-kind="commodity"
-        data-mechanisms="separation"
-        data-critical="true"
-        data-search="rare-earth-element commodities, australian list scope rare-earth-element-commodities commodity this collective commodity family follows australia&#39;s 20 february 2024 rare-earth-elements entry: yttrium and all fifteen lanthanides, including promethium. scandium has a separate entry in that list. this sixteen-member economic grouping differs from the broader seventeen-element chemical definition, which also includes scandium, and from the eu 2020 assessment&#39;s fifteen-member light/heavy split, which excludes both scandium and promethium. inclusion of promethium preserves the australian source&#39;s stated membership and does not assert an ordinary mined promethium supply. this family overlaps individual element records and narrower rare-earth commodity groups; it is not one mineral, alloy or fixed mixture. the mechanism below concerns only a synthetic neodymium/dysprosium solution and does not establish recovery of every family member or treatment of ore, magnets or industrial waste. separation hansschlegelia quercus ncbitaxon:2528245 australia australia&#39;s critical minerals list; rare-earth-elements group, footnote 17 (critical)">
-      <td>
-        <a href="../materials/rare-earth-element-commodities.html"><strong>Rare-earth-element commodities, Australian list scope</strong></a>
-        <p class="record-desc">This collective commodity family follows Australia&#39;s 20 February 2024 rare-earth-elements entry: yttrium and all fifteen lanthanides, including promethium. Scandium has a separate entry in that list. This sixteen-member economic grouping differs from the broader seventeen-element chemical definition, which also includes scandium, and from the EU 2020 assessment&#39;s fifteen-member light/heavy split, which excludes both scandium and promethium. Inclusion of promethium preserves the Australian source&#39;s stated membership and does not assert an ordinary mined promethium supply. This family overlaps individual element records and narrower rare-earth commodity groups; it is not one mineral, alloy or fixed mixture. The mechanism below concerns only a synthetic neodymium/dysprosium solution and does not establish recovery of every family member or treatment of ore, magnets or industrial waste.</p>
-      </td>
-      <td>
-        <span class="badge">commodity</span>
-      </td>
-      <td>
-        <span class="badge badge-critical">Critical</span>
-        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
-          Australia Australia&#39;s Critical Minerals List; rare-earth-elements group, footnote 17 (critical)
-        </div>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Hansschlegelia quercus</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="recovery separation"
-        data-critical="false"
-        data-search="samarium-cobalt magnet scrap samarium-cobalt-magnet-scrap secondary_resource source-labelled samarium-cobalt magnet scrap supplied by the defence metallurgical research laboratory, hyderabad, india. its preceding service history and manufacturing-waste category were not disclosed, so the feed is not asserted to be end-of-life devices. it is distinct from ndfeb magnet waste, the broad rare-earth permanent-magnet commodity grouping, pure sm2co17 and its constituent elements. the characterized preparation includes oxide phases as well as a sm2co17 assignment. no criticality designation or microbial recovery is inherited from the feed&#39;s constituents. recovery separation">
-      <td>
-        <a href="../materials/samarium-cobalt-magnet-scrap.html"><strong>Samarium-cobalt magnet scrap</strong></a>
-        <p class="record-desc">Source-labelled samarium-cobalt magnet scrap supplied by the Defence Metallurgical Research Laboratory, Hyderabad, India. Its preceding service history and manufacturing-waste category were not disclosed, so the feed is not asserted to be end-of-life devices. It is distinct from NdFeB magnet waste, the broad rare-earth permanent-magnet commodity grouping, pure Sm2Co17 and its constituent elements. The characterized preparation includes oxide phases as well as a Sm2Co17 assignment. No criticality designation or microbial recovery is inherited from the feed&#39;s constituents.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>2</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="element"
-        data-mechanisms="separation"
-        data-critical="true"
-        data-search="scandium scandium element the element sc, distinct from dissolved sc(iii), scandium chloride, scandium oxide, sc-bearing minerals and waste feedstocks. the us2025 designation concerns the named scandium mineral commodity. laboratory evidence below uses an immobilized bacterial protein and synthetic dissolved-metal mixtures; it does not demonstrate living-cell extraction. chebi:33330 scandium atom separation methylorubrum extorquens ncbitaxon:408 united states of america usgs final list of critical minerals (critical)">
-      <td>
-        <a href="../materials/scandium.html"><strong>Scandium</strong></a>
-        <p class="record-desc">The element Sc, distinct from dissolved Sc(III), scandium chloride, scandium oxide, Sc-bearing minerals and waste feedstocks. The US2025 designation concerns the named scandium mineral commodity. Laboratory evidence below uses an immobilized bacterial protein and synthetic dissolved-metal mixtures; it does not demonstrate living-cell extraction.</p>
-      </td>
-      <td>
-        <span class="badge">element</span>
-      </td>
-      <td>
-        <span class="badge badge-critical">Critical</span>
-        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
-          United States of America USGS Final List of Critical Minerals (critical)
-        </div>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Methylorubrum extorquens</li>
-        </ul>
-      </td>
-      <td>
-        <div><code>CHEBI:33330</code></div>
-      </td>
-    </tr>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="separation"
-        data-critical="false"
-        data-search="secondary aluminium dross secondary-aluminium-dross secondary_resource heterogeneous residual aluminium dross after an earlier recovery of metallic aluminium from primary dross by screening or flux-assisted remelting. this source-defined secondary dross is narrower than the umbrella aluminium-dross category; the accepted specimen came from an aluminium remelting plant in guangxi, china. it contains metallic aluminium, aluminium oxides and nitride, magnesium-aluminium spinel, and other oxides and process salts. it is not a mineral species, elemental aluminium, bauxite residue, spent potlining, or an automatically equivalent feed to an unspecified aluminium-smelting slag. laboratory chemical extraction is documented without a microbial mechanism, inherited criticality designation, or demonstrated industrial deployment. separation">
-      <td>
-        <a href="../materials/secondary-aluminium-dross.html"><strong>Secondary aluminium dross</strong></a>
-        <p class="record-desc">Heterogeneous residual aluminium dross after an earlier recovery of metallic aluminium from primary dross by screening or flux-assisted remelting. This source-defined secondary dross is narrower than the umbrella aluminium-dross category; the accepted specimen came from an aluminium remelting plant in Guangxi, China. It contains metallic aluminium, aluminium oxides and nitride, magnesium-aluminium spinel, and other oxides and process salts. It is not a mineral species, elemental aluminium, bauxite residue, spent potlining, or an automatically equivalent feed to an unspecified aluminium-smelting slag. Laboratory chemical extraction is documented without a microbial mechanism, inherited criticality designation, or demonstrated industrial deployment.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="recovery separation"
-        data-critical="false"
-        data-search="spent copper-zinc-alumina catalyst spent-copper-zinc-alumina-catalyst secondary_resource used cuo-zno-al2o3 catalyst material from synthesis-gas processing, including low-temperature carbon monoxide conversion. this composition-defined secondary resource is distinct from fresh catalyst, its constituent oxides, elemental copper/zinc and spent refinery hydroprocessing catalysts. the selected polish-market sample had 35.1 wt% cu, 29.9 wt% zn and 9.2 wt% al by aas; these are sample measurements, not a universal formulation. its plant and service history are unspecified. no constituent criticality is inherited. recovery separation">
-      <td>
-        <a href="../materials/spent-copper-zinc-alumina-catalyst.html"><strong>Spent copper-zinc-alumina catalyst</strong></a>
-        <p class="record-desc">Used CuO-ZnO-Al2O3 catalyst material from synthesis-gas processing, including low-temperature carbon monoxide conversion. This composition-defined secondary resource is distinct from fresh catalyst, its constituent oxides, elemental copper/zinc and spent refinery hydroprocessing catalysts. The selected Polish-market sample had 35.1 wt% Cu, 29.9 wt% Zn and 9.2 wt% Al by AAS; these are sample measurements, not a universal formulation. Its plant and service history are unspecified. No constituent criticality is inherited.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>2</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="recovery separation"
-        data-critical="false"
-        data-search="spent iron-molybdate oxidation catalyst spent-iron-molybdate-oxidation-catalyst secondary_resource used iron-molybdate catalyst from methanol oxidation for formaldehyde production. this process-defined secondary resource contains iron molybdate and excess molybdenum oxide, with feed-specific impurities and amorphous material. it is distinct from molybdenite, elemental molybdenum, fresh catalyst and spent ni/co-mo refinery catalysts. two primary studies examine different spent feeds; their compositions and yields are not interchangeable. no mineral identifier or constituent-element criticality is assigned. recovery separation">
-      <td>
-        <a href="../materials/spent-iron-molybdate-oxidation-catalyst.html"><strong>Spent iron-molybdate oxidation catalyst</strong></a>
-        <p class="record-desc">Used iron-molybdate catalyst from methanol oxidation for formaldehyde production. This process-defined secondary resource contains iron molybdate and excess molybdenum oxide, with feed-specific impurities and amorphous material. It is distinct from molybdenite, elemental molybdenum, fresh catalyst and spent Ni/Co-Mo refinery catalysts. Two primary studies examine different spent feeds; their compositions and yields are not interchangeable. No mineral identifier or constituent-element criticality is assigned.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>3</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="separation"
-        data-critical="false"
-        data-search="spent nickel steam-reforming catalyst spent-nickel-steam-reforming-catalyst secondary_resource used nickel-bearing catalyst from primary steam reforming, represented by a spent nickel-oxide/alumina formulation supplied by an unnamed fertilizer plant. this use-defined secondary resource is distinct from vegetable-oil hydrogenation catalyst, platinum petroleum-reforming catalyst, fresh catalyst and elemental nickel. the selected feed composition does not define every steam-reforming formulation. no constituent criticality or mineral identifier is inherited. separation">
-      <td>
-        <a href="../materials/spent-nickel-steam-reforming-catalyst.html"><strong>Spent nickel steam-reforming catalyst</strong></a>
-        <p class="record-desc">Used nickel-bearing catalyst from primary steam reforming, represented by a spent nickel-oxide/alumina formulation supplied by an unnamed fertilizer plant. This use-defined secondary resource is distinct from vegetable-oil hydrogenation catalyst, platinum petroleum-reforming catalyst, fresh catalyst and elemental nickel. The selected feed composition does not define every steam-reforming formulation. No constituent criticality or mineral identifier is inherited.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="separation"
-        data-critical="false"
-        data-search="spent platinum petroleum-reforming catalyst spent-platinum-petroleum-reforming-catalyst secondary_resource used platinum-bearing catalyst from petroleum reforming, represented by a source-described monometallic pt/al2o3 catalyst. this use-defined secondary resource is distinct from automotive converters, nickel steam-reforming catalysts, refinery hydroprocessing catalysts, fresh catalyst and elemental platinum. the selected feed composition does not define every reforming formulation. no constituent criticality or mineral identifier is inherited. separation">
-      <td>
-        <a href="../materials/spent-platinum-petroleum-reforming-catalyst.html"><strong>Spent platinum petroleum-reforming catalyst</strong></a>
-        <p class="record-desc">Used platinum-bearing catalyst from petroleum reforming, represented by a source-described monometallic Pt/Al2O3 catalyst. This use-defined secondary resource is distinct from automotive converters, nickel steam-reforming catalysts, refinery hydroprocessing catalysts, fresh catalyst and elemental platinum. The selected feed composition does not define every reforming formulation. No constituent criticality or mineral identifier is inherited.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="recovery separation"
-        data-critical="false"
-        data-search="spent potlining spent-potlining secondary_resource exhausted aluminium-smelting cell lining containing variable proportions of carbonaceous cathode material, refractory cement and brick, and accumulated process salts. the accepted study used real mixed-cut waste supplied by trimet aluminium, essen, germany, with three visually selected grades from refractory-rich to mainly graphitic material. exact cell and service histories were not resolved. this solid waste is distinct from aluminium dross, waste electrolyte, red mud, graphite as a mineral or commodity, and its constituent elements. laboratory chemical extraction is documented without a microbial mechanism or an inherited criticality designation. recovery separation">
-      <td>
-        <a href="../materials/spent-potlining.html"><strong>Spent potlining</strong></a>
-        <p class="record-desc">Exhausted aluminium-smelting cell lining containing variable proportions of carbonaceous cathode material, refractory cement and brick, and accumulated process salts. The accepted study used real mixed-cut waste supplied by Trimet Aluminium, Essen, Germany, with three visually selected grades from refractory-rich to mainly graphitic material. Exact cell and service histories were not resolved. This solid waste is distinct from aluminium dross, waste electrolyte, red mud, graphite as a mineral or commodity, and its constituent elements. Laboratory chemical extraction is documented without a microbial mechanism or an inherited criticality designation.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>2</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="bioleaching separation"
-        data-critical="false"
-        data-search="spent selective catalytic reduction catalyst spent-selective-catalytic-reduction-catalyst secondary_resource used vanadia-tungsta/titania catalysts from coal-fired power-plant flue-gas denitrification, represented by separately characterized laboratory feeds. niu and colleagues studied an arsenic-contaminated honeycomb catalyst from a xinjiang plant; su and colleagues separately studied gray and yellow regions of three spent honeycomb catalysts, s3–s5. this manufactured, heterogeneous secondary resource is distinct from refinery hydroprocessing, fluid catalytic cracking and sulfuric-acid-production catalysts, pure constituent oxides, mineral species and elemental vanadium or tungsten. v2o5-wo3/tio2 is the sources&#39; catalyst formulation notation, not proof of three separately quantified crystalline phases. fresh catalysts s1–s2 in su&#39;s study are comparators, not spent-resource observations. no criticality designation is inherited from the constituents. bioleaching separation acidithiobacillus thiooxidans atcc 19377 ncbitaxon:637390">
-      <td>
-        <a href="../materials/spent-selective-catalytic-reduction-catalyst.html"><strong>Spent selective catalytic reduction catalyst</strong></a>
-        <p class="record-desc">Used vanadia-tungsta/titania catalysts from coal-fired power-plant flue-gas denitrification, represented by separately characterized laboratory feeds. Niu and colleagues studied an arsenic-contaminated honeycomb catalyst from a Xinjiang plant; Su and colleagues separately studied gray and yellow regions of three spent honeycomb catalysts, S3–S5. This manufactured, heterogeneous secondary resource is distinct from refinery hydroprocessing, fluid catalytic cracking and sulfuric-acid-production catalysts, pure constituent oxides, mineral species and elemental vanadium or tungsten. V2O5-WO3/TiO2 is the sources&#39; catalyst formulation notation, not proof of three separately quantified crystalline phases. Fresh catalysts S1–S2 in Su&#39;s study are comparators, not spent-resource observations. No criticality designation is inherited from the constituents.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>2</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Acidithiobacillus thiooxidans ATCC 19377</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="separation"
-        data-critical="false"
-        data-search="tungsten skarn-processing tailings tungsten-skarn-tailings secondary_resource residual mineral solids generated by processing tungsten-bearing skarn ore. the curated case is historical tailings in the smaltjärnen repository at the closed yxsjöberg tungsten, copper and fluorspar mine in sweden. the processing plant used gravity separation, magnetic separation and flotation. the characterized layered material contains scheelite among mixed silicate, carbonate, sulfide and other minerals; composition and particle liberation vary by sampled layer. this resource is distinct from tungsten as an element, pure scheelite, unprocessed ore, waste rock and a saleable concentrate. hällström et al. document scheelite alteration, hydrous ferric oxide associations and tungsten transport in a field investigation of this repository; those geochemical observations do not establish microbial causation. no criticality designation is inherited from constituents, and the laboratory results below do not characterize all tungsten tailings. separation">
-      <td>
-        <a href="../materials/tungsten-skarn-tailings.html"><strong>Tungsten skarn-processing tailings</strong></a>
-        <p class="record-desc">Residual mineral solids generated by processing tungsten-bearing skarn ore. The curated case is historical tailings in the Smaltjärnen repository at the closed Yxsjöberg tungsten, copper and fluorspar mine in Sweden. The processing plant used gravity separation, magnetic separation and flotation. The characterized layered material contains scheelite among mixed silicate, carbonate, sulfide and other minerals; composition and particle liberation vary by sampled layer. This resource is distinct from tungsten as an element, pure scheelite, unprocessed ore, waste rock and a saleable concentrate. Hällström et al. document scheelite alteration, hydrous ferric oxide associations and tungsten transport in a field investigation of this repository; those geochemical observations do not establish microbial causation. No criticality designation is inherited from constituents, and the laboratory results below do not characterize all tungsten tailings.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="bioleaching separation"
-        data-critical="false"
-        data-search="uranium mine tailings uranium-mine-tailings secondary_resource heterogeneous residual solids in uranium-mine tailings management areas, represented here by dt and rat samples from two decommissioned elliot lake, ontario sites. these are secondary mining residues, distinct from unprocessed uranium ore, individual uranium minerals, drainage water and purified elements. the original processing flowsheets and the expansions of the two sample-site abbreviations are not established by the curated study. laboratory evidence concerns culture-associated metal solubilization and a separate resin screen; it does not establish industrial recovery or a resolved uranium extraction yield. no constituent-element criticality designation is inherited by these tailings. bioleaching separation">
-      <td>
-        <a href="../materials/uranium-mine-tailings.html"><strong>Uranium mine tailings</strong></a>
-        <p class="record-desc">Heterogeneous residual solids in uranium-mine tailings management areas, represented here by DT and RAT samples from two decommissioned Elliot Lake, Ontario sites. These are secondary mining residues, distinct from unprocessed uranium ore, individual uranium minerals, drainage water and purified elements. The original processing flowsheets and the expansions of the two sample-site abbreviations are not established by the curated study. Laboratory evidence concerns culture-associated metal solubilization and a separate resin screen; it does not establish industrial recovery or a resolved uranium extraction yield. No constituent-element criticality designation is inherited by these tailings.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>2</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="element"
-        data-mechanisms="separation"
-        data-critical="true"
-        data-search="uranium uranium element uranium (u), represented here as an element distinct from the dissolved u(vi) feed and electrode-associated material in a laboratory bioelectrochemical separation study. the united states 2025 designation applies to the named uranium commodity; it does not identify a uranium mineral species or establish the criticality of every uranium compound. chebi:27214 uranium atom separation shewanella oneidensis mr-1 ncbitaxon:211586 united states of america u.s. department of the interior final list of critical minerals (critical)">
-      <td>
-        <a href="../materials/uranium.html"><strong>Uranium</strong></a>
-        <p class="record-desc">Uranium (U), represented here as an element distinct from the dissolved U(VI) feed and electrode-associated material in a laboratory bioelectrochemical separation study. The United States 2025 designation applies to the named uranium commodity; it does not identify a uranium mineral species or establish the criticality of every uranium compound.</p>
-      </td>
-      <td>
-        <span class="badge">element</span>
-      </td>
-      <td>
-        <span class="badge badge-critical">Critical</span>
-        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
-          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
-        </div>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Shewanella oneidensis MR-1</li>
-        </ul>
-      </td>
-      <td>
-        <div><code>CHEBI:27214</code></div>
-      </td>
-    </tr>
-    <tr data-kind="element"
-        data-mechanisms="separation"
-        data-critical="true"
-        data-search="vanadium vanadium element vanadium (v), represented here as an element distinct from the dissolved v(v) feed and electrode-associated material in a laboratory bioelectrochemical separation study. the united states 2025 designation applies to the named vanadium commodity; it does not identify a vanadium mineral species or establish the criticality of every vanadium compound. chebi:27698 vanadium atom separation shewanella oneidensis mr-1 ncbitaxon:211586 united states of america u.s. department of the interior final list of critical minerals (critical)">
-      <td>
-        <a href="../materials/vanadium.html"><strong>Vanadium</strong></a>
-        <p class="record-desc">Vanadium (V), represented here as an element distinct from the dissolved V(V) feed and electrode-associated material in a laboratory bioelectrochemical separation study. The United States 2025 designation applies to the named vanadium commodity; it does not identify a vanadium mineral species or establish the criticality of every vanadium compound.</p>
-      </td>
-      <td>
-        <span class="badge">element</span>
-      </td>
-      <td>
-        <span class="badge badge-critical">Critical</span>
-        <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
-          United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
-        </div>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Shewanella oneidensis MR-1</li>
-        </ul>
-      </td>
-      <td>
-        <div><code>CHEBI:27698</code></div>
-      </td>
-    </tr>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="separation"
-        data-critical="false"
-        data-search="waste multilayer ceramic capacitors waste-multilayer-ceramic-capacitors secondary_resource discarded multilayer ceramic capacitor components, represented here by components removed from printed circuit boards of twenty post-consumer computers. this feed is distinct from whole printed circuit boards, tantalum capacitors, pure barium titanate and its constituent elements. the characterized batch contained ceramic and metallic phases; neither a universal capacitor composition nor a criticality designation is assigned. the accepted experiment uses chemical deep eutectic solvents and provides no microbial mechanism or industrial deployment evidence. separation">
-      <td>
-        <a href="../materials/waste-multilayer-ceramic-capacitors.html"><strong>Waste multilayer ceramic capacitors</strong></a>
-        <p class="record-desc">Discarded multilayer ceramic capacitor components, represented here by components removed from printed circuit boards of twenty post-consumer computers. This feed is distinct from whole printed circuit boards, tantalum capacitors, pure barium titanate and its constituent elements. The characterized batch contained ceramic and metallic phases; neither a universal capacitor composition nor a criticality designation is assigned. The accepted experiment uses chemical deep eutectic solvents and provides no microbial mechanism or industrial deployment evidence.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="recovery separation"
-        data-critical="false"
-        data-search="waste x-ray films waste-x-ray-films secondary_resource used silver-bearing radiographic films obtained from medical facilities, comprising a gelatin-silver emulsion on a polymer base. the curated feeds are discarded x-ray films, not unused film stock, photographic processing liquids, elemental silver or all photographic wastes. laboratory studies distinguish microbial-enzyme stripping of the emulsion from subsequent thermal production of silver metal. no constituent criticality designation or industrial deployment is inherited. recovery separation conidiobolus coronatus bacillus spizizenii atcc 6633 = jcm 2499 ncbitaxon:34488 ncbitaxon:703612">
-      <td>
-        <a href="../materials/waste-x-ray-films.html"><strong>Waste X-ray films</strong></a>
-        <p class="record-desc">Used silver-bearing radiographic films obtained from medical facilities, comprising a gelatin-silver emulsion on a polymer base. The curated feeds are discarded X-ray films, not unused film stock, photographic processing liquids, elemental silver or all photographic wastes. Laboratory studies distinguish microbial-enzyme stripping of the emulsion from subsequent thermal production of silver metal. No constituent criticality designation or industrial deployment is inherited.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>2</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Conidiobolus coronatus</li>
-          <li>Bacillus spizizenii ATCC 6633 = JCM 2499</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="redox_transformation separation"
-        data-critical="false"
-        data-search="zinc leach residue zinc-leach-residue secondary_resource mixed residual solids from acid leaching in zinc hydrometallurgy, including zinc retained in ferrite, sulfide and other specimen-dependent phases. the accepted studies used separate industrial residues from hunan and yunnan, china; their compositions and treatment outcomes are not interchangeable. this processing-generated resource is distinct from elemental zinc, a pure zinc-ferrite phase, zinc calcine before leaching, and zinc-purification waste. two laboratory abiotic treatments are documented. no criticality designation, microbial mechanism, isolated zinc-product yield or deployment of these particular experimental protocols is inferred. redox_transformation separation">
-      <td>
-        <a href="../materials/zinc-leach-residue.html"><strong>Zinc leach residue</strong></a>
-        <p class="record-desc">Mixed residual solids from acid leaching in zinc hydrometallurgy, including zinc retained in ferrite, sulfide and other specimen-dependent phases. The accepted studies used separate industrial residues from Hunan and Yunnan, China; their compositions and treatment outcomes are not interchangeable. This processing-generated resource is distinct from elemental zinc, a pure zinc-ferrite phase, zinc calcine before leaching, and zinc-purification waste. Two laboratory abiotic treatments are documented. No criticality designation, microbial mechanism, isolated zinc-product yield or deployment of these particular experimental protocols is inferred.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>2</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="secondary_resource"
-        data-mechanisms="separation"
-        data-critical="false"
-        data-search="zinc purification hot filter cake zinc-purification-hot-filter-cake secondary_resource mixed precipitated solids removed during the hot purification of zinc leach liquor, before the subsequent zinc-powder cementation stage. the accepted specimen is hot filter press cake (hfc) from the national iranian lead and zinc company in zandjan, iran, containing zinc, cobalt and manganese. this processing residue is distinct from zinc leach residue, cold purification filter cake, a pure oxide mineral, or elemental zinc. its laboratory chemical leaching does not establish a microbial mechanism, a criticality designation, purified-metal production or industrial deployment of the tested treatment. separation">
-      <td>
-        <a href="../materials/zinc-purification-hot-filter-cake.html"><strong>Zinc purification hot filter cake</strong></a>
-        <p class="record-desc">Mixed precipitated solids removed during the hot purification of zinc leach liquor, before the subsequent zinc-powder cementation stage. The accepted specimen is hot filter press cake (HFC) from the National Iranian Lead and Zinc Company in Zandjan, Iran, containing zinc, cobalt and manganese. This processing residue is distinct from zinc leach residue, cold purification filter cake, a pure oxide mineral, or elemental zinc. Its laboratory chemical leaching does not establish a microbial mechanism, a criticality designation, purified-metal production or industrial deployment of the tested treatment.</p>
-      </td>
-      <td>
-        <span class="badge">secondary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-  </tbody>
-</table>
+    <div class="record-table-scroll" role="region" aria-label="Materials table" tabindex="0">
+    <table id="record-table">
+      <caption>Curated Materials and Minerals</caption>
+      <thead>
+        <tr>
+          <th scope="col">Material</th>
+          <th scope="col">Kind</th>
+          <th scope="col">Criticality</th>
+          <th scope="col">Mechanisms</th>
+          <th scope="col">Microbial Agents</th>
+          <th scope="col">Identifier</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-name="acid mine drainage"
+            data-kind="secondary_resource"
+            data-mechanisms="other separation"
+            data-mech-count="2"
+            data-org-count="0"
+            data-critical="false"
+            data-search="acid mine drainage acid-mine-drainage secondary_resource acidic, metal- and sulfate-bearing drainage generated when mining exposes sulfide-bearing materials to oxidation. this record denotes the heterogeneous liquid mine-derived feed, distinct from natural ore, individual dissolved elements, coal-mine-drainage treatment solids, and isolated precipitate phases. the characterized brazilian copper-mine and south african mining-facility waters below are separate source-specific samples, not a universal composition or interchangeable reactor feed. no constituent criticality designation or industrial recovery performance is transferred to this resource. other separation">
+          <td>
+            <a href="../materials/acid-mine-drainage.html"><strong>Acid mine drainage</strong></a>
+            <p class="record-desc">Acidic, metal- and sulfate-bearing drainage generated when mining exposes sulfide-bearing materials to oxidation. This record denotes the heterogeneous liquid mine-derived feed, distinct from natural ore, individual dissolved elements, coal-mine-drainage treatment solids, and isolated precipitate phases. The characterized Brazilian copper-mine and South African mining-facility waters below are separate source-specific samples, not a universal composition or interchangeable reactor feed. No constituent criticality designation or industrial recovery performance is transferred to this resource.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>2</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="alabandite"
+            data-kind="mineral"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="false"
+            data-search="alabandite alabandite mineral alabandite is the cubic manganese sulfide mineral, ideal formula mns, grandfathered in the september 2026 ima list. it is distinct from the mns polymorph rambergite, elemental manganese and a whole polymetallic ore. the accepted experiment identifies alabandite as one component of natural talvivaara black shale and measures its content in fractions from laboratory flotation with freeze-dried bacterial biomass. this is not pure-mineral testing, proof of a microbial surface mechanism, manganese product recovery or a criticality designation inherited from mn. separation staphylococcus carnosus ncbitaxon:1281">
+          <td>
+            <a href="../materials/alabandite.html"><strong>Alabandite</strong></a>
+            <p class="record-desc">Alabandite is the cubic manganese sulfide mineral, ideal formula MnS, grandfathered in the September 2026 IMA list. It is distinct from the MnS polymorph rambergite, elemental manganese and a whole polymetallic ore. The accepted experiment identifies alabandite as one component of natural Talvivaara black shale and measures its content in fractions from laboratory flotation with freeze-dried bacterial biomass. This is not pure-mineral testing, proof of a microbial surface mechanism, manganese product recovery or a criticality designation inherited from Mn.</p>
+          </td>
+          <td>
+            <span class="badge">mineral</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Staphylococcus carnosus</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="aluminium salt slag"
+            data-kind="secondary_resource"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="aluminium salt slag aluminium-salt-slag secondary_resource salt-flux-bearing mixed slag from aluminium scrap remelting, containing process salts and oxide-rich solids. the accepted study sampled a rotary furnace batch from a brazilian recycler using nacl/kcl flux. this resource is defined by salt-flux remelting origin, distinct from the existing post-metal-recovery secondary aluminium dross specimen, generic smelting slag, bauxite residue, elemental aluminium or a single mineral. laboratory water leaching and recovered salt crystals are documented; microbial action, inherited criticality and industrial deployment of this recipe are not. separation">
+          <td>
+            <a href="../materials/aluminium-salt-slag.html"><strong>Aluminium salt slag</strong></a>
+            <p class="record-desc">Salt-flux-bearing mixed slag from aluminium scrap remelting, containing process salts and oxide-rich solids. The accepted study sampled a rotary furnace batch from a Brazilian recycler using NaCl/KCl flux. This resource is defined by salt-flux remelting origin, distinct from the existing post-metal-recovery secondary aluminium dross specimen, generic smelting slag, bauxite residue, elemental aluminium or a single mineral. Laboratory water leaching and recovered salt crystals are documented; microbial action, inherited criticality and industrial deployment of this recipe are not.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="basic-oxygen-furnace steel slag"
+            data-kind="secondary_resource"
+            data-mechanisms="bioleaching separation"
+            data-mech-count="4"
+            data-org-count="0"
+            data-critical="false"
+            data-search="basic-oxygen-furnace steel slag basic-oxygen-furnace-steel-slag secondary_resource steelmaking slag identified by primary studies as basic-oxygen-furnace (bof), or linz-donawitz converter, slag. the separately studied feeds are a december 2016 sample from yarborough, scunthorpe, uk, and a sample supplied by an unnamed austrian steelmaking company in the 2022 study. this process-defined secondary resource is distinct from electric-arc-furnace slag or dust, blast-furnace residues, copper smelter slag, constituent elements and individual mineral species. these heterogeneous samples do not define all bof slags. no inherited elemental identifier or criticality designation is assigned. bioleaching separation">
+          <td>
+            <a href="../materials/basic-oxygen-furnace-steel-slag.html"><strong>Basic-oxygen-furnace steel slag</strong></a>
+            <p class="record-desc">Steelmaking slag identified by primary studies as basic-oxygen-furnace (BOF), or Linz-Donawitz converter, slag. The separately studied feeds are a December 2016 sample from Yarborough, Scunthorpe, UK, and a sample supplied by an unnamed Austrian steelmaking company in the 2022 study. This process-defined secondary resource is distinct from electric-arc-furnace slag or dust, blast-furnace residues, copper smelter slag, constituent elements and individual mineral species. These heterogeneous samples do not define all BOF slags. No inherited elemental identifier or criticality designation is assigned.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>4</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="cassiterite"
+            data-kind="mineral"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="false"
+            data-search="cassiterite cassiterite mineral cassiterite is the mineral species with ima-approved formula sno2. the september 2026 ima list records grandfathered status g and original description year 1832; that year is not an ima approval identifier. the mineral is distinct from elemental tin, a tin commodity, and a cassiterite-bearing experimental feed. the curated separation study used a brazilian mineral sample reported as 84.7% pure by x-ray fluorescence, rather than a demonstrated pure sno2 phase. no criticality designation is inherited from tin. separation rhodococcus opacus ncbitaxon:37919">
+          <td>
+            <a href="../materials/cassiterite.html"><strong>Cassiterite</strong></a>
+            <p class="record-desc">Cassiterite is the mineral species with IMA-approved formula SnO2. The September 2026 IMA list records grandfathered status G and original description year 1832; that year is not an IMA approval identifier. The mineral is distinct from elemental tin, a tin commodity, and a cassiterite-bearing experimental feed. The curated separation study used a Brazilian mineral sample reported as 84.7% pure by X-ray fluorescence, rather than a demonstrated pure SnO2 phase. No criticality designation is inherited from tin.</p>
+          </td>
+          <td>
+            <span class="badge">mineral</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Rhodococcus opacus</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="ferrochrome slag"
+            data-kind="secondary_resource"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="ferrochrome slag ferrochrome-slag secondary_resource mixed slag generated during smelting of chromite-bearing feed to produce ferrochrome alloy. the curated experiment used waste supplied by zimasco at kwekwe, zimbabwe. this processing-derived resource is distinct from chromite ore, physical beneficiation tailings, chromite ore processing residue from chemical chromium extraction, the ferrochrome alloy product and individual slag mineral phases. composition varies with feed and process; the selected sample is not a universal specification. no constituent criticality designation or mineral identifier is inherited. separation">
+          <td>
+            <a href="../materials/ferrochrome-slag.html"><strong>Ferrochrome slag</strong></a>
+            <p class="record-desc">Mixed slag generated during smelting of chromite-bearing feed to produce ferrochrome alloy. The curated experiment used waste supplied by Zimasco at Kwekwe, Zimbabwe. This processing-derived resource is distinct from chromite ore, physical beneficiation tailings, chromite ore processing residue from chemical chromium extraction, the ferrochrome alloy product and individual slag mineral phases. Composition varies with feed and process; the selected sample is not a universal specification. No constituent criticality designation or mineral identifier is inherited.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="flue-gas-desulfurization wastewater"
+            data-kind="secondary_resource"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="flue-gas-desulfurization wastewater flue-gas-desulfurization-wastewater secondary_resource liquid residual streams generated by wet flue-gas desulfurization and associated wastewater treatment, distinct from solid fgd gypsum, coal ash, elemental selenium and natural mineral resources. the accepted experiment concerns a particular coal-power-plant effluent after physical/chemical pretreatment and dilution, not an invariant composition or all fgd streams. its selenium-bearing residuals were investigated for treatment; no marketable recovered selenium product or inherited criticality is asserted. separation">
+          <td>
+            <a href="../materials/flue-gas-desulfurization-wastewater.html"><strong>Flue-gas-desulfurization wastewater</strong></a>
+            <p class="record-desc">Liquid residual streams generated by wet flue-gas desulfurization and associated wastewater treatment, distinct from solid FGD gypsum, coal ash, elemental selenium and natural mineral resources. The accepted experiment concerns a particular coal-power-plant effluent after physical/chemical pretreatment and dilution, not an invariant composition or all FGD streams. Its selenium-bearing residuals were investigated for treatment; no marketable recovered selenium product or inherited criticality is asserted.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="fluorite"
+            data-kind="mineral"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="false"
+            data-search="fluorite fluorite mineral fluorite is the calcium fluoride mineral caf2, listed with grandfathered status g in the ima-cnmnc september 2026 mineral list. its original-description year is unresolved in that list; no numbered approval accession is asserted. the handbook of mineralogy describes cubic fluorite and natural hydrothermal, sedimentary and igneous occurrences. this mineral owner is distinct from the traded fluorspar commodity and elemental fluorine. the experiments below use ground natural crystals reported as 99% caf2 and concern bacterial-cell-associated flocculation and settling. they establish neither mineral dissolution nor production of a specified fluorspar grade. no criticality designation is inherited from the commodity or element, and no industrial deployment is claimed. separation corynebacterium xerosis ncbitaxon:1725">
+          <td>
+            <a href="../materials/fluorite.html"><strong>Fluorite</strong></a>
+            <p class="record-desc">Fluorite is the calcium fluoride mineral CaF2, listed with grandfathered status G in the IMA-CNMNC September 2026 mineral list. Its original-description year is unresolved in that list; no numbered approval accession is asserted. The Handbook of Mineralogy describes cubic fluorite and natural hydrothermal, sedimentary and igneous occurrences. This mineral owner is distinct from the traded fluorspar commodity and elemental fluorine. The experiments below use ground natural crystals reported as 99% CaF2 and concern bacterial-cell-associated flocculation and settling. They establish neither mineral dissolution nor production of a specified fluorspar grade. No criticality designation is inherited from the commodity or element, and no industrial deployment is claimed.</p>
+          </td>
+          <td>
+            <span class="badge">mineral</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Corynebacterium xerosis</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="löllingite"
+            data-kind="mineral"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="false"
+            data-search="löllingite loellingite mineral löllingite, commonly written loellingite, is the orthorhombic iron arsenide mineral with ideal formula feas2. the september 2026 ima list records it as grandfathered, with original-description year 1845. it is distinct from arsenopyrite, skutterudite, elemental arsenic and a mixed arsenic-bearing ore. natural compositions need not be exact endmembers. the accepted microbial experiment concerns a quantified loellingite-arsenopyrite feed mixed with pyrite, not purified loellingite. its flotation response does not establish dissolved-metal extraction, an isolated loellingite product or industrial deployment. no constituent-element criticality is inherited. separation leptospirillum ferrooxidans ncbitaxon:180">
+          <td>
+            <a href="../materials/loellingite.html"><strong>Löllingite</strong></a>
+            <p class="record-desc">Löllingite, commonly written loellingite, is the orthorhombic iron arsenide mineral with ideal formula FeAs2. The September 2026 IMA list records it as grandfathered, with original-description year 1845. It is distinct from arsenopyrite, skutterudite, elemental arsenic and a mixed arsenic-bearing ore. Natural compositions need not be exact endmembers. The accepted microbial experiment concerns a quantified loellingite-arsenopyrite feed mixed with pyrite, not purified loellingite. Its flotation response does not establish dissolved-metal extraction, an isolated loellingite product or industrial deployment. No constituent-element criticality is inherited.</p>
+          </td>
+          <td>
+            <span class="badge">mineral</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Leptospirillum ferrooxidans</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="ludwigite boron-iron ore"
+            data-kind="primary_resource"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="ludwigite boron-iron ore ludwigite-ore primary_resource ludwigite ore denotes a heterogeneous boron-bearing iron ore or its beneficiated boron-iron concentrate, represented here by the mixed geological feed used by liang et al. (2024). it is not the mineral species ludwigite, elemental boron or iron, a borates commodity specification, or the secondary residue left after processing. the experimental substrate for water leaching was a soda-ash-roasted derivative of that concentrate; its altered composition must not be assigned to the original ore. the paper&#39;s table 2 reports 5.12 wt% b2o3 and 58.23 wt% total iron in this reduced feed, and figure 9 identifies metallic iron, sodium magnesium silicate, sodium silicate and magnesium-ferrous oxide. its bulk-feed result cannot establish which individual original boron mineral supplied the dissolved boron. the exact mine/sample identifier and original batch mineral proportions are not established in the inspected 2024 article, which refers to earlier work for the ore characterization. no constituent&#39;s criticality designation is transferred to this resource. separation">
+          <td>
+            <a href="../materials/ludwigite-ore.html"><strong>Ludwigite boron-iron ore</strong></a>
+            <p class="record-desc">Ludwigite ore denotes a heterogeneous boron-bearing iron ore or its beneficiated boron-iron concentrate, represented here by the mixed geological feed used by Liang et al. (2024). It is not the mineral species ludwigite, elemental boron or iron, a borates commodity specification, or the secondary residue left after processing. The experimental substrate for water leaching was a soda-ash-roasted derivative of that concentrate; its altered composition must not be assigned to the original ore. The paper&#39;s Table 2 reports 5.12 wt% B2O3 and 58.23 wt% total iron in this reduced feed, and Figure 9 identifies metallic iron, sodium magnesium silicate, sodium silicate and magnesium-ferrous oxide. Its bulk-feed result cannot establish which individual original boron mineral supplied the dissolved boron. The exact mine/sample identifier and original batch mineral proportions are not established in the inspected 2024 article, which refers to earlier work for the ore characterization. No constituent&#39;s criticality designation is transferred to this resource.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="praseodymium"
+            data-kind="element"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="true"
+            data-search="praseodymium praseodymium element the element pr, distinct from dissolved pr(iii), its salts and oxides, pr-containing magnet alloys and ore or waste resources. the us2025 designation applies to the named praseodymium mineral commodity. evidence below concerns cell-free protein chromatography of a synthetic binary solution, not microbial growth on an ore or industrial recovery. chebi:49828 praseodymium atom separation methylobacterium sp. 13mftsu3.1m2 ncbitaxon:1502776 united states of america usgs final list of critical minerals (critical)">
+          <td>
+            <a href="../materials/praseodymium.html"><strong>Praseodymium</strong></a>
+            <p class="record-desc">The element Pr, distinct from dissolved Pr(III), its salts and oxides, Pr-containing magnet alloys and ore or waste resources. The US2025 designation applies to the named praseodymium mineral commodity. Evidence below concerns cell-free protein chromatography of a synthetic binary solution, not microbial growth on an ore or industrial recovery.</p>
+          </td>
+          <td>
+            <span class="badge">element</span>
+          </td>
+          <td>
+            <span class="badge badge-critical">Critical</span>
+            <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+              United States of America USGS Final List of Critical Minerals (critical)
+            </div>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Methylobacterium sp. 13MFTsu3.1M2</li>
+            </ul>
+          </td>
+          <td>
+            <div><code>CHEBI:49828</code></div>
+          </td>
+        </tr>
+        <tr data-name="rare-earth-element commodities, australian list scope"
+            data-kind="commodity"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="true"
+            data-search="rare-earth-element commodities, australian list scope rare-earth-element-commodities commodity this collective commodity family follows australia&#39;s 20 february 2024 rare-earth-elements entry: yttrium and all fifteen lanthanides, including promethium. scandium has a separate entry in that list. this sixteen-member economic grouping differs from the broader seventeen-element chemical definition, which also includes scandium, and from the eu 2020 assessment&#39;s fifteen-member light/heavy split, which excludes both scandium and promethium. inclusion of promethium preserves the australian source&#39;s stated membership and does not assert an ordinary mined promethium supply. this family overlaps individual element records and narrower rare-earth commodity groups; it is not one mineral, alloy or fixed mixture. the mechanism below concerns only a synthetic neodymium/dysprosium solution and does not establish recovery of every family member or treatment of ore, magnets or industrial waste. separation hansschlegelia quercus ncbitaxon:2528245 australia australia&#39;s critical minerals list; rare-earth-elements group, footnote 17 (critical)">
+          <td>
+            <a href="../materials/rare-earth-element-commodities.html"><strong>Rare-earth-element commodities, Australian list scope</strong></a>
+            <p class="record-desc">This collective commodity family follows Australia&#39;s 20 February 2024 rare-earth-elements entry: yttrium and all fifteen lanthanides, including promethium. Scandium has a separate entry in that list. This sixteen-member economic grouping differs from the broader seventeen-element chemical definition, which also includes scandium, and from the EU 2020 assessment&#39;s fifteen-member light/heavy split, which excludes both scandium and promethium. Inclusion of promethium preserves the Australian source&#39;s stated membership and does not assert an ordinary mined promethium supply. This family overlaps individual element records and narrower rare-earth commodity groups; it is not one mineral, alloy or fixed mixture. The mechanism below concerns only a synthetic neodymium/dysprosium solution and does not establish recovery of every family member or treatment of ore, magnets or industrial waste.</p>
+          </td>
+          <td>
+            <span class="badge">commodity</span>
+          </td>
+          <td>
+            <span class="badge badge-critical">Critical</span>
+            <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+              Australia Australia&#39;s Critical Minerals List; rare-earth-elements group, footnote 17 (critical)
+            </div>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Hansschlegelia quercus</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="samarium-cobalt magnet scrap"
+            data-kind="secondary_resource"
+            data-mechanisms="recovery separation"
+            data-mech-count="2"
+            data-org-count="0"
+            data-critical="false"
+            data-search="samarium-cobalt magnet scrap samarium-cobalt-magnet-scrap secondary_resource source-labelled samarium-cobalt magnet scrap supplied by the defence metallurgical research laboratory, hyderabad, india. its preceding service history and manufacturing-waste category were not disclosed, so the feed is not asserted to be end-of-life devices. it is distinct from ndfeb magnet waste, the broad rare-earth permanent-magnet commodity grouping, pure sm2co17 and its constituent elements. the characterized preparation includes oxide phases as well as a sm2co17 assignment. no criticality designation or microbial recovery is inherited from the feed&#39;s constituents. recovery separation">
+          <td>
+            <a href="../materials/samarium-cobalt-magnet-scrap.html"><strong>Samarium-cobalt magnet scrap</strong></a>
+            <p class="record-desc">Source-labelled samarium-cobalt magnet scrap supplied by the Defence Metallurgical Research Laboratory, Hyderabad, India. Its preceding service history and manufacturing-waste category were not disclosed, so the feed is not asserted to be end-of-life devices. It is distinct from NdFeB magnet waste, the broad rare-earth permanent-magnet commodity grouping, pure Sm2Co17 and its constituent elements. The characterized preparation includes oxide phases as well as a Sm2Co17 assignment. No criticality designation or microbial recovery is inherited from the feed&#39;s constituents.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>2</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="scandium"
+            data-kind="element"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="true"
+            data-search="scandium scandium element the element sc, distinct from dissolved sc(iii), scandium chloride, scandium oxide, sc-bearing minerals and waste feedstocks. the us2025 designation concerns the named scandium mineral commodity. laboratory evidence below uses an immobilized bacterial protein and synthetic dissolved-metal mixtures; it does not demonstrate living-cell extraction. chebi:33330 scandium atom separation methylorubrum extorquens ncbitaxon:408 united states of america usgs final list of critical minerals (critical)">
+          <td>
+            <a href="../materials/scandium.html"><strong>Scandium</strong></a>
+            <p class="record-desc">The element Sc, distinct from dissolved Sc(III), scandium chloride, scandium oxide, Sc-bearing minerals and waste feedstocks. The US2025 designation concerns the named scandium mineral commodity. Laboratory evidence below uses an immobilized bacterial protein and synthetic dissolved-metal mixtures; it does not demonstrate living-cell extraction.</p>
+          </td>
+          <td>
+            <span class="badge">element</span>
+          </td>
+          <td>
+            <span class="badge badge-critical">Critical</span>
+            <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+              United States of America USGS Final List of Critical Minerals (critical)
+            </div>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Methylorubrum extorquens</li>
+            </ul>
+          </td>
+          <td>
+            <div><code>CHEBI:33330</code></div>
+          </td>
+        </tr>
+        <tr data-name="secondary aluminium dross"
+            data-kind="secondary_resource"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="secondary aluminium dross secondary-aluminium-dross secondary_resource heterogeneous residual aluminium dross after an earlier recovery of metallic aluminium from primary dross by screening or flux-assisted remelting. this source-defined secondary dross is narrower than the umbrella aluminium-dross category; the accepted specimen came from an aluminium remelting plant in guangxi, china. it contains metallic aluminium, aluminium oxides and nitride, magnesium-aluminium spinel, and other oxides and process salts. it is not a mineral species, elemental aluminium, bauxite residue, spent potlining, or an automatically equivalent feed to an unspecified aluminium-smelting slag. laboratory chemical extraction is documented without a microbial mechanism, inherited criticality designation, or demonstrated industrial deployment. separation">
+          <td>
+            <a href="../materials/secondary-aluminium-dross.html"><strong>Secondary aluminium dross</strong></a>
+            <p class="record-desc">Heterogeneous residual aluminium dross after an earlier recovery of metallic aluminium from primary dross by screening or flux-assisted remelting. This source-defined secondary dross is narrower than the umbrella aluminium-dross category; the accepted specimen came from an aluminium remelting plant in Guangxi, China. It contains metallic aluminium, aluminium oxides and nitride, magnesium-aluminium spinel, and other oxides and process salts. It is not a mineral species, elemental aluminium, bauxite residue, spent potlining, or an automatically equivalent feed to an unspecified aluminium-smelting slag. Laboratory chemical extraction is documented without a microbial mechanism, inherited criticality designation, or demonstrated industrial deployment.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="spent copper-zinc-alumina catalyst"
+            data-kind="secondary_resource"
+            data-mechanisms="recovery separation"
+            data-mech-count="2"
+            data-org-count="0"
+            data-critical="false"
+            data-search="spent copper-zinc-alumina catalyst spent-copper-zinc-alumina-catalyst secondary_resource used cuo-zno-al2o3 catalyst material from synthesis-gas processing, including low-temperature carbon monoxide conversion. this composition-defined secondary resource is distinct from fresh catalyst, its constituent oxides, elemental copper/zinc and spent refinery hydroprocessing catalysts. the selected polish-market sample had 35.1 wt% cu, 29.9 wt% zn and 9.2 wt% al by aas; these are sample measurements, not a universal formulation. its plant and service history are unspecified. no constituent criticality is inherited. recovery separation">
+          <td>
+            <a href="../materials/spent-copper-zinc-alumina-catalyst.html"><strong>Spent copper-zinc-alumina catalyst</strong></a>
+            <p class="record-desc">Used CuO-ZnO-Al2O3 catalyst material from synthesis-gas processing, including low-temperature carbon monoxide conversion. This composition-defined secondary resource is distinct from fresh catalyst, its constituent oxides, elemental copper/zinc and spent refinery hydroprocessing catalysts. The selected Polish-market sample had 35.1 wt% Cu, 29.9 wt% Zn and 9.2 wt% Al by AAS; these are sample measurements, not a universal formulation. Its plant and service history are unspecified. No constituent criticality is inherited.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>2</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="spent iron-molybdate oxidation catalyst"
+            data-kind="secondary_resource"
+            data-mechanisms="recovery separation"
+            data-mech-count="3"
+            data-org-count="0"
+            data-critical="false"
+            data-search="spent iron-molybdate oxidation catalyst spent-iron-molybdate-oxidation-catalyst secondary_resource used iron-molybdate catalyst from methanol oxidation for formaldehyde production. this process-defined secondary resource contains iron molybdate and excess molybdenum oxide, with feed-specific impurities and amorphous material. it is distinct from molybdenite, elemental molybdenum, fresh catalyst and spent ni/co-mo refinery catalysts. two primary studies examine different spent feeds; their compositions and yields are not interchangeable. no mineral identifier or constituent-element criticality is assigned. recovery separation">
+          <td>
+            <a href="../materials/spent-iron-molybdate-oxidation-catalyst.html"><strong>Spent iron-molybdate oxidation catalyst</strong></a>
+            <p class="record-desc">Used iron-molybdate catalyst from methanol oxidation for formaldehyde production. This process-defined secondary resource contains iron molybdate and excess molybdenum oxide, with feed-specific impurities and amorphous material. It is distinct from molybdenite, elemental molybdenum, fresh catalyst and spent Ni/Co-Mo refinery catalysts. Two primary studies examine different spent feeds; their compositions and yields are not interchangeable. No mineral identifier or constituent-element criticality is assigned.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>3</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="spent nickel steam-reforming catalyst"
+            data-kind="secondary_resource"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="spent nickel steam-reforming catalyst spent-nickel-steam-reforming-catalyst secondary_resource used nickel-bearing catalyst from primary steam reforming, represented by a spent nickel-oxide/alumina formulation supplied by an unnamed fertilizer plant. this use-defined secondary resource is distinct from vegetable-oil hydrogenation catalyst, platinum petroleum-reforming catalyst, fresh catalyst and elemental nickel. the selected feed composition does not define every steam-reforming formulation. no constituent criticality or mineral identifier is inherited. separation">
+          <td>
+            <a href="../materials/spent-nickel-steam-reforming-catalyst.html"><strong>Spent nickel steam-reforming catalyst</strong></a>
+            <p class="record-desc">Used nickel-bearing catalyst from primary steam reforming, represented by a spent nickel-oxide/alumina formulation supplied by an unnamed fertilizer plant. This use-defined secondary resource is distinct from vegetable-oil hydrogenation catalyst, platinum petroleum-reforming catalyst, fresh catalyst and elemental nickel. The selected feed composition does not define every steam-reforming formulation. No constituent criticality or mineral identifier is inherited.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="spent platinum petroleum-reforming catalyst"
+            data-kind="secondary_resource"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="spent platinum petroleum-reforming catalyst spent-platinum-petroleum-reforming-catalyst secondary_resource used platinum-bearing catalyst from petroleum reforming, represented by a source-described monometallic pt/al2o3 catalyst. this use-defined secondary resource is distinct from automotive converters, nickel steam-reforming catalysts, refinery hydroprocessing catalysts, fresh catalyst and elemental platinum. the selected feed composition does not define every reforming formulation. no constituent criticality or mineral identifier is inherited. separation">
+          <td>
+            <a href="../materials/spent-platinum-petroleum-reforming-catalyst.html"><strong>Spent platinum petroleum-reforming catalyst</strong></a>
+            <p class="record-desc">Used platinum-bearing catalyst from petroleum reforming, represented by a source-described monometallic Pt/Al2O3 catalyst. This use-defined secondary resource is distinct from automotive converters, nickel steam-reforming catalysts, refinery hydroprocessing catalysts, fresh catalyst and elemental platinum. The selected feed composition does not define every reforming formulation. No constituent criticality or mineral identifier is inherited.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="spent potlining"
+            data-kind="secondary_resource"
+            data-mechanisms="recovery separation"
+            data-mech-count="2"
+            data-org-count="0"
+            data-critical="false"
+            data-search="spent potlining spent-potlining secondary_resource exhausted aluminium-smelting cell lining containing variable proportions of carbonaceous cathode material, refractory cement and brick, and accumulated process salts. the accepted study used real mixed-cut waste supplied by trimet aluminium, essen, germany, with three visually selected grades from refractory-rich to mainly graphitic material. exact cell and service histories were not resolved. this solid waste is distinct from aluminium dross, waste electrolyte, red mud, graphite as a mineral or commodity, and its constituent elements. laboratory chemical extraction is documented without a microbial mechanism or an inherited criticality designation. recovery separation">
+          <td>
+            <a href="../materials/spent-potlining.html"><strong>Spent potlining</strong></a>
+            <p class="record-desc">Exhausted aluminium-smelting cell lining containing variable proportions of carbonaceous cathode material, refractory cement and brick, and accumulated process salts. The accepted study used real mixed-cut waste supplied by Trimet Aluminium, Essen, Germany, with three visually selected grades from refractory-rich to mainly graphitic material. Exact cell and service histories were not resolved. This solid waste is distinct from aluminium dross, waste electrolyte, red mud, graphite as a mineral or commodity, and its constituent elements. Laboratory chemical extraction is documented without a microbial mechanism or an inherited criticality designation.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>2</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="spent selective catalytic reduction catalyst"
+            data-kind="secondary_resource"
+            data-mechanisms="bioleaching separation"
+            data-mech-count="2"
+            data-org-count="1"
+            data-critical="false"
+            data-search="spent selective catalytic reduction catalyst spent-selective-catalytic-reduction-catalyst secondary_resource used vanadia-tungsta/titania catalysts from coal-fired power-plant flue-gas denitrification, represented by separately characterized laboratory feeds. niu and colleagues studied an arsenic-contaminated honeycomb catalyst from a xinjiang plant; su and colleagues separately studied gray and yellow regions of three spent honeycomb catalysts, s3–s5. this manufactured, heterogeneous secondary resource is distinct from refinery hydroprocessing, fluid catalytic cracking and sulfuric-acid-production catalysts, pure constituent oxides, mineral species and elemental vanadium or tungsten. v2o5-wo3/tio2 is the sources&#39; catalyst formulation notation, not proof of three separately quantified crystalline phases. fresh catalysts s1–s2 in su&#39;s study are comparators, not spent-resource observations. no criticality designation is inherited from the constituents. bioleaching separation acidithiobacillus thiooxidans atcc 19377 ncbitaxon:637390">
+          <td>
+            <a href="../materials/spent-selective-catalytic-reduction-catalyst.html"><strong>Spent selective catalytic reduction catalyst</strong></a>
+            <p class="record-desc">Used vanadia-tungsta/titania catalysts from coal-fired power-plant flue-gas denitrification, represented by separately characterized laboratory feeds. Niu and colleagues studied an arsenic-contaminated honeycomb catalyst from a Xinjiang plant; Su and colleagues separately studied gray and yellow regions of three spent honeycomb catalysts, S3–S5. This manufactured, heterogeneous secondary resource is distinct from refinery hydroprocessing, fluid catalytic cracking and sulfuric-acid-production catalysts, pure constituent oxides, mineral species and elemental vanadium or tungsten. V2O5-WO3/TiO2 is the sources&#39; catalyst formulation notation, not proof of three separately quantified crystalline phases. Fresh catalysts S1–S2 in Su&#39;s study are comparators, not spent-resource observations. No criticality designation is inherited from the constituents.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>2</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Acidithiobacillus thiooxidans ATCC 19377</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="tungsten skarn-processing tailings"
+            data-kind="secondary_resource"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="tungsten skarn-processing tailings tungsten-skarn-tailings secondary_resource residual mineral solids generated by processing tungsten-bearing skarn ore. the curated case is historical tailings in the smaltjärnen repository at the closed yxsjöberg tungsten, copper and fluorspar mine in sweden. the processing plant used gravity separation, magnetic separation and flotation. the characterized layered material contains scheelite among mixed silicate, carbonate, sulfide and other minerals; composition and particle liberation vary by sampled layer. this resource is distinct from tungsten as an element, pure scheelite, unprocessed ore, waste rock and a saleable concentrate. hällström et al. document scheelite alteration, hydrous ferric oxide associations and tungsten transport in a field investigation of this repository; those geochemical observations do not establish microbial causation. no criticality designation is inherited from constituents, and the laboratory results below do not characterize all tungsten tailings. separation">
+          <td>
+            <a href="../materials/tungsten-skarn-tailings.html"><strong>Tungsten skarn-processing tailings</strong></a>
+            <p class="record-desc">Residual mineral solids generated by processing tungsten-bearing skarn ore. The curated case is historical tailings in the Smaltjärnen repository at the closed Yxsjöberg tungsten, copper and fluorspar mine in Sweden. The processing plant used gravity separation, magnetic separation and flotation. The characterized layered material contains scheelite among mixed silicate, carbonate, sulfide and other minerals; composition and particle liberation vary by sampled layer. This resource is distinct from tungsten as an element, pure scheelite, unprocessed ore, waste rock and a saleable concentrate. Hällström et al. document scheelite alteration, hydrous ferric oxide associations and tungsten transport in a field investigation of this repository; those geochemical observations do not establish microbial causation. No criticality designation is inherited from constituents, and the laboratory results below do not characterize all tungsten tailings.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="uranium mine tailings"
+            data-kind="secondary_resource"
+            data-mechanisms="bioleaching separation"
+            data-mech-count="2"
+            data-org-count="0"
+            data-critical="false"
+            data-search="uranium mine tailings uranium-mine-tailings secondary_resource heterogeneous residual solids in uranium-mine tailings management areas, represented here by dt and rat samples from two decommissioned elliot lake, ontario sites. these are secondary mining residues, distinct from unprocessed uranium ore, individual uranium minerals, drainage water and purified elements. the original processing flowsheets and the expansions of the two sample-site abbreviations are not established by the curated study. laboratory evidence concerns culture-associated metal solubilization and a separate resin screen; it does not establish industrial recovery or a resolved uranium extraction yield. no constituent-element criticality designation is inherited by these tailings. bioleaching separation">
+          <td>
+            <a href="../materials/uranium-mine-tailings.html"><strong>Uranium mine tailings</strong></a>
+            <p class="record-desc">Heterogeneous residual solids in uranium-mine tailings management areas, represented here by DT and RAT samples from two decommissioned Elliot Lake, Ontario sites. These are secondary mining residues, distinct from unprocessed uranium ore, individual uranium minerals, drainage water and purified elements. The original processing flowsheets and the expansions of the two sample-site abbreviations are not established by the curated study. Laboratory evidence concerns culture-associated metal solubilization and a separate resin screen; it does not establish industrial recovery or a resolved uranium extraction yield. No constituent-element criticality designation is inherited by these tailings.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>2</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="uranium"
+            data-kind="element"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="true"
+            data-search="uranium uranium element uranium (u), represented here as an element distinct from the dissolved u(vi) feed and electrode-associated material in a laboratory bioelectrochemical separation study. the united states 2025 designation applies to the named uranium commodity; it does not identify a uranium mineral species or establish the criticality of every uranium compound. chebi:27214 uranium atom separation shewanella oneidensis mr-1 ncbitaxon:211586 united states of america u.s. department of the interior final list of critical minerals (critical)">
+          <td>
+            <a href="../materials/uranium.html"><strong>Uranium</strong></a>
+            <p class="record-desc">Uranium (U), represented here as an element distinct from the dissolved U(VI) feed and electrode-associated material in a laboratory bioelectrochemical separation study. The United States 2025 designation applies to the named uranium commodity; it does not identify a uranium mineral species or establish the criticality of every uranium compound.</p>
+          </td>
+          <td>
+            <span class="badge">element</span>
+          </td>
+          <td>
+            <span class="badge badge-critical">Critical</span>
+            <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+              United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+            </div>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Shewanella oneidensis MR-1</li>
+            </ul>
+          </td>
+          <td>
+            <div><code>CHEBI:27214</code></div>
+          </td>
+        </tr>
+        <tr data-name="vanadium"
+            data-kind="element"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="true"
+            data-search="vanadium vanadium element vanadium (v), represented here as an element distinct from the dissolved v(v) feed and electrode-associated material in a laboratory bioelectrochemical separation study. the united states 2025 designation applies to the named vanadium commodity; it does not identify a vanadium mineral species or establish the criticality of every vanadium compound. chebi:27698 vanadium atom separation shewanella oneidensis mr-1 ncbitaxon:211586 united states of america u.s. department of the interior final list of critical minerals (critical)">
+          <td>
+            <a href="../materials/vanadium.html"><strong>Vanadium</strong></a>
+            <p class="record-desc">Vanadium (V), represented here as an element distinct from the dissolved V(V) feed and electrode-associated material in a laboratory bioelectrochemical separation study. The United States 2025 designation applies to the named vanadium commodity; it does not identify a vanadium mineral species or establish the criticality of every vanadium compound.</p>
+          </td>
+          <td>
+            <span class="badge">element</span>
+          </td>
+          <td>
+            <span class="badge badge-critical">Critical</span>
+            <div style="font-size: .8rem; color: var(--muted); margin-top: .2rem;">
+              United States of America U.S. Department of the Interior Final List of Critical Minerals (critical)
+            </div>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Shewanella oneidensis MR-1</li>
+            </ul>
+          </td>
+          <td>
+            <div><code>CHEBI:27698</code></div>
+          </td>
+        </tr>
+        <tr data-name="waste multilayer ceramic capacitors"
+            data-kind="secondary_resource"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="waste multilayer ceramic capacitors waste-multilayer-ceramic-capacitors secondary_resource discarded multilayer ceramic capacitor components, represented here by components removed from printed circuit boards of twenty post-consumer computers. this feed is distinct from whole printed circuit boards, tantalum capacitors, pure barium titanate and its constituent elements. the characterized batch contained ceramic and metallic phases; neither a universal capacitor composition nor a criticality designation is assigned. the accepted experiment uses chemical deep eutectic solvents and provides no microbial mechanism or industrial deployment evidence. separation">
+          <td>
+            <a href="../materials/waste-multilayer-ceramic-capacitors.html"><strong>Waste multilayer ceramic capacitors</strong></a>
+            <p class="record-desc">Discarded multilayer ceramic capacitor components, represented here by components removed from printed circuit boards of twenty post-consumer computers. This feed is distinct from whole printed circuit boards, tantalum capacitors, pure barium titanate and its constituent elements. The characterized batch contained ceramic and metallic phases; neither a universal capacitor composition nor a criticality designation is assigned. The accepted experiment uses chemical deep eutectic solvents and provides no microbial mechanism or industrial deployment evidence.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="waste x-ray films"
+            data-kind="secondary_resource"
+            data-mechanisms="recovery separation"
+            data-mech-count="2"
+            data-org-count="2"
+            data-critical="false"
+            data-search="waste x-ray films waste-x-ray-films secondary_resource used silver-bearing radiographic films obtained from medical facilities, comprising a gelatin-silver emulsion on a polymer base. the curated feeds are discarded x-ray films, not unused film stock, photographic processing liquids, elemental silver or all photographic wastes. laboratory studies distinguish microbial-enzyme stripping of the emulsion from subsequent thermal production of silver metal. no constituent criticality designation or industrial deployment is inherited. recovery separation conidiobolus coronatus bacillus spizizenii atcc 6633 = jcm 2499 ncbitaxon:34488 ncbitaxon:703612">
+          <td>
+            <a href="../materials/waste-x-ray-films.html"><strong>Waste X-ray films</strong></a>
+            <p class="record-desc">Used silver-bearing radiographic films obtained from medical facilities, comprising a gelatin-silver emulsion on a polymer base. The curated feeds are discarded X-ray films, not unused film stock, photographic processing liquids, elemental silver or all photographic wastes. Laboratory studies distinguish microbial-enzyme stripping of the emulsion from subsequent thermal production of silver metal. No constituent criticality designation or industrial deployment is inherited.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>2</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Conidiobolus coronatus</li>
+              <li>Bacillus spizizenii ATCC 6633 = JCM 2499</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="zinc leach residue"
+            data-kind="secondary_resource"
+            data-mechanisms="redox_transformation separation"
+            data-mech-count="2"
+            data-org-count="0"
+            data-critical="false"
+            data-search="zinc leach residue zinc-leach-residue secondary_resource mixed residual solids from acid leaching in zinc hydrometallurgy, including zinc retained in ferrite, sulfide and other specimen-dependent phases. the accepted studies used separate industrial residues from hunan and yunnan, china; their compositions and treatment outcomes are not interchangeable. this processing-generated resource is distinct from elemental zinc, a pure zinc-ferrite phase, zinc calcine before leaching, and zinc-purification waste. two laboratory abiotic treatments are documented. no criticality designation, microbial mechanism, isolated zinc-product yield or deployment of these particular experimental protocols is inferred. redox_transformation separation">
+          <td>
+            <a href="../materials/zinc-leach-residue.html"><strong>Zinc leach residue</strong></a>
+            <p class="record-desc">Mixed residual solids from acid leaching in zinc hydrometallurgy, including zinc retained in ferrite, sulfide and other specimen-dependent phases. The accepted studies used separate industrial residues from Hunan and Yunnan, China; their compositions and treatment outcomes are not interchangeable. This processing-generated resource is distinct from elemental zinc, a pure zinc-ferrite phase, zinc calcine before leaching, and zinc-purification waste. Two laboratory abiotic treatments are documented. No criticality designation, microbial mechanism, isolated zinc-product yield or deployment of these particular experimental protocols is inferred.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>2</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="zinc purification hot filter cake"
+            data-kind="secondary_resource"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="zinc purification hot filter cake zinc-purification-hot-filter-cake secondary_resource mixed precipitated solids removed during the hot purification of zinc leach liquor, before the subsequent zinc-powder cementation stage. the accepted specimen is hot filter press cake (hfc) from the national iranian lead and zinc company in zandjan, iran, containing zinc, cobalt and manganese. this processing residue is distinct from zinc leach residue, cold purification filter cake, a pure oxide mineral, or elemental zinc. its laboratory chemical leaching does not establish a microbial mechanism, a criticality designation, purified-metal production or industrial deployment of the tested treatment. separation">
+          <td>
+            <a href="../materials/zinc-purification-hot-filter-cake.html"><strong>Zinc purification hot filter cake</strong></a>
+            <p class="record-desc">Mixed precipitated solids removed during the hot purification of zinc leach liquor, before the subsequent zinc-powder cementation stage. The accepted specimen is hot filter press cake (HFC) from the National Iranian Lead and Zinc Company in Zandjan, Iran, containing zinc, cobalt and manganese. This processing residue is distinct from zinc leach residue, cold purification filter cake, a pure oxide mineral, or elemental zinc. Its laboratory chemical leaching does not establish a microbial mechanism, a criticality designation, purified-metal production or industrial deployment of the tested treatment.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
 </div>
 <script src="../record-browser.js" defer></script></main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · generated by <code>scripts/render_pages.py</code></p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (602 materials · 589 mechanisms · latest curation 2026-10-16 · corpus digest <code>b29dc11eae0a</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

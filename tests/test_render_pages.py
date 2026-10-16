@@ -85,3 +85,23 @@ def test_kind_and_process_pages_generated():
     proc_dir = PAGES_DIR / "processes"
     assert (proc_dir / "bioleaching.html").exists()
     assert (proc_dir / "biomineralization.html").exists()
+
+
+def test_unified_facets_search_and_map():
+    index_html = (PAGES_DIR / "index.html").read_text(encoding="utf-8")
+    assert 'class="hero-search"' in index_html
+    assert 'href="map.html"' in index_html
+
+    browse_html = (PAGES_DIR / "browse.html").read_text(encoding="utf-8")
+    assert 'class="browse-layout"' in browse_html
+    assert '<aside class="facet-sidebar"' in browse_html
+
+    map_html = (PAGES_DIR / "map.html").read_text(encoding="utf-8")
+    assert 'class="browse-layout"' in map_html
+    assert '<aside class="facet-sidebar"' in map_html
+    assert 'id="corpus-map"' in map_html
+    assert "BAAI/bge-large-en-v1.5" in map_html
+
+    cobalt_html = (PAGES_DIR / "materials" / "cobalt.html").read_text(encoding="utf-8")
+    assert 'class="page-search"' in cobalt_html
+
