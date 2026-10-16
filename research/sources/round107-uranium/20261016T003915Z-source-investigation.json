@@ -1,0 +1,629 @@
+{
+  "schema": "cmmmech-source-investigation-v1",
+  "recorded_at": "2026-10-16T00:39:15.020112Z",
+  "author": {
+    "actor": "codex",
+    "model": "GPT-6",
+    "tool": "codex",
+    "role": "curator; independent scientific review pending"
+  },
+  "repository": {
+    "worktree": "/private/tmp/CMMMech-expansion-round107-20261016",
+    "branch": "curate/cmm-expansion-round107-20261016",
+    "trusted_base": "27d842b3e6239bf60565f93c958d3f2cad395037",
+    "baseline": "/private/tmp/cmm-round107-baseline.json",
+    "baseline_sha256": "3db8c60184af9ddd1dec47700f4a57ba703f9d4cfec97bf5a66f32d502a17c0c",
+    "baseline_terminal_pass": true
+  },
+  "scope": "Two separate current uranyl-silicate mineral owners, not uranium commodity/element or waste feed. No criticality/list assertion or microbial organism claim.",
+  "ranked_handoff": [
+    {
+      "priority": 1,
+      "record": "data/records/uranophane.yaml",
+      "decision": "curated_pending_independent_review",
+      "basis": "Direct abiotic dissolution plus synthetic hydrothermal evidence, with natural/synthetic and polymorph arms separated."
+    },
+    {
+      "priority": 2,
+      "record": "data/records/parauranophane.yaml",
+      "decision": "curated_pending_independent_review",
+      "basis": "Current renamed beta identity, original natural XRD and narrow null surface-redox result; failed synthesis preserved without universal claim."
+    }
+  ],
+  "maintained_artifacts": {
+    "data/records/uranophane.yaml": "648fb5f5b33c07b1a1467d9ce8634419900e5a4e1bb03cc5a93d8b4f1fc3584d",
+    "data/records/parauranophane.yaml": "fe68e3a09f93d1095747bddd8eb322f7acf48c32b7b20220324cfd9b25d9f861",
+    "history/records/uranophane/2026-10-16T003728Z-codex-0dde2c.yaml": "10a616e8508e0b9ee733c73a303348916442063d357d3ca03e976403242929fe",
+    "history/records/parauranophane/2026-10-16T003740Z-codex-52a448.yaml": "0c2f52f5fe669f0eaaa30ed3693b6320762c3afdbf7bc81cbd1d2c7b96b674c9"
+  },
+  "sources": [
+    {
+      "key": "ima202609",
+      "role": "current mineral identity authority",
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "version": "September2026",
+      "file": "/private/tmp/cmm-round107-uranium-research/ima202609.pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "inspection": "Definitionsp1 and exact Uranophanep224/Parauranophanep166 visually checked; not a claim to read all244pages.",
+      "finding": "Both species Ca(UO2)2(SiO3OH)2(H2O)4·H2O, Rn2022s.p.; special-procedure year is not unique accession.",
+      "terms": "Authority terms as stated in full master list; no bulk redistribution included."
+    },
+    {
+      "key": "cnmnc2022",
+      "role": "nomenclature authority",
+      "doi": "10.5194/ejm-34-463-2022",
+      "url": "https://ejm.copernicus.org/articles/34/463/2022/",
+      "file": "/private/tmp/cmm-round107-uranium-research/newsletter69.pdf",
+      "sha256": "fcb93f5aab27b41269040fef7aaf14552c20e164183badbc8820380afed00998",
+      "inspection": "Complete publisher HTML obtained; specific nomenclaturesection3 page467/PDF5 read and visually checked.",
+      "finding": "August2022 approval maps alpha to uranophane and beta to parauranophane; published19October2022.",
+      "terms": "CCBY4.0 on official publisher landing; only citation/assessment retained."
+    },
+    {
+      "key": "cesbron1993",
+      "role": "primary natural identification and hydrothermal synthesis/nulls",
+      "doi": "10.1180/minmag.1993.057.387.12",
+      "file": "/private/tmp/cmm-round107-uranium-research/uranophane1993-mirror.pdf",
+      "sha256": "b0373feb5f302557ac65d1068b0c42b5876481f9b34dc85f9be2d61c50820a09",
+      "inspection": "Complete8-page original301–308 read and allpages visually inspected, Figures1–4, Tables1–2 including continuedTable2.",
+      "finding": "NaturalNopalI XRD distinguishes polymorphs. Separate hydrothermal campaign producesalpha, no beta under testedconditions. pHmeasuredautoclaveopening; poorcrystallinity withhigherpH/Si.",
+      "metadata": "Exact Crossref DOI, title, authors and original June1993 issue verified. Publisher2018 posting distinct.",
+      "terms": "OriginalcopyrightMineralogicalSociety; fulltext/renders outsideGit."
+    },
+    {
+      "key": "schindler2009",
+      "role": "primary chemical dissolution and surface characterization",
+      "doi": "10.1016/j.gca.2009.01.031",
+      "file": "/private/tmp/cmm-round107-uranium-research/uranophane2009.pdf",
+      "sha256": "14fc71868c23981cc34dafcebcaf357a416b0015b40aeec89c50856db9f537d7",
+      "inspection": "Complete24-page original2510–2533 read and allpages visually inspected, all13figures and4tables.",
+      "finding": "Separate naturalShinkolobwe alpha/beta specimens and synthetic-alpha powder. Alpha dissolution and secondarysurfacefeatures; narrowly beta-labelled HCl3.5/3h XPSnullshift; no beta powderrelease rank.",
+      "metadata": "Exact Crossref DOI/title/all5authors and publisher73(9):2510–2533 verified; original2009 publication retained despite recentmirrorindexdate.",
+      "terms": "Elsevier2009 allrightsreserved; coauthorpubliccopy read, fulltext/renders outsideGit."
+    }
+  ],
+  "dedup": {
+    "recorded_at": "2026-10-16T00:35:17.849453+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-l",
+      "-i",
+      "parauranophane|uranophane|10\\.1016/j\\.gca\\.2009\\.01\\.031|057\\.387\\.12|ejm-34-463-2022",
+      "/private/tmp/CMMMech-expansion-round107-20261016/data/records",
+      "/private/tmp/CMMMech-expansion-round107-20261016/research",
+      "/private/tmp/CMMMech-expansion-round107-20261016/reviews",
+      "/private/tmp/CMMMech-expansion-round107-20261016/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports",
+      "/private/tmp/cmm-round57-mineral-research",
+      "/private/tmp/cmm-round82-stolzite-research",
+      "/private/tmp/cmm-round103-uranium-research",
+      "/private/tmp/cmm-round104-uranium-research",
+      "/private/tmp/cmm-round105-uranium-research",
+      "/private/tmp/cmm-round106-uranium-research"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "roots": [
+      "/private/tmp/CMMMech-expansion-round107-20261016/data/records",
+      "/private/tmp/CMMMech-expansion-round107-20261016/research",
+      "/private/tmp/CMMMech-expansion-round107-20261016/reviews",
+      "/private/tmp/CMMMech-expansion-round107-20261016/history",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports",
+      "/private/tmp/cmm-round57-mineral-research",
+      "/private/tmp/cmm-round82-stolzite-research",
+      "/private/tmp/cmm-round103-uranium-research",
+      "/private/tmp/cmm-round104-uranium-research",
+      "/private/tmp/cmm-round105-uranium-research",
+      "/private/tmp/cmm-round106-uranium-research"
+    ],
+    "missing_roots": [],
+    "followed_unique_file_count": 14651,
+    "hits": [
+      "/private/tmp/cmm-round82-stolzite-research/source-assessment-draft.json",
+      "/private/tmp/cmm-round82-stolzite-research/powellite-draft.yaml",
+      "/private/tmp/cmm-round82-stolzite-research/sidorenko2008.txt",
+      "/private/tmp/cmm-round57-mineral-research/raw/ima2026-pdf-text.txt",
+      "/private/tmp/cmm-round57-mineral-research/dedup.json",
+      "/private/tmp/cmm-round57-mineral-research/web-searches.json",
+      "/private/tmp/cmm-round57-mineral-research/finalize-dossier.py",
+      "/private/tmp/cmm-round57-mineral-research/dedup.py",
+      "/private/tmp/CMMMech-expansion-round107-20261016/data/records/gersdorffite.yaml",
+      "/private/tmp/cmm-round103-uranium-research/torbernite2003.txt",
+      "/private/tmp/cmm-round103-uranium-research/msa-autunite-toc.response",
+      "/private/tmp/cmm-round104-uranium-research/current-correction-search.json",
+      "/private/tmp/CMMMech-expansion-round107-20261016/data/records/powellite.yaml",
+      "/private/tmp/cmm-round103-uranium-research/web-search-responses.json",
+      "/private/tmp/cmm-round103-uranium-research/ima202609.txt",
+      "/private/tmp/CMMMech-expansion-round107-20261016/reviews/structured/20261014T220216Z-powellite-round82-independent/review.yaml",
+      "/private/tmp/CMMMech-expansion-round107-20261016/reviews/structured/20261014T220216Z-powellite-round82-independent/review.md",
+      "/private/tmp/cmm-round105-uranium-research/edinburgh-thesis.txt",
+      "/private/tmp/cmm-round105-uranium-research/local-inventory.json",
+      "/private/tmp/cmm-round104-uranium-research/ima202609.txt",
+      "/private/tmp/cmm-round105-uranium-research/round105CorrectionsSearch.txt",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records/gersdorffite.yaml",
+      "/private/tmp/CMMMech-expansion-round107-20261016/research/sources/round57-mineral/20261012T124225Z-source-investigation.md",
+      "/private/tmp/CMMMech-expansion-round107-20261016/research/sources/round57-mineral/20261012T124225Z-source-investigation.json",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records/powellite.yaml",
+      "/private/tmp/CMMMech-expansion-round107-20261016/reviews/structured/20261015T052637Z-gersdorffite-round88-independent/review.yaml",
+      "/private/tmp/CMMMech-expansion-round107-20261016/reviews/structured/20261015T052637Z-gersdorffite-round88-independent/review.md",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/sources/round57-mineral/20261012T124225Z-source-investigation.md",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/sources/round57-mineral/20261012T124225Z-source-investigation.json",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews/structured/20261014T220216Z-powellite-round82-independent/review.yaml",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews/structured/20261014T220216Z-powellite-round82-independent/review.md",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews/publication/20261015-round88/final-audit.json",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews/structured/20261015T052637Z-gersdorffite-round88-independent/review.yaml",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews/structured/20261015T052637Z-gersdorffite-round88-independent/review.md",
+      "/private/tmp/CMMMech-expansion-round107-20261016/research/sources/round88-sulfides/20261015T051400Z-source-investigation.md",
+      "/private/tmp/CMMMech-expansion-round107-20261016/research/sources/round88-sulfides/20261015T051400Z-source-investigation.json",
+      "/private/tmp/CMMMech-expansion-round107-20261016/research/sources/round82-tungstates-molybdates/20261014T215040Z-source-investigation.json",
+      "/private/tmp/CMMMech-expansion-round107-20261016/research/sources/round82-tungstates-molybdates/20261014T215040Z-source-investigation.md",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/sources/round88-sulfides/20261015T051400Z-source-investigation.md",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/sources/round88-sulfides/20261015T051400Z-source-investigation.json",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/sources/round82-tungstates-molybdates/20261014T215040Z-source-investigation.json",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research/sources/round82-tungstates-molybdates/20261014T215040Z-source-investigation.md",
+      "/private/tmp/CMMMech-expansion-round107-20261016/reviews/publication/20261015-round88/final-audit.json",
+      "/private/tmp/cmm-round106-uranium-research/ima202609.txt"
+    ],
+    "owner_hits": [
+      "/private/tmp/CMMMech-expansion-round107-20261016/data/records/gersdorffite.yaml",
+      "/private/tmp/CMMMech-expansion-round107-20261016/data/records/powellite.yaml",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records/gersdorffite.yaml",
+      "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records/powellite.yaml"
+    ],
+    "issue_inventory": {
+      "path": "/private/tmp/cmm-round107-issues-start.json",
+      "sha256": "5e4ab6ca3aa1d87b171717e36a96b0a768e455421f7dd206192f322f92d994ab",
+      "count": 299,
+      "matched": []
+    },
+    "assessment": "No dedicated uranophane or parauranophane owner or accepted 1993/2009 experiment found in this declared bounded search. Powellite has contextual historical-beta occurrence, round57 has deferred uranophane lead, and numerous IMA inventories include the species. Current draft directory is excluded; no machine-wide absence claim. Binary PDF image contents are not exhaustively searchable; cited extracted texts were included."
+  },
+  "search": {
+    "recorded_at": "2026-10-16T00:39:15.020112Z",
+    "provider": "web.run search_query/open",
+    "date_utc": "2026-10-16",
+    "queries": [
+      "\"novacekite\" \"Frondel\" \"1951\" pdf 680",
+      "\"rutherfordine\" \"dissolution\" experimental pdf",
+      "\"uranophane\" \"microbial\" full text",
+      "\"nováčekite\" \"dehydration\" Locock 2004",
+      "uranophane dissolution kinetics pH full text pdf",
+      "uranophane synthesis transformation calcium silicate uranium pdf",
+      "\"novacekite\" \"CM42_1699.pdf\"",
+      "\"Frondel\" \"AM36_680.pdf\"",
+      "\"10.1016/j.gca.2009.01.031\" correction erratum retraction",
+      "\"New mineralogical data on uranophane\" doi correction",
+      "site.cnmnc.units.it parauranophane 2022 special proposal nomenclature",
+      "\"Parauranophane\" \"2022\" newsletter",
+      "\"10.1016/j.gca.2009.01.031\" supplement supporting information",
+      "\"10.1016/j.gca.2009.01.031\" correction erratum retraction",
+      "\"10.1180/minmag.1993.057.387.12\" correction erratum retraction",
+      "\"parauranophane\" synthesis experimental 2019",
+      "\"uranophane\" \"Dissolution\" \"supplementary\" \"Schindler\""
+    ],
+    "filters": "No date or domain filters except explicit site query; first returned result sets, no exhaustive pagination.",
+    "raw_results": "/private/tmp/cmm-round107-uranium-research/web-search-results.json",
+    "raw_sha256": "cd5fd3f77891c40f59f9f863f576df1177d038c88480814b2e03a4746dd3d554",
+    "additional_access_limits": [
+      "Direct web-tool DOI opens for both accepted study identifiers returned Internal Error in final check; Crossref exact DOI metadata, publisher indexed pages and acquired original PDFs independently establish the publication identities.",
+      "Direct legacy rruff.geo.arizona.edu PDF route timed out; legitimate www.rruff.net mirror yielded the complete original.",
+      "Sandbox network DNS first failed; authorized public network acquisition succeeded with failures retained."
+    ],
+    "correction_assessment": "No affecting correction or retraction identified in bounded exact DOI/title returned queries; both Crossref relation objects empty and no update-to/updated-by fields. Not a worldwide absence claim."
+  },
+  "source_limitations": [
+    "Schindler2009 Figure3d alpha HCl pH3.5 label30min versus Table3 and section4.6 3h; accepted beta Figure3a-b 3h remains explicit.",
+    "Table3 fibrous-beta Ca-HCl60min versus Table4 Ca-HCl30min and generic surface descriptions; disputed arm not adopted for parauranophane.",
+    "Figure8e caption PbCl2-HCl versus Table1 and section4.9 Pb(NO3)2-HCl; no image-specific lead-salt measurement imported.",
+    "Figure10d caption20–30min versus methods/body10–30min; no digitized rate imported.",
+    "Basal-face (100)/(001) nomenclature varies in methods/results/captions; records avoid a generalized face-index assignment.",
+    "Powder dissolved-U changes cannot determine exact dissolution rates because secondary phases also affect U; no isolated-product yield.",
+    "CaCl2 and BaCl2 matrix effects prevent Ca assay, and higher Ca-arm saturation confounds cation-only causal comparison.",
+    "Original initialpH values drift; powder finalpH is not assigned to natural beta crystal solutions.",
+    "Surface-species proportions are constrained XPS fits, subject to background/sensitivity assumptions, washing/drying and vacuum; companion XPS studies not independently inspected.",
+    "Specific uranyl-bearing coating identities, Lewis-acidity causes, stepwave model and dissolution-reprecipitation explanation are interpretations; paper explicitly leaves coating mechanism unresolved.",
+    "1993 campaign lacks complete per-run reagents/durations/yields and cannot establish an equilibrium stability field from failed beta syntheses; natural etching/opal images are not measured dissolution kinetics."
+  ],
+  "quantitative_contract": "No observations created: source molarity/molality, spectral fractions, cellparameters and plottedrelease are not native exact mg/kg concentrationcells. No invented conversions or graphdigitization.",
+  "supplements": "Both complete original articles and bounded publisher/queryroutes contain no identified separate SI package in inspected scope. References to companion papers are separate studies, not read supplements; no global SI absence claim.",
+  "source_followup_issue_draft": "/private/tmp/cmm-round107-uranium-research/source-followup-issue.md",
+  "deferred": [
+    {
+      "candidate": "2025 SierraPeñaBlanca weathering/synchrotron particles",
+      "url": "https://www.mdpi.com/2075-163X/15/4/333",
+      "state": "Discovered publishersearchlead only; fulloriginal/SI/phase-specificparticlemapping not inspected; no claims imported."
+    },
+    {
+      "candidate": "2019 DaltonTransactions48:16722 beta structure study",
+      "state": "CurrentIMA secondaryreference only; no acquiredfulltext or claims imported."
+    },
+    {
+      "candidate": "Nováčekite hydrate family and rutherfordine",
+      "state": "Initial bounded discovery only; current chosenpair offers stronger acquired experimental evidence; no maintained drafts."
+    }
+  ],
+  "validation": {
+    "recorded_at": "2026-10-16T00:39:15.020112Z",
+    "command": "uv run --locked cmmmech validate data/records/uranophane.yaml data/records/parauranophane.yaml --require-records",
+    "exit_code": 0,
+    "result": "Checked 2 record(s); 0 failed.",
+    "session_id": 9431,
+    "terminal_chunk": "981d27",
+    "record_inputs": {
+      "data/records/uranophane.yaml": "648fb5f5b33c07b1a1467d9ce8634419900e5a4e1bb03cc5a93d8b4f1fc3584d",
+      "data/records/parauranophane.yaml": "fe68e3a09f93d1095747bddd8eb322f7acf48c32b7b20220324cfd9b25d9f861"
+    }
+  },
+  "independent_review": "Pending coordinator assignment; this dossier is not a scientific-review artifact.",
+  "artifact_manifest": [
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/acquisition01-sandbox-failure.json",
+      "bytes": 1878,
+      "sha256": "ac37a6664324c7f1eeb1d5119c228c5dc90f4de136a9bcdf33f680640bec2fad"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/acquisition01.json",
+      "bytes": 2590,
+      "sha256": "64e3edc5c6223bcac0727e4b18efba1bcf2be63649271cf22207caba61a58639"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/acquisition02.json",
+      "bytes": 2203,
+      "sha256": "20f2eee48b4a1f907fe5ebeaf0f1cd12114cbe7be81fe044a80fcdea5d023dc8"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/candidate-dedup01.json",
+      "bytes": 4057,
+      "sha256": "52e4382702be5ab2945c34dbc6492149fa09e39a4cd246a9a531bfec75c43617"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/dedup-final.json",
+      "bytes": 8082,
+      "sha256": "b0c1230c34c74b6a2b7c7a812beb2d82cbe4c5f790fb43b1e227979246c05b3d"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/ima202609-render/page-001.png",
+      "bytes": 193322,
+      "sha256": "088330b1f4e5baeb0f3eee2f5ae27bd229f7951b5385e30af34a7cb08f6c75b9"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/ima202609-render/page-166.png",
+      "bytes": 211365,
+      "sha256": "597dfbd95eff3a772a2da1670a697298a90a39f61f4cc15fa1e1c7184d2dadf9"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/ima202609-render/page-224.png",
+      "bytes": 194190,
+      "sha256": "95e81d2c7406c17b1b586cb55b4f6ced04bfcd9ddcf32eed4f83386bc1b16fe0"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/ima202609.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/ima202609.txt",
+      "bytes": 2245321,
+      "sha256": "83b1adc3c485c550265a78b670f6fb2a265aed0236ebd425ec372572871ff7fb"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/named-validation.json",
+      "bytes": 533,
+      "sha256": "1231a2fa9ce81c7c331c57d250a2149a06af899c50ba26fd0b9b8a410c8c0615"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/newsletter69-render/page-001.png",
+      "bytes": 165028,
+      "sha256": "7ae922e646034cf270a00ac95f98dc49b94679eddbe8a5b9fabaf8acc7053e4c"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/newsletter69-render/page-002.png",
+      "bytes": 203368,
+      "sha256": "12845f583ef1655bd6351cb8f4ea8b09b0808e84042600539df87ea6cc0a6a6d"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/newsletter69-render/page-003.png",
+      "bytes": 222140,
+      "sha256": "ea55271ecd9127e6ef14d995632efc2c5ecc8bf0cb2ab5d028641eadefc69c3d"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/newsletter69-render/page-004.png",
+      "bytes": 211703,
+      "sha256": "f7e04995853057f55a1093e7d992c190e543f2928501232188df518e85b6b75f"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/newsletter69-render/page-005.png",
+      "bytes": 230233,
+      "sha256": "57bd92fd9221404c9a063a4429d3419bf8c72ebed4800ce78f8470123b611424"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/newsletter69-render/page-006.png",
+      "bytes": 56182,
+      "sha256": "7d6cdedd41f51f59d3e8ee86296d046faec430ae0a537e07c4ad82965525ca51"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/newsletter69.html",
+      "bytes": 168118,
+      "sha256": "34e66a12398425f95f29d57ca155305038fd239c037874101eaf646ea061e40d"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/newsletter69.pdf",
+      "bytes": 164923,
+      "sha256": "fcb93f5aab27b41269040fef7aaf14552c20e164183badbc8820380afed00998"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/newsletter69.txt",
+      "bytes": 28394,
+      "sha256": "4aae3b462a264ae845832c762ef7c354f1f084eaa7db41edfb6197e78808980a"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/nomenclature2023-render/page-001.png",
+      "bytes": 213111,
+      "sha256": "4389ea2c9c28f5bbd63b67dda51ff3257f351858ae20139f247d591aab7436ad"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/nomenclature2023-render/page-002.png",
+      "bytes": 343204,
+      "sha256": "b050f22faa989943f5800bcda1f9292891a5862eec93f4b92082c1da5593e07b"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/nomenclature2023-render/page-003.png",
+      "bytes": 340595,
+      "sha256": "8e4947049684a4ab141548b2dbb7ff9853ecc6fc7b899e449c79570c4f342b1c"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/nomenclature2023-render/page-004.png",
+      "bytes": 252178,
+      "sha256": "b24c730a141e0868a10038caab7d4fb964b3b6f9cd567618324962b6e68d2e26"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/nomenclature2023-render/page-005.png",
+      "bytes": 175942,
+      "sha256": "155b97e2eda9205c1a34abf0563db7f940d4ea80292c9128bc2d2fe312a8b507"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/nomenclature2023-render/page-006.png",
+      "bytes": 239825,
+      "sha256": "9d3e0ab8840f177f261c9e0f05f868bf94feafeca5bcc85dbb8c6c4ff5ee4e96"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/nomenclature2023-render/page-007.png",
+      "bytes": 285015,
+      "sha256": "7e00d4f1ab32fac5380233a5276941134ec99b849161661b3758822d570f7c9b"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/nomenclature2023-render/page-008.png",
+      "bytes": 260594,
+      "sha256": "8f0812c107ac3f54540a22f0acf095b7a5f51cba5185eaf5290886a390da86ab"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/nomenclature2023.pdf",
+      "bytes": 535731,
+      "sha256": "545457e4eaa1b1fcbe94248cb67d8b5ef2a8b9c5ef6b7419815d348b179e98c6"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/nomenclature2023.txt",
+      "bytes": 63846,
+      "sha256": "d0c557d5d8c8657e10db6984f974cdeb39bc97bf889c054174d6eb98b7f8830e"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/owners-before.json",
+      "bytes": 111168,
+      "sha256": "3b90f6370ad6466532a517dd35214a01232a415608f16c4a31640c9a93a24d50"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/search-log.json",
+      "bytes": 2179,
+      "sha256": "adec1c9a267efbe188c139a4ac2c6d84558ea81975b1c0e9144286161c9fde52"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/source-followup-issue.md",
+      "bytes": 3204,
+      "sha256": "453d79e1b7d8e74a3979895e4ae8029fa28c1b4c5c71519aeeb6a52c5cc0db0a"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane1993-crossref.json",
+      "bytes": 6806,
+      "sha256": "4f91bc92e268bf7b44ba612c963a48c5064cfe401fffe1af732e6d8fb97370bc"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane1993-mirror-render/page-001.png",
+      "bytes": 237625,
+      "sha256": "8971ad00535fd7d1caf3b685b894fefab4dd9fcbb3cfcd52312a69c56435a8ad"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane1993-mirror-render/page-002.png",
+      "bytes": 142051,
+      "sha256": "3a8c8d0822ec7d2bc5b5989742d5364c62d546c7e071d041300c17e8eff78c88"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane1993-mirror-render/page-003.png",
+      "bytes": 244061,
+      "sha256": "bab56a5f1aaa16dc869c2782b6bf85407679ad7cbe31c5026f290cd949691c1c"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane1993-mirror-render/page-004.png",
+      "bytes": 342395,
+      "sha256": "512603d50f9b8c332f7652a3079dc0cff1109dfe92ccd97cd64ba975c5aee13c"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane1993-mirror-render/page-005.png",
+      "bytes": 120411,
+      "sha256": "cdc9ad4e169f5f53fdb76f14f4656da40e6edffb29a8f4f377cb9da6137a56a7"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane1993-mirror-render/page-006.png",
+      "bytes": 113649,
+      "sha256": "16c1e7c31c935cab211eff1f28923d08dc90cc2986d0e249372d743036980b81"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane1993-mirror-render/page-007.png",
+      "bytes": 101105,
+      "sha256": "d2b05dd65e4a1dac62f232126a965ba5ee37ebd75da9b55c1e267ea24757817e"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane1993-mirror-render/page-008.png",
+      "bytes": 262794,
+      "sha256": "db235e2ddd4cbd8f766810e4f382b2ebe857ca00824f545789056fff913bf8a6"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane1993-mirror.pdf",
+      "bytes": 2254417,
+      "sha256": "b0373feb5f302557ac65d1068b0c42b5876481f9b34dc85f9be2d61c50820a09"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane1993-mirror.txt",
+      "bytes": 32303,
+      "sha256": "bfd7c53f5622a4c8b766ec9d47edd22cc51951c6114a29525d1b602486f51c79"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-crossref.json",
+      "bytes": 20491,
+      "sha256": "b3a3348f38e4bc1750a99d55cfa5bb74d571acd37a4c04d2d0a16f15034dfe8d"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-001.png",
+      "bytes": 182656,
+      "sha256": "8aa97c0bf7dd584f3662fe7f9e5fcebb45894e9be9bd8c09f14f054a9cc643da"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-002.png",
+      "bytes": 255381,
+      "sha256": "0538045ec7efd2c98c56208a6b90dfd3009c57e1c4f2a31f9f89fd1275441bd5"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-003.png",
+      "bytes": 226546,
+      "sha256": "e9b56252e17aedf98457f83845fd5c1df5ffa9588aa9a67e09146914ccc20b48"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-004.png",
+      "bytes": 200673,
+      "sha256": "7d3cda8e27da4860be18ee8bb2d4a347e6a7d977449e0b2f182295fcb88d6916"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-005.png",
+      "bytes": 246513,
+      "sha256": "43e2624a35fd165c344c9b8d08186a8123d41b26af82afc5ad2a2ff076ab0d37"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-006.png",
+      "bytes": 162456,
+      "sha256": "5828c23ec10770cd7394d902ab6fa5bdbd60c12182f5a6ac0fda03ba283dd6b2"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-007.png",
+      "bytes": 149782,
+      "sha256": "8f3efd83eadb63c051a770b45932c4ff1177c1166721e7f7937aa324388e63bc"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-008.png",
+      "bytes": 151976,
+      "sha256": "eedd9a7f3bd65169b08aceaf57ebf6549be4b2bd17c907a3aad73b73db67054a"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-009.png",
+      "bytes": 129105,
+      "sha256": "9184ac9f52418483d51e580a50a1c45b3013e1ac78d0946e866d4f5aaf4e3de7"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-010.png",
+      "bytes": 247108,
+      "sha256": "b07d5f1e371411fce717745bb2172de118458abbac78d8118f47189c7d9b2e91"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-011.png",
+      "bytes": 215203,
+      "sha256": "ebb0265bb2c5c154a93985890af6ce991b4de035b3bad5869f249b59b74bd06e"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-012.png",
+      "bytes": 194144,
+      "sha256": "fe46ad07e4697dd1fc5f3f9532af0bb3bb475f55ce805935e50513675b48eff9"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-013.png",
+      "bytes": 269938,
+      "sha256": "577e03e3b87c272f4df27808c881e7ec8dfbeacf776e5b4685862a00898b7ef7"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-014.png",
+      "bytes": 289848,
+      "sha256": "767214829c12ae1f31bdf3c423e9bc57c40f66ae471855f89a39c491213aae10"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-015.png",
+      "bytes": 175620,
+      "sha256": "93192f8bb6bc505bca8e9cac4636bfb5933c3ca63a57cf764926f0e4e8cb3819"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-016.png",
+      "bytes": 226207,
+      "sha256": "a94e654322fb3f13a6bb24af2bbfbf0fb3d5c29cef67f1fd1289f0c5bb743236"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-017.png",
+      "bytes": 229586,
+      "sha256": "dde1692e279651992ce7070e2fcd69466eaafb347ea0dd4eec06865897ef683e"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-018.png",
+      "bytes": 231174,
+      "sha256": "c2bd03262e5a4eb9a572047709980ab6c68ecc58900d749422c3e2498ce955c7"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-019.png",
+      "bytes": 199170,
+      "sha256": "e942d81da6ba7a3fea1ef938f025ed11101f8fe28299abdde674be7776c56a70"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-020.png",
+      "bytes": 212751,
+      "sha256": "ac572ebb0196dbdbc96c47851469a9079445db0ef65064581a2dd91fca87043e"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-021.png",
+      "bytes": 195548,
+      "sha256": "395c2986bbd88ae13b74786b30999cd54fe5263b4518d763cd8150ed0a56515b"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-022.png",
+      "bytes": 231713,
+      "sha256": "a8343f72b3e2cc1b5db0f857e7d5f5f0c09d7c84eef01bfa98bc68662cc48217"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-023.png",
+      "bytes": 239842,
+      "sha256": "b9f45ead77e4c9bfa86dffdbe6c5ee06216b40a8dee5bdeb592c9929bec51ef9"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009-render/page-024.png",
+      "bytes": 223703,
+      "sha256": "04ac7be3f4e4d3930fa8a4120dd4cdd1f8f89cee3b626dbf48ad61cb850eb610"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009.pdf",
+      "bytes": 1210105,
+      "sha256": "14fc71868c23981cc34dafcebcaf357a416b0015b40aeec89c50856db9f537d7"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/uranophane2009.txt",
+      "bytes": 134101,
+      "sha256": "73ac1ffa7eb8e284b58c2571b17587a7ce72744ab9e343f00f5b1e7c36ba48a8"
+    },
+    {
+      "path": "/private/tmp/cmm-round107-uranium-research/web-search-results.json",
+      "bytes": 143177,
+      "sha256": "cd5fd3f77891c40f59f9f863f576df1177d038c88480814b2e03a4746dd3d554"
+    }
+  ]
+}

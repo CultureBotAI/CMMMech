@@ -1,0 +1,25 @@
+{
+  "review_id": "round107-finalization-helper-prose-successor",
+  "timestamp_utc": "2026-10-16T00:52:39.147457+00:00",
+  "reviewer": {
+    "name": "Codex",
+    "model": "GPT-6",
+    "agent_tool": "codex",
+    "independent": true
+  },
+  "prior_review": "reviews/publication/20261016-round107/finalization-helper-review.json",
+  "prior_review_sha256": "388ce69825b3bcf049116a47b67e9cf2b8d0cb277bddc0b60315848a5f7c482e",
+  "scope": "Exact narrow archive summary-only change; no re-audit of separate queue-helper fixes or claim of issue425 closure.",
+  "inputs": {
+    "/private/tmp/cmm-round107-archive.py": "22409208306b0b808027457380c862e1e772e8465707d2289579d8fce179a9f6",
+    "/private/tmp/cmm-round107-finalize.py": "848015e32a4d2740fcfaa7f01c167843c976f5e735b4a08d96fac856b968edc7"
+  },
+  "proof": "Removing exactly one stated added sentence reconstructs the prior independently audited archive SHA256 da7a1448e73a054780d362ed277791d37145e1f8240ce6838dd3ca04054b4f31. Finalizer remains byte-identical.",
+  "diff": "--- audited archive\n+++ current archive\n@@ -43,7 +43,7 @@\n \n Seven added records: calcioveatchite, ludwigite ore, lanthanite-(Nd), xenotime-(Yb), uranophane, parauranophane and ferrochrome slag. Corpus total: {cfg['counts']['record_count']}. Exact current scientific-review coverage and source limits are retained in the round107 report and final receipts.\n \n-Local baseline/final `just check` passed (317 tests passed, 3 skipped). Strict nonempty validation, {cfg['counts']['history_count']} histories, {cfg['counts']['structured_review_count']} native reviews and generated pages passed. Fresh squash preflight and actual postmerge checks passed with {cfg['counts']['review_base_count']} available bases and exact scientific-review coverage for all {cfg['counts']['record_count']} records. All five latest hosted attempts passed: PR strict, queue strict, main strict, merge integrity and Pages. Two minor source-locator defects were fixed under issue #424, with an immutable initial review and explicitly resolved successor. Six source-evidence follow-ups #418\u2013423 remain open; previously documented source gaps remain separate. Original-main preservation verified all {final['preserved_nontracked_entries']} pre-existing nontracked entries.\n+Local baseline/final `just check` passed (317 tests passed, 3 skipped). Strict nonempty validation, {cfg['counts']['history_count']} histories, {cfg['counts']['structured_review_count']} native reviews and generated pages passed. Fresh squash preflight and actual postmerge checks passed with {cfg['counts']['review_base_count']} available bases and exact scientific-review coverage for all {cfg['counts']['record_count']} records. All five latest hosted attempts passed: PR strict, queue strict, main strict, merge integrity and Pages. Two minor source-locator defects were fixed under issue #424, with an immutable initial review and explicitly resolved successor. Two local queue-helper guard gaps were fixed and independently reviewed under issue #425. Six source-evidence follow-ups #418\u2013423 remain open; previously documented source gaps remain separate. Original-main preservation verified all {final['preserved_nontracked_entries']} pre-existing nontracked entries.\n \n The branch `{branch}` was deleted locally and remotely. Its clean detached worktree remains at `/private/tmp/CMMMech-expansion-round107-20261016`. Original main advanced only by fast-forward. All pre-existing nontracked entries, including hidden/ignored environment files, are verified below against the round107 preservation inventory. The annotated review-base evidence tag is unchanged.\n \n",
+  "findings": [],
+  "verdict": "pass_with_limitations",
+  "limitations": [
+    "Issue425 queue-helper evidence is owned by another reviewer; this review verifies only that the archive adaptation introduces no operational logic change.",
+    "Future archive text must be emitted only after final lifecycle checks pass; no current hosted or merge success asserted."
+  ]
+}

@@ -8,13 +8,20 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 527 material records.
+The catalogue currently contains 534 material records.
 
-The [latest curation report](research/ingests/round106-frontier-20261015.md) links
+The [latest curation report](research/ingests/round107-frontier-20261016.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Calcioveatchite](data/records/calcioveatchite.yaml) | Natural calcium borate identity and ordered crystal structure | Specimen-specific composition and unresolved SrO range discrepancy |
+| [Ludwigite ore](data/records/ludwigite-ore.yaml) | Abiotic alkali activation and water leaching of mixed boron-bearing feed | Bulk leaching is not a mineral-specific or isolated-product yield |
+| [Lanthanite-(Nd)](data/records/lanthanite-nd.yaml) | Natural mineral identity and crystal structure | Hydrogen-model and unacquired crystallographic deposit limits |
+| [Xenotime-(Yb)](data/records/xenotime-yb.yaml) | Natural Yb phosphate identity and specimen characterization | Optical-value conflict and low analytical total retained |
+| [Uranophane](data/records/uranophane.yaml) | Abiotic acid dissolution and hydrothermal synthesis | Natural crystal and synthetic powder arms separated; unresolved source labels |
+| [Parauranophane](data/records/parauranophane.yaml) | Distinct beta polymorph and bounded null surface-redox result | No transfer of alpha-powder release rates or universal synthesis-failure claim |
+| [Ferrochrome slag](data/records/ferrochrome-slag.yaml) | Abiotic laboratory acid extraction of magnesium | Conflicting optimum plots; synthetic chromate tests do not establish microbial slag treatment |
 | [Pinnoite](data/records/pinnoite.yaml) | Natural mineral identity and vibrational characterization | Conflicting water and band assignments; no accepted processing claims |
 | [Veatchite](data/records/veatchite.yaml) | Natural mineral identity and separate polytype refinements | Geological associations are not measured transition boundaries |
 | [Monazite-(Gd)](data/records/monazite-gd.yaml) | Mixed-REE natural mineral identity and electron-diffraction structure | Ideal formula separated from specimen composition; no bulk powder XRD claim |

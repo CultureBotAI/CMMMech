@@ -1,0 +1,345 @@
+schema_version: 1.0.0
+review_id: 20261016T005214Z-ludwigite-ore-round107-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of ludwigite-ore
+started_at: '2026-10-16T00:41:44.704158Z'
+finished_at: '2026-10-16T00:52:14.407079Z'
+reviewer:
+  identity: codex /root/round104_ree
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_borates; no edits
+    to the reviewed borate owner/history/dossier. Reviewer authored unrelated lanthanite-(Nd)
+    and xenotime-(Yb) records. Source acquisition was shared, then original articles
+    and authority were independently inspected.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 27d842b3e6239bf60565f93c958d3f2cad395037
+  state: working_tree
+  inputs:
+  - path: data/records/ludwigite-ore.yaml
+    sha256: c55996420abc0062e76e4f91370f9dd2d28e508d77604fe17d23f6dba38ff5c5
+    role: target
+  - path: history/records/ludwigite-ore/2026-10-16T003737Z-codex-890fd7.yaml
+    sha256: 67240f2e4f8ac07da648de3341ee36ecb9a2a71dd83e0d1b206734c0067631df
+    role: context
+  - path: research/sources/round107-borates/20261016T003910Z-source-investigation.json
+    sha256: 1a887adbf15d0bd2181ce3fdb3914017820c0b31ebc9f7cb6f917b06dfb4d50b
+    role: context
+  - path: research/sources/round107-borates/20261016T003910Z-source-investigation.md
+    sha256: 6848661b0e4bcd370f3e35aad2ea3e582c664d5cba08d40f91b69b49ffb50f8c
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:ludwigite-ore
+  path: data/records/ludwigite-ore.yaml
+  label: ludwigite-ore
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/ludwigite-ore.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/ludwigite-ore/2026-10-16T003737Z-codex-890fd7.yaml
+    role: canonical_history
+scope:
+  description: Exact frozen ludwigite-ore owner, source claims and canonical/inline
+    creation provenance; wider follow-up leads and hosted publication excluded.
+  selection: Assigned target captured with native inspect before independent scientific
+    assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:ludwigite-ore
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/ludwigite-ore.yaml
+  locator: Complete exact working-tree bytes at /private/tmp/CMMMech-expansion-round107-20261016/data/records/ludwigite-ore.yaml
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: supports
+  summary: Identity, scientific descriptions, source-level claims, mechanism scope
+    and inline CREATE independently checked.
+  snapshot_sha256: c55996420abc0062e76e4f91370f9dd2d28e508d77604fe17d23f6dba38ff5c5
+- evidence_id: history
+  kind: record_content
+  reference: history/records/ludwigite-ore/2026-10-16T003737Z-codex-890fd7.yaml
+  locator: Complete canonical CREATE at /private/tmp/CMMMech-expansion-round107-20261016/history/records/ludwigite-ore/2026-10-16T003737Z-codex-890fd7.yaml
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: supports
+  summary: Actual actor codex, GPT-6/codex metadata, timestamp and target correspond
+    to this addition; inline and canonical events remain distinct.
+  snapshot_sha256: 67240f2e4f8ac07da648de3341ee36ecb9a2a71dd83e0d1b206734c0067631df
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round107-borates/20261016T003910Z-source-investigation.json
+  locator: Paired source investigation; acquisition and access limits checked independently
+    against original artifacts. /private/tmp/CMMMech-expansion-round107-20261016/research/sources/round107-borates/20261016T003910Z-source-investigation.json
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: context_only
+  summary: Context for source provenance and deferred evidence; not a substitute for
+    the original papers.
+  snapshot_sha256: 1a887adbf15d0bd2181ce3fdb3914017820c0b31ebc9f7cb6f917b06dfb4d50b
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round107-ree-research/borate-review-search.json
+  locator: Four exact DOI/title correction/retraction queries; raw response retained.
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: context_only
+  summary: No affecting notice identified in returned sets. Known internal conflicts
+    remain explicit; no universal absence claim.
+  snapshot_sha256: 59f3c2bf5aea43bd19c8b86574cdb1d047950bae3ce07f1679daafe3478012b8
+  search_scope: First returned web sets for four queries recorded verbatim; current
+    Crossref relation/update fields also checked. Metadata and secondary search snippets
+    were not scientific support.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round107-ree-research/borate-review-dedup.txt
+  locator: Hidden, ignored and followed search across worktree records, research,
+    reviews and history; curator broader dedup includes original-main ignored reports
+    and cited raw roots.
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: context_only
+  summary: Existing veatchite-context use of the calcioveatchite source is distinct
+    from this new species owner. Ludwigite ore remains distinct from a mineral species.
+  snapshot_sha256: f723b2590aa56c48f0a31dcdb34171c9af1064247dea1a49d3408f3a8f22942b
+  search_scope: Bounded text roots and identifiers/DOIs recorded in paired search
+    receipt; not the whole filesystem or unextracted binary content.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round107-ree-research/borate-review-named-validation.json
+  locator: Independent two-owner strict validation with exact hashes and actual subprocess
+    timestamps.
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: supports
+  summary: Two records checked; zero failed. 2026-10-16T00:42:48.209748+00:00 through
+    2026-10-16T00:42:53.866306+00:00
+  snapshot_sha256: 46d8d2f255830999a395f4c03a41c9fc17736b999839ca92c165ced7c80751cb
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round107-final-gates.json
+  locator: Coordinator terminal receipt; base, worktree, exact four commands, successful
+    outcomes, unchanged owner hashes and log SHA256 independently verified. Log /private/tmp/cmm-round107-final-gates.log
+    SHA256 4185f25a993d68b080a9c2a474ce5862e8284f6665a760daa83540e913968f84
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: supports
+  summary: Actual completed local batch, not an inferred check or hosted publication
+    result.
+  snapshot_sha256: 9ecba8d70f57d4bf2df433becdf3581dca4a634de4fd5294f1c66f4aaf6b1d4c
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/molecules29040826
+  locator: Complete 18-page publisher original read for methods/results/discussion;
+    PDF pages4–16 independently viewed, including all Figures 1–9, Tables 1–2 and
+    conflicting kinetic equations4/11. /private/tmp/cmm-round107-borates-research/ludwigite2024.pdf
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: supports
+  summary: Liang et al. 2024 supports bounded author-reported abiotic water leaching
+    of pretreated mixed ore concentrate; omitted analytical methods and contradictory
+    statements limit inference.
+  snapshot_sha256: 35e5f52adead0ffbfb519c99e51c82ef9fb5285398fc9abb11036324f36ec101
+- evidence_id: xml
+  kind: primary_source
+  reference: https://pmc.ncbi.nlm.nih.gov/articles/PMC10893144/
+  locator: Same primary study XML, including methods 3.2.2, data availability, refs
+    and notice/supplement tag check. /private/tmp/cmm-round107-borates-research/ludwigite2024.xml
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: supports
+  summary: Methods expressly omit the leaching procedure and percentage calculation
+    and point to 2017 work; XML is another format of the same experiment, not independent
+    replication.
+  snapshot_sha256: da746d2f68947b269e2aefd2942daf2d1e96a79d25b18e87e09ee42e609849db
+- evidence_id: metadata
+  kind: authority
+  reference: https://api.crossref.org/works/10.3390/molecules29040826
+  locator: Current metadata acquired by curator, independently read at /private/tmp/cmm-round107-borates-research/ludwigite2024-crossref.json
+  accessed_at: '2026-10-16T00:52:14.407079Z'
+  support: context_only
+  summary: DOI/title/year, PMID38398578 and PMC10893144 correspond to this article.
+    Empty relation/update fields are not proof no notice exists.
+  snapshot_sha256: 5c6ef832d564c4d36567d8faf6a5494fac5b5646f4d69c096c657d25038c5b10
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/calcioveatchite.yaml data/records/ludwigite-ore.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Two records checked with zero failures; subprocess receipt and exact hashes
+    verified.
+  target_ids:
+  - cmmmech:ludwigite-ore
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Final batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T00:44:33.569603+00:00 through 2026-10-16T00:51:25.649736+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:ludwigite-ore
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Final batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T00:51:25.651660+00:00 through 2026-10-16T00:51:42.046800+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:ludwigite-ore
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Final batch command 3
+  command: uv run --locked cmmmech validate-history --base 27d842b3e6239bf60565f93c958d3f2cad395037
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T00:51:42.047805+00:00 through 2026-10-16T00:51:50.294344+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:ludwigite-ore
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Final batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T00:51:50.295710+00:00 through 2026-10-16T00:51:57.934762+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:ludwigite-ore
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mixed primary resource and transformed feed
+  outcome: supported
+  summary: 'The owner is a primary-resource ore/concentrate, not pure ludwigite mineral
+    or elemental boron. The actual leach feed is Na2CO3-roasted transformed concentrate:
+    B2O3 5.12 wt% and TFe 58.23 wt%, with metalFe, sodium silicates and magnesiowustite
+    in Figure9. Original mine/batch and mineral proportions are unreported here.'
+  target_ids:
+  - cmmmech:ludwigite-ore
+  evidence_ids:
+  - record
+  - primary
+  - xml
+- assessment_id: pretreatment
+  area: evidence
+  topic: Pretreatment and experimental conditions
+  outcome: supported
+  summary: Na2CO3 at 20% of concentrate mass, pellets roasted1050 °C for60 min then
+    cooled/ground; gas composition/flow are unavailable. DY-8 autoclave conditions,
+    size-definition distinction and liquid/solid units are retained. This is abiotic
+    separation with no microbial actor, biomass or biological-control claim.
+  target_ids:
+  - cmmmech:ludwigite-ore
+  evidence_ids:
+  - record
+  - primary
+  - xml
+- assessment_id: outcome
+  area: evidence
+  topic: Reported extraction and separate product characterization
+  outcome: supported
+  summary: Reported 93.71% boron leaching at180 °C,6 h,8 mL/g and52.31 µm remains
+    author-reported. Methods 3.2.2 omits the analytical denominator, sampling and
+    calculation, referring to unavailable2017 methods; no independent mass balance
+    or replication is asserted. Figure 4 product/residue at60.16 µm is separate from
+    the best-performing size; NaBO2.2H2O plus Na2CO3.H2O after evaporation is not
+    pure recovered boron yield. Figure 5 SEM is a60 min observation.
+  target_ids:
+  - cmmmech:ludwigite-ore
+  evidence_ids:
+  - record
+  - primary
+  - xml
+- assessment_id: conflicts
+  area: consistency
+  topic: Source contradictions and fitted kinetics
+  outcome: supported
+  summary: The owner retains nonzero40/60°C percentages versus completely-unextractable
+    wording,0–74 µm sieve versus92.94 µm representative size, and positive final-equation
+    exponent conflicting with earlier negative form. It does not silently repair or
+    predict from that equation. The fitted8.812kJ/mol activation energy is not unique
+    proof of transport control.
+  target_ids:
+  - cmmmech:ludwigite-ore
+  evidence_ids:
+  - record
+  - primary
+  - xml
+- assessment_id: scope
+  area: scope
+  topic: Evidence classification, criticality and scale
+  outcome: supported
+  summary: Support applies to a narrowly stated author-reported laboratory outcome,
+    with partial support for mechanistic interpretation and product/kinetics scope.
+    No criticality designation, biological process or industrial deployment is inferred.
+    Laboratory ore treatment does not establish a complete commercial flowsheet.
+  target_ids:
+  - cmmmech:ludwigite-ore
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen inputs and completed checks
+  outcome: supported
+  summary: Native inspection captured exact owner/history/dossier/schema bytes before
+    judgment; all remain unchanged. Independent named validation and actual coordinator
+    batch/history checks passed. Saved-review validation and publication are later
+    gates.
+  target_ids:
+  - cmmmech:ludwigite-ore
+  evidence_ids:
+  - record
+  - history
+  - dossier
+  - named
+  - batch
+findings: []
+actions: []
+summary: Qualified acceptance of a mixed-resource identity and bounded author-reported
+  abiotic laboratory leaching; no supported corrective record defect.
+limitations:
+- The referenced 2017 analytical methods DOI10.1016/j.hydromet.2016.11.004 was not
+  acquired. Percentage denominator, sampling, assays, replicates and uncertainty cannot
+  be independently reconstructed from the 2024 article.
+- Raw leach curves and mineral mass balances were unavailable; no curve refitting,
+  corrected equation or numerical recovery prediction was produced. Explicit internal
+  source conflicts remain unresolved.
+- The evaporated mixed salts and separately sized residue/SEM arms do not establish
+  pure-product recovery or industrial performance. Original ore mine/batch identity
+  and roasting-gas details remain incomplete.
+- Shared source acquisition is disclosed. Bounded correction and hidden/ignored dedup
+  searches do not establish exhaustive absence.
+- Working-tree review at the retained base. Record validation is separate from scientific
+  truth; native review-check and committed-head/hosted publication remain separate.
+notes:
+- No owner/history correction was needed; unavailable originals and retained internal
+  source conflicts are limitations, not invented corrective defects.
+- No self-authored REE record is scientifically reviewed in this observation.
