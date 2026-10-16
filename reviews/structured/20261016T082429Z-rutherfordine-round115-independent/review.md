@@ -1,0 +1,328 @@
+# Independent scientific review of Rutherfordine
+
+- Review: 20261016T082429Z-rutherfordine-round115-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-16T08:09:50.244182Z
+- Finished UTC: 2026-10-16T08:24:29.229917Z
+- Reviewer: codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The bounded identity and abiotic laboratory observations are supported. No corrective curator defect was identified; unresolved source and reproducibility limits remain explicit.
+
+## Scope And Provenance
+
+Entire maintained owner and linked history; claim-level primary-source review, without experiment replication or structure re-refinement.
+
+Selection: Two uranium-agent records independently assigned; separate native capture preceded assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base f97c978dcfb98269ea46fa6a9d02a6fb0253e111.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:rutherfordine | data/records/rutherfordine.yaml | maintained | Rutherfordine |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Required final batch gate | passed | True | cmmmech:rutherfordine | Terminal receipt and log hash verified against current owner bytes. |
+| Required final batch gate | passed | True | cmmmech:rutherfordine | Terminal receipt and log hash verified against current owner bytes. |
+| Required final batch gate | passed | True | cmmmech:rutherfordine | Terminal receipt and log hash verified against current owner bytes. |
+| Required final batch gate | passed | True | cmmmech:rutherfordine | Terminal receipt and log hash verified against current owner bytes. |
+
+## Scientific And Domain Assessments
+
+### Species, material form and authority
+
+identity: supported. Targets: cmmmech:rutherfordine.
+
+Current IMA approved special-procedure status and natural Imm2 structure are supported; natural and synthetic specimen populations remain separate.
+
+### Primary experimental support and transfer limits
+
+evidence: supported. Targets: cmmmech:rutherfordine.
+
+Primary synthesis/characterization supports a synthetic rutherfordine analogue without fixing unreported reaction temperature, pressure reference basis, yield or batch replication. Room-temperature drying is correctly not promoted to reaction temperature. Calorimetric dissolution is separate from aqueous recovery; natural carbonate-sheet orientation is not inherited by the synthetic preparation.
+
+### Actual history, bounded searches and final validation
+
+provenance: supported. Targets: cmmmech:rutherfordine.
+
+Actual CREATE history and exact inspected bytes are retained; structural checks do not establish experimental truth.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/rutherfordine.yaml; Entire native-inspected owner; retained /private/tmp/CMMMech-expansion-round115-20261016/data/records/rutherfordine.yaml | supports | Final maintained bytes, source locators, material form, outcome and limitations checked independently. |
+| history0 | history/records/rutherfordine/2026-10-16T080718Z-codex-4dd966.yaml; Entire canonical CREATE session and separate inline event; retained /private/tmp/CMMMech-expansion-round115-20261016/history/records/rutherfordine/2026-10-16T080718Z-codex-4dd966.yaml | supports | Actual target, actor/model/tool and current timestamps agree; review itself is not a new curation event. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Species rows PDF10 and189 visually inspected, plus status definitions; retained /private/tmp/cmm-round115-uranium-research/ima202609.pdf | supports | Andersonite ideal6H2O is G1951; rutherfordine is A1962s.p., not grandfathered. These are mineral identities, not inherited uranium criticality. |
+| primary | https://doi.org/10.2138/am.2005.1821; Complete seven-page original, synthesis and characterization p1286 visually checked; separate calorimetry and tables; retained /private/tmp/cmm-round115-uranium-research/rutherfordine2005.pdf | supports | Reported0.400g amorphousUO3/20mL water,70kPaCO2,24h and room-temperature drying agree. Approximately4/40/25mg analytical aliquots are not independent synthesis replicates. Powder/TG purity claims are prose assertions without displayed raw curves; no yield is adopted. |
+| structure | https://www.rruff.net/doclib/cm/vol37/CM37_929.pdf; Complete ten-page original, methods930-931, Figures1-3 and OH discussion932-934, appendix936-938; retained /private/tmp/cmm-round115-uranium-research/rutherfordine1999.pdf | supports | Shinkolobwe natural crystal and Imm2 sheets support identity. The alternate-layer orientation differs from earlier structures; absorption correction strongly affects U-O distance. Possible hydrogen variability in other preparations does not invalidate the bounded ideal species identity. |
+| notices | Independent exact DOI/title notice queries; Three live DOI/title correction/retraction queries on2026-10-16; retained /private/tmp/cmm-round115-uranium-independent-web.json | context_only | Returned results did not identify a verified applicable notice. Relevant primary originals, rather than secondary snippets or the inconsistent bibliographic page range in one index, establish source identity. |
+| dedup | Current owner duplicate search; rg --no-ignore --hidden --follow over data/records; retained /private/tmp/cmm-round115-uranium-independent-dedup.txt | context_only | Only the two dedicated new owners match these names/DOIs in this bounded current-record search. Broader source/raw dedup is separately retained by the curator. |
+| batch | Final exact-byte batch receipt; Terminal command rows and retained log hash; retained /private/tmp/cmm-round115-final-gates.json | supports | All four required commands passed against unchanged inputs; current reviewed owner hash matches the completed receipt. |
+
+## Limits And Additional Notes
+
+- The2005 paper does not display its preparation powder patterns/TG curves or numerical mass-loss/product balance; their absence limits independent purity verification.
+- Finch1999 deposited structure factors were not acquired; no re-refinement or thermodynamic recalculation is claimed.
+- Independent agent assessment is not external human peer review. Full text and selected original page images were checked, not every page visually reread.
+- Bounded searches cannot prove absence of later corrections or contradictory studies.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261016T082429Z-rutherfordine-round115-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Rutherfordine
+started_at: '2026-10-16T08:09:50.244182Z'
+finished_at: '2026-10-16T08:24:29.229917Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Uranium agent authored this record/history. Root independently
+    inspected exact final owner and primary full text, claim-bearing figure/method
+    images, authority rows and notice results; root did not edit these owners.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The bounded identity and abiotic laboratory observations are supported. No
+  corrective curator defect was identified; unresolved source and reproducibility
+  limits remain explicit.
+source:
+  git_revision: f97c978dcfb98269ea46fa6a9d02a6fb0253e111
+  state: working_tree
+  inputs:
+  - path: data/records/rutherfordine.yaml
+    sha256: c599fd065bafdb04de83897b7dbf7ba45e561b4cc97547cc3aaa9118c318f208
+    role: target
+  - path: history/records/rutherfordine/2026-10-16T080718Z-codex-4dd966.yaml
+    sha256: 77815402020aa220c4a239fbb31a4b78eb4f240f43b32b7b16b3c3b4f3e50af8
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- kind: maintained
+  label: Rutherfordine
+  owner_paths:
+  - path: data/records/rutherfordine.yaml
+    repository: CultureBotAI/CMMMech
+    role: scientific_record
+  path: data/records/rutherfordine.yaml
+  target_id: cmmmech:rutherfordine
+scope:
+  description: Entire maintained owner and linked history; claim-level primary-source
+    review, without experiment replication or structure re-refinement.
+  selection: Two uranium-agent records independently assigned; separate native capture
+    preceded assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:rutherfordine
+checks:
+- check_id: gate0
+  name: Required final batch gate
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  summary: Terminal receipt and log hash verified against current owner bytes.
+  target_ids:
+  - cmmmech:rutherfordine
+  evidence_ids:
+  - batch
+- check_id: gate1
+  name: Required final batch gate
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  summary: Terminal receipt and log hash verified against current owner bytes.
+  target_ids:
+  - cmmmech:rutherfordine
+  evidence_ids:
+  - batch
+- check_id: gate2
+  name: Required final batch gate
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base f97c978dcfb98269ea46fa6a9d02a6fb0253e111
+  exit_code: 0
+  summary: Terminal receipt and log hash verified against current owner bytes.
+  target_ids:
+  - cmmmech:rutherfordine
+  evidence_ids:
+  - batch
+- check_id: gate3
+  name: Required final batch gate
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  summary: Terminal receipt and log hash verified against current owner bytes.
+  target_ids:
+  - cmmmech:rutherfordine
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/rutherfordine.yaml
+  locator: Entire native-inspected owner; retained /private/tmp/CMMMech-expansion-round115-20261016/data/records/rutherfordine.yaml
+  accessed_at: '2026-10-16T08:24:29.229917Z'
+  snapshot_sha256: c599fd065bafdb04de83897b7dbf7ba45e561b4cc97547cc3aaa9118c318f208
+  support: supports
+  summary: Final maintained bytes, source locators, material form, outcome and limitations
+    checked independently.
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/rutherfordine/2026-10-16T080718Z-codex-4dd966.yaml
+  locator: Entire canonical CREATE session and separate inline event; retained /private/tmp/CMMMech-expansion-round115-20261016/history/records/rutherfordine/2026-10-16T080718Z-codex-4dd966.yaml
+  accessed_at: '2026-10-16T08:24:29.229917Z'
+  snapshot_sha256: 77815402020aa220c4a239fbb31a4b78eb4f240f43b32b7b16b3c3b4f3e50af8
+  support: supports
+  summary: Actual target, actor/model/tool and current timestamps agree; review itself
+    is not a new curation event.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Species rows PDF10 and189 visually inspected, plus status definitions;
+    retained /private/tmp/cmm-round115-uranium-research/ima202609.pdf
+  accessed_at: '2026-10-16T08:24:29.229917Z'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  support: supports
+  summary: Andersonite ideal6H2O is G1951; rutherfordine is A1962s.p., not grandfathered.
+    These are mineral identities, not inherited uranium criticality.
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.2138/am.2005.1821
+  locator: Complete seven-page original, synthesis and characterization p1286 visually
+    checked; separate calorimetry and tables; retained /private/tmp/cmm-round115-uranium-research/rutherfordine2005.pdf
+  accessed_at: '2026-10-16T08:24:29.229917Z'
+  snapshot_sha256: afd0ed0cb7a302af430bc7d0907344c21a7ef9a27c61ac02e2eb0e0a2d60bb92
+  support: supports
+  summary: Reported0.400g amorphousUO3/20mL water,70kPaCO2,24h and room-temperature
+    drying agree. Approximately4/40/25mg analytical aliquots are not independent synthesis
+    replicates. Powder/TG purity claims are prose assertions without displayed raw
+    curves; no yield is adopted.
+- evidence_id: structure
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/cm/vol37/CM37_929.pdf
+  locator: Complete ten-page original, methods930-931, Figures1-3 and OH discussion932-934,
+    appendix936-938; retained /private/tmp/cmm-round115-uranium-research/rutherfordine1999.pdf
+  accessed_at: '2026-10-16T08:24:29.229917Z'
+  snapshot_sha256: f55cadab5df1e5e57adf0055b3ab6bc40b237761df837123d3671b358c0ab650
+  support: supports
+  summary: Shinkolobwe natural crystal and Imm2 sheets support identity. The alternate-layer
+    orientation differs from earlier structures; absorption correction strongly affects
+    U-O distance. Possible hydrogen variability in other preparations does not invalidate
+    the bounded ideal species identity.
+- evidence_id: notices
+  kind: search
+  reference: Independent exact DOI/title notice queries
+  locator: Three live DOI/title correction/retraction queries on2026-10-16; retained
+    /private/tmp/cmm-round115-uranium-independent-web.json
+  accessed_at: '2026-10-16T08:24:29.229917Z'
+  snapshot_sha256: 71d0259f89f9d5b2e1dd71efaf33286106929097282cc6cc07898e5c8bef8edd
+  support: context_only
+  summary: Returned results did not identify a verified applicable notice. Relevant
+    primary originals, rather than secondary snippets or the inconsistent bibliographic
+    page range in one index, establish source identity.
+  search_scope: Initial returned results for exact DOI/title plus correction, erratum
+    or retraction; no exhaustive pagination or global absence assertion.
+- evidence_id: dedup
+  kind: search
+  reference: Current owner duplicate search
+  locator: rg --no-ignore --hidden --follow over data/records; retained /private/tmp/cmm-round115-uranium-independent-dedup.txt
+  accessed_at: '2026-10-16T08:24:29.229917Z'
+  snapshot_sha256: 4777d6f204f48bb680275261fad837e8aa2e65ed262f0459e0831e2178c92430
+  support: context_only
+  summary: Only the two dedicated new owners match these names/DOIs in this bounded
+    current-record search. Broader source/raw dedup is separately retained by the
+    curator.
+  search_scope: Names and primary DOIs across current data/records including hidden/ignored
+    files and followed symlinks; not a machine-wide search.
+- evidence_id: batch
+  kind: validation
+  reference: Final exact-byte batch receipt
+  locator: Terminal command rows and retained log hash; retained /private/tmp/cmm-round115-final-gates.json
+  accessed_at: '2026-10-16T08:24:29.229917Z'
+  snapshot_sha256: a4961d4886685d1dee2e32cefac92f59918148398b3cd4d909e7e214efb1d31f
+  support: supports
+  summary: All four required commands passed against unchanged inputs; current reviewed
+    owner hash matches the completed receipt.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species, material form and authority
+  outcome: supported
+  summary: Current IMA approved special-procedure status and natural Imm2 structure
+    are supported; natural and synthetic specimen populations remain separate.
+  target_ids:
+  - cmmmech:rutherfordine
+  evidence_ids:
+  - owner
+  - ima
+  - primary
+- assessment_id: science
+  area: evidence
+  topic: Primary experimental support and transfer limits
+  outcome: supported
+  summary: Primary synthesis/characterization supports a synthetic rutherfordine analogue
+    without fixing unreported reaction temperature, pressure reference basis, yield
+    or batch replication. Room-temperature drying is correctly not promoted to reaction
+    temperature. Calorimetric dissolution is separate from aqueous recovery; natural
+    carbonate-sheet orientation is not inherited by the synthetic preparation.
+  target_ids:
+  - cmmmech:rutherfordine
+  evidence_ids:
+  - owner
+  - primary
+  - structure
+- assessment_id: provenance
+  area: provenance
+  topic: Actual history, bounded searches and final validation
+  outcome: supported
+  summary: Actual CREATE history and exact inspected bytes are retained; structural
+    checks do not establish experimental truth.
+  target_ids:
+  - cmmmech:rutherfordine
+  evidence_ids:
+  - history0
+  - notices
+  - dedup
+  - batch
+findings: []
+actions: []
+limitations:
+- The2005 paper does not display its preparation powder patterns/TG curves or numerical
+  mass-loss/product balance; their absence limits independent purity verification.
+- Finch1999 deposited structure factors were not acquired; no re-refinement or thermodynamic
+  recalculation is claimed.
+- Independent agent assessment is not external human peer review. Full text and selected
+  original page images were checked, not every page visually reread.
+- Bounded searches cannot prove absence of later corrections or contradictory studies.
+```

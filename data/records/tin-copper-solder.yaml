@@ -1,0 +1,95 @@
+id: cmmmech:tin-copper-solder
+name: Tin-copper solder
+material_kind: commodity
+description: >-
+  Tin-copper solder denotes commercially supplied soldering material described as Sn-Cu,
+  rather than elemental tin or copper, a mineral species, or a documented waste stream.
+  Jadhav and colleagues studied material supplied by Taiwan-Solid Enterprises Limited;
+  their methods do not establish a prior service life or recovery from discarded equipment.
+  They report nominal Sn-Cu composition as 63-37%, which is retained as reported rather
+  than corrected to a conventional alloy formulation. Their surface observations suggest
+  a tin-rich coating and a copper-containing interior, so this record does not assert
+  homogeneous bulk alloy composition. Evidence applies to those experimental pieces,
+  not every product sold under the Sn-Cu solder description. No constituent criticality
+  designation is inherited.
+sources:
+- id: jadhav2017
+  title: >-
+    Jadhav U, Su C, Chakankar M, Hocheng H (2017). Acetic acid mediated leaching of
+    metals from lead-free solders. Bioresources and Bioprocessing 4:42.
+    DOI 10.1186/s40643-017-0173-5. Complete ten-page original: materials and culture
+    methods on pp. 2-3; microbial leaching result on pp. 6-7 and Figure 7;
+    separate chemical-acid SEM/EDS experiment on pp. 7-8 and Figure 8.
+  url: https://doi.org/10.1186/s40643-017-0173-5
+  accessed_on: '2026-10-16'
+- id: tistr102
+  title: >-
+    Thailand Institute of Scientific and Technological Research, Culture Collection.
+    Bacterial catalogue entry TISTR 102: Acetobacter pasteurianus, originally deposited
+    as Acetobacter aceti; original number No. 24 DMKU B-45. Catalogue identity does not
+    independently authenticate the culture used in Jadhav et al.
+  url: https://www.tistr.or.th/tistr_culture/cdetail.php?tno=102&type=b
+  accessed_on: '2026-10-16'
+mechanisms:
+- id: acetobacter_culture_associated_leaching
+  name: Laboratory copper and tin leaching with an Acetobacter culture preparation
+  process: bioleaching
+  microbial: true
+  description: >-
+    The study reports dissolution of copper and tin when Sn-Cu solder pieces were
+    exposed to a preparation from an acid-producing Acetobacter culture. The observed
+    endpoint is dissolved metal measured by ICP-OES, not an isolated recovered product.
+    Acid-mediated leaching is the authors' interpretation; the experiment does not
+    isolate a causal contribution from newly produced acetic acid or establish that
+    living cells were required during leaching. It is a laboratory observation, not
+    industrial deployment or a demonstrated treatment of end-of-life solder.
+  context: >-
+    Commercial pieces were cut to 3 mm, rinsed with water and 75% ethanol, and dried.
+    The microbial arm used 100 mg Sn-Cu solder with 4 mL of culture preparation at
+    30 degrees C and 150 rpm for 30 h. Methods describe culture grown for 24 h at
+    30 degrees C and 150 rpm in yeast-glucose-ethanol-acetic-acid medium; results
+    instead call the leaching preparation a collected culture supernatant, without
+    specifying a cell-removal procedure. Biomass presence and viability during
+    leaching therefore remain unresolved. The paper names Acetobacter sp. TISTR 102
+    but attributes supply to BCRC in Taiwan without a BCRC accession. No species or
+    strain CURIE is assigned to that unauthenticated experimental culture. Experiments
+    were performed in three sets; the error-bar statistic and independence of those
+    sets are not defined. An uninoculated-medium control and a matched acid-only
+    control for this microbial preparation are not reported.
+  evidence:
+  - source_ref: jadhav2017
+    supports: support
+    explanation: >-
+      Methods on pp. 2-3 and the microbial subsection on p. 6 with Figure 7 on p. 7
+      support time-dependent copper and tin solubilization in the reported culture
+      preparation. The numerical extraction percentages are not adopted as reusable
+      yields because the nominal feed composition and denominator verification are
+      insufficiently resolved. The study's chemically supplied acetic-acid experiments
+      and Figure 8 surface microscopy are separate arms, not direct evidence for
+      microbial mineralization or cell contact.
+  - source_ref: jadhav2017
+    supports: partial
+    explanation: >-
+      The medium already includes acetic acid, and the reported culture acidity was
+      estimated by acid-base titration with underlying data not shown. This does not
+      independently quantify newly biosynthesized acetic acid. The chemical-acid
+      comparison used different acid strengths and, in the low-strength series,
+      different liquid loading, preventing a matched estimate of biological benefit.
+      Figure 8 and pp. 7-8 describe a tin-rich outer layer and a copper-containing
+      interior rather than independently establishing the reported bulk composition.
+      The article's comparison with a 2014 fungal study is secondary discussion;
+      its original full methods were not available for acceptance here.
+  - source_ref: tistr102
+    supports: partial
+    explanation: >-
+      The official catalogue currently identifies TISTR 102 as Acetobacter pasteurianus
+      and records its historical Acetobacter aceti name. This narrows the catalogue
+      identity, but does not resolve the paper's BCRC supply statement or prove that
+      its experimental culture was the authenticated TISTR deposit.
+curation_history:
+- timestamp: '2026-10-16T08:06:49Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created a commercial solder product record with bounded culture-associated leaching evidence and explicit feed, strain, biomass, control and outcome uncertainty.
+history_refs:
+- history/records/tin-copper-solder/2026-10-16T080654Z-codex-4b3f51.yaml
