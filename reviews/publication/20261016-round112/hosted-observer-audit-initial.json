@@ -1,0 +1,55 @@
+{
+  "timestamp_utc": "2026-10-16T05:26:09.980372+00:00",
+  "reviewer": "codex /root/round104_ree (GPT-6; codex)",
+  "record_id_path": "/private/tmp/cmm-round112-observe-hosted-final.py",
+  "reviewed_revision_and_working_changes": {
+    "base": "e3a638e04d9e64cbda7c26d277bdf4f5e7d1e3ae",
+    "state": "Prepared external helper, never executed in this audit",
+    "helper": {
+      "path": "/private/tmp/cmm-round112-observe-hosted-final.py",
+      "sha256": "07fa00ebf2bd5819a760663fb664df59074868ac924dca51e1859dd643331720"
+    },
+    "preserved_snapshot": {
+      "path": "/private/tmp/cmm-round112-observe-hosted-final-before-fix.py",
+      "sha256": "07fa00ebf2bd5819a760663fb664df59074868ac924dca51e1859dd643331720"
+    }
+  },
+  "scope": "Independent corroboration of coordinator-reported stale current-round observer bindings; read-only static/AST evidence only. Existing eight-helper audit remains unaffected.",
+  "evidence_checked": {
+    "literal_bindings": {
+      "base": "e3a638e04d9e64cbda7c26d277bdf4f5e7d1e3ae",
+      "head": "5fd9beb35001d96502ee889c06b0e9d10ab661d5",
+      "merge": "e3a638e04d9e64cbda7c26d277bdf4f5e7d1e3ae",
+      "tree": "7b8cc879940f0ad24ceead640e7cfdd2a1dda018"
+    },
+    "literal_pr": 467,
+    "adjacent_helpers": [
+      {
+        "path": "/private/tmp/cmm-round112-hosted-final-collector.py",
+        "sha256": "63a4f935af42ec2498fe7c1cf03d39543d71ab0da23cc3f31b56e074d2b0631e",
+        "disposition": "No same stale literal bindings; collector uses current commit/push receipts and explicit observed merge/queue SHAs; job logs use exact acquisition run/job/attempt bindings."
+      },
+      {
+        "path": "/private/tmp/cmm-round112-acquire-hosted-job-logs.py",
+        "sha256": "daea21fd47ae33fbfe761ddfcdc10f60b7e2ce445b0aebef29b8a6d646adb0e3",
+        "disposition": "No same stale literal bindings; collector uses current commit/push receipts and explicit observed merge/queue SHAs; job logs use exact acquisition run/job/attempt bindings."
+      }
+    ]
+  },
+  "findings": [
+    {
+      "key": "round112-hosted-observer-stale-identity",
+      "severity": "minor",
+      "status": "open",
+      "summary": "Prepared round112 observer queries the preceding publication and can label its success as current-round evidence.",
+      "evidence": "head and tree are round111 topic literals; PR is 467; merge and queue are assigned the round112 base e3a638e\u2026, which is the preceding merge. Those values directly form workflow query filters and the observation identity.",
+      "impact": "Read-only acquisition is misleading and cannot support round112 readiness. Hardened downstream collector and finalizer independently bind current receipts; no mutation or invalid actual acceptance has occurred.",
+      "requested_correction": "Resolve current topic/tree/PR from successful mutually bound commit and push receipts; derive actual merged PR and observed queue identity with exact tree/parent checks. Fail before workflow observations on missing, stale, inconsistent or unmerged inputs. Retain initial script and test the successor without live mutations."
+    }
+  ],
+  "corrections": "Pending coordinator fix and issue linkage.",
+  "unresolved_questions": [
+    "Future current-round identity and hosted outcomes are not yet available; this is not a release acceptance."
+  ],
+  "verdict": "needs_curation"
+}

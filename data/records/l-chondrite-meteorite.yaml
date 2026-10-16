@@ -1,0 +1,131 @@
+id: cmmmech:l-chondrite-meteorite
+name: L-chondrite meteorite
+material_kind: primary_resource
+description: >-
+  Naturally occurring L-group ordinary chondritic meteorite material considered
+  as a potential experimental feed, not a mineral species, secondary waste or
+  established commercial ore. The curated experiment used fragments identified
+  by its authors as Northwest Africa 869, an L3-6 regolith breccia, containing
+  heterogeneous silicate, sulfide and metal phases. These Earth-collected
+  fragments were transported to the International Space Station; the study
+  did not mine an asteroid in situ. Results apply to the tested specimens and
+  conditions, not every L-chondrite. Constituent metals do not confer a
+  criticality designation on this resource.
+sources:
+  - id: santomartino2026
+    title: >-
+      Santomartino et al. (2026). Microbial biomining from asteroidal material
+      onboard the international space station. npj Microgravity 12:23.
+      DOI 10.1038/s41526-026-00567-3. Final 15-page publisher PDF inspected,
+      especially Figures 1-5, Tables 1-2 and Methods pp.9-12.
+    url: https://www.nature.com/articles/s41526-026-00567-3
+    accessed_on: '2026-10-16'
+  - id: santomartino2026_si
+    title: >-
+      Santomartino et al. (2026), 32-page supplementary information.
+      Note 1 pp.2-4, Tables 2-3 pp.18-19, Table 8 and Table 9 constrain
+      statistical, contamination and post-fixation pH interpretations.
+    url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41526-026-00567-3/MediaObjects/41526_2026_567_MOESM1_ESM.pdf
+    accessed_on: '2026-10-16'
+  - id: ncbi_desiccabilis
+    title: >-
+      NCBI Taxonomy 429134, Sphingomonas desiccabilis, species. The species
+      identifier does not itself identify the experimental CP1D culture.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=429134
+    accessed_on: '2026-10-16'
+  - id: ncbi_simplicissimum
+    title: >-
+      NCBI Taxonomy 69488, Penicillium simplicissimum, species. The study's
+      experimental designation DSM 1078 comes from its Methods, not this
+      species identifier.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=69488
+    accessed_on: '2026-10-16'
+mechanisms:
+  - id: heterotrophic_meteorite_leaching
+    name: Culture-associated elemental mobilization in flight and ground assays
+    process: bioleaching
+    microbial: true
+    description: >-
+      Living Sphingomonas desiccabilis CP1D and Penicillium simplicissimum
+      DSM 1078, tested separately and together, colonized meteorite fragments
+      and were associated with element-dependent changes in liquid-fraction
+      metal measurements. Fungal arms on the ISS had higher mean platinum-group
+      element extraction than sterile controls, but the within-ISS PGE
+      comparisons against those controls were not statistically significant.
+      This is a controlled small-scale flight experiment with qualified
+      mobilization observations, not isolated-metal recovery or demonstrated
+      industrial or asteroid-mining deployment.
+    context: >-
+      Methods pp.9-12 used approximately 1-3.5 mm fragments, 0.79 +/- 0.14 g
+      per sample (mean +/- standard deviation), sterilized at 250 degrees C
+      for four hours. Cultures were air-dried onto the fragments before
+      rehydration with 5 mL of half-strength R2A, initially pH 7.2. Separate
+      bacterial, fungal, mixed-culture and uninoculated arms underwent 19 days
+      of incubation in BioMining Reactors: logged 19.5 degrees C on the ISS
+      and nominal 20 degrees C in the later Earth controls. The analytical
+      comparison used three samples per ISS arm, four per biological Earth
+      arm and six non-biological Earth samples. Ground and flight samples
+      differed in preparation dates, handling and storage, so their contrast
+      does not isolate gravity from every flight-associated factor.
+      Each chamber received 1 mL RNAlater at termination; the recovered liquid
+      fraction was acidified to 4% v/v nitric acid for ICP-MS. Fungal liquids
+      were first sonicated and passed through cotton to homogenize mycelia;
+      the method does not establish a membrane-filtered dissolved fraction or
+      a separate biomass-metal mass balance. Medium and fixative were also
+      analyzed. Bulk-rock digestion supplied the denominator for reported
+      percent extraction. Heterogeneity, small sample numbers and downstream
+      processing limit generalization. No product-isolation step was tested.
+    organisms:
+      - id: NCBITaxon:429134
+        label: Sphingomonas desiccabilis
+      - id: NCBITaxon:69488
+        label: Penicillium simplicissimum
+    evidence:
+      - source_ref: santomartino2026
+        supports: support
+        explanation: >-
+          Figures 1-3 and Methods establish the actual meteorite substrate,
+          named culture arms, sterile controls and microbial surface
+          association. Figure 5B reports mean fungal ISS extraction of
+          19.29% of bulk-rock ruthenium, 11.91% of palladium and 0.29% of
+          platinum. These are author-reported fractions of the element
+          inventory, not percent improvement, purified yields or kinetic rates.
+      - source_ref: santomartino2026_si
+        supports: partial
+        explanation: >-
+          Tables 2-3 support the numerical observations but limit enhancement
+          claims. Within the ISS, all biological-versus-uninoculated raw PGE
+          concentration comparisons have Tukey p-values above 0.05. Fungal
+          palladium is 549.34% of the sterile-control mean, not a 549.34%
+          increase; its large reported uncertainty accompanies the small
+          experiment. Ground palladium is lower in all biological arms than
+          in sterile controls. The consortium does not consistently improve
+          on the fungus alone. A higher mean, normalization to background or
+          a selected fold-change threshold is not proof of a universal effect.
+      - source_ref: santomartino2026_si
+        supports: partial
+        explanation: >-
+          Supplementary Note 1 and Table 8 report contamination concerns in
+          ground fungal samples, including Bacillales sequence assignments;
+          its timing and contribution were not experimentally resolved.
+          The authors could not repeat the experiment with identical meteorite
+          material. Their interpretation that ISS contamination arose during
+          plating is not independent proof of complete original-sample purity.
+          Comparisons involving ground fungal cultures retain this limitation.
+          Note 1 and Table 9 also state that RNAlater affected final pH,
+          preventing inference of the pH trajectory during growth.
+      - source_ref: santomartino2026
+        supports: context_only
+        explanation: >-
+          Metabolomic differences and proposed carboxylic-acid contributions
+          provide mechanistic hypotheses. They do not isolate the causal
+          contribution of a particular acid, enzyme or consortium member to
+          the accepted elemental measurements. Metal signals in recovered
+          liquid are not a direct assay of mineral-specific dissolution.
+curation_history:
+  - timestamp: '2026-10-16T05:14:45.743218Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: Added a natural L-chondrite feed record with qualified flight and ground microbial mobilization evidence.
+history_refs:
+  - history/records/l-chondrite-meteorite/2026-10-16T051444Z-codex-790dc9.yaml

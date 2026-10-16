@@ -8,13 +8,21 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 562 material records.
+The catalogue currently contains 570 material records.
 
-The [latest curation report](research/ingests/round111-frontier-20261016.md) links
+The [latest curation report](research/ingests/round112-frontier-20261016.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Studtite](data/records/studtite.yaml) | Natural identity and abiotic thermal/aqueous phase changes | Method-dependent transitions and surface-only models retained |
+| [Metastudtite](data/records/metastudtite.yaml) | Natural identity and synthetic transformation evidence | Mixed precursors, model-dependent products and qualified rehydration |
+| [Bainbridgeite-(YCe)](data/records/bainbridgeite-yce.yaml) | Holotype mineral identity and structure | Later rim reassignment and source/deposit discrepancies retained |
+| [Alicewilsonite-(YLa)](data/records/alicewilsonite-yla.yaml) | Natural identity and crystal structure | Calculated volatiles and model/deposit limits remain explicit |
+| [Probertite](data/records/probertite.yaml) | Natural borate identity and structure | Distinct specimens; inaccessible dissolution evidence deferred |
+| [Priceite](data/records/priceite.yaml) | Natural borate identity and characterization | Disputed chain direction and thermal-access limits retained |
+| [L-chondrite meteorite](data/records/l-chondrite-meteorite.yaml) | Qualified microbial mobilization in flight and ground assays | Non-significant ISS PGE comparisons and ground contamination concerns |
+| [Eucrite meteorite](data/records/eucrite-meteorite.yaml) | Terrestrial culture-associated trace-metal mobilization | One abiotic control, specimen provenance and supplement-access limits |
 | [Schoepite](data/records/schoepite.yaml) | Current mineral identity and natural-crystal alteration | Revised symmetry, mixed products and conflicting CIF metadata retained |
 | [Becquerelite](data/records/becquerelite.yaml) | Abiotic surface dissolution and later coating characterization | Synthetic specimens, reused experiments and secondary precipitation kept distinct |
 | [Donnayite-(Y)](data/records/donnayite-y.yaml) | Revised natural-mineral identity and structure | Historical cotype reassignments and different analytical specimens retained |
