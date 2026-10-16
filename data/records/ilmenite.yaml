@@ -1,0 +1,70 @@
+id: cmmmech:ilmenite
+name: Ilmenite
+material_kind: mineral
+description: Ilmenite is the mineral species with ideal formula Fe2+Ti4+O3, listed with grandfathered
+  status G and original description year 1827 by IMA-CNMNC in September 2026. The year is not an IMA approval
+  number. The species is distinct from elemental titanium or iron, titanium commodities, ilmenite-bearing
+  ores and concentrates, and manufactured titanium oxides. The primary dissolution study used three mixed
+  placer concentrates dominated by ilmenite-like phases, not pure stoichiometric crystals. Its laboratory
+  observation is scoped to those ground feeds. No criticality designation is inherited from titanium,
+  and no microbial mechanism is accepted from the unavailable or insufficiently controlled bioleaching
+  leads.
+sources:
+- id: ima202609
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Species row on PDF page 100; status
+    and column definitions on pages 1-2.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-16'
+- id: sun2025
+  title: Sun TY, Wykes JL, Wolmarans K, Kappen P, Haverkamp RG. The Dependence of Ilmenite’s Dissolution
+    Rate in Hydrochloric Acid on the Fe(III)/Fe(II) Ratio, with Fe K-Edge XANES Pre-Edge Peak Analysis.
+    Minerals 15(1):20 (2025 issue; published 27 December 2024). DOI 10.3390/min15010020. Complete ten-page
+    original; sections 2.1-2.5 and 3.1-3.5, Table 1 and Figures 1-6.
+  url: https://doi.org/10.3390/min15010020
+  accessed_on: '2026-10-16'
+mechanisms:
+- id: hydrochloric_acid_dissolution
+  name: Laboratory HCl dissolution of ground ilmenite-bearing placer concentrates
+  process: other
+  microbial: false
+  description: Concentrated hydrochloric acid solubilized iron and titanium from ground ilmenite-bearing
+    feeds. The authors fitted titanium dissolution to a shrinking-sphere model and observed faster dissolution
+    in the feed with a lower Fe(III)/Fe(II) ratio. This comparison is an association across three chemically
+    and texturally different concentrates, not an isolated causal test of iron valence. It does not demonstrate
+    microbial action, isolated titanium product recovery, or industrial deployment.
+  context: Barrytown (BT), New Zealand concentrate was supplied by Rio Tinto; Kanyakumari (TIS) and Tuticorin
+    (TVP), India concentrates were supplied by VV Minerals. Samples were disc-milled in 35 g batches for
+    2 min to broadly similar median particle sizes near 50 micrometres. Digestion used 38% w/w HCl at
+    approximately 84 degrees C in a stirred 1.5 L round-bottom flask with reflux condenser. Acid was preheated
+    to 40 degrees C before feed addition. The acid loading was reported as 6.12 mol HCl per mol calculated
+    equivalent FeTiO3, not a claim that the mixed feed was pure FeTiO3. Actual digestion charge mass,
+    working volume, stirring speed, replicate numbers and an acid-free dissolution control are not specified.
+    Filtered aliquots were reduced with aluminium and titrated with cerium sulfate to determine dissolved
+    Ti and Fe. The three feed trajectories are comparisons, not matched mineral-purity controls.
+  evidence:
+  - source_ref: sun2025
+    supports: support
+    explanation: Sections 2.3 and 3.3, Figure 3 and Equation 2 support time-dependent Ti and Fe solubilization
+      in the stated laboratory arms and shrinking-sphere fits to titanium dissolution. The fitted ordering
+      is BT faster than TIS faster than TVP. Dissolution curves, not recovered product mass, are the measured
+      endpoint. The authors interpret the absence of a decline in dissolved Ti as no Ti hydrolysis during
+      digestion; that trajectory alone does not establish an independently measured zero amount of solid
+      secondary Ti product.
+  - source_ref: sun2025
+    supports: partial
+    explanation: Sections 3.2, 3.4-3.5, Table 1 and Figures 2, 4-6 constrain the iron-valence interpretation.
+      Feed bulk analyses came from suppliers for TIS/TVP and an earlier publication for BT, rather than
+      new independent bulk assays in this study. Inclusions and mineral intergrowths differ, so the correlation
+      does not establish a universal rate law for pure ilmenite. The TIS XANES pre-edge centroid depends
+      on imposed fit constraints and is explicitly unreliable; its uncertainty is ill defined. Section
+      2.4 calls kinetic fit uncertainties standard errors whereas section 3.3 calls them standard deviations.
+      No numerical precision or population-wide rate advantage is adopted. The paper itself says the molecular
+      reason for slower dissolution with higher oxidation remains unresolved; no hard-rock feed was tested.
+curation_history:
+- timestamp: '2026-10-16T06:52:50Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created distinct IMA-grounded Ilmenite species with qualified primary laboratory acid-dissolution
+    evidence and explicit feed, fit, control and recovery limits.
+history_refs:
+- history/records/ilmenite/2026-10-16T065253Z-codex-9047ea.yaml

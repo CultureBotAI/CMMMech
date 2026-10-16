@@ -1,0 +1,230 @@
+schema_version: 1.0.0
+review_id: 20261016T071832Z-curite-round114-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Curite
+started_at: '2026-10-16T06:54:59.040099Z'
+finished_at: '2026-10-16T07:18:32.420298Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Uranium agent authored owner/history. Root independently inspected
+    final hashes, claim-bearing full primary text, selected original figures, current
+    IMA rows and bounded notice searches; shared acquisition did not substitute for
+    assessment.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Narrow accepted scientific claims supported; source uncertainties remain
+  explicit. No corrective owner defect identified in this scope.
+source:
+  git_revision: 93f90797512dc8d1db3df9ce2e4994c475b1a4fe
+  state: working_tree
+  inputs:
+  - path: data/records/curite.yaml
+    sha256: 80065e1804a54175e496d51df415867bb645f5f000d70a486738f07fe767e3d8
+    role: target
+  - path: history/records/curite/2026-10-16T065204Z-codex-e7dc88.yaml
+    sha256: fe617aa476edbe808c640bdfe3683371cef529044f0dab66cc3a32b0c0eb4727
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- kind: maintained
+  label: Curite
+  owner_paths:
+  - path: data/records/curite.yaml
+    repository: CultureBotAI/CMMMech
+    role: scientific_record
+  path: data/records/curite.yaml
+  target_id: cmmmech:curite
+scope:
+  description: Entire owner and actual history reviewed at claim level; no experiment
+    replication, structure re-refinement or calculated-model reproduction.
+  selection: Native capture before assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:curite
+checks:
+- check_id: gate0
+  name: Required final gate
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  summary: Terminal receipt/log verified; exact owner hash matches.
+  target_ids:
+  - cmmmech:curite
+  evidence_ids:
+  - batch
+- check_id: gate1
+  name: Required final gate
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  summary: Terminal receipt/log verified; exact owner hash matches.
+  target_ids:
+  - cmmmech:curite
+  evidence_ids:
+  - batch
+- check_id: gate2
+  name: Required final gate
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 93f90797512dc8d1db3df9ce2e4994c475b1a4fe
+  exit_code: 0
+  summary: Terminal receipt/log verified; exact owner hash matches.
+  target_ids:
+  - cmmmech:curite
+  evidence_ids:
+  - batch
+- check_id: gate3
+  name: Required final gate
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  summary: Terminal receipt/log verified; exact owner hash matches.
+  target_ids:
+  - cmmmech:curite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/curite.yaml
+  locator: Entire exact native-inspected owner; retained /private/tmp/CMMMech-expansion-round114-20261016/data/records/curite.yaml
+  accessed_at: '2026-10-16T07:18:32.420298Z'
+  snapshot_sha256: 80065e1804a54175e496d51df415867bb645f5f000d70a486738f07fe767e3d8
+  support: supports
+  summary: Material form, claims, conditions and uncertainty independently checked
+    against full primary text and selected original figures.
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/curite/2026-10-16T065204Z-codex-e7dc88.yaml
+  locator: Entire canonical session and separate inline event; retained /private/tmp/CMMMech-expansion-round114-20261016/history/records/curite/2026-10-16T065204Z-codex-e7dc88.yaml
+  accessed_at: '2026-10-16T07:18:32.420298Z'
+  snapshot_sha256: fe617aa476edbe808c640bdfe3683371cef529044f0dab66cc3a32b0c0eb4727
+  support: supports
+  summary: Actual CREATE target, actor, current timestamps and limited accepted scope
+    agree.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions and visually inspected species rows PDF53/226; retained /private/tmp/cmm-round114-uranium-research/ima202609.pdf
+  accessed_at: '2026-10-16T07:18:32.420298Z'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  support: supports
+  summary: Both mineral formulas and grandfathered status match; historical description
+    dates are not approval numbers. No element criticality inherited.
+- evidence_id: identity
+  kind: primary_source
+  reference: https://doi.org/10.1039/C8RA09557D
+  locator: Methods p10059 (visual), Tables1-3 pp10060-10061, Discussion/Conclusions
+    pp10061-10062; retained /private/tmp/cmm-round114-uranium-research/curite2019-publisher-mirror.pdf
+  accessed_at: '2026-10-16T07:18:32.420298Z'
+  snapshot_sha256: 93dad5ccad37751bc8bcda3a8ea75076c5b9df878b4af98fe731f8269b40ef39
+  support: supports
+  summary: Natural Shinkolobwe crystal and Pnma supported. Hydroxyl-H refinement and
+    Torque-derived water orientations remain distinct; Pb charge compensation is a
+    proposed local model.
+- evidence_id: experiment
+  kind: primary_source
+  reference: https://doi.org/10.2113/gscanmin.44.2.415
+  locator: Methods pp419-420, results pp421-426 and interpretation pp424-429; original
+    PDF5,9,11 visually inspected; retained /private/tmp/cmm-round114-uranium-research/curite2006-author.pdf
+  accessed_at: '2026-10-16T07:18:32.420298Z'
+  snapshot_sha256: 42df36d71581587d0b3eb535a5e79b96de82355b8c216a3e9fcfd65daa0f2311
+  support: supports
+  summary: 70mg/50mL non-Sr arms and70mg/70mL Sr arms,60C, source12/24h and5.5/5.8
+    descriptions independently checked. Figures4-9 concern exsitu relief and morphology,
+    not absolute dissolution rates. Carbonate hillocks remain swelling/precipitation
+    ambiguous.
+- evidence_id: search
+  kind: search
+  reference: Independent bounded DOI/title correction/retraction queries
+  locator: Retrieved first web results on2026-10-16; retained /private/tmp/cmm-round114-uranium-independent-web.json
+  accessed_at: '2026-10-16T07:18:32.420298Z'
+  snapshot_sha256: 390fc3fb680c1bdaa4f266462c99c4f394161b1611708af4888240e8291d1710
+  support: context_only
+  summary: Publisher/primary metadata supports source identities. No applicable notice
+    identified among returned results; this is not an exhaustive no-correction claim.
+  search_scope: Four exact primary DOI correction/retraction searches; publisher RSC
+    and original articles checked. No global literature absence claim.
+- evidence_id: dedup
+  kind: search
+  reference: Independent current-owner search
+  locator: Current data/records recursive hidden/ignored/followed matches; retained
+    /private/tmp/cmm-round114-uranium-independent-dedup.txt
+  accessed_at: '2026-10-16T07:18:32.420298Z'
+  snapshot_sha256: 66840fbd2f24750377002ab15f6e29ad7d6dff8c81b04c0cf7d47677d690bf98
+  support: context_only
+  summary: Only these dedicated owners and contextual references were found in this
+    bounded current-corpus search. Agent dossiers separately retain broader research/raw-download
+    dedup.
+  search_scope: Current data/records, hidden and ignored files included, relevant
+    symlinks followed; names and four exact DOIs.
+- evidence_id: batch
+  kind: validation
+  reference: Final exact-byte batch gates
+  locator: Terminal command rows and hashed full log; retained /private/tmp/cmm-round114-final-gates-corrected.json
+  accessed_at: '2026-10-16T07:18:32.420298Z'
+  snapshot_sha256: 8628b01c993c722bbf1b0cdbe9e17a71e23eb1da1c0b7081dbc147d9e53d513d
+  support: supports
+  summary: just check, require-records, trusted-base history and generated-page freshness
+    all passed with unchanged owner bytes.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Natural species versus experimental material
+  outcome: supported
+  summary: Current species formula and separate natural/synthetic specimen populations
+    are supported.
+  target_ids:
+  - cmmmech:curite
+  evidence_ids:
+  - owner
+  - ima
+  - identity
+- assessment_id: science
+  area: evidence
+  topic: Abiotic primary observations and limits
+  outcome: supported
+  summary: Source-specific synthetic surface dissolution is supported. No microbe,
+    direct Sr adsorption quantification, unique hillock phase, bulk U extraction or
+    industrial deployment is inferred. Acid time and weak-Sr pH descriptions remain
+    unresolved rather than silently unified.
+  target_ids:
+  - cmmmech:curite
+  evidence_ids:
+  - owner
+  - experiment
+  - identity
+- assessment_id: provenance
+  area: provenance
+  topic: Actual curation and source inspection
+  outcome: supported
+  summary: Exact source versions, current history and bounded access/search limitations
+    retained.
+  target_ids:
+  - cmmmech:curite
+  evidence_ids:
+  - history0
+  - search
+  - dedup
+  - batch
+findings: []
+actions: []
+limitations:
+- Independent agent assessment is not external human peer review.
+- Claim-bearing full text and selected original figures checked; not every primary
+  page independently visually reread.
+- Unacquired supplementary coordinates, original thermal/diffraction datasets and
+  later2023 article remain evidence gaps; no deposited-data reanalysis claimed.
+- Bounded notice searches and offline validation cannot settle retained source contradictions.

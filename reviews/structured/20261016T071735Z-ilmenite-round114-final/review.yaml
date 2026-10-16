@@ -1,0 +1,370 @@
+schema_version: 1.0.0
+review_id: 20261016T071735Z-ilmenite-round114-final
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of ilmenite
+started_at: '2026-10-16T06:55:57.559921Z'
+finished_at: '2026-10-16T07:17:35.917024Z'
+reviewer:
+  identity: codex /root/round104_uranium
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored this titanium owner/history/dossier. Reviewer
+    authored unrelated curite/vandenbrandeite and independently inspected primary
+    originals and current target bytes without editing titanium records.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Ilmenite is defensible as a distinct mineral with explicitly qualified laboratory
+  HCl dissolution of three mixed placer concentrates. Original methods, Table 1 and
+  Figures 1–6 support the accepted conditions and outcomes; mixed-feed confounding,
+  fit uncertainty, unmeasured recovery and deployment limits remain clear. No supported
+  curator defect was identified.
+source:
+  git_revision: 93f90797512dc8d1db3df9ce2e4994c475b1a4fe
+  state: working_tree
+  inputs:
+  - path: data/records/ilmenite.yaml
+    sha256: c066b7d14249f93229c678d0cabe2e171ffc4529a223e560dc750b2d362e5976
+    role: target
+  - path: history/records/ilmenite/2026-10-16T065253Z-codex-9047ea.yaml
+    sha256: ba3a633470c37b0c248700a1c263f40da1d252a0ef7a0952dffccd7e95a36beb
+    role: context
+  - path: research/sources/round114-titanium/20261016T065427Z-source-assessment.json
+    sha256: da3bfbd1f68f79b14ebb88c8fa24e38607a3e01f8c63c37ab3fb26e402644604
+    role: context
+  - path: research/sources/round114-titanium/20261016T065427Z-source-assessment.md
+    sha256: 2e4ac82abfe038320b3de5ab50beeacab0f5d399965e34c6a8133fad450829a6
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:ilmenite
+  path: data/records/ilmenite.yaml
+  label: Ilmenite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/ilmenite.yaml
+    role: maintained_owner
+scope:
+  description: Complete assessment of one assigned maintained titanium mineral owner
+    against primary evidence, identity, conditions/outcomes, provenance and completed
+    checks.
+  selection: One of two root-authored titanium records assigned for independent review;
+    separate native artifact per owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:ilmenite
+checks:
+- check_id: named1
+  name: Independent named validation 1
+  status: passed
+  required: true
+  summary: Checked 2 record(s); 0 failed.
+  target_ids:
+  - cmmmech:ilmenite
+  command: uv run --locked cmmmech validate data/records/ilmenite.yaml data/records/perovskite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: named2
+  name: Independent named validation 2
+  status: passed
+  required: true
+  summary: Checked 2 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:ilmenite
+  command: uv run --locked cmmmech validate-history history/records/ilmenite/2026-10-16T065253Z-codex-9047ea.yaml
+    history/records/perovskite/2026-10-16T065300Z-codex-5928e9.yaml --base 93f90797512dc8d1db3df9ce2e4994c475b1a4fe
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Coordinator completed batch command 1
+  status: passed
+  required: true
+  summary: Exact current worktree/base/commands/owner inputs and retained log hash
+    verified; exit0.
+  target_ids:
+  - cmmmech:ilmenite
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Coordinator completed batch command 2
+  status: passed
+  required: true
+  summary: Exact current worktree/base/commands/owner inputs and retained log hash
+    verified; exit0.
+  target_ids:
+  - cmmmech:ilmenite
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Coordinator completed batch command 3
+  status: passed
+  required: true
+  summary: Exact current worktree/base/commands/owner inputs and retained log hash
+    verified; exit0.
+  target_ids:
+  - cmmmech:ilmenite
+  command: uv run --locked cmmmech validate-history --base 93f90797512dc8d1db3df9ce2e4994c475b1a4fe
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Coordinator completed batch command 4
+  status: passed
+  required: true
+  summary: Exact current worktree/base/commands/owner inputs and retained log hash
+    verified; exit0.
+  target_ids:
+  - cmmmech:ilmenite
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/ilmenite.yaml
+  locator: Complete maintained owner captured before source assessment together with
+    schema, exact linked histories and frozen dossier.
+  summary: Current inspected bytes and source scope were independently read; no review
+    of an earlier draft is substituted.
+  accessed_at: '2026-10-16T07:17:35.917024Z'
+  support: supports
+  snapshot_sha256: c066b7d14249f93229c678d0cabe2e171ffc4529a223e560dc750b2d362e5976
+- evidence_id: provenance
+  kind: record_content
+  reference: research/sources/round114-titanium/20261016T065427Z-source-assessment.json
+  locator: Paired source dossier and current canonical CREATE history.
+  summary: Root authored these titanium records. Reviewer authored unrelated curite
+    and vandenbrandeite and did not edit titanium owners/history. Actual GPT-6/codex
+    metadata, record target and distinct inline event checked.
+  accessed_at: '2026-10-16T07:17:35.917024Z'
+  support: supports
+  snapshot_sha256: da3bfbd1f68f79b14ebb88c8fa24e38607a3e01f8c63c37ab3fb26e402644604
+- evidence_id: ima
+  kind: primary_source
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Fresh official September 2026 PDF; definitions pages 1–2 and species row
+    on PDF page100.
+  summary: Species name, formula, grandfathered status and original-description year
+    visually verified; year is not an approval accession. PDF hash matches independently
+    downloaded official authority used by reviewer.
+  accessed_at: '2026-10-16T07:17:35.917024Z'
+  support: supports
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round114-uranium-research/titanium-review-web.json
+  locator: Three exact DOI/title correction/retraction and bibliographic queries,
+    returned initial result sets; no date filter or exhaustive pagination.
+  summary: No applicable correction or retraction identified in these results. Sun
+    DOI metadata matches full original title/authors and online 2024 date, distinct
+    from 2025 issue. No DOI invented for Keller 1994; original journal first page
+    confirms authors/title/pages. Publisher landing returned HTTP 429 during reviewer
+    open; retained original full PDF and Crossref metadata were examined.
+  accessed_at: '2026-10-16T07:17:35.917024Z'
+  support: context_only
+  snapshot_sha256: b88bb5a0e4394b03ee2ecebce0476115e8eea4ca0bf07b5281d0d796496abcea
+  search_scope: Three exact DOI/title correction/retraction and bibliographic queries,
+    returned initial result sets; no date filter or exhaustive pagination. No applicable
+    correction or retraction identified in these results. Sun DOI metadata matches
+    full original title/authors and online 2024 date, distinct from 2025 issue. No
+    DOI invented for Keller 1994; original journal first page confirms authors/title/pages.
+    Publisher landing returned HTTP 429 during reviewer open; retained original full
+    PDF and Crossref metadata were examined.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round114-uranium-research/titanium-review-dedup.json
+  locator: rg --no-ignore --hidden --follow across records/research/reviews/history,
+    original-main ignored reports and cited ilmenite raw roots 29/31.
+  summary: 258 matching paths retained externally. Only current ilmenite/perovskite
+    owners and contextual xenotime-concentrate owner matched under records. Xenotime
+    concentrate is a mixed source-defined resource with a reported ilmenite constituent,
+    not a duplicate mineral-species owner. No machine-wide absence claim.
+  accessed_at: '2026-10-16T07:17:35.917024Z'
+  support: context_only
+  snapshot_sha256: 5ac14d68f856dad376733af038f832982df389b9b709a1924643f6a78109be02
+  search_scope: rg --no-ignore --hidden --follow across records/research/reviews/history,
+    original-main ignored reports and cited ilmenite raw roots 29/31. 258 matching
+    paths retained externally. Only current ilmenite/perovskite owners and contextual
+    xenotime-concentrate owner matched under records. Xenotime concentrate is a mixed
+    source-defined resource with a reported ilmenite constituent, not a duplicate
+    mineral-species owner. No machine-wide absence claim.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round114-uranium-research/titanium-review-checks.json
+  locator: Actual independent two-file record validation and two-sidecar validation
+    against trusted base.
+  summary: 'Both commands exited 0: two records/zero failed and two histories/zero
+    errors. Exact commands and current owner hashes retained.'
+  accessed_at: '2026-10-16T07:17:35.917024Z'
+  support: supports
+  snapshot_sha256: fa2ea9b6c750d6f0e3a3aef8822d01af3b6bca16a22310f48716c6994a512801
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round114-final-gates-corrected.json
+  locator: Actual completed four-command receipt, exact worktree/base/commands/current
+    owner hashes and retained log SHA256 checked.
+  summary: All four commands exited 0 and inputs remained unchanged. These are structural/provenance
+    gates, not a new scientific review of the entire corpus. LogSHA256 41cc8b4b8ef7e145ed81a2d1acfb2c694962806765e633fdafb96546c4025a07
+  accessed_at: '2026-10-16T07:17:35.917024Z'
+  support: supports
+  snapshot_sha256: 8628b01c993c722bbf1b0cdbe9e17a71e23eb1da1c0b7081dbc147d9e53d513d
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/min15010020
+  locator: Complete ten-page published original, Sections 2.1–2.5 and 3.1–3.5, Table
+    1 and original Figures 1–6; relevant graphics visually inspected.
+  summary: Actual mixed placer feeds, grinding, HCl digestion, solution titration,
+    kinetic fitting and XANES constraints independently checked. Further raw data
+    are offered by author inquiry; none were represented as acquired.
+  accessed_at: '2026-10-16T07:17:35.917024Z'
+  support: supports
+  snapshot_sha256: 94a539a231429598386fd2b3dfeec7b7f5ee9811608dafafe23706a11fcec3b7
+- evidence_id: metadata
+  kind: primary_source
+  reference: https://api.crossref.org/works/10.3390/min15010020
+  locator: Fresh saved authority response independently read against first page.
+  summary: DOI/title/authors and online publication27 December 2024 match; article
+    cites Minerals 2025, 15, 20. No update-to entry in this response; not a guarantee
+    against future notices.
+  accessed_at: '2026-10-16T07:17:35.917024Z'
+  support: supports
+  snapshot_sha256: 7c405a234079a5168a0aaf292a9d61e9a13e4ee26e185860e19e3c47042f0615
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species versus experimental concentrate
+  outcome: supported
+  summary: The species and experimental feed boundary are correctly scoped.
+  details: IMA Fe2+Ti4+O3, G,1827 matches. The three placer concentrates are mixed
+    ilmenite-like samples, not pure stoichiometric crystals. The separate xenotime
+    resource does not duplicate the mineral identity. No jurisdiction/list/edition
+    criticality claim or organism identifier is asserted.
+  target_ids:
+  - cmmmech:ilmenite
+  evidence_ids:
+  - owner
+  - ima
+  - primary
+  - dedup
+- assessment_id: protocol
+  area: consistency
+  topic: Actual acid-dissolution methods
+  outcome: supported
+  summary: Selected conditions and analytical fraction agree with original methods.
+  details: Section 2.1 describes 35 g grinding batches for 2 min, not digestion charge.
+    Section 2.3 gives 38 wt% HCl, approximately 84 °C, 1.5 L flask with reflux/glass-paddle
+    stirring, 40 °C acid preheat and 6.12 mol HCl per calculated equivalent FeTiO3.
+    Working volume, actual digestion charge, stirrer speed and independent replicates
+    are unspecified. Filtered liquor is Al-reduced then cerium-sulfate titrated; no
+    microorganism or biomass is involved.
+  target_ids:
+  - cmmmech:ilmenite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: outcomes
+  area: evidence
+  topic: Measured solubilization versus fitted kinetics
+  outcome: supported
+  summary: Time-dependent solution mobilization and fitted ordering are supported
+    without recovery inflation.
+  details: Original Figure 3 and Equation 2 show Ti/Fe dissolution trajectories and
+    shrinking-sphere fits; BT>TIS>TVP fitted Ti ordering matches. No isolated titanium
+    product mass is measured here. No declining dissolved Ti is the authors’ interpretation
+    of no hydrolysis, not independent solid-phase proof of zero secondary Ti.
+  target_ids:
+  - cmmmech:ilmenite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: causality
+  area: evidence
+  topic: Mixed-feed association and uncertainty
+  outcome: supported
+  summary: The owner retains the controls and uncertainty needed to avoid a universal
+    causal claim.
+  details: Table 1 composition derives from suppliers/earlier BT work, and Figure
+    2 shows different inclusions. Iron oxidation co-varies with feed identity; no
+    matched-valence manipulation isolates causality. TIS centroid depends on fit constraints
+    and is unreliable; kinetic uncertainty is termed SE in 2.4 and SD in 3.3. Exact
+    numerical fit precision is not adopted. Molecular reason remains unresolved and
+    no hard-rock source was tested.
+  target_ids:
+  - cmmmech:ilmenite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: deployment
+  area: scope
+  topic: Laboratory evidence and deferred microbial leads
+  outcome: supported
+  summary: Industrial origin and pre-commercialization prose are not transferred into
+    tested industrial recovery.
+  details: Only the complete 2025 abiotic study supports this accepted mechanism.
+    Other microbial and processing leads remain source follow-ups; this reviewer does
+    not validate inaccessible methods or add microbial claims. Source methods supplier
+    names are the owner context; acknowledgments name different suppliers without
+    mapping lots, which remains a provenance limit rather than a demonstrated owner
+    error.
+  target_ids:
+  - cmmmech:ilmenite
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Exact inputs and actual validation
+  outcome: supported
+  summary: Final reviewed owner/history/schema/dossier bytes and completed checks
+    are bound.
+  details: Root curation and reviewer U authorship are disclosed; reviewer made no
+    Ti owner/history changes. The inspector was run before scientific assessment.
+    Both named commands and four batch commands are independently checked against
+    current inputs and retained logs; structural gates do not certify corpus-wide
+    scientific truth.
+  target_ids:
+  - cmmmech:ilmenite
+  evidence_ids:
+  - owner
+  - provenance
+  - named
+  - batch
+  - notices
+findings: []
+actions: []
+limitations:
+- No isolated causal experiment of iron valence, replicate-level raw observations,
+  complete phase balances or recovered titanium product is established.
+- Supplier names in methods and acknowledgments differ without lot mapping; the owner
+  follows methods. Table 1 unusual Al2O5 label and printed HCl concentration equivalents
+  are not adopted as corrected chemical measurements.
+- The reviewer did not re-fit kinetic/XANES data, authenticate industrial feed lots
+  or adopt deferred microbial studies.
+- Bounded source/notice/dedup searches are not exhaustive; publisher landing access
+  failed with HTTP 429 while complete originalPDF and saved authority metadata were
+  inspected.
+notes:
+- Raw literature and renders remain outside Git; reading access does not imply republication
+  rights.
+- No fresh scientific assessment of other corpus records is claimed. Source follow-ups
+  are distinct from curator defects.

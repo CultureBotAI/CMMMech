@@ -8,13 +8,21 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 578 material records.
+The catalogue currently contains 586 material records.
 
-The [latest curation report](research/ingests/round113-frontier-20261016.md) links
+The [latest curation report](research/ingests/round114-frontier-20261016.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Kaliborite](data/records/kaliborite.yaml) | Natural borate identity and abiotic thermal alteration | Distinct specimens and conflicting amorphous-product formulas retained |
+| [Preobrazhenskite](data/records/preobrazhenskite.yaml) | Natural magnesium-borate identity and crystal structure | Hydrogen-site interpretation remains qualified |
+| [Ancylite-(Ce)](data/records/ancylite-ce.yaml) | Natural carbonate identity and primary structure evidence | Ce-dominant crystal kept distinct from La species and mixtures |
+| [Calcioancylite-(La)](data/records/calcioancylite-la.yaml) | Holotype identity and primary structure/deposit evidence | Calculated volatiles and table/deposit discrepancies retained |
+| [Curite](data/records/curite.yaml) | Natural identity and synthetic surface dissolution | Exsitu relief, timing/pH conflicts and inferred adsorption remain explicit |
+| [Vandenbrandeite](data/records/vandenbrandeite.yaml) | Natural identity and abiotic thermal alteration | Experimental versus computed results and mixed products kept distinct |
+| [Ilmenite](data/records/ilmenite.yaml) | Laboratory acid dissolution of mixed placer concentrates | Feed confounding, fit limits and no isolated-product recovery |
+| [Perovskite](data/records/perovskite.yaml) | Natural mineral identity from microscopy and diffraction | Species distinct from structure family; synthetic thermal arms separate |
 | [Mcallisterite](data/records/mcallisterite.yaml) | Natural borate identity and synthetic thermal behavior | Distinct natural impurities, water-loss fractions and deferred synthesis data |
 | [Tunellite](data/records/tunellite.yaml) | Natural structure and abiotic thermal observations | Heating-rate conflicts and historical product identity remain unresolved |
 | [Kukharenkoite-(Ce)](data/records/kukharenkoite-ce.yaml) | Natural mineral identity and crystal structure | Specimen chemistry and model/deposit limits retained |
