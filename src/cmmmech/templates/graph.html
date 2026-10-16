@@ -1,0 +1,290 @@
+{% extends "base.html" %}
+{% block title %}Mechanism Network Graph · CMMMech{% endblock %}
+{% block content %}
+<div class="page-top-bar">
+  <div class="breadcrumbs">
+    <a href="{{ root }}index.html">CMMMech</a> &gt;
+    <span>Mechanism graph</span>
+  </div>
+</div>
+
+<h1>Material–Process–Organism Mechanism Network</h1>
+<p class="lede">
+  Interactive causal and relational network connecting {{ graph_data.nodes | length }} critical materials, transformation processes,
+  and microbial taxa across {{ graph_data.edges | length }} curated mechanism links. Click a node to open its material, process, or taxon record.
+</p>
+
+<div class="browse-layout">
+  <aside class="facet-sidebar" aria-label="Network filters">
+    <h2>Filter network</h2>
+    <div class="facet-group">
+      <label class="facet-label" for="graph-search">Search nodes</label>
+      <input id="graph-search" type="search" placeholder="Material, process, or organism…" autocomplete="off">
+      <div class="map-search-status" id="graph-count"></div>
+    </div>
+
+    <div class="facet-group">
+      <label class="facet-label" for="graph-process">Mechanism Process</label>
+      <select id="graph-process">
+        <option value="">All processes</option>
+        {% for proc, count in process_counts %}
+        <option value="{{ proc }}">{{ proc | replace('_', ' ') | capitalize }} ({{ count }})</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="facet-group">
+      <label class="facet-label" for="graph-kind">Material Kind</label>
+      <select id="graph-kind">
+        <option value="">All kinds</option>
+        {% for k, count in kinds_counts %}
+        <option value="{{ k }}">{{ k | replace('_', ' ') | capitalize }} ({{ count }})</option>
+        {% endfor %}
+      </select>
+    </div>
+
+    <div class="facet-group">
+      <span class="facet-label">Node Legend</span>
+      <div class="facet-list" style="font-size: .82rem;">
+        <div><span class="sw" style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--cls0);margin-right:.4rem;"></span>Critical / strategic material</div>
+        <div><span class="sw" style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--cls1);margin-right:.4rem;"></span>Transformation process hub</div>
+        <div><span class="sw" style="display:inline-block;width:10px;height:10px;border-radius:50%;background:var(--cls2);margin-right:.4rem;"></span>Microbial agent (taxon)</div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="browse-main">
+    <div class="map-wrap">
+      <canvas id="mech-graph" width="980" height="640"></canvas>
+      <div id="graph-tip" class="map-tip" hidden></div>
+      <div class="map-hint">scroll to zoom · drag to pan · double-click to reset · click node to open record · Esc clears filter</div>
+    </div>
+  </div>
+</div>
+
+<script id="mech-graph-data" type="application/json">{{ graph_data_json | safe }}</script>
+<script>
+(function () {
+  const G = JSON.parse(document.getElementById('mech-graph-data').textContent);
+  const canvas = document.getElementById('mech-graph');
+  const ctx = canvas.getContext('2d');
+  const tip = document.getElementById('graph-tip');
+  const searchEl = document.getElementById('graph-search');
+  const procEl = document.getElementById('graph-process');
+  const kindEl = document.getElementById('graph-kind');
+  const countEl = document.getElementById('graph-count');
+
+  const dpr = window.devicePixelRatio || 1;
+  let W = 980, H = 640;
+  function resize() {
+    const rect = canvas.parentElement.getBoundingClientRect();
+    W = Math.max(360, Math.floor(rect.width));
+    H = Math.max(440, Math.min(700, Math.floor(W * 0.66)));
+    canvas.width = W * dpr;
+    canvas.height = H * dpr;
+    canvas.style.width = W + 'px';
+    canvas.style.height = H + 'px';
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+  }
+  resize();
+
+  // Concentric radial layout: processes in inner ring, materials in middle ring, organisms in outer ring
+  const procs = G.nodes.filter(n => n.type === 'process');
+  const mats = G.nodes.filter(n => n.type === 'material');
+  const orgs = G.nodes.filter(n => n.type === 'organism');
+  const byId = {};
+  G.nodes.forEach(n => { byId[n.id] = n; });
+
+  procs.forEach((n, i) => {
+    const a = (2 * Math.PI * i) / Math.max(1, procs.length);
+    n.x = 0.5 + 0.14 * Math.cos(a);
+    n.y = 0.5 + 0.14 * Math.sin(a);
+  });
+  mats.forEach((n, i) => {
+    const a = (2 * Math.PI * i) / Math.max(1, mats.length);
+    n.x = 0.5 + 0.31 * Math.cos(a);
+    n.y = 0.5 + 0.31 * Math.sin(a);
+  });
+  orgs.forEach((n, i) => {
+    const a = (2 * Math.PI * i) / Math.max(1, orgs.length);
+    n.x = 0.5 + 0.45 * Math.cos(a);
+    n.y = 0.5 + 0.45 * Math.sin(a);
+  });
+
+  const PAD = 28;
+  let k = 1, tx = 0, ty = 0;
+  function sx(x) { return (PAD + x * (W - 2 * PAD)) * k + tx; }
+  function sy(y) { return (PAD + y * (H - 2 * PAD)) * k + ty; }
+
+  let query = '';
+  let procFilter = '';
+  let kindFilter = '';
+  let hover = null;
+
+  function syncUrl() {
+    if (!window.history || !window.history.replaceState) return;
+    const params = new URLSearchParams(window.location.search);
+    if (query) params.set('q', query); else params.delete('q');
+    if (procFilter) params.set('process', procFilter); else params.delete('process');
+    if (kindFilter) params.set('kind', kindFilter); else params.delete('kind');
+    const qs = params.toString();
+    window.history.replaceState(null, '', window.location.pathname + (qs ? '?' + qs : '') + window.location.hash);
+  }
+
+  function activeSet() {
+    const hasFilter = Boolean(query || procFilter || kindFilter);
+    const matchedNodes = new Set();
+    const matchedEdges = [];
+    for (const e of G.edges) {
+      if (procFilter && e.process !== procFilter) continue;
+      const s = byId[e.source], t = byId[e.target];
+      if (!s || !t) continue;
+      if (kindFilter && s.type === 'material' && s.kind !== kindFilter) continue;
+      if (query) {
+        const qMatch = s.label.toLowerCase().includes(query) ||
+                       t.label.toLowerCase().includes(query) ||
+                       (e.label || '').toLowerCase().includes(query) ||
+                       (e.process || '').toLowerCase().includes(query);
+        if (!qMatch) continue;
+      }
+      matchedEdges.push(e);
+      matchedNodes.add(s.id);
+      matchedNodes.add(t.id);
+    }
+    if (!hasFilter) {
+      G.nodes.forEach(n => matchedNodes.add(n.id));
+    }
+    return { hasFilter, matchedNodes, matchedEdges };
+  }
+
+  function draw() {
+    const cs = getComputedStyle(document.documentElement);
+    const colMat = cs.getPropertyValue('--cls0').trim() || '#ae453a';
+    const colProc = cs.getPropertyValue('--cls1').trim() || '#2a6f97';
+    const colOrg = cs.getPropertyValue('--cls2').trim() || '#3b7a57';
+    const colInk = cs.getPropertyValue('--ink').trim() || '#1a1a1a';
+    const { hasFilter, matchedNodes, matchedEdges } = activeSet();
+
+    ctx.clearRect(0, 0, W, H);
+
+    // Draw edges
+    ctx.lineWidth = 1;
+    ctx.strokeStyle = colInk;
+    ctx.globalAlpha = hasFilter ? 0.22 : 0.12;
+    for (const e of matchedEdges) {
+      const s = byId[e.source], t = byId[e.target];
+      if (!s || !t) continue;
+      ctx.beginPath();
+      ctx.moveTo(sx(s.x), sy(s.y));
+      ctx.lineTo(sx(t.x), sy(t.y));
+      ctx.stroke();
+    }
+
+    // Draw nodes
+    let shown = 0;
+    for (const n of G.nodes) {
+      const isMatch = matchedNodes.has(n.id);
+      ctx.globalAlpha = isMatch ? 0.9 : 0.12;
+      ctx.fillStyle = n.type === 'process' ? colProc : (n.type === 'material' ? colMat : colOrg);
+      const rad = (n.type === 'process' ? 7.5 : (n.type === 'material' ? 4.2 : 3.0)) * Math.sqrt(k);
+      ctx.beginPath();
+      ctx.arc(sx(n.x), sy(n.y), Math.min(14, Math.max(2.2, rad)), 0, 6.2832);
+      ctx.fill();
+      if (isMatch) shown++;
+      if (n.type === 'process') {
+        ctx.globalAlpha = isMatch ? 0.95 : 0.25;
+        ctx.fillStyle = colInk;
+        ctx.font = '600 11px -apple-system, BlinkMacSystemFont, sans-serif';
+        ctx.fillText(n.label, sx(n.x) + 9, sy(n.y) + 4);
+      }
+    }
+
+    if (hover) {
+      ctx.globalAlpha = 1;
+      ctx.strokeStyle = colInk;
+      ctx.lineWidth = 2;
+      ctx.beginPath();
+      ctx.arc(sx(hover.x), sy(hover.y), 8, 0, 6.2832);
+      ctx.stroke();
+    }
+    ctx.globalAlpha = 1;
+    countEl.textContent = hasFilter
+      ? `${shown} nodes · ${matchedEdges.length} edges matched`
+      : `${G.nodes.length} nodes · ${G.edges.length} edges`;
+  }
+
+  function pick(mx, my) {
+    let best = null, bestD = 14 * 14;
+    for (const n of G.nodes) {
+      const dx = sx(n.x) - mx, dy = sy(n.y) - my;
+      const d = dx * dx + dy * dy;
+      if (d < bestD) { bestD = d; best = n; }
+    }
+    return best;
+  }
+
+  let drag = null, moved = false;
+  canvas.addEventListener('mousedown', (e) => {
+    drag = { x: e.clientX - tx, y: e.clientY - ty, sx: e.clientX, sy: e.clientY };
+    moved = false;
+  });
+  window.addEventListener('mousemove', (e) => {
+    if (drag) {
+      if (Math.hypot(e.clientX - drag.sx, e.clientY - drag.sy) > 3) moved = true;
+      tx = e.clientX - drag.x;
+      ty = e.clientY - drag.y;
+      tip.hidden = true;
+      draw();
+      return;
+    }
+    const rect = canvas.getBoundingClientRect();
+    const mx = e.clientX - rect.left, my = e.clientY - rect.top;
+    const h = pick(mx, my);
+    if (h !== hover) { hover = h; draw(); }
+    if (h) {
+      tip.innerHTML = `<strong>${h.label}</strong><br><span>${h.type} · ${(h.kind || '').replace(/_/g, ' ')}</span>`;
+      tip.style.left = Math.min(W - 240, Math.max(8, mx + 12)) + 'px';
+      tip.style.top = Math.max(8, my - 36) + 'px';
+      tip.hidden = false;
+      canvas.style.cursor = 'pointer';
+    } else {
+      tip.hidden = true;
+      canvas.style.cursor = 'grab';
+    }
+  });
+  window.addEventListener('mouseup', () => { drag = null; });
+  canvas.addEventListener('click', () => {
+    if (moved || !hover || !hover.href) return;
+    window.location.href = hover.href;
+  });
+  canvas.addEventListener('dblclick', () => { k = 1; tx = 0; ty = 0; draw(); });
+  canvas.addEventListener('wheel', (e) => {
+    e.preventDefault();
+    const rect = canvas.getBoundingClientRect();
+    const mx = e.clientX - rect.left, my = e.clientY - rect.top;
+    const f = Math.exp(-e.deltaY * 0.0018);
+    const nk = Math.max(0.7, Math.min(20, k * f));
+    tx = mx - (mx - tx) * (nk / k);
+    ty = my - (my - ty) * (nk / k);
+    k = nk;
+    draw();
+  }, { passive: false });
+
+  searchEl.addEventListener('input', () => { query = searchEl.value.trim().toLowerCase(); syncUrl(); draw(); });
+  searchEl.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') { searchEl.value = ''; query = ''; syncUrl(); draw(); }
+  });
+  procEl.addEventListener('change', () => { procFilter = procEl.value; syncUrl(); draw(); });
+  kindEl.addEventListener('change', () => { kindFilter = kindEl.value; syncUrl(); draw(); });
+
+  const initParams = new URLSearchParams(window.location.search);
+  if (initParams.get('q')) { searchEl.value = initParams.get('q'); query = searchEl.value.trim().toLowerCase(); }
+  if (initParams.get('process')) { procEl.value = initParams.get('process'); procFilter = procEl.value; }
+  if (initParams.get('kind')) { kindEl.value = initParams.get('kind'); kindFilter = kindEl.value; }
+
+  window.addEventListener('resize', () => { resize(); draw(); });
+  new MutationObserver(draw).observe(document.documentElement, { attributes: true, attributeFilter: ['data-theme'] });
+  draw();
+})();
+</script>
+{% endblock %}

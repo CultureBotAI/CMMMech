@@ -11,6 +11,7 @@ from __future__ import annotations
 
 import argparse
 import filecmp
+import hashlib
 import json
 import shutil
 import sys
@@ -215,6 +216,36 @@ def render(out_dir: Path) -> None:
     materials_with_mechs = sum(1 for r in records_data if r["mechanisms"])
     critical_materials_count = sum(1 for r in records_data if r["is_critical"])
 
+    latest_curation = max(
+        (
+            str(ch.get("timestamp", ""))[:10]
+            for r in records_data
+            for ch in (r.get("curation_history") or [])
+            if ch.get("timestamp")
+        ),
+        default="",
+    )
+    digest_payload = json.dumps(
+        [
+            (
+                r["slug"],
+                r["name"],
+                r["material_kind"],
+                len(r["mechanisms"]),
+                len(r.get("curation_history") or []),
+            )
+            for r in records_data
+        ],
+        separators=(",", ":"),
+    ).encode("utf-8")
+    build_provenance = {
+        "total_materials": total_materials,
+        "total_mechanisms": total_mechanisms,
+        "latest_curation": latest_curation,
+        "corpus_digest": hashlib.sha256(digest_payload).hexdigest()[:12],
+    }
+    env.globals["build_provenance"] = build_provenance
+
     # Featured materials
     featured_slugs = [
         "cobalt", "neodymium", "lithium", "copper", "nickel", "palladium",
@@ -279,6 +310,93 @@ def render(out_dir: Path) -> None:
         process_counts=process_counts,
     )
     (out_dir / "browse.html").write_text(browse_html, encoding="utf-8")
+
+    # Render map.html
+    corpus_map_path = REPO_ROOT / "data" / "embeddings" / "corpus_map.json"
+    if corpus_map_path.exists():
+        map_data = json.loads(corpus_map_path.read_text(encoding="utf-8"))
+        shutil.copy(corpus_map_path, out_dir / "corpus_map.json")
+    else:
+        map_data = {"model": "", "method": "PaCMAP", "n": 0, "classes": [], "points": []}
+    map_data["hrefs"] = {r["slug"]: r["page"] for r in records_data}
+    map_html = env.get_template("map.html").render(
+        root="",
+        map_data=map_data,
+        map_data_json=json.dumps(map_data, separators=(",", ":")),
+        kinds_counts=kinds_counts,
+        process_counts=process_counts,
+    )
+    (out_dir / "map.html").write_text(map_html, encoding="utf-8")
+
+    # Build and render graph.html (material -> process -> organism mechanism network)
+    graph_nodes: list[dict[str, Any]] = []
+    graph_edges: list[dict[str, Any]] = []
+    seen_nodes: set[str] = set()
+    for p_id, p_cnt in process_counts:
+        nid = f"proc:{p_id}"
+        seen_nodes.add(nid)
+        graph_nodes.append({
+            "id": nid,
+            "label": PROCESS_LABELS.get(p_id, p_id.replace("_", " ").title()),
+            "type": "process",
+            "kind": p_id,
+            "href": f"processes/{p_id}.html",
+            "count": p_cnt,
+        })
+    for r in records_data:
+        if not r["mechanisms"]:
+            continue
+        mat_id = f"mat:{r['slug']}"
+        if mat_id not in seen_nodes:
+            seen_nodes.add(mat_id)
+            graph_nodes.append({
+                "id": mat_id,
+                "label": r["name"],
+                "type": "material",
+                "kind": r["material_kind"],
+                "critical": r["is_critical"],
+                "href": r["page"],
+                "count": len(r["mechanisms"]),
+            })
+        for m in r["mechanisms"]:
+            proc = m.get("process") or "other"
+            proc_nid = f"proc:{proc}"
+            graph_edges.append({
+                "source": mat_id,
+                "target": proc_nid,
+                "process": proc,
+                "label": m.get("name", proc),
+            })
+            for org in (m.get("organisms") or [])[:4]:
+                oid = org.get("id") or org.get("label") or ""
+                if not oid:
+                    continue
+                org_nid = f"org:{oid}"
+                if org_nid not in seen_nodes:
+                    seen_nodes.add(org_nid)
+                    graph_nodes.append({
+                        "id": org_nid,
+                        "label": org.get("label", oid),
+                        "type": "organism",
+                        "kind": "organism",
+                        "href": curie_url(oid) or f"browse.html?q={org.get('label', oid)}",
+                        "count": 1,
+                    })
+                graph_edges.append({
+                    "source": proc_nid,
+                    "target": org_nid,
+                    "process": proc,
+                    "label": m.get("name", proc),
+                })
+    graph_data = {"nodes": graph_nodes, "edges": graph_edges}
+    graph_html = env.get_template("graph.html").render(
+        root="",
+        graph_data=graph_data,
+        graph_data_json=json.dumps(graph_data, separators=(",", ":")),
+        kinds_counts=kinds_counts,
+        process_counts=process_counts,
+    )
+    (out_dir / "graph.html").write_text(graph_html, encoding="utf-8")
 
     # Write index.json
     index_json_data = [

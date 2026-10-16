@@ -4,6 +4,10 @@
 <div class="hero">
   <h1>Critical Materials, Minerals &amp; Microbial Mechanisms</h1>
   <p class="lede">An evidence-backed knowledge base for <strong>critical minerals and materials</strong>, connecting strategic commodities and mineral hosts to <strong>microbial extraction, biomineralization, and recovery mechanisms</strong>.</p>
+  <form class="hero-search" action="{{ root }}browse.html" method="get" role="search">
+    <input type="search" name="q" placeholder="Search {{ total_materials }} materials, minerals, formulas, organisms, processes…" aria-label="Search CMMMech materials">
+    <button type="submit">Search</button>
+  </form>
 </div>
 
 <div class="stats-grid">
@@ -97,8 +101,12 @@
 </table>
 </div>
 
-<p style="margin-top: 1.5rem; text-align: center;">
+<p style="margin-top: 1.5rem; text-align: center; display: flex; flex-wrap: wrap; gap: .6rem; justify-content: center;">
   <a href="{{ root }}browse.html" style="display: inline-block; padding: .6rem 1.4rem; background: var(--accent); color: #fff; border-radius: 8px; font-weight: 600; text-decoration: none;">Browse all {{ total_materials }} materials &rarr;</a>
+  <a href="{{ root }}map.html" style="display: inline-block; padding: .6rem 1.2rem; background: var(--card); border: 1px solid var(--line); color: var(--ink); border-radius: 8px; font-weight: 600; text-decoration: none;">2D Embedding Map</a>
+  <a href="{{ root }}graph.html" style="display: inline-block; padding: .6rem 1.2rem; background: var(--card); border: 1px solid var(--line); color: var(--ink); border-radius: 8px; font-weight: 600; text-decoration: none;">Mechanism Network Graph</a>
+  <a href="{{ root }}index.json" download style="display: inline-block; padding: .6rem 1.2rem; background: var(--card); border: 1px solid var(--line); color: var(--ink); border-radius: 8px; font-weight: 600; text-decoration: none;">Download JSON ({{ total_materials }})</a>
+  <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml" style="display: inline-block; padding: .6rem 1.2rem; background: var(--card); border: 1px solid var(--line); color: var(--ink); border-radius: 8px; font-weight: 600; text-decoration: none;">LinkML Schema</a>
 </p>
 
 <h2>Evidence &amp; Curation Contract</h2>

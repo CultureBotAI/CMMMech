@@ -13,14 +13,25 @@
   <nav>
     <a href="../index.html">Home</a>
     <a href="../browse.html">Browse</a>
+    <a href="../map.html">Text map</a>
+    <a href="../graph.html">Mechanism graph</a>
+    <a href="../index.json">JSON</a>
+    <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">Schema</a>
     <a href="https://github.com/CultureBotAI/CMMMech">GitHub</a>
+    <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </header>
 <main>
-<div class="breadcrumbs">
-  <a href="../index.html">CMMMech</a> &gt;
-  <a href="../kinds/element.html">Element</a> &gt;
-  <span>Ruthenium</span>
+<div class="page-top-bar">
+  <div class="breadcrumbs">
+    <a href="../index.html">CMMMech</a> &gt;
+    <a href="../kinds/element.html">Element</a> &gt;
+    <span>Ruthenium</span>
+  </div>
+  <form class="page-search" action="../browse.html" method="get" role="search">
+    <input type="search" name="q" placeholder="Search materials…" aria-label="Search materials">
+    <button type="submit">Search</button>
+  </form>
 </div>
 
 <h1>
@@ -31,8 +42,18 @@
 
 <p class="lede">Ruthenium (Ru). This element record is distinct from the dissolved Ru(III) chloride feed, cell-associated oxidized ruthenium material, and Pd/Ru catalyst preparations in the curated laboratory study. The US 2025 list names the ruthenium commodity individually; this maps to the element without extending criticality to every ruthenium compound, mineral or waste. The evidence supports biomass-associated deposition, without demonstrating elemental Ru recovery, a microbial enzyme requirement or industrial operation.</p>
 
+<p style="margin: .4rem 0 1rem; font-size: .9rem; color: var(--muted);">
+  <strong>Explore across X-Mech:</strong>
+  <a href="https://culturebotai.github.io/MediaIngredientMech/app/?q=Ruthenium">MediaIngredientMech</a> ·
+  <a href="https://culturebotai.github.io/CultureMech/app/?q=Ruthenium">CultureMech</a> ·
+  <a href="https://culturebotai.github.io/CommunityMech/?q=Ruthenium">CommunityMech</a> ·
+  <a href="https://culturebotai.github.io/HabitatMech/browse.html?q=Ruthenium">HabitatMech</a> ·
+  <a href="https://culturebotai.github.io/TraitMech/pages/browse.html?q=Ruthenium">TraitMech</a> ·
+  <a href="../graph.html?q=Ruthenium">CMMMech Network Graph</a>
+</p>
+
 <div class="detail-section">
-  <h3>Identifiers &amp; Classification</h3>
+  <h2>Identifiers &amp; Classification</h2>
   <table style="margin: .4rem 0;">
     <thead>
       <tr>
@@ -54,7 +75,7 @@
 </div>
 
 <div class="detail-section">
-  <h3>Criticality Designations</h3>
+  <h2>Criticality Designations</h2>
   <table>
     <thead>
       <tr>
@@ -80,19 +101,29 @@
 </div>
 
 <div class="detail-section">
-  <h3>Microbial &amp; Biochemical Mechanisms (1)</h3>
+  <h2>Microbial &amp; Biochemical Mechanisms (1)</h2>
+  <svg viewBox="0 0 720 92" role="img" aria-label="Mechanism flow for Ruthenium" style="width:100%;max-width:720px;height:auto;margin:.4rem 0 .8rem;background:var(--surface);border:1px solid var(--line);border-radius:8px;display:block;">
+    <rect x="14" y="30" width="160" height="32" rx="6" fill="var(--pastel-a)" stroke="var(--accent)" />
+    <text x="94" y="50" text-anchor="middle" font-size="11" font-weight="700" fill="var(--ink)">Ruthenium</text>
+    <line x1="174" y1="46" x2="250" y2="28" stroke="var(--accent)" stroke-width="1.4" />
+    <rect x="250" y="15" width="150" height="26" rx="5" fill="var(--card)" stroke="var(--line)" />
+    <text x="325" y="32" text-anchor="middle" font-size="10.5" font-weight="600" fill="var(--accent)">other</text>
+    <line x1="400" y1="28" x2="446" y2="28" stroke="var(--muted)" stroke-width="1.2" />
+    <rect x="446" y="15" width="258" height="26" rx="5" fill="var(--card)" stroke="var(--line)" />
+    <text x="575" y="32" text-anchor="middle" font-size="10" fill="var(--ink)">Biomass-associated deposition of oxidi (Bacillus benzoevor)</text>
+  </svg>
   <div class="mechanism-box" id="mechanism-benzoevorans_oxidized_ru_deposition">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
-      <h4 style="margin: 0; font-size: 1.15rem;">Biomass-associated deposition of oxidized ruthenium from a chloride feed</h4>
+      <h3 style="margin: 0; font-size: 1.15rem;">Biomass-associated deposition of oxidized ruthenium from a chloride feed</h3>
       <div>
         <span class="badge">other</span>
-        <span class="badge" style="background: #e2f5e8; color: #1d733a;">Microbial</span>
+        <span class="badge badge-support">Microbial</span>
       </div>
     </div>
 
     <p style="margin: .4rem 0 .2rem; font-size: .92rem;">
       <strong>Associated Organisms:</strong>
-        <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1456" target="_blank" rel="noopener"><em>Bacillus benzoevorans</em> (<code>NCBITaxon:1456</code>)</a>    </p>
+        <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1456" target="_blank" rel="noopener"><em>Bacillus benzoevorans</em> (<code>NCBITaxon:1456</code>)</a> <a href="https://culturebotai.github.io/TaxonMech/browse.html?q=Bacillus%20benzoevorans" title="Search Bacillus benzoevorans in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>    </p>
 
     <p style="margin: .5rem 0; font-size: .95rem;">Washed Bacillus benzoevorans NCIMB 12555 biomass, reported as B. benzeovorans, acquired Ru-containing deposits after exposure to a synthetic Ru(III) chloride solution under hydrogen, with or without prior Pd deposition. Microscopy and spectroscopy support association with oxidized Ru material. The study does not demonstrate Ru(0), a Pd-Ru metallic alloy or a necessary metabolic contribution. Microbial involvement denotes the biomass scaffold; sustained cell viability during acidic exposure and subsequent processing was not established.</p>
 
@@ -162,7 +193,7 @@
 </div>
 
 <div class="detail-section">
-  <h3>Sources &amp; References</h3>
+  <h2>Sources &amp; References</h2>
   <ol style="padding-left: 1.2rem; margin: .4rem 0;">
     <li id="source-chebi_ruthenium" style="margin-bottom: .6rem; font-size: .92rem;">
       <strong>chebi_ruthenium</strong>: ChEBI:30682 - ruthenium atom; Ru, charge 0
@@ -193,7 +224,7 @@
 </div>
 
 <div class="detail-section">
-  <h3>Curation History</h3>
+  <h2>Curation History</h2>
   <table style="font-size: .88rem;">
     <thead>
       <tr>
@@ -219,7 +250,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · generated by <code>scripts/render_pages.py</code></p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (548 materials · 550 mechanisms · latest curation 2026-10-16 · corpus digest <code>f7100c4b4190</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

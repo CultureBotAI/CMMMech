@@ -21,6 +21,15 @@ render *args:
 render-check:
     uv run python scripts/render_pages.py --check
 
+embed-dry:
+    uv run python scripts/embed_records.py --dry-run
+
+embed *args:
+    python3 scripts/embed_records.py {{args}}
+
+embed-map:
+    python3 scripts/embed_map.py && uv run python scripts/render_pages.py
+
 # Create a new immutable sidecar, then attach its printed path to the record.
 [positional-arguments]
 new-history *args:
