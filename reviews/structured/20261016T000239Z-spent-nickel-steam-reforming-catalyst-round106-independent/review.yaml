@@ -1,0 +1,333 @@
+schema_version: 1.0.0
+review_id: 20261016T000239Z-spent-nickel-steam-reforming-catalyst-round106-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of spent nickel steam-reforming catalyst
+started_at: '2026-10-15T23:55:25.418598Z'
+finished_at: '2026-10-16T00:02:39.533522Z'
+reviewer:
+  identity: codex /root/round104_uranium
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from author /root. Reviewer authored only saléeite/sabugalite
+    owners; no nickel owner/history edit. Shared primary artifacts were independently
+    read and all figures inspected.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact secondary-resource owner accurately limits the original laboratory
+  extraction report and preserves its substantial internal inconsistencies. No supported
+  corrective record defect found.
+source:
+  git_revision: af6cbead934deb4667764fa4a325246158ee4a0a
+  state: working_tree
+  inputs:
+  - path: data/records/spent-nickel-steam-reforming-catalyst.yaml
+    sha256: 3c29f06900b5194a74d457ebbe68f6b010ef59c7ca1cef34fdc98fad6a99cce4
+    role: target
+  - path: history/records/spent-nickel-steam-reforming-catalyst/2026-10-15T235153Z-codex-1f46bd.yaml
+    sha256: 06241f88a220c8dc2b0cbe9097b910af886fe8afa5fdb66f77f1bc446324786a
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+scope:
+  description: Entire frozen owner and CREATE history; full original primary experiment,
+    figures/tables and bounded identity/correction/conflict search.
+  selection: Coordinator-assigned independent single-record review.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:spent-nickel-steam-reforming-catalyst
+targets:
+- target_id: cmmmech:spent-nickel-steam-reforming-catalyst
+  path: data/records/spent-nickel-steam-reforming-catalyst.yaml
+  label: Spent nickel steam-reforming catalyst
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-nickel-steam-reforming-catalyst.yaml
+    role: maintained_record
+checks:
+- check_id: science
+  name: Independent primary scientific assessment
+  status: passed
+  required: true
+  summary: All original pages/tables/figures, identity and bounded conflicting/correction
+    searches checked.
+  target_ids:
+  - cmmmech:spent-nickel-steam-reforming-catalyst
+  evidence_ids:
+  - original
+  - publisher
+  - registry
+  - search
+- check_id: named
+  name: Independent named-file validation
+  status: passed
+  required: true
+  summary: One checked, zero failed.
+  target_ids:
+  - cmmmech:spent-nickel-steam-reforming-catalyst
+  command: uv run --locked cmmmech validate data/records/spent-nickel-steam-reforming-catalyst.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Verified coordinator batch gate 1
+  status: passed
+  required: true
+  summary: Terminal receipt and retained log independently checked; not duplicate
+    reviewer execution.
+  target_ids:
+  - cmmmech:spent-nickel-steam-reforming-catalyst
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Verified coordinator batch gate 2
+  status: passed
+  required: true
+  summary: Terminal receipt and retained log independently checked; not duplicate
+    reviewer execution.
+  target_ids:
+  - cmmmech:spent-nickel-steam-reforming-catalyst
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Verified coordinator batch gate 3
+  status: passed
+  required: true
+  summary: Terminal receipt and retained log independently checked; not duplicate
+    reviewer execution.
+  target_ids:
+  - cmmmech:spent-nickel-steam-reforming-catalyst
+  command: uv run --locked cmmmech validate-history --base af6cbead934deb4667764fa4a325246158ee4a0a
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Verified coordinator batch gate 4
+  status: passed
+  required: true
+  summary: Terminal receipt and retained log independently checked; not duplicate
+    reviewer execution.
+  target_ids:
+  - cmmmech:spent-nickel-steam-reforming-catalyst
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/spent-nickel-steam-reforming-catalyst.yaml
+  locator: Entire exact owner, inline history and history reference.
+  accessed_at: '2026-10-16T00:02:39.533522Z'
+  support: supports
+  summary: The use-defined resource and mechanism claims remain explicitly laboratory/sample-specific.
+  snapshot_sha256: 3c29f06900b5194a74d457ebbe68f6b010ef59c7ca1cef34fdc98fad6a99cce4
+- evidence_id: history
+  kind: record_content
+  reference: history/records/spent-nickel-steam-reforming-catalyst/2026-10-15T235153Z-codex-1f46bd.yaml
+  locator: Canonical CREATE actor, target, timestamp and event details.
+  accessed_at: '2026-10-16T00:02:39.533522Z'
+  support: supports
+  summary: Actual present curation is described with GPT-6/codex actor metadata; no
+    invented earlier authorship.
+  snapshot_sha256: 06241f88a220c8dc2b0cbe9097b910af886fe8afa5fdb66f77f1bc446324786a
+- evidence_id: original
+  kind: primary_source
+  reference: https://neptjournal.com/upload-images/NL-32-6-(6)B-1633com.pdf
+  locator: All four original pages197-200; independently read complete text and viewed
+    every rendered page, Tables1-2 and Figures1-5.
+  accessed_at: '2026-10-16T00:02:39.533522Z'
+  support: supports
+  summary: Abstract and methods identify primary steam-reforming feed. Experiments
+    and source inconsistencies support the carefully qualified extraction account.
+  snapshot_sha256: 7a4e437503a84d473443f080d09b9f38001a4c8945beb7500206987d169c43a0
+- evidence_id: publisher
+  kind: authority
+  reference: https://neptjournal.com/upload-images/NL-32-6-(6)B-1633com.pdf
+  locator: Fresh independent live publisher PDF open and exact-title search.
+  accessed_at: '2026-10-16T00:02:39.533522Z'
+  support: supports
+  summary: Title, three authors, journal10(2):197-200 and2011 agree with the retained
+    original. DOI not verified; no DOI absence claim is made.
+- evidence_id: registry
+  kind: authority
+  reference: https://api.crossref.org/works?query.title=Extraction%20of%20Nickel%20from%20Spent%20Catalyst%20Using%20EDTA%20as%20Chelating%20Agent&rows=5
+  locator: 'Retained registry query independently inspected: five returned title/DOI
+    pairs.'
+  accessed_at: '2026-10-16T00:02:39.533522Z'
+  support: context_only
+  summary: Returned records include the distinct Goel2009 EDTA and2012 EDDS studies;
+    their identifiers are not assigned to Oza2011.
+  snapshot_sha256: fb5ba4278822f7e879db46529c6cd13948ad62ecc60df9d0538c645c45a1c0bb
+- evidence_id: search
+  kind: search
+  reference: Independent bounded source and duplicate checks
+  locator: nickel-independent-web.txt and nickel-review-dedup.json under /private/tmp/cmm-round106-uranium-research
+  accessed_at: '2026-10-16T00:02:39.533522Z'
+  support: context_only
+  summary: Exact-title correction/erratum/retraction search found no relevant notice
+    within returned results. Hidden/ignored/followed search found seven matching files
+    and only the current maintained owner; no search errors.
+  snapshot_sha256: c339e111c3b3a93f0135a46a9caa965b21be9eba6e414b2a938a64869cbbb6a6
+  search_scope: Live exact-title correction/erratum/retraction and author/title queries,
+    first returned sets; no exhaustive correction absence claim. Repeated rg --no-ignore
+    --hidden --follow across worktree records/research/reviews/history, original-main
+    records/ignored reports, cited round85/86/91/94/104/105 raw roots and current106
+    resource raws; bounded roots, no whole-machine or issue-comment search.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round106-uranium-research/nickel-review-named-validation.json
+  locator: Actual independent named validation; terminal chunk7ff6e7.
+  accessed_at: '2026-10-16T00:02:39.533522Z'
+  support: supports
+  summary: One record checked, zero failures.
+  snapshot_sha256: 50704de74bd2df21f6a2bbf5a057851f4cb8bad4ffea7014be2f2f5651cf7cdf
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round106-final-gates.json
+  locator: Terminal coordinator receipt, retained log digest and unchanged target
+    record hash independently verified.
+  accessed_at: '2026-10-16T00:02:39.533522Z'
+  support: supports
+  summary: Four completed required batch commands exited0; reviewer did not redundantly
+    rerun corpus gates.
+  snapshot_sha256: 07e2c865ebe0631473c42a0559d1ee5828246210a380a119ab2e8d5a78518aaf
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Use-defined secondary resource
+  outcome: supported
+  summary: Use-defined secondary resource is supported within the explicit limits.
+  details: The abstract expressly identifies primary steam-reformer catalyst from
+    a nearby fertilizer plant. This is distinct from vegetable-oil hydrogenation,
+    Pt petroleum reforming, fresh catalyst and elemental Ni. Table1 chemistry is a
+    reported sample formulation;16% NiO is not16% Ni. No constituent identifier or
+    criticality is inherited.
+  target_ids:
+  - cmmmech:spent-nickel-steam-reforming-catalyst
+  evidence_ids:
+  - owner
+  - original
+  - publisher
+- assessment_id: methods
+  area: evidence
+  topic: Material preparation and laboratory process
+  outcome: supported
+  summary: Material preparation and laboratory process is supported within the explicit
+    limits.
+  details: Original pellet dimensions,100g crushing,600°C6h coke removal and1-2mm
+    screening match page198. The batch uses5g and NaOH-dissolved EDTA at pH10-12;
+    comparison pH10 is explicit in results. AAS/UV-Vis394nm analysis, residue separation,
+    nitric acid, hot-water washing and80°C drying match the methods. No invented biomass,
+    control, replication or commercial deployment.
+  target_ids:
+  - cmmmech:spent-nickel-steam-reforming-catalyst
+  evidence_ids:
+  - owner
+  - original
+  dimensions:
+  - name: organism_biomass
+    value: None asserted
+    definition: EDTA extraction and acid treatment are abiotic.
+    evidence_ids:
+    - owner
+    - original
+  - name: material_form
+    value: Prepared spent nickel-oxide/alumina primary-reformer catalyst
+    definition: Natural service-derived waste is represented by this specific laboratory
+      feed, not every reforming formulation.
+    evidence_ids:
+    - original
+  - name: scale
+    value: Laboratory batch
+    definition: Industrial feed origin does not establish industrial operation of
+      the recovery procedure.
+    evidence_ids:
+    - original
+    - owner
+- assessment_id: outcomes
+  area: evidence
+  topic: Reported extraction and product scope
+  outcome: supported
+  summary: Reported extraction and product scope is supported within the explicit
+    limits.
+  details: The reported95% at1M,1:10g/mL,1-2mm,pH10,7h,400rpm,90°C is attributed to
+    abstract/results/conclusion and expressly not a reconciled mass-balance yield.
+    Nickel-bearing solution and EDTA recovery are separate endpoints. No isolated
+    metal, universal selectivity, closed-loop performance or independent economics
+    is claimed.
+  target_ids:
+  - cmmmech:spent-nickel-steam-reforming-catalyst
+  evidence_ids:
+  - owner
+  - original
+- assessment_id: contradictions
+  area: evidence
+  topic: Protocol, figure and chemical uncertainty
+  outcome: supported
+  summary: Protocol, figure and chemical uncertainty is supported within the explicit
+    limits.
+  details: The owner correctly retains4-6h versus7h/0-8h, acid-volume versus EDTA-molarity
+    headings,1:30 versus1:40 range, sulfuric/hydrochloric diagram versus nitric methods,
+    questionable printed Ni formula/complex charge/calibration and non-equivalent
+    plots. Independent visual review confirms different values at nominally shared
+    conditions in Figures2-4 and Figures4-5. No numerical digitization or corrected
+    reaction scheme was invented. The EDTA97-99% claim is explicitly limited by missing
+    cycle-resolved data.
+  target_ids:
+  - cmmmech:spent-nickel-steam-reforming-catalyst
+  evidence_ids:
+  - owner
+  - original
+- assessment_id: provenance
+  area: provenance
+  topic: Exact bytes and actual checks
+  outcome: supported
+  summary: Exact bytes and actual checks is supported within the explicit limits.
+  details: Native inspection captured the working-tree target/history/schema hashes
+    before detailed scientific assessment. The canonical CREATE matches current work;
+    named validation and completed batch receipts were independently verified. Working-tree
+    attestations do not claim committed bytes or completed hosted publication.
+  target_ids:
+  - cmmmech:spent-nickel-steam-reforming-catalyst
+  evidence_ids:
+  - owner
+  - history
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- The original paper has unreconciled figure/protocol/chemical and calibration inconsistencies;
+  the qualified record reports them rather than certifying the95% extraction figure.
+- No experiment replication, raw AAS/UV-Vis reanalysis, mass-balance reconstruction
+  or quantitative plot digitization performed.
+- No cycle-resolved EDTA reuse, isolated-metal characterization or independently established
+  economic/industrial outcome.
+- No unseen supplement or underlying dataset acquired. Goel2009 and later Oza work
+  are contextual leads, not newly accepted record evidence.
+- Correction searches are bounded and cannot establish absence of every later notice
+  or conflicting study.
+- Whole-corpus structured-review validation follows saving this append-only bundle.
+notes:
+- Start timestamp is the actual temporary review-target artifact creation time; finish
+  is actual completed assessment time.
+- Full primary artifacts were shared by the coordinator but independently inspected;
+  not every source was downloaded a second time.
+- No owner change required. Publication and fresh-clone provenance gates are outside
+  this scientific review.

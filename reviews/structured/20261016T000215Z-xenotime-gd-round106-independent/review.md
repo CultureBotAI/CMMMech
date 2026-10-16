@@ -1,0 +1,496 @@
+# Independent scientific review of Xenotime-(Gd)
+
+- Review: 20261016T000215Z-xenotime-gd-round106-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-15T23:55:26.140355Z
+- Finished UTC: 2026-10-16T00:02:15.458213Z
+- Reviewer: codex /root/round104_borates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of the distinct Gd-dominant natural mineral. Primary data support the careful measurement and geological distinctions; no supported corrective owner defect found.
+
+## Scope And Provenance
+
+Complete frozen xenotime-gd owner, identity, natural characterization, evidence boundaries and canonical/inline provenance. Broader source handoffs and later publication surfaces excluded.
+
+Selection: Assigned exact maintained record; native source capture preceded independent primary-source judgment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base af6cbead934deb4667764fa4a325246158ee4a0a.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:xenotime-gd | data/records/xenotime-gd.yaml | maintained | xenotime-gd |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:xenotime-gd | Checked 2 record(s); 0 failed. Actual execution 2026-10-15T23:55:54.034995+00:00 through 2026-10-15T23:55:59.830605+00:00. |
+| Actual final batch command 1 | passed | True | cmmmech:xenotime-gd | Coordinator execution 2026-10-15T23:54:53.209564+00:00 through 2026-10-16T00:01:28.015064+00:00; terminal receipt and log digest independently verified. |
+| Actual final batch command 2 | passed | True | cmmmech:xenotime-gd | Coordinator execution 2026-10-16T00:01:28.016065+00:00 through 2026-10-16T00:01:42.261926+00:00; terminal receipt and log digest independently verified. |
+| Actual final batch command 3 | passed | True | cmmmech:xenotime-gd | Coordinator execution 2026-10-16T00:01:42.262981+00:00 through 2026-10-16T00:01:50.361668+00:00; terminal receipt and log digest independently verified. |
+| Actual final batch command 4 | passed | True | cmmmech:xenotime-gd | Coordinator execution 2026-10-16T00:01:50.363315+00:00 through 2026-10-16T00:01:57.969789+00:00; terminal receipt and log digest independently verified. |
+
+## Scientific And Domain Assessments
+
+### Exact mineral identity and conceptual boundaries
+
+identity: supported. Targets: cmmmech:xenotime-gd.
+
+Xenotime-(Gd) is the approved Gd-dominant phosphate species with IMA2023-091. It is distinct from elemental gadolinium, mixed ores and its other structural polymorph. No jurisdiction/list/edition criticality claim is assigned.
+
+### Natural domains, specimen and composition
+
+evidence: supported. Targets: cmmmech:xenotime-gd.
+
+Domains up to 20 micrometres occur within xenotime-(Y); Figure 1 locates six points at or near the holotype FIB lamella. Table 2 mean 29.16 wt% Gd2O3 includes substantial Y and Dy. This is microscopic mixed mineral composition, not bulk ore grade or recovery yield.
+
+### Electron evidence versus calculated X-ray pattern
+
+evidence: supported. Targets: cmmmech:xenotime-gd.
+
+The 25-reflection HRTEM/FFT cell and weighted endmember estimate are separate results. Neither single-crystal nor powder XRD was measured; Table 3 is a calculated powder pattern. Density and refractive index are calculated. The maintained owner preserves these distinctions.
+
+### Corrected spectrum and unavailable CIF
+
+evidence: supported. Targets: cmmmech:xenotime-gd.
+
+The official 2026 corrigendum replaces Figure 4 because the black xenotime-(Y)/(Gd) traces were swapped. Corrected figure and complete publisher text were independently read. The authors retain text/interpretations. AMCSD 0021444 is reported but unacquired; the owner discloses that and asserts no verified atomic model.
+
+### Interpretation versus controlled microbial or processing evidence
+
+evidence: supported. Targets: cmmmech:xenotime-gd.
+
+The hydrothermal origin is a geological interpretation of natural material. No organism, biological control, extraction yield, recovered product, industrial deployment or controlled formation experiment is established. Omitted microbial_mechanisms is appropriate.
+
+### Frozen source, canonical history and actual checks
+
+provenance: supported. Targets: cmmmech:xenotime-gd.
+
+Native inspect captured exact base, owner, history, schema and paired dossier before source judgment. All remain byte-identical. Independent named and coordinator terminal final batch checks passed. Native save/check and exact-head publication review remain separate.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/xenotime-gd.yaml; Complete native-inspected current owner at /private/tmp/CMMMech-expansion-round106-20261015/data/records/xenotime-gd.yaml | supports | Exact identity, sample/measurement distinctions and evidence boundaries rechecked. |
+| history | history/records/xenotime-gd/2026-10-15T235147Z-codex-46ec8c.yaml; Complete canonical CREATE at /private/tmp/CMMMech-expansion-round106-20261015/history/records/xenotime-gd/2026-10-15T235147Z-codex-46ec8c.yaml | supports | Target and actual codex/GPT-6/codex metadata match; history predates this independent review and makes no claim of a completed review. |
+| primary | https://doi.org/10.1180/mgm.2024.62; Complete original, printed pp 613–622; all ten PDF pages and Tables 1–5/Figures 1–4 independently viewed. Methods/type lamella pp 614–615; six chemistry positions Figure 1 p 616 and Table 2 p 617; calculated powder pattern Table 3 p 617; HRTEM/FFT Figure 3 p 618 and measured/estimated cell comparison Table 4 p 619; original Figure 4 and spectral limitations p 620. Shared-acquisition original at /private/tmp/cmm-round106-ree-research/xenotime-gd2024.pdf | supports | Original primary observations support the qualified mineral-characterization record. Full text, figures and tables were independently inspected after native source capture. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Previously acquired official September 2026 PDF; definitions p 1 and Xenotime-(Gd) row p236 independently viewed. Actual artifact /private/tmp/cmm-round106-ree-research/ima-reused-2026-09.pdf | supports | Current dated authority lists Gd(PO4), approved status A, IMA2023-091 and Slovakia. |
+| correction | https://doi.org/10.1180/mgm.2025.10190; Fresh official publisher full correction page opened during independent review; raw returned page in /private/tmp/cmm-round106-ree-independent/correction-response.json. Complete correction text and corrected Figure 4 inspected. | supports | Online 13 January 2026, volume 90(1):196–197. The black Y/Gd spectra were interchanged; authors retain text/interpretations. DOI 2025 segment is not the publication year. |
+| figure | https://doi.org/10.1180/mgm.2025.10190; Corrected publisher Figure 4, actual local PNG /private/tmp/cmm-round106-ree-research/xenotime-gd2026-corrected-figure.png | supports | Corrected black traces compared visually against original Figure 4; no extra quantitative band claims imported. |
+| metadata | https://api.crossref.org/works/10.1180/mgm.2025.10190; Curator-acquired original and correction metadata independently read; correction JSON /private/tmp/cmm-round106-ree-research/xenotime-gd2026-correction-crossref.json | context_only | Publication metadata support 2026 correction. Empty relation/update-to fields in the original did not expose the real corrigendum; those fields cannot establish absence. |
+| dossier | research/sources/round106-ree/20261015T235305Z-source-investigation.json; Native-inspected paired JSON/Markdown source dossier; only this owner and its provenance assessed. | context_only | Shared acquisition is disclosed. Unrelated deferred microbial/florencite leads are outside this record review. |
+| search | /private/tmp/cmm-round106-ree-independent/search-response.json; Three exact independent DOI notice queries retained as raw provider responses. | context_only | Known xenotime corrigendum verified; no additional affecting notice identified in these bounded returned sets. |
+| dedup | /private/tmp/cmm-round106-ree-independent/dedup.json; Actual command, scope and complete returned path list retained. | context_only | Only current owners/histories and paired source dossier matched; no second maintained Gd-monazite or Gd-xenotime owner found in searched directories. |
+| named | /private/tmp/cmm-round106-ree-independent/named-validation.json; Actual independent subprocess command,times,stdout,zero exit and exact owner hashes. | supports | Two records checked; zero failed. |
+| baseline | /private/tmp/cmm-round106-baseline.json; Actual coordinator terminal baseline receipt; log digest independently verified: 93775e3fb44f0e40fac3ab9adc5f67b107db4d6c1143b1a4b591eabf1d361919 | context_only | Baseline passed before curation; this is context, not final-state verification. |
+| batch | /private/tmp/cmm-round106-final-gates.json; Actual terminal coordinator receipt, exact base/worktree/owner inputs and log SHA256 a9a6a4518415a7cf09b170ec21c25ac7ee9e242aac5be1196a4eac7ec00904a2 independently verified. | supports | All four required final batch commands passed with unchanged record inputs. Later native persistence/hosted publication remain separate. |
+
+## Limits And Additional Notes
+
+- The published CIF AMCSD 0021444 was not acquired; neither its model nor raw structure data are independently verified here. The owner explicitly discloses this limitation.
+- Raman photoluminescence limits spectral interpretation. Original Figure 4 must be read with the 2026 correction; no extra band-level inference was added.
+- Natural characterization establishes no microbial mechanism, extraction or recovery yield, industrial deployment or criticality.
+- Shared-source acquisition and bounded correction/dedup searches are disclosed; this is not an exhaustive notice or supplement inventory.
+- Structural validation does not certify scientific truth. Native saved-review checking, exact committed-head review and hosted publication are separate later gates.
+- Actual UTC start is completion of native source capture, before independent scientific judgment. Full original and all its figures/tables, and the relevant IMA row were independently inspected.
+- No maintained owner or history edit was required. Already-qualified scientific/source limitations are not corrective findings.
+- Copyrighted raw originals and figures remain external; only their provenance, hashes and claim-level assessment are included.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+kind: record
+repository: CultureBotAI/CMMMech
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+review_id: 20261016T000215Z-xenotime-gd-round106-independent
+title: Independent scientific review of Xenotime-(Gd)
+started_at: '2026-10-15T23:55:26.140355Z'
+finished_at: '2026-10-16T00:02:15.458213Z'
+reviewer:
+  identity: codex /root/round104_borates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_ree; no edits to
+    this owner/history/dossier. Reviewer authored unrelated pinnoite/veatchite. Shared
+    acquisition is disclosed; primary originals, figures/tables and dated authority
+    were independently read after native target capture.
+source:
+  git_revision: af6cbead934deb4667764fa4a325246158ee4a0a
+  state: working_tree
+  inputs:
+  - path: data/records/xenotime-gd.yaml
+    sha256: 94ea0b1119f49bf293fb2a7ce65872a58aa0cf5c046202cdb209b66e710c79e4
+    role: target
+  - path: history/records/xenotime-gd/2026-10-15T235147Z-codex-46ec8c.yaml
+    sha256: 84c7ae676ce2f7950e59086d517e617edec78072ef060a4800056eef4bdb935c
+    role: context
+  - path: research/sources/round106-ree/20261015T235305Z-source-investigation.json
+    sha256: d105d0baca618cec3675775acb2325bb31ad1b8a59a3ec31776851579739e4fe
+    role: context
+  - path: research/sources/round106-ree/20261015T235305Z-source-investigation.md
+    sha256: b03c3e08af6e676302425e0b153fd53bf8f76c4d28f5e0c5d7bb27bd1bed8d62
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:xenotime-gd
+  path: data/records/xenotime-gd.yaml
+  label: xenotime-gd
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/xenotime-gd.yaml
+    role: maintained_scientific_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/xenotime-gd/2026-10-15T235147Z-codex-46ec8c.yaml
+    role: canonical_history
+scope:
+  description: Complete frozen xenotime-gd owner, identity, natural characterization,
+    evidence boundaries and canonical/inline provenance. Broader source handoffs and
+    later publication surfaces excluded.
+  selection: Assigned exact maintained record; native source capture preceded independent
+    primary-source judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:xenotime-gd
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/xenotime-gd.yaml
+  locator: Complete native-inspected current owner at /private/tmp/CMMMech-expansion-round106-20261015/data/records/xenotime-gd.yaml
+  accessed_at: '2026-10-16T00:02:15.458213Z'
+  support: supports
+  summary: Exact identity, sample/measurement distinctions and evidence boundaries
+    rechecked.
+  snapshot_sha256: 94ea0b1119f49bf293fb2a7ce65872a58aa0cf5c046202cdb209b66e710c79e4
+- evidence_id: history
+  kind: record_content
+  reference: history/records/xenotime-gd/2026-10-15T235147Z-codex-46ec8c.yaml
+  locator: Complete canonical CREATE at /private/tmp/CMMMech-expansion-round106-20261015/history/records/xenotime-gd/2026-10-15T235147Z-codex-46ec8c.yaml
+  accessed_at: '2026-10-16T00:02:15.458213Z'
+  support: supports
+  summary: Target and actual codex/GPT-6/codex metadata match; history predates this
+    independent review and makes no claim of a completed review.
+  snapshot_sha256: 84c7ae676ce2f7950e59086d517e617edec78072ef060a4800056eef4bdb935c
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1180/mgm.2024.62
+  locator: Complete original, printed pp 613–622; all ten PDF pages and Tables 1–5/Figures
+    1–4 independently viewed. Methods/type lamella pp 614–615; six chemistry positions
+    Figure 1 p 616 and Table 2 p 617; calculated powder pattern Table 3 p 617; HRTEM/FFT
+    Figure 3 p 618 and measured/estimated cell comparison Table 4 p 619; original
+    Figure 4 and spectral limitations p 620. Shared-acquisition original at /private/tmp/cmm-round106-ree-research/xenotime-gd2024.pdf
+  accessed_at: '2026-10-16T00:02:15.458213Z'
+  support: supports
+  summary: Original primary observations support the qualified mineral-characterization
+    record. Full text, figures and tables were independently inspected after native
+    source capture.
+  snapshot_sha256: b756f189b3adcc188ade75eabc83b93192e5268763b3c22aab74e610e0e31dfe
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Previously acquired official September 2026 PDF; definitions p 1 and Xenotime-(Gd)
+    row p236 independently viewed. Actual artifact /private/tmp/cmm-round106-ree-research/ima-reused-2026-09.pdf
+  accessed_at: '2026-10-16T00:02:15.458213Z'
+  support: supports
+  summary: Current dated authority lists Gd(PO4), approved status A, IMA2023-091 and
+    Slovakia.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: correction
+  kind: primary_source
+  reference: https://doi.org/10.1180/mgm.2025.10190
+  locator: Fresh official publisher full correction page opened during independent
+    review; raw returned page in /private/tmp/cmm-round106-ree-independent/correction-response.json.
+    Complete correction text and corrected Figure 4 inspected.
+  accessed_at: '2026-10-16T00:02:15.458213Z'
+  support: supports
+  summary: Online 13 January 2026, volume 90(1):196–197. The black Y/Gd spectra were
+    interchanged; authors retain text/interpretations. DOI 2025 segment is not the
+    publication year.
+  snapshot_sha256: 61f56202a98dab8351b6c74de456acb6497bbb095d8ee55e2c75d79b10877739
+- evidence_id: figure
+  kind: primary_source
+  reference: https://doi.org/10.1180/mgm.2025.10190
+  locator: Corrected publisher Figure 4, actual local PNG /private/tmp/cmm-round106-ree-research/xenotime-gd2026-corrected-figure.png
+  accessed_at: '2026-10-16T00:02:15.458213Z'
+  support: supports
+  summary: Corrected black traces compared visually against original Figure 4; no
+    extra quantitative band claims imported.
+  snapshot_sha256: 4ffe92aef40bc0fd2d1d23edb4e711e03cb77d11220b4dde32005634ea745c49
+- evidence_id: metadata
+  kind: authority
+  reference: https://api.crossref.org/works/10.1180/mgm.2025.10190
+  locator: Curator-acquired original and correction metadata independently read; correction
+    JSON /private/tmp/cmm-round106-ree-research/xenotime-gd2026-correction-crossref.json
+  accessed_at: '2026-10-16T00:02:15.458213Z'
+  support: context_only
+  summary: Publication metadata support 2026 correction. Empty relation/update-to
+    fields in the original did not expose the real corrigendum; those fields cannot
+    establish absence.
+  snapshot_sha256: af40db24966f8016b22642b90e2a05d7d503c0851463094f378b11eb2af49535
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round106-ree/20261015T235305Z-source-investigation.json
+  locator: Native-inspected paired JSON/Markdown source dossier; only this owner and
+    its provenance assessed.
+  accessed_at: '2026-10-16T00:02:15.458213Z'
+  support: context_only
+  summary: Shared acquisition is disclosed. Unrelated deferred microbial/florencite
+    leads are outside this record review.
+  snapshot_sha256: d105d0baca618cec3675775acb2325bb31ad1b8a59a3ec31776851579739e4fe
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round106-ree-independent/search-response.json
+  locator: Three exact independent DOI notice queries retained as raw provider responses.
+  accessed_at: '2026-10-16T00:02:15.458213Z'
+  support: context_only
+  summary: Known xenotime corrigendum verified; no additional affecting notice identified
+    in these bounded returned sets.
+  snapshot_sha256: 5b5df3c5795ceb6405cadcae49a8746c17ea81f10fb737414b3e850782cc1130
+  search_scope: 'Exact queries: "10.1180/mgm.2023.37" correction corrigendum retraction;
+    "10.1180/mgm.2024.62" correction corrigendum; "10.1180/mgm.2025.10190". First
+    returned web result sets inspected on 2026-10-15. Not exhaustive; snippets are
+    not scientific support.'
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round106-ree-independent/dedup.json
+  locator: Actual command, scope and complete returned path list retained.
+  accessed_at: '2026-10-16T00:02:15.458213Z'
+  support: context_only
+  summary: Only current owners/histories and paired source dossier matched; no second
+    maintained Gd-monazite or Gd-xenotime owner found in searched directories.
+  snapshot_sha256: 5ae3a0a9da21bf0e02f97023c48bcf9a5e34442c3d4d8d940066a46e0d8ff852
+  search_scope: Bounded round106 WT records/research/reviews/history search using
+    rg --no-ignore --hidden --follow and exact names, IMA IDs and DOIs. Includes ignored
+    files and relevant symlinks; excludes binary extraction and whole-machine/original-main
+    rescan. Curator broader precreation dedup remains separate.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round106-ree-independent/named-validation.json
+  locator: Actual independent subprocess command,times,stdout,zero exit and exact
+    owner hashes.
+  accessed_at: '2026-10-16T00:02:15.458213Z'
+  support: supports
+  summary: Two records checked; zero failed.
+  snapshot_sha256: cf86e262396c87d557d0f48ab51b344d887e3656da69e565561e40fd1cc8a1ba
+- evidence_id: baseline
+  kind: validation
+  reference: /private/tmp/cmm-round106-baseline.json
+  locator: 'Actual coordinator terminal baseline receipt; log digest independently
+    verified: 93775e3fb44f0e40fac3ab9adc5f67b107db4d6c1143b1a4b591eabf1d361919'
+  accessed_at: '2026-10-16T00:02:15.458213Z'
+  support: context_only
+  summary: Baseline passed before curation; this is context, not final-state verification.
+  snapshot_sha256: 695ab49285bb17b69eb139b58719f071347cc56d785a4eb02d772f709bf9092f
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round106-final-gates.json
+  locator: Actual terminal coordinator receipt, exact base/worktree/owner inputs and
+    log SHA256 a9a6a4518415a7cf09b170ec21c25ac7ee9e242aac5be1196a4eac7ec00904a2 independently
+    verified.
+  accessed_at: '2026-10-16T00:02:15.458213Z'
+  support: supports
+  summary: All four required final batch commands passed with unchanged record inputs.
+    Later native persistence/hosted publication remain separate.
+  snapshot_sha256: 07e2c865ebe0631473c42a0559d1ee5828246210a380a119ab2e8d5a78518aaf
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/monazite-gd.yaml data/records/xenotime-gd.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Checked 2 record(s); 0 failed. Actual execution 2026-10-15T23:55:54.034995+00:00
+    through 2026-10-15T23:55:59.830605+00:00.
+  target_ids:
+  - cmmmech:xenotime-gd
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Actual final batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-15T23:54:53.209564+00:00 through 2026-10-16T00:01:28.015064+00:00;
+    terminal receipt and log digest independently verified.
+  target_ids:
+  - cmmmech:xenotime-gd
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Actual final batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T00:01:28.016065+00:00 through 2026-10-16T00:01:42.261926+00:00;
+    terminal receipt and log digest independently verified.
+  target_ids:
+  - cmmmech:xenotime-gd
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Actual final batch command 3
+  command: uv run --locked cmmmech validate-history --base af6cbead934deb4667764fa4a325246158ee4a0a
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T00:01:42.262981+00:00 through 2026-10-16T00:01:50.361668+00:00;
+    terminal receipt and log digest independently verified.
+  target_ids:
+  - cmmmech:xenotime-gd
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Actual final batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T00:01:50.363315+00:00 through 2026-10-16T00:01:57.969789+00:00;
+    terminal receipt and log digest independently verified.
+  target_ids:
+  - cmmmech:xenotime-gd
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+summary: Qualified acceptance of the distinct Gd-dominant natural mineral. Primary
+  data support the careful measurement and geological distinctions; no supported corrective
+  owner defect found.
+limitations:
+- The published CIF AMCSD 0021444 was not acquired; neither its model nor raw structure
+  data are independently verified here. The owner explicitly discloses this limitation.
+- Raman photoluminescence limits spectral interpretation. Original Figure 4 must be
+  read with the 2026 correction; no extra band-level inference was added.
+- Natural characterization establishes no microbial mechanism, extraction or recovery
+  yield, industrial deployment or criticality.
+- Shared-source acquisition and bounded correction/dedup searches are disclosed; this
+  is not an exhaustive notice or supplement inventory.
+- Structural validation does not certify scientific truth. Native saved-review checking,
+  exact committed-head review and hosted publication are separate later gates.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Exact mineral identity and conceptual boundaries
+  outcome: supported
+  summary: Xenotime-(Gd) is the approved Gd-dominant phosphate species with IMA2023-091.
+    It is distinct from elemental gadolinium, mixed ores and its other structural
+    polymorph. No jurisdiction/list/edition criticality claim is assigned.
+  target_ids:
+  - cmmmech:xenotime-gd
+  evidence_ids:
+  - record
+  - primary
+  - ima
+- assessment_id: sample
+  area: evidence
+  topic: Natural domains, specimen and composition
+  outcome: supported
+  summary: Domains up to 20 micrometres occur within xenotime-(Y); Figure 1 locates
+    six points at or near the holotype FIB lamella. Table 2 mean 29.16 wt% Gd2O3 includes
+    substantial Y and Dy. This is microscopic mixed mineral composition, not bulk
+    ore grade or recovery yield.
+  target_ids:
+  - cmmmech:xenotime-gd
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: cell
+  area: evidence
+  topic: Electron evidence versus calculated X-ray pattern
+  outcome: supported
+  summary: The 25-reflection HRTEM/FFT cell and weighted endmember estimate are separate
+    results. Neither single-crystal nor powder XRD was measured; Table 3 is a calculated
+    powder pattern. Density and refractive index are calculated. The maintained owner
+    preserves these distinctions.
+  target_ids:
+  - cmmmech:xenotime-gd
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: correction
+  area: evidence
+  topic: Corrected spectrum and unavailable CIF
+  outcome: supported
+  summary: The official 2026 corrigendum replaces Figure 4 because the black xenotime-(Y)/(Gd)
+    traces were swapped. Corrected figure and complete publisher text were independently
+    read. The authors retain text/interpretations. AMCSD 0021444 is reported but unacquired;
+    the owner discloses that and asserts no verified atomic model.
+  target_ids:
+  - cmmmech:xenotime-gd
+  evidence_ids:
+  - record
+  - primary
+  - correction
+  - figure
+- assessment_id: mechanism
+  area: evidence
+  topic: Interpretation versus controlled microbial or processing evidence
+  outcome: supported
+  summary: The hydrothermal origin is a geological interpretation of natural material.
+    No organism, biological control, extraction yield, recovered product, industrial
+    deployment or controlled formation experiment is established. Omitted microbial_mechanisms
+    is appropriate.
+  target_ids:
+  - cmmmech:xenotime-gd
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen source, canonical history and actual checks
+  outcome: supported
+  summary: Native inspect captured exact base, owner, history, schema and paired dossier
+    before source judgment. All remain byte-identical. Independent named and coordinator
+    terminal final batch checks passed. Native save/check and exact-head publication
+    review remain separate.
+  target_ids:
+  - cmmmech:xenotime-gd
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - dedup
+findings: []
+actions: []
+notes:
+- Actual UTC start is completion of native source capture, before independent scientific
+  judgment. Full original and all its figures/tables, and the relevant IMA row were
+  independently inspected.
+- No maintained owner or history edit was required. Already-qualified scientific/source
+  limitations are not corrective findings.
+- Copyrighted raw originals and figures remain external; only their provenance, hashes
+  and claim-level assessment are included.
+```
