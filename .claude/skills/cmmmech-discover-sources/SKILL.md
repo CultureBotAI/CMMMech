@@ -29,6 +29,15 @@ For local downloads, start with paths cited by existing reports and the task's
 download directory; expand only when needed. State that boundary rather than
 scanning unrelated home/temp trees or claiming machine-wide absence.
 
+Keep committed search evidence bounded: record the exact query, searched roots,
+hidden/ignored and symlink handling, match counts, meaningful identity matches,
+and the path plus checksum of the complete raw output. Store full inventories
+and recursive match output outside Git or in a documented ignored location;
+do not embed them into later reports that will themselves be searched. Before
+publication, inspect report sizes and remove accidental raw-output duplication
+from new drafts. Preserve accepted reports and their review hashes; historical
+migration requires an explicit provenance-preserving successor, not replacement.
+
 Use the user's materials, mechanisms, jurisdictions, date range and desired
 source type. If unspecified, start a bounded survey across source roles and
 record the chosen coverage. Do not require criticality-list membership before

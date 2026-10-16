@@ -1,0 +1,545 @@
+# Independent scientific review of aluminium salt slag
+
+- Review: 20261016T061101Z-aluminium-salt-slag-round113-final
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-16T06:06:11.966416Z
+- Finished UTC: 2026-10-16T06:11:01.272334Z
+- Reviewer: codex /root/round104_uranium (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The corrected salt-slag record is defensible for laboratory water leaching and recovery of impure mixed salt crystals. The source-reported scaled solids/elemental balance is now retained distinctly from chloride removal and unproven industrial throughput. The initial minor mass-balance-scope finding is resolved; source conflicts and analytical/deployment limits remain explicit.
+
+## Scope And Provenance
+
+Complete assessment of one assigned maintained resource owner against original scientific text, figures/tables, source limits, identity boundary, actual history and completed structural gates.
+
+Selection: One of two root-authored resource owners explicitly assigned to this independent reviewer; separate native bundle per owner.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ebff7bf980911e7be86bf19d865aeeca8450781.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:aluminium-salt-slag | data/records/aluminium-salt-slag.yaml | maintained | aluminium-salt-slag |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named validation of both resource owners | passed | True | cmmmech:aluminium-salt-slag | Checked 2 record(s); 0 failed. |
+| Coordinator final batch command 1 | passed | True | cmmmech:aluminium-salt-slag | Terminal receipt independently bound to exact command, worktree/base, retained log hash and current owner hash; exit0. |
+| Coordinator final batch command 2 | passed | True | cmmmech:aluminium-salt-slag | Terminal receipt independently bound to exact command, worktree/base, retained log hash and current owner hash; exit0. |
+| Coordinator final batch command 3 | passed | True | cmmmech:aluminium-salt-slag | Terminal receipt independently bound to exact command, worktree/base, retained log hash and current owner hash; exit0. |
+| Coordinator final batch command 4 | passed | True | cmmmech:aluminium-salt-slag | Terminal receipt independently bound to exact command, worktree/base, retained log hash and current owner hash; exit0. |
+
+## Scientific And Domain Assessments
+
+### Source-defined remelting resource and specimen boundary
+
+identity: supported. Targets: cmmmech:aluminium-salt-slag.
+
+The record represents an actual mixed salt-flux remelting resource, not a pure mineral or elemental aluminium.
+
+A481kg batch came from a rotary-furnace14tonne charge of manufacturing/EOL scrap and primary dross with3:1NaCl/KCl flux. The existing secondary-aluminium-dross owner uses a different source-defined post-recovery specimen and experimental treatment; the current distinction is not a universal claim that all terminology is disjoint. No jurisdiction/list/edition criticality claim is inherited.
+
+### Feed preparation, experiment and source conflicts
+
+consistency: supported. Targets: cmmmech:aluminium-salt-slag.
+
+Laboratory conditions and the actual selected treatment are correctly separated from the furnace batch.
+
+Four-day cooling, below19mm crushing then below2.8mm roller or0.5mm ball milling are source methods. Lab70-160g aliquots at25 C,55rpm,20/30/40wt%solids,initialpH6.9-7 andtwo-hour sampling are supported. Duplicate tests and72combinations are distinguished. Selected tap water,below2.8mm,30wt%,90min is not an entire481kg treatment. Evaporation85 C24h text versus50 C24h Figure3 is retained. No organism, biomass or taxon CURIE applies.
+
+### Chloride removal, composition and yield denominators
+
+evidence: supported. Targets: cmmmech:aluminium-salt-slag.
+
+The record distinguishes measured leachate removal, product composition and reported scaled recovery.
+
+Figure5b/p9 supports91.2percentchloride removal at90min and92.2percentat120min. Greater-than92percent abstract/conclusion language is not assigned to the selected90min arm. Equation1 uses normalized leachate/head chloride. Table5K/Na/Cl8.78/28.84/51.92wt% in salts and.24/.78/1.41wt% in residue are compositions, not yields; ED-XRF95.6percent salts differs from titration/FAASroughly90percent. Coarse19mm40wt% unagitatable feed is retained as contrary operational evidence.
+
+### Reported balance and corrected limitation
+
+evidence: supported. Targets: cmmmech:aluminium-salt-slag.
+
+The exact initial omission is resolved in the current owner with bounded source-supported accounting.
+
+The new support entry and narrowed description retain Figure12 scaled solids and elemental accounting without implying a full-batch production trial. Reported overall92percent salt recovery is distinct from the90min91.2percentchloride metric. Complete direct gas/water balances and tested remelting reuse remain absent from this study; its proposed flowsheet includes recommendations rather than validated industrial operation.
+
+### Assay and phase limits
+
+evidence: supported. Targets: cmmmech:aluminium-salt-slag.
+
+Phase assignments and elemental percentages are not promoted beyond the analytical evidence.
+
+ED-XRF highAl values omitoxygen and cannot establish metallicAl fractions. NaCl/KCl diffraction does not imply absolute purity or no hydrolyzable/gas-generating constituents; source approximate5percentXRD detection limit and no direct gas balance matter. Table3zeroK is non-detection alongside Table5.24percent by another method. Recovered solids contain impurities; no product remelting test was performed.
+
+### Exact working bytes, actual history and completed checks
+
+provenance: supported. Targets: cmmmech:aluminium-salt-slag.
+
+The final review binds exact owner/history/dossier/schema inputs and terminal validation evidence.
+
+Actual GPT-6/codex CREATE provenance and, for salt, separate EDIT provenance linked to issue480 are retained. Reviewer authored unrelated billietite/compreignacite and did not edit these resource owners. Independent named validation and four coordinator batch commands are checked against exact base/worktree/current hashes and retained log; structural gates do not certify all corpus science.
+
+## Findings
+
+### mass-balance-scope: Mass-balance limitation omits the reported scaled solids accounting
+
+minor / resolved / confirmed; issue key: aluminium-salt-slag-mass-balance-scope.
+
+The earlier omission is corrected: current description and the new Section4/Figure12 support entry retain the reported scaled solids/elemental accounting while limiting absent evidence to direct gas/water balance, industrial throughput and tested flux reuse.
+
+Disposition: Independently rechecked original Section4/Figure12 against corrected SHA 8fc49588185fcef70443b6ca49820470ea5cb3020e277bad21e634e646441e83. The exact481→116.4+364.6kg accounting and distinct91.2percentchloride/92percentreportedoverall salt metrics are retained, with an actual EDIT history. Named and final batch gates passed; initial review remains immutable.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/aluminium-salt-slag.yaml; Exact complete current maintained owner captured with schema, linked histories and frozen source dossier. | supports | Current bytes were independently inspected; an earlier draft or generated page is not substituted. |
+| provenance | research/ingests/round113-resources-20261016.json; Paired source dossier, original acquisition receipt and the exact linked canonical histories. | supports | Root authored both resource records. Original acquisition status and hashes, source limitations and separate inline/canonical provenance are retained. The JSON dossier retains original curation context; final inspection and this review bind corrected current owner bytes. |
+| notices | /private/tmp/cmm-round113-uranium-research/resource-review-web.txt; Three bounded exact DOI/title correction, erratum and retraction queries; current Crossref metadata for the salt article and returned original/later primary literature. | context_only | No relevant correction or retraction surfaced in those results; this is not an exhaustive absence claim. The salt DOI resolves to the matching article. No DOI is invented for HFC2007. Later literature interpreting the ambiguous HFC stoichiometry does not replace the original method. |
+| dedup | /private/tmp/cmm-round113-uranium-research/resource-review-dedup.json; rg --no-ignore --hidden --follow across maintained record/research/review/history roots, original-main ignored reports and relevant cited resource raw roots. | context_only | Fifty-two matching paths were retained externally. The assigned owners are the only matching dedicated owner paths in this bounded search; existing secondary aluminium dross was separately read for its specimen and treatment boundary. This is not a machine-wide absence claim. |
+| named | /private/tmp/cmm-round113-uranium-research/resource-review-final-named-validation.json; Actual independent validation of exactly both current resource owners; command, worktree, base, times and current owner hashes checked. | supports | Checked 2 record(s); 0 failed. Structural validity does not prove source claims. |
+| batch | /private/tmp/cmm-round113-final-gates.json; Actual completed four-command batch; exact base/worktree, command arrays, zero exits, unchanged record inputs and retained log digest independently checked. | supports | These are structural/provenance gates, not a fresh scientific review of all records. Terminal completed receipt and retained log verified: 317 passed, 3 skipped in 256.48s (0:04:16); Checked 578 record(s); 0 failed.; Checked 578 record(s); 0 failed.; pages/ is current |
+| primary | https://doi.org/10.3390/min12091141; Complete published fifteen-page Minerals12(9):1141 article (2022); Sections2-5, Tables1-5, Figures1-12. Full scientific text read; original pages3-13 visually checked, including page13 Section4/Figure12. | supports | The original methods, figures and analytical tables support source-specific water leaching and impure recovered salt crystals, while internal temperature and performance summaries conflict. |
+| balance | https://doi.org/10.3390/min12091141; Original page13 Section4 and Figure12, directly re-inspected after correction. | supports | The scaled481kg balance gives116.4kg recovered salt plus364.6kg residue,24.2percent dissolved. Reported90percent purity and92percent overall salt recovery rely on titration/FAAS; maximum closure error+0.15percentK differs from roughly-8percentK with ED-XRF. The4.3:1NaCl:KCl ratio motivates proposed KCl addition, not tested reuse. |
+| previous | reviews/structured/20261016T060327Z-aluminium-salt-slag-round113-initial/review.yaml; Immutable initial minor finding mass-balance-scope; issue_key aluminium-salt-slag-mass-balance-scope. | context_only | Initial generic incomplete-process-balance wording omitted reported scaled solids accounting. Root corrected the maintained owner and appended EDIT history under issue480; the initial observation remains unchanged. |
+
+## Limits And Additional Notes
+
+- The paper conflicts on evaporation temperature and summarizes greater-than92percent removal without matching the selected90minute arm; neither discrepancy is silently reconciled.
+- Scaled solids/elemental accounting is source-reported; this review did not independently reproduce it or demonstrate a481kg treatment, direct gas/water balance or product remelting reuse.
+- ED-XRF and titration/FAAS estimates differ; XRD non-detection and oxygen-excludingAl percentages do not establish absolute purity, metallic aluminium recovery or absence of gas-generating phases.
+- The separately acquired2026salt paper was not independently assessed/adopted for this owner. Source issue479 concerns future evidence expansion, not an unresolved current curator defect.
+- Bounded source/notice and hidden/ignored-inclusive duplicate searches are not exhaustive.
+- No resource owner or canonical history edits were made by this reviewer. No fresh scientific review of other corpus owners is claimed.
+- Initial captures are retained. The final input inspection includes the source-dossier Markdown update accompanying the salt correction; unchanged primary acquisition bytes are separately hash-verified.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261016T061101Z-aluminium-salt-slag-round113-final
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of aluminium salt slag
+started_at: '2026-10-16T06:06:11.966416Z'
+finished_at: '2026-10-16T06:11:01.272334Z'
+reviewer:
+  identity: codex /root/round104_uranium
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored this resource owner/history/dossier; reviewer
+    authored unrelated billietite/compreignacite. Reviewer independently inspected
+    current bytes and original primary evidence; resource corrections were made by
+    root, not this reviewer.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The corrected salt-slag record is defensible for laboratory water leaching
+  and recovery of impure mixed salt crystals. The source-reported scaled solids/elemental
+  balance is now retained distinctly from chloride removal and unproven industrial
+  throughput. The initial minor mass-balance-scope finding is resolved; source conflicts
+  and analytical/deployment limits remain explicit.
+source:
+  git_revision: 9ebff7bf980911e7be86bf19d865aeeca8450781
+  state: working_tree
+  inputs:
+  - path: data/records/aluminium-salt-slag.yaml
+    sha256: 8fc49588185fcef70443b6ca49820470ea5cb3020e277bad21e634e646441e83
+    role: target
+  - path: history/records/aluminium-salt-slag/2026-10-16T055723Z-codex-8110f0.yaml
+    sha256: 6ee93ae46bad57fbc4b4b358fc46c1d792dd45ea8a6511cc331c4439938d2173
+    role: context
+  - path: history/records/aluminium-salt-slag/2026-10-16T060525Z-codex-6eef61.yaml
+    sha256: cd2cfa19c348f1f8972223f77c2349bcf6306ae30f4b2c868ea5f3810496a5a1
+    role: context
+  - path: research/ingests/round113-resources-20261016.json
+    sha256: 8c3557a2c0a8a79cbb286f0e06905c6e4a1191f2b0f1b7ff7b3948fffdc5e72d
+    role: context
+  - path: research/ingests/round113-resources-20261016.md
+    sha256: 2beebf260476097c5f36fd4b448d85a10bcfad1bceb2a17c9ce51499e2b58f5d
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:aluminium-salt-slag
+  path: data/records/aluminium-salt-slag.yaml
+  label: aluminium-salt-slag
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/aluminium-salt-slag.yaml
+    role: maintained
+scope:
+  description: Complete assessment of one assigned maintained resource owner against
+    original scientific text, figures/tables, source limits, identity boundary, actual
+    history and completed structural gates.
+  selection: One of two root-authored resource owners explicitly assigned to this
+    independent reviewer; separate native bundle per owner.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:aluminium-salt-slag
+checks:
+- check_id: named
+  name: Independent named validation of both resource owners
+  status: passed
+  required: true
+  summary: Checked 2 record(s); 0 failed.
+  target_ids:
+  - cmmmech:aluminium-salt-slag
+  command: uv run --locked cmmmech validate data/records/zinc-purification-hot-filter-cake.yaml
+    data/records/aluminium-salt-slag.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Coordinator final batch command 1
+  status: passed
+  required: true
+  summary: Terminal receipt independently bound to exact command, worktree/base, retained
+    log hash and current owner hash; exit0.
+  target_ids:
+  - cmmmech:aluminium-salt-slag
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Coordinator final batch command 2
+  status: passed
+  required: true
+  summary: Terminal receipt independently bound to exact command, worktree/base, retained
+    log hash and current owner hash; exit0.
+  target_ids:
+  - cmmmech:aluminium-salt-slag
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Coordinator final batch command 3
+  status: passed
+  required: true
+  summary: Terminal receipt independently bound to exact command, worktree/base, retained
+    log hash and current owner hash; exit0.
+  target_ids:
+  - cmmmech:aluminium-salt-slag
+  command: uv run --locked cmmmech validate-history --base 9ebff7bf980911e7be86bf19d865aeeca8450781
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Coordinator final batch command 4
+  status: passed
+  required: true
+  summary: Terminal receipt independently bound to exact command, worktree/base, retained
+    log hash and current owner hash; exit0.
+  target_ids:
+  - cmmmech:aluminium-salt-slag
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/aluminium-salt-slag.yaml
+  locator: Exact complete current maintained owner captured with schema, linked histories
+    and frozen source dossier.
+  summary: Current bytes were independently inspected; an earlier draft or generated
+    page is not substituted.
+  accessed_at: '2026-10-16T06:11:01.272334Z'
+  support: supports
+  snapshot_sha256: 8fc49588185fcef70443b6ca49820470ea5cb3020e277bad21e634e646441e83
+- evidence_id: provenance
+  kind: record_content
+  reference: research/ingests/round113-resources-20261016.json
+  locator: Paired source dossier, original acquisition receipt and the exact linked
+    canonical histories.
+  summary: Root authored both resource records. Original acquisition status and hashes,
+    source limitations and separate inline/canonical provenance are retained. The
+    JSON dossier retains original curation context; final inspection and this review
+    bind corrected current owner bytes.
+  accessed_at: '2026-10-16T06:11:01.272334Z'
+  support: supports
+  snapshot_sha256: 8c3557a2c0a8a79cbb286f0e06905c6e4a1191f2b0f1b7ff7b3948fffdc5e72d
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round113-uranium-research/resource-review-web.txt
+  locator: Three bounded exact DOI/title correction, erratum and retraction queries;
+    current Crossref metadata for the salt article and returned original/later primary
+    literature.
+  summary: No relevant correction or retraction surfaced in those results; this is
+    not an exhaustive absence claim. The salt DOI resolves to the matching article.
+    No DOI is invented for HFC2007. Later literature interpreting the ambiguous HFC
+    stoichiometry does not replace the original method.
+  accessed_at: '2026-10-16T06:11:01.272334Z'
+  support: context_only
+  snapshot_sha256: 53c2b26e036b04f9904f4d831027b9d4c36f025887eae69897933575bbb07b9c
+  search_scope: Three bounded exact DOI/title correction, erratum and retraction queries;
+    current Crossref metadata for the salt article and returned original/later primary
+    literature. No relevant correction or retraction surfaced in those results; this
+    is not an exhaustive absence claim. The salt DOI resolves to the matching article.
+    No DOI is invented for HFC2007. Later literature interpreting the ambiguous HFC
+    stoichiometry does not replace the original method.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round113-uranium-research/resource-review-dedup.json
+  locator: rg --no-ignore --hidden --follow across maintained record/research/review/history
+    roots, original-main ignored reports and relevant cited resource raw roots.
+  summary: Fifty-two matching paths were retained externally. The assigned owners
+    are the only matching dedicated owner paths in this bounded search; existing secondary
+    aluminium dross was separately read for its specimen and treatment boundary. This
+    is not a machine-wide absence claim.
+  accessed_at: '2026-10-16T06:11:01.272334Z'
+  support: context_only
+  snapshot_sha256: 2f43a7616cf7f09caa4389a7f81ddf19c0ec057ea451a4af65ec670cd06fde6d
+  search_scope: rg --no-ignore --hidden --follow across maintained record/research/review/history
+    roots, original-main ignored reports and relevant cited resource raw roots. Fifty-two
+    matching paths were retained externally. The assigned owners are the only matching
+    dedicated owner paths in this bounded search; existing secondary aluminium dross
+    was separately read for its specimen and treatment boundary. This is not a machine-wide
+    absence claim.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round113-uranium-research/resource-review-final-named-validation.json
+  locator: Actual independent validation of exactly both current resource owners;
+    command, worktree, base, times and current owner hashes checked.
+  summary: Checked 2 record(s); 0 failed. Structural validity does not prove source
+    claims.
+  accessed_at: '2026-10-16T06:11:01.272334Z'
+  support: supports
+  snapshot_sha256: 1d3dd1c0c4d523fcc5b75c0f3710d5e886975f36b6ac17792579ba21812fb770
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round113-final-gates.json
+  locator: Actual completed four-command batch; exact base/worktree, command arrays,
+    zero exits, unchanged record inputs and retained log digest independently checked.
+  summary: 'These are structural/provenance gates, not a fresh scientific review of
+    all records. Terminal completed receipt and retained log verified: 317 passed,
+    3 skipped in 256.48s (0:04:16); Checked 578 record(s); 0 failed.; Checked 578
+    record(s); 0 failed.; pages/ is current'
+  accessed_at: '2026-10-16T06:11:01.272334Z'
+  support: supports
+  snapshot_sha256: 44d42e6f650408fed95cf49a83cad6a12d0a52329961f3f5cc960a659da7ccc4
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.3390/min12091141
+  locator: Complete published fifteen-page Minerals12(9):1141 article (2022); Sections2-5,
+    Tables1-5, Figures1-12. Full scientific text read; original pages3-13 visually
+    checked, including page13 Section4/Figure12.
+  summary: The original methods, figures and analytical tables support source-specific
+    water leaching and impure recovered salt crystals, while internal temperature
+    and performance summaries conflict.
+  accessed_at: '2026-10-16T06:11:01.272334Z'
+  support: supports
+  snapshot_sha256: 1de081bed6342ed56108dc4b709f907b8c47adc13aeb2bad0b7c460ff9c53dd1
+- evidence_id: balance
+  kind: primary_source
+  reference: https://doi.org/10.3390/min12091141
+  locator: Original page13 Section4 and Figure12, directly re-inspected after correction.
+  summary: The scaled481kg balance gives116.4kg recovered salt plus364.6kg residue,24.2percent
+    dissolved. Reported90percent purity and92percent overall salt recovery rely on
+    titration/FAAS; maximum closure error+0.15percentK differs from roughly-8percentK
+    with ED-XRF. The4.3:1NaCl:KCl ratio motivates proposed KCl addition, not tested
+    reuse.
+  accessed_at: '2026-10-16T06:11:01.272334Z'
+  support: supports
+  snapshot_sha256: 12206a3ec0548bc5ebd5b51677485338b3ff16ccf9747a82b4abae6f4c4e5d44
+- evidence_id: previous
+  kind: record_content
+  reference: reviews/structured/20261016T060327Z-aluminium-salt-slag-round113-initial/review.yaml
+  locator: Immutable initial minor finding mass-balance-scope; issue_key aluminium-salt-slag-mass-balance-scope.
+  summary: Initial generic incomplete-process-balance wording omitted reported scaled
+    solids accounting. Root corrected the maintained owner and appended EDIT history
+    under issue480; the initial observation remains unchanged.
+  accessed_at: '2026-10-16T06:11:01.272334Z'
+  support: context_only
+  snapshot_sha256: ff8d85b42b12df4931d313d2cd5910bfdffae534d72a22d3a41683edfa0eea21
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Source-defined remelting resource and specimen boundary
+  outcome: supported
+  summary: The record represents an actual mixed salt-flux remelting resource, not
+    a pure mineral or elemental aluminium.
+  details: A481kg batch came from a rotary-furnace14tonne charge of manufacturing/EOL
+    scrap and primary dross with3:1NaCl/KCl flux. The existing secondary-aluminium-dross
+    owner uses a different source-defined post-recovery specimen and experimental
+    treatment; the current distinction is not a universal claim that all terminology
+    is disjoint. No jurisdiction/list/edition criticality claim is inherited.
+  target_ids:
+  - cmmmech:aluminium-salt-slag
+  evidence_ids:
+  - owner
+  - primary
+  - dedup
+- assessment_id: protocol
+  area: consistency
+  topic: Feed preparation, experiment and source conflicts
+  outcome: supported
+  summary: Laboratory conditions and the actual selected treatment are correctly separated
+    from the furnace batch.
+  details: Four-day cooling, below19mm crushing then below2.8mm roller or0.5mm ball
+    milling are source methods. Lab70-160g aliquots at25 C,55rpm,20/30/40wt%solids,initialpH6.9-7
+    andtwo-hour sampling are supported. Duplicate tests and72combinations are distinguished.
+    Selected tap water,below2.8mm,30wt%,90min is not an entire481kg treatment. Evaporation85
+    C24h text versus50 C24h Figure3 is retained. No organism, biomass or taxon CURIE
+    applies.
+  target_ids:
+  - cmmmech:aluminium-salt-slag
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: outcomes
+  area: evidence
+  topic: Chloride removal, composition and yield denominators
+  outcome: supported
+  summary: The record distinguishes measured leachate removal, product composition
+    and reported scaled recovery.
+  details: Figure5b/p9 supports91.2percentchloride removal at90min and92.2percentat120min.
+    Greater-than92percent abstract/conclusion language is not assigned to the selected90min
+    arm. Equation1 uses normalized leachate/head chloride. Table5K/Na/Cl8.78/28.84/51.92wt%
+    in salts and.24/.78/1.41wt% in residue are compositions, not yields; ED-XRF95.6percent
+    salts differs from titration/FAASroughly90percent. Coarse19mm40wt% unagitatable
+    feed is retained as contrary operational evidence.
+  target_ids:
+  - cmmmech:aluminium-salt-slag
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: balance-scope
+  area: evidence
+  topic: Reported balance and corrected limitation
+  outcome: supported
+  summary: The exact initial omission is resolved in the current owner with bounded
+    source-supported accounting.
+  details: The new support entry and narrowed description retain Figure12 scaled solids
+    and elemental accounting without implying a full-batch production trial. Reported
+    overall92percent salt recovery is distinct from the90min91.2percentchloride metric.
+    Complete direct gas/water balances and tested remelting reuse remain absent from
+    this study; its proposed flowsheet includes recommendations rather than validated
+    industrial operation.
+  target_ids:
+  - cmmmech:aluminium-salt-slag
+  evidence_ids:
+  - owner
+  - primary
+  - balance
+  - previous
+- assessment_id: analytical
+  area: evidence
+  topic: Assay and phase limits
+  outcome: supported
+  summary: Phase assignments and elemental percentages are not promoted beyond the
+    analytical evidence.
+  details: ED-XRF highAl values omitoxygen and cannot establish metallicAl fractions.
+    NaCl/KCl diffraction does not imply absolute purity or no hydrolyzable/gas-generating
+    constituents; source approximate5percentXRD detection limit and no direct gas
+    balance matter. Table3zeroK is non-detection alongside Table5.24percent by another
+    method. Recovered solids contain impurities; no product remelting test was performed.
+  target_ids:
+  - cmmmech:aluminium-salt-slag
+  evidence_ids:
+  - owner
+  - primary
+- assessment_id: checks
+  area: provenance
+  topic: Exact working bytes, actual history and completed checks
+  outcome: supported
+  summary: The final review binds exact owner/history/dossier/schema inputs and terminal
+    validation evidence.
+  details: Actual GPT-6/codex CREATE provenance and, for salt, separate EDIT provenance
+    linked to issue480 are retained. Reviewer authored unrelated billietite/compreignacite
+    and did not edit these resource owners. Independent named validation and four
+    coordinator batch commands are checked against exact base/worktree/current hashes
+    and retained log; structural gates do not certify all corpus science.
+  target_ids:
+  - cmmmech:aluminium-salt-slag
+  evidence_ids:
+  - owner
+  - provenance
+  - named
+  - batch
+  - notices
+findings:
+- finding_id: mass-balance-scope
+  issue_key: aluminium-salt-slag-mass-balance-scope
+  category: evidence
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Mass-balance limitation omits the reported scaled solids accounting
+  description: 'The earlier omission is corrected: current description and the new
+    Section4/Figure12 support entry retain the reported scaled solids/elemental accounting
+    while limiting absent evidence to direct gas/water balance, industrial throughput
+    and tested flux reuse.'
+  target_ids:
+  - cmmmech:aluminium-salt-slag
+  field_paths:
+  - mechanisms[0].description
+  - mechanisms[0].evidence[2].explanation
+  evidence_ids:
+  - owner
+  - primary
+  - balance
+  - previous
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/aluminium-salt-slag.yaml
+    role: scientific_record
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261016T060327Z-aluminium-salt-slag-round113-initial
+    finding_id: mass-balance-scope
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/480
+  disposition_reason: Independently rechecked original Section4/Figure12 against corrected
+    SHA 8fc49588185fcef70443b6ca49820470ea5cb3020e277bad21e634e646441e83. The exact481→116.4+364.6kg
+    accounting and distinct91.2percentchloride/92percentreportedoverall salt metrics
+    are retained, with an actual EDIT history. Named and final batch gates passed;
+    initial review remains immutable.
+actions: []
+limitations:
+- The paper conflicts on evaporation temperature and summarizes greater-than92percent
+  removal without matching the selected90minute arm; neither discrepancy is silently
+  reconciled.
+- Scaled solids/elemental accounting is source-reported; this review did not independently
+  reproduce it or demonstrate a481kg treatment, direct gas/water balance or product
+  remelting reuse.
+- ED-XRF and titration/FAAS estimates differ; XRD non-detection and oxygen-excludingAl
+  percentages do not establish absolute purity, metallic aluminium recovery or absence
+  of gas-generating phases.
+- The separately acquired2026salt paper was not independently assessed/adopted for
+  this owner. Source issue479 concerns future evidence expansion, not an unresolved
+  current curator defect.
+- Bounded source/notice and hidden/ignored-inclusive duplicate searches are not exhaustive.
+notes:
+- No resource owner or canonical history edits were made by this reviewer. No fresh
+  scientific review of other corpus owners is claimed.
+- Initial captures are retained. The final input inspection includes the source-dossier
+  Markdown update accompanying the salt correction; unchanged primary acquisition
+  bytes are separately hash-verified.
+```

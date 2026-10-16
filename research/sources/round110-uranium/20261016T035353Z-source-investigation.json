@@ -1,0 +1,420 @@
+{
+  "timestamp": "2026-10-16T03:53:53.126643Z",
+  "actor": {
+    "name": "codex",
+    "model": "GPT-6",
+    "agent_tool": "codex"
+  },
+  "worktree": "/private/tmp/CMMMech-expansion-round110-20261016",
+  "base": "0482e7b0af9b18685dabe310dbe86487b6ac4226",
+  "branch": "curate/cmm-expansion-round110-20261016",
+  "scope": "Bounded discovery and curation of sodium uranyl silicate natroboltwoodite and uranyl oxide hydroxide hydrate metaschoepite. Laboratory abiotic transformations; no inherited criticality or microbial claim. Not an exhaustive survey.",
+  "search": {
+    "provider": "web search tool plus direct official/publisher/repository HTTP acquisition",
+    "utc_date": "2026-10-16",
+    "exact_queries": [
+      "becquerelite metaschoepite dissolution primary experiment full text uranium microbial reduction",
+      "natroboltwoodite sodium boltwoodite thermodynamic solubility full text 2011 2004",
+      "\"Na-boltwoodite\" \"2006\" solubility dissolution kinetics Liu pdf",
+      "\"Crystallization of Uranyl Silicate Natroboltwoodite\" pdf",
+      "\"Solution equilibria of uranyl minerals\" calcium carbonate DOI",
+      "metaschoepite \"Shewanella\" microbial reduction mineral pdf",
+      "\"The dissolution of synthetic Na-boltwoodite\" osti",
+      "\"Crystallization\" \"Natroboltwoodite\" \"pdf\" Plasil",
+      "\"metaschoepite\" \"Solution equilibria\" supporting information",
+      "\"10.1016/j.gca.2006.06.1553\" correction retraction",
+      "\"10.1016/j.jhazmat.2019.05.101\" correction retraction",
+      "\"10.1021/acs.cgd.1c01152\" full text pdf",
+      "\"Stanley\" \"Wilkin\" \"metaschoepite\" \"pdf\"",
+      "\"Crystallization of Uranyl Silicate Natroboltwoodite\" Plasil Skoda full text",
+      "\"PMC7369140\" pdf",
+      "\"Solution equilibria of uranyl minerals\" \"2.1.\"",
+      "\"Solution equilibria of uranyl minerals\" filetype:pdf",
+      "metaschoepite \"7310\" 2019 full text",
+      "metaschoepite \"1026\" \"1960\"",
+      "\"Crystal chemical studies of some uranyl oxide hydrates\" correction",
+      "\"Phase transformations and crystal chemistry of schoepite\" Christ 1965",
+      "\"metaschoepite\" \"2019\" \"Inorganic\" \"7310\"",
+      "\"Structural relations among schoepite\" pdf",
+      "\"Elucidation of the Structure\" \"Metaschoepite\" osti",
+      "\"Elucidation of the Structure\" \"Metaschoepite\" pdf",
+      "\"10.1021/acs.inorgchem.9b00460\" correction retraction",
+      "\"Structural relations among schoepite\" correction erratum"
+    ],
+    "filters": "No date/domain filter; filetype:pdf only where written in query. Returned result sets inspected, no pagination or whole-web completeness claim.",
+    "notices": "Exact DOI/title correction/retraction queries and DOI metadata were checked; returned relevant records did not identify a correction or retraction. This bounded search does not prove absence. PNNL abstract differs from final paper without verified correction notice."
+  },
+  "dedup": {
+    "hidden_and_ignored_included": true,
+    "relevant_symlinks_followed": true,
+    "runs": [
+      {
+        "manifest": "/private/tmp/cmm-round110-uranium-research/dedup-initial.json",
+        "manifest_sha256": "4dfaca79cdf728440b822d94479f17a899f49570baefbbc3927e8cd46cec548d",
+        "timestamp": "2026-10-16T03:37:06.745064+00:00",
+        "exact_command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-l",
+          "-i",
+          "natroboltwoodite|becquerelite|metaschoepite|schoepite|liebigite",
+          "/private/tmp/CMMMech-expansion-round110-20261016/data/records",
+          "/private/tmp/CMMMech-expansion-round110-20261016/research",
+          "/private/tmp/CMMMech-expansion-round110-20261016/reviews",
+          "/private/tmp/CMMMech-expansion-round110-20261016/history",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports",
+          "/private/tmp/cmm-round109-uranium-research",
+          "/private/tmp/cmm-round108-uranium-research",
+          "--glob",
+          "!**/.git/**",
+          "--glob",
+          "!**/.venv/**",
+          "--glob",
+          "!**/*.pdf",
+          "--glob",
+          "!**/*.png",
+          "--glob",
+          "!**/*.jpg",
+          "--glob",
+          "!**/*.pyc"
+        ],
+        "matched_files": 25,
+        "raw_output": "/private/tmp/cmm-round110-uranium-research/dedup-initial-matches.txt",
+        "raw_output_sha256": "6e9f3955e11f3bc978d1b02afe31c8081bd4bd3c389a6c314481ad3a0f31555a"
+      },
+      {
+        "manifest": "/private/tmp/cmm-round110-uranium-research/dedup-expanded.json",
+        "manifest_sha256": "e4ee0acbac42ddbe6353e664ae3903d959abf569844fa9f5508cf7bd68050904",
+        "timestamp": "2026-10-16T03:40:44.470959+00:00",
+        "exact_command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-l",
+          "-i",
+          "natroboltwoodite|sodium.?boltwoodite|Na.?boltwoodite|becquerelite|meta.?schoepite|schoepite|liebigite|10\\.1016/j\\.gca\\.2006\\.06\\.1553|10\\.1016/j\\.jhazmat\\.2019\\.05\\.101|10\\.1021/acs\\.cgd\\.1c01152|10\\.23719/1503429|PMC7369140",
+          "/private/tmp/CMMMech-expansion-round110-20261016/data/records",
+          "/private/tmp/CMMMech-expansion-round110-20261016/research",
+          "/private/tmp/CMMMech-expansion-round110-20261016/reviews",
+          "/private/tmp/CMMMech-expansion-round110-20261016/history",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports",
+          "/private/tmp/cmm-round109-uranium-research",
+          "/private/tmp/cmm-round108-uranium-research",
+          "-g",
+          "!.git/**",
+          "-g",
+          "!.venv/**",
+          "-g",
+          "!*.pdf",
+          "-g",
+          "!*.png",
+          "-g",
+          "!*.jpg",
+          "-g",
+          "!*.pyc"
+        ],
+        "matched_files": 50,
+        "raw_output": "/private/tmp/cmm-round110-uranium-research/dedup-expanded-matches.txt",
+        "raw_output_sha256": "67ae0e2bdc02501db16e7cc367be384b022c83c082a73b32d9fe62da518b8dc5"
+      },
+      {
+        "manifest": "/private/tmp/cmm-round110-uranium-research/dedup-final.json",
+        "manifest_sha256": "a7c163f6e25de4046edc4d3a37f9738bdcbefc6f60333d65b6eb43e4b6fb9558",
+        "timestamp": "2026-10-16T03:52:02.376556+00:00",
+        "exact_command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-l",
+          "-i",
+          "10\\.1021/acs\\.inorgchem\\.9b00460|Structural relations among schoepite|schoepite.?II|natroboltwoodite|metaschoepite",
+          "/private/tmp/CMMMech-expansion-round110-20261016/data/records",
+          "/private/tmp/CMMMech-expansion-round110-20261016/research",
+          "/private/tmp/CMMMech-expansion-round110-20261016/reviews",
+          "/private/tmp/CMMMech-expansion-round110-20261016/history",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/data/records",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/history",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports",
+          "/private/tmp/cmm-round109-uranium-research",
+          "/private/tmp/cmm-round108-uranium-research",
+          "-g",
+          "!.git/**",
+          "-g",
+          "!.venv/**",
+          "-g",
+          "!*.pdf",
+          "-g",
+          "!*.png",
+          "-g",
+          "!*.jpg",
+          "-g",
+          "!*.pyc"
+        ],
+        "matched_files": 30,
+        "raw_output": "/private/tmp/cmm-round110-uranium-research/dedup-final-matches.txt",
+        "raw_output_sha256": "459b9daab4b0fa0703a7c818b0ca855163951535380012ebcf5790a8b8f8e052"
+      }
+    ],
+    "interpretation": "Before curation the expanded 50-file result matched existing boltwoodite owners as context only; no separate natroboltwoodite or metaschoepite owner was found in the searched roots. Final 30-file query includes the newly authored pair and reviews/history. Prior round108 and109 uranium reports and referenced raw roots were checked. Binary PDFs/images and environment/Git internals excluded from text matching; primary PDFs separately extracted/read. No machine-wide absence claim.",
+    "issue_inventory": {
+      "path": "/private/tmp/cmm-round110-open-issues.json",
+      "sha256": "b3aef1e5b8c288d2e3b5d5b47b10ec467d8ebca71231ad4aa846e267ba78789a",
+      "count": 148,
+      "scope": "Open titles and bodies only, comments excluded. Existing #440 potassium boltwoodite lead overlaps the sodium-family context but does not resolve this pair; root will check all-state issue inventory before posting."
+    }
+  },
+  "accepted_sources": [
+    {
+      "key": "ima202609",
+      "role": "mineral identity authority",
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "inspection": "Fresh official PDF, pages1,142,152 visually inspected; current CNMNC homepage September2026 edition confirmed. Natro statusRn/2007s.p. means renaming; meta G/1960 is original-description year, not an approval ID.",
+      "license": "Copyright/reuse not established; official document read, raw retained outside Git."
+    },
+    {
+      "key": "ilton2006",
+      "doi": "10.1016/j.gca.2006.06.1553",
+      "role": "primary abiotic dissolution experiment",
+      "inspection": "Complete published14-page PDF, fulltext plus all14 rendered pages including Tables1–4/Figures1–12. Repository mirror DOI/title/authors matched Crossref and PNNL.",
+      "mapping": "natroboltwoodite mechanisms/evidence/context: synthetic historical1.5H2O preparation distinguished from currentIMA1H2O. Table1 duplicate-average7day endpoints; kinetic/pretreated/highloading arms separate.",
+      "limits": "Initial nonmonotonic U/Si decreases then higher-range enhancement; pH and carbonate covary. Unidentified minor impurity and secondary precipitate proposed. Several endpoints not steady; no intrinsic rate or recovery yield. PNNL landing abstract K interpretation differs from final paper. Original powder XRD used to identify preparation explicitly not shown.",
+      "license": "Published Elsevier article; redistribution not established, PDF outside Git."
+    },
+    {
+      "key": "finch1998",
+      "role": "primary natural mineral transformation",
+      "url": "https://www.rruff.net/doclib/cm/vol36/CM36_831.pdf",
+      "inspection": "Complete published15-page PDF, all text and rendered pages; Tables1–4/Figures1–8 inspected.",
+      "mapping": "metaschoepite natural_schoepite_transformation: ShinkolobweB3616surface versus91.62interior, sc-c(1)→sc-c(2)20Covernight10hX-ray; qualitative storage/coating effects.",
+      "limits": "Initial mixture possible; one-sixth water loss structural interpretation; no full metaschoepite structure solved, reversibility untested. Natural apparently stable mixtures not universal air stability. HistoricalPbna axis convention not silently equated to modernPbcn numerical axes. No DOI verified.",
+      "license": "Published Canadian Mineralogist article; redistribution not established, PDF outside Git."
+    },
+    {
+      "key": "kirkegaard2019",
+      "doi": "10.1021/acs.inorgchem.9b00460",
+      "pmid": "31099558",
+      "osti": "1720254",
+      "role": "primary synthetic humidity transformation; SI linked to same experiment",
+      "inspection": "Complete43-page accepted manuscript from OSTI, fulltext inspected; key original rendered pages5,10,11,18,19 verified. Complete9-pageSItext; FiguresS2/S4/S8 visually checked onS2/S4/S7. Final publisher layout not independently read.",
+      "mapping": "metaschoepite synthetic_humidity_dehydration: ~22C; A78%RH41d, B45%RH18d, CunspecifieddesiccantRH41d. Table2 fitted phase pairs95.5/4.5,70.7/29.3,10.8/89.2wt%, uncertainties preserved in owner.",
+      "limits": "Bdifferentbatchandinitialminorproduct; unequal durations. DiscussionB16d versusTables18d; SIcaptionA75% versusmain78%. Ccontains10.8%meta despite essentially-complete wording. Product local structure remains model-dependent. No humidity threshold/rate/isolated yield.",
+      "license": "ACS copyright on main; OSTI public-access manuscript not a general redistribution license. SI source license recorded in metadata, raw retained outside Git."
+    }
+  ],
+  "deferred": [
+    {
+      "key": "natro2022",
+      "doi": "10.1021/acs.cgd.1c01152",
+      "role": "primary crystallization/structural identity lead cited by IMA",
+      "access": "Crossref and Figshare metadata plus two SI XLSX files acquired; main article publisher route403, only indexed excerpts available. SI workbooks acquired but contents not inspected this pass.",
+      "next": "Obtain complete legitimate main text and inspect original structural data before reconciling reported hydration, accepting yttrialite-dissolution crystallization or quantitative structural claims. Do not infer currentIMAformula erroneous from snippet."
+    },
+    {
+      "key": "stanley2019",
+      "doi": "10.1016/j.jhazmat.2019.05.101",
+      "pmid": "31173981",
+      "pmcid": "PMC7369140",
+      "dataset_doi": "10.23719/1503429",
+      "role": "dissolution lead with deposited figure data",
+      "access": "Crossref/PubMed/EPMC metadata confirmed. PMCHTMLcaptcha; manuscript PDF URL returns preparation/challengeHTML; EUtils front-onlyXML explicitly excludes body; EPMC fulltext500 and otherroutes403/404. Browsertools unavailable. No challenge solved or restriction bypassed. Full article figures/SI not inspected, so dissolution mechanism not accepted.",
+      "next": "Acquire legitimate complete article and557KB Sup1DOCX, inspect equations/mineral preparation/replication/figures before attaching data values or Ksp to owner."
+    },
+    {
+      "key": "other_candidates",
+      "decision": "Becquerelite/liebigite were starting search hypotheses only; no new owners. Historical Christ1960/1965 sources acquired as nomenclature/background, not accepted as quantitative mechanism sources. No claim that these candidates lack literature."
+    }
+  ],
+  "dataset_assessment": {
+    "url": "https://catalog.data.gov/dataset/stanley-and-wilkin-2019-dataset",
+    "download": "https://pasteur.epa.gov/uploads/10.23719/1503429/Stanley%20and%20Wilkin%20%282019%29%20dataset.xlsx",
+    "doi": "10.23719/1503429",
+    "observed": "124643bytes; ZIP-valid XLSX, one sheet Stanley et al (2019) Fig Data,2253observedrows; no embedded media. Parsedcellarchive external stanley2019-dataset-cells.json.",
+    "schema": "Wide independent figure blocks: A–Ctheta/intensity; E–Gtemperature/massloss; I–Ktemperature/DSC; M–Otemperature/ioncurrent; Q–RpH/log(m); T–VpH/carbonate(mM)/U(logµgL); X–YuranophanepH/Ulog(m); AA–ADCaaddedppm/UlogµgL/Cameasuredratios. Headerunits occupy rows2–3. Blanks between variable-length blocks are not zeros.",
+    "sample": "Q3=5.62,R3=-4.51568520380642; T3=8.5,U3=0,V3=1.9854523838074. These are inspected source cells, not accepted CMMMech observations.",
+    "keys_and_joins": "No dedicated dictionary, replicate identifiers or stable row-accessions observed. Coordinates plus immutable file hash identify cells; join to studyDOI/figure labels. Not a tidy set of2253independent experiments.",
+    "edition": "Catalog modification2019-02-27 differs from articlepublication2019; current portalcheck is not new dataedition. No update policy established.",
+    "license": "EPA sciencehub-license.html inspected: EPA-produced data default USpublicdomain unlessspecified, with accuracy/use disclaimer and metadata caution. Workbook retained external despite potential reuse rights.",
+    "mapping": "Prose only after primary validation; schema quantitative observations currently require exact source mg/kg concentration cells, not these logarithms/rates/phasefractions. No schema change warranted."
+  },
+  "artifacts": [
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/ima202609.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "origin_url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "acquired_at": "2026-10-16T03:40:27.492385+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/ilton2006.pdf",
+      "bytes": 356243,
+      "sha256": "96431031ba27515c82a197a6970b0c4c11258e6e6d8ad2478bb66e286a1c46ef",
+      "origin_url": "https://repository.geologyscience.ru/bitstreams/b99e583b-fb44-4b58-907c-6638981857c0/download",
+      "acquired_at": "2026-10-16T03:41:41.173364+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/ilton2006-crossref.json",
+      "bytes": 12053,
+      "sha256": "585a73ba26ff78c8346b8bdc51899f27cef01bdafc845f811df88fe452e01110",
+      "origin_url": "https://api.crossref.org/works/10.1016/j.gca.2006.06.1553",
+      "acquired_at": "2026-10-16T03:40:27.492527+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/pnnl-ilton2006.html",
+      "bytes": 76804,
+      "sha256": "bb34d105eb49e2e9ba509166a658d0a6dca4db6bb35127949b69d862b3943eb5",
+      "origin_url": "https://www.pnnl.gov/publications/dissolution-synthetic-na-boltwoodite-sodium-carbonate-solutions",
+      "acquired_at": "2026-10-16T03:45:35.168297+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/finch1998.pdf",
+      "bytes": 1977626,
+      "sha256": "243319fb16fe8c5cb25c873f2da41a31d3ed2e2e7f4b4b07bbda011a82e5aeb8",
+      "origin_url": "https://www.rruff.net/doclib/cm/vol36/CM36_831.pdf",
+      "acquired_at": "2026-10-16T03:44:23.942634+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/kirkegaard2019.pdf",
+      "bytes": 12104735,
+      "sha256": "792ae142178d5cd3155b8f5db8da53a66300d0bd985bff43e167e527bbeaa934",
+      "origin_url": "https://www.osti.gov/servlets/purl/1720254",
+      "acquired_at": "2026-10-16T03:45:35.167478+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/kirkegaard2019-crossref.json",
+      "bytes": 10536,
+      "sha256": "fdac435a2a8c8e928a4b94c3abd39df71098fd90271a030353e030cb9ea46dc2",
+      "origin_url": "https://api.crossref.org/works/10.1021/acs.inorgchem.9b00460",
+      "acquired_at": "2026-10-16T03:44:23.943965+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/kirkegaard2019-si.pdf",
+      "bytes": 1020519,
+      "sha256": "d295cb73546eeef777e43f98c057ecb40bf542586910da2a49d87a195c7fb2d9",
+      "origin_url": "https://ndownloader.figshare.com/files/15177548",
+      "acquired_at": "2026-10-16T03:46:44.772935+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/kirkegaard2019-si-metadata.json",
+      "bytes": 6431,
+      "sha256": "a3f2facf8fcdb311139d2e3c5c9749401ef1bcac87eb646ebe4e9fcf89602f51",
+      "origin_url": "https://api.figshare.com/v2/articles/8144057",
+      "acquired_at": "2026-10-16T03:46:44.771951+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/stanley2019-dataset.xlsx",
+      "bytes": 124643,
+      "sha256": "9336e3c0aefb56857f95562622927f0cd9b289a37cf7d21d4241023cefc1d45f",
+      "origin_url": "https://pasteur.epa.gov/uploads/10.23719/1503429/Stanley%20and%20Wilkin%20%282019%29%20dataset.xlsx",
+      "acquired_at": "2026-10-16T03:40:27.492240+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/stanley2019-license.html",
+      "bytes": 2662,
+      "sha256": "5a92f2b7af009d5dea272a6701ad2a63f22e5f772d0f89f50255e994433fdd11",
+      "origin_url": "https://pasteur.epa.gov/license/sciencehub-license.html",
+      "acquired_at": "2026-10-16T03:40:57.045475+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/stanley2019-crossref.json",
+      "bytes": 17018,
+      "sha256": "a99b1091857412cc126857574e01b12e8112405c4397e349627b5fd58da9ea39",
+      "origin_url": "https://api.crossref.org/works/10.1016/j.jhazmat.2019.05.101",
+      "acquired_at": "2026-10-16T03:40:27.694069+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/natro2022-crossref.json",
+      "bytes": 10265,
+      "sha256": "690635a48f7b157cd69a2ac46c73b5b4148838ad702d7650962fa83a1ae566b3",
+      "origin_url": "https://api.crossref.org/works/10.1021/acs.cgd.1c01152",
+      "acquired_at": "2026-10-16T03:40:27.914592+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/natro2022-si1.xlsx",
+      "bytes": 45997,
+      "sha256": "2b41550e754a22bfbf438858d1b3e23d981b083f31c61b8cb17aa5628f41c060",
+      "origin_url": "https://ndownloader.figshare.com/files/33630462",
+      "acquired_at": "2026-10-16T03:43:37.155530+00:00"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/natro2022-si2.xlsx",
+      "bytes": 13714,
+      "sha256": "1a91434ab6d013bdbf8321ff253110b41b387c0e25c2d102ddb8305a63eba99f",
+      "origin_url": "https://ndownloader.figshare.com/files/33630465",
+      "acquired_at": "2026-10-16T03:43:37.155812+00:00"
+    }
+  ],
+  "acquisition_manifests": [
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/acquisition01.json",
+      "sha256": "93eb892505932e59c98386e7e428f01f584883272e4b4b6e3fe51b24ad409988"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/acquisition02.json",
+      "sha256": "3e3de28d7e07cb9ab9314a58ba35235dbe6fdfc502b385f56e3889707b9a17e0"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/acquisition03.json",
+      "sha256": "81ead1e8ed9967617f7332fa0d0d7827211fefeffdf22e902e70ad88510fc56a"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/acquisition04.json",
+      "sha256": "a199716f5895b37e088fd2e637754479610fe955e92738dda0b645ccde338ab8"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/acquisition05.json",
+      "sha256": "8b765786dd0e93a8339d29744e4fb333fd1cce090a8c357ffa70035665f42884"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/acquisition06.json",
+      "sha256": "1f6668ca42b45a723b553962fbca7df3b5507f479072f218e0df6450eccbc32c"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/acquisition07.json",
+      "sha256": "8c47166566fd3b3c9cb4871d30db80df69a10d78df04c3b60b7d5579c46db57c"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/acquisition08.json",
+      "sha256": "d7f2ee933e2ceaf7ce6759dc23af26c070387d9bc8ca5ae441ba5e89414c4843"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-uranium-research/acquisition09.json",
+      "sha256": "0e86d7977c141e143185c6d1ac3f594da022807f4c0562c9b8981d7578de7893"
+    }
+  ],
+  "curation": {
+    "owners": [
+      {
+        "path": "data/records/natroboltwoodite.yaml",
+        "sha256": "86ccee3f5a185709fbbdb889bd974ed4e0a35a005ed780d44b6d7c210ab898df"
+      },
+      {
+        "path": "data/records/metaschoepite.yaml",
+        "sha256": "30a545ff8fc8d954ac2722818a0c78ecb95c0b2f12bdeeef8ddf2a54ed6c86f0"
+      }
+    ],
+    "validation": "Each named uv run --locked cmmmech validate passed1record/0failed. Natro correction after independent #446 was revalidated. Globalbatch/history/review gates owned by root and not claimed complete here.",
+    "review": "This dossier is author source assessment, not self scientific acceptance. Parent independently reviews both owners.",
+    "history": "Canonical CREATE sidecars plus separate actualUTCinline events. Natro additionally has EDIT2026-10-16T035010Z-codex-d63dfd resolving initialtrendwording; originalCREATE preserved."
+  },
+  "priorities": [
+    "Retain accepted narrow experimental scopes and complete independent native reviews.",
+    "Acquire natro2022 complete primary text to resolve hydration identity and structural continuity without using snippets.",
+    "Clarify Kirkegaard2019 duration/RH discrepancies, initialphasecomposition and productmodel before stronger kinetics/threshold claims.",
+    "Acquire Stanley2019 complete article+SI, then assess whether EPAfiguredata support dissolution expansion."
+  ],
+  "limits": "No author contact, no GitHub mutation by this lane, no industrial or microbial experiment accepted, no criticality assertion; raw literature/inventories outsideGit. Source availability remains bounded, not exhausted."
+}

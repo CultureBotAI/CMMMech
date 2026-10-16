@@ -1,0 +1,105 @@
+id: cmmmech:eucrite-meteorite
+name: Eucrite meteorite
+material_kind: primary_resource
+description: >-
+  Natural basaltic achondritic meteorite material considered as an experimental
+  feed, distinct from an L-chondrite, terrestrial basalt, a pure mineral or
+  secondary resource. The curated example is the EU specimen in Tonietti
+  et al. (2026). Its reported mineral assemblage is dominated by plagioclase
+  and pyroxene, with minor olivine and quartz. The paper attributes eucrite
+  material to Vesta but gives no exact meteorite name or accession for EU;
+  Table 1 says Skylab (US), whereas the acknowledgments thank SkyFall
+  Meteorites. The experimental specimen's provenance is therefore incompletely
+  resolved. No resource-level criticality designation is inferred from its
+  constituent trace metals.
+sources:
+  - id: tonietti2026
+    title: >-
+      Tonietti et al. (2026). Bioleaching of critical trace metals by
+      Sphingomonas desiccabilis: substrate-driven selectivity in Earth and
+      space analogues. Frontiers in Microbiology 17:1741305.
+      DOI 10.3389/fmicb.2026.1741305. Complete 14-page publisher PDF and
+      full HTML inspected, including Methods sections 2.1-2.10, Tables 1-2,
+      Figure 4B and EU-specific Results section 3.4. The linked supplements
+      were not acquired through the tested public routes in this curation.
+    url: https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2026.1741305/full
+    accessed_on: '2026-10-16'
+  - id: ncbi_desiccabilis
+    title: >-
+      NCBI Taxonomy 429134, Sphingomonas desiccabilis, species. CP1D is the
+      study's strain designation; this CURIE identifies the species only.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=429134
+    accessed_on: '2026-10-16'
+mechanisms:
+  - id: desiccabilis_eucrite_leaching
+    name: Sphingomonas-associated trace-metal mobilization from eucrite
+    process: bioleaching
+    microbial: true
+    description: >-
+      Living Sphingomonas desiccabilis CP1D was incubated with the EU meteorite
+      specimen in glucose-supplemented M9 medium. Element concentrations in
+      clarified liquid differed from a single uninoculated control, with
+      element-dependent enhancement and inhibition. This supports a narrow
+      culture-associated mobilization observation. The experiment does not
+      establish a particular molecular dissolution pathway, isolated-product
+      recovery or a statistically replicated abiotic comparison.
+    context: >-
+      Methods sections 2.1-2.4 describe crushed fragments no larger than 1 mm,
+      0.15 g in each 25 mL glass tube, dry-heat sterilized at 250 degrees C
+      for four hours. Each tube received 15 mL M9 with 2% m/V glucose,
+      corresponding to 1% w/v pulp loading. The inoculated starting OD600
+      was 0.039 +/- 0.006; cultures were incubated statically for 30 days
+      at 25 degrees C. There were three biological replicates and one
+      uninoculated control for each rock type, plus rock-free cultures.
+      Section 2.8 measured a day-30 liquid aliquot centrifuged at 5000 rpm
+      for five minutes; supernatant was acidified to 4% v/v nitric acid for
+      ICP-MS/OES. The pellet was not assayed because biomass could not be
+      separated reliably from rock. A biomass fraction cited from earlier
+      studies was not measured in this experiment. Section 2.9 reports
+      fractions of the bulk elemental inventory and biotic/abiotic ratios;
+      its arbitrary ratio-at-least-two threshold is not a significance test.
+      This was a terrestrial laboratory experiment on a meteorite, with
+      no microgravity treatment or industrial deployment.
+    organisms:
+      - id: NCBITaxon:429134
+        label: Sphingomonas desiccabilis
+    evidence:
+      - source_ref: tonietti2026
+        supports: support
+        explanation: >-
+          Methods and EU-specific Results section 3.4/Figure 4B support the
+          experimental culture, substrate and element-dependent liquid-phase
+          observations. The text reports EU platinum extraction as
+          (8.98 +/- 3.20) x 10^-2% of the bulk-rock platinum inventory,
+          and a platinum biotic/abiotic ratio of 2.47 +/- 0.48, with figure
+          error bars defined as standard errors. These source-reported
+          summaries were not recomputed from the unavailable supplementary
+          cells. They are endpoint fractions and ratios, not rates or
+          percentages of isolated platinum recovered.
+      - source_ref: tonietti2026
+        supports: partial
+        explanation: >-
+          Figure 4B and section 3.4 show selective responses, not universal
+          enhancement: the EU palladium biotic/abiotic ratio is below two,
+          even though palladium is detected in the cultured liquid. One
+          abiotic replicate cannot characterize control variability; the
+          study's twofold criterion does not supply that missing replication.
+          Large cerium and thorium extraction percentages reported for
+          Sudbury mine specimens elsewhere in the article do not describe EU.
+      - source_ref: tonietti2026
+        supports: context_only
+        explanation: >-
+          Discussion proposes biofilm-associated local complexation and
+          ligand-mediated release, but does not directly measure the causal
+          ligands or demonstrate specific mineral-phase dissolution for EU.
+          Table 2 labels its mineral proportions percent m/V despite the
+          Rietveld method; no corrected unit or independent specimen identity
+          is inferred here. Missing supplementary acquisition and unresolved
+          specimen provenance constrain reuse of the results.
+curation_history:
+  - timestamp: '2026-10-16T05:14:59.550324Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: Added a natural eucrite feed record with terrestrial Sphingomonas-associated trace-metal mobilization evidence.
+history_refs:
+  - history/records/eucrite-meteorite/2026-10-16T051458Z-codex-678910.yaml

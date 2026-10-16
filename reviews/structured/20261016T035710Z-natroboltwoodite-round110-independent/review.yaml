@@ -1,0 +1,272 @@
+schema_version: 1.0.0
+review_id: 20261016T035710Z-natroboltwoodite-round110-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of natroboltwoodite
+started_at: '2026-10-16T03:51:21.500935Z'
+finished_at: '2026-10-16T03:57:10.127283Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Separate uranium agent authored this owner/history; root curated
+    a different slag resource and independently reviewed original source evidence
+    and final uranium owner bytes without editing them.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Final narrow scientific claims supported with explicit source and experimental
+  limits; initial natroboltwoodite wording finding resolved where applicable.
+source:
+  git_revision: 0482e7b0af9b18685dabe310dbe86487b6ac4226
+  state: working_tree
+  inputs:
+  - path: data/records/natroboltwoodite.yaml
+    sha256: 86ccee3f5a185709fbbdb889bd974ed4e0a35a005ed780d44b6d7c210ab898df
+    role: target
+  - path: history/records/natroboltwoodite/2026-10-16T034518Z-codex-83409c.yaml
+    sha256: 61d05787f7f312d57c9d930b70050a0ce7e98ce95abe1c9626ece6f690144a81
+    role: context
+  - path: history/records/natroboltwoodite/2026-10-16T035010Z-codex-d63dfd.yaml
+    sha256: 48b3434e430f4ba8b9140e4dd95516cb5855842ad48cedd325625192152e9af9
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- kind: maintained
+  label: Natroboltwoodite
+  owner_paths:
+  - path: data/records/natroboltwoodite.yaml
+    repository: CultureBotAI/CMMMech
+    role: maintained_record
+  path: data/records/natroboltwoodite.yaml
+  target_id: cmmmech:natroboltwoodite
+scope:
+  description: Entire assigned owner/history and claim-bearing primary evidence. No
+    experiment replication or diffraction re-refinement.
+  selection: Native inspect captured final working-tree inputs before independent
+    acceptance.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:natroboltwoodite
+checks:
+- check_id: batch1
+  name: Completed batch gate 1
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal success and log verified; final owner hash matches inspected bytes.
+  target_ids:
+  - cmmmech:natroboltwoodite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed batch gate 2
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal success and log verified; final owner hash matches inspected bytes.
+  target_ids:
+  - cmmmech:natroboltwoodite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed batch gate 3
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 0482e7b0af9b18685dabe310dbe86487b6ac4226
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal success and log verified; final owner hash matches inspected bytes.
+  target_ids:
+  - cmmmech:natroboltwoodite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Completed batch gate 4
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal success and log verified; final owner hash matches inspected bytes.
+  target_ids:
+  - cmmmech:natroboltwoodite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/natroboltwoodite.yaml
+  locator: Entire native-inspected owner; local artifact /private/tmp/CMMMech-expansion-round110-20261016/data/records/natroboltwoodite.yaml
+  accessed_at: '2026-10-16T03:57:10.127283Z'
+  snapshot_sha256: 86ccee3f5a185709fbbdb889bd974ed4e0a35a005ed780d44b6d7c210ab898df
+  support: supports
+  summary: Final exact bytes and field scope independently assessed.
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/natroboltwoodite/2026-10-16T034518Z-codex-83409c.yaml
+  locator: Canonical sidecar plus separate inline event; local artifact /private/tmp/CMMMech-expansion-round110-20261016/history/records/natroboltwoodite/2026-10-16T034518Z-codex-83409c.yaml
+  accessed_at: '2026-10-16T03:57:10.127283Z'
+  snapshot_sha256: 61d05787f7f312d57c9d930b70050a0ce7e98ce95abe1c9626ece6f690144a81
+  support: supports
+  summary: Actual actor/model, target, time and described curation match this change.
+- evidence_id: history1
+  kind: record_content
+  reference: history/records/natroboltwoodite/2026-10-16T035010Z-codex-d63dfd.yaml
+  locator: Canonical sidecar plus separate inline event; local artifact /private/tmp/CMMMech-expansion-round110-20261016/history/records/natroboltwoodite/2026-10-16T035010Z-codex-d63dfd.yaml
+  accessed_at: '2026-10-16T03:57:10.127283Z'
+  snapshot_sha256: 48b3434e430f4ba8b9140e4dd95516cb5855842ad48cedd325625192152e9af9
+  support: supports
+  summary: Actual actor/model, target, time and described curation match this change.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Current mineral row PDF152 or142 independently visually inspected; local
+    artifact /private/tmp/cmm-round110-uranium-research/ima202609.pdf
+  accessed_at: '2026-10-16T03:57:10.127283Z'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  support: supports
+  summary: Current formula and status support identity; no invented accession or inherited
+    criticality.
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round110-uranium/20261016T035353Z-source-investigation.json
+  locator: Curator manifest, dedup scope and acquisition limits independently checked;
+    local artifact /private/tmp/CMMMech-expansion-round110-20261016/research/sources/round110-uranium/20261016T035353Z-source-investigation.json
+  accessed_at: '2026-10-16T03:57:10.127283Z'
+  snapshot_sha256: a29967f8e4485b3d2fe6fb9f62de73d847edc4f066072b5e3150d4c5478434d4
+  support: context_only
+  summary: Provenance is retained separately from primary scientific evidence.
+- evidence_id: search
+  kind: search
+  reference: Independent bounded correction and identity searches
+  locator: Exact DOIs, correction/erratum/retraction terms and current species hydration;
+    first returned result windows; local artifact /private/tmp/cmm-round110-uranium-independent-search.json
+  accessed_at: '2026-10-16T03:57:10.127283Z'
+  snapshot_sha256: 086a6dea3683509d83c3e5db86d5f1b6460e35ddc5df2d13e2fd72e00d3d7f21
+  support: context_only
+  summary: No affecting correction identified in returned results; no exhaustive absence
+    claim. Primary versions were read separately.
+  search_scope: Web search on2026-10-16, first returned sets, no exhaustive citation-network
+    traversal or author outreach.
+- evidence_id: experiment
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.gca.2006.06.1553
+  locator: Methodspp4837–4838; Table1p4840; original pages5/6/8 visually inspected;
+    Figures4/5/8 and discussion of noncongruence; local artifact /private/tmp/cmm-round110-uranium-research/ilton2006.pdf
+  accessed_at: '2026-10-16T03:57:10.127283Z'
+  snapshot_sha256: 96431031ba27515c82a197a6970b0c4c11258e6e6d8ad2478bb66e286a1c46ef
+  support: supports
+  summary: All selected endpoint values, bicarbonate/pH arms, initial low-range decreases
+    and pretreatment comparisons match the primary source.
+- evidence_id: institution
+  kind: primary_source
+  reference: https://www.pnnl.gov/publications/dissolution-synthetic-na-boltwoodite-sodium-carbonate-solutions
+  locator: Institutional abstract compared with published abstract and discussion;
+    local artifact /private/tmp/cmm-round110-uranium-research/pnnl-ilton2006.html
+  accessed_at: '2026-10-16T03:57:10.127283Z'
+  snapshot_sha256: bb34d105eb49e2e9ba509166a658d0a6dca4db6bb35127949b69d862b3943eb5
+  support: context_only
+  summary: Different solubility-constant interpretations are correctly treated as
+    a version discrepancy, not independent replication.
+- evidence_id: batch
+  kind: validation
+  reference: Completed exact-byte batch receipt
+  locator: Commands/base/cwd/terminal exits/log checksum and final record hashes checked;
+    local artifact /private/tmp/cmm-round110-final-gates.json
+  accessed_at: '2026-10-16T03:57:10.127283Z'
+  snapshot_sha256: ed153240d4c5826f0436aa5b996d00e0eed289dd884396599de811fc1fb085c6
+  support: supports
+  summary: All required batch gates passed on unchanged owner bytes.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral and experimental material identity
+  outcome: supported
+  summary: Current authority, primary material identity and distinct specimen/synthetic
+    scopes are retained without inherited criticality.
+  target_ids:
+  - cmmmech:natroboltwoodite
+  evidence_ids:
+  - owner
+  - ima
+- assessment_id: science
+  area: evidence
+  topic: Primary experiments, measurements and limitations
+  outcome: supported
+  summary: Current monohydrate identity is distinct from the historical synthetic1.5water
+    formula. Selected Table1values and pretreatment contrasts match original cells.
+    The corrected description explicitly preserves the low-bicarbonate troughs. Solution
+    concentration is not recovery yield; filtered arms, pH covariance, impurities
+    and incomplete steady state are disclosed.
+  target_ids:
+  - cmmmech:natroboltwoodite
+  evidence_ids:
+  - owner
+  - experiment
+- assessment_id: provenance
+  area: provenance
+  topic: Actual curation and source provenance
+  outcome: supported
+  summary: Actual canonical sessions and inline events; accepted primary versions,
+    raw retention and bounded search limits are explicit.
+  target_ids:
+  - cmmmech:natroboltwoodite
+  evidence_ids:
+  - history0
+  - dossier
+  - search
+findings:
+- finding_id: nonmonotonic-trend
+  issue_key: cmmmech.natroboltwoodite.bicarbonate-trend
+  category: evidence
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  target_ids:
+  - cmmmech:natroboltwoodite
+  field_paths:
+  - mechanisms[0].description
+  evidence_ids:
+  - owner
+  - experiment
+  - history1
+  - batch
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/natroboltwoodite.yaml
+    role: maintained_record
+  description: The final description explicitly retains initial U3.4→1.4micromolar
+    and Si40.1→8.0micromolar decreases and confines enhancement to higher-bicarbonate
+    arms. Selected endpoint and kinetic arms remain separate.
+  title: Unqualified increasing trend omits low-bicarbonate decreases
+  disposition_reason: Independent recheck of final owner and original Table1/Figure4
+    verifies the correction; actual EDIT sidecar added and all required batch checks
+    passed.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261016T034747Z-natroboltwoodite-round110-initial
+    finding_id: nonmonotonic-trend
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/446
+actions: []
+limitations:
+- Independent agent assessment is not external human peer review.
+- Claim-bearing original pages/figures and source text were checked; not every original
+  page was independently visually reread.
+- Bounded searches and incomplete later-primary access do not establish source exhaustion.
+  No experiment replication, fit recomputation or universal deployment claim.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261016T034747Z-natroboltwoodite-round110-initial
+  relationship: Successor resolves the exact initial wording finding after independent
+    evidence recheck.

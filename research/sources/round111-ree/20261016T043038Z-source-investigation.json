@@ -1,0 +1,471 @@
+{
+  "schema": "source-investigation narrative handoff; not a native record review",
+  "utc": "2026-10-16T04:30:38.081364Z",
+  "researcher": {
+    "name": "codex /root/round104_ree",
+    "model": "GPT-6",
+    "tool": "codex"
+  },
+  "worktree": "/private/tmp/CMMMech-expansion-round111-20261016",
+  "base": "6a43774bf15a206b04e59c7525e93fdb334325d6",
+  "scope": "Two new natural REE carbonate identities; primary specimen reassessment resolves historical conflation. No forced transformation, microbial or criticality claims.",
+  "selection": [
+    "donnayite-y",
+    "alicewilsonite-yce"
+  ],
+  "owners": [
+    {
+      "path": "data/records/donnayite-y.yaml",
+      "bytes": 3595,
+      "sha256": "2349ecf97cff4c80330e2b6a4a30436b5a3656e4525ebbc47c7ace48fbc64216"
+    },
+    {
+      "path": "data/records/alicewilsonite-yce.yaml",
+      "bytes": 3916,
+      "sha256": "32da51cf9109f74a8eb40c15162279992015977a5edf41047eb5eac8f379182b"
+    }
+  ],
+  "histories": [
+    {
+      "path": "history/records/donnayite-y/2026-10-16T042743Z-codex-root-round104-ree-0fa75b.yaml",
+      "bytes": 810,
+      "sha256": "c540fd03f0055cad2f2c9507e5c1adc624aac78e5aab1f9f36d3bbadee77e906"
+    },
+    {
+      "path": "history/records/alicewilsonite-yce/2026-10-16T042751Z-codex-root-round104-ree-c7c944.yaml",
+      "bytes": 823,
+      "sha256": "69c1276f4c71b2915ab6f88301dafbfb9efab06aca1b7e87054920e11a0513d8"
+    }
+  ],
+  "deduplication": {
+    "receipts": [
+      {
+        "at": "2026-10-16T04:19:57.060047+00:00",
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-l",
+          "-i",
+          "donnayite|alicewilsonite|ancylite|10\\.5194/ejm-35-(133|143)-2023",
+          "/private/tmp/CMMMech-expansion-round111-20261016/data",
+          "/private/tmp/CMMMech-expansion-round111-20261016/research",
+          "/private/tmp/CMMMech-expansion-round111-20261016/reviews",
+          "/private/tmp/CMMMech-expansion-round111-20261016/history",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports",
+          "/private/tmp/cmm-round110-ree-research",
+          "/private/tmp/cmm-round109-ree-research"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "matched_path_count": 41,
+        "raw_output": "/private/tmp/cmm-round111-ree-research/initial-dedup-paths.txt",
+        "sha256": "6cfdda7b69a62a8db3ccd7b008e15eb7426acffe8fffd9e098b38178beb2a95a",
+        "scope": "Hidden/ignored-inclusive; follow symlinks; relevant corpus, research, reviews, histories, original-main ignored reports and two recent cited REE raw roots. Not machine-wide."
+      },
+      {
+        "at": "2026-10-16T04:22:12.752876+00:00",
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-n",
+          "--max-columns",
+          "500",
+          "--max-columns-preview",
+          "-i",
+          "donnayite|alicewilsonite|10\\.5194/ejm-35-(133|143)-2023|1978-007|2020-055",
+          "/private/tmp/CMMMech-expansion-round111-20261016/data",
+          "/private/tmp/CMMMech-expansion-round111-20261016/research",
+          "/private/tmp/CMMMech-expansion-round111-20261016/reviews",
+          "/private/tmp/CMMMech-expansion-round111-20261016/history",
+          "/private/tmp/cmm-round90-minerals-research",
+          "/private/tmp/cmm-round91-minerals-research",
+          "/private/tmp/cmm-round92-minerals-research",
+          "/private/tmp/cmm-round50-ree-research",
+          "/private/tmp/cmm-round51-monazite-research",
+          "/private/tmp/cmm-round85-phosphates-research",
+          "/private/tmp/cmm-round109-ree-research",
+          "/private/tmp/cmm-round110-ree-research"
+        ],
+        "exit_code": 0,
+        "raw": "/private/tmp/cmm-round111-ree-research/selected-dedup-expanded.txt",
+        "sha256": "83bb8d7c6cc010b855389df220cfa4597342f226e69ad066c7a5fabe332c1ae4",
+        "lines": 24,
+        "stderr": ""
+      },
+      {
+        "at": "2026-10-16T04:28:50.733118+00:00",
+        "command": [
+          "rg",
+          "--no-ignore",
+          "--hidden",
+          "--follow",
+          "-l",
+          "-F",
+          "-i",
+          "-e",
+          "10.5194/ejm-35-133-2023",
+          "-e",
+          "10.5194/ejm-35-143-2023",
+          "-e",
+          "IMA:2020-055",
+          "/private/tmp/CMMMech-expansion-round111-20261016/data",
+          "/private/tmp/CMMMech-expansion-round111-20261016/research",
+          "/private/tmp/CMMMech-expansion-round111-20261016/reviews",
+          "/private/tmp/CMMMech-expansion-round111-20261016/history",
+          "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports"
+        ],
+        "exit_code": 0,
+        "stderr": "",
+        "raw": "/private/tmp/cmm-round111-ree-research/selected-exact-id-dedup.txt",
+        "sha256": "3b58f728a33a88719bb8e7c7ceac2df77ef516ff89047a8a65af30e2b218bcc0",
+        "matched_path_count": 2,
+        "assessment": "Only the two newly written round111 owners match; earlier regex DOI alternatives were overescaped, so this literal query supplies the accepted exact DOI/accession check. Name-based discovery matches remain valid."
+      },
+      {
+        "inventory_path": "/private/tmp/cmm-round111-all-issues.json",
+        "sha256": "a8022a226e2dbe8a6d5c3fb1a7b4f477c332b55b852721276336983048ee7b0a",
+        "count": 334,
+        "scope": "all-state titles and bodies; excludes comments",
+        "pattern": "donnayite|alicewilsonite|ejm-35-(?:133|143)-2023|2020-055",
+        "matches": []
+      }
+    ],
+    "interpretation": "Hidden/ignored files and relevant symlinks included. Before owner creation, name searches yielded prior IMA list text and ancylite leads, not accepted owners or selected-paper experiments. Initial regex DOI alternatives were overescaped; a later literal exact-ID search supplies the DOI check and finds only the two new owners. Boundary is listed roots, not all local storage. Issue title/body inventory has 334 entries and no selected-name/DOI/accession match; comments excluded.",
+    "meaningful_prior_paths": [
+      "research/sources/round90-minerals",
+      "research/sources/round92-minerals",
+      "/private/tmp/cmm-round90-minerals-research",
+      "/private/tmp/cmm-round92-minerals-research"
+    ],
+    "raw_output_policy": "Complete match output stays outside Git; this report contains commands/counts/hashes and concise interpretations only."
+  },
+  "search_log": [
+    {
+      "provider": "web search",
+      "date": "2026-10-16",
+      "query": "ancylite-(La) crystal structure original description PDF",
+      "filters": "none",
+      "coverage": "returned results only; no exhaustive or full citation-index claim"
+    },
+    {
+      "provider": "web search",
+      "date": "2026-10-16",
+      "query": "ancylite-(Ce) crystallization synthesis transformation primary paper pdf",
+      "filters": "none",
+      "coverage": "returned results only; no exhaustive or full citation-index claim"
+    },
+    {
+      "provider": "web search",
+      "date": "2026-10-16",
+      "query": "donnayite-(Y) crystal structure original description pdf",
+      "filters": "none",
+      "coverage": "returned results only; no exhaustive or full citation-index claim"
+    },
+    {
+      "provider": "web search",
+      "date": "2026-10-16",
+      "query": "\"donnayite\" \"alicewilsonite\" correction corrigendum retraction",
+      "filters": "none",
+      "coverage": "returned results only; no exhaustive or full citation-index claim"
+    },
+    {
+      "provider": "web search",
+      "date": "2026-10-16",
+      "query": "\"10.5194/ejm-35-133-2023\" correction",
+      "filters": "none",
+      "coverage": "returned results only; no exhaustive or full citation-index claim"
+    },
+    {
+      "provider": "web search",
+      "date": "2026-10-16",
+      "query": "\"10.5194/ejm-35-143-2023\" correction",
+      "filters": "none",
+      "coverage": "returned results only; no exhaustive or full citation-index claim"
+    },
+    {
+      "provider": "web search",
+      "date": "2026-10-16",
+      "query": "\"donnayite\" microbial bioleaching transformation synthesis",
+      "filters": "none",
+      "coverage": "returned results only; no exhaustive or full citation-index claim"
+    },
+    {
+      "provider": "publisher direct",
+      "date": "2026-10-16",
+      "query": "https://ejm.copernicus.org/articles/35/133/2023/ and /35/143/2023/; follow official PDF/XML/ZIP links",
+      "coverage": "both complete primary articles and linked supplements"
+    },
+    {
+      "provider": "Crossref works API",
+      "date": "2026-10-16",
+      "query": "10.5194/ejm-35-133-2023 and 10.5194/ejm-35-143-2023",
+      "coverage": "both DOI records; relation empty and no update-to/updated-by notice in returned metadata"
+    },
+    {
+      "provider": "IMA-CNMNC",
+      "date": "2026-10-16",
+      "query": "https://cnmnc.units.it/ current master-list link",
+      "coverage": "September 2026 list; definitions page 1, Alice row page 6 and Donnayite row page 59"
+    }
+  ],
+  "search_artifacts": [
+    {
+      "path": "/private/tmp/cmm-round111-ree-research/search-log.json",
+      "bytes": 2452,
+      "sha256": "a699f4e4609526c4c08737a705b722928705600b2190f0ceef245f44fb2bd71e"
+    },
+    {
+      "path": "/private/tmp/cmm-round111-ree-research/web-primary-output.txt",
+      "bytes": 26471,
+      "sha256": "0465f11f36f477a7bfa171e9c1b77ba1dd4f1ac048d9f6871b6ffe1d3180da9a"
+    },
+    {
+      "path": "/private/tmp/cmm-round111-ree-research/web-counter-output.txt",
+      "bytes": 27869,
+      "sha256": "ef42c3f1987fb5cb04a3207f08ca5ee0f340acc89b1621ed8d42ee5559f85819"
+    }
+  ],
+  "correction_scope": "Fresh bounded search queries, current publisher pages and Crossref metadata exposed no affecting published correction/retraction in returned results. This does not establish global absence. Intrinsic table/CIF discrepancies remain explicit.",
+  "sources": [
+    {
+      "key": "lykova2023part1",
+      "doi": "10.5194/ejm-35-133-2023",
+      "title": "Mckelveyite group minerals – Part 1: Nomenclature and new data on donnayite-(Y)",
+      "authors": [
+        "Inna Lykova",
+        "Ralph Rowe",
+        "Glenn Poirier",
+        "Gerald Giester",
+        "Kelsie Ojaste",
+        "Henrik Friis"
+      ],
+      "published": "2023-02-28",
+      "role": [
+        "material identity",
+        "primary natural-specimen characterization"
+      ],
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round111-ree-research/donnayite2023.pdf",
+          "bytes": 3948333,
+          "sha256": "cc35092a802a8ec1ba45a53c7a1b2b4766598a24125832435660af7a2fc6c8b6"
+        },
+        {
+          "path": "/private/tmp/cmm-round111-ree-research/donnayite2023.xml",
+          "bytes": 219439,
+          "sha256": "956df1256fae968d58c8b6e65ad296bb89abf035045e53200741ff361181f98d"
+        },
+        {
+          "path": "/private/tmp/cmm-round111-ree-research/donnayite2023-supplement.zip",
+          "bytes": 281731,
+          "sha256": "93cc440970d91eef227e4c827325c0fdfef4e611b98b785b2f50428b86d3fd47"
+        },
+        {
+          "path": "/private/tmp/cmm-round111-ree-research/donnayite-crossref.json",
+          "bytes": 10703,
+          "sha256": "f1b9f249d45debb8b81d5be59890fa06140793a4f7d047a08c84159e078f612e"
+        }
+      ],
+      "inspection": "Complete 10-page text, all Tables 1–8 and Figures 1–4; figure/table pages visually checked. Official CIF identity/refinement/occupancy fields, complete Table S1 OOXML cells, and full powder-pattern numeric shape checked. No independent refinement; DOCX was not visually rendered.",
+      "accepted_claims": [
+        {
+          "claim": "Donnayite identity and reassigned type collection",
+          "locator": "pp.133–135; Table 1",
+          "support": "Six of seven catalogued cotype specimens are alicewilsonite-(YCe); CMNMC 39396 becomes donnayite holotype under approved proposal 22-F."
+        },
+        {
+          "claim": "Holotype composition",
+          "locator": "methods pp.134–135, Table 2 p.136",
+          "support": "17 microprobe analyses, Y2O3 mean 10.18 wt%; 20 kV, 10 nA, 30 micrometre beam; stoichiometric CO2/H2O, not direct measurements."
+        },
+        {
+          "claim": "Separate natural structural specimen",
+          "locator": "pp.135–138, Table 5, Figures 2–4; official CIF",
+          "support": "Holotype R1 .139 unsuccessful model; CMNMC 90405 yielded P1 model at 293 K, R1 .055 for 3366 observed reflections. Split sites, proxies and unlocated H qualify model."
+        }
+      ],
+      "limits": [
+        "Original 1978 article was not separately acquired. Its historical conflation is accepted only as the 2023 investigators' reassessment, not an independent reread of 1978 measurements.",
+        "Table 5 Rint .092 versus official CIF equivalent-reflection agreement .0342 remains unresolved; do not choose a preferred number for downstream quantitative comparison.",
+        "CSD 2223388 is reported by the article but was not independently resolved through ICSD; no extra accession is asserted.",
+        "Part 1 Table 8 lists Mont Saint-Hilaire for alicewilsonite-(YLa), whereas its introduction and current IMA indicate Australia. That other-species locality is excluded from accepted owners."
+      ],
+      "license": "Article CC BY 4.0; official supplement cover says CC BY 4.0 and warns individual parts may differ. Raw files remain outside Git; IMA redistribution terms not assessed."
+    },
+    {
+      "key": "lykova2023part2",
+      "doi": "10.5194/ejm-35-143-2023",
+      "title": "Mckelveyite group minerals – Part 2: Alicewilsonite-(YCe), Na2Sr2YCe(CO3)6·3H2O, a new species",
+      "authors": [
+        "Inna Lykova",
+        "Ralph Rowe",
+        "Glenn Poirier",
+        "Henrik Friis",
+        "Kate Helwig"
+      ],
+      "published": "2023-02-28",
+      "role": [
+        "material identity",
+        "primary natural-specimen characterization"
+      ],
+      "artifacts": [
+        {
+          "path": "/private/tmp/cmm-round111-ree-research/alicewilsonite2023.pdf",
+          "bytes": 11799147,
+          "sha256": "d783f7c74f4708ebcdd212d391aff0055a038a1c4ae921d00e819e99b409a47f"
+        },
+        {
+          "path": "/private/tmp/cmm-round111-ree-research/alicewilsonite2023.xml",
+          "bytes": 268833,
+          "sha256": "8acd2d21d941b47961a755c7977e4d4286849398f574f519bc40ea067fc999e3"
+        },
+        {
+          "path": "/private/tmp/cmm-round111-ree-research/alicewilsonite2023-supplement.zip",
+          "bytes": 490711,
+          "sha256": "a1eb54562b8b0cbc3822dba9b9da6fe53b05f4c18b49bdb974497565d81c8867"
+        },
+        {
+          "path": "/private/tmp/cmm-round111-ree-research/alicewilsonite-crossref.json",
+          "bytes": 17214,
+          "sha256": "89d8cb3d880ca27b38482a7a0e450e56e427e09c043b80d98e2a846c8f0f7e3e"
+        }
+      ],
+      "inspection": "Complete 13-page text; all Tables 1–6 and Figures 1–6 visually checked. Official CIF identity, formula, cell, occupancies, hydrogen/quality replies and refinement fields checked; full powder-pattern numeric shape checked. No independent diffraction refinement.",
+      "accepted_claims": [
+        {
+          "claim": "Approved distinct identity",
+          "locator": "p.143 introduction and p.145 nomenclature; IMA 2026 p.6",
+          "support": "IMA 2020-055, holotype CMNMC 53660. Y and Ce distinguish different sites; no elemental-commodity equivalence."
+        },
+        {
+          "claim": "Holotype arm and measured composition",
+          "locator": "methods pp.144–146; Figures 1–2; Table 1 p.147",
+          "support": "Zoned crystal, Alice outer rim versus Donnayite/gaidonnayite inner assemblage; diffraction grain selected from Alice rim. Six microprobe analyses give Y2O3 8.52 wt%, Ce2O3 9.52 wt%; volatiles calculated and infrared water support qualitative."
+        },
+        {
+          "claim": "Qualified structure",
+          "locator": "pp.148–152, Tables 3–5, Figures 5–6; official CIF",
+          "support": "P1, 293 K, R1 .055, 3753 observed reflections, 87:13 twin model. Poor crystal quality, omitted Ca, Ce/Dy scattering proxies and unlocated hydrogen limit exact model chemistry."
+        }
+      ],
+      "limits": [
+        "Sr1 prose p.150 uses Sr.73Ce.23Ba.05 but Table 4 and CIF use Sr.73Ce.22Ba.05; the discrepancy is retained, not silently normalized.",
+        "Table 3 Rint .062 differs from .0394 in the CIF equivalent-reflection field; .0394 also appears after 4117 in the table unique-reflections cell. Underlying definitions/processing versions need clarification.",
+        "Table 6 Donnayite peak d 3.025 differs from Part 1 Table 4 d 3.052. This comparative number is excluded; it does not change accepted species separation.",
+        "Figure 2 caption describes partial replacement by gaidonnayite while prose qualifies possible replacement; no time-resolved controlled transformation is established.",
+        "p.148 HCl dissolution with effervescence at room temperature lacks concentration, time, loading and yield; no structured extraction/recovery mechanism accepted.",
+        "Natural epitaxy occurs in both directions at Mont Saint-Hilaire, with no consistent genetic trend. Proposed high-temperature disordered polymorphism is not observed experimental conversion."
+      ],
+      "license": "Article CC BY 4.0; official supplement cover states CC BY 4.0 with individual-part caveat. Raw files remain outside Git."
+    },
+    {
+      "key": "ima2026",
+      "role": [
+        "material identity authority"
+      ],
+      "version": "September 2026",
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+      "artifact": {
+        "path": "/private/tmp/cmm-round111-ree-research/ima2026-09.pdf",
+        "bytes": 3129886,
+        "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+      },
+      "homepage": {
+        "path": "/private/tmp/cmm-round111-ree-research/cnmnc.html",
+        "bytes": 26639,
+        "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9"
+      },
+      "inspection": "Fresh current-link acquisition; PDF244 pages, definitions p.1 and target rows pp.6/59 read and visually checked.",
+      "accepted_claims": {
+        "donnayite-y": {
+          "status": "Rn (renamed)",
+          "authority_value": "1987 s.p.",
+          "curie": null,
+          "formula": "NaSr3CaY(CO3)6(H2O)3"
+        },
+        "alicewilsonite-yce": {
+          "status": "A (approved)",
+          "curie": "IMA:2020-055",
+          "formula": "Na2Sr2YCe(CO3)6(H2O)3"
+        }
+      },
+      "limits": "A special-procedure year is not converted to a unique IMA approval CURIE. Mineral authority is not a criticality list; no criticality claim is made. Current water notation differs from historical dot-water typography without constituting a new measured composition.",
+      "license": "not assessed; source PDF is retained outside Git"
+    }
+  ],
+  "acquisition": {
+    "receipts": [
+      {
+        "path": "/private/tmp/cmm-round111-ree-research/acquisition-01.json",
+        "bytes": 1702,
+        "sha256": "b02dc3fce27f4069c134a27fae758cb8437b1c6c3497df6cb0da42a6e4ec2d13"
+      },
+      {
+        "path": "/private/tmp/cmm-round111-ree-research/acquisition-02.json",
+        "bytes": 2565,
+        "sha256": "72d1fa70de4d15fa2db9941a737692cb08dbaa5f6282bcdb3d2469ca27b08799"
+      },
+      {
+        "path": "/private/tmp/cmm-round111-ree-research/acquisition-03.json",
+        "bytes": 3952,
+        "sha256": "0b3307740af378bfd15b40d38ac7c02b13c51cf7de8789237372fedcdb90f943"
+      }
+    ],
+    "content_inventory": {
+      "path": "/private/tmp/cmm-round111-ree-research/source-content-inventory.json",
+      "bytes": 2842,
+      "sha256": "9d681ff6c24a379b003f5346035d7abdbd68d8d3ceffbe0cdab1397735a0a8d8"
+    },
+    "supplement_inspection": {
+      "path": "/private/tmp/cmm-round111-ree-research/supplement-inspection.json",
+      "bytes": 1860,
+      "sha256": "1a3844e23aded6856f743b29142926cb3a3854ab943bad58e3558b61fb68712c"
+    },
+    "failures": "Initial sandbox network/DNS failures preserved in acquisition-01.json; authorized public-source retrieval then succeeded. No login bypass or author contact.",
+    "formats": "Verified PDF/XML/ZIP magic and successful official routes; both ZIPs inspected and safely extracted."
+  },
+  "data_fitness": {
+    "stable_keys": "DOIs identify the two separate primary studies; specimen catalogue IDs identify distinct natural samples, not independent repeats. CIF, XY and article are related artifacts of each study.",
+    "powder_data": "Donnayite 9500 numeric XY points (2theta 10.0100002–104.9999981); Alice 24644 (7.9600000–131.1749973). All numeric values finite and abscissas increasing. Tiny negative processed intensities are not censored concentrations. No new fitting was done.",
+    "schema_mapping": "Identity, description, sources, Alice IMA identifier and canonical CREATE provenance fit the existing schema. Assay wt% remains specimen-labelled prose rather than incompatible concentration observations. No schema change demonstrated."
+  },
+  "validation": {
+    "baseline": {
+      "path": "/private/tmp/cmm-round111-baseline.json",
+      "bytes": 930,
+      "sha256": "3ab645b29b9438a269b1dfd736ac5c2d7fb19e3165d1fb691fb2d2b8bf387413"
+    },
+    "baseline_log_sha256": "78c9567b3cb9b67ae8fc1324dbaf6458a1bb8b5e9eff4765e8b84e6c7941ddd9",
+    "named": {
+      "path": "/private/tmp/cmm-round111-ree-research/named-validation.json",
+      "bytes": 604,
+      "sha256": "5e81f35c918cc9ef4d7c024bd5dcc91f50d643e3678c19b4c9d1eed4eac68350"
+    },
+    "named_log_sha256": "4022ad8ba440a72bf4f1c8b321e447df36133d812f52f21611becf103551b042",
+    "result": "2 records; 0 failed",
+    "remaining": "Final batch gates and independent scientific reviews are pending; this source dossier is not acceptance."
+  },
+  "ranked_next_actions": [
+    {
+      "priority": 1,
+      "action": "Independent record review against frozen owners, exact primary artifacts and final batch gate."
+    },
+    {
+      "priority": 2,
+      "action": "Reconcile both articles' agreement fields and Alice Sr1 occupancy before detailed quantitative structural reuse; bounded source issue draft prepared outside Git."
+    },
+    {
+      "priority": 3,
+      "action": "Assess accessible original alicewilsonite-(YLa) and bainbridgeite-(YCe) descriptions as distinct future owners after deduplication; Part 1 Table 8 locality must not be inherited."
+    },
+    {
+      "priority": 4,
+      "action": "Acquire complete ancylite-(La)/(Ce) original/structure literature before curation. Only discovery leads were assessed this pass; not an exhaustion claim."
+    }
+  ],
+  "deferred_mechanisms": "No controlled biological extraction/recovery evidence was verified for this pair. HCl qualitative reactivity and natural intergrowths do not provide a quantitative process arm or deployment evidence."
+}

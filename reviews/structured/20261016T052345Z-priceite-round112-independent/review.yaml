@@ -1,0 +1,365 @@
+schema_version: 1.0.0
+review_id: 20261016T052345Z-priceite-round112-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of priceite
+started_at: '2026-10-16T05:16:42.596909Z'
+finished_at: '2026-10-16T05:23:45.489021Z'
+reviewer:
+  identity: codex /root/round104_ree
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_borates; no edits
+    to the reviewed borate owner/history/dossier. Reviewer authored unrelated bainbridgeite-(YCe)
+    and alicewilsonite-(YLa) records. Source acquisition was shared, then original
+    articles and authority were independently inspected.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: e3a638e04d9e64cbda7c26d277bdf4f5e7d1e3ae
+  state: working_tree
+  inputs:
+  - path: data/records/priceite.yaml
+    sha256: 7287e6ab6c4b9fa688cff38883ef03a979c766aee23522d7da1cbad278e77dac
+    role: target
+  - path: history/records/priceite/2026-10-16T051142Z-codex-57aa7f.yaml
+    sha256: 0f80512a1a04027337ef5d01c70a3ad48adb1d698b2b9a862fd841049515433d
+    role: context
+  - path: research/sources/round112-borates/20261016T051609Z-source-investigation.json
+    sha256: 9d848776b9ceaf5fcdd917792a853820b5b7584453f7f900531134ab9fdfcfa2
+    role: context
+  - path: research/sources/round112-borates/20261016T051609Z-source-investigation.md
+    sha256: d2bbfb37a0f9ebd510ada7099535d248b886b880e620a4efd4ec7c2620ed8b76
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:priceite
+  path: data/records/priceite.yaml
+  label: Priceite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/priceite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/priceite/2026-10-16T051142Z-codex-57aa7f.yaml
+    role: canonical_history
+scope:
+  description: Exact frozen priceite owner, source claims and canonical/inline creation
+    provenance; wider follow-up leads and hosted publication excluded.
+  selection: Assigned target captured with native inspect before independent scientific
+    assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:priceite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/priceite.yaml
+  locator: Complete exact working-tree bytes at /private/tmp/CMMMech-expansion-round112-20261016/data/records/priceite.yaml
+  accessed_at: '2026-10-16T05:23:45.489021Z'
+  support: supports
+  summary: Identity, scientific descriptions, source-level claims, mechanism scope
+    and inline CREATE independently checked.
+  snapshot_sha256: 7287e6ab6c4b9fa688cff38883ef03a979c766aee23522d7da1cbad278e77dac
+- evidence_id: history
+  kind: record_content
+  reference: history/records/priceite/2026-10-16T051142Z-codex-57aa7f.yaml
+  locator: Complete canonical CREATE at /private/tmp/CMMMech-expansion-round112-20261016/history/records/priceite/2026-10-16T051142Z-codex-57aa7f.yaml
+  accessed_at: '2026-10-16T05:23:45.489021Z'
+  support: supports
+  summary: Actual actor codex, GPT-6/codex metadata, timestamp and target correspond
+    to this addition; inline and canonical events remain distinct.
+  snapshot_sha256: 0f80512a1a04027337ef5d01c70a3ad48adb1d698b2b9a862fd841049515433d
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round112-borates/20261016T051609Z-source-investigation.json
+  locator: Paired source investigation; acquisition and access limits checked independently
+    against original artifacts. /private/tmp/CMMMech-expansion-round112-20261016/research/sources/round112-borates/20261016T051609Z-source-investigation.json
+  accessed_at: '2026-10-16T05:23:45.489021Z'
+  support: context_only
+  summary: Context for source provenance and deferred evidence; not a substitute for
+    the original papers.
+  snapshot_sha256: 9d848776b9ceaf5fcdd917792a853820b5b7584453f7f900531134ab9fdfcfa2
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round112-ree-research/borate-review-search.json
+  locator: Three exact DOI correction/erratum/retraction queries and one microbial
+    countersearch with returned sets retained.
+  accessed_at: '2026-10-16T05:23:45.489021Z'
+  support: context_only
+  summary: No affecting notice identified in returned sets. Known internal conflicts
+    remain explicit; no universal absence claim.
+  snapshot_sha256: 0afa92fe06bd2c29c202476a1c030fce38a4146ee1f3eab60cb2050f87ff5582
+  search_scope: Returned web sets for four queries recorded verbatim; no date or domain
+    filter. Publisher metadata and secondary search snippets were not scientific support.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round112-ree-research/borate-review-dedup.txt
+  locator: Hidden, ignored and followed search across worktree records, research,
+    reviews and history; curator broader dedup includes original-main ignored reports
+    and cited raw roots.
+  accessed_at: '2026-10-16T05:23:45.489021Z'
+  support: context_only
+  summary: Target identities occur in the assigned owners; other current-record references
+    are contextual. Curator broader pre-curation dedup was independently inspected.
+  snapshot_sha256: 3fb979ef19a1c8f19c3e45e6da7e390d48f2d2264cf1c15a9920fac7270e70db
+  search_scope: Bounded text roots and identifiers/DOIs recorded in paired search
+    receipt; not the whole filesystem or unextracted binary content.
+- evidence_id: source_paths
+  kind: record_content
+  reference: /private/tmp/cmm-round112-ree-research/borate-review-source-path-check.json
+  locator: All cited absolute artifact paths and SHA256 values in the source dossier
+    independently checked.
+  accessed_at: '2026-10-16T05:23:45.489021Z'
+  support: context_only
+  summary: Raw provenance is readable and exact; this does not substitute for scientific
+    inspection.
+  snapshot_sha256: e54baf17b70cbd3652118415b11064ac90588329ee861640c3dd216d42fe9dbe
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round112-ree-research/borate-review-named-validation.json
+  locator: Independent two-owner strict validation with exact hashes and actual subprocess
+    timestamps.
+  accessed_at: '2026-10-16T05:23:45.489021Z'
+  support: supports
+  summary: Two records checked; zero failed. 2026-10-16T05:19:58.278325Z through 2026-10-16T05:20:02.729204Z
+  snapshot_sha256: 96800794129767e0461d067387bc64032caadb855b3bbf45c071666423a3ab51
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round112-final-gates.json
+  locator: Coordinator terminal receipt; base, worktree, exact four commands, successful
+    outcomes, unchanged owner hashes and log SHA256 independently verified. Log /private/tmp/cmm-round112-final-gates.log
+    SHA256 f6e95074e1034b872d873b0caf50b42b2bc1ce6aeab595195dc489fa37c2614b
+  accessed_at: '2026-10-16T05:23:45.489021Z'
+  support: supports
+  summary: Actual completed local batch, not an inferred check or hosted publication
+    result.
+  snapshot_sha256: 5211cc2ab6a7cc4d7143f4e604ef6abbbd51ce3e9cd8727d5ef9083acd14c2b5
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/cm/vol40/CM40_1199.pdf
+  locator: Complete eight-page original pp. 1199–1206, all text, Tables 1–4 and Figures
+    1–5 independently read/viewed. DOI 10.2113/gscanmin.40.4.1199. /private/tmp/cmm-round112-borates-research/priceite2002-rruff.pdf
+  accessed_at: '2026-10-16T05:23:45.489021Z'
+  support: supports
+  summary: Natural Sultancayir specimen G3769, synchrotron powder refinement; geometric
+    unrefined boron sites and absent located H atoms limit the atomic model. Abstract
+    [100] versus body [001] chain directions remain unresolved.
+  snapshot_sha256: 6e15dcefddf466cf29497604ff071bd24f34aee93d525f2fc8ac0487c47c921c
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: PDF pages 1 and 177, status/year definitions and Priceite row independently
+    visually checked. /private/tmp/cmm-round112-borates-research/ima2026-09.pdf
+  accessed_at: '2026-10-16T05:23:45.489021Z'
+  support: supports
+  summary: Grandfathered Ca2B5O7(OH)5(H2O) mineral; 1873 is an original-description
+    year. Pandermite is a historical synonym, not a second owner.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: fuka
+  kind: primary_source
+  reference: https://www.jstage.jst.go.jp/article/jmps/112/1/112_160902/_pdf
+  locator: Complete five-page original text; Figures 1–2 and Tables 1–2 visually checked,
+    especially chemistry/methods on p. 23. DOI 10.2465/jmps.160902. /private/tmp/cmm-round112-borates-research/priceite-fuka2017.pdf
+  accessed_at: '2026-10-16T05:23:45.489021Z'
+  support: supports
+  summary: Separate natural Fuka specimen, eight EPMA results with B2O3 49.95 and
+    CaO 32.35 wt% means; water by difference and density calculated, not directly
+    measured. Formation temperature is a geological interpretation, not an experiment
+    in this paper.
+  snapshot_sha256: 33fe59007bae24193ba57ca07b463babcb29999016987f8d3110ba25d4977b37
+- evidence_id: metadata
+  kind: authority
+  reference: https://api.crossref.org/works/10.2113/gscanmin.40.4.1199
+  locator: Current curator-acquired DOI metadata independently read. /private/tmp/cmm-round112-borates-research/priceite2002-crossref.json
+  accessed_at: '2026-10-16T05:23:45.489021Z'
+  support: context_only
+  summary: Title, authorship and 2002 publication identity agree with original; no
+    affecting update identified in this bounded metadata check.
+  snapshot_sha256: f0c35a4bd93cc0983eeed227a12b189ef1bb0280cee6a0520726772f12af1fdb
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/probertite.yaml data/records/priceite.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Two records checked with zero failures; subprocess receipt and exact hashes
+    verified.
+  target_ids:
+  - cmmmech:priceite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Final batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T05:17:37.662362+00:00 through 2026-10-16T05:23:06.499523+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:priceite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Final batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T05:23:06.499548+00:00 through 2026-10-16T05:23:16.807287+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:priceite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Final batch command 3
+  command: uv run --locked cmmmech validate-history --base e3a638e04d9e64cbda7c26d277bdf4f5e7d1e3ae
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T05:23:16.807325+00:00 through 2026-10-16T05:23:22.416153+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:priceite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Final batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T05:23:22.416175+00:00 through 2026-10-16T05:23:27.151993+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:priceite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species, synonym and distinct samples
+  outcome: supported
+  summary: Current formula and grandfathered status are supported. Pandermite is historical
+    synonym; Turkish G3769 and Fuka aggregates are separate material streams.
+  target_ids:
+  - cmmmech:priceite
+  evidence_ids:
+  - record
+  - ima
+  - primary
+  - fuka
+- assessment_id: structure
+  area: evidence
+  topic: Powder model boundaries
+  outcome: supported
+  summary: The model's four tetrahedral/one triangular B sites and Rwp 0.042/Rp 0.030
+    are faithfully represented. Geometrically assigned unrefined B and absence of
+    located H atoms prevent overstating atomic precision.
+  target_ids:
+  - cmmmech:priceite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: direction
+  area: evidence
+  topic: Unresolved source conflict
+  outcome: supported
+  summary: Abstract [100] and main-text [001] chain directions genuinely conflict;
+    owner preserves the conflict and selects neither. The separate 2011 model has
+    not been silently substituted.
+  target_ids:
+  - cmmmech:priceite
+  evidence_ids:
+  - record
+  - primary
+  - dossier
+- assessment_id: quantity
+  area: quantity
+  topic: Measured versus calculated composition
+  outcome: supported
+  summary: Fuka eight-analysis means match Table 2. H2O 17.56 wt% is by difference
+    due to insufficient pure material, while 2.486 g/cm3 density is calculated. No
+    direct water/density measurement is claimed.
+  target_ids:
+  - cmmmech:priceite
+  evidence_ids:
+  - record
+  - fuka
+- assessment_id: scope
+  area: scope
+  topic: Geological interpretation versus process
+  outcome: supported
+  summary: The Fuka alteration and 100–190 °C or lower discussion is an interpretation
+    using other studies, not a controlled transformation arm. Unavailable thermal
+    sources and sparse gowerite additional arms remain deferred.
+  target_ids:
+  - cmmmech:priceite
+  evidence_ids:
+  - record
+  - fuka
+  - dossier
+- assessment_id: criticality
+  area: grounding
+  topic: No inherited criticality or biology
+  outcome: supported
+  summary: No jurisdiction/list/edition claim is inherited from boron, and no microbial
+    extraction, recovery or industrial deployment is asserted.
+  target_ids:
+  - cmmmech:priceite
+  evidence_ids:
+  - record
+  - ima
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen inputs and completed checks
+  outcome: supported
+  summary: Native inspection captured exact owner, canonical CREATE history, paired
+    dossier and schema bytes before judgment. All captured inputs remain unchanged.
+    Independent named validation and the actual completed coordinator batch/history
+    checks passed. Saved-review validation and publication are later gates.
+  target_ids:
+  - cmmmech:priceite
+  evidence_ids:
+  - record
+  - history
+  - dossier
+  - named
+  - batch
+findings: []
+actions: []
+summary: Priceite passes with limitations as an identity-only owner. Two complete
+  primary studies support distinct natural specimen characterization, while model
+  constraints, conflicting chain directions and calculated Fuka water/density remain
+  explicit. No corrective owner defect was found.
+limitations:
+- The 2002 source chain-direction conflict is unresolved; no machine-readable atomic
+  deposit or complete 2011 source was acquired in this pass.
+- Fuka water and density are calculated and its formation conditions interpreted;
+  those limits prohibit direct-measurement or controlled-process claims.
+- Unavailable thermal originals, sparse additional synthesis arms and other geological
+  specimens are excluded from accepted quantitative mechanisms.
+- Shared source acquisition is disclosed. Bounded correction and hidden/ignored dedup
+  searches do not establish exhaustive absence.
+- Working-tree review at the retained base. Record validation is separate from scientific
+  truth; native review-check and committed-head/hosted publication remain separate.
+notes:
+- No owner/history/dossier correction was needed for these borate targets. Unavailable
+  original deposits and retained source conflicts remain limitations.
+- No self-authored REE record is scientifically reviewed in this observation.

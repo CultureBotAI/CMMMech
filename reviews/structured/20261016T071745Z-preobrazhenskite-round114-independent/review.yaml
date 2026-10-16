@@ -1,0 +1,432 @@
+schema_version: 1.0.0
+review_id: 20261016T071745Z-preobrazhenskite-round114-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of preobrazhenskite
+started_at: '2026-10-16T06:56:13.288806Z'
+finished_at: '2026-10-16T07:17:45.886713Z'
+reviewer:
+  identity: codex /root/round104_ree
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_borates; no edits
+    to reviewed borate owners/history/dossier. Reviewer authored separate ancylite-Ce/calcioancylite-La
+    records. Source acquisition was shared but full originals/authority/CIFs independently
+    inspected.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 93f90797512dc8d1db3df9ce2e4994c475b1a4fe
+  state: working_tree
+  inputs:
+  - path: data/records/preobrazhenskite.yaml
+    sha256: 6f42fed83cf82a3c8bf9e4fd5fef880aefd76e429ed6e1199c5f2c4834697e06
+    role: target
+  - path: history/records/preobrazhenskite/2026-10-16T065154Z-codex-17a4a3.yaml
+    sha256: 909378f8f28f17f17ad0b0085cf71c238ee421a0d7cc0941b8fb3fd2871468be
+    role: context
+  - path: history/records/preobrazhenskite/2026-10-16T070309Z-codex-c45611.yaml
+    sha256: 27192c40c12cd027ba66dced69c84731db1ca28ea15e4c0aa1551e18905d66fa
+    role: context
+  - path: research/sources/round114-borates/20261016T065455Z-source-investigation.json
+    sha256: 7c29beb09eb85175504d11999e554a71d7b4866e558485e181faf7a18ce94456
+    role: context
+  - path: research/sources/round114-borates/20261016T065455Z-source-investigation.md
+    sha256: 54cfa25ef677ebdcd17d4542dec875f3f10b4e13f07f0fc9e2bac080a6c7eb27
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:preobrazhenskite
+  path: data/records/preobrazhenskite.yaml
+  label: Preobrazhenskite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/preobrazhenskite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/preobrazhenskite/2026-10-16T065154Z-codex-17a4a3.yaml
+    role: canonical_history
+scope:
+  description: Complete exact preobrazhenskite scientific owner, source claims and
+    canonical/inline history; final corrected context included. Unadmitted follow-up
+    leads and publication excluded.
+  selection: Assigned frozen record captured through native inspect before initial
+    judgment and corrected-input reassessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:preobrazhenskite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/preobrazhenskite.yaml
+  locator: Complete exact current working-tree owner at /private/tmp/CMMMech-expansion-round114-20261016/data/records/preobrazhenskite.yaml
+  accessed_at: '2026-10-16T07:17:45.886713Z'
+  support: supports
+  summary: Identity, source-qualified scientific claims, material boundary and history
+    independently reviewed.
+  snapshot_sha256: 6f42fed83cf82a3c8bf9e4fd5fef880aefd76e429ed6e1199c5f2c4834697e06
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/preobrazhenskite/2026-10-16T065154Z-codex-17a4a3.yaml
+  locator: Complete canonical history sidecar at /private/tmp/CMMMech-expansion-round114-20261016/history/records/preobrazhenskite/2026-10-16T065154Z-codex-17a4a3.yaml
+  accessed_at: '2026-10-16T07:17:45.886713Z'
+  support: supports
+  summary: Actual codex/GPT-6 actor, timestamp, target and event checked separately
+    from inline history.
+  snapshot_sha256: 909378f8f28f17f17ad0b0085cf71c238ee421a0d7cc0941b8fb3fd2871468be
+- evidence_id: history1
+  kind: record_content
+  reference: history/records/preobrazhenskite/2026-10-16T070309Z-codex-c45611.yaml
+  locator: Complete canonical history sidecar at /private/tmp/CMMMech-expansion-round114-20261016/history/records/preobrazhenskite/2026-10-16T070309Z-codex-c45611.yaml
+  accessed_at: '2026-10-16T07:17:45.886713Z'
+  support: supports
+  summary: Actual codex/GPT-6 actor, timestamp, target and event checked separately
+    from inline history.
+  snapshot_sha256: 27192c40c12cd027ba66dced69c84731db1ca28ea15e4c0aa1551e18905d66fa
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round114-borates/20261016T065455Z-source-investigation.json
+  locator: Complete source handoff, paired Markdown and all30 absolute artifact/hash
+    references. /private/tmp/CMMMech-expansion-round114-20261016/research/sources/round114-borates/20261016T065455Z-source-investigation.json
+  accessed_at: '2026-10-16T07:17:45.886713Z'
+  support: context_only
+  summary: Original evidence, provenance and deferred leads independently assessed;
+    context is not primary scientific proof.
+  snapshot_sha256: 7c29beb09eb85175504d11999e554a71d7b4866e558485e181faf7a18ce94456
+- evidence_id: initial_capture
+  kind: record_content
+  reference: /private/tmp/cmm-round114-ree-research/borate-review-preobrazhenskite-inspect.json
+  locator: Native capture before first judgment; exact original record/history/context
+    bytes retained.
+  accessed_at: '2026-10-16T07:17:45.886713Z'
+  support: context_only
+  summary: Initial observation is not overwritten by the corrected-input capture.
+  snapshot_sha256: 4032ac66fcf393a41623b8f644dbdbe09c74421362fadd5b46ea8c2ad70a4bd1
+- evidence_id: fresh_capture
+  kind: record_content
+  reference: /private/tmp/cmm-round114-ree-research/borate-review-preobrazhenskite-corrected-inspect.json
+  locator: Additive capture before correction reassessment, including current dossier
+    and any EDIT sidecar.
+  accessed_at: '2026-10-16T07:17:45.886713Z'
+  support: context_only
+  summary: Exact final review inputs remain unchanged after independent inspection.
+  snapshot_sha256: acc8eb18dcd0cd636ef0c5cf8d1310deb78b667aca87b925403c7030b6771409
+- evidence_id: correction
+  kind: record_content
+  reference: /private/tmp/cmm-round114-ree-research/borate-review-correction485-inspection.json
+  locator: Exact original owner/dossier retention, current source locator comparison,
+    canonical EDIT and independent full-page reinspection.
+  accessed_at: '2026-10-16T07:17:45.886713Z'
+  support: context_only
+  summary: Only source locators and provenance changed; kaliborite owner/history stayed
+    identical. Original source labels support the revised references.
+  snapshot_sha256: a742d79cb34b8ff4f34a8e968501836bfcf1761bc72242cc0ed5ef20b5ef841f
+- evidence_id: source_paths
+  kind: record_content
+  reference: /private/tmp/cmm-round114-ree-research/borate-review-source-path-check.json
+  locator: Thirty absolute source/history/receipt references independently checked
+    against current bytes.
+  accessed_at: '2026-10-16T07:17:45.886713Z'
+  support: context_only
+  summary: All listed artifacts readable and hashes match.
+  snapshot_sha256: 6c62e0d61eb6f8e150c74e685d5888f0c32b3464fe08c1a7818456ecd85bd3d1
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round114-ree-research/borate-review-search-results.json
+  locator: 'Four fresh web queries: Kaliborite1994 correction/erratum; Preobrazhenskite1994
+    hydrogen correction; kaliborite thermal decomposition1994; preobrazhenskite microbial
+    bioleaching.'
+  accessed_at: '2026-10-16T07:17:45.886713Z'
+  support: context_only
+  summary: Returned sets did not identify an affecting formal notice or verified species-specific
+    microbial experiment. Internal primary-source conflicts remain explicit; search
+    is bounded.
+  snapshot_sha256: 504e6edd7cba810812d8e82f349ef406752323e9969205d7c3d0777a46565761
+  search_scope: Four exact query sets retained verbatim; no exhaustive literature
+    or absence claim. Search snippets were not admitted as experimental proof.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round114-ree-research/borate-review-dedup.txt
+  locator: Current worktree data/records, research, reviews and history searched with
+    rg --no-ignore --hidden --follow -l; species names, both COD accessions and thermal
+    DOI. Curator pre-creation inventory and cited raw-root/ignored-main-report contexts
+    also inspected.
+  accessed_at: '2026-10-16T07:17:45.886713Z'
+  support: context_only
+  summary: Nine current matching paths include the two assigned owners and provenance/context;
+    no other current owner identified within this bounded search.
+  snapshot_sha256: fb5f861c51ce8689c13e2fca71cb72c70383751950fb0c6becaed393a39808e2
+  search_scope: Text-bearing scoped roots with hidden/ignored files and followed symlinks;
+    no claim about the whole filesystem or unextracted binaries.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Current list definitionsp1 and Preobrazhenskitep177 visually checked; bytes
+    match the independently downloaded REE authority. /private/tmp/cmm-round114-borates-research/ima2026-09.pdf
+  accessed_at: '2026-10-16T07:17:45.886713Z'
+  support: supports
+  summary: Current grandfathered mineral identity, formula and original-description
+    year verified; year is not an approval ID.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary
+  kind: primary_source
+  reference: https://www.frankhawthorne.com/_files/ugd/70a3a9_52f962a50804426ca437455347705cfe.pdf
+  locator: Complete ten-page Burns-Hawthorne1994 original pp387–396; all nine figures/six
+    tables read and viewed. After correction independently re-viewed Table5p390, Figures3–4p392,
+    Figures5–6p393, IRFigure7p394, Table6/Figures8–9p395. /private/tmp/cmm-round114-borates-research/preobrazhenskite1994.pdf
+  accessed_at: '2026-10-16T07:17:45.886713Z'
+  support: supports
+  summary: Natural Inder Pbcn crystal, H-bond interpretation and fittedIR limits supported;
+    correct page/figure labels verified. Source inequality, H-label ambiguity and
+    uncertainty about true symmetry retained.
+  snapshot_sha256: 41426548bb763451ef85c7ac8229955dc636b85a02324a2191cd5a212e1a2890
+- evidence_id: cif
+  kind: database
+  reference: https://www.crystallography.net/cod/9004294.cif
+  locator: Complete revision293658 CIF source identity/cell/allatom/displacement loops.
+    /private/tmp/cmm-round114-borates-research/preobrazhenskite9004294.cif
+  accessed_at: '2026-10-16T07:17:45.886713Z'
+  support: supports
+  summary: Derivative AMCSD0005367 deposit for the1994 structure, B11H9Mg3O24 and
+    Pbcn; not an approval accession, independent experiment or measured reflection
+    archive.
+  snapshot_sha256: 90232f434c760317194da14ae02d89b05eba4721f09fa253af250aa0f6812061
+- evidence_id: initial_finding
+  kind: record_content
+  reference: reviews/structured/20261016T065859Z-preobrazhenskite-round114-initial/review.yaml
+  locator: Exact immutable initial review F1, issue_key round114-preobrazhenskite-primary-locators.
+  accessed_at: '2026-10-16T07:17:45.886713Z'
+  support: context_only
+  summary: Minor citation-locator finding retained; this successor resolves it after
+    actual source and byte comparison.
+  snapshot_sha256: ec3e6bdebabf65297b03217ddee8ab7980da90013c67f05afc31c0d0233627c9
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round114-ree-research/borate-review-named-validation-corrected.json
+  locator: Independent exact two-owner command/cwd/base/inputs/log receipt; completed
+    2026-10-16T07:05:20.738954+00:00
+  accessed_at: '2026-10-16T07:17:45.886713Z'
+  support: supports
+  summary: Two records checked, zero failed; this validates structure, not scientific
+    truth.
+  snapshot_sha256: 85ce61e7d67f08415bc842f458843211cd55a5794969031663b8b7ad65704e72
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round114-final-gates-corrected.json
+  locator: Definitive corrected terminal receipt; exactW/base/four ordered commands/current
+    owner inputs and loghash verified. /private/tmp/cmm-round114-final-gates-corrected.log
+    SHA256 41cc8b4b8ef7e145ed81a2d1acfb2c694962806765e633fdafb96546c4025a07
+  accessed_at: '2026-10-16T07:17:45.886713Z'
+  support: supports
+  summary: Actual completed batch including history and rendered-page checks; prior-state
+    attempt not substituted.
+  snapshot_sha256: 8628b01c993c722bbf1b0cdbe9e17a71e23eb1da1c0b7081dbc147d9e53d513d
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate --require-records data/records/kaliborite.yaml
+    data/records/preobrazhenskite.yaml
+  status: passed
+  required: true
+  summary: Actual completed2/0 command; exact inputs/base/cwd/log checked.
+  target_ids:
+  - cmmmech:preobrazhenskite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Corrected final batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T07:05:45.268577+00:00 through 2026-10-16T07:16:58.947590+00:00;
+    terminal current-state receipt verified independently.
+  target_ids:
+  - cmmmech:preobrazhenskite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Corrected final batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T07:16:58.947652+00:00 through 2026-10-16T07:17:17.702713+00:00;
+    terminal current-state receipt verified independently.
+  target_ids:
+  - cmmmech:preobrazhenskite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Corrected final batch command 3
+  command: uv run --locked cmmmech validate-history --base 93f90797512dc8d1db3df9ce2e4994c475b1a4fe
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T07:17:17.702744+00:00 through 2026-10-16T07:17:27.281024+00:00;
+    terminal current-state receipt verified independently.
+  target_ids:
+  - cmmmech:preobrazhenskite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Corrected final batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T07:17:27.281052+00:00 through 2026-10-16T07:17:35.359106+00:00;
+    terminal current-state receipt verified independently.
+  target_ids:
+  - cmmmech:preobrazhenskite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Current species and natural structural specimen
+  outcome: supported
+  summary: Grandfathered Mg3B11O15(OH)9, Inder natural crystal and Pbcn model supported.
+    Description year1956 is not an approval number; no criticality or organism inferred.
+  target_ids:
+  - cmmmech:preobrazhenskite
+  evidence_ids:
+  - record
+  - ima
+  - primary
+  - cif
+- assessment_id: structure
+  area: evidence
+  topic: H-site and IR uncertainty
+  outcome: supported
+  summary: Difference-Fourier H positions and average symmetric H6 model remain source-qualified.
+    Possible off-centre disorder/ferroelectric behavior is untested; five fittedIR
+    components are not five independently resolved peaks. Opposite reflection inequality
+    and OH3-to-H6 label switch remain explicit.
+  target_ids:
+  - cmmmech:preobrazhenskite
+  evidence_ids:
+  - record
+  - primary
+  - cif
+- assessment_id: fix
+  area: provenance
+  topic: Issue485 locator correction
+  outcome: supported
+  summary: Current references correctly separate structuralFigures1–3, H-siteFigures4–6
+    and IRFigure7/Table6; dossier coversFigures1–9. All other scientific fields are
+    unchanged, new EDIT links485, and initial record/context/review bytes are preserved.
+  target_ids:
+  - cmmmech:preobrazhenskite
+  evidence_ids:
+  - record
+  - primary
+  - correction
+  - initial_finding
+  - history0
+  - history1
+- assessment_id: scope
+  area: scope
+  topic: Material and evidence boundaries
+  outcome: supported
+  summary: Mineral species remain distinct from elemental boron and borates commodity;
+    no jurisdictional criticality or microbial function is inherited. Laboratory structural/thermal
+    evidence is not industrial deployment.
+  target_ids:
+  - cmmmech:preobrazhenskite
+  evidence_ids:
+  - record
+  - ima
+  - primary
+- assessment_id: provenance
+  area: provenance
+  topic: Exact inputs and completed checks
+  outcome: supported
+  summary: Original native capture retained; additive corrected-context capture before
+    reassessment. Exact owner/history/source bytes still match, independent named
+    validation and definitive corrected batch/history checks passed.
+  target_ids:
+  - cmmmech:preobrazhenskite
+  evidence_ids:
+  - record
+  - fresh_capture
+  - dossier
+  - named
+  - batch
+findings:
+- finding_id: F1
+  issue_key: round114-preobrazhenskite-primary-locators
+  category: provenance
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Primary-source locators corrected against printed originals
+  description: Owner and paired source dossier now identify Table5p390, structuralFigures1–3pp391–392,
+    H-siteFigures4–6pp392–393, IRFigure7p394 and Table6/Figures8–9p395, with fullFigures1–9
+    inventory. Scientific fields unchanged outside citation/provenance; actual EDIT
+    links https://github.com/CultureBotAI/CMMMech/issues/485.
+  target_ids:
+  - cmmmech:preobrazhenskite
+  field_paths:
+  - sources[1].title
+  - research/sources/round114-borates/20261016T065455Z-source-investigation.json#/primary_sources/2/checked
+  evidence_ids:
+  - record
+  - primary
+  - dossier
+  - correction
+  - initial_finding
+  - named
+  - batch
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/preobrazhenskite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: research/sources/round114-borates/20261016T065455Z-source-investigation.json
+    role: context
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261016T065859Z-preobrazhenskite-round114-initial
+    finding_id: F1
+  disposition_reason: Printed figures/tables re-read after fresh exact capture; source
+    references and context inventory fixed, exact original bytes retained, canonical
+    and inline EDIT verified, current named and corrected batch checks pass. This
+    resolves the bounded locator defect, not the acknowledged source-model uncertainties.
+actions: []
+summary: Preobrazhenskite passes with source limitations after correction of the minor
+  citation-locator defect. Exact predecessor F1 is resolved with new EDIT provenance
+  and current successful checks; initial negative evidence remains immutable.
+limitations:
+- No original measured reflections acquired or independent structure refinement; COD
+  is an attributable derivative.
+- 'Source observed-reflection inequality and H-label ambiguities remain unresolved,
+  with true H-site symmetry and proposed thermal behavior not directly tested. Source
+  follow-up #482 retains these questions.'
+- This is identity/characterization evidence only; no microbial mechanism, extraction
+  efficiency or industrial deployment asserted.
+- Bounded correction/dedup search does not establish exhaustive absence; shared original
+  acquisition is disclosed.
+- Working-tree acceptance is separate from corpus review validation, committed-head
+  and hosted publication gates.
+notes:
+- No self-authored REE record is scientifically reviewed here.
+- Original source conflicts are preserved; no fabricated measurements, criticality
+  or microorganisms.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261016T065859Z-preobrazhenskite-round114-initial
+  relationship: successor resolving exact F1 under issue485

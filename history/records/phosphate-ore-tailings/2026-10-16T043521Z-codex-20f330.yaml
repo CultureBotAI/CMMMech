@@ -1,0 +1,25 @@
+history_version: 1
+target:
+  kind: record
+  slug: phosphate-ore-tailings
+  path: data/records/phosphate-ore-tailings.yaml
+session:
+  id: 2026-10-16T043521Z-codex-20f330
+  timestamp: '2026-10-16T04:35:21Z'
+  actors:
+  - name: codex
+    type: ai_agent
+    model: GPT-6
+    agent_tool: codex
+events:
+- type: EDIT
+  outcome: changed
+  summary: Corrected tailings time-series particle size and growth-figure context after independent
+    review.
+  details: 'Issue464: original Figures3-4 explicitly specify75micrometre particles for both
+    time-series arms; Figures1-2 are pure-culture curves without explicit paired feed/no-feed
+    series. Preserved supported endpoints and source limitations; retain initial scientific
+    review and obtain an exact-byte successor resolving both findings.'
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/464

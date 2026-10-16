@@ -1,0 +1,334 @@
+# Independent scientific review of Metastudtite
+
+- Review: 20261016T052354Z-metastudtite-round112-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-16T05:17:25.730171Z
+- Finished UTC: 2026-10-16T05:23:54.296280Z
+- Reviewer: codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Narrow claims supported with original source inconsistencies and experimental limits retained. No maintained-owner correction found in this bounded review.
+
+## Scope And Provenance
+
+Entire assigned owner and linked history, with independent claim-level original evidence checks; no experimental replication or structure/kinetic re-fitting.
+
+Selection: Native inspect captured the working owner and schema before independent assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base e3a638e04d9e64cbda7c26d277bdf4f5e7d1e3ae.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:metastudtite | data/records/metastudtite.yaml | maintained | metastudtite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Batch gate 1 | passed | True | cmmmech:metastudtite | Terminal result and retained log hash verified; reviewed target hash matches. |
+| Batch gate 2 | passed | True | cmmmech:metastudtite | Terminal result and retained log hash verified; reviewed target hash matches. |
+| Batch gate 3 | passed | True | cmmmech:metastudtite | Terminal result and retained log hash verified; reviewed target hash matches. |
+| Batch gate 4 | passed | True | cmmmech:metastudtite | Terminal result and retained log hash verified; reviewed target hash matches. |
+
+## Scientific And Domain Assessments
+
+### Species identity and experimental material boundaries
+
+identity: supported. Targets: cmmmech:metastudtite.
+
+Authoritative species identities and original natural descriptions agree; element, mineral, synthetic precursor and surface product remain distinct.
+
+### Abiotic transformation claims and limits
+
+evidence: supported. Targets: cmmmech:metastudtite.
+
+Original natural identity, mixed natural heat treatment, synthetic in-situ intermediate and aqueous U3O8 surface product are distinct evidence populations. Decomposition kinetics are modeled, final amorphous products unresolved, and apparent later hydration is not a demonstrated reversible solid-state reaction.
+
+### Actual curation and exact source versions
+
+provenance: supported. Targets: cmmmech:metastudtite.
+
+Actual CREATE history, original accepted-versus-published versions, bounded searches and unavailable deeper data are explicit.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/metastudtite.yaml; Entire exact native-inspected working owner; retained artifact /private/tmp/CMMMech-expansion-round112-20261016/data/records/metastudtite.yaml | supports | Identity, material form, mechanisms, numeric qualifiers and source boundaries independently assessed. |
+| history0 | history/records/metastudtite/2026-10-16T051637Z-codex-d7618c.yaml; Canonical sidecar and separate inline event; retained artifact /private/tmp/CMMMech-expansion-round112-20261016/history/records/metastudtite/2026-10-16T051637Z-codex-d7618c.yaml | supports | Actual CREATE metadata, target and described work match the new owner. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; PDF pages 142 and 208, rows visually inspected; retained artifact /private/tmp/cmm-round112-uranium-research/ima202609.pdf | supports | Metastudtite approved 1981-055; studtite grandfathered with 1947 description year. Formula and distinct identity confirmed; no inherited criticality. |
+| thermal | https://doi.org/10.1021/acs.jpcc.0c09082; OSTI accepted proof B-C methods; E/H/I figures and text; original pages C-E/H-I visually inspected; retained artifact /private/tmp/cmm-round112-uranium-research/spano2020-osti.pdf | supports | Synthetic precursor, nominal versus effective rates, air versus argon, PLSR crossovers and unresolved final phases agree with the source. Table 1/Figure 3 and Figure 4 caption discrepancies are retained. No independent kinetic refit. |
+| aqueous | https://doi.org/10.1016/j.jnucmat.2025.155941; Accepted manuscript pp.5-12, 15-16, 21-22 and SI Tables S-1-S-9; figures/tables on pp.12,32-34,37 visually inspected; retained artifact /private/tmp/cmm-round112-uranium-research/rehydration-osti.pdf | supports | Measured peroxide arms, mass/volume, controls, air drying and surface-spectral phase succession are supported. Fifteen spatial spectra are not independent vessels; fitted normalized contributions are not bulk yields. Direct reversible hydration was not demonstrated. |
+| identity_source | https://msaweb.org/AmMin/AM68/AM68_456.pdf; Original pp.456-458; Table 1 and result continuation p.458 visually inspected; retained artifact /private/tmp/cmm-round112-uranium-research/metastudtite1983.pdf | supports | Natural specimens RGM 13748/13755 remain distinct from the 100-degree-C two-hour mixed studtite experiment. Curite and uranium-lead hydrate impurities are retained. Historical probable symmetry is not asserted as uniquely current. |
+| dossier | research/sources/round112-uranium/20261016T051818Z-source-investigation.json; Acquisition, version and access boundary manifest; retained artifact /private/tmp/CMMMech-expansion-round112-20261016/research/sources/round112-uranium/20261016T051818Z-source-investigation.json | context_only | Curator dossier checked as provenance context; independent review used the actual original artifacts. |
+| search | Independent current-owner and primary-notice search; Hidden/ignored/followed current-owner scan plus separately retained DOI/title web queries; retained artifact /private/tmp/cmm-round112-uranium-review-search.json | context_only | No duplicate owner or affecting notice found within these stated bounds; broader curator history/source search is separately documented. |
+| batch | Exact-byte completed batch gates; Command rows, terminal status, trusted base/worktree, log digest and owner hashes; retained artifact /private/tmp/cmm-round112-final-gates.json | supports | Required batch checks completed successfully on these unchanged scientific bytes. |
+
+## Limits And Additional Notes
+
+- Independent agent review is not external human peer review.
+- Original claim-bearing figures/tables and text inspected; not every source page independently visually re-read.
+- Unavailable final 2026 structural source, 2003 deposit and additional 2025 SEM ZIP are not accepted as inspected; narrow claims use available originals.
+- Source caption/model/deposit questions remain unresolved and bounded searching does not establish exhaustion.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261016T052354Z-metastudtite-round112-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Metastudtite
+started_at: '2026-10-16T05:17:25.730171Z'
+finished_at: '2026-10-16T05:23:54.296280Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: A separate uranium agent authored these owners and histories.
+    Root curated meteorite resources and independently inspected uranium primary evidence
+    and exact frozen owner bytes without editing them.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Narrow claims supported with original source inconsistencies and experimental
+  limits retained. No maintained-owner correction found in this bounded review.
+source:
+  git_revision: e3a638e04d9e64cbda7c26d277bdf4f5e7d1e3ae
+  state: working_tree
+  inputs:
+  - path: data/records/metastudtite.yaml
+    sha256: a4618421c679685d6fc2677fafcf95320bac69e0af590e29e653ddcc92ede8d0
+    role: target
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:metastudtite
+  path: data/records/metastudtite.yaml
+  label: metastudtite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/metastudtite.yaml
+    role: maintained
+scope:
+  description: Entire assigned owner and linked history, with independent claim-level
+    original evidence checks; no experimental replication or structure/kinetic re-fitting.
+  selection: Native inspect captured the working owner and schema before independent
+    assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:metastudtite
+checks:
+- check_id: batch1
+  name: Batch gate 1
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal result and retained log hash verified; reviewed target hash matches.
+  target_ids:
+  - cmmmech:metastudtite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Batch gate 2
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal result and retained log hash verified; reviewed target hash matches.
+  target_ids:
+  - cmmmech:metastudtite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Batch gate 3
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base e3a638e04d9e64cbda7c26d277bdf4f5e7d1e3ae
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal result and retained log hash verified; reviewed target hash matches.
+  target_ids:
+  - cmmmech:metastudtite
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Batch gate 4
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Terminal result and retained log hash verified; reviewed target hash matches.
+  target_ids:
+  - cmmmech:metastudtite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/metastudtite.yaml
+  locator: Entire exact native-inspected working owner; retained artifact /private/tmp/CMMMech-expansion-round112-20261016/data/records/metastudtite.yaml
+  accessed_at: '2026-10-16T05:23:54.296280Z'
+  snapshot_sha256: a4618421c679685d6fc2677fafcf95320bac69e0af590e29e653ddcc92ede8d0
+  support: supports
+  summary: Identity, material form, mechanisms, numeric qualifiers and source boundaries
+    independently assessed.
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/metastudtite/2026-10-16T051637Z-codex-d7618c.yaml
+  locator: Canonical sidecar and separate inline event; retained artifact /private/tmp/CMMMech-expansion-round112-20261016/history/records/metastudtite/2026-10-16T051637Z-codex-d7618c.yaml
+  accessed_at: '2026-10-16T05:23:54.296280Z'
+  snapshot_sha256: 6c74fa3aced2e04e651aa6ccc414fcfff703b975bdd7eee9d9a218868747d9a4
+  support: supports
+  summary: Actual CREATE metadata, target and described work match the new owner.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: PDF pages 142 and 208, rows visually inspected; retained artifact /private/tmp/cmm-round112-uranium-research/ima202609.pdf
+  accessed_at: '2026-10-16T05:23:54.296280Z'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  support: supports
+  summary: Metastudtite approved 1981-055; studtite grandfathered with 1947 description
+    year. Formula and distinct identity confirmed; no inherited criticality.
+- evidence_id: thermal
+  kind: primary_source
+  reference: https://doi.org/10.1021/acs.jpcc.0c09082
+  locator: OSTI accepted proof B-C methods; E/H/I figures and text; original pages
+    C-E/H-I visually inspected; retained artifact /private/tmp/cmm-round112-uranium-research/spano2020-osti.pdf
+  accessed_at: '2026-10-16T05:23:54.296280Z'
+  snapshot_sha256: 0714df600b556d376844603e19d22c384c7a18c6ca9c84ae301bb74cc4c2acd0
+  support: supports
+  summary: Synthetic precursor, nominal versus effective rates, air versus argon,
+    PLSR crossovers and unresolved final phases agree with the source. Table 1/Figure
+    3 and Figure 4 caption discrepancies are retained. No independent kinetic refit.
+- evidence_id: aqueous
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.jnucmat.2025.155941
+  locator: Accepted manuscript pp.5-12, 15-16, 21-22 and SI Tables S-1-S-9; figures/tables
+    on pp.12,32-34,37 visually inspected; retained artifact /private/tmp/cmm-round112-uranium-research/rehydration-osti.pdf
+  accessed_at: '2026-10-16T05:23:54.296280Z'
+  snapshot_sha256: d9cc20891fcc7bbf24f6942b9d1ee238858bc015f09bc074c6c4aca0b642435f
+  support: supports
+  summary: Measured peroxide arms, mass/volume, controls, air drying and surface-spectral
+    phase succession are supported. Fifteen spatial spectra are not independent vessels;
+    fitted normalized contributions are not bulk yields. Direct reversible hydration
+    was not demonstrated.
+- evidence_id: identity_source
+  kind: primary_source
+  reference: https://msaweb.org/AmMin/AM68/AM68_456.pdf
+  locator: Original pp.456-458; Table 1 and result continuation p.458 visually inspected;
+    retained artifact /private/tmp/cmm-round112-uranium-research/metastudtite1983.pdf
+  accessed_at: '2026-10-16T05:23:54.296280Z'
+  snapshot_sha256: daf603c1cfb3411abe2ab6aa24cc3f415dacff7c0004d997b08da78034cc705d
+  support: supports
+  summary: Natural specimens RGM 13748/13755 remain distinct from the 100-degree-C
+    two-hour mixed studtite experiment. Curite and uranium-lead hydrate impurities
+    are retained. Historical probable symmetry is not asserted as uniquely current.
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round112-uranium/20261016T051818Z-source-investigation.json
+  locator: Acquisition, version and access boundary manifest; retained artifact /private/tmp/CMMMech-expansion-round112-20261016/research/sources/round112-uranium/20261016T051818Z-source-investigation.json
+  accessed_at: '2026-10-16T05:23:54.296280Z'
+  snapshot_sha256: 7ac0c3dfafa1f41234b0432515980b44599554afdc2ce31727fb04e5c9c5f2a0
+  support: context_only
+  summary: Curator dossier checked as provenance context; independent review used
+    the actual original artifacts.
+- evidence_id: search
+  kind: search
+  reference: Independent current-owner and primary-notice search
+  locator: Hidden/ignored/followed current-owner scan plus separately retained DOI/title
+    web queries; retained artifact /private/tmp/cmm-round112-uranium-review-search.json
+  accessed_at: '2026-10-16T05:23:54.296280Z'
+  snapshot_sha256: 0d1e02a799554afe0c916c071b92d8c9c6b1c7ef491f61af25a501f181b62683
+  support: context_only
+  summary: No duplicate owner or affecting notice found within these stated bounds;
+    broader curator history/source search is separately documented.
+  search_scope: Current data/records tree includes hidden/ignored files and followed
+    symlinks. Four DOI/title correction/rehydration web queries inspected first returned
+    windows on 2026-10-16; primary source hits assessed. Not global absence or source
+    exhaustion.
+- evidence_id: batch
+  kind: validation
+  reference: Exact-byte completed batch gates
+  locator: Command rows, terminal status, trusted base/worktree, log digest and owner
+    hashes; retained artifact /private/tmp/cmm-round112-final-gates.json
+  accessed_at: '2026-10-16T05:23:54.296280Z'
+  snapshot_sha256: 5211cc2ab6a7cc4d7143f4e604ef6abbbd51ce3e9cd8727d5ef9083acd14c2b5
+  support: supports
+  summary: Required batch checks completed successfully on these unchanged scientific
+    bytes.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species identity and experimental material boundaries
+  outcome: supported
+  summary: Authoritative species identities and original natural descriptions agree;
+    element, mineral, synthetic precursor and surface product remain distinct.
+  target_ids:
+  - cmmmech:metastudtite
+  evidence_ids:
+  - owner
+  - ima
+  - identity_source
+- assessment_id: science
+  area: evidence
+  topic: Abiotic transformation claims and limits
+  outcome: supported
+  summary: Original natural identity, mixed natural heat treatment, synthetic in-situ
+    intermediate and aqueous U3O8 surface product are distinct evidence populations.
+    Decomposition kinetics are modeled, final amorphous products unresolved, and apparent
+    later hydration is not a demonstrated reversible solid-state reaction.
+  target_ids:
+  - cmmmech:metastudtite
+  evidence_ids:
+  - owner
+  - thermal
+  - aqueous
+- assessment_id: provenance
+  area: provenance
+  topic: Actual curation and exact source versions
+  outcome: supported
+  summary: Actual CREATE history, original accepted-versus-published versions, bounded
+    searches and unavailable deeper data are explicit.
+  target_ids:
+  - cmmmech:metastudtite
+  evidence_ids:
+  - history0
+  - dossier
+  - search
+findings: []
+actions: []
+limitations:
+- Independent agent review is not external human peer review.
+- Original claim-bearing figures/tables and text inspected; not every source page
+  independently visually re-read.
+- Unavailable final 2026 structural source, 2003 deposit and additional 2025 SEM ZIP
+  are not accepted as inspected; narrow claims use available originals.
+- Source caption/model/deposit questions remain unresolved and bounded searching does
+  not establish exhaustion.
+```

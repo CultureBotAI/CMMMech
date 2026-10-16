@@ -1,0 +1,86 @@
+{
+  "completion": "completed",
+  "recorded_at": "2026-10-16T07:06:07.576650+00:00",
+  "verdict": "pass_with_limitations",
+  "passed": true,
+  "predecessor": {
+    "path": "/private/tmp/cmm-round114-publication-helper-audit.json",
+    "sha256": "85419ed1c973b019829634b99be78ae29aca75413eff364cd598334189c3c5b3"
+  },
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round114-publish.py",
+      "sha256": "e54d9594daa222b8db4d5fd927fb307b44f277f38d7fbfcd77b4889b00e823bb"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-isolated-verification.py",
+      "sha256": "425cbac5fc3067e9c13f5155d9b267d7b9f9bc160ba0ce241ff89fdbf3485293"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-isolated-coverage.py",
+      "sha256": "e4ea72158c36de721e4ba56c53aac5236690d959198a871bb6f7b01c70e05f5b"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-queue.py",
+      "sha256": "5f3ac2e25c9d7147c884b48e573d0d766c686331224015befb0c1536a0484dc0"
+    },
+    {
+      "path": "/private/tmp/cmm-round114-cleanup.py",
+      "sha256": "cb90ccbc38216878eceeea37386bc66547477cd4e46203e02056b48027c3066c"
+    }
+  ],
+  "resolved_findings": [
+    {
+      "id": "PUB114-1",
+      "disposition": "resolved",
+      "reason": "Current config digest must equal committed helpers digest before consuming issue sets; changed, wrong and missing bindings reject."
+    }
+  ],
+  "tests": [
+    {
+      "case": "matching",
+      "expected_accept": true,
+      "actual_accept": true,
+      "exception": null,
+      "passed": true
+    },
+    {
+      "case": "changed_bytes",
+      "expected_accept": false,
+      "actual_accept": false,
+      "exception": "AssertionError",
+      "passed": true
+    },
+    {
+      "case": "wrong_committed_digest",
+      "expected_accept": false,
+      "actual_accept": false,
+      "exception": "AssertionError",
+      "passed": true
+    },
+    {
+      "case": "missing_committed_digest",
+      "expected_accept": false,
+      "actual_accept": false,
+      "exception": "KeyError",
+      "passed": true
+    }
+  ],
+  "order_evidence": {
+    "guard_line": 22,
+    "issue_queries_line": 24,
+    "remote_delete_line": 29,
+    "local_delete_line": 33
+  },
+  "initial_artifact_provenance_correction": "Initial finding prose refers to full-source tool read 558d74 (cleanup SHA181fe774eda5d5934a04af9856f9d4d00e4060b9ba8037c0754613210f9d761c, publish SHA975a768ff92102ae9da28d2235e944c53d480b1422a32fe73c48c179ce06291e). Root fixed both before the initial artifact snapshot loop ran. That artifact is retained unchanged; its captured input hashes already describe corrected bytes and do not themselves support the defect. This successor uses exact earlier tool-read hashes and reverse-transform reproduction to distinguish pre-fix finding from later capture.",
+  "diff_assessment": "Cleanup adds only the requested pre-consumption digest assertion. Publish changes only final gate JSON/log paths to corrected successor. Other three helper bytes remain identical to initial audit. Reverse transformations reproduce the SHA256 values from the actual pre-fix full-source tool read, not the raced initial artifact snapshot.",
+  "limitations": [
+    "Only the exact assertion was inertly evaluated; no lifecycle helper top-level code, project gate, Git or GitHub operation executed.",
+    "Final config counts, report, exact topic/PR and corrected terminal gates remain future bindings; preparation is not publication authorization."
+  ],
+  "reviewer": {
+    "actor": "codex",
+    "model": "GPT-6",
+    "disclosure": "Uranium curator, independent titanium reviewer; not helper implementer."
+  }
+}

@@ -1,0 +1,87 @@
+{
+  "timestamp_utc": "2026-10-16T03:59:55.031684Z",
+  "reviewer": {
+    "identity": "codex /root/round104_ree",
+    "model": "GPT-6",
+    "independence": "independent_of_publication_helper_and_report_authorship",
+    "disclosure": "Reviewer authored burbankite/synchysite-Ce and the separate borate scientific reviews and dossier-path finding/disposition. This is a bounded publication-helper/report audit, not repeated independent science on own records."
+  },
+  "base": "0482e7b0af9b18685dabe310dbe86487b6ac4226",
+  "worktree": "/private/tmp/CMMMech-expansion-round110-20261016",
+  "scope": "Static isolated-verification/coverage helpers and current report/config/README/check-receipt coherence before commit.",
+  "verdict": "pass_with_limitations",
+  "findings": [],
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round110-isolated-verification.py",
+      "bytes": 5754,
+      "sha256": "0d9211b663de4edb2319355e4f5a61541eb2b25f2e0810d94844e6d9c3737ea5"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-isolated-coverage.py",
+      "bytes": 3515,
+      "sha256": "7afaef22c3c4967d262a95f36f0eff9aa825db2dc8c873c4d719f7c2386b2d44"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-helper-config.json",
+      "bytes": 501,
+      "sha256": "c270b0efe02e517db3fa287e1130f8eac11fb9350dfaa6156ffbe51e27b6bf94"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round110-20261016/research/ingests/round110-frontier-20261016.json",
+      "bytes": 10509,
+      "sha256": "180f30327c627eb4b315ec8d8767a6d877e7d606fadb8c17ba87a23281b95545"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round110-20261016/research/ingests/round110-frontier-20261016.md",
+      "bytes": 6018,
+      "sha256": "dd575804ff2220600a2e5118ddefd73c62d789a8456ae503dbf94c29a6eec018"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round110-20261016/README.md",
+      "bytes": 123507,
+      "sha256": "f1804107b158e8a25ee3a39656531fc93c75af03db04f08ff3ed36e7cb737e1b"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-final-gates.json",
+      "bytes": 61659,
+      "sha256": "ed153240d4c5826f0436aa5b996d00e0eed289dd884396599de811fc1fb085c6"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-final-gates.log",
+      "bytes": 684,
+      "sha256": "deaa335863d7038fa0324fd322f01d57562c229dd3f7e8816c396bc78443333a"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-local-coverage.json",
+      "bytes": 334595,
+      "sha256": "80267413003be420f68e7828f981c23a43e4a4f7ca9a9c4e020aea37dd12b52d"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round110-20261016/reviews/publication/20261016-round110/integration-status.json",
+      "bytes": 4033,
+      "sha256": "3251d2c96efd8352c5aa8ac502c61c898b768078eb20e712f2fe2880479b7d57"
+    }
+  ],
+  "counts": {
+    "record_count": 555,
+    "history_count": 631,
+    "structured_review_count": 648,
+    "review_base_count": 111,
+    "covered_records": 555
+  },
+  "observations": [
+    "Main-only clone uses explicit --single-branch main --no-tags, then fetches tags and checks the main-only fetch refspec. Topic commit absence is checked before and after shape construction and after validation.",
+    "Preflight requires clean exact topic HEAD/tree in the retained worktree and remote main at trusted base; archive contents form a new synthetic commit parented by the base. Postmerge requires both topic refs absent, clone HEAD equal the supplied merge SHA, and exactly the trusted base as sole parent. Both paths require the exact reviewed tree.",
+    "Strict nonempty record validation, history validation against the trusted base, canonical review-check --require-reviews, and exact-hash coverage execute in the isolated clone. Each subprocess row records actual cwd, timestamps, exit and allowed exits. The terminal receipt binds log, config, verification helper, coverage helper and coverage output digests, with helper/config rechecks before success.",
+    "Coverage enumerates filesystem YAML including hidden/ignored paths and follows symlinks with directory-cycle prevention. Completed positive scientific reviews must match record ID, target path, reviewed scope and exact current owner hash; all referenced review bases must be available commits. Counts must equal the measured configuration.",
+    "Report seven owner/review hashes, all eight dossier sizes/hashes, final batch receipt/log digest and successful command rows independently matched. Local coverage receipt reports 555 records, 631 histories, 648 native reviews, 111 bases and 555 covered records; all listed owner and matching-review digests were reread and matched.",
+    "Report retains the initial natroboltwoodite finding and successor, dossier-only issue451 correction chain, skill-only issue445 process correction and six open evidence followups. README rows preserve synthetic/natural, laboratory/industrial, phase identity/recovery and operational-fraction boundaries.",
+    "Both scripts parse as Python. Review was static and read-only; no clone, publication helper or project test was executed by this auditor. Initial question about coverage-helper attribution was addressed before this final audit by adding its digest and final recheck."
+  ],
+  "limitations": [
+    "Canonical corpus review-check was still running when this audit began; its eventual terminal receipt is a separate publication prerequisite.",
+    "No exact committed head/tree, PR, hosted CI, queue admission, merge or cleanup outcome is asserted. Runtime helper acceptance must bind the actual commit/config/helper hashes and final receipt commands, log and coverage.",
+    "This audit does not independently inspect every older primary paper or re-run 555-record scientific review. Current-round source evidence and scientific review authorship remain in their separate artifacts."
+  ]
+}

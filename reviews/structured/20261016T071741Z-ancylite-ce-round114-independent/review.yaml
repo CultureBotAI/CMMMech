@@ -1,0 +1,371 @@
+schema_version: 1.0.0
+review_id: 20261016T071741Z-ancylite-ce-round114-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Ancylite-(Ce)
+started_at: '2026-10-16T06:56:23.504871Z'
+finished_at: '2026-10-16T07:17:41.519478Z'
+reviewer:
+  identity: codex /root/round104_borates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_ree; no target owner,
+    history or dossier edits. Reviewer authored unrelated kaliborite/preobrazhenskite
+    owners. Shared source acquisitions disclosed; originals and claim-bearing figures/tables/deposits
+    independently assessed after native inspection.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Species identity, natural-specimen characterization and explicitly qualified
+  source limitations are supported. No corrective owner finding.
+source:
+  git_revision: 93f90797512dc8d1db3df9ce2e4994c475b1a4fe
+  state: working_tree
+  inputs:
+  - path: data/records/ancylite-ce.yaml
+    sha256: f7becbbf81059edbf12d30c49ffb92fb59da18ea17296b20ba503d4348d35a49
+    role: target
+  - path: docs/record-review-profile.md
+    sha256: 01c6f39d0d097876a0446131270df58bb32fa15804c66487419c171719d3ddc0
+    role: context
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/ancylite-ce/2026-10-16T065140Z-codex-root-round104-ree-dce36e.yaml
+    sha256: b5db0ec7a8cf706e4608ac1d8063c8bb02ca0c0218578d7c6e732fc9810a0d62
+    role: context
+  - path: research/sources/round114-ree/20261016T065233Z-source-investigation.json
+    sha256: 253af08433f2822e5e02e4fd07685084023c381c22c2c004842f5c03aebaf7f7
+    role: context
+  - path: research/sources/round114-ree/20261016T065233Z-source-investigation.md
+    sha256: 5764e7479a0caede8e26e6f8d4e790fa46617e4c84ae9056844615192869993d
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:ancylite-ce
+  path: data/records/ancylite-ce.yaml
+  label: Ancylite-(Ce)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/ancylite-ce.yaml
+    role: maintained record
+scope:
+  description: Complete assigned owner, current identity, primary evidence, material/measurement
+    boundaries and history; other records and publication operations excluded.
+  selection: Assigned frozen owner captured natively before assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:ancylite-ce
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/ancylite-ce.yaml data/records/calcioancylite-la.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Checked 2 record(s); 0 failed. Actual 2026-10-16T06:58:40.549954+00:00
+    through 2026-10-16T06:58:44.457880+00:00
+  target_ids:
+  - cmmmech:ancylite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Completed corrected coordinator batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual 2026-10-16T07:05:45.268577+00:00 through 2026-10-16T07:16:58.947590+00:00
+    in /private/tmp/CMMMech-expansion-round114-20261016. Receipt/log and target hashes
+    independently verified.
+  target_ids:
+  - cmmmech:ancylite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Completed corrected coordinator batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual 2026-10-16T07:16:58.947652+00:00 through 2026-10-16T07:17:17.702713+00:00
+    in /private/tmp/CMMMech-expansion-round114-20261016. Receipt/log and target hashes
+    independently verified.
+  target_ids:
+  - cmmmech:ancylite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed corrected coordinator batch command 3
+  command: uv run --locked cmmmech validate-history --base 93f90797512dc8d1db3df9ce2e4994c475b1a4fe
+  status: passed
+  required: true
+  summary: Actual 2026-10-16T07:17:17.702744+00:00 through 2026-10-16T07:17:27.281024+00:00
+    in /private/tmp/CMMMech-expansion-round114-20261016. Receipt/log and target hashes
+    independently verified.
+  target_ids:
+  - cmmmech:ancylite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed corrected coordinator batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual 2026-10-16T07:17:27.281052+00:00 through 2026-10-16T07:17:35.359106+00:00
+    in /private/tmp/CMMMech-expansion-round114-20261016. Receipt/log and target hashes
+    independently verified.
+  target_ids:
+  - cmmmech:ancylite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/ancylite-ce.yaml
+  locator: Complete frozen owner captured before assessment.
+  accessed_at: '2026-10-16T07:17:41.519478Z'
+  support: supports
+  summary: 'Current official IMA September 2026 p. 10 verifies CeSr(CO3)2(OH)(H2O),
+    renamed status and 1987 special procedure; the year is not an approval accession.
+    The 2024 approved nomenclature classifies Sr/Ca/Pb dominance and dominant REE
+    separately. Its x is trivalent content per two cations: ancylite 1 <= x <= 1.5,
+    kozoite 1.5 < x <= 2.'
+  snapshot_sha256: f7becbbf81059edbf12d30c49ffb92fb59da18ea17296b20ba503d4348d35a49
+- evidence_id: history
+  kind: record_content
+  reference: history/records/ancylite-ce/2026-10-16T065140Z-codex-root-round104-ree-dce36e.yaml
+  locator: Canonical CREATE and distinct inline event; actual actor, target and timestamps.
+  accessed_at: '2026-10-16T07:17:41.519478Z'
+  support: supports
+  summary: Codex/GPT-6 history accurately records new-owner curation.
+  snapshot_sha256: b5db0ec7a8cf706e4608ac1d8063c8bb02ca0c0218578d7c6e732fc9810a0d62
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions p. 1 and species rows pp. 10/34 visually checked.
+  accessed_at: '2026-10-16T07:17:41.519478Z'
+  support: supports
+  summary: Current species formula, name, status and identifier scope verified.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round114-ree/20261016T065233Z-source-investigation.json
+  locator: Full paired source handoff and its 27 path/hash references independently
+    checked.
+  accessed_at: '2026-10-16T07:17:41.519478Z'
+  support: context_only
+  summary: Source context supports provenance but is not a substitute for originals.
+  snapshot_sha256: 253af08433f2822e5e02e4fd07685084023c381c22c2c004842f5c03aebaf7f7
+- evidence_id: nomenclature
+  kind: primary_source
+  reference: https://doi.org/10.1180/mgm.2024.8
+  locator: Complete five-page original read and all pages visually inspected; Tables
+    1–2, Figure 2 and pp. 678–680.
+  accessed_at: '2026-10-16T07:17:41.519478Z'
+  support: supports
+  summary: Approved ancylite/kozoite composition ranges and species naming support
+    the owner distinction.
+  snapshot_sha256: 37f125532899f32e7abd75c498764efd983e1b494d0a0998510e646138103570
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round114-borates-research/review-ree-web.json
+  locator: Independent exact DOI/title correction, erratum and retraction queries;
+    current official 2024 DOI page opened. Direct 2023 DOI open returned a tool error.
+  accessed_at: '2026-10-16T07:17:41.519478Z'
+  support: context_only
+  summary: No affecting notice identified in returned results; bounded search, not
+    proof of absence.
+  snapshot_sha256: d947bfc2bf37640b19361de4630e6e15c8cfc27fb06419e5f0ca02d16c020dcc
+  search_scope: Exact 2023/2024 DOI and 1975 title notice queries, first returned
+    sets; source metadata and fresh current authority inspected, not exhaustive literature
+    coverage.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round114-borates-research/review-ree-dedup.json
+  locator: Eight owner/context matches in named current roots; broader curator precreation
+    inventory also read.
+  accessed_at: '2026-10-16T07:17:41.519478Z'
+  support: context_only
+  summary: No distinct duplicate owner identified within the bounded current text
+    search.
+  snapshot_sha256: 05de7ec1f94d4fd298126fe74bb40ef90388ed968d48c34765e17e909c158dff
+  search_scope: rg --no-ignore --hidden --follow over W data/records, research, reviews
+    and history, exact species names/slugs, DOIs and IMA:2021-090. Ignored files included;
+    no machine-wide absence claim.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round114-borates-research/review-ree-named-validation.json
+  locator: Actual independent named validation and exact current target hashes.
+  accessed_at: '2026-10-16T07:17:41.519478Z'
+  support: supports
+  summary: Two records checked, zero failures.
+  snapshot_sha256: d67b3e66d6cc03cc1e22b96d5ba022906184d211773b774afc0119419bc27edc
+- evidence_id: baseline
+  kind: validation
+  reference: /private/tmp/cmm-round114-baseline.json
+  locator: Completed initial baseline with log SHA b89ce2512a73c4667e7d79bd800513ec42cbab171a84c0b9bc75f5e17cacb7cd
+  accessed_at: '2026-10-16T07:17:41.519478Z'
+  support: context_only
+  summary: Initial-state context, not final-state validation.
+  snapshot_sha256: 892dace5fd7fc3377ca907a79d2018c5628221a65ca067bfef38000d749d76b6
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round114-final-gates-corrected.json
+  locator: Completed corrected four-command batch, exact base/cwd, unique commands,
+    zero exits, unchanged target inputs; log SHA 41cc8b4b8ef7e145ed81a2d1acfb2c694962806765e633fdafb96546c4025a07
+  accessed_at: '2026-10-16T07:17:41.519478Z'
+  support: supports
+  summary: Required completed checks verified; initial superseded attempt is not used
+    for this acceptance.
+  snapshot_sha256: 8628b01c993c722bbf1b0cdbe9e17a71e23eb1da1c0b7081dbc147d9e53d513d
+- evidence_id: original
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/am/vol60/AM60_280.pdf
+  locator: Complete five-page original; methods p. 280, enlarged Tables 1–2 p. 281,
+    Tables 3–6 pp. 281–282, Figures 1–2 and discussion pp. 283–284.
+  accessed_at: '2026-10-16T07:17:41.519478Z'
+  support: supports
+  summary: Dal Negro et al. 1975 pp. 280–281 and Tables 1–2 describe natural Mont
+    Saint-Hilaire pegmatite material. Five-grain microprobe means were normalized
+    using a separate 0.2 g thermogravimetric sample. The 28.4 wt% total loss could
+    not distinguish water from CO2. The prose assumed 20:80 partition differs from
+    Table 1 corrected H2O 6.24 and CO2 22.12 wt%; these are not independent measurements.
+    Table 2 mixed specimen formula La0.56Ce0.82Sr0.40Ca0.22(CO3)2(OH)1.38·0.62H2O
+    is not the ideal Ce-Sr endmember. A 0.16×0.10×0.08 mm crystal fragment yielded
+    502 independent reflections, of which 498 were observed, with refinement R=0.059.
+    Pmcn is a nonstandard Pnma setting. Tables 3–6 contain coordinates, displacement
+    parameters, distances and printed structure factors. No hydrogen atom positions
+    are given; shared heavy-cation scattering is chemically constrained rather than
+    separately measured occupancies. Discussion and Figures 1–2 support eight carbonate-oxygen
+    and two hydroxyl/water-oxygen neighbours. Structural analogies to aragonite and
+    bastnaesite are not observed conversions.
+  snapshot_sha256: 6cda2bb37267927cc374cf7b5f2f6c574656fc3b8ebefa41b76710f87b0268ba
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species and nomenclature boundaries
+  outcome: supported
+  summary: 'Current official IMA September 2026 p. 10 verifies CeSr(CO3)2(OH)(H2O),
+    renamed status and 1987 special procedure; the year is not an approval accession.
+    The 2024 approved nomenclature classifies Sr/Ca/Pb dominance and dominant REE
+    separately. Its x is trivalent content per two cations: ancylite 1 <= x <= 1.5,
+    kozoite 1.5 < x <= 2.'
+  target_ids:
+  - cmmmech:ancylite-ce
+  evidence_ids:
+  - record
+  - ima
+  - nomenclature
+- assessment_id: natural
+  area: evidence
+  topic: Natural characterization and chemical provenance
+  outcome: supported
+  summary: Dal Negro et al. 1975 pp. 280–281 and Tables 1–2 describe natural Mont
+    Saint-Hilaire pegmatite material. Five-grain microprobe means were normalized
+    using a separate 0.2 g thermogravimetric sample. The 28.4 wt% total loss could
+    not distinguish water from CO2. The prose assumed 20:80 partition differs from
+    Table 1 corrected H2O 6.24 and CO2 22.12 wt%; these are not independent measurements.
+    Table 2 mixed specimen formula La0.56Ce0.82Sr0.40Ca0.22(CO3)2(OH)1.38·0.62H2O
+    is not the ideal Ce-Sr endmember.
+  target_ids:
+  - cmmmech:ancylite-ce
+  evidence_ids:
+  - record
+  - original
+- assessment_id: model
+  area: evidence
+  topic: Structural model and observational limits
+  outcome: supported
+  summary: A 0.16×0.10×0.08 mm crystal fragment yielded 502 independent reflections,
+    of which 498 were observed, with refinement R=0.059. Pmcn is a nonstandard Pnma
+    setting. Tables 3–6 contain coordinates, displacement parameters, distances and
+    printed structure factors. No hydrogen atom positions are given; shared heavy-cation
+    scattering is chemically constrained rather than separately measured occupancies.
+    Discussion and Figures 1–2 support eight carbonate-oxygen and two hydroxyl/water-oxygen
+    neighbours. Structural analogies to aragonite and bastnaesite are not observed
+    conversions.
+  target_ids:
+  - cmmmech:ancylite-ce
+  evidence_ids:
+  - record
+  - original
+  dimensions:
+  - name: material_form
+    value: Natural pegmatite specimen and separate microprobe/TG/diffraction portions.
+    definition: Portions are not interchangeable measurements of an ideal pure phase.
+    evidence_ids:
+    - original
+  - name: conditions
+    value: Natural-crystal diffraction; separate TG from 25 to 1100 degrees C.
+    definition: TG normalization supplies no controlled extraction or formation process.
+    evidence_ids:
+    - original
+  - name: outcome
+    value: Mixed chemistry and average structural model.
+    definition: Calculated or normalized volatile values remain separate from direct
+      assay.
+    evidence_ids:
+    - original
+- assessment_id: scope
+  area: evidence
+  topic: Criticality, microbial and deployment scope
+  outcome: supported
+  summary: No jurisdiction/list/edition criticality claim, microbial causation, extraction/recovery
+    yield or industrial deployment is asserted.
+  target_ids:
+  - cmmmech:ancylite-ce
+  evidence_ids:
+  - record
+  - original
+- assessment_id: provenance
+  area: provenance
+  topic: Exact inputs, histories and completed checks
+  outcome: supported
+  summary: All nine initial captured inputs retain their hashes. Actual canonical
+    and inline CREATE events and completed corrected checks support provenance.
+  target_ids:
+  - cmmmech:ancylite-ce
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - dossier
+  - search
+  - dedup
+findings: []
+actions: []
+limitations:
+- Natural mixed-REE material is not a pure ideal endmember, commodity or bulk ore
+  resource.
+- The volatile partition is assumed and internally inconsistent; it is not a direct
+  water/CO2 determination.
+- Hydrogen positions and separate shared-site cation occupancies are unresolved by
+  the reported model; no independent refinement was performed.
+- Bounded notice/identity searches do not establish exhaustive coverage; shared acquisition
+  is not independent experimental replication.
+- Omission of criticality does not assert absence from every list.
+- Whole-corpus native review and exact-head publication checks are later separate
+  gates.
+notes:
+- Pre-assessment native capture and actual independent validation receipts are retained
+  externally. No target input was changed by this reviewer.
+- Source discrepancies already qualified by the curator remain limitations rather
+  than manufactured corrective findings. The initial coordinator batch was superseded
+  after a different owner correction; only the definitive corrected receipt is accepted
+  here.

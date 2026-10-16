@@ -8,13 +8,67 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 548 material records.
+The catalogue currently contains 602 material records.
 
-The [latest curation report](research/ingests/round109-frontier-20261016.md) links
+The [latest curation report](research/ingests/round116-frontier-20261016.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Ezcurrite](data/records/ezcurrite.yaml) | Natural borate identity and laboratory thermal observations | Inferred reactions and unidentified products remain qualified |
+| [Rivadavite](data/records/rivadavite.yaml) | Natural borate identity and laboratory thermal observations | Later atomic structure note remains inaccessible |
+| [Caysichite-(Y)](data/records/caysichite-y.yaml) | Original Canadian identity and separate thermal experiments | Later Russian material has unresolved species equivalence |
+| [Kuliokite-(Y)](data/records/kuliokite-y.yaml) | Natural material and crystal characterization | Site interpretation is distinct from REE separation |
+| [Uranopilite](data/records/uranopilite.yaml) | Natural identity and structural evidence | Hydrogen inference and published/deposited model differences retained |
+| [Zippeite](data/records/zippeite.yaml) | Natural identity and powder diffraction evidence | Natural K2/four-water species distinguished from synthetic K3 material |
+| [Titanite](data/records/titanite.yaml) | Laboratory hydrochloric-acid decomposition of mixed concentrate | Feed, preparation and analytical ambiguities preclude quantified yield |
+| [Lorenzenite](data/records/lorenzenite.yaml) | Natural crystal identity and structure | Ramsayite is a synonym; no processing mechanism inferred |
+| [Ameghinite](data/records/ameghinite.yaml) | Natural borate identity and thermal observations | Distinct synthetic polymorph and inferred reactions remain separate |
+| [Aristarainite](data/records/aristarainite.yaml) | Natural borate identity and structure | Historical hydration formula revised by structural evidence |
+| [Calcioburbankite](data/records/calcioburbankite.yaml) | Natural carbonate identity and diffraction evidence | Distinct from burbankite and unresolved formation-study leads |
+| [Gysinite-(Nd)](data/records/gysinite-nd.yaml) | Natural neodymium carbonate identity | Revised type-locality provenance retained |
+| [Andersonite](data/records/andersonite.yaml) | Natural identity and laboratory thermal alteration | Ideal versus refined hydration and radiation-label discrepancy preserved |
+| [Rutherfordine](data/records/rutherfordine.yaml) | Natural identity and synthetic carbonate preparation | Product characterization kept separate from recovery yield |
+| [Tin-copper solder](data/records/tin-copper-solder.yaml) | Commercial product and culture-associated leaching | Feed, strain, biomass and control uncertainty retained |
+| [Spent ITO targets](data/records/spent-ito-targets.yaml) | Solid secondary feed and laboratory chloride separation | Missing supplementary assays preclude quantitative expansion |
+| [Kaliborite](data/records/kaliborite.yaml) | Natural borate identity and abiotic thermal alteration | Distinct specimens and conflicting amorphous-product formulas retained |
+| [Preobrazhenskite](data/records/preobrazhenskite.yaml) | Natural magnesium-borate identity and crystal structure | Hydrogen-site interpretation remains qualified |
+| [Ancylite-(Ce)](data/records/ancylite-ce.yaml) | Natural carbonate identity and primary structure evidence | Ce-dominant crystal kept distinct from La species and mixtures |
+| [Calcioancylite-(La)](data/records/calcioancylite-la.yaml) | Holotype identity and primary structure/deposit evidence | Calculated volatiles and table/deposit discrepancies retained |
+| [Curite](data/records/curite.yaml) | Natural identity and synthetic surface dissolution | Exsitu relief, timing/pH conflicts and inferred adsorption remain explicit |
+| [Vandenbrandeite](data/records/vandenbrandeite.yaml) | Natural identity and abiotic thermal alteration | Experimental versus computed results and mixed products kept distinct |
+| [Ilmenite](data/records/ilmenite.yaml) | Laboratory acid dissolution of mixed placer concentrates | Feed confounding, fit limits and no isolated-product recovery |
+| [Perovskite](data/records/perovskite.yaml) | Natural mineral identity from microscopy and diffraction | Species distinct from structure family; synthetic thermal arms separate |
+| [Mcallisterite](data/records/mcallisterite.yaml) | Natural borate identity and synthetic thermal behavior | Distinct natural impurities, water-loss fractions and deferred synthesis data |
+| [Tunellite](data/records/tunellite.yaml) | Natural structure and abiotic thermal observations | Heating-rate conflicts and historical product identity remain unresolved |
+| [Kukharenkoite-(Ce)](data/records/kukharenkoite-ce.yaml) | Natural mineral identity and crystal structure | Specimen chemistry and model/deposit limits retained |
+| [Cordylite-(Ce)](data/records/cordylite-ce.yaml) | Natural identity and structural refinement | Historical names and proxy scattering models kept explicit |
+| [Billietite](data/records/billietite.yaml) | Natural identity and laboratory surface alteration | Exsitu observations, source-label conflicts and no bulk recovery yield |
+| [Compreignacite](data/records/compreignacite.yaml) | Synthetic K-phase dissolution in flow columns | Natural/synthetic hydration, K/Na arms and modeled rates kept distinct |
+| [Zinc purification hot filter cake](data/records/zinc-purification-hot-filter-cake.yaml) | Abiotic acid/peroxide dissolution of real purification residue | Conflicting selectivity, dosing and product-recovery limits retained |
+| [Aluminium salt slag](data/records/aluminium-salt-slag.yaml) | Water leaching and mixed-salt crystallization | Chloride removal, scaled mass balance and proposed reuse distinguished |
+| [Studtite](data/records/studtite.yaml) | Natural identity and abiotic thermal/aqueous phase changes | Method-dependent transitions and surface-only models retained |
+| [Metastudtite](data/records/metastudtite.yaml) | Natural identity and synthetic transformation evidence | Mixed precursors, model-dependent products and qualified rehydration |
+| [Bainbridgeite-(YCe)](data/records/bainbridgeite-yce.yaml) | Holotype mineral identity and structure | Later rim reassignment and source/deposit discrepancies retained |
+| [Alicewilsonite-(YLa)](data/records/alicewilsonite-yla.yaml) | Natural identity and crystal structure | Calculated volatiles and model/deposit limits remain explicit |
+| [Probertite](data/records/probertite.yaml) | Natural borate identity and structure | Distinct specimens; inaccessible dissolution evidence deferred |
+| [Priceite](data/records/priceite.yaml) | Natural borate identity and characterization | Disputed chain direction and thermal-access limits retained |
+| [L-chondrite meteorite](data/records/l-chondrite-meteorite.yaml) | Qualified microbial mobilization in flight and ground assays | Non-significant ISS PGE comparisons and ground contamination concerns |
+| [Eucrite meteorite](data/records/eucrite-meteorite.yaml) | Terrestrial culture-associated trace-metal mobilization | One abiotic control, specimen provenance and supplement-access limits |
+| [Schoepite](data/records/schoepite.yaml) | Current mineral identity and natural-crystal alteration | Revised symmetry, mixed products and conflicting CIF metadata retained |
+| [Becquerelite](data/records/becquerelite.yaml) | Abiotic surface dissolution and later coating characterization | Synthetic specimens, reused experiments and secondary precipitation kept distinct |
+| [Donnayite-(Y)](data/records/donnayite-y.yaml) | Revised natural-mineral identity and structure | Historical cotype reassignments and different analytical specimens retained |
+| [Alicewilsonite-(YCe)](data/records/alicewilsonite-yce.yaml) | Natural identity, chemistry and crystal structure | Zoned specimen and calculated volatile components; no extraction claim |
+| [Ginorite](data/records/ginorite.yaml) | Natural identity, structure and specimen-specific thermal response | Source temperature conflicts and unverified thermal product sequence |
+| [Sulfoborite](data/records/sulfoborite.yaml) | Natural mineral identity and published crystal structure | Current variable OH/F formula differs from historical ideal model |
+| [Phosphate-ore tailings](data/records/phosphate-ore-tailings.yaml) | Culture-associated rare earth leaching in laboratory flasks | Missing sterile leaching controls, aggregate assay and inconsistent source methods |
+| [Natroboltwoodite](data/records/natroboltwoodite.yaml) | Abiotic dissolution of a characterized synthetic sodium uranyl silicate | Hydration differs from the current mineral formula; low-bicarbonate decreases retained |
+| [Metaschoepite](data/records/metaschoepite.yaml) | Natural-mineral context and humidity-dependent synthetic dehydration | Mixed phases, batch differences and inconsistent source timing retained |
+| [Burbankite](data/records/burbankite.yaml) | Natural identity and synthetic La-Ca carbonate formation | Mixed synthesis product and disputed thermal values; analogue is not natural-ore recovery |
+| [Synchysite-(Ce)](data/records/synchysite-ce.yaml) | Natural-crystal structure and microstructure | Separate specimens and proxy scattering occupancies; raw diffraction files unacquired |
+| [Nobleite](data/records/nobleite.yaml) | Laboratory precipitation and natural/synthetic diffraction comparison | Formation without quantified recovery or demonstrated interconversion to gowerite |
+| [Gowerite](data/records/gowerite.yaml) | Historical and hydrothermal laboratory precipitation | Failed replication of one historical route retained; bulk purity not quantified |
+| [Lead blast-furnace slag](data/records/lead-blast-furnace-slag.yaml) | Controlled laboratory microbial alteration of real smelting residue | Operational metal fractions do not establish exclusive biosorption or isolated product recovery |
 | [Boltwoodite](data/records/boltwoodite.yaml) | Natural identity, synthetic formation and aqueous uranium release | Natural and synthetic hydration differ; total uranium is not a Ksp or recovery yield |
 | [Cuprosklodowskite](data/records/cuprosklodowskite.yaml) | Natural-crystal identity and original refinement with deposited CIF | Museum diffraction specimen kept separate from the photographed locality specimen |
 | [Kozoite-(La)](data/records/kozoite-la.yaml) | Natural identity and synthetic carbonate phase progression | Crystalline phase fractions are not elemental recovery; separate high-temperature values conflict |

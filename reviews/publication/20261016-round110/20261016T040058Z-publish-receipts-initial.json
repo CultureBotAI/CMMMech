@@ -1,0 +1,52 @@
+{
+  "timestamp_utc": "2026-10-16T04:00:58.874816Z",
+  "reviewer": "codex /root/round104_ree (GPT-6)",
+  "base": "0482e7b0af9b18685dabe310dbe86487b6ac4226",
+  "worktree": "/private/tmp/CMMMech-expansion-round110-20261016",
+  "scope": "Independent static audit of newly added commit/push helper; earlier isolated-helper scope retained.",
+  "helper": {
+    "path": "/private/tmp/cmm-round110-publish.py",
+    "sha256": "4ceb6536df584031e3509b3de5811b32372ebc0d2b8cce1b5810c34e31ab4498",
+    "preserved_original": "/private/tmp/cmm-round110-publish-initial-reviewed.py"
+  },
+  "predecessor": {
+    "path": "reviews/publication/20261016-round110/20261016T035955Z-isolated-helpers-report-audit.json",
+    "sha256": "71aa7c7ec42e4cc76c443f75670ab595967cf57348d79056aa6f3c3fd7bac80c"
+  },
+  "current_reports": [
+    {
+      "path": "research/ingests/round110-frontier-20261016.json",
+      "sha256": "b68e91f6de4df821536e2bbf79bd769bbc80efc994fb7d97517b4d7b9be443de"
+    },
+    {
+      "path": "research/ingests/round110-frontier-20261016.md",
+      "sha256": "682cc24de6d1ef489d5d7e503b2d34b611eec91ae080358784053ad3633ce182"
+    }
+  ],
+  "verdict": "needs_curation",
+  "findings": [
+    {
+      "key": "round110-publish-required-receipts",
+      "severity": "major",
+      "category": "receipt_provenance",
+      "status": "open",
+      "title": "Commit admission does not bind required gate commands and checkout",
+      "description": "The commit arm accepts final-gates using completed/exit/base/input flag/log hash but does not require worktree=W or the exact successful four-command sequence. It accepts canonical-review receipt using only exit/base/log hash, without completion, worktree or actual required review-check command. A log-integrity-valid success receipt for the same base but another checkout, or one omitting/replacing a required command, can therefore be admitted before git add/commit.",
+      "acceptance": [
+        "Require exact worktree/base and terminal completion evidence for both receipts; require the final four-command sequence and successful finished rows.",
+        "Require canonical review-check command, --require-reviews and trusted --base at the intended worktree with actual completed result.",
+        "Bind coverage root/counts and reject negative fixture variants (wrong worktree, absent/duplicate/replaced command, failed/incomplete check) before mutation.",
+        "Preserve this helper/finding and save successor verification before any commit or push."
+      ]
+    }
+  ],
+  "observations": [
+    "Current observed final batch receipt is correct. This is a concrete guard behavior gap, not a claim that a wrong receipt was supplied.",
+    "No publication mutation or clone was executed by this auditor.",
+    "Parent reports three spacing-only report transforms; current hashes are bound here. No scientific/dossier input changed."
+  ],
+  "limitations": [
+    "Canonical review-check terminal receipt was not yet present at inspection.",
+    "No exact committed-head or hosted acceptance."
+  ]
+}

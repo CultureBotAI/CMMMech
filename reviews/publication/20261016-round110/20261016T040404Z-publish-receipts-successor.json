@@ -1,0 +1,116 @@
+{
+  "timestamp_utc": "2026-10-16T04:04:04.726002Z",
+  "reviewer": "codex /root/round104_ree (GPT-6)",
+  "base": "0482e7b0af9b18685dabe310dbe86487b6ac4226",
+  "worktree": "/private/tmp/CMMMech-expansion-round110-20261016",
+  "scope": "Independent static and AST-only verification of repaired commit receipt guard plus final report/body bindings; no publication execution.",
+  "predecessor": {
+    "path": "reviews/publication/20261016-round110/20261016T040058Z-publish-receipts-initial.json",
+    "sha256": "567ab6a734aa9a7ba1b3c1729b8e8ecbc4ff208ad4a98b225a40a102d2f45011"
+  },
+  "earlier_helper_report_audit": {
+    "path": "reviews/publication/20261016-round110/20261016T035955Z-isolated-helpers-report-audit.json",
+    "sha256": "71aa7c7ec42e4cc76c443f75670ab595967cf57348d79056aa6f3c3fd7bac80c"
+  },
+  "issue": "https://github.com/CultureBotAI/CMMMech/issues/454",
+  "issue_key": "round110-publish-required-receipts",
+  "severity": "major",
+  "status": "resolved",
+  "verdict": "pass_with_limitations",
+  "inputs": [
+    {
+      "path": "/private/tmp/cmm-round110-publish.py",
+      "bytes": 6109,
+      "sha256": "dab638a65ea9023b518e22642cbf560da125c2f5616f303d8848e1a5d3c5e944"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-isolated-verification.py",
+      "bytes": 5754,
+      "sha256": "0d9211b663de4edb2319355e4f5a61541eb2b25f2e0810d94844e6d9c3737ea5"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-isolated-coverage.py",
+      "bytes": 3515,
+      "sha256": "7afaef22c3c4967d262a95f36f0eff9aa825db2dc8c873c4d719f7c2386b2d44"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-helper-config.json",
+      "bytes": 501,
+      "sha256": "c270b0efe02e517db3fa287e1130f8eac11fb9350dfaa6156ffbe51e27b6bf94"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-publish-guard-independent-tests.json",
+      "bytes": 9168,
+      "sha256": "a304215c1dadd758fd32f3c7cb656b4ebc8e48e15333260385fe53ce855e3eb3"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-review-check-final.json",
+      "bytes": 529,
+      "sha256": "bbc303a16a65e1e4ae4645a065fac2a49ba6c27567127b36573e3e93398fa681"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-review-check-final.log",
+      "bytes": 194,
+      "sha256": "634db1c08d115981b3701da159f029d9857a6f469b6b3f98e9bf9d62a8e57bbd"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-review-bases-local.json",
+      "bytes": 15979,
+      "sha256": "283bc4c05af46ff1c4c557ddfba16826ab7d9ffd9d8f641053e69de06fc4e91d"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-final-gates.json",
+      "bytes": 61659,
+      "sha256": "ed153240d4c5826f0436aa5b996d00e0eed289dd884396599de811fc1fb085c6"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-local-coverage.json",
+      "bytes": 334595,
+      "sha256": "80267413003be420f68e7828f981c23a43e4a4f7ca9a9c4e020aea37dd12b52d"
+    },
+    {
+      "path": "/private/tmp/cmm-round110-pr-body.md",
+      "bytes": 1796,
+      "sha256": "9c8ccad5fd96c7224357147d7e2151f67ea818a398604796168f62b1fce5d485"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round110-20261016/research/ingests/round110-frontier-20261016.json",
+      "bytes": 10510,
+      "sha256": "b68e91f6de4df821536e2bbf79bd769bbc80efc994fb7d97517b4d7b9be443de"
+    },
+    {
+      "path": "/private/tmp/CMMMech-expansion-round110-20261016/research/ingests/round110-frontier-20261016.md",
+      "bytes": 6022,
+      "sha256": "682cc24de6d1ef489d5d7e503b2d34b611eec91ae080358784053ad3633ce182"
+    }
+  ],
+  "tests": {
+    "path": "/private/tmp/cmm-round110-publish-guard-independent-tests.json",
+    "sha256": "a304215c1dadd758fd32f3c7cb656b4ebc8e48e15333260385fe53ce855e3eb3",
+    "count": 47,
+    "passed": true,
+    "main_executed": false
+  },
+  "report_spacing": [
+    {
+      "path": "research/ingests/round110-frontier-20261016.json",
+      "prior_sha256": "180f30327c627eb4b315ec8d8767a6d877e7d606fadb8c17ba87a23281b95545",
+      "current_sha256": "b68e91f6de4df821536e2bbf79bd769bbc80efc994fb7d97517b4d7b9be443de",
+      "exact_spacing_transform_verified": true
+    },
+    {
+      "path": "research/ingests/round110-frontier-20261016.md",
+      "prior_sha256": "dd575804ff2220600a2e5118ddefd73c62d789a8456ae503dbf94c29a6eec018",
+      "current_sha256": "682cc24de6d1ef489d5d7e503b2d34b611eec91ae080358784053ad3633ce182",
+      "exact_spacing_transform_verified": true
+    }
+  ],
+  "disposition": "Required receipt validation now runs before git add/commit, requiring exact batch worktree/base/state, unchanged-input boolean, ordered four-command sequence, zero row exits and bounded timezone-aware terminal times, exact log path/digest; exact canonical review command/worktree/base, zero exit and terminal times/log; coverage root and passed boolean. Caller separately requires configured counts and current owner/review hashes.",
+  "observed_local_checks": "Final batch and 648-review canonical checker passed; local coverage confirms 555/631/648/111/555. Base-retention receipt reports all111 surviving through ancestry or retained tag. Their receipt hashes are bound here.",
+  "independence_disclosure": "Reviewer did not author publication helpers/report/body; authored REE owners and separate borate reviews/dossier-locator audits. This is not a repeat scientific review or an independent scientific verdict on own REE records.",
+  "limitations": [
+    "No commit, push, PR creation, clone, queue, merge or cleanup was executed by this reviewer. Later runtime acceptance still requires actual successful bound receipts.",
+    "The report changed only by the verified three spacing substitutions; its working-tree scope and pending publication wording remain honest.",
+    "Remote base-retention checks were assessed from the coordinator receipt, not reissued by this reviewer."
+  ]
+}

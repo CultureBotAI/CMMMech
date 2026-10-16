@@ -1,0 +1,319 @@
+# Independent scientific review of Compreignacite
+
+- Review: 20261016T061128Z-compreignacite-round113-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-16T06:05:02.761479Z
+- Finished UTC: 2026-10-16T06:11:28.026354Z
+- Reviewer: codex /root (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Narrow evidence-backed claims supported; source uncertainties retained. No corrective owner finding identified.
+
+## Scope And Provenance
+
+Entire final owner and actual history, independently assessed at claim level; no experimental replication or model refitting.
+
+Selection: Native capture of exact final owner before final assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9ebff7bf980911e7be86bf19d865aeeca8450781.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:compreignacite | data/records/compreignacite.yaml | maintained | Compreignacite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Required final gate | passed | True | cmmmech:compreignacite | Actual terminal receipt and log verified; exact record hash matches. |
+| Required final gate | passed | True | cmmmech:compreignacite | Actual terminal receipt and log verified; exact record hash matches. |
+| Required final gate | passed | True | cmmmech:compreignacite | Actual terminal receipt and log verified; exact record hash matches. |
+| Required final gate | passed | True | cmmmech:compreignacite | Actual terminal receipt and log verified; exact record hash matches. |
+
+## Scientific And Domain Assessments
+
+### Natural mineral and experimental material
+
+identity: supported. Targets: cmmmech:compreignacite.
+
+Natural species, hydration and separate experimental specimens remain explicit.
+
+### Abiotic observations and causal limits
+
+evidence: supported. Targets: cmmmech:compreignacite.
+
+Source-specific K-column release and remaining uranium values agree with Table2; Table6 values are model-derived or steady-state-method estimates. Natural/synthetic hydration, K/Na identity, control chemistry and sample-assay conflicts are explicitly separated.
+
+### Curation and source versions
+
+provenance: supported. Targets: cmmmech:compreignacite.
+
+Canonical actual histories, primary-source versions, named locators and limits are retained.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/compreignacite.yaml; Exact final native-inspected working bytes; retained /private/tmp/CMMMech-expansion-round113-20261016/data/records/compreignacite.yaml | supports | Complete owner independently checked against accepted primary sources and scoped uncertainty. |
+| history0 | history/records/compreignacite/2026-10-16T055907Z-codex-2a6733.yaml; Entire canonical session and separate inline event; retained /private/tmp/CMMMech-expansion-round113-20261016/history/records/compreignacite/2026-10-16T055907Z-codex-2a6733.yaml | supports | Actual actor, target, event and finished work match; CREATE and subsequent correction remain separate. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Definitions and visually checked rows pages26 and49; retained /private/tmp/cmm-round113-uranium-research/ima202609.pdf | supports | Billietite is grandfathered1947, compreignacite approved1964-026; formulas and statuses supported without inherited criticality. |
+| identity | https://www.rruff.net/doclib/cm/vol36/CM36_1061.pdf; Natural Margnac specimen p1062, occupancy model and revised water formula pp1065-1066; p1066 visually checked; retained /private/tmp/cmm-round113-uranium-research/compreignacite1998.pdf | supports | Natural seven-water K species and synthetic eight-water treatment population are not conflated. No deposited-data re-refinement is claimed. |
+| experiment | https://doi.org/10.1016/j.gca.2017.03.009; Accepted manuscript methods pp6-15, results17-23, discussion23-27; Tables1,2,3,6 and Figure2 visually checked on PDF48,49,50,56,40; retained /private/tmp/cmm-round113-uranium-research/compreignacite2017-osti.pdf | supports | Exact K columns, flows/times/loading, influent versus reservoir pH, integrated aqueous balance and fitted rates verified. K/Na pooling, solid/prose inconsistencies and confounding conditions remain explicit. |
+| si | https://ars.els-cdn.com/content/image/1-s2.0-S0016703717301473-mmc1.pdf; S1 cleaning, S5 sorption/model text; TableS3 p9 and FigureS9 p16 visually checked; retained /private/tmp/cmm-round113-uranium-research/compreignacite2017-si.pdf | supports | Seven-water equilibrium entries differ from main eight-water equation; control-solution speciation is modeled, not measured dissolving-column speciation. |
+| search | Independent bounded owner and notice queries; Exact hidden/ignored/followed current-owner search and web query record; retained /private/tmp/cmm-round113-uranium-independent-search.json | context_only | No duplicate owner or affecting notice identified within the stated search scope; pre-existing uranophane context is not an owner of either new identity. |
+| batch | Final exact-byte batch gates; Four command rows, terminal outcome, base/worktree/log hashes; retained /private/tmp/cmm-round113-final-gates.json | supports | just check, require-records, trusted-base histories and generated-page check all pass on unchanged owner bytes. |
+
+## Limits And Additional Notes
+
+- Independent agent review is not external human peer review.
+- Claim-bearing text and selected primary figures/tables inspected, not every page independently visually reread.
+- Unacquired structure-factor deposits and final typeset2017 article remain unavailable; no raw structure or transport-model reproduction.
+- Retained source contradictions cannot be resolved by offline validation or bounded web searching.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261016T061128Z-compreignacite-round113-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Compreignacite
+started_at: '2026-10-16T06:05:02.761479Z'
+finished_at: '2026-10-16T06:11:28.026354Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Uranium agent authored owner/history and corrected the reported
+    methods finding. Root independently checked exact bytes, original evidence and
+    source figures; shared acquisition does not substitute for assessment.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Narrow evidence-backed claims supported; source uncertainties retained. No
+  corrective owner finding identified.
+source:
+  git_revision: 9ebff7bf980911e7be86bf19d865aeeca8450781
+  state: working_tree
+  inputs:
+  - path: data/records/compreignacite.yaml
+    sha256: 3ccd63f4af9951a0950c4be3dc7f899773e15d1c75be1d314c324e651185d9ef
+    role: target
+  - path: history/records/compreignacite/2026-10-16T055907Z-codex-2a6733.yaml
+    sha256: 549e33d0558d6af236fab51ee413d9b17980ef2b74fad5bc01cb97ff5b6e50ce
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- kind: maintained
+  label: Compreignacite
+  owner_paths:
+  - path: data/records/compreignacite.yaml
+    repository: CultureBotAI/CMMMech
+    role: maintained_record
+  path: data/records/compreignacite.yaml
+  target_id: cmmmech:compreignacite
+scope:
+  description: Entire final owner and actual history, independently assessed at claim
+    level; no experimental replication or model refitting.
+  selection: Native capture of exact final owner before final assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:compreignacite
+checks:
+- check_id: batch0
+  name: Required final gate
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  summary: Actual terminal receipt and log verified; exact record hash matches.
+  target_ids:
+  - cmmmech:compreignacite
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Required final gate
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  summary: Actual terminal receipt and log verified; exact record hash matches.
+  target_ids:
+  - cmmmech:compreignacite
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Required final gate
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 9ebff7bf980911e7be86bf19d865aeeca8450781
+  exit_code: 0
+  summary: Actual terminal receipt and log verified; exact record hash matches.
+  target_ids:
+  - cmmmech:compreignacite
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Required final gate
+  required: true
+  status: passed
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  summary: Actual terminal receipt and log verified; exact record hash matches.
+  target_ids:
+  - cmmmech:compreignacite
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/compreignacite.yaml
+  locator: Exact final native-inspected working bytes; retained /private/tmp/CMMMech-expansion-round113-20261016/data/records/compreignacite.yaml
+  accessed_at: '2026-10-16T06:11:28.026354Z'
+  snapshot_sha256: 3ccd63f4af9951a0950c4be3dc7f899773e15d1c75be1d314c324e651185d9ef
+  support: supports
+  summary: Complete owner independently checked against accepted primary sources and
+    scoped uncertainty.
+- evidence_id: history0
+  kind: record_content
+  reference: history/records/compreignacite/2026-10-16T055907Z-codex-2a6733.yaml
+  locator: Entire canonical session and separate inline event; retained /private/tmp/CMMMech-expansion-round113-20261016/history/records/compreignacite/2026-10-16T055907Z-codex-2a6733.yaml
+  accessed_at: '2026-10-16T06:11:28.026354Z'
+  snapshot_sha256: 549e33d0558d6af236fab51ee413d9b17980ef2b74fad5bc01cb97ff5b6e50ce
+  support: supports
+  summary: Actual actor, target, event and finished work match; CREATE and subsequent
+    correction remain separate.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions and visually checked rows pages26 and49; retained /private/tmp/cmm-round113-uranium-research/ima202609.pdf
+  accessed_at: '2026-10-16T06:11:28.026354Z'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  support: supports
+  summary: Billietite is grandfathered1947, compreignacite approved1964-026; formulas
+    and statuses supported without inherited criticality.
+- evidence_id: identity
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/cm/vol36/CM36_1061.pdf
+  locator: Natural Margnac specimen p1062, occupancy model and revised water formula
+    pp1065-1066; p1066 visually checked; retained /private/tmp/cmm-round113-uranium-research/compreignacite1998.pdf
+  accessed_at: '2026-10-16T06:11:28.026354Z'
+  snapshot_sha256: a849d3ff01e4e43746272fd7833b06defcf707951fca95b7332411397ca13954
+  support: supports
+  summary: Natural seven-water K species and synthetic eight-water treatment population
+    are not conflated. No deposited-data re-refinement is claimed.
+- evidence_id: experiment
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.gca.2017.03.009
+  locator: Accepted manuscript methods pp6-15, results17-23, discussion23-27; Tables1,2,3,6
+    and Figure2 visually checked on PDF48,49,50,56,40; retained /private/tmp/cmm-round113-uranium-research/compreignacite2017-osti.pdf
+  accessed_at: '2026-10-16T06:11:28.026354Z'
+  snapshot_sha256: 838b3e5b998560b5b86cca5f42e533cd24a9a16a400493cb87ddb0d8704ecb98
+  support: supports
+  summary: Exact K columns, flows/times/loading, influent versus reservoir pH, integrated
+    aqueous balance and fitted rates verified. K/Na pooling, solid/prose inconsistencies
+    and confounding conditions remain explicit.
+- evidence_id: si
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0016703717301473-mmc1.pdf
+  locator: S1 cleaning, S5 sorption/model text; TableS3 p9 and FigureS9 p16 visually
+    checked; retained /private/tmp/cmm-round113-uranium-research/compreignacite2017-si.pdf
+  accessed_at: '2026-10-16T06:11:28.026354Z'
+  snapshot_sha256: b156f7e48136663061e184a4fd3a5c609cf0450bafeefe8f88e403d021383993
+  support: supports
+  summary: Seven-water equilibrium entries differ from main eight-water equation;
+    control-solution speciation is modeled, not measured dissolving-column speciation.
+- evidence_id: search
+  kind: search
+  reference: Independent bounded owner and notice queries
+  locator: Exact hidden/ignored/followed current-owner search and web query record;
+    retained /private/tmp/cmm-round113-uranium-independent-search.json
+  accessed_at: '2026-10-16T06:11:28.026354Z'
+  snapshot_sha256: 15ed3a37d25eee7789f2719d1bb6a346b9902f98979e21de24258b81b8bc31d0
+  support: context_only
+  summary: No duplicate owner or affecting notice identified within the stated search
+    scope; pre-existing uranophane context is not an owner of either new identity.
+  search_scope: Current data/records including hidden/ignored files and relevant symlinks;
+    first returned DOI/title correction/retraction search windows on2026-10-16. Not
+    global absence or exhaustion.
+- evidence_id: batch
+  kind: validation
+  reference: Final exact-byte batch gates
+  locator: Four command rows, terminal outcome, base/worktree/log hashes; retained
+    /private/tmp/cmm-round113-final-gates.json
+  accessed_at: '2026-10-16T06:11:28.026354Z'
+  snapshot_sha256: 44d42e6f650408fed95cf49a83cad6a12d0a52329961f3f5cc960a659da7ccc4
+  support: supports
+  summary: just check, require-records, trusted-base histories and generated-page
+    check all pass on unchanged owner bytes.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Natural mineral and experimental material
+  outcome: supported
+  summary: Natural species, hydration and separate experimental specimens remain explicit.
+  target_ids:
+  - cmmmech:compreignacite
+  evidence_ids:
+  - owner
+  - ima
+  - identity
+- assessment_id: science
+  area: evidence
+  topic: Abiotic observations and causal limits
+  outcome: supported
+  summary: Source-specific K-column release and remaining uranium values agree with
+    Table2; Table6 values are model-derived or steady-state-method estimates. Natural/synthetic
+    hydration, K/Na identity, control chemistry and sample-assay conflicts are explicitly
+    separated.
+  target_ids:
+  - cmmmech:compreignacite
+  evidence_ids:
+  - owner
+  - experiment
+  - si
+- assessment_id: provenance
+  area: provenance
+  topic: Curation and source versions
+  outcome: supported
+  summary: Canonical actual histories, primary-source versions, named locators and
+    limits are retained.
+  target_ids:
+  - cmmmech:compreignacite
+  evidence_ids:
+  - history0
+  - search
+  - batch
+findings: []
+actions: []
+related_reviews: []
+limitations:
+- Independent agent review is not external human peer review.
+- Claim-bearing text and selected primary figures/tables inspected, not every page
+  independently visually reread.
+- Unacquired structure-factor deposits and final typeset2017 article remain unavailable;
+  no raw structure or transport-model reproduction.
+- Retained source contradictions cannot be resolved by offline validation or bounded
+  web searching.
+```

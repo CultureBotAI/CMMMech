@@ -1,0 +1,394 @@
+schema_version: 1.0.0
+review_id: 20261016T035700Z-burbankite-round110-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Burbankite
+started_at: '2026-10-16T03:49:33.152698Z'
+finished_at: '2026-10-16T03:57:00.788842Z'
+reviewer:
+  identity: codex /root/round104_borates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_ree. No target owner/history/dossier
+    edits. Reviewer authored unrelated nobleite/gowerite records. Shared original
+    acquisitions disclosed; primary text and relevant figures/tables independently
+    assessed after native capture.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Species identity, material boundaries and the stated experimental or observational
+  scope are supported. No corrective owner finding in this review.
+source:
+  git_revision: 0482e7b0af9b18685dabe310dbe86487b6ac4226
+  state: working_tree
+  inputs:
+  - path: data/records/burbankite.yaml
+    sha256: bc9d3e107c34a5917e9a0b82d610ef6e7785d9fcdcdf4b6c4ed58365a4fb64bb
+    role: target
+  - path: history/records/burbankite/2026-10-16T034356Z-codex-root-round104-ree-db84a2.yaml
+    sha256: 815750458e4372197e09d4b12866af181e87dd01797339ad7f9b58ad2714003f
+    role: context
+  - path: research/sources/round110-ree/20261016T034612Z-source-investigation.json
+    sha256: b499a85fb814d6f4022f38d9eb9955673cdc1983502c706e520617fc9b535443
+    role: context
+  - path: research/sources/round110-ree/20261016T034612Z-source-investigation.md
+    sha256: cc639e221e5bdb0dd249af7ed89ff641227a2edfb75c5384d0e885583896e36e
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:burbankite
+  path: data/records/burbankite.yaml
+  label: Burbankite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/burbankite.yaml
+    role: maintained record
+scope:
+  description: Complete assigned owner, identity, primary evidence, experimental/observational
+    limits and history. Other records and publication operations excluded.
+  selection: Assigned frozen owner; native capture before assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:burbankite
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/burbankite.yaml data/records/synchysite-ce.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Checked 2 record(s); 0 failed. Actual 2026-10-16T03:52:49.166110+00:00
+    through 2026-10-16T03:52:51.115299+00:00
+  target_ids:
+  - cmmmech:burbankite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Completed coordinator batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T03:52:09.968678+00:00 through 2026-10-16T03:56:26.718446+00:00
+    in /private/tmp/CMMMech-expansion-round110-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:burbankite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Completed coordinator batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T03:56:26.718469+00:00 through 2026-10-16T03:56:36.846721+00:00
+    in /private/tmp/CMMMech-expansion-round110-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:burbankite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch command 3
+  command: uv run --locked cmmmech validate-history --base 0482e7b0af9b18685dabe310dbe86487b6ac4226
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T03:56:36.846741+00:00 through 2026-10-16T03:56:42.595299+00:00
+    in /private/tmp/CMMMech-expansion-round110-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:burbankite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T03:56:42.595329+00:00 through 2026-10-16T03:56:48.640530+00:00
+    in /private/tmp/CMMMech-expansion-round110-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:burbankite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/burbankite.yaml
+  locator: Complete frozen owner, captured before assessment.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: supports
+  summary: Current IMA page 32 verifies grandfathered Burbankite, (Na,Ca)3(Sr,Ba,Ce)3(CO3)5.
+    The 1953 entry is a description year, not an approval identifier. Mineral species,
+    group, mixed ore and synthetic Na-Ca-La analogue remain distinct.
+  snapshot_sha256: bc9d3e107c34a5917e9a0b82d610ef6e7785d9fcdcdf4b6c4ed58365a4fb64bb
+- evidence_id: history
+  kind: record_content
+  reference: history/records/burbankite/2026-10-16T034356Z-codex-root-round104-ree-db84a2.yaml
+  locator: Canonical CREATE plus distinct inline event; actor, target and actual timestamps
+    checked.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: supports
+  summary: Codex/GPT-6 metadata and new-owner provenance are supported.
+  snapshot_sha256: 815750458e4372197e09d4b12866af181e87dd01797339ad7f9b58ad2714003f
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions p.1 and rows pp.32/210 visually checked; reviewer independently
+    acquired same authority bytes.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: supports
+  summary: Species names, formulas and identifier scopes verified.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round110-ree/20261016T034612Z-source-investigation.json
+  locator: Full paired source dossier, original acquisitions and final freeze independently
+    inspected.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: context_only
+  summary: Context supports provenance; it is not a substitute for originals.
+  snapshot_sha256: b499a85fb814d6f4022f38d9eb9955673cdc1983502c706e520617fc9b535443
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round110-borates-research/review-ree-web.json
+  locator: Independent exact DOI correction/erratum/retraction queries and direct
+    publisher opens on 2026-10-16.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: context_only
+  summary: No affecting correction identified in returned sets; bounded search only.
+  snapshot_sha256: 4ee15b8c73928dfb429b5468fa929670c32314ca7b136c16ad613208061d6741
+  search_scope: Exact 2022 and 2025 DOI notice queries; first returned sets and primary
+    publisher landing pages, not exhaustive literature coverage.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round110-borates-research/review-ree-dedup.json
+  locator: 89 context lines in current records/research/reviews/history.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: context_only
+  summary: No distinct duplicate owner found within this bounded current text scope;
+    curator broader precreation inventory independently read.
+  snapshot_sha256: 7202355f6e7006ecb9f79e647e94500e298c113c4e8fb92becf098ca4008b916
+  search_scope: rg --no-ignore --hidden --follow over named W roots; burbankite/synchysite
+    names, exact DOI and 1982-030. Ignored files included; no machine-wide absence
+    claim.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round110-borates-research/review-ree-named-validation.json
+  locator: Actual independent named validation, exact current target hashes.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: supports
+  summary: Two records checked, zero failures.
+  snapshot_sha256: 3f4271972ec99f29851e3b93a2ba474c8b83c8b922b7d7dfa7238c64d6262c47
+- evidence_id: baseline
+  kind: validation
+  reference: /private/tmp/cmm-round110-baseline.json
+  locator: Completed initial baseline, retained log hash 54858f4f8bb7490eb7036c9d30629f427a027eabb8ff43a74b7272ddb1912f46
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: context_only
+  summary: Baseline context, not final-state validation.
+  snapshot_sha256: c2e5b9b74937be73fd67619b3ef19b72f136c709d61b6a3b96016ea3e53a8afc
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round110-final-gates.json
+  locator: Actual four-command final batch, base/cwd/unique rows/zero exits/unchanged
+    target hashes; log hash deaa335863d7038fa0324fd322f01d57562c229dd3f7e8816c396bc78443333a
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: supports
+  summary: Required batch checks passed. Later native whole-corpus and publication
+    gates are separate.
+  snapshot_sha256: ed153240d4c5826f0436aa5b996d00e0eed289dd884396599de811fc1fb085c6
+- evidence_id: original
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/am/vol38/AM38_1169.pdf
+  locator: Complete 15-page original acquired; independent burbankite review pp.1169–1176,
+    all8 relevant pages visually checked, Tables1–3/Figures1–2. Unrelated calkinsite
+    characterization excluded.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: supports
+  summary: Pecora and Kerr pp.1169–1176, Tables1–3 and Figures1–2 support natural
+    identity and calcite-vein occurrence. Grain-count purity was 96 percent burbankite,
+    3 percent ancylite and 1 percent other minerals; Table2 impurity-adjusted chemistry
+    is separately calculated. Cold 1:5 HCl effervescence supplies neither leaching
+    kinetics nor recovery yield.
+  snapshot_sha256: 862dd52f63b68b3e26b3d334cd80da1daddfbebcfdde9c90b7f6b14e5c8c7715
+- evidence_id: experiment
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-34-351-2022
+  locator: Eight-page original; scientific text pp.351–357, all relevant methods/figures/tables
+    visually checked, especially p.352/Figure1, Tables1–5, abstract versus Results.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: supports
+  summary: Milani Experimental p.352/Figure1 supports a 24 h, 5 GPa, 1073 K synthetic
+    carbonate preparation plus Ca-rich La-oxide coproduct. Pt capsule dimensions,
+    heating rate and stated accuracies match. Twenty microprobe points are not twenty
+    independent preparations. Results/Tables1–3 and CIF characterize a P63mc synthetic
+    analogue, not the natural Montana chemistry. Nominal and analytical formulas are
+    distinguished; five-oxygen normalization may refer to metal oxides and is not
+    inherently disproved by carbonate oxygen. Na uncertainty and thermal coverage/coefficient
+    conflicts are correctly retained and excluded from precise claims.
+  snapshot_sha256: bccbf324d1f0e39137cd2a4ed97a1bb7103ba8e11a9bcdece275279df8213114
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-34-351-2022-supplement
+  locator: Complete seven-page supplement, TablesS1–S4 and FiguresS1–S3 independently
+    read and viewed.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: supports
+  summary: Independent synthesis identity context; thermal TableS4 ends628 K and does
+    not resolve the main-paper discrepancy.
+  snapshot_sha256: f9b469402bbd0ddff853fbddec87ad01ccdf50c8a1ae3ce80038a9ef65f02efb
+- evidence_id: cif
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-34-351-2022-supplement
+  locator: Official multi-block burbankite.cif; ambient source/composition/space-group
+    and selected pressure blocks independently checked. No claim all atomic refinements
+    independently reproduced.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: supports
+  summary: Synthetic source 5 GPa/1073 K and nominal-versus-analytical formula retained;
+    no unverified atom-derived quantities adopted.
+  snapshot_sha256: 08e6df134deffac55f166d0c3250d054c2e9d65379a5cb254b37fe00a6ea3053
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species identity and scope
+  outcome: supported
+  summary: Current IMA page 32 verifies grandfathered Burbankite, (Na,Ca)3(Sr,Ba,Ce)3(CO3)5.
+    The 1953 entry is a description year, not an approval identifier. Mineral species,
+    group, mixed ore and synthetic Na-Ca-La analogue remain distinct.
+  target_ids:
+  - cmmmech:burbankite
+  evidence_ids:
+  - record
+  - ima
+- assessment_id: natural
+  area: evidence
+  topic: Natural characterization and measurement provenance
+  outcome: supported
+  summary: Pecora and Kerr pp.1169–1176, Tables1–3 and Figures1–2 support natural
+    identity and calcite-vein occurrence. Grain-count purity was 96 percent burbankite,
+    3 percent ancylite and 1 percent other minerals; Table2 impurity-adjusted chemistry
+    is separately calculated. Cold 1:5 HCl effervescence supplies neither leaching
+    kinetics nor recovery yield.
+  target_ids:
+  - cmmmech:burbankite
+  evidence_ids:
+  - record
+  - original
+- assessment_id: mechanism
+  area: evidence
+  topic: Experiment, observation and causal limits
+  outcome: supported
+  summary: Milani Experimental p.352/Figure1 supports a 24 h, 5 GPa, 1073 K synthetic
+    carbonate preparation plus Ca-rich La-oxide coproduct. Pt capsule dimensions,
+    heating rate and stated accuracies match. Twenty microprobe points are not twenty
+    independent preparations. Results/Tables1–3 and CIF characterize a P63mc synthetic
+    analogue, not the natural Montana chemistry. Nominal and analytical formulas are
+    distinguished; five-oxygen normalization may refer to metal oxides and is not
+    inherently disproved by carbonate oxygen. Na uncertainty and thermal coverage/coefficient
+    conflicts are correctly retained and excluded from precise claims.
+  target_ids:
+  - cmmmech:burbankite
+  evidence_ids:
+  - record
+  - original
+  - experiment
+  - supplement
+  - cif
+  dimensions:
+  - name: material_form
+    value: Natural impure mineral characterization; separate nominal Na3Ca2La(CO3)5
+      synthetic preparation.
+    definition: The natural mineral and synthetic analogue are not compositionally
+      identical.
+    evidence_ids:
+    - original
+    - experiment
+    - supplement
+    - cif
+  - name: conditions
+    value: 5 GPa, 1073 K, 24 h, sealed Pt capsule; about 40 K/min, ±20 K and assumed
+      ±3 percent pressure.
+    definition: Laboratory multi-anvil synthesis, not a natural stability boundary.
+    evidence_ids:
+    - original
+    - experiment
+    - supplement
+    - cif
+  - name: outcome
+    value: Crystals with burbankite structure plus Ca-rich La oxide.
+    definition: Qualitative mixed assemblage; no phase fraction or metal recovery
+      denominator.
+    evidence_ids:
+    - original
+    - experiment
+    - supplement
+    - cif
+- assessment_id: scope
+  area: evidence
+  topic: Criticality, microbial and deployment boundaries
+  outcome: supported
+  summary: No jurisdiction/list/edition criticality claim, microbial causation, ore
+    recovery efficiency or industrial deployment is asserted. iModulonDB does not
+    apply to this abiotic mineral evidence.
+  target_ids:
+  - cmmmech:burbankite
+  evidence_ids:
+  - record
+  - original
+  - experiment
+  - supplement
+  - cif
+- assessment_id: provenance
+  area: provenance
+  topic: Exact bytes, histories and completed checks
+  outcome: supported
+  summary: Captured inputs and frozen hashes are unchanged. Actual canonical/inline
+    events and completed checks support provenance.
+  target_ids:
+  - cmmmech:burbankite
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - dossier
+  - search
+  - dedup
+findings: []
+actions: []
+limitations:
+- Starting powder identities, purities and mass, quantitative phase yield and independent
+  synthesis replication are unspecified.
+- The synthetic La-Ca analogue cannot establish ore recovery, natural-specimen behavior
+  or an industrial process.
+- Prose/CIF Na uncertainty differs from Table1; abstract/methods thermal limit 746
+  K differs from Table5/S4 maximum 628 K, and fitted coefficients differ. None is
+  silently harmonized.
+- Bounded notice and identity searches do not establish exhaustive literature coverage.
+  Shared source acquisition is not independent experimental replication.
+- No criticality claim is made; omission does not mean the material is absent from
+  every criticality list.
+- Native whole-corpus review validation and exact-head publication checks are separate
+  later gates.
+notes:
+- Pre-judgment capture and actual command receipts retained externally. No maintained
+  target edits by this reviewer.
+- Qualified source limitations are not manufactured corrective findings.

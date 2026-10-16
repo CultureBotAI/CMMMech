@@ -1,0 +1,328 @@
+{
+  "investigation_id": "round115-ree-20261016T081007Z",
+  "timestamp_utc": "2026-10-16T08:10:07.088908+00:00",
+  "curator": "codex /root/round104_ree (GPT-6; codex)",
+  "repository": "https://github.com/CultureBotAI/CMMMech",
+  "worktree": "/private/tmp/CMMMech-expansion-round115-20261016",
+  "base": "f97c978dcfb98269ea46fa6a9d02a6fb0253e111",
+  "scope": "Two new mineral identities; no criticality or microbial mechanism. Identity curation is not independent scientific acceptance.",
+  "selection": [
+    {
+      "record": "data/records/calcioburbankite.yaml",
+      "priority": 1,
+      "reason": "Complete original natural-specimen characterization and exact current IMA approval; distinct Ca-dominant species rather than existing burbankite."
+    },
+    {
+      "record": "data/records/gysinite-nd.yaml",
+      "priority": 2,
+      "reason": "Complete original Pb-Nd carbonate characterization plus official type-catalogue counterevidence; replaces inaccessible calcioancylite-Ce primary route."
+    }
+  ],
+  "deduplication": {
+    "initial": {
+      "at": "2026-10-16T07:57:42.811624+00:00",
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-i",
+        "-l",
+        "calcioancylite|ancylite.{0,5}(La|Nd)|calcioburbankite|gysinite",
+        "/private/tmp/CMMMech-expansion-round115-20261016/data/records",
+        "/private/tmp/CMMMech-expansion-round115-20261016/research",
+        "/private/tmp/CMMMech-expansion-round115-20261016/reviews",
+        "/private/tmp/CMMMech-expansion-round115-20261016/history",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/research",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reviews",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports",
+        "/private/tmp/cmm-round104-ree-research",
+        "/private/tmp/cmm-round105-ree-research",
+        "/private/tmp/cmm-round106-ree-research",
+        "/private/tmp/cmm-round107-ree-research",
+        "/private/tmp/cmm-round108-ree-research",
+        "/private/tmp/cmm-round109-ree-research",
+        "/private/tmp/cmm-round110-ree-research",
+        "/private/tmp/cmm-round111-ree-research",
+        "/private/tmp/cmm-round112-ree-research",
+        "/private/tmp/cmm-round113-ree-research",
+        "/private/tmp/cmm-round114-ree-research"
+      ],
+      "exit": 0,
+      "matched_paths": 149,
+      "raw": "/private/tmp/cmm-round115-ree-research/dedup-paths.txt",
+      "sha256": "b5622500d3967c215528a9ac47b07b0801b2a08625d509f7e7651c71fc3a2da3",
+      "stderr": ""
+    },
+    "final": {
+      "at": "2026-10-16T08:07:14.214392+00:00",
+      "command": [
+        "rg",
+        "--no-ignore",
+        "--hidden",
+        "--follow",
+        "-i",
+        "-l",
+        "gysinite|calcioburbankite|adm9118|PMC11221512|1993-001|ZK171_155|AM70_1314|CM33_1231",
+        "/private/tmp/CMMMech-expansion-round115-20261016/data/records",
+        "/private/tmp/CMMMech-expansion-round115-20261016/research",
+        "/private/tmp/CMMMech-expansion-round115-20261016/reviews",
+        "/private/tmp/CMMMech-expansion-round115-20261016/history",
+        "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/Mechs/CMMMech/reports",
+        "/private/tmp/cmm-round104-ree-research",
+        "/private/tmp/cmm-round105-ree-research",
+        "/private/tmp/cmm-round106-ree-research",
+        "/private/tmp/cmm-round107-ree-research",
+        "/private/tmp/cmm-round108-ree-research",
+        "/private/tmp/cmm-round109-ree-research",
+        "/private/tmp/cmm-round110-ree-research",
+        "/private/tmp/cmm-round111-ree-research",
+        "/private/tmp/cmm-round112-ree-research",
+        "/private/tmp/cmm-round113-ree-research",
+        "/private/tmp/cmm-round114-ree-research"
+      ],
+      "exit": 0,
+      "matches": 32,
+      "raw": "/private/tmp/cmm-round115-ree-research/dedup-final-paths.txt",
+      "sha256": "8f33dd54b7659bf400ea93a6cd047fe2ad0ed4096c040f4d969657f65816c84e",
+      "stderr": ""
+    },
+    "meaningful_matches": [
+      "Existing data/records/burbankite.yaml is another species with a separate synthetic analogue; no claim transferred.",
+      "Existing ancylite-ce/calcioancylite-la and prior nomenclature reports contain candidate context, not owners for this pair.",
+      "The final scan includes the two newly written owners, so those are expected matches, not earlier duplicates."
+    ],
+    "limits": "W records/research/reviews/history, original-main research/reviews/reports and referenced REE raw roots104–114; hidden and ignored files included, symlinks followed. No machine-wide absence claim. Broad ancestor AGENTS listing encountered unrelated CommunityMech permission error; this is not a CMM dedup root."
+  },
+  "search_log": {
+    "path": "/private/tmp/cmm-round115-ree-research/search-log.json",
+    "sha256": "58effc03a8319c764e8bb7a4317886744cdb51abe08f2eb9f53a15689a96257e",
+    "count": 33
+  },
+  "authority": {
+    "source": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf",
+    "live_home_link_confirmed": true,
+    "definitions_page": 1,
+    "rows": {
+      "calcioburbankite": {
+        "page": 35,
+        "formula": "Na3(Ca,Ce,Sr,La)3(CO3)5",
+        "status": "A",
+        "approval": "1993-001"
+      },
+      "gysinite-nd": {
+        "page": 88,
+        "formula": "PbNd(CO3)2(OH)(H2O)",
+        "status": "Rn",
+        "action": "1987 s.p.; not an approval accession"
+      }
+    },
+    "no_inherited_criticality": true
+  },
+  "primary_evidence": [
+    {
+      "source": "van Velthuizen, Gault and Grice1995, Canadian Mineralogist33:1231–1235",
+      "url": "https://www.rruff.net/doclib/cm/vol33/CM33_1231.pdf",
+      "file": "/private/tmp/cmm-round115-ree-research/calcioburbankite1995.pdf",
+      "scope": "Complete5 pages visually inspected, Tables1–4; no numbered figures. Holotype50804, ambiguous quarry/setting; separately encountered La-rich specimen. Three analyses on three grains, stoichiometric CO2 and negative OH/H2O IR. Unresolved original three-way space group; diffraction-alone species-identification caveat.",
+      "limits": [
+        "Table2 Pr2O3 mean1.26 exceeds displayed0.41–1.23 range; Ca atomic-proportion range duplicates Na. No disputed range adopted.",
+        "Abstract crystal elongation[001] differs from French summary[100]; body p1233 states[001], not adopted as a record measurement.",
+        "Beam defocus printed50 microA is dimensionally problematic; no invented beam diameter.",
+        "Qualitative10%HCl dissolution lacks quantitative kinetics/mass balance; no extraction claim."
+      ]
+    },
+    {
+      "source": "Sarp and Bertrand1985, American Mineralogist70:1314–1317",
+      "url": "https://www.rruff.net/doclib/am/vol70/AM70_1314.pdf",
+      "file": "/private/tmp/cmm-round115-ree-research/gysinite1985.pdf",
+      "scope": "Complete4 pages visually inspected including Figures1–2, Tables1–2 and all methods. Geneva410/85 labelled schuilingite; film vs refined cell separated;21 analyses and slight chemistry variation; C measured, water by difference.",
+      "limits": [
+        "Table2 CO2+water means sum26.2wt% versus about23wt% combined thermogravimetric loss on10mg; no stated heating ramp/atmosphere/product analysis, not a quantitative thermal mechanism.",
+        "Calculated4.82g/cm3 density is not measured density.",
+        "Original empirical hydration and cation deficit not promoted to ideal species formula.",
+        "Separate Chabot/Sarp1985 atomic model not acquired; no site/H positions or deposit claim."
+      ]
+    },
+    {
+      "source": "Deliens and Stalder1995, Royal Belgian Institute of Natural Sciences Documents de Travail77",
+      "file": "/private/tmp/cmm-round115-ree-research/gysinite1995-type-catalogue.pdf",
+      "scope": "27-page text artifact; scoped visual inspection contents/foreword/definitions pp3–5 and Gysinite entry printedp14/PDFp12. Not a new whole-catalogue scientific review.",
+      "result": "Kasompi reassignment based on characteristic assemblage, with Geneva410/85 and435/60; original Shinkolobwe label retained as historical provenance."
+    }
+  ],
+  "deferred": [
+    {
+      "identity": "calcioancylite-(Ce)",
+      "source": "10.1134/S1063774513020053 and10.1127/njma/171/1997/309",
+      "state": "Verified2013 bibliographic metadata; full paper not acquired. RRUFF404, olderhosttimeout, SpringerPDFroute returned HTML accesspage, institutionalroute timeout.1997 guessed legacy routes404. No owner created."
+    },
+    {
+      "identity": "calcioburbankite2001 refinement",
+      "doi": "10.1134/1.1420820",
+      "state": "CorrectDOI metadata verified; guessed1.1421302 returned404 and was rejected. Cached web text was not treated as full inspected primary; directPDF routes404/timeout. No model claim adopted."
+    },
+    {
+      "identity": "gysinite1985 refinement",
+      "doi": "10.1524/zkri.1985.171.1-2.155",
+      "state": "ExactDOI metadata verified; broadtitle query returned unrelateditems and was rejected. RRUFFprimaryroute404, publisher202empty. No site occupancy adopted. Secondary mineral page contains a Pb-free syntheticNdCO3OH structure labelled gysinite; excluded as wrong material identity."
+    },
+    {
+      "identity": "calcioburbankite laboratoryformation2024",
+      "doi": "10.1126/sciadv.adm9118",
+      "pmcid": "PMC11221512",
+      "state": "FullarticleXML acquired fromEuropePMC afterPMCbrowserchallenge. Read relevant Results, Materials/Methods and supplementinventory; actual figureimages and supplementTablesS1/S2/FigsS1–S3 not acquired. Science supplement403.",
+      "handoff": "Run8 uses naturalbastnaesite,Na2CO3,water,calcite in a hydrothermaldiamondanvilcell; text reports calcioburbankite crystallization oncooling with SEM-EDS/Raman assignment, mixedproducts and no run8REEconcentration. Resolve fullFigures4/S2 andSI, phaseidentity/composition, loading/pressure/heating/cooling and cleaning losses before adding a bounded abioticformationmechanism. Do not transfer runs1–7solubilities or claim isolatedrecovery.",
+      "license": "Article XML states Creative Commons Attribution; historic primary PDF redistribution terms unknown, raw files not committed."
+    }
+  ],
+  "validation": {
+    "path": "/private/tmp/cmm-round115-ree-research/named-validation.json",
+    "sha256": "a263034b100db383e068aeb08e806390781d8e2541b7bbe78498c27cbcb1211d",
+    "result": "2 checked,0failed; final batch and independent native reviews pending"
+  },
+  "issue_dedup": {
+    "path": "/private/tmp/cmm-round115-open-issues.json",
+    "sha256": "f650e22345cd8656e9be1ddc6b3d9005898493f33b3a57acabbb497bbad7ebc7",
+    "count": 173,
+    "scope": "Open titles/bodies only; comments/all-state not independently searched here. Only matched483calcioancylite-La is a separate sourceproblem. Parent must all-state dedup before posting."
+  },
+  "artifacts": [
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/ima2026-09.pdf",
+      "bytes": 3129886,
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/ima-home.html",
+      "bytes": 26639,
+      "sha256": "af642b16e8393c0c3bc7443c03d72b0486083a643faf6e1ec75a2c92033dc3a9"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/ima-page1.png",
+      "bytes": 228854,
+      "sha256": "82dcc70cd6a634dbce05f17d72a63b31e44e89d4f240f1f439805b998ced7e43"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/ima-page35.png",
+      "bytes": 298622,
+      "sha256": "b768985b9c7ea2bc838b80b0b54263d89ab01779d9a689cd1736bdb4e40cca80"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/ima-page88.png",
+      "bytes": 254227,
+      "sha256": "1841bcece71910f8d419c7714eb5fc55d6270f14787240320a9ef408b1ff3a0e"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/calcioburbankite1995.pdf",
+      "bytes": 495951,
+      "sha256": "c2f3e455eb059b5922fd47fde5a2e6f362c97022702f4a178fc726b510c77e3c"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/calcioburbankite1995.txt",
+      "bytes": 40466,
+      "sha256": "1b6cba95edae3adf80d67cec81166a3f911b2eea190073086c05528bb7b8bd32"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/gysinite1985.pdf",
+      "bytes": 375241,
+      "sha256": "7f934163dacc11fa2b913577c3d52216aad6f6490d652ae74dffa948bab89a67"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/gysinite1985.txt",
+      "bytes": 23140,
+      "sha256": "251a55ae5cf2c926276fa09df9dec4242c16c26fe87fc978c8b7480d324119ca"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/gysinite1995-type-catalogue.pdf",
+      "bytes": 1731676,
+      "sha256": "50fd87c2d3e07f6b3284bb294c6d5fca9fd44d6e0fa609a2760f6886ab58475e"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/gysinite1995-catalogue-page.html",
+      "bytes": 22632,
+      "sha256": "2a9e40bfb4ce9615a0bdd3f27334780c168fc60c2762bc33498d9bc153075c84"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/catalogue-page012.png",
+      "bytes": 258631,
+      "sha256": "f0a370f2171fd2182d7356921d33195ef22fb2d907923a69d0e76956b28b9d0e"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/calcioburbankite2001-crossref-correct.json",
+      "bytes": 6385,
+      "sha256": "47322d359f617a510290022b2695df9806a5e13639988487b3369504aa424e46"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/gysinite1985-structure-doi.json",
+      "bytes": 4326,
+      "sha256": "a5c8399e0e04ecbc0156a00c0749055a7830798272b79ac654bb905c36e9b856"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/calcioancylite2013-crossref.json",
+      "bytes": 7384,
+      "sha256": "d63962353742e4680999e448da778379aa7ca5899a2938223d98f8ce00f53d45"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/calcioburbankite2024-pmc.xml",
+      "bytes": 129850,
+      "sha256": "1294bd3c4906979523503e80caa08c4b979fe5354a00084eed6f2379db7ab37e"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/dedup-receipt.json",
+      "bytes": 1444,
+      "sha256": "cd30836802ac85864aa3e3585cb520930476a03432f3e62cd6db1020f0aca1eb"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/dedup-final-receipt.json",
+      "bytes": 1292,
+      "sha256": "717a00f9f3d90d189e21ace607073016935b5d9daa15712e2a64d0c304817803"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/search-log.json",
+      "bytes": 2658,
+      "sha256": "58effc03a8319c764e8bb7a4317886744cdb51abe08f2eb9f53a15689a96257e"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/named-validation.json",
+      "bytes": 988,
+      "sha256": "a263034b100db383e068aeb08e806390781d8e2541b7bbe78498c27cbcb1211d"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/acquisition-final.json",
+      "bytes": 2361,
+      "sha256": "f49cb2109510b8c1b465edc239028428810d03a13945d70834371c0edc3d556c"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/acquisition-alternative.json",
+      "bytes": 1426,
+      "sha256": "a6993a8a8651ce367b443d765cbea529ece18178f56c0240ec73e6d483a48e93"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/acquisition-initial-sandbox-denied.json",
+      "bytes": 2421,
+      "sha256": "3269442f60467ce39ace529ec199020d386f03f35b6e8f43fa09aaae6d30a115"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/acquisition-last.json",
+      "bytes": 2623,
+      "sha256": "041cd24a8253ab25563489ecbb2be570c4bb41e24538d95dbda44fc1443e2d92"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/acquisition-extra.json",
+      "bytes": 1820,
+      "sha256": "04a3edf2bc2287276e095b4aed75409f39def54da58964899d2336356be65167"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/acquisition-initial.json",
+      "bytes": 3235,
+      "sha256": "847ed2c1cc3817a823c9b163e6188fe3ee9a0b083080f36534d6e49c1b4c9bf6"
+    },
+    {
+      "path": "/private/tmp/cmm-round115-ree-research/acquisition-third.json",
+      "bytes": 2045,
+      "sha256": "383c65de15018853439edc4daee45390fe438eeb7d3b9a264a928803cf49179a"
+    }
+  ],
+  "reuse": "No original PDFs/raw inventories committed. Dossier contains bounded queries, counts, hashes and relevant decisions; raw lists remain external. No exhaustive coverage claim."
+}
