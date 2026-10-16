@@ -1,0 +1,460 @@
+# Independent scientific review of kurnakovite
+
+- Review: 20261016T025655Z-kurnakovite-round109-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-16T02:48:34.663696Z
+- Finished UTC: 2026-10-16T02:56:55.441941Z
+- Reviewer: codex /root/round104_ree (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Pass with limitations: exact kurnakovite owner is supported as a distinct mineral with bounded natural structural evidence and an abiotic mixed-product precipitation observation. No corrective owner finding was identified; model dependence, missing recipe detail and conflicting duration remain explicit.
+
+## Scope And Provenance
+
+Exact frozen kurnakovite owner, source claims and canonical/inline creation provenance; wider follow-up leads and hosted publication excluded.
+
+Selection: Assigned target captured with native inspect before independent scientific assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base a11e47d1c90806e056bd60610a0edd2cf77813a9.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:kurnakovite | data/records/kurnakovite.yaml | maintained | kurnakovite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:kurnakovite | Two records checked with zero failures; subprocess receipt and exact hashes verified. |
+| Final batch command 1 | passed | True | cmmmech:kurnakovite | Coordinator execution 2026-10-16T02:49:47.608391+00:00 through 2026-10-16T02:56:05.465642+00:00; terminal receipt and log digest verified independently. |
+| Final batch command 2 | passed | True | cmmmech:kurnakovite | Coordinator execution 2026-10-16T02:56:05.468183+00:00 through 2026-10-16T02:56:20.189657+00:00; terminal receipt and log digest verified independently. |
+| Final batch command 3 | passed | True | cmmmech:kurnakovite | Coordinator execution 2026-10-16T02:56:20.190674+00:00 through 2026-10-16T02:56:26.560997+00:00; terminal receipt and log digest verified independently. |
+| Final batch command 4 | passed | True | cmmmech:kurnakovite | Coordinator execution 2026-10-16T02:56:26.562184+00:00 through 2026-10-16T02:56:33.865060+00:00; terminal receipt and log digest verified independently. |
+
+## Scientific And Domain Assessments
+
+### Species identity and material boundaries
+
+identity: supported. Targets: cmmmech:kurnakovite.
+
+Current authority and natural primary study support the named mineral, formula and triclinic P-1 structure. The 1940 date is not an IMA approval identifier. Inderite, elemental boron, commodity borates and mixed experimental products remain distinct. No inherited criticality or microbial claim was added.
+
+### Experimental substrate, observations and conditions
+
+evidence: supported. Targets: cmmmech:kurnakovite.
+
+The natural Kramer neutron specimen is separated from the supersaturation experiment. Exact source Table S1 conditions and eight observation times are retained. XRD identifies a mixed assemblage; solution molalities are not extraction yield. First observation at 957 days cannot establish an observed earlier onset of equilibrium.
+
+### Model-derived constant and uncertainty
+
+evidence: supported. Targets: cmmmech:kurnakovite.
+
+The -14.11±0.40 log10 K is correctly identified as a two-sigma infinite-dilution 25 °C/1-bar derived constant using EQ3/6, Pitzer activities and a prior boracite constant. It is not direct pure-phase dissolution at 22.5 °C. The record does not imply independent undersaturation convergence or quantitative phase recovery.
+
+### Contradictions and absent recipe information
+
+consistency: supported. Targets: cmmmech:kurnakovite.
+
+The source's 1629-day abstract/S1 versus 1642-day main-text conflict remains unresolved. Initial boron loading, reactor volume and independent reactor replication are unreported in inspected article/SI; no missing values are invented. Older constants and separate sulfate experiments are not new replicates. Furnace water and silicon impurity caveats are retained.
+
+### Frozen inputs and completed checks
+
+provenance: supported. Targets: cmmmech:kurnakovite.
+
+Native inspection captured exact owner, canonical CREATE history, paired dossier and schema bytes before judgment. All bound inputs remain unchanged. Independent named validation and actual coordinator batch/history checks passed. Saved-review validation and publication are later gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/kurnakovite.yaml; Complete exact working-tree bytes at /private/tmp/CMMMech-expansion-round109-20261016/data/records/kurnakovite.yaml | supports | Identity, scientific descriptions, source-level claims, mechanism scope and inline CREATE independently checked. |
+| history | history/records/kurnakovite/2026-10-16T024519Z-codex-8b811c.yaml; Complete canonical CREATE at /private/tmp/CMMMech-expansion-round109-20261016/history/records/kurnakovite/2026-10-16T024519Z-codex-8b811c.yaml | supports | Actual actor codex, GPT-6/codex metadata, timestamp and target correspond to this addition; inline and canonical events remain distinct. |
+| dossier | research/sources/round109-borates/20261016T024803Z-source-investigation.json; Paired source investigation; acquisition and access limits checked independently against original artifacts. /private/tmp/CMMMech-expansion-round109-20261016/research/sources/round109-borates/20261016T024803Z-source-investigation.json | context_only | Context for source provenance and deferred evidence; not a substitute for the original papers. |
+| search | /private/tmp/cmm-round109-ree-research/borate-review-search.json; Four exact DOI correction/erratum queries; raw response retained. | context_only | No affecting notice identified in returned sets. Known internal conflicts remain explicit; no universal absence claim. |
+| dedup | /private/tmp/cmm-round109-ree-research/borate-review-dedup.txt; Hidden, ignored and followed search across worktree records, research, reviews and history; curator broader dedup includes original-main ignored reports and cited raw roots. | context_only | No additional accepted owner identified in the stated current-record roots. Inderite and inyoite references are context rather than duplicate species owners; curator broader dedup was inspected. |
+| named | /private/tmp/cmm-round109-ree-research/borate-review-named-validation.json; Independent two-owner strict validation with exact hashes and actual subprocess timestamps. | supports | Two records checked; zero failed. 2026-10-16T02:50:24.401404+00:00 through 2026-10-16T02:50:27.083666+00:00 |
+| batch | /private/tmp/cmm-round109-final-gates.json; Coordinator terminal receipt; base, worktree, exact four commands, successful outcomes, unchanged owner hashes and log SHA256 independently verified. Log /private/tmp/cmm-round109-final-gates.log SHA256 9be5c479a792f4240fd2b6e7af4644f5e87e86ffd72eeb8d7c0e253e6dce6838 | supports | Actual completed local batch, not an inferred check or hosted publication result. |
+| primary | https://doi.org/10.2138/am-2019-7072; Complete 26-page institutional Revision_2 manuscript; scientific text and methods pp. 5–13; all Tables 1–7 pp. 17–24 and Figures 1–2 pp. 25–26 independently inspected, including visual tables/figures. /private/tmp/cmm-round109-borates-research/kurnakovite2019.pdf | supports | Natural Kramer specimen chemistry and neutron structures at 293/20 K support the bounded identity and hydrogen-bonded structure. Furnace mass loss is assumed water; possible silicon impurity is retained. Proposed aggregate use is not demonstrated deployment. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September 2026 official list, definitions PDF p. 1 and Kurnakovite row p. 119, visually inspected. /private/tmp/cmm-round109-borates-research/ima2026-09.pdf | supports | Grandfathered G, original-description year 1940, Mg[B3O3(OH)5](H2O)4·H2O; no fabricated approval number. The species is distinct from monoclinic inderite and borates commodity. |
+| experiment | https://doi.org/10.2138/am-2020-7212; All seven published pages 977–983 visually inspected: methods/results p. 978, Figures 1–2 and equations 1–4 p. 979, Tables 1–7 and interpretation pp. 980–982. /private/tmp/cmm-round109-borates-research/kurnakovite2020-solubility.pdf | supports | Mixed boracite–aksaite–kurnakovite product and solution molalities support abiotic precipitation. Borax reference sticks are not an identified product. EQ3/6/Pitzer and a prior boracite constant underlie the inferred dissolution constant; no pure-product yield or rate is measured. |
+| supplement | http://www.minsocam.org/MSA/AmMin/TOC/2020/Jul2020_data/AM-20-77212.zip; Official deposit AM-20-77212; 7212_supp1.pdf Table S1 one page and 7212_supp2.pdf Table S2 two pages, all visually inspected. /private/tmp/cmm-round109-borates-research/kurnakovite2020-supplement.zip | supports | Table S1 gives one named SYN-Boracite-2 arm, eight samples 957–1629 days, 22.5±0.5 °C, 1 mol/kg each MgCl2/NaCl and corrected pHm 8.14–8.25. Pure-MgCl2 correction uncertainty remains explicit. S2 concerns another borax/sulfate arm; its 811-day versus main 762-day discrepancy is retained in the dossier and excluded from the owner. |
+
+## Limits And Additional Notes
+
+- Independent inspection used the complete 2019 Revision_2 accepted manuscript and published 2020 article plus official two-table deposit; no new laboratory work, raw diffraction re-refinement or thermodynamic model reproduction was performed.
+- The 1629/1642-day duration conflict, incomplete starting recipe and equilibrium-model assumptions remain source follow-ups. Quantitative isolated-product mass, phase fractions and industrial performance are not established.
+- Shared source acquisition is disclosed. Bounded correction and hidden/ignored dedup searches do not establish exhaustive absence.
+- Working-tree review at the retained base. Record validation is separate from scientific truth; native review-check and committed-head/hosted publication remain separate.
+- No owner/history correction was needed; unavailable originals and retained internal source conflicts are limitations, not invented corrective defects.
+- No self-authored REE record is scientifically reviewed in this observation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261016T025655Z-kurnakovite-round109-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of kurnakovite
+started_at: '2026-10-16T02:48:34.663696Z'
+finished_at: '2026-10-16T02:56:55.441941Z'
+reviewer:
+  identity: codex /root/round104_ree
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_borates; no edits
+    to the reviewed borate owner/history/dossier. Reviewer authored unrelated kozoite-(La)
+    and kozoite-(Nd) records. Source acquisition was shared, then original articles
+    and authority were independently inspected.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: a11e47d1c90806e056bd60610a0edd2cf77813a9
+  state: working_tree
+  inputs:
+  - path: data/records/kurnakovite.yaml
+    sha256: 1a63e16fff126c8e902d59d6534c6ca60827d13ba77897a46886b1fa3e039bec
+    role: target
+  - path: history/records/kurnakovite/2026-10-16T024519Z-codex-8b811c.yaml
+    sha256: 137545b12d1ddc7f0b20d645ef8109da60e30c2fd727908ab6da8bf6dd208a62
+    role: context
+  - path: research/sources/round109-borates/20261016T024803Z-source-investigation.json
+    sha256: 9c684b20ee18ed7a0ba8d589c3566c87547e99d3b1ae8eb633e370328dd4a66e
+    role: context
+  - path: research/sources/round109-borates/20261016T024803Z-source-investigation.md
+    sha256: 326c69e12190ba71ed980bc36815966a766a16d5aa0ddd861fa9a196c7b62c0d
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:kurnakovite
+  path: data/records/kurnakovite.yaml
+  label: kurnakovite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/kurnakovite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/kurnakovite/2026-10-16T024519Z-codex-8b811c.yaml
+    role: canonical_history
+scope:
+  description: Exact frozen kurnakovite owner, source claims and canonical/inline
+    creation provenance; wider follow-up leads and hosted publication excluded.
+  selection: Assigned target captured with native inspect before independent scientific
+    assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:kurnakovite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/kurnakovite.yaml
+  locator: Complete exact working-tree bytes at /private/tmp/CMMMech-expansion-round109-20261016/data/records/kurnakovite.yaml
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: Identity, scientific descriptions, source-level claims, mechanism scope
+    and inline CREATE independently checked.
+  snapshot_sha256: 1a63e16fff126c8e902d59d6534c6ca60827d13ba77897a46886b1fa3e039bec
+- evidence_id: history
+  kind: record_content
+  reference: history/records/kurnakovite/2026-10-16T024519Z-codex-8b811c.yaml
+  locator: Complete canonical CREATE at /private/tmp/CMMMech-expansion-round109-20261016/history/records/kurnakovite/2026-10-16T024519Z-codex-8b811c.yaml
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: Actual actor codex, GPT-6/codex metadata, timestamp and target correspond
+    to this addition; inline and canonical events remain distinct.
+  snapshot_sha256: 137545b12d1ddc7f0b20d645ef8109da60e30c2fd727908ab6da8bf6dd208a62
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round109-borates/20261016T024803Z-source-investigation.json
+  locator: Paired source investigation; acquisition and access limits checked independently
+    against original artifacts. /private/tmp/CMMMech-expansion-round109-20261016/research/sources/round109-borates/20261016T024803Z-source-investigation.json
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: context_only
+  summary: Context for source provenance and deferred evidence; not a substitute for
+    the original papers.
+  snapshot_sha256: 9c684b20ee18ed7a0ba8d589c3566c87547e99d3b1ae8eb633e370328dd4a66e
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round109-ree-research/borate-review-search.json
+  locator: Four exact DOI correction/erratum queries; raw response retained.
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: context_only
+  summary: No affecting notice identified in returned sets. Known internal conflicts
+    remain explicit; no universal absence claim.
+  snapshot_sha256: 0b4cb1de25514e8e2d5ac084e48794bd5060f3e6ebf4f7f9cc8aaacc9be2a5ee
+  search_scope: First returned web sets for four queries recorded verbatim; no date
+    or domain filter. Publisher metadata and secondary search snippets were not scientific
+    support.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round109-ree-research/borate-review-dedup.txt
+  locator: Hidden, ignored and followed search across worktree records, research,
+    reviews and history; curator broader dedup includes original-main ignored reports
+    and cited raw roots.
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: context_only
+  summary: No additional accepted owner identified in the stated current-record roots.
+    Inderite and inyoite references are context rather than duplicate species owners;
+    curator broader dedup was inspected.
+  snapshot_sha256: 36b86118c1a226496578b03693159de040b948312c37f5cd8e722535ea5b417d
+  search_scope: Bounded text roots and identifiers/DOIs recorded in paired search
+    receipt; not the whole filesystem or unextracted binary content.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round109-ree-research/borate-review-named-validation.json
+  locator: Independent two-owner strict validation with exact hashes and actual subprocess
+    timestamps.
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: Two records checked; zero failed. 2026-10-16T02:50:24.401404+00:00 through
+    2026-10-16T02:50:27.083666+00:00
+  snapshot_sha256: 21633d99efe97ea1fabe978d0c5b5dd4f729788b26bbee5d58ca40ccbafca0ae
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round109-final-gates.json
+  locator: Coordinator terminal receipt; base, worktree, exact four commands, successful
+    outcomes, unchanged owner hashes and log SHA256 independently verified. Log /private/tmp/cmm-round109-final-gates.log
+    SHA256 9be5c479a792f4240fd2b6e7af4644f5e87e86ffd72eeb8d7c0e253e6dce6838
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: Actual completed local batch, not an inferred check or hosted publication
+    result.
+  snapshot_sha256: bcc373fdff60063fbe3c70df3634ea3532fbe628ed76f1be61dcbc8b7174150d
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.2138/am-2019-7072
+  locator: Complete 26-page institutional Revision_2 manuscript; scientific text and
+    methods pp. 5–13; all Tables 1–7 pp. 17–24 and Figures 1–2 pp. 25–26 independently
+    inspected, including visual tables/figures. /private/tmp/cmm-round109-borates-research/kurnakovite2019.pdf
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: Natural Kramer specimen chemistry and neutron structures at 293/20 K support
+    the bounded identity and hydrogen-bonded structure. Furnace mass loss is assumed
+    water; possible silicon impurity is retained. Proposed aggregate use is not demonstrated
+    deployment.
+  snapshot_sha256: 470284268fd47a9aee5bf770620a9f82c65ff6e2bc6bf4ee6cae2b41235c6efb
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 official list, definitions PDF p. 1 and Kurnakovite row
+    p. 119, visually inspected. /private/tmp/cmm-round109-borates-research/ima2026-09.pdf
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: Grandfathered G, original-description year 1940, Mg[B3O3(OH)5](H2O)4·H2O;
+    no fabricated approval number. The species is distinct from monoclinic inderite
+    and borates commodity.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: experiment
+  kind: primary_source
+  reference: https://doi.org/10.2138/am-2020-7212
+  locator: 'All seven published pages 977–983 visually inspected: methods/results
+    p. 978, Figures 1–2 and equations 1–4 p. 979, Tables 1–7 and interpretation pp.
+    980–982. /private/tmp/cmm-round109-borates-research/kurnakovite2020-solubility.pdf'
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: Mixed boracite–aksaite–kurnakovite product and solution molalities support
+    abiotic precipitation. Borax reference sticks are not an identified product. EQ3/6/Pitzer
+    and a prior boracite constant underlie the inferred dissolution constant; no pure-product
+    yield or rate is measured.
+  snapshot_sha256: 72b97578af5639cbc589de6dc0fd997fcba32b5fd87f673027c280d127a38883
+- evidence_id: supplement
+  kind: primary_source
+  reference: http://www.minsocam.org/MSA/AmMin/TOC/2020/Jul2020_data/AM-20-77212.zip
+  locator: Official deposit AM-20-77212; 7212_supp1.pdf Table S1 one page and 7212_supp2.pdf
+    Table S2 two pages, all visually inspected. /private/tmp/cmm-round109-borates-research/kurnakovite2020-supplement.zip
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: Table S1 gives one named SYN-Boracite-2 arm, eight samples 957–1629 days,
+    22.5±0.5 °C, 1 mol/kg each MgCl2/NaCl and corrected pHm 8.14–8.25. Pure-MgCl2
+    correction uncertainty remains explicit. S2 concerns another borax/sulfate arm;
+    its 811-day versus main 762-day discrepancy is retained in the dossier and excluded
+    from the owner.
+  snapshot_sha256: 3ee3b279dbd2bdf086f7a3b1b9f9b834395c896a5d274edbfc84e9704793765e
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/kurnakovite.yaml data/records/meyerhofferite.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Two records checked with zero failures; subprocess receipt and exact hashes
+    verified.
+  target_ids:
+  - cmmmech:kurnakovite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Final batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T02:49:47.608391+00:00 through 2026-10-16T02:56:05.465642+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:kurnakovite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Final batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T02:56:05.468183+00:00 through 2026-10-16T02:56:20.189657+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:kurnakovite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Final batch command 3
+  command: uv run --locked cmmmech validate-history --base a11e47d1c90806e056bd60610a0edd2cf77813a9
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T02:56:20.190674+00:00 through 2026-10-16T02:56:26.560997+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:kurnakovite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Final batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T02:56:26.562184+00:00 through 2026-10-16T02:56:33.865060+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:kurnakovite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species identity and material boundaries
+  outcome: supported
+  summary: Current authority and natural primary study support the named mineral,
+    formula and triclinic P-1 structure. The 1940 date is not an IMA approval identifier.
+    Inderite, elemental boron, commodity borates and mixed experimental products remain
+    distinct. No inherited criticality or microbial claim was added.
+  target_ids:
+  - cmmmech:kurnakovite
+  evidence_ids:
+  - record
+  - ima
+  - primary
+- assessment_id: conditions
+  area: evidence
+  topic: Experimental substrate, observations and conditions
+  outcome: supported
+  summary: The natural Kramer neutron specimen is separated from the supersaturation
+    experiment. Exact source Table S1 conditions and eight observation times are retained.
+    XRD identifies a mixed assemblage; solution molalities are not extraction yield.
+    First observation at 957 days cannot establish an observed earlier onset of equilibrium.
+  target_ids:
+  - cmmmech:kurnakovite
+  evidence_ids:
+  - record
+  - experiment
+  - supplement
+- assessment_id: model
+  area: evidence
+  topic: Model-derived constant and uncertainty
+  outcome: supported
+  summary: The -14.11±0.40 log10 K is correctly identified as a two-sigma infinite-dilution
+    25 °C/1-bar derived constant using EQ3/6, Pitzer activities and a prior boracite
+    constant. It is not direct pure-phase dissolution at 22.5 °C. The record does
+    not imply independent undersaturation convergence or quantitative phase recovery.
+  target_ids:
+  - cmmmech:kurnakovite
+  evidence_ids:
+  - record
+  - experiment
+  - supplement
+- assessment_id: limits
+  area: consistency
+  topic: Contradictions and absent recipe information
+  outcome: supported
+  summary: The source's 1629-day abstract/S1 versus 1642-day main-text conflict remains
+    unresolved. Initial boron loading, reactor volume and independent reactor replication
+    are unreported in inspected article/SI; no missing values are invented. Older
+    constants and separate sulfate experiments are not new replicates. Furnace water
+    and silicon impurity caveats are retained.
+  target_ids:
+  - cmmmech:kurnakovite
+  evidence_ids:
+  - record
+  - primary
+  - experiment
+  - supplement
+  - dossier
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen inputs and completed checks
+  outcome: supported
+  summary: Native inspection captured exact owner, canonical CREATE history, paired
+    dossier and schema bytes before judgment. All bound inputs remain unchanged. Independent
+    named validation and actual coordinator batch/history checks passed. Saved-review
+    validation and publication are later gates.
+  target_ids:
+  - cmmmech:kurnakovite
+  evidence_ids:
+  - record
+  - history
+  - dossier
+  - named
+  - batch
+findings: []
+actions: []
+summary: 'Pass with limitations: exact kurnakovite owner is supported as a distinct
+  mineral with bounded natural structural evidence and an abiotic mixed-product precipitation
+  observation. No corrective owner finding was identified; model dependence, missing
+  recipe detail and conflicting duration remain explicit.'
+limitations:
+- Independent inspection used the complete 2019 Revision_2 accepted manuscript and
+  published 2020 article plus official two-table deposit; no new laboratory work,
+  raw diffraction re-refinement or thermodynamic model reproduction was performed.
+- The 1629/1642-day duration conflict, incomplete starting recipe and equilibrium-model
+  assumptions remain source follow-ups. Quantitative isolated-product mass, phase
+  fractions and industrial performance are not established.
+- Shared source acquisition is disclosed. Bounded correction and hidden/ignored dedup
+  searches do not establish exhaustive absence.
+- Working-tree review at the retained base. Record validation is separate from scientific
+  truth; native review-check and committed-head/hosted publication remain separate.
+notes:
+- No owner/history correction was needed; unavailable originals and retained internal
+  source conflicts are limitations, not invented corrective defects.
+- No self-authored REE record is scientifically reviewed in this observation.
+```

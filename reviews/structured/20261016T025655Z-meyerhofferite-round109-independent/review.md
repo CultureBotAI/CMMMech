@@ -1,0 +1,547 @@
+# Independent scientific review of meyerhofferite
+
+- Review: 20261016T025655Z-meyerhofferite-round109-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-16T02:48:37.945557Z
+- Finished UTC: 2026-10-16T02:56:55.441941Z
+- Reviewer: codex /root/round104_ree (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Pass with limitations: exact meyerhofferite owner is supported by ambient structural evidence and two explicitly bounded pressure experiments. No corrective owner finding was identified; chemistry conflicts, incomplete reversibility and unavailable later atomic evidence remain explicit.
+
+## Scope And Provenance
+
+Exact frozen meyerhofferite owner, source claims and canonical/inline creation provenance; wider follow-up leads and hosted publication excluded.
+
+Selection: Assigned target captured with native inspect before independent scientific assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base a11e47d1c90806e056bd60610a0edd2cf77813a9.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:meyerhofferite | data/records/meyerhofferite.yaml | maintained | meyerhofferite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:meyerhofferite | Two records checked with zero failures; subprocess receipt and exact hashes verified. |
+| Final batch command 1 | passed | True | cmmmech:meyerhofferite | Coordinator execution 2026-10-16T02:49:47.608391+00:00 through 2026-10-16T02:56:05.465642+00:00; terminal receipt and log digest verified independently. |
+| Final batch command 2 | passed | True | cmmmech:meyerhofferite | Coordinator execution 2026-10-16T02:56:05.468183+00:00 through 2026-10-16T02:56:20.189657+00:00; terminal receipt and log digest verified independently. |
+| Final batch command 3 | passed | True | cmmmech:meyerhofferite | Coordinator execution 2026-10-16T02:56:20.190674+00:00 through 2026-10-16T02:56:26.560997+00:00; terminal receipt and log digest verified independently. |
+| Final batch command 4 | passed | True | cmmmech:meyerhofferite | Coordinator execution 2026-10-16T02:56:26.562184+00:00 through 2026-10-16T02:56:33.865060+00:00; terminal receipt and log digest verified independently. |
+
+## Scientific And Domain Assessments
+
+### Species, specimen and material boundaries
+
+identity: supported. Targets: cmmmech:meyerhofferite.
+
+Current authority and 2022 primary structure support the owner. MM5990 is not silently equated to the independently collected pressure-study specimen. Inyoite, boron, borates and the experimental high-pressure phase label remain distinct; no new approved species or inherited criticality is asserted.
+
+### Unresolved chemical analysis
+
+consistency: supported. Targets: cmmmech:meyerhofferite.
+
+The owner accurately preserves 46.3(2) wt% B2O3 in methods versus Table 3 44.30±0.20 and the 97.95 sum versus printed 100.05 total. Furnace mass-loss-as-water and possible silicon impurity are explicit. Neither normalization nor a preferred corrected analysis is invented.
+
+### Pressure arms and sampled transition
+
+evidence: supported. Targets: cmmmech:meyerhofferite.
+
+Tables 1a/b support separate 2.74–4.34 and 3.05–3.48 GPa brackets. The 323.7 to 292.2 Å3 comparison is properly labelled as two sampled pressures. DAC, pressure medium, ruby uncertainty and CIF 293 K metadata remain scoped. Table 2 values are fitted second-order Birch-Murnaghan properties with K-prime fixed to four.
+
+### Atomic mechanism and reversibility limits
+
+evidence: supported. Targets: cmmmech:meyerhofferite.
+
+The 2020 high-pressure structure was unsolved and its Ca/B coordination interpretations are hypotheses. All nine deposited low-pressure CIF atom loops lack H sites. Decompression to 1.205 GPa cannot establish ambient recovery. The manuscript axial ratio conflict is retained, with Table 2 and publisher abstract supporting 1.5:1:3.
+
+### Later-source mismatch
+
+provenance: supported. Targets: cmmmech:meyerhofferite.
+
+The purported 2021 download independently identifies as the earlier Comboni pressure paper. The owner does not transfer the later solved structure from a 2022 secondary discussion. Correct later full text and 2022 request-only CIFs remain unacquired, transparently bounded source follow-ups.
+
+### Frozen inputs and completed checks
+
+provenance: supported. Targets: cmmmech:meyerhofferite.
+
+Native inspection captured exact owner, canonical CREATE history, paired dossier and schema bytes before judgment. All bound inputs remain unchanged. Independent named validation and actual coordinator batch/history checks passed. Saved-review validation and publication are later gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/meyerhofferite.yaml; Complete exact working-tree bytes at /private/tmp/CMMMech-expansion-round109-20261016/data/records/meyerhofferite.yaml | supports | Identity, scientific descriptions, source-level claims, mechanism scope and inline CREATE independently checked. |
+| history | history/records/meyerhofferite/2026-10-16T024521Z-codex-6a945b.yaml; Complete canonical CREATE at /private/tmp/CMMMech-expansion-round109-20261016/history/records/meyerhofferite/2026-10-16T024521Z-codex-6a945b.yaml | supports | Actual actor codex, GPT-6/codex metadata, timestamp and target correspond to this addition; inline and canonical events remain distinct. |
+| dossier | research/sources/round109-borates/20261016T024803Z-source-investigation.json; Paired source investigation; acquisition and access limits checked independently against original artifacts. /private/tmp/CMMMech-expansion-round109-20261016/research/sources/round109-borates/20261016T024803Z-source-investigation.json | context_only | Context for source provenance and deferred evidence; not a substitute for the original papers. |
+| search | /private/tmp/cmm-round109-ree-research/borate-review-search.json; Four exact DOI correction/erratum queries; raw response retained. | context_only | No affecting notice identified in returned sets. Known internal conflicts remain explicit; no universal absence claim. |
+| dedup | /private/tmp/cmm-round109-ree-research/borate-review-dedup.txt; Hidden, ignored and followed search across worktree records, research, reviews and history; curator broader dedup includes original-main ignored reports and cited raw roots. | context_only | No additional accepted owner identified in the stated current-record roots. Inderite and inyoite references are context rather than duplicate species owners; curator broader dedup was inspected. |
+| named | /private/tmp/cmm-round109-ree-research/borate-review-named-validation.json; Independent two-owner strict validation with exact hashes and actual subprocess timestamps. | supports | Two records checked; zero failed. 2026-10-16T02:50:24.401404+00:00 through 2026-10-16T02:50:27.083666+00:00 |
+| batch | /private/tmp/cmm-round109-final-gates.json; Coordinator terminal receipt; base, worktree, exact four commands, successful outcomes, unchanged owner hashes and log SHA256 independently verified. Log /private/tmp/cmm-round109-final-gates.log SHA256 9be5c479a792f4240fd2b6e7af4644f5e87e86ffd72eeb8d7c0e253e6dce6838 | supports | Actual completed local batch, not an inferred check or hosted publication result. |
+| primary | https://doi.org/10.1007/s00269-022-01199-1; Complete 13-page published article, all pages visually inspected, especially specimen/methods pp. 2–8, Tables 1–7 and Figures 1–2; later-study summary p. 11 read only as context. /private/tmp/cmm-round109-borates-research/meyerhofferite2022.pdf | supports | MM5990 Bigadiç specimen and ambient X-ray/neutron structure support species identity and hydrogen positions. B2O3 prose/table mismatch and inconsistent reported total are retained, not silently corrected. 2022 CIFs available on request were not acquired. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September 2026 official list, definitions PDF p. 1 and Meyerhofferite row p. 143, visually inspected. /private/tmp/cmm-round109-borates-research/ima2026-09.pdf | supports | Grandfathered G, original-description year 1914, CaB3O3(OH)5·H2O. The date is not an approval identifier. Inyoite, boron and borates commodity are separate owners. |
+| pressure | https://doi.org/10.1007/s00269-020-01117-3; 18-page institutional Revision_1 manuscript: complete scientific text, methods pp. 4–5, results pp. 5–9, all Tables 1a/b and 2–5 pp. 14–17 visually inspected; p. 18 contains captions. /private/tmp/cmm-round109-borates-research/meyerhofferite2020.pdf | supports | Two independent pressure arms support bounded transition intervals and fitted compressibility. The 2020 high-pressure structure was not solved. Decompression stopped at 1.205 GPa; ambient recoverability and complete hysteresis are unknown. |
+| fig1 | https://doi.org/10.1007/s00269-020-01117-3; Publisher original Figure 1, acquired separately from caption-only manuscript and visually inspected. /private/tmp/cmm-round109-borates-research/meyerhofferite2020-fullfig1.png | supports | Structural view is consistent with the low-pressure model and pressure-study interpretation; no claim of direct high-pressure atomic coordinates follows. |
+| fig2 | https://doi.org/10.1007/s00269-020-01117-3; Publisher original Figure 2, acquired separately and visually inspected. /private/tmp/cmm-round109-borates-research/meyerhofferite2020-fullfig2.jpg | supports | Changed diffraction patterns support the phase-transition observation, with distinct pressure observations retained. |
+| fig3 | https://doi.org/10.1007/s00269-020-01117-3; Publisher original Figure 3, acquired separately and visually inspected. /private/tmp/cmm-round109-borates-research/meyerhofferite2020-fullfig3.png | supports | Discontinuous lattice evolution supports the bounded change; fitted branches and sampled pressure intervals are not a constant-pressure paired measurement. |
+| supplement | https://doi.org/10.1007/s00269-020-01117-3; Original DOCX Tables S1–S5, complete XML text inspected, including atomic coordinates, anisotropic parameters, refinement statistics, bond lengths and strain data. /private/tmp/cmm-round109-borates-research/meyerhofferite2020-sup1.docx | supports | Low-pressure structure tables span 0.04–2.74 GPa. Table S5 high-pressure strain results do not provide a solved high-pressure atomic structure. Nine separate original CIFs were also independently parsed; Ca/B/O atom loops have no hydrogen sites. |
+| mismatch | https://doi.org/10.1107/S2052520621009768; Institutional file purportedly for the later paper: first-page title/authors/abstract independently read and compared to the actual 2020 study; curator route metadata inspected. /private/tmp/cmm-round109-borates-research/meyerhofferite2021-hp.pdf | context_only | The file contains the earlier pressure study, not the later 2021 solved high-pressure structure. It cannot support later atomic-coordinate or coordination claims; the owner correctly excludes those claims. |
+| cifs | https://doi.org/10.1007/s00269-020-01117-3; All nine original pressure CIF atom loops independently parsed; exact original hashes, cell-measurement pressure tags and placeholder ambient-pressure tags in /private/tmp/cmm-round109-ree-research/borate-review-cif-check-successor.json | supports | The deposited atomic models contain 13 Ca/B/O non-hydrogen sites and span only the low-pressure branch. No structure re-refinement or machine-readiness claim. |
+
+## Limits And Additional Notes
+
+- The pressure study was inspected as institutional Revision_1 plus publisher abstract, original Figures 1–3, nine original CIFs and DOCX Tables S1–S5. No diffraction re-refinement or independent pressure calibration was performed.
+- CIF cell-measurement pressure metadata span 0.04–2.74 GPa while their ambient-pressure tags are placeholders; repeated temperature tags are nominal 293 K. No claim of machine-ready CIF validation is made.
+- The later 2021 full primary was not acquired; its mismatched institutional file is excluded. 2022 on-request CIFs were not acquired. The chemistry discrepancy and incomplete decompression remain unresolved source limits.
+- Shared source acquisition is disclosed. Bounded correction and hidden/ignored dedup searches do not establish exhaustive absence.
+- Working-tree review at the retained base. Record validation is separate from scientific truth; native review-check and committed-head/hosted publication remain separate.
+- No owner/history correction was needed; unavailable originals and retained internal source conflicts are limitations, not invented corrective defects.
+- No self-authored REE record is scientifically reviewed in this observation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261016T025655Z-meyerhofferite-round109-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of meyerhofferite
+started_at: '2026-10-16T02:48:37.945557Z'
+finished_at: '2026-10-16T02:56:55.441941Z'
+reviewer:
+  identity: codex /root/round104_ree
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_borates; no edits
+    to the reviewed borate owner/history/dossier. Reviewer authored unrelated kozoite-(La)
+    and kozoite-(Nd) records. Source acquisition was shared, then original articles
+    and authority were independently inspected.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: a11e47d1c90806e056bd60610a0edd2cf77813a9
+  state: working_tree
+  inputs:
+  - path: data/records/meyerhofferite.yaml
+    sha256: a313fcc6954a68615590b58df5fc0408d5b9aabbcc260d8205d43c6bf1fe10f7
+    role: target
+  - path: history/records/meyerhofferite/2026-10-16T024521Z-codex-6a945b.yaml
+    sha256: 74b58d05c216fac8037691ea27e493c3b193a3c1c3cc8048cea92fe1a2f4a03d
+    role: context
+  - path: research/sources/round109-borates/20261016T024803Z-source-investigation.json
+    sha256: 9c684b20ee18ed7a0ba8d589c3566c87547e99d3b1ae8eb633e370328dd4a66e
+    role: context
+  - path: research/sources/round109-borates/20261016T024803Z-source-investigation.md
+    sha256: 326c69e12190ba71ed980bc36815966a766a16d5aa0ddd861fa9a196c7b62c0d
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:meyerhofferite
+  path: data/records/meyerhofferite.yaml
+  label: meyerhofferite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/meyerhofferite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/meyerhofferite/2026-10-16T024521Z-codex-6a945b.yaml
+    role: canonical_history
+scope:
+  description: Exact frozen meyerhofferite owner, source claims and canonical/inline
+    creation provenance; wider follow-up leads and hosted publication excluded.
+  selection: Assigned target captured with native inspect before independent scientific
+    assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:meyerhofferite
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/meyerhofferite.yaml
+  locator: Complete exact working-tree bytes at /private/tmp/CMMMech-expansion-round109-20261016/data/records/meyerhofferite.yaml
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: Identity, scientific descriptions, source-level claims, mechanism scope
+    and inline CREATE independently checked.
+  snapshot_sha256: a313fcc6954a68615590b58df5fc0408d5b9aabbcc260d8205d43c6bf1fe10f7
+- evidence_id: history
+  kind: record_content
+  reference: history/records/meyerhofferite/2026-10-16T024521Z-codex-6a945b.yaml
+  locator: Complete canonical CREATE at /private/tmp/CMMMech-expansion-round109-20261016/history/records/meyerhofferite/2026-10-16T024521Z-codex-6a945b.yaml
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: Actual actor codex, GPT-6/codex metadata, timestamp and target correspond
+    to this addition; inline and canonical events remain distinct.
+  snapshot_sha256: 74b58d05c216fac8037691ea27e493c3b193a3c1c3cc8048cea92fe1a2f4a03d
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round109-borates/20261016T024803Z-source-investigation.json
+  locator: Paired source investigation; acquisition and access limits checked independently
+    against original artifacts. /private/tmp/CMMMech-expansion-round109-20261016/research/sources/round109-borates/20261016T024803Z-source-investigation.json
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: context_only
+  summary: Context for source provenance and deferred evidence; not a substitute for
+    the original papers.
+  snapshot_sha256: 9c684b20ee18ed7a0ba8d589c3566c87547e99d3b1ae8eb633e370328dd4a66e
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round109-ree-research/borate-review-search.json
+  locator: Four exact DOI correction/erratum queries; raw response retained.
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: context_only
+  summary: No affecting notice identified in returned sets. Known internal conflicts
+    remain explicit; no universal absence claim.
+  snapshot_sha256: 0b4cb1de25514e8e2d5ac084e48794bd5060f3e6ebf4f7f9cc8aaacc9be2a5ee
+  search_scope: First returned web sets for four queries recorded verbatim; no date
+    or domain filter. Publisher metadata and secondary search snippets were not scientific
+    support.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round109-ree-research/borate-review-dedup.txt
+  locator: Hidden, ignored and followed search across worktree records, research,
+    reviews and history; curator broader dedup includes original-main ignored reports
+    and cited raw roots.
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: context_only
+  summary: No additional accepted owner identified in the stated current-record roots.
+    Inderite and inyoite references are context rather than duplicate species owners;
+    curator broader dedup was inspected.
+  snapshot_sha256: 36b86118c1a226496578b03693159de040b948312c37f5cd8e722535ea5b417d
+  search_scope: Bounded text roots and identifiers/DOIs recorded in paired search
+    receipt; not the whole filesystem or unextracted binary content.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round109-ree-research/borate-review-named-validation.json
+  locator: Independent two-owner strict validation with exact hashes and actual subprocess
+    timestamps.
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: Two records checked; zero failed. 2026-10-16T02:50:24.401404+00:00 through
+    2026-10-16T02:50:27.083666+00:00
+  snapshot_sha256: 21633d99efe97ea1fabe978d0c5b5dd4f729788b26bbee5d58ca40ccbafca0ae
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round109-final-gates.json
+  locator: Coordinator terminal receipt; base, worktree, exact four commands, successful
+    outcomes, unchanged owner hashes and log SHA256 independently verified. Log /private/tmp/cmm-round109-final-gates.log
+    SHA256 9be5c479a792f4240fd2b6e7af4644f5e87e86ffd72eeb8d7c0e253e6dce6838
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: Actual completed local batch, not an inferred check or hosted publication
+    result.
+  snapshot_sha256: bcc373fdff60063fbe3c70df3634ea3532fbe628ed76f1be61dcbc8b7174150d
+- evidence_id: primary
+  kind: primary_source
+  reference: https://doi.org/10.1007/s00269-022-01199-1
+  locator: Complete 13-page published article, all pages visually inspected, especially
+    specimen/methods pp. 2–8, Tables 1–7 and Figures 1–2; later-study summary p. 11
+    read only as context. /private/tmp/cmm-round109-borates-research/meyerhofferite2022.pdf
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: MM5990 Bigadiç specimen and ambient X-ray/neutron structure support species
+    identity and hydrogen positions. B2O3 prose/table mismatch and inconsistent reported
+    total are retained, not silently corrected. 2022 CIFs available on request were
+    not acquired.
+  snapshot_sha256: 2f107e01d709b9480bea37333be4cf12d47b81ecb11d7e85f9f62fd3c35795e5
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 official list, definitions PDF p. 1 and Meyerhofferite row
+    p. 143, visually inspected. /private/tmp/cmm-round109-borates-research/ima2026-09.pdf
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: Grandfathered G, original-description year 1914, CaB3O3(OH)5·H2O. The date
+    is not an approval identifier. Inyoite, boron and borates commodity are separate
+    owners.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: pressure
+  kind: primary_source
+  reference: https://doi.org/10.1007/s00269-020-01117-3
+  locator: '18-page institutional Revision_1 manuscript: complete scientific text,
+    methods pp. 4–5, results pp. 5–9, all Tables 1a/b and 2–5 pp. 14–17 visually inspected;
+    p. 18 contains captions. /private/tmp/cmm-round109-borates-research/meyerhofferite2020.pdf'
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: Two independent pressure arms support bounded transition intervals and
+    fitted compressibility. The 2020 high-pressure structure was not solved. Decompression
+    stopped at 1.205 GPa; ambient recoverability and complete hysteresis are unknown.
+  snapshot_sha256: b541e87d1c70476108e401f646743d0f081db4ef8a8509ff59f59d2b8a77dc94
+- evidence_id: fig1
+  kind: primary_source
+  reference: https://doi.org/10.1007/s00269-020-01117-3
+  locator: Publisher original Figure 1, acquired separately from caption-only manuscript
+    and visually inspected. /private/tmp/cmm-round109-borates-research/meyerhofferite2020-fullfig1.png
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: Structural view is consistent with the low-pressure model and pressure-study
+    interpretation; no claim of direct high-pressure atomic coordinates follows.
+  snapshot_sha256: a86b9e1d04d28884fda77dff7402aa21fb420e232a276d280359bb7914aa5108
+- evidence_id: fig2
+  kind: primary_source
+  reference: https://doi.org/10.1007/s00269-020-01117-3
+  locator: Publisher original Figure 2, acquired separately and visually inspected.
+    /private/tmp/cmm-round109-borates-research/meyerhofferite2020-fullfig2.jpg
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: Changed diffraction patterns support the phase-transition observation,
+    with distinct pressure observations retained.
+  snapshot_sha256: e343d86d27afa39def8201506aad8c499a11cb815ccc490e2a3f92cfcb93d933
+- evidence_id: fig3
+  kind: primary_source
+  reference: https://doi.org/10.1007/s00269-020-01117-3
+  locator: Publisher original Figure 3, acquired separately and visually inspected.
+    /private/tmp/cmm-round109-borates-research/meyerhofferite2020-fullfig3.png
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: Discontinuous lattice evolution supports the bounded change; fitted branches
+    and sampled pressure intervals are not a constant-pressure paired measurement.
+  snapshot_sha256: c2bf923d02728370f09ba63961540c6dea23ce0c5e7358e26618ae4313483e43
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://doi.org/10.1007/s00269-020-01117-3
+  locator: Original DOCX Tables S1–S5, complete XML text inspected, including atomic
+    coordinates, anisotropic parameters, refinement statistics, bond lengths and strain
+    data. /private/tmp/cmm-round109-borates-research/meyerhofferite2020-sup1.docx
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: Low-pressure structure tables span 0.04–2.74 GPa. Table S5 high-pressure
+    strain results do not provide a solved high-pressure atomic structure. Nine separate
+    original CIFs were also independently parsed; Ca/B/O atom loops have no hydrogen
+    sites.
+  snapshot_sha256: 785ee0f9b1d998e7830b28202ae5aab0e4b270f16df3d68ab597543877749643
+- evidence_id: mismatch
+  kind: primary_source
+  reference: https://doi.org/10.1107/S2052520621009768
+  locator: 'Institutional file purportedly for the later paper: first-page title/authors/abstract
+    independently read and compared to the actual 2020 study; curator route metadata
+    inspected. /private/tmp/cmm-round109-borates-research/meyerhofferite2021-hp.pdf'
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: context_only
+  summary: The file contains the earlier pressure study, not the later 2021 solved
+    high-pressure structure. It cannot support later atomic-coordinate or coordination
+    claims; the owner correctly excludes those claims.
+  snapshot_sha256: e01c2ab3229698678415fa46e2d27221e2b2a254c0c3992b7fb1f317a28049f4
+- evidence_id: cifs
+  kind: primary_source
+  reference: https://doi.org/10.1007/s00269-020-01117-3
+  locator: All nine original pressure CIF atom loops independently parsed; exact original
+    hashes, cell-measurement pressure tags and placeholder ambient-pressure tags in
+    /private/tmp/cmm-round109-ree-research/borate-review-cif-check-successor.json
+  accessed_at: '2026-10-16T02:56:55.441941Z'
+  support: supports
+  summary: The deposited atomic models contain 13 Ca/B/O non-hydrogen sites and span
+    only the low-pressure branch. No structure re-refinement or machine-readiness
+    claim.
+  snapshot_sha256: 1a222aa102a29fc70d0b12b6f9e12481895392f00586aa009b5749b3105bc1fa
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/kurnakovite.yaml data/records/meyerhofferite.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Two records checked with zero failures; subprocess receipt and exact hashes
+    verified.
+  target_ids:
+  - cmmmech:meyerhofferite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Final batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T02:49:47.608391+00:00 through 2026-10-16T02:56:05.465642+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:meyerhofferite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Final batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T02:56:05.468183+00:00 through 2026-10-16T02:56:20.189657+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:meyerhofferite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Final batch command 3
+  command: uv run --locked cmmmech validate-history --base a11e47d1c90806e056bd60610a0edd2cf77813a9
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T02:56:20.190674+00:00 through 2026-10-16T02:56:26.560997+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:meyerhofferite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Final batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T02:56:26.562184+00:00 through 2026-10-16T02:56:33.865060+00:00;
+    terminal receipt and log digest verified independently.
+  target_ids:
+  - cmmmech:meyerhofferite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species, specimen and material boundaries
+  outcome: supported
+  summary: Current authority and 2022 primary structure support the owner. MM5990
+    is not silently equated to the independently collected pressure-study specimen.
+    Inyoite, boron, borates and the experimental high-pressure phase label remain
+    distinct; no new approved species or inherited criticality is asserted.
+  target_ids:
+  - cmmmech:meyerhofferite
+  evidence_ids:
+  - record
+  - ima
+  - primary
+  - pressure
+- assessment_id: chemistry
+  area: consistency
+  topic: Unresolved chemical analysis
+  outcome: supported
+  summary: The owner accurately preserves 46.3(2) wt% B2O3 in methods versus Table
+    3 44.30±0.20 and the 97.95 sum versus printed 100.05 total. Furnace mass-loss-as-water
+    and possible silicon impurity are explicit. Neither normalization nor a preferred
+    corrected analysis is invented.
+  target_ids:
+  - cmmmech:meyerhofferite
+  evidence_ids:
+  - record
+  - primary
+- assessment_id: conditions
+  area: evidence
+  topic: Pressure arms and sampled transition
+  outcome: supported
+  summary: Tables 1a/b support separate 2.74–4.34 and 3.05–3.48 GPa brackets. The
+    323.7 to 292.2 Å3 comparison is properly labelled as two sampled pressures. DAC,
+    pressure medium, ruby uncertainty and CIF 293 K metadata remain scoped. Table
+    2 values are fitted second-order Birch-Murnaghan properties with K-prime fixed
+    to four.
+  target_ids:
+  - cmmmech:meyerhofferite
+  evidence_ids:
+  - record
+  - pressure
+  - fig2
+  - fig3
+  - supplement
+  - cifs
+- assessment_id: structure
+  area: evidence
+  topic: Atomic mechanism and reversibility limits
+  outcome: supported
+  summary: The 2020 high-pressure structure was unsolved and its Ca/B coordination
+    interpretations are hypotheses. All nine deposited low-pressure CIF atom loops
+    lack H sites. Decompression to 1.205 GPa cannot establish ambient recovery. The
+    manuscript axial ratio conflict is retained, with Table 2 and publisher abstract
+    supporting 1.5:1:3.
+  target_ids:
+  - cmmmech:meyerhofferite
+  evidence_ids:
+  - record
+  - pressure
+  - fig1
+  - supplement
+  - cifs
+- assessment_id: version
+  area: provenance
+  topic: Later-source mismatch
+  outcome: supported
+  summary: The purported 2021 download independently identifies as the earlier Comboni
+    pressure paper. The owner does not transfer the later solved structure from a
+    2022 secondary discussion. Correct later full text and 2022 request-only CIFs
+    remain unacquired, transparently bounded source follow-ups.
+  target_ids:
+  - cmmmech:meyerhofferite
+  evidence_ids:
+  - record
+  - primary
+  - mismatch
+  - dossier
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen inputs and completed checks
+  outcome: supported
+  summary: Native inspection captured exact owner, canonical CREATE history, paired
+    dossier and schema bytes before judgment. All bound inputs remain unchanged. Independent
+    named validation and actual coordinator batch/history checks passed. Saved-review
+    validation and publication are later gates.
+  target_ids:
+  - cmmmech:meyerhofferite
+  evidence_ids:
+  - record
+  - history
+  - dossier
+  - named
+  - batch
+findings: []
+actions: []
+summary: 'Pass with limitations: exact meyerhofferite owner is supported by ambient
+  structural evidence and two explicitly bounded pressure experiments. No corrective
+  owner finding was identified; chemistry conflicts, incomplete reversibility and
+  unavailable later atomic evidence remain explicit.'
+limitations:
+- The pressure study was inspected as institutional Revision_1 plus publisher abstract,
+  original Figures 1–3, nine original CIFs and DOCX Tables S1–S5. No diffraction re-refinement
+  or independent pressure calibration was performed.
+- CIF cell-measurement pressure metadata span 0.04–2.74 GPa while their ambient-pressure
+  tags are placeholders; repeated temperature tags are nominal 293 K. No claim of
+  machine-ready CIF validation is made.
+- The later 2021 full primary was not acquired; its mismatched institutional file
+  is excluded. 2022 on-request CIFs were not acquired. The chemistry discrepancy and
+  incomplete decompression remain unresolved source limits.
+- Shared source acquisition is disclosed. Bounded correction and hidden/ignored dedup
+  searches do not establish exhaustive absence.
+- Working-tree review at the retained base. Record validation is separate from scientific
+  truth; native review-check and committed-head/hosted publication remain separate.
+notes:
+- No owner/history correction was needed; unavailable originals and retained internal
+  source conflicts are limitations, not invented corrective defects.
+- No self-authored REE record is scientifically reviewed in this observation.
+```

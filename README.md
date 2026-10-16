@@ -8,13 +8,20 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 541 material records.
+The catalogue currently contains 548 material records.
 
-The [latest curation report](research/ingests/round108-frontier-20261016.md) links
+The [latest curation report](research/ingests/round109-frontier-20261016.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Boltwoodite](data/records/boltwoodite.yaml) | Natural identity, synthetic formation and aqueous uranium release | Natural and synthetic hydration differ; total uranium is not a Ksp or recovery yield |
+| [Cuprosklodowskite](data/records/cuprosklodowskite.yaml) | Natural-crystal identity and original refinement with deposited CIF | Museum diffraction specimen kept separate from the photographed locality specimen |
+| [Kozoite-(La)](data/records/kozoite-la.yaml) | Natural identity and synthetic carbonate phase progression | Crystalline phase fractions are not elemental recovery; separate high-temperature values conflict |
+| [Kozoite-(Nd)](data/records/kozoite-nd.yaml) | Natural identity and thermal dehydration/decarbonation | Different volatile estimates retained; heated residue not identified as recovered product |
+| [Kurnakovite](data/records/kurnakovite.yaml) | Natural identity and mixed-assemblage precipitation | Derived equilibrium constant differs from direct pure-mineral dissolution |
+| [Meyerhofferite](data/records/meyerhofferite.yaml) | Natural identity and two laboratory pressure experiments | Chemistry conflicts, incomplete decompression and inaccessible later structure study |
+| [Copper anode slime](data/records/copper-anode-slime.yaml) | Abiotic acid-chloride leaching of real refinery residue | Unreconciled feed-to-liquid accounting; downstream recovery remains context |
 | [Boracite](data/records/boracite.yaml) | Natural mineral identity and temperature-driven structural transitions | Mg-rich specimen behavior separated from Fe-rich members and instrument calibration |
 | [Larderellite](data/records/larderellite.yaml) | Thermal transformation of a characterized natural borate sample | Mixed feed, conflicting mass-loss summaries and proposed gas assignments |
 | [Lanthanite-(Ce)](data/records/lanthanite-ce.yaml) | Natural identity and synthetic carbonate phase progression | Phase fractions are not recovery yields; conflicting intermediate labels retained |
