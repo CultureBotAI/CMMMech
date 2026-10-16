@@ -1,0 +1,147 @@
+id: cmmmech:lead-blast-furnace-slag
+name: Lead blast-furnace slag
+material_kind: secondary_resource
+description: >-
+  Partly vitrified residue generated during lead blast-furnace smelting.
+  The curated example is granulated slag from the former lead-zinc smelter
+  at Noyelles-Godault, northern France, containing a silicate glass matrix,
+  crystalline phases and metallic lead droplets. It is a process-defined
+  secondary resource, distinct from elemental lead or zinc, a pure mineral,
+  copper-smelter slag, steelmaking slag, furnace dust or zinc-leach residue.
+  Its composition is sample-specific. No criticality designation is inherited
+  from constituent elements.
+sources:
+  - id: yin2014_thesis
+    title: >-
+      Yin NH (2014). Weathering of metallurgical slags: a comprehensive study
+      on the importance of chemical and biological contributions. Doctoral
+      thesis, Universite Paris-Est; defended 2 December 2014, NNT 2014PEST1125.
+      HAL tel-01154324v1. Complete 200-page deposited PDF inspected for
+      Section 4.1.2 (printed p.84; PDF p.85) and Chapter 8 (printed
+      pp.171-186; PDF pp.172-187), including relevant original tables and
+      figures. Chapter 8 identifies its associated journal article DOI
+      10.1016/j.jenvman.2014.09.018. The thesis is the full-text version
+      inspected here; it is not an independent replication of that article.
+    url: https://theses.hal.science/tel-01154324v1
+    accessed_on: '2026-10-16'
+  - id: vanhullebusch2015
+    title: >-
+      van Hullebusch ED, Yin NH, Seignez N, Labanowski J, Gauthier A,
+      Lens PNL, Avril C and Sivry Y (2015). Bio-alteration of metallurgical
+      wastes by Pseudomonas aeruginosa in a semi flow-through reactor.
+      Journal of Environmental Management 147:297-305.
+      DOI 10.1016/j.jenvman.2014.09.018; PMID 25277127.
+      Publisher abstract and bibliographic metadata checked; full publisher
+      article not acquired. Experimental details below are grounded to the
+      deposited thesis chapter, without assuming version-identical prose.
+    url: https://doi.org/10.1016/j.jenvman.2014.09.018
+    accessed_on: '2026-10-16'
+  - id: ncbi_taxonomy
+    title: >-
+      NCBI Taxonomy, taxon 287, Pseudomonas aeruginosa, rank species.
+      The identifier denotes the species, not the experimental strain.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=287&mode=Info
+    accessed_on: '2026-10-16'
+  - id: pasteur_cip
+    title: >-
+      Institut Pasteur CRBIP collection catalogue, CIP 105094,
+      Pseudomonas aeruginosa. Collection identity checked; catalogue
+      cultivation conditions are not substituted for the experiment's
+      reported conditions.
+    url: https://catalogue-crbip.pasteur.fr/fiche_catalogue.xhtml?crbip=CIP+105094
+    accessed_on: '2026-10-16'
+mechanisms:
+  - id: pseudomonas_bioalteration
+    name: Heterotrophic microbial alteration of lead blast-furnace slag
+    process: bioleaching
+    description: >-
+      Living Pseudomonas aeruginosa cultures altered a real lead-smelting
+      residue in laboratory reactors with weekly medium renewal. Compared
+      with sterile growth medium, the inoculated treatment increased
+      cumulative elemental release into the operational digested-liquid
+      fraction. Filtered and digested fractions differed, consistent with
+      particulate association as well as dissolved mobilization. These
+      measurements do not uniquely quantify cell-surface sorption, isolate
+      a metal product, or establish a commercial recovery process.
+    context: >-
+      Chapter 8 Section 8.2 describes duplicate experiments with 2.5 g of
+      slag grains, reported as 2 mm diameter, in 75 mL of medium in
+      150 mL polycarbonate flasks at 23 +/- 2 degrees C and 100 rpm for
+      140 days. The three arms were ultrapure water, sterile growth medium,
+      and growth medium with P. aeruginosa. Fresh medium was supplied
+      every seven days. Per litre the medium contained 4 g succinic acid,
+      1 g ammonium sulfate, 1 g disodium hydrogen phosphate and 6 g TRIS.
+      Methods specify NaOH adjustment to pH 7.8; results instead describe
+      initial medium pH 8.2, increasing to 8.5 in the biotic arm and
+      remaining 8.2 in the sterile arm. These reported settings are
+      retained separately. General thesis methods, Section 4.1.2, identify
+      the research strain as CIP 105094 from Institut Pasteur; Chapter 8
+      itself names the species without repeating its accession. An
+      inoculum dose and a Chapter-8-specific slag sterilization protocol
+      were not specified in the inspected methods. The digested sample
+      used hydrogen peroxide and heating; the filtered sample excluded
+      suspended cells and neoformed precipitates. The PDF prints the
+      filter pore-size unit as micrograms, which is dimensionally invalid;
+      a corrected pore diameter is not inferred. Separate polished-section
+      observations at 60 and 150 days are not the same endpoint as the
+      140-day liquid series or the 128-day cumulative table. Industrial
+      feedstock origin does not establish industrial operation of this
+      laboratory weathering experiment.
+    microbial: true
+    organisms:
+      - id: NCBITaxon:287
+        label: Pseudomonas aeruginosa
+    evidence:
+      - source_ref: yin2014_thesis
+        supports: support
+        explanation: >-
+          Sections 8.2.1-8.2.3 establish feed origin, medium, duplicate
+          control arms and ICP-AES measurement. Figures 8.1 and 8.7 and
+          Table 8.3 support greater cumulative release in digested biotic
+          liquid than in sterile medium under the reported conditions.
+          This is a treatment-level comparison, not a demonstrated
+          molecular mechanism. Figure 8.6 shows bacterial colonization
+          of the slag surface; the neighboring abiotic images also show
+          glass and lead-droplet alteration.
+      - source_ref: yin2014_thesis
+        supports: partial
+        explanation: >-
+          Table 8.3 reports 128-day cumulative Zn release of 260.4
+          micrograms per gram of slag in digested biotic liquid and
+          257.0 micrograms per gram in ultrapure water, versus 42.6 in
+          sterile medium. The water arm therefore precludes describing
+          Zn release as universally or exclusively microbially driven.
+          The filtered biotic Zn value is 136.8 micrograms per gram of
+          slag; it represents a different sampled fraction, not a lower
+          total extraction experiment. The source does not establish
+          statistical superiority over water or a recovered-metal yield.
+      - source_ref: yin2014_thesis
+        supports: partial
+        explanation: >-
+          Sections 8.3.1 and 8.4.1 and Figure 8.7 attribute differences
+          between digested and filtered liquid to metal association with
+          cells or biofilm. Filtration also removes neoformed precipitates,
+          so that difference alone cannot distinguish biosorption,
+          intracellular accumulation and noncellular particulate metal.
+          The narrative's 28% dissolved and 72% associated Fe are not
+          arithmetically consistent with Table 8.3 values 91.1 and
+          270.1 micrograms per gram. No corrected fraction or exclusive
+          biosorption yield is adopted.
+      - source_ref: yin2014_thesis
+        supports: context_only
+        explanation: >-
+          Section 8.4.3 and schematic Figure 8.9 propose siderophore
+          complexation and cell-surface binding to explain enhanced
+          mobilization. They do not directly identify or quantify those
+          ligands in this experiment. Table 8.4 extrapolates complete
+          leaching times while neglecting protective secondary layers;
+          these are model extrapolations, not observed field lifetimes
+          or industrial treatment times. Neither criticality nor a
+          separated product recovery is established.
+curation_history:
+  - timestamp: '2026-10-16T03:44:16.492080Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: Added process-defined lead slag and controlled laboratory bioalteration evidence; preserved fraction and source inconsistencies without claiming product recovery.
+history_refs:
+  - history/records/lead-blast-furnace-slag/2026-10-16T034356Z-codex-ebaabd.yaml

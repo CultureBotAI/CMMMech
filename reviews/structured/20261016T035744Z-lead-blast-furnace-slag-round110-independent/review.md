@@ -1,0 +1,553 @@
+# Independent scientific review of lead blast-furnace slag
+
+- Review: 20261016T035744Z-lead-blast-furnace-slag-round110-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-16T03:54:23.095616Z
+- Finished UTC: 2026-10-16T03:57:44.468305Z
+- Reviewer: codex /root/round104_uranium (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The frozen lead blast-furnace slag record is defensible for its process-defined feed and bounded living-Pseudomonas treatment comparison. Water-arm Zn, operational particulate fractions, source pH/pore-unit/Fe arithmetic inconsistencies and proposed rather than measured siderophore causation remain explicit. No supported corrective defect was found in this exact scope.
+
+## Scope And Provenance
+
+Complete one-record content, linked CREATE history, frozen source dossier/schema; independent scientific assessment of relevant primary thesis sections and official identifiers.
+
+Selection: Exactly one maintained owner selected by path and ID.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 0482e7b0af9b18685dabe310dbe86487b6ac4226.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:lead-blast-furnace-slag | data/records/lead-blast-furnace-slag.yaml | maintained | Lead blast-furnace slag |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:lead-blast-furnace-slag | Checked 1 record(s); 0 failed. |
+| Coordinator completed batch command1 | passed | True | cmmmech:lead-blast-furnace-slag | Actual completed receipt and log independently verified; exact command exit 0 and owner input matches. |
+| Coordinator completed batch command2 | passed | True | cmmmech:lead-blast-furnace-slag | Actual completed receipt and log independently verified; exact command exit 0 and owner input matches. |
+| Coordinator completed batch command3 | passed | True | cmmmech:lead-blast-furnace-slag | Actual completed receipt and log independently verified; exact command exit 0 and owner input matches. |
+| Coordinator completed batch command4 | passed | True | cmmmech:lead-blast-furnace-slag | Actual completed receipt and log independently verified; exact command exit 0 and owner input matches. |
+
+## Scientific And Domain Assessments
+
+### Process-defined secondary resource and source sample
+
+identity: supported. Targets: cmmmech:lead-blast-furnace-slag.
+
+The record represents lead blast-furnace slag without conflating constituents or neighboring residues.
+
+Noyelles-Godault granulated slag contains glass, crystalline phases and metallic Pb droplets. The source feed is not pure Pb/Zn, a mineral, EAF steel slag, copper-slag, dust or leach residue. Composition is explicitly sample-specific; no jurisdiction/list/edition criticality claim is inferred. Raw bulk composition differences elsewhere in the thesis are not imported as universal owner composition.
+
+### Species, strain attribution and living biomass
+
+identity: supported. Targets: cmmmech:lead-blast-furnace-slag.
+
+The microbial identity is supported at the stated levels.
+
+NCBITaxon 287 resolves species; CIP 105094 resolves a collection strain. General Section 4.1.2 identifies the research strain, with the owner transparently noting Chapter 8 itself only names species. Culture state is living growth/biofilm, not dead-biomass adsorption. No isolate genome, gene, siderophore concentration, stock authentication or single-member molecular causality is asserted.
+
+### Experimental arms, medium and sample handling
+
+evidence: supported. Targets: cmmmech:lead-blast-furnace-slag.
+
+Laboratory protocol is accurately scoped to the inspected thesis methods.
+
+Duplicate water, sterile medium and inoculated medium arms;2.5 g grains reported as 2 mm, 75 mL in 150 mL flasks, 23 ± 2 C, 100 rpm, 140 days and weekly medium renewal. Per litre 4 g succinic acid, 1 g ammonium sulfate, 1 g disodium hydrogen phosphate and 6 g TRIS. Method pH 7.8 versus result initial 8.2 is retained. Inoculum dose and Chapter 8-specific slag sterilization are not reported. The printed 0.2 micrograms pore-size unit is invalid and not silently converted. Polished sections at 60/150 days remains separate from the 128-day table and 140-day liquid series.
+
+### Biotic versus sterile-medium cumulative release
+
+evidence: supported. Targets: cmmmech:lead-blast-furnace-slag.
+
+The treatment-level bioalteration claim is supported without universal biological superiority.
+
+Original Figures 8.1 and8.7 and Table 8.3 show higher cumulative digested biotic release than sterile medium. Zn Table 8.3 is 260.4 micrograms/g biotic, 257.0 water, 42.6 sterile and 136.8 filtered biotic. Water-arm similarity is explicit; no statistical superiority over water or exclusive microbial Zn process is inferred. Time-dependent rate curves differ from cumulative endpoints and are not presented as universal acceleration.
+
+### Dissolved, digested and particulate outcomes
+
+consistency: supported. Targets: cmmmech:lead-blast-furnace-slag.
+
+Operational fractions and source arithmetic are preserved accurately.
+
+Filtration removes suspended cells and neoformed precipitates; peroxide digestion includes a different liquid fraction. Their difference cannot uniquely identify cell surface sorption, intracellular uptake or noncellular particles. Fe 91.1/270.1 is approximately 33.73%, not narrative 28%; owner preserves inconsistency and adopts no invented corrected experimental fraction. Water-arm Fe &lt;DL is not zero. No isolated product, closed mass balance or recovery efficiency is asserted.
+
+### Proposed siderophore pathway and deployment
+
+scope: supported. Targets: cmmmech:lead-blast-furnace-slag.
+
+Accepted treatment evidence is separated from proposed molecular causes and field extrapolation.
+
+Figure 8.9 and discussion propose ligand complexation/sorption but no direct ligand identification or quantitative siderophore assay was reported. Author general biology does not establish the specific molecular pathway. Table 8.4 complete leaching times ignore protective layers and are modeled, not observed field lifetimes. Industrial feedstock origin does not demonstrate industrial deployment; weathering/mobilization is not isolated metal recovery.
+
+### Versions, history, review independence and actual checks
+
+provenance: supported. Targets: cmmmech:lead-blast-furnace-slag.
+
+The final review binds unchanged inspected owner and required evidence.
+
+Thesis is the primary version read, separately linked to published article metadata. Native inspect captured before judgment; source/history/schema/dossier hashes unchanged. Named validator was run independently; parent terminal batch was independently receipt/log verified. Reviewer authored unrelated natroboltwoodite/metaschoepite records and did not author or edit this slag target. No fresh whole-corpus scientific review is claimed.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/lead-blast-furnace-slag.yaml; Complete maintained record, inline event, canonical history and frozen source dossier captured with native inspect before assessment. | supports | Exact owner remains unchanged since initial capture and matches actual completed batch input. |
+| history | history/records/lead-blast-furnace-slag/2026-10-16T034356Z-codex-ebaabd.yaml; Canonical CREATE event and separate inline event, target path, timestamp, actor/model/tool. | supports | History describes this creation without invented older events; canonical file remains unchanged. |
+| primary | https://theses.hal.science/tel-01154324v1; Complete 200-page deposited PDF is available; reviewed scope is Section 4.1.2 PDF 85/printed 84 and full Chapter 8 PDF 171–187 including introduction, methods, results, discussion, conclusions and original Figures 8.1–8.9/Tables 8.1–8.4. | supports | Independent reader inspected chapter text and relevant original rendered graphics. Source is Yin (2014) doctoral thesis, HAL deposit 21 May 2015; Chapter 8 cites the same experiment published in Journal of Environmental Management. Unrelated thesis chapters were not comprehensively reviewed. |
+| figures | /private/tmp/cmm-round110-uranium-research/slag-review-source-manifest.json; Original rendered Chapter 8 figures and tables: PDF 173,174,176–186; strain methods PDF 85. | supports | Figures 8.1 and8.7 support biotic versus sterile-medium cumulative release; Figure 8.1E and Table 8.3 retain near-equal water-arm Zn. Figures 8.3–8.6 distinguish abiotic alteration and biotic colonization. Figure 8.9 is a proposed schematic; Table 8.4 extrapolates unobserved times. |
+| bibliography | https://pubmed.ncbi.nlm.nih.gov/25277127/; Fresh official PubMed indexed metadata, retained Crossref response, HAL metadata and thesis cover/chapter attribution. | supports | DOI 10.1016/j.jenvman.2014.09.018, PMID 25277127, eight authors, volume 147:297–305 and 2015 issue agree. Online 30 September 2014 is distinct from 2015 issue and thesis deposit. Journal full text was not acquired or treated as version-identical replication. |
+| taxonomy | https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=287&amp;mode=Info; Official current taxon 287 name and rank, independently inspected retained response and live browser response. | supports | Taxon 287 denotes species Pseudomonas aeruginosa, not the experimental strain or authenticated culture stock. |
+| culture | https://catalogue-crbip.pasteur.fr/fiche_catalogue.xhtml?crbip=CIP+105094; Official Pasteur collection entry, independently inspected retained response and live indexed entry. | supports | CIP 105094 is Pseudomonas aeruginosa; catalogue 30 C cultivation is not substituted for 23 ± 2 C study conditions. Section 4.1.2 is explicit research-strain attribution, while Chapter 8 repeats species only. |
+| notices | /private/tmp/cmm-round110-uranium-research/slag-review-web.json; Bounded 16 October 2026 exact DOI correction/retraction search and exact title correction/erratum query; official PubMed/Crossref/publisher and current authority responses. | context_only | No relevant correction notice surfaced in the returned result sets and inspected Crossref update/relation fields; this is not a universal absence claim. Full journal supplementary coverage remains unverified. |
+| dedup | /private/tmp/cmm-round110-uranium-research/slag-review-dedup.json; Independent rg --no-ignore --hidden --follow search of worktree maintained data/research/reviews/history/docs/skills, ignored main reports and cited raw roots 91,92,108,109,110; binary images/downloads excluded from text match, relevant thesis separately read. | context_only | 28 matching paths; raw output retained externally with checksum. Existing lead/zinc-slag source leads and EAF/BOF context were inspected and differ in feed/experiment. No second dedicated owner was found in the stated roots; no machine-wide absence is claimed. |
+| named | /private/tmp/cmm-round110-uranium-research/slag-review-validation.json; Actual independent named strict validation receipt, exact command/worktree/owner hash and exit 0. | supports | Checked 1 record; 0 failed; structural validity does not establish scientific correctness. |
+| batch | /private/tmp/cmm-round110-final-gates.json; Coordinator actual completed four-command receipt with exact W/base/command list, all zero exits, unchanged input and owner hash, retained log digest independently verified. | supports | Full check, nonempty record validation, canonical history and page check passed. Reviewer verified actual evidence rather than claiming a second whole-corpus run. |
+
+## Limits And Additional Notes
+
+- Relevant thesis Chapter 8 and general strain Section 4.1.2 were independently inspected, not every scientific claim in the 200-page thesis. Full published journal layout and any article-specific supplements remain unacquired.
+- Filter pore-size unit, pH settings and Fe partition arithmetic remain unresolved source discrepancies; no corrected experimental measurements were invented.
+- No independent laboratory replication, stock authentication, cell-only sorption separation, direct ligand assay or product recovery mass balance was performed.
+- Bounded notice and hidden/ignored-inclusive duplicate searches do not establish universal absence or source exhaustion.
+- Native structural gates support validity/provenance, not whole-corpus scientific correctness.
+- No corrective issue was manufactured; source-access/protocol gaps are follow-up work already bounded in the owner.
+- Coordinator batch execution was receipt/log verified, not rerun by reviewer.
+- Reviewer authorship of two unrelated uranium records is disclosed.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261016T035744Z-lead-blast-furnace-slag-round110-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of lead blast-furnace slag
+started_at: '2026-10-16T03:54:23.095616Z'
+finished_at: '2026-10-16T03:57:44.468305Z'
+reviewer:
+  identity: codex /root/round104_uranium
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored target/history/dossier. Reviewer authored unrelated
+    natroboltwoodite and metaschoepite records; independently read complete relevant
+    thesis chapter, original tables/figures and official identities, without editing
+    this target.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The frozen lead blast-furnace slag record is defensible for its process-defined
+  feed and bounded living-Pseudomonas treatment comparison. Water-arm Zn, operational
+  particulate fractions, source pH/pore-unit/Fe arithmetic inconsistencies and proposed
+  rather than measured siderophore causation remain explicit. No supported corrective
+  defect was found in this exact scope.
+source:
+  git_revision: 0482e7b0af9b18685dabe310dbe86487b6ac4226
+  state: working_tree
+  inputs:
+  - path: data/records/lead-blast-furnace-slag.yaml
+    sha256: 6d02347365ea9fc8cd7eab4d5f0683634e7e35eced09b3e3d5fed8b92a49bbdc
+    role: target
+  - path: history/records/lead-blast-furnace-slag/2026-10-16T034356Z-codex-ebaabd.yaml
+    sha256: d77f474bc9e2d5bd384776520c97406f99900486b08f8a3a84daa21dfc029460
+    role: context
+  - path: research/sources/round110-resources/20261016-source-investigation.json
+    sha256: 81ab998918135f8450edce029cd9cde9fbc2734fff0a30b3e7b875b6834537d3
+    role: context
+  - path: research/sources/round110-resources/20261016-source-investigation.md
+    sha256: 24c373d3c37835f873a3b72b0ac868b558228871bd2749b794197b367b735552
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:lead-blast-furnace-slag
+  path: data/records/lead-blast-furnace-slag.yaml
+  label: Lead blast-furnace slag
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lead-blast-furnace-slag.yaml
+    role: maintained_record
+scope:
+  description: Complete one-record content, linked CREATE history, frozen source dossier/schema;
+    independent scientific assessment of relevant primary thesis sections and official
+    identifiers.
+  selection: Exactly one maintained owner selected by path and ID.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:lead-blast-furnace-slag
+checks:
+- check_id: named
+  name: Independent named strict validation
+  status: passed
+  required: true
+  summary: Checked 1 record(s); 0 failed.
+  target_ids:
+  - cmmmech:lead-blast-furnace-slag
+  command: uv run --locked cmmmech validate data/records/lead-blast-furnace-slag.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch1
+  name: Coordinator completed batch command1
+  status: passed
+  required: true
+  summary: Actual completed receipt and log independently verified; exact command
+    exit 0 and owner input matches.
+  target_ids:
+  - cmmmech:lead-blast-furnace-slag
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Coordinator completed batch command2
+  status: passed
+  required: true
+  summary: Actual completed receipt and log independently verified; exact command
+    exit 0 and owner input matches.
+  target_ids:
+  - cmmmech:lead-blast-furnace-slag
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Coordinator completed batch command3
+  status: passed
+  required: true
+  summary: Actual completed receipt and log independently verified; exact command
+    exit 0 and owner input matches.
+  target_ids:
+  - cmmmech:lead-blast-furnace-slag
+  command: uv run --locked cmmmech validate-history --base 0482e7b0af9b18685dabe310dbe86487b6ac4226
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch4
+  name: Coordinator completed batch command4
+  status: passed
+  required: true
+  summary: Actual completed receipt and log independently verified; exact command
+    exit 0 and owner input matches.
+  target_ids:
+  - cmmmech:lead-blast-furnace-slag
+  command: uv run --locked python scripts/render_pages.py --check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/lead-blast-furnace-slag.yaml
+  locator: Complete maintained record, inline event, canonical history and frozen
+    source dossier captured with native inspect before assessment.
+  summary: Exact owner remains unchanged since initial capture and matches actual
+    completed batch input.
+  accessed_at: '2026-10-16T03:57:44.468305Z'
+  support: supports
+  snapshot_sha256: 6d02347365ea9fc8cd7eab4d5f0683634e7e35eced09b3e3d5fed8b92a49bbdc
+- evidence_id: history
+  kind: record_content
+  reference: history/records/lead-blast-furnace-slag/2026-10-16T034356Z-codex-ebaabd.yaml
+  locator: Canonical CREATE event and separate inline event, target path, timestamp,
+    actor/model/tool.
+  summary: History describes this creation without invented older events; canonical
+    file remains unchanged.
+  accessed_at: '2026-10-16T03:57:44.468305Z'
+  support: supports
+  snapshot_sha256: d77f474bc9e2d5bd384776520c97406f99900486b08f8a3a84daa21dfc029460
+- evidence_id: primary
+  kind: primary_source
+  reference: https://theses.hal.science/tel-01154324v1
+  locator: Complete 200-page deposited PDF is available; reviewed scope is Section
+    4.1.2 PDF 85/printed 84 and full Chapter 8 PDF 171–187 including introduction,
+    methods, results, discussion, conclusions and original Figures 8.1–8.9/Tables
+    8.1–8.4.
+  summary: Independent reader inspected chapter text and relevant original rendered
+    graphics. Source is Yin (2014) doctoral thesis, HAL deposit 21 May 2015; Chapter
+    8 cites the same experiment published in Journal of Environmental Management.
+    Unrelated thesis chapters were not comprehensively reviewed.
+  accessed_at: '2026-10-16T03:57:44.468305Z'
+  support: supports
+  snapshot_sha256: e6d653632776fa139f6b200046a121bba696f3d94a61d15e3c9cf5144777578f
+- evidence_id: figures
+  kind: primary_source
+  reference: /private/tmp/cmm-round110-uranium-research/slag-review-source-manifest.json
+  locator: 'Original rendered Chapter 8 figures and tables: PDF 173,174,176–186; strain
+    methods PDF 85.'
+  summary: Figures 8.1 and8.7 support biotic versus sterile-medium cumulative release;
+    Figure 8.1E and Table 8.3 retain near-equal water-arm Zn. Figures 8.3–8.6 distinguish
+    abiotic alteration and biotic colonization. Figure 8.9 is a proposed schematic;
+    Table 8.4 extrapolates unobserved times.
+  accessed_at: '2026-10-16T03:57:44.468305Z'
+  support: supports
+  snapshot_sha256: 33d0291e9d8fc51215381108e614b19c3ecb83184adebd83ad14c8b07011b580
+- evidence_id: bibliography
+  kind: primary_source
+  reference: https://pubmed.ncbi.nlm.nih.gov/25277127/
+  locator: Fresh official PubMed indexed metadata, retained Crossref response, HAL
+    metadata and thesis cover/chapter attribution.
+  summary: DOI 10.1016/j.jenvman.2014.09.018, PMID 25277127, eight authors, volume
+    147:297–305 and 2015 issue agree. Online 30 September 2014 is distinct from 2015
+    issue and thesis deposit. Journal full text was not acquired or treated as version-identical
+    replication.
+  accessed_at: '2026-10-16T03:57:44.468305Z'
+  support: supports
+  snapshot_sha256: a7bc2f86190a0290c784f8692e0ad0076b581ac6755431139cf985c355ae50b2
+- evidence_id: taxonomy
+  kind: primary_source
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=287&mode=Info
+  locator: Official current taxon 287 name and rank, independently inspected retained
+    response and live browser response.
+  summary: Taxon 287 denotes species Pseudomonas aeruginosa, not the experimental
+    strain or authenticated culture stock.
+  accessed_at: '2026-10-16T03:57:44.468305Z'
+  support: supports
+  snapshot_sha256: 131715274a6c22effad0e18dc2b557ad458d8999ddb9a1f75f79556d4caaa002
+- evidence_id: culture
+  kind: primary_source
+  reference: https://catalogue-crbip.pasteur.fr/fiche_catalogue.xhtml?crbip=CIP+105094
+  locator: Official Pasteur collection entry, independently inspected retained response
+    and live indexed entry.
+  summary: CIP 105094 is Pseudomonas aeruginosa; catalogue 30 C cultivation is not
+    substituted for 23 ± 2 C study conditions. Section 4.1.2 is explicit research-strain
+    attribution, while Chapter 8 repeats species only.
+  accessed_at: '2026-10-16T03:57:44.468305Z'
+  support: supports
+  snapshot_sha256: 9651d76b0242c5589e52c18875c15c03b74eb868d56525a194cf9c33efb64da9
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmm-round110-uranium-research/slag-review-web.json
+  locator: Bounded 16 October 2026 exact DOI correction/retraction search and exact
+    title correction/erratum query; official PubMed/Crossref/publisher and current
+    authority responses.
+  summary: No relevant correction notice surfaced in the returned result sets and
+    inspected Crossref update/relation fields; this is not a universal absence claim.
+    Full journal supplementary coverage remains unverified.
+  accessed_at: '2026-10-16T03:57:44.468305Z'
+  support: context_only
+  snapshot_sha256: 2dd56f61938b4403d8beffa664ea8503f8ba0bc429d15a467f73fe7556844c50
+  search_scope: Bounded 16 October 2026 exact DOI correction/retraction search and
+    exact title correction/erratum query; official PubMed/Crossref/publisher and current
+    authority responses. No relevant correction notice surfaced in the returned result
+    sets and inspected Crossref update/relation fields; this is not a universal absence
+    claim. Full journal supplementary coverage remains unverified.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round110-uranium-research/slag-review-dedup.json
+  locator: Independent rg --no-ignore --hidden --follow search of worktree maintained
+    data/research/reviews/history/docs/skills, ignored main reports and cited raw
+    roots 91,92,108,109,110; binary images/downloads excluded from text match, relevant
+    thesis separately read.
+  summary: 28 matching paths; raw output retained externally with checksum. Existing
+    lead/zinc-slag source leads and EAF/BOF context were inspected and differ in feed/experiment.
+    No second dedicated owner was found in the stated roots; no machine-wide absence
+    is claimed.
+  accessed_at: '2026-10-16T03:57:44.468305Z'
+  support: context_only
+  snapshot_sha256: ff8a6170930ae809fd90d0a80188224e57810cf7c194d37d4384a0826311c616
+  search_scope: Independent rg --no-ignore --hidden --follow search of worktree maintained
+    data/research/reviews/history/docs/skills, ignored main reports and cited raw
+    roots 91,92,108,109,110; binary images/downloads excluded from text match, relevant
+    thesis separately read. 28 matching paths; raw output retained externally with
+    checksum. Existing lead/zinc-slag source leads and EAF/BOF context were inspected
+    and differ in feed/experiment. No second dedicated owner was found in the stated
+    roots; no machine-wide absence is claimed.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round110-uranium-research/slag-review-validation.json
+  locator: Actual independent named strict validation receipt, exact command/worktree/owner
+    hash and exit 0.
+  summary: Checked 1 record; 0 failed; structural validity does not establish scientific
+    correctness.
+  accessed_at: '2026-10-16T03:57:44.468305Z'
+  support: supports
+  snapshot_sha256: b569383e292527791ee5162853d003538b59d3c99d4e84f6736891c1fdde45ee
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round110-final-gates.json
+  locator: Coordinator actual completed four-command receipt with exact W/base/command
+    list, all zero exits, unchanged input and owner hash, retained log digest independently
+    verified.
+  summary: Full check, nonempty record validation, canonical history and page check
+    passed. Reviewer verified actual evidence rather than claiming a second whole-corpus
+    run.
+  accessed_at: '2026-10-16T03:57:44.468305Z'
+  support: supports
+  snapshot_sha256: ed153240d4c5826f0436aa5b996d00e0eed289dd884396599de811fc1fb085c6
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Process-defined secondary resource and source sample
+  outcome: supported
+  summary: The record represents lead blast-furnace slag without conflating constituents
+    or neighboring residues.
+  details: Noyelles-Godault granulated slag contains glass, crystalline phases and
+    metallic Pb droplets. The source feed is not pure Pb/Zn, a mineral, EAF steel
+    slag, copper-slag, dust or leach residue. Composition is explicitly sample-specific;
+    no jurisdiction/list/edition criticality claim is inferred. Raw bulk composition
+    differences elsewhere in the thesis are not imported as universal owner composition.
+  target_ids:
+  - cmmmech:lead-blast-furnace-slag
+  evidence_ids:
+  - owner
+  - primary
+  - figures
+  - dedup
+- assessment_id: organism
+  area: identity
+  topic: Species, strain attribution and living biomass
+  outcome: supported
+  summary: The microbial identity is supported at the stated levels.
+  details: NCBITaxon 287 resolves species; CIP 105094 resolves a collection strain.
+    General Section 4.1.2 identifies the research strain, with the owner transparently
+    noting Chapter 8 itself only names species. Culture state is living growth/biofilm,
+    not dead-biomass adsorption. No isolate genome, gene, siderophore concentration,
+    stock authentication or single-member molecular causality is asserted.
+  target_ids:
+  - cmmmech:lead-blast-furnace-slag
+  evidence_ids:
+  - owner
+  - primary
+  - taxonomy
+  - culture
+- assessment_id: protocol
+  area: evidence
+  topic: Experimental arms, medium and sample handling
+  outcome: supported
+  summary: Laboratory protocol is accurately scoped to the inspected thesis methods.
+  details: Duplicate water, sterile medium and inoculated medium arms;2.5 g grains
+    reported as 2 mm, 75 mL in 150 mL flasks, 23 ± 2 C, 100 rpm, 140 days and weekly
+    medium renewal. Per litre 4 g succinic acid, 1 g ammonium sulfate, 1 g disodium
+    hydrogen phosphate and 6 g TRIS. Method pH 7.8 versus result initial 8.2 is retained.
+    Inoculum dose and Chapter 8-specific slag sterilization are not reported. The
+    printed 0.2 micrograms pore-size unit is invalid and not silently converted. Polished
+    sections at 60/150 days remains separate from the 128-day table and 140-day liquid
+    series.
+  target_ids:
+  - cmmmech:lead-blast-furnace-slag
+  evidence_ids:
+  - owner
+  - primary
+  - figures
+- assessment_id: treatment
+  area: evidence
+  topic: Biotic versus sterile-medium cumulative release
+  outcome: supported
+  summary: The treatment-level bioalteration claim is supported without universal
+    biological superiority.
+  details: Original Figures 8.1 and8.7 and Table 8.3 show higher cumulative digested
+    biotic release than sterile medium. Zn Table 8.3 is 260.4 micrograms/g biotic,
+    257.0 water, 42.6 sterile and 136.8 filtered biotic. Water-arm similarity is explicit;
+    no statistical superiority over water or exclusive microbial Zn process is inferred.
+    Time-dependent rate curves differ from cumulative endpoints and are not presented
+    as universal acceleration.
+  target_ids:
+  - cmmmech:lead-blast-furnace-slag
+  evidence_ids:
+  - owner
+  - primary
+  - figures
+- assessment_id: fractions
+  area: consistency
+  topic: Dissolved, digested and particulate outcomes
+  outcome: supported
+  summary: Operational fractions and source arithmetic are preserved accurately.
+  details: Filtration removes suspended cells and neoformed precipitates; peroxide
+    digestion includes a different liquid fraction. Their difference cannot uniquely
+    identify cell surface sorption, intracellular uptake or noncellular particles.
+    Fe 91.1/270.1 is approximately 33.73%, not narrative 28%; owner preserves inconsistency
+    and adopts no invented corrected experimental fraction. Water-arm Fe <DL is not
+    zero. No isolated product, closed mass balance or recovery efficiency is asserted.
+  target_ids:
+  - cmmmech:lead-blast-furnace-slag
+  evidence_ids:
+  - owner
+  - primary
+  - figures
+- assessment_id: mechanism
+  area: scope
+  topic: Proposed siderophore pathway and deployment
+  outcome: supported
+  summary: Accepted treatment evidence is separated from proposed molecular causes
+    and field extrapolation.
+  details: Figure 8.9 and discussion propose ligand complexation/sorption but no direct
+    ligand identification or quantitative siderophore assay was reported. Author general
+    biology does not establish the specific molecular pathway. Table 8.4 complete
+    leaching times ignore protective layers and are modeled, not observed field lifetimes.
+    Industrial feedstock origin does not demonstrate industrial deployment; weathering/mobilization
+    is not isolated metal recovery.
+  target_ids:
+  - cmmmech:lead-blast-furnace-slag
+  evidence_ids:
+  - owner
+  - primary
+  - figures
+- assessment_id: provenance
+  area: provenance
+  topic: Versions, history, review independence and actual checks
+  outcome: supported
+  summary: The final review binds unchanged inspected owner and required evidence.
+  details: Thesis is the primary version read, separately linked to published article
+    metadata. Native inspect captured before judgment; source/history/schema/dossier
+    hashes unchanged. Named validator was run independently; parent terminal batch
+    was independently receipt/log verified. Reviewer authored unrelated natroboltwoodite/metaschoepite
+    records and did not author or edit this slag target. No fresh whole-corpus scientific
+    review is claimed.
+  target_ids:
+  - cmmmech:lead-blast-furnace-slag
+  evidence_ids:
+  - owner
+  - history
+  - primary
+  - bibliography
+  - notices
+  - named
+  - batch
+findings: []
+actions: []
+limitations:
+- Relevant thesis Chapter 8 and general strain Section 4.1.2 were independently inspected,
+  not every scientific claim in the 200-page thesis. Full published journal layout
+  and any article-specific supplements remain unacquired.
+- Filter pore-size unit, pH settings and Fe partition arithmetic remain unresolved
+  source discrepancies; no corrected experimental measurements were invented.
+- No independent laboratory replication, stock authentication, cell-only sorption
+  separation, direct ligand assay or product recovery mass balance was performed.
+- Bounded notice and hidden/ignored-inclusive duplicate searches do not establish
+  universal absence or source exhaustion.
+- Native structural gates support validity/provenance, not whole-corpus scientific
+  correctness.
+notes:
+- No corrective issue was manufactured; source-access/protocol gaps are follow-up
+  work already bounded in the owner.
+- Coordinator batch execution was receipt/log verified, not rerun by reviewer.
+- Reviewer authorship of two unrelated uranium records is disclosed.
+```

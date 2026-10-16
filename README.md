@@ -8,13 +8,20 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 548 material records.
+The catalogue currently contains 555 material records.
 
-The [latest curation report](research/ingests/round109-frontier-20261016.md) links
+The [latest curation report](research/ingests/round110-frontier-20261016.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Natroboltwoodite](data/records/natroboltwoodite.yaml) | Abiotic dissolution of a characterized synthetic sodium uranyl silicate | Hydration differs from the current mineral formula; low-bicarbonate decreases retained |
+| [Metaschoepite](data/records/metaschoepite.yaml) | Natural-mineral context and humidity-dependent synthetic dehydration | Mixed phases, batch differences and inconsistent source timing retained |
+| [Burbankite](data/records/burbankite.yaml) | Natural identity and synthetic La-Ca carbonate formation | Mixed synthesis product and disputed thermal values; analogue is not natural-ore recovery |
+| [Synchysite-(Ce)](data/records/synchysite-ce.yaml) | Natural-crystal structure and microstructure | Separate specimens and proxy scattering occupancies; raw diffraction files unacquired |
+| [Nobleite](data/records/nobleite.yaml) | Laboratory precipitation and natural/synthetic diffraction comparison | Formation without quantified recovery or demonstrated interconversion to gowerite |
+| [Gowerite](data/records/gowerite.yaml) | Historical and hydrothermal laboratory precipitation | Failed replication of one historical route retained; bulk purity not quantified |
+| [Lead blast-furnace slag](data/records/lead-blast-furnace-slag.yaml) | Controlled laboratory microbial alteration of real smelting residue | Operational metal fractions do not establish exclusive biosorption or isolated product recovery |
 | [Boltwoodite](data/records/boltwoodite.yaml) | Natural identity, synthetic formation and aqueous uranium release | Natural and synthetic hydration differ; total uranium is not a Ksp or recovery yield |
 | [Cuprosklodowskite](data/records/cuprosklodowskite.yaml) | Natural-crystal identity and original refinement with deposited CIF | Museum diffraction specimen kept separate from the photographed locality specimen |
 | [Kozoite-(La)](data/records/kozoite-la.yaml) | Natural identity and synthetic carbonate phase progression | Crystalline phase fractions are not elemental recovery; separate high-temperature values conflict |

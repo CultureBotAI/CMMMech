@@ -1,0 +1,451 @@
+# Independent scientific review of Synchysite-(Ce)
+
+- Review: 20261016T035700Z-synchysite-ce-round110-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-16T03:49:33.152698Z
+- Finished UTC: 2026-10-16T03:57:00.788842Z
+- Reviewer: codex /root/round104_borates (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Species identity, material boundaries and the stated experimental or observational scope are supported. No corrective owner finding in this review.
+
+## Scope And Provenance
+
+Complete assigned owner, identity, primary evidence, experimental/observational limits and history. Other records and publication operations excluded.
+
+Selection: Assigned frozen owner; native capture before assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 0482e7b0af9b18685dabe310dbe86487b6ac4226.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:synchysite-ce | data/records/synchysite-ce.yaml | maintained | Synchysite-(Ce) |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:synchysite-ce | Checked 2 record(s); 0 failed. Actual 2026-10-16T03:52:49.166110+00:00 through 2026-10-16T03:52:51.115299+00:00 |
+| Completed coordinator batch command 1 | passed | True | cmmmech:synchysite-ce | Actual execution 2026-10-16T03:52:09.968678+00:00 through 2026-10-16T03:56:26.718446+00:00 in /private/tmp/CMMMech-expansion-round110-20261016. Receipt/log/current target bytes independently verified. |
+| Completed coordinator batch command 2 | passed | True | cmmmech:synchysite-ce | Actual execution 2026-10-16T03:56:26.718469+00:00 through 2026-10-16T03:56:36.846721+00:00 in /private/tmp/CMMMech-expansion-round110-20261016. Receipt/log/current target bytes independently verified. |
+| Completed coordinator batch command 3 | passed | True | cmmmech:synchysite-ce | Actual execution 2026-10-16T03:56:36.846741+00:00 through 2026-10-16T03:56:42.595299+00:00 in /private/tmp/CMMMech-expansion-round110-20261016. Receipt/log/current target bytes independently verified. |
+| Completed coordinator batch command 4 | passed | True | cmmmech:synchysite-ce | Actual execution 2026-10-16T03:56:42.595329+00:00 through 2026-10-16T03:56:48.640530+00:00 in /private/tmp/CMMMech-expansion-round110-20261016. Receipt/log/current target bytes independently verified. |
+
+## Scientific And Domain Assessments
+
+### Species identity and scope
+
+identity: supported. Targets: cmmmech:synchysite-ce.
+
+Current IMA page210 verifies CaCe(CO3)2F and renamed identifier 1982-030. Ce species is not the Nd/Y species, a pure elemental commodity or a mixed concentrate.
+
+### Natural characterization and measurement provenance
+
+evidence: supported. Targets: cmmmech:synchysite-ce.
+
+Conconi Methods pp.234–235 and Appendix TableA1 distinguish five natural Cuasso al Monte crystals. Four supplied SCXRD average C2/c refinements; Raman/SEM used subsets; two TEM lamellae came from FCBN5. Table3 FCBN3 core Ce0.44 a.p.f.u. over13 spots and outer rim0.30 over11 spots are normalized to two cations. Figures1–5 and AppendixA retain zoning, disorder and inclusions. Proxy scattering occupancies and calculated density are not direct analytical composition.
+
+### Experiment, observation and causal limits
+
+evidence: supported. Targets: cmmmech:synchysite-ce.
+
+No controlled extraction, microbial or recovery mechanism is asserted. Screw-dislocation growth and Th-related crystallinity loss are qualified interpretations. The discussion admits growth-model tension with radial zoning, beam/FIB assumptions and other defects. Figures2–4 support the observations without isolating the proposed causal process. Published AppendixA is acquired; p.246 request-only FCF files remain unavailable.
+
+### Criticality, microbial and deployment boundaries
+
+evidence: supported. Targets: cmmmech:synchysite-ce.
+
+No jurisdiction/list/edition criticality claim, microbial causation, ore recovery efficiency or industrial deployment is asserted. iModulonDB does not apply to this abiotic mineral evidence.
+
+### Exact bytes, histories and completed checks
+
+provenance: supported. Targets: cmmmech:synchysite-ce.
+
+Captured inputs and frozen hashes are unchanged. Actual canonical/inline events and completed checks support provenance.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| record | data/records/synchysite-ce.yaml; Complete frozen owner, captured before assessment. | supports | Current IMA page210 verifies CaCe(CO3)2F and renamed identifier 1982-030. Ce species is not the Nd/Y species, a pure elemental commodity or a mixed concentrate. |
+| history | history/records/synchysite-ce/2026-10-16T034403Z-codex-root-round104-ree-b6da17.yaml; Canonical CREATE plus distinct inline event; actor, target and actual timestamps checked. | supports | Codex/GPT-6 metadata and new-owner provenance are supported. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Definitions p.1 and rows pp.32/210 visually checked; reviewer independently acquired same authority bytes. | supports | Species names, formulas and identifier scopes verified. |
+| dossier | research/sources/round110-ree/20261016T034612Z-source-investigation.json; Full paired source dossier, original acquisitions and final freeze independently inspected. | context_only | Context supports provenance; it is not a substitute for originals. |
+| search | /private/tmp/cmm-round110-borates-research/review-ree-web.json; Independent exact DOI correction/erratum/retraction queries and direct publisher opens on 2026-10-16. | context_only | No affecting correction identified in returned sets; bounded search only. |
+| dedup | /private/tmp/cmm-round110-borates-research/review-ree-dedup.json; 89 context lines in current records/research/reviews/history. | context_only | No distinct duplicate owner found within this bounded current text scope; curator broader precreation inventory independently read. |
+| named | /private/tmp/cmm-round110-borates-research/review-ree-named-validation.json; Actual independent named validation, exact current target hashes. | supports | Two records checked, zero failures. |
+| baseline | /private/tmp/cmm-round110-baseline.json; Completed initial baseline, retained log hash 54858f4f8bb7490eb7036c9d30629f427a027eabb8ff43a74b7272ddb1912f46 | context_only | Baseline context, not final-state validation. |
+| batch | /private/tmp/cmm-round110-final-gates.json; Actual four-command final batch, base/cwd/unique rows/zero exits/unchanged target hashes; log hash deaa335863d7038fa0324fd322f01d57562c229dd3f7e8816c396bc78443333a | supports | Required batch checks passed. Later native whole-corpus and publication gates are separate. |
+| original | https://doi.org/10.5194/ejm-37-233-2025; 15-page original; Methods/Results/Discussion and AppendixA independently read; Figures1–5 and A1, Tables1–4/A1–A3 visually checked. Data availability p.246. | supports | Conconi Methods pp.234–235 and Appendix TableA1 distinguish five natural Cuasso al Monte crystals. Four supplied SCXRD average C2/c refinements; Raman/SEM used subsets; two TEM lamellae came from FCBN5. Table3 FCBN3 core Ce0.44 a.p.f.u. over13 spots and outer rim0.30 over11 spots are normalized to two cations. Figures1–5 and AppendixA retain zoning, disorder and inclusions. Proxy scattering occupancies and calculated density are not direct analytical composition. No controlled extraction, microbial or recovery mechanism is asserted. Screw-dislocation growth and Th-related crystallinity loss are qualified interpretations. The discussion admits growth-model tension with radial zoning, beam/FIB assumptions and other defects. Figures2–4 support the observations without isolating the proposed causal process. Published AppendixA is acquired; p.246 request-only FCF files remain unavailable. |
+
+## Limits And Additional Notes
+
+- Only five natural crystals were characterized, with distinct instrument subsets and two lamellae from the fifth specimen.
+- Beam-induced F loss, polytypic disorder, inclusions and assumed constant FIB damage/thickness limit chemical and causal interpretation.
+- Underlying FCF diffraction files were request-only and were not acquired; published refinements cannot be independently reconstructed from those absent files.
+- Bounded notice and identity searches do not establish exhaustive literature coverage. Shared source acquisition is not independent experimental replication.
+- No criticality claim is made; omission does not mean the material is absent from every criticality list.
+- Native whole-corpus review validation and exact-head publication checks are separate later gates.
+- Pre-judgment capture and actual command receipts retained externally. No maintained target edits by this reviewer.
+- Qualified source limitations are not manufactured corrective findings.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261016T035700Z-synchysite-ce-round110-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Synchysite-(Ce)
+started_at: '2026-10-16T03:49:33.152698Z'
+finished_at: '2026-10-16T03:57:00.788842Z'
+reviewer:
+  identity: codex /root/round104_borates
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_ree. No target owner/history/dossier
+    edits. Reviewer authored unrelated nobleite/gowerite records. Shared original
+    acquisitions disclosed; primary text and relevant figures/tables independently
+    assessed after native capture.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Species identity, material boundaries and the stated experimental or observational
+  scope are supported. No corrective owner finding in this review.
+source:
+  git_revision: 0482e7b0af9b18685dabe310dbe86487b6ac4226
+  state: working_tree
+  inputs:
+  - path: data/records/synchysite-ce.yaml
+    sha256: 8e20019c4b8ca8050250bf924cf469f960f303551e6bdd316df892b7b0fd712d
+    role: target
+  - path: history/records/synchysite-ce/2026-10-16T034403Z-codex-root-round104-ree-b6da17.yaml
+    sha256: 7ac747a02729cebc2cab7d9ca12cd11b7453e59cbf31de28488318af85eae4b7
+    role: context
+  - path: research/sources/round110-ree/20261016T034612Z-source-investigation.json
+    sha256: b499a85fb814d6f4022f38d9eb9955673cdc1983502c706e520617fc9b535443
+    role: context
+  - path: research/sources/round110-ree/20261016T034612Z-source-investigation.md
+    sha256: cc639e221e5bdb0dd249af7ed89ff641227a2edfb75c5384d0e885583896e36e
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:synchysite-ce
+  path: data/records/synchysite-ce.yaml
+  label: Synchysite-(Ce)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/synchysite-ce.yaml
+    role: maintained record
+scope:
+  description: Complete assigned owner, identity, primary evidence, experimental/observational
+    limits and history. Other records and publication operations excluded.
+  selection: Assigned frozen owner; native capture before assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:synchysite-ce
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate data/records/burbankite.yaml data/records/synchysite-ce.yaml
+    --require-records
+  status: passed
+  required: true
+  summary: Checked 2 record(s); 0 failed. Actual 2026-10-16T03:52:49.166110+00:00
+    through 2026-10-16T03:52:51.115299+00:00
+  target_ids:
+  - cmmmech:synchysite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Completed coordinator batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T03:52:09.968678+00:00 through 2026-10-16T03:56:26.718446+00:00
+    in /private/tmp/CMMMech-expansion-round110-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:synchysite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Completed coordinator batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T03:56:26.718469+00:00 through 2026-10-16T03:56:36.846721+00:00
+    in /private/tmp/CMMMech-expansion-round110-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:synchysite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Completed coordinator batch command 3
+  command: uv run --locked cmmmech validate-history --base 0482e7b0af9b18685dabe310dbe86487b6ac4226
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T03:56:36.846741+00:00 through 2026-10-16T03:56:42.595299+00:00
+    in /private/tmp/CMMMech-expansion-round110-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:synchysite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Completed coordinator batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Actual execution 2026-10-16T03:56:42.595329+00:00 through 2026-10-16T03:56:48.640530+00:00
+    in /private/tmp/CMMMech-expansion-round110-20261016. Receipt/log/current target
+    bytes independently verified.
+  target_ids:
+  - cmmmech:synchysite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: record
+  kind: record_content
+  reference: data/records/synchysite-ce.yaml
+  locator: Complete frozen owner, captured before assessment.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: supports
+  summary: Current IMA page210 verifies CaCe(CO3)2F and renamed identifier 1982-030.
+    Ce species is not the Nd/Y species, a pure elemental commodity or a mixed concentrate.
+  snapshot_sha256: 8e20019c4b8ca8050250bf924cf469f960f303551e6bdd316df892b7b0fd712d
+- evidence_id: history
+  kind: record_content
+  reference: history/records/synchysite-ce/2026-10-16T034403Z-codex-root-round104-ree-b6da17.yaml
+  locator: Canonical CREATE plus distinct inline event; actor, target and actual timestamps
+    checked.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: supports
+  summary: Codex/GPT-6 metadata and new-owner provenance are supported.
+  snapshot_sha256: 7ac747a02729cebc2cab7d9ca12cd11b7453e59cbf31de28488318af85eae4b7
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions p.1 and rows pp.32/210 visually checked; reviewer independently
+    acquired same authority bytes.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: supports
+  summary: Species names, formulas and identifier scopes verified.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round110-ree/20261016T034612Z-source-investigation.json
+  locator: Full paired source dossier, original acquisitions and final freeze independently
+    inspected.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: context_only
+  summary: Context supports provenance; it is not a substitute for originals.
+  snapshot_sha256: b499a85fb814d6f4022f38d9eb9955673cdc1983502c706e520617fc9b535443
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round110-borates-research/review-ree-web.json
+  locator: Independent exact DOI correction/erratum/retraction queries and direct
+    publisher opens on 2026-10-16.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: context_only
+  summary: No affecting correction identified in returned sets; bounded search only.
+  snapshot_sha256: 4ee15b8c73928dfb429b5468fa929670c32314ca7b136c16ad613208061d6741
+  search_scope: Exact 2022 and 2025 DOI notice queries; first returned sets and primary
+    publisher landing pages, not exhaustive literature coverage.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round110-borates-research/review-ree-dedup.json
+  locator: 89 context lines in current records/research/reviews/history.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: context_only
+  summary: No distinct duplicate owner found within this bounded current text scope;
+    curator broader precreation inventory independently read.
+  snapshot_sha256: 7202355f6e7006ecb9f79e647e94500e298c113c4e8fb92becf098ca4008b916
+  search_scope: rg --no-ignore --hidden --follow over named W roots; burbankite/synchysite
+    names, exact DOI and 1982-030. Ignored files included; no machine-wide absence
+    claim.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round110-borates-research/review-ree-named-validation.json
+  locator: Actual independent named validation, exact current target hashes.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: supports
+  summary: Two records checked, zero failures.
+  snapshot_sha256: 3f4271972ec99f29851e3b93a2ba474c8b83c8b922b7d7dfa7238c64d6262c47
+- evidence_id: baseline
+  kind: validation
+  reference: /private/tmp/cmm-round110-baseline.json
+  locator: Completed initial baseline, retained log hash 54858f4f8bb7490eb7036c9d30629f427a027eabb8ff43a74b7272ddb1912f46
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: context_only
+  summary: Baseline context, not final-state validation.
+  snapshot_sha256: c2e5b9b74937be73fd67619b3ef19b72f136c709d61b6a3b96016ea3e53a8afc
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round110-final-gates.json
+  locator: Actual four-command final batch, base/cwd/unique rows/zero exits/unchanged
+    target hashes; log hash deaa335863d7038fa0324fd322f01d57562c229dd3f7e8816c396bc78443333a
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: supports
+  summary: Required batch checks passed. Later native whole-corpus and publication
+    gates are separate.
+  snapshot_sha256: ed153240d4c5826f0436aa5b996d00e0eed289dd884396599de811fc1fb085c6
+- evidence_id: original
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-37-233-2025
+  locator: 15-page original; Methods/Results/Discussion and AppendixA independently
+    read; Figures1–5 and A1, Tables1–4/A1–A3 visually checked. Data availability p.246.
+  accessed_at: '2026-10-16T03:57:00.788842Z'
+  support: supports
+  summary: Conconi Methods pp.234–235 and Appendix TableA1 distinguish five natural
+    Cuasso al Monte crystals. Four supplied SCXRD average C2/c refinements; Raman/SEM
+    used subsets; two TEM lamellae came from FCBN5. Table3 FCBN3 core Ce0.44 a.p.f.u.
+    over13 spots and outer rim0.30 over11 spots are normalized to two cations. Figures1–5
+    and AppendixA retain zoning, disorder and inclusions. Proxy scattering occupancies
+    and calculated density are not direct analytical composition. No controlled extraction,
+    microbial or recovery mechanism is asserted. Screw-dislocation growth and Th-related
+    crystallinity loss are qualified interpretations. The discussion admits growth-model
+    tension with radial zoning, beam/FIB assumptions and other defects. Figures2–4
+    support the observations without isolating the proposed causal process. Published
+    AppendixA is acquired; p.246 request-only FCF files remain unavailable.
+  snapshot_sha256: 2b6b3e626513a66188088770a6fd523e71924f0ce3cd625f14c067a17247f8a5
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species identity and scope
+  outcome: supported
+  summary: Current IMA page210 verifies CaCe(CO3)2F and renamed identifier 1982-030.
+    Ce species is not the Nd/Y species, a pure elemental commodity or a mixed concentrate.
+  target_ids:
+  - cmmmech:synchysite-ce
+  evidence_ids:
+  - record
+  - ima
+- assessment_id: natural
+  area: evidence
+  topic: Natural characterization and measurement provenance
+  outcome: supported
+  summary: Conconi Methods pp.234–235 and Appendix TableA1 distinguish five natural
+    Cuasso al Monte crystals. Four supplied SCXRD average C2/c refinements; Raman/SEM
+    used subsets; two TEM lamellae came from FCBN5. Table3 FCBN3 core Ce0.44 a.p.f.u.
+    over13 spots and outer rim0.30 over11 spots are normalized to two cations. Figures1–5
+    and AppendixA retain zoning, disorder and inclusions. Proxy scattering occupancies
+    and calculated density are not direct analytical composition.
+  target_ids:
+  - cmmmech:synchysite-ce
+  evidence_ids:
+  - record
+  - original
+- assessment_id: mechanism
+  area: evidence
+  topic: Experiment, observation and causal limits
+  outcome: supported
+  summary: No controlled extraction, microbial or recovery mechanism is asserted.
+    Screw-dislocation growth and Th-related crystallinity loss are qualified interpretations.
+    The discussion admits growth-model tension with radial zoning, beam/FIB assumptions
+    and other defects. Figures2–4 support the observations without isolating the proposed
+    causal process. Published AppendixA is acquired; p.246 request-only FCF files
+    remain unavailable.
+  target_ids:
+  - cmmmech:synchysite-ce
+  evidence_ids:
+  - record
+  - original
+  dimensions:
+  - name: material_form
+    value: Natural zoned Cuasso al Monte synchysite-(Ce) crystals, FCBN1–FCBN5.
+    definition: Separate crystals and lamellae are not pooled as identical samples.
+    evidence_ids:
+    - original
+  - name: outcome
+    value: Local Ce composition averages and structure/microstructure observations.
+    definition: Atoms per formula unit normalized to two cations; not extraction yield.
+    evidence_ids:
+    - original
+  - name: causal_scope
+    value: Interpreted growth and Th-related disorder, no curated controlled mechanism.
+    definition: Correlation and microscopy do not independently establish a causal
+      recovery pathway.
+    evidence_ids:
+    - original
+- assessment_id: scope
+  area: evidence
+  topic: Criticality, microbial and deployment boundaries
+  outcome: supported
+  summary: No jurisdiction/list/edition criticality claim, microbial causation, ore
+    recovery efficiency or industrial deployment is asserted. iModulonDB does not
+    apply to this abiotic mineral evidence.
+  target_ids:
+  - cmmmech:synchysite-ce
+  evidence_ids:
+  - record
+  - original
+- assessment_id: provenance
+  area: provenance
+  topic: Exact bytes, histories and completed checks
+  outcome: supported
+  summary: Captured inputs and frozen hashes are unchanged. Actual canonical/inline
+    events and completed checks support provenance.
+  target_ids:
+  - cmmmech:synchysite-ce
+  evidence_ids:
+  - record
+  - history
+  - named
+  - batch
+  - dossier
+  - search
+  - dedup
+findings: []
+actions: []
+limitations:
+- Only five natural crystals were characterized, with distinct instrument subsets
+  and two lamellae from the fifth specimen.
+- Beam-induced F loss, polytypic disorder, inclusions and assumed constant FIB damage/thickness
+  limit chemical and causal interpretation.
+- Underlying FCF diffraction files were request-only and were not acquired; published
+  refinements cannot be independently reconstructed from those absent files.
+- Bounded notice and identity searches do not establish exhaustive literature coverage.
+  Shared source acquisition is not independent experimental replication.
+- No criticality claim is made; omission does not mean the material is absent from
+  every criticality list.
+- Native whole-corpus review validation and exact-head publication checks are separate
+  later gates.
+notes:
+- Pre-judgment capture and actual command receipts retained externally. No maintained
+  target edits by this reviewer.
+- Qualified source limitations are not manufactured corrective findings.
+```

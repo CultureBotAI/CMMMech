@@ -1,0 +1,268 @@
+# Independent initial review of natroboltwoodite
+
+- Review: 20261016T034747Z-natroboltwoodite-round110-initial
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-16T03:46:36.558959Z
+- Finished UTC: 2026-10-16T03:47:47.331036Z
+- Reviewer: codex /root (independent)
+- Completion: partial
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+One minor description overgeneralization found; exact selected endpoints, natural/synthetic identity distinction and control of scope are supported. Final batch gates remain pending.
+
+## Scope And Provenance
+
+Entire owner inspected, claim-bearing original Table1/Fig4/5/8 and current identity examined; initial observation before the completed batch gates.
+
+Selection: Assigned independent review of new uranium record.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 0482e7b0af9b18685dabe310dbe86487b6ac4226.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:natroboltwoodite | data/records/natroboltwoodite.yaml | maintained | Natroboltwoodite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named strict validation | passed | True | cmmmech:natroboltwoodite | Checked 1 record(s); 0 failed. |
+| Final batch validation | unavailable | True | cmmmech:natroboltwoodite | Final batch owners are still being curated; current complete-batch check has not run. This is a partial initial review, not final acceptance. |
+
+## Scientific And Domain Assessments
+
+### Mineral and experimental material boundary
+
+identity: supported. Targets: cmmmech:natroboltwoodite.
+
+Current identity, special-procedure notation, species boundary and synthetic hydration limitation are supported.
+
+### Trend statement and original endpoint series
+
+evidence: concern. Targets: cmmmech:natroboltwoodite.
+
+Selected concentrations are correct, but the description must delimit the increasing trend or disclose the initial decreases.
+
+## Findings
+
+### nonmonotonic-trend: Unqualified increasing trend omits low-bicarbonate decreases
+
+minor / open / confirmed; issue key: cmmmech.natroboltwoodite.bicarbonate-trend.
+
+The opening description says filtered U and Si increased with higher bicarbonate/pH without delimiting that trend. Table1/Fig4 show low-bicarbonate troughs: Si40.1micromolar at0mM falls to8.0at0.6mM; U3.4at0mM falls to1.4at0.1mM. Listed selected endpoints later in the owner are correct. Qualify the trend to the higher-bicarbonate range or explicitly retain the initial decreases.
+
+## Recommended Actions And Acceptance Checks
+
+### qualify-trend
+
+Qualify the dissolution description to preserve low-bicarbonate nonmonotonicity; retain separate endpoint and kinetic arms.
+
+- Compare description with original Table1/Fig4.
+- Repeat named validation, append actual EDIT history, and save a successor review of final bytes with this exact finding occurrence.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/natroboltwoodite.yaml; Entire exact inspected file | supports | Required owner structure, source mapping, inline CREATE and canonical sidecar are present. |
+| table1 | https://doi.org/10.1016/j.gca.2006.06.1553; Original published PDF pp4840-4843, Table1 and Figures4/5/8; text and original pages5/6/8 independently visually inspected. Local /private/tmp/cmm-round110-uranium-research/ilton2006.pdf | refutes | Low-bicarbonate endpoints contradict an unqualified increasing trend; higher-concentration enhancement remains supported. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; PDFpage152 natroboltwoodite row visually inspected | supports | Na monohydrate, Rn2007s.p. current identity differs in declared hydration from synthetic1.5water preparation; owner preserves scope. |
+| validation | /private/tmp/cmm-round110-natro-review-validation.txt; Terminal named-record validation output | supports | One record checked; zero failures. |
+
+## Limits And Additional Notes
+
+- Partial initial observation: final batch checks unavailable while curation continues.
+- Independent agent review is not external human peer review; no raw-data reanalysis or experiment replication.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261016T034747Z-natroboltwoodite-round110-initial
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent initial review of natroboltwoodite
+started_at: '2026-10-16T03:46:36.558959Z'
+finished_at: '2026-10-16T03:47:47.331036Z'
+reviewer:
+  identity: codex /root
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: A separate uranium agent authored the owner and history; root
+    independently checked the primary article and current IMA row without editing
+    this owner.
+skill: .claude/skills/review-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: One minor description overgeneralization found; exact selected endpoints,
+  natural/synthetic identity distinction and control of scope are supported. Final
+  batch gates remain pending.
+source:
+  git_revision: 0482e7b0af9b18685dabe310dbe86487b6ac4226
+  state: working_tree
+  inputs:
+  - path: data/records/natroboltwoodite.yaml
+    sha256: 6867d587ac3d170d82aa513acda9746e8f57280798b1bf9a1db8e3bb9e972521
+    role: target
+  - path: history/records/natroboltwoodite/2026-10-16T034518Z-codex-83409c.yaml
+    sha256: 61d05787f7f312d57c9d930b70050a0ce7e98ce95abe1c9626ece6f690144a81
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- kind: maintained
+  label: Natroboltwoodite
+  owner_paths:
+  - path: data/records/natroboltwoodite.yaml
+    repository: CultureBotAI/CMMMech
+    role: maintained_record
+  path: data/records/natroboltwoodite.yaml
+  target_id: cmmmech:natroboltwoodite
+scope:
+  description: Entire owner inspected, claim-bearing original Table1/Fig4/5/8 and
+    current identity examined; initial observation before the completed batch gates.
+  selection: Assigned independent review of new uranium record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:natroboltwoodite
+checks:
+- check_id: named
+  name: Named strict validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/natroboltwoodite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 1 record(s); 0 failed.
+  target_ids:
+  - cmmmech:natroboltwoodite
+  evidence_ids:
+  - validation
+- check_id: batch-pending
+  name: Final batch validation
+  required: true
+  status: unavailable
+  command: just check
+  summary: Final batch owners are still being curated; current complete-batch check
+    has not run. This is a partial initial review, not final acceptance.
+  target_ids:
+  - cmmmech:natroboltwoodite
+  evidence_ids:
+  - owner
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/natroboltwoodite.yaml
+  locator: Entire exact inspected file
+  accessed_at: '2026-10-16T03:47:47.331036Z'
+  snapshot_sha256: 6867d587ac3d170d82aa513acda9746e8f57280798b1bf9a1db8e3bb9e972521
+  support: supports
+  summary: Required owner structure, source mapping, inline CREATE and canonical sidecar
+    are present.
+- evidence_id: table1
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.gca.2006.06.1553
+  locator: Original published PDF pp4840-4843, Table1 and Figures4/5/8; text and original
+    pages5/6/8 independently visually inspected. Local /private/tmp/cmm-round110-uranium-research/ilton2006.pdf
+  accessed_at: '2026-10-16T03:47:47.331036Z'
+  snapshot_sha256: 96431031ba27515c82a197a6970b0c4c11258e6e6d8ad2478bb66e286a1c46ef
+  support: refutes
+  summary: Low-bicarbonate endpoints contradict an unqualified increasing trend; higher-concentration
+    enhancement remains supported.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: PDFpage152 natroboltwoodite row visually inspected
+  accessed_at: '2026-10-16T03:47:47.331036Z'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  support: supports
+  summary: Na monohydrate, Rn2007s.p. current identity differs in declared hydration
+    from synthetic1.5water preparation; owner preserves scope.
+- evidence_id: validation
+  kind: validation
+  reference: /private/tmp/cmm-round110-natro-review-validation.txt
+  locator: Terminal named-record validation output
+  accessed_at: '2026-10-16T03:47:47.331036Z'
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+  support: supports
+  summary: One record checked; zero failures.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral and experimental material boundary
+  outcome: supported
+  summary: Current identity, special-procedure notation, species boundary and synthetic
+    hydration limitation are supported.
+  target_ids:
+  - cmmmech:natroboltwoodite
+  evidence_ids:
+  - owner
+  - ima
+- assessment_id: trend
+  area: evidence
+  topic: Trend statement and original endpoint series
+  outcome: concern
+  summary: Selected concentrations are correct, but the description must delimit the
+    increasing trend or disclose the initial decreases.
+  target_ids:
+  - cmmmech:natroboltwoodite
+  evidence_ids:
+  - owner
+  - table1
+findings:
+- finding_id: nonmonotonic-trend
+  issue_key: cmmmech.natroboltwoodite.bicarbonate-trend
+  category: evidence
+  severity: minor
+  status: open
+  certainty: confirmed
+  target_ids:
+  - cmmmech:natroboltwoodite
+  field_paths:
+  - mechanisms[0].description
+  evidence_ids:
+  - table1
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/natroboltwoodite.yaml
+    role: maintained_record
+  description: 'The opening description says filtered U and Si increased with higher
+    bicarbonate/pH without delimiting that trend. Table1/Fig4 show low-bicarbonate
+    troughs: Si40.1micromolar at0mM falls to8.0at0.6mM; U3.4at0mM falls to1.4at0.1mM.
+    Listed selected endpoints later in the owner are correct. Qualify the trend to
+    the higher-bicarbonate range or explicitly retain the initial decreases.'
+  title: Unqualified increasing trend omits low-bicarbonate decreases
+actions:
+- action_id: qualify-trend
+  description: Qualify the dissolution description to preserve low-bicarbonate nonmonotonicity;
+    retain separate endpoint and kinetic arms.
+  finding_ids:
+  - nonmonotonic-trend
+  target_ids:
+  - cmmmech:natroboltwoodite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/natroboltwoodite.yaml
+    role: maintained_record
+  acceptance_checks:
+  - Compare description with original Table1/Fig4.
+  - Repeat named validation, append actual EDIT history, and save a successor review
+    of final bytes with this exact finding occurrence.
+limitations:
+- 'Partial initial observation: final batch checks unavailable while curation continues.'
+- Independent agent review is not external human peer review; no raw-data reanalysis
+  or experiment replication.
+```
