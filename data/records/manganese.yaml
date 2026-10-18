@@ -7,6 +7,17 @@ description: The element Mn, distinct from its dissolved oxidation states, ligan
 identifiers:
 - id: CHEBI:18291
   label: manganese atom
+criticality:
+- jurisdiction: United States of America
+  list_name: USGS Final List of Critical Minerals
+  edition: 2025; Federal Register 90:50494-50497
+  classification: critical
+  source_ref: usgs2025
+- jurisdiction: European Union
+  list_name: Regulation (EU) 2024/1252, Annex II, Section 1(u), manganese
+  edition: 2024 original act; OJ L 2024/1252, 3 May 2024
+  classification: critical
+  source_ref: eu2024
 sources:
 - id: wright2018
   title: Wright et al. (2018). Oxidative Formation and Removal of Complexed Mn(III) by Pseudomonas Species.
@@ -31,17 +42,6 @@ sources:
     II, Section 1(u), manganese, page 57 of 67.
   url: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401252
   accessed_on: '2026-10-09'
-criticality:
-- jurisdiction: United States of America
-  list_name: USGS Final List of Critical Minerals
-  edition: 2025; Federal Register 90:50494-50497
-  classification: critical
-  source_ref: usgs2025
-- jurisdiction: European Union
-  list_name: Regulation (EU) 2024/1252, Annex II, Section 1(u), manganese
-  edition: 2024 original act; OJ L 2024/1252, 3 May 2024
-  classification: critical
-  source_ref: eu2024
 mechanisms:
 - id: gb1_manganese_oxidation
   name: Mn(II) and complexed Mn(III) oxidation by Pseudomonas putida GB-1
@@ -115,27 +115,6 @@ mechanisms:
       supports: support
       explanation: Second multicopper oxidase (PputGB1_2665) shown by clean deletion and overexpression
         in Wright et al. (2018) to oxidize Mn(II) to Mn(III/IV) oxides.
-curation_history:
-- timestamp: '2026-10-09T04:47:22Z'
-  curator: Codex (GPT-6; Codex)
-  action: record_creation
-  summary: Curated the manganese element identity, USGS 2025 designation and scoped GB-1 laboratory oxidation
-    evidence. Retained oxide-assay and abiotic/light limits; independent review remains a separate artifact.
-- timestamp: '2026-10-09T05:51:49Z'
-  curator: Codex (GPT-6; Codex)
-  action: criticality_extension
-  summary: Added the historical EU 2024 Annex II designation through its named manganese entry, with source
-    and mapping scope documented. Preserved existing scientific evidence; independent review is separate.
-- timestamp: '2026-10-18T04:27:50Z'
-  curator: antigravity
-  action: EDIT
-  summary: Added verified UniProtKB protein examples (MnxG UniProtKB:B0KQT1, McoA UniProtKB:B0KSN7) and
-    causal graph (including explicit UNGROUNDED annotation for obsolete PputGB1_3353 / B0KJL7 MopA) for
-    Pseudomonas putida GB-1 manganese oxidation.
-history_refs:
-- history/records/manganese/2026-10-09T044722Z-codex-94b8cc.yaml
-- history/records/manganese/2026-10-09T055149Z-codex-dc3517.yaml
-- history/records/manganese/2026-10-18T042750Z-antigravity-6d5fac.yaml
 causal_graphs:
 - id: gb1_mnxg_mcoa_mopa_manganese_oxidation_graph
   name: Pseudomonas putida GB-1 MnxG, McoA, and MopA pathways for Mn(II) oxidation to Mn(III/IV) oxides
@@ -259,3 +238,24 @@ causal_graphs:
     - source_ref: wright2018
       supports: support
       explanation: Leucoberbelin blue assays quantify biogenic Mn(III/IV) oxide accumulation.
+curation_history:
+- timestamp: '2026-10-09T04:47:22Z'
+  curator: Codex (GPT-6; Codex)
+  action: record_creation
+  summary: Curated the manganese element identity, USGS 2025 designation and scoped GB-1 laboratory oxidation
+    evidence. Retained oxide-assay and abiotic/light limits; independent review remains a separate artifact.
+- timestamp: '2026-10-09T05:51:49Z'
+  curator: Codex (GPT-6; Codex)
+  action: criticality_extension
+  summary: Added the historical EU 2024 Annex II designation through its named manganese entry, with source
+    and mapping scope documented. Preserved existing scientific evidence; independent review is separate.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein examples (MnxG UniProtKB:B0KQT1, McoA UniProtKB:B0KSN7) and
+    causal graph (including explicit UNGROUNDED annotation for obsolete PputGB1_3353 / B0KJL7 MopA) for
+    Pseudomonas putida GB-1 manganese oxidation.
+history_refs:
+- history/records/manganese/2026-10-09T044722Z-codex-94b8cc.yaml
+- history/records/manganese/2026-10-09T055149Z-codex-dc3517.yaml
+- history/records/manganese/2026-10-18T042750Z-antigravity-6d5fac.yaml

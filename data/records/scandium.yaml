@@ -8,6 +8,12 @@ description: The element Sc, distinct from dissolved Sc(III), scandium chloride,
 identifiers:
 - id: CHEBI:33330
   label: scandium atom
+criticality:
+- jurisdiction: United States of America
+  list_name: USGS Final List of Critical Minerals
+  edition: 2025; Federal Register 90:50494-50497, 7 November 2025
+  classification: critical
+  source_ref: usgs2025
 sources:
 - id: chebi_scandium
   title: ChEBI CHEBI:33330 - scandium atom; formula Sc, net charge 0
@@ -35,12 +41,6 @@ sources:
   title: NCBI Taxonomy 408 - Methylorubrum extorquens; species-level protein-origin context
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=408
   accessed_on: '2026-10-11'
-criticality:
-- jurisdiction: United States of America
-  list_name: USGS Final List of Critical Minerals
-  edition: 2025; Federal Register 90:50494-50497, 7 November 2025
-  classification: critical
-  source_ref: usgs2025
 mechanisms:
 - id: immobilized_lanmodulin_scandium_separation
   name: Cell-free lanmodulin capture and malonate elution of scandium
@@ -106,26 +106,14 @@ mechanisms:
     functional_role: Periplasmic EF-hand lanthanide-binding protein lanmodulin (Mex-LanM; lanM / META1_1786)
       covalently immobilized on agarose beads for selective Sc(III) capture and pH-step chromatographic
       separation.
+    annotation_note: Mechanism organism is recorded at species level Methylorubrum extorquens (NCBITaxon:408);
+      grounded to the canonical Methylorubrum extorquens AM1 Swiss-Prot reference proteome entry Mex-LanM
+      (UniProtKB:C5B164, NCBITaxon:272630, UP000009081).
     evidence:
     - source_ref: dong2024
       supports: support
       explanation: Immobilized Mex-LanM selectively binds Sc(III) over competing transition/base metals
         and elutes high-purity scandium upon mild acid stripping.
-curation_history:
-- timestamp: '2026-10-11T06:27:14Z'
-  curator: Codex (GPT-6; Codex)
-  action: CREATE
-  summary: Added verified elemental identity, dated US2025 criticality and qualified cell-free protein
-    separation evidence after primary-source inspection; retained experimental and source limitations.
-    Independent scientific review is recorded separately.
-- timestamp: '2026-10-18T04:27:50Z'
-  curator: antigravity
-  action: EDIT
-  summary: Added verified UniProtKB protein example (Mex-LanM UniProtKB:C5B164) and causal graph for immobilized
-    lanmodulin scandium separation.
-history_refs:
-- history/records/scandium/2026-10-11T062653Z-codex-38b6bd.yaml
-- history/records/scandium/2026-10-18T042750Z-antigravity-4018cd.yaml
 causal_graphs:
 - id: immobilized_mex_lanm_scandium_separation_graph
   name: Immobilized Methylorubrum extorquens AM1 lanmodulin (Mex-LanM) selective Sc(III) capture and elution
@@ -160,6 +148,9 @@ causal_graphs:
       functional_role: Periplasmic EF-hand lanthanide-binding protein lanmodulin (Mex-LanM; lanM / META1_1786)
         covalently immobilized on agarose beads for selective Sc(III) capture and pH-step chromatographic
         separation.
+      annotation_note: Mechanism organism is recorded at species level Methylorubrum extorquens (NCBITaxon:408);
+        grounded to the canonical Methylorubrum extorquens AM1 Swiss-Prot reference proteome entry Mex-LanM
+        (UniProtKB:C5B164, NCBITaxon:272630, UP000009081).
       evidence:
       - source_ref: dong2024
         supports: support
@@ -195,3 +186,24 @@ causal_graphs:
     - source_ref: dong2024
       supports: support
       explanation: Stepwise pH elution separates Sc(III) with high purity and column reusability.
+curation_history:
+- timestamp: '2026-10-11T06:27:14Z'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Added verified elemental identity, dated US2025 criticality and qualified cell-free protein
+    separation evidence after primary-source inspection; retained experimental and source limitations.
+    Independent scientific review is recorded separately.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein example (Mex-LanM UniProtKB:C5B164) and causal graph for immobilized
+    lanmodulin scandium separation.
+- timestamp: '2026-10-18T06:58:31Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added explicit annotation_note documenting strain/species or comparator NCBITaxon mapping on
+    ProteinExample entries and normalized causal_graphs key order.
+history_refs:
+- history/records/scandium/2026-10-11T062653Z-codex-38b6bd.yaml
+- history/records/scandium/2026-10-18T042750Z-antigravity-4018cd.yaml
+- history/records/scandium/2026-10-18T065831Z-antigravity-32a9ad.yaml

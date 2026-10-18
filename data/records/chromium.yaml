@@ -8,6 +8,12 @@ description: Chromium (Cr), represented as an element. Its identity differs from
 identifiers:
 - id: CHEBI:28073
   label: chromium atom
+criticality:
+- jurisdiction: United States of America
+  list_name: U.S. Department of the Interior Final List of Critical Minerals
+  edition: 2025 (published November 7, 2025; 90 FR 50494-50497)
+  classification: critical
+  source_ref: usgs_2025
 sources:
 - id: chebi_chromium
   title: ChEBI:28073 - chromium atom (Cr; atomic number 24; net charge zero)
@@ -28,12 +34,6 @@ sources:
   title: 'NCBI Taxonomy: Shewanella oneidensis MR-1 (Taxonomy ID 211586; no rank)'
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586&mode=Info
   accessed_on: '2026-10-11'
-criticality:
-- jurisdiction: United States of America
-  list_name: U.S. Department of the Interior Final List of Critical Minerals
-  edition: 2025 (published November 7, 2025; 90 FR 50494-50497)
-  classification: critical
-  source_ref: usgs_2025
 mechanisms:
 - id: mr1_chromate_reduction
   name: MtrC/OmcA-associated reduction of Cr(VI) by resting MR-1 cells
@@ -153,22 +153,6 @@ mechanisms:
       supports: support
       explanation: Routes respiratory electrons from the inner-membrane menaquinone pool to periplasmic
         and outer-membrane multiheme cytochromes during Dissolved chromate Cr(VI) reduction.
-curation_history:
-- timestamp: '2026-10-11T04:36:03Z'
-  curator: Codex (GPT-6; Codex)
-  action: create
-  summary: Created chromium element identity, dated US2025 criticality and a primary-supported MR-1 chromate
-    reduction mechanism. Retained residual mutant activity, incomplete transformation, inferred precipitate
-    valence and the Figure 2C label conflict; attached the separate canonical CREATE session before independent
-    review.
-- timestamp: '2026-10-18T04:27:50Z'
-  curator: antigravity
-  action: EDIT
-  summary: Added verified UniProtKB protein examples (MtrC UniProtKB:Q8EG34, OmcA UniProtKB:Q8EG33, CymA
-    UniProtKB:Q8E8S0) and causal graph for Shewanella oneidensis MR-1 Cr(VI) reduction.
-history_refs:
-- history/records/chromium/2026-10-11T043602Z-codex-adf9c7.yaml
-- history/records/chromium/2026-10-18T042750Z-antigravity-284d2a.yaml
 causal_graphs:
 - id: mr1_mtrc_omca_chromate_reduction_graph
   name: Shewanella oneidensis MR-1 MtrC/OmcA extracellular Cr(VI) reduction
@@ -329,3 +313,19 @@ causal_graphs:
     - source_ref: belchik_2011
       supports: support
       explanation: Extracellular reduction converts Dissolved chromate Cr(VI) into Reduced Cr(III) precipitate/complexes.
+curation_history:
+- timestamp: '2026-10-11T04:36:03Z'
+  curator: Codex (GPT-6; Codex)
+  action: create
+  summary: Created chromium element identity, dated US2025 criticality and a primary-supported MR-1 chromate
+    reduction mechanism. Retained residual mutant activity, incomplete transformation, inferred precipitate
+    valence and the Figure 2C label conflict; attached the separate canonical CREATE session before independent
+    review.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein examples (MtrC UniProtKB:Q8EG34, OmcA UniProtKB:Q8EG33, CymA
+    UniProtKB:Q8E8S0) and causal graph for Shewanella oneidensis MR-1 Cr(VI) reduction.
+history_refs:
+- history/records/chromium/2026-10-11T043602Z-codex-adf9c7.yaml
+- history/records/chromium/2026-10-18T042750Z-antigravity-284d2a.yaml

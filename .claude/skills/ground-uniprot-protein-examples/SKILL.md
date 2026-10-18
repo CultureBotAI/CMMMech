@@ -144,11 +144,14 @@ causal_graphs:
         description: >-
           Microbial extracellular electron transfer to solid akaganeite
           (beta-FeOOH), generating Fe(II) and transforming the mineral phase.
+        protein_grounding_status: NOT_APPLICABLE
     edges:
       - source: imch_cytochrome
         target: akaganeite_fe3_reduction
-        predicate: RO:0002411
-        relationship: causally_upstream_of
+        predicate: reduces
+        relationship: >-
+          Transfers electrons from the menaquinone pool to initiate extracellular
+          akaganeite reduction
         description: >-
           ImcH mediates electron transfer required to initiate extracellular
           akaganeite reduction.
@@ -159,6 +162,24 @@ causal_graphs:
               Deleting imcH prevents akaganeite reduction until low-potential
               CbcL-dependent electron transfer can operate.
 ```
+
+### Mandatory Validator Invariants
+
+1. **`CausalNode` grounding status**:
+   - `protein_grounding_status` is **required** on every `CausalNode`.
+   - `GENE_OR_PROTEIN` nodes must use `GROUNDED` (with non-empty `protein_examples`) or `UNGROUNDED` (with zero `protein_examples` and a non-empty `description` explaining why the locus is ungrounded).
+   - Non-`GENE_OR_PROTEIN` nodes (`CHEMICAL_ENTITY`, `BIOLOGICAL_PROCESS`, `CELLULAR_STRUCTURE`, `PHENOTYPE_OR_TRAIT`, `ENVIRONMENTAL_CONDITION`, `MATERIAL_OR_PHASE`) must use `protein_grounding_status: NOT_APPLICABLE` and must not carry `protein_examples` or `gene_symbol`.
+2. **`ProteinExample` taxon alignment & CURIE syntax**:
+   - `target_organism.id` must match `^NCBITaxon:[0-9]+$`.
+   - Whenever `target_organism.id` on a mechanism-level `ProteinExample` or on a `CausalNode.protein_examples[]` entry (whose graph has a `mechanism_ref`) is not present in the parent mechanism's `organisms[].id` set (for example, strain-level vs species-level `NCBITaxon` or a reference-proteome ortholog), `annotation_note` is **required** on that `ProteinExample` to document the taxonomic/ortholog relationship.
+   - `go_terms[].id` must match `^GO:[0-9]{7}$`.
+   - Duplicate `uniprot_accession` entries within the same `protein_examples` list and duplicate cross-references (`interpro_ids`, `pfam_ids`, `ncbifam_ids`, `ec_numbers`, `go_terms`) within a single `ProteinExample` are forbidden.
+3. **`CausalGraph` structural integrity**:
+   - `CausalEdge.predicate` is constrained to `CausalPredicateEnum`: `acts_on`, `assembles_into`, `binds`, `catalyzes`, `chelates`, `displays_on_surface`, `drives`, `incorporates_into`, `inhibits`, `modulates`, `negatively_regulates`, `nucleates`, `oxidizes`, `positively_regulates`, `produces`, `provides_electrons_to`, `reduces`, `supplies_substrate_for`, `transforms_into`, `transports`.
+   - Self-loop edges (`source == target`), duplicate `(source, target, predicate)` edges, and isolated nodes (not referenced by any edge in a multi-node graph) are forbidden.
+   - A `CausalGraph` whose `mechanism_ref` points to an abiotic mechanism (`microbial: false`) cannot contain biological nodes (`GENE_OR_PROTEIN`, `BIOLOGICAL_PROCESS`, `CELLULAR_STRUCTURE`, `PHENOTYPE_OR_TRAIT`).
+4. **Canonical root YAML key order**:
+   - Keep top-level keys ordered as: `id`, `name`, `material_kind`, `description`, `identifiers`, `criticality`, `sources`, `mechanisms`, `causal_graphs`, `curation_history`, `history_refs`.
 
 ## 5. Provenance, Rendering, and Validation Gate
 

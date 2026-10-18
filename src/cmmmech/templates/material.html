@@ -171,9 +171,28 @@
               <a href="{{ pf | curie_url }}" target="_blank" rel="noopener"><code>{{ pf }}</code></a>{% if not loop.last %}, {% endif %}
               {% endfor %}
               {% endif %}
+              {% if pe.ncbifam_ids %}
+              {% if pe.ec_numbers or pe.interpro_ids or pe.pfam_ids %}<br>{% endif %}
+              {% for nf in pe.ncbifam_ids %}
+              <a href="{{ nf | curie_url }}" target="_blank" rel="noopener"><code>{{ nf }}</code></a>{% if not loop.last %}, {% endif %}
+              {% endfor %}
+              {% endif %}
+              {% if pe.complex_portal_id %}
+              {% if pe.ec_numbers or pe.interpro_ids or pe.pfam_ids or pe.ncbifam_ids %}<br>{% endif %}
+              <a href="{{ pe.complex_portal_id | curie_url }}" target="_blank" rel="noopener"><code>{{ pe.complex_portal_id }}</code></a>
+              {% endif %}
+              {% if pe.go_terms %}
+              {% if pe.ec_numbers or pe.interpro_ids or pe.pfam_ids or pe.ncbifam_ids or pe.complex_portal_id %}<br>{% endif %}
+              {% for go in pe.go_terms %}
+              <a href="{{ go.id | curie_url }}" target="_blank" rel="noopener"><code>{{ go.id }}</code></a> ({{ go.label }}){% if not loop.last %}, {% endif %}
+              {% endfor %}
+              {% endif %}
             </td>
             <td>
               {{ pe.functional_role }}
+              {% for ev in pe.evidence or [] %}
+              {% if ev.source_ref %}[<a href="#source-{{ ev.source_ref }}"><code>{{ ev.source_ref }}</code></a>]{% endif %}
+              {% endfor %}
               {% if pe.annotation_note %}<br><span style="font-size: .82rem; color: var(--muted);">{{ pe.annotation_note }}</span>{% endif %}
             </td>
           </tr>
@@ -233,7 +252,7 @@
       </thead>
       <tbody>
         {% for node in cg.nodes %}
-        <tr>
+        <tr id="causal-node-{{ cg.id }}-{{ node.id }}">
           <td>
             <strong>{{ node.label }}</strong><br>
             <code style="font-size: .78rem; color: var(--muted);">{{ node.id }}</code>
@@ -262,11 +281,14 @@
               {% for pe in node.protein_examples %}
               <div style="margin-bottom: .25rem;">
                 <a href="{{ pe.uniprot_accession | curie_url }}" target="_blank" rel="noopener"><code>{{ pe.uniprot_accession }}</code></a>
-                {% if pe.entry_name %}({{ pe.entry_name }}, <span class="badge" style="font-size: .7rem;">{{ pe.entry_status }}</span>){% endif %}
+                ({% if pe.entry_name %}{{ pe.entry_name }}, {% endif %}<span class="badge" style="font-size: .7rem;">{{ pe.entry_status }}</span>)
                 — <strong>{{ pe.protein_name }}</strong>
                 {% if pe.gene_symbol %}[<code>{{ pe.gene_symbol }}</code>]{% endif %}
                 in <em>{{ pe.target_organism.label }}</em> (<code>{{ pe.target_organism.id }}</code>){% if pe.reference_proteome_id %} · <code>{{ pe.reference_proteome_id }}</code>{% endif %}.
                 <span>{{ pe.functional_role }}</span>
+                {% for ev in pe.evidence or [] %}
+                {% if ev.source_ref %}[<a href="#source-{{ ev.source_ref }}"><code>{{ ev.source_ref }}</code></a>]{% endif %}
+                {% endfor %}
                 {% if pe.annotation_note %}<div style="font-size: .8rem; color: var(--muted);">{{ pe.annotation_note }}</div>{% endif %}
               </div>
               {% endfor %}

@@ -8,6 +8,12 @@ description: The element Si, distinct from dissolved silicic acid, biogenic sili
 identifiers:
 - id: CHEBI:27573
   label: silicon atom
+criticality:
+- jurisdiction: United States
+  list_name: Department of the Interior Final List of Critical Minerals
+  edition: 2025 final list, published 7 November 2025
+  classification: critical
+  source_ref: us_2025
 sources:
 - id: chebi_silicon
   title: ChEBI:27573 - silicon atom; formula Si and net charge 0
@@ -29,12 +35,6 @@ sources:
     no rank in the Taxonomy Browser.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=296543&mode=Info
   accessed_on: '2026-10-11'
-criticality:
-- jurisdiction: United States
-  list_name: Department of the Interior Final List of Critical Minerals
-  edition: 2025 final list, published 7 November 2025
-  classification: critical
-  source_ref: us_2025
 mechanisms:
 - id: ccmp1335_silicic_acid_utilization
   name: Conditional SIT contribution to diatom silicic-acid uptake and silica incorporation
@@ -100,6 +100,9 @@ mechanisms:
     functional_role: High-affinity sodium/silicic acid symporter SIT1 (THAPSDRAFT_268895) mediating active
       uptake of dissolved orthosilicic acid (Si(OH)4) across the diatom plasma membrane under silicon-limiting
       conditions.
+    annotation_note: Experimental strain is Thalassiosira pseudonana CCMP1335 (NCBITaxon:296543); grounded
+      to the species-level Thalassiosira pseudonana reference proteome entry SIT1 (UniProtKB:B8C2V9, NCBITaxon:35128,
+      UP000001449), which was sequenced from strain CCMP1335.
     evidence:
     - source_ref: shrestha_2015
       supports: support
@@ -120,26 +123,14 @@ mechanisms:
     - Pfam:PF03842
     functional_role: Silicon transporter SIT2 (THAPSDRAFT_41392) co-mediating silicic acid transport and
       silicon-responsive regulation of frustule biosilicification in Thalassiosira pseudonana CCMP1335.
+    annotation_note: Experimental strain is Thalassiosira pseudonana CCMP1335 (NCBITaxon:296543); grounded
+      to the species-level Thalassiosira pseudonana reference proteome entry SIT2 (UniProtKB:B5YNJ0, NCBITaxon:35128,
+      UP000001449), which was sequenced from strain CCMP1335.
     evidence:
     - source_ref: shrestha_2015
       supports: support
       explanation: Targeted antisense/RNAi knockdown of SIT1 and SIT2 perturbs cellular silicon uptake
         and silica deposition.
-curation_history:
-- timestamp: '2026-10-11T06:50:31Z'
-  curator: Codex (GPT-6; Codex)
-  action: CREATE
-  summary: Created silicon identity and dated US criticality with primary diatom uptake and silica-incorporation
-    evidence, preserving conditional joint knockdown effects and assay, causal and supplementary-access
-    limits.
-- timestamp: '2026-10-18T04:27:50Z'
-  curator: antigravity
-  action: EDIT
-  summary: Added verified UniProtKB protein examples (SIT1 UniProtKB:B8C2V9, SIT2 UniProtKB:B5YNJ0) and
-    causal graph for Thalassiosira pseudonana CCMP1335 silicic acid utilization.
-history_refs:
-- history/records/silicon/2026-10-11T065000Z-codex-0bbe5d.yaml
-- history/records/silicon/2026-10-18T042750Z-antigravity-3a2867.yaml
 causal_graphs:
 - id: ccmp1335_sit1_sit2_biosilicification_graph
   name: Thalassiosira pseudonana CCMP1335 SIT1 and SIT2 silicic acid transport and frustule biosilicification
@@ -172,6 +163,9 @@ causal_graphs:
       functional_role: High-affinity sodium/silicic acid symporter SIT1 (THAPSDRAFT_268895) mediating
         active uptake of dissolved orthosilicic acid (Si(OH)4) across the diatom plasma membrane under
         silicon-limiting conditions.
+      annotation_note: Experimental strain is Thalassiosira pseudonana CCMP1335 (NCBITaxon:296543); grounded
+        to the species-level Thalassiosira pseudonana reference proteome entry SIT1 (UniProtKB:B8C2V9,
+        NCBITaxon:35128, UP000001449), which was sequenced from strain CCMP1335.
       evidence:
       - source_ref: shrestha_2015
         supports: support
@@ -199,6 +193,9 @@ causal_graphs:
       - Pfam:PF03842
       functional_role: Silicon transporter SIT2 (THAPSDRAFT_41392) co-mediating silicic acid transport
         and silicon-responsive regulation of frustule biosilicification in Thalassiosira pseudonana CCMP1335.
+      annotation_note: Experimental strain is Thalassiosira pseudonana CCMP1335 (NCBITaxon:296543); grounded
+        to the species-level Thalassiosira pseudonana reference proteome entry SIT2 (UniProtKB:B5YNJ0,
+        NCBITaxon:35128, UP000001449), which was sequenced from strain CCMP1335.
       evidence:
       - source_ref: shrestha_2015
         supports: support
@@ -244,3 +241,24 @@ causal_graphs:
       supports: support
       explanation: PDMPO fluorescence and Si depletion track incorporation into newly synthesized frustule
         valves.
+curation_history:
+- timestamp: '2026-10-11T06:50:31Z'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Created silicon identity and dated US criticality with primary diatom uptake and silica-incorporation
+    evidence, preserving conditional joint knockdown effects and assay, causal and supplementary-access
+    limits.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein examples (SIT1 UniProtKB:B8C2V9, SIT2 UniProtKB:B5YNJ0) and
+    causal graph for Thalassiosira pseudonana CCMP1335 silicic acid utilization.
+- timestamp: '2026-10-18T06:58:33Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added explicit annotation_note documenting strain/species or comparator NCBITaxon mapping on
+    ProteinExample entries and normalized causal_graphs key order.
+history_refs:
+- history/records/silicon/2026-10-11T065000Z-codex-0bbe5d.yaml
+- history/records/silicon/2026-10-18T042750Z-antigravity-3a2867.yaml
+- history/records/silicon/2026-10-18T065833Z-antigravity-43813e.yaml

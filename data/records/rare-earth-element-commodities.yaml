@@ -10,6 +10,12 @@ description: 'This collective commodity family follows Australia''s 20 February 
   element records and narrower rare-earth commodity groups; it is not one mineral, alloy or fixed mixture.
   The mechanism below concerns only a synthetic neodymium/dysprosium solution and does not establish recovery
   of every family member or treatment of ore, magnets or industrial waste.'
+criticality:
+- jurisdiction: Australia
+  list_name: Australia's Critical Minerals List; rare-earth-elements group, footnote 17
+  edition: 20 February 2024 update, following the 16 February 2024 ministerial decision
+  classification: critical
+  source_ref: australia_2024
 sources:
 - id: australia_2024
   title: Australian Department of Industry, Science and Resources. Australia's Critical Minerals List
@@ -43,12 +49,6 @@ sources:
   title: NCBI Taxonomy 2528245, Hansschlegelia quercus; species identity of the lanmodulin source organism
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=2528245
   accessed_on: '2026-10-11'
-criticality:
-- jurisdiction: Australia
-  list_name: Australia's Critical Minerals List; rare-earth-elements group, footnote 17
-  edition: 20 February 2024 update, following the 16 February 2024 ministerial decision
-  classification: critical
-  source_ref: australia_2024
 mechanisms:
 - id: hans_lanmodulin_r100k_nd_dy_separation
   name: Synthetic neodymium/dysprosium separation using immobilized Hans-LanM R100K
@@ -145,26 +145,14 @@ mechanisms:
     - Pfam:PF13202
     functional_role: Monomeric EF-hand lanmodulin Mex-LanM (lanM / META1_1786) from Methylorubrum extorquens
       AM1 structurally and functionally compared with Hans-LanM for rare-earth-element separation.
+    annotation_note: Canonical monomeric lanmodulin (Mex-LanM, UniProtKB:C5B164) from Methylorubrum extorquens
+      AM1 (NCBITaxon:272630, UP000009081) included as the structural and thermodynamic comparator benchmarked
+      against Hansschlegelia quercus Hans-LanM (NCBITaxon:2528245) in Mattocks et al. (2023).
     evidence:
     - source_ref: mattocks_2023
       supports: partial
       explanation: Comparator monomeric lanmodulin benchmarked against dimeric Hans-LanM to demonstrate
         how EF-hand and dimer-interface architecture tune Nd/Dy separation.
-curation_history:
-- timestamp: '2026-10-11T08:37:57Z'
-  curator: Codex (GPT-6; Codex)
-  action: CREATE
-  summary: Created the rare-earth-element-commodities commodity record with explicit official group scope
-    and dated criticality. Official source scopes and evidence limits were retained; independent scientific
-    review is recorded separately.
-- timestamp: '2026-10-18T04:27:50Z'
-  curator: antigravity
-  action: EDIT
-  summary: Added verified UniProtKB protein examples (Hans-LanM UniProtKB:A0A4V2JDD3, Mex-LanM UniProtKB:C5B164)
-    and causal graph for lanmodulin-based rare-earth separation.
-history_refs:
-- history/records/rare-earth-element-commodities/2026-10-11T083756Z-codex-eb8683.yaml
-- history/records/rare-earth-element-commodities/2026-10-18T042750Z-antigravity-e6fe74.yaml
 causal_graphs:
 - id: hans_lanm_r100k_nd_dy_separation_graph
   name: Hansschlegelia quercus lanmodulin (Hans-LanM / R100K) chromatographic separation of Nd(III) and
@@ -232,6 +220,9 @@ causal_graphs:
       - Pfam:PF13202
       functional_role: Monomeric EF-hand lanmodulin Mex-LanM (lanM / META1_1786) from Methylorubrum extorquens
         AM1 structurally and functionally compared with Hans-LanM for rare-earth-element separation.
+      annotation_note: Canonical monomeric lanmodulin (Mex-LanM, UniProtKB:C5B164) from Methylorubrum
+        extorquens AM1 (NCBITaxon:272630, UP000009081) included as the structural and thermodynamic comparator
+        benchmarked against Hansschlegelia quercus Hans-LanM (NCBITaxon:2528245) in Mattocks et al. (2023).
       evidence:
       - source_ref: mattocks_2023
         supports: partial
@@ -278,3 +269,24 @@ causal_graphs:
     - source_ref: mattocks_2023
       supports: support
       explanation: Immobilized Hans-LanM R100K resolves a 50:50 Nd/Dy mixture to >98% purity.
+curation_history:
+- timestamp: '2026-10-11T08:37:57Z'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Created the rare-earth-element-commodities commodity record with explicit official group scope
+    and dated criticality. Official source scopes and evidence limits were retained; independent scientific
+    review is recorded separately.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein examples (Hans-LanM UniProtKB:A0A4V2JDD3, Mex-LanM UniProtKB:C5B164)
+    and causal graph for lanmodulin-based rare-earth separation.
+- timestamp: '2026-10-18T06:58:29Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added explicit annotation_note documenting strain/species or comparator NCBITaxon mapping on
+    ProteinExample entries and normalized causal_graphs key order.
+history_refs:
+- history/records/rare-earth-element-commodities/2026-10-11T083756Z-codex-eb8683.yaml
+- history/records/rare-earth-element-commodities/2026-10-18T042750Z-antigravity-e6fe74.yaml
+- history/records/rare-earth-element-commodities/2026-10-18T065829Z-antigravity-078a23.yaml

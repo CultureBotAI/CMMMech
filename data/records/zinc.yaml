@@ -8,6 +8,12 @@ description: Zinc (Zn), atomic number 30. The zinc-atom identifier grounds this 
 identifiers:
 - id: CHEBI:27363
   label: zinc atom
+criticality:
+- jurisdiction: United States of America
+  list_name: USGS Final List of Critical Minerals
+  edition: 2025; Federal Register 90:50494-50497; published 7 November 2025
+  classification: critical
+  source_ref: usgs_2025
 sources:
 - id: chebi_zinc
   title: ChEBI CHEBI:27363 — zinc atom
@@ -36,12 +42,6 @@ sources:
   title: NCBI Taxonomy 920 — Acidithiobacillus ferrooxidans, species rank; Thiobacillus ferrooxidans basionym.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
   accessed_on: '2026-10-11'
-criticality:
-- jurisdiction: United States of America
-  list_name: USGS Final List of Critical Minerals
-  edition: 2025; Federal Register 90:50494-50497; published 7 November 2025
-  classification: critical
-  source_ref: usgs_2025
 mechanisms:
 - id: ferrooxidans_sphalerite_dissolution
   name: Conditional enhancement of sphalerite-concentrate dissolution
@@ -138,20 +138,6 @@ mechanisms:
       supports: support
       explanation: Hydrolyzes polythionate intermediates to regenerate sulfuric acid acidity during bioleaching
         of Sphalerite (ZnS) concentrate.
-curation_history:
-- timestamp: '2026-10-11T04:20:59Z'
-  curator: codex (GPT-6)
-  action: CREATE
-  summary: Added zinc identity and dated US criticality with controlled FC1 sphalerite-leaching evidence,
-    the primary low-ferrous null result, figure/prose uncertainty, and explicit laboratory recovery limits.
-- timestamp: '2026-10-18T04:27:50Z'
-  curator: antigravity
-  action: EDIT
-  summary: Added verified UniProtKB protein examples (Sqr UniProtKB:B7JBP8, Tth UniProtKB:B7J3C9) and
-    causal graph for Acidithiobacillus ferrooxidans sphalerite dissolution.
-history_refs:
-- history/records/zinc/2026-10-11T042052Z-codex-227643.yaml
-- history/records/zinc/2026-10-18T042750Z-antigravity-f3cace.yaml
 causal_graphs:
 - id: ferrooxidans_sphalerite_zinc_dissolution_graph
   name: Acidithiobacillus ferrooxidans oxidative and acidic dissolution of sphalerite concentrate
@@ -287,3 +273,17 @@ causal_graphs:
     - source_ref: fowler_crundwell_1999
       supports: support
       explanation: Bioleaching mobilizes Dissolved Zn(II) in acidic ferric sulfate solution into solution.
+curation_history:
+- timestamp: '2026-10-11T04:20:59Z'
+  curator: codex (GPT-6)
+  action: CREATE
+  summary: Added zinc identity and dated US criticality with controlled FC1 sphalerite-leaching evidence,
+    the primary low-ferrous null result, figure/prose uncertainty, and explicit laboratory recovery limits.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein examples (Sqr UniProtKB:B7JBP8, Tth UniProtKB:B7J3C9) and
+    causal graph for Acidithiobacillus ferrooxidans sphalerite dissolution.
+history_refs:
+- history/records/zinc/2026-10-11T042052Z-codex-227643.yaml
+- history/records/zinc/2026-10-18T042750Z-antigravity-f3cace.yaml

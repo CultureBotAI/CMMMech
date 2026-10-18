@@ -9,6 +9,12 @@ description: Thulium is the element Tm, represented by its neutral-atom identity
 identifiers:
 - id: CHEBI:33380
   label: thulium atom
+criticality:
+- jurisdiction: United States
+  list_name: Final 2025 List of Critical Minerals
+  edition: 2025; Federal Register notice of 7 November 2025
+  classification: critical
+  source_ref: usgs_2025
 sources:
 - id: chebi_thulium
   title: ChEBI CHEBI:33380, thulium atom; neutral Tm entity and lanthanoid relation
@@ -35,12 +41,6 @@ sources:
     a separate identifier for RY1604
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=224308
   accessed_on: '2026-10-11'
-criticality:
-- jurisdiction: United States
-  list_name: Final 2025 List of Critical Minerals
-  edition: 2025; Federal Register notice of 7 November 2025
-  classification: critical
-  source_ref: usgs_2025
 mechanisms:
 - id: bsubtilis_powder_tm_biosorption
   name: Thulium biosorption by boiled and freeze-dried Bacillus subtilis cell powders
@@ -196,26 +196,6 @@ mechanisms:
       supports: support
       explanation: Evaluated in combinatorial lipoteichoic acid synthase mutant strains tested for rare-earth-element
         (Tm3+) biosorption.
-curation_history:
-- timestamp: '2026-10-11T07:54:11Z'
-  curator: Codex (GPT-6; Codex)
-  action: CREATE
-  summary: Added thulium identity and US 2025 designation with inactive bacterial-powder biosorption;
-    preserved mutant, loading, filter-background and elution limits.
-- timestamp: '2026-10-11T08:02:40Z'
-  curator: Codex (GPT-6; Codex)
-  action: EDIT
-  summary: Narrowed LTA causality after independent finding F1 and issue 45; residual adsorption does
-    not establish that LTA is unnecessary when residual LTA is unmeasured.
-- timestamp: '2026-10-18T04:27:50Z'
-  curator: antigravity
-  action: EDIT
-  summary: Added verified UniProtKB protein examples (LtaS2 UniProtKB:O34952, LtaS1 UniProtKB:Q797B3,
-    YqgS UniProtKB:P54496, YvgJ UniProtKB:O32206) and causal graph for Bacillus subtilis 168 thulium biosorption.
-history_refs:
-- history/records/thulium/2026-10-11T075320Z-codex-34a805.yaml
-- history/records/thulium/2026-10-11T080225Z-codex-327926.yaml
-- history/records/thulium/2026-10-18T042750Z-antigravity-1f4273.yaml
 causal_graphs:
 - id: bsubtilis_ltas_thulium_biosorption_graph
   name: Bacillus subtilis 168 lipoteichoic acid synthase (LtaS1/LtaS2/YqgS/YvgJ) cell-wall phosphate biosorption
@@ -389,3 +369,23 @@ causal_graphs:
     - source_ref: moriwaki_accepted_manuscript
       supports: support
       explanation: Batch sorption assays demonstrate rapid, pH-dependent removal of Tm(III) from solution.
+curation_history:
+- timestamp: '2026-10-11T07:54:11Z'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Added thulium identity and US 2025 designation with inactive bacterial-powder biosorption;
+    preserved mutant, loading, filter-background and elution limits.
+- timestamp: '2026-10-11T08:02:40Z'
+  curator: Codex (GPT-6; Codex)
+  action: EDIT
+  summary: Narrowed LTA causality after independent finding F1 and issue 45; residual adsorption does
+    not establish that LTA is unnecessary when residual LTA is unmeasured.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein examples (LtaS2 UniProtKB:O34952, LtaS1 UniProtKB:Q797B3,
+    YqgS UniProtKB:P54496, YvgJ UniProtKB:O32206) and causal graph for Bacillus subtilis 168 thulium biosorption.
+history_refs:
+- history/records/thulium/2026-10-11T075320Z-codex-34a805.yaml
+- history/records/thulium/2026-10-11T080225Z-codex-327926.yaml
+- history/records/thulium/2026-10-18T042750Z-antigravity-1f4273.yaml

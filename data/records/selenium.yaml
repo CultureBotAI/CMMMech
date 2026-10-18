@@ -7,6 +7,12 @@ description: Selenium (Se), chemical element with atomic number 34. The experime
 identifiers:
 - id: CHEBI:27568
   label: selenium atom
+criticality:
+- jurisdiction: Australia
+  list_name: Department of Industry, Science and Resources Critical Minerals List
+  edition: 20 February 2024 revision
+  classification: critical
+  source_ref: australia_2024
 sources:
 - id: chebi_selenium
   title: ChEBI:27568 - selenium atom
@@ -38,12 +44,6 @@ sources:
   title: NCBI Taxonomy 211586 - Shewanella oneidensis MR-1, no-rank strain entry
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586&mode=Info
   accessed_on: '2026-10-11'
-criticality:
-- jurisdiction: Australia
-  list_name: Department of Industry, Science and Resources Critical Minerals List
-  edition: 20 February 2024 revision
-  classification: critical
-  source_ref: australia_2024
 mechanisms:
 - id: mr1_selenite_reduction
   name: Non-growing MR-1 selenite reduction with conditional FccA and CymA involvement
@@ -170,21 +170,6 @@ mechanisms:
       supports: partial
       explanation: Evaluated alongside FccA and CymA to distinguish periplasmic FccA-dependent selenite
         reduction from outer-membrane MtrCAB pathways.
-curation_history:
-- timestamp: '2026-10-11T04:38:08Z'
-  curator: Codex (GPT-6; Codex)
-  action: CREATE
-  summary: Created selenium identity, Australia's dated designation and laboratory MR-1 transformation
-    evidence; retained conditional mutant effects, localization differences, assay and supplementary-rendering
-    limits.
-- timestamp: '2026-10-18T04:27:50Z'
-  curator: antigravity
-  action: EDIT
-  summary: Added verified UniProtKB protein examples (FccA UniProtKB:P83223, CymA UniProtKB:Q8E8S0, MtrC
-    UniProtKB:Q8EG34) and causal graph for Shewanella oneidensis MR-1 selenite reduction.
-history_refs:
-- history/records/selenium/2026-10-11T043727Z-codex-226369.yaml
-- history/records/selenium/2026-10-18T042750Z-antigravity-efd432.yaml
 causal_graphs:
 - id: mr1_fcca_cyma_selenite_reduction_graph
   name: Shewanella oneidensis MR-1 CymA-FccA periplasmic selenite reduction pathway
@@ -343,3 +328,18 @@ causal_graphs:
     - source_ref: li_2014
       supports: support
       explanation: Selenite depletion is accompanied by formation of red Se(0) nanoparticles.
+curation_history:
+- timestamp: '2026-10-11T04:38:08Z'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Created selenium identity, Australia's dated designation and laboratory MR-1 transformation
+    evidence; retained conditional mutant effects, localization differences, assay and supplementary-rendering
+    limits.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein examples (FccA UniProtKB:P83223, CymA UniProtKB:Q8E8S0, MtrC
+    UniProtKB:Q8EG34) and causal graph for Shewanella oneidensis MR-1 selenite reduction.
+history_refs:
+- history/records/selenium/2026-10-11T043727Z-codex-226369.yaml
+- history/records/selenium/2026-10-18T042750Z-antigravity-efd432.yaml

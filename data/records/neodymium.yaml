@@ -9,6 +9,23 @@ description: The element Nd. The identifier grounds the element, not an Nd(III) 
 identifiers:
 - id: CHEBI:33372
   label: neodymium atom
+criticality:
+- jurisdiction: United States of America
+  list_name: USGS Final List of Critical Minerals
+  edition: 2022; Federal Register 87:10381-10382
+  classification: critical
+  source_ref: usgs2022
+- jurisdiction: United States of America
+  list_name: USGS Final List of Critical Minerals
+  edition: 2025; Federal Register 90:50494-50497
+  classification: critical
+  source_ref: usgs2025
+- jurisdiction: European Union
+  list_name: Regulation (EU) 2024/1252, Annex II, Section 1(r), light rare earth elements (neodymium membership
+    documented in ec2017_groups)
+  edition: 2024 original act; OJ L 2024/1252, 3 May 2024
+  classification: critical
+  source_ref: eu2024
 sources:
 - id: kucuker2017
   title: Kucuker et al. (2017). Biosorption of neodymium on Chlorella vulgaris in aqueous solution obtained
@@ -62,23 +79,6 @@ sources:
     only.
   url: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:52017DC0490
   accessed_on: '2026-10-09'
-criticality:
-- jurisdiction: United States of America
-  list_name: USGS Final List of Critical Minerals
-  edition: 2022; Federal Register 87:10381-10382
-  classification: critical
-  source_ref: usgs2022
-- jurisdiction: United States of America
-  list_name: USGS Final List of Critical Minerals
-  edition: 2025; Federal Register 90:50494-50497
-  classification: critical
-  source_ref: usgs2025
-- jurisdiction: European Union
-  list_name: Regulation (EU) 2024/1252, Annex II, Section 1(r), light rare earth elements (neodymium membership
-    documented in ec2017_groups)
-  edition: 2024 original act; OJ L 2024/1252, 3 May 2024
-  classification: critical
-  source_ref: eu2024
 mechanisms:
 - id: chlorella_dried_biomass_sorption
   name: Nd biosorption by dried Chlorella vulgaris biomass
@@ -207,34 +207,6 @@ mechanisms:
       supports: support
       explanation: Biosynthesis of the pyrroloquinoline quinone (PQQ) cofactor is required for periplasmic
         quinoprotein dehydrogenase activity during acidogenic biolixiviant production.
-curation_history:
-- timestamp: '2026-10-08T02:36:05Z'
-  curator: Codex (GPT-6; Codex)
-  action: provenance_adoption
-  summary: Appended canonical history reference and this present adoption event. Earlier scientific review
-    artifacts remain linked in the sidecar; scientific content is unchanged and was not reassessed.
-- timestamp: '2026-10-09T04:47:52Z'
-  curator: Codex (GPT-6; Codex)
-  action: evidence_curation
-  summary: Added Gluconobacter bioleaching of synthetic mixed-phase Nd-phosphate and the US2025 criticality
-    entry; preserved US2022 and existing biosorption evidence. Checked primary methods, Supplementary
-    Data 4 and identifiers; independent scientific review is recorded separately.
-- timestamp: '2026-10-09T05:51:27Z'
-  curator: Codex (GPT-6; Codex)
-  action: criticality_extension
-  summary: Added the historical EU 2024 Annex II designation through its named light rare earth elements
-    entry, with source and mapping scope documented. Preserved existing scientific evidence; independent
-    review is separate.
-- timestamp: '2026-10-18T04:27:50Z'
-  curator: antigravity
-  action: EDIT
-  summary: Added verified UniProtKB protein examples (Gdh UniProtKB:P27175, PqqC UniProtKB:Q9L3B2) and
-    causal graph for Gluconobacter oxydans neodymium phosphate bioleaching.
-history_refs:
-- history/records/neodymium/2026-10-08T023605Z-codex-131e84.yaml
-- history/records/neodymium/2026-10-09T044752Z-codex-7f72ec.yaml
-- history/records/neodymium/2026-10-09T055127Z-codex-172ef4.yaml
-- history/records/neodymium/2026-10-18T042750Z-antigravity-a1a8f5.yaml
 causal_graphs:
 - id: gluconobacter_neodymium_phosphate_bioleaching_graph
   name: Gluconobacter oxydans biolixiviant release of neodymium from synthetic NdPO4
@@ -372,3 +344,31 @@ causal_graphs:
     - source_ref: marecos2025
       supports: support
       explanation: Measured aqueous metal release above sterile-medium controls confirms substrate leaching.
+curation_history:
+- timestamp: '2026-10-08T02:36:05Z'
+  curator: Codex (GPT-6; Codex)
+  action: provenance_adoption
+  summary: Appended canonical history reference and this present adoption event. Earlier scientific review
+    artifacts remain linked in the sidecar; scientific content is unchanged and was not reassessed.
+- timestamp: '2026-10-09T04:47:52Z'
+  curator: Codex (GPT-6; Codex)
+  action: evidence_curation
+  summary: Added Gluconobacter bioleaching of synthetic mixed-phase Nd-phosphate and the US2025 criticality
+    entry; preserved US2022 and existing biosorption evidence. Checked primary methods, Supplementary
+    Data 4 and identifiers; independent scientific review is recorded separately.
+- timestamp: '2026-10-09T05:51:27Z'
+  curator: Codex (GPT-6; Codex)
+  action: criticality_extension
+  summary: Added the historical EU 2024 Annex II designation through its named light rare earth elements
+    entry, with source and mapping scope documented. Preserved existing scientific evidence; independent
+    review is separate.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein examples (Gdh UniProtKB:P27175, PqqC UniProtKB:Q9L3B2) and
+    causal graph for Gluconobacter oxydans neodymium phosphate bioleaching.
+history_refs:
+- history/records/neodymium/2026-10-08T023605Z-codex-131e84.yaml
+- history/records/neodymium/2026-10-09T044752Z-codex-7f72ec.yaml
+- history/records/neodymium/2026-10-09T055127Z-codex-172ef4.yaml
+- history/records/neodymium/2026-10-18T042750Z-antigravity-a1a8f5.yaml

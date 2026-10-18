@@ -8,6 +8,12 @@ description: The element Pr, distinct from dissolved Pr(III), its salts and oxid
 identifiers:
 - id: CHEBI:49828
   label: praseodymium atom
+criticality:
+- jurisdiction: United States of America
+  list_name: USGS Final List of Critical Minerals
+  edition: 2025; Federal Register 90:50494-50497, 7 November 2025
+  classification: critical
+  source_ref: usgs2025
 sources:
 - id: chebi_praseodymium
   title: ChEBI CHEBI:49828 - praseodymium atom; formula Pr, net charge 0
@@ -29,12 +35,6 @@ sources:
     protein-origin organism.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1502776
   accessed_on: '2026-10-11'
-criticality:
-- jurisdiction: United States of America
-  list_name: USGS Final List of Critical Minerals
-  edition: 2025; Federal Register 90:50494-50497, 7 November 2025
-  classification: critical
-  source_ref: usgs2025
 mechanisms:
 - id: melba_lanmodulin_praseodymium_lanthanum_separation
   name: Praseodymium separation from lanthanum using immobilized Melba-LanM
@@ -103,22 +103,6 @@ mechanisms:
       supports: partial
       explanation: Benchmark lanmodulin comparator (o-621) tested alongside Melba-LanM (o-36) in automated
         high-throughput screening and column separation of Pr(III)/La(III).
-curation_history:
-- timestamp: '2026-10-11T06:27:14Z'
-  curator: Codex (GPT-6; Codex)
-  action: CREATE
-  summary: Added verified elemental identity, dated US2025 criticality and qualified cell-free protein
-    separation evidence after primary-source inspection; retained experimental and source limitations.
-    Independent scientific review is recorded separately.
-- timestamp: '2026-10-18T04:27:50Z'
-  curator: antigravity
-  action: EDIT
-  summary: Added verified UniProtKB comparator protein example (Mex-LanM UniProtKB:C5B164) and causal
-    graph (with explicit UNGROUNDED node for unaccessioned Methylobacterium sp. 13MFTsu3.1M2 Melba-LanM
-    o-36) for Pr/La separation.
-history_refs:
-- history/records/praseodymium/2026-10-11T062656Z-codex-5084e0.yaml
-- history/records/praseodymium/2026-10-18T042750Z-antigravity-860186.yaml
 causal_graphs:
 - id: melba_mex_lanm_pr_la_separation_graph
   name: Melba-LanM (o-36) and comparator Mex-LanM (o-621) column separation of Pr(III) and La(III)
@@ -210,3 +194,19 @@ causal_graphs:
     - source_ref: diep2026
       supports: support
       explanation: Single-column pH-step elution separates Pr(III) and La(III) into high-purity fractions.
+curation_history:
+- timestamp: '2026-10-11T06:27:14Z'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Added verified elemental identity, dated US2025 criticality and qualified cell-free protein
+    separation evidence after primary-source inspection; retained experimental and source limitations.
+    Independent scientific review is recorded separately.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB comparator protein example (Mex-LanM UniProtKB:C5B164) and causal
+    graph (with explicit UNGROUNDED node for unaccessioned Methylobacterium sp. 13MFTsu3.1M2 Melba-LanM
+    o-36) for Pr/La separation.
+history_refs:
+- history/records/praseodymium/2026-10-11T062656Z-codex-5084e0.yaml
+- history/records/praseodymium/2026-10-18T042750Z-antigravity-860186.yaml

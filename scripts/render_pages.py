@@ -74,7 +74,7 @@ PREFIX_URL = {
     "UniProtKB": "https://www.uniprot.org/uniprotkb/",
     "InterPro": "https://www.ebi.ac.uk/interpro/entry/InterPro/",
     "Pfam": "https://www.ebi.ac.uk/interpro/entry/pfam/",
-    "NCBIfam": "https://www.ncbi.nlm.nih.gov/genome/annotation_prok/evidence/",
+    "NCBIfam": "https://www.ebi.ac.uk/interpro/entry/ncbifam/",
     "ComplexPortal": "https://www.ebi.ac.uk/complexportal/complex/",
     "EC": "https://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=",
 }
@@ -95,6 +95,25 @@ def load_records() -> list[tuple[Path, dict[str, Any]]]:
         if isinstance(doc, dict) and doc.get("name"):
             records.append((path, doc))
     return records
+
+
+def _collect_protein_example_tokens(pe: dict[str, Any], out: list[str]) -> None:
+    out.extend(
+        filter(
+            None,
+            [
+                pe.get("uniprot_accession"),
+                pe.get("entry_name"),
+                pe.get("protein_name"),
+                pe.get("gene_symbol"),
+                pe.get("complex_portal_id"),
+            ],
+        )
+    )
+    for field in ("ec_numbers", "interpro_ids", "pfam_ids", "ncbifam_ids"):
+        out.extend(pe.get(field) or [])
+    for go in pe.get("go_terms") or []:
+        out.extend(filter(None, [go.get("id"), go.get("label")]))
 
 
 def prepare_record_data(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
@@ -130,7 +149,7 @@ def prepare_record_data(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
 
     organisms = []
     seen_orgs = set()
-    protein_tokens = []
+    protein_tokens: list[str] = []
     for m in mechanisms:
         for org in m.get("organisms") or []:
             oid = org.get("id", "")
@@ -142,34 +161,14 @@ def prepare_record_data(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
                     "url": curie_url(oid),
                 })
         for pe in m.get("protein_examples") or []:
-            protein_tokens.extend(
-                filter(
-                    None,
-                    [
-                        pe.get("uniprot_accession"),
-                        pe.get("entry_name"),
-                        pe.get("protein_name"),
-                        pe.get("gene_symbol"),
-                    ],
-                )
-            )
+            _collect_protein_example_tokens(pe, protein_tokens)
 
     causal_graphs = doc.get("causal_graphs") or []
     for cg in causal_graphs:
         for node in cg.get("nodes") or []:
             protein_tokens.extend(filter(None, [node.get("label"), node.get("gene_symbol")]))
             for pe in node.get("protein_examples") or []:
-                protein_tokens.extend(
-                    filter(
-                        None,
-                        [
-                            pe.get("uniprot_accession"),
-                            pe.get("entry_name"),
-                            pe.get("protein_name"),
-                            pe.get("gene_symbol"),
-                        ],
-                    )
-                )
+                _collect_protein_example_tokens(pe, protein_tokens)
 
     # Search text for client-side filter
     search_parts = [

@@ -8,6 +8,12 @@ description: Uranium (U), represented here as an element distinct from the disso
 identifiers:
 - id: CHEBI:27214
   label: uranium atom
+criticality:
+- jurisdiction: United States of America
+  list_name: U.S. Department of the Interior Final List of Critical Minerals
+  edition: 2025 (published November 7, 2025; 90 FR 50494-50497)
+  classification: critical
+  source_ref: usgs_2025
 sources:
 - id: kane_2026_bes
   title: Kane, Selvage, Ciechanowicz and Campbell (2026). Data acquired in experiments on bioelectrochemical
@@ -28,12 +34,6 @@ sources:
   title: 'NCBI Taxonomy: Shewanella oneidensis MR-1 (Taxonomy ID 211586)'
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586
   accessed_on: '2026-10-09'
-criticality:
-- jurisdiction: United States of America
-  list_name: U.S. Department of the Interior Final List of Critical Minerals
-  edition: 2025 (published November 7, 2025; 90 FR 50494-50497)
-  classification: critical
-  source_ref: usgs_2025
 mechanisms:
 - id: oneidensis_bes_uranium_separation
   name: Uranium separation in an MR-1-inoculated electrochemical system
@@ -250,26 +250,6 @@ mechanisms:
       supports: support
       explanation: Routes respiratory electrons from the inner-membrane menaquinone pool to periplasmic
         and outer-membrane multiheme cytochromes during Dissolved U(VI) in synthetic/mine-water feed reduction.
-curation_history:
-- timestamp: '2026-10-09T04:48:34Z'
-  curator: Codex (GPT-6; Codex)
-  action: create_record
-  summary: Curated element identity, US 2025 designation and laboratory BES separation observations with
-    abiotic and analytical limitations.
-- timestamp: '2026-10-09T05:49:58Z'
-  curator: Codex (GPT-6; Codex)
-  action: curate_source_observations
-  summary: Added four exact T3 uranium concentration cells with raw values, censored-result handling and
-    separate analysis/sample provenance. Preserved prior claims and histories; no recovery yield was inferred.
-- timestamp: '2026-10-18T04:27:50Z'
-  curator: antigravity
-  action: EDIT
-  summary: Added verified UniProtKB protein examples (MtrC UniProtKB:Q8EG34, OmcA UniProtKB:Q8EG33, CymA
-    UniProtKB:Q8E8S0) and causal graph for Shewanella oneidensis MR-1 bioelectrochemical uranium separation.
-history_refs:
-- history/records/uranium/2026-10-09T044834Z-codex-003092.yaml
-- history/records/uranium/2026-10-09T054958Z-codex-6ae682.yaml
-- history/records/uranium/2026-10-18T042750Z-antigravity-3a1b87.yaml
 causal_graphs:
 - id: mr1_bes_uranium_reduction_graph
   name: Shewanella oneidensis MR-1 extracellular electron transfer in bioelectrochemical uranium separation
@@ -436,3 +416,23 @@ causal_graphs:
       supports: support
       explanation: Extracellular reduction converts Dissolved U(VI) in synthetic/mine-water feed into
         Electrode/cell-associated reduced uranium deposit.
+curation_history:
+- timestamp: '2026-10-09T04:48:34Z'
+  curator: Codex (GPT-6; Codex)
+  action: create_record
+  summary: Curated element identity, US 2025 designation and laboratory BES separation observations with
+    abiotic and analytical limitations.
+- timestamp: '2026-10-09T05:49:58Z'
+  curator: Codex (GPT-6; Codex)
+  action: curate_source_observations
+  summary: Added four exact T3 uranium concentration cells with raw values, censored-result handling and
+    separate analysis/sample provenance. Preserved prior claims and histories; no recovery yield was inferred.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein examples (MtrC UniProtKB:Q8EG34, OmcA UniProtKB:Q8EG33, CymA
+    UniProtKB:Q8E8S0) and causal graph for Shewanella oneidensis MR-1 bioelectrochemical uranium separation.
+history_refs:
+- history/records/uranium/2026-10-09T044834Z-codex-003092.yaml
+- history/records/uranium/2026-10-09T054958Z-codex-6ae682.yaml
+- history/records/uranium/2026-10-18T042750Z-antigravity-3a1b87.yaml

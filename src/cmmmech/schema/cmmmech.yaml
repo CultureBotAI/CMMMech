@@ -324,6 +324,7 @@ classes:
         range: NonEmptyText
       protein_grounding_status:
         range: ProteinGroundingStatusEnum
+        required: true
       protein_examples:
         range: ProteinExample
         multivalued: true
@@ -338,7 +339,7 @@ classes:
         range: SourceKey
         required: true
       predicate:
-        range: NonEmptyText
+        range: CausalPredicateEnum
         required: true
       relationship:
         range: NonEmptyText
@@ -494,4 +495,26 @@ enums:
         description: Manually annotated and reviewed UniProtKB/Swiss-Prot entry.
       TREMBL:
         description: Computationally analyzed UniProtKB/TrEMBL entry.
+  CausalPredicateEnum:
+    permissible_values:
+      acts_on:
+      assembles_into:
+      binds:
+      catalyzes:
+      chelates:
+      displays_on_surface:
+      drives:
+      incorporates_into:
+      inhibits:
+      modulates:
+      negatively_regulates:
+      nucleates:
+      oxidizes:
+      positively_regulates:
+      produces:
+      provides_electrons_to:
+      reduces:
+      supplies_substrate_for:
+      transforms_into:
+      transports:
 

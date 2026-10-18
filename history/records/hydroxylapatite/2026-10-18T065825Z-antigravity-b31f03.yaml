@@ -1,0 +1,31 @@
+history_version: 1
+target:
+  kind: record
+  slug: hydroxylapatite
+  path: data/records/hydroxylapatite.yaml
+session:
+  id: 2026-10-18T065825Z-antigravity-b31f03
+  timestamp: '2026-10-18T06:58:25Z'
+  actors:
+  - name: antigravity
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Added explicit annotation_note documenting strain/species or comparator NCBITaxon
+    mapping on ProteinExample entries and normalized causal_graphs key order.
+  details: 'Added annotation_note to mechanism-level and causal-node ProteinExample entries
+    where the UniProt reference proteome NCBITaxon differs from the mechanism organism NCBITaxon
+    (Issue #507, PR #503), and placed causal_graphs before curation_history.'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/507
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/503
