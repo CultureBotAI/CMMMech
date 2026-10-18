@@ -1,0 +1,26 @@
+history_version: 1
+target:
+  kind: record
+  slug: manganese
+  path: data/records/manganese.yaml
+session:
+  id: 2026-10-18T042750Z-antigravity-6d5fac
+  timestamp: '2026-10-18T04:27:50Z'
+  actors:
+  - name: antigravity
+    type: ai_agent
+    model: Gemini
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Added verified UniProtKB protein examples (MnxG UniProtKB:B0KQT1, McoA UniProtKB:B0KSN7) and
+    causal graph (including explicit UNGROUNDED annotation for obsolete PputGB1_3353 / B0KJL7 MopA) for
+    Pseudomonas putida GB-1 manganese oxidation.
+  details: Added verified UniProtKB protein_examples to mechanism 'gb1_manganese_oxidation' and created
+    causal graph 'gb1_mnxg_mcoa_mopa_manganese_oxidation_graph' with grounded GENE_OR_PROTEIN nodes.
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs

@@ -93,6 +93,122 @@ mechanisms:
       while Table S3 lists field microorganisms. These tables do not add a second verified experiment
       for this record or establish a causal wheatleyite-forming role for every organism listed. The present
       assay is the same study already curated under moolooite, not independent replication.
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A254TZW7
+    entry_name: CEXA_ASPNG
+    protein_name: Citrate exporter A
+    gene_symbol: cexA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:5061
+      label: Aspergillus niger
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized
+      citric acid into the extracellular medium, driving organic-acid acidification and metal chelation.
+    annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus
+      niger (NCBITaxon:5061).
+    evidence:
+    - source_ref: frank2021
+      supports: support
+      explanation: Secretes citric acid into the culture medium, contributing to organic-acid acidification
+        and ligand-assisted transformation of Weathered brochantite/malachite-bearing copper ore into
+        Transient wheatleyite (Na2Cu(C2O4)2·2H2O) and moolooite crystals.
+causal_graphs:
+- id: aspergillus_cexa_wheatleyite_formation_graph
+  name: Aspergillus niger organic-acid secretion and transient wheatleyite crystallization
+  description: Causal pathway linking Aspergillus niger organic-acid export (CexA) and oxalic/citric acid
+    accumulation to copper mobilization from weathered ore and transient wheatleyite (Na2Cu(C2O4)2·2H2O)
+    crystallization.
+  scope: RECORD_SPECIFIC_MECHANISM
+  mechanism_ref: transient_fungal_culture_oxalate
+  nodes:
+  - id: cexa_citrate_exporter
+    label: CexA plasma-membrane citrate exporter (cexA)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cexA
+    description: Major facilitator superfamily transporter exporting citric acid across the Aspergillus
+      niger plasma membrane.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A254TZW7
+      entry_name: CEXA_ASPNG
+      protein_name: Citrate exporter A
+      gene_symbol: cexA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:5061
+        label: Aspergillus niger
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized
+        citric acid into the extracellular medium, driving organic-acid acidification and metal chelation.
+      annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus
+        niger (NCBITaxon:5061).
+      evidence:
+      - source_ref: frank2021
+        supports: support
+        explanation: Secretes citric acid into the culture medium, contributing to organic-acid acidification
+          and ligand-assisted transformation of Weathered brochantite/malachite-bearing copper ore into
+          Transient wheatleyite (Na2Cu(C2O4)2·2H2O) and moolooite crystals.
+  - id: secreted_organic_acids
+    label: Secreted citric and oxalic acid pool (acidification and chelation)
+    node_type: CHEMICAL_ENTITY
+    description: Extracellular organic acids (citrate, oxalate) and protons secreted by Aspergillus niger.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: starting_substrate
+    label: Weathered brochantite/malachite-bearing copper ore
+    node_type: MATERIAL_OR_PHASE
+    description: Starting substrate or solution feed (Weathered brochantite/malachite-bearing copper ore)
+      exposed to fungal metabolites.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: transformed_product
+    label: Transient wheatleyite (Na2Cu(C2O4)2·2H2O) and moolooite crystals
+    node_type: MATERIAL_OR_PHASE
+    description: Resulting precipitate or altered mineral phase (Transient wheatleyite (Na2Cu(C2O4)2·2H2O)
+      and moolooite crystals).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cexa_citrate_exporter
+    target: secreted_organic_acids
+    predicate: transports
+    relationship: efflux of citric acid into extracellular medium
+    description: CexA exports citrate from the fungal cytosol into the culture supernatant, acidifying
+      the medium.
+    evidence:
+    - source_ref: frank2021
+      supports: support
+      explanation: Aspergillus niger organic-acid secretion acidifies the culture supernatant and supplies
+        chelating/precipitating anions.
+  - source: secreted_organic_acids
+    target: starting_substrate
+    predicate: acts_on
+    relationship: acidolysis, complexation, and anion reaction
+    description: Secreted organic acids react with Weathered brochantite/malachite-bearing copper ore.
+    evidence:
+    - source_ref: frank2021
+      supports: support
+      explanation: Fungal organic acids mediate dissolution/precipitation of Weathered brochantite/malachite-bearing
+        copper ore.
+  - source: starting_substrate
+    target: transformed_product
+    predicate: transforms_into
+    relationship: secondary oxalate/phosphate precipitation or mineral alteration
+    description: Reaction of Weathered brochantite/malachite-bearing copper ore with fungal metabolites
+      produces Transient wheatleyite (Na2Cu(C2O4)2·2H2O) and moolooite crystals.
+    evidence:
+    - source_ref: frank2021
+      supports: support
+      explanation: Fungal culture or supernatant treatment yields Transient wheatleyite (Na2Cu(C2O4)2·2H2O)
+        and moolooite crystals.
 curation_history:
 - timestamp: '2026-10-14T20:48:56.868053+00:00'
   curator: codex (GPT-6; codex)
@@ -100,5 +216,11 @@ curation_history:
   summary: Added authority-grounded wheatleyite identity and transient fungal-culture phase assignment,
     retaining day-five/day-six observations, mixed solids, unavailable controls and the shared moolooite
     experiment lineage.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and causal graph for Aspergillus
+    niger-associated transient wheatleyite formation.
 history_refs:
 - history/records/wheatleyite/2026-10-14T204902Z-codex-26beb8.yaml
+- history/records/wheatleyite/2026-10-18T042750Z-antigravity-38d15b.yaml

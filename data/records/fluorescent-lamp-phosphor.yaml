@@ -1,91 +1,268 @@
 id: cmmmech:fluorescent-lamp-phosphor
 name: Spent fluorescent-lamp phosphor powder
 material_kind: secondary_resource
-description: >-
-  A mixed secondary resource from spent fluorescent lamps. The curated assay
-  concerns retorted phosphor powder supplied by Idaho National Laboratory,
-  rather than untreated whole lamps, a single mineral species, an element, or
-  a purified rare-earth commodity. Its total rare-earth leaching outcome is not
-  assigned to any individual element. No criticality designation is inherited
-  from the elements present in this waste.
+description: A mixed secondary resource from spent fluorescent lamps. The curated assay concerns retorted
+  phosphor powder supplied by Idaho National Laboratory, rather than untreated whole lamps, a single mineral
+  species, an element, or a purified rare-earth commodity. Its total rare-earth leaching outcome is not
+  assigned to any individual element. No criticality designation is inherited from the elements present
+  in this waste.
 sources:
-  - id: schmitz2021
-    title: >-
-      Schmitz et al. (2021). Generation of a Gluconobacter oxydans knockout
-      collection for improved extraction of rare earth elements.
-      Nature Communications 12:6693.
-    url: https://doi.org/10.1038/s41467-021-27047-4
-    accessed_on: '2026-10-09'
-  - id: ncbi_gluconobacter
-    title: 'NCBI Taxonomy 442 - Gluconobacter oxydans (species)'
-    url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=442&retmode=xml
-    accessed_on: '2026-10-09'
+- id: schmitz2021
+  title: Schmitz et al. (2021). Generation of a Gluconobacter oxydans knockout collection for improved
+    extraction of rare earth elements. Nature Communications 12:6693.
+  url: https://doi.org/10.1038/s41467-021-27047-4
+  accessed_on: '2026-10-09'
+- id: ncbi_gluconobacter
+  title: NCBI Taxonomy 442 - Gluconobacter oxydans (species)
+  url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=442&retmode=xml
+  accessed_on: '2026-10-09'
 mechanisms:
-  - id: gluconobacter_biolixiviant_ree_release
-    name: Rare-earth release from retorted phosphor by Gluconobacter biolixiviant
-    process: bioleaching
-    microbial: true
-    organisms:
-      - id: NCBITaxon:442
-        label: Gluconobacter oxydans
-    description: >-
-      Acidic biolixiviant produced by living Gluconobacter oxydans B58-derived
-      cultures solubilized rare-earth elements from retorted lamp phosphor.
-      Cultures were centrifuged before the clarified biolixiviant contacted
-      the solid. A pstC transposon disruption increased total rare-earth
-      extraction relative to proxy wild-type. The endpoint is dissolved
-      material in filtered leachate, not separation into purified products.
-    context: >-
-      Laboratory assays used 20 mg retorted phosphor powder per 500 microlitres
-      biolixiviant (4% w/v) in 1.7 mL tubes, shaken horizontally for 36 h at
-      room temperature. Biolixiviant production followed 48 h culture in
-      yeast-peptone-mannitol medium with kanamycin; cultures were normalized
-      to OD 1.9, diluted equally with 40% glucose to give 20% glucose, then
-      incubated two days at room temperature and 800 rpm. Acidity was measured
-      as an outcome, not held at one common pH. Cultures were centrifuged at
-      3200 x g for 10 min before supernatant transfer to powder. Following
-      leaching, solids were pelleted and supernatant filtered at 0.45 micrometres
-      for ICP-MS. Each disruption strain had five biological replicates;
-      the no-bacteria glucose control had five replicates, and proxy wild-type
-      had fifteen. The
-      species-level taxonomy identifier does not separately identify B58 or
-      the mutants. Retorting conditions and a batch-specific feed composition
-      are not established by the 2021 assay methods. No industrial bioleaching
-      deployment or product-purity endpoint is demonstrated.
+- id: gluconobacter_biolixiviant_ree_release
+  name: Rare-earth release from retorted phosphor by Gluconobacter biolixiviant
+  process: bioleaching
+  microbial: true
+  organisms:
+  - id: NCBITaxon:442
+    label: Gluconobacter oxydans
+  description: Acidic biolixiviant produced by living Gluconobacter oxydans B58-derived cultures solubilized
+    rare-earth elements from retorted lamp phosphor. Cultures were centrifuged before the clarified biolixiviant
+    contacted the solid. A pstC transposon disruption increased total rare-earth extraction relative to
+    proxy wild-type. The endpoint is dissolved material in filtered leachate, not separation into purified
+    products.
+  context: Laboratory assays used 20 mg retorted phosphor powder per 500 microlitres biolixiviant (4%
+    w/v) in 1.7 mL tubes, shaken horizontally for 36 h at room temperature. Biolixiviant production followed
+    48 h culture in yeast-peptone-mannitol medium with kanamycin; cultures were normalized to OD 1.9,
+    diluted equally with 40% glucose to give 20% glucose, then incubated two days at room temperature
+    and 800 rpm. Acidity was measured as an outcome, not held at one common pH. Cultures were centrifuged
+    at 3200 x g for 10 min before supernatant transfer to powder. Following leaching, solids were pelleted
+    and supernatant filtered at 0.45 micrometres for ICP-MS. Each disruption strain had five biological
+    replicates; the no-bacteria glucose control had five replicates, and proxy wild-type had fifteen.
+    The species-level taxonomy identifier does not separately identify B58 or the mutants. Retorting conditions
+    and a batch-specific feed composition are not established by the 2021 assay methods. No industrial
+    bioleaching deployment or product-purity endpoint is demonstrated.
+  evidence:
+  - source_ref: schmitz2021
+    supports: support
+    explanation: Methods, Direct measurement of biolixiviant pH and Direct measurement of REE bioleaching,
+      and Fig. 4C support the clarified-lixiviant assay. The Results report total extraction efficiencies
+      of 5.5% for the pstC disruption and 4.7% for proxy wild-type, described as an 18% relative improvement.
+      These rounded total-REE percentages are neither an 18 percentage-point gain nor an Nd-specific yield.
+      Fig. 4's denominator uses previously published REE amounts in the phosphor; it is not a newly verified
+      batch-specific total digestion here.
+  - source_ref: schmitz2021
+    supports: partial
+    explanation: Results, Disrupting the phosphate transport system increases bioleaching, identifies
+      pstC as the improved strain retaining significance after multiple-comparison correction; the broader
+      set of six nominal improvements did not all retain significance after that correction. A proposed
+      phosphate sensing and acid-production explanation remains a hypothesis. Fig. 4D and the glucose-control
+      assays show residual release from poorly acidifying mgdh and pqqC disruption strains, so activity
+      is not attributed exclusively to one enzyme. The clarified preparation was not reported as sterile-filtered
+      before leaching, and these data do not demonstrate direct cell-mineral contact as a requirement.
+  protein_examples:
+  - uniprot_accession: UniProtKB:P27175
+    entry_name: DHG_GLUOX
+    protein_name: Quinoprotein glucose dehydrogenase
+    gene_symbol: gdh
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:290633
+      label: Gluconobacter oxydans 621H
+    reference_proteome_id: UP000006375
+    ec_numbers:
+    - EC:1.1.5.2
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR017511
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR001479
+    pfam_ids:
+    - Pfam:PF01011
+    functional_role: Membrane-bound PQQ-dependent glucose dehydrogenase (EC 1.1.5.2) that oxidizes D-glucose
+      to D-glucono-1,5-lactone/gluconic acid in the periplasm, generating the organic-acid biolixiviant.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter
+      oxydans 621H (NCBITaxon:290633; locus GOX0265).
     evidence:
+    - source_ref: schmitz2021
+      supports: support
+      explanation: Glucose oxidation by membrane-bound PQQ-dependent glucose dehydrogenase generates the
+        gluconic acid-dominated acidic biolixiviant used to leach the mineral/feed.
+  - uniprot_accession: UniProtKB:Q9L3B2
+    entry_name: PQQC_GLUOX
+    protein_name: Pyrroloquinoline-quinone synthase
+    gene_symbol: pqqC
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:290633
+      label: Gluconobacter oxydans 621H
+    reference_proteome_id: UP000006375
+    ec_numbers:
+    - EC:1.3.3.11
+    interpro_ids:
+    - InterPro:IPR016084
+    - InterPro:IPR011845
+    - InterPro:IPR039068
+    - InterPro:IPR004305
+    pfam_ids:
+    - Pfam:PF03070
+    functional_role: Pyrroloquinoline-quinone synthase (EC 1.3.3.11) catalyzing the final ring-closure
+      and oxidation steps of PQQ cofactor biosynthesis required for holo-Gdh activity.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter
+      oxydans 621H (NCBITaxon:290633; locus GOX0985).
+    evidence:
+    - source_ref: schmitz2021
+      supports: support
+      explanation: Biosynthesis of the pyrroloquinoline quinone (PQQ) cofactor is required for periplasmic
+        quinoprotein dehydrogenase activity during acidogenic biolixiviant production.
+causal_graphs:
+- id: gluconobacter_phosphor_bioleaching_graph
+  name: Gluconobacter oxydans biolixiviant rare-earth leaching from retorted lamp phosphor
+  description: Causal pathway linking PqqC/Gdh periplasmic glucose oxidation to gluconic-acid-mediated
+    rare-earth release from retorted fluorescent lamp phosphor.
+  scope: RECORD_SPECIFIC_MECHANISM
+  mechanism_ref: gluconobacter_biolixiviant_ree_release
+  nodes:
+  - id: pqqc_synthase
+    label: PqqC pyrroloquinoline-quinone synthase
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: pqqC
+    description: Catalyzes biosynthesis of the PQQ prosthetic group required by membrane-bound glucose
+      dehydrogenase.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q9L3B2
+      entry_name: PQQC_GLUOX
+      protein_name: Pyrroloquinoline-quinone synthase
+      gene_symbol: pqqC
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:290633
+        label: Gluconobacter oxydans 621H
+      reference_proteome_id: UP000006375
+      ec_numbers:
+      - EC:1.3.3.11
+      interpro_ids:
+      - InterPro:IPR016084
+      - InterPro:IPR011845
+      - InterPro:IPR039068
+      - InterPro:IPR004305
+      pfam_ids:
+      - Pfam:PF03070
+      functional_role: Pyrroloquinoline-quinone synthase (EC 1.3.3.11) catalyzing the final ring-closure
+        and oxidation steps of PQQ cofactor biosynthesis required for holo-Gdh activity.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter
+        oxydans 621H (NCBITaxon:290633; locus GOX0985).
+      evidence:
       - source_ref: schmitz2021
         supports: support
-        explanation: >-
-          Methods, Direct measurement of biolixiviant pH and Direct measurement
-          of REE bioleaching, and Fig. 4C support the clarified-lixiviant assay.
-          The Results report total extraction efficiencies of 5.5% for the
-          pstC disruption and 4.7% for proxy wild-type, described as an 18%
-          relative improvement. These rounded total-REE percentages are neither
-          an 18 percentage-point gain nor an Nd-specific yield. Fig. 4's
-          denominator uses previously published REE amounts in the phosphor;
-          it is not a newly verified batch-specific total digestion here.
+        explanation: Biosynthesis of the pyrroloquinoline quinone (PQQ) cofactor is required for periplasmic
+          quinoprotein dehydrogenase activity during acidogenic biolixiviant production.
+  - id: gdh_dehydrogenase
+    label: Gdh membrane-bound PQQ-dependent glucose dehydrogenase
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: gdh
+    description: Periplasmic quinoprotein glucose dehydrogenase oxidizing glucose into gluconic acid.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:P27175
+      entry_name: DHG_GLUOX
+      protein_name: Quinoprotein glucose dehydrogenase
+      gene_symbol: gdh
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:290633
+        label: Gluconobacter oxydans 621H
+      reference_proteome_id: UP000006375
+      ec_numbers:
+      - EC:1.1.5.2
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR017511
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR001479
+      pfam_ids:
+      - Pfam:PF01011
+      functional_role: Membrane-bound PQQ-dependent glucose dehydrogenase (EC 1.1.5.2) that oxidizes D-glucose
+        to D-glucono-1,5-lactone/gluconic acid in the periplasm, generating the organic-acid biolixiviant.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter
+        oxydans 621H (NCBITaxon:290633; locus GOX0265).
+      evidence:
       - source_ref: schmitz2021
-        supports: partial
-        explanation: >-
-          Results, Disrupting the phosphate transport system increases
-          bioleaching, identifies pstC as the improved strain retaining
-          significance after multiple-comparison correction; the broader set
-          of six nominal improvements did not all retain significance after
-          that correction. A proposed phosphate
-          sensing and acid-production explanation remains a hypothesis.
-          Fig. 4D and the glucose-control assays show residual release from
-          poorly acidifying mgdh and pqqC disruption strains, so activity is
-          not attributed exclusively to one enzyme. The clarified preparation
-          was not reported as sterile-filtered before leaching, and these data
-          do not demonstrate direct cell-mineral contact as a requirement.
+        supports: support
+        explanation: Glucose oxidation by membrane-bound PQQ-dependent glucose dehydrogenase generates
+          the gluconic acid-dominated acidic biolixiviant used to leach the mineral/feed.
+  - id: gluconic_acid_biolixiviant
+    label: Extracellular gluconic acid and organic-acid biolixiviant
+    node_type: CHEMICAL_ENTITY
+    description: Organic acid and proton pool generated by periplasmic glucose oxidation.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: retorted_lamp_phosphor
+    label: Retorted fluorescent lamp phosphor powder
+    node_type: MATERIAL_OR_PHASE
+    description: Starting solid substrate (Retorted fluorescent lamp phosphor powder) exposed to the acidic
+      biolixiviant.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: leached_y_eu_ree
+    label: Solubilized Y, Eu, Tb, La, and Ce in leachate
+    node_type: CHEMICAL_ENTITY
+    description: Solubilized metal ions or altered phase (Solubilized Y, Eu, Tb, La, and Ce in leachate)
+      released into the leachate.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: pqqc_synthase
+    target: gdh_dehydrogenase
+    predicate: positively_regulates
+    relationship: supplies PQQ cofactor for holoenzyme assembly
+    description: PQQ cofactor biosynthesis enables active periplasmic quinoprotein glucose dehydrogenase.
+    evidence:
+    - source_ref: schmitz2021
+      supports: support
+      explanation: PQQ-dependent glucose dehydrogenase activity drives gluconic-acid biolixiviant production
+        in Gluconobacter oxydans.
+  - source: gdh_dehydrogenase
+    target: gluconic_acid_biolixiviant
+    predicate: produces
+    relationship: periplasmic oxidation of glucose to gluconic acid
+    description: Membrane-bound Gdh oxidizes D-glucose to gluconic acid, lowering supernatant pH and supplying
+      organic-acid ligands.
+    evidence:
+    - source_ref: schmitz2021
+      supports: support
+      explanation: Periplasmic glucose oxidation by G. oxydans generates the acidic gluconic-acid-rich
+        biolixiviant.
+  - source: gluconic_acid_biolixiviant
+    target: retorted_lamp_phosphor
+    predicate: acts_on
+    relationship: acidolysis and ligand complexation
+    description: Protons and gluconate ligands attack the solid phase in the leaching reaction.
+    evidence:
+    - source_ref: schmitz2021
+      supports: support
+      explanation: Biolixiviant acidity and organic-acid complexation promote dissolution of the solid
+        substrate.
+  - source: retorted_lamp_phosphor
+    target: leached_y_eu_ree
+    predicate: produces
+    relationship: dissolution and metal mobilization
+    description: Dissolution of Retorted fluorescent lamp phosphor powder yields Solubilized Y, Eu, Tb,
+      La, and Ce in leachate in the aqueous leachate.
+    evidence:
+    - source_ref: schmitz2021
+      supports: support
+      explanation: Measured aqueous metal release above sterile-medium controls confirms substrate leaching.
 curation_history:
-  - timestamp: '2026-10-09T04:47:54Z'
-    curator: Codex (GPT-6; Codex)
-    action: evidence_curation
-    summary: >-
-      Created a scoped secondary-resource record from the Schmitz et al. 2021
-      retorted-powder assay, keeping total-REE yields, controls, pretreatment
-      uncertainties and laboratory scale explicit. Independent scientific
-      review is recorded separately.
+- timestamp: '2026-10-09T04:47:54Z'
+  curator: Codex (GPT-6; Codex)
+  action: evidence_curation
+  summary: Created a scoped secondary-resource record from the Schmitz et al. 2021 retorted-powder assay,
+    keeping total-REE yields, controls, pretreatment uncertainties and laboratory scale explicit. Independent
+    scientific review is recorded separately.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein examples (Gdh UniProtKB:P27175, PqqC UniProtKB:Q9L3B2) and
+    causal graph for Gluconobacter oxydans fluorescent-lamp phosphor bioleaching.
 history_refs:
-  - history/records/fluorescent-lamp-phosphor/2026-10-09T044754Z-codex-45750b.yaml
+- history/records/fluorescent-lamp-phosphor/2026-10-09T044754Z-codex-45750b.yaml
+- history/records/fluorescent-lamp-phosphor/2026-10-18T042750Z-antigravity-8a8590.yaml

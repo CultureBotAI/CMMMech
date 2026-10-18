@@ -87,6 +87,34 @@ def test_kind_and_process_pages_generated():
     assert (proc_dir / "biomineralization.html").exists()
 
 
+def test_protein_examples_and_causal_graphs_rendered():
+    assert (
+        render_pages.curie_url("NCBIfam:TIGR01234")
+        == "https://www.ebi.ac.uk/interpro/entry/ncbifam/TIGR01234"
+    )
+    assert (
+        render_pages.curie_url("UniProtKB:Q747K6")
+        == "https://www.uniprot.org/uniprotkb/Q747K6"
+    )
+
+    akaganeite_html = (PAGES_DIR / "materials" / "akaganeite.html").read_text(encoding="utf-8")
+    assert "UniProtKB:Q747K6" in akaganeite_html
+    assert "https://www.uniprot.org/uniprotkb/Q747K6" in akaganeite_html
+    assert "SWISS_PROT" in akaganeite_html
+    assert "Causal Graphs &amp; Molecular Pathways" in akaganeite_html
+    assert "causal-node-pca_imch_cbcl_akaganeite_pathway-imch_cytochrome" in akaganeite_html
+
+    manganese_html = (PAGES_DIR / "materials" / "manganese.html").read_text(encoding="utf-8")
+    assert "UNGROUNDED" in manganese_html
+    assert "UPI000164C1D1" in manganese_html
+    assert "UniProtKB:B0KQT1" in manganese_html
+    assert "UniProtKB:B0KSN7" in manganese_html
+
+    browse_html = (PAGES_DIR / "browse.html").read_text(encoding="utf-8")
+    assert "uniprotkb:q747k6" in browse_html
+    assert "imch_geosl" in browse_html
+
+
 def test_unified_facets_search_and_map():
     index_html = (PAGES_DIR / "index.html").read_text(encoding="utf-8")
     assert 'class="hero-search"' in index_html

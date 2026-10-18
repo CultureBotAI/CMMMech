@@ -35,8 +35,8 @@ sources:
   accessed_on: '2026-10-14'
 - id: ncbi_w3110
   title: NCBI Taxonomy 316407, Escherichia coli str. K-12 substr. W3110, no-rank taxon under E. coli.
-    Official XML checked 14 October 2026; name provenance does not authenticate the transformed stock used
-    in the experiment.
+    Official XML checked 14 October 2026; name provenance does not authenticate the transformed stock
+    used in the experiment.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=316407
   accessed_on: '2026-10-14'
 mechanisms:
@@ -119,11 +119,129 @@ mechanisms:
     supports: context_only
     explanation: NCBI 316407 supplies the W3110 taxon label. It does not establish plasmid carriage, exact
       laboratory-stock authentication or the mineralization phenotype independently of the experiment.
+  protein_examples:
+  - uniprot_accession: UniProtKB:P00634
+    entry_name: PPB_ECOLI
+    protein_name: Alkaline phosphatase
+    gene_symbol: phoA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:83333
+      label: Escherichia coli K-12
+    reference_proteome_id: UP000000625
+    ec_numbers:
+    - EC:3.1.3.1
+    interpro_ids:
+    - InterPro:IPR001952
+    - InterPro:IPR018299
+    - InterPro:IPR017850
+    pfam_ids:
+    - Pfam:PF00245
+    functional_role: Periplasmic alkaline phosphatase PhoA (EC 3.1.3.1; phoA / b0383) that hydrolyzes
+      beta-glycerophosphate to release inorganic orthophosphate (Pi), driving local calcium phosphate
+      / hydroxyapatite supersaturation in Escherichia coli W3110 biofilms.
+    annotation_note: Experimental strain is Escherichia coli K-12 substr. W3110 (NCBITaxon:316407); grounded
+      to the canonical parent Escherichia coli K-12 Swiss-Prot reference proteome entry PhoA (UniProtKB:P00634,
+      NCBITaxon:83333, UP000000625).
+    evidence:
+    - source_ref: zorzetto_2023
+      supports: support
+      explanation: Hydrolyzes organic phosphate ester (beta-glycerophosphate) in the biofilm matrix, supplying
+        inorganic phosphate ions that precipitate with Ca2+ as hydroxyapatite.
+causal_graphs:
+- id: w3110_phoa_biofilm_hydroxyapatite_graph
+  name: Escherichia coli W3110 alkaline phosphatase (PhoA) driven biofilm hydroxyapatite mineralization
+  description: Causal pathway linking periplasmic alkaline phosphatase PhoA (UniProtKB:P00634) in Escherichia
+    coli K-12 W3110 biofilms to enzymatic hydrolysis of beta-glycerophosphate and nucleation of hydroxyapatite
+    within the extracellular curli/cellulose matrix.
+  scope: RECORD_SPECIFIC_MECHANISM
+  mechanism_ref: w3110_biofilm_calcium_phosphate
+  nodes:
+  - id: phoa_alkaline_phosphatase
+    label: PhoA periplasmic alkaline phosphatase (phoA / b0383)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: phoA
+    description: Zn/Mg-dependent periplasmic phosphomonoesterase (EC 3.1.3.1) cleaving organic phosphate
+      esters.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:P00634
+      entry_name: PPB_ECOLI
+      protein_name: Alkaline phosphatase
+      gene_symbol: phoA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:83333
+        label: Escherichia coli K-12
+      reference_proteome_id: UP000000625
+      ec_numbers:
+      - EC:3.1.3.1
+      interpro_ids:
+      - InterPro:IPR001952
+      - InterPro:IPR018299
+      - InterPro:IPR017850
+      pfam_ids:
+      - Pfam:PF00245
+      functional_role: Periplasmic alkaline phosphatase PhoA (EC 3.1.3.1; phoA / b0383) that hydrolyzes
+        beta-glycerophosphate to release inorganic orthophosphate (Pi), driving local calcium phosphate
+        / hydroxyapatite supersaturation in Escherichia coli W3110 biofilms.
+      annotation_note: Experimental strain is Escherichia coli K-12 substr. W3110 (NCBITaxon:316407);
+        grounded to the canonical parent Escherichia coli K-12 Swiss-Prot reference proteome entry PhoA
+        (UniProtKB:P00634, NCBITaxon:83333, UP000000625).
+      evidence:
+      - source_ref: zorzetto_2023
+        supports: support
+        explanation: Hydrolyzes organic phosphate ester (beta-glycerophosphate) in the biofilm matrix,
+          supplying inorganic phosphate ions that precipitate with Ca2+ as hydroxyapatite.
+  - id: inorganic_phosphate_release
+    label: Local orthophosphate (Pi) release from beta-glycerophosphate
+    node_type: CHEMICAL_ENTITY
+    description: Inorganic phosphate liberated into the biofilm microenvironment by enzymatic dephosphorylation.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: biofilm_hydroxyapatite_phase
+    label: Biofilm-mineralized hydroxyapatite (Ca5(PO4)3(OH))
+    node_type: MATERIAL_OR_PHASE
+    description: Crystalline calcium phosphate / hydroxyapatite mineral deposited within the E. coli W3110
+      biofilm.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: phoa_alkaline_phosphatase
+    target: inorganic_phosphate_release
+    predicate: catalyzes
+    relationship: hydrolysis of beta-glycerophosphate to orthophosphate
+    description: PhoA hydrolyzes beta-glycerophosphate supplied in the mineralization medium to release
+      free PO4(3-).
+    evidence:
+    - source_ref: zorzetto_2023
+      supports: support
+      explanation: Enzymatic hydrolysis of beta-glycerophosphate by E. coli W3110 biofilms drives local
+        phosphate accumulation.
+  - source: inorganic_phosphate_release
+    target: biofilm_hydroxyapatite_phase
+    predicate: drives
+    relationship: calcium phosphate supersaturation and matrix-templated crystallization
+    description: Released orthophosphate reacts with Ca2+ within the biofilm scaffold to nucleate hydroxyapatite.
+    evidence:
+    - source_ref: zorzetto_2023
+      supports: support
+      explanation: Calcium phosphate precipitates and matures into hydroxyapatite within the W3110 biofilm.
 curation_history:
 - timestamp: '2026-10-14T11:27:13.959985+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
   summary: Created hydroxylapatite mineral record with primary experimental evidence, exact phase and
     assay boundaries, controls and unresolved causal limits.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein example (PhoA UniProtKB:P00634) and causal graph for Escherichia
+    coli W3110 biofilm hydroxyapatite biomineralization.
+- timestamp: '2026-10-18T06:58:25Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added explicit annotation_note documenting strain/species or comparator NCBITaxon mapping on
+    ProteinExample entries and normalized causal_graphs key order.
 history_refs:
 - history/records/hydroxylapatite/2026-10-14T112716Z-codex-aed1c2.yaml
+- history/records/hydroxylapatite/2026-10-18T042750Z-antigravity-74a800.yaml
+- history/records/hydroxylapatite/2026-10-18T065825Z-antigravity-b31f03.yaml

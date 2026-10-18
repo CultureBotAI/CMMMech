@@ -118,3 +118,218 @@ def test_non_record_documents(value):
 
 def test_schema_is_closed_and_packaged():
     assert record_validator().schema["additionalProperties"] is False
+
+
+def _sample_protein_example():
+    return {
+        "uniprot_accession": "UniProtKB:P27175",
+        "entry_name": "DHG_GLUOX",
+        "protein_name": "Quinoprotein glucose dehydrogenase",
+        "gene_symbol": "gdh",
+        "entry_status": "SWISS_PROT",
+        "target_organism": {"id": "NCBITaxon:442", "label": "Gluconobacter oxydans"},
+        "reference_proteome_id": "UP000006375",
+        "ec_numbers": ["EC:1.1.5.2"],
+        "interpro_ids": ["InterPro:IPR018391"],
+        "pfam_ids": ["Pfam:PF01011"],
+        "functional_role": "Catalyzes periplasmic oxidation of D-glucose to D-gluconic acid.",
+        "evidence": [
+            {
+                "source_ref": "fixture",
+                "supports": "support",
+                "explanation": "Synthetic test grounding.",
+            }
+        ],
+    }
+
+
+def _sample_causal_graph():
+    return {
+        "id": "test_causal_graph",
+        "name": "Synthetic causal pathway",
+        "description": "Synthetic causal graph for testing validation.",
+        "scope": "RECORD_SPECIFIC_MECHANISM",
+        "mechanism_ref": "test_mechanism",
+        "nodes": [
+            {
+                "id": "gdh_enzyme",
+                "label": "Membrane-bound glucose dehydrogenase (Gdh)",
+                "node_type": "GENE_OR_PROTEIN",
+                "gene_symbol": "gdh",
+                "protein_grounding_status": "GROUNDED",
+                "protein_examples": [_sample_protein_example()],
+            },
+            {
+                "id": "gluconic_acid_production",
+                "label": "Gluconic acid production",
+                "node_type": "CHEMICAL_ENTITY",
+                "protein_grounding_status": "NOT_APPLICABLE",
+                "term": {"id": "CHEBI:33198", "label": "D-gluconic acid"},
+            },
+        ],
+        "edges": [
+            {
+                "source": "gdh_enzyme",
+                "target": "gluconic_acid_production",
+                "predicate": "produces",
+                "relationship": "provides_input_for",
+                "description": "Gdh oxidizes glucose to gluconic acid.",
+                "evidence": [
+                    {
+                        "source_ref": "fixture",
+                        "supports": "support",
+                        "explanation": "Synthetic edge evidence.",
+                    }
+                ],
+            }
+        ],
+    }
+
+
+def test_valid_causal_graphs_and_protein_examples(record):
+    record["mechanisms"][0]["organisms"] = [
+        {"id": "NCBITaxon:442", "label": "Gluconobacter oxydans"}
+    ]
+    record["mechanisms"][0]["protein_examples"] = [_sample_protein_example()]
+    record["causal_graphs"] = [_sample_causal_graph()]
+    assert validate_record(record) == []
+
+
+def test_causal_graph_and_protein_example_integrity_checks(record):
+    record["mechanisms"][0]["organisms"] = [
+        {"id": "NCBITaxon:442", "label": "Gluconobacter oxydans"}
+    ]
+    record["mechanisms"][0]["protein_examples"] = [
+        _sample_protein_example(),
+        _sample_protein_example(),
+    ]
+    assert any("duplicate uniprot_accession" in e for e in validate_record(record))
+
+    # Divergent target_organism requires annotation_note
+    pe_divergent = _sample_protein_example()
+    pe_divergent["target_organism"] = {"id": "NCBITaxon:83333", "label": "Escherichia coli K-12"}
+    record["mechanisms"][0]["protein_examples"] = [pe_divergent]
+    assert any("not in mechanism organisms requires annotation_note" in e for e in validate_record(record))
+    pe_divergent["annotation_note"] = "Ortholog from reference proteome."
+    assert validate_record(record) == []
+
+    # Invalid target_organism CURIE prefix and invalid/duplicate GO terms or cross-references
+    pe_bad_curie = _sample_protein_example()
+    pe_bad_curie["target_organism"] = {"id": "CHEBI:12345", "label": "Not a taxon"}
+    pe_bad_curie["go_terms"] = [
+        {"id": "GO:0008150", "label": "biological_process"},
+        {"id": "GO:0008150", "label": "biological_process"},
+        {"id": "CHEBI:111", "label": "bad go term"},
+    ]
+    pe_bad_curie["pfam_ids"] = ["Pfam:PF01011", "Pfam:PF01011"]
+    record["mechanisms"][0]["protein_examples"] = [pe_bad_curie]
+    errs = validate_record(record)
+    assert any("must be an NCBITaxon CURIE" in e for e in errs)
+    assert any("duplicate GO term id" in e for e in errs)
+    assert any("must be a 7-digit GO CURIE" in e for e in errs)
+    assert any("pfam_ids: duplicate value" in e for e in errs)
+
+    record["mechanisms"][0]["protein_examples"] = [_sample_protein_example()]
+    record["mechanisms"][0]["microbial"] = False
+    record["mechanisms"][0].pop("organisms")
+    assert any("protein_examples require microbial: true" in e for e in validate_record(record))
+    record["mechanisms"][0]["microbial"] = True
+    record["mechanisms"][0]["organisms"] = [
+        {"id": "NCBITaxon:442", "label": "Gluconobacter oxydans"}
+    ]
+
+    graph = _sample_causal_graph()
+    graph["mechanism_ref"] = "nonexistent_mechanism"
+    record["causal_graphs"] = [graph]
+    assert any("unknown mechanism_ref" in e for e in validate_record(record))
+
+    # Abiotic mechanism_ref with biological/GENE_OR_PROTEIN causal nodes is rejected
+    abiotic_mech = copy.deepcopy(record["mechanisms"][0])
+    abiotic_mech["id"] = "abiotic_control"
+    abiotic_mech["microbial"] = False
+    abiotic_mech.pop("organisms", None)
+    abiotic_mech.pop("protein_examples", None)
+    record["mechanisms"].append(abiotic_mech)
+    graph = _sample_causal_graph()
+    graph["mechanism_ref"] = "abiotic_control"
+    record["causal_graphs"] = [graph]
+    assert any(
+        "biological or GENE_OR_PROTEIN nodes require microbial mechanism_ref" in e
+        for e in validate_record(record)
+    )
+    record["mechanisms"].pop()
+
+    graph = _sample_causal_graph()
+    graph["edges"][0]["target"] = "missing_node"
+    record["causal_graphs"] = [graph]
+    assert any("unknown target node" in e for e in validate_record(record))
+
+    # Self-loop and duplicate edge checks
+    graph = _sample_causal_graph()
+    graph["edges"].append(
+        {
+            "source": "gdh_enzyme",
+            "target": "gdh_enzyme",
+            "predicate": "modulates",
+        }
+    )
+    graph["edges"].append(copy.deepcopy(graph["edges"][0]))
+    record["causal_graphs"] = [graph]
+    edge_errs = validate_record(record)
+    assert any("self-loop edge on node gdh_enzyme" in e for e in edge_errs)
+    assert any("duplicate edge gdh_enzyme -> gluconic_acid_production (produces)" in e for e in edge_errs)
+
+    # Disconnected node check
+    graph = _sample_causal_graph()
+    graph["nodes"].append(
+        {
+            "id": "orphan_node",
+            "label": "Orphan node",
+            "node_type": "CHEMICAL_ENTITY",
+            "protein_grounding_status": "NOT_APPLICABLE",
+        }
+    )
+    record["causal_graphs"] = [graph]
+    assert any("disconnected node orphan_node has no incident edges" in e for e in validate_record(record))
+
+    graph = _sample_causal_graph()
+    graph["nodes"][0]["protein_examples"] = []
+    record["causal_graphs"] = [graph]
+    assert any("GROUNDED node requires protein_examples" in e for e in validate_record(record))
+
+    graph = _sample_causal_graph()
+    graph["nodes"][0]["protein_grounding_status"] = "NOT_APPLICABLE"
+    graph["nodes"][0]["protein_examples"] = []
+    record["causal_graphs"] = [graph]
+    assert any(
+        "GENE_OR_PROTEIN node requires GROUNDED or UNGROUNDED protein_grounding_status" in e
+        for e in validate_record(record)
+    )
+
+    graph = _sample_causal_graph()
+    graph["nodes"][0]["protein_grounding_status"] = "UNGROUNDED"
+    record["causal_graphs"] = [graph]
+    errs = validate_record(record)
+    assert any("UNGROUNDED node cannot have protein_examples" in e for e in errs)
+    assert any("UNGROUNDED node requires description explaining ungrounded status" in e for e in errs)
+
+    graph = _sample_causal_graph()
+    graph["nodes"][1]["protein_grounding_status"] = "UNGROUNDED"
+    graph["nodes"][1]["gene_symbol"] = "illegal_gene"
+    graph["nodes"][1]["protein_examples"] = [_sample_protein_example()]
+    record["causal_graphs"] = [graph]
+    errs = validate_record(record)
+    assert any(
+        "non-GENE_OR_PROTEIN node requires NOT_APPLICABLE protein_grounding_status" in e
+        for e in errs
+    )
+    assert any(
+        "protein_examples are only permitted on GENE_OR_PROTEIN nodes" in e
+        for e in errs
+    )
+    assert any(
+        "gene_symbol is only permitted on GENE_OR_PROTEIN nodes" in e
+        for e in errs
+    )
+
+

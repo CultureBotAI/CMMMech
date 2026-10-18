@@ -94,11 +94,260 @@ mechanisms:
       SPM image panels could be rendered or extracted; the Raman panel did not render in the available
       conversion. The main article Table 2 and Raman Results support the retained local-trace interpretation.
       No quantitative or phase claim depends on the inaccessible supplementary panel.
+  protein_examples:
+  - uniprot_accession: UniProtKB:P41020
+    entry_name: URE1_SPOPA
+    protein_name: Urease subunit alpha
+    gene_symbol: ureC
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:1474
+      label: Sporosarcina pasteurii
+    reference_proteome_id: UP000254519
+    ec_numbers:
+    - EC:3.5.1.5
+    interpro_ids:
+    - InterPro:IPR006680
+    - InterPro:IPR011059
+    - InterPro:IPR032466
+    - InterPro:IPR011612
+    - InterPro:IPR017950
+    - InterPro:IPR005848
+    - InterPro:IPR017951
+    - InterPro:IPR029754
+    pfam_ids:
+    - Pfam:PF01979
+    - Pfam:PF00449
+    functional_role: Catalytic alpha subunit (UreC; EC 3.5.1.5) of the nickel-dependent urease complex
+      that hydrolyzes urea into ammonia and carbamate/carbonate.
+    annotation_note: Grounded to reviewed Swiss-Prot Sporosarcina pasteurii UreABC subunits (NCBITaxon:1474;
+      UP000254519) used as the reference ureolytic comparator and donor urease system in Heveran et al.
+      (2019).
+    evidence:
+    - source_ref: heveran2019
+      supports: support
+      explanation: Urease-catalyzed urea hydrolysis elevates carbonate alkalinity and pH, driving precipitation
+        of Brushite-bearing calcium phosphate transitioning to calcite.
+  - uniprot_accession: UniProtKB:P41021
+    entry_name: URE2_SPOPA
+    protein_name: Urease subunit beta
+    gene_symbol: ureB
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:1474
+      label: Sporosarcina pasteurii
+    reference_proteome_id: UP000254519
+    ec_numbers:
+    - EC:3.5.1.5
+    interpro_ids:
+    - InterPro:IPR002019
+    - InterPro:IPR036461
+    - InterPro:IPR050069
+    pfam_ids:
+    - Pfam:PF00699
+    functional_role: Beta subunit (UreB; EC 3.5.1.5) of the heterotrimeric Sporosarcina pasteurii urease
+      complex.
+    annotation_note: Grounded to reviewed Swiss-Prot Sporosarcina pasteurii UreABC subunits (NCBITaxon:1474;
+      UP000254519) used as the reference ureolytic comparator and donor urease system in Heveran et al.
+      (2019).
+    evidence:
+    - source_ref: heveran2019
+      supports: support
+      explanation: Structural subunit of the active urease holoenzyme responsible for ureolytic alkalinity
+        generation during Brushite-bearing calcium phosphate transitioning to calcite formation.
+  - uniprot_accession: UniProtKB:P41022
+    entry_name: URE3_SPOPA
+    protein_name: Urease subunit gamma
+    gene_symbol: ureA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:1474
+      label: Sporosarcina pasteurii
+    reference_proteome_id: UP000254519
+    ec_numbers:
+    - EC:3.5.1.5
+    interpro_ids:
+    - InterPro:IPR012010
+    - InterPro:IPR002026
+    - InterPro:IPR036463
+    - InterPro:IPR050069
+    pfam_ids:
+    - Pfam:PF00547
+    functional_role: Gamma subunit (UreA; EC 3.5.1.5) of the heterotrimeric Sporosarcina pasteurii urease
+      complex.
+    annotation_note: Grounded to reviewed Swiss-Prot Sporosarcina pasteurii UreABC subunits (NCBITaxon:1474;
+      UP000254519) used as the reference ureolytic comparator and donor urease system in Heveran et al.
+      (2019).
+    evidence:
+    - source_ref: heveran2019
+      supports: support
+      explanation: Structural subunit of the active urease holoenzyme driving urea hydrolysis and carbonate
+        precipitation of Brushite-bearing calcium phosphate transitioning to calcite.
+causal_graphs:
+- id: ureolytic_brushite_calcite_phase_transition_graph
+  name: Urease-driven pH shift and calcium-phosphate to calcite transition
+  description: Causal pathway linking heterologous/native UreABC urease activity to pH elevation, dissolved
+    phosphorus return, and transition from initial brushite/apatite precipitates to calcite.
+  scope: RECORD_SPECIFIC_MECHANISM
+  mechanism_ref: ureolytic_culture_calcium_phosphate_phase_change
+  nodes:
+  - id: ureabc_urease_complex
+    label: UreABC nickel-dependent urease complex (ureA, ureB, ureC)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: ureABC
+    description: Heterotrimeric nickel-dependent urease (EC 3.5.1.5) catalyzing hydrolysis of urea into
+      ammonia and carbonate.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:P41020
+      entry_name: URE1_SPOPA
+      protein_name: Urease subunit alpha
+      gene_symbol: ureC
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:1474
+        label: Sporosarcina pasteurii
+      reference_proteome_id: UP000254519
+      ec_numbers:
+      - EC:3.5.1.5
+      interpro_ids:
+      - InterPro:IPR006680
+      - InterPro:IPR011059
+      - InterPro:IPR032466
+      - InterPro:IPR011612
+      - InterPro:IPR017950
+      - InterPro:IPR005848
+      - InterPro:IPR017951
+      - InterPro:IPR029754
+      pfam_ids:
+      - Pfam:PF01979
+      - Pfam:PF00449
+      functional_role: Catalytic alpha subunit (UreC; EC 3.5.1.5) of the nickel-dependent urease complex
+        that hydrolyzes urea into ammonia and carbamate/carbonate.
+      annotation_note: Grounded to reviewed Swiss-Prot Sporosarcina pasteurii UreABC subunits (NCBITaxon:1474;
+        UP000254519) used as the reference ureolytic comparator and donor urease system in Heveran et
+        al. (2019).
+      evidence:
+      - source_ref: heveran2019
+        supports: support
+        explanation: Urease-catalyzed urea hydrolysis elevates carbonate alkalinity and pH, driving precipitation
+          of Brushite-bearing calcium phosphate transitioning to calcite.
+    - uniprot_accession: UniProtKB:P41021
+      entry_name: URE2_SPOPA
+      protein_name: Urease subunit beta
+      gene_symbol: ureB
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:1474
+        label: Sporosarcina pasteurii
+      reference_proteome_id: UP000254519
+      ec_numbers:
+      - EC:3.5.1.5
+      interpro_ids:
+      - InterPro:IPR002019
+      - InterPro:IPR036461
+      - InterPro:IPR050069
+      pfam_ids:
+      - Pfam:PF00699
+      functional_role: Beta subunit (UreB; EC 3.5.1.5) of the heterotrimeric Sporosarcina pasteurii urease
+        complex.
+      annotation_note: Grounded to reviewed Swiss-Prot Sporosarcina pasteurii UreABC subunits (NCBITaxon:1474;
+        UP000254519) used as the reference ureolytic comparator and donor urease system in Heveran et
+        al. (2019).
+      evidence:
+      - source_ref: heveran2019
+        supports: support
+        explanation: Structural subunit of the active urease holoenzyme responsible for ureolytic alkalinity
+          generation during Brushite-bearing calcium phosphate transitioning to calcite formation.
+    - uniprot_accession: UniProtKB:P41022
+      entry_name: URE3_SPOPA
+      protein_name: Urease subunit gamma
+      gene_symbol: ureA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:1474
+        label: Sporosarcina pasteurii
+      reference_proteome_id: UP000254519
+      ec_numbers:
+      - EC:3.5.1.5
+      interpro_ids:
+      - InterPro:IPR012010
+      - InterPro:IPR002026
+      - InterPro:IPR036463
+      - InterPro:IPR050069
+      pfam_ids:
+      - Pfam:PF00547
+      functional_role: Gamma subunit (UreA; EC 3.5.1.5) of the heterotrimeric Sporosarcina pasteurii urease
+        complex.
+      annotation_note: Grounded to reviewed Swiss-Prot Sporosarcina pasteurii UreABC subunits (NCBITaxon:1474;
+        UP000254519) used as the reference ureolytic comparator and donor urease system in Heveran et
+        al. (2019).
+      evidence:
+      - source_ref: heveran2019
+        supports: support
+        explanation: Structural subunit of the active urease holoenzyme driving urea hydrolysis and carbonate
+          precipitation of Brushite-bearing calcium phosphate transitioning to calcite.
+  - id: urea_hydrolysis_alkalinity
+    label: Ammonium and carbonate alkalinity generation (pH elevation)
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved NH4+ and CO3(2-) produced by enzymatic urea hydrolysis, increasing solution
+      pH and carbonate supersaturation.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: dissolved_metal_cations
+    label: Dissolved Ca(II) and broth phosphate
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved cations (Dissolved Ca(II) and broth phosphate) available in the reaction medium
+      or brine.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: precipitated_mineral_phase
+    label: Brushite-bearing calcium phosphate transitioning to calcite
+    node_type: MATERIAL_OR_PHASE
+    description: Solid mineral product (Brushite-bearing calcium phosphate transitioning to calcite) precipitated
+      upon ureolytic carbonate supersaturation.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: ureabc_urease_complex
+    target: urea_hydrolysis_alkalinity
+    predicate: catalyzes
+    relationship: hydrolysis of urea to ammonia and carbonate
+    description: UreABC hydrolyzes urea, releasing ammonium and carbonate ions and raising solution pH.
+    evidence:
+    - source_ref: heveran2019
+      supports: support
+      explanation: Ureolytic activity increases pH and dissolved carbonate concentration.
+  - source: urea_hydrolysis_alkalinity
+    target: precipitated_mineral_phase
+    predicate: drives
+    relationship: carbonate supersaturation and nucleation
+    description: Elevated pH and carbonate activity drive precipitation of Brushite-bearing calcium phosphate
+      transitioning to calcite.
+    evidence:
+    - source_ref: heveran2019
+      supports: support
+      explanation: Ureolytic carbonate generation drives formation of Brushite-bearing calcium phosphate
+        transitioning to calcite.
+  - source: dissolved_metal_cations
+    target: precipitated_mineral_phase
+    predicate: incorporates_into
+    relationship: cation precipitation with carbonate/phosphate
+    description: Dissolved Ca(II) and broth phosphate co-precipitates into Brushite-bearing calcium phosphate
+      transitioning to calcite.
+    evidence:
+    - source_ref: heveran2019
+      supports: support
+      explanation: Cations from solution are incorporated into the precipitated Brushite-bearing calcium
+        phosphate transitioning to calcite solids.
 curation_history:
 - timestamp: '2026-10-14T10:48:23.520164+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
   summary: Created brushite mineral identity and a controlled primary calcium-phosphate culture record,
     preserving cell-free precipitation, mixed-phase limits and bulk-versus-local detection differences.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein examples (UreC UniProtKB:P41020, UreB UniProtKB:P41021, UreA
+    UniProtKB:P41022) and causal graph for ureolytic calcium-phosphate to calcite phase transition.
 history_refs:
 - history/records/brushite/2026-10-14T104826Z-codex-77f4f2.yaml
+- history/records/brushite/2026-10-18T042750Z-antigravity-842780.yaml

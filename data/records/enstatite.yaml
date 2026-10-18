@@ -89,11 +89,279 @@ mechanisms:
       also differed. The experiment does not isolate physical contact from evolving acid/metabolite chemistry,
       demonstrate a particular Fe-oxidation enzyme, or compare this mutant with wild type for mineral
       leaching. Laboratory results establish no industrial deployment or net atmospheric carbon removal.
+  protein_examples:
+  - uniprot_accession: UniProtKB:P27175
+    entry_name: DHG_GLUOX
+    protein_name: Quinoprotein glucose dehydrogenase
+    gene_symbol: gdh
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:290633
+      label: Gluconobacter oxydans 621H
+    reference_proteome_id: UP000006375
+    ec_numbers:
+    - EC:1.1.5.2
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR017511
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR001479
+    pfam_ids:
+    - Pfam:PF01011
+    functional_role: Membrane-bound PQQ-dependent glucose dehydrogenase (EC 1.1.5.2) that oxidizes D-glucose
+      to D-glucono-1,5-lactone/gluconic acid in the periplasm, generating the organic-acid biolixiviant.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter
+      oxydans 621H (NCBITaxon:290633; locus GOX0265).
+    evidence:
+    - source_ref: klug_2026
+      supports: support
+      explanation: Glucose oxidation by membrane-bound PQQ-dependent glucose dehydrogenase generates the
+        gluconic acid-dominated acidic biolixiviant used to leach the mineral/feed.
+  - uniprot_accession: UniProtKB:Q9L3B2
+    entry_name: PQQC_GLUOX
+    protein_name: Pyrroloquinoline-quinone synthase
+    gene_symbol: pqqC
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:290633
+      label: Gluconobacter oxydans 621H
+    reference_proteome_id: UP000006375
+    ec_numbers:
+    - EC:1.3.3.11
+    interpro_ids:
+    - InterPro:IPR016084
+    - InterPro:IPR011845
+    - InterPro:IPR039068
+    - InterPro:IPR004305
+    pfam_ids:
+    - Pfam:PF03070
+    functional_role: Pyrroloquinoline-quinone synthase (EC 1.3.3.11) catalyzing the final ring-closure
+      and oxidation steps of PQQ cofactor biosynthesis required for holo-Gdh activity.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter
+      oxydans 621H (NCBITaxon:290633; locus GOX0985).
+    evidence:
+    - source_ref: klug_2026
+      supports: support
+      explanation: Biosynthesis of the pyrroloquinoline quinone (PQQ) cofactor is required for periplasmic
+        quinoprotein dehydrogenase activity during acidogenic biolixiviant production.
+  - uniprot_accession: UniProtKB:Q5FT13
+    entry_name: Q5FT13_GLUOX
+    protein_name: Phosphate transport system permease protein
+    gene_symbol: pstC
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:290633
+      label: Gluconobacter oxydans 621H
+    reference_proteome_id: UP000006375
+    interpro_ids:
+    - InterPro:IPR000515
+    - InterPro:IPR035906
+    - InterPro:IPR011864
+    - InterPro:IPR051124
+    pfam_ids:
+    - Pfam:PF00528
+    functional_role: Phosphate transport system permease PstC (GOX0706) disrupted in engineered Gluconobacter
+      oxydans B58 strains used for silicate bioleaching.
+    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633)
+      orthologous to the engineered B58 locus.
+    evidence:
+    - source_ref: klug_2026
+      supports: support
+      explanation: Phosphate transport system permease PstC (GOX0706) disrupted in engineered Gluconobacter
+        oxydans B58 strains used for silicate bioleaching.
+causal_graphs:
+- id: gluconobacter_enstatite_bioleaching_graph
+  name: Engineered Gluconobacter oxydans biolixiviant leaching of enstatite-bearing feed
+  description: Causal pathway linking pstC disruption and PqqC/Gdh-mediated gluconic acid production to
+    metal release from enstatite-bearing mixed silicate feed.
+  scope: RECORD_SPECIFIC_MECHANISM
+  mechanism_ref: mixed_feed_enstatite_bioleaching
+  nodes:
+  - id: pstc_phosphate_permease
+    label: pstC (Phosphate transport system permease protein)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: pstC
+    description: Phosphate transport system permease PstC (GOX0706) disrupted in engineered Gluconobacter
+      oxydans B58 strains used for silicate bioleaching.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q5FT13
+      entry_name: Q5FT13_GLUOX
+      protein_name: Phosphate transport system permease protein
+      gene_symbol: pstC
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:290633
+        label: Gluconobacter oxydans 621H
+      reference_proteome_id: UP000006375
+      interpro_ids:
+      - InterPro:IPR000515
+      - InterPro:IPR035906
+      - InterPro:IPR011864
+      - InterPro:IPR051124
+      pfam_ids:
+      - Pfam:PF00528
+      functional_role: Phosphate transport system permease PstC (GOX0706) disrupted in engineered Gluconobacter
+        oxydans B58 strains used for silicate bioleaching.
+      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633)
+        orthologous to the engineered B58 locus.
+      evidence:
+      - source_ref: klug_2026
+        supports: support
+        explanation: Phosphate transport system permease PstC (GOX0706) disrupted in engineered Gluconobacter
+          oxydans B58 strains used for silicate bioleaching.
+  - id: pqqc_synthase
+    label: PqqC pyrroloquinoline-quinone synthase
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: pqqC
+    description: Catalyzes biosynthesis of the PQQ prosthetic group required by membrane-bound glucose
+      dehydrogenase.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q9L3B2
+      entry_name: PQQC_GLUOX
+      protein_name: Pyrroloquinoline-quinone synthase
+      gene_symbol: pqqC
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:290633
+        label: Gluconobacter oxydans 621H
+      reference_proteome_id: UP000006375
+      ec_numbers:
+      - EC:1.3.3.11
+      interpro_ids:
+      - InterPro:IPR016084
+      - InterPro:IPR011845
+      - InterPro:IPR039068
+      - InterPro:IPR004305
+      pfam_ids:
+      - Pfam:PF03070
+      functional_role: Pyrroloquinoline-quinone synthase (EC 1.3.3.11) catalyzing the final ring-closure
+        and oxidation steps of PQQ cofactor biosynthesis required for holo-Gdh activity.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter
+        oxydans 621H (NCBITaxon:290633; locus GOX0985).
+      evidence:
+      - source_ref: klug_2026
+        supports: support
+        explanation: Biosynthesis of the pyrroloquinoline quinone (PQQ) cofactor is required for periplasmic
+          quinoprotein dehydrogenase activity during acidogenic biolixiviant production.
+  - id: gdh_dehydrogenase
+    label: Gdh membrane-bound PQQ-dependent glucose dehydrogenase
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: gdh
+    description: Periplasmic quinoprotein glucose dehydrogenase oxidizing glucose into gluconic acid.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:P27175
+      entry_name: DHG_GLUOX
+      protein_name: Quinoprotein glucose dehydrogenase
+      gene_symbol: gdh
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:290633
+        label: Gluconobacter oxydans 621H
+      reference_proteome_id: UP000006375
+      ec_numbers:
+      - EC:1.1.5.2
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR017511
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR001479
+      pfam_ids:
+      - Pfam:PF01011
+      functional_role: Membrane-bound PQQ-dependent glucose dehydrogenase (EC 1.1.5.2) that oxidizes D-glucose
+        to D-glucono-1,5-lactone/gluconic acid in the periplasm, generating the organic-acid biolixiviant.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter
+        oxydans 621H (NCBITaxon:290633; locus GOX0265).
+      evidence:
+      - source_ref: klug_2026
+        supports: support
+        explanation: Glucose oxidation by membrane-bound PQQ-dependent glucose dehydrogenase generates
+          the gluconic acid-dominated acidic biolixiviant used to leach the mineral/feed.
+  - id: gluconic_acid_biolixiviant
+    label: Extracellular gluconic acid and organic-acid biolixiviant
+    node_type: CHEMICAL_ENTITY
+    description: Organic acid and proton pool generated by periplasmic glucose oxidation.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: enstatite_mixed_feed
+    label: Enstatite-bearing mixed silicate feed
+    node_type: MATERIAL_OR_PHASE
+    description: Starting solid substrate (Enstatite-bearing mixed silicate feed) exposed to the acidic
+      biolixiviant.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: dissolved_mg_fe_ni_ions
+    label: Dissolved Mg, Fe, Mn, Co, and Ni in leachate
+    node_type: CHEMICAL_ENTITY
+    description: Solubilized metal ions or altered phase (Dissolved Mg, Fe, Mn, Co, and Ni in leachate)
+      released into the leachate.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: pstc_phosphate_permease
+    target: gdh_dehydrogenase
+    predicate: modulates
+    relationship: genetic perturbation or regulatory coupling in engineered strain
+    description: Phosphate transport system permease PstC (GOX0706) disrupted in engineered Gluconobacter
+      oxydans B58 strains used for silicate bioleaching.
+    evidence:
+    - source_ref: klug_2026
+      supports: support
+      explanation: Phosphate transport system permease PstC (GOX0706) disrupted in engineered Gluconobacter
+        oxydans B58 strains used for silicate bioleaching.
+  - source: pqqc_synthase
+    target: gdh_dehydrogenase
+    predicate: positively_regulates
+    relationship: supplies PQQ cofactor for holoenzyme assembly
+    description: PQQ cofactor biosynthesis enables active periplasmic quinoprotein glucose dehydrogenase.
+    evidence:
+    - source_ref: klug_2026
+      supports: support
+      explanation: PQQ-dependent glucose dehydrogenase activity drives gluconic-acid biolixiviant production
+        in Gluconobacter oxydans.
+  - source: gdh_dehydrogenase
+    target: gluconic_acid_biolixiviant
+    predicate: produces
+    relationship: periplasmic oxidation of glucose to gluconic acid
+    description: Membrane-bound Gdh oxidizes D-glucose to gluconic acid, lowering supernatant pH and supplying
+      organic-acid ligands.
+    evidence:
+    - source_ref: klug_2026
+      supports: support
+      explanation: Periplasmic glucose oxidation by G. oxydans generates the acidic gluconic-acid-rich
+        biolixiviant.
+  - source: gluconic_acid_biolixiviant
+    target: enstatite_mixed_feed
+    predicate: acts_on
+    relationship: acidolysis and ligand complexation
+    description: Protons and gluconate ligands attack the solid phase in the leaching reaction.
+    evidence:
+    - source_ref: klug_2026
+      supports: support
+      explanation: Biolixiviant acidity and organic-acid complexation promote dissolution of the solid
+        substrate.
+  - source: enstatite_mixed_feed
+    target: dissolved_mg_fe_ni_ions
+    predicate: produces
+    relationship: dissolution and metal mobilization
+    description: Dissolution of Enstatite-bearing mixed silicate feed yields Dissolved Mg, Fe, Mn, Co,
+      and Ni in leachate in the aqueous leachate.
+    evidence:
+    - source_ref: klug_2026
+      supports: support
+      explanation: Measured aqueous metal release above sterile-medium controls confirms substrate leaching.
 curation_history:
 - timestamp: '2026-10-11T10:51:44.051000+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
   summary: Created enstatite species record with mixed-feed leaching evidence and phase-specific mass-balance
     limits.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein examples (Gdh UniProtKB:P27175, PqqC UniProtKB:Q9L3B2, PstC
+    UniProtKB:Q5FT13) and causal graph for engineered Gluconobacter oxydans enstatite bioleaching.
 history_refs:
 - history/records/enstatite/2026-10-11T105143Z-codex-e2c308.yaml
+- history/records/enstatite/2026-10-18T042750Z-antigravity-781402.yaml

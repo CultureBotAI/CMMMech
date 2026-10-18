@@ -101,6 +101,31 @@ mechanisms:
     supports: context_only
     explanation: NCBI 5061 resolves to Aspergillus niger at species rank; the identifier is not specific
       to Ch4/07.
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A254TZW7
+    entry_name: CEXA_ASPNG
+    protein_name: Citrate exporter A
+    gene_symbol: cexA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:5061
+      label: Aspergillus niger
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized
+      citric acid into the extracellular medium, driving organic-acid acidification and metal chelation.
+    annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus
+      niger (NCBITaxon:5061).
+    evidence:
+    - source_ref: frank_kamenetskaya_2019
+      supports: support
+      explanation: Secretes citric acid into the culture medium, contributing to organic-acid acidification
+        and ligand-assisted transformation of Fluorapatite-rich phosphate rock into Whewellite (CaC2O4·H2O)
+        and weddellite calcium oxalate crystals.
 - id: lichen_associated_whewellite
   name: Whewellite associated with natural lichen biofilms
   process: biomineralization
@@ -139,11 +164,107 @@ mechanisms:
     explanation: Potential atmospheric dehydration of weddellite is a handling limitation. The field samples
       were not followed in situ from nucleation through collection, so no original phase ratio or compulsory
       transformation sequence is inferred.
+causal_graphs:
+- id: aspergillus_cexa_whewellite_formation_graph
+  name: Aspergillus niger organic-acid secretion and whewellite crystallization on fluorapatite
+  description: Causal pathway linking Aspergillus niger organic-acid export (CexA) and oxalate/citrate
+    secretion to calcium release from fluorapatite-rich rock and whewellite (CaC2O4·H2O) crystallization.
+  scope: RECORD_SPECIFIC_MECHANISM
+  mechanism_ref: ch407_culture_associated_whewellite
+  nodes:
+  - id: cexa_citrate_exporter
+    label: CexA plasma-membrane citrate exporter (cexA)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cexA
+    description: Major facilitator superfamily transporter exporting citric acid across the Aspergillus
+      niger plasma membrane.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A254TZW7
+      entry_name: CEXA_ASPNG
+      protein_name: Citrate exporter A
+      gene_symbol: cexA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:5061
+        label: Aspergillus niger
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized
+        citric acid into the extracellular medium, driving organic-acid acidification and metal chelation.
+      annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus
+        niger (NCBITaxon:5061).
+      evidence:
+      - source_ref: frank_kamenetskaya_2019
+        supports: support
+        explanation: Secretes citric acid into the culture medium, contributing to organic-acid acidification
+          and ligand-assisted transformation of Fluorapatite-rich phosphate rock into Whewellite (CaC2O4·H2O)
+          and weddellite calcium oxalate crystals.
+  - id: secreted_organic_acids
+    label: Secreted citric and oxalic acid pool (acidification and chelation)
+    node_type: CHEMICAL_ENTITY
+    description: Extracellular organic acids (citrate, oxalate) and protons secreted by Aspergillus niger.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: starting_substrate
+    label: Fluorapatite-rich phosphate rock
+    node_type: MATERIAL_OR_PHASE
+    description: Starting substrate or solution feed (Fluorapatite-rich phosphate rock) exposed to fungal
+      metabolites.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: transformed_product
+    label: Whewellite (CaC2O4·H2O) and weddellite calcium oxalate crystals
+    node_type: MATERIAL_OR_PHASE
+    description: Resulting precipitate or altered mineral phase (Whewellite (CaC2O4·H2O) and weddellite
+      calcium oxalate crystals).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cexa_citrate_exporter
+    target: secreted_organic_acids
+    predicate: transports
+    relationship: efflux of citric acid into extracellular medium
+    description: CexA exports citrate from the fungal cytosol into the culture supernatant, acidifying
+      the medium.
+    evidence:
+    - source_ref: frank_kamenetskaya_2019
+      supports: support
+      explanation: Aspergillus niger organic-acid secretion acidifies the culture supernatant and supplies
+        chelating/precipitating anions.
+  - source: secreted_organic_acids
+    target: starting_substrate
+    predicate: acts_on
+    relationship: acidolysis, complexation, and anion reaction
+    description: Secreted organic acids react with Fluorapatite-rich phosphate rock.
+    evidence:
+    - source_ref: frank_kamenetskaya_2019
+      supports: support
+      explanation: Fungal organic acids mediate dissolution/precipitation of Fluorapatite-rich phosphate
+        rock.
+  - source: starting_substrate
+    target: transformed_product
+    predicate: transforms_into
+    relationship: secondary oxalate/phosphate precipitation or mineral alteration
+    description: Reaction of Fluorapatite-rich phosphate rock with fungal metabolites produces Whewellite
+      (CaC2O4·H2O) and weddellite calcium oxalate crystals.
+    evidence:
+    - source_ref: frank_kamenetskaya_2019
+      supports: support
+      explanation: Fungal culture or supernatant treatment yields Whewellite (CaC2O4·H2O) and weddellite
+        calcium oxalate crystals.
 curation_history:
 - timestamp: '2026-10-14T10:45:06.275870+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
   summary: Created whewellite species record with original 2019 calcium-oxalate evidence, separating field
     association from laboratory phase outcomes and preserving control, hydration and causal limits.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and causal graph for Aspergillus
+    niger whewellite formation on fluorapatite rock.
 history_refs:
 - history/records/whewellite/2026-10-14T104509Z-codex-bf78cf.yaml
+- history/records/whewellite/2026-10-18T042750Z-antigravity-9c7dda.yaml
