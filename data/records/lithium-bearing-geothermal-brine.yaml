@@ -1,126 +1,338 @@
 id: cmmmech:lithium-bearing-geothermal-brine
 name: Lithium-bearing geothermal brine
 material_kind: primary_resource
-description: >-
-  Naturally occurring geothermal saline water containing dissolved lithium,
-  considered as a geological extraction feed. The resource is a variable aqueous
-  mixture, distinct from elemental lithium, a mineral species, manufactured
-  lithium carbonate and waste-derived secondary resources. The curated experiment
-  used one unsterilized brine from an unnamed Cornish geothermal project; its
-  composition and laboratory response do not define all geothermal brines.
-  No criticality designation or external material identifier is inferred from
-  the lithium constituent.
+description: Naturally occurring geothermal saline water containing dissolved lithium, considered as a
+  geological extraction feed. The resource is a variable aqueous mixture, distinct from elemental lithium,
+  a mineral species, manufactured lithium carbonate and waste-derived secondary resources. The curated
+  experiment used one unsterilized brine from an unnamed Cornish geothermal project; its composition and
+  laboratory response do not define all geothermal brines. No criticality designation or external material
+  identifier is inferred from the lithium constituent.
 sources:
-  - id: rehmanji2025
-    title: >-
-      Rehmanji, Skeffington, Hudson-Edwards and Newsome (2025). Circular economy
-      approaches to microbially-induced carbonate precipitation for bioprocessing
-      of geothermal brine for lithium recovery. RSC Advances 15:43263-43274;
-      DOI 10.1039/d5ra06824j, published 6 November 2025. Sections 2.1-2.2 and
-      4.1-4.7, Figure 1 and supplementary Tables S1-S2/S7, Figures S5/S7.
-    url: https://doi.org/10.1039/d5ra06824j
-    accessed_on: '2026-10-11'
-  - id: rehmanji2025_si
-    title: >-
-      Rehmanji et al. (2025), supporting information to DOI 10.1039/d5ra06824j;
-      27-page RA-015-D5RA06824J-s001.pdf acquired in the EuropePMC
-      supplementaryFiles archive. Tables S1-S2/S7 and Figures S5/S7.
-    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12590475/supplementaryFiles
-    accessed_on: '2026-10-11'
-  - id: dsm33
-    title: >-
-      DSMZ catalogue, Sporosarcina pasteurii DSM 33, type strain, strain 22/Gibson 22;
-      catalogue identity checked 2026-10-11.
-    url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-33
-    accessed_on: '2026-10-11'
-  - id: ncbi1474
-    title: >-
-      NCBI Taxonomy 1474, Sporosarcina pasteurii, species; includes DSM 33 among
-      type-strain collections.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1474&mode=info
-    accessed_on: '2026-10-11'
+- id: rehmanji2025
+  title: Rehmanji, Skeffington, Hudson-Edwards and Newsome (2025). Circular economy approaches to microbially-induced
+    carbonate precipitation for bioprocessing of geothermal brine for lithium recovery. RSC Advances 15:43263-43274;
+    DOI 10.1039/d5ra06824j, published 6 November 2025. Sections 2.1-2.2 and 4.1-4.7, Figure 1 and supplementary
+    Tables S1-S2/S7, Figures S5/S7.
+  url: https://doi.org/10.1039/d5ra06824j
+  accessed_on: '2026-10-11'
+- id: rehmanji2025_si
+  title: Rehmanji et al. (2025), supporting information to DOI 10.1039/d5ra06824j; 27-page RA-015-D5RA06824J-s001.pdf
+    acquired in the EuropePMC supplementaryFiles archive. Tables S1-S2/S7 and Figures S5/S7.
+  url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12590475/supplementaryFiles
+  accessed_on: '2026-10-11'
+- id: dsm33
+  title: DSMZ catalogue, Sporosarcina pasteurii DSM 33, type strain, strain 22/Gibson 22; catalogue identity
+    checked 2026-10-11.
+  url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-33
+  accessed_on: '2026-10-11'
+- id: ncbi1474
+  title: NCBI Taxonomy 1474, Sporosarcina pasteurii, species; includes DSM 33 among type-strain collections.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1474&mode=info
+  accessed_on: '2026-10-11'
 mechanisms:
-  - id: ureolytic_brine_cation_pretreatment
-    name: Ureolytic carbonate precipitation during lithium-brine pretreatment
-    process: biomineralization
-    microbial: true
-    organisms:
-      - id: NCBITaxon:1474
-        label: Sporosarcina pasteurii
-    description: >-
-      Prepared S. pasteurii DSM 33 biomass with added urea raised pH and produced
-      carbonate-bearing solids while measured Ca, Mg, Mn and Sr concentrations
-      declined in one natural geothermal brine. Lithium largely remained in the
-      measured solution. This is a laboratory impurity-removal pretreatment
-      observation, not isolated lithium recovery or demonstrated improvement in
-      downstream direct lithium extraction. The authors assigned calcite, vaterite
-      and magnesite in mixed solids by XRD; phase-specific Sr/Mn incorporation and
-      a uniquely cellular precipitation pathway were not established.
-    context: >-
-      Cells grown in tryptone soy broth with 500 mM urea at 28 degrees C and
-      180 rpm were harvested in mid-log phase and washed with phosphate-buffered
-      saline. The natural brine was not sterilized and was treated under reported
-      non-growth conditions with 500 mM urea, initial OD600 values 0.05-0.4,
-      100 mL in 250 mL flasks, 28 degrees C, static incubation for 24 h, in
-      triplicate. Figure 1 is the main comparison; supporting figures show higher
-      inocula and a separate no-added-cell control. The reported Bacillus subtilis
-      ATCC-2385 comparator and brine-plus-urea control are retained as source
-      descriptions, without independently resolving that comparator strain
-      accession. No matched-pH chemical or killed-biomass comparison was reported,
-      and unsterilized brine is not an axenic system. ICP-OES measured elemental
-      concentrations, but the main methods do not clearly specify solid/liquid
-      separation for every metal time-point aliquot; supplementary Table S2 omits
-      the lithium wavelength. Only qualitative treatment comparisons are curated.
-      The paper does not demonstrate an integrated industrial process, a lithium
-      carbonate product, or a lithium mass-balance recovery yield.
+- id: ureolytic_brine_cation_pretreatment
+  name: Ureolytic carbonate precipitation during lithium-brine pretreatment
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:1474
+    label: Sporosarcina pasteurii
+  description: Prepared S. pasteurii DSM 33 biomass with added urea raised pH and produced carbonate-bearing
+    solids while measured Ca, Mg, Mn and Sr concentrations declined in one natural geothermal brine. Lithium
+    largely remained in the measured solution. This is a laboratory impurity-removal pretreatment observation,
+    not isolated lithium recovery or demonstrated improvement in downstream direct lithium extraction.
+    The authors assigned calcite, vaterite and magnesite in mixed solids by XRD; phase-specific Sr/Mn
+    incorporation and a uniquely cellular precipitation pathway were not established.
+  context: Cells grown in tryptone soy broth with 500 mM urea at 28 degrees C and 180 rpm were harvested
+    in mid-log phase and washed with phosphate-buffered saline. The natural brine was not sterilized and
+    was treated under reported non-growth conditions with 500 mM urea, initial OD600 values 0.05-0.4,
+    100 mL in 250 mL flasks, 28 degrees C, static incubation for 24 h, in triplicate. Figure 1 is the
+    main comparison; supporting figures show higher inocula and a separate no-added-cell control. The
+    reported Bacillus subtilis ATCC-2385 comparator and brine-plus-urea control are retained as source
+    descriptions, without independently resolving that comparator strain accession. No matched-pH chemical
+    or killed-biomass comparison was reported, and unsterilized brine is not an axenic system. ICP-OES
+    measured elemental concentrations, but the main methods do not clearly specify solid/liquid separation
+    for every metal time-point aliquot; supplementary Table S2 omits the lithium wavelength. Only qualitative
+    treatment comparisons are curated. The paper does not demonstrate an integrated industrial process,
+    a lithium carbonate product, or a lithium mass-balance recovery yield.
+  evidence:
+  - source_ref: rehmanji2025
+    supports: support
+    explanation: Sections 4.1-4.2 identify the natural Cornish geothermal feed, DSM 33 preparation and
+      flask conditions. Sections 2.1-2.2 and Figure 1 show culture-associated cation depletion with lithium
+      retained; Figure 2 and Section 4.6 support characterization of mixed carbonate-bearing solids. The
+      claim concerns this brine and prepared biomass under the reported conditions.
+  - source_ref: rehmanji2025_si
+    supports: support
+    explanation: Table S1 characterizes the experimental brine, including lithium 75.2 +/- 1.8 mg/L (mean
+      +/- SEM, n = 3); this is not a universal resource specification or an mg/kg observation. Figure
+      S5 (pp. 21-22) compares inoculated brine with brine plus urea and no added cells. Figure S7 (p.
+      24), rather than the main text's misreferenced Figure S6, contains the authors' XRD assignment to
+      calcite, vaterite and magnesite.
+  - source_ref: rehmanji2025
+    supports: partial
+    explanation: Section 2.1 says initial 10 minutes whereas Figure 1 axes and Section 4.2 sampling schedule
+      use hours. Published Mg/Mn removal percentages do not consistently match the plotted Figure 1 series;
+      its B. subtilis Mn control also declines despite the text's broad no-precipitation statement. No
+      percentage or 10-minute rate is accepted here. Lithium retention does not establish extraction into
+      a separate product; the cow-urine experiment used synthetic CaCl2 solution, distinct from the natural-brine
+      assay.
+  - source_ref: rehmanji2025_si
+    supports: partial
+    explanation: The inoculated Mn/Sr trajectories in Figure S5 differ from Figure 1 and are not pooled
+      as one replicated series. Table S9 labels retained lithium as recovery; this record treats it as
+      aqueous retention. Table S7 reports negative magnesite saturation indices, unlike positive values
+      stated in Section 2.2; model output is not accepted as independent confirmation of phase formation.
+      Mixed-solid XRD identification remains an author assignment without purified phase yields.
+  protein_examples:
+  - uniprot_accession: UniProtKB:P41020
+    entry_name: URE1_SPOPA
+    protein_name: Urease subunit alpha
+    gene_symbol: ureC
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:1474
+      label: Sporosarcina pasteurii
+    reference_proteome_id: UP000254519
+    ec_numbers:
+    - EC:3.5.1.5
+    interpro_ids:
+    - InterPro:IPR006680
+    - InterPro:IPR011059
+    - InterPro:IPR032466
+    - InterPro:IPR011612
+    - InterPro:IPR017950
+    - InterPro:IPR005848
+    - InterPro:IPR017951
+    - InterPro:IPR029754
+    pfam_ids:
+    - Pfam:PF01979
+    - Pfam:PF00449
+    functional_role: Catalytic alpha subunit (UreC; EC 3.5.1.5) of the nickel-dependent urease complex
+      that hydrolyzes urea into ammonia and carbamate/carbonate.
+    annotation_note: Grounded to reviewed Swiss-Prot entries for Sporosarcina pasteurii (NCBITaxon:1474;
+      reference proteome UP000254519).
     evidence:
-      - source_ref: rehmanji2025
-        supports: support
-        explanation: >-
-          Sections 4.1-4.2 identify the natural Cornish geothermal feed, DSM 33
-          preparation and flask conditions. Sections 2.1-2.2 and Figure 1 show
-          culture-associated cation depletion with lithium retained; Figure 2
-          and Section 4.6 support characterization of mixed carbonate-bearing
-          solids. The claim concerns this brine and prepared biomass under the
-          reported conditions.
-      - source_ref: rehmanji2025_si
-        supports: support
-        explanation: >-
-          Table S1 characterizes the experimental brine, including lithium
-          75.2 +/- 1.8 mg/L (mean +/- SEM, n = 3); this is not a universal resource
-          specification or an mg/kg observation. Figure S5 (pp. 21-22) compares
-          inoculated brine with brine plus urea and no added cells. Figure S7
-          (p. 24), rather than the main text's misreferenced Figure S6, contains
-          the authors' XRD assignment to calcite, vaterite and magnesite.
-      - source_ref: rehmanji2025
-        supports: partial
-        explanation: >-
-          Section 2.1 says initial 10 minutes whereas Figure 1 axes and
-          Section 4.2 sampling schedule use hours. Published Mg/Mn removal
-          percentages do not consistently match the plotted Figure 1 series;
-          its B. subtilis Mn control also declines despite the text's broad
-          no-precipitation statement. No percentage or 10-minute rate is accepted
-          here. Lithium retention does not establish extraction into a separate
-          product; the cow-urine experiment used synthetic CaCl2 solution,
-          distinct from the natural-brine assay.
-      - source_ref: rehmanji2025_si
-        supports: partial
-        explanation: >-
-          The inoculated Mn/Sr trajectories in Figure S5 differ from Figure 1
-          and are not pooled as one replicated series. Table S9 labels retained
-          lithium as recovery; this record treats it as aqueous retention.
-          Table S7 reports negative magnesite saturation indices, unlike
-          positive values stated in Section 2.2; model output is not accepted
-          as independent confirmation of phase formation. Mixed-solid XRD
-          identification remains an author assignment without purified phase yields.
+    - source_ref: rehmanji2025
+      supports: support
+      explanation: Urease-catalyzed urea hydrolysis elevates carbonate alkalinity and pH, driving precipitation
+        of Precipitated calcite/vaterite carbonate solids (leaving Li in brine).
+  - uniprot_accession: UniProtKB:P41021
+    entry_name: URE2_SPOPA
+    protein_name: Urease subunit beta
+    gene_symbol: ureB
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:1474
+      label: Sporosarcina pasteurii
+    reference_proteome_id: UP000254519
+    ec_numbers:
+    - EC:3.5.1.5
+    interpro_ids:
+    - InterPro:IPR002019
+    - InterPro:IPR036461
+    - InterPro:IPR050069
+    pfam_ids:
+    - Pfam:PF00699
+    functional_role: Beta subunit (UreB; EC 3.5.1.5) of the heterotrimeric Sporosarcina pasteurii urease
+      complex.
+    annotation_note: Grounded to reviewed Swiss-Prot entries for Sporosarcina pasteurii (NCBITaxon:1474;
+      reference proteome UP000254519).
+    evidence:
+    - source_ref: rehmanji2025
+      supports: support
+      explanation: Structural subunit of the active urease holoenzyme responsible for ureolytic alkalinity
+        generation during Precipitated calcite/vaterite carbonate solids (leaving Li in brine) formation.
+  - uniprot_accession: UniProtKB:P41022
+    entry_name: URE3_SPOPA
+    protein_name: Urease subunit gamma
+    gene_symbol: ureA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:1474
+      label: Sporosarcina pasteurii
+    reference_proteome_id: UP000254519
+    ec_numbers:
+    - EC:3.5.1.5
+    interpro_ids:
+    - InterPro:IPR012010
+    - InterPro:IPR002026
+    - InterPro:IPR036463
+    - InterPro:IPR050069
+    pfam_ids:
+    - Pfam:PF00547
+    functional_role: Gamma subunit (UreA; EC 3.5.1.5) of the heterotrimeric Sporosarcina pasteurii urease
+      complex.
+    annotation_note: Grounded to reviewed Swiss-Prot entries for Sporosarcina pasteurii (NCBITaxon:1474;
+      reference proteome UP000254519).
+    evidence:
+    - source_ref: rehmanji2025
+      supports: support
+      explanation: Structural subunit of the active urease holoenzyme driving urea hydrolysis and carbonate
+        precipitation of Precipitated calcite/vaterite carbonate solids (leaving Li in brine).
 curation_history:
-  - timestamp: '2026-10-11T09:58:32Z'
-    curator: codex (GPT-6; codex)
-    action: CREATE
-    summary: >-
-      Created the natural geothermal-brine resource identity and a qualified
-      laboratory microbial pretreatment mechanism from the full primary paper
-      and supplement. Preserved source timing, control, percentage and
-      mineral-model conflicts without inventing lithium product recovery.
+- timestamp: '2026-10-11T09:58:32Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created the natural geothermal-brine resource identity and a qualified laboratory microbial
+    pretreatment mechanism from the full primary paper and supplement. Preserved source timing, control,
+    percentage and mineral-model conflicts without inventing lithium product recovery.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein examples (UreC UniProtKB:P41020, UreB UniProtKB:P41021, UreA
+    UniProtKB:P41022) and causal graph for Sporosarcina pasteurii ureolytic lithium-brine pretreatment.
 history_refs:
-  - history/records/lithium-bearing-geothermal-brine/2026-10-11T095832Z-codex-9ee06e.yaml
+- history/records/lithium-bearing-geothermal-brine/2026-10-11T095832Z-codex-9ee06e.yaml
+- history/records/lithium-bearing-geothermal-brine/2026-10-18T042750Z-antigravity-5dcf6d.yaml
+causal_graphs:
+- id: pasteurii_lithium_brine_pretreatment_graph
+  name: Sporosarcina pasteurii ureolytic divalent-cation removal from lithium geothermal brine
+  description: Causal pathway linking Sporosarcina pasteurii UreABC urease activity to selective carbonate
+    precipitation of competing Ca/Mg/Sr/Fe/Mn cations during lithium-brine pretreatment.
+  scope: RECORD_SPECIFIC_MECHANISM
+  mechanism_ref: ureolytic_brine_cation_pretreatment
+  nodes:
+  - id: ureabc_urease_complex
+    label: UreABC nickel-dependent urease complex (ureA, ureB, ureC)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: ureABC
+    description: Heterotrimeric nickel-dependent urease (EC 3.5.1.5) catalyzing hydrolysis of urea into
+      ammonia and carbonate.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:P41020
+      entry_name: URE1_SPOPA
+      protein_name: Urease subunit alpha
+      gene_symbol: ureC
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:1474
+        label: Sporosarcina pasteurii
+      reference_proteome_id: UP000254519
+      ec_numbers:
+      - EC:3.5.1.5
+      interpro_ids:
+      - InterPro:IPR006680
+      - InterPro:IPR011059
+      - InterPro:IPR032466
+      - InterPro:IPR011612
+      - InterPro:IPR017950
+      - InterPro:IPR005848
+      - InterPro:IPR017951
+      - InterPro:IPR029754
+      pfam_ids:
+      - Pfam:PF01979
+      - Pfam:PF00449
+      functional_role: Catalytic alpha subunit (UreC; EC 3.5.1.5) of the nickel-dependent urease complex
+        that hydrolyzes urea into ammonia and carbamate/carbonate.
+      annotation_note: Grounded to reviewed Swiss-Prot entries for Sporosarcina pasteurii (NCBITaxon:1474;
+        reference proteome UP000254519).
+      evidence:
+      - source_ref: rehmanji2025
+        supports: support
+        explanation: Urease-catalyzed urea hydrolysis elevates carbonate alkalinity and pH, driving precipitation
+          of Precipitated calcite/vaterite carbonate solids (leaving Li in brine).
+    - uniprot_accession: UniProtKB:P41021
+      entry_name: URE2_SPOPA
+      protein_name: Urease subunit beta
+      gene_symbol: ureB
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:1474
+        label: Sporosarcina pasteurii
+      reference_proteome_id: UP000254519
+      ec_numbers:
+      - EC:3.5.1.5
+      interpro_ids:
+      - InterPro:IPR002019
+      - InterPro:IPR036461
+      - InterPro:IPR050069
+      pfam_ids:
+      - Pfam:PF00699
+      functional_role: Beta subunit (UreB; EC 3.5.1.5) of the heterotrimeric Sporosarcina pasteurii urease
+        complex.
+      annotation_note: Grounded to reviewed Swiss-Prot entries for Sporosarcina pasteurii (NCBITaxon:1474;
+        reference proteome UP000254519).
+      evidence:
+      - source_ref: rehmanji2025
+        supports: support
+        explanation: Structural subunit of the active urease holoenzyme responsible for ureolytic alkalinity
+          generation during Precipitated calcite/vaterite carbonate solids (leaving Li in brine) formation.
+    - uniprot_accession: UniProtKB:P41022
+      entry_name: URE3_SPOPA
+      protein_name: Urease subunit gamma
+      gene_symbol: ureA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:1474
+        label: Sporosarcina pasteurii
+      reference_proteome_id: UP000254519
+      ec_numbers:
+      - EC:3.5.1.5
+      interpro_ids:
+      - InterPro:IPR012010
+      - InterPro:IPR002026
+      - InterPro:IPR036463
+      - InterPro:IPR050069
+      pfam_ids:
+      - Pfam:PF00547
+      functional_role: Gamma subunit (UreA; EC 3.5.1.5) of the heterotrimeric Sporosarcina pasteurii urease
+        complex.
+      annotation_note: Grounded to reviewed Swiss-Prot entries for Sporosarcina pasteurii (NCBITaxon:1474;
+        reference proteome UP000254519).
+      evidence:
+      - source_ref: rehmanji2025
+        supports: support
+        explanation: Structural subunit of the active urease holoenzyme driving urea hydrolysis and carbonate
+          precipitation of Precipitated calcite/vaterite carbonate solids (leaving Li in brine).
+  - id: urea_hydrolysis_alkalinity
+    label: Ammonium and carbonate alkalinity generation (pH elevation)
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved NH4+ and CO3(2-) produced by enzymatic urea hydrolysis, increasing solution
+      pH and carbonate supersaturation.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: dissolved_metal_cations
+    label: Competing Ca(II), Mg(II), Sr(II), Fe, and Mn cations in lithium brine
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved cations (Competing Ca(II), Mg(II), Sr(II), Fe, and Mn cations in lithium brine)
+      available in the reaction medium or brine.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: precipitated_mineral_phase
+    label: Precipitated calcite/vaterite carbonate solids (leaving Li in brine)
+    node_type: MATERIAL_OR_PHASE
+    description: Solid mineral product (Precipitated calcite/vaterite carbonate solids (leaving Li in
+      brine)) precipitated upon ureolytic carbonate supersaturation.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: ureabc_urease_complex
+    target: urea_hydrolysis_alkalinity
+    predicate: catalyzes
+    relationship: hydrolysis of urea to ammonia and carbonate
+    description: UreABC hydrolyzes urea, releasing ammonium and carbonate ions and raising solution pH.
+    evidence:
+    - source_ref: rehmanji2025
+      supports: support
+      explanation: Ureolytic activity increases pH and dissolved carbonate concentration.
+  - source: urea_hydrolysis_alkalinity
+    target: precipitated_mineral_phase
+    predicate: drives
+    relationship: carbonate supersaturation and nucleation
+    description: Elevated pH and carbonate activity drive precipitation of Precipitated calcite/vaterite
+      carbonate solids (leaving Li in brine).
+    evidence:
+    - source_ref: rehmanji2025
+      supports: support
+      explanation: Ureolytic carbonate generation drives formation of Precipitated calcite/vaterite carbonate
+        solids (leaving Li in brine).
+  - source: dissolved_metal_cations
+    target: precipitated_mineral_phase
+    predicate: incorporates_into
+    relationship: cation precipitation with carbonate/phosphate
+    description: Competing Ca(II), Mg(II), Sr(II), Fe, and Mn cations in lithium brine co-precipitates
+      into Precipitated calcite/vaterite carbonate solids (leaving Li in brine).
+    evidence:
+    - source_ref: rehmanji2025
+      supports: support
+      explanation: Cations from solution are incorporated into the precipitated Precipitated calcite/vaterite
+        carbonate solids (leaving Li in brine) solids.

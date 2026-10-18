@@ -86,6 +86,25 @@ def _observation_errors(observation, path: str) -> list[str]:
     return errors
 
 
+def _protein_example_errors(
+    examples: list[dict], path: str, references: list[tuple[str, str]]
+) -> list[str]:
+    errors = []
+    counts = Counter(item["uniprot_accession"] for item in examples)
+    errors.extend(
+        f"{path}: duplicate uniprot_accession {acc}"
+        for acc, count in counts.items()
+        if count > 1
+    )
+    for p_idx, pe in enumerate(examples):
+        pe_path = f"{path}/{p_idx}"
+        references.extend(
+            (f"{pe_path}/evidence/{e_idx}", ev["source_ref"])
+            for e_idx, ev in enumerate(pe.get("evidence", []))
+        )
+    return errors
+
+
 def validate_record(record) -> list[str]:
     errors = [
         f"{'/'.join(map(str, error.absolute_path)) or '$'}: {error.message}"
@@ -94,7 +113,7 @@ def validate_record(record) -> list[str]:
     if errors:
         return sorted(errors)
 
-    for section in ("sources", "mechanisms"):
+    for section in ("sources", "mechanisms", "causal_graphs"):
         counts = Counter(item["id"] for item in record.get(section, []))
         errors.extend(f"{section}: duplicate id {key}" for key, count in counts.items() if count > 1)
     history = record.get("history_refs", [])
@@ -108,6 +127,15 @@ def validate_record(record) -> list[str]:
     for index, mechanism in enumerate(record.get("mechanisms", [])):
         if mechanism.get("organisms") and not mechanism["microbial"]:
             errors.append(f"mechanisms/{index}: organisms require microbial: true")
+        if mechanism.get("protein_examples") and not mechanism["microbial"]:
+            errors.append(f"mechanisms/{index}: protein_examples require microbial: true")
+        errors.extend(
+            _protein_example_errors(
+                mechanism.get("protein_examples", []),
+                f"mechanisms/{index}/protein_examples",
+                references,
+            )
+        )
         references.extend((f"mechanisms/{index}/evidence/{i}", item["source_ref"])
                           for i, item in enumerate(mechanism["evidence"]))
         evidence_sources = {item["source_ref"] for item in mechanism["evidence"]}
@@ -126,6 +154,43 @@ def validate_record(record) -> list[str]:
                 errors.append(f"{path}: duplicate source concentration cell")
             source_cells.add(cell)
             errors.extend(_observation_errors(observation, path))
+    mechanism_ids = {m["id"] for m in record.get("mechanisms", [])}
+    for g_idx, graph in enumerate(record.get("causal_graphs", [])):
+        g_path = f"causal_graphs/{g_idx}"
+        if graph.get("mechanism_ref") and graph["mechanism_ref"] not in mechanism_ids:
+            errors.append(f"{g_path}: unknown mechanism_ref {graph['mechanism_ref']}")
+        node_counts = Counter(node["id"] for node in graph.get("nodes", []))
+        errors.extend(
+            f"{g_path}/nodes: duplicate id {key}"
+            for key, count in node_counts.items()
+            if count > 1
+        )
+        node_ids = {node["id"] for node in graph.get("nodes", [])}
+        for n_idx, node in enumerate(graph.get("nodes", [])):
+            n_path = f"{g_path}/nodes/{n_idx}"
+            p_examples = node.get("protein_examples", [])
+            status = node.get("protein_grounding_status")
+            if node["node_type"] != "GENE_OR_PROTEIN" and p_examples:
+                errors.append(
+                    f"{n_path}: protein_examples are only permitted on GENE_OR_PROTEIN nodes"
+                )
+            if status == "GROUNDED" and not p_examples:
+                errors.append(f"{n_path}: GROUNDED node requires protein_examples")
+            if status in {"UNGROUNDED", "NOT_APPLICABLE"} and p_examples:
+                errors.append(f"{n_path}: {status} node cannot have protein_examples")
+            errors.extend(
+                _protein_example_errors(p_examples, f"{n_path}/protein_examples", references)
+            )
+        for e_idx, edge in enumerate(graph.get("edges", [])):
+            e_path = f"{g_path}/edges/{e_idx}"
+            if edge["source"] not in node_ids:
+                errors.append(f"{e_path}: unknown source node {edge['source']}")
+            if edge["target"] not in node_ids:
+                errors.append(f"{e_path}: unknown target node {edge['target']}")
+            references.extend(
+                (f"{e_path}/evidence/{ev_idx}", ev["source_ref"])
+                for ev_idx, ev in enumerate(edge.get("evidence", []))
+            )
     errors.extend(f"{path}: unknown source_ref {key}" for path, key in references if key not in sources)
     return sorted(errors)
 
@@ -133,3 +198,4 @@ def validate_record(record) -> list[str]:
 def read_record(path: Path):
     with path.open(encoding="utf-8") as stream:
         return yaml.load(stream, Loader=UniqueKeyLoader)
+

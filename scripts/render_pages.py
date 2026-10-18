@@ -71,6 +71,12 @@ PREFIX_URL = {
     "DOI": "https://doi.org/",
     "PMID": "https://pubmed.ncbi.nlm.nih.gov/",
     "GO": "http://purl.obolibrary.org/obo/GO_",
+    "UniProtKB": "https://www.uniprot.org/uniprotkb/",
+    "InterPro": "https://www.ebi.ac.uk/interpro/entry/InterPro/",
+    "Pfam": "https://www.ebi.ac.uk/interpro/entry/pfam/",
+    "NCBIfam": "https://www.ncbi.nlm.nih.gov/genome/annotation_prok/evidence/",
+    "ComplexPortal": "https://www.ebi.ac.uk/complexportal/complex/",
+    "EC": "https://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=",
 }
 
 
@@ -124,6 +130,7 @@ def prepare_record_data(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
 
     organisms = []
     seen_orgs = set()
+    protein_tokens = []
     for m in mechanisms:
         for org in m.get("organisms") or []:
             oid = org.get("id", "")
@@ -134,6 +141,35 @@ def prepare_record_data(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
                     "label": org.get("label", oid),
                     "url": curie_url(oid),
                 })
+        for pe in m.get("protein_examples") or []:
+            protein_tokens.extend(
+                filter(
+                    None,
+                    [
+                        pe.get("uniprot_accession"),
+                        pe.get("entry_name"),
+                        pe.get("protein_name"),
+                        pe.get("gene_symbol"),
+                    ],
+                )
+            )
+
+    causal_graphs = doc.get("causal_graphs") or []
+    for cg in causal_graphs:
+        for node in cg.get("nodes") or []:
+            protein_tokens.extend(filter(None, [node.get("label"), node.get("gene_symbol")]))
+            for pe in node.get("protein_examples") or []:
+                protein_tokens.extend(
+                    filter(
+                        None,
+                        [
+                            pe.get("uniprot_accession"),
+                            pe.get("entry_name"),
+                            pe.get("protein_name"),
+                            pe.get("gene_symbol"),
+                        ],
+                    )
+                )
 
     # Search text for client-side filter
     search_parts = [
@@ -146,6 +182,7 @@ def prepare_record_data(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
         " ".join(mechanism_processes),
         " ".join(o["label"] for o in organisms),
         " ".join(o["id"] for o in organisms),
+        " ".join(protein_tokens),
         criticality_summary,
     ]
     search_text = " ".join(filter(None, search_parts)).lower()
@@ -168,6 +205,7 @@ def prepare_record_data(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
         "is_critical": is_critical,
         "criticality_summary": criticality_summary,
         "mechanisms": mechanisms,
+        "causal_graphs": causal_graphs,
         "mechanism_processes": mechanism_processes,
         "organisms": organisms,
         "sources": doc.get("sources") or [],

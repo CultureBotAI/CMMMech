@@ -1,173 +1,246 @@
 id: cmmmech:zincite
 name: Zincite
 material_kind: mineral
-description: >-
-  Zincite is the hexagonal ZnO mineral species listed by IMA-CNMNC in
-  September 2026 with grandfathered status G and original-description
-  year 1845, not a numbered approval. The Handbook documents natural
-  Zn-dominant oxide with possible Mn substitution. This owner is distinct
-  from elemental zinc, hydrozincite, zinc oxalate and mixed zinc-bearing
-  wastes. Evidence below concerns commercial zincite-structured ZnO in
-  fungal experiments and a separate source-described natural zincite
-  specimen in an abiotic dissolution experiment. Commercial particles are
-  synthetic analogues, not natural ore. No criticality designation,
+description: Zincite is the hexagonal ZnO mineral species listed by IMA-CNMNC in September 2026 with grandfathered
+  status G and original-description year 1845, not a numbered approval. The Handbook documents natural
+  Zn-dominant oxide with possible Mn substitution. This owner is distinct from elemental zinc, hydrozincite,
+  zinc oxalate and mixed zinc-bearing wastes. Evidence below concerns commercial zincite-structured ZnO
+  in fungal experiments and a separate source-described natural zincite specimen in an abiotic dissolution
+  experiment. Commercial particles are synthetic analogues, not natural ore. No criticality designation,
   phase-specific recovery yield or industrial deployment is asserted.
 sources:
-  - id: ima_2026_09
-    title: >-
-      IMA-CNMNC, The New IMA List of Minerals, September 2026. Definitions
-      PDF page 1 and Zincite row page 241: ZnO, G, 1845. Retained official
-      original rechecked against current issuing-site listing.
-    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
-    accessed_on: '2026-10-15'
-  - id: handbook_zincite
-    title: >-
-      Handbook of Mineralogy, Zincite, complete one-page version 1
-      datasheet, copyright 2001-2005; hexagonal structure, composition
-      (Zn,Mn2+)O and natural occurrence.
-    url: https://www.handbookofmineralogy.org/pdfs/zincite.pdf
-    accessed_on: '2026-10-15'
-  - id: sebesta2020
-    title: >-
-      Sebesta M et al. (2020). Fungus Aspergillus niger Processes Exogenous
-      Zinc Nanoparticles into a Biogenic Oxalate Mineral. Journal of Fungi
-      6, 210. DOI 10.3390/jof6040210. Complete ten-page original, Figures
-      1-5 and official six-page supplement including Table S1/Figure S1.
-    url: https://doi.org/10.3390/jof6040210
-    accessed_on: '2026-10-15'
-  - id: koskela2022
-    title: >-
-      Koskela KM, Quiton SJ, Sharada SM, Williams TJ and Brutchey RL (2022).
-      Kinetics and mechanistic details of bulk ZnO dissolution using a
-      thiol-imidazole system. Chemical Science 13, 3208-3215.
-      DOI 10.1039/D1SC06667F. Complete original text, NSF-deposited
-      thirteen-page manuscript and official twenty-one-page ESI; natural
-      zincite subsection and Figures S29-S31 are the curated specimen arm.
-    url: https://doi.org/10.1039/D1SC06667F
-    accessed_on: '2026-10-15'
-  - id: ncbi_niger
-    title: >-
-      NCBI Taxonomy 5061, Aspergillus niger, species. Current taxonomy XML
-      inspected; species identifier does not independently authenticate
-      source strain CBS 140837.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=info
-    accessed_on: '2026-10-15'
+- id: ima_2026_09
+  title: 'IMA-CNMNC, The New IMA List of Minerals, September 2026. Definitions PDF page 1 and Zincite
+    row page 241: ZnO, G, 1845. Retained official original rechecked against current issuing-site listing.'
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-15'
+- id: handbook_zincite
+  title: Handbook of Mineralogy, Zincite, complete one-page version 1 datasheet, copyright 2001-2005;
+    hexagonal structure, composition (Zn,Mn2+)O and natural occurrence.
+  url: https://www.handbookofmineralogy.org/pdfs/zincite.pdf
+  accessed_on: '2026-10-15'
+- id: sebesta2020
+  title: Sebesta M et al. (2020). Fungus Aspergillus niger Processes Exogenous Zinc Nanoparticles into
+    a Biogenic Oxalate Mineral. Journal of Fungi 6, 210. DOI 10.3390/jof6040210. Complete ten-page original,
+    Figures 1-5 and official six-page supplement including Table S1/Figure S1.
+  url: https://doi.org/10.3390/jof6040210
+  accessed_on: '2026-10-15'
+- id: koskela2022
+  title: Koskela KM, Quiton SJ, Sharada SM, Williams TJ and Brutchey RL (2022). Kinetics and mechanistic
+    details of bulk ZnO dissolution using a thiol-imidazole system. Chemical Science 13, 3208-3215. DOI
+    10.1039/D1SC06667F. Complete original text, NSF-deposited thirteen-page manuscript and official twenty-one-page
+    ESI; natural zincite subsection and Figures S29-S31 are the curated specimen arm.
+  url: https://doi.org/10.1039/D1SC06667F
+  accessed_on: '2026-10-15'
+- id: ncbi_niger
+  title: NCBI Taxonomy 5061, Aspergillus niger, species. Current taxonomy XML inspected; species identifier
+    does not independently authenticate source strain CBS 140837.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=info
+  accessed_on: '2026-10-15'
 mechanisms:
-  - id: fungal_metabolite_associated_partial_transformation
-    name: Partial transformation of zincite-structured nanoparticles by fungal-conditioned liquid
-    process: biomineralization
-    microbial: true
-    organisms:
-      - id: NCBITaxon:5061
-        label: Aspergillus niger
-    description: >-
-      Liquid conditioned by Aspergillus niger CBS 140837 transformed part
-      of a commercial ZnO nanoparticle preparation into a zinc oxalate
-      dihydrate-assigned phase while residual zincite remained. The fungus
-      conditioned the liquid upstream; live-cell contact during the
-      nanoparticle reaction was not demonstrated. Dissolution followed by
-      oxalate precipitation is consistent with the observations, but the
-      specific ligand requirement and proposed core-shell architecture
-      were not established by matched controls or spatial phase mapping.
-    context: >-
-      Sebesta et al. Sections 2.2-2.4 describe seven-day static fungal
-      growth in Sabouraud medium at 25 degrees C in darkness, then transfer
-      of harvested mycelium into 50 mL sterilized distilled water for
-      three days. After biomass removal and 0.45 micrometre filtration,
-      47.5 mL conditioned liquid was combined with 2.5 mL commercial ZnO
-      dispersion, reported as 500 mg ZnO nanoparticles, and reacted
-      statically for five days. Reaction temperature, independent
-      replication, drying temperature and post-filtration sterility were
-      not separately established for this arm. The decanted white solid
-      was dried for XRD/TEM. No time-matched unconditioned-water,
-      pH-matched or pure-oxalate comparison is reported for this phase
-      experiment. It is separate from the seven-day live-culture assay
-      nominally dosed at 6.5 mg Zn/L and is not a soil or ore-leaching test.
+- id: fungal_metabolite_associated_partial_transformation
+  name: Partial transformation of zincite-structured nanoparticles by fungal-conditioned liquid
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:5061
+    label: Aspergillus niger
+  description: Liquid conditioned by Aspergillus niger CBS 140837 transformed part of a commercial ZnO
+    nanoparticle preparation into a zinc oxalate dihydrate-assigned phase while residual zincite remained.
+    The fungus conditioned the liquid upstream; live-cell contact during the nanoparticle reaction was
+    not demonstrated. Dissolution followed by oxalate precipitation is consistent with the observations,
+    but the specific ligand requirement and proposed core-shell architecture were not established by matched
+    controls or spatial phase mapping.
+  context: Sebesta et al. Sections 2.2-2.4 describe seven-day static fungal growth in Sabouraud medium
+    at 25 degrees C in darkness, then transfer of harvested mycelium into 50 mL sterilized distilled water
+    for three days. After biomass removal and 0.45 micrometre filtration, 47.5 mL conditioned liquid was
+    combined with 2.5 mL commercial ZnO dispersion, reported as 500 mg ZnO nanoparticles, and reacted
+    statically for five days. Reaction temperature, independent replication, drying temperature and post-filtration
+    sterility were not separately established for this arm. The decanted white solid was dried for XRD/TEM.
+    No time-matched unconditioned-water, pH-matched or pure-oxalate comparison is reported for this phase
+    experiment. It is separate from the seven-day live-culture assay nominally dosed at 6.5 mg Zn/L and
+    is not a soil or ore-leaching test.
+  evidence:
+  - source_ref: sebesta2020
+    supports: support
+    explanation: Section 2.4 and Figure 4 explicitly compare starting bulk ZnO, starting nanoparticles
+      and the five-day product with zincite and zinc oxalate dihydrate references. The product contains
+      both assigned phases. Section 3.2 and Figure 5 show particles without a substantial size change,
+      supporting partial conversion rather than a phase-pure isolated product. The proposed surface oxalate
+      layer in Section 4.2 remains a hypothesis.
+  - source_ref: sebesta2020
+    supports: partial
+    explanation: Section 3.2 reports oxalic acid falling from 11.6 to 1.2 mmol/L and estimates about 43
+      mg, or 8.6% of the stated 500 mg ZnO, transformed. This is not a measured quantitative XRD fraction
+      or recovered-product yield; no complete Zn/oxalate mass balance or control for other oxalate losses
+      is supplied. The experiment establishes the narrower mixed-phase observation, not a verified conversion
+      efficiency.
+  - source_ref: sebesta2020
+    supports: partial
+    explanation: The separate live-culture comparison in Sections 2.1-2.2 and 3.1, Figures 1-3, reports
+      six replicates and a no-added-Zn inoculated control, not a sterile ZnO control. The stated common
+      dose of 6.5 mg Zn/L conflicts with 0.0033 g bulk ZnO in 50 mL (about 53 mg Zn/L by formula-based
+      calculation). Figure 2c also plots dissolved Zn concentrations above the stated initial 6.5 mg/L.
+      These unresolved quantities prevent adopting the reported uptake percentage or cross-form mass balance
+      here. Ultrafiltrate below 3 kDa is an operational fraction, not proof of free Zn2+ speciation. SI
+      Table S1/Figure S1 concern a separate ionic-Zn preliminary toxicity experiment, not nanoparticle
+      yield.
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A254TZW7
+    entry_name: CEXA_ASPNG
+    protein_name: Citrate exporter A
+    gene_symbol: cexA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:5061
+      label: Aspergillus niger
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized
+      citric acid into the extracellular medium, driving organic-acid acidification and metal chelation.
+    annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus
+      niger (NCBITaxon:5061).
     evidence:
-      - source_ref: sebesta2020
-        supports: support
-        explanation: >-
-          Section 2.4 and Figure 4 explicitly compare starting bulk ZnO,
-          starting nanoparticles and the five-day product with zincite
-          and zinc oxalate dihydrate references. The product contains
-          both assigned phases. Section 3.2 and Figure 5 show particles
-          without a substantial size change, supporting partial conversion
-          rather than a phase-pure isolated product. The proposed surface
-          oxalate layer in Section 4.2 remains a hypothesis.
-      - source_ref: sebesta2020
-        supports: partial
-        explanation: >-
-          Section 3.2 reports oxalic acid falling from 11.6 to 1.2 mmol/L
-          and estimates about 43 mg, or 8.6% of the stated 500 mg ZnO,
-          transformed. This is not a measured quantitative XRD fraction
-          or recovered-product yield; no complete Zn/oxalate mass balance
-          or control for other oxalate losses is supplied. The experiment
-          establishes the narrower mixed-phase observation, not a verified
-          conversion efficiency.
-      - source_ref: sebesta2020
-        supports: partial
-        explanation: >-
-          The separate live-culture comparison in Sections 2.1-2.2 and
-          3.1, Figures 1-3, reports six replicates and a no-added-Zn
-          inoculated control, not a sterile ZnO control. The stated common
-          dose of 6.5 mg Zn/L conflicts with 0.0033 g bulk ZnO in 50 mL
-          (about 53 mg Zn/L by formula-based calculation). Figure 2c also
-          plots dissolved Zn concentrations above the stated initial
-          6.5 mg/L. These unresolved quantities prevent adopting the
-          reported uptake percentage or cross-form mass balance here.
-          Ultrafiltrate below 3 kDa is an operational fraction, not proof
-          of free Zn2+ speciation. SI Table S1/Figure S1 concern a separate
-          ionic-Zn preliminary toxicity experiment, not nanoparticle yield.
-  - id: abiotic_thiol_imidazole_dissolution
-    name: Chemical dissolution of a source-described zincite specimen
-    process: other
-    microbial: false
-    description: >-
-      Ground zincite was dissolved with thiophenol and 1-methylimidazole
-      in acetonitrile to give an optically clear solution whose proton
-      NMR was assigned to Zn(SPh)2(MeIm)2. This is a laboratory chemical
-      dissolution route; it does not establish microbial activity or a
-      quantified recovered zinc product.
-    context: >-
-      Koskela et al. describe an orange specimen obtained from a private
-      seller as natural zincite mined in Poland. Its geological provenance
-      was not independently authenticated; the phase assignment is
-      supported by powder XRD after mortar-and-pestle grinding. The
-      zincite subsection reports dissolution at 75 degrees C for 24 h.
-      ESI Figure S31 specifies MeIm at three equivalents and thiophenol
-      at 2.4 equivalents in acetonitrile-d3. The main methods use
-      nitrogen-protected, degassed reactions. The mineral arm does not
-      separately tabulate feed mass, replicate count or a gravimetric
-      dissolution balance. Synthetic-powder kinetics are not transferred
-      quantitatively to this specimen.
-    evidence:
-      - source_ref: koskela2022
-        supports: support
-        explanation: >-
-          Zincite mineral dissolution and ESI Figures S29-S31 show
-          wurtzite-structured ZnO diffraction, before/after solution
-          appearance and the assigned molecular solute spectrum.
-          Optical clarity and solution NMR support dissolution and solute
-          identity within detection limits, not an independently measured
-          100% extraction yield or absence of every minor impurity.
-      - source_ref: koskela2022
-        supports: partial
-        explanation: >-
-          Identification of molecular solute reports that the separate
-          synthetic ZnO powder did not dissolve with either ligand alone.
-          These controls and the modeled surface pathway inform chemical
-          interpretation but are not mineral-specific rate measurements.
-          The thermal decomposition section concerns isolated complex
-          crystals, so its ZnS residue is not assigned as a measured
-          downstream yield from the natural-specimen arm. No biological
-          organism is involved in this experiment.
+    - source_ref: sebesta2020
+      supports: support
+      explanation: Secretes citric acid into the culture medium, contributing to organic-acid acidification
+        and ligand-assisted transformation of Synthetic zincite-structured ZnO nanoparticles into Dissolved
+        Zn(II) and zinc oxalate dihydrate precipitate.
+- id: abiotic_thiol_imidazole_dissolution
+  name: Chemical dissolution of a source-described zincite specimen
+  process: other
+  microbial: false
+  description: Ground zincite was dissolved with thiophenol and 1-methylimidazole in acetonitrile to give
+    an optically clear solution whose proton NMR was assigned to Zn(SPh)2(MeIm)2. This is a laboratory
+    chemical dissolution route; it does not establish microbial activity or a quantified recovered zinc
+    product.
+  context: Koskela et al. describe an orange specimen obtained from a private seller as natural zincite
+    mined in Poland. Its geological provenance was not independently authenticated; the phase assignment
+    is supported by powder XRD after mortar-and-pestle grinding. The zincite subsection reports dissolution
+    at 75 degrees C for 24 h. ESI Figure S31 specifies MeIm at three equivalents and thiophenol at 2.4
+    equivalents in acetonitrile-d3. The main methods use nitrogen-protected, degassed reactions. The mineral
+    arm does not separately tabulate feed mass, replicate count or a gravimetric dissolution balance.
+    Synthetic-powder kinetics are not transferred quantitatively to this specimen.
+  evidence:
+  - source_ref: koskela2022
+    supports: support
+    explanation: Zincite mineral dissolution and ESI Figures S29-S31 show wurtzite-structured ZnO diffraction,
+      before/after solution appearance and the assigned molecular solute spectrum. Optical clarity and
+      solution NMR support dissolution and solute identity within detection limits, not an independently
+      measured 100% extraction yield or absence of every minor impurity.
+  - source_ref: koskela2022
+    supports: partial
+    explanation: Identification of molecular solute reports that the separate synthetic ZnO powder did
+      not dissolve with either ligand alone. These controls and the modeled surface pathway inform chemical
+      interpretation but are not mineral-specific rate measurements. The thermal decomposition section
+      concerns isolated complex crystals, so its ZnS residue is not assigned as a measured downstream
+      yield from the natural-specimen arm. No biological organism is involved in this experiment.
 curation_history:
-  - timestamp: '2026-10-15T01:19:26.231993Z'
-    curator: codex / GPT-6
-    action: CREATE
-    summary: >-
-      Created the independently reviewable mineral record from verified primary
-      sources and authorities, retaining experimental controls, identity
-      boundaries and quantitative limitations without inherited criticality.
+- timestamp: '2026-10-15T01:19:26.231993Z'
+  curator: codex / GPT-6
+  action: CREATE
+  summary: Created the independently reviewable mineral record from verified primary sources and authorities,
+    retaining experimental controls, identity boundaries and quantitative limitations without inherited
+    criticality.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and causal graph for Aspergillus
+    niger organic-acid transformation of zincite nanoparticles.
 history_refs:
-  - history/records/zincite/2026-10-15T011944Z-codex-797b25.yaml
+- history/records/zincite/2026-10-15T011944Z-codex-797b25.yaml
+- history/records/zincite/2026-10-18T042750Z-antigravity-5028fc.yaml
+causal_graphs:
+- id: aspergillus_cexa_zincite_transformation_graph
+  name: Aspergillus niger organic-acid exudate transformation of zincite nanoparticles
+  description: Causal pathway linking Aspergillus niger citrate exporter CexA and secreted organic acids
+    to partial dissolution of ZnO (zincite) nanoparticles and secondary zinc oxalate precipitation.
+  scope: RECORD_SPECIFIC_MECHANISM
+  mechanism_ref: fungal_metabolite_associated_partial_transformation
+  nodes:
+  - id: cexa_citrate_exporter
+    label: CexA plasma-membrane citrate exporter (cexA)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cexA
+    description: Major facilitator superfamily transporter exporting citric acid across the Aspergillus
+      niger plasma membrane.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A254TZW7
+      entry_name: CEXA_ASPNG
+      protein_name: Citrate exporter A
+      gene_symbol: cexA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:5061
+        label: Aspergillus niger
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized
+        citric acid into the extracellular medium, driving organic-acid acidification and metal chelation.
+      annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus
+        niger (NCBITaxon:5061).
+      evidence:
+      - source_ref: sebesta2020
+        supports: support
+        explanation: Secretes citric acid into the culture medium, contributing to organic-acid acidification
+          and ligand-assisted transformation of Synthetic zincite-structured ZnO nanoparticles into Dissolved
+          Zn(II) and zinc oxalate dihydrate precipitate.
+  - id: secreted_organic_acids
+    label: Secreted citric and oxalic acid pool (acidification and chelation)
+    node_type: CHEMICAL_ENTITY
+    description: Extracellular organic acids (citrate, oxalate) and protons secreted by Aspergillus niger.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: starting_substrate
+    label: Synthetic zincite-structured ZnO nanoparticles
+    node_type: MATERIAL_OR_PHASE
+    description: Starting substrate or solution feed (Synthetic zincite-structured ZnO nanoparticles)
+      exposed to fungal metabolites.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: transformed_product
+    label: Dissolved Zn(II) and zinc oxalate dihydrate precipitate
+    node_type: MATERIAL_OR_PHASE
+    description: Resulting precipitate or altered mineral phase (Dissolved Zn(II) and zinc oxalate dihydrate
+      precipitate).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cexa_citrate_exporter
+    target: secreted_organic_acids
+    predicate: transports
+    relationship: efflux of citric acid into extracellular medium
+    description: CexA exports citrate from the fungal cytosol into the culture supernatant, acidifying
+      the medium.
+    evidence:
+    - source_ref: sebesta2020
+      supports: support
+      explanation: Aspergillus niger organic-acid secretion acidifies the culture supernatant and supplies
+        chelating/precipitating anions.
+  - source: secreted_organic_acids
+    target: starting_substrate
+    predicate: acts_on
+    relationship: acidolysis, complexation, and anion reaction
+    description: Secreted organic acids react with Synthetic zincite-structured ZnO nanoparticles.
+    evidence:
+    - source_ref: sebesta2020
+      supports: support
+      explanation: Fungal organic acids mediate dissolution/precipitation of Synthetic zincite-structured
+        ZnO nanoparticles.
+  - source: starting_substrate
+    target: transformed_product
+    predicate: transforms_into
+    relationship: secondary oxalate/phosphate precipitation or mineral alteration
+    description: Reaction of Synthetic zincite-structured ZnO nanoparticles with fungal metabolites produces
+      Dissolved Zn(II) and zinc oxalate dihydrate precipitate.
+    evidence:
+    - source_ref: sebesta2020
+      supports: support
+      explanation: Fungal culture or supernatant treatment yields Dissolved Zn(II) and zinc oxalate dihydrate
+        precipitate.

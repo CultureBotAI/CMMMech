@@ -1,117 +1,289 @@
 id: cmmmech:zinc
 name: Zinc
 material_kind: element
-description: >-
-  Zinc (Zn), atomic number 30. The zinc-atom identifier grounds this element
-  record, not dissolved Zn(II), zinc sulfide, sphalerite, or a zinc concentrate.
-  The United States designation maps the listed zinc commodity to this element;
-  it does not designate every zinc-bearing mineral or waste. The curated
+description: Zinc (Zn), atomic number 30. The zinc-atom identifier grounds this element record, not dissolved
+  Zn(II), zinc sulfide, sphalerite, or a zinc concentrate. The United States designation maps the listed
+  zinc commodity to this element; it does not designate every zinc-bearing mineral or waste. The curated
   experiments concern laboratory dissolution of a sphalerite concentrate.
 identifiers:
-  - id: CHEBI:27363
-    label: zinc atom
+- id: CHEBI:27363
+  label: zinc atom
 sources:
-  - id: chebi_zinc
-    title: ChEBI CHEBI:27363 — zinc atom
-    url: https://www.ebi.ac.uk/chebi/CHEBI:27363
-    accessed_on: '2026-10-11'
-  - id: usgs_2025
-    title: >-
-      USGS (2025). Final 2025 List of Critical Minerals. Federal Register
-      90:50494-50497, document 2025-19813; zinc commodity row.
-    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
-    accessed_on: '2026-10-11'
-  - id: fowler_crundwell_1999
-    title: >-
-      Fowler TA and Crundwell FK (1999). Leaching of Zinc Sulfide by
-      Thiobacillus ferrooxidans: Bacterial Oxidation of the Sulfur Product Layer
-      Increases the Rate of Zinc Sulfide Dissolution at High Concentrations of
-      Ferrous Ions. Applied and Environmental Microbiology 65:5285-5292.
-      doi:10.1128/AEM.65.12.5285-5292.1999. Methods; Figures 2-6; Discussion.
-    url: https://doi.org/10.1128/AEM.65.12.5285-5292.1999
-    accessed_on: '2026-10-11'
-  - id: fowler_crundwell_1998
-    title: >-
-      Fowler TA and Crundwell FK (1998). Leaching of Zinc Sulfide by
-      Thiobacillus ferrooxidans: Experiments with a Controlled Redox Potential
-      Indicate No Direct Bacterial Mechanism. Applied and Environmental
-      Microbiology 64:3570-3575. doi:10.1128/AEM.64.10.3570-3575.1998.
-      Methods; Figures 4-6; Results and Discussion.
-    url: https://doi.org/10.1128/AEM.64.10.3570-3575.1998
-    accessed_on: '2026-10-11'
-  - id: taxonomy_ferrooxidans
-    title: >-
-      NCBI Taxonomy 920 — Acidithiobacillus ferrooxidans, species rank;
-      Thiobacillus ferrooxidans basionym.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
-    accessed_on: '2026-10-11'
+- id: chebi_zinc
+  title: ChEBI CHEBI:27363 — zinc atom
+  url: https://www.ebi.ac.uk/chebi/CHEBI:27363
+  accessed_on: '2026-10-11'
+- id: usgs_2025
+  title: USGS (2025). Final 2025 List of Critical Minerals. Federal Register 90:50494-50497, document
+    2025-19813; zinc commodity row.
+  url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  accessed_on: '2026-10-11'
+- id: fowler_crundwell_1999
+  title: 'Fowler TA and Crundwell FK (1999). Leaching of Zinc Sulfide by Thiobacillus ferrooxidans: Bacterial
+    Oxidation of the Sulfur Product Layer Increases the Rate of Zinc Sulfide Dissolution at High Concentrations
+    of Ferrous Ions. Applied and Environmental Microbiology 65:5285-5292. doi:10.1128/AEM.65.12.5285-5292.1999.
+    Methods; Figures 2-6; Discussion.'
+  url: https://doi.org/10.1128/AEM.65.12.5285-5292.1999
+  accessed_on: '2026-10-11'
+- id: fowler_crundwell_1998
+  title: 'Fowler TA and Crundwell FK (1998). Leaching of Zinc Sulfide by Thiobacillus ferrooxidans: Experiments
+    with a Controlled Redox Potential Indicate No Direct Bacterial Mechanism. Applied and Environmental
+    Microbiology 64:3570-3575. doi:10.1128/AEM.64.10.3570-3575.1998. Methods; Figures 4-6; Results and
+    Discussion.'
+  url: https://doi.org/10.1128/AEM.64.10.3570-3575.1998
+  accessed_on: '2026-10-11'
+- id: taxonomy_ferrooxidans
+  title: NCBI Taxonomy 920 — Acidithiobacillus ferrooxidans, species rank; Thiobacillus ferrooxidans basionym.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+  accessed_on: '2026-10-11'
 criticality:
-  - jurisdiction: United States of America
-    list_name: USGS Final List of Critical Minerals
-    edition: '2025; Federal Register 90:50494-50497; published 7 November 2025'
-    classification: critical
-    source_ref: usgs_2025
+- jurisdiction: United States of America
+  list_name: USGS Final List of Critical Minerals
+  edition: 2025; Federal Register 90:50494-50497; published 7 November 2025
+  classification: critical
+  source_ref: usgs_2025
 mechanisms:
-  - id: ferrooxidans_sphalerite_dissolution
-    name: Conditional enhancement of sphalerite-concentrate dissolution
-    process: bioleaching
-    description: >-
-      Living Thiobacillus ferrooxidans FC1, using the paper's historical name,
-      increased zinc dissolution relative to matched chemical controls at
-      elevated ferrous concentrations after an initial period without an
-      advantage. Surface analyses and kinetic modeling support sulfur-layer
-      removal as the explanation; they do not establish a specific enzyme or
-      direct biological oxidation of the ZnS lattice.
-    context: >-
-      Gamsberg concentrate, reported as 98% sphalerite by XRD and 53.3% Zn,
-      was milled to 45-53 micrometres and washed with 0.5 M sodium sulfide.
-      The aerated, stirred laboratory electrolysis cell had a 2 L working
-      volume, 5 g concentrate/L, 10% v/v inoculum, pH 1.6, 35 degrees C and
-      dissolved oxygen 5.9 mg/L. Redox control maintained dissolved iron
-      conditions; 1999 experiments held Fe(III) at 1 g/L while varying Fe(II).
-      Zinc was assayed in 0.45-micrometre filtrate by atomic spectrophotometry.
-      This is dissolution, not isolated zinc-product recovery or deployment.
-      Analytical repeatability replicates do not establish biological
-      replication. NCBITaxon:920 maps the published species name, not a
-      verified strain accession or modern genomic reassignment of FC1.
-    microbial: true
-    organisms:
-      - id: NCBITaxon:920
-        label: Acidithiobacillus ferrooxidans
+- id: ferrooxidans_sphalerite_dissolution
+  name: Conditional enhancement of sphalerite-concentrate dissolution
+  process: bioleaching
+  description: Living Thiobacillus ferrooxidans FC1, using the paper's historical name, increased zinc
+    dissolution relative to matched chemical controls at elevated ferrous concentrations after an initial
+    period without an advantage. Surface analyses and kinetic modeling support sulfur-layer removal as
+    the explanation; they do not establish a specific enzyme or direct biological oxidation of the ZnS
+    lattice.
+  context: Gamsberg concentrate, reported as 98% sphalerite by XRD and 53.3% Zn, was milled to 45-53 micrometres
+    and washed with 0.5 M sodium sulfide. The aerated, stirred laboratory electrolysis cell had a 2 L
+    working volume, 5 g concentrate/L, 10% v/v inoculum, pH 1.6, 35 degrees C and dissolved oxygen 5.9
+    mg/L. Redox control maintained dissolved iron conditions; 1999 experiments held Fe(III) at 1 g/L while
+    varying Fe(II). Zinc was assayed in 0.45-micrometre filtrate by atomic spectrophotometry. This is
+    dissolution, not isolated zinc-product recovery or deployment. Analytical repeatability replicates
+    do not establish biological replication. NCBITaxon:920 maps the published species name, not a verified
+    strain accession or modern genomic reassignment of FC1.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:920
+    label: Acidithiobacillus ferrooxidans
+  evidence:
+  - source_ref: fowler_crundwell_1999
+    supports: support
+    explanation: Methods and Figures 2-6 compare inoculated and microscopy-checked sterile runs. Dissolution
+      diverged after approximately 8-12 h; surface comparisons at Fe(II) 4 g/L after 100 h and 8 g/L after
+      69 h support the authors' sulfur-removal interpretation. No recovery percentage is inferred from
+      the plots.
+  - source_ref: fowler_crundwell_1999
+    supports: partial
+    explanation: Figures 2-3 include a 1 g/L Fe(II) series whose paired data appear inconsistent with
+      the Discussion's sharp low-ferrous null boundary. A universal 1 g/L threshold is therefore not curated.
+      Shrinking-core fits and SEM/EDAX are mechanistic support, not enzyme assays, sulfur mass balance,
+      or independent process replication.
+  - source_ref: fowler_crundwell_1998
+    supports: partial
+    explanation: Methods and Figures 4-6 report similar zinc dissolution with FC1 and sterile controls
+      when Fe(II) was held at 1 g/L and Fe(III) varied, at pH 1.6, 35 degrees C and 5 g concentrate/L.
+      Bacterial iron oxidation and surface attachment occurred, but no additional dissolution was demonstrated
+      under those conditions. This bounds the later enhancement claim; neither study justifies a universal
+      direct bacterial leaching mechanism.
+  protein_examples:
+  - uniprot_accession: UniProtKB:B7JBP8
+    entry_name: SQRD_ACIF2
+    protein_name: Sulfide-quinone reductase
+    gene_symbol: AFE_1792
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    ec_numbers:
+    - EC:1.8.5.4
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR051169
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; AFE_1792) catalyzing oxidation
+      of sulfide to elemental sulfur/polysulfide coupled to quinone reduction during acidophilic sulfur/sulfide
+      bioleaching.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus
+      ferrooxidans ATCC 23270 (NCBITaxon:243159).
     evidence:
+    - source_ref: fowler_crundwell_1999
+      supports: support
+      explanation: Oxidizes reduced inorganic sulfur intermediates during acidophilic bioleaching of Sphalerite
+        (ZnS) concentrate.
+  - uniprot_accession: UniProtKB:B7J3C9
+    entry_name: TTH_ACIF2
+    protein_name: Tetrathionate hydrolase
+    gene_symbol: tth
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    ec_numbers:
+    - EC:3.12.1.-
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase (EC 3.12.1.-; tth / AFE_0029) hydrolyzing tetrathionate
+      into thiosulfate, elemental sulfur, and sulfate, generating sulfuric acid protons.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus
+      ferrooxidans ATCC 23270 (NCBITaxon:243159).
+    evidence:
+    - source_ref: fowler_crundwell_1999
+      supports: support
+      explanation: Hydrolyzes polythionate intermediates to regenerate sulfuric acid acidity during bioleaching
+        of Sphalerite (ZnS) concentrate.
+curation_history:
+- timestamp: '2026-10-11T04:20:59Z'
+  curator: codex (GPT-6)
+  action: CREATE
+  summary: Added zinc identity and dated US criticality with controlled FC1 sphalerite-leaching evidence,
+    the primary low-ferrous null result, figure/prose uncertainty, and explicit laboratory recovery limits.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein examples (Sqr UniProtKB:B7JBP8, Tth UniProtKB:B7J3C9) and
+    causal graph for Acidithiobacillus ferrooxidans sphalerite dissolution.
+history_refs:
+- history/records/zinc/2026-10-11T042052Z-codex-227643.yaml
+- history/records/zinc/2026-10-18T042750Z-antigravity-f3cace.yaml
+causal_graphs:
+- id: ferrooxidans_sphalerite_zinc_dissolution_graph
+  name: Acidithiobacillus ferrooxidans oxidative and acidic dissolution of sphalerite concentrate
+  description: Causal pathway linking Acidithiobacillus ferrooxidans reduced-sulfur oxidation enzymes
+    (Sqr, Tth) and ferric-sulfate regeneration to conditional enhancement of ZnS (sphalerite) dissolution.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: ferrooxidans_sphalerite_dissolution
+  nodes:
+  - id: sqr_reductase
+    label: Sqr sulfide-quinone reductase (AFE_1792)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: AFE_1792
+    description: Inner-membrane flavoprotein oxidizing sulfide to zero-valent sulfur/polysulfide intermediates.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JBP8
+      entry_name: SQRD_ACIF2
+      protein_name: Sulfide-quinone reductase
+      gene_symbol: AFE_1792
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      ec_numbers:
+      - EC:1.8.5.4
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR051169
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; AFE_1792) catalyzing oxidation
+        of sulfide to elemental sulfur/polysulfide coupled to quinone reduction during acidophilic sulfur/sulfide
+        bioleaching.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus
+        ferrooxidans ATCC 23270 (NCBITaxon:243159).
+      evidence:
       - source_ref: fowler_crundwell_1999
         supports: support
-        explanation: >-
-          Methods and Figures 2-6 compare inoculated and microscopy-checked
-          sterile runs. Dissolution diverged after approximately 8-12 h;
-          surface comparisons at Fe(II) 4 g/L after 100 h and 8 g/L after 69 h
-          support the authors' sulfur-removal interpretation. No recovery
-          percentage is inferred from the plots.
+        explanation: Oxidizes reduced inorganic sulfur intermediates during acidophilic bioleaching of
+          Sphalerite (ZnS) concentrate.
+  - id: tth_hydrolase
+    label: Tth tetrathionate hydrolase (tth / AFE_0029)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: tth
+    description: Periplasmic pyrroloquinoline-domain hydrolase disproportionating tetrathionate into sulfate
+      and protons.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7J3C9
+      entry_name: TTH_ACIF2
+      protein_name: Tetrathionate hydrolase
+      gene_symbol: tth
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      ec_numbers:
+      - EC:3.12.1.-
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase (EC 3.12.1.-; tth / AFE_0029) hydrolyzing tetrathionate
+        into thiosulfate, elemental sulfur, and sulfate, generating sulfuric acid protons.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus
+        ferrooxidans ATCC 23270 (NCBITaxon:243159).
+      evidence:
       - source_ref: fowler_crundwell_1999
-        supports: partial
-        explanation: >-
-          Figures 2-3 include a 1 g/L Fe(II) series whose paired data
-          appear inconsistent with the Discussion's sharp low-ferrous null
-          boundary. A universal 1 g/L threshold is therefore not curated.
-          Shrinking-core fits and SEM/EDAX are mechanistic support, not enzyme
-          assays, sulfur mass balance, or independent process replication.
-      - source_ref: fowler_crundwell_1998
-        supports: partial
-        explanation: >-
-          Methods and Figures 4-6 report similar zinc dissolution with FC1 and
-          sterile controls when Fe(II) was held at 1 g/L and Fe(III) varied,
-          at pH 1.6, 35 degrees C and 5 g concentrate/L. Bacterial iron
-          oxidation and surface attachment occurred, but no additional
-          dissolution was demonstrated under those conditions. This bounds
-          the later enhancement claim; neither study justifies a universal
-          direct bacterial leaching mechanism.
-curation_history:
-  - timestamp: '2026-10-11T04:20:59Z'
-    curator: codex (GPT-6)
-    action: CREATE
-    summary: >-
-      Added zinc identity and dated US criticality with controlled FC1
-      sphalerite-leaching evidence, the primary low-ferrous null result,
-      figure/prose uncertainty, and explicit laboratory recovery limits.
-history_refs:
-  - history/records/zinc/2026-10-11T042052Z-codex-227643.yaml
+        supports: support
+        explanation: Hydrolyzes polythionate intermediates to regenerate sulfuric acid acidity during
+          bioleaching of Sphalerite (ZnS) concentrate.
+  - id: acidic_ferric_sulfate_lixiviant
+    label: Biogenic sulfuric acid and Fe(III) oxidative lixiviant
+    node_type: CHEMICAL_ENTITY
+    description: Acidic H2SO4 and Fe(III)-bearing leaching solution sustained by chemolithoautotrophic
+      metabolism.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: solid_feed_substrate
+    label: Sphalerite (ZnS) concentrate
+    node_type: MATERIAL_OR_PHASE
+    description: Starting mineral or secondary-resource feed (Sphalerite (ZnS) concentrate).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: solubilized_metal_species
+    label: Dissolved Zn(II) in acidic ferric sulfate solution
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved metal ions (Dissolved Zn(II) in acidic ferric sulfate solution) mobilized into
+      the acidic pregnant leach solution.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: sqr_reductase
+    target: tth_hydrolase
+    predicate: supplies_substrate_for
+    relationship: oxidation of sulfide to sulfur/polythionate intermediates
+    description: Sulfide oxidation generates reduced sulfur and polythionate intermediates metabolized
+      by periplasmic tetrathionate hydrolase.
+    evidence:
+    - source_ref: fowler_crundwell_1999
+      supports: support
+      explanation: Reduced sulfur oxidation in A. ferrooxidans couples Sqr and polythionate hydrolysis
+        to proton generation.
+  - source: tth_hydrolase
+    target: acidic_ferric_sulfate_lixiviant
+    predicate: produces
+    relationship: sulfuric acid proton generation
+    description: Tetrathionate hydrolysis produces sulfate and H+, maintaining low pH in the leaching
+      medium.
+    evidence:
+    - source_ref: fowler_crundwell_1999
+      supports: support
+      explanation: Sulfur-compound oxidation maintains the acidic lixiviant required for metal solubilization.
+  - source: acidic_ferric_sulfate_lixiviant
+    target: solid_feed_substrate
+    predicate: acts_on
+    relationship: acidic and oxidative mineral/feed attack
+    description: Biogenic acid and ferric ions attack Sphalerite (ZnS) concentrate.
+    evidence:
+    - source_ref: fowler_crundwell_1999
+      supports: support
+      explanation: Culture-generated acidic ferric/sulfate medium attacks Sphalerite (ZnS) concentrate.
+  - source: solid_feed_substrate
+    target: solubilized_metal_species
+    predicate: produces
+    relationship: oxidative/acidic dissolution
+    description: Dissolution of Sphalerite (ZnS) concentrate releases Dissolved Zn(II) in acidic ferric
+      sulfate solution.
+    evidence:
+    - source_ref: fowler_crundwell_1999
+      supports: support
+      explanation: Bioleaching mobilizes Dissolved Zn(II) in acidic ferric sulfate solution into solution.

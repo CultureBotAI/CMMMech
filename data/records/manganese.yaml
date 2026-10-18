@@ -1,106 +1,261 @@
 id: cmmmech:manganese
 name: Manganese
 material_kind: element
-description: >-
-  The element Mn, distinct from its dissolved oxidation states, ligand complexes,
-  oxide minerals, and Mn-bearing commodities. The US designation below maps to
-  the explicitly named manganese commodity in the 2025 list; it does not assign
-  criticality to every Mn-bearing compound or resource.
+description: The element Mn, distinct from its dissolved oxidation states, ligand complexes, oxide minerals,
+  and Mn-bearing commodities. The US designation below maps to the explicitly named manganese commodity
+  in the 2025 list; it does not assign criticality to every Mn-bearing compound or resource.
 identifiers:
-  - id: CHEBI:18291
-    label: manganese atom
+- id: CHEBI:18291
+  label: manganese atom
 sources:
-  - id: wright2018
-    title: >-
-      Wright et al. (2018). Oxidative Formation and Removal of Complexed Mn(III)
-      by Pseudomonas Species. Frontiers in Microbiology 9:560.
-    url: https://doi.org/10.3389/fmicb.2018.00560
-    accessed_on: '2026-10-09'
-  - id: chebi_manganese
-    title: 'ChEBI CHEBI:18291 - manganese atom'
-    url: https://www.ebi.ac.uk/chebi/CHEBI:18291
-    accessed_on: '2026-10-09'
-  - id: ncbi_gb1
-    title: 'NCBI Taxonomy 76869 - Pseudomonas putida GB-1'
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=76869
-    accessed_on: '2026-10-09'
-  - id: usgs2025
-    title: >-
-      USGS (2025). Final 2025 List of Critical Minerals. Federal Register
-      90:50494-50497, document 2025-19813.
-    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
-    accessed_on: '2026-10-09'
-  - id: eu2024
-    title: >-
-      Regulation (EU) 2024/1252 of 11 April 2024. Original Official Journal text,
-      3 May 2024; Annex II, Section 1(u), manganese, page 57 of 67.
-    url: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401252
-    accessed_on: '2026-10-09'
+- id: wright2018
+  title: Wright et al. (2018). Oxidative Formation and Removal of Complexed Mn(III) by Pseudomonas Species.
+    Frontiers in Microbiology 9:560.
+  url: https://doi.org/10.3389/fmicb.2018.00560
+  accessed_on: '2026-10-09'
+- id: chebi_manganese
+  title: ChEBI CHEBI:18291 - manganese atom
+  url: https://www.ebi.ac.uk/chebi/CHEBI:18291
+  accessed_on: '2026-10-09'
+- id: ncbi_gb1
+  title: NCBI Taxonomy 76869 - Pseudomonas putida GB-1
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=76869
+  accessed_on: '2026-10-09'
+- id: usgs2025
+  title: USGS (2025). Final 2025 List of Critical Minerals. Federal Register 90:50494-50497, document
+    2025-19813.
+  url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  accessed_on: '2026-10-09'
+- id: eu2024
+  title: Regulation (EU) 2024/1252 of 11 April 2024. Original Official Journal text, 3 May 2024; Annex
+    II, Section 1(u), manganese, page 57 of 67.
+  url: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401252
+  accessed_on: '2026-10-09'
 criticality:
-  - jurisdiction: United States of America
-    list_name: USGS Final List of Critical Minerals
-    edition: '2025; Federal Register 90:50494-50497'
-    classification: critical
-    source_ref: usgs2025
-  - jurisdiction: European Union
-    list_name: Regulation (EU) 2024/1252, Annex II, Section 1(u), manganese
-    edition: '2024 original act; OJ L 2024/1252, 3 May 2024'
-    classification: critical
-    source_ref: eu2024
+- jurisdiction: United States of America
+  list_name: USGS Final List of Critical Minerals
+  edition: 2025; Federal Register 90:50494-50497
+  classification: critical
+  source_ref: usgs2025
+- jurisdiction: European Union
+  list_name: Regulation (EU) 2024/1252, Annex II, Section 1(u), manganese
+  edition: 2024 original act; OJ L 2024/1252, 3 May 2024
+  classification: critical
+  source_ref: eu2024
 mechanisms:
-  - id: gb1_manganese_oxidation
-    name: Mn(II) and complexed Mn(III) oxidation by Pseudomonas putida GB-1
-    process: redox_transformation
-    microbial: true
-    organisms:
-      - id: NCBITaxon:76869
-        label: Pseudomonas putida GB-1
-    description: >-
-      Growing GB-1 cultures converted defined soluble Mn substrates to
-      filter-retained oxidized Mn. Mn(III)-citrate and Mn(III)-desferrioxamine B
-      (DFOB) supported oxide accumulation, with lower and slower accumulation
-      from the strongly complexed DFOB substrate.
-    context: >-
-      Laboratory triplicates used 5 mL Minimal Media A with HEPES at pH 7.8,
-      30 degrees C, darkness, and 100 micromolar Mn supplied as MnCl2,
-      Mn(III)-citrate, or Mn(III)-DFOB. Sterile medium and a GB-1 triple Mn-oxidase
-      knockout were negative controls. Table 4 reports final GB-1 particulate
-      oxide concentrations of 79.8 +/- 2.0 micromolar after 96 h from Mn(II), and
-      54.3 +/- 2.9 micromolar after 168 h from Mn(III)-DFOB. The table does not
-      define the reported error statistic. These are LBB oxidizing
-      equivalents calculated assuming particulate MnO2, not identification of a
-      crystalline mineral or recovery of a purified product. No industrial
-      extraction or recovery operation was tested.
+- id: gb1_manganese_oxidation
+  name: Mn(II) and complexed Mn(III) oxidation by Pseudomonas putida GB-1
+  process: redox_transformation
+  microbial: true
+  organisms:
+  - id: NCBITaxon:76869
+    label: Pseudomonas putida GB-1
+  description: Growing GB-1 cultures converted defined soluble Mn substrates to filter-retained oxidized
+    Mn. Mn(III)-citrate and Mn(III)-desferrioxamine B (DFOB) supported oxide accumulation, with lower
+    and slower accumulation from the strongly complexed DFOB substrate.
+  context: Laboratory triplicates used 5 mL Minimal Media A with HEPES at pH 7.8, 30 degrees C, darkness,
+    and 100 micromolar Mn supplied as MnCl2, Mn(III)-citrate, or Mn(III)-DFOB. Sterile medium and a GB-1
+    triple Mn-oxidase knockout were negative controls. Table 4 reports final GB-1 particulate oxide concentrations
+    of 79.8 +/- 2.0 micromolar after 96 h from Mn(II), and 54.3 +/- 2.9 micromolar after 168 h from Mn(III)-DFOB.
+    The table does not define the reported error statistic. These are LBB oxidizing equivalents calculated
+    assuming particulate MnO2, not identification of a crystalline mineral or recovery of a purified product.
+    No industrial extraction or recovery operation was tested.
+  evidence:
+  - source_ref: wright2018
+    supports: support
+    explanation: Culture conditions, Mn(III)-L oxidation methods, Fig. 1 and Table 4 support these assays.
+      Mutants retaining MnxG or McoA oxidized Mn(III) complexes; this is genetic support, not purified-enzyme
+      evidence.
+  - source_ref: wright2018
+    supports: partial
+    explanation: Fig. 3 and Discussion show abiotic Mn(III)-DFOB formation, so its accumulation alone
+      is not proof of microbial oxidation. MopA activity was limited in darkness; the discussion reports
+      stronger activity in light in separate KG_mopA cell-free-extract experiments. These findings limit
+      universal enzyme and environmental extrapolation.
+  protein_examples:
+  - uniprot_accession: UniProtKB:B0KQT1
+    entry_name: B0KQT1_PSEPG
+    protein_name: Manganese-oxidizing multicopper oxidase MnxG
+    gene_symbol: mnxG
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:76869
+      label: Pseudomonas putida GB-1
+    interpro_ids:
+    - InterPro:IPR002355
+    - InterPro:IPR008972
+    - InterPro:IPR048215
+    functional_role: Multicopper oxidase MnxG (PputGB1_2447) catalyzing two-electron oxidation of soluble
+      Mn(II) to biogenic Mn(III/IV) oxide in Pseudomonas putida GB-1.
     evidence:
+    - source_ref: wright2018
+      supports: support
+      explanation: Primary multicopper oxidase responsible for Mn(II) oxidation in P. putida GB-1; genetic
+        deletion and complementation in Wright et al. (2018) dissect its contribution alongside McoA and
+        MopA.
+  - uniprot_accession: UniProtKB:B0KSN7
+    entry_name: B0KSN7_PSEPG
+    protein_name: Multicopper oxidase type 2
+    gene_symbol: mcoA
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:76869
+      label: Pseudomonas putida GB-1
+    interpro_ids:
+    - InterPro:IPR011706
+    - InterPro:IPR045087
+    - InterPro:IPR008972
+    pfam_ids:
+    - Pfam:PF17963
+    - Pfam:PF07731
+    functional_role: Multicopper oxidase McoA (PputGB1_2665) functioning as an independent Mn(II)-oxidizing
+      multicopper oxidase pathway in Pseudomonas putida GB-1.
+    evidence:
+    - source_ref: wright2018
+      supports: support
+      explanation: Second multicopper oxidase (PputGB1_2665) shown by clean deletion and overexpression
+        in Wright et al. (2018) to oxidize Mn(II) to Mn(III/IV) oxides.
+curation_history:
+- timestamp: '2026-10-09T04:47:22Z'
+  curator: Codex (GPT-6; Codex)
+  action: record_creation
+  summary: Curated the manganese element identity, USGS 2025 designation and scoped GB-1 laboratory oxidation
+    evidence. Retained oxide-assay and abiotic/light limits; independent review remains a separate artifact.
+- timestamp: '2026-10-09T05:51:49Z'
+  curator: Codex (GPT-6; Codex)
+  action: criticality_extension
+  summary: Added the historical EU 2024 Annex II designation through its named manganese entry, with source
+    and mapping scope documented. Preserved existing scientific evidence; independent review is separate.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein examples (MnxG UniProtKB:B0KQT1, McoA UniProtKB:B0KSN7) and
+    causal graph (including explicit UNGROUNDED annotation for obsolete PputGB1_3353 / B0KJL7 MopA) for
+    Pseudomonas putida GB-1 manganese oxidation.
+history_refs:
+- history/records/manganese/2026-10-09T044722Z-codex-94b8cc.yaml
+- history/records/manganese/2026-10-09T055149Z-codex-dc3517.yaml
+- history/records/manganese/2026-10-18T042750Z-antigravity-6d5fac.yaml
+causal_graphs:
+- id: gb1_mnxg_mcoa_mopa_manganese_oxidation_graph
+  name: Pseudomonas putida GB-1 MnxG, McoA, and MopA pathways for Mn(II) oxidation to Mn(III/IV) oxides
+  description: Causal pathway linking the two multicopper oxidases MnxG (PputGB1_2447, UniProtKB:B0KQT1)
+    and McoA (PputGB1_2665, UniProtKB:B0KSN7) and the animal heme peroxidase MopA (PputGB1_3353) in Pseudomonas
+    putida GB-1 to oxidation of dissolved Mn(II) into birnessite-like Mn(III/IV) oxides.
+  scope: RECORD_SPECIFIC_MECHANISM
+  mechanism_ref: gb1_manganese_oxidation
+  nodes:
+  - id: mnxg_multicopper_oxidase
+    label: MnxG multicopper oxidase (mnxG / PputGB1_2447)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: mnxG
+    description: Primary multicopper oxidase catalyzing oxidation of Mn(II) to Mn(III/IV) oxyhydroxides.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B0KQT1
+      entry_name: B0KQT1_PSEPG
+      protein_name: Manganese-oxidizing multicopper oxidase MnxG
+      gene_symbol: mnxG
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:76869
+        label: Pseudomonas putida GB-1
+      interpro_ids:
+      - InterPro:IPR002355
+      - InterPro:IPR008972
+      - InterPro:IPR048215
+      functional_role: Multicopper oxidase MnxG (PputGB1_2447) catalyzing two-electron oxidation of soluble
+        Mn(II) to biogenic Mn(III/IV) oxide in Pseudomonas putida GB-1.
+      evidence:
       - source_ref: wright2018
         supports: support
-        explanation: >-
-          Culture conditions, Mn(III)-L oxidation methods, Fig. 1 and Table 4
-          support these assays. Mutants retaining MnxG or McoA oxidized Mn(III)
-          complexes; this is genetic support, not purified-enzyme evidence.
+        explanation: Primary multicopper oxidase responsible for Mn(II) oxidation in P. putida GB-1; genetic
+          deletion and complementation in Wright et al. (2018) dissect its contribution alongside McoA
+          and MopA.
+  - id: mcoa_multicopper_oxidase
+    label: McoA multicopper oxidase (mcoA / PputGB1_2665)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: mcoA
+    description: Parallel multicopper oxidase capable of oxidizing Mn(II) in P. putida GB-1.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B0KSN7
+      entry_name: B0KSN7_PSEPG
+      protein_name: Multicopper oxidase type 2
+      gene_symbol: mcoA
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:76869
+        label: Pseudomonas putida GB-1
+      interpro_ids:
+      - InterPro:IPR011706
+      - InterPro:IPR045087
+      - InterPro:IPR008972
+      pfam_ids:
+      - Pfam:PF17963
+      - Pfam:PF07731
+      functional_role: Multicopper oxidase McoA (PputGB1_2665) functioning as an independent Mn(II)-oxidizing
+        multicopper oxidase pathway in Pseudomonas putida GB-1.
+      evidence:
       - source_ref: wright2018
-        supports: partial
-        explanation: >-
-          Fig. 3 and Discussion show abiotic Mn(III)-DFOB formation, so its
-          accumulation alone is not proof of microbial oxidation. MopA activity
-          was limited in darkness; the discussion reports stronger activity in
-          light in separate KG_mopA cell-free-extract experiments. These findings limit universal enzyme
-          and environmental extrapolation.
-curation_history:
-  - timestamp: '2026-10-09T04:47:22Z'
-    curator: Codex (GPT-6; Codex)
-    action: record_creation
-    summary: >-
-      Curated the manganese element identity, USGS 2025 designation and scoped
-      GB-1 laboratory oxidation evidence. Retained oxide-assay and abiotic/light
-      limits; independent review remains a separate artifact.
-  - timestamp: '2026-10-09T05:51:49Z'
-    curator: Codex (GPT-6; Codex)
-    action: criticality_extension
-    summary: >-
-      Added the historical EU 2024 Annex II designation through its named
-      manganese entry, with source and mapping scope documented.
-      Preserved existing scientific evidence; independent review is separate.
-history_refs:
-  - history/records/manganese/2026-10-09T044722Z-codex-94b8cc.yaml
-  - history/records/manganese/2026-10-09T055149Z-codex-dc3517.yaml
+        supports: support
+        explanation: Second multicopper oxidase (PputGB1_2665) shown by clean deletion and overexpression
+          in Wright et al. (2018) to oxidize Mn(II) to Mn(III/IV) oxides.
+  - id: mopa_heme_peroxidase
+    label: MopA animal heme peroxidase / calcium-binding peroxidase (mopA / PputGB1_3353)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: mopA
+    description: Third Mn(II)-oxidizing enzyme (locus PputGB1_3353) analyzed in Wright et al. (2018).
+      Its former UniProtKB TrEMBL accession B0KJL7 (ABZ00572.1) is now obsolete/deleted in active UniProtKB
+      and archived only in UniParc (UPI000164C1D1), so this node is explicitly marked UNGROUNDED per the
+      active-UniProtKB verification rule.
+    protein_grounding_status: UNGROUNDED
+  - id: dissolved_mn2_ion
+    label: Dissolved Mn(II) cation
+    node_type: CHEMICAL_ENTITY
+    description: Soluble divalent manganese substrate in the culture medium.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: biogenic_mn34_oxide
+    label: Biogenic Mn(III/IV) oxide precipitate
+    node_type: MATERIAL_OR_PHASE
+    description: Insoluble Mn(III/IV) oxyhydroxide mineral formed on and around P. putida GB-1 cells.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: mnxg_multicopper_oxidase
+    target: dissolved_mn2_ion
+    predicate: oxidizes
+    relationship: multicopper-oxidase-catalyzed Mn(II) oxidation
+    description: MnxG oxidizes soluble Mn(II) via Mn(III) intermediates to Mn(IV) oxide.
+    evidence:
+    - source_ref: wright2018
+      supports: support
+      explanation: Deletion and complementation of mnxG (PputGB1_2447) confirm its dominant role in Mn(II)
+        oxidation.
+  - source: mcoa_multicopper_oxidase
+    target: dissolved_mn2_ion
+    predicate: oxidizes
+    relationship: parallel multicopper-oxidase Mn(II) oxidation
+    description: McoA provides an independent multicopper oxidase pathway for Mn(II) oxidation.
+    evidence:
+    - source_ref: wright2018
+      supports: support
+      explanation: Mutant analysis of mcoA (PputGB1_2665) demonstrates independent Mn(II) oxidase activity.
+  - source: mopa_heme_peroxidase
+    target: dissolved_mn2_ion
+    predicate: oxidizes
+    relationship: heme-peroxidase-associated Mn(II) oxidation
+    description: MopA (PputGB1_3353) contributes a third enzymatic route for Mn(II) oxidation under defined
+      genetic backgrounds.
+    evidence:
+    - source_ref: wright2018
+      supports: support
+      explanation: Multi-gene deletion analysis evaluates MopA alongside MnxG and McoA.
+  - source: dissolved_mn2_ion
+    target: biogenic_mn34_oxide
+    predicate: transforms_into
+    relationship: oxidative precipitation of Mn(III/IV) oxyhydroxide
+    description: Enzymatic oxidation of Mn(II) precipitates insoluble Mn(III/IV) oxides.
+    evidence:
+    - source_ref: wright2018
+      supports: support
+      explanation: Leucoberbelin blue assays quantify biogenic Mn(III/IV) oxide accumulation.

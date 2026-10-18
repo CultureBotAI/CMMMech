@@ -6,6 +6,13 @@ license: BSD-3-Clause
 prefixes:
   linkml: https://w3id.org/linkml/
   cmmmech: https://github.com/CultureBotAI/CMMMech/records/
+  UniProtKB: http://purl.uniprot.org/uniprot/
+  InterPro: https://www.ebi.ac.uk/interpro/entry/InterPro/
+  Pfam: https://www.ebi.ac.uk/interpro/entry/pfam/
+  NCBIfam: https://www.ncbi.nlm.nih.gov/genome/annotation_prok/evidence/
+  ComplexPortal: https://www.ebi.ac.uk/complexportal/complex/
+  EC: https://www.ebi.ac.uk/intenz/query?cmd=SearchEC&ec=
+  GO: http://purl.obolibrary.org/obo/GO_
 default_prefix: cmmmech
 default_range: string
 imports:
@@ -56,6 +63,14 @@ classes:
         inlined_as_list: true
       mechanisms:
         range: Mechanism
+        multivalued: true
+        inlined_as_list: true
+      causal_graphs:
+        description: >-
+          Directed causal graphs representing molecular, genetic, biochemical,
+          or environmental mechanisms for this material record, with explicit
+          node types (including GENE_OR_PROTEIN) and UniProtKB protein groundings.
+        range: CausalGraph
         multivalued: true
         inlined_as_list: true
       curation_history:
@@ -152,6 +167,14 @@ classes:
         range: NamedEntity
         multivalued: true
         inlined_as_list: true
+      protein_examples:
+        description: >-
+          Representative UniProtKB protein entries (preferring reviewed Swiss-Prot
+          or reference-proteome entries) grounding enzymes, transporters, cytochromes,
+          chelators, or biomineralization templates implicated in this mechanism.
+        range: ProteinExample
+        multivalued: true
+        inlined_as_list: true
       evidence:
         range: MechanismEvidence
         required: true
@@ -245,6 +268,145 @@ classes:
         description: Analytical basis, sample timing and limits needed to interpret this cell.
         range: NonEmptyText
         required: true
+  CausalGraph:
+    description: >-
+      A directed causal graph of molecular, genetic, biochemical, or environmental
+      steps mediating a critical mineral interaction mechanism.
+    attributes:
+      id:
+        range: SourceKey
+        required: true
+      name:
+        range: NonEmptyText
+        required: true
+      description:
+        range: NonEmptyText
+        required: true
+      scope:
+        range: CausalGraphScopeEnum
+        required: true
+      mechanism_ref:
+        description: Optional ID of the Mechanism in this record represented by this causal graph.
+        range: SourceKey
+      nodes:
+        range: CausalNode
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+        inlined_as_list: true
+      edges:
+        range: CausalEdge
+        required: true
+        multivalued: true
+        minimum_cardinality: 1
+        inlined_as_list: true
+  CausalNode:
+    description: >-
+      A node in a causal graph. GENE_OR_PROTEIN nodes represent specific genes,
+      operons, enzymes, transporters, cytochromes, or protein complexes and carry
+      verified UniProtKB protein_examples when grounded.
+    attributes:
+      id:
+        range: SourceKey
+        required: true
+      label:
+        range: NonEmptyText
+        required: true
+      node_type:
+        range: CausalNodeTypeEnum
+        required: true
+      description:
+        range: NonEmptyText
+      term:
+        range: NamedEntity
+        inlined: true
+      gene_symbol:
+        range: NonEmptyText
+      protein_grounding_status:
+        range: ProteinGroundingStatusEnum
+      protein_examples:
+        range: ProteinExample
+        multivalued: true
+        inlined_as_list: true
+  CausalEdge:
+    description: A directed causal or mechanistic relationship between two nodes in a CausalGraph.
+    attributes:
+      source:
+        range: SourceKey
+        required: true
+      target:
+        range: SourceKey
+        required: true
+      predicate:
+        range: NonEmptyText
+        required: true
+      relationship:
+        range: NonEmptyText
+      description:
+        range: NonEmptyText
+      evidence:
+        range: MechanismEvidence
+        multivalued: true
+        inlined_as_list: true
+  ProteinExample:
+    description: >-
+      A verified UniProtKB protein entry grounding a GENE_OR_PROTEIN causal node
+      or an interaction mechanism, with organism, reference proteome, and family
+      cross-references.
+    attributes:
+      uniprot_accession:
+        required: true
+        pattern: '^UniProtKB:([OPQ][0-9][A-Z0-9]{3}[0-9]|[A-NR-Z][0-9]([A-Z][A-Z0-9]{2}[0-9]){1,2})(-[0-9]+)?$'
+      entry_name:
+        range: NonEmptyText
+        pattern: '^[A-Z0-9]+_[A-Z0-9]+$'
+      protein_name:
+        range: NonEmptyText
+        required: true
+      gene_symbol:
+        range: NonEmptyText
+      entry_status:
+        range: UniProtEntryStatusEnum
+        required: true
+      target_organism:
+        range: NamedEntity
+        required: true
+        inlined: true
+      reference_proteome_id:
+        range: string
+        pattern: '^UP[0-9]{9}$'
+      ec_numbers:
+        range: string
+        multivalued: true
+        pattern: '^EC:[0-9]+\.[0-9]+\.[0-9]+\.([0-9]+|-|n[0-9]+)$'
+      interpro_ids:
+        range: string
+        multivalued: true
+        pattern: '^InterPro:IPR[0-9]{6}$'
+      pfam_ids:
+        range: string
+        multivalued: true
+        pattern: '^Pfam:PF[0-9]{5}$'
+      ncbifam_ids:
+        range: string
+        multivalued: true
+        pattern: '^NCBIfam:(TIGR[0-9]{5}|NF[0-9]{6})$'
+      complex_portal_id:
+        range: string
+        pattern: '^ComplexPortal:CPX-[0-9]+$'
+      go_terms:
+        range: NamedEntity
+        multivalued: true
+        inlined_as_list: true
+      functional_role:
+        range: NonEmptyText
+        required: true
+      annotation_note:
+        range: NonEmptyText
+      evidence:
+        range: MechanismEvidence
+        multivalued: true
+        inlined_as_list: true
 enums:
   ConcentrationResultStatus:
     permissible_values:
@@ -292,3 +454,44 @@ enums:
       partial:
       refute:
       context_only:
+  CausalGraphScopeEnum:
+    permissible_values:
+      REPRESENTATIVE_EXAMPLE:
+        description: Graph models a specific well-characterized model strain or experimental study.
+      BROAD_MECHANISM:
+        description: Graph models a conserved biochemical pathway or mechanism shared across taxa.
+      RECORD_SPECIFIC_MECHANISM:
+        description: Graph models the exact material-organism-process interaction in this record.
+  CausalNodeTypeEnum:
+    permissible_values:
+      GENE_OR_PROTEIN:
+        description: A specific gene, operon, enzyme, transporter, cytochrome, chelator, or protein complex.
+      CHEMICAL_ENTITY:
+        description: A dissolved ion, organic acid, metabolite, ligand, electron donor, or gas.
+      BIOLOGICAL_PROCESS:
+        description: A cellular, metabolic, physiological, or regulatory process.
+      CELLULAR_STRUCTURE:
+        description: A cell wall polymer, membrane, periplasm, biofilm matrix, or cell surface.
+      PHENOTYPE_OR_TRAIT:
+        description: An organismal phenotype, growth response, or functional trait.
+      ENVIRONMENTAL_CONDITION:
+        description: pH, redox potential, temperature, nutrient limitation, or solution chemistry state.
+      MATERIAL_OR_PHASE:
+        description: A mineral phase, solid substrate, precipitate, ore concentrate, or material product.
+  ProteinGroundingStatusEnum:
+    permissible_values:
+      GROUNDED:
+        description: Node is grounded to one or more verified UniProtKB entries in protein_examples.
+      UNGROUNDED:
+        description: >-
+          Node represents a gene or protein whose exact sequence or strain entry
+          is absent from or obsolete in UniProtKB (documented in description).
+      NOT_APPLICABLE:
+        description: Node is not a single groundable protein or gene product.
+  UniProtEntryStatusEnum:
+    permissible_values:
+      SWISS_PROT:
+        description: Manually annotated and reviewed UniProtKB/Swiss-Prot entry.
+      TREMBL:
+        description: Computationally analyzed UniProtKB/TrEMBL entry.
+

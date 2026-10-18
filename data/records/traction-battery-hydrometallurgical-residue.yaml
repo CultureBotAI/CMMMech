@@ -91,11 +91,211 @@ mechanisms:
       name to A. thiooxidans. ATCC 23270 and DSM 17362 appear among the respective type-strain links,
       but those links do not authenticate the cultures used. AS1 6358, BJMCC 01101 and CGMCC 1.15711 remain
       source-reported stock labels without an asserted collection CURIE or inferred causal assignment.
+  protein_examples:
+  - uniprot_accession: UniProtKB:B7JBP8
+    entry_name: SQRD_ACIF2
+    protein_name: Sulfide-quinone reductase
+    gene_symbol: AFE_1792
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    ec_numbers:
+    - EC:1.8.5.4
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR051169
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; AFE_1792) catalyzing oxidation
+      of sulfide to elemental sulfur/polysulfide coupled to quinone reduction during acidophilic sulfur/sulfide
+      bioleaching.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus
+      ferrooxidans ATCC 23270 (NCBITaxon:243159).
+    evidence:
+    - source_ref: lu2025
+      supports: support
+      explanation: Oxidizes reduced inorganic sulfur intermediates during acidophilic bioleaching of Traction-battery
+        nickel and cobalt hydrometallurgical residues.
+  - uniprot_accession: UniProtKB:B7J3C9
+    entry_name: TTH_ACIF2
+    protein_name: Tetrathionate hydrolase
+    gene_symbol: tth
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    ec_numbers:
+    - EC:3.12.1.-
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase (EC 3.12.1.-; tth / AFE_0029) hydrolyzing tetrathionate
+      into thiosulfate, elemental sulfur, and sulfate, generating sulfuric acid protons.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus
+      ferrooxidans ATCC 23270 (NCBITaxon:243159).
+    evidence:
+    - source_ref: lu2025
+      supports: support
+      explanation: Hydrolyzes polythionate intermediates to regenerate sulfuric acid acidity during bioleaching
+        of Traction-battery nickel and cobalt hydrometallurgical residues.
 history_refs:
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-12T144943Z-codex-e18c9e.yaml
+- history/records/traction-battery-hydrometallurgical-residue/2026-10-18T042750Z-antigravity-437365.yaml
 curation_history:
 - timestamp: '2026-10-12T14:49:44.531130+00:00'
   curator: Codex (GPT-6; codex)
   action: CREATE
   summary: Created the distinct downstream wet-processing residue from complete original evidence, retaining
     feed/yield conflicts, separate residue arms and comparative-control limitations.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein examples (Sqr UniProtKB:B7JBP8, Tth UniProtKB:B7J3C9) and
+    causal graph for acidophile consortium leaching of traction-battery hydrometallurgical residues.
+causal_graphs:
+- id: ferrooxidans_battery_residue_bioleaching_graph
+  name: Acidophile consortium sulfur/iron oxidation and battery hydrometallurgical residue leaching
+  description: Causal pathway linking Acidithiobacillus ferrooxidans sulfide-quinone reductase (Sqr) and
+    tetrathionate hydrolase (Tth) to biogenic acid/Fe(III) leaching of Ni, Co, and Mn from traction-battery
+    residues.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: acidophile_culture_associated_leaching
+  nodes:
+  - id: sqr_reductase
+    label: Sqr sulfide-quinone reductase (AFE_1792)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: AFE_1792
+    description: Inner-membrane flavoprotein oxidizing sulfide to zero-valent sulfur/polysulfide intermediates.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JBP8
+      entry_name: SQRD_ACIF2
+      protein_name: Sulfide-quinone reductase
+      gene_symbol: AFE_1792
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      ec_numbers:
+      - EC:1.8.5.4
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR051169
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; AFE_1792) catalyzing oxidation
+        of sulfide to elemental sulfur/polysulfide coupled to quinone reduction during acidophilic sulfur/sulfide
+        bioleaching.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus
+        ferrooxidans ATCC 23270 (NCBITaxon:243159).
+      evidence:
+      - source_ref: lu2025
+        supports: support
+        explanation: Oxidizes reduced inorganic sulfur intermediates during acidophilic bioleaching of
+          Traction-battery nickel and cobalt hydrometallurgical residues.
+  - id: tth_hydrolase
+    label: Tth tetrathionate hydrolase (tth / AFE_0029)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: tth
+    description: Periplasmic pyrroloquinoline-domain hydrolase disproportionating tetrathionate into sulfate
+      and protons.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7J3C9
+      entry_name: TTH_ACIF2
+      protein_name: Tetrathionate hydrolase
+      gene_symbol: tth
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      ec_numbers:
+      - EC:3.12.1.-
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase (EC 3.12.1.-; tth / AFE_0029) hydrolyzing tetrathionate
+        into thiosulfate, elemental sulfur, and sulfate, generating sulfuric acid protons.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus
+        ferrooxidans ATCC 23270 (NCBITaxon:243159).
+      evidence:
+      - source_ref: lu2025
+        supports: support
+        explanation: Hydrolyzes polythionate intermediates to regenerate sulfuric acid acidity during
+          bioleaching of Traction-battery nickel and cobalt hydrometallurgical residues.
+  - id: acidic_ferric_sulfate_lixiviant
+    label: Biogenic sulfuric acid and Fe(III) oxidative lixiviant
+    node_type: CHEMICAL_ENTITY
+    description: Acidic H2SO4 and Fe(III)-bearing leaching solution sustained by chemolithoautotrophic
+      metabolism.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: solid_feed_substrate
+    label: Traction-battery nickel and cobalt hydrometallurgical residues
+    node_type: MATERIAL_OR_PHASE
+    description: Starting mineral or secondary-resource feed (Traction-battery nickel and cobalt hydrometallurgical
+      residues).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: solubilized_metal_species
+    label: Solubilized Ni, Co, Mn, and Zn in acidic leachate
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved metal ions (Solubilized Ni, Co, Mn, and Zn in acidic leachate) mobilized into
+      the acidic pregnant leach solution.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: sqr_reductase
+    target: tth_hydrolase
+    predicate: supplies_substrate_for
+    relationship: oxidation of sulfide to sulfur/polythionate intermediates
+    description: Sulfide oxidation generates reduced sulfur and polythionate intermediates metabolized
+      by periplasmic tetrathionate hydrolase.
+    evidence:
+    - source_ref: lu2025
+      supports: support
+      explanation: Reduced sulfur oxidation in A. ferrooxidans couples Sqr and polythionate hydrolysis
+        to proton generation.
+  - source: tth_hydrolase
+    target: acidic_ferric_sulfate_lixiviant
+    predicate: produces
+    relationship: sulfuric acid proton generation
+    description: Tetrathionate hydrolysis produces sulfate and H+, maintaining low pH in the leaching
+      medium.
+    evidence:
+    - source_ref: lu2025
+      supports: support
+      explanation: Sulfur-compound oxidation maintains the acidic lixiviant required for metal solubilization.
+  - source: acidic_ferric_sulfate_lixiviant
+    target: solid_feed_substrate
+    predicate: acts_on
+    relationship: acidic and oxidative mineral/feed attack
+    description: Biogenic acid and ferric ions attack Traction-battery nickel and cobalt hydrometallurgical
+      residues.
+    evidence:
+    - source_ref: lu2025
+      supports: support
+      explanation: Culture-generated acidic ferric/sulfate medium attacks Traction-battery nickel and
+        cobalt hydrometallurgical residues.
+  - source: solid_feed_substrate
+    target: solubilized_metal_species
+    predicate: produces
+    relationship: oxidative/acidic dissolution
+    description: Dissolution of Traction-battery nickel and cobalt hydrometallurgical residues releases
+      Solubilized Ni, Co, Mn, and Zn in acidic leachate.
+    evidence:
+    - source_ref: lu2025
+      supports: support
+      explanation: Bioleaching mobilizes Solubilized Ni, Co, Mn, and Zn in acidic leachate into solution.

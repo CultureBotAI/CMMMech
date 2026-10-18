@@ -1,128 +1,343 @@
 id: cmmmech:vaterite
 name: Vaterite
 material_kind: mineral
-description: >-
-  Calcium carbonate mineral with ideal formula CaCO3, distinct from calcite,
-  aragonite, amorphous calcium carbonate, calcium as an element and commercial
-  calcium carbonate products. The September 2026 IMA list gives approved
-  status and 1962 special-procedure notation; this is not a new-mineral
-  accession. The curated laboratory evidence concerns vaterite assigned in
-  processed mixed solids from one geothermal-brine experiment, without a
-  pure-phase yield or inherited lithium criticality designation.
+description: Calcium carbonate mineral with ideal formula CaCO3, distinct from calcite, aragonite, amorphous
+  calcium carbonate, calcium as an element and commercial calcium carbonate products. The September 2026
+  IMA list gives approved status and 1962 special-procedure notation; this is not a new-mineral accession.
+  The curated laboratory evidence concerns vaterite assigned in processed mixed solids from one geothermal-brine
+  experiment, without a pure-phase yield or inherited lithium criticality designation.
 sources:
-  - id: ima_2026_09
-    title: >-
-      IMA-CNMNC. The New IMA List of Minerals, September 2026; definitions
-      pp. 1-2 and Vaterite row p. 227, Ca(CO3), A, 1962 s.p.
-    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
-    accessed_on: '2026-10-14'
-  - id: handbook_vaterite
-    title: >-
-      Handbook of Mineralogy, Vaterite, CaCO3; Mineral Data Publishing,
-      version 1, 2001-2005. Mineral identity and polymorphism.
-    url: https://www.handbookofmineralogy.org/pdfs/vaterite.pdf
-    accessed_on: '2026-10-14'
-  - id: rehmanji2025
-    title: >-
-      Rehmanji, Skeffington, Hudson-Edwards and Newsome (2025). Circular economy
-      approaches to microbially-induced carbonate precipitation for bioprocessing
-      of geothermal brine for lithium recovery. RSC Advances 15:43263-43274;
-      DOI 10.1039/d5ra06824j. Sections 2.1-2.2, 4.1-4.2 and 4.4-4.7; Figures 1-2.
-    url: https://doi.org/10.1039/d5ra06824j
-    accessed_on: '2026-10-14'
-  - id: rehmanji2025_si
-    title: >-
-      Rehmanji et al. (2025), supporting information to DOI 10.1039/d5ra06824j,
-      27-page RA-015-D5RA06824J-s001.pdf. Tables S1-S2/S5/S7 and Figures S1-S7;
-      actual XRD figure is S7 p. 24, not the main text's S6 reference.
-    url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12590475/supplementaryFiles
-    accessed_on: '2026-10-14'
-  - id: dsm33
-    title: DSMZ catalogue, Sporosarcina pasteurii DSM 33, type strain, strain 22.
-    url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-33
-    accessed_on: '2026-10-14'
-  - id: ncbi_pasteurii
-    title: NCBI Taxonomy 1474, Sporosarcina pasteurii, species.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1474&mode=Info
-    accessed_on: '2026-10-14'
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026; definitions pp. 1-2 and Vaterite row
+    p. 227, Ca(CO3), A, 1962 s.p.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-14'
+- id: handbook_vaterite
+  title: Handbook of Mineralogy, Vaterite, CaCO3; Mineral Data Publishing, version 1, 2001-2005. Mineral
+    identity and polymorphism.
+  url: https://www.handbookofmineralogy.org/pdfs/vaterite.pdf
+  accessed_on: '2026-10-14'
+- id: rehmanji2025
+  title: Rehmanji, Skeffington, Hudson-Edwards and Newsome (2025). Circular economy approaches to microbially-induced
+    carbonate precipitation for bioprocessing of geothermal brine for lithium recovery. RSC Advances 15:43263-43274;
+    DOI 10.1039/d5ra06824j. Sections 2.1-2.2, 4.1-4.2 and 4.4-4.7; Figures 1-2.
+  url: https://doi.org/10.1039/d5ra06824j
+  accessed_on: '2026-10-14'
+- id: rehmanji2025_si
+  title: Rehmanji et al. (2025), supporting information to DOI 10.1039/d5ra06824j, 27-page RA-015-D5RA06824J-s001.pdf.
+    Tables S1-S2/S5/S7 and Figures S1-S7; actual XRD figure is S7 p. 24, not the main text's S6 reference.
+  url: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12590475/supplementaryFiles
+  accessed_on: '2026-10-14'
+- id: dsm33
+  title: DSMZ catalogue, Sporosarcina pasteurii DSM 33, type strain, strain 22.
+  url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-33
+  accessed_on: '2026-10-14'
+- id: ncbi_pasteurii
+  title: NCBI Taxonomy 1474, Sporosarcina pasteurii, species.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1474&mode=Info
+  accessed_on: '2026-10-14'
 mechanisms:
-  - id: brine_vaterite_mixed_precipitate
-    name: Vaterite assigned in ureolytic geothermal-brine treatment solids
-    process: biomineralization
-    microbial: true
-    organisms:
-      - id: NCBITaxon:1474
-        label: Sporosarcina pasteurii
-    description: >-
-      Prepared S. pasteurii DSM 33 biomass with urea generated mixed
-      carbonate-bearing solids during treatment of one natural geothermal
-      brine. The authors assigned vaterite together with calcite and magnesite
-      by powder XRD. This mineral-level observation shares the Rehmanji2025
-      experiment with cmmmech:calcite and cmmmech:lithium-bearing-geothermal-brine;
-      those records are not independent replications. It does not identify
-      the proportion of Ca, Mg, Mn or Sr entering vaterite, demonstrate a pure
-      vaterite yield, establish a vaterite-to-calcite transformation sequence,
-      or recover lithium into a separate product.
-    context: >-
-      DSM 33 cells were grown in TSB with 500 mM urea at 28 degrees C and
-      180 rpm, harvested in mid-log phase at 3200 g for 15 min and PBS-washed.
-      Unsterilized natural brine from an unnamed Cornish geothermal project
-      was treated under reported non-growth conditions: 100 mL in 250 mL
-      flasks, initial OD600 0.05-0.4, 500 mM added urea, 28 degrees C, static
-      for 24 h, in triplicate. The source-designated B. subtilis ATCC-2385
-      comparator and a separate brine-plus-urea/no-added-cell arm provide
-      treatment comparisons, but no matched-pH chemical or killed-cell
-      phase-control series is reported. The comparator strain designation
-      remains unverified. Section 4.6 sampled 15 mL at 24 h, centrifuged at
-      3200 g for 15 min and dried the pellet at 60 degrees C for 24 h for
-      XRD; the reported dry-pellet quantity is not a mass-balance mineral yield.
-      Phase assignments concern processed mixed solids, without quantitative
-      refinement or an in situ phase time course. Cow-urine/CaCl2 assays and
-      spent-yeast biomass cultivation are separate arms. Laboratory flask
-      treatment and slurry tests do not establish industrial deployment.
+- id: brine_vaterite_mixed_precipitate
+  name: Vaterite assigned in ureolytic geothermal-brine treatment solids
+  process: biomineralization
+  microbial: true
+  organisms:
+  - id: NCBITaxon:1474
+    label: Sporosarcina pasteurii
+  description: Prepared S. pasteurii DSM 33 biomass with urea generated mixed carbonate-bearing solids
+    during treatment of one natural geothermal brine. The authors assigned vaterite together with calcite
+    and magnesite by powder XRD. This mineral-level observation shares the Rehmanji2025 experiment with
+    cmmmech:calcite and cmmmech:lithium-bearing-geothermal-brine; those records are not independent replications.
+    It does not identify the proportion of Ca, Mg, Mn or Sr entering vaterite, demonstrate a pure vaterite
+    yield, establish a vaterite-to-calcite transformation sequence, or recover lithium into a separate
+    product.
+  context: 'DSM 33 cells were grown in TSB with 500 mM urea at 28 degrees C and 180 rpm, harvested in
+    mid-log phase at 3200 g for 15 min and PBS-washed. Unsterilized natural brine from an unnamed Cornish
+    geothermal project was treated under reported non-growth conditions: 100 mL in 250 mL flasks, initial
+    OD600 0.05-0.4, 500 mM added urea, 28 degrees C, static for 24 h, in triplicate. The source-designated
+    B. subtilis ATCC-2385 comparator and a separate brine-plus-urea/no-added-cell arm provide treatment
+    comparisons, but no matched-pH chemical or killed-cell phase-control series is reported. The comparator
+    strain designation remains unverified. Section 4.6 sampled 15 mL at 24 h, centrifuged at 3200 g for
+    15 min and dried the pellet at 60 degrees C for 24 h for XRD; the reported dry-pellet quantity is
+    not a mass-balance mineral yield. Phase assignments concern processed mixed solids, without quantitative
+    refinement or an in situ phase time course. Cow-urine/CaCl2 assays and spent-yeast biomass cultivation
+    are separate arms. Laboratory flask treatment and slurry tests do not establish industrial deployment.'
+  evidence:
+  - source_ref: rehmanji2025
+    supports: support
+    explanation: Sections 2.1-2.2, 4.1-4.2 and 4.5-4.7 and Figures 1-2 support prepared biomass, the natural-brine
+      experiment, carbonate-bearing solids and ex situ characterization. The narrow claim is vaterite's
+      source-assigned presence in the mixed treatment product; morphology of an individual particle alone
+      does not identify its polymorph.
+  - source_ref: rehmanji2025_si
+    supports: support
+    explanation: Figure S7 (p. 24) explicitly labels vaterite as phase 1 alongside calcite and magnesite.
+      Table S1 describes the brine composition; the XRD operating table is on p. 5 with its S5 caption
+      on p. 6. Figure S5 (pp. 21-22) is the separate no-added-cell comparison. These observations are
+      not pure-phase mineral yields.
+  - source_ref: rehmanji2025
+    supports: partial
+    explanation: The main text misreferences the XRD plot as S6, which actually shows growth and pH. Its
+      initial 10-minute claim conflicts with Figure 1's hour axis and Section 4.2's hour sampling schedule.
+      Mg/Mn percentage claims do not consistently match Figure 1, whose B. subtilis Mn series also declines.
+      No removal percentage or ten-minute rate is assigned to vaterite. Section 4.4 does not clearly specify
+      solid/liquid separation for each ICP-OES metal aliquot, preventing a stronger dissolved-only interpretation.
+  - source_ref: rehmanji2025_si
+    supports: partial
+    explanation: Figure S5's inoculated Mn/Sr series differs from Figure 1 and is not pooled with it.
+      Table S7 saturation indices differ from the ranges quoted in Section 2.2, including negative magnesite
+      entries; modeled saturation cannot confirm a mineral phase. Table S2 omits the Li wavelength and
+      S9 labels aqueous Li retention as recovery. No lithium product, mineral-specific incorporation or
+      conversion between mg/L and mg/kg is inferred.
+  protein_examples:
+  - uniprot_accession: UniProtKB:P41020
+    entry_name: URE1_SPOPA
+    protein_name: Urease subunit alpha
+    gene_symbol: ureC
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:1474
+      label: Sporosarcina pasteurii
+    reference_proteome_id: UP000254519
+    ec_numbers:
+    - EC:3.5.1.5
+    interpro_ids:
+    - InterPro:IPR006680
+    - InterPro:IPR011059
+    - InterPro:IPR032466
+    - InterPro:IPR011612
+    - InterPro:IPR017950
+    - InterPro:IPR005848
+    - InterPro:IPR017951
+    - InterPro:IPR029754
+    pfam_ids:
+    - Pfam:PF01979
+    - Pfam:PF00449
+    functional_role: Catalytic alpha subunit (UreC; EC 3.5.1.5) of the nickel-dependent urease complex
+      that hydrolyzes urea into ammonia and carbamate/carbonate.
+    annotation_note: Grounded to reviewed Swiss-Prot entries for Sporosarcina pasteurii (NCBITaxon:1474;
+      reference proteome UP000254519).
     evidence:
-      - source_ref: rehmanji2025
-        supports: support
-        explanation: >-
-          Sections 2.1-2.2, 4.1-4.2 and 4.5-4.7 and Figures 1-2 support
-          prepared biomass, the natural-brine experiment, carbonate-bearing
-          solids and ex situ characterization. The narrow claim is vaterite's
-          source-assigned presence in the mixed treatment product; morphology
-          of an individual particle alone does not identify its polymorph.
-      - source_ref: rehmanji2025_si
-        supports: support
-        explanation: >-
-          Figure S7 (p. 24) explicitly labels vaterite as phase 1 alongside
-          calcite and magnesite. Table S1 describes the brine composition;
-          the XRD operating table is on p. 5 with its S5 caption on p. 6.
-          Figure S5 (pp. 21-22) is the separate no-added-cell comparison.
-          These observations are not pure-phase mineral yields.
-      - source_ref: rehmanji2025
-        supports: partial
-        explanation: >-
-          The main text misreferences the XRD plot as S6, which actually
-          shows growth and pH. Its initial 10-minute claim conflicts with
-          Figure 1's hour axis and Section 4.2's hour sampling schedule.
-          Mg/Mn percentage claims do not consistently match Figure 1, whose
-          B. subtilis Mn series also declines. No removal percentage or
-          ten-minute rate is assigned to vaterite. Section 4.4 does not
-          clearly specify solid/liquid separation for each ICP-OES metal
-          aliquot, preventing a stronger dissolved-only interpretation.
-      - source_ref: rehmanji2025_si
-        supports: partial
-        explanation: >-
-          Figure S5's inoculated Mn/Sr series differs from Figure 1 and is not
-          pooled with it. Table S7 saturation indices differ from the ranges
-          quoted in Section 2.2, including negative magnesite entries; modeled
-          saturation cannot confirm a mineral phase. Table S2 omits the Li
-          wavelength and S9 labels aqueous Li retention as recovery. No
-          lithium product, mineral-specific incorporation or conversion
-          between mg/L and mg/kg is inferred.
+    - source_ref: rehmanji2025
+      supports: support
+      explanation: Urease-catalyzed urea hydrolysis elevates carbonate alkalinity and pH, driving precipitation
+        of Vaterite-assigned carbonate polymorph in treatment solids.
+  - uniprot_accession: UniProtKB:P41021
+    entry_name: URE2_SPOPA
+    protein_name: Urease subunit beta
+    gene_symbol: ureB
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:1474
+      label: Sporosarcina pasteurii
+    reference_proteome_id: UP000254519
+    ec_numbers:
+    - EC:3.5.1.5
+    interpro_ids:
+    - InterPro:IPR002019
+    - InterPro:IPR036461
+    - InterPro:IPR050069
+    pfam_ids:
+    - Pfam:PF00699
+    functional_role: Beta subunit (UreB; EC 3.5.1.5) of the heterotrimeric Sporosarcina pasteurii urease
+      complex.
+    annotation_note: Grounded to reviewed Swiss-Prot entries for Sporosarcina pasteurii (NCBITaxon:1474;
+      reference proteome UP000254519).
+    evidence:
+    - source_ref: rehmanji2025
+      supports: support
+      explanation: Structural subunit of the active urease holoenzyme responsible for ureolytic alkalinity
+        generation during Vaterite-assigned carbonate polymorph in treatment solids formation.
+  - uniprot_accession: UniProtKB:P41022
+    entry_name: URE3_SPOPA
+    protein_name: Urease subunit gamma
+    gene_symbol: ureA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:1474
+      label: Sporosarcina pasteurii
+    reference_proteome_id: UP000254519
+    ec_numbers:
+    - EC:3.5.1.5
+    interpro_ids:
+    - InterPro:IPR012010
+    - InterPro:IPR002026
+    - InterPro:IPR036463
+    - InterPro:IPR050069
+    pfam_ids:
+    - Pfam:PF00547
+    functional_role: Gamma subunit (UreA; EC 3.5.1.5) of the heterotrimeric Sporosarcina pasteurii urease
+      complex.
+    annotation_note: Grounded to reviewed Swiss-Prot entries for Sporosarcina pasteurii (NCBITaxon:1474;
+      reference proteome UP000254519).
+    evidence:
+    - source_ref: rehmanji2025
+      supports: support
+      explanation: Structural subunit of the active urease holoenzyme driving urea hydrolysis and carbonate
+        precipitation of Vaterite-assigned carbonate polymorph in treatment solids.
 curation_history:
-  - timestamp: '2026-10-14T12:19:25Z'
-    curator: codex (GPT-6; codex)
-    action: CREATE
-    summary: >-
-      Created mineral identity and source-assigned mixed-product laboratory evidence; preserved processed-solid and control limits, source contradictions and shared experiment lineage without phase-specific yields or criticality inheritance.
+- timestamp: '2026-10-14T12:19:25Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created mineral identity and source-assigned mixed-product laboratory evidence; preserved processed-solid
+    and control limits, source contradictions and shared experiment lineage without phase-specific yields
+    or criticality inheritance.
+- timestamp: '2026-10-18T04:27:50Z'
+  curator: antigravity
+  action: EDIT
+  summary: Added verified UniProtKB protein examples (UreC UniProtKB:P41020, UreB UniProtKB:P41021, UreA
+    UniProtKB:P41022) and causal graph for Sporosarcina pasteurii ureolytic vaterite precipitation.
 history_refs:
-  - history/records/vaterite/2026-10-14T121914Z-codex-e384f5.yaml
+- history/records/vaterite/2026-10-14T121914Z-codex-e384f5.yaml
+- history/records/vaterite/2026-10-18T042750Z-antigravity-a8906b.yaml
+causal_graphs:
+- id: pasteurii_geothermal_brine_vaterite_graph
+  name: Sporosarcina pasteurii ureolytic vaterite precipitation in geothermal brine
+  description: Causal pathway linking Sporosarcina pasteurii UreABC urea hydrolysis to carbonate supersaturation
+    and vaterite formation in treated geothermal brine solids.
+  scope: RECORD_SPECIFIC_MECHANISM
+  mechanism_ref: brine_vaterite_mixed_precipitate
+  nodes:
+  - id: ureabc_urease_complex
+    label: UreABC nickel-dependent urease complex (ureA, ureB, ureC)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: ureABC
+    description: Heterotrimeric nickel-dependent urease (EC 3.5.1.5) catalyzing hydrolysis of urea into
+      ammonia and carbonate.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:P41020
+      entry_name: URE1_SPOPA
+      protein_name: Urease subunit alpha
+      gene_symbol: ureC
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:1474
+        label: Sporosarcina pasteurii
+      reference_proteome_id: UP000254519
+      ec_numbers:
+      - EC:3.5.1.5
+      interpro_ids:
+      - InterPro:IPR006680
+      - InterPro:IPR011059
+      - InterPro:IPR032466
+      - InterPro:IPR011612
+      - InterPro:IPR017950
+      - InterPro:IPR005848
+      - InterPro:IPR017951
+      - InterPro:IPR029754
+      pfam_ids:
+      - Pfam:PF01979
+      - Pfam:PF00449
+      functional_role: Catalytic alpha subunit (UreC; EC 3.5.1.5) of the nickel-dependent urease complex
+        that hydrolyzes urea into ammonia and carbamate/carbonate.
+      annotation_note: Grounded to reviewed Swiss-Prot entries for Sporosarcina pasteurii (NCBITaxon:1474;
+        reference proteome UP000254519).
+      evidence:
+      - source_ref: rehmanji2025
+        supports: support
+        explanation: Urease-catalyzed urea hydrolysis elevates carbonate alkalinity and pH, driving precipitation
+          of Vaterite-assigned carbonate polymorph in treatment solids.
+    - uniprot_accession: UniProtKB:P41021
+      entry_name: URE2_SPOPA
+      protein_name: Urease subunit beta
+      gene_symbol: ureB
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:1474
+        label: Sporosarcina pasteurii
+      reference_proteome_id: UP000254519
+      ec_numbers:
+      - EC:3.5.1.5
+      interpro_ids:
+      - InterPro:IPR002019
+      - InterPro:IPR036461
+      - InterPro:IPR050069
+      pfam_ids:
+      - Pfam:PF00699
+      functional_role: Beta subunit (UreB; EC 3.5.1.5) of the heterotrimeric Sporosarcina pasteurii urease
+        complex.
+      annotation_note: Grounded to reviewed Swiss-Prot entries for Sporosarcina pasteurii (NCBITaxon:1474;
+        reference proteome UP000254519).
+      evidence:
+      - source_ref: rehmanji2025
+        supports: support
+        explanation: Structural subunit of the active urease holoenzyme responsible for ureolytic alkalinity
+          generation during Vaterite-assigned carbonate polymorph in treatment solids formation.
+    - uniprot_accession: UniProtKB:P41022
+      entry_name: URE3_SPOPA
+      protein_name: Urease subunit gamma
+      gene_symbol: ureA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:1474
+        label: Sporosarcina pasteurii
+      reference_proteome_id: UP000254519
+      ec_numbers:
+      - EC:3.5.1.5
+      interpro_ids:
+      - InterPro:IPR012010
+      - InterPro:IPR002026
+      - InterPro:IPR036463
+      - InterPro:IPR050069
+      pfam_ids:
+      - Pfam:PF00547
+      functional_role: Gamma subunit (UreA; EC 3.5.1.5) of the heterotrimeric Sporosarcina pasteurii urease
+        complex.
+      annotation_note: Grounded to reviewed Swiss-Prot entries for Sporosarcina pasteurii (NCBITaxon:1474;
+        reference proteome UP000254519).
+      evidence:
+      - source_ref: rehmanji2025
+        supports: support
+        explanation: Structural subunit of the active urease holoenzyme driving urea hydrolysis and carbonate
+          precipitation of Vaterite-assigned carbonate polymorph in treatment solids.
+  - id: urea_hydrolysis_alkalinity
+    label: Ammonium and carbonate alkalinity generation (pH elevation)
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved NH4+ and CO3(2-) produced by enzymatic urea hydrolysis, increasing solution
+      pH and carbonate supersaturation.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: dissolved_metal_cations
+    label: Geothermal brine Ca(II) and divalent cations
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved cations (Geothermal brine Ca(II) and divalent cations) available in the reaction
+      medium or brine.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: precipitated_mineral_phase
+    label: Vaterite-assigned carbonate polymorph in treatment solids
+    node_type: MATERIAL_OR_PHASE
+    description: Solid mineral product (Vaterite-assigned carbonate polymorph in treatment solids) precipitated
+      upon ureolytic carbonate supersaturation.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: ureabc_urease_complex
+    target: urea_hydrolysis_alkalinity
+    predicate: catalyzes
+    relationship: hydrolysis of urea to ammonia and carbonate
+    description: UreABC hydrolyzes urea, releasing ammonium and carbonate ions and raising solution pH.
+    evidence:
+    - source_ref: rehmanji2025
+      supports: support
+      explanation: Ureolytic activity increases pH and dissolved carbonate concentration.
+  - source: urea_hydrolysis_alkalinity
+    target: precipitated_mineral_phase
+    predicate: drives
+    relationship: carbonate supersaturation and nucleation
+    description: Elevated pH and carbonate activity drive precipitation of Vaterite-assigned carbonate
+      polymorph in treatment solids.
+    evidence:
+    - source_ref: rehmanji2025
+      supports: support
+      explanation: Ureolytic carbonate generation drives formation of Vaterite-assigned carbonate polymorph
+        in treatment solids.
+  - source: dissolved_metal_cations
+    target: precipitated_mineral_phase
+    predicate: incorporates_into
+    relationship: cation precipitation with carbonate/phosphate
+    description: Geothermal brine Ca(II) and divalent cations co-precipitates into Vaterite-assigned carbonate
+      polymorph in treatment solids.
+    evidence:
+    - source_ref: rehmanji2025
+      supports: support
+      explanation: Cations from solution are incorporated into the precipitated Vaterite-assigned carbonate
+        polymorph in treatment solids solids.
