@@ -1,0 +1,474 @@
+# Independent scientific review of ezcurrite
+
+- Review: 20261016T094001Z-ezcurrite-round116-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-16T09:34:28.501283Z
+- Finished UTC: 2026-10-16T09:40:01.215192Z
+- Reviewer: codex /root/round104_ree (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Ezcurrite passes with limitations: current identity, structure and the bounded natural heating and separate qualitative crystallization observations are supported. No corrective owner defect found.
+
+## Scope And Provenance
+
+Full exact frozen owner, scientific claims, canonical/inline history and source handoff. No unadmitted new atomic model or later spectroscopy imported.
+
+Selection: Native inspect captured exact target and source context before scientific judgment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 5d3c48e255705e269096c43cf1c5508a5178ecc1.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:ezcurrite | data/records/ezcurrite.yaml | maintained | Ezcurrite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict validation | passed | True | cmmmech:ezcurrite | Actual2/0 result with exact owner/base/worktree/log bindings. |
+| Final batch command 1 | passed | True | cmmmech:ezcurrite | Coordinator execution 2026-10-16T09:30:27.453193+00:00 through 2026-10-16T09:35:47.742806+00:00; exact receipt/log and current target independently verified. |
+| Final batch command 2 | passed | True | cmmmech:ezcurrite | Coordinator execution 2026-10-16T09:35:47.742842+00:00 through 2026-10-16T09:35:59.953005+00:00; exact receipt/log and current target independently verified. |
+| Final batch command 3 | passed | True | cmmmech:ezcurrite | Coordinator execution 2026-10-16T09:35:59.953038+00:00 through 2026-10-16T09:36:06.144809+00:00; exact receipt/log and current target independently verified. |
+| Final batch command 4 | passed | True | cmmmech:ezcurrite | Coordinator execution 2026-10-16T09:36:06.144830+00:00 through 2026-10-16T09:36:11.133750+00:00; exact receipt/log and current target independently verified. |
+
+## Scientific And Domain Assessments
+
+### Grandfathered mineral and structural interpretation
+
+identity: supported. Targets: cmmmech:ezcurrite.
+
+Current Na2B5O7(OH)3·2H2O identity is supported; 1957 is a description year, not an approval CURIE. The 1973 fragment did not receive a new chemical analysis/cell determination. Partial H location and the revised OH/water partition are explicit.
+
+### Natural-material thermal alteration
+
+evidence: supported. Targets: cmmmech:ezcurrite.
+
+Figure 6 specifies 20°C/min, Pt/Pt-13%Rh, 0°C reference junction and alumina reference. The 280°C amorphization, 680°C crystalline product and 780°C melting are supported. The approximately 575°C OH assignment is tentative in results despite the stronger abstract. Quenched glass and slow-cooled crystals remain separate outcomes.
+
+### Separate qualitative synthesis trials
+
+evidence: supported. Targets: cmmmech:ezcurrite.
+
+Page 1058 directly reports two tested trials: 10g borax, 2.16g boric acid and 10g water, boiled nearly to complete crystallization then 10mL cold water/filtration; a separate NaCl-saturated solution concentrated above51°C gave a qualitatively better crop. Unstated hydration, purity, residence times, product masses and trial-specific characterization remain null.
+
+### No invented product recovery or purity
+
+scope: supported. Targets: cmmmech:ezcurrite.
+
+Possible rivadavite inclusion is a chemical-analysis qualification, not a measured thermal-aliquot fraction. No evolved-gas assay, quantitative phase purity, recovery yield or identified heated compound is invented. Natural thermal and synthetic crystallization experiments remain separate.
+
+### Exact capture, source access and creation histories
+
+provenance: supported. Targets: cmmmech:ezcurrite.
+
+Captured scientific/context bytes remain unchanged. CREATE sidecar and separate inline event accurately identify curator, target, UTC and scope. All27 raw source locators/hashes, named strict validation and actual final batch are verified.
+
+### Mineral, commodity and biological boundaries
+
+scope: supported. Targets: cmmmech:ezcurrite.
+
+No inherited commodity criticality, microorganisms, processing pilot or industrial deployment is asserted. Laboratory mineral transformations do not establish extraction or isolated boron recovery.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/ezcurrite.yaml; Complete exact frozen owner /private/tmp/CMMMech-expansion-round116-20261016/data/records/ezcurrite.yaml | supports | Scientific assertions and boundaries independently assessed; this reviewer did not edit the target. |
+| capture | /private/tmp/cmm-round116-ree-research/borate-review-ezcurrite-inspect.json; Native inspect before scientific judgment; exact owner, schema and paired dossier inputs; canonical history named in target owner_paths. | context_only | Current input hashes match the initial capture. |
+| history | history/records/ezcurrite/2026-10-16T092240Z-codex-f7f2f6.yaml; Complete CREATE sidecar, separate inline CREATE event and frozen author manifest. | supports | Actual codex/GPT-6 actor, UTC and target; the described scientific scope agrees with the current owner. |
+| dossier | research/sources/round116-borates/20261016T092605Z-source-investigation.json; Complete paired JSON and Markdown; acquisition and scope, bounded deduplication and primary-source limitations. | context_only | Author handoff evaluated as context, not independent primary proof. |
+| artifacts | /private/tmp/cmm-round116-ree-research/borate-review-source-path-check.json; All 27 current absolute source path/hash pairs recursively verified. | context_only | Referenced source bytes exist and match; the failed rivadavite 1973 HTML payload is not treated as a PDF. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Definitions page 1 and Ezcurrite page 66 visually inspected. /private/tmp/cmm-round116-borates-research/ima2026-09.pdf | supports | The shared authority bytes match this reviewer's independently acquired official September 2026 list. Current species identity and status verified without commodity criticality transfer. |
+| search | /private/tmp/cmm-round116-ree-research/borate-review-search-results.json; Three fresh bounded searches: ezcurrite 1967 thermal/synthesis corrections; rivadavite 1967/218-degree correction; ezcurrite 1973 crystal-structure corrections. | context_only | Returned results did not identify an affecting formal notice. Existing source inconsistencies remain qualified in the owners. |
+| dedup | /private/tmp/cmm-round116-ree-research/borate-review-dedup.txt; Current worktree records/research/reviews/history searched with rg --no-ignore --hidden --follow -l for identities, approval and source identifiers; author main-report/cited-raw summaries inspected. | context_only | No competing current species owner identified in the bounded results; these new owners and dossier contexts are expected hits. |
+| original | https://msaweb.org/AmMin/AM52/AM52_1048.pdf; Complete 12 pages pp.1048–1059 read and visually inspected, including all seven figures and Tables 1–6. Chemistry Tables 5–6 p.1055, interpretation p.1056; DTA Figure 6/results pp.1056–1057; synthesis p.1058. /private/tmp/cmm-round116-borates-research/ezcurrite1967.pdf | supports | Natural Tincalayu material, chemistry-column discrepancy, unresolved heating products and separate qualitative synthetic trials directly support the bounded claims. |
+| structure | https://msaweb.org/AmMin/AM58/AM58_110.pdf; Complete six pages pp.110–115 read and visually inspected; methods p.110, Table 1 and Figures 1–2 p.111, geometry Tables 3–6 pp.112–113, Figures 3–4 p.113, H/displacement Tables 7–8 p.114. External Table 2 is not in the article. /private/tmp/cmm-round116-borates-research/ezcurrite1973.pdf | supports | Pentaborate chains along c, two tetrahedral/three trigonal B, five located H out of seven and reused cell/chemistry are explicit; R0.050 applies to observed reflections. |
+| named | /private/tmp/cmm-round116-ree-research/borate-review-named-validation.json; Independent completed named command, exact W/base/target hashes and log verified. | supports | Two records checked, zero failures; structural validation is not scientific proof. |
+| batch | /private/tmp/cmm-round116-final-gates.json; Actual terminal four-command batch, exact W/base/ordered commands/zero exits/unchanged record inputs and log hash verified: 0aa43c5dedb31d8dfb9c620874df5bfb6dbc520bc4f243b1d5622ebe650b13f1 | supports | Successful current-state checks; no earlier-phase receipt substituted. |
+
+## Limits And Additional Notes
+
+- Atmosphere, thermal sample mass, replication and quantified thermal-aliquot purity are not reported; product assignments remain bounded by optical/diffraction observations.
+- Synthetic trials have qualitative outcomes and no trial-specific product purity/yield; no recovery percentage can be derived.
+- External NAPS01978 structure factors were not acquired, and no independent atomic re-refinement was performed.
+- Counterevidence and duplicate searches are bounded, not exhaustive literature absence.
+- Working-tree scientific acceptance is separate from subsequent canonical corpus review checking and committed/hosted publication gates.
+- No self-authored REE owner is reviewed here.
+- No target edits or fabricated measurements, criticality or organisms.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261016T094001Z-ezcurrite-round116-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of ezcurrite
+started_at: '2026-10-16T09:34:28.501283Z'
+finished_at: '2026-10-16T09:40:01.215192Z'
+reviewer:
+  identity: codex /root/round104_ree
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/round104_borates. No reviewed
+    owner/history/dossier edits. This reviewer authored separate caysichite-Y/kuliokite-Y
+    records. Source acquisition was shared; full originals and figures/tables, current
+    authority and admitted claim boundaries were independently inspected.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 5d3c48e255705e269096c43cf1c5508a5178ecc1
+  state: working_tree
+  inputs:
+  - path: data/records/ezcurrite.yaml
+    sha256: 030d08aaefce724438a5bdc3953faa0ac04b05ed87fff0d6d93cf5fe59a48229
+    role: target
+  - path: research/sources/round116-borates/20261016T092605Z-source-investigation.json
+    sha256: 6097d3052e81e1d4964c7e8132984fd29972b6227716f101b82fccdd6501c5bd
+    role: context
+  - path: research/sources/round116-borates/20261016T092605Z-source-investigation.md
+    sha256: 09e660366882f9a87a5a01c250503986ecce57c5d335d56cd57acc6f20525888
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: f13df7392fb27e6ff2c1fa658446cdac9bc1e1c544ef9cb903578107f1d66f1c
+    role: context
+targets:
+- target_id: cmmmech:ezcurrite
+  path: data/records/ezcurrite.yaml
+  label: Ezcurrite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/ezcurrite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/ezcurrite/2026-10-16T092240Z-codex-f7f2f6.yaml
+    role: canonical_history
+scope:
+  description: Full exact frozen owner, scientific claims, canonical/inline history
+    and source handoff. No unadmitted new atomic model or later spectroscopy imported.
+  selection: Native inspect captured exact target and source context before scientific
+    judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:ezcurrite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/ezcurrite.yaml
+  locator: Complete exact frozen owner /private/tmp/CMMMech-expansion-round116-20261016/data/records/ezcurrite.yaml
+  accessed_at: '2026-10-16T09:40:01.215192Z'
+  support: supports
+  summary: Scientific assertions and boundaries independently assessed; this reviewer
+    did not edit the target.
+  snapshot_sha256: 030d08aaefce724438a5bdc3953faa0ac04b05ed87fff0d6d93cf5fe59a48229
+- evidence_id: capture
+  kind: record_content
+  reference: /private/tmp/cmm-round116-ree-research/borate-review-ezcurrite-inspect.json
+  locator: Native inspect before scientific judgment; exact owner, schema and paired
+    dossier inputs; canonical history named in target owner_paths.
+  accessed_at: '2026-10-16T09:40:01.215192Z'
+  support: context_only
+  summary: Current input hashes match the initial capture.
+  snapshot_sha256: 256bfb19ac0ead58382efd98c3619a506b64a0e8a05449302180bd566cf48c70
+- evidence_id: history
+  kind: record_content
+  reference: history/records/ezcurrite/2026-10-16T092240Z-codex-f7f2f6.yaml
+  locator: Complete CREATE sidecar, separate inline CREATE event and frozen author
+    manifest.
+  accessed_at: '2026-10-16T09:40:01.215192Z'
+  support: supports
+  summary: Actual codex/GPT-6 actor, UTC and target; the described scientific scope
+    agrees with the current owner.
+  snapshot_sha256: 571c9b23d7af9a78168578bd7d8b78c5aa63df66b6d33efa83fdda9b79cbd142
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round116-borates/20261016T092605Z-source-investigation.json
+  locator: Complete paired JSON and Markdown; acquisition and scope, bounded deduplication
+    and primary-source limitations.
+  accessed_at: '2026-10-16T09:40:01.215192Z'
+  support: context_only
+  summary: Author handoff evaluated as context, not independent primary proof.
+  snapshot_sha256: 6097d3052e81e1d4964c7e8132984fd29972b6227716f101b82fccdd6501c5bd
+- evidence_id: artifacts
+  kind: record_content
+  reference: /private/tmp/cmm-round116-ree-research/borate-review-source-path-check.json
+  locator: All 27 current absolute source path/hash pairs recursively verified.
+  accessed_at: '2026-10-16T09:40:01.215192Z'
+  support: context_only
+  summary: Referenced source bytes exist and match; the failed rivadavite 1973 HTML
+    payload is not treated as a PDF.
+  snapshot_sha256: 23a222d61d40c0667d304a0660d2080ba9ef2dd78bd98d617e199cec31c72c58
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Definitions page 1 and Ezcurrite page 66 visually inspected. /private/tmp/cmm-round116-borates-research/ima2026-09.pdf
+  accessed_at: '2026-10-16T09:40:01.215192Z'
+  support: supports
+  summary: The shared authority bytes match this reviewer's independently acquired
+    official September 2026 list. Current species identity and status verified without
+    commodity criticality transfer.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmm-round116-ree-research/borate-review-search-results.json
+  locator: 'Three fresh bounded searches: ezcurrite 1967 thermal/synthesis corrections;
+    rivadavite 1967/218-degree correction; ezcurrite 1973 crystal-structure corrections.'
+  accessed_at: '2026-10-16T09:40:01.215192Z'
+  support: context_only
+  summary: Returned results did not identify an affecting formal notice. Existing
+    source inconsistencies remain qualified in the owners.
+  snapshot_sha256: 0d7f21237e4f4723f6cbc7a48a9c3acf47ef4f6dc3969205470cb65d65c0f257
+  search_scope: Returned web results only; not exhaustive absence. Primary snippets
+    were discovery leads, not substitutes for inspected articles.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmm-round116-ree-research/borate-review-dedup.txt
+  locator: Current worktree records/research/reviews/history searched with rg --no-ignore
+    --hidden --follow -l for identities, approval and source identifiers; author main-report/cited-raw
+    summaries inspected.
+  accessed_at: '2026-10-16T09:40:01.215192Z'
+  support: context_only
+  summary: No competing current species owner identified in the bounded results; these
+    new owners and dossier contexts are expected hits.
+  snapshot_sha256: 532d1599ccff756b4e61951b23af6fbe6daf23e2756b4f2f356d993d122307a8
+  search_scope: Hidden/ignored files and relevant followed symlinks included in stated
+    roots. No machine-wide or binary-content absence assertion.
+- evidence_id: original
+  kind: primary_source
+  reference: https://msaweb.org/AmMin/AM52/AM52_1048.pdf
+  locator: Complete 12 pages pp.1048–1059 read and visually inspected, including all
+    seven figures and Tables 1–6. Chemistry Tables 5–6 p.1055, interpretation p.1056;
+    DTA Figure 6/results pp.1056–1057; synthesis p.1058. /private/tmp/cmm-round116-borates-research/ezcurrite1967.pdf
+  accessed_at: '2026-10-16T09:40:01.215192Z'
+  support: supports
+  summary: Natural Tincalayu material, chemistry-column discrepancy, unresolved heating
+    products and separate qualitative synthetic trials directly support the bounded
+    claims.
+  snapshot_sha256: 492547d3af433e37937cac2a60dd19235587829f6216dd1a160f8b753564b732
+- evidence_id: structure
+  kind: primary_source
+  reference: https://msaweb.org/AmMin/AM58/AM58_110.pdf
+  locator: Complete six pages pp.110–115 read and visually inspected; methods p.110,
+    Table 1 and Figures 1–2 p.111, geometry Tables 3–6 pp.112–113, Figures 3–4 p.113,
+    H/displacement Tables 7–8 p.114. External Table 2 is not in the article. /private/tmp/cmm-round116-borates-research/ezcurrite1973.pdf
+  accessed_at: '2026-10-16T09:40:01.215192Z'
+  support: supports
+  summary: Pentaborate chains along c, two tetrahedral/three trigonal B, five located
+    H out of seven and reused cell/chemistry are explicit; R0.050 applies to observed
+    reflections.
+  snapshot_sha256: eff3a9bd0174e00cd2572c8226307648974237a085ae302ab1632037e39f5c31
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmm-round116-ree-research/borate-review-named-validation.json
+  locator: Independent completed named command, exact W/base/target hashes and log
+    verified.
+  accessed_at: '2026-10-16T09:40:01.215192Z'
+  support: supports
+  summary: Two records checked, zero failures; structural validation is not scientific
+    proof.
+  snapshot_sha256: f6d0a1480156f67d5b6741c34a58a73f604328ee4346761ba927bf6b7e5a981a
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmm-round116-final-gates.json
+  locator: 'Actual terminal four-command batch, exact W/base/ordered commands/zero
+    exits/unchanged record inputs and log hash verified: 0aa43c5dedb31d8dfb9c620874df5bfb6dbc520bc4f243b1d5622ebe650b13f1'
+  accessed_at: '2026-10-16T09:40:01.215192Z'
+  support: supports
+  summary: Successful current-state checks; no earlier-phase receipt substituted.
+  snapshot_sha256: e38ebb987e57047c4f30e4e0b7583c4bdfafbc987656a9bfbe765fefcfeadc3d
+checks:
+- check_id: named
+  name: Independent named strict validation
+  command: uv run --locked cmmmech validate --require-records data/records/ezcurrite.yaml
+    data/records/rivadavite.yaml
+  status: passed
+  required: true
+  summary: Actual2/0 result with exact owner/base/worktree/log bindings.
+  target_ids:
+  - cmmmech:ezcurrite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: batch0
+  name: Final batch command 1
+  command: just check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T09:30:27.453193+00:00 through 2026-10-16T09:35:47.742806+00:00;
+    exact receipt/log and current target independently verified.
+  target_ids:
+  - cmmmech:ezcurrite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch1
+  name: Final batch command 2
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T09:35:47.742842+00:00 through 2026-10-16T09:35:59.953005+00:00;
+    exact receipt/log and current target independently verified.
+  target_ids:
+  - cmmmech:ezcurrite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch2
+  name: Final batch command 3
+  command: uv run --locked cmmmech validate-history --base 5d3c48e255705e269096c43cf1c5508a5178ecc1
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T09:35:59.953038+00:00 through 2026-10-16T09:36:06.144809+00:00;
+    exact receipt/log and current target independently verified.
+  target_ids:
+  - cmmmech:ezcurrite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+- check_id: batch3
+  name: Final batch command 4
+  command: uv run --locked python scripts/render_pages.py --check
+  status: passed
+  required: true
+  summary: Coordinator execution 2026-10-16T09:36:06.144830+00:00 through 2026-10-16T09:36:11.133750+00:00;
+    exact receipt/log and current target independently verified.
+  target_ids:
+  - cmmmech:ezcurrite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - batch
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Grandfathered mineral and structural interpretation
+  outcome: supported
+  summary: Current Na2B5O7(OH)3·2H2O identity is supported; 1957 is a description
+    year, not an approval CURIE. The 1973 fragment did not receive a new chemical
+    analysis/cell determination. Partial H location and the revised OH/water partition
+    are explicit.
+  target_ids:
+  - cmmmech:ezcurrite
+  evidence_ids:
+  - owner
+  - ima
+  - original
+  - structure
+- assessment_id: thermal
+  area: evidence
+  topic: Natural-material thermal alteration
+  outcome: supported
+  summary: Figure 6 specifies 20°C/min, Pt/Pt-13%Rh, 0°C reference junction and alumina
+    reference. The 280°C amorphization, 680°C crystalline product and 780°C melting
+    are supported. The approximately 575°C OH assignment is tentative in results despite
+    the stronger abstract. Quenched glass and slow-cooled crystals remain separate
+    outcomes.
+  target_ids:
+  - cmmmech:ezcurrite
+  evidence_ids:
+  - owner
+  - original
+- assessment_id: synthesis
+  area: evidence
+  topic: Separate qualitative synthesis trials
+  outcome: supported
+  summary: 'Page 1058 directly reports two tested trials: 10g borax, 2.16g boric acid
+    and 10g water, boiled nearly to complete crystallization then 10mL cold water/filtration;
+    a separate NaCl-saturated solution concentrated above51°C gave a qualitatively
+    better crop. Unstated hydration, purity, residence times, product masses and trial-specific
+    characterization remain null.'
+  target_ids:
+  - cmmmech:ezcurrite
+  evidence_ids:
+  - owner
+  - original
+- assessment_id: uncertainty
+  area: scope
+  topic: No invented product recovery or purity
+  outcome: supported
+  summary: Possible rivadavite inclusion is a chemical-analysis qualification, not
+    a measured thermal-aliquot fraction. No evolved-gas assay, quantitative phase
+    purity, recovery yield or identified heated compound is invented. Natural thermal
+    and synthetic crystallization experiments remain separate.
+  target_ids:
+  - cmmmech:ezcurrite
+  evidence_ids:
+  - owner
+  - original
+  - structure
+- assessment_id: provenance
+  area: provenance
+  topic: Exact capture, source access and creation histories
+  outcome: supported
+  summary: Captured scientific/context bytes remain unchanged. CREATE sidecar and
+    separate inline event accurately identify curator, target, UTC and scope. All27
+    raw source locators/hashes, named strict validation and actual final batch are
+    verified.
+  target_ids:
+  - cmmmech:ezcurrite
+  evidence_ids:
+  - owner
+  - capture
+  - history
+  - dossier
+  - artifacts
+  - named
+  - batch
+- assessment_id: criticality
+  area: scope
+  topic: Mineral, commodity and biological boundaries
+  outcome: supported
+  summary: No inherited commodity criticality, microorganisms, processing pilot or
+    industrial deployment is asserted. Laboratory mineral transformations do not establish
+    extraction or isolated boron recovery.
+  target_ids:
+  - cmmmech:ezcurrite
+  evidence_ids:
+  - owner
+  - ima
+  - original
+findings: []
+actions: []
+summary: 'Ezcurrite passes with limitations: current identity, structure and the bounded
+  natural heating and separate qualitative crystallization observations are supported.
+  No corrective owner defect found.'
+limitations:
+- Atmosphere, thermal sample mass, replication and quantified thermal-aliquot purity
+  are not reported; product assignments remain bounded by optical/diffraction observations.
+- Synthetic trials have qualitative outcomes and no trial-specific product purity/yield;
+  no recovery percentage can be derived.
+- External NAPS01978 structure factors were not acquired, and no independent atomic
+  re-refinement was performed.
+- Counterevidence and duplicate searches are bounded, not exhaustive literature absence.
+- Working-tree scientific acceptance is separate from subsequent canonical corpus
+  review checking and committed/hosted publication gates.
+notes:
+- No self-authored REE owner is reviewed here.
+- No target edits or fabricated measurements, criticality or organisms.
+related_reviews: []
+```

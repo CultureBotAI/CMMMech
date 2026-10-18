@@ -13,14 +13,25 @@
   <nav>
     <a href="../index.html">Home</a>
     <a href="../browse.html">Browse</a>
+    <a href="../map.html">Text map</a>
+    <a href="../graph.html">Mechanism graph</a>
+    <a href="../index.json">JSON</a>
+    <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">Schema</a>
     <a href="https://github.com/CultureBotAI/CMMMech">GitHub</a>
+    <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </header>
 <main>
-<div class="breadcrumbs">
-  <a href="../index.html">CMMMech</a> &gt;
-  <a href="../kinds/mineral.html">Mineral</a> &gt;
-  <span>Gypsum</span>
+<div class="page-top-bar">
+  <div class="breadcrumbs">
+    <a href="../index.html">CMMMech</a> &gt;
+    <a href="../kinds/mineral.html">Mineral</a> &gt;
+    <span>Gypsum</span>
+  </div>
+  <form class="page-search" action="../browse.html" method="get" role="search">
+    <input type="search" name="q" placeholder="Search materials…" aria-label="Search materials">
+    <button type="submit">Search</button>
+  </form>
 </div>
 
 <h1>
@@ -30,22 +41,48 @@
 
 <p class="lede">Gypsum is the grandfathered calcium sulfate mineral species Ca(SO4)(H2O)2, distinct from anhydrite, bassanite, elemental calcium or sulfur, and mixed industrial residues such as phosphogypsum and titanogypsum. This owner describes the hydrated substrate in a disputed microbial dehydration experiment and an independent negative test. The same primary experiments are cross-represented in cmmmech:anhydrite; their occurrence in two mineral owners does not create independent replication. Mineral identity is established separately from the contested mechanism. No constituent criticality, industrial deployment or recovery yield is asserted.</p>
 
+<p style="margin: .4rem 0 1rem; font-size: .9rem; color: var(--muted);">
+  <strong>Explore across X-Mech:</strong>
+  <a href="https://culturebotai.github.io/MediaIngredientMech/app/?q=Gypsum">MediaIngredientMech</a> ·
+  <a href="https://culturebotai.github.io/CultureMech/app/?q=Gypsum">CultureMech</a> ·
+  <a href="https://culturebotai.github.io/CommunityMech/?q=Gypsum">CommunityMech</a> ·
+  <a href="https://culturebotai.github.io/HabitatMech/browse.html?q=Gypsum">HabitatMech</a> ·
+  <a href="https://culturebotai.github.io/TraitMech/pages/browse.html?q=Gypsum">TraitMech</a> ·
+  <a href="../graph.html?q=Gypsum">CMMMech Network Graph</a>
+</p>
+
 
 
 <div class="detail-section">
-  <h3>Microbial &amp; Biochemical Mechanisms (2)</h3>
+  <h2>Microbial &amp; Biochemical Mechanisms (2)</h2>
+  <svg viewBox="0 0 720 130" role="img" aria-label="Mechanism flow for Gypsum" style="width:100%;max-width:720px;height:auto;margin:.4rem 0 .8rem;background:var(--surface);border:1px solid var(--line);border-radius:8px;display:block;">
+    <rect x="14" y="49" width="160" height="32" rx="6" fill="var(--pastel-a)" stroke="var(--accent)" />
+    <text x="94" y="69" text-anchor="middle" font-size="11" font-weight="700" fill="var(--ink)">Gypsum</text>
+    <line x1="174" y1="65" x2="250" y2="28" stroke="var(--accent)" stroke-width="1.4" />
+    <rect x="250" y="15" width="150" height="26" rx="5" fill="var(--card)" stroke="var(--line)" />
+    <text x="325" y="32" text-anchor="middle" font-size="10.5" font-weight="600" fill="var(--accent)">other</text>
+    <line x1="400" y1="28" x2="446" y2="28" stroke="var(--muted)" stroke-width="1.2" />
+    <rect x="446" y="15" width="258" height="26" rx="5" fill="var(--card)" stroke="var(--line)" />
+    <text x="575" y="32" text-anchor="middle" font-size="10" fill="var(--ink)">Disputed culture-associated gypsum to  (Chroococcidiopsis)</text>
+    <line x1="174" y1="65" x2="250" y2="66" stroke="var(--accent)" stroke-width="1.4" />
+    <rect x="250" y="53" width="150" height="26" rx="5" fill="var(--card)" stroke="var(--line)" />
+    <text x="325" y="70" text-anchor="middle" font-size="10.5" font-weight="600" fill="var(--accent)">other</text>
+    <line x1="400" y1="66" x2="446" y2="66" stroke="var(--muted)" stroke-width="1.2" />
+    <rect x="446" y="53" width="258" height="26" rx="5" fill="var(--card)" stroke="var(--line)" />
+    <text x="575" y="70" text-anchor="middle" font-size="10" fill="var(--ink)">Independent 15-day culture exposure wi (Chroococcidiopsis)</text>
+  </svg>
   <div class="mechanism-box" id="mechanism-disputed_culture_associated_dehydration">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
-      <h4 style="margin: 0; font-size: 1.15rem;">Disputed culture-associated gypsum to anhydrite transformation</h4>
+      <h3 style="margin: 0; font-size: 1.15rem;">Disputed culture-associated gypsum to anhydrite transformation</h3>
       <div>
         <span class="badge">other</span>
-        <span class="badge" style="background: #e2f5e8; color: #1d733a;">Microbial</span>
+        <span class="badge badge-support">Microbial</span>
       </div>
     </div>
 
     <p style="margin: .4rem 0 .2rem; font-size: .92rem;">
       <strong>Associated Organisms:</strong>
-        <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=54298" target="_blank" rel="noopener"><em>Chroococcidiopsis</em> (<code>NCBITaxon:54298</code>)</a>    </p>
+        <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=54298" target="_blank" rel="noopener"><em>Chroococcidiopsis</em> (<code>NCBITaxon:54298</code>)</a> <a href="https://culturebotai.github.io/TaxonMech/browse.html?q=Chroococcidiopsis" title="Search Chroococcidiopsis in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>    </p>
 
     <p style="margin: .5rem 0; font-size: .95rem;">Huang2020 interpreted diffraction and microscopy of cyanobacteria-exposed gypsum as gypsum dissolution followed by anhydrite precipitation, proposing that microorganisms obtain structural water. The microbial flag identifies the culture exposure; it does not establish this disputed causal mechanism, direct cellular uptake of lattice water, exclusive action by Chroococcidiopsis, or a mineral recovery process. The gypsum and anhydrite records describe the substrate and proposed product of the same experiment, not independent demonstrations.</p>
 
@@ -142,16 +179,16 @@
   </div>
   <div class="mechanism-box" id="mechanism-independent_fifteen_day_negative_transformation_test">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
-      <h4 style="margin: 0; font-size: 1.15rem;">Independent 15-day culture exposure without detected anhydrite formation</h4>
+      <h3 style="margin: 0; font-size: 1.15rem;">Independent 15-day culture exposure without detected anhydrite formation</h3>
       <div>
         <span class="badge">other</span>
-        <span class="badge" style="background: #e2f5e8; color: #1d733a;">Microbial</span>
+        <span class="badge badge-support">Microbial</span>
       </div>
     </div>
 
     <p style="margin: .4rem 0 .2rem; font-size: .92rem;">
       <strong>Associated Organisms:</strong>
-        <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=54298" target="_blank" rel="noopener"><em>Chroococcidiopsis</em> (<code>NCBITaxon:54298</code>)</a>,         <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1148" target="_blank" rel="noopener"><em>Synechocystis sp. PCC 6803</em> (<code>NCBITaxon:1148</code>)</a>    </p>
+        <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=54298" target="_blank" rel="noopener"><em>Chroococcidiopsis</em> (<code>NCBITaxon:54298</code>)</a> <a href="https://culturebotai.github.io/TaxonMech/browse.html?q=Chroococcidiopsis" title="Search Chroococcidiopsis in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>,         <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1148" target="_blank" rel="noopener"><em>Synechocystis sp. PCC 6803</em> (<code>NCBITaxon:1148</code>)</a> <a href="https://culturebotai.github.io/TaxonMech/browse.html?q=Synechocystis%20sp.%20PCC%206803" title="Search Synechocystis sp. PCC 6803 in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>    </p>
 
     <p style="margin: .5rem 0; font-size: .95rem;">Douchi2024 tested G-MTQ-3P2 and Synechocystis PCC 6803 on synthetic gypsum and detected no transformation to anhydrite or bassanite after 15 days in the inspected main-paper diffraction experiment. This is an independently reported negative result under its own conditions, not proof of universal impossibility and not a positive microbial mineral-formation mechanism.</p>
 
@@ -205,7 +242,7 @@
 
 
 <div class="detail-section">
-  <h3>Sources &amp; References</h3>
+  <h2>Sources &amp; References</h2>
   <ol style="padding-left: 1.2rem; margin: .4rem 0;">
     <li id="source-ima_2026_09" style="margin-bottom: .6rem; font-size: .92rem;">
       <strong>ima_2026_09</strong>: IMA-CNMNC. The New IMA List of Minerals, September 2026. Definitions on PDF page 1, Anhydrite row on page 11 and Gypsum row on page 88; grandfathered mineral identities. Previously acquired official original re-inspected on the access date.
@@ -261,7 +298,7 @@
 </div>
 
 <div class="detail-section">
-  <h3>Curation History</h3>
+  <h2>Curation History</h2>
   <table style="font-size: .88rem;">
     <thead>
       <tr>
@@ -287,7 +324,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · generated by <code>scripts/render_pages.py</code></p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (602 materials · 589 mechanisms · latest curation 2026-10-18 · corpus digest <code>9dce02877f79</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

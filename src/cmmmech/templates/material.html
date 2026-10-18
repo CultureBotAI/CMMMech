@@ -1,10 +1,16 @@
 {% extends "base.html" %}
 {% block title %}{{ r.name }} · CMMMech{% endblock %}
 {% block content %}
-<div class="breadcrumbs">
-  <a href="{{ root }}index.html">CMMMech</a> &gt;
-  <a href="{{ root }}kinds/{{ r.material_kind }}.html">{{ r.material_kind | replace('_', ' ') | capitalize }}</a> &gt;
-  <span>{{ r.name }}</span>
+<div class="page-top-bar">
+  <div class="breadcrumbs">
+    <a href="{{ root }}index.html">CMMMech</a> &gt;
+    <a href="{{ root }}kinds/{{ r.material_kind }}.html">{{ r.material_kind | replace('_', ' ') | capitalize }}</a> &gt;
+    <span>{{ r.name }}</span>
+  </div>
+  <form class="page-search" action="{{ root }}browse.html" method="get" role="search">
+    <input type="search" name="q" placeholder="Search materials…" aria-label="Search materials">
+    <button type="submit">Search</button>
+  </form>
 </div>
 
 <h1>
@@ -19,9 +25,19 @@
 <p class="lede">{{ r.description }}</p>
 {% endif %}
 
+<p style="margin: .4rem 0 1rem; font-size: .9rem; color: var(--muted);">
+  <strong>Explore across X-Mech:</strong>
+  <a href="https://culturebotai.github.io/MediaIngredientMech/app/?q={{ r.name | urlencode }}">MediaIngredientMech</a> ·
+  <a href="https://culturebotai.github.io/CultureMech/app/?q={{ r.name | urlencode }}">CultureMech</a> ·
+  <a href="https://culturebotai.github.io/CommunityMech/?q={{ r.name | urlencode }}">CommunityMech</a> ·
+  <a href="https://culturebotai.github.io/HabitatMech/browse.html?q={{ r.name | urlencode }}">HabitatMech</a> ·
+  <a href="https://culturebotai.github.io/TraitMech/pages/browse.html?q={{ r.name | urlencode }}">TraitMech</a> ·
+  <a href="{{ root }}graph.html?q={{ r.name | urlencode }}">CMMMech Network Graph</a>
+</p>
+
 {% if r.identifiers %}
 <div class="detail-section">
-  <h3>Identifiers &amp; Classification</h3>
+  <h2>Identifiers &amp; Classification</h2>
   <table style="margin: .4rem 0;">
     <thead>
       <tr>
@@ -51,7 +67,7 @@
 
 {% if r.criticality %}
 <div class="detail-section">
-  <h3>Criticality Designations</h3>
+  <h2>Criticality Designations</h2>
   <table>
     <thead>
       <tr>
@@ -85,15 +101,28 @@
 
 {% if r.mechanisms %}
 <div class="detail-section">
-  <h3>Microbial &amp; Biochemical Mechanisms ({{ r.mechanisms|length }})</h3>
+  <h2>Microbial &amp; Biochemical Mechanisms ({{ r.mechanisms|length }})</h2>
+  <svg viewBox="0 0 720 {{ 54 + (r.mechanisms|length) * 38 }}" role="img" aria-label="Mechanism flow for {{ r.name }}" style="width:100%;max-width:720px;height:auto;margin:.4rem 0 .8rem;background:var(--surface);border:1px solid var(--line);border-radius:8px;display:block;">
+    <rect x="14" y="{{ ((54 + (r.mechanisms|length) * 38) // 2) - 16 }}" width="160" height="32" rx="6" fill="var(--pastel-a)" stroke="var(--accent)" />
+    <text x="94" y="{{ ((54 + (r.mechanisms|length) * 38) // 2) + 4 }}" text-anchor="middle" font-size="11" font-weight="700" fill="var(--ink)">{{ r.name[:22] }}</text>
+    {% for m in r.mechanisms %}
+    {% set y = 28 + loop.index0 * 38 %}
+    <line x1="174" y1="{{ ((54 + (r.mechanisms|length) * 38) // 2) }}" x2="250" y2="{{ y }}" stroke="var(--accent)" stroke-width="1.4" />
+    <rect x="250" y="{{ y - 13 }}" width="150" height="26" rx="5" fill="var(--card)" stroke="var(--line)" />
+    <text x="325" y="{{ y + 4 }}" text-anchor="middle" font-size="10.5" font-weight="600" fill="var(--accent)">{{ (m.process or 'other') | replace('_', ' ') }}</text>
+    <line x1="400" y1="{{ y }}" x2="446" y2="{{ y }}" stroke="var(--muted)" stroke-width="1.2" />
+    <rect x="446" y="{{ y - 13 }}" width="258" height="26" rx="5" fill="var(--card)" stroke="var(--line)" />
+    <text x="575" y="{{ y + 4 }}" text-anchor="middle" font-size="10" fill="var(--ink)">{{ m.name[:38] }}{% if m.organisms %} ({{ m.organisms[0].label[:18] }}){% endif %}</text>
+    {% endfor %}
+  </svg>
   {% for m in r.mechanisms %}
   <div class="mechanism-box" id="mechanism-{{ m.id }}">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
-      <h4 style="margin: 0; font-size: 1.15rem;">{{ m.name }}</h4>
+      <h3 style="margin: 0; font-size: 1.15rem;">{{ m.name }}</h3>
       <div>
         <span class="badge">{{ m.process | replace('_', ' ') }}</span>
         {% if m.microbial %}
-        <span class="badge" style="background: #e2f5e8; color: #1d733a;">Microbial</span>
+        <span class="badge badge-support">Microbial</span>
         {% endif %}
       </div>
     </div>
@@ -103,9 +132,9 @@
       <strong>Associated Organisms:</strong>
       {% for org in m.organisms %}
         {% if org.url %}
-        <a href="{{ org.url }}" target="_blank" rel="noopener"><em>{{ org.label }}</em> (<code>{{ org.id }}</code>)</a>{% if not loop.last %}, {% endif %}
+        <a href="{{ org.url }}" target="_blank" rel="noopener"><em>{{ org.label }}</em> (<code>{{ org.id }}</code>)</a> <a href="https://culturebotai.github.io/TaxonMech/browse.html?q={{ org.label | urlencode }}" title="Search {{ org.label }} in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>{% if not loop.last %}, {% endif %}
         {% else %}
-        <em>{{ org.label }}</em> (<code>{{ org.id }}</code>){% if not loop.last %}, {% endif %}
+        <em>{{ org.label }}</em> (<code>{{ org.id }}</code>) <a href="https://culturebotai.github.io/TaxonMech/browse.html?q={{ org.label | urlencode }}" title="Search {{ org.label }} in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>{% if not loop.last %}, {% endif %}
         {% endif %}
       {% endfor %}
     </p>
@@ -319,7 +348,7 @@
 
 {% if r.sources %}
 <div class="detail-section">
-  <h3>Sources &amp; References</h3>
+  <h2>Sources &amp; References</h2>
   <ol style="padding-left: 1.2rem; margin: .4rem 0;">
     {% for s in r.sources %}
     <li id="source-{{ s.id }}" style="margin-bottom: .6rem; font-size: .92rem;">
@@ -338,7 +367,7 @@
 
 {% if r.curation_history %}
 <div class="detail-section">
-  <h3>Curation History</h3>
+  <h2>Curation History</h2>
   <table style="font-size: .88rem;">
     <thead>
       <tr>

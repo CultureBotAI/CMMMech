@@ -13,7 +13,12 @@
   <nav>
     <a href="../index.html">Home</a>
     <a href="../browse.html">Browse</a>
+    <a href="../map.html">Text map</a>
+    <a href="../graph.html">Mechanism graph</a>
+    <a href="../index.json">JSON</a>
+    <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">Schema</a>
     <a href="https://github.com/CultureBotAI/CMMMech">GitHub</a>
+    <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </header>
 <main>
@@ -26,963 +31,1075 @@
 <h1>Primary Resources</h1>
 <p class="lede">Raw unrefined geological deposits, mined ores, and run-of-mine materials.</p>
 
-<form id="record-filters" class="record-filters" hidden>
-  <div>
-    <label for="record-query">Search materials</label>
-    <input id="record-query" type="search" placeholder="Name, formula, organism, process…">
-  </div>
-  <div>
-    <label for="record-kind">Material Kind</label>
-    <select id="record-kind">
-      <option value="">All kinds (31)</option>
-      <option value="element">Element (66)</option>
-      <option value="mineral">Mineral (346)</option>
-      <option value="secondary_resource">Secondary resource (111)</option>
-      <option value="commodity">Commodity (33)</option>
-      <option value="primary_resource">Primary resource (31)</option>
-      <option value="mineral_group">Mineral group (7)</option>
-    </select>
-  </div>
-  <div>
-    <label for="record-mechanism">Mechanism Process</label>
-    <select id="record-mechanism">
-      <option value="">All processes</option>
-      <option value="bioleaching">Bioleaching (157)</option>
-      <option value="biomineralization">Biomineralization (94)</option>
-      <option value="redox_transformation">Redox transformation (58)</option>
-      <option value="biosorption">Biosorption (16)</option>
-      <option value="separation">Separation (29)</option>
-      <option value="recovery">Recovery (19)</option>
-      <option value="other">Other (137)</option>
-    </select>
-  </div>
-  <div>
-    <label for="record-criticality">Criticality</label>
-    <select id="record-criticality">
-      <option value="">All criticality</option>
-      <option value="critical">Designated Critical</option>
-    </select>
-  </div>
-  <button type="reset">Clear filters</button>
-</form>
+<div class="browse-layout">
+  <aside class="facet-sidebar">
+    <h2>Filter records</h2>
+    <form id="record-filters" class="record-filters" hidden>
+      <div>
+        <label for="record-query">Search materials</label>
+        <input id="record-query" name="q" type="search" placeholder="Name, formula, organism, process…">
+      </div>
+      <div>
+        <label for="record-kind">Material Kind</label>
+        <select id="record-kind">
+          <option value="">All kinds (31)</option>
+          <option value="element">Element (66)</option>
+          <option value="mineral">Mineral (354)</option>
+          <option value="secondary_resource">Secondary resource (111)</option>
+          <option value="commodity">Commodity (33)</option>
+          <option value="primary_resource">Primary resource (31)</option>
+          <option value="mineral_group">Mineral group (7)</option>
+        </select>
+      </div>
+      <div>
+        <label for="record-mechanism">Mechanism Process</label>
+        <select id="record-mechanism">
+          <option value="">All processes</option>
+          <option value="bioleaching">Bioleaching (157)</option>
+          <option value="biomineralization">Biomineralization (94)</option>
+          <option value="redox_transformation">Redox transformation (58)</option>
+          <option value="biosorption">Biosorption (16)</option>
+          <option value="separation">Separation (29)</option>
+          <option value="recovery">Recovery (19)</option>
+          <option value="other">Other (141)</option>
+        </select>
+      </div>
+      <div>
+        <label for="record-criticality">Criticality</label>
+        <select id="record-criticality">
+          <option value="">All criticality</option>
+          <option value="critical">Designated Critical</option>
+        </select>
+      </div>
+      <div>
+        <label for="record-sort">Sort by</label>
+        <select id="record-sort" name="sort">
+          <option value="name-asc">Material name (A–Z)</option>
+          <option value="name-desc">Material name (Z–A)</option>
+          <option value="mechs-desc">Mechanisms (high–low)</option>
+          <option value="orgs-desc">Microbial agents (high–low)</option>
+          <option value="kind-asc">Material kind (A–Z)</option>
+          <option value="crit-desc">Criticality (critical first)</option>
+        </select>
+      </div>
+      <button type="reset">Clear filters</button>
+      <p id="record-count" role="status" aria-live="polite" style="margin: .2rem 0 0; font-size: .85rem; color: var(--muted);">31 materials</p>
+      <p style="margin: .2rem 0 0; font-size: .82rem;"><a href="../index.json" download>Download index.json</a></p>
+    </form>
+  </aside>
 
-<p id="record-count" role="status" aria-live="polite">31 materials</p>
-<p id="record-empty" hidden>No materials match your query or filters. Clear filters to show all.</p>
+  <div class="browse-main">
+    <p id="record-empty" hidden>No materials match your query or filters. Clear filters to show all.</p>
 
-<div class="record-table-scroll" role="region" aria-label="Materials table" tabindex="0">
-<table id="record-table">
-  <caption>Curated Materials and Minerals</caption>
-  <thead>
-    <tr>
-      <th scope="col">Material</th>
-      <th scope="col">Kind</th>
-      <th scope="col">Criticality</th>
-      <th scope="col">Mechanisms</th>
-      <th scope="col">Microbial Agents</th>
-      <th scope="col">Identifier</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="allanite concentrate allanite-concentrate primary_resource a geological rare-earth-bearing feed represented by the ree-concentrated crushed allanite ore supplied as zappall from wre in schmitz et al. (2025). the paper also calls this material allanite mineral sand. its generic allanite designation does not establish a particular allanite species, phase purity, mine of origin or commercial grade. this concentrated primary resource is distinct from an ideal mineral species, elemental rare earths, their commodities and secondary waste. no constituent criticality designation is inherited. bioleaching gluconobacter oxydans ncbitaxon:442 uniprotkb:p27175 dhg_gluox quinoprotein glucose dehydrogenase gdh ec:1.1.5.2 interpro:ipr018391 interpro:ipr017511 interpro:ipr002372 interpro:ipr011047 interpro:ipr001479 pfam:pf01011 uniprotkb:q9l3b2 pqqc_gluox pyrroloquinoline-quinone synthase pqqc ec:1.3.3.11 interpro:ipr016084 interpro:ipr011845 interpro:ipr039068 interpro:ipr004305 pfam:pf03070 uniprotkb:q5fti1 q5fti1_gluox phosphate-binding protein psts psts interpro:ipr005673 interpro:ipr024370 interpro:ipr050962 pfam:pf12849 uniprotkb:q5ft13 q5ft13_gluox phosphate transport system permease protein pstc interpro:ipr000515 interpro:ipr035906 interpro:ipr011864 interpro:ipr051124 pfam:pf00528 pstc (phosphate transport system permease protein) pstc uniprotkb:q5ft13 q5ft13_gluox phosphate transport system permease protein pstc interpro:ipr000515 interpro:ipr035906 interpro:ipr011864 interpro:ipr051124 pfam:pf00528 psts (phosphate-binding protein psts) psts uniprotkb:q5fti1 q5fti1_gluox phosphate-binding protein psts psts interpro:ipr005673 interpro:ipr024370 interpro:ipr050962 pfam:pf12849 pqqc pyrroloquinoline-quinone synthase pqqc uniprotkb:q9l3b2 pqqc_gluox pyrroloquinoline-quinone synthase pqqc ec:1.3.3.11 interpro:ipr016084 interpro:ipr011845 interpro:ipr039068 interpro:ipr004305 pfam:pf03070 gdh membrane-bound pqq-dependent glucose dehydrogenase gdh uniprotkb:p27175 dhg_gluox quinoprotein glucose dehydrogenase gdh ec:1.1.5.2 interpro:ipr018391 interpro:ipr017511 interpro:ipr002372 interpro:ipr011047 interpro:ipr001479 pfam:pf01011 extracellular gluconic acid and organic-acid biolixiviant allanite-(ce)-bearing concentrate dissolved rare-earth elements (la, ce, nd, y)">
-      <td>
-        <a href="../materials/allanite-concentrate.html"><strong>Allanite concentrate</strong></a>
-        <p class="record-desc">A geological rare-earth-bearing feed represented by the REE-concentrated crushed allanite ore supplied as Zappall from WRE in Schmitz et al. (2025). The paper also calls this material allanite mineral sand. Its generic allanite designation does not establish a particular allanite species, phase purity, mine of origin or commercial grade. This concentrated primary resource is distinct from an ideal mineral species, elemental rare earths, their commodities and secondary waste. No constituent criticality designation is inherited.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Gluconobacter oxydans</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="other"
-        data-critical="false"
-        data-search="basaltic rock basalt primary_resource naturally occurring basaltic geological material, represented here by six heterogeneous drill-core specimens from icdp hsdp2, hilo, hawaii: basaltic flows, basaltic hyaloclastites and pillow basalts. this resource is not a single mineral species, pure basaltic glass, an elemental metal or a recovered commodity. the specimens contain different proportions of glass, primary silicates and secondary alteration phases. the source&#39;s manufactured bas glasses are experimental analogues and are not the natural feed represented by this record. no constituent criticality designation is inherited. other paraburkholderia fungorum ncbitaxon:134537">
-      <td>
-        <a href="../materials/basalt.html"><strong>Basaltic rock</strong></a>
-        <p class="record-desc">Naturally occurring basaltic geological material, represented here by six heterogeneous drill-core specimens from ICDP HSDP2, Hilo, Hawaii: basaltic flows, basaltic hyaloclastites and pillow basalts. This resource is not a single mineral species, pure basaltic glass, an elemental metal or a recovered commodity. The specimens contain different proportions of glass, primary silicates and secondary alteration phases. The source&#39;s manufactured BAS glasses are experimental analogues and are not the natural feed represented by this record. No constituent criticality designation is inherited.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Paraburkholderia fungorum</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="carbonatite-associated rare-earth ore carbonatite-associated-rare-earth-ore primary_resource naturally occurring, mixed rare-earth-bearing ore associated with alkaline-carbonatite deposits, anchored here to the tested mushgia khudag material from mongolia. the deposit association does not establish that every sampled rock meets a modal carbonatite classification. the curated feed contains quartz, apatite, calcite and other phases, with monazite and parisite assignments; it is neither a pure mineral nor a processed waste. laboratory culture pretreatment followed by sulfuric-acid leaching is represented as a treatment-associated observation with unresolved causal controls. neither industrial deployment nor inherited criticality is asserted. bioleaching thiobacillus denitrificans bacillus cereus ncbitaxon:36861 ncbitaxon:1396">
-      <td>
-        <a href="../materials/carbonatite-associated-rare-earth-ore.html"><strong>Carbonatite-associated rare-earth ore</strong></a>
-        <p class="record-desc">Naturally occurring, mixed rare-earth-bearing ore associated with alkaline-carbonatite deposits, anchored here to the tested Mushgia Khudag material from Mongolia. The deposit association does not establish that every sampled rock meets a modal carbonatite classification. The curated feed contains quartz, apatite, calcite and other phases, with monazite and parisite assignments; it is neither a pure mineral nor a processed waste. Laboratory culture pretreatment followed by sulfuric-acid leaching is represented as a treatment-associated observation with unresolved causal controls. Neither industrial deployment nor inherited criticality is asserted.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Thiobacillus denitrificans</li>
-          <li>Bacillus cereus</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="cassiterite-polymetallic sulfide ore cassiterite-polymetallic-sulfide-ore primary_resource a heterogeneous natural tin-bearing geological feed containing cassiterite and sulfide minerals, represented here by the myanmar ore studied by wang et al. (2025). the crushed experimental ore contained source-assigned pyrite, cassiterite, quartz, tourmaline and mica. its mine and deposit are not specified. crushing does not establish a processing-waste origin. this resource is distinct from cassiterite or pyrrhotite mineral species, elemental tin, a tin commodity and a produced concentrate. the study does not establish extraction from a pure mineral or properties of all ores described by this name. no criticality designation is inherited from tin. bioleaching leptospirillum ferriphilum sulfobacillus thermosulfidooxidans acidithiobacillus caldus ncbitaxon:178606 ncbitaxon:28034 ncbitaxon:33059">
-      <td>
-        <a href="../materials/cassiterite-polymetallic-sulfide-ore.html"><strong>Cassiterite-polymetallic sulfide ore</strong></a>
-        <p class="record-desc">A heterogeneous natural tin-bearing geological feed containing cassiterite and sulfide minerals, represented here by the Myanmar ore studied by Wang et al. (2025). The crushed experimental ore contained source-assigned pyrite, cassiterite, quartz, tourmaline and mica. Its mine and deposit are not specified. Crushing does not establish a processing-waste origin. This resource is distinct from cassiterite or pyrrhotite mineral species, elemental tin, a tin commodity and a produced concentrate. The study does not establish extraction from a pure mineral or properties of all ores described by this name. No criticality designation is inherited from tin.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Leptospirillum ferriphilum</li>
-          <li>Sulfobacillus thermosulfidooxidans</li>
-          <li>Acidithiobacillus caldus</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="chalcopyrite-enargite concentrate chalcopyrite-enargite-concentrate primary_resource mixed copper-sulfide mineral concentrates represented by the d3, eb and ea feeds in oyama et al. (2021), distinct from the constituent chalcopyrite and enargite mineral species, the nearly pure model chalcopyrite tested separately in that paper, and the dc-i/dc-ii/dc-iii enargite-pyrite concentrates examined in okibe et al. (2022). figure 1 reports chalcopyrite/enargite/pyrite contents of 12/21/30 wt% for d3, 17/6.7/36 wt% for eb and 8/24/10 wt% for ea; bornite, chalcocite, geerite and other phases also occur. the displayed ea phase labels total 97%, so the figure is not treated as a closed compositional balance. mine, batch and beneficiation details are not established; the acknowledgments identify an academic supplier for ea. this owner denotes concentrated geological feed, not a documented discarded residue, a pure phase or a traded product specification. no mineral identifier or constituent criticality designation is inherited. bioleaching acidithiobacillus caldus ncbitaxon:33059">
-      <td>
-        <a href="../materials/chalcopyrite-enargite-concentrate.html"><strong>Chalcopyrite-enargite concentrate</strong></a>
-        <p class="record-desc">Mixed copper-sulfide mineral concentrates represented by the D3, Eb and Ea feeds in Oyama et al. (2021), distinct from the constituent chalcopyrite and enargite mineral species, the nearly pure model chalcopyrite tested separately in that paper, and the DC-I/DC-II/DC-III enargite-pyrite concentrates examined in Okibe et al. (2022). Figure 1 reports chalcopyrite/enargite/pyrite contents of 12/21/30 wt% for D3, 17/6.7/36 wt% for Eb and 8/24/10 wt% for Ea; bornite, chalcocite, geerite and other phases also occur. The displayed Ea phase labels total 97%, so the figure is not treated as a closed compositional balance. Mine, batch and beneficiation details are not established; the acknowledgments identify an academic supplier for Ea. This owner denotes concentrated geological feed, not a documented discarded residue, a pure phase or a traded product specification. No mineral identifier or constituent criticality designation is inherited.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Acidithiobacillus caldus</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="other"
-        data-critical="false"
-        data-search="cobalt-rich ferromanganese crusts cobalt-rich-ferromanganese-crusts primary_resource naturally occurring layered iron-manganese oxide and oxyhydroxide deposits on exposed marine rock surfaces, commonly seamounts. this resource identity covers the cobalt-bearing, predominantly hydrogenetic crusts formed by accumulation from seawater; it does not denote every hydrothermal encrustation. the heterogeneous crust material is distinct from sediment-hosted polymetallic nodules, constituent cobalt or manganese elements, a pure mineral species, and a processing residue. maciąg et al. characterize crusts and their altered basalt interfaces from dirck hartog ridge; their sample-specific mineral mixtures are not a universal formula or grade. collection and physical preparation do not make this geological resource secondary. the laboratory mechanism below records conditional redistribution of cobalt and nickel in whole-crust microcosms; it does not establish a specific receiving phase, a purified metal product or industrial deployment. the resource inherits no constituent criticality. other">
-      <td>
-        <a href="../materials/cobalt-rich-ferromanganese-crusts.html"><strong>Cobalt-rich ferromanganese crusts</strong></a>
-        <p class="record-desc">Naturally occurring layered iron-manganese oxide and oxyhydroxide deposits on exposed marine rock surfaces, commonly seamounts. This resource identity covers the cobalt-bearing, predominantly hydrogenetic crusts formed by accumulation from seawater; it does not denote every hydrothermal encrustation. The heterogeneous crust material is distinct from sediment-hosted polymetallic nodules, constituent cobalt or manganese elements, a pure mineral species, and a processing residue. Maciąg et al. characterize crusts and their altered basalt interfaces from Dirck Hartog Ridge; their sample-specific mineral mixtures are not a universal formula or grade. Collection and physical preparation do not make this geological resource secondary. The laboratory mechanism below records conditional redistribution of cobalt and nickel in whole-crust microcosms; it does not establish a specific receiving phase, a purified metal product or industrial deployment. The resource inherits no constituent criticality.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="dunite dunite primary_resource dunite is an ultramafic rock and geological feed, not a mineral species or elemental magnesium. bgs rock classification scheme code dun defines this peridotite type by more than 90% olivine in the assemblage of olivine, pyroxene and hornblende. the curated experiments used three powders from a north carolina dunite deposit, including strongly altered material with much lower remaining olivine fractions. their laboratory results do not describe every dunite, a pure forsterite feed, a waste tailing, or a traded product grade. no criticality designation is inherited from constituent elements. bioleaching gluconobacter oxydans ncbitaxon:442 uniprotkb:p27175 dhg_gluox quinoprotein glucose dehydrogenase gdh ec:1.1.5.2 interpro:ipr018391 interpro:ipr017511 interpro:ipr002372 interpro:ipr011047 interpro:ipr001479 pfam:pf01011 uniprotkb:q9l3b2 pqqc_gluox pyrroloquinoline-quinone synthase pqqc ec:1.3.3.11 interpro:ipr016084 interpro:ipr011845 interpro:ipr039068 interpro:ipr004305 pfam:pf03070 uniprotkb:q5fti1 q5fti1_gluox phosphate-binding protein psts psts interpro:ipr005673 interpro:ipr024370 interpro:ipr050962 pfam:pf12849 uniprotkb:q5fqk7 q5fqk7_gluox putative oxidoreductase gox1598 ec:1.1.1.- interpro:ipr050523 interpro:ipr036812 interpro:ipr023210 pfam:pf00248 uniprotkb:q5fry1 q5fry1_gluox glycine cleavage system h protein gcvh interpro:ipr003016 interpro:ipr000089 interpro:ipr002930 interpro:ipr033753 interpro:ipr017453 interpro:ipr011053 pfam:pf01597 gcvh (glycine cleavage system h protein) gcvh uniprotkb:q5fry1 q5fry1_gluox glycine cleavage system h protein gcvh interpro:ipr003016 interpro:ipr000089 interpro:ipr002930 interpro:ipr033753 interpro:ipr017453 interpro:ipr011053 pfam:pf01597 gox1598 (putative oxidoreductase) gox1598 uniprotkb:q5fqk7 q5fqk7_gluox putative oxidoreductase gox1598 ec:1.1.1.- interpro:ipr050523 interpro:ipr036812 interpro:ipr023210 pfam:pf00248 psts (phosphate-binding protein psts) psts uniprotkb:q5fti1 q5fti1_gluox phosphate-binding protein psts psts interpro:ipr005673 interpro:ipr024370 interpro:ipr050962 pfam:pf12849 pqqc pyrroloquinoline-quinone synthase pqqc uniprotkb:q9l3b2 pqqc_gluox pyrroloquinoline-quinone synthase pqqc ec:1.3.3.11 interpro:ipr016084 interpro:ipr011845 interpro:ipr039068 interpro:ipr004305 pfam:pf03070 gdh membrane-bound pqq-dependent glucose dehydrogenase gdh uniprotkb:p27175 dhg_gluox quinoprotein glucose dehydrogenase gdh ec:1.1.5.2 interpro:ipr018391 interpro:ipr017511 interpro:ipr002372 interpro:ipr011047 interpro:ipr001479 pfam:pf01011 extracellular gluconic acid and organic-acid biolixiviant twin sisters and olivine-rich dunite powders dissolved mg, ni, mn, co, and cr in leachate">
-      <td>
-        <a href="../materials/dunite.html"><strong>Dunite</strong></a>
-        <p class="record-desc">Dunite is an ultramafic rock and geological feed, not a mineral species or elemental magnesium. BGS Rock Classification Scheme code DUN defines this peridotite type by more than 90% olivine in the assemblage of olivine, pyroxene and hornblende. The curated experiments used three powders from a North Carolina dunite deposit, including strongly altered material with much lower remaining olivine fractions. Their laboratory results do not describe every dunite, a pure forsterite feed, a waste tailing, or a traded product grade. No criticality designation is inherited from constituent elements.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Gluconobacter oxydans</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="enargite-pyrite concentrate enargite-pyrite-concentrate primary_resource mixed high-arsenic mineral concentrates represented by dc-i, dc-ii and dc-iii in okibe et al. (2022), distinct from pure enargite or pyrite and from elemental copper or arsenic. company-supplied mineral liberation analyses assign enargite and pyrite, respectively, as 51.8 and 34.6 wt% in dc-i, 37.4 and 47.3 wt% in dc-ii, and 26.1 and 63.1 wt% in dc-iii. original xrd also identifies these phases, with a source-labelled tennantite contribution in dc-iii. other copper minerals occur, so dissolved copper cannot be assigned exclusively to enargite. dc-i and dc-iii were supplied by sumitomo metal mining and dc-ii by jx nippon mining and metals; mine, batch and detailed beneficiation provenance are not reported. the paper frames dirty concentrates as flotation waste separated from clean smelter feed. this record denotes the characterized concentrated geological feeds without asserting prior disposal, a tailings stockpile or a traded product specification. no mineral-species identifier or constituent criticality designation is transferred to the mixed resource. bioleaching sulfobacillus thermosulfidooxidans ncbitaxon:28034">
-      <td>
-        <a href="../materials/enargite-pyrite-concentrate.html"><strong>Enargite-pyrite concentrate</strong></a>
-        <p class="record-desc">Mixed high-arsenic mineral concentrates represented by DC-I, DC-II and DC-III in Okibe et al. (2022), distinct from pure enargite or pyrite and from elemental copper or arsenic. Company-supplied mineral liberation analyses assign enargite and pyrite, respectively, as 51.8 and 34.6 wt% in DC-I, 37.4 and 47.3 wt% in DC-II, and 26.1 and 63.1 wt% in DC-III. Original XRD also identifies these phases, with a source-labelled tennantite contribution in DC-III. Other copper minerals occur, so dissolved copper cannot be assigned exclusively to enargite. DC-I and DC-III were supplied by Sumitomo Metal Mining and DC-II by JX Nippon Mining and Metals; mine, batch and detailed beneficiation provenance are not reported. The paper frames dirty concentrates as flotation waste separated from clean smelter feed. This record denotes the characterized concentrated geological feeds without asserting prior disposal, a tailings stockpile or a traded product specification. No mineral-species identifier or constituent criticality designation is transferred to the mixed resource.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Sulfobacillus thermosulfidooxidans</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="eucrite meteorite eucrite-meteorite primary_resource natural basaltic achondritic meteorite material considered as an experimental feed, distinct from an l-chondrite, terrestrial basalt, a pure mineral or secondary resource. the curated example is the eu specimen in tonietti et al. (2026). its reported mineral assemblage is dominated by plagioclase and pyroxene, with minor olivine and quartz. the paper attributes eucrite material to vesta but gives no exact meteorite name or accession for eu; table 1 says skylab (us), whereas the acknowledgments thank skyfall meteorites. the experimental specimen&#39;s provenance is therefore incompletely resolved. no resource-level criticality designation is inferred from its constituent trace metals. bioleaching sphingomonas desiccabilis ncbitaxon:429134">
-      <td>
-        <a href="../materials/eucrite-meteorite.html"><strong>Eucrite meteorite</strong></a>
-        <p class="record-desc">Natural basaltic achondritic meteorite material considered as an experimental feed, distinct from an L-chondrite, terrestrial basalt, a pure mineral or secondary resource. The curated example is the EU specimen in Tonietti et al. (2026). Its reported mineral assemblage is dominated by plagioclase and pyroxene, with minor olivine and quartz. The paper attributes eucrite material to Vesta but gives no exact meteorite name or accession for EU; Table 1 says Skylab (US), whereas the acknowledgments thank SkyFall Meteorites. The experimental specimen&#39;s provenance is therefore incompletely resolved. No resource-level criticality designation is inferred from its constituent trace metals.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Sphingomonas desiccabilis</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="recovery"
-        data-critical="false"
-        data-search="eudialyte concentrate eudialyte-concentrate primary_resource a beneficiated geological feed represented by the tanbreez concentrate from southern greenland characterized by ma and colleagues (2019). the source describes crushing followed by partly magnetic selection; this is an upgraded mixed mineral concentrate, distinct from the uncharacterized crushed eudialyte ore in hunter&#39;s 2020 thesis, a formal eudialyte mineral species or group, elemental zirconium and recovered rare-earth products. table i reports 1.60 wt% total rare earth elements and 6.46 wt% zr in the laboratory feed. qemscan assigns 67.05% of the material to eudialyte, alongside amphibole, nepheline, feldspar and other phases; this classification does not establish a pure species or a universal commercial concentrate specification. the source acknowledges the geological survey of finland as concentrate supplier. no criticality designation is inherited from constituent elements. recovery">
-      <td>
-        <a href="../materials/eudialyte-concentrate.html"><strong>Eudialyte concentrate</strong></a>
-        <p class="record-desc">A beneficiated geological feed represented by the TANBREEZ concentrate from southern Greenland characterized by Ma and colleagues (2019). The source describes crushing followed by partly magnetic selection; this is an upgraded mixed mineral concentrate, distinct from the uncharacterized crushed eudialyte ore in Hunter&#39;s 2020 thesis, a formal eudialyte mineral species or group, elemental zirconium and recovered rare-earth products. Table I reports 1.60 wt% total rare earth elements and 6.46 wt% Zr in the laboratory feed. QEMSCAN assigns 67.05% of the material to eudialyte, alongside amphibole, nepheline, feldspar and other phases; this classification does not establish a pure species or a universal commercial concentrate specification. The source acknowledges the Geological Survey of Finland as concentrate supplier. No criticality designation is inherited from constituent elements.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="eudialyte ore eudialyte-ore primary_resource a natural geological feed represented by the eudialyte ore sample from the ilimaussaq complex, greenland, used in hunter&#39;s 2020 doctoral thesis. the sample was jaw-crushed and finely ground for laboratory leaching. its mineral proportions, bulk elemental grade and particle-size distribution are not established in the reviewed experimental account. this resource is distinct from a formally identified eudialyte mineral species, the eudialyte group, an upgraded concentrate, elemental zirconium or rare earths, and a recovered product. a literature crystal structure in the thesis is not characterization of this particular feed. no criticality designation is inherited from its constituent elements. bioleaching acidithiobacillus ferrooxidans ncbitaxon:920">
-      <td>
-        <a href="../materials/eudialyte-ore.html"><strong>Eudialyte ore</strong></a>
-        <p class="record-desc">A natural geological feed represented by the eudialyte ore sample from the Ilimaussaq Complex, Greenland, used in Hunter&#39;s 2020 doctoral thesis. The sample was jaw-crushed and finely ground for laboratory leaching. Its mineral proportions, bulk elemental grade and particle-size distribution are not established in the reviewed experimental account. This resource is distinct from a formally identified eudialyte mineral species, the eudialyte group, an upgraded concentrate, elemental zirconium or rare earths, and a recovered product. A literature crystal structure in the thesis is not characterization of this particular feed. No criticality designation is inherited from its constituent elements.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Acidithiobacillus ferrooxidans</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="ion-adsorption rare-earth clay ion-adsorption-rare-earth-clay primary_resource naturally weathered, rare-earth-bearing clay material, distinct from an individual clay mineral, isolated rare-earth element or processing residue. separate curated experiments concern ferruginous, poorly sorted material from 3.8–4.8 m depth above volcanic breccia in the ambohimirahavavy alkaline complex, madagascar, and a guangxi, china ore described as an ion-adsorption feed. their specimens, communities, preparations and assays remain distinct; neither characterizes every ion-adsorption deposit. bioleaching aspergillus bacillus ncbitaxon:5052 ncbitaxon:1386">
-      <td>
-        <a href="../materials/ion-adsorption-rare-earth-clay.html"><strong>Ion-adsorption rare-earth clay</strong></a>
-        <p class="record-desc">Naturally weathered, rare-earth-bearing clay material, distinct from an individual clay mineral, isolated rare-earth element or processing residue. Separate curated experiments concern ferruginous, poorly sorted material from 3.8–4.8 m depth above volcanic breccia in the Ambohimirahavavy Alkaline Complex, Madagascar, and a Guangxi, China ore described as an ion-adsorption feed. Their specimens, communities, preparations and assays remain distinct; neither characterizes every ion-adsorption deposit.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>2</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Aspergillus</li>
-          <li>Bacillus</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="natural kaolin feed kaolin primary_resource naturally occurring kaolinite-bearing clay feed, represented here by a mixed ore from bilecik-söğüt, turkey. xrd identified kaolinite, quartz and microcline as major phases. this resource is distinct from the mineral species kaolinite, discarded kaolin mine waste and a refined alumina or traded purity-defined product. table 1 reports 0.82 wt% fe2o3, 21.79 wt% al2o3 and 66.83 wt% sio2 as bulk xrf oxide equivalents, not mineral fractions or proof of a particular iron phase. the record does not inherit a criticality designation from aluminium or another constituent. bioleaching aspergillus niger ncbitaxon:5061">
-      <td>
-        <a href="../materials/kaolin.html"><strong>Natural kaolin feed</strong></a>
-        <p class="record-desc">Naturally occurring kaolinite-bearing clay feed, represented here by a mixed ore from Bilecik-Söğüt, Turkey. XRD identified kaolinite, quartz and microcline as major phases. This resource is distinct from the mineral species kaolinite, discarded kaolin mine waste and a refined alumina or traded purity-defined product. Table 1 reports 0.82 wt% Fe2O3, 21.79 wt% Al2O3 and 66.83 wt% SiO2 as bulk XRF oxide equivalents, not mineral fractions or proof of a particular iron phase. The record does not inherit a criticality designation from aluminium or another constituent.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Aspergillus niger</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="l-chondrite meteorite l-chondrite-meteorite primary_resource naturally occurring l-group ordinary chondritic meteorite material considered as a potential experimental feed, not a mineral species, secondary waste or established commercial ore. the curated experiment used fragments identified by its authors as northwest africa 869, an l3-6 regolith breccia, containing heterogeneous silicate, sulfide and metal phases. these earth-collected fragments were transported to the international space station; the study did not mine an asteroid in situ. results apply to the tested specimens and conditions, not every l-chondrite. constituent metals do not confer a criticality designation on this resource. bioleaching sphingomonas desiccabilis penicillium simplicissimum ncbitaxon:429134 ncbitaxon:69488">
-      <td>
-        <a href="../materials/l-chondrite-meteorite.html"><strong>L-chondrite meteorite</strong></a>
-        <p class="record-desc">Naturally occurring L-group ordinary chondritic meteorite material considered as a potential experimental feed, not a mineral species, secondary waste or established commercial ore. The curated experiment used fragments identified by its authors as Northwest Africa 869, an L3-6 regolith breccia, containing heterogeneous silicate, sulfide and metal phases. These Earth-collected fragments were transported to the International Space Station; the study did not mine an asteroid in situ. Results apply to the tested specimens and conditions, not every L-chondrite. Constituent metals do not confer a criticality designation on this resource.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Sphingomonas desiccabilis</li>
-          <li>Penicillium simplicissimum</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="biomineralization"
-        data-critical="false"
-        data-search="lithium-bearing geothermal brine lithium-bearing-geothermal-brine primary_resource naturally occurring geothermal saline water containing dissolved lithium, considered as a geological extraction feed. the resource is a variable aqueous mixture, distinct from elemental lithium, a mineral species, manufactured lithium carbonate and waste-derived secondary resources. the curated experiment used one unsterilized brine from an unnamed cornish geothermal project; its composition and laboratory response do not define all geothermal brines. no criticality designation or external material identifier is inferred from the lithium constituent. biomineralization sporosarcina pasteurii ncbitaxon:1474 uniprotkb:p41020 ure1_spopa urease subunit alpha urec ec:3.5.1.5 interpro:ipr006680 interpro:ipr011059 interpro:ipr032466 interpro:ipr011612 interpro:ipr017950 interpro:ipr005848 interpro:ipr017951 interpro:ipr029754 pfam:pf01979 pfam:pf00449 uniprotkb:p41021 ure2_spopa urease subunit beta ureb ec:3.5.1.5 interpro:ipr002019 interpro:ipr036461 interpro:ipr050069 pfam:pf00699 uniprotkb:p41022 ure3_spopa urease subunit gamma urea ec:3.5.1.5 interpro:ipr012010 interpro:ipr002026 interpro:ipr036463 interpro:ipr050069 pfam:pf00547 ureabc nickel-dependent urease complex (urea, ureb, urec) ureabc uniprotkb:p41020 ure1_spopa urease subunit alpha urec ec:3.5.1.5 interpro:ipr006680 interpro:ipr011059 interpro:ipr032466 interpro:ipr011612 interpro:ipr017950 interpro:ipr005848 interpro:ipr017951 interpro:ipr029754 pfam:pf01979 pfam:pf00449 uniprotkb:p41021 ure2_spopa urease subunit beta ureb ec:3.5.1.5 interpro:ipr002019 interpro:ipr036461 interpro:ipr050069 pfam:pf00699 uniprotkb:p41022 ure3_spopa urease subunit gamma urea ec:3.5.1.5 interpro:ipr012010 interpro:ipr002026 interpro:ipr036463 interpro:ipr050069 pfam:pf00547 ammonium and carbonate alkalinity generation (ph elevation) competing ca(ii), mg(ii), sr(ii), fe, and mn cations in lithium brine precipitated calcite/vaterite carbonate solids (leaving li in brine)">
-      <td>
-        <a href="../materials/lithium-bearing-geothermal-brine.html"><strong>Lithium-bearing geothermal brine</strong></a>
-        <p class="record-desc">Naturally occurring geothermal saline water containing dissolved lithium, considered as a geological extraction feed. The resource is a variable aqueous mixture, distinct from elemental lithium, a mineral species, manufactured lithium carbonate and waste-derived secondary resources. The curated experiment used one unsterilized brine from an unnamed Cornish geothermal project; its composition and laboratory response do not define all geothermal brines. No criticality designation or external material identifier is inferred from the lithium constituent.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Sporosarcina pasteurii</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="lithium-mica ore lithium-mica-ore primary_resource natural lithium-bearing ore containing lithium micas together with other mineral phases. the 2020 curated experiment used crushed ore from beauvoir, france, supplied by the university of birmingham and called lepidolite by sedlakova-kadukova et al. its initial xrd pattern was assigned to polylithionite, muscovite and kaolinite in supplementary figure s2a. these are source-qualified assignments in a heterogeneous feed, not a certified pure polylithionite specimen or quantitative phase proportions. lepidolite is series terminology, not an unambiguous mineral-species identifier. this extracted geological feed remains a primary resource, distinct from an individual mica species, elemental lithium, a processing waste or a purified lithium product. a separate 2025 experiment used a supplier-provided mixed feed called lepidolite, with mica, albite and quartz assignments and additional celadonite labels in its initial diffraction figure; no mine provenance or quantitative species composition was supplied. the two feeds are separate experiments within this resource category. no criticality designation or industrial deployment is inferred from its lithium content. bioleaching acidithiobacillus ferrooxidans acidithiobacillus thiooxidans aspergillus niger rhodotorula mucilaginosa ncbitaxon:920 ncbitaxon:930 ncbitaxon:5061 ncbitaxon:5537">
-      <td>
-        <a href="../materials/lithium-mica-ore.html"><strong>Lithium-mica ore</strong></a>
-        <p class="record-desc">Natural lithium-bearing ore containing lithium micas together with other mineral phases. The 2020 curated experiment used crushed ore from Beauvoir, France, supplied by the University of Birmingham and called lepidolite by Sedlakova-Kadukova et al. Its initial XRD pattern was assigned to polylithionite, muscovite and kaolinite in supplementary Figure S2A. These are source-qualified assignments in a heterogeneous feed, not a certified pure polylithionite specimen or quantitative phase proportions. Lepidolite is series terminology, not an unambiguous mineral-species identifier. This extracted geological feed remains a primary resource, distinct from an individual mica species, elemental lithium, a processing waste or a purified lithium product. A separate 2025 experiment used a supplier-provided mixed feed called lepidolite, with mica, albite and quartz assignments and additional celadonite labels in its initial diffraction figure; no mine provenance or quantitative species composition was supplied. The two feeds are separate experiments within this resource category. No criticality designation or industrial deployment is inferred from its lithium content.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>4</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Acidithiobacillus ferrooxidans</li>
-          <li>Acidithiobacillus thiooxidans</li>
-          <li>Aspergillus niger</li>
-          <li>+1 more</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="separation"
-        data-critical="false"
-        data-search="ludwigite boron-iron ore ludwigite-ore primary_resource ludwigite ore denotes a heterogeneous boron-bearing iron ore or its beneficiated boron-iron concentrate, represented here by the mixed geological feed used by liang et al. (2024). it is not the mineral species ludwigite, elemental boron or iron, a borates commodity specification, or the secondary residue left after processing. the experimental substrate for water leaching was a soda-ash-roasted derivative of that concentrate; its altered composition must not be assigned to the original ore. the paper&#39;s table 2 reports 5.12 wt% b2o3 and 58.23 wt% total iron in this reduced feed, and figure 9 identifies metallic iron, sodium magnesium silicate, sodium silicate and magnesium-ferrous oxide. its bulk-feed result cannot establish which individual original boron mineral supplied the dissolved boron. the exact mine/sample identifier and original batch mineral proportions are not established in the inspected 2024 article, which refers to earlier work for the ore characterization. no constituent&#39;s criticality designation is transferred to this resource. separation">
-      <td>
-        <a href="../materials/ludwigite-ore.html"><strong>Ludwigite boron-iron ore</strong></a>
-        <p class="record-desc">Ludwigite ore denotes a heterogeneous boron-bearing iron ore or its beneficiated boron-iron concentrate, represented here by the mixed geological feed used by Liang et al. (2024). It is not the mineral species ludwigite, elemental boron or iron, a borates commodity specification, or the secondary residue left after processing. The experimental substrate for water leaching was a soda-ash-roasted derivative of that concentrate; its altered composition must not be assigned to the original ore. The paper&#39;s Table 2 reports 5.12 wt% B2O3 and 58.23 wt% total iron in this reduced feed, and Figure 9 identifies metallic iron, sodium magnesium silicate, sodium silicate and magnesium-ferrous oxide. Its bulk-feed result cannot establish which individual original boron mineral supplied the dissolved boron. The exact mine/sample identifier and original batch mineral proportions are not established in the inspected 2024 article, which refers to earlier work for the ore characterization. No constituent&#39;s criticality designation is transferred to this resource.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching biomineralization"
-        data-critical="false"
-        data-search="manganese ore manganese-ore primary_resource manganese ore here denotes natural manganese-bearing geological feed, including the mixed ore excavated from an abandoned michigan mine in the curated study. it is a primary resource, distinct from the pyrolusite mineral species, elemental manganese, electrolytic manganese products and processing residues. the source calls its sample pyrolusite ore, but reports several manganese minerals. this record does not define a traded product grade or inherit constituent criticality. bioleaching biomineralization aspergillus niger ncbitaxon:5061">
-      <td>
-        <a href="../materials/manganese-ore.html"><strong>Manganese ore</strong></a>
-        <p class="record-desc">Manganese ore here denotes natural manganese-bearing geological feed, including the mixed ore excavated from an abandoned Michigan mine in the curated study. It is a primary resource, distinct from the pyrolusite mineral species, elemental manganese, electrolytic manganese products and processing residues. The source calls its sample pyrolusite ore, but reports several manganese minerals. This record does not define a traded product grade or inherit constituent criticality.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>2</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Aspergillus niger</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="metalliferous black shale metalliferous-black-shale primary_resource metal-bearing, organic-matter-containing sedimentary shale considered as a geological resource. this heterogeneous rock is distinct from its constituent elements, individual mineral species, a standardized traded concentrate and processing-generated waste. the cited pakistani, polish and incompletely localized experimental feeds are not interchangeable. the polish neutral-stage experiment used a previously acid-bioleached and washed derivative of the ore; its remaining-metal denominator is not the original geological feed inventory. no constituent&#39;s criticality designation or industrial recovery performance is inherited by this resource family. bioleaching acidithiobacillus ferrooxidans ncbitaxon:920">
-      <td>
-        <a href="../materials/metalliferous-black-shale.html"><strong>Metalliferous black shale</strong></a>
-        <p class="record-desc">Metal-bearing, organic-matter-containing sedimentary shale considered as a geological resource. This heterogeneous rock is distinct from its constituent elements, individual mineral species, a standardized traded concentrate and processing-generated waste. The cited Pakistani, Polish and incompletely localized experimental feeds are not interchangeable. The Polish neutral-stage experiment used a previously acid-bioleached and washed derivative of the ore; its remaining-metal denominator is not the original geological feed inventory. No constituent&#39;s criticality designation or industrial recovery performance is inherited by this resource family.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>3</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Acidithiobacillus ferrooxidans</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="monazite ore monazite-ore primary_resource a heterogeneous geological rare-earth phosphate feed represented by the high-grade monazite ore supplied by lynas rare earths, australia, to van alin et al. (2023). the reviewed study does not establish its precise mine or deposit of origin. xrd, tima and elemental analyses characterize a mixed feed rather than a pure monazite species: the supplement reports monazite-group and other phosphate phases with additional gangue. this resource is distinct from monazite-(ce), monazite-(nd), elemental rare earths, a rare-earth commodity and secondary processing waste. the source&#39;s high-grade description is not an independently certified commercial grade. no constituent criticality designation is inherited. bioleaching klebsiella aerogenes ncbitaxon:548">
-      <td>
-        <a href="../materials/monazite-ore.html"><strong>Monazite ore</strong></a>
-        <p class="record-desc">A heterogeneous geological rare-earth phosphate feed represented by the high-grade monazite ore supplied by Lynas Rare Earths, Australia, to van Alin et al. (2023). The reviewed study does not establish its precise mine or deposit of origin. XRD, TIMA and elemental analyses characterize a mixed feed rather than a pure monazite species: the supplement reports monazite-group and other phosphate phases with additional gangue. This resource is distinct from monazite-(Ce), monazite-(Nd), elemental rare earths, a rare-earth commodity and secondary processing waste. The source&#39;s high-grade description is not an independently certified commercial grade. No constituent criticality designation is inherited.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Klebsiella aerogenes</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="nickel laterite ore nickel-laterite-ore primary_resource naturally occurring heterogeneous nickel-bearing regolith formed by intense weathering of ultramafic parent rocks, including oxide-rich limonitic, clay-rich and hydrous magnesium-silicate-rich horizons. the usgs deposit model grounds this geological resource identity; excavated or stockpiled unprocessed ore remains within its scope. it is distinct from nickel metal, a mineral species such as goethite, a product-grade commodity and processing-generated laterite tailings. individual ore samples differ in mineralogy and nickel, cobalt and chromium distribution; their laboratory leaching outcomes do not apply to every laterite or establish extraction from a pure host mineral. bioleaching acidithiobacillus thiooxidans ncbitaxon:930">
-      <td>
-        <a href="../materials/nickel-laterite-ore.html"><strong>Nickel laterite ore</strong></a>
-        <p class="record-desc">Naturally occurring heterogeneous nickel-bearing regolith formed by intense weathering of ultramafic parent rocks, including oxide-rich limonitic, clay-rich and hydrous magnesium-silicate-rich horizons. The USGS deposit model grounds this geological resource identity; excavated or stockpiled unprocessed ore remains within its scope. It is distinct from nickel metal, a mineral species such as goethite, a product-grade commodity and processing-generated laterite tailings. Individual ore samples differ in mineralogy and nickel, cobalt and chromium distribution; their laboratory leaching outcomes do not apply to every laterite or establish extraction from a pure host mineral.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>3</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Acidithiobacillus thiooxidans</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="nickeline-bearing ore nickeline-bearing-ore primary_resource natural heterogeneous nickel-arsenide-bearing ore containing nickeline with carbonate and quartz gangue. the present evidence concerns a low-grade sample collected approximately 2.5 km northwest of patang village in eastern iran and a high-grade sample from talmesi mine in central iran. these are distinct feed arms within one geological resource class, not processing wastes, pure nickeline, nickel metal or a standardized concentrate grade. boroumand et al.&#39;s supplementary table s1 reports nickel and arsenic contents of 4.93% and 5% for the low-grade feed, and 33.4% and 50% for the high-grade feed. those are source-reported bulk sample compositions, not mineral formulas or general specifications. xrd and reflected-light observations identify nickeline with carbonate/quartz phases; whole-ore results cannot establish pure-phase selectivity. no criticality-list status is inferred from nickel. bioleaching">
-      <td>
-        <a href="../materials/nickeline-bearing-ore.html"><strong>Nickeline-bearing ore</strong></a>
-        <p class="record-desc">Natural heterogeneous nickel-arsenide-bearing ore containing nickeline with carbonate and quartz gangue. The present evidence concerns a low-grade sample collected approximately 2.5 km northwest of Patang village in eastern Iran and a high-grade sample from Talmesi mine in central Iran. These are distinct feed arms within one geological resource class, not processing wastes, pure nickeline, nickel metal or a standardized concentrate grade. Boroumand et al.&#39;s supplementary Table S1 reports nickel and arsenic contents of 4.93% and 5% for the low-grade feed, and 33.4% and 50% for the high-grade feed. Those are source-reported bulk sample compositions, not mineral formulas or general specifications. XRD and reflected-light observations identify nickeline with carbonate/quartz phases; whole-ore results cannot establish pure-phase selectivity. No criticality-list status is inferred from nickel.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="oxidized zinc ore oxidized-zinc-ore primary_resource natural oxidized zinc ore, represented here by a mixed, fe-rich sample from kozan-horzum, adana, türkiye. the study calls it smithsonite ore, but its xrd pattern assigns smithsonite, hemimorphite and several gangue phases. this heterogeneous geological feed is distinct from pure smithsonite, sphalerite concentrate, elemental zinc, a specified traded product and a processing waste. its composition and experimental results do not characterize all oxidized zinc ores. no constituent-element criticality or mineral-species identifier is inherited. bioleaching">
-      <td>
-        <a href="../materials/oxidized-zinc-ore.html"><strong>Oxidized zinc ore</strong></a>
-        <p class="record-desc">Natural oxidized zinc ore, represented here by a mixed, Fe-rich sample from Kozan-Horzum, Adana, Türkiye. The study calls it smithsonite ore, but its XRD pattern assigns smithsonite, hemimorphite and several gangue phases. This heterogeneous geological feed is distinct from pure smithsonite, sphalerite concentrate, elemental zinc, a specified traded product and a processing waste. Its composition and experimental results do not characterize all oxidized zinc ores. No constituent-element criticality or mineral-species identifier is inherited.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching biomineralization"
-        data-critical="false"
-        data-search="polymetallic nodules polymetallic-nodules primary_resource naturally occurring marine iron-manganese oxide and hydroxide concretions, commonly occurring on abyssal sediments and containing variable nickel, copper, cobalt and other constituents. this resource identity denotes the nodules, not a pure mineral species, constituent element, processing residue or defined traded metal grade. it is distinguished from rock-surface ferromanganese crusts and the terrestrial mixed manganese ore curated separately. collection, drying and grinding do not make this geological feed a secondary resource. no constituent criticality designation is inherited. bioleaching biomineralization">
-      <td>
-        <a href="../materials/polymetallic-nodules.html"><strong>Polymetallic nodules</strong></a>
-        <p class="record-desc">Naturally occurring marine iron-manganese oxide and hydroxide concretions, commonly occurring on abyssal sediments and containing variable nickel, copper, cobalt and other constituents. This resource identity denotes the nodules, not a pure mineral species, constituent element, processing residue or defined traded metal grade. It is distinguished from rock-surface ferromanganese crusts and the terrestrial mixed manganese ore curated separately. Collection, drying and grinding do not make this geological feed a secondary resource. No constituent criticality designation is inherited.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>3</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="redox_transformation"
-        data-critical="false"
-        data-search="rare-earth-rich deep-sea mud rare-earth-rich-deep-sea-mud primary_resource naturally occurring deep-ocean sediment enriched in rare-earth elements and yttrium, commonly termed rey-rich mud. this record denotes the heterogeneous geological sediment resource, including pelagic clay with rey-bearing biogenic calcium phosphate grains documented in western north pacific samples. it is distinct from individual rare-earth elements, a purified rare-earth commodity, an isolated apatite mineral, phosphorite, ferromanganese nodules and rock-surface ferromanganese crusts. host phases and composition vary among deposits; no single mineral formula or universal grade defines this resource. collection or physical concentration alone does not make the natural feed a secondary resource. no constituent criticality designation is inherited. a field-proxy study provides qualified evidence for an inferred microbial contribution to natural diagenetic iron transformations and rey redistribution; it does not demonstrate a controlled microbial extraction process, a recovered-metal yield, economic reserves or industrial deployment. redox_transformation">
-      <td>
-        <a href="../materials/rare-earth-rich-deep-sea-mud.html"><strong>Rare-earth-rich deep-sea mud</strong></a>
-        <p class="record-desc">Naturally occurring deep-ocean sediment enriched in rare-earth elements and yttrium, commonly termed REY-rich mud. This record denotes the heterogeneous geological sediment resource, including pelagic clay with REY-bearing biogenic calcium phosphate grains documented in western North Pacific samples. It is distinct from individual rare-earth elements, a purified rare-earth commodity, an isolated apatite mineral, phosphorite, ferromanganese nodules and rock-surface ferromanganese crusts. Host phases and composition vary among deposits; no single mineral formula or universal grade defines this resource. Collection or physical concentration alone does not make the natural feed a secondary resource. No constituent criticality designation is inherited. A field-proxy study provides qualified evidence for an inferred microbial contribution to natural diagenetic iron transformations and REY redistribution; it does not demonstrate a controlled microbial extraction process, a recovered-metal yield, economic reserves or industrial deployment.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="seafloor massive sulfides seafloor-massive-sulfides primary_resource naturally occurring polymetallic sulfide deposit material formed at or beneath the seafloor by hydrothermal mineralization. this resource includes heterogeneous sulfide-bearing ore and associated gangue, rather than a single mineral species, constituent element, finished metal commodity, or processing residue. usgs distinguishes this hydrothermal resource from polymetallic nodules and cobalt-rich ferromanganese crusts. the curated experiment used collected japanese marine hydrothermal ores, not seawater alone or pure synthetic sulfides. their compositions are sample-specific and do not define a universal resource grade. collection, grinding and washing leave the feed a primary resource. no constituent criticality designation is inherited; the laboratory mechanism does not establish seafloor extraction or industrial deployment. bioleaching">
-      <td>
-        <a href="../materials/seafloor-massive-sulfides.html"><strong>Seafloor massive sulfides</strong></a>
-        <p class="record-desc">Naturally occurring polymetallic sulfide deposit material formed at or beneath the seafloor by hydrothermal mineralization. This resource includes heterogeneous sulfide-bearing ore and associated gangue, rather than a single mineral species, constituent element, finished metal commodity, or processing residue. USGS distinguishes this hydrothermal resource from polymetallic nodules and cobalt-rich ferromanganese crusts. The curated experiment used collected Japanese marine hydrothermal ores, not seawater alone or pure synthetic sulfides. Their compositions are sample-specific and do not define a universal resource grade. Collection, grinding and washing leave the feed a primary resource. No constituent criticality designation is inherited; the laboratory mechanism does not establish seafloor extraction or industrial deployment.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="biosorption"
-        data-critical="false"
-        data-search="seawater seawater primary_resource naturally occurring marine saline water considered as a dissolved-material extraction feed. it is a variable aqueous resource, distinct from elemental uranium, a mineral species, a manufactured salt product and desalination concentrate. the curated study used natural seawater in a laboratory dialysis experiment with nutrient-supported bacterial growth. its composition and response do not define all seawater. no criticality designation or external material identifier is inferred from its constituents. biosorption bacillus velezensis ncbitaxon:492670">
-      <td>
-        <a href="../materials/seawater.html"><strong>Seawater</strong></a>
-        <p class="record-desc">Naturally occurring marine saline water considered as a dissolved-material extraction feed. It is a variable aqueous resource, distinct from elemental uranium, a mineral species, a manufactured salt product and desalination concentrate. The curated study used natural seawater in a laboratory dialysis experiment with nutrient-supported bacterial growth. Its composition and response do not define all seawater. No criticality designation or external material identifier is inferred from its constituents.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biosorption</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Bacillus velezensis</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="redox_transformation"
-        data-critical="false"
-        data-search="natural silica-sand feed silica-sand primary_resource naturally occurring quartz-rich sand or disaggregated sandstone used as an industrial-mineral feed, represented here by two distinct english quarry samples. yahaya&#39;s silica 2 was a purple-red oakamoor/moneystone rock sample disaggregated to sand-grade powder; silica 3 was yellow, uncemented lower greensand from grandcourt near king&#39;s lynn. the latter&#39;s xrd was dominated by quartz with minor phases assigned as kaolinite and feldspar. these are heterogeneous geological feeds, not the mineral species quartz, elemental silicon, spent foundry sand or a purity-defined silica product. the two samples&#39; compositions and assay outcomes are not pooled. no constituent&#39;s criticality designation is transferred to this resource. redox_transformation shewanella putrefaciens ncbitaxon:24">
-      <td>
-        <a href="../materials/silica-sand.html"><strong>Natural silica-sand feed</strong></a>
-        <p class="record-desc">Naturally occurring quartz-rich sand or disaggregated sandstone used as an industrial-mineral feed, represented here by two distinct English quarry samples. Yahaya&#39;s Silica 2 was a purple-red Oakamoor/Moneystone rock sample disaggregated to sand-grade powder; Silica 3 was yellow, uncemented Lower Greensand from Grandcourt near King&#39;s Lynn. The latter&#39;s XRD was dominated by quartz with minor phases assigned as kaolinite and feldspar. These are heterogeneous geological feeds, not the mineral species quartz, elemental silicon, spent foundry sand or a purity-defined silica product. The two samples&#39; compositions and assay outcomes are not pooled. No constituent&#39;s criticality designation is transferred to this resource.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Shewanella putrefaciens</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="tennantite concentrate tennantite-concentrate primary_resource a mixed mineral concentrate enriched in source-labelled tennantite, represented here by the feed studied by kondo et al. (2024). this resource is distinct from a pure mineral species, the separately described tennantite-(in), and elemental copper or arsenic. the study reports mineral liberation analysis of about 60 wt% tennantite, 23% pyrite, 8.2% sphalerite, 6.3% gangue, 1.6% galena and 0.97% chalcopyrite (rounded values). bulk elemental composition is reported as s 31%, cu 23%, fe 12%, zn 10%, sb 7.8% and as 6.2%, with median particle size 41 micrometres. its geographic origin and beneficiation route are not given. generic discussion of flotation wastes does not establish that this particular feed was discarded waste. the informal tennantite phase label does not resolve a modern mineral species or establish the ideal cu12as4s13 composition of every grain. no criticality designation is transferred from a constituent element. bioleaching sulfobacillus thermosulfidooxidans ncbitaxon:28034">
-      <td>
-        <a href="../materials/tennantite-concentrate.html"><strong>Tennantite concentrate</strong></a>
-        <p class="record-desc">A mixed mineral concentrate enriched in source-labelled tennantite, represented here by the feed studied by Kondo et al. (2024). This resource is distinct from a pure mineral species, the separately described tennantite-(In), and elemental copper or arsenic. The study reports mineral liberation analysis of about 60 wt% tennantite, 23% pyrite, 8.2% sphalerite, 6.3% gangue, 1.6% galena and 0.97% chalcopyrite (rounded values). Bulk elemental composition is reported as S 31%, Cu 23%, Fe 12%, Zn 10%, Sb 7.8% and As 6.2%, with median particle size 41 micrometres. Its geographic origin and beneficiation route are not given. Generic discussion of flotation wastes does not establish that this particular feed was discarded waste. The informal tennantite phase label does not resolve a modern mineral species or establish the ideal Cu12As4S13 composition of every grain. No criticality designation is transferred from a constituent element.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Sulfobacillus thermosulfidooxidans</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="tetrahedrite concentrate tetrahedrite-concentrate primary_resource a mixed flotation concentrate enriched in source-labelled tetrahedrite, represented by the strieborná vein feed from the mária mine in the rožňava ore field, eastern slovakia, studied by kupka et al. (2025). this extracted geological feed is distinct from a modern tetrahedrite mineral species, elemental copper or antimony, and a waste stream. the source describes tetrahedrite as the principal sulfide, accompanied by siderite and quartz, minor pyrite, arsenopyrite and chalcopyrite, and trace other sulfides. table 1 reports bulk cu 25.59, sb 19.68 and ag 0.57 wt%. its approximate phase-proportion prose is inconsistent with its bulk sio2 value, so no reconciled quantitative mineral assemblage is assigned here. modern tetrahedrite suffix species are distinct identities; the paper&#39;s generic phase label and selected microprobe analyses do not establish a species identity for this heterogeneous feed. no criticality designation is transferred from its constituent elements. bioleaching acidithiobacillus ferrooxidans acidithiobacillus ferrivorans ncbitaxon:920 ncbitaxon:160808 uniprotkb:b7jbp8 sqrd_acif2 sulfide-quinone reductase afe_1792 ec:1.8.5.4 interpro:ipr036188 interpro:ipr023753 interpro:ipr051169 pfam:pf07992 uniprotkb:b7j3c9 tth_acif2 tetrathionate hydrolase tth ec:3.12.1.- interpro:ipr018391 interpro:ipr002372 interpro:ipr011047 interpro:ipr015943 pfam:pf13360 sqr sulfide-quinone reductase (afe_1792) afe_1792 uniprotkb:b7jbp8 sqrd_acif2 sulfide-quinone reductase afe_1792 ec:1.8.5.4 interpro:ipr036188 interpro:ipr023753 interpro:ipr051169 pfam:pf07992 tth tetrathionate hydrolase (tth / afe_0029) tth uniprotkb:b7j3c9 tth_acif2 tetrathionate hydrolase tth ec:3.12.1.- interpro:ipr018391 interpro:ipr002372 interpro:ipr011047 interpro:ipr015943 pfam:pf13360 biogenic sulfuric acid and fe(iii) oxidative lixiviant mixed tetrahedrite-bearing sulfide concentrate dissolved cu, sb, zn, and fe in acidic leach liquor">
-      <td>
-        <a href="../materials/tetrahedrite-concentrate.html"><strong>Tetrahedrite concentrate</strong></a>
-        <p class="record-desc">A mixed flotation concentrate enriched in source-labelled tetrahedrite, represented by the Strieborná vein feed from the Mária Mine in the Rožňava ore field, eastern Slovakia, studied by Kupka et al. (2025). This extracted geological feed is distinct from a modern tetrahedrite mineral species, elemental copper or antimony, and a waste stream. The source describes tetrahedrite as the principal sulfide, accompanied by siderite and quartz, minor pyrite, arsenopyrite and chalcopyrite, and trace other sulfides. Table 1 reports bulk Cu 25.59, Sb 19.68 and Ag 0.57 wt%. Its approximate phase-proportion prose is inconsistent with its bulk SiO2 value, so no reconciled quantitative mineral assemblage is assigned here. Modern tetrahedrite suffix species are distinct identities; the paper&#39;s generic phase label and selected microprobe analyses do not establish a species identity for this heterogeneous feed. No criticality designation is transferred from its constituent elements.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Acidithiobacillus ferrooxidans</li>
-          <li>Acidithiobacillus ferrivorans</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-    <tr data-kind="primary_resource"
-        data-mechanisms="bioleaching"
-        data-critical="false"
-        data-search="xenotime concentrate xenotime-concentrate primary_resource a mixed natural mineral concentrate represented by the laboratory feed studied by he et al. (2024), containing source-assigned xenotime, monazite, zircon, almandine and ilmenite. its deposit, supplier and concentration history are not specified in the reviewed article and supplement. particle counting and density conversion estimated about 82.0 wt% xenotime and 2.7 wt% monazite; these are sample-specific phase estimates, not measured product purity. the feed is distinct from the xenotime-(y) mineral species, monazite species, elemental rare earths, a rare-earth commodity and a secondary waste resource. no criticality designation is inherited from its constituent elements. bioleaching bacillus thuringiensis ncbitaxon:1428">
-      <td>
-        <a href="../materials/xenotime-concentrate.html"><strong>Xenotime concentrate</strong></a>
-        <p class="record-desc">A mixed natural mineral concentrate represented by the laboratory feed studied by He et al. (2024), containing source-assigned xenotime, monazite, zircon, almandine and ilmenite. Its deposit, supplier and concentration history are not specified in the reviewed article and supplement. Particle counting and density conversion estimated about 82.0 wt% xenotime and 2.7 wt% monazite; these are sample-specific phase estimates, not measured product purity. The feed is distinct from the xenotime-(Y) mineral species, monazite species, elemental rare earths, a rare-earth commodity and a secondary waste resource. No criticality designation is inherited from its constituent elements.</p>
-      </td>
-      <td>
-        <span class="badge">primary resource</span>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-      <td>
-        <strong>1</strong>
-        <div style="margin-top: .2rem;">
-          <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
-        </div>
-      </td>
-      <td>
-        <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
-          <li>Bacillus thuringiensis</li>
-        </ul>
-      </td>
-      <td>
-        <span style="color: var(--muted); font-size: .85rem;">—</span>
-      </td>
-    </tr>
-  </tbody>
-</table>
+    <div class="record-table-scroll" role="region" aria-label="Materials table" tabindex="0">
+    <table id="record-table">
+      <caption>Curated Materials and Minerals</caption>
+      <thead>
+        <tr>
+          <th scope="col">Material</th>
+          <th scope="col">Kind</th>
+          <th scope="col">Criticality</th>
+          <th scope="col">Mechanisms</th>
+          <th scope="col">Microbial Agents</th>
+          <th scope="col">Identifier</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-name="allanite concentrate"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="false"
+            data-search="allanite concentrate allanite-concentrate primary_resource a geological rare-earth-bearing feed represented by the ree-concentrated crushed allanite ore supplied as zappall from wre in schmitz et al. (2025). the paper also calls this material allanite mineral sand. its generic allanite designation does not establish a particular allanite species, phase purity, mine of origin or commercial grade. this concentrated primary resource is distinct from an ideal mineral species, elemental rare earths, their commodities and secondary waste. no constituent criticality designation is inherited. bioleaching gluconobacter oxydans ncbitaxon:442 uniprotkb:p27175 dhg_gluox quinoprotein glucose dehydrogenase gdh ec:1.1.5.2 interpro:ipr018391 interpro:ipr017511 interpro:ipr002372 interpro:ipr011047 interpro:ipr001479 pfam:pf01011 uniprotkb:q9l3b2 pqqc_gluox pyrroloquinoline-quinone synthase pqqc ec:1.3.3.11 interpro:ipr016084 interpro:ipr011845 interpro:ipr039068 interpro:ipr004305 pfam:pf03070 uniprotkb:q5fti1 q5fti1_gluox phosphate-binding protein psts psts interpro:ipr005673 interpro:ipr024370 interpro:ipr050962 pfam:pf12849 uniprotkb:q5ft13 q5ft13_gluox phosphate transport system permease protein pstc interpro:ipr000515 interpro:ipr035906 interpro:ipr011864 interpro:ipr051124 pfam:pf00528 pstc (phosphate transport system permease protein) pstc uniprotkb:q5ft13 q5ft13_gluox phosphate transport system permease protein pstc interpro:ipr000515 interpro:ipr035906 interpro:ipr011864 interpro:ipr051124 pfam:pf00528 psts (phosphate-binding protein psts) psts uniprotkb:q5fti1 q5fti1_gluox phosphate-binding protein psts psts interpro:ipr005673 interpro:ipr024370 interpro:ipr050962 pfam:pf12849 pqqc pyrroloquinoline-quinone synthase pqqc uniprotkb:q9l3b2 pqqc_gluox pyrroloquinoline-quinone synthase pqqc ec:1.3.3.11 interpro:ipr016084 interpro:ipr011845 interpro:ipr039068 interpro:ipr004305 pfam:pf03070 gdh membrane-bound pqq-dependent glucose dehydrogenase gdh uniprotkb:p27175 dhg_gluox quinoprotein glucose dehydrogenase gdh ec:1.1.5.2 interpro:ipr018391 interpro:ipr017511 interpro:ipr002372 interpro:ipr011047 interpro:ipr001479 pfam:pf01011 extracellular gluconic acid and organic-acid biolixiviant allanite-(ce)-bearing concentrate dissolved rare-earth elements (la, ce, nd, y)">
+          <td>
+            <a href="../materials/allanite-concentrate.html"><strong>Allanite concentrate</strong></a>
+            <p class="record-desc">A geological rare-earth-bearing feed represented by the REE-concentrated crushed allanite ore supplied as Zappall from WRE in Schmitz et al. (2025). The paper also calls this material allanite mineral sand. Its generic allanite designation does not establish a particular allanite species, phase purity, mine of origin or commercial grade. This concentrated primary resource is distinct from an ideal mineral species, elemental rare earths, their commodities and secondary waste. No constituent criticality designation is inherited.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Gluconobacter oxydans</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="basaltic rock"
+            data-kind="primary_resource"
+            data-mechanisms="other"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="false"
+            data-search="basaltic rock basalt primary_resource naturally occurring basaltic geological material, represented here by six heterogeneous drill-core specimens from icdp hsdp2, hilo, hawaii: basaltic flows, basaltic hyaloclastites and pillow basalts. this resource is not a single mineral species, pure basaltic glass, an elemental metal or a recovered commodity. the specimens contain different proportions of glass, primary silicates and secondary alteration phases. the source&#39;s manufactured bas glasses are experimental analogues and are not the natural feed represented by this record. no constituent criticality designation is inherited. other paraburkholderia fungorum ncbitaxon:134537">
+          <td>
+            <a href="../materials/basalt.html"><strong>Basaltic rock</strong></a>
+            <p class="record-desc">Naturally occurring basaltic geological material, represented here by six heterogeneous drill-core specimens from ICDP HSDP2, Hilo, Hawaii: basaltic flows, basaltic hyaloclastites and pillow basalts. This resource is not a single mineral species, pure basaltic glass, an elemental metal or a recovered commodity. The specimens contain different proportions of glass, primary silicates and secondary alteration phases. The source&#39;s manufactured BAS glasses are experimental analogues and are not the natural feed represented by this record. No constituent criticality designation is inherited.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Paraburkholderia fungorum</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="carbonatite-associated rare-earth ore"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="1"
+            data-org-count="2"
+            data-critical="false"
+            data-search="carbonatite-associated rare-earth ore carbonatite-associated-rare-earth-ore primary_resource naturally occurring, mixed rare-earth-bearing ore associated with alkaline-carbonatite deposits, anchored here to the tested mushgia khudag material from mongolia. the deposit association does not establish that every sampled rock meets a modal carbonatite classification. the curated feed contains quartz, apatite, calcite and other phases, with monazite and parisite assignments; it is neither a pure mineral nor a processed waste. laboratory culture pretreatment followed by sulfuric-acid leaching is represented as a treatment-associated observation with unresolved causal controls. neither industrial deployment nor inherited criticality is asserted. bioleaching thiobacillus denitrificans bacillus cereus ncbitaxon:36861 ncbitaxon:1396">
+          <td>
+            <a href="../materials/carbonatite-associated-rare-earth-ore.html"><strong>Carbonatite-associated rare-earth ore</strong></a>
+            <p class="record-desc">Naturally occurring, mixed rare-earth-bearing ore associated with alkaline-carbonatite deposits, anchored here to the tested Mushgia Khudag material from Mongolia. The deposit association does not establish that every sampled rock meets a modal carbonatite classification. The curated feed contains quartz, apatite, calcite and other phases, with monazite and parisite assignments; it is neither a pure mineral nor a processed waste. Laboratory culture pretreatment followed by sulfuric-acid leaching is represented as a treatment-associated observation with unresolved causal controls. Neither industrial deployment nor inherited criticality is asserted.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Thiobacillus denitrificans</li>
+              <li>Bacillus cereus</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="cassiterite-polymetallic sulfide ore"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="1"
+            data-org-count="3"
+            data-critical="false"
+            data-search="cassiterite-polymetallic sulfide ore cassiterite-polymetallic-sulfide-ore primary_resource a heterogeneous natural tin-bearing geological feed containing cassiterite and sulfide minerals, represented here by the myanmar ore studied by wang et al. (2025). the crushed experimental ore contained source-assigned pyrite, cassiterite, quartz, tourmaline and mica. its mine and deposit are not specified. crushing does not establish a processing-waste origin. this resource is distinct from cassiterite or pyrrhotite mineral species, elemental tin, a tin commodity and a produced concentrate. the study does not establish extraction from a pure mineral or properties of all ores described by this name. no criticality designation is inherited from tin. bioleaching leptospirillum ferriphilum sulfobacillus thermosulfidooxidans acidithiobacillus caldus ncbitaxon:178606 ncbitaxon:28034 ncbitaxon:33059">
+          <td>
+            <a href="../materials/cassiterite-polymetallic-sulfide-ore.html"><strong>Cassiterite-polymetallic sulfide ore</strong></a>
+            <p class="record-desc">A heterogeneous natural tin-bearing geological feed containing cassiterite and sulfide minerals, represented here by the Myanmar ore studied by Wang et al. (2025). The crushed experimental ore contained source-assigned pyrite, cassiterite, quartz, tourmaline and mica. Its mine and deposit are not specified. Crushing does not establish a processing-waste origin. This resource is distinct from cassiterite or pyrrhotite mineral species, elemental tin, a tin commodity and a produced concentrate. The study does not establish extraction from a pure mineral or properties of all ores described by this name. No criticality designation is inherited from tin.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Leptospirillum ferriphilum</li>
+              <li>Sulfobacillus thermosulfidooxidans</li>
+              <li>Acidithiobacillus caldus</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="chalcopyrite-enargite concentrate"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="false"
+            data-search="chalcopyrite-enargite concentrate chalcopyrite-enargite-concentrate primary_resource mixed copper-sulfide mineral concentrates represented by the d3, eb and ea feeds in oyama et al. (2021), distinct from the constituent chalcopyrite and enargite mineral species, the nearly pure model chalcopyrite tested separately in that paper, and the dc-i/dc-ii/dc-iii enargite-pyrite concentrates examined in okibe et al. (2022). figure 1 reports chalcopyrite/enargite/pyrite contents of 12/21/30 wt% for d3, 17/6.7/36 wt% for eb and 8/24/10 wt% for ea; bornite, chalcocite, geerite and other phases also occur. the displayed ea phase labels total 97%, so the figure is not treated as a closed compositional balance. mine, batch and beneficiation details are not established; the acknowledgments identify an academic supplier for ea. this owner denotes concentrated geological feed, not a documented discarded residue, a pure phase or a traded product specification. no mineral identifier or constituent criticality designation is inherited. bioleaching acidithiobacillus caldus ncbitaxon:33059">
+          <td>
+            <a href="../materials/chalcopyrite-enargite-concentrate.html"><strong>Chalcopyrite-enargite concentrate</strong></a>
+            <p class="record-desc">Mixed copper-sulfide mineral concentrates represented by the D3, Eb and Ea feeds in Oyama et al. (2021), distinct from the constituent chalcopyrite and enargite mineral species, the nearly pure model chalcopyrite tested separately in that paper, and the DC-I/DC-II/DC-III enargite-pyrite concentrates examined in Okibe et al. (2022). Figure 1 reports chalcopyrite/enargite/pyrite contents of 12/21/30 wt% for D3, 17/6.7/36 wt% for Eb and 8/24/10 wt% for Ea; bornite, chalcocite, geerite and other phases also occur. The displayed Ea phase labels total 97%, so the figure is not treated as a closed compositional balance. Mine, batch and beneficiation details are not established; the acknowledgments identify an academic supplier for Ea. This owner denotes concentrated geological feed, not a documented discarded residue, a pure phase or a traded product specification. No mineral identifier or constituent criticality designation is inherited.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Acidithiobacillus caldus</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="cobalt-rich ferromanganese crusts"
+            data-kind="primary_resource"
+            data-mechanisms="other"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="cobalt-rich ferromanganese crusts cobalt-rich-ferromanganese-crusts primary_resource naturally occurring layered iron-manganese oxide and oxyhydroxide deposits on exposed marine rock surfaces, commonly seamounts. this resource identity covers the cobalt-bearing, predominantly hydrogenetic crusts formed by accumulation from seawater; it does not denote every hydrothermal encrustation. the heterogeneous crust material is distinct from sediment-hosted polymetallic nodules, constituent cobalt or manganese elements, a pure mineral species, and a processing residue. maciąg et al. characterize crusts and their altered basalt interfaces from dirck hartog ridge; their sample-specific mineral mixtures are not a universal formula or grade. collection and physical preparation do not make this geological resource secondary. the laboratory mechanism below records conditional redistribution of cobalt and nickel in whole-crust microcosms; it does not establish a specific receiving phase, a purified metal product or industrial deployment. the resource inherits no constituent criticality. other">
+          <td>
+            <a href="../materials/cobalt-rich-ferromanganese-crusts.html"><strong>Cobalt-rich ferromanganese crusts</strong></a>
+            <p class="record-desc">Naturally occurring layered iron-manganese oxide and oxyhydroxide deposits on exposed marine rock surfaces, commonly seamounts. This resource identity covers the cobalt-bearing, predominantly hydrogenetic crusts formed by accumulation from seawater; it does not denote every hydrothermal encrustation. The heterogeneous crust material is distinct from sediment-hosted polymetallic nodules, constituent cobalt or manganese elements, a pure mineral species, and a processing residue. Maciąg et al. characterize crusts and their altered basalt interfaces from Dirck Hartog Ridge; their sample-specific mineral mixtures are not a universal formula or grade. Collection and physical preparation do not make this geological resource secondary. The laboratory mechanism below records conditional redistribution of cobalt and nickel in whole-crust microcosms; it does not establish a specific receiving phase, a purified metal product or industrial deployment. The resource inherits no constituent criticality.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">other</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="dunite"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="false"
+            data-search="dunite dunite primary_resource dunite is an ultramafic rock and geological feed, not a mineral species or elemental magnesium. bgs rock classification scheme code dun defines this peridotite type by more than 90% olivine in the assemblage of olivine, pyroxene and hornblende. the curated experiments used three powders from a north carolina dunite deposit, including strongly altered material with much lower remaining olivine fractions. their laboratory results do not describe every dunite, a pure forsterite feed, a waste tailing, or a traded product grade. no criticality designation is inherited from constituent elements. bioleaching gluconobacter oxydans ncbitaxon:442 uniprotkb:p27175 dhg_gluox quinoprotein glucose dehydrogenase gdh ec:1.1.5.2 interpro:ipr018391 interpro:ipr017511 interpro:ipr002372 interpro:ipr011047 interpro:ipr001479 pfam:pf01011 uniprotkb:q9l3b2 pqqc_gluox pyrroloquinoline-quinone synthase pqqc ec:1.3.3.11 interpro:ipr016084 interpro:ipr011845 interpro:ipr039068 interpro:ipr004305 pfam:pf03070 uniprotkb:q5fti1 q5fti1_gluox phosphate-binding protein psts psts interpro:ipr005673 interpro:ipr024370 interpro:ipr050962 pfam:pf12849 uniprotkb:q5fqk7 q5fqk7_gluox putative oxidoreductase gox1598 ec:1.1.1.- interpro:ipr050523 interpro:ipr036812 interpro:ipr023210 pfam:pf00248 uniprotkb:q5fry1 q5fry1_gluox glycine cleavage system h protein gcvh interpro:ipr003016 interpro:ipr000089 interpro:ipr002930 interpro:ipr033753 interpro:ipr017453 interpro:ipr011053 pfam:pf01597 gcvh (glycine cleavage system h protein) gcvh uniprotkb:q5fry1 q5fry1_gluox glycine cleavage system h protein gcvh interpro:ipr003016 interpro:ipr000089 interpro:ipr002930 interpro:ipr033753 interpro:ipr017453 interpro:ipr011053 pfam:pf01597 gox1598 (putative oxidoreductase) gox1598 uniprotkb:q5fqk7 q5fqk7_gluox putative oxidoreductase gox1598 ec:1.1.1.- interpro:ipr050523 interpro:ipr036812 interpro:ipr023210 pfam:pf00248 psts (phosphate-binding protein psts) psts uniprotkb:q5fti1 q5fti1_gluox phosphate-binding protein psts psts interpro:ipr005673 interpro:ipr024370 interpro:ipr050962 pfam:pf12849 pqqc pyrroloquinoline-quinone synthase pqqc uniprotkb:q9l3b2 pqqc_gluox pyrroloquinoline-quinone synthase pqqc ec:1.3.3.11 interpro:ipr016084 interpro:ipr011845 interpro:ipr039068 interpro:ipr004305 pfam:pf03070 gdh membrane-bound pqq-dependent glucose dehydrogenase gdh uniprotkb:p27175 dhg_gluox quinoprotein glucose dehydrogenase gdh ec:1.1.5.2 interpro:ipr018391 interpro:ipr017511 interpro:ipr002372 interpro:ipr011047 interpro:ipr001479 pfam:pf01011 extracellular gluconic acid and organic-acid biolixiviant twin sisters and olivine-rich dunite powders dissolved mg, ni, mn, co, and cr in leachate">
+          <td>
+            <a href="../materials/dunite.html"><strong>Dunite</strong></a>
+            <p class="record-desc">Dunite is an ultramafic rock and geological feed, not a mineral species or elemental magnesium. BGS Rock Classification Scheme code DUN defines this peridotite type by more than 90% olivine in the assemblage of olivine, pyroxene and hornblende. The curated experiments used three powders from a North Carolina dunite deposit, including strongly altered material with much lower remaining olivine fractions. Their laboratory results do not describe every dunite, a pure forsterite feed, a waste tailing, or a traded product grade. No criticality designation is inherited from constituent elements.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Gluconobacter oxydans</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="enargite-pyrite concentrate"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="false"
+            data-search="enargite-pyrite concentrate enargite-pyrite-concentrate primary_resource mixed high-arsenic mineral concentrates represented by dc-i, dc-ii and dc-iii in okibe et al. (2022), distinct from pure enargite or pyrite and from elemental copper or arsenic. company-supplied mineral liberation analyses assign enargite and pyrite, respectively, as 51.8 and 34.6 wt% in dc-i, 37.4 and 47.3 wt% in dc-ii, and 26.1 and 63.1 wt% in dc-iii. original xrd also identifies these phases, with a source-labelled tennantite contribution in dc-iii. other copper minerals occur, so dissolved copper cannot be assigned exclusively to enargite. dc-i and dc-iii were supplied by sumitomo metal mining and dc-ii by jx nippon mining and metals; mine, batch and detailed beneficiation provenance are not reported. the paper frames dirty concentrates as flotation waste separated from clean smelter feed. this record denotes the characterized concentrated geological feeds without asserting prior disposal, a tailings stockpile or a traded product specification. no mineral-species identifier or constituent criticality designation is transferred to the mixed resource. bioleaching sulfobacillus thermosulfidooxidans ncbitaxon:28034">
+          <td>
+            <a href="../materials/enargite-pyrite-concentrate.html"><strong>Enargite-pyrite concentrate</strong></a>
+            <p class="record-desc">Mixed high-arsenic mineral concentrates represented by DC-I, DC-II and DC-III in Okibe et al. (2022), distinct from pure enargite or pyrite and from elemental copper or arsenic. Company-supplied mineral liberation analyses assign enargite and pyrite, respectively, as 51.8 and 34.6 wt% in DC-I, 37.4 and 47.3 wt% in DC-II, and 26.1 and 63.1 wt% in DC-III. Original XRD also identifies these phases, with a source-labelled tennantite contribution in DC-III. Other copper minerals occur, so dissolved copper cannot be assigned exclusively to enargite. DC-I and DC-III were supplied by Sumitomo Metal Mining and DC-II by JX Nippon Mining and Metals; mine, batch and detailed beneficiation provenance are not reported. The paper frames dirty concentrates as flotation waste separated from clean smelter feed. This record denotes the characterized concentrated geological feeds without asserting prior disposal, a tailings stockpile or a traded product specification. No mineral-species identifier or constituent criticality designation is transferred to the mixed resource.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Sulfobacillus thermosulfidooxidans</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="eucrite meteorite"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="false"
+            data-search="eucrite meteorite eucrite-meteorite primary_resource natural basaltic achondritic meteorite material considered as an experimental feed, distinct from an l-chondrite, terrestrial basalt, a pure mineral or secondary resource. the curated example is the eu specimen in tonietti et al. (2026). its reported mineral assemblage is dominated by plagioclase and pyroxene, with minor olivine and quartz. the paper attributes eucrite material to vesta but gives no exact meteorite name or accession for eu; table 1 says skylab (us), whereas the acknowledgments thank skyfall meteorites. the experimental specimen&#39;s provenance is therefore incompletely resolved. no resource-level criticality designation is inferred from its constituent trace metals. bioleaching sphingomonas desiccabilis ncbitaxon:429134">
+          <td>
+            <a href="../materials/eucrite-meteorite.html"><strong>Eucrite meteorite</strong></a>
+            <p class="record-desc">Natural basaltic achondritic meteorite material considered as an experimental feed, distinct from an L-chondrite, terrestrial basalt, a pure mineral or secondary resource. The curated example is the EU specimen in Tonietti et al. (2026). Its reported mineral assemblage is dominated by plagioclase and pyroxene, with minor olivine and quartz. The paper attributes eucrite material to Vesta but gives no exact meteorite name or accession for EU; Table 1 says Skylab (US), whereas the acknowledgments thank SkyFall Meteorites. The experimental specimen&#39;s provenance is therefore incompletely resolved. No resource-level criticality designation is inferred from its constituent trace metals.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Sphingomonas desiccabilis</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="eudialyte concentrate"
+            data-kind="primary_resource"
+            data-mechanisms="recovery"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="eudialyte concentrate eudialyte-concentrate primary_resource a beneficiated geological feed represented by the tanbreez concentrate from southern greenland characterized by ma and colleagues (2019). the source describes crushing followed by partly magnetic selection; this is an upgraded mixed mineral concentrate, distinct from the uncharacterized crushed eudialyte ore in hunter&#39;s 2020 thesis, a formal eudialyte mineral species or group, elemental zirconium and recovered rare-earth products. table i reports 1.60 wt% total rare earth elements and 6.46 wt% zr in the laboratory feed. qemscan assigns 67.05% of the material to eudialyte, alongside amphibole, nepheline, feldspar and other phases; this classification does not establish a pure species or a universal commercial concentrate specification. the source acknowledges the geological survey of finland as concentrate supplier. no criticality designation is inherited from constituent elements. recovery">
+          <td>
+            <a href="../materials/eudialyte-concentrate.html"><strong>Eudialyte concentrate</strong></a>
+            <p class="record-desc">A beneficiated geological feed represented by the TANBREEZ concentrate from southern Greenland characterized by Ma and colleagues (2019). The source describes crushing followed by partly magnetic selection; this is an upgraded mixed mineral concentrate, distinct from the uncharacterized crushed eudialyte ore in Hunter&#39;s 2020 thesis, a formal eudialyte mineral species or group, elemental zirconium and recovered rare-earth products. Table I reports 1.60 wt% total rare earth elements and 6.46 wt% Zr in the laboratory feed. QEMSCAN assigns 67.05% of the material to eudialyte, alongside amphibole, nepheline, feldspar and other phases; this classification does not establish a pure species or a universal commercial concentrate specification. The source acknowledges the Geological Survey of Finland as concentrate supplier. No criticality designation is inherited from constituent elements.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="eudialyte ore"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="false"
+            data-search="eudialyte ore eudialyte-ore primary_resource a natural geological feed represented by the eudialyte ore sample from the ilimaussaq complex, greenland, used in hunter&#39;s 2020 doctoral thesis. the sample was jaw-crushed and finely ground for laboratory leaching. its mineral proportions, bulk elemental grade and particle-size distribution are not established in the reviewed experimental account. this resource is distinct from a formally identified eudialyte mineral species, the eudialyte group, an upgraded concentrate, elemental zirconium or rare earths, and a recovered product. a literature crystal structure in the thesis is not characterization of this particular feed. no criticality designation is inherited from its constituent elements. bioleaching acidithiobacillus ferrooxidans ncbitaxon:920">
+          <td>
+            <a href="../materials/eudialyte-ore.html"><strong>Eudialyte ore</strong></a>
+            <p class="record-desc">A natural geological feed represented by the eudialyte ore sample from the Ilimaussaq Complex, Greenland, used in Hunter&#39;s 2020 doctoral thesis. The sample was jaw-crushed and finely ground for laboratory leaching. Its mineral proportions, bulk elemental grade and particle-size distribution are not established in the reviewed experimental account. This resource is distinct from a formally identified eudialyte mineral species, the eudialyte group, an upgraded concentrate, elemental zirconium or rare earths, and a recovered product. A literature crystal structure in the thesis is not characterization of this particular feed. No criticality designation is inherited from its constituent elements.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Acidithiobacillus ferrooxidans</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="ion-adsorption rare-earth clay"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="2"
+            data-org-count="2"
+            data-critical="false"
+            data-search="ion-adsorption rare-earth clay ion-adsorption-rare-earth-clay primary_resource naturally weathered, rare-earth-bearing clay material, distinct from an individual clay mineral, isolated rare-earth element or processing residue. separate curated experiments concern ferruginous, poorly sorted material from 3.8–4.8 m depth above volcanic breccia in the ambohimirahavavy alkaline complex, madagascar, and a guangxi, china ore described as an ion-adsorption feed. their specimens, communities, preparations and assays remain distinct; neither characterizes every ion-adsorption deposit. bioleaching aspergillus bacillus ncbitaxon:5052 ncbitaxon:1386">
+          <td>
+            <a href="../materials/ion-adsorption-rare-earth-clay.html"><strong>Ion-adsorption rare-earth clay</strong></a>
+            <p class="record-desc">Naturally weathered, rare-earth-bearing clay material, distinct from an individual clay mineral, isolated rare-earth element or processing residue. Separate curated experiments concern ferruginous, poorly sorted material from 3.8–4.8 m depth above volcanic breccia in the Ambohimirahavavy Alkaline Complex, Madagascar, and a Guangxi, China ore described as an ion-adsorption feed. Their specimens, communities, preparations and assays remain distinct; neither characterizes every ion-adsorption deposit.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>2</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Aspergillus</li>
+              <li>Bacillus</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="natural kaolin feed"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="false"
+            data-search="natural kaolin feed kaolin primary_resource naturally occurring kaolinite-bearing clay feed, represented here by a mixed ore from bilecik-söğüt, turkey. xrd identified kaolinite, quartz and microcline as major phases. this resource is distinct from the mineral species kaolinite, discarded kaolin mine waste and a refined alumina or traded purity-defined product. table 1 reports 0.82 wt% fe2o3, 21.79 wt% al2o3 and 66.83 wt% sio2 as bulk xrf oxide equivalents, not mineral fractions or proof of a particular iron phase. the record does not inherit a criticality designation from aluminium or another constituent. bioleaching aspergillus niger ncbitaxon:5061">
+          <td>
+            <a href="../materials/kaolin.html"><strong>Natural kaolin feed</strong></a>
+            <p class="record-desc">Naturally occurring kaolinite-bearing clay feed, represented here by a mixed ore from Bilecik-Söğüt, Turkey. XRD identified kaolinite, quartz and microcline as major phases. This resource is distinct from the mineral species kaolinite, discarded kaolin mine waste and a refined alumina or traded purity-defined product. Table 1 reports 0.82 wt% Fe2O3, 21.79 wt% Al2O3 and 66.83 wt% SiO2 as bulk XRF oxide equivalents, not mineral fractions or proof of a particular iron phase. The record does not inherit a criticality designation from aluminium or another constituent.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Aspergillus niger</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="l-chondrite meteorite"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="1"
+            data-org-count="2"
+            data-critical="false"
+            data-search="l-chondrite meteorite l-chondrite-meteorite primary_resource naturally occurring l-group ordinary chondritic meteorite material considered as a potential experimental feed, not a mineral species, secondary waste or established commercial ore. the curated experiment used fragments identified by its authors as northwest africa 869, an l3-6 regolith breccia, containing heterogeneous silicate, sulfide and metal phases. these earth-collected fragments were transported to the international space station; the study did not mine an asteroid in situ. results apply to the tested specimens and conditions, not every l-chondrite. constituent metals do not confer a criticality designation on this resource. bioleaching sphingomonas desiccabilis penicillium simplicissimum ncbitaxon:429134 ncbitaxon:69488">
+          <td>
+            <a href="../materials/l-chondrite-meteorite.html"><strong>L-chondrite meteorite</strong></a>
+            <p class="record-desc">Naturally occurring L-group ordinary chondritic meteorite material considered as a potential experimental feed, not a mineral species, secondary waste or established commercial ore. The curated experiment used fragments identified by its authors as Northwest Africa 869, an L3-6 regolith breccia, containing heterogeneous silicate, sulfide and metal phases. These Earth-collected fragments were transported to the International Space Station; the study did not mine an asteroid in situ. Results apply to the tested specimens and conditions, not every L-chondrite. Constituent metals do not confer a criticality designation on this resource.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Sphingomonas desiccabilis</li>
+              <li>Penicillium simplicissimum</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="lithium-bearing geothermal brine"
+            data-kind="primary_resource"
+            data-mechanisms="biomineralization"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="false"
+            data-search="lithium-bearing geothermal brine lithium-bearing-geothermal-brine primary_resource naturally occurring geothermal saline water containing dissolved lithium, considered as a geological extraction feed. the resource is a variable aqueous mixture, distinct from elemental lithium, a mineral species, manufactured lithium carbonate and waste-derived secondary resources. the curated experiment used one unsterilized brine from an unnamed cornish geothermal project; its composition and laboratory response do not define all geothermal brines. no criticality designation or external material identifier is inferred from the lithium constituent. biomineralization sporosarcina pasteurii ncbitaxon:1474 uniprotkb:p41020 ure1_spopa urease subunit alpha urec ec:3.5.1.5 interpro:ipr006680 interpro:ipr011059 interpro:ipr032466 interpro:ipr011612 interpro:ipr017950 interpro:ipr005848 interpro:ipr017951 interpro:ipr029754 pfam:pf01979 pfam:pf00449 uniprotkb:p41021 ure2_spopa urease subunit beta ureb ec:3.5.1.5 interpro:ipr002019 interpro:ipr036461 interpro:ipr050069 pfam:pf00699 uniprotkb:p41022 ure3_spopa urease subunit gamma urea ec:3.5.1.5 interpro:ipr012010 interpro:ipr002026 interpro:ipr036463 interpro:ipr050069 pfam:pf00547 ureabc nickel-dependent urease complex (urea, ureb, urec) ureabc uniprotkb:p41020 ure1_spopa urease subunit alpha urec ec:3.5.1.5 interpro:ipr006680 interpro:ipr011059 interpro:ipr032466 interpro:ipr011612 interpro:ipr017950 interpro:ipr005848 interpro:ipr017951 interpro:ipr029754 pfam:pf01979 pfam:pf00449 uniprotkb:p41021 ure2_spopa urease subunit beta ureb ec:3.5.1.5 interpro:ipr002019 interpro:ipr036461 interpro:ipr050069 pfam:pf00699 uniprotkb:p41022 ure3_spopa urease subunit gamma urea ec:3.5.1.5 interpro:ipr012010 interpro:ipr002026 interpro:ipr036463 interpro:ipr050069 pfam:pf00547 ammonium and carbonate alkalinity generation (ph elevation) competing ca(ii), mg(ii), sr(ii), fe, and mn cations in lithium brine precipitated calcite/vaterite carbonate solids (leaving li in brine)">
+          <td>
+            <a href="../materials/lithium-bearing-geothermal-brine.html"><strong>Lithium-bearing geothermal brine</strong></a>
+            <p class="record-desc">Naturally occurring geothermal saline water containing dissolved lithium, considered as a geological extraction feed. The resource is a variable aqueous mixture, distinct from elemental lithium, a mineral species, manufactured lithium carbonate and waste-derived secondary resources. The curated experiment used one unsterilized brine from an unnamed Cornish geothermal project; its composition and laboratory response do not define all geothermal brines. No criticality designation or external material identifier is inferred from the lithium constituent.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Sporosarcina pasteurii</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="lithium-mica ore"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="4"
+            data-org-count="4"
+            data-critical="false"
+            data-search="lithium-mica ore lithium-mica-ore primary_resource natural lithium-bearing ore containing lithium micas together with other mineral phases. the 2020 curated experiment used crushed ore from beauvoir, france, supplied by the university of birmingham and called lepidolite by sedlakova-kadukova et al. its initial xrd pattern was assigned to polylithionite, muscovite and kaolinite in supplementary figure s2a. these are source-qualified assignments in a heterogeneous feed, not a certified pure polylithionite specimen or quantitative phase proportions. lepidolite is series terminology, not an unambiguous mineral-species identifier. this extracted geological feed remains a primary resource, distinct from an individual mica species, elemental lithium, a processing waste or a purified lithium product. a separate 2025 experiment used a supplier-provided mixed feed called lepidolite, with mica, albite and quartz assignments and additional celadonite labels in its initial diffraction figure; no mine provenance or quantitative species composition was supplied. the two feeds are separate experiments within this resource category. no criticality designation or industrial deployment is inferred from its lithium content. bioleaching acidithiobacillus ferrooxidans acidithiobacillus thiooxidans aspergillus niger rhodotorula mucilaginosa ncbitaxon:920 ncbitaxon:930 ncbitaxon:5061 ncbitaxon:5537">
+          <td>
+            <a href="../materials/lithium-mica-ore.html"><strong>Lithium-mica ore</strong></a>
+            <p class="record-desc">Natural lithium-bearing ore containing lithium micas together with other mineral phases. The 2020 curated experiment used crushed ore from Beauvoir, France, supplied by the University of Birmingham and called lepidolite by Sedlakova-Kadukova et al. Its initial XRD pattern was assigned to polylithionite, muscovite and kaolinite in supplementary Figure S2A. These are source-qualified assignments in a heterogeneous feed, not a certified pure polylithionite specimen or quantitative phase proportions. Lepidolite is series terminology, not an unambiguous mineral-species identifier. This extracted geological feed remains a primary resource, distinct from an individual mica species, elemental lithium, a processing waste or a purified lithium product. A separate 2025 experiment used a supplier-provided mixed feed called lepidolite, with mica, albite and quartz assignments and additional celadonite labels in its initial diffraction figure; no mine provenance or quantitative species composition was supplied. The two feeds are separate experiments within this resource category. No criticality designation or industrial deployment is inferred from its lithium content.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>4</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Acidithiobacillus ferrooxidans</li>
+              <li>Acidithiobacillus thiooxidans</li>
+              <li>Aspergillus niger</li>
+              <li>+1 more</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="ludwigite boron-iron ore"
+            data-kind="primary_resource"
+            data-mechanisms="separation"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="ludwigite boron-iron ore ludwigite-ore primary_resource ludwigite ore denotes a heterogeneous boron-bearing iron ore or its beneficiated boron-iron concentrate, represented here by the mixed geological feed used by liang et al. (2024). it is not the mineral species ludwigite, elemental boron or iron, a borates commodity specification, or the secondary residue left after processing. the experimental substrate for water leaching was a soda-ash-roasted derivative of that concentrate; its altered composition must not be assigned to the original ore. the paper&#39;s table 2 reports 5.12 wt% b2o3 and 58.23 wt% total iron in this reduced feed, and figure 9 identifies metallic iron, sodium magnesium silicate, sodium silicate and magnesium-ferrous oxide. its bulk-feed result cannot establish which individual original boron mineral supplied the dissolved boron. the exact mine/sample identifier and original batch mineral proportions are not established in the inspected 2024 article, which refers to earlier work for the ore characterization. no constituent&#39;s criticality designation is transferred to this resource. separation">
+          <td>
+            <a href="../materials/ludwigite-ore.html"><strong>Ludwigite boron-iron ore</strong></a>
+            <p class="record-desc">Ludwigite ore denotes a heterogeneous boron-bearing iron ore or its beneficiated boron-iron concentrate, represented here by the mixed geological feed used by Liang et al. (2024). It is not the mineral species ludwigite, elemental boron or iron, a borates commodity specification, or the secondary residue left after processing. The experimental substrate for water leaching was a soda-ash-roasted derivative of that concentrate; its altered composition must not be assigned to the original ore. The paper&#39;s Table 2 reports 5.12 wt% B2O3 and 58.23 wt% total iron in this reduced feed, and Figure 9 identifies metallic iron, sodium magnesium silicate, sodium silicate and magnesium-ferrous oxide. Its bulk-feed result cannot establish which individual original boron mineral supplied the dissolved boron. The exact mine/sample identifier and original batch mineral proportions are not established in the inspected 2024 article, which refers to earlier work for the ore characterization. No constituent&#39;s criticality designation is transferred to this resource.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">separation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="manganese ore"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching biomineralization"
+            data-mech-count="2"
+            data-org-count="1"
+            data-critical="false"
+            data-search="manganese ore manganese-ore primary_resource manganese ore here denotes natural manganese-bearing geological feed, including the mixed ore excavated from an abandoned michigan mine in the curated study. it is a primary resource, distinct from the pyrolusite mineral species, elemental manganese, electrolytic manganese products and processing residues. the source calls its sample pyrolusite ore, but reports several manganese minerals. this record does not define a traded product grade or inherit constituent criticality. bioleaching biomineralization aspergillus niger ncbitaxon:5061">
+          <td>
+            <a href="../materials/manganese-ore.html"><strong>Manganese ore</strong></a>
+            <p class="record-desc">Manganese ore here denotes natural manganese-bearing geological feed, including the mixed ore excavated from an abandoned Michigan mine in the curated study. It is a primary resource, distinct from the pyrolusite mineral species, elemental manganese, electrolytic manganese products and processing residues. The source calls its sample pyrolusite ore, but reports several manganese minerals. This record does not define a traded product grade or inherit constituent criticality.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>2</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Aspergillus niger</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="metalliferous black shale"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="3"
+            data-org-count="1"
+            data-critical="false"
+            data-search="metalliferous black shale metalliferous-black-shale primary_resource metal-bearing, organic-matter-containing sedimentary shale considered as a geological resource. this heterogeneous rock is distinct from its constituent elements, individual mineral species, a standardized traded concentrate and processing-generated waste. the cited pakistani, polish and incompletely localized experimental feeds are not interchangeable. the polish neutral-stage experiment used a previously acid-bioleached and washed derivative of the ore; its remaining-metal denominator is not the original geological feed inventory. no constituent&#39;s criticality designation or industrial recovery performance is inherited by this resource family. bioleaching acidithiobacillus ferrooxidans ncbitaxon:920">
+          <td>
+            <a href="../materials/metalliferous-black-shale.html"><strong>Metalliferous black shale</strong></a>
+            <p class="record-desc">Metal-bearing, organic-matter-containing sedimentary shale considered as a geological resource. This heterogeneous rock is distinct from its constituent elements, individual mineral species, a standardized traded concentrate and processing-generated waste. The cited Pakistani, Polish and incompletely localized experimental feeds are not interchangeable. The Polish neutral-stage experiment used a previously acid-bioleached and washed derivative of the ore; its remaining-metal denominator is not the original geological feed inventory. No constituent&#39;s criticality designation or industrial recovery performance is inherited by this resource family.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>3</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Acidithiobacillus ferrooxidans</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="monazite ore"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="false"
+            data-search="monazite ore monazite-ore primary_resource a heterogeneous geological rare-earth phosphate feed represented by the high-grade monazite ore supplied by lynas rare earths, australia, to van alin et al. (2023). the reviewed study does not establish its precise mine or deposit of origin. xrd, tima and elemental analyses characterize a mixed feed rather than a pure monazite species: the supplement reports monazite-group and other phosphate phases with additional gangue. this resource is distinct from monazite-(ce), monazite-(nd), elemental rare earths, a rare-earth commodity and secondary processing waste. the source&#39;s high-grade description is not an independently certified commercial grade. no constituent criticality designation is inherited. bioleaching klebsiella aerogenes ncbitaxon:548">
+          <td>
+            <a href="../materials/monazite-ore.html"><strong>Monazite ore</strong></a>
+            <p class="record-desc">A heterogeneous geological rare-earth phosphate feed represented by the high-grade monazite ore supplied by Lynas Rare Earths, Australia, to van Alin et al. (2023). The reviewed study does not establish its precise mine or deposit of origin. XRD, TIMA and elemental analyses characterize a mixed feed rather than a pure monazite species: the supplement reports monazite-group and other phosphate phases with additional gangue. This resource is distinct from monazite-(Ce), monazite-(Nd), elemental rare earths, a rare-earth commodity and secondary processing waste. The source&#39;s high-grade description is not an independently certified commercial grade. No constituent criticality designation is inherited.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Klebsiella aerogenes</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="nickel laterite ore"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="3"
+            data-org-count="1"
+            data-critical="false"
+            data-search="nickel laterite ore nickel-laterite-ore primary_resource naturally occurring heterogeneous nickel-bearing regolith formed by intense weathering of ultramafic parent rocks, including oxide-rich limonitic, clay-rich and hydrous magnesium-silicate-rich horizons. the usgs deposit model grounds this geological resource identity; excavated or stockpiled unprocessed ore remains within its scope. it is distinct from nickel metal, a mineral species such as goethite, a product-grade commodity and processing-generated laterite tailings. individual ore samples differ in mineralogy and nickel, cobalt and chromium distribution; their laboratory leaching outcomes do not apply to every laterite or establish extraction from a pure host mineral. bioleaching acidithiobacillus thiooxidans ncbitaxon:930">
+          <td>
+            <a href="../materials/nickel-laterite-ore.html"><strong>Nickel laterite ore</strong></a>
+            <p class="record-desc">Naturally occurring heterogeneous nickel-bearing regolith formed by intense weathering of ultramafic parent rocks, including oxide-rich limonitic, clay-rich and hydrous magnesium-silicate-rich horizons. The USGS deposit model grounds this geological resource identity; excavated or stockpiled unprocessed ore remains within its scope. It is distinct from nickel metal, a mineral species such as goethite, a product-grade commodity and processing-generated laterite tailings. Individual ore samples differ in mineralogy and nickel, cobalt and chromium distribution; their laboratory leaching outcomes do not apply to every laterite or establish extraction from a pure host mineral.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>3</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Acidithiobacillus thiooxidans</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="nickeline-bearing ore"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="nickeline-bearing ore nickeline-bearing-ore primary_resource natural heterogeneous nickel-arsenide-bearing ore containing nickeline with carbonate and quartz gangue. the present evidence concerns a low-grade sample collected approximately 2.5 km northwest of patang village in eastern iran and a high-grade sample from talmesi mine in central iran. these are distinct feed arms within one geological resource class, not processing wastes, pure nickeline, nickel metal or a standardized concentrate grade. boroumand et al.&#39;s supplementary table s1 reports nickel and arsenic contents of 4.93% and 5% for the low-grade feed, and 33.4% and 50% for the high-grade feed. those are source-reported bulk sample compositions, not mineral formulas or general specifications. xrd and reflected-light observations identify nickeline with carbonate/quartz phases; whole-ore results cannot establish pure-phase selectivity. no criticality-list status is inferred from nickel. bioleaching">
+          <td>
+            <a href="../materials/nickeline-bearing-ore.html"><strong>Nickeline-bearing ore</strong></a>
+            <p class="record-desc">Natural heterogeneous nickel-arsenide-bearing ore containing nickeline with carbonate and quartz gangue. The present evidence concerns a low-grade sample collected approximately 2.5 km northwest of Patang village in eastern Iran and a high-grade sample from Talmesi mine in central Iran. These are distinct feed arms within one geological resource class, not processing wastes, pure nickeline, nickel metal or a standardized concentrate grade. Boroumand et al.&#39;s supplementary Table S1 reports nickel and arsenic contents of 4.93% and 5% for the low-grade feed, and 33.4% and 50% for the high-grade feed. Those are source-reported bulk sample compositions, not mineral formulas or general specifications. XRD and reflected-light observations identify nickeline with carbonate/quartz phases; whole-ore results cannot establish pure-phase selectivity. No criticality-list status is inferred from nickel.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="oxidized zinc ore"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="oxidized zinc ore oxidized-zinc-ore primary_resource natural oxidized zinc ore, represented here by a mixed, fe-rich sample from kozan-horzum, adana, türkiye. the study calls it smithsonite ore, but its xrd pattern assigns smithsonite, hemimorphite and several gangue phases. this heterogeneous geological feed is distinct from pure smithsonite, sphalerite concentrate, elemental zinc, a specified traded product and a processing waste. its composition and experimental results do not characterize all oxidized zinc ores. no constituent-element criticality or mineral-species identifier is inherited. bioleaching">
+          <td>
+            <a href="../materials/oxidized-zinc-ore.html"><strong>Oxidized zinc ore</strong></a>
+            <p class="record-desc">Natural oxidized zinc ore, represented here by a mixed, Fe-rich sample from Kozan-Horzum, Adana, Türkiye. The study calls it smithsonite ore, but its XRD pattern assigns smithsonite, hemimorphite and several gangue phases. This heterogeneous geological feed is distinct from pure smithsonite, sphalerite concentrate, elemental zinc, a specified traded product and a processing waste. Its composition and experimental results do not characterize all oxidized zinc ores. No constituent-element criticality or mineral-species identifier is inherited.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="polymetallic nodules"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching biomineralization"
+            data-mech-count="3"
+            data-org-count="0"
+            data-critical="false"
+            data-search="polymetallic nodules polymetallic-nodules primary_resource naturally occurring marine iron-manganese oxide and hydroxide concretions, commonly occurring on abyssal sediments and containing variable nickel, copper, cobalt and other constituents. this resource identity denotes the nodules, not a pure mineral species, constituent element, processing residue or defined traded metal grade. it is distinguished from rock-surface ferromanganese crusts and the terrestrial mixed manganese ore curated separately. collection, drying and grinding do not make this geological feed a secondary resource. no constituent criticality designation is inherited. bioleaching biomineralization">
+          <td>
+            <a href="../materials/polymetallic-nodules.html"><strong>Polymetallic nodules</strong></a>
+            <p class="record-desc">Naturally occurring marine iron-manganese oxide and hydroxide concretions, commonly occurring on abyssal sediments and containing variable nickel, copper, cobalt and other constituents. This resource identity denotes the nodules, not a pure mineral species, constituent element, processing residue or defined traded metal grade. It is distinguished from rock-surface ferromanganese crusts and the terrestrial mixed manganese ore curated separately. Collection, drying and grinding do not make this geological feed a secondary resource. No constituent criticality designation is inherited.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>3</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biomineralization</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="rare-earth-rich deep-sea mud"
+            data-kind="primary_resource"
+            data-mechanisms="redox_transformation"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="rare-earth-rich deep-sea mud rare-earth-rich-deep-sea-mud primary_resource naturally occurring deep-ocean sediment enriched in rare-earth elements and yttrium, commonly termed rey-rich mud. this record denotes the heterogeneous geological sediment resource, including pelagic clay with rey-bearing biogenic calcium phosphate grains documented in western north pacific samples. it is distinct from individual rare-earth elements, a purified rare-earth commodity, an isolated apatite mineral, phosphorite, ferromanganese nodules and rock-surface ferromanganese crusts. host phases and composition vary among deposits; no single mineral formula or universal grade defines this resource. collection or physical concentration alone does not make the natural feed a secondary resource. no constituent criticality designation is inherited. a field-proxy study provides qualified evidence for an inferred microbial contribution to natural diagenetic iron transformations and rey redistribution; it does not demonstrate a controlled microbial extraction process, a recovered-metal yield, economic reserves or industrial deployment. redox_transformation">
+          <td>
+            <a href="../materials/rare-earth-rich-deep-sea-mud.html"><strong>Rare-earth-rich deep-sea mud</strong></a>
+            <p class="record-desc">Naturally occurring deep-ocean sediment enriched in rare-earth elements and yttrium, commonly termed REY-rich mud. This record denotes the heterogeneous geological sediment resource, including pelagic clay with REY-bearing biogenic calcium phosphate grains documented in western North Pacific samples. It is distinct from individual rare-earth elements, a purified rare-earth commodity, an isolated apatite mineral, phosphorite, ferromanganese nodules and rock-surface ferromanganese crusts. Host phases and composition vary among deposits; no single mineral formula or universal grade defines this resource. Collection or physical concentration alone does not make the natural feed a secondary resource. No constituent criticality designation is inherited. A field-proxy study provides qualified evidence for an inferred microbial contribution to natural diagenetic iron transformations and REY redistribution; it does not demonstrate a controlled microbial extraction process, a recovered-metal yield, economic reserves or industrial deployment.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="seafloor massive sulfides"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="seafloor massive sulfides seafloor-massive-sulfides primary_resource naturally occurring polymetallic sulfide deposit material formed at or beneath the seafloor by hydrothermal mineralization. this resource includes heterogeneous sulfide-bearing ore and associated gangue, rather than a single mineral species, constituent element, finished metal commodity, or processing residue. usgs distinguishes this hydrothermal resource from polymetallic nodules and cobalt-rich ferromanganese crusts. the curated experiment used collected japanese marine hydrothermal ores, not seawater alone or pure synthetic sulfides. their compositions are sample-specific and do not define a universal resource grade. collection, grinding and washing leave the feed a primary resource. no constituent criticality designation is inherited; the laboratory mechanism does not establish seafloor extraction or industrial deployment. bioleaching">
+          <td>
+            <a href="../materials/seafloor-massive-sulfides.html"><strong>Seafloor massive sulfides</strong></a>
+            <p class="record-desc">Naturally occurring polymetallic sulfide deposit material formed at or beneath the seafloor by hydrothermal mineralization. This resource includes heterogeneous sulfide-bearing ore and associated gangue, rather than a single mineral species, constituent element, finished metal commodity, or processing residue. USGS distinguishes this hydrothermal resource from polymetallic nodules and cobalt-rich ferromanganese crusts. The curated experiment used collected Japanese marine hydrothermal ores, not seawater alone or pure synthetic sulfides. Their compositions are sample-specific and do not define a universal resource grade. Collection, grinding and washing leave the feed a primary resource. No constituent criticality designation is inherited; the laboratory mechanism does not establish seafloor extraction or industrial deployment.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="seawater"
+            data-kind="primary_resource"
+            data-mechanisms="biosorption"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="false"
+            data-search="seawater seawater primary_resource naturally occurring marine saline water considered as a dissolved-material extraction feed. it is a variable aqueous resource, distinct from elemental uranium, a mineral species, a manufactured salt product and desalination concentrate. the curated study used natural seawater in a laboratory dialysis experiment with nutrient-supported bacterial growth. its composition and response do not define all seawater. no criticality designation or external material identifier is inferred from its constituents. biosorption bacillus velezensis ncbitaxon:492670">
+          <td>
+            <a href="../materials/seawater.html"><strong>Seawater</strong></a>
+            <p class="record-desc">Naturally occurring marine saline water considered as a dissolved-material extraction feed. It is a variable aqueous resource, distinct from elemental uranium, a mineral species, a manufactured salt product and desalination concentrate. The curated study used natural seawater in a laboratory dialysis experiment with nutrient-supported bacterial growth. Its composition and response do not define all seawater. No criticality designation or external material identifier is inferred from its constituents.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">biosorption</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Bacillus velezensis</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="natural silica-sand feed"
+            data-kind="primary_resource"
+            data-mechanisms="redox_transformation"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="false"
+            data-search="natural silica-sand feed silica-sand primary_resource naturally occurring quartz-rich sand or disaggregated sandstone used as an industrial-mineral feed, represented here by two distinct english quarry samples. yahaya&#39;s silica 2 was a purple-red oakamoor/moneystone rock sample disaggregated to sand-grade powder; silica 3 was yellow, uncemented lower greensand from grandcourt near king&#39;s lynn. the latter&#39;s xrd was dominated by quartz with minor phases assigned as kaolinite and feldspar. these are heterogeneous geological feeds, not the mineral species quartz, elemental silicon, spent foundry sand or a purity-defined silica product. the two samples&#39; compositions and assay outcomes are not pooled. no constituent&#39;s criticality designation is transferred to this resource. redox_transformation shewanella putrefaciens ncbitaxon:24">
+          <td>
+            <a href="../materials/silica-sand.html"><strong>Natural silica-sand feed</strong></a>
+            <p class="record-desc">Naturally occurring quartz-rich sand or disaggregated sandstone used as an industrial-mineral feed, represented here by two distinct English quarry samples. Yahaya&#39;s Silica 2 was a purple-red Oakamoor/Moneystone rock sample disaggregated to sand-grade powder; Silica 3 was yellow, uncemented Lower Greensand from Grandcourt near King&#39;s Lynn. The latter&#39;s XRD was dominated by quartz with minor phases assigned as kaolinite and feldspar. These are heterogeneous geological feeds, not the mineral species quartz, elemental silicon, spent foundry sand or a purity-defined silica product. The two samples&#39; compositions and assay outcomes are not pooled. No constituent&#39;s criticality designation is transferred to this resource.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">redox transformation</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Shewanella putrefaciens</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="tennantite concentrate"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="false"
+            data-search="tennantite concentrate tennantite-concentrate primary_resource a mixed mineral concentrate enriched in source-labelled tennantite, represented here by the feed studied by kondo et al. (2024). this resource is distinct from a pure mineral species, the separately described tennantite-(in), and elemental copper or arsenic. the study reports mineral liberation analysis of about 60 wt% tennantite, 23% pyrite, 8.2% sphalerite, 6.3% gangue, 1.6% galena and 0.97% chalcopyrite (rounded values). bulk elemental composition is reported as s 31%, cu 23%, fe 12%, zn 10%, sb 7.8% and as 6.2%, with median particle size 41 micrometres. its geographic origin and beneficiation route are not given. generic discussion of flotation wastes does not establish that this particular feed was discarded waste. the informal tennantite phase label does not resolve a modern mineral species or establish the ideal cu12as4s13 composition of every grain. no criticality designation is transferred from a constituent element. bioleaching sulfobacillus thermosulfidooxidans ncbitaxon:28034">
+          <td>
+            <a href="../materials/tennantite-concentrate.html"><strong>Tennantite concentrate</strong></a>
+            <p class="record-desc">A mixed mineral concentrate enriched in source-labelled tennantite, represented here by the feed studied by Kondo et al. (2024). This resource is distinct from a pure mineral species, the separately described tennantite-(In), and elemental copper or arsenic. The study reports mineral liberation analysis of about 60 wt% tennantite, 23% pyrite, 8.2% sphalerite, 6.3% gangue, 1.6% galena and 0.97% chalcopyrite (rounded values). Bulk elemental composition is reported as S 31%, Cu 23%, Fe 12%, Zn 10%, Sb 7.8% and As 6.2%, with median particle size 41 micrometres. Its geographic origin and beneficiation route are not given. Generic discussion of flotation wastes does not establish that this particular feed was discarded waste. The informal tennantite phase label does not resolve a modern mineral species or establish the ideal Cu12As4S13 composition of every grain. No criticality designation is transferred from a constituent element.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Sulfobacillus thermosulfidooxidans</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="tetrahedrite concentrate"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="1"
+            data-org-count="2"
+            data-critical="false"
+            data-search="tetrahedrite concentrate tetrahedrite-concentrate primary_resource a mixed flotation concentrate enriched in source-labelled tetrahedrite, represented by the strieborná vein feed from the mária mine in the rožňava ore field, eastern slovakia, studied by kupka et al. (2025). this extracted geological feed is distinct from a modern tetrahedrite mineral species, elemental copper or antimony, and a waste stream. the source describes tetrahedrite as the principal sulfide, accompanied by siderite and quartz, minor pyrite, arsenopyrite and chalcopyrite, and trace other sulfides. table 1 reports bulk cu 25.59, sb 19.68 and ag 0.57 wt%. its approximate phase-proportion prose is inconsistent with its bulk sio2 value, so no reconciled quantitative mineral assemblage is assigned here. modern tetrahedrite suffix species are distinct identities; the paper&#39;s generic phase label and selected microprobe analyses do not establish a species identity for this heterogeneous feed. no criticality designation is transferred from its constituent elements. bioleaching acidithiobacillus ferrooxidans acidithiobacillus ferrivorans ncbitaxon:920 ncbitaxon:160808 uniprotkb:b7jbp8 sqrd_acif2 sulfide-quinone reductase afe_1792 ec:1.8.5.4 interpro:ipr036188 interpro:ipr023753 interpro:ipr051169 pfam:pf07992 uniprotkb:b7j3c9 tth_acif2 tetrathionate hydrolase tth ec:3.12.1.- interpro:ipr018391 interpro:ipr002372 interpro:ipr011047 interpro:ipr015943 pfam:pf13360 sqr sulfide-quinone reductase (afe_1792) afe_1792 uniprotkb:b7jbp8 sqrd_acif2 sulfide-quinone reductase afe_1792 ec:1.8.5.4 interpro:ipr036188 interpro:ipr023753 interpro:ipr051169 pfam:pf07992 tth tetrathionate hydrolase (tth / afe_0029) tth uniprotkb:b7j3c9 tth_acif2 tetrathionate hydrolase tth ec:3.12.1.- interpro:ipr018391 interpro:ipr002372 interpro:ipr011047 interpro:ipr015943 pfam:pf13360 biogenic sulfuric acid and fe(iii) oxidative lixiviant mixed tetrahedrite-bearing sulfide concentrate dissolved cu, sb, zn, and fe in acidic leach liquor">
+          <td>
+            <a href="../materials/tetrahedrite-concentrate.html"><strong>Tetrahedrite concentrate</strong></a>
+            <p class="record-desc">A mixed flotation concentrate enriched in source-labelled tetrahedrite, represented by the Strieborná vein feed from the Mária Mine in the Rožňava ore field, eastern Slovakia, studied by Kupka et al. (2025). This extracted geological feed is distinct from a modern tetrahedrite mineral species, elemental copper or antimony, and a waste stream. The source describes tetrahedrite as the principal sulfide, accompanied by siderite and quartz, minor pyrite, arsenopyrite and chalcopyrite, and trace other sulfides. Table 1 reports bulk Cu 25.59, Sb 19.68 and Ag 0.57 wt%. Its approximate phase-proportion prose is inconsistent with its bulk SiO2 value, so no reconciled quantitative mineral assemblage is assigned here. Modern tetrahedrite suffix species are distinct identities; the paper&#39;s generic phase label and selected microprobe analyses do not establish a species identity for this heterogeneous feed. No criticality designation is transferred from its constituent elements.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Acidithiobacillus ferrooxidans</li>
+              <li>Acidithiobacillus ferrivorans</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="xenotime concentrate"
+            data-kind="primary_resource"
+            data-mechanisms="bioleaching"
+            data-mech-count="1"
+            data-org-count="1"
+            data-critical="false"
+            data-search="xenotime concentrate xenotime-concentrate primary_resource a mixed natural mineral concentrate represented by the laboratory feed studied by he et al. (2024), containing source-assigned xenotime, monazite, zircon, almandine and ilmenite. its deposit, supplier and concentration history are not specified in the reviewed article and supplement. particle counting and density conversion estimated about 82.0 wt% xenotime and 2.7 wt% monazite; these are sample-specific phase estimates, not measured product purity. the feed is distinct from the xenotime-(y) mineral species, monazite species, elemental rare earths, a rare-earth commodity and a secondary waste resource. no criticality designation is inherited from its constituent elements. bioleaching bacillus thuringiensis ncbitaxon:1428">
+          <td>
+            <a href="../materials/xenotime-concentrate.html"><strong>Xenotime concentrate</strong></a>
+            <p class="record-desc">A mixed natural mineral concentrate represented by the laboratory feed studied by He et al. (2024), containing source-assigned xenotime, monazite, zircon, almandine and ilmenite. Its deposit, supplier and concentration history are not specified in the reviewed article and supplement. Particle counting and density conversion estimated about 82.0 wt% xenotime and 2.7 wt% monazite; these are sample-specific phase estimates, not measured product purity. The feed is distinct from the xenotime-(Y) mineral species, monazite species, elemental rare earths, a rare-earth commodity and a secondary waste resource. No criticality designation is inherited from its constituent elements.</p>
+          </td>
+          <td>
+            <span class="badge">primary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">bioleaching</span>
+            </div>
+          </td>
+          <td>
+            <ul style="margin: 0; padding-left: 1.1rem; font-size: .85rem; font-style: italic;">
+              <li>Bacillus thuringiensis</li>
+            </ul>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
 </div>
 <script src="../record-browser.js" defer></script></main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · generated by <code>scripts/render_pages.py</code></p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (602 materials · 589 mechanisms · latest curation 2026-10-18 · corpus digest <code>9dce02877f79</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·
