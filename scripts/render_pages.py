@@ -53,6 +53,7 @@ PROCESS_LABELS = {
     "biosorption": "Biosorption",
     "separation": "Separation",
     "recovery": "Recovery",
+    "recycling": "Recycling",
     "other": "Other Transformations",
 }
 
@@ -63,6 +64,7 @@ PROCESS_BLURBS = {
     "biosorption": "Passive binding and retention of metal ions by microbial cell walls and biomass.",
     "separation": "Selective partitioning by biological or abiotic processes. See each record for microbial involvement, experimental conditions and recovery limits.",
     "recovery": "Integrated microbial processing schemes yielding concentrated or isolated materials.",
+    "recycling": "Reuse and reprocessing of materials. See each record for microbial involvement, experimental conditions and recovery limits.",
     "other": "Complex community transformations, multi-stage processes, or unclassified interactions.",
 }
 
@@ -242,9 +244,10 @@ def render(out_dir: Path) -> None:
         for k in ["element", "mineral", "secondary_resource", "commodity", "primary_resource", "mineral_group"]
         if k in by_kind
     ]
+    process_order = [*PROCESS_LABELS, *sorted(by_process.keys() - PROCESS_LABELS.keys())]
     process_counts = [
         (p, len(by_process[p]))
-        for p in ["bioleaching", "biomineralization", "redox_transformation", "biosorption", "separation", "recovery", "other"]
+        for p in process_order
         if p in by_process
     ]
 

@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Recycling Mechanisms · CMMMech</title>
+<link rel="stylesheet" href="../style.css">
+<script src="../theme-toggle.js"></script>
+</head>
+<body>
+<header>
+  <a class="brand" href="../index.html">CMMMech</a>
+  <nav>
+    <a href="../index.html">Home</a>
+    <a href="../browse.html">Browse</a>
+    <a href="../map.html">Text map</a>
+    <a href="../graph.html">Mechanism graph</a>
+    <a href="../index.json">JSON</a>
+    <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">Schema</a>
+    <a href="https://github.com/CultureBotAI/CMMMech">GitHub</a>
+    <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
+  </nav>
+</header>
+<main>
+<div class="breadcrumbs">
+  <a href="../index.html">CMMMech</a> &gt;
+  <a href="../browse.html">Browse</a> &gt;
+  <span>Recycling</span>
+</div>
+
+<h1>Recycling Mechanisms</h1>
+<p class="lede">Reuse and reprocessing of materials. See each record for microbial involvement, experimental conditions and recovery limits.</p>
+
+<div class="browse-layout">
+  <aside class="facet-sidebar">
+    <h2>Filter records</h2>
+    <form id="record-filters" class="record-filters" hidden>
+      <div>
+        <label for="record-query">Search materials</label>
+        <input id="record-query" name="q" type="search" placeholder="Name, formula, organism, process…">
+      </div>
+      <div>
+        <label for="record-kind">Material Kind</label>
+        <select id="record-kind">
+          <option value="">All kinds (3)</option>
+          <option value="element">Element (66)</option>
+          <option value="mineral">Mineral (365)</option>
+          <option value="secondary_resource">Secondary resource (111)</option>
+          <option value="commodity">Commodity (36)</option>
+          <option value="primary_resource">Primary resource (31)</option>
+          <option value="mineral_group">Mineral group (7)</option>
+        </select>
+      </div>
+      <div>
+        <label for="record-mechanism">Mechanism Process</label>
+        <select id="record-mechanism">
+          <option value="">All processes</option>
+          <option value="bioleaching">Bioleaching (157)</option>
+          <option value="biomineralization">Biomineralization (94)</option>
+          <option value="redox_transformation">Redox transformation (58)</option>
+          <option value="biosorption">Biosorption (16)</option>
+          <option value="separation">Separation (29)</option>
+          <option value="recovery">Recovery (19)</option>
+          <option value="recycling">Recycling (3)</option>
+          <option value="other">Other (144)</option>
+        </select>
+      </div>
+      <div>
+        <label for="record-criticality">Criticality</label>
+        <select id="record-criticality">
+          <option value="">All criticality</option>
+          <option value="critical">Designated Critical</option>
+        </select>
+      </div>
+      <div>
+        <label for="record-sort">Sort by</label>
+        <select id="record-sort" name="sort">
+          <option value="name-asc">Material name (A–Z)</option>
+          <option value="name-desc">Material name (Z–A)</option>
+          <option value="mechs-desc">Mechanisms (high–low)</option>
+          <option value="orgs-desc">Microbial agents (high–low)</option>
+          <option value="kind-asc">Material kind (A–Z)</option>
+          <option value="crit-desc">Criticality (critical first)</option>
+        </select>
+      </div>
+      <button type="reset">Clear filters</button>
+      <p id="record-count" role="status" aria-live="polite" style="margin: .2rem 0 0; font-size: .85rem; color: var(--muted);">3 materials</p>
+      <p style="margin: .2rem 0 0; font-size: .82rem;"><a href="../index.json" download>Download index.json</a></p>
+    </form>
+  </aside>
+
+  <div class="browse-main">
+    <p id="record-empty" hidden>No materials match your query or filters. Clear filters to show all.</p>
+
+    <div class="record-table-scroll" role="region" aria-label="Materials table" tabindex="0">
+    <table id="record-table">
+      <caption>Curated Materials and Minerals</caption>
+      <thead>
+        <tr>
+          <th scope="col">Material</th>
+          <th scope="col">Kind</th>
+          <th scope="col">Criticality</th>
+          <th scope="col">Mechanisms</th>
+          <th scope="col">Microbial Agents</th>
+          <th scope="col">Identifier</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr data-name="cadmium telluride photovoltaic module scrap"
+            data-kind="secondary_resource"
+            data-mechanisms="recycling"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="cadmium telluride photovoltaic module scrap cadmium-telluride-photovoltaic-module-scrap secondary_resource processing-generated fragments of cadmium telluride (cdte) thin-film photovoltaic modules constitute a composite feed for material recycling. the accepted experiment generated milled fragments from manufacturer-sourced modules; their service history and status before laboratory preparation were not reported. this record therefore does not establish postconsumer or industrial manufacturing-scrap provenance for those samples. the feed is distinct from crystalline-silicon and cigs modules, a pure cdte compound, and the cadmium or tellurium elements. constituent criticality designations are not inherited. recycling">
+          <td>
+            <a href="../materials/cadmium-telluride-photovoltaic-module-scrap.html"><strong>Cadmium telluride photovoltaic module scrap</strong></a>
+            <p class="record-desc">Processing-generated fragments of cadmium telluride (CdTe) thin-film photovoltaic modules constitute a composite feed for material recycling. The accepted experiment generated milled fragments from manufacturer-sourced modules; their service history and status before laboratory preparation were not reported. This record therefore does not establish postconsumer or industrial manufacturing-scrap provenance for those samples. The feed is distinct from crystalline-silicon and CIGS modules, a pure CdTe compound, and the cadmium or tellurium elements. Constituent criticality designations are not inherited.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recycling</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="end-of-life cigs photovoltaic modules"
+            data-kind="secondary_resource"
+            data-mechanisms="recycling"
+            data-mech-count="1"
+            data-org-count="0"
+            data-critical="false"
+            data-search="end-of-life cigs photovoltaic modules end-of-life-cigs-photovoltaic-modules secondary_resource discarded copper-indium-gallium-selenide (cigs) thin-film photovoltaic modules and their separated coated-glass fractions are a composite secondary resource. the curated study explicitly describes end-of-life q-smart panels supplied by polyeco s.a. this scope excludes crystalline-silicon and cdte modules, sputtering targets, production-chamber scrap, and factory-supplied cells without documented end-of-life provenance. the resource is distinct from its constituent elements and from a pure cigs compound or mineral species. constituent criticality designations are not inherited. recycling">
+          <td>
+            <a href="../materials/end-of-life-cigs-photovoltaic-modules.html"><strong>End-of-life CIGS photovoltaic modules</strong></a>
+            <p class="record-desc">Discarded copper-indium-gallium-selenide (CIGS) thin-film photovoltaic modules and their separated coated-glass fractions are a composite secondary resource. The curated study explicitly describes end-of-life Q-Smart panels supplied by Polyeco S.A. This scope excludes crystalline-silicon and CdTe modules, sputtering targets, production-chamber scrap, and factory-supplied cells without documented end-of-life provenance. The resource is distinct from its constituent elements and from a pure CIGS compound or mineral species. Constituent criticality designations are not inherited.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>1</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recycling</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+        <tr data-name="spent vanadium-flow-battery electrolyte"
+            data-kind="secondary_resource"
+            data-mechanisms="recovery recycling"
+            data-mech-count="2"
+            data-org-count="0"
+            data-critical="false"
+            data-search="spent vanadium-flow-battery electrolyte spent-vanadium-flow-battery-electrolyte secondary_resource sulfuric-acid electrolyte containing dissolved vanadium in multiple oxidation states after use in all-vanadium redox flow batteries. this use-derived liquid resource is distinct from elemental vanadium, fresh electrolyte products, spent vanadium catalysts, and solid battery scrap. the two studies below concern different feeds: company-supplied failed positive/negative electrolytes and electrolyte deliberately cycled to capacity loss in a laboratory cell. their outcomes are not interchangeable. no constituent criticality designation or microbial mechanism is inherited. recovery recycling">
+          <td>
+            <a href="../materials/spent-vanadium-flow-battery-electrolyte.html"><strong>Spent vanadium-flow-battery electrolyte</strong></a>
+            <p class="record-desc">Sulfuric-acid electrolyte containing dissolved vanadium in multiple oxidation states after use in all-vanadium redox flow batteries. This use-derived liquid resource is distinct from elemental vanadium, fresh electrolyte products, spent vanadium catalysts, and solid battery scrap. The two studies below concern different feeds: company-supplied failed positive/negative electrolytes and electrolyte deliberately cycled to capacity loss in a laboratory cell. Their outcomes are not interchangeable. No constituent criticality designation or microbial mechanism is inherited.</p>
+          </td>
+          <td>
+            <span class="badge">secondary resource</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <strong>2</strong>
+            <div style="margin-top: .2rem;">
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recovery</span>
+              <span class="badge" style="font-size: .75rem; margin-right: .2rem;">recycling</span>
+            </div>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+          <td>
+            <span style="color: var(--muted); font-size: .85rem;">—</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</div>
+<script src="../record-browser.js" defer></script></main>
+<footer>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (616 materials · 592 mechanisms · latest curation 2026-10-19 · corpus digest <code>f5834ac109ba</code>)</p>
+  <p class="fam">
+    <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
+    <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·
+    <a href="https://culturebotai.github.io/CommunityMech/">CommunityMech</a> ·
+    <a href="https://culturebotai.github.io/TraitMech/">TraitMech</a> ·
+    <a href="https://culturebotai.github.io/proteintraitsmech/">ProteinTraitsMech</a> ·
+    <a href="https://culturebotai.github.io/AntibioticMech/">AntibioticMech</a> ·
+    <a href="https://culturebotai.github.io/CellStructureMech/">CellStructureMech</a> ·
+    <a href="https://culturebotai.github.io/NaturalProductMech/">NaturalProductMech</a> ·
+    <a href="https://culturebotai.github.io/DUFMech/">DUFMech</a> ·
+    <a href="https://culturebotai.github.io/PathwayMech/">PathwayMech</a> ·
+    <a href="https://culturebotai.github.io/TaxonMech/">TaxonMech</a> ·
+    <a href="https://culturebotai.github.io/HabitatMech/">HabitatMech</a> ·
+    <a href="https://culturebotai.github.io/AIMech/">AIMech</a> ·
+    <span class="self">CMMMech</span>
+  </p>
+  <p class="fam">
+    <a href="https://github.com/Knowledge-Graph-Hub/kg-microbe">kg-microbe</a> ·
+    <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
+  </p>
+</footer>
+</body>
+</html>

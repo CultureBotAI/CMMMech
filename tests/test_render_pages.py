@@ -87,6 +87,48 @@ def test_kind_and_process_pages_generated():
     assert (proc_dir / "biomineralization.html").exists()
 
 
+def test_every_schema_process_has_a_reachable_page(tmp_path, monkeypatch):
+    schema = yaml.safe_load((ROOT / "src/cmmmech/schema/cmmmech.yaml").read_text())
+    processes = schema["enums"]["ProcessType"]["permissible_values"]
+    record = {
+        "id": "cmmmech:synthetic-processes",
+        "name": "Synthetic process coverage",
+        "material_kind": "secondary_resource",
+        "description": "Synthetic renderer fixture, not scientific evidence.",
+        "sources": [{
+            "id": "fixture", "title": "Synthetic source",
+            "url": "https://example.invalid", "accessed_on": "2026-01-01",
+        }],
+        "mechanisms": [{
+            "id": process, "name": f"Synthetic {process}", "process": process,
+            "microbial": False, "description": "Synthetic mechanism.",
+            "context": "Renderer contract only.",
+            "evidence": [{"source_ref": "fixture", "supports": "support",
+                          "explanation": "Synthetic fixture."}],
+        } for process in processes],
+    }
+    monkeypatch.setattr(render_pages, "load_records", lambda: [
+        (ROOT / "data/records/synthetic-processes.yaml", record),
+    ])
+    output = tmp_path / "site"
+    render_pages.render(output)
+    index = (output / "index.html").read_text()
+    graph = (output / "graph.html").read_text()
+    graph_data = json.loads(graph.split(
+        '<script id="mech-graph-data" type="application/json">', 1,
+    )[1].split("</script>", 1)[0])
+    nodes = {node["id"]: node for node in graph_data["nodes"]}
+    for process in processes:
+        relative = f"processes/{process}.html"
+        assert (output / relative).is_file(), f"Missing process page: {relative}"
+        assert f'href="{relative}"' in index
+        assert nodes[f"proc:{process}"]["href"] == relative
+        assert record["name"] in (output / relative).read_text()
+    for edge in graph_data["edges"]:
+        assert edge["source"] in nodes
+        assert edge["target"] in nodes
+
+
 def test_protein_examples_and_causal_graphs_rendered():
     assert (
         render_pages.curie_url("NCBIfam:TIGR01234")
