@@ -60,7 +60,7 @@ the new records, independent reviews, source dossiers and remaining evidence gap
 | [Billietite](data/records/billietite.yaml) | Natural identity and laboratory surface alteration | Exsitu observations, source-label conflicts and no bulk recovery yield |
 | [Compreignacite](data/records/compreignacite.yaml) | Synthetic K-phase dissolution in flow columns | Natural/synthetic hydration, K/Na arms and modeled rates kept distinct |
 | [Zinc purification hot filter cake](data/records/zinc-purification-hot-filter-cake.yaml) | Abiotic acid/peroxide dissolution of real purification residue | Conflicting selectivity, dosing and product-recovery limits retained |
-| [Aluminium salt slag](data/records/aluminium-salt-slag.yaml) | Water leaching and mixed-salt crystallization | Chloride removal, scaled mass balance and proposed reuse distinguished |
+| [Aluminium salt slag](data/records/aluminium-salt-slag.yaml) | Salt leaching and a separate laboratory flux-reuse trial | Different feeds, calculated properties and unresolved recovery denominators |
 | [Studtite](data/records/studtite.yaml) | Natural identity and abiotic thermal/aqueous phase changes | Method-dependent transitions and surface-only models retained |
 | [Metastudtite](data/records/metastudtite.yaml) | Natural identity and synthetic transformation evidence | Mixed precursors, model-dependent products and qualified rehydration |
 | [Bainbridgeite-(YCe)](data/records/bainbridgeite-yce.yaml) | Holotype mineral identity and structure | Later rim reassignment and source/deposit discrepancies retained |

@@ -2,14 +2,16 @@ id: cmmmech:aluminium-salt-slag
 name: Aluminium salt slag
 material_kind: secondary_resource
 description: >-
-  Salt-flux-bearing mixed slag from aluminium scrap remelting, containing
-  process salts and oxide-rich solids. The accepted study sampled a rotary
-  furnace batch from a Brazilian recycler using NaCl/KCl flux. This resource
-  is defined by salt-flux remelting origin, distinct from the existing
-  post-metal-recovery secondary aluminium dross specimen, generic smelting
-  slag, bauxite residue, elemental aluminium or a single mineral. Laboratory
-  water leaching and recovered salt crystals are documented; microbial action,
-  inherited criticality and industrial deployment of this recipe are not.
+  Salt-flux-bearing mixed slag from aluminium melting or remelting, containing
+  process salts and oxide-rich solids. Separate studies examine a Brazilian
+  scrap-remelting rotary-furnace batch and a salt-rich foundry slag attributed
+  to NaCl/KCl flux. The latter contributes salts to a combined laboratory
+  flux-regeneration and alloy-remelting trial. This resource is distinct from
+  the existing post-metal-recovery secondary aluminium dross specimen, generic
+  smelting slag, bauxite residue, elemental aluminium or a single mineral.
+  Laboratory salt separation and a separate qualified reuse trial are
+  documented; microbial action, inherited criticality and industrial deployment
+  of these recipes are not.
 sources:
   - id: teixeira2022
     title: >-
@@ -19,6 +21,14 @@ sources:
       Sections 2-5, Figures 1-12 and Tables 1-5; published 9 September 2022.
     url: https://doi.org/10.3390/min12091141
     accessed_on: '2026-10-16'
+  - id: kulikov2026
+    title: >-
+      Kulikov et al. (2026). Multistage Recycling of Aluminum Casting Slags:
+      Metal Extraction and Salt Flux Regeneration. Recycling 11(3):52.
+      DOI 10.3390/recycling11030052. Complete 21-page publisher original,
+      Sections 2-4, Figures 3-13 and Tables 1-7; published 4 March 2026.
+    url: https://doi.org/10.3390/recycling11030052
+    accessed_on: '2026-10-19'
 mechanisms:
   - id: water_leaching_salt_crystallization
     name: Abiotic chloride-salt dissolution and evaporative crystallization
@@ -102,10 +112,93 @@ mechanisms:
           Figure 12 is a proposed flowsheet. Subsequent aluminium recovery,
           complete detoxification and industrial closed-loop flux reuse
           are outside the demonstrated experiment.
+  - id: salt_regeneration_and_test_remelting
+    name: Abiotic salt regeneration and laboratory alloy remelting
+    process: recycling
+    microbial: false
+    description: >-
+      Mechanical separation and water treatment of salt-rich foundry Slag
+      No.1 yielded metallic pieces and a NaCl/KCl-bearing salt fraction.
+      The salts were combined with products from a separate acid-treated,
+      oxide-rich Slag No.2 and additional fresh ingredients to formulate a
+      flux used in a laboratory remelting trial. A cast aluminium alloy was
+      obtained. This demonstrates a qualified reuse step, not wholly
+      waste-derived flux, pure aluminium production, a verified overall
+      slag-to-metal yield or repeated industrial closed-loop operation.
+    context: >-
+      Sections 2.1-2.3 and Table 1 distinguish Slag No.1, attributed to
+      NaCl/KCl flux, from oxide-rich Slag No.2, attributed to MgCl2 flux.
+      The foundry supplier and original metal-charge composition are not
+      specified. Three consecutive samples from a batch were examined for
+      compositional consistency; this does not establish independent process
+      replicates. Crushing, screening and planetary milling separate metal
+      from the oxide/salt fraction. Section 2.3.1 gives the No.1 water arm
+      as 80 +/- 5 degrees C, 200 rpm and one hour, followed by filtration,
+      evaporation at 90 degrees C and residue drying at 200 degrees C for
+      two hours; its water-to-solid loading is not specified. The No.2
+      context arm instead gives 35 g in 100 mL of 35% HCl, whereas Section 3
+      states 1 M HCl. Section 3 also specifies 250 rpm and 30 min for
+      dissolution, unlike the No.1 subsection. These accounts do not define
+      one reconciled recipe. No organism or biological treatment was used.
+    evidence:
+      - source_ref: kulikov2026
+        supports: support
+        explanation: >-
+          Table 1 assigns Slag No.1 35.90 wt.% NaCl, 16.70 wt.% KCl and
+          14.40 wt.% metallic Al. Section 2.3.1, Figure 8 and Table 3
+          support separation of a NaCl/KCl-bearing evaporated product from
+          an oxide-rich residue. The reported product entries, 64.50 wt.%
+          NaCl and 35.50 wt.% KCl, are quantitative phase-analysis estimates,
+          not recovery fractions or proof of absolute purity. Residue entries
+          still include 3.29 wt.% NaCl and 1.70 wt.% KCl. Gas evolution was
+          observed during treatment without a measured gas balance. Table 3
+          prints MgAl3O4 and SiO3 headings inconsistent with Figure 8 phase
+          labels; those headings are not adopted as verified mineral identities.
+      - source_ref: kulikov2026
+        supports: support
+        explanation: >-
+          Section 2.4/Figure 10 combines salt products from both slag arms
+          with unquantified fresh raw-material additions. The designed flux
+          contains 45.1% NaCl, 33.7% KCl and 21.2% MgCl2. Its approximately
+          650 degrees C melting point, 0.00195 Pa s viscosity and 1.592 g/cm3
+          density are calculated properties, not independent measurements of
+          the regenerated product. The oxide-rich No.2 arm is retained as
+          an input to this combined trial, not equated with the salt-rich
+          No.1 feed or the Brazilian 2022 specimen.
+      - source_ref: kulikov2026
+        supports: support
+        explanation: >-
+          Sections 2.5 and 3, Figures 11-12 and Table 6 describe briquetting
+          separated metal and remelting a 500 g charge in a laboratory
+          induction furnace. At 740 degrees C, 22 g regenerated flux with
+          5 wt.% NaF was added; the melt was held for ten minutes and stirred
+          every three minutes. The reported cast product weighed 470 g and
+          contained 95.500 wt.% Al and 3.430 wt.% Mg by optical emission
+          analysis. Product composition and the remelting charge/product
+          masses do not establish recovery of aluminium from the original
+          slag. No matched no-flux or virgin-flux control, independent run
+          count or serial-reuse experiment is reported. Figure 13 is a
+          process scheme; the conclusion identifies laboratory testing and
+          proposes continuous operation as future work.
+      - source_ref: kulikov2026
+        supports: partial
+        explanation: >-
+          Section 2.5 reports 370 g metallic Al per kg initial slag, which
+          cannot be reconciled with Table 1's metallic-Al entries of 14.40
+          and 19.33 wt.% without an unreported feed or denominator change.
+          The headline 85% recovery, 80 +/- 5% mechanical separation and
+          95% target-component separation statements lack a closed,
+          sample-resolved material balance here and are not accepted as
+          measured overall yields. Source recipe conflicts further limit
+          reproducibility. Underlying data are not publicly posted according
+          to page 18. Proposed residue uses do not demonstrate detoxification,
+          and neither industrial feed origin nor one remelting trial proves
+          industrial deployment or repeated closed-loop recovery.
 
 history_refs:
   - history/records/aluminium-salt-slag/2026-10-16T055723Z-codex-8110f0.yaml
   - history/records/aluminium-salt-slag/2026-10-16T060525Z-codex-6eef61.yaml
+  - history/records/aluminium-salt-slag/2026-10-19T073440Z-codex-4c6002.yaml
 curation_history:
   - timestamp: "2026-10-16T05:57:40.805922+00:00"
     curator: Codex GPT-6
@@ -115,3 +208,10 @@ curation_history:
     curator: Codex GPT-6
     action: EDIT
     summary: "Address issue480: acknowledge the source-reported scaled solids and elemental balance while preserving the lack of demonstrated industrial throughput, gas/water balance and flux reuse."
+  - timestamp: '2026-10-19T07:34:52Z'
+    curator: Codex GPT-6
+    action: EDIT
+    summary: >-
+      Address the salt-slag part of issue 479 with separate 2026 salt-regeneration
+      and laboratory-remelting evidence, preserving feed boundaries, fresh
+      inputs, calculated properties, protocol conflicts and unresolved yields.
