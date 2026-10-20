@@ -1,0 +1,743 @@
+# Independent scientific review of lanthanite-La historical provenance revision
+
+- Review: 20261020T072457Z-lanthanite-la-issue429-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-20T07:17:50.188867Z
+- Finished UTC: 2026-10-20T07:24:57.501634Z
+- Reviewer: codex /root/investigate_130 (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of the exact frozen owner. Historical renaming, specimen/catalog distinctions and natural-composition lineage are supported without resolving the remaining La-type/country questions. The unchanged synthetic thermal arm and prior minor correction remain correctly qualified; no new actionable finding.
+
+## Scope And Provenance
+
+Whole maintained lanthanite-La owner, all eleven source entries within the explicit primary/authority inspection scope, working diff, three linked histories, two prior review rounds and source-only handoff. No whole-volume1845 reading or exhaustive reassessment of unrelated2025 experimental arms.
+
+Selection: Assigned single frozen maintained owner; native inspect before scientific judgment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 2da10d95a72146ee0c69cb91fe303348fbadb638.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:lanthanite-la | data/records/lanthanite-la.yaml | maintained | Lanthanite-(La) |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Reviewer named gate | passed | True | cmmmech:lanthanite-la | Executed 2026-10-20T07:18:44.261478+00:00 through 2026-10-20T07:18:45.345956+00:00; exit0. Retained log /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/named.log. |
+| Reviewer history gate | passed | True | cmmmech:lanthanite-la | Executed 2026-10-20T07:18:45.346293+00:00 through 2026-10-20T07:18:47.037520+00:00; exit0. Retained log /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/history.log. |
+| Reviewer batch gate | passed | True | cmmmech:lanthanite-la | Executed 2026-10-20T07:18:47.037847+00:00 through 2026-10-20T07:20:33.824586+00:00; exit0. Retained log /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/batch.log. |
+| Reviewer records gate | passed | True | cmmmech:lanthanite-la | Executed 2026-10-20T07:20:33.825451+00:00 through 2026-10-20T07:20:41.483477+00:00; exit0. Retained log /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/records.log. |
+
+## Scientific And Domain Assessments
+
+### Mineral species and issuing-authority scope
+
+identity: supported. Targets: cmmmech:lanthanite-la.
+
+Dated IMA row and original1987 renaming support the mineral identity, ideal hydration formula and renamed status. No unique approval CURIE, elemental identity or commodity identity is fabricated.
+
+### Printed specimens and unresolved physical lineage
+
+provenance: supported. Targets: cmmmech:lanthanite-la.
+
+1845 entry,1977 B10530 and1989 B10531 are correctly distinguished. Current sample registrations corroborate two catalog entries without establishing analyzed-fragment or1845 chains.
+
+### Primary versus compiled natural chemistry
+
+evidence: supported. Targets: cmmmech:lanthanite-la.
+
+The1981 original and1989 Table1 analysis7 refer to the same published dataset; locality and catalog label are not assays. The1999 interpretation is reported with its uncertainty and historical-name limits.
+
+La/Nd ranking cross-check agrees with the reported normalized atomic values; no new ore grade, purity percentage or type designation is inferred. Historical didymium is not counted as La alone.
+
+### Recommendation versus adopted nomenclature
+
+scope: supported. Targets: cmmmech:lanthanite-la.
+
+The2015 Brazil recommendation is explicit counterevidence and correctly qualified. The September2026 authority row is retained pending an authoritative revision; issue429 remains partly open.
+
+### Separate abiotic experimental arm
+
+evidence: supported. Targets: cmmmech:lanthanite-la.
+
+Methods p948 supports the selected preparation, temperatures, masses, sampling and reactor capacity. The owner preserves unreported synthesis scale/batches and does not transfer the general40+40mL recipe.
+
+### Phase fractions, reversibility and causal limits
+
+quantity: supported. Targets: cmmmech:lanthanite-la.
+
+Figures10/12 and SI TableSI-1 support the reported phase changes and residual11wt% tengerite-type phase at120.5h. Broad complete-return and equilibrium language remains qualified.
+
+No natural La-tengerite species identifier is assigned. Comparable forward/reverse activation energies and surface-energy interpretation remain hypotheses; no independent diffraction refinement was performed.
+
+### Exact frozen inputs, history and successor lineage
+
+provenance: supported. Targets: cmmmech:lanthanite-la.
+
+Native inspection preceded assessment; owner and source inputs remain unchanged. Actual canonical EDIT describes the new historical evidence. All required reviewer structural gates passed. Prior minorF1 resolution is explicitly retained.
+
+## Findings
+
+### F1: Separate thermal sample synthesis scale remains explicitly unspecified
+
+minor / resolved / confirmed; issue key: round108-lanthanite-la-thermal-synthesis-scale.
+
+Current context still excludes the general40+40mL recipe from the separate2g thermal aliquot. Fresh primary Methods p948 and a field-value comparison with trusted base verify that the previous narrow correction remains in force.
+
+Disposition: Reassessed the same affected target and field against the freshly acquired original and unchanged corrected mechanism. Both prior occurrences are retained; no new regression was found and all required gates passed.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/lanthanite-la.yaml; Whole frozen owner, diff against2da10d95a72146ee0c69cb91fe303348fbadb638 and native inspect before assessment. | supports | Mineral identity/history additions are separate from the unchanged synthetic La thermal mechanism. Final SHA256 is c6e365d589caccc6b9990035036f5f879c3e18a1d000455e3cbfb5e289a41a65. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Retained official homepage and PDF in /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429; original definitions p1 and exact Lanthanite-(La) row p121 visually inspected. | supports | Dated authority supports ideal formula, renamed status Rn,1987s.p. and Sweden. It neither assigns a unique approval CURIE nor resolves specimen chemistry. |
+| rename | https://cnmnc.units.it/cnmnc_booklet/1987%20Nickel-Mandarino.pdf; /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/nickel1987.pdf; relevant text and original p1035, AppendixTable2 p1042 viewed. | supports | The original explicitly renames Lanthanite as Lanthanite-(La) under extended rare-earth suffix nomenclature; no country/type composition decision is supplied by this table. |
+| historical | https://archive.org/details/bub_gb_tPkTAAAAQAAJ; /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/haidinger-google-scan.pdf; printed title/PDF5 and printedp500/PDF540 visually inspected. Complete volume acquired, not wholly read. | context_only | 1845 title and Riddarhytta locality entry are verified. Historical notation is not converted into a modern resolved REE assay; no museum accession is printed in the entry. |
+| structure1977 | https://msaweb.org/AmMin/AM62/AM62_142.pdf; /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/dalnegro1977.pdf; five-page text, original pp142-143 inspected. | context_only | NMNH B10530 is printed; calculated LaCe density and disordered La/Ce scattering do not establish La dominance. No resolved individual-REE numerical assay is given. |
+| natural1981 | https://repositorio.usp.br/item/001626401; /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/svisero1981.pdf; original pp296,299,304/Table4 column1 visually read. Other pages not fully re-audited. | supports | Natural Curitiba collection and X-ray spectroscopy support the source lineage of1989 analysis7. La2O3 22.39/Nd2O3 21.18 imply La/Nd about1.092 on a molar basis, without reported analytical uncertainty or a La type designation. |
+| revision1989 | https://doi.org/10.1180/minmag.1989.053.373.17; /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/atencio1989.pdf; four-page article text, original Table1 p640 and Fig1 p641 checked. | supports | B10531 analysis15 is Ce-dominant. Table1 distinguishes new measurements15/16 from literature compilation; analysis7 explicitly cites Svisero/Mascarenhas1981. Beam damage and assumed stable REE ratios remain qualifications. |
+| nomenclature1999 | https://doi.org/10.1180/minmag.1999.063.5.13; /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/atencio1999-rruff-candidate.pdf; both original pp761-762 read and viewed. | supports | Reports approved proposal98-B discarding unapproved names and assigns Svisero material to La while discussing intra-crystal variation. The Nd-type sample attribution rests on cited personal communication; no La type is designated. |
+| recommendation2015 | https://doi.org/10.1590/23174889201500010011; /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/atencio2015-official.pdf; relevant text and original Table1 p147/p155 discussion inspected. | context_only | The author recommends Brazil in place of Sweden; the current dated IMA row still says Sweden. A recommendation is not treated as an adopted CNMNC country correction. |
+| sample30 | https://doi.org/10.58151/NHB0021RA; /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/b10530-igsn.html and DataCite metadata, plus smithsonian-b10530-query.json; complete specific sample response and metadata read. | context_only | NMNH B10530-00 is a registered individual sample labelled Lanthanite. Empty parent/family fields do not establish a physical history or the identity of the studied fragment. |
+| sample31 | https://doi.org/10.58151/NHB0021RB; /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/b10531-igsn.html and DataCite metadata, plus smithsonian-b10531-query.json; complete specific sample response and metadata read. | context_only | NMNH B10531-00 is a distinct registered sample labelled Lanthanite-(Ce). Catalog labels do not supply a fresh chemical assay; registration dates are not collection dates. |
+| thermal | https://doi.org/10.1021/acs.cgd.4c01168; Fresh coauthor-hosted published PDF /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/terribili2025.pdf, matching prior hash. Methodspp946-948; selected La results/discussion pp954-958; original pp948,955-957, Figures10-13 checked. No exhaustive review of other experimental arms. | supports | Supports the separate synthetic La dehydration/rehydration assay. Figure12 retains11wt% tengerite at120.5h, qualifying the broader completion language; fractions are fitted crystalline abundances. |
+| supplement | https://doi.org/10.1021/acs.cgd.4c01168.s001; Fresh official Figshare version1 /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/terribili2025-si.pdf; eight-page text, original TableSI-1 p8 viewed. DOI/version/file size and MD5 checked against publisher metadata. | supports | TableSI-1 preserves both crystalline phases at120.5h. Supplement hash matches prior reviewed bytes; no raw-pattern refinement or independent replication performed. |
+| initial | reviews/structured/20261016T014259Z-lanthanite-la-round108-initial/review.yaml; Whole initial observation, minor F1 and linked prior corrective history. | context_only | Initial thermal-synthesis-scale finding is retained in successor lineage, not silently dropped. |
+| prior | reviews/structured/20261016T015829Z-lanthanite-la-round108-independent/review.yaml; Whole successor observation including F1 resolved status and previous_occurrences. | context_only | The previous correction removed an unsupported link from the general mixing recipe to the separate thermal aliquot; current wording preserves it. |
+| history | history/records/lanthanite-la/2026-10-20T071608Z-codex-d7e430.yaml; Whole new canonical EDIT, linked unchanged CREATE/older EDIT, and distinct inline curation events. | supports | Actual root curation, actor/time and target agree with the diff. Earlier sidecars remain byte-identical to trusted base; scientific2025 mechanism/source fields are unchanged. |
+| handoff | research/sources/issue-429-lanthanite-provenance/20261020T071000Z.md; Independent handoff review: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/issue-429-adversarial-review.md and review-evidence.json;94 raw artifacts and101 unique bound paths checked. | supports | No actionable handoff defect found. Pre-curation owner hash was checked against the trusted base; historical specimen/type and adopted-country gaps remain open. |
+| notices | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/notices-web.json; Independent four-query returned batch; fresh2025 Crossref plus retained1989/1999/2015 metadata and investigator query receipts inspected. | context_only | No affecting formal notice or adopted country correction found within the inspected results. Empty metadata relations do not prove absence. |
+| dedup | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/dedup.txt; Reviewer267 matched lines, command/hash in manifest-check.json; investigator maintained-root searches separately checked. | context_only | Ignored-inclusive bounded search locates both prior La review occurrences and source context. No claim of machine-wide absence. |
+| gates | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/validation.json; Reviewer-executed named,history,just check and separate complete-corpus validation; exact commands/times/exits/log hashes retained. | supports | All exit0:1 named record,745 histories,327tests passed/3skipped,616records. These structural checks do not establish scientific truth. |
+
+## Limits And Additional Notes
+
+- No verified fragment-level link to historical1845 material, designated La type, modern La-dominant Swedish assay, adopted country revision or official explanation retaining Sweden. Passing the qualified owner does not resolve issue429.
+- 1977 structure factors/microfiche and NMC/ICDD primary type records were not acquired. Structural assumptions and catalog labels do not supply specimen-specific REE measurements;1999 attribution through personal communication remains such.
+- The synthetic thermal arm does not report synthesis scale/batches, independently specified water dose, replicate count or phase-fraction uncertainties. Proposed equilibrium/activation-energy/surface-energy interpretations are not established measurements.
+- Historical papers/volumes were inspected at the listed claim-specific locations; other historical topics and unrelated2025 arms were not exhaustively re-reviewed. No new laboratory experiment or raw diffraction refinement was performed.
+- Notice/conflict searches were bounded to returned results and acquired metadata. Prior1989 issue-level errata review was read as historical context, not freshly re-acquired. No exhaustive absence claim is made.
+- Initial review setup at stated UTC start included a failed inspect using an incorrect paired-JSON suffix; the actual .json path was then inspected successfully before assessment. No required check remains unavailable.
+- Owner SHA256 c6e365d589caccc6b9990035036f5f879c3e18a1d000455e3cbfb5e289a41a65. No owner, history or prior review was changed by this reviewer.
+- One resolved historical minor finding is carried forward with both prior occurrence identities; there are zero new/open findings.
+- Source-handoff independent review and detailed receipts remain outside Git at /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent. Coordinator owns final append-only/native coverage and canonical integration gates.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261020T072457Z-lanthanite-la-issue429-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of lanthanite-La historical provenance revision
+started_at: '2026-10-20T07:17:50.188867Z'
+finished_at: '2026-10-20T07:24:57.501634Z'
+reviewer:
+  identity: codex /root/investigate_130
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Parent /root curated the record/history and sibling investigate_134
+    completed discovery. This reviewer authored neither, independently read retained
+    primary originals/graphics, checked all retained hashes, reacquired the unchanged2025
+    article/SI and executed the required post-edit gates. Shared primary artifacts
+    are not independent experiments.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of the exact frozen owner. Historical renaming, specimen/catalog
+  distinctions and natural-composition lineage are supported without resolving the
+  remaining La-type/country questions. The unchanged synthetic thermal arm and prior
+  minor correction remain correctly qualified; no new actionable finding.
+source:
+  git_revision: 2da10d95a72146ee0c69cb91fe303348fbadb638
+  state: working_tree
+  inputs:
+  - path: data/records/lanthanite-la.yaml
+    sha256: c6e365d589caccc6b9990035036f5f879c3e18a1d000455e3cbfb5e289a41a65
+    role: target
+  - path: docs/record-review-profile.md
+    sha256: 01c6f39d0d097876a0446131270df58bb32fa15804c66487419c171719d3ddc0
+    role: context
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/lanthanite-la/2026-10-16T013309Z-codex-a2893c.yaml
+    sha256: 17e12b77b042a50daff947a5758a1e3746b76c61f9adbd055937143588a46a9d
+    role: context
+  - path: history/records/lanthanite-la/2026-10-16T014742Z-codex-6b8a5c.yaml
+    sha256: f6e5f3bdc713776140ea84b31f599dd88644dc65974416df8405ec7188564441
+    role: context
+  - path: history/records/lanthanite-la/2026-10-20T071608Z-codex-d7e430.yaml
+    sha256: a94e58d5c5a79f1458e449c233ad4fbadd4e8e7b2ab68bebbd797d0298408b8e
+    role: context
+  - path: research/sources/issue-429-lanthanite-provenance/20261020T071000Z.json
+    sha256: e63f3d9df81390236ad038c3b112070f299f8b699db540219e31eca6e7bd1535
+    role: context
+  - path: research/sources/issue-429-lanthanite-provenance/20261020T071000Z.md
+    sha256: 887e3457eece806abfa2604956ac33d1fef5d3bd2d03dc8ed923d5009778f1bf
+    role: context
+  - path: reviews/structured/20261016T014259Z-lanthanite-la-round108-initial/review.yaml
+    sha256: 55359923ae2525437cf4da5d3b31fe509e7ce8c48d19ba913a07cff8cdc7070b
+    role: context
+  - path: reviews/structured/20261016T015829Z-lanthanite-la-round108-independent/review.yaml
+    sha256: a360a32040e529ebd4e385d0befd8332be5a4803f46e4834e69deccd7c5a63fb
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+scope:
+  description: Whole maintained lanthanite-La owner, all eleven source entries within
+    the explicit primary/authority inspection scope, working diff, three linked histories,
+    two prior review rounds and source-only handoff. No whole-volume1845 reading or
+    exhaustive reassessment of unrelated2025 experimental arms.
+  selection: Assigned single frozen maintained owner; native inspect before scientific
+    judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:lanthanite-la
+targets:
+- target_id: cmmmech:lanthanite-la
+  path: data/records/lanthanite-la.yaml
+  label: Lanthanite-(La)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lanthanite-la.yaml
+    role: maintained
+checks:
+- check_id: named
+  name: Reviewer named gate
+  command: uv run --locked cmmmech validate --require-records data/records/lanthanite-la.yaml
+  status: passed
+  required: true
+  summary: Executed 2026-10-20T07:18:44.261478+00:00 through 2026-10-20T07:18:45.345956+00:00;
+    exit0. Retained log /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/named.log.
+  target_ids:
+  - cmmmech:lanthanite-la
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gates
+- check_id: history
+  name: Reviewer history gate
+  command: uv run --locked cmmmech validate-history --base 2da10d95a72146ee0c69cb91fe303348fbadb638
+  status: passed
+  required: true
+  summary: Executed 2026-10-20T07:18:45.346293+00:00 through 2026-10-20T07:18:47.037520+00:00;
+    exit0. Retained log /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/history.log.
+  target_ids:
+  - cmmmech:lanthanite-la
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gates
+- check_id: batch
+  name: Reviewer batch gate
+  command: just check
+  status: passed
+  required: true
+  summary: Executed 2026-10-20T07:18:47.037847+00:00 through 2026-10-20T07:20:33.824586+00:00;
+    exit0. Retained log /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/batch.log.
+  target_ids:
+  - cmmmech:lanthanite-la
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gates
+- check_id: records
+  name: Reviewer records gate
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Executed 2026-10-20T07:20:33.825451+00:00 through 2026-10-20T07:20:41.483477+00:00;
+    exit0. Retained log /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/records.log.
+  target_ids:
+  - cmmmech:lanthanite-la
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gates
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/lanthanite-la.yaml
+  locator: Whole frozen owner, diff against2da10d95a72146ee0c69cb91fe303348fbadb638
+    and native inspect before assessment.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: supports
+  summary: Mineral identity/history additions are separate from the unchanged synthetic
+    La thermal mechanism. Final SHA256 is c6e365d589caccc6b9990035036f5f879c3e18a1d000455e3cbfb5e289a41a65.
+  snapshot_sha256: c6e365d589caccc6b9990035036f5f879c3e18a1d000455e3cbfb5e289a41a65
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Retained official homepage and PDF in /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429;
+    original definitions p1 and exact Lanthanite-(La) row p121 visually inspected.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: supports
+  summary: Dated authority supports ideal formula, renamed status Rn,1987s.p. and
+    Sweden. It neither assigns a unique approval CURIE nor resolves specimen chemistry.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: rename
+  kind: primary_source
+  reference: https://cnmnc.units.it/cnmnc_booklet/1987%20Nickel-Mandarino.pdf
+  locator: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/nickel1987.pdf;
+    relevant text and original p1035, AppendixTable2 p1042 viewed.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: supports
+  summary: The original explicitly renames Lanthanite as Lanthanite-(La) under extended
+    rare-earth suffix nomenclature; no country/type composition decision is supplied
+    by this table.
+  snapshot_sha256: dfcdcbf8913ccc05662c841ab44311702f776dd9093fc997f5b595ffed88736f
+- evidence_id: historical
+  kind: primary_source
+  reference: https://archive.org/details/bub_gb_tPkTAAAAQAAJ
+  locator: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/haidinger-google-scan.pdf;
+    printed title/PDF5 and printedp500/PDF540 visually inspected. Complete volume
+    acquired, not wholly read.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: context_only
+  summary: 1845 title and Riddarhytta locality entry are verified. Historical notation
+    is not converted into a modern resolved REE assay; no museum accession is printed
+    in the entry.
+  snapshot_sha256: 039a7eff45efd5df81c8c493a13758b06195d67947cfd3cbbe2fda3ecaeda47d
+- evidence_id: structure1977
+  kind: primary_source
+  reference: https://msaweb.org/AmMin/AM62/AM62_142.pdf
+  locator: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/dalnegro1977.pdf;
+    five-page text, original pp142-143 inspected.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: context_only
+  summary: NMNH B10530 is printed; calculated LaCe density and disordered La/Ce scattering
+    do not establish La dominance. No resolved individual-REE numerical assay is given.
+  snapshot_sha256: b4b6b46e1385c937898b2f7f8ae3ea0a6d28d374b2f1d0a74b7df8895cc381ef
+- evidence_id: natural1981
+  kind: primary_source
+  reference: https://repositorio.usp.br/item/001626401
+  locator: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/svisero1981.pdf;
+    original pp296,299,304/Table4 column1 visually read. Other pages not fully re-audited.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: supports
+  summary: Natural Curitiba collection and X-ray spectroscopy support the source lineage
+    of1989 analysis7. La2O3 22.39/Nd2O3 21.18 imply La/Nd about1.092 on a molar basis,
+    without reported analytical uncertainty or a La type designation.
+  snapshot_sha256: 1cb9a2e97916148fcb9880e6c21128aa02203a247a6ee21a22e91f2d5e2f1e3d
+- evidence_id: revision1989
+  kind: primary_source
+  reference: https://doi.org/10.1180/minmag.1989.053.373.17
+  locator: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/atencio1989.pdf;
+    four-page article text, original Table1 p640 and Fig1 p641 checked.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: supports
+  summary: B10531 analysis15 is Ce-dominant. Table1 distinguishes new measurements15/16
+    from literature compilation; analysis7 explicitly cites Svisero/Mascarenhas1981.
+    Beam damage and assumed stable REE ratios remain qualifications.
+  snapshot_sha256: 2df34dae07defdba86fc9d1f5f57a39beacd05d13aa3e126d9d127cfbab5101d
+- evidence_id: nomenclature1999
+  kind: primary_source
+  reference: https://doi.org/10.1180/minmag.1999.063.5.13
+  locator: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/atencio1999-rruff-candidate.pdf;
+    both original pp761-762 read and viewed.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: supports
+  summary: Reports approved proposal98-B discarding unapproved names and assigns Svisero
+    material to La while discussing intra-crystal variation. The Nd-type sample attribution
+    rests on cited personal communication; no La type is designated.
+  snapshot_sha256: fa1193b35e9b9fe223c51b8979ced28252488fd3505638e535073c8529ac3090
+- evidence_id: recommendation2015
+  kind: primary_source
+  reference: https://doi.org/10.1590/23174889201500010011
+  locator: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/atencio2015-official.pdf;
+    relevant text and original Table1 p147/p155 discussion inspected.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: context_only
+  summary: The author recommends Brazil in place of Sweden; the current dated IMA
+    row still says Sweden. A recommendation is not treated as an adopted CNMNC country
+    correction.
+  snapshot_sha256: a92d88a60a21e77f529d62a46246954720137320c31769c1621502040bcbb981
+- evidence_id: sample30
+  kind: database
+  reference: https://doi.org/10.58151/NHB0021RA
+  locator: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/b10530-igsn.html
+    and DataCite metadata, plus smithsonian-b10530-query.json; complete specific sample
+    response and metadata read.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: context_only
+  summary: NMNH B10530-00 is a registered individual sample labelled Lanthanite. Empty
+    parent/family fields do not establish a physical history or the identity of the
+    studied fragment.
+  snapshot_sha256: e088bf6f92fdfb5750897360ea759b1a7a60050559f93721d7d9c3ac4eea8cdc
+- evidence_id: sample31
+  kind: database
+  reference: https://doi.org/10.58151/NHB0021RB
+  locator: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/b10531-igsn.html
+    and DataCite metadata, plus smithsonian-b10531-query.json; complete specific sample
+    response and metadata read.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: context_only
+  summary: NMNH B10531-00 is a distinct registered sample labelled Lanthanite-(Ce).
+    Catalog labels do not supply a fresh chemical assay; registration dates are not
+    collection dates.
+  snapshot_sha256: b3e071c328b4f183f18c5ffffc3d580f19a4fe93bf1ed8a25618beff895fdcea
+- evidence_id: thermal
+  kind: primary_source
+  reference: https://doi.org/10.1021/acs.cgd.4c01168
+  locator: Fresh coauthor-hosted published PDF /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/terribili2025.pdf,
+    matching prior hash. Methodspp946-948; selected La results/discussion pp954-958;
+    original pp948,955-957, Figures10-13 checked. No exhaustive review of other experimental
+    arms.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: supports
+  summary: Supports the separate synthetic La dehydration/rehydration assay. Figure12
+    retains11wt% tengerite at120.5h, qualifying the broader completion language; fractions
+    are fitted crystalline abundances.
+  snapshot_sha256: 0313cca68f53a4b2d6bfb965940c035dfff20e87f7c29dd5dd9c1afaf58c3d83
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://doi.org/10.1021/acs.cgd.4c01168.s001
+  locator: Fresh official Figshare version1 /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/terribili2025-si.pdf;
+    eight-page text, original TableSI-1 p8 viewed. DOI/version/file size and MD5 checked
+    against publisher metadata.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: supports
+  summary: TableSI-1 preserves both crystalline phases at120.5h. Supplement hash matches
+    prior reviewed bytes; no raw-pattern refinement or independent replication performed.
+  snapshot_sha256: 10144ad4fc658a5863fac6c6aa4e889bf5cad5ebad17b09bc375ee193deed0c1
+- evidence_id: initial
+  kind: prior_review
+  reference: reviews/structured/20261016T014259Z-lanthanite-la-round108-initial/review.yaml
+  locator: Whole initial observation, minor F1 and linked prior corrective history.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: context_only
+  summary: Initial thermal-synthesis-scale finding is retained in successor lineage,
+    not silently dropped.
+  snapshot_sha256: 55359923ae2525437cf4da5d3b31fe509e7ce8c48d19ba913a07cff8cdc7070b
+- evidence_id: prior
+  kind: prior_review
+  reference: reviews/structured/20261016T015829Z-lanthanite-la-round108-independent/review.yaml
+  locator: Whole successor observation including F1 resolved status and previous_occurrences.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: context_only
+  summary: The previous correction removed an unsupported link from the general mixing
+    recipe to the separate thermal aliquot; current wording preserves it.
+  snapshot_sha256: a360a32040e529ebd4e385d0befd8332be5a4803f46e4834e69deccd7c5a63fb
+- evidence_id: history
+  kind: record_content
+  reference: history/records/lanthanite-la/2026-10-20T071608Z-codex-d7e430.yaml
+  locator: Whole new canonical EDIT, linked unchanged CREATE/older EDIT, and distinct
+    inline curation events.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: supports
+  summary: Actual root curation, actor/time and target agree with the diff. Earlier
+    sidecars remain byte-identical to trusted base; scientific2025 mechanism/source
+    fields are unchanged.
+  snapshot_sha256: a94e58d5c5a79f1458e449c233ad4fbadd4e8e7b2ab68bebbd797d0298408b8e
+- evidence_id: handoff
+  kind: record_content
+  reference: research/sources/issue-429-lanthanite-provenance/20261020T071000Z.md
+  locator: 'Independent handoff review: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/issue-429-adversarial-review.md
+    and review-evidence.json;94 raw artifacts and101 unique bound paths checked.'
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: supports
+  summary: No actionable handoff defect found. Pre-curation owner hash was checked
+    against the trusted base; historical specimen/type and adopted-country gaps remain
+    open.
+  snapshot_sha256: ad6c6c0ae733e8833f602148de4c27796ae50186972ee089350c1b5ba2fd1b26
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/notices-web.json
+  locator: Independent four-query returned batch; fresh2025 Crossref plus retained1989/1999/2015
+    metadata and investigator query receipts inspected.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: context_only
+  summary: No affecting formal notice or adopted country correction found within the
+    inspected results. Empty metadata relations do not prove absence.
+  snapshot_sha256: d5d9c6f0136fc6f6207d46c6fc1b32b16c2a108aa1dd6d3160ede60ce14946ee
+  search_scope: Exact2025DOI correction/erratum/retraction; lanthanite B10530 B10531;
+    lanthanite-(La) Sweden neotype CNMNC; exact1999DOI correction/erratum. Returned
+    batches only. Previous1989 issue-errata review read as historical context, not
+    freshly re-acquired.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/dedup.txt
+  locator: Reviewer267 matched lines, command/hash in manifest-check.json; investigator
+    maintained-root searches separately checked.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: context_only
+  summary: Ignored-inclusive bounded search locates both prior La review occurrences
+    and source context. No claim of machine-wide absence.
+  snapshot_sha256: 22b246d87ca6aa77577a953c4289d9df35386fb24948168805dfeb420f9c96a1
+  search_scope: rg --no-ignore --hidden -L -n over reviews,research/sources,history,data/records
+    for exact finding key,ownerID and2025DOI; ignored/hidden included, symlinks followed.
+    Exact historical raw root absent; unrelated home/temp roots excluded.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent/validation.json
+  locator: Reviewer-executed named,history,just check and separate complete-corpus
+    validation; exact commands/times/exits/log hashes retained.
+  accessed_at: '2026-10-20T07:24:57.501634Z'
+  support: supports
+  summary: All exit0:1 named record,745 histories,327tests passed/3skipped,616records.
+    These structural checks do not establish scientific truth.
+  snapshot_sha256: 70a0c7b27eb50017d031c03c5c56e36eb8fea10874c56cd0c34b30bfc3379f6d
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species and issuing-authority scope
+  outcome: supported
+  summary: Dated IMA row and original1987 renaming support the mineral identity, ideal
+    hydration formula and renamed status. No unique approval CURIE, elemental identity
+    or commodity identity is fabricated.
+  target_ids:
+  - cmmmech:lanthanite-la
+  evidence_ids:
+  - owner
+  - ima
+  - rename
+  dimensions:
+  - name: material_form
+    value: Natural mineral species; separate synthetic La analogue in mechanism
+    definition: Identity is not a locality-wide specimen assignment
+    evidence_ids:
+    - owner
+    - ima
+    - rename
+  - name: criticality
+    value: Unrecorded; no jurisdiction/list/edition claim
+    definition: Absence is not a not-listed assertion
+    evidence_ids:
+    - owner
+    - ima
+    - rename
+- assessment_id: historical-lineage
+  area: provenance
+  topic: Printed specimens and unresolved physical lineage
+  outcome: supported
+  summary: 1845 entry,1977 B10530 and1989 B10531 are correctly distinguished. Current
+    sample registrations corroborate two catalog entries without establishing analyzed-fragment
+    or1845 chains.
+  target_ids:
+  - cmmmech:lanthanite-la
+  evidence_ids:
+  - owner
+  - historical
+  - structure1977
+  - revision1989
+  - sample30
+  - sample31
+- assessment_id: natural-composition
+  area: evidence
+  topic: Primary versus compiled natural chemistry
+  outcome: supported
+  summary: The1981 original and1989 Table1 analysis7 refer to the same published dataset;
+    locality and catalog label are not assays. The1999 interpretation is reported
+    with its uncertainty and historical-name limits.
+  target_ids:
+  - cmmmech:lanthanite-la
+  evidence_ids:
+  - owner
+  - natural1981
+  - revision1989
+  - nomenclature1999
+  details: La/Nd ranking cross-check agrees with the reported normalized atomic values;
+    no new ore grade, purity percentage or type designation is inferred. Historical
+    didymium is not counted as La alone.
+- assessment_id: country
+  area: scope
+  topic: Recommendation versus adopted nomenclature
+  outcome: supported
+  summary: The2015 Brazil recommendation is explicit counterevidence and correctly
+    qualified. The September2026 authority row is retained pending an authoritative
+    revision; issue429 remains partly open.
+  target_ids:
+  - cmmmech:lanthanite-la
+  evidence_ids:
+  - owner
+  - recommendation2015
+  - ima
+  - rename
+  - handoff
+- assessment_id: thermal-conditions
+  area: evidence
+  topic: Separate abiotic experimental arm
+  outcome: supported
+  summary: Methods p948 supports the selected preparation, temperatures, masses, sampling
+    and reactor capacity. The owner preserves unreported synthesis scale/batches and
+    does not transfer the general40+40mL recipe.
+  target_ids:
+  - cmmmech:lanthanite-la
+  evidence_ids:
+  - owner
+  - thermal
+  - prior
+  dimensions:
+  - name: organism_and_biomass
+    value: Not applicable; abiotic synthetic-carbonate experiment
+    definition: No microorganisms or microbial biomass used
+    evidence_ids:
+    - owner
+    - thermal
+    - prior
+  - name: substrate_and_pretreatment
+    value: Synthesized La lanthanite at21°C;2g heated80°C,0.2g samples;0.3g dehydrated
+      product rehydrated
+    definition: Natural mixed-REE samples are not this feed
+    evidence_ids:
+    - owner
+    - thermal
+    - prior
+  - name: controls
+    value: Initial phase and successive time-point comparisons; independent thermal
+      repeats unspecified
+    definition: Analytical time series is not proof of a replicated trial
+    evidence_ids:
+    - owner
+    - thermal
+    - prior
+  - name: water_and_vessels
+    value: Lidded50mL crucible;15mL-capacity glass reactor, static Milli-Q at21°C
+    definition: Capacity is not a separately stated water dose
+    evidence_ids:
+    - owner
+    - thermal
+    - prior
+- assessment_id: thermal-outcome
+  area: quantity
+  topic: Phase fractions, reversibility and causal limits
+  outcome: supported
+  summary: Figures10/12 and SI TableSI-1 support the reported phase changes and residual11wt%
+    tengerite-type phase at120.5h. Broad complete-return and equilibrium language
+    remains qualified.
+  target_ids:
+  - cmmmech:lanthanite-la
+  evidence_ids:
+  - owner
+  - thermal
+  - supplement
+  dimensions:
+  - name: outcome_basis
+    value: 89wt% lanthanite plus11wt% tengerite at120.5h
+    definition: Fitted crystalline phase fractions; not recovered La yield or elemental
+      mass balance
+    evidence_ids:
+    - owner
+    - thermal
+    - supplement
+  - name: deployment
+    value: Laboratory synthetic phase assay
+    definition: No natural-ore, pilot or industrial evidence
+    evidence_ids:
+    - owner
+    - thermal
+    - supplement
+  details: No natural La-tengerite species identifier is assigned. Comparable forward/reverse
+    activation energies and surface-energy interpretation remain hypotheses; no independent
+    diffraction refinement was performed.
+- assessment_id: provenance-checks
+  area: provenance
+  topic: Exact frozen inputs, history and successor lineage
+  outcome: supported
+  summary: Native inspection preceded assessment; owner and source inputs remain unchanged.
+    Actual canonical EDIT describes the new historical evidence. All required reviewer
+    structural gates passed. Prior minorF1 resolution is explicitly retained.
+  target_ids:
+  - cmmmech:lanthanite-la
+  evidence_ids:
+  - owner
+  - history
+  - initial
+  - prior
+  - handoff
+  - gates
+  - dedup
+  - notices
+findings:
+- finding_id: F1
+  issue_key: round108-lanthanite-la-thermal-synthesis-scale
+  category: evidence
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Separate thermal sample synthesis scale remains explicitly unspecified
+  description: Current context still excludes the general40+40mL recipe from the separate2g
+    thermal aliquot. Fresh primary Methods p948 and a field-value comparison with
+    trusted base verify that the previous narrow correction remains in force.
+  target_ids:
+  - cmmmech:lanthanite-la
+  field_paths:
+  - mechanisms[0].context
+  evidence_ids:
+  - owner
+  - thermal
+  - prior
+  - history
+  - handoff
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lanthanite-la.yaml
+    role: maintained record
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261016T014259Z-lanthanite-la-round108-initial
+    finding_id: F1
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261016T015829Z-lanthanite-la-round108-independent
+    finding_id: F1
+  disposition_reason: Reassessed the same affected target and field against the freshly
+    acquired original and unchanged corrected mechanism. Both prior occurrences are
+    retained; no new regression was found and all required gates passed.
+actions: []
+limitations:
+- No verified fragment-level link to historical1845 material, designated La type,
+  modern La-dominant Swedish assay, adopted country revision or official explanation
+  retaining Sweden. Passing the qualified owner does not resolve issue429.
+- 1977 structure factors/microfiche and NMC/ICDD primary type records were not acquired.
+  Structural assumptions and catalog labels do not supply specimen-specific REE measurements;1999
+  attribution through personal communication remains such.
+- The synthetic thermal arm does not report synthesis scale/batches, independently
+  specified water dose, replicate count or phase-fraction uncertainties. Proposed
+  equilibrium/activation-energy/surface-energy interpretations are not established
+  measurements.
+- Historical papers/volumes were inspected at the listed claim-specific locations;
+  other historical topics and unrelated2025 arms were not exhaustively re-reviewed.
+  No new laboratory experiment or raw diffraction refinement was performed.
+- Notice/conflict searches were bounded to returned results and acquired metadata.
+  Prior1989 issue-level errata review was read as historical context, not freshly
+  re-acquired. No exhaustive absence claim is made.
+notes:
+- Initial review setup at stated UTC start included a failed inspect using an incorrect
+  paired-JSON suffix; the actual .json path was then inspected successfully before
+  assessment. No required check remains unavailable.
+- Owner SHA256 c6e365d589caccc6b9990035036f5f879c3e18a1d000455e3cbfb5e289a41a65. No
+  owner, history or prior review was changed by this reviewer.
+- One resolved historical minor finding is carried forward with both prior occurrence
+  identities; there are zero new/open findings.
+- Source-handoff independent review and detailed receipts remain outside Git at /private/tmp/cmmmech-backlog-20261019-fmj36s/review-429-independent.
+  Coordinator owns final append-only/native coverage and canonical integration gates.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261016T014259Z-lanthanite-la-round108-initial
+  relationship: Preserves originalF1 lineage, already resolved in the next observation.
+- repository: CultureBotAI/CMMMech
+  review_id: 20261016T015829Z-lanthanite-la-round108-independent
+  relationship: Successor whole-owner scientific review after historical-provenance
+    additions; maintains resolvedF1 disposition.
+```
