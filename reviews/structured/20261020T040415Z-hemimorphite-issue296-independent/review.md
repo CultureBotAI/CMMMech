@@ -1,0 +1,697 @@
+# Independent scientific review of hemimorphite supplement revision
+
+- Review: 20261020T040415Z-hemimorphite-issue296-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-20T03:56:56.907567Z
+- Finished UTC: 2026-10-20T04:04:15.194221Z
+- Reviewer: codex /root/investigate_130 (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of the exact revised hemimorphite owner. New official supplement evidence supports the bounded low-order mixed precursor, local EXAFS model and bulk LOI entries. Existing chemical extraction and mineral/taxon identity remain correctly scoped; no actionable record findings were identified.
+
+## Scope And Provenance
+
+Whole frozen maintained hemimorphite record, its working diff, linked CREATE/EDIT and prior review; all six record sources reassessed within stated primary/authority access bounds. Separate willemite owner and full resolution of issue296 are outside this review.
+
+Selection: Assigned single maintained target captured by native inspect before judgment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 2da10d95a72146ee0c69cb91fe303348fbadb638.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:hemimorphite | data/records/hemimorphite.yaml | maintained | Hemimorphite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named strict record validation | passed | True | cmmmech:hemimorphite | Reviewer execution:1 record,0 failed. |
+| Independent history validation against trusted base | passed | True | cmmmech:hemimorphite | Reviewer execution:745 history records,0 errors. |
+| Coordinator final post-edit batch gate | passed | True | cmmmech:hemimorphite | Coordinator execution verified from terminal report and retained log;327 passed,3 skipped;616 records/745 histories with zero failures. |
+| Coordinator separate complete-record validation | passed | True | cmmmech:hemimorphite | Coordinator execution verified from terminal report and retained log;616 records,0 failed. |
+
+## Scientific And Domain Assessments
+
+### Distinct mineral identity and taxon scope
+
+identity: supported. Targets: cmmmech:hemimorphite.
+
+The owner is orthorhombic hemimorphite, not willemite, mixed ore, dissolved Zn or the field low-order mixture. IMA A/1962 s.p. and the Handbook formula agree; the sole organism CURIE resolves at species rank.
+
+### Natural-feed leaching conditions and controls
+
+evidence: supported. Targets: cmmmech:hemimorphite.
+
+Zhao §2 and Fig.5 support ground/wet-sieved Yunnan specimen,5g/1000mL,45–61µm,95°C,350rpm,2L condenser flask and filtered5mL samples measured by AAS. No biological mechanism is assigned.
+
+### Feed-Zn and extraction denominators
+
+quantity: supported. Targets: cmmmech:hemimorphite.
+
+Table1 Zn components sum to42.24wt%;41.90/42.24×100 rounds to99.20% Zn occupancy, not mineral purity. Fig.5/§3.3 report92.95% versus47.28% after150min at5.0 versus3.5mol/L NH4Cl. Eq.1 uses dissolved Zn divided by total feed Zn.
+
+Constant-volume treatment despite serial withdrawal is retained. No isolated recovery or phase-specific conversion is inferred. Methods list200rpm while §3.2/Fig.4 omit it; the accepted350rpm arm is consistent. Fig.12 surface deposits and polished sections do not independently establish a continuous reaction layer, and empirical Elovich/Arrhenius fits do not prove unique rate control.
+
+### Field association, biomass and experimental lineage
+
+evidence: supported. Targets: cmmmech:hemimorphite.
+
+Main methods specify natural1995–2010 collections and crystalline mineral references. Microscopy and spectroscopy support a cyanobacterium-associated low-order precursor; Fig.1a–b reuse prior2012 microscopy. Neither a matched sterile assay nor source-specific strain authentication is supplied.
+
+### New supplement establishes mixed low-order context
+
+identity: supported. Targets: cmmmech:hemimorphite.
+
+Fig.S2 WM9 shows diffuse intensity and quartz peaks marked by circles, unlike the crystalline San Giovanni reference. S2/S4 assign carbonate signals to hydrozincite with a detrital interpretation. The record properly declines phase-pure crystalline identity and quantitative phase fraction.
+
+The source does not provide raw diffraction refinement or a sterile comparator. The paper/supplement are one publication; these observations are not independent replication of a biological mechanism.
+
+### EXAFS model comparison and organic-matter limits
+
+quantity: supported. Targets: cmmmech:hemimorphite.
+
+S1 defines R² as sum of squared data-model residuals divided by sum of squared data. Fig.S3 displays0.01 with a Si shell and0.02 without for WM9/13/20/23. TableS1 contains14 LOI values,9.50–15.12%w/w. All new numeric claims match the original graphics and retain their measurement/model meanings.
+
+S5 text mistakenly refers to Fig.S2 for the fits; the actual fit figure is correctly captioned S3 and correctly cited by the record. Main Table1 fixes first-shell CN=4 and Table2 compares literature Si shifts; local coordination and modeled organic associations do not establish organism necessity. Raw spectra were not independently refitted.
+
+### Criticality, deployment and remaining evidence gap
+
+scope: supported. Targets: cmmmech:hemimorphite.
+
+No criticality designation is asserted or inherited from Zn. Laboratory aqueous extraction and natural field association remain separate from isolated recovery and industrial deployment. The separate Medas2017 aging paper is not acquired or adopted; supplement acquisition supports these bounded edits without resolving all of #296.
+
+### Frozen input, independent review, history and checks
+
+provenance: supported. Targets: cmmmech:hemimorphite.
+
+Initial native inspection precedes scientific assessment; final owner hash remains identical. CREATE is unchanged against base and new EDIT/inline events accurately describe the revision. Both reviewer checks and both required coordinator batch gates passed. Prior review lineage and bounded notice/access limits remain explicit.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/hemimorphite.yaml; Whole target, current working diff and native inspect capture at 2026-10-20T03:56:56.907567Z; final unchanged hash independently checked. | supports | The final record separates mineral identity, chemical extraction and contextual low-order field precursor evidence. |
+| edit | history/records/hemimorphite/2026-10-20T035541Z-codex-b2cec7.yaml; Whole canonical EDIT; inline event at 2026-10-20T03:55:59.006698Z is a distinct owner event. | supports | Recorded codex/GPT-6 actor, target, supplement addition and retained aging limitation agree with the actual diff; the reviewer made no record or history edits. |
+| create | history/records/hemimorphite/2026-10-15T023041Z-codex-2c0bbc.yaml; Whole canonical CREATE, linked by current owner; byte comparison with trusted base confirms unchanged historical session. | supports | Historical CREATE is preserved; the new EDIT does not rewrite earlier authorship or observations. |
+| prior | reviews/structured/20261015T024932Z-hemimorphite-round86-independent/review.yaml; Whole prior hemimorphite record review; findings and actions arrays are empty. | context_only | Prior pass_with_limitations covered older owner bytes and lacked the supplement. This new scientific observation links that review, reassesses the whole current target, and does not close issue #296. |
+| chemical | https://doi.org/10.3390/met7070237; Fresh official MDPI PDF: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-296-independent/zhao2017.pdf. Complete ten-page text and original Figures 1–13/Table 1 inspected; material/Table 1 p.2, Methods/Eq.1 p.3, Fig.3/§3.3 p.4, Fig.5 p.5, Fig.12 p.8. | supports | The stated aqueous Zn percentages, feed-Zn denominator, natural feed and conditions match the original. No blank, replicate count or error bars are supplied; serial withdrawal and surface-layer/model limits remain explicit. |
+| precursor | https://doi.org/10.2138/am-2018-6128; Retained original /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/medas2018.pdf; nine-page text, Figures 1–6 and Tables 1–2 inspected. Methods printed 712; Fig.1 713; Figs.2–4 714; Figs.5–6 715; tables 716; discussion 716–717; deposit endnote 719. | context_only | Field samples and reference spectroscopy support local hemimorphite-like order, with reused Fig.1a–b imagery and fixed first-shell coordination disclosed. Main-paper causal and organic-matter interpretations are qualified in the record. |
+| supplement | https://msaweb.org/MSA/AmMin/TOC/2018/May2018_data/AM-18-56128.zip; Official deposit member /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/medas2018-deposit/AM-18-56128/6128_supp.pdf. Eight-page text; original R² formula/Fig.S1 p.3, Fig.S2 p.4, S4–S5 p.5, Fig.S3 p.6 and Table S1 p.7 independently viewed. | partial | WM9 diffuse diffraction plus caption-assigned quartz, detrital hydrozincite interpretation, four local-structure model comparisons, and 14 bulk LOI results support the newly qualified entries. The deposit belongs to the same publication; no independent replication or raw-data refit is asserted. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Fresh official PDF /private/tmp/cmmmech-backlog-20261019-fmj36s/review-296-independent/ima2026-09.pdf; September 2026 definitions PDF1 read, exact Hemimorphite row PDF92 visually inspected. | context_only | Formula Zn4(Si2O7)(OH)2·H2O, approved status A and special-procedure 1962 s.p. are supported. This authority establishes mineral nomenclature, not criticality. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/hemimorphite.pdf; Fresh official /private/tmp/cmmmech-backlog-20261019-fmj36s/review-296-independent/handbook.pdf; complete one-page version 1.2 text and original page visually inspected. | context_only | Orthorhombic hydrated zinc-silicate identity and occurrence agree; natural secondary-mineral occurrence does not make this a processed secondary-resource owner. |
+| taxonomy | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=268127&amp;retmode=xml; Current and former ID queries retained as /private/tmp/cmmmech-backlog-20261019-fmj36s/review-296-independent/taxonomy.xml and taxonomy-former.xml; latter explicitly returns TaxId1886765 and AkaTaxIds268127. | context_only | NCBI returns Stenomitos frigidus at species rank with Leptolyngbya frigida synonym. This is a name mapping; no field-strain authentication or causal necessity follows. |
+| acquisition | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-296-independent/review-evidence.json; Retained original-byte manifest, acquisition receipts, ZIP-member comparison, numerical checks and visual-inspection scope. | supports | Medas main, fresh Zhao, Handbook and dated IMA hashes match prior originals. Official ZIP hash 1ff60e41efd3df5120e2eded35a3421693a714baa35113f82b80a097bbd694b3 contains the exact inspected SI bytes. Table S1 count/range and displayed R² direction were checked. |
+| dedup | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-296-independent/dedup-lineage.txt; 393 matched lines retained with command/exit receipt in dedup-lineage.json. | context_only | Bounded ignored-inclusive search locates the prior target review and material/source occurrences. The prior target review has no findings requiring successor occurrence keys; related mixed-ore/sauconite owners are not duplicates of this distinct mineral owner. |
+| notices | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-296-independent/notices-web.json; Four exact DOI/title web queries retained; fresh Crossref JSON for both DOIs has empty relation and no update-to/updated-by fields. Current MDPI notes request in zhao-versions-web.json returned429. | context_only | No separate formal corrective/retraction notice or directly decisive conflicting result surfaced within the returned bounded results. This is not proof of absence. The old review recorded version updates; fresh Zhao bytes match those reviewed bytes, but current version-note history was not reverified. |
+| named | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-296-independent/validation.json; Actual reviewer executions 2026-10-20T03:57:32.497117Z–03:57:34.921887Z; named.log and history.log hashes recorded. | supports | Named strict validation: one record, zero failed. History validation against trusted 2da10d95a72146ee0c69cb91fe303348fbadb638:745 sessions, zero errors; both exit0. |
+| batch-check | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-296-postedit-check.log; Coordinator /root session29091 supplied actual terminal exit0 after final owner edit/render; reviewer independently read and hashed complete log. | supports | just check passed:327 tests passed,3 skipped;616 records/0 failed;745 history records/0 errors. This is a coordinator-executed gate, not a reviewer rerun. |
+| batch-records | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-296-records-check.log; Coordinator /root session68081 supplied actual terminal exit0 after final edit; reviewer independently read and hashed complete log. | supports | Separate complete-record validation passed:616 records,0 failed. Target hash remained unchanged from native inspect. |
+
+## Limits And Additional Notes
+
+- Natural field association lacks a matched sterile precipitation control and authenticated source-specific strain. Species mapping cannot establish organism necessity, phase-pure crystalline production or a mineral yield.
+- EXAFS comparisons are source-reported fitted local structures, with first-shell coordination constrained; raw spectra/diffraction were not independently refitted. LOI includes bulk ignition loss and is not a direct organic-matter assay or phase fraction.
+- The separate Medas2017 aging original remains unacquired in this task; conversion, solubility and preservation measurements are not accepted. The unchanged willemite composition arm of issue296 was not scientifically reviewed here.
+- Zhao uses a constant-volume extraction equation despite serial sampling and supplies no reagent-free blank series, replicate count or error bars. Model and rate-control interpretations remain qualified.
+- Bounded notice/conflict searches do not prove absence. Fresh Zhao PDF matches the previously reviewed bytes; current MDPI version-notes retrieval returned429, so the old recorded version-update history was not freshly verified.
+- Primary figures and reported measurements were assessed without laboratory replication; structural checks do not establish scientific truth.
+- Actual recorded start is successful native-inspect capture time. An initial default uv cache access failed before inspection; a writable UV_CACHE_DIR rerun succeeded and no required check remains unavailable.
+- Reviewed owner SHA25661857104a2121bbc5d8a1dd26f8e44d17479eb333e9a0e5169d12b5d2983f0bd remains frozen. No record, history or prior review was edited by this reviewer; new observation does not close issue296.
+- Prior review has no findings requiring previous-occurrence disposition. The supplement access limitation is updated in this new observation; prior immutable review remains intact.
+- Acquisition and detailed numerical/inspection receipts are retained outside Git in /private/tmp/cmmmech-backlog-20261019-fmj36s/review-296-independent. Curator-shared Medas originals were hash-verified and independently assessed; fresh Zhao/IMA/Handbook originals match earlier saved hashes.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261020T040415Z-hemimorphite-issue296-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of hemimorphite supplement revision
+started_at: '2026-10-20T03:56:56.907567Z'
+finished_at: '2026-10-20T04:04:15.194221Z'
+reviewer:
+  identity: codex /root/investigate_130
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Parent /root authored the record/history revision; sibling investigate_134
+    acquired the new supplement. This reviewer authored neither, inspected retained
+    primary originals and original graphics independently, freshly retrieved unchanged
+    primary/authority sources, and executed named/history checks. Coordinator batch
+    gates are disclosed separately. No laboratory replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of the exact revised hemimorphite owner. New official
+  supplement evidence supports the bounded low-order mixed precursor, local EXAFS
+  model and bulk LOI entries. Existing chemical extraction and mineral/taxon identity
+  remain correctly scoped; no actionable record findings were identified.
+source:
+  git_revision: 2da10d95a72146ee0c69cb91fe303348fbadb638
+  state: working_tree
+  inputs:
+  - path: data/records/hemimorphite.yaml
+    sha256: 61857104a2121bbc5d8a1dd26f8e44d17479eb333e9a0e5169d12b5d2983f0bd
+    role: target
+  - path: history/records/hemimorphite/2026-10-20T035541Z-codex-b2cec7.yaml
+    sha256: ed8c58c8bba18ff42f4acdaf5c0718f4320d0f097ad3c8ef3a977fb6fca93a0b
+    role: context
+  - path: reviews/structured/20261015T024932Z-hemimorphite-round86-independent/review.yaml
+    sha256: c87bc4e550ff3691dc3a73d6daa2e194f3bf3b07964a84c4777d7b65bde938fb
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+scope:
+  description: Whole frozen maintained hemimorphite record, its working diff, linked
+    CREATE/EDIT and prior review; all six record sources reassessed within stated
+    primary/authority access bounds. Separate willemite owner and full resolution
+    of issue296 are outside this review.
+  selection: Assigned single maintained target captured by native inspect before judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:hemimorphite
+targets:
+- target_id: cmmmech:hemimorphite
+  path: data/records/hemimorphite.yaml
+  label: Hemimorphite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/hemimorphite.yaml
+    role: maintained
+checks:
+- check_id: named
+  name: Independent named strict record validation
+  command: uv run --locked cmmmech validate --require-records data/records/hemimorphite.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Reviewer execution:1 record,0 failed.
+  target_ids:
+  - cmmmech:hemimorphite
+  evidence_ids:
+  - named
+- check_id: history
+  name: Independent history validation against trusted base
+  command: uv run --locked cmmmech validate-history --base 2da10d95a72146ee0c69cb91fe303348fbadb638
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Reviewer execution:745 history records,0 errors.
+  target_ids:
+  - cmmmech:hemimorphite
+  evidence_ids:
+  - named
+- check_id: batch-check
+  name: Coordinator final post-edit batch gate
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinator execution verified from terminal report and retained log;327
+    passed,3 skipped;616 records/745 histories with zero failures.
+  target_ids:
+  - cmmmech:hemimorphite
+  evidence_ids:
+  - batch-check
+- check_id: batch-records
+  name: Coordinator separate complete-record validation
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinator execution verified from terminal report and retained log;616
+    records,0 failed.
+  target_ids:
+  - cmmmech:hemimorphite
+  evidence_ids:
+  - batch-records
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/hemimorphite.yaml
+  locator: Whole target, current working diff and native inspect capture at 2026-10-20T03:56:56.907567Z;
+    final unchanged hash independently checked.
+  accessed_at: '2026-10-20T04:04:15.194221Z'
+  support: supports
+  summary: The final record separates mineral identity, chemical extraction and contextual
+    low-order field precursor evidence.
+  snapshot_sha256: 61857104a2121bbc5d8a1dd26f8e44d17479eb333e9a0e5169d12b5d2983f0bd
+- evidence_id: edit
+  kind: record_content
+  reference: history/records/hemimorphite/2026-10-20T035541Z-codex-b2cec7.yaml
+  locator: Whole canonical EDIT; inline event at 2026-10-20T03:55:59.006698Z is a
+    distinct owner event.
+  accessed_at: '2026-10-20T04:04:15.194221Z'
+  support: supports
+  summary: Recorded codex/GPT-6 actor, target, supplement addition and retained aging
+    limitation agree with the actual diff; the reviewer made no record or history
+    edits.
+  snapshot_sha256: ed8c58c8bba18ff42f4acdaf5c0718f4320d0f097ad3c8ef3a977fb6fca93a0b
+- evidence_id: create
+  kind: record_content
+  reference: history/records/hemimorphite/2026-10-15T023041Z-codex-2c0bbc.yaml
+  locator: Whole canonical CREATE, linked by current owner; byte comparison with trusted
+    base confirms unchanged historical session.
+  accessed_at: '2026-10-20T04:04:15.194221Z'
+  support: supports
+  summary: Historical CREATE is preserved; the new EDIT does not rewrite earlier authorship
+    or observations.
+  snapshot_sha256: 8892b8d7a068199676a87e9fca266a530ca4a1bd96a5f6b0f9c55977ccccc57a
+- evidence_id: prior
+  kind: prior_review
+  reference: reviews/structured/20261015T024932Z-hemimorphite-round86-independent/review.yaml
+  locator: Whole prior hemimorphite record review; findings and actions arrays are
+    empty.
+  accessed_at: '2026-10-20T04:04:15.194221Z'
+  support: context_only
+  summary: 'Prior pass_with_limitations covered older owner bytes and lacked the supplement.
+    This new scientific observation links that review, reassesses the whole current
+    target, and does not close issue #296.'
+  snapshot_sha256: c87bc4e550ff3691dc3a73d6daa2e194f3bf3b07964a84c4777d7b65bde938fb
+- evidence_id: chemical
+  kind: primary_source
+  reference: https://doi.org/10.3390/met7070237
+  locator: 'Fresh official MDPI PDF: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-296-independent/zhao2017.pdf.
+    Complete ten-page text and original Figures 1–13/Table 1 inspected; material/Table
+    1 p.2, Methods/Eq.1 p.3, Fig.3/§3.3 p.4, Fig.5 p.5, Fig.12 p.8.'
+  accessed_at: '2026-10-20T04:04:15.194221Z'
+  support: supports
+  summary: The stated aqueous Zn percentages, feed-Zn denominator, natural feed and
+    conditions match the original. No blank, replicate count or error bars are supplied;
+    serial withdrawal and surface-layer/model limits remain explicit.
+  snapshot_sha256: e22004bd73f7e75d1f8547ca388dfdc43787a70b2914d8d568d3995754658b6c
+- evidence_id: precursor
+  kind: primary_source
+  reference: https://doi.org/10.2138/am-2018-6128
+  locator: Retained original /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/medas2018.pdf;
+    nine-page text, Figures 1–6 and Tables 1–2 inspected. Methods printed 712; Fig.1
+    713; Figs.2–4 714; Figs.5–6 715; tables 716; discussion 716–717; deposit endnote
+    719.
+  accessed_at: '2026-10-20T04:04:15.194221Z'
+  support: context_only
+  summary: Field samples and reference spectroscopy support local hemimorphite-like
+    order, with reused Fig.1a–b imagery and fixed first-shell coordination disclosed.
+    Main-paper causal and organic-matter interpretations are qualified in the record.
+  snapshot_sha256: 32071969c68b1925ab922fc7517f55e8bc611cb46d637b31b44685576fc99df7
+- evidence_id: supplement
+  kind: primary_source
+  reference: https://msaweb.org/MSA/AmMin/TOC/2018/May2018_data/AM-18-56128.zip
+  locator: Official deposit member /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/medas2018-deposit/AM-18-56128/6128_supp.pdf.
+    Eight-page text; original R² formula/Fig.S1 p.3, Fig.S2 p.4, S4–S5 p.5, Fig.S3
+    p.6 and Table S1 p.7 independently viewed.
+  accessed_at: '2026-10-20T04:04:15.194221Z'
+  support: partial
+  summary: WM9 diffuse diffraction plus caption-assigned quartz, detrital hydrozincite
+    interpretation, four local-structure model comparisons, and 14 bulk LOI results
+    support the newly qualified entries. The deposit belongs to the same publication;
+    no independent replication or raw-data refit is asserted.
+  snapshot_sha256: 9852137c5f34dd7011af7ff771de06a8a2f01fc0ee07c62011da667a07a811af
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Fresh official PDF /private/tmp/cmmmech-backlog-20261019-fmj36s/review-296-independent/ima2026-09.pdf;
+    September 2026 definitions PDF1 read, exact Hemimorphite row PDF92 visually inspected.
+  accessed_at: '2026-10-20T04:04:15.194221Z'
+  support: context_only
+  summary: Formula Zn4(Si2O7)(OH)2·H2O, approved status A and special-procedure 1962
+    s.p. are supported. This authority establishes mineral nomenclature, not criticality.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/hemimorphite.pdf
+  locator: Fresh official /private/tmp/cmmmech-backlog-20261019-fmj36s/review-296-independent/handbook.pdf;
+    complete one-page version 1.2 text and original page visually inspected.
+  accessed_at: '2026-10-20T04:04:15.194221Z'
+  support: context_only
+  summary: Orthorhombic hydrated zinc-silicate identity and occurrence agree; natural
+    secondary-mineral occurrence does not make this a processed secondary-resource
+    owner.
+  snapshot_sha256: 35a916908d9b12f2eefea513e3eb65c28000559d998ca1417026677ed7e98395
+- evidence_id: taxonomy
+  kind: database
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=268127&retmode=xml
+  locator: Current and former ID queries retained as /private/tmp/cmmmech-backlog-20261019-fmj36s/review-296-independent/taxonomy.xml
+    and taxonomy-former.xml; latter explicitly returns TaxId1886765 and AkaTaxIds268127.
+  accessed_at: '2026-10-20T04:04:15.194221Z'
+  support: context_only
+  summary: NCBI returns Stenomitos frigidus at species rank with Leptolyngbya frigida
+    synonym. This is a name mapping; no field-strain authentication or causal necessity
+    follows.
+  snapshot_sha256: 9f78f2c9acce1bbb6d831e7617308d76aaf4ab5cca6060422290190c930eab6c
+- evidence_id: acquisition
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-296-independent/review-evidence.json
+  locator: Retained original-byte manifest, acquisition receipts, ZIP-member comparison,
+    numerical checks and visual-inspection scope.
+  accessed_at: '2026-10-20T04:04:15.194221Z'
+  support: supports
+  summary: Medas main, fresh Zhao, Handbook and dated IMA hashes match prior originals.
+    Official ZIP hash 1ff60e41efd3df5120e2eded35a3421693a714baa35113f82b80a097bbd694b3
+    contains the exact inspected SI bytes. Table S1 count/range and displayed R² direction
+    were checked.
+  snapshot_sha256: 5393bb1c7f5881a69736e981491659355f9d1650dce2a0ad7fc3840e4ebcb3f7
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-296-independent/dedup-lineage.txt
+  locator: 393 matched lines retained with command/exit receipt in dedup-lineage.json.
+  accessed_at: '2026-10-20T04:04:15.194221Z'
+  support: context_only
+  summary: Bounded ignored-inclusive search locates the prior target review and material/source
+    occurrences. The prior target review has no findings requiring successor occurrence
+    keys; related mixed-ore/sauconite owners are not duplicates of this distinct mineral
+    owner.
+  snapshot_sha256: cb7793784d13a7409c0549159d495167a2adcb0fca9bc3a0ba737a287e01fad3
+  search_scope: rg --no-ignore --hidden -L -n for hemimorphite or exact DOI 10.3390/met7070237
+    or 10.2138/am-2018-6128 over current worktree data/records, research, reviews
+    and history; hidden/ignored files included and symlinks followed. Historical raw
+    roots /private/tmp/cmm-round86-minerals-research and /private/tmp/cmm-round80-carbonates-research
+    checked absent, so fresh legitimate retrieval was used. Not a filesystem-wide
+    absence claim.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-296-independent/notices-web.json
+  locator: Four exact DOI/title web queries retained; fresh Crossref JSON for both
+    DOIs has empty relation and no update-to/updated-by fields. Current MDPI notes
+    request in zhao-versions-web.json returned429.
+  accessed_at: '2026-10-20T04:04:15.194221Z'
+  support: context_only
+  summary: No separate formal corrective/retraction notice or directly decisive conflicting
+    result surfaced within the returned bounded results. This is not proof of absence.
+    The old review recorded version updates; fresh Zhao bytes match those reviewed
+    bytes, but current version-note history was not reverified.
+  snapshot_sha256: 194005dc3cde20ab8081905bb0116ed681cf4b58eeb4198647651a1ffa49f088
+  search_scope: 'Queries: "10.3390/met7070237" correction OR erratum OR retraction;
+    "10.2138/am-2018-6128" correction OR erratum OR retraction; exact Zhao title with
+    versions; exact Medas title with criticism OR correction. Checked returned publisher/primary
+    results and fresh Crossref metadata. MDPI /notes fetch returned429; no repeated
+    attempts or exhaustive all-citing-paper/conflict search.'
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-296-independent/validation.json
+  locator: Actual reviewer executions 2026-10-20T03:57:32.497117Z–03:57:34.921887Z;
+    named.log and history.log hashes recorded.
+  accessed_at: '2026-10-20T04:04:15.194221Z'
+  support: supports
+  summary: 'Named strict validation: one record, zero failed. History validation against
+    trusted 2da10d95a72146ee0c69cb91fe303348fbadb638:745 sessions, zero errors; both
+    exit0.'
+  snapshot_sha256: 76016ba36587772824e66b615bb2ca6a9a145836f06fc8b5f3c7c8f3af746e94
+- evidence_id: batch-check
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-296-postedit-check.log
+  locator: Coordinator /root session29091 supplied actual terminal exit0 after final
+    owner edit/render; reviewer independently read and hashed complete log.
+  accessed_at: '2026-10-20T04:04:15.194221Z'
+  support: supports
+  summary: just check passed:327 tests passed,3 skipped;616 records/0 failed;745 history
+    records/0 errors. This is a coordinator-executed gate, not a reviewer rerun.
+  snapshot_sha256: 05200f4402b5d38fe09ecca00b14f2475fc862d081394e1065ba20f45cbde05b
+- evidence_id: batch-records
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-296-records-check.log
+  locator: Coordinator /root session68081 supplied actual terminal exit0 after final
+    edit; reviewer independently read and hashed complete log.
+  accessed_at: '2026-10-20T04:04:15.194221Z'
+  support: supports
+  summary: Separate complete-record validation passed:616 records,0 failed. Target
+    hash remained unchanged from native inspect.
+  snapshot_sha256: d47e19b123c18f1d48610ace095471a408192c504a56fb4fb473f668afceda40
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Distinct mineral identity and taxon scope
+  outcome: supported
+  summary: The owner is orthorhombic hemimorphite, not willemite, mixed ore, dissolved
+    Zn or the field low-order mixture. IMA A/1962 s.p. and the Handbook formula agree;
+    the sole organism CURIE resolves at species rank.
+  target_ids:
+  - cmmmech:hemimorphite
+  evidence_ids:
+  - owner
+  - ima
+  - handbook
+  - taxonomy
+  - precursor
+  dimensions:
+  - name: material_form
+    value: Crystalline hydrated zinc silicate Zn4Si2O7(OH)2·H2O; field precursor separately
+      qualified
+    definition: Canonical mineral identity versus experimental form
+    evidence_ids:
+    - ima
+    - handbook
+    - precursor
+  - name: organism_resolution
+    value: Stenomitos frigidus NCBITaxon:1886765; historical Leptolyngbya frigida;
+      source-specific strain accession absent
+    definition: Species nomenclature mapping only
+    evidence_ids:
+    - taxonomy
+    - precursor
+- assessment_id: chemical
+  area: evidence
+  topic: Natural-feed leaching conditions and controls
+  outcome: supported
+  summary: Zhao §2 and Fig.5 support ground/wet-sieved Yunnan specimen,5g/1000mL,45–61µm,95°C,350rpm,2L
+    condenser flask and filtered5mL samples measured by AAS. No biological mechanism
+    is assigned.
+  target_ids:
+  - cmmmech:hemimorphite
+  evidence_ids:
+  - owner
+  - chemical
+  dimensions:
+  - name: biomass_state
+    value: Not applicable to chemical leaching
+    definition: No organism or microbial biomass in this arm
+    evidence_ids:
+    - chemical
+  - name: controls
+    value: NH4Cl concentration and condition comparisons; no reported reagent-free
+      blank, replicate count or error bars
+    definition: Scope of available comparisons
+    evidence_ids:
+    - chemical
+- assessment_id: chemical-quantity
+  area: quantity
+  topic: Feed-Zn and extraction denominators
+  outcome: supported
+  summary: Table1 Zn components sum to42.24wt%;41.90/42.24×100 rounds to99.20% Zn
+    occupancy, not mineral purity. Fig.5/§3.3 report92.95% versus47.28% after150min
+    at5.0 versus3.5mol/L NH4Cl. Eq.1 uses dissolved Zn divided by total feed Zn.
+  target_ids:
+  - cmmmech:hemimorphite
+  evidence_ids:
+  - owner
+  - chemical
+  - acquisition
+  details: Constant-volume treatment despite serial withdrawal is retained. No isolated
+    recovery or phase-specific conversion is inferred. Methods list200rpm while §3.2/Fig.4
+    omit it; the accepted350rpm arm is consistent. Fig.12 surface deposits and polished
+    sections do not independently establish a continuous reaction layer, and empirical
+    Elovich/Arrhenius fits do not prove unique rate control.
+- assessment_id: field
+  area: evidence
+  topic: Field association, biomass and experimental lineage
+  outcome: supported
+  summary: Main methods specify natural1995–2010 collections and crystalline mineral
+    references. Microscopy and spectroscopy support a cyanobacterium-associated low-order
+    precursor; Fig.1a–b reuse prior2012 microscopy. Neither a matched sterile assay
+    nor source-specific strain authentication is supplied.
+  target_ids:
+  - cmmmech:hemimorphite
+  evidence_ids:
+  - owner
+  - precursor
+  - supplement
+  - taxonomy
+  dimensions:
+  - name: biomass_state
+    value: Natural cyanobacterial filaments/biofilm with mineral and polymeric associations;
+      no controlled pure-culture growth assay
+    definition: Field biological state and preparation scope
+    evidence_ids:
+    - precursor
+    - supplement
+  - name: controls
+    value: Crystalline hemimorphite/hydrozincite structural references; no matched
+      sterile precipitation comparator
+    definition: Reference spectra do not establish biological necessity
+    evidence_ids:
+    - precursor
+    - supplement
+  - name: pretreatment
+    value: Prepared microscopy, spectroscopy and diffraction specimens from natural
+      white mud
+    definition: Analytical preparation is distinct from an inoculation or precipitation
+      recipe
+    evidence_ids:
+    - precursor
+    - supplement
+- assessment_id: diffraction
+  area: identity
+  topic: New supplement establishes mixed low-order context
+  outcome: supported
+  summary: Fig.S2 WM9 shows diffuse intensity and quartz peaks marked by circles,
+    unlike the crystalline San Giovanni reference. S2/S4 assign carbonate signals
+    to hydrozincite with a detrital interpretation. The record properly declines phase-pure
+    crystalline identity and quantitative phase fraction.
+  target_ids:
+  - cmmmech:hemimorphite
+  evidence_ids:
+  - owner
+  - supplement
+  - precursor
+  details: The source does not provide raw diffraction refinement or a sterile comparator.
+    The paper/supplement are one publication; these observations are not independent
+    replication of a biological mechanism.
+- assessment_id: fits
+  area: quantity
+  topic: EXAFS model comparison and organic-matter limits
+  outcome: supported
+  summary: S1 defines R² as sum of squared data-model residuals divided by sum of
+    squared data. Fig.S3 displays0.01 with a Si shell and0.02 without for WM9/13/20/23.
+    TableS1 contains14 LOI values,9.50–15.12%w/w. All new numeric claims match the
+    original graphics and retain their measurement/model meanings.
+  target_ids:
+  - cmmmech:hemimorphite
+  evidence_ids:
+  - owner
+  - supplement
+  - precursor
+  - acquisition
+  dimensions:
+  - name: fit_metric
+    value: R² normalized squared-residual misfit, dimensionless; lower is better
+    definition: Not the usual coefficient of determination, crystalline abundance
+      or yield
+    evidence_ids:
+    - supplement
+  - name: bulk_measurement
+    value: LOI9.50–15.12%w/w across14 white-mud samples
+    definition: Bulk ignition mass loss; no direct organic-matter assay or product
+      denominator
+    evidence_ids:
+    - supplement
+  details: S5 text mistakenly refers to Fig.S2 for the fits; the actual fit figure
+    is correctly captioned S3 and correctly cited by the record. Main Table1 fixes
+    first-shell CN=4 and Table2 compares literature Si shifts; local coordination
+    and modeled organic associations do not establish organism necessity. Raw spectra
+    were not independently refitted.
+- assessment_id: scope
+  area: scope
+  topic: Criticality, deployment and remaining evidence gap
+  outcome: supported
+  summary: 'No criticality designation is asserted or inherited from Zn. Laboratory
+    aqueous extraction and natural field association remain separate from isolated
+    recovery and industrial deployment. The separate Medas2017 aging paper is not
+    acquired or adopted; supplement acquisition supports these bounded edits without
+    resolving all of #296.'
+  target_ids:
+  - cmmmech:hemimorphite
+  evidence_ids:
+  - owner
+  - chemical
+  - precursor
+  - supplement
+  dimensions:
+  - name: criticality
+    value: Unrecorded; no jurisdiction/list/edition classification asserted
+    definition: IMA is an identity authority, not a criticality list
+    evidence_ids:
+    - owner
+    - ima
+  - name: deployment
+    value: Laboratory chemical dissolution and natural field observation only
+    definition: No demonstrated industrial or isolated-product recovery
+    evidence_ids:
+    - chemical
+    - precursor
+- assessment_id: provenance
+  area: provenance
+  topic: Frozen input, independent review, history and checks
+  outcome: supported
+  summary: Initial native inspection precedes scientific assessment; final owner hash
+    remains identical. CREATE is unchanged against base and new EDIT/inline events
+    accurately describe the revision. Both reviewer checks and both required coordinator
+    batch gates passed. Prior review lineage and bounded notice/access limits remain
+    explicit.
+  target_ids:
+  - cmmmech:hemimorphite
+  evidence_ids:
+  - owner
+  - edit
+  - create
+  - prior
+  - named
+  - batch-check
+  - batch-records
+  - dedup
+  - notices
+  - acquisition
+findings: []
+actions: []
+limitations:
+- Natural field association lacks a matched sterile precipitation control and authenticated
+  source-specific strain. Species mapping cannot establish organism necessity, phase-pure
+  crystalline production or a mineral yield.
+- EXAFS comparisons are source-reported fitted local structures, with first-shell
+  coordination constrained; raw spectra/diffraction were not independently refitted.
+  LOI includes bulk ignition loss and is not a direct organic-matter assay or phase
+  fraction.
+- The separate Medas2017 aging original remains unacquired in this task; conversion,
+  solubility and preservation measurements are not accepted. The unchanged willemite
+  composition arm of issue296 was not scientifically reviewed here.
+- Zhao uses a constant-volume extraction equation despite serial sampling and supplies
+  no reagent-free blank series, replicate count or error bars. Model and rate-control
+  interpretations remain qualified.
+- Bounded notice/conflict searches do not prove absence. Fresh Zhao PDF matches the
+  previously reviewed bytes; current MDPI version-notes retrieval returned429, so
+  the old recorded version-update history was not freshly verified.
+- Primary figures and reported measurements were assessed without laboratory replication;
+  structural checks do not establish scientific truth.
+notes:
+- Actual recorded start is successful native-inspect capture time. An initial default
+  uv cache access failed before inspection; a writable UV_CACHE_DIR rerun succeeded
+  and no required check remains unavailable.
+- Reviewed owner SHA25661857104a2121bbc5d8a1dd26f8e44d17479eb333e9a0e5169d12b5d2983f0bd
+  remains frozen. No record, history or prior review was edited by this reviewer;
+  new observation does not close issue296.
+- Prior review has no findings requiring previous-occurrence disposition. The supplement
+  access limitation is updated in this new observation; prior immutable review remains
+  intact.
+- Acquisition and detailed numerical/inspection receipts are retained outside Git
+  in /private/tmp/cmmmech-backlog-20261019-fmj36s/review-296-independent. Curator-shared
+  Medas originals were hash-verified and independently assessed; fresh Zhao/IMA/Handbook
+  originals match earlier saved hashes.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261015T024932Z-hemimorphite-round86-independent
+  relationship: Successor scientific observation of revised owner bytes after supplement
+    acquisition; prior review has no findings and remains immutable.
+```

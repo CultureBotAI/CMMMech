@@ -1,0 +1,502 @@
+{
+  "investigation": "issue-296-zinc-silicate-evidence",
+  "timestamp_utc": "2026-10-20T03:52:48Z",
+  "researcher": "codex / GPT-6 source-discovery subagent",
+  "state": "pre-curation source assessment",
+  "repository": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-296",
+    "branch": "codex/issue-296-zinc-silicate-evidence",
+    "base": "2da10d95a72146ee0c69cb91fe303348fbadb638",
+    "owner_sha256": {
+      "hemimorphite": "fabf318cead701c449049dedef9715848a57a95e0f8033cdc694f0fcf63e465b",
+      "willemite": "ebea085928aa811ca788d5ae8dc8151d4cb9dc64cd40e9d16cbb3de33e0e81e7"
+    },
+    "hash_scope": "Inspected pre-curation base records. Parent began separate owner/history curation and generated-page checks while this source handoff was being finalized; those later mutations are outside this subagent report."
+  },
+  "reconciliation": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/reconcile-296-20261020T034518Z",
+    "issue": 296,
+    "body_read": true,
+    "comments": 0,
+    "parent_inventory_open_issues": 185,
+    "parent_inventory_open_prs": 0
+  },
+  "prior_report": "research/sources/round86-zinc-minerals/20261015T023418Z-source-investigation.{md,json}",
+  "instructions": [
+    "CLAUDE.md",
+    "README.md",
+    "docs/records.md",
+    "src/cmmmech/schema/cmmmech.yaml",
+    ".claude/skills/cmmmech-discover-sources/SKILL.md and references/source-guide.md,report-template.md"
+  ],
+  "dedup": {
+    "checked_at": "2026-10-20T03:48:11.352744+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "--json",
+      "-i",
+      "-g",
+      "*.{md,yaml,yml,json,txt,html,xml,csv,tsv}",
+      "10\\.2138/am-2018-6128|AM-18-56128|10\\.1016/j\\.oregeorev\\.2017\\.07\\.015|10\\.3390/met12122031|^id: cmmmech:(hemimorphite|willemite)$",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-296/data/records",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-296/research",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-296/reviews",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-296/history",
+      "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/reviews",
+      "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/history",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296"
+    ],
+    "exit_code": 0,
+    "matching_lines": 104,
+    "matching_files": 20,
+    "raw_output": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/dedup-raw.jsonl",
+    "sha256": "162a9bb7653c0747f9483fb703ed1e8ee8fe859f52e69ce36a68ae9b937949d8",
+    "stderr": "",
+    "old_raw_root": {
+      "path": "/private/tmp/cmm-round86-minerals-research",
+      "exists": false
+    },
+    "scope": "Maintained scientific text in both checkouts, current task raw-text directory and cited round86 raw root if present; hidden/ignored included and symlinks followed. Other home/temp trees, .git and unextracted binary content excluded."
+  },
+  "web_search": {
+    "provider": "web.run search_query",
+    "date_utc": "2026-10-20",
+    "queries": [
+      "\"Medas\" \"AM-18-56128\"",
+      "\"10.1016/j.oregeorev.2017.07.015\"",
+      "\"10.3390/met12122031\"",
+      "\"American Mineralogist\" \"May 2018\" \"Medas\"",
+      "\"AM-18-56128\" \"Supplemental\"",
+      "\"Stability of biological and inorganic hemimorphite\" filetype:pdf -site:researchgate.net -site:mindat.org",
+      "\"Medas\" \"2017.07.015\" \"unica\"",
+      "\"10.3390/met12122031\" correction OR erratum OR assay",
+      "\"10.1016/j.oregeorev.2017.07.015\" repository OR manuscript OR pdf",
+      "\"AM-18-56128\" site:msaweb.org",
+      "\"2017.07.015\" \"pdf\" -site:researchgate.net -site:mindat.org -site:meet.eurekamag.com -site:iris.uniroma3.it -site:iris.unica.it",
+      "site:msaweb.org \"2018\" \"May\" \"Medas\"",
+      "\"May2018_data\" \"56128\"",
+      "\"AM-18-56128\" -site:rruff.net",
+      "\"am-2018-6128\" correction OR erratum OR data",
+      "\"Stability of biological and inorganic hemimorphite\" \"pdf\"",
+      "\"10.3390/met12122031\" \"Correction\"",
+      "\"Sulfuric Acid Leaching of Zinc Silicate\" \"data\" \"Xu\""
+    ],
+    "scope": "First returned result set per query, no pagination; no date/domain filters except literal query operators. Bounded, not exhaustive.",
+    "audit_limit": "Exact query ledger transcribed from executed tool calls. Raw response captures retained only for queries10–18 (calls4–6), not queries1–9.",
+    "response_receipts": [
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/web-search4-response.json",
+        "bytes": 21379,
+        "sha256": "562119ae559689a32cc7142e4bf341a2cd74b054b2072f6858f828ca99c69a81"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/web-search5-response.json",
+        "bytes": 21197,
+        "sha256": "ced38fb15533c2f8a517a80abb29888ad7d52b2acb3d6629569fb06eba20d986"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/web-search6-response.json",
+        "bytes": 30277,
+        "sha256": "888b72e30d09c2a510effe87f69ca34e4af0559204a90b6a4e888904716e199c"
+      }
+    ],
+    "rejected_leads": [
+      "Unrelated DOIs matching 2017.07.015 suffix",
+      "Citing-paper bibliography hits and reviews are not complete Medas2017",
+      "Other Xu zinc-leaching studies are separate experiments, not correction or raw-data evidence for met12122031"
+    ]
+  },
+  "acquisitions": [
+    {
+      "name": "msa-may2018.html",
+      "url": "https://www.minsocam.org/MSA/AmMin/TOC/2018/May2018_data/May2018_data.html",
+      "started_at": "2026-10-20T03:48:14.513252+00:00",
+      "error": "URLError(ConnectionRefusedError(61, 'Connection refused'))",
+      "finished_at": "2026-10-20T03:48:14.941332+00:00"
+    },
+    {
+      "name": "medas2018.pdf",
+      "url": "https://www.rruff.net/odr/view/downloadfile/83154",
+      "started_at": "2026-10-20T03:48:14.513708+00:00",
+      "status": 200,
+      "final_url": "https://www.rruff.net/odr/view/downloadfile/83154",
+      "content_type": "application/pdf",
+      "bytes": 1849804,
+      "sha256": "32071969c68b1925ab922fc7517f55e8bc611cb46d637b31b44685576fc99df7",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/medas2018.pdf",
+      "pdf_magic": true,
+      "finished_at": "2026-10-20T03:48:16.165317+00:00"
+    },
+    {
+      "name": "xu2022.pdf",
+      "url": "https://mdpi-res.com/d_attachment/metals/metals-12-02031/article_deploy/metals-12-02031.pdf?version=1669452820",
+      "started_at": "2026-10-20T03:48:14.513845+00:00",
+      "status": 200,
+      "final_url": "https://mdpi-res.com/d_attachment/metals/metals-12-02031/article_deploy/metals-12-02031.pdf?version=1669452820",
+      "content_type": "application/pdf",
+      "bytes": 4922231,
+      "sha256": "61515b8beb61fee33715541ef127460deb959a9981d1bf89710f250577d1aa4a",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/xu2022.pdf",
+      "pdf_magic": true,
+      "finished_at": "2026-10-20T03:48:15.642146+00:00"
+    },
+    {
+      "name": "medas2017-openalex.json",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.oregeorev.2017.07.015",
+      "started_at": "2026-10-20T03:48:14.513987+00:00",
+      "status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.oregeorev.2017.07.015",
+      "content_type": "application/json",
+      "bytes": 16720,
+      "sha256": "ac0f838f1e1319422aeb58c66129ceb3c78f40486569ff8071a3fb212f9486c4",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/medas2017-openalex.json",
+      "pdf_magic": false,
+      "finished_at": "2026-10-20T03:48:15.248164+00:00"
+    },
+    {
+      "name": "medas2018-crossref.json",
+      "url": "https://api.crossref.org/works/10.2138/am-2018-6128",
+      "started_at": "2026-10-20T03:48:14.941363+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.2138/am-2018-6128",
+      "content_type": "application/json",
+      "bytes": 29124,
+      "sha256": "2c665c4ffe1072edf7ce77461835fd0f23802a47f8e67f479b361ff7979156d2",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/medas2018-crossref.json",
+      "pdf_magic": false,
+      "finished_at": "2026-10-20T03:48:15.796739+00:00"
+    },
+    {
+      "name": "medas2017-crossref.json",
+      "url": "https://api.crossref.org/works/10.1016/j.oregeorev.2017.07.015",
+      "started_at": "2026-10-20T03:48:15.248185+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1016/j.oregeorev.2017.07.015",
+      "content_type": "application/json",
+      "bytes": 30487,
+      "sha256": "c411707a07a20d06ac42a27886975da5448dbb1e0c2eb0d20c1254ebe4238eed",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/medas2017-crossref.json",
+      "pdf_magic": false,
+      "finished_at": "2026-10-20T03:48:15.789492+00:00"
+    },
+    {
+      "name": "xu2022-crossref.json",
+      "url": "https://api.crossref.org/works/10.3390/met12122031",
+      "started_at": "2026-10-20T03:48:15.642242+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.3390/met12122031",
+      "content_type": "application/json",
+      "bytes": 17262,
+      "sha256": "3507a4b03e4033027b2dbade95730ed109cf44c835a05299de11b64a71853033",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/xu2022-crossref.json",
+      "pdf_magic": false,
+      "finished_at": "2026-10-20T03:48:15.973294+00:00"
+    },
+    {
+      "name": "msa-current-may2018.html",
+      "url": "https://msaweb.org/MSA/AmMin/TOC/2018/May2018_data/May2018_data.html",
+      "started_at": "2026-10-20T03:49:12.072945+00:00",
+      "error": "<HTTPError 404: 'Not Found'>",
+      "finished_at": "2026-10-20T03:49:12.274007+00:00"
+    },
+    {
+      "name": "medas2017-cagliari.html",
+      "url": "https://iris.unica.it/handle/11584/218949",
+      "started_at": "2026-10-20T03:49:12.073306+00:00",
+      "status": 200,
+      "final_url": "https://iris.unica.it/handle/11584/218949",
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 55530,
+      "sha256": "bcde7d1204ef945fa83a773eec361c6cbc48aa24e5ce8d7f46ab912413dba0ca",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/medas2017-cagliari.html",
+      "pdf_magic": false,
+      "finished_at": "2026-10-20T03:49:13.415653+00:00"
+    },
+    {
+      "name": "medas2017-roma3.html",
+      "url": "https://iris.uniroma3.it/handle/11590/330366",
+      "started_at": "2026-10-20T03:49:12.073446+00:00",
+      "status": 200,
+      "final_url": "https://iris.uniroma3.it/handle/11590/330366",
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 50612,
+      "sha256": "0835512ec14ce22cbbd062f942e8b3f7526fbb40bbe7f139f93effbdba4095eb",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/medas2017-roma3.html",
+      "pdf_magic": false,
+      "finished_at": "2026-10-20T03:49:13.418935+00:00"
+    },
+    {
+      "name": "medas2018-deposit.zip",
+      "url": "https://msaweb.org/MSA/AmMin/TOC/2018/May2018_data/AM-18-56128.zip",
+      "started_at": "2026-10-20T03:49:57.958148+00:00",
+      "status": 200,
+      "final_url": "https://msaweb.org/MSA/AmMin/TOC/2018/May2018_data/AM-18-56128.zip",
+      "content_type": "application/zip",
+      "bytes": 1798280,
+      "sha256": "1ff60e41efd3df5120e2eded35a3421693a714baa35113f82b80a097bbd694b3",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/medas2018-deposit.zip",
+      "pdf_magic": false,
+      "finished_at": "2026-10-20T03:49:58.262604+00:00"
+    },
+    {
+      "name": "msa2018-index.html",
+      "url": "https://msaweb.org/MSA/AmMin/TOC/2018/index.html",
+      "started_at": "2026-10-20T03:49:57.958679+00:00",
+      "error": "<HTTPError 404: 'Not Found'>",
+      "finished_at": "2026-10-20T03:49:58.104803+00:00"
+    }
+  ],
+  "acquisition_log_receipts": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/acquisition-1.json",
+      "bytes": 3902,
+      "sha256": "8ff6ea368ab7a61e3fe320f5e60c25e374a1c52e88d7026f758b56b70ab40974"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/acquisition-2.json",
+      "bytes": 1412,
+      "sha256": "ae0d199ca49bc710c84da7bb891ee783780a8cbeaaca3bff4fdc52f7d8c54149"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/acquisition-3.json",
+      "bytes": 864,
+      "sha256": "17692e3079ce859a39a13012bb9bb1ebb11a4fdc829d1ecc40a572e387e7c6c7"
+    }
+  ],
+  "supplement": {
+    "parent_doi": "10.2138/am-2018-6128",
+    "accession": "AM-18-56128",
+    "archive": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/medas2018-deposit.zip",
+      "bytes": 1798280,
+      "sha256": "1ff60e41efd3df5120e2eded35a3421693a714baa35113f82b80a097bbd694b3"
+    },
+    "pdf": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/medas2018-deposit/AM-18-56128/6128_supp.pdf",
+      "bytes": 1851340,
+      "sha256": "9852137c5f34dd7011af7ff771de06a8a2f01fc0ee07c62011da667a07a811af"
+    },
+    "pages": 8,
+    "binding": "Cover title and author list, repeated accession headers, main article p719 endnote identify same supplementary material.",
+    "route_status": "URL began as accession-based current-host archive probe; verified resource after successful ZIP inspection, not a retrieved TOC link.",
+    "version": "May2018 deposit; PDF metadata created2018-02-13 and modified2018-02-13, not a2026 scientific revision. No historic supplemental byte hash available.",
+    "archive_inventory": [
+      {
+        "name": "AM-18-56128/",
+        "bytes": 0
+      },
+      {
+        "name": "AM-18-56128/.DS_Store",
+        "bytes": 6148
+      },
+      {
+        "name": "__MACOSX/",
+        "bytes": 0
+      },
+      {
+        "name": "__MACOSX/AM-18-56128/",
+        "bytes": 0
+      },
+      {
+        "name": "__MACOSX/AM-18-56128/._.DS_Store",
+        "bytes": 120
+      },
+      {
+        "name": "AM-18-56128/6128_supp.pdf",
+        "bytes": 1851340
+      },
+      {
+        "name": "__MACOSX/._AM-18-56128",
+        "bytes": 299
+      }
+    ],
+    "dataset_scope": "One scientific PDF plus macOS filesystem metadata; no machine-readable diffraction/spectra or assay worksheet. TableS1 keyed by WM sample, LOI percentw/w; not extracted into accepted records.",
+    "license": "Main p719 says deposit items free to all readers. No explicit open redistribution license found in deposit; reading access does not authorize bulk republication."
+  },
+  "sources": [
+    {
+      "id": "medas2018",
+      "doi": "10.2138/am-2018-6128",
+      "role": "primary field-associated precursor structural study",
+      "pages": 9,
+      "version": "American Mineralogist103(2018)711–719; freshly downloaded RRUFF original matches round86 exact bytes",
+      "file": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/medas2018.pdf",
+        "bytes": 1849804,
+        "sha256": "32071969c68b1925ab922fc7517f55e8bc611cb46d637b31b44685576fc99df7"
+      },
+      "decision": "Existing study; supplement newly available, not independent microbial experiment"
+    },
+    {
+      "id": "medas2017",
+      "doi": "10.1016/j.oregeorev.2017.07.015",
+      "role": "separate aging/solubility experiment lead",
+      "version": "Ore Geology Reviews89(2017)808–821 metadata only",
+      "decision": "Defer full methods/results; do not import abstract numerical claims",
+      "access_boundary": "Manager-only repository file not requested; no account, request-copy, author contact or paid route used."
+    },
+    {
+      "id": "xu2022",
+      "doi": "10.3390/met12122031",
+      "role": "primary abiotic synthetic-feed leaching study",
+      "pages": 20,
+      "version": "Metals12(2022)2031 published2022-11-26; official version query1669452820 bytes match round86",
+      "file": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-296/xu2022.pdf",
+        "bytes": 4922231,
+        "sha256": "61515b8beb61fee33715541ef127460deb959a9981d1bf89710f250577d1aa4a"
+      },
+      "license": "CC BY4.0, https://creativecommons.org/licenses/by/4.0/",
+      "decision": "Existing discrepancy reproduced; no stronger purity, conversion or recovery claim",
+      "text_layer_caution": "pdftotext exposes overlapping old proof text on some pages; visual final-page reading used. This is not evidence of a newly changed PDF."
+    }
+  ],
+  "evidence": [
+    {
+      "id": "medas2018_supp_identity",
+      "source": "medas2018_supp",
+      "locator": "PDF p1 and repeated page headers; main article p719 endnote 1",
+      "finding": "Eight-page supplementary material matches title, authors and May2018 deposit AM-18-56128; accession-based current-host probe now verified by actual archive content.",
+      "visual": true
+    },
+    {
+      "id": "medas2018_s1",
+      "source": "medas2018_supp",
+      "locator": "PDF p3 Figure S1",
+      "finding": "Field stream and collection-bottle photographs; no new controlled precipitation experiment.",
+      "visual": true
+    },
+    {
+      "id": "medas2018_s2",
+      "source": "medas2018_supp",
+      "locator": "PDF p4 Figure S2, caption; main article p712 Materials and methods",
+      "finding": "WM9 diffuse diffraction pattern is compared with crystalline San Giovanni hemimorphite. Caption assigns circled peaks to quartz and dashed reference positions to hemimorphite. WM9 measured at ESRF BM08. Supports poor long-range order with accessory quartz, not pure crystalline hemimorphite or a phase fraction.",
+      "visual": true
+    },
+    {
+      "id": "medas2018_s3",
+      "source": "medas2018_supp",
+      "locator": "PDF p5 section S5; p6 Figure S3; p3 R-squared definition; main article p716 Table1",
+      "finding": "WM9/WM13/WM20/WM23 paired fits show R-squared misfit 0.01 with Si shell and 0.02 without. Authors attribute improvement to Si shell and report no significant gain from further shells. This is source-reported fitted local structure; no raw spectra or independent refitting. Main Table1 fixes biomineral first-shell coordination to four. S5 calls the fit figure S2, whereas displayed figure and contents call it S3.",
+      "visual": true
+    },
+    {
+      "id": "medas2018_loi",
+      "source": "medas2018_supp",
+      "locator": "PDF p7 Table S1; main article p717 Organic matrix and biomineral formation",
+      "finding": "Table contains 14 sample-keyed LOI measurements in percent w/w, range9.50–15.12; WM9=13.62, WM13=11.94, WM20=10.05, WM23=9.50. LOI is not a direct organic-carbon/organic-mass assay, mineral yield or phase fraction. Main-paper organic-mass range is approximate interpretation using NMR sensitivity and LOI. No separate raw worksheet or LOI heating protocol supplied in this deposit.",
+      "visual": true
+    },
+    {
+      "id": "medas2018_other_si",
+      "source": "medas2018_supp",
+      "locator": "PDF pp2–3 section S1, p4 sections S2–S3, p5 section S4",
+      "finding": "Analytical methods and complementary FTIR/NMR explanation. Section S4 assigns carbonate signal to hydrozincite and reports prior-study interpretation of sparse detrital fragments separate from EPS. This must not be relabelled as the quartz assignment in XRD Figure S2 or a phase fraction.",
+      "visual": true
+    },
+    {
+      "id": "medas2017_access",
+      "source": "medas2017",
+      "locator": "Cagliari handle11584/218949 attachment panel; RomaTre handle11590/330366 attachment panel; current OpenAlex locations",
+      "finding": "Cagliari lists Medas et al.,2017 OGR.pdf as manager-only VoR5.66MB; RomaTre no attached file. OpenAlex lists only publisher and these two repositories, with no PDF URLs. Complete original not acquired; abstract aging/solubility numbers not adopted.",
+      "visual": false
+    },
+    {
+      "id": "xu2022_composition",
+      "source": "xu2022",
+      "locator": "PDF p3 section2.1, Figure1, Table1; p5 Figure3",
+      "finding": "Visual Table1 confirms48.7–49.5%Zn/34.8–36.5%SiO2 alongside claim of only willemite by XRD; Figure1 is SEM/EDS, not the diffraction plot. Original diffraction is Figure3. No raw assay basis, quantitative phase analysis or correction found in bounded search. Ideal formula comparison remains a diagnostic discrepancy, not inferred true feed composition.",
+      "visual": true
+    },
+    {
+      "id": "xu2022_denominator",
+      "source": "xu2022",
+      "locator": "PDF p4 section2.2 Equation1 and section3.1.1; p5 Figures2–3; p19 Data Availability Statement",
+      "finding": "79.78% at16min is aqueous Zn divided by assayed starting Zn with sampling-volume correction. Source Data Availability says not applicable; no original assay worksheet or diffraction dataset obtained. Does not establish isolated mineral/metal recovery or pure-phase conversion.",
+      "visual": true
+    }
+  ],
+  "own_calculation": {
+    "formula": "Zn2SiO4",
+    "atomic_weights": {
+      "Zn": 65.38,
+      "Si": 28.085,
+      "O": 15.999
+    },
+    "ideal_Zn_wt_percent": 58.67860941209202,
+    "ideal_SiO2_equivalent_wt_percent": 26.96227354930197,
+    "scope": "Stoichiometric diagnostic only, not a source assay, feed correction, phase fraction or recovery result."
+  },
+  "correction_check": {
+    "sources": [
+      "medas2018-crossref.json",
+      "medas2017-crossref.json",
+      "xu2022-crossref.json"
+    ],
+    "result": "All three retrieved Crossref messages have empty relation objects and no update-to/updated-by fields. Bounded exact-DOI searches found no relevant correction; not proof none exists."
+  },
+  "gap_dispositions": [
+    {
+      "gap": "Medas2018 legitimate supplement",
+      "status": "access resolved; scientific scope remains low-order precursor context",
+      "next": "Parent independently inspect original SI and curate narrow source/context entries with canonical history and independent review."
+    },
+    {
+      "gap": "Medas2017 complete aging/solubility experiment",
+      "status": "open",
+      "next": "Obtain authorized complete original including methods, pre/post-treatment phase evidence, experiment lineage and relevant supplements; no request-copy or author contact authorized."
+    },
+    {
+      "gap": "Xu2022 assay/purity mismatch",
+      "status": "open",
+      "next": "Obtain corrected analytical basis and original bulk assay/calibration/uncertainty plus raw quantitative diffraction tied to each synthetic feed fraction. Closed mass balance additionally needs recovered-solid amounts and validated phase/composition assays."
+    }
+  ],
+  "curation_handoff": [
+    {
+      "owner": "hemimorphite",
+      "field": "sources[id=medas2018].title",
+      "action": "Replace historical unacquired-supplement wording after independent review; main article identity and exact original hash unchanged."
+    },
+    {
+      "owner": "hemimorphite",
+      "field": "sources",
+      "candidate_id": "medas2018_supp",
+      "action": "Add distinct linked source for official deposit, URL below, date2026-10-20, eight-page6128_supp.pdf with inspected FiguresS1–S3/TableS1. Same study, not independent experiment.",
+      "url": "https://msaweb.org/MSA/AmMin/TOC/2018/May2018_data/AM-18-56128.zip"
+    },
+    {
+      "owner": "hemimorphite",
+      "field": "mechanisms[id=field_associated_low_order_precursor].context",
+      "action": "Replace unacquired-SI limitation with inspected poor-order/mixed-accessory context; preserve natural collections, lack of sterile control, no strain authentication and separate2017 gap."
+    },
+    {
+      "owner": "hemimorphite",
+      "field": "mechanisms[id=field_associated_low_order_precursor].evidence",
+      "action": "Candidate context_only entry for FigureS2p4 and partial entry for sectionS5p5/FigureS3p6 and TableS1p7; retain first-shell fixed-CN and causality limits; remove only the now-resolved SI access clause from current partial entry."
+    },
+    {
+      "owner": "willemite",
+      "field": "mechanisms[id=abiotic_sulfuric_acid_leaching].evidence",
+      "action": "No supported change: preserve composition discrepancy and aqueous-Zn/feed-Zn denominator. Neither new correction nor raw assay evidence acquired."
+    }
+  ],
+  "excluded_claims": [
+    "Pure crystalline hemimorphite biosynthesis",
+    "Controlled microbial necessity from field association",
+    "Direct quantitative organic mass from LOI",
+    "Mineral conversion/yield from local EXAFS fit quality",
+    "Medas2017 solubility/aging values from abstract",
+    "Xu pure-phase conversion or isolated Zn product recovery"
+  ],
+  "validation": {
+    "json_parse": true,
+    "scope": "Source-only pair; no scientific record, history, review or remote mutation by this subagent. No accepted-record factual defect identified; source-access clauses are superseded by new acquisition.",
+    "limits": "No raw-data refit, digitization, organism reauthentication, new criticality/identity sweep, bulk import or independent record review. Parent owns gates and subsequent curation."
+  }
+}

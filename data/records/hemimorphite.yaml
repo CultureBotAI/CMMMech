@@ -41,10 +41,18 @@ sources:
       in a Zn-rich environment by cyanobacterium Leptolingbya frigida.
       American Mineralogist 103, 711-719. DOI 10.2138/am-2018-6128.
       Complete nine-page original, Figures 1-6 and Tables 1-2 inspected.
-      Deposit AM-18-56128 supplement was not acquired; its diffraction
-      figures and additional fitting/chemistry data are not verified here.
+      The associated deposit AM-18-56128 is separately cited below.
     url: https://doi.org/10.2138/am-2018-6128
-    accessed_on: '2026-10-15'
+    accessed_on: '2026-10-20'
+  - id: medas2018_supplement
+    title: >-
+      Medas D et al. (2018), supplementary material to DOI
+      10.2138/am-2018-6128. Official American Mineralogist May 2018
+      deposit AM-18-56128, eight-page 6128_supp.pdf within the ZIP.
+      Sections S1-S5, Figures S1-S3 and Table S1 inspected; the deposit
+      belongs to the same publication and is not an independent experiment.
+    url: https://msaweb.org/MSA/AmMin/TOC/2018/May2018_data/AM-18-56128.zip
+    accessed_on: '2026-10-20'
   - id: ncbi_stenomitos_frigidus
     title: >-
       NCBI Taxonomy 1886765, Stenomitos frigidus, species, including
@@ -109,8 +117,9 @@ mechanisms:
       White-mud material from Rio Naracauli, Sardinia, contained
       nanoparticulate zinc silicate associated with cyanobacterial
       filaments assigned by the source to Leptolyngbya frigida.
-      Main-paper spectroscopy supports a locally hemimorphite-like
-      structure with low long-range order. This contextual precursor
+      Spectroscopy and the supplemental diffraction comparison support
+      a locally hemimorphite-like structure with low long-range order.
+      This contextual precursor
       observation does not establish formation of crystalline
       hemimorphite or demonstrate the necessity of the assigned organism.
     context: >-
@@ -122,9 +131,10 @@ mechanisms:
       no strain accession or matched sterile precipitation control.
       Its prior-study water chemistry, seasonal behavior and aging
       experiments are not adopted as newly verified experiments here.
-      The unacquired supplement includes the comparative XRD patterns;
-      no supplemental phase-purity, organic-mass or fit-statistics claim
-      is accepted. The current taxon name maps the historical species
+      The supplement compares field sample WM9 with crystalline
+      reference material and models local coordination in four WM
+      samples; it does not supply a sterile biological comparator.
+      The current taxon name maps the historical species
       label only, not an independently authenticated field isolate.
     evidence:
       - source_ref: medas2018
@@ -147,9 +157,42 @@ mechanisms:
           Table 1 fixes the first-shell coordination in its fitting
           model, and Table 2 provides comparison chemical shifts.
           Neither establishes the organism's causal necessity. The
-          missing AM-18-56128 supplement and unacquired earlier aging
-          paper prevent a stronger claim about crystallization,
-          quantitative conversion or preservation of this precursor.
+          unacquired separate 2017 aging paper remains a gap for
+          claims about time-dependent conversion, solubility or
+          preservation; acquiring the 2018 supplement does not
+          independently verify that earlier experiment.
+      - source_ref: medas2018_supplement
+        supports: context_only
+        explanation: >-
+          Figure S2, PDF page 4, compares WM9 with crystalline
+          hemimorphite from San Giovanni Mine. WM9 has a diffuse
+          pattern and caption-assigned quartz peaks; this is not
+          phase-pure crystalline hemimorphite or a quantified phase
+          fraction. Sections S2 and S4, pages 4-5, additionally assign
+          carbonate signals to hydrozincite, interpreted by the
+          authors as detrital fragments. A reference mineral is not
+          a matched control for microbial necessity.
+      - source_ref: medas2018_supplement
+        supports: partial
+        explanation: >-
+          Section S1, pages 2-3, defines the EXAFS fitting procedure
+          and normalized squared-residual misfit R2. Section S5 and
+          Figure S3, pages 5-6, compare models with and without a Si
+          coordination shell for WM9, WM13, WM20 and WM23, displaying
+          R2 of 0.01 and 0.02 respectively. This source-reported model
+          comparison supports local Zn-Si coordination, not long-range
+          crystalline identity, phase abundance or biological causation.
+          Raw spectra were not obtained or independently refitted.
+      - source_ref: medas2018_supplement
+        supports: partial
+        explanation: >-
+          Table S1, PDF page 7, reports loss on ignition for 14 WM
+          samples, spanning 9.50-15.12 percent w/w. These are bulk
+          mass-loss measurements, not direct organic-matter assays,
+          mineral fractions or product yields. Main-paper page 717
+          combines LOI with NMR sensitivity for a rough organic-matter
+          interpretation; that estimate is not adopted as measured
+          organic content or a recovery denominator.
 curation_history:
   - timestamp: '2026-10-15T02:30:36.477614Z'
     curator: codex / GPT-6
@@ -158,5 +201,13 @@ curation_history:
       Created a distinct mineral owner from verified primary originals and
       identity authorities, retaining experimental-form, microbial-association,
       denominator and source-access limitations without inherited criticality.
+  - timestamp: '2026-10-20T03:55:59.006698Z'
+    curator: codex / GPT-6
+    action: EDIT
+    summary: >-
+      Added verified AM-18-56128 supplementary diffraction, local-structure
+      model and loss-on-ignition evidence; retained mixed low-order precursor
+      scope, field-association limits and the separate unacquired aging study.
 history_refs:
   - history/records/hemimorphite/2026-10-15T023041Z-codex-2c0bbc.yaml
+  - history/records/hemimorphite/2026-10-20T035541Z-codex-b2cec7.yaml
