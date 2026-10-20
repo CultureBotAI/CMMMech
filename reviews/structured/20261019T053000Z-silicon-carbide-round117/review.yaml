@@ -1,0 +1,187 @@
+schema_version: 1.0.0
+review_id: 20261019T053000Z-silicon-carbide-round117
+kind: record
+repository: CultureBotAI/CMMMech
+title: Scientific review of silicon-carbide
+started_at: '2026-10-19T05:26:00Z'
+finished_at: '2026-10-19T05:30:00Z'
+reviewer:
+  identity: antigravity / round117-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/cmmmech-add-record/SKILL.md;
+    full primary-source PDFs, official authorities (DOE 2023 Federal Register, USGS
+    MCS 2026, IMA September 2026 Master List), figures, tables, and record/history/schema
+    invariants were verified page-by-page against the frozen working-tree record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34
+  state: working_tree
+  inputs:
+  - path: data/records/silicon-carbide.yaml
+    sha256: ed7f62903970accb41ced35e0af8afd2066cbafb6d5af367be75cdabfd4dfb4c
+    role: target
+  - path: history/records/silicon-carbide/2026-10-19T052200Z-antigravity-00117b.yaml
+    sha256: dffcbc33107c6abcd601f65d73ff38c9516ff3cc118c35aa1a1c02cd6bf47435
+    role: context
+  - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
+    sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
+    role: context
+  - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.md
+    sha256: 1352dfc950a92c4d6fdcf868e1d9082fe1ac3f7d776eeae19702d0addaad4fe7
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+targets:
+- target_id: cmmmech:silicon-carbide
+  path: data/records/silicon-carbide.yaml
+  label: Silicon Carbide
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/silicon-carbide.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/silicon-carbide/2026-10-19T052200Z-antigravity-00117b.yaml
+    role: canonical_history
+scope:
+  description: Complete frozen working-tree record data/records/silicon-carbide.yaml,
+    canonical CREATE history sidecar history/records/silicon-carbide/2026-10-19T052200Z-antigravity-00117b.yaml,
+    and primary-source evidence boundaries.
+  selection: Targeted structured review of newly curated Round 117 CMM record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:silicon-carbide
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/silicon-carbide.yaml
+  locator: Complete frozen working-tree record data/records/silicon-carbide.yaml
+  accessed_at: '2026-10-19T05:30:00Z'
+  support: supports
+  summary: All structured claims, identifiers, relations, and qualification notes
+    match the inspected primary sources.
+  snapshot_sha256: ed7f62903970accb41ced35e0af8afd2066cbafb6d5af367be75cdabfd4dfb4c
+- evidence_id: history
+  kind: record_content
+  reference: history/records/silicon-carbide/2026-10-19T052200Z-antigravity-00117b.yaml
+  locator: Complete canonical CREATE sidecar history/records/silicon-carbide/2026-10-19T052200Z-antigravity-00117b.yaml
+  accessed_at: '2026-10-19T05:30:00Z'
+  support: supports
+  summary: Canonical history sidecar and inline history event accurately record actor,
+    UTC timestamp, and scientific scope.
+  snapshot_sha256: dffcbc33107c6abcd601f65d73ff38c9516ff3cc118c35aa1a1c02cd6bf47435
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
+  locator: Paired Round 117 source investigation dossier research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
+  accessed_at: '2026-10-19T05:30:00Z'
+  support: context_only
+  summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
+  snapshot_sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List (244 pages visually inspected)
+  accessed_at: '2026-10-19T05:30:00Z'
+  support: supports
+  summary: Establishes official mineral species nomenclature, formula, approval status,
+    and commodity vs mineral category boundary.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary_study
+  kind: primary_source
+  reference: https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-abrasives.pdf
+  locator: Complete full-text visual inspection of US DOE 2023 Final Critical Materials
+    List (88 FR 51792, 51797) and USGS MCS 2026 Manufactured Abrasives and Silicon
+    chapters
+  accessed_at: '2026-10-19T05:30:00Z'
+  support: supports
+  summary: DOE 2023 Critical Material for Energy (88 FR 51792, 51797) commodity boundary,
+    wide-bandgap semiconductor and manufactured abrasive scope, and USGS MCS 2026
+    crude silicon carbide production and trade statistics are supported while keeping
+    natural moissanite distinct (0 mechanisms curated).
+  snapshot_sha256: 0bd7d61389e9ca4d5d28527f54d40cc0544f003abbe21eb217545a1e59abeb40
+- evidence_id: validation
+  kind: validation
+  reference: data/records/silicon-carbide.yaml
+  locator: Strict schema and history validation across all 616 records and 744 history
+    sidecars
+  accessed_at: '2026-10-19T05:30:00Z'
+  support: supports
+  summary: Checked 616 record(s), 0 failed; Checked 744 history record(s), 0 error(s).
+  snapshot_sha256: ed7f62903970accb41ced35e0af8afd2066cbafb6d5af367be75cdabfd4dfb4c
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 616 record(s); 0 failed.
+  target_ids:
+  - cmmmech:silicon-carbide
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34
+  status: passed
+  required: true
+  summary: Checked 744 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:silicon-carbide
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_evidence
+  area: evidence
+  topic: Primary-source identity and evidence boundaries for silicon-carbide
+  outcome: supported
+  summary: DOE 2023 Critical Material for Energy (88 FR 51792, 51797) commodity boundary,
+    wide-bandgap semiconductor and manufactured abrasive scope, and USGS MCS 2026
+    crude silicon carbide production and trade statistics are supported while keeping
+    natural moissanite distinct (0 mechanisms curated).
+  target_ids:
+  - cmmmech:silicon-carbide
+  evidence_ids:
+  - owner
+  - ima_authority
+  - primary_study
+- assessment_id: scope_and_provenance
+  area: provenance
+  topic: Provenance, category boundaries, and absence of fabricated claims
+  outcome: supported
+  summary: No unmeasured recovery yields, unverified biological interactions, or improper
+    criticality transfers are claimed; CREATE sidecar and inline history match the
+    frozen record.
+  target_ids:
+  - cmmmech:silicon-carbide
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - validation
+findings: []
+actions: []
+summary: 'Silicon Carbide passes with limitations: DOE 2023 Critical Material for
+  Energy (88 FR 51792, 51797) commodity boundary, wide-bandgap semiconductor and manufactured
+  abrasive scope, and USGS MCS 2026 crude silicon carbide production and trade statistics
+  are supported while keeping natural moissanite distinct (0 mechanisms curated).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes at base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34.'
+- No biological processing or pilot-scale extraction yield is reported in the inspected
+  primary sources; unstated process parameters remain null.
+notes:
+- All primary-source PDFs and authority documents were visually inspected in full
+  before record creation.
+related_reviews: []

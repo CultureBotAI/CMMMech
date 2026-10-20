@@ -1,0 +1,268 @@
+# Scientific review of sakuraiite
+
+- Review: 20261019T053000Z-sakuraiite-round117
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-19T05:26:00Z
+- Finished UTC: 2026-10-19T05:30:00Z
+- Reviewer: antigravity / round117-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Sakuraiite passes with limitations: IMA:1965-017 (Cu,Zn,Fe)3(In,Sn)S4 identity from Ikuno mine, Kato (1965) tetragonal cell (a = 5.455, c = 10.91 A, Z = 2) vs Kissin &amp; Owens (1989) cubic pseudo-cell discussion, and Shimizu et al. (1986) microprobe re-examination establishing Cu+ + Sn4+ &lt;-&gt; In3+ + (Zn,Fe)2+ substitution and low Ag (&lt;= 0.1 wt%) are supported.
+
+## Scope And Provenance
+
+Complete frozen working-tree record data/records/sakuraiite.yaml, canonical CREATE history sidecar history/records/sakuraiite/2026-10-19T052200Z-antigravity-001174.yaml, and primary-source evidence boundaries.
+
+Selection: Targeted structured review of newly curated Round 117 CMM record.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:sakuraiite | data/records/sakuraiite.yaml | maintained | Sakuraiite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:sakuraiite | Checked 616 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:sakuraiite | Checked 744 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Primary-source identity and evidence boundaries for sakuraiite
+
+evidence: supported. Targets: cmmmech:sakuraiite.
+
+IMA:1965-017 (Cu,Zn,Fe)3(In,Sn)S4 identity from Ikuno mine, Kato (1965) tetragonal cell (a = 5.455, c = 10.91 A, Z = 2) vs Kissin &amp; Owens (1989) cubic pseudo-cell discussion, and Shimizu et al. (1986) microprobe re-examination establishing Cu+ + Sn4+ &lt;-&gt; In3+ + (Zn,Fe)2+ substitution and low Ag (&lt;= 0.1 wt%) are supported.
+
+### Provenance, category boundaries, and absence of fabricated claims
+
+provenance: supported. Targets: cmmmech:sakuraiite.
+
+No unmeasured recovery yields, unverified biological interactions, or improper criticality transfers are claimed; CREATE sidecar and inline history match the frozen record.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/sakuraiite.yaml; Complete frozen working-tree record data/records/sakuraiite.yaml | supports | All structured claims, identifiers, relations, and qualification notes match the inspected primary sources. |
+| history | history/records/sakuraiite/2026-10-19T052200Z-antigravity-001174.yaml; Complete canonical CREATE sidecar history/records/sakuraiite/2026-10-19T052200Z-antigravity-001174.yaml | supports | Canonical history sidecar and inline history event accurately record actor, UTC timestamp, and scientific scope. |
+| dossier | research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json; Paired Round 117 source investigation dossier research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json | context_only | Documents deduplication, primary-source acquisition hashes, and scope boundaries. |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List (244 pages visually inspected) | supports | Establishes official mineral species nomenclature, formula, approval status, and commodity vs mineral category boundary. |
+| primary_study | https://rruff.info/rruff_1.0/uploads/CM24_405.pdf; Complete full-text visual inspection of CM 24 (1986) 405-409 (5 pp.), CM 27 (1989) 673-688 (16 pp.), and IMA September 2026 Master List (IMA:1965-017) | supports | IMA:1965-017 (Cu,Zn,Fe)3(In,Sn)S4 identity from Ikuno mine, Kato (1965) tetragonal cell (a = 5.455, c = 10.91 A, Z = 2) vs Kissin &amp; Owens (1989) cubic pseudo-cell discussion, and Shimizu et al. (1986) microprobe re-examination establishing Cu+ + Sn4+ &lt;-&gt; In3+ + (Zn,Fe)2+ substitution and low Ag (&lt;= 0.1 wt%) are supported. |
+| validation | data/records/sakuraiite.yaml; Strict schema and history validation across all 616 records and 744 history sidecars | supports | Checked 616 record(s), 0 failed; Checked 744 history record(s), 0 error(s). |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes at base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34.
+- No biological processing or pilot-scale extraction yield is reported in the inspected primary sources; unstated process parameters remain null.
+- All primary-source PDFs and authority documents were visually inspected in full before record creation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261019T053000Z-sakuraiite-round117
+kind: record
+repository: CultureBotAI/CMMMech
+title: Scientific review of sakuraiite
+started_at: '2026-10-19T05:26:00Z'
+finished_at: '2026-10-19T05:30:00Z'
+reviewer:
+  identity: antigravity / round117-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/cmmmech-add-record/SKILL.md;
+    full primary-source PDFs, official authorities (DOE 2023 Federal Register, USGS
+    MCS 2026, IMA September 2026 Master List), figures, tables, and record/history/schema
+    invariants were verified page-by-page against the frozen working-tree record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34
+  state: working_tree
+  inputs:
+  - path: data/records/sakuraiite.yaml
+    sha256: f1343d27b3aaa67fae019646cd8deb17aebc7e92c11628ca8c3c87629e19c1c7
+    role: target
+  - path: history/records/sakuraiite/2026-10-19T052200Z-antigravity-001174.yaml
+    sha256: 2b7ea7f1c9a772de91fb52bc71f83368895d78aac8f509c88da655634995e7d8
+    role: context
+  - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
+    sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
+    role: context
+  - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.md
+    sha256: 1352dfc950a92c4d6fdcf868e1d9082fe1ac3f7d776eeae19702d0addaad4fe7
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+targets:
+- target_id: cmmmech:sakuraiite
+  path: data/records/sakuraiite.yaml
+  label: Sakuraiite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/sakuraiite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/sakuraiite/2026-10-19T052200Z-antigravity-001174.yaml
+    role: canonical_history
+scope:
+  description: Complete frozen working-tree record data/records/sakuraiite.yaml, canonical
+    CREATE history sidecar history/records/sakuraiite/2026-10-19T052200Z-antigravity-001174.yaml,
+    and primary-source evidence boundaries.
+  selection: Targeted structured review of newly curated Round 117 CMM record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:sakuraiite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/sakuraiite.yaml
+  locator: Complete frozen working-tree record data/records/sakuraiite.yaml
+  accessed_at: '2026-10-19T05:30:00Z'
+  support: supports
+  summary: All structured claims, identifiers, relations, and qualification notes
+    match the inspected primary sources.
+  snapshot_sha256: f1343d27b3aaa67fae019646cd8deb17aebc7e92c11628ca8c3c87629e19c1c7
+- evidence_id: history
+  kind: record_content
+  reference: history/records/sakuraiite/2026-10-19T052200Z-antigravity-001174.yaml
+  locator: Complete canonical CREATE sidecar history/records/sakuraiite/2026-10-19T052200Z-antigravity-001174.yaml
+  accessed_at: '2026-10-19T05:30:00Z'
+  support: supports
+  summary: Canonical history sidecar and inline history event accurately record actor,
+    UTC timestamp, and scientific scope.
+  snapshot_sha256: 2b7ea7f1c9a772de91fb52bc71f83368895d78aac8f509c88da655634995e7d8
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
+  locator: Paired Round 117 source investigation dossier research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
+  accessed_at: '2026-10-19T05:30:00Z'
+  support: context_only
+  summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
+  snapshot_sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List (244 pages visually inspected)
+  accessed_at: '2026-10-19T05:30:00Z'
+  support: supports
+  summary: Establishes official mineral species nomenclature, formula, approval status,
+    and commodity vs mineral category boundary.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary_study
+  kind: primary_source
+  reference: https://rruff.info/rruff_1.0/uploads/CM24_405.pdf
+  locator: Complete full-text visual inspection of CM 24 (1986) 405-409 (5 pp.), CM
+    27 (1989) 673-688 (16 pp.), and IMA September 2026 Master List (IMA:1965-017)
+  accessed_at: '2026-10-19T05:30:00Z'
+  support: supports
+  summary: IMA:1965-017 (Cu,Zn,Fe)3(In,Sn)S4 identity from Ikuno mine, Kato (1965)
+    tetragonal cell (a = 5.455, c = 10.91 A, Z = 2) vs Kissin & Owens (1989) cubic
+    pseudo-cell discussion, and Shimizu et al. (1986) microprobe re-examination establishing
+    Cu+ + Sn4+ <-> In3+ + (Zn,Fe)2+ substitution and low Ag (<= 0.1 wt%) are supported.
+  snapshot_sha256: 6f8a6e20400dc0755daef03f91b426ec4f2885db3e28836c734bb08b9031da47
+- evidence_id: validation
+  kind: validation
+  reference: data/records/sakuraiite.yaml
+  locator: Strict schema and history validation across all 616 records and 744 history
+    sidecars
+  accessed_at: '2026-10-19T05:30:00Z'
+  support: supports
+  summary: Checked 616 record(s), 0 failed; Checked 744 history record(s), 0 error(s).
+  snapshot_sha256: f1343d27b3aaa67fae019646cd8deb17aebc7e92c11628ca8c3c87629e19c1c7
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 616 record(s); 0 failed.
+  target_ids:
+  - cmmmech:sakuraiite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34
+  status: passed
+  required: true
+  summary: Checked 744 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:sakuraiite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_evidence
+  area: evidence
+  topic: Primary-source identity and evidence boundaries for sakuraiite
+  outcome: supported
+  summary: IMA:1965-017 (Cu,Zn,Fe)3(In,Sn)S4 identity from Ikuno mine, Kato (1965)
+    tetragonal cell (a = 5.455, c = 10.91 A, Z = 2) vs Kissin & Owens (1989) cubic
+    pseudo-cell discussion, and Shimizu et al. (1986) microprobe re-examination establishing
+    Cu+ + Sn4+ <-> In3+ + (Zn,Fe)2+ substitution and low Ag (<= 0.1 wt%) are supported.
+  target_ids:
+  - cmmmech:sakuraiite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - primary_study
+- assessment_id: scope_and_provenance
+  area: provenance
+  topic: Provenance, category boundaries, and absence of fabricated claims
+  outcome: supported
+  summary: No unmeasured recovery yields, unverified biological interactions, or improper
+    criticality transfers are claimed; CREATE sidecar and inline history match the
+    frozen record.
+  target_ids:
+  - cmmmech:sakuraiite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - validation
+findings: []
+actions: []
+summary: 'Sakuraiite passes with limitations: IMA:1965-017 (Cu,Zn,Fe)3(In,Sn)S4 identity
+  from Ikuno mine, Kato (1965) tetragonal cell (a = 5.455, c = 10.91 A, Z = 2) vs
+  Kissin & Owens (1989) cubic pseudo-cell discussion, and Shimizu et al. (1986) microprobe
+  re-examination establishing Cu+ + Sn4+ <-> In3+ + (Zn,Fe)2+ substitution and low
+  Ag (<= 0.1 wt%) are supported.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes at base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34.'
+- No biological processing or pilot-scale extraction yield is reported in the inspected
+  primary sources; unstated process parameters remain null.
+notes:
+- All primary-source PDFs and authority documents were visually inspected in full
+  before record creation.
+related_reviews: []
+```
