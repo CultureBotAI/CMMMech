@@ -1,0 +1,849 @@
+{
+  "schema": "cmmmech-source-assessment-evidence/v1",
+  "timestamp_utc": "2026-10-20T03:38:59Z",
+  "checks_completed_at": "2026-10-20T03:42:17.132949+00:00",
+  "researcher": "Codex /root/investigate_233",
+  "skill": ".claude/skills/cmmmech-discover-sources/SKILL.md",
+  "issue": {
+    "number": 286,
+    "url": "https://github.com/CultureBotAI/CMMMech/issues/286",
+    "title": "Clarify Segura2023 minor wurtzite indexing before accepting phase evidence",
+    "updated_at": "2026-10-15T01:24:25Z",
+    "comments": 0,
+    "snapshot": "/private/tmp/cmmmech-backlog-20261019-fmj36s/reconcile-286-20261020T033148Z",
+    "parent_inventory": {
+      "open_issues": 185,
+      "open_prs": 0
+    },
+    "snapshot_files": [
+      {
+        "file": "comments.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      {
+        "file": "issue.json",
+        "sha256": "5fdf01988f899f161661435ab18a724b8fdc1c50eef78b857fbf9b4677bc08f9"
+      },
+      {
+        "file": "open-issues.json",
+        "sha256": "87ce6a1754719d8ef22e8b67b4563c4b0cf888d85257f7b5c735a0141012092d"
+      },
+      {
+        "file": "open-prs.json",
+        "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+      },
+      {
+        "file": "receipt.json",
+        "sha256": "6b1587c122d05e758138b05baf8913fea44787223e456ac53462d9941d2ea1fd"
+      }
+    ]
+  },
+  "repository": {
+    "base": "2da10d95a72146ee0c69cb91fe303348fbadb638",
+    "branch": "codex/issue-286-wurtzite-indexing",
+    "worktree": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-286",
+    "owner": "data/records/wurtzite.yaml",
+    "owner_sha256": "3023a9fa6aa8f6f82b2284252f7245ad85ab1ff297f5cddaee53e61f2f4590a3",
+    "owner_last_commit": "6a579d90978267cf5d145bca05b4c97e5ba4d629",
+    "owner_last_changed_at": "2026-10-15T01:56:24Z",
+    "owner_outside_two_day_exclusion": true,
+    "changed_scope": "Only new research/sources/issue-286-wurtzite-indexing source assessment files.",
+    "canonical_create": {
+      "path": "history/records/wurtzite/2026-10-15T011942Z-codex-2cd232.yaml",
+      "sha256": "0134924e4afe1e980457c802a12753e7452f59da7c3279808e16b733eba770ea"
+    },
+    "existing_dossier": {
+      "path": "research/sources/round85-wurtzite-20261015/report.json",
+      "sha256": "8cf561c8ab25b11dbcf292a0f7d5da797d786aae0b998254b3b54a816d9ec616"
+    }
+  },
+  "scope": {
+    "material": "Wurtzite, hexagonal ZnS; separate from cubic sphalerite, zinc element and unspecified ZnS.",
+    "question": "Can public authoritative clarification, indexed data or reference-pattern documentation reconcile Segura2023 minor-phase indexing?",
+    "not_reassessed": [
+      "Existing accepted Castillo Hernandez2013 thesis experiment",
+      "Criticality lists",
+      "Segura functional assays",
+      "Broader ZnS literature"
+    ]
+  },
+  "dedup": {
+    "utc": "2026-10-20T03:34:12.604444+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "--json",
+      "nano13050935|36-1450|zns2023-phase-consistency",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-286/data/records",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-286/research",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-286/reviews",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-286/history",
+      "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/reviews",
+      "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/history",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-286"
+    ],
+    "requested_roots": [
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-286/data/records",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-286/research",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-286/reviews",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-286/history",
+      "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/reviews",
+      "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/history",
+      "/private/tmp/cmm-round85-sulfides-research",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-286"
+    ],
+    "absent_roots": [
+      "/private/tmp/cmm-round85-sulfides-research"
+    ],
+    "exit_code": 0,
+    "match_lines": 38,
+    "matched_files": 16,
+    "raw_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-286/dedup.jsonl",
+    "raw_sha256": "0eab68c1cd6730d8110bdb5426dc8472f261ae24aec5776c07edab3c17fa182e",
+    "scope_limits": "Text and extracted metadata only; binary files not searched as text, unrelated home/temp trees excluded. Both checkouts included, so duplicate paths are not independent sources."
+  },
+  "search": {
+    "unique_query_count": 14,
+    "query_execution_count": 17,
+    "queries": [
+      {
+        "query": "\"10.3390/nano13050935\" correction OR corrigendum OR erratum OR diffraction",
+        "operator": "parent",
+        "raw": "root-initial-web.json",
+        "executions": 1,
+        "provider": "web.run",
+        "date_utc": "2026-10-20",
+        "filters": "No date/domain tool filters; site restrictions only as written in query.",
+        "coverage": "First result set; no pagination.",
+        "disposition": "No resolving Segura correction, indexed raw diffraction data or official cited card obtained."
+      },
+      {
+        "query": "\"Sulfidogenic Bioreactor-Mediated Formation\" wurtzite supplementary data",
+        "operator": "parent",
+        "raw": "root-initial-web.json",
+        "executions": 1,
+        "provider": "web.run",
+        "date_utc": "2026-10-20",
+        "filters": "No date/domain tool filters; site restrictions only as written in query.",
+        "coverage": "First result set; no pagination.",
+        "disposition": "No resolving Segura correction, indexed raw diffraction data or official cited card obtained."
+      },
+      {
+        "query": "\"Segura\" \"0.6375\" ZnS wurtzite",
+        "operator": "parent",
+        "raw": "root-initial-web.json",
+        "executions": 1,
+        "provider": "web.run",
+        "date_utc": "2026-10-20",
+        "filters": "No date/domain tool filters; site restrictions only as written in query.",
+        "coverage": "First result set; no pagination.",
+        "disposition": "No resolving Segura correction, indexed raw diffraction data or official cited card obtained."
+      },
+      {
+        "query": "\"nano13050935\" \"data\" \"XRD\"",
+        "operator": "investigator",
+        "raw": "286search1.json",
+        "executions": 1,
+        "provider": "web.run",
+        "date_utc": "2026-10-20",
+        "filters": "No date/domain tool filters; site restrictions only as written in query.",
+        "coverage": "First result set; no pagination.",
+        "disposition": "No resolving Segura correction, indexed raw diffraction data or official cited card obtained."
+      },
+      {
+        "query": "\"nano13050935\" correction OR erratum OR retraction",
+        "operator": "investigator",
+        "raw": "286search1.json",
+        "executions": 1,
+        "provider": "web.run",
+        "date_utc": "2026-10-20",
+        "filters": "No date/domain tool filters; site restrictions only as written in query.",
+        "coverage": "First result set; no pagination.",
+        "disposition": "No resolving Segura correction, indexed raw diffraction data or official cited card obtained."
+      },
+      {
+        "query": "\"00-036-1450\" site:icdd.com",
+        "operator": "investigator",
+        "raw": "286search1.json",
+        "executions": 1,
+        "provider": "web.run",
+        "date_utc": "2026-10-20",
+        "filters": "No date/domain tool filters; site restrictions only as written in query.",
+        "coverage": "First result set; no pagination.",
+        "disposition": "No resolving Segura correction, indexed raw diffraction data or official cited card obtained."
+      },
+      {
+        "query": "\"Sulfidogenic Bioreactor-Mediated\" \"diffraction\" supplementary raw",
+        "operator": "investigator",
+        "raw": "286search1.json",
+        "executions": 1,
+        "provider": "web.run",
+        "date_utc": "2026-10-20",
+        "filters": "No date/domain tool filters; site restrictions only as written in query.",
+        "coverage": "First result set; no pagination.",
+        "disposition": "No resolving Segura correction, indexed raw diffraction data or official cited card obtained."
+      },
+      {
+        "query": "\"36-1450\" \"ZnS\" diffraction",
+        "operator": "investigator",
+        "raw": "286search2.json",
+        "executions": 1,
+        "provider": "web.run",
+        "date_utc": "2026-10-20",
+        "filters": "No date/domain tool filters; site restrictions only as written in query.",
+        "coverage": "First result set; no pagination.",
+        "disposition": "No resolving Segura correction, indexed raw diffraction data or official cited card obtained."
+      },
+      {
+        "query": "\"00-036-1450\" \"ICDD\" zinc",
+        "operator": "investigator",
+        "raw": "286search2.json",
+        "executions": 1,
+        "provider": "web.run",
+        "date_utc": "2026-10-20",
+        "filters": "No date/domain tool filters; site restrictions only as written in query.",
+        "coverage": "First result set; no pagination.",
+        "disposition": "No resolving Segura correction, indexed raw diffraction data or official cited card obtained."
+      },
+      {
+        "query": "\"Sulfidogenic Bioreactor-Mediated Formation\" \"dataset\"",
+        "operator": "investigator",
+        "raw": "286search2.json",
+        "executions": 1,
+        "provider": "web.run",
+        "date_utc": "2026-10-20",
+        "filters": "No date/domain tool filters; site restrictions only as written in query.",
+        "coverage": "First result set; no pagination.",
+        "disposition": "No resolving Segura correction, indexed raw diffraction data or official cited card obtained."
+      },
+      {
+        "query": "\"nano13050935\" site:zenodo.org OR site:figshare.com OR site:datos.gob.cl OR site:repositorio.uss.cl",
+        "operator": "investigator",
+        "raw": "286search2.json",
+        "executions": 1,
+        "provider": "web.run",
+        "date_utc": "2026-10-20",
+        "filters": "No date/domain tool filters; site restrictions only as written in query.",
+        "coverage": "First result set; no pagination.",
+        "disposition": "No resolving Segura correction, indexed raw diffraction data or official cited card obtained."
+      },
+      {
+        "query": "site:icdd.com \"Phase Search\" \"PDF\"",
+        "operator": "investigator",
+        "raw": "286search3-repeat.json",
+        "executions": 2,
+        "repeat_reason": "Initial same-query response was inspected but not retained locally; repeated once for receipt.",
+        "provider": "web.run",
+        "date_utc": "2026-10-20",
+        "filters": "No date/domain tool filters; site restrictions only as written in query.",
+        "coverage": "First result set; no pagination.",
+        "disposition": "No resolving Segura correction, indexed raw diffraction data or official cited card obtained."
+      },
+      {
+        "query": "\"nano13050935\" \"correction\" site:mdpi.com",
+        "operator": "investigator",
+        "raw": "286search3-repeat.json",
+        "executions": 2,
+        "repeat_reason": "Initial same-query response was inspected but not retained locally; repeated once for receipt.",
+        "provider": "web.run",
+        "date_utc": "2026-10-20",
+        "filters": "No date/domain tool filters; site restrictions only as written in query.",
+        "coverage": "First result set; no pagination.",
+        "disposition": "No resolving Segura correction, indexed raw diffraction data or official cited card obtained."
+      },
+      {
+        "query": "\"Segura\" \"wurtzite\" \"34\" \"36.2\" \"47.6\"",
+        "operator": "investigator",
+        "raw": "286search3-repeat.json",
+        "executions": 2,
+        "repeat_reason": "Initial same-query response was inspected but not retained locally; repeated once for receipt.",
+        "provider": "web.run",
+        "date_utc": "2026-10-20",
+        "filters": "No date/domain tool filters; site restrictions only as written in query.",
+        "coverage": "First result set; no pagination.",
+        "disposition": "No resolving Segura correction, indexed raw diffraction data or official cited card obtained."
+      }
+    ],
+    "negative_scope": "Only listed routes and first returned result sets. No global claim of absent data or corrections."
+  },
+  "raw_root": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-286",
+  "acquisitions": [
+    {
+      "url": "https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-13-00935/article_deploy/nanomaterials-13-00935.pdf",
+      "requested_at": "2026-10-20T03:31:24.013121+00:00",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-286/segura2023.pdf",
+      "status": 200,
+      "final_url": "https://mdpi-res.com/d_attachment/nanomaterials/nanomaterials-13-00935/article_deploy/nanomaterials-13-00935.pdf",
+      "content_type": "application/pdf",
+      "bytes": 3263018,
+      "sha256": "731e144c97dadb6580deffa83dcd79efff5170eb78829c9253bf3f0090cf289b",
+      "is_pdf": true,
+      "receipt": "acquisitions.json",
+      "local_hash_verified": true
+    },
+    {
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10004825/fullTextXML",
+      "requested_at": "2026-10-20T03:31:24.013461+00:00",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-286/segura2023.xml",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC10004825/fullTextXML",
+      "content_type": "application/xml",
+      "bytes": 124146,
+      "sha256": "10d784b650296bd9824e74713459afc159fb7569f2fd4501e32bdf09e5513349",
+      "is_pdf": false,
+      "receipt": "acquisitions.json",
+      "local_hash_verified": true
+    },
+    {
+      "url": "https://api.crossref.org/works/10.3390/nano13050935",
+      "requested_at": "2026-10-20T03:31:24.013547+00:00",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-286/crossref.json",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.3390/nano13050935",
+      "content_type": "application/json",
+      "bytes": 24008,
+      "sha256": "b43c39dd85222ce28364bd1c59905e0d398f21676c077593bb31597f695aaa21",
+      "is_pdf": false,
+      "receipt": "acquisitions.json",
+      "local_hash_verified": true
+    },
+    {
+      "url": "https://www.mdpi.com/2079-4991/13/5/935/history",
+      "requested_at": "2026-10-20T03:31:24.013621+00:00",
+      "error": "HTTP Error 403: Forbidden",
+      "receipt": "acquisitions.json"
+    },
+    {
+      "url": "https://ocg.uct.cl/publicacion/sulfidogenic-bioreactor-mediated-formation-of-zns-nanoparticles-with-antimicrobial-and-photocatalytic-activity-2023-segura-a-rodriguez-a-hernandez-p-pesenti-h-hernandez-montelongo-j/",
+      "requested_at": "2026-10-20T03:31:24.013688+00:00",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-286/uct-publication.html",
+      "status": 200,
+      "final_url": "https://ocg.uct.cl/publicacion/sulfidogenic-bioreactor-mediated-formation-of-zns-nanoparticles-with-antimicrobial-and-photocatalytic-activity-2023-segura-a-rodriguez-a-hernandez-p-pesenti-h-hernandez-montelongo-j/",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 91360,
+      "sha256": "2c9ba4cc16182755136bb2451e7f435a2304ce93da441cbb2fe69d4f404bb79e",
+      "is_pdf": false,
+      "receipt": "acquisitions.json",
+      "local_hash_verified": true
+    },
+    {
+      "url": "https://buscayvincula.udec.cl/display/a2023028162",
+      "requested_at": "2026-10-20T03:31:24.013750+00:00",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-286/udec-publication.html",
+      "status": 200,
+      "final_url": "https://buscayvincula.udec.cl/display/a2023028162",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 18201,
+      "sha256": "9531df050c4856aa69408261f51c8c6aa1528923e77a114dcc1649212bf09d5d",
+      "is_pdf": false,
+      "receipt": "acquisitions.json",
+      "local_hash_verified": true
+    },
+    {
+      "file": "pubmed.xml",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=36903813&retmode=xml",
+      "requested_at": "2026-10-20T03:34:51.374826+00:00",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-286/pubmed.xml",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=pubmed&id=36903813&retmode=xml",
+      "content_type": "text/xml; charset=UTF-8",
+      "bytes": 28905,
+      "sha256": "9ce56ef493c3b9e47690727917863940dbc734aea05c529f4d7025716ba8300c",
+      "finished_at": "2026-10-20T03:34:51.655614+00:00",
+      "receipt": "acquisitions-followup.json",
+      "local_hash_verified": true
+    },
+    {
+      "file": "biostudies.json",
+      "url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/S-EPMC10004825",
+      "requested_at": "2026-10-20T03:34:51.375320+00:00",
+      "error": "<HTTPError 404: ''>",
+      "finished_at": "2026-10-20T03:34:51.972500+00:00",
+      "receipt": "acquisitions-followup.json"
+    },
+    {
+      "file": "figshare-associated.json",
+      "url": "https://api.figshare.com/v2/articles?resource_doi=10.3390%2Fnano13050935&page_size=100",
+      "requested_at": "2026-10-20T03:34:51.375484+00:00",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-286/figshare-associated.json",
+      "status": 200,
+      "final_url": "https://api.figshare.com/v2/articles?resource_doi=10.3390%2Fnano13050935&page_size=100",
+      "content_type": "application/json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945",
+      "finished_at": "2026-10-20T03:34:52.044331+00:00",
+      "receipt": "acquisitions-followup.json",
+      "local_hash_verified": true
+    },
+    {
+      "file": "icdd-pdf2.html",
+      "url": "https://www.icdd.com/pdf-2/",
+      "requested_at": "2026-10-20T03:34:51.655659+00:00",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-286/icdd-pdf2.html",
+      "status": 200,
+      "final_url": "https://www.icdd.com/pdf-2/",
+      "content_type": "text/html; charset=UTF-8",
+      "bytes": 531233,
+      "sha256": "ee857e6a1e5c6601fe0d81cff8ff06d645c903e1d0b387c90683dcfa6d293234",
+      "finished_at": "2026-10-20T03:34:54.127698+00:00",
+      "receipt": "acquisitions-followup.json",
+      "local_hash_verified": true
+    },
+    {
+      "file": "gawai2017.html",
+      "url": "https://pubs.rsc.org/en/content/articlehtml/2017/ra/c6ra28180j",
+      "requested_at": "2026-10-20T03:34:51.972526+00:00",
+      "error": "<HTTPError 403: 'Forbidden'>",
+      "finished_at": "2026-10-20T03:34:52.014098+00:00",
+      "receipt": "acquisitions-followup.json"
+    },
+    {
+      "url": "https://www.icdd.com/pdfsearch/",
+      "requested_at": "2026-10-20T03:37:17.762046+00:00",
+      "status": 200,
+      "final_url": "https://www.icdd.com/pdfsearch/",
+      "file": "icdd-pdfsearch.html",
+      "bytes": 502275,
+      "sha256": "ca0de3100ab76e5f36bf637777cc00c2ac9f475eb4a12a6dfb6b25fd3bdc9c69",
+      "receipt": "acquisitions-icdd.json",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-286/icdd-pdfsearch.html",
+      "local_hash_verified": true
+    },
+    {
+      "url": "https://www.icdd.com/pdfsearch/",
+      "method": "POST read-only public search",
+      "parameters": {
+        "matName": "Wurtzite",
+        "matFormula": "Zn S",
+        "periodTblYes": "",
+        "periodTblMaybe": "",
+        "periodTblNo": "",
+        "hidepertbl": "8",
+        "yesMaybeNoRd": "yes",
+        "CompName": "1",
+        "ChemForm": "2",
+        "EmpForm": "4",
+        "PhMod": "3",
+        "MinName": "6",
+        "AltName": "7",
+        "nbperpage": "100",
+        "ordercol": "17",
+        "sortorder": "101",
+        "dispage": "1",
+        "submitsearch": "Search"
+      },
+      "requested_at": "2026-10-20T03:37:41.040025+00:00",
+      "file": "icdd-wurtzite-search.html",
+      "status": 200,
+      "final_url": "https://www.icdd.com/pdfsearch/",
+      "bytes": 522764,
+      "sha256": "644fa11344d35efc882c94171c38dea962054856361e22cf6ea1743447b70d66",
+      "receipt": "acquisitions-icdd.json",
+      "parameter_omission": "Ephemeral public form nonce and same-page referer retained only in raw receipt.",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-286/icdd-wurtzite-search.html",
+      "local_hash_verified": true
+    }
+  ],
+  "fresh_historical_hash_comparison": [
+    {
+      "historical_file": "/private/tmp/cmm-round85-sulfides-research/zns2023.pdf",
+      "historical_acquired_at": "2026-10-15T01:07:26.221010Z",
+      "historical_sha256": "731e144c97dadb6580deffa83dcd79efff5170eb78829c9253bf3f0090cf289b",
+      "current_file": "segura2023.pdf",
+      "current_sha256": "731e144c97dadb6580deffa83dcd79efff5170eb78829c9253bf3f0090cf289b",
+      "equal": true,
+      "meaning": "Fresh current response compared with stored historical hash; historical raw root absent."
+    },
+    {
+      "historical_file": "/private/tmp/cmm-round85-sulfides-research/zns2023.xml",
+      "historical_acquired_at": "2026-10-15T01:07:26.220218Z",
+      "historical_sha256": "10d784b650296bd9824e74713459afc159fb7569f2fd4501e32bdf09e5513349",
+      "current_file": "segura2023.xml",
+      "current_sha256": "10d784b650296bd9824e74713459afc159fb7569f2fd4501e32bdf09e5513349",
+      "equal": true,
+      "meaning": "Fresh current response compared with stored historical hash; historical raw root absent."
+    },
+    {
+      "historical_file": "/private/tmp/cmm-round85-sulfides-research/crossref-zns2023.json",
+      "historical_acquired_at": "2026-10-15T01:07:27.244224Z",
+      "historical_sha256": "b43c39dd85222ce28364bd1c59905e0d398f21676c077593bb31597f695aaa21",
+      "current_file": "crossref.json",
+      "current_sha256": "b43c39dd85222ce28364bd1c59905e0d398f21676c077593bb31597f695aaa21",
+      "equal": true,
+      "meaning": "Fresh current response compared with stored historical hash; historical raw root absent."
+    }
+  ],
+  "browser_only_routes": [
+    {
+      "url": "https://www.icdd.com/pdfdld/",
+      "date_utc": "2026-10-20",
+      "state": "Public landing text read; full card not accessed.",
+      "finding": "Free entry downloads require an account and verified student status.",
+      "raw_browser_receipt": "browser-access-final.json"
+    },
+    {
+      "url": "https://pubs.rsc.org/en/content/articlehtml/2017/ra/c6ra28180j",
+      "date_utc": "2026-10-20",
+      "state": "Initial browser-rendered XRD discussion read; direct and later browser fetches 403; no full HTML file retained.",
+      "finding": "Contextual primary-paper use of card 36-1450; not issuing-authority documentation or data from Segura.",
+      "decision": "Context only; no corrected peak assignments or other measurements imported."
+    }
+  ],
+  "source_assessment": {
+    "doi": "10.3390/nano13050935",
+    "pmcid": "PMC10004825",
+    "pmid": "36903813",
+    "title": "Sulfidogenic Bioreactor-Mediated Formation of ZnS Nanoparticles with Antimicrobial and Photocatalytic Activity",
+    "first_author": "Aileen Segura",
+    "publication_date": "2023-03-04",
+    "crossref_index_date": "2026-09-01T03:14:25Z",
+    "date_limit": "Metadata indexing date is not an experimental or article revision date.",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "acquisition_state": "Complete official 14-page PDF and complete Europe PMC XML acquired fresh; byte-identical to historical hashes.",
+    "inspection_scope": [
+      "PDF pages 1-3 methods and sample provenance",
+      "Entire XML Section 3.1 characterization text, including TEM, optical and XPS interpretation",
+      "Phase discussion PDF pages 6-7; original pages visually inspected",
+      "Original Figure 4",
+      "Full XML supplementary-material scan",
+      "PDF p.12 Data Availability and relevant backmatter",
+      "Crossref and PubMed update fields"
+    ],
+    "not_claimed": "Independent review of complete antimicrobial or photocatalytic experiments.",
+    "supplementary_material_elements": 0,
+    "data_availability": {
+      "locator": "PDF p.12",
+      "text": "Not applicable."
+    },
+    "dominant_phase_source_claim": "Predominantly cubic zincblende; major (111),(220),(311); ICDD 04-012-0803.",
+    "disputed_secondary_phase_source_claim": "34,36.2,47.6 degree 2theta assigned to hexagonal (002),(101),(102), a=0.3822 nm,c=0.6375 nm,ICDD 00-036-1450.",
+    "figure4_observation": "Major cubic labels only; no disputed hexagonal labels, reference-stick overlay, quantitative refinement components or residuals.",
+    "causal_limit": "Bioreactor H2S generation and downstream precipitation do not establish phase-specific biological selection.",
+    "fraction_limit": "Formula, XPS chemistry, averaged Scherrer size, TEM particle size, optical band-gap comparisons and suggested overlap/asymmetry do not supply a quantitative phase fraction or resolve the disputed hkl assignment.",
+    "decision": "Defer as wurtzite corroboration; no record change."
+  },
+  "correction_screen": {
+    "crossref_relation": {},
+    "crossref_update_to": null,
+    "crossref_updated_by": null,
+    "pubmed_comments_corrections_count": 0,
+    "publisher_history": "403; not inspected",
+    "finding": "No resolving notice located in checked metadata and bounded result sets."
+  },
+  "reference_pattern": {
+    "cited_identifier": "ICDD PDF 00-036-1450",
+    "official_card_acquired": false,
+    "official_public_search": {
+      "url": "https://www.icdd.com/pdfsearch/",
+      "material_name": "Wurtzite",
+      "formula": "Zn S",
+      "items_per_page": 100,
+      "returned_records": 29,
+      "pages": 1,
+      "all_returned_rows_inspected": true,
+      "displayed_columns": [
+        "Database product",
+        "Compound name",
+        "Chemical formula",
+        "Empirical formula",
+        "Phase modification",
+        "Mineral name",
+        "Alternate name"
+      ],
+      "limit": "No card-number column, unit cells, intensities or hkl arrays in displayed results."
+    },
+    "reuse": "ICDD copyright applies; no licensed card content acquired or redistributed."
+  },
+  "calculation": {
+    "type": "Curator internal-consistency calculation; no fitting of experimental data",
+    "input_source": "Segura2023 Section3.1 pp6-7 and Eq1; Section2.2 confirms CuKalpha",
+    "a_nm": 0.3822,
+    "c_nm": 0.6375,
+    "wavelength_nm": 0.1541,
+    "order_n": 1,
+    "formula_d": "1/d^2 = (4/3)*(h^2+h*k+k^2)/a^2 + l^2/c^2",
+    "formula_two_theta": "2*asin(lambda/(2*d))*180/pi",
+    "results": [
+      {
+        "hkl": [
+          0,
+          0,
+          2
+        ],
+        "d_nm": 0.31875,
+        "calculated_two_theta_deg": 27.976805181101803,
+        "paper_two_theta_deg": 34.0,
+        "difference_paper_minus_calculated_deg": 6.023194818898197
+      },
+      {
+        "hkl": [
+          1,
+          0,
+          1
+        ],
+        "d_nm": 0.29375945483304394,
+        "calculated_two_theta_deg": 30.411904599871004,
+        "paper_two_theta_deg": 36.2,
+        "difference_paper_minus_calculated_deg": 5.788095400128999
+      },
+      {
+        "hkl": [
+          1,
+          0,
+          2
+        ],
+        "d_nm": 0.2295971599113925,
+        "calculated_two_theta_deg": 39.216568366681024,
+        "paper_two_theta_deg": 47.6,
+        "difference_paper_minus_calculated_deg": 8.383431633318978
+      }
+    ]
+  },
+  "calculation_reproduction": {
+    "script": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-286/reproduce-phase-consistency.py",
+    "sha256": "dd86bc8557c655a05b52a743b4df0c16b85ba0fca948b4bf852ed8507496c88e",
+    "passed": true,
+    "tolerance_degrees": 1e-10,
+    "interpretation": "Internal printed-input check, not raw-data refinement, alternative phase identification or proof of wurtzite absence."
+  },
+  "acceptance_dispositions": [
+    {
+      "strand": 1,
+      "state": "unresolved",
+      "finding": "Printed-cell calculation reconfirms mismatch; no authoritative reconciliation.",
+      "missing": "Public sample-linked correction or indexed diffraction data, intended reference identifier and edition, wavelength/cell/hkl reconciliation."
+    },
+    {
+      "strand": 2,
+      "state": "unresolved",
+      "finding": "Independent support sufficient to accept disputed secondary phase not located; fraction not defensibly estimable.",
+      "missing": "Actual diffraction array and phase-resolving analysis; quantitative method/model/calibration/uncertainty for any fraction."
+    },
+    {
+      "strand": 3,
+      "state": "retained_constraint",
+      "finding": "Keep author-described predominant cubic product and proposed mixture qualified; separate microbial sulfide production from phase-specific causation.",
+      "prohibited_inferences": [
+        "Pure wurtzite",
+        "Quantitative fraction",
+        "Alternative phase guessed from peak positions",
+        "Whole-product functional outcomes assigned to pure wurtzite"
+      ]
+    },
+    {
+      "strand": 4,
+      "state": "not_triggered",
+      "finding": "No justified owner edit; owner/history/review remain unchanged.",
+      "future_gate": "Exact corrected source, claim-level curation, EDIT history and fresh independent scientific review before record acceptance."
+    }
+  ],
+  "ranked_handoff": [
+    {
+      "priority": 1,
+      "input": "Public authoritative correction or sample-linked indexed diffraction data",
+      "reason": "Directly resolves the acceptance-critical consistency conflict."
+    },
+    {
+      "priority": 2,
+      "input": "Authoritative reference card or documented legitimate export",
+      "reason": "Verifies intended material, polymorph, edition and pattern provenance."
+    },
+    {
+      "priority": 3,
+      "input": "Quantitative mixture analysis and uncertainty",
+      "reason": "Needed separately for any phase-fraction claim after identity resolution."
+    }
+  ],
+  "raw_inventory": [
+    {
+      "file": "286search1.json",
+      "bytes": 31225,
+      "sha256": "a1cf66018cb5d9a634af94d128a91831b2eff7fb52f859b29be8ac9287022c69"
+    },
+    {
+      "file": "286search2.json",
+      "bytes": 28385,
+      "sha256": "bbe45c7c1443ad03f1e5c77ac1a18934d56f19c185edac383d7351df375c14ed"
+    },
+    {
+      "file": "286search3-repeat.json",
+      "bytes": 30518,
+      "sha256": "97a424befcd90114ff43dde247947c715e7535822dc5966fe91af3068a164dd4"
+    },
+    {
+      "file": "acquire-followup.py",
+      "bytes": 1404,
+      "sha256": "4ab56aa7b8e93bc8541ba3f042e29d81ae44f5a6cc4fc1e68f94a1c920a9839f"
+    },
+    {
+      "file": "acquire.py",
+      "bytes": 1854,
+      "sha256": "3ee46e6ceaaed62523524cd7ea3a7d4995f7b927be73f3f30517487028fd9d5d"
+    },
+    {
+      "file": "acquisitions-followup.json",
+      "bytes": 2307,
+      "sha256": "a424908d82498b0ae672012b9ff88d6f23b98016419c3ae44907f04cff6f2f82"
+    },
+    {
+      "file": "acquisitions-icdd.json",
+      "bytes": 1253,
+      "sha256": "667817d436370134d0f11cd08b65f61da21f2d8ea271a30a6face6d8cf4b9ab1"
+    },
+    {
+      "file": "acquisitions.json",
+      "bytes": 3037,
+      "sha256": "25cd7fb254ec40b689e20bc7ffc8f9f4e6944b60e0a265c0734622953c1e1f15"
+    },
+    {
+      "file": "browser-access-final.json",
+      "bytes": 2339,
+      "sha256": "4ea74ac5ee0c9adf1a0e72f2cee9026c255d2f3ec44f0b8ce05b3a082db64087"
+    },
+    {
+      "file": "crossref.json",
+      "bytes": 24008,
+      "sha256": "b43c39dd85222ce28364bd1c59905e0d398f21676c077593bb31597f695aaa21"
+    },
+    {
+      "file": "dedup-receipt.json",
+      "bytes": 2034,
+      "sha256": "7edb3376cbe5c78a9eee7301cda660697a860197a39a68f5c9b9a8d2d9c1f646"
+    },
+    {
+      "file": "dedup-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "file": "dedup.jsonl",
+      "bytes": 142320,
+      "sha256": "0eab68c1cd6730d8110bdb5426dc8472f261ae24aec5776c07edab3c17fa182e"
+    },
+    {
+      "file": "figshare-associated.json",
+      "bytes": 2,
+      "sha256": "4f53cda18c2baa0c0354bb5f9a3ecbe5ed12ab4d8e11ba873c2f11161202b945"
+    },
+    {
+      "file": "icdd-pdf2-text.txt",
+      "bytes": 22923,
+      "sha256": "d10ee97b51dfba4f33b1791e00efffd07b3144cb730012c8e96a264f14d351ce"
+    },
+    {
+      "file": "icdd-pdf2.html",
+      "bytes": 531233,
+      "sha256": "ee857e6a1e5c6601fe0d81cff8ff06d645c903e1d0b387c90683dcfa6d293234"
+    },
+    {
+      "file": "icdd-pdfsearch.html",
+      "bytes": 502275,
+      "sha256": "ca0de3100ab76e5f36bf637777cc00c2ac9f475eb4a12a6dfb6b25fd3bdc9c69"
+    },
+    {
+      "file": "icdd-wurtzite-search.html",
+      "bytes": 522764,
+      "sha256": "644fa11344d35efc882c94171c38dea962054856361e22cf6ea1743447b70d66"
+    },
+    {
+      "file": "icdd-wurtzite-search.txt",
+      "bytes": 10609,
+      "sha256": "6c57cfe6cf9d0dc568acd75dccecf49e57e59d5bed7415794d3e6ccaa7b417ed"
+    },
+    {
+      "file": "phase-consistency.json",
+      "bytes": 1150,
+      "sha256": "7f4c1df272f3edab58c2bf8d7e376672fbeae9eb1450e486653e172897e2a390"
+    },
+    {
+      "file": "pubmed.xml",
+      "bytes": 28905,
+      "sha256": "9ce56ef493c3b9e47690727917863940dbc734aea05c529f4d7025716ba8300c"
+    },
+    {
+      "file": "reproduce-phase-consistency.py",
+      "bytes": 893,
+      "sha256": "dd86bc8557c655a05b52a743b4df0c16b85ba0fca948b4bf852ed8507496c88e"
+    },
+    {
+      "file": "root-initial-web.json",
+      "bytes": 32072,
+      "sha256": "3fe7390d0d1a81c772431576f98fe172fc348509d560a7365e34b85834ac950d"
+    },
+    {
+      "file": "segura-page06.png",
+      "bytes": 568630,
+      "sha256": "cd9d3d4b1565d9cf9a9fb6a7821b76c37fd48ee904b82bfc2b4b132520bb8a71"
+    },
+    {
+      "file": "segura-page07.png",
+      "bytes": 491678,
+      "sha256": "071b7004633c70fb98c5937efd3616ebbf04e224822ae2d699ff4f0507591112"
+    },
+    {
+      "file": "segura2023.pdf",
+      "bytes": 3263018,
+      "sha256": "731e144c97dadb6580deffa83dcd79efff5170eb78829c9253bf3f0090cf289b"
+    },
+    {
+      "file": "segura2023.txt",
+      "bytes": 136689,
+      "sha256": "626c6d3c7c68424239f42fbcef09b9204f20c1d34f6a06c95055b9ad275fb6a3"
+    },
+    {
+      "file": "segura2023.xml",
+      "bytes": 124146,
+      "sha256": "10d784b650296bd9824e74713459afc159fb7569f2fd4501e32bdf09e5513349"
+    },
+    {
+      "file": "uct-publication.html",
+      "bytes": 91360,
+      "sha256": "2c9ba4cc16182755136bb2451e7f435a2304ce93da441cbb2fe69d4f404bb79e"
+    },
+    {
+      "file": "udec-publication.html",
+      "bytes": 18201,
+      "sha256": "9531df050c4856aa69408261f51c8c6aa1528923e77a114dcc1649212bf09d5d"
+    }
+  ],
+  "checks": {
+    "json_serialization": "PASS",
+    "source_receipt_hashes": "PASS",
+    "historical_hash_matches": "3/3",
+    "pdf_pages": 14,
+    "calculation_reproduction": "PASS",
+    "owner_hash_unchanged": true,
+    "record_history_review_diff_empty": true,
+    "markdown_local_links": [
+      {
+        "target": "../../../data/records/wurtzite.yaml",
+        "exists": true
+      },
+      {
+        "target": "../round85-wurtzite-20261015/report.md",
+        "exists": true
+      },
+      {
+        "target": "../../../reviews/structured/20261015T013238Z-wurtzite-round85-independent/review.md",
+        "exists": true
+      }
+    ],
+    "markdown_trailing_whitespace": "PASS",
+    "git_diff_check": "PASS",
+    "no_independent_scientific_review_claimed": true,
+    "no_record_validation_or_repository_wide_gates_claimed": true
+  },
+  "report": {
+    "path": "research/sources/issue-286-wurtzite-indexing/20261020T033859Z.md",
+    "sha256": "200f309bb53b211c9dc169902517c395ba439f895e54bc9b8caba4eb825cd57c",
+    "bytes": 12846,
+    "word_count": 1639
+  }
+}
