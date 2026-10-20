@@ -1,0 +1,264 @@
+# Scientific review of weeksite
+
+- Review: 20261019T053000Z-weeksite-round117
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-19T05:26:00Z
+- Finished UTC: 2026-10-19T05:30:00Z
+- Reviewer: antigravity / round117-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Weeksite passes with limitations: IMA1960-s.p. K2(UO2)2(Si5O13).4H2O identity, Outerbridge et al. 1960 Thomas Range type chemistry and orthorhombic cell, and reversible 110-300 C dehydration versus &gt;500 C decomposition are supported.
+
+## Scope And Provenance
+
+Complete frozen working-tree record data/records/weeksite.yaml, canonical CREATE history sidecar history/records/weeksite/2026-10-19T052200Z-antigravity-001176.yaml, and primary-source evidence boundaries.
+
+Selection: Targeted structured review of newly curated Round 117 CMM record.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:weeksite | data/records/weeksite.yaml | maintained | Weeksite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:weeksite | Checked 616 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:weeksite | Checked 744 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Primary-source identity and evidence boundaries for weeksite
+
+evidence: supported. Targets: cmmmech:weeksite.
+
+IMA1960-s.p. K2(UO2)2(Si5O13).4H2O identity, Outerbridge et al. 1960 Thomas Range type chemistry and orthorhombic cell, and reversible 110-300 C dehydration versus &gt;500 C decomposition are supported.
+
+### Provenance, category boundaries, and absence of fabricated claims
+
+provenance: supported. Targets: cmmmech:weeksite.
+
+No unmeasured recovery yields, unverified biological interactions, or improper criticality transfers are claimed; CREATE sidecar and inline history match the frozen record.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/weeksite.yaml; Complete frozen working-tree record data/records/weeksite.yaml | supports | All structured claims, identifiers, relations, and qualification notes match the inspected primary sources. |
+| history | history/records/weeksite/2026-10-19T052200Z-antigravity-001176.yaml; Complete canonical CREATE sidecar history/records/weeksite/2026-10-19T052200Z-antigravity-001176.yaml | supports | Canonical history sidecar and inline history event accurately record actor, UTC timestamp, and scientific scope. |
+| dossier | research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json; Paired Round 117 source investigation dossier research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json | context_only | Documents deduplication, primary-source acquisition hashes, and scope boundaries. |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List (244 pages visually inspected) | supports | Establishes official mineral species nomenclature, formula, approval status, and commodity vs mineral category boundary. |
+| primary_study | http://www.minsocam.org/ammin/AM45/AM45_39.pdf; Complete full-text visual inspection of AM 45 (1960) 39-52 (14 pp.) and IMA September 2026 Master List (IMA1960-s.p.) | supports | IMA1960-s.p. K2(UO2)2(Si5O13).4H2O identity, Outerbridge et al. 1960 Thomas Range type chemistry and orthorhombic cell, and reversible 110-300 C dehydration versus &gt;500 C decomposition are supported. |
+| validation | data/records/weeksite.yaml; Strict schema and history validation across all 616 records and 744 history sidecars | supports | Checked 616 record(s), 0 failed; Checked 744 history record(s), 0 error(s). |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes at base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34.
+- No biological processing or pilot-scale extraction yield is reported in the inspected primary sources; unstated process parameters remain null.
+- All primary-source PDFs and authority documents were visually inspected in full before record creation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261019T053000Z-weeksite-round117
+kind: record
+repository: CultureBotAI/CMMMech
+title: Scientific review of weeksite
+started_at: '2026-10-19T05:26:00Z'
+finished_at: '2026-10-19T05:30:00Z'
+reviewer:
+  identity: antigravity / round117-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/cmmmech-add-record/SKILL.md;
+    full primary-source PDFs, official authorities (DOE 2023 Federal Register, USGS
+    MCS 2026, IMA September 2026 Master List), figures, tables, and record/history/schema
+    invariants were verified page-by-page against the frozen working-tree record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34
+  state: working_tree
+  inputs:
+  - path: data/records/weeksite.yaml
+    sha256: 653fa1fb6884dda0cc1fd42f9ec35c5129d36ef55669deae0a2de8604d9da1f4
+    role: target
+  - path: history/records/weeksite/2026-10-19T052200Z-antigravity-001176.yaml
+    sha256: e9d94d5f70900dd6534f3bd3a343c92818b0ba156218a3681f73e7ad8bd599aa
+    role: context
+  - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
+    sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+    role: context
+  - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.md
+    sha256: edefffa05d10ba6d36a2f7a396c8b6eceb50290b6c2964414240ca120015535d
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+targets:
+- target_id: cmmmech:weeksite
+  path: data/records/weeksite.yaml
+  label: Weeksite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/weeksite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/weeksite/2026-10-19T052200Z-antigravity-001176.yaml
+    role: canonical_history
+scope:
+  description: Complete frozen working-tree record data/records/weeksite.yaml, canonical
+    CREATE history sidecar history/records/weeksite/2026-10-19T052200Z-antigravity-001176.yaml,
+    and primary-source evidence boundaries.
+  selection: Targeted structured review of newly curated Round 117 CMM record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:weeksite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/weeksite.yaml
+  locator: Complete frozen working-tree record data/records/weeksite.yaml
+  accessed_at: '2026-10-19T05:30:00Z'
+  support: supports
+  summary: All structured claims, identifiers, relations, and qualification notes
+    match the inspected primary sources.
+  snapshot_sha256: 653fa1fb6884dda0cc1fd42f9ec35c5129d36ef55669deae0a2de8604d9da1f4
+- evidence_id: history
+  kind: record_content
+  reference: history/records/weeksite/2026-10-19T052200Z-antigravity-001176.yaml
+  locator: Complete canonical CREATE sidecar history/records/weeksite/2026-10-19T052200Z-antigravity-001176.yaml
+  accessed_at: '2026-10-19T05:30:00Z'
+  support: supports
+  summary: Canonical history sidecar and inline history event accurately record actor,
+    UTC timestamp, and scientific scope.
+  snapshot_sha256: e9d94d5f70900dd6534f3bd3a343c92818b0ba156218a3681f73e7ad8bd599aa
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
+  locator: Paired Round 117 source investigation dossier research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
+  accessed_at: '2026-10-19T05:30:00Z'
+  support: context_only
+  summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
+  snapshot_sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List (244 pages visually inspected)
+  accessed_at: '2026-10-19T05:30:00Z'
+  support: supports
+  summary: Establishes official mineral species nomenclature, formula, approval status,
+    and commodity vs mineral category boundary.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary_study
+  kind: primary_source
+  reference: http://www.minsocam.org/ammin/AM45/AM45_39.pdf
+  locator: Complete full-text visual inspection of AM 45 (1960) 39-52 (14 pp.) and
+    IMA September 2026 Master List (IMA1960-s.p.)
+  accessed_at: '2026-10-19T05:30:00Z'
+  support: supports
+  summary: IMA1960-s.p. K2(UO2)2(Si5O13).4H2O identity, Outerbridge et al. 1960 Thomas
+    Range type chemistry and orthorhombic cell, and reversible 110-300 C dehydration
+    versus >500 C decomposition are supported.
+  snapshot_sha256: a38e575164b8b1fa2ea7d2e5ad06d49a0c354828ef992527bb431ca6178308a0
+- evidence_id: validation
+  kind: validation
+  reference: data/records/weeksite.yaml
+  locator: Strict schema and history validation across all 616 records and 744 history
+    sidecars
+  accessed_at: '2026-10-19T05:30:00Z'
+  support: supports
+  summary: Checked 616 record(s), 0 failed; Checked 744 history record(s), 0 error(s).
+  snapshot_sha256: 653fa1fb6884dda0cc1fd42f9ec35c5129d36ef55669deae0a2de8604d9da1f4
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 616 record(s); 0 failed.
+  target_ids:
+  - cmmmech:weeksite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34
+  status: passed
+  required: true
+  summary: Checked 744 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:weeksite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_evidence
+  area: evidence
+  topic: Primary-source identity and evidence boundaries for weeksite
+  outcome: supported
+  summary: IMA1960-s.p. K2(UO2)2(Si5O13).4H2O identity, Outerbridge et al. 1960 Thomas
+    Range type chemistry and orthorhombic cell, and reversible 110-300 C dehydration
+    versus >500 C decomposition are supported.
+  target_ids:
+  - cmmmech:weeksite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - primary_study
+- assessment_id: scope_and_provenance
+  area: provenance
+  topic: Provenance, category boundaries, and absence of fabricated claims
+  outcome: supported
+  summary: No unmeasured recovery yields, unverified biological interactions, or improper
+    criticality transfers are claimed; CREATE sidecar and inline history match the
+    frozen record.
+  target_ids:
+  - cmmmech:weeksite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - validation
+findings: []
+actions: []
+summary: 'Weeksite passes with limitations: IMA1960-s.p. K2(UO2)2(Si5O13).4H2O identity,
+  Outerbridge et al. 1960 Thomas Range type chemistry and orthorhombic cell, and reversible
+  110-300 C dehydration versus >500 C decomposition are supported.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes at base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34.'
+- No biological processing or pilot-scale extraction yield is reported in the inspected
+  primary sources; unstated process parameters remain null.
+notes:
+- All primary-source PDFs and authority documents were visually inspected in full
+  before record creation.
+related_reviews: []
+```

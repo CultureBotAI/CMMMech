@@ -8,13 +8,27 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 602 material records.
+The catalogue currently contains 616 material records.
 
-The [latest curation report](research/ingests/round116-frontier-20261016.md) links
+The [latest curation report](research/ingests/round117-frontier-20261019.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Electrical steel](data/records/electrical-steel.yaml) | U.S. DOE 2023 Critical Material commodity identity and USGS ferrosilicon/steel supply-chain context | Non-microbial alloy commodity; distinct from elemental silicon and bulk carbon steel |
+| [Silicon carbide](data/records/silicon-carbide.yaml) | U.S. DOE 2023 Critical Material commodity identity and high-temperature Acheson carbothermic synthesis | Manufactured abrasive/semiconductor commodity kept distinct from natural moissanite |
+| [Synthetic graphite](data/records/synthetic-graphite.yaml) | U.S. DOE 2023 Critical Material commodity identity and ~3,000 °C petroleum-coke graphitization | Manufactured graphite kept distinct from natural graphite and unquantified anode recycling |
+| [Bainbridgeite-(NdCe)](data/records/bainbridgeite-ndce.yaml) | Natural carbonate identity, WDS chemistry, and triclinic P1 structure | Rim/core XRD domain overlap and calculated volatiles; no extraction mechanism |
+| [Piilonenite-(Nd)](data/records/piilonenite-nd.yaml) | Natural Nd-dominant carbonate identity, WDS chemistry, and synchrotron P212121 structure | IMA 2025-031 vs 2025-031b numbering note and stoichiometric CO2/H2O calculation retained |
+| [Mckelveyite-(Y)](data/records/mckelveyite-y.yaml) | Original 1965 Wyoming description and 2008 Mont Saint-Hilaire 1M/2M polytype structure | Pseudotrigonal twinning, BaCO3 admixture, and qualitative H2O2 test kept distinct from recovery |
+| [Adamsite-(Y)](data/records/adamsite-y.yaml) | Natural sodium-yttrium carbonate identity, triclinic P-1 structure, and TGA/DTG dehydration | Partial decarbonation to unindexed oxycarbonate residue is analytical, not recovery |
+| [Thomasclarkite-(Y)](data/records/thomasclarkite-y.yaml) | Natural sodium-yttrium bicarbonate identity, monoclinic P2 structure, and TG/DTG decomposition | Disordered bicarbonate groups and stoichiometric CO2/H2O partition retained |
+| [Petrukite](data/records/petrukite.yaml) | Natural Cu-Fe-Zn-Sn-In sulfide identity, WDS chemistry, and orthorhombic Pmn21 superstructure | Coupled In-Zn substitution and open boundary with sakuraiite; no processing claim |
+| [Ferrokësterite](data/records/ferrokesterite.yaml) | Natural Cligga mine Cu2FeSnS4 sulfide identity, WDS chemistry, and tetragonal I-4 cell | Polymorphism with stannite and solid solution with kësterite retained |
+| [Sakuraiite](data/records/sakuraiite.yaml) | Natural Ikuno mine (Cu,Zn,Fe)3(In,Sn)S4 re-examination and coupled substitution | Corrected low Ag content and open holotype X-ray crystallography noted |
+| [Ammonioborite](data/records/ammonioborite.yaml) | Natural Larderello ammonium borate identity, stepwise dehydration holds, and larderellite conversion | Historical 1933 oxide formula and 1999 [B15O20(OH)8]3- revision both preserved |
+| [Weeksite](data/records/weeksite.yaml) | Natural potassium uranyl silicate identity and reversible 110–300 °C dehydration holds | Historical 6SiO2 vs modern Si5O13 stoichiometry and >500 °C breakdown preserved |
+| [Richetite](data/records/richetite.yaml) | Natural Shinkolobwe lead uranyl oxide hydrate identity and triclinic P1 structure | Disordered interlayer Pb/Fe/Mg sites and paywalled 2017 refinement boundary noted |
 | [Ezcurrite](data/records/ezcurrite.yaml) | Natural borate identity and laboratory thermal observations | Inferred reactions and unidentified products remain qualified |
 | [Rivadavite](data/records/rivadavite.yaml) | Natural borate identity and laboratory thermal observations | Later atomic structure note remains inaccessible |
 | [Caysichite-(Y)](data/records/caysichite-y.yaml) | Original Canadian identity and separate thermal experiments | Later Russian material has unresolved species equivalence |
