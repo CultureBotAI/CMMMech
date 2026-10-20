@@ -1,0 +1,775 @@
+# Whole-record scientific review of Veatchite after original CIF acquisition
+
+- Review: 20261020T072341Z-veatchite-issue412-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-20T07:15:07Z
+- Finished UTC: 2026-10-20T07:23:41.143471Z
+- Reviewer: codex /root/investigate_134 (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The complete frozen owner is supported with its stated limits; no corrective findings. The new source proves access to three deposited models and supports their site pairing, while retaining printed/deposited discrepancies, inferred specimen correspondence and unresolved modern assignment of RG701/1. Geological associations remain distinct from controlled transitions or microbial mechanisms.
+
+## Scope And Provenance
+
+Whole veatchite owner, all four source bindings, species/polytype scope, specimen provenance, new deposited-model claims, both inline and canonical history events, and exact working diff.
+
+Selection: One assigned maintained record frozen by the curator; native inspect captured its bytes before assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 2da10d95a72146ee0c69cb91fe303348fbadb638.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:veatchite | data/records/veatchite.yaml | maintained | Veatchite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named record validation | passed | True | cmmmech:veatchite | Reviewer run completed: 1 record, 0 failures. |
+| Canonical history validation | passed | True | cmmmech:veatchite | Reviewer run completed: 745 history entries, 0 errors. |
+| Post-edit repository gate | passed | True | cmmmech:veatchite | Reviewer run, session 47355, completed exit 0: 327 tests passed, 3 skipped in 65.35 s; 616 records and 745 history entries validated. |
+| Strict full record validation | passed | True | cmmmech:veatchite | Reviewer run completed: 616 records, 0 failures. |
+
+## Scientific And Domain Assessments
+
+### Mineral identity, polytypes and neighboring species
+
+identity: supported. Targets: cmmmech:veatchite.
+
+Formula and grandfathered status are supported; the three polytypes remain one owner distinct from calcioveatchite, elements and commodity categories.
+
+### Exact specimen and source lineage
+
+provenance: supported. Targets: cmmmech:veatchite.
+
+The owner accurately separates the two type specimens and Canadian substitute, and does not transfer the California type locality to RG701/1.
+
+### Deposited site pairing and model-version differences
+
+evidence: supported. Targets: cmmmech:veatchite.
+
+The added deposit source is correctly bound and qualified. Site pairing is supported by coordinates and tensors, while numerical discrepancies and absent underlying data remain explicit.
+
+Independent comparison finds printed Table 2c Sr1=0.9032(6) and Sr2=0.4870(6), versus deposited 0.9047(5) and 0.4787(5); deposited Ca values are rounded 0.10 and 0.52. The printed first Ca row repeats the Ca2 label, whereas the deposit supplies Ca1/Ca2 pairing. CIF2 b=20.740(4) differs from Table 1 b=20.704(1); the article itself differs between abstract and Table 1 for 1M c and 1A beta uncertainty. These are comparisons, not corrections or inferred modern species determinations.
+
+### Structural characterization and conflicting later powder lead
+
+evidence: supported. Targets: cmmmech:veatchite.
+
+Layer stacking, refined H positions and reported powder caution are faithfully attributed to the 2012 work. The owner does not universalize that caution in the face of a later contrary abstract.
+
+### Formation causality, experiments and deployment
+
+scope: supported. Targets: cmmmech:veatchite.
+
+Natural characterization and geological interpretation are not promoted into controlled polytype transitions, microbial transformation or recovery.
+
+### Curation history, maintained inputs and checks
+
+provenance: supported. Targets: cmmmech:veatchite.
+
+The new inline and canonical EDIT record the parent's actual change, preserve historical CREATE provenance and link the source handoff. Frozen owner/history hashes remain unchanged throughout review; all required validation passed.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/veatchite.yaml; Complete frozen record and working diff. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412/data/records/veatchite.yaml | supports | Retains one mineral owner for three polytypes, explicit specimen and model limits, and no mechanism or criticality assertion. |
+| history-old | history/records/veatchite/2026-10-15T235132Z-codex-b4cb8c.yaml; Complete file. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412/history/records/veatchite/2026-10-15T235132Z-codex-b4cb8c.yaml | supports | Historical CREATE event, actor and source-access state remain immutable. |
+| history-new | history/records/veatchite/2026-10-20T071031Z-codex-5a7401.yaml; Complete file. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412/history/records/veatchite/2026-10-20T071031Z-codex-5a7401.yaml | supports | Parent curator's actual EDIT accurately records newly acquired models and bounded provenance, matching inline event and working diff. |
+| neighbor | data/records/calcioveatchite.yaml; Complete file. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412/data/records/calcioveatchite.yaml | supports | Existing separate Ca-Sr-ordered species owner remains unchanged; used only for boundary comparison. |
+| prior | reviews/structured/20261016T000310Z-veatchite-round106-independent/review.yaml; Complete previous native observation, verdict, findings and limitations. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412/reviews/structured/20261016T000310Z-veatchite-round106-independent/review.yaml | context_only | Previous qualified pass had no corrective findings; its unacquired-deposit limitation is historical and not rewritten. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; September 2026 official edition; original PDF p. 228 Veatchite and p. 35 Calcioveatchite visually inspected; p. 1 status/year definitions checked during same-day acquisition. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/ima-2026-09.pdf | supports | Veatchite is Sr2B11O16(OH)5(H2O), G, 1938; the distinct calcioveatchite row supports the species boundary. G/year is not a sequential approval identifier. |
+| grice | https://doi.org/10.2138/am.2012.3889; Complete seven-page original from https://www.rruff.net/doclib/am/vol97/AM97_489.pdf; all original pages 489–495 visually inspected, especially p. 489 Material studied/Table 1, p. 490 methods/deposit footnote, p. 491 Table 2c and site discussion, Tables 3a–c and Figures 1–4, p. 494 geological interpretation. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-412/grice2012.pdf | supports | Separate natural specimens establish polytype structures, with Canadian 2M substituted for preserved California type. H positions were refined, two type specimens were not newly chemically analysed, and precise geological P–T conditions remain unknown. |
+| deposit | http://www.minsocam.org/MSA/AmMin/TOC/2012/Apr12_Data/Apr12_Data.html; Official April 2012 Vol. 97 No. 4 deposit list, Grice and Pring p. 489 entry AM-12-015 and its three links. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-412/msa-apr2012-deposits.html | supports | The three linked CIFs belong to this article. Adjacent observed-structure-factor links belong to a different paper and cannot fill the veatchite gap. |
+| cif1 | http://www.minsocam.org/MSA/AmMin/TOC/2012/Apr12_Data/Grice_p489_12_CIF1.txt; Complete native CIF; cell and symmetry scalars, all loop headers, atom-site and anisotropic-displacement loops independently read and inventoried. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-412/Grice_p489_12_CIF1.txt | supports | Block veat1a has inversion symmetry operators, 42 atom-site rows and no museum identifier; beta is 82.70 in this deposit, differing in precision from the printed article. |
+| cif2 | http://www.minsocam.org/MSA/AmMin/TOC/2012/Apr12_Data/Grice_p489_12_CIF2.txt; Complete native CIF; cell and symmetry scalars, all loop headers, atom-site and anisotropic-displacement loops independently read and inventoried. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-412/Grice_p489_12_CIF2.txt | supports | Block pveat has P21-compatible symmetry operators and 42 atom-site rows; deposited b=20.740(4) differs from printed 20.704(1). Numerical model selection is not warranted. |
+| cif3 | http://www.minsocam.org/MSA/AmMin/TOC/2012/Apr12_Data/Grice_p489_12_CIF3.txt; Complete native CIF; cell and symmetry scalars, all loop headers, atom-site and anisotropic-displacement loops independently read and inventoried. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-412/Grice_p489_12_CIF3.txt | supports | Block veat has Cc-compatible operators and 44 atom-site rows. Sr1/Ca1 and Sr2/Ca2 have identical coordinates, Ueq and all six ADP entries; deposited occupancies and refinement statistics differ from the printed model. |
+| cif-audit | Independent deposited-file inspection receipt; Reviewer-owned parser/rehash result, all three CIF inventories and Sr/Ca coordinate/displacement equality assertions; script review-verify.py retained alongside. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-412/review-independent-artifacts.json | supports | Six loops per CIF; no observed-reflection loop, explicit museum/locality token or embedded original-refinement instruction field. This is file-content inspection, not model re-refinement. |
+| pekov | https://doi.org/10.3390/min14090901; Complete 18-page publisher PDF. Original pp. 1–3, 5–6, 8, 10–11 and 14–16 visually inspected: nomenclature, specimen list and methods; Table 1/Figure 6; Tables 3–4; sections 5.1–5.2 and Figures 7–8. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-412/pekov2024.pdf | supports | The species boundary depends on ordered cation sites. Newly studied material comes from Russia, Kazakhstan and California; the Canadian discussion cites earlier work and is not a fresh RG701/1 analysis. |
+| rowe-abstract | https://doi.org/10.1017/S0885715613000766; Public publisher title, DOI, abstract and supplement link; not complete main article. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-412/rowe2014-publisher.html | context_only | The later abstract reports successful micro-powder discrimination and coexistence. It limits interpretation of the 2012 caution but cannot be promoted into full experimental curation from this access level. |
+| rowe-supplement | https://doi.org/10.1017/S0885715613000766; Original supplemental model image viewed via retained PNG conversion; Veatchite-2M.TXT table. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-412/rowe-sup001.tif | context_only | An atomic-model table with nominal Sr occupancies; not a raw observed powder pattern, a Grice correction or proven reanalysis of RG701/1. |
+| search | Fresh bounded correction, retraction and specimen/data search; One web batch at 07:16:30 UTC; exact queries: "10.2138/am.2012.3889" correction erratum; "10.3390/min14090901" correction retraction; "veatchite" "RG701/1" calcioveatchite; "veatchite" "AM-12-015" structure factors. First returned batch, no filters or pagination; full arguments/results retained. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412-review-search.json | context_only | No authoritative correction or explicit exact-crystal reassignment was verified in these results. Search snippets were not substituted for original evidence. |
+| dedup | Ignored-inclusive maintained-source and owner search; rg --no-ignore --hidden --follow --json -i 'veatchite&#124;AM-12-015&#124;10[.]2138/am[.]2012[.]3889&#124;10[.]3390/min14090901' across issue-412 data, research, reviews, history, docs, .claude and .agents. Receipt issue-412-review-dedup.json at 07:16:15 UTC. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412-review-dedup.jsonl | context_only | 574 matching lines in 58 files; hidden/ignored files included. Raw sources were inspected separately; unrelated home/temp trees and binary interiors excluded. Count is search coverage, not evidence novelty. |
+| named | UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache UV_OFFLINE=1 uv run --no-sync cmmmech validate data/records/veatchite.yaml --require-records; Actual retained terminal log from this review on the frozen post-edit record. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412-review-named.log | supports | Reviewer run completed: 1 record, 0 failures. |
+| history | UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache UV_OFFLINE=1 uv run --no-sync cmmmech validate-history --base 2da10d95a72146ee0c69cb91fe303348fbadb638; Actual retained terminal log from this review on the frozen post-edit record. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412-review-history.log | supports | Reviewer run completed: 745 history entries, 0 errors. |
+| batch | UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache UV_OFFLINE=1 just check; Actual retained terminal log from this review on the frozen post-edit record. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412-review-batch.log | supports | Reviewer run, session 47355, completed exit 0: 327 tests passed, 3 skipped in 65.35 s; 616 records and 745 history entries validated. |
+| strict | UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache UV_OFFLINE=1 uv run --no-sync cmmmech validate --require-records; Actual retained terminal log from this review on the frozen post-edit record. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412-review-strict.log | supports | Reviewer run completed: 616 records, 0 failures. |
+
+## Limits And Additional Notes
+
+- The CIF-to-polytype mapping follows official deposit association, cells, symmetry operators and structures. None of the three files explicitly names the museum specimens; this does not prove exact crystal identity.
+- The files contain model coordinates and displacement data but no observed-reflection loops or original refinement instruction file. Their numerical and methodological differences from the article cannot be resolved into an authoritative correction by this review.
+- The precise modern species assignment of the 2012 Canadian RG701/1 crystal remains unresolved. Pekov 2024 provides modern species boundaries and separate material, not direct reanalysis of that crystal.
+- No controlled temperature/pressure transition, microbial causation, isolated recovery yield or industrial deployment is established by the reviewed natural-mineral studies.
+- Rowe 2014 is a relevant conflicting later powder-diffraction lead at abstract/supplement level only. The record attributes its powder caution to Grice and Pring rather than asserting a universal inability to distinguish polytypes.
+- Correction/retraction and missing-data searches are bounded; no universal absence claim is made. Ignored and hidden maintained files were included, but unrelated home/temp trees and binary interiors were excluded from text deduplication.
+- The IMA PDF was this reviewer's fresh official acquisition earlier the same UTC day for the immediately preceding source task. It was reused by hash and the veatchite/calcioveatchite rows independently rendered and visually inspected for this round; no separate download is claimed.
+- All required record, history and batch checks completed successfully on the frozen post-edit owner. Parent handles final canonical and structured-review corpus gates after this saved bundle; no duplicate full batch run is needed.
+- This is a working-tree scientific review against the retained main base. The parent controls generated render changes; this reviewer only wrote scratch receipts and the native review bundle.
+- The previous native review has no corrective findings. This new observation advances the deposit-access subgap without silently closing issue 412 or inventing previous finding identities.
+- An optional rendering attempt with system Python lacked PyMuPDF. Installed pdftoppm then rendered the requested original pages successfully; no review check remained unavailable.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261020T072341Z-veatchite-issue412-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Whole-record scientific review of Veatchite after original CIF acquisition
+started_at: '2026-10-20T07:15:07Z'
+finished_at: '2026-10-20T07:23:41.143471Z'
+reviewer:
+  identity: codex /root/investigate_134
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from both the source investigator and the parent
+    owner/history curator. This reviewer made no record or history edits. Shared newly
+    acquired original files were independently read, relevant original pages visually
+    inspected, all three CIFs independently inventoried and compared, and exact frozen
+    inputs captured by native inspect before judgment.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The complete frozen owner is supported with its stated limits; no corrective
+  findings. The new source proves access to three deposited models and supports their
+  site pairing, while retaining printed/deposited discrepancies, inferred specimen
+  correspondence and unresolved modern assignment of RG701/1. Geological associations
+  remain distinct from controlled transitions or microbial mechanisms.
+source:
+  git_revision: 2da10d95a72146ee0c69cb91fe303348fbadb638
+  state: working_tree
+  inputs:
+  - path: data/records/calcioveatchite.yaml
+    sha256: 124baa6951a2fcb650fa2a3df2c5eedfe89001ac73c9b8586767cdb7e4848839
+    role: context
+  - path: data/records/veatchite.yaml
+    sha256: 1c65edab9834a5ee4d508c9f7dc3d2fdfdecf03b0d39916e07c73ff5f52f890e
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/veatchite/2026-10-15T235132Z-codex-b4cb8c.yaml
+    sha256: a98d0d02ed47914d002a621c31b1c7f9f6c50bdae55d1a5e88f2e13722669094
+    role: context
+  - path: history/records/veatchite/2026-10-20T071031Z-codex-5a7401.yaml
+    sha256: a6696e5fb6f90c93edffc0043a0eb4aa60bd581017d65c2a1c828a7ba9e416d0
+    role: context
+  - path: research/sources/issue-412-veatchite-specimen-evidence/20261020T070313Z.json
+    sha256: befa4d5dcfa1645ec96251bb6486d1220cfebbad551d256d81456a5ab41a91f8
+    role: context
+  - path: research/sources/issue-412-veatchite-specimen-evidence/20261020T070313Z.md
+    sha256: dc7fa872025630fe6808f4a8d6c4ed31c61b5dcde3b6a15def8f3e64b00e18d2
+    role: context
+  - path: reviews/structured/20261016T000310Z-veatchite-round106-independent/review.yaml
+    sha256: 8e564301eec1b4bf26e12f1f3bf286188b8246199e7a5444f88f15c3d331beb3
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+scope:
+  description: Whole veatchite owner, all four source bindings, species/polytype scope,
+    specimen provenance, new deposited-model claims, both inline and canonical history
+    events, and exact working diff.
+  selection: One assigned maintained record frozen by the curator; native inspect
+    captured its bytes before assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:veatchite
+  exclusions:
+  - target: calcioveatchite owner as a separately accepted record
+    reason: Read as boundary context, not a second whole-target scientific review;
+      its bytes are unchanged.
+  - target: new crystallographic re-refinement or retrospective RG701/1 species reassignment
+    reason: Observed reflections, complete original refinement instructions and explicit
+      specimen linkage remain unavailable; the reviewed owner does not claim these
+      outcomes.
+  - target: new Rowe 2014 experiment curation
+    reason: Only public publisher abstract and supplemental model image were inspected;
+      complete main text was not available in the retained acquisition.
+targets:
+- target_id: cmmmech:veatchite
+  path: data/records/veatchite.yaml
+  label: Veatchite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/veatchite.yaml
+    role: maintained material record
+checks:
+- check_id: named
+  name: Named record validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache UV_OFFLINE=1
+    uv run --no-sync cmmmech validate data/records/veatchite.yaml --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Reviewer run completed: 1 record, 0 failures.'
+  target_ids:
+  - cmmmech:veatchite
+  evidence_ids:
+  - named
+- check_id: history
+  name: Canonical history validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache UV_OFFLINE=1
+    uv run --no-sync cmmmech validate-history --base 2da10d95a72146ee0c69cb91fe303348fbadb638
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Reviewer run completed: 745 history entries, 0 errors.'
+  target_ids:
+  - cmmmech:veatchite
+  evidence_ids:
+  - history
+- check_id: batch
+  name: Post-edit repository gate
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache UV_OFFLINE=1
+    just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Reviewer run, session 47355, completed exit 0: 327 tests passed, 3 skipped
+    in 65.35 s; 616 records and 745 history entries validated.'
+  target_ids:
+  - cmmmech:veatchite
+  evidence_ids:
+  - batch
+- check_id: strict
+  name: Strict full record validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache UV_OFFLINE=1
+    uv run --no-sync cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 'Reviewer run completed: 616 records, 0 failures.'
+  target_ids:
+  - cmmmech:veatchite
+  evidence_ids:
+  - strict
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/veatchite.yaml
+  locator: 'Complete frozen record and working diff. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412/data/records/veatchite.yaml'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: supports
+  snapshot_sha256: 1c65edab9834a5ee4d508c9f7dc3d2fdfdecf03b0d39916e07c73ff5f52f890e
+  summary: Retains one mineral owner for three polytypes, explicit specimen and model
+    limits, and no mechanism or criticality assertion.
+- evidence_id: history-old
+  kind: record_content
+  reference: history/records/veatchite/2026-10-15T235132Z-codex-b4cb8c.yaml
+  locator: 'Complete file. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412/history/records/veatchite/2026-10-15T235132Z-codex-b4cb8c.yaml'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: supports
+  snapshot_sha256: a98d0d02ed47914d002a621c31b1c7f9f6c50bdae55d1a5e88f2e13722669094
+  summary: Historical CREATE event, actor and source-access state remain immutable.
+- evidence_id: history-new
+  kind: record_content
+  reference: history/records/veatchite/2026-10-20T071031Z-codex-5a7401.yaml
+  locator: 'Complete file. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412/history/records/veatchite/2026-10-20T071031Z-codex-5a7401.yaml'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: supports
+  snapshot_sha256: a6696e5fb6f90c93edffc0043a0eb4aa60bd581017d65c2a1c828a7ba9e416d0
+  summary: Parent curator's actual EDIT accurately records newly acquired models and
+    bounded provenance, matching inline event and working diff.
+- evidence_id: neighbor
+  kind: record_content
+  reference: data/records/calcioveatchite.yaml
+  locator: 'Complete file. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412/data/records/calcioveatchite.yaml'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: supports
+  snapshot_sha256: 124baa6951a2fcb650fa2a3df2c5eedfe89001ac73c9b8586767cdb7e4848839
+  summary: Existing separate Ca-Sr-ordered species owner remains unchanged; used only
+    for boundary comparison.
+- evidence_id: prior
+  kind: prior_review
+  reference: reviews/structured/20261016T000310Z-veatchite-round106-independent/review.yaml
+  locator: 'Complete previous native observation, verdict, findings and limitations.
+    Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412/reviews/structured/20261016T000310Z-veatchite-round106-independent/review.yaml'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: context_only
+  snapshot_sha256: 8e564301eec1b4bf26e12f1f3bf286188b8246199e7a5444f88f15c3d331beb3
+  summary: Previous qualified pass had no corrective findings; its unacquired-deposit
+    limitation is historical and not rewritten.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: 'September 2026 official edition; original PDF p. 228 Veatchite and p.
+    35 Calcioveatchite visually inspected; p. 1 status/year definitions checked during
+    same-day acquisition. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-429/ima-2026-09.pdf'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: supports
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  summary: Veatchite is Sr2B11O16(OH)5(H2O), G, 1938; the distinct calcioveatchite
+    row supports the species boundary. G/year is not a sequential approval identifier.
+- evidence_id: grice
+  kind: primary_source
+  reference: https://doi.org/10.2138/am.2012.3889
+  locator: 'Complete seven-page original from https://www.rruff.net/doclib/am/vol97/AM97_489.pdf;
+    all original pages 489–495 visually inspected, especially p. 489 Material studied/Table
+    1, p. 490 methods/deposit footnote, p. 491 Table 2c and site discussion, Tables
+    3a–c and Figures 1–4, p. 494 geological interpretation. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-412/grice2012.pdf'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: supports
+  snapshot_sha256: cb0a298a4ba886b591fd3711ed31e407dd9bc2ba508bbf5bc3794a6681ebd921
+  summary: Separate natural specimens establish polytype structures, with Canadian
+    2M substituted for preserved California type. H positions were refined, two type
+    specimens were not newly chemically analysed, and precise geological P–T conditions
+    remain unknown.
+- evidence_id: deposit
+  kind: primary_source
+  reference: http://www.minsocam.org/MSA/AmMin/TOC/2012/Apr12_Data/Apr12_Data.html
+  locator: 'Official April 2012 Vol. 97 No. 4 deposit list, Grice and Pring p. 489
+    entry AM-12-015 and its three links. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-412/msa-apr2012-deposits.html'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: supports
+  snapshot_sha256: c87b25e6107be1bed65959c8600d6d140d4c8d1ed22a31c6208e621607eedb3b
+  summary: The three linked CIFs belong to this article. Adjacent observed-structure-factor
+    links belong to a different paper and cannot fill the veatchite gap.
+- evidence_id: cif1
+  kind: primary_source
+  reference: http://www.minsocam.org/MSA/AmMin/TOC/2012/Apr12_Data/Grice_p489_12_CIF1.txt
+  locator: 'Complete native CIF; cell and symmetry scalars, all loop headers, atom-site
+    and anisotropic-displacement loops independently read and inventoried. Retained
+    artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-412/Grice_p489_12_CIF1.txt'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: supports
+  snapshot_sha256: e1828500e98182d47ff00c2b7e419c0dd76b03c8e71439aabbd2d262fa1d830a
+  summary: Block veat1a has inversion symmetry operators, 42 atom-site rows and no
+    museum identifier; beta is 82.70 in this deposit, differing in precision from
+    the printed article.
+- evidence_id: cif2
+  kind: primary_source
+  reference: http://www.minsocam.org/MSA/AmMin/TOC/2012/Apr12_Data/Grice_p489_12_CIF2.txt
+  locator: 'Complete native CIF; cell and symmetry scalars, all loop headers, atom-site
+    and anisotropic-displacement loops independently read and inventoried. Retained
+    artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-412/Grice_p489_12_CIF2.txt'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: supports
+  snapshot_sha256: ad817eb9e1eeeea1c921e7a2fe81f166b516fe0762e5b17d74e11d5be9d8ab75
+  summary: Block pveat has P21-compatible symmetry operators and 42 atom-site rows;
+    deposited b=20.740(4) differs from printed 20.704(1). Numerical model selection
+    is not warranted.
+- evidence_id: cif3
+  kind: primary_source
+  reference: http://www.minsocam.org/MSA/AmMin/TOC/2012/Apr12_Data/Grice_p489_12_CIF3.txt
+  locator: 'Complete native CIF; cell and symmetry scalars, all loop headers, atom-site
+    and anisotropic-displacement loops independently read and inventoried. Retained
+    artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-412/Grice_p489_12_CIF3.txt'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: supports
+  snapshot_sha256: 6a96a16d4e16d9945b55a0be9e6a57bef45c9aaf07523463aac18460bd4c70b3
+  summary: Block veat has Cc-compatible operators and 44 atom-site rows. Sr1/Ca1 and
+    Sr2/Ca2 have identical coordinates, Ueq and all six ADP entries; deposited occupancies
+    and refinement statistics differ from the printed model.
+- evidence_id: cif-audit
+  kind: validation
+  reference: Independent deposited-file inspection receipt
+  locator: 'Reviewer-owned parser/rehash result, all three CIF inventories and Sr/Ca
+    coordinate/displacement equality assertions; script review-verify.py retained
+    alongside. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-412/review-independent-artifacts.json'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: supports
+  snapshot_sha256: 034690fb361f3f9c09cf3bbaffec7f19a6ec32781fb160c76229815547284e40
+  summary: Six loops per CIF; no observed-reflection loop, explicit museum/locality
+    token or embedded original-refinement instruction field. This is file-content
+    inspection, not model re-refinement.
+- evidence_id: pekov
+  kind: primary_source
+  reference: https://doi.org/10.3390/min14090901
+  locator: 'Complete 18-page publisher PDF. Original pp. 1–3, 5–6, 8, 10–11 and 14–16
+    visually inspected: nomenclature, specimen list and methods; Table 1/Figure 6;
+    Tables 3–4; sections 5.1–5.2 and Figures 7–8. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-412/pekov2024.pdf'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: supports
+  snapshot_sha256: 1623370d85fe10bd2fd7a719ca8c07fdf854e841696ed1b9a678aa449df702c1
+  summary: The species boundary depends on ordered cation sites. Newly studied material
+    comes from Russia, Kazakhstan and California; the Canadian discussion cites earlier
+    work and is not a fresh RG701/1 analysis.
+- evidence_id: rowe-abstract
+  kind: primary_source
+  reference: https://doi.org/10.1017/S0885715613000766
+  locator: 'Public publisher title, DOI, abstract and supplement link; not complete
+    main article. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-412/rowe2014-publisher.html'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: context_only
+  snapshot_sha256: d399c0d1982ded691dd26b6eadba21144172e4a8abe800e637c69c96fee77f74
+  summary: The later abstract reports successful micro-powder discrimination and coexistence.
+    It limits interpretation of the 2012 caution but cannot be promoted into full
+    experimental curation from this access level.
+- evidence_id: rowe-supplement
+  kind: primary_source
+  reference: https://doi.org/10.1017/S0885715613000766
+  locator: 'Original supplemental model image viewed via retained PNG conversion;
+    Veatchite-2M.TXT table. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-412/rowe-sup001.tif'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: context_only
+  snapshot_sha256: 18637e0491521d733a3e025dff7b4e06e0e9f998e1a3f53bc73a0d6f81cf5a33
+  summary: An atomic-model table with nominal Sr occupancies; not a raw observed powder
+    pattern, a Grice correction or proven reanalysis of RG701/1.
+- evidence_id: search
+  kind: search
+  reference: Fresh bounded correction, retraction and specimen/data search
+  locator: 'One web batch at 07:16:30 UTC; exact queries: "10.2138/am.2012.3889" correction
+    erratum; "10.3390/min14090901" correction retraction; "veatchite" "RG701/1" calcioveatchite;
+    "veatchite" "AM-12-015" structure factors. First returned batch, no filters or
+    pagination; full arguments/results retained. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412-review-search.json'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: context_only
+  snapshot_sha256: 17cf44e0dc3eadddd6ca663de383436f92226c6ea9d0e628ab497ea483f5af83
+  summary: No authoritative correction or explicit exact-crystal reassignment was
+    verified in these results. Search snippets were not substituted for original evidence.
+  search_scope: 'One web batch at 07:16:30 UTC; exact queries: "10.2138/am.2012.3889"
+    correction erratum; "10.3390/min14090901" correction retraction; "veatchite" "RG701/1"
+    calcioveatchite; "veatchite" "AM-12-015" structure factors. First returned batch,
+    no filters or pagination; full arguments/results retained. No authoritative correction
+    or explicit exact-crystal reassignment was verified in these results. Search snippets
+    were not substituted for original evidence.'
+- evidence_id: dedup
+  kind: search
+  reference: Ignored-inclusive maintained-source and owner search
+  locator: 'rg --no-ignore --hidden --follow --json -i ''veatchite|AM-12-015|10[.]2138/am[.]2012[.]3889|10[.]3390/min14090901''
+    across issue-412 data, research, reviews, history, docs, .claude and .agents.
+    Receipt issue-412-review-dedup.json at 07:16:15 UTC. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412-review-dedup.jsonl'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: context_only
+  snapshot_sha256: 2ac0527a0cb47b3ce0af147e27ee8d2ff1c74f2b7b38a63db8df19d1f5b6fe31
+  summary: 574 matching lines in 58 files; hidden/ignored files included. Raw sources
+    were inspected separately; unrelated home/temp trees and binary interiors excluded.
+    Count is search coverage, not evidence novelty.
+  search_scope: rg --no-ignore --hidden --follow --json -i 'veatchite|AM-12-015|10[.]2138/am[.]2012[.]3889|10[.]3390/min14090901'
+    across issue-412 data, research, reviews, history, docs, .claude and .agents.
+    Receipt issue-412-review-dedup.json at 07:16:15 UTC. 574 matching lines in 58
+    files; hidden/ignored files included. Raw sources were inspected separately; unrelated
+    home/temp trees and binary interiors excluded. Count is search coverage, not evidence
+    novelty.
+- evidence_id: named
+  kind: validation
+  reference: UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache UV_OFFLINE=1
+    uv run --no-sync cmmmech validate data/records/veatchite.yaml --require-records
+  locator: 'Actual retained terminal log from this review on the frozen post-edit
+    record. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412-review-named.log'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: supports
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+  summary: 'Reviewer run completed: 1 record, 0 failures.'
+- evidence_id: history
+  kind: validation
+  reference: UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache UV_OFFLINE=1
+    uv run --no-sync cmmmech validate-history --base 2da10d95a72146ee0c69cb91fe303348fbadb638
+  locator: 'Actual retained terminal log from this review on the frozen post-edit
+    record. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412-review-history.log'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: supports
+  snapshot_sha256: b82876e657df90a30cb77317251616e6ae290765a60c68afdc3fb41a82eaa193
+  summary: 'Reviewer run completed: 745 history entries, 0 errors.'
+- evidence_id: batch
+  kind: validation
+  reference: UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache UV_OFFLINE=1
+    just check
+  locator: 'Actual retained terminal log from this review on the frozen post-edit
+    record. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412-review-batch.log'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: supports
+  snapshot_sha256: 07c695cd9254ade9c935991bf9fd695ed9eac4971a3451ec45a14f41ba8a5bc7
+  summary: 'Reviewer run, session 47355, completed exit 0: 327 tests passed, 3 skipped
+    in 65.35 s; 616 records and 745 history entries validated.'
+- evidence_id: strict
+  kind: validation
+  reference: UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache UV_OFFLINE=1
+    uv run --no-sync cmmmech validate --require-records
+  locator: 'Actual retained terminal log from this review on the frozen post-edit
+    record. Retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-412-review-strict.log'
+  accessed_at: '2026-10-20T07:23:41.143471Z'
+  support: supports
+  snapshot_sha256: d47e19b123c18f1d48610ace095471a408192c504a56fb4fb473f668afceda40
+  summary: 'Reviewer run completed: 616 records, 0 failures.'
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral identity, polytypes and neighboring species
+  outcome: supported
+  summary: Formula and grandfathered status are supported; the three polytypes remain
+    one owner distinct from calcioveatchite, elements and commodity categories.
+  target_ids:
+  - cmmmech:veatchite
+  evidence_ids:
+  - owner
+  - ima
+  - grice
+  - pekov
+  - neighbor
+  dimensions:
+  - name: material-form
+    value: mineral; Sr2B11O16(OH)5·H2O
+    definition: Ideal species identity, not pure composition established for every
+      historical specimen.
+    evidence_ids:
+    - ima
+    - grice
+  - name: polytypes
+    value: 1A, 1M, 2M
+    definition: Structural variants rather than three separately accepted species
+      owners.
+    evidence_ids:
+    - grice
+    - pekov
+  - name: criticality
+    value: not asserted
+    definition: No authority/jurisdiction/list/edition designation is inherited from
+      elemental boron or strontium.
+    evidence_ids:
+    - owner
+- assessment_id: specimens
+  area: provenance
+  topic: Exact specimen and source lineage
+  outcome: supported
+  summary: The owner accurately separates the two type specimens and Canadian substitute,
+    and does not transfer the California type locality to RG701/1.
+  target_ids:
+  - cmmmech:veatchite
+  evidence_ids:
+  - owner
+  - grice
+  - pekov
+  - cif1
+  - cif2
+  - cif3
+  dimensions:
+  - name: specimens
+    value: 1A NMNH 145911 Emet; 1M NMNH 113264 Reyershausen; 2M RG701/1 Sussex
+    definition: Reported Table 1 identifiers/localities, not assumed explicit CIF
+      metadata.
+    evidence_ids:
+    - grice
+  - name: modern-assignment
+    value: unresolved for RG701/1
+    definition: Modern site-boundary criteria do not by themselves reanalyse the historical
+      crystal.
+    evidence_ids:
+    - pekov
+    - grice
+    - owner
+- assessment_id: models
+  area: evidence
+  topic: Deposited site pairing and model-version differences
+  outcome: supported
+  summary: The added deposit source is correctly bound and qualified. Site pairing
+    is supported by coordinates and tensors, while numerical discrepancies and absent
+    underlying data remain explicit.
+  target_ids:
+  - cmmmech:veatchite
+  evidence_ids:
+  - owner
+  - grice
+  - deposit
+  - cif1
+  - cif2
+  - cif3
+  - cif-audit
+  dimensions:
+  - name: deposited-models
+    value: three original linked CIFs, six loops each
+    definition: Recovered modeled structures, not observed reflection measurements.
+    evidence_ids:
+    - deposit
+    - cif-audit
+  - name: 2M-site-pairing
+    value: Sr1/Ca1 and Sr2/Ca2
+    definition: Equal fractional coordinates, Ueq and ADP entries within each deposited
+      pair.
+    evidence_ids:
+    - cif3
+    - cif-audit
+  - name: version-selection
+    value: none
+    definition: The record selects no corrected occupancy, cell or final refinement
+      from inconsistent versions.
+    evidence_ids:
+    - owner
+    - grice
+    - cif1
+    - cif2
+    - cif3
+  details: Independent comparison finds printed Table 2c Sr1=0.9032(6) and Sr2=0.4870(6),
+    versus deposited 0.9047(5) and 0.4787(5); deposited Ca values are rounded 0.10
+    and 0.52. The printed first Ca row repeats the Ca2 label, whereas the deposit
+    supplies Ca1/Ca2 pairing. CIF2 b=20.740(4) differs from Table 1 b=20.704(1); the
+    article itself differs between abstract and Table 1 for 1M c and 1A beta uncertainty.
+    These are comparisons, not corrections or inferred modern species determinations.
+- assessment_id: structures
+  area: evidence
+  topic: Structural characterization and conflicting later powder lead
+  outcome: supported
+  summary: Layer stacking, refined H positions and reported powder caution are faithfully
+    attributed to the 2012 work. The owner does not universalize that caution in the
+    face of a later contrary abstract.
+  target_ids:
+  - cmmmech:veatchite
+  evidence_ids:
+  - owner
+  - grice
+  - rowe-abstract
+  - rowe-supplement
+  dimensions:
+  - name: measurement
+    value: single-crystal diffraction of separate natural specimens
+    definition: Supports structural description; no new chemical assays of the two
+      type specimens.
+    evidence_ids:
+    - grice
+  - name: powder-caution
+    value: attributed to 2012 authors
+    definition: Not a universal or current impossibility claim; Rowe's full experimental
+      paper remains a separate curation lead.
+    evidence_ids:
+    - owner
+    - grice
+    - rowe-abstract
+- assessment_id: mechanism
+  area: scope
+  topic: Formation causality, experiments and deployment
+  outcome: supported
+  summary: Natural characterization and geological interpretation are not promoted
+    into controlled polytype transitions, microbial transformation or recovery.
+  target_ids:
+  - cmmmech:veatchite
+  evidence_ids:
+  - owner
+  - grice
+  - pekov
+  dimensions:
+  - name: organism-and-biomass
+    value: not applicable
+    definition: No biological experiment or organism claim is accepted.
+    evidence_ids:
+    - owner
+    - grice
+    - pekov
+  - name: substrate-and-pretreatment
+    value: natural mineral specimens
+    definition: Not a controlled microbial feed/workup or product-recovery experiment.
+    evidence_ids:
+    - grice
+    - pekov
+  - name: controls-and-conditions
+    value: geological P–T interpretation; precise parameters unknown
+    definition: No matched controlled transition experiment established.
+    evidence_ids:
+    - grice
+  - name: outcome-and-deployment
+    value: mineral structure and occurrence context only
+    definition: No isolated boron yield, industrial deployment or phase-pure recovered
+      product.
+    evidence_ids:
+    - owner
+    - grice
+    - pekov
+- assessment_id: provenance
+  area: provenance
+  topic: Curation history, maintained inputs and checks
+  outcome: supported
+  summary: The new inline and canonical EDIT record the parent's actual change, preserve
+    historical CREATE provenance and link the source handoff. Frozen owner/history
+    hashes remain unchanged throughout review; all required validation passed.
+  target_ids:
+  - cmmmech:veatchite
+  evidence_ids:
+  - owner
+  - history-old
+  - history-new
+  - prior
+  - named
+  - history
+  - batch
+  - strict
+  - dedup
+  - search
+  dimensions:
+  - name: review-scope
+    value: whole exact target, independent scientific review
+    definition: Not a provenance-only waiver; current original-source content was
+      reassessed.
+    evidence_ids:
+    - owner
+    - grice
+    - pekov
+    - cif-audit
+  - name: absence-search
+    value: bounded, hidden and ignored included
+    definition: No whole-machine or exhaustive-literature absence inference.
+    evidence_ids:
+    - dedup
+    - search
+findings: []
+actions: []
+limitations:
+- The CIF-to-polytype mapping follows official deposit association, cells, symmetry
+  operators and structures. None of the three files explicitly names the museum specimens;
+  this does not prove exact crystal identity.
+- The files contain model coordinates and displacement data but no observed-reflection
+  loops or original refinement instruction file. Their numerical and methodological
+  differences from the article cannot be resolved into an authoritative correction
+  by this review.
+- The precise modern species assignment of the 2012 Canadian RG701/1 crystal remains
+  unresolved. Pekov 2024 provides modern species boundaries and separate material,
+  not direct reanalysis of that crystal.
+- No controlled temperature/pressure transition, microbial causation, isolated recovery
+  yield or industrial deployment is established by the reviewed natural-mineral studies.
+- Rowe 2014 is a relevant conflicting later powder-diffraction lead at abstract/supplement
+  level only. The record attributes its powder caution to Grice and Pring rather than
+  asserting a universal inability to distinguish polytypes.
+- Correction/retraction and missing-data searches are bounded; no universal absence
+  claim is made. Ignored and hidden maintained files were included, but unrelated
+  home/temp trees and binary interiors were excluded from text deduplication.
+notes:
+- The IMA PDF was this reviewer's fresh official acquisition earlier the same UTC
+  day for the immediately preceding source task. It was reused by hash and the veatchite/calcioveatchite
+  rows independently rendered and visually inspected for this round; no separate download
+  is claimed.
+- All required record, history and batch checks completed successfully on the frozen
+  post-edit owner. Parent handles final canonical and structured-review corpus gates
+  after this saved bundle; no duplicate full batch run is needed.
+- This is a working-tree scientific review against the retained main base. The parent
+  controls generated render changes; this reviewer only wrote scratch receipts and
+  the native review bundle.
+- The previous native review has no corrective findings. This new observation advances
+  the deposit-access subgap without silently closing issue 412 or inventing previous
+  finding identities.
+- An optional rendering attempt with system Python lacked PyMuPDF. Installed pdftoppm
+  then rendered the requested original pages successfully; no review check remained
+  unavailable.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261016T000310Z-veatchite-round106-independent
+  relationship: New whole-target observation after narrowly scoped deposited-model
+    provenance curation; previous specimen-classification and experimental-transition
+    limitations retained.
+links:
+- https://github.com/CultureBotAI/CMMMech/issues/412
+```
