@@ -11,7 +11,7 @@
 
 ## Summary
 
-Adamsite-(Y) passes with limitations: IMA1999-020 NaY(CO3)2.6H2O identity, P-1 triclinic corrugated-sheet structure (R = 0.046 for 3338 reflections), Poudrette quarry cotype CMNMC 82939/82940 WDS composition, 42.8 wt% five-substep DTG thermal decomposition (80-590 C), and rapid ambient HCl effervescence are supported without inheriting Y/REE criticality.
+Adamsite-(Y) passes with limitations: IMA:1999-020 NaY(CO3)2·6H2O identity, P-1 triclinic corrugated-layer structure (R = 3.0% for 2020 reflections), Poudrette quarry cotype CMNMC 82939 and 82940 WDS composition, and N2 TGA/DTG thermal dehydration (32.6 wt% H2O loss, 40-230 C) and partial decarbonation (7.9 wt% CO2 loss, 230-650 C) are supported without inheriting Y/REE criticality.
 
 ## Scope And Provenance
 
@@ -39,7 +39,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 evidence: supported. Targets: cmmmech:adamsite-y.
 
-IMA1999-020 NaY(CO3)2.6H2O identity, P-1 triclinic corrugated-sheet structure (R = 0.046 for 3338 reflections), Poudrette quarry cotype CMNMC 82939/82940 WDS composition, 42.8 wt% five-substep DTG thermal decomposition (80-590 C), and rapid ambient HCl effervescence are supported without inheriting Y/REE criticality.
+IMA:1999-020 NaY(CO3)2·6H2O identity, P-1 triclinic corrugated-layer structure (R = 3.0% for 2020 reflections), Poudrette quarry cotype CMNMC 82939 and 82940 WDS composition, and N2 TGA/DTG thermal dehydration (32.6 wt% H2O loss, 40-230 C) and partial decarbonation (7.9 wt% CO2 loss, 230-650 C) are supported without inheriting Y/REE criticality.
 
 ### Provenance, category boundaries, and absence of fabricated claims
 
@@ -64,7 +64,7 @@ No findings recorded within this review's declared scope.
 | history | history/records/adamsite-y/2026-10-19T052200Z-antigravity-001170.yaml; Complete canonical CREATE sidecar history/records/adamsite-y/2026-10-19T052200Z-antigravity-001170.yaml | supports | Canonical history sidecar and inline history event accurately record actor, UTC timestamp, and scientific scope. |
 | dossier | research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json; Paired Round 117 source investigation dossier research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json | context_only | Documents deduplication, primary-source acquisition hashes, and scope boundaries. |
 | ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List (244 pages visually inspected) | supports | Establishes official mineral species nomenclature, formula, approval status, and commodity vs mineral category boundary. |
-| primary_study | https://rruff.info/rruff_1.0/uploads/CM38_1457.pdf; Complete full-text visual inspection of CM 38 (2000) 1457-1466 (10 pp.) and IMA September 2026 Master List (IMA1999-020) | supports | IMA1999-020 NaY(CO3)2.6H2O identity, P-1 triclinic corrugated-sheet structure (R = 0.046 for 3338 reflections), Poudrette quarry cotype CMNMC 82939/82940 WDS composition, 42.8 wt% five-substep DTG thermal decomposition (80-590 C), and rapid ambient HCl effervescence are supported without inheriting Y/REE criticality. |
+| primary_study | https://rruff.info/rruff_1.0/uploads/CM38_1457.pdf; Complete full-text visual inspection of CM 38 (2000) 1457-1466 (10 pp.) and IMA September 2026 Master List (IMA:1999-020) | supports | IMA:1999-020 NaY(CO3)2·6H2O identity, P-1 triclinic corrugated-layer structure (R = 3.0% for 2020 reflections), Poudrette quarry cotype CMNMC 82939 and 82940 WDS composition, and N2 TGA/DTG thermal dehydration (32.6 wt% H2O loss, 40-230 C) and partial decarbonation (7.9 wt% CO2 loss, 230-650 C) are supported without inheriting Y/REE criticality. |
 | validation | data/records/adamsite-y.yaml; Strict schema and history validation across all 616 records and 744 history sidecars | supports | Checked 616 record(s), 0 failed; Checked 744 history record(s), 0 error(s). |
 
 ## Limits And Additional Notes
@@ -109,10 +109,10 @@ source:
     sha256: c2eda05d6c981ed21a1a395df174dd48f930f2b02e13dfe04217eaf2c8362546
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
-    sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+    sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.md
-    sha256: edefffa05d10ba6d36a2f7a396c8b6eceb50290b6c2964414240ca120015535d
+    sha256: 1352dfc950a92c4d6fdcf868e1d9082fe1ac3f7d776eeae19702d0addaad4fe7
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
@@ -164,7 +164,7 @@ evidence:
   accessed_at: '2026-10-19T05:30:00Z'
   support: context_only
   summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
-  snapshot_sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+  snapshot_sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
 - evidence_id: ima_authority
   kind: authority
   reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
@@ -178,13 +178,14 @@ evidence:
   kind: primary_source
   reference: https://rruff.info/rruff_1.0/uploads/CM38_1457.pdf
   locator: Complete full-text visual inspection of CM 38 (2000) 1457-1466 (10 pp.)
-    and IMA September 2026 Master List (IMA1999-020)
+    and IMA September 2026 Master List (IMA:1999-020)
   accessed_at: '2026-10-19T05:30:00Z'
   support: supports
-  summary: IMA1999-020 NaY(CO3)2.6H2O identity, P-1 triclinic corrugated-sheet structure
-    (R = 0.046 for 3338 reflections), Poudrette quarry cotype CMNMC 82939/82940 WDS
-    composition, 42.8 wt% five-substep DTG thermal decomposition (80-590 C), and rapid
-    ambient HCl effervescence are supported without inheriting Y/REE criticality.
+  summary: IMA:1999-020 NaY(CO3)2·6H2O identity, P-1 triclinic corrugated-layer structure
+    (R = 3.0% for 2020 reflections), Poudrette quarry cotype CMNMC 82939 and 82940
+    WDS composition, and N2 TGA/DTG thermal dehydration (32.6 wt% H2O loss, 40-230
+    C) and partial decarbonation (7.9 wt% CO2 loss, 230-650 C) are supported without
+    inheriting Y/REE criticality.
   snapshot_sha256: b222d739191160a36c07de3a8430a086decacf420b13d4a894c2ff6c1c1bebbe
 - evidence_id: validation
   kind: validation
@@ -225,10 +226,11 @@ assessments:
   area: evidence
   topic: Primary-source identity and evidence boundaries for adamsite-y
   outcome: supported
-  summary: IMA1999-020 NaY(CO3)2.6H2O identity, P-1 triclinic corrugated-sheet structure
-    (R = 0.046 for 3338 reflections), Poudrette quarry cotype CMNMC 82939/82940 WDS
-    composition, 42.8 wt% five-substep DTG thermal decomposition (80-590 C), and rapid
-    ambient HCl effervescence are supported without inheriting Y/REE criticality.
+  summary: IMA:1999-020 NaY(CO3)2·6H2O identity, P-1 triclinic corrugated-layer structure
+    (R = 3.0% for 2020 reflections), Poudrette quarry cotype CMNMC 82939 and 82940
+    WDS composition, and N2 TGA/DTG thermal dehydration (32.6 wt% H2O loss, 40-230
+    C) and partial decarbonation (7.9 wt% CO2 loss, 230-650 C) are supported without
+    inheriting Y/REE criticality.
   target_ids:
   - cmmmech:adamsite-y
   evidence_ids:
@@ -251,11 +253,11 @@ assessments:
   - validation
 findings: []
 actions: []
-summary: 'Adamsite-(Y) passes with limitations: IMA1999-020 NaY(CO3)2.6H2O identity,
-  P-1 triclinic corrugated-sheet structure (R = 0.046 for 3338 reflections), Poudrette
-  quarry cotype CMNMC 82939/82940 WDS composition, 42.8 wt% five-substep DTG thermal
-  decomposition (80-590 C), and rapid ambient HCl effervescence are supported without
-  inheriting Y/REE criticality.'
+summary: 'Adamsite-(Y) passes with limitations: IMA:1999-020 NaY(CO3)2·6H2O identity,
+  P-1 triclinic corrugated-layer structure (R = 3.0% for 2020 reflections), Poudrette
+  quarry cotype CMNMC 82939 and 82940 WDS composition, and N2 TGA/DTG thermal dehydration
+  (32.6 wt% H2O loss, 40-230 C) and partial decarbonation (7.9 wt% CO2 loss, 230-650
+  C) are supported without inheriting Y/REE criticality.'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes at base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34.'

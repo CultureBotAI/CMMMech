@@ -11,7 +11,7 @@
 
 ## Summary
 
-Synthetic Graphite passes with limitations: Synthetic graphite commodity boundary, DOE 2023 energy criticality, 231,000 t US 2021 production, and 2,500-3,000 C graphitization of calcined petroleum coke and coal-tar pitch are supported while keeping natural graphite distinct.
+Synthetic Graphite passes with limitations: U.S. critical-mineral commodity boundary anchored via DOI/USGS 2022 Critical Mineral List Footnote 6 on the Final 2023 DOE Critical Materials List (while scored Not Critical for energy alone in DOE Table 1), 259,000 t U.S. domestic shipments in 2021 (DOE Table 3), and USGS 2021 Minerals Yearbook / MCS 2026 trade statistics are supported while keeping natural graphite distinct (0 mechanisms curated).
 
 ## Scope And Provenance
 
@@ -39,7 +39,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 evidence: supported. Targets: cmmmech:synthetic-graphite.
 
-Synthetic graphite commodity boundary, DOE 2023 energy criticality, 231,000 t US 2021 production, and 2,500-3,000 C graphitization of calcined petroleum coke and coal-tar pitch are supported while keeping natural graphite distinct.
+U.S. critical-mineral commodity boundary anchored via DOI/USGS 2022 Critical Mineral List Footnote 6 on the Final 2023 DOE Critical Materials List (while scored Not Critical for energy alone in DOE Table 1), 259,000 t U.S. domestic shipments in 2021 (DOE Table 3), and USGS 2021 Minerals Yearbook / MCS 2026 trade statistics are supported while keeping natural graphite distinct (0 mechanisms curated).
 
 ### Provenance, category boundaries, and absence of fabricated claims
 
@@ -64,7 +64,7 @@ No findings recorded within this review's declared scope.
 | history | history/records/synthetic-graphite/2026-10-19T052200Z-antigravity-00117c.yaml; Complete canonical CREATE sidecar history/records/synthetic-graphite/2026-10-19T052200Z-antigravity-00117c.yaml | supports | Canonical history sidecar and inline history event accurately record actor, UTC timestamp, and scientific scope. |
 | dossier | research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json; Paired Round 117 source investigation dossier research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json | context_only | Documents deduplication, primary-source acquisition hashes, and scope boundaries. |
 | ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List (244 pages visually inspected) | supports | Establishes official mineral species nomenclature, formula, approval status, and commodity vs mineral category boundary. |
-| primary_study | https://pubs.usgs.gov/myb/vol1/2021/myb1-2021-graphite.pdf; Complete full-text visual inspection of US DOE 2023 Final Critical Materials List (88 FR 51792, 51797), USGS 2021 Minerals Yearbook Graphite (18 pp.), and USGS MCS 2026 Graphite | supports | Synthetic graphite commodity boundary, DOE 2023 energy criticality, 231,000 t US 2021 production, and 2,500-3,000 C graphitization of calcined petroleum coke and coal-tar pitch are supported while keeping natural graphite distinct. |
+| primary_study | https://pubs.usgs.gov/myb/vol1/2021/myb1-2021-graphite.pdf; Complete full-text visual inspection of US DOE 2023 Final Critical Materials List (88 FR 51792, 51797), USGS 2021 Minerals Yearbook Graphite (18 pp.), and USGS MCS 2026 Graphite | supports | U.S. critical-mineral commodity boundary anchored via DOI/USGS 2022 Critical Mineral List Footnote 6 on the Final 2023 DOE Critical Materials List (while scored Not Critical for energy alone in DOE Table 1), 259,000 t U.S. domestic shipments in 2021 (DOE Table 3), and USGS 2021 Minerals Yearbook / MCS 2026 trade statistics are supported while keeping natural graphite distinct (0 mechanisms curated). |
 | validation | data/records/synthetic-graphite.yaml; Strict schema and history validation across all 616 records and 744 history sidecars | supports | Checked 616 record(s), 0 failed; Checked 744 history record(s), 0 error(s). |
 
 ## Limits And Additional Notes
@@ -109,10 +109,10 @@ source:
     sha256: 1dc3ba9beecd1107e3f4447c0a2abafa1766523816828789aa14f9cf3d86739d
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
-    sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+    sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.md
-    sha256: edefffa05d10ba6d36a2f7a396c8b6eceb50290b6c2964414240ca120015535d
+    sha256: 1352dfc950a92c4d6fdcf868e1d9082fe1ac3f7d776eeae19702d0addaad4fe7
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
@@ -164,7 +164,7 @@ evidence:
   accessed_at: '2026-10-19T05:30:00Z'
   support: context_only
   summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
-  snapshot_sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+  snapshot_sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
 - evidence_id: ima_authority
   kind: authority
   reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
@@ -182,10 +182,12 @@ evidence:
     USGS MCS 2026 Graphite
   accessed_at: '2026-10-19T05:30:00Z'
   support: supports
-  summary: Synthetic graphite commodity boundary, DOE 2023 energy criticality, 231,000
-    t US 2021 production, and 2,500-3,000 C graphitization of calcined petroleum coke
-    and coal-tar pitch are supported while keeping natural graphite distinct.
-  snapshot_sha256: 4f9f98fca68e8f58c4a297f6734d3ecead402fc3f4ea8337b89637bdeab098bc
+  summary: U.S. critical-mineral commodity boundary anchored via DOI/USGS 2022 Critical
+    Mineral List Footnote 6 on the Final 2023 DOE Critical Materials List (while scored
+    Not Critical for energy alone in DOE Table 1), 259,000 t U.S. domestic shipments
+    in 2021 (DOE Table 3), and USGS 2021 Minerals Yearbook / MCS 2026 trade statistics
+    are supported while keeping natural graphite distinct (0 mechanisms curated).
+  snapshot_sha256: 3c0a5aa45b8f285e8bbca2b4bf22d445f2c4e24bd9c7e628c1662b1008568f1e
 - evidence_id: validation
   kind: validation
   reference: data/records/synthetic-graphite.yaml
@@ -225,9 +227,11 @@ assessments:
   area: evidence
   topic: Primary-source identity and evidence boundaries for synthetic-graphite
   outcome: supported
-  summary: Synthetic graphite commodity boundary, DOE 2023 energy criticality, 231,000
-    t US 2021 production, and 2,500-3,000 C graphitization of calcined petroleum coke
-    and coal-tar pitch are supported while keeping natural graphite distinct.
+  summary: U.S. critical-mineral commodity boundary anchored via DOI/USGS 2022 Critical
+    Mineral List Footnote 6 on the Final 2023 DOE Critical Materials List (while scored
+    Not Critical for energy alone in DOE Table 1), 259,000 t U.S. domestic shipments
+    in 2021 (DOE Table 3), and USGS 2021 Minerals Yearbook / MCS 2026 trade statistics
+    are supported while keeping natural graphite distinct (0 mechanisms curated).
   target_ids:
   - cmmmech:synthetic-graphite
   evidence_ids:
@@ -250,10 +254,12 @@ assessments:
   - validation
 findings: []
 actions: []
-summary: 'Synthetic Graphite passes with limitations: Synthetic graphite commodity
-  boundary, DOE 2023 energy criticality, 231,000 t US 2021 production, and 2,500-3,000
-  C graphitization of calcined petroleum coke and coal-tar pitch are supported while
-  keeping natural graphite distinct.'
+summary: 'Synthetic Graphite passes with limitations: U.S. critical-mineral commodity
+  boundary anchored via DOI/USGS 2022 Critical Mineral List Footnote 6 on the Final
+  2023 DOE Critical Materials List (while scored Not Critical for energy alone in
+  DOE Table 1), 259,000 t U.S. domestic shipments in 2021 (DOE Table 3), and USGS
+  2021 Minerals Yearbook / MCS 2026 trade statistics are supported while keeping natural
+  graphite distinct (0 mechanisms curated).'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes at base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34.'

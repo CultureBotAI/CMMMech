@@ -11,7 +11,7 @@
 
 ## Summary
 
-Thomasclarkite-(Y) passes with limitations: IMA1997-047 NaY(HCO3)(OH)3.4H2O identity, P2 monoclinic pseudotetragonal structure (R = 0.055 for 1616 reflections), Poudrette quarry cotype CMNMI 81553-81555 WDS composition, 38.6 wt% two-stage TGA-EGA thermal decomposition (20-110 C and 380-510 C), and rapid ambient HCl effervescence are supported.
+Thomasclarkite-(Y) passes with limitations: IMA:1997-047 Na(Y,REE)(HCO3)(OH)3·4H2O identity, P2 monoclinic pseudotetragonal structure (R = 3.9% for 915 observed reflections), Poudrette quarry cotype CMNMI 81553-81555 WDS composition, and N2 TG/DTG thermal decomposition (38.8 wt% total loss at 650 C across 20-110 C, 110-380 C, and 380-510 C stages) are supported.
 
 ## Scope And Provenance
 
@@ -39,7 +39,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 evidence: supported. Targets: cmmmech:thomasclarkite-y.
 
-IMA1997-047 NaY(HCO3)(OH)3.4H2O identity, P2 monoclinic pseudotetragonal structure (R = 0.055 for 1616 reflections), Poudrette quarry cotype CMNMI 81553-81555 WDS composition, 38.6 wt% two-stage TGA-EGA thermal decomposition (20-110 C and 380-510 C), and rapid ambient HCl effervescence are supported.
+IMA:1997-047 Na(Y,REE)(HCO3)(OH)3·4H2O identity, P2 monoclinic pseudotetragonal structure (R = 3.9% for 915 observed reflections), Poudrette quarry cotype CMNMI 81553-81555 WDS composition, and N2 TG/DTG thermal decomposition (38.8 wt% total loss at 650 C across 20-110 C, 110-380 C, and 380-510 C stages) are supported.
 
 ### Provenance, category boundaries, and absence of fabricated claims
 
@@ -64,7 +64,7 @@ No findings recorded within this review's declared scope.
 | history | history/records/thomasclarkite-y/2026-10-19T052200Z-antigravity-001171.yaml; Complete canonical CREATE sidecar history/records/thomasclarkite-y/2026-10-19T052200Z-antigravity-001171.yaml | supports | Canonical history sidecar and inline history event accurately record actor, UTC timestamp, and scientific scope. |
 | dossier | research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json; Paired Round 117 source investigation dossier research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json | context_only | Documents deduplication, primary-source acquisition hashes, and scope boundaries. |
 | ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List (244 pages visually inspected) | supports | Establishes official mineral species nomenclature, formula, approval status, and commodity vs mineral category boundary. |
-| primary_study | https://rruff.info/rruff_1.0/uploads/CM36_1293.pdf; Complete full-text visual inspection of CM 36 (1998) 1293-1300 (8 pp.) and IMA September 2026 Master List (IMA1997-047) | supports | IMA1997-047 NaY(HCO3)(OH)3.4H2O identity, P2 monoclinic pseudotetragonal structure (R = 0.055 for 1616 reflections), Poudrette quarry cotype CMNMI 81553-81555 WDS composition, 38.6 wt% two-stage TGA-EGA thermal decomposition (20-110 C and 380-510 C), and rapid ambient HCl effervescence are supported. |
+| primary_study | https://rruff.info/rruff_1.0/uploads/CM36_1293.pdf; Complete full-text visual inspection of CM 36 (1998) 1293-1299 (7 pp.) and IMA September 2026 Master List (IMA:1997-047) | supports | IMA:1997-047 Na(Y,REE)(HCO3)(OH)3·4H2O identity, P2 monoclinic pseudotetragonal structure (R = 3.9% for 915 observed reflections), Poudrette quarry cotype CMNMI 81553-81555 WDS composition, and N2 TG/DTG thermal decomposition (38.8 wt% total loss at 650 C across 20-110 C, 110-380 C, and 380-510 C stages) are supported. |
 | validation | data/records/thomasclarkite-y.yaml; Strict schema and history validation across all 616 records and 744 history sidecars | supports | Checked 616 record(s), 0 failed; Checked 744 history record(s), 0 error(s). |
 
 ## Limits And Additional Notes
@@ -109,10 +109,10 @@ source:
     sha256: 5b23e4a940aa78efb97b770056bf8d8c96097f454e611ec69b1efbc5b53c0305
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
-    sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+    sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.md
-    sha256: edefffa05d10ba6d36a2f7a396c8b6eceb50290b6c2964414240ca120015535d
+    sha256: 1352dfc950a92c4d6fdcf868e1d9082fe1ac3f7d776eeae19702d0addaad4fe7
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
@@ -164,7 +164,7 @@ evidence:
   accessed_at: '2026-10-19T05:30:00Z'
   support: context_only
   summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
-  snapshot_sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+  snapshot_sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
 - evidence_id: ima_authority
   kind: authority
   reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
@@ -177,15 +177,15 @@ evidence:
 - evidence_id: primary_study
   kind: primary_source
   reference: https://rruff.info/rruff_1.0/uploads/CM36_1293.pdf
-  locator: Complete full-text visual inspection of CM 36 (1998) 1293-1300 (8 pp.)
-    and IMA September 2026 Master List (IMA1997-047)
+  locator: Complete full-text visual inspection of CM 36 (1998) 1293-1299 (7 pp.)
+    and IMA September 2026 Master List (IMA:1997-047)
   accessed_at: '2026-10-19T05:30:00Z'
   support: supports
-  summary: IMA1997-047 NaY(HCO3)(OH)3.4H2O identity, P2 monoclinic pseudotetragonal
-    structure (R = 0.055 for 1616 reflections), Poudrette quarry cotype CMNMI 81553-81555
-    WDS composition, 38.6 wt% two-stage TGA-EGA thermal decomposition (20-110 C and
-    380-510 C), and rapid ambient HCl effervescence are supported.
-  snapshot_sha256: 64276bde11f675adced97edc45f8a9f6593717e99ee5cba60454111ccba5c9eb
+  summary: IMA:1997-047 Na(Y,REE)(HCO3)(OH)3·4H2O identity, P2 monoclinic pseudotetragonal
+    structure (R = 3.9% for 915 observed reflections), Poudrette quarry cotype CMNMI
+    81553-81555 WDS composition, and N2 TG/DTG thermal decomposition (38.8 wt% total
+    loss at 650 C across 20-110 C, 110-380 C, and 380-510 C stages) are supported.
+  snapshot_sha256: a42f37d6044a756f7df2c9b38ba99dd8e5896df225eb1ab349013d7f29c820fa
 - evidence_id: validation
   kind: validation
   reference: data/records/thomasclarkite-y.yaml
@@ -225,10 +225,10 @@ assessments:
   area: evidence
   topic: Primary-source identity and evidence boundaries for thomasclarkite-y
   outcome: supported
-  summary: IMA1997-047 NaY(HCO3)(OH)3.4H2O identity, P2 monoclinic pseudotetragonal
-    structure (R = 0.055 for 1616 reflections), Poudrette quarry cotype CMNMI 81553-81555
-    WDS composition, 38.6 wt% two-stage TGA-EGA thermal decomposition (20-110 C and
-    380-510 C), and rapid ambient HCl effervescence are supported.
+  summary: IMA:1997-047 Na(Y,REE)(HCO3)(OH)3·4H2O identity, P2 monoclinic pseudotetragonal
+    structure (R = 3.9% for 915 observed reflections), Poudrette quarry cotype CMNMI
+    81553-81555 WDS composition, and N2 TG/DTG thermal decomposition (38.8 wt% total
+    loss at 650 C across 20-110 C, 110-380 C, and 380-510 C stages) are supported.
   target_ids:
   - cmmmech:thomasclarkite-y
   evidence_ids:
@@ -251,11 +251,11 @@ assessments:
   - validation
 findings: []
 actions: []
-summary: 'Thomasclarkite-(Y) passes with limitations: IMA1997-047 NaY(HCO3)(OH)3.4H2O
-  identity, P2 monoclinic pseudotetragonal structure (R = 0.055 for 1616 reflections),
-  Poudrette quarry cotype CMNMI 81553-81555 WDS composition, 38.6 wt% two-stage TGA-EGA
-  thermal decomposition (20-110 C and 380-510 C), and rapid ambient HCl effervescence
-  are supported.'
+summary: 'Thomasclarkite-(Y) passes with limitations: IMA:1997-047 Na(Y,REE)(HCO3)(OH)3·4H2O
+  identity, P2 monoclinic pseudotetragonal structure (R = 3.9% for 915 observed reflections),
+  Poudrette quarry cotype CMNMI 81553-81555 WDS composition, and N2 TG/DTG thermal
+  decomposition (38.8 wt% total loss at 650 C across 20-110 C, 110-380 C, and 380-510
+  C stages) are supported.'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes at base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34.'

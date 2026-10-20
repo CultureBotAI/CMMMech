@@ -11,7 +11,7 @@
 
 ## Summary
 
-Weeksite passes with limitations: IMA1960-s.p. K2(UO2)2(Si5O13).4H2O identity, Outerbridge et al. 1960 Thomas Range type chemistry and orthorhombic cell, and reversible 110-300 C dehydration versus &gt;500 C decomposition are supported.
+Weeksite passes with limitations: Grandfathered (1962 s.p.) (K)2(UO2)2(Si5O13)(H2O)2·2H2O IMA identity, Outerbridge et al. (1960) Thomas Range type chemistry and historical K2(UO2)2(Si2O5)3·4H2O oxide ratio, orthorhombic cell, and 150 C sealed-Pyrex hydrothermal synthesis (abiotic_hydrothermal_pyrex_synthesis) are supported.
 
 ## Scope And Provenance
 
@@ -39,7 +39,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 evidence: supported. Targets: cmmmech:weeksite.
 
-IMA1960-s.p. K2(UO2)2(Si5O13).4H2O identity, Outerbridge et al. 1960 Thomas Range type chemistry and orthorhombic cell, and reversible 110-300 C dehydration versus &gt;500 C decomposition are supported.
+Grandfathered (1962 s.p.) (K)2(UO2)2(Si5O13)(H2O)2·2H2O IMA identity, Outerbridge et al. (1960) Thomas Range type chemistry and historical K2(UO2)2(Si2O5)3·4H2O oxide ratio, orthorhombic cell, and 150 C sealed-Pyrex hydrothermal synthesis (abiotic_hydrothermal_pyrex_synthesis) are supported.
 
 ### Provenance, category boundaries, and absence of fabricated claims
 
@@ -64,7 +64,7 @@ No findings recorded within this review's declared scope.
 | history | history/records/weeksite/2026-10-19T052200Z-antigravity-001176.yaml; Complete canonical CREATE sidecar history/records/weeksite/2026-10-19T052200Z-antigravity-001176.yaml | supports | Canonical history sidecar and inline history event accurately record actor, UTC timestamp, and scientific scope. |
 | dossier | research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json; Paired Round 117 source investigation dossier research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json | context_only | Documents deduplication, primary-source acquisition hashes, and scope boundaries. |
 | ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List (244 pages visually inspected) | supports | Establishes official mineral species nomenclature, formula, approval status, and commodity vs mineral category boundary. |
-| primary_study | http://www.minsocam.org/ammin/AM45/AM45_39.pdf; Complete full-text visual inspection of AM 45 (1960) 39-52 (14 pp.) and IMA September 2026 Master List (IMA1960-s.p.) | supports | IMA1960-s.p. K2(UO2)2(Si5O13).4H2O identity, Outerbridge et al. 1960 Thomas Range type chemistry and orthorhombic cell, and reversible 110-300 C dehydration versus &gt;500 C decomposition are supported. |
+| primary_study | http://www.minsocam.org/ammin/AM45/AM45_39.pdf; Complete full-text visual inspection of AM 45 (1960) 39-52 (14 pp.) and IMA September 2026 Master List (1962 s.p.) | supports | Grandfathered (1962 s.p.) (K)2(UO2)2(Si5O13)(H2O)2·2H2O IMA identity, Outerbridge et al. (1960) Thomas Range type chemistry and historical K2(UO2)2(Si2O5)3·4H2O oxide ratio, orthorhombic cell, and 150 C sealed-Pyrex hydrothermal synthesis (abiotic_hydrothermal_pyrex_synthesis) are supported. |
 | validation | data/records/weeksite.yaml; Strict schema and history validation across all 616 records and 744 history sidecars | supports | Checked 616 record(s), 0 failed; Checked 744 history record(s), 0 error(s). |
 
 ## Limits And Additional Notes
@@ -109,10 +109,10 @@ source:
     sha256: e9d94d5f70900dd6534f3bd3a343c92818b0ba156218a3681f73e7ad8bd599aa
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
-    sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+    sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.md
-    sha256: edefffa05d10ba6d36a2f7a396c8b6eceb50290b6c2964414240ca120015535d
+    sha256: 1352dfc950a92c4d6fdcf868e1d9082fe1ac3f7d776eeae19702d0addaad4fe7
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
@@ -164,7 +164,7 @@ evidence:
   accessed_at: '2026-10-19T05:30:00Z'
   support: context_only
   summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
-  snapshot_sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+  snapshot_sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
 - evidence_id: ima_authority
   kind: authority
   reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
@@ -178,13 +178,14 @@ evidence:
   kind: primary_source
   reference: http://www.minsocam.org/ammin/AM45/AM45_39.pdf
   locator: Complete full-text visual inspection of AM 45 (1960) 39-52 (14 pp.) and
-    IMA September 2026 Master List (IMA1960-s.p.)
+    IMA September 2026 Master List (1962 s.p.)
   accessed_at: '2026-10-19T05:30:00Z'
   support: supports
-  summary: IMA1960-s.p. K2(UO2)2(Si5O13).4H2O identity, Outerbridge et al. 1960 Thomas
-    Range type chemistry and orthorhombic cell, and reversible 110-300 C dehydration
-    versus >500 C decomposition are supported.
-  snapshot_sha256: a38e575164b8b1fa2ea7d2e5ad06d49a0c354828ef992527bb431ca6178308a0
+  summary: Grandfathered (1962 s.p.) (K)2(UO2)2(Si5O13)(H2O)2·2H2O IMA identity, Outerbridge
+    et al. (1960) Thomas Range type chemistry and historical K2(UO2)2(Si2O5)3·4H2O
+    oxide ratio, orthorhombic cell, and 150 C sealed-Pyrex hydrothermal synthesis
+    (abiotic_hydrothermal_pyrex_synthesis) are supported.
+  snapshot_sha256: fdca7d176f750aa23b4501c58bd9ed2079df65611a08a18ab55c87dddf2e51fa
 - evidence_id: validation
   kind: validation
   reference: data/records/weeksite.yaml
@@ -224,9 +225,10 @@ assessments:
   area: evidence
   topic: Primary-source identity and evidence boundaries for weeksite
   outcome: supported
-  summary: IMA1960-s.p. K2(UO2)2(Si5O13).4H2O identity, Outerbridge et al. 1960 Thomas
-    Range type chemistry and orthorhombic cell, and reversible 110-300 C dehydration
-    versus >500 C decomposition are supported.
+  summary: Grandfathered (1962 s.p.) (K)2(UO2)2(Si5O13)(H2O)2·2H2O IMA identity, Outerbridge
+    et al. (1960) Thomas Range type chemistry and historical K2(UO2)2(Si2O5)3·4H2O
+    oxide ratio, orthorhombic cell, and 150 C sealed-Pyrex hydrothermal synthesis
+    (abiotic_hydrothermal_pyrex_synthesis) are supported.
   target_ids:
   - cmmmech:weeksite
   evidence_ids:
@@ -249,9 +251,10 @@ assessments:
   - validation
 findings: []
 actions: []
-summary: 'Weeksite passes with limitations: IMA1960-s.p. K2(UO2)2(Si5O13).4H2O identity,
-  Outerbridge et al. 1960 Thomas Range type chemistry and orthorhombic cell, and reversible
-  110-300 C dehydration versus >500 C decomposition are supported.'
+summary: 'Weeksite passes with limitations: Grandfathered (1962 s.p.) (K)2(UO2)2(Si5O13)(H2O)2·2H2O
+  IMA identity, Outerbridge et al. (1960) Thomas Range type chemistry and historical
+  K2(UO2)2(Si2O5)3·4H2O oxide ratio, orthorhombic cell, and 150 C sealed-Pyrex hydrothermal
+  synthesis (abiotic_hydrothermal_pyrex_synthesis) are supported.'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes at base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34.'

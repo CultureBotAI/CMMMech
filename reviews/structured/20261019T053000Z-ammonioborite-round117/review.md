@@ -11,7 +11,7 @@
 
 ## Summary
 
-Ammonioborite passes with limitations: Grandfathered (NH4)2B10O16.5H2O IMA identity, Schaller 1933 Larderello characterization, step-heating water-loss holds (109 C, 135 C, 150 C, 200 C), and Larderello crystallizer conversion of larderellite to ammonioborite are supported.
+Ammonioborite passes with limitations: Grandfathered (1933 s.p., Rn 1999) (NH4)3B15O20(OH)8(H2O)4 IMA identity (Merlino &amp; Sartori 1971 pentadecaborate structural formula), Schaller (1933) Larderello (NH4)2O·5B2O3·5H2O oxide-ratio analysis, cold-water sassolite washing, and negative 20-30 C synthesis trials are supported with zero fabricated processing mechanisms.
 
 ## Scope And Provenance
 
@@ -39,7 +39,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 evidence: supported. Targets: cmmmech:ammonioborite.
 
-Grandfathered (NH4)2B10O16.5H2O IMA identity, Schaller 1933 Larderello characterization, step-heating water-loss holds (109 C, 135 C, 150 C, 200 C), and Larderello crystallizer conversion of larderellite to ammonioborite are supported.
+Grandfathered (1933 s.p., Rn 1999) (NH4)3B15O20(OH)8(H2O)4 IMA identity (Merlino &amp; Sartori 1971 pentadecaborate structural formula), Schaller (1933) Larderello (NH4)2O·5B2O3·5H2O oxide-ratio analysis, cold-water sassolite washing, and negative 20-30 C synthesis trials are supported with zero fabricated processing mechanisms.
 
 ### Provenance, category boundaries, and absence of fabricated claims
 
@@ -64,7 +64,7 @@ No findings recorded within this review's declared scope.
 | history | history/records/ammonioborite/2026-10-19T052200Z-antigravity-001175.yaml; Complete canonical CREATE sidecar history/records/ammonioborite/2026-10-19T052200Z-antigravity-001175.yaml | supports | Canonical history sidecar and inline history event accurately record actor, UTC timestamp, and scientific scope. |
 | dossier | research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json; Paired Round 117 source investigation dossier research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json | context_only | Documents deduplication, primary-source acquisition hashes, and scope boundaries. |
 | ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List (244 pages visually inspected) | supports | Establishes official mineral species nomenclature, formula, approval status, and commodity vs mineral category boundary. |
-| primary_study | http://www.minsocam.org/ammin/AM18/AM18_480.pdf; Complete full-text visual inspection of AM 18 (1933) 480-492 (13 pp.) and IMA September 2026 Master List (Grandfathered) | supports | Grandfathered (NH4)2B10O16.5H2O IMA identity, Schaller 1933 Larderello characterization, step-heating water-loss holds (109 C, 135 C, 150 C, 200 C), and Larderello crystallizer conversion of larderellite to ammonioborite are supported. |
+| primary_study | http://www.minsocam.org/ammin/AM18/AM18_480.pdf; Complete full-text visual inspection of AM 18 (1933) 480-492 (13 pp.), Science 171 (1971) 377-379, and IMA September 2026 Master List (1933 s.p., Rn 1999) | supports | Grandfathered (1933 s.p., Rn 1999) (NH4)3B15O20(OH)8(H2O)4 IMA identity (Merlino &amp; Sartori 1971 pentadecaborate structural formula), Schaller (1933) Larderello (NH4)2O·5B2O3·5H2O oxide-ratio analysis, cold-water sassolite washing, and negative 20-30 C synthesis trials are supported with zero fabricated processing mechanisms. |
 | validation | data/records/ammonioborite.yaml; Strict schema and history validation across all 616 records and 744 history sidecars | supports | Checked 616 record(s), 0 failed; Checked 744 history record(s), 0 error(s). |
 
 ## Limits And Additional Notes
@@ -109,10 +109,10 @@ source:
     sha256: 944c07fd9fc0f113ac8c15de86ab031293eb4b42927add68a7857ac328604753
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
-    sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+    sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.md
-    sha256: edefffa05d10ba6d36a2f7a396c8b6eceb50290b6c2964414240ca120015535d
+    sha256: 1352dfc950a92c4d6fdcf868e1d9082fe1ac3f7d776eeae19702d0addaad4fe7
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
@@ -164,7 +164,7 @@ evidence:
   accessed_at: '2026-10-19T05:30:00Z'
   support: context_only
   summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
-  snapshot_sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+  snapshot_sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
 - evidence_id: ima_authority
   kind: authority
   reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
@@ -177,13 +177,15 @@ evidence:
 - evidence_id: primary_study
   kind: primary_source
   reference: http://www.minsocam.org/ammin/AM18/AM18_480.pdf
-  locator: Complete full-text visual inspection of AM 18 (1933) 480-492 (13 pp.) and
-    IMA September 2026 Master List (Grandfathered)
+  locator: Complete full-text visual inspection of AM 18 (1933) 480-492 (13 pp.),
+    Science 171 (1971) 377-379, and IMA September 2026 Master List (1933 s.p., Rn
+    1999)
   accessed_at: '2026-10-19T05:30:00Z'
   support: supports
-  summary: Grandfathered (NH4)2B10O16.5H2O IMA identity, Schaller 1933 Larderello
-    characterization, step-heating water-loss holds (109 C, 135 C, 150 C, 200 C),
-    and Larderello crystallizer conversion of larderellite to ammonioborite are supported.
+  summary: Grandfathered (1933 s.p., Rn 1999) (NH4)3B15O20(OH)8(H2O)4 IMA identity
+    (Merlino & Sartori 1971 pentadecaborate structural formula), Schaller (1933) Larderello
+    (NH4)2O·5B2O3·5H2O oxide-ratio analysis, cold-water sassolite washing, and negative
+    20-30 C synthesis trials are supported with zero fabricated processing mechanisms.
   snapshot_sha256: 3df6c75f8e463a9cdd22eaec551aaf7cdf3d650a09a56ad632805fbe053dd936
 - evidence_id: validation
   kind: validation
@@ -224,9 +226,10 @@ assessments:
   area: evidence
   topic: Primary-source identity and evidence boundaries for ammonioborite
   outcome: supported
-  summary: Grandfathered (NH4)2B10O16.5H2O IMA identity, Schaller 1933 Larderello
-    characterization, step-heating water-loss holds (109 C, 135 C, 150 C, 200 C),
-    and Larderello crystallizer conversion of larderellite to ammonioborite are supported.
+  summary: Grandfathered (1933 s.p., Rn 1999) (NH4)3B15O20(OH)8(H2O)4 IMA identity
+    (Merlino & Sartori 1971 pentadecaborate structural formula), Schaller (1933) Larderello
+    (NH4)2O·5B2O3·5H2O oxide-ratio analysis, cold-water sassolite washing, and negative
+    20-30 C synthesis trials are supported with zero fabricated processing mechanisms.
   target_ids:
   - cmmmech:ammonioborite
   evidence_ids:
@@ -249,10 +252,11 @@ assessments:
   - validation
 findings: []
 actions: []
-summary: 'Ammonioborite passes with limitations: Grandfathered (NH4)2B10O16.5H2O IMA
-  identity, Schaller 1933 Larderello characterization, step-heating water-loss holds
-  (109 C, 135 C, 150 C, 200 C), and Larderello crystallizer conversion of larderellite
-  to ammonioborite are supported.'
+summary: 'Ammonioborite passes with limitations: Grandfathered (1933 s.p., Rn 1999)
+  (NH4)3B15O20(OH)8(H2O)4 IMA identity (Merlino & Sartori 1971 pentadecaborate structural
+  formula), Schaller (1933) Larderello (NH4)2O·5B2O3·5H2O oxide-ratio analysis, cold-water
+  sassolite washing, and negative 20-30 C synthesis trials are supported with zero
+  fabricated processing mechanisms.'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes at base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34.'

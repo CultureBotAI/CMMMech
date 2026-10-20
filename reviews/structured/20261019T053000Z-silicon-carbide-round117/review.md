@@ -11,7 +11,7 @@
 
 ## Summary
 
-Silicon Carbide passes with limitations: Silicon carbide commodity boundary, DOE 2023 energy criticality, HTS 2849.20 trade coverage, and Acheson-process synthesis from silica sand and petroleum coke are supported while keeping natural moissanite distinct.
+Silicon Carbide passes with limitations: DOE 2023 Critical Material for Energy (88 FR 51792, 51797) commodity boundary, wide-bandgap semiconductor and manufactured abrasive scope, and USGS MCS 2026 crude silicon carbide production and trade statistics are supported while keeping natural moissanite distinct (0 mechanisms curated).
 
 ## Scope And Provenance
 
@@ -39,7 +39,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 evidence: supported. Targets: cmmmech:silicon-carbide.
 
-Silicon carbide commodity boundary, DOE 2023 energy criticality, HTS 2849.20 trade coverage, and Acheson-process synthesis from silica sand and petroleum coke are supported while keeping natural moissanite distinct.
+DOE 2023 Critical Material for Energy (88 FR 51792, 51797) commodity boundary, wide-bandgap semiconductor and manufactured abrasive scope, and USGS MCS 2026 crude silicon carbide production and trade statistics are supported while keeping natural moissanite distinct (0 mechanisms curated).
 
 ### Provenance, category boundaries, and absence of fabricated claims
 
@@ -64,7 +64,7 @@ No findings recorded within this review's declared scope.
 | history | history/records/silicon-carbide/2026-10-19T052200Z-antigravity-00117b.yaml; Complete canonical CREATE sidecar history/records/silicon-carbide/2026-10-19T052200Z-antigravity-00117b.yaml | supports | Canonical history sidecar and inline history event accurately record actor, UTC timestamp, and scientific scope. |
 | dossier | research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json; Paired Round 117 source investigation dossier research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json | context_only | Documents deduplication, primary-source acquisition hashes, and scope boundaries. |
 | ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List (244 pages visually inspected) | supports | Establishes official mineral species nomenclature, formula, approval status, and commodity vs mineral category boundary. |
-| primary_study | https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-abrasives.pdf; Complete full-text visual inspection of US DOE 2023 Final Critical Materials List (88 FR 51792, 51797) and USGS MCS 2026 Manufactured Abrasives and Silicon chapters | supports | Silicon carbide commodity boundary, DOE 2023 energy criticality, HTS 2849.20 trade coverage, and Acheson-process synthesis from silica sand and petroleum coke are supported while keeping natural moissanite distinct. |
+| primary_study | https://pubs.usgs.gov/periodicals/mcs2026/mcs2026-abrasives.pdf; Complete full-text visual inspection of US DOE 2023 Final Critical Materials List (88 FR 51792, 51797) and USGS MCS 2026 Manufactured Abrasives and Silicon chapters | supports | DOE 2023 Critical Material for Energy (88 FR 51792, 51797) commodity boundary, wide-bandgap semiconductor and manufactured abrasive scope, and USGS MCS 2026 crude silicon carbide production and trade statistics are supported while keeping natural moissanite distinct (0 mechanisms curated). |
 | validation | data/records/silicon-carbide.yaml; Strict schema and history validation across all 616 records and 744 history sidecars | supports | Checked 616 record(s), 0 failed; Checked 744 history record(s), 0 error(s). |
 
 ## Limits And Additional Notes
@@ -109,10 +109,10 @@ source:
     sha256: dffcbc33107c6abcd601f65d73ff38c9516ff3cc118c35aa1a1c02cd6bf47435
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
-    sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+    sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.md
-    sha256: edefffa05d10ba6d36a2f7a396c8b6eceb50290b6c2964414240ca120015535d
+    sha256: 1352dfc950a92c4d6fdcf868e1d9082fe1ac3f7d776eeae19702d0addaad4fe7
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
@@ -164,7 +164,7 @@ evidence:
   accessed_at: '2026-10-19T05:30:00Z'
   support: context_only
   summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
-  snapshot_sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+  snapshot_sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
 - evidence_id: ima_authority
   kind: authority
   reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
@@ -182,10 +182,11 @@ evidence:
     chapters
   accessed_at: '2026-10-19T05:30:00Z'
   support: supports
-  summary: Silicon carbide commodity boundary, DOE 2023 energy criticality, HTS 2849.20
-    trade coverage, and Acheson-process synthesis from silica sand and petroleum coke
-    are supported while keeping natural moissanite distinct.
-  snapshot_sha256: b905055f426b2cce8ed6033d168abb5f4772088a9136ba561a7da13f338c4e11
+  summary: DOE 2023 Critical Material for Energy (88 FR 51792, 51797) commodity boundary,
+    wide-bandgap semiconductor and manufactured abrasive scope, and USGS MCS 2026
+    crude silicon carbide production and trade statistics are supported while keeping
+    natural moissanite distinct (0 mechanisms curated).
+  snapshot_sha256: 0bd7d61389e9ca4d5d28527f54d40cc0544f003abbe21eb217545a1e59abeb40
 - evidence_id: validation
   kind: validation
   reference: data/records/silicon-carbide.yaml
@@ -225,9 +226,10 @@ assessments:
   area: evidence
   topic: Primary-source identity and evidence boundaries for silicon-carbide
   outcome: supported
-  summary: Silicon carbide commodity boundary, DOE 2023 energy criticality, HTS 2849.20
-    trade coverage, and Acheson-process synthesis from silica sand and petroleum coke
-    are supported while keeping natural moissanite distinct.
+  summary: DOE 2023 Critical Material for Energy (88 FR 51792, 51797) commodity boundary,
+    wide-bandgap semiconductor and manufactured abrasive scope, and USGS MCS 2026
+    crude silicon carbide production and trade statistics are supported while keeping
+    natural moissanite distinct (0 mechanisms curated).
   target_ids:
   - cmmmech:silicon-carbide
   evidence_ids:
@@ -250,10 +252,10 @@ assessments:
   - validation
 findings: []
 actions: []
-summary: 'Silicon Carbide passes with limitations: Silicon carbide commodity boundary,
-  DOE 2023 energy criticality, HTS 2849.20 trade coverage, and Acheson-process synthesis
-  from silica sand and petroleum coke are supported while keeping natural moissanite
-  distinct.'
+summary: 'Silicon Carbide passes with limitations: DOE 2023 Critical Material for
+  Energy (88 FR 51792, 51797) commodity boundary, wide-bandgap semiconductor and manufactured
+  abrasive scope, and USGS MCS 2026 crude silicon carbide production and trade statistics
+  are supported while keeping natural moissanite distinct (0 mechanisms curated).'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes at base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34.'

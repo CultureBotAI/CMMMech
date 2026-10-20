@@ -11,7 +11,7 @@
 
 ## Summary
 
-Richetite passes with limitations: Grandfathered (Fe3+,Mg)xPb2+8.6(UO2)36O36(OH)24.41H2O identity, Burns 1998 P1 triclinic alpha-U3O8-type uranyl sheet refinement (R = 8.9%, S = 1.79 for 12,383 reflections), and Shinkolobwe WDS composition (UO3 77.43 wt%, PbO 17.06 wt%) are supported.
+Richetite passes with limitations: Grandfathered (1947 s.p.) (Fe3+,Mg)Pb8.6(UO2)36O36(OH)24·41H2O identity from Shinkolobwe, Burns (1998) P1 triclinic alpha-U3O8-type uranyl sheet refinement (R = 6.4%, wR = 7.7% for 3133 observed reflections), and WDS composition (UO3 78.28 wt%, PbO 16.36 wt%, FeO 0.50 wt%, MgO 0.27 wt%) are supported.
 
 ## Scope And Provenance
 
@@ -39,7 +39,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 evidence: supported. Targets: cmmmech:richetite.
 
-Grandfathered (Fe3+,Mg)xPb2+8.6(UO2)36O36(OH)24.41H2O identity, Burns 1998 P1 triclinic alpha-U3O8-type uranyl sheet refinement (R = 8.9%, S = 1.79 for 12,383 reflections), and Shinkolobwe WDS composition (UO3 77.43 wt%, PbO 17.06 wt%) are supported.
+Grandfathered (1947 s.p.) (Fe3+,Mg)Pb8.6(UO2)36O36(OH)24·41H2O identity from Shinkolobwe, Burns (1998) P1 triclinic alpha-U3O8-type uranyl sheet refinement (R = 6.4%, wR = 7.7% for 3133 observed reflections), and WDS composition (UO3 78.28 wt%, PbO 16.36 wt%, FeO 0.50 wt%, MgO 0.27 wt%) are supported.
 
 ### Provenance, category boundaries, and absence of fabricated claims
 
@@ -64,7 +64,7 @@ No findings recorded within this review's declared scope.
 | history | history/records/richetite/2026-10-19T052200Z-antigravity-001177.yaml; Complete canonical CREATE sidecar history/records/richetite/2026-10-19T052200Z-antigravity-001177.yaml | supports | Canonical history sidecar and inline history event accurately record actor, UTC timestamp, and scientific scope. |
 | dossier | research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json; Paired Round 117 source investigation dossier research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json | context_only | Documents deduplication, primary-source acquisition hashes, and scope boundaries. |
 | ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List (244 pages visually inspected) | supports | Establishes official mineral species nomenclature, formula, approval status, and commodity vs mineral category boundary. |
-| primary_study | https://rruff.info/rruff_1.0/uploads/CM36_187.pdf; Complete full-text visual inspection of CM 36 (1998) 187-199 (13 pp.) and IMA September 2026 Master List (Grandfathered) | supports | Grandfathered (Fe3+,Mg)xPb2+8.6(UO2)36O36(OH)24.41H2O identity, Burns 1998 P1 triclinic alpha-U3O8-type uranyl sheet refinement (R = 8.9%, S = 1.79 for 12,383 reflections), and Shinkolobwe WDS composition (UO3 77.43 wt%, PbO 17.06 wt%) are supported. |
+| primary_study | https://rruff.info/rruff_1.0/uploads/CM36_187.pdf; Complete full-text visual inspection of CM 36 (1998) 187-199 (13 pp.) and IMA September 2026 Master List (1947 s.p.) | supports | Grandfathered (1947 s.p.) (Fe3+,Mg)Pb8.6(UO2)36O36(OH)24·41H2O identity from Shinkolobwe, Burns (1998) P1 triclinic alpha-U3O8-type uranyl sheet refinement (R = 6.4%, wR = 7.7% for 3133 observed reflections), and WDS composition (UO3 78.28 wt%, PbO 16.36 wt%, FeO 0.50 wt%, MgO 0.27 wt%) are supported. |
 | validation | data/records/richetite.yaml; Strict schema and history validation across all 616 records and 744 history sidecars | supports | Checked 616 record(s), 0 failed; Checked 744 history record(s), 0 error(s). |
 
 ## Limits And Additional Notes
@@ -109,10 +109,10 @@ source:
     sha256: 9efcf2105ad568c30d93981cff1b3a9d2d2640b08a9fab3dee188de0876379dd
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
-    sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+    sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.md
-    sha256: edefffa05d10ba6d36a2f7a396c8b6eceb50290b6c2964414240ca120015535d
+    sha256: 1352dfc950a92c4d6fdcf868e1d9082fe1ac3f7d776eeae19702d0addaad4fe7
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
@@ -164,7 +164,7 @@ evidence:
   accessed_at: '2026-10-19T05:30:00Z'
   support: context_only
   summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
-  snapshot_sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+  snapshot_sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
 - evidence_id: ima_authority
   kind: authority
   reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
@@ -178,14 +178,14 @@ evidence:
   kind: primary_source
   reference: https://rruff.info/rruff_1.0/uploads/CM36_187.pdf
   locator: Complete full-text visual inspection of CM 36 (1998) 187-199 (13 pp.) and
-    IMA September 2026 Master List (Grandfathered)
+    IMA September 2026 Master List (1947 s.p.)
   accessed_at: '2026-10-19T05:30:00Z'
   support: supports
-  summary: Grandfathered (Fe3+,Mg)xPb2+8.6(UO2)36O36(OH)24.41H2O identity, Burns 1998
-    P1 triclinic alpha-U3O8-type uranyl sheet refinement (R = 8.9%, S = 1.79 for 12,383
-    reflections), and Shinkolobwe WDS composition (UO3 77.43 wt%, PbO 17.06 wt%) are
-    supported.
-  snapshot_sha256: 414727f45dd1a0ddbbc89c6f5fe0954950c4784b23df0ed9da9faa8d0d3f506c
+  summary: Grandfathered (1947 s.p.) (Fe3+,Mg)Pb8.6(UO2)36O36(OH)24·41H2O identity
+    from Shinkolobwe, Burns (1998) P1 triclinic alpha-U3O8-type uranyl sheet refinement
+    (R = 6.4%, wR = 7.7% for 3133 observed reflections), and WDS composition (UO3
+    78.28 wt%, PbO 16.36 wt%, FeO 0.50 wt%, MgO 0.27 wt%) are supported.
+  snapshot_sha256: 750385cbef18993b7bd7bd206d4443fc35c690b10d701557a55e67d0b3bfca12
 - evidence_id: validation
   kind: validation
   reference: data/records/richetite.yaml
@@ -225,10 +225,10 @@ assessments:
   area: evidence
   topic: Primary-source identity and evidence boundaries for richetite
   outcome: supported
-  summary: Grandfathered (Fe3+,Mg)xPb2+8.6(UO2)36O36(OH)24.41H2O identity, Burns 1998
-    P1 triclinic alpha-U3O8-type uranyl sheet refinement (R = 8.9%, S = 1.79 for 12,383
-    reflections), and Shinkolobwe WDS composition (UO3 77.43 wt%, PbO 17.06 wt%) are
-    supported.
+  summary: Grandfathered (1947 s.p.) (Fe3+,Mg)Pb8.6(UO2)36O36(OH)24·41H2O identity
+    from Shinkolobwe, Burns (1998) P1 triclinic alpha-U3O8-type uranyl sheet refinement
+    (R = 6.4%, wR = 7.7% for 3133 observed reflections), and WDS composition (UO3
+    78.28 wt%, PbO 16.36 wt%, FeO 0.50 wt%, MgO 0.27 wt%) are supported.
   target_ids:
   - cmmmech:richetite
   evidence_ids:
@@ -251,10 +251,10 @@ assessments:
   - validation
 findings: []
 actions: []
-summary: 'Richetite passes with limitations: Grandfathered (Fe3+,Mg)xPb2+8.6(UO2)36O36(OH)24.41H2O
-  identity, Burns 1998 P1 triclinic alpha-U3O8-type uranyl sheet refinement (R = 8.9%,
-  S = 1.79 for 12,383 reflections), and Shinkolobwe WDS composition (UO3 77.43 wt%,
-  PbO 17.06 wt%) are supported.'
+summary: 'Richetite passes with limitations: Grandfathered (1947 s.p.) (Fe3+,Mg)Pb8.6(UO2)36O36(OH)24·41H2O
+  identity from Shinkolobwe, Burns (1998) P1 triclinic alpha-U3O8-type uranyl sheet
+  refinement (R = 6.4%, wR = 7.7% for 3133 observed reflections), and WDS composition
+  (UO3 78.28 wt%, PbO 16.36 wt%, FeO 0.50 wt%, MgO 0.27 wt%) are supported.'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes at base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34.'

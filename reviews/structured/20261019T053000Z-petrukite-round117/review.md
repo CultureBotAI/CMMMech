@@ -11,7 +11,7 @@
 
 ## Summary
 
-Petrukite passes with limitations: IMA1985-042 (Cu,Fe,Zn)3(Sn,In)S4 identity, Pmn21 orthorhombic wurtzite-derivative structure, Herb claim (GSC 65049-65051), Mount Pleasant (GSC 65052), and Ikuno mine WDS compositions, and Cu+ + In3+ &lt;-&gt; 2(Fe2+,Zn2+) substitution are supported.
+Petrukite passes with limitations: IMA:1985-052 (Cu,Ag)2(Fe,Zn)(Sn,In)S4 identity, Pmn21 orthorhombic wurtzite-derivative superstructure, Herb claim (GSC 65049-65051), Mount Pleasant (GSC 65052), and Ikuno mine WDS compositions, and coupled Cu+ + Sn4+ &lt;-&gt; In3+ + Zn2+ substitution are supported.
 
 ## Scope And Provenance
 
@@ -39,7 +39,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 evidence: supported. Targets: cmmmech:petrukite.
 
-IMA1985-042 (Cu,Fe,Zn)3(Sn,In)S4 identity, Pmn21 orthorhombic wurtzite-derivative structure, Herb claim (GSC 65049-65051), Mount Pleasant (GSC 65052), and Ikuno mine WDS compositions, and Cu+ + In3+ &lt;-&gt; 2(Fe2+,Zn2+) substitution are supported.
+IMA:1985-052 (Cu,Ag)2(Fe,Zn)(Sn,In)S4 identity, Pmn21 orthorhombic wurtzite-derivative superstructure, Herb claim (GSC 65049-65051), Mount Pleasant (GSC 65052), and Ikuno mine WDS compositions, and coupled Cu+ + Sn4+ &lt;-&gt; In3+ + Zn2+ substitution are supported.
 
 ### Provenance, category boundaries, and absence of fabricated claims
 
@@ -64,7 +64,7 @@ No findings recorded within this review's declared scope.
 | history | history/records/petrukite/2026-10-19T052200Z-antigravity-001172.yaml; Complete canonical CREATE sidecar history/records/petrukite/2026-10-19T052200Z-antigravity-001172.yaml | supports | Canonical history sidecar and inline history event accurately record actor, UTC timestamp, and scientific scope. |
 | dossier | research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json; Paired Round 117 source investigation dossier research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json | context_only | Documents deduplication, primary-source acquisition hashes, and scope boundaries. |
 | ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List (244 pages visually inspected) | supports | Establishes official mineral species nomenclature, formula, approval status, and commodity vs mineral category boundary. |
-| primary_study | https://rruff.info/rruff_1.0/uploads/CM27_673.pdf; Complete full-text visual inspection of CM 27 (1989) 673-688 (16 pp.) and IMA September 2026 Master List (IMA1985-042) | supports | IMA1985-042 (Cu,Fe,Zn)3(Sn,In)S4 identity, Pmn21 orthorhombic wurtzite-derivative structure, Herb claim (GSC 65049-65051), Mount Pleasant (GSC 65052), and Ikuno mine WDS compositions, and Cu+ + In3+ &lt;-&gt; 2(Fe2+,Zn2+) substitution are supported. |
+| primary_study | https://rruff.info/rruff_1.0/uploads/CM27_673.pdf; Complete full-text visual inspection of CM 27 (1989) 673-688 (16 pp.) and IMA September 2026 Master List (IMA:1985-052) | supports | IMA:1985-052 (Cu,Ag)2(Fe,Zn)(Sn,In)S4 identity, Pmn21 orthorhombic wurtzite-derivative superstructure, Herb claim (GSC 65049-65051), Mount Pleasant (GSC 65052), and Ikuno mine WDS compositions, and coupled Cu+ + Sn4+ &lt;-&gt; In3+ + Zn2+ substitution are supported. |
 | validation | data/records/petrukite.yaml; Strict schema and history validation across all 616 records and 744 history sidecars | supports | Checked 616 record(s), 0 failed; Checked 744 history record(s), 0 error(s). |
 
 ## Limits And Additional Notes
@@ -109,10 +109,10 @@ source:
     sha256: 5037856e951093721c0625015fe4beab097d94360f7685d95b06af83c1fb96fa
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
-    sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+    sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.md
-    sha256: edefffa05d10ba6d36a2f7a396c8b6eceb50290b6c2964414240ca120015535d
+    sha256: 1352dfc950a92c4d6fdcf868e1d9082fe1ac3f7d776eeae19702d0addaad4fe7
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
@@ -164,7 +164,7 @@ evidence:
   accessed_at: '2026-10-19T05:30:00Z'
   support: context_only
   summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
-  snapshot_sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+  snapshot_sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
 - evidence_id: ima_authority
   kind: authority
   reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
@@ -178,13 +178,14 @@ evidence:
   kind: primary_source
   reference: https://rruff.info/rruff_1.0/uploads/CM27_673.pdf
   locator: Complete full-text visual inspection of CM 27 (1989) 673-688 (16 pp.) and
-    IMA September 2026 Master List (IMA1985-042)
+    IMA September 2026 Master List (IMA:1985-052)
   accessed_at: '2026-10-19T05:30:00Z'
   support: supports
-  summary: IMA1985-042 (Cu,Fe,Zn)3(Sn,In)S4 identity, Pmn21 orthorhombic wurtzite-derivative
-    structure, Herb claim (GSC 65049-65051), Mount Pleasant (GSC 65052), and Ikuno
-    mine WDS compositions, and Cu+ + In3+ <-> 2(Fe2+,Zn2+) substitution are supported.
-  snapshot_sha256: ffdf661f44c46b494d666a353956dba432805f834707f5a50145d31a334ae616
+  summary: IMA:1985-052 (Cu,Ag)2(Fe,Zn)(Sn,In)S4 identity, Pmn21 orthorhombic wurtzite-derivative
+    superstructure, Herb claim (GSC 65049-65051), Mount Pleasant (GSC 65052), and
+    Ikuno mine WDS compositions, and coupled Cu+ + Sn4+ <-> In3+ + Zn2+ substitution
+    are supported.
+  snapshot_sha256: fd085978d8e6da137a608dc5ed44854325aa790b2a5ebad5397b9bb82faab59c
 - evidence_id: validation
   kind: validation
   reference: data/records/petrukite.yaml
@@ -224,9 +225,10 @@ assessments:
   area: evidence
   topic: Primary-source identity and evidence boundaries for petrukite
   outcome: supported
-  summary: IMA1985-042 (Cu,Fe,Zn)3(Sn,In)S4 identity, Pmn21 orthorhombic wurtzite-derivative
-    structure, Herb claim (GSC 65049-65051), Mount Pleasant (GSC 65052), and Ikuno
-    mine WDS compositions, and Cu+ + In3+ <-> 2(Fe2+,Zn2+) substitution are supported.
+  summary: IMA:1985-052 (Cu,Ag)2(Fe,Zn)(Sn,In)S4 identity, Pmn21 orthorhombic wurtzite-derivative
+    superstructure, Herb claim (GSC 65049-65051), Mount Pleasant (GSC 65052), and
+    Ikuno mine WDS compositions, and coupled Cu+ + Sn4+ <-> In3+ + Zn2+ substitution
+    are supported.
   target_ids:
   - cmmmech:petrukite
   evidence_ids:
@@ -249,10 +251,10 @@ assessments:
   - validation
 findings: []
 actions: []
-summary: 'Petrukite passes with limitations: IMA1985-042 (Cu,Fe,Zn)3(Sn,In)S4 identity,
-  Pmn21 orthorhombic wurtzite-derivative structure, Herb claim (GSC 65049-65051),
-  Mount Pleasant (GSC 65052), and Ikuno mine WDS compositions, and Cu+ + In3+ <->
-  2(Fe2+,Zn2+) substitution are supported.'
+summary: 'Petrukite passes with limitations: IMA:1985-052 (Cu,Ag)2(Fe,Zn)(Sn,In)S4
+  identity, Pmn21 orthorhombic wurtzite-derivative superstructure, Herb claim (GSC
+  65049-65051), Mount Pleasant (GSC 65052), and Ikuno mine WDS compositions, and coupled
+  Cu+ + Sn4+ <-> In3+ + Zn2+ substitution are supported.'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes at base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34.'

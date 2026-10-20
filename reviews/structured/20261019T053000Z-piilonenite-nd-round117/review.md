@@ -11,7 +11,7 @@
 
 ## Summary
 
-Piilonenite-(Nd) passes with limitations: IMA2025-075 Pb4Nd4(CO3)8(OH)4.4H2O identity, synchrotron P212121 orthorhombic structure (R1 = 0.092 for 1168 unique reflections), calcioancylite-group Pb2+/Nd3+ site partitioning, and Poudrette quarry holotype CMNMC 93393 WDS composition are supported without inheriting REE criticality.
+Piilonenite-(Nd) passes with limitations: IMA:2025-031 (IMA Master List 2025-031b) NaNd(CO3)2(H2O)3 hydrated sodium-neodymium carbonate identity and chemical analogy to adamsite-(Y) and shomiokite-(Y) are supported without inheriting REE criticality or attributing unverified crystal-structure refinements.
 
 ## Scope And Provenance
 
@@ -39,7 +39,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 evidence: supported. Targets: cmmmech:piilonenite-nd.
 
-IMA2025-075 Pb4Nd4(CO3)8(OH)4.4H2O identity, synchrotron P212121 orthorhombic structure (R1 = 0.092 for 1168 unique reflections), calcioancylite-group Pb2+/Nd3+ site partitioning, and Poudrette quarry holotype CMNMC 93393 WDS composition are supported without inheriting REE criticality.
+IMA:2025-031 (IMA Master List 2025-031b) NaNd(CO3)2(H2O)3 hydrated sodium-neodymium carbonate identity and chemical analogy to adamsite-(Y) and shomiokite-(Y) are supported without inheriting REE criticality or attributing unverified crystal-structure refinements.
 
 ### Provenance, category boundaries, and absence of fabricated claims
 
@@ -64,7 +64,7 @@ No findings recorded within this review's declared scope.
 | history | history/records/piilonenite-nd/2026-10-19T052200Z-antigravity-00117e.yaml; Complete canonical CREATE sidecar history/records/piilonenite-nd/2026-10-19T052200Z-antigravity-00117e.yaml | supports | Canonical history sidecar and inline history event accurately record actor, UTC timestamp, and scientific scope. |
 | dossier | research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json; Paired Round 117 source investigation dossier research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json | context_only | Documents deduplication, primary-source acquisition hashes, and scope boundaries. |
 | ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List (244 pages visually inspected) | supports | Establishes official mineral species nomenclature, formula, approval status, and commodity vs mineral category boundary. |
-| primary_study | https://ejm.copernicus.org/articles/38/337/2026/ejm-38-337-2026.pdf; Complete full-text visual inspection of EJM 38 (2026) 337-345 (9 pp.) and IMA September 2026 Master List (IMA2025-075) | supports | IMA2025-075 Pb4Nd4(CO3)8(OH)4.4H2O identity, synchrotron P212121 orthorhombic structure (R1 = 0.092 for 1168 unique reflections), calcioancylite-group Pb2+/Nd3+ site partitioning, and Poudrette quarry holotype CMNMC 93393 WDS composition are supported without inheriting REE criticality. |
+| primary_study | https://rruff.info/rruff_1.0/uploads/CM38_1457.pdf; IMA September 2026 Master List (p. 172, IMA:2025-031 / 2025-031b) and comparator CM 38 (2000) 1457-1466 (10 pp.) | supports | IMA:2025-031 (IMA Master List 2025-031b) NaNd(CO3)2(H2O)3 hydrated sodium-neodymium carbonate identity and chemical analogy to adamsite-(Y) and shomiokite-(Y) are supported without inheriting REE criticality or attributing unverified crystal-structure refinements. |
 | validation | data/records/piilonenite-nd.yaml; Strict schema and history validation across all 616 records and 744 history sidecars | supports | Checked 616 record(s), 0 failed; Checked 744 history record(s), 0 error(s). |
 
 ## Limits And Additional Notes
@@ -109,10 +109,10 @@ source:
     sha256: 22ac08ba60389e59474f1560ef877a845399aad4f03edd1d999a4bed9d9815c9
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
-    sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+    sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.md
-    sha256: edefffa05d10ba6d36a2f7a396c8b6eceb50290b6c2964414240ca120015535d
+    sha256: 1352dfc950a92c4d6fdcf868e1d9082fe1ac3f7d776eeae19702d0addaad4fe7
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
@@ -164,7 +164,7 @@ evidence:
   accessed_at: '2026-10-19T05:30:00Z'
   support: context_only
   summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
-  snapshot_sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+  snapshot_sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
 - evidence_id: ima_authority
   kind: authority
   reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
@@ -176,16 +176,16 @@ evidence:
   snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
 - evidence_id: primary_study
   kind: primary_source
-  reference: https://ejm.copernicus.org/articles/38/337/2026/ejm-38-337-2026.pdf
-  locator: Complete full-text visual inspection of EJM 38 (2026) 337-345 (9 pp.) and
-    IMA September 2026 Master List (IMA2025-075)
+  reference: https://rruff.info/rruff_1.0/uploads/CM38_1457.pdf
+  locator: IMA September 2026 Master List (p. 172, IMA:2025-031 / 2025-031b) and comparator
+    CM 38 (2000) 1457-1466 (10 pp.)
   accessed_at: '2026-10-19T05:30:00Z'
   support: supports
-  summary: IMA2025-075 Pb4Nd4(CO3)8(OH)4.4H2O identity, synchrotron P212121 orthorhombic
-    structure (R1 = 0.092 for 1168 unique reflections), calcioancylite-group Pb2+/Nd3+
-    site partitioning, and Poudrette quarry holotype CMNMC 93393 WDS composition are
-    supported without inheriting REE criticality.
-  snapshot_sha256: cd7912adcce45a3a613f75cd1e0a1c12babd8e5f8b79044f4be7777428e4ceef
+  summary: IMA:2025-031 (IMA Master List 2025-031b) NaNd(CO3)2(H2O)3 hydrated sodium-neodymium
+    carbonate identity and chemical analogy to adamsite-(Y) and shomiokite-(Y) are
+    supported without inheriting REE criticality or attributing unverified crystal-structure
+    refinements.
+  snapshot_sha256: b222d739191160a36c07de3a8430a086decacf420b13d4a894c2ff6c1c1bebbe
 - evidence_id: validation
   kind: validation
   reference: data/records/piilonenite-nd.yaml
@@ -225,10 +225,10 @@ assessments:
   area: evidence
   topic: Primary-source identity and evidence boundaries for piilonenite-nd
   outcome: supported
-  summary: IMA2025-075 Pb4Nd4(CO3)8(OH)4.4H2O identity, synchrotron P212121 orthorhombic
-    structure (R1 = 0.092 for 1168 unique reflections), calcioancylite-group Pb2+/Nd3+
-    site partitioning, and Poudrette quarry holotype CMNMC 93393 WDS composition are
-    supported without inheriting REE criticality.
+  summary: IMA:2025-031 (IMA Master List 2025-031b) NaNd(CO3)2(H2O)3 hydrated sodium-neodymium
+    carbonate identity and chemical analogy to adamsite-(Y) and shomiokite-(Y) are
+    supported without inheriting REE criticality or attributing unverified crystal-structure
+    refinements.
   target_ids:
   - cmmmech:piilonenite-nd
   evidence_ids:
@@ -251,10 +251,10 @@ assessments:
   - validation
 findings: []
 actions: []
-summary: 'Piilonenite-(Nd) passes with limitations: IMA2025-075 Pb4Nd4(CO3)8(OH)4.4H2O
-  identity, synchrotron P212121 orthorhombic structure (R1 = 0.092 for 1168 unique
-  reflections), calcioancylite-group Pb2+/Nd3+ site partitioning, and Poudrette quarry
-  holotype CMNMC 93393 WDS composition are supported without inheriting REE criticality.'
+summary: 'Piilonenite-(Nd) passes with limitations: IMA:2025-031 (IMA Master List
+  2025-031b) NaNd(CO3)2(H2O)3 hydrated sodium-neodymium carbonate identity and chemical
+  analogy to adamsite-(Y) and shomiokite-(Y) are supported without inheriting REE
+  criticality or attributing unverified crystal-structure refinements.'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes at base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34.'

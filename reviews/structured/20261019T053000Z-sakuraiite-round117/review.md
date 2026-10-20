@@ -11,7 +11,7 @@
 
 ## Summary
 
-Sakuraiite passes with limitations: IMA1965-017 (Cu,Zn,Fe)3(In,Sn)S4 identity, 1986 Shimizu et al. Ikuno mine WDS re-examination (a = 5.45 A, Z = 1, corrected Ag 0.10-0.15 wt%, In:Sn up to 89:11), and 1989 Kissin &amp; Owens verification of Cu + In &lt;-&gt; 2(Zn,Fe) substitution are supported.
+Sakuraiite passes with limitations: IMA:1965-017 (Cu,Zn,Fe)3(In,Sn)S4 identity from Ikuno mine, Kato (1965) tetragonal cell (a = 5.455, c = 10.91 A, Z = 2) vs Kissin &amp; Owens (1989) cubic pseudo-cell discussion, and Shimizu et al. (1986) microprobe re-examination establishing Cu+ + Sn4+ &lt;-&gt; In3+ + (Zn,Fe)2+ substitution and low Ag (&lt;= 0.1 wt%) are supported.
 
 ## Scope And Provenance
 
@@ -39,7 +39,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 evidence: supported. Targets: cmmmech:sakuraiite.
 
-IMA1965-017 (Cu,Zn,Fe)3(In,Sn)S4 identity, 1986 Shimizu et al. Ikuno mine WDS re-examination (a = 5.45 A, Z = 1, corrected Ag 0.10-0.15 wt%, In:Sn up to 89:11), and 1989 Kissin &amp; Owens verification of Cu + In &lt;-&gt; 2(Zn,Fe) substitution are supported.
+IMA:1965-017 (Cu,Zn,Fe)3(In,Sn)S4 identity from Ikuno mine, Kato (1965) tetragonal cell (a = 5.455, c = 10.91 A, Z = 2) vs Kissin &amp; Owens (1989) cubic pseudo-cell discussion, and Shimizu et al. (1986) microprobe re-examination establishing Cu+ + Sn4+ &lt;-&gt; In3+ + (Zn,Fe)2+ substitution and low Ag (&lt;= 0.1 wt%) are supported.
 
 ### Provenance, category boundaries, and absence of fabricated claims
 
@@ -64,7 +64,7 @@ No findings recorded within this review's declared scope.
 | history | history/records/sakuraiite/2026-10-19T052200Z-antigravity-001174.yaml; Complete canonical CREATE sidecar history/records/sakuraiite/2026-10-19T052200Z-antigravity-001174.yaml | supports | Canonical history sidecar and inline history event accurately record actor, UTC timestamp, and scientific scope. |
 | dossier | research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json; Paired Round 117 source investigation dossier research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json | context_only | Documents deduplication, primary-source acquisition hashes, and scope boundaries. |
 | ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List (244 pages visually inspected) | supports | Establishes official mineral species nomenclature, formula, approval status, and commodity vs mineral category boundary. |
-| primary_study | https://rruff.info/rruff_1.0/uploads/CM24_405.pdf; Complete full-text visual inspection of CM 24 (1986) 405-409 (6 pp.), CM 27 (1989) 673-688 (16 pp.), and IMA September 2026 Master List (IMA1965-017) | supports | IMA1965-017 (Cu,Zn,Fe)3(In,Sn)S4 identity, 1986 Shimizu et al. Ikuno mine WDS re-examination (a = 5.45 A, Z = 1, corrected Ag 0.10-0.15 wt%, In:Sn up to 89:11), and 1989 Kissin &amp; Owens verification of Cu + In &lt;-&gt; 2(Zn,Fe) substitution are supported. |
+| primary_study | https://rruff.info/rruff_1.0/uploads/CM24_405.pdf; Complete full-text visual inspection of CM 24 (1986) 405-409 (5 pp.), CM 27 (1989) 673-688 (16 pp.), and IMA September 2026 Master List (IMA:1965-017) | supports | IMA:1965-017 (Cu,Zn,Fe)3(In,Sn)S4 identity from Ikuno mine, Kato (1965) tetragonal cell (a = 5.455, c = 10.91 A, Z = 2) vs Kissin &amp; Owens (1989) cubic pseudo-cell discussion, and Shimizu et al. (1986) microprobe re-examination establishing Cu+ + Sn4+ &lt;-&gt; In3+ + (Zn,Fe)2+ substitution and low Ag (&lt;= 0.1 wt%) are supported. |
 | validation | data/records/sakuraiite.yaml; Strict schema and history validation across all 616 records and 744 history sidecars | supports | Checked 616 record(s), 0 failed; Checked 744 history record(s), 0 error(s). |
 
 ## Limits And Additional Notes
@@ -109,10 +109,10 @@ source:
     sha256: 2b7ea7f1c9a772de91fb52bc71f83368895d78aac8f509c88da655634995e7d8
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.json
-    sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+    sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
     role: context
   - path: research/sources/round117-commodities-and-minerals/20261019T052500Z-source-investigation.md
-    sha256: edefffa05d10ba6d36a2f7a396c8b6eceb50290b6c2964414240ca120015535d
+    sha256: 1352dfc950a92c4d6fdcf868e1d9082fe1ac3f7d776eeae19702d0addaad4fe7
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
@@ -164,7 +164,7 @@ evidence:
   accessed_at: '2026-10-19T05:30:00Z'
   support: context_only
   summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
-  snapshot_sha256: f2c03dc0aab6800e9233d6d465e49b5ed80f4cc546b2d87c03ec891f699b750b
+  snapshot_sha256: 1e29992985ffa6ebfad178223550e4a7680fb96b399a07782f1f3fc4b0e4c1d6
 - evidence_id: ima_authority
   kind: authority
   reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
@@ -177,15 +177,15 @@ evidence:
 - evidence_id: primary_study
   kind: primary_source
   reference: https://rruff.info/rruff_1.0/uploads/CM24_405.pdf
-  locator: Complete full-text visual inspection of CM 24 (1986) 405-409 (6 pp.), CM
-    27 (1989) 673-688 (16 pp.), and IMA September 2026 Master List (IMA1965-017)
+  locator: Complete full-text visual inspection of CM 24 (1986) 405-409 (5 pp.), CM
+    27 (1989) 673-688 (16 pp.), and IMA September 2026 Master List (IMA:1965-017)
   accessed_at: '2026-10-19T05:30:00Z'
   support: supports
-  summary: IMA1965-017 (Cu,Zn,Fe)3(In,Sn)S4 identity, 1986 Shimizu et al. Ikuno mine
-    WDS re-examination (a = 5.45 A, Z = 1, corrected Ag 0.10-0.15 wt%, In:Sn up to
-    89:11), and 1989 Kissin & Owens verification of Cu + In <-> 2(Zn,Fe) substitution
-    are supported.
-  snapshot_sha256: 9c8b409027e07a3e50d3e0121df83d557fbc1da5ff6c3db4bb896c9ae9a493ec
+  summary: IMA:1965-017 (Cu,Zn,Fe)3(In,Sn)S4 identity from Ikuno mine, Kato (1965)
+    tetragonal cell (a = 5.455, c = 10.91 A, Z = 2) vs Kissin & Owens (1989) cubic
+    pseudo-cell discussion, and Shimizu et al. (1986) microprobe re-examination establishing
+    Cu+ + Sn4+ <-> In3+ + (Zn,Fe)2+ substitution and low Ag (<= 0.1 wt%) are supported.
+  snapshot_sha256: 6f8a6e20400dc0755daef03f91b426ec4f2885db3e28836c734bb08b9031da47
 - evidence_id: validation
   kind: validation
   reference: data/records/sakuraiite.yaml
@@ -225,10 +225,10 @@ assessments:
   area: evidence
   topic: Primary-source identity and evidence boundaries for sakuraiite
   outcome: supported
-  summary: IMA1965-017 (Cu,Zn,Fe)3(In,Sn)S4 identity, 1986 Shimizu et al. Ikuno mine
-    WDS re-examination (a = 5.45 A, Z = 1, corrected Ag 0.10-0.15 wt%, In:Sn up to
-    89:11), and 1989 Kissin & Owens verification of Cu + In <-> 2(Zn,Fe) substitution
-    are supported.
+  summary: IMA:1965-017 (Cu,Zn,Fe)3(In,Sn)S4 identity from Ikuno mine, Kato (1965)
+    tetragonal cell (a = 5.455, c = 10.91 A, Z = 2) vs Kissin & Owens (1989) cubic
+    pseudo-cell discussion, and Shimizu et al. (1986) microprobe re-examination establishing
+    Cu+ + Sn4+ <-> In3+ + (Zn,Fe)2+ substitution and low Ag (<= 0.1 wt%) are supported.
   target_ids:
   - cmmmech:sakuraiite
   evidence_ids:
@@ -251,10 +251,11 @@ assessments:
   - validation
 findings: []
 actions: []
-summary: 'Sakuraiite passes with limitations: IMA1965-017 (Cu,Zn,Fe)3(In,Sn)S4 identity,
-  1986 Shimizu et al. Ikuno mine WDS re-examination (a = 5.45 A, Z = 1, corrected
-  Ag 0.10-0.15 wt%, In:Sn up to 89:11), and 1989 Kissin & Owens verification of Cu
-  + In <-> 2(Zn,Fe) substitution are supported.'
+summary: 'Sakuraiite passes with limitations: IMA:1965-017 (Cu,Zn,Fe)3(In,Sn)S4 identity
+  from Ikuno mine, Kato (1965) tetragonal cell (a = 5.455, c = 10.91 A, Z = 2) vs
+  Kissin & Owens (1989) cubic pseudo-cell discussion, and Shimizu et al. (1986) microprobe
+  re-examination establishing Cu+ + Sn4+ <-> In3+ + (Zn,Fe)2+ substitution and low
+  Ag (<= 0.1 wt%) are supported.'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes at base e4e32f5e7dd8bca8e1cd86557db5bbb8c53dea34.'
