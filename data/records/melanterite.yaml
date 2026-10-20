@@ -49,6 +49,14 @@ sources:
     and agrees with the name in supporting Figure S1 rather than the main text.
   url: https://www.ncbi.nlm.nih.gov/nuccore/AB680720.1
   accessed_on: '2026-10-15'
+- id: cctcc_hj2
+  title: >-
+    China Center for Type Culture Collection. Public catalog detail for
+    CCTCC AB 2021274, Comamonas thiooxydans strain HJ-2, non-type culture,
+    with history attributed to China University of Geosciences. General
+    information inspected; literature and GenBank-accession fields are blank.
+  url: https://cctcc.whu.edu.cn/portal/no_center/wsw_detail_en?id=98389&kind=bacteria
+  accessed_on: '2026-10-20'
 mechanisms:
 - id: hj2-culture-associated-phase-assignment
   name: Minor melanterite assigned in mixed solids from an HJ-2 iron microcosm
@@ -116,7 +124,7 @@ mechanisms:
       100% 16S similarity to NBRC 14951 (AB680720.1). Supporting Figure S1
       instead labels that neighbor C. testosteroni and separates it from
       the plotted C. terrigena strains. The article reports CCTCC AB 2021274,
-      but no independently resolved culture-deposit record is accepted here.
+      now independently located in the public catalog under C. thiooxydans.
       HJ-2 is retained as the study strain without a species-level organism ID.
   - source_ref: genbank_hj2
     supports: context_only
@@ -131,6 +139,16 @@ mechanisms:
       agreeing with Figure S1 and conflicting with the main identification
       paragraph. A matching comparison-strain label does not resolve HJ-2's
       species assignment or establish any type-strain identity for it.
+  - source_ref: cctcc_hj2
+    supports: context_only
+    explanation: >-
+      The catalog's General information identifies CCTCC AB 2021274 as
+      Comamonas thiooxydans HJ-2, a non-type culture from China University
+      of Geosciences. This verifies the public accession reported by the
+      study and agrees with the MZ701937.1 name, but literature and
+      GenBank-accession fields are blank. It does not independently link
+      the experimental aliquot to a deposited sequence, reconcile the
+      article's C. terrigena identification or establish mineral formation.
 curation_history:
 - timestamp: '2026-10-15T12:45:08Z'
   curator: codex (GPT-6; codex)
@@ -139,5 +157,13 @@ curation_history:
     Created melanterite from current mineral authorities and the complete
     HJ-2 original plus supplement, retaining provisional mixed-phase scope,
     unresolved crystallization causality and contradictory strain identification.
+- timestamp: '2026-10-20T04:07:36Z'
+  curator: codex / GPT-6
+  action: EDIT
+  summary: >-
+    Added independently verified CCTCC AB 2021274 catalog provenance for
+    HJ-2 while retaining conflicting species labels, unresolved experimental
+    lineage and provisional mixed-solid melanterite evidence.
 history_refs:
 - history/records/melanterite/2026-10-15T124511Z-codex-f47746.yaml
+- history/records/melanterite/2026-10-20T040736Z-codex-2b34d2.yaml
