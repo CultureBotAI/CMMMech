@@ -1,0 +1,29 @@
+history_version: 1
+target:
+  kind: record
+  slug: spent-nickel-steam-reforming-catalyst
+  path: data/records/spent-nickel-steam-reforming-catalyst.yaml
+session:
+  id: 2026-10-21T100048Z-codex-099c70
+  timestamp: '2026-10-21T10:00:48Z'
+  actors:
+  - name: codex
+    type: ai_agent
+    model: GPT-6
+    agent_tool: codex
+events:
+- type: EDIT
+  outcome: changed
+  summary: Correct the acid names read from the original EDTA dechelation flowsheet.
+  details: 'Issue415: the original Oza2011 page199 Figure1 reads H2SO4 and HNO3, not HCl.
+    Correct only the acid-label statement; preserve the unresolved role of sulfuric acid versus
+    the nitric-acid methods, and all protocol, plot, calibration, recovery and reuse limitations.
+    The matching Oza2012 review Figure2 is corroborating context, not an independent assay.
+    Author /root/resume_213_review_165; original figure independently inspected by /root.
+    Canonical history, final validation and independent successor review accompany this bounded
+    correction.'
+  sections:
+  - mechanisms
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/415
