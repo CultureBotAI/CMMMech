@@ -39,7 +39,7 @@ the new records, independent reviews, source dossiers and remaining evidence gap
 | [Lorenzenite](data/records/lorenzenite.yaml) | Natural crystal identity and structure | Ramsayite is a synonym; no processing mechanism inferred |
 | [Ameghinite](data/records/ameghinite.yaml) | Natural borate identity and thermal observations | Distinct synthetic polymorph and inferred reactions remain separate |
 | [Aristarainite](data/records/aristarainite.yaml) | Natural borate identity and structure | Historical hydration formula revised by structural evidence |
-| [Calcioburbankite](data/records/calcioburbankite.yaml) | Natural carbonate identity and diffraction evidence | Distinct from burbankite and unresolved formation-study leads |
+| [Calcioburbankite](data/records/calcioburbankite.yaml) | Natural carbonate identity and qualified abiotic carbonate-brine crystallization | Run-specific phase assignment, washed mixed products and unmeasured REE retained |
 | [Gysinite-(Nd)](data/records/gysinite-nd.yaml) | Natural neodymium carbonate identity | Revised type-locality provenance retained |
 | [Andersonite](data/records/andersonite.yaml) | Natural identity and laboratory thermal alteration | Ideal versus refined hydration and radiation-label discrepancy preserved |
 | [Rutherfordine](data/records/rutherfordine.yaml) | Natural identity and synthetic carbonate preparation | Product characterization kept separate from recovery yield |

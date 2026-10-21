@@ -1,0 +1,760 @@
+# Independent full scientific review of calcioburbankite and qualified run-8 formation
+
+- Review: 20261021T175933Z-calcioburbankite-formation-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-21T17:51:05.697875Z
+- Finished UTC: 2026-10-21T17:59:33.703327Z
+- Reviewer: codex /root/resume_405 (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The full frozen natural identity and qualified abiotic run-8 crystallization record are supported within their stated specimen, phase, analytical and quantitative limits. No owner or source-handoff finding. A separately reported global renderer heading limitation does not alter microbial:false or the scientific evidence; its disposition is bound in the external final review.
+
+## Scope And Provenance
+
+Whole frozen owner, exact new source pair, history, README scope and all accepted original identity/formation evidence.
+
+Selection: Parent-assigned independent full scientific assessment; inspect captured exact input bytes before judgment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1296ee20f2595d7d6a50e391f611c22435418906.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:calcioburbankite | data/records/calcioburbankite.yaml | maintained | Calcioburbankite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named-owner validation | passed | True | cmmmech:calcioburbankite | Actual0/chunk873315; one record, zero failures. |
+| Required full repository gate | passed | True | cmmmech:calcioburbankite | Authoractual38848 exit0/d617d8;363passed3skipped86.83s616/745. |
+| Required nonempty corpus validation | passed | True | cmmmech:calcioburbankite | Authoractual83867 exit0/9f9f7e;616 valid. |
+| Base-aware history validation | passed | True | cmmmech:calcioburbankite | Authoractual93489 exit0/936c2a;745 histories, no errors. |
+| Fresh canonical synchronization | passed | True | cmmmech:calcioburbankite | Authoractual88172 exit0/ce0c09;22 match. |
+| Independent source-cell and Decimal checks | passed | True | cmmmech:calcioburbankite | Actual0/chunk662470;101SI rows,850selected components177calculations; ratios bounded independently. |
+| Independent current provenance verification | passed | True | cmmmech:calcioburbankite | Actual0;966assertions805paths11MD5s pass. |
+| Independent generated/corpus comparison | passed | True | cmmmech:calcioburbankite | Actual14962 exit0/6e2328;634outputs616footer-only18intended1360otherrecord/history unchanged. |
+
+## Scientific And Domain Assessments
+
+### Natural mineral identity and experimental assignment remain distinct
+
+identity: supported. Targets: cmmmech:calcioburbankite.
+
+IMA identity, formula and holotype narrative match original evidence; the synthetic phase is explicitly author-assigned and not treated as a new fully refined species composition.
+
+### Original natural-specimen analytical limits
+
+quantity: supported. Targets: cmmmech:calcioburbankite.
+
+CO2 was calculated stoichiometrically after carbon detection; IR lacks OH/H2O. Pr2O3 mean/range and Ca-range anomalies are retained. Qualitative 10 percent HCl dissolution has no quantitative process conditions or yield.
+
+### Qualified run-8 abiotic formation
+
+evidence: supported. Targets: cmmmech:calcioburbankite.
+
+Table1, results, Figure4 and methods support the narrow observation: 690 C/9.5 kbar homogenization, calcite at660 C then assigned calcioburbankite at635 C/8.0 kbar. BSE/EDS/Raman support the authors’ assignment, not quantitative Ca occupancy or full structure.
+
+### Other arms and controls
+
+scope: supported. Targets: cmmmech:calcioburbankite.
+
+Distinct lower-pressure S2 shows carbonate-melt/aqueous immiscibility and Cbbn620 C/3.3 kbar. It has no original Raman panel and is correctly context_only. Other natural/synthetic feeds, runs and methods are not pooled.
+
+### No quantitative recovery or purity inferred
+
+quantity: supported. Targets: cmmmech:calcioburbankite.
+
+Run8 REE concentration explicitly not determined because carbonate contributions cannot be separated. EDS counts are not wt%/atomic%. Washing removes soluble material; the residue is not a complete inventory.
+
+### Source-table consistency diagnostics
+
+quantity: supported. Targets: cmmmech:calcioburbankite.
+
+All source rows and177 arithmetic checks agree with the handoff. The22large ratio mismatches, conditional500 C baseline disagreements, endpoint/temperature conflicts and graphical TableS2 boundary are explicit; none changes the owner’s unmeasured run8 status.
+
+### Authentic originals, versions and history
+
+provenance: supported. Targets: cmmmech:calcioburbankite.
+
+NLM metadata/MD5s authenticate the final14-page article and10-pageSI; exact two-version table/caption joins and four-section scientific text equality do not imply binary identity. Same-day IMA reuse and historical digest-only comparison are transparent.
+
+### Append-only curation and independent successor scope
+
+provenance: supported. Targets: cmmmech:calcioburbankite.
+
+Original identity scientific fields remain unchanged. The new source, mechanism, canonical and inlineEDIT plus README row consistently describe the bounded advance. The historical identity-only review remains immutable and has no findings to retire.
+
+### Schema, actual gates and generated scope
+
+schema: supported. Targets: cmmmech:calcioburbankite.
+
+Current fields/enums and mass-based ConcentrationObservation boundary are accurate; no inappropriate observation is admitted. Actual structural and canonical gates pass; all generated files are retained.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-489/data/records/calcioburbankite.yaml; Entire exact frozen owner and base diff | supports | Full identity, source and new mechanism reassessed; microbial:false, one run-8 formation claim, no concentration observations. |
+| main | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-489/yuan2024-main.pdf; All 14 original pages; Table 1 p.2; run 8 results pp.4–5; Figure 4 p.6; Methods pp.11–12 | supports | Authentic publisher article supports the qualified author-assigned calcioburbankite crystallization sequence. Quantitative run-8 REE was explicitly not determined. |
+| fig4 | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-489/sciadv.adm9118-f4.jpg; Whole original standalone figure, all 10 panels and BSE/EDS/Raman portions | supports | 690 C/9.5 kbar homogeneous charge, calcite at 660 C and Cbbn at 635 C/8.0 kbar. EDS counts are not composition; qualitative phase annotation is not refinement or isolated recovery. |
+| si | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-489/sciadv.adm9118_sm.pdf; All 10 original pages; S1 table pp.3–6; footnote/Table S2 p.7; Figures S1–S3 pp.8–10 | supports | Distinct S2 immiscibility arm has Cbbn at 620 C/3.3 kbar, BSE/EDS and no Raman panel. S2 is context, not a replicate or a run-8 balance. S1 table conflicts remain literal. |
+| original1995 | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-489/vanvelthuizen1995.pdf; All five original pages 1231–1235 and Tables 1–4 | supports | Natural CMN50804 identity, three analyses on three grains, separate La-rich material, CO2 calculated after carbon detection, absent IR water/OH, possible symmetries and limits of powder identity all checked. |
+| ima | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-489/reused-129-ima2026-09.pdf; Original September 2026 pages 1 and 35, actually viewed; same-day acquisition reuse chain | supports | Approved IMA1993-001, formula Na3(Ca,Ce,Sr,La)3(CO3)5, Canadian natural species. No synthetic-sample composition or commodity criticality inherited. |
+| auth | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-489-independent/integrity-check.json; 966 hash assertions across 805 resolved paths; 11 independent metadata MD5 comparisons | supports | All bindings pass, including original assets, frozen source/owner/history and preserved pre-edit owner mapping. Two historical recorded digests match current originals; missing historical binaries are not claimed acquired. |
+| numeric | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-489-independent/numeric-check.json; Fresh independent PDF extraction/all 101 S1 rows; manual Table1; both XML versions; all 177 Decimal calculations | supports | 850 selected numeric components, 18 dashes and 94 blanks checked. 22 run2/run7 ratio discrepancies remain incompatible with integer rounding; 12 smaller disagreements are compatible. No source value replaced. |
+| handoff | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-489/research/sources/issue-489-calcioburbankite-formation/20261021T175127Z.md; Entire frozen report and evidence JSON | supports | Source-to-schema handoff and qualified run-specific curation accurately retain methods, phase, version, quantitation, specimen and missing-data boundaries. |
+| history | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-489/history/records/calcioburbankite/2026-10-21T174440Z-codex-a18ff1.yaml; Whole canonical EDIT plus separate inline EDIT and history_refs | supports | Actual codex author/time/target and bounded new source/mechanism documented; original CREATE and earlier review remain immutable. |
+| prior | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-489/reviews/structured/20261016T082407Z-calcioburbankite-round115-independent/review.yaml; Whole earlier identity-only scientific review; findings empty | context_only | Prior access deferral was historically truthful. This is a complete new scientific reassessment, not a claim the old review covered the new mechanism. |
+| scope | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-489-independent/scope-check-v2.json; All 634 generated paths; 1360 other tracked record/history paths | supports | 616 footer-only changes and 18 intended content surfaces; all other record/history bytes unchanged. Footer normalization includes exactly the 592-to-593 mechanism count plus date/digest. |
+| json-scope | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-489-independent/index-json-changes.json; Independent recursive index.json diff | supports | Only calcioburbankite mechanisms_count and processes change. |
+| named | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-489-independent/named-check.json; Independent actual named validation exit0, chunk873315 | supports | Exact owner validates, one record, zero failures. |
+| gates | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-489-final-gates.json; Actual full38848 exit0/d617d8 and fresh canonical88172 exit0/ce0c09 | supports | 363 passed/3 skipped in86.83s;616 records/745 histories;22 canonical matches. Scoped actual named/corpus/history/render checks separately bound. |
+| scoped | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-489-scoped-gates.json; Actual corpus83867 and history93489 commands/logs | supports | Explicit --require-records yields616; history --base1296ee20 yields745, no errors. Renderer and render-check exited0. |
+| search | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-489/web-02.json; Dated author-executed exact correction/erratum/retraction and related-paper queries, independently read | context_only | No affecting notice found in those returned windows; empty Crossref relation and NLM is_retracted:false are bounded metadata observations. |
+| related2025 | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-489/web-03.json; Official Nature 2025 text only, DOI10.1038/s43247-025-02334-w | context_only | Different NdPO4 aqueous experiments limit generalization of geological transport claims; no same-run contradiction or transfer to run8. No original2025 figures/SI/PDF review claimed. |
+| dedup | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-489/dedup.json; Exact ten existing worktree/main roots plus unavailable cited-root checks and all-state inventory | context_only | One correct owner; no duplicate record created from current mirrors/supplement. |
+
+## Limits And Additional Notes
+
+- The synthetic product remains an author-assigned phase in a washed mixed assemblage: no quantitative Ca/REE composition, refinement, phase purity, recovery efficiency or full inventory.
+- Run8 REE is explicitly unmeasured. Other-arm S1 table inconsistencies remain literal and are not used to impute run8 values or a corrected source assay.
+- No matched empty-charge/no-REE-feed replicate control, exact runwise loading/water volume or full time ledger is available; S2 is separate context.
+- 2001 full structure original remains deferred; 2025 related paper inspected as official web text only, without a full figure/SI/PDF audit.
+- Searches were author-executed; independent review checked dated saved queries/results and bounded ignored-inclusive roots, not universal literature absence.
+- The universal rendered heading Microbial &amp; Biochemical Mechanisms also appears above this abiotic record. This global presentation issue is separately investigated/reported; the maintained owner explicitly says microbial:false. No renderer correction or whole-site acceptance is implied.
+- Native checker and any post-native full gate are separate actual receipts, not preclaimed in this bundle.
+- All31 original page renders were viewed: main1–14,SI1–10,1995all5,IMA1/35; Figure4 standalone additionally viewed.
+- The independent scope helper first normalized date/digest only, then a separate v2 also normalized the exact one-mechanism corpus-count increment. No author bytes were changed.
+- No remote publication, record mutation or inference of industrial/biological activity performed by reviewer.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T175933Z-calcioburbankite-formation-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent full scientific review of calcioburbankite and qualified run-8
+  formation
+started_at: '2026-10-21T17:51:05.697875Z'
+finished_at: '2026-10-21T17:59:33.703327Z'
+reviewer:
+  identity: codex /root/resume_405
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Author/acquisition by resume_473; this reviewer made no author/source
+    edits or source acquisitions. Independently viewed originals, parsed source tables/XML,
+    recalculated diagnostics and checked preserved/current bytes. Only the new native
+    review pair is written to the author worktree.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The full frozen natural identity and qualified abiotic run-8 crystallization
+  record are supported within their stated specimen, phase, analytical and quantitative
+  limits. No owner or source-handoff finding. A separately reported global renderer
+  heading limitation does not alter microbial:false or the scientific evidence; its
+  disposition is bound in the external final review.
+source:
+  git_revision: 1296ee20f2595d7d6a50e391f611c22435418906
+  state: working_tree
+  inputs:
+  - path: README.md
+    sha256: a8578f007c3bab198d4a382cc9f9dbc7ac444156b4a136f986a8df50878e5776
+    role: context
+  - path: data/records/calcioburbankite.yaml
+    sha256: 5e6d8b6c2949381d47d0aa6c5915b6696752ecbe7fdd57882ca47f44b42d2f2b
+    role: target
+  - path: docs/record-review-profile.md
+    sha256: 01c6f39d0d097876a0446131270df58bb32fa15804c66487419c171719d3ddc0
+    role: context
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/calcioburbankite/2026-10-16T080638Z-codex-root-round104-ree-6bf810.yaml
+    sha256: 9e3b3d33ffa7fd0f8e0a937f3bea1f7dba95eb41658d5790b6aa86b37abc8cc3
+    role: context
+  - path: history/records/calcioburbankite/2026-10-21T174440Z-codex-a18ff1.yaml
+    sha256: d865274ccc64748ab274e1a47aae40e30842f395071d1115eb28e4e1319470af
+    role: context
+  - path: research/sources/issue-489-calcioburbankite-formation/20261021T175127Z-evidence.json
+    sha256: 53368fd866674acfd039ef7bb2564bf55d4305d8db3abad2fb38576c3f02419f
+    role: context
+  - path: research/sources/issue-489-calcioburbankite-formation/20261021T175127Z.md
+    sha256: 87cbc90db0b0005e4a4f88d15e5793c172a754aa708afcf63a15df9d2b1f428b
+    role: context
+  - path: research/sources/round115-ree/20261016T081007Z-source-investigation.md
+    sha256: 512b4dda309f3313025163782626bfd1494cfbb80ec80b0481976913d90f250e
+    role: context
+  - path: reviews/structured/20261016T082407Z-calcioburbankite-round115-independent/review.yaml
+    sha256: ae656da7f1a9703a26b7ef99df99b6e13018fda04af3558a543e95ae4864fb0d
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+targets:
+- target_id: cmmmech:calcioburbankite
+  path: data/records/calcioburbankite.yaml
+  label: Calcioburbankite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/calcioburbankite.yaml
+    role: maintained record
+scope:
+  description: Whole frozen owner, exact new source pair, history, README scope and
+    all accepted original identity/formation evidence.
+  selection: Parent-assigned independent full scientific assessment; inspect captured
+    exact input bytes before judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:calcioburbankite
+checks:
+- check_id: named
+  name: Independent named-owner validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/calcioburbankite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual0/chunk873315; one record, zero failures.
+  target_ids:
+  - cmmmech:calcioburbankite
+  evidence_ids:
+  - named
+- check_id: full
+  name: Required full repository gate
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Authoractual38848 exit0/d617d8;363passed3skipped86.83s616/745.
+  target_ids:
+  - cmmmech:calcioburbankite
+  evidence_ids:
+  - gates
+- check_id: corpus
+  name: Required nonempty corpus validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Authoractual83867 exit0/9f9f7e;616 valid.
+  target_ids:
+  - cmmmech:calcioburbankite
+  evidence_ids:
+  - scoped
+- check_id: history
+  name: Base-aware history validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 1296ee20f2595d7d6a50e391f611c22435418906
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Authoractual93489 exit0/936c2a;745 histories, no errors.
+  target_ids:
+  - cmmmech:calcioburbankite
+  evidence_ids:
+  - scoped
+- check_id: canonical
+  name: Fresh canonical synchronization
+  required: true
+  status: passed
+  command: bash scripts/check_vendored_sync.sh
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Authoractual88172 exit0/ce0c09;22 match.
+  target_ids:
+  - cmmmech:calcioburbankite
+  evidence_ids:
+  - gates
+- check_id: numeric
+  name: Independent source-cell and Decimal checks
+  required: true
+  status: passed
+  command: python3 /private/tmp/cmmmech-backlog-20261019-fmj36s/review-489-independent/numeric-check.py
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual0/chunk662470;101SI rows,850selected components177calculations; ratios
+    bounded independently.
+  target_ids:
+  - cmmmech:calcioburbankite
+  evidence_ids:
+  - numeric
+- check_id: integrity
+  name: Independent current provenance verification
+  required: true
+  status: passed
+  command: python3 /private/tmp/cmmmech-backlog-20261019-fmj36s/review-489-independent/integrity-check.py
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual0;966assertions805paths11MD5s pass.
+  target_ids:
+  - cmmmech:calcioburbankite
+  evidence_ids:
+  - auth
+- check_id: scope
+  name: Independent generated/corpus comparison
+  required: true
+  status: passed
+  command: python3 /private/tmp/cmmmech-backlog-20261019-fmj36s/review-489-independent/scope-check-v2.py
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual14962 exit0/6e2328;634outputs616footer-only18intended1360otherrecord/history
+    unchanged.
+  target_ids:
+  - cmmmech:calcioburbankite
+  evidence_ids:
+  - scope
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-489/data/records/calcioburbankite.yaml
+  locator: Entire exact frozen owner and base diff
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: 5e6d8b6c2949381d47d0aa6c5915b6696752ecbe7fdd57882ca47f44b42d2f2b
+  support: supports
+  summary: Full identity, source and new mechanism reassessed; microbial:false, one
+    run-8 formation claim, no concentration observations.
+- evidence_id: main
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-489/yuan2024-main.pdf
+  locator: All 14 original pages; Table 1 p.2; run 8 results pp.4–5; Figure 4 p.6;
+    Methods pp.11–12
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: ca4fedd5fe5a109960621a43261ea2c2dc363506da99e540da0386fdbc2329f2
+  support: supports
+  summary: Authentic publisher article supports the qualified author-assigned calcioburbankite
+    crystallization sequence. Quantitative run-8 REE was explicitly not determined.
+- evidence_id: fig4
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-489/sciadv.adm9118-f4.jpg
+  locator: Whole original standalone figure, all 10 panels and BSE/EDS/Raman portions
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: 325ffbfb102a194c71998e3ae65ef560a7238e4498af714711482be553a4881a
+  support: supports
+  summary: 690 C/9.5 kbar homogeneous charge, calcite at 660 C and Cbbn at 635 C/8.0
+    kbar. EDS counts are not composition; qualitative phase annotation is not refinement
+    or isolated recovery.
+- evidence_id: si
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-489/sciadv.adm9118_sm.pdf
+  locator: All 10 original pages; S1 table pp.3–6; footnote/Table S2 p.7; Figures
+    S1–S3 pp.8–10
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: d9d2b183e985de39dee01f2859a7ee47295a1f74f1609d09b31d966bc3f2ff34
+  support: supports
+  summary: Distinct S2 immiscibility arm has Cbbn at 620 C/3.3 kbar, BSE/EDS and no
+    Raman panel. S2 is context, not a replicate or a run-8 balance. S1 table conflicts
+    remain literal.
+- evidence_id: original1995
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-489/vanvelthuizen1995.pdf
+  locator: All five original pages 1231–1235 and Tables 1–4
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: c2f3e455eb059b5922fd47fde5a2e6f362c97022702f4a178fc726b510c77e3c
+  support: supports
+  summary: Natural CMN50804 identity, three analyses on three grains, separate La-rich
+    material, CO2 calculated after carbon detection, absent IR water/OH, possible
+    symmetries and limits of powder identity all checked.
+- evidence_id: ima
+  kind: authority
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-489/reused-129-ima2026-09.pdf
+  locator: Original September 2026 pages 1 and 35, actually viewed; same-day acquisition
+    reuse chain
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  support: supports
+  summary: Approved IMA1993-001, formula Na3(Ca,Ce,Sr,La)3(CO3)5, Canadian natural
+    species. No synthetic-sample composition or commodity criticality inherited.
+- evidence_id: auth
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-489-independent/integrity-check.json
+  locator: 966 hash assertions across 805 resolved paths; 11 independent metadata
+    MD5 comparisons
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: c6155cb358605b094eda5a7328b79dcc32e689a43dcdb2157aeab885329608d6
+  support: supports
+  summary: All bindings pass, including original assets, frozen source/owner/history
+    and preserved pre-edit owner mapping. Two historical recorded digests match current
+    originals; missing historical binaries are not claimed acquired.
+- evidence_id: numeric
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-489-independent/numeric-check.json
+  locator: Fresh independent PDF extraction/all 101 S1 rows; manual Table1; both XML
+    versions; all 177 Decimal calculations
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: 9be0d87c592a71b876f07d3bb4c5f15157d54005ddb78e3474239c2dc3dd8460
+  support: supports
+  summary: 850 selected numeric components, 18 dashes and 94 blanks checked. 22 run2/run7
+    ratio discrepancies remain incompatible with integer rounding; 12 smaller disagreements
+    are compatible. No source value replaced.
+- evidence_id: handoff
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-489/research/sources/issue-489-calcioburbankite-formation/20261021T175127Z.md
+  locator: Entire frozen report and evidence JSON
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: 87cbc90db0b0005e4a4f88d15e5793c172a754aa708afcf63a15df9d2b1f428b
+  support: supports
+  summary: Source-to-schema handoff and qualified run-specific curation accurately
+    retain methods, phase, version, quantitation, specimen and missing-data boundaries.
+- evidence_id: history
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-489/history/records/calcioburbankite/2026-10-21T174440Z-codex-a18ff1.yaml
+  locator: Whole canonical EDIT plus separate inline EDIT and history_refs
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: d865274ccc64748ab274e1a47aae40e30842f395071d1115eb28e4e1319470af
+  support: supports
+  summary: Actual codex author/time/target and bounded new source/mechanism documented;
+    original CREATE and earlier review remain immutable.
+- evidence_id: prior
+  kind: prior_review
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-489/reviews/structured/20261016T082407Z-calcioburbankite-round115-independent/review.yaml
+  locator: Whole earlier identity-only scientific review; findings empty
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: ae656da7f1a9703a26b7ef99df99b6e13018fda04af3558a543e95ae4864fb0d
+  support: context_only
+  summary: Prior access deferral was historically truthful. This is a complete new
+    scientific reassessment, not a claim the old review covered the new mechanism.
+- evidence_id: scope
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-489-independent/scope-check-v2.json
+  locator: All 634 generated paths; 1360 other tracked record/history paths
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: 6f48935a07057ef320eba04550a4ba02ad5fdf51e122c360800eef557e0c4d53
+  support: supports
+  summary: 616 footer-only changes and 18 intended content surfaces; all other record/history
+    bytes unchanged. Footer normalization includes exactly the 592-to-593 mechanism
+    count plus date/digest.
+- evidence_id: json-scope
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-489-independent/index-json-changes.json
+  locator: Independent recursive index.json diff
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: 441b1cd62afeca95b3fafec4462807dd025dc63b4ecff37d74e8185911ea89c5
+  support: supports
+  summary: Only calcioburbankite mechanisms_count and processes change.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-489-independent/named-check.json
+  locator: Independent actual named validation exit0, chunk873315
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: 3d983647b6e685ecd087f4c3f859c0b1e01ad4409b57b08f4fbd634eaa96f947
+  support: supports
+  summary: Exact owner validates, one record, zero failures.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-489-final-gates.json
+  locator: Actual full38848 exit0/d617d8 and fresh canonical88172 exit0/ce0c09
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: 78753d53f7a7065314ec05d020f16815b07cbd105b3e6315d90d3b7f76afbda5
+  support: supports
+  summary: 363 passed/3 skipped in86.83s;616 records/745 histories;22 canonical matches.
+    Scoped actual named/corpus/history/render checks separately bound.
+- evidence_id: scoped
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-489-scoped-gates.json
+  locator: Actual corpus83867 and history93489 commands/logs
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: 397d687b551105492f38d1b86a0f3e18013516da35f8330bc2a2b27a68782bc8
+  support: supports
+  summary: Explicit --require-records yields616; history --base1296ee20 yields745,
+    no errors. Renderer and render-check exited0.
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-489/web-02.json
+  locator: Dated author-executed exact correction/erratum/retraction and related-paper
+    queries, independently read
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: 2b112de2cd510930fbdf3d4dfab5c59b1315247675385909d7e4e9d82532f14f
+  support: context_only
+  summary: No affecting notice found in those returned windows; empty Crossref relation
+    and NLM is_retracted:false are bounded metadata observations.
+  search_scope: web.run 2026-10-21; all three batches, six exact queries/two opens,
+    actual start/end timestamps and no API domain/recency filters inspected. No universal
+    notice-absence claim.
+- evidence_id: related2025
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-489/web-03.json
+  locator: Official Nature 2025 text only, DOI10.1038/s43247-025-02334-w
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: 4817920f404088a20dffba293ac117188c24a7fbfb21d0d881e9e40b17892463
+  support: context_only
+  summary: Different NdPO4 aqueous experiments limit generalization of geological
+    transport claims; no same-run contradiction or transfer to run8. No original2025
+    figures/SI/PDF review claimed.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-489/dedup.json
+  locator: Exact ten existing worktree/main roots plus unavailable cited-root checks
+    and all-state inventory
+  accessed_at: '2026-10-21T17:59:33.703327Z'
+  snapshot_sha256: de7ee98a6dda220ebf92f9ec78c37f839c808470e0beab6e5ecbf475acd22dff
+  support: context_only
+  summary: One correct owner; no duplicate record created from current mirrors/supplement.
+  search_scope: 'Bounded rg --no-ignore --hidden --follow; all-state514 issue/PR title/body
+    entries; full #489 with zero comments. No machine-wide or future-state absence
+    claim.'
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Natural mineral identity and experimental assignment remain distinct
+  outcome: supported
+  summary: IMA identity, formula and holotype narrative match original evidence; the
+    synthetic phase is explicitly author-assigned and not treated as a new fully refined
+    species composition.
+  target_ids:
+  - cmmmech:calcioburbankite
+  evidence_ids:
+  - owner
+  - original1995
+  - ima
+  dimensions:
+  - name: material_form
+    value: Natural mineral species; separate experimental mixed assemblage
+    definition: Neither elemental REE nor commodity nor a pure recovered product.
+    evidence_ids:
+    - owner
+    - ima
+    - main
+  - name: criticality
+    value: No criticality entry
+    definition: No jurisdiction/list/edition designation is inherited from generic
+      REE language.
+    evidence_ids:
+    - owner
+- assessment_id: identity-limits
+  area: quantity
+  topic: Original natural-specimen analytical limits
+  outcome: supported
+  summary: CO2 was calculated stoichiometrically after carbon detection; IR lacks
+    OH/H2O. Pr2O3 mean/range and Ca-range anomalies are retained. Qualitative 10 percent
+    HCl dissolution has no quantitative process conditions or yield.
+  target_ids:
+  - cmmmech:calcioburbankite
+  evidence_ids:
+  - original1995
+  - owner
+  dimensions:
+  - name: specimen
+    value: CMN50804 Mont Saint-Hilaire; three analyses on three grains
+    definition: Quarry/geological setting uncertain, partly altered surfaces; separate
+      La-rich material not pooled.
+    evidence_ids:
+    - original1995
+  - name: diffraction
+    value: Three candidate hexagonal space groups, no atomic structure
+    definition: 1995 powder data alone do not distinguish all burbankite-group species;
+      2001 remains deferred.
+    evidence_ids:
+    - original1995
+    - owner
+- assessment_id: mechanism
+  area: evidence
+  topic: Qualified run-8 abiotic formation
+  outcome: supported
+  summary: 'Table1, results, Figure4 and methods support the narrow observation: 690
+    C/9.5 kbar homogenization, calcite at660 C then assigned calcioburbankite at635
+    C/8.0 kbar. BSE/EDS/Raman support the authors’ assignment, not quantitative Ca
+    occupancy or full structure.'
+  target_ids:
+  - cmmmech:calcioburbankite
+  evidence_ids:
+  - main
+  - fig4
+  - owner
+  dimensions:
+  - name: organism_biomass
+    value: None; microbial:false
+    definition: No biological stock, protein, metabolic attribution or inactive biomass
+      inferred.
+    evidence_ids:
+    - owner
+    - main
+  - name: substrate_preparation
+    value: Maoniuping bastnaesite + Na2CO3 + water + calcite in Au-lined Re gasket/HDAC
+    definition: Natural feed origin is not industrial execution. Dimensions do not
+      establish loaded volume.
+    evidence_ids:
+    - main
+  - name: conditions
+    value: 10 C/min heat,5–10 C/min cool; calcite1086 cm-1 pressure calibration
+    definition: Run4–7 hold at500 C for1–3h not transferred to run8. Exact mass, water
+      volume and runwise time/replicates absent.
+    evidence_ids:
+    - main
+    - numeric
+- assessment_id: controls
+  area: scope
+  topic: Other arms and controls
+  outcome: supported
+  summary: Distinct lower-pressure S2 shows carbonate-melt/aqueous immiscibility and
+    Cbbn620 C/3.3 kbar. It has no original Raman panel and is correctly context_only.
+    Other natural/synthetic feeds, runs and methods are not pooled.
+  target_ids:
+  - cmmmech:calcioburbankite
+  evidence_ids:
+  - si
+  - main
+  - owner
+  dimensions:
+  - name: controls
+    value: No reported empty-charge or matched no-REE-feed replicate control
+    definition: S2 is not a run8 replicate or purity control; broad geological interpretation
+      is not causal biology.
+    evidence_ids:
+    - si
+    - main
+  - name: nulls
+    value: Run8/S2 composition absent; other-arm assay contradictions retained
+    definition: Missing values remain dashes, never zeros or imported run1–7 values.
+    evidence_ids:
+    - numeric
+    - main
+- assessment_id: recovery
+  area: quantity
+  topic: No quantitative recovery or purity inferred
+  outcome: supported
+  summary: Run8 REE concentration explicitly not determined because carbonate contributions
+    cannot be separated. EDS counts are not wt%/atomic%. Washing removes soluble material;
+    the residue is not a complete inventory.
+  target_ids:
+  - cmmmech:calcioburbankite
+  evidence_ids:
+  - owner
+  - main
+  - fig4
+  dimensions:
+  - name: outcome
+    value: Author-assigned phase crystallization in a mixed washed assemblage
+    definition: No yield, phase fraction, REE balance, composition assay or refinement
+      is admitted.
+    evidence_ids:
+    - main
+    - fig4
+  - name: washing
+    value: Two to three drops deionized water; run3 exception separate
+    definition: Unassayed wash loss prevents whole-product accounting.
+    evidence_ids:
+    - main
+  - name: deployment
+    value: Laboratory HDAC observation only
+    definition: No industrial recovery, microbial process or deployment.
+    evidence_ids:
+    - owner
+    - main
+- assessment_id: numeric
+  area: quantity
+  topic: Source-table consistency diagnostics
+  outcome: supported
+  summary: All source rows and177 arithmetic checks agree with the handoff. The22large
+    ratio mismatches, conditional500 C baseline disagreements, endpoint/temperature
+    conflicts and graphical TableS2 boundary are explicit; none changes the owner’s
+    unmeasured run8 status.
+  target_ids:
+  - cmmmech:calcioburbankite
+  evidence_ids:
+  - numeric
+  - main
+  - si
+  - handoff
+- assessment_id: version
+  area: provenance
+  topic: Authentic originals, versions and history
+  outcome: supported
+  summary: NLM metadata/MD5s authenticate the final14-page article and10-pageSI; exact
+    two-version table/caption joins and four-section scientific text equality do not
+    imply binary identity. Same-day IMA reuse and historical digest-only comparison
+    are transparent.
+  target_ids:
+  - cmmmech:calcioburbankite
+  evidence_ids:
+  - auth
+  - numeric
+  - handoff
+  - ima
+- assessment_id: history
+  area: provenance
+  topic: Append-only curation and independent successor scope
+  outcome: supported
+  summary: Original identity scientific fields remain unchanged. The new source, mechanism,
+    canonical and inlineEDIT plus README row consistently describe the bounded advance.
+    The historical identity-only review remains immutable and has no findings to retire.
+  target_ids:
+  - cmmmech:calcioburbankite
+  evidence_ids:
+  - history
+  - prior
+  - owner
+  - scope
+- assessment_id: validation
+  area: schema
+  topic: Schema, actual gates and generated scope
+  outcome: supported
+  summary: Current fields/enums and mass-based ConcentrationObservation boundary are
+    accurate; no inappropriate observation is admitted. Actual structural and canonical
+    gates pass; all generated files are retained.
+  target_ids:
+  - cmmmech:calcioburbankite
+  evidence_ids:
+  - named
+  - gates
+  - scoped
+  - scope
+  - json-scope
+  - handoff
+findings: []
+actions: []
+limitations:
+- 'The synthetic product remains an author-assigned phase in a washed mixed assemblage:
+  no quantitative Ca/REE composition, refinement, phase purity, recovery efficiency
+  or full inventory.'
+- Run8 REE is explicitly unmeasured. Other-arm S1 table inconsistencies remain literal
+  and are not used to impute run8 values or a corrected source assay.
+- No matched empty-charge/no-REE-feed replicate control, exact runwise loading/water
+  volume or full time ledger is available; S2 is separate context.
+- 2001 full structure original remains deferred; 2025 related paper inspected as official
+  web text only, without a full figure/SI/PDF audit.
+- Searches were author-executed; independent review checked dated saved queries/results
+  and bounded ignored-inclusive roots, not universal literature absence.
+- The universal rendered heading Microbial & Biochemical Mechanisms also appears above
+  this abiotic record. This global presentation issue is separately investigated/reported;
+  the maintained owner explicitly says microbial:false. No renderer correction or
+  whole-site acceptance is implied.
+- Native checker and any post-native full gate are separate actual receipts, not preclaimed
+  in this bundle.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261016T082407Z-calcioburbankite-round115-independent
+  relationship: Preserved prior identity-only scientific review. New whole-owner scientific
+    reassessment covers the newly accessible formation originals; no prior native
+    finding exists to retire.
+notes:
+- 'All31 original page renders were viewed: main1–14,SI1–10,1995all5,IMA1/35; Figure4
+  standalone additionally viewed.'
+- The independent scope helper first normalized date/digest only, then a separate
+  v2 also normalized the exact one-mechanism corpus-count increment. No author bytes
+  were changed.
+- No remote publication, record mutation or inference of industrial/biological activity
+  performed by reviewer.
+```
