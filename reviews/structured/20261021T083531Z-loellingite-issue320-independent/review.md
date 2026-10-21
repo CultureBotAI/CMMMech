@@ -1,0 +1,589 @@
+# Independent scientific review of attributed loellingite thesis methods
+
+- Review: 20261021T083531Z-loellingite-issue320-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-21T08:30:23.933284Z
+- Finished UTC: 2026-10-21T08:35:31.338726Z
+- Reviewer: codex /root/resume_213_review_165 (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Qualified acceptance of the narrowly attributed thesis20→50 mL methods and fraction handling. Complete owner, primary evidence and fresh identifiers support the retained mixed-feed and causal boundaries. No corrective repository finding. Raw recovery andXPSclarification remain open.
+
+## Scope And Provenance
+
+Complete exact frozen maintained owner and history, root source pair, primary journal and bounded relevant thesis sections; fresh identity/taxon authority and arithmetic/hash verification.
+
+Selection: Assigned named owner after explicit freeze; native inspection captured before assessment.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 2da10d95a72146ee0c69cb91fe303348fbadb638.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:loellingite | data/records/loellingite.yaml | maintained | Löllingite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named validation | passed | True | cmmmech:loellingite | Checked 1 record(s); 0 failed. |
+| Independent all-records validation | passed | True | cmmmech:loellingite | Checked 616 record(s); 0 failed. |
+| Independent history validation | passed | True | cmmmech:loellingite | Checked 745 history record(s); 0 error(s). |
+| Completed full local batch gate | passed | True | cmmmech:loellingite | Root actual completed terminal receipt and log verified; current owner/history/source hashes match inspected state. Independent reviewer did not claim a second full execution. |
+
+## Scientific And Domain Assessments
+
+### Mineral identity, material form and criticality
+
+identity: supported. Targets: cmmmech:loellingite.
+
+Ideal FeAs2 mineral is distinct from arsenopyrite and the tested loellingite-bearing feed. Natural variation is allowed; no elemental criticality or pure-phase experimental identity is transferred.
+
+### Taxon, strain and biomass state
+
+grounding: supported. Targets: cmmmech:loellingite.
+
+Species 180 and DSM 2705/L15 are grounded. Living adapted cultures and cell-filtered late-exponential article supernatants are distinguished; microbial origin does not imply live cells during flotation or purified/dose-standardized EPS.
+
+### Direct thesis method cross-reference and journal limits
+
+evidence: supported. Targets: cmmmech:loellingite.
+
+The direct4.2.4→3.3.2.2 link supports20 mL conditioning, 50 mL flotation top-up and dried/weighed fractions. Owner explicitly attributes them to the earlier thesis and withholds per-journal-run certainty.
+
+Journal1 g of a 1:1 source-material mixture, 6/8/10 h, 30 C and 155 rpm, 1.5e7 cells/mL, 5 min and 0.4 L/min; nominal source97.4% pyrite and38.8% arsenopyrite/60.6% loellingite. Thesis UV 20 versus 30 min, late-exponentialvsbeginning-stationary harvest and1 mL PIPX stock/final ambiguity remain explicit; no inferred exact EPS composition dose.
+
+### Control comparisons and null arms
+
+evidence: supported. Targets: cmmmech:loellingite.
+
+HH pH 1.8 versus water pH 9 changes chemistry and pH; no composition-matched EPS-depleted control is claimed. Weak alkaline and pyrite-grown live-culture arms are preserved. Thesis single-source baseline and mixed-feed figures are distinct.
+
+### Study lineage, versions and source access
+
+provenance: supported. Targets: cmmmech:loellingite.
+
+Same authorship family, matching feed, selected endpoints, plots and retained XPS rows support inferred shared lineage. The thesis publication list does not explicitly declare the later article; thesis is neither replication nor authoritative correction. Public metadata release and author copyright are correctly bounded.
+
+### Recovery, spectral denominators and independent arithmetic
+
+quantity: supported. Targets: cmmmech:loellingite.
+
+92.9% belongs to pyrite at 10 h, not loellingite or dissolved-arsenic extraction.23 calculations and78 cells pass. Missing raw weights/equation/QXRD/replicates persist. XPS fitted percentages, survey at.% and FWHM remain separate; dashes are not zeros.
+
+HO-C=O6.9→4.4 and elementalS6.1→3.1 remain contrary to broad increase prose. O 1s metal-oxide 16.6→19.9 does not establish absolute amount when total O 21.9→8.7. S region includesBi 21.8 andloss 4.3. Additional thesis HH 10 h andHH-culture/PIPX 10 h arms are published fit summaries, notraw fits or matched EPS controls.
+
+### Causality, surface evidence and deployment
+
+scope: supported. Targets: cmmmech:loellingite.
+
+SEM prepared mixed grains do not establish loellingite-specific colonization, viability or enzymatic attack. XPS arms differ in product, collector, substrate and 8 versus 10 h; no single EPS molecule or unique mineral reaction follows. Laboratory flotation is not isolated-product purity, dissolved-metal balance or industrial deployment.
+
+### Exact owner/history, schema and validations
+
+provenance: supported. Targets: cmmmech:loellingite.
+
+Native inspect precedes final assessment. Current owner, source pair, newEDIT and original CREATE are exact hash-bound; original CREATE is unchanged from base. Actor/timestamps/target agree and independent validations pass. Root authored owner/source; reviewer acquisition and crosswalk contributions are explicit.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/loellingite.yaml; Complete frozen owner, native inspect at 2026-10-21T08:30:23.933284Z | supports | Complete mineral identity and one microbial separation mechanism reviewed; current owner is authored by root, not this reviewer. |
+| history | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-320/history/records/loellingite/2026-10-21T082750Z-codex-7a46f5.yaml; Complete new canonical EDIT and inline event; older CREATE compared to base. | supports | Actual curator, target, timestamps and attributed methods addition agree; no reassignment of earlier work. |
+| journal | https://doi.org/10.1016/j.mineng.2025.109440; Original fourteen-page institutional publisher PDF; original pages1–12 visually read, all 11 figures/all 6 tables; references pages13–14 read as text. Local /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-320/almojadah2025.pdf | supports | The characterized mixed-feed flotation, living-culture versus filtered-supernatant states, weak controls, 92.9% pyrite endpoint and confounded XPS comparison support the bounded record. |
+| thesis | https://flex.flinders.edu.au/items/3d891474-c382-4654-9f26-cfaf4156d95e/1; PDF 82–83 section 3.3.2.2 and PDF 98 section4.2.4; PDF 113, 117, 119, 121 baseline/growth/EPS plots; PDF 123, 125, 127, 129, 132 tables4.2–4.6. Exact local PDF /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-320/thesis-lead/thesis.pdf | partial | Direct chapter-to-general-method link supports attributed20 mL conditioning, top-up to 50 mL and drying/weighing both fractions. Matching numerical rows support inferred shared lineage. Protocol conflicts and missing raw mass balance prevent unqualified journal-run reconstruction. |
+| thesis-scope | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-320/thesis-lead/assessment.json; Acquisition/inspection contribution completed before root authored the owner; 25 original thesis pages and bounded text sections, title/publication list and appendix boundaries. | context_only | Reviewer acquired and inspected the thesis and authored the source crosswalk; this is disclosed shared source work, not an independent audit of that earlier handoff. No owner/history/source report authorship by reviewer. |
+| numeric | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-320-independent/audit.json; Independent original journal rekey:70 numeric and 8 missing; 23 Decimal recalculations; 78 thesis/journal cell comparisons; 200 hash assertions116 paths. | supports | All selected cells, missing tokens, arithmetic and hashes match. Spectral, survey and conditional-feed denominators remain separate; no recovered-product yield or raw-fit equivalence inferred. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Fresh public PDF; original page 127 Löllingite row and page 1 definitions visually inspected. Local /private/tmp/cmmmech-backlog-20261019-fmj36s/review-320-independent/ima.pdf | supports | FeAs2, grandfathered G and original-description year 1845 support distinct mineral identity; no element criticality is inherited. |
+| handbook | https://www.handbookofmineralogy.org/pdfs/lollingite.pdf; Fresh one-page original visually inspected. Local /private/tmp/cmmmech-backlog-20261019-fmj36s/review-320-independent/handbook.pdf | supports | Orthorhombic mineral, natural composition variation and safflorite series; listed Pnnm cell/powder pattern explicitly synthetic. |
+| taxon | https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&amp;id=180; Fresh public TaxaSet XML:TaxId 180, ScientificName, Rank and type-material aliases. Local /private/tmp/cmmmech-backlog-20261019-fmj36s/review-320-independent/ncbi180.xml | supports | NCBITaxon:180 resolves to Leptospirillum ferrooxidans at species rank; type aliases include DSM 2705, ATCC 29047 and VKM B-1339. Does not authenticate experimental strain sequence. |
+| strain | https://www.dsmz.de/collection/catalogue/details/culture/DSM-2705; Fresh public strain catalogue; name, type-strain designation, L15 and other collection numbers. Local /private/tmp/cmmmech-backlog-20261019-fmj36s/review-320-independent/dsm2705.html | supports | DSM 2705/L15 and aliases agree with source citation; catalogue identity is distinct from direct experimental stock verification. |
+| search | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-320-independent/web-authorities-search-02.json; First returned result sets for exact DOI correction/corrigendum/retraction query and loellingite Almojadah flotation EPS correction query; plus root saved primary-route searches. | context_only | No affecting authoritative notice or public raw phase ledger surfaced within this bounded search; original source contradictions and the thesis remain explicit. Publisher/SSRN blocked bodies were not treated as full text. |
+| local | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-320-independent/local-search.json; Bounded maintained-root hidden/ignored-inclusive and symlink-following search; 72 matched paths. | context_only | Owner, prior review/history and new source handoff are linked as one study family. No universal filesystem absence claim. |
+| handoff | research/sources/issue-320-loellingite-recovery-evidence/20261021T082947Z.md; Complete root-authored frozen Markdown and JSON; exact original source locators, acquisitions, searches, source-version comparisons and schema-field handoff. | supports | Four issue acceptance areas are correctly bounded: volume/handling partly advanced, raw recovery and XPS reconciliation open, mixed-feed scope preserved. No confirmed repository defect found. |
+| validation | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-320-independent/validation.json; Independent actual named record, all-records and history-against-base executions; logs bound. | supports | All commands exited 0; 1 named record, 616 records and745 histories valid. |
+| gates | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-320-final-gates.json; Root actual completed full-gate/render receipts and canonical baseline; receipt/log hashes independently inspected. | supports | Full validation is structural evidence only. Review bundle is saved after this gate; subsequent review-check is recorded separately. |
+
+## Limits And Additional Notes
+
+- No run-level feed/froth/tail masses, explicit phase-recovery equation, raw QXRD/replicates or raw XPS fits were acquired. Issue 320 remains open; these source-data limits are not a confirmed defect in the bounded record.
+- Thesis methods are attributed and study lineage inferred; protocol differences prevent a complete reconstruction of journal runs. No independent replicate study is inferred from shared results.
+- Mixed feed, unmatched pH/medium and treatment/time combinations limit causal and pure-loellingite interpretation. Surface fit percentages are not bulk recovery.
+- Reviewer contributed thesis acquisition and25-page visual inspection/manual table crosswalk before root authored the record/report. Final root-authored owner/report were independently assessed; own source contribution is not represented as fully independent work.
+- Bounded public notice/data searches and hidden/ignored local searches are not exhaustive. Publisher and SSRN access failures remain; no paid route or author contact.
+- All14journal pages and all 11 figures/6tables were inspected, but only selected thesis sections/25 original pages and appendix boundaries were scientifically inspected; no whole-thesis review is claimed.
+- No record or curation-history edit by reviewer. Local structured review save only; no commit or remote mutation.
+- Current authority acquisitions and original renders retained outside Git with exact hashes; public access is not an inferred redistribution license.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T083531Z-loellingite-issue320-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of attributed loellingite thesis methods
+started_at: '2026-10-21T08:30:23.933284Z'
+finished_at: '2026-10-21T08:35:31.338726Z'
+reviewer:
+  identity: codex /root/resume_213_review_165
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored maintained owner, EDIT history and source assessment.
+    This reviewer made no owner/history edits and assessed their exact frozen bytes
+    independently. Reviewer separately acquired and inspected the thesis and authored
+    its table crosswalk before curation; that shared source contribution is explicitly
+    disclosed and not self-reviewed as independent.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Qualified acceptance of the narrowly attributed thesis20→50 mL methods and
+  fraction handling. Complete owner, primary evidence and fresh identifiers support
+  the retained mixed-feed and causal boundaries. No corrective repository finding.
+  Raw recovery andXPSclarification remain open.
+source:
+  git_revision: 2da10d95a72146ee0c69cb91fe303348fbadb638
+  state: working_tree
+  inputs:
+  - path: data/records/loellingite.yaml
+    sha256: a4accbcc9392d509ce91c8607b6c239cdab7f4f636f7bfc15ae75cc0d22bc223
+    role: target
+  - path: history/records/loellingite/2026-10-15T093119Z-codex-af59d6.yaml
+    sha256: d63e93b7c2f9cda879edede0cbc15f33e0a6476181146615bdd5cae62e1bb0d4
+    role: context
+  - path: history/records/loellingite/2026-10-21T082750Z-codex-7a46f5.yaml
+    sha256: db7a102023142ea1a5071706910343c8eea1c3f302c7a9c480369eee287620ad
+    role: context
+  - path: research/sources/issue-320-loellingite-recovery-evidence/20261021T082947Z-evidence.json
+    sha256: 634adf7415544aca02a70ac48ab0c45b7b7e50fd1a44f548cea14065ff260333
+    role: context
+  - path: research/sources/issue-320-loellingite-recovery-evidence/20261021T082947Z.md
+    sha256: 3ed84ef9aac31529e661dbae650bf18422f9383334a7db1614107ec31d4c4c41
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+scope:
+  description: Complete exact frozen maintained owner and history, root source pair,
+    primary journal and bounded relevant thesis sections; fresh identity/taxon authority
+    and arithmetic/hash verification.
+  selection: Assigned named owner after explicit freeze; native inspection captured
+    before assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:loellingite
+  exclusions:
+  - target: Remaining thesis chapters and raw author data
+    reason: No full-thesis scientific review; raw run-level datasets were not publicly
+      acquired.
+targets:
+- target_id: cmmmech:loellingite
+  path: data/records/loellingite.yaml
+  label: Löllingite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/loellingite.yaml
+    role: maintained_record
+checks:
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate --require-records data/records/loellingite.yaml
+  status: passed
+  required: true
+  summary: Checked 1 record(s); 0 failed.
+  target_ids:
+  - cmmmech:loellingite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: all-records
+  name: Independent all-records validation
+  command: uv run --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 616 record(s); 0 failed.
+  target_ids:
+  - cmmmech:loellingite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: history
+  name: Independent history validation
+  command: uv run --locked cmmmech validate-history --base 2da10d95a72146ee0c69cb91fe303348fbadb638
+  status: passed
+  required: true
+  summary: Checked 745 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:loellingite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: full-gate
+  name: Completed full local batch gate
+  command: just check
+  status: passed
+  required: true
+  summary: Root actual completed terminal receipt and log verified; current owner/history/source
+    hashes match inspected state. Independent reviewer did not claim a second full
+    execution.
+  target_ids:
+  - cmmmech:loellingite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gates
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/loellingite.yaml
+  locator: Complete frozen owner, native inspect at 2026-10-21T08:30:23.933284Z
+  accessed_at: '2026-10-21T08:34:45.849746Z'
+  support: supports
+  summary: Complete mineral identity and one microbial separation mechanism reviewed;
+    current owner is authored by root, not this reviewer.
+  snapshot_sha256: a4accbcc9392d509ce91c8607b6c239cdab7f4f636f7bfc15ae75cc0d22bc223
+- evidence_id: history
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-320/history/records/loellingite/2026-10-21T082750Z-codex-7a46f5.yaml
+  locator: Complete new canonical EDIT and inline event; older CREATE compared to
+    base.
+  accessed_at: '2026-10-21T08:34:45.849746Z'
+  support: supports
+  summary: Actual curator, target, timestamps and attributed methods addition agree;
+    no reassignment of earlier work.
+  snapshot_sha256: db7a102023142ea1a5071706910343c8eea1c3f302c7a9c480369eee287620ad
+- evidence_id: journal
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.mineng.2025.109440
+  locator: Original fourteen-page institutional publisher PDF; original pages1–12
+    visually read, all 11 figures/all 6 tables; references pages13–14 read as text.
+    Local /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-320/almojadah2025.pdf
+  accessed_at: '2026-10-21T08:34:45.849746Z'
+  support: supports
+  summary: The characterized mixed-feed flotation, living-culture versus filtered-supernatant
+    states, weak controls, 92.9% pyrite endpoint and confounded XPS comparison support
+    the bounded record.
+  snapshot_sha256: e6f6f682c67357b63985c9e90a9a5247f67f4b89c4b65e27d26fccae586165eb
+- evidence_id: thesis
+  kind: primary_source
+  reference: https://flex.flinders.edu.au/items/3d891474-c382-4654-9f26-cfaf4156d95e/1
+  locator: PDF 82–83 section 3.3.2.2 and PDF 98 section4.2.4; PDF 113, 117, 119, 121
+    baseline/growth/EPS plots; PDF 123, 125, 127, 129, 132 tables4.2–4.6. Exact local
+    PDF /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-320/thesis-lead/thesis.pdf
+  accessed_at: '2026-10-21T08:34:45.849746Z'
+  support: partial
+  summary: Direct chapter-to-general-method link supports attributed20 mL conditioning,
+    top-up to 50 mL and drying/weighing both fractions. Matching numerical rows support
+    inferred shared lineage. Protocol conflicts and missing raw mass balance prevent
+    unqualified journal-run reconstruction.
+  snapshot_sha256: c77989bd40880eb2665deb9fa002b0295e0f77d5c2acb9a4b2ca09e1908a621b
+- evidence_id: thesis-scope
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-320/thesis-lead/assessment.json
+  locator: Acquisition/inspection contribution completed before root authored the
+    owner; 25 original thesis pages and bounded text sections, title/publication list
+    and appendix boundaries.
+  accessed_at: '2026-10-21T08:34:45.849746Z'
+  support: context_only
+  summary: Reviewer acquired and inspected the thesis and authored the source crosswalk;
+    this is disclosed shared source work, not an independent audit of that earlier
+    handoff. No owner/history/source report authorship by reviewer.
+  snapshot_sha256: cd7da421cff6bb9d037100d7eb80dbbaaf8fef3c8e9b7b543c27d160fbbafea9
+- evidence_id: numeric
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-320-independent/audit.json
+  locator: Independent original journal rekey:70 numeric and 8 missing; 23 Decimal
+    recalculations; 78 thesis/journal cell comparisons; 200 hash assertions116 paths.
+  accessed_at: '2026-10-21T08:34:45.849746Z'
+  support: supports
+  summary: All selected cells, missing tokens, arithmetic and hashes match. Spectral,
+    survey and conditional-feed denominators remain separate; no recovered-product
+    yield or raw-fit equivalence inferred.
+  snapshot_sha256: 4be7c9b2c0a27c54766eab0bf7d9dd7f610297b8deecdee0e745d7266b36d69b
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Fresh public PDF; original page 127 Löllingite row and page 1 definitions
+    visually inspected. Local /private/tmp/cmmmech-backlog-20261019-fmj36s/review-320-independent/ima.pdf
+  accessed_at: '2026-10-21T08:34:45.849746Z'
+  support: supports
+  summary: FeAs2, grandfathered G and original-description year 1845 support distinct
+    mineral identity; no element criticality is inherited.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: handbook
+  kind: authority
+  reference: https://www.handbookofmineralogy.org/pdfs/lollingite.pdf
+  locator: Fresh one-page original visually inspected. Local /private/tmp/cmmmech-backlog-20261019-fmj36s/review-320-independent/handbook.pdf
+  accessed_at: '2026-10-21T08:34:45.849746Z'
+  support: supports
+  summary: Orthorhombic mineral, natural composition variation and safflorite series;
+    listed Pnnm cell/powder pattern explicitly synthetic.
+  snapshot_sha256: 0c406acd14027fb85e27deb09f949851788544b6d460fe0d6f0b4a3b70d76458
+- evidence_id: taxon
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=180
+  locator: Fresh public TaxaSet XML:TaxId 180, ScientificName, Rank and type-material
+    aliases. Local /private/tmp/cmmmech-backlog-20261019-fmj36s/review-320-independent/ncbi180.xml
+  accessed_at: '2026-10-21T08:34:45.849746Z'
+  support: supports
+  summary: NCBITaxon:180 resolves to Leptospirillum ferrooxidans at species rank;
+    type aliases include DSM 2705, ATCC 29047 and VKM B-1339. Does not authenticate
+    experimental strain sequence.
+  snapshot_sha256: 8968ae8f21ef86aadd8efc80077c80b4879eb20eee78a2ecaa86515f2aea6bef
+- evidence_id: strain
+  kind: authority
+  reference: https://www.dsmz.de/collection/catalogue/details/culture/DSM-2705
+  locator: Fresh public strain catalogue; name, type-strain designation, L15 and other
+    collection numbers. Local /private/tmp/cmmmech-backlog-20261019-fmj36s/review-320-independent/dsm2705.html
+  accessed_at: '2026-10-21T08:34:45.849746Z'
+  support: supports
+  summary: DSM 2705/L15 and aliases agree with source citation; catalogue identity
+    is distinct from direct experimental stock verification.
+  snapshot_sha256: 9818a40db8778eb136baa86a6d4a4436d22f1fa8731bf6c104d5fa8a01e7bf19
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-320-independent/web-authorities-search-02.json
+  locator: First returned result sets for exact DOI correction/corrigendum/retraction
+    query and loellingite Almojadah flotation EPS correction query; plus root saved
+    primary-route searches.
+  accessed_at: '2026-10-21T08:34:45.849746Z'
+  support: context_only
+  summary: No affecting authoritative notice or public raw phase ledger surfaced within
+    this bounded search; original source contradictions and the thesis remain explicit.
+    Publisher/SSRN blocked bodies were not treated as full text.
+  snapshot_sha256: 743601babafdda6d26bb694cc8f3a5e69c558701d0225af259387cd792b0e836
+  search_scope: 'Exact queries: "10.1016/j.mineng.2025.109440" correction OR corrigendum
+    OR retraction; "loellingite" "Almojadah" flotation EPS correction. First returned
+    sets, not exhaustive; no outreach or paid provider.'
+- evidence_id: local
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-320-independent/local-search.json
+  locator: Bounded maintained-root hidden/ignored-inclusive and symlink-following
+    search; 72 matched paths.
+  accessed_at: '2026-10-21T08:34:45.849746Z'
+  support: context_only
+  summary: Owner, prior review/history and new source handoff are linked as one study
+    family. No universal filesystem absence claim.
+  snapshot_sha256: 14a6b0436499fa5a4372c58931cb5682fd9965897809ce03c45196bc6bf7cc56
+  search_scope: rg --no-ignore --hidden --follow -l -i loellingite|löllingite|109440|3d891474-c382-4654-9f26-cfaf4156d95e
+    data research reviews history docs .claude .agents; current raw source root separately
+    inspected.
+- evidence_id: handoff
+  kind: record_content
+  reference: research/sources/issue-320-loellingite-recovery-evidence/20261021T082947Z.md
+  locator: Complete root-authored frozen Markdown and JSON; exact original source
+    locators, acquisitions, searches, source-version comparisons and schema-field
+    handoff.
+  accessed_at: '2026-10-21T08:34:45.849746Z'
+  support: supports
+  summary: 'Four issue acceptance areas are correctly bounded: volume/handling partly
+    advanced, raw recovery and XPS reconciliation open, mixed-feed scope preserved.
+    No confirmed repository defect found.'
+  snapshot_sha256: 3ed84ef9aac31529e661dbae650bf18422f9383334a7db1614107ec31d4c4c41
+- evidence_id: validation
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-320-independent/validation.json
+  locator: Independent actual named record, all-records and history-against-base executions;
+    logs bound.
+  accessed_at: '2026-10-21T08:34:45.849746Z'
+  support: supports
+  summary: All commands exited 0; 1 named record, 616 records and745 histories valid.
+  snapshot_sha256: 4478fe741f0c14aa0cf4e2855ef497aaf7f55c9daede982138e01ff575c6f19b
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-320-final-gates.json
+  locator: Root actual completed full-gate/render receipts and canonical baseline;
+    receipt/log hashes independently inspected.
+  accessed_at: '2026-10-21T08:34:45.849746Z'
+  support: supports
+  summary: Full validation is structural evidence only. Review bundle is saved after
+    this gate; subsequent review-check is recorded separately.
+  snapshot_sha256: 25bd8f09f7d0694239463b770b56732a92a60c33080081340b8264a48d84036a
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral identity, material form and criticality
+  outcome: supported
+  summary: Ideal FeAs2 mineral is distinct from arsenopyrite and the tested loellingite-bearing
+    feed. Natural variation is allowed; no elemental criticality or pure-phase experimental
+    identity is transferred.
+  target_ids:
+  - cmmmech:loellingite
+  evidence_ids:
+  - owner
+  - ima
+  - handbook
+  - journal
+- assessment_id: organism
+  area: grounding
+  topic: Taxon, strain and biomass state
+  outcome: supported
+  summary: Species 180 and DSM 2705/L15 are grounded. Living adapted cultures and
+    cell-filtered late-exponential article supernatants are distinguished; microbial
+    origin does not imply live cells during flotation or purified/dose-standardized
+    EPS.
+  target_ids:
+  - cmmmech:loellingite
+  evidence_ids:
+  - owner
+  - taxon
+  - strain
+  - journal
+  - thesis
+- assessment_id: methods
+  area: evidence
+  topic: Direct thesis method cross-reference and journal limits
+  outcome: supported
+  summary: The direct4.2.4→3.3.2.2 link supports20 mL conditioning, 50 mL flotation
+    top-up and dried/weighed fractions. Owner explicitly attributes them to the earlier
+    thesis and withholds per-journal-run certainty.
+  target_ids:
+  - cmmmech:loellingite
+  evidence_ids:
+  - owner
+  - journal
+  - thesis
+  details: Journal1 g of a 1:1 source-material mixture, 6/8/10 h, 30 C and 155 rpm,
+    1.5e7 cells/mL, 5 min and 0.4 L/min; nominal source97.4% pyrite and38.8% arsenopyrite/60.6%
+    loellingite. Thesis UV 20 versus 30 min, late-exponentialvsbeginning-stationary
+    harvest and1 mL PIPX stock/final ambiguity remain explicit; no inferred exact
+    EPS composition dose.
+- assessment_id: controls
+  area: evidence
+  topic: Control comparisons and null arms
+  outcome: supported
+  summary: HH pH 1.8 versus water pH 9 changes chemistry and pH; no composition-matched
+    EPS-depleted control is claimed. Weak alkaline and pyrite-grown live-culture arms
+    are preserved. Thesis single-source baseline and mixed-feed figures are distinct.
+  target_ids:
+  - cmmmech:loellingite
+  evidence_ids:
+  - owner
+  - journal
+  - thesis
+- assessment_id: lineage
+  area: provenance
+  topic: Study lineage, versions and source access
+  outcome: supported
+  summary: Same authorship family, matching feed, selected endpoints, plots and retained
+    XPS rows support inferred shared lineage. The thesis publication list does not
+    explicitly declare the later article; thesis is neither replication nor authoritative
+    correction. Public metadata release and author copyright are correctly bounded.
+  target_ids:
+  - cmmmech:loellingite
+  evidence_ids:
+  - handoff
+  - journal
+  - thesis
+  - thesis-scope
+  - numeric
+- assessment_id: quantity
+  area: quantity
+  topic: Recovery, spectral denominators and independent arithmetic
+  outcome: supported
+  summary: 92.9% belongs to pyrite at 10 h, not loellingite or dissolved-arsenic extraction.23
+    calculations and78 cells pass. Missing raw weights/equation/QXRD/replicates persist.
+    XPS fitted percentages, survey at.% and FWHM remain separate; dashes are not zeros.
+  target_ids:
+  - cmmmech:loellingite
+  evidence_ids:
+  - owner
+  - journal
+  - thesis
+  - numeric
+  details: HO-C=O6.9→4.4 and elementalS6.1→3.1 remain contrary to broad increase prose.
+    O 1s metal-oxide 16.6→19.9 does not establish absolute amount when total O 21.9→8.7.
+    S region includesBi 21.8 andloss 4.3. Additional thesis HH 10 h andHH-culture/PIPX
+    10 h arms are published fit summaries, notraw fits or matched EPS controls.
+- assessment_id: scope
+  area: scope
+  topic: Causality, surface evidence and deployment
+  outcome: supported
+  summary: SEM prepared mixed grains do not establish loellingite-specific colonization,
+    viability or enzymatic attack. XPS arms differ in product, collector, substrate
+    and 8 versus 10 h; no single EPS molecule or unique mineral reaction follows.
+    Laboratory flotation is not isolated-product purity, dissolved-metal balance or
+    industrial deployment.
+  target_ids:
+  - cmmmech:loellingite
+  evidence_ids:
+  - owner
+  - journal
+  - thesis
+- assessment_id: provenance
+  area: provenance
+  topic: Exact owner/history, schema and validations
+  outcome: supported
+  summary: Native inspect precedes final assessment. Current owner, source pair, newEDIT
+    and original CREATE are exact hash-bound; original CREATE is unchanged from base.
+    Actor/timestamps/target agree and independent validations pass. Root authored
+    owner/source; reviewer acquisition and crosswalk contributions are explicit.
+  target_ids:
+  - cmmmech:loellingite
+  evidence_ids:
+  - owner
+  - history
+  - numeric
+  - validation
+  - gates
+  - thesis-scope
+findings: []
+actions: []
+limitations:
+- No run-level feed/froth/tail masses, explicit phase-recovery equation, raw QXRD/replicates
+  or raw XPS fits were acquired. Issue 320 remains open; these source-data limits
+  are not a confirmed defect in the bounded record.
+- Thesis methods are attributed and study lineage inferred; protocol differences prevent
+  a complete reconstruction of journal runs. No independent replicate study is inferred
+  from shared results.
+- Mixed feed, unmatched pH/medium and treatment/time combinations limit causal and
+  pure-loellingite interpretation. Surface fit percentages are not bulk recovery.
+- Reviewer contributed thesis acquisition and25-page visual inspection/manual table
+  crosswalk before root authored the record/report. Final root-authored owner/report
+  were independently assessed; own source contribution is not represented as fully
+  independent work.
+- Bounded public notice/data searches and hidden/ignored local searches are not exhaustive.
+  Publisher and SSRN access failures remain; no paid route or author contact.
+- All14journal pages and all 11 figures/6tables were inspected, but only selected
+  thesis sections/25 original pages and appendix boundaries were scientifically inspected;
+  no whole-thesis review is claimed.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261015T094215Z-loellingite-round92-independent
+  relationship: Earlier scientific review of unchanged baseline identity and mechanism;
+    this round reassesses full owner with newly attributed thesis methods.
+notes:
+- No record or curation-history edit by reviewer. Local structured review save only;
+  no commit or remote mutation.
+- Current authority acquisitions and original renders retained outside Git with exact
+  hashes; public access is not an inferred redistribution license.
+links:
+- https://github.com/CultureBotAI/CMMMech/issues/320
+tags:
+- issue-320
+- source-clarification
+- independent-review
+```

@@ -40,6 +40,15 @@ sources:
       dated September 2025, one experiment lineage.
     url: https://researchnow-admin.flinders.edu.au/ws/portalfiles/portal/159178863/Almojadah_Separation_P2025.pdf
     accessed_on: '2026-10-15'
+  - id: almojadah2024_thesis
+    title: >-
+      Almojadah SS (2024). Investigating the Interactions between Extracellular
+      Polymeric Substances (EPS) and Iron Sulfide Surfaces. PhD thesis, Flinders
+      University, November 2024. Sections 3.3.2.2 and 4.2.4 (PDF pages 82-83
+      and 98), Figures 4.13 and 4.15-4.17, and Tables 4.2-4.6; earlier methods
+      and results from an inferred shared experiment lineage.
+    url: https://flex.flinders.edu.au/file/3d891474-c382-4654-9f26-cfaf4156d95e/1/Samar%27s%20thesis%20%28Investigating%20the%20Interactions%20between%20EPS%20and%20Iron%20Sulfide%20Surfaces%29.pdf
+    accessed_on: '2026-10-21'
   - id: dsm2705
     title: >-
       DSMZ catalogue, Leptospirillum ferrooxidans DSM 2705, type strain L15;
@@ -82,8 +91,12 @@ mechanisms:
       loellingite material. Culture cycles were about 4, 28 and 70 days,
       respectively. Microflotation used 1 g of a 1:1 mixture of the pyrite and
       arsenopyrite/loellingite materials, conditioning for 6, 8 or 10 hours in
-      a 100-mL flask at 30 degrees C and 155 rpm. The conditioning liquid volume
-      is not specified. Living-culture arms used 1.5 x 10^7 cells/mL. The
+      a 100-mL flask at 30 degrees C and 155 rpm. The article omits the liquid
+      charge. Almojadah's earlier thesis links its Chapter 4 flotation tests
+      to section 3.3.2.2, which specifies 20 mL during conditioning and topping
+      up to 50 mL for flotation. These are attributed thesis methods, not
+      independently documented volumes for every journal run. Living-culture
+      arms used 1.5 x 10^7 cells/mL. The
       reported free-EPS supernatant was prepared from late-exponential mineral
       cultures by 5-micrometre filtration, centrifugation at 15000 rpm and
       0.2-micrometre filtration; it was not purified or dose-standardized by
@@ -95,6 +108,8 @@ mechanisms:
       means and standard deviations. Floated and tailing fractions were
       examined by Rietveld quantitative XRD; full patterns, raw replicate data
       and an explicit recovery calculation are not supplied in the article.
+      The thesis additionally reports air-drying and weighing both fractions,
+      without supplying the run-level masses or phase-recovery equation.
     evidence:
       - source_ref: almojadah2025
         supports: support
@@ -108,6 +123,24 @@ mechanisms:
           extraction. The result supports selective partitioning in this
           laboratory mixture, not purity or yield of an isolated mineral or
           metal product.
+      - source_ref: almojadah2024_thesis
+        supports: partial
+        explanation: >-
+          Sections 3.3.2.2 and 4.2.4 directly link the liquid-volume and
+          fraction-handling methods. Chapter 4 separates single-source
+          baseline Figure 4.13 from mixed-feed Figures 4.15-4.17; the
+          arsenopyrite source itself contains loellingite. Matching feed,
+          plotted results and retained numerical XPS rows support an inferred
+          shared experiment lineage with the article, not independent
+          replication or a formal correction. Tables 4.2-4.6 include two
+          additional XPS arms but retain the article's compared values and
+          their spectral-denominator limitations. The thesis does not resolve
+          a composition-normalized supernatant dose or supply raw recovery
+          data. Its 1 mL PIPX addition with a stated 10^-4 M concentration
+          leaves stock versus final concentration unclear; its general and
+          Chapter 4 methods also differ on UV duration and EPS growth phase.
+          These differences prevent treating the thesis as an unqualified
+          replacement protocol or accepting a specific causal EPS component.
       - source_ref: almojadah2025
         supports: partial
         explanation: >-
@@ -155,5 +188,13 @@ curation_history:
       Added loellingite identity and qualified microbial-culture/supernatant
       flotation evidence for a characterized mixed feed, retaining null arms,
       phase-partitioning boundaries and source/protocol uncertainties.
+  - timestamp: '2026-10-21T08:27:50Z'
+    curator: 'codex (GPT-6; codex)'
+    action: EDIT
+    summary: >-
+      Added attributed thesis conditioning and flotation volumes and fraction
+      handling, with partial evidence for inferred shared study lineage and
+      explicit protocol, dose, spectral and recovery-data limits.
 history_refs:
 - history/records/loellingite/2026-10-15T093119Z-codex-af59d6.yaml
+- history/records/loellingite/2026-10-21T082750Z-codex-7a46f5.yaml
