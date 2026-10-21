@@ -42,7 +42,7 @@ mechanisms:
   process: other
   microbial: false
   description: A reagent-derived cerium aluminium phosphate preparation was assigned to florencite by
-    XRD and SEM. Subsequent NaOH treatment increased its solid-phase Ce-to-phosphorus mass ratio, and
+    XRD and SEM. Subsequent NaOH treatment increased its reported solid-phase Ce-to-phosphorus composition ratio, and
     HCl treatment decreased that ratio. The authors interpret these changes as preferential phosphorus
     dissolution during the alkaline stage and preferential REE leaching during the acid stage. Solid-composition
     ratios alone do not measure dissolved inventories, quantitative phase conversion or recovery efficiency.
@@ -86,8 +86,12 @@ mechanisms:
     supports: partial
     explanation: PDF pages 7-8 and Figure 6B report solid-composition TREE/P ratios of about 2.1 in raw
       material, 3.5 after 5 M NaOH and 3.0 after subsequent 1.2 M HCl, both at 90 degrees C. The composition
-      axis is weight percent and Ce is the plotted REE; these are mass ratios from SEM-EDS rather than
-      molar ratios or extraction percentages. Preferential dissolution is the authors' interpretation
+      axis gives percentages without explicitly labelling a weight or atomic basis, and Ce is the
+      plotted REE. The alkali-treated Ce and P bars are approximately 35% and 14%, implying a ratio near
+      2.5 rather than the plotted and text-reported 3.5. This visual comparison does not identify which
+      value is wrong or establish corrected cells; the underlying compositions, normalization and ratio
+      statistic remain needed. These local composition ratios are not extraction percentages.
+      Preferential dissolution is the authors' interpretation
       of residue composition; a closed dissolved-plus-residual mass balance, an isolated Ce product and
       an acid-only synthetic control are not provided. The figure includes error bars, but synthetic-arm
       replicate count and their statistical definition are not specified.
@@ -113,5 +117,11 @@ curation_history:
   summary: Added Ce-specific florencite identity and primary-supported abiotic synthetic-analogue treatment,
     distinguishing solid composition ratios from mixed-feed or mineral-specific recovery yields and preserving
     protocol conflicts.
+- timestamp: '2026-10-21T08:18:57.384824Z'
+  curator: codex (GPT-6; codex)
+  action: EDIT
+  summary: Qualified the unspecified Figure 6B composition basis and retained the alkali-treated
+    TREE/P discrepancy as an approximate visual diagnostic without selecting corrected values.
 history_refs:
 - history/records/florencite-ce/2026-10-15T083133Z-codex-69bb46.yaml
+- history/records/florencite-ce/2026-10-21T081844Z-codex-33a221.yaml

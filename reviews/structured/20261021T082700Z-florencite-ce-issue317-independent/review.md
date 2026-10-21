@@ -1,0 +1,810 @@
+# Independent scoped scientific review of Florencite-(Ce) Figure6B qualification
+
+- Review: 20261021T082700Z-florencite-ce-issue317-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-21T08:16:29.780687Z
+- Finished UTC: 2026-10-21T08:27:00.214746Z
+- Reviewer: Codex /root/resume_473 (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The bounded removal of categorical mass basis and addition of an approximate Figure6B ratio diagnostic are supported by originals. No open maintained-record or source-handoff finding in this scoped review; issue317 protocol,replication,phase and inventory gaps remain unresolved.
+
+## Scope And Provenance
+
+Entire frozen owner,history and sourcepair read and compared. Fresh primary scientific review covers Li2022-dependent claims and selected Ji thesis context; unchanged mineral-authority assertions retain explicit prior-review boundaries.
+
+Selection: Assigned exact owner e4468452... and frozen source pair; current native inspect precedes final assessment.
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 2da10d95a72146ee0c69cb91fe303348fbadb638.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:florencite-ce | data/records/florencite-ce.yaml | maintained | Florencite-(Ce) |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Native exact-state inspection | passed | True | cmmmech:florencite-ce | Successful pre-assessment inspection of initial owner followed by frozen final owner/history/sourcepair capture. Both exact inspections retained. UV_CACHE_DIR was explicitly set to writable session cache. |
+| Independent affected-record validation | passed | True | cmmmech:florencite-ce | Actual reviewer exit0;1 record. |
+| Independent nonempty corpus validation | passed | True | cmmmech:florencite-ce | Actual reviewer terminal8305 exit0;616 records. |
+| Independent immutable history validation | passed | True | cmmmech:florencite-ce | Actual reviewer exit0;745 histories. |
+| Completed author final full gate | passed | True | cmmmech:florencite-ce | Author terminal33013 actualexit0,327passed3skipped,616records745histories; retained receipt and log independently checked. |
+| Canonical artifact consistency | passed | True | cmmmech:florencite-ce | Actual author exit0;22 matches. |
+| Original evidence, native cells, arithmetic and provenance | passed | True | cmmmech:florencite-ce | Selected original main/thesis pages, Figure6 and three procedure images inspected;7,539 native cells,seven diagnostics and88 hash assertions passed. Entire record semantic diff and633 generated page scopes verified. |
+
+## Scientific And Domain Assessments
+
+### Mineral owner, synthetic analogue and feed boundaries
+
+identity: supported. Targets: cmmmech:florencite-ce.
+
+Ce-dominant species identity remains distinct from mixed coal wastes and other florencite species. Ce-specific synthesis precursor and product equation are verified; unchanged IMA/Handbook assertions rely on prior review after semantic preservation checks.
+
+### Unspecified percentage basis
+
+consistency: supported. Targets: cmmmech:florencite-ce.
+
+Both original Figure6 variants omit an explicit mass/atomic basis. Removing categorical mass-ratio wording in description and evidence[4] is supported. The owner preserves reported composition ratio values without silently deciding the axis basis.
+
+### Approximate Figure6B discrepancy
+
+quantity: supported. Targets: cmmmech:florencite-ce.
+
+Alkali-treated green Ce≈35/P≈14 gives≈2.5, unlike reported TREE/P3.5. The bounded owner describes an approximate visual comparison and requests underlying composition, normalization and ratio statistic rather than installing corrected values.
+
+Raw and acid-treated bars are approximately compatible with2.1 and3.0. Ratio-of-means versus mean-of-ratios, omitted components or normalization cannot be resolved from the graphic. Chosen sensitivity bounds2.2–2.769 are diagnostic only, not confidence intervals.
+
+### Synthesis quantities and unit ambiguity
+
+quantity: supported. Targets: cmmmech:florencite-ce.
+
+The original recipe supports50mL water,Ce precursor,pH3.85 at25°C,5MNaOH to11,five-minute mixing,three washes,50mLredispersion,20mL1MH3PO4,ten-minute mixing,0.1Lautoclave200°Cthree months,and60°Covernight drying.0.01M Ce and0.03M Al input amount/volume basis remains ambiguous.
+
+Literal conditional Ce molarity and hypothetical mol amount produce P/Ce40 versus2; neither is adopted. Unknown Al volume prevents reconstructing a stoichiometric batch. Thesis repeats recipe but does not resolve this ambiguity.
+
+### Coal versus synthetic versus thermal-study assays
+
+evidence: supported. Targets: cmmmech:florencite-ce.
+
+Li main binds5MNaOH and1.2MHCl at90°C to the synthetic arm; duration/loading/independent n/error definition are not explicitly assigned there. Coal2g/50mLalkali and1g/50mLacid,two-hour stages and selected-condition three-duplicate statement cannot be transferred.
+
+Thesis describes raw/calcined0.5g/50mL1.2MHCl75°C with1mLsampling5,15,30,60,90,120min after calcination300–1000°Ctwo hours. This distinct thermal arm has no demonstrated sample join to Li Figure6B.
+
+### Raw phase assignment and local composition limits
+
+evidence: supported. Targets: cmmmech:florencite-ce.
+
+Raw synthetic XRD/reference43-0673 and morphology support source assignment, not quantitative phase purity, treated-phase identity or recovery. Selected highest-REE spot SEM-EDS is local composition, not a representative bulk inventory.
+
+Main Pt/Pd5nm LeicaEMACE600 versus SI Au/Pd5nm208HR remains unresolved. Generalized main RAl3(PO4)(OH)5 and2004Schwab reference differ from balanced SI Ce equation and1990reference. Older original paper was not acquired; no synthetic liquor/residue ledger recovered.
+
+### Native workbook scope and extraction
+
+provenance: supported. Targets: cmmmech:florencite-ce.
+
+All7,539 cached native cells/types/formula strings across four coal sheets match author extraction; procedure sheets are image-only.189 row labels are49/45/49/46; Summary_FC AL!A8 retains FLA5.379 media files and518 placements are distinguished from380prefix entries including the directory.
+
+Three procedure PNGs byte-match archive members and were visually reviewed.376 remaining image files were not visually inspected. Absence of matching synthetic tokens in native cells or chart/external-link members does not assert absence inside unviewed image pixels.
+
+### Source versions, thesis context and rights
+
+provenance: supported. Targets: cmmmech:florencite-ce.
+
+Current official v54 and observed v42 PDFs match saved original hash; JATS and SI also match the prior family. Landing HTML change is disclosed. Thesis cover December2,2022/copyright2022 differs from repository January12,2023 deposit metadata without implying new experimental replication.
+
+The associated2023PowderTechnology article is a metadata/abstract lead only; final experimental text was not acquired. The three-page supporting file is reuse permission evidence, not assay data. MainCCBY4.0 and thesis copyright/public reading are distinguished.
+
+### Qualified evidence placement and exact field scope
+
+schema: supported. Targets: cmmmech:florencite-ce.
+
+Current sources and mechanisms[].context/evidence paths are correct. Existing partial evidence retains limitations; no invented mg/kg measurement, microbial mechanism,criticality or conversion yield added. Exactly two scientific text fields changed plus history additions.
+
+### Native review and canonical history lineage
+
+provenance: supported. Targets: cmmmech:florencite-ce.
+
+Current native capture binds e4468452... owner,d4f88b... newhistory,both source artifacts and immutable prior history/review.88 hash assertions pass; old owner and history equal base. Prior no-finding review is not rewritten or represented as a finding closure.
+
+### Unresolved source issue and honest coverage
+
+scope: supported. Targets: cmmmech:florencite-ce.
+
+The bounded basis qualification is supported, but underlying Figure6B cells,normalization,synthetic protocol and replicate definition,treated-phase identity and mass balance remain unresolved. Searches and related thesis cannot close issue317 acceptance.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-317/data/records/florencite-ce.yaml; Entire frozen YAML; mechanism description and evidence[4]; complete semantic diff against base2da | supports | Exact e4468452... owner inspected before judgment. Only the two authorized scientific fields plus inline EDIT and history reference differ; no new quantities or source IDs were installed. |
+| history | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-317/history/records/florencite-ce/2026-10-21T081844Z-codex-33a221.yaml; Entire new EDIT sidecar; existing CREATE sidecar and pre-edit owner compared to Git base | supports | New canonical session08:18:44Z and distinct inline EDIT08:18:57.384824Z identify actual bounded qualification. Existing CREATE history and pre-edit owner are byte identical to base. |
+| prior | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-317/reviews/structured/20261015T084615Z-florencite-ce-round91-independent/review.yaml; Prior native review and unchanged mineral identity assessments; no prior findings | context_only | Unchanged IMA/Handbook claims retain prior review scope. Their originals were not freshly reacquired. The previous categorical mass-basis assessment is superseded by direct original-figure inspection, not described as closure of an invented prior finding. |
+| main | https://doi.org/10.20517/mmm.2022.05; Original PDF pp3–8 visually inspected: coal method, coating, synthetic morphology, XRD and Figure6B, synthetic discussion; complete source text available | supports | Raw synthetic analogue and solid-composition treatment evidence verified. Coal loadings and replication language do not explicitly bind the synthetic arm. Neither Figure6B percentage axis identifies mass or atomic basis. |
+| figure6 | https://image.oaes.cc/020683d7-f854-43cd-b83e-bde768784680/4853.fig.6.jpg; Original standalone Figure6B; compared with original embedded PDF p7 | supports | Standalone axis says Element Content / %; embedded axis says Elemental Content / %. Green Ce near35 and P near14 imply about2.5, unlike reported TREE/P3.5. Visual diagnostic cannot identify corrected cells or ratio statistic. |
+| si | https://oaepublishstorage.blob.core.windows.net/020683d7-f854-43cd-b83e-bde768784680/4853-SupplementaryMaterials.xlsx; All six-sheet native XML inventory and 7,539 cached cells; original procedure images1–3; drawings/media inventory | supports | Ce-specific synthesis and selected local SEM-EDS procedure directly checked. Four coal-particle sheets are not imported as a synthetic recovery ledger.379 actual image files,518 placements;376 additional image files were not visually reviewed. |
+| jats | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-317/li2022.xml; Original article metadata, license, linked supplement, reference32 and synthetic section | supports | Publication metadata/DOI, CC BY4.0 and supplement relationship verified. Current v54 PDF/XML and XLSX bytes match recorded prior originals; changed landing HTML is not a new experiment. |
+| thesis | https://vtechworks.lib.vt.edu/bitstreams/d3f4123b-0f3d-4b4b-8e86-82144c69ccec/download; Cover text; original PDF65–67 / printed51–53 visually inspected | supports | Public167-page Bin Ji dissertation repeats ambiguous synthesis recipe, then describes distinct thermal treatment and75°C acid assays. No sample-level bridge to Li2022Figure6B is established. |
+| thesis_support | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-317/ji2023-supporting.pdf; All three original pages visually inspected | context_only | Supporting file consists of author reuse permission captures, not a supplementary assay dataset. Public access is distinguished from unrestricted reuse rights. |
+| arithmetic | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-317-independent/originals-audit.json; Independent ZIP/XML parser, all7,539 native values/types/formulas, image byte matches and seven arithmetic checks | supports | Cached cells and sheet counts reproduce author extraction.35/14=2.5;33/15=2.2 and36/13≈2.769 are chosen visual sensitivity bounds, not source errors.20mL1M H3PO4=.020mol; conditional0.01M Ce in50mL=.00050mol gives P/Ce40 versus hypothetical0.01mol gives2. Neither correction is adopted. |
+| provenance | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-317-independent/provenance-audit.json; 88 hash/size assertions across74 paths; exact semantic diff and original-history/base comparison | supports | All referenced hashes passed. Pre-edit copies bind historical bytes rather than incorrectly asserting that the edited owner still has the old hash. Prior CREATE sidecar remains unchanged. |
+| handoff | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-317/research/sources/issue-317-florencite-ce-protocol/20261021T082152Z-evidence.json; Complete frozen source pair, acquisition/search/version/rights records, dataset contract, acceptance and exact schema handoff | supports | Source discovery correctly preserves unresolved protocol, replicate/error definition, normalization, phase and inventory requirements. Thesis is context only; no new measured recovery admitted. |
+| search | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-317-independent/web.json; Saved independent exact DOI correction/erratum/retraction and title/thermal-study queries; official article open | context_only | No resolving attributable notice or Figure6B dataset surfaced in returned results; no exhaustive or machine-wide absence claim. Related2023 journal full experimental text was not acquired. |
+| generated | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-317-independent/scope-and-validation.json; All633 changed generated page diffs; normalized date/digest footer comparison | supports | 632 pages change only renderer footer date/digest. Only pages/materials/florencite-ce.html changes scientific content/history, consistent with the owner diff. |
+| named_check | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-317-independent/named-validation.log; Independent actual terminal completion; batch8305 and separate named/history commands | supports | Reviewer 1 record,0 failures; actual exit0. |
+| batch_check | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-317-independent/batch-validation.log; Independent actual terminal completion; batch8305 and separate named/history commands | supports | Reviewer 616 records,0 failures; actual exit0. |
+| history_check | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-317-independent/history-validation.log; Independent actual terminal completion; batch8305 and separate named/history commands | supports | Reviewer 745 histories,0 errors; actual exit0. |
+| full_check | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-317-final-check.log; Author actual terminal33013 exit0 after renderer17266 completed; independently read final log and receipt | supports | 327 tests passed,3 skipped,94.05s;616 records and745 histories. Full gate was not rerun by the reviewer. |
+| canon_check | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-317-canon.log; Author actual terminal7716 exit0; receipt and exact log checked | supports | All22 governed canonical artifacts match. |
+
+## Limits And Additional Notes
+
+- Scientific scope is partial: fresh primary reassessment covers the Li2022 synthetic arm and dependent protocol/phase claims plus selected new thesis context. Unchanged IMA/Handbook assertions were checked for preservation and prior-review support; their originals were not freshly reacquired.
+- Original main PDF pp3–8, standalone Figure6, all three procedure images, thesis PDF65–67 and all three supporting-PDF pages were visually inspected. Other main/thesis pages and376 additional workbook images were not fully visually reviewed.
+- The percentage axis does not identify a weight or atomic basis. Approximate visual bars do not identify a corrected ratio, underlying cells, normalization or ratio statistic; chosen reading windows are not source statistical errors.
+- Synthetic-arm loading,duration,independent n,error definition,acid-only control and liquor/residue mass balance remain unresolved. The coal and separate75°C thermal-arm protocols cannot be substituted.
+- Recipe0.01M/0.03M ambiguity,main/SI coating/formula/reference conflicts,raw versus treated phase distinction and quantitative purity/yield remain unresolved. The original1990Schwab paper and full final2023article were not acquired.
+- Native-cell inventory does not establish contents of unviewed image pixels. Public source acquisition and bounded hidden/ignored-inclusive local searches are not exhaustive literature, unpublished-data or machine-wide absence claims.
+- No laboratory replication,paidprovider,outreach,remote mutation or owner/source editing by this independent reviewer.
+- Prior native review had no findings. Its categorical mass-basis interpretation is superseded by this direct original-source observation; no earlier finding is invented or retired.
+- Reviewer initial audit failures were local comparison representations: blank shared formulas normalized consistently and expected semantic field corrected to history_refs. Original failed audit artifacts retained; final audited source values were not changed.
+- Full author gate and canonical checks have actual successful terminal receipts. Native saved-bundle checker is run after save and recorded separately.
+- Generated scope independently checked:633changedpages,632footer-only plus one intended record page.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T082700Z-florencite-ce-issue317-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scoped scientific review of Florencite-(Ce) Figure6B qualification
+started_at: '2026-10-21T08:16:29.780687Z'
+finished_at: '2026-10-21T08:27:00.214746Z'
+reviewer:
+  identity: Codex /root/resume_473
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/resume_405 and authorizing
+    root. Reviewer did not edit owner,histories or source pair. Native exact-state
+    inspection preceded judgment; originals,workbook cells,arithmetic,hashes and semantic
+    scope independently checked. Shared acquired primary files disclosed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The bounded removal of categorical mass basis and addition of an approximate
+  Figure6B ratio diagnostic are supported by originals. No open maintained-record
+  or source-handoff finding in this scoped review; issue317 protocol,replication,phase
+  and inventory gaps remain unresolved.
+source:
+  git_revision: 2da10d95a72146ee0c69cb91fe303348fbadb638
+  state: working_tree
+  inputs:
+  - path: data/records/florencite-ce.yaml
+    sha256: e4468452e23bee8591f9d5d04732186c3aef88527ccd16d15058ce670d3252a9
+    role: target
+  - path: history/records/florencite-ce/2026-10-15T083133Z-codex-69bb46.yaml
+    sha256: af88009d0137a699c4da7d5b398a368e92de26222b5d889c1533c7fe0324401b
+    role: context
+  - path: history/records/florencite-ce/2026-10-21T081844Z-codex-33a221.yaml
+    sha256: d4f88b04642179370fd94b98e7e1ab39a2d50ea72269099953aebabbd6c59647
+    role: context
+  - path: research/sources/issue-317-florencite-ce-protocol/20261021T082152Z-evidence.json
+    sha256: 431cc81ec6ad756cff1421d0e80fd1ea716719f1fe3b701ec9d58a9a2f8faba8
+    role: context
+  - path: research/sources/issue-317-florencite-ce-protocol/20261021T082152Z.md
+    sha256: 97ec1ea5e06d7bd4d3e2c0a84d4e96480144836aefa9f851c794658f8a558d14
+    role: context
+  - path: reviews/structured/20261015T084615Z-florencite-ce-round91-independent/review.yaml
+    sha256: 101cca01f696a14271cc87169acb5daffe28f24296605a7d942af41e44cb8720
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+targets:
+- target_id: cmmmech:florencite-ce
+  path: data/records/florencite-ce.yaml
+  label: Florencite-(Ce)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/florencite-ce.yaml
+    role: maintained record
+scope:
+  description: Entire frozen owner,history and sourcepair read and compared. Fresh
+    primary scientific review covers Li2022-dependent claims and selected Ji thesis
+    context; unchanged mineral-authority assertions retain explicit prior-review boundaries.
+  selection: Assigned exact owner e4468452... and frozen source pair; current native
+    inspect precedes final assessment.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:florencite-ce
+  exclusions:
+  - target: Unchanged IMA/Handbook originals
+    reason: Preservation and prior native assessment checked; original authorities
+      not freshly reacquired.
+  - target: Unviewed workbook images and remaining thesis pages
+    reason: Native whole-workbook inventory is complete, but image review is limited
+      to three procedure images and selected thesis pages.
+  - target: Missing experimental raw data and older/full related publications
+    reason: No Figure6B replicate ledger,phase inventory,original1990protocol or full
+      final2023methods acquired.
+checks:
+- check_id: inspect
+  name: Native exact-state inspection
+  command: uv run --locked python scripts/record_review.py inspect --targets /private/tmp/cmmmech-backlog-20261019-fmj36s/review-317-independent/targets.yaml
+    --input history/records/florencite-ce/2026-10-15T083133Z-codex-69bb46.yaml --input
+    history/records/florencite-ce/2026-10-21T081844Z-codex-33a221.yaml --input reviews/structured/20261015T084615Z-florencite-ce-round91-independent/review.yaml
+    --input src/cmmmech/schema/cmmmech.yaml --input research/sources/issue-317-florencite-ce-protocol/20261021T082152Z.md
+    --input research/sources/issue-317-florencite-ce-protocol/20261021T082152Z-evidence.json
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Successful pre-assessment inspection of initial owner followed by frozen
+    final owner/history/sourcepair capture. Both exact inspections retained. UV_CACHE_DIR
+    was explicitly set to writable session cache.
+  target_ids:
+  - cmmmech:florencite-ce
+  evidence_ids:
+  - owner
+  - history
+  - provenance
+- check_id: named
+  name: Independent affected-record validation
+  command: uv run --locked cmmmech validate data/records/florencite-ce.yaml --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual reviewer exit0;1 record.
+  target_ids:
+  - cmmmech:florencite-ce
+  evidence_ids:
+  - named_check
+- check_id: batch
+  name: Independent nonempty corpus validation
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual reviewer terminal8305 exit0;616 records.
+  target_ids:
+  - cmmmech:florencite-ce
+  evidence_ids:
+  - batch_check
+- check_id: history
+  name: Independent immutable history validation
+  command: uv run --locked cmmmech validate-history --base 2da10d95a72146ee0c69cb91fe303348fbadb638
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual reviewer exit0;745 histories.
+  target_ids:
+  - cmmmech:florencite-ce
+  evidence_ids:
+  - history_check
+- check_id: full
+  name: Completed author final full gate
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Author terminal33013 actualexit0,327passed3skipped,616records745histories;
+    retained receipt and log independently checked.
+  target_ids:
+  - cmmmech:florencite-ce
+  evidence_ids:
+  - full_check
+- check_id: canon
+  name: Canonical artifact consistency
+  command: Canonical22 check, author terminal7716
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual author exit0;22 matches.
+  target_ids:
+  - cmmmech:florencite-ce
+  evidence_ids:
+  - canon_check
+- check_id: science
+  name: Original evidence, native cells, arithmetic and provenance
+  required: true
+  status: passed
+  summary: Selected original main/thesis pages, Figure6 and three procedure images
+    inspected;7,539 native cells,seven diagnostics and88 hash assertions passed. Entire
+    record semantic diff and633 generated page scopes verified.
+  target_ids:
+  - cmmmech:florencite-ce
+  evidence_ids:
+  - main
+  - figure6
+  - si
+  - thesis
+  - arithmetic
+  - provenance
+  - generated
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-317/data/records/florencite-ce.yaml
+  locator: Entire frozen YAML; mechanism description and evidence[4]; complete semantic
+    diff against base2da
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: supports
+  summary: Exact e4468452... owner inspected before judgment. Only the two authorized
+    scientific fields plus inline EDIT and history reference differ; no new quantities
+    or source IDs were installed.
+  snapshot_sha256: e4468452e23bee8591f9d5d04732186c3aef88527ccd16d15058ce670d3252a9
+- evidence_id: history
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-317/history/records/florencite-ce/2026-10-21T081844Z-codex-33a221.yaml
+  locator: Entire new EDIT sidecar; existing CREATE sidecar and pre-edit owner compared
+    to Git base
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: supports
+  summary: New canonical session08:18:44Z and distinct inline EDIT08:18:57.384824Z
+    identify actual bounded qualification. Existing CREATE history and pre-edit owner
+    are byte identical to base.
+  snapshot_sha256: d4f88b04642179370fd94b98e7e1ab39a2d50ea72269099953aebabbd6c59647
+- evidence_id: prior
+  kind: prior_review
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-317/reviews/structured/20261015T084615Z-florencite-ce-round91-independent/review.yaml
+  locator: Prior native review and unchanged mineral identity assessments; no prior
+    findings
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: context_only
+  summary: Unchanged IMA/Handbook claims retain prior review scope. Their originals
+    were not freshly reacquired. The previous categorical mass-basis assessment is
+    superseded by direct original-figure inspection, not described as closure of an
+    invented prior finding.
+  snapshot_sha256: 101cca01f696a14271cc87169acb5daffe28f24296605a7d942af41e44cb8720
+- evidence_id: main
+  kind: primary_source
+  reference: https://doi.org/10.20517/mmm.2022.05
+  locator: 'Original PDF pp3–8 visually inspected: coal method, coating, synthetic
+    morphology, XRD and Figure6B, synthetic discussion; complete source text available'
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: supports
+  summary: Raw synthetic analogue and solid-composition treatment evidence verified.
+    Coal loadings and replication language do not explicitly bind the synthetic arm.
+    Neither Figure6B percentage axis identifies mass or atomic basis.
+  snapshot_sha256: 70c508092dde9592d260bfe7f21c8235fe3e9fdd68204d66600ab48f46f88039
+- evidence_id: figure6
+  kind: primary_source
+  reference: https://image.oaes.cc/020683d7-f854-43cd-b83e-bde768784680/4853.fig.6.jpg
+  locator: Original standalone Figure6B; compared with original embedded PDF p7
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: supports
+  summary: Standalone axis says Element Content / %; embedded axis says Elemental
+    Content / %. Green Ce near35 and P near14 imply about2.5, unlike reported TREE/P3.5.
+    Visual diagnostic cannot identify corrected cells or ratio statistic.
+  snapshot_sha256: dc20e14018aa844118ed8c63b6e265cb9b1135d30715b290a9f1768e8fced26b
+- evidence_id: si
+  kind: primary_source
+  reference: https://oaepublishstorage.blob.core.windows.net/020683d7-f854-43cd-b83e-bde768784680/4853-SupplementaryMaterials.xlsx
+  locator: All six-sheet native XML inventory and 7,539 cached cells; original procedure
+    images1–3; drawings/media inventory
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: supports
+  summary: Ce-specific synthesis and selected local SEM-EDS procedure directly checked.
+    Four coal-particle sheets are not imported as a synthetic recovery ledger.379
+    actual image files,518 placements;376 additional image files were not visually
+    reviewed.
+  snapshot_sha256: e45ced96e751b3a5420749547fbc74285f275d60f9c75d8afb7cc05b332082e4
+- evidence_id: jats
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-317/li2022.xml
+  locator: Original article metadata, license, linked supplement, reference32 and
+    synthetic section
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: supports
+  summary: Publication metadata/DOI, CC BY4.0 and supplement relationship verified.
+    Current v54 PDF/XML and XLSX bytes match recorded prior originals; changed landing
+    HTML is not a new experiment.
+  snapshot_sha256: aa249406ac54fdfaacc50b4fc623666126e4a6169549e2f73cd13f98ef7e024c
+- evidence_id: thesis
+  kind: primary_source
+  reference: https://vtechworks.lib.vt.edu/bitstreams/d3f4123b-0f3d-4b4b-8e86-82144c69ccec/download
+  locator: Cover text; original PDF65–67 / printed51–53 visually inspected
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: supports
+  summary: Public167-page Bin Ji dissertation repeats ambiguous synthesis recipe,
+    then describes distinct thermal treatment and75°C acid assays. No sample-level
+    bridge to Li2022Figure6B is established.
+  snapshot_sha256: 083368d6dae1d48cc43f181d89d8118deb62d35a296a649d6b45da71260b9124
+- evidence_id: thesis_support
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-317/ji2023-supporting.pdf
+  locator: All three original pages visually inspected
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: context_only
+  summary: Supporting file consists of author reuse permission captures, not a supplementary
+    assay dataset. Public access is distinguished from unrestricted reuse rights.
+  snapshot_sha256: 16b38f59d6bb7324ac810aa9d30a988d01f74fe44da26234ffcf84b254ab1520
+- evidence_id: arithmetic
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-317-independent/originals-audit.json
+  locator: Independent ZIP/XML parser, all7,539 native values/types/formulas, image
+    byte matches and seven arithmetic checks
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: supports
+  summary: Cached cells and sheet counts reproduce author extraction.35/14=2.5;33/15=2.2
+    and36/13≈2.769 are chosen visual sensitivity bounds, not source errors.20mL1M
+    H3PO4=.020mol; conditional0.01M Ce in50mL=.00050mol gives P/Ce40 versus hypothetical0.01mol
+    gives2. Neither correction is adopted.
+  snapshot_sha256: 723a6d097dca5f9aa27669b5e7e2b706b3e2d9c57405a6dceaa164b1b52cbda8
+- evidence_id: provenance
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-317-independent/provenance-audit.json
+  locator: 88 hash/size assertions across74 paths; exact semantic diff and original-history/base
+    comparison
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: supports
+  summary: All referenced hashes passed. Pre-edit copies bind historical bytes rather
+    than incorrectly asserting that the edited owner still has the old hash. Prior
+    CREATE sidecar remains unchanged.
+  snapshot_sha256: a23712c0f6984fbe972a44160823349c15b7278dddf39d7ad8fb4a31988f1f29
+- evidence_id: handoff
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-317/research/sources/issue-317-florencite-ce-protocol/20261021T082152Z-evidence.json
+  locator: Complete frozen source pair, acquisition/search/version/rights records,
+    dataset contract, acceptance and exact schema handoff
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: supports
+  summary: Source discovery correctly preserves unresolved protocol, replicate/error
+    definition, normalization, phase and inventory requirements. Thesis is context
+    only; no new measured recovery admitted.
+  snapshot_sha256: 431cc81ec6ad756cff1421d0e80fd1ea716719f1fe3b701ec9d58a9a2f8faba8
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-317-independent/web.json
+  locator: Saved independent exact DOI correction/erratum/retraction and title/thermal-study
+    queries; official article open
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: context_only
+  summary: No resolving attributable notice or Figure6B dataset surfaced in returned
+    results; no exhaustive or machine-wide absence claim. Related2023 journal full
+    experimental text was not acquired.
+  snapshot_sha256: cd3e061416513ccc5e837ef45e16e02bf0170ad8dbb75c2111a49e672c822475
+  search_scope: 2026-10-21 bounded first-ranked web results, saved exact arguments.
+    Independent local rg --no-ignore --hidden --follow over data,research,reviews,history,docs,.claude,.agents
+    returned62matchingpaths. Author broader bounded/cited-root searches separately
+    recorded; old cited-path absence is not machine-wide absence.
+- evidence_id: generated
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-317-independent/scope-and-validation.json
+  locator: All633 changed generated page diffs; normalized date/digest footer comparison
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: supports
+  summary: 632 pages change only renderer footer date/digest. Only pages/materials/florencite-ce.html
+    changes scientific content/history, consistent with the owner diff.
+  snapshot_sha256: 1a556e3dc7a9235f518ae2db4341a087c4dc8829779991293a8f0f453b88aa4b
+- evidence_id: named_check
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-317-independent/named-validation.log
+  locator: Independent actual terminal completion; batch8305 and separate named/history
+    commands
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: supports
+  summary: Reviewer 1 record,0 failures; actual exit0.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch_check
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-317-independent/batch-validation.log
+  locator: Independent actual terminal completion; batch8305 and separate named/history
+    commands
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: supports
+  summary: Reviewer 616 records,0 failures; actual exit0.
+  snapshot_sha256: d47e19b123c18f1d48610ace095471a408192c504a56fb4fb473f668afceda40
+- evidence_id: history_check
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-317-independent/history-validation.log
+  locator: Independent actual terminal completion; batch8305 and separate named/history
+    commands
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: supports
+  summary: Reviewer 745 histories,0 errors; actual exit0.
+  snapshot_sha256: b82876e657df90a30cb77317251616e6ae290765a60c68afdc3fb41a82eaa193
+- evidence_id: full_check
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-317-final-check.log
+  locator: Author actual terminal33013 exit0 after renderer17266 completed; independently
+    read final log and receipt
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: supports
+  summary: 327 tests passed,3 skipped,94.05s;616 records and745 histories. Full gate
+    was not rerun by the reviewer.
+  snapshot_sha256: ea6d0d01bafa67d1a2384b4ebb9f32dade3084a71746d5deb8423ff14d44d407
+- evidence_id: canon_check
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-317-canon.log
+  locator: Author actual terminal7716 exit0; receipt and exact log checked
+  accessed_at: '2026-10-21T08:27:00.214746Z'
+  support: supports
+  summary: All22 governed canonical artifacts match.
+  snapshot_sha256: 3b073aa29da7dc3996edbe18c83d0d6593ba6d03238b663efc40286be4cf428e
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral owner, synthetic analogue and feed boundaries
+  outcome: supported
+  summary: Ce-dominant species identity remains distinct from mixed coal wastes and
+    other florencite species. Ce-specific synthesis precursor and product equation
+    are verified; unchanged IMA/Handbook assertions rely on prior review after semantic
+    preservation checks.
+  target_ids:
+  - cmmmech:florencite-ce
+  evidence_ids:
+  - owner
+  - prior
+  - si
+  - provenance
+  dimensions:
+  - name: material_form
+    value: Florencite-(Ce) mineral owner; source-assigned laboratory synthetic analogue
+    definition: Natural species identity is not proof of quantitative phase purity
+      or a coal-particle species assignment.
+    evidence_ids:
+    - owner
+    - si
+    - main
+  - name: criticality
+    value: unrecorded
+    definition: No critical-mineral list, jurisdiction or edition claim is inherited
+      from cerium.
+    evidence_ids:
+    - owner
+- assessment_id: basis
+  area: consistency
+  topic: Unspecified percentage basis
+  outcome: supported
+  summary: Both original Figure6 variants omit an explicit mass/atomic basis. Removing
+    categorical mass-ratio wording in description and evidence[4] is supported. The
+    owner preserves reported composition ratio values without silently deciding the
+    axis basis.
+  target_ids:
+  - cmmmech:florencite-ce
+  evidence_ids:
+  - main
+  - figure6
+  - owner
+- assessment_id: ratio
+  area: quantity
+  topic: Approximate Figure6B discrepancy
+  outcome: supported
+  summary: Alkali-treated green Ce≈35/P≈14 gives≈2.5, unlike reported TREE/P3.5. The
+    bounded owner describes an approximate visual comparison and requests underlying
+    composition, normalization and ratio statistic rather than installing corrected
+    values.
+  target_ids:
+  - cmmmech:florencite-ce
+  evidence_ids:
+  - figure6
+  - main
+  - arithmetic
+  - owner
+  details: Raw and acid-treated bars are approximately compatible with2.1 and3.0.
+    Ratio-of-means versus mean-of-ratios, omitted components or normalization cannot
+    be resolved from the graphic. Chosen sensitivity bounds2.2–2.769 are diagnostic
+    only, not confidence intervals.
+- assessment_id: recipe
+  area: quantity
+  topic: Synthesis quantities and unit ambiguity
+  outcome: supported
+  summary: The original recipe supports50mL water,Ce precursor,pH3.85 at25°C,5MNaOH
+    to11,five-minute mixing,three washes,50mLredispersion,20mL1MH3PO4,ten-minute mixing,0.1Lautoclave200°Cthree
+    months,and60°Covernight drying.0.01M Ce and0.03M Al input amount/volume basis
+    remains ambiguous.
+  target_ids:
+  - cmmmech:florencite-ce
+  evidence_ids:
+  - si
+  - thesis
+  - arithmetic
+  - owner
+  details: Literal conditional Ce molarity and hypothetical mol amount produce P/Ce40
+    versus2; neither is adopted. Unknown Al volume prevents reconstructing a stoichiometric
+    batch. Thesis repeats recipe but does not resolve this ambiguity.
+- assessment_id: arms
+  area: evidence
+  topic: Coal versus synthetic versus thermal-study assays
+  outcome: supported
+  summary: Li main binds5MNaOH and1.2MHCl at90°C to the synthetic arm; duration/loading/independent
+    n/error definition are not explicitly assigned there. Coal2g/50mLalkali and1g/50mLacid,two-hour
+    stages and selected-condition three-duplicate statement cannot be transferred.
+  target_ids:
+  - cmmmech:florencite-ce
+  evidence_ids:
+  - main
+  - thesis
+  - owner
+  details: Thesis describes raw/calcined0.5g/50mL1.2MHCl75°C with1mLsampling5,15,30,60,90,120min
+    after calcination300–1000°Ctwo hours. This distinct thermal arm has no demonstrated
+    sample join to Li Figure6B.
+  dimensions:
+  - name: biomass_state
+    value: not applicable; abiotic
+    definition: No organism, live/dead biomass or microbial mechanism in these synthetic
+      protocols.
+    evidence_ids:
+    - main
+    - si
+    - owner
+  - name: controls
+    value: raw,alkali-treated,alkali-plus-acid solids; no synthetic acid-only control
+      shown
+    definition: Solid composition comparisons do not provide complete causal or inventory
+      controls.
+    evidence_ids:
+    - main
+    - figure6
+  - name: deployment
+    value: laboratory study
+    definition: No industrial implementation or isolated Ce product is established.
+    evidence_ids:
+    - main
+    - owner
+- assessment_id: phase
+  area: evidence
+  topic: Raw phase assignment and local composition limits
+  outcome: supported
+  summary: Raw synthetic XRD/reference43-0673 and morphology support source assignment,
+    not quantitative phase purity, treated-phase identity or recovery. Selected highest-REE
+    spot SEM-EDS is local composition, not a representative bulk inventory.
+  target_ids:
+  - cmmmech:florencite-ce
+  evidence_ids:
+  - main
+  - si
+  - owner
+  details: Main Pt/Pd5nm LeicaEMACE600 versus SI Au/Pd5nm208HR remains unresolved.
+    Generalized main RAl3(PO4)(OH)5 and2004Schwab reference differ from balanced SI
+    Ce equation and1990reference. Older original paper was not acquired; no synthetic
+    liquor/residue ledger recovered.
+- assessment_id: dataset
+  area: provenance
+  topic: Native workbook scope and extraction
+  outcome: supported
+  summary: All7,539 cached native cells/types/formula strings across four coal sheets
+    match author extraction; procedure sheets are image-only.189 row labels are49/45/49/46;
+    Summary_FC AL!A8 retains FLA5.379 media files and518 placements are distinguished
+    from380prefix entries including the directory.
+  target_ids:
+  - cmmmech:florencite-ce
+  evidence_ids:
+  - si
+  - arithmetic
+  - handoff
+  details: Three procedure PNGs byte-match archive members and were visually reviewed.376
+    remaining image files were not visually inspected. Absence of matching synthetic
+    tokens in native cells or chart/external-link members does not assert absence
+    inside unviewed image pixels.
+- assessment_id: versions
+  area: provenance
+  topic: Source versions, thesis context and rights
+  outcome: supported
+  summary: Current official v54 and observed v42 PDFs match saved original hash; JATS
+    and SI also match the prior family. Landing HTML change is disclosed. Thesis cover
+    December2,2022/copyright2022 differs from repository January12,2023 deposit metadata
+    without implying new experimental replication.
+  target_ids:
+  - cmmmech:florencite-ce
+  evidence_ids:
+  - jats
+  - main
+  - si
+  - thesis
+  - thesis_support
+  - handoff
+  details: The associated2023PowderTechnology article is a metadata/abstract lead
+    only; final experimental text was not acquired. The three-page supporting file
+    is reuse permission evidence, not assay data. MainCCBY4.0 and thesis copyright/public
+    reading are distinguished.
+- assessment_id: schema
+  area: schema
+  topic: Qualified evidence placement and exact field scope
+  outcome: supported
+  summary: Current sources and mechanisms[].context/evidence paths are correct. Existing
+    partial evidence retains limitations; no invented mg/kg measurement, microbial
+    mechanism,criticality or conversion yield added. Exactly two scientific text fields
+    changed plus history additions.
+  target_ids:
+  - cmmmech:florencite-ce
+  evidence_ids:
+  - owner
+  - handoff
+  - provenance
+- assessment_id: lineage
+  area: provenance
+  topic: Native review and canonical history lineage
+  outcome: supported
+  summary: Current native capture binds e4468452... owner,d4f88b... newhistory,both
+    source artifacts and immutable prior history/review.88 hash assertions pass; old
+    owner and history equal base. Prior no-finding review is not rewritten or represented
+    as a finding closure.
+  target_ids:
+  - cmmmech:florencite-ce
+  evidence_ids:
+  - owner
+  - history
+  - prior
+  - provenance
+- assessment_id: acceptance
+  area: scope
+  topic: Unresolved source issue and honest coverage
+  outcome: supported
+  summary: The bounded basis qualification is supported, but underlying Figure6B cells,normalization,synthetic
+    protocol and replicate definition,treated-phase identity and mass balance remain
+    unresolved. Searches and related thesis cannot close issue317 acceptance.
+  target_ids:
+  - cmmmech:florencite-ce
+  evidence_ids:
+  - handoff
+  - search
+  - main
+  - si
+  - thesis
+findings: []
+actions: []
+limitations:
+- 'Scientific scope is partial: fresh primary reassessment covers the Li2022 synthetic
+  arm and dependent protocol/phase claims plus selected new thesis context. Unchanged
+  IMA/Handbook assertions were checked for preservation and prior-review support;
+  their originals were not freshly reacquired.'
+- Original main PDF pp3–8, standalone Figure6, all three procedure images, thesis
+  PDF65–67 and all three supporting-PDF pages were visually inspected. Other main/thesis
+  pages and376 additional workbook images were not fully visually reviewed.
+- The percentage axis does not identify a weight or atomic basis. Approximate visual
+  bars do not identify a corrected ratio, underlying cells, normalization or ratio
+  statistic; chosen reading windows are not source statistical errors.
+- Synthetic-arm loading,duration,independent n,error definition,acid-only control
+  and liquor/residue mass balance remain unresolved. The coal and separate75°C thermal-arm
+  protocols cannot be substituted.
+- Recipe0.01M/0.03M ambiguity,main/SI coating/formula/reference conflicts,raw versus
+  treated phase distinction and quantitative purity/yield remain unresolved. The original1990Schwab
+  paper and full final2023article were not acquired.
+- Native-cell inventory does not establish contents of unviewed image pixels. Public
+  source acquisition and bounded hidden/ignored-inclusive local searches are not exhaustive
+  literature, unpublished-data or machine-wide absence claims.
+- No laboratory replication,paidprovider,outreach,remote mutation or owner/source
+  editing by this independent reviewer.
+notes:
+- Prior native review had no findings. Its categorical mass-basis interpretation is
+  superseded by this direct original-source observation; no earlier finding is invented
+  or retired.
+- 'Reviewer initial audit failures were local comparison representations: blank shared
+  formulas normalized consistently and expected semantic field corrected to history_refs.
+  Original failed audit artifacts retained; final audited source values were not changed.'
+- Full author gate and canonical checks have actual successful terminal receipts.
+  Native saved-bundle checker is run after save and recorded separately.
+- Generated scope independently checked:633changedpages,632footer-only plus one intended
+  record page.
+links:
+- https://github.com/CultureBotAI/CMMMech/issues/317
+- reviews/structured/20261015T084615Z-florencite-ce-round91-independent/review.yaml
+```
