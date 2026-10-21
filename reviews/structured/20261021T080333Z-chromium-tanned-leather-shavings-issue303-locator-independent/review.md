@@ -1,0 +1,414 @@
+# Independent exact-byte locator and provenance review of chromium-tanned leather shavings
+
+- Review: 20261021T080333Z-chromium-tanned-leather-shavings-issue303-locator-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-21T07:58:24Z
+- Finished UTC: 2026-10-21T08:03:33.801773Z
+- Reviewer: codex /root/resume_405 (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: false
+
+## Summary
+
+Accept the exact final attachment-locator correction and EDIT provenance. Original SuF5 displays Supplemental file 4. All other scientific field values match the prior independently reviewed owner; broader literature support was not reassessed.
+
+## Scope And Provenance
+
+Whole exact owner compared with its previously reviewed baseline; primary reassessment limited to changed supplement locator and history.
+
+Selection: Assigned named edited record, native inspect before assessment; no sampling.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 2da10d95a72146ee0c69cb91fe303348fbadb638.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:chromium-tanned-leather-shavings | data/records/chromium-tanned-leather-shavings.yaml | maintained | Chromium-tanned leather shavings |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named validation | passed | True | cmmmech:chromium-tanned-leather-shavings | Checked 1 record(s); 0 failed. |
+| Independent corpus validation | passed | True | cmmmech:chromium-tanned-leather-shavings | Checked 616 record(s); 0 failed. |
+| Independent history validation | passed | True | cmmmech:chromium-tanned-leather-shavings | Checked 745 history record(s); 0 error(s). |
+| Coordinator final full gate after rendering | passed | True | cmmmech:chromium-tanned-leather-shavings | Coordinator observed successful final terminal; exact receipt/log reviewed. Earlier attempt failed only generated-page drift and is preserved separately. |
+
+## Scientific And Domain Assessments
+
+### Original display label versus file sequence and DOI suffix
+
+provenance: supported. Targets: cmmmech:chromium-tanned-leather-shavings.
+
+Corrected locator exactly matches original JATS. Five attachments have display labels 1, 2, 3a, 3b and 4, so fifth storage position does not make the final display label 5.
+
+### Unchanged science and earlier reviewed baseline
+
+scope: supported. Targets: cmmmech:chromium-tanned-leather-shavings.
+
+All non-history field values are identical to the earlier scientifically reviewed owner except the corrected attachment locator. This provenance-only review does not freshly reassess the broader literature, taxonomy, mechanisms or quantitative results.
+
+### Canonical history, inline event and curation addendum
+
+provenance: supported. Targets: cmmmech:chromium-tanned-leather-shavings.
+
+New EDIT sidecar and inline event describe the actual locator correction. Original CREATE sidecar, original source pair and prior review remain preserved; source-freeze validation is not presented as post-curation validation.
+
+### Exact final bytes and structural checks
+
+schema: supported. Targets: cmmmech:chromium-tanned-leather-shavings.
+
+Native inspect captures final owner/history/addendum and schema. Independent named/corpus/history gates and coordinator full check passed; this establishes structural consistency, not new scientific support.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/chromium-tanned-leather-shavings.yaml; Exact frozen whole record; mechanisms[0].evidence[6].explanation and appended provenance | supports | Only the display-label locator and required history linkage changed. |
+| history | history/records/chromium-tanned-leather-shavings/2026-10-21T075604Z-codex-6bfada.yaml; Whole new canonical EDIT sidecar | supports | Actor, target, actual UTC timestamp and bounded change agree with the separate inline event. |
+| addendum | research/sources/issue-303-leather-chromium-partitioning/20261021T075604Z-curation-addendum.md; Whole curation addendum | supports | Accurately distinguishes the original source-only freeze from later owner correction and final-gate requirement. |
+| prior | reviews/structured/20261015T052546Z-chromium-tanned-leather-shavings-round88-independent/review.yaml; Whole prior review; source.inputs target hash and empty findings | supports | Earlier full scientific review binds the unchanged HEAD owner. It reported no native findings; no previous_occurrences are fabricated. |
+| proof | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-303-native/semantic-and-primary-check.json; Independent parsed-YAML comparison against HEAD and previous review input | supports | HEAD hash matches prior reviewed owner; only evidence[6] locator differs outside inline history and history_refs. |
+| jats | https://doi.org/10.1128/spectrum.02749-23; Original JATS supplementary-material id=SuF5 and potential-toxicity Methods; local /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-303/main.xml | supports | Display label is Supplemental file 4; storage filename spectrum.02749-23-s0005.pdf; DOI suffix SuF5. Methods separately call the plate assay Supplementary material 4. |
+| plate | https://doi.org/10.1128/spectrum.02749-23.SuF5; Original one-page PDF rendered and visually inspected: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-303/pages/spectrum.02749-23-s0005-1.png | supports | Plate images are labelled 100 mg CTLS and 300 mg CTLS. This is the plate-growth attachment, distinct from main Figure 5 plant assay. No broad safety conclusion is added. |
+| checks | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-303-native/independent-checks.json; Three actual independently run validators, all terminal exit 0 | supports | Named target, nonempty 616-record corpus and 745 histories against base passed. |
+| batch | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-303-native/coordinator-final-gate.json; Coordinator final full-gate completion receipt and referenced logs | supports | Final successful check after regeneration replaces the earlier failed stale-page attempt; owner and history bytes remain frozen. |
+
+## Limits And Additional Notes
+
+- Provenance-only review: broader literature, external identifiers, correction/retraction searches and quantitative assay claims were not freshly reassessed.
+- Existing missing mass bases, rate equation, recipe ambiguity and IPS21 sample crosswalk remain unresolved; #303 remains open.
+- The corrected minor locator defect was identified before this native round and is recorded in a separate local draft. The prior native review has no finding identity to resolve; no fabricated previous_occurrences are used.
+- Source pair originally froze pre-curation owner bytes; the curator addendum and current native input hashes identify the subsequent final state.
+- No owner, history or original-source edits by this reviewer.
+- The original unsuccessful full check found stale generated pages; coordinator regenerated pages and reran the full check before this passing observation.
+- Bounded hidden/ignored-inclusive search across reviews/structured and reviews/records located the prior native review. No machine-wide absence claim.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T080333Z-chromium-tanned-leather-shavings-issue303-locator-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent exact-byte locator and provenance review of chromium-tanned leather
+  shavings
+started_at: '2026-10-21T07:58:24Z'
+finished_at: '2026-10-21T08:03:33.801773Z'
+reviewer:
+  identity: codex /root/resume_405
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer did not author the source handoff, owner correction
+    or history; independently inspected frozen bytes, original JATS and rendered original
+    plate image, compared parsed owner values and ran validators.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: false
+summary: Accept the exact final attachment-locator correction and EDIT provenance.
+  Original SuF5 displays Supplemental file 4. All other scientific field values match
+  the prior independently reviewed owner; broader literature support was not reassessed.
+source:
+  git_revision: 2da10d95a72146ee0c69cb91fe303348fbadb638
+  state: working_tree
+  inputs:
+  - path: data/records/chromium-tanned-leather-shavings.yaml
+    sha256: 731eff48c511b009b2daf5344a101cadbef424312cc378cad1fc7cff7c5f21bf
+    role: target
+  - path: history/records/chromium-tanned-leather-shavings/2026-10-21T075604Z-codex-6bfada.yaml
+    sha256: 52c8cbf3c9bdbcfb4c20a9e27f9de5fe85d2591382d4e448ae376cbc1b92e48c
+    role: context
+  - path: research/sources/issue-303-leather-chromium-partitioning/20261021T075604Z-curation-addendum.md
+    sha256: acf8f34d295a2123e0b400a80dbf0f6f42a8dd0a612c95a0fdb8eae12e456f06
+    role: context
+  - path: reviews/structured/20261015T052546Z-chromium-tanned-leather-shavings-round88-independent/review.yaml
+    sha256: 30b24508659c0ab72e3f02d1b90aab0fff0d9df6c4120abae7a0fe70a7be5d94
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+scope:
+  description: Whole exact owner compared with its previously reviewed baseline; primary
+    reassessment limited to changed supplement locator and history.
+  selection: Assigned named edited record, native inspect before assessment; no sampling.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  exclusions:
+  - target: Unchanged broader scientific claims
+    reason: Not freshly reviewed; exact equality with the earlier full scientific
+      review baseline proved, apart from attachment locator.
+targets:
+- target_id: cmmmech:chromium-tanned-leather-shavings
+  path: data/records/chromium-tanned-leather-shavings.yaml
+  label: Chromium-tanned leather shavings
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/chromium-tanned-leather-shavings.yaml
+    role: maintained record
+checks:
+- check_id: named
+  name: Independent named validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache UV_OFFLINE=1
+    uv run --locked cmmmech validate data/records/chromium-tanned-leather-shavings.yaml
+    --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 1 record(s); 0 failed.
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - checks
+- check_id: corpus
+  name: Independent corpus validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache UV_OFFLINE=1
+    uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 616 record(s); 0 failed.
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - checks
+- check_id: history
+  name: Independent history validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache UV_OFFLINE=1
+    uv run --locked cmmmech validate-history --base 2da10d95a72146ee0c69cb91fe303348fbadb638
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Checked 745 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - checks
+- check_id: batch
+  name: Coordinator final full gate after rendering
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache UV_OFFLINE=1
+    just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Coordinator observed successful final terminal; exact receipt/log reviewed.
+    Earlier attempt failed only generated-page drift and is preserved separately.
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - batch
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/chromium-tanned-leather-shavings.yaml
+  locator: Exact frozen whole record; mechanisms[0].evidence[6].explanation and appended
+    provenance
+  accessed_at: '2026-10-21T08:03:33.801773Z'
+  support: supports
+  summary: Only the display-label locator and required history linkage changed.
+  snapshot_sha256: 731eff48c511b009b2daf5344a101cadbef424312cc378cad1fc7cff7c5f21bf
+- evidence_id: history
+  kind: record_content
+  reference: history/records/chromium-tanned-leather-shavings/2026-10-21T075604Z-codex-6bfada.yaml
+  locator: Whole new canonical EDIT sidecar
+  accessed_at: '2026-10-21T08:03:33.801773Z'
+  support: supports
+  summary: Actor, target, actual UTC timestamp and bounded change agree with the separate
+    inline event.
+  snapshot_sha256: 52c8cbf3c9bdbcfb4c20a9e27f9de5fe85d2591382d4e448ae376cbc1b92e48c
+- evidence_id: addendum
+  kind: record_content
+  reference: research/sources/issue-303-leather-chromium-partitioning/20261021T075604Z-curation-addendum.md
+  locator: Whole curation addendum
+  accessed_at: '2026-10-21T08:03:33.801773Z'
+  support: supports
+  summary: Accurately distinguishes the original source-only freeze from later owner
+    correction and final-gate requirement.
+  snapshot_sha256: acf8f34d295a2123e0b400a80dbf0f6f42a8dd0a612c95a0fdb8eae12e456f06
+- evidence_id: prior
+  kind: prior_review
+  reference: reviews/structured/20261015T052546Z-chromium-tanned-leather-shavings-round88-independent/review.yaml
+  locator: Whole prior review; source.inputs target hash and empty findings
+  accessed_at: '2026-10-21T08:03:33.801773Z'
+  support: supports
+  summary: Earlier full scientific review binds the unchanged HEAD owner. It reported
+    no native findings; no previous_occurrences are fabricated.
+  snapshot_sha256: 30b24508659c0ab72e3f02d1b90aab0fff0d9df6c4120abae7a0fe70a7be5d94
+- evidence_id: proof
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-303-native/semantic-and-primary-check.json
+  locator: Independent parsed-YAML comparison against HEAD and previous review input
+  accessed_at: '2026-10-21T08:03:33.801773Z'
+  support: supports
+  summary: HEAD hash matches prior reviewed owner; only evidence[6] locator differs
+    outside inline history and history_refs.
+  snapshot_sha256: 2bbea88ad62d6d2c861f68c84ff977d499e027f391a3e32c6f76faae71640858
+- evidence_id: jats
+  kind: primary_source
+  reference: https://doi.org/10.1128/spectrum.02749-23
+  locator: Original JATS supplementary-material id=SuF5 and potential-toxicity Methods;
+    local /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-303/main.xml
+  accessed_at: '2026-10-21T08:03:33.801773Z'
+  support: supports
+  summary: Display label is Supplemental file 4; storage filename spectrum.02749-23-s0005.pdf;
+    DOI suffix SuF5. Methods separately call the plate assay Supplementary material
+    4.
+  snapshot_sha256: b2cd5601bafde37765af1a417962e6fc5eff9827271109038dd665d57f1d6885
+- evidence_id: plate
+  kind: primary_source
+  reference: https://doi.org/10.1128/spectrum.02749-23.SuF5
+  locator: 'Original one-page PDF rendered and visually inspected: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-303/pages/spectrum.02749-23-s0005-1.png'
+  accessed_at: '2026-10-21T08:03:33.801773Z'
+  support: supports
+  summary: Plate images are labelled 100 mg CTLS and 300 mg CTLS. This is the plate-growth
+    attachment, distinct from main Figure 5 plant assay. No broad safety conclusion
+    is added.
+  snapshot_sha256: 2b9433fec1fae190c1be5aab8e9c6676203906c6a035365cd26bd4e5e5648b8a
+- evidence_id: checks
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-303-native/independent-checks.json
+  locator: Three actual independently run validators, all terminal exit 0
+  accessed_at: '2026-10-21T08:03:33.801773Z'
+  support: supports
+  summary: Named target, nonempty 616-record corpus and 745 histories against base
+    passed.
+  snapshot_sha256: ef40af6d16e1c548780c4c3436ffcb5e9fff2f102c79c3abc8fde674f2854060
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-303-native/coordinator-final-gate.json
+  locator: Coordinator final full-gate completion receipt and referenced logs
+  accessed_at: '2026-10-21T08:03:33.801773Z'
+  support: supports
+  summary: Final successful check after regeneration replaces the earlier failed stale-page
+    attempt; owner and history bytes remain frozen.
+  snapshot_sha256: 712e4a60040287383e36aed743acef70ac2eb7217c6b9b4c097e4ee6605caaab
+assessments:
+- assessment_id: locator
+  area: provenance
+  topic: Original display label versus file sequence and DOI suffix
+  outcome: supported
+  summary: Corrected locator exactly matches original JATS. Five attachments have
+    display labels 1, 2, 3a, 3b and 4, so fifth storage position does not make the
+    final display label 5.
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - owner
+  - jats
+  - plate
+- assessment_id: bounded-change
+  area: scope
+  topic: Unchanged science and earlier reviewed baseline
+  outcome: supported
+  summary: All non-history field values are identical to the earlier scientifically
+    reviewed owner except the corrected attachment locator. This provenance-only review
+    does not freshly reassess the broader literature, taxonomy, mechanisms or quantitative
+    results.
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - owner
+  - prior
+  - proof
+  dimensions:
+  - name: material_form
+    value: 'secondary_resource: chromium-tanned leather shavings'
+    definition: Preserved processing-waste scope; no constituent criticality inherited.
+    evidence_ids:
+    - owner
+    - proof
+    - prior
+  - name: preserved_organism_scope
+    value: Yarrowia lipolytica NCBITaxon:4952; IPS21 remains source-designated
+    definition: Unchanged species mapping and unresolved stock crosswalk; not newly
+      authenticated here.
+    evidence_ids:
+    - owner
+    - proof
+    - prior
+  - name: preserved_assay_scope
+    value: Laboratory living culture; operational chromium partitioning
+    definition: No isolated product, closed mass balance, intracellular exclusion,
+      broad safety or industrial deployment claim added.
+    evidence_ids:
+    - owner
+    - proof
+    - prior
+- assessment_id: history
+  area: provenance
+  topic: Canonical history, inline event and curation addendum
+  outcome: supported
+  summary: New EDIT sidecar and inline event describe the actual locator correction.
+    Original CREATE sidecar, original source pair and prior review remain preserved;
+    source-freeze validation is not presented as post-curation validation.
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - history
+  - addendum
+  - proof
+  - checks
+- assessment_id: gates
+  area: schema
+  topic: Exact final bytes and structural checks
+  outcome: supported
+  summary: Native inspect captures final owner/history/addendum and schema. Independent
+    named/corpus/history gates and coordinator full check passed; this establishes
+    structural consistency, not new scientific support.
+  target_ids:
+  - cmmmech:chromium-tanned-leather-shavings
+  evidence_ids:
+  - owner
+  - history
+  - checks
+  - batch
+findings: []
+actions: []
+limitations:
+- 'Provenance-only review: broader literature, external identifiers, correction/retraction
+  searches and quantitative assay claims were not freshly reassessed.'
+- 'Existing missing mass bases, rate equation, recipe ambiguity and IPS21 sample crosswalk
+  remain unresolved; #303 remains open.'
+- The corrected minor locator defect was identified before this native round and is
+  recorded in a separate local draft. The prior native review has no finding identity
+  to resolve; no fabricated previous_occurrences are used.
+- Source pair originally froze pre-curation owner bytes; the curator addendum and
+  current native input hashes identify the subsequent final state.
+notes:
+- No owner, history or original-source edits by this reviewer.
+- The original unsuccessful full check found stale generated pages; coordinator regenerated
+  pages and reran the full check before this passing observation.
+- Bounded hidden/ignored-inclusive search across reviews/structured and reviews/records
+  located the prior native review. No machine-wide absence claim.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261015T052546Z-chromium-tanned-leather-shavings-round88-independent
+  relationship: Earlier full scientific review of exact pre-locator-change owner;
+    scientific fields otherwise preserved.
+links:
+- https://github.com/CultureBotAI/CMMMech/issues/303
+tags:
+- issue303
+- provenance-only
+- independent
+```
