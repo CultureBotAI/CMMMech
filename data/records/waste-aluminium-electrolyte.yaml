@@ -1,0 +1,128 @@
+id: cmmmech:waste-aluminium-electrolyte
+name: Waste aluminium electrolyte
+material_kind: secondary_resource
+description: >-
+  Discarded fluoride-rich aluminium-smelting electrolyte investigated as a
+  lithium-bearing secondary resource. Kordloo et al. describe this material
+  in the context of Hall-Heroult aluminium production and report a waste
+  electrolyte specimen containing Na, Al, Ca, K, Li, Mg and F. The particular
+  supplier, plant, batch history and sampling design are not identified.
+  This mixed process residue is distinct from spent potlining, secondary
+  aluminium dross, aluminium salt slag and spent battery electrolyte; it is
+  not a pure lithium mineral or an isolated lithium product.
+sources:
+  - id: kordloo2025_aam
+    title: >-
+      Kordloo, Boroumand, Abdollahi, Rezaei, Ghorbani and Solgi
+      (2025). Lithium recovery from waste aluminum electrolyte via
+      bioleaching: Comparative insights into acidic and alkaline pathways
+      using Aspergillus niger and Glutamicibacter nicotianae. Waste Management
+      206:115043, DOI 10.1016/j.wasman.2025.115043. Lincoln item 29815361
+      version 2, Author Accepted Manuscript.docx; complete text, Tables 1-2
+      and Figures 1-6 inspected. Page locators refer to the local 30-page
+      rendering of that manuscript, not the journal pagination.
+    url: https://hdl.handle.net/10779/lincoln.29815361.v2
+    accessed_on: '2026-10-21'
+  - id: kordloo2025_si
+    title: >-
+      Kordloo et al. (2025), publisher supplementary material for DOI
+      10.1016/j.wasman.2025.115043, mmc1.docx. Exact matching title/authors,
+      Figures S1-S2 and Tables S1-S2; complete six-page local rendering
+      inspected, including all 36 dissolution-time rows.
+    url: https://ars.els-cdn.com/content/image/1-s2.0-S0956053X25004544-mmc1.docx
+    accessed_on: '2026-10-21'
+mechanisms:
+  - id: culture_associated_lithium_dissolution
+    name: Lithium dissolution in fungal and bacterial culture systems
+    process: bioleaching
+    microbial: true
+    description: >-
+      Lithium was measured in filtered liquid during laboratory treatment
+      of waste aluminium electrolyte in Aspergillus niger and
+      Glutamicibacter nicotianae culture systems. The study supports
+      culture-associated dissolution under its reported conditions.
+      Different media and starting pH, with no reported matched sterile or
+      pH-controlled abiotic arms, prevent attribution of the difference
+      between systems to organism identity alone. Acid formation,
+      amino-acid complexation and later precipitation are proposed causes,
+      rather than separately established lithium-specific reactions.
+    context: >-
+      Sections 2.1-2.3, manuscript pages 6-9, and Tables 1-2 describe jaw
+      crushing, pulverization and homogenization to d80 47.5 micrometres;
+      feed Li is reported as 1.13 wt.%. The fungal culture came from the
+      Soil and Water Research Institute collection in Karaj without an
+      accession. The bacterium was isolated from Choqart iron-mine
+      soil/wastewater/tailings samples and identified here by morphology
+      with a prior-paper citation; no experimental strain accession is
+      given. Each 250 mL flask held 90 mL medium plus 10 mL inoculum at
+      30 degrees C and 150 rpm for up to 30 days, with 10, 30 or 50 g/L
+      nominal pulp density. Bacterial LB medium contained 10 g/L NaCl,
+      5 g/L yeast extract and 10 g/L tryptone, initially pH 7; fungal
+      modified Sperber medium contained 11 g/L glucose, 0.5 g/L yeast
+      extract and 0.25 g/L MgSO4.7H2O, initially pH 3.2. Inoculum density,
+      independent replicate count, error-bar definition, sampling-volume
+      correction and a complete lithium balance are unresolved. Filtrate
+      lithium was measured by ICP-OES. No isolated lithium product or
+      industrial operation was demonstrated.
+    evidence:
+      - source_ref: kordloo2025_si
+        supports: support
+        explanation: >-
+          Table S2 reports nondecreasing dissolved-lithium percentages through
+          day 22, followed by lower values at day 30 in all six arms. At
+          10 g/L the fungal arm is listed as 100.00% at day 22 and 86.10%
+          at day 30; the bacterial arm is 43.75% and 37.50%, respectively.
+          These are the source's dissolution percentages, not independently
+          validated recoveries or isolated-product yields. Table S2 places
+          the first two nonzero samples at days 10 and 15, whereas main
+          Figures 1c and 2b plot them at about days 5 and 10. The sequences
+          must not be silently aligned for a kinetic fit.
+      - source_ref: kordloo2025_aam
+        supports: partial
+        explanation: >-
+          Section 3.1/Figures 1-2 supports the observed contrasting pH
+          trajectories and the day-22 maximum followed by a decline. The
+          abstract and conclusion instead assign the bacterial 43.75%
+          maximum to 30 days. Equation 1 on manuscript page 9 prints
+          dissolution as V*C1/(m*C0)*100, with both C0 and C1 in mg/L,
+          V in mL and m in g; the solid-feed concentration basis and
+          conversion needed for a dimensionless percentage are unresolved.
+          The printed percentages are therefore retained as reported
+          values without recalibrating the assay or asserting total
+          lithium recovery. Visible error bars do not establish their
+          definition or the number of independent experiments.
+      - source_ref: kordloo2025_si
+        supports: partial
+        explanation: >-
+          Table S1 prints amino-acid and organic-acid concentrations before
+          and after treatment in mg/g, without a resolved mass denominator.
+          All four listed fungal organic acids decrease between the two
+          columns; the amino-acid changes have mixed signs. Some organic
+          acid entries exceed 1000 mg/g. Neither these values nor the
+          nutrient-containing media establish net microbial metabolite
+          production without an appropriate blank and clarified units.
+          They provide contextual chemical observations, not proof that
+          a particular ligand caused lithium release.
+      - source_ref: kordloo2025_aam
+        supports: partial
+        explanation: >-
+          Section 3.3/Figures 3-5 assigns fluorite, cryolite, simmonsite and
+          elpasolite in the feed/residues and an additional prosopite phase
+          in fungal residues. SEM-EDX percentages describe selected local
+          fields and do not report lithium or close a bulk lithium balance.
+          These observations do not identify a lithium-bearing precipitate
+          responsible for the late decline. FTIR text and plotted spectra
+          disagree about some sample-to-band assignments. Section 3.4/
+          Figure 6 gives fitted diffusion/reaction expressions, including
+          an unexplained 0.45 factor in Equation 3, over the rising portion
+          of the curves. The unresolved sample-time correspondence,
+          excluded late decline and model assumptions prevent treating
+          these fits as independent proof of a rate-limiting mechanism.
+
+history_refs:
+  - history/records/waste-aluminium-electrolyte/2026-10-21T123531Z-codex-1990ad.yaml
+curation_history:
+  - timestamp: "2026-10-21T12:35:56.569452+00:00"
+    curator: Codex GPT-6
+    action: CREATE
+    summary: "Create a distinct aluminium-smelting electrolyte waste resource with culture-associated lithium dissolution, original manuscript/supplement provenance, and explicit control, assay, sample-time and phase/kinetic limits."

@@ -1,0 +1,566 @@
+# Scientific review of waste aluminium electrolyte culture-associated lithium dissolution
+
+- Review: 20261021T124909Z-waste-aluminium-electrolyte-scientific
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-21T12:40:20Z
+- Finished UTC: 2026-10-21T12:49:09.182267Z
+- Reviewer: Codex GPT-6 root scientific reviewer (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The exact maintained record supports a distinct fluoride-rich aluminium-smelting waste and bounded culture-associated lithium dissolution. It correctly preserves source conflicts and missing controls, and makes no isolated-product, strain-specific, mechanistic-causality or industrial claim. No corrective record finding was confirmed. Numerical and generated-output audits passed; substantial limitations of the underlying study remain explicit.
+
+## Scope And Provenance
+
+One newly created maintained record, its CREATE provenance and source assessment, and the corresponding generated output. Primary AAM methods/results/figures and complete supplement were reassessed. Existing neighboring records were checked for identity boundary and byte preservation, not scientifically re-reviewed.
+
+Selection: The only scientific record newly created in the isolated issue-202 worktree at the recorded base.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1296ee20f2595d7d6a50e391f611c22435418906.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:waste-aluminium-electrolyte | data/records/waste-aluminium-electrolyte.yaml | maintained | Waste aluminium electrolyte |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named record validation | passed | True | cmmmech:waste-aluminium-electrolyte | Root executed successfully; one target validated. |
+| Repository checks | passed | True | cmmmech:waste-aluminium-electrolyte | Author final command actually passed363tests with3documented optional skips,617records745histories; exact receipt independently verified. |
+| Required nonempty corpus validation | passed | True | cmmmech:waste-aluminium-electrolyte | Author separately executed actual nonempty corpus validation;617records. |
+| Canonical history validation | passed | True | cmmmech:waste-aluminium-electrolyte | Author separately executed actual history validation against reviewed base;745histories. |
+| Governed file synchronization | passed | True | cmmmech:waste-aluminium-electrolyte | Author actual public canonical comparison passed22matches. |
+| Independent evidence and generated audit | passed | True | cmmmech:waste-aluminium-electrolyte | Root actual exit0 verified818hash assertions814paths,46archive members,254numbers36dashes62diagnostics and1361unchanged prior scientific files. |
+
+## Scientific And Domain Assessments
+
+### Waste category and sample boundary
+
+identity: supported. Targets: cmmmech:waste-aluminium-electrolyte.
+
+The mixed fluoride-rich smelting residue is represented at the supported material level. No supplier, batch, elemental criticality or pure-mineral identity is invented.
+
+### Organism, biomass, substrate and experimental conditions
+
+evidence: supported. Targets: cmmmech:waste-aluminium-electrolyte.
+
+The record preserves live culture systems and their differing media/pH without treating a species name as a verified strain or comparing organism identity alone.
+
+### Reported lithium dissolution and measurement limits
+
+quantity: supported. Targets: cmmmech:waste-aluminium-electrolyte.
+
+The source percentages are qualified observations, not independent mass closure or isolated-product recovery. Day22 maxima and day30 decline, early sample-time conflict and Eq1 dimensions are explicit.
+
+All six arms are nondecreasing through day22, including the G30early tie20.83%, then decline. Main figures plot first nonzero times near5and10days whereasSI prints10and15. Abstract/conclusion place bacterial43.75%at30days unlike results22days. The record preserves each conflict and avoids false monotonic-increase and day30maximum assertions.
+
+### Mechanistic interpretation and model limits
+
+scope: supported. Targets: cmmmech:waste-aluminium-electrolyte.
+
+Culture association is supported; causal ligand production, precipitation of lithium, strain ranking and rate-limiting mechanisms remain qualified hypotheses.
+
+All four printed fungal organic acids decrease before→after. mg/g denominator and nutrient blanks are unresolved. Local EDX excludesLi and source-assigned XRD phases do not closeLi balance. FTIR prose/sample labels conflict. Eq3factor0.45 is unexplained; fitting only rising points and choosing a time grid cannot establish reaction/diffusion causality.
+
+### Distinct inline and canonical CREATE provenance
+
+provenance: supported. Targets: cmmmech:waste-aluminium-electrolyte.
+
+Actual curator and UTC creation events are retained separately. The canonical history targets the new owner, and all old record/history bytes remain unchanged.
+
+Inline event12:35:56.569452UTC and new sidecar12:35:31UTC are distinct actual author actions, not reconstructed historical provenance. No existing sidecar was rewritten.
+
+### Schema and generated consistency
+
+representation: supported. Targets: cmmmech:waste-aluminium-electrolyte.
+
+The maintained YAML, one-mechanism categorization and generated pages are consistent with the supported scope and validated against native gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| aam | https://hdl.handle.net/10779/lincoln.29815361.v2; Complete methods/results and captions, Tables1–2, Figures1–6; local30-page AAM derivative, specifically pp6–9,13–14,17,19,21–22,24–26. Body paragraphs1–95 were read; remaining reference list not exhaustively reassessed. | partial | Original DOCX verified against repository MD5 and46 combined archive members. Manuscript contains the cultures, medium recipes, flask conditions, dissolution curves and source contradictions; it lacks matched sterile/pH controls and a closed lithium balance. |
+| si | https://ars.els-cdn.com/content/image/1-s2.0-S0956053X25004544-mmc1.docx; All six locally rendered pages, both supplementary figures and both tables. | supports | Exact title and six-author identity checked. All36 time-series rows and18 metabolite rows read. All table values re-extracted independently from original Word XML; dashes remain missing, six printed zeros remain reported zeros. |
+| figures | https://doi.org/10.1016/j.wasman.2025.115043; Publisher Figures1,2,3,5,6 JPEGs viewed; Figure4 from AAM pp21–22 because its current publisher JPEG route returned XML404. AAM claim pages1,7,8,9,13,14,17,19,21,22,24,25,26 and all6SIpages viewed. | partial | EDX local field percentages exclude lithium. XRD source-assigned phases do not provide phase yields; residual simmonsite remains in the nominal100% fungal arm. FTIR sample labels conflict with prose. Fitted R² and unexplained0.45 transform are model descriptors, not mechanistic proof. |
+| numeric | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-202-independent/audit.json; Independent audit.py:254 numeric components,36 missing dashes,62 conditional diagnostics,46ZIPmembers; terminal27476 exited0 chunk7b2108. | supports | Seven main composition cells,24 main test identifiers/conditions,36SI metabolite values,144SI time-series cells,26EDX values,11FTIR labels and6R² labels independently checked. Recomputed conditional fits preserve both conflicting time grids; four of six main-grid through-origin values match reported four-decimal R², two differ. |
+| identity | data/records/waste-aluminium-electrolyte.yaml; Identity, source provenance, one mechanism and canonical/inline CREATE history. | supports | Secondary resource is distinct from potlining, dross, salt slag and battery electrolyte. No external material, taxon or protein CURIE, criticality designation or formal quantitative recovery observation is asserted. |
+| search | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-202-independent/web-review.json; Root web.run current DOI/title-author/correction-retraction queries and attempted open; author24queries/7opens explicitly audited. | context_only | Current PubMed bibliographic identity agrees. No affecting correction surfaced in the bounded returned results. This is not an exhaustive claim that none exists. |
+| gates | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-202-final-gates.json; Author actual11248exit0 chunka2d456; canon79681exit0 chunk9e7534; corpus90689exit0 chunk982f3f; history27494exit0 chunk273aac. | supports | 363 tests passed,3 known optional skips;617 records745histories validate;22 governed files match. These actual author execution receipts were inspected independently and are explicitly attributed to that execution. |
+| named | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-202-independent/named-validation.log; Root named validator actual exit0 chunk738b40. | supports | Named newly created record passes the repository schema validator. |
+| generated | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-202-independent/supplemental-audit.json; 635generatedpaths:616existing pages footer-only;18aggregates plusone newpage; independent JSONmembership/graph/map checks. | supports | Prior index rows and graph nodes/edges retain their semantics except the expected bioleaching count. Map coordinates remain unchanged; only new page URL mapping is added. Every scientific text block and bothsourceURLs appear in the generated newpage. |
+
+## Limits And Additional Notes
+
+- Final complete journal version of record/correction not acquired.
+- No matched sterile/pH control arms or independent n/error-bar definition in complete AAM/SI.
+- Eq1 solid-feed concentration basis and volume conversion unresolved.
+- SI and main figure early time labels conflict; abstract/conclusion bacterial peak day conflicts.
+- HPLC printed mg/g denominator unresolved; nutrient-containing media and no appropriate blank prevent net-production attribution.
+- Source phase assignments lack Li-specific recovered-product balance; SEM-EDX local fields exclude Li.
+- No raw assay/replicate/sampling or kinetic-fit ledger acquired.
+- Batch supplier/history and experimental strain accession unresolved.
+- Actual initial target inspection occurred at 12:40:20 UTC; complete source/history input capture and corrected maintained target-kind scaffold were repeated before final assessment without changing owner bytes. Review artifacts were saved after the author final gate; the complete post-save gate is retained separately in the integration receipt.
+- Only the final locally frozen maintained state is assessed. No shared publication, queue admission, merge or paid-provider action is authorized by this review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T124909Z-waste-aluminium-electrolyte-scientific
+kind: record
+repository: CultureBotAI/CMMMech
+title: Scientific review of waste aluminium electrolyte culture-associated lithium
+  dissolution
+started_at: '2026-10-21T12:40:20Z'
+finished_at: '2026-10-21T12:49:09.182267Z'
+reviewer:
+  identity: Codex GPT-6 root scientific reviewer
+  kind: agent
+  independence: independent
+  independence_basis: The separate resume_213_review_165 agent authored the source
+    assessment, maintained record, history and generated output. Root did not edit
+    that scientific record; root independently read the original manuscript and supplement,
+    viewed the figures, re-extracted tables and recomputed diagnostics. Agents share
+    the task context and workspace; this is independent agent review, not independent
+    experimental replication.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The exact maintained record supports a distinct fluoride-rich aluminium-smelting
+  waste and bounded culture-associated lithium dissolution. It correctly preserves
+  source conflicts and missing controls, and makes no isolated-product, strain-specific,
+  mechanistic-causality or industrial claim. No corrective record finding was confirmed.
+  Numerical and generated-output audits passed; substantial limitations of the underlying
+  study remain explicit.
+source:
+  git_revision: 1296ee20f2595d7d6a50e391f611c22435418906
+  state: working_tree
+  inputs:
+  - path: data/records/waste-aluminium-electrolyte.yaml
+    sha256: c0a3c28cd975001ce67bf57db2383185dcaf898770c0d77ca12ed67945550b0a
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/waste-aluminium-electrolyte/2026-10-21T123531Z-codex-1990ad.yaml
+    sha256: e76c102a0682b22021f23b9241f3de86665ec8c7f921ac2e0e18d0e6620edadd
+    role: context
+  - path: research/sources/issue-202-waste-aluminium-electrolyte/20261021T123609Z-evidence.json
+    sha256: 4ba3657c92ca7419a059609bb89ad56c44eaed074fb3c5cccd36e63492e8793d
+    role: context
+  - path: research/sources/issue-202-waste-aluminium-electrolyte/20261021T123609Z.md
+    sha256: d1791a0c1f56495e1531cd223bb708e9a992278b1991fe326024661cf973177c
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+scope:
+  description: One newly created maintained record, its CREATE provenance and source
+    assessment, and the corresponding generated output. Primary AAM methods/results/figures
+    and complete supplement were reassessed. Existing neighboring records were checked
+    for identity boundary and byte preservation, not scientifically re-reviewed.
+  selection: The only scientific record newly created in the isolated issue-202 worktree
+    at the recorded base.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:waste-aluminium-electrolyte
+  exclusions:
+  - target: Other 616 material records
+    reason: No scientific edits; 1361 pre-existing record/history files compared byte-for-byte
+      with the base.
+targets:
+- target_id: cmmmech:waste-aluminium-electrolyte
+  path: data/records/waste-aluminium-electrolyte.yaml
+  label: Waste aluminium electrolyte
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/waste-aluminium-electrolyte.yaml
+    role: maintained scientific owner
+checks:
+- check_id: named
+  name: Named record validation
+  status: passed
+  required: true
+  summary: Root executed successfully; one target validated.
+  target_ids:
+  - cmmmech:waste-aluminium-electrolyte
+  command: uv run --locked cmmmech validate data/records/waste-aluminium-electrolyte.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+- check_id: repository
+  name: Repository checks
+  status: passed
+  required: true
+  summary: Author final command actually passed363tests with3documented optional skips,617records745histories;
+    exact receipt independently verified.
+  target_ids:
+  - cmmmech:waste-aluminium-electrolyte
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache UV_OFFLINE=1
+    just check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gates
+- check_id: corpus
+  name: Required nonempty corpus validation
+  status: passed
+  required: true
+  summary: Author separately executed actual nonempty corpus validation;617records.
+  target_ids:
+  - cmmmech:waste-aluminium-electrolyte
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gates
+- check_id: history
+  name: Canonical history validation
+  status: passed
+  required: true
+  summary: Author separately executed actual history validation against reviewed base;745histories.
+  target_ids:
+  - cmmmech:waste-aluminium-electrolyte
+  command: uv run --locked cmmmech validate-history --base 1296ee20f2595d7d6a50e391f611c22435418906
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gates
+- check_id: canonical
+  name: Governed file synchronization
+  status: passed
+  required: true
+  summary: Author actual public canonical comparison passed22matches.
+  target_ids:
+  - cmmmech:waste-aluminium-electrolyte
+  command: python3 -I scripts/check_vendored_sync.py
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gates
+- check_id: independent
+  name: Independent evidence and generated audit
+  status: passed
+  required: true
+  summary: Root actual exit0 verified818hash assertions814paths,46archive members,254numbers36dashes62diagnostics
+    and1361unchanged prior scientific files.
+  target_ids:
+  - cmmmech:waste-aluminium-electrolyte
+  command: python /private/tmp/cmmmech-backlog-20261019-fmj36s/review-202-independent/audit.py
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - numeric
+  - generated
+evidence:
+- evidence_id: aam
+  kind: primary_source
+  reference: https://hdl.handle.net/10779/lincoln.29815361.v2
+  locator: Complete methods/results and captions, Tables1–2, Figures1–6; local30-page
+    AAM derivative, specifically pp6–9,13–14,17,19,21–22,24–26. Body paragraphs1–95
+    were read; remaining reference list not exhaustively reassessed.
+  accessed_at: '2026-10-21T12:49:09.182267Z'
+  support: partial
+  summary: Original DOCX verified against repository MD5 and46 combined archive members.
+    Manuscript contains the cultures, medium recipes, flask conditions, dissolution
+    curves and source contradictions; it lacks matched sterile/pH controls and a closed
+    lithium balance.
+  snapshot_sha256: cba412ca894ed638e0404571e4dd3e405709c2ac952c63169b352aaf26646dc5
+- evidence_id: si
+  kind: primary_source
+  reference: https://ars.els-cdn.com/content/image/1-s2.0-S0956053X25004544-mmc1.docx
+  locator: All six locally rendered pages, both supplementary figures and both tables.
+  accessed_at: '2026-10-21T12:49:09.182267Z'
+  support: supports
+  summary: Exact title and six-author identity checked. All36 time-series rows and18
+    metabolite rows read. All table values re-extracted independently from original
+    Word XML; dashes remain missing, six printed zeros remain reported zeros.
+  snapshot_sha256: 4db6b9aa5eb894bd2caf4686217a14ef17756fdd95bc1869a95a1bd71b5950ec
+- evidence_id: figures
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.wasman.2025.115043
+  locator: Publisher Figures1,2,3,5,6 JPEGs viewed; Figure4 from AAM pp21–22 because
+    its current publisher JPEG route returned XML404. AAM claim pages1,7,8,9,13,14,17,19,21,22,24,25,26
+    and all6SIpages viewed.
+  accessed_at: '2026-10-21T12:49:09.182267Z'
+  support: partial
+  summary: EDX local field percentages exclude lithium. XRD source-assigned phases
+    do not provide phase yields; residual simmonsite remains in the nominal100% fungal
+    arm. FTIR sample labels conflict with prose. Fitted R² and unexplained0.45 transform
+    are model descriptors, not mechanistic proof.
+  snapshot_sha256: 7ae00b8916d1759546001bc4270ebaf59b9fe64313be14fd54b07982f886f0d9
+- evidence_id: numeric
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-202-independent/audit.json
+  locator: Independent audit.py:254 numeric components,36 missing dashes,62 conditional
+    diagnostics,46ZIPmembers; terminal27476 exited0 chunk7b2108.
+  accessed_at: '2026-10-21T12:49:09.182267Z'
+  support: supports
+  summary: Seven main composition cells,24 main test identifiers/conditions,36SI metabolite
+    values,144SI time-series cells,26EDX values,11FTIR labels and6R² labels independently
+    checked. Recomputed conditional fits preserve both conflicting time grids; four
+    of six main-grid through-origin values match reported four-decimal R², two differ.
+  snapshot_sha256: fc61577070f594a69f3e0ebcf4fc766adbacf71f503df77760de97607b8b5885
+- evidence_id: identity
+  kind: record_content
+  reference: data/records/waste-aluminium-electrolyte.yaml
+  locator: Identity, source provenance, one mechanism and canonical/inline CREATE
+    history.
+  accessed_at: '2026-10-21T12:49:09.182267Z'
+  support: supports
+  summary: Secondary resource is distinct from potlining, dross, salt slag and battery
+    electrolyte. No external material, taxon or protein CURIE, criticality designation
+    or formal quantitative recovery observation is asserted.
+  snapshot_sha256: c0a3c28cd975001ce67bf57db2383185dcaf898770c0d77ca12ed67945550b0a
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-202-independent/web-review.json
+  locator: Root web.run current DOI/title-author/correction-retraction queries and
+    attempted open; author24queries/7opens explicitly audited.
+  accessed_at: '2026-10-21T12:49:09.182267Z'
+  support: context_only
+  summary: Current PubMed bibliographic identity agrees. No affecting correction surfaced
+    in the bounded returned results. This is not an exhaustive claim that none exists.
+  snapshot_sha256: 0b09e6116b538aafed01556ee5027f14c27511560bab1f480fde313dd4ed7193
+  search_scope: Root exact requests and actual timestamps in bound web-review.json;
+    first returned result sets only, no API domain or recency filters. Author identity
+    dedup used hidden/ignored/follow searches across stated repository scientific
+    roots and supplement paths. Historical round64 raw paths were checked only at
+    their stated locations; no machine-wide absence assertion.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-202-final-gates.json
+  locator: Author actual11248exit0 chunka2d456; canon79681exit0 chunk9e7534; corpus90689exit0
+    chunk982f3f; history27494exit0 chunk273aac.
+  accessed_at: '2026-10-21T12:49:09.182267Z'
+  support: supports
+  summary: 363 tests passed,3 known optional skips;617 records745histories validate;22
+    governed files match. These actual author execution receipts were inspected independently
+    and are explicitly attributed to that execution.
+  snapshot_sha256: 82e13aaf30561b97c3524ab2189c1d0ec47084dbf4d35893aed6a35c64e5cdc5
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-202-independent/named-validation.log
+  locator: Root named validator actual exit0 chunk738b40.
+  accessed_at: '2026-10-21T12:49:09.182267Z'
+  support: supports
+  summary: Named newly created record passes the repository schema validator.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: generated
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-202-independent/supplemental-audit.json
+  locator: 635generatedpaths:616existing pages footer-only;18aggregates plusone newpage;
+    independent JSONmembership/graph/map checks.
+  accessed_at: '2026-10-21T12:49:09.182267Z'
+  support: supports
+  summary: Prior index rows and graph nodes/edges retain their semantics except the
+    expected bioleaching count. Map coordinates remain unchanged; only new page URL
+    mapping is added. Every scientific text block and bothsourceURLs appear in the
+    generated newpage.
+  snapshot_sha256: 23d41cd1dd270eb9fbdf34c22912d28ea6960f3f35fa3c7eb444d08f1e04ebde
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Waste category and sample boundary
+  outcome: supported
+  summary: The mixed fluoride-rich smelting residue is represented at the supported
+    material level. No supplier, batch, elemental criticality or pure-mineral identity
+    is invented.
+  target_ids:
+  - cmmmech:waste-aluminium-electrolyte
+  evidence_ids:
+  - aam
+  - identity
+  dimensions:
+  - name: material_form
+    value: Mixed fluoride-rich aluminium-smelting waste electrolyte
+    definition: Experimental secondary resource; one incompletely characterized specimen.
+    evidence_ids:
+    - aam
+    - identity
+  - name: criticality
+    value: No authority/jurisdiction/list/edition asserted
+    definition: Lithium content alone does not establish criticality of this waste
+      category.
+    evidence_ids:
+    - aam
+    - identity
+- assessment_id: culture
+  area: evidence
+  topic: Organism, biomass, substrate and experimental conditions
+  outcome: supported
+  summary: The record preserves live culture systems and their differing media/pH
+    without treating a species name as a verified strain or comparing organism identity
+    alone.
+  target_ids:
+  - cmmmech:waste-aluminium-electrolyte
+  evidence_ids:
+  - aam
+  - si
+  dimensions:
+  - name: biomass_state
+    value: Inoculated live fungal and bacterial culture systems
+    definition: Not dead sorbent biomass or cell-free purified metabolites.
+    evidence_ids:
+    - aam
+    - si
+  - name: organism_strain
+    value: Aspergillus niger collection culture and Glutamicibacter nicotianae mine
+      isolate; no experimental accessions
+    definition: A.niger Karaj source; bacterial Choqart morphological identification
+      with prior-paper citation; exact strain unresolved.
+    evidence_ids:
+    - aam
+    - si
+  - name: pretreatment
+    value: Jaw crushing, pulverization, homogenization; d80 47.5µm
+    definition: Feed preparation; sterile isolation plates do not establish sterilized
+      leach feed.
+    evidence_ids:
+    - aam
+    - si
+  - name: conditions
+    value: 250mL flasks;90mL medium+10mL inoculum;30°C150rpm;10/30/50g/L;up to30days
+    definition: LB initialpH7 versus modifiedSperber initialpH3.2, with explicit medium
+      recipes.
+    evidence_ids:
+    - aam
+    - si
+  - name: controls
+    value: No reported matched sterile or pH-controlled abiotic leach arms
+    definition: Both culture systems differ in medium and pH; biological n/error-bar
+      definition unknown.
+    evidence_ids:
+    - aam
+    - si
+- assessment_id: outcome
+  area: quantity
+  topic: Reported lithium dissolution and measurement limits
+  outcome: supported
+  summary: The source percentages are qualified observations, not independent mass
+    closure or isolated-product recovery. Day22 maxima and day30 decline, early sample-time
+    conflict and Eq1 dimensions are explicit.
+  target_ids:
+  - cmmmech:waste-aluminium-electrolyte
+  evidence_ids:
+  - aam
+  - si
+  - numeric
+  dimensions:
+  - name: outcome
+    value: At10g/L fungal100→86.10%;bacterial43.75→37.50%,day22→30
+    definition: Reported dissolution scale with unresolved solid concentration and
+      volume normalization; no independent recalibration.
+    evidence_ids:
+    - aam
+    - si
+    - numeric
+  - name: deployment
+    value: Laboratory flask study; no isolated Li product or industrial operation
+    definition: Supplier industrial context would not establish industrial mechanism
+      deployment.
+    evidence_ids:
+    - aam
+    - si
+    - numeric
+  details: All six arms are nondecreasing through day22, including the G30early tie20.83%,
+    then decline. Main figures plot first nonzero times near5and10days whereasSI prints10and15.
+    Abstract/conclusion place bacterial43.75%at30days unlike results22days. The record
+    preserves each conflict and avoids false monotonic-increase and day30maximum assertions.
+- assessment_id: causality
+  area: scope
+  topic: Mechanistic interpretation and model limits
+  outcome: supported
+  summary: Culture association is supported; causal ligand production, precipitation
+    of lithium, strain ranking and rate-limiting mechanisms remain qualified hypotheses.
+  target_ids:
+  - cmmmech:waste-aluminium-electrolyte
+  evidence_ids:
+  - aam
+  - si
+  - figures
+  - numeric
+  details: All four printed fungal organic acids decrease before→after. mg/g denominator
+    and nutrient blanks are unresolved. Local EDX excludesLi and source-assigned XRD
+    phases do not closeLi balance. FTIR prose/sample labels conflict. Eq3factor0.45
+    is unexplained; fitting only rising points and choosing a time grid cannot establish
+    reaction/diffusion causality.
+- assessment_id: provenance
+  area: provenance
+  topic: Distinct inline and canonical CREATE provenance
+  outcome: supported
+  summary: Actual curator and UTC creation events are retained separately. The canonical
+    history targets the new owner, and all old record/history bytes remain unchanged.
+  target_ids:
+  - cmmmech:waste-aluminium-electrolyte
+  evidence_ids:
+  - identity
+  - gates
+  details: Inline event12:35:56.569452UTC and new sidecar12:35:31UTC are distinct
+    actual author actions, not reconstructed historical provenance. No existing sidecar
+    was rewritten.
+- assessment_id: representation
+  area: representation
+  topic: Schema and generated consistency
+  outcome: supported
+  summary: The maintained YAML, one-mechanism categorization and generated pages are
+    consistent with the supported scope and validated against native gates.
+  target_ids:
+  - cmmmech:waste-aluminium-electrolyte
+  evidence_ids:
+  - identity
+  - gates
+  - named
+  - generated
+findings: []
+actions: []
+limitations:
+- Final complete journal version of record/correction not acquired.
+- No matched sterile/pH control arms or independent n/error-bar definition in complete
+  AAM/SI.
+- Eq1 solid-feed concentration basis and volume conversion unresolved.
+- SI and main figure early time labels conflict; abstract/conclusion bacterial peak
+  day conflicts.
+- HPLC printed mg/g denominator unresolved; nutrient-containing media and no appropriate
+  blank prevent net-production attribution.
+- Source phase assignments lack Li-specific recovered-product balance; SEM-EDX local
+  fields exclude Li.
+- No raw assay/replicate/sampling or kinetic-fit ledger acquired.
+- Batch supplier/history and experimental strain accession unresolved.
+notes:
+- Actual initial target inspection occurred at 12:40:20 UTC; complete source/history
+  input capture and corrected maintained target-kind scaffold were repeated before
+  final assessment without changing owner bytes. Review artifacts were saved after
+  the author final gate; the complete post-save gate is retained separately in the
+  integration receipt.
+- Only the final locally frozen maintained state is assessed. No shared publication,
+  queue admission, merge or paid-provider action is authorized by this review.
+links:
+- https://github.com/CultureBotAI/CMMMech/issues/202
+- https://doi.org/10.1016/j.wasman.2025.115043
+tags:
+- scientific-review
+- issue-202
+- secondary-resource
+```
