@@ -20,10 +20,27 @@ sources:
       space analogues. Frontiers in Microbiology 17:1741305.
       DOI 10.3389/fmicb.2026.1741305. Complete 14-page publisher PDF and
       full HTML inspected, including Methods sections 2.1-2.10, Tables 1-2,
-      Figure 4B and EU-specific Results section 3.4. The linked supplements
-      were not acquired through the tested public routes in this curation.
+      Figure 4B and EU-specific Results section 3.4. Supplementary files
+      were subsequently authenticated through the NLM open-data version
+      PMC13106364.1 and a byte-identical Europe PMC archive.
     url: https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2026.1741305/full
-    accessed_on: '2026-10-16'
+    accessed_on: '2026-10-21'
+  - id: tonietti2026_data
+    title: >-
+      Tonietti et al. (2026), DOI 10.3389/fmicb.2026.1741305. Data Sheet 1,
+      two-sheet bioleaching workbook, NLM PMC13106364.1. All EU raw cells
+      and 123 EU summary rows inspected, including distinct culture,
+      abiotic and bulk-characterization replicates; unit and negative-value
+      processing remain incompletely documented.
+    url: https://pmc-oa-opendata.s3.amazonaws.com/PMC13106364.1/Data_Sheet_1.xlsx
+    accessed_on: '2026-10-21'
+  - id: tonietti2026_si
+    title: >-
+      Tonietti et al. (2026), DOI 10.3389/fmicb.2026.1741305. Data Sheet 2,
+      12-page supplementary information, NLM PMC13106364.1. EU entries in
+      Tables S1-S8, Figure S1 and the workbook dictionary inspected.
+    url: https://pmc-oa-opendata.s3.amazonaws.com/PMC13106364.1/Data_Sheet_2.pdf
+    accessed_on: '2026-10-21'
   - id: ncbi_desiccabilis
     title: >-
       NCBI Taxonomy 429134, Sphingomonas desiccabilis, species. CP1D is the
@@ -72,10 +89,44 @@ mechanisms:
           observations. The text reports EU platinum extraction as
           (8.98 +/- 3.20) x 10^-2% of the bulk-rock platinum inventory,
           and a platinum biotic/abiotic ratio of 2.47 +/- 0.48, with figure
-          error bars defined as standard errors. These source-reported
-          summaries were not recomputed from the unavailable supplementary
-          cells. They are endpoint fractions and ratios, not rates or
-          percentages of isolated platinum recovered.
+          error bars defined as standard errors. The acquired supplement
+          instead reports a platinum ratio of 2.74 +/- 0.48; its underlying
+          arithmetic is reproducible, but this is an unresolved source
+          discrepancy, not a formal correction. The reported percentage
+          is an endpoint summary whose physical inventory normalization
+          remains unverified, not a rate or isolated-platinum recovery yield.
+      - source_ref: tonietti2026_data
+        supports: partial
+        explanation: >-
+          Raw bioleaching data (ppm) rows 6-8, 9 and 44-46 represent three
+          cultured samples, one abiotic control and three bulk-characterization
+          samples respectively. The latter are not documented paired culture
+          inventories. Platinum cells AT6:AT9 and AT44:AT46 reproduce summary
+          G189:H189, a ratio of 2.73908046 +/- 0.48114502, and I189:J189,
+          the reported 0.08978626 +/- 0.03204797 percent endpoint. The ratio
+          uncertainty uses cultured-sample standard error and the single
+          control value; it does not estimate control variability. Both
+          source roles are labeled ppm, whereas main section 2.8 describes
+          conversion of liquid measurements to absolute chamber amounts.
+          Missing dilution and normalization details prevent independent
+          verification as mass-balanced inventory fractions. Eight negative
+          EU bulk cells for B, Ag and Ni yield the published group summaries
+          only after zero substitution; that arithmetic match does not
+          establish a documented censoring rule or detection limit.
+          Workbook blanks, literal zeros and Inf entries are not inferred
+          recoveries or proof of elemental absence.
+      - source_ref: tonietti2026_si
+        supports: partial
+        explanation: >-
+          EU platinum entries in Table S5 page 7 and Table S6 page 8 agree
+          with the workbook's rounded endpoint and 2.74 +/- 0.48 ratio,
+          while the main text prints 2.47 +/- 0.48. EU palladium's
+          Table S6 ratio of 1.96 +/- 0.36 remains below the arbitrary
+          twofold criterion. Table S5's NA and Table S6's NA/NL categories
+          combine different missing or zero conditions; the page 12 data
+          dictionary does not resolve negative-value or normalization
+          semantics. These are supplements to the same experiment, not
+          an independent replication or a resolution of specimen provenance.
       - source_ref: tonietti2026
         supports: partial
         explanation: >-
@@ -94,12 +145,18 @@ mechanisms:
           ligands or demonstrate specific mineral-phase dissolution for EU.
           Table 2 labels its mineral proportions percent m/V despite the
           Rietveld method; no corrected unit or independent specimen identity
-          is inferred here. Missing supplementary acquisition and unresolved
-          specimen provenance constrain reuse of the results.
+          is inferred here. The acquired supplements leave specimen
+          provenance, quantitative normalization and negative-value handling
+          unresolved, constraining reuse of the results.
 curation_history:
+  - timestamp: '2026-10-21T06:42:02Z'
+    curator: codex (GPT-6; codex)
+    action: EDIT
+    summary: Authenticated EU supplements and documented the conflicting platinum ratio, uncertain inventory normalization and negative-value handling.
   - timestamp: '2026-10-16T05:14:59.550324Z'
     curator: codex (GPT-6; codex)
     action: CREATE
     summary: Added a natural eucrite feed record with terrestrial Sphingomonas-associated trace-metal mobilization evidence.
 history_refs:
   - history/records/eucrite-meteorite/2026-10-16T051458Z-codex-678910.yaml
+  - history/records/eucrite-meteorite/2026-10-21T064202Z-codex-4c0427.yaml

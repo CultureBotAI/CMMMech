@@ -1,0 +1,1503 @@
+{
+  "assessment_id": "20261021T063738Z-issue473-eucrite-specimen-supplements",
+  "timestamp_utc": "2026-10-21T06:37:38Z",
+  "completed_at_utc": "2026-10-21T06:39:03.937187+00:00",
+  "researcher": "Codex, resume_473 source investigator; not an independent owner review",
+  "base": "2da10d95a72146ee0c69cb91fe303348fbadb638",
+  "branch": "codex/issue-473-eucrite-specimen-supplements",
+  "owner_changed": false,
+  "issue_snapshot": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/reconcile-473-20261021T063606Z/issue.json",
+    "sha256": "2fe6336bd3cc0c8674b925fc2ae04c397292de41e5a6b71f6c7734c187f4e9aa",
+    "open_pr_count": 0,
+    "comments": 0,
+    "last_owner_commit": "9ebff7bf980911e7be86bf19d865aeeca8450781",
+    "last_owner_commit_utc": "2026-10-16T05:39:13Z"
+  },
+  "repository_inputs": [
+    {
+      "path": "CLAUDE.md",
+      "sha256": "5a947ff9de7e825362e1e0f8a8c70470db09cfd8a98bbc7a200aeef8ec427d7f"
+    },
+    {
+      "path": "README.md",
+      "sha256": "adf71262e5ac2357ccbf97a1523683f063d67da9973eb3eb5fc87988da3360c8"
+    },
+    {
+      "path": "docs/records.md",
+      "sha256": "381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b"
+    },
+    {
+      "path": "docs/record-reviews.md",
+      "sha256": "452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b"
+    },
+    {
+      "path": "src/cmmmech/schema/cmmmech.yaml",
+      "sha256": "105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932"
+    },
+    {
+      "path": "data/records/eucrite-meteorite.yaml",
+      "sha256": "92a87d16eb94ca6965bc030fc3ea541135f7e7b56c7559c50dd73c5733f6d0c8"
+    },
+    {
+      "path": "research/sources/round112-resources/20261016-source-investigation.md",
+      "sha256": "04e1e5125de063574b0c03825dbb27e5ff3fb9ca216f29cc79f4917ac4342832"
+    },
+    {
+      "path": "research/sources/round112-resources/20261016-source-investigation.json",
+      "sha256": "2d881acb60c146da0ca017cb6815c7c503ae6faabd8d4c4bcacd1ba2796cef96"
+    },
+    {
+      "path": ".claude/skills/cmmmech-discover-sources/SKILL.md",
+      "sha256": "6e3c10232e91c28e491a9dfbb3a05e7d22bb0efdadb48bfbe9d075b123d406c1"
+    },
+    {
+      "path": ".claude/skills/cmmmech-discover-sources/references/report-template.md",
+      "sha256": "79e2494b02e49fda12724b47221ff3c282893e70a5bf96d772dcfd04b0633e41"
+    },
+    {
+      "path": ".claude/skills/cmmmech-discover-sources/references/source-guide.md",
+      "sha256": "893e38956eaaca8430a0957b8ecbe5539d23d01a363c9f7fbbc029de2b057090"
+    }
+  ],
+  "deduplication": {
+    "checked_at_utc": "2026-10-21T06:37:05.035387+00:00",
+    "cwd": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-473",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-ni",
+      "eucrite|1741305|Tonietti|SkyFall|Skylab",
+      "data",
+      "research",
+      "reviews",
+      "history",
+      "docs",
+      ".claude",
+      ".agents"
+    ],
+    "exit_code": 0,
+    "lines": 169,
+    "files": 14,
+    "output": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/dedup-resume.txt",
+    "sha256": "e8d103d0d8993d86b54ccd838f42a2c333745cfcd541fb1b81a6cd865bf0ab97",
+    "hidden_and_ignored_included": true,
+    "symlinks_followed": true,
+    "historical_raw_root": "/private/tmp/cmm-round112-resources-research",
+    "historical_raw_exists": false,
+    "exclusions": "Unrelated home and temporary directories"
+  },
+  "queries_and_navigation": [
+    {
+      "provider": "web.run",
+      "start_utc": "2026-10-20 07:31:14 UTC",
+      "arguments": {
+        "search_query": [
+          {
+            "q": "\"10.3389/fmicb.2026.1741305\" supplementary"
+          },
+          {
+            "q": "\"1741305\" \"Tonietti\" \"eucrite\""
+          },
+          {
+            "q": "\"1741305\" \"SkyFall\" OR \"Skylab\""
+          },
+          {
+            "q": "\"10.3389/fmicb.2026.1741305\" correction erratum"
+          }
+        ],
+        "open": [
+          {
+            "ref_id": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2026.1741305/full"
+          }
+        ],
+        "response_length": "long"
+      },
+      "raw_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/search-open-01.json",
+      "sha256": "1e11821f9deec0a7ac142c87ed8e9ce1c9663812cf4762c03fc7b37b27560f6a"
+    },
+    {
+      "provider": "web.run",
+      "start_utc": "2026-10-20 07:32:21 UTC",
+      "arguments": {
+        "open": [
+          {
+            "ref_id": "https://www.ncbi.nlm.nih.gov/pmc/tools/oa-service/"
+          },
+          {
+            "ref_id": "https://europepmc.org/RestfulWebService"
+          }
+        ],
+        "response_length": "long"
+      },
+      "raw_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/open-02.json",
+      "sha256": "338cb27e61ed1a58e2b2491178df909b43a86e9fa9602f639293537c664144e3"
+    },
+    {
+      "provider": "web.run",
+      "start_utc": "2026-10-20 07:32:29 UTC",
+      "arguments": {
+        "click": [
+          {
+            "ref_id": "turn170view0",
+            "id": 31
+          },
+          {
+            "ref_id": "turn170view0",
+            "id": 49
+          }
+        ],
+        "search_query": [
+          {
+            "q": "site:europepmc.org \"supplementaryFiles\" REST"
+          },
+          {
+            "q": "\"1741305\" \"Data_Sheet_1.xlsx\""
+          }
+        ],
+        "response_length": "long"
+      },
+      "raw_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/search-open-03.json",
+      "sha256": "585fc83d43bc892558fc0d248bb794588e85debd8e555bd66eda260f2680424a"
+    },
+    {
+      "provider": "web.run",
+      "start_utc": "2026-10-20 07:33:19 UTC",
+      "arguments": {
+        "open": [
+          {
+            "ref_id": "turn171view1",
+            "lineno": 87
+          },
+          {
+            "ref_id": "turn171view0",
+            "lineno": 87
+          }
+        ],
+        "response_length": "long"
+      },
+      "raw_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/open-04.json",
+      "sha256": "8d24eb2cc925f3e625449d0101cb0f689ac82c9142de0b2f643ae561a50277bc"
+    },
+    {
+      "provider": "web.run",
+      "start_utc": "2026-10-20 07:33:35 UTC",
+      "arguments": {
+        "click": [
+          {
+            "ref_id": "turn176view0",
+            "id": 55
+          }
+        ],
+        "response_length": "long"
+      },
+      "raw_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/open-05.json",
+      "sha256": "30f850ab2dda8df0bfea59624b1836cee8feb018e0b00278f20b91ecea076135"
+    },
+    {
+      "provider": "web.run",
+      "start_utc": "2026-10-20 07:33:47 UTC",
+      "arguments": {
+        "click": [
+          {
+            "ref_id": "turn177view0",
+            "id": 56
+          }
+        ],
+        "response_length": "long"
+      },
+      "raw_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/open-06.json",
+      "sha256": "6664df1440eb71e7d30295499e078584eb8320c9da123af25e7e4a5a3a5909a0"
+    },
+    {
+      "started_utc": "2026-10-20T07:38:41.618Z",
+      "finished_utc": "2026-10-20T07:38:42.453Z",
+      "provider": "web.run",
+      "coverage": "First returned result set only; no exhaustive pagination. Same four queries executed immediately before this retained run; capture failed at undefined btoa after the web call. This run repeats and retains them.",
+      "arguments": {
+        "search_query": [
+          {
+            "q": "\"Tonietti\" \"1741305\" eucrite specimen accession"
+          },
+          {
+            "q": "\"Tonietti\" \"SkyFall\" eucrite"
+          },
+          {
+            "q": "\"10.3389/fmicb.2026.1741305\" correction OR corrigendum OR erratum OR retraction"
+          },
+          {
+            "q": "\"Bioleaching of critical trace metals\" eucrite \"Skylab\""
+          }
+        ],
+        "response_length": "long"
+      },
+      "raw_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/search-07.json",
+      "sha256": "60e89a70af731f8181f0f14dc3bce462b31fea7c05d8db06657f57cc8b38805d"
+    },
+    {
+      "started_utc": "2026-10-21T06:36:41.747Z",
+      "finished_utc": "2026-10-21T06:36:43.137Z",
+      "arguments": {
+        "search_query": [
+          {
+            "q": "\"10.3389/fmicb.2026.1741305\" correction corrigendum erratum"
+          },
+          {
+            "q": "\"Tonietti\" \"eucrite\" specimen SkyFall Skylab accession"
+          },
+          {
+            "q": "\"Bioleaching of critical trace metals\" \"2.74\""
+          }
+        ],
+        "response_length": "long"
+      },
+      "raw_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/search-resume-08.json",
+      "sha256": "f80aae6604570f8f40fc1f8977dead07279cfb93cfe76d3e789e2f39d20a3360"
+    }
+  ],
+  "acquisitions": [
+    {
+      "name": "article.html",
+      "requested_url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2026.1741305/full",
+      "start_utc": "2026-10-20T07:31:36.078263+00:00",
+      "status": 200,
+      "final_url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2026.1741305/full",
+      "content_type": "text/html;charset=utf-8",
+      "bytes": 965377,
+      "sha256": "2cb414a09dd0ed7d8b54bd3e146676325a1f2fbb15b437ca00940f45c04aa291",
+      "file": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/article.html",
+      "finished_utc": "2026-10-20T07:31:37.366645+00:00",
+      "receipt_group_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-01.json",
+      "receipt_group_sha256": "9252f68e34540df4944244e16e943c4f00401025682029aba4050f1311d7d93b"
+    },
+    {
+      "name": "article.pdf",
+      "requested_url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2026.1741305/pdf",
+      "start_utc": "2026-10-20T07:31:36.078691+00:00",
+      "status": 200,
+      "final_url": "https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2026.1741305/pdf",
+      "content_type": "application/pdf",
+      "bytes": 1836101,
+      "sha256": "cf994f738b6af0da509e3484648b74fd2d1d4736c58b233ef9fa4f1b9e604d51",
+      "file": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/article.pdf",
+      "finished_utc": "2026-10-20T07:31:37.687458+00:00",
+      "receipt_group_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-01.json",
+      "receipt_group_sha256": "9252f68e34540df4944244e16e943c4f00401025682029aba4050f1311d7d93b"
+    },
+    {
+      "name": "crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.3389/fmicb.2026.1741305",
+      "start_utc": "2026-10-20T07:31:36.078841+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.3389/fmicb.2026.1741305",
+      "content_type": "application/json",
+      "bytes": 24244,
+      "sha256": "b8eb3332f8f4de2d0e88599a10bf6417984beb0d36da92b049ec6b8b6fb3f2e1",
+      "file": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/crossref.json",
+      "finished_utc": "2026-10-20T07:31:36.365872+00:00",
+      "receipt_group_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-01.json",
+      "receipt_group_sha256": "9252f68e34540df4944244e16e943c4f00401025682029aba4050f1311d7d93b"
+    },
+    {
+      "name": "pmc.html",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13106364/",
+      "start_utc": "2026-10-20T07:31:36.078996+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC13106364/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 261433,
+      "sha256": "c1b72b1e3080733e2898d6a76dc3876fb85422cd2f56e96f4ab31d5409c098ac",
+      "file": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/pmc.html",
+      "finished_utc": "2026-10-20T07:31:36.408057+00:00",
+      "receipt_group_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-01.json",
+      "receipt_group_sha256": "9252f68e34540df4944244e16e943c4f00401025682029aba4050f1311d7d93b"
+    },
+    {
+      "name": "edinburgh.html",
+      "requested_url": "https://www.research.ed.ac.uk/en/publications/bioleaching-of-critical-trace-metals-by-sphingomonas-desiccabilis/",
+      "start_utc": "2026-10-20T07:31:36.366452+00:00",
+      "status": 200,
+      "final_url": "https://www.research.ed.ac.uk/en/publications/bioleaching-of-critical-trace-metals-by-sphingomonas-desiccabilis/",
+      "content_type": "text/html;charset=UTF-8",
+      "bytes": 66996,
+      "sha256": "8aac554127440e6f98ba7ec08f8afb8896166c134eff07cf10435f033f8bf992",
+      "file": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/edinburgh.html",
+      "finished_utc": "2026-10-20T07:31:36.593216+00:00",
+      "receipt_group_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-01.json",
+      "receipt_group_sha256": "9252f68e34540df4944244e16e943c4f00401025682029aba4050f1311d7d93b"
+    },
+    {
+      "name": "Data_Sheet_1.xlsx",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/13106364/bin/Data_Sheet_1.xlsx",
+      "start_utc": "2026-10-20T07:32:04.617948+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/13106364/bin/Data_Sheet_1.xlsx",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 1816,
+      "sha256": "e88db6edd42cd22b7ce9eed775d9c6e594899d78ccf06a561af218566ef8c3fc",
+      "file": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/Data_Sheet_1.xlsx",
+      "finished_utc": "2026-10-20T07:32:04.781658+00:00",
+      "receipt_group_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-02.json",
+      "receipt_group_sha256": "5172f48517a5ab3ac8a910f673f7ae056a0ad312139fa76dc9362a308bbd203d"
+    },
+    {
+      "name": "Data_Sheet_2.pdf",
+      "requested_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/13106364/bin/Data_Sheet_2.pdf",
+      "start_utc": "2026-10-20T07:32:04.618363+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/instance/13106364/bin/Data_Sheet_2.pdf",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 1817,
+      "sha256": "bec7fa1be9079512a6e2d0cf6698d0f4b145fc83b641364ec79a77e56a3f9e36",
+      "file": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/Data_Sheet_2.pdf",
+      "finished_utc": "2026-10-20T07:32:04.781566+00:00",
+      "receipt_group_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-02.json",
+      "receipt_group_sha256": "5172f48517a5ab3ac8a910f673f7ae056a0ad312139fa76dc9362a308bbd203d"
+    },
+    {
+      "name": "europepmc-supplements.zip",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13106364/supplementaryFiles",
+      "start_utc": "2026-10-20T07:32:42.692443+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13106364/supplementaryFiles",
+      "content_type": "application/zip",
+      "bytes": 875404,
+      "sha256": "5aac05bfbe8ee5bec716bd3d5bc02b1d87bffe39a635bfd9407029b342f47709",
+      "file": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/europepmc-supplements.zip",
+      "finished_utc": "2026-10-20T07:34:07.325202+00:00",
+      "receipt_group_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-03.json",
+      "receipt_group_sha256": "47e28f892916a673260b95c0e4bc485cf1156f27e717bd810bd7d74bd0758c4e"
+    },
+    {
+      "name": "europepmc.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13106364/fullTextXML",
+      "start_utc": "2026-10-20T07:32:42.693054+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13106364/fullTextXML",
+      "content_type": "application/xml",
+      "bytes": 169079,
+      "sha256": "6a18417fe87a188ca4e7b753f3d0b66399e5abfb81269e93590d6b8c38ae8d61",
+      "file": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/europepmc.xml",
+      "finished_utc": "2026-10-20T07:32:46.967464+00:00",
+      "receipt_group_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-03.json",
+      "receipt_group_sha256": "47e28f892916a673260b95c0e4bc485cf1156f27e717bd810bd7d74bd0758c4e"
+    },
+    {
+      "name": "pmc-cloud-readme.txt",
+      "requested_url": "https://pmc-oa-opendata.s3.amazonaws.com/README.txt",
+      "start_utc": "2026-10-20T07:34:00.945380+00:00",
+      "status": 200,
+      "final_url": "https://pmc-oa-opendata.s3.amazonaws.com/README.txt",
+      "content_type": "text/plain",
+      "bytes": 14524,
+      "sha256": "257a001b400485176702ed49ca7607d73cd83c581bffb6dd3c9be127a2e42634",
+      "file": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/pmc-cloud-readme.txt",
+      "finished_utc": "2026-10-20T07:34:01.278392+00:00",
+      "receipt_group_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-04.json",
+      "receipt_group_sha256": "38ace24d20fc226e09c59958ebfeafc064f8ecf426f65fe081f723f06922760d"
+    },
+    {
+      "name": "pmc-cloud-list.xml",
+      "requested_url": "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC13106364.",
+      "start_utc": "2026-10-20T07:34:00.945860+00:00",
+      "status": 200,
+      "final_url": "https://pmc-oa-opendata.s3.amazonaws.com/?list-type=2&prefix=PMC13106364.",
+      "content_type": "application/xml",
+      "bytes": 3416,
+      "sha256": "21cc8fe9055af003514b035837be4625b154e1ac9f9b4e4a67bbecc78aa7ed24",
+      "file": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/pmc-cloud-list.xml",
+      "finished_utc": "2026-10-20T07:34:01.799652+00:00",
+      "receipt_group_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-04.json",
+      "receipt_group_sha256": "38ace24d20fc226e09c59958ebfeafc064f8ecf426f65fe081f723f06922760d"
+    },
+    {
+      "name": "cloud-Data_Sheet_1.xlsx",
+      "requested_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13106364.1/Data_Sheet_1.xlsx",
+      "start_utc": "2026-10-20T07:34:20.570329+00:00",
+      "status": 200,
+      "final_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13106364.1/Data_Sheet_1.xlsx",
+      "content_type": "binary/octet-stream",
+      "bytes": 89818,
+      "sha256": "251835847172558df677f4cd710bb0afd22e9e885460a45541288ca66a193b3c",
+      "file": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/cloud-Data_Sheet_1.xlsx",
+      "finished_utc": "2026-10-20T07:34:21.426344+00:00",
+      "receipt_group_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-05.json",
+      "receipt_group_sha256": "f1a52f72964495e88ea269c4d0047c17754f4afe53742fa6c80037739c9aca29"
+    },
+    {
+      "name": "cloud-Data_Sheet_2.pdf",
+      "requested_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13106364.1/Data_Sheet_2.pdf",
+      "start_utc": "2026-10-20T07:34:20.570774+00:00",
+      "status": 200,
+      "final_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13106364.1/Data_Sheet_2.pdf",
+      "content_type": "binary/octet-stream",
+      "bytes": 426414,
+      "sha256": "8593554309678f142ea9421108122a1562b9b12739a84ae9ec7bc87164e6c082",
+      "file": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/cloud-Data_Sheet_2.pdf",
+      "finished_utc": "2026-10-20T07:34:21.823549+00:00",
+      "receipt_group_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-05.json",
+      "receipt_group_sha256": "f1a52f72964495e88ea269c4d0047c17754f4afe53742fa6c80037739c9aca29"
+    },
+    {
+      "name": "cloud-PMC13106364.1.json",
+      "requested_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13106364.1/PMC13106364.1.json",
+      "start_utc": "2026-10-20T07:34:20.571173+00:00",
+      "status": 200,
+      "final_url": "https://pmc-oa-opendata.s3.amazonaws.com/PMC13106364.1/PMC13106364.1.json",
+      "content_type": "binary/octet-stream",
+      "bytes": 1376,
+      "sha256": "b5b93826d07b6d7b9e15c850d3958a9b735026a740966846f98158df9819c05a",
+      "file": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/cloud-PMC13106364.1.json",
+      "finished_utc": "2026-10-20T07:34:21.534453+00:00",
+      "receipt_group_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-05.json",
+      "receipt_group_sha256": "f1a52f72964495e88ea269c4d0047c17754f4afe53742fa6c80037739c9aca29"
+    }
+  ],
+  "source_binding": {
+    "pmcid": "PMC13106364",
+    "version": 1,
+    "pmid": 42039836,
+    "doi": "10.3389/fmicb.2026.1741305",
+    "mid": null,
+    "title": "Bioleaching of critical trace metals by Sphingomonas desiccabilis: substrate-driven selectivity in Earth and space analogues",
+    "citation": "Front Microbiol. 2026 Apr 10;17:1741305. doi: 10.3389/fmicb.2026.1741305",
+    "is_pmc_openaccess": true,
+    "is_manuscript": false,
+    "is_historical_ocr": false,
+    "is_retracted": false,
+    "license_code": "CC BY",
+    "text_url": "s3://pmc-oa-opendata/PMC13106364.1/PMC13106364.1.txt?md5=641e5e9c286ca2cd1349164d9a91e96c",
+    "pdf_url": "s3://pmc-oa-opendata/PMC13106364.1/PMC13106364.1.pdf?md5=c968d0625544ac70fbd4af9bf496a063",
+    "xml_url": "s3://pmc-oa-opendata/PMC13106364.1/PMC13106364.1.xml?md5=17a20e4c9b67789f25043d27193768cd",
+    "media_urls": [
+      "s3://pmc-oa-opendata/PMC13106364.1/Data_Sheet_1.xlsx?md5=5d83092650b4433805188c8f374883e9",
+      "s3://pmc-oa-opendata/PMC13106364.1/Data_Sheet_2.pdf?md5=4d4c930d2f9b34a08eb069cdd99d500c",
+      "s3://pmc-oa-opendata/PMC13106364.1/fmicb-17-1741305-g001.jpg?md5=b22a3b526f038a13b36a9f785153740e",
+      "s3://pmc-oa-opendata/PMC13106364.1/fmicb-17-1741305-g002.jpg?md5=4bb193f1aae4543a12df4223866c356e",
+      "s3://pmc-oa-opendata/PMC13106364.1/fmicb-17-1741305-g003.jpg?md5=8285f185195d455c47e981f3d21c2dae",
+      "s3://pmc-oa-opendata/PMC13106364.1/fmicb-17-1741305-g004.jpg?md5=7e2b2063a656a82903871d44020ab7c1"
+    ]
+  },
+  "cross_route_checks": [
+    {
+      "zip_member": "Data_Sheet_1.xlsx",
+      "bytes": 89818,
+      "sha256": "251835847172558df677f4cd710bb0afd22e9e885460a45541288ca66a193b3c",
+      "cloud_sha256": "251835847172558df677f4cd710bb0afd22e9e885460a45541288ca66a193b3c",
+      "same_bytes": true
+    },
+    {
+      "zip_member": "Data_Sheet_2.pdf",
+      "bytes": 426414,
+      "sha256": "8593554309678f142ea9421108122a1562b9b12739a84ae9ec7bc87164e6c082",
+      "cloud_sha256": "8593554309678f142ea9421108122a1562b9b12739a84ae9ec7bc87164e6c082",
+      "same_bytes": true
+    }
+  ],
+  "eu_audit": {
+    "input": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/cloud-Data_Sheet_1.xlsx",
+      "sha256": "251835847172558df677f4cd710bb0afd22e9e885460a45541288ca66a193b3c"
+    },
+    "parser": "Python standard library OOXML; verified every previously extracted cell",
+    "sheet_names": [
+      "Sum bioleaching data",
+      "Raw bioleaching data (ppm)"
+    ],
+    "stored_formula_count": 0,
+    "summary_records": 861,
+    "summary_unique_keys": 861,
+    "summary_key": [
+      "Organism",
+      "Rock",
+      "Element"
+    ],
+    "summary_role_counts": {
+      "S.desiccabilis": 287,
+      "Rock": 287,
+      "Non-bio": 287
+    },
+    "raw_records": 48,
+    "raw_unique_keys": 48,
+    "raw_key": [
+      "Organism",
+      "Rock",
+      "Replicate"
+    ],
+    "raw_role_counts": {
+      "S.desiccabilis": 21,
+      "Non-bio": 7,
+      "Rock": 20
+    },
+    "raw_element_count": 48,
+    "summary_element_count": 41,
+    "raw_elements_omitted_from_summary": [
+      "Ca",
+      "K",
+      "Mg",
+      "Na",
+      "P",
+      "S",
+      "Si"
+    ],
+    "eu_raw_rows_by_role": {
+      "S.desiccabilis": [
+        6,
+        7,
+        8
+      ],
+      "Rock": [
+        44,
+        45,
+        46
+      ],
+      "Non-bio": [
+        9
+      ]
+    },
+    "eu_raw_replicate_keys": [
+      {
+        "Organism": "S.desiccabilis",
+        "Rock": "EU",
+        "Replicate": 1.0,
+        "row": 6
+      },
+      {
+        "Organism": "S.desiccabilis",
+        "Rock": "EU",
+        "Replicate": 2.0,
+        "row": 7
+      },
+      {
+        "Organism": "S.desiccabilis",
+        "Rock": "EU",
+        "Replicate": 3.0,
+        "row": 8
+      },
+      {
+        "Organism": "Non-bio",
+        "Rock": "EU",
+        "Replicate": 1.0,
+        "row": 9
+      },
+      {
+        "Organism": "Rock",
+        "Rock": "EU",
+        "Replicate": 1.0,
+        "row": 44
+      },
+      {
+        "Organism": "Rock",
+        "Rock": "EU",
+        "Replicate": 2.0,
+        "row": 45
+      },
+      {
+        "Organism": "Rock",
+        "Rock": "EU",
+        "Replicate": 3.0,
+        "row": 46
+      }
+    ],
+    "eu_summary_rows": 123,
+    "eu_raw_numeric_cells": 336,
+    "eu_raw_blank_cells": [],
+    "eu_raw_negative_cells": {
+      "D44": -1.41393211,
+      "AA44": -0.366355846,
+      "D45": -1.337976452,
+      "R45": -1.88386678,
+      "AA45": -0.316820838,
+      "D46": -0.698752915,
+      "R46": -2.031698017,
+      "AA46": -0.243930162
+    },
+    "eu_summary_nonfinite_text_cells": {
+      "I7": "Inf",
+      "I21": "Inf",
+      "G42": "Inf",
+      "G77": "Inf",
+      "G105": "Inf",
+      "G112": "Inf",
+      "G203": "Inf",
+      "G231": "Inf",
+      "G252": "Inf"
+    },
+    "negative_to_zero_matching_disclaimer": "Matching is an observed arithmetic property, not a documented processing rule or a license to recode negative values as detection limits/absence.",
+    "eu_group_mean_and_se_mismatches_after_negative_to_zero": [],
+    "eu_finite_derived_formula_mismatches": [
+      {
+        "cell": "J28",
+        "source": null,
+        "computed": 0.0
+      },
+      {
+        "cell": "J35",
+        "source": null,
+        "computed": 0.0
+      },
+      {
+        "cell": "H63",
+        "source": null,
+        "computed": 0.0
+      },
+      {
+        "cell": "J63",
+        "source": null,
+        "computed": 0.0
+      },
+      {
+        "cell": "J70",
+        "source": null,
+        "computed": 0.0
+      },
+      {
+        "cell": "J98",
+        "source": null,
+        "computed": 0.0
+      },
+      {
+        "cell": "J119",
+        "source": null,
+        "computed": 0.0
+      },
+      {
+        "cell": "J126",
+        "source": null,
+        "computed": 0.0
+      },
+      {
+        "cell": "J133",
+        "source": null,
+        "computed": 0.0
+      },
+      {
+        "cell": "J154",
+        "source": null,
+        "computed": 0.0
+      },
+      {
+        "cell": "J168",
+        "source": null,
+        "computed": 0.0
+      },
+      {
+        "cell": "J182",
+        "source": null,
+        "computed": 0.0
+      },
+      {
+        "cell": "J196",
+        "source": null,
+        "computed": 0.0
+      },
+      {
+        "cell": "J210",
+        "source": null,
+        "computed": 0.0
+      },
+      {
+        "cell": "J224",
+        "source": null,
+        "computed": 0.0
+      },
+      {
+        "cell": "H245",
+        "source": null,
+        "computed": 0.0
+      },
+      {
+        "cell": "J245",
+        "source": null,
+        "computed": 0.0
+      },
+      {
+        "cell": "J273",
+        "source": null,
+        "computed": 0.0
+      }
+    ],
+    "replicate_join_warning": "The three Rock rows are characterization replicates, not documented paired inventories for the three culture tubes. No cross-role replicate pairing inferred.",
+    "unit_warning": "Sheet and dictionary label both source types ppm. Main 2.8 mentions conversion from liquid micrograms/L to absolute culture quantity including dilutions, but the workbook supplies no per-tube volume, rock mass, dilution or conversion columns. Agreement of numerical ratios does not independently verify their interpretation as fractions of bulk inventory."
+  },
+  "eu_audit_counts": {
+    "raw_cells": 336,
+    "raw_zero_cells": 84,
+    "raw_blank_cells": 0,
+    "raw_negative_cells": 8,
+    "summary_rows": 123,
+    "summary_D_to_J_blank_cells": 383,
+    "culture_G_to_J_finite_cells": 100,
+    "culture_G_to_J_finite_cells_reproduced": 100,
+    "culture_G_to_J_Inf_cells": 9,
+    "culture_G_to_J_blank_cells": 55,
+    "summary_group_means_SE_pairs_reproduced_after_negative_to_zero": 123
+  },
+  "selected_eu_cell_traces": [
+    {
+      "element": "Ag",
+      "raw_column": "AA",
+      "groups": {
+        "S.desiccabilis": {
+          "raw_cells": {
+            "AA6": 4.4915e-05,
+            "AA7": 3.1076e-05,
+            "AA8": 2.8746e-05
+          },
+          "raw_arithmetic_mean_se": [
+            3.4912333333333335e-05,
+            5.046359424817504e-06
+          ],
+          "nonnegative_transform_mean_se": [
+            3.4912333333333335e-05,
+            5.046359424817504e-06
+          ],
+          "summary_row": 7,
+          "summary_n": 3.0,
+          "summary_mean_ppm": 3.491233333333333e-05,
+          "summary_se_ppm": 5.046359424817504e-06,
+          "matches_raw_without_transform": true,
+          "matches_raw_after_replacing_negative_values_by_zero": true
+        },
+        "Rock": {
+          "raw_cells": {
+            "AA44": -0.366355846,
+            "AA45": -0.316820838,
+            "AA46": -0.243930162
+          },
+          "raw_arithmetic_mean_se": [
+            -0.30903561533333335,
+            0.035554977591959136
+          ],
+          "nonnegative_transform_mean_se": [
+            0,
+            0.0
+          ],
+          "summary_row": 294,
+          "summary_n": 3.0,
+          "summary_mean_ppm": 0.0,
+          "summary_se_ppm": 0.0,
+          "matches_raw_without_transform": false,
+          "matches_raw_after_replacing_negative_values_by_zero": true
+        },
+        "Non-bio": {
+          "raw_cells": {
+            "AA9": 2.9491e-05
+          },
+          "raw_arithmetic_mean_se": [
+            2.9491e-05,
+            0.0
+          ],
+          "nonnegative_transform_mean_se": [
+            2.9491e-05,
+            0.0
+          ],
+          "summary_row": 581,
+          "summary_n": 1.0,
+          "summary_mean_ppm": 2.9491e-05,
+          "summary_se_ppm": 0.0,
+          "matches_raw_without_transform": true,
+          "matches_raw_after_replacing_negative_values_by_zero": true
+        }
+      },
+      "reported_summary_cells": {
+        "G7": 1.183830095057249,
+        "H7": 0.1711152359980165,
+        "I7": "Inf",
+        "J7": null
+      },
+      "independently_reproduced_arithmetic_only": {
+        "biotic_over_abiotic": 1.183830095057249,
+        "se_ratio_single_abiotic_value": 0.1711152359980165,
+        "100_times_biotic_ppm_over_rock_ppm": "Inf",
+        "quadrature_se_of_that_numerical_ratio": "Inf"
+      }
+    },
+    {
+      "element": "B",
+      "raw_column": "D",
+      "groups": {
+        "S.desiccabilis": {
+          "raw_cells": {
+            "D6": 0.507624596,
+            "D7": 0.494308002,
+            "D8": 0.484699899
+          },
+          "raw_arithmetic_mean_se": [
+            0.49554416566666665,
+            0.006646590820201041
+          ],
+          "nonnegative_transform_mean_se": [
+            0.49554416566666665,
+            0.006646590820201041
+          ],
+          "summary_row": 21,
+          "summary_n": 3.0,
+          "summary_mean_ppm": 0.4955441656666666,
+          "summary_se_ppm": 0.006646590820201041,
+          "matches_raw_without_transform": true,
+          "matches_raw_after_replacing_negative_values_by_zero": true
+        },
+        "Rock": {
+          "raw_cells": {
+            "D44": -1.41393211,
+            "D45": -1.337976452,
+            "D46": -0.698752915
+          },
+          "raw_arithmetic_mean_se": [
+            -1.1502204923333332,
+            0.22679619744973328
+          ],
+          "nonnegative_transform_mean_se": [
+            0,
+            0.0
+          ],
+          "summary_row": 308,
+          "summary_n": 3.0,
+          "summary_mean_ppm": 0.0,
+          "summary_se_ppm": 0.0,
+          "matches_raw_without_transform": false,
+          "matches_raw_after_replacing_negative_values_by_zero": true
+        },
+        "Non-bio": {
+          "raw_cells": {
+            "D9": 0.451105363
+          },
+          "raw_arithmetic_mean_se": [
+            0.451105363,
+            0.0
+          ],
+          "nonnegative_transform_mean_se": [
+            0.451105363,
+            0.0
+          ],
+          "summary_row": 595,
+          "summary_n": 1.0,
+          "summary_mean_ppm": 0.451105363,
+          "summary_se_ppm": 0.0,
+          "matches_raw_without_transform": true,
+          "matches_raw_after_replacing_negative_values_by_zero": true
+        }
+      },
+      "reported_summary_cells": {
+        "G21": 1.098510916321486,
+        "H21": 0.01473400975771827,
+        "I21": "Inf",
+        "J21": null
+      },
+      "independently_reproduced_arithmetic_only": {
+        "biotic_over_abiotic": 1.0985109163214861,
+        "se_ratio_single_abiotic_value": 0.014734009757718268,
+        "100_times_biotic_ppm_over_rock_ppm": "Inf",
+        "quadrature_se_of_that_numerical_ratio": "Inf"
+      }
+    },
+    {
+      "element": "Ni",
+      "raw_column": "R",
+      "groups": {
+        "S.desiccabilis": {
+          "raw_cells": {
+            "R6": 0.005568196,
+            "R7": 0.004833007,
+            "R8": 0.003355254
+          },
+          "raw_arithmetic_mean_se": [
+            0.004585485666666667,
+            0.0006506991577481188
+          ],
+          "nonnegative_transform_mean_se": [
+            0.004585485666666667,
+            0.0006506991577481188
+          ],
+          "summary_row": 161,
+          "summary_n": 3.0,
+          "summary_mean_ppm": 0.004585485666666667,
+          "summary_se_ppm": 0.0006506991577481188,
+          "matches_raw_without_transform": true,
+          "matches_raw_after_replacing_negative_values_by_zero": true
+        },
+        "Rock": {
+          "raw_cells": {
+            "R44": 4.384378759,
+            "R45": -1.88386678,
+            "R46": -2.031698017
+          },
+          "raw_arithmetic_mean_se": [
+            0.15627132066666652,
+            2.114484405335848
+          ],
+          "nonnegative_transform_mean_se": [
+            1.4614595863333333,
+            1.4614595863333333
+          ],
+          "summary_row": 448,
+          "summary_n": 3.0,
+          "summary_mean_ppm": 1.461459586333333,
+          "summary_se_ppm": 1.461459586333333,
+          "matches_raw_without_transform": false,
+          "matches_raw_after_replacing_negative_values_by_zero": true
+        },
+        "Non-bio": {
+          "raw_cells": {
+            "R9": 0.002619703
+          },
+          "raw_arithmetic_mean_se": [
+            0.002619703,
+            0.0
+          ],
+          "nonnegative_transform_mean_se": [
+            0.002619703,
+            0.0
+          ],
+          "summary_row": 735,
+          "summary_n": 1.0,
+          "summary_mean_ppm": 0.002619703,
+          "summary_se_ppm": 0.0,
+          "matches_raw_without_transform": true,
+          "matches_raw_after_replacing_negative_values_by_zero": true
+        }
+      },
+      "reported_summary_cells": {
+        "G161": 1.750383790325341,
+        "H161": 0.2483866139589559,
+        "I161": 0.313760688940515,
+        "J161": 0.3169040071479419
+      },
+      "independently_reproduced_arithmetic_only": {
+        "biotic_over_abiotic": 1.7503837903253407,
+        "se_ratio_single_abiotic_value": 0.24838661395895598,
+        "100_times_biotic_ppm_over_rock_ppm": 0.313760688940515,
+        "quadrature_se_of_that_numerical_ratio": 0.3169040071479419
+      }
+    },
+    {
+      "element": "Pd",
+      "raw_column": "Z",
+      "groups": {
+        "S.desiccabilis": {
+          "raw_cells": {
+            "Z6": 6.023e-06,
+            "Z7": 3.859e-06,
+            "Z8": 3.388e-06
+          },
+          "raw_arithmetic_mean_se": [
+            4.423333333333333e-06,
+            8.113076550305137e-07
+          ],
+          "nonnegative_transform_mean_se": [
+            4.423333333333333e-06,
+            8.113076550305137e-07
+          ],
+          "summary_row": 175,
+          "summary_n": 3.0,
+          "summary_mean_ppm": 4.423333333333333e-06,
+          "summary_se_ppm": 8.113076550305137e-07,
+          "matches_raw_without_transform": true,
+          "matches_raw_after_replacing_negative_values_by_zero": true
+        },
+        "Rock": {
+          "raw_cells": {
+            "Z44": 0.001209043,
+            "Z45": 0.000979808,
+            "Z46": 0.001179119
+          },
+          "raw_arithmetic_mean_se": [
+            0.0011226566666666666,
+            7.194481130314015e-05
+          ],
+          "nonnegative_transform_mean_se": [
+            0.0011226566666666666,
+            7.194481130314015e-05
+          ],
+          "summary_row": 462,
+          "summary_n": 3.0,
+          "summary_mean_ppm": 0.001122656666666667,
+          "summary_se_ppm": 7.194481130314015e-05,
+          "matches_raw_without_transform": true,
+          "matches_raw_after_replacing_negative_values_by_zero": true
+        },
+        "Non-bio": {
+          "raw_cells": {
+            "Z9": 2.259e-06
+          },
+          "raw_arithmetic_mean_se": [
+            2.259e-06,
+            0.0
+          ],
+          "nonnegative_transform_mean_se": [
+            2.259e-06,
+            0.0
+          ],
+          "summary_row": 749,
+          "summary_n": 1.0,
+          "summary_mean_ppm": 2.259e-06,
+          "summary_se_ppm": 0.0,
+          "matches_raw_without_transform": true,
+          "matches_raw_after_replacing_negative_values_by_zero": true
+        }
+      },
+      "reported_summary_cells": {
+        "G175": 1.95809355171905,
+        "H175": 0.3591446016071331,
+        "I175": 0.3940058848505182,
+        "J175": 0.07655083114869972
+      },
+      "independently_reproduced_arithmetic_only": {
+        "biotic_over_abiotic": 1.9580935517190496,
+        "se_ratio_single_abiotic_value": 0.35914460160713313,
+        "100_times_biotic_ppm_over_rock_ppm": 0.39400588485051813,
+        "quadrature_se_of_that_numerical_ratio": 0.07655083114869969
+      }
+    },
+    {
+      "element": "Pt",
+      "raw_column": "AT",
+      "groups": {
+        "S.desiccabilis": {
+          "raw_cells": {
+            "AT6": 2.061e-06,
+            "AT7": 1.61e-06,
+            "AT8": 1.095e-06
+          },
+          "raw_arithmetic_mean_se": [
+            1.5886666666666667e-06,
+            2.790641105154473e-07
+          ],
+          "nonnegative_transform_mean_se": [
+            1.5886666666666667e-06,
+            2.790641105154473e-07
+          ],
+          "summary_row": 189,
+          "summary_n": 3.0,
+          "summary_mean_ppm": 1.588666666666667e-06,
+          "summary_se_ppm": 2.790641105154473e-07,
+          "matches_raw_without_transform": true,
+          "matches_raw_after_replacing_negative_values_by_zero": true
+        },
+        "Rock": {
+          "raw_cells": {
+            "AT44": 0.002802521,
+            "AT45": 0.001578807,
+            "AT46": 0.000926834
+          },
+          "raw_arithmetic_mean_se": [
+            0.0017693873333333335,
+            0.0005497851332057927
+          ],
+          "nonnegative_transform_mean_se": [
+            0.0017693873333333335,
+            0.0005497851332057927
+          ],
+          "summary_row": 476,
+          "summary_n": 3.0,
+          "summary_mean_ppm": 0.001769387333333333,
+          "summary_se_ppm": 0.0005497851332057927,
+          "matches_raw_without_transform": true,
+          "matches_raw_after_replacing_negative_values_by_zero": true
+        },
+        "Non-bio": {
+          "raw_cells": {
+            "AT9": 5.8e-07
+          },
+          "raw_arithmetic_mean_se": [
+            5.8e-07,
+            0.0
+          ],
+          "nonnegative_transform_mean_se": [
+            5.8e-07,
+            0.0
+          ],
+          "summary_row": 763,
+          "summary_n": 1.0,
+          "summary_mean_ppm": 5.8e-07,
+          "summary_se_ppm": 0.0,
+          "matches_raw_without_transform": true,
+          "matches_raw_after_replacing_negative_values_by_zero": true
+        }
+      },
+      "reported_summary_cells": {
+        "G189": 2.739080459770115,
+        "H189": 0.481145018130081,
+        "I189": 0.08978625746539008,
+        "J189": 0.03204797207160814
+      },
+      "independently_reproduced_arithmetic_only": {
+        "biotic_over_abiotic": 2.7390804597701157,
+        "se_ratio_single_abiotic_value": 0.48114501813008154,
+        "100_times_biotic_ppm_over_rock_ppm": 0.08978625746539012,
+        "quadrature_se_of_that_numerical_ratio": 0.032047972071608165
+      }
+    }
+  ],
+  "limits": [
+    "No physical inventory normalization verified.",
+    "No author processing rule or per-element detection limits acquired.",
+    "Single abiotic control does not estimate control variance.",
+    "No primary exact EU designation or supplier reconciliation identified in inspected corpus.",
+    "No formal Pt text/SI correction identified in bounded search.",
+    "No new experiment, mineral-specific pathway, isolated product or deployment inferred."
+  ],
+  "checks": [
+    {
+      "command": "python /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/analyze_eu.py",
+      "exit_code": 0,
+      "scope": "All extracted workbook cells; EU raw and summary arithmetic; no source changes"
+    },
+    {
+      "command": "independent finite stored-value assertions",
+      "exit_code": 0,
+      "scope": "100 of 100 finite EU culture G:J cells match calculations within rel_tol 1e-11, abs_tol 1e-18"
+    },
+    {
+      "command": "prior baseline: uv run --no-sync just check",
+      "exit_code": 0,
+      "scope": "327 passed, 3 skipped; 616 records; 744 history records",
+      "log_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-473-baseline-check.log",
+      "log_sha256": "dc83c67869a969b990d971d46ff8c4a7e7607dc5180dba9c850c1a0b65cc9c5e"
+    }
+  ],
+  "raw_artifact_manifest": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/Data_Sheet_1.xlsx",
+      "bytes": 1816,
+      "sha256": "e88db6edd42cd22b7ce9eed775d9c6e594899d78ccf06a561af218566ef8c3fc"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/Data_Sheet_2.pdf",
+      "bytes": 1817,
+      "sha256": "bec7fa1be9079512a6e2d0cf6698d0f4b145fc83b641364ec79a77e56a3f9e36"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquire.py",
+      "bytes": 1015,
+      "sha256": "4bed3014825fa7142b4a1d9b495e44691650f74a6551c4effd57518037eb8158"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-01.json",
+      "bytes": 9270,
+      "sha256": "9252f68e34540df4944244e16e943c4f00401025682029aba4050f1311d7d93b"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-02.json",
+      "bytes": 2964,
+      "sha256": "5172f48517a5ab3ac8a910f673f7ae056a0ad312139fa76dc9362a308bbd203d"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-03.json",
+      "bytes": 2484,
+      "sha256": "47e28f892916a673260b95c0e4bc485cf1156f27e717bd810bd7d74bd0758c4e"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-04.json",
+      "bytes": 2195,
+      "sha256": "38ace24d20fc226e09c59958ebfeafc064f8ecf426f65fe081f723f06922760d"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/acquisitions-05.json",
+      "bytes": 3785,
+      "sha256": "f1a52f72964495e88ea269c4d0047c17754f4afe53742fa6c80037739c9aca29"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/analyze_eu.py",
+      "bytes": 9192,
+      "sha256": "76aa1d9913b68f07d9789ee290c73191d607c2f16402e0d149f1a93cb38ba60a"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/article.html",
+      "bytes": 965377,
+      "sha256": "2cb414a09dd0ed7d8b54bd3e146676325a1f2fbb15b437ca00940f45c04aa291"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/article.pdf",
+      "bytes": 1836101,
+      "sha256": "cf994f738b6af0da509e3484648b74fd2d1d4736c58b233ef9fa4f1b9e604d51"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/article.txt",
+      "bytes": 107320,
+      "sha256": "a1b8e85626f441db78245bc66edb54276715c9e654eedfdc08545a9ed702ea54"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/cloud-Data_Sheet_1.xlsx",
+      "bytes": 89818,
+      "sha256": "251835847172558df677f4cd710bb0afd22e9e885460a45541288ca66a193b3c"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/cloud-Data_Sheet_2.pdf",
+      "bytes": 426414,
+      "sha256": "8593554309678f142ea9421108122a1562b9b12739a84ae9ec7bc87164e6c082"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/cloud-PMC13106364.1.json",
+      "bytes": 1376,
+      "sha256": "b5b93826d07b6d7b9e15c850d3958a9b735026a740966846f98158df9819c05a"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/crossref.json",
+      "bytes": 24244,
+      "sha256": "b8eb3332f8f4de2d0e88599a10bf6417984beb0d36da92b049ec6b8b6fb3f2e1"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/dedup-receipt.json",
+      "bytes": 826,
+      "sha256": "cd1177d7d22f512977e6d6745ec0e25163f81094a7bdb132a616f379b79fd97b"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/dedup-resume-receipt.json",
+      "bytes": 817,
+      "sha256": "99820e586a0f2da0de05d6b86197903f20d5498f5844e826d267b6b6bb22c436"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/dedup-resume-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/dedup-resume.txt",
+      "bytes": 73876,
+      "sha256": "e8d103d0d8993d86b54ccd838f42a2c333745cfcd541fb1b81a6cd865bf0ab97"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/dedup-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/dedup.txt",
+      "bytes": 73876,
+      "sha256": "4c8b69543b6ca34b6af34c76000678edb0b0a33001b9fa61c2ee234b7eae3ec0"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/edinburgh.html",
+      "bytes": 66996,
+      "sha256": "8aac554127440e6f98ba7ec08f8afb8896166c134eff07cf10435f033f8bf992"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/eu-recomputation.json",
+      "bytes": 106991,
+      "sha256": "720ee429bf1ed1c3c1fc01f8817a5b6fa174adfe4da63e029a0da80370425447"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/europepmc-supplements.zip",
+      "bytes": 875404,
+      "sha256": "5aac05bfbe8ee5bec716bd3d5bc02b1d87bffe39a635bfd9407029b342f47709"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/europepmc.xml",
+      "bytes": 169079,
+      "sha256": "6a18417fe87a188ca4e7b753f3d0b66399e5abfb81269e93590d6b8c38ae8d61"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/main-08.png",
+      "bytes": 891602,
+      "sha256": "cd589da59bb48b243f036beb21e8793b96929fc55575f74901bbc8cd839db9a4"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/main-09.png",
+      "bytes": 419648,
+      "sha256": "6e71b4ee2c8f687386796f2c81179891a5dff671076caa308d9b9f43f2af6ebe"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/open-02.json",
+      "bytes": 6031,
+      "sha256": "338cb27e61ed1a58e2b2491178df909b43a86e9fa9602f639293537c664144e3"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/open-04.json",
+      "bytes": 21522,
+      "sha256": "8d24eb2cc925f3e625449d0101cb0f689ac82c9142de0b2f643ae561a50277bc"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/open-05.json",
+      "bytes": 18523,
+      "sha256": "30f850ab2dda8df0bfea59624b1836cee8feb018e0b00278f20b91ecea076135"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/open-06.json",
+      "bytes": 16878,
+      "sha256": "6664df1440eb71e7d30295499e078584eb8320c9da123af25e7e4a5a3a5909a0"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/pmc-cloud-list.xml",
+      "bytes": 3416,
+      "sha256": "21cc8fe9055af003514b035837be4625b154e1ac9f9b4e4a67bbecc78aa7ed24"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/pmc-cloud-readme.txt",
+      "bytes": 14524,
+      "sha256": "257a001b400485176702ed49ca7607d73cd83c581bffb6dd3c9be127a2e42634"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/pmc.html",
+      "bytes": 261433,
+      "sha256": "c1b72b1e3080733e2898d6a76dc3876fb85422cd2f56e96f4ab31d5409c098ac"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/receipt-Data_Sheet_1.xlsx.json",
+      "bytes": 1454,
+      "sha256": "10f8d8b4fe0b3f13dab696d80d3a70934526ef22af1cccb074800e8f7562bd82"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/receipt-Data_Sheet_2.pdf.json",
+      "bytes": 1381,
+      "sha256": "01dff53332d8f00dec384be6f8b394f6c63a20a924337c515ceb5e6e5b641075"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/receipt-article.html.json",
+      "bytes": 1359,
+      "sha256": "c71fb873488d2fbf181f0ed58cbaf0d83159688636afe16595adffdca8a6dc53"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/receipt-article.pdf.json",
+      "bytes": 1733,
+      "sha256": "d0cf681228c11225b854b3a7e5921c2dff7104ceb5ab4d7d56be73794a58f895"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/receipt-cloud-Data_Sheet_1.xlsx.json",
+      "bytes": 1247,
+      "sha256": "bb9f9377c74785a00f9aeb45f20eb0cd29a1dd4eb11c320e366d3dceb8a7af55"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/receipt-cloud-Data_Sheet_2.pdf.json",
+      "bytes": 1181,
+      "sha256": "cde8b04d7df81475da14aee7a0eba9b05b36b4f4ca71107050ee46b5a42c47ce"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/receipt-cloud-PMC13106364.1.json.json",
+      "bytes": 1199,
+      "sha256": "db3a4b129b44265c0710b6357286792491b64596cfaab4e0ec0932fe59f058f3"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/receipt-crossref.json.json",
+      "bytes": 1337,
+      "sha256": "b5299dbfef587a78bff28c495d07fc1811981adb142f73bfc000c707eb4fbf9d"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/receipt-edinburgh.html.json",
+      "bytes": 2965,
+      "sha256": "5d7fb125b916f298e6fa2ee06bdc15930f1d926cf32ec79e18f8c988eb6fd4f3"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/receipt-europepmc-supplements.zip.json",
+      "bytes": 1306,
+      "sha256": "f6862c2ffac1f9091c6b39fe881b66d71a8f0b30124bce9a6a49afc69d99f480"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/receipt-europepmc.xml.json",
+      "bytes": 1083,
+      "sha256": "c1f99ecbc0fbe738f34f0cdea20ba54f732b2b98545934f63bcb2aae5a94ebaa"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/receipt-pmc-cloud-list.xml.json",
+      "bytes": 1007,
+      "sha256": "8194cced57c486a7188116c8187981b5e8c5437fe36088e3c638aa642eaf8f19"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/receipt-pmc-cloud-readme.txt.json",
+      "bytes": 1089,
+      "sha256": "2819e4719faf39cf6d40b5c16bee9e0c433d46229fac106862cd1b833ce2e243"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/receipt-pmc.html.json",
+      "bytes": 1528,
+      "sha256": "e554028e59154aa36edf9faeade79c3669c7edc849e884cf069833da40b3fc31"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/render-main.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/render-si.log",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/routes-01.json",
+      "bytes": 579,
+      "sha256": "a3316b8219fa8554a7f856e4a5d6b5efc744d823197cb9f3270fcf5338db4d05"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/routes-02.json",
+      "bytes": 237,
+      "sha256": "9c01dc816fa0274827ebbb832b9c3569a0c1c3de61d1eaf33b3f9987c3ea4bc4"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/routes-03.json",
+      "bytes": 240,
+      "sha256": "d60f71f9fd38587c6856708f02cf6f5a530bb2eb88a6d01e62a870d79f7ba023"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/routes-04.json",
+      "bytes": 213,
+      "sha256": "a2a94887ed3c7e161a404f3ef9d3dbe9c7901b9abdb53f7d783094b87aef8b7b"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/routes-05.json",
+      "bytes": 360,
+      "sha256": "ff317ab15a00ca9dafbf0ec3ef4350e6e9bf45846738bfeb21f42c590a77a1be"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/search-07.json",
+      "bytes": 31229,
+      "sha256": "60e89a70af731f8181f0f14dc3bce462b31fea7c05d8db06657f57cc8b38805d"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/search-open-01.json",
+      "bytes": 30623,
+      "sha256": "1e11821f9deec0a7ac142c87ed8e9ce1c9663812cf4762c03fc7b37b27560f6a"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/search-open-03.json",
+      "bytes": 31417,
+      "sha256": "585fc83d43bc892558fc0d248bb794588e85debd8e555bd66eda260f2680424a"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/search-resume-08.json",
+      "bytes": 30185,
+      "sha256": "f80aae6604570f8f40fc1f8977dead07279cfb93cfe76d3e789e2f39d20a3360"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/si-07.png",
+      "bytes": 277330,
+      "sha256": "15027a36062c28ebb5b188205ffe78a29499e00f80a9fd168112f31094ae4240"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/si-08.png",
+      "bytes": 208844,
+      "sha256": "958389f3c964d93ad72d99914fdb01fd14cf0fe05e64d73e1aa3ae207dc4758e"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/supplement-cross-route-verification.json",
+      "bytes": 525,
+      "sha256": "1ca2d0e487c7095e9c28b0beb4400fc74f9d44bd63d3607fb84ffb8203b45f8c"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/supplement.txt",
+      "bytes": 26956,
+      "sha256": "a7786c6c87eebb25328ad980e253c60f7b8df7d30eea5501561f884a584e66d4"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/workbook-cells.json",
+      "bytes": 1041738,
+      "sha256": "1f5a51233070dcf4e3b7fa7a5bc1d0286b468543bd799d021ef865fa57f187ce"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/workbook-inventory.json",
+      "bytes": 216,
+      "sha256": "0a45af1a3c183e4f57009127833939e6308f3ec086b8cc8a4f4dc439937e532b"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-473/write_handoff.py",
+      "bytes": 18871,
+      "sha256": "5c8b8c1c79e678598da3d0a47ffe1f2098184efda1ea091d7e67b355f095b80d"
+    }
+  ],
+  "report": {
+    "path": "research/sources/issue-473-eucrite-specimen-supplements/20261021T063738Z.md",
+    "sha256": "7e70ea3794d870e91504a1f2d51a2a2995299309dc79ba9251884fcbda630291"
+  }
+}

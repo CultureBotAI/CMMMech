@@ -1,0 +1,503 @@
+schema_version: 1.0.0
+review_id: 20261021T065011Z-eucrite-supplements-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of eucrite supplement reconciliation
+started_at: '2026-10-21T06:43:51Z'
+finished_at: '2026-10-21T06:50:11Z'
+reviewer:
+  identity: codex /root/resume_405
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: 'Root authored the frozen owner/history; a separate source agent
+    prepared the #473 handoff. This reviewer authored only an unrelated #405 source
+    handoff, independently inspected original primary sources and recalculated EU
+    workbook summaries, and made no owner or history changes.'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The frozen eucrite owner accurately adds authenticated EU supplements, preserves
+  the 2.47 versus 2.74 platinum-ratio conflict, and bounds negative-value handling,
+  unit normalization, missingness, specimen provenance and control limits. Independent
+  source inspection and recalculation support the narrow culture-associated mobilization
+  observation. No corrective curator finding was established.
+source:
+  git_revision: 2da10d95a72146ee0c69cb91fe303348fbadb638
+  state: working_tree
+  inputs:
+  - path: data/records/eucrite-meteorite.yaml
+    sha256: d525ee8e68c583b0bf24a5b4055e354d86fd96eda961acee21d3e3e4d13d7021
+    role: target
+  - path: history/records/eucrite-meteorite/2026-10-16T051458Z-codex-678910.yaml
+    sha256: 40a2c5bda8979dbe6bb717e6e8e7681a31c0dc847748deb673b2374c4efdacdf
+    role: context
+  - path: history/records/eucrite-meteorite/2026-10-21T064202Z-codex-4c0427.yaml
+    sha256: f2488db1af76038660d80f29ed59535b8e7a6e47ccf160359ea72edc07767780
+    role: context
+  - path: research/sources/issue-473-eucrite-specimen-supplements/20261021T063738Z-evidence.json
+    sha256: da980cbc0d8cc1528a4947c0c2fd4b6c96b2c3c210507fe2e1838f42e9298f3a
+    role: context
+  - path: research/sources/issue-473-eucrite-specimen-supplements/20261021T063738Z.md
+    sha256: 7e70ea3794d870e91504a1f2d51a2a2995299309dc79ba9251884fcbda630291
+    role: context
+  - path: reviews/structured/20261016T052630Z-eucrite-meteorite-round112-final/review.yaml
+    sha256: 9e525eb5e4186d2b427ebc242e9abbc34c70a27b118a07ee3ab0d6dfad1b242b
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+targets:
+- target_id: cmmmech:eucrite-meteorite
+  path: data/records/eucrite-meteorite.yaml
+  label: Eucrite meteorite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/eucrite-meteorite.yaml
+    role: maintained_record
+scope:
+  description: Full scientific assessment of the one frozen maintained EU owner, exact
+    history and source context, using complete primary paper and both acquired supplements.
+  selection: 'Explicitly assigned independent review of root-authored #473 owner update.'
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:eucrite-meteorite
+  exclusions:
+  - target: Other rock arms and historical experiments
+    reason: Context only; no other owner is scientifically accepted by transfer.
+  - target: Generated pages and publication
+    reason: Handled by the coordinator; not the scientific target.
+checks:
+- check_id: named
+  name: Independent named-record validation
+  status: passed
+  required: true
+  summary: Checked 1 record; 0 failed. independent session54246.
+  target_ids:
+  - cmmmech:eucrite-meteorite
+  command: uv run --no-sync cmmmech validate data/records/eucrite-meteorite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gates
+- check_id: strict
+  name: Independent strict corpus validation
+  status: passed
+  required: true
+  summary: Checked 616 records; 0 failed. independent session54246.
+  target_ids:
+  - cmmmech:eucrite-meteorite
+  command: uv run --no-sync cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gates
+- check_id: history
+  name: Independent history validation against reviewed base
+  status: passed
+  required: true
+  summary: Checked 745 history records; 0 errors. independent session54246.
+  target_ids:
+  - cmmmech:eucrite-meteorite
+  command: uv run --no-sync cmmmech validate-history --base 2da10d95a72146ee0c69cb91fe303348fbadb638
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gates
+- check_id: batch
+  name: Coordinator completed final batch gate
+  status: passed
+  required: true
+  summary: 327 passed, 3 empty-parameter skips; 616 records and 745 histories valid.
+    root confirmed session78480 exit 0; reviewer independently read complete log.
+  target_ids:
+  - cmmmech:eucrite-meteorite
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gates
+- check_id: diff
+  name: Independent whitespace and conflict-marker check
+  status: passed
+  required: true
+  summary: Exit 0 on the frozen owner state. independent terminal result.
+  target_ids:
+  - cmmmech:eucrite-meteorite
+  command: git diff --check
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gates
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/eucrite-meteorite.yaml
+  locator: Whole maintained owner, working diff, both canonical history sessions and
+    source handoff; native inspect captured exact bytes before assessment.
+  summary: Frozen owner d525ee8e...7021 preserves one EU resource and qualified culture-associated
+    mobilization. Reviewer made no owner or history edits.
+  accessed_at: '2026-10-21T06:50:11Z'
+  support: supports
+  snapshot_sha256: d525ee8e68c583b0bf24a5b4055e354d86fd96eda961acee21d3e3e4d13d7021
+- evidence_id: main
+  kind: primary_source
+  reference: https://www.frontiersin.org/journals/microbiology/articles/10.3389/fmicb.2026.1741305/full
+  locator: Complete fourteen-page PDF; Methods 2.1–2.10, Tables 1–2, EU-specific Results
+    3.4 pp8–9, Figure 4B, Discussion and Acknowledgments. Original pp8–9 visually
+    inspected.
+  summary: Terrestrial 30-day culture experiment supports the bounded observation.
+    The main text reports Pt ratio 2.47 ± 0.48. Table 1 Skylab (US) and acknowledgment
+    SkyFall Meteorites do not resolve an exact EU meteorite accession.
+  accessed_at: '2026-10-21T06:50:11Z'
+  support: supports
+  snapshot_sha256: cf994f738b6af0da509e3484648b74fd2d1d4736c58b233ef9fa4f1b9e604d51
+- evidence_id: si
+  kind: primary_source
+  reference: https://pmc-oa-opendata.s3.amazonaws.com/PMC13106364.1/Data_Sheet_2.pdf
+  locator: 'Twelve-page supplement: EU rows Tables S1–S8 and p12 workbook dictionary;
+    original S5 p7 and S6 p8 visually inspected.'
+  summary: S5 gives Pt 0.0898 ± 0.032 percent endpoint, S6 Pt ratio 2.74 ± 0.48 and
+    Pd 1.96 ± 0.36. NA/NL definitions combine distinct zero or missing conditions;
+    dictionary does not supply censoring or dilution rules.
+  accessed_at: '2026-10-21T06:50:11Z'
+  support: supports
+  snapshot_sha256: 8593554309678f142ea9421108122a1562b9b12739a84ae9ec7bc87164e6c082
+- evidence_id: workbook
+  kind: primary_source
+  reference: https://pmc-oa-opendata.s3.amazonaws.com/PMC13106364.1/Data_Sheet_1.xlsx
+  locator: Both original worksheets parsed independently with openpyxl; all 336 EU
+    numeric raw cells in rows 6–9 and 44–46, all 123 EU summary groups, Pt AT6:AT9/AT44:AT46
+    and summary G189:J189; Pd summary G175:J175.
+  summary: Culture, single abiotic control and bulk characterization are distinct
+    source roles. No formulas are present. Both roles use ppm labels despite different
+    main-text analytical descriptions. Eight negative bulk cells occur for B, Ag and
+    Ni.
+  accessed_at: '2026-10-21T06:50:11Z'
+  support: supports
+  snapshot_sha256: 251835847172558df677f4cd710bb0afd22e9e885460a45541288ca66a193b3c
+- evidence_id: arithmetic
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-473-independent/independent-arithmetic.json
+  locator: Independent original-XLSX calculation in recompute.py; 123 group means
+    and standard errors checked; Pt/Pd G:J recomputed separately. Archive members
+    compared byte for byte.
+  summary: All 123 group means/SE match after explicit negative-to-zero substitution.
+    Pt ratio 2.73908046 ± 0.48114502 and endpoint 0.08978626 ± 0.03204797 percent
+    reproduce; Pd ratio 1.95809355 ± 0.35914460. The arithmetic does not validate
+    unit normalization or establish an author-described censoring policy.
+  accessed_at: '2026-10-21T06:50:11Z'
+  support: supports
+  snapshot_sha256: ad93790f9ed464b3751178b840e2db446fb8166cfc96d02aa0f14fad85fe0b4b
+- evidence_id: authentication
+  kind: authority
+  reference: https://pmc-oa-opendata.s3.amazonaws.com/PMC13106364.1/PMC13106364.1.json
+  locator: Official PMC13106364.1 metadata inspected; DOI/title/version and supplement
+    names/checksums matched; Europe PMC ZIP members independently compared.
+  summary: Workbook SHA256 25183584...93b3c and SI SHA256 85935543...e6c082 match
+    the Europe PMC members. Their independently calculated MD5 values match the NLM
+    metadata. Mirrors authenticate the same experiment, not replication.
+  accessed_at: '2026-10-21T06:50:11Z'
+  support: supports
+  snapshot_sha256: b5b93826d07b6d7b9e15c850d3958a9b735026a740966846f98158df9819c05a
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=429134
+  locator: Official NCBI indexed result for taxid429134 inspected on 21 October 2026;
+    direct requests had incomplete content/timeouts. Search result retained locally.
+  summary: NCBI labels Sphingomonas desiccabilis a species and lists CP1D/DSM16792
+    among type-strain designations. This validates species scope, not the actual experimental
+    stock.
+  accessed_at: '2026-10-21T06:50:11Z'
+  support: supports
+  snapshot_sha256: 4d2cb647ddfed6b5bbe88bb319f4045346f60428d8be07d2ff2f3eafe105b288
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-473-independent/web-recheck.txt
+  locator: 'Two bounded web queries: exact DOI 10.3389/fmicb.2026.1741305 with correction/corrigendum/retraction;
+    exact article-title phrase with eucrite/SkyFall. Official publisher page and returned
+    indexed records inspected; not an exhaustive literature or supplier search.'
+  summary: No formal notice or exact EU accession surfaced in these returned results.
+    This search does not resolve the Pt discrepancy or supplier wording and does not
+    certify global absence.
+  accessed_at: '2026-10-21T06:50:11Z'
+  support: context_only
+  snapshot_sha256: 673822282b1b79c4d5f6b1d7050547539d50efd415378ac971f0ed5a43f3bdb0
+  search_scope: 'Two bounded web queries: exact DOI 10.3389/fmicb.2026.1741305 with
+    correction/corrigendum/retraction; exact article-title phrase with eucrite/SkyFall.
+    Official publisher page and returned indexed records inspected; not an exhaustive
+    literature or supplier search.'
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-473-independent/dedup.json
+  locator: rg --no-ignore --hidden --follow -n eucrite|1741305|Tonietti|SkyFall|Skylab
+    over data, research, reviews, history, docs, .claude and .agents; 202 matching
+    lines, no stderr. Hidden and ignored files included and symlinks followed.
+  summary: Matched prior eucrite review and related source/history references. The
+    historical eucrite review has no findings; no terminal finding disposition is
+    being invented. Dedicated owner remains the assigned EU record in these bounded
+    roots.
+  accessed_at: '2026-10-21T06:50:11Z'
+  support: context_only
+  snapshot_sha256: 08b133b7dcf8bfe23a278502377708fda417f60586bb602a6d0bd6fa72b963b8
+  search_scope: rg --no-ignore --hidden --follow -n eucrite|1741305|Tonietti|SkyFall|Skylab
+    over data, research, reviews, history, docs, .claude and .agents; 202 matching
+    lines, no stderr. Hidden and ignored files included and symlinks followed.
+- evidence_id: historical
+  kind: prior_review
+  reference: reviews/structured/20261016T052630Z-eucrite-meteorite-round112-final/review.yaml
+  locator: Full prior native review and relevant related matches from ignored-inclusive
+    search.
+  summary: Earlier review was pass_with_limitations with findings empty; its unavailable-supplement
+    limitation was true for that round. This new assessment adds acquired-source evidence
+    without rewriting the prior observation.
+  accessed_at: '2026-10-21T06:50:11Z'
+  support: context_only
+  snapshot_sha256: 9e525eb5e4186d2b427ebc242e9abbc34c70a27b118a07ee3ab0d6dfad1b242b
+- evidence_id: provenance
+  kind: record_content
+  reference: history/records/eucrite-meteorite/2026-10-21T064202Z-codex-4c0427.yaml
+  locator: Current EDIT sidecar, distinct inline EDIT event and unchanged CREATE history;
+    sidecars validated against 2da10d95a72146ee0c69cb91fe303348fbadb638.
+  summary: Actual root curation session records authenticated supplements and unresolved
+    conflicts. Source handoff statements about an unchanged owner describe its earlier
+    source-investigation freeze, not this later owner edit.
+  accessed_at: '2026-10-21T06:50:11Z'
+  support: supports
+  snapshot_sha256: f2488db1af76038660d80f29ed59535b8e7a6e47ccf160359ea72edc07767780
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-473-independent/validation.json
+  locator: Actual independent named, strict, history and diff-check terminal receipts;
+    independently read coordinator final check and canonical logs.
+  summary: Independent structural checks passed; coordinator just check completed
+    with 327 passed, 3 skips, 616 records and 745 histories valid. Canonical log has
+    22 matches. Structural gates do not certify scientific accuracy.
+  accessed_at: '2026-10-21T06:50:11Z'
+  support: supports
+  snapshot_sha256: a633b86fdd6854e956069010e6012eb9fa39af9480688acb2b137a7fa9724e44
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Natural resource and specimen identity
+  outcome: supported
+  summary: The owner correctly denotes the study EU eucrite material and retains unresolved
+    specimen provenance.
+  details: Basaltic achondritic feed is distinct from L-chondrite, terrestrial basalt
+    and pure minerals. Plagioclase/pyroxene dominance with minor olivine/quartz matches
+    Table 2. Vesta is source attribution; neither supplier wording nor the supplements
+    establishes an exact meteorite/accession. Table 2 percent m/V is flagged rather
+    than silently corrected.
+  target_ids:
+  - cmmmech:eucrite-meteorite
+  evidence_ids:
+  - owner
+  - main
+  - si
+  - dedup
+  dimensions:
+  - name: material_form
+    value: Natural EU eucrite meteorite feed
+    definition: Experimental primary resource, not an elemental commodity or mineral
+      species.
+    evidence_ids:
+    - owner
+    - main
+  - name: criticality
+    value: No resource-level designation asserted
+    definition: No authority, jurisdiction, list or edition is inherited from trace-element
+      constituents.
+    evidence_ids:
+    - owner
+- assessment_id: organism
+  area: grounding
+  topic: Living strain and identifier scope
+  outcome: supported
+  summary: The species CURIE and experimental strain designation are used at their
+    correct scopes.
+  details: NCBITaxon:429134 identifies Sphingomonas desiccabilis. CP1D and DSMZ procurement
+    come from the study methods; the taxon record does not authenticate the culture
+    stock or imply a gene-level causal pathway.
+  target_ids:
+  - cmmmech:eucrite-meteorite
+  evidence_ids:
+  - owner
+  - main
+  - taxonomy
+  dimensions:
+  - name: organism_strain
+    value: Sphingomonas desiccabilis CP1D
+    definition: Study organism and strain; species taxid429134 is not a strain-specific
+      identifier.
+    evidence_ids:
+    - main
+    - taxonomy
+  - name: biomass_state
+    value: Living culture
+    definition: M9-grown cells incubated with EU; no dead-biomass mechanism is inferred.
+    evidence_ids:
+    - owner
+    - main
+- assessment_id: protocol
+  area: consistency
+  topic: Experimental treatment and controls
+  outcome: supported
+  summary: The reported substrate treatment, medium, incubation and replicate structure
+    match primary methods.
+  details: Fragments ≤1 mm; 0.15 g rock in 25 mL glass tubes; 250 °C for four hours;
+    15 mL M9 with 2% m/V glucose and 1% w/v pulp; starting OD600 0.039 ± 0.006; static
+    25 °C for 30 days. Day-30 liquid was centrifuged 5000 rpm for five minutes and
+    supernatant acidified to 4% v/v HNO3 for ICP-MS/OES. Bulk characterization samples
+    are not documented paired culture inventories.
+  target_ids:
+  - cmmmech:eucrite-meteorite
+  evidence_ids:
+  - owner
+  - main
+  - workbook
+  dimensions:
+  - name: controls
+    value: Three cultured replicates, one abiotic control per rock, plus rock-free
+      cultures
+    definition: Single control cannot estimate control variability; rock-free growth
+      controls answer a distinct question.
+    evidence_ids:
+    - main
+    - workbook
+- assessment_id: quantities
+  area: quantity
+  topic: Conflicting platinum ratio and reproducible numerical summaries
+  outcome: supported
+  summary: The edit accurately preserves the main-text 2.47 versus supplement 2.74
+    platinum ratio conflict.
+  details: Main pp8–9 report (8.98 ± 3.20) ×10^-2% and ratio 2.47 ± 0.48. Workbook
+    and SI support 2.73908046 ± 0.48114502 and the rounded 2.74 ± 0.48; independent
+    arithmetic also reproduces the 0.08978626 ± 0.03204797 percent summary. Ratio
+    SE uses cultured-sample SE and a single control. Pd 1.95809355 ± 0.35914460 remains
+    below the arbitrary twofold threshold. This is not a formal correction, inferential
+    significance test or kinetic rate.
+  target_ids:
+  - cmmmech:eucrite-meteorite
+  evidence_ids:
+  - owner
+  - main
+  - si
+  - workbook
+  - arithmetic
+  dimensions:
+  - name: outcome
+    value: Culture-associated liquid-phase elemental mobilization
+    definition: Endpoint summaries and cultured/abiotic ratios; no isolated-product
+      yield or statistically replicated control contrast.
+    evidence_ids:
+    - owner
+    - main
+    - si
+    - arithmetic
+- assessment_id: processing
+  area: evidence
+  topic: Units, censoring and missingness remain bounded
+  outcome: supported
+  summary: The record avoids importing ambiguous concentrations as verified physical
+    inventory fractions.
+  details: All 123 EU mean/SE groups were independently recomputed. Eight negative
+    B/Ag/Ni bulk cells require zero substitution to reproduce affected summaries,
+    but that does not prove a stated censoring policy or LOD. Raw EU cells contain
+    84 literal zeros and no blanks; summary blank/Inf cells and SI NA/NL are distinct
+    representations. Both workbook source roles are labeled ppm while main methods
+    describe liquid-to-chamber conversion; missing dilution and normalization details
+    leave mass balance unverified. Only Pt/Pd derived G:J quantities were independently
+    rederived in this review.
+  target_ids:
+  - cmmmech:eucrite-meteorite
+  evidence_ids:
+  - owner
+  - main
+  - si
+  - workbook
+  - arithmetic
+  dimensions: []
+- assessment_id: causality
+  area: scope
+  topic: Causal pathway, pellet exclusion and deployment limits
+  outcome: supported
+  summary: The narrow mechanism description is supported without promoting speculative
+    pathways or recovered product.
+  details: The unassayed pellet prevents complete biomass/rock accounting. A prior-study
+    biomass fraction is not a measurement here. Biofilm/local-complexation/ligand
+    explanations remain hypotheses without direct causal ligand assay or verified
+    mineral-specific dissolution for EU. This is terrestrial laboratory work; no ISS
+    experiment, industrial demonstration or space-mining deployment is asserted.
+  target_ids:
+  - cmmmech:eucrite-meteorite
+  evidence_ids:
+  - owner
+  - main
+  - si
+  dimensions:
+  - name: deployment
+    value: Terrestrial laboratory experiment
+    definition: No microgravity treatment, pilot recovery or industrial deployment
+      demonstrated.
+    evidence_ids:
+    - owner
+    - main
+- assessment_id: provenance
+  area: provenance
+  topic: Exact-byte review and canonical history
+  outcome: supported
+  summary: The current owner, actual curation history and completed gates are accurately
+    recorded.
+  details: 'Native inspect captured all owner/context inputs before substantive assessment;
+    they still match at review completion. Current EDIT records root-authored supplement
+    reconciliation; earlier CREATE is unchanged. Independent reviewer wrote only this
+    review and unrelated #405 source handoff. Historical eucrite review has zero findings,
+    so no earlier defect is silently closed. The newly available supplements change
+    evidence access, not the historical truth of the earlier access limitation.'
+  target_ids:
+  - cmmmech:eucrite-meteorite
+  evidence_ids:
+  - owner
+  - provenance
+  - historical
+  - gates
+  - notices
+  dimensions: []
+findings: []
+actions: []
+limitations:
+- Exact EU meteorite name/accession and Skylab versus SkyFall supplier wording remain
+  unresolved; Vesta is a source attribution.
+- The main-text 2.47 and supplement 2.74 Pt ratios conflict. Reproducible arithmetic
+  is not a formal correction or proof of physical inventory normalization.
+- Both workbook source roles are labeled ppm; dilution and normalization details,
+  negative-value censoring rules and detection limits remain unverified. Blank, zero,
+  Inf, NA and NL must not be treated as equivalent.
+- One abiotic replicate cannot estimate control variance. The twofold criterion is
+  arbitrary, not inferential statistical significance.
+- No separate pellet/biomass accounting, direct causal ligand assay, authenticated
+  experimental stock, isolated product or independent experimental replication was
+  established.
+- Notice and duplicate searches were bounded; direct NCBI requests were incomplete
+  or timed out, with species scope verified from the official indexed result. Only
+  Pt/Pd derived G:J summaries were independently recalculated.
+notes:
+- No owner, history or prior review was edited. Raw primary files and independent
+  arithmetic remain in the hashed external source/review directories.
+- The previous review had no findings to reconcile. This new observation documents
+  improved supplementary access without rewriting its historical limitations.
+- Coordinator final just-check exit was confirmed by root and its complete log independently
+  read; named, strict, history and diff checks were independently executed.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261016T052630Z-eucrite-meteorite-round112-final
+  relationship: Follow-up whole-owner scientific assessment after supplementary access;
+    historical review had no findings and remains unchanged.
+tags:
+- eucrite
+- issue-473
+- independent
+- supplements
