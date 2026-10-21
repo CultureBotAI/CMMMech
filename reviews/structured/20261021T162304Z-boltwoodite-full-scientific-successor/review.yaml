@@ -1,0 +1,630 @@
+schema_version: 1.0.0
+review_id: 20261021T162304Z-boltwoodite-full-scientific-successor
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent full scientific review of corrected boltwoodite and explicit unit-finding
+  resolution
+started_at: '2026-10-21T16:14:31.156663Z'
+finished_at: '2026-10-21T16:23:04.756112Z'
+reviewer:
+  identity: codex /root/resume_405
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored source/owner correction and acquired the new deposit;
+    peer473 authored the initial scoped finding. This reviewer edited neither author
+    inputs nor owner and independently inspected all original scoped images, native
+    contents, calculations, exact preserved predecessors and final gates.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The entire corrected boltwoodite owner is supported within its explicit source
+  and assay limits. Major 440-R1 is resolved against exact original table units and
+  unchanged values. New 2025 SI/CIF remains research-only; no new finding.
+source:
+  git_revision: 1296ee20f2595d7d6a50e391f611c22435418906
+  state: working_tree
+  inputs:
+  - path: data/records/boltwoodite.yaml
+    sha256: 0aaf60e41738d99dca2e8827a5cbd0dbd9942cc414bc7a48813972d97f9f0637
+    role: target
+  - path: history/records/boltwoodite/2026-10-21T161230Z-codex-f6129a.yaml
+    sha256: 57a6b8e85004537cc777cb4aaa9cc9abf094d55fdf041c9537223948321718a0
+    role: context
+  - path: research/sources/issue-440-boltwoodite-originals/20261021T161349Z-evidence.json
+    sha256: 629e36ac8a6aa841dcc614e4bd1f70c850e63255d7ac5f90246fde7f48c2673c
+    role: context
+  - path: research/sources/issue-440-boltwoodite-originals/20261021T161349Z.md
+    sha256: 53cc231ac021d6c2e999900c8dd172fd52d751f192f279969ab98630e5ba58cb
+    role: context
+  - path: reviews/structured/20261016T025741Z-boltwoodite-round109-independent/review.yaml
+    sha256: 930eb053c2ce6bca91d04892603feebb75d269b99d6dc9e9966de2f54e99d763
+    role: context
+  - path: reviews/structured/20261021T160848Z-boltwoodite-unit-initial-independent/review.yaml
+    sha256: aae860b43910f578e46dbb6b603d11650c80a4945d9108f86e13942e9924bb02
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+targets:
+- target_id: cmmmech:boltwoodite
+  path: data/records/boltwoodite.yaml
+  label: Boltwoodite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/boltwoodite.yaml
+    role: maintained_record
+scope:
+  description: Full corrected boltwoodite owner and history, frozen source pair, complete
+    available 1997/1998 originals and specified 2025 deposited/native evidence. No
+    full-main or refinement claim beyond acquired sources.
+  selection: Parent assigned exact frozen owner/source; native inspect captured working-tree
+    inputs before judgment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:boltwoodite
+checks:
+- check_id: named
+  name: Independent named record validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/boltwoodite.yaml --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual reviewer subprocess exit 0; one record, no failures.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - named
+- check_id: full
+  name: Completed full batch gate
+  required: true
+  status: passed
+  command: env UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache
+    UV_OFFLINE=1 just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Author actual 67486 exit 0; 363 passed and 3 skipped, 616 records and 745
+    histories; exact logs inspected.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - gates
+- check_id: corpus
+  name: Completed required corpus validation
+  required: true
+  status: passed
+  command: env UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache
+    UV_OFFLINE=1 uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Author actual 51695 exit 0, 616 records. Parent confirmed exact invocation
+    and cwd; log hash verified.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - gates
+- check_id: history
+  name: Completed required history validation
+  required: true
+  status: passed
+  command: env UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache
+    UV_OFFLINE=1 uv run --locked cmmmech validate-history --base 1296ee20f2595d7d6a50e391f611c22435418906
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Author actual 61169 exit 0, 745 histories. Parent confirmed exact invocation
+    and cwd; preserved CREATE unchanged.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - gates
+  - history
+- check_id: canonical
+  name: Unchanged governed-input canonical gate
+  required: true
+  status: passed
+  command: bash scripts/check_vendored_sync.sh
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Author actual 3894 exit 0, 22 matches, explicitly reused; this review does
+    not claim a new invocation.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - gates
+  - integrity
+- check_id: integrity
+  name: Independent frozen-byte and archive checks
+  required: true
+  status: passed
+  command: python3 /private/tmp/cmmmech-backlog-20261019-fmj36s/review-440-final-independent/integrity-check.py
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual independent terminal 11439 exit 0, chunk a3f5da; 827 assertions/427
+    paths and 195 preserved files.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - integrity
+- check_id: numeric
+  name: Independent original-cell and CIF audit
+  required: true
+  status: passed
+  command: python3 /private/tmp/cmmmech-backlog-20261019-fmj36s/review-440-final-independent/numeric-check.py
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual exit 0, chunk 87b115. Reviewer parser-development attempts retained;
+    final original-byte checks pass.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - numbers
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-440/data/records/boltwoodite.yaml
+  locator: Entire corrected owner, captured by native inspect before judgment; retained
+    file /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-440/data/records/boltwoodite.yaml
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: 0aaf60e41738d99dca2e8827a5cbd0dbd9942cc414bc7a48813972d97f9f0637
+  support: supports
+  summary: All identity and mechanism claims independently reviewed against original
+    sources; seven values unchanged and corrected amount unit explicit.
+- evidence_id: vochten
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/cm/vol35/CM35_735.pdf
+  locator: All seven original pages 735–741, Tables 1–4, Figures 1–3; especially p736
+    preparation, p737 compositions, p739 Table 3 and methods, p740 silica/speciation
+    limits; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-440/vochten1997.pdf
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: e1318999e81c0e2da373a60798c71675b279b42c6ac4c29fa4a2af188cd5658d
+  support: supports
+  summary: Separate synthetic preparation, prolonged hydrothermal conversion and 25
+    C total-U assay support bounded abiotic observations. Both Table 3 headers read
+    g.at/L.
+- evidence_id: burns
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/cm/vol36/CM36_1069.pdf
+  locator: All seven original pages 1069–1075, Tables 1–5 and Figures 1–3; retained
+    file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-440/burns1998.pdf
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: dc89f42a3024fd5a7f2f96c9de7134bed011f5724747ccbae1c2dbc16fd39c7c
+  support: supports
+  summary: Natural near-Rössing crystal is K0.56Na0.42 with partially occupied sites,
+    P21/m and 1.5 waters; microprobe water calculated. CISTI reflection deposit unavailable;
+    no natural-crystal recovery experiment.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: September 2026 edition, original PDF pages 1, 2 and 28 viewed; same-day
+    official bytes reused after task request timeout; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-440/reused129-ima2026-09.pdf
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  support: supports
+  summary: Current-edition identity row and grandfathered original-description year
+    support the species. No approval accession, criticality jurisdiction or specimen-universal
+    composition inferred.
+- evidence_id: unit-authority
+  kind: authority
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-440/nist-amount-history.html
+  locator: 'Unit of amount of substance, mole: historical gram-atom terminology; retained
+    file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-440/nist-amount-history.html'
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: 5558f0c922bd7342fb393ddd635a575a32f074dbca78b381f858feaf78d2cbfa
+  support: supports
+  summary: Gram-atoms specify amount of element, not grams of uranium mass. Literal
+    source-unit preservation requires no numerical conversion.
+- evidence_id: si2025
+  kind: primary_source
+  reference: https://msaweb.org/MSA/AmMin/TOC/2025/Aug2025_data/AM-25-89531.zip
+  locator: All seven original SI pages, Figures S1–S2 and Tables S1–S7; retained file
+    /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-440/chamberlain2025-deposit/AM-25-89531/AMMIN-9531_supp1.pdf
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: 062efa3524a8da996e507a256d73fd56f0891bf4538836941f3af46808fd9362
+  support: context_only
+  summary: Pressure and Raman summaries are authentic public deposited material. They
+    remain research context; unresolved primary-component/native joins, angle vertices
+    and missing main methods prevent owner expansion.
+- evidence_id: cif2025
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-440/chamberlain2025-cif/AMMIN-9531burns.cif
+  locator: Original 1,137,150 bytes; twelve blocks including eleven structural models
+    and all embedded intensity fields; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-440/chamberlain2025-cif/AMMIN-9531burns.cif
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: 0f0bed67d8aaec8d5f576f351d61a7d6e54b3f9fe7cf27b2bbdb1ff928cb7c9b
+  support: context_only
+  summary: Independent all-field parse agrees with author parse after a separately
+    retained one-byte SUB removal. All 23,481 measurement rows and 414 bonds checked;
+    no refinement, twin integration, H-position determination or Raman fitting rerun.
+- evidence_id: numbers
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-440-final-independent/numeric-check.json
+  locator: Independently keyed S1 242 and S7 88 cells, seven uranium/pH pairs, all
+    native rows and calculations; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-440-final-independent/numeric-check.json
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: 60f29453d5e1f972d97cfc9d46bf2b4e0fb772cb720b92cc221070fec1ef5f84
+  support: supports
+  summary: All 330 SI cells, 220 scalar joins including 115 disagreements, 55 geometry/angle
+    joins, 414 metric bond calculations and 23,481 embedded measurements agree. Source
+    contradictions remain explicit.
+- evidence_id: visual-scope
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-440-final-independent/supplementary-checks.json
+  locator: All 25 actual page-image inspections, eight ZIP members, exact owner diff
+    and seven unchanged pH/value pairs; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-440-final-independent/supplementary-checks.json
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: 1fc2432248fc5dc603452daf0e4863b6a0ab3c829b7a3f2da944f5fbebc48f8e
+  support: supports
+  summary: Visual scope includes both complete older originals, duplicate MAC page,
+    three IMA pages and all seven SI pages. No original 2025 main figure or 2011 main
+    inspection claimed.
+- evidence_id: handoff
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-440/research/sources/issue-440-boltwoodite-originals/20261021T161349Z.md
+  locator: Complete frozen handoff and separately bound evidence JSON; retained file
+    /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-440/research/sources/issue-440-boltwoodite-originals/20261021T161349Z.md
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: 53cc231ac021d6c2e999900c8dd172fd52d751f192f279969ab98630e5ba58cb
+  support: supports
+  summary: Only the original uranium unit is accepted into the owner. Newly acquired
+    SI/CIF and remaining source gaps are distinguished; current field names and mass-based
+    observation limits are accurate.
+- evidence_id: integrity
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-440-final-independent/integrity-check.json
+  locator: 827 hash assertions across 427 paths, 195 preserved files, historical archive
+    resolution and 1,360 unchanged other record/history paths; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-440-final-independent/integrity-check.json
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: c6f03595b1c2aeb25a20fc68721a2fe225756296ea398e5e54e57651be2ea1ff
+  support: supports
+  summary: All checked current bindings and preserved original bytes pass. Historic
+    raw paths are not represented as currently available; original owner resolves
+    through explicit preservation mapping.
+- evidence_id: history
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-440/history/records/boltwoodite/2026-10-21T161230Z-codex-f6129a.yaml
+  locator: Actual EDIT sidecar plus distinct inline event and unchanged CREATE; retained
+    file /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-440/history/records/boltwoodite/2026-10-21T161230Z-codex-f6129a.yaml
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: 57a6b8e85004537cc777cb4aaa9cc9abf094d55fdf041c9537223948321718a0
+  support: supports
+  summary: Target, actor, timestamps and unit-only scope agree. The previous source
+    report and native review remain immutable.
+- evidence_id: initial
+  kind: prior_review
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-440/reviews/structured/20261021T160848Z-boltwoodite-unit-initial-independent/review.yaml
+  locator: Exact partial initial review and open major finding 440-R1; retained file
+    /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-440/reviews/structured/20261021T160848Z-boltwoodite-unit-initial-independent/review.yaml
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: aae860b43910f578e46dbb6b603d11650c80a4945d9108f86e13942e9924bb02
+  support: supports
+  summary: Initial reviewer confirmed the erroneous physical unit before correction.
+    This successor explicitly resolves that same stable issue and all its affected
+    targets.
+- evidence_id: historical
+  kind: prior_review
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-440/reviews/structured/20261016T025741Z-boltwoodite-round109-independent/review.yaml
+  locator: Entire 2026-10-16 scientific predecessor, including erroneous total-U g/L
+    sentence and empty findings; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-440/reviews/structured/20261016T025741Z-boltwoodite-round109-independent/review.yaml
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: 930eb053c2ce6bca91d04892603feebb75d269b99d6dc9e9966de2f54e99d763
+  support: context_only
+  summary: Its unit assessment is superseded by current original-page inspection.
+    No prior finding is invented; the historical bundle remains exact.
+- evidence_id: preservation
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-440-initial-preservation/preservation.json
+  locator: 195 original files preserved before correction, including original owner,
+    source draft, raw and reviews; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-440-initial-preservation/preservation.json
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: 4f187628b392db4023b733efd028cb3ca24f7f610b46780cfa9cb4a8d886a499
+  support: supports
+  summary: All preserved copies independently verified; current old-hash references
+    resolve explicitly through archived files.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-440-final-gates.json
+  locator: Actual full session 67486 exit 0, corpus 51695 exit 0, history 61169 exit
+    0, render 44530 exit 0; canonical 3894 reused with unchanged governed files; retained
+    file /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-440-final-gates.json
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: 0df58e4bf11b0554e6e84440d448bf2ad49658f7cf3a6c816c3e930e87025bbd
+  support: supports
+  summary: 363 tests passed, 3 skipped, 616 records and 745 histories valid. These
+    author-run terminal outcomes and log hashes were independently inspected; structural
+    gates do not establish scientific truth.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-440-final-independent/named-check.json
+  locator: Reviewer-run named validation actual exit 0; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-440-final-independent/named-check.json
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: d8407943a31a318466e5236808fe7c063c35fc76d22bac7b35ba77045da15a96
+  support: supports
+  summary: One corrected record validates. Earlier unsupported --strict CLI invocation
+    is preserved separately as reviewer command error, not a scientific failure.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-440-final-independent/web-notice-search.json
+  locator: Fresh web.run exact-title-fragment/DOI correction, erratum and retraction
+    queries on 2026-10-21; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-440-final-independent/web-notice-search.json
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: 9ea06f8c4a26f28caac4d00018b461dfaf5c382010a407cd6c19bf4b60667b4c
+  support: context_only
+  summary: No affecting notice surfaced in returned windows. Published metadata and
+    related studies are context, not additional accepted experiment results.
+  search_scope: Four exact recorded queries, no API domain or recency filters; first
+    returned result windows only. This is a bounded notice search, not universal absence.
+- evidence_id: provenance
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-440/shared-acquisition-provenance.json
+  locator: Current direct requests, same-day reuse and four historical source hash
+    joins; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-440/shared-acquisition-provenance.json
+  accessed_at: '2026-10-21T16:23:04.756112Z'
+  snapshot_sha256: 1db9024a40d8ecc4d05bc8589df4852e291093ec3da0c5eea548eb66e3ac5ad0
+  support: supports
+  summary: Original older PDFs and IMA bytes match historic digests; source access
+    improvements do not explain away the earlier unit-reading error.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral identity, specimen chemistry and source boundaries
+  outcome: supported
+  summary: The accepted mineral remains potassium-bearing boltwoodite, distinct from
+    sodium-dominant natroboltwoodite, elemental uranium and cuprosklodowskite. IMA
+    G/1956 is a grandfathered original-description designation, not a unique approval
+    identifier. Natural 1998, synthetic 1997 and listed 2026 compositions remain distinct.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - owner
+  - ima
+  - burns
+  - vochten
+  dimensions:
+  - name: material_form
+    value: Mineral species with separately identified natural and synthetic specimens
+    definition: No elemental criticality or jurisdictional listing is inherited by
+      this mineral; the record makes no criticality assertion.
+    evidence_ids:
+    - owner
+    - ima
+  - name: natural_specimen
+    value: Near-Rössing crystal, K0.56Na0.42, P21/m, 1.5 H2O
+    definition: Partial alkali occupancies and stoichiometrically calculated water
+      are not universal specimen chemistry.
+    evidence_ids:
+    - burns
+- assessment_id: formation
+  area: evidence
+  topic: Abiotic hydrothermal preparation and transformation
+  outcome: supported
+  summary: The 0.35 g uranyl nitrate hexahydrate, 0.5 g KCl, 25 mL water, pH 11.5,
+    3 g quartz, 185 C/7 d and calculated 1.3 MPa recipe is source-supported. Three
+    5% acetic washes, water washing, bromoform separation and product identity are
+    retained. Maximum qualitative yield at 7 d and soddyite at >=40 d do not supply
+    a measured recovery yield.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - owner
+  - vochten
+  dimensions:
+  - name: organism_and_biomass
+    value: 'Not applicable: abiotic laboratory experiments'
+    definition: No organism, biomass, protein or microbial causation is asserted.
+    evidence_ids:
+    - owner
+    - vochten
+  - name: controls_and_conditions
+    value: Separate fused-silica and water-only arms
+    definition: Same-result fused-silica report has no numerical replicate count;
+      water-only natural/synthetic conversion does not inherit synthesis loading,
+      pH, volume or exact conversion time.
+    evidence_ids:
+    - vochten
+  - name: outcome
+    value: Laboratory phase formation and later soddyite
+    definition: Powder XRD and chemical identification support phase observations,
+      not a molecular pathway, isolated U yield or industrial deployment.
+    evidence_ids:
+    - vochten
+- assessment_id: aqueous
+  area: quantity
+  topic: Total filtered uranium with restored physical unit
+  outcome: supported
+  summary: Original Table 3 p739 explicitly gives g.at/L. All seven pH/value pairs
+    are unchanged. CO2-free water, KOH/HClO4, 25 C, nitrogen, 30 d, 1.4 micrometre
+    filter and 662.5 nm Arsenazo III are exact. Silica gel below pH 7.5, unknown speciation
+    and possible filter-passing colloids prevent interpreting total-U endpoints as
+    free-ion activity, reversible equilibrium, Ksp, rate or recovery.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - owner
+  - vochten
+  - unit-authority
+  - numbers
+  dimensions:
+  - name: measured_quantity
+    value: Total filtered uranium amount concentration in g.at/L
+    definition: Gram-atoms of U per litre; solution-volume denominator, with no numerical
+      mass conversion. These aqueous values are not schema mg/kg source-cell observations.
+    evidence_ids:
+    - vochten
+    - unit-authority
+  - name: missing_assay_details
+    value: Loading, volume, numerical replicates and uncertainty unavailable
+    definition: The record explicitly retains these missing method details; no inferred
+      metal inventory or dissolution fraction.
+    evidence_ids:
+    - owner
+    - vochten
+- assessment_id: later-scope
+  area: scope
+  topic: 2025 pressure models and unavailable full studies remain research-only
+  outcome: supported
+  summary: Authentic SI and CIF acquisition is useful but does not establish complete
+    experimental methods or justify new owner mechanisms. The earlier P21/m and newer
+    P21 models are distinct refinements; fixed K/Na, omitted H and H-free formula
+    mass are not independent hydration measurements. Main 2025, main 2011 and original
+    Burns 1998 structure factors remain unavailable.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - handoff
+  - si2025
+  - cif2025
+  - numbers
+  - burns
+  dimensions:
+  - name: model_audit
+    value: Eleven structural models; 23,481 measured intensity rows
+    definition: Rows may be unmerged or multiple-domain observations. They are neither
+      unique reflections nor observed/calculated FCF pairs; no re-refinement was run.
+    evidence_ids:
+    - cif2025
+    - numbers
+  - name: conflicting_summaries
+    value: S1 versus native CIF and S7 angle-vertex mismatch preserved
+    definition: 115 central-value differences among 220 S1 joins are not silently
+      corrected by selecting lower R values. Ambient 133.61 degree entry has Si as
+      vertex in native candidate; the 10.9 GPa 127.5 entry has no exact candidate.
+    evidence_ids:
+    - si2025
+    - numbers
+  - name: spectroscopy_limits
+    value: Two fitted ambient components and empirical Raman bond estimates
+    definition: No raw fitting likelihood, uncertainty replication, new structural
+      U site or direct X-ray bond measurement is inferred from spectral fits.
+    evidence_ids:
+    - si2025
+    - handoff
+- assessment_id: source-provenance
+  area: provenance
+  topic: Source acquisition, historical bytes and immutable correction
+  outcome: supported
+  summary: All 139 raw-manifest files and structured current bindings were checked.
+    Four historical source digest joins agree. Current public deposit provenance,
+    archive integrity, one-byte parser transformation and honest failed routes are
+    documented. Historical unavailable raw roots are distinguished from current copies.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - integrity
+  - provenance
+  - visual-scope
+  - handoff
+  - preservation
+- assessment_id: resolution
+  area: evidence
+  topic: Explicit resolution of major 440-R1
+  outcome: supported
+  summary: The only scientific owner delta restores g.at/L and explanatory gram-atoms
+    per litre. Seven values, all experimental limits and the other mechanism remain
+    intact. New EDIT/inline history describe the actual change. The exact initial
+    finding is resolved; the earlier erroneous positive unit assessment is retained
+    as historical context.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - owner
+  - initial
+  - historical
+  - history
+  - numbers
+  - preservation
+- assessment_id: validation
+  area: schema
+  topic: Current schema, provenance and completed required gates
+  outcome: supported
+  summary: Named validation, full batch, corpus and base-aware history gates completed
+    successfully on frozen owner/history/source bytes. Canonical reuse is explicitly
+    limited to unchanged governed inputs. Source-unit prose remains outside mass-based
+    observation cells.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - named
+  - gates
+  - owner
+  - history
+  - integrity
+findings:
+- finding_id: 440-R1
+  issue_key: boltwoodite-vochten1997-uranium-concentration-unit
+  category: evidence
+  severity: major
+  status: resolved
+  certainty: confirmed
+  title: Restore original gram-atom unit for Vochten1997 Table3 uranium concentrations
+  description: The initial major physical-unit finding is confirmed against both original
+    Table 3 headers. The final owner now gives g.at/L (gram-atoms of U per litre),
+    preserving all seven values and assay limitations. The historic source dossier/native
+    pass and initial needs_curation observation remain immutable.
+  target_ids:
+  - cmmmech:boltwoodite
+  field_paths:
+  - mechanisms[id=abiotic_aqueous_uranium_release].evidence[0].explanation
+  evidence_ids:
+  - owner
+  - vochten
+  - unit-authority
+  - numbers
+  - initial
+  - history
+  - preservation
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/boltwoodite.yaml
+    role: maintained_scientific_record
+  rule_id: primary-source-quantity-unit
+  native_severity: major
+  normalization_reason: Native major maps directly to shared major because the wrong
+    physical quantity is assigned to all seven measured concentration values; this
+    is more than typographical unit styling.
+  disposition_reason: Independently inspected exact corrected owner SHA256 0aaf60e41738d99dca2e8827a5cbd0dbd9942cc414bc7a48813972d97f9f0637,
+    all seven original values, full experimental context, canonical EDIT and preserved
+    predecessor. Required final structural checks passed. No outstanding affected
+    target remains.
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261021T160848Z-boltwoodite-unit-initial-independent
+    finding_id: 440-R1
+actions: []
+limitations:
+- Complete Chamberlain 2025 main article, Shvareva 2011 main/supporting methods and
+  Burns 1998 original observed/calculated reflection deposit remain unavailable in
+  bounded legitimate routes. Their omitted claims are not silently accepted.
+- The review verifies source transcription, preserved byte identity and conditional
+  model arithmetic, not experimental replication, full crystallographic refinement,
+  twinning/integration, Raman fitting, uncertainty propagation or thermodynamic equilibrium.
+- Current SI/native differences and S7 angle-label/vertex uncertainties remain source
+  discrepancies. No preferred corrected model, EOS, hydration measurement, pressure
+  transition or recovery mechanism is chosen.
+- Search coverage is four recorded fresh notice queries plus inspection of author
+  acquisition/search receipts; no universal absence claim. No paid access, outreach
+  or remote write occurred.
+- Initial failed reviewer helper assumptions about terminal SUB placement and mixed
+  HKL formatting were corrected locally with original inputs unchanged. The unsupported
+  --strict named-validation option was a command error; the corrected named invocation
+  passed.
+- The final native save introduces review artifacts only. The structured-review checker
+  and post-save page render/check are separate integration receipts and are not falsely
+  claimed complete within this earlier observation.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261021T160848Z-boltwoodite-unit-initial-independent
+  relationship: Explicit successor resolves major 440-R1 while retaining the exact
+    initial scoped observation.
+- repository: CultureBotAI/CMMMech
+  review_id: 20261016T025741Z-boltwoodite-round109-independent
+  relationship: Preserved prior whole-owner review; its g/L unit assessment is superseded
+    by this full original-source review, without inventing a prior finding.
+notes:
+- All 25 scoped page images were actually viewed; all original and author evidence
+  bytes remain unchanged.
+- Native evidence access dates describe this review; original acquisition/reuse timestamps
+  remain in the source receipts.

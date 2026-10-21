@@ -1,0 +1,346 @@
+schema_version: 1.0.0
+review_id: 20261021T160848Z-boltwoodite-unit-initial-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Initial scoped independent review of boltwoodite uranium concentration unit
+started_at: '2026-10-21T16:07:20.070862Z'
+finished_at: '2026-10-21T16:08:48.472057Z'
+reviewer:
+  identity: codex /root/resume_473
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from root curator. Root raised the candidate;
+    reviewer captured exact inputs before independent original-image/unit/row checks
+    and did not edit owner or source.
+skill: .claude/skills/review-record/SKILL.md
+completion: partial
+verdict: needs_curation
+scientific_review: true
+summary: 'One confirmed major unit finding: original Table3 uses g.at/L, not g of
+  U per litre. Seven values remain unchanged; full record/source review and final
+  batch gates are pending.'
+source:
+  git_revision: 1296ee20f2595d7d6a50e391f611c22435418906
+  state: working_tree
+  inputs:
+  - path: data/records/boltwoodite.yaml
+    sha256: eb8934a9cd33839c5b2b6fc65993c35643c637e9da731b5fe9790aee83258e9c
+    role: target
+  - path: history/records/boltwoodite/2026-10-16T024035Z-codex-493ba2.yaml
+    sha256: a586e3161ca5f4d0e85958440a1fd0d2f6094d8aa85080d37dedec99c7c5d489
+    role: context
+  - path: reviews/structured/20261016T025741Z-boltwoodite-round109-independent/review.yaml
+    sha256: 930eb053c2ce6bca91d04892603feebb75d269b99d6dc9e9966de2f54e99d763
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+targets:
+- target_id: cmmmech:boltwoodite
+  path: data/records/boltwoodite.yaml
+  label: boltwoodite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/boltwoodite.yaml
+    role: maintained_scientific_record
+scope:
+  description: Narrow initial assessment of Vochten1997 Table3 unit and exact corresponding
+    maintained owner field before correction.
+  selection: Assigned named record; inspect captured exact current owner/history/schema/prior-review
+    hashes before scientific assessment.
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:boltwoodite
+  exclusions:
+  - target: Other owner claims and final batch scope
+    reason: Only original page739 was visually inspected in this round; adjacent methods
+      and p740 extracted discussion were read for scope. Burns1998 identity, IMA authority,
+      preparation/structure, later thermal/high-pressure work and all other owner
+      claims await the full successor assessment or remain prior-review context.
+  - target: Other owner claims and final batch scope
+    reason: No concentration conversion, analytical remeasurement, experiment replication,
+      free-ion speciation, equilibrium proof, dissolution rate or recovery yield is
+      asserted.
+  - target: Other owner claims and final batch scope
+    reason: No new broad correction/retraction search was performed for this narrow
+      unit observation. Exact shared source bytes and original labels suffice to identify
+      the discrepancy; later full source review will assess current notices.
+  - target: Other owner claims and final batch scope
+    reason: Final full batch gates are not yet available for the forthcoming author
+      correction. This partial needs_curation observation intentionally precedes that
+      work.
+checks:
+- check_id: named
+  name: Independent named structural validation
+  command: uv run --locked cmmmech validate data/records/boltwoodite.yaml
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual exit0 before author correction; structural validity does not validate
+    source units.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - named
+- check_id: history
+  name: Independent history structural validation
+  command: uv run --locked cmmmech validate-history --base 1296ee20f2595d7d6a50e391f611c22435418906
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual exit0 before author correction; structural validity does not validate
+    source units.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - history
+- check_id: final-batch
+  name: Final batch gates deferred until author freeze
+  command: just check; uv run --locked cmmmech validate --require-records
+  status: unavailable
+  required: true
+  summary: Initial scoped observation requested before author correction/full source
+    freeze. No current full final batch pass asserted; final author and successor
+    review gates remain required.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - owner
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/boltwoodite.yaml
+  locator: mechanisms[id=abiotic_aqueous_uranium_release].evidence[0].explanation
+  accessed_at: '2026-10-21T16:08:48.472057Z'
+  snapshot_sha256: eb8934a9cd33839c5b2b6fc65993c35643c637e9da731b5fe9790aee83258e9c
+  support: refutes
+  summary: Exact unchanged owner calls Table3 concentrations g of U per litre; original
+    labels g.at/L.
+- evidence_id: table
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-440/vochten1997.pdf
+  locator: Printed page739, Table3, both U-concentration column headers and all seven
+    rows; adjacent Solubility of boltwoodite methods.
+  accessed_at: '2026-10-21T16:08:48.472057Z'
+  snapshot_sha256: e1318999e81c0e2da373a60798c71675b279b42c6ac4c29fa4a2af188cd5658d
+  support: refutes
+  summary: Original unit is g.at/L. Seven concentrations and pH values agree with
+    owner; numeric conversion is neither needed nor performed.
+- evidence_id: pixels
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-440/visual/vochten1997-5.png
+  locator: Original page5/7, printed739; full image independently viewed after inspect.
+  accessed_at: '2026-10-21T16:08:48.472057Z'
+  snapshot_sha256: 7c71f7b199e66a4313ac9a8bd862bc3148e6a58dd89e0ffb442dbc7278560f18
+  support: supports
+  summary: Both headers read g.at/L. Values:4.8e-3,1.7e-3,1.3e-4,1.3e-6,1.3e-6,1.2e-6,1.2e-6
+    at pH3.81,4.31,4.81,5.75,7.38,7.60,11.73.
+- evidence_id: nist
+  kind: authority
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-440/nist-amount-history.html
+  locator: NIST SP330 Appendix4, Unit of amount of substance, mole; paragraphs discussing
+    gram-atom and distinction between amount and mass.
+  accessed_at: '2026-10-21T16:08:48.472057Z'
+  snapshot_sha256: 5558f0c922bd7342fb393ddd635a575a32f074dbca78b381f858feaf78d2cbfa
+  support: supports
+  summary: Gram-atom expresses amount of chemical element; it cannot be silently relabelled
+    grams of U. Only literal source-unit correction proposed.
+- evidence_id: audit
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-440-independent/unit-audit.json
+  locator: Independent manual transcription of14 numerical tokens and literal unit,
+    with experimental scope.
+  accessed_at: '2026-10-21T16:08:48.472057Z'
+  snapshot_sha256: ec50b52fc9f2da28a6af531087e4cd9d9642a514600ad167ad161b87a7882b21
+  support: supports
+  summary: All seven values remain unchanged. Total filtered U measured after30days
+    is not free-ion activity or a recovery fraction.
+- evidence_id: prior
+  kind: record_content
+  reference: reviews/structured/20261016T025741Z-boltwoodite-round109-independent/review.yaml
+  locator: Complete immutable prior bundle; assessments[science] says totalU g/L and
+    findings is empty.
+  accessed_at: '2026-10-21T16:08:48.472057Z'
+  snapshot_sha256: 930eb053c2ce6bca91d04892603feebb75d269b99d6dc9e9966de2f54e99d763
+  support: context_only
+  summary: Prior positive unit assessment is contradicted by newly checked Table3.
+    No nonexistent prior finding is invented; original review remains unchanged.
+- evidence_id: acquisition
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-440/shared-acquisition-provenance.json
+  locator: Vochten same-day issue430 acquisition/copy and historical digest declaration.
+  accessed_at: '2026-10-21T16:08:48.472057Z'
+  snapshot_sha256: 1db9024a40d8ecc4d05bc8589df4852e291093ec3da0c5eea548eb66e3ac5ad0
+  support: supports
+  summary: Current864549-byte PDF matches historical native-review PDF SHA; this is
+    a unit-reading correction, not a changed-paper explanation.
+- evidence_id: preservation
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-440-independent/initial-preservation.json
+  locator: Nine exact pre-correction snapshots including owner, history, prior review,
+    original PDF/image, NIST and inspect.
+  accessed_at: '2026-10-21T16:08:48.472057Z'
+  snapshot_sha256: fe4c531e89890c0582da753fd2c682b246c2b8f3ac8be2c0d6ef447319b0d442
+  support: supports
+  summary: Initial owner and predecessor are preserved; author has not corrected the
+    owner.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-440-independent/dedup-current.json
+  locator: Six existing explicit roots with rg --no-ignore --hidden --follow; exact
+    key and erroneous phrases.
+  accessed_at: '2026-10-21T16:08:48.472057Z'
+  snapshot_sha256: bf4543a0adbcab1a144ee864bf162b7eb3e5578cd2cac020ebdb1696e042f486
+  support: context_only
+  summary: Ignored and hidden files included. Bounds exclude unsearched filesystem
+    and new remote queue assertions.
+  search_scope: 'Six explicit existing roots: issue440/data,history,reviews,research,.claude
+    and sources440. Exact stable key and two erroneous unit phrases. rg includes hidden/ignored
+    files and follows symlinks; no global absence or current-queue dedup claim.'
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-440-independent/named-check.json
+  locator: Actual independent subprocess receipt and log.
+  accessed_at: '2026-10-21T16:08:48.472057Z'
+  snapshot_sha256: 6e1244d64d9c715eff5be6adb0553e766fe97fde40e990c6f97604afdafef9ed
+  support: supports
+  summary: Named one record0failures; history744records0errors, as applicable.
+- evidence_id: history
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-440-independent/history-check.json
+  locator: Actual independent subprocess receipt and log.
+  accessed_at: '2026-10-21T16:08:48.472057Z'
+  snapshot_sha256: 1015fe075fd840350e5be4dccbb4017cd8374d7d4f19026ba5f4657036ac3014
+  support: supports
+  summary: Named one record0failures; history744records0errors, as applicable.
+assessments:
+- assessment_id: unit
+  area: evidence
+  topic: Measured total uranium unit and source fidelity
+  outcome: concern
+  summary: All14 numeric tokens independently agree; the owner changes the measured
+    quantity from source g.at/L to grams per litre without conversion. Retain literal
+    g.at/L (gram-atoms per litre) and seven values unchanged.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - owner
+  - table
+  - pixels
+  - nist
+  - audit
+  dimensions:
+  - name: material_form
+    value: Synthetic potassium-rich boltwoodite aliquots
+    definition: The described25C CO2-free water/N2 test with KOH or HClO4,30days,1.4micrometre
+      filtration and total-U ArsenazoIII assay; not natural sodium boltwoodite or
+      microbial extraction.
+    evidence_ids:
+    - table
+  - name: measured_quantity
+    value: Total filtered U concentration, source unit g.at/L
+    definition: Amounts of uranium per litre as explicitly printed; not free uranyl
+      activity, an equilibrium constant, dissolved mass fraction, rate, or recovered
+      product.
+    evidence_ids:
+    - table
+    - nist
+- assessment_id: history
+  area: provenance
+  topic: Preserved contradictory prior assessment
+  outcome: supported
+  summary: Old native pass contains erroneous g/L language and zero findings. It remains
+    immutable; this new observation creates the stable unit finding and does not fabricate
+    a previous finding occurrence.
+  target_ids:
+  - cmmmech:boltwoodite
+  evidence_ids:
+  - prior
+  - preservation
+  - acquisition
+findings:
+- finding_id: 440-R1
+  issue_key: boltwoodite-vochten1997-uranium-concentration-unit
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Restore original gram-atom unit for Vochten1997 Table3 uranium concentrations
+  description: The unchanged owner assigns a mass concentration unit (g of U per litre)
+    to the seven unchanged Table3 values, whereas both original column headers read
+    g.at/L. Gram-atoms express amount of substance. This is a material quantitative-unit
+    error, even though the numeric values and assay limitations are correctly retained.
+    The previous native positive assessment also says totalU g/L and is preserved
+    as historical evidence, not silently rewritten.
+  target_ids:
+  - cmmmech:boltwoodite
+  field_paths:
+  - mechanisms[id=abiotic_aqueous_uranium_release].evidence[0].explanation
+  evidence_ids:
+  - owner
+  - table
+  - pixels
+  - nist
+  - audit
+  - prior
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/boltwoodite.yaml
+    role: maintained_scientific_record
+  rule_id: primary-source-quantity-unit
+  native_severity: major
+  normalization_reason: Native major maps directly to shared major because the wrong
+    physical quantity is assigned to all seven measured concentration values; this
+    is more than typographical unit styling.
+actions:
+- action_id: correct-unit
+  description: Preserve initial owner/source/native artifacts, correct only the physical-unit
+    wording using literal g.at/L and gram-atoms per litre; keep all seven concentrations
+    unchanged and append truthful curation history. Independently review exact successor.
+  finding_ids:
+  - 440-R1
+  target_ids:
+  - cmmmech:boltwoodite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/boltwoodite.yaml
+    role: maintained_scientific_record
+  acceptance_checks:
+  - Corrected evidence uses original g.at/L unit without silently converting numerical
+    values.
+  - All seven values, material/assay/unknown-volume limitations remain unchanged.
+  - New canonical EDIT and inline history describe actual correction; prior CREATE
+    and native review remain immutable.
+  - Full frozen source and exact successor owner receive independent native/source
+    review and actual final structural/render gates.
+limitations:
+- This is a partial initial scientific review of one concentration-unit claim, not
+  whole-record approval or review of the forthcoming source handoff.
+- Only original page739 was visually inspected in this round; adjacent methods and
+  p740 extracted discussion were read for scope. Burns1998 identity, IMA authority,
+  preparation/structure, later thermal/high-pressure work and all other owner claims
+  await the full successor assessment or remain prior-review context.
+- No concentration conversion, analytical remeasurement, experiment replication, free-ion
+  speciation, equilibrium proof, dissolution rate or recovery yield is asserted.
+- No new broad correction/retraction search was performed for this narrow unit observation.
+  Exact shared source bytes and original labels suffice to identify the discrepancy;
+  later full source review will assess current notices.
+- Final full batch gates are not yet available for the forthcoming author correction.
+  This partial needs_curation observation intentionally precedes that work.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261016T025741Z-boltwoodite-round109-independent
+  relationship: Preserved predecessor positive assessment; source-unit statement contradicted
+    in this narrow new observation, with no previous finding to dispose of.
+notes:
+- Initial temporary content validation rejected string-valued scope exclusions; temporary
+  bytes retained and corrected to schema ScopeExclusion objects before native save.
+  No owner or scientific change.
+- Second temporary validation required the explicit bounded search_scope property;
+  scope was already described in locator, now represented in its required field before
+  save. Temporary state preserved.
