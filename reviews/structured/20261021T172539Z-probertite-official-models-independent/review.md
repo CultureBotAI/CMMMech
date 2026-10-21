@@ -1,0 +1,793 @@
+# Independent full scientific review of probertite after official diffraction-deposit acquisition
+
+- Review: 20261021T172539Z-probertite-official-models-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-21T17:17:18.842261Z
+- Finished UTC: 2026-10-21T17:25:39.121058Z
+- Reviewer: codex /root/resume_405 (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+The complete updated probertite identity/characterization record is supported within its specimen, refinement and access limits. Official two-model CIF provenance advances the prior access boundary without importing processing or recovery. External source-ledger finding468-R1 is substantively resolved; zero open owner findings.
+
+## Scope And Provenance
+
+Full final owner, canonical/inline history, final source successor, preserved initial source review and all available accepted-manuscript/deposit/authority evidence.
+
+Selection: Parent-assigned exact frozen owner; native inspections captured before judgment and refreshed for immutable successor source context.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1296ee20f2595d7d6a50e391f611c22435418906.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:probertite | data/records/probertite.yaml | maintained | Probertite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named exact-owner validation | passed | True | cmmmech:probertite | Independent actual0/chunk0f9d63;1valid record. |
+| Required nonempty corpus validation | passed | True | cmmmech:probertite | Independent actual0/chunk46f15b;616valid records. |
+| Base-aware history validation | passed | True | cmmmech:probertite | Author81260 actual0/chunkbe721a;745valid histories. |
+| Required full gate on identical scientific/executable state | passed | True | cmmmech:probertite | Actual6679 exit0/chunk3cc3ba;363passed3skipped83.70s616records745histories. Initial source timestamp error does not alter test inputs; combined post-native check follows separately. |
+| Canonical unchanged-governed-input check | passed | True | cmmmech:probertite | Actual baseline98429 exit0/chunk5d3f0c;22matches, explicitly reused. |
+| Independent successor integrity | passed | True | cmmmech:probertite | 2355assertions2125paths pass; timestamp ledger matches actual raw receipts. |
+| Independent numeric and native-geometry audit | passed | True | cmmmech:probertite | All124bonds374angles628torsions computed; separatemanual487components and125diagnostic comparisons pass. |
+
+## Scientific And Domain Assessments
+
+### Species, formula and authority scope
+
+identity: supported. Targets: cmmmech:probertite.
+
+Current IMA identity and grandfathered/year semantics are accurate. Probertite remains distinct from ulexite, boron, borates commodity and mixed feeds; no unsupported identifier or criticality claim.
+
+### Specimen chemistry and measurement denominators
+
+quantity: supported. Targets: cmmmech:probertite.
+
+CaO15.8(2)/Na2O8.6(3)wt% and Li0.392wtppm from ten analyses agree with the original. Probe Sr800–1000 versus laser-ablation1230±230wtppm are separate summaries. Censoring and trace amounts prevent a trace-free or quantitative recovery interpretation.
+
+### Separate diffraction models and hydrogen sites
+
+evidence: supported. Targets: cmmmech:probertite.
+
+The official deposit independently confirms the published provenance and31sites/10H per model. Separate crystals and20(1)/293(1)K temperatures remain distinct. The expanded H40B20Ca4Na4O56 formula with Z1 must not be misread as Z1 for the reduced formula.
+
+### Extinction and numerical consistency boundaries
+
+scope: supported. Targets: cmmmech:probertite.
+
+Native SHELXL extinction coefficient0.0090(16) contrasts with AAMLarson wording; X-raynative saysnone. Unknown restraint counts, lack of observed intensity/instruction payload and neutron displacement limitations remain explicit. Static-coordinate geometry supports provenance, not refinement accuracy.
+
+### Dissolution, recovery and deployment excluded
+
+scope: supported. Targets: cmmmech:probertite.
+
+Kirka2009feed remains separate from Kramer natural crystals. The incomplete cached primary excerpts and absent methods/results do not support a kinetic or recovery mechanism. Prospective shielding discussion is not measured concrete performance.
+
+### Bounded evidence advance and immutable historical record
+
+provenance: supported. Targets: cmmmech:probertite.
+
+Official public-link/CIF provenance and same-AAM historical digest comparison support the new citation. Initial source/history/review context remains preserved, with actual canonical/inline EDIT chronology and inherited chemistry unchanged.
+
+### External source finding468-R1 resolved
+
+provenance: supported. Targets: cmmmech:probertite.
+
+The exact successor copies all four known nested timestamp values and preserves null genuinely unavailable end times. Original source pair, ledger and initial review remain immutable. This is an external source finding and not a fictitious native previous occurrence.
+
+### Exact owner, history and generated output scope
+
+schema: supported. Targets: cmmmech:probertite.
+
+Independent named and explicit nonempty corpus checks pass; author base-aware history and full gate passed on unchanged owner/history/governed/generated bytes. All633outputs retained and source successor changes only timestamp/provenance text.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468/data/records/probertite.yaml; Full exact updated owner and base diff; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468/data/records/probertite.yaml | supports | The entire identity/characterization record is reassessed. Only official-deposit/model access and qualifications are added; no processing or microbial mechanism. |
+| ima | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; Original September2026 PDF pages1–2 and177, actually viewed; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/reused-ima2026-09.pdf | supports | Formula NaCaB5O7(OH)4(H2O)3, grandfathered G and original-description year1929. Same-day authority reuse has a preserved acquisition chain; this reviewer made no fresh download. |
+| aam | https://air.unimi.it/retrieve/dfa8b9a7-5fce-748b-e053-3a05fe0a3a96/8086GattaPreprint_Probertite_AmMineral.pdf; All20 original AAM pages; specimen/chemistry PDF4–5, diffraction5–7, interpretation7–11, Table1p16, Table2pp17–18, Figs1–2pp19–20; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/probertite2022-aam.pdf | supports | Natural Kramer specimen11717, separate293K X-ray and20K neutron crystals, analytical/model boundaries and neutron extinction limitations verified. Accepted manuscript is distinct from unavailable complete final article. |
+| deposit-link | https://msaweb.org/MSA/AmMin/toc/articles/?issue=7&amp;vol=107; Official July2022 contents, probertite entry p1378 and exact AM-22-78086 hyperlink; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/society2022-july.html | supports | The actual society page links the acquired ZIP as the article deposit; no guessed scientific filename is presented as observed. |
+| zip | https://msaweb.org/MSA/AmMin/TOC/2022/Jul2022_data/AM-22-78086.zip; Entire ZIP central directory, CRC and both non-directory payloads; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/probertite2022-deposit.zip | supports | One scientific CIF plus AppleDouble metadata; journal and two diffraction blocks are not separate experimental replications. |
+| cif | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/deposit/AM-22-78086/8086gatta.cif; All three native blocks: every scalar, symmetry/atom/ADP/bond/angle/torsion loop; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/deposit/AM-22-78086/8086gatta.cif | supports | Each model31sites/10H with occupancy1. Neutron31Uani versus X-ray21Uani/10Uiso; restraint counts unknown. NeutronSHELXL versus AAMLarson and X-raynone remain literal. No observation loop or exact instruction file occurs in the inspected deposit. |
+| manual | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/manual-tables-and-comparison.json; Independent original-pixel rekey of Table1all44rows and Table2all214value tokens; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/manual-tables-and-comparison.json | supports | All487 selected value/uncertainty components agree with author audit; nine censored rows retain missing sigmas. No detection limit becomes zero or assay concentration becomes recovered yield. |
+| numeric | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/independent-cif-audit-v2.json; Independent native parser, all124bonds/374angles/628torsions and52ADP tests; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/independent-cif-audit-v2.json | supports | Rounded-coordinate calculations support model consistency within rounding precision; no re-refinement, covariance propagation, extinction fitting or phase-purity validation. |
+| numeric-comparison | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/cross-audit-comparison-v2.json; 216native scalar/loop checks and125diagnostic comparisons; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/cross-audit-comparison-v2.json | supports | All native rows and scalars agree; all manual-derived polyhedron/riding-increment/isotope/concentration and ADP comparisons pass. Preliminary parser backslash normalization is corrected in a separate preserved v2; coordinates/results were unchanged. |
+| preview2009 | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/web-01.json; Cached primary publisher abstract/introduction/section previews only; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/web-01.json | context_only | Kirka feed contains named tincal/tincalconite impurities. Complete loading, denominator, methods and original table/figure pixels are unavailable; no phase-specific recovery or processing claim is admitted. |
+| access | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/acquisition-ledger.json; All13 direct request receipts and version assessment; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/acquisition-ledger.json | supports | NineHTTP200, two403, one500 and one429 are kept separate from curl success. Failed finalPDF is HTML; final institutional VOR is authorized-users-only. No bypass/contact/paid access. |
+| handoff | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468/research/sources/issue-468-probertite-primary/20261021T172303Z.md; Full final successor report and evidence JSON; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468/research/sources/issue-468-probertite-primary/20261021T172303Z.md | supports | The bounded deposit update and residual issue468 criteria are supported; preserved source disagreements are not silently repaired. |
+| integrity | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/integrity-successor.json; 2355current hash assertions across2125resolved paths; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/integrity-successor.json | supports | All current references pass; two explicitly mapped pre-edit owners and two historical checksum-only comparisons are distinguished. Frozen originals and prior source/review history are preserved. |
+| scope | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/scope-check.json; All633generated pages and1360other base record/history paths; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/scope-check.json | supports | 630footer-only pages and three intended probertite content surfaces. All other record/history bytes equal trusted base; all rendered outputs are retained. |
+| history | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468/history/records/probertite/2026-10-21T171329Z-codex-821607.yaml; Canonical EDIT, separate inline event and history_refs link; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468/history/records/probertite/2026-10-21T171329Z-codex-821607.yaml | supports | Actual actor/time/owner and bounded official-deposit addition are documented. Committed CREATE/history/prior review are immutable. |
+| prior | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468/reviews/structured/20261016T052345Z-probertite-round112-independent/review.yaml; Entire prior whole-owner scientific review and empty findings; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468/reviews/structured/20261016T052345Z-probertite-round112-independent/review.yaml | context_only | Then-unavailable CIF access was a truthful historical limit; current evidence advances it without inventing an old defect. |
+| initial-finding | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/initial-source-review.json; External source finding468-R1, probertite-search-ledger-timestamps; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/initial-source-review.json | context_only | Initial compact ledger omitted known timestamps for batches3–4. The original index, pair, raw receipts and review are preserved. No initial native owner finding is fabricated. |
+| resolution | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/successor-comparison.json; Twelve preservation pairs and exact timestamp/provenance successor delta; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/successor-comparison.json | supports | Known nested timestamps are copied exactly; missing first-two end times remain null. Owner/history/scientific/generated bytes unchanged. External468-R1 is substantively resolved; post-native final gate remains a separate receipt. |
+| named | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/named-check.json; Actual independent named validation0/chunk0f9d63; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/named-check.json | supports | One exact probertite record validates. |
+| full | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468-initial-final-gates.json; Actual full6679 exit0/chunk3cc3ba,83.70s; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468-initial-final-gates.json | supports | 363passed,3skipped,616records,745histories. Reused for identical owner/history/generated/governed state through source-timestamp successor; subsequent combined final gate is not preclaimed. |
+| scoped | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468-scoped-gates.json; Actual author81260 exit0/chunkbe721a: just validate and base-aware just validate-history; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468-scoped-gates.json | supports | 616records and745histories valid; exact commands/logs checked. Independent explicit require-records invocation is separate. |
+| required-corpus | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/corpus-required.log; Actual independent uv run --locked cmmmech validate --require-records, exit0/chunk46f15b; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/corpus-required.log | supports | 616records valid under explicit nonempty corpus requirement. |
+| baseline | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468-baseline-gates.json; Actual canonical98429 exit0/chunk5d3f0c,22matched; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468-baseline-gates.json | supports | Explicit reuse for unchanged governed/pin/executable bytes. Baseline363/3/616/744 precedes one new EDIT. |
+| notices | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/search-ledger-v2.json; Four recorded web.run batches on2026-10-21;14queries/4opens, including exact-DOI correction/erratum/retraction queries; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/search-ledger-v2.json | context_only | Reviewer inspected actual saved requests and relevant returned primary excerpts; no affecting notice identified in those windows. This is bounded author-executed search reused by the independent reviewer. |
+| dedup | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/dedup.json; Ten named worktree/main record/history/research/review/skill roots plus separately checked cited historical paths; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/dedup.json | context_only | Existing probertite owner remains appropriate; contextual mixed-feed references are not duplicate species records. |
+
+## Limits And Additional Notes
+
+- Complete2009original and final2022publisher article remain unavailable; no processing/phase-purity/recovery claim is admitted.
+- Refinement instructions and individual observed intensities are absent from the inspected deposit. Unknown restraints and extinction descriptions remain unresolved; no re-refinement or uncertainty propagation was performed.
+- All20AAMoriginal pages and threeIMA pages were viewed; original2009 table/figure pixels and full final2022article were not.
+- Source-level table/prose/uncertainty discrepancies remain literal; no guessed numerical repair enters the owner.
+- Searches were author-executed and independently inspected from exact dated receipts; returned windows and named local roots are bounded, not universal absence proof.
+- External source finding468-R1 has no initial native predecessor; its resolution is evidenced without invented previous_occurrences.
+- The full initial gate is reused only because owner/history/generated/governed/executable bytes are unchanged through the timestamp-only source successor. Native checker and combined post-native full gate will be separate actual receipts, not preclaimed here.
+- Preliminary original/numeric inspection preceded final-owner assessment and is separately recorded. All original author inputs and prior native bundle remain unchanged.
+- Every quantity retains source units and specimen/model basis; native geometry differences are rounded-coordinate diagnostics.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T172539Z-probertite-official-models-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent full scientific review of probertite after official diffraction-deposit
+  acquisition
+started_at: '2026-10-21T17:17:18.842261Z'
+finished_at: '2026-10-21T17:25:39.121058Z'
+reviewer:
+  identity: codex /root/resume_405
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored/acquired the source and owner update. This reviewer
+    made no author-file edits or source acquisitions, independently viewed originals,
+    rekeyed tables, parsed native models, recomputed geometry and checked exact preserved/current
+    inputs. Only the new native review pair is written in the author worktree.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The complete updated probertite identity/characterization record is supported
+  within its specimen, refinement and access limits. Official two-model CIF provenance
+  advances the prior access boundary without importing processing or recovery. External
+  source-ledger finding468-R1 is substantively resolved; zero open owner findings.
+source:
+  git_revision: 1296ee20f2595d7d6a50e391f611c22435418906
+  state: working_tree
+  inputs:
+  - path: data/records/probertite.yaml
+    sha256: 9b84a4e391cb7de3c6ee7aeaa84082f348b1aae2625bbc46f5efeb17455844e7
+    role: target
+  - path: history/records/probertite/2026-10-16T051137Z-codex-8e4c5e.yaml
+    sha256: c0da788808dfba2b473b5dbfd74988726873fb0cac469e76783ab3ba5bb676f3
+    role: context
+  - path: history/records/probertite/2026-10-21T171329Z-codex-821607.yaml
+    sha256: b649c202a3223583ed44590ff4a912e4f547505d51fc8a7b8b9b0d4bf126d7f9
+    role: context
+  - path: research/sources/issue-468-probertite-primary/20261021T172303Z-evidence.json
+    sha256: 7bc2de729e1a3749173242359eacc4406f63354ef9c88595fc840e4b27fdc90b
+    role: context
+  - path: research/sources/issue-468-probertite-primary/20261021T172303Z.md
+    sha256: 6ac8824f549388667a8116889562956063d11ffbd6a3851742477fbe06870957
+    role: context
+  - path: reviews/structured/20261016T052345Z-probertite-round112-independent/review.yaml
+    sha256: 5dbb0509a21bd332bca0a99e99443c9ebb2268bcb61d5fe9b7a0b177994b241c
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+targets:
+- target_id: cmmmech:probertite
+  path: data/records/probertite.yaml
+  label: Probertite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/probertite.yaml
+    role: maintained_record
+scope:
+  description: Full final owner, canonical/inline history, final source successor,
+    preserved initial source review and all available accepted-manuscript/deposit/authority
+    evidence.
+  selection: Parent-assigned exact frozen owner; native inspections captured before
+    judgment and refreshed for immutable successor source context.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:probertite
+checks:
+- check_id: named
+  name: Named exact-owner validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/probertite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Independent actual0/chunk0f9d63;1valid record.
+  target_ids:
+  - cmmmech:probertite
+  evidence_ids:
+  - named
+- check_id: corpus
+  name: Required nonempty corpus validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Independent actual0/chunk46f15b;616valid records.
+  target_ids:
+  - cmmmech:probertite
+  evidence_ids:
+  - required-corpus
+- check_id: history
+  name: Base-aware history validation
+  required: true
+  status: passed
+  command: just validate-history --base 1296ee20f2595d7d6a50e391f611c22435418906
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Author81260 actual0/chunkbe721a;745valid histories.
+  target_ids:
+  - cmmmech:probertite
+  evidence_ids:
+  - scoped
+- check_id: full
+  name: Required full gate on identical scientific/executable state
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual6679 exit0/chunk3cc3ba;363passed3skipped83.70s616records745histories.
+    Initial source timestamp error does not alter test inputs; combined post-native
+    check follows separately.
+  target_ids:
+  - cmmmech:probertite
+  evidence_ids:
+  - full
+  - resolution
+- check_id: canonical
+  name: Canonical unchanged-governed-input check
+  required: true
+  status: passed
+  command: bash scripts/check_vendored_sync.sh
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual baseline98429 exit0/chunk5d3f0c;22matches, explicitly reused.
+  target_ids:
+  - cmmmech:probertite
+  evidence_ids:
+  - baseline
+  - scope
+- check_id: integrity
+  name: Independent successor integrity
+  required: true
+  status: passed
+  command: python3 /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/integrity-successor.py
+  exit_code: 0
+  expected_exit_code: 0
+  summary: 2355assertions2125paths pass; timestamp ledger matches actual raw receipts.
+  target_ids:
+  - cmmmech:probertite
+  evidence_ids:
+  - integrity
+  - resolution
+- check_id: numeric
+  name: Independent numeric and native-geometry audit
+  required: true
+  status: passed
+  command: python3 /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/independent-cif-v2.py
+  exit_code: 0
+  expected_exit_code: 0
+  summary: All124bonds374angles628torsions computed; separatemanual487components and125diagnostic
+    comparisons pass.
+  target_ids:
+  - cmmmech:probertite
+  evidence_ids:
+  - numeric
+  - manual
+  - numeric-comparison
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468/data/records/probertite.yaml
+  locator: Full exact updated owner and base diff; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468/data/records/probertite.yaml
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: 9b84a4e391cb7de3c6ee7aeaa84082f348b1aae2625bbc46f5efeb17455844e7
+  support: supports
+  summary: The entire identity/characterization record is reassessed. Only official-deposit/model
+    access and qualifications are added; no processing or microbial mechanism.
+- evidence_id: ima
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: Original September2026 PDF pages1–2 and177, actually viewed; retained file
+    /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/reused-ima2026-09.pdf
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  support: supports
+  summary: Formula NaCaB5O7(OH)4(H2O)3, grandfathered G and original-description year1929.
+    Same-day authority reuse has a preserved acquisition chain; this reviewer made
+    no fresh download.
+- evidence_id: aam
+  kind: primary_source
+  reference: https://air.unimi.it/retrieve/dfa8b9a7-5fce-748b-e053-3a05fe0a3a96/8086GattaPreprint_Probertite_AmMineral.pdf
+  locator: All20 original AAM pages; specimen/chemistry PDF4–5, diffraction5–7, interpretation7–11,
+    Table1p16, Table2pp17–18, Figs1–2pp19–20; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/probertite2022-aam.pdf
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: b4e06aea0b75db1df45957f6b88fc8d00681432a4864495ee8796a276cb97591
+  support: supports
+  summary: Natural Kramer specimen11717, separate293K X-ray and20K neutron crystals,
+    analytical/model boundaries and neutron extinction limitations verified. Accepted
+    manuscript is distinct from unavailable complete final article.
+- evidence_id: deposit-link
+  kind: primary_source
+  reference: https://msaweb.org/MSA/AmMin/toc/articles/?issue=7&vol=107
+  locator: Official July2022 contents, probertite entry p1378 and exact AM-22-78086
+    hyperlink; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/society2022-july.html
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: 388257403b5c81772338fc833c18771829512af8874918b9d3a5161a611b68b3
+  support: supports
+  summary: The actual society page links the acquired ZIP as the article deposit;
+    no guessed scientific filename is presented as observed.
+- evidence_id: zip
+  kind: primary_source
+  reference: https://msaweb.org/MSA/AmMin/TOC/2022/Jul2022_data/AM-22-78086.zip
+  locator: Entire ZIP central directory, CRC and both non-directory payloads; retained
+    file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/probertite2022-deposit.zip
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: 5bf3f7e822491101859b1f179d1d0716bd3171ad7a1a3308db144d8def7f750c
+  support: supports
+  summary: One scientific CIF plus AppleDouble metadata; journal and two diffraction
+    blocks are not separate experimental replications.
+- evidence_id: cif
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/deposit/AM-22-78086/8086gatta.cif
+  locator: 'All three native blocks: every scalar, symmetry/atom/ADP/bond/angle/torsion
+    loop; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/deposit/AM-22-78086/8086gatta.cif'
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: d3d24f4b6dafbb2b7396fa2b139017489195dc4fb446b4a165c834b166f7f143
+  support: supports
+  summary: Each model31sites/10H with occupancy1. Neutron31Uani versus X-ray21Uani/10Uiso;
+    restraint counts unknown. NeutronSHELXL versus AAMLarson and X-raynone remain
+    literal. No observation loop or exact instruction file occurs in the inspected
+    deposit.
+- evidence_id: manual
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/manual-tables-and-comparison.json
+  locator: Independent original-pixel rekey of Table1all44rows and Table2all214value
+    tokens; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/manual-tables-and-comparison.json
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: 1b091bb47124d15fdacff4d2700fecaa5ad216375393618997834f6a31bc5670
+  support: supports
+  summary: All487 selected value/uncertainty components agree with author audit; nine
+    censored rows retain missing sigmas. No detection limit becomes zero or assay
+    concentration becomes recovered yield.
+- evidence_id: numeric
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/independent-cif-audit-v2.json
+  locator: Independent native parser, all124bonds/374angles/628torsions and52ADP tests;
+    retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/independent-cif-audit-v2.json
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: 193d5178e96832f735da9709ea18ab90f6a322d879243e60299528d31f5c2d01
+  support: supports
+  summary: Rounded-coordinate calculations support model consistency within rounding
+    precision; no re-refinement, covariance propagation, extinction fitting or phase-purity
+    validation.
+- evidence_id: numeric-comparison
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/cross-audit-comparison-v2.json
+  locator: 216native scalar/loop checks and125diagnostic comparisons; retained file
+    /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/cross-audit-comparison-v2.json
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: 5fbd2699c9e4bc9e026d1ec4a2a67aba447ac6e1a52d4ebc014092e3c8e5f87b
+  support: supports
+  summary: All native rows and scalars agree; all manual-derived polyhedron/riding-increment/isotope/concentration
+    and ADP comparisons pass. Preliminary parser backslash normalization is corrected
+    in a separate preserved v2; coordinates/results were unchanged.
+- evidence_id: preview2009
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/web-01.json
+  locator: Cached primary publisher abstract/introduction/section previews only; retained
+    file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/web-01.json
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: 859f4a963291bba61ac541ac5bdc7f45da38f8c42f6d372821a3e203f1eb52cb
+  support: context_only
+  summary: Kirka feed contains named tincal/tincalconite impurities. Complete loading,
+    denominator, methods and original table/figure pixels are unavailable; no phase-specific
+    recovery or processing claim is admitted.
+- evidence_id: access
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/acquisition-ledger.json
+  locator: All13 direct request receipts and version assessment; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/acquisition-ledger.json
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: 115e499fc325b468155138871fdfe920b4216f41dc9c939051ea563d22af8a21
+  support: supports
+  summary: NineHTTP200, two403, one500 and one429 are kept separate from curl success.
+    Failed finalPDF is HTML; final institutional VOR is authorized-users-only. No
+    bypass/contact/paid access.
+- evidence_id: handoff
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468/research/sources/issue-468-probertite-primary/20261021T172303Z.md
+  locator: Full final successor report and evidence JSON; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468/research/sources/issue-468-probertite-primary/20261021T172303Z.md
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: 6ac8824f549388667a8116889562956063d11ffbd6a3851742477fbe06870957
+  support: supports
+  summary: The bounded deposit update and residual issue468 criteria are supported;
+    preserved source disagreements are not silently repaired.
+- evidence_id: integrity
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/integrity-successor.json
+  locator: 2355current hash assertions across2125resolved paths; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/integrity-successor.json
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: bfd560a9d25688d79115ce236d70374ea994bebb76ba2dd1e41f627fcf42dbf7
+  support: supports
+  summary: All current references pass; two explicitly mapped pre-edit owners and
+    two historical checksum-only comparisons are distinguished. Frozen originals and
+    prior source/review history are preserved.
+- evidence_id: scope
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/scope-check.json
+  locator: All633generated pages and1360other base record/history paths; retained
+    file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/scope-check.json
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: e99c7601c2e8204a53764b8af0a44d126b4b78dcc8d2f4b2f9dacf6761866ac0
+  support: supports
+  summary: 630footer-only pages and three intended probertite content surfaces. All
+    other record/history bytes equal trusted base; all rendered outputs are retained.
+- evidence_id: history
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468/history/records/probertite/2026-10-21T171329Z-codex-821607.yaml
+  locator: Canonical EDIT, separate inline event and history_refs link; retained file
+    /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468/history/records/probertite/2026-10-21T171329Z-codex-821607.yaml
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: b649c202a3223583ed44590ff4a912e4f547505d51fc8a7b8b9b0d4bf126d7f9
+  support: supports
+  summary: Actual actor/time/owner and bounded official-deposit addition are documented.
+    Committed CREATE/history/prior review are immutable.
+- evidence_id: prior
+  kind: prior_review
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468/reviews/structured/20261016T052345Z-probertite-round112-independent/review.yaml
+  locator: Entire prior whole-owner scientific review and empty findings; retained
+    file /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468/reviews/structured/20261016T052345Z-probertite-round112-independent/review.yaml
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: 5dbb0509a21bd332bca0a99e99443c9ebb2268bcb61d5fe9b7a0b177994b241c
+  support: context_only
+  summary: Then-unavailable CIF access was a truthful historical limit; current evidence
+    advances it without inventing an old defect.
+- evidence_id: initial-finding
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/initial-source-review.json
+  locator: External source finding468-R1, probertite-search-ledger-timestamps; retained
+    file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/initial-source-review.json
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: bb2def45daf16028b993d796300eadc2b511d68bb3d6030149b2c06247be453d
+  support: context_only
+  summary: Initial compact ledger omitted known timestamps for batches3–4. The original
+    index, pair, raw receipts and review are preserved. No initial native owner finding
+    is fabricated.
+- evidence_id: resolution
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/successor-comparison.json
+  locator: Twelve preservation pairs and exact timestamp/provenance successor delta;
+    retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/successor-comparison.json
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: 3323819e87f71a690031efcc8c107da61e5bd7fcf605d388dfa23c1fd2e6a28e
+  support: supports
+  summary: Known nested timestamps are copied exactly; missing first-two end times
+    remain null. Owner/history/scientific/generated bytes unchanged. External468-R1
+    is substantively resolved; post-native final gate remains a separate receipt.
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/named-check.json
+  locator: Actual independent named validation0/chunk0f9d63; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/named-check.json
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: 8b7c243f458d527f35a460eeb3fe795cbc6b7a186ecee062052e9b6269d1ff1b
+  support: supports
+  summary: One exact probertite record validates.
+- evidence_id: full
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468-initial-final-gates.json
+  locator: Actual full6679 exit0/chunk3cc3ba,83.70s; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468-initial-final-gates.json
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: a7a15654a6d102fae1242d7e60d661a6f866031b4b7ab8348ddaffb1835a7c46
+  support: supports
+  summary: 363passed,3skipped,616records,745histories. Reused for identical owner/history/generated/governed
+    state through source-timestamp successor; subsequent combined final gate is not
+    preclaimed.
+- evidence_id: scoped
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468-scoped-gates.json
+  locator: 'Actual author81260 exit0/chunkbe721a: just validate and base-aware just
+    validate-history; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468-scoped-gates.json'
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: 0c381353e06ccfb8f684f3704048ccc5bedb0e4779339729b304d99c795cfb44
+  support: supports
+  summary: 616records and745histories valid; exact commands/logs checked. Independent
+    explicit require-records invocation is separate.
+- evidence_id: required-corpus
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/corpus-required.log
+  locator: Actual independent uv run --locked cmmmech validate --require-records,
+    exit0/chunk46f15b; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/review-468-independent/corpus-required.log
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: d47e19b123c18f1d48610ace095471a408192c504a56fb4fb473f668afceda40
+  support: supports
+  summary: 616records valid under explicit nonempty corpus requirement.
+- evidence_id: baseline
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468-baseline-gates.json
+  locator: Actual canonical98429 exit0/chunk5d3f0c,22matched; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-468-baseline-gates.json
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: 41e3a879274f38397e0baef8dea7a0461a3aa0927936d9834a75ff747364158c
+  support: supports
+  summary: Explicit reuse for unchanged governed/pin/executable bytes. Baseline363/3/616/744
+    precedes one new EDIT.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/search-ledger-v2.json
+  locator: Four recorded web.run batches on2026-10-21;14queries/4opens, including
+    exact-DOI correction/erratum/retraction queries; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/search-ledger-v2.json
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: 826c7bfabe62f7f9339c88399fa72e504726343ab4e47013b423817b67bbfb0f
+  support: context_only
+  summary: Reviewer inspected actual saved requests and relevant returned primary
+    excerpts; no affecting notice identified in those windows. This is bounded author-executed
+    search reused by the independent reviewer.
+  search_scope: Exact requests and actual timestamp fields preserved; no API domain/recency
+    filters, literal site terms retained. No universal notice-absence claim.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/dedup.json
+  locator: Ten named worktree/main record/history/research/review/skill roots plus
+    separately checked cited historical paths; retained file /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-468/dedup.json
+  accessed_at: '2026-10-21T17:25:39.121058Z'
+  snapshot_sha256: bb5675016bedbefcc686ec4bb5699ae66f4cef57f17ff1cac93a9b41b5d7880e
+  support: context_only
+  summary: Existing probertite owner remains appropriate; contextual mixed-feed references
+    are not duplicate species records.
+  search_scope: rg --no-ignore --hidden --follow across the explicit ten roots; current
+    all-state inventory514titles/bodies and selected468comments. Other issue comments
+    and whole machine not exhaustively searched.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species, formula and authority scope
+  outcome: supported
+  summary: Current IMA identity and grandfathered/year semantics are accurate. Probertite
+    remains distinct from ulexite, boron, borates commodity and mixed feeds; no unsupported
+    identifier or criticality claim.
+  target_ids:
+  - cmmmech:probertite
+  evidence_ids:
+  - owner
+  - ima
+  - dedup
+  dimensions:
+  - name: material_form
+    value: Mineral species with a natural Kramer specimen characterization
+    definition: Specimen-specific analytical/model results are not all-deposit purity
+      claims.
+    evidence_ids:
+    - ima
+    - aam
+  - name: criticality
+    value: No jurisdiction/list/edition assertion
+    definition: Boron content does not transfer commodity criticality to the mineral.
+    evidence_ids:
+    - owner
+- assessment_id: chemistry
+  area: quantity
+  topic: Specimen chemistry and measurement denominators
+  outcome: supported
+  summary: CaO15.8(2)/Na2O8.6(3)wt% and Li0.392wtppm from ten analyses agree with
+    the original. Probe Sr800–1000 versus laser-ablation1230±230wtppm are separate
+    summaries. Censoring and trace amounts prevent a trace-free or quantitative recovery
+    interpretation.
+  target_ids:
+  - cmmmech:probertite
+  evidence_ids:
+  - aam
+  - manual
+  - owner
+  dimensions:
+  - name: denominators
+    value: Specimen-specific mass fractions; n=10 trace analyses
+    definition: Not extraction efficiency, mineral fraction, solution concentration
+      or independent deposits.
+    evidence_ids:
+    - aam
+    - manual
+  - name: analytical_limits
+    value: Beam damage and source-specific chemistry summaries
+    definition: No averaged cross-method correction or source-wide purity inferred.
+    evidence_ids:
+    - aam
+    - handoff
+- assessment_id: models
+  area: evidence
+  topic: Separate diffraction models and hydrogen sites
+  outcome: supported
+  summary: The official deposit independently confirms the published provenance and31sites/10H
+    per model. Separate crystals and20(1)/293(1)K temperatures remain distinct. The
+    expanded H40B20Ca4Na4O56 formula with Z1 must not be misread as Z1 for the reduced
+    formula.
+  target_ids:
+  - cmmmech:probertite
+  evidence_ids:
+  - owner
+  - aam
+  - cif
+  - zip
+  - deposit-link
+  dimensions:
+  - name: H_model
+    value: Neutron31anisotropic sites versus X-ray21anisotropic and10isotropic H
+    definition: Located/modelled H sites with unknown restraint counts do not establish
+      all-free refinement.
+    evidence_ids:
+    - cif
+    - aam
+  - name: organism_biomass
+    value: 'Not applicable: mineral characterization'
+    definition: No microbial, cellular, protein, causal extraction or biological experiment
+      is asserted.
+    evidence_ids:
+    - owner
+- assessment_id: refinement-limits
+  area: scope
+  topic: Extinction and numerical consistency boundaries
+  outcome: supported
+  summary: Native SHELXL extinction coefficient0.0090(16) contrasts with AAMLarson
+    wording; X-raynative saysnone. Unknown restraint counts, lack of observed intensity/instruction
+    payload and neutron displacement limitations remain explicit. Static-coordinate
+    geometry supports provenance, not refinement accuracy.
+  target_ids:
+  - cmmmech:probertite
+  evidence_ids:
+  - owner
+  - cif
+  - numeric
+  - numeric-comparison
+  - handoff
+  dimensions:
+  - name: calculation_scope
+    value: 124bonds,374angles,628torsions;52positive-definite anisotropic tensors
+    definition: Rounded-coordinate calculations only; no covariance, extinction refit
+      or measured uncertainty validation.
+    evidence_ids:
+    - numeric
+  - name: source_disagreements
+    value: B2prose/table range and mean; angle uncertainties and hydrogen-angle prose
+    definition: Differences are retained literally without selecting a replacement
+      value in the owner.
+    evidence_ids:
+    - aam
+    - manual
+    - handoff
+- assessment_id: processing-boundary
+  area: scope
+  topic: Dissolution, recovery and deployment excluded
+  outcome: supported
+  summary: Kirka2009feed remains separate from Kramer natural crystals. The incomplete
+    cached primary excerpts and absent methods/results do not support a kinetic or
+    recovery mechanism. Prospective shielding discussion is not measured concrete
+    performance.
+  target_ids:
+  - cmmmech:probertite
+  evidence_ids:
+  - owner
+  - aam
+  - preview2009
+  - handoff
+  dimensions:
+  - name: controls_and_outcomes
+    value: No admitted processing mechanism
+    definition: Missing loading/phase-impurity/denominator evidence is not supplied
+      by structural characterization.
+    evidence_ids:
+    - preview2009
+    - handoff
+  - name: deployment
+    value: No measured industrial deployment or isolated product recovery
+    definition: Natural industrial interest and prospective applications are context
+      only.
+    evidence_ids:
+    - owner
+    - aam
+- assessment_id: history-provenance
+  area: provenance
+  topic: Bounded evidence advance and immutable historical record
+  outcome: supported
+  summary: Official public-link/CIF provenance and same-AAM historical digest comparison
+    support the new citation. Initial source/history/review context remains preserved,
+    with actual canonical/inline EDIT chronology and inherited chemistry unchanged.
+  target_ids:
+  - cmmmech:probertite
+  evidence_ids:
+  - history
+  - prior
+  - access
+  - integrity
+  - handoff
+- assessment_id: source-resolution
+  area: provenance
+  topic: External source finding468-R1 resolved
+  outcome: supported
+  summary: The exact successor copies all four known nested timestamp values and preserves
+    null genuinely unavailable end times. Original source pair, ledger and initial
+    review remain immutable. This is an external source finding and not a fictitious
+    native previous occurrence.
+  target_ids:
+  - cmmmech:probertite
+  evidence_ids:
+  - initial-finding
+  - resolution
+  - notices
+- assessment_id: validation
+  area: schema
+  topic: Exact owner, history and generated output scope
+  outcome: supported
+  summary: Independent named and explicit nonempty corpus checks pass; author base-aware
+    history and full gate passed on unchanged owner/history/governed/generated bytes.
+    All633outputs retained and source successor changes only timestamp/provenance
+    text.
+  target_ids:
+  - cmmmech:probertite
+  evidence_ids:
+  - named
+  - required-corpus
+  - scoped
+  - full
+  - baseline
+  - scope
+findings: []
+actions: []
+limitations:
+- Complete2009original and final2022publisher article remain unavailable; no processing/phase-purity/recovery
+  claim is admitted.
+- Refinement instructions and individual observed intensities are absent from the
+  inspected deposit. Unknown restraints and extinction descriptions remain unresolved;
+  no re-refinement or uncertainty propagation was performed.
+- All20AAMoriginal pages and threeIMA pages were viewed; original2009 table/figure
+  pixels and full final2022article were not.
+- Source-level table/prose/uncertainty discrepancies remain literal; no guessed numerical
+  repair enters the owner.
+- Searches were author-executed and independently inspected from exact dated receipts;
+  returned windows and named local roots are bounded, not universal absence proof.
+- External source finding468-R1 has no initial native predecessor; its resolution
+  is evidenced without invented previous_occurrences.
+- The full initial gate is reused only because owner/history/generated/governed/executable
+  bytes are unchanged through the timestamp-only source successor. Native checker
+  and combined post-native full gate will be separate actual receipts, not preclaimed
+  here.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261016T052345Z-probertite-round112-independent
+  relationship: Preserved earlier whole-owner scientific review with then-unavailable
+    CIF access. Current complete scientific reassessment advances that evidence boundary
+    without changing its historical findings.
+notes:
+- Preliminary original/numeric inspection preceded final-owner assessment and is separately
+  recorded. All original author inputs and prior native bundle remain unchanged.
+- Every quantity retains source units and specimen/model basis; native geometry differences
+  are rounded-coordinate diagnostics.
+```
