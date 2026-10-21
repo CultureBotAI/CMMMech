@@ -22,6 +22,14 @@ sources:
     Results pp. 3-14, Figures 2-5 and Table 1
   url: https://doi.org/10.3389/fmicb.2017.00057
   accessed_on: '2026-10-14'
+- id: tesson2008
+  title: Tesson, Gaillard and Martin-Jezequel (2008). Brucite formation mediated by the diatom Phaeodactylum
+    tricornutum. Marine Chemistry 109:60-76, DOI 10.1016/j.marchem.2007.12.005. Complete cached author-copy
+    body extraction, Sections 2-4 and Table 1, paired with all eight original publisher figure JPEGs acquired
+    using verified PII S0304420307002939. No complete illustrated PDF or raw diffraction/assay dataset
+    acquired.
+  url: https://doi.org/10.1016/j.marchem.2007.12.005
+  accessed_on: '2026-10-21'
 mechanisms:
 - id: prony_filament_encrustation
   name: Field-associated brucite encrustation of microbial filaments
@@ -62,11 +70,76 @@ mechanisms:
       from these distant relatives. The micrographs are spatial observations, not time-lapse proof of
       the depicted growth sequence. No magnesium extraction, isolated-product recovery or engineered deployment
       follows.
+- id: diatom_associated_brucite_capsules
+  name: Brucite-assigned capsules associated with alkalinizing diatom cultures
+  process: biomineralization
+  microbial: true
+  description: Brucite-assigned magnesium-rich mineral capsules were observed around Phaeodactylum tricornutum
+    cells and extracellular polymeric material during laboratory culture alkalinization. Mg elemental
+    mapping and indexed electron diffraction support the authors' brucite assignment; microscopy distinguishes
+    partial and extensive encapsulation in bubbled and static cultures. This supports culture-associated
+    precipitation and encapsulation, without establishing that living cells are necessary or that crystal
+    nucleation occurs directly on the cell surface. The authors leave nucleation versus capture/chelation
+    of previously precipitated material unresolved.
+  context: Section 2.1, pages 61-62, describes source-designated P. tricornutum CCMP632 ENS Pt186 in polycarbonate
+    bottles containing artificial seawater enriched as f/2, at 16 degrees C with 14 h light/10 h dark,
+    with or without air bubbling. The historical stock chain and axenity were not independently verified;
+    current catalogue maintenance and later purity-test information are not assay conditions. Bubbled-culture
+    samples T1-T5 and static endpoint preparations are distinct. T5 was separately acidified with HCl
+    to pH 8. A cell-free enriched-medium control was alkalinized with NaOH to pH 10.5; another living
+    culture was held at pH 7.5-8.5 with CO2-enriched air before NaOH adjustment to pH 10. These interventions
+    do not form a fully matched control series separating photosynthesis, pH, biomass and surface chemistry.
+    Working culture volume, independent replicate count and a Mg mass balance are unresolved; the reported
+    50 mL is a microscopy aliquot. Electron microscopy used fixed/prepared material, SEM/AFM preparation
+    included SDS treatment, and AFM was performed in air. No isolated brucite mass, magnesium recovery
+    yield or industrial operation was demonstrated.
+  evidence:
+  - source_ref: tesson2008
+    supports: support
+    explanation: Section 3.2, pages 65-67, and original Figure 3 pair a zero-loss TEM capsule image with
+      its Mg map, a magnified layered region and a labelled microdiffraction pattern. The authors index
+      this as brucite with preferred [001] orientation. Figures 2, 4 and 6 show cell-associated capsules,
+      including partially encased bubbled samples and extensively encased static samples; these are prepared
+      specimens, not a time-lapse demonstration of the entire growth sequence. Additional EDX and XRD
+      confirmation is stated as data not shown, so no quantitative purity or phase fraction is independently
+      accepted from those unavailable data.
+  - source_ref: tesson2008
+    supports: partial
+    explanation: Sections 2.1 and 3.2 report a Mg-containing, amorphous-like precipitate after cell-free
+      medium alkalinization to pH 10.5; the control micrograph and raw phase data are not shown. The CO2/NaOH
+      living-culture intervention concerns EPS formation and has different pH conditions. These controls
+      support a role for solution chemistry and prevent a claim that microbes are required for Mg precipitation.
+      Section 4.3, page 72, explicitly cannot distinguish nucleation on cells from precipitation before
+      chelation. Carboxylate/sulfate interaction and Mg-mediated polymer stabilization remain interpretations
+      rather than isolated molecular mechanisms.
+  - source_ref: tesson2008
+    supports: partial
+    explanation: 'Original Figure 1 labels dissolved silicon in micromolar units and shows its decline
+      as pH rises; it is not a dissolved-Mg assay. The text''s silica amount/concentration wording and
+      94 versus 96 h T1 timing are retained as unresolved. Acid neutralization is described as dissolving
+      much of the shell and returning silica to solution, without a closed Mg or Si balance. Original
+      Figures 7-8 provide spectral context: Figure 7c actually spans 1200-800 cm^-1 despite the extracted
+      caption''s 800-400 range; Figure 7a labels 550, 1650 and 3698 cm^-1. Band overlap and differing
+      sample preparations prevent assigning a unique ligand mechanism or treating relative absorbance
+      as a mineral mass yield.'
 curation_history:
 - timestamp: '2026-10-14T08:18:00.832546+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
   summary: Created distinct mineral identity and bounded primary microbial association or precipitation
     evidence; retained control, phase-assignment and source-access limitations.
+- timestamp: '2026-10-21T12:43:51.059415+00:00'
+  curator: Codex GPT-6
+  action: EDIT
+  summary: Add separately qualified diatom-associated brucite capsules using newly acquired original figures
+    and the cached original body, while preserving unequal controls, source conflicts and nucleation/phase/recovery
+    limits.
+- timestamp: '2026-10-21T13:01:38.836522+00:00'
+  curator: codex (GPT-6; codex)
+  action: EDIT
+  summary: Correct the Tesson section 3.2 evidence page range to 65-67 after independent finding
+    194-R1; retain Figure 3 on page 65 and preserve all phase, control, nucleation and recovery limits.
 history_refs:
 - history/records/brucite/2026-10-14T081803Z-codex-bd85db.yaml
+- history/records/brucite/2026-10-21T124330Z-codex-bcc61e.yaml
+- history/records/brucite/2026-10-21T130122Z-codex-79eaca.yaml

@@ -1,0 +1,27 @@
+history_version: 1
+target:
+  kind: record
+  slug: brucite
+  path: data/records/brucite.yaml
+session:
+  id: 2026-10-21T130122Z-codex-79eaca
+  timestamp: '2026-10-21T13:01:22Z'
+  actors:
+  - name: codex
+    type: ai_agent
+    model: GPT-6
+    agent_tool: codex
+events:
+- type: EDIT
+  outcome: changed
+  summary: Correct the Tesson section 3.2 page range to include page 67
+  details: Resolve independent minor finding 194-R1 (brucite-tesson-section32-page-range)
+    from reviews/structured/20261021T125903Z-brucite-issue194-initial-independent/review.yaml.
+    Extend the owner evidence locator and successor source-report locator from pages 65-66
+    to 65-67, because JEMS/[001], unshown EDX-XRD and the cell-free control continuation are
+    on page 67. Figure 3 remains on page 65. Preserve all scientific claims, Prony evidence,
+    source limitations, initial EDIT sidecar, owner/source/native snapshots and review provenance.
+    Regenerate pages and obtain exact-state independent successor review and validation.
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/194
