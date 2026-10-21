@@ -112,9 +112,9 @@ mechanisms:
     evidence:
     - source_ref: ping2016
       supports: partial
-      explanation: Ping et al. (2016) used the synthetic Sil-1 peptide sequence (SSKKSGSYSGSKGSKRRIL)
-        fused to the E. coli outer-membrane Ice-nucleation protein (INP) in Tris-buffered saline with
-        TALH; non-engineered E. coli controls were not included.
+      explanation: Provides the N-terminal outer-membrane Ice-nucleation protein (INP) anchor domain fused
+        to the synthetic Sil-1 peptide in Tris-buffered saline with TALH in Ping et al. (2016); non-engineered
+        E. coli controls were not included.
   - uniprot_accession: UniProtKB:Q9SE35
     entry_name: SIL1_CYLFU
     protein_name: Silaffin-1
@@ -124,15 +124,16 @@ mechanisms:
       id: NCBITaxon:2853
       label: Cylindrotheca fusiformis
     functional_role: Diatom silaffin-1 precursor (SIL1) providing the C-terminal cationic peptide mineralization
-      domain in the engineered INP-silaffin fusion that nucleates amorphous titanium phosphate/oxide prior
-      to calcination into anatase.
+      domain in the engineered INP-silaffin fusion that nucleates amorphous titanium oxide prior to calcination
+      into anatase.
     annotation_note: Recombinant INP-silaffin fusion expressed in Escherichia coli BL21(DE3) (NCBITaxon:469008);
       C-terminal silaffin peptide originates from Cylindrotheca fusiformis SIL1 (UniProtKB:Q9SE35, NCBITaxon:2853).
     evidence:
     - source_ref: ping2016
-      supports: support
-      explanation: Cationic silaffin peptide domain displayed on recombinant E. coli promotes Ti precursor
-        hydrolysis and precipitation on the bacterial template before 600 C calcination to anatase TiO2.
+      supports: partial
+      explanation: Ping et al. (2016) used the synthetic Sil-1 peptide sequence (SSKKSGSYSGSKGSKRRIL)
+        fused to the E. coli outer-membrane Ice-nucleation protein (INP) in Tris-buffered saline with
+        TALH; non-engineered E. coli controls were not included.
 causal_graphs:
 - id: inp_silaffin_templated_anatase_graph
   name: Surface-displayed INP-silaffin templated Ti mineralization and thermal conversion to anatase
@@ -169,9 +170,10 @@ causal_graphs:
         NCBITaxon:321).
       evidence:
       - source_ref: ping2016
-        supports: support
-        explanation: Provides the outer-membrane anchor domain displaying the fused silaffin peptide on
-          the surface of recombinant E. coli cells for Ti precursor mineralization.
+        supports: partial
+        explanation: Provides the N-terminal outer-membrane Ice-nucleation protein (INP) anchor domain
+          fused to the synthetic Sil-1 peptide in Tris-buffered saline with TALH in Ping et al. (2016);
+          non-engineered E. coli controls were not included.
   - id: sil1_mineralization_peptide
     label: Sil1 silaffin mineralization peptide domain (SIL1)
     node_type: GENE_OR_PROTEIN
@@ -189,8 +191,8 @@ causal_graphs:
         id: NCBITaxon:2853
         label: Cylindrotheca fusiformis
       functional_role: Diatom silaffin-1 precursor (SIL1) providing the C-terminal cationic peptide mineralization
-        domain in the engineered INP-silaffin fusion that nucleates amorphous titanium phosphate/oxide
-        prior to calcination into anatase.
+        domain in the engineered INP-silaffin fusion that nucleates amorphous titanium oxide prior to
+        calcination into anatase.
       annotation_note: Recombinant INP-silaffin fusion expressed in Escherichia coli BL21(DE3) (NCBITaxon:469008);
         C-terminal silaffin peptide originates from Cylindrotheca fusiformis SIL1 (UniProtKB:Q9SE35, NCBITaxon:2853).
       evidence:

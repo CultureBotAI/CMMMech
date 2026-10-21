@@ -111,7 +111,7 @@ mechanisms:
     - source_ref: brookshaw_2014
       supports: partial
       explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (mtrC) for extracellular
-        electron transfer in zhang_2023; individual cytochrome genes were not mutated.
+        electron transfer in brookshaw_2014; individual cytochrome genes were not mutated.
   - uniprot_accession: UniProtKB:Q8EG33
     entry_name: Q8EG33_SHEON
     protein_name: Extracelllular iron oxide respiratory system surface decaheme cytochrome c component
@@ -136,7 +136,7 @@ mechanisms:
     - source_ref: brookshaw_2014
       supports: partial
       explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (omcA) for extracellular
-        electron transfer in zhang_2023; individual cytochrome genes were not mutated.
+        electron transfer in brookshaw_2014; individual cytochrome genes were not mutated.
   - uniprot_accession: UniProtKB:Q8E8S0
     entry_name: CYMA_SHEON
     protein_name: Tetraheme c-type cytochrome CymA
@@ -163,7 +163,7 @@ mechanisms:
     - source_ref: brookshaw_2014
       supports: partial
       explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (cymA) for extracellular
-        electron transfer in zhang_2023; individual cytochrome genes were not mutated.
+        electron transfer in brookshaw_2014; individual cytochrome genes were not mutated.
 causal_graphs:
 - id: mr1_chlorite_fe_reduction_graph
   name: Shewanella oneidensis MR-1 extracellular reduction of chlorite-associated Fe(III)
@@ -206,7 +206,7 @@ causal_graphs:
       - source_ref: brookshaw_2014
         supports: partial
         explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (cymA) for extracellular
-          electron transfer in zhang_2023; individual cytochrome genes were not mutated.
+          electron transfer in brookshaw_2014; individual cytochrome genes were not mutated.
   - id: mtrc_cytochrome
     label: MtrC outer-membrane decaheme cytochrome c (SO_1778)
     node_type: GENE_OR_PROTEIN
@@ -239,7 +239,7 @@ causal_graphs:
       - source_ref: brookshaw_2014
         supports: partial
         explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (mtrC) for extracellular
-          electron transfer in zhang_2023; individual cytochrome genes were not mutated.
+          electron transfer in brookshaw_2014; individual cytochrome genes were not mutated.
   - id: omca_cytochrome
     label: OmcA outer-membrane decaheme cytochrome c (SO_1779)
     node_type: GENE_OR_PROTEIN
@@ -271,18 +271,20 @@ causal_graphs:
       - source_ref: brookshaw_2014
         supports: partial
         explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (omcA) for extracellular
-          electron transfer in zhang_2023; individual cytochrome genes were not mutated.
+          electron transfer in brookshaw_2014; individual cytochrome genes were not mutated.
   - id: oxidized_metal_substrate
-    label: Natural Fe(III)-bearing ripidolite chlorite (CCa-2)
+    label: Chlorite-associated Fe(III) in Michigamme metamorphic chlorite (author-assigned ferroan clinochlore)
     node_type: CHEMICAL_ENTITY
-    description: Terminal electron acceptor substrate (Natural Fe(III)-bearing ripidolite chlorite (CCa-2))
-      in zhang_2023.
+    description: Structural and impurity Fe(III) in Michigamme metamorphic chlorite powder (<100 um, author-assigned
+      ferroan clinochlore) incubated with Shewanella oneidensis MR-1 in brookshaw_2014.
     protein_grounding_status: NOT_APPLICABLE
   - id: reduced_metal_product
-    label: Bioreduced Fe(II)-enriched chlorite and released aqueous Fe/Si/Al
+    label: Solid-associated reduced Fe(II) in chlorite (~21% Mössbauer Fe(III) area decrease) and elevated
+      0.5 N HCl-extractable Fe(II)
     node_type: MATERIAL_OR_PHASE
-    description: Resulting reduced product state (Bioreduced Fe(II)-enriched chlorite and released aqueous
-      Fe/Si/Al) in zhang_2023.
+    description: Predominantly solid-associated Fe(II) in reduced Michigamme chlorite (fitted chlorite
+      Fe(III) Mössbauer area decreased from 10.4% to 8.2%, ~21% of starting chlorite Fe(III) reduced)
+      with elevated 0.5 N HCl-extractable Fe(II) in brookshaw_2014.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cyma_dehydrogenase
@@ -322,14 +324,15 @@ causal_graphs:
     target: reduced_metal_product
     predicate: transforms_into
     relationship: reductive valence transformation and phase formation
-    description: Extracellular electron transfer converts Natural Fe(III)-bearing ripidolite chlorite
-      (CCa-2) into Bioreduced Fe(II)-enriched chlorite and released aqueous Fe/Si/Al.
+    description: Extracellular electron transfer partially reduces chlorite-associated Fe(III) in Michigamme
+      metamorphic chlorite (ferroan clinochlore) to solid-associated Fe(II) (~21% Mössbauer Fe(III) area
+      decrease) and elevated 0.5 N HCl-extractable Fe(II).
     evidence:
     - source_ref: brookshaw_2014
       supports: support
-      explanation: Shewanella oneidensis MR-1 bioelectrochemical/anaerobic reduction converts Natural
-        Fe(III)-bearing ripidolite chlorite (CCa-2) into Bioreduced Fe(II)-enriched chlorite and released
-        aqueous Fe/Si/Al in zhang_2023.
+      explanation: Shewanella oneidensis MR-1 resting-cell incubations increased 0.5 N HCl-extractable
+        Fe(II) and decreased fitted chlorite Fe(III) Mössbauer spectral area from 10.4% to 8.2% (~21%
+        starting chlorite Fe(III) reduced) in brookshaw_2014.
 curation_history:
 - timestamp: '2026-10-14T16:33:06.562206+00:00'
   curator: codex (GPT-6; codex)
@@ -344,8 +347,8 @@ curation_history:
 - timestamp: '2026-10-21T18:46:53Z'
   curator: claude
   action: EDIT
-  summary: Set representative CymA/MtrC/OmcA cytochrome evidence to partial and refined substrate/product
-    labels in chlorite.yaml.
+  summary: Set representative CymA/MtrC/OmcA cytochrome evidence to partial and aligned Michigamme metamorphic
+    chlorite substrate/product descriptions with brookshaw_2014 in chlorite.yaml.
 history_refs:
 - history/records/chlorite/2026-10-14T163245Z-codex-f6c11c.yaml
 - history/records/chlorite/2026-10-18T042750Z-antigravity-34fde1.yaml

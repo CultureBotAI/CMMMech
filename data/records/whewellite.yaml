@@ -124,8 +124,9 @@ mechanisms:
     - source_ref: frank_kamenetskaya_2019
       supports: partial
       explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion;
-        Frank-Kamenetskaya et al. (2019) observed whewellite (Ca(C2O4)·H2O) crystallization on calcite
-        in A. niger cultures without testing cexA mutants or measuring citrate/oxalate export directly.
+        Frank-Kamenetskaya et al. (2019) observed whewellite (Ca(C2O4)·H2O) crystallization on fluorapatite-rich
+        phosphate rock (apatite-nepheline ore) in A. niger Ch4/07 cultures without testing cexA mutants
+        or measuring citrate/oxalate export directly.
 - id: lichen_associated_whewellite
   name: Whewellite associated with natural lichen biofilms
   process: biomineralization
@@ -202,8 +203,9 @@ causal_graphs:
       - source_ref: frank_kamenetskaya_2019
         supports: partial
         explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion;
-          Frank-Kamenetskaya et al. (2019) observed whewellite (Ca(C2O4)·H2O) crystallization on calcite
-          in A. niger cultures without testing cexA mutants.
+          Frank-Kamenetskaya et al. (2019) observed whewellite (Ca(C2O4)·H2O) crystallization on fluorapatite-rich
+          phosphate rock (apatite-nepheline ore) in A. niger Ch4/07 cultures without testing cexA mutants
+          or measuring citrate/oxalate export directly.
   - id: secreted_organic_acids
     label: Secreted citric and oxalic acid pool (acidification and chelation)
     node_type: CHEMICAL_ENTITY
@@ -218,8 +220,9 @@ causal_graphs:
   - id: transformed_product
     label: Whewellite (Ca(C2O4)·H2O) crystals
     node_type: MATERIAL_OR_PHASE
-    description: Whewellite (calcium oxalate monohydrate, Ca(C2O4)·H2O) crystals formed on marble/calcite
-      in inoculated Aspergillus niger cultures (weddellite occurred only in separate field samples).
+    description: Whewellite (calcium oxalate monohydrate, Ca(C2O4)·H2O) crystals formed on fluorapatite-rich
+      phosphate rock (apatite-nepheline ore) in inoculated Aspergillus niger Ch4/07 cultures (co-occurring
+      weddellite was reported in the natural lichen biofilm samples).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cexa_citrate_exporter
@@ -247,13 +250,13 @@ causal_graphs:
     target: transformed_product
     predicate: transforms_into
     relationship: secondary oxalate/phosphate precipitation or mineral alteration
-    description: Reaction of Calcite / CaCO3 marble substrate with fungal metabolites in experimental
-      culture produces Whewellite (Ca(C2O4)·H2O) crystals.
+    description: Reaction of Fluorapatite-rich phosphate rock (apatite-nepheline ore) with fungal metabolites
+      in experimental Aspergillus niger Ch4/07 culture produces Whewellite (Ca(C2O4)·H2O) crystals.
     evidence:
     - source_ref: frank_kamenetskaya_2019
       supports: support
-      explanation: Experimental Aspergillus niger culture on marble/calcite yielded whewellite (Ca(C2O4)·H2O)
-        crystals by XRD and SEM.
+      explanation: Experimental Aspergillus niger Ch4/07 culture on fluorapatite-rich phosphate rock (apatite-nepheline
+        ore) yielded whewellite (Ca(C2O4)·H2O) crystals by XRD and SEM.
 curation_history:
 - timestamp: '2026-10-14T10:45:06.275870+00:00'
   curator: codex (GPT-6; codex)
@@ -268,8 +271,8 @@ curation_history:
 - timestamp: '2026-10-21T18:46:53Z'
   curator: claude
   action: EDIT
-  summary: Removed 'and weddellite' from experimental transformed_product node (experimental cultures
-    formed only whewellite) and set representative CexA evidence to partial.
+  summary: Set representative CexA evidence to partial and aligned fluorapatite-rich phosphate rock substrate
+    and whewellite crystallization product descriptions with Frank-Kamenetskaya et al. (2019) in whewellite.yaml.
 history_refs:
 - history/records/whewellite/2026-10-14T104509Z-codex-bf78cf.yaml
 - history/records/whewellite/2026-10-18T042750Z-antigravity-9c7dda.yaml

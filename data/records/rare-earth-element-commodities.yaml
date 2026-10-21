@@ -121,7 +121,7 @@ mechanisms:
       R100K variant is immobilized on agarose columns for single-stage chromatographic separation of Nd(III)
       and Dy(III).
     annotation_note: Direct UniProtKB match for Hansschlegelia quercus (NCBITaxon:2528245) lanmodulin
-      (EYR15_14300, reference proteome UP000295567) characterized in Mattocks et al. (2023).
+      (EYR15_14300, reference proteome UP000291613) characterized in Mattocks et al. (2023).
     evidence:
     - source_ref: mattocks_2023
       supports: support
@@ -158,7 +158,7 @@ causal_graphs:
     Dy(III)
   description: Causal pathway linking immobilized Hansschlegelia quercus lanmodulin (Hans-LanM, UniProtKB:A0A4V2JDD3,
     and its R100K variant) and comparator Mex-LanM (UniProtKB:C5B164) to selective coordination and single-column
-    pH/citrate resolution of neodymium (Nd) and dysprosium (Dy).
+    stepwise malonate (pH 5.0) and HCl (pH 1.5) resolution of neodymium (Nd) and dysprosium (Dy).
   scope: RECORD_SPECIFIC_MECHANISM
   mechanism_ref: hans_lanmodulin_r100k_nd_dy_separation
   nodes:
@@ -187,7 +187,7 @@ causal_graphs:
         whose R100K variant is immobilized on agarose columns for single-stage chromatographic separation
         of Nd(III) and Dy(III).
       annotation_note: Direct UniProtKB match for Hansschlegelia quercus (NCBITaxon:2528245) lanmodulin
-        (EYR15_14300, reference proteome UP000295567) characterized in Mattocks et al. (2023).
+        (EYR15_14300, reference proteome UP000291613) characterized in Mattocks et al. (2023).
       evidence:
       - source_ref: mattocks_2023
         supports: support
@@ -227,16 +227,17 @@ causal_graphs:
         explanation: Comparator monomeric lanmodulin benchmarked against dimeric Hans-LanM to demonstrate
           how EF-hand and dimer-interface architecture tune Nd/Dy separation.
   - id: mixed_nd_dy_feed
-    label: Mixed Nd(III)/Dy(III) feed solution (95:5 Nd/Dy molar mixture)
+    label: Mixed Nd(III)/Dy(III) feed solution (344.2 uM Nd / 18.5 uM Dy; 95:5 Nd/Dy molar mixture)
     node_type: CHEMICAL_ENTITY
-    description: Model 0.95 mM Nd(III) / 0.05 mM Dy(III) chloride feed loaded onto the immobilized Hans-LanM
-      agarose column at pH 2.5.
+    description: Synthetic 95:5 Nd/Dy chloride feed (mean 344.2 uM Nd and 18.5 uM Dy, Table S16) loaded
+      onto the 0.7 mL immobilized Hans-LanM R100K agarose column conditioned at pH 5.0.
     protein_grounding_status: NOT_APPLICABLE
   - id: separated_nd_and_dy_fractions
-    label: Resolved high-purity Nd(III) and Dy(III) eluate fractions
+    label: Resolved high-purity Dy(III) (98.1% purity, 99.3% yield) and Nd(III) (99.9% purity, 99.8% yield)
+      eluate fractions
     node_type: CHEMICAL_ENTITY
-    description: Separated Dy-enriched fraction eluted with 3.5 mM malonate (pH 2.5) and Nd-enriched fraction
-      desorbed with pH 1.5 HCl (>98% single-pass purity).
+    description: Separated Dy-enriched fraction eluted with stepwise 30, 50, and 90 mM malonate (pH 5.0)
+      and Nd-enriched fraction desorbed with pH 1.5 HCl (Figure 4d).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: hans_lanm_protein
@@ -261,14 +262,16 @@ causal_graphs:
   - source: mixed_nd_dy_feed
     target: separated_nd_and_dy_fractions
     predicate: transforms_into
-    relationship: selective malonate (pH 2.5) and pH 1.5 HCl stepwise column elution
-    description: Immobilized Hans-LanM column resolves a 95:5 Nd/Dy feed into >98%-pure Dy and Nd fractions
-      using 3.5 mM malonate (pH 2.5) followed by pH 1.5 HCl stripping.
+    relationship: stepwise 30, 50, and 90 mM malonate (pH 5.0) and pH 1.5 HCl column elution
+    description: Immobilized Hans-LanM R100K column resolves a 95:5 Nd/Dy feed (344.2 uM Nd, 18.5 uM Dy
+      at pH 5.0) into 98.1%-pure Dy (99.3% yield) and 99.9%-pure Nd (99.8% yield) fractions using stepwise
+      30, 50, and 90 mM malonate followed by pH 1.5 HCl stripping.
     evidence:
     - source_ref: mattocks_2023
       supports: support
-      explanation: Single-column stepwise elution with 3.5 mM malonate at pH 2.5 and HCl at pH 1.5 separated
-        a 95:5 Nd/Dy feed into >98% pure Nd and Dy fractions.
+      explanation: Figure 4d and Table S16 report single-column stepwise elution of a 344.2 uM Nd / 18.5
+        uM Dy (95:5) feed conditioned at pH 5.0 using 30, 50, and 90 mM malonate followed by pH 1.5 HCl,
+        yielding 98.1% pure Dy (99.3% yield) and 99.9% pure Nd (99.8% yield).
 curation_history:
 - timestamp: '2026-10-11T08:37:57Z'
   curator: Codex (GPT-6; Codex)
@@ -289,8 +292,8 @@ curation_history:
 - timestamp: '2026-10-21T18:46:53Z'
   curator: claude
   action: EDIT
-  summary: Corrected Hans-LanM column feed ratio to 95:5 Nd/Dy, elution protocol to 3.5 mM malonate (pH
-    2.5) and pH 1.5 HCl, and NCBITaxon ID in annotation_note to NCBITaxon:2528245.
+  summary: Corrected Hans-LanM R100K column feed (344.2 uM Nd / 18.5 uM Dy at pH 5.0), stepwise 30/50/90
+    mM malonate and pH 1.5 HCl elution protocol, and reference proteome ID (UP000291613) in annotation_note.
 history_refs:
 - history/records/rare-earth-element-commodities/2026-10-11T083756Z-codex-eb8683.yaml
 - history/records/rare-earth-element-commodities/2026-10-18T042750Z-antigravity-e6fe74.yaml

@@ -296,16 +296,16 @@ causal_graphs:
       pH and carbonate supersaturation.
     protein_grounding_status: NOT_APPLICABLE
   - id: dissolved_metal_cations
-    label: Dissolved Zn(II) ions in urea-CaCl2/ZnCl2 mineralization medium
+    label: Dissolved Zn(II) ions in urea-ZnCl2 mineralization medium
     node_type: CHEMICAL_ENTITY
-    description: Dissolved cations (Dissolved Zn(II) ions in urea-CaCl2/ZnCl2 mineralization medium) undergoing
-      carbonate/phosphate precipitation.
+    description: Dissolved Zn(II) cations in analytical-grade urea-ZnCl2 mineralization medium undergoing
+      ureolytic carbonate precipitation.
     protein_grounding_status: NOT_APPLICABLE
   - id: precipitated_mineral_phase
-    label: Precipitated smithsonite (ZnCO3) and hydrozincite/calcite carbonate solids
+    label: Smithsonite-assigned zinc carbonate precipitate (ZnCO3)
     node_type: MATERIAL_OR_PHASE
-    description: Solid mineral phase (Precipitated smithsonite (ZnCO3) and hydrozincite/calcite carbonate
-      solids) formed via ureolytic alkalinization.
+    description: Solid mineral phase (Smithsonite-assigned zinc carbonate precipitate, ZnCO3) formed via
+      ureolytic alkalinization in huang2025.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: ureabc_urease_complex
@@ -332,13 +332,13 @@ causal_graphs:
     target: precipitated_mineral_phase
     predicate: incorporates_into
     relationship: cation precipitation with carbonate/phosphate
-    description: Dissolved Zn(II) ions in urea-CaCl2/ZnCl2 mineralization medium precipitates into Precipitated
-      smithsonite (ZnCO3) and hydrozincite/calcite carbonate solids.
+    description: Dissolved Zn(II) ions in urea-ZnCl2 mineralization medium precipitate into Smithsonite-assigned
+      zinc carbonate precipitate (ZnCO3).
     evidence:
     - source_ref: huang2025
       supports: support
-      explanation: XRD/SEM-EDS and solution analysis confirm formation of Precipitated smithsonite (ZnCO3)
-        and hydrozincite/calcite carbonate solids.
+      explanation: XRD, FTIR, SEM-EDS, and solution Zn depletion analysis in huang2025 confirm formation
+        of Smithsonite-assigned zinc carbonate precipitate (ZnCO3) from urea-ZnCl2 medium.
 curation_history:
 - timestamp: '2026-10-12T13:24:04.643903Z'
   curator: codex (GPT-6; codex)
@@ -354,8 +354,8 @@ curation_history:
 - timestamp: '2026-10-21T18:46:53Z'
   curator: claude
   action: EDIT
-  summary: Set representative UreABC subunit evidence to partial, standardized cation/precipitate node
-    labels, and fixed edge grammar in smithsonite.yaml.
+  summary: Set representative Sporosarcina pasteurii UreABC evidence to partial and aligned urea-ZnCl2
+    medium and smithsonite (ZnCO3) product descriptions with huang2025 in smithsonite.yaml.
 history_refs:
 - history/records/smithsonite/2026-10-12T132345Z-codex-ba48e7.yaml
 - history/records/smithsonite/2026-10-18T042750Z-antigravity-dd007e.yaml

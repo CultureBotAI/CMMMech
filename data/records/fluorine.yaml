@@ -116,8 +116,9 @@ mechanisms:
     pfam_ids:
     - Pfam:PF00561
     functional_role: Haloacetate dehalogenase H-1 (EC 3.8.1.3; dehH1) from Delftia acidovorans strain
-      B heterologously expressed in Pseudomonas putida, catalyzing hydrolytic C-F bond cleavage of fluoroacetate
-      to glycolate and fluoride (F-).
+      B heterologously expressed in Pseudomonas putida, catalyzing hydrolytic C-F bond cleavage of 2-fluorocarboxylic
+      acids (racemic alpha-fluorophenylacetic acid and 2-fluoropropionic acid) to hydroxyacids (mandelate
+      / lactate) and fluoride (F-).
     annotation_note: Heterologously expressed in Pseudomonas putida (NCBITaxon:303); native donor enzyme
       is Delftia acidovorans (Moraxella sp. strain B) DehH1 (UniProtKB:Q7DI61, NCBITaxon:80866).
     evidence:
@@ -211,7 +212,8 @@ mechanisms:
       not demonstrated deployment.'
 causal_graphs:
 - id: recombinant_putida_dehh1_defluorination_graph
-  name: Heterologous DehH1 hydrolytic defluorination of fluoroacetate in Pseudomonas putida
+  name: Heterologous DehH1/DehH2 hydrolytic defluorination of 2-fluorocarboxylic acids in Pseudomonas
+    putida
   description: Causal pathway linking Delftia acidovorans haloacid dehalogenases DehH1 and DehH2 to hydrolytic
     C-F bond cleavage of racemic alpha-fluorophenylacetic acid and 2-fluoropropionic acid and release
     of inorganic fluoride ion (F-).
@@ -223,7 +225,7 @@ causal_graphs:
     node_type: GENE_OR_PROTEIN
     gene_symbol: dehH1
     description: Hydrolytic haloacetate dehalogenase H-1 (EC 3.8.1.3) that cleaves carbon-fluorine bonds
-      in fluoroacetate.
+      in 2-fluorocarboxylic acids (alpha-fluorophenylacetate and 2-fluoropropionate).
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:Q7DI61
@@ -242,8 +244,9 @@ causal_graphs:
       pfam_ids:
       - Pfam:PF00561
       functional_role: Haloacetate dehalogenase H-1 (EC 3.8.1.3; dehH1) from Delftia acidovorans strain
-        B heterologously expressed in Pseudomonas putida, catalyzing hydrolytic C-F bond cleavage of fluoroacetate
-        to glycolate and fluoride (F-).
+        B heterologously expressed in Pseudomonas putida, catalyzing hydrolytic C-F bond cleavage of 2-fluorocarboxylic
+        acids (racemic alpha-fluorophenylacetic acid and 2-fluoropropionic acid) to hydroxyacids (mandelate
+        / lactate) and fluoride (F-).
       annotation_note: Heterologously expressed in Pseudomonas putida (NCBITaxon:303); native donor enzyme
         is Delftia acidovorans (Moraxella sp. strain B) DehH1 (UniProtKB:Q7DI61, NCBITaxon:80866).
       evidence:
@@ -289,7 +292,7 @@ causal_graphs:
         explanation: Purified from Delftia acidovorans strain B and sequenced by LC-MS/MS in Dodge et
           al. (2024); catalyzes hydrolytic defluorination of alpha-fluorophenylacetic acid and 2-fluoropropionic
           acid to release inorganic fluoride (F-).
-  - id: fluoroacetate_substrate
+  - id: fluorocarboxylic_acid_substrate
     label: Racemic alpha-fluorophenylacetic acid and 2-fluoropropionic acid
     node_type: CHEMICAL_ENTITY
     description: Fluorinated carboxylic acid substrates (alpha-fluorophenylacetate and 2-fluoropropionate)
@@ -303,7 +306,7 @@ causal_graphs:
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: dehh1_fluoroacetate_dehalogenase
-    target: fluoroacetate_substrate
+    target: fluorocarboxylic_acid_substrate
     predicate: acts_on
     relationship: nucleophilic hydrolytic C-F bond cleavage
     description: Dehh1 catalyzes hydrolytic defluorination of alpha-fluorophenylacetic acid and 2-fluoropropionic
@@ -314,7 +317,7 @@ causal_graphs:
       explanation: Purified enzyme assays and LC-MS/MS in Dodge et al. (2024) demonstrate hydrolytic defluorination
         of alpha-fluorophenylacetate and 2-fluoropropionate.
   - source: dehh2_haloacetate_dehalogenase
-    target: fluoroacetate_substrate
+    target: fluorocarboxylic_acid_substrate
     predicate: modulates
     relationship: co-encoded haloacetate dehalogenase locus activity
     description: Dehh2 catalyzes hydrolytic defluorination of alpha-fluorophenylacetic acid and 2-fluoropropionic
@@ -324,10 +327,10 @@ causal_graphs:
       supports: partial
       explanation: Purified enzyme assays and LC-MS/MS in Dodge et al. (2024) demonstrate hydrolytic defluorination
         of alpha-fluorophenylacetate and 2-fluoropropionate.
-  - source: fluoroacetate_substrate
+  - source: fluorocarboxylic_acid_substrate
     target: inorganic_fluoride_ion
     predicate: produces
-    relationship: hydrolytic defluorination to fluoride and glycolate
+    relationship: hydrolytic defluorination to fluoride and 2-hydroxyacids (mandelate / lactate)
     description: Hydrolytic C-F bond cleavage converts alpha-fluorophenylacetic acid and 2-fluoropropionic
       acid into inorganic fluoride (F-) and mandelate/lactate.
     evidence:

@@ -162,10 +162,11 @@ causal_graphs:
     description: Acidic feed solution containing Sc(III) and competing non-target cations.
     protein_grounding_status: NOT_APPLICABLE
   - id: purified_scandium_eluate
-    label: Selectively captured and malonate-eluted (pH 5.0) Sc(III) fraction
+    label: Selectively captured and eluted high-purity Sc(III) fraction
     node_type: CHEMICAL_ENTITY
-    description: Resolved Sc(III) fraction eluted early with 30 mM malonate at pH 5.0 ahead of La(III)
-      eluted with 50 mM malonate at pH 5.0 from the immobilized LanM column.
+    description: Resolved Sc(III) fraction recovered at >99% yield and >99% purity from mixed leachate
+      feed (Figure 5) and separated early with 30 mM malonate (pH 5.0, ~94.5% Sc yield) ahead of La(III)
+      (50 mM malonate, pH 5.0, ~98.9% La yield) in binary Sc/La column tests.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: mex_lanm_protein
@@ -181,14 +182,18 @@ causal_graphs:
   - source: mixed_scandium_feed
     target: purified_scandium_eluate
     predicate: transforms_into
-    relationship: stepwise 30 mM and 50 mM malonate elution at pH 5.0
-    description: Stepwise elution with 30 mM malonate (pH 5.0) selectively desorbs Sc(III) (~94.5% yield)
-      before 50 mM malonate (pH 5.0) elutes La(III) (~98.9% yield).
+    relationship: selective column capture and desorption of Sc(III) from multi-metal leachate and binary
+      Sc/REE mixtures
+    description: Immobilized Mex-LanM column recovers Sc(III) at >99% yield and >99% purity from mixed
+      multi-metal leachate feed (Figure 5) and selectively desorbs Sc(III) (~94.5% yield) with 30 mM malonate
+      (pH 5.0) before La(III) (~98.9% yield with 50 mM malonate, pH 5.0) in equimolar Sc/La separation
+      tests.
     evidence:
     - source_ref: dong2024
       supports: support
-      explanation: Dong et al. (2024) separated equimolar Sc(III)/La(III) on immobilized LanM using 30
-        mM malonate (pH 5.0) for Sc elution and 50 mM malonate (pH 5.0) for La elution.
+      explanation: Dong et al. (2024) demonstrated >99% Sc(III) yield and >99% purity from mixed leachate
+        feed (Figure 5) and separated equimolar Sc(III)/La(III) on immobilized LanM using stepwise 30
+        mM and 50 mM malonate (pH 5.0).
 curation_history:
 - timestamp: '2026-10-11T06:27:14Z'
   curator: Codex (GPT-6; Codex)

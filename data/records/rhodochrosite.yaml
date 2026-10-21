@@ -308,16 +308,16 @@ causal_graphs:
         explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (omcA) for extracellular
           electron transfer in johnson2016; individual cytochrome genes were not mutated.
   - id: oxidized_metal_substrate
-    label: Synthetic birnessite (delta-MnO2) in Ca/Mn medium
+    label: Colloidal Mn(IV) oxide (freshly synthesized poorly ordered MnO2)
     node_type: CHEMICAL_ENTITY
-    description: Terminal electron acceptor substrate (Synthetic birnessite (delta-MnO2) in Ca/Mn medium)
-      in johnson2016.
+    description: Terminal electron acceptor substrate (freshly synthesized poorly ordered colloidal Mn(IV)
+      oxide in Ca-free artificial freshwater medium) in johnson2016.
     protein_grounding_status: NOT_APPLICABLE
   - id: reduced_metal_product
-    label: Biogenic rhodochrosite (MnCO3) and mixed Ca/Mn carbonate precipitates
+    label: Biogenic rhodochrosite (MnCO3) precipitates and dissolved Mn(II)
     node_type: MATERIAL_OR_PHASE
-    description: Resulting reduced product state (Biogenic rhodochrosite (MnCO3) and mixed Ca/Mn carbonate
-      precipitates) in johnson2016.
+    description: Resulting reduced product state (biogenic rhodochrosite (MnCO3) precipitates and dissolved
+      Mn(II)) in johnson2016.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cyma_dehydrogenase
@@ -353,14 +353,13 @@ causal_graphs:
     target: reduced_metal_product
     predicate: transforms_into
     relationship: reductive valence transformation and phase formation
-    description: Extracellular electron transfer converts Synthetic birnessite (delta-MnO2) in Ca/Mn medium
-      into Biogenic rhodochrosite (MnCO3) and mixed Ca/Mn carbonate precipitates.
+    description: Extracellular electron transfer converts Colloidal Mn(IV) oxide (freshly synthesized
+      poorly ordered MnO2) into Biogenic rhodochrosite (MnCO3) precipitates and dissolved Mn(II).
     evidence:
     - source_ref: johnson2016
       supports: support
-      explanation: Shewanella oneidensis MR-1 bioelectrochemical/anaerobic reduction converts Synthetic
-        birnessite (delta-MnO2) in Ca/Mn medium into Biogenic rhodochrosite (MnCO3) and mixed Ca/Mn carbonate
-        precipitates in johnson2016.
+      explanation: Shewanella oneidensis MR-1 anaerobic reduction converts freshly synthesized colloidal
+        Mn(IV) oxide into biogenic rhodochrosite (MnCO3) precipitates and dissolved Mn(II) in johnson2016.
 curation_history:
 - timestamp: '2026-10-12T14:02:46.669472Z'
   curator: codex (GPT-6; codex)
@@ -375,8 +374,8 @@ curation_history:
 - timestamp: '2026-10-21T18:46:53Z'
   curator: claude
   action: EDIT
-  summary: Set representative CymA/MtrC/OmcA cytochrome evidence to partial and refined substrate/product
-    labels in rhodochrosite.yaml.
+  summary: Set representative CymA/MtrC/OmcA cytochrome evidence to partial and aligned colloidal Mn(IV)
+    oxide substrate and biogenic rhodochrosite product descriptions with johnson2016 in rhodochrosite.yaml.
 history_refs:
 - history/records/rhodochrosite/2026-10-12T140249Z-codex-1fba4c.yaml
 - history/records/rhodochrosite/2026-10-18T042750Z-antigravity-dd9a42.yaml

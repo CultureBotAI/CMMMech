@@ -116,8 +116,8 @@ mechanisms:
     - source_ref: vazquez_rodriguez2015
       supports: partial
       explanation: Representative thiosulfohydrolase SoxB in Thiobacillus thioparus; Vazquez-Rodriguez
-        et al. (2015) studied a sulfur-oxidizing enrichment consortium without isolating individual soxB
-        genes.
+        et al. (2015) studied axenic Thiobacillus thioparus ATCC 8158 pure-culture dissolution of synthetic
+        metacinnabar (beta-HgS) without assaying or mutating individual soxB genes.
   - uniprot_accession: UniProtKB:Q3SJ73
     entry_name: Q3SJ73_THIDA
     protein_name: Mercuric reductase
@@ -151,8 +151,8 @@ mechanisms:
     - source_ref: vazquez_rodriguez2015
       supports: partial
       explanation: Representative mercuric reductase MerA in Thiobacillus denitrificans ATCC 25259; Vazquez-Rodriguez
-        et al. (2015) studied mixed-consortium thiosulfate disproportionation/oxidation and beta-HgS precipitation
-        without enzyme or gene-level testing.
+        et al. (2015) studied axenic Thiobacillus thioparus ATCC 8158 pure-culture dissolution of metacinnabar
+        (beta-HgS) and Hg(0) volatilization without strain-level genomics or merA mutagenesis.
 causal_graphs:
 - id: thioparus_soxb_mera_metacinnabar_graph
   name: Thiobacillus sulfur-oxidizing metacinnabar dissolution and MerA-mediated Hg(II) reduction
@@ -190,8 +190,8 @@ causal_graphs:
       - source_ref: vazquez_rodriguez2015
         supports: partial
         explanation: Representative thiosulfohydrolase SoxB in Thiobacillus thioparus; Vazquez-Rodriguez
-          et al. (2015) studied a sulfur-oxidizing enrichment consortium without isolating individual
-          soxB genes.
+          et al. (2015) studied axenic Thiobacillus thioparus ATCC 8158 pure-culture dissolution of synthetic
+          metacinnabar (beta-HgS) without assaying or mutating individual soxB genes.
   - id: metacinnabar_substrate
     label: Metacinnabar (beta-HgS) mineral substrate
     node_type: MATERIAL_OR_PHASE
@@ -244,8 +244,9 @@ causal_graphs:
       - source_ref: vazquez_rodriguez2015
         supports: partial
         explanation: Representative mercuric reductase MerA in Thiobacillus denitrificans ATCC 25259;
-          Vazquez-Rodriguez et al. (2015) studied mixed-consortium beta-HgS precipitation without testing
-          merA activity.
+          Vazquez-Rodriguez et al. (2015) studied axenic Thiobacillus thioparus ATCC 8158 pure-culture
+          dissolution of metacinnabar (beta-HgS) and Hg(0) volatilization without strain-level genomics
+          or merA mutagenesis.
   - id: volatile_elemental_hg0
     label: Volatile elemental mercury (Hg(0))
     node_type: CHEMICAL_ENTITY
@@ -303,8 +304,9 @@ curation_history:
 - timestamp: '2026-10-21T18:46:53Z'
   curator: claude
   action: EDIT
-  summary: Fixed UniProtKB:Q3SJ73 annotation_note (TrEMBL entry in UP000008291, not Swiss-Prot UP000008292)
-    and set unmutated SoxB/MerA consortium evidence to partial.
+  summary: Clarified in metacinnabar.yaml that SoxB and MerA are representative proteins for axenic Thiobacillus
+    thioparus ATCC 8158 metacinnabar dissolution and Hg(0) volatilization (not directly assayed in Vazquez-Rodriguez
+    et al. 2015).
 history_refs:
 - history/records/metacinnabar/2026-10-14T215020Z-codex-91f7bf.yaml
 - history/records/metacinnabar/2026-10-18T042750Z-antigravity-6856ad.yaml
