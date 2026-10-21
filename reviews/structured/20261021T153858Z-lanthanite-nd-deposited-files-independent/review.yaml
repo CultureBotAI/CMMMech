@@ -1,0 +1,458 @@
+schema_version: 1.0.0
+review_id: 20261021T153858Z-lanthanite-nd-deposited-files-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific review of Lanthanite-(Nd) original deposited files
+started_at: '2026-10-21T15:33:08.026811Z'
+finished_at: '2026-10-21T15:38:58.233097Z'
+reviewer:
+  identity: codex /root/resume_473
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from author /root/resume_405. Shared source
+    acquisition; independent original-source reading, stdlib native parse, numerical
+    recalculation, provenance and generated-scope checks. No author/owner/history/source
+    edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'Pass with limitations: the recovered authentic CIF/HKL support the exact
+  bounded access/citation update, while model and source-discrepancy limits remain
+  explicit. Zero repository findings.'
+source:
+  git_revision: 1296ee20f2595d7d6a50e391f611c22435418906
+  state: working_tree
+  inputs:
+  - path: data/records/lanthanite-nd.yaml
+    sha256: 3c7a785490476ed9c115b18ade621ae8ac8093efc18546bd058fc4f9e6f15eb5
+    role: target
+  - path: history/records/lanthanite-nd/2026-10-16T003811Z-codex-aa4d69.yaml
+    sha256: af5fd701d71b80b13c469a20846d140e64b4e18ed840ec536066ad22969d6bcf
+    role: context
+  - path: history/records/lanthanite-nd/2026-10-21T152848Z-codex-a350a1.yaml
+    sha256: f12c3d8857d88682385aeb1425a095e74f206a0d93a8f26d7ffd51fcd45e427f
+    role: context
+  - path: research/sources/issue-422-lanthanite-nd-cif-hkl/20261021T153236Z-evidence.json
+    sha256: 27dcd2ac4dd6d42a192cc24f74c0adf098a04f840df2bc5cc1d86111553c9976
+    role: context
+  - path: research/sources/issue-422-lanthanite-nd-cif-hkl/20261021T153236Z.md
+    sha256: fc409cb59ea5e5331730a815d8eeb24f710b6635093a78fe7a37e72a11375529
+    role: context
+  - path: reviews/structured/20261016T005315Z-lanthanite-nd-round107-independent/review.yaml
+    sha256: 277c9bc56e28a8ced33c96ee8c85f5e1d4b8aa865dd0d4cefc9e2c34c00a5ae1
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+targets:
+- target_id: cmmmech:lanthanite-nd
+  path: data/records/lanthanite-nd.yaml
+  label: Lanthanite-(Nd)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lanthanite-nd.yaml
+    role: maintained_scientific_record
+scope:
+  description: Complete exact edited owner/history and recovered Morrison 2013 primary/deposited-file
+    evidence; inherited unchanged IMA identity has prior-review scope explicitly retained.
+  selection: Assigned named owner, independent from curator; native inspect captured
+    exact final hashes before assessment.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:lanthanite-nd
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/lanthanite-nd.yaml
+  locator: Complete final owner after inspect; exact authorized diff versus base.
+  accessed_at: '2026-10-21T15:38:58.233097Z'
+  support: supports
+  summary: Recovered-file access statement and dated citation retain natural mixed-REE
+    and model limits.
+  snapshot_sha256: 3c7a785490476ed9c115b18ade621ae8ac8093efc18546bd058fc4f9e6f15eb5
+- evidence_id: history
+  kind: record_content
+  reference: history/records/lanthanite-nd/2026-10-21T152848Z-codex-a350a1.yaml
+  locator: New canonical EDIT and distinct inline event; original CREATE unchanged.
+  accessed_at: '2026-10-21T15:38:58.233097Z'
+  support: supports
+  summary: Actor, time, target and bounded change agree; no invented prior authorship.
+  snapshot_sha256: f12c3d8857d88682385aeb1425a095e74f206a0d93a8f26d7ffd51fcd45e427f
+- evidence_id: prior
+  kind: record_content
+  reference: reviews/structured/20261016T005315Z-lanthanite-nd-round107-independent/review.yaml
+  locator: Complete immutable prior independent native review; identity/IMA scope
+    retained, not freshly reacquired.
+  accessed_at: '2026-10-21T15:38:58.233097Z'
+  support: context_only
+  summary: Earlier owner hash matches exact base/pre-edit owner. Prior unavailable-native-file
+    limitation is superseded only by the new dated evidence; no prior finding is invented.
+  snapshot_sha256: 277c9bc56e28a8ced33c96ee8c85f5e1d4b8aa865dd0d4cefc9e2c34c00a5ae1
+- evidence_id: primary
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-422/main.xml
+  locator: Complete original JATS front/body/back, nine tables, Comment/Experimental/Refinement,
+    three original figures in both routes and nine formula/symmetry rasters. Original
+    PMC HTML also inspected.
+  accessed_at: '2026-10-21T15:38:58.233097Z'
+  support: supports
+  summary: Natural R060993 specimen, mixed empirical chemistry, all-REE-as-Nd model
+    and excluded H positions; exact wm2719 links.
+  snapshot_sha256: 6ad42ab33ee666cfd76cd3d860b25847ad9f6b509ddd2cd8745a5b38e4062679
+- evidence_id: cif
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-422/assets/e-69-00i15-sup1.cif
+  locator: Entire blocks I/global, seven loops and all scalars; matched directly to
+    original XML.
+  accessed_at: '2026-10-21T15:38:58.233097Z'
+  support: supports
+  summary: Article DOI and metadata,13 atom sites/13 ADP rows/eight operators, Nd
+    proxy and no H coordinates confirmed.
+  snapshot_sha256: 12ff5f29a9da86d0f1af01fc6b5c9c387f101816ca448273efe185193d59e4bc
+- evidence_id: hkl
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-422/assets/e-69-00i15-Isup2.hkl
+  locator: Entire block I; title R060993_2, matching cell/operators, all 1,570 reflection
+    rows/9420 numeric cells.
+  accessed_at: '2026-10-21T15:38:58.233097Z'
+  support: supports
+  summary: Deposited merged structure-factor data supports file identity; signed measurements
+    retained and1,373 threshold rows verified.
+  snapshot_sha256: 7cf88ba7e150c666a9b02ab6e3afdfa951817b8d41295adbc749047c66359f13
+- evidence_id: numeric
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-422-independent/numeric-review.json
+  locator: Independent CIF parser, rational symmetry, coordinate geometry,18 rekeyed
+    chemistry components and16 conditional diagnostics.
+  accessed_at: '2026-10-21T15:38:58.233097Z'
+  support: supports
+  summary: 130 XML joins and143 geometry recalculations agree. Source inconsistencies
+    are preserved; no refinement claim.
+  snapshot_sha256: 7ad930b63debf895602a954a052559ed6c41c7c4eee66b222d2bdbc16c9386ae
+- evidence_id: sourcepair
+  kind: record_content
+  reference: research/sources/issue-422-lanthanite-nd-cif-hkl/20261021T153236Z-evidence.json
+  locator: Complete source pair; original acquisition, dated queries, precise schema
+    handoff and version/access limits.
+  accessed_at: '2026-10-21T15:38:58.233097Z'
+  support: supports
+  summary: Binds authentic archive/native evidence without importing model statistics
+    or coordinates as concentration observations.
+  snapshot_sha256: 27dcd2ac4dd6d42a192cc24f74c0adf098a04f840df2bc5cc1d86111553c9976
+- evidence_id: integrity
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-422-independent/integrity-review.json
+  locator: All current/resolved hash assertions,49 exact preserved pre-edit files,8
+    historical digest comparisons,13 base inputs and1361 prior record/history paths.
+  accessed_at: '2026-10-21T15:38:58.233097Z'
+  support: supports
+  summary: Only authorized owner changed; prior review, source, history and other
+    owners preserved.
+  snapshot_sha256: 928583dd1379be59c9947269304e817d1e664fb054cee967389e38ea463c8ad9
+- evidence_id: generated
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-422-independent/generated-scope.json
+  locator: All 633 HTML diffs:630 footer-only,3 intended content pages, with exact
+    original/base hashes.
+  accessed_at: '2026-10-21T15:38:58.233097Z'
+  support: supports
+  summary: All 633 retained; contemplated cleanup is unapplied. Full generated outputs
+    match exact renderer.
+  snapshot_sha256: edec28f1c1e4a37ce99d0dc3283ff898b99f6b51e56c567413b64729c259d199
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-422-final-gates.json
+  locator: Author actual terminal receipts and independently checked logs/hashes;
+    final 5869,corpus 54628,history 59846,canonical 29639.
+  accessed_at: '2026-10-21T15:38:58.233097Z'
+  support: supports
+  summary: 363/3skip616/745 final success; corpus/history/canonical 22 passed.
+  snapshot_sha256: 7a7eb489ef95c27657d07162447af2e8862faa4b4f67468be3c2b8df46e93cf0
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-422-independent/named-check.json
+  locator: Independent named strict validation, actual exit 0 and bound log.
+  accessed_at: '2026-10-21T15:38:58.233097Z'
+  support: supports
+  summary: One exact owner checked, zero failures.
+  snapshot_sha256: 5bd4aeae6f2b0739d6f6060f25385415768bea6dc463a36386c176072dbe1773
+- evidence_id: render
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-422-independent/render-check.json
+  locator: Independent exact render --check before saving this review, actual exit
+    0.
+  accessed_at: '2026-10-21T15:38:58.233097Z'
+  support: supports
+  summary: All generated outputs current; no normalization is applied by the freshness
+    gate.
+  snapshot_sha256: a019820c9e95ddbca1d49dbc0dac3adf8927f2cf311db717c571ea06744c4f3d
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-422-independent/web-review.json
+  locator: Two exact DOI/deposit notice queries and original PMC open on 21 October
+    2026 UTC; provider web.run, exact request and actual timestamps; no domain/recency
+    filters.
+  accessed_at: '2026-10-21T15:38:58.233097Z'
+  support: context_only
+  summary: No affecting notice identified within returned results; no exhaustive absence
+    claim.
+  snapshot_sha256: 955c6c2662865f6867a2d30430ad3248c3eafdde41ddda2a8b90868257a29972
+  search_scope: 'web.run on2026-10-21 UTC: exact DOI correction/erratum/retraction
+    query and wm2719 CIF Morrison query, plus original PMC page open; returned result
+    sets only, no domain or recency filters. Raw requests/results and actual timestamps
+    retained externally.'
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-422-independent/dedup-current.txt
+  locator: rg --no-ignore --hidden --follow across current WT data/records,research,reviews,history,.claude
+    for lanthanite-Nd/DOI/wm2719/PMC3588547.
+  accessed_at: '2026-10-21T15:38:58.233097Z'
+  support: context_only
+  summary: Ignored files included; matched same owner and contextual provenance, no
+    machine-wide absence assertion.
+  snapshot_sha256: f59027b90d43b28e50eb5265d54c1a56cca93f4aa6eaaa06259094edbbb3e612
+  search_scope: rg --no-ignore --hidden --follow -l -i for lanthanite-Nd, DOI S1600536813003164,
+    wm2719 and PMC3588547 across current WT data/records, research, reviews, history
+    and .claude. Ignored files included; no machine-wide absence claim.
+checks:
+- check_id: named
+  name: Independent strict named validation
+  command: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-422/.venv/bin/cmmmech
+    validate data/records/lanthanite-nd.yaml --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:lanthanite-nd
+  evidence_ids:
+  - named
+  summary: Actual independent exit 0; one record, zero failures.
+- check_id: final
+  name: Actual author final offline gate
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache just
+    check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:lanthanite-nd
+  evidence_ids:
+  - gates
+  summary: Author terminal 5869 actual 0;363 passed / 3 skipped in 108.41s, 616 records
+    / 745 histories. Exact receipt/log verified; not rerun by reviewer.
+- check_id: corpus
+  name: Explicit nonempty corpus validation
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache uv run
+    --locked cmmmech validate --require-records
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:lanthanite-nd
+  evidence_ids:
+  - gates
+  summary: Author terminal 54628 actual 0 chunk 90d451;616 records0 failed; exact
+    command confirmed by author.
+- check_id: history
+  name: Explicit history validation against reviewed base
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache uv run
+    --locked cmmmech validate-history --base 1296ee20f2595d7d6a50e391f611c22435418906
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:lanthanite-nd
+  evidence_ids:
+  - gates
+  summary: Author terminal 59846 actual 0 chunk aed990;745 histories0 errors; exact
+    command confirmed by author.
+- check_id: render
+  name: Independent generated freshness
+  command: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-422/.venv/bin/python
+    scripts/render_pages.py --check
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:lanthanite-nd
+  evidence_ids:
+  - render
+  summary: Actual independent exit 0 in unchanged full633-page rendered state.
+- check_id: numeric
+  name: Independent deposited-file and numerical audit
+  command: python3 /private/tmp/cmmmech-backlog-20261019-fmj36s/review-422-independent/numeric-review.py
+  status: passed
+  required: true
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:lanthanite-nd
+  evidence_ids:
+  - numeric
+  summary: Actual exit 0; complete independent native parsing and numerical checks,
+    no least-squares refinement.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species, natural specimen and original deposited-file identity
+  outcome: supported
+  target_ids:
+  - cmmmech:lanthanite-nd
+  evidence_ids:
+  - owner
+  - prior
+  - primary
+  - cif
+  - hkl
+  summary: Lanthanite-(Nd) remains the IMA1979-074 Nd-dominant mineral species. Existing
+    authority scope is retained from the prior independent review; newly inspected
+    primary XML/native files independently match article DOI, WM2719 and R060993/R060993_2
+    without treating the specimen accession as mineral identity.
+  dimensions:
+  - name: material_form
+    value: Natural mixed-REE hydrated carbonate crystal
+    definition: Morrison specimen from Mitsukoshi, Japan; distinct from ideal pure-Nd
+      formula or elemental Nd.
+    evidence_ids:
+    - primary
+    - owner
+- assessment_id: model
+  area: evidence
+  topic: Measured chemistry versus crystallographic model
+  outcome: supported
+  target_ids:
+  - cmmmech:lanthanite-nd
+  evidence_ids:
+  - primary
+  - cif
+  - hkl
+  - numeric
+  - owner
+  summary: 23-point bulk microprobe chemistry, water by difference and ideal formula
+    remain distinct. Both Nd sites are full-occupancy model proxies for mixed REE;
+    thirteen sites contain Nd/C/O and no H coordinate. No element-specific site chemistry
+    or independent refinement is asserted.
+- assessment_id: quantities
+  area: evidence
+  topic: Native model and reflection reproducibility limits
+  outcome: supported
+  target_ids:
+  - cmmmech:lanthanite-nd
+  evidence_ids:
+  - primary
+  - cif
+  - hkl
+  - numeric
+  - sourcepair
+  summary: All 1,570 independent rows,1,373 above 2 sigma,75 negative/one zeroFo2,130
+    XML joins and143 geometry calculations verified. R1 reproduces displayed values;
+    weighted statistics and duplicated OW4–OW2 contact remain unresolved. No source
+    correction or refined parameters selected.
+- assessment_id: scope
+  area: evidence
+  topic: Mechanism, criticality and transfer boundaries
+  outcome: supported
+  target_ids:
+  - cmmmech:lanthanite-nd
+  evidence_ids:
+  - owner
+  - primary
+  - prior
+  summary: 'Record contains identity/characterization only. Organism/strain, biomass,
+    substrate-treatment-control outcomes and extraction/deployment claims are not
+    inferred from a natural crystallographic study. No jurisdiction-specific criticality
+    designation is asserted; issue #421 synthesis evidence remains separate.'
+  dimensions:
+  - name: mechanism_scope
+    value: No mechanism asserted
+    definition: Natural specimen characterization supplies neither microbial experiment
+      nor extraction/recovery evidence.
+    evidence_ids:
+    - owner
+    - primary
+  - name: criticality_scope
+    value: Not asserted
+    definition: No authority/jurisdiction/list/edition designation inferred from mineral
+      identity.
+    evidence_ids:
+    - owner
+- assessment_id: provenance
+  area: provenance
+  topic: Exact owner/history lineage and immutable source handoff
+  outcome: supported
+  target_ids:
+  - cmmmech:lanthanite-nd
+  evidence_ids:
+  - owner
+  - history
+  - prior
+  - sourcepair
+  - integrity
+  - search
+  - dedup
+  summary: Current access/citation change is supported by genuine public archive contents
+    and precise specimen/article links. Original16 October failure statement remains
+    dated; old review/CREATE are immutable and no finding disposition is fabricated.
+    New actual-time inline and canonical EDIT events describe this bounded update.
+- assessment_id: validation
+  area: provenance
+  topic: Actual gates and generated scope
+  outcome: supported
+  target_ids:
+  - cmmmech:lanthanite-nd
+  evidence_ids:
+  - gates
+  - named
+  - render
+  - generated
+  - integrity
+  summary: Named,full,corpus,explicitbasehistory and exact render checks passed.633
+    generated pages are retained:3 intended content changes and630 mechanically verified
+    required footer changes. Later native-check result is a separate receipt, not
+    preclaimed here.
+findings: []
+actions: []
+limitations:
+- 'Fresh independent scientific scope is the Morrison 2013 complete original JATS/HTML,
+  three figures from each of two routes, nine formula/symmetry rasters, deposited
+  CIF/HKL and resulting bounded owner change. Original IMA authority inspection remains
+  the 16 October prior independent review; no fresh IMA or broader Vallina 2015/issue
+  #421 synthesis review is claimed.'
+- The same natural specimen contains mixed rare-earth chemistry; its bulk empirical
+  coefficients and the all-REE-as-Nd scattering model are distinct. Native parsing
+  establishes neither site-resolved REE chemistry nor a pure Nd specimen.
+- No H coordinate rows are deposited. Oxygen geometry does not recover excluded H
+  positions; the duplicated OW4/OW2 symmetry-code2 contact has incompatible printed
+  distances and is left unresolved.
+- All 1,570 deposited independent structure-factor rows are inspected, not the 9,235
+  original collection integrations or detector frames. Conventional R1 agrees at displayed
+  precision; direct weighted arithmetic does not exactly reproduce stored wR/S. No
+  least-squares refinement, checkCIF run or reintegration was performed.
+- Printed chemistry totals 100.07 and water-by-difference 23.43 versus printed 23.50
+  remain conditional source arithmetic, with no correction/renormalization imported.
+- Current article PDF and checkCIF result were not acquired; complete original XML/HTML
+  and native files were available. Version comparisons to absent historical raw roots
+  use verified historical digest declarations, not fresh reads of missing old files.
+- No microbial mechanism, organism/strain, biomass state, experimental recovery yield,
+  deployment or jurisdiction/list/edition criticality is inferred. Native validity
+  is not experimental verification.
+- Current searches are bounded returned results and local ignored/hidden/followed
+  identity matches, not exhaustive literature or machine-wide absence claims.
+notes:
+- Earlier independent review remains unchanged at reviews/structured/20261016T005315Z-lanthanite-nd-round107-independent/review.yaml.
+  It has no findings to dispose of; current original-file access supersedes only its
+  explicitly dated acquisition limitation.
+- Canonical sync 22 actual author result reused for unchanged governed artifacts;
+  structural validity does not prove scientific truth.
+- Source-only external review pair is saved under /private/tmp/cmmmech-backlog-20261019-fmj36s/review-422-independent.
+  No owner/source/history/generated edits by reviewer. Root publication decision retains
+  all 633 generated pages; cleanup proposal preserved but unapplied.
