@@ -1,0 +1,698 @@
+# Initial independent scientific review of the inyoite source-volume conflict
+
+- Review: 20261021T190408Z-inyoite-issue385-initial-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-21T18:57:39.307013Z
+- Finished UTC: 2026-10-21T19:04:08.530603Z
+- Reviewer: codex /root/resume_213_review_165 (independent)
+- Completion: completed
+- Verdict: needs_curation
+- Scientific review: true
+
+## Summary
+
+One confirmed major maintained-record defect: false944.0 versus923.96 volume conflict. Other qualified identity, abiotic pressure mechanism and limitations are supported. Initial unchanged state saved before author correction.
+
+## Scope And Provenance
+
+Full scientific review of the exact unchanged inyoite owner and its asserted evidence, with scoped historical source inspection.
+
+Selection: Parent-assigned single maintained owner, no owner sampling.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1296ee20f2595d7d6a50e391f611c22435418906.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| inyoite | data/records/inyoite.yaml | maintained | Inyoite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Named record | passed | True | inyoite | One inyoite record valid. |
+| Nonempty corpus | passed | True | inyoite | 616records valid. |
+| Canonical history | passed | True | inyoite | 744histories valid against base. |
+| Whitespace | passed | True | inyoite | Diff check passed. |
+| Full structural validation | passed | True | inyoite | Author baseline48746actual0/363passed3skipped72.84s616/744; logs independently read, reused only because entire tracked tree is unchanged. |
+| Canonical synchronization | passed | True | inyoite | Actualexit0/22matches; unchanged governed files. |
+| Full bounded owner scientific review | passed | True | inyoite | Whole owner and all claimed original scopes inspected; scientific defect recorded separately from completion of review. |
+
+## Scientific And Domain Assessments
+
+### Species and historical identity
+
+identity: supported. Targets: inyoite.
+
+IMA species formula, G grandfathered status and historical1914 year are supported. Inyoite-II is an experimental phase label, not a separate natural species or commodity.
+
+### Historical versus laboratory specimens
+
+scope: supported. Targets: inyoite.
+
+MtBlanco historical material and the modern museum crystal with unreported locality/new quantitative assay remain separate. Natural alteration is inferred from textures, not a controlled modern pressure reaction.
+
+### Pressure-induced diffraction transition
+
+evidence: supported. Targets: inyoite.
+
+Sampled8.25(5) to8.86(5)GPa and824.75(6) to762(2)A3 support approximately7.6%volume decrease; no equilibrium pressure or phase yield is asserted.
+
+### Experimental conditions and exclusions
+
+scope: supported. Targets: inyoite.
+
+Single approximately20x15x10micrometre crystal,heliumDAC,ESRFID15B,ruby calibration0.05GPa and approximately293K deposited models are supported. No organism/biomass/donor/microbial control, recovery or industrial claim is added.
+
+### Unsolved high-pressure and H claims
+
+consistency: supported. Targets: inyoite.
+
+Hydrogen is unlocated; high-pressure structure remains unsolved; P21/n is suggested by extinctions. Boroncoordination increase remains analogy-based; failed ambient diffraction does not demonstrate reversibility.
+
+### Literal 2GPa source value
+
+quantity: concern. Targets: inyoite.
+
+Owner falsely attributes944.0(1) to Table1. Original924.0(1) agrees with CIF923.96(11); this materially misrepresents source consistency and requires curation.
+
+### Other source limits
+
+evidence: supported. Targets: inyoite.
+
+19.80 abstract versus18.91 table/18.9 body maximum remains unresolved. Low-pressure deposits do not solve inyoite-II or measure composition; file-header/pressure metadata quirks are not silently repaired.
+
+### Representation and identifiers
+
+schema: supported. Targets: inyoite.
+
+Mineral/source/evidence/history fields validate; no unsupported organism, commodity criticality or mg/kg concentration observation is present.
+
+### Immutable prior history and review
+
+provenance: supported. Targets: inyoite.
+
+Existing CREATE and earlier review/dossier preserved exactly. New finding corrects inherited assessment without rewriting historical reviews or fabricating prior findings.
+
+## Findings
+
+### 385-R1: Correct the false 2 GPa volume conflict
+
+major / open / confirmed; issue key: inyoite-2gpa-volume-false-source-conflict.
+
+The maintained explanation says manuscript Table1 prints944.0(1)A3 at2.00(5)GPa, creating a false discrepancy with deposited923.96(11). Original PDF18 clearly prints924.0(1), agreeing with CIF rounding and independently computed cell volume. The old dossier and clean native review repeat this inherited transcription error; current original bytes match their declared digest. This is a maintained scientific evidence defect, not a newly repaired source or an unresolved author discrepancy.
+
+## Recommended Actions And Acceptance Checks
+
+### correct-volume-conflict
+
+Preserve this initial state; replace the false source discrepancy with the literal924.0(1) versus923.96(11) agreement, retaining actual unresolved source limits. Append truthful EDIT provenance and required rendered outputs, then obtain exact-byte independent successor review.
+
+- Owner explicitly reflects original Table1 volume and rounding agreement.
+- Existing historical dossier/review/CREATE remain immutable; successor source assessment corrects inherited premise explicitly.
+- New canonical and inline EDIT accurately describe actual correction.
+- All required generated outputs and final/native checks pass; independent successor resolves exact385-R1 occurrence.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-385/data/records/inyoite.yaml; Whole exact unchanged owner; especially mechanisms[0].evidence[2].explanation lines100–104 | refutes | Exact inspected owner contains the false 944.0(1) versus 923.96(11) conflict. |
+| main | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-385/inyoite2022.pdf; Complete 23-page accepted Revision_1; Methods/Results pp3–9, all Figures1–5/Tables1–5; Table1 PDF18 | refutes | Original Table1 prints924.0(1) at2.00(5)GPa. Full scientific context and figure/table limits inspected. |
+| table-image | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-385-independent/table1-independent.png; Independent original PDF18 render at2200-pixel scale | refutes | Literal 924.0(1), independently visually reproduced; no image editing. |
+| cif6 | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-385/inyoite2022-supp6.cif; Native _cell_volume and cell dimensions, structural block data_I | refutes | 923.96(11) agrees with manuscript924.0(1); independently calculated abc sin(beta) agrees. |
+| cifs | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-385-independent/native-cifs.json; Complete native lexical parse of all12 official CIFs, scalars and loops | supports | Starting-polymorph models only; each16non-H sites. Sup10/13 have unscoped bibliographic preamble before active data_I, not absence of all blocks. |
+| si | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-385/inyoite2022-supp1.docx; Whole native TableS1 and strain material; compared with embedded original AMp19 | supports | 12low-pressure refinements, measured/independent count distinctions and strain information; no high-pressure solved model. |
+| historic | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-385/inyoite1916.pdf; Scoped PDF36–43: printed35–40 and PlatesI–II | supports | MountBlanco natural cores/rims and inferred alteration;0.1037g analysis with boric acid not directly determined. Other book chapters not reviewed. |
+| ima | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-372/reused-129-ima2026-09.pdf; Original PDF1–2 definitions and102 Inyoite row | supports | DatedSeptember2026 formula and G1914 species status; same-day shared authority reused, not a new download/latest-edition claim. |
+| inspection | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-385-independent/initial-source-inspection.json; Exact34unique original-page inspection inventory, raw/source/render hashes | supports | All23AAMpages, eight historical pages and three IMA pages actually viewed; native originals and selected bounds explicit. |
+| numeric | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-385-independent/initial-owner-numeric-audit.json; 12independent cell-volume calculations and owner-bearing pressure/volume diagnostics | supports | False discrepancy confirmed; other transition arithmetic independently supported. Selected owner-bearing audit, not every numeric token in paper. |
+| history | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-385/history/records/inyoite/2026-10-15T212044Z-codex-310aa1.yaml; Whole immutable CREATE sidecar and separate owner inline event | supports | Existing history is valid and must remain immutable; correction needs a new actual EDIT. |
+| prior | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-385/reviews/structured/20261015T213509Z-inyoite-round103-independent/review.yaml; Whole prior clean native review, especially inherited944.0 assessments | refutes | Prior review repeats the false source discrepancy. This initial observation supersedes that assessment; prior findings[] is empty, so no invented previous occurrence. |
+| old-report | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-385/research/sources/round103-borates/20261015T212242Z-source-investigation.md; Inyoite source investigation and literal944.0 passage | refutes | Historical dossier repeats the transcription. Original currentPDF matches its declared SHA; unavailable old raw paths are not claimed to be rehashed. |
+| baseline | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-385-baseline-gates.json; Actual48746exit0/chunk2aeeaa, fullprocess/log; canonicalactual0/chunk247aa4 | supports | 363passed3skipped72.84s616records744histories;22canonical artifacts. Reused for unchanged tracked tree before native save. |
+| gates | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-385-independent/initial-gate-terminal.json; Reviewer batch91281actual0/chunk98bde2 and four durable checks/logs | supports | Named1/corpus616/history744/diff0 independently passed. |
+| dedup | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-385-independent/finding-385-R1/dedup.json; Bounded ignored/hidden/followed roots and all514saved all-state titles/bodies | context_only | Related issue385 and priorPR392 found; no separate confirmed false-conflict correction in bounded snapshot. |
+| authority-landing | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-385-independent/web-open-01.json; Exact web.run official institutional landing open with start/completion UTC | context_only | Institutional metadata distinguishes public accepted manuscript from restricted final version. |
+| preservation | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-385-independent/initial-preservation/preservation.json; Nine exact inspected maintained/context inputs archived before correction | supports | Owner, prior dossier/review/history and governance/schema input hashes preserved. |
+
+## Limits And Additional Notes
+
+- Publisher version-of-record body remains unavailable in this initial review; accepted Revision_1 is explicitly identified.
+- Schaller book review is limited to printed35–40/PlatesI–II; IMA source is the datedSeptember2026 edition reused from same-day acquisition.
+- No new chemical assay, resolved high-pressure structure, H coordinates, detector package, re-refinement or reversible recovery is established.
+- Numeric review targets owner-bearing quantities and all12native cell volumes, not every paper numeric token.
+- No exact retained raw dump for the early independent web search; bounded official landing response is retained and no universal absence claim is made.
+- Native save/check and subsequent correction checks are recorded separately; no correction is claimed in this initial observation.
+- Prior native findings[] is empty: no previous_occurrences invented. This observation supersedes its mistaken944.0 source assessment.
+- Initial CIF helper failed on unscoped preamble before data_I; failed script preserved; corrected parser labels preamble separately without modifying CIF bytes.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T190408Z-inyoite-issue385-initial-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Initial independent scientific review of the inyoite source-volume conflict
+started_at: '2026-10-21T18:57:39.307013Z'
+finished_at: '2026-10-21T19:04:08.530603Z'
+reviewer:
+  identity: codex /root/resume_213_review_165
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root investigates and will author correction; I edit no owner/source/history
+    inputs. Root raised candidate Table1 transcription; I independently reproduced
+    original pixels, parsed official CIFs, recalculated cell volume and inspected
+    full owner evidence before judging. Shared current acquisition is disclosed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: needs_curation
+scientific_review: true
+summary: 'One confirmed major maintained-record defect: false944.0 versus923.96 volume
+  conflict. Other qualified identity, abiotic pressure mechanism and limitations are
+  supported. Initial unchanged state saved before author correction.'
+source:
+  git_revision: 1296ee20f2595d7d6a50e391f611c22435418906
+  state: working_tree
+  inputs:
+  - path: data/records/inyoite.yaml
+    sha256: 4804dad05c88116db1ff401d6ff9bcf44f8066685e48a5c37c63cdc918d0c6bf
+    role: target
+  - path: docs/record-review-profile.md
+    sha256: 01c6f39d0d097876a0446131270df58bb32fa15804c66487419c171719d3ddc0
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/inyoite/2026-10-15T212044Z-codex-310aa1.yaml
+    sha256: 48d0a99ec543879428cab1f8541e3a30ebd37944fd5dfea0d1d2106520bbbc3e
+    role: context
+  - path: research/sources/round103-borates/20261015T212242Z-source-investigation.json
+    sha256: f0a6b7b739980bb8b994b2297dc7e335d2db70aa344ee315883343a841b9e0e2
+    role: context
+  - path: research/sources/round103-borates/20261015T212242Z-source-investigation.md
+    sha256: e06285969e3af803b178469b2744433d3d16a53dabdb2968f9bcdfdd052a9ec2
+    role: context
+  - path: reviews/structured/20261015T213509Z-inyoite-round103-independent/review.yaml
+    sha256: 621322acf881d86776b08c88df3b79b743c3aa4a6e2b0f714b9a2150126e32ed
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+scope:
+  description: Full scientific review of the exact unchanged inyoite owner and its
+    asserted evidence, with scoped historical source inspection.
+  selection: Parent-assigned single maintained owner, no owner sampling.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - inyoite
+  exclusions:
+  - target: Meyerhofferite and other borate owners
+    reason: Historical comparison only; no other owner reviewed.
+  - target: Unseen publisher final main, raw detector/re-refinement
+    reason: Not acquired/performed; accepted version and processed deposits distinguished.
+targets:
+- target_id: inyoite
+  path: data/records/inyoite.yaml
+  label: Inyoite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/inyoite.yaml
+    role: maintained mineral record
+checks:
+- check_id: local-0
+  name: Named record
+  status: passed
+  required: true
+  summary: One inyoite record valid.
+  target_ids:
+  - inyoite
+  command: uv run --locked --offline cmmmech validate data/records/inyoite.yaml
+  exit_code: 0
+  evidence_ids:
+  - gates
+- check_id: local-1
+  name: Nonempty corpus
+  status: passed
+  required: true
+  summary: 616records valid.
+  target_ids:
+  - inyoite
+  command: uv run --locked --offline cmmmech validate --require-records
+  exit_code: 0
+  evidence_ids:
+  - gates
+- check_id: local-2
+  name: Canonical history
+  status: passed
+  required: true
+  summary: 744histories valid against base.
+  target_ids:
+  - inyoite
+  command: uv run --locked --offline cmmmech validate-history --base 1296ee20f2595d7d6a50e391f611c22435418906
+  exit_code: 0
+  evidence_ids:
+  - gates
+- check_id: local-3
+  name: Whitespace
+  status: passed
+  required: true
+  summary: Diff check passed.
+  target_ids:
+  - inyoite
+  command: git diff --check
+  exit_code: 0
+  evidence_ids:
+  - gates
+- check_id: full
+  name: Full structural validation
+  status: passed
+  required: true
+  summary: Author baseline48746actual0/363passed3skipped72.84s616/744; logs independently
+    read, reused only because entire tracked tree is unchanged.
+  target_ids:
+  - inyoite
+  command: just check
+  exit_code: 0
+  evidence_ids:
+  - baseline
+- check_id: canonical
+  name: Canonical synchronization
+  status: passed
+  required: true
+  summary: Actualexit0/22matches; unchanged governed files.
+  target_ids:
+  - inyoite
+  command: bash scripts/check_vendored_sync.sh
+  exit_code: 0
+  evidence_ids:
+  - baseline
+- check_id: primary
+  name: Full bounded owner scientific review
+  status: passed
+  required: true
+  summary: Whole owner and all claimed original scopes inspected; scientific defect
+    recorded separately from completion of review.
+  target_ids:
+  - inyoite
+  evidence_ids:
+  - main
+  - historic
+  - ima
+  - si
+  - cifs
+  - numeric
+  - inspection
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-385/data/records/inyoite.yaml
+  locator: Whole exact unchanged owner; especially mechanisms[0].evidence[2].explanation
+    lines100–104
+  accessed_at: '2026-10-21T19:04:08.530603Z'
+  support: refutes
+  summary: Exact inspected owner contains the false 944.0(1) versus 923.96(11) conflict.
+  snapshot_sha256: 4804dad05c88116db1ff401d6ff9bcf44f8066685e48a5c37c63cdc918d0c6bf
+- evidence_id: main
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-385/inyoite2022.pdf
+  locator: Complete 23-page accepted Revision_1; Methods/Results pp3–9, all Figures1–5/Tables1–5;
+    Table1 PDF18
+  accessed_at: '2026-10-21T19:04:08.530603Z'
+  support: refutes
+  summary: Original Table1 prints924.0(1) at2.00(5)GPa. Full scientific context and
+    figure/table limits inspected.
+  snapshot_sha256: 0e33da5e97074ad925289129d2ac8cae34c48de76bf888b458ed541594f04548
+- evidence_id: table-image
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-385-independent/table1-independent.png
+  locator: Independent original PDF18 render at2200-pixel scale
+  accessed_at: '2026-10-21T19:04:08.530603Z'
+  support: refutes
+  summary: Literal 924.0(1), independently visually reproduced; no image editing.
+  snapshot_sha256: 6068435fcb92dc150a6c1381d84613facd43666bbaba02e60b3d4d8ad9cd2576
+- evidence_id: cif6
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-385/inyoite2022-supp6.cif
+  locator: Native _cell_volume and cell dimensions, structural block data_I
+  accessed_at: '2026-10-21T19:04:08.530603Z'
+  support: refutes
+  summary: 923.96(11) agrees with manuscript924.0(1); independently calculated abc
+    sin(beta) agrees.
+  snapshot_sha256: 36be1c8a147fd2bbe3c4e87b066b48507363db55bc092e0abf8d1d3fcbab14a6
+- evidence_id: cifs
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-385-independent/native-cifs.json
+  locator: Complete native lexical parse of all12 official CIFs, scalars and loops
+  accessed_at: '2026-10-21T19:04:08.530603Z'
+  support: supports
+  summary: Starting-polymorph models only; each16non-H sites. Sup10/13 have unscoped
+    bibliographic preamble before active data_I, not absence of all blocks.
+  snapshot_sha256: ab87c2d3eb52712fee252fa1414c33bd0676311831a36d30543bf8a8e8951e2d
+- evidence_id: si
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-385/inyoite2022-supp1.docx
+  locator: Whole native TableS1 and strain material; compared with embedded original
+    AMp19
+  accessed_at: '2026-10-21T19:04:08.530603Z'
+  support: supports
+  summary: 12low-pressure refinements, measured/independent count distinctions and
+    strain information; no high-pressure solved model.
+  snapshot_sha256: dffa0da3f71d828ed5f8523fd3a8d9928f67931f191429aef0d4a7f6f5aa93cf
+- evidence_id: historic
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-385/inyoite1916.pdf
+  locator: 'Scoped PDF36–43: printed35–40 and PlatesI–II'
+  accessed_at: '2026-10-21T19:04:08.530603Z'
+  support: supports
+  summary: MountBlanco natural cores/rims and inferred alteration;0.1037g analysis
+    with boric acid not directly determined. Other book chapters not reviewed.
+  snapshot_sha256: 7e1672996db798f23fd008b7a51474b70a6c2a13c93172e0053cae2e229fcf63
+- evidence_id: ima
+  kind: authority
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-372/reused-129-ima2026-09.pdf
+  locator: Original PDF1–2 definitions and102 Inyoite row
+  accessed_at: '2026-10-21T19:04:08.530603Z'
+  support: supports
+  summary: DatedSeptember2026 formula and G1914 species status; same-day shared authority
+    reused, not a new download/latest-edition claim.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: inspection
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-385-independent/initial-source-inspection.json
+  locator: Exact34unique original-page inspection inventory, raw/source/render hashes
+  accessed_at: '2026-10-21T19:04:08.530603Z'
+  support: supports
+  summary: All23AAMpages, eight historical pages and three IMA pages actually viewed;
+    native originals and selected bounds explicit.
+  snapshot_sha256: 24c944ea35a01ff3d8b9ac7195a28ba2e10c83a48357cfe3f76bda95180a3c4d
+- evidence_id: numeric
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-385-independent/initial-owner-numeric-audit.json
+  locator: 12independent cell-volume calculations and owner-bearing pressure/volume
+    diagnostics
+  accessed_at: '2026-10-21T19:04:08.530603Z'
+  support: supports
+  summary: False discrepancy confirmed; other transition arithmetic independently
+    supported. Selected owner-bearing audit, not every numeric token in paper.
+  snapshot_sha256: 9d38b5de977437b8a14ac0cb458debdfd08069cbd35b9d3c7eb8421fa1f8cbad
+- evidence_id: history
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-385/history/records/inyoite/2026-10-15T212044Z-codex-310aa1.yaml
+  locator: Whole immutable CREATE sidecar and separate owner inline event
+  accessed_at: '2026-10-21T19:04:08.530603Z'
+  support: supports
+  summary: Existing history is valid and must remain immutable; correction needs a
+    new actual EDIT.
+  snapshot_sha256: 48d0a99ec543879428cab1f8541e3a30ebd37944fd5dfea0d1d2106520bbbc3e
+- evidence_id: prior
+  kind: prior_review
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-385/reviews/structured/20261015T213509Z-inyoite-round103-independent/review.yaml
+  locator: Whole prior clean native review, especially inherited944.0 assessments
+  accessed_at: '2026-10-21T19:04:08.530603Z'
+  support: refutes
+  summary: Prior review repeats the false source discrepancy. This initial observation
+    supersedes that assessment; prior findings[] is empty, so no invented previous
+    occurrence.
+  snapshot_sha256: 621322acf881d86776b08c88df3b79b743c3aa4a6e2b0f714b9a2150126e32ed
+- evidence_id: old-report
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-385/research/sources/round103-borates/20261015T212242Z-source-investigation.md
+  locator: Inyoite source investigation and literal944.0 passage
+  accessed_at: '2026-10-21T19:04:08.530603Z'
+  support: refutes
+  summary: Historical dossier repeats the transcription. Original currentPDF matches
+    its declared SHA; unavailable old raw paths are not claimed to be rehashed.
+  snapshot_sha256: e06285969e3af803b178469b2744433d3d16a53dabdb2968f9bcdfdd052a9ec2
+- evidence_id: baseline
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-385-baseline-gates.json
+  locator: Actual48746exit0/chunk2aeeaa, fullprocess/log; canonicalactual0/chunk247aa4
+  accessed_at: '2026-10-21T19:04:08.530603Z'
+  support: supports
+  summary: 363passed3skipped72.84s616records744histories;22canonical artifacts. Reused
+    for unchanged tracked tree before native save.
+  snapshot_sha256: 8b9262488df2d00e2a4606a1c68b2bf87b2d8ad37f02ca53bc32233dcf84bbd0
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-385-independent/initial-gate-terminal.json
+  locator: Reviewer batch91281actual0/chunk98bde2 and four durable checks/logs
+  accessed_at: '2026-10-21T19:04:08.530603Z'
+  support: supports
+  summary: Named1/corpus616/history744/diff0 independently passed.
+  snapshot_sha256: 98b49a30c70ad2e2f2253fc3c1287c06b0740b77bcb515e54c1bace5ef041c44
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-385-independent/finding-385-R1/dedup.json
+  locator: Bounded ignored/hidden/followed roots and all514saved all-state titles/bodies
+  accessed_at: '2026-10-21T19:04:08.530603Z'
+  support: context_only
+  summary: Related issue385 and priorPR392 found; no separate confirmed false-conflict
+    correction in bounded snapshot.
+  snapshot_sha256: 95ca13328fca0416010536f3c431bf973efb9107b063af2acb720cfee9ab55a1
+  search_scope: rg --no-ignore --hidden --follow over exact worktree/main/plan data,research,reviews,history
+    roots in dedup.json; all514 saved issue/PR titles and bodies. Excludes machine-wide
+    search and unsaved comments.
+- evidence_id: authority-landing
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-385-independent/web-open-01.json
+  locator: Exact web.run official institutional landing open with start/completion
+    UTC
+  accessed_at: '2026-10-21T19:04:08.530603Z'
+  support: context_only
+  summary: Institutional metadata distinguishes public accepted manuscript from restricted
+    final version.
+  snapshot_sha256: 4fefa5a54f7ca20f2881359a61702e9ab708e9dffe4addea21430e2f04be42d8
+  search_scope: Official https://air.unimi.it/handle/2434/898884 returned metadata
+    and file/access list. Independently searched DOI correction/erratum and inyoite
+    volume/reversibility phrases; no raw search dump retained for that earlier call,
+    so no universal negative or exact-result completeness claim is based on it.
+- evidence_id: preservation
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-385-independent/initial-preservation/preservation.json
+  locator: Nine exact inspected maintained/context inputs archived before correction
+  accessed_at: '2026-10-21T19:04:08.530603Z'
+  support: supports
+  summary: Owner, prior dossier/review/history and governance/schema input hashes
+    preserved.
+  snapshot_sha256: ce48f4675adcaaad8cb740f94dab76ea2a9d4bf95008e408cc43c46883891954
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Species and historical identity
+  outcome: supported
+  summary: IMA species formula, G grandfathered status and historical1914 year are
+    supported. Inyoite-II is an experimental phase label, not a separate natural species
+    or commodity.
+  target_ids:
+  - inyoite
+  evidence_ids:
+  - ima
+  - owner
+  - historic
+- assessment_id: scope
+  area: scope
+  topic: Historical versus laboratory specimens
+  outcome: supported
+  summary: MtBlanco historical material and the modern museum crystal with unreported
+    locality/new quantitative assay remain separate. Natural alteration is inferred
+    from textures, not a controlled modern pressure reaction.
+  target_ids:
+  - inyoite
+  evidence_ids:
+  - historic
+  - main
+  - owner
+- assessment_id: mechanism
+  area: evidence
+  topic: Pressure-induced diffraction transition
+  outcome: supported
+  summary: Sampled8.25(5) to8.86(5)GPa and824.75(6) to762(2)A3 support approximately7.6%volume
+    decrease; no equilibrium pressure or phase yield is asserted.
+  target_ids:
+  - inyoite
+  evidence_ids:
+  - main
+  - numeric
+- assessment_id: conditions
+  area: scope
+  topic: Experimental conditions and exclusions
+  outcome: supported
+  summary: Single approximately20x15x10micrometre crystal,heliumDAC,ESRFID15B,ruby
+    calibration0.05GPa and approximately293K deposited models are supported. No organism/biomass/donor/microbial
+    control, recovery or industrial claim is added.
+  target_ids:
+  - inyoite
+  evidence_ids:
+  - main
+  - cifs
+  - owner
+- assessment_id: model
+  area: consistency
+  topic: Unsolved high-pressure and H claims
+  outcome: supported
+  summary: Hydrogen is unlocated; high-pressure structure remains unsolved; P21/n
+    is suggested by extinctions. Boroncoordination increase remains analogy-based;
+    failed ambient diffraction does not demonstrate reversibility.
+  target_ids:
+  - inyoite
+  evidence_ids:
+  - main
+  - cifs
+  - si
+- assessment_id: false-conflict
+  area: quantity
+  topic: Literal 2GPa source value
+  outcome: concern
+  summary: Owner falsely attributes944.0(1) to Table1. Original924.0(1) agrees with
+    CIF923.96(11); this materially misrepresents source consistency and requires curation.
+  target_ids:
+  - inyoite
+  evidence_ids:
+  - owner
+  - main
+  - table-image
+  - cif6
+  - numeric
+  - prior
+  - old-report
+- assessment_id: remaining-limits
+  area: evidence
+  topic: Other source limits
+  outcome: supported
+  summary: 19.80 abstract versus18.91 table/18.9 body maximum remains unresolved.
+    Low-pressure deposits do not solve inyoite-II or measure composition; file-header/pressure
+    metadata quirks are not silently repaired.
+  target_ids:
+  - inyoite
+  evidence_ids:
+  - main
+  - cifs
+  - si
+- assessment_id: schema
+  area: schema
+  topic: Representation and identifiers
+  outcome: supported
+  summary: Mineral/source/evidence/history fields validate; no unsupported organism,
+    commodity criticality or mg/kg concentration observation is present.
+  target_ids:
+  - inyoite
+  evidence_ids:
+  - owner
+  - ima
+  - gates
+- assessment_id: history
+  area: provenance
+  topic: Immutable prior history and review
+  outcome: supported
+  summary: Existing CREATE and earlier review/dossier preserved exactly. New finding
+    corrects inherited assessment without rewriting historical reviews or fabricating
+    prior findings.
+  target_ids:
+  - inyoite
+  evidence_ids:
+  - history
+  - prior
+  - preservation
+  - gates
+findings:
+- finding_id: 385-R1
+  issue_key: inyoite-2gpa-volume-false-source-conflict
+  category: evidence
+  severity: major
+  status: open
+  certainty: confirmed
+  title: Correct the false 2 GPa volume conflict
+  description: The maintained explanation says manuscript Table1 prints944.0(1)A3
+    at2.00(5)GPa, creating a false discrepancy with deposited923.96(11). Original
+    PDF18 clearly prints924.0(1), agreeing with CIF rounding and independently computed
+    cell volume. The old dossier and clean native review repeat this inherited transcription
+    error; current original bytes match their declared digest. This is a maintained
+    scientific evidence defect, not a newly repaired source or an unresolved author
+    discrepancy.
+  target_ids:
+  - inyoite
+  field_paths:
+  - mechanisms[0].evidence[2].explanation
+  evidence_ids:
+  - owner
+  - main
+  - table-image
+  - cif6
+  - numeric
+  - prior
+  - old-report
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/inyoite.yaml
+    role: maintained mineral record
+  rule_id: primary-source-quantity-and-conflict
+  native_severity: major
+  normalization_reason: 'Major maps directly to shared major: a false numerical source
+    conflict materially misstates evidence and blocks reconciliation; not identity-blocking
+    and not merely an approximate locator.'
+actions:
+- action_id: correct-volume-conflict
+  description: Preserve this initial state; replace the false source discrepancy with
+    the literal924.0(1) versus923.96(11) agreement, retaining actual unresolved source
+    limits. Append truthful EDIT provenance and required rendered outputs, then obtain
+    exact-byte independent successor review.
+  finding_ids:
+  - 385-R1
+  target_ids:
+  - inyoite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/inyoite.yaml
+    role: maintained mineral record
+  acceptance_checks:
+  - Owner explicitly reflects original Table1 volume and rounding agreement.
+  - Existing historical dossier/review/CREATE remain immutable; successor source assessment
+    corrects inherited premise explicitly.
+  - New canonical and inline EDIT accurately describe actual correction.
+  - All required generated outputs and final/native checks pass; independent successor
+    resolves exact385-R1 occurrence.
+limitations:
+- Publisher version-of-record body remains unavailable in this initial review; accepted
+  Revision_1 is explicitly identified.
+- Schaller book review is limited to printed35–40/PlatesI–II; IMA source is the datedSeptember2026
+  edition reused from same-day acquisition.
+- No new chemical assay, resolved high-pressure structure, H coordinates, detector
+  package, re-refinement or reversible recovery is established.
+- Numeric review targets owner-bearing quantities and all12native cell volumes, not
+  every paper numeric token.
+- No exact retained raw dump for the early independent web search; bounded official
+  landing response is retained and no universal absence claim is made.
+- Native save/check and subsequent correction checks are recorded separately; no correction
+  is claimed in this initial observation.
+notes:
+- 'Prior native findings[] is empty: no previous_occurrences invented. This observation
+  supersedes its mistaken944.0 source assessment.'
+- Initial CIF helper failed on unscoped preamble before data_I; failed script preserved;
+  corrected parser labels preamble separately without modifying CIF bytes.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261015T213509Z-inyoite-round103-independent
+  relationship: Independent re-examination of unchanged owner; confirms one inherited
+    false source conflict while preserving prior bytes.
+links:
+- https://github.com/CultureBotAI/CMMMech/issues/385
+- /private/tmp/cmmmech-backlog-20261019-fmj36s/review-385-independent/finding-385-R1/issue-draft-initial.json
+tags:
+- issue-385
+- inyoite
+- scientific-review
+- initial-finding
+```

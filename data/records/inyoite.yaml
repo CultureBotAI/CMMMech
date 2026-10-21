@@ -28,7 +28,7 @@ sources:
       locality, chemical-analysis limitations and inferred alteration,
       pp. 35-40 and Plates I-II.
     url: https://pubs.usgs.gov/bul/0610/report.pdf
-    accessed_on: '2026-10-15'
+    accessed_on: '2026-10-21'
   - id: comboni2022
     title: >-
       Comboni et al. (2022), High-pressure behaviour and atomic-scale
@@ -37,7 +37,7 @@ sources:
       Open institutional accepted manuscript labelled Revision_1,
       Methods and Results pp. 3-9, Figures 1-5 and Tables 1-5.
     url: https://air.unimi.it/bitstream/2434/898884/6/inyoite_15-12-2021_revision_1.pdf
-    accessed_on: '2026-10-15'
+    accessed_on: '2026-10-21'
   - id: comboni2022_deposits
     title: >-
       Comboni et al. (2022), official article and linked supplementary
@@ -46,7 +46,7 @@ sources:
       from the institutional manuscript; the version-of-record PDF was
       not acquired.
     url: https://doi.org/10.1007/s00269-021-01173-3
-    accessed_on: '2026-10-15'
+    accessed_on: '2026-10-21'
 mechanisms:
   - id: abiotic-pressure-transition
     name: Pressure-induced transition of a natural inyoite crystal
@@ -97,12 +97,16 @@ mechanisms:
           polymorph from ambient pressure through 8.25(5) GPa; no inyoite-II
           structure is supplied. The manuscript abstract says the experiment
           reached 19.80(5) GPa, whereas Table 1 ends at 18.91(5) GPa and the
-          body states 18.9 GPa. At 2.00(5) GPa, manuscript Table 1 prints
-          944.0(1) cubic angstroms, while the matching deposited CIF gives
-          923.96(11). These discrepancies are retained rather than silently
-          repairing the source or treating all listed values as one reconciled
-          pressure-volume dataset. Deposited model contents are not an
-          independent chemical assay or replication.
+          body states 18.9 GPa; that discrepancy remains unresolved. At
+          2.00(5) GPa, Table 1 in both the accepted PDF and DOCX gives
+          924.0(1) cubic angstroms, consistent at the printed precision with
+          supplementary CIF 6 at 923.96(11). The prior record's 944.0(1)
+          was a transcription error. Supplementary CIF 10 has a commented
+          7.23-GPa header but cell parameters and refinement statistics
+          matching Table 1 and Table S1 at 5.19(5) GPa. It and CIF 13 lack
+          explicit pressure tags. These inferred joins do not establish a
+          fully reconciled pressure-volume dataset. Deposited model contents
+          are not an independent chemical assay or replication.
       - source_ref: schaller1916
         supports: context_only
         explanation: >-
@@ -119,5 +123,11 @@ curation_history:
     action: CREATE
     summary: >-
       Created a distinct inyoite species record with historical natural identity and an abiotic pressure transition, retaining unsolved structure, decompression and source-data limitations.
+  - timestamp: '2026-10-21T19:05:35Z'
+    curator: codex (GPT-6; codex)
+    action: EDIT
+    summary: >-
+      Corrected the false 2-GPa volume discrepancy against the primary PDF, DOCX and CIF, and qualified native pressure joins while retaining the unresolved maximum-pressure discrepancy and historical review artifacts.
 history_refs:
   - history/records/inyoite/2026-10-15T212044Z-codex-310aa1.yaml
+  - history/records/inyoite/2026-10-21T190535Z-codex-75da1d.yaml
