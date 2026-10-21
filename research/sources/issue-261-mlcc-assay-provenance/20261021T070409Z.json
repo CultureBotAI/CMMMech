@@ -1,0 +1,1033 @@
+{
+  "kind": "source_investigation",
+  "timestamp_utc": "2026-10-21T07:04:09.705060+00:00",
+  "researcher": "Codex (GPT-6), /root/resume_213_review_165",
+  "issue": "https://github.com/CultureBotAI/CMMMech/issues/261",
+  "worktree": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-261",
+  "branch": "codex/issue-261-mlcc-assay-provenance",
+  "base": "2da10d95a72146ee0c69cb91fe303348fbadb638",
+  "decision": "Source-only progress; unresolved assay provenance; no owner edit, no resolved percentages, no issue closure recommended.",
+  "owner": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-261/data/records/waste-multilayer-ceramic-capacitors.yaml",
+    "sha256": "eb82b9234b68ff42b1fbe376d9471c40399a24aeef1e1d5e87d376bead63d5b0",
+    "unchanged": true
+  },
+  "eligibility": {
+    "utc": "2026-10-21T07:02:15.373733+00:00",
+    "base": "2da10d95a72146ee0c69cb91fe303348fbadb638",
+    "origin_main": "2da10d95a72146ee0c69cb91fe303348fbadb638",
+    "branch": "codex/issue-261-mlcc-assay-provenance",
+    "owner": "data/records/waste-multilayer-ceramic-capacitors.yaml",
+    "owner_sha256": "eb82b9234b68ff42b1fbe376d9471c40399a24aeef1e1d5e87d376bead63d5b0",
+    "owner_latest_commit": "6ea9ddfa2cf6bd74a700186cb3e8251cd51eff58 2026-10-14T19:24:25Z",
+    "two_day_exclusion_pass": true,
+    "reconciliation": "/private/tmp/cmmmech-backlog-20261019-fmj36s/reconcile-261-20261021T065111Z",
+    "open_issues": 185,
+    "open_prs": 0,
+    "issue_comments": 0,
+    "related_260": "Closed SmCo locator correction, not same MLCC scientific question",
+    "working_status_before_report": ""
+  },
+  "searches": [
+    {
+      "date_utc": "2026-10-21T06:54:41.362Z",
+      "provider": "web.run search_query",
+      "queries": [
+        {
+          "q": "\"10.3390/molecules30214254\""
+        },
+        {
+          "q": "\"molecules30214254\" correction OR corrigendum OR retraction"
+        },
+        {
+          "q": "\"Masache-Romero\" \"capacitors\" data supplementary"
+        }
+      ],
+      "filters": "none",
+      "coverage": "first returned result set; no pagination",
+      "raw_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/web-search-01.json",
+      "sha256": "d4d3a4dd331637fcbba1832c9f2edcc2cfcdb42028f94a2226a9eb7cbd7f006a"
+    },
+    {
+      "date_utc": "2026-10-21T06:55:28.678Z",
+      "provider": "web.run search_query",
+      "queries": [
+        {
+          "q": "\"Masache Romero\" \"27158\" pdf"
+        },
+        {
+          "q": "\"Sustainable Recovery\" \"Multilayer Ceramic\" \"data\" correction"
+        },
+        {
+          "q": "\"30214254\" \"dataset\" OR \"Zenodo\" OR \"Mendeley\" OR \"Figshare\""
+        }
+      ],
+      "filters": "none",
+      "coverage": "first returned result set; no pagination",
+      "raw_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/web-search-02.json",
+      "sha256": "a644b2483a3d9fa7c18ca8fd1c5c1c0bf4ab494f22a47b9ada6bda7bbec6efec"
+    },
+    {
+      "date_utc": "2026-10-21",
+      "provider": "web.run search_query",
+      "queries": [
+        "\"molecules30214254\" correction corrigendum data",
+        "\"Masache\" \"27158\" nickel datos",
+        "\"Sustainable Recovery of Valuable Metals from Multilayer Ceramic Capacitors\" correction dataset"
+      ],
+      "filters": "none",
+      "coverage": "first returned result set; no pagination",
+      "raw_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/web-search-03.json",
+      "sha256": "27ee2ed1ddbf2285bb20a55cdd1b501c136bfeae4b20cea857f418c5880ccb34"
+    }
+  ],
+  "dedup": {
+    "article": {
+      "query": "30214254|Masache.Romero|multilayer.ceramic.capacitor|MLCC",
+      "matching_lines": 324,
+      "matching_files": 94,
+      "raw_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/dedup.txt",
+      "sha256": "2ac6c6bccfb78f8895edadd3cb1e9c10798e33238114fe4ff2cf2a5480894755"
+    },
+    "thesis": {
+      "query": "15000/27158|CD.?15890|Estudio comparativo de ácidos minerales",
+      "matching_lines": 0,
+      "raw_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/dedup-thesis.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "roots": [
+      "data",
+      "research",
+      "reviews",
+      "history",
+      "docs",
+      ".claude",
+      ".agents"
+    ],
+    "hidden_ignored_included": true,
+    "follow_symlinks": true,
+    "local_download_boundary": [
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261",
+      "/private/tmp/cmm-round79-frontier-research (referenced historical root; unavailable at recheck)"
+    ],
+    "exclusions": "Unrelated home/tmp trees; not machine-wide absence."
+  },
+  "acquisitions": [
+    {
+      "name": "main.pdf",
+      "requested_url": "https://mdpi-res.com/d_attachment/molecules/molecules-30-04254/article_deploy/molecules-30-04254.pdf",
+      "start": "2026-10-21T06:55:18.281315+00:00",
+      "status": 200,
+      "final_url": "https://mdpi-res.com/d_attachment/molecules/molecules-30-04254/article_deploy/molecules-30-04254.pdf",
+      "content_type": "application/pdf",
+      "bytes": 1388698,
+      "sha256": "59629d1a3db2aa5a045921c4e178aeb9f16774fcf221efea5142106cf2b069b9",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/main.pdf",
+      "leading_bytes": "b'%PDF-1.7\\n%\\xe2\\xe3\\xcf\\xd3\\n1 0 obj\\n<</P 2 0 R/A<</S/'",
+      "finished": "2026-10-21T06:55:18.586581+00:00"
+    },
+    {
+      "name": "main.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12609714/fullTextXML",
+      "start": "2026-10-21T06:55:18.282322+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC12609714/fullTextXML",
+      "content_type": "application/xml",
+      "bytes": 122740,
+      "sha256": "330bd265919c9df783547a603941af99f7b4cffdb0c981a0e065edaa82b0e2d4",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/main.xml",
+      "leading_bytes": "b'<?xml version=\"1.0\" encoding=\"UTF-8\"?><a'",
+      "finished": "2026-10-21T06:55:19.518074+00:00"
+    },
+    {
+      "name": "crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.3390/molecules30214254",
+      "start": "2026-10-21T06:55:18.282856+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.3390/molecules30214254",
+      "content_type": "application/json",
+      "bytes": 18204,
+      "sha256": "f22299f4963ef46f8ca6fb1fafdaef7dd67580a93420a992a1e4564d3b71346a",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/crossref.json",
+      "leading_bytes": "b'{\"status\":\"ok\",\"message-type\":\"work\",\"me'",
+      "finished": "2026-10-21T06:55:18.668510+00:00"
+    },
+    {
+      "name": "publisher-main.html",
+      "requested_url": "https://www.mdpi.com/1420-3049/30/21/4254",
+      "start": "2026-10-21T06:55:18.283412+00:00",
+      "status": 403,
+      "final_url": "https://www.mdpi.com/1420-3049/30/21/4254",
+      "content_type": "text/html",
+      "bytes": 402,
+      "sha256": "9666b052796a332a0fc7a0f5d2b94fb43b14b785ad83fbd99b191dbc9b1b61b6",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/publisher-main.html",
+      "leading_bytes": "b'<HTML><HEAD>\\n<TITLE>Access Denied</TITLE'",
+      "finished": "2026-10-21T06:55:18.388931+00:00"
+    },
+    {
+      "name": "publisher-notes.html",
+      "requested_url": "https://www.mdpi.com/1420-3049/30/21/4254/notes",
+      "start": "2026-10-21T06:55:18.388952+00:00",
+      "status": 403,
+      "final_url": "https://www.mdpi.com/1420-3049/30/21/4254/notes",
+      "content_type": "text/html",
+      "bytes": 412,
+      "sha256": "4d362434f8ece3586f41a557127b3475d0b8f0374d83e84df902a76535ac9418",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/publisher-notes.html",
+      "leading_bytes": "b'<HTML><HEAD>\\n<TITLE>Access Denied</TITLE'",
+      "finished": "2026-10-21T06:55:18.433898+00:00"
+    },
+    {
+      "name": "thesis-landing.html",
+      "requested_url": "https://bibdigital.epn.edu.ec/handle/15000/27158",
+      "start": "2026-10-21T06:55:18.433919+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1082)>",
+      "finished": "2026-10-21T06:55:18.758847+00:00"
+    },
+    {
+      "name": "openalex.json",
+      "requested_url": "https://api.openalex.org/works/https://doi.org/10.3390/molecules30214254",
+      "start": "2026-10-21T06:55:18.586607+00:00",
+      "status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.3390/molecules30214254",
+      "content_type": "application/json",
+      "bytes": 23112,
+      "sha256": "9b7a47247393a766a48580e014efed0784f4bdc463a3a1bd5433f9e61b766077",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/openalex.json",
+      "leading_bytes": "b'{\"id\":\"https://openalex.org/W4415817338\"'",
+      "finished": "2026-10-21T06:55:18.886576+00:00"
+    },
+    {
+      "name": "thesis.pdf",
+      "requested_url": "https://bibdigital.epn.edu.ec/bitstream/15000/27158/1/CD%2015890.pdf",
+      "start": "2026-10-21T06:56:33.716723+00:00",
+      "finished": "2026-10-21T06:56:36.143881+00:00",
+      "client": "curl; default certificate verification",
+      "exit": 0,
+      "status": 200,
+      "final_url": "https://bibdigital.epn.edu.ec/bitstream/15000/27158/1/CD%2015890.pdf",
+      "content_type": "application/pdf",
+      "stderr": "",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis.pdf",
+      "bytes": 3804374,
+      "sha256": "24e59f305965fbd93d1df5dadc3e593d77db4359c066a87a9cd02dd2d48b6f70",
+      "leading_bytes": "b'%PDF-1.3\\n%\\xc4\\xe5\\xf2\\xe5\\xeb\\xa7\\xf3\\xa0\\xd0\\xc4\\xc6\\n3 0 obj\\n<< /Filter'"
+    },
+    {
+      "name": "thesis-full-metadata.html",
+      "requested_url": "https://bibdigital.epn.edu.ec/handle/15000/27158?mode=full",
+      "start": "2026-10-21T06:56:33.717113+00:00",
+      "finished": "2026-10-21T06:56:34.418239+00:00",
+      "client": "curl; default certificate verification",
+      "exit": 0,
+      "status": 200,
+      "final_url": "https://bibdigital.epn.edu.ec/handle/15000/27158?mode=full",
+      "content_type": "text/html;charset=UTF-8",
+      "stderr": "",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-full-metadata.html",
+      "bytes": 28662,
+      "sha256": "a3f68761c46f7110b372622bf7559a355c4b348f79195587bc4c824e7df3d778",
+      "leading_bytes": "b'\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n\\r\\n<!DO'"
+    }
+  ],
+  "article": {
+    "doi": "10.3390/molecules30214254",
+    "pmcid": "PMC12609714",
+    "physical_pages": 18,
+    "license": "CC BY 4.0, PDF p.1 / XML license",
+    "published": "2025-10-31 in PDF and XML; publisher search index displayed 2025-10-30; no inferred scientific revision",
+    "fresh_pdf_equals_prior_reported_sha256": true,
+    "fresh_xml_equals_prior_reported_sha256": true,
+    "primary_locators": [
+      "p.1 abstract",
+      "p.6 Section 2.2.2",
+      "p.7 Figures 2 and 3 / Section 2.2.3",
+      "p.11 Section 3.3 / Table 3",
+      "p.15 Sections 4.3–4.4 / Table 4",
+      "p.16 conclusion and data availability"
+    ],
+    "limits": [
+      "Ni 25/6 versus 68/16 at 24 h",
+      "Fe abstract 60 versus conclusion 68/44/16, prose nearly70/42/18",
+      "Methods 0.5/1/2/4/6/24 h versus 16 h in graphs",
+      "Replicate count and error-bar definitions absent from inspected methods/captions",
+      "No explicit withdrawal, replacement or cumulative sampling-loss correction located",
+      "No raw assay concentration-time rows or yield calculation denominator located"
+    ]
+  },
+  "thesis": {
+    "handle": "15000/27158",
+    "url": "https://bibdigital.epn.edu.ec/handle/15000/27158",
+    "pdf_url": "https://bibdigital.epn.edu.ec/bitstream/15000/27158/1/CD%2015890.pdf",
+    "title": "Estudio comparativo de ácidos minerales, ácidos carboxílicos y disolventes eutécticos profundos como agentes lixiviantes para la recuperación de cobre, níquel, plata y zinc desde capacitores cerámicos multicapa de computadoras posconsumo",
+    "author": "Jordy David Masache Romero",
+    "director": "Carlos Francisco Aragón Tobar",
+    "version": "Repository thesis T-MVE 1264 / CD 15890; cover February 2026; repository issued 2026-03-11; accessed 2026-10-21",
+    "physical_pages": 159,
+    "printed_body_pages": 149,
+    "license": "Repository says openAccess; redistribution license not established; raw PDF outside Git",
+    "source_role": "Related primary thesis and appended analytical reports; provenance/context only until article-run join resolved",
+    "article_lineage": "Shared author/director, matching main XRF Table 3.1 / article Table 1, methods and Ni plot/prose suggest shared presentation. This is an inference, not evidence of independent replication or a specimen/run-level join. Thesis lacks explicit article DOI in extracted text and appendix dates are blank.",
+    "des_audit": {
+      "audit_utc": "2026-10-21T07:02:15.359293+00:00",
+      "source": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis.pdf",
+      "source_sha256": "24e59f305965fbd93d1df5dadc3e593d77db4359c066a87a9cd02dd2d48b6f70",
+      "scope": "All twelve DES appendix pages, physical 147–158, printed 138–149. Table text checked against original rendered pages; no curve digitization. Main methods and Ni prose inspected separately.",
+      "rows": [
+        {
+          "physical_page": 147,
+          "printed_page": 138,
+          "ficha": 14,
+          "analyte": "Cu",
+          "source_image": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p147.png",
+          "image_visually_inspected": true,
+          "objective_solids_token": "10%",
+          "date_token": "-----",
+          "table_lines": [
+            "Metal analizado          Cu",
+            "Temperatura              90",
+            "Tiempo del ensayo        24 horas",
+            "Agitación (rpm)          400",
+            "Masa de glicelina        331,74 g/mol",
+            "Masa de los MLCCs        49 mg",
+            "% de Cu                  2,45",
+            "Volumen de la alícuota                2 mL",
+            "Volumen del aforo                     50 mL",
+            "Solución de aforo                     Solución de Glicelina",
+            "Porcentaje de sólidos                 2%",
+            "Figura 14.1. Porcentaje de recuperación de cobre usando glicelina con 2% de sólidos."
+          ],
+          "source_kind": "condition table plus curve; no raw concentration-time rows",
+          "replicate_ids": null,
+          "error_definition": null,
+          "withdrawal_correction": null
+        },
+        {
+          "physical_page": 148,
+          "printed_page": 139,
+          "ficha": 14,
+          "analyte": "Ni",
+          "source_image": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p148.png",
+          "image_visually_inspected": true,
+          "objective_solids_token": "10%",
+          "date_token": "-----",
+          "table_lines": [
+            "Metal analizado              Ni",
+            "Temperatura                  90",
+            "Tiempo del ensayo            24 horas",
+            "Agitación (rpm)              400",
+            "Masa de glicelina            331,74 g/mol",
+            "Masa de los MLCCs            49 mg",
+            "% de Ni                      18,15",
+            "Volumen de la alícuota       2 mL",
+            "Volumen del aforo            50 mL",
+            "Solución de aforo            Solución de Glicelina",
+            "Porcentaje de sólidos        2%",
+            "Figura 14.2. Porcentaje de recuperación de níquel usando glicelina con 2% de sólidos."
+          ],
+          "source_kind": "condition table plus curve; no raw concentration-time rows",
+          "replicate_ids": null,
+          "error_definition": null,
+          "withdrawal_correction": null
+        },
+        {
+          "physical_page": 149,
+          "printed_page": 140,
+          "ficha": 14,
+          "analyte": "Ag",
+          "source_image": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p149.png",
+          "image_visually_inspected": true,
+          "objective_solids_token": "10%",
+          "date_token": "-----",
+          "table_lines": [
+            "Metal analizado              Ag",
+            "Temperatura                  90",
+            "Tiempo del ensayo            24 horas",
+            "Agitación (rpm)              400",
+            "Masa de glicelina            331,74 g/mol",
+            "Masa de los MLCCs            49 mg",
+            "% de Ag                      0,52",
+            "Volumen de la alícuota       2 mL",
+            "Volumen del aforo            50 mL",
+            "Solución de aforo            Solución de Glicelina",
+            "Porcentaje de sólidos        2%",
+            "Figura 14.3. Porcentaje de recuperación de plata usando glicelina con 2% de sólidos."
+          ],
+          "source_kind": "condition table plus curve; no raw concentration-time rows",
+          "replicate_ids": null,
+          "error_definition": null,
+          "withdrawal_correction": null
+        },
+        {
+          "physical_page": 150,
+          "printed_page": 141,
+          "ficha": 14,
+          "analyte": "Zn",
+          "source_image": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p150.png",
+          "image_visually_inspected": true,
+          "objective_solids_token": "10%",
+          "date_token": "-----",
+          "table_lines": [
+            "Metal analizado              Zn",
+            "Temperatura                  90",
+            "Tiempo del ensayo            24 horas",
+            "Agitación (rpm)              400",
+            "Masa de glicelina            331,74 g/mol",
+            "Masa de los MLCCs            49 mg",
+            "% de Zn                      1,10",
+            "Volumen de la alícuota       2 mL",
+            "Volumen del aforo            50 mL",
+            "Solución de aforo            Solución de Glicelina",
+            "Porcentaje de sólidos        2%",
+            "Figura 14.4. Porcentaje de recuperación de zinc usando glicelina con 2% de sólidos."
+          ],
+          "source_kind": "condition table plus curve; no raw concentration-time rows",
+          "replicate_ids": null,
+          "error_definition": null,
+          "withdrawal_correction": null
+        },
+        {
+          "physical_page": 151,
+          "printed_page": 142,
+          "ficha": 15,
+          "analyte": "Cu",
+          "source_image": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p151.png",
+          "image_visually_inspected": true,
+          "objective_solids_token": "10%",
+          "date_token": "-----",
+          "table_lines": [
+            "Metal analizado              Cu",
+            "Temperatura                  90",
+            "Tiempo del ensayo            24 horas",
+            "Agitación (rpm)              400",
+            "Masa del DES Ternario        840,32 g/mol",
+            "Masa de los MLCCs            49 mg",
+            "% de Cu                      2,45",
+            "Volumen de la alícuota       2 mL",
+            "Volumen del aforo            50 mL",
+            "Solución de aforo            Solución del Ternario",
+            "Porcentaje de sólidos        2%",
+            "Figura 15.1. Porcentaje de recuperación de zinc usando el DES Ternario con 2% de"
+          ],
+          "source_kind": "condition table plus curve; no raw concentration-time rows",
+          "replicate_ids": null,
+          "error_definition": null,
+          "withdrawal_correction": null
+        },
+        {
+          "physical_page": 152,
+          "printed_page": 143,
+          "ficha": 15,
+          "analyte": "Ni",
+          "source_image": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p152.png",
+          "image_visually_inspected": true,
+          "objective_solids_token": "10%",
+          "date_token": "-----",
+          "table_lines": [
+            "Metal analizado              Ni",
+            "Temperatura                  90",
+            "Tiempo del ensayo            24 horas",
+            "Agitación (rpm)              400",
+            "Masa del DES Ternario        840,32 g/mol",
+            "Masa de los MLCCs            49 mg",
+            "% de Ni                      18,15",
+            "Volumen de la alícuota       2 mL",
+            "Volumen del aforo            50 mL",
+            "Solución de aforo            Solución de Ternario",
+            "Porcentaje de sólidos        2%",
+            "Figura 15.2. Porcentaje de recuperación de níquel usando el DES Ternario con 2% de"
+          ],
+          "source_kind": "condition table plus curve; no raw concentration-time rows",
+          "replicate_ids": null,
+          "error_definition": null,
+          "withdrawal_correction": null
+        },
+        {
+          "physical_page": 153,
+          "printed_page": 144,
+          "ficha": 15,
+          "analyte": "Ag",
+          "source_image": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p153.png",
+          "image_visually_inspected": true,
+          "objective_solids_token": "10%",
+          "date_token": "-----",
+          "table_lines": [
+            "Metal analizado              Ag",
+            "Temperatura                  90",
+            "Tiempo del ensayo            24 horas",
+            "Agitación (rpm)              400",
+            "Masa del DES Ternario        840,32 g/mol",
+            "Masa de los MLCCs            49 mg",
+            "% de Ag                      0,52",
+            "Volumen de la alícuota       2 mL",
+            "Volumen del aforo            50 mL",
+            "Solución de aforo            Solución de Ternario",
+            "Porcentaje de sólidos        2%",
+            "Figura 15.3. Porcentaje de recuperación de plata usando el DES Ternario con 2% de"
+          ],
+          "source_kind": "condition table plus curve; no raw concentration-time rows",
+          "replicate_ids": null,
+          "error_definition": null,
+          "withdrawal_correction": null
+        },
+        {
+          "physical_page": 154,
+          "printed_page": 145,
+          "ficha": 15,
+          "analyte": "Zn",
+          "source_image": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p154.png",
+          "image_visually_inspected": true,
+          "objective_solids_token": "10%",
+          "date_token": "-----",
+          "table_lines": [
+            "Metal analizado              Zn",
+            "Temperatura                  90",
+            "Tiempo del ensayo            24 horas",
+            "Agitación (rpm)              400",
+            "Masa de ternario             840,32 g/mol",
+            "Masa de los MLCCs            49 mg",
+            "% de Ni                      1,10",
+            "Volumen de la alícuota       2 mL",
+            "Volumen del aforo            50 mL",
+            "Solución de aforo            Solución de Ternario",
+            "Porcentaje de sólidos        2%",
+            "Figura 15.4. Porcentaje de recuperación de zinc usando el DES Ternario con 2% de"
+          ],
+          "source_kind": "condition table plus curve; no raw concentration-time rows",
+          "replicate_ids": null,
+          "error_definition": null,
+          "withdrawal_correction": null
+        },
+        {
+          "physical_page": 155,
+          "printed_page": 146,
+          "ficha": 16,
+          "analyte": "Cu",
+          "source_image": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p155.png",
+          "image_visually_inspected": true,
+          "objective_solids_token": "10%",
+          "date_token": "-----",
+          "table_lines": [
+            "Metal analizado              Cu",
+            "Temperatura                  90",
+            "Tiempo del ensayo            24 horas",
+            "Agitación (rpm)              400",
+            "Masa de Citrina              331,74 g/mol",
+            "Masa de los MLCCs            49 mg",
+            "% de Cu                      2,45",
+            "Volumen de la alícuota       2 mL",
+            "Volumen del aforo            50 mL",
+            "Solución de aforo            Solución de Citrina",
+            "Porcentaje de sólidos        2%",
+            "Figura 16.1. Porcentaje de recuperación de cobre usando la Citrina con 2% de sólidos."
+          ],
+          "source_kind": "condition table plus curve; no raw concentration-time rows",
+          "replicate_ids": null,
+          "error_definition": null,
+          "withdrawal_correction": null
+        },
+        {
+          "physical_page": 156,
+          "printed_page": 147,
+          "ficha": 16,
+          "analyte": "Ni",
+          "source_image": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p156.png",
+          "image_visually_inspected": true,
+          "objective_solids_token": "10%",
+          "date_token": "-----",
+          "table_lines": [
+            "Metal analizado               Ni",
+            "Temperatura                   90",
+            "Tiempo del ensayo             24 horas",
+            "Agitación (rpm)               400",
+            "Masa de Citrina               331,74 g/mol",
+            "Masa de los MLCCs             49 mg",
+            "% de Ni                       18,15",
+            "Volumen de la alícuota        2 mL",
+            "Volumen del aforo             50 mL",
+            "Solución de aforo             Solución de Citrina",
+            "Porcentaje de sólidos         2%",
+            "Figura 16.2. Porcentaje de recuperación de níquel usando la Citrina con 2% de sólidos."
+          ],
+          "source_kind": "condition table plus curve; no raw concentration-time rows",
+          "replicate_ids": null,
+          "error_definition": null,
+          "withdrawal_correction": null
+        },
+        {
+          "physical_page": 157,
+          "printed_page": 148,
+          "ficha": 16,
+          "analyte": "Ag",
+          "source_image": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p157.png",
+          "image_visually_inspected": true,
+          "objective_solids_token": "10%",
+          "date_token": "-----",
+          "table_lines": [
+            "Metal analizado              Ag",
+            "Temperatura                  90",
+            "Tiempo del ensayo            24 horas",
+            "Agitación (rpm)              400",
+            "Masa de Citrina              331,74 g/mol",
+            "Masa de los MLCCs            49 mg",
+            "% de Ag                      0,52%",
+            "Volumen de la alícuota       2 mL",
+            "Volumen del aforo            50 mL",
+            "Solución de aforo            Solución de Glicelina",
+            "Porcentaje de sólidos        2%",
+            "Figura 16.3. Porcentaje de recuperación de plata usando la Citrina con 2% de sólidos."
+          ],
+          "source_kind": "condition table plus curve; no raw concentration-time rows",
+          "replicate_ids": null,
+          "error_definition": null,
+          "withdrawal_correction": null
+        },
+        {
+          "physical_page": 158,
+          "printed_page": 149,
+          "ficha": 16,
+          "analyte": "Zn",
+          "source_image": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p158.png",
+          "image_visually_inspected": true,
+          "objective_solids_token": "10%",
+          "date_token": "-----",
+          "table_lines": [
+            "Metal analizado              Zn",
+            "Temperatura                  90",
+            "Tiempo del ensayo            24 horas",
+            "Agitación (rpm)              400",
+            "Masa de Citrina              331,74 g/mol",
+            "Masa de los MLCCs            49 mg",
+            "% de Zn                      1,10",
+            "Volumen de la alícuota       2 mL",
+            "Volumen del aforo            50 mL",
+            "Solución de aforo            Solución de Citrina",
+            "Porcentaje de sólidos        2%",
+            "Figura 16.4. Porcentaje de recuperación de zinc usando la Citrina con 2% de sólidos"
+          ],
+          "source_kind": "condition table plus curve; no raw concentration-time rows",
+          "replicate_ids": null,
+          "error_definition": null,
+          "withdrawal_correction": null
+        }
+      ],
+      "label_conflicts": [
+        {
+          "physical_page": 151,
+          "printed_page": 142,
+          "locator": "Figure 15.1 caption",
+          "printed_analyte": "zinc",
+          "table_and_plot_analyte": "Cu"
+        },
+        {
+          "physical_page": 154,
+          "printed_page": 145,
+          "locator": "percentage row",
+          "printed_label": "% de Ni",
+          "printed_value": "1,10",
+          "table_and_plot_analyte": "Zn"
+        },
+        {
+          "physical_page": 156,
+          "printed_page": 147,
+          "locator": "Solvente Eutéctico cell",
+          "printed_token": "ternario",
+          "page_objective_and_plot": "Citrina / Ni"
+        },
+        {
+          "physical_page": 157,
+          "printed_page": 148,
+          "locator": "Solución de aforo row",
+          "printed_token": "Solución de Glicelina",
+          "page_objective_and_plot": "Citrina / Ag"
+        }
+      ]
+    },
+    "metadata_audit_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/metadata-audit.json",
+    "xrf": {
+      "physical_page": 94,
+      "printed_page": 85,
+      "report": "RM-10972",
+      "date_token": "07/03/2025",
+      "sample_codes": [
+        "01",
+        "JM-01"
+      ],
+      "Ni_percent_tokens": [
+        "12,44",
+        "11,41"
+      ],
+      "Fe_percent_tokens": [
+        "4,24",
+        "4,32"
+      ],
+      "Cu_percent_tokens": [
+        "1,29",
+        "2,33"
+      ],
+      "Zn_percent_tokens": [
+        "1,11",
+        "1,09"
+      ],
+      "limit": "No crosswalk to article Table 1 or DES runs; no normalization or denominator conversion accepted."
+    },
+    "xrd": {
+      "physical_page": 93,
+      "printed_page": 84,
+      "report": "RM-10972",
+      "sample_code": "JM-01",
+      "date_token": "12 - 03 - 2025",
+      "limit": "High amorphous content prevents confident crystalline-phase identification; listed peaks are possible assignments with qualitative abundance, not phase fractions. No new phase admission."
+    },
+    "Fe_resolution": false
+  },
+  "metadata_notice_limits": {
+    "utc": "2026-10-21T07:02:15.373144+00:00",
+    "article_xml_supplementary_material_nodes": 0,
+    "article_xml_related_article_nodes": 0,
+    "crossref_relation": {},
+    "crossref_update_to": null,
+    "crossref_update_policy": "https://doi.org/10.3390/mdpi_crossmark_policy",
+    "openalex_is_retracted": false,
+    "thesis_metadata": {
+      "dc.contributor.author": "Masache Romero, Jordy David",
+      "dc.contributor.editor": "Aragon Tobar, Carlos Francisco",
+      "dc.date.accessioned": "2026-03-11T18:51:41Z",
+      "dc.date.available": "2026-03-11T18:51:41Z",
+      "dc.date.issued": "2026-03-11",
+      "dc.identifier.citation": "Masache Romero, J.D.(2026).Estudio comparativo de ácidos minerales, ácidos carboxílicos y disolventes eutécticos profundos como agentes lixiviantes para la recuperación de cobre, níquel, plata y zinc desde capacitores cerámicos multicapa de computadoras posconsumo.149 páginas. Quito : EPN.",
+      "dc.identifier.other": "T-MVE 1264/CD 15890",
+      "dc.identifier.uri": "https://bibdigital.epn.edu.ec/handle/15000/27158",
+      "dc.description": "Los capacitores cerámicos multicapa (MLCC), dispositivos de almacenamiento de energía en tarjetas de circuito impreso (PCB), contienen metales estratégicos con potencial de valorización. En este estudio se compara la eficiencia de ácidos minerales, ácidos carboxílicos y disolventes eutécticos profundos (DES) como agentes lixiviantes para la recuperación selectiva de cobre, níquel, plata y zinc provenientes de MLCC. Estos dispositivos fueron manualmente separados y caracterizados química y mineralógicamente mediante fluorescencia de rayos X, difracción de rayos X y ensayo al fuego. Las pruebas de lixiviación con ácidos minerales se realizaron inicialmente con HNO3, evaluando diferentes concentraciones y porcentajes de sólidos a 30 °C, con el fin de establecer condiciones óptimas, posteriormente aplicadas a HCl, H₂SO₄ y H₃PO₄ bajo condiciones equivalentes de acidez. Los ensayos con ácidos carboxílicos (acético, oxálico y cítrico) se efectuaron bajo las mismas condiciones operativas. Asimismo, se evaluaron tres DES basados en cloruro de colina (ChCl): glicelina (ChCl-glicerol), citrina (ChCl-ácido cítrico) y un sistema ternario (ChCl-glicerol-ácido cítrico). Los resultados evidenciaron una marcada selectividad metal–lixiviante: el HNO3 permitió recuperaciones cercanas al 100 % de cobre, níquel y plata, el H2SO4 mostró afinidad por el zinc, el ácido cítrico fue selectivo para el cobre y el ácido acético para níquel y zinc. Los DES que contienen ácido cítrico, especialmente el sistema ternario, permitieron recuperar cobre y zinc con eficiencias cercanas al 100 % en 24 h. A partir de estos resultados, se propuso un esquema de lixiviación selectiva y secuencial orientado a la recuperación diferenciada de los metales estudiados.",
+      "dc.description.abstract": "Multilayer ceramic capacitors (MLCCs), energy storage devices in printed circuit Boards (PCBs), contain strategic metals with potential for valorization. This study compares the efficiency of mineral acids, carboxylic acids, and deep eutectic solvents (DES) as leaching agents for the selective recovery of copper, nickel, silver, and zinc from MLCCs. The devices were manually separated and chemically and mineralogically characterized using X-ray fluorescence, X-ray diffraction, and fire assay. Leaching tests with mineral acids were initially conducted using HNO₃, evaluating different concentrations and solid contents at 30 °C to establish optimal conditions, which were subsequently applied to HCl, H₂SO₄, and H₃PO₄ under equivalent acidity. Carboxylic acid tests (acetic, oxalic, and citric) were performed under the same operational conditions. Additionally, three ChCl-based DES were evaluated: Gliceline (ChCl–glycerol), Citrine (ChCl–citric acid), and a ternary system (ChCl– glycerol–citric acid). The results revealed pronounced metal–leachant selectivity: HNO₃ achieved near 100 % recoveries for copper, nickel, and silver, H₂SO₄ showed high affinity for zinc, citric acid was selective for copper, and acetic acid for nickel and zinc. DES containing citric acid, particularly the ternary system, enabled copper and zinc recovery with efficiencies approaching 100 % within 24 h. Based on these findings, a sequential and selective leaching scheme was proposed for the differentiated recovery of the studied metals.",
+      "dc.language.iso": "spa",
+      "dc.publisher": "Quito : EPN, 2026.",
+      "dc.rights": "info:eu-repo/semantics/openAccess",
+      "dc.subject": "RESIDUOS ELECTRÓNICOS (RAEE)",
+      "dc.title": "Estudio comparativo de ácidos minerales, ácidos carboxílicos y disolventes eutécticos profundos como agentes lixiviantes para la recuperación de cobre, níquel, plata y zinc desde capacitores cerámicos multicapa de computadoras posconsumo",
+      "dc.type": "masterThesis"
+    },
+    "thesis_linked_unique_bitstreams": [
+      "https://bibdigital.epn.edu.ec/bitstream/15000/27158/1/CD%2015890.pdf"
+    ],
+    "pdf_embedded_files": {
+      "main": 0,
+      "thesis": 0
+    },
+    "scope_limit": "No notice or raw assay dataset located by inspected metadata and bounded searches; blocked publisher notes and unqueried registries prevent exhaustive absence claim."
+  },
+  "schema_mapping": {
+    "existing_material_kind": "secondary_resource",
+    "existing_mechanism": "chemical_des_leaching; microbial false",
+    "possible_future_fields": [
+      "sources",
+      "mechanisms[].context",
+      "mechanisms[].evidence with supports: partial"
+    ],
+    "quantitative_observations": "Not admissible: current schema contract is exact source concentration cells in mg/kg, not plotted yield percentages. No conversion/digitization proposed.",
+    "schema_change": false
+  },
+  "validation_at_report_write": {
+    "baseline": "just check exit 0; 327 passed / 3 skipped / 616 records / 744 histories",
+    "baseline_log": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-261-baseline-check.log",
+    "baseline_log_sha256": "fd8ad9e038095ebd89e5892fb130bfe784672a99cf40b6e905946e07a1ba1e7c",
+    "final_gate": "To follow in separate outside-Git receipt; no completed final gate claimed here.",
+    "native_record_review": "Not run: owner unchanged; independent source review requested separately."
+  },
+  "raw_manifest": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/acquire-curl.py",
+      "bytes": 1250,
+      "sha256": "8701df0699b84cbaeead4300a3331dae14b2d4b0590e0f02e7259e9242f8a896"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/acquire.py",
+      "bytes": 1149,
+      "sha256": "bc341787994d0a2f4e9f67d2dd18a3255f042cf527cfae830fa950d2b72d9c50"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/acquisitions-01.json",
+      "bytes": 4167,
+      "sha256": "2ea3a2eb60c97957e4e7ad5504e32ba4a787e6fb3a7a390f34f7eee823926eaf"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/acquisitions-curl-01.json",
+      "bytes": 1579,
+      "sha256": "e5fe1b2337ded587c6c74821ba8df8545dd4d1d405009ec307c23ff1183fef42"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/comments-260.json",
+      "bytes": 3,
+      "sha256": "37517e5f3dc66819f61f5a7bb8ace1921282415f10551d2defa5c3eb0985b570"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/crossref.json",
+      "bytes": 18204,
+      "sha256": "f22299f4963ef46f8ca6fb1fafdaef7dd67580a93420a992a1e4564d3b71346a"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/dedup-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/dedup-thesis-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/dedup-thesis.json",
+      "bytes": 683,
+      "sha256": "3c3f745f6c94de6e511f003b575fde126e0178419a4215d5d144290e9ecbc5d5"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/dedup-thesis.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/dedup.json",
+      "bytes": 7603,
+      "sha256": "cd81820ff792eed0c5220989b84629f91853e75e2c0640d94bcf3d1e416d383e"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/dedup.txt",
+      "bytes": 54824907,
+      "sha256": "2ac6c6bccfb78f8895edadd3cb1e9c10798e33238114fe4ff2cf2a5480894755"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/eligibility.json",
+      "bytes": 779,
+      "sha256": "e9b7d13eec653f3a7d3c78b51dc717d8adce391a63ba8252c51e27d4bf5e1110"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/issue-260.json",
+      "bytes": 5507,
+      "sha256": "cbaa5f65b9f46826ee649da75fd2d281bb0918d0bd50e86fbd16b9a2b930bc5a"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/main-attachments.txt",
+      "bytes": 17,
+      "sha256": "b598e8defe2b1052cb7712293ce6fd0fb9d5225e770ebbca300edc6cf51970b6"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/main-p1.png",
+      "bytes": 509574,
+      "sha256": "7fa6a0650c9f1b7fedfb02259390bc260c0755f10271a2cba6af9c1cfd253871"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/main-p11.png",
+      "bytes": 467391,
+      "sha256": "10fa3f6a684bdadda4b36142aca0d6b9b4958fe637c154a185015c4a11897a95"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/main-p15.png",
+      "bytes": 476620,
+      "sha256": "1b788fd6510ef45bbcd997e72565d322c5108c522aff0d7c5c22cda86780c565"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/main-p16.png",
+      "bytes": 377995,
+      "sha256": "c7de8185f1c7d737a323313cf89f418647d6df5484ae8264beecc35843da1fd3"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/main-p6.png",
+      "bytes": 325870,
+      "sha256": "54b3c76d857f030ba7008934a45a6210b5cfbba06c8e85e5b72c1c3839e591a9"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/main-p7.png",
+      "bytes": 216005,
+      "sha256": "8a9e14f188c5321f74229280b363bb1ee992d03e8669097777f55e7d9e501d48"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/main.pdf",
+      "bytes": 1388698,
+      "sha256": "59629d1a3db2aa5a045921c4e178aeb9f16774fcf221efea5142106cf2b069b9"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/main.txt",
+      "bytes": 90779,
+      "sha256": "0de0e9e30dfe605b72567576f8615fbd048f4078d82f21542b89cf690a7952b8"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/main.xml",
+      "bytes": 122740,
+      "sha256": "330bd265919c9df783547a603941af99f7b4cffdb0c981a0e065edaa82b0e2d4"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/metadata-audit.json",
+      "bytes": 5307,
+      "sha256": "e122efce46d5dea1195f8cd1006a89e790b6e51ed7d68d4a7d0971115f2dc9c7"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/openalex.json",
+      "bytes": 23112,
+      "sha256": "9b7a47247393a766a48580e014efed0784f4bdc463a3a1bd5433f9e61b766077"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/publisher-main.html",
+      "bytes": 402,
+      "sha256": "9666b052796a332a0fc7a0f5d2b94fb43b14b785ad83fbd99b191dbc9b1b61b6"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/publisher-notes.html",
+      "bytes": 412,
+      "sha256": "4d362434f8ece3586f41a557127b3475d0b8f0374d83e84df902a76535ac9418"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/routes-01.json",
+      "bytes": 616,
+      "sha256": "330dba8915d749e92ffab68f55bc92bd82f58d04e7d4e34a694abecd4370dc81"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/routes-curl-01.json",
+      "bytes": 184,
+      "sha256": "03735fbab8657d4a905e3baf086a19fe73c434d213b0e2e7f5c6f055928763dc"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-attachments.txt",
+      "bytes": 17,
+      "sha256": "b598e8defe2b1052cb7712293ce6fd0fb9d5225e770ebbca300edc6cf51970b6"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-des-audit.json",
+      "bytes": 15052,
+      "sha256": "563968c64b26d6bb467d4fd524180526ebe83eca9d5972fd6d8089971dbb715f"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-full-metadata.html",
+      "bytes": 28662,
+      "sha256": "a3f68761c46f7110b372622bf7559a355c4b348f79195587bc4c824e7df3d778"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-landing-curl.html",
+      "bytes": 25803,
+      "sha256": "7ae5f9555e0ff6982397282cfabd3d7662e8fe14c1decbaafc5db072d1f27daf"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p1.png",
+      "bytes": 132418,
+      "sha256": "576e3180f7fd20a609496da230e5be8a13a2c4f16ed17be4036e06acfec88e59"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p147.png",
+      "bytes": 149699,
+      "sha256": "162568f24b2e51489a1e0eeb6e6d5201c5080b1277ab0006b98888f58b6cbb34"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p148.png",
+      "bytes": 151481,
+      "sha256": "1180c63982ef77e4dbd5ba663aea08f6225c89bb32e510a5e49ce9f785921268"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p149.png",
+      "bytes": 150648,
+      "sha256": "5a7678dd7654e1e7a8bb20b4dd62848ea875e51693f68198706f23fd373e65bd"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p150.png",
+      "bytes": 150582,
+      "sha256": "93e2b3be4d863d9abe08d2ed4615ed91a83efc17d81cc900c8488f3afcaa38ab"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p151.png",
+      "bytes": 155291,
+      "sha256": "4703e47a00b10629f87baf8dac0998de988bb46cd56de4d9fa4ae16b53c6fd3d"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p152.png",
+      "bytes": 156087,
+      "sha256": "acfe9953174411ba2118e24b75d7f6ca31dd4125e26be83174d7b08910aa6c3d"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p153.png",
+      "bytes": 154080,
+      "sha256": "7be3db568ac1692d5d6a11fa8653555b5245d0b807b9ea2ec5f01b6fb431e42e"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p154.png",
+      "bytes": 152394,
+      "sha256": "ee73b27015014e9b5763aa28261963d16ac4b4036793793937b38ac047147073"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p155.png",
+      "bytes": 153690,
+      "sha256": "f76216506d814e65a1f291e19ae4f404ebd960ebe2bced9292936d63af9f5b49"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p156.png",
+      "bytes": 152575,
+      "sha256": "299d6208f32b4686853b1f32ef248365f75332f58158df632787aa52ee1c34af"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p157.png",
+      "bytes": 153682,
+      "sha256": "1e7587c434c1152b304ae8a25f70c29610454ed686c81e4e37641c52bbb8d7f3"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p158.png",
+      "bytes": 148837,
+      "sha256": "8877a7859ea1e1e867721e0bd611b8f8b94571f13d86ebfb6dc6dac789b38e03"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p34.png",
+      "bytes": 307040,
+      "sha256": "7c3a396a802c256bb4c59a0dc64aec3c95528f953164a68431c4073138ad3347"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p35.png",
+      "bytes": 62972,
+      "sha256": "64aeab76747264205cd5b6e6018b28d7799bd087bee1393e48f95d8f66907861"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p62.png",
+      "bytes": 232384,
+      "sha256": "64e462c2db55de176e5be6462e6e88c945e990ee123324ce8cc00aa0bbc866c2"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p93.png",
+      "bytes": 167935,
+      "sha256": "53c6432549de263b6be70cdb98ace3a84e8af6c6a5641dcf742c762fc3e47139"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis-p94.png",
+      "bytes": 321756,
+      "sha256": "e628ff7e3be81805bdd36d40014b94bf5addc8816c2705a04b01c6b95efb0300"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis.pdf",
+      "bytes": 3804374,
+      "sha256": "24e59f305965fbd93d1df5dadc3e593d77db4359c066a87a9cd02dd2d48b6f70"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/thesis.txt",
+      "bytes": 368644,
+      "sha256": "5a10acdc7fcbb3bb256d5ff80934cf7f9bbc5c157f0f96c2cb4e1ad5791bf9fc"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/web-open-01.json",
+      "bytes": 1135,
+      "sha256": "4c327754c66f304446c17b89984cb051583353c208583d5d08ecd7122eb15546"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/web-search-01.json",
+      "bytes": 32437,
+      "sha256": "d4d3a4dd331637fcbba1832c9f2edcc2cfcdb42028f94a2226a9eb7cbd7f006a"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/web-search-02.json",
+      "bytes": 11095,
+      "sha256": "a644b2483a3d9fa7c18ca8fd1c5c1c0bf4ab494f22a47b9ada6bda7bbec6efec"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-261/web-search-03.json",
+      "bytes": 13426,
+      "sha256": "27ee2ed1ddbf2285bb20a55cdd1b501c136bfeae4b20cea857f418c5880ccb34"
+    }
+  ],
+  "outbound_mutations": false,
+  "commits": false,
+  "record_history_changes": false
+}
