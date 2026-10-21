@@ -1,0 +1,397 @@
+# Independent locator and provenance review of carbonatite-associated rare-earth ore
+
+- Review: 20261021T094159Z-carbonatite-associated-rare-earth-ore-issue379-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-21T09:39:07.977452Z
+- Finished UTC: 2026-10-21T09:41:59.898631Z
+- Reviewer: codex /root/resume_405 (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: false
+
+## Summary
+
+Two RSC Table1 locator corrections and actual EDIT provenance are supported; scientific field values and prior scope remain unchanged.
+
+## Scope And Provenance
+
+Narrow locator/provenance successor only: exact final owner diff, canonical and inline history, prior scientific provenance and generated scope. Independent current source review saved separately; no fresh whole-owner scientific acceptance.
+
+Selection: Parent-assigned independent exact-byte review of final locator correction
+Coverage: partial; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1296ee20f2595d7d6a50e391f611c22435418906.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:carbonatite-associated-rare-earth-ore | data/records/carbonatite-associated-rare-earth-ore.yaml | maintained | Carbonatite-associated rare earth ore |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Exact original table locator and unchanged scientific fields | passed | True | cmmmech:carbonatite-associated-rare-earth-ore | Original Table1 and parsed diff support only the two locator edits; comparative Tables1–2 intact. |
+| Canonical and inline history | passed | True | cmmmech:carbonatite-associated-rare-earth-ore | Actual EDIT metadata and history link agree; prior sessions immutable. |
+| Independent named validation | passed | True | cmmmech:carbonatite-associated-rare-earth-ore | Actual independently executed command completed with zero failures. |
+| Independent corpus validation | passed | True | cmmmech:carbonatite-associated-rare-earth-ore | Actual independently executed command completed with zero failures. |
+| Independent history validation | passed | True | cmmmech:carbonatite-associated-rare-earth-ore | Actual independently executed command completed with zero failures. |
+| Author completed full gate | passed | True | cmmmech:carbonatite-associated-rare-earth-ore | Actual author terminal result and exact log hash verified; suite not independently rerun. |
+| Author completed canonical gate | passed | True | cmmmech:carbonatite-associated-rare-earth-ore | Actual author terminal result and exact log hash verified; suite not independently rerun. |
+
+## Scientific And Domain Assessments
+
+### RSC table membership and preserved comparative locator
+
+provenance: supported. Targets: cmmmech:carbonatite-associated-rare-earth-ore.
+
+Both corrected RSC phrases now identify Table1 accurately.
+
+The original PDF prints one Table1 with wt% and mg/kg blocks; JATS tab1 contains two unnumbered table-wraps. Comparative Tables1–2 remains unchanged.
+
+### Truthful bounded edit and immutable prior review
+
+provenance: supported. Targets: cmmmech:carbonatite-associated-rare-earth-ore.
+
+Canonical EDIT, inline event and prior review state are consistent.
+
+Baseline owner equals historical scientific target SHA. Old CREATE and native bundle remain unchanged. Historical locator wording is superseded; no previous native finding exists to resolve.
+
+### Non-scientific successor boundary
+
+scope: supported. Targets: cmmmech:carbonatite-associated-rare-earth-ore.
+
+No new whole-owner scientific acceptance is asserted.
+
+Literature support for unchanged mechanisms was not reassessed for this native round. The separate independent source-handoff review inspected current originals and preserves controls, unit/pH, interstage inventory and culture-identity gaps. Existing natural mixed-resource scope, taxon/strain distinction, treatment association, no isolated-product yield and no inherited criticality/deployment remain unchanged field values.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-379/data/records/carbonatite-associated-rare-earth-ore.yaml; Exact final owner; parsed diff against HEAD and source inputs from final native inspect | supports | Exactly two RSC locator replacements plus actual inline EDIT/history reference; scientific values unchanged. |
+| history | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-379/history/records/carbonatite-associated-rare-earth-ore/2026-10-21T093216Z-codex-80d46f.yaml; Canonical new EDIT and unchanged CREATE; actor, target, timestamps, summary and history_refs | supports | New canonical event accurately describes the narrow correction and actual author. |
+| original | https://doi.org/10.1039/D4RA07845D; Original RSC PDF3/printed4630 and complete JATS tab1 group with two unit blocks and two Table1 body xrefs | supports | One RSC Table1; comparative PDF5 independently preserves separate Tables1–2. |
+| prior | reviews/structured/20261015T203631Z-carbonatite-associated-rare-earth-ore-round102-independent/review.yaml; Historical exact native YAML/Markdown; owner target hash compared with HEAD baseline; findings empty | supports | Prior scientific review retained as historical; its incorrect Tables1–2 locator is superseded only for this reference correction. |
+| source-review | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-379-independent/source-review.json; Independent current source-handoff assessment saved outside Git | supports | Fresh source assessment is separate from this native non-scientific change review. |
+| scope | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-379-independent/semantic-generated-scope.json; Parsed field comparison and every generated page comparison after footer normalization | supports | Four intended semantic field changes; 633 HTML paths,632 footer-only and one intended content page. |
+| own-validation | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-379-independent/validation-results.json; Actual own terminal47118 exit0, with per-command logs | supports | Named record, full corpus and trusted-base history checks passed. |
+| full-gates | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-379-final-gates.json; Author actual final/canonical terminal receipts and matching logs; not rerun by reviewer | supports | Final fullcheck and canonical sync passed for frozen bytes. |
+
+## Limits And Additional Notes
+
+- Scientific review is false: unchanged mechanisms were not reassessed for fresh native acceptance.
+- Prior whole-owner scientific assessment remains historical, except its table-range locator wording is superseded by current original inspection.
+- Matched controls, interstage balance, pH/unit clarification and separate-culture identity remain unresolved under issue379.
+- Full/canonical gates were run by author and independently checked through actual receipts/log hashes; not rerun by reviewer.
+- Author finding CMMMech:carbonatite-rsc-table-locator-20261021 is independently verified as fixed; external finding draft retained. No prior native finding/previous_occurrences are fabricated.
+- Raw originals and source review remain outside Git. No owner/source edits, commits or remote mutations by reviewer.
+- Native inspect preceded this final assessment; earlier preparatory source inspection and inspect outputs retained separately.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T094159Z-carbonatite-associated-rare-earth-ore-issue379-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent locator and provenance review of carbonatite-associated rare-earth
+  ore
+started_at: '2026-10-21T09:39:07.977452Z'
+finished_at: '2026-10-21T09:41:59.898631Z'
+reviewer:
+  identity: codex /root/resume_405
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from author /root/resume_213_review_165; no
+    owner/source edits by reviewer; actual frozen bytes independently inspected.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: false
+summary: Two RSC Table1 locator corrections and actual EDIT provenance are supported;
+  scientific field values and prior scope remain unchanged.
+source:
+  git_revision: 1296ee20f2595d7d6a50e391f611c22435418906
+  state: working_tree
+  inputs:
+  - path: data/records/carbonatite-associated-rare-earth-ore.yaml
+    sha256: a863df13117a11c3e8e49aa3d8c7f66224e83c28150ad91d6e972d766ad598d7
+    role: target
+  - path: history/records/carbonatite-associated-rare-earth-ore/2026-10-15T202338Z-codex-8bde1e.yaml
+    sha256: 37e9e0c471c8c0627a0bac9abfcb725e422517f88dfdec1f416e1ff2fb2e2837
+    role: context
+  - path: history/records/carbonatite-associated-rare-earth-ore/2026-10-21T093216Z-codex-80d46f.yaml
+    sha256: e523b6cfd7489653103cb1e231452e9ae54a56ed66fcb74fc9007c3a7d6eeb1a
+    role: context
+  - path: research/sources/issue-379-carbonatite-accounting/20261021T093659Z-evidence.json
+    sha256: caa4d4cf4956f0c36104a3f323c468743a826e03235813bfe868cec3d072feb3
+    role: context
+  - path: research/sources/issue-379-carbonatite-accounting/20261021T093659Z.md
+    sha256: 5b0dabfe0f49df4f07088698bb7422df511b6ee1c242dbd54d8d97ce42eca091
+    role: context
+  - path: reviews/structured/20261015T203631Z-carbonatite-associated-rare-earth-ore-round102-independent/review.yaml
+    sha256: 9d290f1c9b614997c4da60c1da5aaa26ad0f8a7d5452700d6b9664e29ed06274
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+scope:
+  description: 'Narrow locator/provenance successor only: exact final owner diff,
+    canonical and inline history, prior scientific provenance and generated scope.
+    Independent current source review saved separately; no fresh whole-owner scientific
+    acceptance.'
+  selection: Parent-assigned independent exact-byte review of final locator correction
+  coverage: partial
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:carbonatite-associated-rare-earth-ore
+targets:
+- target_id: cmmmech:carbonatite-associated-rare-earth-ore
+  path: data/records/carbonatite-associated-rare-earth-ore.yaml
+  label: Carbonatite-associated rare earth ore
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/carbonatite-associated-rare-earth-ore.yaml
+    role: maintained_record
+checks:
+- check_id: locator
+  name: Exact original table locator and unchanged scientific fields
+  required: true
+  status: passed
+  summary: Original Table1 and parsed diff support only the two locator edits; comparative
+    Tables1–2 intact.
+  target_ids:
+  - cmmmech:carbonatite-associated-rare-earth-ore
+  evidence_ids:
+  - owner
+  - original
+  - scope
+  - prior
+- check_id: provenance
+  name: Canonical and inline history
+  required: true
+  status: passed
+  summary: Actual EDIT metadata and history link agree; prior sessions immutable.
+  target_ids:
+  - cmmmech:carbonatite-associated-rare-earth-ore
+  evidence_ids:
+  - history
+  - scope
+- check_id: named
+  name: Independent named validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/carbonatite-associated-rare-earth-ore.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual independently executed command completed with zero failures.
+  target_ids:
+  - cmmmech:carbonatite-associated-rare-earth-ore
+  evidence_ids:
+  - own-validation
+- check_id: corpus
+  name: Independent corpus validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual independently executed command completed with zero failures.
+  target_ids:
+  - cmmmech:carbonatite-associated-rare-earth-ore
+  evidence_ids:
+  - own-validation
+- check_id: history
+  name: Independent history validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 1296ee20f2595d7d6a50e391f611c22435418906
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual independently executed command completed with zero failures.
+  target_ids:
+  - cmmmech:carbonatite-associated-rare-earth-ore
+  evidence_ids:
+  - own-validation
+- check_id: full
+  name: Author completed full gate
+  required: true
+  status: passed
+  command: UV_CACHE_DIR=/private/tmp/cmmmech-backlog-20261019-fmj36s/uv-cache just
+    check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual author terminal result and exact log hash verified; suite not independently
+    rerun.
+  target_ids:
+  - cmmmech:carbonatite-associated-rare-earth-ore
+  evidence_ids:
+  - full-gates
+- check_id: canonical
+  name: Author completed canonical gate
+  required: true
+  status: passed
+  command: bash scripts/check_vendored_sync.sh
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual author terminal result and exact log hash verified; suite not independently
+    rerun.
+  target_ids:
+  - cmmmech:carbonatite-associated-rare-earth-ore
+  evidence_ids:
+  - full-gates
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-379/data/records/carbonatite-associated-rare-earth-ore.yaml
+  locator: Exact final owner; parsed diff against HEAD and source inputs from final
+    native inspect
+  accessed_at: '2026-10-21T09:41:59.898631Z'
+  support: supports
+  summary: Exactly two RSC locator replacements plus actual inline EDIT/history reference;
+    scientific values unchanged.
+  snapshot_sha256: a863df13117a11c3e8e49aa3d8c7f66224e83c28150ad91d6e972d766ad598d7
+- evidence_id: history
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-379/history/records/carbonatite-associated-rare-earth-ore/2026-10-21T093216Z-codex-80d46f.yaml
+  locator: Canonical new EDIT and unchanged CREATE; actor, target, timestamps, summary
+    and history_refs
+  accessed_at: '2026-10-21T09:41:59.898631Z'
+  support: supports
+  summary: New canonical event accurately describes the narrow correction and actual
+    author.
+  snapshot_sha256: e523b6cfd7489653103cb1e231452e9ae54a56ed66fcb74fc9007c3a7d6eeb1a
+- evidence_id: original
+  kind: primary_source
+  reference: https://doi.org/10.1039/D4RA07845D
+  locator: Original RSC PDF3/printed4630 and complete JATS tab1 group with two unit
+    blocks and two Table1 body xrefs
+  accessed_at: '2026-10-21T09:41:59.898631Z'
+  support: supports
+  summary: One RSC Table1; comparative PDF5 independently preserves separate Tables1–2.
+  snapshot_sha256: 998471184e23899c58224a0f1e645809ed1b129d1ea83d5771ca685a56dc562f
+- evidence_id: prior
+  kind: record_content
+  reference: reviews/structured/20261015T203631Z-carbonatite-associated-rare-earth-ore-round102-independent/review.yaml
+  locator: Historical exact native YAML/Markdown; owner target hash compared with
+    HEAD baseline; findings empty
+  accessed_at: '2026-10-21T09:41:59.898631Z'
+  support: supports
+  summary: Prior scientific review retained as historical; its incorrect Tables1–2
+    locator is superseded only for this reference correction.
+  snapshot_sha256: 9d290f1c9b614997c4da60c1da5aaa26ad0f8a7d5452700d6b9664e29ed06274
+- evidence_id: source-review
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-379-independent/source-review.json
+  locator: Independent current source-handoff assessment saved outside Git
+  accessed_at: '2026-10-21T09:41:59.898631Z'
+  support: supports
+  summary: Fresh source assessment is separate from this native non-scientific change
+    review.
+  snapshot_sha256: 04850f5508a944d057fe4a9192d54218847c3bac090202dbb095ece575c3519b
+- evidence_id: scope
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-379-independent/semantic-generated-scope.json
+  locator: Parsed field comparison and every generated page comparison after footer
+    normalization
+  accessed_at: '2026-10-21T09:41:59.898631Z'
+  support: supports
+  summary: Four intended semantic field changes; 633 HTML paths,632 footer-only and
+    one intended content page.
+  snapshot_sha256: 2b01a633314399e08a17cf02df46a49550c27545b4a869380ef0c59d9c1853c0
+- evidence_id: own-validation
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-379-independent/validation-results.json
+  locator: Actual own terminal47118 exit0, with per-command logs
+  accessed_at: '2026-10-21T09:41:59.898631Z'
+  support: supports
+  summary: Named record, full corpus and trusted-base history checks passed.
+  snapshot_sha256: 5b6d9e5e7b9d22c6c3253f6a2a8e06c993ed34b15c05bbe3555315d5ae5100fa
+- evidence_id: full-gates
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-379-final-gates.json
+  locator: Author actual final/canonical terminal receipts and matching logs; not
+    rerun by reviewer
+  accessed_at: '2026-10-21T09:41:59.898631Z'
+  support: supports
+  summary: Final fullcheck and canonical sync passed for frozen bytes.
+  snapshot_sha256: 91db16fef89b774fbc3f2c484ff17d7a90ae5b83040d8fdaf34fd2c74bf12454
+assessments:
+- assessment_id: locator
+  area: provenance
+  topic: RSC table membership and preserved comparative locator
+  outcome: supported
+  summary: Both corrected RSC phrases now identify Table1 accurately.
+  details: The original PDF prints one Table1 with wt% and mg/kg blocks; JATS tab1
+    contains two unnumbered table-wraps. Comparative Tables1–2 remains unchanged.
+  target_ids:
+  - cmmmech:carbonatite-associated-rare-earth-ore
+  evidence_ids:
+  - owner
+  - original
+  - scope
+- assessment_id: history
+  area: provenance
+  topic: Truthful bounded edit and immutable prior review
+  outcome: supported
+  summary: Canonical EDIT, inline event and prior review state are consistent.
+  details: Baseline owner equals historical scientific target SHA. Old CREATE and
+    native bundle remain unchanged. Historical locator wording is superseded; no previous
+    native finding exists to resolve.
+  target_ids:
+  - cmmmech:carbonatite-associated-rare-earth-ore
+  evidence_ids:
+  - history
+  - prior
+  - scope
+- assessment_id: scope
+  area: scope
+  topic: Non-scientific successor boundary
+  outcome: supported
+  summary: No new whole-owner scientific acceptance is asserted.
+  details: Literature support for unchanged mechanisms was not reassessed for this
+    native round. The separate independent source-handoff review inspected current
+    originals and preserves controls, unit/pH, interstage inventory and culture-identity
+    gaps. Existing natural mixed-resource scope, taxon/strain distinction, treatment
+    association, no isolated-product yield and no inherited criticality/deployment
+    remain unchanged field values.
+  target_ids:
+  - cmmmech:carbonatite-associated-rare-earth-ore
+  evidence_ids:
+  - owner
+  - prior
+  - source-review
+  - scope
+findings: []
+actions: []
+limitations:
+- 'Scientific review is false: unchanged mechanisms were not reassessed for fresh
+  native acceptance.'
+- Prior whole-owner scientific assessment remains historical, except its table-range
+  locator wording is superseded by current original inspection.
+- Matched controls, interstage balance, pH/unit clarification and separate-culture
+  identity remain unresolved under issue379.
+- Full/canonical gates were run by author and independently checked through actual
+  receipts/log hashes; not rerun by reviewer.
+notes:
+- Author finding CMMMech:carbonatite-rsc-table-locator-20261021 is independently verified
+  as fixed; external finding draft retained. No prior native finding/previous_occurrences
+  are fabricated.
+- Raw originals and source review remain outside Git. No owner/source edits, commits
+  or remote mutations by reviewer.
+- Native inspect preceded this final assessment; earlier preparatory source inspection
+  and inspect outputs retained separately.
+```
