@@ -1,0 +1,544 @@
+schema_version: 1.0.0
+review_id: 20261021T143719Z-cinnabar-issue284-successor-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent successor scientific review of corrected cinnabar Baldi1987 addition
+started_at: '2026-10-21T14:37:06.408152Z'
+finished_at: '2026-10-21T14:37:19.239785Z'
+reviewer:
+  identity: codex /root/resume_473
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Reviewer did not author owner/history/source handoff; curator
+    is /root/resume_213_review_165. Independently inspected all Baldi original pages
+    and rekeyed numerical scope. Shared author-acquired originals used; prior unchanged
+    Jew/identity claims assessed through exact saved review and equality, not fresh
+    original access.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: The bounded Baldi addition is supported with its explicit assay and causality
+  limits. Corrected Figure2 classification resolves 284-R1; no open or new finding.
+  This observation binds the corrected owner and retains the initial substantive original-source
+  audit and unchanged Jew/identity prior-review boundaries.
+source:
+  git_revision: 1296ee20f2595d7d6a50e391f611c22435418906
+  state: working_tree
+  inputs:
+  - path: data/records/cinnabar.yaml
+    sha256: cce7d8cb33a23299cb47a336ab4bd3bf4b2518ab56ef9ce08731075d247f944a
+    role: target
+  - path: history/records/cinnabar/2026-10-15T000648Z-codex-f789b3.yaml
+    sha256: cab649332d536e8af0abc987df74bb642766b020a405b705a85f510f31e34940
+    role: context
+  - path: history/records/cinnabar/2026-10-21T141608Z-codex-33a899.yaml
+    sha256: 41bcd1e12308f0cd8c9a420016ed110f8ed088dc637c52cc256d3da0074faf6d
+    role: context
+  - path: history/records/cinnabar/2026-10-21T142914Z-codex-018af9.yaml
+    sha256: f716f5b8a4b46e37a14071c23a234d3ab7d8884016e2aaab09625d680f2f70e6
+    role: context
+  - path: research/sources/issue-284-cinnabar-originals/20261021T143043Z-evidence.json
+    sha256: fa74eb2a4d25971142e788fc1ad9a2adede64e09ed127c9a5502ad2171311e7d
+    role: context
+  - path: research/sources/issue-284-cinnabar-originals/20261021T143043Z.md
+    sha256: e05cba3528955e9dc8d58fc15dceabae0dad250c12ffe75e4dc8fe3108a276c9
+    role: context
+  - path: reviews/structured/20261015T001753Z-cinnabar-round84-independent/review.yaml
+    sha256: 783ba612f2b196dbae09878cff5112a0370dd206fb20dab086a86f04cdb9cdc2
+    role: context
+  - path: reviews/structured/20261021T142615Z-cinnabar-issue284-initial-independent/review.yaml
+    sha256: fbaaaeac852b4765780b8b571247a739f372050971fe1ffa40c0bb7ed6eb759d
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+scope:
+  description: Whole corrected cinnabar owner and both new EDIT sessions. Fresh original
+    Baldi scientific review from this review round is retained after exact invariant-field/source
+    comparison; corrected title independently checked against Figure2. Unchanged Jew/identity
+    claims retain identified prior full-source review, with no fresh complete reacquisition
+    claim.
+  selection: Assigned maintained owner. Successor native inspect completed before
+    corrected-owner judgment; final assembly timestamps identify this saved observation,
+    while earlier initial and successor audits retain their own actual timestamps.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:cinnabar
+  exclusions:
+  - target: Fresh complete Jew2014 original and identity authority reacquisition
+    reason: Current full Jew PDF access failed; unchanged claims retain exact prior
+      native review and byte/structural lineage.
+targets:
+- target_id: cmmmech:cinnabar
+  path: data/records/cinnabar.yaml
+  label: Cinnabar
+  kind: maintained
+  ownership_note: Maintained material owner; new Baldi1987 mechanism and evidence
+    require independent scientific assessment. Existing Jew2014 mechanism is unchanged.
+checks:
+- check_id: inspect
+  name: Independent exact native inspection
+  command: uv run --locked python scripts/record_review.py inspect --targets /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-284-review-targets.yaml
+    --input history/records/cinnabar/2026-10-15T000648Z-codex-f789b3.yaml --input
+    history/records/cinnabar/2026-10-21T141608Z-codex-33a899.yaml --input history/records/cinnabar/2026-10-21T142914Z-codex-018af9.yaml
+    --input research/sources/issue-284-cinnabar-originals/20261021T143043Z-evidence.json
+    --input research/sources/issue-284-cinnabar-originals/20261021T143043Z.md --input
+    reviews/structured/20261015T001753Z-cinnabar-round84-independent/review.yaml --input
+    reviews/structured/20261021T142615Z-cinnabar-issue284-initial-independent/review.yaml
+    --input src/cmmmech/schema/cmmmech.yaml
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Independent successor inspect actual exit0 chunk62c62e before corrected-owner
+    judgment; successor-inspect.json retained. It binds owner, all three sidecars,
+    corrected pair, initial native review, prior scientific review and schema.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - owner
+  - integrity
+- check_id: named
+  name: Independent named validation
+  command: uv run --locked cmmmech validate data/records/cinnabar.yaml --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Reviewer corrected-owner named validation actual exit0 chunka92f9d; one
+    record/zero failures. Exact log successor-named-actual.log retained.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - owner
+  - gates
+- check_id: full
+  name: Author completed full check
+  command: just check
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Author corrected full terminal88367 actualexit0 chunk76ba57:363passed3skipped121.15s616records746histories.
+    Durable receipt and complete log independently inspected and hash-verified.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - gates
+- check_id: corpus
+  name: Author completed nonempty corpus validation
+  command: uv run --locked cmmmech validate --require-records
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Author corrected corpus87709 actualexit0 chunk12a4cc;616records/zero failures;
+    process receipt and log independently read and bound.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - gates
+- check_id: history
+  name: Author completed append-only history validation
+  command: uv run --locked cmmmech validate-history --base 1296ee20f2595d7d6a50e391f611c22435418906
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Author corrected history8625 actualexit0 chunk3ebdcc;746history records/no
+    errors. Original sidecars unchanged; appended correction sidecar and inline event
+    inspected.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - history
+  - gates
+- check_id: canonical
+  name: Author completed canonical artifact gate
+  command: bash scripts/check_vendored_sync.sh
+  required: true
+  status: passed
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Author corrected canonical68480 actualexit0 chunkddd3bd;22matched. Initial
+    baseline DNS failure remains preserved separately.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - gates
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-284/data/records/cinnabar.yaml
+  locator: Exact corrected14176-byte owner; source title, all mechanisms, inline events
+    and history_refs
+  accessed_at: '2026-10-21T14:37:06.408152Z'
+  support: supports
+  summary: Read complete corrected owner after successor inspect. Source title now
+    correctly separates Figure1 apparatus, Figure2 soluble-Hg challenge and Figures3–4
+    mixed-mineral experiments; all mechanisms exactly unchanged from initial reviewed
+    state.
+  snapshot_sha256: cce7d8cb33a23299cb47a336ab4bd3bf4b2518ab56ef9ce08731075d247f944a
+- evidence_id: baldi
+  kind: primary_source
+  reference: https://doi.org/10.1128/aem.53.4.772-776.1987
+  locator: Complete original printed772–776, all five PDF pages, Figure1 apparatus
+    on773, Figures2–4 on774, Table1 on775; exact institutional bitstream
+  accessed_at: '2026-10-21T14:26:15.491143Z'
+  support: supports
+  summary: Independently read all text and viewed all original pages/four figures/table.
+    p774 distinguishes cinnabar-only gas/liquid assay; Figure2 is soluble-HgCl2 iron-oxidation
+    assay, not mixed-mineral assay.
+  snapshot_sha256: af00ec234c7d1d33098945d23418cd49dd24e56684a8ed0bf32deb41c988f8b7
+- evidence_id: prior
+  kind: prior_review
+  reference: reviews/structured/20261015T001753Z-cinnabar-round84-independent/review.yaml
+  locator: Complete prior native review, exact baseline owner digest and unchanged
+    Jew mechanism/source/identity claims
+  accessed_at: '2026-10-21T14:26:15.491143Z'
+  support: context_only
+  summary: Fresh complete Jew2014 and identity authority originals were not reacquired.
+    Prior review assessed all14pages/sixfigures/twotables and dated identity authorities.
+    Its owner digest matches current baseline; those fields are structurally unchanged.
+  snapshot_sha256: 783ba612f2b196dbae09878cff5112a0370dd206fb20dab086a86f04cdb9cdc2
+- evidence_id: jew-index
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-284/web-05.json
+  locator: Official institutional indexed Jew2014 p21 introduction; selected text
+    only
+  accessed_at: '2026-10-21T14:26:15.491143Z'
+  support: context_only
+  summary: Indexed categorical summary is in tension with Baldi p774 measured liquid/gas
+    observations. Different taxa, feed, control recipes and fractions preclude treating
+    studies as matched contradictions. No fresh complete Jew graphic review claimed.
+  snapshot_sha256: 1ac4d18bf0413100f7595aba86370af6bc528a7b3423fb4c94d4fdc743e460c9
+- evidence_id: sources
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-284/research/sources/issue-284-cinnabar-originals/20261021T143043Z.md
+  locator: Complete corrected MD and evidence JSON, with explicit initial-pair retirement
+    and preserved hashes
+  accessed_at: '2026-10-21T14:37:06.408152Z'
+  support: supports
+  summary: Scientific report body is invariant; final paragraph and successor addendum
+    truthfully identify resolved classification finding and preservation. JSON changes
+    only current owner/history/report/check bindings and explicit revision metadata.
+  snapshot_sha256: e05cba3528955e9dc8d58fc15dceabae0dad250c12ffe75e4dc8fe3108a276c9
+- evidence_id: numeric
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-284-independent/numeric-final.json
+  locator: Independently rekeyed Table1 33 numeric components/five NT,73selected prose
+    tokens,23Decimal calculations
+  accessed_at: '2026-10-21T14:26:15.491143Z'
+  support: supports
+  summary: Literal zeros, SD, NT, near-limit traces, grouped gas volumes, source fractions
+    and conditional denominators preserved; no recovered-product balance or statistical
+    inference.
+  snapshot_sha256: 29ac1a78901bd52d65777c2bac0c7aebcc8dd8e68565ab139f7282d7e431f140
+- evidence_id: integrity
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-284-independent/successor-audit.json
+  locator: 3924 current/historical hash assertions,1571 resolved paths,1917 explicit
+    historical archive resolutions,773 preserved files
+  accessed_at: '2026-10-21T14:37:06.408152Z'
+  support: supports
+  summary: All assertions pass; all66raw files unchanged. Correction changes only
+    source title and appended history; mechanisms and other scientific fields exactly
+    equal initial reviewed state. Archived retired input paths are resolved through
+    exact preservation mapping, not claimed present in current worktree.
+  snapshot_sha256: a16147c9647e2913472ba0c1a7fc03b0bef921b91619e29a2fc8b1c030977d65
+- evidence_id: history
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-284/history/records/cinnabar/2026-10-21T142914Z-codex-018af9.yaml
+  locator: Second canonical EDIT2026-10-21T142914Z and separate inline event; original
+    CREATE and first EDIT immutable
+  accessed_at: '2026-10-21T14:37:06.408152Z'
+  support: supports
+  summary: Actual author actor/timestamp/target/classification correction agrees with
+    helper receipt and exact owner delta. No invented earlier activity; two appended
+    sessions remain distinguishable.
+  snapshot_sha256: f716f5b8a4b46e37a14071c23a234d3ab7d8884016e2aaab09625d680f2f70e6
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-284-revised-final-gates.json
+  locator: Actual corrected88367exit0/363passed3skipped121.15s616records746histories;canonical68480exit0/22;
+    named/corpus/history/render actual exits
+  accessed_at: '2026-10-21T14:37:06.408152Z'
+  support: supports
+  summary: All receipt hashes and complete logs independently checked in successor-gate-audit.json.
+    Independent named check and git diff --check also passed. Scientific support is
+    separately assessed; mechanical success is not scientific replication.
+  snapshot_sha256: dd6a36dcb3d5ec0b2ec273610d1d835d6f1eae1c768c326ad5993572e9ce29ea
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-284/search-ledger.json
+  locator: Five current web.run batches,12queries/fiveopens; recorded provider/times/no
+    filters; bounded notice/strain/source discovery
+  accessed_at: '2026-10-21T14:26:15.491143Z'
+  support: context_only
+  summary: Inspected current Crossref empty relation/no update-to and notice queries.
+    No applicable notice surfaced in this scope, not global absence. No new strain
+    mapping inferred.
+  snapshot_sha256: ba2d173785c1bf655c698f61438943437b05d367fcd421fc5243116f13d0dd04
+  search_scope: Author12exactqueries/fiveopens on2026-10-21, no domain/recency filters;
+    hidden/ignored/followed dedup across eight named roots. Reviewer inspected receipts;
+    no repeated denied request or global absence assertion.
+- evidence_id: initial-review
+  kind: prior_review
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-284/reviews/structured/20261021T142615Z-cinnabar-issue284-initial-independent/review.yaml
+  locator: Exact initial native review; initial 284-R1 occurrence and substantive
+    Baldi original-source assessment
+  accessed_at: '2026-10-21T14:37:06.408152Z'
+  support: supports
+  summary: Initial scientific audit remains immutable. This linked successor resolves
+    its classification finding using corrected exact inputs, while retaining the same
+    original-source quantities and limits.
+  snapshot_sha256: fbaaaeac852b4765780b8b571247a739f372050971fe1ffa40c0bb7ed6eb759d
+- evidence_id: preservation
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-284-initial-frozen/preservation.json
+  locator: 773 initial files copied exactly before author correction
+  accessed_at: '2026-10-21T14:37:06.408152Z'
+  support: supports
+  summary: All773 archive copies verified, including initial owner/source/history/generated/native/external
+    review and gates. Initial index and review remain unchanged.
+  snapshot_sha256: 2751413871cdcc551913b52f9579f79d84421d165a98153407396644dd6e2114
+- evidence_id: correction
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-284-locator-correction.json
+  locator: Explicit initial-to-successor mapping, title-only correction, appended
+    history and generated scope
+  accessed_at: '2026-10-21T14:37:06.408152Z'
+  support: supports
+  summary: Exact owner/report/evidence differences inspected. Initial-to-successor
+    generated delta633HTML:632footer-only, one intended cinnabar title/history page;634total
+    changed pages versus base remain within assessed scope.
+  snapshot_sha256: 9c974dedbb0110900a0594b6fefd70fc6d75165d95592de31a2f38d89b95f3c6
+- evidence_id: finding-draft
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-284-finding-284-R1/issue-draft-fixed-pending-native.json
+  locator: Exact-destination local finding draft with preserved initial finding and
+    bounded dedup receipts
+  accessed_at: '2026-10-21T14:37:06.408152Z'
+  support: context_only
+  summary: Draft honestly records local correction and pending final native save/check
+    at its own timestamp. Hidden/ignored/followed fixed-string dedup and185open-issue
+    snapshot are bounded, not global absence. Later completion receipt will remain
+    separate.
+  snapshot_sha256: 8503d3232178de417eba2eed48ad78790e6c921089bb88a631bcfd5dbbb0bdbe
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral form and retained authority boundaries
+  outcome: supported
+  summary: Owner remains trigonal alpha-HgS cinnabar, distinct from metacinnabar/hypercinnabar
+    and generic Hg-S particles. Identity fields and dated IMA/Handbook sources are
+    unchanged and covered by exact prior review; no fresh authority check is claimed.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - owner
+  - prior
+  details: Baldi reports natural >95%HgS, ground<74µm, no XRD-detected pyrite/marcasite/S;
+    no displayed diffractogram or post121°C15min phase assay. This source-assigned
+    feed is not proven pure polymorph after heating.
+- assessment_id: criticality
+  area: scope
+  topic: No inherited criticality
+  outcome: supported
+  summary: No criticality designation is added or inferred from mercury/sulfur; omitted
+    means unrecorded.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - owner
+  - prior
+- assessment_id: strain
+  area: grounding
+  topic: Historical strain and living-culture scope
+  outcome: supported
+  summary: SW9K1 remains historical Thiobacillus ferrooxidans label; species-level
+    modern synonymy does not authenticate this stock. No strain/taxon/protein CURIE
+    is fabricated. Culture-associated mobilization does not claim growth on cinnabar.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - owner
+  - baldi
+  - sources
+- assessment_id: assay
+  area: evidence
+  topic: Cinnabar-only conditions, controls and washing
+  outcome: supported
+  summary: 1.5g in50mL9KminusaddedFe,1e8cells/mL,29°C250rpm,2days then purge/15.5h
+    closed are source-supported. 150mL headspace39ng versus<1.4ng13661 andabout1.3nguninoculated;
+    solution6.8 versus2.1ng/mL has no numerical abiotic liquid value.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - owner
+  - baldi
+  - numeric
+  details: Column washing protocol is not automatically assigned to the cinnabar-only
+    assay. Residual iron/carryover and killed-cell control are unresolved. Literal
+    censoring/trace retained, neither treated as zero.
+- assessment_id: balance
+  area: quantity
+  topic: Fractions, replication and no recovery claim
+  outcome: supported
+  summary: Gas amount and unfiltered/undefined liquid fraction concentration are distinct;
+    prior gas was purged. No all-output mass balance, residual solid/biomass allocation
+    or recovered-product percentage is supported. Replicate n for prose values and
+    Table1 is unstated.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - owner
+  - baldi
+  - numeric
+- assessment_id: causality
+  area: evidence
+  topic: Growth null and enzyme inference
+  outcome: supported
+  summary: Table1SW9K114±1µLO2/h/1e9cells and other strains0 remain slight uptake
+    with no maintenance on sole cinnabar. Soluble-Hg challenge does not establish
+    SW9K1 cinnabar enzyme/pathway. Redox transformation is bounded Hg0 association,
+    not direct sulfide oxidation.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - owner
+  - baldi
+  - numeric
+- assessment_id: comparability
+  area: consistency
+  topic: Mixed assays and inherited Jew claims
+  outcome: supported
+  summary: Figure1 column apparatus and Figures3–4 mixed systems remain context-only;
+    Figure2 is a separate soluble-mercury assay. Grouped1344L volume is not allocated
+    per column. Jew mechanism remains exactly unchanged; current indexed citation
+    tension is retained, not resolved by transferring conditions.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - owner
+  - baldi
+  - prior
+  - jew-index
+- assessment_id: locator
+  area: provenance
+  topic: Source title figure classification
+  outcome: supported
+  summary: Corrected source title matches original Figure1 column apparatus, Figure2
+    soluble-HgCl2 iron-oxidation assay and Figures3–4 mixed-mineral experiments. Initial
+    minor284-R1 is resolved; numeric/causal evidence remains unchanged.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - owner
+  - baldi
+  - sources
+  - initial-review
+  - correction
+- assessment_id: provenance
+  area: provenance
+  topic: Append-only history and exact source bindings
+  outcome: supported
+  summary: Successor inspect binds exact corrected owner, all history, source pair/schema
+    and both prior native reviews. Initial773file preservation is exact; append-only
+    correction and source retirement mappings are explicit. All checked hashes and
+    actual corrected gates pass.
+  target_ids:
+  - cmmmech:cinnabar
+  evidence_ids:
+  - history
+  - integrity
+  - gates
+  - preservation
+  - correction
+findings:
+- finding_id: 284-R1
+  issue_key: cinnabar-baldi1987-figure2-assay-classification
+  category: provenance
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Separate Figure2 from mixed-mineral assays in Baldi source title
+  description: sources[id=baldi1987].title calls Figures1–4 distinct mixed-mineral
+    assays. Original Figure2(p774) instead measures iron oxidation under soluble HgCl2
+    challenge. Figure1 is column apparatus; Figures3–4 are mixed pyrite/cinnabar arms.
+    The report and mechanism preserve these distinctions; this is a bounded locator/classification
+    defect, not a numerical or causal-evidence error. Author raised the candidate
+    and reviewer independently confirmed against original pixels.
+  target_ids:
+  - cmmmech:cinnabar
+  field_paths:
+  - sources[id=baldi1987].title
+  evidence_ids:
+  - owner
+  - baldi
+  - sources
+  - initial-review
+  - correction
+  - preservation
+  - gates
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cinnabar.yaml
+    role: maintained scientific record
+  rule_id: primary-source-locator
+  native_severity: minor
+  normalization_reason: 'Native minor maps directly to shared minor: bounded source-locator
+    classification, with supported quantitative and causal claims unchanged.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261021T142615Z-cinnabar-issue284-initial-independent
+    finding_id: 284-R1
+  disposition_reason: The corrected exact owner title now distinguishes Figure1 apparatus,
+    Figure2 soluble-Hg challenge and Figures3–4 mixed-mineral arms, matching independently
+    inspected original p774. Scientific fields are exactly invariant; appended history,
+    preservation and required corrected full/canonical/named checks are verified.
+    Initial finding/native review remains immutable.
+actions: []
+limitations:
+- Fresh full Baldi original is available; fresh full Jew original and current identity
+  authority originals are not. Those unchanged fields depend on identified prior full-source
+  native review.
+- Natural feed phase/purity is source-assigned; no displayed XRD or post-autoclave
+  polymorph result.
+- Cinnabar-only wash/carryover, killed-cell control, replicate n, liquid fraction/speciation
+  and complete mass balance remain unresolved.
+- Hg0 association does not prove growth on HgS, direct sulfide oxidation, causal enzyme,
+  recovery, detoxification or deployment.
+- Bounded notice and local dedup results do not prove global absence; structural validation
+  is not scientific replication.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261015T001753Z-cinnabar-round84-independent
+  relationship: Exact prior review retained for unchanged Jew/identity claims; not
+    superseded as a fresh complete original reassessment.
+- repository: CultureBotAI/CMMMech
+  review_id: 20261021T142615Z-cinnabar-issue284-initial-independent
+  relationship: Exact initial substantive scientific review retained; this successor
+    resolves284-R1 for the corrected inspected owner and preserves the initial finding
+    history.
+notes:
+- The substantive Baldi scientific audit and original-pixel inspection were completed
+  in the initial independent round; exact raw/scientific equality permits their reuse.
+  The corrected classification was independently reassessed after successor inspect.
+  This is a complete linked scientific assessment of the final owner, not a claim
+  of newly downloading or freshly rereading unchanged Jew originals.
+- 'Generated changes were checked independently: base-to-final634paths; initial-to-successor633HTML,632footer-only
+  and one intended cinnabar source-title/history change. No unrelated material content
+  change found within this comparison.'
+- Initial native review and its failed temporary serialization attempts remain historical
+  and untouched. No author file was edited by this reviewer; only governed native
+  and external review artifacts are produced.
+- First successor save rejected the equivalent +00:00 UTC timestamp spelling; the
+  saver requires Z. Rejected input and actual exit1 receipt are preserved outside
+  Git. Only timestamp spelling was normalized before saving.
+- Second successor save required the ID prefix to match the already recorded finished
+  timestamp; this metadata-only correction and rejected input/exit1 receipt are preserved
+  externally.

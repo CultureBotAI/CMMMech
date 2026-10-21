@@ -6,9 +6,9 @@ description: >-
   cubic metacinnabar, hypercinnabar, elemental mercury and unspecified Hg-S
   particles. The September 2026 IMA list gives grandfathered status but an
   unknown original-description year; no approval accession is inferred.
-  The curated study concerns laboratory mercury mobilization from
-  source-assigned commercial cinnabar, not microbial formation of the
-  species or isolation of a recovered product. No criticality designation
+  The curated studies concern laboratory mercury mobilization and
+  volatilization from source-assigned cinnabar, not microbial formation
+  of the species or isolation of a recovered product. No criticality designation
   is inherited from mercury or sulfur.
 sources:
   - id: ima_2026_09
@@ -35,6 +35,17 @@ sources:
       and Figures 1-6; no supplement citation identified in this original.
     url: https://doi.org/10.1111/gbi.12066
     accessed_on: '2026-10-15'
+  - id: baldi1987
+    title: >-
+      Baldi and Olson (1987). Effects of Cinnabar on Pyrite Oxidation by
+      Thiobacillus ferrooxidans and Cinnabar Mobilization by a Mercury-Resistant
+      Strain. Applied and Environmental Microbiology 53:772-776. Complete
+      five-page original; cinnabar-only assay on page 774, mineral preparation
+      on page 772, column apparatus in Figure 1, soluble-mercury challenge in Figure 2,
+      mixed-mineral experiments in Figures 3-4, and respiration in Table 1
+      on page 775.
+    url: https://doi.org/10.1128/aem.53.4.772-776.1987
+    accessed_on: '2026-10-21'
 mechanisms:
   - id: amd_consortium_associated_cinnabar_mobilization
     name: Enhanced aqueous mercury mobilization in oxic community microcosms
@@ -122,6 +133,86 @@ mechanisms:
           each other; the absent plotted abiotic Hg series leaves this
           wording conflict unresolved. No environmental flux, industrial
           deployment or successful detoxification is established.
+  - id: sw9k1_associated_cinnabar_mercury_volatilization
+    name: Culture-associated mercury mobilization and volatilization from cinnabar
+    process: redox_transformation
+    microbial: true
+    description: >-
+      The historically identified Thiobacillus ferrooxidans strain SW9K1
+      produced more elemental mercury in headspace and more mercury in
+      solution than the mercury-sensitive strain 13661 in laboratory
+      suspensions containing source-assigned natural cinnabar without added
+      iron. The headspace also exceeded an uninoculated comparison. These
+      observations support culture-associated mobilization and reduction to
+      volatile Hg(0), without establishing cinnabar as an energy source or
+      identifying the dissolution reaction, causal enzyme or recovered product.
+    context: >-
+      The page 774 cinnabar-only assay used 1.5 g mineral in 50 mL of 9K salts
+      minus iron, a final cell concentration of 10^8 per mL, and incubation
+      at 29 degrees C and 250 rpm. After two days, compressed air removed
+      accumulated Hg(0); the vessel was then sealed for 15.5 hours before
+      headspace analysis. The 150 mL headspace measurement concerns this
+      closed interval, not cumulative release over the preceding incubation.
+      The feed was natural material from Abbadia San Salvatore, Tuscany,
+      ground below 74 micrometres and autoclaved at 121 degrees C for
+      15 minutes. SW9K1 is retained as the source's strain label; no sequence,
+      deposit accession or causal molecular identifier is assigned.
+    evidence:
+      - source_ref: baldi1987
+        supports: support
+        explanation: >-
+          Results, page 774, reports 39 ng Hg(0) in the SW9K1 headspace,
+          less than 1.4 ng for strain 13661, and a trace of about 1.3 ng
+          above uninoculated solution. Solution mercury was 6.8 ng/mL for
+          SW9K1 and 2.1 ng/mL for 13661; no corresponding numerical
+          uninoculated liquid value is stated. Gas mass and liquid
+          concentration are different assay fractions. The trace and
+          detection-limit wording are retained without treating either as zero.
+      - source_ref: baldi1987
+        supports: partial
+        explanation: >-
+          Materials and Methods, page 772, reports greater than 95 percent
+          HgS and no detectable pyrite, marcasite or elemental sulfur by XRD.
+          No diffractogram, quantitative polymorph refinement or analysis
+          after autoclaving is displayed; the residual fraction is unspecified.
+          The cinnabar-only recipe omits added iron, but residual iron and
+          inoculum carryover were not quantified. Page 773 explicitly describes
+          washing the column-leaching inoculum; the page 774 cinnabar-only
+          assay does not separately restate that preparation. There is no
+          reported killed-cell comparison for this assay.
+      - source_ref: baldi1987
+        supports: partial
+        explanation: >-
+          Chemical determinations on page 773 describe cold-vapor and
+          purge-and-trap/GC-AA methods, but the cinnabar-only liquid result
+          does not define a filtration fraction or independently resolve
+          dissolved mercury species. The prose gives no replicate count or
+          dispersion for these gas and liquid values. Prior gas was purged,
+          and residual solids, biomass-associated mercury and all output
+          fractions were not balanced; no extraction percentage, isolated
+          recovery yield or environmental flux follows.
+      - source_ref: baldi1987
+        supports: partial
+        explanation: >-
+          Results on pages 774-775 states that none of the strains could be
+          maintained with cinnabar as the sole energy source. Table 1 reports
+          only slight SW9K1 oxygen uptake with cinnabar, 14 plus or minus 1
+          microlitres per hour per 10^9 cells, versus zero for BA-4 and 13661.
+          The table defines standard deviations but does not state replicate
+          counts. Growth, energy conservation and direct sulfide oxidation
+          are not established by Hg(0) detection. The proposed constitutive
+          reducing system derives from a separate soluble-mercury challenge;
+          no SW9K1 enzyme or genetic test establishes the cinnabar pathway.
+      - source_ref: baldi1987
+        supports: context_only
+        explanation: >-
+          Figures 1, 3 and 4 and Results on pages 773-774 concern separate
+          pyrite-cinnabar mixtures with added ferrous iron. Column and shaken
+          flask inhibition patterns differ. Column gas traps sampled different
+          total air volumes for inoculated and uninoculated systems, and
+          column liquid mercury remained below its stated detection limit.
+          These mixed-feed observations are not substituted for the
+          cinnabar-only gas and liquid comparisons.
 curation_history:
   - timestamp: '2026-10-15T00:06:41Z'
     curator: codex (GPT-6; codex)
@@ -130,5 +221,23 @@ curation_history:
       Created cinnabar with qualified primary evidence for community-associated
       aqueous mercury mobilization, retaining source-assigned phase identity,
       controls, null isolate results and unresolved pathway/replication limits.
+  - timestamp: '2026-10-21T14:16:08Z'
+    curator: codex (GPT-6; codex)
+    action: EDIT
+    summary: >-
+      Added primary Baldi1987 evidence for SW9K1-associated mercury
+      mobilization and volatilization, with separate gas/liquid comparisons,
+      growth nulls and feed, carryover, replication and mass-balance limits;
+      preserved the independently qualified Jew2014 mechanism.
+  - timestamp: '2026-10-21T14:29:14Z'
+    curator: codex (GPT-6; codex)
+    action: EDIT
+    summary: >-
+      Corrected the Baldi1987 source-title classification of Figure 2 as a
+      soluble-mercury challenge, distinguishing the column apparatus and
+      mixed-mineral figures; resolved independent finding 284-R1 without
+      changing mechanism claims, assay conditions or numerical evidence.
 history_refs:
   - history/records/cinnabar/2026-10-15T000648Z-codex-f789b3.yaml
+  - history/records/cinnabar/2026-10-21T141608Z-codex-33a899.yaml
+  - history/records/cinnabar/2026-10-21T142914Z-codex-018af9.yaml
