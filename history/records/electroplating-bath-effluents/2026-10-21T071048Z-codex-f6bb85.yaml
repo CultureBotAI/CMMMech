@@ -1,0 +1,26 @@
+history_version: 1
+target:
+  kind: record
+  slug: electroplating-bath-effluents
+  path: data/records/electroplating-bath-effluents.yaml
+session:
+  id: 2026-10-21T071048Z-codex-f6bb85
+  timestamp: '2026-10-21T07:10:48Z'
+  actors:
+  - name: codex
+    type: ai_agent
+    model: GPT-6
+    agent_tool: codex
+events:
+- type: EDIT
+  outcome: changed
+  summary: Correct Figure 3-4 unit provenance and add qualified earlier thesis context
+  details: 'Reinspected unchanged Ciani2026 PDF page 5: axes use micromol/g but PDF and XML
+    captions use mmol/g. Added Ciani2025 thesis chapter 4 as context for opposite alkaline
+    E1/E2 and acidic E3/E4 assignments, preserving the unresolved final-paper pretreatment
+    and replicate conflicts. No corrected uptake estimate, row exclusion, molecular cause
+    or industrial recovery claim is accepted. Original source bytes and external diagnostics
+    are retained for independent review.'
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/271

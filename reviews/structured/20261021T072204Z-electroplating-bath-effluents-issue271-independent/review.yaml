@@ -1,0 +1,655 @@
+schema_version: 1.0.0
+review_id: 20261021T072204Z-electroplating-bath-effluents-issue271-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent scientific successor review of electroplating-bath effluents
+started_at: '2026-10-21T07:15:34.319755Z'
+finished_at: '2026-10-21T07:22:04.949047Z'
+reviewer:
+  identity: Codex /root/resume_473
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Different agent from curator /root/resume_405. Reviewer inspected
+    the frozen owner and history before primary assessment, independently viewed originals,
+    parsed the native SI, checked current NCBI entries and calculations, and made
+    no owner or history edits.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Frozen owner correctly repairs the PDF-caption provenance and adds context-only
+  earlier-thesis evidence. Entire record remains scientifically scoped to conditional
+  laboratory biosorption with unresolved preparation, unit and replicate contradictions
+  retained; zero findings against this current owner.
+source:
+  git_revision: 2da10d95a72146ee0c69cb91fe303348fbadb638
+  state: working_tree
+  inputs:
+  - path: data/records/electroplating-bath-effluents.yaml
+    sha256: 0708722ac0c85fe46c59def95c2505c12601b61420ebd5ed9b5dd11dd7ff63b6
+    role: target
+  - path: history/records/electroplating-bath-effluents/2026-10-14T214900Z-codex-855fac.yaml
+    sha256: d5ba5ce60d1aff85a6e985783c7b787a4070ff63df6de2f97064fbe4f56ef7d5
+    role: context
+  - path: history/records/electroplating-bath-effluents/2026-10-21T071048Z-codex-f6bb85.yaml
+    sha256: 7a60ac0aa08804781927096512deba8e9dacfe8e22d44c754ec167b89ca13b5c
+    role: context
+  - path: research/sources/issue-271-effluent-assay-provenance/20261021T071426Z-evidence.json
+    sha256: 2de0603fe8e0af50c72785ef59f1b02c06f5ef6fea28d54e99ab154eb996b943
+    role: context
+  - path: research/sources/issue-271-effluent-assay-provenance/20261021T071426Z.md
+    sha256: 679c4c85091a4b1724de7301a70c870bd98aa2ef4a589a706d214defe6a606b9
+    role: context
+  - path: reviews/structured/20261014T220203Z-electroplating-bath-effluents-round82-independent/review.yaml
+    sha256: 236c2574e9cbff1885eea2b7e4086ef133c859cbb680ac296d5b2215efce595b
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+scope:
+  description: Entire frozen owner and both canonical history sessions; all asserted
+    material, organism, mechanism and evidence claims; the unit correction and thesis
+    addition. Inspected 2026 methods/results, Table 1, Figures 1–4 and original SI;
+    2024 protocol and sequence context; thesis Chapter 4 pp. 74–83; current NCBI authorities.
+  selection: Assigned exact owner SHA 0708722ac0c85fe46c59def95c2505c12601b61420ebd5ed9b5dd11dd7ff63b6
+    captured with native inspect before assessment. A later inspection adds frozen
+    handoff inputs without changing the owner hash.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:electroplating-bath-effluents
+  exclusions:
+  - target: Other thesis chapters
+    reason: Other thesis chapters were not scientifically reviewed; no complete 198-page
+      thesis review is claimed.
+  - target: Unacquired run-level evidence
+    reason: No raw instrument data, authenticated run identifiers, author correction
+      or original ANOVA inputs were obtained.
+  - target: Publication operations
+    reason: Hosted CI, publication approval, remote issue filing and postmerge checks
+      are outside this scientific review.
+targets:
+- target_id: cmmmech:electroplating-bath-effluents
+  path: data/records/electroplating-bath-effluents.yaml
+  label: Electroplating-bath effluents
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/electroplating-bath-effluents.yaml
+    role: maintained
+checks:
+- check_id: reviewer_validators
+  name: Independent named, nonempty batch and explicit history validation
+  command: 'uv run --no-sync cmmmech validate data/records/electroplating-bath-effluents.yaml
+    --require-records
+
+    uv run --no-sync cmmmech validate --require-records
+
+    uv run --no-sync cmmmech validate-history --base 2da10d95a72146ee0c69cb91fe303348fbadb638'
+  status: passed
+  required: true
+  summary: Reviewer terminal 54842 exited 0 for the sequential command batch. Logs
+    report 1 record/0 failed, 616 records/0 failed and 745 histories/0 errors. UV_CACHE_DIR
+    used the shared scratch cache and UV_OFFLINE=1.
+  target_ids:
+  - cmmmech:electroplating-bath-effluents
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - named
+  - batch
+  - history_check
+- check_id: native
+  name: Actual author final native batch gate
+  command: just check
+  status: passed
+  required: true
+  summary: 'Author session 31113 exited 0: 327 passed, 3 skipped in 86.21 seconds;
+    616 records and 745 histories clean. Reviewer verified the receipt, log and frozen-owner
+    hashes. This is attributed author execution, not a claimed reviewer rerun.'
+  target_ids:
+  - cmmmech:electroplating-bath-effluents
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gates
+  - gate_log
+  - hash_audit
+- check_id: canonical
+  name: Actual author canonical gate
+  command: bash scripts/check_vendored_sync.sh
+  status: passed
+  required: true
+  summary: 'Author exit 0: 22 governed artifacts match the immutable pin. Reviewer
+    verified the retained log hash.'
+  target_ids:
+  - cmmmech:electroplating-bath-effluents
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gates
+  - hash_audit
+- check_id: renderer
+  name: Author renderer and generated-page check
+  command: 'uv run --no-sync python scripts/render_pages.py
+
+    uv run --no-sync python scripts/render_pages.py --check'
+  status: passed
+  required: true
+  summary: Author sessions 87870 and 15870 exited 0; retained logs verified. Source
+    reports 633 changed pages, consisting of 632 footer-only changes and the owner
+    page. Reviewer did not rerender or alter pages.
+  target_ids:
+  - cmmmech:electroplating-bath-effluents
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - gates
+  - hash_audit
+- check_id: source_audit
+  name: Independent provenance and original-SI audit
+  command: Independent Python hashlib/zipfile/XML parser and arithmetic audit retained
+    at review-271-independent/provenance-audit.json and independent-si-audit.json
+  status: passed
+  required: true
+  summary: Verified 123 hash assertions across 89 paths, all 10 ZIP members, 36 SI
+    rows and six descriptive calculations. Original history matches the Git base.
+  target_ids:
+  - cmmmech:electroplating-bath-effluents
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - hash_audit
+  - si_audit
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-271/data/records/electroplating-bath-effluents.yaml
+  locator: 'Complete frozen owner and current diff; retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-271/data/records/electroplating-bath-effluents.yaml'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: supports
+  summary: Exact 0708722a...f63b6 owner reviewed independently; no reviewer edits.
+  snapshot_sha256: 0708722ac0c85fe46c59def95c2505c12601b61420ebd5ed9b5dd11dd7ff63b6
+- evidence_id: history
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-271/history/records/electroplating-bath-effluents/2026-10-21T071048Z-codex-f6bb85.yaml
+  locator: 'Actual EDIT session, target, actor and issue link; retained artifact:
+    /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-271/history/records/electroplating-bath-effluents/2026-10-21T071048Z-codex-f6bb85.yaml'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: supports
+  summary: Canonical sidecar and separate inline edit describe the actual caption
+    correction and thesis context. Prior CREATE sidecar remains byte-identical to
+    base.
+  snapshot_sha256: 7a60ac0aa08804781927096512deba8e9dacfe8e22d44c754ec167b89ca13b5c
+- evidence_id: main2026
+  kind: primary_source
+  reference: https://doi.org/10.1002/wer.70366
+  locator: 'Seven-page original; Methods §§2.1–2.3, Results §§3.1–3.3, conclusions/data
+    statement; Table1 and Figures1–4 visually inspected on PDF pp.3–5; retained artifact:
+    /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-271/ciani2026-original.pdf'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: supports
+  summary: Five industrial liquid feeds, assay controls/conditions and conditional
+    specific uptake are supported. Figure3–4 axes are micromol/g and their captions
+    are mmol/g within the PDF itself.
+  snapshot_sha256: 223ba8896a7a60f922f6065f76aa073e0f4130cad70d75ddda5cf759a7852f99
+- evidence_id: xml2026
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13037690/fullTextXML
+  locator: 'Figure3–4 captions and article metadata; retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-271/ciani2026.xml'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: supports
+  summary: XML captions use mmol/g, agreeing with PDF captions. It is incorrect to
+    describe the difference solely as PDF-versus-XML captions.
+  snapshot_sha256: eba7c4fbf2bfc1678582f5616aea8087a8e0955d534f8126bdb573c0cac4e6b9
+- evidence_id: si2026
+  kind: primary_source
+  reference: https://www.ebi.ac.uk/europepmc/webservices/rest/PMC13037690/supplementaryFiles
+  locator: 'Original DOCX, word/document.xml, all four tables and all36 ordered data
+    rows independently parsed; source words/headers and each cell inspected; retained
+    artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-271/supplementary-files/WER-98-e70366-s001.docx'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: supports
+  summary: Independent parser exactly matches curator extraction. Missing na rows
+    remain distinct from printed0.00; mg/g and two-decimal mmol/g columns have different
+    precision. No current SI page-render claim.
+  snapshot_sha256: b515b26d7184f2346d0425c9deca686d7dd043b454c66d00956e860a9ce08ec4
+- evidence_id: si_audit
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-271-independent/independent-si-audit.json
+  locator: 'Independent original-DOCX parse, ZIP CRC and six descriptive calculations;
+    retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-271-independent/independent-si-audit.json'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: supports
+  summary: All36 source rows matched. All3Pd rows give50.8363±44.0262µmol/g; first2conditional76.2545±0.3322.
+    Neither licenses excluding zero. Ni16Som2 rows and Cu/Zn threshold exceptions
+    verified.
+  snapshot_sha256: 895973d425eae387137359af3b5a35248bf990e927817b4346cc3869d8e7e21f
+- evidence_id: main2024
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.nbt.2024.04.004
+  locator: 'Printed pp.34–40: culture/sequence methods, acid pretreatment p.35, equation5
+    p.36, Fig2 p.37 visually inspected, synthetic-solution and microscopy scope; retained
+    artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-271/ciani2024.pdf'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: context_only
+  summary: Water16h→0.1MHCl30min→waterovernight protocol and q=V(Cb−Ct)/m are supported
+    context. It does not supply a2026NaOH duration or make synthetic assays real-effluent
+    replication.
+  snapshot_sha256: 203377832b2144f3df1d14c25a2fb519a197cc2b22616d676b05f4dc3c4a38c5
+- evidence_id: si2024
+  kind: primary_source
+  reference: https://doi.org/10.1016/j.nbt.2024.04.004
+  locator: 'Four-page supplement text; FigureS1 visually inspected on p.1; retained
+    artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-271/ciani2024-si.pdf'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: context_only
+  summary: Partial16S tree preserves original accessions and culture linkage; other
+    SI results belong to2024synthetic experiments. No2026performance transfer.
+  snapshot_sha256: 0c8260a1db43cdcedbf55902954d8e8806e1c05df374c67973998394507fbfcd
+- evidence_id: thesis
+  kind: primary_source
+  reference: https://hdl.handle.net/2158/1419052
+  locator: 'Chapter4 pp.74–83 text; Table1 and Figure1 plus pretreatment on pp.78–80
+    visually inspected; retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-271/ciani-thesis2025.pdf'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: context_only
+  summary: Earlier version shares authors/cultures/supplier/feed composition and headline
+    uptake; E1/E2 alkaline and E3/E4acidic conflict with final§3.1. Figure1b/c usesmicromol/g
+    and plot cutoff<1; no raw replicate resolution.
+  snapshot_sha256: fdc79923ef43d0337e5624e3d9f42fb0c6efd907b2358f05a035ce11433c6334
+- evidence_id: genbank
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=OQ945751.1,OQ945752.1&rettype=gb&retmode=text
+  locator: 'Fresh public NCBI EFetch, both complete GenBank records read, VERSION/DEFINITION/source/rRNA
+    fields; retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-271-independent/sequences.gb'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: supports
+  summary: OQ945751.1 andOQ945752.1 are593bp partial16SrRNA sequences; strains16Som2
+    andCE4 map to taxon3045848/3045849 respectively. No genome, axenicity or functional
+    proof.
+  snapshot_sha256: 5438144a23036a1bfa36ab5c47e1825207b0e3222ee65cafa882bd6b97cf665e
+- evidence_id: taxonomy
+  kind: authority
+  reference: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=3045848,3045849
+  locator: 'Fresh public NCBI EFetch top-level taxa, scientific names and ranks; retained
+    artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-271-independent/taxonomy.xml'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: supports
+  summary: 3045848 isDactylococcopsis salina16Som2 atstrainrank;3045849 isCyanothece
+    sp.CE4 atspeciesrank. Record scope is accurate. No taxon invented forVi22M.
+  snapshot_sha256: 8a9cba56b23b5141fa7fb6cdf6afa5e8d9459e98a54ed9f533c8c631f7371166
+- evidence_id: prior
+  kind: prior_review
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-271/reviews/structured/20261014T220203Z-electroplating-bath-effluents-round82-independent/review.yaml
+  locator: 'Historical clean review, evidence xml2026 and assessment contradictions;
+    retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-271/reviews/structured/20261014T220203Z-electroplating-bath-effluents-round82-independent/review.yaml'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: context_only
+  summary: Prior review incorrectly repeated the PDF-caption micromol description.
+    This successor explicitly supersedes that narrow assessment using the unchanged
+    original. Prior bundle is immutable and has no finding ID to mark resolved.
+  snapshot_sha256: 236c2574e9cbff1885eea2b7e4086ef133c859cbb680ac296d5b2215efce595b
+- evidence_id: handoff
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-271/research/sources/issue-271-effluent-assay-provenance/20261021T071426Z.md
+  locator: 'Current complete source handoff, decisions, scope and diagnostic limitations;
+    retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-271/research/sources/issue-271-effluent-assay-provenance/20261021T071426Z.md'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: supports
+  summary: Thesis is context only; no source correction or corrected uptake is accepted.
+    The new CE4Ni arithmetic discrepancy remains a source clarification lead.
+  snapshot_sha256: 679c4c85091a4b1724de7301a70c870bd98aa2ef4a589a706d214defe6a606b9
+- evidence_id: hash_audit
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-271-independent/provenance-audit.json
+  locator: '123 checksum assertions across89unique paths;10ZIPmembers and original
+    history compared; retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-271-independent/provenance-audit.json'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: supports
+  summary: Current owner/source/gate hashes verified. repository_inputs intentionally
+    binds pre-edit owner via gitshow2da10d95; no mistaken current-byte comparison.
+  snapshot_sha256: 77425fd6c806dcbf586fa75773898850a8edec2e10fdd8215fe006319ea58d0b
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-271-final-gates.json
+  locator: 'Author terminal receipt and independently hash-checked logs for frozen
+    owner; retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-271-final-gates.json'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: supports
+  summary: Final327passed3skipped86.21s;616records745histories clean; canonical22,
+    renderer/rendercheck and diffcheck passed. Author execution is attributed; review
+    gate follows this new bundle.
+  snapshot_sha256: 8e6c904a1b318020ca0f5bec6723bc6dfba4081eda81f8725ef717767c3aaf1a
+- evidence_id: gate_log
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-271-final-check.log
+  locator: 'Complete author final just-check log; retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-271-final-check.log'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: supports
+  summary: Native suite completed for exact frozen owner; structural validation is
+    separate from scientific support.
+  snapshot_sha256: e17a07d1a2151cf22465994a89177460f832975dc0c0171d2b32d6f4d1f59ad4
+- evidence_id: named
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-271-independent/named-validation.log
+  locator: 'Reviewer executed named validation; retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-271-independent/named-validation.log'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: supports
+  summary: Checked1record;0failed.
+  snapshot_sha256: 6777300de164ce1d63474b359fe110e652a101bb74c5ca509fbe3dde481e776e
+- evidence_id: batch
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-271-independent/batch-validation.log
+  locator: 'Reviewer executed nonempty full-corpus validation; retained artifact:
+    /private/tmp/cmmmech-backlog-20261019-fmj36s/review-271-independent/batch-validation.log'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: supports
+  summary: Checked616records;0failed.
+  snapshot_sha256: d47e19b123c18f1d48610ace095471a408192c504a56fb4fb473f668afceda40
+- evidence_id: history_check
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-271-independent/history-validation.log
+  locator: 'Reviewer executed history validation against2da10d95a72146ee0c69cb91fe303348fbadb638;
+    retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-271-independent/history-validation.log'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: supports
+  summary: Checked745historyrecords;0errors. No old session rewrite.
+  snapshot_sha256: b82876e657df90a30cb77317251616e6ae290765a60c68afdc3fb41a82eaa193
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-271-independent/dedup.json
+  locator: 'Independent bounded local duplicate/lineage search; retained artifact:
+    /private/tmp/cmmmech-backlog-20261019-fmj36s/review-271-independent/dedup.json'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: context_only
+  summary: 89matchingpaths; ignored/hiddenincluded andsymlinksfollowed. Currentowner,priorreview,dossier
+    and separate sludge/scrap boundaries located. No machine-wide absence assertion.
+  snapshot_sha256: b06e6a47ff2cea85e82594723065990e07fc3781b48e34db678508836e7a7a89
+  search_scope: rg --no-ignore --hidden --follow -l electroplating-bath-effluents|10.1002/wer.70366|OQ945751|1419052
+    over data research reviews history docs .claude .agents; current task originals
+    additionally inspected; no unrelated home/temp scan.
+- evidence_id: notices
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-271-independent/live-search-and-identifiers.json
+  locator: 'Two exactDOI correction/erratum/retraction webqueries; firstreturnedsets,
+    no date/domainfilter or pagination; retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-271-independent/live-search-and-identifiers.json'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: context_only
+  summary: No attributable amendment identified in returnedsets. BrowserNCBI routes
+    unavailable; freshEFetchsuccessfully verifiedidentifiers. Search is bounded.
+  snapshot_sha256: a299279d28808508811ab1ec0d6fa30aa1113ae11aae6a1a5b3f77f05fd369b9
+  search_scope: 'Exact queries: "10.1002/wer.70366" correction erratum retraction;
+    "10.1016/j.nbt.2024.04.004" correction erratum retraction. Current first returned
+    result sets only; original source contradictions checked directly.'
+- evidence_id: defect_draft
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-271/new-finding-issue-draft.md
+  locator: 'Local publication draft for corrected caption provenance and unresolved
+    assay gaps; retained artifact: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-271/new-finding-issue-draft.md'
+  accessed_at: '2026-10-21T07:21:08.894399Z'
+  support: context_only
+  summary: Draft describes exact source conflict, thesisversionlimits and diagnosticreplicatequestions;
+    not transmitted and not counted as a posted issue.
+  snapshot_sha256: e20d3d7dfbdf478b33185f157ac8e2e155697b168de9f992ec7b9d1802a7b6c2
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Actual liquid secondary resource and feed-arm boundaries
+  outcome: supported
+  summary: The record distinguishes five supplied electroplating-bath liquids from
+    sludge, solid scrap and synthetic metal solutions. Ni(1)+Cu is a 4:1 experimental
+    mixture of two feeds, not an independent sixth sample. No constituent criticality
+    is inherited.
+  target_ids:
+  - cmmmech:electroplating-bath-effluents
+  evidence_ids:
+  - owner
+  - main2026
+  - thesis
+  dimensions:
+  - name: material_form
+    value: secondary_resource; industrial liquid bath effluent
+    definition: Experiment feed identity, not an element/ion or solidwaste
+    evidence_ids:
+    - main2026
+  - name: criticality
+    value: not asserted
+    definition: No authority/jurisdiction/list/edition claim to verify; omission doesnot
+      mean notcritical
+    evidence_ids:
+    - owner
+- assessment_id: organisms
+  area: grounding
+  topic: Named cultures, accessions and identifier scope
+  outcome: supported
+  summary: Both maintained taxon IDs match current authority names/ranks and linked
+    partial 16S sequences. Vi22M remains unresolved. The sequences do not establish
+    culture purity, survival after pretreatment, a mechanism or whole-genome function.
+  target_ids:
+  - cmmmech:electroplating-bath-effluents
+  evidence_ids:
+  - owner
+  - main2024
+  - si2024
+  - genbank
+  - taxonomy
+  dimensions:
+  - name: organisms
+    value: Dactylococcopsis salina16Som2; Cyanothece sp.CE4; Cyanothece-likeVi22M
+      co-culture
+    definition: Assay organisms; only firsttwo have maintained authorityIDs
+    evidence_ids:
+    - main2026
+    - taxonomy
+  - name: sequence_scope
+    value: OQ945751.1 andOQ945752.1,593bp partial16SrRNA
+    definition: Contextual strainlinkage, not a protein/mechanistic measurement
+    evidence_ids:
+    - genbank
+- assessment_id: conditions
+  area: evidence
+  topic: Biomass state, preparation, assay and controls
+  outcome: supported
+  summary: Whole one-week cultures in dialysis bags received 0.1 M HCl or NaOH preparation;
+    viability and axenicity remain unknown. Analytical drying at 105°C determines
+    dry weight rather than preparing a dried biosorbent. The 1:10 volume ratio, 25°C,
+    200 rpm, 24-hour assay and medium-only comparator are accurately retained.
+  target_ids:
+  - cmmmech:electroplating-bath-effluents
+  evidence_ids:
+  - owner
+  - main2026
+  - main2024
+  - thesis
+  dimensions:
+  - name: biomass_state
+    value: harvested whole chemically pretreated cultures; viability unknown
+    definition: Microbial-origin biosorption doesnot assert growth/metabolism
+    evidence_ids:
+    - main2026
+  - name: control
+    value: identically pretreated cultivation medium without biomass
+    definition: Supports control-relative aqueous depletion, not exclusive EPS or
+      metaboliccause
+    evidence_ids:
+    - main2026
+  - name: assay_scale
+    value: laboratory batch,100mL cylinder capacity; workingvolume unspecified
+    definition: No industrialdeployment or isolatedproductrecovery
+    evidence_ids:
+    - main2026
+  details: Final section 3.1 assigns HCl to Ni/Cu and NaOH to Pd/Au, whereas section
+    3.2 calls the Ni/Cu treatment alkaline. The 2024 acid protocol uses 16 hours in
+    water, 30 minutes in HCl and water overnight; it does not establish NaOH duration
+    or washes. The owner retains these uncertainties without deciding from pH trends.
+- assessment_id: unit_correction
+  area: consistency
+  topic: Original PDF axes/caption correction
+  outcome: supported
+  summary: The current owner correctly states that PDF Figure 3–4 axes use micromol/g
+    DW while both PDF and XML captions use mmol/g DW. This corrects our description
+    of the source without repairing the publication or changing a numeric result.
+  target_ids:
+  - cmmmech:electroplating-bath-effluents
+  evidence_ids:
+  - owner
+  - main2026
+  - xml2026
+  - prior
+  details: Independent visual inspection of original PDF page 5 confirms the factor-of-1000
+    conflict within the PDF. The earlier clean review repeated the inaccurate caption
+    description and is superseded on that point. No nonexistent prior finding is closed.
+- assessment_id: thesis_scope
+  area: provenance
+  topic: Earlier assay-version context without independent replication
+  outcome: supported
+  summary: 'Thesis Table 1 maps E1/E2/E3/E4 to Ni(1)+Cu/Ni(2)/Pd/Au. Pages 78–79 assign
+    alkaline treatment to E1/E2 and acid treatment to E3/E4. Context-only wording
+    is warranted: this does not determine final-run preparation or supply missing
+    raw data. Figure 1b/c units and the plotting cutoff are accurately described.'
+  target_ids:
+  - cmmmech:electroplating-bath-effluents
+  evidence_ids:
+  - owner
+  - main2026
+  - thesis
+  - handoff
+  dimensions:
+  - name: version_relation
+    value: earlier2025thesischapter versus2026finalpublication
+    definition: Matchingauthors/cultures/supplier/feedvalues supportlineagecomparison,
+      not exactrun-equivalence orauthorcorrection
+    evidence_ids:
+    - main2026
+    - thesis
+  - name: plot_cutoff
+    value: uptake below1micromol/g omitted from displayedfigure
+    definition: Doesnotauthorize removal of numericzero ornonzeroreplicate rows
+    evidence_ids:
+    - thesis
+- assessment_id: quantities
+  area: quantity
+  topic: Specific uptake, source cells and missing/zero distinctions
+  outcome: supported
+  summary: The three Ni(2)/16Som2 mg/g and mmol/g entries match the original SI. The
+    record preserves the unreproduced Pd mean, missing rows, numeric zeros and Cu/Zn
+    threshold conflicts. No diagnostic estimate is installed as a measurement or recovery
+    fraction.
+  target_ids:
+  - cmmmech:electroplating-bath-effluents
+  evidence_ids:
+  - owner
+  - main2026
+  - si2026
+  - si_audit
+  - thesis
+  details: An independent parse matched all 36 rows. Pd 8.14/8.09/0.00 mg/g gives
+    50.8363±44.0262 micromol/g (n=3); the first two alone give 76.2545±0.3322 (n=2),
+    only a conditional comparison. Available S1 CE4 Cu rows average 29.1128 micromol/g,
+    above 20. S2 16Som2 Zn has two rows above 20 but a mean of 19.7308. All three
+    S2 CE4 Ni rows yield 1.3063±0.5790 mmol/g; the plot appears near the first-two-row
+    summary, but the owner does not claim an exact reconciled value. No reason or
+    intent for exclusions is inferred.
+- assessment_id: causality
+  area: scope
+  topic: Removal interpretation, recovery and deployment limits
+  outcome: supported
+  summary: The source supports conditional culture-associated solution depletion per
+    gram of dry biomass. It does not identify an EPS ligand, intracellular uptake,
+    oxidation state, metabolic cause, desorption yield, product purity, reuse performance
+    or industrial treatment. The owner preserves these limits and the Cu null interpretation.
+  target_ids:
+  - cmmmech:electroplating-bath-effluents
+  evidence_ids:
+  - owner
+  - main2026
+  - main2024
+  - si2026
+  details: The medium-only control addresses some abiotic loss; no pH-matched time
+    course or selective EPS intervention is reported. The 2024 synthetic microscopy/performance
+    and earlier thesis cannot substitute for causal controls in the real-feed experiment.
+- assessment_id: representation
+  area: representation
+  topic: Current schema and evidence placement
+  outcome: supported
+  summary: Source IDs, support directions and analytical fractions are coherent. The
+    thesis and 2024 evidence remain context only. No mg/L feed concentration, mg/g
+    or mol/g uptake or derived percentage is forced into the mg/kg concentration-observation
+    contract; no analysis date, zero, identifier or criticality entry is invented.
+  target_ids:
+  - cmmmech:electroplating-bath-effluents
+  evidence_ids:
+  - owner
+  - main2026
+  - si2026
+  - thesis
+- assessment_id: history_and_checks
+  area: provenance
+  topic: Exact reviewed state, append-only lineage and measured gates
+  outcome: supported
+  summary: Independent inspect binds the owner, history and schema, then the frozen
+    handoff. Actual EDIT actors, timestamps and target match the curator work; the
+    original CREATE sidecar is unchanged. Required named, batch, history and native
+    checks passed for the frozen owner, with source and gate hashes independently
+    verified.
+  target_ids:
+  - cmmmech:electroplating-bath-effluents
+  evidence_ids:
+  - owner
+  - history
+  - hash_audit
+  - gates
+  - gate_log
+  - named
+  - batch
+  - history_check
+  - prior
+findings: []
+actions: []
+limitations:
+- The original acid/base preparation contradiction and NaOH duration/washes remain
+  unresolved. The earlier thesis is not a formal correction of the final assays.
+- Missing na rows, printed zeros, rounding, the Pd summary and Cu/Zn threshold conflicts
+  remain. Conditional arithmetic using two rows does not authorize exclusions or correct
+  the published statistics.
+- The additional CE4 Ni SI-versus-figure discrepancy remains a source clarification
+  lead. Exact bar values were not digitized and reasons for possible group-membership
+  differences remain unknown.
+- The current original DOCX was inspected through its native OOXML and table cells,
+  not a visual rendering. The curator reported two failed LibreOffice attempts. The
+  table values are directly inspectable, but no fresh SI layout check is claimed.
+- The medium-only comparator and partial 16S context do not prove exclusive EPS binding,
+  active biomass, axenicity, intracellular uptake, a recovered product or industrial
+  deployment.
+- The bounded exact-DOI search found no attributable amendment; this is not exhaustive
+  absence. Browser NCBI routes failed, while official EFetch successfully verified
+  all asserted NCBI identifiers.
+- Author final gates were verified against the exact frozen owner. Saving this new
+  bundle requires a subsequent native review-check, coordinated by root.
+notes:
+- This successor explicitly corrects historical review 20261014T220203Z-electroplating-bath-effluents-round82-independent,
+  evidence xml2026 and assessment contradictions, regarding PDF captions. The historical
+  clean review had no findings; no previous finding ID, resolved finding or retrospective
+  authorship is invented.
+- The reviewer made no record or canonical-history edits. This native bundle is an
+  independent scientific observation, not an author correction, closure of the source
+  gaps or publication permission.
+- The local caption-error and assay-gap publication draft at /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-271/new-finding-issue-draft.md
+  was read but not posted. Root retains exact-destination and final-content approval.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261014T220203Z-electroplating-bath-effluents-round82-independent
+  relationship: Scientific successor for the entire target; supersedes the erroneous
+    PDF-caption characterization in the xml2026 evidence and contradictions assessment.
+    Retains other assay limitations and the immutable prior bundle.
+links:
+- https://github.com/CultureBotAI/CMMMech/issues/271
+- /private/tmp/cmmmech-backlog-20261019-fmj36s/review-271-independent/provenance-audit.json
+- /private/tmp/cmmmech-backlog-20261019-fmj36s/review-271-independent/independent-si-audit.json
+tags:
+- independent
+- scientific-review
+- issue-271
+- source-contradictions
