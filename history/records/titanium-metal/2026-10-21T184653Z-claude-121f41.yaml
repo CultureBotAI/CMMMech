@@ -1,0 +1,27 @@
+history_version: 1
+target:
+  kind: record
+  slug: titanium-metal
+  path: data/records/titanium-metal.yaml
+session:
+  id: 2026-10-21T184653Z-claude-121f41
+  timestamp: '2026-10-21T18:46:53Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: Claude
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Removed unsupported '9K medium', 'Dissolved metal ions', and 'TiO2/rutile/anatase-assigned'
+    claims from titanium-metal.yaml causal graph, changed product node_type to MATERIAL_OR_PHASE, and
+    set supports to partial.
+  details: 'Corrected titanium-metal.yaml causal_graphs to match Baranov et al. (2013): removed 9K medium
+    wording, changed product node to MATERIAL_OR_PHASE (''Fine agglomerated powder reported to contain
+    titanium oxides and hydride'' without rutile/anatase assignment), and set all supports to partial.'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs

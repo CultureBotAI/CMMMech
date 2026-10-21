@@ -234,7 +234,7 @@
         <a href="#mechanism-culture_ferric_grinding_of_titanium_sponge" class="badge" style="text-decoration: none;">Mechanism: <code>culture_ferric_grinding_of_titanium_sponge</code></a>
       </div>
     </div>
-    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking Acidithiobacillus ferrooxidans chemolithoautotrophic sulfur/iron metabolism (Sqr, Tth) to acidic ferric-sulfate solution conditioning during mechanical grinding of titanium sponge.</p>
+    <p style="margin: .5rem 0; font-size: .94rem;">Representative Acidithiobacillus ferrooxidans pathway and ferric-sulfate / sulfuric-acid treatment associated with disintegration of titanium sponge and titanium waste feeds into a fine powder reported to contain titanium oxides and hydride.</p>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (5):</strong>
     <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
@@ -302,7 +302,7 @@
         </tr>
         <tr id="causal-node-ferrooxidans_titanium_sponge_grinding_graph-solid_feed_substrate">
           <td>
-            <strong>Titanium sponge feed in 9K ferric-sulfate medium</strong><br>
+            <strong>Titanium sponge and titanium-industry waste feeds in ferric-sulfate solution</strong><br>
             <code style="font-size: .78rem; color: var(--muted);">solid_feed_substrate</code>
           </td>
           <td>
@@ -310,19 +310,19 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Starting mineral or secondary-resource feed (Titanium sponge feed in 9K ferric-sulfate medium).</div>          </td>
+<div>Metallic titanium sponge and titanium-alloy waste feeds immersed in acidic ferric-sulfate solution with Acidithiobacillus ferrooxidans (no 9K medium recipe is specified in the paper).</div>          </td>
         </tr>
         <tr id="causal-node-ferrooxidans_titanium_sponge_grinding_graph-solubilized_metal_species">
           <td>
-            <strong>Mechanochemically dispersed TiO2/rutile/anatase-assigned fine fraction</strong><br>
+            <strong>Fine agglomerated powder reported to contain titanium oxides and hydride</strong><br>
             <code style="font-size: .78rem; color: var(--muted);">solubilized_metal_species</code>
           </td>
           <td>
-            <span class="badge">CHEMICAL ENTITY</span>
+            <span class="badge">MATERIAL OR PHASE</span>
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Dissolved metal ions (Mechanochemically dispersed TiO2/rutile/anatase-assigned fine fraction) mobilized into the acidic pregnant leach solution.</div>          </td>
+<div>Fine agglomerated solid powder recovered after ferric-sulfate/bacterial treatment and described by Baranov et al. (2013) as containing titanium oxides and hydride (without published diffraction patterns or polymorph assignment).</div>          </td>
         </tr>
       </tbody>
     </table>
@@ -339,8 +339,8 @@
         <code>acidic_ferric_sulfate_lixiviant</code> &rarr; <strong>acidic and oxidative mineral/feed attack</strong> (<code>acts_on</code>) &rarr; <code>solid_feed_substrate</code>
 : Biogenic acid and ferric ions attack Titanium sponge feed in 9K ferric-sulfate medium.[<a href="#source-baranov2013-sponge"><code>baranov2013-sponge</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
-        <code>solid_feed_substrate</code> &rarr; <strong>oxidative/acidic dissolution</strong> (<code>produces</code>) &rarr; <code>solubilized_metal_species</code>
-: Dissolution of Titanium sponge feed in 9K ferric-sulfate medium releases Mechanochemically dispersed TiO2/rutile/anatase-assigned fine fraction.[<a href="#source-baranov2013-sponge"><code>baranov2013-sponge</code></a>]      </li>
+        <code>solid_feed_substrate</code> &rarr; <strong>hydride-assisted disintegration and surface oxidation to fine powder</strong> (<code>produces</code>) &rarr; <code>solubilized_metal_species</code>
+: Exposure of titanium sponge or waste to acidic ferric-sulfate culture solution yields a fine agglomerated powder reported to contain titanium oxides and hydride.[<a href="#source-baranov2013-sponge"><code>baranov2013-sponge</code></a>]      </li>
     </ul>
   </div>
 </div>
@@ -407,6 +407,12 @@
         <td><span class="badge">EDIT</span></td>
         <td>Added verified UniProtKB protein examples (Sqr UniProtKB:B7JBP8, Tth UniProtKB:B7J3C9) and causal graph for Acidithiobacillus ferrooxidans-assisted titanium sponge processing.</td>
       </tr>
+      <tr>
+        <td><code>2026-10-21T18:46:53Z</code></td>
+        <td>claude</td>
+        <td><span class="badge">EDIT</span></td>
+        <td>Removed unsupported &#39;9K medium&#39;, &#39;Dissolved metal ions&#39;, and &#39;TiO2/rutile/anatase-assigned&#39; claims from titanium-metal.yaml causal graph, changed product node_type to MATERIAL_OR_PHASE, and set supports to partial.</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -416,7 +422,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (616 materials · 592 mechanisms · latest curation 2026-10-19 · corpus digest <code>f5834ac109ba</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (616 materials · 592 mechanisms · latest curation 2026-10-21 · corpus digest <code>75e716e3036c</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

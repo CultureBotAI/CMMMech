@@ -109,9 +109,9 @@ mechanisms:
       extracellular electron-transfer reductase.
     evidence:
     - source_ref: brookshaw_2014
-      supports: support
-      explanation: Cell-surface decaheme cytochrome c mediating extracellular electron transfer to Chlorite-associated
-        Fe(III) (ferroan clinochlore).
+      supports: partial
+      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (mtrC) for extracellular
+        electron transfer in zhang_2023; individual cytochrome genes were not mutated.
   - uniprot_accession: UniProtKB:Q8EG33
     entry_name: Q8EG33_SHEON
     protein_name: Extracelllular iron oxide respiratory system surface decaheme cytochrome c component
@@ -134,9 +134,9 @@ mechanisms:
       MtrC in extracellular metal/mineral reduction.
     evidence:
     - source_ref: brookshaw_2014
-      supports: support
-      explanation: Outer-membrane decaheme cytochrome c contributing to extracellular reduction of Chlorite-associated
-        Fe(III) (ferroan clinochlore) into Weak-acid-extractable Fe(II) and reduced phyllosilicate iron.
+      supports: partial
+      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (omcA) for extracellular
+        electron transfer in zhang_2023; individual cytochrome genes were not mutated.
   - uniprot_accession: UniProtKB:Q8E8S0
     entry_name: CYMA_SHEON
     protein_name: Tetraheme c-type cytochrome CymA
@@ -161,16 +161,15 @@ mechanisms:
       pathways.
     evidence:
     - source_ref: brookshaw_2014
-      supports: support
-      explanation: Routes respiratory electrons from the inner-membrane menaquinone pool to periplasmic
-        and outer-membrane multiheme cytochromes during Chlorite-associated Fe(III) (ferroan clinochlore)
-        reduction.
+      supports: partial
+      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (cymA) for extracellular
+        electron transfer in zhang_2023; individual cytochrome genes were not mutated.
 causal_graphs:
 - id: mr1_chlorite_fe_reduction_graph
   name: Shewanella oneidensis MR-1 extracellular reduction of chlorite-associated Fe(III)
   description: Causal pathway linking Shewanella oneidensis MR-1 CymA, MtrC, and OmcA multiheme cytochromes
     to reduction of structural/impurity Fe(III) in ferroan clinochlore.
-  scope: RECORD_SPECIFIC_MECHANISM
+  scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: mr1_chlorite_iron_reduction
   nodes:
   - id: cyma_dehydrogenase
@@ -205,10 +204,9 @@ causal_graphs:
         pathways.
       evidence:
       - source_ref: brookshaw_2014
-        supports: support
-        explanation: Routes respiratory electrons from the inner-membrane menaquinone pool to periplasmic
-          and outer-membrane multiheme cytochromes during Chlorite-associated Fe(III) (ferroan clinochlore)
-          reduction.
+        supports: partial
+        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (cymA) for extracellular
+          electron transfer in zhang_2023; individual cytochrome genes were not mutated.
   - id: mtrc_cytochrome
     label: MtrC outer-membrane decaheme cytochrome c (SO_1778)
     node_type: GENE_OR_PROTEIN
@@ -239,9 +237,9 @@ causal_graphs:
         extracellular electron-transfer reductase.
       evidence:
       - source_ref: brookshaw_2014
-        supports: support
-        explanation: Cell-surface decaheme cytochrome c mediating extracellular electron transfer to Chlorite-associated
-          Fe(III) (ferroan clinochlore).
+        supports: partial
+        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (mtrC) for extracellular
+          electron transfer in zhang_2023; individual cytochrome genes were not mutated.
   - id: omca_cytochrome
     label: OmcA outer-membrane decaheme cytochrome c (SO_1779)
     node_type: GENE_OR_PROTEIN
@@ -271,20 +269,20 @@ causal_graphs:
         MtrC in extracellular metal/mineral reduction.
       evidence:
       - source_ref: brookshaw_2014
-        supports: support
-        explanation: Outer-membrane decaheme cytochrome c contributing to extracellular reduction of Chlorite-associated
-          Fe(III) (ferroan clinochlore) into Weak-acid-extractable Fe(II) and reduced phyllosilicate iron.
+        supports: partial
+        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (omcA) for extracellular
+          electron transfer in zhang_2023; individual cytochrome genes were not mutated.
   - id: oxidized_metal_substrate
-    label: Chlorite-associated Fe(III) (ferroan clinochlore)
+    label: Natural Fe(III)-bearing ripidolite chlorite (CCa-2)
     node_type: CHEMICAL_ENTITY
-    description: Oxidized metal species or mineral substrate (Chlorite-associated Fe(III) (ferroan clinochlore))
-      accepting extracellular electrons.
+    description: Terminal electron acceptor substrate (Natural Fe(III)-bearing ripidolite chlorite (CCa-2))
+      in zhang_2023.
     protein_grounding_status: NOT_APPLICABLE
   - id: reduced_metal_product
-    label: Weak-acid-extractable Fe(II) and reduced phyllosilicate iron
+    label: Bioreduced Fe(II)-enriched chlorite and released aqueous Fe/Si/Al
     node_type: MATERIAL_OR_PHASE
-    description: Reduced metal species or mineral phase (Weak-acid-extractable Fe(II) and reduced phyllosilicate
-      iron) formed by extracellular electron transfer.
+    description: Resulting reduced product state (Bioreduced Fe(II)-enriched chlorite and released aqueous
+      Fe/Si/Al) in zhang_2023.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cyma_dehydrogenase
@@ -295,7 +293,7 @@ causal_graphs:
       conduit.
     evidence:
     - source_ref: brookshaw_2014
-      supports: support
+      supports: partial
       explanation: Respiratory electron transport in S. oneidensis MR-1 routes electrons from CymA to
         outer-membrane decaheme cytochromes.
   - source: mtrc_cytochrome
@@ -306,7 +304,7 @@ causal_graphs:
       (ferroan clinochlore).
     evidence:
     - source_ref: brookshaw_2014
-      supports: support
+      supports: partial
       explanation: MtrC participates in extracellular reduction of Chlorite-associated Fe(III) (ferroan
         clinochlore).
   - source: omca_cytochrome
@@ -317,20 +315,21 @@ causal_graphs:
       Fe(III) (ferroan clinochlore).
     evidence:
     - source_ref: brookshaw_2014
-      supports: support
+      supports: partial
       explanation: OmcA contributes to extracellular reduction of Chlorite-associated Fe(III) (ferroan
         clinochlore).
   - source: oxidized_metal_substrate
     target: reduced_metal_product
     predicate: transforms_into
     relationship: reductive valence transformation and phase formation
-    description: Reduction of Chlorite-associated Fe(III) (ferroan clinochlore) yields Weak-acid-extractable
-      Fe(II) and reduced phyllosilicate iron.
+    description: Extracellular electron transfer converts Natural Fe(III)-bearing ripidolite chlorite
+      (CCa-2) into Bioreduced Fe(II)-enriched chlorite and released aqueous Fe/Si/Al.
     evidence:
     - source_ref: brookshaw_2014
       supports: support
-      explanation: Extracellular reduction converts Chlorite-associated Fe(III) (ferroan clinochlore)
-        into Weak-acid-extractable Fe(II) and reduced phyllosilicate iron.
+      explanation: Shewanella oneidensis MR-1 bioelectrochemical/anaerobic reduction converts Natural
+        Fe(III)-bearing ripidolite chlorite (CCa-2) into Bioreduced Fe(II)-enriched chlorite and released
+        aqueous Fe/Si/Al in zhang_2023.
 curation_history:
 - timestamp: '2026-10-14T16:33:06.562206+00:00'
   curator: codex (GPT-6; codex)
@@ -342,6 +341,12 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein examples (MtrC UniProtKB:Q8EG34, OmcA UniProtKB:Q8EG33, CymA
     UniProtKB:Q8E8S0) and causal graph for Shewanella oneidensis MR-1 chlorite iron reduction.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Set representative CymA/MtrC/OmcA cytochrome evidence to partial and refined substrate/product
+    labels in chlorite.yaml.
 history_refs:
 - history/records/chlorite/2026-10-14T163245Z-codex-f6c11c.yaml
 - history/records/chlorite/2026-10-18T042750Z-antigravity-34fde1.yaml
+- history/records/chlorite/2026-10-21T184653Z-claude-ee1882.yaml

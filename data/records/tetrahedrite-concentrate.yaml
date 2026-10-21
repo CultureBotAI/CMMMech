@@ -148,9 +148,9 @@ mechanisms:
       ferrooxidans ATCC 23270 (NCBITaxon:243159).
     evidence:
     - source_ref: kupka_2025
-      supports: support
-      explanation: Oxidizes reduced inorganic sulfur intermediates during acidophilic bioleaching of Mixed
-        tetrahedrite-bearing sulfide concentrate.
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (AFE_1792)
+        for oxidative sulfur/acid generation in kupka_2025; individual sqr/tth genes were not mutated.
   - uniprot_accession: UniProtKB:B7J3C9
     entry_name: TTH_ACIF2
     protein_name: Tetrathionate hydrolase
@@ -175,9 +175,9 @@ mechanisms:
       ferrooxidans ATCC 23270 (NCBITaxon:243159).
     evidence:
     - source_ref: kupka_2025
-      supports: support
-      explanation: Hydrolyzes polythionate intermediates to regenerate sulfuric acid acidity during bioleaching
-        of Mixed tetrahedrite-bearing sulfide concentrate.
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (tth)
+        for oxidative sulfur/acid generation in kupka_2025; individual sqr/tth genes were not mutated.
 causal_graphs:
 - id: ferrooxidans_tetrahedrite_bioleaching_graph
   name: Acidithiobacillus ferrooxidans oxidative bioleaching of tetrahedrite concentrate
@@ -217,9 +217,10 @@ causal_graphs:
         ferrooxidans ATCC 23270 (NCBITaxon:243159).
       evidence:
       - source_ref: kupka_2025
-        supports: support
-        explanation: Oxidizes reduced inorganic sulfur intermediates during acidophilic bioleaching of
-          Mixed tetrahedrite-bearing sulfide concentrate.
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme
+          (AFE_1792) for oxidative sulfur/acid generation in kupka_2025; individual sqr/tth genes were
+          not mutated.
   - id: tth_hydrolase
     label: Tth tetrathionate hydrolase (tth / AFE_0029)
     node_type: GENE_OR_PROTEIN
@@ -252,9 +253,10 @@ causal_graphs:
         ferrooxidans ATCC 23270 (NCBITaxon:243159).
       evidence:
       - source_ref: kupka_2025
-        supports: support
-        explanation: Hydrolyzes polythionate intermediates to regenerate sulfuric acid acidity during
-          bioleaching of Mixed tetrahedrite-bearing sulfide concentrate.
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme
+          (tth) for oxidative sulfur/acid generation in kupka_2025; individual sqr/tth genes were not
+          mutated.
   - id: acidic_ferric_sulfate_lixiviant
     label: Biogenic sulfuric acid and Fe(III) oxidative lixiviant
     node_type: CHEMICAL_ENTITY
@@ -262,15 +264,15 @@ causal_graphs:
       metabolism.
     protein_grounding_status: NOT_APPLICABLE
   - id: solid_feed_substrate
-    label: Mixed tetrahedrite-bearing sulfide concentrate
+    label: Ground natural tetrahedrite concentrate
     node_type: MATERIAL_OR_PHASE
     description: Starting mineral or secondary-resource feed (Mixed tetrahedrite-bearing sulfide concentrate).
     protein_grounding_status: NOT_APPLICABLE
   - id: solubilized_metal_species
-    label: Dissolved Cu, Sb, Zn, and Fe in acidic leach liquor
+    label: Dissolved Cu, Zn, Ag, and sulfate in acidic leach liquor (with transient Sb release)
     node_type: CHEMICAL_ENTITY
-    description: Dissolved metal ions (Dissolved Cu, Sb, Zn, and Fe in acidic leach liquor) mobilized
-      into the acidic pregnant leach solution.
+    description: Leached product state (Dissolved Cu, Zn, Ag, and sulfate in acidic leach liquor (with
+      transient Sb release)) in kupka_2025.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: sqr_reductase
@@ -281,7 +283,7 @@ causal_graphs:
       by periplasmic tetrathionate hydrolase.
     evidence:
     - source_ref: kupka_2025
-      supports: support
+      supports: partial
       explanation: Reduced sulfur oxidation in A. ferrooxidans couples Sqr and polythionate hydrolysis
         to proton generation.
   - source: tth_hydrolase
@@ -292,7 +294,7 @@ causal_graphs:
       medium.
     evidence:
     - source_ref: kupka_2025
-      supports: support
+      supports: partial
       explanation: Sulfur-compound oxidation maintains the acidic lixiviant required for metal solubilization.
   - source: acidic_ferric_sulfate_lixiviant
     target: solid_feed_substrate
@@ -301,19 +303,20 @@ causal_graphs:
     description: Biogenic acid and ferric ions attack Mixed tetrahedrite-bearing sulfide concentrate.
     evidence:
     - source_ref: kupka_2025
-      supports: support
+      supports: partial
       explanation: Culture-generated acidic ferric/sulfate medium attacks Mixed tetrahedrite-bearing sulfide
         concentrate.
   - source: solid_feed_substrate
     target: solubilized_metal_species
     predicate: produces
     relationship: oxidative/acidic dissolution
-    description: Dissolution of Mixed tetrahedrite-bearing sulfide concentrate releases Dissolved Cu,
-      Sb, Zn, and Fe in acidic leach liquor.
+    description: Acidic ferric-sulfate and bacterial sulfur/iron oxidation leach Cu, Zn, and Ag (with
+      transient low Sb and unquantified Hg) from tetrahedrite concentrate.
     evidence:
     - source_ref: kupka_2025
       supports: support
-      explanation: Bioleaching mobilizes Dissolved Cu, Sb, Zn, and Fe in acidic leach liquor into solution.
+      explanation: Acidic ferric-sulfate and bacterial sulfur/iron oxidation leach Cu, Zn, and Ag (with
+        transient low Sb and unquantified Hg) from tetrahedrite concentrate.
 curation_history:
 - timestamp: '2026-10-12T11:17:04.769972Z'
   curator: Codex (GPT-6)
@@ -326,6 +329,12 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein examples (Sqr UniProtKB:B7JBP8, Tth UniProtKB:B7J3C9) and
     causal graph for Acidithiobacillus ferrooxidans tetrahedrite concentrate bioleaching.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Set representative Sqr and Tth enzyme evidence to partial and refined substrate/product labels
+    in tetrahedrite-concentrate.yaml.
 history_refs:
 - history/records/tetrahedrite-concentrate/2026-10-12T111707Z-codex-f553c9.yaml
 - history/records/tetrahedrite-concentrate/2026-10-18T042750Z-antigravity-7c96ea.yaml
+- history/records/tetrahedrite-concentrate/2026-10-21T184653Z-claude-ba9118.yaml

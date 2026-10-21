@@ -114,9 +114,10 @@ mechanisms:
     annotation_note: Grounded to Thiobacillus thioparus SoxB (UniProtKB:U5TVQ7, NCBITaxon:931).
     evidence:
     - source_ref: vazquez_rodriguez2015
-      supports: support
-      explanation: Catalyzes thiosulfate oxidation in Thiobacillus thioparus, driving oxidative dissolution
-        of metacinnabar (beta-HgS) to soluble Hg(II).
+      supports: partial
+      explanation: Representative thiosulfohydrolase SoxB in Thiobacillus thioparus; Vazquez-Rodriguez
+        et al. (2015) studied a sulfur-oxidizing enrichment consortium without isolating individual soxB
+        genes.
   - uniprot_accession: UniProtKB:Q3SJ73
     entry_name: Q3SJ73_THIDA
     protein_name: Mercuric reductase
@@ -144,14 +145,14 @@ mechanisms:
     - Pfam:PF02852
     functional_role: Mercuric reductase MerA (EC 1.16.1.1; merA / B9G62_10060) representative of the Thiobacillus
       mer operon that reduces solubilized Hg(II) to volatile elemental Hg(0) following metacinnabar dissolution.
-    annotation_note: Representative reviewed Swiss-Prot MerA entry from congeneric Thiobacillus denitrificans
-      ATCC 25259 (UniProtKB:Q3SJ73, NCBITaxon:292415; reference proteome UP000008292) for the Thiobacillus
-      merA mercuric reductase activity described in Vazquez-Rodriguez et al. (2015).
+    annotation_note: Grounded to UniProtKB/TrEMBL reference-proteome entry UP000008291 (Q3SJ73_THIDA)
+      for Thiobacillus denitrificans ATCC 25259 (NCBITaxon:292415; species NCBITaxon:36861).
     evidence:
     - source_ref: vazquez_rodriguez2015
-      supports: support
-      explanation: Reduces Hg(II) released from metacinnabar oxidation to volatile elemental Hg(0) as
-        part of the coupled sulfur-oxidation and mercury-detoxification pathway.
+      supports: partial
+      explanation: Representative mercuric reductase MerA in Thiobacillus denitrificans ATCC 25259; Vazquez-Rodriguez
+        et al. (2015) studied mixed-consortium thiosulfate disproportionation/oxidation and beta-HgS precipitation
+        without enzyme or gene-level testing.
 causal_graphs:
 - id: thioparus_soxb_mera_metacinnabar_graph
   name: Thiobacillus sulfur-oxidizing metacinnabar dissolution and MerA-mediated Hg(II) reduction
@@ -187,9 +188,10 @@ causal_graphs:
       annotation_note: Grounded to Thiobacillus thioparus SoxB (UniProtKB:U5TVQ7, NCBITaxon:931).
       evidence:
       - source_ref: vazquez_rodriguez2015
-        supports: support
-        explanation: Catalyzes thiosulfate oxidation in Thiobacillus thioparus, driving oxidative dissolution
-          of metacinnabar (beta-HgS) to soluble Hg(II).
+        supports: partial
+        explanation: Representative thiosulfohydrolase SoxB in Thiobacillus thioparus; Vazquez-Rodriguez
+          et al. (2015) studied a sulfur-oxidizing enrichment consortium without isolating individual
+          soxB genes.
   - id: metacinnabar_substrate
     label: Metacinnabar (beta-HgS) mineral substrate
     node_type: MATERIAL_OR_PHASE
@@ -236,14 +238,14 @@ causal_graphs:
       functional_role: Mercuric reductase MerA (EC 1.16.1.1; merA / B9G62_10060) representative of the
         Thiobacillus mer operon that reduces solubilized Hg(II) to volatile elemental Hg(0) following
         metacinnabar dissolution.
-      annotation_note: Representative reviewed Swiss-Prot MerA entry from congeneric Thiobacillus denitrificans
-        ATCC 25259 (UniProtKB:Q3SJ73, NCBITaxon:292415; reference proteome UP000008292) for the Thiobacillus
-        merA mercuric reductase activity described in Vazquez-Rodriguez et al. (2015).
+      annotation_note: Grounded to UniProtKB/TrEMBL reference-proteome entry UP000008291 (Q3SJ73_THIDA)
+        for Thiobacillus denitrificans ATCC 25259 (NCBITaxon:292415; species NCBITaxon:36861).
       evidence:
       - source_ref: vazquez_rodriguez2015
-        supports: support
-        explanation: Reduces Hg(II) released from metacinnabar oxidation to volatile elemental Hg(0) as
-          part of the coupled sulfur-oxidation and mercury-detoxification pathway.
+        supports: partial
+        explanation: Representative mercuric reductase MerA in Thiobacillus denitrificans ATCC 25259;
+          Vazquez-Rodriguez et al. (2015) studied mixed-consortium beta-HgS precipitation without testing
+          merA activity.
   - id: volatile_elemental_hg0
     label: Volatile elemental mercury (Hg(0))
     node_type: CHEMICAL_ENTITY
@@ -257,7 +259,7 @@ causal_graphs:
     description: Sulfur-oxidizing metabolism in T. thioparus attacks the sulfide lattice of beta-HgS.
     evidence:
     - source_ref: vazquez_rodriguez2015
-      supports: support
+      supports: partial
       explanation: T. thioparus oxidizes reduced sulfur to mobilize mercury from metacinnabar.
   - source: metacinnabar_substrate
     target: dissolved_hg2_species
@@ -275,7 +277,7 @@ causal_graphs:
     description: MerA reduces mobilized Hg(II) to elemental Hg(0).
     evidence:
     - source_ref: vazquez_rodriguez2015
-      supports: support
+      supports: partial
       explanation: Solubilized Hg(II) is subsequently reduced to volatile Hg(0) by the culture.
   - source: dissolved_hg2_species
     target: volatile_elemental_hg0
@@ -298,6 +300,12 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein examples (SoxB UniProtKB:U5TVQ7, MerA UniProtKB:Q3SJ73) and
     causal graph for Thiobacillus-mediated metacinnabar dissolution and Hg(II) reduction.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Fixed UniProtKB:Q3SJ73 annotation_note (TrEMBL entry in UP000008291, not Swiss-Prot UP000008292)
+    and set unmutated SoxB/MerA consortium evidence to partial.
 history_refs:
 - history/records/metacinnabar/2026-10-14T215020Z-codex-91f7bf.yaml
 - history/records/metacinnabar/2026-10-18T042750Z-antigravity-6856ad.yaml
+- history/records/metacinnabar/2026-10-21T184653Z-claude-162531.yaml

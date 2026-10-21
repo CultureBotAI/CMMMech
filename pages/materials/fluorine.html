@@ -283,7 +283,7 @@
         <a href="#mechanism-recombinant_putida_defluorination" class="badge" style="text-decoration: none;">Mechanism: <code>recombinant_putida_defluorination</code></a>
       </div>
     </div>
-    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking heterologous expression of Delftia acidovorans haloacetate dehalogenase DehH1 (with co-encoded DehH2) in Pseudomonas putida to hydrolytic cleavage of the C-F bond in fluoroacetate and stoichiometric fluoride (F-) release.</p>
+    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking Delftia acidovorans haloacid dehalogenases DehH1 and DehH2 to hydrolytic C-F bond cleavage of racemic alpha-fluorophenylacetic acid and 2-fluoropropionic acid and release of inorganic fluoride ion (F-).</p>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (4):</strong>
     <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
@@ -339,7 +339,7 @@
         </tr>
         <tr id="causal-node-recombinant_putida_dehh1_defluorination_graph-fluoroacetate_substrate">
           <td>
-            <strong>Monofluoroacetate (organofluorine substrate)</strong><br>
+            <strong>Racemic alpha-fluorophenylacetic acid and 2-fluoropropionic acid</strong><br>
             <code style="font-size: .78rem; color: var(--muted);">fluoroacetate_substrate</code>
           </td>
           <td>
@@ -347,11 +347,11 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Fluorinated organic substrate containing a recalcitrant aliphatic C-F bond.</div>          </td>
+<div>Fluorinated carboxylic acid substrates (alpha-fluorophenylacetate and 2-fluoropropionate) undergoing enzymatic C-F cleavage in Dodge et al. (2024).</div>          </td>
         </tr>
         <tr id="causal-node-recombinant_putida_dehh1_defluorination_graph-inorganic_fluoride_ion">
           <td>
-            <strong>Released inorganic fluoride ion (F-) and glycolate</strong><br>
+            <strong>Released inorganic fluoride ion (F-) and hydroxyacid products (mandelate / lactate)</strong><br>
             <code style="font-size: .78rem; color: var(--muted);">inorganic_fluoride_ion</code>
           </td>
           <td>
@@ -359,7 +359,7 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Soluble inorganic fluoride (F-) liberated into the aqueous medium upon hydrolytic C-F cleavage.</div>          </td>
+<div>Stoichiometrically released inorganic fluoride ion (F-) and corresponding hydroxyacids (mandelic acid from alpha-fluorophenylacetate; lactic acid from 2-fluoropropionate).</div>          </td>
         </tr>
       </tbody>
     </table>
@@ -368,13 +368,13 @@
     <ul style="margin: .4rem 0 0; padding-left: 1.2rem; font-size: .88rem;">
       <li style="margin-bottom: .35rem;">
         <code>dehh1_fluoroacetate_dehalogenase</code> &rarr; <strong>nucleophilic hydrolytic C-F bond cleavage</strong> (<code>acts_on</code>) &rarr; <code>fluoroacetate_substrate</code>
-: DehH1 attacks the alpha-carbon of fluoroacetate via an aspartate nucleophile to displace fluoride.[<a href="#source-dodge_2024"><code>dodge_2024</code></a>]      </li>
+: Dehh1 catalyzes hydrolytic defluorination of alpha-fluorophenylacetic acid and 2-fluoropropionic acid (with stereoselective preference).[<a href="#source-dodge_2024"><code>dodge_2024</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
         <code>dehh2_haloacetate_dehalogenase</code> &rarr; <strong>co-encoded haloacetate dehalogenase locus activity</strong> (<code>modulates</code>) &rarr; <code>fluoroacetate_substrate</code>
-: DehH2 is co-encoded on the transferred Delftia acidovorans dehalogenase locus.[<a href="#source-dodge_2024"><code>dodge_2024</code></a>]      </li>
+: Dehh2 catalyzes hydrolytic defluorination of alpha-fluorophenylacetic acid and 2-fluoropropionic acid (with stereoselective preference).[<a href="#source-dodge_2024"><code>dodge_2024</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
         <code>fluoroacetate_substrate</code> &rarr; <strong>hydrolytic defluorination to fluoride and glycolate</strong> (<code>produces</code>) &rarr; <code>inorganic_fluoride_ion</code>
-: Hydrolysis of fluoroacetate releases free inorganic F- into the culture medium.[<a href="#source-dodge_2024"><code>dodge_2024</code></a>]      </li>
+: Hydrolytic C-F bond cleavage converts alpha-fluorophenylacetic acid and 2-fluoropropionic acid into inorganic fluoride (F-) and mandelate/lactate.[<a href="#source-dodge_2024"><code>dodge_2024</code></a>]      </li>
     </ul>
   </div>
 </div>
@@ -445,6 +445,12 @@
         <td><span class="badge">EDIT</span></td>
         <td>Added verified UniProtKB protein examples (DehH1 UniProtKB:Q7DI61, DehH2 UniProtKB:Q7DI63) and causal graph for recombinant Pseudomonas putida defluorination.</td>
       </tr>
+      <tr>
+        <td><code>2026-10-21T18:46:53Z</code></td>
+        <td>claude</td>
+        <td><span class="badge">EDIT</span></td>
+        <td>Corrected fluorinated substrates and products in fluorine.yaml from monofluoroacetate/glycolate to alpha-fluorophenylacetic acid and 2-fluoropropionic acid yielding fluoride and mandelate/lactate.</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -454,7 +460,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (616 materials · 592 mechanisms · latest curation 2026-10-19 · corpus digest <code>f5834ac109ba</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (616 materials · 592 mechanisms · latest curation 2026-10-21 · corpus digest <code>75e716e3036c</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

@@ -109,9 +109,10 @@ mechanisms:
       Hf(IV) clusters (3-5 Hf atoms) within its interdomain metal-binding cleft in vitro.
     evidence:
     - source_ref: alexeev_2003
-      supports: support
-      explanation: Purified apo-FbpA from Neisseria gonorrhoeae coordinates polynuclear oxo-hafnium(IV)
-        clusters in crystallographic and mass-spectrometric binding assays.
+      supports: partial
+      explanation: Alexeev et al. (2003) prepared apo-nFbp with citrate and reacted it with [Hf(NTA)2]2-
+        in 10 mM Tris (pH 7.4) to form a 1.8-A crystal structure of an oxo-bridged multinuclear Hf cluster
+        coordinated by Tyr195 and Tyr196; residue necessity was not tested by mutagenesis.
 causal_graphs:
 - id: gonorrhoeae_fbpa_hafnium_cluster_binding_graph
   name: Neisseria gonorrhoeae FbpA periplasmic binding protein coordination of polynuclear Hf(IV) clusters
@@ -146,13 +147,15 @@ causal_graphs:
         Hf(IV) clusters (3-5 Hf atoms) within its interdomain metal-binding cleft in vitro.
       evidence:
       - source_ref: alexeev_2003
-        supports: support
-        explanation: Purified apo-FbpA from Neisseria gonorrhoeae coordinates polynuclear oxo-hafnium(IV)
-          clusters in crystallographic and mass-spectrometric binding assays.
+        supports: partial
+        explanation: Alexeev et al. (2003) prepared apo-nFbp with citrate and reacted it with [Hf(NTA)2]2-
+          in 10 mM Tris (pH 7.4) to form a 1.8-A crystal structure of an oxo-bridged multinuclear Hf cluster
+          coordinated by Tyr195 and Tyr196; residue necessity was not tested by mutagenesis.
   - id: soluble_hf4_citrate_precursor
-    label: Aqueous Hf(IV) complex precursor
+    label: Aqueous [Hf(NTA)2]2- precursor complex
     node_type: CHEMICAL_ENTITY
-    description: Dissolved tetravalent hafnium ions supplied to apo-FbpA in vitro.
+    description: Soluble dinitrilotriacetatohafnate(IV) ([Hf(NTA)2]2-) complex supplied at fivefold molar
+      excess to citrate-prepared apo-nFbp in pH 7.4 Tris buffer.
     protein_grounding_status: NOT_APPLICABLE
   - id: protein_bound_oxo_hf_cluster
     label: FbpA-coordinated oxo-bridged polynuclear Hf(IV) cluster
@@ -165,18 +168,19 @@ causal_graphs:
     target: soluble_hf4_citrate_precursor
     predicate: binds
     relationship: chelation at interdomain ferric-binding cleft
-    description: Tyr195, Tyr196, Glu57, His9, and synergistic anion residues in FbpA coordinate Hf(IV)
-      ions.
+    description: Tyr195 and Tyr196 phenolate ligands in the apo-nFbp cleft coordinate Hf4+ from [Hf(NTA)2]2-
+      and release NTA.
     evidence:
     - source_ref: alexeev_2003
-      supports: support
-      explanation: X-ray crystallography and ESI-MS show Hf(IV) coordination in the FbpA binding site.
+      supports: partial
+      explanation: 1.8-A X-ray crystal structure (PDB 1P3T) resolves Tyr195 and Tyr196 coordinating the
+        pentahafnium cluster, without site-directed mutagenesis of those residues.
   - source: soluble_hf4_citrate_precursor
     target: protein_bound_oxo_hf_cluster
     predicate: assembles_into
     relationship: hydrolytic oxo-bridged polynuclear cluster assembly
-    description: Bound Hf(IV) centers undergo controlled hydrolysis to form a protein-stabilized oxo-Hf(IV)
-      cluster.
+    description: Bound Hf4+ undergoes hydrolysis and oxo-bridge condensation in the protein cleft to assemble
+      a pentahafnium Hf5O4(OH)8-type cluster.
     evidence:
     - source_ref: alexeev_2003
       supports: support
@@ -193,6 +197,12 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein example (FbpA UniProtKB:Q50964) and causal graph for Neisseria
     gonorrhoeae FbpA polynuclear Hf(IV) cluster coordination.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Clarified precursor complex in hafnium.yaml as [Hf(NTA)2]2- (citrate was only used upstream
+    to prepare apo-nFbp) and set Tyr195/Tyr196 coordination support to partial.
 history_refs:
 - history/records/hafnium/2026-10-11T075415Z-codex-3cf591.yaml
 - history/records/hafnium/2026-10-18T042750Z-antigravity-2fc5bb.yaml
+- history/records/hafnium/2026-10-21T184653Z-claude-a6e457.yaml

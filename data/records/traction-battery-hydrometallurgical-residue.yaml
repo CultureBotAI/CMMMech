@@ -116,9 +116,9 @@ mechanisms:
       ferrooxidans ATCC 23270 (NCBITaxon:243159).
     evidence:
     - source_ref: lu2025
-      supports: support
-      explanation: Oxidizes reduced inorganic sulfur intermediates during acidophilic bioleaching of Traction-battery
-        nickel and cobalt hydrometallurgical residues.
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (AFE_1792)
+        for oxidative sulfur/acid generation in lu2025; individual sqr/tth genes were not mutated.
   - uniprot_accession: UniProtKB:B7J3C9
     entry_name: TTH_ACIF2
     protein_name: Tetrathionate hydrolase
@@ -143,9 +143,9 @@ mechanisms:
       ferrooxidans ATCC 23270 (NCBITaxon:243159).
     evidence:
     - source_ref: lu2025
-      supports: support
-      explanation: Hydrolyzes polythionate intermediates to regenerate sulfuric acid acidity during bioleaching
-        of Traction-battery nickel and cobalt hydrometallurgical residues.
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (tth)
+        for oxidative sulfur/acid generation in lu2025; individual sqr/tth genes were not mutated.
 causal_graphs:
 - id: ferrooxidans_battery_residue_bioleaching_graph
   name: Acidophile consortium sulfur/iron oxidation and battery hydrometallurgical residue leaching
@@ -186,9 +186,10 @@ causal_graphs:
         ferrooxidans ATCC 23270 (NCBITaxon:243159).
       evidence:
       - source_ref: lu2025
-        supports: support
-        explanation: Oxidizes reduced inorganic sulfur intermediates during acidophilic bioleaching of
-          Traction-battery nickel and cobalt hydrometallurgical residues.
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme
+          (AFE_1792) for oxidative sulfur/acid generation in lu2025; individual sqr/tth genes were not
+          mutated.
   - id: tth_hydrolase
     label: Tth tetrathionate hydrolase (tth / AFE_0029)
     node_type: GENE_OR_PROTEIN
@@ -221,9 +222,9 @@ causal_graphs:
         ferrooxidans ATCC 23270 (NCBITaxon:243159).
       evidence:
       - source_ref: lu2025
-        supports: support
-        explanation: Hydrolyzes polythionate intermediates to regenerate sulfuric acid acidity during
-          bioleaching of Traction-battery nickel and cobalt hydrometallurgical residues.
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme
+          (tth) for oxidative sulfur/acid generation in lu2025; individual sqr/tth genes were not mutated.
   - id: acidic_ferric_sulfate_lixiviant
     label: Biogenic sulfuric acid and Fe(III) oxidative lixiviant
     node_type: CHEMICAL_ENTITY
@@ -231,16 +232,16 @@ causal_graphs:
       metabolism.
     protein_grounding_status: NOT_APPLICABLE
   - id: solid_feed_substrate
-    label: Traction-battery nickel and cobalt hydrometallurgical residues
+    label: NMC-type and LFP-containing hydrometallurgical battery residues
     node_type: MATERIAL_OR_PHASE
     description: Starting mineral or secondary-resource feed (Traction-battery nickel and cobalt hydrometallurgical
       residues).
     protein_grounding_status: NOT_APPLICABLE
   - id: solubilized_metal_species
-    label: Solubilized Ni, Co, Mn, and Zn in acidic leachate
+    label: Solubilized Ni and Co in acidic leachates from separate residue lines
     node_type: CHEMICAL_ENTITY
-    description: Dissolved metal ions (Solubilized Ni, Co, Mn, and Zn in acidic leachate) mobilized into
-      the acidic pregnant leach solution.
+    description: Leached product state (Solubilized Ni and Co in acidic leachates from separate residue
+      lines) in lu2025.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: sqr_reductase
@@ -251,7 +252,7 @@ causal_graphs:
       by periplasmic tetrathionate hydrolase.
     evidence:
     - source_ref: lu2025
-      supports: support
+      supports: partial
       explanation: Reduced sulfur oxidation in A. ferrooxidans couples Sqr and polythionate hydrolysis
         to proton generation.
   - source: tth_hydrolase
@@ -262,7 +263,7 @@ causal_graphs:
       medium.
     evidence:
     - source_ref: lu2025
-      supports: support
+      supports: partial
       explanation: Sulfur-compound oxidation maintains the acidic lixiviant required for metal solubilization.
   - source: acidic_ferric_sulfate_lixiviant
     target: solid_feed_substrate
@@ -272,19 +273,20 @@ causal_graphs:
       residues.
     evidence:
     - source_ref: lu2025
-      supports: support
+      supports: partial
       explanation: Culture-generated acidic ferric/sulfate medium attacks Traction-battery nickel and
         cobalt hydrometallurgical residues.
   - source: solid_feed_substrate
     target: solubilized_metal_species
     predicate: produces
     relationship: oxidative/acidic dissolution
-    description: Dissolution of Traction-battery nickel and cobalt hydrometallurgical residues releases
-      Solubilized Ni, Co, Mn, and Zn in acidic leachate.
+    description: Biogenic sulfuric acid and Fe3+/Fe2+ redox cycling leach Ni and Co from separate hydrometallurgical
+      battery residues.
     evidence:
     - source_ref: lu2025
       supports: support
-      explanation: Bioleaching mobilizes Solubilized Ni, Co, Mn, and Zn in acidic leachate into solution.
+      explanation: Biogenic sulfuric acid and Fe3+/Fe2+ redox cycling leach Ni and Co from separate hydrometallurgical
+        battery residues.
 curation_history:
 - timestamp: '2026-10-12T14:49:44.531130+00:00'
   curator: Codex (GPT-6; codex)
@@ -296,6 +298,12 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein examples (Sqr UniProtKB:B7JBP8, Tth UniProtKB:B7J3C9) and
     causal graph for acidophile consortium leaching of traction-battery hydrometallurgical residues.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Set representative Sqr and Tth enzyme evidence to partial and refined substrate/product labels
+    in traction-battery-hydrometallurgical-residue.yaml.
 history_refs:
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-12T144943Z-codex-e18c9e.yaml
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-18T042750Z-antigravity-437365.yaml
+- history/records/traction-battery-hydrometallurgical-residue/2026-10-21T184653Z-claude-75d927.yaml

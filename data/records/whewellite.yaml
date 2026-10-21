@@ -122,10 +122,10 @@ mechanisms:
       niger (NCBITaxon:5061).
     evidence:
     - source_ref: frank_kamenetskaya_2019
-      supports: support
-      explanation: Secretes citric acid into the culture medium, contributing to organic-acid acidification
-        and ligand-assisted transformation of Fluorapatite-rich phosphate rock into Whewellite (CaC2O4·H2O)
-        and weddellite calcium oxalate crystals.
+      supports: partial
+      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion;
+        Frank-Kamenetskaya et al. (2019) observed whewellite (Ca(C2O4)·H2O) crystallization on calcite
+        in A. niger cultures without testing cexA mutants or measuring citrate/oxalate export directly.
 - id: lichen_associated_whewellite
   name: Whewellite associated with natural lichen biofilms
   process: biomineralization
@@ -169,7 +169,7 @@ causal_graphs:
   name: Aspergillus niger organic-acid secretion and whewellite crystallization on fluorapatite
   description: Causal pathway linking Aspergillus niger organic-acid export (CexA) and oxalate/citrate
     secretion to calcium release from fluorapatite-rich rock and whewellite (CaC2O4·H2O) crystallization.
-  scope: RECORD_SPECIFIC_MECHANISM
+  scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: ch407_culture_associated_whewellite
   nodes:
   - id: cexa_citrate_exporter
@@ -200,10 +200,10 @@ causal_graphs:
         niger (NCBITaxon:5061).
       evidence:
       - source_ref: frank_kamenetskaya_2019
-        supports: support
-        explanation: Secretes citric acid into the culture medium, contributing to organic-acid acidification
-          and ligand-assisted transformation of Fluorapatite-rich phosphate rock into Whewellite (CaC2O4·H2O)
-          and weddellite calcium oxalate crystals.
+        supports: partial
+        explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion;
+          Frank-Kamenetskaya et al. (2019) observed whewellite (Ca(C2O4)·H2O) crystallization on calcite
+          in A. niger cultures without testing cexA mutants.
   - id: secreted_organic_acids
     label: Secreted citric and oxalic acid pool (acidification and chelation)
     node_type: CHEMICAL_ENTITY
@@ -216,10 +216,10 @@ causal_graphs:
       metabolites.
     protein_grounding_status: NOT_APPLICABLE
   - id: transformed_product
-    label: Whewellite (CaC2O4·H2O) and weddellite calcium oxalate crystals
+    label: Whewellite (Ca(C2O4)·H2O) crystals
     node_type: MATERIAL_OR_PHASE
-    description: Resulting precipitate or altered mineral phase (Whewellite (CaC2O4·H2O) and weddellite
-      calcium oxalate crystals).
+    description: Whewellite (calcium oxalate monohydrate, Ca(C2O4)·H2O) crystals formed on marble/calcite
+      in inoculated Aspergillus niger cultures (weddellite occurred only in separate field samples).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cexa_citrate_exporter
@@ -230,7 +230,7 @@ causal_graphs:
       the medium.
     evidence:
     - source_ref: frank_kamenetskaya_2019
-      supports: support
+      supports: partial
       explanation: Aspergillus niger organic-acid secretion acidifies the culture supernatant and supplies
         chelating/precipitating anions.
   - source: secreted_organic_acids
@@ -240,20 +240,20 @@ causal_graphs:
     description: Secreted organic acids react with Fluorapatite-rich phosphate rock.
     evidence:
     - source_ref: frank_kamenetskaya_2019
-      supports: support
+      supports: partial
       explanation: Fungal organic acids mediate dissolution/precipitation of Fluorapatite-rich phosphate
         rock.
   - source: starting_substrate
     target: transformed_product
     predicate: transforms_into
     relationship: secondary oxalate/phosphate precipitation or mineral alteration
-    description: Reaction of Fluorapatite-rich phosphate rock with fungal metabolites produces Whewellite
-      (CaC2O4·H2O) and weddellite calcium oxalate crystals.
+    description: Reaction of Calcite / CaCO3 marble substrate with fungal metabolites in experimental
+      culture produces Whewellite (Ca(C2O4)·H2O) crystals.
     evidence:
     - source_ref: frank_kamenetskaya_2019
       supports: support
-      explanation: Fungal culture or supernatant treatment yields Whewellite (CaC2O4·H2O) and weddellite
-        calcium oxalate crystals.
+      explanation: Experimental Aspergillus niger culture on marble/calcite yielded whewellite (Ca(C2O4)·H2O)
+        crystals by XRD and SEM.
 curation_history:
 - timestamp: '2026-10-14T10:45:06.275870+00:00'
   curator: codex (GPT-6; codex)
@@ -265,6 +265,12 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and causal graph for Aspergillus
     niger whewellite formation on fluorapatite rock.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Removed 'and weddellite' from experimental transformed_product node (experimental cultures
+    formed only whewellite) and set representative CexA evidence to partial.
 history_refs:
 - history/records/whewellite/2026-10-14T104509Z-codex-bf78cf.yaml
 - history/records/whewellite/2026-10-18T042750Z-antigravity-9c7dda.yaml
+- history/records/whewellite/2026-10-21T184653Z-claude-2e0bf2.yaml

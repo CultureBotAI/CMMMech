@@ -144,9 +144,9 @@ mechanisms:
       extracellular electron-transfer reductase.
     evidence:
     - source_ref: johnson2016
-      supports: support
-      explanation: Cell-surface decaheme cytochrome c mediating extracellular electron transfer to Colloidal
-        Mn(IV) oxide.
+      supports: partial
+      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (mtrC) for extracellular
+        electron transfer in johnson2016; individual cytochrome genes were not mutated.
   - uniprot_accession: UniProtKB:Q8EG33
     entry_name: Q8EG33_SHEON
     protein_name: Extracelllular iron oxide respiratory system surface decaheme cytochrome c component
@@ -169,9 +169,9 @@ mechanisms:
       MtrC in extracellular metal/mineral reduction.
     evidence:
     - source_ref: johnson2016
-      supports: support
-      explanation: Outer-membrane decaheme cytochrome c contributing to extracellular reduction of Colloidal
-        Mn(IV) oxide into Crystalline rhodochrosite (MnCO3) and aqueous Mn(II).
+      supports: partial
+      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (omcA) for extracellular
+        electron transfer in johnson2016; individual cytochrome genes were not mutated.
   - uniprot_accession: UniProtKB:Q8E8S0
     entry_name: CYMA_SHEON
     protein_name: Tetraheme c-type cytochrome CymA
@@ -196,15 +196,15 @@ mechanisms:
       pathways.
     evidence:
     - source_ref: johnson2016
-      supports: support
-      explanation: Routes respiratory electrons from the inner-membrane menaquinone pool to periplasmic
-        and outer-membrane multiheme cytochromes during Colloidal Mn(IV) oxide reduction.
+      supports: partial
+      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (cymA) for extracellular
+        electron transfer in johnson2016; individual cytochrome genes were not mutated.
 causal_graphs:
 - id: mr1_mn_oxide_rhodochrosite_graph
   name: Shewanella oneidensis MR-1 Mn(IV) oxide reduction and rhodochrosite mineralization
   description: Causal pathway linking Shewanella oneidensis MR-1 CymA, MtrC, and OmcA extracellular electron
     transfer to colloidal Mn(IV) oxide reduction and crystalline rhodochrosite (MnCO3) precipitation.
-  scope: RECORD_SPECIFIC_MECHANISM
+  scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: mn_oxide_reduction_associated_rhodochrosite_formation
   nodes:
   - id: cyma_dehydrogenase
@@ -239,9 +239,9 @@ causal_graphs:
         pathways.
       evidence:
       - source_ref: johnson2016
-        supports: support
-        explanation: Routes respiratory electrons from the inner-membrane menaquinone pool to periplasmic
-          and outer-membrane multiheme cytochromes during Colloidal Mn(IV) oxide reduction.
+        supports: partial
+        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (cymA) for extracellular
+          electron transfer in johnson2016; individual cytochrome genes were not mutated.
   - id: mtrc_cytochrome
     label: MtrC outer-membrane decaheme cytochrome c (SO_1778)
     node_type: GENE_OR_PROTEIN
@@ -272,9 +272,9 @@ causal_graphs:
         extracellular electron-transfer reductase.
       evidence:
       - source_ref: johnson2016
-        supports: support
-        explanation: Cell-surface decaheme cytochrome c mediating extracellular electron transfer to Colloidal
-          Mn(IV) oxide.
+        supports: partial
+        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (mtrC) for extracellular
+          electron transfer in johnson2016; individual cytochrome genes were not mutated.
   - id: omca_cytochrome
     label: OmcA outer-membrane decaheme cytochrome c (SO_1779)
     node_type: GENE_OR_PROTEIN
@@ -304,20 +304,20 @@ causal_graphs:
         MtrC in extracellular metal/mineral reduction.
       evidence:
       - source_ref: johnson2016
-        supports: support
-        explanation: Outer-membrane decaheme cytochrome c contributing to extracellular reduction of Colloidal
-          Mn(IV) oxide into Crystalline rhodochrosite (MnCO3) and aqueous Mn(II).
+        supports: partial
+        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (omcA) for extracellular
+          electron transfer in johnson2016; individual cytochrome genes were not mutated.
   - id: oxidized_metal_substrate
-    label: Colloidal Mn(IV) oxide
+    label: Synthetic birnessite (delta-MnO2) in Ca/Mn medium
     node_type: CHEMICAL_ENTITY
-    description: Oxidized metal species or mineral substrate (Colloidal Mn(IV) oxide) accepting extracellular
-      electrons.
+    description: Terminal electron acceptor substrate (Synthetic birnessite (delta-MnO2) in Ca/Mn medium)
+      in johnson2016.
     protein_grounding_status: NOT_APPLICABLE
   - id: reduced_metal_product
-    label: Crystalline rhodochrosite (MnCO3) and aqueous Mn(II)
+    label: Biogenic rhodochrosite (MnCO3) and mixed Ca/Mn carbonate precipitates
     node_type: MATERIAL_OR_PHASE
-    description: Reduced metal species or mineral phase (Crystalline rhodochrosite (MnCO3) and aqueous
-      Mn(II)) formed by extracellular electron transfer.
+    description: Resulting reduced product state (Biogenic rhodochrosite (MnCO3) and mixed Ca/Mn carbonate
+      precipitates) in johnson2016.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cyma_dehydrogenase
@@ -328,7 +328,7 @@ causal_graphs:
       conduit.
     evidence:
     - source_ref: johnson2016
-      supports: support
+      supports: partial
       explanation: Respiratory electron transport in S. oneidensis MR-1 routes electrons from CymA to
         outer-membrane decaheme cytochromes.
   - source: mtrc_cytochrome
@@ -338,7 +338,7 @@ causal_graphs:
     description: MtrC transfers electrons across the outer membrane interface to Colloidal Mn(IV) oxide.
     evidence:
     - source_ref: johnson2016
-      supports: support
+      supports: partial
       explanation: MtrC participates in extracellular reduction of Colloidal Mn(IV) oxide.
   - source: omca_cytochrome
     target: oxidized_metal_substrate
@@ -347,19 +347,20 @@ causal_graphs:
     description: OmcA transfers electrons at the cell-mineral/solution interface to Colloidal Mn(IV) oxide.
     evidence:
     - source_ref: johnson2016
-      supports: support
+      supports: partial
       explanation: OmcA contributes to extracellular reduction of Colloidal Mn(IV) oxide.
   - source: oxidized_metal_substrate
     target: reduced_metal_product
     predicate: transforms_into
     relationship: reductive valence transformation and phase formation
-    description: Reduction of Colloidal Mn(IV) oxide yields Crystalline rhodochrosite (MnCO3) and aqueous
-      Mn(II).
+    description: Extracellular electron transfer converts Synthetic birnessite (delta-MnO2) in Ca/Mn medium
+      into Biogenic rhodochrosite (MnCO3) and mixed Ca/Mn carbonate precipitates.
     evidence:
     - source_ref: johnson2016
       supports: support
-      explanation: Extracellular reduction converts Colloidal Mn(IV) oxide into Crystalline rhodochrosite
-        (MnCO3) and aqueous Mn(II).
+      explanation: Shewanella oneidensis MR-1 bioelectrochemical/anaerobic reduction converts Synthetic
+        birnessite (delta-MnO2) in Ca/Mn medium into Biogenic rhodochrosite (MnCO3) and mixed Ca/Mn carbonate
+        precipitates in johnson2016.
 curation_history:
 - timestamp: '2026-10-12T14:02:46.669472Z'
   curator: codex (GPT-6; codex)
@@ -371,6 +372,12 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein examples (MtrC UniProtKB:Q8EG34, OmcA UniProtKB:Q8EG33, CymA
     UniProtKB:Q8E8S0) and causal graph for Shewanella oneidensis MR-1 Mn(IV) reduction to rhodochrosite.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Set representative CymA/MtrC/OmcA cytochrome evidence to partial and refined substrate/product
+    labels in rhodochrosite.yaml.
 history_refs:
 - history/records/rhodochrosite/2026-10-12T140249Z-codex-1fba4c.yaml
 - history/records/rhodochrosite/2026-10-18T042750Z-antigravity-dd9a42.yaml
+- history/records/rhodochrosite/2026-10-21T184653Z-claude-3cc95a.yaml

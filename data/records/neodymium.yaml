@@ -207,11 +207,66 @@ mechanisms:
       supports: support
       explanation: Biosynthesis of the pyrroloquinoline quinone (PQQ) cofactor is required for periplasmic
         quinoprotein dehydrogenase activity during acidogenic biolixiviant production.
+  - uniprot_accession: UniProtKB:Q5FQK7
+    entry_name: Q5FQK7_GLUOX
+    protein_name: Putative oxidoreductase
+    gene_symbol: GOX1598
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:290633
+      label: Gluconobacter oxydans 621H
+    reference_proteome_id: UP000006375
+    ec_numbers:
+    - EC:1.1.1.-
+    interpro_ids:
+    - InterPro:IPR050523
+    - InterPro:IPR036812
+    - InterPro:IPR023210
+    pfam_ids:
+    - Pfam:PF00248
+    functional_role: Putative oxidoreductase GOX1598 (GO_1598) whose clean deletion in Gluconobacter oxydans
+      B58 increased neodymium extraction from synthetic Mon2 mixed phosphate by ~111% relative to proxy
+      wild-type.
+    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633)
+      orthologous to the engineered B58 locus.
+    evidence:
+    - source_ref: marecos2025_data4
+      supports: support
+      explanation: Sheet 4A triplicates for proxy wild-type (pWT B) and clean deletion delta-GO_1598 (GOX1598)
+        support the reported ~111% relative improvement in Nd extraction from synthetic Mon2.
+  - uniprot_accession: UniProtKB:Q5FRY1
+    entry_name: Q5FRY1_GLUOX
+    protein_name: Glycine cleavage system H protein
+    gene_symbol: gcvH
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:290633
+      label: Gluconobacter oxydans 621H
+    reference_proteome_id: UP000006375
+    interpro_ids:
+    - InterPro:IPR003016
+    - InterPro:IPR000089
+    - InterPro:IPR002930
+    - InterPro:IPR033753
+    - InterPro:IPR017453
+    - InterPro:IPR011053
+    pfam_ids:
+    - Pfam:PF01597
+    functional_role: Glycine cleavage system H protein GcvH (GOX1096 / GO_1096) targeted by transposon
+      disruption and clean deletion in Gluconobacter oxydans B58 Mon2 bioleaching assays.
+    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633)
+      orthologous to the engineered B58 locus.
+    evidence:
+    - source_ref: marecos2025
+      supports: partial
+      explanation: Transposon disruption of GO_1096 (gcvH) strongly decreased Nd extraction from synthetic
+        Mon2, whereas clean deletion delta-GO_1096 did not reproduce that effect.
 causal_graphs:
 - id: gluconobacter_neodymium_phosphate_bioleaching_graph
   name: Gluconobacter oxydans biolixiviant release of neodymium from synthetic NdPO4
-  description: Causal pathway linking PqqC/Gdh-mediated gluconic acid production to neodymium solubilization
-    from synthetic neodymium phosphate.
+  description: Causal pathway linking Gluconobacter oxydans B58 PQQ-dependent glucose dehydrogenase (gdh),
+    pqqC, clean deletion of GO_1598 (GOX1598), and transposon disruption vs clean deletion of GO_1096
+    (gcvH) to acidic biolixiviant solubilization of neodymium from synthetic Mon2 mixed phosphate.
   scope: RECORD_SPECIFIC_MECHANISM
   mechanism_ref: gluconobacter_synthetic_phosphate_bioleaching
   nodes:
@@ -285,16 +340,86 @@ causal_graphs:
         supports: support
         explanation: Glucose oxidation by membrane-bound PQQ-dependent glucose dehydrogenase generates
           the gluconic acid-dominated acidic biolixiviant used to leach the mineral/feed.
+  - id: gox1598_putative_oxidoreductase
+    label: GOX1598 (GO_1598 putative oxidoreductase)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: GOX1598
+    description: Putative oxidoreductase (GO_1598 / GOX1598) whose clean deletion increased Nd extraction
+      from synthetic Mon2 by ~111% relative to proxy wild-type.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q5FQK7
+      entry_name: Q5FQK7_GLUOX
+      protein_name: Putative oxidoreductase
+      gene_symbol: GOX1598
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:290633
+        label: Gluconobacter oxydans 621H
+      reference_proteome_id: UP000006375
+      ec_numbers:
+      - EC:1.1.1.-
+      interpro_ids:
+      - InterPro:IPR050523
+      - InterPro:IPR036812
+      - InterPro:IPR023210
+      pfam_ids:
+      - Pfam:PF00248
+      functional_role: Putative oxidoreductase GOX1598 (GO_1598) whose clean deletion in Gluconobacter
+        oxydans B58 increased neodymium extraction from synthetic Mon2 mixed phosphate by ~111% relative
+        to proxy wild-type.
+      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633)
+        orthologous to the engineered B58 locus.
+      evidence:
+      - source_ref: marecos2025_data4
+        supports: support
+        explanation: Sheet 4A triplicates for proxy wild-type (pWT B) and clean deletion delta-GO_1598
+          (GOX1598) support the reported ~111% relative improvement in Nd extraction from synthetic Mon2.
+  - id: gcvh_glycine_cleavage_protein
+    label: gcvH (GO_1096 glycine cleavage system H protein)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: gcvH
+    description: Glycine cleavage system H protein (GO_1096 / GOX1096) where transposon disruption strongly
+      decreased Nd extraction from Mon2, though clean deletion did not reproduce the effect.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q5FRY1
+      entry_name: Q5FRY1_GLUOX
+      protein_name: Glycine cleavage system H protein
+      gene_symbol: gcvH
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:290633
+        label: Gluconobacter oxydans 621H
+      reference_proteome_id: UP000006375
+      interpro_ids:
+      - InterPro:IPR003016
+      - InterPro:IPR000089
+      - InterPro:IPR002930
+      - InterPro:IPR033753
+      - InterPro:IPR017453
+      - InterPro:IPR011053
+      pfam_ids:
+      - Pfam:PF01597
+      functional_role: Glycine cleavage system H protein GcvH (GOX1096 / GO_1096) targeted by transposon
+        disruption and clean deletion in Gluconobacter oxydans B58 Mon2 bioleaching assays.
+      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633)
+        orthologous to the engineered B58 locus.
+      evidence:
+      - source_ref: marecos2025
+        supports: partial
+        explanation: Transposon disruption of GO_1096 (gcvH) strongly decreased Nd extraction from synthetic
+          Mon2, whereas clean deletion delta-GO_1096 did not reproduce that effect.
   - id: gluconic_acid_biolixiviant
     label: Extracellular gluconic acid and organic-acid biolixiviant
     node_type: CHEMICAL_ENTITY
     description: Organic acid and proton pool generated by periplasmic glucose oxidation.
     protein_grounding_status: NOT_APPLICABLE
   - id: synthetic_ndpo4_substrate
-    label: Synthetic neodymium phosphate (NdPO4)
+    label: Synthetic Mon2 mixed monazite-(Nd) and rhabdophane-(Nd) phosphate powder
     node_type: MATERIAL_OR_PHASE
-    description: Starting solid substrate (Synthetic neodymium phosphate (NdPO4)) exposed to the acidic
-      biolixiviant.
+    description: Synthetic neodymium phosphate powder (Mon2), a mixture of monazite-(Nd) and rhabdophane-(Nd)
+      phases, exposed to the Gluconobacter oxydans B58 biolixiviant.
     protein_grounding_status: NOT_APPLICABLE
   - id: dissolved_neodymium_ions
     label: Solubilized Nd(III) in aqueous leachate
@@ -313,6 +438,28 @@ causal_graphs:
       supports: support
       explanation: PQQ-dependent glucose dehydrogenase activity drives gluconic-acid biolixiviant production
         in Gluconobacter oxydans.
+  - source: gox1598_putative_oxidoreductase
+    target: gluconic_acid_biolixiviant
+    predicate: modulates
+    relationship: clean deletion increases biolixiviant Nd extraction relative to proxy wild-type
+    description: Clean deletion delta-GO_1598 in Gluconobacter oxydans B58 increases Nd extraction from
+      synthetic Mon2 by ~111% relative to proxy wild-type (pWT B).
+    evidence:
+    - source_ref: marecos2025_data4
+      supports: support
+      explanation: Sheet 4A triplicates for pWT B and delta-GO_1598 support the reported ~111% relative
+        improvement in Nd extraction from synthetic Mon2.
+  - source: gcvh_glycine_cleavage_protein
+    target: gluconic_acid_biolixiviant
+    predicate: modulates
+    relationship: transposon disruption vs clean deletion discrepancy in biolixiviant extraction
+    description: Transposon disruption of GO_1096 (gcvH) strongly decreased Nd extraction from synthetic
+      Mon2, whereas clean deletion delta-GO_1096 did not reproduce that effect.
+    evidence:
+    - source_ref: marecos2025
+      supports: partial
+      explanation: Figs. 3-5 and Discussion show that a GO_1096 transposon disruption strongly decreased
+        extraction, but its clean deletion did not reproduce that effect.
   - source: gdh_dehydrogenase
     target: gluconic_acid_biolixiviant
     predicate: produces
@@ -338,8 +485,8 @@ causal_graphs:
     target: dissolved_neodymium_ions
     predicate: produces
     relationship: dissolution and metal mobilization
-    description: Dissolution of Synthetic neodymium phosphate (NdPO4) yields Solubilized Nd(III) in aqueous
-      leachate in the aqueous leachate.
+    description: Acidolysis and organic-acid complexation of synthetic Mon2 mixed monazite-(Nd)/rhabdophane-(Nd)
+      powder release dissolved Nd(III) into the leachate.
     evidence:
     - source_ref: marecos2025
       supports: support
@@ -367,8 +514,14 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein examples (Gdh UniProtKB:P27175, PqqC UniProtKB:Q9L3B2) and
     causal graph for Gluconobacter oxydans neodymium phosphate bioleaching.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Added Marecos et al. (2025) experimentally tested GOX1598 (UniProtKB:Q5FQK7) and gcvH (UniProtKB:Q5FRY1)
+    protein examples and causal nodes/edges, and refined the synthetic Mon2 mixed-phase substrate label.
 history_refs:
 - history/records/neodymium/2026-10-08T023605Z-codex-131e84.yaml
 - history/records/neodymium/2026-10-09T044752Z-codex-7f72ec.yaml
 - history/records/neodymium/2026-10-09T055127Z-codex-172ef4.yaml
 - history/records/neodymium/2026-10-18T042750Z-antigravity-a1a8f5.yaml
+- history/records/neodymium/2026-10-21T184653Z-claude-8cee72.yaml

@@ -177,6 +177,162 @@
   </div>
 </div>
 
+<div class="detail-section">
+  <h3>Causal Graphs &amp; Molecular Pathways (2)</h3>
+  <div class="mechanism-box" id="causal-graph-fungal_supernatant_emulsion_stripping_graph">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
+      <h4 style="margin: 0; font-size: 1.12rem;">Conidiobolus coronatus cell-free alkaline protease stripping of waste X-ray film gelatin layer</h4>
+      <div>
+        <span class="badge">RECORD SPECIFIC MECHANISM</span>
+        <a href="#mechanism-fungal_supernatant_emulsion_stripping" class="badge" style="text-decoration: none;">Mechanism: <code>fungal_supernatant_emulsion_stripping</code></a>
+      </div>
+    </div>
+    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking crude cell-free alkaline protease supernatant from Conidiobolus coronatus ATCC PTA-4132 to proteolytic hydrolysis of the gelatin-silver emulsion on used X-ray film and release of silver-bearing sludge and clean polyester film.</p>
+
+    <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (3):</strong>
+    <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
+      <thead>
+        <tr>
+          <th scope="col">Node</th>
+          <th scope="col">Type</th>
+          <th scope="col">Details &amp; Grounding</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="causal-node-fungal_supernatant_emulsion_stripping_graph-conidiobolus_alkaline_protease_supernatant">
+          <td>
+            <strong>Conidiobolus coronatus ATCC PTA-4132 extracellular alkaline protease (cell-free supernatant)</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">conidiobolus_alkaline_protease_supernatant</code>
+          </td>
+          <td>
+            <span class="badge">GENE OR PROTEIN</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">UNGROUNDED</span>
+          </td>
+          <td>
+<div>Crude extracellular alkaline protease in cell-free MGYP-soybean-meal culture supernatant of Conidiobolus coronatus ATCC PTA-4132 (Shankar et al. 2010); marked UNGROUNDED because no purified enzyme sequence, gene symbol, or active UniProtKB accession for this protease is available.</div>          </td>
+        </tr>
+        <tr id="causal-node-fungal_supernatant_emulsion_stripping_graph-used_xray_film_gelatin_silver_layer">
+          <td>
+            <strong>Used medical X-ray film gelatin-silver emulsion layer (2 x 2 cm pieces)</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">used_xray_film_gelatin_silver_layer</code>
+          </td>
+          <td>
+            <span class="badge">MATERIAL OR PHASE</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
+          </td>
+          <td>
+<div>Gelatin-bound silver emulsion layer coating used polyester radiographic film.</div>          </td>
+        </tr>
+        <tr id="causal-node-fungal_supernatant_emulsion_stripping_graph-silver_bearing_hydrolysate_and_stripped_film">
+          <td>
+            <strong>Silver-bearing hydrolysate sludge (3.87% w/w Ag in dry sludge) and stripped polyester base</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">silver_bearing_hydrolysate_and_stripped_film</code>
+          </td>
+          <td>
+            <span class="badge">MATERIAL OR PHASE</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
+          </td>
+          <td>
+<div>Released silver-bearing protein hydrolysate slurry and stripped polyester film support.</div>          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Edges (2):</strong>
+    <ul style="margin: .4rem 0 0; padding-left: 1.2rem; font-size: .88rem;">
+      <li style="margin-bottom: .35rem;">
+        <code>conidiobolus_alkaline_protease_supernatant</code> &rarr; <strong>proteolytic hydrolysis of gelatin emulsion at pH 10 and 40 degrees C</strong> (<code>acts_on</code>) &rarr; <code>used_xray_film_gelatin_silver_layer</code>
+: Crude cell-free protease preparation (1.35 U/mL) hydrolyzes the gelatin layer on used X-ray film within ~6 minutes at 40 degrees C and pH 10.[<a href="#source-shankar2010"><code>shankar2010</code></a>]      </li>
+      <li style="margin-bottom: .35rem;">
+        <code>used_xray_film_gelatin_silver_layer</code> &rarr; <strong>release of silver-bearing sludge into hydrolysate and clean film separation</strong> (<code>transforms_into</code>) &rarr; <code>silver_bearing_hydrolysate_and_stripped_film</code>
+: Hydrolysis of the gelatin binder releases silver-bearing material into the aqueous slurry and leaves a stripped polyester film.[<a href="#source-shankar2010"><code>shankar2010</code></a>]      </li>
+    </ul>
+  </div>
+  <div class="mechanism-box" id="causal-graph-bacterial_stripping_then_smelting_graph">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
+      <h4 style="margin: 0; font-size: 1.12rem;">Bacillus spizizenii ATCC 6633 protease stripping of waste X-ray film followed by abiotic borax smelting</h4>
+      <div>
+        <span class="badge">RECORD SPECIFIC MECHANISM</span>
+        <a href="#mechanism-bacterial_stripping_then_smelting" class="badge" style="text-decoration: none;">Mechanism: <code>bacterial_stripping_then_smelting</code></a>
+      </div>
+    </div>
+    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking cell-free protease extract from Bacillus spizizenii ATCC 6633 (reported as Bacillus subtilis ATCC 6633) to gelatin-silver stripping at 50 degrees C, pH 8, followed by separate abiotic drying and 1100 degrees C borax smelting to metallic silver.</p>
+
+    <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (4):</strong>
+    <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
+      <thead>
+        <tr>
+          <th scope="col">Node</th>
+          <th scope="col">Type</th>
+          <th scope="col">Details &amp; Grounding</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="causal-node-bacterial_stripping_then_smelting_graph-bacillus_atcc6633_protease_extract">
+          <td>
+            <strong>Bacillus spizizenii ATCC 6633 cell-free alkaline protease extract (22.35 U/mL)</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">bacillus_atcc6633_protease_extract</code>
+          </td>
+          <td>
+            <span class="badge">GENE OR PROTEIN</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">UNGROUNDED</span>
+          </td>
+          <td>
+<div>Crude extracellular protease extract harvested from Bacillus spizizenii ATCC 6633 (historically reported as B. subtilis ATCC 6633) grown on gelatin-supplemented modified Horikoshi medium in Nakiboglu et al. (2001); marked UNGROUNDED because the crude extract was not fractionated to a specific protease gene or protein.</div>          </td>
+        </tr>
+        <tr id="causal-node-bacterial_stripping_then_smelting_graph-radiology_xray_film_pieces">
+          <td>
+            <strong>Used hospital radiology X-ray film pieces (4 x 4 cm)</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">radiology_xray_film_pieces</code>
+          </td>
+          <td>
+            <span class="badge">MATERIAL OR PHASE</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
+          </td>
+          <td>
+<div>70 pieces of used medical X-ray film treated successively in 100 mL cell-free enzyme extract.</div>          </td>
+        </tr>
+        <tr id="causal-node-bacterial_stripping_then_smelting_graph-stripped_silver_slurry_intermediate">
+          <td>
+            <strong>Stripped gelatin-silver hydrolysate slurry and clean film base</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">stripped_silver_slurry_intermediate</code>
+          </td>
+          <td>
+            <span class="badge">MATERIAL OR PHASE</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
+          </td>
+          <td>
+<div>Detached silver-containing slurry obtained after enzymatic gelatin stripping at pH 8 and 50 degrees C.</div>          </td>
+        </tr>
+        <tr id="causal-node-bacterial_stripping_then_smelting_graph-smelted_metallic_silver_product">
+          <td>
+            <strong>Smelted metallic silver product (0.4013 g, 99.16% purity after abiotic 1100 C borax smelting)</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">smelted_metallic_silver_product</code>
+          </td>
+          <td>
+            <span class="badge">MATERIAL OR PHASE</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
+          </td>
+          <td>
+<div>Metallic silver button obtained by abiotic drying and smelting of the stripped slurry with borax at 1100 degrees C.</div>          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Edges (3):</strong>
+    <ul style="margin: .4rem 0 0; padding-left: 1.2rem; font-size: .88rem;">
+      <li style="margin-bottom: .35rem;">
+        <code>bacillus_atcc6633_protease_extract</code> &rarr; <strong>enzymatic stripping of gelatin-silver layer at pH 8 and 50 degrees C</strong> (<code>acts_on</code>) &rarr; <code>radiology_xray_film_pieces</code>
+: Cell-free bacterial protease extract hydrolyzes the gelatin emulsion layer on 70 successive X-ray film pieces.[<a href="#source-nakiboglu2001"><code>nakiboglu2001</code></a>]      </li>
+      <li style="margin-bottom: .35rem;">
+        <code>radiology_xray_film_pieces</code> &rarr; <strong>detachment of silver-bearing emulsion into aqueous slurry</strong> (<code>transforms_into</code>) &rarr; <code>stripped_silver_slurry_intermediate</code>
+: Proteolytic gelatin breakdown transfers the silver layer into the aqueous slurry.[<a href="#source-nakiboglu2001"><code>nakiboglu2001</code></a>]      </li>
+      <li style="margin-bottom: .35rem;">
+        <code>stripped_silver_slurry_intermediate</code> &rarr; <strong>separate abiotic drying and 1100 degrees C borax-assisted furnace smelting</strong> (<code>transforms_into</code>) &rarr; <code>smelted_metallic_silver_product</code>
+: Drying the stripped slurry and smelting with borax at 1100 degrees C yields 0.4013 g metallic silver (99.16% potentiometric purity).[<a href="#source-nakiboglu2001"><code>nakiboglu2001</code></a>]      </li>
+    </ul>
+  </div>
+</div>
 
 <div class="detail-section">
   <h2>Sources &amp; References</h2>
@@ -227,6 +383,12 @@
         <td><span class="badge">CREATE</span></td>
         <td>Added the medical waste-film resource from two complete primary studies, distinguishing fungal enzyme stripping and bacterial enzyme stripping followed by abiotic smelting. Preserved source-dose discrepancies, uncertain controls and denominators, product-purity scope and current taxonomic mappings. Independent scientific review is separate.</td>
       </tr>
+      <tr>
+        <td><code>2026-10-21T18:46:53Z</code></td>
+        <td>claude</td>
+        <td><span class="badge">EDIT</span></td>
+        <td>Added two causal graphs with explicit UNGROUNDED protease nodes for fungal and bacterial enzymatic stripping of waste X-ray films.</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -236,7 +398,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (616 materials · 592 mechanisms · latest curation 2026-10-19 · corpus digest <code>f5834ac109ba</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (616 materials · 592 mechanisms · latest curation 2026-10-21 · corpus digest <code>75e716e3036c</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

@@ -123,8 +123,9 @@ mechanisms:
     evidence:
     - source_ref: dodge_2024
       supports: support
-      explanation: Catalyzes hydrolytic defluorination of fluoroacetate to release free inorganic fluoride
-        ion (F-).
+      explanation: Purified from Delftia acidovorans strain B and sequenced by LC-MS/MS in Dodge et al.
+        (2024); catalyzes hydrolytic defluorination of alpha-fluorophenylacetic acid and 2-fluoropropionic
+        acid to release inorganic fluoride (F-).
   - uniprot_accession: UniProtKB:Q7DI63
     entry_name: Q7DI63_DELAC
     protein_name: (S)-2-haloacid dehalogenase
@@ -151,8 +152,9 @@ mechanisms:
     evidence:
     - source_ref: dodge_2024
       supports: partial
-      explanation: Co-encoded haloacetate dehalogenase from the Delftia acidovorans dehalogenase locus
-        (acts on chloro/bromo/iodoacetate while DehH1 provides primary C-F cleavage activity).
+      explanation: Purified from Delftia acidovorans strain B and sequenced by LC-MS/MS in Dodge et al.
+        (2024); catalyzes hydrolytic defluorination of alpha-fluorophenylacetic acid and 2-fluoropropionic
+        acid to release inorganic fluoride (F-).
 - id: fungal_inorganic_fluoride_release
   name: Conditional fungal release of fluoride from precipitated calcium fluoride
   process: bioleaching
@@ -210,9 +212,9 @@ mechanisms:
 causal_graphs:
 - id: recombinant_putida_dehh1_defluorination_graph
   name: Heterologous DehH1 hydrolytic defluorination of fluoroacetate in Pseudomonas putida
-  description: Causal pathway linking heterologous expression of Delftia acidovorans haloacetate dehalogenase
-    DehH1 (with co-encoded DehH2) in Pseudomonas putida to hydrolytic cleavage of the C-F bond in fluoroacetate
-    and stoichiometric fluoride (F-) release.
+  description: Causal pathway linking Delftia acidovorans haloacid dehalogenases DehH1 and DehH2 to hydrolytic
+    C-F bond cleavage of racemic alpha-fluorophenylacetic acid and 2-fluoropropionic acid and release
+    of inorganic fluoride ion (F-).
   scope: RECORD_SPECIFIC_MECHANISM
   mechanism_ref: recombinant_putida_defluorination
   nodes:
@@ -247,8 +249,9 @@ causal_graphs:
       evidence:
       - source_ref: dodge_2024
         supports: support
-        explanation: Catalyzes hydrolytic defluorination of fluoroacetate to release free inorganic fluoride
-          ion (F-).
+        explanation: Purified from Delftia acidovorans strain B and sequenced by LC-MS/MS in Dodge et
+          al. (2024); catalyzes hydrolytic defluorination of alpha-fluorophenylacetic acid and 2-fluoropropionic
+          acid to release inorganic fluoride (F-).
   - id: dehh2_haloacetate_dehalogenase
     label: DehH2 haloacetate dehalogenase H-2 (dehH2)
     node_type: GENE_OR_PROTEIN
@@ -283,48 +286,55 @@ causal_graphs:
       evidence:
       - source_ref: dodge_2024
         supports: partial
-        explanation: Co-encoded haloacetate dehalogenase from the Delftia acidovorans dehalogenase locus
-          (acts on chloro/bromo/iodoacetate while DehH1 provides primary C-F cleavage activity).
+        explanation: Purified from Delftia acidovorans strain B and sequenced by LC-MS/MS in Dodge et
+          al. (2024); catalyzes hydrolytic defluorination of alpha-fluorophenylacetic acid and 2-fluoropropionic
+          acid to release inorganic fluoride (F-).
   - id: fluoroacetate_substrate
-    label: Monofluoroacetate (organofluorine substrate)
+    label: Racemic alpha-fluorophenylacetic acid and 2-fluoropropionic acid
     node_type: CHEMICAL_ENTITY
-    description: Fluorinated organic substrate containing a recalcitrant aliphatic C-F bond.
+    description: Fluorinated carboxylic acid substrates (alpha-fluorophenylacetate and 2-fluoropropionate)
+      undergoing enzymatic C-F cleavage in Dodge et al. (2024).
     protein_grounding_status: NOT_APPLICABLE
   - id: inorganic_fluoride_ion
-    label: Released inorganic fluoride ion (F-) and glycolate
+    label: Released inorganic fluoride ion (F-) and hydroxyacid products (mandelate / lactate)
     node_type: CHEMICAL_ENTITY
-    description: Soluble inorganic fluoride (F-) liberated into the aqueous medium upon hydrolytic C-F
-      cleavage.
+    description: Stoichiometrically released inorganic fluoride ion (F-) and corresponding hydroxyacids
+      (mandelic acid from alpha-fluorophenylacetate; lactic acid from 2-fluoropropionate).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: dehh1_fluoroacetate_dehalogenase
     target: fluoroacetate_substrate
     predicate: acts_on
     relationship: nucleophilic hydrolytic C-F bond cleavage
-    description: DehH1 attacks the alpha-carbon of fluoroacetate via an aspartate nucleophile to displace
-      fluoride.
+    description: Dehh1 catalyzes hydrolytic defluorination of alpha-fluorophenylacetic acid and 2-fluoropropionic
+      acid (with stereoselective preference).
     evidence:
     - source_ref: dodge_2024
       supports: support
-      explanation: Recombinant P. putida expressing Delftia acidovorans dehalogenase defluorinates fluoroacetate.
+      explanation: Purified enzyme assays and LC-MS/MS in Dodge et al. (2024) demonstrate hydrolytic defluorination
+        of alpha-fluorophenylacetate and 2-fluoropropionate.
   - source: dehh2_haloacetate_dehalogenase
     target: fluoroacetate_substrate
     predicate: modulates
     relationship: co-encoded haloacetate dehalogenase locus activity
-    description: DehH2 is co-encoded on the transferred Delftia acidovorans dehalogenase locus.
+    description: Dehh2 catalyzes hydrolytic defluorination of alpha-fluorophenylacetic acid and 2-fluoropropionic
+      acid (with stereoselective preference).
     evidence:
     - source_ref: dodge_2024
       supports: partial
-      explanation: Co-encoded haloacetate dehalogenase H-2 from the same D. acidovorans strain B locus.
+      explanation: Purified enzyme assays and LC-MS/MS in Dodge et al. (2024) demonstrate hydrolytic defluorination
+        of alpha-fluorophenylacetate and 2-fluoropropionate.
   - source: fluoroacetate_substrate
     target: inorganic_fluoride_ion
     predicate: produces
     relationship: hydrolytic defluorination to fluoride and glycolate
-    description: Hydrolysis of fluoroacetate releases free inorganic F- into the culture medium.
+    description: Hydrolytic C-F bond cleavage converts alpha-fluorophenylacetic acid and 2-fluoropropionic
+      acid into inorganic fluoride (F-) and mandelate/lactate.
     evidence:
     - source_ref: dodge_2024
       supports: support
-      explanation: Stoichiometric fluoride release is measured in the culture supernatant.
+      explanation: Fluoride-selective electrode and HPLC measurements confirm stoichiometric F- release
+        alongside mandelic or lactic acid formation.
 curation_history:
 - timestamp: '2026-10-11T07:25:31Z'
   curator: Codex (GPT-6; Codex)
@@ -343,7 +353,13 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein examples (DehH1 UniProtKB:Q7DI61, DehH2 UniProtKB:Q7DI63)
     and causal graph for recombinant Pseudomonas putida defluorination.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Corrected fluorinated substrates and products in fluorine.yaml from monofluoroacetate/glycolate
+    to alpha-fluorophenylacetic acid and 2-fluoropropionic acid yielding fluoride and mandelate/lactate.
 history_refs:
 - history/records/fluorine/2026-10-11T072439Z-codex-95b027.yaml
 - history/records/fluorine/2026-10-13T021024Z-codex-6d1850.yaml
 - history/records/fluorine/2026-10-18T042750Z-antigravity-3fc32e.yaml
+- history/records/fluorine/2026-10-21T184653Z-claude-9b6c82.yaml

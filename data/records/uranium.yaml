@@ -195,9 +195,9 @@ mechanisms:
       extracellular electron-transfer reductase.
     evidence:
     - source_ref: kane_2026_bes
-      supports: support
-      explanation: Cell-surface decaheme cytochrome c mediating extracellular electron transfer to Dissolved
-        U(VI) in synthetic/mine-water feed.
+      supports: partial
+      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (mtrC) for extracellular
+        electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
   - uniprot_accession: UniProtKB:Q8EG33
     entry_name: Q8EG33_SHEON
     protein_name: Extracelllular iron oxide respiratory system surface decaheme cytochrome c component
@@ -220,9 +220,9 @@ mechanisms:
       MtrC in extracellular metal/mineral reduction.
     evidence:
     - source_ref: kane_2026_bes
-      supports: support
-      explanation: Outer-membrane decaheme cytochrome c contributing to extracellular reduction of Dissolved
-        U(VI) in synthetic/mine-water feed into Electrode/cell-associated reduced uranium deposit.
+      supports: partial
+      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (omcA) for extracellular
+        electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
   - uniprot_accession: UniProtKB:Q8E8S0
     entry_name: CYMA_SHEON
     protein_name: Tetraheme c-type cytochrome CymA
@@ -247,15 +247,15 @@ mechanisms:
       pathways.
     evidence:
     - source_ref: kane_2026_bes
-      supports: support
-      explanation: Routes respiratory electrons from the inner-membrane menaquinone pool to periplasmic
-        and outer-membrane multiheme cytochromes during Dissolved U(VI) in synthetic/mine-water feed reduction.
+      supports: partial
+      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (cymA) for extracellular
+        electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
 causal_graphs:
 - id: mr1_bes_uranium_reduction_graph
   name: Shewanella oneidensis MR-1 extracellular electron transfer in bioelectrochemical uranium separation
   description: Causal pathway linking Shewanella oneidensis MR-1 CymA, MtrC, and OmcA extracellular electron-transfer
     proteins to reductive uranium deposition in a bioelectrochemical system.
-  scope: RECORD_SPECIFIC_MECHANISM
+  scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: oneidensis_bes_uranium_separation
   nodes:
   - id: cyma_dehydrogenase
@@ -290,10 +290,9 @@ causal_graphs:
         pathways.
       evidence:
       - source_ref: kane_2026_bes
-        supports: support
-        explanation: Routes respiratory electrons from the inner-membrane menaquinone pool to periplasmic
-          and outer-membrane multiheme cytochromes during Dissolved U(VI) in synthetic/mine-water feed
-          reduction.
+        supports: partial
+        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (cymA) for extracellular
+          electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
   - id: mtrc_cytochrome
     label: MtrC outer-membrane decaheme cytochrome c (SO_1778)
     node_type: GENE_OR_PROTEIN
@@ -324,9 +323,9 @@ causal_graphs:
         extracellular electron-transfer reductase.
       evidence:
       - source_ref: kane_2026_bes
-        supports: support
-        explanation: Cell-surface decaheme cytochrome c mediating extracellular electron transfer to Dissolved
-          U(VI) in synthetic/mine-water feed.
+        supports: partial
+        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (mtrC) for extracellular
+          electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
   - id: omca_cytochrome
     label: OmcA outer-membrane decaheme cytochrome c (SO_1779)
     node_type: GENE_OR_PROTEIN
@@ -356,20 +355,19 @@ causal_graphs:
         MtrC in extracellular metal/mineral reduction.
       evidence:
       - source_ref: kane_2026_bes
-        supports: support
-        explanation: Outer-membrane decaheme cytochrome c contributing to extracellular reduction of Dissolved
-          U(VI) in synthetic/mine-water feed into Electrode/cell-associated reduced uranium deposit.
+        supports: partial
+        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (omcA) for extracellular
+          electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
   - id: oxidized_metal_substrate
-    label: Dissolved U(VI) in synthetic/mine-water feed
+    label: Dissolved U(VI) in defined bicarbonate/PIPES electrolyte
     node_type: CHEMICAL_ENTITY
-    description: Oxidized metal species or mineral substrate (Dissolved U(VI) in synthetic/mine-water
-      feed) accepting extracellular electrons.
+    description: Terminal electron acceptor substrate (Dissolved U(VI) in defined bicarbonate/PIPES electrolyte)
+      in kane_2026_bes.
     protein_grounding_status: NOT_APPLICABLE
   - id: reduced_metal_product
-    label: Electrode/cell-associated reduced uranium deposit
+    label: Cell-associated reduced U(IV) precipitate
     node_type: MATERIAL_OR_PHASE
-    description: Reduced metal species or mineral phase (Electrode/cell-associated reduced uranium deposit)
-      formed by extracellular electron transfer.
+    description: Resulting reduced product state (Cell-associated reduced U(IV) precipitate) in kane_2026_bes.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cyma_dehydrogenase
@@ -380,7 +378,7 @@ causal_graphs:
       conduit.
     evidence:
     - source_ref: kane_2026_bes
-      supports: support
+      supports: partial
       explanation: Respiratory electron transport in S. oneidensis MR-1 routes electrons from CymA to
         outer-membrane decaheme cytochromes.
   - source: mtrc_cytochrome
@@ -391,7 +389,7 @@ causal_graphs:
       feed.
     evidence:
     - source_ref: kane_2026_bes
-      supports: support
+      supports: partial
       explanation: MtrC participates in extracellular reduction of Dissolved U(VI) in synthetic/mine-water
         feed.
   - source: omca_cytochrome
@@ -402,20 +400,21 @@ causal_graphs:
       synthetic/mine-water feed.
     evidence:
     - source_ref: kane_2026_bes
-      supports: support
+      supports: partial
       explanation: OmcA contributes to extracellular reduction of Dissolved U(VI) in synthetic/mine-water
         feed.
   - source: oxidized_metal_substrate
     target: reduced_metal_product
     predicate: transforms_into
     relationship: reductive valence transformation and phase formation
-    description: Reduction of Dissolved U(VI) in synthetic/mine-water feed yields Electrode/cell-associated
-      reduced uranium deposit.
+    description: Extracellular electron transfer converts Dissolved U(VI) in defined bicarbonate/PIPES
+      electrolyte into Cell-associated reduced U(IV) precipitate.
     evidence:
     - source_ref: kane_2026_bes
       supports: support
-      explanation: Extracellular reduction converts Dissolved U(VI) in synthetic/mine-water feed into
-        Electrode/cell-associated reduced uranium deposit.
+      explanation: Shewanella oneidensis MR-1 bioelectrochemical/anaerobic reduction converts Dissolved
+        U(VI) in defined bicarbonate/PIPES electrolyte into Cell-associated reduced U(IV) precipitate
+        in kane_2026_bes.
 curation_history:
 - timestamp: '2026-10-09T04:48:34Z'
   curator: Codex (GPT-6; Codex)
@@ -432,7 +431,13 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein examples (MtrC UniProtKB:Q8EG34, OmcA UniProtKB:Q8EG33, CymA
     UniProtKB:Q8E8S0) and causal graph for Shewanella oneidensis MR-1 bioelectrochemical uranium separation.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Set representative CymA/MtrC/OmcA cytochrome evidence to partial and refined substrate/product
+    labels in uranium.yaml.
 history_refs:
 - history/records/uranium/2026-10-09T044834Z-codex-003092.yaml
 - history/records/uranium/2026-10-09T054958Z-codex-6ae682.yaml
 - history/records/uranium/2026-10-18T042750Z-antigravity-3a1b87.yaml
+- history/records/uranium/2026-10-21T184653Z-claude-8d44a4.yaml

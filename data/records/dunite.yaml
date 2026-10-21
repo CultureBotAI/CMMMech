@@ -209,62 +209,10 @@ mechanisms:
       orthologous to the engineered B58 locus.
     evidence:
     - source_ref: lee2025
-      supports: support
-      explanation: Phosphate-binding protein PstS (GOX0537) associated with phosphate-transport regulation
-        of organic-acid biolixiviant production.
-  - uniprot_accession: UniProtKB:Q5FQK7
-    entry_name: Q5FQK7_GLUOX
-    protein_name: Putative oxidoreductase
-    gene_symbol: GOX1598
-    entry_status: TREMBL
-    target_organism:
-      id: NCBITaxon:290633
-      label: Gluconobacter oxydans 621H
-    reference_proteome_id: UP000006375
-    ec_numbers:
-    - EC:1.1.1.-
-    interpro_ids:
-    - InterPro:IPR050523
-    - InterPro:IPR036812
-    - InterPro:IPR023210
-    pfam_ids:
-    - Pfam:PF00248
-    functional_role: Putative oxidoreductase GOX1598 perturbed in engineered Gluconobacter oxydans biolixiviant
-      strains.
-    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633)
-      orthologous to the engineered B58 locus.
-    evidence:
-    - source_ref: lee2025
-      supports: support
-      explanation: Putative oxidoreductase GOX1598 perturbed in engineered Gluconobacter oxydans biolixiviant
-        strains.
-  - uniprot_accession: UniProtKB:Q5FRY1
-    entry_name: Q5FRY1_GLUOX
-    protein_name: Glycine cleavage system H protein
-    gene_symbol: gcvH
-    entry_status: TREMBL
-    target_organism:
-      id: NCBITaxon:290633
-      label: Gluconobacter oxydans 621H
-    reference_proteome_id: UP000006375
-    interpro_ids:
-    - InterPro:IPR003016
-    - InterPro:IPR000089
-    - InterPro:IPR002930
-    - InterPro:IPR033753
-    - InterPro:IPR017453
-    - InterPro:IPR011053
-    pfam_ids:
-    - Pfam:PF01597
-    functional_role: Glycine cleavage system H protein GcvH (GOX1096) associated with engineered Gluconobacter
-      oxydans biolixiviant performance.
-    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633)
-      orthologous to the engineered B58 locus.
-    evidence:
-    - source_ref: lee2025
-      supports: support
-      explanation: Glycine cleavage system H protein GcvH (GOX1096) associated with engineered Gluconobacter
-        oxydans biolixiviant performance.
+      supports: partial
+      explanation: Engineered B58 delta-pstS, P112:mgdh strain increased average Mg leaching by ~12% over
+        24-96 h relative to wild type, though the combined pstS deletion and mgdh promoter swap plus lower
+        initial pH do not isolate the individual causal effect of pstS alone.
 causal_graphs:
 - id: gluconobacter_dunite_bioleaching_graph
   name: Gluconobacter oxydans B58 biolixiviant leaching of dunite powders
@@ -273,75 +221,6 @@ causal_graphs:
   scope: RECORD_SPECIFIC_MECHANISM
   mechanism_ref: bacterial_biolixiviant_dunite_leaching
   nodes:
-  - id: gcvh_glycine_cleavage
-    label: gcvH (Glycine cleavage system H protein)
-    node_type: GENE_OR_PROTEIN
-    gene_symbol: gcvH
-    description: Glycine cleavage system H protein GcvH (GOX1096) associated with engineered Gluconobacter
-      oxydans biolixiviant performance.
-    protein_grounding_status: GROUNDED
-    protein_examples:
-    - uniprot_accession: UniProtKB:Q5FRY1
-      entry_name: Q5FRY1_GLUOX
-      protein_name: Glycine cleavage system H protein
-      gene_symbol: gcvH
-      entry_status: TREMBL
-      target_organism:
-        id: NCBITaxon:290633
-        label: Gluconobacter oxydans 621H
-      reference_proteome_id: UP000006375
-      interpro_ids:
-      - InterPro:IPR003016
-      - InterPro:IPR000089
-      - InterPro:IPR002930
-      - InterPro:IPR033753
-      - InterPro:IPR017453
-      - InterPro:IPR011053
-      pfam_ids:
-      - Pfam:PF01597
-      functional_role: Glycine cleavage system H protein GcvH (GOX1096) associated with engineered Gluconobacter
-        oxydans biolixiviant performance.
-      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633)
-        orthologous to the engineered B58 locus.
-      evidence:
-      - source_ref: lee2025
-        supports: support
-        explanation: Glycine cleavage system H protein GcvH (GOX1096) associated with engineered Gluconobacter
-          oxydans biolixiviant performance.
-  - id: gox1598_oxidoreductase
-    label: GOX1598 (Putative oxidoreductase)
-    node_type: GENE_OR_PROTEIN
-    gene_symbol: GOX1598
-    description: Putative oxidoreductase GOX1598 perturbed in engineered Gluconobacter oxydans biolixiviant
-      strains.
-    protein_grounding_status: GROUNDED
-    protein_examples:
-    - uniprot_accession: UniProtKB:Q5FQK7
-      entry_name: Q5FQK7_GLUOX
-      protein_name: Putative oxidoreductase
-      gene_symbol: GOX1598
-      entry_status: TREMBL
-      target_organism:
-        id: NCBITaxon:290633
-        label: Gluconobacter oxydans 621H
-      reference_proteome_id: UP000006375
-      ec_numbers:
-      - EC:1.1.1.-
-      interpro_ids:
-      - InterPro:IPR050523
-      - InterPro:IPR036812
-      - InterPro:IPR023210
-      pfam_ids:
-      - Pfam:PF00248
-      functional_role: Putative oxidoreductase GOX1598 perturbed in engineered Gluconobacter oxydans biolixiviant
-        strains.
-      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633)
-        orthologous to the engineered B58 locus.
-      evidence:
-      - source_ref: lee2025
-        supports: support
-        explanation: Putative oxidoreductase GOX1598 perturbed in engineered Gluconobacter oxydans biolixiviant
-          strains.
   - id: psts_phosphate_binding
     label: pstS (Phosphate-binding protein PstS)
     node_type: GENE_OR_PROTEIN
@@ -371,9 +250,10 @@ causal_graphs:
         orthologous to the engineered B58 locus.
       evidence:
       - source_ref: lee2025
-        supports: support
-        explanation: Phosphate-binding protein PstS (GOX0537) associated with phosphate-transport regulation
-          of organic-acid biolixiviant production.
+        supports: partial
+        explanation: Engineered B58 delta-pstS, P112:mgdh strain increased average Mg leaching by ~12%
+          over 24-96 h relative to wild type, though the combined pstS deletion and mgdh promoter swap
+          plus lower initial pH do not isolate the individual causal effect of pstS alone.
   - id: pqqc_synthase
     label: PqqC pyrroloquinoline-quinone synthase
     node_type: GENE_OR_PROTEIN
@@ -450,10 +330,10 @@ causal_graphs:
     description: Organic acid and proton pool generated by periplasmic glucose oxidation.
     protein_grounding_status: NOT_APPLICABLE
   - id: dunite_powder_feed
-    label: Twin Sisters and olivine-rich dunite powders
+    label: North Carolina Day Brook dunite-deposit powders (DUN-1, DUN-2, DUN-3)
     node_type: MATERIAL_OR_PHASE
-    description: Starting solid substrate (Twin Sisters and olivine-rich dunite powders) exposed to the
-      acidic biolixiviant.
+    description: Crushed dunite-deposit rock powders (DUN-1, DUN-2, DUN-3) containing olivine, lizardite,
+      talc, and minor chlorite/actinolite/bentonite exposed to the acidic biolixiviant.
     protein_grounding_status: NOT_APPLICABLE
   - id: leached_mg_ni_co_ions
     label: Dissolved Mg, Ni, Mn, Co, and Cr in leachate
@@ -462,28 +342,6 @@ causal_graphs:
       released into the leachate.
     protein_grounding_status: NOT_APPLICABLE
   edges:
-  - source: gcvh_glycine_cleavage
-    target: gdh_dehydrogenase
-    predicate: modulates
-    relationship: genetic perturbation or regulatory coupling in engineered strain
-    description: Glycine cleavage system H protein GcvH (GOX1096) associated with engineered Gluconobacter
-      oxydans biolixiviant performance.
-    evidence:
-    - source_ref: lee2025
-      supports: support
-      explanation: Glycine cleavage system H protein GcvH (GOX1096) associated with engineered Gluconobacter
-        oxydans biolixiviant performance.
-  - source: gox1598_oxidoreductase
-    target: gdh_dehydrogenase
-    predicate: modulates
-    relationship: genetic perturbation or regulatory coupling in engineered strain
-    description: Putative oxidoreductase GOX1598 perturbed in engineered Gluconobacter oxydans biolixiviant
-      strains.
-    evidence:
-    - source_ref: lee2025
-      supports: support
-      explanation: Putative oxidoreductase GOX1598 perturbed in engineered Gluconobacter oxydans biolixiviant
-        strains.
   - source: psts_phosphate_binding
     target: gdh_dehydrogenase
     predicate: modulates
@@ -492,9 +350,9 @@ causal_graphs:
       of organic-acid biolixiviant production.
     evidence:
     - source_ref: lee2025
-      supports: support
-      explanation: Phosphate-binding protein PstS (GOX0537) associated with phosphate-transport regulation
-        of organic-acid biolixiviant production.
+      supports: partial
+      explanation: Combined B58 delta-pstS, P112:mgdh strain showed ~12% higher Mg release over 24-96
+        h than wild-type B58, without isolating the individual contribution of pstS deletion.
   - source: pqqc_synthase
     target: gdh_dehydrogenase
     predicate: positively_regulates
@@ -530,12 +388,13 @@ causal_graphs:
     target: leached_mg_ni_co_ions
     predicate: produces
     relationship: dissolution and metal mobilization
-    description: Dissolution of Twin Sisters and olivine-rich dunite powders yields Dissolved Mg, Ni,
-      Mn, Co, and Cr in leachate in the aqueous leachate.
+    description: Acidolysis of North Carolina Day Brook dunite powders (DUN-1, DUN-2, DUN-3) releases
+      dissolved Mg and Fe into solution.
     evidence:
     - source_ref: lee2025
       supports: support
-      explanation: Measured aqueous metal release above sterile-medium controls confirms substrate leaching.
+      explanation: Biolixiviant treatment of North Carolina Day Brook dunite powders releases dissolved
+        Mg and Fe above uninoculated and gluconic-acid comparators.
 curation_history:
 - timestamp: '2026-10-11T11:13:17Z'
   curator: codex (GPT-6; codex)
@@ -548,6 +407,13 @@ curation_history:
   summary: Added verified UniProtKB protein examples (Gdh UniProtKB:P27175, PqqC UniProtKB:Q9L3B2, PstS
     UniProtKB:Q5FTI1, GOX1598 UniProtKB:Q5FQK7, GcvH UniProtKB:Q5FRY1) and causal graph for Gluconobacter
     oxydans dunite bioleaching.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Removed Marecos 2025 genes (GOX1598, gcvH) not tested in Lee et al. (2025), corrected dunite
+    feed label to North Carolina Day Brook dunite powders (DUN-1, DUN-2, DUN-3), and set pstS evidence
+    to partial.
 history_refs:
 - history/records/dunite/2026-10-11T111317Z-codex-75893c.yaml
 - history/records/dunite/2026-10-18T042750Z-antigravity-9bdc49.yaml
+- history/records/dunite/2026-10-21T184653Z-claude-8cc25f.yaml

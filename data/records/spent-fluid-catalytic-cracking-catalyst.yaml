@@ -87,9 +87,9 @@ mechanisms:
       oxydans 621H (NCBITaxon:290633; locus GOX0265).
     evidence:
     - source_ref: reed_2016
-      supports: support
-      explanation: Glucose oxidation by membrane-bound PQQ-dependent glucose dehydrogenase generates the
-        gluconic acid-dominated acidic biolixiviant used to leach the mineral/feed.
+      supports: partial
+      explanation: Reed et al. (2016) leached spent FCC catalyst with glucose-grown Gluconobacter oxydans
+        B58 cell-free spent medium containing gluconic acid, without direct enzyme assays or genetic knockouts.
   - uniprot_accession: UniProtKB:Q9L3B2
     entry_name: PQQC_GLUOX
     protein_name: Pyrroloquinoline-quinone synthase
@@ -114,15 +114,15 @@ mechanisms:
       oxydans 621H (NCBITaxon:290633; locus GOX0985).
     evidence:
     - source_ref: reed_2016
-      supports: support
-      explanation: Biosynthesis of the pyrroloquinoline quinone (PQQ) cofactor is required for periplasmic
-        quinoprotein dehydrogenase activity during acidogenic biolixiviant production.
+      supports: partial
+      explanation: Reed et al. (2016) leached spent FCC catalyst with glucose-grown Gluconobacter oxydans
+        B58 cell-free spent medium containing gluconic acid, without direct enzyme assays or genetic knockouts.
 causal_graphs:
 - id: gluconobacter_fcc_catalyst_bioleaching_graph
   name: Gluconobacter oxydans B58 spent-medium leaching of spent FCC catalyst
   description: Causal pathway linking PqqC/Gdh-catalyzed gluconic acid production in Gluconobacter oxydans
     B58 to rare-earth mobilization from spent fluid catalytic cracking catalyst.
-  scope: RECORD_SPECIFIC_MECHANISM
+  scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: b58_supernatant_leaching
   nodes:
   - id: pqqc_synthase
@@ -157,9 +157,10 @@ causal_graphs:
         oxydans 621H (NCBITaxon:290633; locus GOX0985).
       evidence:
       - source_ref: reed_2016
-        supports: support
-        explanation: Biosynthesis of the pyrroloquinoline quinone (PQQ) cofactor is required for periplasmic
-          quinoprotein dehydrogenase activity during acidogenic biolixiviant production.
+        supports: partial
+        explanation: Reed et al. (2016) leached spent FCC catalyst with glucose-grown Gluconobacter oxydans
+          B58 cell-free spent medium containing gluconic acid, without direct enzyme assays or genetic
+          knockouts.
   - id: gdh_dehydrogenase
     label: Gdh membrane-bound PQQ-dependent glucose dehydrogenase
     node_type: GENE_OR_PROTEIN
@@ -192,9 +193,10 @@ causal_graphs:
         oxydans 621H (NCBITaxon:290633; locus GOX0265).
       evidence:
       - source_ref: reed_2016
-        supports: support
-        explanation: Glucose oxidation by membrane-bound PQQ-dependent glucose dehydrogenase generates
-          the gluconic acid-dominated acidic biolixiviant used to leach the mineral/feed.
+        supports: partial
+        explanation: Reed et al. (2016) leached spent FCC catalyst with glucose-grown Gluconobacter oxydans
+          B58 cell-free spent medium containing gluconic acid, without direct enzyme assays or genetic
+          knockouts.
   - id: gluconic_acid_biolixiviant
     label: Extracellular gluconic acid and organic-acid biolixiviant
     node_type: CHEMICAL_ENTITY
@@ -220,9 +222,10 @@ causal_graphs:
     description: PQQ cofactor biosynthesis enables active periplasmic quinoprotein glucose dehydrogenase.
     evidence:
     - source_ref: reed_2016
-      supports: support
-      explanation: PQQ-dependent glucose dehydrogenase activity drives gluconic-acid biolixiviant production
-        in Gluconobacter oxydans.
+      supports: partial
+      explanation: Glucose-grown G. oxydans B58 produced gluconic acid-rich spent medium that leached
+        La and Ce from FCC catalyst; pqqC/gdh enzyme causality was not genetically perturbed in Reed et
+        al. (2016).
   - source: gdh_dehydrogenase
     target: gluconic_acid_biolixiviant
     predicate: produces
@@ -231,9 +234,10 @@ causal_graphs:
       organic-acid ligands.
     evidence:
     - source_ref: reed_2016
-      supports: support
-      explanation: Periplasmic glucose oxidation by G. oxydans generates the acidic gluconic-acid-rich
-        biolixiviant.
+      supports: partial
+      explanation: Glucose-grown G. oxydans B58 produced gluconic acid-rich spent medium that leached
+        La and Ce from FCC catalyst; pqqC/gdh enzyme causality was not genetically perturbed in Reed et
+        al. (2016).
   - source: gluconic_acid_biolixiviant
     target: spent_fcc_catalyst_feed
     predicate: acts_on
@@ -270,7 +274,13 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein examples (Gdh UniProtKB:P27175, PqqC UniProtKB:Q9L3B2) and
     causal graph for Gluconobacter oxydans spent FCC catalyst bioleaching.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Set unmutated pqqC and gdh evidence to partial and graph scope to REPRESENTATIVE_EXAMPLE in
+    spent-fluid-catalytic-cracking-catalyst.yaml.
 history_refs:
 - history/records/spent-fluid-catalytic-cracking-catalyst/2026-10-11T092615Z-codex-078bef.yaml
 - history/records/spent-fluid-catalytic-cracking-catalyst/2026-10-11T093536Z-codex-5dee7e.yaml
 - history/records/spent-fluid-catalytic-cracking-catalyst/2026-10-18T042750Z-antigravity-967811.yaml
+- history/records/spent-fluid-catalytic-cracking-catalyst/2026-10-21T184653Z-claude-599761.yaml

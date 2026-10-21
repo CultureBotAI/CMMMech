@@ -114,14 +114,77 @@ mechanisms:
       supports: support
       explanation: Biosynthesis of the pyrroloquinoline quinone (PQQ) cofactor is required for periplasmic
         quinoprotein dehydrogenase activity during acidogenic biolixiviant production.
+  - uniprot_accession: UniProtKB:Q5FT13
+    entry_name: Q5FT13_GLUOX
+    protein_name: Phosphate transport system permease protein
+    gene_symbol: pstC
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:290633
+      label: Gluconobacter oxydans 621H
+    reference_proteome_id: UP000006375
+    interpro_ids:
+    - InterPro:IPR000515
+    - InterPro:IPR035906
+    - InterPro:IPR011864
+    - InterPro:IPR051124
+    pfam_ids:
+    - Pfam:PF00528
+    functional_role: Phosphate ABC transporter permease subunit PstC (GOX0706) whose transposon disruption
+      in Gluconobacter oxydans B58 lowers biolixiviant pH and increases rare-earth leaching from retorted
+      fluorescent-lamp phosphor powder.
+    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633)
+      orthologous to the engineered B58 locus.
+    evidence:
+    - source_ref: schmitz2021
+      supports: support
+      explanation: Whole-genome knockout collection screening in Schmitz et al. (2021) identified transposon
+        disruption of pstC (GOX0706) as enhancing biolixiviant acidification and increasing REE leaching
+        from retorted phosphor powder compared with wild-type B58.
 causal_graphs:
 - id: gluconobacter_phosphor_bioleaching_graph
   name: Gluconobacter oxydans biolixiviant rare-earth leaching from retorted lamp phosphor
-  description: Causal pathway linking PqqC/Gdh periplasmic glucose oxidation to gluconic-acid-mediated
-    rare-earth release from retorted fluorescent lamp phosphor.
+  description: Causal pathway linking pstC phosphate-transporter disruption and PQQ-dependent glucose
+    dehydrogenase (gdh) biolixiviant production to rare-earth mobilization from retorted fluorescent-lamp
+    phosphor powder.
   scope: RECORD_SPECIFIC_MECHANISM
   mechanism_ref: gluconobacter_biolixiviant_ree_release
   nodes:
+  - id: pstc_phosphate_permease
+    label: pstC (Phosphate transport system permease protein)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: pstC
+    description: Phosphate ABC transporter permease subunit PstC (GOX0706) disrupted in Gluconobacter
+      oxydans B58 to derepress periplasmic glucose oxidation and acidogenesis.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q5FT13
+      entry_name: Q5FT13_GLUOX
+      protein_name: Phosphate transport system permease protein
+      gene_symbol: pstC
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:290633
+        label: Gluconobacter oxydans 621H
+      reference_proteome_id: UP000006375
+      interpro_ids:
+      - InterPro:IPR000515
+      - InterPro:IPR035906
+      - InterPro:IPR011864
+      - InterPro:IPR051124
+      pfam_ids:
+      - Pfam:PF00528
+      functional_role: Phosphate ABC transporter permease subunit PstC (GOX0706) whose transposon disruption
+        in Gluconobacter oxydans B58 lowers biolixiviant pH and increases rare-earth leaching from retorted
+        fluorescent-lamp phosphor powder.
+      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633)
+        orthologous to the engineered B58 locus.
+      evidence:
+      - source_ref: schmitz2021
+        supports: support
+        explanation: Whole-genome knockout collection screening in Schmitz et al. (2021) identified transposon
+          disruption of pstC (GOX0706) as enhancing biolixiviant acidification and increasing REE leaching
+          from retorted phosphor powder compared with wild-type B58.
   - id: pqqc_synthase
     label: PqqC pyrroloquinoline-quinone synthase
     node_type: GENE_OR_PROTEIN
@@ -210,6 +273,17 @@ causal_graphs:
       released into the leachate.
     protein_grounding_status: NOT_APPLICABLE
   edges:
+  - source: pstc_phosphate_permease
+    target: gdh_dehydrogenase
+    predicate: modulates
+    relationship: transposon disruption derepresses periplasmic glucose oxidation and acidogenesis
+    description: Disruption of pstC (GOX0706) in the phosphate transport complex increases periplasmic
+      gluconic acid production and lowers biolixiviant pH for phosphor leaching.
+    evidence:
+    - source_ref: schmitz2021
+      supports: support
+      explanation: Transposon disruption of pstC (GOX0706) lowered biolixiviant pH and increased REE extraction
+        from retorted fluorescent-lamp phosphor relative to wild-type B58.
   - source: pqqc_synthase
     target: gdh_dehydrogenase
     predicate: positively_regulates
@@ -263,6 +337,12 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein examples (Gdh UniProtKB:P27175, PqqC UniProtKB:Q9L3B2) and
     causal graph for Gluconobacter oxydans fluorescent-lamp phosphor bioleaching.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Added pstC (UniProtKB:Q5FT13, GOX0706) transposon disruption from Schmitz et al. (2021) to
+    protein_examples and causal_graphs.
 history_refs:
 - history/records/fluorescent-lamp-phosphor/2026-10-09T044754Z-codex-45750b.yaml
 - history/records/fluorescent-lamp-phosphor/2026-10-18T042750Z-antigravity-8a8590.yaml
+- history/records/fluorescent-lamp-phosphor/2026-10-21T184653Z-claude-bcf6e7.yaml

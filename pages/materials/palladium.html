@@ -175,6 +175,78 @@
   </div>
 </div>
 
+<div class="detail-section">
+  <h3>Causal Graphs &amp; Molecular Pathways (1)</h3>
+  <div class="mechanism-box" id="causal-graph-desulfuricans_pd_reduction_graph">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
+      <h4 style="margin: 0; font-size: 1.12rem;">Desulfovibrio desulfuricans ATCC 29577 H2-coupled reduction of Pd(II) to cell-associated Pd(0)</h4>
+      <div>
+        <span class="badge">RECORD SPECIFIC MECHANISM</span>
+        <a href="#mechanism-desulfuricans_pd_reduction" class="badge" style="text-decoration: none;">Mechanism: <code>desulfuricans_pd_reduction</code></a>
+      </div>
+    </div>
+    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking inferred hydrogenase/reductase activity in resting Desulfovibrio desulfuricans ATCC 29577 cells to H2-dependent reduction of dissolved Pd(II) (palladium ammine chloride) into cell-associated metallic Pd(0) nanoparticles.</p>
+
+    <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (3):</strong>
+    <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
+      <thead>
+        <tr>
+          <th scope="col">Node</th>
+          <th scope="col">Type</th>
+          <th scope="col">Details &amp; Grounding</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="causal-node-desulfuricans_pd_reduction_graph-desulfuricans_hydrogenase_system">
+          <td>
+            <strong>Desulfovibrio desulfuricans ATCC 29577 periplasmic hydrogenase / Pd(II)-reductase system</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">desulfuricans_hydrogenase_system</code>
+          </td>
+          <td>
+            <span class="badge">GENE OR PROTEIN</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">UNGROUNDED</span>
+          </td>
+          <td>
+<div>Inferred periplasmic hydrogenase / electron-transfer system in Desulfovibrio desulfuricans ATCC 29577 (Lloyd et al. 1998; Mikheenko et al. 2008); marked UNGROUNDED because hydrogenase involvement was inferred from H2 dependence and Cu2+ inhibition in ATCC 29577 without isolating a specific gene or strain-matched UniProtKB protein.</div>          </td>
+        </tr>
+        <tr id="causal-node-desulfuricans_pd_reduction_graph-aqueous_pd2_ammine_chloride">
+          <td>
+            <strong>Dissolved Pd(II) (0.5 mM palladium ammine chloride in pH 7 MOPS-NaOH with H2 headspace)</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">aqueous_pd2_ammine_chloride</code>
+          </td>
+          <td>
+            <span class="badge">CHEMICAL ENTITY</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
+          </td>
+          <td>
+<div>Aqueous Pd(II) substrate incubated anaerobically with 0.5 g/L washed resting cells and H2 electron donor.</div>          </td>
+        </tr>
+        <tr id="causal-node-desulfuricans_pd_reduction_graph-cell_associated_pd0_deposits">
+          <td>
+            <strong>Cell-associated elemental palladium (Pd(0)) deposits</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">cell_associated_pd0_deposits</code>
+          </td>
+          <td>
+            <span class="badge">MATERIAL OR PHASE</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
+          </td>
+          <td>
+<div>Metallic Pd(0) precipitates on the cell surface confirmed by XRD, TEM, and EDX after 100% dissolved Pd(II) depletion.</div>          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Edges (2):</strong>
+    <ul style="margin: .4rem 0 0; padding-left: 1.2rem; font-size: .88rem;">
+      <li style="margin-bottom: .35rem;">
+        <code>desulfuricans_hydrogenase_system</code> &rarr; <strong>H2-dependent, Cu2+-sensitive microbial reduction of dissolved Pd(II)</strong> (<code>reduces</code>) &rarr; <code>aqueous_pd2_ammine_chloride</code>
+: Resting D. desulfuricans ATCC 29577 cells couple H2 oxidation to complete depletion of 0.5 mM dissolved Pd(II) within 24 h; reaction is absent in heat-killed, cell-free, or donor-free controls.[<a href="#source-lloyd_1998"><code>lloyd_1998</code></a>]      </li>
+      <li style="margin-bottom: .35rem;">
+        <code>aqueous_pd2_ammine_chloride</code> &rarr; <strong>nucleation and deposition of cell-associated metallic Pd(0)</strong> (<code>transforms_into</code>) &rarr; <code>cell_associated_pd0_deposits</code>
+: Reduced palladium precipitates as cell-surface metallic Pd(0) crystals.[<a href="#source-lloyd_1998"><code>lloyd_1998</code></a>]      </li>
+    </ul>
+  </div>
+</div>
 
 <div class="detail-section">
   <h2>Sources &amp; References</h2>
@@ -241,6 +313,12 @@
         <td><span class="badge">criticality_extension</span></td>
         <td>Added the historical EU 2024 Annex II designation through its named platinum group metals entry, with source and mapping scope documented. Preserved existing scientific evidence; independent review is separate.</td>
       </tr>
+      <tr>
+        <td><code>2026-10-21T18:46:53Z</code></td>
+        <td>claude</td>
+        <td><span class="badge">EDIT</span></td>
+        <td>Added causal graph with explicit UNGROUNDED hydrogenase node for H2-coupled Pd(II) reduction to cell-associated Pd(0) in palladium.yaml.</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -250,7 +328,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (616 materials · 592 mechanisms · latest curation 2026-10-19 · corpus digest <code>f5834ac109ba</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (616 materials · 592 mechanisms · latest curation 2026-10-21 · corpus digest <code>75e716e3036c</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

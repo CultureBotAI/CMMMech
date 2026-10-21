@@ -1,0 +1,27 @@
+history_version: 1
+target:
+  kind: record
+  slug: olivine-group
+  path: data/records/olivine-group.yaml
+session:
+  id: 2026-10-21T184653Z-claude-f1118d
+  timestamp: '2026-10-21T18:46:53Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: Claude
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Replaced erroneous pstC (UniProtKB:Q5FT13) with pstS (UniProtKB:Q5FTI1) matching the engineered
+    G. oxydans B58 delta-pstS, P112:mgdh strain in Klug et al. (2026), and set unmutated gene evidence
+    to partial.
+  details: 'Corrected the engineered locus from pstC (GOX0706) to pstS (GOX0537, UniProtKB:Q5FTI1) to
+    match the B58 delta-pstS, P112:mgdh strain reported in Klug et al. (2026), with supports: partial
+    because no wild-type comparator was run.'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs

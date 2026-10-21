@@ -120,9 +120,8 @@ mechanisms:
     functional_role: Dimeric EF-hand lanmodulin Hans-LanM (EYR15_14300) from Hansschlegelia quercus whose
       R100K variant is immobilized on agarose columns for single-stage chromatographic separation of Nd(III)
       and Dy(III).
-    annotation_note: Wild-type Hansschlegelia quercus lanmodulin (Hans-LanM, UniProtKB:A0A4V2JDD3, locus
-      EYR15_14300, NCBITaxon:2572094); Mattocks et al. (2023) characterize both wild-type Hans-LanM and
-      its engineered R100K variant.
+    annotation_note: Direct UniProtKB match for Hansschlegelia quercus (NCBITaxon:2528245) lanmodulin
+      (EYR15_14300, reference proteome UP000295567) characterized in Mattocks et al. (2023).
     evidence:
     - source_ref: mattocks_2023
       supports: support
@@ -187,9 +186,8 @@ causal_graphs:
       functional_role: Dimeric EF-hand lanmodulin Hans-LanM (EYR15_14300) from Hansschlegelia quercus
         whose R100K variant is immobilized on agarose columns for single-stage chromatographic separation
         of Nd(III) and Dy(III).
-      annotation_note: Wild-type Hansschlegelia quercus lanmodulin (Hans-LanM, UniProtKB:A0A4V2JDD3, locus
-        EYR15_14300, NCBITaxon:2572094); Mattocks et al. (2023) characterize both wild-type Hans-LanM
-        and its engineered R100K variant.
+      annotation_note: Direct UniProtKB match for Hansschlegelia quercus (NCBITaxon:2528245) lanmodulin
+        (EYR15_14300, reference proteome UP000295567) characterized in Mattocks et al. (2023).
       evidence:
       - source_ref: mattocks_2023
         supports: support
@@ -229,15 +227,16 @@ causal_graphs:
         explanation: Comparator monomeric lanmodulin benchmarked against dimeric Hans-LanM to demonstrate
           how EF-hand and dimer-interface architecture tune Nd/Dy separation.
   - id: mixed_nd_dy_feed
-    label: Mixed Nd(III)/Dy(III) rare-earth feed
+    label: Mixed Nd(III)/Dy(III) feed solution (95:5 Nd/Dy molar mixture)
     node_type: CHEMICAL_ENTITY
-    description: Binary LREE/HREE solution modeling magnet-recycling or mineral-leachate rare-earth feeds.
+    description: Model 0.95 mM Nd(III) / 0.05 mM Dy(III) chloride feed loaded onto the immobilized Hans-LanM
+      agarose column at pH 2.5.
     protein_grounding_status: NOT_APPLICABLE
   - id: separated_nd_and_dy_fractions
-    label: Resolved >98%-pure Dy(III) and Nd(III) eluate fractions
+    label: Resolved high-purity Nd(III) and Dy(III) eluate fractions
     node_type: CHEMICAL_ENTITY
-    description: Purified heavy (Dy) and light (Nd) rare-earth fractions eluted sequentially from the
-      column.
+    description: Separated Dy-enriched fraction eluted with 3.5 mM malonate (pH 2.5) and Nd-enriched fraction
+      desorbed with pH 1.5 HCl (>98% single-pass purity).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: hans_lanm_protein
@@ -262,13 +261,14 @@ causal_graphs:
   - source: mixed_nd_dy_feed
     target: separated_nd_and_dy_fractions
     predicate: transforms_into
-    relationship: selective desorption of Dy(III) followed by Nd(III)
-    description: Stepwise elution separates Dy(III) and Nd(III) into high-purity fractions in a single
-      column pass.
+    relationship: selective malonate (pH 2.5) and pH 1.5 HCl stepwise column elution
+    description: Immobilized Hans-LanM column resolves a 95:5 Nd/Dy feed into >98%-pure Dy and Nd fractions
+      using 3.5 mM malonate (pH 2.5) followed by pH 1.5 HCl stripping.
     evidence:
     - source_ref: mattocks_2023
       supports: support
-      explanation: Immobilized Hans-LanM R100K resolves a 50:50 Nd/Dy mixture to >98% purity.
+      explanation: Single-column stepwise elution with 3.5 mM malonate at pH 2.5 and HCl at pH 1.5 separated
+        a 95:5 Nd/Dy feed into >98% pure Nd and Dy fractions.
 curation_history:
 - timestamp: '2026-10-11T08:37:57Z'
   curator: Codex (GPT-6; Codex)
@@ -286,7 +286,13 @@ curation_history:
   action: EDIT
   summary: Added explicit annotation_note documenting strain/species or comparator NCBITaxon mapping on
     ProteinExample entries and normalized causal_graphs key order.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Corrected Hans-LanM column feed ratio to 95:5 Nd/Dy, elution protocol to 3.5 mM malonate (pH
+    2.5) and pH 1.5 HCl, and NCBITaxon ID in annotation_note to NCBITaxon:2528245.
 history_refs:
 - history/records/rare-earth-element-commodities/2026-10-11T083756Z-codex-eb8683.yaml
 - history/records/rare-earth-element-commodities/2026-10-18T042750Z-antigravity-e6fe74.yaml
 - history/records/rare-earth-element-commodities/2026-10-18T065829Z-antigravity-078a23.yaml
+- history/records/rare-earth-element-commodities/2026-10-21T184653Z-claude-6f9636.yaml

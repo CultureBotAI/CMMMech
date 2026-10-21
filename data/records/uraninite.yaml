@@ -167,9 +167,10 @@ mechanisms:
       pathways.
     evidence:
     - source_ref: marshall2006
-      supports: support
-      explanation: Routes respiratory electrons from the inner-membrane menaquinone pool to periplasmic
-        and outer-membrane multiheme cytochromes during Soluble uranyl carbonate U(VI) complexes reduction.
+      supports: partial
+      explanation: Inner-membrane tetraheme cytochrome c CymA is a core component of the Shewanella oneidensis
+        MR-1 c-type cytochrome network matured by CcmC; Marshall et al. (2006) tested ccmC, mtrC, and
+        omcA mutants rather than an isolated cymA deletion.
   - uniprot_accession: UniProtKB:Q8EK42
     entry_name: Q8EK42_SHEON
     protein_name: Heme exporter protein C
@@ -260,9 +261,10 @@ causal_graphs:
         pathways.
       evidence:
       - source_ref: marshall2006
-        supports: support
-        explanation: Routes respiratory electrons from the inner-membrane menaquinone pool to periplasmic
-          and outer-membrane multiheme cytochromes during Soluble uranyl carbonate U(VI) complexes reduction.
+        supports: partial
+        explanation: Inner-membrane tetraheme cytochrome c CymA is a core component of the Shewanella
+          oneidensis MR-1 c-type cytochrome network matured by CcmC; Marshall et al. (2006) tested ccmC,
+          mtrC, and omcA mutants rather than an isolated cymA deletion.
   - id: mtrc_cytochrome
     label: MtrC outer-membrane decaheme cytochrome c (SO_1778)
     node_type: GENE_OR_PROTEIN
@@ -359,7 +361,7 @@ causal_graphs:
       conduit.
     evidence:
     - source_ref: marshall2006
-      supports: support
+      supports: partial
       explanation: Respiratory electron transport in S. oneidensis MR-1 routes electrons from CymA to
         outer-membrane decaheme cytochromes.
   - source: mtrc_cytochrome
@@ -406,6 +408,12 @@ curation_history:
   summary: Added verified UniProtKB protein examples (MtrC UniProtKB:Q8EG34, OmcA UniProtKB:Q8EG33, CymA
     UniProtKB:Q8E8S0, CcmC UniProtKB:Q8EK42) and causal graph for Shewanella oneidensis MR-1 uraninite
     formation.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Set CymA (UniProtKB:Q8E8S0) evidence to partial in uraninite.yaml while retaining support on
+    genetically tested CcmC, MtrC, and OmcA.
 history_refs:
 - history/records/uraninite/2026-10-11T210704Z-codex-2b5341.yaml
 - history/records/uraninite/2026-10-18T042750Z-antigravity-7ffbf0.yaml
+- history/records/uraninite/2026-10-21T184653Z-claude-550d56.yaml

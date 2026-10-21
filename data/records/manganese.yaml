@@ -118,9 +118,9 @@ mechanisms:
 causal_graphs:
 - id: gb1_mnxg_mcoa_mopa_manganese_oxidation_graph
   name: Pseudomonas putida GB-1 MnxG, McoA, and MopA pathways for Mn(II) oxidation to Mn(III/IV) oxides
-  description: Causal pathway linking the two multicopper oxidases MnxG (PputGB1_2447, UniProtKB:B0KQT1)
-    and McoA (PputGB1_2665, UniProtKB:B0KSN7) and the animal heme peroxidase MopA (PputGB1_3353) in Pseudomonas
-    putida GB-1 to oxidation of dissolved Mn(II) into birnessite-like Mn(III/IV) oxides.
+  description: Causal pathway linking Pseudomonas putida GB-1 multicopper oxidases MnxG and McoA (and
+    heme peroxidase MopA) to oxidation of dissolved Mn(II) and ligand-complexed Mn(III) into solid Mn(III/IV)
+    oxides.
   scope: RECORD_SPECIFIC_MECHANISM
   mechanism_ref: gb1_manganese_oxidation
   nodes:
@@ -190,9 +190,10 @@ causal_graphs:
       active-UniProtKB verification rule.
     protein_grounding_status: UNGROUNDED
   - id: dissolved_mn2_ion
-    label: Dissolved Mn(II) cation
+    label: Dissolved Mn(II) and complexed Mn(III) (citrate, DFOB)
     node_type: CHEMICAL_ENTITY
-    description: Soluble divalent manganese substrate in the culture medium.
+    description: Aqueous Mn(II) and ligand-stabilized Mn(III)-citrate or Mn(III)-desferrioxamine B complexes
+      oxidized by Pseudomonas putida GB-1.
     protein_grounding_status: NOT_APPLICABLE
   - id: biogenic_mn34_oxide
     label: Biogenic Mn(III/IV) oxide precipitate
@@ -227,8 +228,9 @@ causal_graphs:
       genetic backgrounds.
     evidence:
     - source_ref: wright2018
-      supports: support
-      explanation: Multi-gene deletion analysis evaluates MopA alongside MnxG and McoA.
+      supports: partial
+      explanation: Triple deletion (delta-mnxG delta-mcoA delta-mopA) eliminated residual Mn oxidation;
+        however, strains retaining only mopA showed minimal oxidation in darkness and required light.
   - source: dissolved_mn2_ion
     target: biogenic_mn34_oxide
     predicate: transforms_into
@@ -255,7 +257,13 @@ curation_history:
   summary: Added verified UniProtKB protein examples (MnxG UniProtKB:B0KQT1, McoA UniProtKB:B0KSN7) and
     causal graph (including explicit UNGROUNDED annotation for obsolete PputGB1_3353 / B0KJL7 MopA) for
     Pseudomonas putida GB-1 manganese oxidation.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Removed unsupported 'birnessite-like' phase claim from manganese.yaml causal graph description,
+    included ligand-complexed Mn(III) in the substrate node, and set MopA edge support to partial.
 history_refs:
 - history/records/manganese/2026-10-09T044722Z-codex-94b8cc.yaml
 - history/records/manganese/2026-10-09T055149Z-codex-dc3517.yaml
 - history/records/manganese/2026-10-18T042750Z-antigravity-6d5fac.yaml
+- history/records/manganese/2026-10-21T184653Z-claude-708608.yaml

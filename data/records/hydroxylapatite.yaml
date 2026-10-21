@@ -145,16 +145,17 @@ mechanisms:
       NCBITaxon:83333, UP000000625).
     evidence:
     - source_ref: zorzetto_2023
-      supports: support
-      explanation: Hydrolyzes organic phosphate ester (beta-glycerophosphate) in the biofilm matrix, supplying
-        inorganic phosphate ions that precipitate with Ca2+ as hydroxyapatite.
+      supports: partial
+      explanation: Periplasmic alkaline phosphatase PhoA is proposed to hydrolyze beta-glycerophosphate
+        to inorganic phosphate during E. coli K-12 biofilm mineralization; Zorzetto et al. (2023) did
+        not test a phoA deletion mutant and also observed mineralization in glutaraldehyde-fixed biofilms.
 causal_graphs:
 - id: w3110_phoa_biofilm_hydroxyapatite_graph
   name: Escherichia coli W3110 alkaline phosphatase (PhoA) driven biofilm hydroxyapatite mineralization
   description: Causal pathway linking periplasmic alkaline phosphatase PhoA (UniProtKB:P00634) in Escherichia
     coli K-12 W3110 biofilms to enzymatic hydrolysis of beta-glycerophosphate and nucleation of hydroxyapatite
     within the extracellular curli/cellulose matrix.
-  scope: RECORD_SPECIFIC_MECHANISM
+  scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: w3110_biofilm_calcium_phosphate
   nodes:
   - id: phoa_alkaline_phosphatase
@@ -190,9 +191,10 @@ causal_graphs:
         (UniProtKB:P00634, NCBITaxon:83333, UP000000625).
       evidence:
       - source_ref: zorzetto_2023
-        supports: support
-        explanation: Hydrolyzes organic phosphate ester (beta-glycerophosphate) in the biofilm matrix,
-          supplying inorganic phosphate ions that precipitate with Ca2+ as hydroxyapatite.
+        supports: partial
+        explanation: Periplasmic alkaline phosphatase PhoA is proposed to hydrolyze beta-glycerophosphate
+          to inorganic phosphate during E. coli K-12 biofilm mineralization; Zorzetto et al. (2023) did
+          not test a phoA deletion mutant and also observed mineralization in glutaraldehyde-fixed biofilms.
   - id: inorganic_phosphate_release
     label: Local orthophosphate (Pi) release from beta-glycerophosphate
     node_type: CHEMICAL_ENTITY
@@ -213,9 +215,9 @@ causal_graphs:
       free PO4(3-).
     evidence:
     - source_ref: zorzetto_2023
-      supports: support
-      explanation: Enzymatic hydrolysis of beta-glycerophosphate by E. coli W3110 biofilms drives local
-        phosphate accumulation.
+      supports: partial
+      explanation: Beta-glycerophosphate hydrolysis supplies inorganic phosphate in the mineralization
+        medium, but PhoA necessity was not isolated by a phoA knockout.
   - source: inorganic_phosphate_release
     target: biofilm_hydroxyapatite_phase
     predicate: drives
@@ -241,7 +243,13 @@ curation_history:
   action: EDIT
   summary: Added explicit annotation_note documenting strain/species or comparator NCBITaxon mapping on
     ProteinExample entries and normalized causal_graphs key order.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Set PhoA alkaline phosphatase evidence in hydroxylapatite.yaml to partial because Zorzetto
+    et al. (2023) did not test a phoA knockout and observed mineralization in fixed biofilms.
 history_refs:
 - history/records/hydroxylapatite/2026-10-14T112716Z-codex-aed1c2.yaml
 - history/records/hydroxylapatite/2026-10-18T042750Z-antigravity-74a800.yaml
 - history/records/hydroxylapatite/2026-10-18T065825Z-antigravity-b31f03.yaml
+- history/records/hydroxylapatite/2026-10-21T184653Z-claude-8d057d.yaml

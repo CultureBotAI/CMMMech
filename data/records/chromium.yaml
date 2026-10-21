@@ -150,9 +150,10 @@ mechanisms:
       pathways.
     evidence:
     - source_ref: belchik_2011
-      supports: support
-      explanation: Routes respiratory electrons from the inner-membrane menaquinone pool to periplasmic
-        and outer-membrane multiheme cytochromes during Dissolved chromate Cr(VI) reduction.
+      supports: partial
+      explanation: Inner-membrane tetraheme cytochrome c CymA supplies electrons from the menaquinol pool
+        to the periplasmic Mtr pathway in Shewanella oneidensis MR-1; Belchik et al. (2011) genetically
+        tested mtrC and omcA deletions rather than a cymA mutant.
 causal_graphs:
 - id: mr1_mtrc_omca_chromate_reduction_graph
   name: Shewanella oneidensis MR-1 MtrC/OmcA extracellular Cr(VI) reduction
@@ -193,9 +194,10 @@ causal_graphs:
         pathways.
       evidence:
       - source_ref: belchik_2011
-        supports: support
-        explanation: Routes respiratory electrons from the inner-membrane menaquinone pool to periplasmic
-          and outer-membrane multiheme cytochromes during Dissolved chromate Cr(VI) reduction.
+        supports: partial
+        explanation: Inner-membrane tetraheme cytochrome c CymA supplies electrons from the menaquinol
+          pool to the periplasmic Mtr pathway in Shewanella oneidensis MR-1; Belchik et al. (2011) genetically
+          tested mtrC and omcA deletions rather than a cymA mutant.
   - id: mtrc_cytochrome
     label: MtrC outer-membrane decaheme cytochrome c (SO_1778)
     node_type: GENE_OR_PROTEIN
@@ -282,7 +284,7 @@ causal_graphs:
       conduit.
     evidence:
     - source_ref: belchik_2011
-      supports: support
+      supports: partial
       explanation: Respiratory electron transport in S. oneidensis MR-1 routes electrons from CymA to
         outer-membrane decaheme cytochromes.
   - source: mtrc_cytochrome
@@ -326,6 +328,12 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein examples (MtrC UniProtKB:Q8EG34, OmcA UniProtKB:Q8EG33, CymA
     UniProtKB:Q8E8S0) and causal graph for Shewanella oneidensis MR-1 Cr(VI) reduction.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Set CymA (UniProtKB:Q8E8S0) evidence to partial in chromium.yaml while retaining support on
+    genetically tested MtrC and OmcA.
 history_refs:
 - history/records/chromium/2026-10-11T043602Z-codex-adf9c7.yaml
 - history/records/chromium/2026-10-18T042750Z-antigravity-284d2a.yaml
+- history/records/chromium/2026-10-21T184653Z-claude-c0aee8.yaml

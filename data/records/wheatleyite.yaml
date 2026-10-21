@@ -114,17 +114,17 @@ mechanisms:
       niger (NCBITaxon:5061).
     evidence:
     - source_ref: frank2021
-      supports: support
-      explanation: Secretes citric acid into the culture medium, contributing to organic-acid acidification
-        and ligand-assisted transformation of Weathered brochantite/malachite-bearing copper ore into
-        Transient wheatleyite (Na2Cu(C2O4)2·2H2O) and moolooite crystals.
+      supports: partial
+      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during
+        transformation of Secondary malachite-bearing weathered copper ore into Transient wheatleyite
+        (Na2Cu(C2O4)2·2H2O) and moolooite crystals; CexA was not directly mutated in frank2021.
 causal_graphs:
 - id: aspergillus_cexa_wheatleyite_formation_graph
   name: Aspergillus niger organic-acid secretion and transient wheatleyite crystallization
   description: Causal pathway linking Aspergillus niger organic-acid export (CexA) and oxalic/citric acid
     accumulation to copper mobilization from weathered ore and transient wheatleyite (Na2Cu(C2O4)2·2H2O)
     crystallization.
-  scope: RECORD_SPECIFIC_MECHANISM
+  scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: transient_fungal_culture_oxalate
   nodes:
   - id: cexa_citrate_exporter
@@ -155,19 +155,19 @@ causal_graphs:
         niger (NCBITaxon:5061).
       evidence:
       - source_ref: frank2021
-        supports: support
-        explanation: Secretes citric acid into the culture medium, contributing to organic-acid acidification
-          and ligand-assisted transformation of Weathered brochantite/malachite-bearing copper ore into
-          Transient wheatleyite (Na2Cu(C2O4)2·2H2O) and moolooite crystals.
+        supports: partial
+        explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion
+          during transformation of Secondary malachite-bearing weathered copper ore into Transient wheatleyite
+          (Na2Cu(C2O4)2·2H2O) and moolooite crystals; CexA was not directly mutated in frank2021.
   - id: secreted_organic_acids
     label: Secreted citric and oxalic acid pool (acidification and chelation)
     node_type: CHEMICAL_ENTITY
     description: Extracellular organic acids (citrate, oxalate) and protons secreted by Aspergillus niger.
     protein_grounding_status: NOT_APPLICABLE
   - id: starting_substrate
-    label: Weathered brochantite/malachite-bearing copper ore
+    label: Secondary malachite-bearing weathered copper ore
     node_type: MATERIAL_OR_PHASE
-    description: Starting substrate or solution feed (Weathered brochantite/malachite-bearing copper ore)
+    description: Starting substrate or solution feed (Secondary malachite-bearing weathered copper ore)
       exposed to fungal metabolites.
     protein_grounding_status: NOT_APPLICABLE
   - id: transformed_product
@@ -185,24 +185,24 @@ causal_graphs:
       the medium.
     evidence:
     - source_ref: frank2021
-      supports: support
+      supports: partial
       explanation: Aspergillus niger organic-acid secretion acidifies the culture supernatant and supplies
         chelating/precipitating anions.
   - source: secreted_organic_acids
     target: starting_substrate
     predicate: acts_on
     relationship: acidolysis, complexation, and anion reaction
-    description: Secreted organic acids react with Weathered brochantite/malachite-bearing copper ore.
+    description: Secreted organic acids react with Secondary malachite-bearing weathered copper ore.
     evidence:
     - source_ref: frank2021
-      supports: support
-      explanation: Fungal organic acids mediate dissolution/precipitation of Weathered brochantite/malachite-bearing
-        copper ore.
+      supports: partial
+      explanation: Fungal organic acids mediate dissolution/precipitation of Secondary malachite-bearing
+        weathered copper ore.
   - source: starting_substrate
     target: transformed_product
     predicate: transforms_into
     relationship: secondary oxalate/phosphate precipitation or mineral alteration
-    description: Reaction of Weathered brochantite/malachite-bearing copper ore with fungal metabolites
+    description: Reaction of Secondary malachite-bearing weathered copper ore with fungal metabolites
       produces Transient wheatleyite (Na2Cu(C2O4)2·2H2O) and moolooite crystals.
     evidence:
     - source_ref: frank2021
@@ -221,6 +221,12 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and causal graph for Aspergillus
     niger-associated transient wheatleyite formation.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Set representative CexA transporter evidence to partial in wheatleyite.yaml and replaced unsupported
+    'brochantite' substrate label with 'Secondary malachite-bearing weathered copper ore'.
 history_refs:
 - history/records/wheatleyite/2026-10-14T204902Z-codex-26beb8.yaml
 - history/records/wheatleyite/2026-10-18T042750Z-antigravity-38d15b.yaml
+- history/records/wheatleyite/2026-10-21T184653Z-claude-e4db8e.yaml

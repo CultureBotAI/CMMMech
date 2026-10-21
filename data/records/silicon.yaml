@@ -106,8 +106,9 @@ mechanisms:
     evidence:
     - source_ref: shrestha_2015
       supports: support
-      explanation: Knockdown of SIT1 and SIT2 in Thalassiosira pseudonana CCMP1335 impairs silicic acid
-        uptake and alters silica frustule biomineralization under low-Si regimes.
+      explanation: Co-targeted by antisense RNA or CRISPRi knockdown of SIT1 and SIT2 in Thalassiosira
+        pseudonana (Shrestha & Hildebrand 2015), delaying Si uptake and growth under low silicic acid
+        (15 uM) while single-gene contributions were not separated.
   - uniprot_accession: UniProtKB:B5YNJ0
     entry_name: B5YNJ0_THAPS
     protein_name: Silicic acid transporter, silicon transport
@@ -129,8 +130,9 @@ mechanisms:
     evidence:
     - source_ref: shrestha_2015
       supports: support
-      explanation: Targeted antisense/RNAi knockdown of SIT1 and SIT2 perturbs cellular silicon uptake
-        and silica deposition.
+      explanation: Co-targeted by antisense RNA or CRISPRi knockdown of SIT1 and SIT2 in Thalassiosira
+        pseudonana (Shrestha & Hildebrand 2015), delaying Si uptake and growth under low silicic acid
+        (15 uM) while single-gene contributions were not separated.
 causal_graphs:
 - id: ccmp1335_sit1_sit2_biosilicification_graph
   name: Thalassiosira pseudonana CCMP1335 SIT1 and SIT2 silicic acid transport and frustule biosilicification
@@ -169,8 +171,9 @@ causal_graphs:
       evidence:
       - source_ref: shrestha_2015
         supports: support
-        explanation: Knockdown of SIT1 and SIT2 in Thalassiosira pseudonana CCMP1335 impairs silicic acid
-          uptake and alters silica frustule biomineralization under low-Si regimes.
+        explanation: Co-targeted by antisense RNA or CRISPRi knockdown of SIT1 and SIT2 in Thalassiosira
+          pseudonana (Shrestha & Hildebrand 2015), delaying Si uptake and growth under low silicic acid
+          (15 uM) while single-gene contributions were not separated.
   - id: sit2_silicon_transporter
     label: SIT2 silicon transporter (SIT2 / THAPSDRAFT_41392)
     node_type: GENE_OR_PROTEIN
@@ -199,8 +202,9 @@ causal_graphs:
       evidence:
       - source_ref: shrestha_2015
         supports: support
-        explanation: Targeted antisense/RNAi knockdown of SIT1 and SIT2 perturbs cellular silicon uptake
-          and silica deposition.
+        explanation: Co-targeted by antisense RNA or CRISPRi knockdown of SIT1 and SIT2 in Thalassiosira
+          pseudonana (Shrestha & Hildebrand 2015), delaying Si uptake and growth under low silicic acid
+          (15 uM) while single-gene contributions were not separated.
   - id: dissolved_orthosilicic_acid
     label: Dissolved orthosilicic acid (Si(OH)4)
     node_type: CHEMICAL_ENTITY
@@ -215,22 +219,29 @@ causal_graphs:
   - source: sit1_silicon_transporter
     target: dissolved_orthosilicic_acid
     predicate: transports
-    relationship: active transmembrane uptake of Si(OH)4
-    description: SIT1 transports extracellular orthosilicic acid into the cell.
+    relationship: high-affinity silicic acid transport and proposed low-Si sensing (joint SIT1/SIT2 knockdown)
+    description: Joint knockdown of SIT1 and SIT2 delays silicic acid uptake and growth at low Si (15
+      uM), whereas high-Si uptake (100-200 uM) proceeds via diffusion; a direct silicon-sensor role remains
+      a proposed hypothesis.
     evidence:
     - source_ref: shrestha_2015
-      supports: support
-      explanation: SIT1/SIT2 knockdown reduces silicic acid uptake and alters silicon-starvation recovery.
+      supports: partial
+      explanation: Antisense/CRISPRi constructs simultaneously reduced both SIT1 and SIT2 transcripts
+        and protein levels, delaying Si uptake at 15 uM Si(OH)4 without isolating SIT1 vs SIT2 or directly
+        proving receptor/sensor signaling.
   - source: sit2_silicon_transporter
     target: dissolved_orthosilicic_acid
     predicate: transports
-    relationship: active transmembrane uptake and Si sensing
-    description: SIT2 imports orthosilicic acid and regulates downstream biosilicification.
+    relationship: high-affinity silicic acid transport and proposed low-Si sensing (joint SIT1/SIT2 knockdown)
+    description: Joint knockdown of SIT1 and SIT2 delays silicic acid uptake and growth at low Si (15
+      uM), whereas high-Si uptake (100-200 uM) proceeds via diffusion; a direct silicon-sensor role remains
+      a proposed hypothesis.
     evidence:
     - source_ref: shrestha_2015
-      supports: support
-      explanation: Co-knockdown of SIT1 and SIT2 demonstrates their role in silicic acid transport and
-        silica incorporation.
+      supports: partial
+      explanation: Antisense/CRISPRi constructs simultaneously reduced both SIT1 and SIT2 transcripts
+        and protein levels, delaying Si uptake at 15 uM Si(OH)4 without isolating SIT1 vs SIT2 or directly
+        proving receptor/sensor signaling.
   - source: dissolved_orthosilicic_acid
     target: biogenic_frustule_silica
     predicate: incorporates_into
@@ -258,7 +269,14 @@ curation_history:
   action: EDIT
   summary: Added explicit annotation_note documenting strain/species or comparator NCBITaxon mapping on
     ProteinExample entries and normalized causal_graphs key order.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: 'Clarified in silicon.yaml that antisense/CRISPRi constructs simultaneously knocked down both
+    SIT1 and SIT2, delayed uptake specifically at low Si (15 uM), and that Si sensing is a proposed hypothesis
+    (supports: partial).'
 history_refs:
 - history/records/silicon/2026-10-11T065000Z-codex-0bbe5d.yaml
 - history/records/silicon/2026-10-18T042750Z-antigravity-3a2867.yaml
 - history/records/silicon/2026-10-18T065833Z-antigravity-43813e.yaml
+- history/records/silicon/2026-10-21T184653Z-claude-bbc7aa.yaml
