@@ -132,9 +132,9 @@ mechanisms:
       reference proteome UP000254519).
     evidence:
     - source_ref: huang2025
-      supports: support
-      explanation: Urease-catalyzed urea hydrolysis elevates carbonate alkalinity and pH, driving precipitation
-        of Smithsonite-assigned zinc carbonate precipitate (ZnCO3).
+      supports: partial
+      explanation: Representative Sporosarcina pasteurii urease subunit (ureC) catalyzing urea hydrolysis
+        during MICP in huang2025; urease genes were not mutated or purified in this study.
   - uniprot_accession: UniProtKB:P41021
     entry_name: URE2_SPOPA
     protein_name: Urease subunit beta
@@ -158,9 +158,9 @@ mechanisms:
       reference proteome UP000254519).
     evidence:
     - source_ref: huang2025
-      supports: support
-      explanation: Structural subunit of the active urease holoenzyme responsible for ureolytic alkalinity
-        generation during Smithsonite-assigned zinc carbonate precipitate (ZnCO3) formation.
+      supports: partial
+      explanation: Representative Sporosarcina pasteurii urease subunit (ureB) catalyzing urea hydrolysis
+        during MICP in huang2025; urease genes were not mutated or purified in this study.
   - uniprot_accession: UniProtKB:P41022
     entry_name: URE3_SPOPA
     protein_name: Urease subunit gamma
@@ -185,15 +185,15 @@ mechanisms:
       reference proteome UP000254519).
     evidence:
     - source_ref: huang2025
-      supports: support
-      explanation: Structural subunit of the active urease holoenzyme driving urea hydrolysis and carbonate
-        precipitation of Smithsonite-assigned zinc carbonate precipitate (ZnCO3).
+      supports: partial
+      explanation: Representative Sporosarcina pasteurii urease subunit (ureA) catalyzing urea hydrolysis
+        during MICP in huang2025; urease genes were not mutated or purified in this study.
 causal_graphs:
 - id: pasteurii_smithsonite_precipitation_graph
   name: Sporosarcina pasteurii ureolytic smithsonite (ZnCO3) precipitation
   description: Causal pathway linking Sporosarcina pasteurii UreABC urea hydrolysis to carbonate alkalinity
     generation and ZnCO3 (smithsonite-assigned) precipitation.
-  scope: RECORD_SPECIFIC_MECHANISM
+  scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: culture_associated_smithsonite_precipitation
   nodes:
   - id: ureabc_urease_complex
@@ -233,9 +233,9 @@ causal_graphs:
         reference proteome UP000254519).
       evidence:
       - source_ref: huang2025
-        supports: support
-        explanation: Urease-catalyzed urea hydrolysis elevates carbonate alkalinity and pH, driving precipitation
-          of Smithsonite-assigned zinc carbonate precipitate (ZnCO3).
+        supports: partial
+        explanation: Representative Sporosarcina pasteurii urease subunit (ureC) catalyzing urea hydrolysis
+          during MICP in huang2025; urease genes were not mutated or purified in this study.
     - uniprot_accession: UniProtKB:P41021
       entry_name: URE2_SPOPA
       protein_name: Urease subunit beta
@@ -259,9 +259,9 @@ causal_graphs:
         reference proteome UP000254519).
       evidence:
       - source_ref: huang2025
-        supports: support
-        explanation: Structural subunit of the active urease holoenzyme responsible for ureolytic alkalinity
-          generation during Smithsonite-assigned zinc carbonate precipitate (ZnCO3) formation.
+        supports: partial
+        explanation: Representative Sporosarcina pasteurii urease subunit (ureB) catalyzing urea hydrolysis
+          during MICP in huang2025; urease genes were not mutated or purified in this study.
     - uniprot_accession: UniProtKB:P41022
       entry_name: URE3_SPOPA
       protein_name: Urease subunit gamma
@@ -286,9 +286,9 @@ causal_graphs:
         reference proteome UP000254519).
       evidence:
       - source_ref: huang2025
-        supports: support
-        explanation: Structural subunit of the active urease holoenzyme driving urea hydrolysis and carbonate
-          precipitation of Smithsonite-assigned zinc carbonate precipitate (ZnCO3).
+        supports: partial
+        explanation: Representative Sporosarcina pasteurii urease subunit (ureA) catalyzing urea hydrolysis
+          during MICP in huang2025; urease genes were not mutated or purified in this study.
   - id: urea_hydrolysis_alkalinity
     label: Ammonium and carbonate alkalinity generation (pH elevation)
     node_type: CHEMICAL_ENTITY
@@ -296,15 +296,16 @@ causal_graphs:
       pH and carbonate supersaturation.
     protein_grounding_status: NOT_APPLICABLE
   - id: dissolved_metal_cations
-    label: Dissolved Zn(II) ions
+    label: Dissolved Zn(II) ions in urea-ZnCl2 mineralization medium
     node_type: CHEMICAL_ENTITY
-    description: Dissolved cations (Dissolved Zn(II) ions) available in the reaction medium or brine.
+    description: Dissolved Zn(II) cations in analytical-grade urea-ZnCl2 mineralization medium undergoing
+      ureolytic carbonate precipitation.
     protein_grounding_status: NOT_APPLICABLE
   - id: precipitated_mineral_phase
     label: Smithsonite-assigned zinc carbonate precipitate (ZnCO3)
     node_type: MATERIAL_OR_PHASE
-    description: Solid mineral product (Smithsonite-assigned zinc carbonate precipitate (ZnCO3)) precipitated
-      upon ureolytic carbonate supersaturation.
+    description: Solid mineral phase (Smithsonite-assigned zinc carbonate precipitate, ZnCO3) formed via
+      ureolytic alkalinization in huang2025.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: ureabc_urease_complex
@@ -314,7 +315,7 @@ causal_graphs:
     description: UreABC hydrolyzes urea, releasing ammonium and carbonate ions and raising solution pH.
     evidence:
     - source_ref: huang2025
-      supports: support
+      supports: partial
       explanation: Ureolytic activity increases pH and dissolved carbonate concentration.
   - source: urea_hydrolysis_alkalinity
     target: precipitated_mineral_phase
@@ -331,13 +332,13 @@ causal_graphs:
     target: precipitated_mineral_phase
     predicate: incorporates_into
     relationship: cation precipitation with carbonate/phosphate
-    description: Dissolved Zn(II) ions co-precipitates into Smithsonite-assigned zinc carbonate precipitate
-      (ZnCO3).
+    description: Dissolved Zn(II) ions in urea-ZnCl2 mineralization medium precipitate into Smithsonite-assigned
+      zinc carbonate precipitate (ZnCO3).
     evidence:
     - source_ref: huang2025
       supports: support
-      explanation: Cations from solution are incorporated into the precipitated Smithsonite-assigned zinc
-        carbonate precipitate (ZnCO3) solids.
+      explanation: XRD, FTIR, SEM-EDS, and solution Zn depletion analysis in huang2025 confirm formation
+        of Smithsonite-assigned zinc carbonate precipitate (ZnCO3) from urea-ZnCl2 medium.
 curation_history:
 - timestamp: '2026-10-12T13:24:04.643903Z'
   curator: codex (GPT-6; codex)
@@ -350,6 +351,12 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein examples (UreC UniProtKB:P41020, UreB UniProtKB:P41021, UreA
     UniProtKB:P41022) and causal graph for Sporosarcina pasteurii smithsonite precipitation.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Set representative Sporosarcina pasteurii UreABC evidence to partial and aligned urea-ZnCl2
+    medium and smithsonite (ZnCO3) product descriptions with huang2025 in smithsonite.yaml.
 history_refs:
 - history/records/smithsonite/2026-10-12T132345Z-codex-ba48e7.yaml
 - history/records/smithsonite/2026-10-18T042750Z-antigravity-dd007e.yaml
+- history/records/smithsonite/2026-10-21T184653Z-claude-92e52e.yaml

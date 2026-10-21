@@ -162,9 +162,11 @@ causal_graphs:
     description: Acidic feed solution containing Sc(III) and competing non-target cations.
     protein_grounding_status: NOT_APPLICABLE
   - id: purified_scandium_eluate
-    label: Selectively captured and pH-eluted Sc(III) fraction
+    label: Selectively captured and eluted high-purity Sc(III) fraction
     node_type: CHEMICAL_ENTITY
-    description: Purified Sc(III) recovered by selective pH-step desorption from the LanM column.
+    description: Resolved Sc(III) fraction recovered at >99% yield and >99% purity from mixed leachate
+      feed (Figure 5) and separated early with 30 mM malonate (pH 5.0, ~94.5% Sc yield) ahead of La(III)
+      (50 mM malonate, pH 5.0, ~98.9% La yield) in binary Sc/La column tests.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: mex_lanm_protein
@@ -180,12 +182,18 @@ causal_graphs:
   - source: mixed_scandium_feed
     target: purified_scandium_eluate
     predicate: transforms_into
-    relationship: selective sorption and pH-step elution
-    description: Selective retention and pH-step stripping yield a purified Sc(III) product stream.
+    relationship: selective column capture and desorption of Sc(III) from multi-metal leachate and binary
+      Sc/REE mixtures
+    description: Immobilized Mex-LanM column recovers Sc(III) at >99% yield and >99% purity from mixed
+      multi-metal leachate feed (Figure 5) and selectively desorbs Sc(III) (~94.5% yield) with 30 mM malonate
+      (pH 5.0) before La(III) (~98.9% yield with 50 mM malonate, pH 5.0) in equimolar Sc/La separation
+      tests.
     evidence:
     - source_ref: dong2024
       supports: support
-      explanation: Stepwise pH elution separates Sc(III) with high purity and column reusability.
+      explanation: Dong et al. (2024) demonstrated >99% Sc(III) yield and >99% purity from mixed leachate
+        feed (Figure 5) and separated equimolar Sc(III)/La(III) on immobilized LanM using stepwise 30
+        mM and 50 mM malonate (pH 5.0).
 curation_history:
 - timestamp: '2026-10-11T06:27:14Z'
   curator: Codex (GPT-6; Codex)
@@ -203,7 +211,13 @@ curation_history:
   action: EDIT
   summary: Added explicit annotation_note documenting strain/species or comparator NCBITaxon mapping on
     ProteinExample entries and normalized causal_graphs key order.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Updated scandium.yaml causal graph elution step to reflect stepwise 30 mM and 50 mM malonate
+    elution at pH 5.0 in Dong et al. (2024).
 history_refs:
 - history/records/scandium/2026-10-11T062653Z-codex-38b6bd.yaml
 - history/records/scandium/2026-10-18T042750Z-antigravity-4018cd.yaml
 - history/records/scandium/2026-10-18T065831Z-antigravity-32a9ad.yaml
+- history/records/scandium/2026-10-21T184653Z-claude-616d20.yaml

@@ -173,6 +173,93 @@
   </div>
 </div>
 
+<div class="detail-section">
+  <h3>Causal Graphs &amp; Molecular Pathways (1)</h3>
+  <div class="mechanism-box" id="causal-graph-tg1_associated_bixbyite_like_precipitation_graph">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
+      <h4 style="margin: 0; font-size: 1.12rem;">Mesorhizobium australicum T-G1 acidic Mn(II) oxidation to bixbyite-like manganese oxide</h4>
+      <div>
+        <span class="badge">RECORD SPECIFIC MECHANISM</span>
+        <a href="#mechanism-tg1_associated_bixbyite_like_precipitation" class="badge" style="text-decoration: none;">Mechanism: <code>tg1_associated_bixbyite_like_precipitation</code></a>
+      </div>
+    </div>
+    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking proteinase-K-sensitive laccase-like / multicopper oxidase activity in Mesorhizobium australicum isolate T-G1 at pH 5.5 to oxidation of dissolved Mn(II) into trapped Mn(III)/Mn(IV) intermediates and cell-associated bixbyite-like Mn2O3 particles.</p>
+
+    <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (4):</strong>
+    <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
+      <thead>
+        <tr>
+          <th scope="col">Node</th>
+          <th scope="col">Type</th>
+          <th scope="col">Details &amp; Grounding</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="causal-node-tg1_associated_bixbyite_like_precipitation_graph-tg1_acidic_mn_oxidase_factor">
+          <td>
+            <strong>Mesorhizobium australicum T-G1 proteinase-K-sensitive laccase-like Mn(II)-oxidizing factor</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">tg1_acidic_mn_oxidase_factor</code>
+          </td>
+          <td>
+            <span class="badge">GENE OR PROTEIN</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">UNGROUNDED</span>
+          </td>
+          <td>
+<div>Proteinase-K-sensitive, SOD-insensitive Mn(II)-oxidizing factor and associated laccase-like activity/transcript in Mesorhizobium australicum isolate T-G1 at pH 5.5 (Bohu et al. 2015); marked UNGROUNDED because no mutant rescue, purified enzyme product, or accessioned T-G1 oxidase sequence was established.</div>          </td>
+        </tr>
+        <tr id="causal-node-tg1_associated_bixbyite_like_precipitation_graph-dissolved_mn2_in_acidic_pyg_medium">
+          <td>
+            <strong>Dissolved Mn(II) (MnSO4 in pH 5.5 MES-buffered PYG medium)</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">dissolved_mn2_in_acidic_pyg_medium</code>
+          </td>
+          <td>
+            <span class="badge">CHEMICAL ENTITY</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
+          </td>
+          <td>
+<div>Added MnSO4 (0.1-10 mM in long-term cultures; 100 umol/L in microplate oxidation assays) at pH 5.5.</div>          </td>
+        </tr>
+        <tr id="causal-node-tg1_associated_bixbyite_like_precipitation_graph-trapped_mn3_lbb_oxidized_intermediate">
+          <td>
+            <strong>Soluble/trapped Mn(III) and LBB-reactive Mn(III/IV) oxidized species</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">trapped_mn3_lbb_oxidized_intermediate</code>
+          </td>
+          <td>
+            <span class="badge">CHEMICAL ENTITY</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
+          </td>
+          <td>
+<div>Pyrophosphate-trapped Mn(III) and Leucoberbelin-Blue-reactive oxidized manganese species formed during acidic growth.</div>          </td>
+        </tr>
+        <tr id="causal-node-tg1_associated_bixbyite_like_precipitation_graph-bixbyite_like_mn2o3_aggregates">
+          <td>
+            <strong>Cell-associated bixbyite-like manganese oxide (Mn2O3) micron-scale aggregates</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">bixbyite_like_mn2o3_aggregates</code>
+          </td>
+          <td>
+            <span class="badge">MATERIAL OR PHASE</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
+          </td>
+          <td>
+<div>Qualified bixbyite-like Mn/O-rich particles identified by Mo-Kalpha XRD, Raman, and SEM-EDS in pH 5.5 liquid cultures.</div>          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Edges (3):</strong>
+    <ul style="margin: .4rem 0 0; padding-left: 1.2rem; font-size: .88rem;">
+      <li style="margin-bottom: .35rem;">
+        <code>tg1_acidic_mn_oxidase_factor</code> &rarr; <strong>proteinase-K-sensitive enzymatic one-electron Mn(II) oxidation at pH 5.5</strong> (<code>oxidizes</code>) &rarr; <code>dissolved_mn2_in_acidic_pyg_medium</code>
+: Cell-free and culture-associated proteinase-K-sensitive oxidase activity oxidizes dissolved Mn(II) at pH 5.5.[<a href="#source-bohu2015"><code>bohu2015</code></a>]      </li>
+      <li style="margin-bottom: .35rem;">
+        <code>dissolved_mn2_in_acidic_pyg_medium</code> &rarr; <strong>generation of Mn(III) and LBB-reactive oxidizing equivalents</strong> (<code>transforms_into</code>) &rarr; <code>trapped_mn3_lbb_oxidized_intermediate</code>
+: Oxidation of dissolved Mn(II) generates soluble Mn(III) intermediates and LBB-reactive oxidized manganese.[<a href="#source-bohu2015"><code>bohu2015</code></a>]      </li>
+      <li style="margin-bottom: .35rem;">
+        <code>trapped_mn3_lbb_oxidized_intermediate</code> &rarr; <strong>precipitation of cell-associated bixbyite-like Mn2O3 phase at pH 5.5</strong> (<code>transforms_into</code>) &rarr; <code>bixbyite_like_mn2o3_aggregates</code>
+: Unlike pH 7.2 cultures (where Mn(III) forms without solid precipitation), pH 5.5 cultures accumulate cell-associated micron-scale aggregates assigned to a bixbyite-like phase.[<a href="#source-bohu2015"><code>bohu2015</code></a>]      </li>
+    </ul>
+  </div>
+</div>
 
 <div class="detail-section">
   <h2>Sources &amp; References</h2>
@@ -223,6 +310,12 @@
         <td><span class="badge">CREATE</span></td>
         <td>Add the redefined Mn-dominant mineral identity and qualified T-G1 culture formation evidence, retaining phase, control and assay limits.</td>
       </tr>
+      <tr>
+        <td><code>2026-10-21T18:46:53Z</code></td>
+        <td>claude</td>
+        <td><span class="badge">EDIT</span></td>
+        <td>Added causal graph with explicit UNGROUNDED Mn(II)-oxidizing factor node for Mesorhizobium australicum T-G1 bixbyite-like oxide precipitation in bixbyite-mn.yaml.</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -232,7 +325,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (616 materials · 592 mechanisms · latest curation 2026-10-19 · corpus digest <code>f5834ac109ba</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (616 materials · 592 mechanisms · latest curation 2026-10-21 · corpus digest <code>75e716e3036c</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

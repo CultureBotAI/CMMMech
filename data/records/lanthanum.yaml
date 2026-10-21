@@ -96,16 +96,16 @@ mechanisms:
       niger (NCBITaxon:5061).
     evidence:
     - source_ref: kang2019
-      supports: support
-      explanation: Secretes citric acid into the culture medium, contributing to organic-acid acidification
-        and ligand-assisted transformation of Soluble La(III) mixed with cell-free Aspergillus niger supernatant
-        into Crystalline lanthanum oxalate/organic-salt precipitate.
+      supports: partial
+      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during
+        transformation of Aqueous La(III) solution into Lanthanum oxalate (La2(C2O4)3·10H2O) precipitate;
+        CexA was not directly mutated in kang2019.
 causal_graphs:
 - id: aspergillus_cexa_lanthanum_precipitation_graph
   name: Aspergillus niger organic-acid supernatant precipitation of lanthanum
   description: Causal pathway linking Aspergillus niger citrate exporter CexA and secreted organic-acid
     anions to lanthanum precipitation from cell-free culture supernatant.
-  scope: RECORD_SPECIFIC_MECHANISM
+  scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: niger_supernatant_lanthanum_precipitation
   nodes:
   - id: cexa_citrate_exporter
@@ -136,20 +136,19 @@ causal_graphs:
         niger (NCBITaxon:5061).
       evidence:
       - source_ref: kang2019
-        supports: support
-        explanation: Secretes citric acid into the culture medium, contributing to organic-acid acidification
-          and ligand-assisted transformation of Soluble La(III) mixed with cell-free Aspergillus niger
-          supernatant into Crystalline lanthanum oxalate/organic-salt precipitate.
+        supports: partial
+        explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion
+          during transformation of Aqueous La(III) solution into Lanthanum oxalate (La2(C2O4)3·10H2O)
+          precipitate; CexA was not directly mutated in kang2019.
   - id: secreted_organic_acids
     label: Secreted citric and oxalic acid pool (acidification and chelation)
     node_type: CHEMICAL_ENTITY
     description: Extracellular organic acids (citrate, oxalate) and protons secreted by Aspergillus niger.
     protein_grounding_status: NOT_APPLICABLE
   - id: starting_substrate
-    label: Soluble La(III) mixed with cell-free Aspergillus niger supernatant
+    label: Aqueous La(III) solution
     node_type: MATERIAL_OR_PHASE
-    description: Starting substrate or solution feed (Soluble La(III) mixed with cell-free Aspergillus
-      niger supernatant) exposed to fungal metabolites.
+    description: Starting substrate or solution feed (Aqueous La(III) solution) exposed to fungal metabolites.
     protein_grounding_status: NOT_APPLICABLE
   - id: transformed_product
     label: Crystalline lanthanum oxalate/organic-salt precipitate
@@ -166,30 +165,28 @@ causal_graphs:
       the medium.
     evidence:
     - source_ref: kang2019
-      supports: support
+      supports: partial
       explanation: Aspergillus niger organic-acid secretion acidifies the culture supernatant and supplies
         chelating/precipitating anions.
   - source: secreted_organic_acids
     target: starting_substrate
     predicate: acts_on
     relationship: acidolysis, complexation, and anion reaction
-    description: Secreted organic acids react with Soluble La(III) mixed with cell-free Aspergillus niger
-      supernatant.
+    description: Secreted organic acids react with Aqueous La(III) solution.
     evidence:
     - source_ref: kang2019
       supports: support
-      explanation: Fungal organic acids mediate dissolution/precipitation of Soluble La(III) mixed with
-        cell-free Aspergillus niger supernatant.
+      explanation: Fungal organic acids mediate dissolution/precipitation of Aqueous La(III) solution.
   - source: starting_substrate
     target: transformed_product
     predicate: transforms_into
     relationship: secondary oxalate/phosphate precipitation or mineral alteration
-    description: Reaction of Soluble La(III) mixed with cell-free Aspergillus niger supernatant with fungal
-      metabolites produces Crystalline lanthanum oxalate/organic-salt precipitate.
+    description: Reaction of Aqueous La(III) solution with fungal metabolites produces Lanthanum oxalate
+      (La2(C2O4)3·10H2O) precipitate.
     evidence:
     - source_ref: kang2019
       supports: support
-      explanation: Fungal culture or supernatant treatment yields Crystalline lanthanum oxalate/organic-salt
+      explanation: Fungal culture or supernatant treatment yields Lanthanum oxalate (La2(C2O4)3·10H2O)
         precipitate.
 curation_history:
 - timestamp: '2026-10-11T05:19:12Z'
@@ -203,6 +200,11 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and causal graph for Aspergillus
     niger ATCC 1015 lanthanum precipitation.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Set representative CexA transporter evidence to partial in lanthanum.yaml.
 history_refs:
 - history/records/lanthanum/2026-10-11T051857Z-codex-3e4940.yaml
 - history/records/lanthanum/2026-10-18T042750Z-antigravity-d17f84.yaml
+- history/records/lanthanum/2026-10-21T184653Z-claude-5ca878.yaml

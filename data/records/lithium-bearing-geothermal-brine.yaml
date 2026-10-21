@@ -114,9 +114,9 @@ mechanisms:
       reference proteome UP000254519).
     evidence:
     - source_ref: rehmanji2025
-      supports: support
-      explanation: Urease-catalyzed urea hydrolysis elevates carbonate alkalinity and pH, driving precipitation
-        of Precipitated calcite/vaterite carbonate solids (leaving Li in brine).
+      supports: partial
+      explanation: Representative Sporosarcina pasteurii urease subunit (ureC) catalyzing urea hydrolysis
+        during MICP in rehmanji2025; urease genes were not mutated or purified in this study.
   - uniprot_accession: UniProtKB:P41021
     entry_name: URE2_SPOPA
     protein_name: Urease subunit beta
@@ -140,9 +140,9 @@ mechanisms:
       reference proteome UP000254519).
     evidence:
     - source_ref: rehmanji2025
-      supports: support
-      explanation: Structural subunit of the active urease holoenzyme responsible for ureolytic alkalinity
-        generation during Precipitated calcite/vaterite carbonate solids (leaving Li in brine) formation.
+      supports: partial
+      explanation: Representative Sporosarcina pasteurii urease subunit (ureB) catalyzing urea hydrolysis
+        during MICP in rehmanji2025; urease genes were not mutated or purified in this study.
   - uniprot_accession: UniProtKB:P41022
     entry_name: URE3_SPOPA
     protein_name: Urease subunit gamma
@@ -167,15 +167,16 @@ mechanisms:
       reference proteome UP000254519).
     evidence:
     - source_ref: rehmanji2025
-      supports: support
-      explanation: Structural subunit of the active urease holoenzyme driving urea hydrolysis and carbonate
-        precipitation of Precipitated calcite/vaterite carbonate solids (leaving Li in brine).
+      supports: partial
+      explanation: Representative Sporosarcina pasteurii urease subunit (ureA) catalyzing urea hydrolysis
+        during MICP in rehmanji2025; urease genes were not mutated or purified in this study.
 causal_graphs:
 - id: pasteurii_lithium_brine_pretreatment_graph
   name: Sporosarcina pasteurii ureolytic divalent-cation removal from lithium geothermal brine
-  description: Causal pathway linking Sporosarcina pasteurii UreABC urease activity to selective carbonate
-    precipitation of competing Ca/Mg/Sr/Fe/Mn cations during lithium-brine pretreatment.
-  scope: RECORD_SPECIFIC_MECHANISM
+  description: Causal pathway linking Sporosarcina pasteurii urease (UreABC) urea hydrolysis to carbonate
+    alkalinity generation and selective precipitation of Ca, Mg, Mn, and Sr (as calcite, vaterite, and
+    magnesite) from lithium-bearing geothermal brine.
+  scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: ureolytic_brine_cation_pretreatment
   nodes:
   - id: ureabc_urease_complex
@@ -215,9 +216,9 @@ causal_graphs:
         reference proteome UP000254519).
       evidence:
       - source_ref: rehmanji2025
-        supports: support
-        explanation: Urease-catalyzed urea hydrolysis elevates carbonate alkalinity and pH, driving precipitation
-          of Precipitated calcite/vaterite carbonate solids (leaving Li in brine).
+        supports: partial
+        explanation: Representative Sporosarcina pasteurii urease subunit (ureC) catalyzing urea hydrolysis
+          during MICP in rehmanji2025; urease genes were not mutated or purified in this study.
     - uniprot_accession: UniProtKB:P41021
       entry_name: URE2_SPOPA
       protein_name: Urease subunit beta
@@ -241,9 +242,9 @@ causal_graphs:
         reference proteome UP000254519).
       evidence:
       - source_ref: rehmanji2025
-        supports: support
-        explanation: Structural subunit of the active urease holoenzyme responsible for ureolytic alkalinity
-          generation during Precipitated calcite/vaterite carbonate solids (leaving Li in brine) formation.
+        supports: partial
+        explanation: Representative Sporosarcina pasteurii urease subunit (ureB) catalyzing urea hydrolysis
+          during MICP in rehmanji2025; urease genes were not mutated or purified in this study.
     - uniprot_accession: UniProtKB:P41022
       entry_name: URE3_SPOPA
       protein_name: Urease subunit gamma
@@ -268,9 +269,9 @@ causal_graphs:
         reference proteome UP000254519).
       evidence:
       - source_ref: rehmanji2025
-        supports: support
-        explanation: Structural subunit of the active urease holoenzyme driving urea hydrolysis and carbonate
-          precipitation of Precipitated calcite/vaterite carbonate solids (leaving Li in brine).
+        supports: partial
+        explanation: Representative Sporosarcina pasteurii urease subunit (ureA) catalyzing urea hydrolysis
+          during MICP in rehmanji2025; urease genes were not mutated or purified in this study.
   - id: urea_hydrolysis_alkalinity
     label: Ammonium and carbonate alkalinity generation (pH elevation)
     node_type: CHEMICAL_ENTITY
@@ -278,16 +279,16 @@ causal_graphs:
       pH and carbonate supersaturation.
     protein_grounding_status: NOT_APPLICABLE
   - id: dissolved_metal_cations
-    label: Competing Ca(II), Mg(II), Sr(II), Fe, and Mn cations in lithium brine
+    label: Dissolved Ca(II), Mg(II), Mn, and Sr scaling cations in geothermal brine
     node_type: CHEMICAL_ENTITY
-    description: Dissolved cations (Competing Ca(II), Mg(II), Sr(II), Fe, and Mn cations in lithium brine)
-      available in the reaction medium or brine.
+    description: Dissolved cations (Dissolved Ca(II), Mg(II), Mn, and Sr scaling cations in geothermal
+      brine) undergoing carbonate/phosphate precipitation.
     protein_grounding_status: NOT_APPLICABLE
   - id: precipitated_mineral_phase
-    label: Precipitated calcite/vaterite carbonate solids (leaving Li in brine)
+    label: Precipitated calcite/vaterite (CaCO3) and magnesite (MgCO3) solids (with Li+ retained in supernatant)
     node_type: MATERIAL_OR_PHASE
-    description: Solid mineral product (Precipitated calcite/vaterite carbonate solids (leaving Li in
-      brine)) precipitated upon ureolytic carbonate supersaturation.
+    description: Solid mineral phase (Precipitated calcite/vaterite (CaCO3) and magnesite (MgCO3) solids
+      (with Li+ retained in supernatant)) formed via ureolytic alkalinization.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: ureabc_urease_complex
@@ -297,7 +298,7 @@ causal_graphs:
     description: UreABC hydrolyzes urea, releasing ammonium and carbonate ions and raising solution pH.
     evidence:
     - source_ref: rehmanji2025
-      supports: support
+      supports: partial
       explanation: Ureolytic activity increases pH and dissolved carbonate concentration.
   - source: urea_hydrolysis_alkalinity
     target: precipitated_mineral_phase
@@ -314,13 +315,13 @@ causal_graphs:
     target: precipitated_mineral_phase
     predicate: incorporates_into
     relationship: cation precipitation with carbonate/phosphate
-    description: Competing Ca(II), Mg(II), Sr(II), Fe, and Mn cations in lithium brine co-precipitates
-      into Precipitated calcite/vaterite carbonate solids (leaving Li in brine).
+    description: Dissolved Ca(II), Mg(II), Mn, and Sr scaling cations in geothermal brine precipitates
+      into Precipitated calcite/vaterite (CaCO3) and magnesite (MgCO3) solids (with Li+ retained in supernatant).
     evidence:
     - source_ref: rehmanji2025
       supports: support
-      explanation: Cations from solution are incorporated into the precipitated Precipitated calcite/vaterite
-        carbonate solids (leaving Li in brine) solids.
+      explanation: XRD/SEM-EDS and solution analysis confirm formation of Precipitated calcite/vaterite
+        (CaCO3) and magnesite (MgCO3) solids (with Li+ retained in supernatant).
 curation_history:
 - timestamp: '2026-10-11T09:58:32Z'
   curator: codex (GPT-6; codex)
@@ -333,6 +334,12 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein examples (UreC UniProtKB:P41020, UreB UniProtKB:P41021, UreA
     UniProtKB:P41022) and causal graph for Sporosarcina pasteurii ureolytic lithium-brine pretreatment.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Set representative UreABC subunit evidence to partial, standardized cation/precipitate node
+    labels, and fixed edge grammar in lithium-bearing-geothermal-brine.yaml.
 history_refs:
 - history/records/lithium-bearing-geothermal-brine/2026-10-11T095832Z-codex-9ee06e.yaml
 - history/records/lithium-bearing-geothermal-brine/2026-10-18T042750Z-antigravity-5dcf6d.yaml
+- history/records/lithium-bearing-geothermal-brine/2026-10-21T184653Z-claude-842ef0.yaml

@@ -204,11 +204,11 @@
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
       <h4 style="margin: 0; font-size: 1.12rem;">Sporosarcina pasteurii ureolytic divalent-cation removal from lithium geothermal brine</h4>
       <div>
-        <span class="badge">RECORD SPECIFIC MECHANISM</span>
+        <span class="badge">REPRESENTATIVE EXAMPLE</span>
         <a href="#mechanism-ureolytic_brine_cation_pretreatment" class="badge" style="text-decoration: none;">Mechanism: <code>ureolytic_brine_cation_pretreatment</code></a>
       </div>
     </div>
-    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking Sporosarcina pasteurii UreABC urease activity to selective carbonate precipitation of competing Ca/Mg/Sr/Fe/Mn cations during lithium-brine pretreatment.</p>
+    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking Sporosarcina pasteurii urease (UreABC) urea hydrolysis to carbonate alkalinity generation and selective precipitation of Ca, Mg, Mn, and Sr (as calcite, vaterite, and magnesite) from lithium-bearing geothermal brine.</p>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (4):</strong>
     <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
@@ -269,7 +269,7 @@
         </tr>
         <tr id="causal-node-pasteurii_lithium_brine_pretreatment_graph-dissolved_metal_cations">
           <td>
-            <strong>Competing Ca(II), Mg(II), Sr(II), Fe, and Mn cations in lithium brine</strong><br>
+            <strong>Dissolved Ca(II), Mg(II), Mn, and Sr scaling cations in geothermal brine</strong><br>
             <code style="font-size: .78rem; color: var(--muted);">dissolved_metal_cations</code>
           </td>
           <td>
@@ -277,11 +277,11 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Dissolved cations (Competing Ca(II), Mg(II), Sr(II), Fe, and Mn cations in lithium brine) available in the reaction medium or brine.</div>          </td>
+<div>Dissolved cations (Dissolved Ca(II), Mg(II), Mn, and Sr scaling cations in geothermal brine) undergoing carbonate/phosphate precipitation.</div>          </td>
         </tr>
         <tr id="causal-node-pasteurii_lithium_brine_pretreatment_graph-precipitated_mineral_phase">
           <td>
-            <strong>Precipitated calcite/vaterite carbonate solids (leaving Li in brine)</strong><br>
+            <strong>Precipitated calcite/vaterite (CaCO3) and magnesite (MgCO3) solids (with Li+ retained in supernatant)</strong><br>
             <code style="font-size: .78rem; color: var(--muted);">precipitated_mineral_phase</code>
           </td>
           <td>
@@ -289,7 +289,7 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Solid mineral product (Precipitated calcite/vaterite carbonate solids (leaving Li in brine)) precipitated upon ureolytic carbonate supersaturation.</div>          </td>
+<div>Solid mineral phase (Precipitated calcite/vaterite (CaCO3) and magnesite (MgCO3) solids (with Li+ retained in supernatant)) formed via ureolytic alkalinization.</div>          </td>
         </tr>
       </tbody>
     </table>
@@ -304,7 +304,7 @@
 : Elevated pH and carbonate activity drive precipitation of Precipitated calcite/vaterite carbonate solids (leaving Li in brine).[<a href="#source-rehmanji2025"><code>rehmanji2025</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
         <code>dissolved_metal_cations</code> &rarr; <strong>cation precipitation with carbonate/phosphate</strong> (<code>incorporates_into</code>) &rarr; <code>precipitated_mineral_phase</code>
-: Competing Ca(II), Mg(II), Sr(II), Fe, and Mn cations in lithium brine co-precipitates into Precipitated calcite/vaterite carbonate solids (leaving Li in brine).[<a href="#source-rehmanji2025"><code>rehmanji2025</code></a>]      </li>
+: Dissolved Ca(II), Mg(II), Mn, and Sr scaling cations in geothermal brine precipitates into Precipitated calcite/vaterite (CaCO3) and magnesite (MgCO3) solids (with Li+ retained in supernatant).[<a href="#source-rehmanji2025"><code>rehmanji2025</code></a>]      </li>
     </ul>
   </div>
 </div>
@@ -359,6 +359,12 @@
         <td><span class="badge">EDIT</span></td>
         <td>Added verified UniProtKB protein examples (UreC UniProtKB:P41020, UreB UniProtKB:P41021, UreA UniProtKB:P41022) and causal graph for Sporosarcina pasteurii ureolytic lithium-brine pretreatment.</td>
       </tr>
+      <tr>
+        <td><code>2026-10-21T18:46:53Z</code></td>
+        <td>claude</td>
+        <td><span class="badge">EDIT</span></td>
+        <td>Set representative UreABC subunit evidence to partial, standardized cation/precipitate node labels, and fixed edge grammar in lithium-bearing-geothermal-brine.yaml.</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -368,7 +374,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (616 materials · 592 mechanisms · latest curation 2026-10-19 · corpus digest <code>f5834ac109ba</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (616 materials · 592 mechanisms · latest curation 2026-10-21 · corpus digest <code>75e716e3036c</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

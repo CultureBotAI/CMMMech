@@ -96,16 +96,16 @@ mechanisms:
       niger (NCBITaxon:5061).
     evidence:
     - source_ref: kang_2022
-      supports: support
-      explanation: Secretes citric acid into the culture medium, contributing to organic-acid acidification
-        and ligand-assisted transformation of Dissolved Ce(III) in pretreated fungal struvite leachate
-        into Cerium-bearing precipitate precursor for thermal cerianite synthesis.
+      supports: partial
+      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion;
+        Kang et al. (2022) measured organic acids in cell-free spent medium and precipitated CePO4·H2O
+        and Ce2(C2O4)3·10H2O without testing cexA mutants.
 causal_graphs:
 - id: aspergillus_cexa_cerium_precipitation_graph
   name: Aspergillus niger organic-acid secretion and cerium oxalate/phosphate precipitation
   description: Causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA and organic-acid
     metabolite secretion to cerium precipitation from pretreated fungal struvite leachate.
-  scope: RECORD_SPECIFIC_MECHANISM
+  scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: fungal_leachate_cerium_precipitation
   nodes:
   - id: cexa_citrate_exporter
@@ -136,10 +136,10 @@ causal_graphs:
         niger (NCBITaxon:5061).
       evidence:
       - source_ref: kang_2022
-        supports: support
-        explanation: Secretes citric acid into the culture medium, contributing to organic-acid acidification
-          and ligand-assisted transformation of Dissolved Ce(III) in pretreated fungal struvite leachate
-          into Cerium-bearing precipitate precursor for thermal cerianite synthesis.
+        supports: partial
+        explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion;
+          Kang et al. (2022) measured organic acids in cell-free spent medium and precipitated CePO4·H2O
+          and Ce2(C2O4)3·10H2O without testing cexA mutants.
   - id: secreted_organic_acids
     label: Secreted citric and oxalic acid pool (acidification and chelation)
     node_type: CHEMICAL_ENTITY
@@ -152,10 +152,10 @@ causal_graphs:
       leachate) exposed to fungal metabolites.
     protein_grounding_status: NOT_APPLICABLE
   - id: transformed_product
-    label: Cerium-bearing precipitate precursor for thermal cerianite synthesis
+    label: Cerium phosphate (CePO4·H2O) and cerium oxalate (Ce2(C2O4)3·10H2O) precipitates
     node_type: MATERIAL_OR_PHASE
-    description: Resulting precipitate or altered mineral phase (Cerium-bearing precipitate precursor
-      for thermal cerianite synthesis).
+    description: Biogenic cerium phosphate (CePO4·H2O) and cerium oxalate (Ce2(C2O4)3·10H2O) precipitates
+      formed by fungal spent medium (prior to separate abiotic thermal calcination to CeO2).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cexa_citrate_exporter
@@ -166,7 +166,7 @@ causal_graphs:
       the medium.
     evidence:
     - source_ref: kang_2022
-      supports: support
+      supports: partial
       explanation: Aspergillus niger organic-acid secretion acidifies the culture supernatant and supplies
         chelating/precipitating anions.
   - source: secreted_organic_acids
@@ -183,13 +183,13 @@ causal_graphs:
     target: transformed_product
     predicate: transforms_into
     relationship: secondary oxalate/phosphate precipitation or mineral alteration
-    description: Reaction of Dissolved Ce(III) in pretreated fungal struvite leachate with fungal metabolites
-      produces Cerium-bearing precipitate precursor for thermal cerianite synthesis.
+    description: Reaction of Aqueous Ce(III) solution with fungal metabolites precipitates Cerium phosphate
+      (CePO4·H2O) and cerium oxalate (Ce2(C2O4)3·10H2O) (subsequent conversion to CeO2 requires separate
+      abiotic firing at 800 degrees C).
     evidence:
     - source_ref: kang_2022
       supports: support
-      explanation: Fungal culture or supernatant treatment yields Cerium-bearing precipitate precursor
-        for thermal cerianite synthesis.
+      explanation: Fungal culture supernatant treatment yields CePO4·H2O and Ce2(C2O4)3·10H2O precipitates.
 curation_history:
 - timestamp: '2026-10-11T04:55:52Z'
   curator: Codex (GPT-6; Codex)
@@ -201,6 +201,12 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and causal graph for Aspergillus
     niger ATCC 1015 supernatant-mediated cerium precipitation.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Clarified transformed_product node in cerium.yaml to biogenic CePO4·H2O and Ce2(C2O4)3·10H2O
+    precipitates (distinguishing abiotic calcination to cerianite) and set CexA support to partial.
 history_refs:
 - history/records/cerium/2026-10-11T045547Z-codex-ed2983.yaml
 - history/records/cerium/2026-10-18T042750Z-antigravity-4bf888.yaml
+- history/records/cerium/2026-10-21T184653Z-claude-161a21.yaml

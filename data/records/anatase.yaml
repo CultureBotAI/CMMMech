@@ -111,9 +111,10 @@ mechanisms:
       NCBITaxon:321).
     evidence:
     - source_ref: ping2016
-      supports: support
-      explanation: Provides the outer-membrane anchor domain displaying the fused silaffin peptide on
-        the surface of recombinant E. coli cells for Ti precursor mineralization.
+      supports: partial
+      explanation: Provides the N-terminal outer-membrane Ice-nucleation protein (INP) anchor domain fused
+        to the synthetic Sil-1 peptide in Tris-buffered saline with TALH in Ping et al. (2016); non-engineered
+        E. coli controls were not included.
   - uniprot_accession: UniProtKB:Q9SE35
     entry_name: SIL1_CYLFU
     protein_name: Silaffin-1
@@ -123,15 +124,16 @@ mechanisms:
       id: NCBITaxon:2853
       label: Cylindrotheca fusiformis
     functional_role: Diatom silaffin-1 precursor (SIL1) providing the C-terminal cationic peptide mineralization
-      domain in the engineered INP-silaffin fusion that nucleates amorphous titanium phosphate/oxide prior
-      to calcination into anatase.
+      domain in the engineered INP-silaffin fusion that nucleates amorphous titanium oxide prior to calcination
+      into anatase.
     annotation_note: Recombinant INP-silaffin fusion expressed in Escherichia coli BL21(DE3) (NCBITaxon:469008);
       C-terminal silaffin peptide originates from Cylindrotheca fusiformis SIL1 (UniProtKB:Q9SE35, NCBITaxon:2853).
     evidence:
     - source_ref: ping2016
-      supports: support
-      explanation: Cationic silaffin peptide domain displayed on recombinant E. coli promotes Ti precursor
-        hydrolysis and precipitation on the bacterial template before 600 C calcination to anatase TiO2.
+      supports: partial
+      explanation: Ping et al. (2016) used the synthetic Sil-1 peptide sequence (SSKKSGSYSGSKGSKRRIL)
+        fused to the E. coli outer-membrane Ice-nucleation protein (INP) in Tris-buffered saline with
+        TALH; non-engineered E. coli controls were not included.
 causal_graphs:
 - id: inp_silaffin_templated_anatase_graph
   name: Surface-displayed INP-silaffin templated Ti mineralization and thermal conversion to anatase
@@ -168,9 +170,10 @@ causal_graphs:
         NCBITaxon:321).
       evidence:
       - source_ref: ping2016
-        supports: support
-        explanation: Provides the outer-membrane anchor domain displaying the fused silaffin peptide on
-          the surface of recombinant E. coli cells for Ti precursor mineralization.
+        supports: partial
+        explanation: Provides the N-terminal outer-membrane Ice-nucleation protein (INP) anchor domain
+          fused to the synthetic Sil-1 peptide in Tris-buffered saline with TALH in Ping et al. (2016);
+          non-engineered E. coli controls were not included.
   - id: sil1_mineralization_peptide
     label: Sil1 silaffin mineralization peptide domain (SIL1)
     node_type: GENE_OR_PROTEIN
@@ -188,20 +191,21 @@ causal_graphs:
         id: NCBITaxon:2853
         label: Cylindrotheca fusiformis
       functional_role: Diatom silaffin-1 precursor (SIL1) providing the C-terminal cationic peptide mineralization
-        domain in the engineered INP-silaffin fusion that nucleates amorphous titanium phosphate/oxide
-        prior to calcination into anatase.
+        domain in the engineered INP-silaffin fusion that nucleates amorphous titanium oxide prior to
+        calcination into anatase.
       annotation_note: Recombinant INP-silaffin fusion expressed in Escherichia coli BL21(DE3) (NCBITaxon:469008);
         C-terminal silaffin peptide originates from Cylindrotheca fusiformis SIL1 (UniProtKB:Q9SE35, NCBITaxon:2853).
       evidence:
       - source_ref: ping2016
-        supports: support
-        explanation: Cationic silaffin peptide domain displayed on recombinant E. coli promotes Ti precursor
-          hydrolysis and precipitation on the bacterial template before 600 C calcination to anatase TiO2.
+        supports: partial
+        explanation: Ping et al. (2016) used the synthetic Sil-1 peptide sequence (SSKKSGSYSGSKGSKRRIL)
+          fused to the E. coli outer-membrane Ice-nucleation protein (INP) in Tris-buffered saline with
+          TALH; non-engineered E. coli controls were not included.
   - id: amorphous_ti_precursor_shell
-    label: Cell-templated amorphous titanium-phosphate/oxide precursor
+    label: Cell-templated amorphous titanium-oxide precursor
     node_type: MATERIAL_OR_PHASE
-    description: Amorphous Ti-bearing mineral shell precipitated on recombinant E. coli cells at room
-      temperature.
+    description: Hydrated amorphous titanium-oxide shell precipitated on the engineered E. coli cell surface
+      from TALH in Tris-buffered saline before calcination.
     protein_grounding_status: NOT_APPLICABLE
   - id: calcined_anatase_tio2
     label: Crystalline anatase TiO2 (after 600 C calcination)
@@ -223,18 +227,19 @@ causal_graphs:
     target: amorphous_ti_precursor_shell
     predicate: nucleates
     relationship: interfacial hydrolysis and condensation of Ti precursor
-    description: Surface-exposed silaffin peptide accelerates precipitation of an amorphous Ti-P-O precursor
-      on the cells.
+    description: Surface-displayed Sil-1 peptide is proposed to hydrolyze/condense TALH into a cell-bound
+      amorphous titanium-oxide shell in Tris-buffered saline (without a non-engineered cell control).
     evidence:
     - source_ref: ping2016
-      supports: support
-      explanation: INP-silaffin cells template amorphous titanium precursor particles prior to calcination.
+      supports: partial
+      explanation: Engineered E. coli cells in TALH/TBS formed an amorphous Ti-oxide coating; because
+        non-engineered E. coli controls were omitted, Sil-1-specific nucleation necessity is partial.
   - source: amorphous_ti_precursor_shell
     target: calcined_anatase_tio2
     predicate: transforms_into
     relationship: 600 C thermal calcination and crystallization
-    description: Thermal treatment at 600 C converts the amorphous biogenic precursor into crystalline
-      anatase TiO2.
+    description: Abiotic 600 degrees C calcination converts the cell-templated amorphous titanium-oxide
+      precursor into hollow porous anatase TiO2 structures.
     evidence:
     - source_ref: ping2016
       supports: support
@@ -257,7 +262,13 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein examples (InaZ UniProtKB:P06620, SIL1 UniProtKB:Q9SE35) and
     causal graph for INP-silaffin templated anatase synthesis.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Removed unsupported phosphate claim from amorphous_ti_precursor_shell node (reaction used Tris-buffered
+    saline, not phosphate) and set Sil-1 nucleation evidence to partial.
 history_refs:
 - history/records/anatase/2026-10-12T064814Z-codex-810f65.yaml
 - history/records/anatase/2026-10-12T070029Z-codex-ac9983.yaml
 - history/records/anatase/2026-10-18T042750Z-antigravity-46ec95.yaml
+- history/records/anatase/2026-10-21T184653Z-claude-dd91a3.yaml

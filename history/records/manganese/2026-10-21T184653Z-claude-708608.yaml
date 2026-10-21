@@ -1,0 +1,26 @@
+history_version: 1
+target:
+  kind: record
+  slug: manganese
+  path: data/records/manganese.yaml
+session:
+  id: 2026-10-21T184653Z-claude-708608
+  timestamp: '2026-10-21T18:46:53Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: Claude
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Removed unsupported 'birnessite-like' phase claim from manganese.yaml causal graph description,
+    included ligand-complexed Mn(III) in the substrate node, and set MopA edge support to partial.
+  details: Aligned manganese.yaml causal_graphs with Wright et al. (2018), which measured LBB-reactive
+    Mn(III/IV) oxides from Mn(II) and Mn(III)-ligand complexes without XRD birnessite identification and
+    found MopA-only oxidation to be light-dependent.
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs

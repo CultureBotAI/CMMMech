@@ -197,9 +197,9 @@ mechanisms:
       extracellular electron-transfer reductase.
     evidence:
     - source_ref: kane_2026_bes
-      supports: support
-      explanation: Cell-surface decaheme cytochrome c mediating extracellular electron transfer to Dissolved
-        V(V) in mixed U/V/Fe solution.
+      supports: partial
+      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (mtrC) for extracellular
+        electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
   - uniprot_accession: UniProtKB:Q8EG33
     entry_name: Q8EG33_SHEON
     protein_name: Extracelllular iron oxide respiratory system surface decaheme cytochrome c component
@@ -222,9 +222,9 @@ mechanisms:
       MtrC in extracellular metal/mineral reduction.
     evidence:
     - source_ref: kane_2026_bes
-      supports: support
-      explanation: Outer-membrane decaheme cytochrome c contributing to extracellular reduction of Dissolved
-        V(V) in mixed U/V/Fe solution into Reduced vanadium species partitioned between solution and cathode.
+      supports: partial
+      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (omcA) for extracellular
+        electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
   - uniprot_accession: UniProtKB:Q8E8S0
     entry_name: CYMA_SHEON
     protein_name: Tetraheme c-type cytochrome CymA
@@ -249,15 +249,15 @@ mechanisms:
       pathways.
     evidence:
     - source_ref: kane_2026_bes
-      supports: support
-      explanation: Routes respiratory electrons from the inner-membrane menaquinone pool to periplasmic
-        and outer-membrane multiheme cytochromes during Dissolved V(V) in mixed U/V/Fe solution reduction.
+      supports: partial
+      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (cymA) for extracellular
+        electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
 causal_graphs:
 - id: mr1_bes_vanadium_reduction_graph
   name: Shewanella oneidensis MR-1 extracellular electron transfer in bioelectrochemical vanadium separation
   description: Causal pathway linking Shewanella oneidensis MR-1 CymA, MtrC, and OmcA extracellular electron-transfer
     cytochromes to vanadium redox partitioning in a bioelectrochemical system.
-  scope: RECORD_SPECIFIC_MECHANISM
+  scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: oneidensis_bes_vanadium_separation
   nodes:
   - id: cyma_dehydrogenase
@@ -292,9 +292,9 @@ causal_graphs:
         pathways.
       evidence:
       - source_ref: kane_2026_bes
-        supports: support
-        explanation: Routes respiratory electrons from the inner-membrane menaquinone pool to periplasmic
-          and outer-membrane multiheme cytochromes during Dissolved V(V) in mixed U/V/Fe solution reduction.
+        supports: partial
+        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (cymA) for extracellular
+          electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
   - id: mtrc_cytochrome
     label: MtrC outer-membrane decaheme cytochrome c (SO_1778)
     node_type: GENE_OR_PROTEIN
@@ -325,9 +325,9 @@ causal_graphs:
         extracellular electron-transfer reductase.
       evidence:
       - source_ref: kane_2026_bes
-        supports: support
-        explanation: Cell-surface decaheme cytochrome c mediating extracellular electron transfer to Dissolved
-          V(V) in mixed U/V/Fe solution.
+        supports: partial
+        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (mtrC) for extracellular
+          electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
   - id: omca_cytochrome
     label: OmcA outer-membrane decaheme cytochrome c (SO_1779)
     node_type: GENE_OR_PROTEIN
@@ -357,21 +357,21 @@ causal_graphs:
         MtrC in extracellular metal/mineral reduction.
       evidence:
       - source_ref: kane_2026_bes
-        supports: support
-        explanation: Outer-membrane decaheme cytochrome c contributing to extracellular reduction of Dissolved
-          V(V) in mixed U/V/Fe solution into Reduced vanadium species partitioned between solution and
-          cathode.
+        supports: partial
+        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (omcA) for extracellular
+          electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
   - id: oxidized_metal_substrate
-    label: Dissolved V(V) in mixed U/V/Fe solution
+    label: Dissolved V(V) in defined bicarbonate/PIPES electrolyte
     node_type: CHEMICAL_ENTITY
-    description: Oxidized metal species or mineral substrate (Dissolved V(V) in mixed U/V/Fe solution)
-      accepting extracellular electrons.
+    description: Terminal electron acceptor substrate (Dissolved V(V) in defined bicarbonate/PIPES electrolyte)
+      in kane_2026_bes.
     protein_grounding_status: NOT_APPLICABLE
   - id: reduced_metal_product
-    label: Reduced vanadium species partitioned between solution and cathode
+    label: Depleted aqueous V and cell/electrode-associated reduced vanadium species (unverified solid
+      valence)
     node_type: MATERIAL_OR_PHASE
-    description: Reduced metal species or mineral phase (Reduced vanadium species partitioned between
-      solution and cathode) formed by extracellular electron transfer.
+    description: Resulting reduced product state (Depleted aqueous V and cell/electrode-associated reduced
+      vanadium species (unverified solid valence)) in kane_2026_bes.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cyma_dehydrogenase
@@ -382,40 +382,44 @@ causal_graphs:
       conduit.
     evidence:
     - source_ref: kane_2026_bes
-      supports: support
+      supports: partial
       explanation: Respiratory electron transport in S. oneidensis MR-1 routes electrons from CymA to
         outer-membrane decaheme cytochromes.
   - source: mtrc_cytochrome
     target: oxidized_metal_substrate
     predicate: reduces
     relationship: direct or flavin-mediated extracellular electron transfer
-    description: MtrC transfers electrons across the outer membrane interface to Dissolved V(V) in mixed
-      U/V/Fe solution.
+    description: MtrC transfers electrons across the outer membrane interface to Dissolved V(V) in defined
+      bicarbonate/PIPES electrolyte.
     evidence:
     - source_ref: kane_2026_bes
-      supports: support
-      explanation: MtrC participates in extracellular reduction of Dissolved V(V) in mixed U/V/Fe solution.
+      supports: partial
+      explanation: MtrC participates in extracellular reduction of Dissolved V(V) in defined bicarbonate/PIPES
+        electrolyte.
   - source: omca_cytochrome
     target: oxidized_metal_substrate
     predicate: reduces
     relationship: cell-surface decaheme cytochrome reduction
     description: OmcA transfers electrons at the cell-mineral/solution interface to Dissolved V(V) in
-      mixed U/V/Fe solution.
+      defined bicarbonate/PIPES electrolyte.
     evidence:
     - source_ref: kane_2026_bes
-      supports: support
-      explanation: OmcA contributes to extracellular reduction of Dissolved V(V) in mixed U/V/Fe solution.
+      supports: partial
+      explanation: OmcA contributes to extracellular reduction of Dissolved V(V) in defined bicarbonate/PIPES
+        electrolyte.
   - source: oxidized_metal_substrate
     target: reduced_metal_product
     predicate: transforms_into
     relationship: reductive valence transformation and phase formation
-    description: Reduction of Dissolved V(V) in mixed U/V/Fe solution yields Reduced vanadium species
-      partitioned between solution and cathode.
+    description: Extracellular electron transfer converts Dissolved V(V) in defined bicarbonate/PIPES
+      electrolyte into Depleted aqueous V and cell/electrode-associated reduced vanadium species (unverified
+      solid valence).
     evidence:
     - source_ref: kane_2026_bes
-      supports: support
-      explanation: Extracellular reduction converts Dissolved V(V) in mixed U/V/Fe solution into Reduced
-        vanadium species partitioned between solution and cathode.
+      supports: partial
+      explanation: Shewanella oneidensis MR-1 bioelectrochemical/anaerobic reduction converts Dissolved
+        V(V) in defined bicarbonate/PIPES electrolyte into Depleted aqueous V and cell/electrode-associated
+        reduced vanadium species (unverified solid valence) in kane_2026_bes.
 curation_history:
 - timestamp: '2026-10-09T04:48:39Z'
   curator: Codex (GPT-6; Codex)
@@ -432,7 +436,13 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein examples (MtrC UniProtKB:Q8EG34, OmcA UniProtKB:Q8EG33, CymA
     UniProtKB:Q8E8S0) and causal graph for Shewanella oneidensis MR-1 bioelectrochemical vanadium separation.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Set representative CymA/MtrC/OmcA cytochrome evidence to partial and refined substrate/product
+    labels in vanadium.yaml.
 history_refs:
 - history/records/vanadium/2026-10-09T044839Z-codex-edb7c6.yaml
 - history/records/vanadium/2026-10-09T055005Z-codex-5af8f0.yaml
 - history/records/vanadium/2026-10-18T042750Z-antigravity-4f26d3.yaml
+- history/records/vanadium/2026-10-21T184653Z-claude-0ef708.yaml

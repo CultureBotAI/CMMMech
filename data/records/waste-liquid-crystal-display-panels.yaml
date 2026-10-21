@@ -100,9 +100,9 @@ mechanisms:
       ferrooxidans ATCC 23270 (NCBITaxon:243159).
     evidence:
     - source_ref: willner2018
-      supports: support
-      explanation: Oxidizes reduced inorganic sulfur intermediates during acidophilic bioleaching of Crushed
-        waste LCD panel powder (ITO-bearing).
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (AFE_1792)
+        for oxidative sulfur/acid generation in willner2018; individual sqr/tth genes were not mutated.
   - uniprot_accession: UniProtKB:B7J3C9
     entry_name: TTH_ACIF2
     protein_name: Tetrathionate hydrolase
@@ -127,9 +127,9 @@ mechanisms:
       ferrooxidans ATCC 23270 (NCBITaxon:243159).
     evidence:
     - source_ref: willner2018
-      supports: support
-      explanation: Hydrolyzes polythionate intermediates to regenerate sulfuric acid acidity during bioleaching
-        of Crushed waste LCD panel powder (ITO-bearing).
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (tth)
+        for oxidative sulfur/acid generation in willner2018; individual sqr/tth genes were not mutated.
 causal_graphs:
 - id: ferrooxidans_lcd_indium_bioleaching_graph
   name: Acidithiobacillus ferrooxidans biogenic acid leaching of indium from waste LCD powder
@@ -169,9 +169,10 @@ causal_graphs:
         ferrooxidans ATCC 23270 (NCBITaxon:243159).
       evidence:
       - source_ref: willner2018
-        supports: support
-        explanation: Oxidizes reduced inorganic sulfur intermediates during acidophilic bioleaching of
-          Crushed waste LCD panel powder (ITO-bearing).
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme
+          (AFE_1792) for oxidative sulfur/acid generation in willner2018; individual sqr/tth genes were
+          not mutated.
   - id: tth_hydrolase
     label: Tth tetrathionate hydrolase (tth / AFE_0029)
     node_type: GENE_OR_PROTEIN
@@ -204,9 +205,10 @@ causal_graphs:
         ferrooxidans ATCC 23270 (NCBITaxon:243159).
       evidence:
       - source_ref: willner2018
-        supports: support
-        explanation: Hydrolyzes polythionate intermediates to regenerate sulfuric acid acidity during
-          bioleaching of Crushed waste LCD panel powder (ITO-bearing).
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme
+          (tth) for oxidative sulfur/acid generation in willner2018; individual sqr/tth genes were not
+          mutated.
   - id: acidic_ferric_sulfate_lixiviant
     label: Biogenic sulfuric acid and Fe(III) oxidative lixiviant
     node_type: CHEMICAL_ENTITY
@@ -214,15 +216,14 @@ causal_graphs:
       metabolism.
     protein_grounding_status: NOT_APPLICABLE
   - id: solid_feed_substrate
-    label: Crushed waste LCD panel powder (ITO-bearing)
+    label: Crushed waste LCD panel powder
     node_type: MATERIAL_OR_PHASE
     description: Starting mineral or secondary-resource feed (Crushed waste LCD panel powder (ITO-bearing)).
     protein_grounding_status: NOT_APPLICABLE
   - id: solubilized_metal_species
-    label: Solubilized In(III) in acidic culture medium
+    label: Dissolved In(III) in acidic bioleachate
     node_type: CHEMICAL_ENTITY
-    description: Dissolved metal ions (Solubilized In(III) in acidic culture medium) mobilized into the
-      acidic pregnant leach solution.
+    description: Leached product state (Dissolved In(III) in acidic bioleachate) in willner2018.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: sqr_reductase
@@ -233,7 +234,7 @@ causal_graphs:
       by periplasmic tetrathionate hydrolase.
     evidence:
     - source_ref: willner2018
-      supports: support
+      supports: partial
       explanation: Reduced sulfur oxidation in A. ferrooxidans couples Sqr and polythionate hydrolysis
         to proton generation.
   - source: tth_hydrolase
@@ -244,7 +245,7 @@ causal_graphs:
       medium.
     evidence:
     - source_ref: willner2018
-      supports: support
+      supports: partial
       explanation: Sulfur-compound oxidation maintains the acidic lixiviant required for metal solubilization.
   - source: acidic_ferric_sulfate_lixiviant
     target: solid_feed_substrate
@@ -253,19 +254,18 @@ causal_graphs:
     description: Biogenic acid and ferric ions attack Crushed waste LCD panel powder (ITO-bearing).
     evidence:
     - source_ref: willner2018
-      supports: support
+      supports: partial
       explanation: Culture-generated acidic ferric/sulfate medium attacks Crushed waste LCD panel powder
         (ITO-bearing).
   - source: solid_feed_substrate
     target: solubilized_metal_species
     predicate: produces
     relationship: oxidative/acidic dissolution
-    description: Dissolution of Crushed waste LCD panel powder (ITO-bearing) releases Solubilized In(III)
-      in acidic culture medium.
+    description: Biogenic sulfuric acid and Fe3+ in 9K medium leach indium from crushed LCD panel powder.
     evidence:
     - source_ref: willner2018
       supports: support
-      explanation: Bioleaching mobilizes Solubilized In(III) in acidic culture medium into solution.
+      explanation: Biogenic sulfuric acid and Fe3+ in 9K medium leach indium from crushed LCD panel powder.
 curation_history:
 - timestamp: '2026-10-11T13:46:10Z'
   curator: Codex (GPT-6; Codex)
@@ -278,6 +278,12 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein examples (Sqr UniProtKB:B7JBP8, Tth UniProtKB:B7J3C9) and
     causal graph for Acidithiobacillus ferrooxidans indium bioleaching from waste LCD panels.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Set representative Sqr and Tth enzyme evidence to partial and refined substrate/product labels
+    in waste-liquid-crystal-display-panels.yaml.
 history_refs:
 - history/records/waste-liquid-crystal-display-panels/2026-10-11T134610Z-codex-b0f4f2.yaml
 - history/records/waste-liquid-crystal-display-panels/2026-10-18T042750Z-antigravity-75eedb.yaml
+- history/records/waste-liquid-crystal-display-panels/2026-10-21T184653Z-claude-f7960b.yaml

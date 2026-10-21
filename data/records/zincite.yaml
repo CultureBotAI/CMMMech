@@ -106,10 +106,10 @@ mechanisms:
       niger (NCBITaxon:5061).
     evidence:
     - source_ref: sebesta2020
-      supports: support
-      explanation: Secretes citric acid into the culture medium, contributing to organic-acid acidification
-        and ligand-assisted transformation of Synthetic zincite-structured ZnO nanoparticles into Dissolved
-        Zn(II) and zinc oxalate dihydrate precipitate.
+      supports: partial
+      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during
+        transformation of Synthetic zincite-structured ZnO nanoparticles into Dissolved Zn(II) and zinc
+        oxalate dihydrate precipitate; CexA was not directly mutated in sebesta2020.
 - id: abiotic_thiol_imidazole_dissolution
   name: Chemical dissolution of a source-described zincite specimen
   process: other
@@ -144,7 +144,7 @@ causal_graphs:
   name: Aspergillus niger organic-acid exudate transformation of zincite nanoparticles
   description: Causal pathway linking Aspergillus niger citrate exporter CexA and secreted organic acids
     to partial dissolution of ZnO (zincite) nanoparticles and secondary zinc oxalate precipitation.
-  scope: RECORD_SPECIFIC_MECHANISM
+  scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: fungal_metabolite_associated_partial_transformation
   nodes:
   - id: cexa_citrate_exporter
@@ -175,10 +175,10 @@ causal_graphs:
         niger (NCBITaxon:5061).
       evidence:
       - source_ref: sebesta2020
-        supports: support
-        explanation: Secretes citric acid into the culture medium, contributing to organic-acid acidification
-          and ligand-assisted transformation of Synthetic zincite-structured ZnO nanoparticles into Dissolved
-          Zn(II) and zinc oxalate dihydrate precipitate.
+        supports: partial
+        explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion
+          during transformation of Synthetic zincite-structured ZnO nanoparticles into Dissolved Zn(II)
+          and zinc oxalate dihydrate precipitate; CexA was not directly mutated in sebesta2020.
   - id: secreted_organic_acids
     label: Secreted citric and oxalic acid pool (acidification and chelation)
     node_type: CHEMICAL_ENTITY
@@ -205,7 +205,7 @@ causal_graphs:
       the medium.
     evidence:
     - source_ref: sebesta2020
-      supports: support
+      supports: partial
       explanation: Aspergillus niger organic-acid secretion acidifies the culture supernatant and supplies
         chelating/precipitating anions.
   - source: secreted_organic_acids
@@ -241,6 +241,11 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and causal graph for Aspergillus
     niger organic-acid transformation of zincite nanoparticles.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Set representative CexA transporter evidence to partial in zincite.yaml.
 history_refs:
 - history/records/zincite/2026-10-15T011944Z-codex-797b25.yaml
 - history/records/zincite/2026-10-18T042750Z-antigravity-5028fc.yaml
+- history/records/zincite/2026-10-21T184653Z-claude-7f4e16.yaml

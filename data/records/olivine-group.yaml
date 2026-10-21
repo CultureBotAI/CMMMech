@@ -122,9 +122,10 @@ mechanisms:
       oxydans 621H (NCBITaxon:290633; locus GOX0265).
     evidence:
     - source_ref: klug_2026
-      supports: support
-      explanation: Glucose oxidation by membrane-bound PQQ-dependent glucose dehydrogenase generates the
-        gluconic acid-dominated acidic biolixiviant used to leach the mineral/feed.
+      supports: partial
+      explanation: Engineered Gluconobacter oxydans B58 delta-pstS, P112:mgdh oxidized glucose into the
+        gluconic-acid biolixiviant used in Klug et al. (2026), without direct enzyme or single-gene knockout
+        controls in this mineral assay.
   - uniprot_accession: UniProtKB:Q9L3B2
     entry_name: PQQC_GLUOX
     protein_name: Pyrroloquinoline-quinone synthase
@@ -149,75 +150,75 @@ mechanisms:
       oxydans 621H (NCBITaxon:290633; locus GOX0985).
     evidence:
     - source_ref: klug_2026
-      supports: support
-      explanation: Biosynthesis of the pyrroloquinoline quinone (PQQ) cofactor is required for periplasmic
-        quinoprotein dehydrogenase activity during acidogenic biolixiviant production.
-  - uniprot_accession: UniProtKB:Q5FT13
-    entry_name: Q5FT13_GLUOX
-    protein_name: Phosphate transport system permease protein
-    gene_symbol: pstC
+      supports: partial
+      explanation: Engineered Gluconobacter oxydans B58 delta-pstS, P112:mgdh oxidized glucose into the
+        gluconic-acid biolixiviant used in Klug et al. (2026), without direct enzyme or single-gene knockout
+        controls in this mineral assay.
+  - uniprot_accession: UniProtKB:Q5FTI1
+    entry_name: Q5FTI1_GLUOX
+    protein_name: Phosphate-binding protein PstS
+    gene_symbol: pstS
     entry_status: TREMBL
     target_organism:
       id: NCBITaxon:290633
       label: Gluconobacter oxydans 621H
     reference_proteome_id: UP000006375
     interpro_ids:
-    - InterPro:IPR000515
-    - InterPro:IPR035906
-    - InterPro:IPR011864
-    - InterPro:IPR051124
+    - InterPro:IPR005673
+    - InterPro:IPR024370
+    - InterPro:IPR050962
     pfam_ids:
-    - Pfam:PF00528
-    functional_role: Phosphate transport system permease PstC (GOX0706) disrupted in engineered Gluconobacter
-      oxydans B58 biolixiviant strains.
+    - Pfam:PF12849
+    functional_role: Periplasmic phosphate-binding protein PstS (GOX0537) deleted in the engineered Gluconobacter
+      oxydans B58 delta-pstS, P112:mgdh strain used to produce the biolixiviant.
     annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633)
       orthologous to the engineered B58 locus.
     evidence:
     - source_ref: klug_2026
-      supports: support
-      explanation: Phosphate transport system permease PstC (GOX0706) disrupted in engineered Gluconobacter
-        oxydans B58 biolixiviant strains.
+      supports: partial
+      explanation: Klug et al. (2026) produced the biolixiviant using engineered Gluconobacter oxydans
+        B58 delta-pstS, P112:mgdh, without a wild-type B58 comparator to isolate the effect of pstS deletion.
 causal_graphs:
 - id: gluconobacter_olivine_bioleaching_graph
   name: Engineered Gluconobacter oxydans bioleaching of San Carlos olivine
-  description: Causal pathway linking pstC disruption and PqqC/Gdh-mediated gluconic acid biolixiviant
+  description: Causal pathway linking pstS disruption and PqqC/Gdh-mediated gluconic acid biolixiviant
     production to San Carlos olivine dissolution and secondary oxalate precipitation.
   scope: RECORD_SPECIFIC_MECHANISM
   mechanism_ref: san_carlos_olivine_bioleaching
   nodes:
-  - id: pstc_phosphate_permease
-    label: pstC (Phosphate transport system permease protein)
+  - id: psts_phosphate_binding
+    label: pstS (Phosphate-binding protein PstS)
     node_type: GENE_OR_PROTEIN
-    gene_symbol: pstC
-    description: Phosphate transport system permease PstC (GOX0706) disrupted in engineered Gluconobacter
-      oxydans B58 biolixiviant strains.
+    gene_symbol: pstS
+    description: Periplasmic phosphate-binding protein PstS (GOX0537) deleted in the engineered Gluconobacter
+      oxydans B58 delta-pstS, P112:mgdh biolixiviant strain.
     protein_grounding_status: GROUNDED
     protein_examples:
-    - uniprot_accession: UniProtKB:Q5FT13
-      entry_name: Q5FT13_GLUOX
-      protein_name: Phosphate transport system permease protein
-      gene_symbol: pstC
+    - uniprot_accession: UniProtKB:Q5FTI1
+      entry_name: Q5FTI1_GLUOX
+      protein_name: Phosphate-binding protein PstS
+      gene_symbol: pstS
       entry_status: TREMBL
       target_organism:
         id: NCBITaxon:290633
         label: Gluconobacter oxydans 621H
       reference_proteome_id: UP000006375
       interpro_ids:
-      - InterPro:IPR000515
-      - InterPro:IPR035906
-      - InterPro:IPR011864
-      - InterPro:IPR051124
+      - InterPro:IPR005673
+      - InterPro:IPR024370
+      - InterPro:IPR050962
       pfam_ids:
-      - Pfam:PF00528
-      functional_role: Phosphate transport system permease PstC (GOX0706) disrupted in engineered Gluconobacter
-        oxydans B58 biolixiviant strains.
+      - Pfam:PF12849
+      functional_role: Periplasmic phosphate-binding protein PstS (GOX0537) deleted in the engineered
+        Gluconobacter oxydans B58 delta-pstS, P112:mgdh strain used to produce the biolixiviant.
       annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633)
         orthologous to the engineered B58 locus.
       evidence:
       - source_ref: klug_2026
-        supports: support
-        explanation: Phosphate transport system permease PstC (GOX0706) disrupted in engineered Gluconobacter
-          oxydans B58 biolixiviant strains.
+        supports: partial
+        explanation: Klug et al. (2026) produced the biolixiviant using engineered Gluconobacter oxydans
+          B58 delta-pstS, P112:mgdh, without a wild-type B58 comparator to isolate the effect of pstS
+          deletion.
   - id: pqqc_synthase
     label: PqqC pyrroloquinoline-quinone synthase
     node_type: GENE_OR_PROTEIN
@@ -250,9 +251,10 @@ causal_graphs:
         oxydans 621H (NCBITaxon:290633; locus GOX0985).
       evidence:
       - source_ref: klug_2026
-        supports: support
-        explanation: Biosynthesis of the pyrroloquinoline quinone (PQQ) cofactor is required for periplasmic
-          quinoprotein dehydrogenase activity during acidogenic biolixiviant production.
+        supports: partial
+        explanation: Engineered Gluconobacter oxydans B58 delta-pstS, P112:mgdh oxidized glucose into
+          the gluconic-acid biolixiviant used in Klug et al. (2026), without direct enzyme or single-gene
+          knockout controls in this mineral assay.
   - id: gdh_dehydrogenase
     label: Gdh membrane-bound PQQ-dependent glucose dehydrogenase
     node_type: GENE_OR_PROTEIN
@@ -285,9 +287,10 @@ causal_graphs:
         oxydans 621H (NCBITaxon:290633; locus GOX0265).
       evidence:
       - source_ref: klug_2026
-        supports: support
-        explanation: Glucose oxidation by membrane-bound PQQ-dependent glucose dehydrogenase generates
-          the gluconic acid-dominated acidic biolixiviant used to leach the mineral/feed.
+        supports: partial
+        explanation: Engineered Gluconobacter oxydans B58 delta-pstS, P112:mgdh oxidized glucose into
+          the gluconic-acid biolixiviant used in Klug et al. (2026), without direct enzyme or single-gene
+          knockout controls in this mineral assay.
   - id: gluconic_acid_biolixiviant
     label: Extracellular gluconic acid and organic-acid biolixiviant
     node_type: CHEMICAL_ENTITY
@@ -299,23 +302,23 @@ causal_graphs:
     description: Starting solid substrate (Magnesium-rich San Carlos olivine) exposed to the acidic biolixiviant.
     protein_grounding_status: NOT_APPLICABLE
   - id: dissolved_mg_ni_and_oxalate
-    label: Dissolved Mg/Ni/Co ions and secondary glushinskite/oxalate solids
+    label: Dissolved Mg/Fe/Ni ions and secondary glushinskite/oxalate solids
     node_type: CHEMICAL_ENTITY
-    description: Solubilized metal ions or altered phase (Dissolved Mg/Ni/Co ions and secondary glushinskite/oxalate
+    description: Solubilized metal ions or altered phase (Dissolved Mg/Fe/Ni ions and secondary glushinskite/oxalate
       solids) released into the leachate.
     protein_grounding_status: NOT_APPLICABLE
   edges:
-  - source: pstc_phosphate_permease
+  - source: psts_phosphate_binding
     target: gdh_dehydrogenase
     predicate: modulates
-    relationship: genetic perturbation or regulatory coupling in engineered strain
-    description: Phosphate transport system permease PstC (GOX0706) disrupted in engineered Gluconobacter
-      oxydans B58 biolixiviant strains.
+    relationship: pstS deletion combined with P112:mgdh promoter replacement in B58 strain
+    description: Engineered B58 delta-pstS, P112:mgdh strain generates the acidic biolixiviant; Klug et
+      al. (2026) did not include a wild-type B58 comparator to isolate pstS.
     evidence:
     - source_ref: klug_2026
-      supports: support
-      explanation: Phosphate transport system permease PstC (GOX0706) disrupted in engineered Gluconobacter
-        oxydans B58 biolixiviant strains.
+      supports: partial
+      explanation: Biolixiviant was produced by G. oxydans B58 delta-pstS, P112:mgdh without a wild-type
+        B58 mineral-leaching comparator.
   - source: pqqc_synthase
     target: gdh_dehydrogenase
     predicate: positively_regulates
@@ -323,7 +326,7 @@ causal_graphs:
     description: PQQ cofactor biosynthesis enables active periplasmic quinoprotein glucose dehydrogenase.
     evidence:
     - source_ref: klug_2026
-      supports: support
+      supports: partial
       explanation: PQQ-dependent glucose dehydrogenase activity drives gluconic-acid biolixiviant production
         in Gluconobacter oxydans.
   - source: gdh_dehydrogenase
@@ -334,7 +337,7 @@ causal_graphs:
       organic-acid ligands.
     evidence:
     - source_ref: klug_2026
-      supports: support
+      supports: partial
       explanation: Periplasmic glucose oxidation by G. oxydans generates the acidic gluconic-acid-rich
         biolixiviant.
   - source: gluconic_acid_biolixiviant
@@ -351,7 +354,7 @@ causal_graphs:
     target: dissolved_mg_ni_and_oxalate
     predicate: produces
     relationship: dissolution and metal mobilization
-    description: Dissolution of Magnesium-rich San Carlos olivine yields Dissolved Mg/Ni/Co ions and secondary
+    description: Dissolution of Magnesium-rich San Carlos olivine yields Dissolved Mg/Fe/Ni ions and secondary
       glushinskite/oxalate solids in the aqueous leachate.
     evidence:
     - source_ref: klug_2026
@@ -368,6 +371,13 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein examples (Gdh UniProtKB:P27175, PqqC UniProtKB:Q9L3B2, PstC
     UniProtKB:Q5FT13) and causal graph for Gluconobacter oxydans San Carlos olivine bioleaching.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Replaced erroneous pstC (UniProtKB:Q5FT13) with pstS (UniProtKB:Q5FTI1) matching the engineered
+    G. oxydans B58 delta-pstS, P112:mgdh strain in Klug et al. (2026), and set unmutated gene evidence
+    to partial.
 history_refs:
 - history/records/olivine-group/2026-10-11T105148Z-codex-b09182.yaml
 - history/records/olivine-group/2026-10-18T042750Z-antigravity-cb88b0.yaml
+- history/records/olivine-group/2026-10-21T184653Z-claude-f1118d.yaml

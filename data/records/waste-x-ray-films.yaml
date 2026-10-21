@@ -1,184 +1,260 @@
 id: cmmmech:waste-x-ray-films
 name: Waste X-ray films
 material_kind: secondary_resource
-description: >-
-  Used silver-bearing radiographic films obtained from medical facilities,
-  comprising a gelatin-silver emulsion on a polymer base. The curated feeds
-  are discarded X-ray films, not unused film stock, photographic processing
-  liquids, elemental silver or all photographic wastes. Laboratory studies
-  distinguish microbial-enzyme stripping of the emulsion from subsequent
-  thermal production of silver metal. No constituent criticality designation
-  or industrial deployment is inherited.
+description: Used silver-bearing radiographic films obtained from medical facilities, comprising a gelatin-silver
+  emulsion on a polymer base. The curated feeds are discarded X-ray films, not unused film stock, photographic
+  processing liquids, elemental silver or all photographic wastes. Laboratory studies distinguish microbial-enzyme
+  stripping of the emulsion from subsequent thermal production of silver metal. No constituent criticality
+  designation or industrial deployment is inherited.
 sources:
-  - id: shankar2010
-    title: >-
-      Shankar, More and Laxman (2010). Recovery of Silver from Waste X-Ray
-      Film by Alkaline Protease from Conidiobolus coronatus. Kathmandu
-      University Journal of Science, Engineering and Technology 6(1):60-69;
-      original published PDF, Methods pp.61-63, Figures 1-4, Table 1 and
-      silver analysis p.68. Legacy DOI 10.3126/kuset.v6i1.3311; printed
-      March 2010 issue rather than Crossref's anomalous 1970 date.
-    url: https://nepjol.info/index.php/KUSET/article/download/3311/2851
-    accessed_on: '2026-10-14'
-  - id: nakiboglu2001
-    title: >-
-      Nakiboglu, Toscali and Yasa (2001). Silver Recovery from Waste
-      Photographic Films by an Enzymatic Method. Turkish Journal of
-      Chemistry 25:349-353; complete original institutional copy, Experimental
-      pp.350-351, Figure 1, Tables 1-2 and product measurements p.352.
-      Publisher lists no assigned DOI.
-    url: https://acikerisim.balikesir.edu.tr/bitstreams/2aa318e5-ec84-4407-b611-8ecd7586b136/download
-    accessed_on: '2026-10-14'
-  - id: ncbi_coronatus
-    title: 'NCBI Taxonomy 34488: Conidiobolus coronatus, species; not identification of the assay stock'
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=34488
-    accessed_on: '2026-10-14'
-  - id: ncbi_atcc6633
-    title: 'NCBI Taxonomy 703612: Bacillus spizizenii ATCC 6633 = JCM 2499; strain record'
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=703612
-    accessed_on: '2026-10-14'
-  - id: atcc6633
-    title: >-
-      ATCC 6633: Bacillus spizizenii, strain NRS 231; deposited as Bacillus
-      subtilis, formerly Bacillus subtilis subsp. spizizenii. Current culture
-      name does not independently authenticate the historical experimental stock.
-    url: https://www.atcc.org/products/6633
-    accessed_on: '2026-10-14'
+- id: shankar2010
+  title: Shankar, More and Laxman (2010). Recovery of Silver from Waste X-Ray Film by Alkaline Protease
+    from Conidiobolus coronatus. Kathmandu University Journal of Science, Engineering and Technology 6(1):60-69;
+    original published PDF, Methods pp.61-63, Figures 1-4, Table 1 and silver analysis p.68. Legacy DOI
+    10.3126/kuset.v6i1.3311; printed March 2010 issue rather than Crossref's anomalous 1970 date.
+  url: https://nepjol.info/index.php/KUSET/article/download/3311/2851
+  accessed_on: '2026-10-14'
+- id: nakiboglu2001
+  title: Nakiboglu, Toscali and Yasa (2001). Silver Recovery from Waste Photographic Films by an Enzymatic
+    Method. Turkish Journal of Chemistry 25:349-353; complete original institutional copy, Experimental
+    pp.350-351, Figure 1, Tables 1-2 and product measurements p.352. Publisher lists no assigned DOI.
+  url: https://acikerisim.balikesir.edu.tr/bitstreams/2aa318e5-ec84-4407-b611-8ecd7586b136/download
+  accessed_on: '2026-10-14'
+- id: ncbi_coronatus
+  title: 'NCBI Taxonomy 34488: Conidiobolus coronatus, species; not identification of the assay stock'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=34488
+  accessed_on: '2026-10-14'
+- id: ncbi_atcc6633
+  title: 'NCBI Taxonomy 703612: Bacillus spizizenii ATCC 6633 = JCM 2499; strain record'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=703612
+  accessed_on: '2026-10-14'
+- id: atcc6633
+  title: 'ATCC 6633: Bacillus spizizenii, strain NRS 231; deposited as Bacillus subtilis, formerly Bacillus
+    subtilis subsp. spizizenii. Current culture name does not independently authenticate the historical
+    experimental stock.'
+  url: https://www.atcc.org/products/6633
+  accessed_on: '2026-10-14'
 mechanisms:
-  - id: fungal_supernatant_emulsion_stripping
-    name: Gelatin-silver layer stripping by fungal cell-free culture supernatant
-    process: separation
-    microbial: true
-    organisms:
-      - id: NCBITaxon:34488
-        label: Conidiobolus coronatus
-    description: >-
-      Crude cell-free supernatant from the source-designated Conidiobolus
-      coronatus ATCC PTA-4132 culture removed the gelatin layer and released
-      silver-bearing material. Dose dependence, a low zero-enzyme response
-      and protein/hydroxyproline release support proteolytic stripping;
-      microbial silver reduction, metal solubilization or a purified enzyme
-      mechanism was not demonstrated. Living fungus was used to produce the
-      preparation, not applied directly to the films.
-    context: >-
-      Shankar2010 obtained used films from a local medical centre, washed them
-      with water and ethanol, dried them at 40 degrees C for 30 min and cut
-      2 by 2 cm pieces. Enzyme preparation used 72 h growth in MGYP broth
-      with 2% w/v soybean meal, then centrifugation at 8000 g for 20 min at
-      4 degrees C. The paper refers culture-production details to prior work;
-      no independent strain authentication was performed here. Stripping
-      assays generally used 1 g film in 10 mL crude preparation at pH 10
-      and 40 degrees C with shaking. The separate silver assay used 5 g in
-      50 mL, 1.35 U/mL protease and 200 rpm, followed by acid digestion of
-      the slurry and atomic absorption analysis. Activity units are source
-      assay units, not an enzyme mass or units directly comparable across studies.
-      Independent replicate counts and variability are not reported.
+- id: fungal_supernatant_emulsion_stripping
+  name: Gelatin-silver layer stripping by fungal cell-free culture supernatant
+  process: separation
+  microbial: true
+  organisms:
+  - id: NCBITaxon:34488
+    label: Conidiobolus coronatus
+  description: Crude cell-free supernatant from the source-designated Conidiobolus coronatus ATCC PTA-4132
+    culture removed the gelatin layer and released silver-bearing material. Dose dependence, a low zero-enzyme
+    response and protein/hydroxyproline release support proteolytic stripping; microbial silver reduction,
+    metal solubilization or a purified enzyme mechanism was not demonstrated. Living fungus was used to
+    produce the preparation, not applied directly to the films.
+  context: Shankar2010 obtained used films from a local medical centre, washed them with water and ethanol,
+    dried them at 40 degrees C for 30 min and cut 2 by 2 cm pieces. Enzyme preparation used 72 h growth
+    in MGYP broth with 2% w/v soybean meal, then centrifugation at 8000 g for 20 min at 4 degrees C. The
+    paper refers culture-production details to prior work; no independent strain authentication was performed
+    here. Stripping assays generally used 1 g film in 10 mL crude preparation at pH 10 and 40 degrees
+    C with shaking. The separate silver assay used 5 g in 50 mL, 1.35 U/mL protease and 200 rpm, followed
+    by acid digestion of the slurry and atomic absorption analysis. Activity units are source assay units,
+    not an enzyme mass or units directly comparable across studies. Independent replicate counts and variability
+    are not reported.
+  evidence:
+  - source_ref: shankar2010
+    supports: support
+    explanation: Methods pp.61-63 and Figures 1-3 support the conditions and temperature, pH and dose
+      responses; Figure 3 includes a 0 U/mL comparator that remains near baseline. The pH/temperature
+      series reports complete layer removal at 40 degrees C and pH 10 in 6 min with 1.35 U/mL. This is
+      an operational stripping endpoint; percentage hydrolysis is normalized to maximum turbidity, not
+      a measured percentage of silver recovered.
+  - source_ref: shankar2010
+    supports: partial
+    explanation: The time-course Methods p.62 specifies 0.9 U/mL whereas Figure 4a labels 1.35 and 2.7
+      U/mL; the disputed dose-specific series is not combined with the other arms. Figure 3 was sampled
+      every 5 min, so its text's proposed 6-min completion was explicitly not measured in that arm. Table
+      1 separately reports four successive film batches at 0.90 U/mL taking 6, 10, 14 and 20 min, including
+      the first use; lower-dose preparations lose stripping capacity sooner. This does not establish four
+      additional reuses or constant performance.
+  - source_ref: shankar2010
+    supports: partial
+    explanation: Silver analysis p.68 reports 3.87% w/w of solid sludge and 0.2% w/w relative to starting
+      film mass. These denominators differ from recovery of initial silver inventory, which was not independently
+      established for the tested feed. The introduction's 1.5-2% silver range is background, not its feed
+      assay. The statement that metal or AgCl was recovered has no corresponding isolation protocol or
+      product characterization in this paper; the accepted result is silver-bearing hydrolysate and stripped
+      film. No whole-process mass balance, comparative energy assessment or deployment follows.
+- id: bacterial_stripping_then_smelting
+  name: Bacterial enzyme stripping followed by separate abiotic silver smelting
+  process: recovery
+  microbial: true
+  organisms:
+  - id: NCBITaxon:703612
+    label: Bacillus spizizenii ATCC 6633 = JCM 2499
+  description: Culture-derived cell-free enzyme extract stripped the gelatin-silver layer, after which
+    drying and borax-assisted smelting produced a silver product. Microbial involvement concerns enzyme
+    production and stripping; the high-temperature metal isolation was abiotic. The source calls the culture
+    Bacillus subtilis ATCC 6633; current ATCC and NCBI records map that designation to Bacillus spizizenii,
+    without reauthenticating the historical Ege University stock.
+  context: Nakiboglu2001 used films from Ege University's medical-faculty hospital radiology department.
+    The culture was grown in modified Horikoshi medium supplemented with 1% gelatin, at 30 degrees C and
+    200 rpm for 24 h; a further transfer is described without an independently specified final culture
+    volume. Centrifugation at 10000 rpm for 10 min at 4 degrees C provided the cell-free extract. Film
+    pieces were washed with water/ethanol, dried at 40 degrees C for 30 min and cut to 4 by 4 cm. The
+    reported recovery run treated 70 pieces successively in 100 mL stock extract at pH 8 and 50 degrees
+    C with stirring, then dried the slurry and smelted it with borax at 1100 degrees C. The preparation's
+    measured casein-assay activity was 22.35 U/mL. No enzyme-free film comparator or initial silver-inventory
+    assay is reported, and the downstream furnace hold time and borax loading are not specified.
+  evidence:
+  - source_ref: nakiboglu2001
+    supports: support
+    explanation: Experimental pp.350-351 and Results p.352 distinguish the upstream biological preparation
+      from thermal recovery. The authors report 0.4013 g silver product and potentiometric purity 99.16
+      plus or minus 0.11%, specified as a 95% confidence level with N=5. This is product composition,
+      not 99.16% recovery of the feed silver or five independent process replicates. Table 2 separately
+      measures eleven trace impurities by ICP-MS; it is not a complete impurity mass balance or proof
+      of semiconductor-grade silver.
+  - source_ref: nakiboglu2001
+    supports: partial
+    explanation: Figure 1 tests the pH response at 30 and 40 degrees C, while the recovery run uses 50
+      degrees C. Table 1 reports declining capacity at 60 degrees C, but its speed/capacity denominators
+      cannot be reconciled directly with the stated 4-by-4-cm pieces and 100-mL run; those numerical capacities
+      are not adopted. The 0.36 mg/cm2 value is calculated from the recovered product, not a separate
+      starting-film silver assay. No total-inventory extraction yield, exclusive enzyme causality, industrial
+      operation or environmental superiority is established; the authors themselves retain the high-temperature
+      burning step as a disadvantage.
+  - source_ref: atcc6633
+    supports: context_only
+    explanation: The current collection entry identifies ATCC 6633 as Bacillus spizizenii strain NRS 231,
+      deposited as Bacillus subtilis. This nomenclatural mapping supports the linked organism label; collection
+      metadata and later genome sequencing are not evidence that the historical assay stock was independently
+      authenticated.
+causal_graphs:
+- id: fungal_supernatant_emulsion_stripping_graph
+  name: Conidiobolus coronatus cell-free alkaline protease stripping of waste X-ray film gelatin layer
+  description: Causal pathway linking crude cell-free alkaline protease supernatant from Conidiobolus
+    coronatus ATCC PTA-4132 to proteolytic hydrolysis of the gelatin-silver emulsion on used X-ray film
+    and release of silver-bearing sludge and clean polyester film.
+  scope: RECORD_SPECIFIC_MECHANISM
+  mechanism_ref: fungal_supernatant_emulsion_stripping
+  nodes:
+  - id: conidiobolus_alkaline_protease_supernatant
+    label: Conidiobolus coronatus ATCC PTA-4132 extracellular alkaline protease (cell-free supernatant)
+    node_type: GENE_OR_PROTEIN
+    description: Crude extracellular alkaline protease in cell-free MGYP-soybean-meal culture supernatant
+      of Conidiobolus coronatus ATCC PTA-4132 (Shankar et al. 2010); marked UNGROUNDED because no purified
+      enzyme sequence, gene symbol, or active UniProtKB accession for this protease is available.
+    protein_grounding_status: UNGROUNDED
+  - id: used_xray_film_gelatin_silver_layer
+    label: Used medical X-ray film gelatin-silver emulsion layer (2 x 2 cm pieces)
+    node_type: MATERIAL_OR_PHASE
+    description: Gelatin-bound silver emulsion layer coating used polyester radiographic film.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: silver_bearing_hydrolysate_and_stripped_film
+    label: Silver-bearing hydrolysate sludge (3.87% w/w Ag in dry sludge) and stripped polyester base
+    node_type: MATERIAL_OR_PHASE
+    description: Released silver-bearing protein hydrolysate slurry and stripped polyester film support.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: conidiobolus_alkaline_protease_supernatant
+    target: used_xray_film_gelatin_silver_layer
+    predicate: acts_on
+    relationship: proteolytic hydrolysis of gelatin emulsion at pH 10 and 40 degrees C
+    description: Crude cell-free protease preparation (1.35 U/mL) hydrolyzes the gelatin layer on used
+      X-ray film within ~6 minutes at 40 degrees C and pH 10.
     evidence:
-      - source_ref: shankar2010
-        supports: support
-        explanation: >-
-          Methods pp.61-63 and Figures 1-3 support the conditions and
-          temperature, pH and dose responses; Figure 3 includes a 0 U/mL
-          comparator that remains near baseline. The pH/temperature series
-          reports complete layer removal at 40 degrees C and pH 10 in
-          6 min with 1.35 U/mL. This is an operational stripping endpoint;
-          percentage hydrolysis is normalized to maximum turbidity, not
-          a measured percentage of silver recovered.
-      - source_ref: shankar2010
-        supports: partial
-        explanation: >-
-          The time-course Methods p.62 specifies 0.9 U/mL whereas Figure 4a
-          labels 1.35 and 2.7 U/mL; the disputed dose-specific series is not
-          combined with the other arms. Figure 3 was sampled every 5 min,
-          so its text's proposed 6-min completion was explicitly not measured
-          in that arm. Table 1 separately reports four successive film batches
-          at 0.90 U/mL taking 6, 10, 14 and 20 min, including the first use;
-          lower-dose preparations lose stripping capacity sooner. This does
-          not establish four additional reuses or constant performance.
-      - source_ref: shankar2010
-        supports: partial
-        explanation: >-
-          Silver analysis p.68 reports 3.87% w/w of solid sludge and 0.2%
-          w/w relative to starting film mass. These denominators differ from
-          recovery of initial silver inventory, which was not independently
-          established for the tested feed. The introduction's 1.5-2% silver
-          range is background, not its feed assay. The statement that metal
-          or AgCl was recovered has no corresponding isolation protocol or
-          product characterization in this paper; the accepted result is
-          silver-bearing hydrolysate and stripped film. No whole-process
-          mass balance, comparative energy assessment or deployment follows.
-  - id: bacterial_stripping_then_smelting
-    name: Bacterial enzyme stripping followed by separate abiotic silver smelting
-    process: recovery
-    microbial: true
-    organisms:
-      - id: NCBITaxon:703612
-        label: Bacillus spizizenii ATCC 6633 = JCM 2499
-    description: >-
-      Culture-derived cell-free enzyme extract stripped the gelatin-silver
-      layer, after which drying and borax-assisted smelting produced a silver
-      product. Microbial involvement concerns enzyme production and stripping;
-      the high-temperature metal isolation was abiotic. The source calls the
-      culture Bacillus subtilis ATCC 6633; current ATCC and NCBI records map
-      that designation to Bacillus spizizenii, without reauthenticating the
-      historical Ege University stock.
-    context: >-
-      Nakiboglu2001 used films from Ege University's medical-faculty hospital
-      radiology department. The culture was grown in modified Horikoshi medium
-      supplemented with 1% gelatin, at 30 degrees C and 200 rpm for 24 h;
-      a further transfer is described without an independently specified
-      final culture volume. Centrifugation at 10000 rpm for 10 min at
-      4 degrees C provided the cell-free extract. Film pieces were washed
-      with water/ethanol, dried at 40 degrees C for 30 min and cut to
-      4 by 4 cm. The reported recovery run treated 70 pieces successively
-      in 100 mL stock extract at pH 8 and 50 degrees C with stirring,
-      then dried the slurry and smelted it with borax at 1100 degrees C.
-      The preparation's measured casein-assay activity was 22.35 U/mL.
-      No enzyme-free film comparator or initial silver-inventory assay is
-      reported, and the downstream furnace hold time and borax loading
-      are not specified.
+    - source_ref: shankar2010
+      supports: support
+      explanation: Methods pp. 61-63 and Figures 1-3 in Shankar et al. (2010) demonstrate dose-dependent
+        proteolytic gelatin stripping with a near-baseline 0 U/mL control.
+  - source: used_xray_film_gelatin_silver_layer
+    target: silver_bearing_hydrolysate_and_stripped_film
+    predicate: transforms_into
+    relationship: release of silver-bearing sludge into hydrolysate and clean film separation
+    description: Hydrolysis of the gelatin binder releases silver-bearing material into the aqueous slurry
+      and leaves a stripped polyester film.
     evidence:
-      - source_ref: nakiboglu2001
-        supports: support
-        explanation: >-
-          Experimental pp.350-351 and Results p.352 distinguish the upstream
-          biological preparation from thermal recovery. The authors report
-          0.4013 g silver product and potentiometric purity 99.16 plus or
-          minus 0.11%, specified as a 95% confidence level with N=5. This
-          is product composition, not 99.16% recovery of the feed silver or
-          five independent process replicates. Table 2 separately measures
-          eleven trace impurities by ICP-MS; it is not a complete impurity
-          mass balance or proof of semiconductor-grade silver.
-      - source_ref: nakiboglu2001
-        supports: partial
-        explanation: >-
-          Figure 1 tests the pH response at 30 and 40 degrees C, while the
-          recovery run uses 50 degrees C. Table 1 reports declining capacity
-          at 60 degrees C, but its speed/capacity denominators cannot be
-          reconciled directly with the stated 4-by-4-cm pieces and 100-mL
-          run; those numerical capacities are not adopted. The 0.36 mg/cm2
-          value is calculated from the recovered product, not a separate
-          starting-film silver assay. No total-inventory extraction yield,
-          exclusive enzyme causality, industrial operation or environmental
-          superiority is established; the authors themselves retain the
-          high-temperature burning step as a disadvantage.
-      - source_ref: atcc6633
-        supports: context_only
-        explanation: >-
-          The current collection entry identifies ATCC 6633 as Bacillus
-          spizizenii strain NRS 231, deposited as Bacillus subtilis. This
-          nomenclatural mapping supports the linked organism label; collection
-          metadata and later genome sequencing are not evidence that the
-          historical assay stock was independently authenticated.
+    - source_ref: shankar2010
+      supports: partial
+      explanation: Shankar et al. (2010) p. 68 report 3.87% w/w Ag in dried hydrolysate sludge (0.2% w/w
+        of starting film mass) and clean stripped film.
+- id: bacterial_stripping_then_smelting_graph
+  name: Bacillus spizizenii ATCC 6633 protease stripping of waste X-ray film followed by abiotic borax
+    smelting
+  description: Causal pathway linking cell-free protease extract from Bacillus spizizenii ATCC 6633 (reported
+    as Bacillus subtilis ATCC 6633) to gelatin-silver stripping at 50 degrees C, pH 8, followed by separate
+    abiotic drying and 1100 degrees C borax smelting to metallic silver.
+  scope: RECORD_SPECIFIC_MECHANISM
+  mechanism_ref: bacterial_stripping_then_smelting
+  nodes:
+  - id: bacillus_atcc6633_protease_extract
+    label: Bacillus spizizenii ATCC 6633 cell-free alkaline protease extract (22.35 U/mL)
+    node_type: GENE_OR_PROTEIN
+    description: Crude extracellular protease extract harvested from Bacillus spizizenii ATCC 6633 (historically
+      reported as B. subtilis ATCC 6633) grown on gelatin-supplemented modified Horikoshi medium in Nakiboglu
+      et al. (2001); marked UNGROUNDED because the crude extract was not fractionated to a specific protease
+      gene or protein.
+    protein_grounding_status: UNGROUNDED
+  - id: radiology_xray_film_pieces
+    label: Used hospital radiology X-ray film pieces (4 x 4 cm)
+    node_type: MATERIAL_OR_PHASE
+    description: 70 pieces of used medical X-ray film treated successively in 100 mL cell-free enzyme
+      extract.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: stripped_silver_slurry_intermediate
+    label: Stripped gelatin-silver hydrolysate slurry and clean film base
+    node_type: MATERIAL_OR_PHASE
+    description: Detached silver-containing slurry obtained after enzymatic gelatin stripping at pH 8
+      and 50 degrees C.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: smelted_metallic_silver_product
+    label: Smelted metallic silver product (0.4013 g, 99.16% purity after abiotic 1100 C borax smelting)
+    node_type: MATERIAL_OR_PHASE
+    description: Metallic silver button obtained by abiotic drying and smelting of the stripped slurry
+      with borax at 1100 degrees C.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: bacillus_atcc6633_protease_extract
+    target: radiology_xray_film_pieces
+    predicate: acts_on
+    relationship: enzymatic stripping of gelatin-silver layer at pH 8 and 50 degrees C
+    description: Cell-free bacterial protease extract hydrolyzes the gelatin emulsion layer on 70 successive
+      X-ray film pieces.
+    evidence:
+    - source_ref: nakiboglu2001
+      supports: support
+      explanation: Experimental pp. 350-351 and Results p. 352 in Nakiboglu et al. (2001) describe enzymatic
+        stripping of 70 film pieces in 100 mL stock extract at pH 8 and 50 degrees C.
+  - source: radiology_xray_film_pieces
+    target: stripped_silver_slurry_intermediate
+    predicate: transforms_into
+    relationship: detachment of silver-bearing emulsion into aqueous slurry
+    description: Proteolytic gelatin breakdown transfers the silver layer into the aqueous slurry.
+    evidence:
+    - source_ref: nakiboglu2001
+      supports: support
+      explanation: Nakiboglu et al. (2001) stripped the gelatin-silver layer into an aqueous slurry prior
+        to drying.
+  - source: stripped_silver_slurry_intermediate
+    target: smelted_metallic_silver_product
+    predicate: transforms_into
+    relationship: separate abiotic drying and 1100 degrees C borax-assisted furnace smelting
+    description: Drying the stripped slurry and smelting with borax at 1100 degrees C yields 0.4013 g
+      metallic silver (99.16% potentiometric purity).
+    evidence:
+    - source_ref: nakiboglu2001
+      supports: support
+      explanation: Results p. 352 in Nakiboglu et al. (2001) report 0.4013 g silver product of 99.16 +/-
+        0.11% purity after abiotic borax smelting at 1100 degrees C.
 curation_history:
-  - timestamp: '2026-10-14T19:41:46Z'
-    curator: Codex (GPT-6; Codex)
-    action: CREATE
-    summary: >-
-      Added the medical waste-film resource from two complete primary studies,
-      distinguishing fungal enzyme stripping and bacterial enzyme stripping
-      followed by abiotic smelting. Preserved source-dose discrepancies,
-      uncertain controls and denominators, product-purity scope and current
-      taxonomic mappings. Independent scientific review is separate.
+- timestamp: '2026-10-14T19:41:46Z'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Added the medical waste-film resource from two complete primary studies, distinguishing fungal
+    enzyme stripping and bacterial enzyme stripping followed by abiotic smelting. Preserved source-dose
+    discrepancies, uncertain controls and denominators, product-purity scope and current taxonomic mappings.
+    Independent scientific review is separate.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Added two causal graphs with explicit UNGROUNDED protease nodes for fungal and bacterial enzymatic
+    stripping of waste X-ray films.
 history_refs:
-  - history/records/waste-x-ray-films/2026-10-14T194146Z-codex-1b7408.yaml
+- history/records/waste-x-ray-films/2026-10-14T194146Z-codex-1b7408.yaml
+- history/records/waste-x-ray-films/2026-10-21T184653Z-claude-66623a.yaml

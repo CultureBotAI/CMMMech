@@ -128,9 +128,10 @@ mechanisms:
       ferrooxidans ATCC 23270 (NCBITaxon:243159).
     evidence:
     - source_ref: baranov2013-sponge
-      supports: support
-      explanation: Oxidizes reduced inorganic sulfur intermediates during acidophilic bioleaching of Titanium
-        sponge feed in 9K ferric-sulfate medium.
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (AFE_1792);
+        Baranov et al. (2013) used an unaccessioned A. ferrooxidans culture in ferric-sulfate solution
+        without gene-level or sulfur-pathway testing.
   - uniprot_accession: UniProtKB:B7J3C9
     entry_name: TTH_ACIF2
     protein_name: Tetrathionate hydrolase
@@ -155,15 +156,16 @@ mechanisms:
       ferrooxidans ATCC 23270 (NCBITaxon:243159).
     evidence:
     - source_ref: baranov2013-sponge
-      supports: support
-      explanation: Hydrolyzes polythionate intermediates to regenerate sulfuric acid acidity during bioleaching
-        of Titanium sponge feed in 9K ferric-sulfate medium.
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (tth);
+        Baranov et al. (2013) used an unaccessioned A. ferrooxidans culture in ferric-sulfate solution
+        without gene-level or sulfur-pathway testing.
 causal_graphs:
 - id: ferrooxidans_titanium_sponge_grinding_graph
   name: Acidithiobacillus ferrooxidans ferric-sulfate medium conditioning during titanium sponge grinding
-  description: Causal pathway linking Acidithiobacillus ferrooxidans chemolithoautotrophic sulfur/iron
-    metabolism (Sqr, Tth) to acidic ferric-sulfate solution conditioning during mechanical grinding of
-    titanium sponge.
+  description: Representative Acidithiobacillus ferrooxidans pathway and ferric-sulfate / sulfuric-acid
+    treatment associated with disintegration of titanium sponge and titanium waste feeds into a fine powder
+    reported to contain titanium oxides and hydride.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: culture_ferric_grinding_of_titanium_sponge
   nodes:
@@ -198,9 +200,10 @@ causal_graphs:
         ferrooxidans ATCC 23270 (NCBITaxon:243159).
       evidence:
       - source_ref: baranov2013-sponge
-        supports: support
-        explanation: Oxidizes reduced inorganic sulfur intermediates during acidophilic bioleaching of
-          Titanium sponge feed in 9K ferric-sulfate medium.
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme
+          (AFE_1792); Baranov et al. (2013) used an unaccessioned A. ferrooxidans culture in ferric-sulfate
+          solution without gene-level or sulfur-pathway testing.
   - id: tth_hydrolase
     label: Tth tetrathionate hydrolase (tth / AFE_0029)
     node_type: GENE_OR_PROTEIN
@@ -233,9 +236,10 @@ causal_graphs:
         ferrooxidans ATCC 23270 (NCBITaxon:243159).
       evidence:
       - source_ref: baranov2013-sponge
-        supports: support
-        explanation: Hydrolyzes polythionate intermediates to regenerate sulfuric acid acidity during
-          bioleaching of Titanium sponge feed in 9K ferric-sulfate medium.
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme
+          (tth); Baranov et al. (2013) used an unaccessioned A. ferrooxidans culture in ferric-sulfate
+          solution without gene-level or sulfur-pathway testing.
   - id: acidic_ferric_sulfate_lixiviant
     label: Biogenic sulfuric acid and Fe(III) oxidative lixiviant
     node_type: CHEMICAL_ENTITY
@@ -243,16 +247,17 @@ causal_graphs:
       metabolism.
     protein_grounding_status: NOT_APPLICABLE
   - id: solid_feed_substrate
-    label: Titanium sponge feed in 9K ferric-sulfate medium
+    label: Titanium sponge and titanium-industry waste feeds in ferric-sulfate solution
     node_type: MATERIAL_OR_PHASE
-    description: Starting mineral or secondary-resource feed (Titanium sponge feed in 9K ferric-sulfate
-      medium).
+    description: Metallic titanium sponge and titanium-alloy waste feeds immersed in acidic ferric-sulfate
+      solution with Acidithiobacillus ferrooxidans (no 9K medium recipe is specified in the paper).
     protein_grounding_status: NOT_APPLICABLE
   - id: solubilized_metal_species
-    label: Mechanochemically dispersed TiO2/rutile/anatase-assigned fine fraction
-    node_type: CHEMICAL_ENTITY
-    description: Dissolved metal ions (Mechanochemically dispersed TiO2/rutile/anatase-assigned fine fraction)
-      mobilized into the acidic pregnant leach solution.
+    label: Fine agglomerated powder reported to contain titanium oxides and hydride
+    node_type: MATERIAL_OR_PHASE
+    description: Fine agglomerated solid powder recovered after ferric-sulfate/bacterial treatment and
+      described by Baranov et al. (2013) as containing titanium oxides and hydride (without published
+      diffraction patterns or polymorph assignment).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: sqr_reductase
@@ -263,7 +268,7 @@ causal_graphs:
       by periplasmic tetrathionate hydrolase.
     evidence:
     - source_ref: baranov2013-sponge
-      supports: support
+      supports: partial
       explanation: Reduced sulfur oxidation in A. ferrooxidans couples Sqr and polythionate hydrolysis
         to proton generation.
   - source: tth_hydrolase
@@ -274,29 +279,29 @@ causal_graphs:
       medium.
     evidence:
     - source_ref: baranov2013-sponge
-      supports: support
+      supports: partial
       explanation: Sulfur-compound oxidation maintains the acidic lixiviant required for metal solubilization.
   - source: acidic_ferric_sulfate_lixiviant
     target: solid_feed_substrate
     predicate: acts_on
     relationship: acidic and oxidative mineral/feed attack
-    description: Biogenic acid and ferric ions attack Titanium sponge feed in 9K ferric-sulfate medium.
+    description: Biogenic acid and ferric ions attack Titanium sponge feed in acidic ferric-sulfate medium.
     evidence:
     - source_ref: baranov2013-sponge
-      supports: support
-      explanation: Culture-generated acidic ferric/sulfate medium attacks Titanium sponge feed in 9K ferric-sulfate
-        medium.
+      supports: partial
+      explanation: Culture-generated acidic ferric/sulfate medium attacks Titanium sponge feed in acidic
+        ferric-sulfate medium.
   - source: solid_feed_substrate
     target: solubilized_metal_species
     predicate: produces
-    relationship: oxidative/acidic dissolution
-    description: Dissolution of Titanium sponge feed in 9K ferric-sulfate medium releases Mechanochemically
-      dispersed TiO2/rutile/anatase-assigned fine fraction.
+    relationship: hydride-assisted disintegration and surface oxidation to fine powder
+    description: Exposure of titanium sponge or waste to acidic ferric-sulfate culture solution yields
+      a fine agglomerated powder reported to contain titanium oxides and hydride.
     evidence:
     - source_ref: baranov2013-sponge
-      supports: support
-      explanation: Bioleaching mobilizes Mechanochemically dispersed TiO2/rutile/anatase-assigned fine
-        fraction into solution.
+      supports: partial
+      explanation: Baranov et al. (2013) report disintegration into fine agglomerated powder with reported
+        titanium oxides and hydride, without published XRD patterns or abiotic controls.
 curation_history:
 - timestamp: '2026-10-11T08:30:16Z'
   curator: codex (GPT-6; codex)
@@ -320,8 +325,15 @@ curation_history:
   action: EDIT
   summary: Added verified UniProtKB protein examples (Sqr UniProtKB:B7JBP8, Tth UniProtKB:B7J3C9) and
     causal graph for Acidithiobacillus ferrooxidans-assisted titanium sponge processing.
+- timestamp: '2026-10-21T18:46:53Z'
+  curator: claude
+  action: EDIT
+  summary: Removed unsupported '9K medium', 'Dissolved metal ions', and 'TiO2/rutile/anatase-assigned'
+    claims from titanium-metal.yaml causal graph, changed product node_type to MATERIAL_OR_PHASE, and
+    set supports to partial.
 history_refs:
 - history/records/titanium-metal/2026-10-11T083011Z-codex-5e59d0.yaml
 - history/records/titanium-metal/2026-10-12T023444Z-codex-ff8e43.yaml
 - history/records/titanium-metal/2026-10-12T023836Z-codex-e31d46.yaml
 - history/records/titanium-metal/2026-10-18T042750Z-antigravity-34efce.yaml
+- history/records/titanium-metal/2026-10-21T184653Z-claude-121f41.yaml
