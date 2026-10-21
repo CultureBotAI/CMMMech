@@ -1,0 +1,502 @@
+schema_version: 1.0.0
+review_id: 20261021T185325Z-laueite-issue372-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent full scientific review of laueite processed diffraction evidence
+started_at: '2026-10-21T18:50:00Z'
+finished_at: '2026-10-21T18:53:25Z'
+reviewer:
+  identity: codex /root/resume_213_review_165
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored owner/history/source pair; separate agent405 provided
+    author-support calculations. I edited none of those inputs. I inspected originals
+    independently, supplied a high-resolution source view and pre-freeze transcription/precision
+    observations, then captured governed inspect and assessed exact final bytes. Shared
+    acquisition and preparatory source contribution are disclosed; independent acceptance
+    is not claimed for author405.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Laueite identity and qualified natural epitaxy remain supported. The bounded
+  direct-CIF source/description addition correctly distinguishes available processed
+  reflection rows from their absence in the deposited checkCIF run. No maintained
+  owner or frozen source finding; unresolved model/chemistry/H issues keep issue372
+  open.
+source:
+  git_revision: 1296ee20f2595d7d6a50e391f611c22435418906
+  state: working_tree
+  inputs:
+  - path: data/records/laueite.yaml
+    sha256: 25662d7783283d90b5e2ca660e6de3f0529974b768586997bd667e2a973f0be0
+    role: target
+  - path: docs/record-review-profile.md
+    sha256: 01c6f39d0d097876a0446131270df58bb32fa15804c66487419c171719d3ddc0
+    role: context
+  - path: docs/record-reviews.md
+    sha256: 452a19ab688276747b7c4308523a14d4d99c1c39ef6909ae8a90b85b7a9b3e9b
+    role: context
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/laueite/2026-10-15T193223Z-codex-efaefd.yaml
+    sha256: 922e000826250b9f9c957e80c700161ae4287f7048e06e2ffe6fd7dcbb910a55
+    role: context
+  - path: history/records/laueite/2026-10-21T184255Z-codex-198489.yaml
+    sha256: ce61c29fc367fd07af4f0c9765d3987907052a4090293d93f344d36c1dac17c7
+    role: context
+  - path: research/sources/issue-372-laueite-diffraction-qualifications/20261021T184938Z-evidence.json
+    sha256: 629f26507e829378d5e476eda601861aa8a4b9b1e081d84f904efc803e12747f
+    role: context
+  - path: research/sources/issue-372-laueite-diffraction-qualifications/20261021T184938Z.md
+    sha256: 3e3880529a5e5bcddc7795edb9a1324d758a02b01618e5e91231a6f7c53c04de
+    role: context
+  - path: research/sources/round101-phosphates/20261015T193202Z-source-investigation.md
+    sha256: 01231ed8703b38fb0f84f323a35e6002e09543c030b53e561ddc6bdaf3925790
+    role: context
+  - path: reviews/structured/20261015T194350Z-laueite-round101-independent/review.yaml
+    sha256: 245bc41dccfa4aa6175d891a4e95b70aacfe75cd2fc3d28713768ce22a061869
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+scope:
+  description: Full scientific review of one exact final maintained laueite owner,
+    linked history, source handoff and required generated scope.
+  selection: Parent-assigned changed owner for issue372; no sampling of owners.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - laueite
+  exclusions:
+  - target: New stewartite or pseudolaueite owners
+    reason: Comparison sources only; no new owner proposed.
+  - target: Re-refinement and raw detector reconstruction
+    reason: Not performed; processed tables do not supply a complete raw integration
+      package.
+targets:
+- target_id: laueite
+  path: data/records/laueite.yaml
+  label: Laueite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/laueite.yaml
+    role: maintained scientific record
+checks:
+- check_id: local-0
+  name: Named record
+  status: passed
+  required: true
+  summary: One laueite record valid.
+  target_ids:
+  - laueite
+  command: uv run --locked cmmmech validate data/records/laueite.yaml
+  exit_code: 0
+  evidence_ids:
+  - independent-gates
+- check_id: local-1
+  name: Nonempty corpus
+  status: passed
+  required: true
+  summary: 616records,0failures.
+  target_ids:
+  - laueite
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  evidence_ids:
+  - independent-gates
+- check_id: local-2
+  name: Canonical history
+  status: passed
+  required: true
+  summary: 745history records,0errors against exact Git base.
+  target_ids:
+  - laueite
+  command: uv run --locked cmmmech validate-history --base 1296ee20f2595d7d6a50e391f611c22435418906
+  exit_code: 0
+  evidence_ids:
+  - independent-gates
+- check_id: local-3
+  name: Whitespace
+  status: passed
+  required: true
+  summary: gitdiffcheck passed.
+  target_ids:
+  - laueite
+  command: git diff --check
+  exit_code: 0
+  evidence_ids:
+  - independent-gates
+- check_id: full
+  name: Postfreeze full validation
+  status: passed
+  required: true
+  summary: Actual author62662exit0;363passed3skipped97.11s616records745histories;
+    exact final receipt/log checked.
+  target_ids:
+  - laueite
+  command: just check
+  exit_code: 0
+  evidence_ids:
+  - final-gates
+  scope_note: Actual author run independently verified; no redundant full rerun claimed.
+    Root will run required postnative full check separately.
+- check_id: canonical
+  name: Governed canonical synchronization
+  status: passed
+  required: true
+  summary: Actual42962exit0,22matches; reused after unchanged code/governed bytes
+    verified.
+  target_ids:
+  - laueite
+  command: bash scripts/check_vendored_sync.sh
+  exit_code: 0
+  evidence_ids:
+  - final-gates
+- check_id: primary
+  name: Full bounded scientific evidence inspection
+  status: passed
+  required: true
+  summary: Whole owner, all42original pages, both nativeCIFs and numeric/provenance
+    checks completed.
+  target_ids:
+  - laueite
+  evidence_ids:
+  - ima
+  - moore
+  - baur
+  - grey
+  - laueite-cif
+  - stewartite-cif
+  - check-laueite
+  - check-stewartite
+  - numeric
+  - integrity
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-372/data/records/laueite.yaml
+  locator: Whole exact current YAML, compared with base
+  accessed_at: '2026-10-21T18:53:25Z'
+  support: supports
+  summary: Full owner and narrow description/source/history addition inspected after
+    governed inspect.
+  snapshot_sha256: 25662d7783283d90b5e2ca660e6de3f0529974b768586997bd667e2a973f0be0
+- evidence_id: ima
+  kind: authority
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-372/reused-129-ima2026-09.pdf
+  locator: PDF1–2 definitions and PDF121 laueite row
+  accessed_at: '2026-10-21T18:53:25Z'
+  support: supports
+  summary: 'September2026 dated authority: G grandfathered, historical1954, Mn(II)Fe(III)2(PO4)2(OH)2(H2O)6·2H2O;
+    exact same-day reuse disclosed.'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: moore
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-372/moore1965.pdf
+  locator: All9original pages1884–1892; Tables1–3/Figures1–4
+  accessed_at: '2026-10-21T18:53:25Z'
+  support: supports
+  summary: Palermo natural-crystal P-1 framework, visual intensity measurements; H
+    not located. Other-mineral heating and proposed structures are not laueite transformations.
+  snapshot_sha256: 9a86eac54b03c2379d7af756880b7c95b31ff20d782e80d2369638456067c024
+- evidence_id: baur
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-372/baur1969.pdf
+  locator: All12original pages1312–1323; especially Table3 and pp1321–1322
+  accessed_at: '2026-10-21T18:53:25Z'
+  support: supports
+  summary: Separate pseudolaueite study reuses older laueite coordinates. Mn(III)
+    interpretation from bonds allows other substitutions; not a direct valence assay.
+  snapshot_sha256: ae64276d41dd2274299ba7ebc2a6e875b7839f7bb79e0d5baae2fd319085b5e1
+- evidence_id: grey
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-372/laueite2025.pdf
+  locator: All8original pages234–241, six figures/five tables; methods235–236, model
+    and epitaxy237–239, paragenesis239–240
+  accessed_at: '2026-10-21T18:53:25Z'
+  support: supports
+  summary: Natural mixed-rhomb laueite and separately measured protruding stewartite
+    blade distinguished from omitted weak minor stewartite model. EDS versus scattering
+    model, inferred valence/H and paragenesis limits retained.
+  snapshot_sha256: 46e1c78eab118f3f64ab4f09614e606d7e4307cdb1712d895c3c6dad52d9dad3
+- evidence_id: laueite-cif
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-372/laueite-sup003.cif
+  locator: Whole native CIF, data_I ordinary reflection loop, atom/ADP/geometry and
+    metadata
+  accessed_at: '2026-10-21T18:53:25Z'
+  support: supports
+  summary: 1252 unique hkl rows,1128 o/124 <; measured/calculated F-squared and sigma
+    present.14sites/noH. Processed reflection data are not raw5349 measurements or
+    a new refinement.
+  snapshot_sha256: 591f6f3b304ec2e626f39ddb0742b2059715d016cfd7625acd9fccef273e9cb5
+- evidence_id: stewartite-cif
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-372/laueite-sup004.cif
+  locator: Whole native CIF, data_I twin loop, atoms and metadata
+  accessed_at: '2026-10-21T18:53:25Z'
+  support: supports
+  summary: 3132 component rows collapse to2931 datum IDs only after duplicate numerical/flag
+    equality checks; actual blade comparator. Native293K differs from paper/checkCIF272K;
+    no correction selected.
+  snapshot_sha256: f2693dc7b953cf2516e2af602bf9368303494adfb33ef26b9820250238462815
+- evidence_id: check-laueite
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-372/laueite-sup001.pdf
+  locator: All6original pages, alert lists and ellipsoid plot
+  accessed_at: '2026-10-21T18:53:25Z'
+  support: supports
+  summary: Missing factors statement applies to that check run. Three A-level displacement
+    alerts and missing-H/formula/Z warnings remain unresolved, despite separate CIF
+    reflection availability.
+  snapshot_sha256: 6bc96dba01ec8ecc61f94d674825c99ebcc477396b9e2017f07eb317c2009ced
+- evidence_id: check-stewartite
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-372/laueite-sup002.pdf
+  locator: All4original pages, alert list and ellipsoid plot
+  accessed_at: '2026-10-21T18:53:25Z'
+  support: supports
+  summary: Nonstandard B-1 setting is deliberately explained in paper; missingH and
+    remaining alerts retained.
+  snapshot_sha256: c8620d3898a6e3490781058119a8c2625657d7c89c0f3d5856ef96094987cd0c
+- evidence_id: numeric
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-372-independent/final-numeric-check.json
+  locator: Independent original rekey, complete CIF tokens, geometry/residual and
+    sensitivity calculations
+  accessed_at: '2026-10-21T18:53:25Z'
+  support: supports
+  summary: 118values+64uncertainty components+9multiplicities,42531loop cells/326scalars,87bonds/478angles,18residual
+    diagnostics and64ADPcorners independently checked. No empirical BVS or re-refinement.
+  snapshot_sha256: 9cfa203f6b1aba75433a3ab8a8d7bc3651202d008151be5ff85b3cb70b2cc023
+- evidence_id: integrity
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-372-independent/integrity-check.json
+  locator: 2469hash assertions/2169paths;134raw files,1361base corpus paths;633generated
+    outputs
+  accessed_at: '2026-10-21T18:53:25Z'
+  support: supports
+  summary: Current source/history/hash bindings and explicit historical archive resolution
+    pass.630footer-only pages and3intended surfaces verified without dropping generated
+    outputs.
+  snapshot_sha256: 58851db030729ffc3e8d13ae48ee9219ad72efd121a7c73da8ee4c74e7b56747
+- evidence_id: final-gates
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-372-final-gates.json
+  locator: Actual62662exit0/chunk1e20d9; final process and full log read
+  accessed_at: '2026-10-21T18:53:25Z'
+  support: supports
+  summary: Postfreeze justcheck363passed3skipped97.11s616records745histories. Baseline
+    canonical22 explicitly reused only with unchanged governed/code bytes.
+  snapshot_sha256: 200c83bf4e90497ad5246ea2bdb4974492048b0e8f59c54f08cf21694f166887
+- evidence_id: independent-gates
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-372-independent/native-validation-gates.json
+  locator: Actual reviewer batch9368exit0/chunk7c92b9
+  accessed_at: '2026-10-21T18:53:25Z'
+  support: supports
+  summary: Named1/corpus616/history745/diff checks independently passed; actual logs
+    retained.
+  snapshot_sha256: 8ebcd8ff6dbf65bd7213f22119d6893fe05e5ed2a5963579157203c30a7082b0
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-372-independent/web-01.json
+  locator: Three exact independent web.run queries and returned result set
+  accessed_at: '2026-10-21T18:53:25Z'
+  support: context_only
+  summary: Bounded correction/erratum and mechanism counterevidence search. No correcting
+    primary item located in this result set; no universal negative claim.
+  snapshot_sha256: 89ec5f2c0a921459b9dd5a80f3b2b072ba36156e10aa46b9c152598b34321fde
+  search_scope: 'Three exact web.run queries recorded in web-01.json: "10.1180/mgm.2025.21"
+    correction erratum; "laueite" "stewartite" Grey 2025 diffraction correction; "laueite"
+    microbial bioleaching dissolution. No domain or date filters; assessment limited
+    to the returned results and linked primary material, not a universal negative.'
+- evidence_id: local-search
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-372/dedup.json
+  locator: Exact rg --no-ignore --hidden --follow roots/queries and128matching paths
+  accessed_at: '2026-10-21T18:53:25Z'
+  support: context_only
+  summary: Ignored/hidden/symlink-aware bounded dedup, explicit absent cited raw roots
+    and saved all-state title/body traversal; not machine-wide or all-comments coverage.
+  snapshot_sha256: 9e5c10c26bc56837db3d693c000c7d56fb9268ae5370e581babad46fbbd1196f
+  search_scope: 'Exact roots, expressions and paths are recorded in sources-372/dedup.json:
+    bounded worktree, main and plan record/research/review/history/skill/documentation
+    roots, using rg --no-ignore --hidden --follow; 128 matching paths. Includes explicit
+    checks of cited prior raw roots and saved all-state issue titles/bodies; excludes
+    machine-wide search and unsaved comments.'
+- evidence_id: prior
+  kind: prior_review
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-372/reviews/structured/20261015T194350Z-laueite-round101-independent/review.yaml
+  locator: Complete immutable prior native review
+  accessed_at: '2026-10-21T18:53:25Z'
+  support: supports
+  summary: Prior pass with limitations had no findings; current owner update receives
+    fresh full evidence assessment, not a fabricated resolved finding.
+  snapshot_sha256: 245bc41dccfa4aa6175d891a4e95b70aacfe75cd2fc3d28713768ce22a061869
+- evidence_id: history
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-372/history/records/laueite/2026-10-21T184255Z-codex-198489.yaml
+  locator: Whole new canonical EDIT and existing CREATE sidecar; separate inline event
+  accessed_at: '2026-10-21T18:53:25Z'
+  support: supports
+  summary: Actual actor/model/time and exact laueite target, truthful data-availability
+    expansion; immutable prior sidecar retained.
+  snapshot_sha256: ce61c29fc367fd07af4f0c9765d3987907052a4090293d93f344d36c1dac17c7
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral identity and historical nomenclature
+  outcome: supported
+  summary: Laueite species identity, ideal formula and grandfathered status are supported;
+    historical1954 is not a modern IMA approval accession. Different frameworks and
+    strunzite hydration remain separate.
+  target_ids:
+  - laueite
+  evidence_ids:
+  - ima
+  - moore
+  - baur
+- assessment_id: natural-scope
+  area: scope
+  topic: Natural crystallography versus mechanism causality
+  outcome: supported
+  summary: The owner correctly preserves observed natural epitaxy, mixed rhomb and
+    measured blade distinctions without adding controlled transformation, microbial
+    causality or a recovery claim.
+  target_ids:
+  - laueite
+  evidence_ids:
+  - grey
+  - moore
+  - baur
+  details: No organism, strain, donor, inoculum, biomass preparation, assay-control,
+    industrial scale or product yield is established by these natural structural studies.
+    Their absence is not filled by inference.
+- assessment_id: reflection-availability
+  area: evidence
+  topic: Deposited processed reflection tables
+  outcome: supported
+  summary: The narrow addition is directly supported by the authenticated sup003 ordinary
+    reflection loop:1252 unique hkl rows,1128observed flags. The checkCIF statement
+    is correctly scoped to its own run.
+  target_ids:
+  - laueite
+  evidence_ids:
+  - laueite-cif
+  - check-laueite
+  - numeric
+- assessment_id: quantities
+  area: quantity
+  topic: Model, measured composition and conditional calculations
+  outcome: supported
+  summary: EDS normalized to three metals, scattering occupancy, ideal formula and
+    charge-balanced model are kept distinct. Native values and selected original tables
+    independently agree under stated conditional calculations.
+  target_ids:
+  - laueite
+  evidence_ids:
+  - grey
+  - laueite-cif
+  - stewartite-cif
+  - numeric
+  details: 18residual results use explicit flag/threshold selection, negative-intensity
+    handling and denominator assumptions. They do not validate the refined model or
+    turn component rows into independent observations. Rounding-sensitive ADP signs
+    and zero-leg angle placeholders remain limited diagnostics.
+- assessment_id: limits
+  area: consistency
+  topic: Unresolved source/model qualifications
+  outcome: supported
+  summary: Missing H coordinates, displacement/formula/Z alerts, refined versus EDS
+    chemistry, historical Mn(III) hypothesis, and proposed interface/nucleation explanations
+    remain qualified.
+  target_ids:
+  - laueite
+  evidence_ids:
+  - baur
+  - grey
+  - check-laueite
+  - check-stewartite
+  - laueite-cif
+  - stewartite-cif
+  details: The report preserves native293K versus paper/checkCIF272K and twin fractions.
+    It correctly resolves only pre-freeze transcription/helper issues, not source
+    science. Existing owner has no temperature assertion.
+- assessment_id: criticality
+  area: grounding
+  topic: Criticality and identifier scope
+  outcome: supported
+  summary: No commodity/element criticality or organism identifier is inherited; cmmmech
+    mineral identity is the maintained target.
+  target_ids:
+  - laueite
+  evidence_ids:
+  - owner
+  - ima
+- assessment_id: schema
+  area: schema
+  topic: Native representation and source linkage
+  outcome: supported
+  summary: The owner conforms to mineral/source/history fields. Reflection/intensity/model
+    numbers are not imported into mg/kg ConcentrationObservation or a mechanism.
+  target_ids:
+  - laueite
+  evidence_ids:
+  - owner
+  - independent-gates
+- assessment_id: provenance
+  area: provenance
+  topic: Immutable history, independent review and generated scope
+  outcome: supported
+  summary: The canonical EDIT and inline event accurately describe this local expansion;
+    old CREATE/review remain immutable. All633required outputs are retained, with
+    onlythree semantic surfaces changed.
+  target_ids:
+  - laueite
+  evidence_ids:
+  - history
+  - prior
+  - integrity
+  - final-gates
+findings: []
+actions: []
+limitations:
+- No re-refinement or authoritative resolution of the displacement/formula alerts,
+  H positions, valence or EDS/scattering mismatch.
+- No raw detector/integration package or omitted minor-stewartite rhomb model acquired;
+  sup004 is the separate blade comparator.
+- Natural epitaxy and paragenesis do not establish a controlled reaction, microbial
+  role, industrial performance or recovered-product yield.
+- Historical original raw roots are unavailable; version comparisons use recorded
+  committed digests. Independent current originals were fully inspected.
+- The dated IMA September2026 file is reused from same-day issue129; no latest-edition
+  search claimed.
+- Selected paper numerical rekey is118values+64uncertainty parts+9multiplicities,
+  not every historical/stewartite table; all listed42original pages were visually
+  inspected.
+- Native checker and postnative full validation occur after this save and are documented
+  in separate actual receipts.
+notes:
+- 'No previous_occurrences invented: prior native review has no findings, and no confirmed
+  maintained defect arose in this scope.'
+- Pre-freeze source transcription, temperature attribution and float-comparison corrections
+  are explicitly preserved outsideGit. Initial optional uv help invocation was blocked
+  by default cache access; subsequent actual gates used the established writable UV_CACHE_DIR.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261015T194350Z-laueite-round101-independent
+  relationship: Fresh full scientific successor for changed owner; preserves earlier
+    clean review and source-quality limits.
+links:
+- https://github.com/CultureBotAI/CMMMech/issues/372
+- /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-372-handoff-path.json
+tags:
+- issue-372
+- laueite
+- scientific-review
+- reflection-data
