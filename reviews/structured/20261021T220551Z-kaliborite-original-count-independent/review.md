@@ -1,0 +1,760 @@
+# Independent full scientific review of kaliborite after original reflection-count correction
+
+- Review: 20261021T220551Z-kaliborite-original-count-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-21T22:04:22Z
+- Finished UTC: 2026-10-21T22:05:51.156990Z
+- Reviewer: codex /root/resume_473 (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Full exact kaliborite owner is scientifically supported with stated limits. Original total3642corrects the false3842comparison; thermal and H-model claims remain qualified. No current owner/source findings; historical482-R1 locally corrected and independently verified without inventing a prior native finding.
+
+## Scope And Provenance
+
+Complete frozen kaliborite owner,sources,mechanism and new/oldhistory; full primary originals and numerical/source handoff. Unchanged preobrazhenskite is contextual source scope,not a second native target.
+
+Selection: Assigned exact frozen record; native inspect before exact-state judgment after read-only original-source preflight.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1e80e6492730189f24c46bf98913dcc6017924f1.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:kaliborite | data/records/kaliborite.yaml | maintained | Kaliborite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Independent named-owner validation | passed | True | cmmmech:kaliborite | Actual0/277f18;one record,zero failures. |
+| Completed author full gate | passed | True | cmmmech:kaliborite | Actual68888/9ae042 exit0;363passed3skipped49.66s616records797histories. |
+| Nonempty corpus validation | passed | True | cmmmech:kaliborite | Actual scoped corpus command exit0;616valid. |
+| Base-aware history validation | passed | True | cmmmech:kaliborite | Actual scoped history command exit0;797valid,original sidecars unchanged. |
+| Exact current render check | passed | True | cmmmech:kaliborite | Actual79950/48dd8f exit0 after preserving unsupported CLI attempt. |
+| Pinned canonical synchronization | passed | True | cmmmech:kaliborite | Actual48918/f211a7 exit0,22matches;explicit reuse unchanged governed/executable files. |
+| Independent selected original/native arithmetic | passed | True | cmmmech:kaliborite | Actual0/4d088d;160tokens233components21calculations60Hjoins30distances43ADPs;exact derivatives rebound after freeze. |
+| Independent provenance and generated comparison | passed | True | cmmmech:kaliborite | Actual0/51054e;2496assertions2214paths13preserved22context1413corpus;632footer-only and1contentpage. |
+
+## Scientific And Domain Assessments
+
+### Natural species and identifier boundaries
+
+identity: supported. Targets: cmmmech:kaliborite.
+
+Current IMA formula/status, natural Kazakhstan CMN53372 identity,C2/c borate chains and distinction from elemental boron/commodity agree with original evidence. No biological or mineral-specific criticality assertion is imported.
+
+### Exact bounded source-title correction
+
+evidence: supported. Targets: cmmmech:kaliborite.
+
+Original Table1 and both prose instances all report3642total reflections; the inherited3842comparison was a repository misread. The corrected title is supported; observed2403and threshold notation stay separate. No numerical observation or mechanism changed.
+
+### Average hydrogen model versus motion
+
+evidence: supported. Targets: cmmmech:kaliborite.
+
+Difference-Fourier H locations with O-H restraints, symmetric average H1 geometry and non-improving split model support the qualified structural description. Bond-valence/IR arguments do not directly measure dynamic disorder. Selected COD/source ADP mismatch remains a source limit.
+
+### Qualified abiotic thermal phase transformations
+
+evidence: supported. Targets: cmmmech:kaliborite.
+
+Primary p183–186/Table1/Figure2a(C) support water/OH release,amorphization and assigned magnesium-/potassium-borate recrystallization. Existing support/partial classifications match the narrow claims.
+
+### No phase-balance or recovery inference
+
+quantity: supported. Targets: cmmmech:kaliborite.
+
+400/679/729/954 C assignments and640 C glass-transition interpretation remain experiment-dependent. Literal O31/O21 conflicts,unbalanced formal charges and missing1993fulltext prevent composition/phase-fraction/recovery claims.
+
+### Independent derivative-model checks
+
+quantity: supported. Targets: cmmmech:kaliborite.
+
+All native fields and selected H joins agree with the handoff.43ADPs positive definite,conditional formula multiplicities and30nearest distances validate arithmetic only; uncertainties/reflections/refinement are not recovered.
+
+### Adjacent preobrazhenskite evidence remains separate
+
+scope: supported. Targets: cmmmech:kaliborite.
+
+Different species,specimen,IRpreparation and average H model are not pooled into kaliborite. Opposite inequality,H-site labels and3203/3204/intensity conventions remain source uncertainties. No edit/new native judgment for unchanged owner.
+
+### Append-only history and authentic current evidence
+
+provenance: supported. Targets: cmmmech:kaliborite.
+
+Exact fresh originals/derivatives match eight historical digest declarations; absent old raw bodies remain unclaimed. Current authority reuse and inferred404route correction are transparent. Only source title,oneinlineEDIT and newhistory_ref differ in parsed owner.
+
+### Current schema and actual checks
+
+schema: supported. Targets: cmmmech:kaliborite.
+
+Source fields/evidence classifications/history match current schema. Diffraction counts/temperatures do not enter mg/kg ConcentrationObservation. All required author and independent named gates pass; all633rendered outputs retained.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-482/data/records/kaliborite.yaml; Complete exact frozen owner; independent native inspect before this exact-state assessment. | supports | Only source-title count correction plus canonical/inline EDIT; identity, thermal mechanism and evidence classes unchanged. |
+| inspect | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-482-independent/native-inspect.json; Native inspect actual exit0, completion52d3f8; target, base and nine input hashes. | supports | Exact working-tree input attestation, not a commit or passing scientific review by itself. |
+| primary | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-482/kaliborite1994.pdf; All10 original pages885–894; methods/Table1p886; Tables2–4p887; H alternativesp892 and IRFigure6p893. | supports | Table1 and both prose totals are3642; natural CMN53372 Kazakhstan crystal, restrained H average model and inferred dynamic disorder. No new bulk chemistry. |
+| count-detail | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-482/kaliborite-table1-detail.png; High-resolution original PDF2/printed886, full Table1 and adjacent prose. | supports | Confirms3642 independently of erroneous indexed OCR; 2403observed is a separate quantity. |
+| thermal | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-482/thermal1994.pdf; All22 PDFpages including finalblank; p183methods,Table1p184,Figure1p185,Figure2a(C)p186,Table4p196,reference5p200. | supports | Distinct museum feed,2.5 C/min structural-treatment arm, qualitative thermal phases and conflicting O31/O21 formulas; no product fractions or independent1993 replication. |
+| preob | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-482/preobrazhenskite1994.pdf; All10 original pages387–396, all9figures/6tables,Table1p388,Hdiscussionp394,Table6/Figure9p395. | supports | Separate natural Pbcn mineral; opposite I inequalities, H3/H6 prose ambiguity, fitted IR components and conditional disorder remain unresolved. This source scope does not create a new native acceptance for unchanged preobrazhenskite. |
+| ima | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-129/ima2026-09.pdf; Same-day authenticated official reuse; original pages1,107,177 viewed. | supports | Kaliborite G1889 KHMg2B12O16(OH)10(H2O)4; preobrazhenskite G1956. Years are original descriptions, not approval IDs or criticality designations. |
+| cif | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-482/kaliborite9004342.cif; Complete COD9004342, AMCSD0005415 lineage;23scalars,33sites,23ADPs,eightoperations. | supports | Derivative coordinate model has no measured reflection, refinement or geometry loops; its rounded H-average model is not a new experiment. |
+| source-discrepancy | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-482/kaliborite-table2-3-detail.png; Original Table3 p887 OH2 U11 cell. | context_only | Original80(8)×10^-4 A2 differs from COD.00900; no repair or exhaustive heavy-ADP rekey claimed. |
+| numeric | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-482-independent/preflight-audit.json; Independent direct original rekey and separate lexical/symmetry/geometry/Decimal calculations; all comparison snapshots rebound to final bytes. | supports | 160tokens/233components,21diagnostics,60H-coordinate/U joins,30nearest H–O distances and43ADP checks agree. Full occupancy is conditional; no refinement or motion measured. |
+| originals | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-482-independent/original-inspection-preflight.json; 47actually viewed images:42science pages,3IMA and2high-resolution detail images. | supports | All original diagrams/tables inspected, with selected numerical rekey rather than exhaustive every-table transcription. |
+| handoff | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-482/research/sources/issue-482-borate-original-discrepancies/20261021T220305Z.md; Full frozen Markdown and companion evidence JSON. | supports | Version, specimen, phase, protocol, schema and access limitations accurately bound; source-only diagnostics not imported into observations. |
+| history | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-482/history/records/kaliborite/2026-10-21T215437Z-codex-89461e.yaml; Whole new canonicalEDIT and separate inline event/history_ref. | supports | Actual codex/GPT6 actor/time, root-authorized count correction and review-pending status at authoring are truthful; no prior history rewritten. |
+| prior | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-482/reviews/structured/20261016T071745Z-kaliborite-round114-independent/review.yaml; Entire earlier scientific review, especially primary summary and count interpretation; findings:[]. | context_only | Its false3642-versus3842 assertion is superseded by original-pixel reinspection. Prior findings were empty; no prior finding occurrence is invented. Other claims reassessed against current originals. |
+| integrity | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-482-independent/integrity.json; 2496current assertions/2214paths;13preserved pairs;22context and1413basecorpus comparisons,oneowner differs. | supports | Current hashes pass; eight historical digest/size joins verified in original JSON declarations. Pre-edit/intermediate owner references resolve via exact archive and explicitly labeled hash-verified reconstruction; old raw unavailable. |
+| generated | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-482-independent/generated-scope.json; All633 changed HTML files independently compared with Git base. | supports | 632only corpus-digest token differences,oneintended kaliborite source/history page. All633retained for exact render-check; no browser screenshots claimed. |
+| gates | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-482-independent/final-gate-check.json; Actual68888/9ae042 full gate plus exact source/owner bindings and independent named277f18. | supports | 363passed/3skipped49.66s616records797histories; actual22canonical reuse on unchanged governed/executable inputs. Full test not rerun by reviewer. |
+| scoped | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-482-scoped-gates.json; Actual corpus/history/render commands; corrected just render-check79950/48dd8f. | supports | Corpus616/history797 pass; unsupported CLI render attemptexit2 preserved, correct render-checkexit0 supersedes command misuse. |
+| search | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-482/search-ledger.json; All three dated author web.run batches12queries/oneopen and 11directGET events independently read. | context_only | Returned notice/deposit/1993 routes do not establish universal absence. Full1993paper and original intensities remain unacquired. |
+| dedup | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-482/finding-dedup.json; Bounded current/main scientific and session finding/review/ledger roots, plus519all-state issue/PR title/body snapshot. | context_only | Existing source-gap482 and old locator485 remain distinct from newly corrected kaliborite count misread. |
+
+## Limits And Additional Notes
+
+- Original measured reflection observations and complete1993thermal paper remain unavailable. Native COD models do not establish original filtering or refinement residuals.
+- Kaliborite H motion remains inferred; the split model did not improve R. The selected original/COD OH2 U11 difference is retained,not repaired.
+- Thermal material lacks specimen accession,assay,mass,gas,holds andreplicate ledger. Ramp is arm-specific; phase labels and temperatures do not establish equilibrium,purity or yield.
+- Selected160-token manual audit is not exhaustive all-table transcription; heavy-atom ADP source comparison was selected. Geometry uses rounded derivative coordinates and fulloccupancy where omitted.
+- Searches were author-executed current saved windows reviewed independently; no universal absence or inaccessible oldraw reacquisition claim.
+- The earlier clean native review contained the false3842assertion and findings:[]. This new observation supersedes that interpretation but does not retroactively invent or close an earlier native finding.
+- Native save/check and any post-native full gate are separate outcomes,not preclaimed here.
+- All42science pages,threeIMA pages andtwohigh-resolution original tables independently viewed. Prior source/review artifacts and frozen author inputs remain untouched.
+- Native exact-state assessment began after inspect; earlier read-only source preflight binds unchanged scientific snapshots.
+- All633generatedHTML are retained;632mechanically proven corpus-digest-only changes andone intended materialpage. No unrelated cleanup or renderer edit.
+- 482-R1 exact destination draft remains external for root publication approval; no remote mutation performed.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T220551Z-kaliborite-original-count-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent full scientific review of kaliborite after original reflection-count
+  correction
+started_at: '2026-10-21T22:04:22Z'
+finished_at: '2026-10-21T22:05:51.156990Z'
+reviewer:
+  identity: codex /root/resume_473
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: 'Different agent from curator /root/resume_405; independently
+    inspected all originals, manually rekeyed and wrote separate parsers/calculations.
+    No owner/source/helper execution or mutation. Adjacent carbonate/borate review
+    context disclosed; no #482 authorship.'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Full exact kaliborite owner is scientifically supported with stated limits.
+  Original total3642corrects the false3842comparison; thermal and H-model claims remain
+  qualified. No current owner/source findings; historical482-R1 locally corrected
+  and independently verified without inventing a prior native finding.
+source:
+  git_revision: 1e80e6492730189f24c46bf98913dcc6017924f1
+  state: working_tree
+  inputs:
+  - path: data/records/kaliborite.yaml
+    sha256: 34bfb1c9a7a15d1c2d360181941c4fd5fd9d25a17d00bd7cb285a10089237408
+    role: target
+  - path: history/records/kaliborite/2026-10-16T065153Z-codex-384828.yaml
+    sha256: 553f410d5059bf4b1ba4b3ac90308197d6800c973008a5086be26d1dbb80c612
+    role: context
+  - path: history/records/kaliborite/2026-10-21T215437Z-codex-89461e.yaml
+    sha256: 83ca426a076cdfc6c4a7303fcc9f66b8a52ba58380ac3f1fa068c5da071aaa30
+    role: context
+  - path: research/sources/issue-482-borate-original-discrepancies/20261021T220305Z-evidence.json
+    sha256: 57ef737a06e14b42a1fc4f14853e73299e530ac488d357209425f0bee1a6a1b8
+    role: context
+  - path: research/sources/issue-482-borate-original-discrepancies/20261021T220305Z.md
+    sha256: 1e0fbdbbbd3faf517a2fe746b95badaa067d0d00a7973452d1d256f46dd62145
+    role: context
+  - path: research/sources/round114-borates/20261016T065455Z-source-investigation.json
+    sha256: 7c29beb09eb85175504d11999e554a71d7b4866e558485e181faf7a18ce94456
+    role: context
+  - path: research/sources/round114-borates/20261016T065455Z-source-investigation.md
+    sha256: 54cfa25ef677ebdcd17d4542dec875f3f10b4e13f07f0fc9e2bac080a6c7eb27
+    role: context
+  - path: reviews/structured/20261016T071745Z-kaliborite-round114-independent/review.yaml
+    sha256: a26a0fc4624022950f735146f9b72566b4393e2492f0fc248c66d4d6d05839a3
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+targets:
+- target_id: cmmmech:kaliborite
+  path: data/records/kaliborite.yaml
+  label: Kaliborite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/kaliborite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/kaliborite/2026-10-21T215437Z-codex-89461e.yaml
+    role: canonical_history
+scope:
+  description: Complete frozen kaliborite owner,sources,mechanism and new/oldhistory;
+    full primary originals and numerical/source handoff. Unchanged preobrazhenskite
+    is contextual source scope,not a second native target.
+  selection: Assigned exact frozen record; native inspect before exact-state judgment
+    after read-only original-source preflight.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:kaliborite
+checks:
+- check_id: named
+  name: Independent named-owner validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/kaliborite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual0/277f18;one record,zero failures.
+  target_ids:
+  - cmmmech:kaliborite
+  evidence_ids:
+  - gates
+- check_id: full
+  name: Completed author full gate
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual68888/9ae042 exit0;363passed3skipped49.66s616records797histories.
+  target_ids:
+  - cmmmech:kaliborite
+  evidence_ids:
+  - gates
+- check_id: corpus
+  name: Nonempty corpus validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual scoped corpus command exit0;616valid.
+  target_ids:
+  - cmmmech:kaliborite
+  evidence_ids:
+  - scoped
+- check_id: history
+  name: Base-aware history validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 1e80e6492730189f24c46bf98913dcc6017924f1
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual scoped history command exit0;797valid,original sidecars unchanged.
+  target_ids:
+  - cmmmech:kaliborite
+  evidence_ids:
+  - scoped
+- check_id: render
+  name: Exact current render check
+  required: true
+  status: passed
+  command: just render-check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual79950/48dd8f exit0 after preserving unsupported CLI attempt.
+  target_ids:
+  - cmmmech:kaliborite
+  evidence_ids:
+  - scoped
+  - generated
+- check_id: canonical
+  name: Pinned canonical synchronization
+  required: true
+  status: passed
+  command: bash scripts/check_vendored_sync.sh
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual48918/f211a7 exit0,22matches;explicit reuse unchanged governed/executable
+    files.
+  target_ids:
+  - cmmmech:kaliborite
+  evidence_ids:
+  - gates
+- check_id: science
+  name: Independent selected original/native arithmetic
+  required: true
+  status: passed
+  command: python /private/tmp/cmmmech-backlog-20261019-fmj36s/review-482-independent/preflight.py
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual0/4d088d;160tokens233components21calculations60Hjoins30distances43ADPs;exact
+    derivatives rebound after freeze.
+  target_ids:
+  - cmmmech:kaliborite
+  evidence_ids:
+  - numeric
+- check_id: integrity
+  name: Independent provenance and generated comparison
+  required: true
+  status: passed
+  command: python /private/tmp/cmmmech-backlog-20261019-fmj36s/review-482-independent/integrity.py
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual0/51054e;2496assertions2214paths13preserved22context1413corpus;632footer-only
+    and1contentpage.
+  target_ids:
+  - cmmmech:kaliborite
+  evidence_ids:
+  - integrity
+  - generated
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-482/data/records/kaliborite.yaml
+  locator: Complete exact frozen owner; independent native inspect before this exact-state
+    assessment.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: supports
+  summary: Only source-title count correction plus canonical/inline EDIT; identity,
+    thermal mechanism and evidence classes unchanged.
+  snapshot_sha256: 34bfb1c9a7a15d1c2d360181941c4fd5fd9d25a17d00bd7cb285a10089237408
+- evidence_id: inspect
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-482-independent/native-inspect.json
+  locator: Native inspect actual exit0, completion52d3f8; target, base and nine input
+    hashes.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: supports
+  summary: Exact working-tree input attestation, not a commit or passing scientific
+    review by itself.
+  snapshot_sha256: bbf9b507ad34c7a3a4a6669182e5c125e2d6b699403f3a43dbe9d20bf71325b7
+- evidence_id: primary
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-482/kaliborite1994.pdf
+  locator: All10 original pages885–894; methods/Table1p886; Tables2–4p887; H alternativesp892
+    and IRFigure6p893.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: supports
+  summary: Table1 and both prose totals are3642; natural CMN53372 Kazakhstan crystal,
+    restrained H average model and inferred dynamic disorder. No new bulk chemistry.
+  snapshot_sha256: 87efeab35b0d33503eacbb81c7bb3c551efb5e1d23e0f3a502cc9c7852aa12ca
+- evidence_id: count-detail
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-482/kaliborite-table1-detail.png
+  locator: High-resolution original PDF2/printed886, full Table1 and adjacent prose.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: supports
+  summary: Confirms3642 independently of erroneous indexed OCR; 2403observed is a
+    separate quantity.
+  snapshot_sha256: 5c6b2add8ab881cbd2e0ecb4a3abe51d98519734e1c9ae1b168fa6e9c8df596b
+- evidence_id: thermal
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-482/thermal1994.pdf
+  locator: All22 PDFpages including finalblank; p183methods,Table1p184,Figure1p185,Figure2a(C)p186,Table4p196,reference5p200.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: supports
+  summary: Distinct museum feed,2.5 C/min structural-treatment arm, qualitative thermal
+    phases and conflicting O31/O21 formulas; no product fractions or independent1993
+    replication.
+  snapshot_sha256: 752860e27bcf5b4f322743fab504144ca744ba7c55789f9ec1cb534e3448ccad
+- evidence_id: preob
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-482/preobrazhenskite1994.pdf
+  locator: All10 original pages387–396, all9figures/6tables,Table1p388,Hdiscussionp394,Table6/Figure9p395.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: supports
+  summary: Separate natural Pbcn mineral; opposite I inequalities, H3/H6 prose ambiguity,
+    fitted IR components and conditional disorder remain unresolved. This source scope
+    does not create a new native acceptance for unchanged preobrazhenskite.
+  snapshot_sha256: 41426548bb763451ef85c7ac8229955dc636b85a02324a2191cd5a212e1a2890
+- evidence_id: ima
+  kind: authority
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-129/ima2026-09.pdf
+  locator: Same-day authenticated official reuse; original pages1,107,177 viewed.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: supports
+  summary: Kaliborite G1889 KHMg2B12O16(OH)10(H2O)4; preobrazhenskite G1956. Years
+    are original descriptions, not approval IDs or criticality designations.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: cif
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-482/kaliborite9004342.cif
+  locator: Complete COD9004342, AMCSD0005415 lineage;23scalars,33sites,23ADPs,eightoperations.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: supports
+  summary: Derivative coordinate model has no measured reflection, refinement or geometry
+    loops; its rounded H-average model is not a new experiment.
+  snapshot_sha256: 0c324728bb440f1734fc50c5a907abcf651efbd24fca248d5172fb9fa0443afa
+- evidence_id: source-discrepancy
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-482/kaliborite-table2-3-detail.png
+  locator: Original Table3 p887 OH2 U11 cell.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: context_only
+  summary: Original80(8)×10^-4 A2 differs from COD.00900; no repair or exhaustive
+    heavy-ADP rekey claimed.
+  snapshot_sha256: 793223fcc67177471f8448332041ace5c3b62bfc27c4cc6578839b43bc64e1f9
+- evidence_id: numeric
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-482-independent/preflight-audit.json
+  locator: Independent direct original rekey and separate lexical/symmetry/geometry/Decimal
+    calculations; all comparison snapshots rebound to final bytes.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: supports
+  summary: 160tokens/233components,21diagnostics,60H-coordinate/U joins,30nearest
+    H–O distances and43ADP checks agree. Full occupancy is conditional; no refinement
+    or motion measured.
+  snapshot_sha256: d0af8d05e0ada6de5b9a4d6c2d559454574f408799e35d432c855111d2fbade5
+- evidence_id: originals
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-482-independent/original-inspection-preflight.json
+  locator: 47actually viewed images:42science pages,3IMA and2high-resolution detail
+    images.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: supports
+  summary: All original diagrams/tables inspected, with selected numerical rekey rather
+    than exhaustive every-table transcription.
+  snapshot_sha256: 5c40e5cb9752203562544859e395db8a41a95ade7e424ed492f47a928347ac84
+- evidence_id: handoff
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-482/research/sources/issue-482-borate-original-discrepancies/20261021T220305Z.md
+  locator: Full frozen Markdown and companion evidence JSON.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: supports
+  summary: Version, specimen, phase, protocol, schema and access limitations accurately
+    bound; source-only diagnostics not imported into observations.
+  snapshot_sha256: 1e0fbdbbbd3faf517a2fe746b95badaa067d0d00a7973452d1d256f46dd62145
+- evidence_id: history
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-482/history/records/kaliborite/2026-10-21T215437Z-codex-89461e.yaml
+  locator: Whole new canonicalEDIT and separate inline event/history_ref.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: supports
+  summary: Actual codex/GPT6 actor/time, root-authorized count correction and review-pending
+    status at authoring are truthful; no prior history rewritten.
+  snapshot_sha256: 83ca426a076cdfc6c4a7303fcc9f66b8a52ba58380ac3f1fa068c5da071aaa30
+- evidence_id: prior
+  kind: prior_review
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-482/reviews/structured/20261016T071745Z-kaliborite-round114-independent/review.yaml
+  locator: Entire earlier scientific review, especially primary summary and count
+    interpretation; findings:[].
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: context_only
+  summary: Its false3642-versus3842 assertion is superseded by original-pixel reinspection.
+    Prior findings were empty; no prior finding occurrence is invented. Other claims
+    reassessed against current originals.
+  snapshot_sha256: a26a0fc4624022950f735146f9b72566b4393e2492f0fc248c66d4d6d05839a3
+- evidence_id: integrity
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-482-independent/integrity.json
+  locator: 2496current assertions/2214paths;13preserved pairs;22context and1413basecorpus
+    comparisons,oneowner differs.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: supports
+  summary: Current hashes pass; eight historical digest/size joins verified in original
+    JSON declarations. Pre-edit/intermediate owner references resolve via exact archive
+    and explicitly labeled hash-verified reconstruction; old raw unavailable.
+  snapshot_sha256: 157e0a01bbf3960098824c3d0569c13083973718a3d6dd6bf8d3efd7236c0d35
+- evidence_id: generated
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-482-independent/generated-scope.json
+  locator: All633 changed HTML files independently compared with Git base.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: supports
+  summary: 632only corpus-digest token differences,oneintended kaliborite source/history
+    page. All633retained for exact render-check; no browser screenshots claimed.
+  snapshot_sha256: a156a3a90588547fc48bac66dec56003fc664cb53896efd6f6f1cc2885a42426
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-482-independent/final-gate-check.json
+  locator: Actual68888/9ae042 full gate plus exact source/owner bindings and independent
+    named277f18.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: supports
+  summary: 363passed/3skipped49.66s616records797histories; actual22canonical reuse
+    on unchanged governed/executable inputs. Full test not rerun by reviewer.
+  snapshot_sha256: b306eb6ac46d88eb75d5e851442663b5c240bf61be422869de8e030abff2298f
+- evidence_id: scoped
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-482-scoped-gates.json
+  locator: Actual corpus/history/render commands; corrected just render-check79950/48dd8f.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: supports
+  summary: Corpus616/history797 pass; unsupported CLI render attemptexit2 preserved,
+    correct render-checkexit0 supersedes command misuse.
+  snapshot_sha256: 9b3b13262810cc3c752271b041893a0057fb1c04ac10eb4c2ee2d4245de7d852
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-482/search-ledger.json
+  locator: All three dated author web.run batches12queries/oneopen and 11directGET
+    events independently read.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: context_only
+  summary: Returned notice/deposit/1993 routes do not establish universal absence.
+    Full1993paper and original intensities remain unacquired.
+  snapshot_sha256: d1ea0ce6532ff2abd93554a86bddc8ceac518cfdbf9b127b98a9caaca9e070e7
+  search_scope: Author-executed 21October2026, no domain/recency filters, exact request/result
+    ledger; no new reviewer network search or unrestricted archive crawl.
+- evidence_id: dedup
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-482/finding-dedup.json
+  locator: Bounded current/main scientific and session finding/review/ledger roots,
+    plus519all-state issue/PR title/body snapshot.
+  accessed_at: '2026-10-21T22:05:51.156990Z'
+  support: context_only
+  summary: Existing source-gap482 and old locator485 remain distinct from newly corrected
+    kaliborite count misread.
+  snapshot_sha256: ab365dee440b6bc6d4a532009d06b5d153ba5513db586cbfa5d52aca5ed9e268
+  search_scope: Hidden/ignored files included with followed symlinks; unavailable
+    historical roots explicitly recorded. No all-machine or all-comment absence claim.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Natural species and identifier boundaries
+  outcome: supported
+  summary: Current IMA formula/status, natural Kazakhstan CMN53372 identity,C2/c borate
+    chains and distinction from elemental boron/commodity agree with original evidence.
+    No biological or mineral-specific criticality assertion is imported.
+  target_ids:
+  - cmmmech:kaliborite
+  evidence_ids:
+  - owner
+  - primary
+  - ima
+  dimensions:
+  - name: material_form
+    value: Natural potassium-magnesium borate mineral
+    definition: Separate from elemental boron,commodity and museum thermal powder.
+    evidence_ids:
+    - owner
+    - primary
+  - name: criticality
+    value: No jurisdiction/list/edition entry
+    definition: No criticality designation inherited from generic borate language.
+    evidence_ids:
+    - owner
+    - ima
+- assessment_id: count
+  area: evidence
+  topic: Exact bounded source-title correction
+  outcome: supported
+  summary: Original Table1 and both prose instances all report3642total reflections;
+    the inherited3842comparison was a repository misread. The corrected title is supported;
+    observed2403and threshold notation stay separate. No numerical observation or
+    mechanism changed.
+  target_ids:
+  - cmmmech:kaliborite
+  evidence_ids:
+  - owner
+  - primary
+  - count-detail
+  - prior
+- assessment_id: hydrogen
+  area: evidence
+  topic: Average hydrogen model versus motion
+  outcome: supported
+  summary: Difference-Fourier H locations with O-H restraints, symmetric average H1
+    geometry and non-improving split model support the qualified structural description.
+    Bond-valence/IR arguments do not directly measure dynamic disorder. Selected COD/source
+    ADP mismatch remains a source limit.
+  target_ids:
+  - cmmmech:kaliborite
+  evidence_ids:
+  - primary
+  - cif
+  - source-discrepancy
+  - numeric
+  dimensions:
+  - name: measurement_model
+    value: Restrained average diffraction structure
+    definition: No original reflections,rerefined residuals,time-resolved H motion
+      or local-disorder discrimination.
+    evidence_ids:
+    - primary
+    - cif
+  - name: specimen_chemistry
+    value: No new bulk chemical analysis
+    definition: Ideal formula and derivative site multiplicity are not an independent
+      crystal assay.
+    evidence_ids:
+    - primary
+    - numeric
+- assessment_id: thermal
+  area: evidence
+  topic: Qualified abiotic thermal phase transformations
+  outcome: supported
+  summary: Primary p183–186/Table1/Figure2a(C) support water/OH release,amorphization
+    and assigned magnesium-/potassium-borate recrystallization. Existing support/partial
+    classifications match the narrow claims.
+  target_ids:
+  - cmmmech:kaliborite
+  evidence_ids:
+  - owner
+  - thermal
+  dimensions:
+  - name: organism_biomass
+    value: None; microbial:false
+    definition: No organism,strain,protein or live/dead biomass claim.
+    evidence_ids:
+    - owner
+    - thermal
+  - name: substrate
+    value: Coarse-crystalline Wroclaw museum kaliborite described as pure
+    definition: No accession/locality/quantitative assay; not joined to CMN53372.
+    evidence_ids:
+    - thermal
+    - owner
+  - name: conditions
+    value: 2.5 C/min for heat/cool structural-examination arm
+    definition: Not assigned to all DTA/TG; mass,gas,holds and replicates remain unavailable.
+    evidence_ids:
+    - thermal
+    - owner
+  - name: controls
+    value: Original versus heated/cooled PXRD/IR patterns
+    definition: No biological controls relevant; qualitative comparative phase evidence,not
+      replicated quantitative assay.
+    evidence_ids:
+    - thermal
+- assessment_id: outcome
+  area: quantity
+  topic: No phase-balance or recovery inference
+  outcome: supported
+  summary: 400/679/729/954 C assignments and640 C glass-transition interpretation
+    remain experiment-dependent. Literal O31/O21 conflicts,unbalanced formal charges
+    and missing1993fulltext prevent composition/phase-fraction/recovery claims.
+  target_ids:
+  - cmmmech:kaliborite
+  evidence_ids:
+  - owner
+  - thermal
+  - numeric
+  dimensions:
+  - name: outcome
+    value: Qualitative thermal phase transformation
+    definition: No isolated mass,purity,phase fractions,equilibrium map or boron recovery
+      yield.
+    evidence_ids:
+    - owner
+    - thermal
+  - name: deployment
+    value: Laboratory characterization
+    definition: Museum feed origin and mineral relevance do not establish industrial
+      operation.
+    evidence_ids:
+    - owner
+    - thermal
+- assessment_id: native
+  area: quantity
+  topic: Independent derivative-model checks
+  outcome: supported
+  summary: All native fields and selected H joins agree with the handoff.43ADPs positive
+    definite,conditional formula multiplicities and30nearest distances validate arithmetic
+    only; uncertainties/reflections/refinement are not recovered.
+  target_ids:
+  - cmmmech:kaliborite
+  evidence_ids:
+  - numeric
+  - cif
+  - handoff
+- assessment_id: scope
+  area: scope
+  topic: Adjacent preobrazhenskite evidence remains separate
+  outcome: supported
+  summary: Different species,specimen,IRpreparation and average H model are not pooled
+    into kaliborite. Opposite inequality,H-site labels and3203/3204/intensity conventions
+    remain source uncertainties. No edit/new native judgment for unchanged owner.
+  target_ids:
+  - cmmmech:kaliborite
+  evidence_ids:
+  - preob
+  - handoff
+  - owner
+- assessment_id: provenance
+  area: provenance
+  topic: Append-only history and authentic current evidence
+  outcome: supported
+  summary: Exact fresh originals/derivatives match eight historical digest declarations;
+    absent old raw bodies remain unclaimed. Current authority reuse and inferred404route
+    correction are transparent. Only source title,oneinlineEDIT and newhistory_ref
+    differ in parsed owner.
+  target_ids:
+  - cmmmech:kaliborite
+  evidence_ids:
+  - integrity
+  - history
+  - handoff
+  - prior
+  - search
+- assessment_id: schema
+  area: schema
+  topic: Current schema and actual checks
+  outcome: supported
+  summary: Source fields/evidence classifications/history match current schema. Diffraction
+    counts/temperatures do not enter mg/kg ConcentrationObservation. All required
+    author and independent named gates pass; all633rendered outputs retained.
+  target_ids:
+  - cmmmech:kaliborite
+  evidence_ids:
+  - owner
+  - gates
+  - scoped
+  - generated
+  - handoff
+findings: []
+actions: []
+limitations:
+- Original measured reflection observations and complete1993thermal paper remain unavailable.
+  Native COD models do not establish original filtering or refinement residuals.
+- Kaliborite H motion remains inferred; the split model did not improve R. The selected
+  original/COD OH2 U11 difference is retained,not repaired.
+- Thermal material lacks specimen accession,assay,mass,gas,holds andreplicate ledger.
+  Ramp is arm-specific; phase labels and temperatures do not establish equilibrium,purity
+  or yield.
+- Selected160-token manual audit is not exhaustive all-table transcription; heavy-atom
+  ADP source comparison was selected. Geometry uses rounded derivative coordinates
+  and fulloccupancy where omitted.
+- Searches were author-executed current saved windows reviewed independently; no universal
+  absence or inaccessible oldraw reacquisition claim.
+- The earlier clean native review contained the false3842assertion and findings:[].
+  This new observation supersedes that interpretation but does not retroactively invent
+  or close an earlier native finding.
+- Native save/check and any post-native full gate are separate outcomes,not preclaimed
+  here.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261016T071745Z-kaliborite-round114-independent
+  relationship: Preserved earlier whole-owner review. False3642-versus3842interpretation
+    superseded by current original-pixel reinspection; no prior native finding occurrence
+    exists.
+notes:
+- All42science pages,threeIMA pages andtwohigh-resolution original tables independently
+  viewed. Prior source/review artifacts and frozen author inputs remain untouched.
+- Native exact-state assessment began after inspect; earlier read-only source preflight
+  binds unchanged scientific snapshots.
+- All633generatedHTML are retained;632mechanically proven corpus-digest-only changes
+  andone intended materialpage. No unrelated cleanup or renderer edit.
+- 482-R1 exact destination draft remains external for root publication approval; no
+  remote mutation performed.
+```
