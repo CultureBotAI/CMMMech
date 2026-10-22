@@ -433,7 +433,7 @@ consistency: concern. Targets: cmmmech:alicewilsonite-yce, cmmmech:alicewilsonit
 
 minor / open / confirmed; issue key: cmmmech.mineral.noncanonical-ima-master-list-source-ids.
 
-Across all 380 mineral records in data/records/*.yaml, 350 records key the September 2026 IMA-CNMNC Master List (https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf) under the canonical source id ima_2026_09, whereas 30 mineral records use non-canonical variant source IDs: 14 records use ima2026 (alicewilsonite-yce, alicewilsonite-yla, ancylite-ce, bainbridgeite-yce, burbankite, calcioancylite-la, calcioburbankite, caysichite-y, cordylite-ce, donnayite-y, gysinite-nd, kukharenkoite-ce, kuliokite-y, synchysite-ce), 9 records use ima202609 (greenockite, hawleyite, hydrotalcite, ilmenite, lorenzenite, millerite, perovskite, polydymite, pyroaurite), and 7 records use ima_202609 (azurite, brucite, cerianite-ce, dolomite, tenorite, titanite, vaesite).
+Across all 380 mineral records in data/records/*.yaml, 350 records key the September 2026 IMA-CNMNC Master List (https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf) under the canonical source id ima_2026_09, whereas 30 mineral records use non-canonical variant source IDs: 14 records use ima2026 (alicewilsonite-yce, alicewilsonite-yla, ancylite-ce, bainbridgeite-yce, burbankite, calcioancylite-la, calcioburbankite, caysichite-y, cordylite-ce, donnayite-y, gysinite-nd, kukharenkoite-ce, kuliokite-y, synchysite-ce), 9 records use ima202609 (greenockite, hawleyite, ilmenite, lorenzenite, millerite, perovskite, polydymite, titanite, vaesite), and 7 records use ima_202609 (azurite, brucite, cerianite-ce, dolomite, hydrotalcite, pyroaurite, tenorite).
 
 ## Recommended Actions And Acceptance Checks
 
@@ -9035,10 +9035,9 @@ findings:
     variant source IDs: 14 records use ima2026 (alicewilsonite-yce, alicewilsonite-yla,
     ancylite-ce, bainbridgeite-yce, burbankite, calcioancylite-la, calcioburbankite,
     caysichite-y, cordylite-ce, donnayite-y, gysinite-nd, kukharenkoite-ce, kuliokite-y,
-    synchysite-ce), 9 records use ima202609 (greenockite, hawleyite, hydrotalcite,
-    ilmenite, lorenzenite, millerite, perovskite, polydymite, pyroaurite), and 7 records
-    use ima_202609 (azurite, brucite, cerianite-ce, dolomite, tenorite, titanite,
-    vaesite).'
+    synchysite-ce), 9 records use ima202609 (greenockite, hawleyite, ilmenite, lorenzenite,
+    millerite, perovskite, polydymite, titanite, vaesite), and 7 records use ima_202609
+    (azurite, brucite, cerianite-ce, dolomite, hydrotalcite, pyroaurite, tenorite).'
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/alicewilsonite-yce.yaml

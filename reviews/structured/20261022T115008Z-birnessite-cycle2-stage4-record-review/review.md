@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed data/records/birnessite.yaml (cmmmech:birnessite) at commit 547283a882c1d657f934434f2eb5ea9a1418771a following Cycle 2 Stage 2 causal-graph curation and Stage 3 UniProtKB protein grounding. Verified IMA-CNMNC formula (Na,Ca)0.5(Mn4+,Mn3+)2O4·1.5H2O, all 4 microbial mechanisms (fungal_synthetic_sodium_birnessite_transformation from Wei et al. 2012 DOI:10.1111/j.1462-2920.2012.02776.x, fungal_synthetic_cobalt_birnessite_transformation from Ferrier et al. 2022 DOI:10.1111/1462-2920.15526, fungal_manganese_oxidation_to_birnessite from Sasaki et al. 2008 DOI:10.2320/matertrans.M-MRA2007888, and fungal_cobalt_accumulation_with_birnessite_host from Sasaki et al. 2009 DOI:10.2320/matertrans.M-M2009821), both causal graphs (fungal_synthetic_sodium_birnessite_transformation_graph and fungal_synthetic_cobalt_birnessite_transformation_graph using predicate: solubilizes), and synchronized UniProtKB:A0A254TZW7 (CexA, MFS citrate exporter in Aspergillus niger ATCC 13496 NCBITaxon:1459638, UP000218193) protein_examples. Zero open findings.
+Reviewed data/records/birnessite.yaml (cmmmech:birnessite) at commit 547283a882c1d657f934434f2eb5ea9a1418771a following Cycle 2 Stage 2 causal-graph curation and Stage 3 UniProtKB protein grounding. Verified IMA-CNMNC formula (Na,Ca)0.5(Mn4+,Mn3+)2O4·1.5H2O, all 4 microbial mechanisms (fungal_synthetic_sodium_birnessite_transformation from Wei et al. 2012 DOI:10.1111/j.1462-2920.2012.02776.x, fungal_synthetic_cobalt_birnessite_transformation from Ferrier et al. 2022 DOI:10.1111/1462-2920.15526, fungal_manganese_oxidation_to_birnessite from Sasaki et al. 2008 DOI:10.2320/matertrans.M-MRA2007888, and fungal_cobalt_accumulation_with_birnessite_host from Sasaki et al. 2009 DOI:10.2320/matertrans.M-M2009821), both causal graphs (fungal_synthetic_sodium_birnessite_transformation_graph and fungal_synthetic_cobalt_birnessite_transformation_graph using predicate: solubilizes), and synchronized UniProtKB:A0A254TZW7 (CEXA_ASPNG, CexA in Aspergillus niger ATCC 13496 NCBITaxon:1459638, UP000218193) and UniProtKB:G3Y4N5 (CEXA_ASPNA, CexA in Aspergillus niger ATCC 1015 NCBITaxon:380704, UP000006706) protein_examples. Zero open findings.
 
 ## Scope And Provenance
 
@@ -34,11 +34,11 @@ Working-tree hashes do not imply those bytes were committed.
 
 ## Scientific And Domain Assessments
 
-### Birnessite fungal transformation causal graphs and UniProtKB:A0A254TZW7 grounding
+### Birnessite fungal transformation causal graphs and UniProtKB:A0A254TZW7 / UniProtKB:G3Y4N5 groundings
 
 graph: supported. Targets: cmmmech:birnessite.
 
-Both causal graphs (fungal_synthetic_sodium_birnessite_transformation_graph and fungal_synthetic_cobalt_birnessite_transformation_graph) accurately model organic-acid solubilization (predicate: solubilizes) of synthetic birnessite and manganese/cobalt oxalate precipitation, with 100% synchronized UniProtKB:A0A254TZW7 (CexA) protein_examples.
+Both causal graphs (fungal_synthetic_sodium_birnessite_transformation_graph and fungal_synthetic_cobalt_birnessite_transformation_graph) accurately model organic-acid solubilization (predicate: solubilizes) of synthetic birnessite and manganese/cobalt oxalate precipitation, with 100% synchronized UniProtKB:A0A254TZW7 (CEXA_ASPNG) and UniProtKB:G3Y4N5 (CEXA_ASPNA) protein_examples.
 
 ## Findings
 
@@ -53,7 +53,7 @@ No findings recorded within this review's declared scope.
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| ev-birnessite-file | data/records/birnessite.yaml; lines 1-433 | supports | Verified all 4 mechanisms, 2 causal graphs, and synchronized UniProtKB:A0A254TZW7 protein_examples across mechanisms and GENE_OR_PROTEIN nodes. |
+| ev-birnessite-file | data/records/birnessite.yaml; lines 1-433 | supports | Verified all 4 mechanisms, 2 causal graphs, and synchronized UniProtKB:A0A254TZW7 and UniProtKB:G3Y4N5 protein_examples across mechanisms and GENE_OR_PROTEIN nodes. |
 | ev-birnessite-wei2012 | DOI:10.1111/j.1462-2920.2012.02776.x; Wei et al. 2012 Environ. Microbiol. 14(7):1744-1753 | supports | Supports transformation of synthetic sodium birnessite to manganese oxalate trihydrate and lindbergite by Aspergillus niger and Serpula himantioides. |
 | ev-birnessite-ferrier2022 | DOI:10.1111/1462-2920.15526; Ferrier et al. 2022 Environ. Microbiol. 24(8):3621-3633 | supports | Supports transformation of synthetic cobalt-doped birnessite to Co-bearing manganese oxalates by Aspergillus niger ATCC 1015. |
 
@@ -85,8 +85,10 @@ summary: 'Reviewed data/records/birnessite.yaml (cmmmech:birnessite) at commit 5
   and fungal_cobalt_accumulation_with_birnessite_host from Sasaki et al. 2009 DOI:10.2320/matertrans.M-M2009821),
   both causal graphs (fungal_synthetic_sodium_birnessite_transformation_graph and
   fungal_synthetic_cobalt_birnessite_transformation_graph using predicate: solubilizes),
-  and synchronized UniProtKB:A0A254TZW7 (CexA, MFS citrate exporter in Aspergillus
-  niger ATCC 13496 NCBITaxon:1459638, UP000218193) protein_examples. Zero open findings.'
+  and synchronized UniProtKB:A0A254TZW7 (CEXA_ASPNG, CexA in Aspergillus niger ATCC
+  13496 NCBITaxon:1459638, UP000218193) and UniProtKB:G3Y4N5 (CEXA_ASPNA, CexA in
+  Aspergillus niger ATCC 1015 NCBITaxon:380704, UP000006706) protein_examples. Zero
+  open findings.'
 reviewer:
   identity: antigravity / cmmmech-cycle2-stage4-record-reviewer
   kind: agent
@@ -146,7 +148,8 @@ checks:
     with 0 errors.
 assessments:
 - assessment_id: assess-birnessite-causal-graphs-and-proteins
-  topic: Birnessite fungal transformation causal graphs and UniProtKB:A0A254TZW7 grounding
+  topic: Birnessite fungal transformation causal graphs and UniProtKB:A0A254TZW7 /
+    UniProtKB:G3Y4N5 groundings
   area: graph
   outcome: supported
   target_ids:
@@ -159,7 +162,7 @@ assessments:
     and fungal_synthetic_cobalt_birnessite_transformation_graph) accurately model
     organic-acid solubilization (predicate: solubilizes) of synthetic birnessite and
     manganese/cobalt oxalate precipitation, with 100% synchronized UniProtKB:A0A254TZW7
-    (CexA) protein_examples.'
+    (CEXA_ASPNG) and UniProtKB:G3Y4N5 (CEXA_ASPNA) protein_examples.'
 findings: []
 actions: []
 evidence:
@@ -170,7 +173,7 @@ evidence:
   accessed_at: '2026-10-22T11:50:08Z'
   support: supports
   summary: Verified all 4 mechanisms, 2 causal graphs, and synchronized UniProtKB:A0A254TZW7
-    protein_examples across mechanisms and GENE_OR_PROTEIN nodes.
+    and UniProtKB:G3Y4N5 protein_examples across mechanisms and GENE_OR_PROTEIN nodes.
 - evidence_id: ev-birnessite-wei2012
   kind: primary_source
   reference: DOI:10.1111/j.1462-2920.2012.02776.x

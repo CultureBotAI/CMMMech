@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 36 commodity records in data/records/*.yaml at commit 547283a882c1d657f934434f2eb5ea9a1418771a. All 36 commodity records carry clear commercial/metallurgical specification descriptions, dated criticality list provenance or upstream critical-element relationships, and primary-source microbial mechanisms across 6/36 commodity records (with 4/36 carrying multi-step causal_graphs and live-verified UniProtKB protein_examples, including Cycle 2 Stage 3 additions on kaolin). Zero open findings.
+Reviewed all 36 commodity records in data/records/*.yaml at commit 547283a882c1d657f934434f2eb5ea9a1418771a. All 36 commodity records carry clear commercial/metallurgical specification descriptions, dated criticality list provenance or upstream critical-element relationships, and primary-source microbial mechanisms across 6/36 commodity records (with 4/36 carrying multi-step causal_graphs and live-verified UniProtKB protein_examples: borates, phosphate-rock, rare-earth-element-commodities, and titanium-metal, including Cycle 2 Stage 3 additions on borates). Zero open findings.
 
 ## Scope And Provenance
 
@@ -98,7 +98,7 @@ No findings recorded within this review's declared scope.
 ## Limits And Additional Notes
 
 - 30 of 36 commodity records represent refined industrial metals, alloys, or chemical products (e.g., battery-grade lithium carbonate, ferro-alloys, electrical steel, silicon carbide) listed on government criticality schedules for which no direct microbial processing study is reported.
-- Cycle 2 Stage 3 added aspergillus_cexa_kaolin_iron_mobilization_graph and UniProtKB:A0A254TZW7 (CexA in Aspergillus niger ATCC 13496 NCBITaxon:1459638) to cmmmech:kaolin; verified with zero issues.
+- Cycle 2 Stage 3 added aspergillus_cexa_borates_colemanite_leaching_graph and UniProtKB:A0A254TZW7 (CEXA_ASPNG, CexA in Aspergillus niger ATCC 13496 NCBITaxon:1459638) to cmmmech:borates alongside existing grounded causal graphs on cmmmech:phosphate-rock, cmmmech:rare-earth-element-commodities, and cmmmech:titanium-metal; verified with zero issues.
 
 ## Complete Structured Record
 
@@ -116,12 +116,13 @@ skill: .claude/skills/review-yaml-category/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: Reviewed all 36 commodity records in data/records/*.yaml at commit 547283a882c1d657f934434f2eb5ea9a1418771a.
+summary: 'Reviewed all 36 commodity records in data/records/*.yaml at commit 547283a882c1d657f934434f2eb5ea9a1418771a.
   All 36 commodity records carry clear commercial/metallurgical specification descriptions,
   dated criticality list provenance or upstream critical-element relationships, and
   primary-source microbial mechanisms across 6/36 commodity records (with 4/36 carrying
-  multi-step causal_graphs and live-verified UniProtKB protein_examples, including
-  Cycle 2 Stage 3 additions on kaolin). Zero open findings.
+  multi-step causal_graphs and live-verified UniProtKB protein_examples: borates,
+  phosphate-rock, rare-earth-element-commodities, and titanium-metal, including Cycle
+  2 Stage 3 additions on borates). Zero open findings.'
 reviewer:
   identity: antigravity / cmmmech-cycle2-stage4-cohort-reviewer
   kind: agent
@@ -1084,7 +1085,8 @@ limitations:
   silicon carbide) listed on government criticality schedules for which no direct
   microbial processing study is reported.
 notes:
-- Cycle 2 Stage 3 added aspergillus_cexa_kaolin_iron_mobilization_graph and UniProtKB:A0A254TZW7
-  (CexA in Aspergillus niger ATCC 13496 NCBITaxon:1459638) to cmmmech:kaolin; verified
-  with zero issues.
+- Cycle 2 Stage 3 added aspergillus_cexa_borates_colemanite_leaching_graph and UniProtKB:A0A254TZW7
+  (CEXA_ASPNG, CexA in Aspergillus niger ATCC 13496 NCBITaxon:1459638) to cmmmech:borates
+  alongside existing grounded causal graphs on cmmmech:phosphate-rock, cmmmech:rare-earth-element-commodities,
+  and cmmmech:titanium-metal; verified with zero issues.
 ```

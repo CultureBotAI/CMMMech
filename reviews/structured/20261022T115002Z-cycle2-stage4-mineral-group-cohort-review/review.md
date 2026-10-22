@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 7 mineral_group records in data/records/*.yaml at commit 547283a882c1d657f934434f2eb5ea9a1418771a (aluminium-hydroxides, borates, clays, feldspars,iron-oxides, olivine-group, platinum-group-minerals). All 7/7 mineral_group records carry primary-source-backed microbial mechanisms, and 2/7 (borates and olivine-group) carry grounded multi-step causal_graphs with live-verified UniProtKB protein_examples (including Cycle 2 Stage 3 additions on borates). Zero open findings.
+Reviewed all 7 mineral_group records in data/records/*.yaml at commit 547283a882c1d657f934434f2eb5ea9a1418771a (bastnaesite, biotite, chlorite, illite, olivine-group, potassium-feldspar, vermiculite). All 7/7 mineral_group records carry primary-source-backed microbial mechanisms, and 2/7 (chlorite and olivine-group) carry grounded multi-step causal_graphs with live-verified UniProtKB protein_examples. Zero open findings.
 
 ## Scope And Provenance
 
@@ -69,7 +69,7 @@ No findings recorded within this review's declared scope.
 ## Limits And Additional Notes
 
 - 5 of 7 mineral_group records document group-level microbial bioleaching or mineral-weathering studies without resolved multi-step enzymatic intermediates.
-- Cycle 2 Stage 3 added aspergillus_cexa_borates_colemanite_leaching_graph and UniProtKB:A0A254TZW7 (CexA in Aspergillus niger ATCC 13496 NCBITaxon:1459638) to cmmmech:borates; verified with zero issues.
+- Verified mr1_chlorite_fe_reduction_graph on cmmmech:chlorite (UniProtKB:P95432 CYMA_SHEON, UniProtKB:Q8EG33 Q8EG33_SHEON, UniProtKB:Q8EG34 Q8EG34_SHEON in Shewanella oneidensis MR-1 NCBITaxon:211586) and gluconobacter_olivine_bioleaching_graph on cmmmech:olivine-group (UniProtKB:Q5FSZ9 DHG_GLUOX, UniProtKB:Q5FTM1 PQQC_GLUOX, UniProtKB:Q5FTI1 Q5FTI1_GLUOX in Gluconobacter oxydans 621H NCBITaxon:290633) with zero issues.
 
 ## Complete Structured Record
 
@@ -88,11 +88,10 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 summary: Reviewed all 7 mineral_group records in data/records/*.yaml at commit 547283a882c1d657f934434f2eb5ea9a1418771a
-  (aluminium-hydroxides, borates, clays, feldspars,iron-oxides, olivine-group, platinum-group-minerals).
+  (bastnaesite, biotite, chlorite, illite, olivine-group, potassium-feldspar, vermiculite).
   All 7/7 mineral_group records carry primary-source-backed microbial mechanisms,
-  and 2/7 (borates and olivine-group) carry grounded multi-step causal_graphs with
-  live-verified UniProtKB protein_examples (including Cycle 2 Stage 3 additions on
-  borates). Zero open findings.
+  and 2/7 (chlorite and olivine-group) carry grounded multi-step causal_graphs with
+  live-verified UniProtKB protein_examples. Zero open findings.
 reviewer:
   identity: antigravity / cmmmech-cycle2-stage4-cohort-reviewer
   kind: agent
@@ -390,7 +389,9 @@ limitations:
 - 5 of 7 mineral_group records document group-level microbial bioleaching or mineral-weathering
   studies without resolved multi-step enzymatic intermediates.
 notes:
-- Cycle 2 Stage 3 added aspergillus_cexa_borates_colemanite_leaching_graph and UniProtKB:A0A254TZW7
-  (CexA in Aspergillus niger ATCC 13496 NCBITaxon:1459638) to cmmmech:borates; verified
-  with zero issues.
+- Verified mr1_chlorite_fe_reduction_graph on cmmmech:chlorite (UniProtKB:P95432 CYMA_SHEON,
+  UniProtKB:Q8EG33 Q8EG33_SHEON, UniProtKB:Q8EG34 Q8EG34_SHEON in Shewanella oneidensis
+  MR-1 NCBITaxon:211586) and gluconobacter_olivine_bioleaching_graph on cmmmech:olivine-group
+  (UniProtKB:Q5FSZ9 DHG_GLUOX, UniProtKB:Q5FTM1 PQQC_GLUOX, UniProtKB:Q5FTI1 Q5FTI1_GLUOX
+  in Gluconobacter oxydans 621H NCBITaxon:290633) with zero issues.
 ```

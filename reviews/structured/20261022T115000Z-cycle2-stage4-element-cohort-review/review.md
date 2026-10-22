@@ -134,7 +134,7 @@ No findings recorded within this review's declared scope.
 ## Limits And Additional Notes
 
 - 3 of 66 element records document criticality lists and mineral/resource relationships at the element level without direct element-level mechanisms, while 43 of the 63 mechanism-bearing element records document single-step assays without multi-step molecular intermediates.
-- Cycle 2 Stage 2 and Stage 3 added multi-step causal_graphs and UniProtKB groundings to aluminium (UniProtKB:G3Y4N5 CEXA_ASPNA), fluorine (UniProtKB:Q01398 DEH1_MORSP), iron (source-limited UNGROUNDED ax17_extracellular_fe3_reductase_system in Bacillus sp. AX17), lanthanum (UniProtKB:A0A254TZW7 CEXA_ASPNG), and zinc (UniProtKB:Q74FN6ET2 OmcS, UniProtKB:B3E982 OmcZ, UniProtKB:Q74A86 OmcB); cmmmech:thulium is tracked under cmmmech-cycle2-stage4-finding-0002 in 20261022T115006Z-cycle2-stage4-causal-graphs-cohort-review for minor node-vs-mechanism evidence explanation truncation.
+- Cycle 2 Stage 2 and Stage 3 added multi-step causal_graphs and UniProtKB groundings to aluminium (UniProtKB:G3Y4N5 CEXA_ASPNA), fluorine (UniProtKB:Q01398 DEH1_MORSP), iron (source-limited UNGROUNDED ax17_extracellular_fe3_reductase_system in Bacillus sp. AX17), lanthanum (UniProtKB:A0A254TZW7 CEXA_ASPNG and UniProtKB:G3Y4N5 CEXA_ASPNA), and zinc (UniProtKB:Q74FN6 OmcS, UniProtKB:Q74ET2 OmcE, UniProtKB:B3E982 OmcZ, UniProtKB:Q74A86 OmcB); cmmmech:thulium is tracked under cmmmech-cycle2-stage4-finding-0002 in 20261022T115006Z-cycle2-stage4-causal-graphs-cohort-review for minor node-vs-mechanism evidence explanation truncation.
 
 ## Complete Structured Record
 
@@ -1891,8 +1891,8 @@ notes:
 - Cycle 2 Stage 2 and Stage 3 added multi-step causal_graphs and UniProtKB groundings
   to aluminium (UniProtKB:G3Y4N5 CEXA_ASPNA), fluorine (UniProtKB:Q01398 DEH1_MORSP),
   iron (source-limited UNGROUNDED ax17_extracellular_fe3_reductase_system in Bacillus
-  sp. AX17), lanthanum (UniProtKB:A0A254TZW7 CEXA_ASPNG), and zinc (UniProtKB:Q74FN6ET2
-  OmcS, UniProtKB:B3E982 OmcZ, UniProtKB:Q74A86 OmcB); cmmmech:thulium is tracked
-  under cmmmech-cycle2-stage4-finding-0002 in 20261022T115006Z-cycle2-stage4-causal-graphs-cohort-review
+  sp. AX17), lanthanum (UniProtKB:A0A254TZW7 CEXA_ASPNG and UniProtKB:G3Y4N5 CEXA_ASPNA),
+  and zinc (UniProtKB:Q74FN6 OmcS, UniProtKB:Q74ET2 OmcE, UniProtKB:B3E982 OmcZ, UniProtKB:Q74A86
+  OmcB); cmmmech:thulium is tracked under cmmmech-cycle2-stage4-finding-0002 in 20261022T115006Z-cycle2-stage4-causal-graphs-cohort-review
   for minor node-vs-mechanism evidence explanation truncation.
 ```

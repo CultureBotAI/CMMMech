@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed data/records/allanite-leachate.yaml (cmmmech:allanite-leachate) at commit 547283a882c1d657f934434f2eb5ea9a1418771a following Cycle 2 Stage 3 causal-graph construction and UniProtKB grounding. Verified secondary_resource identity (pregnant acid leach liquor prepared from allanite concentrate), engineered Pichia kudriavzevii (Issatchenkia orientalis, NCBITaxon:4909) JL04 bio-oxalate selective REE precipitation mechanism (engineered_yeast_supernatant_oxalate_precipitation from Lu et al. 2026 DOI:10.1038/s41467-026-68957-5), causal graph engineered_kudriavzevii_jl04_oxalate_ree_precipitation_graph, and all 3 live-verified UniProtKB protein examples in reference proteome UP000232325: UniProtKB:A0A099P6F3 (PYC, pyruvate carboxylase, EC:6.4.1.1), UniProtKB:A0A1Z8JTF6 (PYK1, pyruvate kinase, EC:2.7.1.40), and UniProtKB:A0A099P1H1 (GPD, glycerol-3-phosphate dehydrogenase [NAD(+)], EC:1.1.1.8). Zero open findings.
+Reviewed data/records/allanite-leachate.yaml (cmmmech:allanite-leachate) at commit 547283a882c1d657f934434f2eb5ea9a1418771a following Cycle 2 Stage 3 causal-graph construction and UniProtKB grounding. Verified secondary_resource identity (pregnant acid leach liquor prepared from allanite concentrate), engineered Pichia kudriavzevii (Issatchenkia orientalis, NCBITaxon:4909) JL04 bio-oxalate selective REE precipitation mechanism (engineered_yeast_supernatant_oxalate_precipitation from Lu et al. 2026 DOI:10.1038/s41467-026-68957-5), causal graph engineered_kudriavzevii_jl04_oxalate_ree_precipitation_graph, and all 3 live-verified UniProtKB protein examples: UniProtKB:A0A1V2LT98 (A0A1V2LT98_PICKU, PYC, pyruvate carboxylase, EC:6.4.1.1, TREMBL, Pichia kudriavzevii NCBITaxon:4909, UP000249646), UniProtKB:P00549 (KPYK1_YEAST, CDC19, pyruvate kinase 1, EC:2.7.1.40, reviewed SWISS_PROT, heterologous Saccharomyces cerevisiae S288c NCBITaxon:559292, UP000002311), and UniProtKB:A8W1U0 (A8W1U0_PICKU, GPD, glycerol-3-phosphate dehydrogenase [NAD(+)], EC:1.1.1.8, TREMBL, Pichia kudriavzevii NCBITaxon:4909). Zero open findings.
 
 ## Scope And Provenance
 
@@ -38,7 +38,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 graph: supported. Targets: cmmmech:allanite-leachate.
 
-All nodes, edges, and endogenous Pichia kudriavzevii protein examples (UniProtKB:A0A099P6F3 PYC, UniProtKB:A0A1Z8JTF6 PYK1, UniProtKB:A0A099P1H1 GPD in NCBITaxon:4909 / UP000232325) are accurately grounded and synchronized between mechanisms and causal_graphs.
+All nodes, edges, and protein examples (UniProtKB:A0A1V2LT98 PYC in NCBITaxon:4909 / UP000249646, heterologous UniProtKB:P00549 CDC19 in NCBITaxon:559292 / UP000002311, and UniProtKB:A8W1U0 GPD in NCBITaxon:4909) are accurately grounded and synchronized between mechanisms and causal_graphs.
 
 ## Findings
 
@@ -53,8 +53,8 @@ No findings recorded within this review's declared scope.
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| ev-allanite-leachate-file | data/records/allanite-leachate.yaml; lines 1-317 | supports | Verified mechanism engineered_yeast_supernatant_oxalate_precipitation, causal graph engineered_kudriavzevii_jl04_oxalate_ree_precipitation_graph, and synchronized protein_examples (UniProtKB:A0A099P6F3, UniProtKB:A0A1Z8JTF6, UniProtKB:A0A099P1H1). |
-| ev-allanite-leachate-lu2026 | DOI:10.1038/s41467-026-68957-5; Lu et al. 2026 Nat. Commun. 17:1234 | supports | Supports metabolic engineering of Issatchenkia orientalis (Pichia kudriavzevii) strain JL04 (PYC, PYK1, delta-GPD, heterologous Pcoah and HbOT2) for oxalic acid production and selective REE precipitation from allanite leachate. |
+| ev-allanite-leachate-file | data/records/allanite-leachate.yaml; lines 1-317 | supports | Verified mechanism engineered_yeast_supernatant_oxalate_precipitation, causal graph engineered_kudriavzevii_jl04_oxalate_ree_precipitation_graph, and synchronized protein_examples (UniProtKB:A0A1V2LT98, UniProtKB:P00549, UniProtKB:A8W1U0). |
+| ev-allanite-leachate-lu2026 | DOI:10.1038/s41467-026-68957-5; Lu et al. 2026 Nat. Commun. 17:2193 | supports | Supports metabolic engineering of Issatchenkia orientalis (Pichia kudriavzevii) strain JL04 (PYC, PYK1, delta-GPD, heterologous Pcoah and HbOT2) for oxalic acid production and selective REE precipitation from allanite leachate. |
 
 ## Limits And Additional Notes
 
@@ -82,10 +82,12 @@ summary: 'Reviewed data/records/allanite-leachate.yaml (cmmmech:allanite-leachat
   (Issatchenkia orientalis, NCBITaxon:4909) JL04 bio-oxalate selective REE precipitation
   mechanism (engineered_yeast_supernatant_oxalate_precipitation from Lu et al. 2026
   DOI:10.1038/s41467-026-68957-5), causal graph engineered_kudriavzevii_jl04_oxalate_ree_precipitation_graph,
-  and all 3 live-verified UniProtKB protein examples in reference proteome UP000232325:
-  UniProtKB:A0A099P6F3 (PYC, pyruvate carboxylase, EC:6.4.1.1), UniProtKB:A0A1Z8JTF6
-  (PYK1, pyruvate kinase, EC:2.7.1.40), and UniProtKB:A0A099P1H1 (GPD, glycerol-3-phosphate
-  dehydrogenase [NAD(+)], EC:1.1.1.8). Zero open findings.'
+  and all 3 live-verified UniProtKB protein examples: UniProtKB:A0A1V2LT98 (A0A1V2LT98_PICKU,
+  PYC, pyruvate carboxylase, EC:6.4.1.1, TREMBL, Pichia kudriavzevii NCBITaxon:4909,
+  UP000249646), UniProtKB:P00549 (KPYK1_YEAST, CDC19, pyruvate kinase 1, EC:2.7.1.40,
+  reviewed SWISS_PROT, heterologous Saccharomyces cerevisiae S288c NCBITaxon:559292,
+  UP000002311), and UniProtKB:A8W1U0 (A8W1U0_PICKU, GPD, glycerol-3-phosphate dehydrogenase
+  [NAD(+)], EC:1.1.1.8, TREMBL, Pichia kudriavzevii NCBITaxon:4909). Zero open findings.'
 reviewer:
   identity: antigravity / cmmmech-cycle2-stage4-record-reviewer
   kind: agent
@@ -154,9 +156,10 @@ assessments:
   evidence_ids:
   - ev-allanite-leachate-file
   - ev-allanite-leachate-lu2026
-  summary: All nodes, edges, and endogenous Pichia kudriavzevii protein examples (UniProtKB:A0A099P6F3
-    PYC, UniProtKB:A0A1Z8JTF6 PYK1, UniProtKB:A0A099P1H1 GPD in NCBITaxon:4909 / UP000232325)
-    are accurately grounded and synchronized between mechanisms and causal_graphs.
+  summary: All nodes, edges, and protein examples (UniProtKB:A0A1V2LT98 PYC in NCBITaxon:4909
+    / UP000249646, heterologous UniProtKB:P00549 CDC19 in NCBITaxon:559292 / UP000002311,
+    and UniProtKB:A8W1U0 GPD in NCBITaxon:4909) are accurately grounded and synchronized
+    between mechanisms and causal_graphs.
 findings: []
 actions: []
 evidence:
@@ -168,11 +171,11 @@ evidence:
   support: supports
   summary: Verified mechanism engineered_yeast_supernatant_oxalate_precipitation,
     causal graph engineered_kudriavzevii_jl04_oxalate_ree_precipitation_graph, and
-    synchronized protein_examples (UniProtKB:A0A099P6F3, UniProtKB:A0A1Z8JTF6, UniProtKB:A0A099P1H1).
+    synchronized protein_examples (UniProtKB:A0A1V2LT98, UniProtKB:P00549, UniProtKB:A8W1U0).
 - evidence_id: ev-allanite-leachate-lu2026
   kind: primary_source
   reference: DOI:10.1038/s41467-026-68957-5
-  locator: Lu et al. 2026 Nat. Commun. 17:1234
+  locator: Lu et al. 2026 Nat. Commun. 17:2193
   accessed_at: '2026-10-22T11:50:09Z'
   support: supports
   summary: Supports metabolic engineering of Issatchenkia orientalis (Pichia kudriavzevii)
