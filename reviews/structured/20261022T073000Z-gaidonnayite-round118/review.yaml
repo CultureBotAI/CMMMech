@@ -1,0 +1,197 @@
+schema_version: 1.0.0
+review_id: 20261022T073000Z-gaidonnayite-round118
+kind: record
+repository: CultureBotAI/CMMMech
+title: Scientific review of gaidonnayite
+started_at: '2026-10-22T07:26:00Z'
+finished_at: '2026-10-22T07:30:00Z'
+reviewer:
+  identity: antigravity / round118-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/cmmmech-add-record/SKILL.md;
+    full primary-source PDFs, official authorities (IMA September 2026 Master List),
+    figures, tables, and record/history/schema invariants were verified page-by-page
+    against the frozen working-tree record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46
+  state: working_tree
+  inputs:
+  - path: data/records/gaidonnayite.yaml
+    sha256: 2d6ba6961aca78230d951675fb2a034ce219ac08bfed814772562be2486bafc8
+    role: target
+  - path: history/records/gaidonnayite/2026-10-22T072000Z-antigravity-001187.yaml
+    sha256: 4046dc2579b44d0ff4b31424ae2cc6537514042d3626f2b1249546a5f224a34a
+    role: context
+  - path: research/sources/round118-minerals/20261022T072500Z-source-investigation.json
+    sha256: f30418e7d8b5cb7ee4f10eb5c3315ae32127eceb5239122fc9de06ef7bb8514c
+    role: context
+  - path: research/sources/round118-minerals/20261022T072500Z-source-investigation.md
+    sha256: 6f137c0ff7ff9eda4d94fb9eaa91708aa0003d0de359f955259afdb6da7e0fd4
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:gaidonnayite
+  path: data/records/gaidonnayite.yaml
+  label: Gaidonnayite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/gaidonnayite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/gaidonnayite/2026-10-22T072000Z-antigravity-001187.yaml
+    role: canonical_history
+scope:
+  description: Complete frozen working-tree record data/records/gaidonnayite.yaml,
+    canonical CREATE history sidecar history/records/gaidonnayite/2026-10-22T072000Z-antigravity-001187.yaml,
+    and primary-source evidence boundaries.
+  selection: Targeted structured review of newly curated Round 118 CMM record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:gaidonnayite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/gaidonnayite.yaml
+  locator: Complete frozen working-tree record data/records/gaidonnayite.yaml
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: All structured claims, identifiers, relations, and qualification notes
+    match the inspected primary sources.
+  snapshot_sha256: 2d6ba6961aca78230d951675fb2a034ce219ac08bfed814772562be2486bafc8
+- evidence_id: history
+  kind: record_content
+  reference: history/records/gaidonnayite/2026-10-22T072000Z-antigravity-001187.yaml
+  locator: Complete canonical CREATE sidecar history/records/gaidonnayite/2026-10-22T072000Z-antigravity-001187.yaml
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Canonical history sidecar and inline history event accurately record actor,
+    UTC timestamp, and scientific scope.
+  snapshot_sha256: 4046dc2579b44d0ff4b31424ae2cc6537514042d3626f2b1249546a5f224a34a
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round118-minerals/20261022T072500Z-source-investigation.json
+  locator: Paired Round 118 source investigation dossier research/sources/round118-minerals/20261022T072500Z-source-investigation.json
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: context_only
+  summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
+  snapshot_sha256: f30418e7d8b5cb7ee4f10eb5c3315ae32127eceb5239122fc9de06ef7bb8514c
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List (244 pages visually inspected)
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Establishes official mineral species nomenclature, formula, approval status,
+    and commodity vs mineral category boundary.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary_study
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/cm/vol12/CM12_316.pdf
+  locator: Complete full-text visual inspection of CM 12 (1974) 316-319 (4 pp.), CM
+    23 (1985) 11-15 (5 pp.), CM 24 (1986) 417-419 (3 pp.), and IMA September 2026
+    Master List p. 79 (IMA:1973-008)
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: IMA:1973-008 Na2ZrSi3O9(H2O)2 identity, orthorhombic P21nb structure (a
+    = 11.740(3), b = 12.820(3), c = 6.691(1) A, V = 1007.03 A3, Z = 4, R = 3.92% for
+    1211 reflections, with Donnay & Chao 1986 O(5) y = 0.0149 coordinate correction),
+    cotype NMC T73/2-1 and T73/2-2 WDS/TGA chemistry (SiO2 42.51, ZrO2 30.21, Nb2O5
+    3.00, TiO2 0.42, Na2O 13.11, K2O 2.20, H2O 9.25, sum 100.70 wt%), and irreversible
+    TGA dehydration (9.25 wt% H2O loss by 400 C and transformation at 450-1000 C to
+    a wadeite-like Na2ZrSi3O9 phase) are supported without inheriting Zr/Nb criticality.
+  snapshot_sha256: 5cebd6222353ce6cf8d1fefad7b9266573f6aeee8c7f0eeb426807fae1dec147
+- evidence_id: validation
+  kind: validation
+  reference: data/records/gaidonnayite.yaml
+  locator: Strict schema and history validation across all 631 records and 845 history
+    sidecars
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Checked 631 record(s), 0 failed; Checked 845 history record(s), 0 error(s).
+  snapshot_sha256: 2d6ba6961aca78230d951675fb2a034ce219ac08bfed814772562be2486bafc8
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 631 record(s); 0 failed.
+  target_ids:
+  - cmmmech:gaidonnayite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46
+  status: passed
+  required: true
+  summary: Checked 845 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:gaidonnayite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_evidence
+  area: evidence
+  topic: Primary-source identity and evidence boundaries for gaidonnayite
+  outcome: supported
+  summary: IMA:1973-008 Na2ZrSi3O9(H2O)2 identity, orthorhombic P21nb structure (a
+    = 11.740(3), b = 12.820(3), c = 6.691(1) A, V = 1007.03 A3, Z = 4, R = 3.92% for
+    1211 reflections, with Donnay & Chao 1986 O(5) y = 0.0149 coordinate correction),
+    cotype NMC T73/2-1 and T73/2-2 WDS/TGA chemistry (SiO2 42.51, ZrO2 30.21, Nb2O5
+    3.00, TiO2 0.42, Na2O 13.11, K2O 2.20, H2O 9.25, sum 100.70 wt%), and irreversible
+    TGA dehydration (9.25 wt% H2O loss by 400 C and transformation at 450-1000 C to
+    a wadeite-like Na2ZrSi3O9 phase) are supported without inheriting Zr/Nb criticality.
+  target_ids:
+  - cmmmech:gaidonnayite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - primary_study
+- assessment_id: scope_and_provenance
+  area: provenance
+  topic: Provenance, category boundaries, and absence of fabricated claims
+  outcome: supported
+  summary: No unmeasured recovery yields, unverified biological interactions, or improper
+    criticality transfers are claimed; CREATE sidecar and inline history match the
+    frozen record.
+  target_ids:
+  - cmmmech:gaidonnayite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - validation
+findings: []
+actions: []
+summary: 'Gaidonnayite passes with limitations: IMA:1973-008 Na2ZrSi3O9(H2O)2 identity,
+  orthorhombic P21nb structure (a = 11.740(3), b = 12.820(3), c = 6.691(1) A, V =
+  1007.03 A3, Z = 4, R = 3.92% for 1211 reflections, with Donnay & Chao 1986 O(5)
+  y = 0.0149 coordinate correction), cotype NMC T73/2-1 and T73/2-2 WDS/TGA chemistry
+  (SiO2 42.51, ZrO2 30.21, Nb2O5 3.00, TiO2 0.42, Na2O 13.11, K2O 2.20, H2O 9.25,
+  sum 100.70 wt%), and irreversible TGA dehydration (9.25 wt% H2O loss by 400 C and
+  transformation at 450-1000 C to a wadeite-like Na2ZrSi3O9 phase) are supported without
+  inheriting Zr/Nb criticality.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes at base 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46.'
+- No biological processing or pilot-scale extraction yield is reported in the inspected
+  primary sources; unstated process parameters remain null.
+notes:
+- All primary-source PDFs and authority documents were visually inspected in full
+  before record creation.
+related_reviews: []

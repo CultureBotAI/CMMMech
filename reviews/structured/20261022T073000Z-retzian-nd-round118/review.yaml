@@ -1,0 +1,195 @@
+schema_version: 1.0.0
+review_id: 20261022T073000Z-retzian-nd-round118
+kind: record
+repository: CultureBotAI/CMMMech
+title: Scientific review of retzian-nd
+started_at: '2026-10-22T07:26:00Z'
+finished_at: '2026-10-22T07:30:00Z'
+reviewer:
+  identity: antigravity / round118-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/cmmmech-add-record/SKILL.md;
+    full primary-source PDFs, official authorities (IMA September 2026 Master List),
+    figures, tables, and record/history/schema invariants were verified page-by-page
+    against the frozen working-tree record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46
+  state: working_tree
+  inputs:
+  - path: data/records/retzian-nd.yaml
+    sha256: 42b5e38f391e1be0f81d17c70695da2ef929a87e40c9433d2c42e6868278f3b9
+    role: target
+  - path: history/records/retzian-nd/2026-10-22T072000Z-antigravity-00118d.yaml
+    sha256: 365050c00d3527ed9e875b81c00db0337b6e7c14168bdbeda8e16c05144a0844
+    role: context
+  - path: research/sources/round118-minerals/20261022T072500Z-source-investigation.json
+    sha256: f30418e7d8b5cb7ee4f10eb5c3315ae32127eceb5239122fc9de06ef7bb8514c
+    role: context
+  - path: research/sources/round118-minerals/20261022T072500Z-source-investigation.md
+    sha256: 6f137c0ff7ff9eda4d94fb9eaa91708aa0003d0de359f955259afdb6da7e0fd4
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:retzian-nd
+  path: data/records/retzian-nd.yaml
+  label: Retzian-(Nd)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/retzian-nd.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/retzian-nd/2026-10-22T072000Z-antigravity-00118d.yaml
+    role: canonical_history
+scope:
+  description: Complete frozen working-tree record data/records/retzian-nd.yaml, canonical
+    CREATE history sidecar history/records/retzian-nd/2026-10-22T072000Z-antigravity-00118d.yaml,
+    and primary-source evidence boundaries.
+  selection: Targeted structured review of newly curated Round 118 CMM record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:retzian-nd
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/retzian-nd.yaml
+  locator: Complete frozen working-tree record data/records/retzian-nd.yaml
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: All structured claims, identifiers, relations, and qualification notes
+    match the inspected primary sources.
+  snapshot_sha256: 42b5e38f391e1be0f81d17c70695da2ef929a87e40c9433d2c42e6868278f3b9
+- evidence_id: history
+  kind: record_content
+  reference: history/records/retzian-nd/2026-10-22T072000Z-antigravity-00118d.yaml
+  locator: Complete canonical CREATE sidecar history/records/retzian-nd/2026-10-22T072000Z-antigravity-00118d.yaml
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Canonical history sidecar and inline history event accurately record actor,
+    UTC timestamp, and scientific scope.
+  snapshot_sha256: 365050c00d3527ed9e875b81c00db0337b6e7c14168bdbeda8e16c05144a0844
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round118-minerals/20261022T072500Z-source-investigation.json
+  locator: Paired Round 118 source investigation dossier research/sources/round118-minerals/20261022T072500Z-source-investigation.json
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: context_only
+  summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
+  snapshot_sha256: f30418e7d8b5cb7ee4f10eb5c3315ae32127eceb5239122fc9de06ef7bb8514c
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List (244 pages visually inspected)
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Establishes official mineral species nomenclature, formula, approval status,
+    and commodity vs mineral category boundary.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary_study
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/am/vol67/AM67_841.pdf
+  locator: Complete full-text visual inspection of AM 67 (1982) 841-845 (5 pp.) and
+    IMA September 2026 Master List p. 184 (1982 s.p.)
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Approved (1982 s.p., status A) Mn2+2Nd(AsO4)(OH)4 identity, orthorhombic
+    Pban unit cell (a = 5.690(5), b = 12.12(1), c = 4.874(3) A, Z = 2), and Sterling
+    Hill holotype NMNH 143762 EMPA chemistry (MnO 25.9, MgO 2.0, ZnO 1.8, FeO 0.4,
+    As2O5 26.9, Nd2O3 10.9, Ce2O3 7.8, La2O3 7.6, Pr2O3 4.2, Sm2O3 2.4, Gd2O3 1.9,
+    Y2O3 1.6, Eu2O3 0.9, H2O 8.3 transferred from Swedish retzian-(Ce) DTA-TGA on
+    NMNH R5416, sum 102.6 wt%) are supported without a numbered IMA CURIE or inherited
+    Nd/REE/Mn/As criticality.
+  snapshot_sha256: d4415e67597b4ce2e8c6a98f3e3453afe51f30cf2e35eecbaf06d49b93d65521
+- evidence_id: validation
+  kind: validation
+  reference: data/records/retzian-nd.yaml
+  locator: Strict schema and history validation across all 631 records and 845 history
+    sidecars
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Checked 631 record(s), 0 failed; Checked 845 history record(s), 0 error(s).
+  snapshot_sha256: 42b5e38f391e1be0f81d17c70695da2ef929a87e40c9433d2c42e6868278f3b9
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 631 record(s); 0 failed.
+  target_ids:
+  - cmmmech:retzian-nd
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46
+  status: passed
+  required: true
+  summary: Checked 845 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:retzian-nd
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_evidence
+  area: evidence
+  topic: Primary-source identity and evidence boundaries for retzian-nd
+  outcome: supported
+  summary: Approved (1982 s.p., status A) Mn2+2Nd(AsO4)(OH)4 identity, orthorhombic
+    Pban unit cell (a = 5.690(5), b = 12.12(1), c = 4.874(3) A, Z = 2), and Sterling
+    Hill holotype NMNH 143762 EMPA chemistry (MnO 25.9, MgO 2.0, ZnO 1.8, FeO 0.4,
+    As2O5 26.9, Nd2O3 10.9, Ce2O3 7.8, La2O3 7.6, Pr2O3 4.2, Sm2O3 2.4, Gd2O3 1.9,
+    Y2O3 1.6, Eu2O3 0.9, H2O 8.3 transferred from Swedish retzian-(Ce) DTA-TGA on
+    NMNH R5416, sum 102.6 wt%) are supported without a numbered IMA CURIE or inherited
+    Nd/REE/Mn/As criticality.
+  target_ids:
+  - cmmmech:retzian-nd
+  evidence_ids:
+  - owner
+  - ima_authority
+  - primary_study
+- assessment_id: scope_and_provenance
+  area: provenance
+  topic: Provenance, category boundaries, and absence of fabricated claims
+  outcome: supported
+  summary: No unmeasured recovery yields, unverified biological interactions, or improper
+    criticality transfers are claimed; CREATE sidecar and inline history match the
+    frozen record.
+  target_ids:
+  - cmmmech:retzian-nd
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - validation
+findings: []
+actions: []
+summary: 'Retzian-(Nd) passes with limitations: Approved (1982 s.p., status A) Mn2+2Nd(AsO4)(OH)4
+  identity, orthorhombic Pban unit cell (a = 5.690(5), b = 12.12(1), c = 4.874(3)
+  A, Z = 2), and Sterling Hill holotype NMNH 143762 EMPA chemistry (MnO 25.9, MgO
+  2.0, ZnO 1.8, FeO 0.4, As2O5 26.9, Nd2O3 10.9, Ce2O3 7.8, La2O3 7.6, Pr2O3 4.2,
+  Sm2O3 2.4, Gd2O3 1.9, Y2O3 1.6, Eu2O3 0.9, H2O 8.3 transferred from Swedish retzian-(Ce)
+  DTA-TGA on NMNH R5416, sum 102.6 wt%) are supported without a numbered IMA CURIE
+  or inherited Nd/REE/Mn/As criticality.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes at base 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46.'
+- No biological processing or pilot-scale extraction yield is reported in the inspected
+  primary sources; unstated process parameters remain null.
+notes:
+- All primary-source PDFs and authority documents were visually inspected in full
+  before record creation.
+related_reviews: []

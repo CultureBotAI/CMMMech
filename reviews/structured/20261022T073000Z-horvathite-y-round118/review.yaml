@@ -1,0 +1,195 @@
+schema_version: 1.0.0
+review_id: 20261022T073000Z-horvathite-y-round118
+kind: record
+repository: CultureBotAI/CMMMech
+title: Scientific review of horvathite-y
+started_at: '2026-10-22T07:26:00Z'
+finished_at: '2026-10-22T07:30:00Z'
+reviewer:
+  identity: antigravity / round118-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/cmmmech-add-record/SKILL.md;
+    full primary-source PDFs, official authorities (IMA September 2026 Master List),
+    figures, tables, and record/history/schema invariants were verified page-by-page
+    against the frozen working-tree record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46
+  state: working_tree
+  inputs:
+  - path: data/records/horvathite-y.yaml
+    sha256: c82eafbb413392bcbf29a69ab5cde9affda492c183d5994131e9c30ddc563c2c
+    role: target
+  - path: history/records/horvathite-y/2026-10-22T072000Z-antigravity-001184.yaml
+    sha256: b1ae86391165b2e866f45befcb37a244fcabf8245b66216c3fc377ab916f1f37
+    role: context
+  - path: research/sources/round118-minerals/20261022T072500Z-source-investigation.json
+    sha256: f30418e7d8b5cb7ee4f10eb5c3315ae32127eceb5239122fc9de06ef7bb8514c
+    role: context
+  - path: research/sources/round118-minerals/20261022T072500Z-source-investigation.md
+    sha256: 6f137c0ff7ff9eda4d94fb9eaa91708aa0003d0de359f955259afdb6da7e0fd4
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:horvathite-y
+  path: data/records/horvathite-y.yaml
+  label: Horváthite-(Y)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/horvathite-y.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/horvathite-y/2026-10-22T072000Z-antigravity-001184.yaml
+    role: canonical_history
+scope:
+  description: Complete frozen working-tree record data/records/horvathite-y.yaml,
+    canonical CREATE history sidecar history/records/horvathite-y/2026-10-22T072000Z-antigravity-001184.yaml,
+    and primary-source evidence boundaries.
+  selection: Targeted structured review of newly curated Round 118 CMM record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:horvathite-y
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/horvathite-y.yaml
+  locator: Complete frozen working-tree record data/records/horvathite-y.yaml
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: All structured claims, identifiers, relations, and qualification notes
+    match the inspected primary sources.
+  snapshot_sha256: c82eafbb413392bcbf29a69ab5cde9affda492c183d5994131e9c30ddc563c2c
+- evidence_id: history
+  kind: record_content
+  reference: history/records/horvathite-y/2026-10-22T072000Z-antigravity-001184.yaml
+  locator: Complete canonical CREATE sidecar history/records/horvathite-y/2026-10-22T072000Z-antigravity-001184.yaml
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Canonical history sidecar and inline history event accurately record actor,
+    UTC timestamp, and scientific scope.
+  snapshot_sha256: b1ae86391165b2e866f45befcb37a244fcabf8245b66216c3fc377ab916f1f37
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round118-minerals/20261022T072500Z-source-investigation.json
+  locator: Paired Round 118 source investigation dossier research/sources/round118-minerals/20261022T072500Z-source-investigation.json
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: context_only
+  summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
+  snapshot_sha256: f30418e7d8b5cb7ee4f10eb5c3315ae32127eceb5239122fc9de06ef7bb8514c
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List (244 pages visually inspected)
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Establishes official mineral species nomenclature, formula, approval status,
+    and commodity vs mineral category boundary.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary_study
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/cm/vol35/CM35_743.pdf
+  locator: Complete full-text visual inspection of CM 35 (1997) 743-749 (7 pp.) and
+    IMA September 2026 Master List p. 96 (IMA:1996-032)
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: IMA:1996-032 NaY(CO3)F2 identity, orthorhombic Pmcn crystal structure (powder
+    a = 6.964(3), b = 9.173(6), c = 6.302(2) A, V = 402.6(4) A3; SXRD a = 6.959(2),
+    b = 9.170(2), c = 6.301(1) A, V = 402.1(2) A3, Z = 4, R = 1.6%, Rw = 1.4% for
+    499 observed reflections), and Poudrette quarry cotype CMNMI 81536 WDS composition
+    (Y2O3 45.07, Er2O3 3.02, Dy2O3 2.49, Yb2O3 1.64, Ho2O3 0.81, Gd2O3 0.45, Tb2O3
+    0.12, Na2O 12.62, CaO 1.86, F 17.22, CO2 19.83 calc, sum 97.90 wt%) are supported
+    without inheriting Y/HREE criticality.
+  snapshot_sha256: cd15887ddaf1ea309cf402850279661be1447c58f9df7b8de83e1807d7392b2a
+- evidence_id: validation
+  kind: validation
+  reference: data/records/horvathite-y.yaml
+  locator: Strict schema and history validation across all 631 records and 845 history
+    sidecars
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Checked 631 record(s), 0 failed; Checked 845 history record(s), 0 error(s).
+  snapshot_sha256: c82eafbb413392bcbf29a69ab5cde9affda492c183d5994131e9c30ddc563c2c
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 631 record(s); 0 failed.
+  target_ids:
+  - cmmmech:horvathite-y
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46
+  status: passed
+  required: true
+  summary: Checked 845 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:horvathite-y
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_evidence
+  area: evidence
+  topic: Primary-source identity and evidence boundaries for horvathite-y
+  outcome: supported
+  summary: IMA:1996-032 NaY(CO3)F2 identity, orthorhombic Pmcn crystal structure (powder
+    a = 6.964(3), b = 9.173(6), c = 6.302(2) A, V = 402.6(4) A3; SXRD a = 6.959(2),
+    b = 9.170(2), c = 6.301(1) A, V = 402.1(2) A3, Z = 4, R = 1.6%, Rw = 1.4% for
+    499 observed reflections), and Poudrette quarry cotype CMNMI 81536 WDS composition
+    (Y2O3 45.07, Er2O3 3.02, Dy2O3 2.49, Yb2O3 1.64, Ho2O3 0.81, Gd2O3 0.45, Tb2O3
+    0.12, Na2O 12.62, CaO 1.86, F 17.22, CO2 19.83 calc, sum 97.90 wt%) are supported
+    without inheriting Y/HREE criticality.
+  target_ids:
+  - cmmmech:horvathite-y
+  evidence_ids:
+  - owner
+  - ima_authority
+  - primary_study
+- assessment_id: scope_and_provenance
+  area: provenance
+  topic: Provenance, category boundaries, and absence of fabricated claims
+  outcome: supported
+  summary: No unmeasured recovery yields, unverified biological interactions, or improper
+    criticality transfers are claimed; CREATE sidecar and inline history match the
+    frozen record.
+  target_ids:
+  - cmmmech:horvathite-y
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - validation
+findings: []
+actions: []
+summary: 'Horváthite-(Y) passes with limitations: IMA:1996-032 NaY(CO3)F2 identity,
+  orthorhombic Pmcn crystal structure (powder a = 6.964(3), b = 9.173(6), c = 6.302(2)
+  A, V = 402.6(4) A3; SXRD a = 6.959(2), b = 9.170(2), c = 6.301(1) A, V = 402.1(2)
+  A3, Z = 4, R = 1.6%, Rw = 1.4% for 499 observed reflections), and Poudrette quarry
+  cotype CMNMI 81536 WDS composition (Y2O3 45.07, Er2O3 3.02, Dy2O3 2.49, Yb2O3 1.64,
+  Ho2O3 0.81, Gd2O3 0.45, Tb2O3 0.12, Na2O 12.62, CaO 1.86, F 17.22, CO2 19.83 calc,
+  sum 97.90 wt%) are supported without inheriting Y/HREE criticality.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes at base 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46.'
+- No biological processing or pilot-scale extraction yield is reported in the inspected
+  primary sources; unstated process parameters remain null.
+notes:
+- All primary-source PDFs and authority documents were visually inspected in full
+  before record creation.
+related_reviews: []

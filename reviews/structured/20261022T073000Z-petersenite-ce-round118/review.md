@@ -1,0 +1,274 @@
+# Scientific review of petersenite-ce
+
+- Review: 20261022T073000Z-petersenite-ce-round118
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-22T07:26:00Z
+- Finished UTC: 2026-10-22T07:30:00Z
+- Reviewer: antigravity / round118-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Petersenite-(Ce) passes with limitations: IMA:1992-048 Na4Ce2(CO3)5 identity, monoclinic P21 burbankite-group supercell structure (a = 20.872(4), b = 6.367(1), c = 10.601(2) A, beta = 120.50(1) deg, V = 1213.9(4) A3, Z = 4, R = 3.5%, Rw = 3.0% for 3506 observed reflections), and Poudrette quarry cotype CMN 81511 WDS composition (Ce2O3 23.66, La2O3 14.49, Nd2O3 5.82, Pr2O3 2.00, Sm2O3 0.60, Na2O 17.38, SrO 1.70, CaO 1.32, BaO 0.32, CO2 32.92 calc, sum 100.21 wt%) are supported without inheriting Ce/REE criticality.
+
+## Scope And Provenance
+
+Complete frozen working-tree record data/records/petersenite-ce.yaml, canonical CREATE history sidecar history/records/petersenite-ce/2026-10-22T072000Z-antigravity-001180.yaml, and primary-source evidence boundaries.
+
+Selection: Targeted structured review of newly curated Round 118 CMM record.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:petersenite-ce | data/records/petersenite-ce.yaml | maintained | Petersenite-(Ce) |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:petersenite-ce | Checked 631 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:petersenite-ce | Checked 845 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Primary-source identity and evidence boundaries for petersenite-ce
+
+evidence: supported. Targets: cmmmech:petersenite-ce.
+
+IMA:1992-048 Na4Ce2(CO3)5 identity, monoclinic P21 burbankite-group supercell structure (a = 20.872(4), b = 6.367(1), c = 10.601(2) A, beta = 120.50(1) deg, V = 1213.9(4) A3, Z = 4, R = 3.5%, Rw = 3.0% for 3506 observed reflections), and Poudrette quarry cotype CMN 81511 WDS composition (Ce2O3 23.66, La2O3 14.49, Nd2O3 5.82, Pr2O3 2.00, Sm2O3 0.60, Na2O 17.38, SrO 1.70, CaO 1.32, BaO 0.32, CO2 32.92 calc, sum 100.21 wt%) are supported without inheriting Ce/REE criticality.
+
+### Provenance, category boundaries, and absence of fabricated claims
+
+provenance: supported. Targets: cmmmech:petersenite-ce.
+
+No unmeasured recovery yields, unverified biological interactions, or improper criticality transfers are claimed; CREATE sidecar and inline history match the frozen record.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/petersenite-ce.yaml; Complete frozen working-tree record data/records/petersenite-ce.yaml | supports | All structured claims, identifiers, relations, and qualification notes match the inspected primary sources. |
+| history | history/records/petersenite-ce/2026-10-22T072000Z-antigravity-001180.yaml; Complete canonical CREATE sidecar history/records/petersenite-ce/2026-10-22T072000Z-antigravity-001180.yaml | supports | Canonical history sidecar and inline history event accurately record actor, UTC timestamp, and scientific scope. |
+| dossier | research/sources/round118-minerals/20261022T072500Z-source-investigation.json; Paired Round 118 source investigation dossier research/sources/round118-minerals/20261022T072500Z-source-investigation.json | context_only | Documents deduplication, primary-source acquisition hashes, and scope boundaries. |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List (244 pages visually inspected) | supports | Establishes official mineral species nomenclature, formula, approval status, and commodity vs mineral category boundary. |
+| primary_study | https://www.rruff.net/doclib/cm/vol32/CM32_405.pdf; Complete full-text visual inspection of CM 32 (1994) 405-414 (10 pp.) and IMA September 2026 Master List p. 170 (IMA:1992-048) | supports | IMA:1992-048 Na4Ce2(CO3)5 identity, monoclinic P21 burbankite-group supercell structure (a = 20.872(4), b = 6.367(1), c = 10.601(2) A, beta = 120.50(1) deg, V = 1213.9(4) A3, Z = 4, R = 3.5%, Rw = 3.0% for 3506 observed reflections), and Poudrette quarry cotype CMN 81511 WDS composition (Ce2O3 23.66, La2O3 14.49, Nd2O3 5.82, Pr2O3 2.00, Sm2O3 0.60, Na2O 17.38, SrO 1.70, CaO 1.32, BaO 0.32, CO2 32.92 calc, sum 100.21 wt%) are supported without inheriting Ce/REE criticality. |
+| validation | data/records/petersenite-ce.yaml; Strict schema and history validation across all 631 records and 845 history sidecars | supports | Checked 631 record(s), 0 failed; Checked 845 history record(s), 0 error(s). |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes at base 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46.
+- No biological processing or pilot-scale extraction yield is reported in the inspected primary sources; unstated process parameters remain null.
+- All primary-source PDFs and authority documents were visually inspected in full before record creation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261022T073000Z-petersenite-ce-round118
+kind: record
+repository: CultureBotAI/CMMMech
+title: Scientific review of petersenite-ce
+started_at: '2026-10-22T07:26:00Z'
+finished_at: '2026-10-22T07:30:00Z'
+reviewer:
+  identity: antigravity / round118-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/cmmmech-add-record/SKILL.md;
+    full primary-source PDFs, official authorities (IMA September 2026 Master List),
+    figures, tables, and record/history/schema invariants were verified page-by-page
+    against the frozen working-tree record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46
+  state: working_tree
+  inputs:
+  - path: data/records/petersenite-ce.yaml
+    sha256: 1a37da397f80326ca9381ec2e602d18f9554c36b216ccfe94f1f735c0ee43d33
+    role: target
+  - path: history/records/petersenite-ce/2026-10-22T072000Z-antigravity-001180.yaml
+    sha256: 340c56d599388870a7669a1cb69380ae908cc0a2ae855305604073cd27e23b26
+    role: context
+  - path: research/sources/round118-minerals/20261022T072500Z-source-investigation.json
+    sha256: f30418e7d8b5cb7ee4f10eb5c3315ae32127eceb5239122fc9de06ef7bb8514c
+    role: context
+  - path: research/sources/round118-minerals/20261022T072500Z-source-investigation.md
+    sha256: 6f137c0ff7ff9eda4d94fb9eaa91708aa0003d0de359f955259afdb6da7e0fd4
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:petersenite-ce
+  path: data/records/petersenite-ce.yaml
+  label: Petersenite-(Ce)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/petersenite-ce.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/petersenite-ce/2026-10-22T072000Z-antigravity-001180.yaml
+    role: canonical_history
+scope:
+  description: Complete frozen working-tree record data/records/petersenite-ce.yaml,
+    canonical CREATE history sidecar history/records/petersenite-ce/2026-10-22T072000Z-antigravity-001180.yaml,
+    and primary-source evidence boundaries.
+  selection: Targeted structured review of newly curated Round 118 CMM record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:petersenite-ce
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/petersenite-ce.yaml
+  locator: Complete frozen working-tree record data/records/petersenite-ce.yaml
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: All structured claims, identifiers, relations, and qualification notes
+    match the inspected primary sources.
+  snapshot_sha256: 1a37da397f80326ca9381ec2e602d18f9554c36b216ccfe94f1f735c0ee43d33
+- evidence_id: history
+  kind: record_content
+  reference: history/records/petersenite-ce/2026-10-22T072000Z-antigravity-001180.yaml
+  locator: Complete canonical CREATE sidecar history/records/petersenite-ce/2026-10-22T072000Z-antigravity-001180.yaml
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Canonical history sidecar and inline history event accurately record actor,
+    UTC timestamp, and scientific scope.
+  snapshot_sha256: 340c56d599388870a7669a1cb69380ae908cc0a2ae855305604073cd27e23b26
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round118-minerals/20261022T072500Z-source-investigation.json
+  locator: Paired Round 118 source investigation dossier research/sources/round118-minerals/20261022T072500Z-source-investigation.json
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: context_only
+  summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
+  snapshot_sha256: f30418e7d8b5cb7ee4f10eb5c3315ae32127eceb5239122fc9de06ef7bb8514c
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List (244 pages visually inspected)
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Establishes official mineral species nomenclature, formula, approval status,
+    and commodity vs mineral category boundary.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary_study
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/cm/vol32/CM32_405.pdf
+  locator: Complete full-text visual inspection of CM 32 (1994) 405-414 (10 pp.) and
+    IMA September 2026 Master List p. 170 (IMA:1992-048)
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: IMA:1992-048 Na4Ce2(CO3)5 identity, monoclinic P21 burbankite-group supercell
+    structure (a = 20.872(4), b = 6.367(1), c = 10.601(2) A, beta = 120.50(1) deg,
+    V = 1213.9(4) A3, Z = 4, R = 3.5%, Rw = 3.0% for 3506 observed reflections), and
+    Poudrette quarry cotype CMN 81511 WDS composition (Ce2O3 23.66, La2O3 14.49, Nd2O3
+    5.82, Pr2O3 2.00, Sm2O3 0.60, Na2O 17.38, SrO 1.70, CaO 1.32, BaO 0.32, CO2 32.92
+    calc, sum 100.21 wt%) are supported without inheriting Ce/REE criticality.
+  snapshot_sha256: 57f7ca544bd2b18a9d84812254d2cc8528dd23a5ad2faf1ff5d1ecccafae8e78
+- evidence_id: validation
+  kind: validation
+  reference: data/records/petersenite-ce.yaml
+  locator: Strict schema and history validation across all 631 records and 845 history
+    sidecars
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Checked 631 record(s), 0 failed; Checked 845 history record(s), 0 error(s).
+  snapshot_sha256: 1a37da397f80326ca9381ec2e602d18f9554c36b216ccfe94f1f735c0ee43d33
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 631 record(s); 0 failed.
+  target_ids:
+  - cmmmech:petersenite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46
+  status: passed
+  required: true
+  summary: Checked 845 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:petersenite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_evidence
+  area: evidence
+  topic: Primary-source identity and evidence boundaries for petersenite-ce
+  outcome: supported
+  summary: IMA:1992-048 Na4Ce2(CO3)5 identity, monoclinic P21 burbankite-group supercell
+    structure (a = 20.872(4), b = 6.367(1), c = 10.601(2) A, beta = 120.50(1) deg,
+    V = 1213.9(4) A3, Z = 4, R = 3.5%, Rw = 3.0% for 3506 observed reflections), and
+    Poudrette quarry cotype CMN 81511 WDS composition (Ce2O3 23.66, La2O3 14.49, Nd2O3
+    5.82, Pr2O3 2.00, Sm2O3 0.60, Na2O 17.38, SrO 1.70, CaO 1.32, BaO 0.32, CO2 32.92
+    calc, sum 100.21 wt%) are supported without inheriting Ce/REE criticality.
+  target_ids:
+  - cmmmech:petersenite-ce
+  evidence_ids:
+  - owner
+  - ima_authority
+  - primary_study
+- assessment_id: scope_and_provenance
+  area: provenance
+  topic: Provenance, category boundaries, and absence of fabricated claims
+  outcome: supported
+  summary: No unmeasured recovery yields, unverified biological interactions, or improper
+    criticality transfers are claimed; CREATE sidecar and inline history match the
+    frozen record.
+  target_ids:
+  - cmmmech:petersenite-ce
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - validation
+findings: []
+actions: []
+summary: 'Petersenite-(Ce) passes with limitations: IMA:1992-048 Na4Ce2(CO3)5 identity,
+  monoclinic P21 burbankite-group supercell structure (a = 20.872(4), b = 6.367(1),
+  c = 10.601(2) A, beta = 120.50(1) deg, V = 1213.9(4) A3, Z = 4, R = 3.5%, Rw = 3.0%
+  for 3506 observed reflections), and Poudrette quarry cotype CMN 81511 WDS composition
+  (Ce2O3 23.66, La2O3 14.49, Nd2O3 5.82, Pr2O3 2.00, Sm2O3 0.60, Na2O 17.38, SrO 1.70,
+  CaO 1.32, BaO 0.32, CO2 32.92 calc, sum 100.21 wt%) are supported without inheriting
+  Ce/REE criticality.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes at base 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46.'
+- No biological processing or pilot-scale extraction yield is reported in the inspected
+  primary sources; unstated process parameters remain null.
+notes:
+- All primary-source PDFs and authority documents were visually inspected in full
+  before record creation.
+related_reviews: []
+```

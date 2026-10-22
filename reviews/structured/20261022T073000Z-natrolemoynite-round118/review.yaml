@@ -1,0 +1,195 @@
+schema_version: 1.0.0
+review_id: 20261022T073000Z-natrolemoynite-round118
+kind: record
+repository: CultureBotAI/CMMMech
+title: Scientific review of natrolemoynite
+started_at: '2026-10-22T07:26:00Z'
+finished_at: '2026-10-22T07:30:00Z'
+reviewer:
+  identity: antigravity / round118-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/cmmmech-add-record/SKILL.md;
+    full primary-source PDFs, official authorities (IMA September 2026 Master List),
+    figures, tables, and record/history/schema invariants were verified page-by-page
+    against the frozen working-tree record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46
+  state: working_tree
+  inputs:
+  - path: data/records/natrolemoynite.yaml
+    sha256: e85292fb1eec5330467b5a2139997b47fe75a8e312637e33dd002de08f00d812
+    role: target
+  - path: history/records/natrolemoynite/2026-10-22T072000Z-antigravity-00118a.yaml
+    sha256: 3d21655d697f555f5e2ec499e109681138ab2da9fa379cd886af8bae862279be
+    role: context
+  - path: research/sources/round118-minerals/20261022T072500Z-source-investigation.json
+    sha256: f30418e7d8b5cb7ee4f10eb5c3315ae32127eceb5239122fc9de06ef7bb8514c
+    role: context
+  - path: research/sources/round118-minerals/20261022T072500Z-source-investigation.md
+    sha256: 6f137c0ff7ff9eda4d94fb9eaa91708aa0003d0de359f955259afdb6da7e0fd4
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:natrolemoynite
+  path: data/records/natrolemoynite.yaml
+  label: Natrolemoynite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/natrolemoynite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/natrolemoynite/2026-10-22T072000Z-antigravity-00118a.yaml
+    role: canonical_history
+scope:
+  description: Complete frozen working-tree record data/records/natrolemoynite.yaml,
+    canonical CREATE history sidecar history/records/natrolemoynite/2026-10-22T072000Z-antigravity-00118a.yaml,
+    and primary-source evidence boundaries.
+  selection: Targeted structured review of newly curated Round 118 CMM record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:natrolemoynite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/natrolemoynite.yaml
+  locator: Complete frozen working-tree record data/records/natrolemoynite.yaml
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: All structured claims, identifiers, relations, and qualification notes
+    match the inspected primary sources.
+  snapshot_sha256: e85292fb1eec5330467b5a2139997b47fe75a8e312637e33dd002de08f00d812
+- evidence_id: history
+  kind: record_content
+  reference: history/records/natrolemoynite/2026-10-22T072000Z-antigravity-00118a.yaml
+  locator: Complete canonical CREATE sidecar history/records/natrolemoynite/2026-10-22T072000Z-antigravity-00118a.yaml
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Canonical history sidecar and inline history event accurately record actor,
+    UTC timestamp, and scientific scope.
+  snapshot_sha256: 3d21655d697f555f5e2ec499e109681138ab2da9fa379cd886af8bae862279be
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round118-minerals/20261022T072500Z-source-investigation.json
+  locator: Paired Round 118 source investigation dossier research/sources/round118-minerals/20261022T072500Z-source-investigation.json
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: context_only
+  summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
+  snapshot_sha256: f30418e7d8b5cb7ee4f10eb5c3315ae32127eceb5239122fc9de06ef7bb8514c
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List (244 pages visually inspected)
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Establishes official mineral species nomenclature, formula, approval status,
+    and commodity vs mineral category boundary.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary_study
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/cm/vol39/CM39_1295.pdf
+  locator: Complete full-text visual inspection of CM 39 (2001) 1295-1306 (12 pp.)
+    and IMA September 2026 Master List p. 152 (IMA:1996-063)
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: IMA:1996-063 Na4Zr2Si10O26(H2O)7·2H2O identity, monoclinic C2/m structure
+    (a = 10.5150(2), b = 16.2534(4), c = 9.1029(3) A, beta = 105.462(2) deg, V = 1499.4(1)
+    A3, Z = 2, R = 4.2% in abstract / R = 4.6%, wR2 = 13.6% in Table 2 for 2125/2133
+    observed reflections), and Poudrette quarry holotype CNMMI 81534 WDS composition
+    (SiO2 54.51, ZrO2 21.97, Na2O 7.47, K2O 1.29, Nb2O5 1.01, TiO2 0.38, CaO 0.37,
+    MnO 0.12, Al2O3 0.04, H2O 14.72 calc, sum 101.88 wt%) are supported without inheriting
+    Zr/Nb criticality.
+  snapshot_sha256: 5d26ddd14ce42ae314a3b8a90b0121d8a0a19e651121f869621ac2076467bff4
+- evidence_id: validation
+  kind: validation
+  reference: data/records/natrolemoynite.yaml
+  locator: Strict schema and history validation across all 631 records and 845 history
+    sidecars
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Checked 631 record(s), 0 failed; Checked 845 history record(s), 0 error(s).
+  snapshot_sha256: e85292fb1eec5330467b5a2139997b47fe75a8e312637e33dd002de08f00d812
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 631 record(s); 0 failed.
+  target_ids:
+  - cmmmech:natrolemoynite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46
+  status: passed
+  required: true
+  summary: Checked 845 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:natrolemoynite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_evidence
+  area: evidence
+  topic: Primary-source identity and evidence boundaries for natrolemoynite
+  outcome: supported
+  summary: IMA:1996-063 Na4Zr2Si10O26(H2O)7·2H2O identity, monoclinic C2/m structure
+    (a = 10.5150(2), b = 16.2534(4), c = 9.1029(3) A, beta = 105.462(2) deg, V = 1499.4(1)
+    A3, Z = 2, R = 4.2% in abstract / R = 4.6%, wR2 = 13.6% in Table 2 for 2125/2133
+    observed reflections), and Poudrette quarry holotype CNMMI 81534 WDS composition
+    (SiO2 54.51, ZrO2 21.97, Na2O 7.47, K2O 1.29, Nb2O5 1.01, TiO2 0.38, CaO 0.37,
+    MnO 0.12, Al2O3 0.04, H2O 14.72 calc, sum 101.88 wt%) are supported without inheriting
+    Zr/Nb criticality.
+  target_ids:
+  - cmmmech:natrolemoynite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - primary_study
+- assessment_id: scope_and_provenance
+  area: provenance
+  topic: Provenance, category boundaries, and absence of fabricated claims
+  outcome: supported
+  summary: No unmeasured recovery yields, unverified biological interactions, or improper
+    criticality transfers are claimed; CREATE sidecar and inline history match the
+    frozen record.
+  target_ids:
+  - cmmmech:natrolemoynite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - validation
+findings: []
+actions: []
+summary: 'Natrolemoynite passes with limitations: IMA:1996-063 Na4Zr2Si10O26(H2O)7·2H2O
+  identity, monoclinic C2/m structure (a = 10.5150(2), b = 16.2534(4), c = 9.1029(3)
+  A, beta = 105.462(2) deg, V = 1499.4(1) A3, Z = 2, R = 4.2% in abstract / R = 4.6%,
+  wR2 = 13.6% in Table 2 for 2125/2133 observed reflections), and Poudrette quarry
+  holotype CNMMI 81534 WDS composition (SiO2 54.51, ZrO2 21.97, Na2O 7.47, K2O 1.29,
+  Nb2O5 1.01, TiO2 0.38, CaO 0.37, MnO 0.12, Al2O3 0.04, H2O 14.72 calc, sum 101.88
+  wt%) are supported without inheriting Zr/Nb criticality.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes at base 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46.'
+- No biological processing or pilot-scale extraction yield is reported in the inspected
+  primary sources; unstated process parameters remain null.
+notes:
+- All primary-source PDFs and authority documents were visually inspected in full
+  before record creation.
+related_reviews: []

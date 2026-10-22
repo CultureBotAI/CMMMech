@@ -1,0 +1,276 @@
+# Scientific review of calkinsite-ce
+
+- Review: 20261022T073000Z-calkinsite-ce-round118
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-22T07:26:00Z
+- Finished UTC: 2026-10-22T07:30:00Z
+- Reviewer: antigravity / round118-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Calkinsite-(Ce) passes with limitations: Renamed (1987 s.p., status Rn) Ce2(CO3)3·4H2O identity, orthorhombic P21221 unit cell (a0 = 9.57(2), b0 = 12.65(8), c0 = 8.94(2) A, V = 1083 A3, Z = 4), and Bearpaw Mountains wet-chemical analysis (Table 5: RE2O3 54.42, CO2 22.40, H2O 12.00 wt% on &gt;=85% pure sample; recalculated Ce2O3 32.05, La2O3 19.82, Nd2O3 7.97, Pr2O3 2.89, CO2 23.93, H2O 13.34 wt%, noting the Table 5 col. 3 La2O3 mole misprint 0.608 for 0.0608) are supported without a numbered IMA CURIE or inherited Ce/REE criticality.
+
+## Scope And Provenance
+
+Complete frozen working-tree record data/records/calkinsite-ce.yaml, canonical CREATE history sidecar history/records/calkinsite-ce/2026-10-22T072000Z-antigravity-001183.yaml, and primary-source evidence boundaries.
+
+Selection: Targeted structured review of newly curated Round 118 CMM record.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:calkinsite-ce | data/records/calkinsite-ce.yaml | maintained | Calkinsite-(Ce) |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:calkinsite-ce | Checked 631 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:calkinsite-ce | Checked 845 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Primary-source identity and evidence boundaries for calkinsite-ce
+
+evidence: supported. Targets: cmmmech:calkinsite-ce.
+
+Renamed (1987 s.p., status Rn) Ce2(CO3)3·4H2O identity, orthorhombic P21221 unit cell (a0 = 9.57(2), b0 = 12.65(8), c0 = 8.94(2) A, V = 1083 A3, Z = 4), and Bearpaw Mountains wet-chemical analysis (Table 5: RE2O3 54.42, CO2 22.40, H2O 12.00 wt% on &gt;=85% pure sample; recalculated Ce2O3 32.05, La2O3 19.82, Nd2O3 7.97, Pr2O3 2.89, CO2 23.93, H2O 13.34 wt%, noting the Table 5 col. 3 La2O3 mole misprint 0.608 for 0.0608) are supported without a numbered IMA CURIE or inherited Ce/REE criticality.
+
+### Provenance, category boundaries, and absence of fabricated claims
+
+provenance: supported. Targets: cmmmech:calkinsite-ce.
+
+No unmeasured recovery yields, unverified biological interactions, or improper criticality transfers are claimed; CREATE sidecar and inline history match the frozen record.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/calkinsite-ce.yaml; Complete frozen working-tree record data/records/calkinsite-ce.yaml | supports | All structured claims, identifiers, relations, and qualification notes match the inspected primary sources. |
+| history | history/records/calkinsite-ce/2026-10-22T072000Z-antigravity-001183.yaml; Complete canonical CREATE sidecar history/records/calkinsite-ce/2026-10-22T072000Z-antigravity-001183.yaml | supports | Canonical history sidecar and inline history event accurately record actor, UTC timestamp, and scientific scope. |
+| dossier | research/sources/round118-minerals/20261022T072500Z-source-investigation.json; Paired Round 118 source investigation dossier research/sources/round118-minerals/20261022T072500Z-source-investigation.json | context_only | Documents deduplication, primary-source acquisition hashes, and scope boundaries. |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List (244 pages visually inspected) | supports | Establishes official mineral species nomenclature, formula, approval status, and commodity vs mineral category boundary. |
+| primary_study | https://www.rruff.net/doclib/am/vol38/AM38_1169.pdf; Complete full-text visual inspection of AM 38 (1953) 1169-1183 (15 pp.) and IMA September 2026 Master List p. 36 (1987 s.p.) | supports | Renamed (1987 s.p., status Rn) Ce2(CO3)3·4H2O identity, orthorhombic P21221 unit cell (a0 = 9.57(2), b0 = 12.65(8), c0 = 8.94(2) A, V = 1083 A3, Z = 4), and Bearpaw Mountains wet-chemical analysis (Table 5: RE2O3 54.42, CO2 22.40, H2O 12.00 wt% on &gt;=85% pure sample; recalculated Ce2O3 32.05, La2O3 19.82, Nd2O3 7.97, Pr2O3 2.89, CO2 23.93, H2O 13.34 wt%, noting the Table 5 col. 3 La2O3 mole misprint 0.608 for 0.0608) are supported without a numbered IMA CURIE or inherited Ce/REE criticality. |
+| validation | data/records/calkinsite-ce.yaml; Strict schema and history validation across all 631 records and 845 history sidecars | supports | Checked 631 record(s), 0 failed; Checked 845 history record(s), 0 error(s). |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes at base 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46.
+- No biological processing or pilot-scale extraction yield is reported in the inspected primary sources; unstated process parameters remain null.
+- All primary-source PDFs and authority documents were visually inspected in full before record creation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261022T073000Z-calkinsite-ce-round118
+kind: record
+repository: CultureBotAI/CMMMech
+title: Scientific review of calkinsite-ce
+started_at: '2026-10-22T07:26:00Z'
+finished_at: '2026-10-22T07:30:00Z'
+reviewer:
+  identity: antigravity / round118-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/cmmmech-add-record/SKILL.md;
+    full primary-source PDFs, official authorities (IMA September 2026 Master List),
+    figures, tables, and record/history/schema invariants were verified page-by-page
+    against the frozen working-tree record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46
+  state: working_tree
+  inputs:
+  - path: data/records/calkinsite-ce.yaml
+    sha256: d82c3929bd9ce8834b04a2cb42f04e77899becbf4c83d84e5609c0add6f1aa88
+    role: target
+  - path: history/records/calkinsite-ce/2026-10-22T072000Z-antigravity-001183.yaml
+    sha256: 77b0ba1944e29102e38f58bb581184ed54da7152df8b3e38de4ea6ff93eab4ec
+    role: context
+  - path: research/sources/round118-minerals/20261022T072500Z-source-investigation.json
+    sha256: f30418e7d8b5cb7ee4f10eb5c3315ae32127eceb5239122fc9de06ef7bb8514c
+    role: context
+  - path: research/sources/round118-minerals/20261022T072500Z-source-investigation.md
+    sha256: 6f137c0ff7ff9eda4d94fb9eaa91708aa0003d0de359f955259afdb6da7e0fd4
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:calkinsite-ce
+  path: data/records/calkinsite-ce.yaml
+  label: Calkinsite-(Ce)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/calkinsite-ce.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/calkinsite-ce/2026-10-22T072000Z-antigravity-001183.yaml
+    role: canonical_history
+scope:
+  description: Complete frozen working-tree record data/records/calkinsite-ce.yaml,
+    canonical CREATE history sidecar history/records/calkinsite-ce/2026-10-22T072000Z-antigravity-001183.yaml,
+    and primary-source evidence boundaries.
+  selection: Targeted structured review of newly curated Round 118 CMM record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:calkinsite-ce
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/calkinsite-ce.yaml
+  locator: Complete frozen working-tree record data/records/calkinsite-ce.yaml
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: All structured claims, identifiers, relations, and qualification notes
+    match the inspected primary sources.
+  snapshot_sha256: d82c3929bd9ce8834b04a2cb42f04e77899becbf4c83d84e5609c0add6f1aa88
+- evidence_id: history
+  kind: record_content
+  reference: history/records/calkinsite-ce/2026-10-22T072000Z-antigravity-001183.yaml
+  locator: Complete canonical CREATE sidecar history/records/calkinsite-ce/2026-10-22T072000Z-antigravity-001183.yaml
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Canonical history sidecar and inline history event accurately record actor,
+    UTC timestamp, and scientific scope.
+  snapshot_sha256: 77b0ba1944e29102e38f58bb581184ed54da7152df8b3e38de4ea6ff93eab4ec
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round118-minerals/20261022T072500Z-source-investigation.json
+  locator: Paired Round 118 source investigation dossier research/sources/round118-minerals/20261022T072500Z-source-investigation.json
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: context_only
+  summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
+  snapshot_sha256: f30418e7d8b5cb7ee4f10eb5c3315ae32127eceb5239122fc9de06ef7bb8514c
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List (244 pages visually inspected)
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Establishes official mineral species nomenclature, formula, approval status,
+    and commodity vs mineral category boundary.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary_study
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/am/vol38/AM38_1169.pdf
+  locator: Complete full-text visual inspection of AM 38 (1953) 1169-1183 (15 pp.)
+    and IMA September 2026 Master List p. 36 (1987 s.p.)
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: 'Renamed (1987 s.p., status Rn) Ce2(CO3)3·4H2O identity, orthorhombic P21221
+    unit cell (a0 = 9.57(2), b0 = 12.65(8), c0 = 8.94(2) A, V = 1083 A3, Z = 4), and
+    Bearpaw Mountains wet-chemical analysis (Table 5: RE2O3 54.42, CO2 22.40, H2O
+    12.00 wt% on >=85% pure sample; recalculated Ce2O3 32.05, La2O3 19.82, Nd2O3 7.97,
+    Pr2O3 2.89, CO2 23.93, H2O 13.34 wt%, noting the Table 5 col. 3 La2O3 mole misprint
+    0.608 for 0.0608) are supported without a numbered IMA CURIE or inherited Ce/REE
+    criticality.'
+  snapshot_sha256: 862dd52f63b68b3e26b3d334cd80da1daddfbebcfdde9c90b7f6b14e5c8c7715
+- evidence_id: validation
+  kind: validation
+  reference: data/records/calkinsite-ce.yaml
+  locator: Strict schema and history validation across all 631 records and 845 history
+    sidecars
+  accessed_at: '2026-10-22T07:30:00Z'
+  support: supports
+  summary: Checked 631 record(s), 0 failed; Checked 845 history record(s), 0 error(s).
+  snapshot_sha256: d82c3929bd9ce8834b04a2cb42f04e77899becbf4c83d84e5609c0add6f1aa88
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 631 record(s); 0 failed.
+  target_ids:
+  - cmmmech:calkinsite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46
+  status: passed
+  required: true
+  summary: Checked 845 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:calkinsite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_evidence
+  area: evidence
+  topic: Primary-source identity and evidence boundaries for calkinsite-ce
+  outcome: supported
+  summary: 'Renamed (1987 s.p., status Rn) Ce2(CO3)3·4H2O identity, orthorhombic P21221
+    unit cell (a0 = 9.57(2), b0 = 12.65(8), c0 = 8.94(2) A, V = 1083 A3, Z = 4), and
+    Bearpaw Mountains wet-chemical analysis (Table 5: RE2O3 54.42, CO2 22.40, H2O
+    12.00 wt% on >=85% pure sample; recalculated Ce2O3 32.05, La2O3 19.82, Nd2O3 7.97,
+    Pr2O3 2.89, CO2 23.93, H2O 13.34 wt%, noting the Table 5 col. 3 La2O3 mole misprint
+    0.608 for 0.0608) are supported without a numbered IMA CURIE or inherited Ce/REE
+    criticality.'
+  target_ids:
+  - cmmmech:calkinsite-ce
+  evidence_ids:
+  - owner
+  - ima_authority
+  - primary_study
+- assessment_id: scope_and_provenance
+  area: provenance
+  topic: Provenance, category boundaries, and absence of fabricated claims
+  outcome: supported
+  summary: No unmeasured recovery yields, unverified biological interactions, or improper
+    criticality transfers are claimed; CREATE sidecar and inline history match the
+    frozen record.
+  target_ids:
+  - cmmmech:calkinsite-ce
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - validation
+findings: []
+actions: []
+summary: 'Calkinsite-(Ce) passes with limitations: Renamed (1987 s.p., status Rn)
+  Ce2(CO3)3·4H2O identity, orthorhombic P21221 unit cell (a0 = 9.57(2), b0 = 12.65(8),
+  c0 = 8.94(2) A, V = 1083 A3, Z = 4), and Bearpaw Mountains wet-chemical analysis
+  (Table 5: RE2O3 54.42, CO2 22.40, H2O 12.00 wt% on >=85% pure sample; recalculated
+  Ce2O3 32.05, La2O3 19.82, Nd2O3 7.97, Pr2O3 2.89, CO2 23.93, H2O 13.34 wt%, noting
+  the Table 5 col. 3 La2O3 mole misprint 0.608 for 0.0608) are supported without a
+  numbered IMA CURIE or inherited Ce/REE criticality.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes at base 8f18dda9bdb64df3c6e89fd04dd8720ae6087e46.'
+- No biological processing or pilot-scale extraction yield is reported in the inspected
+  primary sources; unstated process parameters remain null.
+notes:
+- All primary-source PDFs and authority documents were visually inspected in full
+  before record creation.
+related_reviews: []
+```
