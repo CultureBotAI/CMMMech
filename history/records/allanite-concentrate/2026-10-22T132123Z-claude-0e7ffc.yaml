@@ -1,0 +1,29 @@
+history_version: 1
+target:
+  kind: record
+  slug: allanite-concentrate
+  path: data/records/allanite-concentrate.yaml
+session:
+  id: 2026-10-22T132123Z-claude-0e7ffc
+  timestamp: '2026-10-22T13:21:23Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Synchronize causal_graphs[].nodes[].protein_examples[].evidence[].explanation
+    with mechanisms[].protein_examples for UniProtKB:Q5FT13, UniProtKB:Q5FTI1 (Issue #818).'
+  details: 'Remediates Cycle 2 Stage 4 finding cmmmech-cycle2-stage4-finding-0002 (GRP-C2S5-002,
+    Issue #818) by aligning the causal-graph node protein_examples evidence explanation strings
+    for UniProtKB:Q5FT13, UniProtKB:Q5FTI1 in data/records/allanite-concentrate.yaml with
+    the full mechanism-level protein_examples evidence explanations.'
+  sections:
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/818
