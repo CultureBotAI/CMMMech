@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed data/records/wulfenite.yaml (cmmmech:wulfenite) at commit 4d878383c92b44876df3bf166d96637c7581a59e. Wulfenite (PbMoO4) carries accurate description stoichiometry, molybdenum critical_elements grounding (CHEBI:28685), Handbook of Mineralogy source support (handbook_wulfenite), and abiotic sulfidization/molybdenum-leaching mechanism sources (gracanin2024, gracanin2024_correction, cai2024, cai2024_supplement), but is the only mineral record among all 365 mineral records in CMMMech that omits the September 2026 IMA-CNMNC Master List (ima_2026_09) from sources. Recorded open minor finding cmmmech-stage4-finding-0002 for Stage 5 remediation.
+Reviewed data/records/wulfenite.yaml (cmmmech:wulfenite) at commit 4d878383c92b44876df3bf166d96637c7581a59e. Wulfenite (PbMoO4) carries an accurate mineral description (noting unrecorded criticality), Handbook of Mineralogy source support (handbook_wulfenite), crystal-growth characterization sources (gracanin2024, gracanin2024_correction), and abiotic sulfidization/molybdenum-leaching mechanism sources (cai2024, cai2024_supplement), but is the only mineral record among all 365 mineral records in CMMMech that omits the September 2026 IMA-CNMNC Master List (ima_2026_09) from sources. Recorded open minor finding cmmmech-stage4-finding-0002 for Stage 5 remediation.
 
 ## Scope And Provenance
 
@@ -34,11 +34,11 @@ Working-tree hashes do not imply those bytes were committed.
 
 ## Scientific And Domain Assessments
 
-### Wulfenite formula (PbMoO4), molybdenum criticality, and abiotic leaching mechanism
+### Wulfenite formula (PbMoO4), crystal-growth characterization, and abiotic leaching mechanism
 
 identity: supported. Targets: cmmmech:wulfenite.
 
-Wulfenite stoichiometry (PbMoO4), Mo criticality (CHEBI:28685), and abiotic sulfidization/molybdenum-leaching mechanism (abiotic_sulfidization_and_molybdenum_leaching) are accurately supported by handbook_wulfenite, gracanin2024, and cai2024.
+Wulfenite description stoichiometry (PbMoO4, with unrecorded criticality) and abiotic sulfidization/molybdenum-leaching mechanism (abiotic_sulfidization_and_molybdenum_leaching) are accurately supported by handbook_wulfenite, gracanin2024, gracanin2024_correction, cai2024, and cai2024_supplement.
 
 ### IMA-CNMNC Master List (ima_2026_09) citation completeness
 
@@ -70,8 +70,8 @@ Add the standard ima_2026_09 source entry and an EDIT history sidecar to data/re
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| ev-wulfenite-file | data/records/wulfenite.yaml; lines 1-94 | supports | Inspected data/records/wulfenite.yaml: description notes PbMoO4, sources contains handbook_wulfenite, gracanin2024, gracanin2024_correction, cai2024, and cai2024_supplement, omitting ima_2026_09. |
-| ev-handbook-wulfenite | https://rruff.info/doclib/hom/wulfenite.pdf; Handbook of Mineralogy entry for Wulfenite (PbMoO4) | supports | Confirms Wulfenite formula PbMoO4 and tetragonal symmetry. |
+| ev-wulfenite-file | data/records/wulfenite.yaml; lines 1-117 | supports | Inspected data/records/wulfenite.yaml: description notes PbMoO4 and unrecorded criticality, sources contains handbook_wulfenite, gracanin2024, gracanin2024_correction, cai2024, and cai2024_supplement, omitting ima_2026_09. |
+| ev-handbook-wulfenite | https://www.handbookofmineralogy.org/pdfs/wulfenite.pdf; Handbook of Mineralogy entry for Wulfenite (PbMoO4) | supports | Confirms Wulfenite formula PbMoO4 and tetragonal symmetry. |
 
 ## Limits And Additional Notes
 
@@ -94,13 +94,13 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 summary: Reviewed data/records/wulfenite.yaml (cmmmech:wulfenite) at commit 4d878383c92b44876df3bf166d96637c7581a59e.
-  Wulfenite (PbMoO4) carries accurate description stoichiometry, molybdenum critical_elements
-  grounding (CHEBI:28685), Handbook of Mineralogy source support (handbook_wulfenite),
-  and abiotic sulfidization/molybdenum-leaching mechanism sources (gracanin2024, gracanin2024_correction,
-  cai2024, cai2024_supplement), but is the only mineral record among all 365 mineral
-  records in CMMMech that omits the September 2026 IMA-CNMNC Master List (ima_2026_09)
-  from sources. Recorded open minor finding cmmmech-stage4-finding-0002 for Stage
-  5 remediation.
+  Wulfenite (PbMoO4) carries an accurate mineral description (noting unrecorded criticality),
+  Handbook of Mineralogy source support (handbook_wulfenite), crystal-growth characterization
+  sources (gracanin2024, gracanin2024_correction), and abiotic sulfidization/molybdenum-leaching
+  mechanism sources (cai2024, cai2024_supplement), but is the only mineral record
+  among all 365 mineral records in CMMMech that omits the September 2026 IMA-CNMNC
+  Master List (ima_2026_09) from sources. Recorded open minor finding cmmmech-stage4-finding-0002
+  for Stage 5 remediation.
 reviewer:
   identity: antigravity / cmmmech-stage4-record-reviewer
   kind: agent
@@ -158,8 +158,8 @@ checks:
   summary: data/records/wulfenite.yaml passes LinkML structural and semantic validation.
 assessments:
 - assessment_id: assess-wulfenite-identity
-  topic: Wulfenite formula (PbMoO4), molybdenum criticality, and abiotic leaching
-    mechanism
+  topic: Wulfenite formula (PbMoO4), crystal-growth characterization, and abiotic
+    leaching mechanism
   area: identity
   outcome: supported
   target_ids:
@@ -167,9 +167,10 @@ assessments:
   evidence_ids:
   - ev-wulfenite-file
   - ev-handbook-wulfenite
-  summary: Wulfenite stoichiometry (PbMoO4), Mo criticality (CHEBI:28685), and abiotic
-    sulfidization/molybdenum-leaching mechanism (abiotic_sulfidization_and_molybdenum_leaching)
-    are accurately supported by handbook_wulfenite, gracanin2024, and cai2024.
+  summary: Wulfenite description stoichiometry (PbMoO4, with unrecorded criticality)
+    and abiotic sulfidization/molybdenum-leaching mechanism (abiotic_sulfidization_and_molybdenum_leaching)
+    are accurately supported by handbook_wulfenite, gracanin2024, gracanin2024_correction,
+    cai2024, and cai2024_supplement.
 - assessment_id: assess-wulfenite-ima-source
   topic: IMA-CNMNC Master List (ima_2026_09) citation completeness
   area: provenance
@@ -222,15 +223,15 @@ evidence:
 - evidence_id: ev-wulfenite-file
   kind: record_content
   reference: data/records/wulfenite.yaml
-  locator: lines 1-94
+  locator: lines 1-117
   accessed_at: '2026-10-22T02:58:07Z'
   support: supports
-  summary: 'Inspected data/records/wulfenite.yaml: description notes PbMoO4, sources
-    contains handbook_wulfenite, gracanin2024, gracanin2024_correction, cai2024, and
-    cai2024_supplement, omitting ima_2026_09.'
+  summary: 'Inspected data/records/wulfenite.yaml: description notes PbMoO4 and unrecorded
+    criticality, sources contains handbook_wulfenite, gracanin2024, gracanin2024_correction,
+    cai2024, and cai2024_supplement, omitting ima_2026_09.'
 - evidence_id: ev-handbook-wulfenite
   kind: authority
-  reference: https://rruff.info/doclib/hom/wulfenite.pdf
+  reference: https://www.handbookofmineralogy.org/pdfs/wulfenite.pdf
   locator: Handbook of Mineralogy entry for Wulfenite (PbMoO4)
   accessed_at: '2026-10-22T02:58:07Z'
   support: supports

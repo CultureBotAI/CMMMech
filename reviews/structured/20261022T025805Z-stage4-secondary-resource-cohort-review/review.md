@@ -173,7 +173,7 @@ No findings recorded within this review's declared scope.
 ## Limits And Additional Notes
 
 - 104 of 111 secondary_resource records lack multi-step causal_graphs because their cited primary studies report bulk whole-cell bioleaching, biosorption, or abiotic extraction on complex industrial wastes without resolved molecular/enzymatic intermediates; multi-step causal_graphs are restricted to the 7 records with source-resolved biochemical intermediates.
-- Stage 3 added verified UniProtKB protein examples to phosphogypsum (UniProtKB:P27175 DHG_GLUOX / gdh and UniProtKB:Q9L3B2 PQQC_GLUOX / pqqC in Gluconobacter oxydans 621H NCBITaxon:290633) and waste-x-ray-films (UniProtKB:A0A137NYV2 alkaline serine protease in Bacillus licheniformis NCBITaxon:1402 and UniProtKB:F1DKR8 alkaline protease in Purpureocillium lilacinum NCBITaxon:33203); both passed full Stage 4 verification.
+- Stage 3 added verified UniProtKB protein examples to phosphogypsum (UniProtKB:P27175 DHG_GLUOX / gdh and UniProtKB:Q9L3B2 PQQC_GLUOX / pqqC in Gluconobacter oxydans 621H NCBITaxon:290633) and waste-x-ray-films (UniProtKB:A0A137NYV2 A0A137NYV2_CONC2 subtilisin-like protease in Conidiobolus coronatus NRRL 28638 NCBITaxon:796925 / mechanism taxon Conidiobolus coronatus NCBITaxon:34488 and UniProtKB:F1DKR8 F1DKR8_BACSC aprE subtilisin-like protease in Bacillus spizizenii ATCC 6633 = JCM 2499 NCBITaxon:703612); both passed full Stage 4 verification.
 
 ## Complete Structured Record
 
@@ -2891,8 +2891,9 @@ limitations:
 notes:
 - Stage 3 added verified UniProtKB protein examples to phosphogypsum (UniProtKB:P27175
   DHG_GLUOX / gdh and UniProtKB:Q9L3B2 PQQC_GLUOX / pqqC in Gluconobacter oxydans
-  621H NCBITaxon:290633) and waste-x-ray-films (UniProtKB:A0A137NYV2 alkaline serine
-  protease in Bacillus licheniformis NCBITaxon:1402 and UniProtKB:F1DKR8 alkaline
-  protease in Purpureocillium lilacinum NCBITaxon:33203); both passed full Stage 4
-  verification.
+  621H NCBITaxon:290633) and waste-x-ray-films (UniProtKB:A0A137NYV2 A0A137NYV2_CONC2
+  subtilisin-like protease in Conidiobolus coronatus NRRL 28638 NCBITaxon:796925 /
+  mechanism taxon Conidiobolus coronatus NCBITaxon:34488 and UniProtKB:F1DKR8 F1DKR8_BACSC
+  aprE subtilisin-like protease in Bacillus spizizenii ATCC 6633 = JCM 2499 NCBITaxon:703612);
+  both passed full Stage 4 verification.
 ```
