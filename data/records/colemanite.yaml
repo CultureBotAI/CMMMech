@@ -56,7 +56,7 @@ mechanisms:
 causal_graphs:
 - id: aspergillus_cexa_colemanite_leaching_graph
   name: Aspergillus niger organic-acid excretion and soluble boron release from colemanite-bearing ore
-  description: Representative causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA (cexA) and extracellular organic-acid secretion to reaction with Ground Emet colemanite-bearing borate ore (Ca2B6O11·5H2O) and formation/release of Dissolved boron mobilized into culture solution.
+  description: Representative causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA (cexA) and extracellular organic-acid secretion to reaction with Ground Kütahya-Emet colemanite-bearing borate ore (<0.075 mm; colemanite species formula CaB3O4(OH)3(H2O)) and formation/release of Soluble boron released into culture filtrate.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: fungal-colemanite-leaching
   nodes:
@@ -90,17 +90,17 @@ causal_graphs:
   - id: secreted_organic_acids
     label: Secreted fungal citric, oxalic, and gluconic acids in sucrose medium
     node_type: CHEMICAL_ENTITY
-    description: Secreted fungal citric, oxalic, and gluconic acids in sucrose medium produced by Aspergillus niger.
+    description: Extracellular citric, oxalic, and gluconic acids assayed by HPLC in sucrose culture medium during 21-day cultivation of Aspergillus niger (reported as ATCC 11414).
     protein_grounding_status: NOT_APPLICABLE
   - id: starting_substrate
-    label: Ground Emet colemanite-bearing borate ore (Ca2B6O11·5H2O)
+    label: Ground Kütahya-Emet colemanite-bearing borate ore (<0.075 mm; colemanite species formula CaB3O4(OH)3(H2O))
     node_type: MATERIAL_OR_PHASE
-    description: Starting mineral or secondary-resource feed (Ground Emet colemanite-bearing borate ore (Ca2B6O11·5H2O)).
+    description: Autoclaved Kütahya-Emet colemanite-bearing borate ore ground below 0.075 mm (colemanite IMA formula CaB3O4(OH)3(H2O); bulk ore reported as 28.05 wt% B2O3-equivalent in Table 1, where oxide cells sum to 126.8%).
     protein_grounding_status: NOT_APPLICABLE
   - id: transformed_product
-    label: Dissolved boron mobilized into culture solution
+    label: Soluble boron released into culture filtrate
     node_type: CHEMICAL_ENTITY
-    description: Resulting mobilized solute or altered phase (Dissolved boron mobilized into culture solution).
+    description: Volumetrically assayed soluble boron in culture filtrate released over 21 days of A. niger fermentation.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cexa_citrate_exporter
@@ -116,29 +116,29 @@ causal_graphs:
     target: starting_substrate
     predicate: solubilizes
     relationship: organic-acid acidolysis and metal complexation
-    description: Secreted fungal organic acids attack Ground Emet colemanite-bearing borate ore (Ca2B6O11·5H2O).
+    description: Acidified Aspergillus niger medium / organic acids contact Ground Kütahya-Emet colemanite-bearing borate ore (<0.075 mm; colemanite species formula CaB3O4(OH)3(H2O)).
     evidence:
     - source_ref: bayat2011-colemanite
-      supports: support
-      explanation: Primary study bayat2011-colemanite documents fungal organic-acid contact with Ground Emet colemanite-bearing borate ore (Ca2B6O11·5H2O).
+      supports: partial
+      explanation: Methods pp. 3-4, Table 3, and Figures 1-3 document organic-acid production, culture acidification, and soluble-boron release, but Table 3 provides no matched abiotic boron-release trajectory to isolate the microbial increment or individual acid contributions.
   - source: starting_substrate
     target: transformed_product
     predicate: produces
     relationship: metal mobilization or surface alteration
-    description: Reaction of Ground Emet colemanite-bearing borate ore (Ca2B6O11·5H2O) with fungal metabolites yields Dissolved boron mobilized into culture solution.
+    description: Reaction of Ground Kütahya-Emet colemanite-bearing borate ore (<0.075 mm; colemanite species formula CaB3O4(OH)3(H2O)) with fungal culture liquid yields Soluble boron released into culture filtrate.
     evidence:
     - source_ref: bayat2011-colemanite
       supports: support
-      explanation: Primary study bayat2011-colemanite reports Dissolved boron mobilized into culture solution.
+      explanation: Table 3 and Figures 1-3 support soluble-boron release into the filtrate during A. niger culture on Kütahya-Emet colemanite-bearing ore across 1-10% w/v pulp densities.
 curation_history:
 - timestamp: '2026-10-11T09:02:18.252778+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
   summary: Created IMA-grounded colemanite identity and qualified fungal leaching of mixed ore without inherited commodity criticality.
-- timestamp: '2026-10-22T10:40:29Z'
+- timestamp: '2026-10-22T11:03:06Z'
   curator: claude
   action: edit
   summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and representative causal graph to colemanite.yaml.
 history_refs:
 - history/records/colemanite/2026-10-11T090216Z-codex-500b71.yaml
-- history/records/colemanite/2026-10-22T104029Z-claude-0c6589.yaml
+- history/records/colemanite/2026-10-22T110306Z-claude-aa4189.yaml

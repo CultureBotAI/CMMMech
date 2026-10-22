@@ -70,7 +70,7 @@ mechanisms:
 causal_graphs:
 - id: aspergillus_cexa_hausmannite_manganese_mobilization_graph
   name: Aspergillus niger CBS 140837 organic-acid acidification and selenate-conditioned manganese mobilization from synthetic hausmannite
-  description: Representative causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA (cexA) and extracellular organic-acid secretion to reaction with Synthesized hausmannite (Mn3O4) oxide powder in selenate-amended culture and formation/release of Dissolved filtrate manganese and secondary manganese oxalate phases.
+  description: Representative causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA (cexA) and extracellular organic-acid secretion to reaction with Synthesized hausmannite (Mn3O4) oxide preparation (2.2 g/L loading) in selenate-amended culture and formation/release of Dissolved manganese in 0.45-um filtered spent medium.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: niger_associated_selenium_conditioned_manganese_mobilization
   nodes:
@@ -102,19 +102,19 @@ causal_graphs:
         supports: partial
         explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid secretion and medium acidification during culture with synthetic hausmannite and selenate in Farkas et al. (2021); cexA was not genetically perturbed in the study.
   - id: secreted_organic_acids
-    label: Secreted fungal organic acids lowering Sabouraud medium pH (to pH 3.1-3.5 with selenate)
+    label: Acidified Sabouraud Dextrose Broth culture medium (final average pH 3.2 in Se(VI)-amended vs 4.4 in Se(VI)-free cultures)
     node_type: CHEMICAL_ENTITY
-    description: Secreted fungal organic acids lowering Sabouraud medium pH (to pH 3.1-3.5 with selenate) produced by Aspergillus niger.
+    description: Acidified Sabouraud Dextrose Broth medium after three-week static cultivation of Aspergillus niger CBS 140837 at 25 degrees C (final average pH 3.2 with 50 mg/L Se(VI) vs pH 4.4 in selenium-free fungal cultures; individual organic acids were not directly measured).
     protein_grounding_status: NOT_APPLICABLE
   - id: starting_substrate
-    label: Synthesized hausmannite (Mn3O4) oxide powder in selenate-amended culture
+    label: Synthesized hausmannite (Mn3O4) oxide preparation (2.2 g/L loading) in selenate-amended culture
     node_type: MATERIAL_OR_PHASE
-    description: Starting mineral or secondary-resource feed (Synthesized hausmannite (Mn3O4) oxide powder in selenate-amended culture).
+    description: Alkaline-precipitated and refluxed manganese oxide preparation assigned by the authors to hausmannite (Mn3O4), supplied at 0.11 g per 50 mL total volume (2.2 g/L) with 50 mg/L total Se as selenate.
     protein_grounding_status: NOT_APPLICABLE
   - id: transformed_product
-    label: Dissolved filtrate manganese and secondary manganese oxalate phases
+    label: Dissolved manganese in 0.45-um filtered spent medium
     node_type: CHEMICAL_ENTITY
-    description: Resulting mobilized solute or altered phase (Dissolved filtrate manganese and secondary manganese oxalate phases).
+    description: Total dissolved manganese measured by FAAS in 0.45-micrometre filtered spent medium after three weeks, which was higher in selenate-amended than selenium-free fungal cultures (no post-culture manganese oxalate phase was identified in this study).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cexa_citrate_exporter
@@ -130,29 +130,29 @@ causal_graphs:
     target: starting_substrate
     predicate: solubilizes
     relationship: organic-acid acidolysis and metal complexation
-    description: Secreted fungal organic acids attack Synthesized hausmannite (Mn3O4) oxide powder in selenate-amended culture.
+    description: Acidified Aspergillus niger medium / organic acids contact Synthesized hausmannite (Mn3O4) oxide preparation (2.2 g/L loading) in selenate-amended culture.
     evidence:
     - source_ref: farkas2021
-      supports: support
-      explanation: Primary study farkas2021 documents fungal organic-acid contact with Synthesized hausmannite (Mn3O4) oxide powder in selenate-amended culture.
+      supports: partial
+      explanation: Sections 3.1, 3.3, and 4 associate lower final culture pH (3.2 with selenate vs 4.4 without selenate) with increased filtrate manganese, but organic-acid identities were not measured and no three-week uninoculated manganese-release series or matched-pH chemical control isolated the fungal acid contribution.
   - source: starting_substrate
     target: transformed_product
     predicate: produces
     relationship: metal mobilization or surface alteration
-    description: Reaction of Synthesized hausmannite (Mn3O4) oxide powder in selenate-amended culture with fungal metabolites yields Dissolved filtrate manganese and secondary manganese oxalate phases.
+    description: Reaction of Synthesized hausmannite (Mn3O4) oxide preparation (2.2 g/L loading) in selenate-amended culture with fungal culture liquid yields Dissolved manganese in 0.45-um filtered spent medium.
     evidence:
     - source_ref: farkas2021
       supports: support
-      explanation: Primary study farkas2021 reports Dissolved filtrate manganese and secondary manganese oxalate phases.
+      explanation: Sections 3.1 and 3.3 and Figures 1a and 2a show lower final pH and higher 0.45-micrometre filtrate manganese in selenate-amended A. niger CBS 140837 cultures with the hausmannite preparation than in selenium-free fungal cultures.
 curation_history:
 - timestamp: '2026-10-11T23:42:16.318801Z'
   curator: codex
   action: CREATE
   summary: Added hausmannite identity and a qualified 2021 selenium-conditioned fungal mobilization observation, preserving controls, phase, unit and biomass-normalization limits without a recovery or industrial claim.
-- timestamp: '2026-10-22T10:40:28Z'
+- timestamp: '2026-10-22T11:03:06Z'
   curator: claude
   action: edit
   summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and representative causal graph to hausmannite.yaml.
 history_refs:
 - history/records/hausmannite/2026-10-11T234142Z-codex-45f4d6.yaml
-- history/records/hausmannite/2026-10-22T104028Z-claude-f34c0e.yaml
+- history/records/hausmannite/2026-10-22T110306Z-claude-47132e.yaml

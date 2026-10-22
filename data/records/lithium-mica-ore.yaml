@@ -133,7 +133,7 @@ mechanisms:
 causal_graphs:
 - id: aspergillus_cexa_beauvoir_lithium_mica_graph
   name: Aspergillus niger organic-acid excretion and low-efficiency lithium mobilization/biomass partitioning on Beauvoir lithium-mica ore
-  description: Representative causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA (cexA) and extracellular organic-acid secretion to reaction with Crushed Beauvoir granite mixed lithium-mica ore (polylithionite, muscovite, kaolinite) and formation/release of Low dissolved and biomass-associated lithium fraction (~0.2% Li extraction).
+  description: Representative causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA (cexA) and extracellular organic-acid secretion to reaction with Crushed Beauvoir mixed lithium-mica ore (<150 um; polylithionite, muscovite, and kaolinite) and formation/release of Low total extracted lithium (0.2% of feed Li, with 77% of extracted Li in harvested biomass).
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: beauvoir_fungal_leaching
   nodes:
@@ -165,19 +165,19 @@ causal_graphs:
         supports: partial
         explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid secretion during fungal cultivation with Beauvoir polylithionite/muscovite/kaolinite mixed ore in Sedlakova-Kadukova et al. (2020); cexA was not directly assayed in the study.
   - id: secreted_organic_acids
-    label: Secreted fungal organic acids in liquid cultivation medium
+    label: Acidified glucose-(NH4)2SO4 liquid culture medium of Aspergillus niger An-S (ISB 1674)
     node_type: CHEMICAL_ENTITY
-    description: Secreted fungal organic acids in liquid cultivation medium produced by Aspergillus niger.
+    description: Acidified liquid medium (5 g/L glucose, 0.5 g/L (NH4)2SO4, initial pH 5.1) during static cultivation of Aspergillus niger strain An-S (ISB 1674) at 21 degrees C (Figure 3 shows medium acidification, though individual organic acids were not quantified).
     protein_grounding_status: NOT_APPLICABLE
   - id: starting_substrate
-    label: Crushed Beauvoir granite mixed lithium-mica ore (polylithionite, muscovite, kaolinite)
+    label: Crushed Beauvoir mixed lithium-mica ore (<150 um; polylithionite, muscovite, and kaolinite)
     node_type: MATERIAL_OR_PHASE
-    description: Starting mineral or secondary-resource feed (Crushed Beauvoir granite mixed lithium-mica ore (polylithionite, muscovite, kaolinite)).
+    description: Ball-milled Beauvoir granite mixed lithium-mica ore sieved below 150 micrometres (10 g/L loading; initial XRD assigned to polylithionite, muscovite, and kaolinite in Figure S2A).
     protein_grounding_status: NOT_APPLICABLE
   - id: transformed_product
-    label: Low dissolved and biomass-associated lithium fraction (~0.2% Li extraction)
+    label: Low total extracted lithium (0.2% of feed Li, with 77% of extracted Li in harvested biomass)
     node_type: CHEMICAL_ENTITY
-    description: Resulting mobilized solute or altered phase (Low dissolved and biomass-associated lithium fraction (~0.2% Li extraction)).
+    description: Combined dissolved and acid-digested harvested-biomass lithium corresponding to 0.2% extraction from the Beauvoir feed after ~41 days, with 77% of the extracted fraction recovered in the harvested biomass.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cexa_citrate_exporter
@@ -193,20 +193,20 @@ causal_graphs:
     target: starting_substrate
     predicate: solubilizes
     relationship: organic-acid acidolysis and metal complexation
-    description: Secreted fungal organic acids attack Crushed Beauvoir granite mixed lithium-mica ore (polylithionite, muscovite, kaolinite).
+    description: Acidified Aspergillus niger medium / organic acids contact Crushed Beauvoir mixed lithium-mica ore (<150 um; polylithionite, muscovite, and kaolinite).
     evidence:
     - source_ref: sedlakova2020
-      supports: support
-      explanation: Primary study sedlakova2020 documents fungal organic-acid contact with Crushed Beauvoir granite mixed lithium-mica ore (polylithionite, muscovite, kaolinite).
+      supports: partial
+      explanation: Figure 3 and Supplementary Figure S1 show culture acidification and hyphal attachment within mineral cleavages during A. niger An-S cultivation on Beauvoir ore, but individual organic acids were not measured and mechanical versus chemical contributions were not separately quantified.
   - source: starting_substrate
     target: transformed_product
     predicate: produces
     relationship: metal mobilization or surface alteration
-    description: Reaction of Crushed Beauvoir granite mixed lithium-mica ore (polylithionite, muscovite, kaolinite) with fungal metabolites yields Low dissolved and biomass-associated lithium fraction (~0.2% Li extraction).
+    description: Reaction of Crushed Beauvoir mixed lithium-mica ore (<150 um; polylithionite, muscovite, and kaolinite) with fungal culture liquid yields Low total extracted lithium (0.2% of feed Li, with 77% of extracted Li in harvested biomass).
     evidence:
     - source_ref: sedlakova2020
       supports: support
-      explanation: Primary study sedlakova2020 reports Low dissolved and biomass-associated lithium fraction (~0.2% Li extraction).
+      explanation: Figure 1A, Figure 4, and the Li distribution/Bioleaching efficiency sections report 0.2% total lithium extraction from the Beauvoir feed in the A. niger assay, with 77% of that extracted lithium assigned to the harvested biomass fraction.
 curation_history:
 - timestamp: '2026-10-12T02:37:16Z'
   curator: codex (GPT-6; codex)
@@ -216,11 +216,11 @@ curation_history:
   curator: codex (GPT-6; codex)
   action: EDIT
   summary: Added a separate mechanically activated mixed-feed community assay from complete 2025 primary and supplementary evidence. Preserved direct-solution versus post-HCl fractions, pyrite-control ambiguity, inconsistent percentage and denominator definitions, and phase and community limits without changing the three existing 2020 mechanisms.
-- timestamp: '2026-10-22T10:40:29Z'
+- timestamp: '2026-10-22T11:03:06Z'
   curator: claude
   action: edit
   summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and representative causal graph to lithium-mica-ore.yaml.
 history_refs:
 - history/records/lithium-mica-ore/2026-10-12T023720Z-codex-9e7491.yaml
 - history/records/lithium-mica-ore/2026-10-12T032137Z-codex-47f29b.yaml
-- history/records/lithium-mica-ore/2026-10-22T104029Z-claude-5eb6c0.yaml
+- history/records/lithium-mica-ore/2026-10-22T110306Z-claude-9f2ec3.yaml

@@ -59,7 +59,7 @@ mechanisms:
 causal_graphs:
 - id: aspergillus_cexa_hfo_ash_spent_medium_graph
   name: Aspergillus niger PTCC 5210 organic-acid spent-medium leaching of vanadium and nickel from heavy-fuel-oil combustion ash
-  description: Representative causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA (cexA) and extracellular organic-acid secretion to reaction with Sieved heavy-fuel-oil combustion ash powder (<75 um) and formation/release of Extracted vanadium and nickel in spent-medium leachate (with proposed Ni oxalate co-precipitation).
+  description: Representative causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA (cexA) and extracellular organic-acid secretion to reaction with Ground and screened Tehran thermal-power-plant heavy-fuel-oil combustion ash (<75 um, 3% w/v) and formation/release of Source-reported extracted vanadium (97-100%) and nickel (33-50%) in spent-medium leachates.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: niger_spent_medium_leaching
   nodes:
@@ -91,19 +91,19 @@ causal_graphs:
         supports: partial
         explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion into the sucrose-grown PTCC 5210 spent medium used to leach V and Ni from heavy-fuel-oil combustion ash in Rasoulnia and Mousavi (2016); cexA was not assayed in the study.
   - id: secreted_organic_acids
-    label: Cell-free Aspergillus niger PTCC 5210 organic-acid spent medium (citric, oxalic, and gluconic acids)
+    label: Aspergillus niger PTCC 5210 organic-acid spent media (citric-acid-rich shake-flask and oxalic-acid-rich bubble-column liquids)
     node_type: CHEMICAL_ENTITY
-    description: Cell-free Aspergillus niger PTCC 5210 organic-acid spent medium (citric, oxalic, and gluconic acids) produced by Aspergillus niger.
+    description: Sucrose-grown (100 g/L sucrose) Aspergillus niger PTCC 5210 culture liquids after biomass separation following 14-day shake-flask (30 degrees C, 130 rpm) or 7-day 1-L bubble-column (30 degrees C, 760 mL/min aeration) cultivation, analyzed for citric, oxalic, and gluconic acids by HPLC.
     protein_grounding_status: NOT_APPLICABLE
   - id: starting_substrate
-    label: Sieved heavy-fuel-oil combustion ash powder (<75 um)
+    label: Ground and screened Tehran thermal-power-plant heavy-fuel-oil combustion ash (<75 um, 3% w/v)
     node_type: MATERIAL_OR_PHASE
-    description: Starting mineral or secondary-resource feed (Sieved heavy-fuel-oil combustion ash powder (<75 um)).
+    description: Heavy-fuel-oil combustion ash from a thermal power plant in Tehran, Iran, ground and screened below 75 micrometres and contacted with spent media at 3% w/v and 60 degrees C for 7 days.
     protein_grounding_status: NOT_APPLICABLE
   - id: transformed_product
-    label: Extracted vanadium and nickel in spent-medium leachate (with proposed Ni oxalate co-precipitation)
+    label: Source-reported extracted vanadium (97-100%) and nickel (33-50%) in spent-medium leachates
     node_type: CHEMICAL_ENTITY
-    description: Resulting mobilized solute or altered phase (Extracted vanadium and nickel in spent-medium leachate (with proposed Ni oxalate co-precipitation)).
+    description: Source-reported extraction outcomes of 97% V and 50% Ni with shake-flask spent medium and 100% V and 33% Ni with bubble-column spent medium after 7 days at 60 degrees C (nickel-oxalate precipitation was proposed by the authors for the lower Ni extraction, while Figure 3 XRD labeled NiO and NaHSO4·H2O in the treated residue).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cexa_citrate_exporter
@@ -119,29 +119,29 @@ causal_graphs:
     target: starting_substrate
     predicate: solubilizes
     relationship: organic-acid acidolysis and metal complexation
-    description: Secreted fungal organic acids attack Sieved heavy-fuel-oil combustion ash powder (<75 um).
+    description: Acidified Aspergillus niger medium / organic acids contact Ground and screened Tehran thermal-power-plant heavy-fuel-oil combustion ash (<75 um, 3% w/v).
     evidence:
     - source_ref: rasoulnia_mousavi_2016
-      supports: support
-      explanation: Primary study rasoulnia_mousavi_2016 documents fungal organic-acid contact with Sieved heavy-fuel-oil combustion ash powder (<75 um).
+      supports: partial
+      explanation: Section III and Figure 2 report V and Ni extraction after contacting ash with citric-acid-rich flask and oxalic-acid-rich reactor spent media at 60 degrees C, but no matched sterile-medium, pure-acid, or pH-controlled ash-leaching comparator isolated a unique causal metabolite.
   - source: starting_substrate
     target: transformed_product
     predicate: produces
     relationship: metal mobilization or surface alteration
-    description: Reaction of Sieved heavy-fuel-oil combustion ash powder (<75 um) with fungal metabolites yields Extracted vanadium and nickel in spent-medium leachate (with proposed Ni oxalate co-precipitation).
+    description: Reaction of Ground and screened Tehran thermal-power-plant heavy-fuel-oil combustion ash (<75 um, 3% w/v) with fungal culture liquid yields Source-reported extracted vanadium (97-100%) and nickel (33-50%) in spent-medium leachates.
     evidence:
     - source_ref: rasoulnia_mousavi_2016
-      supports: support
-      explanation: Primary study rasoulnia_mousavi_2016 reports Extracted vanadium and nickel in spent-medium leachate (with proposed Ni oxalate co-precipitation).
+      supports: partial
+      explanation: Section III, page 367 and Figure 2 report 97% V and 50% Ni extraction with flask spent medium and 100% V and 33% Ni with bubble-column spent medium; liquid-metal assay details, replicate counts, and mass balances were not specified, and proposed Ni-oxalate precipitation was not independently identified by XRD (Figure 3 labeled NiO and NaHSO4·H2O).
 curation_history:
 - timestamp: '2026-10-11T14:54:56.332589+00:00'
   curator: Codex (GPT-6; Codex)
   action: CREATE
   summary: Curated a distinct oil-combustion-ash resource and source-scoped fungal spent-medium observation, preserving analytical, control and scale limits.
-- timestamp: '2026-10-22T10:40:29Z'
+- timestamp: '2026-10-22T11:03:06Z'
   curator: claude
   action: edit
   summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and representative causal graph to heavy-fuel-oil-combustion-ash.yaml.
 history_refs:
 - history/records/heavy-fuel-oil-combustion-ash/2026-10-11T145457Z-codex-1000af.yaml
-- history/records/heavy-fuel-oil-combustion-ash/2026-10-22T104029Z-claude-be5320.yaml
+- history/records/heavy-fuel-oil-combustion-ash/2026-10-22T110306Z-claude-3a54c1.yaml

@@ -46,7 +46,7 @@ mechanisms:
     evidence:
     - source_ref: king_1985
       supports: partial
-      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during surface pitting and Al mobilization from Bancroft nepheline discs in King (1985); transporter genes were not characterized in the 1985 thesis.
+      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during surface pitting and Al mobilization from Bancroft nepheline-rich discs on LM1 sucrose medium in King (1985); transporter genes were not characterized in the 1985 thesis.
   evidence:
   - source_ref: king_1985
     supports: support
@@ -63,7 +63,7 @@ mechanisms:
 causal_graphs:
 - id: aspergillus_cexa_nepheline_weathering_graph
   name: Aspergillus niger CMI 31821 organic-acid pitting and aluminium mobilization from Bancroft nepheline discs
-  description: Representative causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA (cexA) and extracellular organic-acid secretion to reaction with Polished Bancroft nepheline-rich mineral discs and formation/release of Surface-pitted nepheline discs and dissolved aqueous aluminium.
+  description: Representative causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA (cexA) and extracellular organic-acid secretion to reaction with Polished Bancroft nepheline-rich mineral discs (78.81-84.0 wt% nepheline) and formation/release of Surface-pitted Bancroft nepheline-rich discs and dissolved aluminium in filtered culture liquid.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: niger_bancroft_disc_weathering
   nodes:
@@ -93,21 +93,21 @@ causal_graphs:
       evidence:
       - source_ref: king_1985
         supports: partial
-        explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during surface pitting and Al mobilization from Bancroft nepheline discs in King (1985); transporter genes were not characterized in the 1985 thesis.
+        explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during surface pitting and Al mobilization from Bancroft nepheline-rich discs on LM1 sucrose medium in King (1985); transporter genes were not characterized in the 1985 thesis.
   - id: secreted_organic_acids
-    label: Secreted citric and oxalic acids from glucose-grown Aspergillus niger CMI 31821
+    label: Acidified sucrose-medium (LM1, 10 g/L sucrose) culture liquid of Aspergillus niger CMI 31821
     node_type: CHEMICAL_ENTITY
-    description: Secreted citric and oxalic acids from glucose-grown Aspergillus niger CMI 31821 produced by Aspergillus niger.
+    description: Extracellular organic-acid-containing culture liquid produced by Aspergillus niger CMI 31821 grown on sucrose medium LM1 (10 g/L sucrose, initial pH 6.5) wetting the exposed Bancroft disc surface.
     protein_grounding_status: NOT_APPLICABLE
   - id: starting_substrate
-    label: Polished Bancroft nepheline-rich mineral discs
+    label: Polished Bancroft nepheline-rich mineral discs (78.81-84.0 wt% nepheline)
     node_type: MATERIAL_OR_PHASE
-    description: Starting mineral or secondary-resource feed (Polished Bancroft nepheline-rich mineral discs).
+    description: One-centimetre-diameter, 4-mm-thick polished mineral discs prepared from Bancroft nepheline-rich material (78.81 +/- 0.6 wt% nepheline by chemical allocation, 84.0 +/- 8.5 wt% by microprobe, with minor albite, sodalite, biotite, and magnetite).
     protein_grounding_status: NOT_APPLICABLE
   - id: transformed_product
-    label: Surface-pitted nepheline discs and dissolved aqueous aluminium
+    label: Surface-pitted Bancroft nepheline-rich discs and dissolved aluminium in filtered culture liquid
     node_type: MATERIAL_OR_PHASE
-    description: Resulting mobilized solute or altered phase (Surface-pitted nepheline discs and dissolved aqueous aluminium).
+    description: Micrometer-measured surface pitting beneath a residual silica-gel layer and covarying dissolved aluminium in filtered culture liquid over 1 to 8 weeks.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cexa_citrate_exporter
@@ -118,25 +118,25 @@ causal_graphs:
     evidence:
     - source_ref: king_1985
       supports: partial
-      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during surface pitting and Al mobilization from Bancroft nepheline discs in King (1985); transporter genes were not characterized in the 1985 thesis.
+      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during surface pitting and Al mobilization from Bancroft nepheline-rich discs on LM1 sucrose medium in King (1985); transporter genes were not characterized in the 1985 thesis.
   - source: secreted_organic_acids
     target: starting_substrate
     predicate: dissolves
     relationship: organic-acid acidolysis and metal complexation
-    description: Secreted fungal organic acids attack Polished Bancroft nepheline-rich mineral discs.
+    description: Acidified Aspergillus niger medium / organic acids contact Polished Bancroft nepheline-rich mineral discs (78.81-84.0 wt% nepheline).
     evidence:
     - source_ref: king_1985
-      supports: support
-      explanation: Primary study king_1985 documents fungal organic-acid contact with Polished Bancroft nepheline-rich mineral discs.
+      supports: partial
+      explanation: Section 2.3.4 and Figures 2.21-2.25 document fungal mat attachment and surface pitting on LM1 sucrose medium, but the disc assay did not isolate proton attack, ligand complexation, and physical hyphal interaction using matched acid, pH, or killed-biomass controls.
   - source: starting_substrate
     target: transformed_product
     predicate: transforms_into
     relationship: metal mobilization or surface alteration
-    description: Reaction of Polished Bancroft nepheline-rich mineral discs with fungal metabolites yields Surface-pitted nepheline discs and dissolved aqueous aluminium.
+    description: Reaction of Polished Bancroft nepheline-rich mineral discs (78.81-84.0 wt% nepheline) with fungal culture liquid yields Surface-pitted Bancroft nepheline-rich discs and dissolved aluminium in filtered culture liquid.
     evidence:
     - source_ref: king_1985
       supports: support
-      explanation: Primary study king_1985 reports Surface-pitted nepheline discs and dissolved aqueous aluminium.
+      explanation: Section 2.3.4 (printed pages 125-133) and Figures 2.21-2.25 show greater surface pitting for the CMI 31821 Bancroft disc series than the near-zero uninoculated blank trace and a positive relationship between pitting depth and dissolved aluminium.
 curation_history:
 - timestamp: '2026-10-14T12:20:57Z'
   curator: codex
@@ -146,11 +146,11 @@ curation_history:
   curator: codex
   action: edit
   summary: Corrected Figure 2.25 legend transcription to CMI 234300 after independent finding F1 and issue 227; preserved its conflict with text CMI 243400 and unchanged CMI 31821 evidence.
-- timestamp: '2026-10-22T10:40:28Z'
+- timestamp: '2026-10-22T11:03:06Z'
   curator: claude
   action: edit
   summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and representative causal graph to nepheline.yaml.
 history_refs:
 - history/records/nepheline/2026-10-14T122145Z-codex-7b6ec5.yaml
 - history/records/nepheline/2026-10-14T122920Z-codex-fba5aa.yaml
-- history/records/nepheline/2026-10-22T104028Z-claude-657812.yaml
+- history/records/nepheline/2026-10-22T110306Z-claude-099bef.yaml

@@ -76,7 +76,7 @@ mechanisms:
 causal_graphs:
 - id: aspergillus_cexa_ion_adsorption_residue_graph
   name: Aspergillus niger citric-acid secretion and rare-earth bioleaching from pretreated ion-adsorption leach residue
-  description: Representative causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA (cexA) and extracellular organic-acid secretion to reaction with Ammonium-sulfate-pretreated ion-adsorption rare-earth leach residue and formation/release of Mobilized residual rare-earth elements in bioleaching solution (15.8-24.1% one-step / 18.0-22.3% two-step).
+  description: Representative causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA (cexA) and extracellular organic-acid secretion to reaction with Ammonium-sulfate-pretreated Guangdong ion-adsorption rare-earth leach residue (60-mesh, 348.7 mg/kg residual REEs) and formation/release of Mobilized residual rare-earth elements in bioleaching solution (15.8-24.1% one-step and 18.1-31.4% two-step after 20 days).
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: fungal_culture_and_filtrate_bioleaching
   nodes:
@@ -108,19 +108,19 @@ causal_graphs:
         supports: partial
         explanation: Representative Aspergillus niger citrate exporter CexA exporting citric acid (measured at 46.65 g/L in Table S5) into the bioleaching metabolite mixture used on pretreated ion-adsorption REE leach residue in Zhang et al. (2024); cexA was not genetically perturbed in the study.
   - id: secreted_organic_acids
-    label: Secreted fungal metabolite mixture dominated by citric acid (46.65 g/L, pH ~2.0)
+    label: Secreted A. niger CGMCC3.739 metabolite mixture dominated by citric acid (46.65 g/L in Table S5)
     node_type: CHEMICAL_ENTITY
-    description: Secreted fungal metabolite mixture dominated by citric acid (46.65 g/L, pH ~2.0) produced by Aspergillus niger.
+    description: Extracellular organic-acid metabolite mixture produced by Aspergillus niger CGMCC3.739 in potato dextrose broth (20 g/L dextrose, 5 g/L potato powder), containing 46.65 g/L citric acid alongside oxalic, malic, tartaric, succinic, and acetic acids by HPLC (Table S5).
     protein_grounding_status: NOT_APPLICABLE
   - id: starting_substrate
-    label: Ammonium-sulfate-pretreated ion-adsorption rare-earth leach residue
+    label: Ammonium-sulfate-pretreated Guangdong ion-adsorption rare-earth leach residue (60-mesh, 348.7 mg/kg residual REEs)
     node_type: MATERIAL_OR_PHASE
-    description: Starting mineral or secondary-resource feed (Ammonium-sulfate-pretreated ion-adsorption rare-earth leach residue).
+    description: Laboratory-prepared 60-mesh leach residue remaining after repeated 2.5 wt% ammonium-sulfate extraction and rinsing of weathered Guangdong ion-adsorption rare-earth ore (348.7 mg/kg residual REEs in Table S3).
     protein_grounding_status: NOT_APPLICABLE
   - id: transformed_product
-    label: Mobilized residual rare-earth elements in bioleaching solution (15.8-24.1% one-step / 18.0-22.3% two-step)
+    label: Mobilized residual rare-earth elements in bioleaching solution (15.8-24.1% one-step and 18.1-31.4% two-step after 20 days)
     node_type: CHEMICAL_ENTITY
-    description: Resulting mobilized solute or altered phase (Mobilized residual rare-earth elements in bioleaching solution (15.8-24.1% one-step / 18.0-22.3% two-step)).
+    description: Rare-earth elements mobilized from the pretreated leach residue after 20 days at 301 K, reaching source-reported ranges of 15.8-24.1% in one-step culture leaching and 18.1-31.4% in two-step filtrate leaching.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cexa_citrate_exporter
@@ -136,29 +136,29 @@ causal_graphs:
     target: starting_substrate
     predicate: solubilizes
     relationship: organic-acid acidolysis and metal complexation
-    description: Secreted fungal organic acids attack Ammonium-sulfate-pretreated ion-adsorption rare-earth leach residue.
+    description: Acidified Aspergillus niger medium / organic acids contact Ammonium-sulfate-pretreated Guangdong ion-adsorption rare-earth leach residue (60-mesh, 348.7 mg/kg residual REEs).
     evidence:
     - source_ref: zhang2024
-      supports: support
-      explanation: Primary study zhang2024 documents fungal organic-acid contact with Ammonium-sulfate-pretreated ion-adsorption rare-earth leach residue.
+      supports: partial
+      explanation: Table S5 and Figure 4a document citric-acid-dominated metabolite accumulation (46.65 g/L citric acid) and culture acidification during residue bioleaching, but no matched uninoculated medium-plus-solid control isolated the individual contributions of proton attack, carboxylate complexation, and Fe-phase dissolution in the biological arms.
   - source: starting_substrate
     target: transformed_product
     predicate: produces
     relationship: metal mobilization or surface alteration
-    description: Reaction of Ammonium-sulfate-pretreated ion-adsorption rare-earth leach residue with fungal metabolites yields Mobilized residual rare-earth elements in bioleaching solution (15.8-24.1% one-step / 18.0-22.3% two-step).
+    description: Reaction of Ammonium-sulfate-pretreated Guangdong ion-adsorption rare-earth leach residue (60-mesh, 348.7 mg/kg residual REEs) with fungal culture liquid yields Mobilized residual rare-earth elements in bioleaching solution (15.8-24.1% one-step and 18.1-31.4% two-step after 20 days).
     evidence:
     - source_ref: zhang2024
       supports: support
-      explanation: Primary study zhang2024 reports Mobilized residual rare-earth elements in bioleaching solution (15.8-24.1% one-step / 18.0-22.3% two-step).
+      explanation: Section 3.4 and Figure 4 report 20-day rare-earth leaching ranges of 15.8-24.1% in one-step culture leaching and 18.1-31.4% in two-step filtrate leaching from the ammonium-sulfate-pretreated residue.
 curation_history:
 - timestamp: '2026-10-12T10:38:56Z'
   curator: codex (GPT-6)
   action: CREATE
   summary: Added a distinct laboratory-prepared leach residue with fungal culture and filtrate evidence, retaining source inconsistencies, control gaps, arm boundaries and the absence of product recovery.
-- timestamp: '2026-10-22T10:40:29Z'
+- timestamp: '2026-10-22T11:03:06Z'
   curator: claude
   action: edit
   summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and representative causal graph to ion-adsorption-rare-earth-leach-residue.yaml.
 history_refs:
 - history/records/ion-adsorption-rare-earth-leach-residue/2026-10-12T103856Z-codex-456fc0.yaml
-- history/records/ion-adsorption-rare-earth-leach-residue/2026-10-22T104029Z-claude-0c8f02.yaml
+- history/records/ion-adsorption-rare-earth-leach-residue/2026-10-22T110306Z-claude-68086f.yaml

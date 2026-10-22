@@ -59,7 +59,7 @@ mechanisms:
 causal_graphs:
 - id: aspergillus_cexa_button_cell_filtrate_graph
   name: Aspergillus niger citric-acid culture filtrate mobilization of zinc and silver from spent button-cell battery powder
-  description: Representative causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA (cexA) and extracellular organic-acid secretion to reaction with Dismantled waste silver-oxide-zinc button-cell battery powder and formation/release of Mobilized zinc and silver in culture filtrate leachate.
+  description: Representative causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA (cexA) and extracellular organic-acid secretion to reaction with Manually dismantled waste silver-oxide-zinc button-cell battery powder (290 mg/g Zn, 35.86 mg/g Ag) and formation/release of Mobilized zinc (~80%) and silver (~41%) with low mercury release (~2%) in 30 degrees C filtrate time series.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: fungal_filtrate_metal_mobilization
   nodes:
@@ -91,19 +91,19 @@ causal_graphs:
         supports: partial
         explanation: Representative Aspergillus niger citrate exporter CexA exporting citric acid into the filtered spent medium used to mobilize Zn and Ag from waste silver-oxide-zinc button-cell powder in Jadhav et al. (2018); cexA was not genetically perturbed in the study.
   - id: secreted_organic_acids
-    label: Filtered Aspergillus niger citric-acid-bearing culture supernatant
+    label: 0.22-um filtered Aspergillus niger sucrose-medium culture supernatant (pH 1.97 and 20 g/L citric acid cited from an earlier study)
     node_type: CHEMICAL_ENTITY
-    description: Filtered Aspergillus niger citric-acid-bearing culture supernatant produced by Aspergillus niger.
+    description: 0.22-micrometre filtered culture supernatant from a FIRDI Aspergillus niger culture grown for 10 days at 120 rpm in 100 g/L sucrose medium (Section 2.3 cites pH 1.97 and 20 g/L citric acid from an earlier study without reporting an independent metabolite assay).
     protein_grounding_status: NOT_APPLICABLE
   - id: starting_substrate
-    label: Dismantled waste silver-oxide-zinc button-cell battery powder
+    label: Manually dismantled waste silver-oxide-zinc button-cell battery powder (290 mg/g Zn, 35.86 mg/g Ag)
     node_type: MATERIAL_OR_PHASE
-    description: Starting mineral or secondary-resource feed (Dismantled waste silver-oxide-zinc button-cell battery powder).
+    description: 'Dried powder manually removed from market-collected waste silver-oxide-zinc button cells (aqua-regia/ICP-OES feed assay in Table 1: 290 mg/g Zn and 35.86 mg/g Ag).'
     protein_grounding_status: NOT_APPLICABLE
   - id: transformed_product
-    label: Mobilized zinc and silver in culture filtrate leachate
+    label: Mobilized zinc (~80%) and silver (~41%) with low mercury release (~2%) in 30 degrees C filtrate time series
     node_type: CHEMICAL_ENTITY
-    description: Resulting mobilized solute or altered phase (Mobilized zinc and silver in culture filtrate leachate).
+    description: Dissolved zinc, silver, and trace mercury measured by ICP-OES in culture filtrate leachates (approximately 80% Zn, 41% Ag, and 2% Hg at 6 hours in the 30 degrees C, 150 rpm, 0.10 g / 100 mL time series; higher-temperature/volume series contain unresolved condition and yield conflicts).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cexa_citrate_exporter
@@ -119,29 +119,29 @@ causal_graphs:
     target: starting_substrate
     predicate: solubilizes
     relationship: organic-acid acidolysis and metal complexation
-    description: Secreted fungal organic acids attack Dismantled waste silver-oxide-zinc button-cell battery powder.
+    description: Acidified Aspergillus niger medium / organic acids contact Manually dismantled waste silver-oxide-zinc button-cell battery powder (290 mg/g Zn, 35.86 mg/g Ag).
     evidence:
     - source_ref: jadhav_2018
-      supports: support
-      explanation: Primary study jadhav_2018 documents fungal organic-acid contact with Dismantled waste silver-oxide-zinc button-cell battery powder.
+      supports: partial
+      explanation: Sections 2.3-2.5 and Figure 1 document metal mobilization by 0.22-micrometre filtered A. niger culture supernatant, while pH 1.97 and 20 g/L citric acid were cited from an earlier study without an independent metabolite assay or a matched sterile-medium/chemical-acid control.
   - source: starting_substrate
     target: transformed_product
     predicate: produces
     relationship: metal mobilization or surface alteration
-    description: Reaction of Dismantled waste silver-oxide-zinc button-cell battery powder with fungal metabolites yields Mobilized zinc and silver in culture filtrate leachate.
+    description: Reaction of Manually dismantled waste silver-oxide-zinc button-cell battery powder (290 mg/g Zn, 35.86 mg/g Ag) with fungal culture liquid yields Mobilized zinc (~80%) and silver (~41%) with low mercury release (~2%) in 30 degrees C filtrate time series.
     evidence:
     - source_ref: jadhav_2018
       supports: support
-      explanation: Primary study jadhav_2018 reports Mobilized zinc and silver in culture filtrate leachate.
+      explanation: Sections 2.1-2.5 and Figure 1 report approximately 80% Zn, 41% Ag, and 2% Hg extraction at six hours in the 30 degrees C, 150 rpm time-series assay using 0.10 g waste button-cell powder in 100 mL culture filtrate.
 curation_history:
 - timestamp: '2026-10-14T18:01:44.920258Z'
   curator: Codex (GPT-6; codex)
   action: CREATE
   summary: Created the source-qualified secondary-resource owner; preserved conflicting conditions, incomplete balances, controls, null results and laboratory scope.
-- timestamp: '2026-10-22T10:40:29Z'
+- timestamp: '2026-10-22T11:03:06Z'
   curator: claude
   action: edit
   summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and representative causal graph to spent-silver-oxide-zinc-button-cell-batteries.yaml.
 history_refs:
 - history/records/spent-silver-oxide-zinc-button-cell-batteries/2026-10-14T180129Z-codex-f4aacb.yaml
-- history/records/spent-silver-oxide-zinc-button-cell-batteries/2026-10-22T104029Z-claude-413afc.yaml
+- history/records/spent-silver-oxide-zinc-button-cell-batteries/2026-10-22T110306Z-claude-e75376.yaml
