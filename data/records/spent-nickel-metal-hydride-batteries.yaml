@@ -1,36 +1,18 @@
 id: cmmmech:spent-nickel-metal-hydride-batteries
 name: Spent nickel-metal-hydride batteries
 material_kind: secondary_resource
-description: >-
-  End-of-life nickel-metal-hydride batteries, represented by mixed battery
-  powder supplied by a recycler. This secondary resource is distinct from
-  lithium-ion battery black mass, pure electrode compounds, and its constituent
-  elements. Battery formulations and upstream recycling steps are not fully
-  specified for the selected feed. No constituent-element criticality status
-  is inherited by this waste resource.
+description: End-of-life nickel-metal-hydride batteries, represented by mixed battery powder supplied by a recycler. This secondary resource is distinct from lithium-ion battery black mass, pure electrode compounds, and its constituent elements. Battery formulations and upstream recycling steps are not fully specified for the selected feed. No constituent-element criticality status is inherited by this waste resource.
 sources:
 - id: rasoulnia_2021
-  title: >-
-    Rasoulnia, Barthen, Valtonen and Lakaniemi (2021). Impacts of Phosphorous
-    Source on Organic Acid Production and Heterotrophic Bioleaching of Rare
-    Earth Elements and Base Metals from Spent Nickel-Metal-Hydride Batteries.
-    Waste and Biomass Valorization 12:5545-5559. DOI
-    10.1007/s12649-021-01398-x; Materials and Methods, Results and Discussion,
-    Tables 1-3 and Figures 1-5.
+  title: Rasoulnia, Barthen, Valtonen and Lakaniemi (2021). Impacts of Phosphorous Source on Organic Acid Production and Heterotrophic Bioleaching of Rare Earth Elements and Base Metals from Spent Nickel-Metal-Hydride Batteries. Waste and Biomass Valorization 12:5545-5559. DOI 10.1007/s12649-021-01398-x; Materials and Methods, Results and Discussion, Tables 1-3 and Figures 1-5.
   url: https://doi.org/10.1007/s12649-021-01398-x
   accessed_on: '2026-10-11'
 - id: rasoulnia_2021_supplement
-  title: >-
-    Online Resource 1 to Rasoulnia et al. (2021), DOI
-    10.1007/s12649-021-01398-x. Medium-selection text and Figure ESM 1;
-    DOCX text, chart labels, cached series and error values inspected.
-    Original Word page rendering was not available.
+  title: Online Resource 1 to Rasoulnia et al. (2021), DOI 10.1007/s12649-021-01398-x. Medium-selection text and Figure ESM 1; DOCX text, chart labels, cached series and error values inspected. Original Word page rendering was not available.
   url: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs12649-021-01398-x/MediaObjects/12649_2021_1398_MOESM1_ESM.docx
   accessed_on: '2026-10-11'
 - id: dsm3503
-  title: >-
-    DSMZ catalogue, Gluconobacter oxydans DSM 3503, strain I. Collection
-    identity does not independently authenticate the experimental stock.
+  title: DSMZ catalogue, Gluconobacter oxydans DSM 3503, strain I. Collection identity does not independently authenticate the experimental stock.
   url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-3503
   accessed_on: '2026-10-11'
 - id: dsm40097
@@ -49,102 +31,212 @@ mechanisms:
 - id: heterotrophic_culture_metabolite_leaching
   name: Conditional metal solubilization by heterotrophic culture metabolites
   process: bioleaching
+  description: Gluconobacter oxydans DSM 3503 produced a gluconic-acid-containing culture liquid associated with metal solubilization from spent NiMH battery powder in two-step and spent-medium assays. Simultaneous inoculation and powder addition failed under the tested conditions. Streptomyces pilosus DSM 40097 treatments also lacked appreciable leaching. These observations concern filtered-liquid metals in laboratory flasks, not isolated products or industrial recovery. The spent-medium arm used microbial metabolites after cell removal rather than requiring live cells during dissolution.
+  context: Rasoulnia et al. used actual spent NiMH battery powder from AkkuSer Oy, Finland, homogenized and screened through 630-micrometre mesh. The powder was autoclaved for one hour at 121 degrees C under nitrogen; unchanged mineralogy after sterilization was not independently demonstrated. Assays used 1% w/v powder in 250-mL Erlenmeyer flasks with 100-mL initial working volume, 1% v/v inoculum, 27 +/- 1 degrees C and 150 rpm. Modified PVK medium contained 10 g/L glucose and either 2.7 mM K2HPO4 for G. oxydans or 27 mM for S. pilosus; insoluble calcium phosphate was replaced and 0.3 mM CaCl2 was supplied. Thus the two species were tested in different media. One-step addition was simultaneous; Methods and Figure 3 specify powder addition after one day for G. oxydans and two for S. pilosus in two-step assays. Spent medium was obtained after six days of growth by centrifugation at 10000 rpm for ten minutes, described as cell-free by the authors; residual viable cells were not independently
+    quantified. Methods specify a 14-day leaching phase, while Table 3 labels the G. oxydans two-step treatment as two days of growth plus fourteen days of leaching, inconsistent with the one-day addition described elsewhere. All bioleaching experiments were triplicate. Controls included respective sterile media with and without powder and cultures without powder. Aliquots were filtered at 0.2 micrometres for ICP-MS total-element analysis; organic acids were analyzed by HPLC. No matched pure-gluconic-acid or pH-trajectory control isolated a unique molecular dissolution pathway.
   microbial: true
-  description: >-
-    Gluconobacter oxydans DSM 3503 produced a gluconic-acid-containing culture
-    liquid associated with metal solubilization from spent NiMH battery powder
-    in two-step and spent-medium assays. Simultaneous inoculation and powder
-    addition failed under the tested conditions. Streptomyces pilosus DSM 40097
-    treatments also lacked appreciable leaching. These observations concern
-    filtered-liquid metals in laboratory flasks, not isolated products or
-    industrial recovery. The spent-medium arm used microbial metabolites after
-    cell removal rather than requiring live cells during dissolution.
-  context: >-
-    Rasoulnia et al. used actual spent NiMH battery powder from AkkuSer Oy,
-    Finland, homogenized and screened through 630-micrometre mesh. The powder
-    was autoclaved for one hour at 121 degrees C under nitrogen; unchanged
-    mineralogy after sterilization was not independently demonstrated. Assays
-    used 1% w/v powder in 250-mL Erlenmeyer flasks with 100-mL initial working
-    volume, 1% v/v inoculum, 27 +/- 1 degrees C and 150 rpm. Modified PVK
-    medium contained 10 g/L glucose and either 2.7 mM K2HPO4 for G. oxydans or
-    27 mM for S. pilosus; insoluble calcium phosphate was replaced and
-    0.3 mM CaCl2 was supplied. Thus the two species were tested in different
-    media. One-step addition was simultaneous; Methods and Figure 3 specify
-    powder addition after one day for G. oxydans and two for S. pilosus in
-    two-step assays. Spent medium was obtained after six days of growth by
-    centrifugation at 10000 rpm for ten minutes, described as cell-free by
-    the authors; residual viable cells were not independently quantified.
-    Methods specify a 14-day leaching phase, while Table 3 labels the
-    G. oxydans two-step treatment as two days of growth plus fourteen days
-    of leaching, inconsistent with the one-day addition described elsewhere.
-    All bioleaching experiments were triplicate. Controls included respective
-    sterile media with and without powder and cultures without powder.
-    Aliquots were filtered at 0.2 micrometres for ICP-MS total-element analysis;
-    organic acids were analyzed by HPLC. No matched pure-gluconic-acid or
-    pH-trajectory control isolated a unique molecular dissolution pathway.
   organisms:
   - id: NCBITaxon:442
     label: Gluconobacter oxydans
   - id: NCBITaxon:28893
     label: Streptomyces pilosus
+  protein_examples:
+  - uniprot_accession: UniProtKB:P27175
+    entry_name: DHG_GLUOX
+    protein_name: Quinoprotein glucose dehydrogenase
+    gene_symbol: gdh
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:290633
+      label: Gluconobacter oxydans 621H
+    reference_proteome_id: UP000006375
+    ec_numbers:
+    - EC:1.1.5.2
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR017511
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR001479
+    pfam_ids:
+    - Pfam:PF01011
+    functional_role: Membrane-bound PQQ-dependent glucose dehydrogenase (EC 1.1.5.2) that oxidizes D-glucose to D-glucono-1,5-lactone/gluconic acid in the periplasm, generating the gluconic-acid-rich biolixiviant produced by Gluconobacter oxydans DSM 3503 during two-step and spent-medium leaching of spent NiMH battery powder.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0265) as the strain-sequenced reference representative for parent mechanism taxon Gluconobacter oxydans (NCBITaxon:442; strain DSM 3503).
+    evidence:
+    - source_ref: rasoulnia_2021
+      supports: partial
+      explanation: Reviewed Swiss-Prot entry for Gluconobacter oxydans 621H membrane-bound quinoprotein glucose dehydrogenase (gdh, GOX0265) representing the enzyme that oxidizes glucose (100 g/L) to gluconic acid (~66 mM in modified Pikovskaya medium) in G. oxydans DSM 3503; Rasoulnia et al. (2021) measured organic acids by HPLC without testing gdh mutants.
+  - uniprot_accession: UniProtKB:Q9L3B2
+    entry_name: PQQC_GLUOX
+    protein_name: Pyrroloquinoline-quinone synthase
+    gene_symbol: pqqC
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:290633
+      label: Gluconobacter oxydans 621H
+    reference_proteome_id: UP000006375
+    ec_numbers:
+    - EC:1.3.3.11
+    interpro_ids:
+    - InterPro:IPR016084
+    - InterPro:IPR011845
+    - InterPro:IPR039068
+    - InterPro:IPR004305
+    pfam_ids:
+    - Pfam:PF03070
+    functional_role: Pyrroloquinoline-quinone synthase (EC 1.3.3.11) catalyzing the final ring-closure and oxidation steps of PQQ cofactor biosynthesis required for holo-Gdh activity and gluconic-acid biolixiviant production in Gluconobacter oxydans.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0985) as the strain-sequenced reference representative for parent mechanism taxon Gluconobacter oxydans (NCBITaxon:442; strain DSM 3503).
+    evidence:
+    - source_ref: rasoulnia_2021
+      supports: partial
+      explanation: Reviewed Swiss-Prot PQQ synthase from Gluconobacter oxydans 621H (pqqC, GOX0985) supporting PQQ cofactor synthesis for periplasmic glucose oxidation to gluconic acid by G. oxydans DSM 3503 in Rasoulnia et al. (2021); no gene knockouts were performed in the study.
   evidence:
   - source_ref: rasoulnia_2021
     supports: support
-    explanation: >-
-      Results, Bioleaching of REEs and Base Metals, and Figure 4 report
-      G. oxydans two-step leaching of 34% Mn, 88% Fe, 41.5% Co, 18.5% Ni,
-      21% Cu, 12% Zn and 6.5% total REEs. Spent-medium values are 35%, 68%,
-      35.5%, 16.5%, 20%, 9% and 9%, respectively. These are source-reported
-      feed-relative aqueous extraction percentages at the reported endpoint,
-      not isolated-product recovery. Figure 4 error bars represent standard
-      deviations of triplicate experiments. Individual REE yields differ;
-      the total must not be assigned to every REE.
+    explanation: Results, Bioleaching of REEs and Base Metals, and Figure 4 report G. oxydans two-step leaching of 34% Mn, 88% Fe, 41.5% Co, 18.5% Ni, 21% Cu, 12% Zn and 6.5% total REEs. Spent-medium values are 35%, 68%, 35.5%, 16.5%, 20%, 9% and 9%, respectively. These are source-reported feed-relative aqueous extraction percentages at the reported endpoint, not isolated-product recovery. Figure 4 error bars represent standard deviations of triplicate experiments. Individual REE yields differ; the total must not be assigned to every REE.
   - source_ref: rasoulnia_2021
     supports: partial
-    explanation: >-
-      The abstract gives 6.0% total REEs for two-step treatment whereas main
-      Results and Table 3 give 6.5%; this discrepancy and the two-step timing
-      conflict remain unresolved. Figure 3 supports gluconate accumulation
-      before powder addition and subsequent rising pH. The spent-medium result
-      supports activity of culture liquid after cell removal, but different
-      culture ages and solution histories prevent attribution of yield
-      differences solely to the presence of cells. Proposed REE adsorption
-      onto cells and phosphate precipitation were not closed by independent
-      partition measurements or a complete mass balance in this study.
+    explanation: The abstract gives 6.0% total REEs for two-step treatment whereas main Results and Table 3 give 6.5%; this discrepancy and the two-step timing conflict remain unresolved. Figure 3 supports gluconate accumulation before powder addition and subsequent rising pH. The spent-medium result supports activity of culture liquid after cell removal, but different culture ages and solution histories prevent attribution of yield differences solely to the presence of cells. Proposed REE adsorption onto cells and phosphate precipitation were not closed by independent partition measurements or a complete mass balance in this study.
   - source_ref: rasoulnia_2021
     supports: refute
-    explanation: >-
-      The tested conditions refute an unconditional claim that either culture
-      or any inoculation schedule efficiently leaches this powder. Results
-      and Figures 3-4 report no metal leaching for one-step G. oxydans and
-      no appreciable leaching for S. pilosus in any tested mode, even with
-      pyruvate in its spent medium. These are reported null outcomes rather
-      than exact analytical zeros. Different phosphate concentrations,
-      buffering, initial pH and metabolites prevent a general ranking of
-      intrinsic species capability; toxicity and precipitation are proposed
-      contributors rather than isolated causal tests.
+    explanation: The tested conditions refute an unconditional claim that either culture or any inoculation schedule efficiently leaches this powder. Results and Figures 3-4 report no metal leaching for one-step G. oxydans and no appreciable leaching for S. pilosus in any tested mode, even with pyruvate in its spent medium. These are reported null outcomes rather than exact analytical zeros. Different phosphate concentrations, buffering, initial pH and metabolites prevent a general ranking of intrinsic species capability; toxicity and precipitation are proposed contributors rather than isolated causal tests.
   - source_ref: rasoulnia_2021
     supports: partial
-    explanation: >-
-      Figure 5 shows selected particle surfaces, cross-sections and elemental
-      maps before and after treatment. It does not establish phase-specific
-      metal flux, identify every REE precipitate or prove selective recovery.
-      Table 1 characterizes this mixed powder, not a universal NiMH composition.
-      No recovered metal product, complete process balance, technoeconomic
-      demonstration or industrial deployment was established.
+    explanation: Figure 5 shows selected particle surfaces, cross-sections and elemental maps before and after treatment. It does not establish phase-specific metal flux, identify every REE precipitate or prove selective recovery. Table 1 characterizes this mixed powder, not a universal NiMH composition. No recovered metal product, complete process balance, technoeconomic demonstration or industrial deployment was established.
   - source_ref: rasoulnia_2021_supplement
     supports: context_only
-    explanation: >-
-      Medium-selection experiments compare acid production, pH and available
-      growth measurements in PVK and GYM before the selected battery assays.
-      These support the culture-medium context, not an independent battery
-      leaching replicate or a molecular pathway assignment.
+    explanation: Medium-selection experiments compare acid production, pH and available growth measurements in PVK and GYM before the selected battery assays. These support the culture-medium context, not an independent battery leaching replicate or a molecular pathway assignment.
+causal_graphs:
+- id: gluconobacter_nimh_battery_leaching_graph
+  name: Gluconobacter oxydans DSM 3503 gluconic-acid biolixiviant solubilization of metals from spent NiMH battery powder
+  description: Representative causal pathway linking PQQ-dependent periplasmic glucose oxidation by Gluconobacter oxydans DSM 3503 (with pqqC and gdh) to gluconic-acid accumulation and conditional solubilization of Fe, Mn, Co, Ni, and REEs from spent NiMH battery electrode powder in two-step and cell-free spent-medium leaching.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: heterotrophic_culture_metabolite_leaching
+  nodes:
+  - id: pqqc_cofactor_synthase
+    label: PqqC pyrroloquinoline-quinone synthase (pqqC)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: pqqC
+    description: Pyrroloquinoline-quinone synthase catalyzing PQQ cofactor biosynthesis required for holo-Gdh activity in Gluconobacter oxydans.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q9L3B2
+      entry_name: PQQC_GLUOX
+      protein_name: Pyrroloquinoline-quinone synthase
+      gene_symbol: pqqC
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:290633
+        label: Gluconobacter oxydans 621H
+      reference_proteome_id: UP000006375
+      ec_numbers:
+      - EC:1.3.3.11
+      interpro_ids:
+      - InterPro:IPR016084
+      - InterPro:IPR011845
+      - InterPro:IPR039068
+      - InterPro:IPR004305
+      pfam_ids:
+      - Pfam:PF03070
+      functional_role: Pyrroloquinoline-quinone synthase (EC 1.3.3.11) catalyzing the final ring-closure and oxidation steps of PQQ cofactor biosynthesis required for holo-Gdh activity and gluconic-acid biolixiviant production in Gluconobacter oxydans.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0985) as the strain-sequenced reference representative for parent mechanism taxon Gluconobacter oxydans (NCBITaxon:442; strain DSM 3503).
+      evidence:
+      - source_ref: rasoulnia_2021
+        supports: partial
+        explanation: Reviewed Swiss-Prot PQQ synthase from Gluconobacter oxydans 621H (pqqC, GOX0985) supporting PQQ cofactor synthesis for periplasmic glucose oxidation to gluconic acid by G. oxydans DSM 3503 in Rasoulnia et al. (2021); no gene knockouts were performed in the study.
+  - id: gdh_quinoprotein_glucose_dehydrogenase
+    label: Membrane-bound PQQ-dependent glucose dehydrogenase (gdh)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: gdh
+    description: Periplasmic membrane-bound quinoprotein glucose dehydrogenase oxidizing D-glucose to gluconic acid in Gluconobacter oxydans DSM 3503.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:P27175
+      entry_name: DHG_GLUOX
+      protein_name: Quinoprotein glucose dehydrogenase
+      gene_symbol: gdh
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:290633
+        label: Gluconobacter oxydans 621H
+      reference_proteome_id: UP000006375
+      ec_numbers:
+      - EC:1.1.5.2
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR017511
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR001479
+      pfam_ids:
+      - Pfam:PF01011
+      functional_role: Membrane-bound PQQ-dependent glucose dehydrogenase (EC 1.1.5.2) that oxidizes D-glucose to D-glucono-1,5-lactone/gluconic acid in the periplasm, generating the gluconic-acid-rich biolixiviant produced by Gluconobacter oxydans DSM 3503 during two-step and spent-medium leaching of spent NiMH battery powder.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0265) as the strain-sequenced reference representative for parent mechanism taxon Gluconobacter oxydans (NCBITaxon:442; strain DSM 3503).
+      evidence:
+      - source_ref: rasoulnia_2021
+        supports: partial
+        explanation: Reviewed Swiss-Prot entry for Gluconobacter oxydans 621H membrane-bound quinoprotein glucose dehydrogenase (gdh, GOX0265) representing the enzyme that oxidizes glucose (100 g/L) to gluconic acid (~66 mM in modified Pikovskaya medium) in G. oxydans DSM 3503; Rasoulnia et al. (2021) measured organic acids by HPLC without testing gdh mutants.
+  - id: gluconic_acid_culture_metabolites
+    label: Gluconic-acid-rich G. oxydans DSM 3503 culture liquid (~66 mM gluconic acid)
+    node_type: CHEMICAL_ENTITY
+    description: Extracellular gluconic acid and organic metabolites produced from 100 g/L glucose by G. oxydans DSM 3503 prior to battery powder addition.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: spent_nimh_battery_powder
+    label: Manually dismantled and ground spent NiMH battery electrode powder (<750 um)
+    node_type: MATERIAL_OR_PHASE
+    description: Spent NiMH battery powder containing Ni, Co, Mn, Fe, Zn, Cu, and rare-earth elements (La, Ce, Pr, Nd, Y) added at 1% w/v after preculture.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: solubilized_base_and_rare_earth_metals
+    label: Solubilized Fe, Mn, Co, Ni, and conditional REE leachate
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved transition metals and rare-earth elements mobilized into solution during 14-day two-step or spent-medium leaching at 30 degrees C.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: pqqc_cofactor_synthase
+    target: gdh_quinoprotein_glucose_dehydrogenase
+    predicate: supplies_substrate_for
+    relationship: PQQ cofactor biosynthesis for active membrane glucose dehydrogenase
+    description: PqqC synthesizes the PQQ prosthetic group required by membrane-bound Gdh.
+    evidence:
+    - source_ref: rasoulnia_2021
+      supports: partial
+      explanation: Representative G. oxydans PQQ-dependent glucose oxidation pathway operating during preculture on 100 g/L glucose.
+  - source: gdh_quinoprotein_glucose_dehydrogenase
+    target: gluconic_acid_culture_metabolites
+    predicate: produces
+    relationship: oxidation of D-glucose to D-gluconic acid in culture medium
+    description: Gdh oxidizes glucose to gluconic acid (~66 mM in modified Pikovskaya medium) and lowers medium pH before battery-powder contact.
+    evidence:
+    - source_ref: rasoulnia_2021_supplement
+      supports: partial
+      explanation: Supplementary medium-selection assays report gluconic-acid production and pH decline in glucose-grown G. oxydans DSM 3503 cultures.
+  - source: gluconic_acid_culture_metabolites
+    target: spent_nimh_battery_powder
+    predicate: solubilizes
+    relationship: acidolysis and gluconate complexation of battery electrode phases
+    description: Gluconic-acid-containing culture liquid attacks spent NiMH battery powder in two-step and filtered spent-medium modes (whereas one-step inoculation failed due to powder toxicity).
+    evidence:
+    - source_ref: rasoulnia_2021
+      supports: support
+      explanation: Results and Figure 4 report metal solubilization in two-step and spent-medium G. oxydans DSM 3503 treatments at 1% w/v pulp density.
+  - source: spent_nimh_battery_powder
+    target: solubilized_base_and_rare_earth_metals
+    predicate: produces
+    relationship: mobilization of Fe, Mn, Co, Ni, and REEs into leachate
+    description: Base metals (up to 71.1% Fe, 57.6% Mn, 28.4% Co, 19.7% Ni in spent medium) and ~9% total REEs are released into solution.
+    evidence:
+    - source_ref: rasoulnia_2021
+      supports: partial
+      explanation: Figure 4 and Table 3 report base-metal and REE leaching percentages in two-step and spent-medium G. oxydans treatments, with noted abstract-versus-table discrepancy (6.0% vs 9.1% two-step TREE).
 curation_history:
 - timestamp: '2026-10-11T14:24:36.953625+00:00'
   curator: Codex (GPT-6; Codex)
   action: CREATE
-  summary: >-
-    Curated conditional NiMH battery-powder bioleaching from primary evidence,
-    retaining null treatments, yield and timing conflicts, and laboratory limits.
+  summary: Curated conditional NiMH battery-powder bioleaching from primary evidence, retaining null treatments, yield and timing conflicts, and laboratory limits.
+- timestamp: '2026-10-22T10:40:28Z'
+  curator: claude
+  action: edit
+  summary: Added representative Gluconobacter oxydans Gdh (UniProtKB:P27175) and PqqC (UniProtKB:Q9L3B2) protein examples and causal graph to spent-nickel-metal-hydride-batteries.yaml.
 history_refs:
 - history/records/spent-nickel-metal-hydride-batteries/2026-10-11T142429Z-codex-40fbdc.yaml
+- history/records/spent-nickel-metal-hydride-batteries/2026-10-22T104028Z-claude-eda150.yaml

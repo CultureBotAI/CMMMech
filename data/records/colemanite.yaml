@@ -1,71 +1,144 @@
 id: cmmmech:colemanite
 name: Colemanite
 material_kind: mineral
-description: Colemanite is the CaB3O4(OH)3(H2O) mineral species in the September 2026 IMA
-  list. Status G denotes grandfathering and 1884 is an original-description year, not a sequential
-  approval identifier. It is distinct from elemental boron, the broad borates commodity, and
-  mixed commercial ore. The colemanite-bearing ore experiment below is also represented in
-  cmmmech:borates; this is the same study, not an independent replication or a purified-mineral
-  assay. No commodity criticality designation is inherited.
+description: Colemanite is the CaB3O4(OH)3(H2O) mineral species in the September 2026 IMA list. Status G denotes grandfathering and 1884 is an original-description year, not a sequential approval identifier. It is distinct from elemental boron, the broad borates commodity, and mixed commercial ore. The colemanite-bearing ore experiment below is also represented in cmmmech:borates; this is the same study, not an independent replication or a purified-mineral assay. No commodity criticality designation is inherited.
 sources:
-  - id: ima_2026_09
-    title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 48, Colemanite
-      row; page 1, column definitions; page 2, distribution terms.
-    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
-    accessed_on: '2026-10-11'
-  - id: bayat2011-colemanite
-    title: 'Bayat, Arslan and Bayat (2011), Use of Aspergillus niger in the bioleaching of
-      colemanite for the production of boric acid, Electronic Journal of Biotechnology 14(3),
-      DOI 10.2225/vol14-issue3-fulltext-7: Methods pp. 3-4, Tables 1 and 3, Figures 1-4'
-    url: https://www.scielo.cl/pdf/ejb/v14n3/a07.pdf
-    accessed_on: '2026-10-11'
-  - id: ncbi-aspergillus-niger
-    title: NCBI Taxonomy 5061, Aspergillus niger; species context, not strain authentication
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061
-    accessed_on: '2026-10-11'
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 48, Colemanite row; page 1, column definitions; page 2, distribution terms.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-11'
+- id: bayat2011-colemanite
+  title: 'Bayat, Arslan and Bayat (2011), Use of Aspergillus niger in the bioleaching of colemanite for the production of boric acid, Electronic Journal of Biotechnology 14(3), DOI 10.2225/vol14-issue3-fulltext-7: Methods pp. 3-4, Tables 1 and 3, Figures 1-4'
+  url: https://www.scielo.cl/pdf/ejb/v14n3/a07.pdf
+  accessed_on: '2026-10-11'
+- id: ncbi-aspergillus-niger
+  title: NCBI Taxonomy 5061, Aspergillus niger; species context, not strain authentication
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061
+  accessed_on: '2026-10-11'
 mechanisms:
-  - id: fungal-colemanite-leaching
-    name: Fungal leaching of a colemanite-bearing borate ore
-    process: bioleaching
-    description: Aspergillus niger cultures released soluble boron from a colemanite-bearing
-      ore while producing organic acids. This laboratory observation supports fermentation-associated
-      leaching; it does not establish an exclusive molecular cause, an isolated boric-acid
-      product or industrial performance.
-    context: Bayat et al. used growing A. niger, reported as ATCC 11414, and mixed Kütahya-Emet
-      ore reported as 28.05 wt% B2O3-equivalent. Nominal particle size was below 0.075 mm.
-      Methods specify autoclaved ore and sucrose medium, 150 mL in 250-mL flasks, 1 mL of
-      a 3 x 10^7 spores/mL suspension, 150 rpm and 30 +/- 2 C; 1-10% w/v pulp densities were
-      followed for 21 days. Abstract/optimum-condition text instead gives 25 +/- 2 C, and
-      initial pH is inconsistently stated as 5.5 or about 7. Boron was assayed volumetrically
-      in filtrate and acids by HPLC. Replication was at least duplicate. These reporting conflicts
-      prevent treating the protocol as an unambiguous optimum.
-    microbial: true
-    organisms:
-      - id: NCBITaxon:5061
-        label: Aspergillus niger
+- id: fungal-colemanite-leaching
+  name: Fungal leaching of a colemanite-bearing borate ore
+  process: bioleaching
+  description: Aspergillus niger cultures released soluble boron from a colemanite-bearing ore while producing organic acids. This laboratory observation supports fermentation-associated leaching; it does not establish an exclusive molecular cause, an isolated boric-acid product or industrial performance.
+  context: Bayat et al. used growing A. niger, reported as ATCC 11414, and mixed Kütahya-Emet ore reported as 28.05 wt% B2O3-equivalent. Nominal particle size was below 0.075 mm. Methods specify autoclaved ore and sucrose medium, 150 mL in 250-mL flasks, 1 mL of a 3 x 10^7 spores/mL suspension, 150 rpm and 30 +/- 2 C; 1-10% w/v pulp densities were followed for 21 days. Abstract/optimum-condition text instead gives 25 +/- 2 C, and initial pH is inconsistently stated as 5.5 or about 7. Boron was assayed volumetrically in filtrate and acids by HPLC. Replication was at least duplicate. These reporting conflicts prevent treating the protocol as an unambiguous optimum.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:5061
+    label: Aspergillus niger
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A254TZW7
+    entry_name: CEXA_ASPNG
+    protein_name: Citrate exporter A
+    gene_symbol: cexA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:5061
+      label: Aspergillus niger
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal mobilization.
+    annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061).
     evidence:
-      - source_ref: bayat2011-colemanite
-        supports: support
-        explanation: Methods pp. 3-4, Table 3 and Figures 1-3 support soluble-boron release
-          during culture, acid production and culture-associated acidification relative to
-          the stated no-microorganism control. The species identifier does not independently
-          authenticate the reported strain.
+    - source_ref: bayat2011-colemanite
+      supports: partial
+      explanation: Representative Aspergillus niger citrate exporter CexA for citric/gluconic/oxalic acid secretion during bioleaching of colemanite-bearing ore in Bayat et al. (2011); cexA was not directly mutated in the study.
+  evidence:
+  - source_ref: bayat2011-colemanite
+    supports: support
+    explanation: Methods pp. 3-4, Table 3 and Figures 1-3 support soluble-boron release during culture, acid production and culture-associated acidification relative to the stated no-microorganism control. The species identifier does not independently authenticate the reported strain.
+  - source_ref: bayat2011-colemanite
+    supports: partial
+    explanation: Table 1 reports twelve oxide wt% cells that sum to 126.8%, leaving the bulk composition unresolved. The reported 28.05 wt% B2O3 cell is not normalized or treated as a validated recovery denominator. Table 3 gives no corresponding abiotic boron-release series, so the microbial increment in dissolution is unresolved. Its 5% endpoint pH differs from the Results and optimum-condition text. Figure 4's fitted slope differs from the kinetic coefficient reported in the text. Extraction percentages and kinetic constants are not adopted. The chemical comparison used a different temperature and duration; no isolated-product purity or recovery mass balance was demonstrated.
+causal_graphs:
+- id: aspergillus_cexa_colemanite_leaching_graph
+  name: Aspergillus niger organic-acid excretion and soluble boron release from colemanite-bearing ore
+  description: Representative causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA (cexA) and extracellular organic-acid secretion to reaction with Ground Emet colemanite-bearing borate ore (Ca2B6O11·5H2O) and formation/release of Dissolved boron mobilized into culture solution.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: fungal-colemanite-leaching
+  nodes:
+  - id: cexa_citrate_exporter
+    label: CexA plasma-membrane citrate exporter (cexA)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cexA
+    description: Major facilitator superfamily transporter exporting citric acid across the Aspergillus niger plasma membrane.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A254TZW7
+      entry_name: CEXA_ASPNG
+      protein_name: Citrate exporter A
+      gene_symbol: cexA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:5061
+        label: Aspergillus niger
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal mobilization.
+      annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061).
+      evidence:
       - source_ref: bayat2011-colemanite
         supports: partial
-        explanation: Table 1 reports twelve oxide wt% cells that sum to 126.8%, leaving the
-          bulk composition unresolved. The reported 28.05 wt% B2O3 cell is not normalized
-          or treated as a validated recovery denominator. Table 3 gives no corresponding abiotic
-          boron-release series, so the microbial increment in dissolution is unresolved. Its
-          5% endpoint pH differs from the Results and optimum-condition text. Figure 4's fitted
-          slope differs from the kinetic coefficient reported in the text. Extraction percentages
-          and kinetic constants are not adopted. The chemical comparison used a different
-          temperature and duration; no isolated-product purity or recovery mass balance was
-          demonstrated.
+        explanation: Representative Aspergillus niger citrate exporter CexA for citric/gluconic/oxalic acid secretion during bioleaching of colemanite-bearing ore in Bayat et al. (2011); cexA was not directly mutated in the study.
+  - id: secreted_organic_acids
+    label: Secreted fungal citric, oxalic, and gluconic acids in sucrose medium
+    node_type: CHEMICAL_ENTITY
+    description: Secreted fungal citric, oxalic, and gluconic acids in sucrose medium produced by Aspergillus niger.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: starting_substrate
+    label: Ground Emet colemanite-bearing borate ore (Ca2B6O11·5H2O)
+    node_type: MATERIAL_OR_PHASE
+    description: Starting mineral or secondary-resource feed (Ground Emet colemanite-bearing borate ore (Ca2B6O11·5H2O)).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: transformed_product
+    label: Dissolved boron mobilized into culture solution
+    node_type: CHEMICAL_ENTITY
+    description: Resulting mobilized solute or altered phase (Dissolved boron mobilized into culture solution).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cexa_citrate_exporter
+    target: secreted_organic_acids
+    predicate: transports
+    relationship: efflux of citric acid into extracellular medium
+    description: CexA exports intracellularly synthesized citric acid across the fungal plasma membrane, acidifying the medium and supplying chelating anions.
+    evidence:
+    - source_ref: bayat2011-colemanite
+      supports: partial
+      explanation: Representative Aspergillus niger citrate exporter CexA for citric/gluconic/oxalic acid secretion during bioleaching of colemanite-bearing ore in Bayat et al. (2011); cexA was not directly mutated in the study.
+  - source: secreted_organic_acids
+    target: starting_substrate
+    predicate: solubilizes
+    relationship: organic-acid acidolysis and metal complexation
+    description: Secreted fungal organic acids attack Ground Emet colemanite-bearing borate ore (Ca2B6O11·5H2O).
+    evidence:
+    - source_ref: bayat2011-colemanite
+      supports: support
+      explanation: Primary study bayat2011-colemanite documents fungal organic-acid contact with Ground Emet colemanite-bearing borate ore (Ca2B6O11·5H2O).
+  - source: starting_substrate
+    target: transformed_product
+    predicate: produces
+    relationship: metal mobilization or surface alteration
+    description: Reaction of Ground Emet colemanite-bearing borate ore (Ca2B6O11·5H2O) with fungal metabolites yields Dissolved boron mobilized into culture solution.
+    evidence:
+    - source_ref: bayat2011-colemanite
+      supports: support
+      explanation: Primary study bayat2011-colemanite reports Dissolved boron mobilized into culture solution.
 curation_history:
-  - timestamp: '2026-10-11T09:02:18.252778+00:00'
-    curator: codex (GPT-6; codex)
-    action: CREATE
-    summary: Created IMA-grounded colemanite identity and qualified fungal leaching of mixed
-      ore without inherited commodity criticality.
+- timestamp: '2026-10-11T09:02:18.252778+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created IMA-grounded colemanite identity and qualified fungal leaching of mixed ore without inherited commodity criticality.
+- timestamp: '2026-10-22T10:40:29Z'
+  curator: claude
+  action: edit
+  summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and representative causal graph to colemanite.yaml.
 history_refs:
-  - history/records/colemanite/2026-10-11T090216Z-codex-500b71.yaml
+- history/records/colemanite/2026-10-11T090216Z-codex-500b71.yaml
+- history/records/colemanite/2026-10-22T104029Z-claude-0c6589.yaml

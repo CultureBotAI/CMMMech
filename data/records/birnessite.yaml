@@ -130,6 +130,27 @@ mechanisms:
     - source_ref: ferrier2022
       supports: partial
       explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during ATCC 1015 transformation of synthetic cobalt-bearing birnessite in Ferrier et al. (2022); cexA was not directly assayed.
+  - uniprot_accession: UniProtKB:G3Y4N5
+    entry_name: CEXA_ASPNA
+    protein_name: Citrate exporter A
+    gene_symbol: cexA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:380704
+      label: Aspergillus niger ATCC 1015
+    reference_proteome_id: UP000006706
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Plasma-membrane MFS citrate exporter CexA in Aspergillus niger ATCC 1015 that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal chelation/oxalate co-precipitation.
+    annotation_note: Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5 (CEXA_ASPNA; locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015 (NCBITaxon:380704; reference proteome UP000006706). Mechanism uses strain Aspergillus niger ATCC 1015 (NCBITaxon:380704) recorded under species taxon NCBITaxon:5061.
+    evidence:
+    - source_ref: ferrier2022
+      supports: partial
+      explanation: Representative strain-matched Aspergillus niger ATCC 1015 citrate exporter CexA for organic-acid excretion during transformation of synthetic Co-birnessite into lindbergite-assigned rosettes in Ferrier et al. (2022); cexA was not directly perturbed in the study.
   evidence:
   - source_ref: ferrier2022
     supports: support
@@ -299,6 +320,27 @@ causal_graphs:
     description: Reviewed Aspergillus niger plasma-membrane citrate exporter (UniProtKB:A0A254TZW7) representing the fungal organic-acid secretion machinery.
     protein_grounding_status: GROUNDED
     protein_examples:
+    - uniprot_accession: UniProtKB:G3Y4N5
+      entry_name: CEXA_ASPNA
+      protein_name: Citrate exporter A
+      gene_symbol: cexA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:380704
+        label: Aspergillus niger ATCC 1015
+      reference_proteome_id: UP000006706
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Plasma-membrane MFS citrate exporter CexA in Aspergillus niger ATCC 1015 that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal chelation/oxalate co-precipitation.
+      annotation_note: Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5 (CEXA_ASPNA; locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015 (NCBITaxon:380704; reference proteome UP000006706). Mechanism uses strain Aspergillus niger ATCC 1015 (NCBITaxon:380704) recorded under species taxon NCBITaxon:5061.
+      evidence:
+      - source_ref: ferrier2022
+        supports: partial
+        explanation: Representative strain-matched Aspergillus niger ATCC 1015 citrate exporter CexA for organic-acid excretion during transformation of synthetic Co-birnessite into lindbergite-assigned rosettes in Ferrier et al. (2022); cexA was not directly perturbed in the study.
     - uniprot_accession: UniProtKB:A0A254TZW7
       entry_name: CEXA_ASPNG
       protein_name: Citrate exporter A
@@ -379,8 +421,13 @@ curation_history:
   curator: claude
   action: edit
   summary: Added representative Aspergillus niger CexA (UniProtKB:A0A254TZW7) protein examples and two causal graphs for synthetic Na- and Co-birnessite transformation in birnessite.yaml.
+- timestamp: '2026-10-22T10:40:27Z'
+  curator: claude
+  action: edit
+  summary: Added strain-matched Aspergillus niger ATCC 1015 CexA (UniProtKB:G3Y4N5, CEXA_ASPNA) alongside UniProtKB:A0A254TZW7 in birnessite.yaml.
 history_refs:
 - history/records/birnessite/2026-10-12T004836Z-codex-f35e9c.yaml
 - history/records/birnessite/2026-10-12T012317Z-codex-aeaa14.yaml
 - history/records/birnessite/2026-10-12T015436Z-codex-a24dff.yaml
 - history/records/birnessite/2026-10-22T093021Z-claude-a31009.yaml
+- history/records/birnessite/2026-10-22T104027Z-claude-1e96c3.yaml
