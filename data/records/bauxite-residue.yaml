@@ -1,22 +1,14 @@
 id: cmmmech:bauxite-residue
 name: Bauxite residue (red mud)
 material_kind: secondary_resource
-description: The heterogeneous residue from alkaline Bayer processing of bauxite for alumina production,
-  commonly called red mud. It is distinct from bauxite ore, alumina commodity, aluminium element and any
-  single mineral species. The curated assay used material collected from the Ajka spill site; its composition
-  and treatment response do not define every bauxite residue. No criticality designation is inherited
-  from constituent elements.
+description: The heterogeneous residue from alkaline Bayer processing of bauxite for alumina production, commonly called red mud. It is distinct from bauxite ore, alumina commodity, aluminium element and any single mineral species. The curated assay used material collected from the Ajka spill site; its composition and treatment response do not define every bauxite residue. No criticality designation is inherited from constituent elements.
 sources:
 - id: urik2015
-  title: Urik, Bujdos, Milova-Ziakova, Mikusova, Slovak and Matus (2015). Aluminium leaching from red
-    mud by filamentous fungi. Journal of Inorganic Biochemistry 152:154-159. DOI 10.1016/j.jinorgbio.2015.08.022;
-    Sections 2.1-2.5, 3.1 and 3.3-3.5, Table 1 and Figures 3, 7-8.
+  title: Urik, Bujdos, Milova-Ziakova, Mikusova, Slovak and Matus (2015). Aluminium leaching from red mud by filamentous fungi. Journal of Inorganic Biochemistry 152:154-159. DOI 10.1016/j.jinorgbio.2015.08.022; Sections 2.1-2.5, 3.1 and 3.3-3.5, Table 1 and Figures 3, 7-8.
   url: https://doi.org/10.1016/j.jinorgbio.2015.08.022
   accessed_on: '2026-10-11'
 - id: urik2017_copy
-  title: Urik (2017). Interactions of toxic metals and metalloids with fungi, habilitation thesis; official
-    Brno University of Technology copy, Attachment E, PDF pages 80-85 reproducing the 2015 article, journal
-    pages 154-159. Same experiment, not independent replication.
+  title: Urik (2017). Interactions of toxic metals and metalloids with fungi, habilitation thesis; official Brno University of Technology copy, Attachment E, PDF pages 80-85 reproducing the 2015 article, journal pages 154-159. Same experiment, not independent replication.
   url: https://www.vut.cz/uredni-deska/habilitace?action=priloha&priloha=226417
   accessed_on: '2026-10-11'
 - id: ncbi_aspergillus
@@ -27,38 +19,12 @@ mechanisms:
 - id: fungal_leaching_ajka_residue
   name: Aspergillus-associated aluminium mobilization from Ajka bauxite residue
   process: bioleaching
+  description: Growing isolate G-10 mobilized aluminium from an Ajka red-mud sample while acidifying the medium and accumulating organic acids. Synthetic acid mixtures also leached aluminium, supporting extracellular chemical contributions without demonstrating a requirement for living-cell contact, a specific enzyme, or a mineral-specific dissolution pathway.
+  context: Material collected in October 2010 was air-dried, disaggregated and sieved below 0.2 mm. The selected assay used 0.2 g dry residue in 45 mL Sabouraud dextrose broth plus 5 mL suspension of approximately 10^6 spores/mL in 250 mL flasks, cultured statically in darkness at 25 degrees C for seven days. Medium was autoclaved before inoculation. Each condition had triplicate parallel experiments. Isolate G-10 was assigned to Aspergillus niger by morphology and a 612-bp ITS sequence with 99% similarity; the species identifier does not authenticate the isolate independently. Table 1 reports 6.97% Al in the dry feed. XRD identified hematite, calcite and quartz; Al-host phases remained unresolved. The experiment does not establish recovery of alumina or aluminium metal, nor industrial deployment.
   microbial: true
   organisms:
   - id: NCBITaxon:5061
     label: Aspergillus niger
-  description: Growing isolate G-10 mobilized aluminium from an Ajka red-mud sample while acidifying the
-    medium and accumulating organic acids. Synthetic acid mixtures also leached aluminium, supporting
-    extracellular chemical contributions without demonstrating a requirement for living-cell contact,
-    a specific enzyme, or a mineral-specific dissolution pathway.
-  context: Material collected in October 2010 was air-dried, disaggregated and sieved below 0.2 mm. The
-    selected assay used 0.2 g dry residue in 45 mL Sabouraud dextrose broth plus 5 mL suspension of approximately
-    10^6 spores/mL in 250 mL flasks, cultured statically in darkness at 25 degrees C for seven days. Medium
-    was autoclaved before inoculation. Each condition had triplicate parallel experiments. Isolate G-10
-    was assigned to Aspergillus niger by morphology and a 612-bp ITS sequence with 99% similarity; the
-    species identifier does not authenticate the isolate independently. Table 1 reports 6.97% Al in the
-    dry feed. XRD identified hematite, calcite and quartz; Al-host phases remained unresolved. The experiment
-    does not establish recovery of alumina or aluminium metal, nor industrial deployment.
-  evidence:
-  - source_ref: urik2015
-    supports: support
-    explanation: Sections 2.3, 2.5 and 3.3 with Figure 3 report approximately 141 mg/L Al in 0.45-micrometre
-      filtrate after seven days with G-10. ICP-OES measures filter-passing total Al, not free-ion speciation.
-      No-fungus controls were reported undetected or below detection, without a numerical Al detection
-      limit. Section 3.4 and Figure 7a report final pH 2.3 and oxalic/citric acid concentrations of 16.0/28.6
-      mmol/L. These are release and culture-chemistry outcomes, not a purified-product yield.
-  - source_ref: urik2015
-    supports: partial
-    explanation: 'Sections 2.4 and 3.4 with Figure 8: synthetic mixture B, representing the day-five organic-acid
-      profile, produced approximately 142 mg/L Al. These mixtures used sodium salts, HCl-adjusted pH,
-      0.2 g residue in 50 mL and two days at 25 degrees C. The differing media and incubation times prevent
-      a matched kinetic comparison with growing fungi. Proton effects, complexation and other metabolites
-      were not independently isolated. Section 3.1 reports calcite loss but warns that XRD does not resolve
-      minor or amorphous phases; no particular Al-bearing mineral is assigned as the dissolved substrate.'
   protein_examples:
   - uniprot_accession: UniProtKB:A0A254TZW7
     entry_name: CEXA_ASPNG
@@ -74,21 +40,23 @@ mechanisms:
     - InterPro:IPR036259
     pfam_ids:
     - Pfam:PF07690
-    functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized
-      citric acid into the extracellular medium, driving organic-acid acidification and metal chelation.
-    annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus
-      niger (NCBITaxon:5061).
+    functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal chelation.
+    annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061).
     evidence:
     - source_ref: urik2015
       supports: partial
-      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during
-        isolate G-10 bioleaching of Ajka bauxite residue in Urik et al. (2015); cexA was not mutated.
+      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during isolate G-10 bioleaching of Ajka bauxite residue in Urik et al. (2015); cexA was not mutated.
+  evidence:
+  - source_ref: urik2015
+    supports: support
+    explanation: Sections 2.3, 2.5 and 3.3 with Figure 3 report approximately 141 mg/L Al in 0.45-micrometre filtrate after seven days with G-10. ICP-OES measures filter-passing total Al, not free-ion speciation. No-fungus controls were reported undetected or below detection, without a numerical Al detection limit. Section 3.4 and Figure 7a report final pH 2.3 and oxalic/citric acid concentrations of 16.0/28.6 mmol/L. These are release and culture-chemistry outcomes, not a purified-product yield.
+  - source_ref: urik2015
+    supports: partial
+    explanation: 'Sections 2.4 and 3.4 with Figure 8: synthetic mixture B, representing the day-five organic-acid profile, produced approximately 142 mg/L Al. These mixtures used sodium salts, HCl-adjusted pH, 0.2 g residue in 50 mL and two days at 25 degrees C. The differing media and incubation times prevent a matched kinetic comparison with growing fungi. Proton effects, complexation and other metabolites were not independently isolated. Section 3.1 reports calcite loss but warns that XRD does not resolve minor or amorphous phases; no particular Al-bearing mineral is assigned as the dissolved substrate.'
 causal_graphs:
 - id: fungal_leaching_ajka_residue_graph
   name: Aspergillus niger G-10 organic-acid bioleaching of aluminium from Ajka bauxite residue
-  description: Causal pathway linking Aspergillus niger G-10 citric and oxalic acid secretion (28.6 mmol/L
-    citric acid, 16.0 mmol/L oxalic acid, pH 2.3) to dissolution of Al-bearing phases in Ajka red mud
-    and mobilization of ~141 mg/L filter-passing aluminium.
+  description: Causal pathway linking Aspergillus niger G-10 citric and oxalic acid secretion (28.6 mmol/L citric acid, 16.0 mmol/L oxalic acid, pH 2.3) to dissolution of Al-bearing phases in Ajka red mud and mobilization of ~141 mg/L filter-passing aluminium.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: fungal_leaching_ajka_residue
   nodes:
@@ -96,8 +64,7 @@ causal_graphs:
     label: Citrate exporter CexA (representative organic-acid efflux transporter)
     node_type: GENE_OR_PROTEIN
     gene_symbol: cexA
-    description: Reviewed Aspergillus niger plasma-membrane citrate exporter (UniProtKB:A0A254TZW7) representing
-      the fungal organic-acid secretion machinery.
+    description: Reviewed Aspergillus niger plasma-membrane citrate exporter (UniProtKB:A0A254TZW7) representing the fungal organic-acid secretion machinery.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A0A254TZW7
@@ -114,27 +81,21 @@ causal_graphs:
       - InterPro:IPR036259
       pfam_ids:
       - Pfam:PF07690
-      functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized
-        citric acid into the extracellular medium, driving organic-acid acidification and metal chelation.
-      annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus
-        niger (NCBITaxon:5061).
+      functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal chelation.
+      annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061).
       evidence:
       - source_ref: urik2015
         supports: partial
-        explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion
-          during isolate G-10 bioleaching of Ajka bauxite residue in Urik et al. (2015); cexA was not
-          mutated.
+        explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during isolate G-10 bioleaching of Ajka bauxite residue in Urik et al. (2015); cexA was not mutated.
   - id: secreted_organic_acids
     label: Secreted citric acid (28.6 mmol/L) and oxalic acid (16.0 mmol/L) at pH 2.3
     node_type: CHEMICAL_ENTITY
-    description: Extracellular organic acids accumulated by Aspergillus niger isolate G-10 in Sabouraud
-      dextrose broth after 7 days.
+    description: Extracellular organic acids accumulated by Aspergillus niger isolate G-10 in Sabouraud dextrose broth after 7 days.
     protein_grounding_status: NOT_APPLICABLE
   - id: ajka_bauxite_residue_feed
     label: Ajka bauxite residue (red mud, <0.2 mm, 6.97% Al)
     node_type: MATERIAL_OR_PHASE
-    description: Air-dried, sieved Ajka red mud (0.2 g in 50 mL culture) containing hematite, calcite,
-      quartz, and unresolved Al-host phases.
+    description: Air-dried, sieved Ajka red mud (0.2 g in 50 mL culture) containing hematite, calcite, quartz, and unresolved Al-host phases.
     protein_grounding_status: NOT_APPLICABLE
   - id: filtrate_mobilized_aluminium
     label: Filter-passing dissolved/complexed aluminium (~141 mg/L Al in 0.45-um filtrate)
@@ -150,20 +111,16 @@ causal_graphs:
     evidence:
     - source_ref: urik2015
       supports: partial
-      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during
-        isolate G-10 bioleaching of Ajka bauxite residue in Urik et al. (2015); cexA was not mutated.
+      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during isolate G-10 bioleaching of Ajka bauxite residue in Urik et al. (2015); cexA was not mutated.
   - source: secreted_organic_acids
     target: ajka_bauxite_residue_feed
-    predicate: chelates
+    predicate: solubilizes
     relationship: acidolysis and citrate/oxalate complexation of red-mud Al phases
-    description: Secreted citric and oxalic acids lower culture pH to 2.3, dissolve calcite, and leach
-      aluminium from Ajka bauxite residue.
+    description: Secreted citric and oxalic acids lower culture pH to 2.3, dissolve calcite, and leach aluminium from Ajka bauxite residue.
     evidence:
     - source_ref: urik2015
       supports: support
-      explanation: Sections 3.4 and Figure 7a/8 in Urik et al. (2015) measure 28.6 mmol/L citric acid
-        and 16.0 mmol/L oxalic acid at pH 2.3 and confirm comparable Al leaching (~142 mg/L) by a synthetic
-        organic-acid mixture.
+      explanation: Sections 3.4 and Figure 7a/8 in Urik et al. (2015) measure 28.6 mmol/L citric acid and 16.0 mmol/L oxalic acid at pH 2.3 and confirm comparable Al leaching (~142 mg/L) by a synthetic organic-acid mixture.
   - source: ajka_bauxite_residue_feed
     target: filtrate_mobilized_aluminium
     predicate: produces
@@ -172,19 +129,21 @@ causal_graphs:
     evidence:
     - source_ref: urik2015
       supports: support
-      explanation: Section 3.3 and Figure 3 in Urik et al. (2015) report ~141 mg/L Al in 0.45-um filtrate
-        after 7 days with A. niger G-10 versus undetected Al in no-fungus controls.
+      explanation: Section 3.3 and Figure 3 in Urik et al. (2015) report ~141 mg/L Al in 0.45-um filtrate after 7 days with A. niger G-10 versus undetected Al in no-fungus controls.
 curation_history:
 - timestamp: '2026-10-11T09:02:35.258572+00:00'
   curator: Codex (GPT-6; Codex)
   action: CREATE
-  summary: Created bauxite-residue identity and source-specific fungal leaching evidence, retaining phase
-    and chemical-control limitations.
+  summary: Created bauxite-residue identity and source-specific fungal leaching evidence, retaining phase and chemical-control limitations.
 - timestamp: '2026-10-21T18:46:53Z'
   curator: claude
   action: EDIT
-  summary: Added representative Aspergillus niger CexA (UniProtKB:A0A254TZW7) protein example and causal
-    graph for Ajka bauxite residue Al bioleaching.
+  summary: Added representative Aspergillus niger CexA (UniProtKB:A0A254TZW7) protein example and causal graph for Ajka bauxite residue Al bioleaching.
+- timestamp: '2026-10-22T09:30:20Z'
+  curator: claude
+  action: edit
+  summary: 'Upgraded organic-acid red-mud attack edge in bauxite-residue.yaml from chelates to solubilizes (Issue #807, PR #811).'
 history_refs:
 - history/records/bauxite-residue/2026-10-11T090223Z-codex-5e1966.yaml
 - history/records/bauxite-residue/2026-10-21T184653Z-claude-81674c.yaml
+- history/records/bauxite-residue/2026-10-22T093020Z-claude-133187.yaml

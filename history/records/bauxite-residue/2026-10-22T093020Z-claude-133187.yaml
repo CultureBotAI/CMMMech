@@ -1,0 +1,30 @@
+history_version: 1
+target:
+  kind: record
+  slug: bauxite-residue
+  path: data/records/bauxite-residue.yaml
+session:
+  id: 2026-10-22T093020Z-claude-133187
+  timestamp: '2026-10-22T09:30:20Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Upgraded organic-acid red-mud attack edge in bauxite-residue.yaml from chelates
+    to solubilizes (Issue #807, PR #811).'
+  details: Replaced chelates with solubilizes on secreted_organic_acids -> ajka_bauxite_residue_feed
+    in fungal_leaching_ajka_residue_graph to capture combined acidolysis and organic-acid
+    mobilization of aluminium from Ajka bauxite residue in Urik et al. (2015).
+  sections:
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/807
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/811

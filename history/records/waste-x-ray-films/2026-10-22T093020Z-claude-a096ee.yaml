@@ -1,0 +1,31 @@
+history_version: 1
+target:
+  kind: record
+  slug: waste-x-ray-films
+  path: data/records/waste-x-ray-films.yaml
+session:
+  id: 2026-10-22T093020Z-claude-a096ee
+  timestamp: '2026-10-22T09:30:20Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Upgraded protease-to-gelatin causal graph edges in waste-x-ray-films.yaml from
+    acts_on to hydrolyzes (Issue #807, PR #811).'
+  details: Replaced generic acts_on with specific hydrolyzes on both Conidiobolus coronatus
+    (Shankar et al. 2010) and Bacillus spizizenii ATCC 6633 (Nakiboglu et al. 2001) alkaline
+    protease gelatin-stripping edges now that CausalEdgePredicateEnum includes hydrolyzes
+    (cmmmech-infra-0003).
+  sections:
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/807
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/811

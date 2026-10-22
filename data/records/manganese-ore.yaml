@@ -1,220 +1,206 @@
 id: cmmmech:manganese-ore
 name: Manganese ore
 material_kind: primary_resource
-description: Manganese ore here denotes natural manganese-bearing geological feed, including the mixed
-  ore excavated from an abandoned Michigan mine in the curated study. It is a primary resource, distinct
-  from the pyrolusite mineral species, elemental manganese, electrolytic manganese products and processing
-  residues. The source calls its sample pyrolusite ore, but reports several manganese minerals. This
-  record does not define a traded product grade or inherit constituent criticality.
-mechanisms:
-- id: iron_assisted_two_stage_manganese_leaching
-  name: Manganese-ore leaching with biologically mobilized iron
-  process: bioleaching
-  microbial: true
-  description: A mixed-culture iron-leaching stage generated Fe(II)-bearing liquor used to mobilize
-    manganese from a separate mixed-ore bed. Laboratory results support manganese release in this biologically
-    supplied reductant system. The authors report carbonate suppression relative to prior single-stage
-    work, but conflicting figure annotations leave that comparison unresolved. The study does not establish
-    a sterile chemical second stage, zero carbonate formation, or commercial recovery performance.
-  context: 'Living mixed metal-reducing cultures originated from a fen in Houghton County, Michigan,
-    and previously adapted cultures inoculated the iron stage. No individual strain or causal community
-    member is resolved here. Fermented Typha latifolia biomass plus 5 g/L sucrose supplied organic nutrient
-    liquid. Methods 2.4 and Figure 5 describe two 250 mL Buechner flasks in series: the drawing labels
-    200 g iron feed and 350 g manganese ore. Methods 2.1 identifies the iron feed as tailings from an
-    unnamed iron-ore production facility, smaller than 0.15 mm; the manganese ore came from an abandoned
-    Keweenaw County mine and was crushed below 3 mm. After seven days of adaptation, 300 mL fresh nutrient
-    per week was supplied in five 60 mL increments. Packed beds, fermentation locks and a submerged
-    manganese-flask outlet were used to maintain anaerobic conditions. Experiments were run in triplicate.
-    A numerical flask incubation temperature is not specified in these methods; Section 3.6 discusses
-    ambient-temperature operation. Reported operating pH was 4.7 +/- 0.7 in the iron stage and 4.4 +/-
-    0.8 in the manganese stage. Overflow Mn was measured by colorimetric periodate oxidation and Fe(II)
-    by 1,10-phenanthroline spectrophotometry; filtration and operational dissolved-fraction details
-    are not supplied. These assays do not resolve the mineral phase contributing each metal.'
-  evidence:
-  - source_ref: borkar2026
-    supports: support
-    explanation: Methods 2.1 and Table 1 report ore XRD proportions of 31.1 wt% pyrolusite, 26.5% macfallite,
-      22.9% braunite and 19.5% manganite. Table 2 reports 53 wt% Mn calculated from those XRD results,
-      not an independently assayed ore grade. No mineral-specific release fraction is measured.
-  - source_ref: borkar2026
-    supports: support
-    explanation: Section 3.2 and Figures 8–10 report 5.92 g cumulative Mn over 123 days and a maximum
-      overflow Mn concentration of 1792 mg/L in the two-stage flask experiment. Maximum concentration,
-      cumulative mobilized mass and recovered-product yield are different quantities; no new yield is
-      calculated here.
-  - source_ref: borkar2026
-    supports: partial
-    explanation: Sections 3.1–3.3 compare the two-stage experiment with single-stage biotic and abiotic
-      experiments from earlier studies, references 7 and 13. They are historical comparisons, not matched
-      contemporaneous two-stage controls. The paper does not provide a sterile two-stage or matched
-      chemical-Fe(II) comparator that isolates microbial necessity or the relative acid and iron contributions.
-      Section 3.6 explicitly allows microbial carryover into the manganese stage and states that dominant
-      organisms and relative activities were not assessed. Thus the second stage is not established
-      as cell-free, and no taxon-specific or mineral-specific causal claim is made.
-  - source_ref: borkar2026
-    supports: partial
-    explanation: Section 3.3 states that two-stage residue lacks manganese-carbonate peaks, in contrast
-      with prior single-stage work. Figure 11, however, places black rhodochrosite-labelled markers
-      above both traces, including approximately 24.2 and 31.4 degrees in the upper two-stage trace.
-      The text and figure annotations therefore conflict. This record does not decide whether those
-      markers indicate confirmed carbonate detection or misplaced annotations; raw diffraction data
-      or an author clarification would be needed. Without a reported detection limit or carbon balance,
-      neither complete carbonate absence nor cessation of microbial CO2 production is established. Iron-mediated
-      reduction and carbonate suppression remain incompletely isolated explanations.
-  - source_ref: borkar2026
-    supports: partial
-    explanation: Methods 2.5 and Table 6 describe 19 L fermentation, iron and manganese units, with
-      20 kg ore charges in the leaching tanks, flow of 5 L/day and downstream 12 L oxidation/settling
-      tanks. Figure 12 labels Mn at 767 mg/L leaving manganese leaching and 98 mg/L after the iron stage
-      of the recirculating flow; 98 mg/L is not the immediate oxidation-tank effluent, which is labelled
-      152 mg/L. The text's calculated 3.35 g/day available for precipitation is therefore not accepted
-      as a directly weighed daily recovery or a closed full-process mass balance.
-  - source_ref: borkar2026
-    supports: support
-    explanation: Section 3.5 describes downstream solids dried at 100 degrees C for 24 hours, washed
-      and roasted at 750 degrees C in an oxidizing atmosphere. Figure 13 assigns the main roasted phase
-      to Mn3O4. Table 7 reports 93 wt% Mn3O4 on an oxide-equivalent basis converted from acid-digest
-      ICP elemental analysis, as its footnote specifies. It is not a direct quantitative XRD phase-purity
-      measurement, battery qualification, or electrolytic MnO2 product. Absence of carbonate peaks after
-      roasting does not establish absence before heating.
-  - source_ref: borkar2026
-    supports: partial
-    explanation: Section 3.6 explicitly identifies the downstream processing as laboratory-scale characterization,
-      with optimization, scale-up, economics and long-term industrial stability left for future work.
-      The 19 L apparatus is bench-scale despite the pilot terminology. This and the iron-ore-tailings
-      record represent the same linked experiment.
-- id: fungal_nkamouna_laterite_transformation
-  name: Fungal transformation of mixed Nkamouna manganiferous laterite
-  process: biomineralization
-  microbial: true
-  description: Living Aspergillus niger ATCC 1015 cultures were associated with surface-crust formation
-    and a source-assigned manganese oxalate dihydrate phase in recovered debris from natural cobalt-bearing
-    Nkamouna laterite. Residual source minerals and untransformed particles remained. Qualitative elemental
-    signals associate cobalt and nickel with crusts, but do not establish crystallographic substitution,
-    selective extraction from one host phase, oxidation-state changes or isolated-metal recovery.
-  context: Ferrier et al. used natural laterite obtained directly from Nkamouna, Cameroon, supplied by
-    D. S. Mulroy, and broken into fragments and powder with a mortar and pestle. Powder was sieved below
-    90 micrometers; the mineral preparation was oven-sterilized at 105 degrees C for at least 24 hours.
-    Sterile powder was mixed into molten malt extract agar at approximately 60 degrees C, at 0.2% w/v,
-    with approximately 25 mL per 90-mm plate. Separate fragments were placed in wells in agar; their dimensions
-    and mass per plate are not specified. Plates received a 5-mm plug from the growing edge of an A. niger
-    ATCC 1015 colony and were incubated for 14 days at 25 degrees C in darkness. NCBITaxon:5061 identifies
-    the species; the reported experimental strain is separately grounded by the ATCC catalogue, without
-    verifying the experimental culture by sequencing. Matched uninoculated mineral plates and mineral-free
-    fungal and abiotic plates were included. After biomass removal and surface-pH measurement, powder
-    debris was washed from agar in water at approximately 70 degrees C, allowed to settle, washed twice
-    again, and dried in a desiccator for at least 48 hours. The recovered dry-phase identity does not
-    establish its hydration state in the living culture. These were laboratory plate assays, not an industrial
-    process.
-  organisms:
-  - id: NCBITaxon:5061
-    label: Aspergillus niger
-  evidence:
-  - source_ref: ferrier2022
-    supports: support
-    explanation: 'Introduction and Minerals methods, Table 1 and Figure 5A: the mixed natural feed contains
-      source-assigned lithiophorite and cryptomelane. Partial XRF composition is reported on the table''s
-      mixed oxide/element percentage basis, including 30.91% MnO, 27.56% Fe2O3, 16.24% Al2O3, 5.04% Co
-      and 2.87% Ni; MnO is an oxide-equivalent assay entry, not proof of an MnO mineral phase. No mineral-specific
-      metal inventory or assay uncertainty is supplied. This feed falls within the existing geological
-      manganese-ore resource scope, rather than defining a pure mineral, product grade or separate cobalt
-      element record.'
-  - source_ref: ferrier2022
-    supports: support
-    explanation: Figures 1 and 3 show crusts on inoculated fragments and powder relative to uninoculated
-      controls. Figures 2B and 4B show Mn, Co and Ni signals associated with sampled crusts. Figure 5B,
-      compared with 5A, is assigned by the authors to residual lithiophorite and cryptomelane plus manganese
-      oxalate dihydrate (lindbergite). Results explicitly state that powder transformation was incomplete
-      and many particles showed no morphological change. SEM/EDXA and bulk recovered-powder XRPD support
-      this narrow association, not quantitative phase fractions, a pure product or equal attack on each
-      source mineral.
-  - source_ref: ferrier2022
-    supports: partial
-    explanation: Results and Discussion describe fragment crusts as lacking Al and containing Mg, but
-      the original Figure 2B retains an Al label and displays no labelled Mg peak. Those stronger elemental
-      absence/presence claims remain unresolved. Figure 5 explicitly concerns recovered powder; it is
-      not a separately displayed fragment-crust diffraction result, despite broader Discussion wording.
-      Powder Figure 4B also retains Al, and Ca-rich bipyramidal structures in Figure 4C are inferred as
-      weddellite by morphology/composition without a separately displayed diffraction identification.
-      None of these observations is used to assert complete Al/Fe removal or confirmed Mg incorporation.
-  - source_ref: ferrier2022
-    supports: support
-    explanation: Table 2, not the Table 1 cross-reference in Results, reports 14-day agar-surface pH beneath
-      laterite-grown biomass of 4.09 +/- 0.29 (mean +/- SD, n=5), versus 5.92 +/- 0.04 in uninoculated
-      laterite plates (n=3). Fungal mineral-free controls were 2.85 +/- 0.06 (n=4). The reported 97.7%
-      tolerance index is a dry fungal-biomass ratio to mineral-free growth, and the 1.42 growth-rate ratio
-      uses colony expansion on days 2–5; neither quantity measures ore transformation or metal recovery.
-  - source_ref: ferrier2022
-    supports: partial
-    explanation: Experimental procedures and Discussion provide no pH-matched acid-only, purified-oxalate,
-      killed-biomass or cell-free-metabolite comparison for the Nkamouna experiment. Oxalate-mediated
-      dissolution/precipitation is an interpretation supported by product assignment and the organism's
-      known physiology, not a directly quantified secretion or exclusive molecular pathway. Co(III)-to-Co(II)
-      reduction is proposed without oxidation-state spectroscopy; EDXA does not establish valence or distinguish
-      lattice incorporation from associated phases. Dissolved-metal, residual-feed and recovered-product
-      mass balances are absent. Figure 5 gives typical patterns from several determinations without resolving
-      independent culture versus analytical replication; heating, washing and drying may affect recovered
-      phases.
-  - source_ref: ferrier2022
-    supports: context_only
-    explanation: Figures 6–8 and the separate synthetic Co-birnessite arm are not measurements of natural
-      laterite. Their complete-transformation language and pooled diffraction subsample cannot be transferred
-      to the incomplete Nkamouna result. Figure 8's heading says Nkamouna laterite, while its detailed
-      caption and methods identify synthetic Co-birnessite. The Introduction's attribution of a Mn(III)
-      oxalate intermediate to Wei2012 is not accepted as a measurement in this experiment. No criticality
-      designation or industrial performance is inferred.
-  - source_ref: ncbi_aniger_20261012
-    supports: context_only
-    explanation: Fresh NCBI taxonomy response resolves TaxID 5061 to Aspergillus niger at species rank;
-      it does not authenticate the culture used in the experiment.
-  - source_ref: atcc1015_20261012
-    supports: context_only
-    explanation: The current ATCC 1015 catalogue identifies Aspergillus niger and strain designation A1144
-      3528.7, including CBS 113.46 among aliases. This validates the collection-label mapping, not a separate
-      replication of the laterite assay.
+description: Manganese ore here denotes natural manganese-bearing geological feed, including the mixed ore excavated from an abandoned Michigan mine in the curated study. It is a primary resource, distinct from the pyrolusite mineral species, elemental manganese, electrolytic manganese products and processing residues. The source calls its sample pyrolusite ore, but reports several manganese minerals. This record does not define a traded product grade or inherit constituent criticality.
 sources:
 - id: borkar2026
-  title: Borkar, Sharma, Rane, Boafo and Eisele (2026). Leaching of Manganese Using Bio-solubilized
-    Iron Reductant to Prevent Manganese Carbonate Formation. Mining, Metallurgy & Exploration 43:2019–2030.
-    DOI 10.1007/s42461-026-01506-2; Methods 2.1–2.6, Tables 1–7, Figures 5–13 and Results 3.1–3.6. Full
-    12-page primary article and figures inspected.
+  title: Borkar, Sharma, Rane, Boafo and Eisele (2026). Leaching of Manganese Using Bio-solubilized Iron Reductant to Prevent Manganese Carbonate Formation. Mining, Metallurgy & Exploration 43:2019–2030. DOI 10.1007/s42461-026-01506-2; Methods 2.1–2.6, Tables 1–7, Figures 5–13 and Results 3.1–3.6. Full 12-page primary article and figures inspected.
   url: https://doi.org/10.1007/s42461-026-01506-2
   accessed_on: '2026-10-11'
 - id: ferrier2022
-  title: Ferrier J, Csetenyi L and Gadd GM (2022; online 6 May 2021). Fungal transformation of natural
-    and synthetic cobalt-bearing manganese oxides and implications for cobalt biogeochemistry. Environmental
-    Microbiology 24(2):667–677. DOI10.1111/1462-2920.15526; complete published article, Figures 1–8, Tables
-    1–2 and Experimental procedures.
+  title: Ferrier J, Csetenyi L and Gadd GM (2022; online 6 May 2021). Fungal transformation of natural and synthetic cobalt-bearing manganese oxides and implications for cobalt biogeochemistry. Environmental Microbiology 24(2):667–677. DOI10.1111/1462-2920.15526; complete published article, Figures 1–8, Tables 1–2 and Experimental procedures.
   url: https://doi.org/10.1111/1462-2920.15526
   accessed_on: '2026-10-12'
 - id: ncbi_aniger_20261012
-  title: NCBI Taxonomy 5061 — Aspergillus niger, species rank; current Datasets response checked 12 October
-    2026.
+  title: NCBI Taxonomy 5061 — Aspergillus niger, species rank; current Datasets response checked 12 October 2026.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=Info
   accessed_on: '2026-10-12'
 - id: atcc1015_20261012
   title: ATCC 1015 — Aspergillus niger van Tieghem; A1144 3528.7, collection strain context.
   url: https://www.atcc.org/products/1015
   accessed_on: '2026-10-12'
+mechanisms:
+- id: iron_assisted_two_stage_manganese_leaching
+  name: Manganese-ore leaching with biologically mobilized iron
+  process: bioleaching
+  description: A mixed-culture iron-leaching stage generated Fe(II)-bearing liquor used to mobilize manganese from a separate mixed-ore bed. Laboratory results support manganese release in this biologically supplied reductant system. The authors report carbonate suppression relative to prior single-stage work, but conflicting figure annotations leave that comparison unresolved. The study does not establish a sterile chemical second stage, zero carbonate formation, or commercial recovery performance.
+  context: 'Living mixed metal-reducing cultures originated from a fen in Houghton County, Michigan, and previously adapted cultures inoculated the iron stage. No individual strain or causal community member is resolved here. Fermented Typha latifolia biomass plus 5 g/L sucrose supplied organic nutrient liquid. Methods 2.4 and Figure 5 describe two 250 mL Buechner flasks in series: the drawing labels 200 g iron feed and 350 g manganese ore. Methods 2.1 identifies the iron feed as tailings from an unnamed iron-ore production facility, smaller than 0.15 mm; the manganese ore came from an abandoned Keweenaw County mine and was crushed below 3 mm. After seven days of adaptation, 300 mL fresh nutrient per week was supplied in five 60 mL increments. Packed beds, fermentation locks and a submerged manganese-flask outlet were used to maintain anaerobic conditions. Experiments were run in triplicate. A numerical flask incubation temperature is not specified in these methods; Section 3.6 discusses
+    ambient-temperature operation. Reported operating pH was 4.7 +/- 0.7 in the iron stage and 4.4 +/- 0.8 in the manganese stage. Overflow Mn was measured by colorimetric periodate oxidation and Fe(II) by 1,10-phenanthroline spectrophotometry; filtration and operational dissolved-fraction details are not supplied. These assays do not resolve the mineral phase contributing each metal.'
+  microbial: true
+  evidence:
+  - source_ref: borkar2026
+    supports: support
+    explanation: Methods 2.1 and Table 1 report ore XRD proportions of 31.1 wt% pyrolusite, 26.5% macfallite, 22.9% braunite and 19.5% manganite. Table 2 reports 53 wt% Mn calculated from those XRD results, not an independently assayed ore grade. No mineral-specific release fraction is measured.
+  - source_ref: borkar2026
+    supports: support
+    explanation: Section 3.2 and Figures 8–10 report 5.92 g cumulative Mn over 123 days and a maximum overflow Mn concentration of 1792 mg/L in the two-stage flask experiment. Maximum concentration, cumulative mobilized mass and recovered-product yield are different quantities; no new yield is calculated here.
+  - source_ref: borkar2026
+    supports: partial
+    explanation: Sections 3.1–3.3 compare the two-stage experiment with single-stage biotic and abiotic experiments from earlier studies, references 7 and 13. They are historical comparisons, not matched contemporaneous two-stage controls. The paper does not provide a sterile two-stage or matched chemical-Fe(II) comparator that isolates microbial necessity or the relative acid and iron contributions. Section 3.6 explicitly allows microbial carryover into the manganese stage and states that dominant organisms and relative activities were not assessed. Thus the second stage is not established as cell-free, and no taxon-specific or mineral-specific causal claim is made.
+  - source_ref: borkar2026
+    supports: partial
+    explanation: Section 3.3 states that two-stage residue lacks manganese-carbonate peaks, in contrast with prior single-stage work. Figure 11, however, places black rhodochrosite-labelled markers above both traces, including approximately 24.2 and 31.4 degrees in the upper two-stage trace. The text and figure annotations therefore conflict. This record does not decide whether those markers indicate confirmed carbonate detection or misplaced annotations; raw diffraction data or an author clarification would be needed. Without a reported detection limit or carbon balance, neither complete carbonate absence nor cessation of microbial CO2 production is established. Iron-mediated reduction and carbonate suppression remain incompletely isolated explanations.
+  - source_ref: borkar2026
+    supports: partial
+    explanation: Methods 2.5 and Table 6 describe 19 L fermentation, iron and manganese units, with 20 kg ore charges in the leaching tanks, flow of 5 L/day and downstream 12 L oxidation/settling tanks. Figure 12 labels Mn at 767 mg/L leaving manganese leaching and 98 mg/L after the iron stage of the recirculating flow; 98 mg/L is not the immediate oxidation-tank effluent, which is labelled 152 mg/L. The text's calculated 3.35 g/day available for precipitation is therefore not accepted as a directly weighed daily recovery or a closed full-process mass balance.
+  - source_ref: borkar2026
+    supports: support
+    explanation: Section 3.5 describes downstream solids dried at 100 degrees C for 24 hours, washed and roasted at 750 degrees C in an oxidizing atmosphere. Figure 13 assigns the main roasted phase to Mn3O4. Table 7 reports 93 wt% Mn3O4 on an oxide-equivalent basis converted from acid-digest ICP elemental analysis, as its footnote specifies. It is not a direct quantitative XRD phase-purity measurement, battery qualification, or electrolytic MnO2 product. Absence of carbonate peaks after roasting does not establish absence before heating.
+  - source_ref: borkar2026
+    supports: partial
+    explanation: Section 3.6 explicitly identifies the downstream processing as laboratory-scale characterization, with optimization, scale-up, economics and long-term industrial stability left for future work. The 19 L apparatus is bench-scale despite the pilot terminology. This and the iron-ore-tailings record represent the same linked experiment.
+- id: fungal_nkamouna_laterite_transformation
+  name: Fungal transformation of mixed Nkamouna manganiferous laterite
+  process: biomineralization
+  description: Living Aspergillus niger ATCC 1015 cultures were associated with surface-crust formation and a source-assigned manganese oxalate dihydrate phase in recovered debris from natural cobalt-bearing Nkamouna laterite. Residual source minerals and untransformed particles remained. Qualitative elemental signals associate cobalt and nickel with crusts, but do not establish crystallographic substitution, selective extraction from one host phase, oxidation-state changes or isolated-metal recovery.
+  context: Ferrier et al. used natural laterite obtained directly from Nkamouna, Cameroon, supplied by D. S. Mulroy, and broken into fragments and powder with a mortar and pestle. Powder was sieved below 90 micrometers; the mineral preparation was oven-sterilized at 105 degrees C for at least 24 hours. Sterile powder was mixed into molten malt extract agar at approximately 60 degrees C, at 0.2% w/v, with approximately 25 mL per 90-mm plate. Separate fragments were placed in wells in agar; their dimensions and mass per plate are not specified. Plates received a 5-mm plug from the growing edge of an A. niger ATCC 1015 colony and were incubated for 14 days at 25 degrees C in darkness. NCBITaxon:5061 identifies the species; the reported experimental strain is separately grounded by the ATCC catalogue, without verifying the experimental culture by sequencing. Matched uninoculated mineral plates and mineral-free fungal and abiotic plates were included. After biomass removal and surface-pH measurement,
+    powder debris was washed from agar in water at approximately 70 degrees C, allowed to settle, washed twice again, and dried in a desiccator for at least 48 hours. The recovered dry-phase identity does not establish its hydration state in the living culture. These were laboratory plate assays, not an industrial process.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:5061
+    label: Aspergillus niger
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A254TZW7
+    entry_name: CEXA_ASPNG
+    protein_name: Citrate exporter A
+    gene_symbol: cexA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:5061
+      label: Aspergillus niger
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal chelation.
+    annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061).
+    evidence:
+    - source_ref: ferrier2022
+      supports: partial
+      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during ATCC 1015 transformation of natural Nkamouna manganiferous laterite in Ferrier et al. (2022); cexA was not directly assayed.
+  evidence:
+  - source_ref: ferrier2022
+    supports: support
+    explanation: 'Introduction and Minerals methods, Table 1 and Figure 5A: the mixed natural feed contains source-assigned lithiophorite and cryptomelane. Partial XRF composition is reported on the table''s mixed oxide/element percentage basis, including 30.91% MnO, 27.56% Fe2O3, 16.24% Al2O3, 5.04% Co and 2.87% Ni; MnO is an oxide-equivalent assay entry, not proof of an MnO mineral phase. No mineral-specific metal inventory or assay uncertainty is supplied. This feed falls within the existing geological manganese-ore resource scope, rather than defining a pure mineral, product grade or separate cobalt element record.'
+  - source_ref: ferrier2022
+    supports: support
+    explanation: Figures 1 and 3 show crusts on inoculated fragments and powder relative to uninoculated controls. Figures 2B and 4B show Mn, Co and Ni signals associated with sampled crusts. Figure 5B, compared with 5A, is assigned by the authors to residual lithiophorite and cryptomelane plus manganese oxalate dihydrate (lindbergite). Results explicitly state that powder transformation was incomplete and many particles showed no morphological change. SEM/EDXA and bulk recovered-powder XRPD support this narrow association, not quantitative phase fractions, a pure product or equal attack on each source mineral.
+  - source_ref: ferrier2022
+    supports: partial
+    explanation: Results and Discussion describe fragment crusts as lacking Al and containing Mg, but the original Figure 2B retains an Al label and displays no labelled Mg peak. Those stronger elemental absence/presence claims remain unresolved. Figure 5 explicitly concerns recovered powder; it is not a separately displayed fragment-crust diffraction result, despite broader Discussion wording. Powder Figure 4B also retains Al, and Ca-rich bipyramidal structures in Figure 4C are inferred as weddellite by morphology/composition without a separately displayed diffraction identification. None of these observations is used to assert complete Al/Fe removal or confirmed Mg incorporation.
+  - source_ref: ferrier2022
+    supports: support
+    explanation: Table 2, not the Table 1 cross-reference in Results, reports 14-day agar-surface pH beneath laterite-grown biomass of 4.09 +/- 0.29 (mean +/- SD, n=5), versus 5.92 +/- 0.04 in uninoculated laterite plates (n=3). Fungal mineral-free controls were 2.85 +/- 0.06 (n=4). The reported 97.7% tolerance index is a dry fungal-biomass ratio to mineral-free growth, and the 1.42 growth-rate ratio uses colony expansion on days 2–5; neither quantity measures ore transformation or metal recovery.
+  - source_ref: ferrier2022
+    supports: partial
+    explanation: Experimental procedures and Discussion provide no pH-matched acid-only, purified-oxalate, killed-biomass or cell-free-metabolite comparison for the Nkamouna experiment. Oxalate-mediated dissolution/precipitation is an interpretation supported by product assignment and the organism's known physiology, not a directly quantified secretion or exclusive molecular pathway. Co(III)-to-Co(II) reduction is proposed without oxidation-state spectroscopy; EDXA does not establish valence or distinguish lattice incorporation from associated phases. Dissolved-metal, residual-feed and recovered-product mass balances are absent. Figure 5 gives typical patterns from several determinations without resolving independent culture versus analytical replication; heating, washing and drying may affect recovered phases.
+  - source_ref: ferrier2022
+    supports: context_only
+    explanation: Figures 6–8 and the separate synthetic Co-birnessite arm are not measurements of natural laterite. Their complete-transformation language and pooled diffraction subsample cannot be transferred to the incomplete Nkamouna result. Figure 8's heading says Nkamouna laterite, while its detailed caption and methods identify synthetic Co-birnessite. The Introduction's attribution of a Mn(III) oxalate intermediate to Wei2012 is not accepted as a measurement in this experiment. No criticality designation or industrial performance is inferred.
+  - source_ref: ncbi_aniger_20261012
+    supports: context_only
+    explanation: Fresh NCBI taxonomy response resolves TaxID 5061 to Aspergillus niger at species rank; it does not authenticate the culture used in the experiment.
+  - source_ref: atcc1015_20261012
+    supports: context_only
+    explanation: The current ATCC 1015 catalogue identifies Aspergillus niger and strain designation A1144 3528.7, including CBS 113.46 among aliases. This validates the collection-label mapping, not a separate replication of the laterite assay.
+causal_graphs:
+- id: fungal_nkamouna_laterite_transformation_graph
+  name: Aspergillus niger ATCC 1015 partial transformation of Nkamouna manganiferous laterite to lindbergite
+  description: Causal pathway linking Aspergillus niger ATCC 1015 agar acidification and organic-acid excretion to partial solubilization of natural cobalt-bearing Nkamouna manganiferous laterite (lithiophorite and cryptomelane) and surface precipitation of lindbergite.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: fungal_nkamouna_laterite_transformation
+  nodes:
+  - id: cexa_citrate_exporter
+    label: Citrate exporter CexA (representative organic-acid efflux transporter)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cexA
+    description: Reviewed Aspergillus niger plasma-membrane citrate exporter (UniProtKB:A0A254TZW7) representing the fungal organic-acid secretion machinery.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A254TZW7
+      entry_name: CEXA_ASPNG
+      protein_name: Citrate exporter A
+      gene_symbol: cexA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:5061
+        label: Aspergillus niger
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal chelation.
+      annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061).
+      evidence:
+      - source_ref: ferrier2022
+        supports: partial
+        explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during ATCC 1015 transformation of natural Nkamouna manganiferous laterite in Ferrier et al. (2022); cexA was not directly assayed.
+  - id: secreted_oxalic_and_organic_acids
+    label: Fungal organic acids and agar acidification (14-day surface pH 4.09 +/- 0.29)
+    node_type: CHEMICAL_ENTITY
+    description: Extracellular oxalate and organic acids produced by Aspergillus niger ATCC 1015 grown on Nkamouna laterite-amended malt extract agar.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: nkamouna_manganiferous_laterite_powder
+    label: Nkamouna manganiferous laterite powder and fragments (lithiophorite and cryptomelane; 30.91% MnO, 5.04% Co)
+    node_type: MATERIAL_OR_PHASE
+    description: Natural cobalt- and nickel-bearing manganiferous laterite from Nkamouna, Cameroon (<90 um powder at 0.2% w/v and fragments in agar).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: lindbergite_bearing_laterite_crust_debris
+    label: Incomplete surface crusts with XRPD-assigned lindbergite and residual lithiophorite/cryptomelane
+    node_type: MATERIAL_OR_PHASE
+    description: Recovered powder debris and surface crusts containing manganese oxalate dihydrate (lindbergite) alongside untransformed lithiophorite and cryptomelane.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cexa_citrate_exporter
+    target: secreted_oxalic_and_organic_acids
+    predicate: transports
+    relationship: representative plasma-membrane organic-acid efflux
+    description: CexA exports intracellular citrate as part of Aspergillus niger organic-acid excretion.
+    evidence:
+    - source_ref: ferrier2022
+      supports: partial
+      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during ATCC 1015 transformation of natural Nkamouna manganiferous laterite in Ferrier et al. (2022); cexA was not directly assayed.
+  - source: secreted_oxalic_and_organic_acids
+    target: nkamouna_manganiferous_laterite_powder
+    predicate: solubilizes
+    relationship: partial fungal acidification and organic-acid mobilization of manganese from laterite
+    description: Fungal growth lowers agar surface pH from 5.92 to 4.09 and partially mobilizes manganese from Nkamouna laterite.
+    evidence:
+    - source_ref: ferrier2022
+      supports: partial
+      explanation: Table 2 and Figures 1-5 in Ferrier et al. (2022) document agar acidification to pH 4.09 and partial crust formation, with oxalate secretion inferred rather than isolated by cell-free controls.
+  - source: nkamouna_manganiferous_laterite_powder
+    target: lindbergite_bearing_laterite_crust_debris
+    predicate: transforms_into
+    relationship: incomplete crystallization of lindbergite alongside residual laterite minerals
+    description: Partially mobilized manganese precipitates as lindbergite in surface crusts and recovered powder debris while residual lithiophorite and cryptomelane remain.
+    evidence:
+    - source_ref: ferrier2022
+      supports: support
+      explanation: Figures 1, 3, and 5B in Ferrier et al. (2022) show surface crusts and XRPD reflections assigned to lindbergite plus residual lithiophorite and cryptomelane.
 curation_history:
 - timestamp: '2026-10-11T11:43:01.133177+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
-  summary: Created resource identity and narrowly scoped primary two-stage bioleaching evidence, preserving
-    controls, analytical basis and scale limitations.
+  summary: Created resource identity and narrowly scoped primary two-stage bioleaching evidence, preserving controls, analytical basis and scale limitations.
 - timestamp: '2026-10-11T11:49:18.768477+00:00'
   curator: codex (GPT-6; codex)
   action: EDIT
-  summary: 'Corrected carbonate interpretation after independent review: preserved the conflict between
-    Section 3.3 absence prose and Figure 11 rhodochrosite markers over both traces; unresolved detection
-    status retained.'
+  summary: 'Corrected carbonate interpretation after independent review: preserved the conflict between Section 3.3 absence prose and Figure 11 rhodochrosite markers over both traces; unresolved detection status retained.'
 - timestamp: '2026-10-12T00:48:29.535886+00:00'
   curator: codex (GPT-6; codex)
   action: EDIT
-  summary: Appended a source-qualified fungal transformation mechanism for mixed Nkamouna manganiferous
-    laterite, retaining incomplete transformation, original figure/prose conflicts, preparation effects
-    and missing mass-balance/causal controls. Prior identity, mechanism, sources and history remain unchanged.
+  summary: Appended a source-qualified fungal transformation mechanism for mixed Nkamouna manganiferous laterite, retaining incomplete transformation, original figure/prose conflicts, preparation effects and missing mass-balance/causal controls. Prior identity, mechanism, sources and history remain unchanged.
+- timestamp: '2026-10-22T09:30:21Z'
+  curator: claude
+  action: edit
+  summary: Added representative Aspergillus niger CexA (UniProtKB:A0A254TZW7) protein example and causal graph for Nkamouna manganiferous laterite transformation in manganese-ore.yaml.
 history_refs:
 - history/records/manganese-ore/2026-10-11T114302Z-codex-4e6a73.yaml
 - history/records/manganese-ore/2026-10-11T114921Z-codex-7272e2.yaml
 - history/records/manganese-ore/2026-10-12T004836Z-codex-e1610a.yaml
+- history/records/manganese-ore/2026-10-22T093021Z-claude-a84701.yaml

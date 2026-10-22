@@ -1,0 +1,29 @@
+history_version: 1
+target:
+  kind: record
+  slug: zinc
+  path: data/records/zinc.yaml
+session:
+  id: 2026-10-22T093020Z-claude-48dd6e
+  timestamp: '2026-10-22T09:30:20Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Upgraded acidic ferric-sulfate sphalerite attack edge in zinc.yaml from acts_on
+    to dissolves (Issue #807, PR #811).'
+  details: Replaced generic acts_on with dissolves on acidic_ferric_sulfate_lixiviant -> solid_feed_substrate
+    in ferrooxidans_sphalerite_zinc_dissolution_graph (Fowler & Crundwell 1998, 1999).
+  sections:
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/807
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/811
