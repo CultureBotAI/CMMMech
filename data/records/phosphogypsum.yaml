@@ -99,63 +99,77 @@ mechanisms:
       - uniprot_accession: UniProtKB:P27175
         entry_name: DHG_GLUOX
         protein_name: Quinoprotein glucose dehydrogenase
-        gene_symbol: gcd
+        gene_symbol: gdh
         entry_status: SWISS_PROT
         target_organism:
-          id: NCBITaxon:442
-          label: Gluconobacter oxydans
+          id: NCBITaxon:290633
+          label: Gluconobacter oxydans 621H
+        reference_proteome_id: UP000006375
         ec_numbers:
           - EC:1.1.5.2
         interpro_ids:
+          - InterPro:IPR018391
+          - InterPro:IPR017511
           - InterPro:IPR002372
+          - InterPro:IPR011047
+          - InterPro:IPR001479
         pfam_ids:
-          - Pfam:PF07995
+          - Pfam:PF01011
         functional_role: >-
-          Membrane-bound PQQ-dependent glucose dehydrogenase that oxidizes
-          glucose to gluconolactone/gluconic acid, generating the 220 mM
-          gluconic-acid-rich spent-medium lixiviant (pH 2.1) produced by
-          glucose-grown Gluconobacter oxydans NRRL B58.
+          Membrane-bound PQQ-dependent glucose dehydrogenase (EC 1.1.5.2) that
+          oxidizes D-glucose to D-glucono-1,5-lactone/gluconic acid in the
+          periplasm, generating the 220 mM gluconic-acid-rich spent-medium
+          lixiviant (pH 2.1) produced by glucose-grown Gluconobacter oxydans B58.
         annotation_note: >-
-          Grounded to reviewed Swiss-Prot entry UniProtKB:P27175 (DHG_GLUOX)
-          for Gluconobacter oxydans (NCBITaxon:442).
+          Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375
+          for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0265) as the
+          strain-sequenced reference representative for parent mechanism taxon
+          Gluconobacter oxydans (NCBITaxon:442; strain NRRL B-58).
         evidence:
           - source_ref: antonick2019
             supports: partial
             explanation: >-
-              Reviewed Swiss-Prot entry for Gluconobacter oxydans membrane-bound
-              quinoprotein glucose dehydrogenase (gcd); Antonick et al. (2019)
-              used spent medium from glucose-grown G. oxydans B58 containing
-              220 mM gluconic acid without performing gene-level knockouts in
-              that study.
+              Reviewed Swiss-Prot entry for Gluconobacter oxydans 621H
+              membrane-bound quinoprotein glucose dehydrogenase (gdh, GOX0265);
+              Antonick et al. (2019) used spent medium from glucose-grown
+              G. oxydans B58 containing 220 mM gluconic acid without performing
+              gene-level knockouts in that study.
       - uniprot_accession: UniProtKB:Q9L3B2
         entry_name: PQQC_GLUOX
         protein_name: Pyrroloquinoline-quinone synthase
         gene_symbol: pqqC
         entry_status: SWISS_PROT
         target_organism:
-          id: NCBITaxon:442
-          label: Gluconobacter oxydans
+          id: NCBITaxon:290633
+          label: Gluconobacter oxydans 621H
+        reference_proteome_id: UP000006375
         ec_numbers:
           - EC:1.3.3.11
         interpro_ids:
-          - InterPro:IPR002849
+          - InterPro:IPR016084
+          - InterPro:IPR011845
+          - InterPro:IPR039068
+          - InterPro:IPR004305
         pfam_ids:
           - Pfam:PF03070
         functional_role: >-
-          Catalyzes ring cyclization and oxidation in pyrroloquinoline quinone
-          (PQQ) cofactor biosynthesis required for PQQ-dependent glucose
-          dehydrogenase activity and gluconic acid biolixiviant production in
+          Pyrroloquinoline-quinone synthase (EC 1.3.3.11) catalyzing the final
+          ring-closure and oxidation steps of PQQ cofactor biosynthesis required
+          for holo-Gdh activity and gluconic acid biolixiviant production in
           Gluconobacter oxydans.
         annotation_note: >-
-          Grounded to reviewed Swiss-Prot entry UniProtKB:Q9L3B2 (PQQC_GLUOX)
-          for Gluconobacter oxydans (NCBITaxon:442).
+          Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375
+          for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0985) as the
+          strain-sequenced reference representative for parent mechanism taxon
+          Gluconobacter oxydans (NCBITaxon:442; strain NRRL B-58).
         evidence:
           - source_ref: antonick2019
             supports: partial
             explanation: >-
-              Reviewed Swiss-Prot PQQ synthase from Gluconobacter oxydans
-              supporting the PQQ-dependent glucose oxidation pathway that
-              generates the gluconic acid spent medium used in Antonick et al. (2019).
+              Reviewed Swiss-Prot PQQ synthase from Gluconobacter oxydans 621H
+              (pqqC, GOX0985) supporting the PQQ-dependent glucose oxidation
+              pathway that generates the 220 mM gluconic acid spent medium used
+              in Antonick et al. (2019).
   - id: culture_associated_xifeng_pg_release
     name: Gluconobacter culture-associated release from Xifeng phosphogypsum
     process: bioleaching
@@ -231,30 +245,40 @@ causal_graphs:
             gene_symbol: pqqC
             entry_status: SWISS_PROT
             target_organism:
-              id: NCBITaxon:442
-              label: Gluconobacter oxydans
+              id: NCBITaxon:290633
+              label: Gluconobacter oxydans 621H
+            reference_proteome_id: UP000006375
             ec_numbers:
               - EC:1.3.3.11
             interpro_ids:
-              - InterPro:IPR002849
+              - InterPro:IPR016084
+              - InterPro:IPR011845
+              - InterPro:IPR039068
+              - InterPro:IPR004305
             pfam_ids:
               - Pfam:PF03070
             functional_role: >-
-              Synthesizes the PQQ cofactor required by membrane glucose
-              dehydrogenase during gluconic acid biolixiviant production.
+              Pyrroloquinoline-quinone synthase (EC 1.3.3.11) catalyzing the final
+              ring-closure and oxidation steps of PQQ cofactor biosynthesis required
+              for holo-Gdh activity and gluconic acid biolixiviant production in
+              Gluconobacter oxydans.
             annotation_note: >-
-              Grounded to reviewed Swiss-Prot entry UniProtKB:Q9L3B2 (PQQC_GLUOX)
-              for Gluconobacter oxydans (NCBITaxon:442).
+              Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375
+              for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0985) as the
+              strain-sequenced reference representative for parent mechanism taxon
+              Gluconobacter oxydans (NCBITaxon:442; strain NRRL B-58).
             evidence:
               - source_ref: antonick2019
                 supports: partial
                 explanation: >-
-                  Reviewed Swiss-Prot PQQ synthase from Gluconobacter oxydans
-                  supporting the PQQ-dependent glucose oxidation pathway.
-      - id: gcd_glucose_dehydrogenase
-        label: Membrane-bound PQQ-dependent glucose dehydrogenase (gcd)
+                  Reviewed Swiss-Prot PQQ synthase from Gluconobacter oxydans 621H
+                  (pqqC, GOX0985) supporting the PQQ-dependent glucose oxidation
+                  pathway that generates the 220 mM gluconic acid spent medium used
+                  in Antonick et al. (2019).
+      - id: gdh_glucose_dehydrogenase
+        label: Membrane-bound PQQ-dependent glucose dehydrogenase (gdh)
         node_type: GENE_OR_PROTEIN
-        gene_symbol: gcd
+        gene_symbol: gdh
         description: >-
           Membrane-bound quinoprotein glucose dehydrogenase oxidizing D-glucose
           to D-gluconate in the periplasm.
@@ -263,31 +287,41 @@ causal_graphs:
           - uniprot_accession: UniProtKB:P27175
             entry_name: DHG_GLUOX
             protein_name: Quinoprotein glucose dehydrogenase
-            gene_symbol: gcd
+            gene_symbol: gdh
             entry_status: SWISS_PROT
             target_organism:
-              id: NCBITaxon:442
-              label: Gluconobacter oxydans
+              id: NCBITaxon:290633
+              label: Gluconobacter oxydans 621H
+            reference_proteome_id: UP000006375
             ec_numbers:
               - EC:1.1.5.2
             interpro_ids:
+              - InterPro:IPR018391
+              - InterPro:IPR017511
               - InterPro:IPR002372
+              - InterPro:IPR011047
+              - InterPro:IPR001479
             pfam_ids:
-              - Pfam:PF07995
+              - Pfam:PF01011
             functional_role: >-
-              Membrane-bound PQQ-dependent glucose dehydrogenase oxidizing
-              glucose to gluconic acid in the Gluconobacter oxydans spent-medium
-              lixiviant.
+              Membrane-bound PQQ-dependent glucose dehydrogenase (EC 1.1.5.2) that
+              oxidizes D-glucose to D-glucono-1,5-lactone/gluconic acid in the
+              periplasm, generating the 220 mM gluconic-acid-rich spent-medium
+              lixiviant (pH 2.1) produced by glucose-grown Gluconobacter oxydans B58.
             annotation_note: >-
-              Grounded to reviewed Swiss-Prot entry UniProtKB:P27175 (DHG_GLUOX)
-              for Gluconobacter oxydans (NCBITaxon:442).
+              Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375
+              for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0265) as the
+              strain-sequenced reference representative for parent mechanism taxon
+              Gluconobacter oxydans (NCBITaxon:442; strain NRRL B-58).
             evidence:
               - source_ref: antonick2019
                 supports: partial
                 explanation: >-
-                  Reviewed Swiss-Prot entry for Gluconobacter oxydans gcd;
-                  Antonick et al. (2019) measured 220 mM gluconic acid in
-                  glucose-grown G. oxydans B58 spent medium.
+                  Reviewed Swiss-Prot entry for Gluconobacter oxydans 621H
+                  membrane-bound quinoprotein glucose dehydrogenase (gdh, GOX0265);
+                  Antonick et al. (2019) used spent medium from glucose-grown
+                  G. oxydans B58 containing 220 mM gluconic acid without performing
+                  gene-level knockouts in that study.
       - id: gluconic_acid_spent_medium
         label: Gluconic-acid-rich spent medium lixiviant (220 mM D-gluconic acid, pH 2.1)
         node_type: CHEMICAL_ENTITY
@@ -311,7 +345,7 @@ causal_graphs:
         protein_grounding_status: NOT_APPLICABLE
     edges:
       - source: pqq_cofactor_biosynthesis
-        target: gcd_glucose_dehydrogenase
+        target: gdh_glucose_dehydrogenase
         predicate: supplies_substrate_for
         relationship: PQQ prosthetic group biosynthesis for holoenzyme activity
         description: >-
@@ -323,7 +357,7 @@ causal_graphs:
             explanation: >-
               Gluconobacter oxydans PQQ-dependent glucose oxidation generates
               the gluconic-acid biolixiviant from glucose.
-      - source: gcd_glucose_dehydrogenase
+      - source: gdh_glucose_dehydrogenase
         target: gluconic_acid_spent_medium
         predicate: produces
         relationship: periplasmic oxidation of glucose to gluconic acid (220 mM, pH 2.1)
@@ -376,6 +410,13 @@ curation_history:
       Added Gluconobacter oxydans B58 spent-medium biolixiviant causal graph and
       reviewed Swiss-Prot UniProtKB:P27175 (DHG_GLUOX) and UniProtKB:Q9L3B2 (PQQC_GLUOX)
       protein examples.
+  - timestamp: '2026-10-22T02:18:01Z'
+    curator: claude (Claude Opus 4.6; antigravity)
+    action: EDIT
+    summary: >-
+      Updated UniProtKB:P27175 (DHG_GLUOX, gdh) and UniProtKB:Q9L3B2 (PQQC_GLUOX, pqqC)
+      Pfam, InterPro, and strain 621H reference proteome (NCBITaxon:290633, UP000006375) metadata.
 history_refs:
   - history/records/phosphogypsum/2026-10-11T090227Z-codex-e9e1cd.yaml
   - history/records/phosphogypsum/2026-10-22T013808Z-claude-001309.yaml
+  - history/records/phosphogypsum/2026-10-22T021801Z-claude-001314.yaml
