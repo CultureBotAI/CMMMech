@@ -1,0 +1,52 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 2
+stage: 4
+revision: 1
+outcome: completed
+summary: Completed full-inventory Cycle 2 Stage 4 scientific and structural review
+  of all 631 eligible CMMMech records at frozen commit 547283a882c1d657f934434f2eb5ea9a1418771a
+  across 6 disjoint material_kind cohort reviews (66 element, 380 mineral, 7 mineral_group,
+  36 commodity, 31 primary_resource, 111 secondary_resource), 1 cross-cohort causal_graphs/protein_examples
+  review (89 records), and 3 single-record reviews (katsarosite, birnessite, allanite-leachate).
+  Preserved 3 open minor findings (cmmmech-cycle2-stage4-finding-0001, cmmmech-cycle2-stage4-finding-0002,
+  cmmmech-cycle2-stage4-finding-0003) across 33 records for Stage 5 grouped remediation.
+source_revision: 547283a882c1d657f934434f2eb5ea9a1418771a
+scope_frozen_at: '2026-10-22T11:40:00Z'
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/evidence.yaml
+  sha256: 50d206c6f5869bec64b027203230f7be7b907e39f933ccece125339fb5361838
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-04/revision-0001/review_report.md
+  sha256: 4657caa3634793c0c5d998e3cd597c362205fcf01d79ed4c1966bc86b872bd81
+  kind: review_report
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-04/revision-0001/review_findings.yaml
+  sha256: a62fa6d45b51377bac116b6037e340b519617528325fb299aead90d1b5c5bab4
+  kind: review_findings
+findings:
+- finding_id: cmmmech-cycle2-stage4-finding-0001
+  status: open
+  summary: 30 mineral records (14 with ima2026, 9 with ima202609, and 7 with ima_202609)
+    key the September 2026 IMA-CNMNC Master List source under non-canonical variant
+    source IDs instead of canonical ima_2026_09 used across the other 350 mineral
+    records.
+- finding_id: cmmmech-cycle2-stage4-finding-0002
+  status: open
+  summary: data/records/allanite-concentrate.yaml (UniProtKB:Q5FT13, UniProtKB:Q5FTI1)
+    and data/records/thulium.yaml (UniProtKB:O34952, UniProtKB:Q797B3, UniProtKB:P54496,
+    UniProtKB:O32206) have abbreviated evidence[].explanation strings on causal_graphs[].nodes[].protein_examples
+    compared to mechanisms[].protein_examples.
+- finding_id: cmmmech-cycle2-stage4-finding-0003
+  status: open
+  summary: 'data/records/katsarosite.yaml (niger_associated_zinc_oxalate_formation_graph)
+    retains legacy predicate: chelates on its secreted_organic_acids -> znso4_hopeite_culture_substrate
+    dissolution edge instead of predicate: solubilizes used across the sibling Aspergillus
+    niger oxalate biomineralization cohort.'
+groups: []
+carry_forward_ids:
+- cmmmech-cycle2-stage4-finding-0001
+- cmmmech-cycle2-stage4-finding-0002
+- cmmmech-cycle2-stage4-finding-0003
+infra_tasks: []
