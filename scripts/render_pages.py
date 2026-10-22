@@ -121,6 +121,8 @@ def prepare_record_data(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
     slug = path.stem
     name = doc.get("name", slug)
     material_kind = doc.get("material_kind", "other")
+    ima_symbol = (doc.get("ima_symbol") or "").strip()
+    polymorph_or_grade = (doc.get("polymorph_or_grade") or "").strip()
     description = doc.get("description", "").strip()
 
     # Identifiers with URLs
@@ -176,6 +178,8 @@ def prepare_record_data(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
         name,
         slug,
         material_kind,
+        ima_symbol,
+        polymorph_or_grade,
         description,
         " ".join(i["id"] for i in identifiers),
         " ".join(i["label"] for i in identifiers),
@@ -199,6 +203,8 @@ def prepare_record_data(path: Path, doc: dict[str, Any]) -> dict[str, Any]:
         "slug": slug,
         "name": name,
         "material_kind": material_kind,
+        "ima_symbol": ima_symbol,
+        "polymorph_or_grade": polymorph_or_grade,
         "description": description,
         "identifiers": identifiers,
         "criticality": criticality,
@@ -489,6 +495,8 @@ def render(out_dir: Path) -> None:
         rendered_r = dict(doc)
         rendered_r["name"] = r["name"]
         rendered_r["material_kind"] = r["material_kind"]
+        rendered_r["ima_symbol"] = r["ima_symbol"]
+        rendered_r["polymorph_or_grade"] = r["polymorph_or_grade"]
         rendered_r["identifiers"] = r["identifiers"]
         source_path = str(p.relative_to(REPO_ROOT))
 

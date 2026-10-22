@@ -44,6 +44,16 @@ classes:
       material_kind:
         range: MaterialKind
         required: true
+      ima_symbol:
+        description: >-
+          Official International Mineralogical Association (IMA) mineral symbol
+          when applicable (for example, Aka, Clc, Ccp, Gth).
+        range: NonEmptyText
+      polymorph_or_grade:
+        description: >-
+          Specific engineered material polymorph, polytype, or commercial grade
+          designation when applicable (for example, 3C-SiC, GOES, NOES).
+        range: NonEmptyText
       description:
         range: NonEmptyText
         required: true
@@ -502,8 +512,11 @@ enums:
       binds:
       catalyzes:
       chelates:
+      degrades:
       displays_on_surface:
+      dissolves:
       drives:
+      hydrolyzes:
       incorporates_into:
       inhibits:
       modulates:
@@ -514,6 +527,7 @@ enums:
       produces:
       provides_electrons_to:
       reduces:
+      solubilizes:
       supplies_substrate_for:
       transforms_into:
       transports:

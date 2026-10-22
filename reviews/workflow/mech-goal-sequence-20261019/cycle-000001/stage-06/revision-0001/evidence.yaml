@@ -1,0 +1,65 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 1
+stage: 6
+revision: 1
+outcome: completed
+summary: "Froze INFRA_TASKS.md at supervisor cutoff 2026-10-22T05:48:39Z (sha256 ca26f50eb674fb9abbcc0cabfc1f27ec9da44d5259cb1af8196db23b6c94e341) across 5 infrastructure tasks (cmmmech-infra-0001 through cmmmech-infra-0005), grouped and linked all 5 tasks to real GitHub issues (#805, #806, #807, #808), implemented and validated cmmmech-infra-0002 (#806), cmmmech-infra-0003 (#807), and cmmmech-infra-0004 (#808), and explicitly deferred upstream-governed scripts/record_review.py tasks cmmmech-infra-0001 and cmmmech-infra-0005 under open issue #805."
+source_revision: f7958969fb28947275d219b8cc65b6bb2f788ca6
+scope_frozen_at: '2026-10-22T05:48:39Z'
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/infra_snapshot.md
+  sha256: ca26f50eb674fb9abbcc0cabfc1f27ec9da44d5259cb1af8196db23b6c94e341
+  kind: infra_snapshot
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/implementation_plan.md
+  sha256: d2e6b38e3f5db12e4c756d470d3ab4f942b5249eba50692a292f47ff2202a546
+  kind: implementation_plan
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/validation.md
+  sha256: 105fceb350d6af468a0f9a96135e49a09157a57ae95fb14bc7682a100e4ff324
+  kind: validation
+findings: []
+groups: []
+carry_forward_ids: []
+infra_tasks:
+- task_id: cmmmech-infra-0001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
+  status: deferred
+  summary: "Anchor scripts/record_review.py _directory() traversal at repository ROOT instead of filesystem root / so review validation runs inside Seatbelt sandboxes"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/validation.md
+  disposition: "Deferred in Cycle 1 Stage 6 because scripts/record_review.py and tests/test_record_review_contract.py are vendored artifacts governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); tracked under open issue #805 for upstream implementation and sync."
+- task_id: cmmmech-infra-0002
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/806
+  status: resolved
+  summary: "Add optional MaterialTerm/CriticalMineralRecord metadata slots for IMA mineral symbols and engineered material polymorph/grade identifiers in src/cmmmech/schema/cmmmech.yaml"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/validation.md
+  disposition: "Resolved in Cycle 1 Stage 6 (#806) by adding optional backward-compatible ima_symbol and polymorph_or_grade slots to CriticalMineralRecord in src/cmmmech/schema/cmmmech.yaml, surfacing them in scripts/render_pages.py and src/cmmmech/templates/material.html, and verifying with unit tests in tests/test_validation.py and tests/test_render_pages.py."
+- task_id: cmmmech-infra-0003
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/807
+  status: resolved
+  summary: "Expand CausalPredicateEnum in src/cmmmech/schema/cmmmech.yaml with solubilizes/dissolves and hydrolyzes/degrades for acidolytic mineral leaching and enzymatic polymer stripping"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/validation.md
+  disposition: "Resolved in Cycle 1 Stage 6 (#807) by adding degrades, dissolves, hydrolyzes, and solubilizes to CausalPredicateEnum in src/cmmmech/schema/cmmmech.yaml and validating them in tests/test_validation.py."
+- task_id: cmmmech-infra-0004
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/808
+  status: resolved
+  summary: "Add a first-class CLI writer helper (scripts/curate_causal_graphs.py) that validates causal_graphs and protein_examples updates and atomically mints history/records sidecars"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/validation.md
+  disposition: "Resolved in Cycle 1 Stage 6 (#808) by implementing scripts/curate_causal_graphs.py with canonical key ordering, pre-write schema validation, and atomic EDIT HistoryRecord sidecar creation, verified by tests/test_curate_causal_graphs.py."
+- task_id: cmmmech-infra-0005
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
+  status: deferred
+  summary: "Batch git cat-file object size and content checks in scripts/record_review.py assert_append_only() and source_provenance() via git cat-file --batch"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-06/revision-0001/validation.md
+  disposition: "Deferred in Cycle 1 Stage 6 because scripts/record_review.py is a vendored artifact governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); grouped with cmmmech-infra-0001 under open issue #805 for upstream implementation and sync."

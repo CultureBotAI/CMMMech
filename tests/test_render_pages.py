@@ -133,3 +133,51 @@ def test_unified_facets_search_and_map():
     cobalt_html = (PAGES_DIR / "materials" / "cobalt.html").read_text(encoding="utf-8")
     assert 'class="page-search"' in cobalt_html
 
+
+def test_ima_symbol_and_polymorph_or_grade_rendered(tmp_path):
+    doc = {
+        "id": "cmmmech:silicon-carbide",
+        "name": "Silicon carbide",
+        "material_kind": "commodity",
+        "ima_symbol": "Moi",
+        "polymorph_or_grade": "3C-SiC",
+        "description": "Cubic beta-silicon carbide polytype.",
+        "sources": [
+            {
+                "id": "src_test",
+                "title": "Test source",
+                "url": "https://example.org/sic",
+                "accessed_on": "2026-10-21",
+            }
+        ],
+    }
+    rec_path = tmp_path / "silicon-carbide.yaml"
+    rec_path.write_text(yaml.safe_dump(doc), encoding="utf-8")
+    prepared = render_pages.prepare_record_data(rec_path, doc)
+    assert prepared["ima_symbol"] == "Moi"
+    assert prepared["polymorph_or_grade"] == "3C-SiC"
+    assert "moi" in prepared["search_text"]
+    assert "3c-sic" in prepared["search_text"]
+
+    env = render_pages.Environment(
+        loader=render_pages.FileSystemLoader(str(render_pages.TEMPLATES_DIR)),
+        autoescape=render_pages.select_autoescape(["html"]),
+        trim_blocks=True,
+        lstrip_blocks=True,
+    )
+    env.filters["curie_url"] = render_pages.curie_url
+    env.globals["build_provenance"] = {
+        "total_materials": 1,
+        "total_mechanisms": 0,
+        "latest_curation": "2026-10-21",
+        "corpus_digest": "000000000000",
+    }
+    html = env.get_template("material.html").render(
+        root="../",
+        r=prepared,
+        source_path="data/records/silicon-carbide.yaml",
+    )
+    assert "IMA: Moi" in html
+    assert "Grade / Polymorph: 3C-SiC" in html
+
+

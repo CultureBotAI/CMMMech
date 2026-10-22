@@ -36,19 +36,29 @@ schema_version: '1.0.0'
 tasks:
   - task_id: cmmmech-infra-0001
     summary: Anchor scripts/record_review.py _directory() traversal at repository ROOT instead of filesystem root / so review validation runs inside Seatbelt sandboxes
-    status: note
+    status: deferred
+    issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
+    disposition: Deferred in Cycle 1 Stage 6 because scripts/record_review.py and tests/test_record_review_contract.py are vendored artifacts governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); tracked under issue #805 for coordinated upstream implementation and sync.
   - task_id: cmmmech-infra-0002
     summary: Add optional MaterialTerm/CriticalMineralRecord metadata slots for IMA mineral symbols and engineered material polymorph/grade identifiers in src/cmmmech/schema/cmmmech.yaml
-    status: note
+    status: resolved
+    issue_url: https://github.com/CultureBotAI/CMMMech/issues/806
+    disposition: Resolved in Cycle 1 Stage 6 (issue #806) by adding optional backward-compatible ima_symbol and polymorph_or_grade slots to CriticalMineralRecord in src/cmmmech/schema/cmmmech.yaml, surfacing them in scripts/render_pages.py and src/cmmmech/templates/material.html, and covering them with unit tests in tests/test_validation.py and tests/test_render_pages.py.
   - task_id: cmmmech-infra-0003
     summary: Expand CausalPredicateEnum in src/cmmmech/schema/cmmmech.yaml with solubilizes/dissolves and hydrolyzes/degrades for acidolytic mineral leaching and enzymatic polymer stripping
-    status: note
+    status: resolved
+    issue_url: https://github.com/CultureBotAI/CMMMech/issues/807
+    disposition: Resolved in Cycle 1 Stage 6 (issue #807) by adding degrades, dissolves, hydrolyzes, and solubilizes to CausalPredicateEnum in src/cmmmech/schema/cmmmech.yaml and validating them in tests/test_validation.py.
   - task_id: cmmmech-infra-0004
     summary: Add a first-class CLI writer helper (scripts/curate_causal_graphs.py) that validates causal_graphs and protein_examples updates and atomically mints history/records sidecars
-    status: note
+    status: resolved
+    issue_url: https://github.com/CultureBotAI/CMMMech/issues/808
+    disposition: Resolved in Cycle 1 Stage 6 (issue #808) by implementing scripts/curate_causal_graphs.py with canonical key ordering, pre-write schema validation, and atomic EDIT HistoryRecord sidecar creation, verified by tests/test_curate_causal_graphs.py.
   - task_id: cmmmech-infra-0005
     summary: Batch git cat-file object size and content checks in scripts/record_review.py assert_append_only() and source_provenance() via git cat-file --batch
-    status: note
+    status: deferred
+    issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
+    disposition: Deferred in Cycle 1 Stage 6 because scripts/record_review.py is a vendored artifact governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); grouped with cmmmech-infra-0001 under issue #805 for upstream implementation and sync.
 ```
 <!-- mech-infra-tasks:end -->
 
@@ -62,37 +72,45 @@ tasks:
 - **Evidence paths**: `scripts/record_review.py`, `tests/test_record_review_contract.py`, `scripts/check_vendored_sync.py`
 - **Priority**: medium
 - **Dependencies**: Upstream `CultureBotAI/culturebotai-claw` vendored-artifact governance (`scripts/check_vendored_sync.py`)
-- **Status**: `note` (pending Stage 6 issue intake)
+- **Issue**: https://github.com/CultureBotAI/CMMMech/issues/805 (`IGRP-C1S6-001`)
+- **Status**: `deferred`
+- **Disposition**: Deferred in Cycle 1 Stage 6 because `scripts/record_review.py` and `tests/test_record_review_contract.py` are governed vendored artifacts enforced by `scripts/check_vendored_sync.py`. Tracked in issue `#805` for upstream implementation in `CultureBotAI/culturebotai-claw` and subsequent vendored sync.
 
 ### `cmmmech-infra-0002` — Optional `CriticalMineralRecord` slots for IMA symbols and polymorph/grade classifications
 
 - **Originating run / cycle / stage**: `mech-goal-sequence-20261019` / cycle `1` / stage `1` (`add_records`)
 - **Observation**: During Round 117 (`discover_add`), curating 11 IMA-approved critical-element mineral species (`adamsite-y`, `ammonioborite`, `bainbridgeite-ndce`, `ferrokesterite`, `mckelveyite-y`, `petrukite`, `piilonenite-nd`, `richetite`, `sakuraiite`, `thomasclarkite-y`, `weeksite`) and 3 DOE/USGS/EU synthetic/engineered critical materials (`electrical-steel`, `silicon-carbide`, `synthetic-graphite`) showed that `CriticalMineralRecord` (`src/cmmmech/schema/cmmmech.yaml`) has `ima_status` and `ima_approval_year` for minerals, but lacks an optional `ima_symbol` slot (e.g., `Ads-Y`, `Abor`, `Bbg-NdCe`, `Fkes`, `Mkv-Y`, `Pet`, `Pii-Nd`, `Rch`, `Sak`, `Tcl-Y`, `Wks`) and lacks a structured polymorph/grade descriptor slot for engineered materials (e.g., `3C-SiC`/`4H-SiC`/`6H-SiC`, `GOES`/`NOES`), requiring those standard identifiers to be placed in `synonyms` or prose `description`.
 - **Desired outcome**: Evaluate adding optional backward-compatible `ima_symbol` and material grade/polymorph slots in `src/cmmmech/schema/cmmmech.yaml` (and surfacing them in `scripts/render_pages.py`) during Stage 6 infrastructure implementation.
-- **Evidence paths**: `src/cmmmech/schema/cmmmech.yaml`, `scripts/render_pages.py`, `reviews/structured/20261019T053000Z-electrical-steel-round117/review.yaml`, `reviews/structured/20261019T053000Z-silicon-carbide-round117/review.yaml`
+- **Evidence paths**: `src/cmmmech/schema/cmmmech.yaml`, `scripts/render_pages.py`, `src/cmmmech/templates/material.html`, `tests/test_validation.py`, `tests/test_render_pages.py`
 - **Priority**: low
 - **Dependencies**: None
-- **Status**: `note` (pending Stage 6 issue intake)
+- **Issue**: https://github.com/CultureBotAI/CMMMech/issues/806 (`IGRP-C1S6-002`)
+- **Status**: `resolved`
+- **Disposition**: Resolved in Cycle 1 Stage 6 by adding optional `ima_symbol` and `polymorph_or_grade` attributes (`range: NonEmptyText`) to `CriticalMineralRecord` in `src/cmmmech/schema/cmmmech.yaml`, rendering badges and indexing search tokens in `scripts/render_pages.py` and `src/cmmmech/templates/material.html`, and verifying with unit tests in `tests/test_validation.py` and `tests/test_render_pages.py`.
 
 ### `cmmmech-infra-0003` — Expand `CausalPredicateEnum` for acidolytic leaching and enzymatic binder hydrolysis
 
 - **Originating run / cycle / stage**: `mech-goal-sequence-20261019` / cycle `1` / stage `2` (`causal_graphs`)
 - **Observation**: During the Stage 2 corpus-wide causal-graph audit and expansion across 55 records (`42` existing + `13` newly eligible multi-step records), organic-acid mineral dissolution (`moolooite`, `phosphate-rock`, `lindbergite`, `katsarosite`, `humboldtine`, `falottaite`, `bauxite-residue`) and proteolytic gelatin-emulsion stripping (`waste-x-ray-films`) had to use `chelates` or `acts_on` because `CausalPredicateEnum` (`src/cmmmech/schema/cmmmech.yaml:498` and `src/cmmmech/validation.py`) currently permits `['acts_on', 'assembles_into', 'binds', 'catalyzes', 'chelates', 'displays_on_surface', 'drives', 'incorporates_into', 'inhibits', 'modulates', 'negatively_regulates', 'nucleates', 'oxidizes', 'positively_regulates', 'produces', 'provides_electrons_to', 'reduces', 'supplies_substrate_for', 'transforms_into', 'transports']` and omits `solubilizes` / `dissolves` and `hydrolyzes` / `degrades`. In addition, 93 single-step biosorption/bioaccumulation records in `data/records/` document only whole-cell equilibrium sorption or intracellular uptake without resolved molecular intermediates; forcing multi-step `causal_graphs` onto those 93 records would require inventing unsupported intermediate nodes.
 - **Desired outcome**: Evaluate adding `solubilizes` and `hydrolyzes` (or `degrades`) to `CausalPredicateEnum` in `src/cmmmech/schema/cmmmech.yaml` and `src/cmmmech/validation.py` during Stage 6 while preserving the strict curation rule that single-step whole-cell sorption/uptake records without resolved intermediates remain represented at the `mechanisms` level rather than via synthetic causal edges.
-- **Evidence paths**: `src/cmmmech/schema/cmmmech.yaml`, `src/cmmmech/validation.py`, `data/records/moolooite.yaml`, `data/records/phosphate-rock.yaml`, `data/records/waste-x-ray-films.yaml`
+- **Evidence paths**: `src/cmmmech/schema/cmmmech.yaml`, `tests/test_validation.py`, `data/records/moolooite.yaml`, `data/records/phosphate-rock.yaml`, `data/records/waste-x-ray-films.yaml`
 - **Priority**: medium
 - **Dependencies**: None
-- **Status**: `note` (pending Stage 6 issue intake)
+- **Issue**: https://github.com/CultureBotAI/CMMMech/issues/807 (`IGRP-C1S6-003`)
+- **Status**: `resolved`
+- **Disposition**: Resolved in Cycle 1 Stage 6 by adding `degrades`, `dissolves`, `hydrolyzes`, and `solubilizes` to `CausalPredicateEnum` in `src/cmmmech/schema/cmmmech.yaml` and testing all 4 predicates in `tests/test_validation.py`.
 
 ### `cmmmech-infra-0004` — Add a first-class CLI writer helper for `causal_graphs` and `protein_examples` curation
 
 - **Originating run / cycle / stage**: `mech-goal-sequence-20261019` / cycle `1` / stage `2` (`causal_graphs`)
 - **Observation**: While `.claude/skills/curate-yaml-record/SKILL.md` and `src/cmmmech/validation.py` define the canonical curation workflow and validation gates, curating or auditing `causal_graphs` and `protein_examples` across 52 records required custom Python scripts to enforce canonical key ordering (`causal_graphs` immediately after `mechanisms`, before `curation_history` and `history_refs`), run `cmmmech.validation.validate_record`, and atomically mint `history/records/<slug>/<timestamp>-<agent>-<hash>.yaml` sidecars.
 - **Desired outcome**: Add a dedicated helper CLI (`scripts/curate_causal_graphs.py` or a `cmmmech` CLI subcommand) that validates `causal_graphs` / `protein_examples` against `src/cmmmech/validation.py`, enforces canonical YAML key ordering, and atomically writes the `EDIT` history sidecar and `curation_history`/`history_refs` entries.
-- **Evidence paths**: `.claude/skills/curate-yaml-record/SKILL.md`, `src/cmmmech/validation.py`, `history/records/`
+- **Evidence paths**: `scripts/curate_causal_graphs.py`, `tests/test_curate_causal_graphs.py`, `src/cmmmech/validation.py`, `src/cmmmech/history.py`
 - **Priority**: low
-- **Dependencies**: None
-- **Status**: `note` (pending Stage 6 issue intake)
+- **Dependencies**: `cmmmech-infra-0002`, `cmmmech-infra-0003`
+- **Issue**: https://github.com/CultureBotAI/CMMMech/issues/808 (`IGRP-C1S6-004`)
+- **Status**: `resolved`
+- **Disposition**: Resolved in Cycle 1 Stage 6 by creating `scripts/curate_causal_graphs.py` with canonical key ordering (`CANONICAL_RECORD_KEYS` and `CANONICAL_MECHANISM_KEYS`), structured patch application, pre-write schema validation, and atomic `EDIT` history sidecar creation via `cmmmech.history.cmd_new`, tested in `tests/test_curate_causal_graphs.py`.
 
 ### `cmmmech-infra-0005` — Batch `git cat-file` object checks in `scripts/record_review.py`
 
@@ -101,8 +119,10 @@ tasks:
 - **Desired outcome**: Coordinate with upstream `CultureBotAI/culturebotai-claw` to batch object size and content verification through a single persistent `git cat-file --batch` pipe in `assert_append_only()` and `source_provenance()`, reducing `record_review.py check` runtime by >10x.
 - **Evidence paths**: `scripts/record_review.py`, `tests/test_record_review_contract.py`, `scripts/check_vendored_sync.py`
 - **Priority**: low
-- **Dependencies**: Upstream `CultureBotAI/culturebotai-claw` vendored-artifact governance (`scripts/check_vendored_sync.py`)
-- **Status**: `note` (pending Stage 6 issue intake)
+- **Dependencies**: Upstream `CultureBotAI/culturebotai-claw` vendored-artifact governance (`scripts/check_vendored_sync.py`), `cmmmech-infra-0001`
+- **Issue**: https://github.com/CultureBotAI/CMMMech/issues/805 (`IGRP-C1S6-001`)
+- **Status**: `deferred`
+- **Disposition**: Deferred in Cycle 1 Stage 6 because `scripts/record_review.py` is a governed vendored artifact enforced by `scripts/check_vendored_sync.py`. Grouped with `cmmmech-infra-0001` under issue `#805` for coordinated upstream implementation in `CultureBotAI/culturebotai-claw` and subsequent vendored sync.
 
 
 
