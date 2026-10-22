@@ -62,11 +62,136 @@ mechanisms:
       debris is also reported, so complete conversion or phase-pure glushinskite yield is not asserted.
       The laboratory synthetic-feed result does not establish behavior of every natural dittmarite
       occurrence or industrial deployment.
+  protein_examples:
+  - uniprot_accession: UniProtKB:G3Y4N5
+    entry_name: CEXA_ASPNA
+    protein_name: Citrate exporter A
+    gene_symbol: cexA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:380704
+      label: Aspergillus niger ATCC 1015
+    reference_proteome_id: UP000006706
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Plasma-membrane MFS citrate exporter CexA in Aspergillus niger ATCC 1015 that secretes
+      intracellularly synthesized citric acid into the extracellular medium, contributing to medium acidification
+      during phosphate-mineral transformation.
+    annotation_note: Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5 (CEXA_ASPNA;
+      locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015 (NCBITaxon:380704).
+    evidence:
+    - source_ref: suyamud_2020
+      supports: partial
+      explanation: Representative Aspergillus niger ATCC 1015 organic-acid exporter CexA for fungal acidification
+        during dittmarite solubilization and secondary glushinskite formation; Suyamud et al. (2020) did
+        not assay cexA mutants or isolate citric versus oxalic acid contributions.
+causal_graphs:
+- id: aspergillus_dittmarite_transformation_graph
+  name: Aspergillus niger ATCC 1015 organic-acid-mediated dittmarite dissolution and glushinskite formation
+  description: Causal pathway linking Aspergillus niger ATCC 1015 organic-acid secretion (represented by
+    citrate exporter CexA alongside oxalic acid production) to agar acidification, synthetic dittmarite
+    dissolution, and secondary glushinskite crystallization.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: fungal_dittmarite_transformation
+  nodes:
+  - id: cexa_citrate_exporter
+    label: CexA plasma-membrane citrate exporter (cexA)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cexA
+    description: Major facilitator superfamily transporter exporting citric acid across the Aspergillus
+      niger ATCC 1015 plasma membrane.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:G3Y4N5
+      entry_name: CEXA_ASPNA
+      protein_name: Citrate exporter A
+      gene_symbol: cexA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:380704
+        label: Aspergillus niger ATCC 1015
+      reference_proteome_id: UP000006706
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Plasma-membrane MFS citrate exporter CexA in Aspergillus niger ATCC 1015 that secretes
+        intracellularly synthesized citric acid into the extracellular medium, contributing to medium
+        acidification during phosphate-mineral transformation.
+      annotation_note: Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5 (CEXA_ASPNA;
+        locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015 (NCBITaxon:380704).
+      evidence:
+      - source_ref: suyamud_2020
+        supports: partial
+        explanation: Representative Aspergillus niger ATCC 1015 organic-acid exporter CexA for fungal
+          acidification during dittmarite solubilization and secondary glushinskite formation; Suyamud
+          et al. (2020) did not assay cexA mutants or isolate citric versus oxalic acid contributions.
+  - id: secreted_fungal_organic_acids
+    label: Secreted fungal organic acids and protons (pH 7.06 to 4.09 acidification and oxalate supply)
+    node_type: CHEMICAL_ENTITY
+    description: Extracellular organic acids (oxalate, citrate) and protons secreted by growing Aspergillus
+      niger ATCC 1015 colonies on malt extract agar.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: synthetic_dittmarite_feed
+    label: Synthetic dittmarite feed ((NH4)Mg(PO4)(H2O), 1% w/v in malt extract agar)
+    node_type: MATERIAL_OR_PHASE
+    description: XRD-identified synthetic magnesium ammonium phosphate monohydrate (dittmarite) suspended
+      in agar medium.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: secondary_glushinskite_crystals
+    label: Secondary glushinskite (Mg(C2O4)(H2O)2) crystals
+    node_type: MATERIAL_OR_PHASE
+    description: Magnesium oxalate dihydrate crystals recovered beneath colonies after 7 days of growth.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cexa_citrate_exporter
+    target: secreted_fungal_organic_acids
+    predicate: transports
+    relationship: efflux of citric acid contributing to extracellular acidification
+    description: CexA exports citrate into the agar medium alongside fungal oxalic acid secretion.
+    evidence:
+    - source_ref: suyamud_2020
+      supports: partial
+      explanation: Table 2 in Suyamud et al. (2020) documents agar acidification from pH 7.06 +/- 0.01
+        to 4.09 +/- 0.45 over 7 days of Aspergillus niger ATCC 1015 growth.
+  - source: secreted_fungal_organic_acids
+    target: synthetic_dittmarite_feed
+    predicate: acts_on
+    relationship: acidolysis and oxalate reaction with dittmarite
+    description: Fungal acidification and secreted oxalate dissolve synthetic dittmarite, forming a clearing
+      zone in the agar.
+    evidence:
+    - source_ref: suyamud_2020
+      supports: support
+      explanation: Figure 1C and Table 2 in Suyamud et al. (2020) show clearing-zone formation and acidification
+        on 1% w/v synthetic dittmarite plates.
+  - source: synthetic_dittmarite_feed
+    target: secondary_glushinskite_crystals
+    predicate: transforms_into
+    relationship: biomineralization of secondary magnesium oxalate dihydrate (glushinskite)
+    description: Mobilized Mg2+ reacts with fungal oxalate to precipitate glushinskite crystals.
+    evidence:
+    - source_ref: suyamud_2020
+      supports: support
+      explanation: Figures 3E-F, 4D, and 5B in Suyamud et al. (2020) identify post-growth crystals as
+        magnesium oxalate dihydrate (glushinskite).
 curation_history:
 - timestamp: '2026-10-11T09:57:32.863736+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
   summary: Created dittmarite mineral identity with bounded fungal transformation of an XRD-identified
     synthetic feed.
+- timestamp: '2026-10-22T01:38:02Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: EDIT
+  summary: Added Aspergillus niger ATCC 1015 causal graph and reviewed Swiss-Prot UniProtKB:G3Y4N5
+    (CEXA_ASPNA) protein example for acidogenic dittmarite transformation.
 history_refs:
 - history/records/dittmarite/2026-10-11T095732Z-codex-93ecbd.yaml
+- history/records/dittmarite/2026-10-22T013802Z-claude-001303.yaml

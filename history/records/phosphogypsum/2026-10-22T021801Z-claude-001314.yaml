@@ -1,0 +1,30 @@
+history_version: 1
+target:
+  kind: record
+  slug: phosphogypsum
+  path: data/records/phosphogypsum.yaml
+session:
+  id: 2026-10-22T021801Z-claude-001314
+  timestamp: '2026-10-22T02:18:01Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: Claude Opus 4.6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: >-
+    Updated UniProtKB:P27175 (DHG_GLUOX, gdh) and UniProtKB:Q9L3B2 (PQQC_GLUOX, pqqC)
+    Pfam, InterPro, and strain 621H reference proteome (NCBITaxon:290633, UP000006375) metadata.
+  details: >-
+    Resolved PR #790 adversarial review finding (Issue #791) in phosphogypsum.yaml
+    by updating UniProtKB:P27175 (pfam_ids Pfam:PF01011, full InterPro list, gene_symbol gdh)
+    and UniProtKB:Q9L3B2 (full InterPro list) to match Gluconobacter oxydans 621H
+    (NCBITaxon:290633, UP000006375) with explicit annotation_note and synchronized
+    mechanism and node descriptions.
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs

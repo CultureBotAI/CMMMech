@@ -80,6 +80,38 @@ mechanisms:
       assay. The statement that metal or AgCl was recovered has no corresponding isolation protocol or
       product characterization in this paper; the accepted result is silver-bearing hydrolysate and stripped
       film. No whole-process mass balance, comparative energy assessment or deployment follows.
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A137NYV2
+    entry_name: A0A137NYV2_CONC2
+    protein_name: Subtilisin-like protease
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:796925
+      label: Conidiobolus coronatus NRRL 28638
+    reference_proteome_id: UP000070444
+    interpro_ids:
+    - InterPro:IPR034193
+    - InterPro:IPR000209
+    - InterPro:IPR036852
+    - InterPro:IPR023827
+    - InterPro:IPR022398
+    - InterPro:IPR023828
+    - InterPro:IPR050131
+    - InterPro:IPR015500
+    pfam_ids:
+    - Pfam:PF00082
+    functional_role: Secreted subtilisin-like serine alkaline protease (peptidase S8 family; locus CONCODRAFT_77703)
+      in Conidiobolus coronatus capable of hydrolyzing extracellular protein/gelatin substrates.
+    annotation_note: Grounded to reference-proteome entry UP000070444 (UniProtKB:A0A137NYV2; locus CONCODRAFT_77703)
+      for Conidiobolus coronatus NRRL 28638 (NCBITaxon:796925), representing the extracellular alkaline
+      protease activity in crude supernatant of experimental strain Conidiobolus coronatus ATCC PTA-4132
+      (NCBITaxon:34488).
+    evidence:
+    - source_ref: shankar2010
+      supports: partial
+      explanation: Shankar et al. (2010) used crude cell-free alkaline protease supernatant from Conidiobolus
+        coronatus ATCC PTA-4132 to strip gelatin-silver emulsion without sequencing or purifying the specific
+        subtilisin-like protease isoform.
 - id: bacterial_stripping_then_smelting
   name: Bacterial enzyme stripping followed by separate abiotic silver smelting
   process: recovery
@@ -125,22 +157,86 @@ mechanisms:
       deposited as Bacillus subtilis. This nomenclatural mapping supports the linked organism label; collection
       metadata and later genome sequencing are not evidence that the historical assay stock was independently
       authenticated.
+  protein_examples:
+  - uniprot_accession: UniProtKB:F1DKR8
+    entry_name: F1DKR8_BACSC
+    protein_name: Subtilisin-like protease
+    gene_symbol: aprE
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:703612
+      label: Bacillus spizizenii ATCC 6633 = JCM 2499
+    interpro_ids:
+    - InterPro:IPR000209
+    - InterPro:IPR036852
+    - InterPro:IPR023827
+    - InterPro:IPR022398
+    - InterPro:IPR050131
+    - InterPro:IPR015500
+    - InterPro:IPR010259
+    - InterPro:IPR037045
+    pfam_ids:
+    - Pfam:PF05922
+    - Pfam:PF00082
+    functional_role: Extracellular alkaline serine protease subtilisin (AprE) secreted by Bacillus spizizenii
+      ATCC 6633, catalyzing proteolytic hydrolysis of gelatin emulsion proteins on waste radiographic
+      films.
+    annotation_note: Grounded to strain-matched TrEMBL entry UniProtKB:F1DKR8 (F1DKR8_BACSC; gene aprE)
+      for Bacillus spizizenii ATCC 6633 = JCM 2499 (NCBITaxon:703612).
+    evidence:
+    - source_ref: nakiboglu2001
+      supports: partial
+      explanation: Nakiboglu et al. (2001) stripped waste X-ray film gelatin with crude cell-free alkaline
+        protease extract from ATCC 6633 (22.35 U/mL casein activity at pH 8) without isolating aprE or
+        testing aprE deletion mutants.
 causal_graphs:
 - id: fungal_supernatant_emulsion_stripping_graph
   name: Conidiobolus coronatus cell-free alkaline protease stripping of waste X-ray film gelatin layer
-  description: Causal pathway linking crude cell-free alkaline protease supernatant from Conidiobolus
-    coronatus ATCC PTA-4132 to proteolytic hydrolysis of the gelatin-silver emulsion on used X-ray film
-    and release of silver-bearing sludge and clean polyester film.
-  scope: RECORD_SPECIFIC_MECHANISM
+  description: Causal pathway linking extracellular subtilisin-like alkaline protease activity from Conidiobolus
+    coronatus to proteolytic hydrolysis of the gelatin-silver emulsion on used X-ray film and release
+    of silver-bearing sludge and clean polyester film.
+  scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: fungal_supernatant_emulsion_stripping
   nodes:
   - id: conidiobolus_alkaline_protease_supernatant
-    label: Conidiobolus coronatus ATCC PTA-4132 extracellular alkaline protease (cell-free supernatant)
+    label: Conidiobolus coronatus extracellular subtilisin-like alkaline protease
     node_type: GENE_OR_PROTEIN
-    description: Crude extracellular alkaline protease in cell-free MGYP-soybean-meal culture supernatant
-      of Conidiobolus coronatus ATCC PTA-4132 (Shankar et al. 2010); marked UNGROUNDED because no purified
-      enzyme sequence, gene symbol, or active UniProtKB accession for this protease is available.
-    protein_grounding_status: UNGROUNDED
+    description: Secreted subtilisin-like alkaline protease in cell-free MGYP-soybean-meal culture supernatant
+      of Conidiobolus coronatus ATCC PTA-4132 (Shankar et al. 2010), grounded to reference-proteome Conidiobolus
+      coronatus NRRL 28638 subtilisin-like protease (UniProtKB:A0A137NYV2; CONCODRAFT_77703).
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A137NYV2
+      entry_name: A0A137NYV2_CONC2
+      protein_name: Subtilisin-like protease
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:796925
+        label: Conidiobolus coronatus NRRL 28638
+      reference_proteome_id: UP000070444
+      interpro_ids:
+      - InterPro:IPR034193
+      - InterPro:IPR000209
+      - InterPro:IPR036852
+      - InterPro:IPR023827
+      - InterPro:IPR022398
+      - InterPro:IPR023828
+      - InterPro:IPR050131
+      - InterPro:IPR015500
+      pfam_ids:
+      - Pfam:PF00082
+      functional_role: Secreted subtilisin-like serine alkaline protease (peptidase S8 family; locus CONCODRAFT_77703)
+        in Conidiobolus coronatus capable of hydrolyzing extracellular protein/gelatin substrates.
+      annotation_note: Grounded to reference-proteome entry UP000070444 (UniProtKB:A0A137NYV2; locus CONCODRAFT_77703)
+        for Conidiobolus coronatus NRRL 28638 (NCBITaxon:796925), representing the extracellular alkaline
+        protease activity in crude supernatant of experimental strain Conidiobolus coronatus ATCC PTA-4132
+        (NCBITaxon:34488).
+      evidence:
+      - source_ref: shankar2010
+        supports: partial
+        explanation: Shankar et al. (2010) used crude cell-free alkaline protease supernatant from Conidiobolus
+          coronatus ATCC PTA-4132 to strip gelatin-silver emulsion without sequencing or purifying the
+          specific subtilisin-like protease isoform.
   - id: used_xray_film_gelatin_silver_layer
     label: Used medical X-ray film gelatin-silver emulsion layer (2 x 2 cm pieces)
     node_type: MATERIAL_OR_PHASE
@@ -177,20 +273,54 @@ causal_graphs:
 - id: bacterial_stripping_then_smelting_graph
   name: Bacillus spizizenii ATCC 6633 protease stripping of waste X-ray film followed by abiotic borax
     smelting
-  description: Causal pathway linking cell-free protease extract from Bacillus spizizenii ATCC 6633 (reported
-    as Bacillus subtilis ATCC 6633) to gelatin-silver stripping at 50 degrees C, pH 8, followed by separate
-    abiotic drying and 1100 degrees C borax smelting to metallic silver.
-  scope: RECORD_SPECIFIC_MECHANISM
+  description: Causal pathway linking extracellular subtilisin-like alkaline protease (AprE) in cell-free
+    extract from Bacillus spizizenii ATCC 6633 (reported as Bacillus subtilis ATCC 6633) to gelatin-silver
+    stripping at 50 degrees C, pH 8, followed by separate abiotic drying and 1100 degrees C borax smelting
+    to metallic silver.
+  scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: bacterial_stripping_then_smelting
   nodes:
   - id: bacillus_atcc6633_protease_extract
-    label: Bacillus spizizenii ATCC 6633 cell-free alkaline protease extract (22.35 U/mL)
+    label: Bacillus spizizenii ATCC 6633 subtilisin-like alkaline protease AprE (cell-free extract, 22.35
+      U/mL)
     node_type: GENE_OR_PROTEIN
-    description: Crude extracellular protease extract harvested from Bacillus spizizenii ATCC 6633 (historically
-      reported as B. subtilis ATCC 6633) grown on gelatin-supplemented modified Horikoshi medium in Nakiboglu
-      et al. (2001); marked UNGROUNDED because the crude extract was not fractionated to a specific protease
-      gene or protein.
-    protein_grounding_status: UNGROUNDED
+    gene_symbol: aprE
+    description: Extracellular alkaline serine protease subtilisin (AprE; UniProtKB:F1DKR8) in cell-free
+      extract of Bacillus spizizenii ATCC 6633 (historically reported as B. subtilis ATCC 6633) grown
+      on gelatin-supplemented modified Horikoshi medium in Nakiboglu et al. (2001).
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:F1DKR8
+      entry_name: F1DKR8_BACSC
+      protein_name: Subtilisin-like protease
+      gene_symbol: aprE
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:703612
+        label: Bacillus spizizenii ATCC 6633 = JCM 2499
+      interpro_ids:
+      - InterPro:IPR000209
+      - InterPro:IPR036852
+      - InterPro:IPR023827
+      - InterPro:IPR022398
+      - InterPro:IPR050131
+      - InterPro:IPR015500
+      - InterPro:IPR010259
+      - InterPro:IPR037045
+      pfam_ids:
+      - Pfam:PF05922
+      - Pfam:PF00082
+      functional_role: Extracellular alkaline serine protease subtilisin (AprE) secreted by Bacillus spizizenii
+        ATCC 6633, catalyzing proteolytic hydrolysis of gelatin emulsion proteins on waste radiographic
+        films.
+      annotation_note: Grounded to strain-matched TrEMBL entry UniProtKB:F1DKR8 (F1DKR8_BACSC; gene aprE)
+        for Bacillus spizizenii ATCC 6633 = JCM 2499 (NCBITaxon:703612).
+      evidence:
+      - source_ref: nakiboglu2001
+        supports: partial
+        explanation: Nakiboglu et al. (2001) stripped waste X-ray film gelatin with crude cell-free alkaline
+          protease extract from ATCC 6633 (22.35 U/mL casein activity at pH 8) without isolating aprE
+          or testing aprE deletion mutants.
   - id: radiology_xray_film_pieces
     label: Used hospital radiology X-ray film pieces (4 x 4 cm)
     node_type: MATERIAL_OR_PHASE
@@ -255,6 +385,13 @@ curation_history:
   action: EDIT
   summary: Added two causal graphs with explicit UNGROUNDED protease nodes for fungal and bacterial enzymatic
     stripping of waste X-ray films.
+- timestamp: '2026-10-22T01:38:11Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: EDIT
+  summary: Grounded Conidiobolus coronatus and Bacillus subtilis ATCC 6633 alkaline protease
+    emulsion-stripping nodes and mechanisms to live-verified UniProtKB:A0A137NYV2 and
+    UniProtKB:F1DKR8.
 history_refs:
 - history/records/waste-x-ray-films/2026-10-14T194146Z-codex-1b7408.yaml
 - history/records/waste-x-ray-films/2026-10-21T184653Z-claude-66623a.yaml
+- history/records/waste-x-ray-films/2026-10-22T013811Z-claude-001312.yaml

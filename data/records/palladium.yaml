@@ -87,23 +87,149 @@ mechanisms:
     explanation: The introduction cautions that copper is not a specific hydrogenase inhibitor. The mutant
       experiments concern D. fructosivorans, a different species, and cannot establish enzyme necessity
       in ATCC 29577. This narrows the 1998 mechanistic inference without refuting its observed Pd reduction.
+  protein_examples:
+  - uniprot_accession: UniProtKB:P13061
+    entry_name: PHNS_DESDA
+    protein_name: Periplasmic [NiFe] hydrogenase small subunit
+    gene_symbol: hydA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:525146
+      label: Desulfovibrio desulfuricans ATCC 27774
+    ec_numbers:
+    - EC:1.12.2.1
+    interpro_ids:
+    - InterPro:IPR027394
+    - InterPro:IPR006137
+    - InterPro:IPR037148
+    - InterPro:IPR037024
+    - InterPro:IPR001821
+    - InterPro:IPR006311
+    - InterPro:IPR019546
+    pfam_ids:
+    - Pfam:PF14720
+    - Pfam:PF01058
+    ncbifam_ids:
+    - NCBIfam:TIGR00391
+    - NCBIfam:TIGR01409
+    functional_role: Periplasmic [NiFe] cytochrome-c3 hydrogenase small iron-sulfur subunit (EC 1.12.2.1;
+      HydA / Ddes_1039) mediating H2 oxidation and periplasmic electron transfer in Desulfovibrio desulfuricans.
+    annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:P13061 (PHNS_DESDA; locus Ddes_1039)
+      for Desulfovibrio desulfuricans ATCC 27774 (NCBITaxon:525146), representing the inferred periplasmic
+      [NiFe] hydrogenase system in experimental strain Desulfovibrio desulfuricans ATCC 29577 (NCBITaxon:876).
+    evidence:
+    - source_ref: lloyd_1998
+      supports: partial
+      explanation: Lloyd et al. (1998) inferred periplasmic hydrogenase involvement in Desulfovibrio desulfuricans
+        ATCC 29577 from H2-dependent Pd(II) reduction and Cu2+ sensitivity without genetic knockout of
+        a specific hydrogenase subunit.
+  - uniprot_accession: UniProtKB:Q9L868
+    entry_name: Q9L868_DESDE
+    protein_name: Periplasmic [NiFe] hydrogenase large subunit
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:876
+      label: Desulfovibrio desulfuricans
+    ec_numbers:
+    - EC:1.12.2.1
+    interpro_ids:
+    - InterPro:IPR001501
+    - InterPro:IPR018194
+    - InterPro:IPR029014
+    - InterPro:IPR050867
+    pfam_ids:
+    - Pfam:PF27537
+    - Pfam:PF00374
+    functional_role: Catalytic Ni-Fe active-site large subunit of periplasmic [NiFe] cytochrome-c3 hydrogenase
+      (EC 1.12.2.1) in Desulfovibrio desulfuricans.
+    annotation_note: Grounded to species-level Desulfovibrio desulfuricans (NCBITaxon:876) TrEMBL entry
+      UniProtKB:Q9L868 (Q9L868_DESDE) for the catalytic large subunit of periplasmic [NiFe] hydrogenase.
+    evidence:
+    - source_ref: lloyd_1998
+      supports: partial
+      explanation: Representative Desulfovibrio desulfuricans periplasmic [NiFe] hydrogenase large subunit
+        implicated in H2-coupled Pd(II) reduction in Lloyd et al. (1998); specific subunit necessity was
+        not genetically tested in ATCC 29577.
 causal_graphs:
 - id: desulfuricans_pd_reduction_graph
   name: Desulfovibrio desulfuricans ATCC 29577 H2-coupled reduction of Pd(II) to cell-associated Pd(0)
-  description: Causal pathway linking inferred hydrogenase/reductase activity in resting Desulfovibrio
+  description: Causal pathway linking inferred periplasmic [NiFe] hydrogenase activity in resting Desulfovibrio
     desulfuricans ATCC 29577 cells to H2-dependent reduction of dissolved Pd(II) (palladium ammine chloride)
     into cell-associated metallic Pd(0) nanoparticles.
-  scope: RECORD_SPECIFIC_MECHANISM
+  scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: desulfuricans_pd_reduction
   nodes:
   - id: desulfuricans_hydrogenase_system
-    label: Desulfovibrio desulfuricans ATCC 29577 periplasmic hydrogenase / Pd(II)-reductase system
+    label: Desulfovibrio desulfuricans periplasmic [NiFe] hydrogenase (HydA/HydB)
     node_type: GENE_OR_PROTEIN
-    description: Inferred periplasmic hydrogenase / electron-transfer system in Desulfovibrio desulfuricans
-      ATCC 29577 (Lloyd et al. 1998; Mikheenko et al. 2008); marked UNGROUNDED because hydrogenase involvement
-      was inferred from H2 dependence and Cu2+ inhibition in ATCC 29577 without isolating a specific gene
-      or strain-matched UniProtKB protein.
-    protein_grounding_status: UNGROUNDED
+    gene_symbol: hydA
+    description: Periplasmic [NiFe] hydrogenase system in Desulfovibrio desulfuricans mediating H2 oxidation
+      coupled to Pd(II) reduction (Lloyd et al. 1998; Mikheenko et al. 2008), grounded to representative
+      Desulfovibrio desulfuricans small and large subunits (UniProtKB:P13061 and UniProtKB:Q9L868).
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:P13061
+      entry_name: PHNS_DESDA
+      protein_name: Periplasmic [NiFe] hydrogenase small subunit
+      gene_symbol: hydA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:525146
+        label: Desulfovibrio desulfuricans ATCC 27774
+      ec_numbers:
+      - EC:1.12.2.1
+      interpro_ids:
+      - InterPro:IPR027394
+      - InterPro:IPR006137
+      - InterPro:IPR037148
+      - InterPro:IPR037024
+      - InterPro:IPR001821
+      - InterPro:IPR006311
+      - InterPro:IPR019546
+      pfam_ids:
+      - Pfam:PF14720
+      - Pfam:PF01058
+      ncbifam_ids:
+      - NCBIfam:TIGR00391
+      - NCBIfam:TIGR01409
+      functional_role: Periplasmic [NiFe] cytochrome-c3 hydrogenase small iron-sulfur subunit (EC 1.12.2.1;
+        HydA / Ddes_1039) mediating H2 oxidation and periplasmic electron transfer in Desulfovibrio desulfuricans.
+      annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:P13061 (PHNS_DESDA; locus Ddes_1039)
+        for Desulfovibrio desulfuricans ATCC 27774 (NCBITaxon:525146), representing the inferred periplasmic
+        [NiFe] hydrogenase system in experimental strain Desulfovibrio desulfuricans ATCC 29577 (NCBITaxon:876).
+      evidence:
+      - source_ref: lloyd_1998
+        supports: partial
+        explanation: Lloyd et al. (1998) inferred periplasmic hydrogenase involvement in Desulfovibrio
+          desulfuricans ATCC 29577 from H2-dependent Pd(II) reduction and Cu2+ sensitivity without genetic
+          knockout of a specific hydrogenase subunit.
+    - uniprot_accession: UniProtKB:Q9L868
+      entry_name: Q9L868_DESDE
+      protein_name: Periplasmic [NiFe] hydrogenase large subunit
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:876
+        label: Desulfovibrio desulfuricans
+      ec_numbers:
+      - EC:1.12.2.1
+      interpro_ids:
+      - InterPro:IPR001501
+      - InterPro:IPR018194
+      - InterPro:IPR029014
+      - InterPro:IPR050867
+      pfam_ids:
+      - Pfam:PF27537
+      - Pfam:PF00374
+      functional_role: Catalytic Ni-Fe active-site large subunit of periplasmic [NiFe] cytochrome-c3 hydrogenase
+        (EC 1.12.2.1) in Desulfovibrio desulfuricans.
+      annotation_note: Grounded to species-level Desulfovibrio desulfuricans (NCBITaxon:876) TrEMBL entry
+        UniProtKB:Q9L868 (Q9L868_DESDE) for the catalytic large subunit of periplasmic [NiFe] hydrogenase.
+      evidence:
+      - source_ref: lloyd_1998
+        supports: partial
+        explanation: Representative Desulfovibrio desulfuricans periplasmic [NiFe] hydrogenase large subunit
+          implicated in H2-coupled Pd(II) reduction in Lloyd et al. (1998); specific subunit necessity
+          was not genetically tested in ATCC 29577.
   - id: aqueous_pd2_ammine_chloride
     label: Dissolved Pd(II) (0.5 mM palladium ammine chloride in pH 7 MOPS-NaOH with H2 headspace)
     node_type: CHEMICAL_ENTITY
@@ -156,7 +282,20 @@ curation_history:
   action: EDIT
   summary: Added causal graph with explicit UNGROUNDED hydrogenase node for H2-coupled Pd(II) reduction
     to cell-associated Pd(0) in palladium.yaml.
+- timestamp: '2026-10-22T01:38:07Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: EDIT
+  summary: Grounded Desulfovibrio desulfuricans hydrogenase system and Pd(II) bioreduction
+    mechanism to live-verified UniProtKB:P13061 (PHNS_DESDA, hydA) and UniProtKB:Q9L868.
+- timestamp: '2026-10-22T02:18:00Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: EDIT
+  summary: >-
+    Clarified in curation history that UniProtKB:P13061 (PHNS_DESDA, hydA) is the
+    periplasmic [NiFe] hydrogenase small subunit.
 history_refs:
 - history/records/palladium/2026-10-08T023612Z-codex-97c17b.yaml
 - history/records/palladium/2026-10-09T055145Z-codex-bea22f.yaml
 - history/records/palladium/2026-10-21T184653Z-claude-58233c.yaml
+- history/records/palladium/2026-10-22T013807Z-claude-001308.yaml
+- history/records/palladium/2026-10-22T021800Z-claude-001313.yaml

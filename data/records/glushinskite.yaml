@@ -61,11 +61,138 @@ mechanisms:
       necessity under all conditions. The Results also describe amorphous debris. The phase assignment
       is the authors' published identification, not a quantified pure-phase fraction or an isolated
       recovery yield. Neither magnesium-metal production nor industrial deployment is demonstrated.
+  protein_examples:
+  - uniprot_accession: UniProtKB:G3Y4N5
+    entry_name: CEXA_ASPNA
+    protein_name: Citrate exporter A
+    gene_symbol: cexA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:380704
+      label: Aspergillus niger ATCC 1015
+    reference_proteome_id: UP000006706
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Plasma-membrane MFS citrate exporter CexA in Aspergillus niger ATCC 1015 that secretes
+      intracellularly synthesized citric acid into the extracellular medium, contributing to medium acidification
+      during phosphate-mineral transformation and glushinskite biomineralization.
+    annotation_note: Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5 (CEXA_ASPNA;
+      locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015 (NCBITaxon:380704).
+    evidence:
+    - source_ref: suyamud_2020
+      supports: partial
+      explanation: Representative Aspergillus niger ATCC 1015 organic-acid exporter CexA for fungal acidification
+        during struvite/dittmarite transformation to glushinskite; Suyamud et al. (2020) did not assay
+        cexA mutants or isolate citric versus oxalic acid contributions.
+causal_graphs:
+- id: aspergillus_glushinskite_formation_graph
+  name: Aspergillus niger ATCC 1015 organic-acid-mediated phosphate-mineral dissolution and glushinskite
+    biomineralization
+  description: Causal pathway linking Aspergillus niger ATCC 1015 organic-acid secretion (represented by
+    citrate exporter CexA alongside oxalic acid production) to agar acidification, dissolution of natural
+    struvite or synthetic dittmarite feeds, and secondary glushinskite crystallization.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: fungal_glushinskite_formation
+  nodes:
+  - id: cexa_citrate_exporter
+    label: CexA plasma-membrane citrate exporter (cexA)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cexA
+    description: Major facilitator superfamily transporter exporting citric acid across the Aspergillus
+      niger ATCC 1015 plasma membrane.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:G3Y4N5
+      entry_name: CEXA_ASPNA
+      protein_name: Citrate exporter A
+      gene_symbol: cexA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:380704
+        label: Aspergillus niger ATCC 1015
+      reference_proteome_id: UP000006706
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Plasma-membrane MFS citrate exporter CexA in Aspergillus niger ATCC 1015 that secretes
+        intracellularly synthesized citric acid into the extracellular medium, contributing to medium
+        acidification during phosphate-mineral transformation and glushinskite biomineralization.
+      annotation_note: Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5 (CEXA_ASPNA;
+        locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015 (NCBITaxon:380704).
+      evidence:
+      - source_ref: suyamud_2020
+        supports: partial
+        explanation: Representative Aspergillus niger ATCC 1015 organic-acid exporter CexA for fungal
+          acidification during struvite/dittmarite transformation to glushinskite; Suyamud et al. (2020)
+          did not assay cexA mutants or isolate citric versus oxalic acid contributions.
+  - id: secreted_fungal_organic_acids
+    label: Secreted fungal organic acids and protons (agar acidification and oxalate supply)
+    node_type: CHEMICAL_ENTITY
+    description: Extracellular organic acids (oxalate, citrate) and protons secreted by growing Aspergillus
+      niger ATCC 1015 colonies.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: magnesium_ammonium_phosphate_feeds
+    label: Natural struvite or synthetic dittmarite feed (1% w/v in malt extract agar)
+    node_type: MATERIAL_OR_PHASE
+    description: Magnesium ammonium phosphate mineral feeds (natural struvite or XRD-identified synthetic
+      dittmarite) suspended in malt extract agar.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: glushinskite_product_crystals
+    label: Glushinskite (Mg(C2O4)(H2O)2) crystals
+    node_type: MATERIAL_OR_PHASE
+    description: Magnesium oxalate dihydrate crystals identified by XRD, SEM, and EDXA after 7 days of
+      fungal growth.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cexa_citrate_exporter
+    target: secreted_fungal_organic_acids
+    predicate: transports
+    relationship: efflux of citric acid contributing to extracellular acidification
+    description: CexA exports citrate into the agar medium alongside fungal oxalic acid secretion.
+    evidence:
+    - source_ref: suyamud_2020
+      supports: partial
+      explanation: Table 2 in Suyamud et al. (2020) documents agar acidification in both mineral-fed and
+        mineral-free Aspergillus niger ATCC 1015 cultures.
+  - source: secreted_fungal_organic_acids
+    target: magnesium_ammonium_phosphate_feeds
+    predicate: acts_on
+    relationship: acidolysis and oxalate reaction with magnesium ammonium phosphate feeds
+    description: Fungal acidification and secreted oxalate dissolve natural struvite and synthetic dittmarite
+      in solid medium.
+    evidence:
+    - source_ref: suyamud_2020
+      supports: support
+      explanation: Figures 1 and 3-5 and Table 2 in Suyamud et al. (2020) show mineral solubilization
+        and acidification during Aspergillus niger ATCC 1015 growth.
+  - source: magnesium_ammonium_phosphate_feeds
+    target: glushinskite_product_crystals
+    predicate: transforms_into
+    relationship: precipitation of magnesium oxalate dihydrate (glushinskite)
+    description: Released Mg2+ precipitates with fungal oxalate as crystalline glushinskite (Mg(C2O4)(H2O)2).
+    evidence:
+    - source_ref: suyamud_2020
+      supports: support
+      explanation: Figures 3-5 in Suyamud et al. (2020) characterize post-growth crystals as glushinskite
+        by SEM, EDXA, and powder XRD.
 curation_history:
 - timestamp: '2026-10-11T09:57:28.075910+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
   summary: Created glushinskite mineral identity with bounded fungal solid-medium phase-formation
     evidence.
+- timestamp: '2026-10-22T01:38:03Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: EDIT
+  summary: Added Aspergillus niger ATCC 1015 causal graph and reviewed Swiss-Prot UniProtKB:G3Y4N5
+    (CEXA_ASPNA) protein example for acidogenic glushinskite precipitation.
 history_refs:
 - history/records/glushinskite/2026-10-11T095727Z-codex-e44619.yaml
+- history/records/glushinskite/2026-10-22T013803Z-claude-001304.yaml
