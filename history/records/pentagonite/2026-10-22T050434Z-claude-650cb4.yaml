@@ -1,0 +1,30 @@
+history_version: 1
+target:
+  kind: record
+  slug: pentagonite
+  path: data/records/pentagonite.yaml
+session:
+  id: 2026-10-22T050434Z-claude-650cb4
+  timestamp: '2026-10-22T05:04:34Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+    agent_version: '1.0'
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Add structured IMA:1971-039 (Pentagonite) entry to identifiers to match the approved
+    IMA-CNMNC species number already cited in description and ima_2026_09 (Issue #801).'
+  details: 'Resolved Stage 4 review finding cmmmech-stage4-finding-0001 (cmmmech.mineral.missing-ima-identifiers-on-cited-species,
+    GitHub issue #801) by adding identifiers entry {id: IMA:1971-039, label: Pentagonite},
+    matching the IMA-CNMNC species approval number already documented in description and anchored
+    by source ima_2026_09.'
+  sections:
+  - identifiers
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/801

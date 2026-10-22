@@ -1,0 +1,101 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 1
+stage: 5
+revision: 1
+outcome: completed
+summary: Consumed the 3 Stage 4 review findings (cmmmech-stage4-finding-0001, cmmmech-stage4-finding-0002,
+  cmmmech-stage4-finding-0003) across 20 records, grouped them by root cause and repair
+  ownership into GRP-C1S5-001 (#801), GRP-C1S5-002 (#802), and GRP-C1S5-003 (#803),
+  applied all 20 record remediations with append-only EDIT history sidecars and regenerated
+  pages/, preserved all immutable Stage 4 review bundles untouched, and verified all
+  20 remediated records in structured review bundle 20261022T050900Z-stage5-remediation-verification
+  with verdict pass and 0 carry-forward findings.
+source_revision: 5a9c27bb6e6313e050b02a595240b2048e13cfdf
+scope_frozen_at: '2026-10-22T04:50:43Z'
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-04/revision-0001/evidence.yaml
+  sha256: 41b6901ec49ce42f9bd600393e6b2e933c530a17692dbb5b8f8353cc454892f7
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/issue_map.md
+  sha256: 5b72262889473eda8a59f34f0f7075301845f5d164d7d467151d45a68d07c56d
+  kind: issue_map
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/validation.md
+  sha256: be078d781066ca72d01e494308dfbbf7287a92fdc317c9ff26f7665c34abad0b
+  kind: validation
+findings:
+- finding_id: cmmmech-stage4-finding-0001
+  carried_from: cmmmech-stage4-finding-0001
+  status: resolved
+  group_id: GRP-C1S5-001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/801
+  summary: 17 mineral records (alburnite, briartite, cavansite, compreignacite, falottaite,
+    greigite, katsarosite, lindbergite, metavivianite, moolooite, pentagonite, pertlikite,
+    regerite, schwertmannite, struvite-k, wheatleyite, zincobriartite) state their
+    approved IMA-CNMNC species numbers in description and cite ima_2026_09 in sources
+    but omit the structured IMA:YYYY-NNN entry from identifiers.
+  disposition: 'Resolved under #801 (GRP-C1S5-001) by adding verified structured IMA:YYYY-NNN
+    identifiers and append-only EDIT history sidecars to all 17 mineral records; verified
+    in reviews/structured/20261022T050900Z-stage5-remediation-verification/review.yaml.'
+- finding_id: cmmmech-stage4-finding-0002
+  carried_from: cmmmech-stage4-finding-0002
+  status: resolved
+  group_id: GRP-C1S5-002
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/802
+  summary: data/records/wulfenite.yaml (cmmmech:wulfenite) is the only mineral record
+    among all 365 mineral records in CMMMech that omits ima_2026_09 (The New IMA List
+    of Minerals, September 2026) from sources.
+  disposition: 'Resolved under #802 (GRP-C1S5-002) by adding ima_2026_09 to data/records/wulfenite.yaml
+    sources with an append-only EDIT history sidecar; verified in reviews/structured/20261022T050900Z-stage5-remediation-verification/review.yaml.'
+- finding_id: cmmmech-stage4-finding-0003
+  carried_from: cmmmech-stage4-finding-0003
+  status: resolved
+  group_id: GRP-C1S5-003
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/803
+  summary: data/records/cobalt-rich-ferromanganese-crusts.yaml and data/records/rare-earth-rich-deep-sea-mud.yaml
+    serialize their top-level mechanisms list after curation_history and history_refs
+    instead of preceding the provenance footers.
+  disposition: 'Resolved under #803 (GRP-C1S5-003) by reordering top-level keys so
+    mechanisms precedes curation_history and history_refs on both records with append-only
+    EDIT history sidecars; verified in reviews/structured/20261022T050900Z-stage5-remediation-verification/review.yaml.'
+groups:
+- group_id: GRP-C1S5-001
+  finding_ids:
+  - cmmmech-stage4-finding-0001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/801
+  status: resolved
+  summary: Add structured IMA:YYYY-NNN identifiers and EDIT history sidecars to 17
+    mineral records that cite ima_2026_09 and state IMA numbers in description.
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/validation.md
+  disposition: Added structured IMA:YYYY-NNN identifiers to all 17 mineral records
+    with 17 append-only EDIT history sidecars and verified in 20261022T050900Z-stage5-remediation-verification.
+- group_id: GRP-C1S5-002
+  finding_ids:
+  - cmmmech-stage4-finding-0002
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/802
+  status: resolved
+  summary: Add ima_2026_09 (The New IMA List of Minerals, September 2026) to data/records/wulfenite.yaml
+    sources with an EDIT history sidecar.
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/validation.md
+  disposition: Added ima_2026_09 to data/records/wulfenite.yaml sources with an append-only
+    EDIT history sidecar and verified in 20261022T050900Z-stage5-remediation-verification.
+- group_id: GRP-C1S5-003
+  finding_ids:
+  - cmmmech-stage4-finding-0003
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/803
+  status: resolved
+  summary: Restore canonical top-level YAML key ordering (mechanisms before curation_history
+    and history_refs) in cobalt-rich-ferromanganese-crusts and rare-earth-rich-deep-sea-mud.
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-05/revision-0001/validation.md
+  disposition: Moved mechanisms before curation_history and history_refs in both records
+    with append-only EDIT history sidecars and verified in 20261022T050900Z-stage5-remediation-verification.
+carry_forward_ids: []
+infra_tasks: []
