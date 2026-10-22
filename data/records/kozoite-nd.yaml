@@ -46,6 +46,16 @@ sources:
     2000 publication, separately from later online posting.
   url: https://doi.org/10.2138/am-2000-0724
   accessed_on: '2026-10-16'
+- id: miyawaki2001
+  title: >-
+    Miyawaki R (2001). Mineralogical Researches in the National
+    Science Museum, Tokyo. The Rigaku-Denki Journal 32(2):34-40.
+    Author account in Japanese with English abstract; thermal
+    methods pages 36-37, Figure 1 page 37, Figure 2 page 38 and
+    reference 5 page 40 link the instrument printouts to Miyawaki
+    et al. (2000). All seven original pages inspected.
+  url: https://resources.rigaku.com/hubfs/2024%20Rigaku%20Global%20Site/Resource%20Hub/Knowledge%20Library/Rigaku%20Journals/Japanese/32%E5%B7%BB2%E5%8F%B7%E9%80%9A%E5%B7%BB76%E5%8F%B7%EF%BC%882001%E5%B9%B410%E6%9C%88%EF%BC%89/J0322034LN5.pdf
+  accessed_on: '2026-10-21'
 mechanisms:
 - id: natural_kozoite_nd_thermal_gas_release
   name: Abiotic thermal dehydration and decarbonation of natural kozoite-(Nd)
@@ -66,16 +76,25 @@ mechanisms:
     Miyawaki et al. (2000) used a Rigaku TG-DTA/GC-MS analyzer in
     helium, heating from room temperature to 900 °C at 20 °C/min
     with simultaneous analysis of the exhaust gas. The thermal
-    aliquot mass, helium flow, replication and measurement uncertainty
-    are not specified; the approximately 5 mg portions described
-    elsewhere belong to elemental analysis and are not assigned to
-    this thermal run. The two events are within one heating experiment,
+    aliquot mass and helium flow are not specified in that paper.
+    Miyawaki's 2001 author account reports approximately 15 mg;
+    its Figure 1 instrument header gives 14.840 mg, He 130 mL/min,
+    20.0 °C/min and a 0.3 s sampling interval. The Figure 2 GC/MS
+    header also gives 14.84 mg but labels the sample "direct in
+    Air 950C/20", conflicting with the helium conditions and the
+    900 °C endpoint reported in 2000. This label conflict is not
+    reconciled here. The approximately 5 mg portions belong to
+    separate elemental analysis. The two events are within one heating experiment,
     not independent replicated treatments. Estimated total evolved
     CO2 and H2O were 21.87 and 4.09 wt%, respectively, whereas the
     separate elemental analysis in Table 1 gives CO2-equivalent
     21.10 wt% and H2O-equivalent 5.44 wt%. Although the source calls
     these results comparable, their differences and unspecified
-    uncertainties are retained here. No microorganisms, solution
+    uncertainties are retained here. The 2001 account mentions
+    sensitivity correction for gas quantitation but provides no
+    numerical calibration factors or propagated uncertainty;
+    independent thermal replication remains unspecified.
+    No microorganisms, solution
     extraction assay, separated metal product or industrial-scale
     operation was involved.
   evidence:
@@ -90,6 +109,20 @@ mechanisms:
       thermogravimetric measurements. The record preserves the natural
       mixed-REE substrate and does not infer an unmeasured residue
       phase, recovery yield or microbial mechanism.
+  - source_ref: miyawaki2001
+    supports: partial
+    explanation: >-
+      Pages 36-38 add aliquot mass and labelled instrument settings
+      for the experiment discussed in the 2000 paper, cited as
+      reference 5 by both figure captions. They do not constitute
+      an independent replicate. The Figure 1 thermal record time
+      is 1999/06/14 10:44:03, whereas Figure 2 reports GC/MS
+      acquisition on 14 June 1999 at 10:02 am; neither supplies
+      a time zone or a reproducible alignment between time origins.
+      The incompatible atmosphere/endpoint label, missing numerical
+      calibration and uncertainty, and absent matched heated-residue
+      characterization prevent reconciliation of the two volatile
+      estimates or identification of a recovered oxide product.
 curation_history:
 - timestamp: '2026-10-16T02:42:30.560325Z'
   curator: codex (GPT-6; codex)
@@ -98,5 +131,13 @@ curation_history:
     Added verified mineral identity and bounded abiotic transformation
     evidence, preserving natural/synthetic boundaries, measured versus
     calculated values, source discrepancies and missing experimental details.
+- timestamp: '2026-10-21T21:09:56Z'
+  curator: codex (GPT-6; codex)
+  action: EDIT
+  summary: >-
+    Added instrument details from the 2001 author account, preserving
+    incompatible labels, unaligned instrument times, distinct volatile
+    estimates and missing calibration, uncertainty and residue evidence.
 history_refs:
 - history/records/kozoite-nd/2026-10-16T024216Z-codex-a567db.yaml
+- history/records/kozoite-nd/2026-10-21T210956Z-codex-e8671e.yaml

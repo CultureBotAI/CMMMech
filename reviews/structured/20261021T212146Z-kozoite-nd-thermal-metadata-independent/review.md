@@ -1,0 +1,690 @@
+# Independent full scientific review of kozoite-(Nd) thermal metadata
+
+- Review: 20261021T212146Z-kozoite-nd-thermal-metadata-independent
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-21T21:19:35.932549Z
+- Finished UTC: 2026-10-21T21:21:46.946545Z
+- Reviewer: codex /root/resume_405 (independent)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Complete frozen mineral identity and qualified abiotic thermal record are supported. Newly documented instrument metadata are accepted with explicit contradictory labels,unaligned clocks and missing calibration/residue limits. Zero owner findings; external source-provenance441-R1 is resolved by the preserved successor.
+
+## Scope And Provenance
+
+Entire exact frozen owner,source successor,history,prior native review and original scientific evidence.
+
+Selection: Parent-assigned independent scientific review; native inspect before exact-state judgment,with preliminary original audit separately preserved.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 1e80e6492730189f24c46bf98913dcc6017924f1.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:kozoite-nd | data/records/kozoite-nd.yaml | maintained | Kozoite-(Nd) |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Author actual exact-owner validation | passed | True | cmmmech:kozoite-nd | Actual0/chunk7c3a7b,1 valid record; unchanged frozen owner subsequently passed full corpus gate. |
+| Required rendered successor full gate | passed | True | cmmmech:kozoite-nd | Actual34510 exit0/b7e5e1:363passed,3skipped,49.52s,616records797histories. Prior failed52223 is separately preserved. |
+| Required nonempty corpus | passed | True | cmmmech:kozoite-nd | Actual22472 command1 exit0,616 valid. |
+| Trusted-base history validation | passed | True | cmmmech:kozoite-nd | Actual22472 command2 exit0,797 histories,0errors. |
+| Canonical synchronization | passed | True | cmmmech:kozoite-nd | Actual baseline80780 exit0/60c36f,22matches reused; governed bytes unchanged. |
+| Independent original rekey/Decimal diagnostics | passed | True | cmmmech:kozoite-nd | Actual0/85b27c;53Table1 joins,14calculations,all9author diagnostics agree. |
+| Independent exact successor/integrity/generated comparison | passed | True | cmmmech:kozoite-nd | Actual0/9a10de;2256assertions2147paths,633generatedpages632footer-only. |
+
+## Scientific And Domain Assessments
+
+### Mineral species and experimental material
+
+identity: supported. Targets: cmmmech:kozoite-nd.
+
+IMA identity and complete natural description match the originals. Nd0.85/La0.61 are on a two-cation basis; the material is mixed REE, not pure Nd or a commodity.
+
+### Original crystallographic limits
+
+evidence: supported. Targets: cmmmech:kozoite-nd.
+
+Pmcn,a4.9829(1),b8.5188(2),c7.2570(2)angstrom,Z4 and Rietveld interpretation agree. H was not located, nearly orthorhombic monoclinic symmetry not excluded. No new native structure/refinement claim.
+
+### Thermal and elemental aliquots remain separate
+
+evidence: supported. Targets: cmmmech:kozoite-nd.
+
+2001 metadata fills mass/flow/sampling gaps without assigning elemental ~5 mg aliquots to the thermal experiment. Natural mixed composition and unspecified independent thermal replication remain explicit.
+
+### Measured losses and inferred gas allocations
+
+quantity: supported. Targets: cmmmech:kozoite-nd.
+
+First485 C event16.07 wt% partitions11.98CO2+4.09H2O; second716 C event9.89 wt% is assignedCO2. Totalgas21.87/4.09 differs from separate elemental21.10/5.44. Arithmetic consistency does not validate calibration or statistical agreement.
+
+### Source conflicts and temporal alignment
+
+scope: supported. Targets: cmmmech:kozoite-nd.
+
+Both atmosphere/endpoint labels and printed clocks are preserved. Caption linkage and matching losses support study association without resolving clocks or claiming independent replication. Mass28 CO is caption-assigned CO2 fragmentation, not a third quantified evolved product.
+
+### No residue or deployment inference
+
+scope: supported. Targets: cmmmech:kozoite-nd.
+
+No matched heated-residue characterization supports Nd oxide identity,purity or recovery. Ideal composition and74.04% nominal remaining mass do not supply an isolated product assay. Synthetic Tahara materials,teaching reproductions and retrospective prose remain context.
+
+### Exact bytes, source correction and append-only curation
+
+provenance: supported. Targets: cmmmech:kozoite-nd.
+
+The owner change is limited to qualified2001source/context/evidence and truthfulEDIT. Prior scientific owner fields and native review are preserved. External441-R1 provider correction does not require or invent a native predecessor finding.
+
+### Current schema and actual required checks
+
+schema: supported. Targets: cmmmech:kozoite-nd.
+
+Evidence source_ref/supports/explanation and microbial:false are valid. No mass-based ConcentrationObservation is fabricated from thermal losses. Actual named,file/corpus/history/canonical checks and generated comparison support structural correctness, not independent scientific proof.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-441/data/records/kozoite-nd.yaml; Entire exact frozen owner, full base diff and schema fields | supports | Natural identity, one abiotic mechanism, both volatile estimates and new qualified instrument metadata assessed; no owner finding. |
+| original | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-441/article.pdf; All six original pages1076–1081, all four tables and six figures; chemistry p1077, thermal pp1077/1079 and Figure5 p1080 | supports | Natural Niikoba mixed-REE specimen, six-grain microprobe and separate triplicate ~5 mg elemental analyses. Helium heating to900 C at20 C/min; two mass-loss events and gas estimates, without matched-residue phase or recovery assay. |
+| author2001 | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-441/rigaku2001.pdf; All seven original pages34–40; English abstract p34, section4 pp36–37, Figure1 p37, Figure2 p38 and reference5 p40 | supports | The author links the printed instrument records to the2000 experiment. Figure1 labels14.840 mg, He130 mL/min,20.0 C/min,0.3 s; Figure2 Air950C/20 and its10:02am acquisition conflict with the helium/900 context and10:44:03 thermal clock. No numerical calibration factors or uncertainty resolve this. |
+| header | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-441-independent/rigaku-header-detail.png; Independent higher-resolution crop of original Figure1 header | supports | Literal thermal record1999/06/14 10:44:03 and print11:06:51 verified; no timezone inferred. Initial unpersisted reviewer print-time impression was corrected before any finding. |
+| ima | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-129/ima2026-09.pdf; September2026 definitions p1 and Kozoite-(Nd) row p116, both viewed | supports | Approved IMA1998-063, Nd(CO3)(OH), Japan. Official same-day acquisition is provenance-verified reuse after two current timeouts, not a fabricated new retrieval or latest-edition claim. |
+| identity-provenance | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-441/independent-ima-reuse.json; Original official11:12UTC acquisition receipt, exact digest, failed current root/reviewer retries and two renders | supports | Reviewer performed a failed retry and verified authority reuse; root independently viewed and accepted the same pages. This limited shared acquisition is disclosed. |
+| context | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-441/tahara2007.pdf; All nine original pages326–334 and all tables/figures, context only | context_only | Hydrothermal synthetic RE carbonate crystals are distinct from the natural heated residue. They do not supply its phase identity, purity or recovery. |
+| lecture | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-441/miyawaki-lecture2005.pdf; All seven lecture pages, especially thermal reproduction p6 and original Figure5 reproduction p7 | context_only | Teaching reproduction is not independent replication; unrelated introductory calibration examples do not calibrate this mineral run. |
+| retrospective | /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-441/miyawaki2007-gkk.pdf; Both original pages182–183 and citation to2001 account | context_only | Retrospective author explanation supports the citation trail, not new quantitative calibration or matched residue evidence. |
+| numeric | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-441-independent/preliminary-primary-rekey.json; Independent full Table1 rekey, selected structural/header values,53 Table1 joins and14 independent Decimal checks | supports | All nine author diagnostics agree. Censored Sr remains unquantified, gas and elemental estimates stay distinct, nominal remaining mass is not product recovery. |
+| source | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-441/research/sources/issue-441-kozoite-nd-thermal/20261021T211815Z.md; Entire corrected source report and companion, exact comparison against preserved initial pair | supports | Provider-only source correction441-R1 is resolved; all requests and scientific values unchanged. External source finding has no native predecessor to retire. |
+| integrity | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-441-independent/successor-check.json; 2,256 hash assertions across2,147 resolved paths and exact successor delta | supports | Original pair/index are preserved, owner/history/raw unchanged.633 generated pages checked;632 only footer digest, one intended material page. No browser visual claim. |
+| base | /private/tmp/cmmmech-backlog-20261019-fmj36s/review-441-independent/integrity-initial.json; 1,605 initial assertions,15 context inputs,1,413 baseline record/history paths | supports | The pre-edit owner resolves through exact Git-backed snapshot; all1,412 other baseline paths unchanged. Historical temporary paths are not claimed currently available. |
+| history | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-441/history/records/kozoite-nd/2026-10-21T210956Z-codex-e8671e.yaml; New canonical EDIT, distinct inline EDIT and linked original CREATE | supports | Actual curator/target/time and bounded source advance documented. Prior sidecar and previous scientific review remain immutable. |
+| prior | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-441/reviews/structured/20261016T025701Z-kozoite-nd-round109-independent/review.yaml; Entire earlier scientific bundle; findings empty | context_only | The earlier missing-flow/mass limitation is historically accurate for the then-inspected2000 article. Current whole-owner review independently assesses the new2001 metadata; no prior finding invented. |
+| gates | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-441-final-gates.json; Actual rendered successor34510 exit0/b7e5e1; standalone22472 exit0/50c751; baseline canonical80780/22 reused | supports | 363 tests pass,3 skipped,616 records/797 histories. Initial52223 failed solely on stale pages and is retained; rendering and actual passing retry resolve it. |
+| scoped | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-441-scoped-checks.json; Actual required corpus/history/diff commands and individual hashed logs | supports | 616 records valid;797 histories against trusted base;diff check0. A helper syntax failure occurred before any command and remains disclosed. |
+| search | /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-441/research/sources/issue-441-kozoite-nd-thermal/20261021T211815Z-evidence.json; Four dated web.run entries,15 exact queries and two opens; provider supplied in corrected successor | context_only | Author-executed current notice/source searches independently inspected. No affecting notice in returned windows; Crossref relation{} is not universal absence. |
+
+## Limits And Additional Notes
+
+- Natural mixed-REE specimen does not establish pureNd endmember behavior; H positions and possible monoclinic symmetry remain unresolved.
+- Helium/900 C narrative conflicts with Air950C/20 GC/MS label; printed instrument clocks lack timezone and alignment. No preferred correction inferred.
+- Gas response factors,standards,replicate variance and propagated uncertainties are unavailable. Both elemental and gas-based volatile estimates remain separate.
+- No matched heated-residue phase or elemental assay,oxide purity,metal recovery or industrial deployment is established.
+- Searches were author-executed and independently audited from saved dated receipts; no universal absence or current latest-edition authority claim.
+- Source finding441-R1 was external only,with no native predecessor. Its explicit resolution is retained in the independent external report; prior native findings were empty.
+- Known global renderer abiotic-heading presentation issue is separately tracked by489-P1; this review does not silently close it or broaden scientific acceptance.
+- Native whole-bundle checker and any post-native integration check are separate actual receipts,not preclaimed.
+- All31 article pages and IMA1/116 viewed; selected tables/header values rekeyed,not full curve digitization or re-refinement.
+- Initial missing-schema inspect attempt and reviewer header reread are disclosed in external review; no frozen author artifact was altered.
+- All633 rendered pages retained;632onlyfooter digest and one intended material-page content change.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261021T212146Z-kozoite-nd-thermal-metadata-independent
+kind: record
+repository: CultureBotAI/CMMMech
+title: Independent full scientific review of kozoite-(Nd) thermal metadata
+started_at: '2026-10-21T21:19:35.932549Z'
+finished_at: '2026-10-21T21:21:46.946545Z'
+reviewer:
+  identity: codex /root/resume_405
+  kind: agent
+  model: GPT-6
+  independence: independent
+  independence_basis: Root authored the owner and scientific source handoff. Reviewer
+    independently viewed all originals,rekeyed selected evidence,recalculated quantities
+    and verified exact bytes; no owner/source edits. Reviewer performed a failed authority
+    retry and verified same-day official IMA reuse, independently accepted by root.
+    This limited shared acquisition is disclosed.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Complete frozen mineral identity and qualified abiotic thermal record are
+  supported. Newly documented instrument metadata are accepted with explicit contradictory
+  labels,unaligned clocks and missing calibration/residue limits. Zero owner findings;
+  external source-provenance441-R1 is resolved by the preserved successor.
+source:
+  git_revision: 1e80e6492730189f24c46bf98913dcc6017924f1
+  state: working_tree
+  inputs:
+  - path: data/records/kozoite-nd.yaml
+    sha256: 0c3747365115029839b9372a1f95c6d8c4a1431acec2e8f8c4310eadf00d5b2f
+    role: target
+  - path: docs/records.md
+    sha256: 381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b
+    role: context
+  - path: history/records/kozoite-nd/2026-10-16T024216Z-codex-a567db.yaml
+    sha256: faf4698036f8c723b89dc2c77a381f9161778eede7a972354baaf0ec22a08e87
+    role: context
+  - path: history/records/kozoite-nd/2026-10-21T210956Z-codex-e8671e.yaml
+    sha256: 4a130cb6d47824aa194411784bce014bb85257583236002b36bb2d8d6fecd613
+    role: context
+  - path: research/sources/issue-441-kozoite-nd-thermal/20261021T211815Z-evidence.json
+    sha256: 85356839362690694388cfadc938fcaa5d1259220dc3ae179934249c670c3f78
+    role: context
+  - path: research/sources/issue-441-kozoite-nd-thermal/20261021T211815Z.md
+    sha256: ff6ebfdc452de85a44eac7cab70db1f71711260da547d4ed0f5e7c5c9a23d3d8
+    role: context
+  - path: reviews/structured/20261016T025701Z-kozoite-nd-round109-independent/review.yaml
+    sha256: eca6a498d64ccfabe2b3c2a5ea5a48edc253191c28bf06584e8c4951bcf3a8e9
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+targets:
+- target_id: cmmmech:kozoite-nd
+  path: data/records/kozoite-nd.yaml
+  label: Kozoite-(Nd)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/kozoite-nd.yaml
+    role: maintained scientific record
+scope:
+  description: Entire exact frozen owner,source successor,history,prior native review
+    and original scientific evidence.
+  selection: Parent-assigned independent scientific review; native inspect before
+    exact-state judgment,with preliminary original audit separately preserved.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:kozoite-nd
+checks:
+- check_id: named
+  name: Author actual exact-owner validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate data/records/kozoite-nd.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual0/chunk7c3a7b,1 valid record; unchanged frozen owner subsequently
+    passed full corpus gate.
+  target_ids:
+  - cmmmech:kozoite-nd
+  evidence_ids:
+  - source
+  - gates
+- check_id: full
+  name: Required rendered successor full gate
+  required: true
+  status: passed
+  command: just check
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual34510 exit0/b7e5e1:363passed,3skipped,49.52s,616records797histories.
+    Prior failed52223 is separately preserved.
+  target_ids:
+  - cmmmech:kozoite-nd
+  evidence_ids:
+  - gates
+- check_id: corpus
+  name: Required nonempty corpus
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual22472 command1 exit0,616 valid.
+  target_ids:
+  - cmmmech:kozoite-nd
+  evidence_ids:
+  - scoped
+- check_id: history
+  name: Trusted-base history validation
+  required: true
+  status: passed
+  command: uv run --locked cmmmech validate-history --base 1e80e6492730189f24c46bf98913dcc6017924f1
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual22472 command2 exit0,797 histories,0errors.
+  target_ids:
+  - cmmmech:kozoite-nd
+  evidence_ids:
+  - scoped
+- check_id: canonical
+  name: Canonical synchronization
+  required: true
+  status: passed
+  command: bash scripts/check_vendored_sync.sh
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual baseline80780 exit0/60c36f,22matches reused; governed bytes unchanged.
+  target_ids:
+  - cmmmech:kozoite-nd
+  evidence_ids:
+  - gates
+- check_id: numbers
+  name: Independent original rekey/Decimal diagnostics
+  required: true
+  status: passed
+  command: python3 /private/tmp/cmmmech-backlog-20261019-fmj36s/review-441-independent/independent-rekey.py
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual0/85b27c;53Table1 joins,14calculations,all9author diagnostics agree.
+  target_ids:
+  - cmmmech:kozoite-nd
+  evidence_ids:
+  - numeric
+- check_id: scope
+  name: Independent exact successor/integrity/generated comparison
+  required: true
+  status: passed
+  command: python3 /private/tmp/cmmmech-backlog-20261019-fmj36s/review-441-independent/check-successor.py
+  exit_code: 0
+  expected_exit_code: 0
+  summary: Actual0/9a10de;2256assertions2147paths,633generatedpages632footer-only.
+  target_ids:
+  - cmmmech:kozoite-nd
+  evidence_ids:
+  - integrity
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-441/data/records/kozoite-nd.yaml
+  locator: Entire exact frozen owner, full base diff and schema fields
+  accessed_at: '2026-10-21T21:21:46.946545Z'
+  snapshot_sha256: 0c3747365115029839b9372a1f95c6d8c4a1431acec2e8f8c4310eadf00d5b2f
+  support: supports
+  summary: Natural identity, one abiotic mechanism, both volatile estimates and new
+    qualified instrument metadata assessed; no owner finding.
+- evidence_id: original
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-441/article.pdf
+  locator: All six original pages1076–1081, all four tables and six figures; chemistry
+    p1077, thermal pp1077/1079 and Figure5 p1080
+  accessed_at: '2026-10-21T21:21:46.946545Z'
+  snapshot_sha256: 64d65e07b2593b886e2f0b4c1f088edc9de15a21991cbf45b521a54e13491622
+  support: supports
+  summary: Natural Niikoba mixed-REE specimen, six-grain microprobe and separate triplicate
+    ~5 mg elemental analyses. Helium heating to900 C at20 C/min; two mass-loss events
+    and gas estimates, without matched-residue phase or recovery assay.
+- evidence_id: author2001
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-441/rigaku2001.pdf
+  locator: All seven original pages34–40; English abstract p34, section4 pp36–37,
+    Figure1 p37, Figure2 p38 and reference5 p40
+  accessed_at: '2026-10-21T21:21:46.946545Z'
+  snapshot_sha256: cdde57d405c2e60141118ab81bca14685df0b35dc85d11193318bc64adaf1a00
+  support: supports
+  summary: The author links the printed instrument records to the2000 experiment.
+    Figure1 labels14.840 mg, He130 mL/min,20.0 C/min,0.3 s; Figure2 Air950C/20 and
+    its10:02am acquisition conflict with the helium/900 context and10:44:03 thermal
+    clock. No numerical calibration factors or uncertainty resolve this.
+- evidence_id: header
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-441-independent/rigaku-header-detail.png
+  locator: Independent higher-resolution crop of original Figure1 header
+  accessed_at: '2026-10-21T21:21:46.946545Z'
+  snapshot_sha256: 4717af567fc2e397fbd0faf46501149943243222b5d268133a12a2a7eb352e42
+  support: supports
+  summary: Literal thermal record1999/06/14 10:44:03 and print11:06:51 verified; no
+    timezone inferred. Initial unpersisted reviewer print-time impression was corrected
+    before any finding.
+- evidence_id: ima
+  kind: authority
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-129/ima2026-09.pdf
+  locator: September2026 definitions p1 and Kozoite-(Nd) row p116, both viewed
+  accessed_at: '2026-10-21T21:21:46.946545Z'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+  support: supports
+  summary: Approved IMA1998-063, Nd(CO3)(OH), Japan. Official same-day acquisition
+    is provenance-verified reuse after two current timeouts, not a fabricated new
+    retrieval or latest-edition claim.
+- evidence_id: identity-provenance
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-441/independent-ima-reuse.json
+  locator: Original official11:12UTC acquisition receipt, exact digest, failed current
+    root/reviewer retries and two renders
+  accessed_at: '2026-10-21T21:21:46.946545Z'
+  snapshot_sha256: 23959d2260ac62e60cf1ce5be634b76f1e0cf3855bd36edd18e4c984e90a181d
+  support: supports
+  summary: Reviewer performed a failed retry and verified authority reuse; root independently
+    viewed and accepted the same pages. This limited shared acquisition is disclosed.
+- evidence_id: context
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-441/tahara2007.pdf
+  locator: All nine original pages326–334 and all tables/figures, context only
+  accessed_at: '2026-10-21T21:21:46.946545Z'
+  snapshot_sha256: 4ba04e37fbba69700fb0a757c1b9efc60b8aae3d9d9cfc61fb0cc6bedd720ffe
+  support: context_only
+  summary: Hydrothermal synthetic RE carbonate crystals are distinct from the natural
+    heated residue. They do not supply its phase identity, purity or recovery.
+- evidence_id: lecture
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-441/miyawaki-lecture2005.pdf
+  locator: All seven lecture pages, especially thermal reproduction p6 and original
+    Figure5 reproduction p7
+  accessed_at: '2026-10-21T21:21:46.946545Z'
+  snapshot_sha256: 8b8ce86846742105fafe45feb9c2029605db5e1a3237b6fdb7727d958c033361
+  support: context_only
+  summary: Teaching reproduction is not independent replication; unrelated introductory
+    calibration examples do not calibrate this mineral run.
+- evidence_id: retrospective
+  kind: primary_source
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/sources-441/miyawaki2007-gkk.pdf
+  locator: Both original pages182–183 and citation to2001 account
+  accessed_at: '2026-10-21T21:21:46.946545Z'
+  snapshot_sha256: 7047c07d7ccced268b1e84c1546b569900a586d8828cc276a53d5615d88dd79e
+  support: context_only
+  summary: Retrospective author explanation supports the citation trail, not new quantitative
+    calibration or matched residue evidence.
+- evidence_id: numeric
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-441-independent/preliminary-primary-rekey.json
+  locator: Independent full Table1 rekey, selected structural/header values,53 Table1
+    joins and14 independent Decimal checks
+  accessed_at: '2026-10-21T21:21:46.946545Z'
+  snapshot_sha256: 449e403671fd975affe5e32fe593f3f3e1713f7666d5c2e49b29111d98dad438
+  support: supports
+  summary: All nine author diagnostics agree. Censored Sr remains unquantified, gas
+    and elemental estimates stay distinct, nominal remaining mass is not product recovery.
+- evidence_id: source
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-441/research/sources/issue-441-kozoite-nd-thermal/20261021T211815Z.md
+  locator: Entire corrected source report and companion, exact comparison against
+    preserved initial pair
+  accessed_at: '2026-10-21T21:21:46.946545Z'
+  snapshot_sha256: ff6ebfdc452de85a44eac7cab70db1f71711260da547d4ed0f5e7c5c9a23d3d8
+  support: supports
+  summary: Provider-only source correction441-R1 is resolved; all requests and scientific
+    values unchanged. External source finding has no native predecessor to retire.
+- evidence_id: integrity
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-441-independent/successor-check.json
+  locator: 2,256 hash assertions across2,147 resolved paths and exact successor delta
+  accessed_at: '2026-10-21T21:21:46.946545Z'
+  snapshot_sha256: 3cc331f5d0437a8119b750adccee5319161c7fd4e7897aaab4f4cfe7eb1821cf
+  support: supports
+  summary: Original pair/index are preserved, owner/history/raw unchanged.633 generated
+    pages checked;632 only footer digest, one intended material page. No browser visual
+    claim.
+- evidence_id: base
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/review-441-independent/integrity-initial.json
+  locator: 1,605 initial assertions,15 context inputs,1,413 baseline record/history
+    paths
+  accessed_at: '2026-10-21T21:21:46.946545Z'
+  snapshot_sha256: 4b39406dc8f85a87c32bc9731c4dbd3ab51652574a07c5beb6dd99662df8040f
+  support: supports
+  summary: The pre-edit owner resolves through exact Git-backed snapshot; all1,412
+    other baseline paths unchanged. Historical temporary paths are not claimed currently
+    available.
+- evidence_id: history
+  kind: record_content
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-441/history/records/kozoite-nd/2026-10-21T210956Z-codex-e8671e.yaml
+  locator: New canonical EDIT, distinct inline EDIT and linked original CREATE
+  accessed_at: '2026-10-21T21:21:46.946545Z'
+  snapshot_sha256: 4a130cb6d47824aa194411784bce014bb85257583236002b36bb2d8d6fecd613
+  support: supports
+  summary: Actual curator/target/time and bounded source advance documented. Prior
+    sidecar and previous scientific review remain immutable.
+- evidence_id: prior
+  kind: prior_review
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-441/reviews/structured/20261016T025701Z-kozoite-nd-round109-independent/review.yaml
+  locator: Entire earlier scientific bundle; findings empty
+  accessed_at: '2026-10-21T21:21:46.946545Z'
+  snapshot_sha256: eca6a498d64ccfabe2b3c2a5ea5a48edc253191c28bf06584e8c4951bcf3a8e9
+  support: context_only
+  summary: The earlier missing-flow/mass limitation is historically accurate for the
+    then-inspected2000 article. Current whole-owner review independently assesses
+    the new2001 metadata; no prior finding invented.
+- evidence_id: gates
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-441-final-gates.json
+  locator: Actual rendered successor34510 exit0/b7e5e1; standalone22472 exit0/50c751;
+    baseline canonical80780/22 reused
+  accessed_at: '2026-10-21T21:21:46.946545Z'
+  snapshot_sha256: b1e3cbac107cf06282d820086ddeedb14cfd7e557574869cdbe9a6376e0c016d
+  support: supports
+  summary: 363 tests pass,3 skipped,616 records/797 histories. Initial52223 failed
+    solely on stale pages and is retained; rendering and actual passing retry resolve
+    it.
+- evidence_id: scoped
+  kind: validation
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-441-scoped-checks.json
+  locator: Actual required corpus/history/diff commands and individual hashed logs
+  accessed_at: '2026-10-21T21:21:46.946545Z'
+  snapshot_sha256: 45b6954c0bf3359625e8672265b95449e22c13bf8179ae6b8ba2f336e6eedf1d
+  support: supports
+  summary: 616 records valid;797 histories against trusted base;diff check0. A helper
+    syntax failure occurred before any command and remains disclosed.
+- evidence_id: search
+  kind: search
+  reference: /private/tmp/cmmmech-backlog-20261019-fmj36s/issue-441/research/sources/issue-441-kozoite-nd-thermal/20261021T211815Z-evidence.json
+  locator: Four dated web.run entries,15 exact queries and two opens; provider supplied
+    in corrected successor
+  accessed_at: '2026-10-21T21:21:46.946545Z'
+  snapshot_sha256: 85356839362690694388cfadc938fcaa5d1259220dc3ae179934249c670c3f78
+  support: context_only
+  summary: Author-executed current notice/source searches independently inspected.
+    No affecting notice in returned windows; Crossref relation{} is not universal
+    absence.
+  search_scope: Saved exact requests/UTC bounds and no API domain/date filters; underlying
+    engine not identified. Bounded source/dedup roots include hidden,ignored and followed
+    files, not machinewide search.
+assessments:
+- assessment_id: identity
+  area: identity
+  topic: Mineral species and experimental material
+  outcome: supported
+  summary: IMA identity and complete natural description match the originals. Nd0.85/La0.61
+    are on a two-cation basis; the material is mixed REE, not pure Nd or a commodity.
+  target_ids:
+  - cmmmech:kozoite-nd
+  evidence_ids:
+  - owner
+  - original
+  - ima
+  dimensions:
+  - name: material_form
+    value: Natural kozoite-(Nd),Niikoba,Hizen-cho,Japan
+    definition: Alkali olivine basalt cavity crystals <10 micrometres; distinct synthetic
+      materials not pooled.
+    evidence_ids:
+    - original
+  - name: criticality
+    value: No jurisdictional designation asserted
+    definition: IMA is mineral identity authority, not a criticality list.
+    evidence_ids:
+    - owner
+    - ima
+- assessment_id: structure
+  area: evidence
+  topic: Original crystallographic limits
+  outcome: supported
+  summary: Pmcn,a4.9829(1),b8.5188(2),c7.2570(2)angstrom,Z4 and Rietveld interpretation
+    agree. H was not located, nearly orthorhombic monoclinic symmetry not excluded.
+    No new native structure/refinement claim.
+  target_ids:
+  - cmmmech:kozoite-nd
+  evidence_ids:
+  - owner
+  - original
+- assessment_id: methods
+  area: evidence
+  topic: Thermal and elemental aliquots remain separate
+  outcome: supported
+  summary: 2001 metadata fills mass/flow/sampling gaps without assigning elemental
+    ~5 mg aliquots to the thermal experiment. Natural mixed composition and unspecified
+    independent thermal replication remain explicit.
+  target_ids:
+  - cmmmech:kozoite-nd
+  evidence_ids:
+  - owner
+  - original
+  - author2001
+  dimensions:
+  - name: substrate
+    value: Natural mixed-REE mineral
+    definition: Six-grain chemistry is distinct from thermal aliquot and separate
+      triplicate elemental assay.
+    evidence_ids:
+    - original
+  - name: conditions
+    value: He, room temperature to900 C,20 C/min;14.840 mg header,He130 mL/min,0.3
+      s
+    definition: The Air950C/20 label is conflicting metadata, not an adopted alternative
+      experiment.
+    evidence_ids:
+    - original
+    - author2001
+  - name: organism_biomass
+    value: None; microbial:false
+    definition: Abiotic mineral heating, no organism,strain,inactive biomass or molecular
+      biological mechanism.
+    evidence_ids:
+    - owner
+- assessment_id: outcome
+  area: quantity
+  topic: Measured losses and inferred gas allocations
+  outcome: supported
+  summary: First485 C event16.07 wt% partitions11.98CO2+4.09H2O; second716 C event9.89
+    wt% is assignedCO2. Totalgas21.87/4.09 differs from separate elemental21.10/5.44.
+    Arithmetic consistency does not validate calibration or statistical agreement.
+  target_ids:
+  - cmmmech:kozoite-nd
+  evidence_ids:
+  - owner
+  - original
+  - author2001
+  - numeric
+  dimensions:
+  - name: outcome
+    value: Two endothermic mass-loss events and evolved-gas identities
+    definition: Gas allocation is author-estimated; no raw detector integration or
+      response factor reconstruction.
+    evidence_ids:
+    - original
+    - author2001
+  - name: controls_uncertainty
+    value: No independent thermal replication, numerical calibration factors or propagated
+      uncertainty supplied
+    definition: Empty-pan header is a reference label, not a quantified full blank/control
+      series.
+    evidence_ids:
+    - author2001
+- assessment_id: conflicts
+  area: scope
+  topic: Source conflicts and temporal alignment
+  outcome: supported
+  summary: Both atmosphere/endpoint labels and printed clocks are preserved. Caption
+    linkage and matching losses support study association without resolving clocks
+    or claiming independent replication. Mass28 CO is caption-assigned CO2 fragmentation,
+    not a third quantified evolved product.
+  target_ids:
+  - cmmmech:kozoite-nd
+  evidence_ids:
+  - owner
+  - author2001
+  - header
+  - source
+- assessment_id: product
+  area: scope
+  topic: No residue or deployment inference
+  outcome: supported
+  summary: No matched heated-residue characterization supports Nd oxide identity,purity
+    or recovery. Ideal composition and74.04% nominal remaining mass do not supply
+    an isolated product assay. Synthetic Tahara materials,teaching reproductions and
+    retrospective prose remain context.
+  target_ids:
+  - cmmmech:kozoite-nd
+  evidence_ids:
+  - owner
+  - original
+  - context
+  - lecture
+  - retrospective
+  - numeric
+  dimensions:
+  - name: deployment
+    value: Laboratory abiotic heating only
+    definition: No industrial extraction or recovery efficiency.
+    evidence_ids:
+    - owner
+    - original
+- assessment_id: history
+  area: provenance
+  topic: Exact bytes, source correction and append-only curation
+  outcome: supported
+  summary: The owner change is limited to qualified2001source/context/evidence and
+    truthfulEDIT. Prior scientific owner fields and native review are preserved. External441-R1
+    provider correction does not require or invent a native predecessor finding.
+  target_ids:
+  - cmmmech:kozoite-nd
+  evidence_ids:
+  - owner
+  - history
+  - prior
+  - source
+  - integrity
+  - base
+- assessment_id: validation
+  area: schema
+  topic: Current schema and actual required checks
+  outcome: supported
+  summary: Evidence source_ref/supports/explanation and microbial:false are valid.
+    No mass-based ConcentrationObservation is fabricated from thermal losses. Actual
+    named,file/corpus/history/canonical checks and generated comparison support structural
+    correctness, not independent scientific proof.
+  target_ids:
+  - cmmmech:kozoite-nd
+  evidence_ids:
+  - owner
+  - gates
+  - scoped
+  - integrity
+findings: []
+actions: []
+limitations:
+- Natural mixed-REE specimen does not establish pureNd endmember behavior; H positions
+  and possible monoclinic symmetry remain unresolved.
+- Helium/900 C narrative conflicts with Air950C/20 GC/MS label; printed instrument
+  clocks lack timezone and alignment. No preferred correction inferred.
+- Gas response factors,standards,replicate variance and propagated uncertainties are
+  unavailable. Both elemental and gas-based volatile estimates remain separate.
+- No matched heated-residue phase or elemental assay,oxide purity,metal recovery or
+  industrial deployment is established.
+- Searches were author-executed and independently audited from saved dated receipts;
+  no universal absence or current latest-edition authority claim.
+- Source finding441-R1 was external only,with no native predecessor. Its explicit
+  resolution is retained in the independent external report; prior native findings
+  were empty.
+- Known global renderer abiotic-heading presentation issue is separately tracked by489-P1;
+  this review does not silently close it or broaden scientific acceptance.
+- Native whole-bundle checker and any post-native integration check are separate actual
+  receipts,not preclaimed.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261016T025701Z-kozoite-nd-round109-independent
+  relationship: Preserved earlier whole-owner scientific review. Current full reassessment
+    adds newly accessible2001instrument context; historical access limits remain truthful
+    and no old finding is retired.
+notes:
+- All31 article pages and IMA1/116 viewed; selected tables/header values rekeyed,not
+  full curve digitization or re-refinement.
+- Initial missing-schema inspect attempt and reviewer header reread are disclosed
+  in external review; no frozen author artifact was altered.
+- All633 rendered pages retained;632onlyfooter digest and one intended material-page
+  content change.
+```
