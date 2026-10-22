@@ -8,13 +8,28 @@ The knowledge base provides a LinkML schema, an offline strict validator,
 tests, CI, and a growing reviewed corpus. Each record has a
 timestamped scientific review; synthetic test fixtures remain separate.
 
-The catalogue currently contains 616 material records.
+The catalogue currently contains 631 material records.
 
-The [latest curation report](research/ingests/round117-frontier-20261019.md) links
+The [latest curation report](research/ingests/round118-frontier-20261022.md) links
 the new records, independent reviews, source dossiers and remaining evidence gaps.
 
 | Material record | Curated evidence | Evidence boundary |
 |---|---|---|
+| [Petersenite-(Ce)](data/records/petersenite-ce.yaml) | Natural Poudrette quarry sodium-REE carbonate identity (`IMA:1992-048`), WDS chemistry, and monoclinic `P21` structure | Calculated `CO2`, `1:1` vs `2:1` Na:REE stoichiometry vs remondite-(Ce), and cold-HCl effervescence kept distinct from extraction |
+| [Lukechangite-(Ce)](data/records/lukechangite-ce.yaml) | Natural Poudrette quarry sodium-REE fluorocarbonate identity (`IMA:1996-033`), WDS chemistry, and hexagonal `P63/mmc` structure | Perfect `{0001}` cleavage, calculated `CO2`, and structural isomorphism with synthetic `Na3La2(CO3)4F` retained |
+| [Qaqarssukite-(Ce)](data/records/qaqarssukite-ce.yaml) | Natural Qaqarssuk carbonatite barium-REE fluorocarbonate identity (`IMA:2004-019`), WDS chemistry, and trigonal `P-3c1` structure | Reversed Ba/Ce layer ordering vs huanghoite-(Ce) and calculated `CO2` retained; no extraction mechanism |
+| [Calkinsite-(Ce)](data/records/calkinsite-ce.yaml) | Natural Bearpaw Mountains hydrated REE carbonate identity (`1987 s.p.`), wet-chemical/XRF analysis, and orthorhombic `P21221` cell | Admixed barite/ancylite deduction and Table 5 `La2O3` mole-ratio misprint (`0.608` vs `0.0608`) explicitly preserved |
+| [Horváthite-(Y)](data/records/horvathite-y.yaml) | Natural Poudrette quarry sodium-yttrium fluorocarbonate identity (`IMA:1996-032`), WDS chemistry, and orthorhombic `Pmcn` structure | Calculated `CO2` and slow ambient `1:1` HCl effervescence kept distinct from metallurgical recovery |
+| [Sheldrickite](data/records/sheldrickite.yaml) | Natural sodium-calcium fluorocarbonate hydrate identity (`IMA:1996-019`), trigonal `P32` structure, and `N2` TGA dehydration | Single-step `160–265 °C` (`5.61 wt%` `H2O`) dehydration and `>350 °C` breakdown are analytical, not F recovery |
+| [Sabinaite](data/records/sabinaite.yaml) | Natural Francon/Mont Saint-Hilaire sodium-zirconium-titanium oxycarbonate identity (`IMA:1978-071`), `C2/c` refinement, and DTA-TGA decarbonation | Revised `Na4Zr2TiO4(CO3)4` stoichiometry and two-stage `28.1 wt%` `CO2` loss to cubic/monoclinic `ZrO2` preserved |
+| [Gaidonnayite](data/records/gaidonnayite.yaml) | Natural Mont Saint-Hilaire hydrated sodium zirconosilicate identity (`IMA:1973-008`), `P21nb` structure, and thermal transformation to `Na2ZrSi3O9` | Corrected `O(5)` coordinate (`y = 0.0149`), dimorphism with catapleiite, and irreversible `9.25 wt%` `H2O` loss retained |
+| [Gittinsite](data/records/gittinsite.yaml) | Natural Kipawa/Strange Lake calcium zirconosilicate identity (`IMA:1979-034`), WDS chemistry, and monoclinic `C2` refinement | Intergrowth with apophyllite/eudialyte and non-centrosymmetric thortveitite-like topology preserved |
+| [Lemoynite](data/records/lemoynite.yaml) | Natural Mont Saint-Hilaire hydrated Na-Ca zirconosilicate identity (`IMA:1968-013`), `C2/c` tunnel refinement, and channel dehydration | Revised `6H2O` vs `5H2O` stoichiometry and `135–200 °C` dehydration with unchanged XRD framework retained |
+| [Natrolemoynite](data/records/natrolemoynite.yaml) | Natural Poudrette quarry hydrated sodium zirconosilicate identity (`IMA:1996-063`), WDS/TGA chemistry, and monoclinic `C2/m` structure | Split tunnel Na/water sites and revision of the lemoynite group to `[ZrSi5O13]2-` hexameric rings preserved |
+| [Weloganite](data/records/weloganite.yaml) | Natural Francon quarry Na-Sr-Zr carbonate hydrate identity (`IMA:1967-042`), triclinic `P1` refinement, and three-stage DTA-TGA decomposition | Essential Na omitted in 1968 analysis (`Na2Sr3Zr(CO3)6·3H2O`) and thermal breakdown to `SrCO3` + `SrZrO3` preserved |
+| [Bijvoetite-(Y)](data/records/bijvoetite-y.yaml) | Natural Shinkolobwe uranyl-REE carbonate hydrate identity (`1987 s.p.`), WDS chemistry, and monoclinic `B1211` sheet structure | Revision from orthorhombic `C2ma` to `[(UO2)4O2(OH)2(CO3)4(Y,REE)2(H2O)7]·4H2O` and M2 Ln splitting retained |
+| [Retzian-(Nd)](data/records/retzian-nd.yaml) | Natural Sterling Hill Mn-REE arsenate identity (`1982 s.p.`), holotype `NMNH 143762` EMPA chemistry, and orthorhombic `Pban` cell | Nd>Ce>La zoning vs retzian-(La) and calculated `H2O` stoichiometry retained; no extraction mechanism |
+| [Okanoganite-(Y)](data/records/okanoganite-y.yaml) | Natural Golden Horn batholith REE-Y-Ca-Na-Fe fluoro-borosilicate identity (`1987 s.p.`) and 2004 EMPA-SIMS-SREF `R3m` refinement | Light-element SIMS (`B`, `Be`, `Li`, `H`) and revised `[Si4B2O18]18-` modular vicanite-group formula preserved |
 | [Electrical steel](data/records/electrical-steel.yaml) | U.S. DOE 2023 Critical Material commodity identity and USGS ferrosilicon/steel supply-chain context | Non-microbial alloy commodity; distinct from elemental silicon and bulk carbon steel |
 | [Silicon carbide](data/records/silicon-carbide.yaml) | U.S. DOE 2023 Critical Material commodity identity and USGS manufactured-abrasive/semiconductor context | Manufactured abrasive/semiconductor commodity kept distinct from natural moissanite |
 | [Synthetic graphite](data/records/synthetic-graphite.yaml) | U.S. critical-mineral commodity identity and USGS Minerals Yearbook domestic shipment/trade context | Manufactured graphite kept distinct from natural graphite and unquantified anode recycling |
