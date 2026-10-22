@@ -1,0 +1,820 @@
+schema_version: 1.0.0
+review_id: 20261022T050900Z-stage5-remediation-verification
+title: 'Stage 5 Post-Remediation Verification Review: 20 Remediated CMMMech Records'
+repository: CultureBotAI/CMMMech
+kind: category
+started_at: '2026-10-22T05:05:00Z'
+finished_at: '2026-10-22T05:09:00Z'
+skill: .claude/skills/review-yaml-category/SKILL.md
+completion: completed
+verdict: pass
+scientific_review: true
+summary: 'Post-remediation scientific and structural verification of all 20 CMMMech
+  records remediated in Stage 5 (run mech-goal-sequence-20261019, cycle 1, stage 5)
+  across GitHub issues #801 (GRP-C1S5-001: cmmmech-stage4-finding-0001, 17 mineral
+  records with structured IMA:YYYY-NNN identifiers added), #802 (GRP-C1S5-002: cmmmech-stage4-finding-0002,
+  wulfenite ima_2026_09 source citation added), and #803 (GRP-C1S5-003: cmmmech-stage4-finding-0003,
+  canonical key ordering restored on cobalt-rich-ferromanganese-crusts and rare-earth-rich-deep-sea-mud).
+  All 3 carried-forward Stage 4 findings are verified as resolved with append-only
+  EDIT history sidecars.'
+reviewer:
+  identity: antigravity / cmmmech-stage5-remediation-reviewer
+  kind: agent
+  independence: self_review
+  independence_basis: Stage 5 post-remediation verification review (.claude/skills/review-yaml-category/SKILL.md)
+    of the 20 remediated records against the immutable Stage 4 review bundles.
+  model: claude-opus-4-6
+source:
+  git_revision: 5a9c27bb6e6313e050b02a595240b2048e13cfdf
+  state: working_tree
+  inputs:
+  - path: data/records/alburnite.yaml
+    sha256: aa365588b3f06feb55d2adc6f72f75544c1b67105eb1597a003f8d4b92a1c3bb
+    role: target
+  - path: data/records/briartite.yaml
+    sha256: 94b78915c9e86bb7dae8bdf5c6a01e63be4f877af8fa89091bf78852913fdfae
+    role: target
+  - path: data/records/cavansite.yaml
+    sha256: a41356decab8da8cf1415187d1b8aa966858058203c7473a18fe25d1685471da
+    role: target
+  - path: data/records/cobalt-rich-ferromanganese-crusts.yaml
+    sha256: 2fb1a8680f44580a73bd26c503266ff645f03c3fef01380f23ad15db532a04f1
+    role: target
+  - path: data/records/compreignacite.yaml
+    sha256: 7c87e0afd4b27b653d8a4d76e8f4b5c17a2fa3aabd022a85e323e80b3f463bfe
+    role: target
+  - path: data/records/falottaite.yaml
+    sha256: 59de2eed5840f56d45b11d0e856f098f751bd9df16fc950ab0750dd25336cd75
+    role: target
+  - path: data/records/greigite.yaml
+    sha256: a71b47bd690656909b6d9dc48affd60bc2522fe93dbb15c0eb5746c41c244da3
+    role: target
+  - path: data/records/katsarosite.yaml
+    sha256: 2b5712225072094be6d4d42379dbd9a796c6f94b5b063349fbea290b655e31c9
+    role: target
+  - path: data/records/lindbergite.yaml
+    sha256: 0eaba5e602aca9b6beaa8da4604d8eff487e5fac5bbb5b8dc915582d57dadd37
+    role: target
+  - path: data/records/metavivianite.yaml
+    sha256: 42e4fbdcabbd82191c0d963f0b451f5cfa9818b75b4cdc93ff34bd8fa7e4a352
+    role: target
+  - path: data/records/moolooite.yaml
+    sha256: fbdd64d6276f4d5e1060edf25ce49200bf6e02bf6cdb6b53c7dc4bafbc31db98
+    role: target
+  - path: data/records/pentagonite.yaml
+    sha256: 362c8abcbcfb0f3aeee036aea0b7e4ee85e3b3715683d6f234229596b96e948b
+    role: target
+  - path: data/records/pertlikite.yaml
+    sha256: 07598a1e07ba5f4a0f9679428eb55ef190b8e91b7433948323e3041659cf597a
+    role: target
+  - path: data/records/rare-earth-rich-deep-sea-mud.yaml
+    sha256: 82896cb3ce5eb02dfaee2a537582b6a414c192332fffb582ce30ba1b31154151
+    role: target
+  - path: data/records/regerite.yaml
+    sha256: c6418e4caf55bd5b9f6422127d95fbddc8be18833412f20da53d8df5a513acbc
+    role: target
+  - path: data/records/schwertmannite.yaml
+    sha256: 2bf422ac03be7876f094e452d4f07751a1738ad02918fdd7eede2bce9363e711
+    role: target
+  - path: data/records/struvite-k.yaml
+    sha256: d505af3c200d55ee4d0bf18963c59ffe72d76cffbcaba0b3d21e09f23f53067e
+    role: target
+  - path: data/records/wheatleyite.yaml
+    sha256: 1947f067cdac1fa94eb4b5c5fb689c4cb673502566c9f724a432a9f32a3559c5
+    role: target
+  - path: data/records/wulfenite.yaml
+    sha256: bf3af26bad2841a01646628fba4779b6fd08bc5faf16eba5526bcb791d4f3cd0
+    role: target
+  - path: data/records/zincobriartite.yaml
+    sha256: 24b39e275b1f4ad082575f5cb22884be7d87dca3dadfd79508de222e2eedb280
+    role: target
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-04/revision-0001/evidence.yaml
+    sha256: 41b6901ec49ce42f9bd600393e6b2e933c530a17692dbb5b8f8353cc454892f7
+    role: context
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-04/revision-0001/review_findings.yaml
+    sha256: 7967f12379a050de368944152b8149d8f31afb1fed883f43148f07a13ed71dcf
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+  - path: src/cmmmech/validation.py
+    sha256: 63ff33d51b753dd715e6bd1c3e5f60a99e4fcb41b3aee68d536306a862d922e2
+    role: context
+targets:
+- target_id: cmmmech:alburnite
+  path: data/records/alburnite.yaml
+  label: Alburnite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 483158892bcee9f762a0590abe72ddb81ffedd6b0a695269416416c95429dccf
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/alburnite.yaml
+    role: maintained_record
+- target_id: cmmmech:briartite
+  path: data/records/briartite.yaml
+  label: Briartite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 57cdc2b3905a3275af9e19fe9131eae2478297a84283b68258d92073b3fa8783
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/briartite.yaml
+    role: maintained_record
+- target_id: cmmmech:cavansite
+  path: data/records/cavansite.yaml
+  label: Cavansite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: fa90465a9b74d04b91317b054fb5c36693fa73d3da9f30576ae86626c88d4ef0
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cavansite.yaml
+    role: maintained_record
+- target_id: cmmmech:cobalt-rich-ferromanganese-crusts
+  path: data/records/cobalt-rich-ferromanganese-crusts.yaml
+  label: Cobalt-rich ferromanganese crusts
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 3b332cd375cf3cd3bafb40d123301034dd8822b3d8be6b8a28c3eb572c80822c
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cobalt-rich-ferromanganese-crusts.yaml
+    role: maintained_record
+- target_id: cmmmech:compreignacite
+  path: data/records/compreignacite.yaml
+  label: Compreignacite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 137106b35c8b1b50dc909406a59403e413a17d6ccf809f4c58d21a9b70d32bad
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/compreignacite.yaml
+    role: maintained_record
+- target_id: cmmmech:falottaite
+  path: data/records/falottaite.yaml
+  label: Falottaite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 3b8789a2e6c851351b2666eefbb4fbfa3011480e84b7f2f8448c2026e467c4df
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/falottaite.yaml
+    role: maintained_record
+- target_id: cmmmech:greigite
+  path: data/records/greigite.yaml
+  label: Greigite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 11694e67caf513576157a11a4f66a955fb058b08843df7c29df18bf9c348890e
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/greigite.yaml
+    role: maintained_record
+- target_id: cmmmech:katsarosite
+  path: data/records/katsarosite.yaml
+  label: Katsarosite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 0a04f9b73e8d17dc4fb6071af78577215999d8fcac461b3b7ba22c4cd1e4b789
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/katsarosite.yaml
+    role: maintained_record
+- target_id: cmmmech:lindbergite
+  path: data/records/lindbergite.yaml
+  label: Lindbergite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: e315e38d8aa173defbe8c78ca0d6e8bd83edf1efcd4495929c7f51706968de4c
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lindbergite.yaml
+    role: maintained_record
+- target_id: cmmmech:metavivianite
+  path: data/records/metavivianite.yaml
+  label: Metavivianite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: a5f0a2396e82cb049ff5b5ae0831a10cf96039fd5c5040d2fba5e336234cb0de
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/metavivianite.yaml
+    role: maintained_record
+- target_id: cmmmech:moolooite
+  path: data/records/moolooite.yaml
+  label: Moolooite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: e29307f8682b0f35862ce929109dfa2eb30133990fde4788e4d0fb94b8103ada
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/moolooite.yaml
+    role: maintained_record
+- target_id: cmmmech:pentagonite
+  path: data/records/pentagonite.yaml
+  label: Pentagonite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: f31d097c3a881fa1937648a12d1be3f8e663e36aa7c2f0d595999e6940edbfd0
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/pentagonite.yaml
+    role: maintained_record
+- target_id: cmmmech:pertlikite
+  path: data/records/pertlikite.yaml
+  label: Pertlikite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: dcf4c0945e22751ea286804ce508a477e72d542839a31e2ef3999a959a9a341b
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/pertlikite.yaml
+    role: maintained_record
+- target_id: cmmmech:rare-earth-rich-deep-sea-mud
+  path: data/records/rare-earth-rich-deep-sea-mud.yaml
+  label: Rare-earth-rich deep-sea mud
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: a87162d69adc4bf2c2341cf968213e681a164ccdde928202ca7e8b869d4482ed
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/rare-earth-rich-deep-sea-mud.yaml
+    role: maintained_record
+- target_id: cmmmech:regerite
+  path: data/records/regerite.yaml
+  label: Regerite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 799a60b4241d51017bac3f3bee2e8929127625e100f3442e182902f44c83dfa1
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/regerite.yaml
+    role: maintained_record
+- target_id: cmmmech:schwertmannite
+  path: data/records/schwertmannite.yaml
+  label: Schwertmannite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 90f3e930d665f3377e2a29b9b634775b689df4839bdb4dc90eb0248341200dd5
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/schwertmannite.yaml
+    role: maintained_record
+- target_id: cmmmech:struvite-k
+  path: data/records/struvite-k.yaml
+  label: Struvite-(K)
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: e88e732e13d531f52c7365c04cdb1f2fb6a3d135381803c5c58c7bd61bd31f24
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/struvite-k.yaml
+    role: maintained_record
+- target_id: cmmmech:wheatleyite
+  path: data/records/wheatleyite.yaml
+  label: Wheatleyite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 3f05e3b05f70d187c2ea2ce961ec9f6a9b41f859ad1d7825a81e0df68de55d84
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/wheatleyite.yaml
+    role: maintained_record
+- target_id: cmmmech:wulfenite
+  path: data/records/wulfenite.yaml
+  label: Wulfenite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 599113731ccfd02994ed47eeb4ef376bc73d0c4fbf3dd3040be4769da710033a
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/wulfenite.yaml
+    role: maintained_record
+- target_id: cmmmech:zincobriartite
+  path: data/records/zincobriartite.yaml
+  label: Zincobriartite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: ef8392c7aaaa0f56ac37d178cbe91c49a9838f3867ba9bc67ff046d97b3eca9e
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/zincobriartite.yaml
+    role: maintained_record
+scope:
+  description: 'All 20 CMMMech records affected by the 3 Stage 4 findings carried
+    into Stage 5 (17 mineral records in GRP-C1S5-001 / #801, 1 mineral record in GRP-C1S5-002
+    / #802, and 2 primary_resource records in GRP-C1S5-003 / #803).'
+  selection: stage4_open_finding_targets
+  coverage: full
+  population_size: 20
+  reviewed_target_ids:
+  - cmmmech:alburnite
+  - cmmmech:briartite
+  - cmmmech:cavansite
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+  - cmmmech:compreignacite
+  - cmmmech:falottaite
+  - cmmmech:greigite
+  - cmmmech:katsarosite
+  - cmmmech:lindbergite
+  - cmmmech:metavivianite
+  - cmmmech:moolooite
+  - cmmmech:pentagonite
+  - cmmmech:pertlikite
+  - cmmmech:rare-earth-rich-deep-sea-mud
+  - cmmmech:regerite
+  - cmmmech:schwertmannite
+  - cmmmech:struvite-k
+  - cmmmech:wheatleyite
+  - cmmmech:wulfenite
+  - cmmmech:zincobriartite
+checks:
+- check_id: chk-validate-records
+  name: Schema and semantic record validation
+  status: passed
+  required: true
+  summary: All 616 records (including all 20 remediated records) pass scripts/validate_records.py
+    with 0 errors and 0 warnings.
+  target_ids:
+  - cmmmech:alburnite
+  - cmmmech:briartite
+  - cmmmech:cavansite
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+  - cmmmech:compreignacite
+  - cmmmech:falottaite
+  - cmmmech:greigite
+  - cmmmech:katsarosite
+  - cmmmech:lindbergite
+  - cmmmech:metavivianite
+  - cmmmech:moolooite
+  - cmmmech:pentagonite
+  - cmmmech:pertlikite
+  - cmmmech:rare-earth-rich-deep-sea-mud
+  - cmmmech:regerite
+  - cmmmech:schwertmannite
+  - cmmmech:struvite-k
+  - cmmmech:wheatleyite
+  - cmmmech:wulfenite
+  - cmmmech:zincobriartite
+  command: .venv/bin/python scripts/validate_records.py
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev-ima-2026-09
+  - ev-stage4-findings
+- check_id: chk-validate-history
+  name: Append-only history sidecar validation
+  status: passed
+  required: true
+  summary: All 20 new EDIT history sidecars and existing history sidecars pass scripts/validate_history.py
+    --check-append-only origin/main.
+  target_ids:
+  - cmmmech:alburnite
+  - cmmmech:briartite
+  - cmmmech:cavansite
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+  - cmmmech:compreignacite
+  - cmmmech:falottaite
+  - cmmmech:greigite
+  - cmmmech:katsarosite
+  - cmmmech:lindbergite
+  - cmmmech:metavivianite
+  - cmmmech:moolooite
+  - cmmmech:pentagonite
+  - cmmmech:pertlikite
+  - cmmmech:rare-earth-rich-deep-sea-mud
+  - cmmmech:regerite
+  - cmmmech:schwertmannite
+  - cmmmech:struvite-k
+  - cmmmech:wheatleyite
+  - cmmmech:wulfenite
+  - cmmmech:zincobriartite
+  command: .venv/bin/python scripts/validate_history.py --check-append-only origin/main
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev-stage4-findings
+- check_id: chk-ima-identifiers-and-sources
+  name: IMA identifier and source citation completeness on remediated mineral records
+  status: passed
+  required: true
+  summary: All 17 mineral records in GRP-C1S5-001 carry exact IMA:YYYY-NNN identifiers
+    matching their description text and ima_2026_09, and wulfenite carries ima_2026_09
+    in sources.
+  target_ids:
+  - cmmmech:alburnite
+  - cmmmech:briartite
+  - cmmmech:cavansite
+  - cmmmech:compreignacite
+  - cmmmech:falottaite
+  - cmmmech:greigite
+  - cmmmech:katsarosite
+  - cmmmech:lindbergite
+  - cmmmech:metavivianite
+  - cmmmech:moolooite
+  - cmmmech:pentagonite
+  - cmmmech:pertlikite
+  - cmmmech:regerite
+  - cmmmech:schwertmannite
+  - cmmmech:struvite-k
+  - cmmmech:wheatleyite
+  - cmmmech:wulfenite
+  - cmmmech:zincobriartite
+  command: .venv/bin/python scripts/validate_source_hygiene.py
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev-ima-2026-09
+  - ev-stage4-findings
+- check_id: chk-canonical-key-order
+  name: Canonical top-level YAML key order before provenance footers
+  status: passed
+  required: true
+  summary: Both cobalt-rich-ferromanganese-crusts and rare-earth-rich-deep-sea-mud
+    place mechanisms before curation_history and history_refs.
+  target_ids:
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+  - cmmmech:rare-earth-rich-deep-sea-mud
+  evidence_ids:
+  - ev-stage4-findings
+  - ev-schema
+evidence:
+- evidence_id: ev-ima-2026-09
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC List of Mineral Names (September 2026)
+  accessed_at: '2026-10-22T05:06:00Z'
+  support: supports
+  summary: Official IMA-CNMNC Master List (September 2026) confirming the 17 IMA species
+    numbers (IMA:2012-073 through IMA:2015-094) and grandfathered status of Wulfenite
+    (PbMoO4).
+- evidence_id: ev-stage4-findings
+  kind: record_content
+  reference: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-04/revision-0001/review_findings.yaml
+  locator: findings[0..2]
+  accessed_at: '2026-10-22T05:06:00Z'
+  support: supports
+  summary: Frozen Stage 4 review findings ledger defining cmmmech-stage4-finding-0001,
+    cmmmech-stage4-finding-0002, and cmmmech-stage4-finding-0003 across the 20 target
+    records.
+  snapshot_sha256: 7967f12379a050de368944152b8149d8f31afb1fed883f43148f07a13ed71dcf
+- evidence_id: ev-schema
+  kind: record_content
+  reference: src/cmmmech/schema/cmmmech.yaml
+  locator: classes.MaterialRecord
+  accessed_at: '2026-10-22T05:06:00Z'
+  support: supports
+  summary: Canonical LinkML MaterialRecord definition specifying identifiers, sources,
+    mechanisms, curation_history, and history_refs slots.
+  snapshot_sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+assessments:
+- assessment_id: assess-grp1-ima-identifiers
+  area: identity
+  topic: Structured IMA:YYYY-NNN identifiers on 17 approved mineral records (#801)
+  outcome: supported
+  summary: All 17 mineral records now include their exact approved IMA:YYYY-NNN species
+    identifier in identifiers[], matching their description text and ima_2026_09.
+  target_ids:
+  - cmmmech:alburnite
+  - cmmmech:briartite
+  - cmmmech:cavansite
+  - cmmmech:compreignacite
+  - cmmmech:falottaite
+  - cmmmech:greigite
+  - cmmmech:katsarosite
+  - cmmmech:lindbergite
+  - cmmmech:metavivianite
+  - cmmmech:moolooite
+  - cmmmech:pentagonite
+  - cmmmech:pertlikite
+  - cmmmech:regerite
+  - cmmmech:schwertmannite
+  - cmmmech:struvite-k
+  - cmmmech:wheatleyite
+  - cmmmech:zincobriartite
+  evidence_ids:
+  - ev-ima-2026-09
+  - ev-stage4-findings
+  - ev-schema
+  metrics:
+  - name: ima_identifier_completeness
+    value: 1.0
+    unit: fraction
+    definition: Fraction of the 17 mineral records carrying structured IMA:YYYY-NNN
+      identifiers
+    denominator: 17
+    minimum: 0.0
+    maximum: 1.0
+- assessment_id: assess-grp2-wulfenite-source
+  area: provenance
+  topic: IMA Master List source citation on wulfenite (#802)
+  outcome: supported
+  summary: data/records/wulfenite.yaml now cites ima_2026_09 alongside handbook_wulfenite,
+    gracanin2024, gracanin2024_correction, cai2024, and cai2024_supplement.
+  target_ids:
+  - cmmmech:wulfenite
+  evidence_ids:
+  - ev-ima-2026-09
+  - ev-stage4-findings
+  metrics:
+  - name: mineral_ima_source_coverage
+    value: 1.0
+    unit: fraction
+    definition: Fraction of remediated mineral records citing ima_2026_09 in sources
+    denominator: 1
+    minimum: 0.0
+    maximum: 1.0
+- assessment_id: assess-grp3-key-ordering
+  area: consistency
+  topic: Canonical top-level key ordering on deep-sea primary resource records (#803)
+  outcome: supported
+  summary: Both cobalt-rich-ferromanganese-crusts and rare-earth-rich-deep-sea-mud
+    now serialize mechanisms immediately before curation_history and history_refs.
+  target_ids:
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+  - cmmmech:rare-earth-rich-deep-sea-mud
+  evidence_ids:
+  - ev-stage4-findings
+  - ev-schema
+  metrics:
+  - name: canonical_key_order_compliance
+    value: 1.0
+    unit: fraction
+    definition: Fraction of remediated primary_resource records with mechanisms preceding
+      provenance footers
+    denominator: 2
+    minimum: 0.0
+    maximum: 1.0
+findings:
+- finding_id: cmmmech-stage4-finding-0001
+  issue_key: cmmmech.mineral.missing-ima-identifiers-on-cited-species
+  category: identity
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: 17 mineral records with IMA numbers in description now include structured
+    IMA:YYYY-NNN identifiers
+  description: Added structured IMA:YYYY-NNN identifiers (IMA:2012-073, IMA:1965-018,
+    IMA:1967-019, IMA:1964-026, IMA:2013-044, IMA:1963-007, IMA:2020-014, IMA:2003-029,
+    IMA:1973-049, IMA:1980-082, IMA:1971-039, IMA:2005-055, IMA:2023-028, IMA:1990-006,
+    IMA:2003-048, IMA:1984-040, IMA:2015-094) and append-only EDIT history sidecars
+    to all 17 mineral records.
+  target_ids:
+  - cmmmech:alburnite
+  - cmmmech:briartite
+  - cmmmech:cavansite
+  - cmmmech:compreignacite
+  - cmmmech:falottaite
+  - cmmmech:greigite
+  - cmmmech:katsarosite
+  - cmmmech:lindbergite
+  - cmmmech:metavivianite
+  - cmmmech:moolooite
+  - cmmmech:pentagonite
+  - cmmmech:pertlikite
+  - cmmmech:regerite
+  - cmmmech:schwertmannite
+  - cmmmech:struvite-k
+  - cmmmech:wheatleyite
+  - cmmmech:zincobriartite
+  field_paths:
+  - identifiers
+  - curation_history
+  - history_refs
+  evidence_ids:
+  - ev-ima-2026-09
+  - ev-stage4-findings
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/alburnite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/briartite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cavansite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/compreignacite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/falottaite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/greigite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/katsarosite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lindbergite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/metavivianite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/moolooite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/pentagonite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/pertlikite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/regerite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/schwertmannite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/struvite-k.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/wheatleyite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/zincobriartite.yaml
+    role: maintained_record
+  disposition_reason: 'Resolved under GitHub issue #801 (group GRP-C1S5-001) by adding
+    verified IMA:YYYY-NNN identifiers and append-only EDIT history sidecars to all
+    17 records.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261022T025801Z-stage4-mineral-cohort-review
+    finding_id: cmmmech-stage4-finding-0001
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/801
+- finding_id: cmmmech-stage4-finding-0002
+  issue_key: cmmmech.wulfenite.missing-ima-master-list-source
+  category: provenance
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Wulfenite record now cites ima_2026_09 in sources
+  description: Added ima_2026_09 (The New IMA List of Minerals, September 2026) to
+    data/records/wulfenite.yaml sources and recorded an append-only EDIT history sidecar.
+  target_ids:
+  - cmmmech:wulfenite
+  field_paths:
+  - sources
+  - curation_history
+  - history_refs
+  evidence_ids:
+  - ev-ima-2026-09
+  - ev-stage4-findings
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/wulfenite.yaml
+    role: maintained_record
+  disposition_reason: 'Resolved under GitHub issue #802 (group GRP-C1S5-002) by adding
+    ima_2026_09 to data/records/wulfenite.yaml sources with an append-only EDIT history
+    sidecar.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261022T025807Z-wulfenite-stage4-record-review
+    finding_id: cmmmech-stage4-finding-0002
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/802
+- finding_id: cmmmech-stage4-finding-0003
+  issue_key: cmmmech.records.trailing-mechanisms-after-history
+  category: consistency
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Deep-sea primary_resource records now serialize mechanisms before curation_history
+    and history_refs
+  description: Reordered top-level YAML keys in data/records/cobalt-rich-ferromanganese-crusts.yaml
+    and data/records/rare-earth-rich-deep-sea-mud.yaml so mechanisms precedes curation_history
+    and history_refs, and recorded append-only EDIT history sidecars.
+  target_ids:
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+  - cmmmech:rare-earth-rich-deep-sea-mud
+  field_paths:
+  - mechanisms
+  - curation_history
+  - history_refs
+  evidence_ids:
+  - ev-stage4-findings
+  - ev-schema
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cobalt-rich-ferromanganese-crusts.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/rare-earth-rich-deep-sea-mud.yaml
+    role: maintained_record
+  disposition_reason: 'Resolved under GitHub issue #803 (group GRP-C1S5-003) by placing
+    mechanisms before curation_history and history_refs in both records with append-only
+    EDIT history sidecars.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261022T025804Z-stage4-primary-resource-cohort-review
+    finding_id: cmmmech-stage4-finding-0003
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/803
+actions: []
+boundary_decisions:
+- action: retain
+  target_ids:
+  - cmmmech:alburnite
+  - cmmmech:briartite
+  - cmmmech:cavansite
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+  - cmmmech:compreignacite
+  - cmmmech:falottaite
+  - cmmmech:greigite
+  - cmmmech:katsarosite
+  - cmmmech:lindbergite
+  - cmmmech:metavivianite
+  - cmmmech:moolooite
+  - cmmmech:pentagonite
+  - cmmmech:pertlikite
+  - cmmmech:rare-earth-rich-deep-sea-mud
+  - cmmmech:regerite
+  - cmmmech:schwertmannite
+  - cmmmech:struvite-k
+  - cmmmech:wheatleyite
+  - cmmmech:wulfenite
+  - cmmmech:zincobriartite
+  rationale: All 20 remediated records represent distinct mineral species (18 records)
+    or primary deep-sea geological deposits (2 records) with disjoint identifiers
+    and provenance; cohort boundaries from Stage 4 are retained unchanged.
+  evidence_ids:
+  - ev-ima-2026-09
+  - ev-stage4-findings
+limitations:
+- This verification review is scoped to the 20 records remediated in Stage 5; the
+  remaining 596 records were verified with 0 open findings in the immutable Stage
+  4 review bundles.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261022T025801Z-stage4-mineral-cohort-review
+  relationship: verifies_remediation_of
+- repository: CultureBotAI/CMMMech
+  review_id: 20261022T025807Z-wulfenite-stage4-record-review
+  relationship: verifies_remediation_of
+- repository: CultureBotAI/CMMMech
+  review_id: 20261022T025804Z-stage4-primary-resource-cohort-review
+  relationship: verifies_remediation_of
