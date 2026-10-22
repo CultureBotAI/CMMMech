@@ -1,0 +1,29 @@
+history_version: 1
+target:
+  kind: record
+  slug: katsarosite
+  path: data/records/katsarosite.yaml
+session:
+  id: 2026-10-22T132124Z-claude-53536e
+  timestamp: '2026-10-22T13:21:24Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Update secreted_organic_acids -> znso4_hopeite_culture_substrate edge predicate
+    from chelates to solubilizes in niger_associated_zinc_oxalate_formation_graph (Issue #819).'
+  details: 'Remediates Cycle 2 Stage 4 finding cmmmech-cycle2-stage4-finding-0003 (GRP-C2S5-003,
+    Issue #819) by updating the dissolution edge predicate on secreted_organic_acids -> znso4_hopeite_culture_substrate
+    in data/records/katsarosite.yaml from legacy chelates to solubilizes for consistency with
+    the sibling Aspergillus niger oxalate biomineralization cohort.'
+  sections:
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/819

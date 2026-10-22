@@ -1,0 +1,29 @@
+history_version: 1
+target:
+  kind: record
+  slug: perovskite
+  path: data/records/perovskite.yaml
+session:
+  id: 2026-10-22T132123Z-claude-0ad48e
+  timestamp: '2026-10-22T13:21:23Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Normalize IMA-CNMNC Master List source id from ima202609 to canonical ima_2026_09
+    (Issue #817).'
+  details: 'Remediates Cycle 2 Stage 4 finding cmmmech-cycle2-stage4-finding-0001 (GRP-C2S5-001,
+    Issue #817) by normalizing the September 2026 IMA-CNMNC Master List source key in data/records/perovskite.yaml
+    from ima202609 to canonical ima_2026_09 (updated 0 internal source_ref reference(s) if
+    present).'
+  sections:
+  - sources
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/817

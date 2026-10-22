@@ -1,0 +1,98 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 2
+stage: 5
+revision: 1
+outcome: completed
+summary: Consumed the 3 Cycle 2 Stage 4 review findings (cmmmech-cycle2-stage4-finding-0001, cmmmech-cycle2-stage4-finding-0002,
+  cmmmech-cycle2-stage4-finding-0003) across 33 records, grouped them by root cause and repair ownership
+  into GRP-C2S5-001 (#817), GRP-C2S5-002 (#818), and GRP-C2S5-003 (#819), applied all 33 record remediations
+  with append-only EDIT history sidecars and regenerated pages/, preserved all immutable Stage 4 review
+  bundles untouched, and verified all 33 remediated records in structured review bundle 20261022T132200Z-cycle2-stage5-remediation-verification
+  with verdict pass and 0 carry-forward findings.
+source_revision: e16fd0f59192b2bbc20e9baa943fb67085950171
+scope_frozen_at: '2026-10-22T13:14:00Z'
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-04/revision-0001/evidence.yaml
+  sha256: ed3f293d67647ec6046bea289201746c85e0439da5bd3c205379e9ce16dc7306
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/issue_map.md
+  sha256: eb7a27e9b42e9d284839b62a66b29a7237b19c0620b870333c9ac3afa154b359
+  kind: issue_map
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/validation.md
+  sha256: a1a018ec476df6c80363a667014d35d21b4a98ea68b7aa02651a4e676fc53bfe
+  kind: validation
+findings:
+- finding_id: cmmmech-cycle2-stage4-finding-0001
+  carried_from: cmmmech-cycle2-stage4-finding-0001
+  status: resolved
+  group_id: GRP-C2S5-001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/817
+  summary: 30 mineral records use non-canonical source id keys (ima2026 in 14 records, ima202609 in 9
+    records, ima_202609 in 7 records) instead of canonical ima_2026_09 for the September 2026 IMA-CNMNC
+    Master List.
+  disposition: 'Resolved under #817 (GRP-C2S5-001) by normalizing sources[].id to ima_2026_09 and adding
+    append-only EDIT history sidecars across all 30 mineral records; verified in reviews/structured/20261022T132200Z-cycle2-stage5-remediation-verification/review.yaml.'
+- finding_id: cmmmech-cycle2-stage4-finding-0002
+  carried_from: cmmmech-cycle2-stage4-finding-0002
+  status: resolved
+  group_id: GRP-C2S5-002
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/818
+  summary: allanite-concentrate (UniProtKB:Q5FT13, UniProtKB:Q5FTI1) and thulium (UniProtKB:O34952, UniProtKB:Q797B3,
+    UniProtKB:P54496, UniProtKB:O32206) have shorter evidence[].explanation strings on causal_graphs[].nodes[].protein_examples
+    than on mechanisms[].protein_examples.
+  disposition: 'Resolved under #818 (GRP-C2S5-002) by synchronizing causal_graphs[].nodes[].protein_examples[].evidence[].explanation
+    with mechanisms[].protein_examples[].evidence[].explanation via scripts/curate_causal_graphs.py with
+    append-only EDIT history sidecars; verified in reviews/structured/20261022T132200Z-cycle2-stage5-remediation-verification/review.yaml.'
+- finding_id: cmmmech-cycle2-stage4-finding-0003
+  carried_from: cmmmech-cycle2-stage4-finding-0003
+  status: resolved
+  group_id: GRP-C2S5-003
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/819
+  summary: 'data/records/katsarosite.yaml (niger_associated_zinc_oxalate_formation_graph) uses predicate:
+    chelates instead of predicate: solubilizes on its secreted_organic_acids -> znso4_hopeite_culture_substrate
+    dissolution edge.'
+  disposition: 'Resolved under #819 (GRP-C2S5-003) by updating predicate: chelates to predicate: solubilizes
+    on the secreted_organic_acids -> znso4_hopeite_culture_substrate edge via scripts/curate_causal_graphs.py
+    with an append-only EDIT history sidecar; verified in reviews/structured/20261022T132200Z-cycle2-stage5-remediation-verification/review.yaml.'
+groups:
+- group_id: GRP-C2S5-001
+  finding_ids:
+  - cmmmech-cycle2-stage4-finding-0001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/817
+  status: resolved
+  summary: Normalize IMA-CNMNC Master List source IDs (ima2026, ima202609, ima_202609 -> ima_2026_09)
+    across 30 mineral records with append-only EDIT history sidecars.
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/validation.md
+  disposition: Normalized sources[].id to ima_2026_09 across all 30 mineral records with 30 append-only
+    EDIT history sidecars and verified in 20261022T132200Z-cycle2-stage5-remediation-verification.
+- group_id: GRP-C2S5-002
+  finding_ids:
+  - cmmmech-cycle2-stage4-finding-0002
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/818
+  status: resolved
+  summary: Synchronize causal_graphs[].nodes[].protein_examples[].evidence[].explanation with mechanisms[].protein_examples
+    in allanite-concentrate and thulium.
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/validation.md
+  disposition: Synchronized causal-graph node protein_examples evidence explanations with mechanism protein_examples
+    in allanite-concentrate and thulium with 2 append-only EDIT history sidecars and verified in 20261022T132200Z-cycle2-stage5-remediation-verification.
+- group_id: GRP-C2S5-003
+  finding_ids:
+  - cmmmech-cycle2-stage4-finding-0003
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/819
+  status: resolved
+  summary: Update legacy chelates dissolution predicate to solubilizes in katsarosite.yaml.
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/validation.md
+  disposition: 'Updated predicate: chelates to predicate: solubilizes on the secreted_organic_acids ->
+    znso4_hopeite_culture_substrate edge in data/records/katsarosite.yaml with an append-only EDIT history
+    sidecar and verified in 20261022T132200Z-cycle2-stage5-remediation-verification.'
+carry_forward_ids: []
+infra_tasks: []
