@@ -1,0 +1,32 @@
+history_version: 1
+target:
+  kind: record
+  slug: birnessite
+  path: data/records/birnessite.yaml
+session:
+  id: 2026-10-22T093021Z-claude-a31009
+  timestamp: '2026-10-22T09:30:21Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Added representative Aspergillus niger CexA (UniProtKB:A0A254TZW7) protein examples
+    and two causal graphs for synthetic Na- and Co-birnessite transformation in birnessite.yaml.
+  details: 'Added representative CexA protein examples (supports: partial) and two causal
+    graphs (fungal_synthetic_sodium_birnessite_transformation_graph for Wei et al. 2012 and
+    fungal_synthetic_cobalt_birnessite_transformation_graph for Ferrier et al. 2022) using
+    solubilizes and transforms_into predicates.'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/807
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/811

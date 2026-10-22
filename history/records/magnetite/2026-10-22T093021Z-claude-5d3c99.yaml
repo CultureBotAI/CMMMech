@@ -1,0 +1,29 @@
+history_version: 1
+target:
+  kind: record
+  slug: magnetite
+  path: data/records/magnetite.yaml
+session:
+  id: 2026-10-22T093021Z-claude-5d3c99
+  timestamp: '2026-10-22T09:30:21Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Added Desulfovulcanus ferrireducens Ax17 ferrihydrite reduction causal graph (ax17_ferrihydrite_transformation_graph)
+    to magnetite.yaml.
+  details: Added ax17_ferrihydrite_transformation_graph with explicit UNGROUNDED ax17_extracellular_fe3_reductase_system
+    node and reduces/produces/transforms_into edges grounded to Sklute et al. (2023) in magnetite.yaml.
+  sections:
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/807
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/811

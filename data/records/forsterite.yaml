@@ -1,21 +1,14 @@
 id: cmmmech:forsterite
 name: Forsterite
 material_kind: mineral
-description: Forsterite is the Mg2(SiO4) mineral species, grandfathered in the September 2026 IMA list.
-  This species is distinct from elemental magnesium or silicon and from generic magnesium-bearing rocks
-  or commercial mineral mixtures. No constituent criticality is inherited. This record and the companion
-  talc record curate different substrates in the same Cai 2013 experiment, not independent studies.
+description: Forsterite is the Mg2(SiO4) mineral species, grandfathered in the September 2026 IMA list. This species is distinct from elemental magnesium or silicon and from generic magnesium-bearing rocks or commercial mineral mixtures. No constituent criticality is inherited. This record and the companion talc record curate different substrates in the same Cai 2013 experiment, not independent studies.
 sources:
 - id: ima_2026_09
-  title: IMA-CNMNC. The New IMA List of Minerals, September 2026; PDF page 77, Forsterite row, and pages
-    1-2 definitions and terms.
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026; PDF page 77, Forsterite row, and pages 1-2 definitions and terms.
   url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
   accessed_on: '2026-10-11'
 - id: cai_2013
-  title: Cai, Xiao, Huang, Li and Zhou (2013). Solubilization of Magnesium-Bearing Silicate Minerals
-    and the Subsequent Formation of Glushinskite by Aspergillus niger. Geomicrobiology Journal 30(4):302-312.
-    DOI 10.1080/01490451.2012.688924; methods pp303-304, Tables 1-2, Results pp304-305 and Discussion
-    pp307-308.
+  title: Cai, Xiao, Huang, Li and Zhou (2013). Solubilization of Magnesium-Bearing Silicate Minerals and the Subsequent Formation of Glushinskite by Aspergillus niger. Geomicrobiology Journal 30(4):302-312. DOI 10.1080/01490451.2012.688924; methods pp303-304, Tables 1-2, Results pp304-305 and Discussion pp307-308.
   url: https://doi.org/10.1080/01490451.2012.688924
   accessed_on: '2026-10-11'
 - id: ncbi_niger
@@ -26,42 +19,140 @@ mechanisms:
 - id: fungal_forsterite_dissolution
   name: Culture-associated forsterite dissolution with secondary magnesium oxalate formation
   process: bioleaching
-  description: Growing Aspergillus niger cultures with a forsterite feed contained dissolved magnesium
-    and yielded precipitate assigned by the authors to glushinskite. Chemical oxalate controls also
-    dissolved forsterite; the result supports conditional fungal-associated mineral transformation rather
-    than microbial necessity or magnesium-metal recovery.
-  context: The reported Aspergillus niger strain has no collection accession in the inspected paper;
-    NCBI:5061 resolves only the species. Mineral powders were washed and sonicated, exposed to 0.1 mM
-    HCl for one hour, rinsed and air-dried; feed XRD purity is reported but its patterns are not shown.
-    In the selected Mg-source comparison, minus-200-mesh particles supplied 0.01 mol Mg to 95 mL Czapek-based
-    medium plus 5 mL inoculum at 10^7 spores/mL. Initial pH was adjusted to 8.15; growing cultures were
-    shaken at 150 rpm and 30 degrees C for ten days. The separate particle-size and filtered-MgSO4-supernatant
-    experiments are not pooled with this comparison.
+  description: Growing Aspergillus niger cultures with a forsterite feed contained dissolved magnesium and yielded precipitate assigned by the authors to glushinskite. Chemical oxalate controls also dissolved forsterite; the result supports conditional fungal-associated mineral transformation rather than microbial necessity or magnesium-metal recovery.
+  context: The reported Aspergillus niger strain has no collection accession in the inspected paper; NCBI:5061 resolves only the species. Mineral powders were washed and sonicated, exposed to 0.1 mM HCl for one hour, rinsed and air-dried; feed XRD purity is reported but its patterns are not shown. In the selected Mg-source comparison, minus-200-mesh particles supplied 0.01 mol Mg to 95 mL Czapek-based medium plus 5 mL inoculum at 10^7 spores/mL. Initial pH was adjusted to 8.15; growing cultures were shaken at 150 rpm and 30 degrees C for ten days. The separate particle-size and filtered-MgSO4-supernatant experiments are not pooled with this comparison.
   microbial: true
   organisms:
   - id: NCBITaxon:5061
     label: Aspergillus niger
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A254TZW7
+    entry_name: CEXA_ASPNG
+    protein_name: Citrate exporter A
+    gene_symbol: cexA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:5061
+      label: Aspergillus niger
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal chelation.
+    annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061).
+    evidence:
+    - source_ref: cai_2013
+      supports: partial
+      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during forsterite dissolution and glushinskite precipitation in Cai et al. (2013); cexA was not directly assayed.
   evidence:
   - source_ref: cai_2013
     supports: support
-    explanation: Table 1 reports final supernatant Mg of 1.854 x 10^-2 mol/L with forsterite versus
-      3.121 x 10^-4 mol/L with talc, measured by ICP-AES. Table 2 gives forsterite abiotic-control Mg
-      at 1.32, 5.09 and 6.10 mM with initial oxalic acid of 0, 100 and 200 mM respectively after ten
-      days. Results p305 assign the forsterite-culture precipitate in Figure 3a to monoclinic glushinskite;
-      the talc arm had no recovered secondary mineral after ten days.
+    explanation: Table 1 reports final supernatant Mg of 1.854 x 10^-2 mol/L with forsterite versus 3.121 x 10^-4 mol/L with talc, measured by ICP-AES. Table 2 gives forsterite abiotic-control Mg at 1.32, 5.09 and 6.10 mM with initial oxalic acid of 0, 100 and 200 mM respectively after ten days. Results p305 assign the forsterite-culture precipitate in Figure 3a to monoclinic glushinskite; the talc arm had no recovered secondary mineral after ten days.
   - source_ref: cai_2013
     supports: partial
-    explanation: Initial acid doses in the abiotic comparison do not reproduce the culture pH and metabolite
-      trajectories, so the data do not isolate oxalate from other fungal products or proton effects.
-      No replicate counts or measurement uncertainties are specified for Tables 1-2 in the inspected
-      article. Supernatant Mg remaining after precipitation is not a total dissolution or isolated-product
-      yield. Feed purity and product identity are the published analytical assignments, not independently
-      reprocessed diffraction data. The experiment is laboratory-scale and does not establish industrial
-      deployment.
+    explanation: Initial acid doses in the abiotic comparison do not reproduce the culture pH and metabolite trajectories, so the data do not isolate oxalate from other fungal products or proton effects. No replicate counts or measurement uncertainties are specified for Tables 1-2 in the inspected article. Supernatant Mg remaining after precipitation is not a total dissolution or isolated-product yield. Feed purity and product identity are the published analytical assignments, not independently reprocessed diffraction data. The experiment is laboratory-scale and does not establish industrial deployment.
+causal_graphs:
+- id: fungal_forsterite_dissolution_graph
+  name: Aspergillus niger dissolution of forsterite and secondary glushinskite precipitation
+  description: Causal pathway linking Aspergillus niger organic-acid/oxalate excretion to dissolution of minus-200-mesh forsterite (Mg2SiO4), release of 1.854 x 10^-2 mol/L supernatant magnesium, and precipitation of monoclinic glushinskite (magnesium oxalate dihydrate).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: fungal_forsterite_dissolution
+  nodes:
+  - id: cexa_citrate_exporter
+    label: Citrate exporter CexA (representative organic-acid efflux transporter)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cexA
+    description: Reviewed Aspergillus niger plasma-membrane citrate exporter (UniProtKB:A0A254TZW7) representing the fungal organic-acid secretion machinery.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A254TZW7
+      entry_name: CEXA_ASPNG
+      protein_name: Citrate exporter A
+      gene_symbol: cexA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:5061
+        label: Aspergillus niger
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal chelation.
+      annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061).
+      evidence:
+      - source_ref: cai_2013
+        supports: partial
+        explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during forsterite dissolution and glushinskite precipitation in Cai et al. (2013); cexA was not directly assayed.
+  - id: secreted_oxalic_and_organic_acids
+    label: Secreted fungal oxalic and organic acids in shaken Czapek-based medium
+    node_type: CHEMICAL_ENTITY
+    description: Extracellular oxalic and organic acids produced by growing Aspergillus niger over 10 days at 30 degrees C.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: forsterite_mineral_feed
+    label: Minus-200-mesh forsterite (Mg2SiO4) mineral powder (0.01 mol Mg in 100 mL)
+    node_type: MATERIAL_OR_PHASE
+    description: HCl-washed minus-200-mesh forsterite feed supplying 0.01 mol Mg in 100 mL shaken culture.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: supernatant_dissolved_magnesium
+    label: Dissolved supernatant magnesium (1.854 x 10^-2 mol/L Mg by ICP-AES)
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved magnesium measured in culture supernatant after 10 days of incubation.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: glushinskite_assigned_precipitate
+    label: Monoclinic glushinskite-assigned magnesium oxalate precipitate
+    node_type: MATERIAL_OR_PHASE
+    description: Secondary crystalline precipitate recovered after 10 days and assigned by XRD (Figure 3a) to monoclinic glushinskite.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cexa_citrate_exporter
+    target: secreted_oxalic_and_organic_acids
+    predicate: transports
+    relationship: representative plasma-membrane organic-acid efflux
+    description: CexA exports intracellular citrate as part of Aspergillus niger organic-acid excretion.
+    evidence:
+    - source_ref: cai_2013
+      supports: partial
+      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during forsterite dissolution and glushinskite precipitation in Cai et al. (2013); cexA was not directly assayed.
+  - source: secreted_oxalic_and_organic_acids
+    target: forsterite_mineral_feed
+    predicate: dissolves
+    relationship: organic-acid and proton-promoted dissolution of forsterite
+    description: Fungal organic acids and protons dissolve forsterite over 10 days, corroborated by abiotic 100-200 mM oxalic acid controls.
+    evidence:
+    - source_ref: cai_2013
+      supports: support
+      explanation: Tables 1-2 in Cai et al. (2013) show 1.854 x 10^-2 mol/L supernatant Mg in A. niger culture and 5.09-6.10 mM Mg in 100-200 mM abiotic oxalic-acid controls versus 1.32 mM at 0 mM oxalic acid.
+  - source: forsterite_mineral_feed
+    target: supernatant_dissolved_magnesium
+    predicate: produces
+    relationship: mobilization of dissolved magnesium into culture supernatant
+    description: Forsterite dissolution releases 1.854 x 10^-2 mol/L Mg into the supernatant after 10 days.
+    evidence:
+    - source_ref: cai_2013
+      supports: support
+      explanation: Table 1 in Cai et al. (2013) reports final supernatant Mg of 1.854 x 10^-2 mol/L with forsterite measured by ICP-AES.
+  - source: forsterite_mineral_feed
+    target: glushinskite_assigned_precipitate
+    predicate: transforms_into
+    relationship: precipitation of secondary monoclinic glushinskite
+    description: Released magnesium precipitates with fungal oxalate to form crystals assigned to monoclinic glushinskite.
+    evidence:
+    - source_ref: cai_2013
+      supports: support
+      explanation: Results p. 305 and Figure 3a in Cai et al. (2013) assign the forsterite-culture precipitate to monoclinic glushinskite.
 curation_history:
 - timestamp: '2026-10-11T10:24:35.653580+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
   summary: Created forsterite species record with bounded fungal dissolution and abiotic controls.
+- timestamp: '2026-10-22T09:30:21Z'
+  curator: claude
+  action: edit
+  summary: Added representative Aspergillus niger CexA (UniProtKB:A0A254TZW7) protein example and causal graph for forsterite dissolution and glushinskite formation in forsterite.yaml.
 history_refs:
 - history/records/forsterite/2026-10-11T102433Z-codex-ff90a8.yaml
+- history/records/forsterite/2026-10-22T093021Z-claude-7735f1.yaml

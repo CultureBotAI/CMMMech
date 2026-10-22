@@ -182,6 +182,93 @@
   </div>
 </div>
 
+<div class="detail-section">
+  <h3>Causal Graphs &amp; Molecular Pathways (1)</h3>
+  <div class="mechanism-box" id="causal-graph-brown_rot_cerussite_lead_oxalate_graph">
+    <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
+      <h4 style="margin: 0; font-size: 1.12rem;">Brown-rot fungal surface transformation of cerussite to anhydrous lead oxalate</h4>
+      <div>
+        <span class="badge">RECORD SPECIFIC MECHANISM</span>
+        <a href="#mechanism-brown_rot_surface_transformation" class="badge" style="text-decoration: none;">Mechanism: <code>brown_rot_surface_transformation</code></a>
+      </div>
+    </div>
+    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking organic-acid excretion by brown-rot basidiomycetes (Serpula himantioides LE-BIN 1368, Coniophora puteana LE-BIN 1370, Amyloporia xantha LE-BIN 1029, and comparator Serpula lacrymans LE-BIN 1192) to surface dissolution of cerussite (PbCO3) and crystallization of anhydrous lead oxalate.</p>
+
+    <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (4):</strong>
+    <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
+      <thead>
+        <tr>
+          <th scope="col">Node</th>
+          <th scope="col">Type</th>
+          <th scope="col">Details &amp; Grounding</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="causal-node-brown_rot_cerussite_lead_oxalate_graph-brown_rot_oxalate_secretion_pathway">
+          <td>
+            <strong>Brown-rot basidiomycete organic-acid / oxalate secretion pathway</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">brown_rot_oxalate_secretion_pathway</code>
+          </td>
+          <td>
+            <span class="badge">GENE OR PROTEIN</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">UNGROUNDED</span>
+          </td>
+          <td>
+<div>Enzymatic oxalate biosynthesis and efflux pathways in Serpula himantioides LE-BIN 1368, Coniophora puteana LE-BIN 1370, and Amyloporia xantha LE-BIN 1029; marked UNGROUNDED because Vlasov et al. (2023) performed comparative mineralogical assays without gene or protein characterization.</div>          </td>
+        </tr>
+        <tr id="causal-node-brown_rot_cerussite_lead_oxalate_graph-brown_rot_secreted_oxalic_acid">
+          <td>
+            <strong>Secreted fungal organic acids in glucose-peptone medium (pH 2.0-3.5)</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">brown_rot_secreted_oxalic_acid</code>
+          </td>
+          <td>
+            <span class="badge">CHEMICAL ENTITY</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
+          </td>
+          <td>
+<div>Extracellular oxalic and organic acids lowering liquid glucose-peptone medium pH from 5.5 to 2.0-3.5 over 30 days.</div>          </td>
+        </tr>
+        <tr id="causal-node-brown_rot_cerussite_lead_oxalate_graph-cerussite_carbonate_substrate">
+          <td>
+            <strong>Cerussite (PbCO3) mineral block (~1 x 0.5 x 0.5 cm)</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">cerussite_carbonate_substrate</code>
+          </td>
+          <td>
+            <span class="badge">MATERIAL OR PHASE</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
+          </td>
+          <td>
+<div>Natural cerussite specimen from the Chernyshev Geological Museum incubated in 20 mL liquid glucose-peptone medium for 30 days.</div>          </td>
+        </tr>
+        <tr id="causal-node-brown_rot_cerussite_lead_oxalate_graph-anhydrous_lead_oxalate_crust">
+          <td>
+            <strong>Anhydrous lead oxalate (PbC2O4) surface crystals (with co-occurring calcium oxalates)</strong><br>
+            <code style="font-size: .78rem; color: var(--muted);">anhydrous_lead_oxalate_crust</code>
+          </td>
+          <td>
+            <span class="badge">MATERIAL OR PHASE</span>
+            <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
+          </td>
+          <td>
+<div>PXRD- and SEM/EDX-assigned anhydrous lead oxalate crystals formed on cerussite in S. himantioides, C. puteana, and A. xantha cultures (microscopy-only in S. lacrymans).</div>          </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Edges (3):</strong>
+    <ul style="margin: .4rem 0 0; padding-left: 1.2rem; font-size: .88rem;">
+      <li style="margin-bottom: .35rem;">
+        <code>brown_rot_oxalate_secretion_pathway</code> &rarr; <strong>organism-dependent organic-acid excretion and medium acidification</strong> (<code>produces</code>) &rarr; <code>brown_rot_secreted_oxalic_acid</code>
+: Brown-rot fungi acidify the liquid glucose-peptone medium and excrete oxalate metabolites.[<a href="#source-vlasov2023"><code>vlasov2023</code></a>]      </li>
+      <li style="margin-bottom: .35rem;">
+        <code>brown_rot_secreted_oxalic_acid</code> &rarr; <strong>acidolysis and oxalate attack on mineral substrate surface</strong> (<code>dissolves</code>) &rarr; <code>cerussite_carbonate_substrate</code>
+: Secreted fungal organic acids dissolve cations from the mineral block surface.[<a href="#source-vlasov2023"><code>vlasov2023</code></a>]      </li>
+      <li style="margin-bottom: .35rem;">
+        <code>cerussite_carbonate_substrate</code> &rarr; <strong>crystallization of secondary surface oxalate biominerals</strong> (<code>transforms_into</code>) &rarr; <code>anhydrous_lead_oxalate_crust</code>
+: Released metal cations precipitate with fungal oxalate as surface biomineral crystals.[<a href="#source-vlasov2023"><code>vlasov2023</code></a>]      </li>
+    </ul>
+  </div>
+</div>
 
 <div class="detail-section">
   <h2>Sources &amp; References</h2>
@@ -242,6 +329,12 @@
         <td><span class="badge">CREATE</span></td>
         <td>Added IMA-grounded cerussite with culture-associated lead oxalate formation, preserving microscopy-versus-diffraction limits, co-product disagreement and absent quantitative control and recovery evidence.</td>
       </tr>
+      <tr>
+        <td><code>2026-10-22T09:30:21Z</code></td>
+        <td>claude</td>
+        <td><span class="badge">edit</span></td>
+        <td>Added brown-rot fungal surface transformation causal graph (brown_rot_cerussite_lead_oxalate_graph) to cerussite.yaml.</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -251,7 +344,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (631 materials · 597 mechanisms · latest curation 2026-10-22 · corpus digest <code>0ed4f3a9d989</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (631 materials · 597 mechanisms · latest curation 2026-10-22 · corpus digest <code>a99528edbf06</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

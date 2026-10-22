@@ -59,6 +59,9 @@ tasks:
     status: deferred
     issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
     disposition: Deferred in Cycle 1 Stage 6 because scripts/record_review.py is a vendored artifact governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); grouped with cmmmech-infra-0001 under issue #805 for upstream implementation and sync.
+  - task_id: cmmmech-infra-0006
+    summary: Replace os.link() in src/cmmmech/history.py cmd_new() with exclusive-create or os.replace() fallback so scripts/curate_causal_graphs.py and cmmmech new-history succeed inside macOS Seatbelt sandboxes
+    status: note
 ```
 <!-- mech-infra-tasks:end -->
 
@@ -123,6 +126,17 @@ tasks:
 - **Issue**: https://github.com/CultureBotAI/CMMMech/issues/805 (`IGRP-C1S6-001`)
 - **Status**: `deferred`
 - **Disposition**: Deferred in Cycle 1 Stage 6 because `scripts/record_review.py` is a governed vendored artifact enforced by `scripts/check_vendored_sync.py`. Grouped with `cmmmech-infra-0001` under issue `#805` for coordinated upstream implementation in `CultureBotAI/culturebotai-claw` and subsequent vendored sync.
+
+### `cmmmech-infra-0006` — Exclusive-create fallback for `os.link()` in `src/cmmmech/history.py` `cmd_new()`
+
+- **Originating run / cycle / stage**: `mech-goal-sequence-20261019` / cycle `2` / stage `2` (`causal_graphs`)
+- **Observation**: During the Cycle 2 Stage 2 corpus-wide causal-graph review and curation across all 631 records (`24` records curated via `scripts/curate_causal_graphs.py`: `10` existing `causal_graphs` records upgraded to use `hydrolyzes`, `solubilizes`, and `dissolves` from `cmmmech-infra-0003` + `14` newly grounded multi-step `causal_graphs` records, raising `causal_graphs` coverage from `63` records / `66` graphs to `77` records / `81` graphs while preserving `412` single-step whole-cell sorption/uptake records without resolved molecular intermediates at the `mechanisms` level and `142` criticality-only records without microbial mechanisms), invoking `scripts/curate_causal_graphs.py` inside the macOS Seatbelt sandbox failed at `src/cmmmech/history.py:288` (`os.link(stream.name, path)`) with `PermissionError: [Errno 1] Operation not permitted`. Because macOS Seatbelt sandboxes block hardlink creation (`os.link`) even within writable workspace directories, `cmmmech new-history` and `scripts/curate_causal_graphs.py` currently require running outside the sandbox.
+- **Desired outcome**: Update `cmd_new()` in `src/cmmmech/history.py` during Stage 6 so that when `os.link(stream.name, path)` raises `PermissionError` (or by using `os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o644)` directly), it atomically writes new history sidecars inside standard Seatbelt sandboxes while preserving the append-only guarantee that existing session files are never overwritten or truncated.
+- **Evidence paths**: `src/cmmmech/history.py`, `scripts/curate_causal_graphs.py`, `tests/test_curate_causal_graphs.py`
+- **Priority**: low
+- **Dependencies**: `cmmmech-infra-0004`
+- **Status**: `note` (pending Stage 6 issue intake)
+
 
 
 

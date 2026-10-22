@@ -1,0 +1,30 @@
+history_version: 1
+target:
+  kind: record
+  slug: fluorine
+  path: data/records/fluorine.yaml
+session:
+  id: 2026-10-22T093020Z-claude-ae246e
+  timestamp: '2026-10-22T09:30:20Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Upgraded DehH1 C-F cleavage causal graph edge in fluorine.yaml from acts_on to
+    hydrolyzes (Issue #807, PR #811).'
+  details: Replaced generic acts_on with hydrolyzes on dehh1_fluoroacetate_dehalogenase ->
+    fluorocarboxylic_acid_substrate in recombinant_putida_dehh1_defluorination_graph to reflect
+    nucleophilic hydrolytic defluorination by DehH1 (EC 3.8.1.3) in Dodge et al. (2024).
+  sections:
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/807
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/811

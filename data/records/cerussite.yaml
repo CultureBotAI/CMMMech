@@ -1,54 +1,43 @@
 id: cmmmech:cerussite
 name: Cerussite
 material_kind: mineral
-description: >-
-  Cerussite is the grandfathered lead carbonate mineral, Pb(CO3), recognized by the IMA-CNMNC
-  September 2026 list. It is distinct from elemental lead, hydrocerussite, anglesite, lead
-  oxalate, lead-bearing ore and battery paste. The dated list gives 1845 as the original-description
-  year, not an IMA approval number. No criticality designation is inherited from lead.
+description: Cerussite is the grandfathered lead carbonate mineral, Pb(CO3), recognized by the IMA-CNMNC September 2026 list. It is distinct from elemental lead, hydrocerussite, anglesite, lead oxalate, lead-bearing ore and battery paste. The dated list gives 1845 as the original-description year, not an IMA approval number. No criticality designation is inherited from lead.
 sources:
 - id: ima_2026_09
-  title: >-
-    IMA-CNMNC. The New IMA List of Minerals, September 2026. Cerussite row, PDF page 39; introductory
-    column definitions and distribution terms.
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Cerussite row, PDF page 39; introductory column definitions and distribution terms.
   url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
   accessed_on: '2026-10-12'
 - id: vlasov2023
-  title: >-
-    Vlasov, Zelenskaya, Izatulina, Janson and Frank-Kamenetskaya (2023). Oxalate Crystallization
-    under the Action of Brown Rot Fungi. Crystals 13:432. Complete main article; Methods 2.2-2.3,
-    Tables 2-4 and mineral-specific Figures 3-7.
+  title: Vlasov, Zelenskaya, Izatulina, Janson and Frank-Kamenetskaya (2023). Oxalate Crystallization under the Action of Brown Rot Fungi. Crystals 13:432. Complete main article; Methods 2.2-2.3, Tables 2-4 and mineral-specific Figures 3-7.
   url: https://doi.org/10.3390/cryst13030432
   accessed_on: '2026-10-12'
 - id: ncbi_fungal_taxonomy
-  title: NCBI Taxonomy. Species nodes 80602, 80637, 85982 and 1333629; current names and species
-    ranks.
+  title: NCBI Taxonomy. Species nodes 80602, 80637, 85982 and 1333629; current names and species ranks.
   url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=80602,80637,85982,1333629&retmode=xml
   accessed_on: '2026-10-12'
 - id: genbank_ky352492_1
-  title: NCBI GenBank KY352492.1. Ribosomal sequence and source strain label Serpula himantioides
-    LE-BIN 1368; identity context only.
+  title: NCBI GenBank KY352492.1. Ribosomal sequence and source strain label Serpula himantioides LE-BIN 1368; identity context only.
   url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KY352492.1&rettype=gb&retmode=text
   accessed_on: '2026-10-12'
 - id: genbank_ky433978_1
-  title: NCBI GenBank KY433978.1. Ribosomal sequence and source strain label Coniophora puteana
-    LE-BIN 1370; identity context only.
+  title: NCBI GenBank KY433978.1. Ribosomal sequence and source strain label Coniophora puteana LE-BIN 1370; identity context only.
   url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KY433978.1&rettype=gb&retmode=text
   accessed_on: '2026-10-12'
 - id: genbank_ky352493_1
-  title: NCBI GenBank KY352493.1. Ribosomal sequence and source strain label Serpula lacrymans
-    LE-BIN 1192; identity context only.
+  title: NCBI GenBank KY352493.1. Ribosomal sequence and source strain label Serpula lacrymans LE-BIN 1192; identity context only.
   url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KY352493.1&rettype=gb&retmode=text
   accessed_on: '2026-10-12'
 - id: genbank_ky433983_1
-  title: NCBI GenBank KY433983.1. Ribosomal sequence and source strain label Amyloporia xantha
-    LE-BIN 1029; identity context only.
+  title: NCBI GenBank KY433983.1. Ribosomal sequence and source strain label Amyloporia xantha LE-BIN 1029; identity context only.
   url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KY433983.1&rettype=gb&retmode=text
   accessed_on: '2026-10-12'
 mechanisms:
 - id: brown_rot_surface_transformation
   name: Culture-associated lead oxalate formation on cerussite
   process: biomineralization
+  description: Brown-rot fungal cultures incubated with a cerussite specimen produced surface crystals assigned to anhydrous lead oxalate. The strongest phase assignments combine powder diffraction and microscopy for Serpula himantioides LE-BIN 1368, Coniophora puteana LE-BIN 1370 and source-named Antrodia xantha LE-BIN 1029. The Serpula lacrymans LE-BIN 1192 comparison has a weaker microscopy-only lead-oxalate assignment. This is a laboratory transformation observation, not a measured lead extraction or isolated recovery yield.
+  context: Table 3 identifies the starting specimen as cerussite, Pb(CO3), supplied by the Central Scientific and Research Geological Museum of Academician F. N. Chernyshev in Saint Petersburg. The paper states that starting substrates were examined by PXRD and EDX, but supplies no quantitative starting purity or specimen accession for this feed. No battery-paste identity is inferred. Methods 2.2 describes approximately 1 x 0.5 x 0.5 cm blocks in plastic Petri dishes with 20 mL liquid glucose-peptone medium, initial pH 5.5, room temperature and 30 days, in triplicate. Mycelial fragments came from ten-day cultures on glucose-peptone agar. Inoculum amount, substrate sterilization and a separate complete liquid-medium formulation are not specified. The paper names Antrodia xantha; current NCBI taxonomy and its cited ribosomal accession use Amyloporia xantha for LE-BIN 1029. The organisms list includes the tested comparator S. lacrymans; it does not assert identical mineral formation by every
+    listed culture.
   microbial: true
   organisms:
   - id: NCBITaxon:80602
@@ -59,108 +48,101 @@ mechanisms:
     label: Serpula lacrymans
   - id: NCBITaxon:1333629
     label: Amyloporia xantha
-  description: >-
-    Brown-rot fungal cultures incubated with a cerussite specimen produced surface crystals
-    assigned to anhydrous lead oxalate. The strongest phase assignments combine powder diffraction
-    and microscopy for Serpula himantioides LE-BIN 1368, Coniophora puteana LE-BIN 1370 and
-    source-named Antrodia xantha LE-BIN 1029. The Serpula lacrymans LE-BIN 1192 comparison
-    has a weaker microscopy-only lead-oxalate assignment. This is a laboratory transformation
-    observation, not a measured lead extraction or isolated recovery yield.
-  context: >-
-    Table 3 identifies the starting specimen as cerussite, Pb(CO3), supplied by the Central
-    Scientific and Research Geological Museum of Academician F. N. Chernyshev in Saint Petersburg.
-    The paper states that starting substrates were examined by PXRD and EDX, but supplies
-    no quantitative starting purity or specimen accession for this feed. No battery-paste
-    identity is inferred. Methods 2.2 describes approximately 1 x 0.5 x 0.5 cm blocks in plastic
-    Petri dishes with 20 mL liquid glucose-peptone medium, initial pH 5.5, room temperature
-    and 30 days, in triplicate. Mycelial fragments came from ten-day cultures on glucose-peptone
-    agar. Inoculum amount, substrate sterilization and a separate complete liquid-medium formulation
-    are not specified. The paper names Antrodia xantha; current NCBI taxonomy and its cited
-    ribosomal accession use Amyloporia xantha for LE-BIN 1029. The organisms list includes
-    the tested comparator S. lacrymans; it does not assert identical mineral formation by
-    every listed culture.
   evidence:
   - source_ref: vlasov2023
     supports: support
-    explanation: >-
-      Table 4 assigns anhydrous lead oxalate by SEM/EDX and PXRD to S. himantioides at pH
-      2, C. puteana at pH 2.5 and source-named A. xantha at pH 3.5. Figure 3d is the selected
-      C. puteana product diffraction pattern, retaining substrate reflections; Figure 4d shows
-      source-assigned lead-oxalate morphology for S. himantioides. These observations support
-      formation in mixed surface products without establishing complete replacement of the
-      cerussite.
+    explanation: Table 4 assigns anhydrous lead oxalate by SEM/EDX and PXRD to S. himantioides at pH 2, C. puteana at pH 2.5 and source-named A. xantha at pH 3.5. Figure 3d is the selected C. puteana product diffraction pattern, retaining substrate reflections; Figure 4d shows source-assigned lead-oxalate morphology for S. himantioides. These observations support formation in mixed surface products without establishing complete replacement of the cerussite.
   - source_ref: vlasov2023
     supports: partial
-    explanation: >-
-      For S. lacrymans at pH 3, Table 4 and Section 3.2.2 report isolated lead-oxalate-like
-      crystals by SEM/EDX, while PXRD lists whewellite only; Figure 5d is microscopy, not
-      independent diffraction confirmation of lead oxalate. Section 3.2.2 describes both whewellite
-      and weddellite for C. puteana, whereas its Table 4 microscopy cell lists whewellite
-      with lead oxalate and its PXRD cell lists lead oxalate only. This co-product discrepancy
-      remains unresolved. No cerussite-specific uninoculated phase pattern or quantitative
-      control outcome is supplied.
+    explanation: For S. lacrymans at pH 3, Table 4 and Section 3.2.2 report isolated lead-oxalate-like crystals by SEM/EDX, while PXRD lists whewellite only; Figure 5d is microscopy, not independent diffraction confirmation of lead oxalate. Section 3.2.2 describes both whewellite and weddellite for C. puteana, whereas its Table 4 microscopy cell lists whewellite with lead oxalate and its PXRD cell lists lead oxalate only. This co-product discrepancy remains unresolved. No cerussite-specific uninoculated phase pattern or quantitative control outcome is supplied.
   - source_ref: vlasov2023
     supports: partial
-    explanation: >-
-      Methods states that fungus-free controls were performed, but the selected mineral-arm
-      results do not provide a matched pH-control series or a quantitative inoculated-versus-uninoculated
-      phase balance. No killed-biomass or cell-free-metabolite comparison isolates a necessary
-      causal step. Oxalate secretion is the proposed explanation, without an arm-specific
-      oxalate time course or molecular intervention in this study. PXRD methods are referred
-      to earlier papers; the displayed patterns include substrate peaks. Culture association
-      and source-assigned phases do not establish quantitative microbial enhancement, complete
-      feed consumption or industrial use.
+    explanation: Methods states that fungus-free controls were performed, but the selected mineral-arm results do not provide a matched pH-control series or a quantitative inoculated-versus-uninoculated phase balance. No killed-biomass or cell-free-metabolite comparison isolates a necessary causal step. Oxalate secretion is the proposed explanation, without an arm-specific oxalate time course or molecular intervention in this study. PXRD methods are referred to earlier papers; the displayed patterns include substrate peaks. Culture association and source-assigned phases do not establish quantitative microbial enhancement, complete feed consumption or industrial use.
   - source_ref: vlasov2023
     supports: context_only
-    explanation: >-
-      This is one arm of Vlasov et al. (2023), also represented by the humboldtine record
-      and separately curated mineral-feed owners. The shared paper, its XML/PDF and the different
-      material views are not independent replications. Its comparison with earlier Aspergillus
-      niger studies uses different protocols and does not establish superior extraction rates
-      for the present cultures. The natural adit observations concern calcium oxalates on
-      wood/carbonate rock; they do not establish field deployment of this particular feed
-      transformation.
+    explanation: This is one arm of Vlasov et al. (2023), also represented by the humboldtine record and separately curated mineral-feed owners. The shared paper, its XML/PDF and the different material views are not independent replications. Its comparison with earlier Aspergillus niger studies uses different protocols and does not establish superior extraction rates for the present cultures. The natural adit observations concern calcium oxalates on wood/carbonate rock; they do not establish field deployment of this particular feed transformation.
   - source_ref: ima_2026_09
     supports: context_only
-    explanation: >-
-      The authority establishes the mineral species name and formula, not the purity, valence,
-      hydration or transformation behavior of the specific experimental material.
+    explanation: The authority establishes the mineral species name and formula, not the purity, valence, hydration or transformation behavior of the specific experimental material.
   - source_ref: ncbi_fungal_taxonomy
     supports: context_only
-    explanation: >-
-      Species taxonomy verifies identifiers and current names. A species TaxID does not identify
-      the experimental strain or demonstrate its mineral-transforming phenotype.
+    explanation: Species taxonomy verifies identifiers and current names. A species TaxID does not identify the experimental strain or demonstrate its mineral-transforming phenotype.
   - source_ref: genbank_ky352492_1
     supports: context_only
-    explanation: >-
-      The deposited sequence carries the Serpula himantioides LE-BIN 1368 source label cited
-      by the paper. This label/sequence match is not independent authentication of the experimental
-      culture or direct evidence for the mechanism.
+    explanation: The deposited sequence carries the Serpula himantioides LE-BIN 1368 source label cited by the paper. This label/sequence match is not independent authentication of the experimental culture or direct evidence for the mechanism.
   - source_ref: genbank_ky433978_1
     supports: context_only
-    explanation: >-
-      The deposited sequence carries the Coniophora puteana LE-BIN 1370 source label cited
-      by the paper. This label/sequence match is not independent authentication of the experimental
-      culture or direct evidence for the mechanism.
+    explanation: The deposited sequence carries the Coniophora puteana LE-BIN 1370 source label cited by the paper. This label/sequence match is not independent authentication of the experimental culture or direct evidence for the mechanism.
   - source_ref: genbank_ky352493_1
     supports: context_only
-    explanation: >-
-      The deposited sequence carries the Serpula lacrymans LE-BIN 1192 source label cited
-      by the paper. This label/sequence match is not independent authentication of the experimental
-      culture or direct evidence for the mechanism.
+    explanation: The deposited sequence carries the Serpula lacrymans LE-BIN 1192 source label cited by the paper. This label/sequence match is not independent authentication of the experimental culture or direct evidence for the mechanism.
   - source_ref: genbank_ky433983_1
     supports: context_only
-    explanation: >-
-      The deposited sequence carries the Amyloporia xantha LE-BIN 1029 source label cited
-      by the paper. This label/sequence match is not independent authentication of the experimental
-      culture or direct evidence for the mechanism.
+    explanation: The deposited sequence carries the Amyloporia xantha LE-BIN 1029 source label cited by the paper. This label/sequence match is not independent authentication of the experimental culture or direct evidence for the mechanism.
+causal_graphs:
+- id: brown_rot_cerussite_lead_oxalate_graph
+  name: Brown-rot fungal surface transformation of cerussite to anhydrous lead oxalate
+  description: Causal pathway linking organic-acid excretion by brown-rot basidiomycetes (Serpula himantioides LE-BIN 1368, Coniophora puteana LE-BIN 1370, Amyloporia xantha LE-BIN 1029, and comparator Serpula lacrymans LE-BIN 1192) to surface dissolution of cerussite (PbCO3) and crystallization of anhydrous lead oxalate.
+  scope: RECORD_SPECIFIC_MECHANISM
+  mechanism_ref: brown_rot_surface_transformation
+  nodes:
+  - id: brown_rot_oxalate_secretion_pathway
+    label: Brown-rot basidiomycete organic-acid / oxalate secretion pathway
+    node_type: GENE_OR_PROTEIN
+    description: Enzymatic oxalate biosynthesis and efflux pathways in Serpula himantioides LE-BIN 1368, Coniophora puteana LE-BIN 1370, and Amyloporia xantha LE-BIN 1029; marked UNGROUNDED because Vlasov et al. (2023) performed comparative mineralogical assays without gene or protein characterization.
+    protein_grounding_status: UNGROUNDED
+  - id: brown_rot_secreted_oxalic_acid
+    label: Secreted fungal organic acids in glucose-peptone medium (pH 2.0-3.5)
+    node_type: CHEMICAL_ENTITY
+    description: Extracellular oxalic and organic acids lowering liquid glucose-peptone medium pH from 5.5 to 2.0-3.5 over 30 days.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: cerussite_carbonate_substrate
+    label: Cerussite (PbCO3) mineral block (~1 x 0.5 x 0.5 cm)
+    node_type: MATERIAL_OR_PHASE
+    description: Natural cerussite specimen from the Chernyshev Geological Museum incubated in 20 mL liquid glucose-peptone medium for 30 days.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: anhydrous_lead_oxalate_crust
+    label: Anhydrous lead oxalate (PbC2O4) surface crystals (with co-occurring calcium oxalates)
+    node_type: MATERIAL_OR_PHASE
+    description: PXRD- and SEM/EDX-assigned anhydrous lead oxalate crystals formed on cerussite in S. himantioides, C. puteana, and A. xantha cultures (microscopy-only in S. lacrymans).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: brown_rot_oxalate_secretion_pathway
+    target: brown_rot_secreted_oxalic_acid
+    predicate: produces
+    relationship: organism-dependent organic-acid excretion and medium acidification
+    description: Brown-rot fungi acidify the liquid glucose-peptone medium and excrete oxalate metabolites.
+    evidence:
+    - source_ref: vlasov2023
+      supports: partial
+      explanation: Table 4 in Vlasov et al. (2023) reports medium acidification to pH 2.0 (S. himantioides), pH 2.5 (C. puteana), pH 3.0 (S. lacrymans), and pH 3.5 (A. xantha) on cerussite, with oxalate secretion proposed without a direct metabolite time series.
+  - source: brown_rot_secreted_oxalic_acid
+    target: cerussite_carbonate_substrate
+    predicate: dissolves
+    relationship: acidolysis and oxalate attack on mineral substrate surface
+    description: Secreted fungal organic acids dissolve cations from the mineral block surface.
+    evidence:
+    - source_ref: vlasov2023
+      supports: partial
+      explanation: Vlasov et al. (2023) attribute lead mobilization from the cerussite carbonate surface to fungal organic-acid and oxalate attack.
+  - source: cerussite_carbonate_substrate
+    target: anhydrous_lead_oxalate_crust
+    predicate: transforms_into
+    relationship: crystallization of secondary surface oxalate biominerals
+    description: Released metal cations precipitate with fungal oxalate as surface biomineral crystals.
+    evidence:
+    - source_ref: vlasov2023
+      supports: support
+      explanation: Table 4 and Figures 3d and 4d in Vlasov et al. (2023) identify anhydrous lead oxalate by PXRD and SEM/EDX for S. himantioides, C. puteana, and A. xantha.
 curation_history:
 - timestamp: '2026-10-12T00:15:48Z'
   curator: codex (GPT-6; codex)
   action: CREATE
-  summary: >-
-    Added IMA-grounded cerussite with culture-associated lead oxalate formation, preserving
-    microscopy-versus-diffraction limits, co-product disagreement and absent quantitative
-    control and recovery evidence.
+  summary: Added IMA-grounded cerussite with culture-associated lead oxalate formation, preserving microscopy-versus-diffraction limits, co-product disagreement and absent quantitative control and recovery evidence.
+- timestamp: '2026-10-22T09:30:21Z'
+  curator: claude
+  action: edit
+  summary: Added brown-rot fungal surface transformation causal graph (brown_rot_cerussite_lead_oxalate_graph) to cerussite.yaml.
 history_refs:
 - history/records/cerussite/2026-10-12T001552Z-codex-41ac80.yaml
+- history/records/cerussite/2026-10-22T093021Z-claude-4c5605.yaml

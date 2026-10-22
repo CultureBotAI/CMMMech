@@ -1,0 +1,29 @@
+history_version: 1
+target:
+  kind: record
+  slug: whewellite
+  path: data/records/whewellite.yaml
+session:
+  id: 2026-10-22T093021Z-claude-42142d
+  timestamp: '2026-10-22T09:30:21Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Upgraded fungal fluorapatite-rock dissolution edge in whewellite.yaml from acts_on
+    to dissolves (Issue #807, PR #811).'
+  details: Replaced generic acts_on with dissolves on secreted_organic_acids -> starting_substrate
+    in aspergillus_cexa_whewellite_formation_graph (Frank-Kamenetskaya et al. 2019).
+  sections:
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/807
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/811
