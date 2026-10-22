@@ -157,6 +157,41 @@ def test_collision_never_overwrites_existing_history(tmp_path, record, monkeypat
     assert list(existing.parent.glob(".new-history-*")) == []
 
 
+def test_scaffolder_falls_back_to_exclusive_create_when_hardlink_blocked(
+    tmp_path, record, monkeypatch, capsys
+):
+    from cmmmech import history as module
+
+    target = tmp_path / "data/records/synthetic-material.yaml"
+    target.parent.mkdir(parents=True)
+    target.write_text(yaml.safe_dump(record))
+
+    def forbid_link(src, dst):
+        raise PermissionError(1, "Operation not permitted")
+
+    monkeypatch.setattr(module.os, "link", forbid_link)
+    assert main(new_args(tmp_path)) == 0
+    created = tmp_path / capsys.readouterr().out.strip()
+    assert created.is_file()
+    assert list(created.parent.glob(".new-history-*")) == []
+    data = read_record(created)
+    assert validate_history(data, created, tmp_path) == []
+
+    # Verify exclusive-create fallback also refuses to overwrite an existing file.
+    before = created.read_bytes()
+    real_open = module.os.open
+
+    def redirect_target_open(path, flags, mode=0o777, *, dir_fd=None):
+        if str(path).endswith(".yaml"):
+            return real_open(created, flags, mode, dir_fd=dir_fd)
+        return real_open(path, flags, mode, dir_fd=dir_fd)
+
+    monkeypatch.setattr(module.os, "open", redirect_target_open)
+    assert main(new_args(tmp_path)) == 1
+    assert created.read_bytes() == before
+    assert list(created.parent.glob(".new-history-*")) == []
+
+
 @pytest.mark.parametrize("extra", [
     ["--slug", ".."], ["--path", "../outside.yaml"], ["--path", "/tmp/outside.yaml"],
     ["--details", "  "], ["--actor-type", "ai_agent"], ["--issue", "not-a-uri"],

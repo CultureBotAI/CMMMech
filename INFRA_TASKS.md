@@ -38,30 +38,32 @@ tasks:
     summary: Anchor scripts/record_review.py _directory() traversal at repository ROOT instead of filesystem root / so review validation runs inside Seatbelt sandboxes
     status: deferred
     issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
-    disposition: Deferred in Cycle 1 Stage 6 because scripts/record_review.py and tests/test_record_review_contract.py are vendored artifacts governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); tracked under issue #805 for coordinated upstream implementation and sync.
+    disposition: "Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6 because scripts/record_review.py and tests/test_record_review_contract.py are vendored artifacts governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); tracked under open issue #805 for coordinated upstream implementation and sync."
   - task_id: cmmmech-infra-0002
     summary: Add optional MaterialTerm/CriticalMineralRecord metadata slots for IMA mineral symbols and engineered material polymorph/grade identifiers in src/cmmmech/schema/cmmmech.yaml
     status: resolved
     issue_url: https://github.com/CultureBotAI/CMMMech/issues/806
-    disposition: Resolved in Cycle 1 Stage 6 (issue #806) by adding optional backward-compatible ima_symbol and polymorph_or_grade slots to CriticalMineralRecord in src/cmmmech/schema/cmmmech.yaml, surfacing them in scripts/render_pages.py and src/cmmmech/templates/material.html, and covering them with unit tests in tests/test_validation.py and tests/test_render_pages.py.
+    disposition: "Resolved in Cycle 1 Stage 6 (issue #806) by adding optional backward-compatible ima_symbol and polymorph_or_grade slots to CriticalMineralRecord in src/cmmmech/schema/cmmmech.yaml, surfacing them in scripts/render_pages.py and src/cmmmech/templates/material.html, and covering them with unit tests in tests/test_validation.py and tests/test_render_pages.py."
   - task_id: cmmmech-infra-0003
     summary: Expand CausalPredicateEnum in src/cmmmech/schema/cmmmech.yaml with solubilizes/dissolves and hydrolyzes/degrades for acidolytic mineral leaching and enzymatic polymer stripping
     status: resolved
     issue_url: https://github.com/CultureBotAI/CMMMech/issues/807
-    disposition: Resolved in Cycle 1 Stage 6 (issue #807) by adding degrades, dissolves, hydrolyzes, and solubilizes to CausalPredicateEnum in src/cmmmech/schema/cmmmech.yaml and validating them in tests/test_validation.py.
+    disposition: "Resolved in Cycle 1 Stage 6 (issue #807) by adding degrades, dissolves, hydrolyzes, and solubilizes to CausalPredicateEnum in src/cmmmech/schema/cmmmech.yaml and validating them in tests/test_validation.py."
   - task_id: cmmmech-infra-0004
     summary: Add a first-class CLI writer helper (scripts/curate_causal_graphs.py) that validates causal_graphs and protein_examples updates and atomically mints history/records sidecars
     status: resolved
     issue_url: https://github.com/CultureBotAI/CMMMech/issues/808
-    disposition: Resolved in Cycle 1 Stage 6 (issue #808) by implementing scripts/curate_causal_graphs.py with canonical key ordering, pre-write schema validation, and atomic EDIT HistoryRecord sidecar creation, verified by tests/test_curate_causal_graphs.py.
+    disposition: "Resolved in Cycle 1 Stage 6 (issue #808) by implementing scripts/curate_causal_graphs.py with canonical key ordering, pre-write schema validation, and atomic EDIT HistoryRecord sidecar creation, verified by tests/test_curate_causal_graphs.py."
   - task_id: cmmmech-infra-0005
     summary: Batch git cat-file object size and content checks in scripts/record_review.py assert_append_only() and source_provenance() via git cat-file --batch
     status: deferred
     issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
-    disposition: Deferred in Cycle 1 Stage 6 because scripts/record_review.py is a vendored artifact governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); grouped with cmmmech-infra-0001 under issue #805 for upstream implementation and sync.
+    disposition: "Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6 because scripts/record_review.py is a vendored artifact governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); grouped with cmmmech-infra-0001 under open issue #805 for upstream implementation and sync."
   - task_id: cmmmech-infra-0006
     summary: Replace os.link() in src/cmmmech/history.py cmd_new() with exclusive-create or os.replace() fallback so scripts/curate_causal_graphs.py and cmmmech new-history succeed inside macOS Seatbelt sandboxes
-    status: note
+    status: resolved
+    issue_url: https://github.com/CultureBotAI/CMMMech/issues/822
+    disposition: "Resolved in Cycle 2 Stage 6 (issue #822) by adding an exclusive-create fallback (os.open with O_WRONLY | O_CREAT | O_EXCL | O_NOFOLLOW) when os.link() raises PermissionError in src/cmmmech/history.py cmd_new(), verified by unit tests in tests/test_history.py and sandboxed execution of tests/test_curate_causal_graphs.py."
 ```
 <!-- mech-infra-tasks:end -->
 
@@ -132,10 +134,12 @@ tasks:
 - **Originating run / cycle / stage**: `mech-goal-sequence-20261019` / cycle `2` / stage `2` (`causal_graphs`)
 - **Observation**: During the Cycle 2 Stage 2 corpus-wide causal-graph review and curation across all 631 records (`24` records curated via `scripts/curate_causal_graphs.py`: `10` existing `causal_graphs` records upgraded to use `hydrolyzes`, `solubilizes`, and `dissolves` from `cmmmech-infra-0003` + `14` newly grounded multi-step `causal_graphs` records, raising `causal_graphs` coverage from `63` records / `66` graphs to `77` records / `81` graphs while preserving `412` single-step whole-cell sorption/uptake records without resolved molecular intermediates at the `mechanisms` level and `142` criticality-only records without microbial mechanisms), invoking `scripts/curate_causal_graphs.py` inside the macOS Seatbelt sandbox failed at `src/cmmmech/history.py:288` (`os.link(stream.name, path)`) with `PermissionError: [Errno 1] Operation not permitted`. Because macOS Seatbelt sandboxes block hardlink creation (`os.link`) even within writable workspace directories, `cmmmech new-history` and `scripts/curate_causal_graphs.py` currently require running outside the sandbox.
 - **Desired outcome**: Update `cmd_new()` in `src/cmmmech/history.py` during Stage 6 so that when `os.link(stream.name, path)` raises `PermissionError` (or by using `os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL, 0o644)` directly), it atomically writes new history sidecars inside standard Seatbelt sandboxes while preserving the append-only guarantee that existing session files are never overwritten or truncated.
-- **Evidence paths**: `src/cmmmech/history.py`, `scripts/curate_causal_graphs.py`, `tests/test_curate_causal_graphs.py`
+- **Evidence paths**: `src/cmmmech/history.py`, `tests/test_history.py`, `scripts/curate_causal_graphs.py`, `tests/test_curate_causal_graphs.py`
 - **Priority**: low
 - **Dependencies**: `cmmmech-infra-0004`
-- **Status**: `note` (pending Stage 6 issue intake)
+- **Issue**: https://github.com/CultureBotAI/CMMMech/issues/822 (`IGRP-C2S6-001`)
+- **Status**: `resolved`
+- **Disposition**: Resolved in Cycle 2 Stage 6 by updating `cmd_new()` in `src/cmmmech/history.py` to fall back to exclusive file creation (`os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL | O_NOFOLLOW, 0o644)`) with `fsync` when `os.link()` raises `PermissionError`, preserving atomic non-overwriting semantics and verified by `test_scaffolder_falls_back_to_exclusive_create_when_hardlink_blocked` in `tests/test_history.py`.
 
 
 
