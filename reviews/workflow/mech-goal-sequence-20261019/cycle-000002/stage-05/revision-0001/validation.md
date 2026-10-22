@@ -3,8 +3,8 @@
 - **Repository**: `CultureBotAI/CMMMech` (`cmmmech`)
 - **Post-Remediation Structured Review ID**: `20261022T132200Z-cycle2-stage5-remediation-verification`
 - **Post-Remediation Structured Review Bundle**:
-  - `reviews/structured/20261022T132200Z-cycle2-stage5-remediation-verification/review.yaml` (`sha256: dc297e4313e15ddd8fa1c4f217573f039073b80306e7c741bdeb825d377395d0`)
-  - `reviews/structured/20261022T132200Z-cycle2-stage5-remediation-verification/review.md` (`sha256: e7bda1f49789d6b6a5154263740e933da46b35f19e4afe775d07c2c02f5c6d54`)
+  - `reviews/structured/20261022T132200Z-cycle2-stage5-remediation-verification/review.yaml` (`sha256: e413818727466800d7eba5d00d197b7cf13ab1736da8331d02d83a6224da6101`)
+  - `reviews/structured/20261022T132200Z-cycle2-stage5-remediation-verification/review.md` (`sha256: b4e8e637cbde9acc26f1aced5ec41bdeef7488699a22da79adc96c8a20990d0c`)
 - **Immutable Stage 4 Review Bundles**: Preserved byte-for-byte (`scripts/record_review.py check --require-reviews --base origin/main` verified).
 
 ## 1. Record & History Sidecar Inventory (33 Remediated Records)

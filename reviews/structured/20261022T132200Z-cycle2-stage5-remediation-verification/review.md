@@ -91,7 +91,7 @@ data/records/katsarosite.yaml (niger_associated_zinc_oxalate_formation_graph) no
 
 ### cmmmech-cycle2-stage4-finding-0001: 30 mineral records now use canonical ima_2026_09 source key for the September 2026 IMA Master List
 
-minor / resolved / confirmed; issue key: cmmmech.mineral.noncanonical-ima-source-id-variants.
+minor / resolved / confirmed; issue key: cmmmech.mineral.noncanonical-ima-master-list-source-ids.
 
 Normalized sources[].id from ima2026 (14 records), ima202609 (9 records), and ima_202609 (7 records) to canonical ima_2026_09 across all 30 mineral records and recorded 30 append-only EDIT history sidecars.
 
@@ -99,7 +99,7 @@ Disposition: Resolved under GitHub issue #817 (group GRP-C2S5-001) by normalizin
 
 ### cmmmech-cycle2-stage4-finding-0002: allanite-concentrate and thulium causal-graph node protein_examples evidence explanations now match mechanisms[].protein_examples
 
-minor / resolved / confirmed; issue key: cmmmech.causal-graphs.node-protein-example-explanation-drift.
+minor / resolved / confirmed; issue key: cmmmech.protein_examples.mechanism-node-evidence-explanation-drift.
 
 Synchronized causal_graphs[].nodes[].protein_examples[].evidence[].explanation with mechanisms[].protein_examples[].evidence[].explanation for UniProtKB:Q5FT13 and UniProtKB:Q5FTI1 in allanite-concentrate.yaml and UniProtKB:O34952, UniProtKB:Q797B3, UniProtKB:P54496, and UniProtKB:O32206 in thulium.yaml with append-only EDIT history sidecars.
 
@@ -107,7 +107,7 @@ Disposition: Resolved under GitHub issue #818 (group GRP-C2S5-002) via scripts/c
 
 ### cmmmech-cycle2-stage4-finding-0003: katsarosite causal graph now uses predicate: solubilizes on its substrate dissolution edge
 
-minor / resolved / confirmed; issue key: cmmmech.katsarosite.legacy-chelates-predicate-on-dissolution-edge.
+minor / resolved / confirmed; issue key: cmmmech.katsarosite.legacy-chelates-predicate-on-hopeite-solubilization.
 
 Updated predicate: chelates to predicate: solubilizes on the secreted_organic_acids -&gt; znso4_hopeite_culture_substrate edge in data/records/katsarosite.yaml (niger_associated_zinc_oxalate_formation_graph) with an append-only EDIT history sidecar.
 
@@ -1032,7 +1032,7 @@ assessments:
     maximum: 1.0
 findings:
 - finding_id: cmmmech-cycle2-stage4-finding-0001
-  issue_key: cmmmech.mineral.noncanonical-ima-source-id-variants
+  issue_key: cmmmech.mineral.noncanonical-ima-master-list-source-ids
   category: consistency
   severity: minor
   status: resolved
@@ -1175,12 +1175,12 @@ findings:
     sources[].id to ima_2026_09 with append-only EDIT history sidecars on all 30 records.'
   previous_occurrences:
   - repository: CultureBotAI/CMMMech
-    review_id: 20261022T115001Z-cycle2-stage4-cohort-mineral
+    review_id: 20261022T115001Z-cycle2-stage4-mineral-cohort-review
     finding_id: cmmmech-cycle2-stage4-finding-0001
   external_issues:
   - https://github.com/CultureBotAI/CMMMech/issues/817
 - finding_id: cmmmech-cycle2-stage4-finding-0002
-  issue_key: cmmmech.causal-graphs.node-protein-example-explanation-drift
+  issue_key: cmmmech.protein_examples.mechanism-node-evidence-explanation-drift
   category: consistency
   severity: minor
   status: resolved
@@ -1213,12 +1213,12 @@ findings:
     with append-only EDIT history sidecars on both records.'
   previous_occurrences:
   - repository: CultureBotAI/CMMMech
-    review_id: 20261022T115006Z-cycle2-stage4-cohort-causal-graphs
+    review_id: 20261022T115006Z-cycle2-stage4-causal-graphs-cohort-review
     finding_id: cmmmech-cycle2-stage4-finding-0002
   external_issues:
   - https://github.com/CultureBotAI/CMMMech/issues/818
 - finding_id: cmmmech-cycle2-stage4-finding-0003
-  issue_key: cmmmech.katsarosite.legacy-chelates-predicate-on-dissolution-edge
+  issue_key: cmmmech.katsarosite.legacy-chelates-predicate-on-hopeite-solubilization
   category: consistency
   severity: minor
   status: resolved
@@ -1245,7 +1245,7 @@ findings:
     with an append-only EDIT history sidecar.'
   previous_occurrences:
   - repository: CultureBotAI/CMMMech
-    review_id: 20261022T115007Z-cycle2-stage4-single-katsarosite
+    review_id: 20261022T115007Z-katsarosite-cycle2-stage4-record-review
     finding_id: cmmmech-cycle2-stage4-finding-0003
   external_issues:
   - https://github.com/CultureBotAI/CMMMech/issues/819
