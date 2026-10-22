@@ -100,6 +100,234 @@ mechanisms:
     supports: context_only
     explanation: Taxon 211586 resolves the named MR-1 strain. The taxonomy entry supports organism identity,
       not the mineral transformation or independent verification of the culture stock.
+  protein_examples:
+  - uniprot_accession: UniProtKB:Q8EG34
+    entry_name: Q8EG34_SHEON
+    protein_name: Extracellular iron oxide respiratory system surface decaheme cytochrome c component
+      MtrC
+    gene_symbol: mtrC
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:211586
+      label: Shewanella oneidensis MR-1
+    reference_proteome_id: UP000008186
+    interpro_ids:
+    - InterPro:IPR020014
+    - InterPro:IPR054337
+    - InterPro:IPR054334
+    - InterPro:IPR036280
+    pfam_ids:
+    - Pfam:PF22113
+    - Pfam:PF22111
+    functional_role: Outer-membrane surface decaheme c-type cytochrome MtrC (SO_1778) serving as a terminal
+      extracellular electron-transfer reductase for humic shuttle and clay Fe(III) reduction.
+    evidence:
+    - source_ref: liu_2017
+      supports: partial
+      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway terminal cytochrome (mtrC) for
+        extracellular electron transfer to humic acids and Fe(III)-bearing SWy-2 montmorillonite in Liu
+        et al. (2017); individual cytochrome genes were not mutated.
+  - uniprot_accession: UniProtKB:Q8EG33
+    entry_name: Q8EG33_SHEON
+    protein_name: Extracelllular iron oxide respiratory system surface decaheme cytochrome c component
+      OmcA
+    gene_symbol: omcA
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:211586
+      label: Shewanella oneidensis MR-1
+    reference_proteome_id: UP000008186
+    interpro_ids:
+    - InterPro:IPR020014
+    - InterPro:IPR054337
+    - InterPro:IPR036280
+    - InterPro:IPR054336
+    pfam_ids:
+    - Pfam:PF22113
+    - Pfam:PF22112
+    functional_role: Outer-membrane surface decaheme c-type cytochrome OmcA (SO_1779) partnering with
+      MtrC in extracellular electron transfer to humic shuttles and Fe(III)-bearing clay minerals.
+    evidence:
+    - source_ref: liu_2017
+      supports: partial
+      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (omcA) for extracellular
+        electron transfer in Liu et al. (2017); individual cytochrome genes were not mutated.
+  - uniprot_accession: UniProtKB:Q8E8S0
+    entry_name: CYMA_SHEON
+    protein_name: Tetraheme c-type cytochrome CymA
+    gene_symbol: cymA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:211586
+      label: Shewanella oneidensis MR-1
+    reference_proteome_id: UP000008186
+    ec_numbers:
+    - EC:7.1.1.8
+    interpro_ids:
+    - InterPro:IPR051174
+    - InterPro:IPR036280
+    - InterPro:IPR024717
+    - InterPro:IPR005126
+    - InterPro:IPR038266
+    pfam_ids:
+    - Pfam:PF03264
+    functional_role: Inner-membrane tetraheme c-type menaquinol dehydrogenase CymA (EC 7.1.1.8; SO_4591)
+      transferring electrons from the menaquinol pool to periplasmic and outer-membrane electron-transfer
+      pathways.
+    evidence:
+    - source_ref: liu_2017
+      supports: partial
+      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (cymA) for extracellular
+        electron transfer in Liu et al. (2017); individual cytochrome genes were not mutated.
+causal_graphs:
+- id: mr1_humic_swy2_reduction_graph
+  name: Shewanella oneidensis MR-1 humic-assisted Fe(III) reduction in SWy-2 montmorillonite suspensions
+  description: Causal pathway linking Shewanella oneidensis MR-1 CymA, MtrC, and OmcA extracellular electron-transfer
+    proteins and humic-acid electron shuttling to operational Fe(II) production in SWy-2 montmorillonite
+    suspensions.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: mr1_humic_swy2_reduction
+  nodes:
+  - id: cyma_dehydrogenase
+    label: CymA inner-membrane tetraheme cytochrome c (SO_4591)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cymA
+    description: Inner-membrane menaquinol dehydrogenase delivering electrons into the periplasmic Mtr
+      pathway.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q8E8S0
+      entry_name: CYMA_SHEON
+      protein_name: Tetraheme c-type cytochrome CymA
+      gene_symbol: cymA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:211586
+        label: Shewanella oneidensis MR-1
+      reference_proteome_id: UP000008186
+      ec_numbers:
+      - EC:7.1.1.8
+      interpro_ids:
+      - InterPro:IPR051174
+      - InterPro:IPR036280
+      - InterPro:IPR024717
+      - InterPro:IPR005126
+      - InterPro:IPR038266
+      pfam_ids:
+      - Pfam:PF03264
+      functional_role: Inner-membrane tetraheme c-type menaquinol dehydrogenase CymA (EC 7.1.1.8; SO_4591)
+        transferring electrons from the menaquinol pool to periplasmic and outer-membrane electron-transfer
+        pathways.
+      evidence:
+      - source_ref: liu_2017
+        supports: partial
+        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (cymA) for extracellular
+          electron transfer in Liu et al. (2017); individual cytochrome genes were not mutated.
+  - id: mtrc_omca_surface_cytochromes
+    label: MtrC/OmcA outer-membrane decaheme cytochrome c complex (SO_1778 / SO_1779)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: mtrC
+    description: Terminal cell-surface decaheme c-type cytochromes mediating extracellular electron transfer
+      to humic shuttles and mineral Fe(III).
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q8EG34
+      entry_name: Q8EG34_SHEON
+      protein_name: Extracellular iron oxide respiratory system surface decaheme cytochrome c component
+        MtrC
+      gene_symbol: mtrC
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:211586
+        label: Shewanella oneidensis MR-1
+      reference_proteome_id: UP000008186
+      interpro_ids:
+      - InterPro:IPR020014
+      - InterPro:IPR054337
+      - InterPro:IPR054334
+      - InterPro:IPR036280
+      pfam_ids:
+      - Pfam:PF22113
+      - Pfam:PF22111
+      functional_role: Outer-membrane surface decaheme c-type cytochrome MtrC (SO_1778) serving as a terminal
+        extracellular electron-transfer reductase for humic shuttle and clay Fe(III) reduction.
+      evidence:
+      - source_ref: liu_2017
+        supports: partial
+        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway terminal cytochrome (mtrC)
+          for extracellular electron transfer to humic acids and Fe(III)-bearing SWy-2 montmorillonite
+          in Liu et al. (2017); individual cytochrome genes were not mutated.
+    - uniprot_accession: UniProtKB:Q8EG33
+      entry_name: Q8EG33_SHEON
+      protein_name: Extracelllular iron oxide respiratory system surface decaheme cytochrome c component
+        OmcA
+      gene_symbol: omcA
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:211586
+        label: Shewanella oneidensis MR-1
+      reference_proteome_id: UP000008186
+      interpro_ids:
+      - InterPro:IPR020014
+      - InterPro:IPR054337
+      - InterPro:IPR036280
+      - InterPro:IPR054336
+      pfam_ids:
+      - Pfam:PF22113
+      - Pfam:PF22112
+      functional_role: Outer-membrane surface decaheme c-type cytochrome OmcA (SO_1779) partnering with
+        MtrC in extracellular electron transfer to humic shuttles and Fe(III)-bearing clay minerals.
+      evidence:
+      - source_ref: liu_2017
+        supports: partial
+        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (omcA) for extracellular
+          electron transfer in Liu et al. (2017); individual cytochrome genes were not mutated.
+  - id: swy2_montmorillonite_suspension
+    label: Size-fractionated (0.5-2.0 um) SWy-2 montmorillonite suspension with humic acids
+    node_type: MATERIAL_OR_PHASE
+    description: CMS SWy-2 montmorillonite (1-10 g/L) incubated anaerobically with washed MR-1 cells and
+      10-200 mg/L Aldrich, Suwannee River, or Elliott soil humic acid.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: reduced_swy2_fe2_clay_product
+    label: Reduced Fe(II)-enriched SWy-2 montmorillonite suspension
+    node_type: MATERIAL_OR_PHASE
+    description: Altered SWy-2 clay suspension showing increased operational phenanthroline-reactive total
+      Fe(II) and modified ethylene-glycolated XRD profile.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cyma_dehydrogenase
+    target: mtrc_omca_surface_cytochromes
+    predicate: provides_electrons_to
+    relationship: menaquinol-derived electron transfer across the periplasm to MtrC/OmcA
+    description: CymA transfers electrons from the inner-membrane menaquinol pool to the outer-membrane
+      MtrC/OmcA cytochrome complex.
+    evidence:
+    - source_ref: liu_2017
+      supports: partial
+      explanation: Representative Shewanella oneidensis MR-1 Mtr pathway mediating extracellular electron
+        transfer in washed MR-1 cell suspensions in Liu et al. (2017).
+  - source: mtrc_omca_surface_cytochromes
+    target: swy2_montmorillonite_suspension
+    predicate: reduces
+    relationship: humic-acid-enhanced extracellular reduction of SWy-2 Fe(III)
+    description: MR-1 cells reduce Fe(III) in SWy-2 montmorillonite suspensions, with added humic acids
+      enhancing total Fe(II) accumulation relative to humic-free live controls.
+    evidence:
+    - source_ref: liu_2017
+      supports: support
+      explanation: Figures 1d-f and 2b in Liu et al. (2017) demonstrate increased total Fe(II) accumulation
+        in SWy-2 suspensions with MR-1 and humic acids.
+  - source: swy2_montmorillonite_suspension
+    target: reduced_swy2_fe2_clay_product
+    predicate: transforms_into
+    relationship: accumulation of operational Fe(II) and clay diffraction alteration
+    description: Microbial reduction increases total Fe(II) and alters ethylene-glycolated SWy-2 diffraction
+      patterns.
+    evidence:
+    - source_ref: liu_2017_si
+      supports: support
+      explanation: Figures S1c/d and S6 in Liu et al. (2017) Supplementary Information show SWy-2 reduction
+        rates/extents and altered ethylene-glycolated XRD profiles.
 curation_history:
 - timestamp: '2026-10-14T15:42:02.178887+00:00'
   curator: codex (GPT-6; codex)
@@ -107,5 +335,12 @@ curation_history:
   summary: Created montmorillonite from the complete Liu2017 original and supplement, restricting microbial
     iron reduction to the distinct SWy-2 arms and preserving missing controls, donor/pH and product-transfer
     limits.
+- timestamp: '2026-10-22T01:38:05Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: EDIT
+  summary: Added Shewanella oneidensis MR-1 MtrCAB/CymA causal graph and live-verified
+    UniProtKB:Q8EG34, Q8EG33, and Q8E8S0 protein examples for humic-assisted SWy-2 Fe(III)
+    reduction.
 history_refs:
 - history/records/montmorillonite/2026-10-14T154216Z-codex-d7937f.yaml
+- history/records/montmorillonite/2026-10-22T013805Z-claude-001306.yaml

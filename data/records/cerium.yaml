@@ -76,6 +76,31 @@ mechanisms:
       to struvite. The study supports this prepared leachate's precipitation performance, not microbial
       necessity for precipitation, REE selectivity or performance on real cerium wastes.
   protein_examples:
+  - uniprot_accession: UniProtKB:G3Y4N5
+    entry_name: CEXA_ASPNA
+    protein_name: Citrate exporter A
+    gene_symbol: cexA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:380704
+      label: Aspergillus niger ATCC 1015
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Plasma-membrane MFS citrate exporter CexA in Aspergillus niger ATCC 1015 that secretes
+      intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification
+      and metal chelation.
+    annotation_note: Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5 (CEXA_ASPNA;
+      locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015 (NCBITaxon:380704).
+    evidence:
+    - source_ref: kang_2022
+      supports: partial
+      explanation: Representative Aspergillus niger ATCC 1015 citrate exporter CexA for organic-acid excretion;
+        Kang et al. (2022) measured organic acids in cell-free spent medium and precipitated CePO4·H2O
+        and Ce2(C2O4)3·10H2O without testing cexA mutants.
   - uniprot_accession: UniProtKB:A0A254TZW7
     entry_name: CEXA_ASPNG
     protein_name: Citrate exporter A
@@ -116,6 +141,31 @@ causal_graphs:
       niger plasma membrane.
     protein_grounding_status: GROUNDED
     protein_examples:
+    - uniprot_accession: UniProtKB:G3Y4N5
+      entry_name: CEXA_ASPNA
+      protein_name: Citrate exporter A
+      gene_symbol: cexA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:380704
+        label: Aspergillus niger ATCC 1015
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Plasma-membrane MFS citrate exporter CexA in Aspergillus niger ATCC 1015 that secretes
+        intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification
+        and metal chelation.
+      annotation_note: Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5 (CEXA_ASPNA;
+        locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015 (NCBITaxon:380704).
+      evidence:
+      - source_ref: kang_2022
+        supports: partial
+        explanation: Representative Aspergillus niger ATCC 1015 citrate exporter CexA for organic-acid
+          excretion; Kang et al. (2022) measured organic acids in cell-free spent medium and precipitated
+          CePO4·H2O and Ce2(C2O4)3·10H2O without testing cexA mutants.
     - uniprot_accession: UniProtKB:A0A254TZW7
       entry_name: CEXA_ASPNG
       protein_name: Citrate exporter A
@@ -206,7 +256,13 @@ curation_history:
   action: EDIT
   summary: Clarified transformed_product node in cerium.yaml to biogenic CePO4·H2O and Ce2(C2O4)3·10H2O
     precipitates (distinguishing abiotic calcination to cerianite) and set CexA support to partial.
+- timestamp: '2026-10-22T01:38:01Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: EDIT
+  summary: Added strain-matched reviewed Swiss-Prot Aspergillus niger ATCC 1015 citrate
+    exporter UniProtKB:G3Y4N5 (CEXA_ASPNA) alongside species-level A0A254TZW7.
 history_refs:
 - history/records/cerium/2026-10-11T045547Z-codex-ed2983.yaml
 - history/records/cerium/2026-10-18T042750Z-antigravity-4bf888.yaml
 - history/records/cerium/2026-10-21T184653Z-claude-161a21.yaml
+- history/records/cerium/2026-10-22T013801Z-claude-001302.yaml

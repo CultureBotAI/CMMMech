@@ -95,6 +95,67 @@ mechanisms:
           mixed industrial residues. Thermodynamic simulations omit kinetic
           and mass-transfer effects and do not prove the proposed mechanism.
           Dissolved fractions are not separated products or whole-process yields.
+    protein_examples:
+      - uniprot_accession: UniProtKB:P27175
+        entry_name: DHG_GLUOX
+        protein_name: Quinoprotein glucose dehydrogenase
+        gene_symbol: gcd
+        entry_status: SWISS_PROT
+        target_organism:
+          id: NCBITaxon:442
+          label: Gluconobacter oxydans
+        ec_numbers:
+          - EC:1.1.5.2
+        interpro_ids:
+          - InterPro:IPR002372
+        pfam_ids:
+          - Pfam:PF07995
+        functional_role: >-
+          Membrane-bound PQQ-dependent glucose dehydrogenase that oxidizes
+          glucose to gluconolactone/gluconic acid, generating the 220 mM
+          gluconic-acid-rich spent-medium lixiviant (pH 2.1) produced by
+          glucose-grown Gluconobacter oxydans NRRL B58.
+        annotation_note: >-
+          Grounded to reviewed Swiss-Prot entry UniProtKB:P27175 (DHG_GLUOX)
+          for Gluconobacter oxydans (NCBITaxon:442).
+        evidence:
+          - source_ref: antonick2019
+            supports: partial
+            explanation: >-
+              Reviewed Swiss-Prot entry for Gluconobacter oxydans membrane-bound
+              quinoprotein glucose dehydrogenase (gcd); Antonick et al. (2019)
+              used spent medium from glucose-grown G. oxydans B58 containing
+              220 mM gluconic acid without performing gene-level knockouts in
+              that study.
+      - uniprot_accession: UniProtKB:Q9L3B2
+        entry_name: PQQC_GLUOX
+        protein_name: Pyrroloquinoline-quinone synthase
+        gene_symbol: pqqC
+        entry_status: SWISS_PROT
+        target_organism:
+          id: NCBITaxon:442
+          label: Gluconobacter oxydans
+        ec_numbers:
+          - EC:1.3.3.11
+        interpro_ids:
+          - InterPro:IPR002849
+        pfam_ids:
+          - Pfam:PF03070
+        functional_role: >-
+          Catalyzes ring cyclization and oxidation in pyrroloquinoline quinone
+          (PQQ) cofactor biosynthesis required for PQQ-dependent glucose
+          dehydrogenase activity and gluconic acid biolixiviant production in
+          Gluconobacter oxydans.
+        annotation_note: >-
+          Grounded to reviewed Swiss-Prot entry UniProtKB:Q9L3B2 (PQQC_GLUOX)
+          for Gluconobacter oxydans (NCBITaxon:442).
+        evidence:
+          - source_ref: antonick2019
+            supports: partial
+            explanation: >-
+              Reviewed Swiss-Prot PQQ synthase from Gluconobacter oxydans
+              supporting the PQQ-dependent glucose oxidation pathway that
+              generates the gluconic acid spent medium used in Antonick et al. (2019).
   - id: culture_associated_xifeng_pg_release
     name: Gluconobacter culture-associated release from Xifeng phosphogypsum
     process: bioleaching
@@ -144,11 +205,177 @@ mechanisms:
           definition in the inspected article. Organic-acid identities and
           concentrations were not measured here. Neither the 24.67% total
           nor 55.67% Nd claim is accepted as a verified recovery yield.
+causal_graphs:
+  - id: gluconobacter_synthetic_pg_leaching_graph
+    name: Gluconobacter oxydans B58 spent-medium biolixiviant leaching of synthetic REE-doped phosphogypsum
+    description: >-
+      Causal pathway linking PQQ-dependent glucose oxidation in Gluconobacter
+      oxydans to gluconic-acid-rich spent-medium biolixiviant generation (220 mM
+      gluconic acid, pH 2.1) and rare-earth element mobilization from synthetic
+      REE-doped calcium sulfate powders.
+    scope: REPRESENTATIVE_EXAMPLE
+    mechanism_ref: spent_medium_synthetic_pg_leaching
+    nodes:
+      - id: pqq_cofactor_biosynthesis
+        label: PqqC pyrroloquinoline-quinone synthase (pqqC)
+        node_type: GENE_OR_PROTEIN
+        gene_symbol: pqqC
+        description: >-
+          Pyrroloquinoline-quinone synthase catalyzing PQQ cofactor biosynthesis
+          required for membrane PQQ-dependent glucose dehydrogenase activity.
+        protein_grounding_status: GROUNDED
+        protein_examples:
+          - uniprot_accession: UniProtKB:Q9L3B2
+            entry_name: PQQC_GLUOX
+            protein_name: Pyrroloquinoline-quinone synthase
+            gene_symbol: pqqC
+            entry_status: SWISS_PROT
+            target_organism:
+              id: NCBITaxon:442
+              label: Gluconobacter oxydans
+            ec_numbers:
+              - EC:1.3.3.11
+            interpro_ids:
+              - InterPro:IPR002849
+            pfam_ids:
+              - Pfam:PF03070
+            functional_role: >-
+              Synthesizes the PQQ cofactor required by membrane glucose
+              dehydrogenase during gluconic acid biolixiviant production.
+            annotation_note: >-
+              Grounded to reviewed Swiss-Prot entry UniProtKB:Q9L3B2 (PQQC_GLUOX)
+              for Gluconobacter oxydans (NCBITaxon:442).
+            evidence:
+              - source_ref: antonick2019
+                supports: partial
+                explanation: >-
+                  Reviewed Swiss-Prot PQQ synthase from Gluconobacter oxydans
+                  supporting the PQQ-dependent glucose oxidation pathway.
+      - id: gcd_glucose_dehydrogenase
+        label: Membrane-bound PQQ-dependent glucose dehydrogenase (gcd)
+        node_type: GENE_OR_PROTEIN
+        gene_symbol: gcd
+        description: >-
+          Membrane-bound quinoprotein glucose dehydrogenase oxidizing D-glucose
+          to D-gluconate in the periplasm.
+        protein_grounding_status: GROUNDED
+        protein_examples:
+          - uniprot_accession: UniProtKB:P27175
+            entry_name: DHG_GLUOX
+            protein_name: Quinoprotein glucose dehydrogenase
+            gene_symbol: gcd
+            entry_status: SWISS_PROT
+            target_organism:
+              id: NCBITaxon:442
+              label: Gluconobacter oxydans
+            ec_numbers:
+              - EC:1.1.5.2
+            interpro_ids:
+              - InterPro:IPR002372
+            pfam_ids:
+              - Pfam:PF07995
+            functional_role: >-
+              Membrane-bound PQQ-dependent glucose dehydrogenase oxidizing
+              glucose to gluconic acid in the Gluconobacter oxydans spent-medium
+              lixiviant.
+            annotation_note: >-
+              Grounded to reviewed Swiss-Prot entry UniProtKB:P27175 (DHG_GLUOX)
+              for Gluconobacter oxydans (NCBITaxon:442).
+            evidence:
+              - source_ref: antonick2019
+                supports: partial
+                explanation: >-
+                  Reviewed Swiss-Prot entry for Gluconobacter oxydans gcd;
+                  Antonick et al. (2019) measured 220 mM gluconic acid in
+                  glucose-grown G. oxydans B58 spent medium.
+      - id: gluconic_acid_spent_medium
+        label: Gluconic-acid-rich spent medium lixiviant (220 mM D-gluconic acid, pH 2.1)
+        node_type: CHEMICAL_ENTITY
+        description: >-
+          Spent bioreactor culture solution from glucose-grown Gluconobacter
+          oxydans NRRL B58 containing 220 mM gluconic acid at pH 2.1.
+        protein_grounding_status: NOT_APPLICABLE
+      - id: synthetic_ree_pg_powders
+        label: Synthetic single-REE-doped calcium sulfate powders (Y, Ce, Nd, Sm, Eu, Yb)
+        node_type: MATERIAL_OR_PHASE
+        description: >-
+          Separately synthesized single-REE-doped calcium sulfate model powders
+          (~0.54-0.56 H2O per formula unit) leached at 20 mg/mL for 24 h.
+        protein_grounding_status: NOT_APPLICABLE
+      - id: dissolved_ree_leachate
+        label: Dissolved rare-earth elements (Y, Ce, Nd, Sm, Eu, Yb) in spent-medium leachate
+        node_type: CHEMICAL_ENTITY
+        description: >-
+          Soluble REE species mobilized into the spent-medium leachate after 24 h
+          at 25 degrees C and 150 rpm, quantified by ICP-OES.
+        protein_grounding_status: NOT_APPLICABLE
+    edges:
+      - source: pqq_cofactor_biosynthesis
+        target: gcd_glucose_dehydrogenase
+        predicate: supplies_substrate_for
+        relationship: PQQ prosthetic group biosynthesis for holoenzyme activity
+        description: >-
+          PqqC synthesizes the pyrroloquinoline quinone cofactor required for
+          membrane glucose dehydrogenase activity.
+        evidence:
+          - source_ref: antonick2019
+            supports: partial
+            explanation: >-
+              Gluconobacter oxydans PQQ-dependent glucose oxidation generates
+              the gluconic-acid biolixiviant from glucose.
+      - source: gcd_glucose_dehydrogenase
+        target: gluconic_acid_spent_medium
+        predicate: produces
+        relationship: periplasmic oxidation of glucose to gluconic acid (220 mM, pH 2.1)
+        description: >-
+          Membrane glucose dehydrogenase oxidizes glucose to gluconic acid in
+          the bioreactor culture.
+        evidence:
+          - source_ref: antonick2019
+            supports: partial
+            explanation: >-
+              Glucose-grown Gluconobacter oxydans B58 bioreactor culture
+              produced spent medium containing 220 mM gluconic acid at pH 2.1.
+      - source: gluconic_acid_spent_medium
+        target: synthetic_ree_pg_powders
+        predicate: acts_on
+        relationship: acidolysis and organic-acid complexation of synthetic REE-doped calcium sulfate
+        description: >-
+          Spent-medium biolixiviant (220 mM gluconic acid, pH 2.1) reacts with
+          synthetic single-REE-doped phosphogypsum model powders.
+        evidence:
+          - source_ref: antonick2019
+            supports: support
+            explanation: >-
+              Sections 2.2-2.4 and 3.1-3.2, Table 2, and Figures 2-3 show
+              24 h contact between spent medium and synthetic REE-doped powders.
+      - source: synthetic_ree_pg_powders
+        target: dissolved_ree_leachate
+        predicate: transforms_into
+        relationship: mobilization of Y, Ce, Nd, Sm, Eu, and Yb into solution
+        description: >-
+          Reaction with the spent-medium biolixiviant dissolves rare-earth
+          elements from the synthetic calcium sulfate matrix into leachate.
+        evidence:
+          - source_ref: antonick2019
+            supports: support
+            explanation: >-
+              Table 2 and Figures 2-3 report dissolved Y, Ce, Nd, Sm, Eu, and Yb
+              in the spent-medium leachate, whereas pH 2.1 mineral acid and water
+              controls yielded no detectable REEs.
 curation_history:
   - timestamp: '2026-10-11T09:02:35.258837+00:00'
     curator: Codex (GPT-6; Codex)
     action: CREATE
     summary: >-
       Created phosphogypsum identity with distinct synthetic-model and actual-residue assays; retained null controls and source uncertainties without accepting inconsistent industrial-feed yields.
+  - timestamp: '2026-10-22T01:38:08Z'
+    curator: claude (Claude Opus 4.6; antigravity)
+    action: EDIT
+    summary: >-
+      Added Gluconobacter oxydans B58 spent-medium biolixiviant causal graph and
+      reviewed Swiss-Prot UniProtKB:P27175 (DHG_GLUOX) and UniProtKB:Q9L3B2 (PQQC_GLUOX)
+      protein examples.
 history_refs:
   - history/records/phosphogypsum/2026-10-11T090227Z-codex-e9e1cd.yaml
+  - history/records/phosphogypsum/2026-10-22T013808Z-claude-001309.yaml

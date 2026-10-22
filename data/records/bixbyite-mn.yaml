@@ -125,23 +125,146 @@ mechanisms:
     supports: context_only
     explanation: TaxID 536018 resolves the species name used in the publication and sequence submission.
       It does not identify WSM2073 as the assay strain or establish a species-wide mineral-forming phenotype.
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A0K2YWP2
+    entry_name: A0A0K2YWP2_9HYPH
+    protein_name: Peptidoglycan editing factor PgeF
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:536018
+      label: Mesorhizobium australicum
+    interpro_ids:
+    - InterPro:IPR003730
+    - InterPro:IPR038371
+    - InterPro:IPR011324
+    pfam_ids:
+    - Pfam:PF02578
+    functional_role: Partial 54-aa protein translated from the 163-bp RT-qPCR amplicon (EMBL LN864498
+      / CRL80388.1; primers Mesau_02205_163F/163R) deposited by Bohu et al. (2015) for the pH 5.5-associated
+      putative multicopper polyphenol oxidase (Cu-oxidase_4 domain PF02578; InterPro IPR003730) in Mesorhizobium
+      australicum strain T-G1.
+    annotation_note: Directly linked in UniProtKB to Bohu et al. (2015) (PMID:26236307; DOI:10.3389/fmicb.2015.00734;
+      strain T-G1; EMBL LN864498). Although historically annotated in ENA/IMG as 'multicopper polyphenol
+      oxidase' on the basis of Pfam PF02578 (Cu-oxidase_4) and InterPro IPR003730 (Cu_polyphenol_OxRdtase),
+      current UniProt ARBA/RuleBase curation assigns the PgeF/LACC1 (YfiH) family recommended name 'Peptidoglycan
+      editing factor PgeF'.
+    evidence:
+    - source_ref: bohu2015
+      supports: partial
+      explanation: Figures 5-7 in Bohu et al. (2015) associate proteinase-K-sensitive Mn(III) trapping,
+        ABTS laccase-like activity, and elevated expression of the Mesau_02205-targeted transcript (EMBL
+        LN864498; UniProtKB:A0A0K2YWP2) with acidic (pH 5.5) T-G1 cultures without genetic knockout or
+        purified-enzyme proof of mineral formation.
+  - uniprot_accession: UniProtKB:L0KKS2
+    entry_name: L0KKS2_MESAW
+    protein_name: Peptidoglycan editing factor PgeF
+    gene_symbol: Mesau_02205
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:754035
+      label: Mesorhizobium australicum WSM2073
+    reference_proteome_id: UP000010998
+    interpro_ids:
+    - InterPro:IPR003730
+    - InterPro:IPR038371
+    - InterPro:IPR011324
+    pfam_ids:
+    - Pfam:PF02578
+    ncbifam_ids:
+    - NCBIfam:TIGR00726
+    functional_role: Full-length 264-aa reference-proteome locus Mesau_02205 (Cu-oxidase_4 domain PF02578;
+      InterPro IPR003730) in Mesorhizobium australicum WSM2073 from which Bohu et al. (2015) designed
+      primers Mesau_02205_163F/163R to assay acidic Mn(II)-oxidizing cultures of isolate T-G1.
+    annotation_note: Grounded to reference-proteome entry UP000010998 (UniProtKB:L0KKS2; locus Mesau_02205)
+      for type strain Mesorhizobium australicum WSM2073 (NCBITaxon:754035), corresponding to the full-length
+      homolog of the T-G1 RT-qPCR amplicon (UniProtKB:A0A0K2YWP2). Current UniProt RuleBase RU361274 assigns
+      recommended name 'Peptidoglycan editing factor PgeF' to this PF02578/IPR003730 family protein.
+    evidence:
+    - source_ref: bohu2015
+      supports: partial
+      explanation: Bohu et al. (2015) designed RT-qPCR primers against WSM2073 locus Mesau_02205 (UniProtKB:L0KKS2)
+        and observed higher transcript abundance in pH 5.5 Mn(II)-oxidizing T-G1 cultures, without establishing
+        causal necessity by mutagenesis or enzyme purification.
 causal_graphs:
 - id: tg1_associated_bixbyite_like_precipitation_graph
   name: Mesorhizobium australicum T-G1 acidic Mn(II) oxidation to bixbyite-like manganese oxide
   description: Causal pathway linking proteinase-K-sensitive laccase-like / multicopper oxidase activity
-    in Mesorhizobium australicum isolate T-G1 at pH 5.5 to oxidation of dissolved Mn(II) into trapped
-    Mn(III)/Mn(IV) intermediates and cell-associated bixbyite-like Mn2O3 particles.
-  scope: RECORD_SPECIFIC_MECHANISM
+    and the Mesau_02205-targeted locus in Mesorhizobium australicum isolate T-G1 at pH 5.5 to oxidation
+    of dissolved Mn(II) into trapped Mn(III)/Mn(IV) intermediates and cell-associated bixbyite-like Mn2O3
+    particles.
+  scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: tg1_associated_bixbyite_like_precipitation
   nodes:
   - id: tg1_acidic_mn_oxidase_factor
-    label: Mesorhizobium australicum T-G1 proteinase-K-sensitive laccase-like Mn(II)-oxidizing factor
+    label: Mesorhizobium australicum T-G1 proteinase-K-sensitive laccase-like factor (Mesau_02205)
     node_type: GENE_OR_PROTEIN
-    description: Proteinase-K-sensitive, SOD-insensitive Mn(II)-oxidizing factor and associated laccase-like
-      activity/transcript in Mesorhizobium australicum isolate T-G1 at pH 5.5 (Bohu et al. 2015); marked
-      UNGROUNDED because no mutant rescue, purified enzyme product, or accessioned T-G1 oxidase sequence
-      was established.
-    protein_grounding_status: UNGROUNDED
+    gene_symbol: Mesau_02205
+    description: Proteinase-K-sensitive, SOD-insensitive Mn(II)-oxidizing factor and pH 5.5-associated
+      Mesau_02205 transcript in Mesorhizobium australicum isolate T-G1 (Bohu et al. 2015), grounded to
+      the sequenced T-G1 amplicon entry (UniProtKB:A0A0K2YWP2; EMBL LN864498) and the full-length WSM2073
+      reference-proteome locus Mesau_02205 (UniProtKB:L0KKS2).
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A0K2YWP2
+      entry_name: A0A0K2YWP2_9HYPH
+      protein_name: Peptidoglycan editing factor PgeF
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:536018
+        label: Mesorhizobium australicum
+      interpro_ids:
+      - InterPro:IPR003730
+      - InterPro:IPR038371
+      - InterPro:IPR011324
+      pfam_ids:
+      - Pfam:PF02578
+      functional_role: Partial 54-aa protein translated from the 163-bp RT-qPCR amplicon (EMBL LN864498
+        / CRL80388.1; primers Mesau_02205_163F/163R) deposited by Bohu et al. (2015) for the pH 5.5-associated
+        putative multicopper polyphenol oxidase (Cu-oxidase_4 domain PF02578; InterPro IPR003730) in Mesorhizobium
+        australicum strain T-G1.
+      annotation_note: Directly linked in UniProtKB to Bohu et al. (2015) (PMID:26236307; DOI:10.3389/fmicb.2015.00734;
+        strain T-G1; EMBL LN864498). Although historically annotated in ENA/IMG as 'multicopper polyphenol
+        oxidase' on the basis of Pfam PF02578 (Cu-oxidase_4) and InterPro IPR003730 (Cu_polyphenol_OxRdtase),
+        current UniProt ARBA/RuleBase curation assigns the PgeF/LACC1 (YfiH) family recommended name 'Peptidoglycan
+        editing factor PgeF'.
+      evidence:
+      - source_ref: bohu2015
+        supports: partial
+        explanation: Figures 5-7 in Bohu et al. (2015) associate proteinase-K-sensitive Mn(III) trapping,
+          ABTS laccase-like activity, and elevated expression of the Mesau_02205-targeted transcript (EMBL
+          LN864498; UniProtKB:A0A0K2YWP2) with acidic (pH 5.5) T-G1 cultures without genetic knockout
+          or purified-enzyme proof of mineral formation.
+    - uniprot_accession: UniProtKB:L0KKS2
+      entry_name: L0KKS2_MESAW
+      protein_name: Peptidoglycan editing factor PgeF
+      gene_symbol: Mesau_02205
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:754035
+        label: Mesorhizobium australicum WSM2073
+      reference_proteome_id: UP000010998
+      interpro_ids:
+      - InterPro:IPR003730
+      - InterPro:IPR038371
+      - InterPro:IPR011324
+      pfam_ids:
+      - Pfam:PF02578
+      ncbifam_ids:
+      - NCBIfam:TIGR00726
+      functional_role: Full-length 264-aa reference-proteome locus Mesau_02205 (Cu-oxidase_4 domain PF02578;
+        InterPro IPR003730) in Mesorhizobium australicum WSM2073 from which Bohu et al. (2015) designed
+        primers Mesau_02205_163F/163R to assay acidic Mn(II)-oxidizing cultures of isolate T-G1.
+      annotation_note: Grounded to reference-proteome entry UP000010998 (UniProtKB:L0KKS2; locus Mesau_02205)
+        for type strain Mesorhizobium australicum WSM2073 (NCBITaxon:754035), corresponding to the full-length
+        homolog of the T-G1 RT-qPCR amplicon (UniProtKB:A0A0K2YWP2). Current UniProt RuleBase RU361274
+        assigns recommended name 'Peptidoglycan editing factor PgeF' to this PF02578/IPR003730 family
+        protein.
+      evidence:
+      - source_ref: bohu2015
+        supports: partial
+        explanation: Bohu et al. (2015) designed RT-qPCR primers against WSM2073 locus Mesau_02205 (UniProtKB:L0KKS2)
+          and observed higher transcript abundance in pH 5.5 Mn(II)-oxidizing T-G1 cultures, without establishing
+          causal necessity by mutagenesis or enzyme purification.
   - id: dissolved_mn2_in_acidic_pyg_medium
     label: Dissolved Mn(II) (MnSO4 in pH 5.5 MES-buffered PYG medium)
     node_type: CHEMICAL_ENTITY
@@ -206,6 +329,12 @@ curation_history:
   action: EDIT
   summary: Added causal graph with explicit UNGROUNDED Mn(II)-oxidizing factor node for Mesorhizobium
     australicum T-G1 bixbyite-like oxide precipitation in bixbyite-mn.yaml.
+- timestamp: '2026-10-22T01:38:00Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: EDIT
+  summary: Grounded Mesorhizobium australicum T-G1 Mesau_02205 multicopper oxidase node
+    and mechanism to live-verified UniProtKB:A0A0K2YWP2 (ENA LN864498) and UniProtKB:L0KKS2.
 history_refs:
 - history/records/bixbyite-mn/2026-10-14T062933Z-codex-7c115e.yaml
 - history/records/bixbyite-mn/2026-10-21T184653Z-claude-887aae.yaml
+- history/records/bixbyite-mn/2026-10-22T013800Z-claude-001301.yaml

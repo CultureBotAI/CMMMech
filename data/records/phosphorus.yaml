@@ -88,6 +88,153 @@ mechanisms:
           procedure, although it describes oxalic acid HPLC. The source's
           complete-solubilization wording is not adopted as a quantified
           mineral dissolution fraction.
+    protein_examples:
+      - uniprot_accession: UniProtKB:G3Y4N5
+        entry_name: CEXA_ASPNA
+        protein_name: Citrate exporter A
+        gene_symbol: cexA
+        entry_status: SWISS_PROT
+        target_organism:
+          id: NCBITaxon:380704
+          label: Aspergillus niger ATCC 1015
+        reference_proteome_id: UP000006706
+        interpro_ids:
+          - InterPro:IPR011701
+          - InterPro:IPR020846
+          - InterPro:IPR036259
+        pfam_ids:
+          - Pfam:PF07690
+        functional_role: >-
+          Major facilitator superfamily plasma-membrane exporter CexA responsible
+          for organic acid secretion in Aspergillus niger ATCC 1015 during
+          acidogenic growth, supporting extracellular acidification (to pH 2.46)
+          and struvite-derived inorganic phosphate mobilization.
+        annotation_note: >-
+          Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5
+          (CEXA_ASPNA; locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015
+          (NCBITaxon:380704).
+        evidence:
+          - source_ref: kang_2022
+            supports: partial
+            explanation: >-
+              Representative reviewed Swiss-Prot organic acid export transporter
+              from the exact experimental strain Aspergillus niger ATCC 1015
+              (NCBITaxon:380704); Kang et al. (2022) measured culture pH 2.46,
+              26.49 mM oxalic acid, and 51.37 mM soluble Pi without assaying
+              individual fungal genes.
+causal_graphs:
+  - id: aspergillus_phosphorus_mobilization_graph
+    name: Aspergillus niger ATCC 1015 acid-mediated phosphate mobilization from struvite
+    description: >-
+      Causal pathway linking Aspergillus niger ATCC 1015 organic acid secretion
+      and culture acidification to dissolution of mixed struvite/dittmarite feed
+      and release of soluble inorganic phosphate (Pi).
+    scope: REPRESENTATIVE_EXAMPLE
+    mechanism_ref: fungal_struvite_phosphate_mobilization
+    nodes:
+      - id: cexa_citrate_exporter
+        label: CexA plasma-membrane citrate exporter (cexA)
+        node_type: GENE_OR_PROTEIN
+        gene_symbol: cexA
+        description: >-
+          Major facilitator superfamily transporter exporting citric acid across
+          the Aspergillus niger ATCC 1015 plasma membrane during acidogenic growth.
+        protein_grounding_status: GROUNDED
+        protein_examples:
+          - uniprot_accession: UniProtKB:G3Y4N5
+            entry_name: CEXA_ASPNA
+            protein_name: Citrate exporter A
+            gene_symbol: cexA
+            entry_status: SWISS_PROT
+            target_organism:
+              id: NCBITaxon:380704
+              label: Aspergillus niger ATCC 1015
+            reference_proteome_id: UP000006706
+            interpro_ids:
+              - InterPro:IPR011701
+              - InterPro:IPR020846
+              - InterPro:IPR036259
+            pfam_ids:
+              - Pfam:PF07690
+            functional_role: >-
+              Reviewed Swiss-Prot plasma-membrane organic-acid exporter in
+              Aspergillus niger ATCC 1015 representing the strain's organic acid
+              secretion apparatus during acidogenic mineral dissolution.
+            annotation_note: >-
+              Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5
+              (CEXA_ASPNA; locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015
+              (NCBITaxon:380704).
+            evidence:
+              - source_ref: kang_2022
+                supports: partial
+                explanation: >-
+                  Representative reviewed Swiss-Prot exporter from exact strain
+                  NCBITaxon:380704; Kang et al. (2022) measured extracellular
+                  acidification and oxalic acid accumulation without gene-level
+                  assays.
+      - id: oxalic_acid_and_acidification
+        label: Extracellular oxalic acid accumulation (26.49 mM) and acidification (pH 2.46)
+        node_type: CHEMICAL_ENTITY
+        description: >-
+          Secreted fungal organic acids (26.49 +/- 3.43 mM oxalic acid) and
+          protons acidifying the medium to pH 2.46 +/- 0.11.
+        protein_grounding_status: NOT_APPLICABLE
+      - id: struvite_dittmarite_feed
+        label: Mixed struvite/dittmarite mineral feed (1% w/v in modified Czapek-Dox medium)
+        node_type: MATERIAL_OR_PHASE
+        description: >-
+          Pulverized natural struvite fragments containing struvite and dittmarite
+          by XRD, incubated at 1% w/v with Aspergillus niger ATCC 1015.
+        protein_grounding_status: NOT_APPLICABLE
+      - id: soluble_phosphate_mobilization
+        label: Dissolved inorganic phosphate in culture supernatant (51.37 +/- 0.59 mM Pi)
+        node_type: CHEMICAL_ENTITY
+        description: >-
+          Soluble inorganic phosphate (Pi) accumulated in the acidified fungal
+          culture supernatant after 14 days.
+        protein_grounding_status: NOT_APPLICABLE
+    edges:
+      - source: cexa_citrate_exporter
+        target: oxalic_acid_and_acidification
+        predicate: transports
+        relationship: organic acid secretion and extracellular acidification
+        description: >-
+          Aspergillus niger ATCC 1015 organic-acid export and acidogenesis
+          acidify the culture medium to pH 2.46 +/- 0.11 alongside 26.49 +/- 3.43 mM
+          oxalic acid accumulation.
+        evidence:
+          - source_ref: kang_2022
+            supports: partial
+            explanation: >-
+              Aspergillus niger ATCC 1015 acidified the struvite-containing
+              culture to pH 2.46 +/- 0.11 and accumulated 26.49 +/- 3.43 mM
+              oxalic acid.
+      - source: oxalic_acid_and_acidification
+        target: struvite_dittmarite_feed
+        predicate: acts_on
+        relationship: acidolysis and oxalate reaction with struvite/dittmarite feed
+        description: >-
+          Extracellular acidification and organic acids react with the 1% w/v
+          mixed struvite/dittmarite mineral feed.
+        evidence:
+          - source_ref: kang_2022
+            supports: support
+            explanation: >-
+              Fungal acidification and organic acid secretion dissolved the
+              struvite-bearing feed over 14 days of incubation.
+      - source: struvite_dittmarite_feed
+        target: soluble_phosphate_mobilization
+        predicate: transforms_into
+        relationship: release of soluble inorganic phosphate (51.37 +/- 0.59 mM Pi) into solution
+        description: >-
+          Dissolution of the struvite-bearing feed increases soluble inorganic
+          phosphate in the culture supernatant.
+        evidence:
+          - source_ref: kang_2022
+            supports: support
+            explanation: >-
+              Results and Figure 2B report final soluble Pi of 51.37 +/- 0.59 mM
+              in the struvite-containing fungal culture.
 curation_history:
   - timestamp: '2026-10-11T04:55:52Z'
     curator: Codex (GPT-6; Codex)
@@ -95,5 +242,13 @@ curation_history:
     summary: >-
       Created verified element identity and dated criticality with bounded
       Kang 2022 laboratory evidence, preserving feed, control and assay limits.
+  - timestamp: '2026-10-22T01:38:09Z'
+    curator: claude (Claude Opus 4.6; antigravity)
+    action: EDIT
+    summary: >-
+      Added Aspergillus niger ATCC 1015 causal graph and reviewed Swiss-Prot
+      UniProtKB:G3Y4N5 (CEXA_ASPNA) protein example for acid-mediated struvite
+      phosphate mobilization.
 history_refs:
   - history/records/phosphorus/2026-10-11T045542Z-codex-dd8113.yaml
+  - history/records/phosphorus/2026-10-22T013809Z-claude-001310.yaml
