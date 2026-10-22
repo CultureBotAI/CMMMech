@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 31 primary_resource records in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e. All 31 records carry verified deposit/ore descriptions, critical_elements, constituent_minerals, and primary-source microbial bioleaching/biooxidation/biomineralization mechanisms on 24/31 records (with multi-step causal_graphs on 7/31 records). Recorded one minor structural consistency finding (cmmmech-stage4-finding-0003) on 2 records (cobalt-rich-ferromanganese-crusts and rare-earth-rich-deep-sea-mud) where the top-level mechanisms block is serialized after curation_history and history_refs.
+Reviewed all 31 primary_resource records in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e. All 31/31 records carry verified deposit/ore descriptions and mechanisms (including 29/31 with microbial: true bioleaching/biooxidation/biomineralization mechanisms and 4/31 with multi-step causal_graphs and UniProtKB protein_examples). Recorded one minor structural consistency finding (cmmmech-stage4-finding-0003) on 2 records (cobalt-rich-ferromanganese-crusts and rare-earth-rich-deep-sea-mud) where the top-level mechanisms block is serialized after curation_history and history_refs.
 
 ## Scope And Provenance
 
@@ -19,7 +19,7 @@ Full-population Stage 4 category review of all 31 natural ore, deposit, and brin
 
 Selection: data/records/*.yaml where material_kind == 'primary_resource' at 4d878383c92b44876df3bf166d96637c7581a59e
 Coverage: full; 31 reviewed / 31 in the declared population.
-Source: working_tree at Git base 4d878383c92b44876df3bf166d96637c7581a59e.
+Source: git_commit at Git base 4d878383c92b44876df3bf166d96637c7581a59e.
 Working-tree hashes do not imply those bytes were committed.
 
 | Target | Path / selector | Kind | Label |
@@ -66,11 +66,11 @@ Working-tree hashes do not imply those bytes were committed.
 
 ## Scientific And Domain Assessments
 
-### Primary resource geological identity, constituent minerals, and microbial mechanisms
+### Primary resource geological identity, constituent minerals, and mechanisms
 
 completeness: supported. Targets: cmmmech:allanite-concentrate, cmmmech:basalt, cmmmech:carbonatite-associated-rare-earth-ore, cmmmech:cassiterite-polymetallic-sulfide-ore, cmmmech:chalcopyrite-enargite-concentrate, cmmmech:cobalt-rich-ferromanganese-crusts, cmmmech:dunite, cmmmech:enargite-pyrite-concentrate, cmmmech:eucrite-meteorite, cmmmech:eudialyte-concentrate, cmmmech:eudialyte-ore, cmmmech:ion-adsorption-rare-earth-clay, cmmmech:kaolin, cmmmech:l-chondrite-meteorite, cmmmech:lithium-bearing-geothermal-brine, cmmmech:lithium-mica-ore, cmmmech:ludwigite-ore, cmmmech:manganese-ore, cmmmech:metalliferous-black-shale, cmmmech:monazite-ore, cmmmech:nickel-laterite-ore, cmmmech:nickeline-bearing-ore, cmmmech:oxidized-zinc-ore, cmmmech:polymetallic-nodules, cmmmech:rare-earth-rich-deep-sea-mud, cmmmech:seafloor-massive-sulfides, cmmmech:seawater, cmmmech:silica-sand, cmmmech:tennantite-concentrate, cmmmech:tetrahedrite-concentrate, cmmmech:xenotime-concentrate.
 
-All 31 primary_resource records pass LinkML validation and history checks, linking natural ores/brines/crusts to constituent IMA minerals and primary microbial bioleaching literature.
+All 31 primary_resource records pass LinkML validation and history checks, linking natural ores/brines/crusts to constituent IMA minerals and primary extraction/bioleaching literature (31/31 with mechanisms; 29/31 with microbial: true mechanisms; 4/31 with multi-step causal_graphs).
 
 ### Canonical YAML top-level section ordering before provenance footers
 
@@ -128,14 +128,13 @@ skill: .claude/skills/review-yaml-category/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: Reviewed all 31 primary_resource records in data/records/*.yaml at commit
-  4d878383c92b44876df3bf166d96637c7581a59e. All 31 records carry verified deposit/ore
-  descriptions, critical_elements, constituent_minerals, and primary-source microbial
-  bioleaching/biooxidation/biomineralization mechanisms on 24/31 records (with multi-step
-  causal_graphs on 7/31 records). Recorded one minor structural consistency finding
-  (cmmmech-stage4-finding-0003) on 2 records (cobalt-rich-ferromanganese-crusts and
-  rare-earth-rich-deep-sea-mud) where the top-level mechanisms block is serialized
-  after curation_history and history_refs.
+summary: 'Reviewed all 31 primary_resource records in data/records/*.yaml at commit
+  4d878383c92b44876df3bf166d96637c7581a59e. All 31/31 records carry verified deposit/ore
+  descriptions and mechanisms (including 29/31 with microbial: true bioleaching/biooxidation/biomineralization
+  mechanisms and 4/31 with multi-step causal_graphs and UniProtKB protein_examples).
+  Recorded one minor structural consistency finding (cmmmech-stage4-finding-0003)
+  on 2 records (cobalt-rich-ferromanganese-crusts and rare-earth-rich-deep-sea-mud)
+  where the top-level mechanisms block is serialized after curation_history and history_refs.'
 reviewer:
   identity: antigravity / cmmmech-stage4-cohort-reviewer
   kind: agent
@@ -145,7 +144,7 @@ reviewer:
     against frozen commit 4d878383c92b44876df3bf166d96637c7581a59e.
 source:
   git_revision: 4d878383c92b44876df3bf166d96637c7581a59e
-  state: working_tree
+  state: git_commit
   inputs:
   - path: data/records/allanite-concentrate.yaml
     sha256: 600630c8a867238668f6d57c637400b985942e244b826c860ddba1755c59f06e
@@ -849,8 +848,7 @@ checks:
     conflicts.
 assessments:
 - assessment_id: assess-primary-resource-cohort
-  topic: Primary resource geological identity, constituent minerals, and microbial
-    mechanisms
+  topic: Primary resource geological identity, constituent minerals, and mechanisms
   area: completeness
   outcome: supported
   target_ids:
@@ -889,9 +887,10 @@ assessments:
   - ev-cmmmech-validate
   - ev-cmmmech-history
   - ev-cohort-audit
-  summary: All 31 primary_resource records pass LinkML validation and history checks,
-    linking natural ores/brines/crusts to constituent IMA minerals and primary microbial
-    bioleaching literature.
+  summary: 'All 31 primary_resource records pass LinkML validation and history checks,
+    linking natural ores/brines/crusts to constituent IMA minerals and primary extraction/bioleaching
+    literature (31/31 with mechanisms; 29/31 with microbial: true mechanisms; 4/31
+    with multi-step causal_graphs).'
   metrics:
   - name: reviewed_primary_resources
     value: 31.0
@@ -900,13 +899,14 @@ assessments:
     minimum: 0.0
     maximum: 31.0
   - name: primary_resources_with_mechanisms
-    value: 24.0
+    value: 31.0
     unit: records
-    definition: Primary resource records carrying primary-source microbial mechanisms.
+    definition: Primary resource records carrying primary-source mechanisms (29 microbial,
+      2 abiotic).
     minimum: 0.0
     maximum: 31.0
   - name: primary_resources_with_causal_graphs
-    value: 7.0
+    value: 4.0
     unit: records
     definition: Primary resource records carrying multi-step causal_graphs and UniProtKB
       protein_examples.

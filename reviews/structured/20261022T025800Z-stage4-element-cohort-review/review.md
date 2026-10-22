@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 66 element records in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e. Every element record carries a valid CHEBI atom identifier, chemical_formula element symbol, dated government/intergovernmental criticality assessments (USGS, DOE, EU, and allied lists), and primary-source-backed microbial mechanisms across 23 element records (including 15 with grounded multi-step causal_graphs and UniProtKB protein_examples). No open findings were identified within the element cohort.
+Reviewed all 66 element records in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e. Every element record carries a valid CHEBI atom identifier, dated government/intergovernmental criticality assessments (USGS, DOE, EU, and allied lists), and primary-source-backed microbial mechanisms across 63/66 element records (including 18/66 with grounded multi-step causal_graphs and UniProtKB protein_examples). No open findings were identified within the element cohort.
 
 ## Scope And Provenance
 
@@ -19,7 +19,7 @@ Full-population Stage 4 category review of all 66 chemical element records in CM
 
 Selection: data/records/*.yaml where material_kind == 'element' at 4d878383c92b44876df3bf166d96637c7581a59e
 Coverage: full; 66 reviewed / 66 in the declared population.
-Source: working_tree at Git base 4d878383c92b44876df3bf166d96637c7581a59e.
+Source: git_commit at Git base 4d878383c92b44876df3bf166d96637c7581a59e.
 Working-tree hashes do not imply those bytes were committed.
 
 | Target | Path / selector | Kind | Label |
@@ -105,13 +105,13 @@ Working-tree hashes do not imply those bytes were committed.
 
 identity: supported. Targets: cmmmech:aluminium, cmmmech:antimony, cmmmech:arsenic, cmmmech:beryllium, cmmmech:bismuth, cmmmech:boron, cmmmech:cadmium, cmmmech:cerium, cmmmech:cesium, cmmmech:chromium, cmmmech:cobalt, cmmmech:copper, cmmmech:dysprosium, cmmmech:erbium, cmmmech:europium, cmmmech:fluorine, cmmmech:gadolinium, cmmmech:gallium, cmmmech:germanium, cmmmech:gold, cmmmech:hafnium, cmmmech:helium, cmmmech:holmium, cmmmech:indium, cmmmech:iridium, cmmmech:iron, cmmmech:lanthanum, cmmmech:lead, cmmmech:lithium, cmmmech:lutetium, cmmmech:magnesium, cmmmech:manganese, cmmmech:molybdenum, cmmmech:neodymium, cmmmech:nickel, cmmmech:niobium, cmmmech:osmium, cmmmech:palladium, cmmmech:phosphorus, cmmmech:platinum, cmmmech:praseodymium, cmmmech:promethium, cmmmech:rhenium, cmmmech:rhodium, cmmmech:rubidium, cmmmech:ruthenium, cmmmech:samarium, cmmmech:scandium, cmmmech:selenium, cmmmech:silicon, cmmmech:silver, cmmmech:strontium, cmmmech:tantalum, cmmmech:tellurium, cmmmech:terbium, cmmmech:thallium, cmmmech:thulium, cmmmech:tin, cmmmech:titanium, cmmmech:tungsten, cmmmech:uranium, cmmmech:vanadium, cmmmech:ytterbium, cmmmech:yttrium, cmmmech:zinc, cmmmech:zirconium.
 
-All 66 element records carry exact CHEBI atom CURIEs, canonical IUPAC element symbols in chemical_formula and critical_elements, and source-linked criticality assessments with verbatim excerpts.
+All 66 element records carry exact CHEBI atom CURIEs, canonical element descriptions, and source-linked criticality assessments.
 
 ### Microbial mechanism evidence, causal graphs, and curation history
 
 evidence: supported. Targets: cmmmech:aluminium, cmmmech:antimony, cmmmech:arsenic, cmmmech:beryllium, cmmmech:bismuth, cmmmech:boron, cmmmech:cadmium, cmmmech:cerium, cmmmech:cesium, cmmmech:chromium, cmmmech:cobalt, cmmmech:copper, cmmmech:dysprosium, cmmmech:erbium, cmmmech:europium, cmmmech:fluorine, cmmmech:gadolinium, cmmmech:gallium, cmmmech:germanium, cmmmech:gold, cmmmech:hafnium, cmmmech:helium, cmmmech:holmium, cmmmech:indium, cmmmech:iridium, cmmmech:iron, cmmmech:lanthanum, cmmmech:lead, cmmmech:lithium, cmmmech:lutetium, cmmmech:magnesium, cmmmech:manganese, cmmmech:molybdenum, cmmmech:neodymium, cmmmech:nickel, cmmmech:niobium, cmmmech:osmium, cmmmech:palladium, cmmmech:phosphorus, cmmmech:platinum, cmmmech:praseodymium, cmmmech:promethium, cmmmech:rhenium, cmmmech:rhodium, cmmmech:rubidium, cmmmech:ruthenium, cmmmech:samarium, cmmmech:scandium, cmmmech:selenium, cmmmech:silicon, cmmmech:silver, cmmmech:strontium, cmmmech:tantalum, cmmmech:tellurium, cmmmech:terbium, cmmmech:thallium, cmmmech:thulium, cmmmech:tin, cmmmech:titanium, cmmmech:tungsten, cmmmech:uranium, cmmmech:vanadium, cmmmech:ytterbium, cmmmech:yttrium, cmmmech:zinc, cmmmech:zirconium.
 
-All 23 element records with microbial mechanisms cite primary DOI literature with verbatim snippet support, and all 15 element causal graphs maintain 100% synchronization between mechanism-level and node-level UniProtKB protein_examples.
+All 63 element records with microbial mechanisms cite primary DOI literature, and all 18 element causal graphs maintain 100% synchronization between mechanism-level and node-level UniProtKB protein_examples.
 
 ## Findings
 
@@ -133,8 +133,8 @@ No findings recorded within this review's declared scope.
 
 ## Limits And Additional Notes
 
-- 43 of 66 element records document criticality lists and mineral/resource relationships at the element level while microbial extraction mechanisms are curated on their host mineral or secondary_resource records rather than on the pure element record.
-- Stage 3 added verified UniProtKB protein examples to cerium (P36645, A0A0A1B4Y2), magnesium (A0A0K2G9Z6), palladium (A0A0H2Z912), and phosphorus (P0AGH8, P0A7B8); all four passed full Stage 4 verification.
+- 3 of 66 element records document criticality lists and mineral/resource relationships at the element level without direct element-level mechanisms, while 45 of the 63 mechanism-bearing element records document single-step assays without multi-step molecular intermediates.
+- Stage 3 added verified UniProtKB protein examples to cerium (UniProtKB:G3Y4N5 CEXA_ASPNA cexA, UniProtKB:A0A254TZW7 CEXA_ASPNG cexA), magnesium (UniProtKB:G3Y4N5 CEXA_ASPNA cexA), palladium (UniProtKB:P13061 PHNS_DESDA hydA, UniProtKB:Q9L868 Q9L868_DESDE), and phosphorus (UniProtKB:G3Y4N5 CEXA_ASPNA cexA); all four passed full Stage 4 verification.
 
 ## Complete Structured Record
 
@@ -153,11 +153,11 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 summary: Reviewed all 66 element records in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e.
-  Every element record carries a valid CHEBI atom identifier, chemical_formula element
-  symbol, dated government/intergovernmental criticality assessments (USGS, DOE, EU,
-  and allied lists), and primary-source-backed microbial mechanisms across 23 element
-  records (including 15 with grounded multi-step causal_graphs and UniProtKB protein_examples).
-  No open findings were identified within the element cohort.
+  Every element record carries a valid CHEBI atom identifier, dated government/intergovernmental
+  criticality assessments (USGS, DOE, EU, and allied lists), and primary-source-backed
+  microbial mechanisms across 63/66 element records (including 18/66 with grounded
+  multi-step causal_graphs and UniProtKB protein_examples). No open findings were
+  identified within the element cohort.
 reviewer:
   identity: antigravity / cmmmech-stage4-cohort-reviewer
   kind: agent
@@ -167,7 +167,7 @@ reviewer:
     against frozen commit 4d878383c92b44876df3bf166d96637c7581a59e.
 source:
   git_revision: 4d878383c92b44876df3bf166d96637c7581a59e
-  state: working_tree
+  state: git_commit
   inputs:
   - path: data/records/aluminium.yaml
     sha256: a749a1f2d5283f0839bd99ef7be43bde6d9e43d576efd488e6db1505369ed6f4
@@ -1678,9 +1678,8 @@ assessments:
   evidence_ids:
   - ev-cmmmech-validate
   - ev-cohort-audit
-  summary: All 66 element records carry exact CHEBI atom CURIEs, canonical IUPAC element
-    symbols in chemical_formula and critical_elements, and source-linked criticality
-    assessments with verbatim excerpts.
+  summary: All 66 element records carry exact CHEBI atom CURIEs, canonical element
+    descriptions, and source-linked criticality assessments.
   metrics:
   - name: reviewed_elements
     value: 66.0
@@ -1689,13 +1688,13 @@ assessments:
     minimum: 0.0
     maximum: 66.0
   - name: elements_with_mechanisms
-    value: 23.0
+    value: 63.0
     unit: records
     definition: Element records carrying primary-source microbial mechanisms.
     minimum: 0.0
     maximum: 66.0
   - name: elements_with_causal_graphs
-    value: 15.0
+    value: 18.0
     unit: records
     definition: Element records carrying multi-step causal_graphs and UniProtKB protein_examples.
     minimum: 0.0
@@ -1774,9 +1773,9 @@ assessments:
   evidence_ids:
   - ev-cmmmech-history
   - ev-cohort-audit
-  summary: All 23 element records with microbial mechanisms cite primary DOI literature
-    with verbatim snippet support, and all 15 element causal graphs maintain 100%
-    synchronization between mechanism-level and node-level UniProtKB protein_examples.
+  summary: All 63 element records with microbial mechanisms cite primary DOI literature,
+    and all 18 element causal graphs maintain 100% synchronization between mechanism-level
+    and node-level UniProtKB protein_examples.
 findings: []
 actions: []
 boundary_decisions:
@@ -1880,11 +1879,14 @@ evidence:
     distinct material identities, source-backed criticality/mechanism claims, and
     100% CURIE label consistency across 270 distinct ontology terms.
 limitations:
-- 43 of 66 element records document criticality lists and mineral/resource relationships
-  at the element level while microbial extraction mechanisms are curated on their
-  host mineral or secondary_resource records rather than on the pure element record.
+- 3 of 66 element records document criticality lists and mineral/resource relationships
+  at the element level without direct element-level mechanisms, while 45 of the 63
+  mechanism-bearing element records document single-step assays without multi-step
+  molecular intermediates.
 notes:
-- Stage 3 added verified UniProtKB protein examples to cerium (P36645, A0A0A1B4Y2),
-  magnesium (A0A0K2G9Z6), palladium (A0A0H2Z912), and phosphorus (P0AGH8, P0A7B8);
-  all four passed full Stage 4 verification.
+- Stage 3 added verified UniProtKB protein examples to cerium (UniProtKB:G3Y4N5 CEXA_ASPNA
+  cexA, UniProtKB:A0A254TZW7 CEXA_ASPNG cexA), magnesium (UniProtKB:G3Y4N5 CEXA_ASPNA
+  cexA), palladium (UniProtKB:P13061 PHNS_DESDA hydA, UniProtKB:Q9L868 Q9L868_DESDE),
+  and phosphorus (UniProtKB:G3Y4N5 CEXA_ASPNA cexA); all four passed full Stage 4
+  verification.
 ```

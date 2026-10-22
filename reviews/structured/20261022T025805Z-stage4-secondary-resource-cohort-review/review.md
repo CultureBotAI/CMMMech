@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 111 secondary_resource records in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e. Notably, 100% (111/111) of secondary_resource records carry primary-source-backed microbial extraction, bioleaching, biosorption, or biomineralization mechanisms, and 15/111 carry multi-step causal_graphs with verified UniProtKB protein_examples (including Stage 3 additions on phosphogypsum and waste-x-ray-films). No open findings were identified within the secondary_resource cohort.
+Reviewed all 111 secondary_resource records in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e. 108/111 secondary_resource records carry primary-source-backed extraction, bioleaching, biosorption, or biomineralization mechanisms (85/111 with microbial: true mechanisms), and 7/111 carry multi-step causal_graphs with verified UniProtKB protein_examples (including Stage 3 additions on phosphogypsum and waste-x-ray-films). No open findings were identified within the secondary_resource cohort.
 
 ## Scope And Provenance
 
@@ -19,7 +19,7 @@ Full-population Stage 4 category review of all 111 tailings, slag, leachate, e-w
 
 Selection: data/records/*.yaml where material_kind == 'secondary_resource' at 4d878383c92b44876df3bf166d96637c7581a59e
 Coverage: full; 111 reviewed / 111 in the declared population.
-Source: working_tree at Git base 4d878383c92b44876df3bf166d96637c7581a59e.
+Source: git_commit at Git base 4d878383c92b44876df3bf166d96637c7581a59e.
 Working-tree hashes do not imply those bytes were committed.
 
 | Target | Path / selector | Kind | Label |
@@ -146,11 +146,11 @@ Working-tree hashes do not imply those bytes were committed.
 
 ## Scientific And Domain Assessments
 
-### Secondary resource feedstock identity, microbial recovery mechanisms, and causal graphs
+### Secondary resource feedstock identity, recovery mechanisms, and causal graphs
 
 evidence: supported. Targets: cmmmech:acid-mine-drainage, cmmmech:allanite-leachate, cmmmech:aluminium-salt-slag, cmmmech:automotive-wastewater-treatment-sludge, cmmmech:basic-oxygen-furnace-steel-slag, cmmmech:basic-oxygen-furnace-steelmaking-dust, cmmmech:battery-black-mass, cmmmech:bauxite-residue, cmmmech:beverage-carton-hydropulping-reject, cmmmech:biogas-desulfurization-sulfur-residue, cmmmech:blast-furnace-cast-house-dust, cmmmech:boron-ore-concentration-tailings, cmmmech:cadmium-telluride-photovoltaic-module-scrap, cmmmech:cathode-ray-tube-glass, cmmmech:cemented-tungsten-carbide-scrap, cmmmech:chromite-beneficiation-tailings, cmmmech:chromite-ore-processing-residue, cmmmech:chromium-tanned-leather-shavings, cmmmech:chrysotile-asbestos-tailings, cmmmech:coal-beneficiation-waste, cmmmech:coal-fly-ash, cmmmech:coal-gasification-slag, cmmmech:coal-mine-drainage-treatment-solids, cmmmech:copper-anode-slime, cmmmech:copper-autoclave-slime, cmmmech:copper-flotation-tailings, cmmmech:copper-smelter-flue-dust, cmmmech:copper-smelter-slag, cmmmech:discarded-led-lamps, cmmmech:electric-arc-furnace-dust, cmmmech:electrical-cable-recycling-residues, cmmmech:electroformed-copper-silver-manufacturing-scrap, cmmmech:electrolytic-manganese-residue, cmmmech:electroplating-bath-effluents, cmmmech:electroplating-sludge, cmmmech:end-of-life-cigs-photovoltaic-modules, cmmmech:end-of-life-crystalline-silicon-photovoltaic-modules, cmmmech:ferrochrome-slag, cmmmech:fish-bone-residues, cmmmech:flue-gas-desulfurization-wastewater, cmmmech:fluorescent-lamp-phosphor, cmmmech:gaas-production-hydroxide-sludge, cmmmech:gold-mine-tailings, cmmmech:ground-waste-tire-rubber, cmmmech:heavy-fuel-oil-combustion-ash, cmmmech:ion-adsorption-rare-earth-leach-residue, cmmmech:iron-ore-tailings, cmmmech:kaolin-mine-waste, cmmmech:lead-blast-furnace-slag, cmmmech:metal-grinding-sludge, cmmmech:metallic-machining-burrs, cmmmech:municipal-sewage-sludge, cmmmech:municipal-waste-incineration-ash, cmmmech:nickel-based-superalloy-residue-powders, cmmmech:nickel-flotation-tailings, cmmmech:nickel-smelter-slag, cmmmech:oil-and-gas-produced-water, cmmmech:oil-sands-froth-treatment-tailings, cmmmech:petroleum-coke, cmmmech:petroleum-oily-sludge, cmmmech:pharmaceutical-blister-packaging-waste, cmmmech:phosphate-ore-tailings, cmmmech:phosphogypsum, cmmmech:pig-manure, cmmmech:ponded-coal-ash, cmmmech:poultry-bone-residues, cmmmech:pyrite-roasting-cinder, cmmmech:reverse-osmosis-concentrate, cmmmech:samarium-cobalt-magnet-scrap, cmmmech:secondary-aluminium-dross, cmmmech:sewage-sludge-incineration-ash, cmmmech:spent-alkaline-zinc-carbon-batteries, cmmmech:spent-automotive-three-way-catalyst, cmmmech:spent-cerium-glass-polishing-slurry, cmmmech:spent-copper-zinc-alumina-catalyst, cmmmech:spent-fluid-catalytic-cracking-catalyst, cmmmech:spent-hydrocracking-catalyst, cmmmech:spent-hydrodesulfurization-catalyst, cmmmech:spent-iron-molybdate-oxidation-catalyst, cmmmech:spent-ito-targets, cmmmech:spent-lead-acid-battery-electrolyte, cmmmech:spent-ndfeb-magnets, cmmmech:spent-nickel-cadmium-batteries, cmmmech:spent-nickel-metal-hydride-batteries, cmmmech:spent-nickel-steam-reforming-catalyst, cmmmech:spent-platinum-petroleum-reforming-catalyst, cmmmech:spent-potlining, cmmmech:spent-selective-catalytic-reduction-catalyst, cmmmech:spent-silver-oxide-zinc-button-cell-batteries, cmmmech:spent-steel-pickling-liquors, cmmmech:spent-sulfuric-acid-production-catalyst, cmmmech:spent-tantalum-capacitors, cmmmech:spent-vanadium-flow-battery-electrolyte, cmmmech:spent-vegetable-oil-hydrogenation-catalyst, cmmmech:spent-zinc-manganese-button-cell-batteries, cmmmech:tannery-sludge, cmmmech:tannery-wastewater, cmmmech:theisen-sludge, cmmmech:titanogypsum, cmmmech:traction-battery-hydrometallurgical-residue, cmmmech:tungsten-nickel-iron-alloy-scrap, cmmmech:tungsten-skarn-tailings, cmmmech:uranium-mine-tailings, cmmmech:used-photographic-fixer-solutions, cmmmech:waste-liquid-crystal-display-panels, cmmmech:waste-multilayer-ceramic-capacitors, cmmmech:waste-printed-circuit-boards, cmmmech:waste-x-ray-films, cmmmech:wood-ash, cmmmech:zinc-leach-residue, cmmmech:zinc-purification-hot-filter-cake.
 
-All 111 secondary_resource records pass LinkML validation and history checks, with 100% microbial mechanism coverage (111/111) backed by primary DOI sources and verbatim evidence snippets.
+All 111 secondary_resource records pass LinkML validation and history checks, with 108/111 carrying primary-source mechanisms (85 microbial) and 7/111 carrying multi-step causal_graphs backed by primary DOI sources and verbatim evidence snippets.
 
 ## Findings
 
@@ -172,8 +172,8 @@ No findings recorded within this review's declared scope.
 
 ## Limits And Additional Notes
 
-- 96 of 111 secondary_resource records document single-step whole-cell bioleaching, biosorption, or sulfate-reduction assays on complex industrial wastes without resolved molecular/enzymatic intermediates; multi-step causal_graphs are restricted to the 15 records with source-resolved biochemical intermediates.
-- Stage 3 added verified UniProtKB protein examples to phosphogypsum (Q727R1, P45574, Q72E85, G3Y4N5) and waste-x-ray-films (P00780, P00782); both passed full Stage 4 verification.
+- 104 of 111 secondary_resource records lack multi-step causal_graphs because their cited primary studies report bulk whole-cell bioleaching, biosorption, or abiotic extraction on complex industrial wastes without resolved molecular/enzymatic intermediates; multi-step causal_graphs are restricted to the 7 records with source-resolved biochemical intermediates.
+- Stage 3 added verified UniProtKB protein examples to phosphogypsum (UniProtKB:P27175 DHG_GLUOX / gdh and UniProtKB:Q9L3B2 PQQC_GLUOX / pqqC in Gluconobacter oxydans 621H NCBITaxon:290633) and waste-x-ray-films (UniProtKB:A0A137NYV2 alkaline serine protease in Bacillus licheniformis NCBITaxon:1402 and UniProtKB:F1DKR8 alkaline protease in Purpureocillium lilacinum NCBITaxon:33203); both passed full Stage 4 verification.
 
 ## Complete Structured Record
 
@@ -191,13 +191,13 @@ skill: .claude/skills/review-yaml-category/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: Reviewed all 111 secondary_resource records in data/records/*.yaml at commit
-  4d878383c92b44876df3bf166d96637c7581a59e. Notably, 100% (111/111) of secondary_resource
-  records carry primary-source-backed microbial extraction, bioleaching, biosorption,
-  or biomineralization mechanisms, and 15/111 carry multi-step causal_graphs with
-  verified UniProtKB protein_examples (including Stage 3 additions on phosphogypsum
-  and waste-x-ray-films). No open findings were identified within the secondary_resource
-  cohort.
+summary: 'Reviewed all 111 secondary_resource records in data/records/*.yaml at commit
+  4d878383c92b44876df3bf166d96637c7581a59e. 108/111 secondary_resource records carry
+  primary-source-backed extraction, bioleaching, biosorption, or biomineralization
+  mechanisms (85/111 with microbial: true mechanisms), and 7/111 carry multi-step
+  causal_graphs with verified UniProtKB protein_examples (including Stage 3 additions
+  on phosphogypsum and waste-x-ray-films). No open findings were identified within
+  the secondary_resource cohort.'
 reviewer:
   identity: antigravity / cmmmech-stage4-cohort-reviewer
   kind: agent
@@ -207,7 +207,7 @@ reviewer:
     against frozen commit 4d878383c92b44876df3bf166d96637c7581a59e.
 source:
   git_revision: 4d878383c92b44876df3bf166d96637c7581a59e
-  state: working_tree
+  state: git_commit
   inputs:
   - path: data/records/acid-mine-drainage.yaml
     sha256: cb7c908b4eb6482de97abed1d0f6a3501d9e04abd9ff8c9ae6f20c431ebff6e6
@@ -2591,8 +2591,7 @@ checks:
     conflicts.
 assessments:
 - assessment_id: assess-secondary-resource-cohort
-  topic: Secondary resource feedstock identity, microbial recovery mechanisms, and
-    causal graphs
+  topic: Secondary resource feedstock identity, recovery mechanisms, and causal graphs
   area: evidence
   outcome: supported
   target_ids:
@@ -2712,8 +2711,8 @@ assessments:
   - ev-cmmmech-history
   - ev-cohort-audit
   summary: All 111 secondary_resource records pass LinkML validation and history checks,
-    with 100% microbial mechanism coverage (111/111) backed by primary DOI sources
-    and verbatim evidence snippets.
+    with 108/111 carrying primary-source mechanisms (85 microbial) and 7/111 carrying
+    multi-step causal_graphs backed by primary DOI sources and verbatim evidence snippets.
   metrics:
   - name: reviewed_secondary_resources
     value: 111.0
@@ -2722,13 +2721,14 @@ assessments:
     minimum: 0.0
     maximum: 111.0
   - name: secondary_resources_with_mechanisms
-    value: 111.0
+    value: 108.0
     unit: records
-    definition: Secondary resource records carrying primary-source microbial mechanisms.
+    definition: Secondary resource records carrying primary-source mechanisms (85
+      microbial).
     minimum: 0.0
     maximum: 111.0
   - name: secondary_resources_with_causal_graphs
-    value: 15.0
+    value: 7.0
     unit: records
     definition: Secondary resource records carrying multi-step causal_graphs and UniProtKB
       protein_examples.
@@ -2883,12 +2883,16 @@ evidence:
     verified distinct material identities, source-backed criticality/mechanism claims,
     and 100% CURIE label consistency across 270 distinct ontology terms.
 limitations:
-- 96 of 111 secondary_resource records document single-step whole-cell bioleaching,
-  biosorption, or sulfate-reduction assays on complex industrial wastes without resolved
-  molecular/enzymatic intermediates; multi-step causal_graphs are restricted to the
-  15 records with source-resolved biochemical intermediates.
+- 104 of 111 secondary_resource records lack multi-step causal_graphs because their
+  cited primary studies report bulk whole-cell bioleaching, biosorption, or abiotic
+  extraction on complex industrial wastes without resolved molecular/enzymatic intermediates;
+  multi-step causal_graphs are restricted to the 7 records with source-resolved biochemical
+  intermediates.
 notes:
-- Stage 3 added verified UniProtKB protein examples to phosphogypsum (Q727R1, P45574,
-  Q72E85, G3Y4N5) and waste-x-ray-films (P00780, P00782); both passed full Stage 4
+- Stage 3 added verified UniProtKB protein examples to phosphogypsum (UniProtKB:P27175
+  DHG_GLUOX / gdh and UniProtKB:Q9L3B2 PQQC_GLUOX / pqqC in Gluconobacter oxydans
+  621H NCBITaxon:290633) and waste-x-ray-films (UniProtKB:A0A137NYV2 alkaline serine
+  protease in Bacillus licheniformis NCBITaxon:1402 and UniProtKB:F1DKR8 alkaline
+  protease in Purpureocillium lilacinum NCBITaxon:33203); both passed full Stage 4
   verification.
 ```

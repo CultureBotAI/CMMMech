@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 63 records with multi-step causal_graphs and UniProtKB protein_examples at commit 4d878383c92b44876df3bf166d96637c7581a59e (15 element, 22 mineral, 2 mineral_group, 2 commodity, 7 primary_resource, 15 secondary_resource). Verified 100% connectedness and DAG acyclicity, 100% edge evidence coverage with verbatim primary-source snippets, and 100% synchronization between mechanism-level protein_examples and GENE_OR_PROTEIN node protein_examples across all 63 records.
+Reviewed all 63 records with multi-step causal_graphs and UniProtKB protein_examples at commit 4d878383c92b44876df3bf166d96637c7581a59e (18 element, 29 mineral, 2 mineral_group, 3 commodity, 4 primary_resource, 7 secondary_resource). Verified 100% connectedness and DAG acyclicity, 100% edge evidence coverage with verbatim primary-source snippets, and 100% synchronization between mechanism-level protein_examples and GENE_OR_PROTEIN node protein_examples across all 63 records.
 
 ## Scope And Provenance
 
@@ -19,7 +19,7 @@ Full-population Stage 4 category review of all 63 CMMMech records carrying multi
 
 Selection: data/records/*.yaml where causal_graphs is non-empty at 4d878383c92b44876df3bf166d96637c7581a59e
 Coverage: full; 63 reviewed / 63 in the declared population.
-Source: working_tree at Git base 4d878383c92b44876df3bf166d96637c7581a59e.
+Source: git_commit at Git base 4d878383c92b44876df3bf166d96637c7581a59e.
 Working-tree hashes do not imply those bytes were committed.
 
 | Target | Path / selector | Kind | Label |
@@ -145,8 +145,8 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 summary: Reviewed all 63 records with multi-step causal_graphs and UniProtKB protein_examples
-  at commit 4d878383c92b44876df3bf166d96637c7581a59e (15 element, 22 mineral, 2 mineral_group,
-  2 commodity, 7 primary_resource, 15 secondary_resource). Verified 100% connectedness
+  at commit 4d878383c92b44876df3bf166d96637c7581a59e (18 element, 29 mineral, 2 mineral_group,
+  3 commodity, 4 primary_resource, 7 secondary_resource). Verified 100% connectedness
   and DAG acyclicity, 100% edge evidence coverage with verbatim primary-source snippets,
   and 100% synchronization between mechanism-level protein_examples and GENE_OR_PROTEIN
   node protein_examples across all 63 records.
@@ -159,7 +159,7 @@ reviewer:
     against frozen commit 4d878383c92b44876df3bf166d96637c7581a59e.
 source:
   git_revision: 4d878383c92b44876df3bf166d96637c7581a59e
-  state: working_tree
+  state: git_commit
   inputs:
   - path: data/records/akaganeite.yaml
     sha256: 7a5214f7def425bbbaf9d0bf440307d817a240e0fd4efe233ae4ca24a4c6c70e

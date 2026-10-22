@@ -21,6 +21,18 @@
 | `20261022T025808Z-phosphogypsum-stage4-record-review` | `record` | Stage 4 record review: cmmmech:phosphogypsum (Phosphogypsum) | `1 / 1` | `pass` | `None` |
 | `20261022T025809Z-palladium-stage4-record-review` | `record` | Stage 4 record review: cmmmech:palladium (Palladium) | `1 / 1` | `pass` | `None` |
 
+### Disjoint `material_kind` Cohort Mechanism & Causal-Graph Breakdown
+
+| `material_kind` Cohort | Total Records | Records with `mechanisms` | Records with `microbial: true` Mechanisms | Records with `causal_graphs` & `protein_examples` |
+| --- | --- | --- | --- | --- |
+| `element` | `66` | `63` | `63` | `18` |
+| `mineral` | `365` | `269` | `157` | `29` |
+| `mineral_group` | `7` | `7` | `7` | `2` |
+| `commodity` | `36` | `6` | `6` | `3` |
+| `primary_resource` | `31` | `31` | `29` | `4` |
+| `secondary_resource` | `111` | `108` | `85` | `7` |
+| **Total Corpus** | **`616`** | **`484`** | **`347`** | **`63`** |
+
 ## 2. Corpus Validation & Cross-Cohort Audit Metrics
 
 - **LinkML structural and semantic validation (`cmmmech validate --require-records`)**: `616 / 616` records passed (`0` errors).

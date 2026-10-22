@@ -9,15 +9,15 @@ skill: .claude/skills/review-yaml-category/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: Reviewed all 365 mineral records in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e.
-  All 365 mineral records carry valid chemical_formula, ima_status, critical_elements,
-  and source provenance; 81 mineral records carry primary-source-backed microbial
-  mechanisms and 22 carry grounded multi-step causal_graphs. Recorded one cohort-level
-  minor completeness finding (cmmmech-stage4-finding-0001) across 17 mineral records
-  that state their IMA-CNMNC species number in description and cite ima_2026_09 but
-  omit the structured IMA:YYYY-NNN entry from identifiers (and see companion single-record
-  review 20261022T025807Z-wulfenite-stage4-record-review for cmmmech-stage4-finding-0002
-  on cmmmech:wulfenite).
+summary: 'Reviewed all 365 mineral records in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e.
+  All 365 mineral records carry valid mineral descriptions and source provenance;
+  269/365 mineral records carry mechanisms (157/365 with microbial: true mechanisms)
+  and 29/365 carry grounded multi-step causal_graphs with UniProtKB protein_examples.
+  Recorded one cohort-level minor completeness finding (cmmmech-stage4-finding-0001)
+  across 17 mineral records that state their IMA-CNMNC species number in description
+  and cite ima_2026_09 but omit the structured IMA:YYYY-NNN entry from identifiers
+  (and see companion single-record review 20261022T025807Z-wulfenite-stage4-record-review
+  for cmmmech-stage4-finding-0002 on cmmmech:wulfenite).'
 reviewer:
   identity: antigravity / cmmmech-stage4-cohort-reviewer
   kind: agent
@@ -27,7 +27,7 @@ reviewer:
     against frozen commit 4d878383c92b44876df3bf166d96637c7581a59e.
 source:
   git_revision: 4d878383c92b44876df3bf166d96637c7581a59e
-  state: working_tree
+  state: git_commit
   inputs:
   - path: data/records/acanthite.yaml
     sha256: dab8e5acec7c1178d06afa237a8ece75e41a28c475fab88c2aa79640925738af
@@ -8118,8 +8118,7 @@ assessments:
   - ev-cmmmech-history
   - ev-cohort-audit
   summary: All 365 mineral species records pass LinkML validation, carry IMA-compliant
-    chemical formulas and critical-element CHEBI links, and have verified curation
-    histories.
+    descriptions and source citations, and have verified curation histories.
   metrics:
   - name: reviewed_minerals
     value: 365.0
@@ -8128,13 +8127,14 @@ assessments:
     minimum: 0.0
     maximum: 365.0
   - name: minerals_with_mechanisms
-    value: 81.0
+    value: 269.0
     unit: records
-    definition: Mineral species records carrying primary-source microbial mechanisms.
+    definition: 'Mineral species records carrying mechanisms (157 with microbial:
+      true mechanisms).'
     minimum: 0.0
     maximum: 365.0
   - name: minerals_with_causal_graphs
-    value: 22.0
+    value: 29.0
     unit: records
     definition: Mineral species records carrying multi-step causal_graphs and UniProtKB
       protein_examples.
@@ -8759,6 +8759,8 @@ limitations:
   for Stage 5 remediation); cmmmech:wulfenite omits ima_2026_09 from sources (tracked
   as open finding cmmmech-stage4-finding-0002 in companion review 20261022T025807Z-wulfenite-stage4-record-review).
 notes:
-- Stage 3 added verified UniProtKB protein examples to 6 mineral records (bixbyite-mn,
-  dittmarite, glushinskite, montmorillonite, nontronite, struvite); all 6 passed full
-  Stage 4 verification.
+- 'Stage 3 added verified UniProtKB protein examples to 6 mineral records: bixbyite-mn
+  (UniProtKB:A0A0K2YWP2, UniProtKB:L0KKS2), dittmarite (UniProtKB:G3Y4N5), glushinskite
+  (UniProtKB:G3Y4N5), montmorillonite (UniProtKB:Q8E8S0, UniProtKB:Q8EG34, UniProtKB:Q8EG33),
+  nontronite (UniProtKB:Q8E8S0, UniProtKB:Q8EG34, UniProtKB:Q8EG33), and struvite
+  (UniProtKB:G3Y4N5); all 6 passed full Stage 4 verification.'

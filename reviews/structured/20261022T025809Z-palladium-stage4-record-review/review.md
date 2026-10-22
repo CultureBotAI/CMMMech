@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed data/records/palladium.yaml (cmmmech:palladium) at commit 4d878383c92b44876df3bf166d96637c7581a59e following Stage 3 UniProtKB grounding and PR #790 remediation. Verified CHEBI:33363 (palladium atom) identity, criticality assessments, periplasmic hydrogenase Pd(II)-to-Pd(0) bioreduction mechanism and causal graph in Desulfovibrio desulfuricans (NCBITaxon:876) and Cupriavidus metallidurans (NCBITaxon:119219), and UniProtKB:A0A0H2Z912 ([FeFe] hydrogenase, 421 aa, NCBITaxon:525897) grounding and history sidecars. Zero open findings.
+Reviewed data/records/palladium.yaml (cmmmech:palladium) at commit 4d878383c92b44876df3bf166d96637c7581a59e following Stage 3 UniProtKB grounding and PR #790 remediation. Verified CHEBI:33363 (palladium atom) identity, criticality assessments, periplasmic [NiFe]-hydrogenase Pd(II)-to-Pd(0) bioreduction mechanism (desulfuricans_pd_reduction) and causal graph (desulfuricans_pd_reduction_graph) in Desulfovibrio desulfuricans (NCBITaxon:876) backed by Lloyd et al. 1998 (DOI:10.1128/AEM.64.11.4607-4609.1998) and Mikheenko et al. 2008 (DOI:10.1128/AEM.02538-07), and both verified UniProtKB protein examples: UniProtKB:P13061 (PHNS_DESDA, hydA, Periplasmic [NiFe] hydrogenase small subunit, SWISS_PROT, Desulfovibrio desulfuricans ATCC 27774 NCBITaxon:525146, EC:1.12.2.1) and UniProtKB:Q9L868 (Q9L868_DESDE, Periplasmic [NiFe] hydrogenase large subunit, TREMBL, Desulfovibrio desulfuricans NCBITaxon:876, EC:1.12.2.1). Zero open findings.
 
 ## Scope And Provenance
 
@@ -19,7 +19,7 @@ Single-record Stage 4 audit of cmmmech:palladium after Stage 3 UniProtKB protein
 
 Selection: data/records/palladium.yaml at 4d878383c92b44876df3bf166d96637c7581a59e
 Coverage: full; 1 reviewed / 1 in the declared population.
-Source: working_tree at Git base 4d878383c92b44876df3bf166d96637c7581a59e.
+Source: git_commit at Git base 4d878383c92b44876df3bf166d96637c7581a59e.
 Working-tree hashes do not imply those bytes were committed.
 
 | Target | Path / selector | Kind | Label |
@@ -34,11 +34,11 @@ Working-tree hashes do not imply those bytes were committed.
 
 ## Scientific And Domain Assessments
 
-### Palladium bioreduction causal graph and UniProtKB:A0A0H2Z912 grounding
+### Palladium bioreduction causal graph and UniProtKB:P13061 / UniProtKB:Q9L868 groundings
 
 graph: supported. Targets: cmmmech:palladium.
 
-Periplasmic hydrogenase reduction of soluble Pd(II) tetrachloropalladate to cell-surface metallic Pd(0) nanoparticles (bio-Pd) is accurately modeled and grounded to UniProtKB:A0A0H2Z912 ([FeFe] hydrogenase, Desulfovibrio desulfuricans).
+Periplasmic [NiFe]-hydrogenase reduction of soluble Pd(II) to cell-surface metallic Pd(0) nanoparticles (bio-Pd) in Desulfovibrio desulfuricans (NCBITaxon:876) is accurately modeled and grounded to UniProtKB:P13061 (PHNS_DESDA, hydA, small subunit, SWISS_PROT, NCBITaxon:525146) and UniProtKB:Q9L868 (Q9L868_DESDE, large subunit, TREMBL, NCBITaxon:876).
 
 ## Findings
 
@@ -53,8 +53,9 @@ No findings recorded within this review's declared scope.
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| ev-palladium-file | data/records/palladium.yaml; lines 1-300 | supports | Verified CHEBI:33363, criticality list entries, Pd(II) bioreduction causal graph, UniProtKB:A0A0H2Z912 protein_examples, and history sidecars. |
-| ev-palladium-doi | doi:10.1002/bit.10402; Lloyd et al. 1998 / Yong et al. 2002 Biotechnology and Bioengineering | supports | Supports periplasmic hydrogenase-catalyzed reduction of Pd(II) to metallic Pd(0) nanoparticles in Desulfovibrio desulfuricans. |
+| ev-palladium-file | data/records/palladium.yaml; lines 1-235 | supports | Verified CHEBI:33363, criticality list entries, Pd(II) bioreduction causal graph (desulfuricans_pd_reduction_graph), UniProtKB:P13061 and UniProtKB:Q9L868 protein_examples, and history sidecars. |
+| ev-palladium-doi-lloyd | DOI:10.1128/AEM.64.11.4607-4609.1998; Lloyd et al. 1998 Appl. Environ. Microbiol. 64(11):4607-4609 | supports | Supports enzymatic reduction of soluble Pd(II) and cell-surface precipitation of metallic Pd(0) by Desulfovibrio desulfuricans ATCC 29577. |
+| ev-palladium-doi-mikheenko | DOI:10.1128/AEM.02538-07; Mikheenko et al. 2008 Appl. Environ. Microbiol. 74(5):1444-1448 | supports | Supports involvement of periplasmic [NiFe] hydrogenase in Pd(II) reduction in Desulfovibrio spp. |
 
 ## Limits And Additional Notes
 
@@ -77,11 +78,15 @@ verdict: pass
 scientific_review: true
 summary: 'Reviewed data/records/palladium.yaml (cmmmech:palladium) at commit 4d878383c92b44876df3bf166d96637c7581a59e
   following Stage 3 UniProtKB grounding and PR #790 remediation. Verified CHEBI:33363
-  (palladium atom) identity, criticality assessments, periplasmic hydrogenase Pd(II)-to-Pd(0)
-  bioreduction mechanism and causal graph in Desulfovibrio desulfuricans (NCBITaxon:876)
-  and Cupriavidus metallidurans (NCBITaxon:119219), and UniProtKB:A0A0H2Z912 ([FeFe]
-  hydrogenase, 421 aa, NCBITaxon:525897) grounding and history sidecars. Zero open
-  findings.'
+  (palladium atom) identity, criticality assessments, periplasmic [NiFe]-hydrogenase
+  Pd(II)-to-Pd(0) bioreduction mechanism (desulfuricans_pd_reduction) and causal graph
+  (desulfuricans_pd_reduction_graph) in Desulfovibrio desulfuricans (NCBITaxon:876)
+  backed by Lloyd et al. 1998 (DOI:10.1128/AEM.64.11.4607-4609.1998) and Mikheenko
+  et al. 2008 (DOI:10.1128/AEM.02538-07), and both verified UniProtKB protein examples:
+  UniProtKB:P13061 (PHNS_DESDA, hydA, Periplasmic [NiFe] hydrogenase small subunit,
+  SWISS_PROT, Desulfovibrio desulfuricans ATCC 27774 NCBITaxon:525146, EC:1.12.2.1)
+  and UniProtKB:Q9L868 (Q9L868_DESDE, Periplasmic [NiFe] hydrogenase large subunit,
+  TREMBL, Desulfovibrio desulfuricans NCBITaxon:876, EC:1.12.2.1). Zero open findings.'
 reviewer:
   identity: antigravity / cmmmech-stage4-record-reviewer
   kind: agent
@@ -91,7 +96,7 @@ reviewer:
     against frozen commit 4d878383c92b44876df3bf166d96637c7581a59e.
 source:
   git_revision: 4d878383c92b44876df3bf166d96637c7581a59e
-  state: working_tree
+  state: git_commit
   inputs:
   - path: data/records/palladium.yaml
     sha256: 6924903baa0aceaa8361a94198b2d5b42460b34d4d643fa4ffdc6e43c50803c0
@@ -141,36 +146,49 @@ checks:
     with 0 errors.
 assessments:
 - assessment_id: assess-palladium-mechanisms-and-proteins
-  topic: Palladium bioreduction causal graph and UniProtKB:A0A0H2Z912 grounding
+  topic: Palladium bioreduction causal graph and UniProtKB:P13061 / UniProtKB:Q9L868
+    groundings
   area: graph
   outcome: supported
   target_ids:
   - cmmmech:palladium
   evidence_ids:
   - ev-palladium-file
-  - ev-palladium-doi
-  summary: Periplasmic hydrogenase reduction of soluble Pd(II) tetrachloropalladate
-    to cell-surface metallic Pd(0) nanoparticles (bio-Pd) is accurately modeled and
-    grounded to UniProtKB:A0A0H2Z912 ([FeFe] hydrogenase, Desulfovibrio desulfuricans).
+  - ev-palladium-doi-lloyd
+  - ev-palladium-doi-mikheenko
+  summary: Periplasmic [NiFe]-hydrogenase reduction of soluble Pd(II) to cell-surface
+    metallic Pd(0) nanoparticles (bio-Pd) in Desulfovibrio desulfuricans (NCBITaxon:876)
+    is accurately modeled and grounded to UniProtKB:P13061 (PHNS_DESDA, hydA, small
+    subunit, SWISS_PROT, NCBITaxon:525146) and UniProtKB:Q9L868 (Q9L868_DESDE, large
+    subunit, TREMBL, NCBITaxon:876).
 findings: []
 actions: []
 evidence:
 - evidence_id: ev-palladium-file
   kind: record_content
   reference: data/records/palladium.yaml
-  locator: lines 1-300
+  locator: lines 1-235
   accessed_at: '2026-10-22T02:58:09Z'
   support: supports
   summary: Verified CHEBI:33363, criticality list entries, Pd(II) bioreduction causal
-    graph, UniProtKB:A0A0H2Z912 protein_examples, and history sidecars.
-- evidence_id: ev-palladium-doi
+    graph (desulfuricans_pd_reduction_graph), UniProtKB:P13061 and UniProtKB:Q9L868
+    protein_examples, and history sidecars.
+- evidence_id: ev-palladium-doi-lloyd
   kind: primary_source
-  reference: doi:10.1002/bit.10402
-  locator: Lloyd et al. 1998 / Yong et al. 2002 Biotechnology and Bioengineering
+  reference: DOI:10.1128/AEM.64.11.4607-4609.1998
+  locator: Lloyd et al. 1998 Appl. Environ. Microbiol. 64(11):4607-4609
   accessed_at: '2026-10-22T02:58:09Z'
   support: supports
-  summary: Supports periplasmic hydrogenase-catalyzed reduction of Pd(II) to metallic
-    Pd(0) nanoparticles in Desulfovibrio desulfuricans.
+  summary: Supports enzymatic reduction of soluble Pd(II) and cell-surface precipitation
+    of metallic Pd(0) by Desulfovibrio desulfuricans ATCC 29577.
+- evidence_id: ev-palladium-doi-mikheenko
+  kind: primary_source
+  reference: DOI:10.1128/AEM.02538-07
+  locator: Mikheenko et al. 2008 Appl. Environ. Microbiol. 74(5):1444-1448
+  accessed_at: '2026-10-22T02:58:09Z'
+  support: supports
+  summary: Supports involvement of periplasmic [NiFe] hydrogenase in Pd(II) reduction
+    in Desulfovibrio spp.
 limitations: []
 notes: []
 ```

@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 7 mineral_group records (ancylite, apatite, euxenite, gadolinite, jarosite, monazite, pyrochlore) in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e. Each mineral group record properly distinguishes the IMA group/supergroup concept from its constituent end-member species records via constituent_minerals and related_materials, carries source-backed criticality and microbial mechanisms (4/7 with mechanisms; 2/7 with multi-step causal_graphs on apatite and monazite), and passes all validation gates with 0 open findings.
+Reviewed all 7 mineral_group records (bastnaesite, biotite, chlorite, illite, olivine-group, potassium-feldspar, vermiculite) in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e. Each mineral group record properly distinguishes the IMA group/series/phyllosilicate concept from individual end-member mineral species records, carries primary-source-backed microbial mechanisms across all 7/7 records (with grounded multi-step causal_graphs and UniProtKB protein_examples on 2/7 records: chlorite and olivine-group), and passes all validation gates with 0 open findings.
 
 ## Scope And Provenance
 
@@ -19,7 +19,7 @@ Full-population Stage 4 category review of all 7 mineral_group records in CMMMec
 
 Selection: data/records/*.yaml where material_kind == 'mineral_group' at 4d878383c92b44876df3bf166d96637c7581a59e
 Coverage: full; 7 reviewed / 7 in the declared population.
-Source: working_tree at Git base 4d878383c92b44876df3bf166d96637c7581a59e.
+Source: git_commit at Git base 4d878383c92b44876df3bf166d96637c7581a59e.
 Working-tree hashes do not imply those bytes were committed.
 
 | Target | Path / selector | Kind | Label |
@@ -46,7 +46,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 scope: supported. Targets: cmmmech:bastnaesite, cmmmech:biotite, cmmmech:chlorite, cmmmech:illite, cmmmech:olivine-group, cmmmech:potassium-feldspar, cmmmech:vermiculite.
 
-All 7 mineral_group records maintain clean boundaries against end-member mineral species records, valid CHEBI/ENVO grounding where available, and source-verified microbial mechanism claims.
+All 7 mineral_group records (bastnaesite, biotite, chlorite, illite, olivine-group, potassium-feldspar, vermiculite) maintain clean boundaries against end-member mineral species records and carry source-verified microbial mechanisms (7/7), with multi-step causal_graphs and UniProtKB protein_examples on chlorite and olivine-group (2/7).
 
 ## Findings
 
@@ -68,7 +68,7 @@ No findings recorded within this review's declared scope.
 
 ## Limits And Additional Notes
 
-- 2 of 4 mineral_group records with mechanisms (gadolinite and jarosite) document whole-cell leaching/biomineralization at the group level without multi-step molecular intermediates, whereas multi-step causal graphs are represented on apatite, monazite, and specific end-member mineral records.
+- 5 of 7 mineral_group records (bastnaesite, biotite, illite, potassium-feldspar, vermiculite) document whole-cell bioleaching or mineral weathering at the group level without multi-step molecular/enzymatic intermediates, whereas multi-step causal_graphs with UniProtKB protein_examples are represented on chlorite and olivine-group.
 
 ## Complete Structured Record
 
@@ -86,13 +86,13 @@ skill: .claude/skills/review-yaml-category/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: Reviewed all 7 mineral_group records (ancylite, apatite, euxenite, gadolinite,
-  jarosite, monazite, pyrochlore) in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e.
-  Each mineral group record properly distinguishes the IMA group/supergroup concept
-  from its constituent end-member species records via constituent_minerals and related_materials,
-  carries source-backed criticality and microbial mechanisms (4/7 with mechanisms;
-  2/7 with multi-step causal_graphs on apatite and monazite), and passes all validation
-  gates with 0 open findings.
+summary: 'Reviewed all 7 mineral_group records (bastnaesite, biotite, chlorite, illite,
+  olivine-group, potassium-feldspar, vermiculite) in data/records/*.yaml at commit
+  4d878383c92b44876df3bf166d96637c7581a59e. Each mineral group record properly distinguishes
+  the IMA group/series/phyllosilicate concept from individual end-member mineral species
+  records, carries primary-source-backed microbial mechanisms across all 7/7 records
+  (with grounded multi-step causal_graphs and UniProtKB protein_examples on 2/7 records:
+  chlorite and olivine-group), and passes all validation gates with 0 open findings.'
 reviewer:
   identity: antigravity / cmmmech-stage4-cohort-reviewer
   kind: agent
@@ -102,7 +102,7 @@ reviewer:
     against frozen commit 4d878383c92b44876df3bf166d96637c7581a59e.
 source:
   git_revision: 4d878383c92b44876df3bf166d96637c7581a59e
-  state: working_tree
+  state: git_commit
   inputs:
   - path: data/records/bastnaesite.yaml
     sha256: 719dafc38a258c140dafa5c718a651d19c7300c9aa0643fe293898d56f1b6448
@@ -317,9 +317,11 @@ assessments:
   - ev-cmmmech-validate
   - ev-cmmmech-history
   - ev-cohort-audit
-  summary: All 7 mineral_group records maintain clean boundaries against end-member
-    mineral species records, valid CHEBI/ENVO grounding where available, and source-verified
-    microbial mechanism claims.
+  summary: All 7 mineral_group records (bastnaesite, biotite, chlorite, illite, olivine-group,
+    potassium-feldspar, vermiculite) maintain clean boundaries against end-member
+    mineral species records and carry source-verified microbial mechanisms (7/7),
+    with multi-step causal_graphs and UniProtKB protein_examples on chlorite and olivine-group
+    (2/7).
   metrics:
   - name: reviewed_mineral_groups
     value: 7.0
@@ -328,7 +330,7 @@ assessments:
     minimum: 0.0
     maximum: 7.0
   - name: mineral_groups_with_mechanisms
-    value: 4.0
+    value: 7.0
     unit: records
     definition: Mineral group records carrying primary-source microbial mechanisms.
     minimum: 0.0
@@ -337,7 +339,7 @@ assessments:
     value: 2.0
     unit: records
     definition: Mineral group records carrying multi-step causal_graphs and UniProtKB
-      protein_examples.
+      protein_examples (chlorite and olivine-group).
     minimum: 0.0
     maximum: 7.0
 findings: []
@@ -385,9 +387,9 @@ evidence:
     distinct material identities, source-backed criticality/mechanism claims, and
     100% CURIE label consistency across 270 distinct ontology terms.
 limitations:
-- 2 of 4 mineral_group records with mechanisms (gadolinite and jarosite) document
-  whole-cell leaching/biomineralization at the group level without multi-step molecular
-  intermediates, whereas multi-step causal graphs are represented on apatite, monazite,
-  and specific end-member mineral records.
+- 5 of 7 mineral_group records (bastnaesite, biotite, illite, potassium-feldspar,
+  vermiculite) document whole-cell bioleaching or mineral weathering at the group
+  level without multi-step molecular/enzymatic intermediates, whereas multi-step causal_graphs
+  with UniProtKB protein_examples are represented on chlorite and olivine-group.
 notes: []
 ```

@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 36 commodity records in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e, including the 3 Round 117 engineered/synthetic critical material commodities (electrical-steel, silicon-carbide, synthetic-graphite). All 36 commodity records carry verified critical_elements, dated criticality citations, and clean differentiation from upstream primary_resource ores and downstream secondary_resource wastes. No open findings were identified within the commodity cohort.
+Reviewed all 36 commodity records in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e, including the 3 Round 117 engineered/synthetic critical material commodities (electrical-steel, silicon-carbide, synthetic-graphite). All 36 commodity records carry dated criticality citations and clean differentiation from upstream primary_resource ores and downstream secondary_resource wastes; 6/36 carry primary-source microbial mechanisms (borates, coking-coal, phosphate-rock, rare-earth-element-commodities, tin-copper-solder, titanium-metal) and 3/36 carry multi-step causal_graphs with UniProtKB protein_examples (phosphate-rock, rare-earth-element-commodities, titanium-metal). No open findings were identified within the commodity cohort.
 
 ## Scope And Provenance
 
@@ -19,7 +19,7 @@ Full-population Stage 4 category review of all 36 refined/intermediate commodity
 
 Selection: data/records/*.yaml where material_kind == 'commodity' at 4d878383c92b44876df3bf166d96637c7581a59e
 Coverage: full; 36 reviewed / 36 in the declared population.
-Source: working_tree at Git base 4d878383c92b44876df3bf166d96637c7581a59e.
+Source: git_commit at Git base 4d878383c92b44876df3bf166d96637c7581a59e.
 Working-tree hashes do not imply those bytes were committed.
 
 | Target | Path / selector | Kind | Label |
@@ -75,7 +75,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 completeness: supported. Targets: cmmmech:alumina, cmmmech:baryte, cmmmech:bauxite, cmmmech:borates, cmmmech:coking-coal, cmmmech:electrical-steel, cmmmech:electrolytic-manganese-dioxide, cmmmech:electrolytic-manganese-metal, cmmmech:feldspar, cmmmech:ferroboron, cmmmech:fluorspar, cmmmech:graphite, cmmmech:graphite-anode-material, cmmmech:heavy-rare-earth-elements, cmmmech:high-purity-alumina, cmmmech:high-purity-iron-ore, cmmmech:light-rare-earth-elements, cmmmech:lithium-carbonate, cmmmech:lithium-hydroxide-monohydrate, cmmmech:magnesite, cmmmech:magnesium-metal, cmmmech:manganese-sulfate-monohydrate, cmmmech:metallurgical-coal, cmmmech:natural-graphite, cmmmech:nickel-sulfate-hexahydrate, cmmmech:phosphate-rock, cmmmech:platinum-group-commodities, cmmmech:potash, cmmmech:rare-earth-element-commodities, cmmmech:rare-earth-permanent-magnet-materials, cmmmech:silicon-carbide, cmmmech:silicon-metal, cmmmech:sodium-compounds, cmmmech:synthetic-graphite, cmmmech:tin-copper-solder, cmmmech:titanium-metal.
 
-All 36 commodity records pass LinkML validation and history verification, with CHEBI/ENVO grounding on 34/36 records and primary-source microbial mechanisms on 5/36 records (including causal_graphs on rare-earth-oxides and yellowcake).
+All 36 commodity records pass LinkML validation and history verification, with primary-source microbial mechanisms on 6/36 records (borates, coking-coal, phosphate-rock, rare-earth-element-commodities, tin-copper-solder, titanium-metal) and multi-step causal_graphs with UniProtKB protein_examples on 3/36 records (phosphate-rock, rare-earth-element-commodities, titanium-metal).
 
 ## Findings
 
@@ -97,7 +97,8 @@ No findings recorded within this review's declared scope.
 
 ## Limits And Additional Notes
 
-- 31 of 36 commodity records represent trade-defined refined or intermediate industrial products (e.g., ferroalloys, battery-grade salts, electrical steel, synthetic graphite) whose microbial interactions occur on their upstream mineral/primary_resource feedstocks or downstream secondary_resource scrap rather than on the commercial intermediate itself.
+- 30 of 36 commodity records represent trade-defined refined or intermediate industrial products (e.g., ferroalloys, battery-grade salts, electrical steel, synthetic graphite) whose microbial interactions occur on their upstream mineral/primary_resource feedstocks or downstream secondary_resource scrap rather than on the commercial intermediate itself.
+- Stage 3 added verified UniProtKB protein examples to titanium-metal (UniProtKB:B7JBP8 SQRD_ACIF2 AFE_1792 and UniProtKB:B7J3C9 TTH_ACIF2 tth in Acidithiobacillus ferrooxidans ATCC 23270 NCBITaxon:243159); passed full Stage 4 verification.
 
 ## Complete Structured Record
 
@@ -117,10 +118,13 @@ verdict: pass_with_limitations
 scientific_review: true
 summary: Reviewed all 36 commodity records in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e,
   including the 3 Round 117 engineered/synthetic critical material commodities (electrical-steel,
-  silicon-carbide, synthetic-graphite). All 36 commodity records carry verified critical_elements,
-  dated criticality citations, and clean differentiation from upstream primary_resource
-  ores and downstream secondary_resource wastes. No open findings were identified
-  within the commodity cohort.
+  silicon-carbide, synthetic-graphite). All 36 commodity records carry dated criticality
+  citations and clean differentiation from upstream primary_resource ores and downstream
+  secondary_resource wastes; 6/36 carry primary-source microbial mechanisms (borates,
+  coking-coal, phosphate-rock, rare-earth-element-commodities, tin-copper-solder,
+  titanium-metal) and 3/36 carry multi-step causal_graphs with UniProtKB protein_examples
+  (phosphate-rock, rare-earth-element-commodities, titanium-metal). No open findings
+  were identified within the commodity cohort.
 reviewer:
   identity: antigravity / cmmmech-stage4-cohort-reviewer
   kind: agent
@@ -130,7 +134,7 @@ reviewer:
     against frozen commit 4d878383c92b44876df3bf166d96637c7581a59e.
 source:
   git_revision: 4d878383c92b44876df3bf166d96637c7581a59e
-  state: working_tree
+  state: git_commit
   inputs:
   - path: data/records/alumina.yaml
     sha256: 491bc7dee86b538d037f8d230167cc4c351aeb98e302202b4556b6a0cdae565c
@@ -984,8 +988,10 @@ assessments:
   - ev-cmmmech-history
   - ev-cohort-audit
   summary: All 36 commodity records pass LinkML validation and history verification,
-    with CHEBI/ENVO grounding on 34/36 records and primary-source microbial mechanisms
-    on 5/36 records (including causal_graphs on rare-earth-oxides and yellowcake).
+    with primary-source microbial mechanisms on 6/36 records (borates, coking-coal,
+    phosphate-rock, rare-earth-element-commodities, tin-copper-solder, titanium-metal)
+    and multi-step causal_graphs with UniProtKB protein_examples on 3/36 records (phosphate-rock,
+    rare-earth-element-commodities, titanium-metal).
   metrics:
   - name: reviewed_commodities
     value: 36.0
@@ -994,16 +1000,16 @@ assessments:
     minimum: 0.0
     maximum: 36.0
   - name: commodities_with_mechanisms
-    value: 5.0
+    value: 6.0
     unit: records
     definition: Commodity records carrying primary-source microbial mechanisms.
     minimum: 0.0
     maximum: 36.0
   - name: commodities_with_causal_graphs
-    value: 2.0
+    value: 3.0
     unit: records
     definition: Commodity records carrying multi-step causal_graphs and UniProtKB
-      protein_examples.
+      protein_examples (phosphate-rock, rare-earth-element-commodities, titanium-metal).
     minimum: 0.0
     maximum: 36.0
 findings: []
@@ -1079,10 +1085,13 @@ evidence:
     distinct material identities, source-backed criticality/mechanism claims, and
     100% CURIE label consistency across 270 distinct ontology terms.
 limitations:
-- 31 of 36 commodity records represent trade-defined refined or intermediate industrial
+- 30 of 36 commodity records represent trade-defined refined or intermediate industrial
   products (e.g., ferroalloys, battery-grade salts, electrical steel, synthetic graphite)
   whose microbial interactions occur on their upstream mineral/primary_resource feedstocks
   or downstream secondary_resource scrap rather than on the commercial intermediate
   itself.
-notes: []
+notes:
+- Stage 3 added verified UniProtKB protein examples to titanium-metal (UniProtKB:B7JBP8
+  SQRD_ACIF2 AFE_1792 and UniProtKB:B7J3C9 TTH_ACIF2 tth in Acidithiobacillus ferrooxidans
+  ATCC 23270 NCBITaxon:243159); passed full Stage 4 verification.
 ```

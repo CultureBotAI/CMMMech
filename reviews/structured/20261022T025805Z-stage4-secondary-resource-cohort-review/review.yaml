@@ -9,13 +9,13 @@ skill: .claude/skills/review-yaml-category/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: Reviewed all 111 secondary_resource records in data/records/*.yaml at commit
-  4d878383c92b44876df3bf166d96637c7581a59e. Notably, 100% (111/111) of secondary_resource
-  records carry primary-source-backed microbial extraction, bioleaching, biosorption,
-  or biomineralization mechanisms, and 15/111 carry multi-step causal_graphs with
-  verified UniProtKB protein_examples (including Stage 3 additions on phosphogypsum
-  and waste-x-ray-films). No open findings were identified within the secondary_resource
-  cohort.
+summary: 'Reviewed all 111 secondary_resource records in data/records/*.yaml at commit
+  4d878383c92b44876df3bf166d96637c7581a59e. 108/111 secondary_resource records carry
+  primary-source-backed extraction, bioleaching, biosorption, or biomineralization
+  mechanisms (85/111 with microbial: true mechanisms), and 7/111 carry multi-step
+  causal_graphs with verified UniProtKB protein_examples (including Stage 3 additions
+  on phosphogypsum and waste-x-ray-films). No open findings were identified within
+  the secondary_resource cohort.'
 reviewer:
   identity: antigravity / cmmmech-stage4-cohort-reviewer
   kind: agent
@@ -25,7 +25,7 @@ reviewer:
     against frozen commit 4d878383c92b44876df3bf166d96637c7581a59e.
 source:
   git_revision: 4d878383c92b44876df3bf166d96637c7581a59e
-  state: working_tree
+  state: git_commit
   inputs:
   - path: data/records/acid-mine-drainage.yaml
     sha256: cb7c908b4eb6482de97abed1d0f6a3501d9e04abd9ff8c9ae6f20c431ebff6e6
@@ -2409,8 +2409,7 @@ checks:
     conflicts.
 assessments:
 - assessment_id: assess-secondary-resource-cohort
-  topic: Secondary resource feedstock identity, microbial recovery mechanisms, and
-    causal graphs
+  topic: Secondary resource feedstock identity, recovery mechanisms, and causal graphs
   area: evidence
   outcome: supported
   target_ids:
@@ -2530,8 +2529,8 @@ assessments:
   - ev-cmmmech-history
   - ev-cohort-audit
   summary: All 111 secondary_resource records pass LinkML validation and history checks,
-    with 100% microbial mechanism coverage (111/111) backed by primary DOI sources
-    and verbatim evidence snippets.
+    with 108/111 carrying primary-source mechanisms (85 microbial) and 7/111 carrying
+    multi-step causal_graphs backed by primary DOI sources and verbatim evidence snippets.
   metrics:
   - name: reviewed_secondary_resources
     value: 111.0
@@ -2540,13 +2539,14 @@ assessments:
     minimum: 0.0
     maximum: 111.0
   - name: secondary_resources_with_mechanisms
-    value: 111.0
+    value: 108.0
     unit: records
-    definition: Secondary resource records carrying primary-source microbial mechanisms.
+    definition: Secondary resource records carrying primary-source mechanisms (85
+      microbial).
     minimum: 0.0
     maximum: 111.0
   - name: secondary_resources_with_causal_graphs
-    value: 15.0
+    value: 7.0
     unit: records
     definition: Secondary resource records carrying multi-step causal_graphs and UniProtKB
       protein_examples.
@@ -2701,11 +2701,15 @@ evidence:
     verified distinct material identities, source-backed criticality/mechanism claims,
     and 100% CURIE label consistency across 270 distinct ontology terms.
 limitations:
-- 96 of 111 secondary_resource records document single-step whole-cell bioleaching,
-  biosorption, or sulfate-reduction assays on complex industrial wastes without resolved
-  molecular/enzymatic intermediates; multi-step causal_graphs are restricted to the
-  15 records with source-resolved biochemical intermediates.
+- 104 of 111 secondary_resource records lack multi-step causal_graphs because their
+  cited primary studies report bulk whole-cell bioleaching, biosorption, or abiotic
+  extraction on complex industrial wastes without resolved molecular/enzymatic intermediates;
+  multi-step causal_graphs are restricted to the 7 records with source-resolved biochemical
+  intermediates.
 notes:
-- Stage 3 added verified UniProtKB protein examples to phosphogypsum (Q727R1, P45574,
-  Q72E85, G3Y4N5) and waste-x-ray-films (P00780, P00782); both passed full Stage 4
+- Stage 3 added verified UniProtKB protein examples to phosphogypsum (UniProtKB:P27175
+  DHG_GLUOX / gdh and UniProtKB:Q9L3B2 PQQC_GLUOX / pqqC in Gluconobacter oxydans
+  621H NCBITaxon:290633) and waste-x-ray-films (UniProtKB:A0A137NYV2 alkaline serine
+  protease in Bacillus licheniformis NCBITaxon:1402 and UniProtKB:F1DKR8 alkaline
+  protease in Purpureocillium lilacinum NCBITaxon:33203); both passed full Stage 4
   verification.

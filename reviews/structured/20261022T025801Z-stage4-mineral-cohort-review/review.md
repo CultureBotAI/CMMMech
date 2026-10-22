@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 365 mineral records in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e. All 365 mineral records carry valid chemical_formula, ima_status, critical_elements, and source provenance; 81 mineral records carry primary-source-backed microbial mechanisms and 22 carry grounded multi-step causal_graphs. Recorded one cohort-level minor completeness finding (cmmmech-stage4-finding-0001) across 17 mineral records that state their IMA-CNMNC species number in description and cite ima_2026_09 but omit the structured IMA:YYYY-NNN entry from identifiers (and see companion single-record review 20261022T025807Z-wulfenite-stage4-record-review for cmmmech-stage4-finding-0002 on cmmmech:wulfenite).
+Reviewed all 365 mineral records in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e. All 365 mineral records carry valid mineral descriptions and source provenance; 269/365 mineral records carry mechanisms (157/365 with microbial: true mechanisms) and 29/365 carry grounded multi-step causal_graphs with UniProtKB protein_examples. Recorded one cohort-level minor completeness finding (cmmmech-stage4-finding-0001) across 17 mineral records that state their IMA-CNMNC species number in description and cite ima_2026_09 but omit the structured IMA:YYYY-NNN entry from identifiers (and see companion single-record review 20261022T025807Z-wulfenite-stage4-record-review for cmmmech-stage4-finding-0002 on cmmmech:wulfenite).
 
 ## Scope And Provenance
 
@@ -19,7 +19,7 @@ Full-population Stage 4 category review of all 365 IMA-approved mineral species 
 
 Selection: data/records/*.yaml where material_kind == 'mineral' at 4d878383c92b44876df3bf166d96637c7581a59e
 Coverage: full; 365 reviewed / 365 in the declared population.
-Source: working_tree at Git base 4d878383c92b44876df3bf166d96637c7581a59e.
+Source: git_commit at Git base 4d878383c92b44876df3bf166d96637c7581a59e.
 Working-tree hashes do not imply those bytes were committed.
 
 | Target | Path / selector | Kind | Label |
@@ -404,7 +404,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 completeness: supported. Targets: cmmmech:acanthite, cmmmech:adamsite-y, cmmmech:akaganeite, cmmmech:alabandite, cmmmech:albite, cmmmech:alburnite, cmmmech:alicewilsonite-yce, cmmmech:alicewilsonite-yla, cmmmech:alunite, cmmmech:amblygonite, cmmmech:ameghinite, cmmmech:ammonioborite, cmmmech:ammoniojarosite, cmmmech:anatase, cmmmech:ancylite-ce, cmmmech:andersonite, cmmmech:anglesite, cmmmech:anhydrite, cmmmech:anilite, cmmmech:annabergite, cmmmech:anorthite, cmmmech:aragonite, cmmmech:argentojarosite, cmmmech:argyrodite, cmmmech:aristarainite, cmmmech:arsenopyrite, cmmmech:artinite, cmmmech:asbolane, cmmmech:atacamite, cmmmech:autunite, cmmmech:azurite, cmmmech:baddeleyite, cmmmech:bainbridgeite-ndce, cmmmech:bainbridgeite-yce, cmmmech:baricite, cmmmech:bassanite, cmmmech:becquerelite, cmmmech:beudantite, cmmmech:billietite, cmmmech:birnessite, cmmmech:bismuthinite, cmmmech:bixbyite-mn, cmmmech:bobierrite, cmmmech:boehmite, cmmmech:boltwoodite, cmmmech:boracite, cmmmech:borax, cmmmech:bornite, cmmmech:briartite, cmmmech:brochantite, cmmmech:brookite, cmmmech:brucite, cmmmech:brushite, cmmmech:burbankite, cmmmech:cadmoindite, cmmmech:calcioancylite-la, cmmmech:calcioburbankite, cmmmech:calcioveatchite, cmmmech:calcite, cmmmech:carnotite, cmmmech:carrollite, cmmmech:cassiterite, cmmmech:catapleiite, cmmmech:cattiite, cmmmech:cavansite, cmmmech:caysichite-y, cmmmech:celestine, cmmmech:cerianite-ce, cmmmech:cerussite, cmmmech:chalcocite, cmmmech:chalcopyrite, cmmmech:chernikovite, cmmmech:childrenite, cmmmech:chlorapatite, cmmmech:chromite, cmmmech:chrysotile, cmmmech:chukanovite, cmmmech:churchite-y, cmmmech:cinnabar, cmmmech:cobaltite, cmmmech:coffinite, cmmmech:colemanite, cmmmech:compreignacite, cmmmech:coquimbite, cmmmech:cordylite-ce, cmmmech:corkite, cmmmech:covellite, cmmmech:crandallite, cmmmech:cryptomelane, cmmmech:cuprite, cmmmech:cuprosklodowskite, cmmmech:curite, cmmmech:digenite, cmmmech:diopside, cmmmech:dittmarite, cmmmech:djurleite, cmmmech:dolomite, cmmmech:donnayite-y, cmmmech:dypingite, cmmmech:dzhalindite, cmmmech:elpidite, cmmmech:enstatite, cmmmech:eosphorite, cmmmech:erythrite, cmmmech:ezcurrite, cmmmech:falottaite, cmmmech:feitknechtite, cmmmech:felsobanyaite, cmmmech:feroxyhyte, cmmmech:ferricopiapite, cmmmech:ferrihydrite, cmmmech:ferrokesterite, cmmmech:florencite-ce, cmmmech:florencite-la, cmmmech:fluorapatite, cmmmech:fluorite, cmmmech:forsterite, cmmmech:fritzscheite, cmmmech:galena, cmmmech:germanite, cmmmech:gersdorffite, cmmmech:gibbsite, cmmmech:ginorite, cmmmech:glushinskite, cmmmech:goethite, cmmmech:goldmanite, cmmmech:gorceixite, cmmmech:gowerite, cmmmech:goyazite, cmmmech:greenockite, cmmmech:greigite, cmmmech:gypsum, cmmmech:gysinite-nd, cmmmech:hafnon, cmmmech:hannayite, cmmmech:haradaite, cmmmech:hauerite, cmmmech:hausmannite, cmmmech:hawleyite, cmmmech:hazenite, cmmmech:heazlewoodite, cmmmech:hematite, cmmmech:hemimorphite, cmmmech:heterogenite, cmmmech:heterosite, cmmmech:hollandite, cmmmech:hopeite, cmmmech:humboldtine, cmmmech:huntite, cmmmech:hureaulite, cmmmech:hydroboracite, cmmmech:hydrocerussite, cmmmech:hydromagnesite, cmmmech:hydroniumjarosite, cmmmech:hydrotalcite, cmmmech:hydroxylapatite, cmmmech:hydrozincite, cmmmech:ilmenite, cmmmech:inderborite, cmmmech:inderite, cmmmech:indite, cmmmech:inyoite, cmmmech:jadarite, cmmmech:jarosite, cmmmech:kaliborite, cmmmech:kaolinite, cmmmech:katsarosite, cmmmech:kernite, cmmmech:kesterite, cmmmech:kornelite, cmmmech:kozoite-la, cmmmech:kozoite-nd, cmmmech:kukharenkoite-ce, cmmmech:kuliokite-y, cmmmech:kurnakovite, cmmmech:kutnohorite, cmmmech:laforetite, cmmmech:lansfordite, cmmmech:lanthanite-ce, cmmmech:lanthanite-la, cmmmech:lanthanite-nd, cmmmech:larderellite, cmmmech:laueite, cmmmech:lepidocrocite, cmmmech:libethenite, cmmmech:lindbergite, cmmmech:lithiophilite, cmmmech:lizardite, cmmmech:loellingite, cmmmech:lorenzenite, cmmmech:ludlamite, cmmmech:mackinawite, cmmmech:maghemite, cmmmech:magnetite, cmmmech:malachite, cmmmech:manganite, cmmmech:marcasite, cmmmech:mcallisterite, cmmmech:mckelveyite-y, cmmmech:melanterite, cmmmech:meta-ankoleite, cmmmech:metacinnabar, cmmmech:metaschoepite, cmmmech:metastudtite, cmmmech:metatorbernite, cmmmech:metatyuyamunite, cmmmech:metavivianite, cmmmech:metazeunerite, cmmmech:meyerhofferite, cmmmech:microcline, cmmmech:millerite, cmmmech:mimetite, cmmmech:molybdenite, cmmmech:monazite-ce, cmmmech:monazite-gd, cmmmech:monazite-la, cmmmech:monazite-nd, cmmmech:monazite-sm, cmmmech:monetite, cmmmech:monohydrocalcite, cmmmech:montebrasite, cmmmech:montmorillonite, cmmmech:montroseite, cmmmech:moolooite, cmmmech:muscovite, cmmmech:natroboltwoodite, cmmmech:natrojarosite, cmmmech:navajoite, cmmmech:nepheline, cmmmech:nesquehonite, cmmmech:newberyite, cmmmech:ningyoite, cmmmech:nobleite, cmmmech:nontronite, cmmmech:orpiment, cmmmech:orthoclase, cmmmech:otavite, cmmmech:palygorskite, cmmmech:paracoquimbite, cmmmech:paramontroseite, cmmmech:parasymplesite, cmmmech:parauranophane, cmmmech:pascoite, cmmmech:pentagonite, cmmmech:pentlandite, cmmmech:perovskite, cmmmech:pertlikite, cmmmech:petalite, cmmmech:petrukite, cmmmech:phlogopite, cmmmech:phosphoferrite, cmmmech:phosphophyllite, cmmmech:piilonenite-nd, cmmmech:pinnoite, cmmmech:plumbojarosite, cmmmech:polydymite, cmmmech:polylithionite, cmmmech:powellite, cmmmech:preobrazhenskite, cmmmech:priceite, cmmmech:probertite, cmmmech:pyrite, cmmmech:pyroaurite, cmmmech:pyrochroite, cmmmech:pyrolusite, cmmmech:pyromorphite, cmmmech:pyrrhotite, cmmmech:quenstedtite, cmmmech:ramsdellite, cmmmech:realgar, cmmmech:regerite, cmmmech:renierite, cmmmech:rhabdophane-ce, cmmmech:rhabdophane-la, cmmmech:rhodochrosite, cmmmech:rhomboclase, cmmmech:richetite, cmmmech:riebeckite, cmmmech:rivadavite, cmmmech:romanechite, cmmmech:roquesite, cmmmech:roscoelite, cmmmech:rozenite, cmmmech:rutherfordine, cmmmech:rutile, cmmmech:sabugalite, cmmmech:sakuraiite, cmmmech:saleeite, cmmmech:saponite, cmmmech:sauconite, cmmmech:scheelite, cmmmech:schertelite, cmmmech:schoepite, cmmmech:schwertmannite, cmmmech:scorodite, cmmmech:senarmontite, cmmmech:sepiolite, cmmmech:siderite, cmmmech:simonkolleite, cmmmech:sklodowskite, cmmmech:skutterudite, cmmmech:smithsonite, cmmmech:soddyite, cmmmech:sphalerite, cmmmech:spodumene, cmmmech:stannite, cmmmech:stevensite, cmmmech:stibnite, cmmmech:stolzite, cmmmech:strengite, cmmmech:strontianite, cmmmech:struvite, cmmmech:struvite-k, cmmmech:studtite, cmmmech:sulfoborite, cmmmech:svanbergite, cmmmech:switzerite, cmmmech:synchysite-ce, cmmmech:szaibelyite, cmmmech:szomolnokite, cmmmech:talc, cmmmech:tennantite-in, cmmmech:tenorite, cmmmech:thomasclarkite-y, cmmmech:tincalconite, cmmmech:titanite, cmmmech:todorokite, cmmmech:torbernite, cmmmech:triphylite, cmmmech:troilite, cmmmech:tunellite, cmmmech:ulexite, cmmmech:uramphite, cmmmech:uraninite, cmmmech:uranophane, cmmmech:uranopilite, cmmmech:vaesite, cmmmech:vandenbrandeite, cmmmech:variscite, cmmmech:vaterite, cmmmech:veatchite, cmmmech:violarite, cmmmech:vivianite, cmmmech:voltaite, cmmmech:weddellite, cmmmech:weeksite, cmmmech:wheatleyite, cmmmech:whewellite, cmmmech:whitlockite, cmmmech:willemite, cmmmech:wollastonite, cmmmech:woodhouseite, cmmmech:wulfenite, cmmmech:wurtzite, cmmmech:xenotime-gd, cmmmech:xenotime-y, cmmmech:xenotime-yb, cmmmech:yanomamite, cmmmech:yusupovite, cmmmech:zeunerite, cmmmech:zincite, cmmmech:zincobriartite, cmmmech:zippeite, cmmmech:zircon, cmmmech:zirconolite.
 
-All 365 mineral species records pass LinkML validation, carry IMA-compliant chemical formulas and critical-element CHEBI links, and have verified curation histories.
+All 365 mineral species records pass LinkML validation, carry IMA-compliant descriptions and source citations, and have verified curation histories.
 
 ### Structured IMA:YYYY-NNN identifier completeness on mineral records citing IMA species numbers
 
@@ -445,7 +445,7 @@ Add structured identifiers entries ({id: IMA:YYYY-NNN, label: &lt;Mineral Name&g
 ## Limits And Additional Notes
 
 - 17 mineral records omit structured IMA:YYYY-NNN entries in identifiers despite stating those IMA numbers in description (tracked as open finding cmmmech-stage4-finding-0001 for Stage 5 remediation); cmmmech:wulfenite omits ima_2026_09 from sources (tracked as open finding cmmmech-stage4-finding-0002 in companion review 20261022T025807Z-wulfenite-stage4-record-review).
-- Stage 3 added verified UniProtKB protein examples to 6 mineral records (bixbyite-mn, dittmarite, glushinskite, montmorillonite, nontronite, struvite); all 6 passed full Stage 4 verification.
+- Stage 3 added verified UniProtKB protein examples to 6 mineral records: bixbyite-mn (UniProtKB:A0A0K2YWP2, UniProtKB:L0KKS2), dittmarite (UniProtKB:G3Y4N5), glushinskite (UniProtKB:G3Y4N5), montmorillonite (UniProtKB:Q8E8S0, UniProtKB:Q8EG34, UniProtKB:Q8EG33), nontronite (UniProtKB:Q8E8S0, UniProtKB:Q8EG34, UniProtKB:Q8EG33), and struvite (UniProtKB:G3Y4N5); all 6 passed full Stage 4 verification.
 
 ## Complete Structured Record
 
@@ -463,15 +463,15 @@ skill: .claude/skills/review-yaml-category/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: Reviewed all 365 mineral records in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e.
-  All 365 mineral records carry valid chemical_formula, ima_status, critical_elements,
-  and source provenance; 81 mineral records carry primary-source-backed microbial
-  mechanisms and 22 carry grounded multi-step causal_graphs. Recorded one cohort-level
-  minor completeness finding (cmmmech-stage4-finding-0001) across 17 mineral records
-  that state their IMA-CNMNC species number in description and cite ima_2026_09 but
-  omit the structured IMA:YYYY-NNN entry from identifiers (and see companion single-record
-  review 20261022T025807Z-wulfenite-stage4-record-review for cmmmech-stage4-finding-0002
-  on cmmmech:wulfenite).
+summary: 'Reviewed all 365 mineral records in data/records/*.yaml at commit 4d878383c92b44876df3bf166d96637c7581a59e.
+  All 365 mineral records carry valid mineral descriptions and source provenance;
+  269/365 mineral records carry mechanisms (157/365 with microbial: true mechanisms)
+  and 29/365 carry grounded multi-step causal_graphs with UniProtKB protein_examples.
+  Recorded one cohort-level minor completeness finding (cmmmech-stage4-finding-0001)
+  across 17 mineral records that state their IMA-CNMNC species number in description
+  and cite ima_2026_09 but omit the structured IMA:YYYY-NNN entry from identifiers
+  (and see companion single-record review 20261022T025807Z-wulfenite-stage4-record-review
+  for cmmmech-stage4-finding-0002 on cmmmech:wulfenite).'
 reviewer:
   identity: antigravity / cmmmech-stage4-cohort-reviewer
   kind: agent
@@ -481,7 +481,7 @@ reviewer:
     against frozen commit 4d878383c92b44876df3bf166d96637c7581a59e.
 source:
   git_revision: 4d878383c92b44876df3bf166d96637c7581a59e
-  state: working_tree
+  state: git_commit
   inputs:
   - path: data/records/acanthite.yaml
     sha256: dab8e5acec7c1178d06afa237a8ece75e41a28c475fab88c2aa79640925738af
@@ -8572,8 +8572,7 @@ assessments:
   - ev-cmmmech-history
   - ev-cohort-audit
   summary: All 365 mineral species records pass LinkML validation, carry IMA-compliant
-    chemical formulas and critical-element CHEBI links, and have verified curation
-    histories.
+    descriptions and source citations, and have verified curation histories.
   metrics:
   - name: reviewed_minerals
     value: 365.0
@@ -8582,13 +8581,14 @@ assessments:
     minimum: 0.0
     maximum: 365.0
   - name: minerals_with_mechanisms
-    value: 81.0
+    value: 269.0
     unit: records
-    definition: Mineral species records carrying primary-source microbial mechanisms.
+    definition: 'Mineral species records carrying mechanisms (157 with microbial:
+      true mechanisms).'
     minimum: 0.0
     maximum: 365.0
   - name: minerals_with_causal_graphs
-    value: 22.0
+    value: 29.0
     unit: records
     definition: Mineral species records carrying multi-step causal_graphs and UniProtKB
       protein_examples.
@@ -9213,7 +9213,9 @@ limitations:
   for Stage 5 remediation); cmmmech:wulfenite omits ima_2026_09 from sources (tracked
   as open finding cmmmech-stage4-finding-0002 in companion review 20261022T025807Z-wulfenite-stage4-record-review).
 notes:
-- Stage 3 added verified UniProtKB protein examples to 6 mineral records (bixbyite-mn,
-  dittmarite, glushinskite, montmorillonite, nontronite, struvite); all 6 passed full
-  Stage 4 verification.
+- 'Stage 3 added verified UniProtKB protein examples to 6 mineral records: bixbyite-mn
+  (UniProtKB:A0A0K2YWP2, UniProtKB:L0KKS2), dittmarite (UniProtKB:G3Y4N5), glushinskite
+  (UniProtKB:G3Y4N5), montmorillonite (UniProtKB:Q8E8S0, UniProtKB:Q8EG34, UniProtKB:Q8EG33),
+  nontronite (UniProtKB:Q8E8S0, UniProtKB:Q8EG34, UniProtKB:Q8EG33), and struvite
+  (UniProtKB:G3Y4N5); all 6 passed full Stage 4 verification.'
 ```
