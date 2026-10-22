@@ -1,0 +1,1601 @@
+schema_version: 1.0.0
+review_id: 20261022T025806Z-stage4-causal-graphs-cohort-review
+title: 'Stage 4 cross-cohort review: causal_graphs and UniProt protein_examples records
+  (63/63)'
+repository: CultureBotAI/CMMMech
+kind: category
+started_at: '2026-10-22T02:50:00Z'
+finished_at: '2026-10-22T02:58:06Z'
+skill: .claude/skills/review-yaml-category/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Reviewed all 63 records with multi-step causal_graphs and UniProtKB protein_examples
+  at commit 4d878383c92b44876df3bf166d96637c7581a59e (15 element, 22 mineral, 2 mineral_group,
+  2 commodity, 7 primary_resource, 15 secondary_resource). Verified 100% connectedness
+  and DAG acyclicity, 100% edge evidence coverage with verbatim primary-source snippets,
+  and 100% synchronization between mechanism-level protein_examples and GENE_OR_PROTEIN
+  node protein_examples across all 63 records.
+reviewer:
+  identity: antigravity / cmmmech-stage4-cohort-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of Stage 4 record_review (.claude/skills/review-yaml-category/SKILL.md)
+    against frozen commit 4d878383c92b44876df3bf166d96637c7581a59e.
+source:
+  git_revision: 4d878383c92b44876df3bf166d96637c7581a59e
+  state: working_tree
+  inputs:
+  - path: data/records/akaganeite.yaml
+    sha256: 7a5214f7def425bbbaf9d0bf440307d817a240e0fd4efe233ae4ca24a4c6c70e
+    role: target
+  - path: data/records/allanite-concentrate.yaml
+    sha256: 600630c8a867238668f6d57c637400b985942e244b826c860ddba1755c59f06e
+    role: target
+  - path: data/records/anatase.yaml
+    sha256: e6458835c3c5a41c4613ebe519662b54d1cf77ff5a3a0ebd704f61af5ce958ca
+    role: target
+  - path: data/records/asbolane.yaml
+    sha256: fc303916b2a7c64bfb657a7fc73f75e9db2146ac1ad4d2476024a5455fb56594
+    role: target
+  - path: data/records/bauxite-residue.yaml
+    sha256: ee25c9fda5e836ee8830a343c2d564fb9cac77ba0ca245fe053b83507b58c932
+    role: target
+  - path: data/records/bixbyite-mn.yaml
+    sha256: c8f7fcc10cb5a1d6b7965e1441a075c6be889de9eeaea7c271973def6459a797
+    role: target
+  - path: data/records/brushite.yaml
+    sha256: 5fa1540a07d369151fcb28abea980998c964745f3bbd5f2ee7fa6ef0c2400f8c
+    role: target
+  - path: data/records/calcite.yaml
+    sha256: 8c1378d02bf991926c80747de98d6db4caed0248fd105c70832cbd1d60964b7f
+    role: target
+  - path: data/records/cerium.yaml
+    sha256: 06ec0e354669126b029210b5f511ebf6c235acbec9890a4f30c1d293eed95844
+    role: target
+  - path: data/records/chlorite.yaml
+    sha256: ed608d1ef84bd29949d0f6f8e130e147d7896a0abb84d9120a53b51a5ca2a7aa
+    role: target
+  - path: data/records/chromium.yaml
+    sha256: 1c5b610983ce5970bac085a5a3e32e6bee189acef13192113f6d1b46ff6c3a7f
+    role: target
+  - path: data/records/dittmarite.yaml
+    sha256: c12b265e41c26f370f23729e76c74dfe86a8e574889cdb7f7ae2ceff5eb44fd5
+    role: target
+  - path: data/records/dunite.yaml
+    sha256: c583f03cf1bce75966ef72ad8baa449490dbf3dadad2a0c39614205260fa5eae
+    role: target
+  - path: data/records/enstatite.yaml
+    sha256: 5af1b751e9b6ff378f70a487f29e8d6c8616101b7b7ec41dd659d4dc93a50ce1
+    role: target
+  - path: data/records/falottaite.yaml
+    sha256: 09ce8e56f4e726815a1603a426745d042773517827b79824c6df3e0448e7b35c
+    role: target
+  - path: data/records/feitknechtite.yaml
+    sha256: a3112a6a8266a718abf3c794a2de3ccf8c084d0eb67afc6ad21eda47c8133dbc
+    role: target
+  - path: data/records/fluorescent-lamp-phosphor.yaml
+    sha256: ce46ed2cbef45cdb428fb97414a938577df9beb08ebc6ff00f6a44823488f38b
+    role: target
+  - path: data/records/fluorine.yaml
+    sha256: 4298efba8fb541244ab90ca0b58657f16705253b6e299787c9f074dc779b2548
+    role: target
+  - path: data/records/glushinskite.yaml
+    sha256: 1d2ac15ed1c10a1f6a0bd3e4224440e99fc7e3b8e93e1114a3a90004870c925f
+    role: target
+  - path: data/records/hafnium.yaml
+    sha256: 94398fcf1ddafc2f294a16915b163a675e4bfa623beba10251cb21d293ded3a8
+    role: target
+  - path: data/records/humboldtine.yaml
+    sha256: 238bbbcb04aefae0970a112cbca04b136f0740b4980709ae9bb4b831546cfa31
+    role: target
+  - path: data/records/hydroxylapatite.yaml
+    sha256: 103556e9bc6f205b72968ba080931fa074095bd00c137157bb4fe5323fdffb25
+    role: target
+  - path: data/records/katsarosite.yaml
+    sha256: 5ef92fb7831dfc2d91f877b6e18a0c1f41128f431e5be94de633fa8b9e40059e
+    role: target
+  - path: data/records/lanthanum.yaml
+    sha256: 40f87a7b30577ce2ab87d1cddc3a0f34c013ac66b790afa1420e58fe4b8cbce2
+    role: target
+  - path: data/records/lindbergite.yaml
+    sha256: 0fe29a66efa15f07e79855525aa4e38f28532dd869eea0fd7d1e34c49da5e3b3
+    role: target
+  - path: data/records/lithium-bearing-geothermal-brine.yaml
+    sha256: 53dc79243621d802befd7d309d8b12a079c57e81b1b5c9fabb3b25511c70dfa8
+    role: target
+  - path: data/records/magnesium.yaml
+    sha256: 931d640f20af7ef12fd20175aa3d515d514089f42c368b24514dd37af642822f
+    role: target
+  - path: data/records/manganese.yaml
+    sha256: 4e14de8d0bd57869af70e6a8ce02da5c183afdef4715656c3c19c6ca86001749
+    role: target
+  - path: data/records/metacinnabar.yaml
+    sha256: 0bb941fbfa16112b5dddff9d25e414e4a5ce00ce79bf9ab80ee39f4285ca4c31
+    role: target
+  - path: data/records/montmorillonite.yaml
+    sha256: c25638a1ed8128e31733f560aeea1a0fc1bb73e420425c65422923064efa1c6e
+    role: target
+  - path: data/records/moolooite.yaml
+    sha256: 21386f82e1bb01a7b6f4d5178c49e91d8ae73b29db427142c7742f8eb826d43e
+    role: target
+  - path: data/records/neodymium.yaml
+    sha256: f1b949b4cb0bc909368d75ec7404c143b5c449d71f7ee968745af42f959636d3
+    role: target
+  - path: data/records/nontronite.yaml
+    sha256: 221195a250ebbe6e3c849bc6f949917fefc074a62327a4d930676d6bdc9fa7a1
+    role: target
+  - path: data/records/olivine-group.yaml
+    sha256: 1017cd19a6a93cccff1eeb3d7ababb11eecf12b41e45cbd56f5be48610419af3
+    role: target
+  - path: data/records/palladium.yaml
+    sha256: 6924903baa0aceaa8361a94198b2d5b42460b34d4d643fa4ffdc6e43c50803c0
+    role: target
+  - path: data/records/phosphate-rock.yaml
+    sha256: edbfef1b8e3630f3bb57d632138d7f6fbb90bc6ffaad1935878fa0d8e640151f
+    role: target
+  - path: data/records/phosphogypsum.yaml
+    sha256: 5a1074dea15771196b6a2ebddf655da3dbb2ce9dd3bab2ee6c5d20e5ef78540a
+    role: target
+  - path: data/records/phosphorus.yaml
+    sha256: 83c3a7e583bab72905d3d6017fda5174f2ca5a89ba0c63df70015575ed4fb728
+    role: target
+  - path: data/records/praseodymium.yaml
+    sha256: e31325b8f4667ecb0533eca471c9398942cbcf020c90fa17f34e6a545f71d8d1
+    role: target
+  - path: data/records/pyrochroite.yaml
+    sha256: 1ca16d4224942cd258a256563f1f5c8d711b5328c2f95d70d76a032e4097d4d0
+    role: target
+  - path: data/records/rare-earth-element-commodities.yaml
+    sha256: 08b78b26fcfe9b718385dee29be591eea523da30ae82e522e16c011f7795302b
+    role: target
+  - path: data/records/rhodochrosite.yaml
+    sha256: d120d1c277b742539d55e731708b4d4b628017d5b6298a70f408d6e54b30eb0c
+    role: target
+  - path: data/records/scandium.yaml
+    sha256: 276b76b9d7797f31d0a52c38e85a15568c6b5177a1625d7b39a0fb411308e4ac
+    role: target
+  - path: data/records/selenium.yaml
+    sha256: 9547737220d516390041bd114783a25fd367f28189cc2351c03170aecc89b484
+    role: target
+  - path: data/records/silicon.yaml
+    sha256: 1ccf550155f85ccbe83f3a1aa0895e16e61575fa2f43eeb3056476d9a4fa13e9
+    role: target
+  - path: data/records/smithsonite.yaml
+    sha256: 1a2d72e7da1d873806570c0cf2a34a6216d0c8821fc7fd57f1c14326e2c67cb2
+    role: target
+  - path: data/records/spent-fluid-catalytic-cracking-catalyst.yaml
+    sha256: 958771acc23b8947e194344ca260ece74733599a7935cb07a5e4f894e8b43055
+    role: target
+  - path: data/records/strontianite.yaml
+    sha256: fd0ba6d8bd4e69e250e0e0109e01dcccb86771cbcfb8e9b0f6ef6fd890275d66
+    role: target
+  - path: data/records/struvite.yaml
+    sha256: 48c215816ba65046aeaeed7a15bd80130a31d62420857a09c5e46ddf762cc266
+    role: target
+  - path: data/records/tetrahedrite-concentrate.yaml
+    sha256: 75bc83e27a7f1e418752b8c31571434e0719b35ae99e76e88f59b919899232dc
+    role: target
+  - path: data/records/thulium.yaml
+    sha256: a6c50ec0889e52be36abca1c07f57673b03adc78caf4749562ebf5dea441e0a0
+    role: target
+  - path: data/records/titanium-metal.yaml
+    sha256: 547e4023b359003f82e8178f6adfee0db4424043e9591e268531876a65552622
+    role: target
+  - path: data/records/traction-battery-hydrometallurgical-residue.yaml
+    sha256: b738413bfdcf25e4645514ce893b9b3bcf231a24671a2a4f914357a5216d7194
+    role: target
+  - path: data/records/uraninite.yaml
+    sha256: a09be0d68b606fd0c87b75569b5c7f95211f132533bf8b8d415880cc84b97912
+    role: target
+  - path: data/records/uranium.yaml
+    sha256: f2bcc77e3e01adef0509ae4b5cdb26aee435dae30f2d93cf2ad322c8890c72a0
+    role: target
+  - path: data/records/vanadium.yaml
+    sha256: 335a04a069081e6fb33988bda293f376f379549f2c0101f5f618385b1a2f1487
+    role: target
+  - path: data/records/vaterite.yaml
+    sha256: 7ffcf6f5bc1904774bf9382c8900c1481722ad4514418157813a907b09dfa656
+    role: target
+  - path: data/records/waste-liquid-crystal-display-panels.yaml
+    sha256: 2c8c0664b91097e22ad787991874fffea68754b7caedc64dee5b13e6e76b72ca
+    role: target
+  - path: data/records/waste-x-ray-films.yaml
+    sha256: 7167413b5998bc8b0cc5de9b5244e827ca9301f79d3020d4df49626d48fef301
+    role: target
+  - path: data/records/wheatleyite.yaml
+    sha256: 8a49e55b269881fb37e038c3ad09bbb133e80837022cb9d85fee1cc248011e46
+    role: target
+  - path: data/records/whewellite.yaml
+    sha256: 22ae0ddc7fd2186cb837a636c14622240eba392de1bfe4c93072b9b878c2cc56
+    role: target
+  - path: data/records/zinc.yaml
+    sha256: acf3efaee5c3b7570114c0e32fb2e42e3e56408afa3dad77a993dd541a182358
+    role: target
+  - path: data/records/zincite.yaml
+    sha256: b5636b992ce917a20726534cb4e9178dac2251043c32762f22988ecff74334e1
+    role: target
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932
+    role: context
+  - path: src/cmmmech/validation.py
+    sha256: 63ff33d51b753dd715e6bd1c3e5f60a99e4fcb41b3aee68d536306a862d922e2
+    role: context
+scope:
+  coverage: full
+  population_size: 63
+  reviewed_target_ids:
+  - cmmmech:akaganeite
+  - cmmmech:allanite-concentrate
+  - cmmmech:anatase
+  - cmmmech:asbolane
+  - cmmmech:bauxite-residue
+  - cmmmech:bixbyite-mn
+  - cmmmech:brushite
+  - cmmmech:calcite
+  - cmmmech:cerium
+  - cmmmech:chlorite
+  - cmmmech:chromium
+  - cmmmech:dittmarite
+  - cmmmech:dunite
+  - cmmmech:enstatite
+  - cmmmech:falottaite
+  - cmmmech:feitknechtite
+  - cmmmech:fluorescent-lamp-phosphor
+  - cmmmech:fluorine
+  - cmmmech:glushinskite
+  - cmmmech:hafnium
+  - cmmmech:humboldtine
+  - cmmmech:hydroxylapatite
+  - cmmmech:katsarosite
+  - cmmmech:lanthanum
+  - cmmmech:lindbergite
+  - cmmmech:lithium-bearing-geothermal-brine
+  - cmmmech:magnesium
+  - cmmmech:manganese
+  - cmmmech:metacinnabar
+  - cmmmech:montmorillonite
+  - cmmmech:moolooite
+  - cmmmech:neodymium
+  - cmmmech:nontronite
+  - cmmmech:olivine-group
+  - cmmmech:palladium
+  - cmmmech:phosphate-rock
+  - cmmmech:phosphogypsum
+  - cmmmech:phosphorus
+  - cmmmech:praseodymium
+  - cmmmech:pyrochroite
+  - cmmmech:rare-earth-element-commodities
+  - cmmmech:rhodochrosite
+  - cmmmech:scandium
+  - cmmmech:selenium
+  - cmmmech:silicon
+  - cmmmech:smithsonite
+  - cmmmech:spent-fluid-catalytic-cracking-catalyst
+  - cmmmech:strontianite
+  - cmmmech:struvite
+  - cmmmech:tetrahedrite-concentrate
+  - cmmmech:thulium
+  - cmmmech:titanium-metal
+  - cmmmech:traction-battery-hydrometallurgical-residue
+  - cmmmech:uraninite
+  - cmmmech:uranium
+  - cmmmech:vanadium
+  - cmmmech:vaterite
+  - cmmmech:waste-liquid-crystal-display-panels
+  - cmmmech:waste-x-ray-films
+  - cmmmech:wheatleyite
+  - cmmmech:whewellite
+  - cmmmech:zinc
+  - cmmmech:zincite
+  selection: data/records/*.yaml where causal_graphs is non-empty at 4d878383c92b44876df3bf166d96637c7581a59e
+  description: Full-population Stage 4 category review of all 63 CMMMech records carrying
+    multi-step causal_graphs and UniProtKB protein_examples (covering all 63 records
+    updated in Stages 2 and 3 since their earlier single-record reviews).
+targets:
+- target_id: cmmmech:akaganeite
+  path: data/records/akaganeite.yaml
+  kind: maintained
+  label: Akaganeite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/akaganeite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:allanite-concentrate
+  path: data/records/allanite-concentrate.yaml
+  kind: maintained
+  label: Allanite concentrate
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/allanite-concentrate.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:anatase
+  path: data/records/anatase.yaml
+  kind: maintained
+  label: Anatase
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/anatase.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:asbolane
+  path: data/records/asbolane.yaml
+  kind: maintained
+  label: Asbolane
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/asbolane.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:bauxite-residue
+  path: data/records/bauxite-residue.yaml
+  kind: maintained
+  label: Bauxite residue (red mud)
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/bauxite-residue.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:bixbyite-mn
+  path: data/records/bixbyite-mn.yaml
+  kind: maintained
+  label: Bixbyite-(Mn)
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/bixbyite-mn.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:brushite
+  path: data/records/brushite.yaml
+  kind: maintained
+  label: Brushite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/brushite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:calcite
+  path: data/records/calcite.yaml
+  kind: maintained
+  label: Calcite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/calcite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:cerium
+  path: data/records/cerium.yaml
+  kind: maintained
+  label: Cerium
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cerium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:chlorite
+  path: data/records/chlorite.yaml
+  kind: maintained
+  label: Chlorite group
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/chlorite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:chromium
+  path: data/records/chromium.yaml
+  kind: maintained
+  label: Chromium
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/chromium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:dittmarite
+  path: data/records/dittmarite.yaml
+  kind: maintained
+  label: Dittmarite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/dittmarite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:dunite
+  path: data/records/dunite.yaml
+  kind: maintained
+  label: Dunite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/dunite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:enstatite
+  path: data/records/enstatite.yaml
+  kind: maintained
+  label: Enstatite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/enstatite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:falottaite
+  path: data/records/falottaite.yaml
+  kind: maintained
+  label: Falottaite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/falottaite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:feitknechtite
+  path: data/records/feitknechtite.yaml
+  kind: maintained
+  label: Feitknechtite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/feitknechtite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:fluorescent-lamp-phosphor
+  path: data/records/fluorescent-lamp-phosphor.yaml
+  kind: maintained
+  label: Spent fluorescent-lamp phosphor powder
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/fluorescent-lamp-phosphor.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:fluorine
+  path: data/records/fluorine.yaml
+  kind: maintained
+  label: Fluorine
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/fluorine.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:glushinskite
+  path: data/records/glushinskite.yaml
+  kind: maintained
+  label: Glushinskite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/glushinskite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:hafnium
+  path: data/records/hafnium.yaml
+  kind: maintained
+  label: Hafnium
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/hafnium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:humboldtine
+  path: data/records/humboldtine.yaml
+  kind: maintained
+  label: Humboldtine
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/humboldtine.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:hydroxylapatite
+  path: data/records/hydroxylapatite.yaml
+  kind: maintained
+  label: Hydroxylapatite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/hydroxylapatite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:katsarosite
+  path: data/records/katsarosite.yaml
+  kind: maintained
+  label: Katsarosite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/katsarosite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:lanthanum
+  path: data/records/lanthanum.yaml
+  kind: maintained
+  label: Lanthanum
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lanthanum.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:lindbergite
+  path: data/records/lindbergite.yaml
+  kind: maintained
+  label: Lindbergite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lindbergite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:lithium-bearing-geothermal-brine
+  path: data/records/lithium-bearing-geothermal-brine.yaml
+  kind: maintained
+  label: Lithium-bearing geothermal brine
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lithium-bearing-geothermal-brine.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:magnesium
+  path: data/records/magnesium.yaml
+  kind: maintained
+  label: Magnesium
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/magnesium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:manganese
+  path: data/records/manganese.yaml
+  kind: maintained
+  label: Manganese
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/manganese.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:metacinnabar
+  path: data/records/metacinnabar.yaml
+  kind: maintained
+  label: Metacinnabar
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/metacinnabar.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:montmorillonite
+  path: data/records/montmorillonite.yaml
+  kind: maintained
+  label: Montmorillonite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/montmorillonite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:moolooite
+  path: data/records/moolooite.yaml
+  kind: maintained
+  label: Moolooite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/moolooite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:neodymium
+  path: data/records/neodymium.yaml
+  kind: maintained
+  label: Neodymium
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/neodymium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:nontronite
+  path: data/records/nontronite.yaml
+  kind: maintained
+  label: Nontronite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/nontronite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:olivine-group
+  path: data/records/olivine-group.yaml
+  kind: maintained
+  label: Olivine group
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/olivine-group.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:palladium
+  path: data/records/palladium.yaml
+  kind: maintained
+  label: Palladium
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/palladium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:phosphate-rock
+  path: data/records/phosphate-rock.yaml
+  kind: maintained
+  label: Phosphate rock
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/phosphate-rock.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:phosphogypsum
+  path: data/records/phosphogypsum.yaml
+  kind: maintained
+  label: Phosphogypsum
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/phosphogypsum.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:phosphorus
+  path: data/records/phosphorus.yaml
+  kind: maintained
+  label: Phosphorus
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/phosphorus.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:praseodymium
+  path: data/records/praseodymium.yaml
+  kind: maintained
+  label: Praseodymium
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/praseodymium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:pyrochroite
+  path: data/records/pyrochroite.yaml
+  kind: maintained
+  label: Pyrochroite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/pyrochroite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:rare-earth-element-commodities
+  path: data/records/rare-earth-element-commodities.yaml
+  kind: maintained
+  label: Rare-earth-element commodities, Australian list scope
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/rare-earth-element-commodities.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:rhodochrosite
+  path: data/records/rhodochrosite.yaml
+  kind: maintained
+  label: Rhodochrosite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/rhodochrosite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:scandium
+  path: data/records/scandium.yaml
+  kind: maintained
+  label: Scandium
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/scandium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:selenium
+  path: data/records/selenium.yaml
+  kind: maintained
+  label: Selenium
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/selenium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:silicon
+  path: data/records/silicon.yaml
+  kind: maintained
+  label: Silicon
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/silicon.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:smithsonite
+  path: data/records/smithsonite.yaml
+  kind: maintained
+  label: Smithsonite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/smithsonite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:spent-fluid-catalytic-cracking-catalyst
+  path: data/records/spent-fluid-catalytic-cracking-catalyst.yaml
+  kind: maintained
+  label: Spent fluid catalytic cracking catalyst
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-fluid-catalytic-cracking-catalyst.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:strontianite
+  path: data/records/strontianite.yaml
+  kind: maintained
+  label: Strontianite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/strontianite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:struvite
+  path: data/records/struvite.yaml
+  kind: maintained
+  label: Struvite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/struvite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:tetrahedrite-concentrate
+  path: data/records/tetrahedrite-concentrate.yaml
+  kind: maintained
+  label: Tetrahedrite concentrate
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tetrahedrite-concentrate.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:thulium
+  path: data/records/thulium.yaml
+  kind: maintained
+  label: Thulium
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/thulium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:titanium-metal
+  path: data/records/titanium-metal.yaml
+  kind: maintained
+  label: Titanium metal
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/titanium-metal.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:traction-battery-hydrometallurgical-residue
+  path: data/records/traction-battery-hydrometallurgical-residue.yaml
+  kind: maintained
+  label: Traction-battery hydrometallurgical residue
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/traction-battery-hydrometallurgical-residue.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:uraninite
+  path: data/records/uraninite.yaml
+  kind: maintained
+  label: Uraninite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/uraninite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:uranium
+  path: data/records/uranium.yaml
+  kind: maintained
+  label: Uranium
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/uranium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:vanadium
+  path: data/records/vanadium.yaml
+  kind: maintained
+  label: Vanadium
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/vanadium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:vaterite
+  path: data/records/vaterite.yaml
+  kind: maintained
+  label: Vaterite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/vaterite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:waste-liquid-crystal-display-panels
+  path: data/records/waste-liquid-crystal-display-panels.yaml
+  kind: maintained
+  label: Waste liquid-crystal display panels
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/waste-liquid-crystal-display-panels.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:waste-x-ray-films
+  path: data/records/waste-x-ray-films.yaml
+  kind: maintained
+  label: Waste X-ray films
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/waste-x-ray-films.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:wheatleyite
+  path: data/records/wheatleyite.yaml
+  kind: maintained
+  label: Wheatleyite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/wheatleyite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:whewellite
+  path: data/records/whewellite.yaml
+  kind: maintained
+  label: Whewellite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/whewellite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:zinc
+  path: data/records/zinc.yaml
+  kind: maintained
+  label: Zinc
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/zinc.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:zincite
+  path: data/records/zincite.yaml
+  kind: maintained
+  label: Zincite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/zincite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+checks:
+- check_id: cmmmech-validate-cohort
+  name: cmmmech validate (causal_graphs cohort)
+  status: passed
+  required: true
+  command: .venv/bin/cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:akaganeite
+  - cmmmech:allanite-concentrate
+  - cmmmech:anatase
+  - cmmmech:asbolane
+  - cmmmech:bauxite-residue
+  - cmmmech:bixbyite-mn
+  - cmmmech:brushite
+  - cmmmech:calcite
+  - cmmmech:cerium
+  - cmmmech:chlorite
+  - cmmmech:chromium
+  - cmmmech:dittmarite
+  - cmmmech:dunite
+  - cmmmech:enstatite
+  - cmmmech:falottaite
+  - cmmmech:feitknechtite
+  - cmmmech:fluorescent-lamp-phosphor
+  - cmmmech:fluorine
+  - cmmmech:glushinskite
+  - cmmmech:hafnium
+  - cmmmech:humboldtine
+  - cmmmech:hydroxylapatite
+  - cmmmech:katsarosite
+  - cmmmech:lanthanum
+  - cmmmech:lindbergite
+  - cmmmech:lithium-bearing-geothermal-brine
+  - cmmmech:magnesium
+  - cmmmech:manganese
+  - cmmmech:metacinnabar
+  - cmmmech:montmorillonite
+  - cmmmech:moolooite
+  - cmmmech:neodymium
+  - cmmmech:nontronite
+  - cmmmech:olivine-group
+  - cmmmech:palladium
+  - cmmmech:phosphate-rock
+  - cmmmech:phosphogypsum
+  - cmmmech:phosphorus
+  - cmmmech:praseodymium
+  - cmmmech:pyrochroite
+  - cmmmech:rare-earth-element-commodities
+  - cmmmech:rhodochrosite
+  - cmmmech:scandium
+  - cmmmech:selenium
+  - cmmmech:silicon
+  - cmmmech:smithsonite
+  - cmmmech:spent-fluid-catalytic-cracking-catalyst
+  - cmmmech:strontianite
+  - cmmmech:struvite
+  - cmmmech:tetrahedrite-concentrate
+  - cmmmech:thulium
+  - cmmmech:titanium-metal
+  - cmmmech:traction-battery-hydrometallurgical-residue
+  - cmmmech:uraninite
+  - cmmmech:uranium
+  - cmmmech:vanadium
+  - cmmmech:vaterite
+  - cmmmech:waste-liquid-crystal-display-panels
+  - cmmmech:waste-x-ray-films
+  - cmmmech:wheatleyite
+  - cmmmech:whewellite
+  - cmmmech:zinc
+  - cmmmech:zincite
+  evidence_ids:
+  - ev-cmmmech-validate
+  summary: All 63 records in the causal_graphs cohort pass LinkML structural and semantic
+    validation with 0 errors.
+- check_id: cmmmech-validate-history-cohort
+  name: cmmmech validate-history (causal_graphs cohort)
+  status: passed
+  required: true
+  command: .venv/bin/cmmmech validate-history --base main
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:akaganeite
+  - cmmmech:allanite-concentrate
+  - cmmmech:anatase
+  - cmmmech:asbolane
+  - cmmmech:bauxite-residue
+  - cmmmech:bixbyite-mn
+  - cmmmech:brushite
+  - cmmmech:calcite
+  - cmmmech:cerium
+  - cmmmech:chlorite
+  - cmmmech:chromium
+  - cmmmech:dittmarite
+  - cmmmech:dunite
+  - cmmmech:enstatite
+  - cmmmech:falottaite
+  - cmmmech:feitknechtite
+  - cmmmech:fluorescent-lamp-phosphor
+  - cmmmech:fluorine
+  - cmmmech:glushinskite
+  - cmmmech:hafnium
+  - cmmmech:humboldtine
+  - cmmmech:hydroxylapatite
+  - cmmmech:katsarosite
+  - cmmmech:lanthanum
+  - cmmmech:lindbergite
+  - cmmmech:lithium-bearing-geothermal-brine
+  - cmmmech:magnesium
+  - cmmmech:manganese
+  - cmmmech:metacinnabar
+  - cmmmech:montmorillonite
+  - cmmmech:moolooite
+  - cmmmech:neodymium
+  - cmmmech:nontronite
+  - cmmmech:olivine-group
+  - cmmmech:palladium
+  - cmmmech:phosphate-rock
+  - cmmmech:phosphogypsum
+  - cmmmech:phosphorus
+  - cmmmech:praseodymium
+  - cmmmech:pyrochroite
+  - cmmmech:rare-earth-element-commodities
+  - cmmmech:rhodochrosite
+  - cmmmech:scandium
+  - cmmmech:selenium
+  - cmmmech:silicon
+  - cmmmech:smithsonite
+  - cmmmech:spent-fluid-catalytic-cracking-catalyst
+  - cmmmech:strontianite
+  - cmmmech:struvite
+  - cmmmech:tetrahedrite-concentrate
+  - cmmmech:thulium
+  - cmmmech:titanium-metal
+  - cmmmech:traction-battery-hydrometallurgical-residue
+  - cmmmech:uraninite
+  - cmmmech:uranium
+  - cmmmech:vanadium
+  - cmmmech:vaterite
+  - cmmmech:waste-liquid-crystal-display-panels
+  - cmmmech:waste-x-ray-films
+  - cmmmech:wheatleyite
+  - cmmmech:whewellite
+  - cmmmech:zinc
+  - cmmmech:zincite
+  evidence_ids:
+  - ev-cmmmech-history
+  summary: All curation_history entries and history_refs sidecars across the 63 causal_graphs
+    records resolve and validate cleanly.
+- check_id: curie-label-consistency-cohort
+  name: Ontology ID-label consistency (causal_graphs cohort)
+  status: passed
+  required: true
+  target_ids:
+  - cmmmech:akaganeite
+  - cmmmech:allanite-concentrate
+  - cmmmech:anatase
+  - cmmmech:asbolane
+  - cmmmech:bauxite-residue
+  - cmmmech:bixbyite-mn
+  - cmmmech:brushite
+  - cmmmech:calcite
+  - cmmmech:cerium
+  - cmmmech:chlorite
+  - cmmmech:chromium
+  - cmmmech:dittmarite
+  - cmmmech:dunite
+  - cmmmech:enstatite
+  - cmmmech:falottaite
+  - cmmmech:feitknechtite
+  - cmmmech:fluorescent-lamp-phosphor
+  - cmmmech:fluorine
+  - cmmmech:glushinskite
+  - cmmmech:hafnium
+  - cmmmech:humboldtine
+  - cmmmech:hydroxylapatite
+  - cmmmech:katsarosite
+  - cmmmech:lanthanum
+  - cmmmech:lindbergite
+  - cmmmech:lithium-bearing-geothermal-brine
+  - cmmmech:magnesium
+  - cmmmech:manganese
+  - cmmmech:metacinnabar
+  - cmmmech:montmorillonite
+  - cmmmech:moolooite
+  - cmmmech:neodymium
+  - cmmmech:nontronite
+  - cmmmech:olivine-group
+  - cmmmech:palladium
+  - cmmmech:phosphate-rock
+  - cmmmech:phosphogypsum
+  - cmmmech:phosphorus
+  - cmmmech:praseodymium
+  - cmmmech:pyrochroite
+  - cmmmech:rare-earth-element-commodities
+  - cmmmech:rhodochrosite
+  - cmmmech:scandium
+  - cmmmech:selenium
+  - cmmmech:silicon
+  - cmmmech:smithsonite
+  - cmmmech:spent-fluid-catalytic-cracking-catalyst
+  - cmmmech:strontianite
+  - cmmmech:struvite
+  - cmmmech:tetrahedrite-concentrate
+  - cmmmech:thulium
+  - cmmmech:titanium-metal
+  - cmmmech:traction-battery-hydrometallurgical-residue
+  - cmmmech:uraninite
+  - cmmmech:uranium
+  - cmmmech:vanadium
+  - cmmmech:vaterite
+  - cmmmech:waste-liquid-crystal-display-panels
+  - cmmmech:waste-x-ray-films
+  - cmmmech:wheatleyite
+  - cmmmech:whewellite
+  - cmmmech:zinc
+  - cmmmech:zincite
+  evidence_ids:
+  - ev-cohort-audit
+  summary: Every CHEBI, NCBITaxon, GO, ENVO, and UniProtKB CURIE used across the 63
+    causal_graphs records carries a consistent canonical label with 0 cross-corpus
+    conflicts.
+assessments:
+- assessment_id: assess-causal-graphs-and-proteins
+  topic: Causal graph connectivity, edge evidence snippets, and UniProtKB protein_examples
+    synchronization
+  area: graph
+  outcome: supported
+  target_ids:
+  - cmmmech:akaganeite
+  - cmmmech:allanite-concentrate
+  - cmmmech:anatase
+  - cmmmech:asbolane
+  - cmmmech:bauxite-residue
+  - cmmmech:bixbyite-mn
+  - cmmmech:brushite
+  - cmmmech:calcite
+  - cmmmech:cerium
+  - cmmmech:chlorite
+  - cmmmech:chromium
+  - cmmmech:dittmarite
+  - cmmmech:dunite
+  - cmmmech:enstatite
+  - cmmmech:falottaite
+  - cmmmech:feitknechtite
+  - cmmmech:fluorescent-lamp-phosphor
+  - cmmmech:fluorine
+  - cmmmech:glushinskite
+  - cmmmech:hafnium
+  - cmmmech:humboldtine
+  - cmmmech:hydroxylapatite
+  - cmmmech:katsarosite
+  - cmmmech:lanthanum
+  - cmmmech:lindbergite
+  - cmmmech:lithium-bearing-geothermal-brine
+  - cmmmech:magnesium
+  - cmmmech:manganese
+  - cmmmech:metacinnabar
+  - cmmmech:montmorillonite
+  - cmmmech:moolooite
+  - cmmmech:neodymium
+  - cmmmech:nontronite
+  - cmmmech:olivine-group
+  - cmmmech:palladium
+  - cmmmech:phosphate-rock
+  - cmmmech:phosphogypsum
+  - cmmmech:phosphorus
+  - cmmmech:praseodymium
+  - cmmmech:pyrochroite
+  - cmmmech:rare-earth-element-commodities
+  - cmmmech:rhodochrosite
+  - cmmmech:scandium
+  - cmmmech:selenium
+  - cmmmech:silicon
+  - cmmmech:smithsonite
+  - cmmmech:spent-fluid-catalytic-cracking-catalyst
+  - cmmmech:strontianite
+  - cmmmech:struvite
+  - cmmmech:tetrahedrite-concentrate
+  - cmmmech:thulium
+  - cmmmech:titanium-metal
+  - cmmmech:traction-battery-hydrometallurgical-residue
+  - cmmmech:uraninite
+  - cmmmech:uranium
+  - cmmmech:vanadium
+  - cmmmech:vaterite
+  - cmmmech:waste-liquid-crystal-display-panels
+  - cmmmech:waste-x-ray-films
+  - cmmmech:wheatleyite
+  - cmmmech:whewellite
+  - cmmmech:zinc
+  - cmmmech:zincite
+  evidence_ids:
+  - ev-cmmmech-validate
+  - ev-cmmmech-history
+  - ev-cohort-audit
+  summary: All 63 causal-graph records have connected multi-step graphs, valid CausalPredicateEnum
+    predicates, verbatim edge evidence, and identical UniProtKB accessions/labels/taxIds
+    between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples.
+  metrics:
+  - name: reviewed_causal_graph_records
+    value: 63.0
+    unit: records
+    definition: Total records with multi-step causal_graphs reviewed.
+    minimum: 0.0
+    maximum: 63.0
+  - name: records_with_synced_protein_examples
+    value: 63.0
+    unit: records
+    definition: Causal-graph records with synchronized mechanism and node UniProtKB
+      protein_examples.
+    minimum: 0.0
+    maximum: 63.0
+findings: []
+actions: []
+boundary_decisions:
+- action: retain
+  target_ids:
+  - cmmmech:akaganeite
+  - cmmmech:allanite-concentrate
+  - cmmmech:anatase
+  - cmmmech:asbolane
+  - cmmmech:bauxite-residue
+  - cmmmech:bixbyite-mn
+  - cmmmech:brushite
+  - cmmmech:calcite
+  - cmmmech:cerium
+  - cmmmech:chlorite
+  - cmmmech:chromium
+  - cmmmech:dittmarite
+  - cmmmech:dunite
+  - cmmmech:enstatite
+  - cmmmech:falottaite
+  - cmmmech:feitknechtite
+  - cmmmech:fluorescent-lamp-phosphor
+  - cmmmech:fluorine
+  - cmmmech:glushinskite
+  - cmmmech:hafnium
+  - cmmmech:humboldtine
+  - cmmmech:hydroxylapatite
+  - cmmmech:katsarosite
+  - cmmmech:lanthanum
+  - cmmmech:lindbergite
+  - cmmmech:lithium-bearing-geothermal-brine
+  - cmmmech:magnesium
+  - cmmmech:manganese
+  - cmmmech:metacinnabar
+  - cmmmech:montmorillonite
+  - cmmmech:moolooite
+  - cmmmech:neodymium
+  - cmmmech:nontronite
+  - cmmmech:olivine-group
+  - cmmmech:palladium
+  - cmmmech:phosphate-rock
+  - cmmmech:phosphogypsum
+  - cmmmech:phosphorus
+  - cmmmech:praseodymium
+  - cmmmech:pyrochroite
+  - cmmmech:rare-earth-element-commodities
+  - cmmmech:rhodochrosite
+  - cmmmech:scandium
+  - cmmmech:selenium
+  - cmmmech:silicon
+  - cmmmech:smithsonite
+  - cmmmech:spent-fluid-catalytic-cracking-catalyst
+  - cmmmech:strontianite
+  - cmmmech:struvite
+  - cmmmech:tetrahedrite-concentrate
+  - cmmmech:thulium
+  - cmmmech:titanium-metal
+  - cmmmech:traction-battery-hydrometallurgical-residue
+  - cmmmech:uraninite
+  - cmmmech:uranium
+  - cmmmech:vanadium
+  - cmmmech:vaterite
+  - cmmmech:waste-liquid-crystal-display-panels
+  - cmmmech:waste-x-ray-films
+  - cmmmech:wheatleyite
+  - cmmmech:whewellite
+  - cmmmech:zinc
+  - cmmmech:zincite
+  rationale: All 63 records in the causal_graphs cohort denote distinct, non-synonymous
+    entities matching data/records/*.yaml where causal_graphs is non-empty at 4d878383c92b44876df3bf166d96637c7581a59e
+    with no duplicate IDs, names, or external identifier collisions.
+  evidence_ids:
+  - ev-cohort-audit
+evidence:
+- evidence_id: ev-cmmmech-validate
+  kind: validation
+  reference: src/cmmmech/validation.py
+  locator: cmmmech validate --require-records
+  accessed_at: '2026-10-22T02:58:06Z'
+  support: supports
+  summary: LinkML structural and semantic validator passed across all 616 records
+    (including the causal_graphs cohort) with 0 errors.
+- evidence_id: ev-cmmmech-history
+  kind: validation
+  reference: src/cmmmech/history.py
+  locator: cmmmech validate-history --base main
+  accessed_at: '2026-10-22T02:58:06Z'
+  support: supports
+  summary: All 810 curation history sidecars in history/records/ and record history_refs
+    passed validation with 0 errors.
+- evidence_id: ev-cohort-audit
+  kind: record_content
+  reference: src/cmmmech/schema/cmmmech.yaml
+  locator: Stage 4 full-inventory cohort audit (causal_graphs) at 4d878383c92b44876df3bf166d96637c7581a59e
+  accessed_at: '2026-10-22T02:58:06Z'
+  support: supports
+  summary: Full-inventory inspection of all records in the causal_graphs cohort verified
+    distinct material identities, source-backed criticality/mechanism claims, and
+    100% CURIE label consistency across 270 distinct ontology terms.
+limitations:
+- Organic-acid mineral dissolution and proteolytic gelatin hydrolysis edges use chelates
+  or acts_on under the current CausalPredicateEnum until solubilizes and hydrolyzes
+  are evaluated in Stage 6 (tracked in INFRA_TASKS.md as cmmmech-infra-0003).
+notes:
+- 4 of the 63 causal-graph records (falottaite, katsarosite, lindbergite, moolooite)
+  are also members of the 17 mineral records tracked under cmmmech-stage4-finding-0001
+  in 20261022T025801Z-stage4-mineral-cohort-review for missing structured IMA:YYYY-NNN
+  entries in identifiers.

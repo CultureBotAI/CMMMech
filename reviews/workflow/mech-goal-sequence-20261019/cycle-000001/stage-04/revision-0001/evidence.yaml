@@ -1,0 +1,48 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 1
+stage: 4
+revision: 1
+outcome: completed
+summary: Completed full-inventory Stage 4 scientific and structural review of all
+  616 eligible CMMMech records at frozen commit 4d878383c92b44876df3bf166d96637c7581a59e
+  across 6 disjoint material_kind cohort reviews (66 element, 365 mineral, 7 mineral_group,
+  36 commodity, 31 primary_resource, 111 secondary_resource), 1 cross-cohort causal_graphs/protein_examples
+  review (63 records), and 3 single-record reviews (wulfenite, phosphogypsum, palladium).
+  Preserved 3 open minor findings (cmmmech-stage4-finding-0001, cmmmech-stage4-finding-0002,
+  cmmmech-stage4-finding-0003) across 20 records for Stage 5 grouped remediation.
+source_revision: 4d878383c92b44876df3bf166d96637c7581a59e
+scope_frozen_at: '2026-10-22T02:42:43Z'
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-04/revision-0001/review_report.md
+  sha256: a278f62ae8301971259fc7451cf1f7682e91ad1ea2a03c17776c528914e95566
+  kind: review_report
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000001/stage-04/revision-0001/review_findings.yaml
+  sha256: 7967f12379a050de368944152b8149d8f31afb1fed883f43148f07a13ed71dcf
+  kind: review_findings
+findings:
+- finding_id: cmmmech-stage4-finding-0001
+  status: open
+  summary: 17 mineral records (alburnite, briartite, cavansite, compreignacite, falottaite,
+    greigite, katsarosite, lindbergite, metavivianite, moolooite, pentagonite, pertlikite,
+    regerite, schwertmannite, struvite-k, wheatleyite, zincobriartite) state their
+    approved IMA-CNMNC species numbers in description and cite ima_2026_09 in sources
+    but omit the structured IMA:YYYY-NNN entry from identifiers.
+- finding_id: cmmmech-stage4-finding-0002
+  status: open
+  summary: data/records/wulfenite.yaml (cmmmech:wulfenite) is the only mineral record
+    among all 365 mineral records in CMMMech that omits ima_2026_09 (The New IMA List
+    of Minerals, September 2026) from sources.
+- finding_id: cmmmech-stage4-finding-0003
+  status: open
+  summary: data/records/cobalt-rich-ferromanganese-crusts.yaml and data/records/rare-earth-rich-deep-sea-mud.yaml
+    serialize their top-level mechanisms list after curation_history and history_refs
+    instead of preceding the provenance footers.
+groups: []
+carry_forward_ids:
+- cmmmech-stage4-finding-0001
+- cmmmech-stage4-finding-0002
+- cmmmech-stage4-finding-0003
+infra_tasks: []

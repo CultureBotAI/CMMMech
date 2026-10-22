@@ -1,0 +1,173 @@
+schema_version: 1.0.0
+run_id: mech-goal-sequence-20261019
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+cycle: 1
+stage: 4
+revision: 1
+source_revision: 4d878383c92b44876df3bf166d96637c7581a59e
+frozen_inventory_count: 616
+structured_review_bundles:
+- review_id: 20261022T025800Z-stage4-element-cohort-review
+  kind: category
+  population_size: 66
+  reviewed_count: 66
+  verdict: pass_with_limitations
+  path: reviews/structured/20261022T025800Z-stage4-element-cohort-review/review.yaml
+- review_id: 20261022T025801Z-stage4-mineral-cohort-review
+  kind: category
+  population_size: 365
+  reviewed_count: 365
+  verdict: pass_with_limitations
+  path: reviews/structured/20261022T025801Z-stage4-mineral-cohort-review/review.yaml
+- review_id: 20261022T025802Z-stage4-mineral-group-cohort-review
+  kind: category
+  population_size: 7
+  reviewed_count: 7
+  verdict: pass_with_limitations
+  path: reviews/structured/20261022T025802Z-stage4-mineral-group-cohort-review/review.yaml
+- review_id: 20261022T025803Z-stage4-commodity-cohort-review
+  kind: category
+  population_size: 36
+  reviewed_count: 36
+  verdict: pass_with_limitations
+  path: reviews/structured/20261022T025803Z-stage4-commodity-cohort-review/review.yaml
+- review_id: 20261022T025804Z-stage4-primary-resource-cohort-review
+  kind: category
+  population_size: 31
+  reviewed_count: 31
+  verdict: pass_with_limitations
+  path: reviews/structured/20261022T025804Z-stage4-primary-resource-cohort-review/review.yaml
+- review_id: 20261022T025805Z-stage4-secondary-resource-cohort-review
+  kind: category
+  population_size: 111
+  reviewed_count: 111
+  verdict: pass_with_limitations
+  path: reviews/structured/20261022T025805Z-stage4-secondary-resource-cohort-review/review.yaml
+- review_id: 20261022T025806Z-stage4-causal-graphs-cohort-review
+  kind: category
+  population_size: 63
+  reviewed_count: 63
+  verdict: pass_with_limitations
+  path: reviews/structured/20261022T025806Z-stage4-causal-graphs-cohort-review/review.yaml
+- review_id: 20261022T025807Z-wulfenite-stage4-record-review
+  kind: record
+  population_size: 1
+  reviewed_count: 1
+  verdict: pass_with_limitations
+  path: reviews/structured/20261022T025807Z-wulfenite-stage4-record-review/review.yaml
+- review_id: 20261022T025808Z-phosphogypsum-stage4-record-review
+  kind: record
+  population_size: 1
+  reviewed_count: 1
+  verdict: pass
+  path: reviews/structured/20261022T025808Z-phosphogypsum-stage4-record-review/review.yaml
+- review_id: 20261022T025809Z-palladium-stage4-record-review
+  kind: record
+  population_size: 1
+  reviewed_count: 1
+  verdict: pass
+  path: reviews/structured/20261022T025809Z-palladium-stage4-record-review/review.yaml
+findings:
+- finding_id: cmmmech-stage4-finding-0001
+  issue_key: cmmmech.mineral.missing-ima-identifiers-on-cited-species
+  review_id: 20261022T025801Z-stage4-mineral-cohort-review
+  status: open
+  severity: minor
+  category: identity
+  target_ids:
+  - cmmmech:alburnite
+  - cmmmech:briartite
+  - cmmmech:cavansite
+  - cmmmech:compreignacite
+  - cmmmech:falottaite
+  - cmmmech:greigite
+  - cmmmech:katsarosite
+  - cmmmech:lindbergite
+  - cmmmech:metavivianite
+  - cmmmech:moolooite
+  - cmmmech:pentagonite
+  - cmmmech:pertlikite
+  - cmmmech:regerite
+  - cmmmech:schwertmannite
+  - cmmmech:struvite-k
+  - cmmmech:wheatleyite
+  - cmmmech:zincobriartite
+  expected_ima_identifiers:
+    cmmmech:alburnite:
+      id: IMA:2012-073
+      label: Alburnite
+    cmmmech:briartite:
+      id: IMA:1965-018
+      label: Briartite
+    cmmmech:cavansite:
+      id: IMA:1967-019
+      label: Cavansite
+    cmmmech:compreignacite:
+      id: IMA:1964-026
+      label: Compreignacite
+    cmmmech:falottaite:
+      id: IMA:2013-044
+      label: Falottaite
+    cmmmech:greigite:
+      id: IMA:1963-007
+      label: Greigite
+    cmmmech:katsarosite:
+      id: IMA:2020-014
+      label: Katsarosite
+    cmmmech:lindbergite:
+      id: IMA:2003-029
+      label: Lindbergite
+    cmmmech:metavivianite:
+      id: IMA:1973-049
+      label: Metavivianite
+    cmmmech:moolooite:
+      id: IMA:1980-082
+      label: Moolooite
+    cmmmech:pentagonite:
+      id: IMA:1971-039
+      label: Pentagonite
+    cmmmech:pertlikite:
+      id: IMA:2005-055
+      label: Pertlikite
+    cmmmech:regerite:
+      id: IMA:2023-028
+      label: Regerite
+    cmmmech:schwertmannite:
+      id: IMA:1990-006
+      label: Schwertmannite
+    cmmmech:struvite-k:
+      id: IMA:2003-048
+      label: Struvite-(K)
+    cmmmech:wheatleyite:
+      id: IMA:1984-040
+      label: Wheatleyite
+    cmmmech:zincobriartite:
+      id: IMA:2015-094
+      label: Zincobriartite
+  summary: 17 mineral records state approved IMA-CNMNC species numbers in description
+    and cite ima_2026_09 in sources but omit the structured IMA:YYYY-NNN entry from
+    identifiers.
+- finding_id: cmmmech-stage4-finding-0002
+  issue_key: cmmmech.wulfenite.missing-ima-master-list-source
+  review_id: 20261022T025807Z-wulfenite-stage4-record-review
+  status: open
+  severity: minor
+  category: provenance
+  target_ids:
+  - cmmmech:wulfenite
+  summary: data/records/wulfenite.yaml (cmmmech:wulfenite) is the only mineral record
+    among all 365 mineral records that omits ima_2026_09 (The New IMA List of Minerals,
+    September 2026) from sources.
+- finding_id: cmmmech-stage4-finding-0003
+  issue_key: cmmmech.records.trailing-mechanisms-after-history
+  review_id: 20261022T025804Z-stage4-primary-resource-cohort-review
+  status: open
+  severity: minor
+  category: consistency
+  target_ids:
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+  - cmmmech:rare-earth-rich-deep-sea-mud
+  summary: data/records/cobalt-rich-ferromanganese-crusts.yaml and data/records/rare-earth-rich-deep-sea-mud.yaml
+    serialize the top-level mechanisms block after curation_history and history_refs
+    instead of preceding provenance footers.

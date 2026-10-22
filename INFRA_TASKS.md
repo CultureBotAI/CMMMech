@@ -46,6 +46,9 @@ tasks:
   - task_id: cmmmech-infra-0004
     summary: Add a first-class CLI writer helper (scripts/curate_causal_graphs.py) that validates causal_graphs and protein_examples updates and atomically mints history/records sidecars
     status: note
+  - task_id: cmmmech-infra-0005
+    summary: Batch git cat-file object size and content checks in scripts/record_review.py assert_append_only() and source_provenance() via git cat-file --batch
+    status: note
 ```
 <!-- mech-infra-tasks:end -->
 
@@ -90,5 +93,16 @@ tasks:
 - **Priority**: low
 - **Dependencies**: None
 - **Status**: `note` (pending Stage 6 issue intake)
+
+### `cmmmech-infra-0005` — Batch `git cat-file` object checks in `scripts/record_review.py`
+
+- **Originating run / cycle / stage**: `mech-goal-sequence-20261019` / cycle `1` / stage `4` (`record_review`)
+- **Observation**: In `scripts/record_review.py`, `assert_append_only()` (`lines 710-733`) spawns two separate `git cat-file` subprocesses (`git cat-file -s` and `git cat-file blob`) for every file in `reviews/structured/` (`1,428` files across `714` historical bundles = `2,856` subprocesses), and `source_provenance()` (`lines 679-686`) spawns `git ls-tree` and `git cat-file blob` per `git_commit` input. As `reviews/structured/` grows beyond `720+` review bundles, `scripts/record_review.py check --require-reviews --base main` spends ~35 seconds in subprocess fork/exec overhead.
+- **Desired outcome**: Coordinate with upstream `CultureBotAI/culturebotai-claw` to batch object size and content verification through a single persistent `git cat-file --batch` pipe in `assert_append_only()` and `source_provenance()`, reducing `record_review.py check` runtime by >10x.
+- **Evidence paths**: `scripts/record_review.py`, `tests/test_record_review_contract.py`, `scripts/check_vendored_sync.py`
+- **Priority**: low
+- **Dependencies**: Upstream `CultureBotAI/culturebotai-claw` vendored-artifact governance (`scripts/check_vendored_sync.py`)
+- **Status**: `note` (pending Stage 6 issue intake)
+
 
 
