@@ -333,3 +333,30 @@ def test_causal_graph_and_protein_example_integrity_checks(record):
     )
 
 
+def test_optional_ima_symbol_and_polymorph_or_grade_slots(record):
+    record["ima_symbol"] = "Aka"
+    record["polymorph_or_grade"] = "beta-FeOOH"
+    assert validate_record(record) == []
+
+    record["ima_symbol"] = "   "
+    assert validate_record(record)
+    record["ima_symbol"] = "Aka"
+    record["polymorph_or_grade"] = ""
+    assert validate_record(record)
+
+
+@pytest.mark.parametrize(
+    "predicate",
+    ["solubilizes", "dissolves", "hydrolyzes", "degrades"],
+)
+def test_dissolution_and_solubilization_causal_predicates(record, predicate):
+    record["mechanisms"][0]["organisms"] = [
+        {"id": "NCBITaxon:442", "label": "Gluconobacter oxydans"}
+    ]
+    graph = _sample_causal_graph()
+    graph["edges"][0]["predicate"] = predicate
+    record["causal_graphs"] = [graph]
+    assert validate_record(record) == []
+
+
+
