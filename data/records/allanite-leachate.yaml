@@ -1,150 +1,317 @@
 id: cmmmech:allanite-leachate
 name: Allanite-derived rare-earth leachate
 material_kind: secondary_resource
-description: >-
-  A rare-earth-bearing processing liquor generated from allanite ore, represented
-  here by the chemically purified and reconstituted Halleck Creek, Wyoming feed
-  used by Lu et al. (2026). Acid leaching, impurity precipitation, REE hydroxide
-  precipitation and hydrochloric-acid redissolution precede the biological-reagent
-  experiment. This processing intermediate is distinct from geological ore,
-  beneficiated allanite concentrate, a pure allanite species and an isolated REE
-  product. Its classification reflects chemical processing, not extraction alone.
-  No criticality designation is inherited from its constituents.
+description: A rare-earth-bearing processing liquor generated from allanite ore, represented here by the chemically purified and reconstituted Halleck Creek, Wyoming feed used by Lu et al. (2026). Acid leaching, impurity precipitation, REE hydroxide precipitation and hydrochloric-acid redissolution precede the biological-reagent experiment. This processing intermediate is distinct from geological ore, beneficiated allanite concentrate, a pure allanite species and an isolated REE product. Its classification reflects chemical processing, not extraction alone. No criticality designation is inherited from its constituents.
 sources:
 - id: lu2026
-  title: >-
-    Lu J et al. (2026). Bio-based oxalic acid production in Issatchenkia orientalis
-    enables sustainable rare earth recovery. Nature Communications 17:2193.
-    DOI 10.1038/s41467-026-68957-5; original article, Figures 2-4 and Methods,
-    especially Precipitation test, pages 7-9.
+  title: Lu J et al. (2026). Bio-based oxalic acid production in Issatchenkia orientalis enables sustainable rare earth recovery. Nature Communications 17:2193. DOI 10.1038/s41467-026-68957-5; original article, Figures 2-4 and Methods, especially Precipitation test, pages 7-9.
   url: https://doi.org/10.1038/s41467-026-68957-5
   accessed_on: '2026-10-12'
 - id: lu2026_supplement
-  title: >-
-    Lu et al. (2026), Supplementary Information, 28-page original PDF;
-    Supplementary Methods 1-2, Table 1 (strain construction), Table 3 (single-Nd
-    XRD assignment), Figures S6-S8 (production and separate precipitation arms).
+  title: Lu et al. (2026), Supplementary Information, 28-page original PDF; Supplementary Methods 1-2, Table 1 (strain construction), Table 3 (single-Nd XRD assignment), Figures S6-S8 (production and separate precipitation arms).
   url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-68957-5/MediaObjects/41467_2026_68957_MOESM1_ESM.pdf
   accessed_on: '2026-10-12'
 - id: lu2026_data1
-  title: >-
-    Lu et al. (2026), Supplementary Data 1, original MOESM4 workbook;
-    Raw Data and Volume Additions plus Analysis of OAP-O, OAP-A and OAP-B sheets,
-    including initial volumes, sequential sampling, dilution corrections and
-    calculated removal rows 66-77.
+  title: Lu et al. (2026), Supplementary Data 1, original MOESM4 workbook; Raw Data and Volume Additions plus Analysis of OAP-O, OAP-A and OAP-B sheets, including initial volumes, sequential sampling, dilution corrections and calculated removal rows 66-77.
   url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-68957-5/MediaObjects/41467_2026_68957_MOESM4_ESM.xlsx
   accessed_on: '2026-10-12'
 - id: lu2026_source_data
-  title: >-
-    Lu et al. (2026), Source Data, original MOESM11 workbook;
-    Fig.2, Fig.3a and 3b, Fig.3c, Fig.3d and Fig. S1 to S8 sheets.
+  title: Lu et al. (2026), Source Data, original MOESM11 workbook; Fig.2, Fig.3a and 3b, Fig.3c, Fig.3d and Fig. S1 to S8 sheets.
   url: https://media.springernature.com/original/springer-static/esm/art%3A10.1038%2Fs41467-026-68957-5/MediaObjects/41467_2026_68957_MOESM11_ESM.xlsx
   accessed_on: '2026-10-12'
 - id: ncbi_kudriavzevii
-  title: >-
-    NCBI Taxonomy 4909, Pichia kudriavzevii, species; Issatchenkia orientalis is
-    listed as a heterotypic synonym. This species identifier does not identify
-    engineered strain JL04 or authenticate the experimental stock.
+  title: NCBI Taxonomy 4909, Pichia kudriavzevii, species; Issatchenkia orientalis is listed as a heterotypic synonym. This species identifier does not identify engineered strain JL04 or authenticate the experimental stock.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=4909&mode=Info
   accessed_on: '2026-10-12'
 mechanisms:
 - id: yeast_supernatant_oxalate_precipitation
   name: Yeast-produced oxalate precipitates REEs from prepared leachate
   process: biomineralization
+  description: Oxalate-containing culture supernatant from engineered JL04, derived from source-named Issatchenkia orientalis SD108, induced precipitation and decreased dissolved REE concentrations in a chemically prepared allanite-derived liquor. The REE stage used centrifuged supernatant, not intact yeast or direct microbial ore leaching. The reported over 99% total-REE removal near a source-nominal 2.7 g/L oxalic-acid dose is solution depletion under laboratory conditions, not an ore-to-product or isolated-pure-product yield. Industrial deployment and general superiority over commercial oxalic acid were not established.
+  context: 'Halleck Creek ore was density-concentrated, ground to a top size of 150 micrometres and HCl-leached at 75 degrees C, 30% solids by weight and a reported acid-to-solid ratio of 0.3:1 for 2 h. Hydrogen peroxide oxidation and staged NaOH additions removed Fe/silica and Al; REEs were precipitated at pH 8, redissolved using 12 M HCl, diluted to 310 mL and filtered to remove manganese hydroxide. Separately, JL04 glucose-fed SC-URA cultures were produced in 100 mL bioreactors at 30 degrees C, pH 4 and 10% dissolved-oxygen setting. Culture was centrifuged at 8000 x g for 30 min before use. Real-liquor tests compared source-labelled 22.00 and 42.70 g/L oxalate supernatants with 1 M commercial oxalic acid while mixing and maintaining pH 1.5 with 5 M NaOH. The workbook records sequential reagent additions and 1.5 mL withdrawals; initial liquid volumes were 95 mL in biological-reagent arms and 100 mL in the commercial arm. These dose points are not independent replicates: Methods state n=1
+    per real-leachate condition. Real-liquor precipitation duration and temperature are not separately specified; overnight room-temperature conditions belong to the synthetic single-salt assays and are not transferred. No matched parental-supernatant or uninoculated-medium real-liquor comparator is documented in the inspected main article and Data 1. Species-level taxonomy does not resolve engineered-strain identity or the effects of the broth matrix.'
   microbial: true
   organisms:
   - id: NCBITaxon:4909
     label: Pichia kudriavzevii
-  description: >-
-    Oxalate-containing culture supernatant from engineered JL04, derived from
-    source-named Issatchenkia orientalis SD108, induced precipitation and decreased
-    dissolved REE concentrations in a chemically prepared allanite-derived liquor.
-    The REE stage used centrifuged supernatant, not intact yeast or direct microbial
-    ore leaching. The reported over 99% total-REE removal near a source-nominal
-    2.7 g/L oxalic-acid dose is solution depletion under laboratory conditions,
-    not an ore-to-product or isolated-pure-product yield. Industrial deployment
-    and general superiority over commercial oxalic acid were not established.
-  context: >-
-    Halleck Creek ore was density-concentrated, ground to a top size of 150
-    micrometres and HCl-leached at 75 degrees C, 30% solids by weight and a reported
-    acid-to-solid ratio of 0.3:1 for 2 h. Hydrogen peroxide oxidation and staged
-    NaOH additions removed Fe/silica and Al; REEs were precipitated at pH 8,
-    redissolved using 12 M HCl, diluted to 310 mL and filtered to remove manganese
-    hydroxide. Separately, JL04 glucose-fed SC-URA cultures were produced in
-    100 mL bioreactors at 30 degrees C, pH 4 and 10% dissolved-oxygen setting.
-    Culture was centrifuged at 8000 x g for 30 min before use. Real-liquor tests
-    compared source-labelled 22.00 and 42.70 g/L oxalate supernatants with 1 M
-    commercial oxalic acid while mixing and maintaining pH 1.5 with 5 M NaOH.
-    The workbook records sequential reagent additions and 1.5 mL withdrawals;
-    initial liquid volumes were 95 mL in biological-reagent arms and 100 mL in
-    the commercial arm. These dose points are not independent replicates:
-    Methods state n=1 per real-leachate condition. Real-liquor precipitation
-    duration and temperature are not separately specified; overnight room-temperature
-    conditions belong to the synthetic single-salt assays and are not transferred.
-    No matched parental-supernatant or uninoculated-medium real-liquor comparator
-    is documented in the inspected main article and Data 1. Species-level taxonomy
-    does not resolve engineered-strain identity or the effects of the broth matrix.
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A1V2LT98
+    entry_name: A0A1V2LT98_PICKU
+    protein_name: Pyruvate carboxylase
+    gene_symbol: PYC
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:4909
+      label: Pichia kudriavzevii
+    reference_proteome_id: UP000249646
+    ec_numbers:
+    - EC:6.4.1.1
+    interpro_ids:
+    - InterPro:IPR000891
+    - InterPro:IPR005930
+    - InterPro:IPR011761
+    pfam_ids:
+    - Pfam:PF00682
+    - Pfam:PF02436
+    - Pfam:PF02786
+    functional_role: Endogenous pyruvate carboxylase (EC 6.4.1.1; locus B5S52_g3644) overexpressed at two integrated copies in Issatchenkia orientalis (Pichia kudriavzevii) strain OA_Pcoah_PYC and retained in strain JL04 to convert pyruvate into oxaloacetate, the immediate substrate cleaved to oxalic acid.
+    annotation_note: Grounded to reference-proteome entry UniProtKB:A0A1V2LT98 (UP000249646) for Pichia kudriavzevii (heterotypic synonym Issatchenkia orientalis; NCBITaxon:4909). Strain JL04 also expresses three codon-optimized copies of heterologous Penicillium chrysogenum oxaloacetate hydrolase Pcoah (omitted as a separate ProteinExample because UniProtKB TrEMBL auto-annotates Penicillium rubens Pc22g24830 / UniProtKB:B6HR98 as Isocitrate lyase EC 4.1.3.1 via PROSITE-ProRule PRU10119 on PF13714) and one copy of Hevea brasiliensis oxalate transporter HbOT2.
+    evidence:
+    - source_ref: lu2026
+      supports: support
+      explanation: Lu et al. (2026), Section 'Metabolic engineering of I. orientalis for oxalic acid production' and Fig. 2, integrated two copies of endogenous pyruvate carboxylase (PYC) in strain OA_Pcoah_PYC (retained in JL01-JL04) to increase conversion of pyruvate to oxaloacetate and raise oxalic acid titer.
+    - source_ref: lu2026_supplement
+      supports: support
+      explanation: Supplementary Table 1 and Supplementary Fig. 1 document integration of two copies of endogenous I. orientalis PYC into the landing-pad chromosome of engineered strain JL04.
+  - uniprot_accession: UniProtKB:P00549
+    entry_name: KPYK1_YEAST
+    protein_name: Pyruvate kinase 1
+    gene_symbol: CDC19
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:559292
+      label: Saccharomyces cerevisiae S288c
+    reference_proteome_id: UP000002311
+    ec_numbers:
+    - EC:2.7.1.40
+    interpro_ids:
+    - InterPro:IPR001697
+    - InterPro:IPR015793
+    - InterPro:IPR015794
+    pfam_ids:
+    - Pfam:PF00224
+    - Pfam:PF02887
+    functional_role: Heterologous Saccharomyces cerevisiae pyruvate kinase 1 (PYK1 / CDC19, EC 2.7.1.40) integrated into Issatchenkia orientalis (Pichia kudriavzevii) strain JL02 to form strain JL03 (and retained in JL04), catalyzing conversion of phosphoenolpyruvate to pyruvate to increase carbon flux toward oxaloacetate and oxalic acid.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UniProtKB:P00549 (KPYK1_YEAST, UP000002311) from donor organism Saccharomyces cerevisiae S288c (NCBITaxon:559292), heterologously expressed in the engineered Pichia kudriavzevii (Issatchenkia orientalis, NCBITaxon:4909) host strain JL04.
+    evidence:
+    - source_ref: lu2026
+      supports: support
+      explanation: Lu et al. (2026) evaluated PYK1 from S. cerevisiae versus endogenous JL09_g4285 in strain JL02; S. cerevisiae PYK1 achieved 5.95 g/L oxalic acid in shake flasks and 19.27 g/L in fed-batch fermentation (strain JL03, parent of JL04).
+    - source_ref: lu2026_supplement
+      supports: support
+      explanation: Supplementary Table 1 and Supplementary Fig. 5 document integration of heterologous S. cerevisiae PYK1 in strains JL03 and JL04.
+  - uniprot_accession: UniProtKB:A8W1U0
+    entry_name: A8W1U0_PICKU
+    protein_name: Glycerol-3-phosphate dehydrogenase [NAD(+)]
+    gene_symbol: GPD
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:4909
+      label: Pichia kudriavzevii
+    ec_numbers:
+    - EC:1.1.1.8
+    interpro_ids:
+    - InterPro:IPR006109
+    - InterPro:IPR011128
+    pfam_ids:
+    - Pfam:PF01210
+    - Pfam:PF07479
+    functional_role: Endogenous NAD-dependent glycerol-3-phosphate dehydrogenase (EC 1.1.1.8) deleted in Issatchenkia orientalis (Pichia kudriavzevii) strain JL02 (and retained in JL04) to abolish glycerol byproduct accumulation (~12.0 g/L in parental JL01) during fed-batch oxalic-acid fermentation.
+    annotation_note: Grounded to verified Pichia kudriavzevii (Issatchenkia orientalis, NCBITaxon:4909) entry UniProtKB:A8W1U0 (A8W1U0_PICKU, gene symbol GPD). Strain JL04 also carries a deletion of endogenous locus g4567 (homolog of S. cerevisiae OCA5 inositol pyrophosphatase).
+    evidence:
+    - source_ref: lu2026
+      supports: support
+      explanation: Lu et al. (2026), Section 'Metabolic engineering of I. orientalis for oxalic acid production' and Fig. 2c, knocked out the GPD gene in strain JL01 to generate strain JL02 (ancestor of JL04), eliminating detectable glycerol byproduct accumulation while maintaining 14.72 g/L oxalic acid.
+    - source_ref: lu2026_supplement
+      supports: support
+      explanation: Supplementary Table 1 and Supplementary Fig. 4 document the Δgpd knockout genotype in engineered strains JL02, JL03, and JL04.
   evidence:
   - source_ref: lu2026
     supports: support
-    explanation: >-
-      Figure 3b, Results and Precipitation test support dose-associated REE
-      solution depletion by yeast-derived and commercial oxalate. Methods report
-      centrifugation/filtration of precipitates and ICP-OES analysis, but the
-      headline recovery is calculated from residual solution concentrations.
-      The commercial comparator supports similar observed removal in this assay;
-      n=1 does not establish statistical equivalence or replicated performance.
+    explanation: Figure 3b, Results and Precipitation test support dose-associated REE solution depletion by yeast-derived and commercial oxalate. Methods report centrifugation/filtration of precipitates and ICP-OES analysis, but the headline recovery is calculated from residual solution concentrations. The commercial comparator supports similar observed removal in this assay; n=1 does not establish statistical equivalence or replicated performance.
   - source_ref: lu2026_data1
     supports: partial
-    explanation: >-
-      Analysis sheets correct concentrations for cumulative reagent volume and
-      sampling. Row 74 gives over 99% total-REE depletion in all three arms near
-      their nominal 2.7 g/L doses. Dose formulas use a fixed 100 mL denominator
-      even for the 95 mL biological arms; these values are not asserted as actual
-      final reactor concentrations. TREE uses the source's 16-element sum, with
-      Sc included among its light REEs. This is not a closed process mass balance.
+    explanation: Analysis sheets correct concentrations for cumulative reagent volume and sampling. Row 74 gives over 99% total-REE depletion in all three arms near their nominal 2.7 g/L doses. Dose formulas use a fixed 100 mL denominator even for the 95 mL biological arms; these values are not asserted as actual final reactor concentrations. TREE uses the source's 16-element sum, with Sc included among its light REEs. This is not a closed process mass balance.
   - source_ref: lu2026_data1
     supports: partial
-    explanation: >-
-      Raw feed rows include Th and U; their high-dose zero cells generate 100%
-      apparent removal without stated per-cell detection or censoring limits.
-      This raises possible co-retention, not proof of absence or product purity.
-      Negative apparent removals, especially for Mg and the first biological-A
-      total-REE point, remain source calculation limitations and are not clamped
-      to zero. OAP-A row 74 reports Mn removal about 6.89%, contrary to the text's
-      blanket less-than-6% statement for Ca, Mg, Mn and Zn. Missing cells are not
-      interpreted as zeros. No universal high-purity mixed-REE product claim is made.
+    explanation: Raw feed rows include Th and U; their high-dose zero cells generate 100% apparent removal without stated per-cell detection or censoring limits. This raises possible co-retention, not proof of absence or product purity. Negative apparent removals, especially for Mg and the first biological-A total-REE point, remain source calculation limitations and are not clamped to zero. OAP-A row 74 reports Mn removal about 6.89%, contrary to the text's blanket less-than-6% statement for Ca, Mg, Mn and Zn. Missing cells are not interpreted as zeros. No universal high-purity mixed-REE product claim is made.
   - source_ref: lu2026_supplement
     supports: partial
-    explanation: >-
-      Table 1 and strain-construction methods identify engineered JL04. Figure S8
-      supplies the separate 22 g/L supernatant real-liquor arm. Table 3 and main
-      Figure 3c identify Nd oxalate decahydrate in a synthetic single-Nd experiment;
-      this does not identify the mixed real-liquor precipitate or establish its
-      phase purity. Single-salt Nd/La/Dy assays are separate from the processed ore.
+    explanation: Table 1 and strain-construction methods identify engineered JL04. Figure S8 supplies the separate 22 g/L supernatant real-liquor arm. Table 3 and main Figure 3c identify Nd oxalate decahydrate in a synthetic single-Nd experiment; this does not identify the mixed real-liquor precipitate or establish its phase purity. Single-salt Nd/La/Dy assays are separate from the processed ore.
   - source_ref: lu2026_source_data
     supports: partial
-    explanation: >-
-      Fig.3a and 3b rows 17-28 and 34-45 reproduce the commercial and biological-A
-      real-liquor curves; Fig. S1 to S8 rows 68-79 contain biological B. Fig.2
-      F11-F12 contain the two 10-day production titers, 38.78 and 40.27 g/L.
-      The 42.70 g/L precipitation reagent is not one of those two values; its
-      batch/time relationship to the displayed production series is not fully
-      resolved and it is not substituted for the 39.53 g/L reported mean.
+    explanation: Fig.3a and 3b rows 17-28 and 34-45 reproduce the commercial and biological-A real-liquor curves; Fig. S1 to S8 rows 68-79 contain biological B. Fig.2 F11-F12 contain the two 10-day production titers, 38.78 and 40.27 g/L. The 42.70 g/L precipitation reagent is not one of those two values; its batch/time relationship to the displayed production series is not fully resolved and it is not substituted for the 39.53 g/L reported mean.
   - source_ref: lu2026
     supports: context_only
-    explanation: >-
-      Figure 4 and the TEA/LCA methods describe modeled large-scale oxalic-acid
-      production, including assumed co-location and electricity credits. These
-      projections are not demonstrated industrial operation, a validated life-cycle
-      result for this particular leachate train or evidence of field deployment.
+    explanation: Figure 4 and the TEA/LCA methods describe modeled large-scale oxalic-acid production, including assumed co-location and electricity credits. These projections are not demonstrated industrial operation, a validated life-cycle result for this particular leachate train or evidence of field deployment.
+causal_graphs:
+- id: engineered_kudriavzevii_jl04_oxalate_ree_precipitation_graph
+  name: Engineered Issatchenkia orientalis (Pichia kudriavzevii) JL04 bio-oxalic acid biosynthesis and REE precipitation from allanite leachate
+  description: Causal pathway linking metabolic engineering of Issatchenkia orientalis (Pichia kudriavzevii) SD108 strain JL04 (heterologous S. cerevisiae PYK1 overexpression, endogenous GPD deletion, endogenous PYC overexpression, heterologous P. chrysogenum Pcoah oxaloacetate hydrolase, and H. brasiliensis HbOT2 transporter) to extracellular oxalic-acid accumulation in culture supernatant and selective rare-earth oxalate precipitation from chemically prepared Halleck Creek allanite leachate.
+  scope: RECORD_SPECIFIC_MECHANISM
+  mechanism_ref: yeast_supernatant_oxalate_precipitation
+  nodes:
+  - id: pyk1_pyruvate_kinase
+    label: Heterologous S. cerevisiae pyruvate kinase PYK1 (CDC19)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: CDC19
+    description: Heterologous Saccharomyces cerevisiae pyruvate kinase 1 overexpressed in I. orientalis JL03/JL04 to increase glycolytic flux from phosphoenolpyruvate to pyruvate.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:P00549
+      entry_name: KPYK1_YEAST
+      protein_name: Pyruvate kinase 1
+      gene_symbol: CDC19
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:559292
+        label: Saccharomyces cerevisiae S288c
+      reference_proteome_id: UP000002311
+      ec_numbers:
+      - EC:2.7.1.40
+      interpro_ids:
+      - InterPro:IPR001697
+      - InterPro:IPR015793
+      - InterPro:IPR015794
+      pfam_ids:
+      - Pfam:PF00224
+      - Pfam:PF02887
+      functional_role: Heterologous Saccharomyces cerevisiae pyruvate kinase 1 (PYK1 / CDC19, EC 2.7.1.40) integrated into Issatchenkia orientalis (Pichia kudriavzevii) strain JL02 to form strain JL03 (and retained in JL04), catalyzing conversion of phosphoenolpyruvate to pyruvate to increase carbon flux toward oxaloacetate and oxalic acid.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UniProtKB:P00549 (KPYK1_YEAST, UP000002311) from donor organism Saccharomyces cerevisiae S288c (NCBITaxon:559292), heterologously expressed in the engineered Pichia kudriavzevii (Issatchenkia orientalis, NCBITaxon:4909) host strain JL04.
+      evidence:
+      - source_ref: lu2026
+        supports: support
+        explanation: Lu et al. (2026) evaluated PYK1 from S. cerevisiae versus endogenous JL09_g4285 in strain JL02; S. cerevisiae PYK1 achieved 5.95 g/L oxalic acid in shake flasks and 19.27 g/L in fed-batch fermentation (strain JL03, parent of JL04).
+      - source_ref: lu2026_supplement
+        supports: support
+        explanation: Supplementary Table 1 and Supplementary Fig. 5 document integration of heterologous S. cerevisiae PYK1 in strains JL03 and JL04.
+  - id: gpd_glycerol_phosphate_dehydrogenase_knockout
+    label: Endogenous glycerol-3-phosphate dehydrogenase GPD deletion (Δgpd)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: GPD
+    description: Endogenous Pichia kudriavzevii glycerol-3-phosphate dehydrogenase gene deleted in JL02/JL04 to eliminate competing glycerol byproduct synthesis.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A8W1U0
+      entry_name: A8W1U0_PICKU
+      protein_name: Glycerol-3-phosphate dehydrogenase [NAD(+)]
+      gene_symbol: GPD
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:4909
+        label: Pichia kudriavzevii
+      ec_numbers:
+      - EC:1.1.1.8
+      interpro_ids:
+      - InterPro:IPR006109
+      - InterPro:IPR011128
+      pfam_ids:
+      - Pfam:PF01210
+      - Pfam:PF07479
+      functional_role: Endogenous NAD-dependent glycerol-3-phosphate dehydrogenase (EC 1.1.1.8) deleted in Issatchenkia orientalis (Pichia kudriavzevii) strain JL02 (and retained in JL04) to abolish glycerol byproduct accumulation (~12.0 g/L in parental JL01) during fed-batch oxalic-acid fermentation.
+      annotation_note: Grounded to verified Pichia kudriavzevii (Issatchenkia orientalis, NCBITaxon:4909) entry UniProtKB:A8W1U0 (A8W1U0_PICKU, gene symbol GPD). Strain JL04 also carries a deletion of endogenous locus g4567 (homolog of S. cerevisiae OCA5 inositol pyrophosphatase).
+      evidence:
+      - source_ref: lu2026
+        supports: support
+        explanation: Lu et al. (2026), Section 'Metabolic engineering of I. orientalis for oxalic acid production' and Fig. 2c, knocked out the GPD gene in strain JL01 to generate strain JL02 (ancestor of JL04), eliminating detectable glycerol byproduct accumulation while maintaining 14.72 g/L oxalic acid.
+      - source_ref: lu2026_supplement
+        supports: support
+        explanation: Supplementary Table 1 and Supplementary Fig. 4 document the Δgpd knockout genotype in engineered strains JL02, JL03, and JL04.
+  - id: pyc_pyruvate_carboxylase
+    label: Endogenous pyruvate carboxylase PYC (2x copy integration, with Pcoah and HbOT2)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: PYC
+    description: Endogenous Pichia kudriavzevii pyruvate carboxylase overexpressed at two copies alongside heterologous P. chrysogenum Pcoah (3x) and H. brasiliensis HbOT2 (1x) and Δg4567 (OCA5 homolog) to convert pyruvate via oxaloacetate into secreted oxalic acid.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A1V2LT98
+      entry_name: A0A1V2LT98_PICKU
+      protein_name: Pyruvate carboxylase
+      gene_symbol: PYC
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:4909
+        label: Pichia kudriavzevii
+      reference_proteome_id: UP000249646
+      ec_numbers:
+      - EC:6.4.1.1
+      interpro_ids:
+      - InterPro:IPR000891
+      - InterPro:IPR005930
+      - InterPro:IPR011761
+      pfam_ids:
+      - Pfam:PF00682
+      - Pfam:PF02436
+      - Pfam:PF02786
+      functional_role: Endogenous pyruvate carboxylase (EC 6.4.1.1; locus B5S52_g3644) overexpressed at two integrated copies in Issatchenkia orientalis (Pichia kudriavzevii) strain OA_Pcoah_PYC and retained in strain JL04 to convert pyruvate into oxaloacetate, the immediate substrate cleaved to oxalic acid.
+      annotation_note: Grounded to reference-proteome entry UniProtKB:A0A1V2LT98 (UP000249646) for Pichia kudriavzevii (heterotypic synonym Issatchenkia orientalis; NCBITaxon:4909). Strain JL04 also expresses three codon-optimized copies of heterologous Penicillium chrysogenum oxaloacetate hydrolase Pcoah (omitted as a separate ProteinExample because UniProtKB TrEMBL auto-annotates Penicillium rubens Pc22g24830 / UniProtKB:B6HR98 as Isocitrate lyase EC 4.1.3.1 via PROSITE-ProRule PRU10119 on PF13714) and one copy of Hevea brasiliensis oxalate transporter HbOT2.
+      evidence:
+      - source_ref: lu2026
+        supports: support
+        explanation: Lu et al. (2026), Section 'Metabolic engineering of I. orientalis for oxalic acid production' and Fig. 2, integrated two copies of endogenous pyruvate carboxylase (PYC) in strain OA_Pcoah_PYC (retained in JL01-JL04) to increase conversion of pyruvate to oxaloacetate and raise oxalic acid titer.
+      - source_ref: lu2026_supplement
+        supports: support
+        explanation: Supplementary Table 1 and Supplementary Fig. 1 document integration of two copies of endogenous I. orientalis PYC into the landing-pad chromosome of engineered strain JL04.
+  - id: jl04_secreted_oxalic_acid_supernatant
+    label: Centrifuged JL04 fermentation supernatant (22.00 and 42.70 g/L bio-oxalic acid)
+    node_type: CHEMICAL_ENTITY
+    description: Cell-free bioreactor fermentation supernatant from glucose-fed engineered I. orientalis JL04 containing 22.00 or 42.70 g/L oxalic acid.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: prepared_allanite_pregnant_leach_liquor
+    label: Chemically purified and HCl-reconstituted Halleck Creek allanite pregnant leach solution
+    node_type: MATERIAL_OR_PHASE
+    description: Pregnant leach liquor prepared by HCl leaching of Halleck Creek allanite concentrate, H2O2/NaOH Fe-Al-Si removal, pH 8 REE hydroxide precipitation, and 12 M HCl redissolution.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: precipitated_mixed_ree_oxalates
+    label: Precipitated rare-earth oxalate solids (>99% TREE solution depletion at >=2.70 g/L oxalic acid)
+    node_type: MATERIAL_OR_PHASE
+    description: Mixed LREE and HREE oxalate precipitates removed from the prepared allanite leachate at pH 1.5 upon dosing with JL04 bio-oxalic acid supernatant.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: pyk1_pyruvate_kinase
+    target: pyc_pyruvate_carboxylase
+    predicate: supplies_substrate_for
+    relationship: conversion of phosphoenolpyruvate to pyruvate substrate for PYC
+    description: Overexpressed S. cerevisiae PYK1 increases pyruvate supply for conversion to oxaloacetate by endogenous PYC.
+    evidence:
+    - source_ref: lu2026
+      supports: support
+      explanation: Expression of S. cerevisiae PYK1 in strain JL02 increased fed-batch oxalic acid titer from 14.72 g/L to 19.27 g/L in strain JL03.
+  - source: gpd_glycerol_phosphate_dehydrogenase_knockout
+    target: pyc_pyruvate_carboxylase
+    predicate: positively_regulates
+    relationship: deletion of competing glycerol branch redirects glycolytic carbon flux
+    description: Deletion of endogenous GPD eliminates ~12 g/L glycerol byproduct accumulation and preserves glycolytic carbon flux toward pyruvate and oxaloacetate.
+    evidence:
+    - source_ref: lu2026
+      supports: support
+      explanation: Knockout of GPD in strain JL01 eliminated detectable glycerol accumulation in strain JL02 while maintaining oxalic acid production.
+  - source: pyc_pyruvate_carboxylase
+    target: jl04_secreted_oxalic_acid_supernatant
+    predicate: produces
+    relationship: anaplerotic oxaloacetate synthesis coupled to Pcoah cleavage and HbOT2 export
+    description: PYC generates oxaloacetate that is cleaved by heterologous Pcoah into oxalic acid and exported via HbOT2 into the fermentation broth.
+    evidence:
+    - source_ref: lu2026
+      supports: support
+      explanation: Combining 3x Pcoah, 2x PYC, 1x HbOT2, Δgpd, S. cerevisiae PYK1, and Δg4567 in strain JL04 yielded 26.98-39.53 g/L oxalic acid in fed-batch bioreactors.
+  - source: jl04_secreted_oxalic_acid_supernatant
+    target: prepared_allanite_pregnant_leach_liquor
+    predicate: acts_on
+    relationship: oxalate complexation and selective REE(III) precipitation at pH 1.5
+    description: Centrifuged JL04 culture supernatant supplies oxalate anions to the HCl-reconstituted allanite leach liquor at pH 1.5.
+    evidence:
+    - source_ref: lu2026
+      supports: support
+      explanation: Figure 3b and Methods report dosing 22.00 and 42.70 g/L JL04 bio-oxalic acid supernatants into prepared allanite leachate maintained at pH 1.5.
+  - source: prepared_allanite_pregnant_leach_liquor
+    target: precipitated_mixed_ree_oxalates
+    predicate: transforms_into
+    relationship: precipitation of dissolved LREEs and HREEs from pregnant leach liquor
+    description: Dissolved rare-earth cations precipitate as REE oxalates with >99% TREE solution depletion above nominal 2.70 g/L oxalic acid.
+    evidence:
+    - source_ref: lu2026_data1
+      supports: partial
+      explanation: Supplementary Data 1 row 74 reports >99% total-REE solution depletion at nominal 2.7 g/L oxalic-acid dose in n=1 sequential dosing runs, with noted dilution denominator and impurity censoring caveats.
 curation_history:
 - timestamp: '2026-10-12T10:00:26Z'
   curator: codex (GPT-6)
   action: CREATE
-  summary: >-
-    Added the chemically prepared allanite-derived liquor and engineered-yeast
-    supernatant precipitation evidence, preserving source workbook discrepancies,
-    impurity and mass-balance limits, separate assay arms and laboratory scope.
+  summary: Added the chemically prepared allanite-derived liquor and engineered-yeast supernatant precipitation evidence, preserving source workbook discrepancies, impurity and mass-balance limits, separate assay arms and laboratory scope.
+- timestamp: '2026-10-22T10:40:28Z'
+  curator: claude
+  action: edit
+  summary: Added verified UniProtKB protein examples (PYC UniProtKB:A0A1V2LT98, PYK1/CDC19 UniProtKB:P00549, GPD UniProtKB:A8W1U0) and engineered JL04 causal graph to allanite-leachate.yaml.
 history_refs:
 - history/records/allanite-leachate/2026-10-12T100026Z-codex-3c88ef.yaml
+- history/records/allanite-leachate/2026-10-22T104028Z-claude-d3cbaa.yaml

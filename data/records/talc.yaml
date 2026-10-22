@@ -1,21 +1,14 @@
 id: cmmmech:talc
 name: Talc
 material_kind: mineral
-description: Talc is the Mg3Si4O10(OH)2 mineral species, grandfathered in the September 2026 IMA list.
-  This species is distinct from elemental magnesium or silicon and from generic magnesium-bearing rocks
-  or commercial mineral mixtures. No constituent criticality is inherited. This record and the companion
-  forsterite record curate different substrates in the same Cai 2013 experiment, not independent studies.
+description: Talc is the Mg3Si4O10(OH)2 mineral species, grandfathered in the September 2026 IMA list. This species is distinct from elemental magnesium or silicon and from generic magnesium-bearing rocks or commercial mineral mixtures. No constituent criticality is inherited. This record and the companion forsterite record curate different substrates in the same Cai 2013 experiment, not independent studies.
 sources:
 - id: ima_2026_09
-  title: IMA-CNMNC. The New IMA List of Minerals, September 2026; PDF page 211, Talc row, and pages
-    1-2 definitions and terms.
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026; PDF page 211, Talc row, and pages 1-2 definitions and terms.
   url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
   accessed_on: '2026-10-11'
 - id: cai_2013
-  title: Cai, Xiao, Huang, Li and Zhou (2013). Solubilization of Magnesium-Bearing Silicate Minerals
-    and the Subsequent Formation of Glushinskite by Aspergillus niger. Geomicrobiology Journal 30(4):302-312.
-    DOI 10.1080/01490451.2012.688924; methods pp303-304, Tables 1-2, Results pp304-305 and Discussion
-    pp307-308.
+  title: Cai, Xiao, Huang, Li and Zhou (2013). Solubilization of Magnesium-Bearing Silicate Minerals and the Subsequent Formation of Glushinskite by Aspergillus niger. Geomicrobiology Journal 30(4):302-312. DOI 10.1080/01490451.2012.688924; methods pp303-304, Tables 1-2, Results pp304-305 and Discussion pp307-308.
   url: https://doi.org/10.1080/01490451.2012.688924
   accessed_on: '2026-10-11'
 - id: ncbi_niger
@@ -26,40 +19,126 @@ mechanisms:
 - id: fungal_talc_dissolution_limit
   name: Limited magnesium release from talc during fungal culture
   process: bioleaching
-  description: Aspergillus niger grew with talc as the supplied magnesium source, but the final dissolved
-    magnesium concentration was much smaller than in the companion forsterite culture. No secondary
-    mineral was recovered from the talc treatment after ten days. This is a substrate-dependent laboratory
-    observation, not evidence that talc is universally resistant to microbial transformation.
-  context: The reported Aspergillus niger strain has no collection accession in the inspected paper;
-    NCBI:5061 resolves only the species. Mineral powders were washed and sonicated, exposed to 0.1 mM
-    HCl for one hour, rinsed and air-dried; feed XRD purity is reported but its patterns are not shown.
-    In the selected Mg-source comparison, minus-200-mesh particles supplied 0.01 mol Mg to 95 mL Czapek-based
-    medium plus 5 mL inoculum at 10^7 spores/mL. Initial pH was adjusted to 8.15; growing cultures were
-    shaken at 150 rpm and 30 degrees C for ten days. The separate particle-size and filtered-MgSO4-supernatant
-    experiments are not pooled with this comparison.
+  description: Aspergillus niger grew with talc as the supplied magnesium source, but the final dissolved magnesium concentration was much smaller than in the companion forsterite culture. No secondary mineral was recovered from the talc treatment after ten days. This is a substrate-dependent laboratory observation, not evidence that talc is universally resistant to microbial transformation.
+  context: The reported Aspergillus niger strain has no collection accession in the inspected paper; NCBI:5061 resolves only the species. Mineral powders were washed and sonicated, exposed to 0.1 mM HCl for one hour, rinsed and air-dried; feed XRD purity is reported but its patterns are not shown. In the selected Mg-source comparison, minus-200-mesh particles supplied 0.01 mol Mg to 95 mL Czapek-based medium plus 5 mL inoculum at 10^7 spores/mL. Initial pH was adjusted to 8.15; growing cultures were shaken at 150 rpm and 30 degrees C for ten days. The separate particle-size and filtered-MgSO4-supernatant experiments are not pooled with this comparison.
   microbial: true
   organisms:
   - id: NCBITaxon:5061
     label: Aspergillus niger
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A254TZW7
+    entry_name: CEXA_ASPNG
+    protein_name: Citrate exporter A
+    gene_symbol: cexA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:5061
+      label: Aspergillus niger
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal mobilization.
+    annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061).
+    evidence:
+    - source_ref: cai_2013
+      supports: partial
+      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during culture on talc as sole Mg source in Cai et al. (2013); Table 1 measured total oxalate species (0.039 mol/L) and pH 3.16 without assaying cexA expression or mutants.
   evidence:
   - source_ref: cai_2013
     supports: support
-    explanation: Table 1 reports final talc-culture Mg of 3.121 x 10^-4 mol/L by ICP-AES and total oxalate
-      species of 0.039 mol/L by HPLC, compared with forsterite-culture Mg of 1.854 x 10^-2 mol/L. Results
-      pp304-305 report acidification followed by pH increase and no secondary precipitate after ten
-      days in the talc arm.
+    explanation: Table 1 reports final talc-culture Mg of 3.121 x 10^-4 mol/L by ICP-AES and total oxalate species of 0.039 mol/L by HPLC, compared with forsterite-culture Mg of 1.854 x 10^-2 mol/L. Results pp304-305 report acidification followed by pH increase and no secondary precipitate after ten days in the talc arm.
   - source_ref: cai_2013
     supports: partial
-    explanation: Table 2 tests abiotic oxalic-acid dissolution of forsterite, not talc. A matched uninoculated
-      talc trajectory is not reported, so the talc observation does not quantify a microbial enhancement
-      over abiotic dissolution. Replicate counts and uncertainties for Table 1 are unspecified. The
-      authors explain the precipitation null by an apparent concentration product, but this is not a
-      measured recovery yield or general thermodynamic validation. The experiment does not establish
-      purified magnesium recovery or industrial deployment.
+    explanation: Table 2 tests abiotic oxalic-acid dissolution of forsterite, not talc. A matched uninoculated talc trajectory is not reported, so the talc observation does not quantify a microbial enhancement over abiotic dissolution. Replicate counts and uncertainties for Table 1 are unspecified. The authors explain the precipitation null by an apparent concentration product, but this is not a measured recovery yield or general thermodynamic validation. The experiment does not establish purified magnesium recovery or industrial deployment.
+causal_graphs:
+- id: aspergillus_cexa_talc_dissolution_graph
+  name: Aspergillus niger organic-acid excretion and limited magnesium release from talc
+  description: Representative causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA (cexA) and extracellular organic-acid secretion to reaction with Minus-200-mesh talc powder (Mg3Si4O10(OH)2) supplied at 0.01 mol Mg per 100 mL culture and formation/release of Limited dissolved Mg in culture filtrate (3.121 x 10^-4 mol/L Mg by ICP-AES; no secondary mineral recovered).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: fungal_talc_dissolution_limit
+  nodes:
+  - id: cexa_citrate_exporter
+    label: CexA plasma-membrane citrate exporter (cexA)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cexA
+    description: Major facilitator superfamily transporter exporting citric acid across the Aspergillus niger plasma membrane.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A254TZW7
+      entry_name: CEXA_ASPNG
+      protein_name: Citrate exporter A
+      gene_symbol: cexA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:5061
+        label: Aspergillus niger
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal mobilization.
+      annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061).
+      evidence:
+      - source_ref: cai_2013
+        supports: partial
+        explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during culture on talc as sole Mg source in Cai et al. (2013); Table 1 measured total oxalate species (0.039 mol/L) and pH 3.16 without assaying cexA expression or mutants.
+  - id: secreted_organic_acids
+    label: Secreted fungal organic acids and oxalate (0.039 mol/L total oxalate species by HPLC, final pH 3.16)
+    node_type: CHEMICAL_ENTITY
+    description: Extracellular organic acids secreted by Aspergillus niger in Czapek-based medium with talc, reaching 0.039 mol/L total oxalate species by HPLC and final pH 3.16 after 10 days.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: starting_substrate
+    label: Minus-200-mesh talc powder (Mg3Si4O10(OH)2) supplied at 0.01 mol Mg per 100 mL culture
+    node_type: MATERIAL_OR_PHASE
+    description: Washed and acid-rinsed minus-200-mesh talc (Mg3Si4O10(OH)2) powder supplied as the magnesium source (0.01 mol Mg in 95 mL Czapek-based medium plus 5 mL spore inoculum).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: transformed_product
+    label: Limited dissolved Mg in culture filtrate (3.121 x 10^-4 mol/L Mg by ICP-AES; no secondary mineral recovered)
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved magnesium measured at 3.121 x 10^-4 mol/L by ICP-AES after 10 days at 30 degrees C and 150 rpm, with no secondary glushinskite precipitate recovered.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cexa_citrate_exporter
+    target: secreted_organic_acids
+    predicate: transports
+    relationship: efflux of citric acid into extracellular medium
+    description: CexA exports intracellularly synthesized citric acid across the fungal plasma membrane, acidifying the medium and supplying chelating anions.
+    evidence:
+    - source_ref: cai_2013
+      supports: partial
+      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during culture on talc as sole Mg source in Cai et al. (2013); Table 1 measured total oxalate species (0.039 mol/L) and pH 3.16 without assaying cexA expression or mutants.
+  - source: secreted_organic_acids
+    target: starting_substrate
+    predicate: dissolves
+    relationship: organic-acid acidolysis and metal complexation
+    description: Acidified Aspergillus niger medium / organic acids contact Minus-200-mesh talc powder (Mg3Si4O10(OH)2) supplied at 0.01 mol Mg per 100 mL culture.
+    evidence:
+    - source_ref: cai_2013
+      supports: partial
+      explanation: Table 1 and Results pp. 304-305 report culture acidification, 0.039 mol/L total oxalate species by HPLC, and limited Mg release from talc, while Table 2 tested abiotic oxalic-acid dissolution only on forsterite and no matched uninoculated talc trajectory was reported.
+  - source: starting_substrate
+    target: transformed_product
+    predicate: produces
+    relationship: metal mobilization or surface alteration
+    description: Reaction of Minus-200-mesh talc powder (Mg3Si4O10(OH)2) supplied at 0.01 mol Mg per 100 mL culture with fungal culture liquid yields Limited dissolved Mg in culture filtrate (3.121 x 10^-4 mol/L Mg by ICP-AES; no secondary mineral recovered).
+    evidence:
+    - source_ref: cai_2013
+      supports: support
+      explanation: Table 1 and Results pp. 304-305 report final talc-culture dissolved Mg of 3.121 x 10^-4 mol/L by ICP-AES (compared with 1.854 x 10^-2 mol/L for forsterite) and no secondary mineral precipitate after ten days.
 curation_history:
 - timestamp: '2026-10-11T10:24:47.919181+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
   summary: Created talc species record preserving low-release and no-secondary-mineral outcomes.
+- timestamp: '2026-10-22T11:03:05Z'
+  curator: claude
+  action: edit
+  summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and representative causal graph to talc.yaml.
 history_refs:
 - history/records/talc/2026-10-11T102447Z-codex-d0e525.yaml
+- history/records/talc/2026-10-22T110305Z-claude-9fc02c.yaml

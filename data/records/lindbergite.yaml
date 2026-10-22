@@ -70,6 +70,27 @@ mechanisms:
     - source_ref: ferrier2019
       supports: partial
       explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid excretion during ATCC 1015 culture with Clarion-Clipperton Zone manganese nodule powder in Ferrier et al. (2019); cexA was not mutated.
+  - uniprot_accession: UniProtKB:G3Y4N5
+    entry_name: CEXA_ASPNA
+    protein_name: Citrate exporter A
+    gene_symbol: cexA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:380704
+      label: Aspergillus niger ATCC 1015
+    reference_proteome_id: UP000006706
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Plasma-membrane MFS citrate exporter CexA in Aspergillus niger ATCC 1015 that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal chelation/oxalate co-precipitation.
+    annotation_note: Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5 (CEXA_ASPNA; locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015 (NCBITaxon:380704; reference proteome UP000006706). Mechanism uses strain Aspergillus niger ATCC 1015 (NCBITaxon:380704) recorded under species taxon NCBITaxon:5061.
+    evidence:
+    - source_ref: ferrier2019
+      supports: partial
+      explanation: Representative strain-matched Aspergillus niger ATCC 1015 citrate exporter CexA for organic-acid excretion during culture with Clarion-Clipperton Zone polymetallic manganese nodule powder in Ferrier et al. (2019); cexA was not directly mutated in the study.
   evidence:
   - source_ref: ferrier2019
     supports: support
@@ -134,6 +155,27 @@ causal_graphs:
     description: Reviewed Aspergillus niger plasma-membrane citrate exporter (UniProtKB:A0A254TZW7) representing the fungal organic-acid secretion machinery.
     protein_grounding_status: GROUNDED
     protein_examples:
+    - uniprot_accession: UniProtKB:G3Y4N5
+      entry_name: CEXA_ASPNA
+      protein_name: Citrate exporter A
+      gene_symbol: cexA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:380704
+        label: Aspergillus niger ATCC 1015
+      reference_proteome_id: UP000006706
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Plasma-membrane MFS citrate exporter CexA in Aspergillus niger ATCC 1015 that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal chelation/oxalate co-precipitation.
+      annotation_note: Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5 (CEXA_ASPNA; locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015 (NCBITaxon:380704; reference proteome UP000006706). Mechanism uses strain Aspergillus niger ATCC 1015 (NCBITaxon:380704) recorded under species taxon NCBITaxon:5061.
+      evidence:
+      - source_ref: ferrier2019
+        supports: partial
+        explanation: Representative strain-matched Aspergillus niger ATCC 1015 citrate exporter CexA for organic-acid excretion during culture with Clarion-Clipperton Zone polymetallic manganese nodule powder in Ferrier et al. (2019); cexA was not directly mutated in the study.
     - uniprot_accession: UniProtKB:A0A254TZW7
       entry_name: CEXA_ASPNG
       protein_name: Citrate exporter A
@@ -272,9 +314,14 @@ curation_history:
   curator: claude
   action: edit
   summary: 'Upgraded fungal manganese-oxide mobilization edges in lindbergite.yaml from chelates to solubilizes (Issue #807, PR #811).'
+- timestamp: '2026-10-22T10:40:27Z'
+  curator: claude
+  action: edit
+  summary: Added strain-matched Aspergillus niger ATCC 1015 CexA (UniProtKB:G3Y4N5, CEXA_ASPNA) alongside UniProtKB:A0A254TZW7 in lindbergite.yaml.
 history_refs:
 - history/records/lindbergite/2026-10-11T225957Z-codex-f222f6.yaml
 - history/records/lindbergite/2026-10-12T001526Z-codex-997e03.yaml
 - history/records/lindbergite/2026-10-21T184653Z-claude-158813.yaml
 - history/records/lindbergite/2026-10-22T050434Z-claude-6a0ebe.yaml
 - history/records/lindbergite/2026-10-22T093020Z-claude-038afc.yaml
+- history/records/lindbergite/2026-10-22T104027Z-claude-b55a17.yaml

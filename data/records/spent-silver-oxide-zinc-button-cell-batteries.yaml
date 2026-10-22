@@ -1,88 +1,147 @@
 id: cmmmech:spent-silver-oxide-zinc-button-cell-batteries
 name: Spent silver-oxide–zinc button-cell batteries
 material_kind: secondary_resource
-description: Discarded button cells identified by the primary source as silver-oxide–zinc batteries, distinct
-  from zinc–manganese button cells, other battery chemistries, elemental silver or zinc and isolated recovered
-  products. The accepted experiment used powder manually removed from market-collected waste cells, not
-  intact batteries or an authenticated pure oxide feed. It supports laboratory metal mobilization with
-  a filtered fungal culture medium, with unresolved experimental-condition and yield conflicts.
+description: Discarded button cells identified by the primary source as silver-oxide–zinc batteries, distinct from zinc–manganese button cells, other battery chemistries, elemental silver or zinc and isolated recovered products. The accepted experiment used powder manually removed from market-collected waste cells, not intact batteries or an authenticated pure oxide feed. It supports laboratory metal mobilization with a filtered fungal culture medium, with unresolved experimental-condition and yield conflicts.
 sources:
 - id: jadhav_2018
-  title: Jadhav U, Su C-H, Chakankar M, Hocheng H (2018). Leaching of Metals from Waste Silver Oxide-Zinc
-    Button Cell Batteries by Aspergillus niger. Batteries 4(4):51. DOI 10.3390/batteries4040051; complete
-    seven-page original, Sections 2–4, Tables 1–2 and Figures 1–4.
+  title: Jadhav U, Su C-H, Chakankar M, Hocheng H (2018). Leaching of Metals from Waste Silver Oxide-Zinc Button Cell Batteries by Aspergillus niger. Batteries 4(4):51. DOI 10.3390/batteries4040051; complete seven-page original, Sections 2–4, Tables 1–2 and Figures 1–4.
   url: https://doi.org/10.3390/batteries4040051
   accessed_on: '2026-10-14'
 - id: ncbi_5061
-  title: NCBI Taxonomy 5061, current species name Aspergillus niger. Species-level name context only;
-    not authentication of the unnamed FIRDI culture used in the experiment.
+  title: NCBI Taxonomy 5061, current species name Aspergillus niger. Species-level name context only; not authentication of the unnamed FIRDI culture used in the experiment.
   url: https://www.ncbi.nlm.nih.gov/datasets/taxonomy/5061/
   accessed_on: '2026-10-14'
 mechanisms:
 - id: fungal_filtrate_metal_mobilization
   name: Metal mobilization by an Aspergillus niger culture filtrate
   process: bioleaching
-  description: Filtered spent medium from a source-named Aspergillus niger culture mobilized zinc, silver
-    and a much smaller fraction of mercury from waste-cell powder. Organic-acid action is the authors'
-    explanation, but this experiment does not isolate citric acid from other medium constituents or demonstrate
-    a microbial increment over a matched sterile-medium or chemical-acid control. Cells were removed before
-    leaching; this is not evidence of fungal growth at the leaching temperatures or of a live-cell uptake
-    mechanism. Solution analysis does not establish purified-metal recovery.
-  context: The culture came from FIRDI, Hsinchu, Taiwan, without a strain accession. The referenced earlier
-    tin-removal paper's 34770 strain is not assigned to this assay. Sucrose medium contained 100 g/L sucrose
-    plus nitrate, phosphate, magnesium sulfate, potassium chloride and yeast extract. Section 2.3 describes
-    both 30 and 25 degrees C cultivation at 120 rpm for ten days, then 0.22 micrometre filtration. It
-    reports pH 1.97 and 20 g/L citric acid while citing an earlier study; no independent metabolite assay
-    is described here. Collected cells were manually dismantled and their powder dried at 60 degrees C.
-    Brand, battery model, discharge state, particle-size distribution and phase authentication are not
-    supplied. Aqua-regia digestion and ICP-OES provide the Table 1 feed assay, including Zn 290 mg/g and
-    Ag 35.86 mg/g; these are digested elemental concentrations, not phase abundances or whole-device inventories.
-    The time series used 0.10 g powder in 100 mL filtrate in 250 mL flasks at 30 degrees C and 150 rpm
-    for up to eight hours. Separate temperature, agitation and filtrate-volume series varied these conditions.
-    Experiments were triplicate and leachates were analyzed by ICP-OES; sample-volume correction, complete
-    mass balances and the meaning of plotted error bars are not specified. Laboratory assays alone are
-    documented.
+  description: Filtered spent medium from a source-named Aspergillus niger culture mobilized zinc, silver and a much smaller fraction of mercury from waste-cell powder. Organic-acid action is the authors' explanation, but this experiment does not isolate citric acid from other medium constituents or demonstrate a microbial increment over a matched sterile-medium or chemical-acid control. Cells were removed before leaching; this is not evidence of fungal growth at the leaching temperatures or of a live-cell uptake mechanism. Solution analysis does not establish purified-metal recovery.
+  context: The culture came from FIRDI, Hsinchu, Taiwan, without a strain accession. The referenced earlier tin-removal paper's 34770 strain is not assigned to this assay. Sucrose medium contained 100 g/L sucrose plus nitrate, phosphate, magnesium sulfate, potassium chloride and yeast extract. Section 2.3 describes both 30 and 25 degrees C cultivation at 120 rpm for ten days, then 0.22 micrometre filtration. It reports pH 1.97 and 20 g/L citric acid while citing an earlier study; no independent metabolite assay is described here. Collected cells were manually dismantled and their powder dried at 60 degrees C. Brand, battery model, discharge state, particle-size distribution and phase authentication are not supplied. Aqua-regia digestion and ICP-OES provide the Table 1 feed assay, including Zn 290 mg/g and Ag 35.86 mg/g; these are digested elemental concentrations, not phase abundances or whole-device inventories. The time series used 0.10 g powder in 100 mL filtrate in 250 mL flasks at 30
+    degrees C and 150 rpm for up to eight hours. Separate temperature, agitation and filtrate-volume series varied these conditions. Experiments were triplicate and leachates were analyzed by ICP-OES; sample-volume correction, complete mass balances and the meaning of plotted error bars are not specified. Laboratory assays alone are documented.
   microbial: true
   organisms:
   - id: NCBITaxon:5061
     label: Aspergillus niger
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A254TZW7
+    entry_name: CEXA_ASPNG
+    protein_name: Citrate exporter A
+    gene_symbol: cexA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:5061
+      label: Aspergillus niger
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal mobilization.
+    annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061).
+    evidence:
+    - source_ref: jadhav_2018
+      supports: partial
+      explanation: Representative Aspergillus niger citrate exporter CexA exporting citric acid into the filtered spent medium used to mobilize Zn and Ag from waste silver-oxide-zinc button-cell powder in Jadhav et al. (2018); cexA was not genetically perturbed in the study.
   evidence:
   - source_ref: jadhav_2018
     supports: support
-    explanation: Sections 2.1–2.5 and Figure 1 support the feed preparation and filtrate-leaching observation.
-      At six hours in the 30 degrees C time-series arm, the Results report approximately 80% Zn and 41%
-      Ag extraction, but only 2% Hg; Figure 1 shows little additional release at eight hours. These are
-      the paper's solution-based extraction estimates, not independently reconciled yields or recovered-product
-      masses. The incomplete mercury release is preserved rather than claiming comprehensive metal removal
-      or detoxification.
+    explanation: Sections 2.1–2.5 and Figure 1 support the feed preparation and filtrate-leaching observation. At six hours in the 30 degrees C time-series arm, the Results report approximately 80% Zn and 41% Ag extraction, but only 2% Hg; Figure 1 shows little additional release at eight hours. These are the paper's solution-based extraction estimates, not independently reconciled yields or recovered-product masses. The incomplete mercury release is preserved rather than claiming comprehensive metal removal or detoxification.
   - source_ref: jadhav_2018
     supports: partial
-    explanation: Figure 4 and the conclusion report 100% Zn and Ag with 0.10 g powder and 15 mL filtrate
-      at 60 degrees C, 100 rpm and six hours. However, Section 2.4 specifies 150 rpm and eight hours for
-      the volume series, and eight hours for the agitation series whereas Figures 3–4 say six. Figure
-      2 shows 100% Zn and Ag at 60 degrees C, 150 rpm and six hours, while Figure 3 shows roughly 70%
-      at the same nominal temperature, speed, time and 100 mL volume. The Results' claimed temperature
-      range of 20–60 degrees C and shaking range of 50–200 rpm also differ from the displayed 30–60 degrees
-      C and 0–150 rpm series. These conflicts preclude treating the combined optimum as a verified reproducible
-      protocol. Low mercury release persists in these arms. No reconciled quantitative observation is
-      imported.
+    explanation: Figure 4 and the conclusion report 100% Zn and Ag with 0.10 g powder and 15 mL filtrate at 60 degrees C, 100 rpm and six hours. However, Section 2.4 specifies 150 rpm and eight hours for the volume series, and eight hours for the agitation series whereas Figures 3–4 say six. Figure 2 shows 100% Zn and Ag at 60 degrees C, 150 rpm and six hours, while Figure 3 shows roughly 70% at the same nominal temperature, speed, time and 100 mL volume. The Results' claimed temperature range of 20–60 degrees C and shaking range of 50–200 rpm also differ from the displayed 30–60 degrees C and 0–150 rpm series. These conflicts preclude treating the combined optimum as a verified reproducible protocol. Low mercury release persists in these arms. No reconciled quantitative observation is imported.
   - source_ref: jadhav_2018
     supports: partial
-    explanation: The source attributes leaching to citric acid and contrasts it with ferric supernatant
-      in an earlier 2013 study, but neither a matched acid comparison nor a fresh assay of that earlier
-      bacterial arm is presented here. The prior study's Table 2 summary is not independent replication
-      or proof that oxidized zinc can never dissolve in an acidic ferric medium. No source-supported industrial
-      scale, life-cycle advantage, isolated product purity or criticality designation follows from this
-      experiment.
+    explanation: The source attributes leaching to citric acid and contrasts it with ferric supernatant in an earlier 2013 study, but neither a matched acid comparison nor a fresh assay of that earlier bacterial arm is presented here. The prior study's Table 2 summary is not independent replication or proof that oxidized zinc can never dissolve in an acidic ferric medium. No source-supported industrial scale, life-cycle advantage, isolated product purity or criticality designation follows from this experiment.
   - source_ref: ncbi_5061
     supports: context_only
-    explanation: The current authority resolves the source's species name to NCBITaxon:5061. It does not
-      identify the experimental stock, its metabolites or a species-wide leaching phenotype.
+    explanation: The current authority resolves the source's species name to NCBITaxon:5061. It does not identify the experimental stock, its metabolites or a species-wide leaching phenotype.
+causal_graphs:
+- id: aspergillus_cexa_button_cell_filtrate_graph
+  name: Aspergillus niger citric-acid culture filtrate mobilization of zinc and silver from spent button-cell battery powder
+  description: Representative causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA (cexA) and extracellular organic-acid secretion to reaction with Manually dismantled waste silver-oxide-zinc button-cell battery powder (290 mg/g Zn, 35.86 mg/g Ag) and formation/release of Mobilized zinc (~80%) and silver (~41%) with low mercury release (~2%) in 30 degrees C filtrate time series.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: fungal_filtrate_metal_mobilization
+  nodes:
+  - id: cexa_citrate_exporter
+    label: CexA plasma-membrane citrate exporter (cexA)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cexA
+    description: Major facilitator superfamily transporter exporting citric acid across the Aspergillus niger plasma membrane.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A254TZW7
+      entry_name: CEXA_ASPNG
+      protein_name: Citrate exporter A
+      gene_symbol: cexA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:5061
+        label: Aspergillus niger
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal mobilization.
+      annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061).
+      evidence:
+      - source_ref: jadhav_2018
+        supports: partial
+        explanation: Representative Aspergillus niger citrate exporter CexA exporting citric acid into the filtered spent medium used to mobilize Zn and Ag from waste silver-oxide-zinc button-cell powder in Jadhav et al. (2018); cexA was not genetically perturbed in the study.
+  - id: secreted_organic_acids
+    label: 0.22-um filtered Aspergillus niger sucrose-medium culture supernatant (pH 1.97 and 20 g/L citric acid cited from an earlier study)
+    node_type: CHEMICAL_ENTITY
+    description: 0.22-micrometre filtered culture supernatant from a FIRDI Aspergillus niger culture grown for 10 days at 120 rpm in 100 g/L sucrose medium (Section 2.3 cites pH 1.97 and 20 g/L citric acid from an earlier study without reporting an independent metabolite assay).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: starting_substrate
+    label: Manually dismantled waste silver-oxide-zinc button-cell battery powder (290 mg/g Zn, 35.86 mg/g Ag)
+    node_type: MATERIAL_OR_PHASE
+    description: 'Dried powder manually removed from market-collected waste silver-oxide-zinc button cells (aqua-regia/ICP-OES feed assay in Table 1: 290 mg/g Zn and 35.86 mg/g Ag).'
+    protein_grounding_status: NOT_APPLICABLE
+  - id: transformed_product
+    label: Mobilized zinc (~80%) and silver (~41%) with low mercury release (~2%) in 30 degrees C filtrate time series
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved zinc, silver, and trace mercury measured by ICP-OES in culture filtrate leachates (approximately 80% Zn, 41% Ag, and 2% Hg at 6 hours in the 30 degrees C, 150 rpm, 0.10 g / 100 mL time series; higher-temperature/volume series contain unresolved condition and yield conflicts).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cexa_citrate_exporter
+    target: secreted_organic_acids
+    predicate: transports
+    relationship: efflux of citric acid into extracellular medium
+    description: CexA exports intracellularly synthesized citric acid across the fungal plasma membrane, acidifying the medium and supplying chelating anions.
+    evidence:
+    - source_ref: jadhav_2018
+      supports: partial
+      explanation: Representative Aspergillus niger citrate exporter CexA exporting citric acid into the filtered spent medium used to mobilize Zn and Ag from waste silver-oxide-zinc button-cell powder in Jadhav et al. (2018); cexA was not genetically perturbed in the study.
+  - source: secreted_organic_acids
+    target: starting_substrate
+    predicate: solubilizes
+    relationship: organic-acid acidolysis and metal complexation
+    description: Acidified Aspergillus niger medium / organic acids contact Manually dismantled waste silver-oxide-zinc button-cell battery powder (290 mg/g Zn, 35.86 mg/g Ag).
+    evidence:
+    - source_ref: jadhav_2018
+      supports: partial
+      explanation: Sections 2.3-2.5 and Figure 1 document metal mobilization by 0.22-micrometre filtered A. niger culture supernatant, while pH 1.97 and 20 g/L citric acid were cited from an earlier study without an independent metabolite assay or a matched sterile-medium/chemical-acid control.
+  - source: starting_substrate
+    target: transformed_product
+    predicate: produces
+    relationship: metal mobilization or surface alteration
+    description: Reaction of Manually dismantled waste silver-oxide-zinc button-cell battery powder (290 mg/g Zn, 35.86 mg/g Ag) with fungal culture liquid yields Mobilized zinc (~80%) and silver (~41%) with low mercury release (~2%) in 30 degrees C filtrate time series.
+    evidence:
+    - source_ref: jadhav_2018
+      supports: support
+      explanation: Sections 2.1-2.5 and Figure 1 report approximately 80% Zn, 41% Ag, and 2% Hg extraction at six hours in the 30 degrees C, 150 rpm time-series assay using 0.10 g waste button-cell powder in 100 mL culture filtrate.
 curation_history:
 - timestamp: '2026-10-14T18:01:44.920258Z'
   curator: Codex (GPT-6; codex)
   action: CREATE
-  summary: Created the source-qualified secondary-resource owner; preserved conflicting conditions, incomplete
-    balances, controls, null results and laboratory scope.
+  summary: Created the source-qualified secondary-resource owner; preserved conflicting conditions, incomplete balances, controls, null results and laboratory scope.
+- timestamp: '2026-10-22T11:03:06Z'
+  curator: claude
+  action: edit
+  summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and representative causal graph to spent-silver-oxide-zinc-button-cell-batteries.yaml.
 history_refs:
 - history/records/spent-silver-oxide-zinc-button-cell-batteries/2026-10-14T180129Z-codex-f4aacb.yaml
+- history/records/spent-silver-oxide-zinc-button-cell-batteries/2026-10-22T110306Z-claude-e75376.yaml

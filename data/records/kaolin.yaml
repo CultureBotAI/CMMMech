@@ -1,117 +1,147 @@
 id: cmmmech:kaolin
 name: Natural kaolin feed
 material_kind: primary_resource
-description: >-
-  Naturally occurring kaolinite-bearing clay feed, represented here by a
-  mixed ore from Bilecik-Söğüt, Turkey. XRD identified kaolinite, quartz and
-  microcline as major phases. This resource is distinct from the mineral
-  species kaolinite, discarded kaolin mine waste and a refined alumina or
-  traded purity-defined product. Table 1 reports 0.82 wt% Fe2O3, 21.79 wt%
-  Al2O3 and 66.83 wt% SiO2 as bulk XRF oxide equivalents, not mineral
-  fractions or proof of a particular iron phase. The record does not
-  inherit a criticality designation from aluminium or another constituent.
+description: Naturally occurring kaolinite-bearing clay feed, represented here by a mixed ore from Bilecik-Söğüt, Turkey. XRD identified kaolinite, quartz and microcline as major phases. This resource is distinct from the mineral species kaolinite, discarded kaolin mine waste and a refined alumina or traded purity-defined product. Table 1 reports 0.82 wt% Fe2O3, 21.79 wt% Al2O3 and 66.83 wt% SiO2 as bulk XRF oxide equivalents, not mineral fractions or proof of a particular iron phase. The record does not inherit a criticality designation from aluminium or another constituent.
 sources:
 - id: kale2020
-  title: >-
-    Kale and Çiftçi (2020). Kaolen Cevherinden Demirin Aspergillus niger ile
-    Uzaklaştırılması / Removal of Iron from Kaolin Ore by Aspergillus niger.
-    Teknik Bilimler Dergisi 10, 16-22. DOI 10.35354/tbed.592519. Complete
-    seven-page primary PDF inspected, including Table 1 and Figures 1-13;
-    Turkish methods/results with English abstract. The official page and
-    Crossref identify the publication as 20 February 2020.
+  title: Kale and Çiftçi (2020). Kaolen Cevherinden Demirin Aspergillus niger ile Uzaklaştırılması / Removal of Iron from Kaolin Ore by Aspergillus niger. Teknik Bilimler Dergisi 10, 16-22. DOI 10.35354/tbed.592519. Complete seven-page primary PDF inspected, including Table 1 and Figures 1-13; Turkish methods/results with English abstract. The official page and Crossref identify the publication as 20 February 2020.
   url: https://doi.org/10.35354/tbed.592519
   accessed_on: '2026-10-11'
 - id: ncbi_niger
-  title: >-
-    NCBI Taxonomy 5061, Aspergillus niger, current species-level entry.
-    This resolves the reported species name, not the identity of the
-    study's unaccessioned culture.
+  title: NCBI Taxonomy 5061, Aspergillus niger, current species-level entry. This resolves the reported species name, not the identity of the study's unaccessioned culture.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=Info
   accessed_on: '2026-10-11'
 mechanisms:
 - id: niger_kaolin_iron_mobilization
   name: Fungal culture-associated iron removal from natural kaolin
   process: bioleaching
+  description: Living Aspergillus niger cultures were associated with acidification and greater reported iron removal from the tested natural kaolin than no-fungus medium controls. The authors propose organic-acid-mediated leaching, but did not quantify those acids or establish a unique molecular mechanism. The experiment demonstrates conditional laboratory iron mobilization, not isolated iron recovery or industrial deployment.
+  context: The study used a supplied pure culture without a reported strain name, culture-collection accession or molecular identification. Approximately 40 kg of representative Bilecik-Söğüt feed was crushed and ground in an alumina ball mill to below 106 micrometres, with d80 of 65 and d50 of 25 micrometres. Shake-flask assays used 500 mL vessels, 247.5 mL sterile nutrient medium and 2.5 mL inoculum, at 30 degrees C and 125 rpm. Solid loading was 1-10% w/v and sucrose 5-20% w/v across separate experiments. Controls omitted fungus. Samples of 5 mL were taken every three days, centrifuged at 4100 rpm for 10 minutes and the clarified liquid analyzed for Fe by AAS or ICP-OES; pH and fungal dry biomass were also followed. Reported Fe2O3 removal percentages are retained as author-reported results, not as verified yields of a mineral phase. The paper does not give an explicit yield equation, serial-withdrawal correction, full mass balance, replicate number, statistical test or uncertainty bars
+    for these trajectories. Initial inoculum and final biomass do not establish a specific strain's molecular activity. No isolated iron product, standardized final whiteness measurement or demonstrated industrial process is reported.
   microbial: true
   organisms:
   - id: NCBITaxon:5061
     label: Aspergillus niger
-  description: >-
-    Living Aspergillus niger cultures were associated with acidification
-    and greater reported iron removal from the tested natural kaolin than
-    no-fungus medium controls. The authors propose organic-acid-mediated
-    leaching, but did not quantify those acids or establish a unique
-    molecular mechanism. The experiment demonstrates conditional laboratory
-    iron mobilization, not isolated iron recovery or industrial deployment.
-  context: >-
-    The study used a supplied pure culture without a reported strain name,
-    culture-collection accession or molecular identification. Approximately
-    40 kg of representative Bilecik-Söğüt feed was crushed and ground in
-    an alumina ball mill to below 106 micrometres, with d80 of 65 and d50
-    of 25 micrometres. Shake-flask assays used 500 mL vessels, 247.5 mL
-    sterile nutrient medium and 2.5 mL inoculum, at 30 degrees C and
-    125 rpm. Solid loading was 1-10% w/v and sucrose 5-20% w/v across
-    separate experiments. Controls omitted fungus. Samples of 5 mL were
-    taken every three days, centrifuged at 4100 rpm for 10 minutes and
-    the clarified liquid analyzed for Fe by AAS or ICP-OES; pH and fungal
-    dry biomass were also followed. Reported Fe2O3 removal percentages
-    are retained as author-reported results, not as verified yields of a
-    mineral phase. The paper does not give an explicit yield equation,
-    serial-withdrawal correction, full mass balance, replicate number,
-    statistical test or uncertainty bars for these trajectories. Initial
-    inoculum and final biomass do not establish a specific strain's
-    molecular activity. No isolated iron product, standardized final
-    whiteness measurement or demonstrated industrial process is reported.
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A254TZW7
+    entry_name: CEXA_ASPNG
+    protein_name: Citrate exporter A
+    gene_symbol: cexA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:5061
+      label: Aspergillus niger
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal mobilization.
+    annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061).
+    evidence:
+    - source_ref: kale2020
+      supports: partial
+      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid secretion and medium acidification during bioleaching of iron impurities from Bilecik-Söğüt natural kaolin in Kale and Çiftçi (2020); individual organic acids and cexA were not directly assayed.
   evidence:
   - source_ref: kale2020
     supports: support
-    explanation: >-
-      Sections 2 and 3.1, Table 1 and Figures 4-6 support the material,
-      assay and loading-dependent outcome. At 1% w/v solids and 10% w/v
-      sucrose with ore present from inoculation, reported Fe2O3 removal
-      was 52.47% after 336 hours, versus 6.22% in the no-fungus control.
-      At 10% solids it was 18.51%. The lower endpoint pH in the 1% culture
-      (3.75 versus 5.88 in its control) supports association with culture
-      acidification; controls were not held at the same pH. These results
-      do not separate proton action from other culture-derived effects.
+    explanation: Sections 2 and 3.1, Table 1 and Figures 4-6 support the material, assay and loading-dependent outcome. At 1% w/v solids and 10% w/v sucrose with ore present from inoculation, reported Fe2O3 removal was 52.47% after 336 hours, versus 6.22% in the no-fungus control. At 10% solids it was 18.51%. The lower endpoint pH in the 1% culture (3.75 versus 5.88 in its control) supports association with culture acidification; controls were not held at the same pH. These results do not separate proton action from other culture-derived effects.
   - source_ref: kale2020
     supports: partial
-    explanation: >-
-      Section 3.2 and Figures 7-9 show that the sucrose response at 5%
-      solids was nonmonotonic: 10% sucrose gave the highest reported
-      removal, 34.66% at 336 hours, while 5%, 15% and 20% gave less.
-      The abstract's broad statement that increasing sucrose decreases
-      removal is therefore not applied across the whole tested range.
-      The 5%-solids experiment is not the 1%-solids comparison above.
+    explanation: 'Section 3.2 and Figures 7-9 show that the sucrose response at 5% solids was nonmonotonic: 10% sucrose gave the highest reported removal, 34.66% at 336 hours, while 5%, 15% and 20% gave less. The abstract''s broad statement that increasing sucrose decreases removal is therefore not applied across the whole tested range. The 5%-solids experiment is not the 1%-solids comparison above.'
   - source_ref: kale2020
     supports: partial
-    explanation: >-
-      Section 3.3 and Figures 10-13 report 61.09% removal for 1% solids
-      and 10% sucrose when ore was added after 240 hours of fungal
-      growth. Figure 10 places that endpoint at 504 hours of total
-      culture time, corresponding to 264 hours of mineral contact.
-      It is not a 14-day simultaneous-inoculation result or a matched
-      elapsed-time comparison with the 52.47% endpoint. A matched
-      no-fungus control at 504 hours is not displayed. Delayed addition
-      may avoid early feed effects on growth, but that causal explanation
-      was not isolated experimentally.
+    explanation: Section 3.3 and Figures 10-13 report 61.09% removal for 1% solids and 10% sucrose when ore was added after 240 hours of fungal growth. Figure 10 places that endpoint at 504 hours of total culture time, corresponding to 264 hours of mineral contact. It is not a 14-day simultaneous-inoculation result or a matched elapsed-time comparison with the 52.47% endpoint. A matched no-fungus control at 504 hours is not displayed. Delayed addition may avoid early feed effects on growth, but that causal explanation was not isolated experimentally.
   - source_ref: kale2020
     supports: partial
-    explanation: >-
-      Sections 2-4 measure Fe, pH and biomass rather than organic-acid
-      concentrations, Fe oxidation-state changes, enzyme activity or
-      particular iron-mineral dissolution. Citric, oxalic and other acid
-      mechanisms are discussed using background literature. Figures 1-2
-      describe general industry uses and processing, not commercial
-      operation of this fungal assay. Neither this one ore batch nor its
-      unaccessioned fungal culture supports a universal kaolin outcome.
+    explanation: Sections 2-4 measure Fe, pH and biomass rather than organic-acid concentrations, Fe oxidation-state changes, enzyme activity or particular iron-mineral dissolution. Citric, oxalic and other acid mechanisms are discussed using background literature. Figures 1-2 describe general industry uses and processing, not commercial operation of this fungal assay. Neither this one ore batch nor its unaccessioned fungal culture supports a universal kaolin outcome.
+causal_graphs:
+- id: aspergillus_cexa_kaolin_iron_mobilization_graph
+  name: Aspergillus niger organic-acid acidification and iron removal from natural kaolin
+  description: Representative causal pathway linking Aspergillus niger plasma-membrane citrate exporter CexA (cexA) and extracellular organic-acid secretion to reaction with Bilecik-Söğüt natural kaolin feed (<106 um, 0.82 wt% Fe2O3) and formation/release of Solubilized iron in clarified culture leachate (52.47% Fe2O3 removal at 336 h simultaneous / 61.09% at 504 h delayed at 1% w/v solids).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: niger_kaolin_iron_mobilization
+  nodes:
+  - id: cexa_citrate_exporter
+    label: CexA plasma-membrane citrate exporter (cexA)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cexA
+    description: Major facilitator superfamily transporter exporting citric acid across the Aspergillus niger plasma membrane.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A254TZW7
+      entry_name: CEXA_ASPNG
+      protein_name: Citrate exporter A
+      gene_symbol: cexA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:5061
+        label: Aspergillus niger
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal mobilization.
+      annotation_note: Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061).
+      evidence:
+      - source_ref: kale2020
+        supports: partial
+        explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid secretion and medium acidification during bioleaching of iron impurities from Bilecik-Söğüt natural kaolin in Kale and Çiftçi (2020); individual organic acids and cexA were not directly assayed.
+  - id: secreted_organic_acids
+    label: Acidified Aspergillus niger sucrose-nutrient culture medium (endpoint pH 3.75 at 1% w/v solids vs 5.88 in uninoculated control)
+    node_type: CHEMICAL_ENTITY
+    description: Acidified sucrose-supplemented nutrient medium from living Aspergillus niger culture (endpoint pH 3.75 at 1% w/v solids vs pH 5.88 in the no-fungus control; individual organic-acid concentrations were not quantified).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: starting_substrate
+    label: Bilecik-Söğüt natural kaolin feed (<106 um, 0.82 wt% Fe2O3)
+    node_type: MATERIAL_OR_PHASE
+    description: Crushed and alumina-ball-milled natural kaolin clay feed from Bilecik-Söğüt, Turkey (<106 micrometres, d80 65 um, d50 25 um; bulk XRF 0.82 wt% Fe2O3, 21.79 wt% Al2O3, 66.83 wt% SiO2).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: transformed_product
+    label: Solubilized iron in clarified culture leachate (52.47% Fe2O3 removal at 336 h simultaneous / 61.09% at 504 h delayed at 1% w/v solids)
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved iron measured by AAS/ICP-OES in centrifuged culture supernatant, corresponding to author-reported 52.47% Fe2O3 removal at 336 h (vs 6.22% in no-fungus control) or 61.09% at 504 h when 1% w/v ore was added after 240 h of fungal growth.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cexa_citrate_exporter
+    target: secreted_organic_acids
+    predicate: transports
+    relationship: efflux of citric acid into extracellular medium
+    description: CexA exports intracellularly synthesized citric acid across the fungal plasma membrane, acidifying the medium and supplying chelating anions.
+    evidence:
+    - source_ref: kale2020
+      supports: partial
+      explanation: Representative Aspergillus niger citrate exporter CexA for organic-acid secretion and medium acidification during bioleaching of iron impurities from Bilecik-Söğüt natural kaolin in Kale and Çiftçi (2020); individual organic acids and cexA were not directly assayed.
+  - source: secreted_organic_acids
+    target: starting_substrate
+    predicate: solubilizes
+    relationship: organic-acid acidolysis and metal complexation
+    description: Acidified Aspergillus niger medium / organic acids contact Bilecik-Söğüt natural kaolin feed (<106 um, 0.82 wt% Fe2O3).
+    evidence:
+    - source_ref: kale2020
+      supports: partial
+      explanation: Sections 2-4 and Figures 4-6 show lower endpoint pH (3.75 vs 5.88 in control at 1% w/v solids) associated with higher Fe removal, while individual organic acids were discussed from background literature rather than directly measured and controls were not held at matched pH.
+  - source: starting_substrate
+    target: transformed_product
+    predicate: produces
+    relationship: metal mobilization or surface alteration
+    description: Reaction of Bilecik-Söğüt natural kaolin feed (<106 um, 0.82 wt% Fe2O3) with fungal culture liquid yields Solubilized iron in clarified culture leachate (52.47% Fe2O3 removal at 336 h simultaneous / 61.09% at 504 h delayed at 1% w/v solids).
+    evidence:
+    - source_ref: kale2020
+      supports: support
+      explanation: Sections 3.1 and 3.3 and Figures 4-13 report 52.47% Fe2O3 removal after 336 hours with simultaneous inoculation (vs 6.22% in the no-fungus control) and 61.09% at 504 hours total culture time with delayed ore addition at 1% w/v solids and 10% w/v sucrose.
 curation_history:
 - timestamp: '2026-10-11T19:10:21.186278+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
-  summary: >-
-    Created a natural-kaolin resource from complete primary fungal
-    bioleaching evidence, with explicit controls, unequal timing,
-    unresolved mass accounting and no inherited criticality claim.
+  summary: Created a natural-kaolin resource from complete primary fungal bioleaching evidence, with explicit controls, unequal timing, unresolved mass accounting and no inherited criticality claim.
+- timestamp: '2026-10-22T11:03:06Z'
+  curator: claude
+  action: edit
+  summary: Added verified UniProtKB protein example (CexA UniProtKB:A0A254TZW7) and representative causal graph to kaolin.yaml.
 history_refs:
 - history/records/kaolin/2026-10-11T191022Z-codex-29176a.yaml
+- history/records/kaolin/2026-10-22T110306Z-claude-dd506f.yaml
