@@ -22,7 +22,7 @@ The supervisor-frozen `INFRA_TASKS.md` snapshot (`b1c109d7c403e03e7bef7a0008a771
 ## 2. Dependency Order & Execution Plan
 
 1. **Step 1 — Preserve Cycle 1 Stage 6 Resolved Infrastructure (`cmmmech-infra-0002`, `cmmmech-infra-0003`, `cmmmech-infra-0004`)**:
-   - Retain all schema and CLI writer enhancements delivered in Cycle 1 Stage 6 (`#806`, `#807`, `#808`) and verify regression-free operation across the expanded 631-record corpus and 147 history sidecars.
+   - Retain all schema and CLI writer enhancements delivered in Cycle 1 Stage 6 (`#806`, `#807`, `#808`) and verify regression-free operation across the expanded 631-record corpus and 924 history sidecars.
 2. **Step 2 — Implement Sandboxed History Sidecar Creation Fallback (`cmmmech-infra-0006`, `#822`)**:
    - In `src/cmmmech/history.py` `cmd_new()`, keep `os.link(stream.name, path)` as the primary atomic hardlink path when permitted by the operating system, and catch `PermissionError` (raised inside macOS Seatbelt sandboxes that disallow `os.link`) to fall back to exclusive file creation via `os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL | getattr(os, "O_NOFOLLOW", 0), 0o644)` with `fsync`.
    - Ensure that if the exclusive-create write fails mid-stream, any partial target is unlinked before re-raising, and that an existing target file raises `FileExistsError` without ever truncating or overwriting an existing history session.
