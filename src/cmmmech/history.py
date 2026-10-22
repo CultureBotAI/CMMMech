@@ -279,13 +279,30 @@ def cmd_new(args: argparse.Namespace) -> int:
             raise ValueError("; ".join(problems))
         path.parent.mkdir(parents=True, exist_ok=True)
         # Link a complete temporary file atomically; linking never overwrites an
-        # existing name. A collision or interruption cannot truncate an old session.
+        # existing name. If a sandbox prohibits hardlink creation (PermissionError),
+        # fall back to O_CREAT | O_EXCL so an existing session is never overwritten.
+        serialized = yaml.safe_dump(data, sort_keys=False, allow_unicode=True, width=88)
         with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent,
                                          prefix=".new-history-", suffix=".tmp") as stream:
-            yaml.safe_dump(data, stream, sort_keys=False, allow_unicode=True, width=88)
+            stream.write(serialized)
             stream.flush()
             os.fsync(stream.fileno())
-            os.link(stream.name, path)
+            try:
+                os.link(stream.name, path)
+            except PermissionError:
+                flags = os.O_WRONLY | os.O_CREAT | os.O_EXCL | getattr(os, "O_NOFOLLOW", 0)
+                fd = os.open(path, flags, 0o644)
+                try:
+                    with os.fdopen(fd, "w", encoding="utf-8") as target_stream:
+                        target_stream.write(serialized)
+                        target_stream.flush()
+                        os.fsync(target_stream.fileno())
+                except BaseException:
+                    try:
+                        path.unlink()
+                    except OSError:
+                        pass
+                    raise
         print(relative)
         return 0
     except (OSError, ValueError) as exc:
