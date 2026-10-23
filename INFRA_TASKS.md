@@ -64,6 +64,9 @@ tasks:
     status: resolved
     issue_url: https://github.com/CultureBotAI/CMMMech/issues/822
     disposition: "Resolved in Cycle 2 Stage 6 (issue #822) by adding an exclusive-create fallback (os.open with O_WRONLY | O_CREAT | O_EXCL | O_NOFOLLOW) when os.link() raises PermissionError in src/cmmmech/history.py cmd_new(), verified by unit tests in tests/test_history.py and sandboxed execution of tests/test_curate_causal_graphs.py."
+  - task_id: cmmmech-infra-0007
+    summary: Add a path-based directory cleanup fallback when shutil.rmtree() raises PermissionError on dir_fd unlinkat() in scripts/render_pages.py so static page rendering succeeds inside macOS Seatbelt sandboxes
+    status: note
 ```
 <!-- mech-infra-tasks:end -->
 
@@ -141,6 +144,14 @@ tasks:
 - **Status**: `resolved`
 - **Disposition**: Resolved in Cycle 2 Stage 6 by updating `cmd_new()` in `src/cmmmech/history.py` to fall back to exclusive file creation (`os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL | O_NOFOLLOW, 0o644)`) with `fsync` when `os.link()` raises `PermissionError`, preserving atomic non-overwriting semantics and verified by `test_scaffolder_falls_back_to_exclusive_create_when_hardlink_blocked` in `tests/test_history.py`.
 
+### `cmmmech-infra-0007` — Path-based cleanup fallback for `shutil.rmtree()` in `scripts/render_pages.py`
 
-
+- **Originating run / cycle / stage**: `mech-goal-sequence-20261019` / cycle `3` / stage `1` (`add_records`)
+- **Observation**: During Round 119 (`add_records`), running `.venv/bin/python scripts/render_pages.py` inside the macOS Seatbelt sandbox failed at `scripts/render_pages.py:584` (`shutil.rmtree(args.out)`) with `PermissionError: [Errno 1] Operation not permitted: PosixPath('/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/pages')` because Python 3.13's `shutil._rmtree_safe_fd()` uses `os.unlink(entry.name, dir_fd=topfd)` (`unlinkat`), which Seatbelt blocks inside the standard sandbox even when path-based `Path.unlink()` and `Path.rmdir()` are permitted inside the workspace (`scripts/render_pages.py --check` already succeeds inside the sandbox because it renders into `/tmp`).
+- **Desired outcome**: Add a path-based recursive removal fallback (or write/prune files in place without `dir_fd`-based `shutil.rmtree(args.out)`) in `scripts/render_pages.py` during Stage 6 so that `scripts/render_pages.py` runs inside standard macOS Seatbelt sandboxes.
+- **Evidence paths**: `scripts/render_pages.py`, `tests/test_render_pages.py`
+- **Priority**: low
+- **Dependencies**: None
+- **Issue**: Pending Stage 6 issue creation
+- **Status**: `note`
 
