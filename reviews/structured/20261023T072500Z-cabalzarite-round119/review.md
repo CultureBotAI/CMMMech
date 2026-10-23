@@ -11,7 +11,7 @@
 
 ## Summary
 
-Cabalzarite passes with limitations: IMA:1997-012 CaMg2(AsO4)2(H2O)2 identity (tsumcorite-group M1CaM2(Mg,Al,Fe3+)2(AsO4)2(H2O,OH)2), monoclinic C2/m structure (ESRF synchrotron powder a = 8.945(1), b = 6.156(1), c = 7.358(1) A, beta = 115.30(2) deg, V = 366.3(1) A3; SXRD CABA11.5 a = 8.925(2), b = 6.143(1), c = 7.352(1) A, beta = 115.25(3) deg, V = 364.6(1) A3, Z = 2, R1 = 1.80% for 436 reflections), Falotta holotype MGL73785 EMPA chemistry (As2O5 55.57,CaO 13.64, Al2O3 9.84, MgO 7.54, Fe2O3 4.38, Mn2O3 0.55, SrO 0.49, SiO2 0.05, H2Ocalc 7.11, sum 99.17 wt%), and N2 TGA dehydration (~6 wt% mass loss at 640-700 C on 3.30 mg sample) are supported without inheriting Mg/As/Al/Mn/Sr criticality.
+Cabalzarite passes with limitations: IMA:1997-012 CaMg2(AsO4)2(H2O)2 identity (tsumcorite-group M1CaM2(Mg,Al,Fe3+)2(AsO4)2(H2O,OH)2), monoclinic C2/m structure (ESRF synchrotron powder a = 8.945(1), b = 6.156(1), c = 7.358(1) A, beta = 115.30(2) deg, V = 366.3(1) A3; SXRD CABA11.5 a = 8.925(2), b = 6.143(1), c = 7.352(1) A, beta = 115.25(3) deg, V = 364.6(1) A3, Z = 2, R1 = 1.80% for 436 reflections), Falotta holotype MGL73785 EMPA chemistry (As2O5 55.57, CaO 13.64, Al2O3 9.84, MgO 7.54, Fe2O3 4.38, Mn2O3 0.55, SrO 0.49, SiO2 0.05, H2Ocalc 7.11, sum 99.17 wt%), and N2 TGA dehydration (~6 wt% mass loss at 640-700 C on 3.30 mg sample) are supported without inheriting Mg/As/Al/Mn/Sr criticality.
 
 ## Scope And Provenance
 
@@ -39,7 +39,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 evidence: supported. Targets: cmmmech:cabalzarite.
 
-IMA:1997-012 CaMg2(AsO4)2(H2O)2 identity (tsumcorite-group M1CaM2(Mg,Al,Fe3+)2(AsO4)2(H2O,OH)2), monoclinic C2/m structure (ESRF synchrotron powder a = 8.945(1), b = 6.156(1), c = 7.358(1) A, beta = 115.30(2) deg, V = 366.3(1) A3; SXRD CABA11.5 a = 8.925(2), b = 6.143(1), c = 7.352(1) A, beta = 115.25(3) deg, V = 364.6(1) A3, Z = 2, R1 = 1.80% for 436 reflections), Falotta holotype MGL73785 EMPA chemistry (As2O5 55.57,CaO 13.64, Al2O3 9.84, MgO 7.54, Fe2O3 4.38, Mn2O3 0.55, SrO 0.49, SiO2 0.05, H2Ocalc 7.11, sum 99.17 wt%), and N2 TGA dehydration (~6 wt% mass loss at 640-700 C on 3.30 mg sample) are supported without inheriting Mg/As/Al/Mn/Sr criticality.
+IMA:1997-012 CaMg2(AsO4)2(H2O)2 identity (tsumcorite-group M1CaM2(Mg,Al,Fe3+)2(AsO4)2(H2O,OH)2), monoclinic C2/m structure (ESRF synchrotron powder a = 8.945(1), b = 6.156(1), c = 7.358(1) A, beta = 115.30(2) deg, V = 366.3(1) A3; SXRD CABA11.5 a = 8.925(2), b = 6.143(1), c = 7.352(1) A, beta = 115.25(3) deg, V = 364.6(1) A3, Z = 2, R1 = 1.80% for 436 reflections), Falotta holotype MGL73785 EMPA chemistry (As2O5 55.57, CaO 13.64, Al2O3 9.84, MgO 7.54, Fe2O3 4.38, Mn2O3 0.55, SrO 0.49, SiO2 0.05, H2Ocalc 7.11, sum 99.17 wt%), and N2 TGA dehydration (~6 wt% mass loss at 640-700 C on 3.30 mg sample) are supported without inheriting Mg/As/Al/Mn/Sr criticality.
 
 ### Provenance, category boundaries, and absence of fabricated claims
 
@@ -64,7 +64,7 @@ No findings recorded within this review's declared scope.
 | history | history/records/cabalzarite/2026-10-23T071500Z-antigravity-001191.yaml; Complete canonical CREATE sidecar history/records/cabalzarite/2026-10-23T071500Z-antigravity-001191.yaml | supports | Canonical history sidecar and inline history event accurately record actor, UTC timestamp, and scientific scope. |
 | dossier | research/sources/round119-minerals/20261023T072000Z-source-investigation.json; Paired Round 119 source investigation dossier research/sources/round119-minerals/20261023T072000Z-source-investigation.json | context_only | Documents deduplication, primary-source acquisition hashes, and scope boundaries. |
 | ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List (244 pages visually inspected) | supports | Establishes official mineral species nomenclature, formula, approval status, and commodity vs mineral category boundary. |
-| primary_study | https://www.rruff.net/doclib/am/vol85/AM85_1307.pdf; Complete full-text visual inspection of AM 85 (2000) 1307-1314 (8 pp.) and IMA September 2026 Master List p. 33 (IMA:1997-012) | supports | IMA:1997-012 CaMg2(AsO4)2(H2O)2 identity (tsumcorite-group M1CaM2(Mg,Al,Fe3+)2(AsO4)2(H2O,OH)2), monoclinic C2/m structure (ESRF synchrotron powder a = 8.945(1), b = 6.156(1), c = 7.358(1) A, beta = 115.30(2) deg, V = 366.3(1) A3; SXRD CABA11.5 a = 8.925(2), b = 6.143(1), c = 7.352(1) A, beta = 115.25(3) deg, V = 364.6(1) A3, Z = 2, R1 = 1.80% for 436 reflections), Falotta holotype MGL73785 EMPA chemistry (As2O5 55.57,CaO 13.64, Al2O3 9.84, MgO 7.54, Fe2O3 4.38, Mn2O3 0.55, SrO 0.49, SiO2 0.05, H2Ocalc 7.11, sum 99.17 wt%), and N2 TGA dehydration (~6 wt% mass loss at 640-700 C on 3.30 mg sample) are supported without inheriting Mg/As/Al/Mn/Sr criticality. |
+| primary_study | https://www.rruff.net/doclib/am/vol85/AM85_1307.pdf; Complete full-text visual inspection of AM 85 (2000) 1307-1314 (8 pp.) and IMA September 2026 Master List p. 33 (IMA:1997-012) | supports | IMA:1997-012 CaMg2(AsO4)2(H2O)2 identity (tsumcorite-group M1CaM2(Mg,Al,Fe3+)2(AsO4)2(H2O,OH)2), monoclinic C2/m structure (ESRF synchrotron powder a = 8.945(1), b = 6.156(1), c = 7.358(1) A, beta = 115.30(2) deg, V = 366.3(1) A3; SXRD CABA11.5 a = 8.925(2), b = 6.143(1), c = 7.352(1) A, beta = 115.25(3) deg, V = 364.6(1) A3, Z = 2, R1 = 1.80% for 436 reflections), Falotta holotype MGL73785 EMPA chemistry (As2O5 55.57, CaO 13.64, Al2O3 9.84, MgO 7.54, Fe2O3 4.38, Mn2O3 0.55, SrO 0.49, SiO2 0.05, H2Ocalc 7.11, sum 99.17 wt%), and N2 TGA dehydration (~6 wt% mass loss at 640-700 C on 3.30 mg sample) are supported without inheriting Mg/As/Al/Mn/Sr criticality. |
 | validation | data/records/cabalzarite.yaml; Strict schema and history validation across all 646 records and 939 history sidecars | supports | Checked 646 record(s), 0 failed; Checked 939 history record(s), 0 error(s). |
 
 ## Limits And Additional Notes
@@ -186,7 +186,7 @@ evidence:
     c = 7.358(1) A, beta = 115.30(2) deg, V = 366.3(1) A3; SXRD CABA11.5 a = 8.925(2),
     b = 6.143(1), c = 7.352(1) A, beta = 115.25(3) deg, V = 364.6(1) A3, Z = 2, R1
     = 1.80% for 436 reflections), Falotta holotype MGL73785 EMPA chemistry (As2O5
-    55.57,CaO 13.64, Al2O3 9.84, MgO 7.54, Fe2O3 4.38, Mn2O3 0.55, SrO 0.49, SiO2
+    55.57, CaO 13.64, Al2O3 9.84, MgO 7.54, Fe2O3 4.38, Mn2O3 0.55, SrO 0.49, SiO2
     0.05, H2Ocalc 7.11, sum 99.17 wt%), and N2 TGA dehydration (~6 wt% mass loss at
     640-700 C on 3.30 mg sample) are supported without inheriting Mg/As/Al/Mn/Sr criticality.
   snapshot_sha256: c4fde79fa9f6eeb1a3b28d572572d8201226e72da15a9e97a7a4d5f7dea7b42d
@@ -234,7 +234,7 @@ assessments:
     c = 7.358(1) A, beta = 115.30(2) deg, V = 366.3(1) A3; SXRD CABA11.5 a = 8.925(2),
     b = 6.143(1), c = 7.352(1) A, beta = 115.25(3) deg, V = 364.6(1) A3, Z = 2, R1
     = 1.80% for 436 reflections), Falotta holotype MGL73785 EMPA chemistry (As2O5
-    55.57,CaO 13.64, Al2O3 9.84, MgO 7.54, Fe2O3 4.38, Mn2O3 0.55, SrO 0.49, SiO2
+    55.57, CaO 13.64, Al2O3 9.84, MgO 7.54, Fe2O3 4.38, Mn2O3 0.55, SrO 0.49, SiO2
     0.05, H2Ocalc 7.11, sum 99.17 wt%), and N2 TGA dehydration (~6 wt% mass loss at
     640-700 C on 3.30 mg sample) are supported without inheriting Mg/As/Al/Mn/Sr criticality.
   target_ids:
@@ -264,7 +264,7 @@ summary: 'Cabalzarite passes with limitations: IMA:1997-012 CaMg2(AsO4)2(H2O)2 i
   (ESRF synchrotron powder a = 8.945(1), b = 6.156(1), c = 7.358(1) A, beta = 115.30(2)
   deg, V = 366.3(1) A3; SXRD CABA11.5 a = 8.925(2), b = 6.143(1), c = 7.352(1) A,
   beta = 115.25(3) deg, V = 364.6(1) A3, Z = 2, R1 = 1.80% for 436 reflections), Falotta
-  holotype MGL73785 EMPA chemistry (As2O5 55.57,CaO 13.64, Al2O3 9.84, MgO 7.54, Fe2O3
+  holotype MGL73785 EMPA chemistry (As2O5 55.57, CaO 13.64, Al2O3 9.84, MgO 7.54, Fe2O3
   4.38, Mn2O3 0.55, SrO 0.49, SiO2 0.05, H2Ocalc 7.11, sum 99.17 wt%), and N2 TGA
   dehydration (~6 wt% mass loss at 640-700 C on 3.30 mg sample) are supported without
   inheriting Mg/As/Al/Mn/Sr criticality.'

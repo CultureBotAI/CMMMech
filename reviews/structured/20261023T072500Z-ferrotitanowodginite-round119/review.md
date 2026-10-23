@@ -103,7 +103,7 @@ source:
   state: working_tree
   inputs:
   - path: data/records/ferrotitanowodginite.yaml
-    sha256: 48ad15296ac15efdc21da8de7994bf28025d1740a43a6ea4c3403913cdd14cd7
+    sha256: 7a5b7a838587017f301265088dcfe03a203db2f2c4a7c8a86d846b2caf9a84bb
     role: target
   - path: history/records/ferrotitanowodginite/2026-10-23T071500Z-antigravity-001195.yaml
     sha256: d430b850e936db9440423836c0710bdbb80006773e5891cb8fb7417fb0bf3cd7
@@ -147,7 +147,7 @@ evidence:
   support: supports
   summary: All structured claims, identifiers, relations, and qualification notes
     match the inspected primary sources.
-  snapshot_sha256: 48ad15296ac15efdc21da8de7994bf28025d1740a43a6ea4c3403913cdd14cd7
+  snapshot_sha256: 7a5b7a838587017f301265088dcfe03a203db2f2c4a7c8a86d846b2caf9a84bb
 - evidence_id: history
   kind: record_content
   reference: history/records/ferrotitanowodginite/2026-10-23T071500Z-antigravity-001195.yaml
@@ -196,7 +196,7 @@ evidence:
   accessed_at: '2026-10-23T07:25:00Z'
   support: supports
   summary: Checked 646 record(s), 0 failed; Checked 939 history record(s), 0 error(s).
-  snapshot_sha256: 48ad15296ac15efdc21da8de7994bf28025d1740a43a6ea4c3403913cdd14cd7
+  snapshot_sha256: 7a5b7a838587017f301265088dcfe03a203db2f2c4a7c8a86d846b2caf9a84bb
 checks:
 - check_id: validate_records
   name: Strict corpus validation

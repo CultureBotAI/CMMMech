@@ -103,7 +103,7 @@ source:
   state: working_tree
   inputs:
   - path: data/records/khomyakovite.yaml
-    sha256: 374d2fc327dfba9c0280369662d45424776cb16e7a41536c591cc461eae60078
+    sha256: b4f3769d5317f5eb4bd77bb99183b831d8969b0593ee1dcaf73d8d31ed671e05
     role: target
   - path: history/records/khomyakovite/2026-10-23T071500Z-antigravity-001199.yaml
     sha256: 9f15b9b97578e8642bb5d9365db06473dff8b3f7fce0ff61d06b0c22c31335fb
@@ -147,7 +147,7 @@ evidence:
   support: supports
   summary: All structured claims, identifiers, relations, and qualification notes
     match the inspected primary sources.
-  snapshot_sha256: 374d2fc327dfba9c0280369662d45424776cb16e7a41536c591cc461eae60078
+  snapshot_sha256: b4f3769d5317f5eb4bd77bb99183b831d8969b0593ee1dcaf73d8d31ed671e05
 - evidence_id: history
   kind: record_content
   reference: history/records/khomyakovite/2026-10-23T071500Z-antigravity-001199.yaml
@@ -198,7 +198,7 @@ evidence:
   accessed_at: '2026-10-23T07:25:00Z'
   support: supports
   summary: Checked 646 record(s), 0 failed; Checked 939 history record(s), 0 error(s).
-  snapshot_sha256: 374d2fc327dfba9c0280369662d45424776cb16e7a41536c591cc461eae60078
+  snapshot_sha256: b4f3769d5317f5eb4bd77bb99183b831d8969b0593ee1dcaf73d8d31ed671e05
 checks:
 - check_id: validate_records
   name: Strict corpus validation

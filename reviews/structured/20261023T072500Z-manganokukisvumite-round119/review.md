@@ -103,7 +103,7 @@ source:
   state: working_tree
   inputs:
   - path: data/records/manganokukisvumite.yaml
-    sha256: 898448d317ecc2fd73e56a5eaee9f59dfaf9b0e8ef6718c69767ad6a27ffe829
+    sha256: 806cc68ae70d92cb2f6cfb684420aeaef71193be5255ad6e8fd5f34df6a9af0f
     role: target
   - path: history/records/manganokukisvumite/2026-10-23T071500Z-antigravity-00119d.yaml
     sha256: 55fcb644916bf307180b4710f38cc9f069d124ce376f2776503a0494adb0ad92
@@ -147,7 +147,7 @@ evidence:
   support: supports
   summary: All structured claims, identifiers, relations, and qualification notes
     match the inspected primary sources.
-  snapshot_sha256: 898448d317ecc2fd73e56a5eaee9f59dfaf9b0e8ef6718c69767ad6a27ffe829
+  snapshot_sha256: 806cc68ae70d92cb2f6cfb684420aeaef71193be5255ad6e8fd5f34df6a9af0f
 - evidence_id: history
   kind: record_content
   reference: history/records/manganokukisvumite/2026-10-23T071500Z-antigravity-00119d.yaml
@@ -198,7 +198,7 @@ evidence:
   accessed_at: '2026-10-23T07:25:00Z'
   support: supports
   summary: Checked 646 record(s), 0 failed; Checked 939 history record(s), 0 error(s).
-  snapshot_sha256: 898448d317ecc2fd73e56a5eaee9f59dfaf9b0e8ef6718c69767ad6a27ffe829
+  snapshot_sha256: 806cc68ae70d92cb2f6cfb684420aeaef71193be5255ad6e8fd5f34df6a9af0f
 checks:
 - check_id: validate_records
   name: Strict corpus validation
