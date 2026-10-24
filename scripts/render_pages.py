@@ -539,7 +539,62 @@ def render(out_dir: Path) -> None:
             '</body>\n'
             '</html>\n'
         )
-        (REPO_ROOT / "index.html").write_text(root_index, encoding="utf-8")
+        root_index_path = REPO_ROOT / "index.html"
+        if not root_index_path.exists() or root_index_path.read_text(encoding="utf-8") != root_index:
+            root_index_path.write_text(root_index, encoding="utf-8")
+
+
+def _remove_tree(path: Path) -> bool:
+    """Remove a directory tree, falling back to path-based unlinking when dir_fd unlinkat is blocked."""
+    try:
+        shutil.rmtree(path)
+        return True
+    except PermissionError:
+        removed_all = True
+        for child in sorted(path.rglob("*"), key=lambda p: len(p.parts), reverse=True):
+            try:
+                if child.is_file() or child.is_symlink():
+                    child.unlink()
+                elif child.is_dir():
+                    child.rmdir()
+            except PermissionError:
+                removed_all = False
+        if removed_all:
+            try:
+                path.rmdir()
+                return True
+            except PermissionError:
+                return False
+        return False
+
+
+def _sync_rendered_tree(src: Path, dst: Path) -> None:
+    """Synchronize rendered files from src into dst, updating only changed files and pruning stale paths."""
+    if dst.exists() and _remove_tree(dst):
+        shutil.copytree(src, dst)
+        return
+
+    dst.mkdir(parents=True, exist_ok=True)
+    src_rel_files: set[Path] = set()
+    for item in sorted(src.rglob("*")):
+        rel = item.relative_to(src)
+        target = dst / rel
+        if item.is_dir():
+            target.mkdir(parents=True, exist_ok=True)
+        else:
+            src_rel_files.add(rel)
+            data = item.read_bytes()
+            if not target.exists() or target.read_bytes() != data:
+                target.parent.mkdir(parents=True, exist_ok=True)
+                target.write_bytes(data)
+
+    for existing in sorted(dst.rglob("*"), key=lambda p: len(p.parts), reverse=True):
+        rel = existing.relative_to(dst)
+        if existing.is_file() or existing.is_symlink():
+            if rel not in src_rel_files:
+                existing.unlink()
+        elif existing.is_dir() and not (src / rel).exists():
+            existing.rmdir()
 
 
 def _tree_differs(a: Path, b: Path) -> list[str]:
@@ -580,9 +635,28 @@ def main(argv: list[str] | None = None) -> int:
         print("pages/ is current")
         return 0
 
-    if args.out.exists():
-        shutil.rmtree(args.out)
-    render(args.out)
+    with tempfile.TemporaryDirectory() as tmp:
+        tmp_path = Path(tmp)
+        render(tmp_path)
+        _sync_rendered_tree(tmp_path, args.out)
+    if args.out.resolve() == PAGES_DIR.resolve():
+        root_index = (
+            '<!DOCTYPE html>\n'
+            '<html lang="en">\n'
+            '<head>\n'
+            '<meta charset="utf-8">\n'
+            '<meta http-equiv="refresh" content="0; url=pages/index.html">\n'
+            '<link rel="canonical" href="pages/index.html">\n'
+            '<title>Redirecting to CMMMech...</title>\n'
+            '</head>\n'
+            '<body>\n'
+            '<p>Redirecting to <a href="pages/index.html">CMMMech</a>...</p>\n'
+            '</body>\n'
+            '</html>\n'
+        )
+        root_index_path = REPO_ROOT / "index.html"
+        if not root_index_path.exists() or root_index_path.read_text(encoding="utf-8") != root_index:
+            root_index_path.write_text(root_index, encoding="utf-8")
     print(f"Rendered CMMMech site under {args.out}")
     return 0
 

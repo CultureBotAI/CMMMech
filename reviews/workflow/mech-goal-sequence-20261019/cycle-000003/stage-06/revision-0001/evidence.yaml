@@ -1,0 +1,65 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 3
+stage: 6
+revision: 1
+outcome: completed
+summary: "Froze INFRA_TASKS.md at supervisor cutoff 2026-10-24T04:20:20Z (sha256 d3bbc5b0b6083110107f7e1a6b632cc92d32c84997e0ee03c84108ed5485e0a1) across the 5 pending infrastructure tasks (cmmmech-infra-0001, cmmmech-infra-0005, cmmmech-infra-0007, cmmmech-infra-0008, cmmmech-infra-0009; while retaining previously resolved cmmmech-infra-0002, cmmmech-infra-0003, cmmmech-infra-0004, cmmmech-infra-0006 in INFRA_TASKS.md), grouped and linked cmmmech-infra-0007 to GitHub issue #834 and cmmmech-infra-0008/cmmmech-infra-0009 to GitHub issue #835, implemented and validated cmmmech-infra-0007 (#834: _remove_tree() and _sync_rendered_tree() fallbacks for shutil.rmtree() in scripts/render_pages.py) and cmmmech-infra-0008/cmmmech-infra-0009 (#835: mechanism-level organisms/evidence/observations patches and node_protein_examples parity upsert in scripts/curate_causal_graphs.py), and explicitly carried forward deferred upstream-governed scripts/record_review.py tasks cmmmech-infra-0001 and cmmmech-infra-0005 under open issue #805."
+source_revision: 8020853515e7c11253f722711393bf61824a423e
+scope_frozen_at: '2026-10-24T04:20:20Z'
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/infra_snapshot.md
+  sha256: d3bbc5b0b6083110107f7e1a6b632cc92d32c84997e0ee03c84108ed5485e0a1
+  kind: infra_snapshot
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/implementation_plan.md
+  sha256: 47c819693dae0d4633d2fefcaf352b7babb473cbcc9463b06cd4fa5790507130
+  kind: implementation_plan
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/validation.md
+  sha256: 01e3475935a156bf88577e441098767a2656800628bb838ab530004f79dc3e6b
+  kind: validation
+findings: []
+groups: []
+carry_forward_ids: []
+infra_tasks:
+- task_id: cmmmech-infra-0001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
+  status: deferred
+  summary: "Anchor scripts/record_review.py _directory() traversal at repository ROOT instead of filesystem root / so review validation runs inside Seatbelt sandboxes"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/validation.md
+  disposition: "Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6 and Cycle 3 Stage 6 because scripts/record_review.py and tests/test_record_review_contract.py are vendored artifacts governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); tracked under open issue #805 for coordinated upstream implementation and sync."
+- task_id: cmmmech-infra-0005
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
+  status: deferred
+  summary: "Batch git cat-file object size and content checks in scripts/record_review.py assert_append_only() and source_provenance() via git cat-file --batch"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/validation.md
+  disposition: "Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6 and Cycle 3 Stage 6 because scripts/record_review.py is a vendored artifact governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); grouped with cmmmech-infra-0001 under open issue #805 for upstream implementation and sync."
+- task_id: cmmmech-infra-0007
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/834
+  status: resolved
+  summary: "Add a path-based directory cleanup fallback when shutil.rmtree() raises PermissionError on dir_fd unlinkat() in scripts/render_pages.py so static page rendering succeeds inside macOS Seatbelt sandboxes"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/validation.md
+  disposition: "Resolved in Cycle 3 Stage 6 (#834) by adding _remove_tree() and _sync_rendered_tree() in scripts/render_pages.py so static page rendering falls back cleanly when Seatbelt blocks dir_fd unlinkat() or unchanged provenance-tagged file deletion, verified by unit tests in tests/test_render_pages.py and sandboxed execution of scripts/render_pages.py."
+- task_id: cmmmech-infra-0008
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/835
+  status: resolved
+  summary: "Extend scripts/curate_causal_graphs.py apply_curation_patch() to support mechanism-id-keyed organisms, evidence, and observations updates alongside causal_graphs and protein_examples"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/validation.md
+  disposition: "Resolved in Cycle 3 Stage 6 (#835) by extending apply_curation_patch() in scripts/curate_causal_graphs.py with mechanism_organisms, mechanism_evidence, mechanism_observations, and composite mechanism_patches support (both upsert and replace modes), verified by unit tests in tests/test_curate_causal_graphs.py."
+- task_id: cmmmech-infra-0009
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/835
+  status: resolved
+  summary: "Node-level protein_examples upsert and mechanism/node parity enforcement in scripts/curate_causal_graphs.py"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-06/revision-0001/validation.md
+  disposition: "Resolved in Cycle 3 Stage 6 (#835) by adding node_protein_examples upsert support and automatic bidirectional mechanisms[].protein_examples <-> causal_graphs[].nodes[].protein_examples parity synchronization in scripts/curate_causal_graphs.py, verified by unit tests in tests/test_curate_causal_graphs.py."

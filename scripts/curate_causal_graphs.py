@@ -105,45 +105,170 @@ def _upsert_by_key(existing: list[dict[str, Any]], incoming: list[dict[str, Any]
     return result
 
 
+def _upsert_organisms(existing: list[dict[str, Any]], incoming: list[dict[str, Any]]) -> list[dict[str, Any]]:
+    """Upsert OrganismRef entries matching by id/ncbi_taxon_id first and falling back to label."""
+    result = [copy.deepcopy(item) for item in existing]
+    for item in incoming:
+        item_copy = copy.deepcopy(item)
+        matched_idx: int | None = None
+        for key in ("id", "ncbi_taxon_id", "label"):
+            val = item_copy.get(key)
+            if val is not None:
+                for idx, cur in enumerate(result):
+                    if isinstance(cur, dict) and cur.get(key) == val:
+                        matched_idx = idx
+                        break
+            if matched_idx is not None:
+                break
+        if matched_idx is not None:
+            result[matched_idx] = item_copy
+        else:
+            result.append(item_copy)
+    return result
+
+
+def _normalize_mech_field_map(raw: Any, value_key: str) -> dict[str, list[dict[str, Any]]]:
+    if isinstance(raw, dict):
+        return {str(k): list(v or []) for k, v in raw.items()}
+    if isinstance(raw, list):
+        out: dict[str, list[dict[str, Any]]] = {}
+        for entry in raw:
+            if not isinstance(entry, dict) or "mechanism_id" not in entry or value_key not in entry:
+                raise ValueError(f"Expected mapping with 'mechanism_id' and {value_key!r}, got {entry!r}")
+            out[str(entry["mechanism_id"])] = list(entry[value_key] or [])
+        return out
+    return {}
+
+
+def _normalize_node_pe_updates(raw: Any) -> list[tuple[str, str, list[dict[str, Any]]]]:
+    updates: list[tuple[str, str, list[dict[str, Any]]]] = []
+    if isinstance(raw, dict):
+        for key, value in raw.items():
+            if isinstance(key, tuple) and len(key) == 2:
+                updates.append((str(key[0]), str(key[1]), list(value or [])))
+            elif isinstance(value, dict):
+                for node_id, pe_list in value.items():
+                    updates.append((str(key), str(node_id), list(pe_list or [])))
+            elif isinstance(key, str) and ("/" in key or ":" in key):
+                sep = "/" if "/" in key else ":"
+                graph_id, node_id = key.split(sep, 1)
+                updates.append((graph_id, node_id, list(value or [])))
+            else:
+                raise ValueError(
+                    f"Unsupported node_protein_examples key {key!r}; use '<graph_id>/<node_id>', "
+                    "nested {graph_id: {node_id: [...]}}, or list of {'graph_id', 'node_id', 'protein_examples'}."
+                )
+    elif isinstance(raw, list):
+        for entry in raw:
+            if not isinstance(entry, dict) or "graph_id" not in entry or "node_id" not in entry:
+                raise ValueError(
+                    f"Expected mapping with 'graph_id', 'node_id', and 'protein_examples', got {entry!r}"
+                )
+            updates.append(
+                (str(entry["graph_id"]), str(entry["node_id"]), list(entry.get("protein_examples") or []))
+            )
+    return updates
+
+
 def apply_curation_patch(record: dict[str, Any], patch: dict[str, Any]) -> tuple[dict[str, Any], list[str]]:
-    """Apply a structured causal_graphs / protein_examples patch and return (updated_record, sections)."""
+    """Apply a structured causal_graphs / protein_examples / mechanism patch and return (updated_record, sections)."""
     updated = copy.deepcopy(record)
     touched_sections: list[str] = []
+
+    def _mark_section(section: str) -> None:
+        if section not in touched_sections:
+            touched_sections.append(section)
 
     if "ima_symbol" in patch:
         if patch["ima_symbol"] is None:
             updated.pop("ima_symbol", None)
         else:
             updated["ima_symbol"] = patch["ima_symbol"]
-        touched_sections.append("ima_symbol")
+        _mark_section("ima_symbol")
 
     if "polymorph_or_grade" in patch:
         if patch["polymorph_or_grade"] is None:
             updated.pop("polymorph_or_grade", None)
         else:
             updated["polymorph_or_grade"] = patch["polymorph_or_grade"]
-        touched_sections.append("polymorph_or_grade")
+        _mark_section("polymorph_or_grade")
 
     if patch.get("sources"):
         updated["sources"] = _upsert_by_key(updated.get("sources", []), patch["sources"], "id")
-        touched_sections.append("sources")
+        _mark_section("sources")
 
-    mech_pe_map: dict[str, list[dict[str, Any]]] = {}
-    raw_mech_pe = patch.get("mechanism_protein_examples")
-    if isinstance(raw_mech_pe, dict):
-        mech_pe_map = raw_mech_pe
-    elif isinstance(raw_mech_pe, list):
-        for entry in raw_mech_pe:
-            mech_pe_map[entry["mechanism_id"]] = entry["protein_examples"]
+    mechanisms = updated.get("mechanisms", [])
+    mech_by_id = {m["id"]: m for m in mechanisms if isinstance(m, dict) and "id" in m}
+
+    mech_org_map = _normalize_mech_field_map(patch.get("mechanism_organisms"), "organisms")
+    mech_ev_map = _normalize_mech_field_map(patch.get("mechanism_evidence"), "evidence")
+    mech_obs_map = _normalize_mech_field_map(patch.get("mechanism_observations"), "observations")
+    mech_pe_map = _normalize_mech_field_map(patch.get("mechanism_protein_examples"), "protein_examples")
+
+    raw_mech_patches = patch.get("mechanism_patches")
+    mech_subpatches: dict[str, dict[str, Any]] = {}
+    if isinstance(raw_mech_patches, dict):
+        for mech_id, subpatch in raw_mech_patches.items():
+            if not isinstance(subpatch, dict):
+                continue
+            mech_key = str(mech_id)
+            mech_subpatches[mech_key] = subpatch
+            if "organisms" in subpatch:
+                mech_org_map[mech_key] = list(subpatch["organisms"] or [])
+            if "evidence" in subpatch:
+                mech_ev_map[mech_key] = list(subpatch["evidence"] or [])
+            if "observations" in subpatch:
+                mech_obs_map[mech_key] = list(subpatch["observations"] or [])
+            if "protein_examples" in subpatch:
+                mech_pe_map[mech_key] = list(subpatch["protein_examples"] or [])
+
+    if mech_org_map:
+        for mech_id, org_list in mech_org_map.items():
+            if mech_id not in mech_by_id:
+                raise ValueError(f"Unknown mechanism_id in patch: {mech_id!r}")
+            target_mech = mech_by_id[mech_id]
+            sub = mech_subpatches.get(mech_id, {})
+            if patch.get("replace_organisms", False) or sub.get("replace_organisms", False):
+                target_mech["organisms"] = copy.deepcopy(org_list)
+            else:
+                target_mech["organisms"] = _upsert_organisms(target_mech.get("organisms", []), org_list)
+        _mark_section("mechanisms")
+
+    if mech_ev_map:
+        for mech_id, ev_list in mech_ev_map.items():
+            if mech_id not in mech_by_id:
+                raise ValueError(f"Unknown mechanism_id in patch: {mech_id!r}")
+            target_mech = mech_by_id[mech_id]
+            sub = mech_subpatches.get(mech_id, {})
+            if patch.get("replace_evidence", False) or sub.get("replace_evidence", False):
+                target_mech["evidence"] = copy.deepcopy(ev_list)
+            else:
+                target_mech["evidence"] = _upsert_by_key(target_mech.get("evidence", []), ev_list, "source_ref")
+        _mark_section("mechanisms")
+
+    if mech_obs_map:
+        for mech_id, obs_list in mech_obs_map.items():
+            if mech_id not in mech_by_id:
+                raise ValueError(f"Unknown mechanism_id in patch: {mech_id!r}")
+            target_mech = mech_by_id[mech_id]
+            sub = mech_subpatches.get(mech_id, {})
+            if patch.get("replace_observations", False) or sub.get("replace_observations", False):
+                target_mech["observations"] = copy.deepcopy(obs_list)
+            else:
+                target_mech["observations"] = _upsert_by_key(
+                    target_mech.get("observations", []),
+                    obs_list,
+                    "parameter",
+                )
+        _mark_section("mechanisms")
 
     if mech_pe_map:
-        mechanisms = updated.get("mechanisms", [])
-        mech_by_id = {m["id"]: m for m in mechanisms if isinstance(m, dict) and "id" in m}
         for mech_id, pe_list in mech_pe_map.items():
             if mech_id not in mech_by_id:
                 raise ValueError(f"Unknown mechanism_id in patch: {mech_id!r}")
             target_mech = mech_by_id[mech_id]
-            if patch.get("replace_protein_examples", False):
+            sub = mech_subpatches.get(mech_id, {})
+            if patch.get("replace_protein_examples", False) or sub.get("replace_protein_examples", False):
                 target_mech["protein_examples"] = copy.deepcopy(pe_list)
             else:
                 target_mech["protein_examples"] = _upsert_by_key(
@@ -151,7 +276,7 @@ def apply_curation_patch(record: dict[str, Any], patch: dict[str, Any]) -> tuple
                     pe_list,
                     "uniprot_accession",
                 )
-        touched_sections.append("mechanisms")
+        _mark_section("mechanisms")
 
     if "causal_graphs" in patch:
         incoming_graphs = patch["causal_graphs"] or []
@@ -166,7 +291,107 @@ def apply_curation_patch(record: dict[str, Any], patch: dict[str, Any]) -> tuple
                 incoming_graphs,
                 "id",
             )
-        touched_sections.append("causal_graphs")
+        _mark_section("causal_graphs")
+
+    node_pe_updates = _normalize_node_pe_updates(patch.get("node_protein_examples"))
+    if node_pe_updates:
+        graphs = updated.get("causal_graphs", [])
+        graph_by_id = {g["id"]: g for g in graphs if isinstance(g, dict) and "id" in g}
+        for graph_id, node_id, pe_list in node_pe_updates:
+            if graph_id not in graph_by_id:
+                raise ValueError(f"Unknown causal_graph id in node_protein_examples: {graph_id!r}")
+            graph = graph_by_id[graph_id]
+            node_by_id = {n["id"]: n for n in graph.get("nodes", []) if isinstance(n, dict) and "id" in n}
+            if node_id not in node_by_id:
+                raise ValueError(f"Unknown node_id {node_id!r} in causal_graph {graph_id!r}")
+            target_node = node_by_id[node_id]
+            if patch.get("replace_node_protein_examples", False) or patch.get("replace_protein_examples", False):
+                target_node["protein_examples"] = copy.deepcopy(pe_list)
+            else:
+                target_node["protein_examples"] = _upsert_by_key(
+                    target_node.get("protein_examples", []),
+                    pe_list,
+                    "uniprot_accession",
+                )
+            if target_node.get("node_type") == "GENE_OR_PROTEIN" and target_node.get("protein_examples"):
+                target_node["protein_grounding_status"] = "GROUNDED"
+            mech_ref = graph.get("mechanism_ref")
+            if mech_ref and mech_ref in mech_by_id and patch.get("sync_protein_examples_parity", True):
+                target_mech = mech_by_id[mech_ref]
+                target_mech["protein_examples"] = _upsert_by_key(
+                    target_mech.get("protein_examples", []),
+                    pe_list,
+                    "uniprot_accession",
+                )
+                _mark_section("mechanisms")
+        _mark_section("causal_graphs")
+
+    if patch.get("sync_protein_examples_parity", False) or (
+        mech_pe_map and patch.get("sync_protein_examples_parity", True)
+    ):
+        graphs = updated.get("causal_graphs", [])
+        for graph in graphs:
+            if not isinstance(graph, dict):
+                continue
+            mech_ref = graph.get("mechanism_ref")
+            if not mech_ref or mech_ref not in mech_by_id:
+                continue
+            target_mech = mech_by_id[mech_ref]
+            mech_pe_by_acc = {
+                pe["uniprot_accession"]: pe
+                for pe in target_mech.get("protein_examples", [])
+                if isinstance(pe, dict) and "uniprot_accession" in pe
+            }
+            gene_or_protein_nodes = [
+                n for n in graph.get("nodes", [])
+                if isinstance(n, dict) and n.get("node_type") == "GENE_OR_PROTEIN"
+            ]
+            node_accs: set[str] = set()
+            for node in graph.get("nodes", []):
+                if not isinstance(node, dict) or not node.get("protein_examples"):
+                    continue
+                node_pes = node["protein_examples"]
+                changed_node = False
+                for idx, node_pe in enumerate(node_pes):
+                    acc = node_pe.get("uniprot_accession") if isinstance(node_pe, dict) else None
+                    if acc:
+                        node_accs.add(acc)
+                    if acc and acc in mech_pe_by_acc and node_pe != mech_pe_by_acc[acc]:
+                        node_pes[idx] = copy.deepcopy(mech_pe_by_acc[acc])
+                        changed_node = True
+                    elif acc and acc not in mech_pe_by_acc:
+                        target_mech["protein_examples"] = _upsert_by_key(
+                            target_mech.get("protein_examples", []),
+                            [node_pe],
+                            "uniprot_accession",
+                        )
+                        mech_pe_by_acc[acc] = copy.deepcopy(node_pe)
+                        _mark_section("mechanisms")
+                if changed_node:
+                    _mark_section("causal_graphs")
+
+            for acc, mech_pe in mech_pe_by_acc.items():
+                if acc in node_accs:
+                    continue
+                target_node: dict[str, Any] | None = None
+                gene_sym = mech_pe.get("gene_symbol")
+                if gene_sym:
+                    for cand in gene_or_protein_nodes:
+                        if cand.get("gene_symbol") == gene_sym:
+                            target_node = cand
+                            break
+                if target_node is None and len(gene_or_protein_nodes) == 1:
+                    target_node = gene_or_protein_nodes[0]
+                if target_node is not None:
+                    target_node["protein_examples"] = _upsert_by_key(
+                        target_node.get("protein_examples", []),
+                        [mech_pe],
+                        "uniprot_accession",
+                    )
+                    if target_node.get("protein_examples"):
+                        target_node["protein_grounding_status"] = "GROUNDED"
+                    node_accs.add(acc)
+                    _mark_section("causal_graphs")
 
     return order_record_keys(updated), touched_sections
 
