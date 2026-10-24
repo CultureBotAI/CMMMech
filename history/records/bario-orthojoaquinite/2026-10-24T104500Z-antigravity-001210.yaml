@@ -1,0 +1,42 @@
+history_version: 1
+target:
+  kind: record
+  slug: bario-orthojoaquinite
+  path: data/records/bario-orthojoaquinite.yaml
+session:
+  id: 2026-10-24T104500Z-antigravity-001210
+  timestamp: '2026-10-24T10:45:00Z'
+  actors:
+    - name: antigravity
+      type: ai_agent
+      model: antigravity
+      agent_tool: antigravity-cli
+links:
+  issues:
+    - https://github.com/CultureBotAI/CMMMech/issues/838
+  prs:
+    - https://github.com/CultureBotAI/CMMMech/pull/837
+events:
+  - type: EDIT
+    outcome: changed
+    summary: >-
+      Resolved CMM120-F5 (issue #838) by replacing the mixed-column oxide values
+      and empirical formula with the exact Table 1 column 5 electron microprobe
+      analysis (SiO2 35.15, TiO2 11.33, Al2O3 0.57, FeO 9.47, MnO 0.62, BaO
+      38.56, SrO 3.34, CaO 0.17, Na2O 0.12, H2O 1.3 calc., total 100.63 wt%) and
+      simplifying sources[1].title to a concise bibliographic citation.
+    details: >-
+      Re-inspected Wise (1982) American Mineralogist 67:809-816 (AM67_809.pdf, p.
+      811, Table 1 column 5) to resolve finding CMM120-F5 under issue #838:
+      replaced the mixed-column oxide values (which had copied SiO2, TiO2, Al2O3,
+      and BaO from strontiojoaquinite column 2) and empirical formula with the
+      exact Table 1 column 5 bario-orthojoaquinite analysis (SiO2 35.15, TiO2
+      11.33, Al2O3 0.57, FeO 9.47, MnO 0.62, BaO 38.56, SrO 3.34, CaO 0.17, Na2O
+      0.12, H2O 1.3 calculated, total 100.63 wt%, REE below detection, noting
+      Table 1 Na = 0.10 vs p. 811 narrative 0.11 Na and 0.05 vacancy), and
+      simplified sources[1].title to a concise bibliographic citation.
+    sections:
+      - description
+      - sources
+      - curation_history
+      - history_refs

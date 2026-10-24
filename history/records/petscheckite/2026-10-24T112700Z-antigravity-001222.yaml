@@ -1,0 +1,39 @@
+history_version: 1
+target:
+  kind: record
+  slug: petscheckite
+  path: data/records/petscheckite.yaml
+session:
+  id: 2026-10-24T112700Z-antigravity-001222
+  timestamp: '2026-10-24T11:27:00Z'
+  actors:
+    - name: antigravity
+      type: ai_agent
+      model: antigravity
+      agent_tool: antigravity-cli
+links:
+  issues:
+    - https://github.com/CultureBotAI/CMMMech/issues/838
+  prs:
+    - https://github.com/CultureBotAI/CMMMech/pull/837
+events:
+  - type: EDIT
+    outcome: changed
+    summary: >-
+      Applied reviewed conservative correction for CMM120-F3 (issue #838):
+      omitted the unbalanced synthetic disproportionation stoichiometry from
+      mechanisms[0] while retaining the supported ~650 °C recrystallization
+      and 1000 °C disproportionation phases.
+    details: >-
+      Applied the independently reviewed conservative record correction for
+      CMM120-F3 under issue #838 (Mücke and Strunz 1978, AM63_941.pdf):
+      removed the unbalanced normalized reaction stoichiometry from
+      mechanisms[0].description and mechanisms[0].evidence[0].explanation
+      without deriving a replacement equation, while retaining the supported
+      ~650 °C trigonal P-31m recrystallization of metamict oxy-petscheckite
+      and 24 h 1000 °C disproportionation of hydroxy-petscheckite into cubic
+      uranpyrochlore U4+(Nb,Ta)2O7 (a = 10.36 Å) plus oxy-petscheckite.
+    sections:
+      - mechanisms
+      - curation_history
+      - history_refs

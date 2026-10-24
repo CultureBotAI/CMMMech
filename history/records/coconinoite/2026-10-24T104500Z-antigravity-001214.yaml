@@ -1,0 +1,46 @@
+history_version: 1
+target:
+  kind: record
+  slug: coconinoite
+  path: data/records/coconinoite.yaml
+session:
+  id: 2026-10-24T104500Z-antigravity-001214
+  timestamp: '2026-10-24T10:45:00Z'
+  actors:
+    - name: antigravity
+      type: ai_agent
+      model: antigravity
+      agent_tool: antigravity-cli
+links:
+  issues:
+    - https://github.com/CultureBotAI/CMMMech/issues/838
+  prs:
+    - https://github.com/CultureBotAI/CMMMech/pull/837
+events:
+  - type: EDIT
+    outcome: changed
+    summary: >-
+      Resolved CMM120-F1 (issue #838) by aligning sample-labeled chemical
+      analyses (1715 vs T-J2-53), EVC-6 dehydrated optical data (calculated
+      beta = 1.630, 2V = 75 ± 5°), Chevenard TGA water loss (23.7 wt% on sample
+      1715), and high-temperature sulfur-oxide loss notes with Young, Weeks, and
+      Meyrowitz (1966), and simplifying sources[1].title to a concise
+      bibliographic citation.
+    details: >-
+      Re-inspected Young, Weeks, and Meyrowitz (1966) American Mineralogist
+      51:651-663 (AM51_651.pdf, pp. 654–658, 663, Tables 1–2, Fig. 2) to resolve
+      finding CMM120-F1 under issue #838: corrected sample 1715 H2O- = 18.2 wt%
+      and H2O+ = 5.8 wt% and Jomac sample T-J2-53 CaO < 0.1 wt% and Na2O 0.1 wt%,
+      distinguished dehydrated optical sample EVC-6 with calculated beta = 1.630
+      and 2V = 75 ± 5° (not 75°15'), corrected the Chevenard TGA water-associated
+      loss on sample 1715 to 23.7 wt% (distinct from the 23.4 wt% chemical H2O
+      of Jomac sample T-J2-53), noted both the 23.7 + 5.3 = 29.0 wt% step sum
+      and Fig. 2 28.7 wt% total loss as well as the paper's internal SO2 (p.
+      655) vs SO3 (p. 657) terminology, and simplified sources[1].title to a
+      concise bibliographic citation.
+    sections:
+      - description
+      - sources
+      - mechanisms
+      - curation_history
+      - history_refs

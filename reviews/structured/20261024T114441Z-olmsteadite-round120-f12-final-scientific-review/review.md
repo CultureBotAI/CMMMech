@@ -1,0 +1,343 @@
+# Final-byte primary-source scientific review of olmsteadite (CMM120-F12, issue #838)
+
+- Review: 20261024T114441Z-olmsteadite-round120-f12-final-scientific-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-24T11:42:41Z
+- Finished UTC: 2026-10-24T11:44:41Z
+- Reviewer: antigravity / round120-final-scientific-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Olmsteadite (IMA:1974-034) passes final-byte primary-source scientific review (scientific_review: true, CMM120-F12, https://github.com/CultureBotAI/CMMMech/issues/838) at final working-tree SHA-256 2633f888f93a3a3dd8b49e0439bb0164414b220138ff70086a07b3de0e4460c0: Final record verified against Moore, Araki, Kampf &amp; Steele (1976) Am. Mineral. 61:5-11 and the reviewed conservative patch: sources[1].title includes the complete title '...relation to vauquelinite and montgomeryite, American Mineralogist 61:5-11.'; description omits the expanded six-column Table 1 assay block and unsupported hureaulite association, records the Hesnard pegmatite locality near Custer, Custer County, South Dakota, scopes Z = 1 to the structural formula K2Fe2+2[Fe2+2(Nb,Ta)5+2O4(H2O)4(PO4)4] (refined to R = 0.037 in Pb21m), and scopes 2V ~ 60° to Big Chief material.
+
+## Scope And Provenance
+
+Final-byte primary-source scientific review of data/records/olmsteadite.yaml (SHA-256 2633f888f93a3a3dd8b49e0439bb0164414b220138ff70086a07b3de0e4460c0) after applying the independently reviewed conservative record patch and canonical EDIT history (history/records/olmsteadite/2026-10-24T112700Z-antigravity-001229.yaml), superseding preserved historical review observations reviews/structured/20261024T111200Z-olmsteadite-round120-f12-scientific-review/review.yaml, reviews/structured/20261024T100600Z-olmsteadite-round120-reassessment/review.yaml, and reviews/structured/20261024T074000Z-olmsteadite-round120/review.yaml.
+
+Selection: Final post-patch scientific review of olmsteadite (CMM120-F12, issue #838).
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 434d9088d8aef9398545d9d6649b3645c708a963.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:olmsteadite | data/records/olmsteadite.yaml | maintained | Olmsteadite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:olmsteadite | Checked 662 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:olmsteadite | Checked 1011 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Final-byte primary-source verification of bibliographic Source.title, description, and curated claims for olmsteadite (CMM120-F12)
+
+evidence: supported. Targets: cmmmech:olmsteadite.
+
+Final record verified against Moore, Araki, Kampf &amp; Steele (1976) Am. Mineral. 61:5-11 and the reviewed conservative patch: sources[1].title includes the complete title '...relation to vauquelinite and montgomeryite, American Mineralogist 61:5-11.'; description omits the expanded six-column Table 1 assay block and unsupported hureaulite association, records the Hesnard pegmatite locality near Custer, Custer County, South Dakota, scopes Z = 1 to the structural formula K2Fe2+2[Fe2+2(Nb,Ta)5+2O4(H2O)4(PO4)4] (refined to R = 0.037 in Pb21m), and scopes 2V ~ 60° to Big Chief material.
+
+### Append-only history sidecars, corrected source-report successor linkage, and preserved review cohorts for olmsteadite
+
+provenance: supported. Targets: cmmmech:olmsteadite.
+
+Canonical history chain (history/records/olmsteadite/2026-10-24T073000Z-antigravity-00120a.yaml, history/records/olmsteadite/2026-10-24T104500Z-antigravity-00121a.yaml, history/records/olmsteadite/2026-10-24T112700Z-antigravity-001229.yaml) and corrected source-investigation successor (research/sources/round120-minerals/20261024T113300Z-source-investigation.json) link issue https://github.com/CultureBotAI/CMMMech/issues/838 (CMM120-F12), future guardrail issue https://github.com/CultureBotAI/CMMMech/issues/839 (cmmmech-infra-0010), and PR #837 while preserving all three earlier review cohorts (074000Z, 100600Z, 111200Z) untouched.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/olmsteadite.yaml; Final patched working-tree record data/records/olmsteadite.yaml | supports | Final working-tree record data/records/olmsteadite.yaml (SHA-256 2633f888f93a3a3dd8b49e0439bb0164414b220138ff70086a07b3de0e4460c0) incorporates the reviewed conservative corrections for CMM120-F12 (https://github.com/CultureBotAI/CMMMech/issues/838) and complete append-only history (3 canonical sidecars). |
+| primary_study | https://www.rruff.net/doclib/am/vol61/AM61_5.pdf; Moore, Araki, Kampf &amp; Steele (1976) Am. Mineral. 61:5-11, pp. 5-11 | supports | Final record verified against Moore, Araki, Kampf &amp; Steele (1976) Am. Mineral. 61:5-11 and the reviewed conservative patch: sources[1].title includes the complete title '...relation to vauquelinite and montgomeryite, American Mineralogist 61:5-11.'; description omits the expanded six-column Table 1 assay block and unsupported hureaulite association, records the Hesnard pegmatite locality near Custer, Custer County, South Dakota, scopes Z = 1 to the structural formula K2Fe2+2[Fe2+2(Nb,Ta)5+2O4(H2O)4(PO4)4] (refined to R = 0.037 in Pb21m), and scopes 2V ~ 60° to Big Chief material. |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List | supports | Confirms official mineral species identity, formula, and IMA approval tag (IMA:1974-034) for Olmsteadite. |
+| edit_history | history/records/olmsteadite/2026-10-24T112700Z-antigravity-001229.yaml; Canonical history sidecars history/records/olmsteadite/2026-10-24T073000Z-antigravity-00120a.yaml, history/records/olmsteadite/2026-10-24T104500Z-antigravity-00121a.yaml, history/records/olmsteadite/2026-10-24T112700Z-antigravity-001229.yaml | supports | Canonical history chain (history/records/olmsteadite/2026-10-24T073000Z-antigravity-00120a.yaml, history/records/olmsteadite/2026-10-24T104500Z-antigravity-00121a.yaml, history/records/olmsteadite/2026-10-24T112700Z-antigravity-001229.yaml; latest SHA-256 5e7de17a7d41a33237cb47cc74a66d54ec0e326161c77e3b9c02694710a0078a) documents the full CREATE and issue #838 EDIT lineage for olmsteadite. |
+| predecessor_reviews | reviews/structured/20261024T111200Z-olmsteadite-round120-f12-scientific-review/review.yaml; Preserved predecessor reviews reviews/structured/20261024T074000Z-olmsteadite-round120/review.yaml, reviews/structured/20261024T100600Z-olmsteadite-round120-reassessment/review.yaml, and reviews/structured/20261024T111200Z-olmsteadite-round120-f12-scientific-review/review.yaml | supports | Preserves untouched predecessor review bundles 20261024T074000Z-olmsteadite-round120 (SHA-256 0ac2c64a06be8fd5d88fc38e9c093ccd2bf8b7b8617af8579a28d40075007e07), 20261024T100600Z-olmsteadite-round120-reassessment (SHA-256 3ae73684f18fef243bb6b9dae011646738565d66fffa8f4f720d75a73f898d0d), and 20261024T111200Z-olmsteadite-round120-f12-scientific-review (SHA-256 c64a1e34120f3a09d5b46e38a5edf92b4d29a360de9e65933bea7bff7d7b63be) as historical observations and establishes final-byte scientific coverage. |
+| validation | data/records/olmsteadite.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history | supports | Checked 662 record(s); 0 failed. Checked 1011 history record(s); 0 error(s). |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against final working-tree bytes at base 2b18e567096cceeb767514d9cec5d99e75688aef.
+- Record captures mineralogical identity, type chemistry, and crystallography without a reported microbial or abiotic extraction/transformation mechanism in the inspected primary sources.
+- This honest actual-time final scientific successor review (started_at 2026-10-24T11:42:41Z, accessed_at 2026-10-24T11:43:41Z, finished_at 2026-10-24T11:44:41Z) assesses the final patched YAML record (SHA-256 2633f888f93a3a3dd8b49e0439bb0164414b220138ff70086a07b3de0e4460c0) and supersedes preserved historical review bundles 20261024T111200Z-olmsteadite-round120-f12-scientific-review, 20261024T100600Z-olmsteadite-round120-reassessment, and 20261024T074000Z-olmsteadite-round120.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261024T114441Z-olmsteadite-round120-f12-final-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: 'Final-byte primary-source scientific review of olmsteadite (CMM120-F12, issue
+  #838)'
+started_at: '2026-10-24T11:42:41Z'
+finished_at: '2026-10-24T11:44:41Z'
+reviewer:
+  identity: antigravity / round120-final-scientific-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in final patched record data/records/olmsteadite.yaml
+    (SHA-256 2633f888f93a3a3dd8b49e0439bb0164414b220138ff70086a07b3de0e4460c0) against
+    primary literature (Moore, Araki, Kampf & Steele (1976) Am. Mineral. 61:5-11,
+    pp. 5-11), the official IMA September 2026 Master List, and the independently
+    reviewed conservative correction manifest (SHA-256 4ec642395b1404f033366061c43922eb6ebf5eb34a6a0ca299d48169540f119d)
+    under https://github.com/CultureBotAI/CMMMech/issues/838.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 434d9088d8aef9398545d9d6649b3645c708a963
+  state: working_tree
+  inputs:
+  - path: data/records/olmsteadite.yaml
+    sha256: 2633f888f93a3a3dd8b49e0439bb0164414b220138ff70086a07b3de0e4460c0
+    role: target
+  - path: history/records/olmsteadite/2026-10-24T073000Z-antigravity-00120a.yaml
+    sha256: 2c13dc32adf1c163618f05d24ca62529802e53c221829aa0ad5a84036386ad22
+    role: context
+  - path: history/records/olmsteadite/2026-10-24T104500Z-antigravity-00121a.yaml
+    sha256: 6514df87b97094ec703f1589df920a4694add0a91305c21d8aea53c17e8df72c
+    role: context
+  - path: history/records/olmsteadite/2026-10-24T112700Z-antigravity-001229.yaml
+    sha256: 5e7de17a7d41a33237cb47cc74a66d54ec0e326161c77e3b9c02694710a0078a
+    role: context
+  - path: research/sources/round120-minerals/20261024T073500Z-source-investigation.json
+    sha256: bb159c4337de6f01565d04f1e0690b34aec0ed43a722b7004d95515f41c6f0cc
+    role: context
+  - path: research/sources/round120-minerals/20261024T073500Z-source-investigation.md
+    sha256: 4be24aeb244eccde8a9fb1335608d162ce50544319b3480b1e8acd0cf171cacf
+    role: context
+  - path: research/sources/round120-minerals/20261024T113300Z-source-investigation.json
+    sha256: 7471ebd77b483094fd16305b769f6b08b4f244d42f7d42666c8afa1b9c2a140a
+    role: context
+  - path: research/sources/round120-minerals/20261024T113300Z-source-investigation.md
+    sha256: e37c95af723469c1d45e4c454bfd6bc95ee31aeb7e197e930c39cd3ce9f10d98
+    role: context
+  - path: reviews/structured/20261024T074000Z-olmsteadite-round120/review.yaml
+    sha256: 0ac2c64a06be8fd5d88fc38e9c093ccd2bf8b7b8617af8579a28d40075007e07
+    role: context
+  - path: reviews/structured/20261024T100600Z-olmsteadite-round120-reassessment/review.yaml
+    sha256: 3ae73684f18fef243bb6b9dae011646738565d66fffa8f4f720d75a73f898d0d
+    role: context
+  - path: reviews/structured/20261024T111200Z-olmsteadite-round120-f12-scientific-review/review.yaml
+    sha256: c64a1e34120f3a09d5b46e38a5edf92b4d29a360de9e65933bea7bff7d7b63be
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:olmsteadite
+  path: data/records/olmsteadite.yaml
+  label: Olmsteadite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/olmsteadite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/olmsteadite/2026-10-24T073000Z-antigravity-00120a.yaml
+    role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/olmsteadite/2026-10-24T104500Z-antigravity-00121a.yaml
+    role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/olmsteadite/2026-10-24T112700Z-antigravity-001229.yaml
+    role: canonical_history
+scope:
+  description: Final-byte primary-source scientific review of data/records/olmsteadite.yaml
+    (SHA-256 2633f888f93a3a3dd8b49e0439bb0164414b220138ff70086a07b3de0e4460c0) after
+    applying the independently reviewed conservative record patch and canonical EDIT
+    history (history/records/olmsteadite/2026-10-24T112700Z-antigravity-001229.yaml),
+    superseding preserved historical review observations reviews/structured/20261024T111200Z-olmsteadite-round120-f12-scientific-review/review.yaml,
+    reviews/structured/20261024T100600Z-olmsteadite-round120-reassessment/review.yaml,
+    and reviews/structured/20261024T074000Z-olmsteadite-round120/review.yaml.
+  selection: 'Final post-patch scientific review of olmsteadite (CMM120-F12, issue
+    #838).'
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:olmsteadite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/olmsteadite.yaml
+  locator: Final patched working-tree record data/records/olmsteadite.yaml
+  accessed_at: '2026-10-24T11:43:41Z'
+  support: supports
+  summary: Final working-tree record data/records/olmsteadite.yaml (SHA-256 2633f888f93a3a3dd8b49e0439bb0164414b220138ff70086a07b3de0e4460c0)
+    incorporates the reviewed conservative corrections for CMM120-F12 (https://github.com/CultureBotAI/CMMMech/issues/838)
+    and complete append-only history (3 canonical sidecars).
+  snapshot_sha256: 2633f888f93a3a3dd8b49e0439bb0164414b220138ff70086a07b3de0e4460c0
+- evidence_id: primary_study
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/am/vol61/AM61_5.pdf
+  locator: Moore, Araki, Kampf & Steele (1976) Am. Mineral. 61:5-11, pp. 5-11
+  accessed_at: '2026-10-24T11:43:41Z'
+  support: supports
+  summary: 'Final record verified against Moore, Araki, Kampf & Steele (1976) Am.
+    Mineral. 61:5-11 and the reviewed conservative patch: sources[1].title includes
+    the complete title ''...relation to vauquelinite and montgomeryite, American Mineralogist
+    61:5-11.''; description omits the expanded six-column Table 1 assay block and
+    unsupported hureaulite association, records the Hesnard pegmatite locality near
+    Custer, Custer County, South Dakota, scopes Z = 1 to the structural formula K2Fe2+2[Fe2+2(Nb,Ta)5+2O4(H2O)4(PO4)4]
+    (refined to R = 0.037 in Pb21m), and scopes 2V ~ 60° to Big Chief material.'
+  snapshot_sha256: 5c9b4888a669f8da43d57f500fea395975113be1187da6a012480b5043305c0c
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List
+  accessed_at: '2026-10-24T11:43:41Z'
+  support: supports
+  summary: Confirms official mineral species identity, formula, and IMA approval tag
+    (IMA:1974-034) for Olmsteadite.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/olmsteadite/2026-10-24T112700Z-antigravity-001229.yaml
+  locator: Canonical history sidecars history/records/olmsteadite/2026-10-24T073000Z-antigravity-00120a.yaml,
+    history/records/olmsteadite/2026-10-24T104500Z-antigravity-00121a.yaml, history/records/olmsteadite/2026-10-24T112700Z-antigravity-001229.yaml
+  accessed_at: '2026-10-24T11:43:41Z'
+  support: supports
+  summary: 'Canonical history chain (history/records/olmsteadite/2026-10-24T073000Z-antigravity-00120a.yaml,
+    history/records/olmsteadite/2026-10-24T104500Z-antigravity-00121a.yaml, history/records/olmsteadite/2026-10-24T112700Z-antigravity-001229.yaml;
+    latest SHA-256 5e7de17a7d41a33237cb47cc74a66d54ec0e326161c77e3b9c02694710a0078a)
+    documents the full CREATE and issue #838 EDIT lineage for olmsteadite.'
+  snapshot_sha256: 5e7de17a7d41a33237cb47cc74a66d54ec0e326161c77e3b9c02694710a0078a
+- evidence_id: predecessor_reviews
+  kind: record_content
+  reference: reviews/structured/20261024T111200Z-olmsteadite-round120-f12-scientific-review/review.yaml
+  locator: Preserved predecessor reviews reviews/structured/20261024T074000Z-olmsteadite-round120/review.yaml,
+    reviews/structured/20261024T100600Z-olmsteadite-round120-reassessment/review.yaml,
+    and reviews/structured/20261024T111200Z-olmsteadite-round120-f12-scientific-review/review.yaml
+  accessed_at: '2026-10-24T11:43:41Z'
+  support: supports
+  summary: Preserves untouched predecessor review bundles 20261024T074000Z-olmsteadite-round120
+    (SHA-256 0ac2c64a06be8fd5d88fc38e9c093ccd2bf8b7b8617af8579a28d40075007e07), 20261024T100600Z-olmsteadite-round120-reassessment
+    (SHA-256 3ae73684f18fef243bb6b9dae011646738565d66fffa8f4f720d75a73f898d0d), and
+    20261024T111200Z-olmsteadite-round120-f12-scientific-review (SHA-256 c64a1e34120f3a09d5b46e38a5edf92b4d29a360de9e65933bea7bff7d7b63be)
+    as historical observations and establishes final-byte scientific coverage.
+  snapshot_sha256: c64a1e34120f3a09d5b46e38a5edf92b4d29a360de9e65933bea7bff7d7b63be
+- evidence_id: validation
+  kind: validation
+  reference: data/records/olmsteadite.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history
+  accessed_at: '2026-10-24T11:43:41Z'
+  support: supports
+  summary: Checked 662 record(s); 0 failed. Checked 1011 history record(s); 0 error(s).
+  snapshot_sha256: 2633f888f93a3a3dd8b49e0439bb0164414b220138ff70086a07b3de0e4460c0
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 662 record(s); 0 failed.
+  target_ids:
+  - cmmmech:olmsteadite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base 2b18e567096cceeb767514d9cec5d99e75688aef
+  status: passed
+  required: true
+  summary: Checked 1011 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:olmsteadite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: primary_source_scientific_verification
+  area: evidence
+  topic: Final-byte primary-source verification of bibliographic Source.title, description,
+    and curated claims for olmsteadite (CMM120-F12)
+  outcome: supported
+  summary: 'Final record verified against Moore, Araki, Kampf & Steele (1976) Am.
+    Mineral. 61:5-11 and the reviewed conservative patch: sources[1].title includes
+    the complete title ''...relation to vauquelinite and montgomeryite, American Mineralogist
+    61:5-11.''; description omits the expanded six-column Table 1 assay block and
+    unsupported hureaulite association, records the Hesnard pegmatite locality near
+    Custer, Custer County, South Dakota, scopes Z = 1 to the structural formula K2Fe2+2[Fe2+2(Nb,Ta)5+2O4(H2O)4(PO4)4]
+    (refined to R = 0.037 in Pb21m), and scopes 2V ~ 60° to Big Chief material.'
+  target_ids:
+  - cmmmech:olmsteadite
+  evidence_ids:
+  - owner
+  - primary_study
+  - ima_authority
+- assessment_id: provenance_and_predecessor_chain
+  area: provenance
+  topic: Append-only history sidecars, corrected source-report successor linkage,
+    and preserved review cohorts for olmsteadite
+  outcome: supported
+  summary: 'Canonical history chain (history/records/olmsteadite/2026-10-24T073000Z-antigravity-00120a.yaml,
+    history/records/olmsteadite/2026-10-24T104500Z-antigravity-00121a.yaml, history/records/olmsteadite/2026-10-24T112700Z-antigravity-001229.yaml)
+    and corrected source-investigation successor (research/sources/round120-minerals/20261024T113300Z-source-investigation.json)
+    link issue https://github.com/CultureBotAI/CMMMech/issues/838 (CMM120-F12), future
+    guardrail issue https://github.com/CultureBotAI/CMMMech/issues/839 (cmmmech-infra-0010),
+    and PR #837 while preserving all three earlier review cohorts (074000Z, 100600Z,
+    111200Z) untouched.'
+  target_ids:
+  - cmmmech:olmsteadite
+  evidence_ids:
+  - owner
+  - edit_history
+  - predecessor_reviews
+  - validation
+findings: []
+actions: []
+summary: 'Olmsteadite (IMA:1974-034) passes final-byte primary-source scientific review
+  (scientific_review: true, CMM120-F12, https://github.com/CultureBotAI/CMMMech/issues/838)
+  at final working-tree SHA-256 2633f888f93a3a3dd8b49e0439bb0164414b220138ff70086a07b3de0e4460c0:
+  Final record verified against Moore, Araki, Kampf & Steele (1976) Am. Mineral. 61:5-11
+  and the reviewed conservative patch: sources[1].title includes the complete title
+  ''...relation to vauquelinite and montgomeryite, American Mineralogist 61:5-11.'';
+  description omits the expanded six-column Table 1 assay block and unsupported hureaulite
+  association, records the Hesnard pegmatite locality near Custer, Custer County,
+  South Dakota, scopes Z = 1 to the structural formula K2Fe2+2[Fe2+2(Nb,Ta)5+2O4(H2O)4(PO4)4]
+  (refined to R = 0.037 in Pb21m), and scopes 2V ~ 60° to Big Chief material.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  final working-tree bytes at base 2b18e567096cceeb767514d9cec5d99e75688aef.'
+- Record captures mineralogical identity, type chemistry, and crystallography without
+  a reported microbial or abiotic extraction/transformation mechanism in the inspected
+  primary sources.
+notes:
+- This honest actual-time final scientific successor review (started_at 2026-10-24T11:42:41Z,
+  accessed_at 2026-10-24T11:43:41Z, finished_at 2026-10-24T11:44:41Z) assesses the
+  final patched YAML record (SHA-256 2633f888f93a3a3dd8b49e0439bb0164414b220138ff70086a07b3de0e4460c0)
+  and supersedes preserved historical review bundles 20261024T111200Z-olmsteadite-round120-f12-scientific-review,
+  20261024T100600Z-olmsteadite-round120-reassessment, and 20261024T074000Z-olmsteadite-round120.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261024T074000Z-olmsteadite-round120
+  relationship: initial_round120_scientific_review
+- repository: CultureBotAI/CMMMech
+  review_id: 20261024T100600Z-olmsteadite-round120-reassessment
+  relationship: superseded_post_schema_fix_reassessment
+- repository: CultureBotAI/CMMMech
+  review_id: 20261024T111200Z-olmsteadite-round120-f12-scientific-review
+  relationship: superseded_pre_patch_f12_scientific_review
+```

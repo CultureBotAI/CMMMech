@@ -1,0 +1,39 @@
+history_version: 1
+target:
+  kind: record
+  slug: metazellerite
+  path: data/records/metazellerite.yaml
+session:
+  id: 2026-10-24T112700Z-antigravity-001221
+  timestamp: '2026-10-24T11:27:00Z'
+  actors:
+    - name: antigravity
+      type: ai_agent
+      model: antigravity
+      agent_tool: antigravity-cli
+links:
+  issues:
+    - https://github.com/CultureBotAI/CMMMech/issues/838
+  prs:
+    - https://github.com/CultureBotAI/CMMMech/pull/837
+events:
+  - type: EDIT
+    outcome: changed
+    summary: >-
+      Applied reviewed conservative correction for CMM120-F2 (issue #838):
+      removed unsupported follow-up measurement protocol attribution from
+      mechanisms[0] while retaining the volume-inferred 8-or-10 H2O vs
+      separate 110 ± 5 °C chemical H2O- distinction.
+    details: >-
+      Applied the independently reviewed conservative record correction for
+      CMM120-F2 under issue #838 (Coleman, Ross, and Meyrowitz 1966,
+      AM51_1567.pdf): removed the unsupported attribution of specific follow-
+      up verification measurements from mechanisms[0].description and
+      mechanisms[0].evidence[0].explanation while retaining the authors
+      inference of 8 or 10 H2O lost per unit cell from the 186 Å3 volume
+      contraction and its distinction from the separate 6.9 wt% H2O- chemical
+      drying determination at 110 ± 5 °C.
+    sections:
+      - mechanisms
+      - curation_history
+      - history_refs

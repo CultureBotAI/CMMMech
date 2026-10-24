@@ -1,0 +1,47 @@
+history_version: 1
+target:
+  kind: record
+  slug: metazellerite
+  path: data/records/metazellerite.yaml
+session:
+  id: 2026-10-24T104500Z-antigravity-001219
+  timestamp: '2026-10-24T10:45:00Z'
+  actors:
+    - name: antigravity
+      type: ai_agent
+      model: antigravity
+      agent_tool: antigravity-cli
+links:
+  issues:
+    - https://github.com/CultureBotAI/CMMMech/issues/838
+  prs:
+    - https://github.com/CultureBotAI/CMMMech/pull/837
+events:
+  - type: EDIT
+    outcome: changed
+    summary: >-
+      Resolved CMM120-F2 (issue #838) by correcting the shifted Table 2 zellerite
+      analysis (CO2 = 17.7, H2O+ = 13.0, separate H2O- = 6.9 wt%), qualifying
+      the 8-or-10 H2O per unit-cell loss as inferred from the 186 Å3 volume
+      contraction distinct from the 110 ± 5 °C chemical H2O- determination, and
+      simplifying sources[1].title to a concise bibliographic citation.
+    details: >-
+      Re-inspected Coleman, Ross, and Meyrowitz (1966) American Mineralogist
+      51:1567-1578 (AM51_1567.pdf, pp. 1570–1575, Tables 1–2) to resolve finding
+      CMM120-F2 under issue #838: corrected the shifted Table 2 parent zellerite
+      chemical analysis (CaO 10.8, UO3 56.6, CO2 17.7, H2O+ 13.0, SiO2+insol.
+      0.5, R2O3 1.0, K2O 0.2, Na2O 0.4, total 100.2 wt%, with H2O- = 6.9 wt%
+      determined separately at 110 ± 5 °C and normalized H2O- = 6.6 wt%),
+      qualified the 8-or-10 H2O per unit cell loss as inferred from the 186 Å3
+      unit-cell volume contraction (with the 8 H2O / 3H2O formula favored
+      pending further water measurements) distinct from the separate 6.9 wt%
+      H2O- determination at 110 ± 5 °C, qualified low ambient relative humidity
+      as a proposed stability condition alongside X-ray exposure and
+      laboratory-air storage observations, and simplified sources[1].title to a
+      concise bibliographic citation.
+    sections:
+      - description
+      - sources
+      - mechanisms
+      - curation_history
+      - history_refs

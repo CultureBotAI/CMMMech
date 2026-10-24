@@ -1,0 +1,48 @@
+history_version: 1
+target:
+  kind: record
+  slug: behoite
+  path: data/records/behoite.yaml
+session:
+  id: 2026-10-24T104500Z-antigravity-001211
+  timestamp: '2026-10-24T10:45:00Z'
+  actors:
+    - name: antigravity
+      type: ai_agent
+      model: antigravity
+      agent_tool: antigravity-cli
+links:
+  issues:
+    - https://github.com/CultureBotAI/CMMMech/issues/838
+  prs:
+    - https://github.com/CultureBotAI/CMMMech/pull/837
+events:
+  - type: EDIT
+    outcome: changed
+    summary: >-
+      Resolved CMM120-F4 (issue #838) by replacing the unsupported wet-chemical
+      oxide list and Dcalc = 1.94 g/cm3 with the Table 1 McCreath
+      semiquantitative spectrographic analysis and measured densities (natural
+      1.92 ± 0.01, cited synthetic 1.924), correcting {011} dome morphology,
+      removing the nonexistent Fig. 4 citation while noting the p. 1 abstract vs
+      p. 7 DTA exothermic/endothermic discrepancy, and simplifying
+      sources[1].title to a concise bibliographic citation.
+    details: >-
+      Re-inspected Ehlmann and Mitchell (1970) American Mineralogist 55:1-9
+      (AM55_1.pdf, pp. 1, 3–5, 7) to resolve finding CMM120-F4 under issue #838:
+      removed the unsupported Fresenius wet-chemical oxide percentages and
+      Dcalc = 1.94 g/cm3, recorded the Table 1 (p. 4) semiquantitative
+      spectrographic analysis by A. S. McCreath and Son (Be major, Si 1–10%, Fe
+      0.3–3%, minor/trace impurities from quartz and steel-needle scouring) and
+      measured natural specific gravity 1.92 ± 0.01 (cited synthetic measured
+      density 1.924), corrected {011} prism to {011} dome with {110} prism faces
+      (p. 5), removed the nonexistent Fig. 4 reference while explicitly noting
+      the discrepancy between the p. 7 two-step endothermic DTA text (~265 °C,
+      ~290 °C, 310 °C peak) and the p. 1 abstract exothermic wording, and
+      simplified sources[1].title to a concise bibliographic citation.
+    sections:
+      - description
+      - sources
+      - mechanisms
+      - curation_history
+      - history_refs

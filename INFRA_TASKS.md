@@ -79,6 +79,11 @@ tasks:
     status: resolved
     issue_url: https://github.com/CultureBotAI/CMMMech/issues/835
     disposition: "Resolved in Cycle 3 Stage 6 (issue #835) by adding node_protein_examples upsert support and automatic bidirectional mechanisms[].protein_examples <-> causal_graphs[].nodes[].protein_examples parity synchronization in scripts/curate_causal_graphs.py, verified by unit tests in tests/test_curate_causal_graphs.py."
+  - task_id: cmmmech-infra-0010
+    summary: Add source-table and measurement-provenance guardrails to CMMMech curation skills, review instructions, and fixtures
+    status: open
+    issue_url: https://github.com/CultureBotAI/CMMMech/issues/839
+    disposition: "Intaken during Cycle 4 Stage 1 Round 120 (issue #839, linked to scientific correction issue #838 and PR #837) for bounded implementation in Cycle 4 Stage 6 (infrastructure_implementation)."
 ```
 <!-- mech-infra-tasks:end -->
 
@@ -191,6 +196,23 @@ tasks:
 - **Issue**: https://github.com/CultureBotAI/CMMMech/issues/835 (`IGRP-C3S6-002`)
 - **Status**: `resolved`
 - **Disposition**: Resolved in Cycle 3 Stage 6 by adding `node_protein_examples` upsert support (accepting `"<graph_id>/<node_id>"` keys, nested `{graph_id: {node_id: [...]}}` mappings, or entry lists) and automatic bidirectional `mechanisms[].protein_examples` ↔ `causal_graphs[].nodes[].protein_examples` parity synchronization in `scripts/curate_causal_graphs.py`, verified by unit tests in `tests/test_curate_causal_graphs.py`.
+
+### `cmmmech-infra-0010` — Add source-table and measurement-provenance guardrails to CMM curation
+
+- **Originating run / cycle / stage**: `mech-goal-sequence-20261019` / cycle `4` / stage `1` (`add_records`, Round 120)
+- **Observation**: During Round 120 targeted pre-merge primary-paper review across all 16 newly added mineral records (`bario-orthojoaquinite`, `behoite`, `calciohilairite`, `cassidyite`, `coconinoite`, `dissakisite-ce`, `franciscanite`, `lucasite-ce`, `manganokhomyakovite`, `metazellerite`, `olmsteadite`, `petscheckite`, `titanowodginite`, `virgilite`, `widgiemoolthalite`, `zektzerite`; tracked in grouped scientific issue https://github.com/CultureBotAI/CMMMech/issues/838 (`CMM120-F1`–`CMM120-F16`) and corrected in PR https://github.com/CultureBotAI/CMMMech/pull/837), source-fidelity errors were identified in all 16 records: shifted table rows/columns, mixed sample/theoretical/endmember values, unsupported analytical methods (e.g., EPMA or powder XRD where the source used wet chemical gravimetry or single-crystal X-ray precession), inferred properties presented as direct measurements, and dense unverified scientific assertions embedded inside `Source.title`. Existing schema, page-render, and review-bundle checks passed structurally because structural validators cannot prove primary-paper table/method fidelity.
+- **Desired outcome**: During Cycle 4 Stage 6 (`infrastructure_implementation`), implement bounded curation and review guardrails:
+  1. Update repository-owned `.claude/skills/cmmmech-add-record/SKILL.md`, `.claude/skills/curate-yaml-record/SKILL.md`, and `.claude/skills/review-record/SKILL.md` (plus `docs/record-reviews.md`) to require a compact claim-evidence table for retained numeric assertions (source hash, printed page/table, row/column/sample label, unit, measurement method, and measured/calculated/inferred/censored/not-determined status), require visual confirmation of ambiguous table alignment, distinguish theoretical/recalculated/endmember vs. empirical analyses, and preserve paper-internal contradictions explicitly rather than silently normalizing them.
+  2. Require concise bibliographic titles in `Source.title` and mandate that any scientific content retained in `Source.title` receives the same scientific review and successor-hash requirements as `description` and `mechanisms`.
+  3. Add practical review/validation fixtures for the confirmed failure classes where mechanically checkable (e.g., flagging dense assay-prose inside `Source.title`), while explicitly documenting that structural validation does not establish scientific truth.
+  4. Require immutable prior review observations plus actual-time final-byte scientific successor reviews (`scientific_review: true`) after substantive changes, including scientific `Source.title` edits, and coordinate any vendored shared-contract updates through `CultureBotAI/culturebotai-claw` governance (`scripts/check_vendored_sync.py`).
+- **Evidence paths**: `data/records/`, `reviews/structured/`, `.claude/skills/cmmmech-add-record/SKILL.md`, `.claude/skills/curate-yaml-record/SKILL.md`, `.claude/skills/review-record/SKILL.md`, `docs/record-reviews.md`, `scripts/check_vendored_sync.py`, `/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/workspace/reports/mech-recovery-20261024/cmm-independent-precommit/all16-source-fidelity-review.md`, `/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/workspace/reports/mech-recovery-20261024/cmm-independent-precommit/all16-source-fidelity-review.json`, `/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/workspace/reports/mech-recovery-20261024/cmm-independent-precommit/all16-infra-followup-issue-body.md`
+- **Priority**: high
+- **Dependencies**: Grouped scientific correction issue https://github.com/CultureBotAI/CMMMech/issues/838 (`CMM120-F1`–`CMM120-F16`), PR https://github.com/CultureBotAI/CMMMech/pull/837, and upstream `CultureBotAI/culturebotai-claw` vendored-artifact governance (`scripts/check_vendored_sync.py`) for any shared review contract changes
+- **Issue**: https://github.com/CultureBotAI/CMMMech/issues/839
+- **Status**: `open`
+- **Disposition**: Intaken during Cycle 4 Stage 1 Round 120 (`https://github.com/CultureBotAI/CMMMech/issues/839`) for bounded implementation in Cycle 4 Stage 6 (`infrastructure_implementation`).
+
 
 
 
