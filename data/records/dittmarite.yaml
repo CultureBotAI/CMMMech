@@ -1,67 +1,30 @@
 id: cmmmech:dittmarite
 name: Dittmarite
 material_kind: mineral
-description: Dittmarite is the magnesium ammonium phosphate monohydrate mineral species, (NH4)Mg(PO4)(H2O),
-  grandfathered in the September 2026 IMA list with original-description year 1887. It is distinct
-  from struvite, which contains six waters per formula unit, and from elemental magnesium or phosphorus.
-  The studied synthetic feed was XRD-identified as dittmarite despite being called synthetic struvite
-  throughout much of the paper. The same Suyamud 2020 experiment is represented under magnesium
-  and glushinskite; this is not an independent study or an inherited criticality designation.
+description: Dittmarite is the magnesium ammonium phosphate monohydrate mineral species, (NH4)Mg(PO4)(H2O), grandfathered in the September 2026 IMA list with original-description year 1887. It is distinct from struvite, which contains six waters per formula unit, and from elemental magnesium or phosphorus. The studied synthetic feed was XRD-identified as dittmarite despite being called synthetic struvite throughout much of the paper. The same Suyamud 2020 experiment is represented under magnesium and glushinskite; this is not an independent study or an inherited criticality designation.
 sources:
 - id: ima_2026_09
-  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 58, Dittmarite row; page
-    1 column definitions and page 2 distribution terms.
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 58, Dittmarite row; page 1 column definitions and page 2 distribution terms.
   url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
   accessed_on: '2026-10-11'
 - id: suyamud_2020
-  title: 'Suyamud, Ferrier, Csetenyi, Inthorn and Gadd (2020). Biotransformation of struvite by
-    Aspergillus niger: phosphate release and magnesium biomineralization as glushinskite. Environmental
-    Microbiology 22(4):1588-1602. DOI 10.1111/1462-2920.14949; Table 2, Figures 1 and 3-5, Experimental
-    procedures: organisms, struvite preparation, solid-medium solubilization, crystal purification
-    and XRD.'
+  title: 'Suyamud, Ferrier, Csetenyi, Inthorn and Gadd (2020). Biotransformation of struvite by Aspergillus niger: phosphate release and magnesium biomineralization as glushinskite. Environmental Microbiology 22(4):1588-1602. DOI 10.1111/1462-2920.14949; Table 2, Figures 1 and 3-5, Experimental procedures: organisms, struvite preparation, solid-medium solubilization, crystal purification and XRD.'
   url: https://doi.org/10.1111/1462-2920.14949
   accessed_on: '2026-10-11'
 - id: ncbi_atcc1015
-  title: NCBI Taxonomy 380704 - Aspergillus niger ATCC 1015; exact strain entry verified by taxonomy
-    XML on 11 October 2026.
+  title: NCBI Taxonomy 380704 - Aspergillus niger ATCC 1015; exact strain entry verified by taxonomy XML on 11 October 2026.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=380704&mode=Info
   accessed_on: '2026-10-11'
 mechanisms:
 - id: fungal_dittmarite_transformation
   name: Fungal dissolution and secondary oxalate formation from a dittmarite feed
   process: bioleaching
-  description: Growing Aspergillus niger ATCC 1015 produced a clearing zone and acidification on
-    synthetic dittmarite-containing agar. Crystals collected after growth were identified as glushinskite,
-    supporting mineral transformation with secondary magnesium oxalate formation rather than a recovered
-    soluble-magnesium product.
-  context: The synthetic feed was precipitated from MgCl2, NH4Cl and K2HPO4 solution adjusted to
-    pH 8.5 with NaOH, filtered and desiccated at ambient temperature for at least two days; XRD
-    identified dittmarite. The selected agar treatment used 1% w/v feed in malt extract agar, a
-    5-mm actively growing mycelial plug on cellophane, and incubation at 25 degrees C in darkness
-    for seven days. Collected crystals were extracted from agar with 80-degree-C water, washed at
-    least three times and vacuum-desiccated before analysis. Natural-struvite and liquid-culture
-    arms are separate comparisons; no liquid-culture yield is imported here.
+  description: Growing Aspergillus niger ATCC 1015 produced a clearing zone and acidification on synthetic dittmarite-containing agar. Crystals collected after growth were identified as glushinskite, supporting mineral transformation with secondary magnesium oxalate formation rather than a recovered soluble-magnesium product.
+  context: The synthetic feed was precipitated from MgCl2, NH4Cl and K2HPO4 solution adjusted to pH 8.5 with NaOH, filtered and desiccated at ambient temperature for at least two days; XRD identified dittmarite. The selected agar treatment used 1% w/v feed in malt extract agar, a 5-mm actively growing mycelial plug on cellophane, and incubation at 25 degrees C in darkness for seven days. Collected crystals were extracted from agar with 80-degree-C water, washed at least three times and vacuum-desiccated before analysis. Natural-struvite and liquid-culture arms are separate comparisons; no liquid-culture yield is imported here.
   microbial: true
   organisms:
   - id: NCBITaxon:380704
     label: Aspergillus niger ATCC 1015
-  evidence:
-  - source_ref: suyamud_2020
-    supports: support
-    explanation: Experimental procedures identify the synthetic feed as the monohydrate, and Figure
-      5D compares its diffraction trace with the dittmarite reference. Figure 1C shows a clearing
-      zone in the 1% synthetic-feed plate after three days; Figures 3E-F, 4D and 5B characterize
-      post-growth crystals at seven days as Mg-containing oxalate dihydrate. Table 2 gives the 1%
-      synthetic-feed agar pH as 7.06 +/- 0.01 initially and 4.09 +/- 0.45 at seven days, means +/-
-      SD from three independent replicates.
-  - source_ref: suyamud_2020
-    supports: partial
-    explanation: A clearing zone and an identified secondary phase do not quantify the fraction
-      of dittmarite dissolved or recovered. The feed and mineral-free fungal controls do not isolate
-      acidification from oxalate-specific chemistry using matched abiotic conditions. Amorphous
-      debris is also reported, so complete conversion or phase-pure glushinskite yield is not asserted.
-      The laboratory synthetic-feed result does not establish behavior of every natural dittmarite
-      occurrence or industrial deployment.
   protein_examples:
   - uniprot_accession: UniProtKB:G3Y4N5
     entry_name: CEXA_ASPNA
@@ -78,23 +41,43 @@ mechanisms:
     - InterPro:IPR036259
     pfam_ids:
     - Pfam:PF07690
-    functional_role: Plasma-membrane MFS citrate exporter CexA in Aspergillus niger ATCC 1015 that secretes
-      intracellularly synthesized citric acid into the extracellular medium, contributing to medium acidification
-      during phosphate-mineral transformation.
-    annotation_note: Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5 (CEXA_ASPNA;
-      locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015 (NCBITaxon:380704).
+    functional_role: Plasma-membrane MFS citrate exporter CexA in Aspergillus niger ATCC 1015 that secretes intracellularly synthesized citric acid into the extracellular medium, contributing to medium acidification during phosphate-mineral transformation.
+    annotation_note: Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5 (CEXA_ASPNA; locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015 (NCBITaxon:380704).
     evidence:
     - source_ref: suyamud_2020
       supports: partial
-      explanation: Representative Aspergillus niger ATCC 1015 organic-acid exporter CexA for fungal acidification
-        during dittmarite solubilization and secondary glushinskite formation; Suyamud et al. (2020) did
-        not assay cexA mutants or isolate citric versus oxalic acid contributions.
+      explanation: Representative Aspergillus niger ATCC 1015 organic-acid exporter CexA for fungal acidification during dittmarite solubilization and secondary glushinskite formation; Suyamud et al. (2020) did not assay cexA mutants or isolate citric versus oxalic acid contributions.
+  - uniprot_accession: UniProtKB:A0A254TZW7
+    entry_name: CEXA_ASPNG
+    protein_name: Citrate exporter A
+    gene_symbol: cexA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:5061
+      label: Aspergillus niger
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, contributing to medium acidification during phosphate-mineral transformation.
+    annotation_note: Grounded to functionally characterized reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061) alongside strain-matched ATCC 1015 entry UniProtKB:G3Y4N5.
+    evidence:
+    - source_ref: suyamud_2020
+      supports: partial
+      explanation: Representative Aspergillus niger organic-acid exporter CexA for fungal acidification during dittmarite solubilization and secondary glushinskite formation; Suyamud et al. (2020) did not assay cexA mutants or isolate citric versus oxalic acid contributions.
+  evidence:
+  - source_ref: suyamud_2020
+    supports: support
+    explanation: Experimental procedures identify the synthetic feed as the monohydrate, and Figure 5D compares its diffraction trace with the dittmarite reference. Figure 1C shows a clearing zone in the 1% synthetic-feed plate after three days; Figures 3E-F, 4D and 5B characterize post-growth crystals at seven days as Mg-containing oxalate dihydrate. Table 2 gives the 1% synthetic-feed agar pH as 7.06 +/- 0.01 initially and 4.09 +/- 0.45 at seven days, means +/- SD from three independent replicates.
+  - source_ref: suyamud_2020
+    supports: partial
+    explanation: A clearing zone and an identified secondary phase do not quantify the fraction of dittmarite dissolved or recovered. The feed and mineral-free fungal controls do not isolate acidification from oxalate-specific chemistry using matched abiotic conditions. Amorphous debris is also reported, so complete conversion or phase-pure glushinskite yield is not asserted. The laboratory synthetic-feed result does not establish behavior of every natural dittmarite occurrence or industrial deployment.
 causal_graphs:
 - id: aspergillus_dittmarite_transformation_graph
   name: Aspergillus niger ATCC 1015 organic-acid-mediated dittmarite dissolution and glushinskite formation
-  description: Causal pathway linking Aspergillus niger ATCC 1015 organic-acid secretion (represented by
-    citrate exporter CexA alongside oxalic acid production) to agar acidification, synthetic dittmarite
-    dissolution, and secondary glushinskite crystallization.
+  description: Causal pathway linking Aspergillus niger ATCC 1015 organic-acid secretion (represented by citrate exporter CexA alongside oxalic acid production) to agar acidification, synthetic dittmarite dissolution, and secondary glushinskite crystallization.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: fungal_dittmarite_transformation
   nodes:
@@ -102,8 +85,7 @@ causal_graphs:
     label: CexA plasma-membrane citrate exporter (cexA)
     node_type: GENE_OR_PROTEIN
     gene_symbol: cexA
-    description: Major facilitator superfamily transporter exporting citric acid across the Aspergillus
-      niger ATCC 1015 plasma membrane.
+    description: Major facilitator superfamily transporter exporting citric acid across the Aspergillus niger ATCC 1015 plasma membrane.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:G3Y4N5
@@ -121,28 +103,41 @@ causal_graphs:
       - InterPro:IPR036259
       pfam_ids:
       - Pfam:PF07690
-      functional_role: Plasma-membrane MFS citrate exporter CexA in Aspergillus niger ATCC 1015 that secretes
-        intracellularly synthesized citric acid into the extracellular medium, contributing to medium
-        acidification during phosphate-mineral transformation.
-      annotation_note: Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5 (CEXA_ASPNA;
-        locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015 (NCBITaxon:380704).
+      functional_role: Plasma-membrane MFS citrate exporter CexA in Aspergillus niger ATCC 1015 that secretes intracellularly synthesized citric acid into the extracellular medium, contributing to medium acidification during phosphate-mineral transformation.
+      annotation_note: Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5 (CEXA_ASPNA; locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015 (NCBITaxon:380704).
       evidence:
       - source_ref: suyamud_2020
         supports: partial
-        explanation: Representative Aspergillus niger ATCC 1015 organic-acid exporter CexA for fungal
-          acidification during dittmarite solubilization and secondary glushinskite formation; Suyamud
-          et al. (2020) did not assay cexA mutants or isolate citric versus oxalic acid contributions.
+        explanation: Representative Aspergillus niger ATCC 1015 organic-acid exporter CexA for fungal acidification during dittmarite solubilization and secondary glushinskite formation; Suyamud et al. (2020) did not assay cexA mutants or isolate citric versus oxalic acid contributions.
+    - uniprot_accession: UniProtKB:A0A254TZW7
+      entry_name: CEXA_ASPNG
+      protein_name: Citrate exporter A
+      gene_symbol: cexA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:5061
+        label: Aspergillus niger
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, contributing to medium acidification during phosphate-mineral transformation.
+      annotation_note: Grounded to functionally characterized reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061) alongside strain-matched ATCC 1015 entry UniProtKB:G3Y4N5.
+      evidence:
+      - source_ref: suyamud_2020
+        supports: partial
+        explanation: Representative Aspergillus niger organic-acid exporter CexA for fungal acidification during dittmarite solubilization and secondary glushinskite formation; Suyamud et al. (2020) did not assay cexA mutants or isolate citric versus oxalic acid contributions.
   - id: secreted_fungal_organic_acids
     label: Secreted fungal organic acids and protons (pH 7.06 to 4.09 acidification and oxalate supply)
     node_type: CHEMICAL_ENTITY
-    description: Extracellular organic acids (oxalate, citrate) and protons secreted by growing Aspergillus
-      niger ATCC 1015 colonies on malt extract agar.
+    description: Extracellular organic acids (oxalate, citrate) and protons secreted by growing Aspergillus niger ATCC 1015 colonies on malt extract agar.
     protein_grounding_status: NOT_APPLICABLE
   - id: synthetic_dittmarite_feed
     label: Synthetic dittmarite feed ((NH4)Mg(PO4)(H2O), 1% w/v in malt extract agar)
     node_type: MATERIAL_OR_PHASE
-    description: XRD-identified synthetic magnesium ammonium phosphate monohydrate (dittmarite) suspended
-      in agar medium.
+    description: XRD-identified synthetic magnesium ammonium phosphate monohydrate (dittmarite) suspended in agar medium.
     protein_grounding_status: NOT_APPLICABLE
   - id: secondary_glushinskite_crystals
     label: Secondary glushinskite (Mg(C2O4)(H2O)2) crystals
@@ -158,19 +153,16 @@ causal_graphs:
     evidence:
     - source_ref: suyamud_2020
       supports: partial
-      explanation: Table 2 in Suyamud et al. (2020) documents agar acidification from pH 7.06 +/- 0.01
-        to 4.09 +/- 0.45 over 7 days of Aspergillus niger ATCC 1015 growth.
+      explanation: Table 2 in Suyamud et al. (2020) documents agar acidification from pH 7.06 +/- 0.01 to 4.09 +/- 0.45 over 7 days of Aspergillus niger ATCC 1015 growth.
   - source: secreted_fungal_organic_acids
     target: synthetic_dittmarite_feed
     predicate: acts_on
     relationship: acidolysis and oxalate reaction with dittmarite
-    description: Fungal acidification and secreted oxalate dissolve synthetic dittmarite, forming a clearing
-      zone in the agar.
+    description: Fungal acidification and secreted oxalate dissolve synthetic dittmarite, forming a clearing zone in the agar.
     evidence:
     - source_ref: suyamud_2020
       supports: support
-      explanation: Figure 1C and Table 2 in Suyamud et al. (2020) show clearing-zone formation and acidification
-        on 1% w/v synthetic dittmarite plates.
+      explanation: Figure 1C and Table 2 in Suyamud et al. (2020) show clearing-zone formation and acidification on 1% w/v synthetic dittmarite plates.
   - source: synthetic_dittmarite_feed
     target: secondary_glushinskite_crystals
     predicate: transforms_into
@@ -179,19 +171,21 @@ causal_graphs:
     evidence:
     - source_ref: suyamud_2020
       supports: support
-      explanation: Figures 3E-F, 4D, and 5B in Suyamud et al. (2020) identify post-growth crystals as
-        magnesium oxalate dihydrate (glushinskite).
+      explanation: Figures 3E-F, 4D, and 5B in Suyamud et al. (2020) identify post-growth crystals as magnesium oxalate dihydrate (glushinskite).
 curation_history:
 - timestamp: '2026-10-11T09:57:32.863736+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
-  summary: Created dittmarite mineral identity with bounded fungal transformation of an XRD-identified
-    synthetic feed.
+  summary: Created dittmarite mineral identity with bounded fungal transformation of an XRD-identified synthetic feed.
 - timestamp: '2026-10-22T01:38:02Z'
   curator: claude (Claude Opus 4.6; antigravity)
   action: EDIT
-  summary: Added Aspergillus niger ATCC 1015 causal graph and reviewed Swiss-Prot UniProtKB:G3Y4N5
-    (CEXA_ASPNA) protein example for acidogenic dittmarite transformation.
+  summary: Added Aspergillus niger ATCC 1015 causal graph and reviewed Swiss-Prot UniProtKB:G3Y4N5 (CEXA_ASPNA) protein example for acidogenic dittmarite transformation.
+- timestamp: '2026-10-24T01:55:57Z'
+  curator: marcin
+  action: edit
+  summary: Added reviewed Swiss-Prot UniProtKB:A0A254TZW7 (CEXA_ASPNG) protein example alongside strain-matched UniProtKB:G3Y4N5 for Aspergillus niger ATCC 1015 dittmarite transformation.
 history_refs:
 - history/records/dittmarite/2026-10-11T095732Z-codex-93ecbd.yaml
 - history/records/dittmarite/2026-10-22T013802Z-claude-001303.yaml
+- history/records/dittmarite/2026-10-24T015557Z-marcin-b7a643.yaml

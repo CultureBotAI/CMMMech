@@ -70,6 +70,9 @@ tasks:
   - task_id: cmmmech-infra-0008
     summary: Extend scripts/curate_causal_graphs.py apply_curation_patch() to support mechanism-id-keyed organisms, evidence, and observations updates alongside causal_graphs and protein_examples
     status: note
+  - task_id: cmmmech-infra-0009
+    summary: Node-level protein_examples upsert and mechanism/node parity enforcement in scripts/curate_causal_graphs.py
+    status: note
 ```
 <!-- mech-infra-tasks:end -->
 
@@ -168,5 +171,17 @@ tasks:
 - **Dependencies**: `cmmmech-infra-0004`
 - **Issue**: Pending Stage 6 issue creation
 - **Status**: `note`
+
+### `cmmmech-infra-0009` — Node-level `protein_examples` upsert and mechanism/node parity enforcement in `scripts/curate_causal_graphs.py`
+
+- **Originating run / cycle / stage**: `mech-goal-sequence-20261019` / cycle `3` / stage `3` (`protein_examples`)
+- **Observation**: During the Cycle 3 Stage 3 corpus-wide `protein_examples` review across all `646` records (`104` `causal_graphs` records / `111` graphs with `177` `GROUNDED` `GENE_OR_PROTEIN` nodes and `6` source-limited `UNGROUNDED` `GENE_OR_PROTEIN` nodes across `coal-combustion-residuals.yaml`, `potash.yaml`, and `vanadium-bearing-shale.yaml`; `8` records expanded with `14` live-verified UniProtKB `ProteinExample` entries across `11` `GENE_OR_PROTEIN` nodes and their parent `mechanisms` — `dittmarite`, `glushinskite`, `magnesium`, `phosphorus`, `struvite`, `tetrahedrite-concentrate`, `waste-liquid-crystal-display-panels`, and `traction-battery-hydrometallurgical-residue` — raising total `ProteinExample` instances from `212` to `226` across `57` unique UniProtKB accessions, while preserving `178` single-step species/genus-grounded whole-cell records, `212` ungrounded/consortium records, and `152` criticality-only records as inapplicable / source-limited), `apply_curation_patch()` in `scripts/curate_causal_graphs.py` requires callers to construct both `mechanism_protein_examples` and a full `causal_graphs` copy when appending `protein_examples` to an existing `GENE_OR_PROTEIN` node, rather than supporting a concise `(graph_id, node_id) -> protein_examples` patch that automatically synchronizes `mechanisms[].protein_examples` via `graph.mechanism_ref`.
+- **Desired outcome**: Add optional `node_protein_examples` upsert support and automatic `mechanisms[].protein_examples` ↔ `causal_graphs[].nodes[].protein_examples` parity synchronization in `scripts/curate_causal_graphs.py` during Stage 6.
+- **Evidence paths**: `scripts/curate_causal_graphs.py`, `tests/test_curate_causal_graphs.py`
+- **Priority**: low
+- **Dependencies**: `cmmmech-infra-0004`
+- **Issue**: Pending Stage 6 issue creation
+- **Status**: `note`
+
 
 

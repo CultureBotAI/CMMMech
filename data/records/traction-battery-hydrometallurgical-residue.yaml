@@ -1,37 +1,24 @@
 id: cmmmech:traction-battery-hydrometallurgical-residue
 name: Traction-battery hydrometallurgical residue
 material_kind: secondary_resource
-description: Residual solids from acid leaching in wet recovery of nickel or cobalt from waste traction-battery
-  cathode materials and other recycled wastes. The curated study used separate nickel-line and cobalt-line
-  residues from an unnamed Chinese enterprise; their compositions are not pooled. The source calls these
-  residues slags, but does not establish molten-slag origin. They are downstream processing residues,
-  distinct from mechanically prepared battery black mass, intact batteries, a pure cathode compound and
-  isolated nickel or cobalt products. Exact incoming battery chemistries and the contribution of other
-  wastes are unspecified. No constituent-element criticality is inherited.
+description: Residual solids from acid leaching in wet recovery of nickel or cobalt from waste traction-battery cathode materials and other recycled wastes. The curated study used separate nickel-line and cobalt-line residues from an unnamed Chinese enterprise; their compositions are not pooled. The source calls these residues slags, but does not establish molten-slag origin. They are downstream processing residues, distinct from mechanically prepared battery black mass, intact batteries, a pure cathode compound and isolated nickel or cobalt products. Exact incoming battery chemistries and the contribution of other wastes are unspecified. No constituent-element criticality is inherited.
 sources:
 - id: lu2025
-  title: Lu, H., Zhang, H., Chen, X., Wang, L. and Yan, X. (2025). Bioleaching of sludge from acid-leached
-    waste traction batteries used in electric vehicles for the extraction of Ni and Co using optimized
-    microbial consortia. RSC Advances 15, 45979–45985. DOI 10.1039/D5RA07472J; complete Europe PMC XML,
-    Sections 2–3, Tables 1–2, original Figures 1–6 and two-page SI Table S1.
+  title: Lu, H., Zhang, H., Chen, X., Wang, L. and Yan, X. (2025). Bioleaching of sludge from acid-leached waste traction batteries used in electric vehicles for the extraction of Ni and Co using optimized microbial consortia. RSC Advances 15, 45979–45985. DOI 10.1039/D5RA07472J; complete Europe PMC XML, Sections 2–3, Tables 1–2, original Figures 1–6 and two-page SI Table S1.
   url: https://doi.org/10.1039/D5RA07472J
   accessed_on: '2026-10-12'
 - id: ncbi20261012
-  title: 'NCBI Taxonomy, live species nodes accessed 2026-10-12: Acidithiobacillus ferrooxidans 920, Leptospirillum
-    ferriphilum 178606, Acidithiobacillus thiooxidans 930, Acidithiobacillus caldus 33059 and Sulfobacillus
-    thermotolerans 338644. Species mappings, not authentication of experimental stocks.'
+  title: 'NCBI Taxonomy, live species nodes accessed 2026-10-12: Acidithiobacillus ferrooxidans 920, Leptospirillum ferriphilum 178606, Acidithiobacillus thiooxidans 930, Acidithiobacillus caldus 33059 and Sulfobacillus thermotolerans 338644. Species mappings, not authentication of experimental stocks.'
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?command=show&id=178606&mode=node
   accessed_on: '2026-10-12'
 mechanisms:
 - id: acidophile_culture_associated_leaching
   name: Acidophile culture-associated release from separate nickel and cobalt residues
   process: bioleaching
+  description: Living acidophilic cultures were associated with increased dissolved-metal release from separate acid-leached nickel-line and cobalt-line residues. Single cultures and mixtures were compared. Iron and sulfur metabolism is a proposed explanation; the experiment does not isolate a unique cellular pathway or establish the contribution of each mixture member. The claim is laboratory solution release rather than isolated-product recovery or industrial deployment.
+  context: 'Sections 2.1–2.3: source-reported stocks were A. ferrooxidans ATCC 23270 (Af), L. ferriphilum AS1 6358 (Lf), historical Thiobacillus thiooxidans BJMCC 01101 (Tt), A. caldus CGMCC 1.15711 (Ac) and S. thermotolerans DSM 17362 (St). Seven days of preculture preceded residue addition in 3-L beakers with a 2-L 9K-medium system, 200 mL culture and initial pH 1.9. Stirring suspended the solids; evaporated water was replenished daily and filtered samples analyzed by ICP-MS through day 12. Initial 10% loading denotes 200 g solids per 2 L; 20–50% arms used 400–1000 g. Af, Lf, Tt and the blank CK were tested at 30 degrees C, Ac/St at 40 degrees C; mixtures used 30, 40 or 45 degrees C. MC45-40AS contained equal starting volumes of all five cultures at 45 degrees C; MC40-25St contained equal Af/Lf/Tt/St volumes at 40 degrees C. Starting inoculum proportions do not demonstrate post-growth community composition. No matched 40/45-degree abiotic series, pH/iron-matched controls, replication count
+    or error definition is reported. The text mentions optimization of sulfur and ferrous sulfate without complete final amounts.'
   microbial: true
-  description: Living acidophilic cultures were associated with increased dissolved-metal release from
-    separate acid-leached nickel-line and cobalt-line residues. Single cultures and mixtures were compared.
-    Iron and sulfur metabolism is a proposed explanation; the experiment does not isolate a unique cellular
-    pathway or establish the contribution of each mixture member. The claim is laboratory solution release
-    rather than isolated-product recovery or industrial deployment.
   organisms:
   - id: NCBITaxon:920
     label: Acidithiobacillus ferrooxidans
@@ -43,54 +30,6 @@ mechanisms:
     label: Acidithiobacillus caldus
   - id: NCBITaxon:338644
     label: Sulfobacillus thermotolerans
-  context: 'Sections 2.1–2.3: source-reported stocks were A. ferrooxidans ATCC 23270 (Af), L. ferriphilum
-    AS1 6358 (Lf), historical Thiobacillus thiooxidans BJMCC 01101 (Tt), A. caldus CGMCC 1.15711 (Ac)
-    and S. thermotolerans DSM 17362 (St). Seven days of preculture preceded residue addition in 3-L beakers
-    with a 2-L 9K-medium system, 200 mL culture and initial pH 1.9. Stirring suspended the solids; evaporated
-    water was replenished daily and filtered samples analyzed by ICP-MS through day 12. Initial 10% loading
-    denotes 200 g solids per 2 L; 20–50% arms used 400–1000 g. Af, Lf, Tt and the blank CK were tested
-    at 30 degrees C, Ac/St at 40 degrees C; mixtures used 30, 40 or 45 degrees C. MC45-40AS contained
-    equal starting volumes of all five cultures at 45 degrees C; MC40-25St contained equal Af/Lf/Tt/St
-    volumes at 40 degrees C. Starting inoculum proportions do not demonstrate post-growth community composition.
-    No matched 40/45-degree abiotic series, pH/iron-matched controls, replication count or error definition
-    is reported. The text mentions optimization of sulfur and ferrous sulfate without complete final amounts.'
-  evidence:
-  - source_ref: lu2025
-    supports: support
-    explanation: Sections 3.1.1–3.1.4 and Figures 1–4 show higher source-defined leaching ratios in inoculated
-      arms than the 30-degree blank, with mixture composition, temperature and loading affecting the curves.
-      Only the 30-degree single-culture comparison shares the blank temperature. Increasing solids loading
-      generally lowered the final released fraction. Neither an independent temperature effect nor synergy
-      among members is established by all comparisons. No percentage is adopted as a verified whole-process
-      recovery yield.
-  - source_ref: lu2025
-    supports: partial
-    explanation: Section 2.1 reports 0.8214% Ni in nickel residue and 0.4998% Co in cobalt residue, whereas
-      original SI Table S1 reports 7209 ± 56 PPM Ni and 4093 ± 40 PPM Co for those respective feeds. The
-      basis of the disagreement and uncertainty terms is unexplained. No reconciled inventory, normalized
-      concentration observation or corrected extraction yield is inferred. Tables 1–2 and Figure 2 label
-      MC40-25Ac, while portions of the prose and caption call it MC40-25AS; these are not treated as an
-      additional consortium.
-  - source_ref: lu2025
-    supports: partial
-    explanation: The abstract/conclusion assign 75.4% Co release to MC40-25St, Section 3.1.2 states 79.6%,
-      and the loading discussion gives 82.9% at 10% loading. The text also claims a 1.18-fold improvement
-      over a 72.3% single-culture result without consistent arithmetic. These source discrepancies preclude
-      selection of a definitive optimized Co yield. Ni kinetics report 88.4%, while the separate BCR presentation
-      reports 90.3% leached; the record does not silently equate these endpoints.
-  - source_ref: lu2025
-    supports: partial
-    explanation: Section 2.4 and Figures 5–6 use operational BCR acid-soluble, reducible, oxidizable and
-      residual fractions alongside a leached fraction. These are extraction categories, not verified mineral
-      phases or oxidation states. No closed mass balance, recovered solid product, product purity, independent
-      consortium authentication or industrial reactor performance is demonstrated. The supplier being
-      industrial does not change the laboratory deployment scope.
-  - source_ref: ncbi20261012
-    supports: context_only
-    explanation: Live species nodes resolve the five organism CURIEs and the historical Thiobacillus thiooxidans
-      name to A. thiooxidans. ATCC 23270 and DSM 17362 appear among the respective type-strain links,
-      but those links do not authenticate the cultures used. AS1 6358, BJMCC 01101 and CGMCC 1.15711 remain
-      source-reported stock labels without an asserted collection CURIE or inferred causal assignment.
   protein_examples:
   - uniprot_accession: UniProtKB:B7JBP8
     entry_name: SQRD_ACIF2
@@ -109,16 +48,79 @@ mechanisms:
     - InterPro:IPR051169
     pfam_ids:
     - Pfam:PF07992
-    functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; AFE_1792) catalyzing oxidation
-      of sulfide to elemental sulfur/polysulfide coupled to quinone reduction during acidophilic sulfur/sulfide
-      bioleaching.
-    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus
-      ferrooxidans ATCC 23270 (NCBITaxon:243159).
+    functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; AFE_1792) catalyzing oxidation of sulfide to elemental sulfur/polysulfide coupled to quinone reduction during acidophilic sulfur/sulfide bioleaching.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159).
     evidence:
     - source_ref: lu2025
       supports: partial
-      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (AFE_1792)
-        for oxidative sulfur/acid generation in lu2025; individual sqr/tth genes were not mutated.
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (AFE_1792) for oxidative sulfur/acid generation in lu2025; individual sqr/tth genes were not mutated.
+  - uniprot_accession: UniProtKB:A0A543Q349
+    entry_name: A0A543Q349_ACITH
+    protein_name: Pyridine nucleotide-disulfide oxidoreductase
+    gene_symbol: sqr
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (sqr) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species during acidophilic consortium bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing the BJMCC 01101 A. thiooxidans stock (NCBITaxon:930) in lu2025.
+    evidence:
+    - source_ref: lu2025
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-oxidizing acid generation in the A. thiooxidans single-culture and consortium arms of lu2025; individual genes were not mutated.
+  - uniprot_accession: UniProtKB:F9ZQD6
+    entry_name: F9ZQD6_ACICS
+    protein_name: Sulfide-quinone reductase
+    gene_symbol: Atc_1705
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:990288
+      label: Acidithiobacillus caldus SM-1
+    reference_proteome_id: UP000006135
+    ec_numbers:
+    - EC:1.8.5.4
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; Atc_1705) in Acidithiobacillus caldus SM-1 catalyzing sulfide oxidation coupled to quinone reduction at moderately thermophilic leaching temperatures.
+    annotation_note: Grounded to reference-proteome entry UP000006135 for sequenced strain Acidithiobacillus caldus SM-1 (NCBITaxon:990288), representing the CGMCC 1.15711 A. caldus stock (NCBITaxon:33059) in lu2025.
+    evidence:
+    - source_ref: lu2025
+      supports: partial
+      explanation: Representative Acidithiobacillus caldus SM-1 sulfide-quinone reductase (Atc_1705) for moderately thermophilic sulfur oxidation in the 40/45 degrees C A. caldus and consortium arms of lu2025; individual genes were not mutated.
+  - uniprot_accession: UniProtKB:A0A059XTE6
+    entry_name: A0A059XTE6_9BACT
+    protein_name: Sulfide-quinone reductase
+    gene_symbol: Y981_02650
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:1441628
+      label: Leptospirillum ferriphilum YSK
+    reference_proteome_id: UP000027059
+    ec_numbers:
+    - EC:1.8.5.4
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; Y981_02650) in Leptospirillum ferriphilum YSK annotated in the reference proteome of this acidophilic bioleaching consortium member.
+    annotation_note: Grounded to reference-proteome entry UP000027059 for sequenced strain Leptospirillum ferriphilum YSK (NCBITaxon:1441628), representing the AS1 6358 L. ferriphilum stock (NCBITaxon:178606) in lu2025.
+    evidence:
+    - source_ref: lu2025
+      supports: partial
+      explanation: Representative Leptospirillum ferriphilum YSK sulfide-quinone reductase homolog (Y981_02650) for the L. ferriphilum consortium member in lu2025; individual genes were not mutated.
   - uniprot_accession: UniProtKB:B7J3C9
     entry_name: TTH_ACIF2
     protein_name: Tetrathionate hydrolase
@@ -137,21 +139,76 @@ mechanisms:
     - InterPro:IPR015943
     pfam_ids:
     - Pfam:PF13360
-    functional_role: Periplasmic tetrathionate hydrolase (EC 3.12.1.-; tth / AFE_0029) hydrolyzing tetrathionate
-      into thiosulfate, elemental sulfur, and sulfate, generating sulfuric acid protons.
-    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus
-      ferrooxidans ATCC 23270 (NCBITaxon:243159).
+    functional_role: Periplasmic tetrathionate hydrolase (EC 3.12.1.-; tth / AFE_0029) hydrolyzing tetrathionate into thiosulfate, elemental sulfur, and sulfate, generating sulfuric acid protons.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159).
     evidence:
     - source_ref: lu2025
       supports: partial
-      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (tth)
-        for oxidative sulfur/acid generation in lu2025; individual sqr/tth genes were not mutated.
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (tth) for oxidative sulfur/acid generation in lu2025; individual sqr/tth genes were not mutated.
+  - uniprot_accession: UniProtKB:A0A5P9XPU3
+    entry_name: A0A5P9XPU3_ACITH
+    protein_name: Tetrathionate hydrolase
+    gene_symbol: tth
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase (tth) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into sulfate and sulfuric acid protons during consortium bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing the BJMCC 01101 A. thiooxidans stock (NCBITaxon:930) in lu2025.
+    evidence:
+    - source_ref: lu2025
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing acid generation in the A. thiooxidans single-culture and consortium arms of lu2025; individual genes were not mutated.
+  - uniprot_accession: UniProtKB:F9ZNI0
+    entry_name: F9ZNI0_ACICS
+    protein_name: Tetrathionate hydrolase TetH
+    gene_symbol: Atc_1595
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:990288
+      label: Acidithiobacillus caldus SM-1
+    reference_proteome_id: UP000006135
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase TetH (Atc_1595) in Acidithiobacillus caldus SM-1 hydrolyzing tetrathionate into thiosulfate, sulfur, and sulfate protons at moderately thermophilic leaching temperatures.
+    annotation_note: Grounded to reference-proteome entry UP000006135 for sequenced strain Acidithiobacillus caldus SM-1 (NCBITaxon:990288), representing the CGMCC 1.15711 A. caldus stock (NCBITaxon:33059) in lu2025.
+    evidence:
+    - source_ref: lu2025
+      supports: partial
+      explanation: Representative Acidithiobacillus caldus SM-1 tetrathionate hydrolase TetH (Atc_1595) for moderately thermophilic sulfur oxidation in the 40/45 degrees C A. caldus and consortium arms of lu2025; individual genes were not mutated.
+  evidence:
+  - source_ref: lu2025
+    supports: support
+    explanation: Sections 3.1.1–3.1.4 and Figures 1–4 show higher source-defined leaching ratios in inoculated arms than the 30-degree blank, with mixture composition, temperature and loading affecting the curves. Only the 30-degree single-culture comparison shares the blank temperature. Increasing solids loading generally lowered the final released fraction. Neither an independent temperature effect nor synergy among members is established by all comparisons. No percentage is adopted as a verified whole-process recovery yield.
+  - source_ref: lu2025
+    supports: partial
+    explanation: Section 2.1 reports 0.8214% Ni in nickel residue and 0.4998% Co in cobalt residue, whereas original SI Table S1 reports 7209 ± 56 PPM Ni and 4093 ± 40 PPM Co for those respective feeds. The basis of the disagreement and uncertainty terms is unexplained. No reconciled inventory, normalized concentration observation or corrected extraction yield is inferred. Tables 1–2 and Figure 2 label MC40-25Ac, while portions of the prose and caption call it MC40-25AS; these are not treated as an additional consortium.
+  - source_ref: lu2025
+    supports: partial
+    explanation: The abstract/conclusion assign 75.4% Co release to MC40-25St, Section 3.1.2 states 79.6%, and the loading discussion gives 82.9% at 10% loading. The text also claims a 1.18-fold improvement over a 72.3% single-culture result without consistent arithmetic. These source discrepancies preclude selection of a definitive optimized Co yield. Ni kinetics report 88.4%, while the separate BCR presentation reports 90.3% leached; the record does not silently equate these endpoints.
+  - source_ref: lu2025
+    supports: partial
+    explanation: Section 2.4 and Figures 5–6 use operational BCR acid-soluble, reducible, oxidizable and residual fractions alongside a leached fraction. These are extraction categories, not verified mineral phases or oxidation states. No closed mass balance, recovered solid product, product purity, independent consortium authentication or industrial reactor performance is demonstrated. The supplier being industrial does not change the laboratory deployment scope.
+  - source_ref: ncbi20261012
+    supports: context_only
+    explanation: Live species nodes resolve the five organism CURIEs and the historical Thiobacillus thiooxidans name to A. thiooxidans. ATCC 23270 and DSM 17362 appear among the respective type-strain links, but those links do not authenticate the cultures used. AS1 6358, BJMCC 01101 and CGMCC 1.15711 remain source-reported stock labels without an asserted collection CURIE or inferred causal assignment.
 causal_graphs:
 - id: ferrooxidans_battery_residue_bioleaching_graph
   name: Acidophile consortium sulfur/iron oxidation and battery hydrometallurgical residue leaching
-  description: Causal pathway linking Acidithiobacillus ferrooxidans sulfide-quinone reductase (Sqr) and
-    tetrathionate hydrolase (Tth) to biogenic acid/Fe(III) leaching of Ni, Co, and Mn from traction-battery
-    residues.
+  description: Causal pathway linking acidophile consortium sulfide-quinone reductase (Sqr) and tetrathionate hydrolase (Tth/TetH) across Acidithiobacillus ferrooxidans, Acidithiobacillus thiooxidans, Acidithiobacillus caldus, and Leptospirillum ferriphilum to biogenic acid/Fe(III) leaching of Ni and Co from traction-battery residues.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: acidophile_culture_associated_leaching
   nodes:
@@ -179,23 +236,84 @@ causal_graphs:
       - InterPro:IPR051169
       pfam_ids:
       - Pfam:PF07992
-      functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; AFE_1792) catalyzing oxidation
-        of sulfide to elemental sulfur/polysulfide coupled to quinone reduction during acidophilic sulfur/sulfide
-        bioleaching.
-      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus
-        ferrooxidans ATCC 23270 (NCBITaxon:243159).
+      functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; AFE_1792) catalyzing oxidation of sulfide to elemental sulfur/polysulfide coupled to quinone reduction during acidophilic sulfur/sulfide bioleaching.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159).
       evidence:
       - source_ref: lu2025
         supports: partial
-        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme
-          (AFE_1792) for oxidative sulfur/acid generation in lu2025; individual sqr/tth genes were not
-          mutated.
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (AFE_1792) for oxidative sulfur/acid generation in lu2025; individual sqr/tth genes were not mutated.
+    - uniprot_accession: UniProtKB:A0A543Q349
+      entry_name: A0A543Q349_ACITH
+      protein_name: Pyridine nucleotide-disulfide oxidoreductase
+      gene_symbol: sqr
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (sqr) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species during acidophilic consortium bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing the BJMCC 01101 A. thiooxidans stock (NCBITaxon:930) in lu2025.
+      evidence:
+      - source_ref: lu2025
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-oxidizing acid generation in the A. thiooxidans single-culture and consortium arms of lu2025; individual genes were not mutated.
+    - uniprot_accession: UniProtKB:F9ZQD6
+      entry_name: F9ZQD6_ACICS
+      protein_name: Sulfide-quinone reductase
+      gene_symbol: Atc_1705
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:990288
+        label: Acidithiobacillus caldus SM-1
+      reference_proteome_id: UP000006135
+      ec_numbers:
+      - EC:1.8.5.4
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; Atc_1705) in Acidithiobacillus caldus SM-1 catalyzing sulfide oxidation coupled to quinone reduction at moderately thermophilic leaching temperatures.
+      annotation_note: Grounded to reference-proteome entry UP000006135 for sequenced strain Acidithiobacillus caldus SM-1 (NCBITaxon:990288), representing the CGMCC 1.15711 A. caldus stock (NCBITaxon:33059) in lu2025.
+      evidence:
+      - source_ref: lu2025
+        supports: partial
+        explanation: Representative Acidithiobacillus caldus SM-1 sulfide-quinone reductase (Atc_1705) for moderately thermophilic sulfur oxidation in the 40/45 degrees C A. caldus and consortium arms of lu2025; individual genes were not mutated.
+    - uniprot_accession: UniProtKB:A0A059XTE6
+      entry_name: A0A059XTE6_9BACT
+      protein_name: Sulfide-quinone reductase
+      gene_symbol: Y981_02650
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:1441628
+        label: Leptospirillum ferriphilum YSK
+      reference_proteome_id: UP000027059
+      ec_numbers:
+      - EC:1.8.5.4
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; Y981_02650) in Leptospirillum ferriphilum YSK annotated in the reference proteome of this acidophilic bioleaching consortium member.
+      annotation_note: Grounded to reference-proteome entry UP000027059 for sequenced strain Leptospirillum ferriphilum YSK (NCBITaxon:1441628), representing the AS1 6358 L. ferriphilum stock (NCBITaxon:178606) in lu2025.
+      evidence:
+      - source_ref: lu2025
+        supports: partial
+        explanation: Representative Leptospirillum ferriphilum YSK sulfide-quinone reductase homolog (Y981_02650) for the L. ferriphilum consortium member in lu2025; individual genes were not mutated.
   - id: tth_hydrolase
     label: Tth tetrathionate hydrolase (tth / AFE_0029)
     node_type: GENE_OR_PROTEIN
     gene_symbol: tth
-    description: Periplasmic pyrroloquinoline-domain hydrolase disproportionating tetrathionate into sulfate
-      and protons.
+    description: Periplasmic pyrroloquinoline-domain hydrolase disproportionating tetrathionate into sulfate and protons.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:B7J3C9
@@ -216,51 +334,86 @@ causal_graphs:
       - InterPro:IPR015943
       pfam_ids:
       - Pfam:PF13360
-      functional_role: Periplasmic tetrathionate hydrolase (EC 3.12.1.-; tth / AFE_0029) hydrolyzing tetrathionate
-        into thiosulfate, elemental sulfur, and sulfate, generating sulfuric acid protons.
-      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus
-        ferrooxidans ATCC 23270 (NCBITaxon:243159).
+      functional_role: Periplasmic tetrathionate hydrolase (EC 3.12.1.-; tth / AFE_0029) hydrolyzing tetrathionate into thiosulfate, elemental sulfur, and sulfate, generating sulfuric acid protons.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159).
       evidence:
       - source_ref: lu2025
         supports: partial
-        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme
-          (tth) for oxidative sulfur/acid generation in lu2025; individual sqr/tth genes were not mutated.
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (tth) for oxidative sulfur/acid generation in lu2025; individual sqr/tth genes were not mutated.
+    - uniprot_accession: UniProtKB:A0A5P9XPU3
+      entry_name: A0A5P9XPU3_ACITH
+      protein_name: Tetrathionate hydrolase
+      gene_symbol: tth
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase (tth) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into sulfate and sulfuric acid protons during consortium bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing the BJMCC 01101 A. thiooxidans stock (NCBITaxon:930) in lu2025.
+      evidence:
+      - source_ref: lu2025
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing acid generation in the A. thiooxidans single-culture and consortium arms of lu2025; individual genes were not mutated.
+    - uniprot_accession: UniProtKB:F9ZNI0
+      entry_name: F9ZNI0_ACICS
+      protein_name: Tetrathionate hydrolase TetH
+      gene_symbol: Atc_1595
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:990288
+        label: Acidithiobacillus caldus SM-1
+      reference_proteome_id: UP000006135
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase TetH (Atc_1595) in Acidithiobacillus caldus SM-1 hydrolyzing tetrathionate into thiosulfate, sulfur, and sulfate protons at moderately thermophilic leaching temperatures.
+      annotation_note: Grounded to reference-proteome entry UP000006135 for sequenced strain Acidithiobacillus caldus SM-1 (NCBITaxon:990288), representing the CGMCC 1.15711 A. caldus stock (NCBITaxon:33059) in lu2025.
+      evidence:
+      - source_ref: lu2025
+        supports: partial
+        explanation: Representative Acidithiobacillus caldus SM-1 tetrathionate hydrolase TetH (Atc_1595) for moderately thermophilic sulfur oxidation in the 40/45 degrees C A. caldus and consortium arms of lu2025; individual genes were not mutated.
   - id: acidic_ferric_sulfate_lixiviant
     label: Biogenic sulfuric acid and Fe(III) oxidative lixiviant
     node_type: CHEMICAL_ENTITY
-    description: Acidic H2SO4 and Fe(III)-bearing leaching solution sustained by chemolithoautotrophic
-      metabolism.
+    description: Acidic H2SO4 and Fe(III)-bearing leaching solution sustained by chemolithoautotrophic metabolism.
     protein_grounding_status: NOT_APPLICABLE
   - id: solid_feed_substrate
     label: Industrial traction-battery hydrometallurgical residues (BR1, BR2, BR4)
     node_type: MATERIAL_OR_PHASE
-    description: Starting mineral or secondary-resource feed (Traction-battery nickel and cobalt hydrometallurgical
-      residues).
+    description: Starting mineral or secondary-resource feed (Traction-battery nickel and cobalt hydrometallurgical residues).
     protein_grounding_status: NOT_APPLICABLE
   - id: solubilized_metal_species
     label: Solubilized Ni and Co in acidic leachates from separate residue lines
     node_type: CHEMICAL_ENTITY
-    description: Leached product state (Solubilized Ni and Co in acidic leachates from separate residue
-      lines) in lu2025.
+    description: Leached product state (Solubilized Ni and Co in acidic leachates from separate residue lines) in lu2025.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: sqr_reductase
     target: tth_hydrolase
     predicate: supplies_substrate_for
     relationship: oxidation of sulfide to sulfur/polythionate intermediates
-    description: Sulfide oxidation generates reduced sulfur and polythionate intermediates metabolized
-      by periplasmic tetrathionate hydrolase.
+    description: Sulfide oxidation generates reduced sulfur and polythionate intermediates metabolized by periplasmic tetrathionate hydrolase.
     evidence:
     - source_ref: lu2025
       supports: partial
-      explanation: Reduced sulfur oxidation in A. ferrooxidans couples Sqr and polythionate hydrolysis
-        to proton generation.
+      explanation: Reduced sulfur oxidation in A. ferrooxidans couples Sqr and polythionate hydrolysis to proton generation.
   - source: tth_hydrolase
     target: acidic_ferric_sulfate_lixiviant
     predicate: produces
     relationship: sulfuric acid proton generation
-    description: Tetrathionate hydrolysis produces sulfate and H+, maintaining low pH in the leaching
-      medium.
+    description: Tetrathionate hydrolysis produces sulfate and H+, maintaining low pH in the leaching medium.
     evidence:
     - source_ref: lu2025
       supports: partial
@@ -269,41 +422,39 @@ causal_graphs:
     target: solid_feed_substrate
     predicate: acts_on
     relationship: acidic and oxidative mineral/feed attack
-    description: Biogenic acid and ferric ions attack Traction-battery nickel and cobalt hydrometallurgical
-      residues.
+    description: Biogenic acid and ferric ions attack Traction-battery nickel and cobalt hydrometallurgical residues.
     evidence:
     - source_ref: lu2025
       supports: partial
-      explanation: Culture-generated acidic ferric/sulfate medium attacks Traction-battery nickel and
-        cobalt hydrometallurgical residues.
+      explanation: Culture-generated acidic ferric/sulfate medium attacks Traction-battery nickel and cobalt hydrometallurgical residues.
   - source: solid_feed_substrate
     target: solubilized_metal_species
     predicate: produces
     relationship: oxidative/acidic dissolution
-    description: Biogenic sulfuric acid and Fe3+/Fe2+ redox cycling leach Ni and Co from separate hydrometallurgical
-      battery residues.
+    description: Biogenic sulfuric acid and Fe3+/Fe2+ redox cycling leach Ni and Co from separate hydrometallurgical battery residues.
     evidence:
     - source_ref: lu2025
       supports: support
-      explanation: Biogenic sulfuric acid and Fe3+/Fe2+ redox cycling leach Ni and Co from separate hydrometallurgical
-        battery residues.
+      explanation: Biogenic sulfuric acid and Fe3+/Fe2+ redox cycling leach Ni and Co from separate hydrometallurgical battery residues.
 curation_history:
 - timestamp: '2026-10-12T14:49:44.531130+00:00'
   curator: Codex (GPT-6; codex)
   action: CREATE
-  summary: Created the distinct downstream wet-processing residue from complete original evidence, retaining
-    feed/yield conflicts, separate residue arms and comparative-control limitations.
+  summary: Created the distinct downstream wet-processing residue from complete original evidence, retaining feed/yield conflicts, separate residue arms and comparative-control limitations.
 - timestamp: '2026-10-18T04:27:50Z'
   curator: antigravity
   action: EDIT
-  summary: Added verified UniProtKB protein examples (Sqr UniProtKB:B7JBP8, Tth UniProtKB:B7J3C9) and
-    causal graph for acidophile consortium leaching of traction-battery hydrometallurgical residues.
+  summary: Added verified UniProtKB protein examples (Sqr UniProtKB:B7JBP8, Tth UniProtKB:B7J3C9) and causal graph for acidophile consortium leaching of traction-battery hydrometallurgical residues.
 - timestamp: '2026-10-21T18:46:53Z'
   curator: claude
   action: EDIT
-  summary: Set representative Sqr and Tth enzyme evidence to partial and refined substrate/product labels
-    in traction-battery-hydrometallurgical-residue.yaml.
+  summary: Set representative Sqr and Tth enzyme evidence to partial and refined substrate/product labels in traction-battery-hydrometallurgical-residue.yaml.
+- timestamp: '2026-10-24T01:57:09Z'
+  curator: marcin
+  action: edit
+  summary: Added consortium member Sqr and Tth/TetH UniProtKB protein examples for Acidithiobacillus thiooxidans, Acidithiobacillus caldus, and Leptospirillum ferriphilum to traction-battery-hydrometallurgical-residue.yaml.
 history_refs:
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-12T144943Z-codex-e18c9e.yaml
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-18T042750Z-antigravity-437365.yaml
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-21T184653Z-claude-75d927.yaml
+- history/records/traction-battery-hydrometallurgical-residue/2026-10-24T015709Z-marcin-eab866.yaml
