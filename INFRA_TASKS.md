@@ -67,6 +67,9 @@ tasks:
   - task_id: cmmmech-infra-0007
     summary: Add a path-based directory cleanup fallback when shutil.rmtree() raises PermissionError on dir_fd unlinkat() in scripts/render_pages.py so static page rendering succeeds inside macOS Seatbelt sandboxes
     status: note
+  - task_id: cmmmech-infra-0008
+    summary: Extend scripts/curate_causal_graphs.py apply_curation_patch() to support mechanism-id-keyed organisms, evidence, and observations updates alongside causal_graphs and protein_examples
+    status: note
 ```
 <!-- mech-infra-tasks:end -->
 
@@ -154,4 +157,16 @@ tasks:
 - **Dependencies**: None
 - **Issue**: Pending Stage 6 issue creation
 - **Status**: `note`
+
+### `cmmmech-infra-0008` — Extend `scripts/curate_causal_graphs.py` `apply_curation_patch()` for mechanism-level `organisms`, `evidence`, and `observations`
+
+- **Originating run / cycle / stage**: `mech-goal-sequence-20261019` / cycle `3` / stage `2` (`causal_graphs`)
+- **Observation**: During the Cycle 3 Stage 2 corpus-wide causal-graph review and curation across all 646 records (`15` records / `17` mechanisms curated via `scripts/curate_causal_graphs.py` — `silver`, `rhodium` [2 mechanisms], `chromite-ore-processing-residue`, `anglesite`, `galena`, `arsenopyrite`, `orpiment`, `realgar`, `bornite`, `djurleite`, `marcasite`, `kesterite`, `stannite`, `electroplating-sludge` [2 mechanisms], and `nickel-flotation-tailings` — raising `causal_graphs` coverage from `89` records / `96` graphs to `104` records / `113` graphs while preserving `178` species/genus-grounded single-step whole-cell sorption/precipitation/bioleaching records without resolved multi-step molecular intermediates in their cited primary sources, `212` ungrounded/consortium/mixed-culture mechanism records without species-level `ncbi_taxon_id`, and `152` criticality-only records without microbial mechanisms), `apply_curation_patch()` in `scripts/curate_causal_graphs.py` (`lines 108-171`) only accepts patch keys `ima_symbol`, `polymorph_or_grade`, `sources`, `mechanism_protein_examples`, and `causal_graphs`. When curating records whose mechanisms require simultaneous `organisms` (e.g., adding species-level `ncbi_taxon_id`), `evidence`, or `observations` updates alongside `causal_graphs`, the writer helper cannot apply those mechanism-level fields in the same atomic `EDIT` history pass.
+- **Desired outcome**: Extend `apply_curation_patch()` in `scripts/curate_causal_graphs.py` during Stage 6 to support optional mechanism-ID-keyed patches for `organisms`, `evidence`, and `observations` (with full pre-write `validate_record()` enforcement and `mechanisms` section tracking in `HistoryRecord`).
+- **Evidence paths**: `scripts/curate_causal_graphs.py`, `tests/test_curate_causal_graphs.py`
+- **Priority**: low
+- **Dependencies**: `cmmmech-infra-0004`
+- **Issue**: Pending Stage 6 issue creation
+- **Status**: `note`
+
 

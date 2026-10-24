@@ -1,15 +1,10 @@
 id: cmmmech:marcasite
 name: Marcasite
 material_kind: mineral
-description: Marcasite is the orthorhombic FeS2 mineral species, distinct from cubic pyrite, other iron
-  sulfides, elemental iron and mixed sulfide ores. The September 2026 IMA list records grandfathered status
-  and original-description year 1845; the year is not an approval accession. The accepted experiment used
-  powder characterized as marcasite by composition and diffraction, without a reported refined phase fraction
-  or specific surface area. No constituent criticality is inherited.
+description: Marcasite is the orthorhombic FeS2 mineral species, distinct from cubic pyrite, other iron sulfides, elemental iron and mixed sulfide ores. The September 2026 IMA list records grandfathered status and original-description year 1845; the year is not an approval accession. The accepted experiment used powder characterized as marcasite by composition and diffraction, without a reported refined phase fraction or specific surface area. No constituent criticality is inherited.
 sources:
 - id: ima_2026_09
-  title: IMA-CNMNC. The New IMA List of Minerals, September 2026; PDF page 136 Marcasite row, pages 1–2
-    definitions and terms.
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026; PDF page 136 Marcasite row, pages 1–2 definitions and terms.
   url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
   accessed_on: '2026-10-14'
 - id: handbook
@@ -17,75 +12,214 @@ sources:
   url: https://handbookofmineralogy.org/pdfs/marcasite.pdf
   accessed_on: '2026-10-14'
 - id: nowaczyk2000
-  title: Nowaczyk, K. and Domka, F. (2000). Oxidation of Pyrite and Marcasite by Thiobacillus ferrooxidans
-    Bacteria. Polish Journal of Environmental Studies 9(2):87–90. Complete four-page original; Methods
-    pp.88–89, Figures 2–4 and Table 1.
+  title: Nowaczyk, K. and Domka, F. (2000). Oxidation of Pyrite and Marcasite by Thiobacillus ferrooxidans Bacteria. Polish Journal of Environmental Studies 9(2):87–90. Complete four-page original; Methods pp.88–89, Figures 2–4 and Table 1.
   url: https://www.pjoes.com/pdf-87281-21140?filename=21140.pdf
   accessed_on: '2026-10-14'
 - id: ncbi920
-  title: NCBI Taxonomy 920, Acidithiobacillus ferrooxidans; Thiobacillus ferrooxidans is a listed synonym.
-    Current authority resolves species nomenclature, not the experimental isolate.
+  title: NCBI Taxonomy 920, Acidithiobacillus ferrooxidans; Thiobacillus ferrooxidans is a listed synonym. Current authority resolves species nomenclature, not the experimental isolate.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920
   accessed_on: '2026-10-14'
 mechanisms:
 - id: culture-associated-marcasite-oxidation
   name: Culture-associated ferric-iron accumulation during marcasite oxidation
   process: bioleaching
+  description: Live cultures reported as Thiobacillus ferrooxidans produced greater measured ferric-iron accumulation from marcasite powder than the study's chemically altered inactive-inoculum references. The observation supports conditional culture-associated oxidation and iron mobilization. It does not isolate direct cell attack, quantify total dissolved iron or establish isolated iron-product recovery.
+  context: 'Nowaczyk and Domka (2000), Methods pp.88–89 and figure/table captions: bacteria were isolated from Siersza colliery mine water, with no strain accession, sequence or independent purity test supplied. Precultures used Silverman 9K medium in 50 mL Erlenmeyer flasks in thermostated shakers. Leaching used 350 mL Erlenmeyer flasks with iron-free Silverman medium, 1%, 2% or 3% (wt/vol) mineral and 10% inoculum; the inoculum basis is printed as wt/vol and is not silently converted to a cell density. Conditions were 37 degrees C and initial pH 2.2, with grain size below 0.125 mm. Figure 4 extends to 40 days. The actual liquid volume, shaker speed, inoculum washing and cell concentration are unreported. Quantitative composition was 45.9% Fe and 53.5% S for marcasite; powder XRD was compared with a standard. Fe(III) was measured colorimetrically by the rhodanate method. Reference samples used boiled inoculum and reported 1500 ppm HgI2 as bacteriostat. No time-resolved pH or redox matching
+    is established.'
   microbial: true
   organisms:
   - id: NCBITaxon:920
     label: Acidithiobacillus ferrooxidans
-  description: Live cultures reported as Thiobacillus ferrooxidans produced greater measured ferric-iron
-    accumulation from marcasite powder than the study's chemically altered inactive-inoculum references.
-    The observation supports conditional culture-associated oxidation and iron mobilization. It does not
-    isolate direct cell attack, quantify total dissolved iron or establish isolated iron-product recovery.
-  context: 'Nowaczyk and Domka (2000), Methods pp.88–89 and figure/table captions: bacteria were isolated
-    from Siersza colliery mine water, with no strain accession, sequence or independent purity test supplied.
-    Precultures used Silverman 9K medium in 50 mL Erlenmeyer flasks in thermostated shakers. Leaching
-    used 350 mL Erlenmeyer flasks with iron-free Silverman medium, 1%, 2% or 3% (wt/vol) mineral and 10%
-    inoculum; the inoculum basis is printed as wt/vol and is not silently converted to a cell density.
-    Conditions were 37 degrees C and initial pH 2.2, with grain size below 0.125 mm. Figure 4 extends
-    to 40 days. The actual liquid volume, shaker speed, inoculum washing and cell concentration are unreported.
-    Quantitative composition was 45.9% Fe and 53.5% S for marcasite; powder XRD was compared with a standard.
-    Fe(III) was measured colorimetrically by the rhodanate method. Reference samples used boiled inoculum
-    and reported 1500 ppm HgI2 as bacteriostat. No time-resolved pH or redox matching is established.'
+  protein_examples:
+  - uniprot_accession: UniProtKB:B7JBP8
+    entry_name: SQRD_ACIF2
+    protein_name: Sulfide-quinone reductase
+    gene_symbol: AFE_1792
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    ec_numbers:
+    - EC:1.8.5.4
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR051169
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; AFE_1792) catalyzing oxidation of sulfide to elemental sulfur/polysulfide coupled to quinone reduction during acidophilic sulfur/sulfide bioleaching.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159).
+    evidence:
+    - source_ref: nowaczyk2000
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfide-quinone reductase (AFE_1792) for reduced-sulfur oxidation during culture-associated oxidation of marcasite (FeS2) in iron-free Silverman medium in Nowaczyk and Domka (2000); individual sqr/tth genes were not mutated.
+  - uniprot_accession: UniProtKB:B7J3C9
+    entry_name: TTH_ACIF2
+    protein_name: Tetrathionate hydrolase
+    gene_symbol: tth
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    ec_numbers:
+    - EC:3.12.1.-
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase (EC 3.12.1.-; tth / AFE_0029) hydrolyzing tetrathionate into thiosulfate, elemental sulfur, and sulfate, generating sulfuric acid protons.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159).
+    evidence:
+    - source_ref: nowaczyk2000
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 tetrathionate hydrolase (tth / AFE_0029) for polythionate disproportionation and sulfuric-acid generation during culture-associated oxidation of marcasite (FeS2) in iron-free Silverman medium in Nowaczyk and Domka (2000); individual sqr/tth genes were not mutated.
   evidence:
   - source_ref: nowaczyk2000
     supports: support
-    explanation: Figure 2 compares the examined marcasite powder with a standard diffraction pattern.
-      Figure 4 shows increasing Fe(III)-based leaching response in inoculated arms, with much smaller
-      responses in the corresponding ch reference series. The response decreases as mineral loading increases
-      from 1% to 3% within this design. Table 1 labels marcasite values 28.1%, 18.5% and 10.4% as yield
-      of iron leaching; these are source-reported assay-based percentages, not independently verified
-      total-iron extraction or recovered-product yields.
+    explanation: Figure 2 compares the examined marcasite powder with a standard diffraction pattern. Figure 4 shows increasing Fe(III)-based leaching response in inoculated arms, with much smaller responses in the corresponding ch reference series. The response decreases as mineral loading increases from 1% to 3% within this design. Table 1 labels marcasite values 28.1%, 18.5% and 10.4% as yield of iron leaching; these are source-reported assay-based percentages, not independently verified total-iron extraction or recovered-product yields.
   - source_ref: nowaczyk2000
     supports: partial
-    explanation: Only Fe(III), rather than total dissolved Fe, was monitored. Oxidation-state partitioning,
-      inoculum iron carryover, precipitation and a closed solid/solution iron balance were not independently
-      resolved. Boiling and HgI2 distinguish the reference chemistry from the live cultures, so this is
-      not a matched redox-controlled comparison of biological and abiotic dissolution. Replicate counts,
-      biological variability and the meaning of fitted-parameter uncertainties are not given; model fits
-      do not demonstrate a unique inhibitory mechanism.
+    explanation: Only Fe(III), rather than total dissolved Fe, was monitored. Oxidation-state partitioning, inoculum iron carryover, precipitation and a closed solid/solution iron balance were not independently resolved. Boiling and HgI2 distinguish the reference chemistry from the live cultures, so this is not a matched redox-controlled comparison of biological and abiotic dissolution. Replicate counts, biological variability and the meaning of fitted-parameter uncertainties are not given; model fits do not demonstrate a unique inhibitory mechanism.
   - source_ref: nowaczyk2000
     supports: partial
-    explanation: The introduction calls marcasite rhombohedral, contrary to the orthorhombic species identity
-      established by the mineral authority. Page 89 says the marcasite rate increased threefold with loading,
-      while Table 1 decreases its fitted k1 from 14.5 to 5.0 in the printed 10^-3 per day scaling. The
-      table/curve direction is retained without repairing the source. The abstract asserts no structure
-      effect, whereas the conclusion says the results cannot unambiguously verify that relationship. Different
-      surfaces, incomplete sample characterization and absent replication prevent a universal pyrite-versus-marcasite
-      reactivity ranking.
+    explanation: The introduction calls marcasite rhombohedral, contrary to the orthorhombic species identity established by the mineral authority. Page 89 says the marcasite rate increased threefold with loading, while Table 1 decreases its fitted k1 from 14.5 to 5.0 in the printed 10^-3 per day scaling. The table/curve direction is retained without repairing the source. The abstract asserts no structure effect, whereas the conclusion says the results cannot unambiguously verify that relationship. Different surfaces, incomplete sample characterization and absent replication prevent a universal pyrite-versus-marcasite reactivity ranking.
   - source_ref: ncbi920
     supports: context_only
-    explanation: Taxon 920 maps the historical species name to Acidithiobacillus ferrooxidans. It does
-      not authenticate the Siersza isolate or establish a strain-specific molecular mechanism. Neither
-      the paper's introductory reaction schemes nor the kinetic fit is direct enzyme evidence, and no
-      industrial application or purified product was demonstrated.
+    explanation: Taxon 920 maps the historical species name to Acidithiobacillus ferrooxidans. It does not authenticate the Siersza isolate or establish a strain-specific molecular mechanism. Neither the paper's introductory reaction schemes nor the kinetic fit is direct enzyme evidence, and no industrial application or purified product was demonstrated.
+causal_graphs:
+- id: culture_associated_marcasite_oxidation_graph
+  name: Acidithiobacillus ferrooxidans culture-associated ferric-iron accumulation during marcasite oxidation
+  description: Causal pathway linking representative Acidithiobacillus ferrooxidans reduced-sulfur oxidation enzymes Sqr and Tth to culture-associated oxidation of marcasite (FeS2) powder in iron-free Silverman 9K medium and colorimetric Fe(III) accumulation.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: culture-associated-marcasite-oxidation
+  nodes:
+  - id: sqr_reductase
+    label: Sqr sulfide-quinone reductase (AFE_1792)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: AFE_1792
+    description: Inner-membrane flavoprotein oxidizing sulfide to zero-valent sulfur/polysulfide intermediates.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JBP8
+      entry_name: SQRD_ACIF2
+      protein_name: Sulfide-quinone reductase
+      gene_symbol: AFE_1792
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      ec_numbers:
+      - EC:1.8.5.4
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR051169
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; AFE_1792) catalyzing oxidation of sulfide to elemental sulfur/polysulfide coupled to quinone reduction during acidophilic sulfur/sulfide bioleaching.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159).
+      evidence:
+      - source_ref: nowaczyk2000
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfide-quinone reductase (AFE_1792) for reduced-sulfur oxidation during culture-associated oxidation of marcasite (FeS2) in iron-free Silverman medium in Nowaczyk and Domka (2000); individual sqr/tth genes were not mutated.
+  - id: tth_hydrolase
+    label: Tth tetrathionate hydrolase (tth / AFE_0029)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: tth
+    description: Periplasmic pyrroloquinoline-domain hydrolase disproportionating tetrathionate into sulfate and protons.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7J3C9
+      entry_name: TTH_ACIF2
+      protein_name: Tetrathionate hydrolase
+      gene_symbol: tth
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      ec_numbers:
+      - EC:3.12.1.-
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase (EC 3.12.1.-; tth / AFE_0029) hydrolyzing tetrathionate into thiosulfate, elemental sulfur, and sulfate, generating sulfuric acid protons.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159).
+      evidence:
+      - source_ref: nowaczyk2000
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 tetrathionate hydrolase (tth / AFE_0029) for polythionate disproportionation and sulfuric-acid generation during culture-associated oxidation of marcasite (FeS2) in iron-free Silverman medium in Nowaczyk and Domka (2000); individual sqr/tth genes were not mutated.
+  - id: iron_free_silverman_9k_lixiviant
+    label: Iron-free Silverman 9K medium (initial pH 2.2, 37 C, 10% inoculum)
+    node_type: CHEMICAL_ENTITY
+    description: Iron-free Silverman 9K medium in 350 mL Erlenmeyer flasks at initial pH 2.2 and 37 C with 10% Acidithiobacillus ferrooxidans (Thiobacillus ferrooxidans) inoculum.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: natural_marcasite_powder
+    label: Natural marcasite (FeS2) powder (<0.125 mm, 45.9% Fe, 53.5% S; 1%, 2%, or 3% wt/vol)
+    node_type: MATERIAL_OR_PHASE
+    description: XRD-checked marcasite powder (<0.125 mm grain size, 45.9% Fe, 53.5% S) suspended at 1%, 2%, or 3% (wt/vol) for 40 days.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: dissolved_ferric_iron_leachate
+    label: Colorimetrically measured dissolved Fe(III) (reported iron leaching yields of 28.1% at 1%, 18.5% at 2%, and 10.4% at 3% loading)
+    node_type: CHEMICAL_ENTITY
+    description: Rhodanate-assayed dissolved Fe(III) accumulating over 40 days to reported yields of 28.1% (1% solids), 18.5% (2% solids), and 10.4% (3% solids), exceeding boiled + 1500 ppm HgI2 reference flasks.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: sqr_reductase
+    target: tth_hydrolase
+    predicate: supplies_substrate_for
+    relationship: oxidation of sulfide/sulfur intermediates to polythionates
+    description: Sulfide/sulfur oxidation generates reduced sulfur and polythionate intermediates metabolized by periplasmic tetrathionate hydrolase.
+    evidence:
+    - source_ref: nowaczyk2000
+      supports: partial
+      explanation: Reduced-sulfur oxidation in Acidithiobacillus ferrooxidans couples Sqr and polythionate hydrolysis during culture-associated oxidation of marcasite (FeS2) in iron-free Silverman medium; specific enzymes were not individually assayed in Nowaczyk and Domka (2000).
+  - source: tth_hydrolase
+    target: iron_free_silverman_9k_lixiviant
+    predicate: produces
+    relationship: polythionate hydrolysis and sulfuric acid proton generation
+    description: Periplasmic tetrathionate hydrolysis regenerates sulfate and protons in the acidic culture lixiviant.
+    evidence:
+    - source_ref: nowaczyk2000
+      supports: partial
+      explanation: Acidophilic sulfur oxidation maintains and regenerates acidic sulfate leach conditions during culture-associated oxidation of marcasite (FeS2) in iron-free Silverman medium in Nowaczyk and Domka (2000); individual enzyme activities were not isolated.
+  - source: iron_free_silverman_9k_lixiviant
+    target: natural_marcasite_powder
+    predicate: oxidizes
+    relationship: culture-associated oxidation of marcasite (FeS2) relative to inactivated HgI2 references
+    description: Live cultures produce substantially higher Fe(III) accumulation from 1-3% marcasite over 40 days than boiled-inoculum + 1500 ppm HgI2 reference series.
+    evidence:
+    - source_ref: nowaczyk2000
+      supports: support
+      explanation: Figure 4 and Table 1 in Nowaczyk and Domka (2000) show increasing Fe(III)-based leaching responses (28.1%, 18.5%, and 10.4%) in live cultures well above the corresponding inactivated reference series.
+  - source: natural_marcasite_powder
+    target: dissolved_ferric_iron_leachate
+    predicate: produces
+    relationship: accumulation of colorimetrically measured dissolved Fe(III) in leachate
+    description: Culture-associated marcasite oxidation yields 28.1% (1% loading), 18.5% (2% loading), and 10.4% (3% loading) reported iron leaching yields based on colorimetric Fe(III) measurement.
+    evidence:
+    - source_ref: nowaczyk2000
+      supports: support
+      explanation: Figure 4 and Table 1 in Nowaczyk and Domka (2000) report colorimetric Fe(III) leaching yields of 28.1%, 18.5%, and 10.4% across 1-3% marcasite loadings over 40 days.
 curation_history:
 - timestamp: '2026-10-14T14:44:37.481657+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
-  summary: Created distinct marcasite identity and qualified culture-associated Fe(III) evidence, retaining
-    altered controls, assay limitations and internal source conflicts.
+  summary: Created distinct marcasite identity and qualified culture-associated Fe(III) evidence, retaining altered controls, assay limitations and internal source conflicts.
+- timestamp: '2026-10-24T01:07:20Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: edit
+  summary: Added representative Acidithiobacillus ferrooxidans Sqr (UniProtKB:B7JBP8) and Tth (UniProtKB:B7J3C9) protein examples and causal graph to marcasite.yaml.
 history_refs:
 - history/records/marcasite/2026-10-14T144457Z-codex-3ae48d.yaml
+- history/records/marcasite/2026-10-24T010720Z-claude-claude-opus-4-6-antigravity-44fafd.yaml

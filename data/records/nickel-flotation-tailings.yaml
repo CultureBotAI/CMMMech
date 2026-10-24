@@ -1,138 +1,217 @@
 id: cmmmech:nickel-flotation-tailings
 name: Nickel flotation tailings
 material_kind: secondary_resource
-description: >-
-  Residual mixed solids from flotation in nickel-ore beneficiation,
-  distinct from the recovered flotation concentrate, unprocessed ore,
-  a pure sulfide mineral and downstream smelter slag. The curated case
-  is the material called lama in a 2010 UNESP thesis, supplied by
-  Votorantim Metais from flotation at its Serra de Fortaleza-MG nickel
-  extraction operation in Brazil. Original particles were reported as
-  50-100 micrometres. XRD indicated a heterogeneous silicate/carbonate
-  assemblage with pyrrhotite; no pure-pyrrhotite feed or quantitatively
-  established sulfide-hosted nickel fraction is assigned. Table 7 gives
-  total Ni 0.30%, Cu 0.03% and Co 0.01%, versus aqua-regia-soluble Ni
-  0.25%, Cu 0.03% and Co 0.01%. The digestion-defined soluble fraction
-  is not water-soluble metal. These are feed-specific measurements,
-  not a universal tailings composition or an inherited criticality claim.
+description: Residual mixed solids from flotation in nickel-ore beneficiation, distinct from the recovered flotation concentrate, unprocessed ore, a pure sulfide mineral and downstream smelter slag. The curated case is the material called lama in a 2010 UNESP thesis, supplied by Votorantim Metais from flotation at its Serra de Fortaleza-MG nickel extraction operation in Brazil. Original particles were reported as 50-100 micrometres. XRD indicated a heterogeneous silicate/carbonate assemblage with pyrrhotite; no pure-pyrrhotite feed or quantitatively established sulfide-hosted nickel fraction is assigned. Table 7 gives total Ni 0.30%, Cu 0.03% and Co 0.01%, versus aqua-regia-soluble Ni 0.25%, Cu 0.03% and Co 0.01%. The digestion-defined soluble fraction is not water-soluble metal. These are feed-specific measurements, not a universal tailings composition or an inherited criticality claim.
 sources:
-  - id: munoz_blandon2010
-    title: >-
-      Nury Alexandra Munoz Blandon (2010). Recuperacao de niquel e outros
-      metais a partir de diferentes fontes (rejeitos minerais de processo
-      industrial e pentlandita (Ni,Fe)9S8) por lixiviacao bacteriana e acida.
-      Doctoral thesis, UNESP, Instituto de Quimica, Araraquara.
-      Official repository handle 11449/100745, issued 15 July 2010;
-      repository accession in 2014 is not the publication year.
-      Original 125-page PDF; source pp. 33, 36-40, 50-53 and 61-72,
-      Tables 1-3, 7 and 11-14, Figures 4-6 and 13-22.
-      Repository title wording differs slightly from the thesis front matter.
-    url: https://hdl.handle.net/11449/100745
-    accessed_on: '2026-10-14'
-  - id: ncbi_ferrooxidans
-    title: >-
-      NCBI Taxonomy 920, Acidithiobacillus ferrooxidans, species entry.
-      Resolves the source species name without authenticating the LR
-      experimental isolate or equating it with a type-strain accession.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
-    accessed_on: '2026-10-14'
+- id: munoz_blandon2010
+  title: Nury Alexandra Munoz Blandon (2010). Recuperacao de niquel e outros metais a partir de diferentes fontes (rejeitos minerais de processo industrial e pentlandita (Ni,Fe)9S8) por lixiviacao bacteriana e acida. Doctoral thesis, UNESP, Instituto de Quimica, Araraquara. Official repository handle 11449/100745, issued 15 July 2010; repository accession in 2014 is not the publication year. Original 125-page PDF; source pp. 33, 36-40, 50-53 and 61-72, Tables 1-3, 7 and 11-14, Figures 4-6 and 13-22. Repository title wording differs slightly from the thesis front matter.
+  url: https://hdl.handle.net/11449/100745
+  accessed_on: '2026-10-14'
+- id: ncbi_ferrooxidans
+  title: NCBI Taxonomy 920, Acidithiobacillus ferrooxidans, species entry. Resolves the source species name without authenticating the LR experimental isolate or equating it with a type-strain accession.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
+  accessed_on: '2026-10-14'
 mechanisms:
-  - id: lr_associated_nickel_mobilization
-    name: Culture-associated nickel mobilization in shaken acidic tailings flasks
-    process: bioleaching
-    microbial: true
-    organisms:
-      - id: NCBITaxon:920
-        label: Acidithiobacillus ferrooxidans
-    description: >-
-      Inoculation with source-labelled A. ferrooxidans LR was associated
-      with higher nickel release than corresponding uninoculated
-      treatments during shaken acidic leaching of these mixed tailings.
-      Higher redox potential and changes in sulfide/carbonate diffraction
-      peaks are consistent with biologically sustained oxidizing
-      conditions and acid dissolution. They do not establish the exact
-      mineral host of released nickel, an exclusively enzymatic pathway
-      or an effect independent of inoculum chemistry and pH differences.
-      The measured outcome was metal in leachate, not an isolated nickel
-      product. Strong-acid and static treatments did not show the same
-      inoculation advantage, limiting extrapolation beyond the flask design.
-    context: >-
-      The study used duplicate 250 mL Erlenmeyer flasks with 150 mL T&K
-      medium, 5% w/v original-size tailings and 5% v/v inoculum, at
-      30 degrees C and 150 rpm for 14 days. LR was reported to originate
-      from acidic uranium-ore leachate at Lagoa Real, Bahia; no strain
-      accession or independent authentication is supplied. Precultures
-      grew in T&K at pH 1.8. Arms were nominally no-added-iron T&K,
-      T&K plus 120 mmol/L Fe(II), and grown culture containing about
-      120 mmol/L Fe(III). Controls were the corresponding uninoculated
-      medium or grown culture described as sterile. Experimental pH rose
-      and was corrected with sulfuric acid; Figure 13 documents differing
-      trajectories. Flame atomic absorption measured leachate metals,
-      with total-feed metal determined by HF/microwave digestion and
-      a separate aqua-regia-soluble denominator. Cell washing is stated
-      only for separate respirometry, not for these leaching inocula;
-      no-added-iron medium therefore does not establish zero iron or
-      an inoculum-broth-matched comparison. A later 50-day shaken repeat
-      and static beaker tests used separate experimental series.
+- id: lr_associated_nickel_mobilization
+  name: Culture-associated nickel mobilization in shaken acidic tailings flasks
+  process: bioleaching
+  description: Inoculation with source-labelled A. ferrooxidans LR was associated with higher nickel release than corresponding uninoculated treatments during shaken acidic leaching of these mixed tailings. Higher redox potential and changes in sulfide/carbonate diffraction peaks are consistent with biologically sustained oxidizing conditions and acid dissolution. They do not establish the exact mineral host of released nickel, an exclusively enzymatic pathway or an effect independent of inoculum chemistry and pH differences. The measured outcome was metal in leachate, not an isolated nickel product. Strong-acid and static treatments did not show the same inoculation advantage, limiting extrapolation beyond the flask design.
+  context: The study used duplicate 250 mL Erlenmeyer flasks with 150 mL T&K medium, 5% w/v original-size tailings and 5% v/v inoculum, at 30 degrees C and 150 rpm for 14 days. LR was reported to originate from acidic uranium-ore leachate at Lagoa Real, Bahia; no strain accession or independent authentication is supplied. Precultures grew in T&K at pH 1.8. Arms were nominally no-added-iron T&K, T&K plus 120 mmol/L Fe(II), and grown culture containing about 120 mmol/L Fe(III). Controls were the corresponding uninoculated medium or grown culture described as sterile. Experimental pH rose and was corrected with sulfuric acid; Figure 13 documents differing trajectories. Flame atomic absorption measured leachate metals, with total-feed metal determined by HF/microwave digestion and a separate aqua-regia-soluble denominator. Cell washing is stated only for separate respirometry, not for these leaching inocula; no-added-iron medium therefore does not establish zero iron or an inoculum-broth-matched
+    comparison. A later 50-day shaken repeat and static beaker tests used separate experimental series.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:920
+    label: Acidithiobacillus ferrooxidans
+  protein_examples:
+  - uniprot_accession: UniProtKB:B7JBP8
+    entry_name: SQRD_ACIF2
+    protein_name: Sulfide-quinone reductase
+    gene_symbol: AFE_1792
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    ec_numbers:
+    - EC:1.8.5.4
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR051169
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; AFE_1792) catalyzing oxidation of sulfide to elemental sulfur/polysulfide coupled to quinone reduction during acidophilic sulfur/sulfide bioleaching.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159).
     evidence:
-      - source_ref: munoz_blandon2010
-        supports: support
-        explanation: >-
-          Pages 33, 36-40 and 50-53 identify the flotation residue and
-          laboratory protocol. Figures 13-14 and Table 11 on pages 62-63
-          report day-14 extraction as percentages of total feed Ni:
-          inoculated/control 42/24% without added iron, 46/30% with
-          ferrous iron and 45/37% with grown ferric culture. Corresponding
-          total-Cu percentages were 16/14%, 17/14% and 16/13%.
-          These are reported treatment comparisons, without displayed
-          replicate uncertainty or a statistical significance test.
-          The adjacent percentages against the smaller aqua-regia-soluble
-          Ni fraction are not total-metal extraction yields. No leachate
-          concentration is converted here into isolated-product recovery.
+    - source_ref: munoz_blandon2010
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfide-quinone reductase (AFE_1792) for reduced-sulfur oxidation during shaken acidic T&K leaching of pyrrhotite/dolomite-bearing nickel flotation tailings in Munoz Blandon (2010); individual sqr/tth genes were not mutated.
+  - uniprot_accession: UniProtKB:B7J3C9
+    entry_name: TTH_ACIF2
+    protein_name: Tetrathionate hydrolase
+    gene_symbol: tth
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    ec_numbers:
+    - EC:3.12.1.-
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase (EC 3.12.1.-; tth / AFE_0029) hydrolyzing tetrathionate into thiosulfate, elemental sulfur, and sulfate, generating sulfuric acid protons.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159).
+    evidence:
+    - source_ref: munoz_blandon2010
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 tetrathionate hydrolase (tth / AFE_0029) for polythionate disproportionation and sulfuric-acid generation during shaken acidic T&K leaching of pyrrhotite/dolomite-bearing nickel flotation tailings in Munoz Blandon (2010); individual sqr/tth genes were not mutated.
+  evidence:
+  - source_ref: munoz_blandon2010
+    supports: support
+    explanation: 'Pages 33, 36-40 and 50-53 identify the flotation residue and laboratory protocol. Figures 13-14 and Table 11 on pages 62-63 report day-14 extraction as percentages of total feed Ni: inoculated/control 42/24% without added iron, 46/30% with ferrous iron and 45/37% with grown ferric culture. Corresponding total-Cu percentages were 16/14%, 17/14% and 16/13%. These are reported treatment comparisons, without displayed replicate uncertainty or a statistical significance test. The adjacent percentages against the smaller aqua-regia-soluble Ni fraction are not total-metal extraction yields. No leachate concentration is converted here into isolated-product recovery.'
+  - source_ref: munoz_blandon2010
+    supports: partial
+    explanation: Figures 13 and 15 show generally higher redox in inoculated flasks and changed solid-phase diffraction after treatment. Pyrrhotite and dolomite peaks declined, and additional peaks were assigned to jarosite, but silicate-jarosite peak overlap and mixed feed prevent a quantitative mineral mass balance. The proposed acid and ferric-iron mediation is consistent with these observations; a killed-cell control, blank-corrected inoculum chemistry, identical pH trajectory and authenticated strain-specific mechanism are not demonstrated.
+  - source_ref: munoz_blandon2010
+    supports: partial
+    explanation: 'The separate 50-day series in Figures 16-17 and Table 13 also showed higher Ni mobilization in the first three inoculated arms. The strong-acid arm did not: Table 13 reports total-Ni extraction of 44% with inoculated ferric culture plus 1.25 M sulfuric acid and 45% in its control. Table 2 describes that control as sterile acid alone, so the iron chemistry is not matched and the result does not uniquely demonstrate acid inhibition of living cells. Some total/soluble values elsewhere in this table cannot be reconciled using rounded Table 7 composition; those denominators are not pooled or recalculated.'
+  - source_ref: munoz_blandon2010
+    supports: partial
+    explanation: Static beaker tests in Figures 19-22 and Table 14 showed similar or greater nickel mobilization in controls. The source proposes restricted oxygen and mass transfer, without directly measuring those causes. The static protocol includes inconsistent iron concentrations between figure captions and discordant total/soluble percentage accounting, so precise static yields are not adopted. Those null comparisons remain evidence against treating the shaken-flask benefit as universal. Neither the industrial origin of the waste nor these laboratory tests demonstrates pilot or industrial microbial recovery.
+causal_graphs:
+- id: lr_associated_nickel_mobilization_graph
+  name: Acidithiobacillus ferrooxidans LR culture-associated nickel mobilization in shaken acidic tailings flasks
+  description: Causal pathway linking representative Acidithiobacillus ferrooxidans reduced-sulfur oxidation enzymes Sqr and Tth to culture-associated mobilization of nickel and copper and pyrrhotite/dolomite alteration during 14-day shaken T&K leaching of Brazilian nickel flotation tailings.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: lr_associated_nickel_mobilization
+  nodes:
+  - id: sqr_reductase
+    label: Sqr sulfide-quinone reductase (AFE_1792)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: AFE_1792
+    description: Inner-membrane flavoprotein oxidizing sulfide to zero-valent sulfur/polysulfide intermediates.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JBP8
+      entry_name: SQRD_ACIF2
+      protein_name: Sulfide-quinone reductase
+      gene_symbol: AFE_1792
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      ec_numbers:
+      - EC:1.8.5.4
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR051169
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; AFE_1792) catalyzing oxidation of sulfide to elemental sulfur/polysulfide coupled to quinone reduction during acidophilic sulfur/sulfide bioleaching.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159).
+      evidence:
       - source_ref: munoz_blandon2010
         supports: partial
-        explanation: >-
-          Figures 13 and 15 show generally higher redox in inoculated
-          flasks and changed solid-phase diffraction after treatment.
-          Pyrrhotite and dolomite peaks declined, and additional peaks
-          were assigned to jarosite, but silicate-jarosite peak overlap
-          and mixed feed prevent a quantitative mineral mass balance.
-          The proposed acid and ferric-iron mediation is consistent with
-          these observations; a killed-cell control, blank-corrected
-          inoculum chemistry, identical pH trajectory and authenticated
-          strain-specific mechanism are not demonstrated.
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfide-quinone reductase (AFE_1792) for reduced-sulfur oxidation during shaken acidic T&K leaching of pyrrhotite/dolomite-bearing nickel flotation tailings in Munoz Blandon (2010); individual sqr/tth genes were not mutated.
+  - id: tth_hydrolase
+    label: Tth tetrathionate hydrolase (tth / AFE_0029)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: tth
+    description: Periplasmic pyrroloquinoline-domain hydrolase disproportionating tetrathionate into sulfate and protons.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7J3C9
+      entry_name: TTH_ACIF2
+      protein_name: Tetrathionate hydrolase
+      gene_symbol: tth
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      ec_numbers:
+      - EC:3.12.1.-
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase (EC 3.12.1.-; tth / AFE_0029) hydrolyzing tetrathionate into thiosulfate, elemental sulfur, and sulfate, generating sulfuric acid protons.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159).
+      evidence:
       - source_ref: munoz_blandon2010
         supports: partial
-        explanation: >-
-          The separate 50-day series in Figures 16-17 and Table 13 also
-          showed higher Ni mobilization in the first three inoculated
-          arms. The strong-acid arm did not: Table 13 reports total-Ni
-          extraction of 44% with inoculated ferric culture plus 1.25 M
-          sulfuric acid and 45% in its control. Table 2 describes that
-          control as sterile acid alone, so the iron chemistry is not
-          matched and the result does not uniquely demonstrate acid
-          inhibition of living cells. Some total/soluble values elsewhere
-          in this table cannot be reconciled using rounded Table 7
-          composition; those denominators are not pooled or recalculated.
-      - source_ref: munoz_blandon2010
-        supports: partial
-        explanation: >-
-          Static beaker tests in Figures 19-22 and Table 14 showed similar
-          or greater nickel mobilization in controls. The source proposes
-          restricted oxygen and mass transfer, without directly measuring
-          those causes. The static protocol includes inconsistent iron
-          concentrations between figure captions and discordant
-          total/soluble percentage accounting, so precise static yields
-          are not adopted. Those null comparisons remain evidence against
-          treating the shaken-flask benefit as universal. Neither the
-          industrial origin of the waste nor these laboratory tests
-          demonstrates pilot or industrial microbial recovery.
-
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 tetrathionate hydrolase (tth / AFE_0029) for polythionate disproportionation and sulfuric-acid generation during shaken acidic T&K leaching of pyrrhotite/dolomite-bearing nickel flotation tailings in Munoz Blandon (2010); individual sqr/tth genes were not mutated.
+  - id: acidic_tk_ferric_lixiviant
+    label: Tuovinen & Kelly (T&K) medium (pH 1.8; no-added-Fe, 120 mmol/L Fe(II), and ~120 mmol/L grown Fe(III) arms)
+    node_type: CHEMICAL_ENTITY
+    description: 150 mL T&K medium (precultures at pH 1.8) with 5% v/v Acidithiobacillus ferrooxidans LR inoculum in duplicate 250 mL flasks at 30 C and 150 rpm for 14 days.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: brazilian_nickel_flotation_tailings
+    label: Pyrrhotite- and dolomite-bearing nickel flotation tailings (5% w/v original-size tailings)
+    node_type: MATERIAL_OR_PHASE
+    description: Mixed sulfide/carbonate/silicate nickel flotation residue loaded at 5% (w/v) in shaken T&K flasks.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: dissolved_ni_cu_and_jarosite_bearing_residue
+    label: Dissolved total-feed Ni (42-46% vs 24-37% controls) and Cu (16-17% vs 13-14% controls) at day 14 with jarosite-bearing residue
+    node_type: MATERIAL_OR_PHASE
+    description: Day-14 leachate containing 42% vs 24% (no added Fe), 46% vs 30% (+120 mmol/L Fe(II)), and 45% vs 37% (grown Fe(III) culture) of total feed Ni, plus reduced pyrrhotite/dolomite and new jarosite XRD peaks.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: sqr_reductase
+    target: tth_hydrolase
+    predicate: supplies_substrate_for
+    relationship: oxidation of sulfide/sulfur intermediates to polythionates
+    description: Sulfide/sulfur oxidation generates reduced sulfur and polythionate intermediates metabolized by periplasmic tetrathionate hydrolase.
+    evidence:
+    - source_ref: munoz_blandon2010
+      supports: partial
+      explanation: Reduced-sulfur oxidation in Acidithiobacillus ferrooxidans couples Sqr and polythionate hydrolysis during shaken acidic T&K leaching of pyrrhotite/dolomite-bearing nickel flotation tailings; specific enzymes were not individually assayed in Munoz Blandon (2010).
+  - source: tth_hydrolase
+    target: acidic_tk_ferric_lixiviant
+    predicate: produces
+    relationship: polythionate hydrolysis and sulfuric acid proton generation
+    description: Periplasmic tetrathionate hydrolysis regenerates sulfate and protons in the acidic culture lixiviant.
+    evidence:
+    - source_ref: munoz_blandon2010
+      supports: partial
+      explanation: Acidophilic sulfur oxidation maintains and regenerates acidic sulfate leach conditions during shaken acidic T&K leaching of pyrrhotite/dolomite-bearing nickel flotation tailings in Munoz Blandon (2010); individual enzyme activities were not isolated.
+  - source: acidic_tk_ferric_lixiviant
+    target: brazilian_nickel_flotation_tailings
+    predicate: dissolves
+    relationship: culture-associated higher redox potential and dissolution of pyrrhotite/dolomite-bearing tailings
+    description: Inoculated A. ferrooxidans LR flasks maintain higher redox potential, deplete pyrrhotite and dolomite XRD peaks, and mobilize more total-feed Ni than uninoculated controls in shaken 14-day flasks.
+    evidence:
+    - source_ref: munoz_blandon2010
+      supports: support
+      explanation: Figures 13-15 and Table 11 (pp. 62-63) in Munoz Blandon (2010) report higher redox potential, reduced pyrrhotite/dolomite diffraction peaks, and higher day-14 total-Ni extraction across all three shaken T&K arms.
+  - source: brazilian_nickel_flotation_tailings
+    target: dissolved_ni_cu_and_jarosite_bearing_residue
+    predicate: produces
+    relationship: mobilization of 42-46% total-feed Ni (and 16-17% Cu) into leachate and jarosite formation in solid residue
+    description: 14-day shaken T&K leaching extracts 42%, 46%, and 45% of total feed Ni in inoculated arms (versus 24%, 30%, and 37% in controls) and precipitates jarosite in the solid residue.
+    evidence:
+    - source_ref: munoz_blandon2010
+      supports: support
+      explanation: Figures 13-15 and Table 11 (pp. 62-63) in Munoz Blandon (2010) report day-14 total-Ni extractions of 42/24%, 46/30%, and 45/37% (inoculated/control) and total-Cu extractions of 16/14%, 17/14%, and 16/13%.
 curation_history:
-  - timestamp: '2026-10-14T05:35:29.027316+00:00'
-    curator: codex (GPT-6; codex)
-    action: CREATE
-    summary: >-
-      Created a nickel-beneficiation flotation-tailings resource with conditional culture-associated nickel release, explicit controls, total-metal denominators and static/strong-acid nulls.
+- timestamp: '2026-10-14T05:35:29.027316+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created a nickel-beneficiation flotation-tailings resource with conditional culture-associated nickel release, explicit controls, total-metal denominators and static/strong-acid nulls.
+- timestamp: '2026-10-24T01:07:20Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: edit
+  summary: Added representative Acidithiobacillus ferrooxidans Sqr (UniProtKB:B7JBP8) and Tth (UniProtKB:B7J3C9) protein examples and causal graph to nickel-flotation-tailings.yaml.
 history_refs:
-  - history/records/nickel-flotation-tailings/2026-10-14T053546Z-codex-b3a525.yaml
+- history/records/nickel-flotation-tailings/2026-10-14T053546Z-codex-b3a525.yaml
+- history/records/nickel-flotation-tailings/2026-10-24T010720Z-claude-claude-opus-4-6-antigravity-7672da.yaml
