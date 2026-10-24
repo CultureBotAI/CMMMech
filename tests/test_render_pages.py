@@ -181,3 +181,39 @@ def test_ima_symbol_and_polymorph_or_grade_rendered(tmp_path):
     assert "Grade / Polymorph: 3C-SiC" in html
 
 
+def test_remove_tree_falls_back_when_shutil_rmtree_blocked(tmp_path, monkeypatch):
+    out_dir = tmp_path / "pages"
+    nested_dir = out_dir / "materials"
+    nested_dir.mkdir(parents=True)
+    (out_dir / "index.html").write_text("<html></html>", encoding="utf-8")
+    (nested_dir / "cobalt.html").write_text("<html>cobalt</html>", encoding="utf-8")
+
+    def _blocked_rmtree(_path):
+        raise PermissionError(1, "Operation not permitted", str(_path))
+
+    monkeypatch.setattr(render_pages.shutil, "rmtree", _blocked_rmtree)
+    assert render_pages._remove_tree(out_dir) is True
+    assert not out_dir.exists()
+
+
+def test_sync_rendered_tree_updates_in_place_when_remove_tree_blocked(tmp_path, monkeypatch):
+    src_dir = tmp_path / "src_pages"
+    dst_dir = tmp_path / "dst_pages"
+    (src_dir / "materials").mkdir(parents=True)
+    (dst_dir / "materials").mkdir(parents=True)
+    (src_dir / "index.html").write_text("<html>unchanged</html>", encoding="utf-8")
+    (dst_dir / "index.html").write_text("<html>unchanged</html>", encoding="utf-8")
+    (src_dir / "materials" / "cobalt.html").write_text("<html>updated</html>", encoding="utf-8")
+    (dst_dir / "materials" / "cobalt.html").write_text("<html>old</html>", encoding="utf-8")
+    (dst_dir / "materials" / "stale.html").write_text("<html>stale</html>", encoding="utf-8")
+
+    monkeypatch.setattr(render_pages, "_remove_tree", lambda _path: False)
+    render_pages._sync_rendered_tree(src_dir, dst_dir)
+
+    assert (dst_dir / "index.html").read_text(encoding="utf-8") == "<html>unchanged</html>"
+    assert (dst_dir / "materials" / "cobalt.html").read_text(encoding="utf-8") == "<html>updated</html>"
+    assert not (dst_dir / "materials" / "stale.html").exists()
+
+
+
+

@@ -38,7 +38,7 @@ tasks:
     summary: Anchor scripts/record_review.py _directory() traversal at repository ROOT instead of filesystem root / so review validation runs inside Seatbelt sandboxes
     status: deferred
     issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
-    disposition: "Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6 because scripts/record_review.py and tests/test_record_review_contract.py are vendored artifacts governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); tracked under open issue #805 for coordinated upstream implementation and sync."
+    disposition: "Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6 and Cycle 3 Stage 6 because scripts/record_review.py and tests/test_record_review_contract.py are vendored artifacts governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); tracked under open issue #805 for coordinated upstream implementation and sync."
   - task_id: cmmmech-infra-0002
     summary: Add optional MaterialTerm/CriticalMineralRecord metadata slots for IMA mineral symbols and engineered material polymorph/grade identifiers in src/cmmmech/schema/cmmmech.yaml
     status: resolved
@@ -58,7 +58,7 @@ tasks:
     summary: Batch git cat-file object size and content checks in scripts/record_review.py assert_append_only() and source_provenance() via git cat-file --batch
     status: deferred
     issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
-    disposition: "Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6 because scripts/record_review.py is a vendored artifact governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); grouped with cmmmech-infra-0001 under open issue #805 for upstream implementation and sync."
+    disposition: "Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6 and Cycle 3 Stage 6 because scripts/record_review.py is a vendored artifact governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); grouped with cmmmech-infra-0001 under open issue #805 for upstream implementation and sync."
   - task_id: cmmmech-infra-0006
     summary: Replace os.link() in src/cmmmech/history.py cmd_new() with exclusive-create or os.replace() fallback so scripts/curate_causal_graphs.py and cmmmech new-history succeed inside macOS Seatbelt sandboxes
     status: resolved
@@ -66,13 +66,19 @@ tasks:
     disposition: "Resolved in Cycle 2 Stage 6 (issue #822) by adding an exclusive-create fallback (os.open with O_WRONLY | O_CREAT | O_EXCL | O_NOFOLLOW) when os.link() raises PermissionError in src/cmmmech/history.py cmd_new(), verified by unit tests in tests/test_history.py and sandboxed execution of tests/test_curate_causal_graphs.py."
   - task_id: cmmmech-infra-0007
     summary: Add a path-based directory cleanup fallback when shutil.rmtree() raises PermissionError on dir_fd unlinkat() in scripts/render_pages.py so static page rendering succeeds inside macOS Seatbelt sandboxes
-    status: note
+    status: resolved
+    issue_url: https://github.com/CultureBotAI/CMMMech/issues/834
+    disposition: "Resolved in Cycle 3 Stage 6 (issue #834) by adding _remove_tree() and _sync_rendered_tree() in scripts/render_pages.py so static page rendering falls back cleanly when Seatbelt blocks dir_fd unlinkat() or unchanged provenance-tagged file deletion, verified by unit tests in tests/test_render_pages.py and sandboxed execution of scripts/render_pages.py."
   - task_id: cmmmech-infra-0008
     summary: Extend scripts/curate_causal_graphs.py apply_curation_patch() to support mechanism-id-keyed organisms, evidence, and observations updates alongside causal_graphs and protein_examples
-    status: note
+    status: resolved
+    issue_url: https://github.com/CultureBotAI/CMMMech/issues/835
+    disposition: "Resolved in Cycle 3 Stage 6 (issue #835) by extending apply_curation_patch() in scripts/curate_causal_graphs.py with mechanism_organisms, mechanism_evidence, mechanism_observations, and composite mechanism_patches support (both upsert and replace modes), verified by unit tests in tests/test_curate_causal_graphs.py."
   - task_id: cmmmech-infra-0009
     summary: Node-level protein_examples upsert and mechanism/node parity enforcement in scripts/curate_causal_graphs.py
-    status: note
+    status: resolved
+    issue_url: https://github.com/CultureBotAI/CMMMech/issues/835
+    disposition: "Resolved in Cycle 3 Stage 6 (issue #835) by adding node_protein_examples upsert support and automatic bidirectional mechanisms[].protein_examples <-> causal_graphs[].nodes[].protein_examples parity synchronization in scripts/curate_causal_graphs.py, verified by unit tests in tests/test_curate_causal_graphs.py."
 ```
 <!-- mech-infra-tasks:end -->
 
@@ -88,7 +94,7 @@ tasks:
 - **Dependencies**: Upstream `CultureBotAI/culturebotai-claw` vendored-artifact governance (`scripts/check_vendored_sync.py`)
 - **Issue**: https://github.com/CultureBotAI/CMMMech/issues/805 (`IGRP-C1S6-001`)
 - **Status**: `deferred`
-- **Disposition**: Deferred in Cycle 1 Stage 6 because `scripts/record_review.py` and `tests/test_record_review_contract.py` are governed vendored artifacts enforced by `scripts/check_vendored_sync.py`. Tracked in issue `#805` for upstream implementation in `CultureBotAI/culturebotai-claw` and subsequent vendored sync.
+- **Disposition**: Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6 and Cycle 3 Stage 6 because `scripts/record_review.py` and `tests/test_record_review_contract.py` are governed vendored artifacts enforced by `scripts/check_vendored_sync.py`. Tracked in issue `#805` for upstream implementation in `CultureBotAI/culturebotai-claw` and subsequent vendored sync.
 
 ### `cmmmech-infra-0002` — Optional `CriticalMineralRecord` slots for IMA symbols and polymorph/grade classifications
 
@@ -136,7 +142,7 @@ tasks:
 - **Dependencies**: Upstream `CultureBotAI/culturebotai-claw` vendored-artifact governance (`scripts/check_vendored_sync.py`), `cmmmech-infra-0001`
 - **Issue**: https://github.com/CultureBotAI/CMMMech/issues/805 (`IGRP-C1S6-001`)
 - **Status**: `deferred`
-- **Disposition**: Deferred in Cycle 1 Stage 6 because `scripts/record_review.py` is a governed vendored artifact enforced by `scripts/check_vendored_sync.py`. Grouped with `cmmmech-infra-0001` under issue `#805` for coordinated upstream implementation in `CultureBotAI/culturebotai-claw` and subsequent vendored sync.
+- **Disposition**: Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6 and Cycle 3 Stage 6 because `scripts/record_review.py` is a governed vendored artifact enforced by `scripts/check_vendored_sync.py`. Grouped with `cmmmech-infra-0001` under issue `#805` for coordinated upstream implementation in `CultureBotAI/culturebotai-claw` and subsequent vendored sync.
 
 ### `cmmmech-infra-0006` — Exclusive-create fallback for `os.link()` in `src/cmmmech/history.py` `cmd_new()`
 
@@ -158,8 +164,9 @@ tasks:
 - **Evidence paths**: `scripts/render_pages.py`, `tests/test_render_pages.py`
 - **Priority**: low
 - **Dependencies**: None
-- **Issue**: Pending Stage 6 issue creation
-- **Status**: `note`
+- **Issue**: https://github.com/CultureBotAI/CMMMech/issues/834 (`IGRP-C3S6-001`)
+- **Status**: `resolved`
+- **Disposition**: Resolved in Cycle 3 Stage 6 by adding `_remove_tree()` (catching `PermissionError` from `shutil.rmtree` and falling back to bottom-up `Path.unlink()` / `Path.rmdir()`) and `_sync_rendered_tree()` (rendering into a `TemporaryDirectory` in `/tmp` and updating only changed files in `args.out` when Seatbelt blocks unlinking provenance-tagged workspace files) in `scripts/render_pages.py`, verified by unit tests in `tests/test_render_pages.py` and sandboxed execution of `scripts/render_pages.py`.
 
 ### `cmmmech-infra-0008` — Extend `scripts/curate_causal_graphs.py` `apply_curation_patch()` for mechanism-level `organisms`, `evidence`, and `observations`
 
@@ -169,8 +176,9 @@ tasks:
 - **Evidence paths**: `scripts/curate_causal_graphs.py`, `tests/test_curate_causal_graphs.py`
 - **Priority**: low
 - **Dependencies**: `cmmmech-infra-0004`
-- **Issue**: Pending Stage 6 issue creation
-- **Status**: `note`
+- **Issue**: https://github.com/CultureBotAI/CMMMech/issues/835 (`IGRP-C3S6-002`)
+- **Status**: `resolved`
+- **Disposition**: Resolved in Cycle 3 Stage 6 by extending `apply_curation_patch()` in `scripts/curate_causal_graphs.py` with `mechanism_organisms`, `mechanism_evidence`, `mechanism_observations`, and composite `mechanism_patches` support (both upsert and replace modes), verified by unit tests in `tests/test_curate_causal_graphs.py`.
 
 ### `cmmmech-infra-0009` — Node-level `protein_examples` upsert and mechanism/node parity enforcement in `scripts/curate_causal_graphs.py`
 
@@ -180,8 +188,9 @@ tasks:
 - **Evidence paths**: `scripts/curate_causal_graphs.py`, `tests/test_curate_causal_graphs.py`
 - **Priority**: low
 - **Dependencies**: `cmmmech-infra-0004`
-- **Issue**: Pending Stage 6 issue creation
-- **Status**: `note`
+- **Issue**: https://github.com/CultureBotAI/CMMMech/issues/835 (`IGRP-C3S6-002`)
+- **Status**: `resolved`
+- **Disposition**: Resolved in Cycle 3 Stage 6 by adding `node_protein_examples` upsert support (accepting `"<graph_id>/<node_id>"` keys, nested `{graph_id: {node_id: [...]}}` mappings, or entry lists) and automatic bidirectional `mechanisms[].protein_examples` ↔ `causal_graphs[].nodes[].protein_examples` parity synchronization in `scripts/curate_causal_graphs.py`, verified by unit tests in `tests/test_curate_causal_graphs.py`.
 
 
 

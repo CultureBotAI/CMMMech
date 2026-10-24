@@ -198,3 +198,146 @@ def test_curate_record_file_rejects_invalid_patch_without_side_effects(tmp_path,
 
     assert rec_path.read_text(encoding="utf-8") == original_text
     assert not (tmp_path / "history").exists()
+
+
+def test_apply_curation_patch_supports_mechanism_field_patches(record):
+    mech_id = record["mechanisms"][0]["id"]
+    first_patch, sections = curate_mod.apply_curation_patch(
+        record,
+        {
+            "mechanism_organisms": {
+                mech_id: [
+                    {
+                        "id": "NCBITaxon:272562",
+                        "label": "Clostridium acetobutylicum ATCC 824",
+                    }
+                ]
+            },
+            "mechanism_evidence": {
+                mech_id: [
+                    {
+                        "source_ref": "fixture",
+                        "supports": "support",
+                        "explanation": "Mechanism evidence upsert via mechanism_evidence patch.",
+                    }
+                ]
+            },
+            "mechanism_observations": {
+                mech_id: [
+                    {
+                        "parameter": "operating_ph",
+                        "value": "5.5",
+                        "unit": "pH",
+                        "notes": "Upserted mechanism observation.",
+                    }
+                ]
+            },
+        },
+    )
+    assert "mechanisms" in sections
+    mech = first_patch["mechanisms"][0]
+    assert any(org.get("id") == "NCBITaxon:272562" for org in mech["organisms"])
+    assert any(
+        ev.get("explanation") == "Mechanism evidence upsert via mechanism_evidence patch."
+        for ev in mech["evidence"]
+    )
+    assert any(obs.get("parameter") == "operating_ph" for obs in mech["observations"])
+
+    replaced, _ = curate_mod.apply_curation_patch(
+        first_patch,
+        {
+            "mechanism_patches": {
+                mech_id: {
+                    "replace_observations": True,
+                    "observations": [
+                        {
+                            "parameter": "temperature",
+                            "value": "30",
+                            "unit": "degC",
+                        }
+                    ],
+                }
+            }
+        },
+    )
+    assert replaced["mechanisms"][0]["observations"] == [
+        {
+            "parameter": "temperature",
+            "value": "30",
+            "unit": "degC",
+        }
+    ]
+
+
+def test_apply_curation_patch_syncs_node_and_mechanism_protein_examples_parity(record):
+    base, _ = curate_mod.apply_curation_patch(record, _sample_patch())
+    mech_id = base["mechanisms"][0]["id"]
+    graph_id = base["causal_graphs"][0]["id"]
+    node_id = "gdh_enzyme"
+
+    extra_protein = {
+        "uniprot_accession": "UniProtKB:P12345",
+        "entry_name": "TEST_GLUOX",
+        "protein_name": "Secondary glucose dehydrogenase",
+        "gene_symbol": "gdhB",
+        "entry_status": "SWISS_PROT",
+        "target_organism": {"id": "NCBITaxon:442", "label": "Gluconobacter oxydans"},
+        "functional_role": "Secondary periplasmic glucose oxidation.",
+        "evidence": [
+            {
+                "source_ref": "fixture",
+                "supports": "support",
+                "explanation": "Synthetic node protein grounding.",
+            }
+        ],
+    }
+
+    updated, sections = curate_mod.apply_curation_patch(
+        base,
+        {
+            "node_protein_examples": {
+                f"{graph_id}/{node_id}": [extra_protein],
+            }
+        },
+    )
+    assert "causal_graphs" in sections
+    assert "mechanisms" in sections
+
+    mech_acc = {p["uniprot_accession"] for p in updated["mechanisms"][0]["protein_examples"]}
+    node = next(n for n in updated["causal_graphs"][0]["nodes"] if n["id"] == node_id)
+    node_acc = {p["uniprot_accession"] for p in node["protein_examples"]}
+    assert "UniProtKB:P12345" in node_acc
+    assert "UniProtKB:P12345" in mech_acc
+
+    extra_mech_protein = {
+        "uniprot_accession": "UniProtKB:Q99999",
+        "entry_name": "MECH_GLUOX",
+        "protein_name": "Mechanism-added glucose dehydrogenase helper",
+        "gene_symbol": "gdhC",
+        "entry_status": "TREMBL",
+        "target_organism": {"id": "NCBITaxon:442", "label": "Gluconobacter oxydans"},
+        "functional_role": "Helper enzyme for glucose oxidation.",
+        "evidence": [
+            {
+                "source_ref": "fixture",
+                "supports": "support",
+                "explanation": "Synthetic mechanism protein grounding.",
+            }
+        ],
+    }
+
+    updated_from_mech, sections_mech = curate_mod.apply_curation_patch(
+        updated,
+        {
+            "mechanism_protein_examples": {
+                mech_id: [extra_mech_protein],
+            }
+        },
+    )
+    assert "mechanisms" in sections_mech
+    assert "causal_graphs" in sections_mech
+    node_after = next(
+        n for n in updated_from_mech["causal_graphs"][0]["nodes"] if n["id"] == node_id
+    )
+    assert "UniProtKB:Q99999" in {p["uniprot_accession"] for p in node_after["protein_examples"]}
+
