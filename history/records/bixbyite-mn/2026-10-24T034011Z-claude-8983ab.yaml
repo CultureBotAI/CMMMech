@@ -1,0 +1,31 @@
+history_version: 1
+target:
+  kind: record
+  slug: bixbyite-mn
+  path: data/records/bixbyite-mn.yaml
+session:
+  id: 2026-10-24T034011Z-claude-8983ab
+  timestamp: '2026-10-24T03:40:11Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Added gene_symbol Mesau_02205 to UniProtKB:A0A0K2YWP2 in mechanism and causal-graph
+    protein_examples of bixbyite-mn.yaml (#830).
+  details: 'Resolved Cycle 3 Stage 4 finding cmmmech-cycle3-stage4-finding-0001 (GRP-C3S5-001,
+    #830) by adding gene_symbol: Mesau_02205 to UniProtKB:A0A0K2YWP2 (A0A0K2YWP2_9HYPH) in
+    both mechanisms[0].protein_examples[0] and causal_graphs[0].nodes[0].protein_examples[0]
+    to match the parent GENE_OR_PROTEIN node tg1_acidic_mn_oxidase_factor and paired reference-proteome
+    homolog UniProtKB:L0KKS2.'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/830
