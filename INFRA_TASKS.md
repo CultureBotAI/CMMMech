@@ -70,6 +70,9 @@ tasks:
   - task_id: cmmmech-infra-0008
     summary: Extend scripts/curate_causal_graphs.py apply_curation_patch() to support mechanism-id-keyed organisms, evidence, and observations updates alongside causal_graphs and protein_examples
     status: note
+  - task_id: cmmmech-infra-0009
+    summary: Node-level protein_examples upsert and mechanism/node parity enforcement in scripts/curate_causal_graphs.py
+    status: note
 ```
 <!-- mech-infra-tasks:end -->
 
