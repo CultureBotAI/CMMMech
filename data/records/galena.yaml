@@ -1,138 +1,221 @@
 id: cmmmech:galena
 name: Galena
 material_kind: mineral
-description: >-
-  Galena is the PbS mineral species listed as grandfathered in the September
-  2026 IMA list; its original-description year is unresolved there. It is
-  distinct from elemental lead, anglesite, manufactured PbS reagents and
-  mixed lead ores or flotation concentrates. The experiment below concerns
-  galena within a natural mixed concentrate, not a pure natural endmember.
-  No criticality designation is inherited from lead.
+description: Galena is the PbS mineral species listed as grandfathered in the September 2026 IMA list; its original-description year is unresolved there. It is distinct from elemental lead, anglesite, manufactured PbS reagents and mixed lead ores or flotation concentrates. The experiment below concerns galena within a natural mixed concentrate, not a pure natural endmember. No criticality designation is inherited from lead.
 sources:
-  - id: ima_2026_09
-    title: >-
-      IMA-CNMNC. The New IMA List of Minerals, September 2026. Galena row on
-      PDF page 79; status and year definitions on page 1 and distribution
-      terms on page 2. Same-day retained original rechecked, not downloaded anew.
-    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
-    accessed_on: '2026-10-11'
-  - id: pacholewska2004
-    title: >-
-      Pacholewska, M. (2004). Bioleaching of galena flotation concentrate.
-      Physicochemical Problems of Mineral Processing 38, 281-290. Complete
-      original main: Methods pp. 282-284, Tables 1-3, Figures 1-3 and
-      results pp. 284-290. Publisher landing supplies issue 1; no verified
-      DOI is assigned here.
-    url: https://www.journalssystem.com/ppmp/Bioleaching-of-galena-flotation-concentrate,79494,0,2.html
-    accessed_on: '2026-10-11'
-  - id: ncbi_ferrooxidans
-    title: >-
-      NCBI Taxonomy 920. Acidithiobacillus ferrooxidans, species rank and
-      current name. Species identifier only; not an authentication of F3-02.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
-    accessed_on: '2026-10-11'
+- id: ima_2026_09
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Galena row on PDF page 79; status and year definitions on page 1 and distribution terms on page 2. Same-day retained original rechecked, not downloaded anew.
+  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  accessed_on: '2026-10-11'
+- id: pacholewska2004
+  title: 'Pacholewska, M. (2004). Bioleaching of galena flotation concentrate. Physicochemical Problems of Mineral Processing 38, 281-290. Complete original main: Methods pp. 282-284, Tables 1-3, Figures 1-3 and results pp. 284-290. Publisher landing supplies issue 1; no verified DOI is assigned here.'
+  url: https://www.journalssystem.com/ppmp/Bioleaching-of-galena-flotation-concentrate,79494,0,2.html
+  accessed_on: '2026-10-11'
+- id: ncbi_ferrooxidans
+  title: NCBI Taxonomy 920. Acidithiobacillus ferrooxidans, species rank and current name. Species identifier only; not an authentication of F3-02.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
+  accessed_on: '2026-10-11'
 mechanisms:
-  - id: culture_associated_sulfate_transformation
-    name: Culture-associated galena transformation with lead sulfate precipitation
-    process: redox_transformation
-    microbial: true
-    organisms:
-      - id: NCBITaxon:920
-        label: Acidithiobacillus ferrooxidans
-    description: >-
-      Inoculation with the source-labelled A. ferrooxidans F3-02 culture
-      accompanies faster ferrous-iron depletion, higher redox potential and
-      a residue with less galena and more anglesite than the sterile-labelled
-      comparator. The observations support a conditional culture-associated
-      transformation in a mixed concentrate. Ferric attack and oxidation of
-      reduced sulfur are proposed contributions, not separately isolated
-      pathways. Lead sulfate precipitation also occurs without inoculation,
-      and low dissolved lead shows no inoculated advantage. This is not
-      demonstrated lead extraction into solution or isolated-product recovery.
-    context: >-
-      Laboratory shake-flask assay using flotation concentrate from ZGH
-      Boleslaw S.A., Poland. The source estimates approximately 80% PbS by
-      XRD, with hydrocerussite, marcasite, sphalerite, pyrite and minor gypsum
-      and quartz; these approximate starting phase percentages do not close
-      exactly to 100%. Table 1 gives 69.3% Pb and 18.4% total S. Particle-size
-      distribution and washing or other pre-assay solid treatment are not
-      specified. F3-02 was isolated from ferruginous mineral water at
-      Piwniczna-Lomnica, cultivated in modified 2K medium and not initially
-      adapted to lead compounds. No sequence or authenticated collection
-      accession is supplied for that strain. The medium contains, in g/L,
-      (NH4)2SO4 3.0, KCl 0.1, MgSO4.7H2O 0.5, Ca(NO3)2 0.01,
-      K2HPO4 0.5 and FeSO4.7H2O 9.84, nominally 2.0 g/L Fe(II),
-      with sulfuric acid adjustment to nominal pH 2. The paper specifies
-      5% w/v concentrate, 100 mL solution and 10 mL culture in 300 mL
-      Erlenmeyer flasks, 25 degrees C and 130 rpm; whether the inoculum
-      is included in the 100 mL and loading denominator is unresolved.
-      Table 2 starts at pH 2.2 and 2.159 g/L Fe(II), differing from the
-      nominal medium values. Sampling extends to 384 h. Replicate number,
-      uncertainty, inoculum cell density, inoculum washing, sterilization
-      method and verification of control sterility are unreported. The
-      comparator is described as sterile, but its pH and redox trajectories
-      differ from the inoculated treatment; no dynamic chemistry-matched
-      control isolates a direct cell effect. Pb and Zn were measured by
-      atomic absorption, Fe(II) by manganometry, residue sulfur fractions
-      gravimetrically and phases by XRD; residues were air-dried on filters
-      for SEM. Residue masses and a closed Pb/S balance are not supplied.
+- id: culture_associated_sulfate_transformation
+  name: Culture-associated galena transformation with lead sulfate precipitation
+  process: redox_transformation
+  description: Inoculation with the source-labelled A. ferrooxidans F3-02 culture accompanies faster ferrous-iron depletion, higher redox potential and a residue with less galena and more anglesite than the sterile-labelled comparator. The observations support a conditional culture-associated transformation in a mixed concentrate. Ferric attack and oxidation of reduced sulfur are proposed contributions, not separately isolated pathways. Lead sulfate precipitation also occurs without inoculation, and low dissolved lead shows no inoculated advantage. This is not demonstrated lead extraction into solution or isolated-product recovery.
+  context: Laboratory shake-flask assay using flotation concentrate from ZGH Boleslaw S.A., Poland. The source estimates approximately 80% PbS by XRD, with hydrocerussite, marcasite, sphalerite, pyrite and minor gypsum and quartz; these approximate starting phase percentages do not close exactly to 100%. Table 1 gives 69.3% Pb and 18.4% total S. Particle-size distribution and washing or other pre-assay solid treatment are not specified. F3-02 was isolated from ferruginous mineral water at Piwniczna-Lomnica, cultivated in modified 2K medium and not initially adapted to lead compounds. No sequence or authenticated collection accession is supplied for that strain. The medium contains, in g/L, (NH4)2SO4 3.0, KCl 0.1, MgSO4.7H2O 0.5, Ca(NO3)2 0.01, K2HPO4 0.5 and FeSO4.7H2O 9.84, nominally 2.0 g/L Fe(II), with sulfuric acid adjustment to nominal pH 2. The paper specifies 5% w/v concentrate, 100 mL solution and 10 mL culture in 300 mL Erlenmeyer flasks, 25 degrees C and 130 rpm; whether the inoculum
+    is included in the 100 mL and loading denominator is unresolved. Table 2 starts at pH 2.2 and 2.159 g/L Fe(II), differing from the nominal medium values. Sampling extends to 384 h. Replicate number, uncertainty, inoculum cell density, inoculum washing, sterilization method and verification of control sterility are unreported. The comparator is described as sterile, but its pH and redox trajectories differ from the inoculated treatment; no dynamic chemistry-matched control isolates a direct cell effect. Pb and Zn were measured by atomic absorption, Fe(II) by manganometry, residue sulfur fractions gravimetrically and phases by XRD; residues were air-dried on filters for SEM. Residue masses and a closed Pb/S balance are not supplied.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:920
+    label: Acidithiobacillus ferrooxidans
+  protein_examples:
+  - uniprot_accession: UniProtKB:B7JBP8
+    entry_name: SQRD_ACIF2
+    protein_name: Sulfide-quinone reductase
+    gene_symbol: AFE_1792
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    ec_numbers:
+    - EC:1.8.5.4
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR051169
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; AFE_1792) catalyzing oxidation of sulfide to elemental sulfur/polysulfide coupled to quinone reduction during acidophilic sulfur/sulfide bioleaching.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159).
     evidence:
-      - source_ref: pacholewska2004
-        supports: support
-        explanation: >-
-          Methods and Table 2 report the culture and comparator. At 288 h,
-          inoculated Fe(II) is reported as 0.00 g/L versus 1.113 g/L in the
-          control, with potentials 560.8 versus 286.5 mV against Ag/AgCl.
-          These printed zeros have no supplied detection limit. Page 286
-          and Figure 1 identify galena and anglesite in both residues:
-          the source estimates approximately 43% galena and 40% anglesite
-          in the inoculated residue versus 62% and 25% in the control.
-          These are residue phase estimates with unreported quantitative
-          uncertainty, not feed-mass conversion or recovery fractions.
-          Figures 2-3 show altered grain surfaces and cell-like structures
-          assigned to the inoculated culture; microscopy alone does not
-          authenticate the strain or establish a direct enzymatic attack.
+    - source_ref: pacholewska2004
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfide-quinone reductase (AFE_1792) for reduced-sulfur oxidation during galena concentrate transformation in modified 2K medium in Pacholewska (2004); individual sqr/tth genes were not mutated.
+  - uniprot_accession: UniProtKB:B7J3C9
+    entry_name: TTH_ACIF2
+    protein_name: Tetrathionate hydrolase
+    gene_symbol: tth
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    ec_numbers:
+    - EC:3.12.1.-
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase (EC 3.12.1.-; tth / AFE_0029) hydrolyzing tetrathionate into thiosulfate, elemental sulfur, and sulfate, generating sulfuric acid protons.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159).
+    evidence:
+    - source_ref: pacholewska2004
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 tetrathionate hydrolase (tth / AFE_0029) for polythionate disproportionation and sulfuric-acid generation during galena concentrate transformation in modified 2K medium in Pacholewska (2004); individual sqr/tth genes were not mutated.
+  evidence:
+  - source_ref: pacholewska2004
+    supports: support
+    explanation: 'Methods and Table 2 report the culture and comparator. At 288 h, inoculated Fe(II) is reported as 0.00 g/L versus 1.113 g/L in the control, with potentials 560.8 versus 286.5 mV against Ag/AgCl. These printed zeros have no supplied detection limit. Page 286 and Figure 1 identify galena and anglesite in both residues: the source estimates approximately 43% galena and 40% anglesite in the inoculated residue versus 62% and 25% in the control. These are residue phase estimates with unreported quantitative uncertainty, not feed-mass conversion or recovery fractions. Figures 2-3 show altered grain surfaces and cell-like structures assigned to the inoculated culture; microscopy alone does not authenticate the strain or establish a direct enzymatic attack.'
+  - source_ref: pacholewska2004
+    supports: partial
+    explanation: Table 2 reports dissolved Pb of 0.0021 g/L with culture versus 0.0022 g/L in the control at 288 h, and 0.0019 versus 0.0021 g/L at 384 h. Thus greater sulfate-bearing residue formation is not a demonstrated dissolved-Pb advantage. By 384 h both natural-feed arms report Fe(II) as 0.00 g/L. Surface precipitation/passivation is the author's explanation for slowing transformation, not an independently varied coating experiment. The separate synthetic PbS comparator reaches pH 5.4, retains 0.555 g/L Fe(II) and lacks observed bacterial colonies at 384 h; it does not demonstrate equivalent activity on pure PbS under maintained acidic conditions.
+  - source_ref: pacholewska2004
+    supports: partial
+    explanation: Table 3 labels S_SO4/(S_total - S_SO4) as sulfur conversion and prints 47.99% with culture versus 27.25% in the control at 288 h. Those entries are consistent with 100 times residue sulfate-S divided by residue sulfide-S, not the fraction of starting sulfide converted. The sulfate-containing medium and other sulfide phases prevent assigning that ratio specifically to oxidized galena sulfur. The early control rows also contain ratio/value inconsistencies. The abstract's twofold wording is only approximate; 47.99/27.25 is about 1.76. The 384 h inoculated ratio is 49.78%, despite prose describing no further change. No verified PbS conversion percentage, recoverable lead yield or industrial deployment is inferred.
+  - source_ref: ncbi_ferrooxidans
+    supports: context_only
+    explanation: The authority resolves the reported species name to NCBI Taxonomy 920. It does not establish that F3-02 is the type strain or verify the original isolate identification.
+causal_graphs:
+- id: culture_associated_sulfate_transformation_graph
+  name: Acidithiobacillus ferrooxidans F3-02 culture-associated galena transformation with anglesite precipitation
+  description: Causal pathway linking representative Acidithiobacillus ferrooxidans reduced-sulfur oxidation enzymes Sqr and Tth to culture-associated depletion of galena (PbS) and precipitation of anglesite (PbSO4) in modified 2K medium.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: culture_associated_sulfate_transformation
+  nodes:
+  - id: sqr_reductase
+    label: Sqr sulfide-quinone reductase (AFE_1792)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: AFE_1792
+    description: Inner-membrane flavoprotein oxidizing sulfide to zero-valent sulfur/polysulfide intermediates.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JBP8
+      entry_name: SQRD_ACIF2
+      protein_name: Sulfide-quinone reductase
+      gene_symbol: AFE_1792
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      ec_numbers:
+      - EC:1.8.5.4
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR051169
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; AFE_1792) catalyzing oxidation of sulfide to elemental sulfur/polysulfide coupled to quinone reduction during acidophilic sulfur/sulfide bioleaching.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159).
+      evidence:
       - source_ref: pacholewska2004
         supports: partial
-        explanation: >-
-          Table 2 reports dissolved Pb of 0.0021 g/L with culture versus
-          0.0022 g/L in the control at 288 h, and 0.0019 versus 0.0021 g/L
-          at 384 h. Thus greater sulfate-bearing residue formation is not
-          a demonstrated dissolved-Pb advantage. By 384 h both natural-feed
-          arms report Fe(II) as 0.00 g/L. Surface precipitation/passivation
-          is the author's explanation for slowing transformation, not an
-          independently varied coating experiment. The separate synthetic
-          PbS comparator reaches pH 5.4, retains 0.555 g/L Fe(II) and lacks
-          observed bacterial colonies at 384 h; it does not demonstrate
-          equivalent activity on pure PbS under maintained acidic conditions.
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfide-quinone reductase (AFE_1792) for reduced-sulfur oxidation during galena concentrate transformation in modified 2K medium in Pacholewska (2004); individual sqr/tth genes were not mutated.
+  - id: tth_hydrolase
+    label: Tth tetrathionate hydrolase (tth / AFE_0029)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: tth
+    description: Periplasmic pyrroloquinoline-domain hydrolase disproportionating tetrathionate into sulfate and protons.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7J3C9
+      entry_name: TTH_ACIF2
+      protein_name: Tetrathionate hydrolase
+      gene_symbol: tth
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      ec_numbers:
+      - EC:3.12.1.-
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase (EC 3.12.1.-; tth / AFE_0029) hydrolyzing tetrathionate into thiosulfate, elemental sulfur, and sulfate, generating sulfuric acid protons.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159).
+      evidence:
       - source_ref: pacholewska2004
         supports: partial
-        explanation: >-
-          Table 3 labels S_SO4/(S_total - S_SO4) as sulfur conversion and
-          prints 47.99% with culture versus 27.25% in the control at 288 h.
-          Those entries are consistent with 100 times residue sulfate-S
-          divided by residue sulfide-S, not the fraction of starting sulfide
-          converted. The sulfate-containing medium and other sulfide phases
-          prevent assigning that ratio specifically to oxidized galena sulfur.
-          The early control rows also contain ratio/value inconsistencies.
-          The abstract's twofold wording is only approximate; 47.99/27.25
-          is about 1.76. The 384 h inoculated ratio is 49.78%, despite prose
-          describing no further change. No verified PbS conversion percentage,
-          recoverable lead yield or industrial deployment is inferred.
-      - source_ref: ncbi_ferrooxidans
-        supports: context_only
-        explanation: >-
-          The authority resolves the reported species name to NCBI Taxonomy
-          920. It does not establish that F3-02 is the type strain or verify
-          the original isolate identification.
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 tetrathionate hydrolase (tth / AFE_0029) for polythionate disproportionation and sulfuric-acid generation during galena concentrate transformation in modified 2K medium in Pacholewska (2004); individual sqr/tth genes were not mutated.
+  - id: acidic_2k_ferric_sulfate_lixiviant
+    label: Modified sulfate-containing 2K medium (initial pH 2.2, 2.159 g/L Fe(II), Eh 560.8 mV at 288 h)
+    node_type: CHEMICAL_ENTITY
+    description: 100 mL modified 2K sulfate medium plus 10 mL Acidithiobacillus ferrooxidans isolate F3-02 culture at 25 C and 130 rpm.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: boleslaw_galena_flotation_concentrate
+    label: ZGH Boleslaw galena flotation concentrate (~80% PbS, 69.3% Pb, 18.4% S; 5% w/v)
+    node_type: MATERIAL_OR_PHASE
+    description: Polymict flotation concentrate from ZGH Boleslaw S.A. dominated by galena (~80% PbS) with accessory sulfide/carbonate phases.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: anglesite_bearing_solid_residue
+    label: Solid residue with reduced galena (~43% vs ~62% control) and increased anglesite (~40% vs ~25% control) at 288 h
+    node_type: MATERIAL_OR_PHASE
+    description: 288 h leached solid residue showing lower residual galena (~43%) and higher secondary anglesite (~40%) than the control, without elevated dissolved Pb (0.0021 vs 0.0022 g/L).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: sqr_reductase
+    target: tth_hydrolase
+    predicate: supplies_substrate_for
+    relationship: oxidation of sulfide/sulfur intermediates to polythionates
+    description: Sulfide/sulfur oxidation generates reduced sulfur and polythionate intermediates metabolized by periplasmic tetrathionate hydrolase.
+    evidence:
+    - source_ref: pacholewska2004
+      supports: partial
+      explanation: Reduced-sulfur oxidation in Acidithiobacillus ferrooxidans couples Sqr and polythionate hydrolysis during galena concentrate transformation in modified 2K medium; specific enzymes were not individually assayed in Pacholewska (2004).
+  - source: tth_hydrolase
+    target: acidic_2k_ferric_sulfate_lixiviant
+    predicate: produces
+    relationship: polythionate hydrolysis and sulfuric acid proton generation
+    description: Periplasmic tetrathionate hydrolysis regenerates sulfate and protons in the acidic culture lixiviant.
+    evidence:
+    - source_ref: pacholewska2004
+      supports: partial
+      explanation: Acidophilic sulfur oxidation maintains and regenerates acidic sulfate leach conditions during galena concentrate transformation in modified 2K medium in Pacholewska (2004); individual enzyme activities were not isolated.
+  - source: acidic_2k_ferric_sulfate_lixiviant
+    target: boleslaw_galena_flotation_concentrate
+    predicate: oxidizes
+    relationship: culture-associated Fe(II) oxidation and oxidative transformation of galena concentrate
+    description: Inoculated F3-02 flasks deplete measured Fe(II) to 0.00 g/L and reach 560.8 mV by 288 h (versus 1.113 g/L Fe(II) and 286.5 mV in the control), accompanying greater galena depletion.
+    evidence:
+    - source_ref: pacholewska2004
+      supports: support
+      explanation: Table 2 and p. 286 in Pacholewska (2004) show faster Fe(II) depletion (0.00 vs 1.113 g/L) and higher redox potential (560.8 vs 286.5 mV) at 288 h in inoculated flasks relative to the control.
+  - source: boleslaw_galena_flotation_concentrate
+    target: anglesite_bearing_solid_residue
+    predicate: transforms_into
+    relationship: conversion of galena-rich concentrate to anglesite-enriched solid residue without dissolved-Pb gain
+    description: Galena proportion in the 288 h residue drops to ~43% with ~40% anglesite in inoculated flasks versus ~62% galena and ~25% anglesite in the sterile comparator, while dissolved Pb remains 0.0021-0.0022 g/L.
+    evidence:
+    - source_ref: pacholewska2004
+      supports: support
+      explanation: Page 286, Figure 1, and Table 2 in Pacholewska (2004) report ~43% galena and ~40% anglesite in the 288 h inoculated residue versus ~62% and ~25% in the control, with dissolved Pb at 0.0021 vs 0.0022 g/L.
 curation_history:
-  - timestamp: '2026-10-11T21:04:40Z'
-    curator: codex (GPT-6; codex)
-    action: CREATE
-    summary: >-
-      Created the galena mineral record and qualified natural-concentrate
-      transformation observation, preserving the sterile comparator,
-      synthetic-PbS limitation, low dissolved lead and non-mass-balanced
-      sulfur ratio rather than assigning a lead recovery yield.
+- timestamp: '2026-10-11T21:04:40Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created the galena mineral record and qualified natural-concentrate transformation observation, preserving the sterile comparator, synthetic-PbS limitation, low dissolved lead and non-mass-balanced sulfur ratio rather than assigning a lead recovery yield.
+- timestamp: '2026-10-24T01:07:20Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: edit
+  summary: Added representative Acidithiobacillus ferrooxidans Sqr (UniProtKB:B7JBP8) and Tth (UniProtKB:B7J3C9) protein examples and causal graph to galena.yaml.
 history_refs:
-  - history/records/galena/2026-10-11T210433Z-codex-a62b7d.yaml
+- history/records/galena/2026-10-11T210433Z-codex-a62b7d.yaml
+- history/records/galena/2026-10-24T010720Z-claude-claude-opus-4-6-antigravity-7cf9be.yaml

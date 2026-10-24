@@ -1,159 +1,215 @@
 id: cmmmech:chromite-ore-processing-residue
 name: Chromite ore processing residue
 material_kind: secondary_resource
-description: >-
-  Chromium-bearing waste from chemical processing of chromite ore, distinct
-  from the chromite mineral species and physical-beneficiation tailings.
-  The curated case is a cementitious, high-lime-process residue from a
-  Glasgow waste-fill site that received material from the Rutherglen
-  Chromite Processing Works. High-lime processing oxidized ore Cr(III)
-  to soluble Cr(VI), followed by aqueous extraction. The 2015 study sampled
-  field-moist material from an exploratory borehole during the M74 motorway
-  project and initially identified it tentatively as COPR from its pale
-  granular appearance and high-pH yellow leachate. Subsequent XRF and XRD
-  characterized a mixed residue rather than proving a pure feed. XRD
-  identified cementitious and hydrated phases, including
-  calcite, portlandite, brownmillerite, pyroaurite, hydrogarnet and brucite;
-  remnant chromite was not detected by that assay. Table 4 reports 3.8 wt%
-  Cr in the XRF composition, without loss-on-ignition correction; this is
-  neither a mineral fraction nor a field-wet feed concentration. This record
-  does not confer a constituent element's criticality designation on the
-  residue or assert commercial microbial processing.
+description: Chromium-bearing waste from chemical processing of chromite ore, distinct from the chromite mineral species and physical-beneficiation tailings. The curated case is a cementitious, high-lime-process residue from a Glasgow waste-fill site that received material from the Rutherglen Chromite Processing Works. High-lime processing oxidized ore Cr(III) to soluble Cr(VI), followed by aqueous extraction. The 2015 study sampled field-moist material from an exploratory borehole during the M74 motorway project and initially identified it tentatively as COPR from its pale granular appearance and high-pH yellow leachate. Subsequent XRF and XRD characterized a mixed residue rather than proving a pure feed. XRD identified cementitious and hydrated phases, including calcite, portlandite, brownmillerite, pyroaurite, hydrogarnet and brucite; remnant chromite was not detected by that assay. Table 4 reports 3.8 wt% Cr in the XRF composition, without loss-on-ignition correction; this is neither
+  a mineral fraction nor a field-wet feed concentration. This record does not confer a constituent element's criticality designation on the residue or assert commercial microbial processing.
 sources:
-  - id: watts2015
-    title: >-
-      Watts, Coker, Parry, Pattrick, Thomas, Kalin and Lloyd (2015).
-      Biogenic nano-magnetite and nano-zero valent iron treatment of alkaline
-      Cr(VI) leachate and chromite ore processing residue. Applied Geochemistry
-      54:27-42; available online 11 December 2014.
-      DOI 10.1016/j.apgeochem.2014.12.001; PMID 26109747; PMCID PMC4461148.
-      Complete 16-page published article, Sections 2-5, Tables 1-4,
-      Figures 1-9; source stabilization principally Sections 2.8-2.9 and 3.5-3.7.
-    url: https://doi.org/10.1016/j.apgeochem.2014.12.001
-    accessed_on: '2026-10-14'
-  - id: watts2015_supplement
-    title: >-
-      Supporting Information to Watts et al. (2015). Original publisher
-      DOCX, Figures SI 1-2: nanoparticle XRD and fitted aqueous Cr(VI)
-      kinetics. These are associated artifacts of the same experiment,
-      not independent replication or direct COPR recovery measurements.
-    url: https://ars.els-cdn.com/content/image/1-s2.0-S088329271400300X-mmc1.docx
-    accessed_on: '2026-10-14'
-  - id: ncbi_sulfurreducens
-    title: >-
-      NCBI Taxonomy 35554, Geobacter sulfurreducens, species-level entry.
-      Resolves the source's species label without authenticating an
-      experimental strain; the 2015 paper does not specify a strain accession.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=35554&mode=Info
-    accessed_on: '2026-10-14'
+- id: watts2015
+  title: Watts, Coker, Parry, Pattrick, Thomas, Kalin and Lloyd (2015). Biogenic nano-magnetite and nano-zero valent iron treatment of alkaline Cr(VI) leachate and chromite ore processing residue. Applied Geochemistry 54:27-42; available online 11 December 2014. DOI 10.1016/j.apgeochem.2014.12.001; PMID 26109747; PMCID PMC4461148. Complete 16-page published article, Sections 2-5, Tables 1-4, Figures 1-9; source stabilization principally Sections 2.8-2.9 and 3.5-3.7.
+  url: https://doi.org/10.1016/j.apgeochem.2014.12.001
+  accessed_on: '2026-10-14'
+- id: watts2015_supplement
+  title: 'Supporting Information to Watts et al. (2015). Original publisher DOCX, Figures SI 1-2: nanoparticle XRD and fitted aqueous Cr(VI) kinetics. These are associated artifacts of the same experiment, not independent replication or direct COPR recovery measurements.'
+  url: https://ars.els-cdn.com/content/image/1-s2.0-S088329271400300X-mmc1.docx
+  accessed_on: '2026-10-14'
+- id: ncbi_sulfurreducens
+  title: NCBI Taxonomy 35554, Geobacter sulfurreducens, species-level entry. Resolves the source's species label without authenticating an experimental strain; the 2015 paper does not specify a strain accession.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=35554&mode=Info
+  accessed_on: '2026-10-14'
 mechanisms:
-  - id: biogenic_magnetite_crvi_stabilization
-    name: Chromium reduction and stabilization by separately produced biogenic magnetite
-    process: redox_transformation
-    microbial: true
-    organisms:
-      - id: NCBITaxon:35554
-        label: Geobacter sulfurreducens
-    description: >-
-      Preformed nanoscale magnetite produced through G. sulfurreducens
-      reduction of ferrihydrite lowered aqueous Cr(VI) release and reduced
-      part of the bulk Cr(VI) in the residue. The microbial contribution
-      is production of the Fe(II)-bearing reagent in a separate incubation.
-      The particles were washed to remove bacterial cells before treatment;
-      this is not evidence of live Geobacter growth or direct enzymatic
-      Cr(VI) reduction in the hyperalkaline waste. Complete removal of cells
-      was not independently demonstrated. Fe(II) oxidation coupled to
-      Cr(VI) reduction is supported by chemical and spectroscopic changes,
-      with residual inaccessible Cr(VI) and subsequent remobilization.
-      Chromium was stabilized in the solid system, not recovered as an
-      isolated saleable product.
-    context: >-
-      Laboratory duplicate microcosms contained 25 g field-moist COPR and
-      50 mL ultrapure water in 120 mL serum bottles, degassed with filtered
-      N2 and held in the dark at 20 degrees C for 100 days. Magnetite doses
-      were 0, 0.5, 1, 2, 5 and 10% by mass of field-wet COPR, not dry-feed
-      percentages. The unamended residue was the no-addition control;
-      parallel commercial NANOFER 25S zero-valent-iron treatments were a
-      nonmicrobial comparator. pH stayed between 12.5 and 12.9. Samples for
-      XANES and XRD were taken after 50 days. Aqueous Cr(VI) was measured
-      with diphenylcarbazide, with a reported 1 micromolar detection limit;
-      readily extractable Fe(II) used 0.5 M HCl and ferrozine. Error bars
-      represent standard deviations of duplicate microcosms. The reagent
-      production used source-labelled G. sulfurreducens grown anaerobically
-      at 30 degrees C on acetate/fumarate, then washed cells at OD600 0.4
-      in 20 mM acetate, 50 mM ferrihydrite, 30 mM bicarbonate and
-      10 micromolar AQDS, incubated at 30 degrees C in the dark for one
-      week. Resulting magnetic particles were washed three times and
-      stored anoxically. No strain accession is specified in this paper.
-      Waste and groundwater in the separate aqueous experiments came
-      from different Glasgow sites; their results are not pooled.
+- id: biogenic_magnetite_crvi_stabilization
+  name: Chromium reduction and stabilization by separately produced biogenic magnetite
+  process: redox_transformation
+  description: Preformed nanoscale magnetite produced through G. sulfurreducens reduction of ferrihydrite lowered aqueous Cr(VI) release and reduced part of the bulk Cr(VI) in the residue. The microbial contribution is production of the Fe(II)-bearing reagent in a separate incubation. The particles were washed to remove bacterial cells before treatment; this is not evidence of live Geobacter growth or direct enzymatic Cr(VI) reduction in the hyperalkaline waste. Complete removal of cells was not independently demonstrated. Fe(II) oxidation coupled to Cr(VI) reduction is supported by chemical and spectroscopic changes, with residual inaccessible Cr(VI) and subsequent remobilization. Chromium was stabilized in the solid system, not recovered as an isolated saleable product.
+  context: Laboratory duplicate microcosms contained 25 g field-moist COPR and 50 mL ultrapure water in 120 mL serum bottles, degassed with filtered N2 and held in the dark at 20 degrees C for 100 days. Magnetite doses were 0, 0.5, 1, 2, 5 and 10% by mass of field-wet COPR, not dry-feed percentages. The unamended residue was the no-addition control; parallel commercial NANOFER 25S zero-valent-iron treatments were a nonmicrobial comparator. pH stayed between 12.5 and 12.9. Samples for XANES and XRD were taken after 50 days. Aqueous Cr(VI) was measured with diphenylcarbazide, with a reported 1 micromolar detection limit; readily extractable Fe(II) used 0.5 M HCl and ferrozine. Error bars represent standard deviations of duplicate microcosms. The reagent production used source-labelled G. sulfurreducens grown anaerobically at 30 degrees C on acetate/fumarate, then washed cells at OD600 0.4 in 20 mM acetate, 50 mM ferrihydrite, 30 mM bicarbonate and 10 micromolar AQDS, incubated at 30 degrees
+    C in the dark for one week. Resulting magnetic particles were washed three times and stored anoxically. No strain accession is specified in this paper. Waste and groundwater in the separate aqueous experiments came from different Glasgow sites; their results are not pooled.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:35554
+    label: Geobacter sulfurreducens
+  protein_examples:
+  - uniprot_accession: UniProtKB:Q747K6
+    entry_name: IMCH_GEOSL
+    protein_name: Cytochrome c-type protein ImcH
+    gene_symbol: imcH
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243231
+      label: Geobacter sulfurreducens PCA
+    reference_proteome_id: UP000000577
+    interpro_ids:
+    - InterPro:IPR051174
+    - InterPro:IPR036280
+    - InterPro:IPR005126
+    - InterPro:IPR038266
+    pfam_ids:
+    - Pfam:PF03264
+    functional_role: Inner-membrane multiheme c-type cytochrome ImcH (GSU3259) required for extracellular electron transfer from the menaquinol pool to high-redox-potential metal acceptors.
+    annotation_note: Grounded to Geobacter sulfurreducens PCA reference proteome UP000000577 (NCBITaxon:243231) for the species-level mechanism organism Geobacter sulfurreducens (NCBITaxon:35554).
     evidence:
-      - source_ref: watts2015
-        supports: support
-        explanation: >-
-          Sections 2.1, 2.3-2.5, 2.8, 3.5-3.6 and Figures 6-8 support the
-          residue identity, separately produced biogenic reagent and
-          reductive stabilization. With 5 or 10% magnetite, aqueous Cr(VI)
-          fell below 1 micromolar within one day; no-addition controls
-          remained about 1.3 mM during the 100-day experiment. Lower
-          magnetite additions left measurable aqueous Cr(VI). Linear
-          combination fits to day-50 Cr K-edge XANES gave 26% of total Cr
-          as Cr(VI) in the control and 7% after either 5 or 10% magnetite.
-          These are fitted oxidation-state proportions, not isolated-product
-          yields or mass fractions of the entire residue. Spectral shapes
-          were consistent with Cr(III) hydroxide-like products, while XRD
-          did not resolve a new crystalline Cr(III) phase; no unique product
-          mineral or complete conversion is assigned.
+    - source_ref: watts2015
+      supports: partial
+      explanation: Representative Geobacter sulfurreducens PCA inner-membrane cytochrome ImcH (GSU3259) for extracellular electron transfer to 50 mM ferrihydrite with 20 mM acetate and 10 uM AQDS during upstream biogenic magnetite preparation in Watts et al. (2015); individual cytochrome genes were not mutated.
+  - uniprot_accession: UniProtKB:Q74GH2
+    entry_name: Q74GH2_GEOSL
+    protein_name: Cytochrome c, and cytochrome b
+    gene_symbol: cbcL
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243231
+      label: Geobacter sulfurreducens PCA
+    reference_proteome_id: UP000000577
+    interpro_ids:
+    - InterPro:IPR036280
+    - InterPro:IPR012286
+    pfam_ids:
+    - Pfam:PF14537
+    functional_role: Inner-membrane b/c-type cytochrome CbcL (GSU0274) required for extracellular electron transfer to lower-redox-potential metal and mineral acceptors.
+    annotation_note: Grounded to Geobacter sulfurreducens PCA reference proteome UP000000577 (NCBITaxon:243231) for the species-level mechanism organism Geobacter sulfurreducens (NCBITaxon:35554).
+    evidence:
+    - source_ref: watts2015
+      supports: partial
+      explanation: Representative Geobacter sulfurreducens PCA inner-membrane cytochrome CbcL (GSU0274) for extracellular electron transfer to 50 mM ferrihydrite with 20 mM acetate and 10 uM AQDS during upstream biogenic magnetite preparation in Watts et al. (2015); individual cytochrome genes were not mutated.
+  evidence:
+  - source_ref: watts2015
+    supports: support
+    explanation: Sections 2.1, 2.3-2.5, 2.8, 3.5-3.6 and Figures 6-8 support the residue identity, separately produced biogenic reagent and reductive stabilization. With 5 or 10% magnetite, aqueous Cr(VI) fell below 1 micromolar within one day; no-addition controls remained about 1.3 mM during the 100-day experiment. Lower magnetite additions left measurable aqueous Cr(VI). Linear combination fits to day-50 Cr K-edge XANES gave 26% of total Cr as Cr(VI) in the control and 7% after either 5 or 10% magnetite. These are fitted oxidation-state proportions, not isolated-product yields or mass fractions of the entire residue. Spectral shapes were consistent with Cr(III) hydroxide-like products, while XRD did not resolve a new crystalline Cr(III) phase; no unique product mineral or complete conversion is assigned.
+  - source_ref: watts2015
+    supports: partial
+    explanation: Sections 3.5-3.6 preserve both analytical and treatment limits. Alkaline extraction indicated only 7% of initial total Cr as Cr(VI), versus the 26% XANES fit. The authors attribute this to incomplete extraction of resistant Cr(VI); the methods are not treated as interchangeable. Remaining Cr(VI) after excess reagent is interpreted as poorly soluble or inaccessible, not absent. The synthetic zero-valent-iron comparator required a smaller dose for aqueous removal and reached fitted bulk Cr(VI) proportions of 4-7%; that range is not assigned to the biogenic magnetite arm. No viable-cell versus killed-cell comparison establishes a living-cell contribution during COPR treatment.
+  - source_ref: watts2015
+    supports: partial
+    explanation: 'Sections 2.9 and 3.7 and Figure 9 describe a separate air challenge after the initial 100 days: 25 mL portions were transferred to 250 mL flasks, shaken at 100 rpm in the dark at 20 degrees C, with headspace re-equilibrated every 2-4 days, and followed for another 100 days. All magnetite-dose arms showed some aqueous Cr(VI) remobilization; the authors describe the higher dose increases as less than 10% of the original Cr(VI) values. They explicitly leave oxidation of Cr(III) versus altered solubility of residual Cr(VI) unresolved. The broader discussion''s stability language does not establish no rebound, complete detoxification or indefinite field stability.'
+  - source_ref: watts2015_supplement
+    supports: partial
+    explanation: Figure SI 1 supports magnetite as the detected crystalline phase in the biogenic reagent and mixed metallic iron/magnetite in the synthetic comparator. Figure SI 2 fits early aqueous removal in model chromate solutions and separately sampled groundwater; these fitted rates are not COPR-treatment rates.
+  - source_ref: watts2015
+    supports: partial
+    explanation: Sections 3.3-3.4 and 4, Figures 1-5 and Tables 2-3 show incomplete electron utilization, stronger passivation in complex groundwater and inhibition by oxygen. Proposed in situ injection and reactive barriers were not demonstrated; the authors identify reagent-dose, clogging and passivation obstacles to deployment.
+causal_graphs:
+- id: biogenic_magnetite_crvi_stabilization_graph
+  name: Geobacter sulfurreducens biogenic magnetite preparation and reductive Cr(VI) stabilization in COPR
+  description: Causal pathway linking representative Geobacter sulfurreducens inner-membrane cytochromes ImcH and CbcL to upstream reduction of 50 mM ferrihydrite into washed biogenic nanoscale magnetite (Fe3O4), followed by Fe(II)-coupled reduction and solid-phase stabilization of Cr(VI) in hyperalkaline Glasgow chromite ore processing residue (COPR).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: biogenic_magnetite_crvi_stabilization
+  nodes:
+  - id: imch_cytochrome
+    label: ImcH inner-membrane c-type cytochrome (GSU3259)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: imcH
+    description: High-potential inner-membrane quinone oxidoreductase cytochrome c in Geobacter sulfurreducens.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q747K6
+      entry_name: IMCH_GEOSL
+      protein_name: Cytochrome c-type protein ImcH
+      gene_symbol: imcH
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243231
+        label: Geobacter sulfurreducens PCA
+      reference_proteome_id: UP000000577
+      interpro_ids:
+      - InterPro:IPR051174
+      - InterPro:IPR036280
+      - InterPro:IPR005126
+      - InterPro:IPR038266
+      pfam_ids:
+      - Pfam:PF03264
+      functional_role: Inner-membrane multiheme c-type cytochrome ImcH (GSU3259) required for extracellular electron transfer from the menaquinol pool to high-redox-potential metal acceptors.
+      annotation_note: Grounded to Geobacter sulfurreducens PCA reference proteome UP000000577 (NCBITaxon:243231) for the species-level mechanism organism Geobacter sulfurreducens (NCBITaxon:35554).
+      evidence:
       - source_ref: watts2015
         supports: partial
-        explanation: >-
-          Sections 3.5-3.6 preserve both analytical and treatment limits.
-          Alkaline extraction indicated only 7% of initial total Cr as
-          Cr(VI), versus the 26% XANES fit. The authors attribute this to
-          incomplete extraction of resistant Cr(VI); the methods are not
-          treated as interchangeable. Remaining Cr(VI) after excess reagent
-          is interpreted as poorly soluble or inaccessible, not absent.
-          The synthetic zero-valent-iron comparator required a smaller
-          dose for aqueous removal and reached fitted bulk Cr(VI)
-          proportions of 4-7%; that range is not assigned to the biogenic
-          magnetite arm. No viable-cell versus killed-cell comparison
-          establishes a living-cell contribution during COPR treatment.
+        explanation: Representative Geobacter sulfurreducens PCA inner-membrane cytochrome ImcH (GSU3259) for extracellular electron transfer to 50 mM ferrihydrite with 20 mM acetate and 10 uM AQDS during upstream biogenic magnetite preparation in Watts et al. (2015); individual cytochrome genes were not mutated.
+  - id: cbcl_cytochrome
+    label: CbcL inner-membrane b/c-type cytochrome (GSU0274)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cbcL
+    description: Low-potential inner-membrane b/c-type cytochrome in Geobacter sulfurreducens.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q74GH2
+      entry_name: Q74GH2_GEOSL
+      protein_name: Cytochrome c, and cytochrome b
+      gene_symbol: cbcL
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243231
+        label: Geobacter sulfurreducens PCA
+      reference_proteome_id: UP000000577
+      interpro_ids:
+      - InterPro:IPR036280
+      - InterPro:IPR012286
+      pfam_ids:
+      - Pfam:PF14537
+      functional_role: Inner-membrane b/c-type cytochrome CbcL (GSU0274) required for extracellular electron transfer to lower-redox-potential metal and mineral acceptors.
+      annotation_note: Grounded to Geobacter sulfurreducens PCA reference proteome UP000000577 (NCBITaxon:243231) for the species-level mechanism organism Geobacter sulfurreducens (NCBITaxon:35554).
+      evidence:
       - source_ref: watts2015
         supports: partial
-        explanation: >-
-          Sections 2.9 and 3.7 and Figure 9 describe a separate air challenge
-          after the initial 100 days: 25 mL portions were transferred to
-          250 mL flasks, shaken at 100 rpm in the dark at 20 degrees C,
-          with headspace re-equilibrated every 2-4 days, and followed
-          for another 100 days. All magnetite-dose arms showed some
-          aqueous Cr(VI) remobilization; the authors describe the higher
-          dose increases as less than 10% of the original Cr(VI) values.
-          They explicitly leave oxidation of Cr(III) versus altered
-          solubility of residual Cr(VI) unresolved. The broader discussion's
-          stability language does not establish no rebound, complete
-          detoxification or indefinite field stability.
-      - source_ref: watts2015_supplement
-        supports: partial
-        explanation: >-
-          Figure SI 1 supports magnetite as the detected crystalline phase
-          in the biogenic reagent and mixed metallic iron/magnetite in
-          the synthetic comparator. Figure SI 2 fits early aqueous
-          removal in model chromate solutions and separately sampled
-          groundwater; these fitted rates are not COPR-treatment rates.
-      - source_ref: watts2015
-        supports: partial
-        explanation: >-
-          Sections 3.3-3.4 and 4, Figures 1-5 and Tables 2-3 show
-          incomplete electron utilization, stronger passivation in complex
-          groundwater and inhibition by oxygen. Proposed in situ injection
-          and reactive barriers were not demonstrated; the authors identify
-          reagent-dose, clogging and passivation obstacles to deployment.
-
+        explanation: Representative Geobacter sulfurreducens PCA inner-membrane cytochrome CbcL (GSU0274) for extracellular electron transfer to 50 mM ferrihydrite with 20 mM acetate and 10 uM AQDS during upstream biogenic magnetite preparation in Watts et al. (2015); individual cytochrome genes were not mutated.
+  - id: biogenic_fe_ii_magnetite_reductant
+    label: Washed biogenic nanoscale magnetite produced from 50 mM ferrihydrite with 20 mM acetate and 10 uM AQDS
+    node_type: MATERIAL_OR_PHASE
+    description: Preformed biogenic nanoscale magnetite produced by Geobacter sulfurreducens (OD600 0.4, 20 mM acetate, 50 mM ferrihydrite, 30 mM bicarbonate, 10 uM AQDS, 30 C, 7 d) and washed three times before COPR dosing.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: glasgow_copr_cr_vi_waste
+    label: Field-moist Glasgow chromite ore processing residue microcosms (25 g COPR + 50 mL water, pH 12.5-12.9)
+    node_type: MATERIAL_OR_PHASE
+    description: Hyperalkaline Glasgow COPR microcosms (pH 12.5-12.9, ~1.3 mM aqueous Cr(VI) in unamended controls, 26% bulk Cr as Cr(VI) by day-50 XANES linear-combination fit).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: stabilized_cr_iii_copr_assemblage
+    label: Magnetite-treated COPR with <1 uM aqueous Cr(VI) and 7% fitted bulk Cr(VI) (Cr(III) hydroxide-like XANES shape)
+    node_type: MATERIAL_OR_PHASE
+    description: Solid-stabilized COPR after 5 or 10 wt% biogenic magnetite addition showing <1 uM aqueous Cr(VI) within 1 day and day-50 Cr K-edge XANES fit reduced from 26% to 7% Cr(VI).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: imch_cytochrome
+    target: biogenic_fe_ii_magnetite_reductant
+    predicate: produces
+    relationship: representative high-potential inner-membrane electron transfer for upstream ferrihydrite reduction to biogenic magnetite
+    description: Representative ImcH pathway transfers electrons from acetate oxidation to 50 mM ferrihydrite (with 10 uM AQDS) during upstream preparation of biogenic magnetite.
+    evidence:
+    - source_ref: watts2015
+      supports: partial
+      explanation: Representative Geobacter sulfurreducens PCA inner-membrane cytochrome ImcH (GSU3259) for extracellular electron transfer to 50 mM ferrihydrite with 20 mM acetate and 10 uM AQDS during upstream biogenic magnetite preparation in Watts et al. (2015); individual cytochrome genes were not mutated.
+  - source: cbcl_cytochrome
+    target: biogenic_fe_ii_magnetite_reductant
+    predicate: produces
+    relationship: representative low-potential inner-membrane electron transfer for upstream ferrihydrite reduction
+    description: Representative CbcL pathway supports extracellular electron transfer during upstream conversion of ferrihydrite to biogenic nanoscale magnetite.
+    evidence:
+    - source_ref: watts2015
+      supports: partial
+      explanation: Representative Geobacter sulfurreducens PCA inner-membrane cytochrome CbcL (GSU0274) for extracellular electron transfer to 50 mM ferrihydrite with 20 mM acetate and 10 uM AQDS during upstream biogenic magnetite preparation in Watts et al. (2015); individual cytochrome genes were not mutated.
+  - source: biogenic_fe_ii_magnetite_reductant
+    target: glasgow_copr_cr_vi_waste
+    predicate: reduces
+    relationship: chemical Fe(II)-coupled reduction of aqueous and solid Cr(VI) by preformed washed biogenic magnetite
+    description: Adding 5 or 10 wt% washed biogenic magnetite to field-moist COPR microcosms (pH 12.5-12.9) reduces aqueous Cr(VI) from ~1.3 mM to <1 uM within 1 day and reduces accessible solid Cr(VI).
+    evidence:
+    - source_ref: watts2015
+      supports: support
+      explanation: Sections 2.1, 2.3-2.5, 3.5-3.6 and Figures 6-8 in Watts et al. (2015) show aqueous Cr(VI) falling below the 1 uM detection limit within 1 day at 5 or 10% biogenic magnetite versus ~1.3 mM in unamended controls.
+  - source: glasgow_copr_cr_vi_waste
+    target: stabilized_cr_iii_copr_assemblage
+    predicate: transforms_into
+    relationship: solid-phase reductive stabilization of COPR Cr(VI) into Cr(III) hydroxide-like species
+    description: Day-50 Cr K-edge XANES linear-combination fits show bulk Cr(VI) decreasing from 26% in unamended COPR to 7% with 5 or 10% biogenic magnetite, yielding Cr(III) hydroxide-like spectral shapes (with <10% Cr(VI) remobilization during subsequent 100-day air challenge).
+    evidence:
+    - source_ref: watts2015
+      supports: support
+      explanation: Sections 3.5-3.6 and Figures 6-8 in Watts et al. (2015) report day-50 Cr K-edge XANES fits of 26% Cr(VI) in untreated COPR versus 7% after 5 or 10% biogenic magnetite treatment with Cr(III) hydroxide-like spectral shapes.
 curation_history:
-  - timestamp: "2026-10-14T04:37:43.260843+00:00"
-    curator: codex (GPT-6; codex)
-    action: CREATE
-    summary: >-
-      Created a distinct chemical-processing residue with laboratory chromium stabilization by separately produced biogenic magnetite, preserving wet-feed dosing, analytical disagreement, incomplete reduction and remobilization.
+- timestamp: '2026-10-14T04:37:43.260843+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created a distinct chemical-processing residue with laboratory chromium stabilization by separately produced biogenic magnetite, preserving wet-feed dosing, analytical disagreement, incomplete reduction and remobilization.
+- timestamp: '2026-10-24T01:07:19Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: edit
+  summary: Added representative Geobacter sulfurreducens PCA ImcH (UniProtKB:Q747K6) and CbcL (UniProtKB:Q74GH2) protein examples and causal graph to chromite-ore-processing-residue.yaml.
 history_refs:
-  - history/records/chromite-ore-processing-residue/2026-10-14T043756Z-codex-1ad4c3.yaml
+- history/records/chromite-ore-processing-residue/2026-10-14T043756Z-codex-1ad4c3.yaml
+- history/records/chromite-ore-processing-residue/2026-10-24T010719Z-claude-claude-opus-4-6-antigravity-f4aae8.yaml
