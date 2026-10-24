@@ -1,0 +1,1860 @@
+{
+  "issue": 186,
+  "repository": "CultureBotAI/CMMMech",
+  "assessment_timestamp": "2026-10-21T11:58:39Z",
+  "base": "1296ee20f2595d7d6a50e391f611c22435418906",
+  "source_only": true,
+  "report": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/research/sources/issue-186-zinc-residue-originals/20261021T120732Z.md",
+    "bytes": 22546,
+    "sha256": "9cf3a1c78559fce34e87577ad244f016d89df9943cf7f34254869c5fcfbc7ccc"
+  },
+  "decision": "New complete official thesis with original microbial and product evidence; quantitative microbial curation deferred because conditions/coding/kinetic formula and recovery inventories remain unresolved; final journal main/SI originals unacquired.",
+  "target": {
+    "doi": "10.1002/jctb.5026",
+    "thesis_hal": "tel-01407248v1",
+    "thesis_NNT": "2015PESC1202",
+    "thesis_version_limit": "Chapter5 explicitly in preparation, not journal-version identity or an independent experiment",
+    "owner": "data/records/zinc-leach-residue.yaml",
+    "owner_action": "unchanged; two abiotic studies remain separate from Brazilian precursor"
+  },
+  "fresh_eligibility": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186-eligibility.json",
+    "bytes": 1178,
+    "sha256": "46eccaf4dc7c81af27b8ccd43bed7138051fde47782f088c09767b3e02f075cc"
+  },
+  "baseline_gates": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186-baseline-gates.json",
+    "bytes": 1629,
+    "sha256": "8710652584e80e80bd0caf1ea307df56b49346d5ca59ccf3c6f2aeab5ae63bf9"
+  },
+  "fresh_direct_acquisitions": [
+    {
+      "url": "https://api.crossref.org/works/10.1002/jctb.5026",
+      "started_at": "2026-10-21T11:50:59.657327+00:00",
+      "finished_at": "2026-10-21T11:51:00.004535+00:00",
+      "command": [
+        "curl",
+        "--location",
+        "--max-time",
+        "60",
+        "--connect-timeout",
+        "20",
+        "--silent",
+        "--show-error",
+        "--dump-header",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/crossref.json.headers",
+        "--output",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/crossref.json",
+        "--write-out",
+        "%{http_code}\n%{url_effective}\n%{content_type}",
+        "https://api.crossref.org/works/10.1002/jctb.5026"
+      ],
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://api.crossref.org/works/10.1002/jctb.5026",
+        "application/json"
+      ],
+      "stderr": "",
+      "artifact": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/crossref.json",
+        "bytes": 14020,
+        "sha256": "f3b813e112965500343d489d8f36109919c9d3f92e6dbd758876ac5f348fb768"
+      },
+      "headers": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/crossref.json.headers",
+        "bytes": 509,
+        "sha256": "f1c1d3f21e112426e42bcf379a73520d493e70e48cfc3b9fcf0bc76a4fef5b3e"
+      }
+    },
+    {
+      "url": "https://api.openalex.org/works/https://doi.org/10.1002/jctb.5026",
+      "started_at": "2026-10-21T11:50:59.657580+00:00",
+      "finished_at": "2026-10-21T11:50:59.997724+00:00",
+      "command": [
+        "curl",
+        "--location",
+        "--max-time",
+        "60",
+        "--connect-timeout",
+        "20",
+        "--silent",
+        "--show-error",
+        "--dump-header",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/openalex.json.headers",
+        "--output",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/openalex.json",
+        "--write-out",
+        "%{http_code}\n%{url_effective}\n%{content_type}",
+        "https://api.openalex.org/works/https://doi.org/10.1002/jctb.5026"
+      ],
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://api.openalex.org/works/https://doi.org/10.1002/jctb.5026",
+        "application/json"
+      ],
+      "stderr": "",
+      "artifact": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/openalex.json",
+        "bytes": 28150,
+        "sha256": "9582da113b8370fd24b455cf57be35ab21c33cd1d08a17119277ff4ebd64845e"
+      },
+      "headers": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/openalex.json.headers",
+        "bytes": 1624,
+        "sha256": "2072be9925578dc07afcf5f1dfff4c945170e8875437317a074a465739d21832"
+      }
+    },
+    {
+      "url": "https://api.archives-ouvertes.fr/search/?q=halId_s:tel-01407248&fl=*&wt=json",
+      "started_at": "2026-10-21T11:50:59.660040+00:00",
+      "finished_at": "2026-10-21T11:51:03.029826+00:00",
+      "command": [
+        "curl",
+        "--location",
+        "--max-time",
+        "60",
+        "--connect-timeout",
+        "20",
+        "--silent",
+        "--show-error",
+        "--dump-header",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/hal-thesis.json.headers",
+        "--output",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/hal-thesis.json",
+        "--write-out",
+        "%{http_code}\n%{url_effective}\n%{content_type}",
+        "https://api.archives-ouvertes.fr/search/?q=halId_s:tel-01407248&fl=*&wt=json"
+      ],
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://api.archives-ouvertes.fr/search/?q=halId_s:tel-01407248&fl=*&wt=json",
+        "application/json; charset=utf-8"
+      ],
+      "stderr": "",
+      "artifact": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/hal-thesis.json",
+        "bytes": 60342,
+        "sha256": "520f32ac0639777a88d56db47e6c95ae5e74ccb7a1207ae578c46e0b36796d28"
+      },
+      "headers": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/hal-thesis.json.headers",
+        "bytes": 268,
+        "sha256": "af0f3e740f4e578d7db73f94cd1f91b3f3b0a04ef970acf02efb8a1f8b23a0f2"
+      }
+    },
+    {
+      "url": "https://api.archives-ouvertes.fr/search/?q=doiId_s:10.1002/jctb.5026&fl=*&wt=json",
+      "started_at": "2026-10-21T11:50:59.660160+00:00",
+      "finished_at": "2026-10-21T11:51:01.525111+00:00",
+      "command": [
+        "curl",
+        "--location",
+        "--max-time",
+        "60",
+        "--connect-timeout",
+        "20",
+        "--silent",
+        "--show-error",
+        "--dump-header",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/hal-article.json.headers",
+        "--output",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/hal-article.json",
+        "--write-out",
+        "%{http_code}\n%{url_effective}\n%{content_type}",
+        "https://api.archives-ouvertes.fr/search/?q=doiId_s:10.1002/jctb.5026&fl=*&wt=json"
+      ],
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://api.archives-ouvertes.fr/search/?q=doiId_s:10.1002/jctb.5026&fl=*&wt=json",
+        "application/json; charset=utf-8"
+      ],
+      "stderr": "",
+      "artifact": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/hal-article.json",
+        "bytes": 46071,
+        "sha256": "59d08d8b9ddc98425aac74ad4ef4ab46bde418b3bf1d40ba70151d0fa66cc071"
+      },
+      "headers": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/hal-article.json.headers",
+        "bytes": 268,
+        "sha256": "7ed5d1b72b3677658714504c7759c301577576cf484586b6282a43b7ebe7a8d4"
+      }
+    },
+    {
+      "url": "https://theses.fr/2015PESC1202",
+      "started_at": "2026-10-21T11:50:59.663007+00:00",
+      "finished_at": "2026-10-21T11:51:01.276487+00:00",
+      "command": [
+        "curl",
+        "--location",
+        "--max-time",
+        "60",
+        "--connect-timeout",
+        "20",
+        "--silent",
+        "--show-error",
+        "--dump-header",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/theses-fr.html.headers",
+        "--output",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/theses-fr.html",
+        "--write-out",
+        "%{http_code}\n%{url_effective}\n%{content_type}",
+        "https://theses.fr/2015PESC1202"
+      ],
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://theses.fr/2015PESC1202",
+        "text/html;charset=utf-8"
+      ],
+      "stderr": "",
+      "artifact": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/theses-fr.html",
+        "bytes": 723408,
+        "sha256": "8a25394571dd245bd2e3be7bca2f04dac91e71aaa60929bf7408cb1ce8cc9bb4"
+      },
+      "headers": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/theses-fr.html.headers",
+        "bytes": 296,
+        "sha256": "88df935a56bee91d894789e14d06b6c10bb5fcc3016e9cf1ed9899b26a11b89c"
+      }
+    },
+    {
+      "url": "https://theses.hal.science/tel-01407248/file/TH2015PESC1202_diffusion.pdf",
+      "started_at": "2026-10-21T11:52:18.972251+00:00",
+      "finished_at": "2026-10-21T11:52:24.364175+00:00",
+      "command": [
+        "curl",
+        "--location",
+        "--max-time",
+        "60",
+        "--connect-timeout",
+        "20",
+        "--silent",
+        "--show-error",
+        "--dump-header",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-hal-current.pdf.headers",
+        "--output",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-hal-current.pdf",
+        "--write-out",
+        "%{http_code}\n%{url_effective}\n%{content_type}",
+        "https://theses.hal.science/tel-01407248/file/TH2015PESC1202_diffusion.pdf"
+      ],
+      "curl_exit": 0,
+      "response": [
+        "200",
+        "https://theses.hal.science/tel-01407248/file/TH2015PESC1202_diffusion.pdf",
+        "application/pdf"
+      ],
+      "stderr": "",
+      "artifact": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-hal-current.pdf",
+        "bytes": 7460192,
+        "sha256": "12b17a420bccca0c813e18c6fff4861e6003457d5087406e6e3591948ca6d66f"
+      },
+      "headers": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-hal-current.pdf.headers",
+        "bytes": 651,
+        "sha256": "5236e38b27f8edf982c3caa22d1066fa703f1e59ca22aaa86e5745b0a212b082"
+      }
+    },
+    {
+      "url": "https://www.researchgate.net/publication/311473894_Metallurgical_sludges_bioleaching_and_heavy_metals_recovery_Zn_Cu",
+      "started_at": "2026-10-21T11:52:18.973488+00:00",
+      "finished_at": "2026-10-21T11:52:19.036113+00:00",
+      "command": [
+        "curl",
+        "--location",
+        "--max-time",
+        "60",
+        "--connect-timeout",
+        "20",
+        "--silent",
+        "--show-error",
+        "--dump-header",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-rg-landing.html.headers",
+        "--output",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-rg-landing.html",
+        "--write-out",
+        "%{http_code}\n%{url_effective}\n%{content_type}",
+        "https://www.researchgate.net/publication/311473894_Metallurgical_sludges_bioleaching_and_heavy_metals_recovery_Zn_Cu"
+      ],
+      "curl_exit": 0,
+      "response": [
+        "403",
+        "https://www.researchgate.net/publication/311473894_Metallurgical_sludges_bioleaching_and_heavy_metals_recovery_Zn_Cu",
+        "text/html; charset=UTF-8"
+      ],
+      "stderr": "",
+      "artifact": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-rg-landing.html",
+        "bytes": 21117,
+        "sha256": "c987dbb01a2985801acfc593e19960493914e0a36034d97a25aa24d9f0a1802f"
+      },
+      "headers": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-rg-landing.html.headers",
+        "bytes": 809,
+        "sha256": "414d36baef956fad54474da0ed45614082908bc3a2c0cc0a43c8334e896f5447"
+      }
+    },
+    {
+      "url": "https://www.lut.fi/en/profiles/manivannan-sethurajan",
+      "started_at": "2026-10-21T11:52:18.973587+00:00",
+      "finished_at": "2026-10-21T11:52:19.256959+00:00",
+      "command": [
+        "curl",
+        "--location",
+        "--max-time",
+        "60",
+        "--connect-timeout",
+        "20",
+        "--silent",
+        "--show-error",
+        "--dump-header",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/lut-profile.html.headers",
+        "--output",
+        "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/lut-profile.html",
+        "--write-out",
+        "%{http_code}\n%{url_effective}\n%{content_type}",
+        "https://www.lut.fi/en/profiles/manivannan-sethurajan"
+      ],
+      "curl_exit": 0,
+      "response": [
+        "403",
+        "https://www.lut.fi/en/profiles/manivannan-sethurajan",
+        "text/html"
+      ],
+      "stderr": "",
+      "artifact": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/lut-profile.html",
+        "bytes": 645,
+        "sha256": "f9eb67bbbfa8fbb5a3e32866c2212b54e4b2a5e15f638805fbce61ab90941f09"
+      },
+      "headers": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/lut-profile.html.headers",
+        "bytes": 642,
+        "sha256": "bb2147740b4da7134876a8c0384a9e1440e5cb8bb954402c6524f2cad4e16858"
+      }
+    }
+  ],
+  "acquisition_receipts": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/acquisition-01.json",
+      "bytes": 6708,
+      "sha256": "ab343976ba84659d1d2b51f161fceeed41e8f713c94bf496b4eec57f164f61af"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/acquisition-02.json",
+      "bytes": 4257,
+      "sha256": "0f124c173fcf0aa141fc0ca4e3fcd6d21afeb53acaf6706363fdd020553aafa8"
+    }
+  ],
+  "search_ledger": {
+    "web_calls": 7,
+    "operation_counts": {
+      "search_query": 11,
+      "open": 11,
+      "find": 3,
+      "click": 6
+    },
+    "calls": [
+      {
+        "capture": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/web-01.json",
+          "bytes": 28026,
+          "sha256": "cacba4e9f7b84588a9d24e4a8cf66ff77d3cb61d2af197615ba0f75740d50f17"
+        },
+        "captured_at": "2026-10-21 11:49:46 UTC",
+        "timestamp_semantics": "Request initiation timestamp",
+        "args": {
+          "search_query": [
+            {
+              "q": "\"10.1002/jctb.5026\" pdf"
+            },
+            {
+              "q": "\"TH2015PESC1202_diffusion.pdf\""
+            },
+            {
+              "q": "\"jctb5026-sup-0001-AppendixS1\""
+            }
+          ],
+          "response_length": "long"
+        }
+      },
+      {
+        "capture": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/web-02.json",
+          "bytes": 30027,
+          "sha256": "4388de6a6f90d7a4bfb2ce202aae8ad43b8fbfbb00089a5e0751e9d8d3a3d484"
+        },
+        "captured_at": "2026-10-21 11:50:35 UTC",
+        "timestamp_semantics": "Request initiation timestamp",
+        "args": {
+          "open": [
+            {
+              "ref_id": "https://www.researchgate.net/publication/303377650_Bioleaching_and_selective_biorecovery_of_zinc_from_zinc_metallurgical_leach_residues_from_the_Tres_Marias_zinc_plant_Minas_Gerais_Brazil"
+            },
+            {
+              "ref_id": "https://www.researchgate.net/publication/303382457_jctb5026-sup-0001-AppendixS1"
+            },
+            {
+              "ref_id": "https://onlinelibrary.wiley.com/doi/10.1002/jctb.5026/full"
+            },
+            {
+              "ref_id": "https://theses.fr/2015PESC1202"
+            }
+          ],
+          "search_query": [
+            {
+              "q": "\"Metallurgical sludges, bio/leaching and heavy metals recovery\" pdf"
+            },
+            {
+              "q": "\"jctb.5026\" correction erratum retraction"
+            },
+            {
+              "q": "\"2015PESC1202\" thesis repository"
+            }
+          ],
+          "response_length": "long"
+        }
+      },
+      {
+        "capture": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/web-03.json",
+          "bytes": 27858,
+          "sha256": "d1328d7fd295e79c148ad4112a82a1855862ddc0d9e9e29523dfbea86659666d"
+        },
+        "captured_at": "2026-10-21 11:51:07 UTC",
+        "timestamp_semantics": "Request initiation timestamp",
+        "args": {
+          "open": [
+            {
+              "ref_id": "turn380search0"
+            }
+          ],
+          "find": [
+            {
+              "ref_id": "turn380view0",
+              "pattern": "5 g"
+            },
+            {
+              "ref_id": "turn380view0",
+              "pattern": "2.51"
+            },
+            {
+              "ref_id": "turn380view1",
+              "pattern": "S3.2"
+            }
+          ],
+          "click": [
+            {
+              "ref_id": "turn380view1",
+              "id": 6
+            }
+          ],
+          "response_length": "long"
+        }
+      },
+      {
+        "capture": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/web-04.json",
+          "bytes": 24533,
+          "sha256": "2bc8cdd5dea26c75815986cde857d95b7cb2a64d881fd02e52dbf136f8e80ab4"
+        },
+        "captured_at": "2026-10-21 11:51:31 UTC",
+        "timestamp_semantics": "Request initiation timestamp",
+        "args": {
+          "click": [
+            {
+              "ref_id": "turn381view0",
+              "id": 2
+            },
+            {
+              "ref_id": "turn380view0",
+              "id": 10
+            }
+          ],
+          "open": [
+            {
+              "ref_id": "turn380view1",
+              "lineno": 70
+            },
+            {
+              "ref_id": "turn380view0",
+              "lineno": 315
+            },
+            {
+              "ref_id": "turn380view0",
+              "lineno": 480
+            }
+          ],
+          "response_length": "long"
+        }
+      },
+      {
+        "capture": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/web-05.json",
+          "bytes": 31976,
+          "sha256": "30f5d5e7b1b9e0c263038b001e7ab8f9d03f647265fd2ba7e22d275959006ee1"
+        },
+        "captured_at": "2026-10-21 11:51:56 UTC",
+        "timestamp_semantics": "Request initiation timestamp",
+        "args": {
+          "open": [
+            {
+              "ref_id": "turn382view4",
+              "lineno": 20
+            },
+            {
+              "ref_id": "turn381view0",
+              "lineno": 65
+            }
+          ],
+          "search_query": [
+            {
+              "q": "\"Metallurgical sludges\" \"Sethurajan\" site:un-ihe.org pdf"
+            },
+            {
+              "q": "\"Bioleaching and selective biorecovery\" site:lut.fi"
+            },
+            {
+              "q": "\"TH2015PESC1202\" pdf -site:theses.hal.science"
+            }
+          ],
+          "response_length": "long"
+        }
+      },
+      {
+        "capture": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/web-06.json",
+          "bytes": 34612,
+          "sha256": "18b3a6c6824ee8c0af97a943aeba0f626ec2a460a5b9f9e3d2c3e683835d3d38"
+        },
+        "captured_at": "2026-10-21 11:52:27 UTC",
+        "timestamp_semantics": "Request initiation timestamp",
+        "args": {
+          "click": [
+            {
+              "ref_id": "turn383view0",
+              "id": 3
+            },
+            {
+              "ref_id": "turn380view1",
+              "id": 8
+            },
+            {
+              "ref_id": "turn380view1",
+              "id": 11
+            }
+          ],
+          "open": [
+            {
+              "ref_id": "turn383search0"
+            }
+          ],
+          "response_length": "long"
+        }
+      },
+      {
+        "capture": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/web-07.json",
+          "bytes": 29355,
+          "sha256": "b7f8c46bf96b481559bbabea200fcd596950a9aee0b007448a70b87ab9db61de"
+        },
+        "captured_at": "2026-10-21 11:56:52 UTC",
+        "timestamp_semantics": "Request initiation timestamp",
+        "args": {
+          "search_query": [
+            {
+              "q": "\"10.1002/jctb.5026\" correction OR erratum OR retraction"
+            },
+            {
+              "q": "\"Bioleaching and selective biorecovery of zinc\" correction OR erratum OR retraction"
+            }
+          ],
+          "response_length": "long"
+        }
+      }
+    ],
+    "bounded_negative": "No target correction/retraction surfaced in returned web07 sets; Crossref relation empty/update-to absent and OpenAlex is_retracted false are bounded signals, not universal absence."
+  },
+  "search_ledger_reference": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/search-ledger.json",
+    "bytes": 6512,
+    "sha256": "c5ca2e034fc855893c130bd4d5d5ec05cfdceb4c5e981dedd8cdc8911686420a"
+  },
+  "local_dedup": {
+    "at": "2026-10-21T11:51:01.305319+00:00",
+    "command": [
+      "rg",
+      "--json",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "-i",
+      "jctb[.]5026|zinc.leach.residue|tel-01407248|TH2015PESC1202",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/data/records",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/research",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/reviews",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/history",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/.claude",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/docs"
+    ],
+    "exit_code": 0,
+    "stderr": "",
+    "output": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/dedup-initial.jsonl",
+      "bytes": 61805789,
+      "sha256": "a6ba75b4c62cc36d3dc19f95d06d4fc03c7e52991c47df0189d93d26550ee454"
+    },
+    "match_lines": 239,
+    "paths": 52
+  },
+  "exact_current_record_doi_search": {
+    "command": [
+      "rg",
+      "--json",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "10[.]1002/jctb[.]5026",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/data/records"
+    ],
+    "exit_code": 1,
+    "stderr": "",
+    "output": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/exact-study-record-search.jsonl",
+      "bytes": 272,
+      "sha256": "f9808620c608d3d367455e79cdc6670c8a9210b9d223bd87423eff2cee1eae26"
+    }
+  },
+  "prior_root_inventory": {
+    "roots": [
+      {
+        "path": "/private/tmp/cmm-round2-zinc-20261011",
+        "exists": false,
+        "directory": false,
+        "symlink": false
+      },
+      {
+        "path": "/private/tmp/cmm-expansion-authorities-20261011",
+        "exists": false,
+        "directory": false,
+        "symlink": false
+      },
+      {
+        "path": "/private/tmp/cmm-next-eu",
+        "exists": false,
+        "directory": false,
+        "symlink": false
+      },
+      {
+        "path": "/private/tmp/cmm-round60-resource-research",
+        "exists": false,
+        "directory": false,
+        "symlink": false
+      },
+      {
+        "path": "/private/tmp/cmm-round61-zinc-research",
+        "exists": false,
+        "directory": false,
+        "symlink": false
+      }
+    ],
+    "scope": "Exactly five cited prior raw roots; source-specific bounded check, no machinewide absence",
+    "corrects": "prior-roots-initial.json used an abbreviated round2 path; this exact prior-derived inventory supersedes that exploratory probe"
+  },
+  "historical_hash_comparisons": [
+    {
+      "current": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/crossref.json",
+        "bytes": 14020,
+        "sha256": "f3b813e112965500343d489d8f36109919c9d3f92e6dbd758876ac5f348fb768"
+      },
+      "historical_recorded": {
+        "path": "/private/tmp/cmm-round61-zinc-research/crossref.json",
+        "bytes": 14020,
+        "sha256": "f3b813e112965500343d489d8f36109919c9d3f92e6dbd758876ac5f348fb768"
+      },
+      "hash_equal": true,
+      "old_bytes_reopened": false
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/hal-thesis.json",
+        "bytes": 60342,
+        "sha256": "520f32ac0639777a88d56db47e6c95ae5e74ccb7a1207ae578c46e0b36796d28"
+      },
+      "historical_recorded": {
+        "path": "/private/tmp/cmm-round61-zinc-research/hal-all.json",
+        "bytes": 60343,
+        "sha256": "4f5e81593311e45e85f7885785c3bf1202ca3aa9afe998f3c0181ad2acfc7d77"
+      },
+      "hash_equal": false,
+      "old_bytes_reopened": false
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/hal-article.json",
+        "bytes": 46071,
+        "sha256": "59d08d8b9ddc98425aac74ad4ef4ab46bde418b3bf1d40ba70151d0fa66cc071"
+      },
+      "historical_recorded": {
+        "path": "/private/tmp/cmm-round61-zinc-research/hal-article.json",
+        "bytes": 46070,
+        "sha256": "3effd32dddd851231c4eb1bb4a8a702b5b423eb13a818343d141529a0c56b8ea"
+      },
+      "hash_equal": false,
+      "old_bytes_reopened": false
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/theses-fr.html",
+        "bytes": 723408,
+        "sha256": "8a25394571dd245bd2e3be7bca2f04dac91e71aaa60929bf7408cb1ce8cc9bb4"
+      },
+      "historical_recorded": {
+        "path": "/private/tmp/cmm-round61-zinc-research/theses-fr.html",
+        "bytes": 723408,
+        "sha256": "8a25394571dd245bd2e3be7bca2f04dac91e71aaa60929bf7408cb1ce8cc9bb4"
+      },
+      "hash_equal": true,
+      "old_bytes_reopened": false
+    }
+  ],
+  "primary_inspection": {
+    "created_at": "2026-10-21T11:58:32.385500+00:00",
+    "source": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-hal-current.pdf",
+      "bytes": 7460192,
+      "sha256": "12b17a420bccca0c813e18c6fff4861e6003457d5087406e6e3591948ca6d66f"
+    },
+    "complete_download_pages": 274,
+    "visually_viewed_pdf_pages": [
+      1,
+      2,
+      112,
+      117,
+      144,
+      149,
+      150,
+      158,
+      159,
+      160,
+      161,
+      173,
+      174,
+      175,
+      176,
+      177,
+      178,
+      179,
+      180,
+      181,
+      182,
+      183,
+      184,
+      185,
+      186,
+      187,
+      188,
+      189,
+      190,
+      191,
+      192,
+      193,
+      194,
+      195,
+      258,
+      264,
+      265,
+      266,
+      267
+    ],
+    "visually_viewed_count": 39,
+    "original_page_images": [
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-001.png",
+        "bytes": 169702,
+        "sha256": "2f895f846821c9522191c0832d5956973780f8947e8fd9e4ac62f13f82a31c96"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-002.png",
+        "bytes": 318487,
+        "sha256": "da178a6f58d7f4a5c409e41e9bde3fa0adc515f6f7465890bef99ab28c861881"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-112.png",
+        "bytes": 264497,
+        "sha256": "8948fdf78d5fac22635bf6250921cd794598907d97b5253ca57f3398e86241c8"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-117.png",
+        "bytes": 219293,
+        "sha256": "b06650a99ee2195fa52e68380c28e3a8dd72f342d2d04d4ebeaba447ae879971"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-144.png",
+        "bytes": 235867,
+        "sha256": "d8d0210a0101ca811cb2f1517ed687f2301111a6d0ce1f6705df46b1fb3a1aef"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-149.png",
+        "bytes": 269842,
+        "sha256": "d71e84d00b115cb9e67a52c53ee59491604096d04d2be15f31a545d3ef164616"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-150.png",
+        "bytes": 307549,
+        "sha256": "47df822eded90c345996f190cd08e2457896ef002da872d3803817cf1757d761"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-158.png",
+        "bytes": 159216,
+        "sha256": "44fb3422f26d2c060e6acc2743d1d06a78f71d8cc2109bd6056c70f66e86c5d5"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-159.png",
+        "bytes": 131669,
+        "sha256": "d00e6d5e31adabac926fc68e12f7ad2ba46af4f3537dbccfad9e108e8abd537e"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-160.png",
+        "bytes": 333751,
+        "sha256": "3cb3725288d55fcd2749cbb4ccfe7f6bf2758228b2f28a42393ff4e1dd280e41"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-161.png",
+        "bytes": 189458,
+        "sha256": "8a72f1cb03219efbe8f85d3e1f0433b02019b7cadf7087f339f8e1d4786a14bc"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-173.png",
+        "bytes": 103349,
+        "sha256": "1440f4212d700671b22ce34f6f8600edd272172044e589b42bf01b7e2f68616d"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-174.png",
+        "bytes": 205588,
+        "sha256": "3926e301b4bbef526ae4dbf7e9962797afc41bbd97af882b10253d7020792f1f"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-175.png",
+        "bytes": 331014,
+        "sha256": "bfd489ee6532d886872e47c16859fc83fbe1d37468292da182a3fe4737a121dc"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-176.png",
+        "bytes": 321171,
+        "sha256": "1efabdf6f092dabd68c3e65dc2b8ead7ca8bd82f236a0ee2d13fcbe08f167f82"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-177.png",
+        "bytes": 283570,
+        "sha256": "13a2a8e1169fef8bc2d1bbdded38d2ff949cb19dfe689d41cdd433b989fea7c0"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-178.png",
+        "bytes": 175813,
+        "sha256": "61ad4a87ca46e1eab31f8e3fa172085d051b09ecbe95a31e9bf8edcb59a0b543"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-179.png",
+        "bytes": 255201,
+        "sha256": "c8d03d90729488c532e6160d5f986d22e3afb2cbb9d2cf947b57f5c7d136c76c"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-180.png",
+        "bytes": 245918,
+        "sha256": "89254fea5b4d973a489a068cd30b9a566cd25db404dc6bde12d5c7371abb4a96"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-181.png",
+        "bytes": 289667,
+        "sha256": "a06be56b4dedcd4375c3267e3c6aa318225641889bfa3c6e4add338d7f7edf0b"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-182.png",
+        "bytes": 265910,
+        "sha256": "fd33cf4c8e966c0e56934542ca57125f34c34217ed872007e82ba43071d2fed3"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-183.png",
+        "bytes": 176518,
+        "sha256": "d1375c7a8ed104f10d206b0f73ef0656503cb36e24866af6d5b26cd45f57315c"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-184.png",
+        "bytes": 144917,
+        "sha256": "b0145095accbb9f4c04d2f528148f77f21eef20fcbe30245dab5a52f3c161ca4"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-185.png",
+        "bytes": 181859,
+        "sha256": "24994b758430409ecc119d0b34f1bc63ee0a5c6e97afe57be1cbe8814bb597f2"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-186.png",
+        "bytes": 71326,
+        "sha256": "15ccad5fbd62529b8ee52aee73e31dc3e67a473f5e087c6ee3ce816631e594c7"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-187.png",
+        "bytes": 157048,
+        "sha256": "453dd8d1dc13135b71b72f4b429e1bbb54b85d6236d374e7ca365a0a86d444a7"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-188.png",
+        "bytes": 164754,
+        "sha256": "ecf26b2ad5f945a1c7a4234ddf06848852862554b5297d33fa8ed187469ec08c"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-189.png",
+        "bytes": 226844,
+        "sha256": "94d44bf648d1520be57cdf39fa6b9c43b827a24565f87d8d9e775e9cdda084a5"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-190.png",
+        "bytes": 326934,
+        "sha256": "f7a294910609f3d8753a8d1eba879b2e330c421d75efd4ff9107eaf36d0c7af9"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-191.png",
+        "bytes": 201876,
+        "sha256": "1277f98f646859fbedc29651f5e4484349b3015dcd57491d344bed15e5964b7c"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-192.png",
+        "bytes": 278421,
+        "sha256": "064b61996a71959adc909937f7d51243caea1c4318ba9e2461348e10a2419879"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-193.png",
+        "bytes": 335116,
+        "sha256": "d0fbee6bf9b76b5cfbd3757d86b809b8631e0b9678c305db077fe97211769fa8"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-194.png",
+        "bytes": 317759,
+        "sha256": "f0cfc68468d469b4c67d60667292caa418c70116b728623dc5625f61d6c33550"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-195.png",
+        "bytes": 123554,
+        "sha256": "c2cb0d3a186bd7a8c10c6d6ec3174648ec2fc6e0332ad964d57a48e83844b6f4"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-258.png",
+        "bytes": 223263,
+        "sha256": "fea10c79cb3846e2c1eb17acc8a616eb2b087fe2e5b3a5c7da0eecb73d4546b6"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-264.png",
+        "bytes": 63383,
+        "sha256": "e0db245a11d80d3264046f2ee7a2a88649bdd5043c0bff32c873b82ecd46c53b"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-265.png",
+        "bytes": 60445,
+        "sha256": "97b5eae82ac498c472bf52ac75a6ae34561ed1282f722ac8a3b9885fd73d7040"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-266.png",
+        "bytes": 131914,
+        "sha256": "c4a7487d47291d67d15b3e1e11567964d12b84ead15acb67b943e8dde55023dd"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-pages/page-267.png",
+        "bytes": 55132,
+        "sha256": "722317923115e21065263fee55027945f1550c2cef5eb7512a0704ad5f2d3963"
+      }
+    ],
+    "text_read_scope": [
+      "Chapter5 PDF173-195, printed134-156, complete scientific chapter through acknowledgements; bibliography196-199 not reviewed",
+      "Chapter3 selected methods/results PDF112-118 and associated text context",
+      "Chapter4 PDF143-150 and158-161, selected methods, feed phases and chemical-product lineage",
+      "Supplement PDF256-259 and264-267 text; original images viewed only258 and264-267 from those ranges"
+    ],
+    "limits": [
+      "Not a full reading or visual review of all274 pages.",
+      "2017 main original and AppendixS1 binary not acquired; web-indexed prose/captions are an inferior separate access tier.",
+      "Thesis chapter is marked in preparation, not authenticated as identical to journal article.",
+      "No source raw replicate data, independent spectral phase refinement, RSM refit or experimental replication."
+    ],
+    "quantitative_audit": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/quantitative-audit.json",
+      "bytes": 14027,
+      "sha256": "f886f44a4d1be239a13929a8bcd3528f5587401f964d626984acabb7b47ad553"
+    }
+  },
+  "quantitative_audit": {
+    "created_at": "2026-10-21T11:58:32.385500+00:00",
+    "source": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/thesis-hal-current.pdf",
+      "bytes": 7460192,
+      "sha256": "12b17a420bccca0c813e18c6fff4861e6003457d5087406e6e3591948ca6d66f"
+    },
+    "purpose": "Author visual rekeys and conditional arithmetic, not reconstructed raw experiments or corrected source values.",
+    "table_5_1": {
+      "pdf_page": 178,
+      "printed_page": 139,
+      "literal_headings": [
+        "Non-coded units",
+        "Coded values"
+      ],
+      "columns_in_each_group": [
+        "sulfur",
+        "pulp density",
+        "initial pH"
+      ],
+      "warning": "Printed headings are reversed relative to conventional coding. Preserve literal group order; 120 numerical cells, no response column.",
+      "rows": [
+        {
+          "run": 1,
+          "first_group": [
+            -1,
+            -1,
+            -1
+          ],
+          "second_group": [
+            5,
+            5,
+            3
+          ]
+        },
+        {
+          "run": 2,
+          "first_group": [
+            1,
+            -1,
+            -1
+          ],
+          "second_group": [
+            30,
+            5,
+            3
+          ]
+        },
+        {
+          "run": 3,
+          "first_group": [
+            -1,
+            1,
+            -1
+          ],
+          "second_group": [
+            5,
+            50,
+            3
+          ]
+        },
+        {
+          "run": 4,
+          "first_group": [
+            1,
+            1,
+            -1
+          ],
+          "second_group": [
+            30,
+            50,
+            3
+          ]
+        },
+        {
+          "run": 5,
+          "first_group": [
+            -1,
+            -1,
+            1
+          ],
+          "second_group": [
+            5,
+            5,
+            4
+          ]
+        },
+        {
+          "run": 6,
+          "first_group": [
+            1,
+            -1,
+            1
+          ],
+          "second_group": [
+            30,
+            5,
+            4
+          ]
+        },
+        {
+          "run": 7,
+          "first_group": [
+            -1,
+            1,
+            1
+          ],
+          "second_group": [
+            5,
+            50,
+            4
+          ]
+        },
+        {
+          "run": 8,
+          "first_group": [
+            1,
+            1,
+            1
+          ],
+          "second_group": [
+            30,
+            50,
+            4
+          ]
+        },
+        {
+          "run": 9,
+          "first_group": [
+            -1,
+            0,
+            0
+          ],
+          "second_group": [
+            5,
+            27.5,
+            3.5
+          ]
+        },
+        {
+          "run": 10,
+          "first_group": [
+            1,
+            0,
+            0
+          ],
+          "second_group": [
+            30,
+            27.5,
+            3.5
+          ]
+        },
+        {
+          "run": 11,
+          "first_group": [
+            0,
+            -1,
+            0
+          ],
+          "second_group": [
+            17.5,
+            5,
+            3.5
+          ]
+        },
+        {
+          "run": 12,
+          "first_group": [
+            0,
+            1,
+            0
+          ],
+          "second_group": [
+            17.5,
+            50,
+            3.5
+          ]
+        },
+        {
+          "run": 13,
+          "first_group": [
+            0,
+            0,
+            -1
+          ],
+          "second_group": [
+            17.5,
+            27.5,
+            3
+          ]
+        },
+        {
+          "run": 14,
+          "first_group": [
+            0,
+            0,
+            1
+          ],
+          "second_group": [
+            17.5,
+            27.5,
+            4
+          ]
+        },
+        {
+          "run": 15,
+          "first_group": [
+            0,
+            0,
+            0
+          ],
+          "second_group": [
+            17.5,
+            27.5,
+            3.5
+          ]
+        },
+        {
+          "run": 16,
+          "first_group": [
+            0,
+            0,
+            0
+          ],
+          "second_group": [
+            17.5,
+            27.5,
+            3.5
+          ]
+        },
+        {
+          "run": 17,
+          "first_group": [
+            0,
+            0,
+            0
+          ],
+          "second_group": [
+            17.5,
+            27.5,
+            3.5
+          ]
+        },
+        {
+          "run": 18,
+          "first_group": [
+            0,
+            0,
+            0
+          ],
+          "second_group": [
+            17.5,
+            27.5,
+            3.5
+          ]
+        },
+        {
+          "run": 19,
+          "first_group": [
+            0,
+            0,
+            0
+          ],
+          "second_group": [
+            17.5,
+            27.5,
+            3.5
+          ]
+        },
+        {
+          "run": 20,
+          "first_group": [
+            0,
+            0,
+            0
+          ],
+          "second_group": [
+            17.5,
+            27.5,
+            3.5
+          ]
+        }
+      ]
+    },
+    "table_5_2": {
+      "pdf_page": 183,
+      "printed_page": 144,
+      "columns": [
+        "term",
+        "regression estimate coefficient",
+        "standard error coefficient",
+        "computed T value",
+        "P-value"
+      ],
+      "rows": [
+        [
+          "A",
+          "1.186",
+          "0.595",
+          "8.963",
+          "<0.001"
+        ],
+        [
+          "B",
+          "-0.732",
+          "0.595",
+          "-0.148",
+          "0.885"
+        ],
+        [
+          "C",
+          "55.480",
+          "0.595",
+          "-1.981",
+          "0.076"
+        ],
+        [
+          "AA",
+          "-0.026",
+          "1.135",
+          "-3.521",
+          "0.006"
+        ],
+        [
+          "BB",
+          "0.001",
+          "1.135",
+          "0.457",
+          "0.658"
+        ],
+        [
+          "CC",
+          "-8.871",
+          "1.135",
+          "-1.955",
+          "0.079"
+        ],
+        [
+          "AB",
+          "0.006",
+          "0.665",
+          "2.601",
+          "0.026"
+        ],
+        [
+          "AC",
+          "-0.010",
+          "0.665",
+          "-0.092",
+          "0.929"
+        ],
+        [
+          "BC",
+          "0.161",
+          "0.665",
+          "2.724",
+          "0.021"
+        ]
+      ]
+    },
+    "equation_5": {
+      "pdf_page": 183,
+      "coefficients": {
+        "intercept": "76.116",
+        "A": "6.779",
+        "B": "-8.775",
+        "C": "0.142",
+        "AA": "-2.673",
+        "BB": "-0.251",
+        "CC": "-1.895",
+        "AB": "0.719",
+        "AC": "1.415",
+        "BC": "2.310"
+      },
+      "factor_definitions": "A sulfur g/L; B pulp g/L; C initial pH in methods. No unambiguous reconciled coefficient/coding dictionary supplied."
+    },
+    "table_3_4_selected_ZLR3": {
+      "pdf_page": 117,
+      "unit": "g/kg",
+      "columns": [
+        "element",
+        "mean",
+        "uncertainty"
+      ],
+      "rows": [
+        [
+          "Ca",
+          "69.5",
+          "3.1"
+        ],
+        [
+          "Fe",
+          "115.3",
+          "2.9"
+        ],
+        [
+          "Zn",
+          "25.1",
+          "0.4"
+        ],
+        [
+          "Pb",
+          "23.5",
+          "1.1"
+        ]
+      ],
+      "scope": "Four selected elements only, not all table cells."
+    },
+    "table_4_2_ZLR3": {
+      "pdf_page": 149,
+      "literal_unit": "Wt % per gram",
+      "columns": [
+        "operational fraction",
+        "mean",
+        "uncertainty"
+      ],
+      "rows": [
+        [
+          "sulfates",
+          "0.14",
+          "0.01"
+        ],
+        [
+          "oxides",
+          "0.04",
+          "0.01"
+        ],
+        [
+          "silicates",
+          "0.13",
+          "0.02"
+        ],
+        [
+          "ferrites",
+          "1.79",
+          "0.08"
+        ],
+        [
+          "other",
+          "0.42",
+          "0.04"
+        ]
+      ],
+      "scope": "Five ZLR3 fractions only. Not bulk mineral percentages."
+    },
+    "figure_5_6": {
+      "pdf_page": 188,
+      "time_axis": "days",
+      "fit_labels": [
+        {
+          "model": "liquid film diffusion",
+          "intercept": "0.0615",
+          "slope": "0.015337",
+          "R_squared": "0.95"
+        },
+        {
+          "model": "solid product diffusion",
+          "intercept": "-0.021732",
+          "slope": "0.008851",
+          "R_squared": "0.97"
+        },
+        {
+          "model": "surface chemical reaction",
+          "intercept": "0.02525",
+          "slope": "0.0096918",
+          "R_squared": "0.96"
+        }
+      ]
+    },
+    "figure_S5_4": {
+      "pdf_page": 267,
+      "pH_labels": [
+        "2",
+        "3",
+        "4",
+        "5",
+        "5.5",
+        "6",
+        "6.5"
+      ],
+      "interpretation": "Original bars visually confirm Zn loss appears above pH5; no pixel-digitized exact means or errors."
+    },
+    "diagnostics": [
+      {
+        "id": "table52_A",
+        "formula": "1.186/0.595",
+        "result": "1.993277310924369747899159664",
+        "limitation": "Conditional same-scale estimate/SE check versus printed T=8.963. Does not select correct coding or refit model."
+      },
+      {
+        "id": "table52_B",
+        "formula": "-0.732/0.595",
+        "result": "-1.230252100840336134453781513",
+        "limitation": "Conditional same-scale estimate/SE check versus printed T=-0.148. Does not select correct coding or refit model."
+      },
+      {
+        "id": "table52_C",
+        "formula": "55.480/0.595",
+        "result": "93.24369747899159663865546218",
+        "limitation": "Conditional same-scale estimate/SE check versus printed T=-1.981. Does not select correct coding or refit model."
+      },
+      {
+        "id": "table52_AA",
+        "formula": "-0.026/1.135",
+        "result": "-0.02290748898678414096916299559",
+        "limitation": "Conditional same-scale estimate/SE check versus printed T=-3.521. Does not select correct coding or refit model."
+      },
+      {
+        "id": "table52_BB",
+        "formula": "0.001/1.135",
+        "result": "0.0008810572687224669603524229075",
+        "limitation": "Conditional same-scale estimate/SE check versus printed T=0.457. Does not select correct coding or refit model."
+      },
+      {
+        "id": "table52_CC",
+        "formula": "-8.871/1.135",
+        "result": "-7.815859030837004405286343612",
+        "limitation": "Conditional same-scale estimate/SE check versus printed T=-1.955. Does not select correct coding or refit model."
+      },
+      {
+        "id": "table52_AB",
+        "formula": "0.006/0.665",
+        "result": "0.009022556390977443609022556391",
+        "limitation": "Conditional same-scale estimate/SE check versus printed T=2.601. Does not select correct coding or refit model."
+      },
+      {
+        "id": "table52_AC",
+        "formula": "-0.010/0.665",
+        "result": "-0.01503759398496240601503759398",
+        "limitation": "Conditional same-scale estimate/SE check versus printed T=-0.092. Does not select correct coding or refit model."
+      },
+      {
+        "id": "table52_BC",
+        "formula": "0.161/0.665",
+        "result": "0.2421052631578947368421052632",
+        "limitation": "Conditional same-scale estimate/SE check versus printed T=2.724. Does not select correct coding or refit model."
+      },
+      {
+        "id": "pulp_discrepancy",
+        "formula": "50/5",
+        "result": "10",
+        "limitation": "Tenfold disagreement between preliminary methods and figure caption; not resolved by arithmetic."
+      },
+      {
+        "id": "sulfur_discrepancy",
+        "formula": "25.1/2.51",
+        "result": "1E+1",
+        "limitation": "Tenfold disagreement between optimized conditions and kinetic caption."
+      },
+      {
+        "id": "pulp_percent",
+        "formula": "2.15*10",
+        "result": "21.50",
+        "limitation": "g/L only if source percentage is weight/volume; compatible with21.5g/L but does not resolve sulfur."
+      },
+      {
+        "id": "prelim_with_sulfur_percent",
+        "formula": "9.610/25.1*100",
+        "result": "38.28685258964143426294820717",
+        "limitation": "Assumes Chapter3 ZLR3 assay applies to Chapter5; agrees approximately with38%, not independent yield."
+      },
+      {
+        "id": "prelim_no_sulfur_percent",
+        "formula": "3.140/25.1*100",
+        "result": "12.50996015936254980079681275",
+        "limitation": "Same conditional feed identity; rounds approximately13%."
+      },
+      {
+        "id": "leached_feed_fraction",
+        "formula": "19.9/25.1*100",
+        "result": "79.28286852589641434262948207",
+        "limitation": "Conditional common feed; source prose78/79% remains distinct; no uncertainty propagation."
+      },
+      {
+        "id": "recovered_feed_fraction",
+        "formula": "19.4/25.1*100",
+        "result": "77.29083665338645418326693227",
+        "limitation": "Conditional common feed; not97% of initial feed or isolated pure product."
+      },
+      {
+        "id": "recovered_of_leached",
+        "formula": "19.4/19.9*100",
+        "result": "97.48743718592964824120603015",
+        "limitation": "Ratio of reported means; not independently closed leachate inventory."
+      },
+      {
+        "id": "sequential_mean_fraction_78",
+        "formula": "0.78*0.97*100",
+        "result": "75.6600",
+        "limitation": "Assumes matched serial arms and no intermediate loss; not accepted recovery."
+      },
+      {
+        "id": "sequential_mean_fraction_79",
+        "formula": "0.79*0.97*100",
+        "result": "76.6300",
+        "limitation": "Same hypothetical serial basis, retains78/79 ambiguity."
+      },
+      {
+        "id": "aliquot_zinc_mass_mg",
+        "formula": "25*0.415",
+        "result": "10.375",
+        "limitation": "Assumes0.415g/L is the actual Fe-depleted aliquot before dosing; not measured here."
+      },
+      {
+        "id": "sulfide_volume_mL",
+        "formula": "25*0.415/0.4",
+        "result": "25.9375",
+        "limitation": "If1:1mass ratio uses0.4g/L sulfide supernatant, added volume~25.94mL. Actual added volume absent."
+      },
+      {
+        "id": "conditional_total_volume_mL",
+        "formula": "25+25*0.415/0.4",
+        "result": "50.9375",
+        "limitation": "Illustrates potential dilution; no correction of published precipitation percentage."
+      },
+      {
+        "id": "table42_sum",
+        "formula": "0.14+0.04+0.13+1.79+0.42",
+        "result": "2.52",
+        "limitation": "Sum2.52 is approximately2.51wt% feed only under intended elemental wt% basis; literal wt%pergram retained."
+      },
+      {
+        "id": "eq5_literal_optimum",
+        "formula": "Equation5 at A25.1 B21.5 C3.31",
+        "result": "-1092.7677545",
+        "limitation": "Literal substitution using stated physical factor units; negative prediction flags unresolved equation/coding, not a corrected optimum."
+      },
+      {
+        "id": "eq3_zero_conversion",
+        "formula": "1-3*(1-0)^(2/3)-2*(1-0)",
+        "result": "-4",
+        "limitation": "Printed solid-product equation fails zero-conversion origin. No silent sign correction or fit validation."
+      }
+    ],
+    "correction": {
+      "finding": "186-R2",
+      "at": "2026-10-21T12:07:32.206777+00:00",
+      "prior": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/quantitative-audit.json",
+        "bytes": 14027,
+        "sha256": "f886f44a4d1be239a13929a8bcd3528f5587401f964d626984acabb7b47ad553"
+      },
+      "change": "Only the uncertainty-column label changes; all values and calculations are preserved."
+    }
+  },
+  "base_inputs": {
+    "base": "1296ee20f2595d7d6a50e391f611c22435418906",
+    "files": [
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/CLAUDE.md",
+        "bytes": 2328,
+        "sha256": "5a947ff9de7e825362e1e0f8a8c70470db09cfd8a98bbc7a200aeef8ec427d7f",
+        "relative_path": "CLAUDE.md",
+        "base_matches": true
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/docs/records.md",
+        "bytes": 12262,
+        "sha256": "381bbb73b78607fe4729512f0c30e1f0f3cf010344c88104e84d495639f69c9b",
+        "relative_path": "docs/records.md",
+        "base_matches": true
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/src/cmmmech/schema/cmmmech.yaml",
+        "bytes": 15946,
+        "sha256": "105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932",
+        "relative_path": "src/cmmmech/schema/cmmmech.yaml",
+        "base_matches": true
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/data/records/zinc-leach-residue.yaml",
+        "bytes": 9855,
+        "sha256": "ea520360db699961992304f933eb8dd4225eab72ceb02148941394aab846511d",
+        "relative_path": "data/records/zinc-leach-residue.yaml",
+        "base_matches": true
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/history/records/zinc-leach-residue/2026-10-15T202455Z-codex-bbd011.yaml",
+        "bytes": 915,
+        "sha256": "ab5e01c9abb8d6986cb62fbb9cfeea321b073e1c6fe452f45dc222f923b07598",
+        "relative_path": "history/records/zinc-leach-residue/2026-10-15T202455Z-codex-bbd011.yaml",
+        "base_matches": true
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/research/ingests/round2-zinc-20261011.md",
+        "bytes": 10742,
+        "sha256": "c9e9fc0df6417e82e5683a3112545483650aaf3d12b0cea867214a2f7441940a",
+        "relative_path": "research/ingests/round2-zinc-20261011.md",
+        "base_matches": true
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/research/sources/round60-resource/20261012T145058Z-source-investigation.md",
+        "bytes": 5627,
+        "sha256": "de143de9428306cd9f366b98d2ec60fb8490e8151861c240c9fa227ad5f7eb70",
+        "relative_path": "research/sources/round60-resource/20261012T145058Z-source-investigation.md",
+        "base_matches": true
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/research/sources/round60-resource/20261012T145058Z-source-investigation.json",
+        "bytes": 30876,
+        "sha256": "dc9209643019a9c833223b42772bd5cd5e4717734bd58bf4dd1bf2b2ff472d5b",
+        "relative_path": "research/sources/round60-resource/20261012T145058Z-source-investigation.json",
+        "base_matches": true
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/research/sources/round61-zinc-residue/20261013T020740Z-source-investigation.md",
+        "bytes": 8666,
+        "sha256": "4a4ca27941f267785031015fafae2bc0bfd48674d7dc562513f7176128b4f1fa",
+        "relative_path": "research/sources/round61-zinc-residue/20261013T020740Z-source-investigation.md",
+        "base_matches": true
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/research/sources/round61-zinc-residue/20261013T020740Z-source-investigation.json",
+        "bytes": 25397,
+        "sha256": "a14fe11934b7df673f1ae274a085e3d71f3225b942260d7f6b14e3dbab92612b",
+        "relative_path": "research/sources/round61-zinc-residue/20261013T020740Z-source-investigation.json",
+        "base_matches": true
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/reviews/structured/20261015T203631Z-zinc-leach-residue-round102-independent/review.md",
+        "bytes": 28463,
+        "sha256": "ad20c05e3b8af8258490996f29db619e1951eb2a27c60ce510402a2c8b4ead9c",
+        "relative_path": "reviews/structured/20261015T203631Z-zinc-leach-residue-round102-independent/review.md",
+        "base_matches": true
+      }
+    ],
+    "inspection_note": "Current owner/history and prior narrative reports read; structured prior evidence inspected by relevant objects. Prior current-owner review narrative read, not a new acceptance review."
+  },
+  "raw_manifest": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/raw-manifest.json",
+    "bytes": 18977,
+    "sha256": "243bfa16f818ba1f4a4c9c02aa7f37ec8576d3576c8da4ededeafef24440cc82"
+  },
+  "reproducibility_script": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/build-186-evidence.py",
+    "bytes": 9975,
+    "sha256": "008177af14e6ecb1922c7e14d7a26da075dc8af6df4314871f2a153c5ce9ece2"
+  },
+  "claim_decisions": [
+    {
+      "claim": "Biological acid production promotes Zn leaching from Três Marias residue",
+      "support": "partial",
+      "locator": "Thesis5.2.2-5.3.3,Figures5.1-5.5",
+      "limits": "Source-reported DSM9463, controls differ in pH and possibly temperature;5/50g/L and sulfur conflicts; no sole-leachant causality proof."
+    },
+    {
+      "claim": "Optimized numerical response and product-layer rate control",
+      "support": "defer",
+      "locator": "Tables5.1-5.2,Equations3/5,Figures5.4/5.6",
+      "limits": "Literal coding/coefficients/T-ratios disagree; printed equation gives-4at alpha0; times minutes/days; no raw data refit."
+    },
+    {
+      "claim": "Fe removal by NaOH before sulfide dosing",
+      "support": "support_with_limits",
+      "locator": "Thesis5.2.4.2/5.3.4.1,FigureS5.4",
+      "limits": "Chemical intermediate, about85%Fe atpH5, Zn depletion above5; predicted Fe species not observed phase proof."
+    },
+    {
+      "claim": "Biogenic sulfide forms a ZnS-containing precipitate",
+      "support": "support_with_limits",
+      "locator": "Thesis5.3.4.2/5.4.3,Figure5.7PDF190-191",
+      "limits": "Separate unspecified SRB community; mixed sphalerite/thenardite withFe/Na; no phase purity or closed isolated-product balance."
+    },
+    {
+      "claim": "97%recovery of total feed Zn",
+      "support": "reject_inference",
+      "locator": "Thesis5.4.3",
+      "limits": "97±2.1%is dissolved Zn in Fe-depleted leachate, not initial feed."
+    },
+    {
+      "claim": "Mineral-specific input feed or shared Chinese/Brazilian batch",
+      "support": "reject_inference",
+      "locator": "Chapters3-5 and currentowner",
+      "limits": "Mixed residue, operational extraction fractions and qualitative mixed XANES; distinct age labels and sites."
+    }
+  ],
+  "schema_handoff": {
+    "mechanism_fields": [
+      "description",
+      "context",
+      "microbial",
+      "organisms",
+      "evidence"
+    ],
+    "concentration_observations_limit": "Mass-based elemental source cells with all required source/sample/date context only; no mg/L, percentages, model responses or phase-fraction substitution.",
+    "needs": [
+      "Authoritative DSM9463 organism crosswalk",
+      "Original journal/SI version comparison and attributable condition resolution",
+      "Actual sulfide dosing and stage-specific Zn mass/volume inventories",
+      "Canonical history and fresh independent exact-state review if owner eventually changes"
+    ],
+    "no_new_schema_proposal": true
+  },
+  "provenance_limits": [
+    "Reading access is not redistribution permission; primary originals kept outside Git.",
+    "No paid provider, author contact or GitHub mutation.",
+    "No accepted new record, canonical history or native record-review bundle created.",
+    "No full274page reading claim;39original pages visually viewed.",
+    "Final gate and independent source assessment occur after freeze and are recorded separately."
+  ],
+  "independent_review_corrections": {
+    "at": "2026-10-21T12:07:32.206777+00:00",
+    "findings": [
+      "186-R1",
+      "186-R2"
+    ],
+    "initial_pair": [
+      {
+        "original": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/research/sources/issue-186-zinc-residue-originals/20261021T115839Z.md",
+          "bytes": 22071,
+          "sha256": "16d2d74d2e7d7175e6a7c93916c55f61e3bc2c22b7ef9f083cc4f260d5ccb004"
+        },
+        "preserved": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186-initial-frozen/20261021T115839Z.md",
+          "bytes": 22071,
+          "sha256": "16d2d74d2e7d7175e6a7c93916c55f61e3bc2c22b7ef9f083cc4f260d5ccb004"
+        }
+      },
+      {
+        "original": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186/research/sources/issue-186-zinc-residue-originals/20261021T115839Z-evidence.json",
+          "bytes": 59598,
+          "sha256": "69ad5b0b19979f0c6621e4b2642f7b79f89fac1d558f114f812b7bfaa575aef6"
+        },
+        "preserved": {
+          "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186-initial-frozen/20261021T115839Z-evidence.json",
+          "bytes": 59598,
+          "sha256": "69ad5b0b19979f0c6621e4b2642f7b79f89fac1d558f114f812b7bfaa575aef6"
+        }
+      }
+    ],
+    "initial_index": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186-handoff-path.json",
+      "bytes": 1934,
+      "sha256": "6ddfa7a49983647f7505318793b27091e788308c082652db0cf335587299b110"
+    },
+    "preservation": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186-initial-frozen/preservation.json",
+      "bytes": 5719,
+      "sha256": "bea304178444ce0b5307adeb462ba92e0c1c0b57b7571ef696342818fd7ed213"
+    },
+    "initial_gate": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-186-final-gates.json",
+      "bytes": 1798,
+      "sha256": "8e1816cd81761e78fcb4e917434d80d3b08d49e0a606a89a5af8f53e34b34562"
+    },
+    "initial_review": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/review-186-independent/initial-review.json",
+      "bytes": 4313,
+      "sha256": "99139d0a8f562236179352257ec6819d0ffbbf754b301cce6b31dac66259fcb2"
+    },
+    "revised_quantitative_audit": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-186/quantitative-audit-revised.json",
+      "bytes": 14457,
+      "sha256": "378ee74061388f8d7f4a1aa84dca856f13d83ea44ffa31cd76a217d9d976eb2a"
+    },
+    "changes": [
+      "Editorial acceptance → accepted-article publication for20May2016.",
+      "Undefined SD label → uncertainty; numerical values and diagnostics unchanged."
+    ],
+    "historical_references_policy": "Original pair paths are retired from the worktree after preservation; preserved paths provide identical historical bytes. Initial index and initial raw manifest remain unchanged and historical."
+  }
+}
