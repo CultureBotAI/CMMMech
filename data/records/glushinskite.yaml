@@ -1,66 +1,30 @@
 id: cmmmech:glushinskite
 name: Glushinskite
 material_kind: mineral
-description: Glushinskite is the magnesium oxalate dihydrate mineral species, Mg(C2O4)(H2O)2, listed
-  as redefined by the IMA in a 1987 special procedure in its September 2026 list. That date is not
-  an approval-number identifier. It is distinct from elemental magnesium, magnesium oxalate without
-  a specified hydration state, and the phosphate mineral feeds in the experiment. This record reuses
-  the Suyamud 2020 experiment represented under magnesium and dittmarite; these are separate material
-  identities, not independent experiments. No constituent-element criticality is inherited.
+description: Glushinskite is the magnesium oxalate dihydrate mineral species, Mg(C2O4)(H2O)2, listed as redefined by the IMA in a 1987 special procedure in its September 2026 list. That date is not an approval-number identifier. It is distinct from elemental magnesium, magnesium oxalate without a specified hydration state, and the phosphate mineral feeds in the experiment. This record reuses the Suyamud 2020 experiment represented under magnesium and dittmarite; these are separate material identities, not independent experiments. No constituent-element criticality is inherited.
 sources:
 - id: ima_2026_09
-  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 84, Glushinskite row;
-    page 1 column definitions and page 2 distribution terms.
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 84, Glushinskite row; page 1 column definitions and page 2 distribution terms.
   url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
   accessed_on: '2026-10-11'
 - id: suyamud_2020
-  title: 'Suyamud, Ferrier, Csetenyi, Inthorn and Gadd (2020). Biotransformation of struvite by
-    Aspergillus niger: phosphate release and magnesium biomineralization as glushinskite. Environmental
-    Microbiology 22(4):1588-1602. DOI 10.1111/1462-2920.14949; Table 2, Figures 1 and 3-5, Experimental
-    procedures: organisms, struvite preparation, solid-medium solubilization, crystal purification
-    and XRD.'
+  title: 'Suyamud, Ferrier, Csetenyi, Inthorn and Gadd (2020). Biotransformation of struvite by Aspergillus niger: phosphate release and magnesium biomineralization as glushinskite. Environmental Microbiology 22(4):1588-1602. DOI 10.1111/1462-2920.14949; Table 2, Figures 1 and 3-5, Experimental procedures: organisms, struvite preparation, solid-medium solubilization, crystal purification and XRD.'
   url: https://doi.org/10.1111/1462-2920.14949
   accessed_on: '2026-10-11'
 - id: ncbi_atcc1015
-  title: NCBI Taxonomy 380704 - Aspergillus niger ATCC 1015; exact strain entry verified by taxonomy
-    XML on 11 October 2026.
+  title: NCBI Taxonomy 380704 - Aspergillus niger ATCC 1015; exact strain entry verified by taxonomy XML on 11 October 2026.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=380704&mode=Info
   accessed_on: '2026-10-11'
 mechanisms:
 - id: fungal_glushinskite_formation
   name: Glushinskite formation during fungal phosphate-mineral transformation
   process: biomineralization
-  description: Glushinskite was identified among crystals collected after growth of Aspergillus
-    niger ATCC 1015 on agar containing natural struvite or a synthetic feed identified as dittmarite.
-    The organism grew during this laboratory assay; this is microbial mineral formation rather than
-    an elemental-magnesium recovery process.
-  context: Malt extract agar contained 1% w/v natural struvite from a Veolia wastewater-treatment
-    site in Exeter, UK, or synthetic magnesium ammonium phosphate identified by XRD as dittmarite
-    despite the paper's synthetic-struvite terminology. A 5-mm plug from an actively growing colony
-    inoculated each plate over cellophane. Crystals were collected after seven days at 25 degrees
-    C in darkness, extracted from agar with water at 80 degrees C, washed at least three times and
-    dried in a vacuum desiccator before SEM, EDXA and XRD. The selected solid-medium experiment
-    is separate from the paper's liquid-culture assays.
+  description: Glushinskite was identified among crystals collected after growth of Aspergillus niger ATCC 1015 on agar containing natural struvite or a synthetic feed identified as dittmarite. The organism grew during this laboratory assay; this is microbial mineral formation rather than an elemental-magnesium recovery process.
+  context: Malt extract agar contained 1% w/v natural struvite from a Veolia wastewater-treatment site in Exeter, UK, or synthetic magnesium ammonium phosphate identified by XRD as dittmarite despite the paper's synthetic-struvite terminology. A 5-mm plug from an actively growing colony inoculated each plate over cellophane. Crystals were collected after seven days at 25 degrees C in darkness, extracted from agar with water at 80 degrees C, washed at least three times and dried in a vacuum desiccator before SEM, EDXA and XRD. The selected solid-medium experiment is separate from the paper's liquid-culture assays.
   microbial: true
   organisms:
   - id: NCBITaxon:380704
     label: Aspergillus niger ATCC 1015
-  evidence:
-  - source_ref: suyamud_2020
-    supports: support
-    explanation: Figures 3-5 compare the feed materials with post-growth crystals. XRD traces A
-      and B in Figure 5 are assigned to magnesium oxalate dihydrate against the glushinskite reference
-      pattern, while C and D are struvite and dittmarite feed controls. Figure 4 detects Mg, C and
-      O in the analyzed product crystals; Figure 3 shows their morphology. Figure 5 presents representative
-      patterns from at least three determinations. Table 2 documents acidification in both mineral-fed
-      and mineral-free fungal cultures.
-  - source_ref: suyamud_2020
-    supports: partial
-    explanation: Feed diffraction controls and mineral-free fungal growth do not provide a chemistry-matched
-      abiotic comparison that isolates oxalate production from acidification or proves microbial
-      necessity under all conditions. The Results also describe amorphous debris. The phase assignment
-      is the authors' published identification, not a quantified pure-phase fraction or an isolated
-      recovery yield. Neither magnesium-metal production nor industrial deployment is demonstrated.
   protein_examples:
   - uniprot_accession: UniProtKB:G3Y4N5
     entry_name: CEXA_ASPNA
@@ -77,24 +41,43 @@ mechanisms:
     - InterPro:IPR036259
     pfam_ids:
     - Pfam:PF07690
-    functional_role: Plasma-membrane MFS citrate exporter CexA in Aspergillus niger ATCC 1015 that secretes
-      intracellularly synthesized citric acid into the extracellular medium, contributing to medium acidification
-      during phosphate-mineral transformation and glushinskite biomineralization.
-    annotation_note: Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5 (CEXA_ASPNA;
-      locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015 (NCBITaxon:380704).
+    functional_role: Plasma-membrane MFS citrate exporter CexA in Aspergillus niger ATCC 1015 that secretes intracellularly synthesized citric acid into the extracellular medium, contributing to medium acidification during phosphate-mineral transformation and glushinskite biomineralization.
+    annotation_note: Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5 (CEXA_ASPNA; locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015 (NCBITaxon:380704).
     evidence:
     - source_ref: suyamud_2020
       supports: partial
-      explanation: Representative Aspergillus niger ATCC 1015 organic-acid exporter CexA for fungal acidification
-        during struvite/dittmarite transformation to glushinskite; Suyamud et al. (2020) did not assay
-        cexA mutants or isolate citric versus oxalic acid contributions.
+      explanation: Representative Aspergillus niger ATCC 1015 organic-acid exporter CexA for fungal acidification during struvite/dittmarite transformation to glushinskite; Suyamud et al. (2020) did not assay cexA mutants or isolate citric versus oxalic acid contributions.
+  - uniprot_accession: UniProtKB:A0A254TZW7
+    entry_name: CEXA_ASPNG
+    protein_name: Citrate exporter A
+    gene_symbol: cexA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:5061
+      label: Aspergillus niger
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, contributing to medium acidification during phosphate-mineral transformation and glushinskite biomineralization.
+    annotation_note: Grounded to functionally characterized reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061) alongside strain-matched ATCC 1015 entry UniProtKB:G3Y4N5.
+    evidence:
+    - source_ref: suyamud_2020
+      supports: partial
+      explanation: Representative Aspergillus niger organic-acid exporter CexA for fungal acidification during struvite/dittmarite transformation to glushinskite; Suyamud et al. (2020) did not assay cexA mutants or isolate citric versus oxalic acid contributions.
+  evidence:
+  - source_ref: suyamud_2020
+    supports: support
+    explanation: Figures 3-5 compare the feed materials with post-growth crystals. XRD traces A and B in Figure 5 are assigned to magnesium oxalate dihydrate against the glushinskite reference pattern, while C and D are struvite and dittmarite feed controls. Figure 4 detects Mg, C and O in the analyzed product crystals; Figure 3 shows their morphology. Figure 5 presents representative patterns from at least three determinations. Table 2 documents acidification in both mineral-fed and mineral-free fungal cultures.
+  - source_ref: suyamud_2020
+    supports: partial
+    explanation: Feed diffraction controls and mineral-free fungal growth do not provide a chemistry-matched abiotic comparison that isolates oxalate production from acidification or proves microbial necessity under all conditions. The Results also describe amorphous debris. The phase assignment is the authors' published identification, not a quantified pure-phase fraction or an isolated recovery yield. Neither magnesium-metal production nor industrial deployment is demonstrated.
 causal_graphs:
 - id: aspergillus_glushinskite_formation_graph
-  name: Aspergillus niger ATCC 1015 organic-acid-mediated phosphate-mineral dissolution and glushinskite
-    biomineralization
-  description: Causal pathway linking Aspergillus niger ATCC 1015 organic-acid secretion (represented by
-    citrate exporter CexA alongside oxalic acid production) to agar acidification, dissolution of natural
-    struvite or synthetic dittmarite feeds, and secondary glushinskite crystallization.
+  name: Aspergillus niger ATCC 1015 organic-acid-mediated phosphate-mineral dissolution and glushinskite biomineralization
+  description: Causal pathway linking Aspergillus niger ATCC 1015 organic-acid secretion (represented by citrate exporter CexA alongside oxalic acid production) to agar acidification, dissolution of natural struvite or synthetic dittmarite feeds, and secondary glushinskite crystallization.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: fungal_glushinskite_formation
   nodes:
@@ -102,8 +85,7 @@ causal_graphs:
     label: CexA plasma-membrane citrate exporter (cexA)
     node_type: GENE_OR_PROTEIN
     gene_symbol: cexA
-    description: Major facilitator superfamily transporter exporting citric acid across the Aspergillus
-      niger ATCC 1015 plasma membrane.
+    description: Major facilitator superfamily transporter exporting citric acid across the Aspergillus niger ATCC 1015 plasma membrane.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:G3Y4N5
@@ -121,34 +103,46 @@ causal_graphs:
       - InterPro:IPR036259
       pfam_ids:
       - Pfam:PF07690
-      functional_role: Plasma-membrane MFS citrate exporter CexA in Aspergillus niger ATCC 1015 that secretes
-        intracellularly synthesized citric acid into the extracellular medium, contributing to medium
-        acidification during phosphate-mineral transformation and glushinskite biomineralization.
-      annotation_note: Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5 (CEXA_ASPNA;
-        locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015 (NCBITaxon:380704).
+      functional_role: Plasma-membrane MFS citrate exporter CexA in Aspergillus niger ATCC 1015 that secretes intracellularly synthesized citric acid into the extracellular medium, contributing to medium acidification during phosphate-mineral transformation and glushinskite biomineralization.
+      annotation_note: Grounded to strain-matched reviewed Swiss-Prot entry UniProtKB:G3Y4N5 (CEXA_ASPNA; locus ASPNIDRAFT_56962) for Aspergillus niger ATCC 1015 (NCBITaxon:380704).
       evidence:
       - source_ref: suyamud_2020
         supports: partial
-        explanation: Representative Aspergillus niger ATCC 1015 organic-acid exporter CexA for fungal
-          acidification during struvite/dittmarite transformation to glushinskite; Suyamud et al. (2020)
-          did not assay cexA mutants or isolate citric versus oxalic acid contributions.
+        explanation: Representative Aspergillus niger ATCC 1015 organic-acid exporter CexA for fungal acidification during struvite/dittmarite transformation to glushinskite; Suyamud et al. (2020) did not assay cexA mutants or isolate citric versus oxalic acid contributions.
+    - uniprot_accession: UniProtKB:A0A254TZW7
+      entry_name: CEXA_ASPNG
+      protein_name: Citrate exporter A
+      gene_symbol: cexA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:5061
+        label: Aspergillus niger
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, contributing to medium acidification during phosphate-mineral transformation and glushinskite biomineralization.
+      annotation_note: Grounded to functionally characterized reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061) alongside strain-matched ATCC 1015 entry UniProtKB:G3Y4N5.
+      evidence:
+      - source_ref: suyamud_2020
+        supports: partial
+        explanation: Representative Aspergillus niger organic-acid exporter CexA for fungal acidification during struvite/dittmarite transformation to glushinskite; Suyamud et al. (2020) did not assay cexA mutants or isolate citric versus oxalic acid contributions.
   - id: secreted_fungal_organic_acids
     label: Secreted fungal organic acids and protons (agar acidification and oxalate supply)
     node_type: CHEMICAL_ENTITY
-    description: Extracellular organic acids (oxalate, citrate) and protons secreted by growing Aspergillus
-      niger ATCC 1015 colonies.
+    description: Extracellular organic acids (oxalate, citrate) and protons secreted by growing Aspergillus niger ATCC 1015 colonies.
     protein_grounding_status: NOT_APPLICABLE
   - id: magnesium_ammonium_phosphate_feeds
     label: Natural struvite or synthetic dittmarite feed (1% w/v in malt extract agar)
     node_type: MATERIAL_OR_PHASE
-    description: Magnesium ammonium phosphate mineral feeds (natural struvite or XRD-identified synthetic
-      dittmarite) suspended in malt extract agar.
+    description: Magnesium ammonium phosphate mineral feeds (natural struvite or XRD-identified synthetic dittmarite) suspended in malt extract agar.
     protein_grounding_status: NOT_APPLICABLE
   - id: glushinskite_product_crystals
     label: Glushinskite (Mg(C2O4)(H2O)2) crystals
     node_type: MATERIAL_OR_PHASE
-    description: Magnesium oxalate dihydrate crystals identified by XRD, SEM, and EDXA after 7 days of
-      fungal growth.
+    description: Magnesium oxalate dihydrate crystals identified by XRD, SEM, and EDXA after 7 days of fungal growth.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cexa_citrate_exporter
@@ -159,19 +153,16 @@ causal_graphs:
     evidence:
     - source_ref: suyamud_2020
       supports: partial
-      explanation: Table 2 in Suyamud et al. (2020) documents agar acidification in both mineral-fed and
-        mineral-free Aspergillus niger ATCC 1015 cultures.
+      explanation: Table 2 in Suyamud et al. (2020) documents agar acidification in both mineral-fed and mineral-free Aspergillus niger ATCC 1015 cultures.
   - source: secreted_fungal_organic_acids
     target: magnesium_ammonium_phosphate_feeds
     predicate: acts_on
     relationship: acidolysis and oxalate reaction with magnesium ammonium phosphate feeds
-    description: Fungal acidification and secreted oxalate dissolve natural struvite and synthetic dittmarite
-      in solid medium.
+    description: Fungal acidification and secreted oxalate dissolve natural struvite and synthetic dittmarite in solid medium.
     evidence:
     - source_ref: suyamud_2020
       supports: support
-      explanation: Figures 1 and 3-5 and Table 2 in Suyamud et al. (2020) show mineral solubilization
-        and acidification during Aspergillus niger ATCC 1015 growth.
+      explanation: Figures 1 and 3-5 and Table 2 in Suyamud et al. (2020) show mineral solubilization and acidification during Aspergillus niger ATCC 1015 growth.
   - source: magnesium_ammonium_phosphate_feeds
     target: glushinskite_product_crystals
     predicate: transforms_into
@@ -180,19 +171,21 @@ causal_graphs:
     evidence:
     - source_ref: suyamud_2020
       supports: support
-      explanation: Figures 3-5 in Suyamud et al. (2020) characterize post-growth crystals as glushinskite
-        by SEM, EDXA, and powder XRD.
+      explanation: Figures 3-5 in Suyamud et al. (2020) characterize post-growth crystals as glushinskite by SEM, EDXA, and powder XRD.
 curation_history:
 - timestamp: '2026-10-11T09:57:28.075910+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
-  summary: Created glushinskite mineral identity with bounded fungal solid-medium phase-formation
-    evidence.
+  summary: Created glushinskite mineral identity with bounded fungal solid-medium phase-formation evidence.
 - timestamp: '2026-10-22T01:38:03Z'
   curator: claude (Claude Opus 4.6; antigravity)
   action: EDIT
-  summary: Added Aspergillus niger ATCC 1015 causal graph and reviewed Swiss-Prot UniProtKB:G3Y4N5
-    (CEXA_ASPNA) protein example for acidogenic glushinskite precipitation.
+  summary: Added Aspergillus niger ATCC 1015 causal graph and reviewed Swiss-Prot UniProtKB:G3Y4N5 (CEXA_ASPNA) protein example for acidogenic glushinskite precipitation.
+- timestamp: '2026-10-24T01:55:57Z'
+  curator: marcin
+  action: edit
+  summary: Added reviewed Swiss-Prot UniProtKB:A0A254TZW7 (CEXA_ASPNG) protein example alongside strain-matched UniProtKB:G3Y4N5 for Aspergillus niger ATCC 1015 glushinskite biomineralization.
 history_refs:
 - history/records/glushinskite/2026-10-11T095727Z-codex-e44619.yaml
 - history/records/glushinskite/2026-10-22T013803Z-claude-001304.yaml
+- history/records/glushinskite/2026-10-24T015557Z-marcin-a24da2.yaml

@@ -1,0 +1,27 @@
+history_version: 1
+target:
+  kind: record
+  slug: tetrahedrite-concentrate
+  path: data/records/tetrahedrite-concentrate.yaml
+session:
+  id: 2026-10-24T015709Z-marcin-f8beb6
+  timestamp: '2026-10-24T01:57:09Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Added Acidithiobacillus ferrivorans Sqr (UniProtKB:A0A060UVE9) and TetH (UniProtKB:A0A060URH6)
+    protein examples to tetrahedrite-concentrate.yaml.
+  details: Grounded the second experimental organism arm (Acidithiobacillus ferrivorans, NCBITaxon:160808)
+    on mechanism acidophile_associated_metal_mobilization and causal graph nodes sqr_reductase
+    and tth_hydrolase with live-verified reference-proteome entries UniProtKB:A0A060UVE9 (sqr,
+    UP000193925) and UniProtKB:A0A060URH6 (tetH, UP000193925).
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
