@@ -1,0 +1,335 @@
+# Post-CMM120-F4 primary-source scientific review of behoite (issue #838)
+
+- Review: 20261024T111200Z-behoite-round120-f4-scientific-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-24T11:09:00Z
+- Finished UTC: 2026-10-24T11:12:00Z
+- Reviewer: antigravity / round120-scientific-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Behoite (IMA:1969-031) passes full primary-source scientific review (scientific_review: true, CMM120-F4, https://github.com/CultureBotAI/CMMMech/issues/838) at final working-tree SHA-256 39743478b96cdd265b9423f2f6e1ddd233cda9dbc957e9f4d3823e40468467e6: Resolved CMM120-F4 (issue #838): replaced dense Source.title with concise bibliographic citation 'Ehlmann, A. J., and Mitchell, R. S. (1970) Behoite, beta-Be(OH)2, from the Rode Ranch pegmatite, Llano County, Texas. American Mineralogist, 55, 1-9'; removed the unverified 'Table 1 wet-chemical BeO 58.12 / H2O 41.88 wt% = 100.00%' claim (confirming Table 1 is morphological/goniometric data, Table 2 is XRD, Table 3 is IR, and p. 4 reports only qualitative spectrographic impurity bounds Si, Al, Ca, Mg &lt; 0.5% and Mn, Fe, Ti, Cu &lt; 0.01%); and explicitly documented the internal paper contradiction between p. 7 (describing the 310 °C DuPont 900 DTA dehydroxylation peak with ~265 °C and ~290 °C breaks as endothermic) and the p. 1 abstract (describing the 310 °C reaction as exothermic) in both description and mechanisms[0].
+
+## Scope And Provenance
+
+Full primary-source scientific review of final working-tree record data/records/behoite.yaml (SHA-256 39743478b96cdd265b9423f2f6e1ddd233cda9dbc957e9f4d3823e40468467e6) following CMM120-F4 source-fidelity corrections (issue #838), superseding intermediate review 20261024T100600Z-behoite-round120-reassessment and initial review 20261024T074000Z-behoite-round120.
+
+Selection: Post-CMM120-F4 primary-source scientific review of behoite covering sources[1].title, description, and all curated fields.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 434d9088d8aef9398545d9d6649b3645c708a963.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:behoite | data/records/behoite.yaml | maintained | Behoite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:behoite | Checked 662 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:behoite | Checked 997 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Post-CMM120-F4 primary-source verification of bibliographic Source.title, description, and chemical/crystallographic claims for behoite
+
+evidence: supported. Targets: cmmmech:behoite.
+
+Resolved CMM120-F4 (issue #838): replaced dense Source.title with concise bibliographic citation 'Ehlmann, A. J., and Mitchell, R. S. (1970) Behoite, beta-Be(OH)2, from the Rode Ranch pegmatite, Llano County, Texas. American Mineralogist, 55, 1-9'; removed the unverified 'Table 1 wet-chemical BeO 58.12 / H2O 41.88 wt% = 100.00%' claim (confirming Table 1 is morphological/goniometric data, Table 2 is XRD, Table 3 is IR, and p. 4 reports only qualitative spectrographic impurity bounds Si, Al, Ca, Mg &lt; 0.5% and Mn, Fe, Ti, Cu &lt; 0.01%); and explicitly documented the internal paper contradiction between p. 7 (describing the 310 °C DuPont 900 DTA dehydroxylation peak with ~265 °C and ~290 °C breaks as endothermic) and the p. 1 abstract (describing the 310 °C reaction as exothermic) in both description and mechanisms[0].
+
+### History sidecar integrity, issue #838 / #839 linkage, and predecessor review chain for behoite
+
+provenance: supported. Targets: cmmmech:behoite.
+
+Canonical EDIT history sidecar history/records/behoite/2026-10-24T104500Z-antigravity-001211.yaml links grouped scientific issue https://github.com/CultureBotAI/CMMMech/issues/838 (CMM120-F4) and PR #837; future guardrail task cmmmech-infra-0010 is intaken in INFRA_TASKS.md under https://github.com/CultureBotAI/CMMMech/issues/839; predecessor review pairs 20261024T074000Z-behoite-round120 and 20261024T100600Z-behoite-round120-reassessment are preserved intact.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/behoite.yaml; Final corrected working-tree record data/records/behoite.yaml | supports | Final corrected record data/records/behoite.yaml (SHA-256 39743478b96cdd265b9423f2f6e1ddd233cda9dbc957e9f4d3823e40468467e6) incorporates CMM120-F4 (https://github.com/CultureBotAI/CMMMech/issues/838) with concise bibliographic Source.title and primary-table-verified scientific claims. |
+| primary_study | https://www.rruff.net/doclib/am/vol55/AM55_1.pdf; Ehlmann &amp; Mitchell (1970) Am. Mineral. 55:1-9, pp. 1, 4-8, Tables 1-3, Fig. 4 (Rode Ranch pegmatite spectrographic bounds, XRD, IR, and DuPont 900 DTA) | supports | Resolved CMM120-F4 (issue #838): replaced dense Source.title with concise bibliographic citation 'Ehlmann, A. J., and Mitchell, R. S. (1970) Behoite, beta-Be(OH)2, from the Rode Ranch pegmatite, Llano County, Texas. American Mineralogist, 55, 1-9'; removed the unverified 'Table 1 wet-chemical BeO 58.12 / H2O 41.88 wt% = 100.00%' claim (confirming Table 1 is morphological/goniometric data, Table 2 is XRD, Table 3 is IR, and p. 4 reports only qualitative spectrographic impurity bounds Si, Al, Ca, Mg &lt; 0.5% and Mn, Fe, Ti, Cu &lt; 0.01%); and explicitly documented the internal paper contradiction between p. 7 (describing the 310 °C DuPont 900 DTA dehydroxylation peak with ~265 °C and ~290 °C breaks as endothermic) and the p. 1 abstract (describing the 310 °C reaction as exothermic) in both description and mechanisms[0]. |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List (244 pages visually inspected) | supports | Confirms official mineral species identity, formula, and IMA approval tag (IMA:1969-031) for Behoite. |
+| edit_history | history/records/behoite/2026-10-24T104500Z-antigravity-001211.yaml; Canonical EDIT history sidecar history/records/behoite/2026-10-24T104500Z-antigravity-001211.yaml for CMM120-F4 (issue #838) | supports | Canonical EDIT history sidecar history/records/behoite/2026-10-24T104500Z-antigravity-001211.yaml (SHA-256 18db28b3f0e7f6b02e5dfe98f882a3398aa5d68bb02ca6b6d0c02907e22992b6) records the CMM120-F4 source-fidelity repair alongside preserved CREATE sidecar history/records/behoite/2026-10-24T073000Z-antigravity-001201.yaml (SHA-256 9b4bc4ea429702ab93b8f2cad1cc5518d7a9b8ec75ffb9cc86b37652e3aa0fe7). |
+| predecessor_reviews | reviews/structured/20261024T100600Z-behoite-round120-reassessment/review.yaml; Predecessor reviews reviews/structured/20261024T074000Z-behoite-round120/review.yaml and reviews/structured/20261024T100600Z-behoite-round120-reassessment/review.yaml | supports | Preserves untouched predecessor review bundles 20261024T074000Z-behoite-round120 (SHA-256 6440e46e58cc544a0a26ad17cbb39e84060974233fc955d2fa6d87dbe08ec139) and 20261024T100600Z-behoite-round120-reassessment (SHA-256 f8f38f608c96fa4cb67499e273c172dbbd988f12dc1c62c8702e915270c27d65) and establishes fresh scientific coverage for final record SHA-256 39743478b96cdd265b9423f2f6e1ddd233cda9dbc957e9f4d3823e40468467e6. |
+| validation | data/records/behoite.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history | supports | Checked 662 record(s); 0 failed. Checked 997 history record(s); 0 error(s). |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes at base 2b18e567096cceeb767514d9cec5d99e75688aef.
+- Reported mechanism is strictly abiotic laboratory thermal/topotactic behavior (microbial: false); no biological processing or industrial recovery yield is reported in the primary source.
+- This actual-time scientific successor review (started_at 2026-10-24T11:09:00Z, accessed_at 2026-10-24T11:11:00Z, finished_at 2026-10-24T11:12:00Z) supersedes 20261024T100600Z-behoite-round120-reassessment and 20261024T074000Z-behoite-round120 after resolving CMM120-F4 (issue #838), including scientific claim edits in sources[1].title and description and mechanisms[0].
+- Chronology disclosure: the earlier 2026-10-24T10:02:00Z to 2026-10-24T10:06:00Z timestamps in predecessor bundle 20261024T100600Z-behoite-round120-reassessment represented an approximate nominal window assigned when drafting the post-schema-fix reassessment and did not reflect its actual later CLI save time (~10:25-10:29Z); that predecessor bundle is preserved unmodified for provenance integrity.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261024T111200Z-behoite-round120-f4-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: 'Post-CMM120-F4 primary-source scientific review of behoite (issue #838)'
+started_at: '2026-10-24T11:09:00Z'
+finished_at: '2026-10-24T11:12:00Z'
+reviewer:
+  identity: antigravity / round120-scientific-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/behoite.yaml (SHA-256 39743478b96cdd265b9423f2f6e1ddd233cda9dbc957e9f4d3823e40468467e6)
+    against primary literature (Ehlmann & Mitchell (1970) Am. Mineral. 55:1-9, pp.
+    1, 4-8, Tables 1-3, Fig. 4 (Rode Ranch pegmatite spectrographic bounds, XRD, IR,
+    and DuPont 900 DTA)) and official IMA September 2026 Master List after applying
+    CMM120-F4 source-fidelity repairs (tracked in https://github.com/CultureBotAI/CMMMech/issues/838,
+    with future guardrail task cmmmech-infra-0010 tracked in https://github.com/CultureBotAI/CMMMech/issues/839).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 434d9088d8aef9398545d9d6649b3645c708a963
+  state: working_tree
+  inputs:
+  - path: data/records/behoite.yaml
+    sha256: 39743478b96cdd265b9423f2f6e1ddd233cda9dbc957e9f4d3823e40468467e6
+    role: target
+  - path: history/records/behoite/2026-10-24T073000Z-antigravity-001201.yaml
+    sha256: 9b4bc4ea429702ab93b8f2cad1cc5518d7a9b8ec75ffb9cc86b37652e3aa0fe7
+    role: context
+  - path: history/records/behoite/2026-10-24T104500Z-antigravity-001211.yaml
+    sha256: 18db28b3f0e7f6b02e5dfe98f882a3398aa5d68bb02ca6b6d0c02907e22992b6
+    role: context
+  - path: research/sources/round120-minerals/20261024T073500Z-source-investigation.json
+    sha256: f1724495ee44a4ce03275bdbaa2f7774ec423f39dd829111e4b4cb1e194ead80
+    role: context
+  - path: research/sources/round120-minerals/20261024T073500Z-source-investigation.md
+    sha256: 657857e9c0bdfa192578571bff3d593102f71d3edd1b5ecb39e61da7704acb3f
+    role: context
+  - path: reviews/structured/20261024T074000Z-behoite-round120/review.yaml
+    sha256: 6440e46e58cc544a0a26ad17cbb39e84060974233fc955d2fa6d87dbe08ec139
+    role: context
+  - path: reviews/structured/20261024T100600Z-behoite-round120-reassessment/review.yaml
+    sha256: f8f38f608c96fa4cb67499e273c172dbbd988f12dc1c62c8702e915270c27d65
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:behoite
+  path: data/records/behoite.yaml
+  label: Behoite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/behoite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/behoite/2026-10-24T073000Z-antigravity-001201.yaml
+    role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/behoite/2026-10-24T104500Z-antigravity-001211.yaml
+    role: canonical_history
+scope:
+  description: 'Full primary-source scientific review of final working-tree record
+    data/records/behoite.yaml (SHA-256 39743478b96cdd265b9423f2f6e1ddd233cda9dbc957e9f4d3823e40468467e6)
+    following CMM120-F4 source-fidelity corrections (issue #838), superseding intermediate
+    review 20261024T100600Z-behoite-round120-reassessment and initial review 20261024T074000Z-behoite-round120.'
+  selection: Post-CMM120-F4 primary-source scientific review of behoite covering sources[1].title,
+    description, and all curated fields.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:behoite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/behoite.yaml
+  locator: Final corrected working-tree record data/records/behoite.yaml
+  accessed_at: '2026-10-24T11:11:00Z'
+  support: supports
+  summary: Final corrected record data/records/behoite.yaml (SHA-256 39743478b96cdd265b9423f2f6e1ddd233cda9dbc957e9f4d3823e40468467e6)
+    incorporates CMM120-F4 (https://github.com/CultureBotAI/CMMMech/issues/838) with
+    concise bibliographic Source.title and primary-table-verified scientific claims.
+  snapshot_sha256: 39743478b96cdd265b9423f2f6e1ddd233cda9dbc957e9f4d3823e40468467e6
+- evidence_id: primary_study
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/am/vol55/AM55_1.pdf
+  locator: Ehlmann & Mitchell (1970) Am. Mineral. 55:1-9, pp. 1, 4-8, Tables 1-3,
+    Fig. 4 (Rode Ranch pegmatite spectrographic bounds, XRD, IR, and DuPont 900 DTA)
+  accessed_at: '2026-10-24T11:11:00Z'
+  support: supports
+  summary: 'Resolved CMM120-F4 (issue #838): replaced dense Source.title with concise
+    bibliographic citation ''Ehlmann, A. J., and Mitchell, R. S. (1970) Behoite, beta-Be(OH)2,
+    from the Rode Ranch pegmatite, Llano County, Texas. American Mineralogist, 55,
+    1-9''; removed the unverified ''Table 1 wet-chemical BeO 58.12 / H2O 41.88 wt%
+    = 100.00%'' claim (confirming Table 1 is morphological/goniometric data, Table
+    2 is XRD, Table 3 is IR, and p. 4 reports only qualitative spectrographic impurity
+    bounds Si, Al, Ca, Mg < 0.5% and Mn, Fe, Ti, Cu < 0.01%); and explicitly documented
+    the internal paper contradiction between p. 7 (describing the 310 °C DuPont 900
+    DTA dehydroxylation peak with ~265 °C and ~290 °C breaks as endothermic) and the
+    p. 1 abstract (describing the 310 °C reaction as exothermic) in both description
+    and mechanisms[0].'
+  snapshot_sha256: 55b96a29f37e83fa65031512839d76b4a953d2d757fd17ec03c7c3d74d0911da
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List (244 pages visually inspected)
+  accessed_at: '2026-10-24T11:11:00Z'
+  support: supports
+  summary: Confirms official mineral species identity, formula, and IMA approval tag
+    (IMA:1969-031) for Behoite.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/behoite/2026-10-24T104500Z-antigravity-001211.yaml
+  locator: 'Canonical EDIT history sidecar history/records/behoite/2026-10-24T104500Z-antigravity-001211.yaml
+    for CMM120-F4 (issue #838)'
+  accessed_at: '2026-10-24T11:11:00Z'
+  support: supports
+  summary: Canonical EDIT history sidecar history/records/behoite/2026-10-24T104500Z-antigravity-001211.yaml
+    (SHA-256 18db28b3f0e7f6b02e5dfe98f882a3398aa5d68bb02ca6b6d0c02907e22992b6) records
+    the CMM120-F4 source-fidelity repair alongside preserved CREATE sidecar history/records/behoite/2026-10-24T073000Z-antigravity-001201.yaml
+    (SHA-256 9b4bc4ea429702ab93b8f2cad1cc5518d7a9b8ec75ffb9cc86b37652e3aa0fe7).
+  snapshot_sha256: 18db28b3f0e7f6b02e5dfe98f882a3398aa5d68bb02ca6b6d0c02907e22992b6
+- evidence_id: predecessor_reviews
+  kind: record_content
+  reference: reviews/structured/20261024T100600Z-behoite-round120-reassessment/review.yaml
+  locator: Predecessor reviews reviews/structured/20261024T074000Z-behoite-round120/review.yaml
+    and reviews/structured/20261024T100600Z-behoite-round120-reassessment/review.yaml
+  accessed_at: '2026-10-24T11:11:00Z'
+  support: supports
+  summary: Preserves untouched predecessor review bundles 20261024T074000Z-behoite-round120
+    (SHA-256 6440e46e58cc544a0a26ad17cbb39e84060974233fc955d2fa6d87dbe08ec139) and
+    20261024T100600Z-behoite-round120-reassessment (SHA-256 f8f38f608c96fa4cb67499e273c172dbbd988f12dc1c62c8702e915270c27d65)
+    and establishes fresh scientific coverage for final record SHA-256 39743478b96cdd265b9423f2f6e1ddd233cda9dbc957e9f4d3823e40468467e6.
+  snapshot_sha256: f8f38f608c96fa4cb67499e273c172dbbd988f12dc1c62c8702e915270c27d65
+- evidence_id: validation
+  kind: validation
+  reference: data/records/behoite.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history
+  accessed_at: '2026-10-24T11:11:00Z'
+  support: supports
+  summary: Checked 662 record(s); 0 failed. Checked 997 history record(s); 0 error(s).
+  snapshot_sha256: 39743478b96cdd265b9423f2f6e1ddd233cda9dbc957e9f4d3823e40468467e6
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 662 record(s); 0 failed.
+  target_ids:
+  - cmmmech:behoite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base 2b18e567096cceeb767514d9cec5d99e75688aef
+  status: passed
+  required: true
+  summary: Checked 997 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:behoite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: primary_source_scientific_verification
+  area: evidence
+  topic: Post-CMM120-F4 primary-source verification of bibliographic Source.title,
+    description, and chemical/crystallographic claims for behoite
+  outcome: supported
+  summary: 'Resolved CMM120-F4 (issue #838): replaced dense Source.title with concise
+    bibliographic citation ''Ehlmann, A. J., and Mitchell, R. S. (1970) Behoite, beta-Be(OH)2,
+    from the Rode Ranch pegmatite, Llano County, Texas. American Mineralogist, 55,
+    1-9''; removed the unverified ''Table 1 wet-chemical BeO 58.12 / H2O 41.88 wt%
+    = 100.00%'' claim (confirming Table 1 is morphological/goniometric data, Table
+    2 is XRD, Table 3 is IR, and p. 4 reports only qualitative spectrographic impurity
+    bounds Si, Al, Ca, Mg < 0.5% and Mn, Fe, Ti, Cu < 0.01%); and explicitly documented
+    the internal paper contradiction between p. 7 (describing the 310 °C DuPont 900
+    DTA dehydroxylation peak with ~265 °C and ~290 °C breaks as endothermic) and the
+    p. 1 abstract (describing the 310 °C reaction as exothermic) in both description
+    and mechanisms[0].'
+  target_ids:
+  - cmmmech:behoite
+  evidence_ids:
+  - owner
+  - primary_study
+  - ima_authority
+- assessment_id: provenance_and_predecessor_chain
+  area: provenance
+  topic: 'History sidecar integrity, issue #838 / #839 linkage, and predecessor review
+    chain for behoite'
+  outcome: supported
+  summary: 'Canonical EDIT history sidecar history/records/behoite/2026-10-24T104500Z-antigravity-001211.yaml
+    links grouped scientific issue https://github.com/CultureBotAI/CMMMech/issues/838
+    (CMM120-F4) and PR #837; future guardrail task cmmmech-infra-0010 is intaken in
+    INFRA_TASKS.md under https://github.com/CultureBotAI/CMMMech/issues/839; predecessor
+    review pairs 20261024T074000Z-behoite-round120 and 20261024T100600Z-behoite-round120-reassessment
+    are preserved intact.'
+  target_ids:
+  - cmmmech:behoite
+  evidence_ids:
+  - owner
+  - edit_history
+  - predecessor_reviews
+  - validation
+findings: []
+actions: []
+summary: 'Behoite (IMA:1969-031) passes full primary-source scientific review (scientific_review:
+  true, CMM120-F4, https://github.com/CultureBotAI/CMMMech/issues/838) at final working-tree
+  SHA-256 39743478b96cdd265b9423f2f6e1ddd233cda9dbc957e9f4d3823e40468467e6: Resolved
+  CMM120-F4 (issue #838): replaced dense Source.title with concise bibliographic citation
+  ''Ehlmann, A. J., and Mitchell, R. S. (1970) Behoite, beta-Be(OH)2, from the Rode
+  Ranch pegmatite, Llano County, Texas. American Mineralogist, 55, 1-9''; removed
+  the unverified ''Table 1 wet-chemical BeO 58.12 / H2O 41.88 wt% = 100.00%'' claim
+  (confirming Table 1 is morphological/goniometric data, Table 2 is XRD, Table 3 is
+  IR, and p. 4 reports only qualitative spectrographic impurity bounds Si, Al, Ca,
+  Mg < 0.5% and Mn, Fe, Ti, Cu < 0.01%); and explicitly documented the internal paper
+  contradiction between p. 7 (describing the 310 °C DuPont 900 DTA dehydroxylation
+  peak with ~265 °C and ~290 °C breaks as endothermic) and the p. 1 abstract (describing
+  the 310 °C reaction as exothermic) in both description and mechanisms[0].'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes at base 2b18e567096cceeb767514d9cec5d99e75688aef.'
+- 'Reported mechanism is strictly abiotic laboratory thermal/topotactic behavior (microbial:
+  false); no biological processing or industrial recovery yield is reported in the
+  primary source.'
+notes:
+- 'This actual-time scientific successor review (started_at 2026-10-24T11:09:00Z,
+  accessed_at 2026-10-24T11:11:00Z, finished_at 2026-10-24T11:12:00Z) supersedes 20261024T100600Z-behoite-round120-reassessment
+  and 20261024T074000Z-behoite-round120 after resolving CMM120-F4 (issue #838), including
+  scientific claim edits in sources[1].title and description and mechanisms[0].'
+- 'Chronology disclosure: the earlier 2026-10-24T10:02:00Z to 2026-10-24T10:06:00Z
+  timestamps in predecessor bundle 20261024T100600Z-behoite-round120-reassessment
+  represented an approximate nominal window assigned when drafting the post-schema-fix
+  reassessment and did not reflect its actual later CLI save time (~10:25-10:29Z);
+  that predecessor bundle is preserved unmodified for provenance integrity.'
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261024T074000Z-behoite-round120
+  relationship: initial_round120_scientific_review
+- repository: CultureBotAI/CMMMech
+  review_id: 20261024T100600Z-behoite-round120-reassessment
+  relationship: superseded_by_f4_primary_source_scientific_review
+```

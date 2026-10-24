@@ -1,0 +1,203 @@
+schema_version: 1.0.0
+review_id: 20261024T074000Z-calciohilairite-round120
+kind: record
+repository: CultureBotAI/CMMMech
+title: Scientific review of calciohilairite
+started_at: '2026-10-24T07:36:00Z'
+finished_at: '2026-10-24T07:40:00Z'
+reviewer:
+  identity: antigravity / round120-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/cmmmech-add-record/SKILL.md;
+    full primary-source PDFs, official authorities (IMA September 2026 Master List),
+    figures, tables, and record/history/schema invariants were verified page-by-page
+    against the frozen working-tree record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 2b18e567096cceeb767514d9cec5d99e75688aef
+  state: working_tree
+  inputs:
+  - path: data/records/calciohilairite.yaml
+    sha256: 2dede04c5c86e9355cf1cb5b5d14a5959aa2a0b3bc926989e19c2cff4e65fcef
+    role: target
+  - path: history/records/calciohilairite/2026-10-24T073000Z-antigravity-001202.yaml
+    sha256: b00638ee1c7634c0aa9d4c017c5fae685b8702f7e5e754d8e3c00e113e0c4d5b
+    role: context
+  - path: research/sources/round120-minerals/20261024T073500Z-source-investigation.json
+    sha256: bb159c4337de6f01565d04f1e0690b34aec0ed43a722b7004d95515f41c6f0cc
+    role: context
+  - path: research/sources/round120-minerals/20261024T073500Z-source-investigation.md
+    sha256: 4be24aeb244eccde8a9fb1335608d162ce50544319b3480b1e8acd0cf171cacf
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:calciohilairite
+  path: data/records/calciohilairite.yaml
+  label: Calciohilairite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/calciohilairite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/calciohilairite/2026-10-24T073000Z-antigravity-001202.yaml
+    role: canonical_history
+scope:
+  description: Complete frozen working-tree record data/records/calciohilairite.yaml,
+    canonical CREATE history sidecar history/records/calciohilairite/2026-10-24T073000Z-antigravity-001202.yaml,
+    and primary-source evidence boundaries.
+  selection: Targeted structured review of newly curated Round 120 CMM record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:calciohilairite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/calciohilairite.yaml
+  locator: Complete frozen working-tree record data/records/calciohilairite.yaml
+  accessed_at: '2026-10-24T07:40:00Z'
+  support: supports
+  summary: All structured claims, identifiers, relations, and qualification notes
+    match the inspected primary sources.
+  snapshot_sha256: 2dede04c5c86e9355cf1cb5b5d14a5959aa2a0b3bc926989e19c2cff4e65fcef
+- evidence_id: history
+  kind: record_content
+  reference: history/records/calciohilairite/2026-10-24T073000Z-antigravity-001202.yaml
+  locator: Complete canonical CREATE sidecar history/records/calciohilairite/2026-10-24T073000Z-antigravity-001202.yaml
+  accessed_at: '2026-10-24T07:40:00Z'
+  support: supports
+  summary: Canonical history sidecar and inline history event accurately record actor,
+    UTC timestamp, and scientific scope.
+  snapshot_sha256: b00638ee1c7634c0aa9d4c017c5fae685b8702f7e5e754d8e3c00e113e0c4d5b
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round120-minerals/20261024T073500Z-source-investigation.json
+  locator: Paired Round 120 source investigation dossier research/sources/round120-minerals/20261024T073500Z-source-investigation.json
+  accessed_at: '2026-10-24T07:40:00Z'
+  support: context_only
+  summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
+  snapshot_sha256: bb159c4337de6f01565d04f1e0690b34aec0ed43a722b7004d95515f41c6f0cc
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List (244 pages visually inspected)
+  accessed_at: '2026-10-24T07:40:00Z'
+  support: supports
+  summary: Establishes official mineral species nomenclature, formula, approval status,
+    and commodity vs mineral category boundary.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary_study
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/am/vol73/AM73_1191.pdf
+  locator: Complete full-text visual inspection of AM 73 (1988) 1191-1194 (4 pp.)
+    and IMA September 2026 Master List p. 35 (IMA:1984-023)
+  accessed_at: '2026-10-24T07:40:00Z'
+  support: supports
+  summary: 'IMA:1984-023 Calciohilairite identity and primary-source mineralogical
+    data are supported without inheriting element-level criticality: Primary species
+    description of calciohilairite (IMA 1984-023) from Liberty Bell Mountain, Golden
+    Horn batholith, Okanogan County, Washington, USA. Reports 6 electron microprobe
+    analyses (Table 2: SiO2 45.78–49.49, Al2O3 1.44–3.21, ZrO2 34.47–38.30, CaO 9.52–14.37,
+    Na2O 0.14–0.38, K2O 0.04–0.32, FeO 0.08–0.30, MgO 0.04–0.13, CuO 0.13–2.10, Y2O3
+    0.07–0.49, H2O 16.0 wt% by difference), trigonal R32 symmetry with a = 20.870(4)
+    Å, c = 16.002(4) Å, Z = 18, Dmeas = 2.68(2) g/cm3, Dcalc = 2.74 g/cm3, Mohs hardness
+    4, and uniaxial (–) indices omega = 1.622(1) and epsilon = 1.619(1).'
+  snapshot_sha256: 29bc0416f54602662aab1ee38df2c86aa7f2455248d1477bb66c8de2f307da2f
+- evidence_id: validation
+  kind: validation
+  reference: data/records/calciohilairite.yaml
+  locator: Strict schema and history validation across all 662 records and 981 history
+    sidecars
+  accessed_at: '2026-10-24T07:40:00Z'
+  support: supports
+  summary: Checked 662 record(s), 0 failed; Checked 981 history record(s), 0 error(s).
+  snapshot_sha256: 2dede04c5c86e9355cf1cb5b5d14a5959aa2a0b3bc926989e19c2cff4e65fcef
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech.cli validate --require-records
+  status: passed
+  required: true
+  summary: Checked 662 record(s); 0 failed.
+  target_ids:
+  - cmmmech:calciohilairite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech.cli validate-history --base
+    2b18e567096cceeb767514d9cec5d99e75688aef
+  status: passed
+  required: true
+  summary: Checked 981 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:calciohilairite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_evidence
+  area: evidence
+  topic: Primary-source identity and evidence boundaries for calciohilairite
+  outcome: supported
+  summary: 'IMA:1984-023 Calciohilairite identity and primary-source mineralogical
+    data are supported without inheriting element-level criticality: Primary species
+    description of calciohilairite (IMA 1984-023) from Liberty Bell Mountain, Golden
+    Horn batholith, Okanogan County, Washington, USA. Reports 6 electron microprobe
+    analyses (Table 2: SiO2 45.78–49.49, Al2O3 1.44–3.21, ZrO2 34.47–38.30, CaO 9.52–14.37,
+    Na2O 0.14–0.38, K2O 0.04–0.32, FeO 0.08–0.30, MgO 0.04–0.13, CuO 0.13–2.10, Y2O3
+    0.07–0.49, H2O 16.0 wt% by difference), trigonal R32 symmetry with a = 20.870(4)
+    Å, c = 16.002(4) Å, Z = 18, Dmeas = 2.68(2) g/cm3, Dcalc = 2.74 g/cm3, Mohs hardness
+    4, and uniaxial (–) indices omega = 1.622(1) and epsilon = 1.619(1).'
+  target_ids:
+  - cmmmech:calciohilairite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - primary_study
+- assessment_id: scope_and_provenance
+  area: provenance
+  topic: Provenance, category boundaries, and absence of fabricated claims
+  outcome: supported
+  summary: No unmeasured recovery yields, unverified biological interactions, or improper
+    criticality transfers are claimed; CREATE sidecar and inline history match the
+    frozen record.
+  target_ids:
+  - cmmmech:calciohilairite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - validation
+findings: []
+actions: []
+summary: 'Calciohilairite passes with limitations: IMA:1984-023 Calciohilairite identity
+  and primary-source mineralogical data are supported without inheriting element-level
+  criticality: Primary species description of calciohilairite (IMA 1984-023) from
+  Liberty Bell Mountain, Golden Horn batholith, Okanogan County, Washington, USA.
+  Reports 6 electron microprobe analyses (Table 2: SiO2 45.78–49.49, Al2O3 1.44–3.21,
+  ZrO2 34.47–38.30, CaO 9.52–14.37, Na2O 0.14–0.38, K2O 0.04–0.32, FeO 0.08–0.30,
+  MgO 0.04–0.13, CuO 0.13–2.10, Y2O3 0.07–0.49, H2O 16.0 wt% by difference), trigonal
+  R32 symmetry with a = 20.870(4) Å, c = 16.002(4) Å, Z = 18, Dmeas = 2.68(2) g/cm3,
+  Dcalc = 2.74 g/cm3, Mohs hardness 4, and uniaxial (–) indices omega = 1.622(1) and
+  epsilon = 1.619(1).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes at base 2b18e567096cceeb767514d9cec5d99e75688aef.'
+- No biological processing or pilot-scale extraction yield is reported in the inspected
+  primary sources; unstated process parameters remain null.
+notes:
+- All primary-source PDFs and authority documents were visually inspected in full
+  before record creation.
+related_reviews: []

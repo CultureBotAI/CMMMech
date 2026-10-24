@@ -1,0 +1,40 @@
+history_version: 1
+target:
+  kind: record
+  slug: dissakisite-ce
+  path: data/records/dissakisite-ce.yaml
+session:
+  id: 2026-10-24T104500Z-antigravity-001215
+  timestamp: '2026-10-24T10:45:00Z'
+  actors:
+    - name: antigravity
+      type: ai_agent
+      model: antigravity
+      agent_tool: antigravity-cli
+links:
+  issues:
+    - https://github.com/CultureBotAI/CMMMech/issues/838
+  prs:
+    - https://github.com/CultureBotAI/CMMMech/pull/837
+events:
+  - type: EDIT
+    outcome: changed
+    summary: >-
+      Resolved CMM120-F8 (issue #838) by replacing the unprinted composite
+      oxide values and erroneous Table 2 citation with Table 1 (p. 1991) column
+      2a core values (total 101.75 wt%, Gd2O3 < 0.10 wt%, rim column 2b total
+      102.58 wt%) and simplifying sources[1].title to a concise bibliographic
+      citation.
+    details: >-
+      Re-inspected Grew et al. (1991) American Mineralogist 76:1990-1997
+      (AM76_1990.pdf, p. 1991, Table 1) to resolve finding CMM120-F8 under issue
+      #838: removed the unprinted composite oxide list and erroneous Table 2
+      citation, recorded the Table 1 column 2a holotype core analysis (total
+      101.75 wt%, with Gd2O3 < 0.10 wt%, calculated H2O = 1.54 wt%, and rim
+      column 2b total 102.58 wt%, noting REE analytical uncertainty), and
+      simplified sources[1].title to a concise bibliographic citation.
+    sections:
+      - description
+      - sources
+      - curation_history
+      - history_refs

@@ -1,0 +1,252 @@
+schema_version: 1.0.0
+review_id: 20261024T111200Z-dissakisite-ce-round120-f8-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: 'Post-CMM120-F8 primary-source scientific review of dissakisite-ce (issue #838)'
+started_at: '2026-10-24T11:09:00Z'
+finished_at: '2026-10-24T11:12:00Z'
+reviewer:
+  identity: antigravity / round120-scientific-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/dissakisite-ce.yaml (SHA-256 ad3ecb6339661b7a4945afc0da4cf1bf757a4b6f4dfa0936b5cdf9bb8a90da33)
+    against primary literature (Grew et al. (1991) Am. Mineral. 76:1990-1997, pp.
+    1990-1995, Tables 1-2 (Balchen Mountain holotype NMNH 168421 Table 1 EMPA and
+    Table 2 P21/m XRD)) and official IMA September 2026 Master List after applying
+    CMM120-F8 source-fidelity repairs (tracked in https://github.com/CultureBotAI/CMMMech/issues/838,
+    with future guardrail task cmmmech-infra-0010 tracked in https://github.com/CultureBotAI/CMMMech/issues/839).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 434d9088d8aef9398545d9d6649b3645c708a963
+  state: working_tree
+  inputs:
+  - path: data/records/dissakisite-ce.yaml
+    sha256: ad3ecb6339661b7a4945afc0da4cf1bf757a4b6f4dfa0936b5cdf9bb8a90da33
+    role: target
+  - path: history/records/dissakisite-ce/2026-10-24T073000Z-antigravity-001205.yaml
+    sha256: 3b01d363f77a56cb41f577dcd5e36f64099987eb6304da50ffde9aa785011f38
+    role: context
+  - path: history/records/dissakisite-ce/2026-10-24T104500Z-antigravity-001215.yaml
+    sha256: 2163afc883643f019cddac2a91c77ee32dd7b4c734ae49a0d21df246bbd88f61
+    role: context
+  - path: research/sources/round120-minerals/20261024T073500Z-source-investigation.json
+    sha256: f1724495ee44a4ce03275bdbaa2f7774ec423f39dd829111e4b4cb1e194ead80
+    role: context
+  - path: research/sources/round120-minerals/20261024T073500Z-source-investigation.md
+    sha256: 657857e9c0bdfa192578571bff3d593102f71d3edd1b5ecb39e61da7704acb3f
+    role: context
+  - path: reviews/structured/20261024T074000Z-dissakisite-ce-round120/review.yaml
+    sha256: 53e2b3f7ed484622009308ab86656b67347efb2e521f931aee38372c46a24d9d
+    role: context
+  - path: reviews/structured/20261024T100600Z-dissakisite-ce-round120-reassessment/review.yaml
+    sha256: 2a4c0e3570bfe275d4a5f0627933f6093b29991516e281ee2da3588cc5a63a3a
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:dissakisite-ce
+  path: data/records/dissakisite-ce.yaml
+  label: Dissakisite-(Ce)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/dissakisite-ce.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/dissakisite-ce/2026-10-24T073000Z-antigravity-001205.yaml
+    role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/dissakisite-ce/2026-10-24T104500Z-antigravity-001215.yaml
+    role: canonical_history
+scope:
+  description: 'Full primary-source scientific review of final working-tree record
+    data/records/dissakisite-ce.yaml (SHA-256 ad3ecb6339661b7a4945afc0da4cf1bf757a4b6f4dfa0936b5cdf9bb8a90da33)
+    following CMM120-F8 source-fidelity corrections (issue #838), superseding intermediate
+    review 20261024T100600Z-dissakisite-ce-round120-reassessment and initial review
+    20261024T074000Z-dissakisite-ce-round120.'
+  selection: Post-CMM120-F8 primary-source scientific review of dissakisite-ce covering
+    sources[1].title, description, and all curated fields.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:dissakisite-ce
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/dissakisite-ce.yaml
+  locator: Final corrected working-tree record data/records/dissakisite-ce.yaml
+  accessed_at: '2026-10-24T11:11:00Z'
+  support: supports
+  summary: Final corrected record data/records/dissakisite-ce.yaml (SHA-256 ad3ecb6339661b7a4945afc0da4cf1bf757a4b6f4dfa0936b5cdf9bb8a90da33)
+    incorporates CMM120-F8 (https://github.com/CultureBotAI/CMMMech/issues/838) with
+    concise bibliographic Source.title and primary-table-verified scientific claims.
+  snapshot_sha256: ad3ecb6339661b7a4945afc0da4cf1bf757a4b6f4dfa0936b5cdf9bb8a90da33
+- evidence_id: primary_study
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/am/vol76/AM76_1990.pdf
+  locator: Grew et al. (1991) Am. Mineral. 76:1990-1997, pp. 1990-1995, Tables 1-2
+    (Balchen Mountain holotype NMNH 168421 Table 1 EMPA and Table 2 P21/m XRD)
+  accessed_at: '2026-10-24T11:11:00Z'
+  support: supports
+  summary: 'Resolved CMM120-F8 (issue #838): replaced dense Source.title with concise
+    bibliographic citation ''Grew, E. S., Essene, E. J., Peacor, D. R., Su, S.-C.,
+    and Asami, M. (1991) Dissakisite-(Ce), a new member of the epidote group and the
+    magnesium analogue of allanite-(Ce), from Antarctica. American Mineralogist, 76,
+    1990-1997''; corrected the chemical analysis table reference from Table 2 to Table
+    1 (p. 1992, mean of 14 EMPA analyses across 5 grains of holotype EG88011814 /
+    NMNH 168421, whereas Table 2 is powder XRD), included Sm2O3 0.25 ± 0.04 wt% and
+    Censored F, Cl, SrO, Y2O3, Gd2O3, Yb2O3, and PbO <= 0.05 wt%, and explicitly noted
+    that H2O (1.59 wt%) was calculated assuming 1 OH per formula unit and total Fe
+    (4.12 wt% FeO) was reported as FeO with 0.04 Fe3+ estimated by stoichiometry.'
+  snapshot_sha256: 6c0ea9ad769b8364a7590e21eee312f4dbf578c7ec42f8b353f81db938e8a4df
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List (244 pages visually inspected)
+  accessed_at: '2026-10-24T11:11:00Z'
+  support: supports
+  summary: Confirms official mineral species identity, formula, and IMA approval tag
+    (IMA:1990-004) for Dissakisite-(Ce).
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/dissakisite-ce/2026-10-24T104500Z-antigravity-001215.yaml
+  locator: 'Canonical EDIT history sidecar history/records/dissakisite-ce/2026-10-24T104500Z-antigravity-001215.yaml
+    for CMM120-F8 (issue #838)'
+  accessed_at: '2026-10-24T11:11:00Z'
+  support: supports
+  summary: Canonical EDIT history sidecar history/records/dissakisite-ce/2026-10-24T104500Z-antigravity-001215.yaml
+    (SHA-256 2163afc883643f019cddac2a91c77ee32dd7b4c734ae49a0d21df246bbd88f61) records
+    the CMM120-F8 source-fidelity repair alongside preserved CREATE sidecar history/records/dissakisite-ce/2026-10-24T073000Z-antigravity-001205.yaml
+    (SHA-256 3b01d363f77a56cb41f577dcd5e36f64099987eb6304da50ffde9aa785011f38).
+  snapshot_sha256: 2163afc883643f019cddac2a91c77ee32dd7b4c734ae49a0d21df246bbd88f61
+- evidence_id: predecessor_reviews
+  kind: record_content
+  reference: reviews/structured/20261024T100600Z-dissakisite-ce-round120-reassessment/review.yaml
+  locator: Predecessor reviews reviews/structured/20261024T074000Z-dissakisite-ce-round120/review.yaml
+    and reviews/structured/20261024T100600Z-dissakisite-ce-round120-reassessment/review.yaml
+  accessed_at: '2026-10-24T11:11:00Z'
+  support: supports
+  summary: Preserves untouched predecessor review bundles 20261024T074000Z-dissakisite-ce-round120
+    (SHA-256 53e2b3f7ed484622009308ab86656b67347efb2e521f931aee38372c46a24d9d) and
+    20261024T100600Z-dissakisite-ce-round120-reassessment (SHA-256 2a4c0e3570bfe275d4a5f0627933f6093b29991516e281ee2da3588cc5a63a3a)
+    and establishes fresh scientific coverage for final record SHA-256 ad3ecb6339661b7a4945afc0da4cf1bf757a4b6f4dfa0936b5cdf9bb8a90da33.
+  snapshot_sha256: 2a4c0e3570bfe275d4a5f0627933f6093b29991516e281ee2da3588cc5a63a3a
+- evidence_id: validation
+  kind: validation
+  reference: data/records/dissakisite-ce.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history
+  accessed_at: '2026-10-24T11:11:00Z'
+  support: supports
+  summary: Checked 662 record(s); 0 failed. Checked 997 history record(s); 0 error(s).
+  snapshot_sha256: ad3ecb6339661b7a4945afc0da4cf1bf757a4b6f4dfa0936b5cdf9bb8a90da33
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 662 record(s); 0 failed.
+  target_ids:
+  - cmmmech:dissakisite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base 2b18e567096cceeb767514d9cec5d99e75688aef
+  status: passed
+  required: true
+  summary: Checked 997 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:dissakisite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: primary_source_scientific_verification
+  area: evidence
+  topic: Post-CMM120-F8 primary-source verification of bibliographic Source.title,
+    description, and chemical/crystallographic claims for dissakisite-ce
+  outcome: supported
+  summary: 'Resolved CMM120-F8 (issue #838): replaced dense Source.title with concise
+    bibliographic citation ''Grew, E. S., Essene, E. J., Peacor, D. R., Su, S.-C.,
+    and Asami, M. (1991) Dissakisite-(Ce), a new member of the epidote group and the
+    magnesium analogue of allanite-(Ce), from Antarctica. American Mineralogist, 76,
+    1990-1997''; corrected the chemical analysis table reference from Table 2 to Table
+    1 (p. 1992, mean of 14 EMPA analyses across 5 grains of holotype EG88011814 /
+    NMNH 168421, whereas Table 2 is powder XRD), included Sm2O3 0.25 ± 0.04 wt% and
+    Censored F, Cl, SrO, Y2O3, Gd2O3, Yb2O3, and PbO <= 0.05 wt%, and explicitly noted
+    that H2O (1.59 wt%) was calculated assuming 1 OH per formula unit and total Fe
+    (4.12 wt% FeO) was reported as FeO with 0.04 Fe3+ estimated by stoichiometry.'
+  target_ids:
+  - cmmmech:dissakisite-ce
+  evidence_ids:
+  - owner
+  - primary_study
+  - ima_authority
+- assessment_id: provenance_and_predecessor_chain
+  area: provenance
+  topic: 'History sidecar integrity, issue #838 / #839 linkage, and predecessor review
+    chain for dissakisite-ce'
+  outcome: supported
+  summary: 'Canonical EDIT history sidecar history/records/dissakisite-ce/2026-10-24T104500Z-antigravity-001215.yaml
+    links grouped scientific issue https://github.com/CultureBotAI/CMMMech/issues/838
+    (CMM120-F8) and PR #837; future guardrail task cmmmech-infra-0010 is intaken in
+    INFRA_TASKS.md under https://github.com/CultureBotAI/CMMMech/issues/839; predecessor
+    review pairs 20261024T074000Z-dissakisite-ce-round120 and 20261024T100600Z-dissakisite-ce-round120-reassessment
+    are preserved intact.'
+  target_ids:
+  - cmmmech:dissakisite-ce
+  evidence_ids:
+  - owner
+  - edit_history
+  - predecessor_reviews
+  - validation
+findings: []
+actions: []
+summary: 'Dissakisite-(Ce) (IMA:1990-004) passes full primary-source scientific review
+  (scientific_review: true, CMM120-F8, https://github.com/CultureBotAI/CMMMech/issues/838)
+  at final working-tree SHA-256 ad3ecb6339661b7a4945afc0da4cf1bf757a4b6f4dfa0936b5cdf9bb8a90da33:
+  Resolved CMM120-F8 (issue #838): replaced dense Source.title with concise bibliographic
+  citation ''Grew, E. S., Essene, E. J., Peacor, D. R., Su, S.-C., and Asami, M. (1991)
+  Dissakisite-(Ce), a new member of the epidote group and the magnesium analogue of
+  allanite-(Ce), from Antarctica. American Mineralogist, 76, 1990-1997''; corrected
+  the chemical analysis table reference from Table 2 to Table 1 (p. 1992, mean of
+  14 EMPA analyses across 5 grains of holotype EG88011814 / NMNH 168421, whereas Table
+  2 is powder XRD), included Sm2O3 0.25 ± 0.04 wt% and Censored F, Cl, SrO, Y2O3,
+  Gd2O3, Yb2O3, and PbO <= 0.05 wt%, and explicitly noted that H2O (1.59 wt%) was
+  calculated assuming 1 OH per formula unit and total Fe (4.12 wt% FeO) was reported
+  as FeO with 0.04 Fe3+ estimated by stoichiometry.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes at base 2b18e567096cceeb767514d9cec5d99e75688aef.'
+- Record captures mineralogical identity, type chemistry, and crystallography without
+  a reported microbial or abiotic extraction/transformation mechanism in the inspected
+  primary sources.
+notes:
+- 'This actual-time scientific successor review (started_at 2026-10-24T11:09:00Z,
+  accessed_at 2026-10-24T11:11:00Z, finished_at 2026-10-24T11:12:00Z) supersedes 20261024T100600Z-dissakisite-ce-round120-reassessment
+  and 20261024T074000Z-dissakisite-ce-round120 after resolving CMM120-F8 (issue #838),
+  including scientific claim edits in sources[1].title and description.'
+- 'Chronology disclosure: the earlier 2026-10-24T10:02:00Z to 2026-10-24T10:06:00Z
+  timestamps in predecessor bundle 20261024T100600Z-dissakisite-ce-round120-reassessment
+  represented an approximate nominal window assigned when drafting the post-schema-fix
+  reassessment and did not reflect its actual later CLI save time (~10:25-10:29Z);
+  that predecessor bundle is preserved unmodified for provenance integrity.'
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261024T074000Z-dissakisite-ce-round120
+  relationship: initial_round120_scientific_review
+- repository: CultureBotAI/CMMMech
+  review_id: 20261024T100600Z-dissakisite-ce-round120-reassessment
+  relationship: superseded_by_f8_primary_source_scientific_review

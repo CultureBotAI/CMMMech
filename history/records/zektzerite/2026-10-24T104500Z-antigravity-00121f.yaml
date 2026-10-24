@@ -1,0 +1,43 @@
+history_version: 1
+target:
+  kind: record
+  slug: zektzerite
+  path: data/records/zektzerite.yaml
+session:
+  id: 2026-10-24T104500Z-antigravity-00121f
+  timestamp: '2026-10-24T10:45:00Z'
+  actors:
+    - name: antigravity
+      type: ai_agent
+      model: antigravity
+      agent_tool: antigravity-cli
+links:
+  issues:
+    - https://github.com/CultureBotAI/CMMMech/issues/838
+  prs:
+    - https://github.com/CultureBotAI/CMMMech/pull/837
+events:
+  - type: EDIT
+    outcome: changed
+    summary: >-
+      Resolved CMM120-F16 (issue #838) by replacing the mixed theoretical/measured
+      Table 1 oxide values and empirical formula with the exact Zektzerite
+      Analysis column (Li2O 2.8, Na2O 5.9, ZrO2 21.84, HfO2 0.5, TiO2 0.75, SiO2
+      68.24, total 100.0 wt%, Penfield absence of H2O on 300 mg in prose) and
+      p. 418 empirical formula Li1.00Na1.02(Zr0.94Ti0.05Hf0.01)Si6.06O15.15, and
+      simplifying sources[1].title to a concise bibliographic citation.
+    details: >-
+      Re-inspected Dunn et al. (1977) American Mineralogist 62:416-420
+      (AM62_416.pdf, p. 418, Table 1) to resolve finding CMM120-F16 under issue
+      #838: replaced the mixed theoretical/measured oxide values and drifted
+      empirical formula with the exact Table 1 Zektzerite Analysis column (SiO2
+      68.24, ZrO2 21.84, TiO2 0.75, HfO2 0.5, Na2O 5.9, Li2O 2.8, total 100.0
+      wt%, keeping theoretical NaLiZrSi6O15 Li2O = 2.82 wt% and prose Penfield
+      absence of H2O on a 300 mg sample distinct) and the explicit p. 418
+      empirical formula Li1.00Na1.02(Zr0.94Ti0.05Hf0.01)Si6.06O15.15, and
+      simplified sources[1].title to a concise bibliographic citation.
+    sections:
+      - description
+      - sources
+      - curation_history
+      - history_refs

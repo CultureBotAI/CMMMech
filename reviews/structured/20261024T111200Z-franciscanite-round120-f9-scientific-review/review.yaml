@@ -1,0 +1,250 @@
+schema_version: 1.0.0
+review_id: 20261024T111200Z-franciscanite-round120-f9-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: 'Post-CMM120-F9 primary-source scientific review of franciscanite (issue #838)'
+started_at: '2026-10-24T11:09:00Z'
+finished_at: '2026-10-24T11:12:00Z'
+reviewer:
+  identity: antigravity / round120-scientific-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/franciscanite.yaml (SHA-256 5658db4be565ace62adfe6d43f0539340126a8638496882bf9b91f842d72a596)
+    against primary literature (Dunn et al. (1986) Am. Mineral. 71:1522-1526, pp.
+    1522-1525, Tables 1-4 (Pennsylvania mine holotype NMNH 163041 EMPA + TGA and trigonal
+    P-3/P3 structure refinement)) and official IMA September 2026 Master List after
+    applying CMM120-F9 source-fidelity repairs (tracked in https://github.com/CultureBotAI/CMMMech/issues/838,
+    with future guardrail task cmmmech-infra-0010 tracked in https://github.com/CultureBotAI/CMMMech/issues/839).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 434d9088d8aef9398545d9d6649b3645c708a963
+  state: working_tree
+  inputs:
+  - path: data/records/franciscanite.yaml
+    sha256: 5658db4be565ace62adfe6d43f0539340126a8638496882bf9b91f842d72a596
+    role: target
+  - path: history/records/franciscanite/2026-10-24T073000Z-antigravity-001206.yaml
+    sha256: 0cb8f3517d1b97d9a4968c09c41b229c1d997a2027552bd5e6bc28a0c6cc880b
+    role: context
+  - path: history/records/franciscanite/2026-10-24T104500Z-antigravity-001216.yaml
+    sha256: 770cc8ab00a06a1894a8d5b494a5206187c1a30ee1f435c44138dade08555033
+    role: context
+  - path: research/sources/round120-minerals/20261024T073500Z-source-investigation.json
+    sha256: f1724495ee44a4ce03275bdbaa2f7774ec423f39dd829111e4b4cb1e194ead80
+    role: context
+  - path: research/sources/round120-minerals/20261024T073500Z-source-investigation.md
+    sha256: 657857e9c0bdfa192578571bff3d593102f71d3edd1b5ecb39e61da7704acb3f
+    role: context
+  - path: reviews/structured/20261024T074000Z-franciscanite-round120/review.yaml
+    sha256: 92f742ae270024094973d74f01549276ea1a6d0e9ed7d23e5f967b2b7ae89361
+    role: context
+  - path: reviews/structured/20261024T100600Z-franciscanite-round120-reassessment/review.yaml
+    sha256: ca9e92dd09051f93976ad7f722e9d2aa0122407662b1f6a541d3087b6448b0c6
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:franciscanite
+  path: data/records/franciscanite.yaml
+  label: Franciscanite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/franciscanite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/franciscanite/2026-10-24T073000Z-antigravity-001206.yaml
+    role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/franciscanite/2026-10-24T104500Z-antigravity-001216.yaml
+    role: canonical_history
+scope:
+  description: 'Full primary-source scientific review of final working-tree record
+    data/records/franciscanite.yaml (SHA-256 5658db4be565ace62adfe6d43f0539340126a8638496882bf9b91f842d72a596)
+    following CMM120-F9 source-fidelity corrections (issue #838), superseding intermediate
+    review 20261024T100600Z-franciscanite-round120-reassessment and initial review
+    20261024T074000Z-franciscanite-round120.'
+  selection: Post-CMM120-F9 primary-source scientific review of franciscanite covering
+    sources[1].title, description, and all curated fields.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:franciscanite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/franciscanite.yaml
+  locator: Final corrected working-tree record data/records/franciscanite.yaml
+  accessed_at: '2026-10-24T11:11:00Z'
+  support: supports
+  summary: Final corrected record data/records/franciscanite.yaml (SHA-256 5658db4be565ace62adfe6d43f0539340126a8638496882bf9b91f842d72a596)
+    incorporates CMM120-F9 (https://github.com/CultureBotAI/CMMMech/issues/838) with
+    concise bibliographic Source.title and primary-table-verified scientific claims.
+  snapshot_sha256: 5658db4be565ace62adfe6d43f0539340126a8638496882bf9b91f842d72a596
+- evidence_id: primary_study
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/am/vol71/AM71_1522.pdf
+  locator: Dunn et al. (1986) Am. Mineral. 71:1522-1526, pp. 1522-1525, Tables 1-4
+    (Pennsylvania mine holotype NMNH 163041 EMPA + TGA and trigonal P-3/P3 structure
+    refinement)
+  accessed_at: '2026-10-24T11:11:00Z'
+  support: supports
+  summary: 'Resolved CMM120-F9 (issue #838): replaced dense Source.title with concise
+    bibliographic citation ''Dunn, P. J., Peacor, D. R., Erd, R. C., and Ramik, R.
+    A. (1986) Franciscanite and orebroite, two new minerals from California and Sweden,
+    related to welinite. American Mineralogist, 71, 1522-1526''; clarified that the
+    chemical composition is reported in the text on p. 1523 (rather than in a chemical
+    table), noted that H2O (3.9 wt%) was determined by TGA/EGA as weight loss between
+    390 and 820 °C, and verified that space group P-3 (refined from P3, R = 0.062)
+    was established by single-crystal Weissenberg/precession and CAD-4 diffractometer
+    data alongside 114.6-mm Gandolfi powder XRD (Table 1).'
+  snapshot_sha256: ca26d0e22f6099265b93ea5de62bea490e279d92ce5405e850289d1cf413fd29
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List (244 pages visually inspected)
+  accessed_at: '2026-10-24T11:11:00Z'
+  support: supports
+  summary: Confirms official mineral species identity, formula, and IMA approval tag
+    (IMA:1985-038) for Franciscanite.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/franciscanite/2026-10-24T104500Z-antigravity-001216.yaml
+  locator: 'Canonical EDIT history sidecar history/records/franciscanite/2026-10-24T104500Z-antigravity-001216.yaml
+    for CMM120-F9 (issue #838)'
+  accessed_at: '2026-10-24T11:11:00Z'
+  support: supports
+  summary: Canonical EDIT history sidecar history/records/franciscanite/2026-10-24T104500Z-antigravity-001216.yaml
+    (SHA-256 770cc8ab00a06a1894a8d5b494a5206187c1a30ee1f435c44138dade08555033) records
+    the CMM120-F9 source-fidelity repair alongside preserved CREATE sidecar history/records/franciscanite/2026-10-24T073000Z-antigravity-001206.yaml
+    (SHA-256 0cb8f3517d1b97d9a4968c09c41b229c1d997a2027552bd5e6bc28a0c6cc880b).
+  snapshot_sha256: 770cc8ab00a06a1894a8d5b494a5206187c1a30ee1f435c44138dade08555033
+- evidence_id: predecessor_reviews
+  kind: record_content
+  reference: reviews/structured/20261024T100600Z-franciscanite-round120-reassessment/review.yaml
+  locator: Predecessor reviews reviews/structured/20261024T074000Z-franciscanite-round120/review.yaml
+    and reviews/structured/20261024T100600Z-franciscanite-round120-reassessment/review.yaml
+  accessed_at: '2026-10-24T11:11:00Z'
+  support: supports
+  summary: Preserves untouched predecessor review bundles 20261024T074000Z-franciscanite-round120
+    (SHA-256 92f742ae270024094973d74f01549276ea1a6d0e9ed7d23e5f967b2b7ae89361) and
+    20261024T100600Z-franciscanite-round120-reassessment (SHA-256 ca9e92dd09051f93976ad7f722e9d2aa0122407662b1f6a541d3087b6448b0c6)
+    and establishes fresh scientific coverage for final record SHA-256 5658db4be565ace62adfe6d43f0539340126a8638496882bf9b91f842d72a596.
+  snapshot_sha256: ca9e92dd09051f93976ad7f722e9d2aa0122407662b1f6a541d3087b6448b0c6
+- evidence_id: validation
+  kind: validation
+  reference: data/records/franciscanite.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history
+  accessed_at: '2026-10-24T11:11:00Z'
+  support: supports
+  summary: Checked 662 record(s); 0 failed. Checked 997 history record(s); 0 error(s).
+  snapshot_sha256: 5658db4be565ace62adfe6d43f0539340126a8638496882bf9b91f842d72a596
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 662 record(s); 0 failed.
+  target_ids:
+  - cmmmech:franciscanite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base 2b18e567096cceeb767514d9cec5d99e75688aef
+  status: passed
+  required: true
+  summary: Checked 997 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:franciscanite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: primary_source_scientific_verification
+  area: evidence
+  topic: Post-CMM120-F9 primary-source verification of bibliographic Source.title,
+    description, and chemical/crystallographic claims for franciscanite
+  outcome: supported
+  summary: 'Resolved CMM120-F9 (issue #838): replaced dense Source.title with concise
+    bibliographic citation ''Dunn, P. J., Peacor, D. R., Erd, R. C., and Ramik, R.
+    A. (1986) Franciscanite and orebroite, two new minerals from California and Sweden,
+    related to welinite. American Mineralogist, 71, 1522-1526''; clarified that the
+    chemical composition is reported in the text on p. 1523 (rather than in a chemical
+    table), noted that H2O (3.9 wt%) was determined by TGA/EGA as weight loss between
+    390 and 820 °C, and verified that space group P-3 (refined from P3, R = 0.062)
+    was established by single-crystal Weissenberg/precession and CAD-4 diffractometer
+    data alongside 114.6-mm Gandolfi powder XRD (Table 1).'
+  target_ids:
+  - cmmmech:franciscanite
+  evidence_ids:
+  - owner
+  - primary_study
+  - ima_authority
+- assessment_id: provenance_and_predecessor_chain
+  area: provenance
+  topic: 'History sidecar integrity, issue #838 / #839 linkage, and predecessor review
+    chain for franciscanite'
+  outcome: supported
+  summary: 'Canonical EDIT history sidecar history/records/franciscanite/2026-10-24T104500Z-antigravity-001216.yaml
+    links grouped scientific issue https://github.com/CultureBotAI/CMMMech/issues/838
+    (CMM120-F9) and PR #837; future guardrail task cmmmech-infra-0010 is intaken in
+    INFRA_TASKS.md under https://github.com/CultureBotAI/CMMMech/issues/839; predecessor
+    review pairs 20261024T074000Z-franciscanite-round120 and 20261024T100600Z-franciscanite-round120-reassessment
+    are preserved intact.'
+  target_ids:
+  - cmmmech:franciscanite
+  evidence_ids:
+  - owner
+  - edit_history
+  - predecessor_reviews
+  - validation
+findings: []
+actions: []
+summary: 'Franciscanite (IMA:1985-038) passes full primary-source scientific review
+  (scientific_review: true, CMM120-F9, https://github.com/CultureBotAI/CMMMech/issues/838)
+  at final working-tree SHA-256 5658db4be565ace62adfe6d43f0539340126a8638496882bf9b91f842d72a596:
+  Resolved CMM120-F9 (issue #838): replaced dense Source.title with concise bibliographic
+  citation ''Dunn, P. J., Peacor, D. R., Erd, R. C., and Ramik, R. A. (1986) Franciscanite
+  and orebroite, two new minerals from California and Sweden, related to welinite.
+  American Mineralogist, 71, 1522-1526''; clarified that the chemical composition
+  is reported in the text on p. 1523 (rather than in a chemical table), noted that
+  H2O (3.9 wt%) was determined by TGA/EGA as weight loss between 390 and 820 °C, and
+  verified that space group P-3 (refined from P3, R = 0.062) was established by single-crystal
+  Weissenberg/precession and CAD-4 diffractometer data alongside 114.6-mm Gandolfi
+  powder XRD (Table 1).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes at base 2b18e567096cceeb767514d9cec5d99e75688aef.'
+- Record captures mineralogical identity, type chemistry, and crystallography without
+  a reported microbial or abiotic extraction/transformation mechanism in the inspected
+  primary sources.
+notes:
+- 'This actual-time scientific successor review (started_at 2026-10-24T11:09:00Z,
+  accessed_at 2026-10-24T11:11:00Z, finished_at 2026-10-24T11:12:00Z) supersedes 20261024T100600Z-franciscanite-round120-reassessment
+  and 20261024T074000Z-franciscanite-round120 after resolving CMM120-F9 (issue #838),
+  including scientific claim edits in sources[1].title and description.'
+- 'Chronology disclosure: the earlier 2026-10-24T10:02:00Z to 2026-10-24T10:06:00Z
+  timestamps in predecessor bundle 20261024T100600Z-franciscanite-round120-reassessment
+  represented an approximate nominal window assigned when drafting the post-schema-fix
+  reassessment and did not reflect its actual later CLI save time (~10:25-10:29Z);
+  that predecessor bundle is preserved unmodified for provenance integrity.'
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261024T074000Z-franciscanite-round120
+  relationship: initial_round120_scientific_review
+- repository: CultureBotAI/CMMMech
+  review_id: 20261024T100600Z-franciscanite-round120-reassessment
+  relationship: superseded_by_f9_primary_source_scientific_review

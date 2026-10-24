@@ -1,0 +1,283 @@
+# Scientific review of titanowodginite
+
+- Review: 20261024T074000Z-titanowodginite-round120
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-24T07:36:00Z
+- Finished UTC: 2026-10-24T07:40:00Z
+- Reviewer: antigravity / round120-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Titanowodginite passes with limitations: IMA:1984-008 Titanowodginite identity and primary-source mineralogical data are supported without inheriting element-level criticality: Primary species description of titanowodginite (IMA 1984-008) from the Tanco pegmatite, Bernic Lake, Manitoba, Canada. Reports electron microprobe analysis of holotype core A-25 (Table 2: MnO 9.0, FeO 3.1, Fe2O3 0.1, TiO2 9.2, SnO2 7.4, Nb2O5 11.1, Ta2O5 59.9, total 99.7 wt%), monoclinic C2/c unit cell (a = 9.466(2) Å, b = 11.431(1) Å, c = 5.126(1) Å, beta = 90.31(2)°, V = 554.6(1) Å3, Z = 4), Dmeas = 6.86(3) g/cm3, Dcalc = 6.89 g/cm3, Mohs hardness 5.5, and biaxial (+) optical character with n &gt; 2.0.
+
+## Scope And Provenance
+
+Complete frozen working-tree record data/records/titanowodginite.yaml, canonical CREATE history sidecar history/records/titanowodginite/2026-10-24T073000Z-antigravity-00120c.yaml, and primary-source evidence boundaries.
+
+Selection: Targeted structured review of newly curated Round 120 CMM record.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 2b18e567096cceeb767514d9cec5d99e75688aef.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:titanowodginite | data/records/titanowodginite.yaml | maintained | Titanowodginite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:titanowodginite | Checked 662 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:titanowodginite | Checked 981 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Primary-source identity and evidence boundaries for titanowodginite
+
+evidence: supported. Targets: cmmmech:titanowodginite.
+
+IMA:1984-008 Titanowodginite identity and primary-source mineralogical data are supported without inheriting element-level criticality: Primary species description of titanowodginite (IMA 1984-008) from the Tanco pegmatite, Bernic Lake, Manitoba, Canada. Reports electron microprobe analysis of holotype core A-25 (Table 2: MnO 9.0, FeO 3.1, Fe2O3 0.1, TiO2 9.2, SnO2 7.4, Nb2O5 11.1, Ta2O5 59.9, total 99.7 wt%), monoclinic C2/c unit cell (a = 9.466(2) Å, b = 11.431(1) Å, c = 5.126(1) Å, beta = 90.31(2)°, V = 554.6(1) Å3, Z = 4), Dmeas = 6.86(3) g/cm3, Dcalc = 6.89 g/cm3, Mohs hardness 5.5, and biaxial (+) optical character with n &gt; 2.0.
+
+### Provenance, category boundaries, and absence of fabricated claims
+
+provenance: supported. Targets: cmmmech:titanowodginite.
+
+No unmeasured recovery yields, unverified biological interactions, or improper criticality transfers are claimed; CREATE sidecar and inline history match the frozen record.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/titanowodginite.yaml; Complete frozen working-tree record data/records/titanowodginite.yaml | supports | All structured claims, identifiers, relations, and qualification notes match the inspected primary sources. |
+| history | history/records/titanowodginite/2026-10-24T073000Z-antigravity-00120c.yaml; Complete canonical CREATE sidecar history/records/titanowodginite/2026-10-24T073000Z-antigravity-00120c.yaml | supports | Canonical history sidecar and inline history event accurately record actor, UTC timestamp, and scientific scope. |
+| dossier | research/sources/round120-minerals/20261024T073500Z-source-investigation.json; Paired Round 120 source investigation dossier research/sources/round120-minerals/20261024T073500Z-source-investigation.json | context_only | Documents deduplication, primary-source acquisition hashes, and scope boundaries. |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List (244 pages visually inspected) | supports | Establishes official mineral species nomenclature, formula, approval status, and commodity vs mineral category boundary. |
+| primary_study | https://www.rruff.net/doclib/cm/vol30/CM30_633.pdf; Complete full-text visual inspection of CM 30 (1992) 633-638 (6 pp.) and IMA September 2026 Master List p. 218 (IMA:1984-008) | supports | IMA:1984-008 Titanowodginite identity and primary-source mineralogical data are supported without inheriting element-level criticality: Primary species description of titanowodginite (IMA 1984-008) from the Tanco pegmatite, Bernic Lake, Manitoba, Canada. Reports electron microprobe analysis of holotype core A-25 (Table 2: MnO 9.0, FeO 3.1, Fe2O3 0.1, TiO2 9.2, SnO2 7.4, Nb2O5 11.1, Ta2O5 59.9, total 99.7 wt%), monoclinic C2/c unit cell (a = 9.466(2) Å, b = 11.431(1) Å, c = 5.126(1) Å, beta = 90.31(2)°, V = 554.6(1) Å3, Z = 4), Dmeas = 6.86(3) g/cm3, Dcalc = 6.89 g/cm3, Mohs hardness 5.5, and biaxial (+) optical character with n &gt; 2.0. |
+| validation | data/records/titanowodginite.yaml; Strict schema and history validation across all 662 records and 981 history sidecars | supports | Checked 662 record(s), 0 failed; Checked 981 history record(s), 0 error(s). |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes at base 2b18e567096cceeb767514d9cec5d99e75688aef.
+- No biological processing or pilot-scale extraction yield is reported in the inspected primary sources; unstated process parameters remain null.
+- All primary-source PDFs and authority documents were visually inspected in full before record creation.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261024T074000Z-titanowodginite-round120
+kind: record
+repository: CultureBotAI/CMMMech
+title: Scientific review of titanowodginite
+started_at: '2026-10-24T07:36:00Z'
+finished_at: '2026-10-24T07:40:00Z'
+reviewer:
+  identity: antigravity / round120-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/cmmmech-add-record/SKILL.md;
+    full primary-source PDFs, official authorities (IMA September 2026 Master List),
+    figures, tables, and record/history/schema invariants were verified page-by-page
+    against the frozen working-tree record.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 2b18e567096cceeb767514d9cec5d99e75688aef
+  state: working_tree
+  inputs:
+  - path: data/records/titanowodginite.yaml
+    sha256: 45be3f42a687dd657ecee7a5a7c2e2e6e339aea12414ed1fc4a3b55f4c3b02e9
+    role: target
+  - path: history/records/titanowodginite/2026-10-24T073000Z-antigravity-00120c.yaml
+    sha256: 648fe2776101a91802b6fb60ddd62177047964d45d660eec6e22616ec95b6a2d
+    role: context
+  - path: research/sources/round120-minerals/20261024T073500Z-source-investigation.json
+    sha256: bb159c4337de6f01565d04f1e0690b34aec0ed43a722b7004d95515f41c6f0cc
+    role: context
+  - path: research/sources/round120-minerals/20261024T073500Z-source-investigation.md
+    sha256: 4be24aeb244eccde8a9fb1335608d162ce50544319b3480b1e8acd0cf171cacf
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:titanowodginite
+  path: data/records/titanowodginite.yaml
+  label: Titanowodginite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/titanowodginite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/titanowodginite/2026-10-24T073000Z-antigravity-00120c.yaml
+    role: canonical_history
+scope:
+  description: Complete frozen working-tree record data/records/titanowodginite.yaml,
+    canonical CREATE history sidecar history/records/titanowodginite/2026-10-24T073000Z-antigravity-00120c.yaml,
+    and primary-source evidence boundaries.
+  selection: Targeted structured review of newly curated Round 120 CMM record.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:titanowodginite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/titanowodginite.yaml
+  locator: Complete frozen working-tree record data/records/titanowodginite.yaml
+  accessed_at: '2026-10-24T07:40:00Z'
+  support: supports
+  summary: All structured claims, identifiers, relations, and qualification notes
+    match the inspected primary sources.
+  snapshot_sha256: 45be3f42a687dd657ecee7a5a7c2e2e6e339aea12414ed1fc4a3b55f4c3b02e9
+- evidence_id: history
+  kind: record_content
+  reference: history/records/titanowodginite/2026-10-24T073000Z-antigravity-00120c.yaml
+  locator: Complete canonical CREATE sidecar history/records/titanowodginite/2026-10-24T073000Z-antigravity-00120c.yaml
+  accessed_at: '2026-10-24T07:40:00Z'
+  support: supports
+  summary: Canonical history sidecar and inline history event accurately record actor,
+    UTC timestamp, and scientific scope.
+  snapshot_sha256: 648fe2776101a91802b6fb60ddd62177047964d45d660eec6e22616ec95b6a2d
+- evidence_id: dossier
+  kind: record_content
+  reference: research/sources/round120-minerals/20261024T073500Z-source-investigation.json
+  locator: Paired Round 120 source investigation dossier research/sources/round120-minerals/20261024T073500Z-source-investigation.json
+  accessed_at: '2026-10-24T07:40:00Z'
+  support: context_only
+  summary: Documents deduplication, primary-source acquisition hashes, and scope boundaries.
+  snapshot_sha256: bb159c4337de6f01565d04f1e0690b34aec0ed43a722b7004d95515f41c6f0cc
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List (244 pages visually inspected)
+  accessed_at: '2026-10-24T07:40:00Z'
+  support: supports
+  summary: Establishes official mineral species nomenclature, formula, approval status,
+    and commodity vs mineral category boundary.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: primary_study
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/cm/vol30/CM30_633.pdf
+  locator: Complete full-text visual inspection of CM 30 (1992) 633-638 (6 pp.) and
+    IMA September 2026 Master List p. 218 (IMA:1984-008)
+  accessed_at: '2026-10-24T07:40:00Z'
+  support: supports
+  summary: 'IMA:1984-008 Titanowodginite identity and primary-source mineralogical
+    data are supported without inheriting element-level criticality: Primary species
+    description of titanowodginite (IMA 1984-008) from the Tanco pegmatite, Bernic
+    Lake, Manitoba, Canada. Reports electron microprobe analysis of holotype core
+    A-25 (Table 2: MnO 9.0, FeO 3.1, Fe2O3 0.1, TiO2 9.2, SnO2 7.4, Nb2O5 11.1, Ta2O5
+    59.9, total 99.7 wt%), monoclinic C2/c unit cell (a = 9.466(2) Å, b = 11.431(1)
+    Å, c = 5.126(1) Å, beta = 90.31(2)°, V = 554.6(1) Å3, Z = 4), Dmeas = 6.86(3)
+    g/cm3, Dcalc = 6.89 g/cm3, Mohs hardness 5.5, and biaxial (+) optical character
+    with n > 2.0.'
+  snapshot_sha256: ad15ff0ece14a0a62aa8bd8f2e915e092476717f3e6e26a5f0640d6ad3e84463
+- evidence_id: validation
+  kind: validation
+  reference: data/records/titanowodginite.yaml
+  locator: Strict schema and history validation across all 662 records and 981 history
+    sidecars
+  accessed_at: '2026-10-24T07:40:00Z'
+  support: supports
+  summary: Checked 662 record(s), 0 failed; Checked 981 history record(s), 0 error(s).
+  snapshot_sha256: 45be3f42a687dd657ecee7a5a7c2e2e6e339aea12414ed1fc4a3b55f4c3b02e9
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech.cli validate --require-records
+  status: passed
+  required: true
+  summary: Checked 662 record(s); 0 failed.
+  target_ids:
+  - cmmmech:titanowodginite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech.cli validate-history --base
+    2b18e567096cceeb767514d9cec5d99e75688aef
+  status: passed
+  required: true
+  summary: Checked 981 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:titanowodginite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_evidence
+  area: evidence
+  topic: Primary-source identity and evidence boundaries for titanowodginite
+  outcome: supported
+  summary: 'IMA:1984-008 Titanowodginite identity and primary-source mineralogical
+    data are supported without inheriting element-level criticality: Primary species
+    description of titanowodginite (IMA 1984-008) from the Tanco pegmatite, Bernic
+    Lake, Manitoba, Canada. Reports electron microprobe analysis of holotype core
+    A-25 (Table 2: MnO 9.0, FeO 3.1, Fe2O3 0.1, TiO2 9.2, SnO2 7.4, Nb2O5 11.1, Ta2O5
+    59.9, total 99.7 wt%), monoclinic C2/c unit cell (a = 9.466(2) Å, b = 11.431(1)
+    Å, c = 5.126(1) Å, beta = 90.31(2)°, V = 554.6(1) Å3, Z = 4), Dmeas = 6.86(3)
+    g/cm3, Dcalc = 6.89 g/cm3, Mohs hardness 5.5, and biaxial (+) optical character
+    with n > 2.0.'
+  target_ids:
+  - cmmmech:titanowodginite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - primary_study
+- assessment_id: scope_and_provenance
+  area: provenance
+  topic: Provenance, category boundaries, and absence of fabricated claims
+  outcome: supported
+  summary: No unmeasured recovery yields, unverified biological interactions, or improper
+    criticality transfers are claimed; CREATE sidecar and inline history match the
+    frozen record.
+  target_ids:
+  - cmmmech:titanowodginite
+  evidence_ids:
+  - owner
+  - history
+  - dossier
+  - validation
+findings: []
+actions: []
+summary: 'Titanowodginite passes with limitations: IMA:1984-008 Titanowodginite identity
+  and primary-source mineralogical data are supported without inheriting element-level
+  criticality: Primary species description of titanowodginite (IMA 1984-008) from
+  the Tanco pegmatite, Bernic Lake, Manitoba, Canada. Reports electron microprobe
+  analysis of holotype core A-25 (Table 2: MnO 9.0, FeO 3.1, Fe2O3 0.1, TiO2 9.2,
+  SnO2 7.4, Nb2O5 11.1, Ta2O5 59.9, total 99.7 wt%), monoclinic C2/c unit cell (a
+  = 9.466(2) Å, b = 11.431(1) Å, c = 5.126(1) Å, beta = 90.31(2)°, V = 554.6(1) Å3,
+  Z = 4), Dmeas = 6.86(3) g/cm3, Dcalc = 6.89 g/cm3, Mohs hardness 5.5, and biaxial
+  (+) optical character with n > 2.0.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes at base 2b18e567096cceeb767514d9cec5d99e75688aef.'
+- No biological processing or pilot-scale extraction yield is reported in the inspected
+  primary sources; unstated process parameters remain null.
+notes:
+- All primary-source PDFs and authority documents were visually inspected in full
+  before record creation.
+related_reviews: []
+```

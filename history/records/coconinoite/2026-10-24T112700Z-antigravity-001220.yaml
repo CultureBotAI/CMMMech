@@ -1,0 +1,41 @@
+history_version: 1
+target:
+  kind: record
+  slug: coconinoite
+  path: data/records/coconinoite.yaml
+session:
+  id: 2026-10-24T112700Z-antigravity-001220
+  timestamp: '2026-10-24T11:27:00Z'
+  actors:
+    - name: antigravity
+      type: ai_agent
+      model: antigravity
+      agent_tool: antigravity-cli
+links:
+  issues:
+    - https://github.com/CultureBotAI/CMMMech/issues/838
+  prs:
+    - https://github.com/CultureBotAI/CMMMech/pull/837
+events:
+  - type: EDIT
+    outcome: changed
+    summary: >-
+      Applied reviewed conservative correction for CMM120-F1 (issue #838):
+      corrected Table 2 locator to p. 656, unheated optical uncertainty to
+      ±0.005 (Table 1, p. 655), and restricted reversible dehydration claim to
+      the 135 °C 2.5 h EVC-6 experiment.
+    details: >-
+      Applied the independently reviewed conservative record correction for
+      CMM120-F1 under issue #838 (Young, Weeks, and Meyrowitz 1966,
+      AM51_651.pdf): corrected the printed Table 2 page locator to p. 656,
+      updated unheated refractive indices to alpha = 1.550(5), beta =
+      1.586(5), gamma = 1.590(5) (Table 1, p. 655 ±0.005 uncertainty), and
+      restricted the reversible dehydration statement in
+      mechanisms[0].description and mechanisms[0].evidence[0].explanation to
+      the 2.5 h 135 °C treatment on sample EVC-6 without generalizing
+      reversibility across 135–215 °C.
+    sections:
+      - description
+      - mechanisms
+      - curation_history
+      - history_refs

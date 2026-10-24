@@ -1,0 +1,38 @@
+history_version: 1
+target:
+  kind: record
+  slug: calciohilairite
+  path: data/records/calciohilairite.yaml
+session:
+  id: 2026-10-24T112700Z-antigravity-001225
+  timestamp: '2026-10-24T11:27:00Z'
+  actors:
+    - name: antigravity
+      type: ai_agent
+      model: antigravity
+      agent_tool: antigravity-cli
+links:
+  issues:
+    - https://github.com/CultureBotAI/CMMMech/issues/838
+  prs:
+    - https://github.com/CultureBotAI/CMMMech/pull/837
+events:
+  - type: EDIT
+    outcome: changed
+    summary: >-
+      Applied reviewed conservative correction for CMM120-F6 (issue #838):
+      omitted uncited Z / subcell Z values from description while retaining
+      the verified Table 2 ranges and powder/single-crystal/subcell
+      dimensions.
+    details: >-
+      Applied the independently reviewed conservative record correction for
+      CMM120-F6 under issue #838 (Boggs 1988, AM73_1191.pdf): omitted uncited
+      Z = 6 and subcell Z = 3 values from description while retaining the
+      verified Table 2 (p. 1193) 6-analysis ranges, probable space group R32,
+      powder-refined cell (a = 20.870(4) Å, c = 16.002(4) Å), unaltered
+      single-crystal cell (a = 20.887(4) Å, c = 15.914(3) Å), and subcell
+      dimensions (a = 10.415(4) Å, c = 16.01(3) Å).
+    sections:
+      - description
+      - curation_history
+      - history_refs

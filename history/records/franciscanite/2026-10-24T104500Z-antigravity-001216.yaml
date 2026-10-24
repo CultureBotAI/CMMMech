@@ -1,0 +1,43 @@
+history_version: 1
+target:
+  kind: record
+  slug: franciscanite
+  path: data/records/franciscanite.yaml
+session:
+  id: 2026-10-24T104500Z-antigravity-001216
+  timestamp: '2026-10-24T10:45:00Z'
+  actors:
+    - name: antigravity
+      type: ai_agent
+      model: antigravity
+      agent_tool: antigravity-cli
+links:
+  issues:
+    - https://github.com/CultureBotAI/CMMMech/issues/838
+  prs:
+    - https://github.com/CultureBotAI/CMMMech/pull/837
+events:
+  - type: EDIT
+    outcome: changed
+    summary: >-
+      Resolved CMM120-F9 (issue #838) by removing the unsupported franciscanite
+      TGA claim, labeling Table 2 H2O = 3.4 wt% as calculated from the Si:H
+      ratio of type welinite with exact Table 2 row labels (Fe2O3 0.0, As2O5
+      0.0), correcting space group P3 (inferred from possible P3 or P1), and
+      simplifying sources[1].title to a concise bibliographic citation.
+    details: >-
+      Re-inspected Dunn et al. (1986) American Mineralogist 71:1522-1526
+      (AM71_1522.pdf, pp. 1522–1525, Table 2) to resolve finding CMM120-F9 under
+      issue #838: removed the unsupported franciscanite TGA weight-loss claim
+      (3.67 wt% at 340–570 °C; thermal analyses in the paper were on welinite and
+      impure örebroite while paucity of franciscanite precluded direct water
+      measurement), labeled Table 2 H2O = 3.4 wt% as calculated from the Si:H
+      ratio of type welinite with exact Table 2 row labels Fe2O3 = 0.0 and As2O5
+      = 0.0, corrected the space-group description to P3 inferred from possible
+      P3 or P1 (not P-3 or P3), and simplified sources[1].title to a concise
+      bibliographic citation.
+    sections:
+      - description
+      - sources
+      - curation_history
+      - history_refs

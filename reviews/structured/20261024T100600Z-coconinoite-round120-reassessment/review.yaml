@@ -1,0 +1,222 @@
+schema_version: 1.0.0
+review_id: 20261024T100600Z-coconinoite-round120-reassessment
+kind: record
+repository: CultureBotAI/CMMMech
+title: Post-schema-fix scientific and mechanism reassessment of coconinoite
+started_at: '2026-10-24T10:02:00Z'
+finished_at: '2026-10-24T10:06:00Z'
+reviewer:
+  identity: antigravity / round120-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    following LinkML Source and Mechanism schema edits to data/records/coconinoite.yaml;
+    rechecked updated mechanisms[0] fields (process, microbial, description, context,
+    evidence) directly against the primary source PDF (AM 51 (1966) 651-663, pp. 654-657,
+    663, Tables 1, 2, 6, Figs. 2-3 (oven dehydration, Chevenard TGA 22-982 °C, and
+    Eberhard DTA)) and verified species-level field invariance against prior review
+    20261024T074000Z-coconinoite-round120 (pre-edit SHA-256 a09f707bf5947e8f1cb63ef44a7f729f2e23008565edb7d3ffbd4e2ebcf6e1c6).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 2b18e567096cceeb767514d9cec5d99e75688aef
+  state: working_tree
+  inputs:
+  - path: data/records/coconinoite.yaml
+    sha256: 51670d758843d5fc1042a258edb417e4c8863329ad694b03f6a07e271f56a778
+    role: target
+  - path: history/records/coconinoite/2026-10-24T073000Z-antigravity-001204.yaml
+    sha256: 89b4c5515299ee2a99c0afea23b32ba717405edea9d22f8a16f7b86a9db17f5a
+    role: context
+  - path: research/sources/round120-minerals/20261024T073500Z-source-investigation.json
+    sha256: bb159c4337de6f01565d04f1e0690b34aec0ed43a722b7004d95515f41c6f0cc
+    role: context
+  - path: research/sources/round120-minerals/20261024T073500Z-source-investigation.md
+    sha256: 4be24aeb244eccde8a9fb1335608d162ce50544319b3480b1e8acd0cf171cacf
+    role: context
+  - path: reviews/structured/20261024T074000Z-coconinoite-round120/review.yaml
+    sha256: b9970826166ad1f07ce9d140dfe85217f634aac723477980fa85c86a44e8e714
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:coconinoite
+  path: data/records/coconinoite.yaml
+  label: Coconinoite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/coconinoite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/coconinoite/2026-10-24T073000Z-antigravity-001204.yaml
+    role: canonical_history
+scope:
+  description: Scoped scientific reassessment of data/records/coconinoite.yaml (SHA-256
+    51670d758843d5fc1042a258edb417e4c8863329ad694b03f6a07e271f56a778) following LinkML
+    Mechanism and Source schema updates, linked to prior scientific review 20261024T074000Z-coconinoite-round120
+    (pre-edit target SHA-256 a09f707bf5947e8f1cb63ef44a7f729f2e23008565edb7d3ffbd4e2ebcf6e1c6).
+  selection: Targeted post-fix scientific reassessment of record with updated mechanisms[0]
+    and sources fields.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:coconinoite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/coconinoite.yaml
+  locator: Complete post-fix working-tree record data/records/coconinoite.yaml
+  accessed_at: '2026-10-24T10:06:00Z'
+  support: supports
+  summary: Post-fix record data/records/coconinoite.yaml (SHA-256 51670d758843d5fc1042a258edb417e4c8863329ad694b03f6a07e271f56a778)
+    conforms to LinkML Source and Mechanism schemas with unchanged species-level identity
+    fields and primary-source-verified abiotic mechanism fields.
+  snapshot_sha256: 51670d758843d5fc1042a258edb417e4c8863329ad694b03f6a07e271f56a778
+- evidence_id: prior_review
+  kind: record_content
+  reference: reviews/structured/20261024T074000Z-coconinoite-round120/review.yaml
+  locator: Restored initial scientific review reviews/structured/20261024T074000Z-coconinoite-round120/review.yaml
+    (target SHA-256 a09f707bf5947e8f1cb63ef44a7f729f2e23008565edb7d3ffbd4e2ebcf6e1c6)
+  accessed_at: '2026-10-24T10:06:00Z'
+  support: supports
+  summary: Prior scientific review 20261024T074000Z-coconinoite-round120 (review.yaml
+    SHA-256 b9970826166ad1f07ce9d140dfe85217f634aac723477980fa85c86a44e8e714) assessed
+    pre-edit record SHA-256 a09f707bf5947e8f1cb63ef44a7f729f2e23008565edb7d3ffbd4e2ebcf6e1c6;
+    id, name, material_kind, description, identifiers, relations, history_refs, and
+    curation_history are unchanged.
+  snapshot_sha256: b9970826166ad1f07ce9d140dfe85217f634aac723477980fa85c86a44e8e714
+- evidence_id: primary_study
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/am/vol51/AM51_651.pdf
+  locator: AM 51 (1966) 651-663, pp. 654-657, 663, Tables 1, 2, 6, Figs. 2-3 (oven
+    dehydration, Chevenard TGA 22-982 °C, and Eberhard DTA)
+  accessed_at: '2026-10-24T10:05:00Z'
+  support: supports
+  summary: 'Rechecked mechanisms[0] (abiotic_tga_dta_dehydration_desulfation: process=other,
+    microbial=false, description, context, and evidence) against Young, Weeks & Meyrowitz
+    (1966) pp. 654-657, 663: 135 °C oven heating for 2.5 h reversibly dehydrates coconinoite
+    (raising alpha=1.605, beta=1.630, gamma=1.645, 2V=75°15" and contracting basal
+    d-spacing from 11.05 Å to 8.49 Å, 8.30 Å at 174 °C, and 8.18 Å at 215 °C), while
+    Chevenard TGA (22-982 °C) and Eberhard DTA show water loss up to 450 °C (double
+    endotherm at 150-250 °C; 23.4-23.7 wt% H2O) and 5.3 wt% SO3 loss at 600-850 °C
+    (endotherm near 800 °C; 28.7 wt% total weight loss).'
+  snapshot_sha256: a55024f1af16d73d630d90190174636ecdcb6b76be1f8a3cbe32a8b15860e773
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List (244 pages visually inspected)
+  accessed_at: '2026-10-24T10:05:00Z'
+  support: supports
+  summary: Confirms official mineral species identity, formula, and IMA approval tag
+    (IMA:1965-003) for Coconinoite.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: history
+  kind: record_content
+  reference: history/records/coconinoite/2026-10-24T073000Z-antigravity-001204.yaml
+  locator: Canonical CREATE sidecar history/records/coconinoite/2026-10-24T073000Z-antigravity-001204.yaml
+  accessed_at: '2026-10-24T10:06:00Z'
+  support: supports
+  summary: Canonical CREATE history sidecar is unchanged and passes validate-history
+    against the Git base.
+  snapshot_sha256: 89b4c5515299ee2a99c0afea23b32ba717405edea9d22f8a16f7b86a9db17f5a
+- evidence_id: validation
+  kind: validation
+  reference: data/records/coconinoite.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history
+  accessed_at: '2026-10-24T10:06:00Z'
+  support: supports
+  summary: Checked 662 record(s); 0 failed. Checked 981 history record(s); 0 error(s).
+  snapshot_sha256: 51670d758843d5fc1042a258edb417e4c8863329ad694b03f6a07e271f56a778
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 662 record(s); 0 failed.
+  target_ids:
+  - cmmmech:coconinoite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base 2b18e567096cceeb767514d9cec5d99e75688aef
+  status: passed
+  required: true
+  summary: Checked 981 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:coconinoite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: mechanism_and_evidence_reassessment
+  area: evidence
+  topic: Post-fix primary-source recheck of abiotic mechanism and identity fields
+    for coconinoite
+  outcome: supported
+  summary: 'Rechecked mechanisms[0] (abiotic_tga_dta_dehydration_desulfation: process=other,
+    microbial=false, description, context, and evidence) against Young, Weeks & Meyrowitz
+    (1966) pp. 654-657, 663: 135 °C oven heating for 2.5 h reversibly dehydrates coconinoite
+    (raising alpha=1.605, beta=1.630, gamma=1.645, 2V=75°15" and contracting basal
+    d-spacing from 11.05 Å to 8.49 Å, 8.30 Å at 174 °C, and 8.18 Å at 215 °C), while
+    Chevenard TGA (22-982 °C) and Eberhard DTA show water loss up to 450 °C (double
+    endotherm at 150-250 °C; 23.4-23.7 wt% H2O) and 5.3 wt% SO3 loss at 600-850 °C
+    (endotherm near 800 °C; 28.7 wt% total weight loss).'
+  target_ids:
+  - cmmmech:coconinoite
+  evidence_ids:
+  - owner
+  - prior_review
+  - primary_study
+  - ima_authority
+- assessment_id: scope_and_provenance
+  area: provenance
+  topic: LinkML Mechanism/Source schema compliance and provenance integrity
+  outcome: supported
+  summary: Species-level fields (id, name, material_kind, description, identifiers,
+    history_refs, curation_history) match prior review 20261024T074000Z-coconinoite-round120
+    (pre-edit SHA-256 a09f707bf5947e8f1cb63ef44a7f729f2e23008565edb7d3ffbd4e2ebcf6e1c6);
+    updated mechanisms[0] and sources fields pass strict LinkML validation.
+  target_ids:
+  - cmmmech:coconinoite
+  evidence_ids:
+  - owner
+  - prior_review
+  - history
+  - validation
+findings: []
+actions: []
+summary: 'Coconinoite (IMA:1965-003) passes post-schema-fix scientific reassessment
+  (scientific_review: true, linked to 20261024T074000Z-coconinoite-round120): Rechecked
+  mechanisms[0] (abiotic_tga_dta_dehydration_desulfation: process=other, microbial=false,
+  description, context, and evidence) against Young, Weeks & Meyrowitz (1966) pp.
+  654-657, 663: 135 °C oven heating for 2.5 h reversibly dehydrates coconinoite (raising
+  alpha=1.605, beta=1.630, gamma=1.645, 2V=75°15" and contracting basal d-spacing
+  from 11.05 Å to 8.49 Å, 8.30 Å at 174 °C, and 8.18 Å at 215 °C), while Chevenard
+  TGA (22-982 °C) and Eberhard DTA show water loss up to 450 °C (double endotherm
+  at 150-250 °C; 23.4-23.7 wt% H2O) and 5.3 wt% SO3 loss at 600-850 °C (endotherm
+  near 800 °C; 28.7 wt% total weight loss).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes at base 2b18e567096cceeb767514d9cec5d99e75688aef.'
+- 'Reported mechanism is strictly abiotic laboratory thermal/topotactic behavior (microbial:
+  false); no biological processing or industrial recovery yield is reported in the
+  primary source.'
+notes:
+- Prior scientific review 20261024T074000Z-coconinoite-round120 was restored to its
+  exact 092942 SHA-256 (b9970826166ad1f07ce9d140dfe85217f634aac723477980fa85c86a44e8e714)
+  before appending this reassessment bundle.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261024T074000Z-coconinoite-round120
+  relationship: post_schema_fix_scientific_reassessment

@@ -1,0 +1,45 @@
+history_version: 1
+target:
+  kind: record
+  slug: petscheckite
+  path: data/records/petscheckite.yaml
+session:
+  id: 2026-10-24T104500Z-antigravity-00121b
+  timestamp: '2026-10-24T10:45:00Z'
+  actors:
+    - name: antigravity
+      type: ai_agent
+      model: antigravity
+      agent_tool: antigravity-cli
+links:
+  issues:
+    - https://github.com/CultureBotAI/CMMMech/issues/838
+  prs:
+    - https://github.com/CultureBotAI/CMMMech/pull/837
+events:
+  - type: EDIT
+    outcome: changed
+    summary: >-
+      Resolved CMM120-F3 (issue #838) by correcting the shifted Table 1 chemical
+      analysis (combined Nb2O5 + Ta2O5 = 45.99, Fe2O3 10.01, FeO 0.10, MnO 1.32,
+      ZrO2 0.42, Al2O3 0.71, CaO 0.49, K2O 0.05, total 99.59 wt% on a ~1:1
+      heated oxy/hydroxy mixture), qualifying the general 5.0-to-5.5 specific
+      gravity increase and p. 945 balanced reaction stoichiometry, and
+      simplifying sources[1].title to a concise bibliographic citation.
+    details: >-
+      Re-inspected Mücke and Strunz (1978) American Mineralogist 63:941-946
+      (AM63_941.pdf, pp. 941–945, Tables 1, 3–4, 6) to resolve finding CMM120-F3
+      under issue #838: corrected the shifted Table 1 chemical analysis by W.
+      Napiontek (UO2 40.5, combined Nb2O5 + Ta2O5 = 45.99, Fe2O3 10.01, FeO
+      0.10, MnO 1.32, ZrO2 0.42, Al2O3 0.71, CaO 0.49, K2O 0.05, total 99.59
+      wt%, identified on p. 944 as heated oxy- and hydroxy-petscheckite in ~1:1
+      proportion), qualified the 5.0-to-5.5 specific gravity increase as
+      reported for petscheckite generally and + 3 H2O as belonging to the
+      6-formula-unit balanced equation printed on p. 945, and simplified
+      sources[1].title to a concise bibliographic citation.
+    sections:
+      - description
+      - sources
+      - mechanisms
+      - curation_history
+      - history_refs
