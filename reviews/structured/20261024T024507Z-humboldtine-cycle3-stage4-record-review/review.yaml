@@ -1,0 +1,188 @@
+schema_version: 1.0.0
+review_id: 20261024T024507Z-humboldtine-cycle3-stage4-record-review
+title: 'Cycle 3 Stage 4 record review: cmmmech:humboldtine (Humboldtine)'
+repository: CultureBotAI/CMMMech
+kind: record
+started_at: '2026-10-24T02:42:00Z'
+finished_at: '2026-10-24T02:45:07Z'
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'Reviewed data/records/humboldtine.yaml (cmmmech:humboldtine) at commit 855e0eba1fa9b8a4a975b7155ec013414e4d437e.
+  Humboldtine (Fe(C2O4)·2H2O, grandfathered IMA mineral species) carries accurate
+  mineral identity, two primary-source fungal biomineralization mechanisms (niger_associated_iron_oxalate_formation
+  from Zelenskaya et al. 2021 DOI:10.3390/cryst11121591 and brown_rot_iron_oxalate_comparison
+  from Vlasov et al. 2023 DOI:10.3390/cryst13030432), two connected causal graphs
+  (niger_associated_iron_oxalate_formation_graph and brown_rot_iron_oxalate_comparison_graph
+  using predicate: dissolves), and 4 live-verified UniProtKB groundings (UniProtKB:A0A254TZW7
+  CEXA_ASPNG, UniProtKB:A0A5M3MRX5 A0A5M3MRX5_CONPW, UniProtKB:A0A5M3MJR8 A0A5M3MJR8_CONPW,
+  and UniProtKB:F8QHM8 F8QHM8_SERL3). However, across the 6 Aspergillus niger strain
+  Ch 4/07 oxalate biomineralization mineral records citing GenBank ITS accession KF768341.1
+  (https://www.ncbi.nlm.nih.gov/nuccore/KF768341.1), data/records/humboldtine.yaml
+  keys this source under id: genbank_niger (line 22) and source_ref: genbank_niger
+  (line 84), whereas all 5 sibling records (hopeite, katsarosite, moolooite, wheatleyite,
+  and whewellite) standardize on genbank_ch407. Recorded open minor finding cmmmech-cycle3-stage4-finding-0003
+  for Stage 5 remediation.'
+reviewer:
+  identity: antigravity / cmmmech-cycle3-stage4-record-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of Cycle 3 Stage 4 record_review
+    (.claude/skills/review-yaml-record/SKILL.md) against frozen commit 855e0eba1fa9b8a4a975b7155ec013414e4d437e.
+source:
+  git_revision: 855e0eba1fa9b8a4a975b7155ec013414e4d437e
+  state: git_commit
+  inputs:
+  - path: data/records/humboldtine.yaml
+    sha256: 120fdb51b0729eacb1fa76fcfdd0e4e53ff124b265cc2f8dfd105bfcb372222c
+    role: target
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+  - path: src/cmmmech/validation.py
+    sha256: 63ff33d51b753dd715e6bd1c3e5f60a99e4fcb41b3aee68d536306a862d922e2
+    role: context
+scope:
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:humboldtine
+  selection: data/records/humboldtine.yaml at 855e0eba1fa9b8a4a975b7155ec013414e4d437e
+  description: Single-record Cycle 3 Stage 4 audit of cmmmech:humboldtine.
+targets:
+- target_id: cmmmech:humboldtine
+  path: data/records/humboldtine.yaml
+  kind: maintained
+  label: Humboldtine
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/humboldtine.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+checks:
+- check_id: cmmmech-validate-humboldtine
+  name: cmmmech validate humboldtine.yaml
+  status: passed
+  required: true
+  command: .venv/bin/cmmmech validate data/records/humboldtine.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:humboldtine
+  evidence_ids:
+  - ev-humboldtine-file
+  summary: data/records/humboldtine.yaml passes LinkML structural and semantic validation.
+assessments:
+- assessment_id: assess-humboldtine-identity-mechanisms-and-proteins
+  topic: Humboldtine formula (Fe(C2O4)·2H2O), fungal biomineralization mechanisms,
+    and UniProtKB groundings
+  area: identity
+  outcome: supported
+  target_ids:
+  - cmmmech:humboldtine
+  evidence_ids:
+  - ev-humboldtine-file
+  - ev-humboldtine-zelenskaya2021
+  - ev-humboldtine-vlasov2023
+  summary: Humboldtine mineral identity, Aspergillus niger Ch 4/07 and brown-rot basidiomycete
+    biomineralization mechanisms, causal graphs, and all 4 UniProtKB protein examples
+    (UniProtKB:A0A254TZW7, UniProtKB:A0A5M3MRX5, UniProtKB:A0A5M3MJR8, UniProtKB:F8QHM8)
+    are accurately supported by primary sources.
+- assessment_id: assess-humboldtine-ch407-source-id
+  topic: Canonical source key (genbank_ch407) for Aspergillus niger strain Ch 4/07
+    ITS accession KF768341.1
+  area: consistency
+  outcome: concern
+  target_ids:
+  - cmmmech:humboldtine
+  evidence_ids:
+  - ev-humboldtine-file
+  summary: 'data/records/humboldtine.yaml keys GenBank accession KF768341.1 (https://www.ncbi.nlm.nih.gov/nuccore/KF768341.1)
+    under sources[4].id: genbank_niger (line 22) and mechanisms[0].evidence[3].source_ref:
+    genbank_niger (line 84) instead of canonical genbank_ch407 used across hopeite,
+    katsarosite, moolooite, wheatleyite, and whewellite.'
+findings:
+- finding_id: cmmmech-cycle3-stage4-finding-0003
+  issue_key: cmmmech.mineral.noncanonical-ch407-its-source-id
+  title: cmmmech:humboldtine keys Aspergillus niger Ch 4/07 ITS accession KF768341.1
+    under genbank_niger instead of genbank_ch407
+  category: consistency
+  severity: minor
+  certainty: confirmed
+  status: open
+  target_ids:
+  - cmmmech:humboldtine
+  evidence_ids:
+  - ev-humboldtine-file
+  description: 'Across the 6 mineral records in data/records/*.yaml citing GenBank
+    ITS accession KF768341.1 (https://www.ncbi.nlm.nih.gov/nuccore/KF768341.1) for
+    Aspergillus niger strain Ch 4/07, 5 records (cmmmech:hopeite, cmmmech:katsarosite,
+    cmmmech:moolooite, cmmmech:wheatleyite, and cmmmech:whewellite) standardize on
+    source id genbank_ch407, whereas data/records/humboldtine.yaml keys the identical
+    accession URL under sources[4].id: genbank_niger (line 22) and mechanisms[0].evidence[3].source_ref:
+    genbank_niger (line 84).'
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/humboldtine.yaml
+    role: maintained_record
+actions:
+- action_id: action-normalize-humboldtine-ch407-source-id
+  finding_ids:
+  - cmmmech-cycle3-stage4-finding-0003
+  target_ids:
+  - cmmmech:humboldtine
+  description: Normalize sources[4].id and mechanisms[0].evidence[3].source_ref in
+    data/records/humboldtine.yaml from genbank_niger to genbank_ch407 and record an
+    EDIT history sidecar during Stage 5.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/humboldtine.yaml
+    role: maintained_record
+  acceptance_checks:
+  - 'In data/records/humboldtine.yaml, GenBank accession KF768341.1 is keyed under
+    id: genbank_ch407 in sources and referenced as source_ref: genbank_ch407 in mechanisms[0].evidence,
+    matching hopeite, katsarosite, moolooite, wheatleyite, and whewellite.'
+  - A matching EDIT history sidecar exists in history/records/humboldtine/ and passes
+    cmmmech validate --require-records and cmmmech validate-history --base main.
+evidence:
+- evidence_id: ev-humboldtine-file
+  kind: record_content
+  reference: data/records/humboldtine.yaml
+  locator: lines 1-473
+  accessed_at: '2026-10-24T02:45:07Z'
+  support: supports
+  summary: 'Inspected data/records/humboldtine.yaml: 2 mechanisms, 2 causal graphs,
+    and 4 UniProtKB groundings pass all structural and scientific checks, while sources[4].id
+    (line 22) and mechanisms[0].evidence[3].source_ref (line 84) use genbank_niger
+    instead of genbank_ch407.'
+- evidence_id: ev-humboldtine-zelenskaya2021
+  kind: primary_source
+  reference: DOI:10.3390/cryst11121591
+  locator: Zelenskaya et al. 2021 Crystals 11(12):1591
+  accessed_at: '2026-10-24T02:45:07Z'
+  support: supports
+  summary: Supports PXRD- and SEM/EDX-confirmed humboldtine crystallization by Aspergillus
+    niger strain Ch 4/07 (ITS KF768341.1) on Dalnegorsk siderite and Pyrrhotite Gorge
+    altered pyrrhotite rocks.
+- evidence_id: ev-humboldtine-vlasov2023
+  kind: primary_source
+  reference: DOI:10.3390/cryst13030432
+  locator: Vlasov et al. 2023 Crystals 13(3):432
+  accessed_at: '2026-10-24T02:45:07Z'
+  support: supports
+  summary: Supports organism- and feed-dependent humboldtine crystallization across
+    brown-rot basidiomycetes (Serpula himantioides, Coniophora puteana, Amyloporia
+    xantha, and comparator Serpula lacrymans).
+limitations:
+- data/records/humboldtine.yaml keys GenBank accession KF768341.1 under genbank_niger
+  instead of canonical genbank_ch407 used across sibling Aspergillus niger Ch 4/07
+  mineral records (tracked as open finding cmmmech-cycle3-stage4-finding-0003 for
+  Stage 5 remediation).
+notes: []
