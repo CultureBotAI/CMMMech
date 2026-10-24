@@ -1,0 +1,393 @@
+{
+  "prepared_at": "2026-10-20T03:43:15Z",
+  "researcher": "codex / GPT-6 / codex; agent /root/investigate_134",
+  "issue": 290,
+  "issue_url": "https://github.com/CultureBotAI/CMMMech/issues/290",
+  "status": "source-only deferral; named evidence gaps remain open; not issue resolution",
+  "repository": {
+    "base": "2da10d95a72146ee0c69cb91fe303348fbadb638",
+    "branch": "codex/issue-290-tenorite-phase",
+    "parent_reconciliation": "/private/tmp/cmmmech-backlog-20261019-fmj36s/reconcile-290-20261020T033501Z",
+    "parent_open_issues": 185,
+    "parent_open_prs": 0,
+    "owner": "data/records/tenorite.yaml",
+    "owner_sha256": "e5b0bfd564a30686d9ca03cdc24b971bafd0f213624d377ff71dd3b050037112",
+    "owner_last_commit": "6a579d90978267cf5d145bca05b4c97e5ba4d629",
+    "owner_last_changed": "2026-10-15T01:56:24Z",
+    "changed_scope": "Only timestamped assessment and paired evidence JSON; records/history/reviews unchanged"
+  },
+  "prior_dossier": "research/sources/round85-copper-minerals-20261015/report.json",
+  "identity_scope": "Tenorite mineral/synthetic monoclinicCuO analogue, distinct fromCu2O, metallicCu and unspecified copper-oxide mixture. IMA/Handbook not freshly rechecked in this issue-focused investigation; no criticality reassessment.",
+  "dedup": {
+    "checked_at": "2026-10-20T03:40:50.419945+00:00",
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "--json",
+      "-i",
+      "-g",
+      "*.{md,yaml,yml,json,txt,html,xml,csv,tsv,gb}",
+      "10\\.3390/biology10030233|KY465752|^id: cmmmech:tenorite$",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-290/data/records",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-290/research",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-290/reviews",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-290/history",
+      "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/data/records",
+      "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/research",
+      "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/reviews",
+      "/Users/marcin/Documents/VIMSS/ontology/Mechs/CMMMech/history",
+      "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-290"
+    ],
+    "exit_code": 0,
+    "matching_lines": 52,
+    "matching_files": 14,
+    "raw_output": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-290/dedup-raw.jsonl",
+    "sha256": "5304ed210a2491b0577a11ef0c64bc2a9faa55b33c9a0078fb85320212d114ec",
+    "stderr_bytes": 0,
+    "old_raw_root": {
+      "path": "/private/tmp/cmm-round85-copper-minerals-research",
+      "exists": false
+    },
+    "scope": "Both maintained scientific checkouts, task raw-text directory, and cited prior raw directory if present. Hidden/ignored files included, relevant symlinks followed; .git, unrelated home/temp trees and unextracted binary content excluded."
+  },
+  "web_search": {
+    "provider": "web search",
+    "utc_date": "2026-10-20",
+    "queries": [
+      "\"10.3390/biology10030233\" correction OR corrigendum OR retraction OR data",
+      "\"Badawy\" \"tenorite\" \"2021\" XRD sulfur",
+      "\"biology10030233\" supplementary",
+      "\"10.3390/biology10030233\" site:pmc.ncbi.nlm.nih.gov",
+      "\"biology10030233\" \"data\" \"correction\"",
+      "\"KY465752\" \"CuO\" \"200\"",
+      "\"Efficacy Assessment\" \"Badawy\" \"correction\"",
+      "\"biology10030233\" \"XRD\" \"data\"",
+      "\"biology10030233\" \"sulfur\"",
+      "\"biology10030233\" (site:zenodo.org OR site:figshare.com OR site:data.mendeley.com OR site:osf.io)",
+      "\"G3-1\" \"CuO\" \"control\" \"heating\"",
+      "\"Badawy\" \"2021\" \"CuO\" \"sulfur\" correction",
+      "\"Efficacy Assessment of Biosynthesized Copper\" \"version\"",
+      "\"biology-10-00233\" pdf",
+      "\"Efficacy Assessment of Biosynthesized Copper Oxide\" dataset raw data XRD",
+      "\"KY465752\" \"copper\" \"sulfur\"",
+      "\"biology10030233\" \"correction\" -site:researchgate.net -site:ouci.dntb.gov.ua"
+    ],
+    "coverage": "First returned result set per query, no systematic pagination; only explicit query filters; not exhaustive",
+    "result": "No sample-linked correction, original diffraction dataset, pre/post-heating control series or sulfur/XPS clarification recovered. Public-data repository query did not identify a deposit. Correction hits for other DOIs were not treated as corrections toBadawy2021."
+  },
+  "acquisitions": [
+    {
+      "name": "badawy-crossref.json",
+      "url": "https://api.crossref.org/works/10.3390/biology10030233",
+      "started_at": "2026-10-20T03:41:07.501280+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.3390/biology10030233",
+      "content_type": "application/json",
+      "bytes": 36188,
+      "sha256": "48c8dbd2e3491e0015cc32b5406793fc29c499d9f728bce36968b77d865a2d5f",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-290/badawy-crossref.json",
+      "pdf_magic": false,
+      "finished_at": "2026-10-20T03:41:07.881449+00:00"
+    },
+    {
+      "name": "badawy-pmc-id.json",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/idconv/v1.0/?ids=10.3390/biology10030233&format=json",
+      "started_at": "2026-10-20T03:41:07.501765+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/tools/idconv/api/v1/articles/?ids=10.3390/biology10030233&format=json",
+      "content_type": "application/json",
+      "bytes": 417,
+      "sha256": "b4aad70ab915f35ac0a1885277613a6dea0b7cda2e3bff74540c796f27f7c63d",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-290/badawy-pmc-id.json",
+      "pdf_magic": false,
+      "finished_at": "2026-10-20T03:41:07.812861+00:00"
+    },
+    {
+      "name": "badawy-landing.html",
+      "url": "https://www.mdpi.com/2079-7737/10/3/233",
+      "started_at": "2026-10-20T03:41:07.501889+00:00",
+      "error": "<HTTPError 403: 'Forbidden'>",
+      "finished_at": "2026-10-20T03:41:07.602254+00:00"
+    },
+    {
+      "name": "ky465752.gb",
+      "url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KY465752.1&rettype=gb&retmode=text",
+      "started_at": "2026-10-20T03:41:07.502053+00:00",
+      "status": 200,
+      "final_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=KY465752.1&rettype=gb&retmode=text",
+      "content_type": "text/plain",
+      "bytes": 2912,
+      "sha256": "1f7e18b368a8684b31f4f22e4da2f4885b2e5e0219d262dc7afb8d85be14add6",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-290/ky465752.gb",
+      "pdf_magic": false,
+      "finished_at": "2026-10-20T03:41:07.762288+00:00"
+    },
+    {
+      "name": "badawy-pmc-oa.xml",
+      "url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC8002698",
+      "started_at": "2026-10-20T03:41:29.619646+00:00",
+      "error": "<HTTPError 404: 'Not Found'>",
+      "finished_at": "2026-10-20T03:41:29.929397+00:00"
+    },
+    {
+      "name": "badawy-fulltext.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8002698/fullTextXML",
+      "started_at": "2026-10-20T03:41:29.620389+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC8002698/fullTextXML",
+      "content_type": "application/xml",
+      "bytes": 180780,
+      "sha256": "9405078ee407eb36ef63912a97e2e1f2c5a60a0dc5a4b18d63ccf62314e9cfd6",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-290/badawy-fulltext.xml",
+      "pdf_magic": false,
+      "finished_at": "2026-10-20T03:41:30.897063+00:00"
+    },
+    {
+      "name": "badawy-publisher.pdf",
+      "url": "https://www.mdpi.com/2079-7737/10/3/233/pdf",
+      "started_at": "2026-10-20T03:41:29.620668+00:00",
+      "error": "<HTTPError 403: 'Forbidden'>",
+      "finished_at": "2026-10-20T03:41:29.716524+00:00"
+    },
+    {
+      "name": "badawy-pmc.html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8002698/",
+      "started_at": "2026-10-20T03:41:29.620896+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8002698/",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 21317,
+      "sha256": "a983985f40a4cb7f2efbb2377e0df7e7fe11405a73eb94664b5072c5345e2253",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-290/badawy-pmc.html",
+      "pdf_magic": false,
+      "finished_at": "2026-10-20T03:41:29.816091+00:00",
+      "content_assessment": "HTML browser-check response, not a complete article"
+    },
+    {
+      "name": "badawy-pmc.pdf",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8002698/pdf/biology-10-00233.pdf",
+      "started_at": "2026-10-20T03:42:11.097290+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8002698/pdf/biology-10-00233.pdf",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 1817,
+      "sha256": "bb5d1460c388ae7e401f3961bb1c6f2a7cae5bf60247751836bce155581ca223",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-290/badawy-pmc.pdf",
+      "pdf_magic": false,
+      "finished_at": "2026-10-20T03:42:11.253387+00:00",
+      "content_assessment": "HTML proof-of-work download interstitial, not a PDF; challenge not executed"
+    },
+    {
+      "name": "badawy-semantic.pdf",
+      "url": "https://pdfs.semanticscholar.org/c771/d4cc7647fabd8dc3a37648a3c413797a5eed.pdf",
+      "started_at": "2026-10-20T03:42:11.097795+00:00",
+      "status": 200,
+      "final_url": "https://pdfs.semanticscholar.org/c771/d4cc7647fabd8dc3a37648a3c413797a5eed.pdf",
+      "content_type": "application/pdf",
+      "bytes": 5235615,
+      "sha256": "5485526f18136622caa6b38982e36a56acb6db641d59d7fd3a54136b8990e385",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-290/badawy-semantic.pdf",
+      "pdf_magic": true,
+      "finished_at": "2026-10-20T03:42:11.574253+00:00",
+      "content_assessment": "Complete20-page published-format primary article copy; title, authors, DOI and CC BY4.0 license verified; distinct from historical21-page artifact"
+    },
+    {
+      "name": "badawy-oa-current.xml",
+      "url": "https://pmc.ncbi.nlm.nih.gov/utils/oa/oa.fcgi?id=PMC8002698",
+      "started_at": "2026-10-20T03:42:11.097956+00:00",
+      "error": "<HTTPError 404: 'Not Found'>",
+      "finished_at": "2026-10-20T03:42:11.260092+00:00"
+    }
+  ],
+  "inspections": [
+    {
+      "artifact": "badawy-semantic.pdf",
+      "pages": 20,
+      "version": "Biology10:233 (published17March2021); Semantic Scholar hosted published-format PDF; no explicit publisher version number verified",
+      "pdf_creation_date": "2021-03-23T12:12:16+08",
+      "pdf_modification_date": "2021-03-23T12:16:16+08",
+      "version_limit": "PDF metadata timestamps are not evidence of a scientific correction or version ordering relative to unavailable historical bytes",
+      "read_text": "Sections2.1-2.3 and3.1-3.2; data-availability statementp16",
+      "viewed_original_pages": [
+        3,
+        7,
+        8,
+        9,
+        10
+      ],
+      "figures_viewed": [
+        "Figure1A-B p7",
+        "Figure2A-C p8",
+        "Figure3 p9",
+        "Figure4A-E p10"
+      ],
+      "not_reviewed": "All insect/plant efficacy results and tables; no new safety or application claim"
+    },
+    {
+      "artifact": "badawy-fulltext.xml",
+      "version": "PMC8002698.1, PMCID PMC8002698, PMID33802973; DOI10.3390/biology10030233",
+      "checked": [
+        "Methods2.1-2.3",
+        "Results3.1-3.2",
+        "Data Availability Statement",
+        "supplementary-material nodes",
+        "related-article nodes",
+        "external links"
+      ],
+      "supplementary_material_nodes": 0,
+      "related_article_nodes": 0,
+      "standalone_external_links": [
+        "https://creativecommons.org/licenses/by/4.0/"
+      ],
+      "data_availability": "Data offered on request to corresponding author; no contact made"
+    },
+    {
+      "artifact": "ky465752.gb",
+      "version": "KY465752.1; 702bp; LOCUS16July2017",
+      "checked": [
+        "strain G3-1",
+        "Aspergillus niger",
+        "taxon5061",
+        "soil",
+        "Egypt",
+        "collection2015"
+      ],
+      "scope": "Sequence/strain-label context only; not authentication of experimental aliquot or mineral mechanism"
+    }
+  ],
+  "version_comparison": {
+    "historical_pdf": {
+      "sha256": "dcd840a3d531b9bffab16e4823ea4cc8a7ba473bf9da6e29aa434826c7813d31",
+      "bytes": 2308773,
+      "pages": 21,
+      "provenance": "Round85 dossier; citedrawroot absent, so bytes not rehashed or visually rechecked this pass"
+    },
+    "current_pdf": {
+      "sha256": "5485526f18136622caa6b38982e36a56acb6db641d59d7fd3a54136b8990e385",
+      "bytes": 5235615,
+      "pages": 20,
+      "provenance": "FreshSemanticScholarmirror acquisition; selected originals visually inspected"
+    },
+    "pdf_relation": "Same DOI/title/authors, distinct delivered files and pagination. No whole-content equivalence, publisher version ordering or correction status inferred.",
+    "xml": "FreshEuropePMCfullXML SHA9405078ee407eb36ef63912a97e2e1f2c5a60a0dc5a4b18d63ccf62314e9cfd6 exactlymatches historicaldossier",
+    "crossref": "Freshmetadata SHA48c8dbd2e3491e0015cc32b5406793fc29c499d9f728bce36968b77d865a2d5f exactlymatches historicaldossier; relation{}, no update-to or updated-by fields"
+  },
+  "gap_dispositions": [
+    {
+      "id": "diffraction",
+      "status": "open",
+      "locators": [
+        "current20-page PDFp3 Section2.3.2",
+        "p6 Section3.2.2",
+        "p7 Figure1B",
+        "historical21-page owner locatorspp7-8"
+      ],
+      "observations": "Prose assigns minus202 to58.6degrees and includes72.8degrees, while the viewed figure has the minus202 feature near49degrees and ends at70degrees; method states4-70 scan. Figure supports only source-assigned CuO qualitatively.",
+      "missing": "Original numerical diffraction trace with acquisition metadata, corrected peak indexing/scan limits, and defensible mixed-phase assessment",
+      "blocked_inference": "No imported exact diffraction angles, precise lattice determination, quantified phase purity or mineral-specific yield"
+    },
+    {
+      "id": "thermal_and_fungal_causality",
+      "status": "open",
+      "locators": [
+        "current20-page PDFp3 Section2.2",
+        "Section3.1",
+        "p9 Figure3"
+      ],
+      "observations": "Cell-free fungal-conditioned material is heated at200Cfor24h before characterization; FTIR comparison of filtrate and product is not pre/post-heating diffraction or a matched heat-only control.",
+      "missing": "Existing pre/post-heating structural data and matched filtrate-free heated comparator with sample provenance",
+      "blocked_inference": "No direct living-cell CuO precipitation, microbial necessity, fungal growth at200C, exclusive enzyme pathway or isolated recovery"
+    },
+    {
+      "id": "sulfur_and_copper_state",
+      "status": "open",
+      "locators": [
+        "current20-page PDFp8 Figure2C and EDX discussion",
+        "p9 Figure3/FTIR discussion",
+        "pp9-10 Section3.2.5",
+        "p10 Figure4A-E"
+      ],
+      "observations": "Figure2C has14.11weight-percent S alongsideCu/O; Figure4 labelsCu(I)/Cu(II). Sulfur-containing biomolecule explanation is proposed rather than unique species identification.",
+      "missing": "Sample-linked sulfur speciation and residual-precursor assessment, raw XPS spectra/fit constraints and appropriate orthogonal oxidation-state/phase evidence",
+      "blocked_inference": "No pureCuO conclusion, conversion of surface fits into bulk phase fractions, or claim that CuSO4-to-CuO alone provesCu reduction"
+    }
+  ],
+  "candidate_inventory": [
+    {
+      "key": "badawy2021",
+      "doi": "10.3390/biology10030233",
+      "role": "Primary synthesis/characterization experiment",
+      "decision": "Duplicate study in distinct current rendering; retain qualified heatedCuO assignment, no stronger mechanism",
+      "license": "CCBY4.0 statedonPDF1andXML; no rawfulltext committed",
+      "schema_handoff": [
+        "sources version-specificlocators if latercurationneeded",
+        "mechanisms[].context",
+        "mechanisms[].evidence"
+      ],
+      "readiness": "No supportedrecordchange proposed"
+    },
+    {
+      "key": "ky465752",
+      "accession": "KY465752.1",
+      "role": "Organismsequence context",
+      "decision": "Currentverification supports existingstrainlabel only",
+      "license": "NCBIrecord reuse not independently audited; no sequence redistribution inGit"
+    }
+  ],
+  "rejected_or_deferred": [
+    {
+      "lead": "Correction to Eco-Friendly mycogenic synthesis of ZnO andCuO nanoparticles, DOI10.1007/s12011-020-02391-6",
+      "reason": "Different original article/authorship; search association isnot aBadawy2021correction; not used as experimental evidence"
+    },
+    {
+      "lead": "LaterCuO studies usingotherfungal, plantoralgal preparations",
+      "reason": "Distinct experimental lineages; cannot fill missingBadawybatchcontrols or sulfurassignments; notcurated in thisissue"
+    },
+    {
+      "lead": "Author-request dataavailability route",
+      "reason": "Statement isaccess limitation; authorcontact notauthorized and notattempted"
+    }
+  ],
+  "priorities": [
+    {
+      "rank": 1,
+      "action": "Obtain existing original numeric diffraction trace, acquisitionsettings and corrected peak indexing from a public authorizeddeposit",
+      "benefit": "Resolves plot/prose/scan inconsistency before quantitativephasework"
+    },
+    {
+      "rank": 2,
+      "action": "Locate existing sample-linked before/afterheating phaseanalysis and matchedfiltrate-freeheatedcomparison",
+      "benefit": "Separates thermalformationfromfungalconditioning"
+    },
+    {
+      "rank": 3,
+      "action": "Locate existingrawXPSfits and sulfur-speciation/residual-sulfateassessment",
+      "benefit": "Constrains mixed-productcomposition without treating surfaceassignments asbulkphaseyield"
+    }
+  ],
+  "limits": {
+    "no_new_experiment": true,
+    "no_author_contact": true,
+    "no_paid_services": true,
+    "no_remote_mutations": true,
+    "no_record_curation": true,
+    "no_commit_or_push": true,
+    "blocked_pdf_routes": "MDPI403; PMCHTMLbrowser/proof-of-work responses; challenges notexecuted. These limits do not establish sourceunavailability elsewhere.",
+    "datasets": "No raw quantitative dataset obtained; dictionary/key/unit/import testing notapplicable. Published imageaxes are qualitative inspection, not raw diffractiondata.",
+    "external_raw_root": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-290"
+  },
+  "raw_receipts": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-290/dedup-receipt.json",
+      "bytes": 1534,
+      "sha256": "3393572ead237d7d943d1a197869393cbd9591ab952e3eb8e4fcad8aa8a29a38"
+    }
+  ],
+  "checks": {
+    "acquisition_hashes": "All retained successful artifacts rehashed and byte-countchecked; zero mismatches",
+    "owner_unchanged": true,
+    "local_only": "JSONparse, reportlinks, whitespace and change-scopechecked; no recordvalidation or independentrecordreviewclaimed; parentowns acceptancegates"
+  }
+}
