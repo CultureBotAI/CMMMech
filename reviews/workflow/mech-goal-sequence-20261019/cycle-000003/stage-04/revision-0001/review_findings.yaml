@@ -1,0 +1,113 @@
+schema_version: 1.0.0
+run_id: mech-goal-sequence-20261019
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+cycle: 3
+stage: 4
+revision: 1
+source_revision: 855e0eba1fa9b8a4a975b7155ec013414e4d437e
+frozen_inventory_count: 646
+structured_review_bundles:
+- review_id: 20261024T024500Z-cycle3-stage4-element-cohort-review
+  kind: category
+  population_size: 66
+  reviewed_count: 66
+  verdict: pass_with_limitations
+  path: reviews/structured/20261024T024500Z-cycle3-stage4-element-cohort-review/review.yaml
+- review_id: 20261024T024501Z-cycle3-stage4-mineral-cohort-review
+  kind: category
+  population_size: 395
+  reviewed_count: 395
+  verdict: pass_with_limitations
+  path: reviews/structured/20261024T024501Z-cycle3-stage4-mineral-cohort-review/review.yaml
+- review_id: 20261024T024502Z-cycle3-stage4-mineral-group-cohort-review
+  kind: category
+  population_size: 7
+  reviewed_count: 7
+  verdict: pass_with_limitations
+  path: reviews/structured/20261024T024502Z-cycle3-stage4-mineral-group-cohort-review/review.yaml
+- review_id: 20261024T024503Z-cycle3-stage4-commodity-cohort-review
+  kind: category
+  population_size: 36
+  reviewed_count: 36
+  verdict: pass_with_limitations
+  path: reviews/structured/20261024T024503Z-cycle3-stage4-commodity-cohort-review/review.yaml
+- review_id: 20261024T024504Z-cycle3-stage4-primary-resource-cohort-review
+  kind: category
+  population_size: 31
+  reviewed_count: 31
+  verdict: pass_with_limitations
+  path: reviews/structured/20261024T024504Z-cycle3-stage4-primary-resource-cohort-review/review.yaml
+- review_id: 20261024T024505Z-cycle3-stage4-secondary-resource-cohort-review
+  kind: category
+  population_size: 111
+  reviewed_count: 111
+  verdict: pass_with_limitations
+  path: reviews/structured/20261024T024505Z-cycle3-stage4-secondary-resource-cohort-review/review.yaml
+- review_id: 20261024T024506Z-cycle3-stage4-causal-graphs-cohort-review
+  kind: category
+  population_size: 104
+  reviewed_count: 104
+  verdict: pass_with_limitations
+  path: reviews/structured/20261024T024506Z-cycle3-stage4-causal-graphs-cohort-review/review.yaml
+- review_id: 20261024T024507Z-humboldtine-cycle3-stage4-record-review
+  kind: record
+  population_size: 1
+  reviewed_count: 1
+  verdict: pass_with_limitations
+  path: reviews/structured/20261024T024507Z-humboldtine-cycle3-stage4-record-review/review.yaml
+- review_id: 20261024T024508Z-arsenopyrite-cycle3-stage4-record-review
+  kind: record
+  population_size: 1
+  reviewed_count: 1
+  verdict: pass
+  path: reviews/structured/20261024T024508Z-arsenopyrite-cycle3-stage4-record-review/review.yaml
+- review_id: 20261024T024509Z-struvite-cycle3-stage4-record-review
+  kind: record
+  population_size: 1
+  reviewed_count: 1
+  verdict: pass
+  path: reviews/structured/20261024T024509Z-struvite-cycle3-stage4-record-review/review.yaml
+findings:
+- finding_id: cmmmech-cycle3-stage4-finding-0001
+  issue_key: cmmmech.bixbyite-mn.amplicon-protein-example-missing-gene-symbol
+  review_id: 20261024T024506Z-cycle3-stage4-causal-graphs-cohort-review
+  status: open
+  severity: minor
+  category: consistency
+  target_ids:
+  - cmmmech:bixbyite-mn
+  summary: 'In data/records/bixbyite-mn.yaml, both mechanisms[0].protein_examples[0]
+    and causal_graphs[0].nodes[0].protein_examples[0] for UniProtKB:A0A0K2YWP2 (A0A0K2YWP2_9HYPH)
+    omit gene_symbol: Mesau_02205, whereas the parent GENE_OR_PROTEIN node (tg1_acidic_mn_oxidase_factor)
+    and the paired reference-proteome homolog UniProtKB:L0KKS2 (L0KKS2_MESAW) both
+    explicitly record gene_symbol: Mesau_02205.'
+- finding_id: cmmmech-cycle3-stage4-finding-0002
+  issue_key: cmmmech.mineral_group.noncanonical-ima-compendium-source-id
+  review_id: 20261024T024502Z-cycle3-stage4-mineral-group-cohort-review
+  status: open
+  severity: minor
+  category: consistency
+  target_ids:
+  - cmmmech:olivine-group
+  noncanonical_source_id: ima_compendium
+  expected_source_id: ima_compendium_2019
+  summary: 'data/records/olivine-group.yaml keys the 2019 IMA-CNMNC Nomenclature Compendium
+    (https://cnmnc.units.it/ima_reports/2%20IMA-Nomenclature-e-Booklet-2019-1.pdf)
+    under sources[0].id: ima_compendium instead of canonical id: ima_compendium_2019
+    used across the other 4 mineral_group records citing that compilation (biotite,
+    chlorite, illite, potassium-feldspar).'
+- finding_id: cmmmech-cycle3-stage4-finding-0003
+  issue_key: cmmmech.mineral.noncanonical-ch407-its-source-id
+  review_id: 20261024T024507Z-humboldtine-cycle3-stage4-record-review
+  status: open
+  severity: minor
+  category: consistency
+  target_ids:
+  - cmmmech:humboldtine
+  noncanonical_source_id: genbank_niger
+  expected_source_id: genbank_ch407
+  summary: 'data/records/humboldtine.yaml keys GenBank ITS accession KF768341.1 (https://www.ncbi.nlm.nih.gov/nuccore/KF768341.1)
+    for Aspergillus niger strain Ch 4/07 under sources[4].id: genbank_niger and mechanisms[0].evidence[3].source_ref:
+    genbank_niger instead of canonical genbank_ch407 used across all 5 sibling Aspergillus
+    niger Ch 4/07 mineral records (hopeite, katsarosite, moolooite, wheatleyite, whewellite).'

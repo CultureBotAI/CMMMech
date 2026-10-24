@@ -1,0 +1,54 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 3
+stage: 4
+revision: 1
+outcome: completed
+summary: Completed full-inventory Cycle 3 Stage 4 scientific and structural review
+  of all 646 eligible CMMMech records at frozen commit 855e0eba1fa9b8a4a975b7155ec013414e4d437e
+  across 6 disjoint material_kind cohort reviews (66 element, 395 mineral, 7 mineral_group,
+  36 commodity, 31 primary_resource, 111 secondary_resource), 1 cross-cohort causal_graphs/protein_examples
+  review (104 records), and 3 single-record reviews (humboldtine, arsenopyrite, struvite).
+  Preserved 3 open minor findings (cmmmech-cycle3-stage4-finding-0001, cmmmech-cycle3-stage4-finding-0002,
+  cmmmech-cycle3-stage4-finding-0003) across 3 records for Stage 5 grouped remediation.
+source_revision: 855e0eba1fa9b8a4a975b7155ec013414e4d437e
+scope_frozen_at: '2026-10-24T02:35:00Z'
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000002/stage-05/revision-0001/evidence.yaml
+  sha256: 39d4ca7284baef7da15f958ecb127cf4b457e891bf782ce00771c9c711050131
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-04/revision-0001/review_report.md
+  sha256: d3b66a494b2466f4097de05a0b910ae6f768a7a27a12d2272e49ef13199afc6b
+  kind: review_report
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-04/revision-0001/review_findings.yaml
+  sha256: 7ca7ad9bbdef88ee30cb7bd67e4a4245e8b15f5bbd1433af6c7555f2a9b2d9f8
+  kind: review_findings
+findings:
+- finding_id: cmmmech-cycle3-stage4-finding-0001
+  status: open
+  summary: 'In data/records/bixbyite-mn.yaml, both mechanisms[0].protein_examples[0]
+    and causal_graphs[0].nodes[0].protein_examples[0] for UniProtKB:A0A0K2YWP2 (A0A0K2YWP2_9HYPH)
+    omit gene_symbol: Mesau_02205, whereas the parent GENE_OR_PROTEIN node (tg1_acidic_mn_oxidase_factor)
+    and the paired reference-proteome homolog UniProtKB:L0KKS2 (L0KKS2_MESAW) both
+    explicitly record gene_symbol: Mesau_02205.'
+- finding_id: cmmmech-cycle3-stage4-finding-0002
+  status: open
+  summary: 'data/records/olivine-group.yaml keys the 2019 IMA-CNMNC Nomenclature Compendium
+    (https://cnmnc.units.it/ima_reports/2%20IMA-Nomenclature-e-Booklet-2019-1.pdf)
+    under sources[0].id: ima_compendium instead of canonical id: ima_compendium_2019
+    used across the other 4 mineral_group records citing that compilation (biotite,
+    chlorite, illite, potassium-feldspar).'
+- finding_id: cmmmech-cycle3-stage4-finding-0003
+  status: open
+  summary: 'data/records/humboldtine.yaml keys GenBank ITS accession KF768341.1 (https://www.ncbi.nlm.nih.gov/nuccore/KF768341.1)
+    for Aspergillus niger strain Ch 4/07 under sources[4].id: genbank_niger and mechanisms[0].evidence[3].source_ref:
+    genbank_niger instead of canonical genbank_ch407 used across all 5 sibling Aspergillus
+    niger Ch 4/07 mineral records (hopeite, katsarosite, moolooite, wheatleyite, whewellite).'
+groups: []
+carry_forward_ids:
+- cmmmech-cycle3-stage4-finding-0001
+- cmmmech-cycle3-stage4-finding-0002
+- cmmmech-cycle3-stage4-finding-0003
+infra_tasks: []
