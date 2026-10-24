@@ -1,0 +1,29 @@
+history_version: 1
+target:
+  kind: record
+  slug: olivine-group
+  path: data/records/olivine-group.yaml
+session:
+  id: 2026-10-24T034011Z-claude-4d2bc8
+  timestamp: '2026-10-24T03:40:11Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Normalized 2019 IMA-CNMNC Nomenclature Compendium source ID from ima_compendium
+    to ima_compendium_2019 in olivine-group.yaml (#831).
+  details: 'Resolved Cycle 3 Stage 4 finding cmmmech-cycle3-stage4-finding-0002 (GRP-C3S5-002,
+    #831) by updating sources[0].id from ima_compendium to canonical ima_compendium_2019 in
+    data/records/olivine-group.yaml to match the other 4 mineral_group records citing that
+    compilation (biotite, chlorite, illite, potassium-feldspar).'
+  sections:
+  - sources
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/831

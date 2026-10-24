@@ -1,0 +1,31 @@
+history_version: 1
+target:
+  kind: record
+  slug: humboldtine
+  path: data/records/humboldtine.yaml
+session:
+  id: 2026-10-24T034011Z-claude-148f6e
+  timestamp: '2026-10-24T03:40:11Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Normalized Aspergillus niger Ch 4/07 GenBank ITS source ID and source_ref from
+    genbank_niger to genbank_ch407 in humboldtine.yaml (#832).
+  details: 'Resolved Cycle 3 Stage 4 finding cmmmech-cycle3-stage4-finding-0003 (GRP-C3S5-003,
+    #832) by updating sources[4].id and mechanisms[0].evidence[3].source_ref from genbank_niger
+    to canonical genbank_ch407 in data/records/humboldtine.yaml to match the 5 sibling Aspergillus
+    niger Ch 4/07 oxalate biomineralization records (hopeite, katsarosite, moolooite, wheatleyite,
+    whewellite).'
+  sections:
+  - sources
+  - mechanisms
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/832

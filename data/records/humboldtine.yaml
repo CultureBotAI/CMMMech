@@ -19,7 +19,7 @@ sources:
   title: NCBI Taxonomy XML records for species 5061, 80602, 80637, 85982 and 1333629. Scientific names, ranks and name relationships.
   url: https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=taxonomy&id=5061,80602,80637,85982,1333629&retmode=xml
   accessed_on: '2026-10-11'
-- id: genbank_niger
+- id: genbank_ch407
   title: GenBank KF768341.1. Aspergillus niger strain Ch 4/07 ribosomal/ITS sequence.
   url: https://www.ncbi.nlm.nih.gov/nuccore/KF768341.1
   accessed_on: '2026-10-11'
@@ -81,7 +81,7 @@ mechanisms:
   - source_ref: zelenskaya2021
     supports: context_only
     explanation: Section 4 and Figure 5 describe a separate search in lichen-dominated biofilms from Kola Peninsula and Karelia iron ores, in which iron oxalates were not found and goethite was reported instead. This field observation limits transfer of the culture result to natural biofilms; it neither refutes the laboratory phase assignment nor establishes universal absence of humboldtine in nature. Earlier disputed lichen iron-oxalate claims cited in the Introduction are not adopted here.
-  - source_ref: genbank_niger
+  - source_ref: genbank_ch407
     supports: context_only
     explanation: KF768341.1 labels strain Ch 4/07 and species taxon 5061, supporting the reported ITS-based provenance. It is not a genome, a strain TaxID or independent authentication of the experimental culture.
   - source_ref: ncbi_taxonomy
@@ -466,8 +466,13 @@ curation_history:
   curator: claude
   action: edit
   summary: Grounded brown-rot oxalate biosynthetic pathway node and mechanism in humboldtine.yaml to Coniophora puteana and Serpula lacrymans reference-proteome enzymes (UniProtKB:A0A5M3MRX5, UniProtKB:A0A5M3MJR8, UniProtKB:F8QHM8).
+- timestamp: '2026-10-24T03:40:11Z'
+  curator: claude
+  action: EDIT
+  summary: Normalized Aspergillus niger Ch 4/07 GenBank ITS source ID and source_ref from genbank_niger to genbank_ch407 in humboldtine.yaml (#832).
 history_refs:
 - history/records/humboldtine/2026-10-11T225911Z-codex-2e6da1.yaml
 - history/records/humboldtine/2026-10-21T184653Z-claude-d22956.yaml
 - history/records/humboldtine/2026-10-22T093020Z-claude-682fc0.yaml
 - history/records/humboldtine/2026-10-22T104028Z-claude-213df0.yaml
+- history/records/humboldtine/2026-10-24T034011Z-claude-148f6e.yaml
