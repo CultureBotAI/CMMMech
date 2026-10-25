@@ -84,6 +84,11 @@ tasks:
     status: open
     issue_url: https://github.com/CultureBotAI/CMMMech/issues/839
     disposition: "Intaken during Cycle 4 Stage 1 Round 120 (issue #839, linked to scientific correction issue #838 and PR #837) for bounded implementation in Cycle 4 Stage 6 (infrastructure_implementation)."
+  - task_id: cmmmech-infra-0011
+    summary: Codify bounded source-text excerpts (<= 2-8 KB per page/passage) and single-page PDF inspection across CMMMech discovery, curation, and review skills and helpers to prevent full-PDF context-window overflow
+    status: open
+    issue_url: https://github.com/CultureBotAI/CMMMech/issues/840
+    disposition: "Intaken during Cycle 4 Stage 1 Round 121 context recovery (issue #840) after predecessor conversation 90bf344d-94f5-4c19-9fe4-def0147ca35c exceeded the 1M-token context limit by attaching 503 full PDF pages; queued for bounded implementation in Cycle 4 Stage 6 (infrastructure_implementation)."
 ```
 <!-- mech-infra-tasks:end -->
 
@@ -212,6 +217,21 @@ tasks:
 - **Issue**: https://github.com/CultureBotAI/CMMMech/issues/839
 - **Status**: `open`
 - **Disposition**: Intaken during Cycle 4 Stage 1 Round 120 (`https://github.com/CultureBotAI/CMMMech/issues/839`) for bounded implementation in Cycle 4 Stage 6 (`infrastructure_implementation`).
+
+### `cmmmech-infra-0011` — Enforce bounded source-text excerpts (`<= 2–8 KB`) and single-page PDF inspection to prevent full-PDF context-window overflow
+
+- **Originating run / cycle / stage**: `mech-goal-sequence-20261019` / cycle `4` / stage `1` (`add_records`, Round 121 context recovery `[CMM-ROUND121-CONTEXT-RECOVERY-20261025]`)
+- **Observation**: During Round 121 discovery after merging PR https://github.com/CultureBotAI/CMMMech/pull/837 (`7918502cee65b588f4e0e7cf5bce94d49ba55e51`), predecessor conversation `90bf344d-94f5-4c19-9fe4-def0147ca35c` (`goal0`, started `2026-10-24T07:17:26.061007+00:00`) called `read_file` directly on four full PDFs at native steps `1363` and `1375` (`CM16_561.pdf` `5` pp., `AM72_1230.pdf` `9` pp., `CM20_231.pdf` `8` pp., and twice `IMA_Master_List_2026-09.pdf` `241` pp. = `503` attached PDF pages), exceeding the 1,048,576-token model input limit (`1,055,659` tokens at step `1376`) and causing `/compact` at step `1378` to fail with the same token-limit error. Recovery in continuation conversation `5d564102-201c-473a-960a-1d0caa99b350` required a pre-indexed bounded source-text handoff (`cmm-bounded-source-text/summary.json` and `passage-map.tsv` with `<= 2 KB` per-page passage files) combined with bounded single-page `mutool draw -q -F txt <pdf> <page>` extraction (`<= 8 KB` per call).
+- **Desired outcome**: During Cycle 4 Stage 6 (`infrastructure_implementation`), codify the bounded source-inspection workflow across repository skills and helper tooling:
+  1. Update `.claude/skills/cmmmech-discover-sources/SKILL.md`, `.claude/skills/cmmmech-add-record/SKILL.md`, `.claude/skills/curate-yaml-record/SKILL.md`, `.claude/skills/review-record/SKILL.md`, and `docs/record-reviews.md` to forbid calling `read_file` on full multi-page PDFs, master-list catalogues (such as the 241-page IMA Master List), `.full.txt` archives, or raw conversation transcripts, and to require bounded page-level text extraction (`<= 2–8 KB` per passage/page) plus single-page PNG rendering only when table-column alignment or figure inspection requires visual verification.
+  2. Provide or document a lightweight deterministic helper recipe/script for indexing local research PDFs into bounded per-page passage files (`<= 2–8 KB`) with a `summary.json` and `passage-map.tsv` manifest before curation or scientific review.
+- **Evidence paths**: `INFRA_TASKS.md`, `.claude/skills/cmmmech-discover-sources/SKILL.md`, `.claude/skills/cmmmech-add-record/SKILL.md`, `.claude/skills/curate-yaml-record/SKILL.md`, `.claude/skills/review-record/SKILL.md`, `docs/record-reviews.md`, `/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/workspace/reports/mech-resume-20261024/CMM-round121-recovery-handoff.md`, `/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/workspace/reports/mech-resume-20261024/cmm-bounded-source-text/summary.json`, `/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/workspace/reports/mech-resume-20261024/cmm-bounded-source-text/passage-map.tsv`
+- **Priority**: high
+- **Dependencies**: `cmmmech-infra-0010` (https://github.com/CultureBotAI/CMMMech/issues/839)
+- **Issue**: https://github.com/CultureBotAI/CMMMech/issues/840
+- **Status**: `open`
+- **Disposition**: Intaken during Cycle 4 Stage 1 Round 121 context recovery (`https://github.com/CultureBotAI/CMMMech/issues/840`) for bounded implementation in Cycle 4 Stage 6 (`infrastructure_implementation`).
+
 
 
 

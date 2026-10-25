@@ -1,0 +1,128 @@
+{
+  "created_at": "2026-10-25T05:58:00Z",
+  "prepared_by": "antigravity",
+  "status": "bounded_round121_candidate_evaluation_and_monteregianite_y_admission",
+  "scope": "Round 121 bounded source investigation of the five carried-forward deferred mineral candidates (monteregianite-y, cesstibtantite, protasite, lepersonnite-gd, lokkaite-y) using pre-indexed <=2 KB bounded source passages and single-page mutool text extraction after predecessor conversation 90bf344d-94f5-4c19-9fe4-def0147ca35c hit the 1M-token context limit on full PDFs.",
+  "logical_goal": {
+    "run_id": "mech-goal-sequence-20261019",
+    "cycle": 4,
+    "stage": 1,
+    "conversation_id": "5d564102-201c-473a-960a-1d0caa99b350",
+    "predecessor_conversation_id": "90bf344d-94f5-4c19-9fe4-def0147ca35c",
+    "goal_complete": false
+  },
+  "trusted_history_base": "7918502cee65b588f4e0e7cf5bce94d49ba55e51",
+  "issues": {
+    "round120_scientific_closed": "https://github.com/CultureBotAI/CMMMech/issues/838",
+    "round120_deferred_infrastructure": "https://github.com/CultureBotAI/CMMMech/issues/839",
+    "round121_bounded_pdf_workflow_infrastructure": "https://github.com/CultureBotAI/CMMMech/issues/840"
+  },
+  "bounded_source_handoff": {
+    "handoff_doc": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/workspace/reports/mech-resume-20261024/CMM-round121-recovery-handoff.md",
+    "summary_json": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/workspace/reports/mech-resume-20261024/cmm-bounded-source-text/summary.json",
+    "passage_map_tsv": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/workspace/reports/mech-resume-20261024/cmm-bounded-source-text/passage-map.tsv"
+  },
+  "admitted_records": [
+    {
+      "slug": "monteregianite-y",
+      "name": "Monteregianite-(Y)",
+      "record_path": "data/records/monteregianite-y.yaml",
+      "record_sha256": "4158ae127c9f676d11cbf1879c82ea036ebe58693f785cafac8ab2c5ab83518f",
+      "history_ref": "history/records/monteregianite-y/2026-10-25T055705Z-antigravity-00121a.yaml",
+      "history_sha256": "2c1c7f5d45c2ff25d8b60161b81c30d7842975e77d16bcd4e2488e9c76826e70",
+      "ima_status": "Rn",
+      "ima_tag": "1987 s.p.",
+      "ima_formula": "KNa2YSi8O19·5H2O",
+      "inspected_primary_citations": [
+        "Chao GY (1978), Monteregianite, a new hydrous sodium potassium yttrium silicate mineral from Mont St-Hilaire, Quebec, The Canadian Mineralogist 16:561-565.",
+        "Ghose S, Sen Gupta PK, and Campana CF (1987), The crystal structure of montregianite, Na4K2Y2Si16O38·10H2O, a double-sheet silicate with zeolitic properties, American Mineralogist 72:365-374."
+      ],
+      "uninspected_ima_secondary_reference": "Journal of Physical Chemistry B 102 (1998), 4379 (explicitly disclosed as uninspected; no 1998 claims asserted)"
+    }
+  ],
+  "excluded_candidates": [
+    {
+      "slug": "cesstibtantite",
+      "historical_ima_id": "IMA:1980-068",
+      "disposition": "excluded_discredited_reclassified",
+      "reason": "Verified absent from the September 2026 IMA-CNMNC Master List (candidate_text_misses: [\"cesstibtantite\"]); discredited and reclassified into hydrokenomicrolite / hydroxycalciomicrolite under the 2010 IMA-CNMNC pyrochlore-supergroup nomenclature revision."
+    }
+  ],
+  "deferred_candidates": [
+    {
+      "slug": "protasite",
+      "ima_id": "IMA:1984-001",
+      "ima_status": "A",
+      "ima_formula": "Ba(UO2)3O3(OH)2(H2O)3",
+      "inspected_sources": [
+        "IMA-CNMNC September 2026 Master List, PDF p. 178 (ima-round118.p178.txt)",
+        "Pagoaga MK, Appleman DE, and Stewart JM (1987), Crystal structures and crystal chemistry of the uranyl oxide hydrates becquerelite, billietite, and protasite, American Mineralogist 72:1230-1238 (AM72_1230.pdf, 9 pp., SHA-256 fe7090887f308985e44421e8549e23875d39d64f4510f22b42d4a78e4e0af645)"
+      ],
+      "missing_required_source": "Pagoaga MK, Appleman DE, and Stewart JM (1986), A new barium uranyl oxide hydrate mineral, protasite, Mineralogical Magazine 50:125-128",
+      "reason": "Complete 1987 crystal-structure and Shinkolobwe EMPA paper inspected in full (including the paper-internal museum-number discrepancy NMNH 150832 on p. 1230 vs NMNH 150732 in Table 1 on p. 1231), but held until the 1986 Mineralogical Magazine 50:125-128 type-description paper is acquired and inspected."
+    },
+    {
+      "slug": "lepersonnite-gd",
+      "ima_id": "1987 s.p.",
+      "ima_status": "Rn",
+      "ima_formula": "[Ca0.5Gd0.5(H2O)18(OH)1.5][Gd(UO2)12(SiO3OH)2(CO3)4(OH)10O2(H2O)5]",
+      "inspected_sources": [
+        "IMA-CNMNC September 2026 Master List, PDF p. 124 (ima-round118.p124.txt; corrects Round 119 citation page typo 511 -> 549)",
+        "Deliens M and Piret P (1982), Bijvoetite et lepersonnite, carbonates hydrates d'uranyle et de terres rares de Shinkolobwe, Zaire, The Canadian Mineralogist 20:231-238 (CM20_231.pdf, 8 pp., SHA-256 dd3d362ce0419534c3c3dd5fa9c87de172c22a130c27f846cbfd48d5c62e146e)"
+      ],
+      "missing_required_source": "Mineralogical Magazine 89 (2025), 549 (redefinition and crystal-structure paper establishing the current IMA formula)",
+      "reason": "Complete 1982 Shinkolobwe holotype description (RGM 13.781) inspected in full and Round 119's second-reference page typo (511 -> 549) corrected, but held pending full-text inspection of the 2025 Mineralogical Magazine 89:549 structure/redefinition paper."
+    },
+    {
+      "slug": "lokkaite-y",
+      "ima_id": "1987 s.p.",
+      "ima_status": "Rn",
+      "ima_formula": "CaY4(CO3)7·9H2O",
+      "inspected_sources": [
+        "IMA-CNMNC September 2026 Master List, PDF p. 127 (ima-round118.p127.txt; corrects Round 119 provisional tag IMA:1969-045 -> 1987 s.p.)",
+        "Nagashima K, Miyawaki R, Takase J, Nakai I, Sakurai K, Matsubara S, Kato A, and Iwano S (1986), Kimuraite-(Y), CaY2(CO3)4·6H2O, a new mineral from fissures in an alkali olivine basalt from Saga Prefecture, Japan, and new data on lokkaite-(Y), American Mineralogist 71:1028-1033 (AM71_1028.pdf, 6 pp., SHA-256 34d96f4f168232a254541f1c7962a770a40ef2ee697e79c84743d5fcb5e34934)"
+      ],
+      "missing_required_source": "Perttunen V (1970/1971), Lokkaite, a new hydrous RE-carbonate from Pyörönmaa pegmatite in Kangasala, SW-Finland, Bulletin of the Geological Society of Finland 43:67-72",
+      "reason": "Complete 1986 Kirigo supplemental study inspected in full and Round 119's provisional IMA tag (IMA:1969-045 -> 1987 s.p.) corrected, but held pending full-text inspection of Perttunen (1970/1971, Bull. Geol. Soc. Finland 43:67-72), the sole reference listed in the IMA Master List."
+    }
+  ],
+  "primary_source_inventory": [
+    {
+      "path": "/private/tmp/cmm-round119-research/IMA_Master_List_2026-09.pdf",
+      "sha256": "2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973",
+      "bytes": 3129886,
+      "url": "https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round119-research/CM16_561.pdf",
+      "sha256": "ff1f6307c331c027a99474faaeb1adaea6321b16fb19b1ddf89b11c90e56ee8e",
+      "bytes": 541916,
+      "url": "https://www.rruff.net/doclib/cm/vol16/CM16_561.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round119-research/AM72_365.pdf",
+      "sha256": "5afcae68d64f26bf0d51098f39ff86909a962a00cb7cbd34d16993969db72df2",
+      "bytes": 1039811,
+      "url": "https://www.rruff.net/doclib/am/vol72/AM72_365.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round119-research/AM72_1230.pdf",
+      "sha256": "fe7090887f308985e44421e8549e23875d39d64f4510f22b42d4a78e4e0af645",
+      "bytes": 1006720,
+      "url": "https://www.rruff.net/doclib/am/vol72/AM72_1230.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round119-research/CM20_231.pdf",
+      "sha256": "dd3d362ce0419534c3c3dd5fa9c87de172c22a130c27f846cbfd48d5c62e146e",
+      "bytes": 1046669,
+      "url": "https://www.rruff.net/doclib/cm/vol20/CM20_231.pdf"
+    },
+    {
+      "path": "/private/tmp/cmm-round119-research/AM71_1028.pdf",
+      "sha256": "34d96f4f168232a254541f1c7962a770a40ef2ee697e79c84743d5fcb5e34934",
+      "bytes": 581141,
+      "url": "https://www.rruff.net/doclib/am/vol71/AM71_1028.pdf"
+    }
+  ],
+  "source_exhaustion_claimed": false
+}
