@@ -1,0 +1,232 @@
+schema_version: 1.0.0
+review_id: 20261025T060237Z-monteregianite-y-round121-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Primary-source scientific review of monteregianite-(Y) (Round 121 bounded checkpoint)
+started_at: '2026-10-25T05:59:30Z'
+finished_at: '2026-10-25T06:02:37Z'
+reviewer:
+  identity: antigravity / round121-scientific-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/monteregianite-y.yaml (SHA-256
+    4158ae127c9f676d11cbf1879c82ea036ebe58693f785cafac8ab2c5ab83518f) against bounded
+    page-by-page excerpts of Chao (1978, Can. Mineral. 16:561-565, CM16_561.pdf, 5
+    pages), Ghose, Sen Gupta, and Campana (1987, Am. Mineral. 72:365-374, AM72_365.pdf,
+    10 pages), and the September 2026 IMA-CNMNC Master List (PDF p. 147, ima-round118.p147.txt).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 7918502cee65b588f4e0e7cf5bce94d49ba55e51
+  state: working_tree
+  inputs:
+  - path: data/records/monteregianite-y.yaml
+    sha256: 4158ae127c9f676d11cbf1879c82ea036ebe58693f785cafac8ab2c5ab83518f
+    role: target
+  - path: history/records/monteregianite-y/2026-10-25T055705Z-antigravity-00121a.yaml
+    sha256: 2c1c7f5d45c2ff25d8b60161b81c30d7842975e77d16bcd4e2488e9c76826e70
+    role: context
+  - path: research/sources/round121-minerals/20261025T055800Z-source-investigation.json
+    sha256: d54a12e93a2324b02c736367cb8a6c9247a45bb00138e181c56a1754527c6973
+    role: context
+  - path: research/sources/round121-minerals/20261025T055800Z-source-investigation.md
+    sha256: 083c66c4e8f76184614de6ee97f2893fbbf98627e561c4c8263db7b3297ee43d
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:monteregianite-y
+  path: data/records/monteregianite-y.yaml
+  label: Monteregianite-(Y)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/monteregianite-y.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/monteregianite-y/2026-10-25T055705Z-antigravity-00121a.yaml
+    role: canonical_history
+scope:
+  description: Primary-source scientific review of data/records/monteregianite-y.yaml
+    (SHA-256 4158ae127c9f676d11cbf1879c82ea036ebe58693f785cafac8ab2c5ab83518f) and
+    its canonical CREATE history sidecar (history/records/monteregianite-y/2026-10-25T055705Z-antigravity-00121a.yaml)
+    against bounded page-by-page passages from Chao (1978, CM16_561.pdf), Ghose, Sen
+    Gupta, and Campana (1987, AM72_365.pdf), and the September 2026 IMA-CNMNC Master
+    List (PDF p. 147).
+  selection: Round 121 newly admitted mineral record monteregianite-y.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:monteregianite-y
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/monteregianite-y.yaml
+  locator: Working-tree record data/records/monteregianite-y.yaml
+  accessed_at: '2026-10-25T06:01:30Z'
+  support: supports
+  summary: Working-tree record data/records/monteregianite-y.yaml (SHA-256 4158ae127c9f676d11cbf1879c82ea036ebe58693f785cafac8ab2c5ab83518f)
+    captures the IMA 1987 s.p. identity, Mont St-Hilaire holotype chemistry and optics,
+    monoclinic P21/n structure refinement, and laboratory zeolitic dehydration-rehydration
+    mechanism with concise bibliographic Source.title strings.
+  snapshot_sha256: 4158ae127c9f676d11cbf1879c82ea036ebe58693f785cafac8ab2c5ab83518f
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 147 (ima-round118.p147.txt)
+  accessed_at: '2026-10-25T06:01:30Z'
+  support: supports
+  summary: 'Confirms Monteregianite-(Y), formula KNa2YSi8O19·5H2O, status Rn, IMA
+    No. 1987 s.p., country Canada, first reference Canadian Mineralogist 16 (1978),
+    561, and second reference Journal of Physical Chemistry B 102 (1998), 4379; omitting
+    identifiers: matches CMMMech convention for 1987 s.p. special-procedure species.'
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: chao_1978_primary
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/cm/vol16/CM16_561.pdf
+  locator: Chao (1978) Can. Mineral. 16:561-565, pp. 561-565, Tables 1-3, Figure 3a-3b
+    (cm16-561.p001.txt through p005.txt)
+  accessed_at: '2026-10-25T06:01:30Z'
+  support: supports
+  summary: 'All 5 pages inspected via bounded page passages: confirms Mont St-Hilaire
+    holotype (National Museum of Natural Sciences, Ottawa, no. 37130), combined wet-chemical
+    (180 mg by C. Murray) + EMPA (mean of 6 analyses for Y2O3) + TGA (H2O to 1000
+    °C) analysis in Table 3 Column 1 (SiO2 60.30, Al2O3 0.50, Y2O3 11.97, CaO 0.65,
+    MgO 0.15, BaO 0.35, MnO n.d., FeO n.d., Na2O 9.14, K2O 5.36, H2O 11.40, total
+    99.82 wt%, kept distinct from theoretical Column 2 and mauve variety footnote
+    ****), physical/optical properties in Table 1 (Dmeas = 2.42(2) g/cm3, Dcalc =
+    2.393 g/cm3, alpha = 1.510(1), beta = 1.513(1), gamma = 1.517(1), 2Vmeas = 83(1)°,
+    2Vcalc = 82°10'', initial orthorhombic Bmab/B2ab indexing), Gandolfi powder XRD
+    in Table 2, and TGA/DTA three-stage zeolitic dehydration (25-400 °C, 69/167/288
+    °C endotherms), ~99% 2-hour air rehydration after heating to 650 °C, and 750-1000
+    °C melting/vitrification.'
+  snapshot_sha256: ff1f6307c331c027a99474faaeb1adaea6321b16fb19b1ddf89b11c90e56ee8e
+- evidence_id: ghose_1987_structure
+  kind: primary_source
+  reference: https://www.rruff.net/doclib/am/vol72/AM72_365.pdf
+  locator: Ghose, Sen Gupta, and Campana (1987) Am. Mineral. 72:365-374, pp. 365-374,
+    Tables 1-4
+  accessed_at: '2026-10-25T06:01:30Z'
+  support: supports
+  summary: 'All 10 pages inspected via bounded page-by-page extraction: confirms monoclinic
+    P21/n single-crystal MoKalpha structure refinement (a = 9.512(2), b = 23.956(4),
+    c = 9.617(2) Å, beta = 93.85(1)°, V = 2186.5(6) Å3, Z = 2 for Na4K2Y2Si16O38·10H2O,
+    Dcalc = 2.41 g/cm3, 4877 reflections, R = 0.059, Rw = 0.061; pseudo-orthorhombic
+    C1121/a setting a = 13.973(2), b = 13.064(2), c = 23.956(4) Å, gamma = 90.62(1)°,
+    V = 4372.8(10) Å3, Z = 4), alternating (010) [YO6]/[NaO4(H2O)2] octahedral and
+    apophyllite-type [Si8O19]6- double silicate sheets, split K(1)/K(2) sites (0.62/0.38),
+    and six water sites W(1)-W(6) (W(1)-W(2) fully occupied; W(3) 0.95 and W(4)-W(6)
+    0.35-0.46 in channels).'
+  snapshot_sha256: 5afcae68d64f26bf0d51098f39ff86909a962a00cb7cbd34d16993969db72df2
+- evidence_id: create_history
+  kind: record_content
+  reference: history/records/monteregianite-y/2026-10-25T055705Z-antigravity-00121a.yaml
+  locator: Canonical CREATE history sidecar history/records/monteregianite-y/2026-10-25T055705Z-antigravity-00121a.yaml
+  accessed_at: '2026-10-25T06:01:30Z'
+  support: supports
+  summary: Canonical CREATE history sidecar (SHA-256 2c1c7f5d45c2ff25d8b60161b81c30d7842975e77d16bcd4e2488e9c76826e70)
+    matches inline curation_history and history_refs in data/records/monteregianite-y.yaml.
+  snapshot_sha256: 2c1c7f5d45c2ff25d8b60161b81c30d7842975e77d16bcd4e2488e9c76826e70
+- evidence_id: validation
+  kind: validation
+  reference: data/records/monteregianite-y.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base 7918502cee65b588f4e0e7cf5bce94d49ba55e51
+  accessed_at: '2026-10-25T06:01:30Z'
+  support: supports
+  summary: Checked 663 record(s); 0 failed. Checked 1012 history record(s); 0 error(s).
+  snapshot_sha256: 4158ae127c9f676d11cbf1879c82ea036ebe58693f785cafac8ab2c5ab83518f
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 663 record(s); 0 failed.
+  target_ids:
+  - cmmmech:monteregianite-y
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base 7918502cee65b588f4e0e7cf5bce94d49ba55e51
+  status: passed
+  required: true
+  summary: Checked 1012 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:monteregianite-y
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA 1987 s.p. identity, Mont St-Hilaire holotype chemistry,
+    and monoclinic P21/n double-sheet silicate structure for monteregianite-(Y)
+  outcome: supported
+  summary: 'All numeric and structural claims in data/records/monteregianite-y.yaml
+    are verified against bounded page-by-page excerpts of Chao (1978, Can. Mineral.
+    16:561-565) and Ghose, Sen Gupta, and Campana (1987, Am. Mineral. 72:365-374)
+    plus the September 2026 IMA Master List (p. 147): empirical colourless wet-chemical/EMPA/TGA
+    analysis (Table 3, Column 1) is kept distinct from theoretical Na4K2Y2Si16O38·10H2O
+    (Column 2) and mauve-variety partial EMPA (footnote ****); the paper-internal
+    p. 563 text note (''28 anhydrous oxygens'' for an O38 formula unit) is preserved
+    explicitly; initial orthorhombic Bmab/B2ab indexing is distinguished from the
+    1987 monoclinic P21/n (and pseudo-orthorhombic C1121/a) single-crystal structure
+    refinement; and Source.title strings are concise bibliographic citations.'
+  target_ids:
+  - cmmmech:monteregianite-y
+  evidence_ids:
+  - owner
+  - ima_authority
+  - chao_1978_primary
+  - ghose_1987_structure
+- assessment_id: mechanism_and_provenance_verification
+  area: provenance
+  topic: Verification of abiotic zeolitic thermal dehydration-rehydration mechanism
+    and append-only CREATE provenance
+  outcome: supported
+  summary: The abiotic mechanism abiotic_zeolitic_thermal_dehydration_and_rehydration
+    accurately represents the TGA (4.1984 mg, 10 °C/min in air) and DTA (15.4 mg,
+    20 °C/min in N2) three-stage dehydration (25-80, 80-200, and 200-400 °C; ~1:2:2
+    weight-loss ratio; 69, 167, and 288 °C DTA endotherms), ~99% 2-hour air rehydration
+    after heating to 650 °C with identical powder XRD pattern, and 750-1000 °C melting/vitrification
+    (Chao 1978, pp. 564-565, Fig. 3), linked to the six structural water sites W(1)-W(6)
+    (Ghose et al. 1987, Table 2), with partial evidence noting the absence of in-situ
+    single-crystal XRD on the 650 °C dehydrated intermediate. Canonical CREATE history
+    sidecar and corpus validation pass with 0 errors.
+  target_ids:
+  - cmmmech:monteregianite-y
+  evidence_ids:
+  - owner
+  - chao_1978_primary
+  - ghose_1987_structure
+  - create_history
+  - validation
+findings: []
+actions: []
+summary: 'Monteregianite-(Y) (1987 s.p., status Rn, KNa2YSi8O19·5H2O) passes primary-source
+  scientific review (scientific_review: true) at working-tree SHA-256 4158ae127c9f676d11cbf1879c82ea036ebe58693f785cafac8ab2c5ab83518f
+  after bounded page-by-page verification of all 5 pages of Chao (1978, Can. Mineral.
+  16:561-565), all 10 pages of Ghose, Sen Gupta, and Campana (1987, Am. Mineral. 72:365-374),
+  and page 147 of the September 2026 IMA Master List.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes at Git base 7918502cee65b588f4e0e7cf5bce94d49ba55e51; an independent
+  final-head PR review will be executed prior to merge.'
+- The second reference listed in the September 2026 IMA Master List (Journal of Physical
+  Chemistry B 102 (1998), 4379) was not inspected in full text; this limitation is
+  explicitly disclosed in the record description and no claims from that 1998 study
+  are asserted.
+notes:
+- Executed under the Round 121 bounded source-text workflow (cmmmech-infra-0011, https://github.com/CultureBotAI/CMMMech/issues/840)
+  using <=2-8 KB page excerpts without loading full multi-page PDFs into chat context.
+related_reviews: []
