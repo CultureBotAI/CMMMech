@@ -162,6 +162,10 @@ LINKED_TOKENS = [
      "https://doi.org/10.1016/j.jenvman.2023.119868", "DOI 10.1016/j.jenvman.2023.119868"),
     ("bare 10.1371/journal.pbio.3002726.s002) here",
      "https://doi.org/10.1371/journal.pbio.3002726.s002", "10.1371/journal.pbio.3002726.s002"),
+    # A brace the token never opened closes it; parentheses are cut earlier, so
+    # this is the input the unbalanced-closer trim still decides.
+    ("quote :ref{doi=10.1101/2023.03.28.534373} end", "https://doi.org/10.1101/2023.03.28.534373",
+     "doi=10.1101/2023.03.28.534373"),
     ("pdf at https://example.org/a/b.pdf.", "https://example.org/a/b.pdf",
      "https://example.org/a/b.pdf"),
     ("(https://en.wikipedia.org/wiki/Foo_(bar))", "https://en.wikipedia.org/wiki/Foo_(bar)",
