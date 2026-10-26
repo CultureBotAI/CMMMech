@@ -547,8 +547,10 @@ main {
   min-width: 0;
 }
 @media (max-width: 860px) {
+  /* minmax(0, ...): a bare 1fr track grows to its widest item's min-content,
+     so a wide table opened in the column could widen the page. */
   .browse-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .facet-sidebar {
     position: static;

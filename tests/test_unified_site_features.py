@@ -229,6 +229,26 @@ def test_autolink_stops_at_markdown_syntax(text, hrefs):
     assert page.plain_text() == text
 
 
+PARENTHESIZED_TOKENS = [
+    # Two parenthesized URLs with nothing but "-" between them are two links,
+    # not one href running from the first to the second (TraitMech #2033).
+    ("(https://a.example/x)-(https://b.example/y)", ["https://a.example/x", "https://b.example/y"]),
+    # What the cut leaves behind is scanned again for the next reference.
+    ("(https://a.example/x)-(PMID:12)", ["https://a.example/x", "https://pubmed.ncbi.nlm.nih.gov/12/"]),
+    ("(10.1000/a)-(10.2000/b)", ["https://doi.org/10.1000/a", "https://doi.org/10.2000/b"]),
+    # Parentheses opened inside the token stay in it.
+    ("(https://en.wikipedia.org/wiki/Foo_(bar))", ["https://en.wikipedia.org/wiki/Foo_(bar)"]),
+    ("(see 10.1016/0005-2744(70)90044-4)", ["https://doi.org/10.1016/0005-2744(70)90044-4"]),
+]
+
+
+@pytest.mark.parametrize("text,hrefs", PARENTHESIZED_TOKENS)
+def test_autolink_ends_a_token_at_a_parenthesis_it_never_opened(text, hrefs):
+    page = Page(autolink(text))
+    assert page.hrefs() == hrefs
+    assert page.plain_text() == text
+
+
 def test_record_page_links_references_in_every_prose_field():
     """Each surface the review found carrying plain identifiers, plus the other prose fields."""
     protein = {"uniprot_accession": "UniProtKB:Q747K6", "protein_name": "Synthetic protein",
@@ -593,6 +613,18 @@ def test_header_nav_wraps_whole_words():
     link = section(css, r"\nheader nav a \{.*?\}")
     assert "flex-wrap: wrap" in nav
     assert "white-space: nowrap" in link
+
+
+def test_narrow_layout_column_cannot_outgrow_the_viewport():
+    """A bare 1fr track grows to its widest item's min-content; minmax(0, 1fr) cannot.
+
+    Measured at 320 and 390 px with the map and graph tables open, the page did
+    not widen before this rule either (.browse-main has min-width: 0); this
+    keeps the single-column layout safe for any item, not just that one.
+    """
+    css = (TEMPLATES / "style.css").read_text(encoding="utf-8")
+    narrow = section(css, r"@media \(max-width: 860px\) \{.*?\n\}")
+    assert re.search(r"\.browse-layout \{\s*grid-template-columns: minmax\(0, 1fr\);", narrow)
 
 
 def test_detail_table_cells_keep_whole_words():
