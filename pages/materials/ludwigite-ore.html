@@ -8,20 +8,21 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header>
   <a class="brand" href="../index.html">CMMMech</a>
-  <nav>
+  <nav aria-label="Site">
     <a href="../index.html">Home</a>
     <a href="../browse.html">Browse</a>
     <a href="../map.html">Text map</a>
     <a href="../graph.html">Mechanism graph</a>
-    <a href="../index.json">JSON</a>
-    <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/CMMMech">GitHub</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </header>
-<main>
+<main id="main-content" tabindex="-1">
 <div class="page-top-bar">
   <div class="breadcrumbs">
     <a href="../index.html">CMMMech</a> &gt;
@@ -38,15 +39,31 @@
   Ludwigite boron-iron ore
   <span class="badge" style="font-size: .9rem; vertical-align: middle; margin-left: .4rem;">primary resource</span>
 </h1>
+<p class="record-id">Record ID: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/data/records/ludwigite-ore.yaml"><code>cmmmech:ludwigite-ore</code></a></p>
+
+<div class="review-status">
+  <p><strong>Latest structured review:</strong> <span class="badge">pass with limitations</span>, <time datetime="2026-10-24T02:45:04Z">2026-10-24</time>, category review by an agent reviewer (claude-opus-4-6) · <a href="#structured-reviews">all 4 saved reviews</a></p>
+  <details class="status-meaning">
+    <summary>What this review status means</summary>
+    <p>A structured review is, in the review schema's words, “An immutable, scoped review observation, not permission to curate or proof of scientific truth.” Every saved review that includes this record is listed under <a href="#structured-reviews">Structured reviews</a>, newest first, with its reviewer.</p>
+    <ul>
+      <li>“A valid report does not certify scientific truth or authorize curation, Git publication, paid research, or status promotion.”</li>
+      <li>“Passing verdicts cannot conceal unresolved major/blocker findings or failed required checks.”</li>
+      <li>“An unknown or concerning assessment precludes plain <code>pass</code>; a qualified pass must state its limitations and still positively assess each actually reviewed target.”</li>
+      <li>“A newer clean review does not close an older issue.”</li>
+    </ul>
+    <p class="quote-source">Quoted from <a href="https://github.com/CultureBotAI/CMMMech/blob/main/docs/record-reviews.md">docs/record-reviews.md</a> and <a href="https://github.com/CultureBotAI/CMMMech/blob/main/schema/record_review.yaml">schema/record_review.yaml</a>. <a href="../index.html#curation">How records are curated and reviewed</a>.</p>
+  </details>
+</div>
 
 <p class="lede">Ludwigite ore denotes a heterogeneous boron-bearing iron ore or its beneficiated boron-iron concentrate, represented here by the mixed geological feed used by Liang et al. (2024). It is not the mineral species ludwigite, elemental boron or iron, a borates commodity specification, or the secondary residue left after processing. The experimental substrate for water leaching was a soda-ash-roasted derivative of that concentrate; its altered composition must not be assigned to the original ore. The paper&#39;s Table 2 reports 5.12 wt% B2O3 and 58.23 wt% total iron in this reduced feed, and Figure 9 identifies metallic iron, sodium magnesium silicate, sodium silicate and magnesium-ferrous oxide. Its bulk-feed result cannot establish which individual original boron mineral supplied the dissolved boron. The exact mine/sample identifier and original batch mineral proportions are not established in the inspected 2024 article, which refers to earlier work for the ore characterization. No constituent&#39;s criticality designation is transferred to this resource.</p>
 
 <p style="margin: .4rem 0 1rem; font-size: .9rem; color: var(--muted);">
   <strong>Explore across X-Mech:</strong>
-  <a href="https://culturebotai.github.io/MediaIngredientMech/app/?q=Ludwigite%20boron-iron%20ore">MediaIngredientMech</a> ·
-  <a href="https://culturebotai.github.io/CultureMech/app/?q=Ludwigite%20boron-iron%20ore">CultureMech</a> ·
-  <a href="https://culturebotai.github.io/CommunityMech/?q=Ludwigite%20boron-iron%20ore">CommunityMech</a> ·
-  <a href="https://culturebotai.github.io/HabitatMech/browse.html?q=Ludwigite%20boron-iron%20ore">HabitatMech</a> ·
+  <a href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=Ludwigite%20boron-iron%20ore">MediaIngredientMech</a> ·
+  <a href="https://culturebotai.github.io/CultureMech/app/browser.html?q=Ludwigite%20boron-iron%20ore">CultureMech</a> ·
+  <a href="https://culturebotai.github.io/CommunityMech/browser.html?q=Ludwigite%20boron-iron%20ore">CommunityMech</a> ·
+  <a href="https://culturebotai.github.io/HabitatMech/pages/browse.html?q=Ludwigite%20boron-iron%20ore">HabitatMech</a> ·
   <a href="https://culturebotai.github.io/TraitMech/pages/browse.html?q=Ludwigite%20boron-iron%20ore">TraitMech</a> ·
   <a href="../graph.html?q=Ludwigite%20boron-iron%20ore">CMMMech Network Graph</a>
 </p>
@@ -120,7 +137,7 @@
   <h2>Sources &amp; References</h2>
   <ol style="padding-left: 1.2rem; margin: .4rem 0;">
     <li id="source-liang2024" style="margin-bottom: .6rem; font-size: .92rem;">
-      <strong>liang2024</strong>: Liang B, Hu H, Xiao B, Lu Z, Yuan W and Huang Z (2024), Water Leaching Kinetics of Boron from the Alkali-Activated Ludwigite Ore, Molecules 29(4), 826, DOI 10.3390/molecules29040826; PMID 38398578, PMCID PMC10893144. Complete 18-page publisher PDF and Europe PMC full-text XML acquired; the latter is another representation of the same study. Parameter comparisons sections 2.1.1-2.1.3 and Figures 1-3 pp. 3-5; product/residue Figures 4-6 pp. 6-8; fitted model section 2.3 and Table 1 pp. 9-14; reduced feed Table 2/Figure 9 p. 14; methods sections 3.1-3.2 pp. 14-15; conclusions pp. 15-16. Detailed leach calculation is explicitly delegated to the 2017 study DOI 10.1016/j.hydromet.2016.11.004, whose complete original was not acquired.
+      <strong>liang2024</strong>: Liang B, Hu H, Xiao B, Lu Z, Yuan W and Huang Z (2024), Water Leaching Kinetics of Boron from the Alkali-Activated Ludwigite Ore, Molecules 29(4), 826, <a href="https://doi.org/10.3390/molecules29040826">DOI 10.3390/molecules29040826</a>; <a href="https://pubmed.ncbi.nlm.nih.gov/38398578/">PMID 38398578</a>, PMCID <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC10893144/">PMC10893144</a>. Complete 18-page publisher PDF and Europe PMC full-text XML acquired; the latter is another representation of the same study. Parameter comparisons sections 2.1.1-2.1.3 and Figures 1-3 pp. 3-5; product/residue Figures 4-6 pp. 6-8; fitted model section 2.3 and Table 1 pp. 9-14; reduced feed Table 2/Figure 9 p. 14; methods sections 3.1-3.2 pp. 14-15; conclusions pp. 15-16. Detailed leach calculation is explicitly delegated to the 2017 study <a href="https://doi.org/10.1016/j.hydromet.2016.11.004">DOI 10.1016/j.hydromet.2016.11.004</a>, whose complete original was not acquired.
       <br><a href="https://doi.org/10.3390/molecules29040826" target="_blank" rel="noopener" style="font-size: .85rem; word-break: break-all;">https://doi.org/10.3390/molecules29040826</a>
       <span style="font-size: .82rem; color: var(--muted);">(accessed 2026-10-16)</span>
     </li>
@@ -129,6 +146,7 @@
 
 <div class="detail-section">
   <h2>Curation History</h2>
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Curation history of Ludwigite boron-iron ore" tabindex="0">
   <table style="font-size: .88rem;">
     <thead>
       <tr>
@@ -147,14 +165,66 @@
       </tr>
     </tbody>
   </table>
+  </div>
+</div>
+
+<div class="detail-section" id="structured-reviews">
+  <h2>Structured Reviews (4)</h2>
+  <p class="section-note">Saved review observations that include this record, newest first. Each links its review bundle on GitHub; <code>review.yaml</code> beside it is authoritative.</p>
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Structured reviews of Ludwigite boron-iron ore" tabindex="0">
+  <table style="font-size: .88rem;">
+    <thead>
+      <tr>
+        <th scope="col">Finished</th>
+        <th scope="col">Review</th>
+        <th scope="col">Scope</th>
+        <th scope="col">Verdict</th>
+        <th scope="col">Reviewer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><time datetime="2026-10-24T02:45:04Z">2026-10-24</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261024T024504Z-cycle3-stage4-primary-resource-cohort-review/review.md">Cycle 3 Stage 4 full-cohort review: primary_resource records (31/31)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-22T11:50:04Z">2026-10-22</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261022T115004Z-cycle2-stage4-primary-resource-cohort-review/review.md">Cycle 2 Stage 4 full-cohort review: primary_resource records (31/31)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-22T02:58:04Z">2026-10-22</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261022T025804Z-stage4-primary-resource-cohort-review/review.md">Stage 4 full-cohort review: primary_resource records (31/31)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-16T00:52:14.407079Z">2026-10-16</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261016T005214Z-ludwigite-ore-round107-independent/review.md">Independent scientific review of ludwigite-ore</a></td>
+        <td>record</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (GPT-6)</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
 </div>
 
 <p class="history" style="font-size: .85rem; color: var(--muted); margin-top: 1.5rem;">
   Record source: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/data/records/ludwigite-ore.yaml"><code>data/records/ludwigite-ore.yaml</code></a>
+  · <a href="https://github.com/CultureBotAI/CMMMech/edit/main/data/records/ludwigite-ore.yaml">Edit on GitHub</a>
+  · <a href="https://github.com/CultureBotAI/CMMMech/issues/new?title=Problem%20with%20cmmmech%3Aludwigite-ore&amp;body=https%3A%2F%2Fculturebotai.github.io%2FCMMMech%2Fpages%2Fmaterials%2Fludwigite-ore.html">Report a problem with this record</a>
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (663 materials · 607 mechanisms · latest curation 2026-10-25 · corpus digest <code>9e4e29cfa244</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · <a href="../index.html#downloads">Downloads</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="../schema.html">LinkML schema</a> (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">YAML</a>) · generated by <code>scripts/render_pages.py</code> (663 materials · 607 mechanisms · latest curation 2026-10-25 · corpus digest <code>9e4e29cfa244</code>)</p>
+  <p class="license">Project data: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-DATA">CC BY 4.0</a>. Code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Third-party source material keeps its own terms (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE">licence scope</a>).</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

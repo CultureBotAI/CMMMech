@@ -26,17 +26,38 @@
   <span class="badge badge-critical" style="font-size: .9rem; vertical-align: middle; margin-left: .2rem;">Critical Material</span>
   {% endif %}
 </h1>
+<p class="record-id">Record ID: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/{{ source_path }}"><code>{{ r.id }}</code></a></p>
+
+<div class="review-status">
+  {% if reviews %}
+  {% set latest = reviews[0] %}
+  <p><strong>Latest structured review:</strong> <span class="badge">{{ latest.verdict | replace('_', ' ') }}</span>{% if latest.completion != 'completed' %} ({{ latest.completion }}){% endif %}, <time datetime="{{ latest.finished_at }}">{{ latest.finished_at[:10] }}</time>, {{ latest.kind }} review by {{ 'an' if latest.reviewer_kind[:1] in 'aeiou' else 'a' }} {{ latest.reviewer_kind }} reviewer{% if latest.reviewer_model %} ({{ latest.reviewer_model }}){% endif %}{% if not latest.scientific_review %}; not a scientific review{% endif %} · <a href="#structured-reviews">all {{ reviews|length }} saved review{{ 's' if reviews|length != 1 }}</a></p>
+  {% else %}
+  <p><strong>Structured review:</strong> none is saved for this record.</p>
+  {% endif %}
+  <details class="status-meaning">
+    <summary>What this review status means</summary>
+    <p>A structured review is, in the review schema's words, “{{ quotes.observation[1] }}”{% if reviews %} Every saved review that includes this record is listed under <a href="#structured-reviews">Structured reviews</a>, newest first, with its reviewer.{% endif %}</p>
+    <ul>
+      <li>“{{ quotes.report[1] }}”</li>
+      <li>“{{ quotes.passing[1] }}”</li>
+      <li>“{{ quotes.qualified[1] | inline_code }}”</li>
+      <li>“{{ quotes.newer[1] }}”</li>
+    </ul>
+    <p class="quote-source">Quoted from <a href="https://github.com/CultureBotAI/CMMMech/blob/main/{{ quotes.report[0] }}">{{ quotes.report[0] }}</a> and <a href="https://github.com/CultureBotAI/CMMMech/blob/main/{{ quotes.observation[0] }}">{{ quotes.observation[0] }}</a>. <a href="{{ root }}index.html#curation">How records are curated and reviewed</a>.</p>
+  </details>
+</div>
 
 {% if r.description %}
-<p class="lede">{{ r.description }}</p>
+<p class="lede">{{ r.description | autolink }}</p>
 {% endif %}
 
 <p style="margin: .4rem 0 1rem; font-size: .9rem; color: var(--muted);">
   <strong>Explore across X-Mech:</strong>
-  <a href="https://culturebotai.github.io/MediaIngredientMech/app/?q={{ r.name | urlencode }}">MediaIngredientMech</a> ·
-  <a href="https://culturebotai.github.io/CultureMech/app/?q={{ r.name | urlencode }}">CultureMech</a> ·
-  <a href="https://culturebotai.github.io/CommunityMech/?q={{ r.name | urlencode }}">CommunityMech</a> ·
-  <a href="https://culturebotai.github.io/HabitatMech/browse.html?q={{ r.name | urlencode }}">HabitatMech</a> ·
+  <a href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q={{ r.name | urlencode }}">MediaIngredientMech</a> ·
+  <a href="https://culturebotai.github.io/CultureMech/app/browser.html?q={{ r.name | urlencode }}">CultureMech</a> ·
+  <a href="https://culturebotai.github.io/CommunityMech/browser.html?q={{ r.name | urlencode }}">CommunityMech</a> ·
+  <a href="https://culturebotai.github.io/HabitatMech/pages/browse.html?q={{ r.name | urlencode }}">HabitatMech</a> ·
   <a href="https://culturebotai.github.io/TraitMech/pages/browse.html?q={{ r.name | urlencode }}">TraitMech</a> ·
   <a href="{{ root }}graph.html?q={{ r.name | urlencode }}">CMMMech Network Graph</a>
 </p>
@@ -44,7 +65,8 @@
 {% if r.identifiers %}
 <div class="detail-section">
   <h2>Identifiers &amp; Classification</h2>
-  <table style="margin: .4rem 0;">
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Identifiers of {{ r.name }}" tabindex="0">
+  <table>
     <thead>
       <tr>
         <th scope="col">System</th>
@@ -68,12 +90,14 @@
       {% endfor %}
     </tbody>
   </table>
+  </div>
 </div>
 {% endif %}
 
 {% if r.criticality %}
 <div class="detail-section">
   <h2>Criticality Designations</h2>
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Criticality designations of {{ r.name }}" tabindex="0">
   <table>
     <thead>
       <tr>
@@ -89,7 +113,7 @@
       <tr>
         <td><strong>{{ crit.jurisdiction }}</strong></td>
         <td>{{ crit.list_name }}</td>
-        <td>{{ crit.edition }}</td>
+        <td>{{ crit.edition | autolink }}</td>
         <td><span class="badge badge-critical">{{ crit.classification }}</span></td>
         <td>
           {% if crit.source_ref %}
@@ -102,6 +126,7 @@
       {% endfor %}
     </tbody>
   </table>
+  </div>
 </div>
 {% endif %}
 
@@ -138,29 +163,30 @@
       <strong>Associated Organisms:</strong>
       {% for org in m.organisms %}
         {% if org.url %}
-        <a href="{{ org.url }}" target="_blank" rel="noopener"><em>{{ org.label }}</em> (<code>{{ org.id }}</code>)</a> <a href="https://culturebotai.github.io/TaxonMech/browse.html?q={{ org.label | urlencode }}" title="Search {{ org.label }} in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>{% if not loop.last %}, {% endif %}
+        <a href="{{ org.url }}" target="_blank" rel="noopener"><em>{{ org.label }}</em> (<code>{{ org.id }}</code>)</a> <a href="{{ org | taxonmech_url }}" title="{{ org.label }} in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>{% if not loop.last %}, {% endif %}
         {% else %}
-        <em>{{ org.label }}</em> (<code>{{ org.id }}</code>) <a href="https://culturebotai.github.io/TaxonMech/browse.html?q={{ org.label | urlencode }}" title="Search {{ org.label }} in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>{% if not loop.last %}, {% endif %}
+        <em>{{ org.label }}</em> (<code>{{ org.id }}</code>) <a href="{{ org | taxonmech_url }}" title="{{ org.label }} in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>{% if not loop.last %}, {% endif %}
         {% endif %}
       {% endfor %}
     </p>
     {% endif %}
 
     {% if m.description %}
-    <p style="margin: .5rem 0; font-size: .95rem;">{{ m.description }}</p>
+    <p style="margin: .5rem 0; font-size: .95rem;">{{ m.description | autolink }}</p>
     {% endif %}
 
     {% if m.context %}
     <div style="background: var(--code); border-radius: 6px; padding: .6rem .8rem; margin: .6rem 0; font-size: .88rem;">
       <strong>Experimental Context &amp; Analytical Limits:</strong><br>
-      {{ m.context }}
+      {{ m.context | autolink }}
     </div>
     {% endif %}
 
     {% if m.protein_examples %}
     <div style="margin-top: .7rem;">
       <strong style="font-size: .88rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">UniProt Protein Examples ({{ m.protein_examples|length }}):</strong>
-      <table style="margin: .4rem 0; font-size: .88rem;">
+      <div class="record-table-scroll detail-table-scroll" role="region" aria-label="UniProt protein examples for {{ m.name }}" tabindex="0">
+      <table style="font-size: .88rem;">
         <thead>
           <tr>
             <th scope="col">UniProtKB</th>
@@ -185,10 +211,12 @@
             <td>
               {% if pe.target_organism.id | curie_url %}
               <a href="{{ pe.target_organism.id | curie_url }}" target="_blank" rel="noopener"><em>{{ pe.target_organism.label }}</em></a>
+              <br><span style="font-size: .78rem; color: var(--muted);"><a href="{{ pe.target_organism.id | curie_url }}" target="_blank" rel="noopener"><code>{{ pe.target_organism.id }}</code></a>
               {% else %}
               <em>{{ pe.target_organism.label }}</em>
+              <br><span style="font-size: .78rem; color: var(--muted);"><code>{{ pe.target_organism.id }}</code>
               {% endif %}
-              <br><span style="font-size: .78rem; color: var(--muted);"><code>{{ pe.target_organism.id }}</code>{% if pe.reference_proteome_id %} · {{ pe.reference_proteome_id }}{% endif %}</span>
+              {% if pe.reference_proteome_id %} · {% if pe.reference_proteome_id | proteome_url %}<a href="{{ pe.reference_proteome_id | proteome_url }}" target="_blank" rel="noopener"><code>{{ pe.reference_proteome_id }}</code></a>{% else %}<code>{{ pe.reference_proteome_id }}</code>{% endif %}{% endif %}</span>
             </td>
             <td>
               {% for ec in pe.ec_numbers or [] %}
@@ -224,16 +252,17 @@
               {% endif %}
             </td>
             <td>
-              {{ pe.functional_role }}
+              {{ pe.functional_role | autolink }}
               {% for ev in pe.evidence or [] %}
               {% if ev.source_ref %}[<a href="#source-{{ ev.source_ref }}"><code>{{ ev.source_ref }}</code></a>]{% endif %}
               {% endfor %}
-              {% if pe.annotation_note %}<br><span style="font-size: .82rem; color: var(--muted);">{{ pe.annotation_note }}</span>{% endif %}
+              {% if pe.annotation_note %}<br><span style="font-size: .82rem; color: var(--muted);">{{ pe.annotation_note | autolink }}</span>{% endif %}
             </td>
           </tr>
           {% endfor %}
         </tbody>
       </table>
+      </div>
     </div>
     {% endif %}
 
@@ -250,7 +279,7 @@
           <a href="#source-{{ ev.source_ref }}" style="font-size: .85rem;">Source: <code>{{ ev.source_ref }}</code></a>
           {% endif %}
         </div>
-        <div style="font-size: .9rem;">{{ ev.explanation }}</div>
+        <div style="font-size: .9rem;">{{ ev.explanation | autolink }}</div>
       </div>
       {% endfor %}
     </div>
@@ -267,17 +296,18 @@
   <div class="mechanism-box" id="causal-graph-{{ cg.id }}">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
       <h4 style="margin: 0; font-size: 1.12rem;">{{ cg.name }}</h4>
-      <div>
+      <div class="badge-row">
         <span class="badge">{{ cg.scope | replace('_', ' ') }}</span>
         {% if cg.mechanism_ref %}
-        <a href="#mechanism-{{ cg.mechanism_ref }}" class="badge" style="text-decoration: none;">Mechanism: <code>{{ cg.mechanism_ref }}</code></a>
+        <a href="#mechanism-{{ cg.mechanism_ref }}" class="badge badge-wrap" style="text-decoration: none;">Mechanism: <code>{{ cg.mechanism_ref }}</code></a>
         {% endif %}
       </div>
     </div>
-    <p style="margin: .5rem 0; font-size: .94rem;">{{ cg.description }}</p>
+    <p style="margin: .5rem 0; font-size: .94rem;">{{ cg.description | autolink }}</p>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes ({{ cg.nodes|length }}):</strong>
-    <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
+    <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Causal nodes of {{ cg.name }}" tabindex="0">
+    <table style="font-size: .88rem;">
       <thead>
         <tr>
           <th scope="col">Node</th>
@@ -300,7 +330,7 @@
             {% endif %}
           </td>
           <td>
-            {% if node.description %}<div>{{ node.description }}</div>{% endif %}
+            {% if node.description %}<div>{{ node.description | autolink }}</div>{% endif %}
             {% if node.term %}
             <div style="font-size: .82rem; margin-top: .2rem;">
               Ontology Term:
@@ -319,12 +349,12 @@
                 ({% if pe.entry_name %}{{ pe.entry_name }}, {% endif %}<span class="badge" style="font-size: .7rem;">{{ pe.entry_status }}</span>)
                 — <strong>{{ pe.protein_name }}</strong>
                 {% if pe.gene_symbol %}[<code>{{ pe.gene_symbol }}</code>]{% endif %}
-                in <em>{{ pe.target_organism.label }}</em> (<code>{{ pe.target_organism.id }}</code>){% if pe.reference_proteome_id %} · <code>{{ pe.reference_proteome_id }}</code>{% endif %}.
-                <span>{{ pe.functional_role }}</span>
+                in {% if pe.target_organism.id | curie_url %}<a href="{{ pe.target_organism.id | curie_url }}" target="_blank" rel="noopener"><em>{{ pe.target_organism.label }}</em> (<code>{{ pe.target_organism.id }}</code>)</a>{% else %}<em>{{ pe.target_organism.label }}</em> (<code>{{ pe.target_organism.id }}</code>){% endif %}{% if pe.reference_proteome_id %} · {% if pe.reference_proteome_id | proteome_url %}<a href="{{ pe.reference_proteome_id | proteome_url }}" target="_blank" rel="noopener"><code>{{ pe.reference_proteome_id }}</code></a>{% else %}<code>{{ pe.reference_proteome_id }}</code>{% endif %}{% endif %}.
+                <span>{{ pe.functional_role | autolink }}</span>
                 {% for ev in pe.evidence or [] %}
                 {% if ev.source_ref %}[<a href="#source-{{ ev.source_ref }}"><code>{{ ev.source_ref }}</code></a>]{% endif %}
                 {% endfor %}
-                {% if pe.annotation_note %}<div style="font-size: .8rem; color: var(--muted);">{{ pe.annotation_note }}</div>{% endif %}
+                {% if pe.annotation_note %}<div style="font-size: .8rem; color: var(--muted);">{{ pe.annotation_note | autolink }}</div>{% endif %}
               </div>
               {% endfor %}
             </div>
@@ -334,13 +364,14 @@
         {% endfor %}
       </tbody>
     </table>
+    </div>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Edges ({{ cg.edges|length }}):</strong>
     <ul style="margin: .4rem 0 0; padding-left: 1.2rem; font-size: .88rem;">
       {% for edge in cg.edges %}
       <li style="margin-bottom: .35rem;">
         <code>{{ edge.source }}</code> &rarr; <strong>{{ edge.relationship or edge.predicate }}</strong> (<code>{{ edge.predicate }}</code>) &rarr; <code>{{ edge.target }}</code>
-        {% if edge.description %}: {{ edge.description }}{% endif %}
+        {% if edge.description %}: {{ edge.description | autolink }}{% endif %}
         {% for ev in edge.evidence or [] %}
         {% if ev.source_ref %}[<a href="#source-{{ ev.source_ref }}"><code>{{ ev.source_ref }}</code></a>]{% endif %}
         {% endfor %}
@@ -358,7 +389,7 @@
   <ol style="padding-left: 1.2rem; margin: .4rem 0;">
     {% for s in r.sources %}
     <li id="source-{{ s.id }}" style="margin-bottom: .6rem; font-size: .92rem;">
-      <strong>{{ s.id }}</strong>: {{ s.title }}
+      <strong>{{ s.id }}</strong>: {{ s.title | autolink }}
       {% if s.url %}
       <br><a href="{{ s.url }}" target="_blank" rel="noopener" style="font-size: .85rem; word-break: break-all;">{{ s.url }}</a>
       {% endif %}
@@ -374,6 +405,7 @@
 {% if r.curation_history %}
 <div class="detail-section">
   <h2>Curation History</h2>
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Curation history of {{ r.name }}" tabindex="0">
   <table style="font-size: .88rem;">
     <thead>
       <tr>
@@ -389,15 +421,51 @@
         <td><code>{{ ch.timestamp }}</code></td>
         <td>{{ ch.curator }}</td>
         <td><span class="badge">{{ ch.action }}</span></td>
-        <td>{{ ch.summary }}</td>
+        <td>{{ ch.summary | autolink }}</td>
       </tr>
       {% endfor %}
     </tbody>
   </table>
+  </div>
+</div>
+{% endif %}
+
+{% if reviews %}
+<div class="detail-section" id="structured-reviews">
+  <h2>Structured Reviews ({{ reviews|length }})</h2>
+  <p class="section-note">Saved review observations that include this record, newest first. Each links its review bundle on GitHub; <code>review.yaml</code> beside it is authoritative.</p>
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Structured reviews of {{ r.name }}" tabindex="0">
+  <table style="font-size: .88rem;">
+    <thead>
+      <tr>
+        <th scope="col">Finished</th>
+        <th scope="col">Review</th>
+        <th scope="col">Scope</th>
+        <th scope="col">Verdict</th>
+        <th scope="col">Reviewer</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for rv in reviews %}
+      <tr>
+        <td><time datetime="{{ rv.finished_at }}">{{ rv.finished_at[:10] }}</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/{{ rv.markdown }}">{{ rv.title }}</a></td>
+        <td>{{ rv.kind }}</td>
+        <td><span class="badge">{{ rv.verdict | replace('_', ' ') }}</span>{% if rv.completion != 'completed' %}<br>{{ rv.completion }}{% endif %}{% if not rv.scientific_review %}<br>not a scientific review{% endif %}</td>
+        <td>{{ rv.reviewer_kind }}{% if rv.reviewer_model %} ({{ rv.reviewer_model }}){% endif %}</td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+  </div>
 </div>
 {% endif %}
 
 <p class="history" style="font-size: .85rem; color: var(--muted); margin-top: 1.5rem;">
   Record source: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/{{ source_path }}"><code>{{ source_path }}</code></a>
+  {% if feedback %}
+  · <a href="{{ feedback.edit }}">Edit on GitHub</a>
+  · <a href="{{ feedback.issue }}">Report a problem with this record</a>
+  {% endif %}
 </p>
 {% endblock %}

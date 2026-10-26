@@ -105,8 +105,8 @@
   <a href="{{ root }}browse.html" style="display: inline-block; padding: .6rem 1.4rem; background: var(--accent); color: #fff; border-radius: 8px; font-weight: 600; text-decoration: none;">Browse all {{ total_materials }} materials &rarr;</a>
   <a href="{{ root }}map.html" style="display: inline-block; padding: .6rem 1.2rem; background: var(--card); border: 1px solid var(--line); color: var(--ink); border-radius: 8px; font-weight: 600; text-decoration: none;">2D Embedding Map</a>
   <a href="{{ root }}graph.html" style="display: inline-block; padding: .6rem 1.2rem; background: var(--card); border: 1px solid var(--line); color: var(--ink); border-radius: 8px; font-weight: 600; text-decoration: none;">Mechanism Network Graph</a>
-  <a href="{{ root }}index.json" download style="display: inline-block; padding: .6rem 1.2rem; background: var(--card); border: 1px solid var(--line); color: var(--ink); border-radius: 8px; font-weight: 600; text-decoration: none;">Download JSON ({{ total_materials }})</a>
-  <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml" style="display: inline-block; padding: .6rem 1.2rem; background: var(--card); border: 1px solid var(--line); color: var(--ink); border-radius: 8px; font-weight: 600; text-decoration: none;">LinkML Schema</a>
+  <a href="#downloads" style="display: inline-block; padding: .6rem 1.2rem; background: var(--card); border: 1px solid var(--line); color: var(--ink); border-radius: 8px; font-weight: 600; text-decoration: none;">Downloads</a>
+  <a href="{{ root }}schema.html" style="display: inline-block; padding: .6rem 1.2rem; background: var(--card); border: 1px solid var(--line); color: var(--ink); border-radius: 8px; font-weight: 600; text-decoration: none;">LinkML Schema</a>
 </p>
 
 <h2>Evidence &amp; Curation Contract</h2>
@@ -119,4 +119,41 @@
     <li><strong>Structured provenance:</strong> Records cite their evidence sources and include material or organism identifiers where verified.</li>
   </ul>
 </div>
+
+<section id="curation" class="curation-notice" aria-labelledby="curation-heading">
+  <h2 id="curation-heading">How Records Are Curated and Reviewed</h2>
+  <div class="detail-section">
+    <p>“{{ quotes.reviewed_corpus[1] }}” (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/{{ quotes.reviewed_corpus[0] }}">README</a>). The saved history sessions and reviews record who made each one.</p>
+    <h3>History sessions ({{ "{:,}".format(curation.actors.total) }})</h3>
+    <p>Each saved history session (<code>history/records/</code>) names its actor type: “{{ curation.actors.description }}” By actor type, as the history schema defines each:</p>
+    <dl class="curation-counts">
+      {% for t in curation.actors.types %}
+      <dt><code>{{ t.type }}</code>: {{ "{:,}".format(t.sessions) }} session{{ 's' if t.sessions != 1 }}</dt>
+      <dd>{{ t.description | inline_code }}</dd>
+      {% endfor %}
+    </dl>
+    <h3>Structured reviews ({{ "{:,}".format(curation.reviewers.total) }})</h3>
+    <p>Each saved structured review (<code>reviews/structured/</code>) names its reviewer kind: {% for k in curation.reviewers.kinds %}<code>{{ k.kind }}</code> {{ "{:,}".format(k.reviews) }}{% if not loop.last %}, {% endif %}{% endfor %}. A record page shows its latest saved review and lists every review that includes it, beside what a verdict does and does not establish.</p>
+    {% if curation.human == 0 %}
+    <p><strong>No saved history session has a <code>human</code> actor, and no saved structured review a <code>human</code> reviewer.</strong></p>
+    {% endif %}
+    <ul>
+      <li>“{{ quotes.report[1] }}” (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/{{ quotes.report[0] }}">{{ quotes.report[0] }}</a>)</li>
+      <li>“{{ quotes.sources[1] }}” (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/{{ quotes.sources[0] }}">{{ quotes.sources[0] }}</a>)</li>
+      <li>“{{ quotes.validation[1] }}” (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/{{ quotes.validation[0] }}">README</a>)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="downloads" aria-labelledby="downloads-heading">
+  <h2 id="downloads-heading">Downloads</h2>
+  <div class="detail-section">
+    <ul class="download-list">
+      <li><a href="{{ root }}downloads/cmmmech-records.jsonl.gz" download><strong>All {{ total_materials }} records, complete</strong></a> (<code>cmmmech-records.jsonl.gz</code>): every record as its YAML file states it, one JSON object per line, sorted by id and gzip-compressed. It is generated from this site's commit each time the site is deployed, so it is not stored in the repository. <a href="{{ root }}downloads/manifest.json">manifest.json</a> gives its record count and SHA-256.</li>
+      <li><a href="{{ root }}index.json" download>index.json</a>: a {{ total_materials }}-entry summary for browsing (name, kind, criticality lists, mechanism count, processes, organisms and page), not complete records.</li>
+      <li><a href="{{ root }}corpus_map.json" download>corpus_map.json</a>: the text map's two-dimensional coordinates.</li>
+      <li><a href="{{ root }}schema.html">Schema documentation</a>, generated from the <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> the records follow.</li>
+    </ul>
+  </div>
+</section>
 {% endblock %}

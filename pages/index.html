@@ -8,20 +8,21 @@
 <script src="theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header>
   <a class="brand" href="index.html">CMMMech</a>
-  <nav>
+  <nav aria-label="Site">
     <a href="index.html">Home</a>
     <a href="browse.html">Browse</a>
     <a href="map.html">Text map</a>
     <a href="graph.html">Mechanism graph</a>
-    <a href="index.json">JSON</a>
-    <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">Schema</a>
+    <a href="index.html#downloads">Downloads</a>
+    <a href="schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/CMMMech">GitHub</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </header>
-<main>
+<main id="main-content" tabindex="-1">
 <div class="hero">
   <h1>Critical Materials, Minerals &amp; Microbial Mechanisms</h1>
   <p class="lede">An evidence-backed knowledge base for <strong>critical minerals and materials</strong>, connecting strategic commodities and mineral hosts to <strong>microbial extraction, biomineralization, and recovery mechanisms</strong>.</p>
@@ -335,8 +336,8 @@
   <a href="browse.html" style="display: inline-block; padding: .6rem 1.4rem; background: var(--accent); color: #fff; border-radius: 8px; font-weight: 600; text-decoration: none;">Browse all 663 materials &rarr;</a>
   <a href="map.html" style="display: inline-block; padding: .6rem 1.2rem; background: var(--card); border: 1px solid var(--line); color: var(--ink); border-radius: 8px; font-weight: 600; text-decoration: none;">2D Embedding Map</a>
   <a href="graph.html" style="display: inline-block; padding: .6rem 1.2rem; background: var(--card); border: 1px solid var(--line); color: var(--ink); border-radius: 8px; font-weight: 600; text-decoration: none;">Mechanism Network Graph</a>
-  <a href="index.json" download style="display: inline-block; padding: .6rem 1.2rem; background: var(--card); border: 1px solid var(--line); color: var(--ink); border-radius: 8px; font-weight: 600; text-decoration: none;">Download JSON (663)</a>
-  <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml" style="display: inline-block; padding: .6rem 1.2rem; background: var(--card); border: 1px solid var(--line); color: var(--ink); border-radius: 8px; font-weight: 600; text-decoration: none;">LinkML Schema</a>
+  <a href="#downloads" style="display: inline-block; padding: .6rem 1.2rem; background: var(--card); border: 1px solid var(--line); color: var(--ink); border-radius: 8px; font-weight: 600; text-decoration: none;">Downloads</a>
+  <a href="schema.html" style="display: inline-block; padding: .6rem 1.2rem; background: var(--card); border: 1px solid var(--line); color: var(--ink); border-radius: 8px; font-weight: 600; text-decoration: none;">LinkML Schema</a>
 </p>
 
 <h2>Evidence &amp; Curation Contract</h2>
@@ -349,9 +350,49 @@
     <li><strong>Structured provenance:</strong> Records cite their evidence sources and include material or organism identifiers where verified.</li>
   </ul>
 </div>
+
+<section id="curation" class="curation-notice" aria-labelledby="curation-heading">
+  <h2 id="curation-heading">How Records Are Curated and Reviewed</h2>
+  <div class="detail-section">
+    <p>“Each record has a timestamped scientific review; synthetic test fixtures remain separate.” (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/README.md">README</a>). The saved history sessions and reviews record who made each one.</p>
+    <h3>History sessions (1,013)</h3>
+    <p>Each saved history session (<code>history/records/</code>) names its actor type: “Who or what performed the session.” By actor type, as the history schema defines each:</p>
+    <dl class="curation-counts">
+      <dt><code>human</code>: 0 sessions</dt>
+      <dd>A person working directly.</dd>
+      <dt><code>ai_agent</code>: 1,013 sessions</dt>
+      <dd>An LLM-driven agent, whether human-supervised or autonomous.</dd>
+      <dt><code>automation</code>: 0 sessions</dt>
+      <dd>A deterministic script or scheduled job with no model in the loop — a cron scan, a regeneration step.</dd>
+      <dt><code>other</code>: 0 sessions</dt>
+      <dd>Anything else.</dd>
+    </dl>
+    <h3>Structured reviews (844)</h3>
+    <p>Each saved structured review (<code>reviews/structured/</code>) names its reviewer kind: <code>human</code> 0, <code>agent</code> 844, <code>deterministic</code> 0. A record page shows its latest saved review and lists every review that includes it, beside what a verdict does and does not establish.</p>
+    <p><strong>No saved history session has a <code>human</code> actor, and no saved structured review a <code>human</code> reviewer.</strong></p>
+    <ul>
+      <li>“A valid report does not certify scientific truth or authorize curation, Git publication, paid research, or status promotion.” (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/docs/record-reviews.md">docs/record-reviews.md</a>)</li>
+      <li>“Sources establish provenance; they do not imply that an agent has verified the publication or that every claim in it is correct.” (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/docs/records.md">docs/records.md</a>)</li>
+      <li>“Validation is not scientific verification.” (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/README.md">README</a>)</li>
+    </ul>
+  </div>
+</section>
+
+<section id="downloads" aria-labelledby="downloads-heading">
+  <h2 id="downloads-heading">Downloads</h2>
+  <div class="detail-section">
+    <ul class="download-list">
+      <li><a href="downloads/cmmmech-records.jsonl.gz" download><strong>All 663 records, complete</strong></a> (<code>cmmmech-records.jsonl.gz</code>): every record as its YAML file states it, one JSON object per line, sorted by id and gzip-compressed. It is generated from this site's commit each time the site is deployed, so it is not stored in the repository. <a href="downloads/manifest.json">manifest.json</a> gives its record count and SHA-256.</li>
+      <li><a href="index.json" download>index.json</a>: a 663-entry summary for browsing (name, kind, criticality lists, mechanism count, processes, organisms and page), not complete records.</li>
+      <li><a href="corpus_map.json" download>corpus_map.json</a>: the text map's two-dimensional coordinates.</li>
+      <li><a href="schema.html">Schema documentation</a>, generated from the <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> the records follow.</li>
+    </ul>
+  </div>
+</section>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="index.json" download>Download index.json</a> · <a href="corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (663 materials · 607 mechanisms · latest curation 2026-10-25 · corpus digest <code>9e4e29cfa244</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · <a href="index.html#downloads">Downloads</a> · <a href="index.json" download>Download index.json</a> · <a href="corpus_map.json" download>Download corpus_map.json</a> · <a href="schema.html">LinkML schema</a> (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">YAML</a>) · generated by <code>scripts/render_pages.py</code> (663 materials · 607 mechanisms · latest curation 2026-10-25 · corpus digest <code>9e4e29cfa244</code>)</p>
+  <p class="license">Project data: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-DATA">CC BY 4.0</a>. Code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Third-party source material keeps its own terms (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE">licence scope</a>).</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

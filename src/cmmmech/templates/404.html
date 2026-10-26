@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+{#- The Pages workflow copies this page to the artifact root, and GitHub serves
+    it for a missing address at any depth. A relative link would resolve
+    against the address that was asked for, so root is site-root-absolute and
+    no link here may be relative. -#}
+{% block title %}Page not found · CMMMech{% endblock %}
+{% block content %}
+<div class="breadcrumbs">
+  <a href="{{ root }}index.html">CMMMech</a> &gt; <span>Page not found</span>
+</div>
+
+<h1>Page not found</h1>
+<p class="lede">Nothing is published at this address. It may be mistyped, or the page may have
+  moved: a material page is addressed by its record file name, so a renamed record has a new address.</p>
+
+<form class="hero-search not-found-search" action="{{ root }}browse.html" method="get" role="search">
+  <label for="not-found-query">Search all materials</label>
+  <input id="not-found-query" type="search" name="q" placeholder="Name, identifier, formula, organism, process…">
+  <button type="submit">Search</button>
+</form>
+
+<ul class="not-found-links">
+  <li><a href="{{ root }}index.html">CMMMech home</a></li>
+  <li><a href="{{ root }}browse.html">Browse every material record</a></li>
+  <li><a href="{{ root }}map.html">Text map</a> and <a href="{{ root }}graph.html">mechanism graph</a></li>
+  <li><a href="{{ root }}schema.html">Schema documentation</a></li>
+  <li><a href="https://culturebotai.github.io/mechs/">All Mech projects</a></li>
+</ul>
+{% endblock %}
