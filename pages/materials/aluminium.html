@@ -8,20 +8,21 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header>
   <a class="brand" href="../index.html">CMMMech</a>
-  <nav>
+  <nav aria-label="Site">
     <a href="../index.html">Home</a>
     <a href="../browse.html">Browse</a>
     <a href="../map.html">Text map</a>
     <a href="../graph.html">Mechanism graph</a>
-    <a href="../index.json">JSON</a>
-    <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/CMMMech">GitHub</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </header>
-<main>
+<main id="main-content" tabindex="-1">
 <div class="page-top-bar">
   <div class="breadcrumbs">
     <a href="../index.html">CMMMech</a> &gt;
@@ -39,22 +40,39 @@
   <span class="badge" style="font-size: .9rem; vertical-align: middle; margin-left: .4rem;">element</span>
   <span class="badge badge-critical" style="font-size: .9rem; vertical-align: middle; margin-left: .2rem;">Critical Material</span>
 </h1>
+<p class="record-id">Record ID: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/data/records/aluminium.yaml"><code>cmmmech:aluminium</code></a></p>
+
+<div class="review-status">
+  <p><strong>Latest structured review:</strong> <span class="badge">pass with limitations</span>, <time datetime="2026-10-24T02:45:06Z">2026-10-24</time>, category review by an agent reviewer (claude-opus-4-6) · <a href="#structured-reviews">all 6 saved reviews</a></p>
+  <details class="status-meaning">
+    <summary>What this review status means</summary>
+    <p>A structured review is, in the review schema's words, “An immutable, scoped review observation, not permission to curate or proof of scientific truth.” Every saved review that includes this record is listed under <a href="#structured-reviews">Structured reviews</a>, newest first, with its reviewer.</p>
+    <ul>
+      <li>“A valid report does not certify scientific truth or authorize curation, Git publication, paid research, or status promotion.”</li>
+      <li>“Passing verdicts cannot conceal unresolved major/blocker findings or failed required checks.”</li>
+      <li>“An unknown or concerning assessment precludes plain <code>pass</code>; a qualified pass must state its limitations and still positively assess each actually reviewed target.”</li>
+      <li>“A newer clean review does not close an older issue.”</li>
+    </ul>
+    <p class="quote-source">Quoted from <a href="https://github.com/CultureBotAI/CMMMech/blob/main/docs/record-reviews.md">docs/record-reviews.md</a> and <a href="https://github.com/CultureBotAI/CMMMech/blob/main/schema/record_review.yaml">schema/record_review.yaml</a>. <a href="../index.html#curation">How records are curated and reviewed</a>.</p>
+  </details>
+</div>
 
 <p class="lede">Aluminium (Al), the chemical element, distinct from its ions, alumina, bauxite ores and red-mud wastes. The dated US designation maps the named aluminum commodity to this element without assigning criticality to every Al-bearing material. The curated mechanism concerns laboratory aluminium mobilization from a mixed red-mud sample, not production of aluminium metal.</p>
 
 <p style="margin: .4rem 0 1rem; font-size: .9rem; color: var(--muted);">
   <strong>Explore across X-Mech:</strong>
-  <a href="https://culturebotai.github.io/MediaIngredientMech/app/?q=Aluminium">MediaIngredientMech</a> ·
-  <a href="https://culturebotai.github.io/CultureMech/app/?q=Aluminium">CultureMech</a> ·
-  <a href="https://culturebotai.github.io/CommunityMech/?q=Aluminium">CommunityMech</a> ·
-  <a href="https://culturebotai.github.io/HabitatMech/browse.html?q=Aluminium">HabitatMech</a> ·
+  <a href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=Aluminium">MediaIngredientMech</a> ·
+  <a href="https://culturebotai.github.io/CultureMech/app/browser.html?q=Aluminium">CultureMech</a> ·
+  <a href="https://culturebotai.github.io/CommunityMech/browser.html?q=Aluminium">CommunityMech</a> ·
+  <a href="https://culturebotai.github.io/HabitatMech/pages/browse.html?q=Aluminium">HabitatMech</a> ·
   <a href="https://culturebotai.github.io/TraitMech/pages/browse.html?q=Aluminium">TraitMech</a> ·
   <a href="../graph.html?q=Aluminium">CMMMech Network Graph</a>
 </p>
 
 <div class="detail-section">
   <h2>Identifiers &amp; Classification</h2>
-  <table style="margin: .4rem 0;">
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Identifiers of Aluminium" tabindex="0">
+  <table>
     <thead>
       <tr>
         <th scope="col">System</th>
@@ -72,10 +90,12 @@
       </tr>
     </tbody>
   </table>
+  </div>
 </div>
 
 <div class="detail-section">
   <h2>Criticality Designations</h2>
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Criticality designations of Aluminium" tabindex="0">
   <table>
     <thead>
       <tr>
@@ -98,6 +118,7 @@
       </tr>
     </tbody>
   </table>
+  </div>
 </div>
 
 <div class="detail-section">
@@ -123,7 +144,7 @@
 
     <p style="margin: .4rem 0 .2rem; font-size: .92rem;">
       <strong>Associated Organisms:</strong>
-        <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061" target="_blank" rel="noopener"><em>Aspergillus niger</em> (<code>NCBITaxon:5061</code>)</a> <a href="https://culturebotai.github.io/TaxonMech/browse.html?q=Aspergillus%20niger" title="Search Aspergillus niger in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>    </p>
+        <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061" target="_blank" rel="noopener"><em>Aspergillus niger</em> (<code>NCBITaxon:5061</code>)</a> <a href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon:5061" title="Aspergillus niger in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>    </p>
 
     <p style="margin: .5rem 0; font-size: .95rem;">Growing fungal isolate G-10 mobilized aluminium from red mud while acidifying the medium and accumulating organic acids. Synthetic acid mixtures also leached aluminium, supporting a contribution from extracellular chemistry without demonstrating that live fungal contact is required or resolving a specific enzyme mechanism.</p>
 
@@ -134,7 +155,8 @@
 
     <div style="margin-top: .7rem;">
       <strong style="font-size: .88rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">UniProt Protein Examples (1):</strong>
-      <table style="margin: .4rem 0; font-size: .88rem;">
+      <div class="record-table-scroll detail-table-scroll" role="region" aria-label="UniProt protein examples for Aspergillus-associated aluminium leaching from red mud" tabindex="0">
+      <table style="font-size: .88rem;">
         <thead>
           <tr>
             <th scope="col">UniProtKB</th>
@@ -155,7 +177,8 @@
 <br>Gene: <code>cexA</code>            </td>
             <td>
               <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061" target="_blank" rel="noopener"><em>Aspergillus niger</em></a>
-              <br><span style="font-size: .78rem; color: var(--muted);"><code>NCBITaxon:5061</code></span>
+              <br><span style="font-size: .78rem; color: var(--muted);"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061" target="_blank" rel="noopener"><code>NCBITaxon:5061</code></a>
+</span>
             </td>
             <td>
               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR011701" target="_blank" rel="noopener"><code>InterPro:IPR011701</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR020846" target="_blank" rel="noopener"><code>InterPro:IPR020846</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR036259" target="_blank" rel="noopener"><code>InterPro:IPR036259</code></a><br>              <a href="https://www.ebi.ac.uk/interpro/entry/pfam/PF07690" target="_blank" rel="noopener"><code>Pfam:PF07690</code></a>            </td>
@@ -165,6 +188,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
 
     <div style="margin-top: .6rem;">
@@ -196,15 +220,16 @@
   <div class="mechanism-box" id="causal-graph-fungal_aluminium_mobilization_red_mud_graph">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
       <h4 style="margin: 0; font-size: 1.12rem;">Aspergillus niger G-10 organic-acid bioleaching of aluminium from Ajka red mud</h4>
-      <div>
+      <div class="badge-row">
         <span class="badge">REPRESENTATIVE EXAMPLE</span>
-        <a href="#mechanism-fungal_aluminium_mobilization_red_mud" class="badge" style="text-decoration: none;">Mechanism: <code>fungal_aluminium_mobilization_red_mud</code></a>
+        <a href="#mechanism-fungal_aluminium_mobilization_red_mud" class="badge badge-wrap" style="text-decoration: none;">Mechanism: <code>fungal_aluminium_mobilization_red_mud</code></a>
       </div>
     </div>
     <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking Aspergillus niger G-10 citric and oxalic acid secretion (28.6 mmol/L citric acid, 16.0 mmol/L oxalic acid, pH 2.3) to solubilization of Al-bearing phases in Ajka red mud and mobilization of ~141 mg/L filter-passing aluminium.</p>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (4):</strong>
-    <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
+    <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Causal nodes of Aspergillus niger G-10 organic-acid bioleaching of aluminium from Ajka red mud" tabindex="0">
+    <table style="font-size: .88rem;">
       <thead>
         <tr>
           <th scope="col">Node</th>
@@ -228,7 +253,7 @@
                 <a href="https://www.uniprot.org/uniprotkb/A0A254TZW7" target="_blank" rel="noopener"><code>UniProtKB:A0A254TZW7</code></a>
                 (CEXA_ASPNG, <span class="badge" style="font-size: .7rem;">SWISS_PROT</span>)
                 — <strong>Citrate exporter A</strong>
-[<code>cexA</code>]                in <em>Aspergillus niger</em> (<code>NCBITaxon:5061</code>).
+[<code>cexA</code>]                in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061" target="_blank" rel="noopener"><em>Aspergillus niger</em> (<code>NCBITaxon:5061</code>)</a>.
                 <span>Plasma-membrane MFS citrate exporter CexA that secretes intracellularly synthesized citric acid into the extracellular medium, driving organic-acid acidification and metal chelation.</span>
 [<a href="#source-urik2015"><code>urik2015</code></a>]<div style="font-size: .8rem; color: var(--muted);">Grounded to reviewed Swiss-Prot entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) for Aspergillus niger (NCBITaxon:5061).</div>              </div>
             </div>
@@ -272,6 +297,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Edges (3):</strong>
     <ul style="margin: .4rem 0 0; padding-left: 1.2rem; font-size: .88rem;">
@@ -302,7 +328,7 @@
       <span style="font-size: .82rem; color: var(--muted);">(accessed 2026-10-11)</span>
     </li>
     <li id="source-urik2015" style="margin-bottom: .6rem; font-size: .92rem;">
-      <strong>urik2015</strong>: Urik, Bujdos, Milova-Ziakova, Mikusova, Slovak and Matus (2015). Aluminium leaching from red mud by filamentous fungi. Journal of Inorganic Biochemistry 152:154-159. DOI 10.1016/j.jinorgbio.2015.08.022; Sections 2.1-2.5, 3.1, 3.3-3.5, Table 1 and Figures 3, 7-8.
+      <strong>urik2015</strong>: Urik, Bujdos, Milova-Ziakova, Mikusova, Slovak and Matus (2015). Aluminium leaching from red mud by filamentous fungi. Journal of Inorganic Biochemistry 152:154-159. <a href="https://doi.org/10.1016/j.jinorgbio.2015.08.022">DOI 10.1016/j.jinorgbio.2015.08.022</a>; Sections 2.1-2.5, 3.1, 3.3-3.5, Table 1 and Figures 3, 7-8.
       <br><a href="https://doi.org/10.1016/j.jinorgbio.2015.08.022" target="_blank" rel="noopener" style="font-size: .85rem; word-break: break-all;">https://doi.org/10.1016/j.jinorgbio.2015.08.022</a>
       <span style="font-size: .82rem; color: var(--muted);">(accessed 2026-10-11)</span>
     </li>
@@ -321,6 +347,7 @@
 
 <div class="detail-section">
   <h2>Curation History</h2>
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Curation history of Aluminium" tabindex="0">
   <table style="font-size: .88rem;">
     <thead>
       <tr>
@@ -345,14 +372,80 @@
       </tr>
     </tbody>
   </table>
+  </div>
+</div>
+
+<div class="detail-section" id="structured-reviews">
+  <h2>Structured Reviews (6)</h2>
+  <p class="section-note">Saved review observations that include this record, newest first. Each links its review bundle on GitHub; <code>review.yaml</code> beside it is authoritative.</p>
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Structured reviews of Aluminium" tabindex="0">
+  <table style="font-size: .88rem;">
+    <thead>
+      <tr>
+        <th scope="col">Finished</th>
+        <th scope="col">Review</th>
+        <th scope="col">Scope</th>
+        <th scope="col">Verdict</th>
+        <th scope="col">Reviewer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><time datetime="2026-10-24T02:45:06Z">2026-10-24</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261024T024506Z-cycle3-stage4-causal-graphs-cohort-review/review.md">Cycle 3 Stage 4 cross-cohort review: causal_graphs and UniProt protein_examples records (104/104)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-24T02:45:00Z">2026-10-24</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261024T024500Z-cycle3-stage4-element-cohort-review/review.md">Cycle 3 Stage 4 full-cohort review: element records (66/66)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-22T11:50:06Z">2026-10-22</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261022T115006Z-cycle2-stage4-causal-graphs-cohort-review/review.md">Cycle 2 Stage 4 cross-cohort review: causal_graphs and UniProt protein_examples records (89/89)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-22T11:50:00Z">2026-10-22</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261022T115000Z-cycle2-stage4-element-cohort-review/review.md">Cycle 2 Stage 4 full-cohort review: element records (66/66)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-22T02:58:00Z">2026-10-22</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261022T025800Z-stage4-element-cohort-review/review.md">Stage 4 full-cohort review: element records (66/66)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-11T05:44:56Z">2026-10-11</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261011T054456Z-aluminium-round6-independent/review.md">Aluminium independent primary-evidence review</a></td>
+        <td>record</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (GPT-6)</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
 </div>
 
 <p class="history" style="font-size: .85rem; color: var(--muted); margin-top: 1.5rem;">
   Record source: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/data/records/aluminium.yaml"><code>data/records/aluminium.yaml</code></a>
+  · <a href="https://github.com/CultureBotAI/CMMMech/edit/main/data/records/aluminium.yaml">Edit on GitHub</a>
+  · <a href="https://github.com/CultureBotAI/CMMMech/issues/new?title=Problem%20with%20cmmmech%3Aaluminium&amp;body=https%3A%2F%2Fculturebotai.github.io%2FCMMMech%2Fpages%2Fmaterials%2Faluminium.html">Report a problem with this record</a>
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (663 materials · 607 mechanisms · latest curation 2026-10-25 · corpus digest <code>9e4e29cfa244</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · <a href="../index.html#downloads">Downloads</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="../schema.html">LinkML schema</a> (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">YAML</a>) · generated by <code>scripts/render_pages.py</code> (663 materials · 607 mechanisms · latest curation 2026-10-25 · corpus digest <code>9e4e29cfa244</code>)</p>
+  <p class="license">Project data: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-DATA">CC BY 4.0</a>. Code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Third-party source material keeps its own terms (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE">licence scope</a>).</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

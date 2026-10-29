@@ -16,6 +16,7 @@
       row: row,
       idx: idx,
       name: row.dataset.name || (row.textContent || '').trim().toLowerCase(),
+      id: (row.dataset.id || '').toLowerCase(),
       text: (row.textContent + ' ' + (row.dataset.search || '')).toLowerCase(),
       kind: row.dataset.kind || '',
       mechanism: (row.dataset.mechanisms || '').split(' '),
@@ -80,11 +81,15 @@
     var selectedCrit = criticality ? criticality.value : '';
     var selectedSort = sortSelect ? sortSelect.value : 'name-asc';
     var visible = 0;
+    // A query that is exactly a record's own id finds that record alone: a slug
+    // can begin another slug (cmmmech:cobalt, cmmmech:cobaltite), so a substring
+    // match would answer one identifier with several records.
+    var exactId = term && rows.some(function (r) { return r.id === term; }) ? term : '';
 
     sortRows(selectedSort);
 
     rows.forEach(function (r) {
-      var matchText = !term || r.text.indexOf(term) !== -1;
+      var matchText = exactId ? r.id === exactId : (!term || r.text.indexOf(term) !== -1);
       var matchKind = !selectedKind || r.kind === selectedKind;
       var matchMech = !selectedMech || r.mechanism.indexOf(selectedMech) !== -1;
       var matchCrit = !selectedCrit || (selectedCrit === 'critical' ? r.critical === 'true' : r.critical !== 'true');

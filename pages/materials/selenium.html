@@ -8,20 +8,21 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header>
   <a class="brand" href="../index.html">CMMMech</a>
-  <nav>
+  <nav aria-label="Site">
     <a href="../index.html">Home</a>
     <a href="../browse.html">Browse</a>
     <a href="../map.html">Text map</a>
     <a href="../graph.html">Mechanism graph</a>
-    <a href="../index.json">JSON</a>
-    <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/CMMMech">GitHub</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </header>
-<main>
+<main id="main-content" tabindex="-1">
 <div class="page-top-bar">
   <div class="breadcrumbs">
     <a href="../index.html">CMMMech</a> &gt;
@@ -39,22 +40,39 @@
   <span class="badge" style="font-size: .9rem; vertical-align: middle; margin-left: .4rem;">element</span>
   <span class="badge badge-critical" style="font-size: .9rem; vertical-align: middle; margin-left: .2rem;">Critical Material</span>
 </h1>
+<p class="record-id">Record ID: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/data/records/selenium.yaml"><code>cmmmech:selenium</code></a></p>
+
+<div class="review-status">
+  <p><strong>Latest structured review:</strong> <span class="badge">pass with limitations</span>, <time datetime="2026-10-24T02:45:06Z">2026-10-24</time>, category review by an agent reviewer (claude-opus-4-6) · <a href="#structured-reviews">all 7 saved reviews</a></p>
+  <details class="status-meaning">
+    <summary>What this review status means</summary>
+    <p>A structured review is, in the review schema's words, “An immutable, scoped review observation, not permission to curate or proof of scientific truth.” Every saved review that includes this record is listed under <a href="#structured-reviews">Structured reviews</a>, newest first, with its reviewer.</p>
+    <ul>
+      <li>“A valid report does not certify scientific truth or authorize curation, Git publication, paid research, or status promotion.”</li>
+      <li>“Passing verdicts cannot conceal unresolved major/blocker findings or failed required checks.”</li>
+      <li>“An unknown or concerning assessment precludes plain <code>pass</code>; a qualified pass must state its limitations and still positively assess each actually reviewed target.”</li>
+      <li>“A newer clean review does not close an older issue.”</li>
+    </ul>
+    <p class="quote-source">Quoted from <a href="https://github.com/CultureBotAI/CMMMech/blob/main/docs/record-reviews.md">docs/record-reviews.md</a> and <a href="https://github.com/CultureBotAI/CMMMech/blob/main/schema/record_review.yaml">schema/record_review.yaml</a>. <a href="../index.html#curation">How records are curated and reviewed</a>.</p>
+  </details>
+</div>
 
 <p class="lede">Selenium (Se), chemical element with atomic number 34. The experimental substrate is soluble selenite, distinct from the element identifier, a selenium mineral, or a secondary resource. Australia&#39;s dated selenium material designation is mapped to this element without extending it to salts.</p>
 
 <p style="margin: .4rem 0 1rem; font-size: .9rem; color: var(--muted);">
   <strong>Explore across X-Mech:</strong>
-  <a href="https://culturebotai.github.io/MediaIngredientMech/app/?q=Selenium">MediaIngredientMech</a> ·
-  <a href="https://culturebotai.github.io/CultureMech/app/?q=Selenium">CultureMech</a> ·
-  <a href="https://culturebotai.github.io/CommunityMech/?q=Selenium">CommunityMech</a> ·
-  <a href="https://culturebotai.github.io/HabitatMech/browse.html?q=Selenium">HabitatMech</a> ·
+  <a href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=Selenium">MediaIngredientMech</a> ·
+  <a href="https://culturebotai.github.io/CultureMech/app/browser.html?q=Selenium">CultureMech</a> ·
+  <a href="https://culturebotai.github.io/CommunityMech/browser.html?q=Selenium">CommunityMech</a> ·
+  <a href="https://culturebotai.github.io/HabitatMech/pages/browse.html?q=Selenium">HabitatMech</a> ·
   <a href="https://culturebotai.github.io/TraitMech/pages/browse.html?q=Selenium">TraitMech</a> ·
   <a href="../graph.html?q=Selenium">CMMMech Network Graph</a>
 </p>
 
 <div class="detail-section">
   <h2>Identifiers &amp; Classification</h2>
-  <table style="margin: .4rem 0;">
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Identifiers of Selenium" tabindex="0">
+  <table>
     <thead>
       <tr>
         <th scope="col">System</th>
@@ -72,10 +90,12 @@
       </tr>
     </tbody>
   </table>
+  </div>
 </div>
 
 <div class="detail-section">
   <h2>Criticality Designations</h2>
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Criticality designations of Selenium" tabindex="0">
   <table>
     <thead>
       <tr>
@@ -98,6 +118,7 @@
       </tr>
     </tbody>
   </table>
+  </div>
 </div>
 
 <div class="detail-section">
@@ -123,7 +144,7 @@
 
     <p style="margin: .4rem 0 .2rem; font-size: .92rem;">
       <strong>Associated Organisms:</strong>
-        <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586" target="_blank" rel="noopener"><em>Shewanella oneidensis MR-1</em> (<code>NCBITaxon:211586</code>)</a> <a href="https://culturebotai.github.io/TaxonMech/browse.html?q=Shewanella%20oneidensis%20MR-1" title="Search Shewanella oneidensis MR-1 in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>    </p>
+        <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586" target="_blank" rel="noopener"><em>Shewanella oneidensis MR-1</em> (<code>NCBITaxon:211586</code>)</a> <a href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon:211586" title="Shewanella oneidensis MR-1 in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>    </p>
 
     <p style="margin: .5rem 0; font-size: .95rem;">Washed Shewanella oneidensis MR-1 cells transformed selenite to selenium-associated particles, with XPS supporting elemental Se in the analyzed cell fraction. Gene-deletion phenotypes support FccA and CymA involvement under the tested conditions; they do not prove an exclusive pathway or direct catalysis by purified FccA.</p>
 
@@ -134,7 +155,8 @@
 
     <div style="margin-top: .7rem;">
       <strong style="font-size: .88rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">UniProt Protein Examples (3):</strong>
-      <table style="margin: .4rem 0; font-size: .88rem;">
+      <div class="record-table-scroll detail-table-scroll" role="region" aria-label="UniProt protein examples for Non-growing MR-1 selenite reduction with conditional FccA and CymA involvement" tabindex="0">
+      <table style="font-size: .88rem;">
         <thead>
           <tr>
             <th scope="col">UniProtKB</th>
@@ -155,10 +177,11 @@
 <br>Gene: <code>fccA</code>            </td>
             <td>
               <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586" target="_blank" rel="noopener"><em>Shewanella oneidensis MR-1</em></a>
-              <br><span style="font-size: .78rem; color: var(--muted);"><code>NCBITaxon:211586</code> · UP000008186</span>
+              <br><span style="font-size: .78rem; color: var(--muted);"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586" target="_blank" rel="noopener"><code>NCBITaxon:211586</code></a>
+ · <a href="https://www.uniprot.org/proteomes/UP000008186" target="_blank" rel="noopener"><code>UP000008186</code></a></span>
             </td>
             <td>
-              <a href="https://www.ebi.ac.uk/intenz/query?cmd=SearchEC&amp;ec=1.3.2.4" target="_blank" rel="noopener"><code>EC:1.3.2.4</code></a><br>              <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR003953" target="_blank" rel="noopener"><code>InterPro:IPR003953</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR050315" target="_blank" rel="noopener"><code>InterPro:IPR050315</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR036188" target="_blank" rel="noopener"><code>InterPro:IPR036188</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR010960" target="_blank" rel="noopener"><code>InterPro:IPR010960</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR036280" target="_blank" rel="noopener"><code>InterPro:IPR036280</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR027477" target="_blank" rel="noopener"><code>InterPro:IPR027477</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR012286" target="_blank" rel="noopener"><code>InterPro:IPR012286</code></a><br>              <a href="https://www.ebi.ac.uk/interpro/entry/pfam/PF14537" target="_blank" rel="noopener"><code>Pfam:PF14537</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/pfam/PF00890" target="_blank" rel="noopener"><code>Pfam:PF00890</code></a>            </td>
+              <a href="https://enzyme.expasy.org/EC/1.3.2.4" target="_blank" rel="noopener"><code>EC:1.3.2.4</code></a><br>              <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR003953" target="_blank" rel="noopener"><code>InterPro:IPR003953</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR050315" target="_blank" rel="noopener"><code>InterPro:IPR050315</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR036188" target="_blank" rel="noopener"><code>InterPro:IPR036188</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR010960" target="_blank" rel="noopener"><code>InterPro:IPR010960</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR036280" target="_blank" rel="noopener"><code>InterPro:IPR036280</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR027477" target="_blank" rel="noopener"><code>InterPro:IPR027477</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR012286" target="_blank" rel="noopener"><code>InterPro:IPR012286</code></a><br>              <a href="https://www.ebi.ac.uk/interpro/entry/pfam/PF14537" target="_blank" rel="noopener"><code>Pfam:PF14537</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/pfam/PF00890" target="_blank" rel="noopener"><code>Pfam:PF00890</code></a>            </td>
             <td>
               Periplasmic tetraheme flavocytochrome c fumarate reductase FccA (EC 1.3.2.4; SO_0970) acting as the principal periplasmic selenite Se(IV) reductase in non-growing MR-1 cells.
 [<a href="#source-li_2014"><code>li_2014</code></a>]            </td>
@@ -173,10 +196,11 @@
 <br>Gene: <code>cymA</code>            </td>
             <td>
               <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586" target="_blank" rel="noopener"><em>Shewanella oneidensis MR-1</em></a>
-              <br><span style="font-size: .78rem; color: var(--muted);"><code>NCBITaxon:211586</code> · UP000008186</span>
+              <br><span style="font-size: .78rem; color: var(--muted);"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586" target="_blank" rel="noopener"><code>NCBITaxon:211586</code></a>
+ · <a href="https://www.uniprot.org/proteomes/UP000008186" target="_blank" rel="noopener"><code>UP000008186</code></a></span>
             </td>
             <td>
-              <a href="https://www.ebi.ac.uk/intenz/query?cmd=SearchEC&amp;ec=7.1.1.8" target="_blank" rel="noopener"><code>EC:7.1.1.8</code></a><br>              <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR051174" target="_blank" rel="noopener"><code>InterPro:IPR051174</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR036280" target="_blank" rel="noopener"><code>InterPro:IPR036280</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR024717" target="_blank" rel="noopener"><code>InterPro:IPR024717</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR005126" target="_blank" rel="noopener"><code>InterPro:IPR005126</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR038266" target="_blank" rel="noopener"><code>InterPro:IPR038266</code></a><br>              <a href="https://www.ebi.ac.uk/interpro/entry/pfam/PF03264" target="_blank" rel="noopener"><code>Pfam:PF03264</code></a>            </td>
+              <a href="https://enzyme.expasy.org/EC/7.1.1.8" target="_blank" rel="noopener"><code>EC:7.1.1.8</code></a><br>              <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR051174" target="_blank" rel="noopener"><code>InterPro:IPR051174</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR036280" target="_blank" rel="noopener"><code>InterPro:IPR036280</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR024717" target="_blank" rel="noopener"><code>InterPro:IPR024717</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR005126" target="_blank" rel="noopener"><code>InterPro:IPR005126</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR038266" target="_blank" rel="noopener"><code>InterPro:IPR038266</code></a><br>              <a href="https://www.ebi.ac.uk/interpro/entry/pfam/PF03264" target="_blank" rel="noopener"><code>Pfam:PF03264</code></a>            </td>
             <td>
               Inner-membrane tetraheme c-type menaquinol dehydrogenase CymA (EC 7.1.1.8; SO_4591) delivering electrons from the menaquinol pool to periplasmic FccA during selenite reduction.
 [<a href="#source-li_2014"><code>li_2014</code></a>]            </td>
@@ -191,7 +215,8 @@
 <br>Gene: <code>mtrC</code>            </td>
             <td>
               <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586" target="_blank" rel="noopener"><em>Shewanella oneidensis MR-1</em></a>
-              <br><span style="font-size: .78rem; color: var(--muted);"><code>NCBITaxon:211586</code> · UP000008186</span>
+              <br><span style="font-size: .78rem; color: var(--muted);"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586" target="_blank" rel="noopener"><code>NCBITaxon:211586</code></a>
+ · <a href="https://www.uniprot.org/proteomes/UP000008186" target="_blank" rel="noopener"><code>UP000008186</code></a></span>
             </td>
             <td>
               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR020014" target="_blank" rel="noopener"><code>InterPro:IPR020014</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR054337" target="_blank" rel="noopener"><code>InterPro:IPR054337</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR054334" target="_blank" rel="noopener"><code>InterPro:IPR054334</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR036280" target="_blank" rel="noopener"><code>InterPro:IPR036280</code></a><br>              <a href="https://www.ebi.ac.uk/interpro/entry/pfam/PF22113" target="_blank" rel="noopener"><code>Pfam:PF22113</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/pfam/PF22111" target="_blank" rel="noopener"><code>Pfam:PF22111</code></a>            </td>
@@ -201,6 +226,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
 
     <div style="margin-top: .6rem;">
@@ -250,15 +276,16 @@
   <div class="mechanism-box" id="causal-graph-mr1_fcca_cyma_selenite_reduction_graph">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
       <h4 style="margin: 0; font-size: 1.12rem;">Shewanella oneidensis MR-1 CymA-FccA periplasmic selenite reduction pathway</h4>
-      <div>
+      <div class="badge-row">
         <span class="badge">RECORD SPECIFIC MECHANISM</span>
-        <a href="#mechanism-mr1_selenite_reduction" class="badge" style="text-decoration: none;">Mechanism: <code>mr1_selenite_reduction</code></a>
+        <a href="#mechanism-mr1_selenite_reduction" class="badge badge-wrap" style="text-decoration: none;">Mechanism: <code>mr1_selenite_reduction</code></a>
       </div>
     </div>
     <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking inner-membrane CymA (SO_4591) and periplasmic flavocytochrome FccA (SO_0970) to reduction of soluble selenite Se(IV) into elemental Se(0) nanoparticles.</p>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (5):</strong>
-    <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
+    <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Causal nodes of Shewanella oneidensis MR-1 CymA-FccA periplasmic selenite reduction pathway" tabindex="0">
+    <table style="font-size: .88rem;">
       <thead>
         <tr>
           <th scope="col">Node</th>
@@ -282,7 +309,7 @@
                 <a href="https://www.uniprot.org/uniprotkb/Q8E8S0" target="_blank" rel="noopener"><code>UniProtKB:Q8E8S0</code></a>
                 (CYMA_SHEON, <span class="badge" style="font-size: .7rem;">SWISS_PROT</span>)
                 — <strong>Tetraheme c-type cytochrome CymA</strong>
-[<code>cymA</code>]                in <em>Shewanella oneidensis MR-1</em> (<code>NCBITaxon:211586</code>) · <code>UP000008186</code>.
+[<code>cymA</code>]                in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586" target="_blank" rel="noopener"><em>Shewanella oneidensis MR-1</em> (<code>NCBITaxon:211586</code>)</a> · <a href="https://www.uniprot.org/proteomes/UP000008186" target="_blank" rel="noopener"><code>UP000008186</code></a>.
                 <span>Inner-membrane tetraheme c-type menaquinol dehydrogenase CymA (EC 7.1.1.8; SO_4591) delivering electrons from the menaquinol pool to periplasmic FccA during selenite reduction.</span>
 [<a href="#source-li_2014"><code>li_2014</code></a>]              </div>
             </div>
@@ -303,7 +330,7 @@
                 <a href="https://www.uniprot.org/uniprotkb/P83223" target="_blank" rel="noopener"><code>UniProtKB:P83223</code></a>
                 (FCCA_SHEON, <span class="badge" style="font-size: .7rem;">SWISS_PROT</span>)
                 — <strong>Fumarate reductase (cytochrome)</strong>
-[<code>fccA</code>]                in <em>Shewanella oneidensis MR-1</em> (<code>NCBITaxon:211586</code>) · <code>UP000008186</code>.
+[<code>fccA</code>]                in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586" target="_blank" rel="noopener"><em>Shewanella oneidensis MR-1</em> (<code>NCBITaxon:211586</code>)</a> · <a href="https://www.uniprot.org/proteomes/UP000008186" target="_blank" rel="noopener"><code>UP000008186</code></a>.
                 <span>Periplasmic tetraheme flavocytochrome c fumarate reductase FccA (EC 1.3.2.4; SO_0970) acting as the principal periplasmic selenite Se(IV) reductase in non-growing MR-1 cells.</span>
 [<a href="#source-li_2014"><code>li_2014</code></a>]              </div>
             </div>
@@ -324,7 +351,7 @@
                 <a href="https://www.uniprot.org/uniprotkb/Q8EG34" target="_blank" rel="noopener"><code>UniProtKB:Q8EG34</code></a>
                 (Q8EG34_SHEON, <span class="badge" style="font-size: .7rem;">TREMBL</span>)
                 — <strong>Extracellular iron oxide respiratory system surface decaheme cytochrome c component MtrC</strong>
-[<code>mtrC</code>]                in <em>Shewanella oneidensis MR-1</em> (<code>NCBITaxon:211586</code>) · <code>UP000008186</code>.
+[<code>mtrC</code>]                in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586" target="_blank" rel="noopener"><em>Shewanella oneidensis MR-1</em> (<code>NCBITaxon:211586</code>)</a> · <a href="https://www.uniprot.org/proteomes/UP000008186" target="_blank" rel="noopener"><code>UP000008186</code></a>.
                 <span>Outer-membrane decaheme c-type cytochrome MtrC (SO_1778) evaluated as an outer-membrane electron-transfer comparator during selenite reduction.</span>
 [<a href="#source-li_2014"><code>li_2014</code></a>]              </div>
             </div>
@@ -356,6 +383,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Edges (4):</strong>
     <ul style="margin: .4rem 0 0; padding-left: 1.2rem; font-size: .88rem;">
@@ -389,7 +417,7 @@
       <span style="font-size: .82rem; color: var(--muted);">(accessed 2026-10-11)</span>
     </li>
     <li id="source-li_2014" style="margin-bottom: .6rem; font-size: .92rem;">
-      <strong>li_2014</strong>: Li et al. (2014). Selenite reduction by Shewanella oneidensis MR-1 is mediated by fumarate reductase in periplasm. Scientific Reports 4:3735. DOI 10.1038/srep03735; PMC3894562; Methods, Figures 2, 4, 5 and Table 1.
+      <strong>li_2014</strong>: Li et al. (2014). Selenite reduction by Shewanella oneidensis MR-1 is mediated by fumarate reductase in periplasm. Scientific Reports 4:3735. <a href="https://doi.org/10.1038/srep03735">DOI 10.1038/srep03735</a>; <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC3894562/">PMC3894562</a>; Methods, Figures 2, 4, 5 and Table 1.
       <br><a href="https://doi.org/10.1038/srep03735" target="_blank" rel="noopener" style="font-size: .85rem; word-break: break-all;">https://doi.org/10.1038/srep03735</a>
       <span style="font-size: .82rem; color: var(--muted);">(accessed 2026-10-11)</span>
     </li>
@@ -399,7 +427,7 @@
       <span style="font-size: .82rem; color: var(--muted);">(accessed 2026-10-11)</span>
     </li>
     <li id="source-klonowska_2005" style="margin-bottom: .6rem; font-size: .92rem;">
-      <strong>klonowska_2005</strong>: Klonowska, Heulin and Vermeglio (2005). Selenite and Tellurite Reduction by Shewanella oneidensis. Applied and Environmental Microbiology 71:5607-5609. DOI 10.1128/AEM.71.9.5607-5609.2005. Results and Figure 1 caption; different growth-medium context.
+      <strong>klonowska_2005</strong>: Klonowska, Heulin and Vermeglio (2005). Selenite and Tellurite Reduction by Shewanella oneidensis. Applied and Environmental Microbiology 71:5607-5609. <a href="https://doi.org/10.1128/AEM.71.9.5607-5609.2005">DOI 10.1128/AEM.71.9.5607-5609.2005</a>. Results and Figure 1 caption; different growth-medium context.
       <br><a href="https://doi.org/10.1128/AEM.71.9.5607-5609.2005" target="_blank" rel="noopener" style="font-size: .85rem; word-break: break-all;">https://doi.org/10.1128/AEM.71.9.5607-5609.2005</a>
       <span style="font-size: .82rem; color: var(--muted);">(accessed 2026-10-11)</span>
     </li>
@@ -413,6 +441,7 @@
 
 <div class="detail-section">
   <h2>Curation History</h2>
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Curation history of Selenium" tabindex="0">
   <table style="font-size: .88rem;">
     <thead>
       <tr>
@@ -437,14 +466,87 @@
       </tr>
     </tbody>
   </table>
+  </div>
+</div>
+
+<div class="detail-section" id="structured-reviews">
+  <h2>Structured Reviews (7)</h2>
+  <p class="section-note">Saved review observations that include this record, newest first. Each links its review bundle on GitHub; <code>review.yaml</code> beside it is authoritative.</p>
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Structured reviews of Selenium" tabindex="0">
+  <table style="font-size: .88rem;">
+    <thead>
+      <tr>
+        <th scope="col">Finished</th>
+        <th scope="col">Review</th>
+        <th scope="col">Scope</th>
+        <th scope="col">Verdict</th>
+        <th scope="col">Reviewer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><time datetime="2026-10-24T02:45:06Z">2026-10-24</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261024T024506Z-cycle3-stage4-causal-graphs-cohort-review/review.md">Cycle 3 Stage 4 cross-cohort review: causal_graphs and UniProt protein_examples records (104/104)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-24T02:45:00Z">2026-10-24</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261024T024500Z-cycle3-stage4-element-cohort-review/review.md">Cycle 3 Stage 4 full-cohort review: element records (66/66)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-22T11:50:06Z">2026-10-22</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261022T115006Z-cycle2-stage4-causal-graphs-cohort-review/review.md">Cycle 2 Stage 4 cross-cohort review: causal_graphs and UniProt protein_examples records (89/89)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-22T11:50:00Z">2026-10-22</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261022T115000Z-cycle2-stage4-element-cohort-review/review.md">Cycle 2 Stage 4 full-cohort review: element records (66/66)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-22T02:58:06Z">2026-10-22</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261022T025806Z-stage4-causal-graphs-cohort-review/review.md">Stage 4 cross-cohort review: causal_graphs and UniProt protein_examples records (63/63)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-22T02:58:00Z">2026-10-22</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261022T025800Z-stage4-element-cohort-review/review.md">Stage 4 full-cohort review: element records (66/66)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-11T04:41:31Z">2026-10-11</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261011T044131Z-selenium-round3-independent/review.md">Selenium independent adversarial scientific review</a></td>
+        <td>record</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (GPT-6)</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
 </div>
 
 <p class="history" style="font-size: .85rem; color: var(--muted); margin-top: 1.5rem;">
   Record source: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/data/records/selenium.yaml"><code>data/records/selenium.yaml</code></a>
+  · <a href="https://github.com/CultureBotAI/CMMMech/edit/main/data/records/selenium.yaml">Edit on GitHub</a>
+  · <a href="https://github.com/CultureBotAI/CMMMech/issues/new?title=Problem%20with%20cmmmech%3Aselenium&amp;body=https%3A%2F%2Fculturebotai.github.io%2FCMMMech%2Fpages%2Fmaterials%2Fselenium.html">Report a problem with this record</a>
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (663 materials · 607 mechanisms · latest curation 2026-10-25 · corpus digest <code>9e4e29cfa244</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · <a href="../index.html#downloads">Downloads</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="../schema.html">LinkML schema</a> (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">YAML</a>) · generated by <code>scripts/render_pages.py</code> (663 materials · 607 mechanisms · latest curation 2026-10-25 · corpus digest <code>9e4e29cfa244</code>)</p>
+  <p class="license">Project data: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-DATA">CC BY 4.0</a>. Code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Third-party source material keeps its own terms (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE">licence scope</a>).</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

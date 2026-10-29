@@ -8,20 +8,21 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header>
   <a class="brand" href="../index.html">CMMMech</a>
-  <nav>
+  <nav aria-label="Site">
     <a href="../index.html">Home</a>
     <a href="../browse.html">Browse</a>
     <a href="../map.html">Text map</a>
     <a href="../graph.html">Mechanism graph</a>
-    <a href="../index.json">JSON</a>
-    <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/CMMMech">GitHub</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </header>
-<main>
+<main id="main-content" tabindex="-1">
 <div class="page-top-bar">
   <div class="breadcrumbs">
     <a href="../index.html">CMMMech</a> &gt;
@@ -39,22 +40,39 @@
   <span class="badge" style="font-size: .9rem; vertical-align: middle; margin-left: .4rem;">element</span>
   <span class="badge badge-critical" style="font-size: .9rem; vertical-align: middle; margin-left: .2rem;">Critical Material</span>
 </h1>
+<p class="record-id">Record ID: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/data/records/ruthenium.yaml"><code>cmmmech:ruthenium</code></a></p>
+
+<div class="review-status">
+  <p><strong>Latest structured review:</strong> <span class="badge">pass with limitations</span>, <time datetime="2026-10-24T02:45:00Z">2026-10-24</time>, category review by an agent reviewer (claude-opus-4-6) · <a href="#structured-reviews">all 4 saved reviews</a></p>
+  <details class="status-meaning">
+    <summary>What this review status means</summary>
+    <p>A structured review is, in the review schema's words, “An immutable, scoped review observation, not permission to curate or proof of scientific truth.” Every saved review that includes this record is listed under <a href="#structured-reviews">Structured reviews</a>, newest first, with its reviewer.</p>
+    <ul>
+      <li>“A valid report does not certify scientific truth or authorize curation, Git publication, paid research, or status promotion.”</li>
+      <li>“Passing verdicts cannot conceal unresolved major/blocker findings or failed required checks.”</li>
+      <li>“An unknown or concerning assessment precludes plain <code>pass</code>; a qualified pass must state its limitations and still positively assess each actually reviewed target.”</li>
+      <li>“A newer clean review does not close an older issue.”</li>
+    </ul>
+    <p class="quote-source">Quoted from <a href="https://github.com/CultureBotAI/CMMMech/blob/main/docs/record-reviews.md">docs/record-reviews.md</a> and <a href="https://github.com/CultureBotAI/CMMMech/blob/main/schema/record_review.yaml">schema/record_review.yaml</a>. <a href="../index.html#curation">How records are curated and reviewed</a>.</p>
+  </details>
+</div>
 
 <p class="lede">Ruthenium (Ru). This element record is distinct from the dissolved Ru(III) chloride feed, cell-associated oxidized ruthenium material, and Pd/Ru catalyst preparations in the curated laboratory study. The US 2025 list names the ruthenium commodity individually; this maps to the element without extending criticality to every ruthenium compound, mineral or waste. The evidence supports biomass-associated deposition, without demonstrating elemental Ru recovery, a microbial enzyme requirement or industrial operation.</p>
 
 <p style="margin: .4rem 0 1rem; font-size: .9rem; color: var(--muted);">
   <strong>Explore across X-Mech:</strong>
-  <a href="https://culturebotai.github.io/MediaIngredientMech/app/?q=Ruthenium">MediaIngredientMech</a> ·
-  <a href="https://culturebotai.github.io/CultureMech/app/?q=Ruthenium">CultureMech</a> ·
-  <a href="https://culturebotai.github.io/CommunityMech/?q=Ruthenium">CommunityMech</a> ·
-  <a href="https://culturebotai.github.io/HabitatMech/browse.html?q=Ruthenium">HabitatMech</a> ·
+  <a href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=Ruthenium">MediaIngredientMech</a> ·
+  <a href="https://culturebotai.github.io/CultureMech/app/browser.html?q=Ruthenium">CultureMech</a> ·
+  <a href="https://culturebotai.github.io/CommunityMech/browser.html?q=Ruthenium">CommunityMech</a> ·
+  <a href="https://culturebotai.github.io/HabitatMech/pages/browse.html?q=Ruthenium">HabitatMech</a> ·
   <a href="https://culturebotai.github.io/TraitMech/pages/browse.html?q=Ruthenium">TraitMech</a> ·
   <a href="../graph.html?q=Ruthenium">CMMMech Network Graph</a>
 </p>
 
 <div class="detail-section">
   <h2>Identifiers &amp; Classification</h2>
-  <table style="margin: .4rem 0;">
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Identifiers of Ruthenium" tabindex="0">
+  <table>
     <thead>
       <tr>
         <th scope="col">System</th>
@@ -72,10 +90,12 @@
       </tr>
     </tbody>
   </table>
+  </div>
 </div>
 
 <div class="detail-section">
   <h2>Criticality Designations</h2>
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Criticality designations of Ruthenium" tabindex="0">
   <table>
     <thead>
       <tr>
@@ -98,6 +118,7 @@
       </tr>
     </tbody>
   </table>
+  </div>
 </div>
 
 <div class="detail-section">
@@ -123,7 +144,7 @@
 
     <p style="margin: .4rem 0 .2rem; font-size: .92rem;">
       <strong>Associated Organisms:</strong>
-        <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1456" target="_blank" rel="noopener"><em>Bacillus benzoevorans</em> (<code>NCBITaxon:1456</code>)</a> <a href="https://culturebotai.github.io/TaxonMech/browse.html?q=Bacillus%20benzoevorans" title="Search Bacillus benzoevorans in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>    </p>
+        <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1456" target="_blank" rel="noopener"><em>Bacillus benzoevorans</em> (<code>NCBITaxon:1456</code>)</a> <a href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon:1456" title="Bacillus benzoevorans in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>    </p>
 
     <p style="margin: .5rem 0; font-size: .95rem;">Washed Bacillus benzoevorans NCIMB 12555 biomass, reported as B. benzeovorans, acquired Ru-containing deposits after exposure to a synthetic Ru(III) chloride solution under hydrogen, with or without prior Pd deposition. Microscopy and spectroscopy support association with oxidized Ru material. The study does not demonstrate Ru(0), a Pd-Ru metallic alloy or a necessary metabolic contribution. Microbial involvement denotes the biomass scaffold; sustained cell viability during acidic exposure and subsequent processing was not established.</p>
 
@@ -208,12 +229,12 @@
       <span style="font-size: .82rem; color: var(--muted);">(accessed 2026-10-11)</span>
     </li>
     <li id="source-omajali_2019" style="margin-bottom: .6rem; font-size: .92rem;">
-      <strong>omajali_2019</strong>: Omajali et al. (2019). Novel catalytically active Pd/Ru bimetallic nanoparticles synthesized by Bacillus benzeovorans. Scientific Reports 9, 4715; published March 18, 2019. DOI 10.1038/s41598-019-40312-3. Methods, Tables 1-3, Figures 1-4 and supplementary Figures S3-S11.
+      <strong>omajali_2019</strong>: Omajali et al. (2019). Novel catalytically active Pd/Ru bimetallic nanoparticles synthesized by Bacillus benzeovorans. Scientific Reports 9, 4715; published March 18, 2019. <a href="https://doi.org/10.1038/s41598-019-40312-3">DOI 10.1038/s41598-019-40312-3</a>. Methods, Tables 1-3, Figures 1-4 and supplementary Figures S3-S11.
       <br><a href="https://www.nature.com/articles/s41598-019-40312-3" target="_blank" rel="noopener" style="font-size: .85rem; word-break: break-all;">https://www.nature.com/articles/s41598-019-40312-3</a>
       <span style="font-size: .82rem; color: var(--muted);">(accessed 2026-10-11)</span>
     </li>
     <li id="source-gomez_bolivar_2019" style="margin-bottom: .6rem; font-size: .92rem;">
-      <strong>gomez_bolivar_2019</strong>: Gomez-Bolivar et al. (2019). Synthesis of Pd/Ru Bimetallic Nanoparticles by Escherichia coli and Potential as a Catalyst for Upgrading 5-Hydroxymethyl Furfural Into Liquid Fuel Precursors. Frontiers in Microbiology 10, 1276. DOI 10.3389/fmicb.2019.01276; XANES and EXAFS Results, Table 3. Used as organism-specific interpretive context.
+      <strong>gomez_bolivar_2019</strong>: Gomez-Bolivar et al. (2019). Synthesis of Pd/Ru Bimetallic Nanoparticles by Escherichia coli and Potential as a Catalyst for Upgrading 5-Hydroxymethyl Furfural Into Liquid Fuel Precursors. Frontiers in Microbiology 10, 1276. <a href="https://doi.org/10.3389/fmicb.2019.01276">DOI 10.3389/fmicb.2019.01276</a>; XANES and EXAFS Results, Table 3. Used as organism-specific interpretive context.
       <br><a href="https://doi.org/10.3389/fmicb.2019.01276" target="_blank" rel="noopener" style="font-size: .85rem; word-break: break-all;">https://doi.org/10.3389/fmicb.2019.01276</a>
       <span style="font-size: .82rem; color: var(--muted);">(accessed 2026-10-11)</span>
     </li>
@@ -227,6 +248,7 @@
 
 <div class="detail-section">
   <h2>Curation History</h2>
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Curation history of Ruthenium" tabindex="0">
   <table style="font-size: .88rem;">
     <thead>
       <tr>
@@ -245,14 +267,66 @@
       </tr>
     </tbody>
   </table>
+  </div>
+</div>
+
+<div class="detail-section" id="structured-reviews">
+  <h2>Structured Reviews (4)</h2>
+  <p class="section-note">Saved review observations that include this record, newest first. Each links its review bundle on GitHub; <code>review.yaml</code> beside it is authoritative.</p>
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Structured reviews of Ruthenium" tabindex="0">
+  <table style="font-size: .88rem;">
+    <thead>
+      <tr>
+        <th scope="col">Finished</th>
+        <th scope="col">Review</th>
+        <th scope="col">Scope</th>
+        <th scope="col">Verdict</th>
+        <th scope="col">Reviewer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><time datetime="2026-10-24T02:45:00Z">2026-10-24</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261024T024500Z-cycle3-stage4-element-cohort-review/review.md">Cycle 3 Stage 4 full-cohort review: element records (66/66)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-22T11:50:00Z">2026-10-22</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261022T115000Z-cycle2-stage4-element-cohort-review/review.md">Cycle 2 Stage 4 full-cohort review: element records (66/66)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-22T02:58:00Z">2026-10-22</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261022T025800Z-stage4-element-cohort-review/review.md">Stage 4 full-cohort review: element records (66/66)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-11T07:00:23Z">2026-10-11</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261011T070023Z-ruthenium-round9-independent/review.md">Independent scientific review of the ruthenium round9 record</a></td>
+        <td>record</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (GPT-6)</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
 </div>
 
 <p class="history" style="font-size: .85rem; color: var(--muted); margin-top: 1.5rem;">
   Record source: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/data/records/ruthenium.yaml"><code>data/records/ruthenium.yaml</code></a>
+  · <a href="https://github.com/CultureBotAI/CMMMech/edit/main/data/records/ruthenium.yaml">Edit on GitHub</a>
+  · <a href="https://github.com/CultureBotAI/CMMMech/issues/new?title=Problem%20with%20cmmmech%3Aruthenium&amp;body=https%3A%2F%2Fculturebotai.github.io%2FCMMMech%2Fpages%2Fmaterials%2Fruthenium.html">Report a problem with this record</a>
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (663 materials · 607 mechanisms · latest curation 2026-10-25 · corpus digest <code>9e4e29cfa244</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · <a href="../index.html#downloads">Downloads</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="../schema.html">LinkML schema</a> (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">YAML</a>) · generated by <code>scripts/render_pages.py</code> (663 materials · 607 mechanisms · latest curation 2026-10-25 · corpus digest <code>9e4e29cfa244</code>)</p>
+  <p class="license">Project data: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-DATA">CC BY 4.0</a>. Code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Third-party source material keeps its own terms (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE">licence scope</a>).</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

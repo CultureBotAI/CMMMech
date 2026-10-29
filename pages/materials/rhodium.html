@@ -8,20 +8,21 @@
 <script src="../theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header>
   <a class="brand" href="../index.html">CMMMech</a>
-  <nav>
+  <nav aria-label="Site">
     <a href="../index.html">Home</a>
     <a href="../browse.html">Browse</a>
     <a href="../map.html">Text map</a>
     <a href="../graph.html">Mechanism graph</a>
-    <a href="../index.json">JSON</a>
-    <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">Schema</a>
+    <a href="../index.html#downloads">Downloads</a>
+    <a href="../schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/CMMMech">GitHub</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </header>
-<main>
+<main id="main-content" tabindex="-1">
 <div class="page-top-bar">
   <div class="breadcrumbs">
     <a href="../index.html">CMMMech</a> &gt;
@@ -39,22 +40,39 @@
   <span class="badge" style="font-size: .9rem; vertical-align: middle; margin-left: .4rem;">element</span>
   <span class="badge badge-critical" style="font-size: .9rem; vertical-align: middle; margin-left: .2rem;">Critical Material</span>
 </h1>
+<p class="record-id">Record ID: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/data/records/rhodium.yaml"><code>cmmmech:rhodium</code></a></p>
+
+<div class="review-status">
+  <p><strong>Latest structured review:</strong> <span class="badge">pass with limitations</span>, <time datetime="2026-10-24T02:45:06Z">2026-10-24</time>, category review by an agent reviewer (claude-opus-4-6) · <a href="#structured-reviews">all 5 saved reviews</a></p>
+  <details class="status-meaning">
+    <summary>What this review status means</summary>
+    <p>A structured review is, in the review schema's words, “An immutable, scoped review observation, not permission to curate or proof of scientific truth.” Every saved review that includes this record is listed under <a href="#structured-reviews">Structured reviews</a>, newest first, with its reviewer.</p>
+    <ul>
+      <li>“A valid report does not certify scientific truth or authorize curation, Git publication, paid research, or status promotion.”</li>
+      <li>“Passing verdicts cannot conceal unresolved major/blocker findings or failed required checks.”</li>
+      <li>“An unknown or concerning assessment precludes plain <code>pass</code>; a qualified pass must state its limitations and still positively assess each actually reviewed target.”</li>
+      <li>“A newer clean review does not close an older issue.”</li>
+    </ul>
+    <p class="quote-source">Quoted from <a href="https://github.com/CultureBotAI/CMMMech/blob/main/docs/record-reviews.md">docs/record-reviews.md</a> and <a href="https://github.com/CultureBotAI/CMMMech/blob/main/schema/record_review.yaml">schema/record_review.yaml</a>. <a href="../index.html#curation">How records are curated and reviewed</a>.</p>
+  </details>
+</div>
 
 <p class="lede">Rhodium (Rh). The element is distinct from the Rh(III) chloride hydrate used as experimental feed, monometallic biomass-supported particles and mixed PdRh nanoparticles. The US 2025 list names the rhodium commodity individually; that designation is mapped to the element without extending it to every Rh-bearing compound, mineral or secondary resource. Curated evidence concerns laboratory transformation in synthetic solutions, not extraction from ore, purified-metal recovery or industrial deployment.</p>
 
 <p style="margin: .4rem 0 1rem; font-size: .9rem; color: var(--muted);">
   <strong>Explore across X-Mech:</strong>
-  <a href="https://culturebotai.github.io/MediaIngredientMech/app/?q=Rhodium">MediaIngredientMech</a> ·
-  <a href="https://culturebotai.github.io/CultureMech/app/?q=Rhodium">CultureMech</a> ·
-  <a href="https://culturebotai.github.io/CommunityMech/?q=Rhodium">CommunityMech</a> ·
-  <a href="https://culturebotai.github.io/HabitatMech/browse.html?q=Rhodium">HabitatMech</a> ·
+  <a href="https://culturebotai.github.io/MediaIngredientMech/browser.html?q=Rhodium">MediaIngredientMech</a> ·
+  <a href="https://culturebotai.github.io/CultureMech/app/browser.html?q=Rhodium">CultureMech</a> ·
+  <a href="https://culturebotai.github.io/CommunityMech/browser.html?q=Rhodium">CommunityMech</a> ·
+  <a href="https://culturebotai.github.io/HabitatMech/pages/browse.html?q=Rhodium">HabitatMech</a> ·
   <a href="https://culturebotai.github.io/TraitMech/pages/browse.html?q=Rhodium">TraitMech</a> ·
   <a href="../graph.html?q=Rhodium">CMMMech Network Graph</a>
 </p>
 
 <div class="detail-section">
   <h2>Identifiers &amp; Classification</h2>
-  <table style="margin: .4rem 0;">
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Identifiers of Rhodium" tabindex="0">
+  <table>
     <thead>
       <tr>
         <th scope="col">System</th>
@@ -72,10 +90,12 @@
       </tr>
     </tbody>
   </table>
+  </div>
 </div>
 
 <div class="detail-section">
   <h2>Criticality Designations</h2>
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Criticality designations of Rhodium" tabindex="0">
   <table>
     <thead>
       <tr>
@@ -98,6 +118,7 @@
       </tr>
     </tbody>
   </table>
+  </div>
 </div>
 
 <div class="detail-section">
@@ -129,7 +150,7 @@
 
     <p style="margin: .4rem 0 .2rem; font-size: .92rem;">
       <strong>Associated Organisms:</strong>
-        <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=35554" target="_blank" rel="noopener"><em>Geobacter sulfurreducens</em> (<code>NCBITaxon:35554</code>)</a> <a href="https://culturebotai.github.io/TaxonMech/browse.html?q=Geobacter%20sulfurreducens" title="Search Geobacter sulfurreducens in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>    </p>
+        <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=35554" target="_blank" rel="noopener"><em>Geobacter sulfurreducens</em> (<code>NCBITaxon:35554</code>)</a> <a href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon:35554" title="Geobacter sulfurreducens in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>    </p>
 
     <p style="margin: .5rem 0; font-size: .95rem;">Washed resting Geobacter sulfurreducens cells supplied with acetate removed Rh from a synthetic single-metal solution and formed cell-associated particles identified as metallic Rh by XRD and selected area electron diffraction. Cell-free controls did not show comparable Rh removal. The observation supports cell-associated reduction under these conditions, without establishing complete conversion to Rh(0), a specific cytochrome requirement or an isolated-metal recovery yield.</p>
 
@@ -140,7 +161,8 @@
 
     <div style="margin-top: .7rem;">
       <strong style="font-size: .88rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">UniProt Protein Examples (2):</strong>
-      <table style="margin: .4rem 0; font-size: .88rem;">
+      <div class="record-table-scroll detail-table-scroll" role="region" aria-label="UniProt protein examples for Resting-cell transformation of soluble Rh(III) to Rh(0)-bearing particles" tabindex="0">
+      <table style="font-size: .88rem;">
         <thead>
           <tr>
             <th scope="col">UniProtKB</th>
@@ -161,7 +183,8 @@
 <br>Gene: <code>imcH</code>            </td>
             <td>
               <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=243231" target="_blank" rel="noopener"><em>Geobacter sulfurreducens PCA</em></a>
-              <br><span style="font-size: .78rem; color: var(--muted);"><code>NCBITaxon:243231</code> · UP000000577</span>
+              <br><span style="font-size: .78rem; color: var(--muted);"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=243231" target="_blank" rel="noopener"><code>NCBITaxon:243231</code></a>
+ · <a href="https://www.uniprot.org/proteomes/UP000000577" target="_blank" rel="noopener"><code>UP000000577</code></a></span>
             </td>
             <td>
               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR051174" target="_blank" rel="noopener"><code>InterPro:IPR051174</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR036280" target="_blank" rel="noopener"><code>InterPro:IPR036280</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR005126" target="_blank" rel="noopener"><code>InterPro:IPR005126</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR038266" target="_blank" rel="noopener"><code>InterPro:IPR038266</code></a><br>              <a href="https://www.ebi.ac.uk/interpro/entry/pfam/PF03264" target="_blank" rel="noopener"><code>Pfam:PF03264</code></a>            </td>
@@ -179,7 +202,8 @@
 <br>Gene: <code>cbcL</code>            </td>
             <td>
               <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=243231" target="_blank" rel="noopener"><em>Geobacter sulfurreducens PCA</em></a>
-              <br><span style="font-size: .78rem; color: var(--muted);"><code>NCBITaxon:243231</code> · UP000000577</span>
+              <br><span style="font-size: .78rem; color: var(--muted);"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=243231" target="_blank" rel="noopener"><code>NCBITaxon:243231</code></a>
+ · <a href="https://www.uniprot.org/proteomes/UP000000577" target="_blank" rel="noopener"><code>UP000000577</code></a></span>
             </td>
             <td>
               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR036280" target="_blank" rel="noopener"><code>InterPro:IPR036280</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR012286" target="_blank" rel="noopener"><code>InterPro:IPR012286</code></a><br>              <a href="https://www.ebi.ac.uk/interpro/entry/pfam/PF14537" target="_blank" rel="noopener"><code>Pfam:PF14537</code></a>            </td>
@@ -189,6 +213,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
 
     <div style="margin-top: .6rem;">
@@ -233,7 +258,7 @@
 
     <p style="margin: .4rem 0 .2rem; font-size: .92rem;">
       <strong>Associated Organisms:</strong>
-        <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=35554" target="_blank" rel="noopener"><em>Geobacter sulfurreducens</em> (<code>NCBITaxon:35554</code>)</a> <a href="https://culturebotai.github.io/TaxonMech/browse.html?q=Geobacter%20sulfurreducens" title="Search Geobacter sulfurreducens in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>    </p>
+        <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=35554" target="_blank" rel="noopener"><em>Geobacter sulfurreducens</em> (<code>NCBITaxon:35554</code>)</a> <a href="https://culturebotai.github.io/TaxonMech/pages/taxon.html?id=NCBITaxon:35554" title="Geobacter sulfurreducens in TaxonMech" style="font-size:.78rem;">[TaxonMech]</a>    </p>
 
     <p style="margin: .5rem 0; font-size: .95rem;">A separate simultaneous exposure of resting Geobacter sulfurreducens to Pd(II) and Rh(III) generated cell-supported mixed nanoparticles. The authors&#39; combined XRD, atomic-resolution imaging and elemental mapping support a PdRh alloy interpretation, with mixed surface oxidation states. This preparation is distinct from monometallic Rh particles and from sequential Pd-seeding protocols.</p>
 
@@ -244,7 +269,8 @@
 
     <div style="margin-top: .7rem;">
       <strong style="font-size: .88rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">UniProt Protein Examples (2):</strong>
-      <table style="margin: .4rem 0; font-size: .88rem;">
+      <div class="record-table-scroll detail-table-scroll" role="region" aria-label="UniProt protein examples for Rh transformation during simultaneous Pd/Rh exposure of resting cells" tabindex="0">
+      <table style="font-size: .88rem;">
         <thead>
           <tr>
             <th scope="col">UniProtKB</th>
@@ -265,7 +291,8 @@
 <br>Gene: <code>imcH</code>            </td>
             <td>
               <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=243231" target="_blank" rel="noopener"><em>Geobacter sulfurreducens PCA</em></a>
-              <br><span style="font-size: .78rem; color: var(--muted);"><code>NCBITaxon:243231</code> · UP000000577</span>
+              <br><span style="font-size: .78rem; color: var(--muted);"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=243231" target="_blank" rel="noopener"><code>NCBITaxon:243231</code></a>
+ · <a href="https://www.uniprot.org/proteomes/UP000000577" target="_blank" rel="noopener"><code>UP000000577</code></a></span>
             </td>
             <td>
               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR051174" target="_blank" rel="noopener"><code>InterPro:IPR051174</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR036280" target="_blank" rel="noopener"><code>InterPro:IPR036280</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR005126" target="_blank" rel="noopener"><code>InterPro:IPR005126</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR038266" target="_blank" rel="noopener"><code>InterPro:IPR038266</code></a><br>              <a href="https://www.ebi.ac.uk/interpro/entry/pfam/PF03264" target="_blank" rel="noopener"><code>Pfam:PF03264</code></a>            </td>
@@ -283,7 +310,8 @@
 <br>Gene: <code>cbcL</code>            </td>
             <td>
               <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=243231" target="_blank" rel="noopener"><em>Geobacter sulfurreducens PCA</em></a>
-              <br><span style="font-size: .78rem; color: var(--muted);"><code>NCBITaxon:243231</code> · UP000000577</span>
+              <br><span style="font-size: .78rem; color: var(--muted);"><a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=243231" target="_blank" rel="noopener"><code>NCBITaxon:243231</code></a>
+ · <a href="https://www.uniprot.org/proteomes/UP000000577" target="_blank" rel="noopener"><code>UP000000577</code></a></span>
             </td>
             <td>
               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR036280" target="_blank" rel="noopener"><code>InterPro:IPR036280</code></a>,               <a href="https://www.ebi.ac.uk/interpro/entry/InterPro/IPR012286" target="_blank" rel="noopener"><code>InterPro:IPR012286</code></a><br>              <a href="https://www.ebi.ac.uk/interpro/entry/pfam/PF14537" target="_blank" rel="noopener"><code>Pfam:PF14537</code></a>            </td>
@@ -293,6 +321,7 @@
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
 
     <div style="margin-top: .6rem;">
@@ -333,15 +362,16 @@
   <div class="mechanism-box" id="causal-graph-geobacter_monometallic_rh_transformation_graph">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
       <h4 style="margin: 0; font-size: 1.12rem;">Geobacter sulfurreducens resting-cell transformation of soluble Rh(III) to Rh(0)-bearing particles</h4>
-      <div>
+      <div class="badge-row">
         <span class="badge">REPRESENTATIVE EXAMPLE</span>
-        <a href="#mechanism-geobacter_monometallic_rh_transformation" class="badge" style="text-decoration: none;">Mechanism: <code>geobacter_monometallic_rh_transformation</code></a>
+        <a href="#mechanism-geobacter_monometallic_rh_transformation" class="badge badge-wrap" style="text-decoration: none;">Mechanism: <code>geobacter_monometallic_rh_transformation</code></a>
       </div>
     </div>
     <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking representative Geobacter sulfurreducens inner-membrane cytochromes ImcH and CbcL to resting-cell reduction of 200 uM aqueous Rh(III) (from RhCl3.xH2O) with 10 mM sodium acetate into cell-associated metallic Rh(0) particles identified by XRD and SAED.</p>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (4):</strong>
-    <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
+    <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Causal nodes of Geobacter sulfurreducens resting-cell transformation of soluble Rh(III) to Rh(0)-bearing particles" tabindex="0">
+    <table style="font-size: .88rem;">
       <thead>
         <tr>
           <th scope="col">Node</th>
@@ -365,7 +395,7 @@
                 <a href="https://www.uniprot.org/uniprotkb/Q747K6" target="_blank" rel="noopener"><code>UniProtKB:Q747K6</code></a>
                 (IMCH_GEOSL, <span class="badge" style="font-size: .7rem;">SWISS_PROT</span>)
                 — <strong>Cytochrome c-type protein ImcH</strong>
-[<code>imcH</code>]                in <em>Geobacter sulfurreducens PCA</em> (<code>NCBITaxon:243231</code>) · <code>UP000000577</code>.
+[<code>imcH</code>]                in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=243231" target="_blank" rel="noopener"><em>Geobacter sulfurreducens PCA</em> (<code>NCBITaxon:243231</code>)</a> · <a href="https://www.uniprot.org/proteomes/UP000000577" target="_blank" rel="noopener"><code>UP000000577</code></a>.
                 <span>Inner-membrane multiheme c-type cytochrome ImcH (GSU3259) required for extracellular electron transfer from the menaquinol pool to high-redox-potential metal acceptors.</span>
 [<a href="#source-xie_2026"><code>xie_2026</code></a>]<div style="font-size: .8rem; color: var(--muted);">Grounded to Geobacter sulfurreducens PCA reference proteome UP000000577 (NCBITaxon:243231) for the species-level mechanism organism Geobacter sulfurreducens (NCBITaxon:35554).</div>              </div>
             </div>
@@ -386,7 +416,7 @@
                 <a href="https://www.uniprot.org/uniprotkb/Q74GH2" target="_blank" rel="noopener"><code>UniProtKB:Q74GH2</code></a>
                 (Q74GH2_GEOSL, <span class="badge" style="font-size: .7rem;">TREMBL</span>)
                 — <strong>Cytochrome c, and cytochrome b</strong>
-[<code>cbcL</code>]                in <em>Geobacter sulfurreducens PCA</em> (<code>NCBITaxon:243231</code>) · <code>UP000000577</code>.
+[<code>cbcL</code>]                in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=243231" target="_blank" rel="noopener"><em>Geobacter sulfurreducens PCA</em> (<code>NCBITaxon:243231</code>)</a> · <a href="https://www.uniprot.org/proteomes/UP000000577" target="_blank" rel="noopener"><code>UP000000577</code></a>.
                 <span>Inner-membrane b/c-type cytochrome CbcL (GSU0274) required for extracellular electron transfer to lower-redox-potential metal and mineral acceptors.</span>
 [<a href="#source-xie_2026"><code>xie_2026</code></a>]<div style="font-size: .8rem; color: var(--muted);">Grounded to Geobacter sulfurreducens PCA reference proteome UP000000577 (NCBITaxon:243231) for the species-level mechanism organism Geobacter sulfurreducens (NCBITaxon:35554).</div>              </div>
             </div>
@@ -418,6 +448,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Edges (3):</strong>
     <ul style="margin: .4rem 0 0; padding-left: 1.2rem; font-size: .88rem;">
@@ -435,15 +466,16 @@
   <div class="mechanism-box" id="causal-graph-geobacter_pdrh_cotransformation_graph">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
       <h4 style="margin: 0; font-size: 1.12rem;">Geobacter sulfurreducens simultaneous Pd(II)/Rh(III) transformation to cell-supported PdRh alloy nanoparticles</h4>
-      <div>
+      <div class="badge-row">
         <span class="badge">REPRESENTATIVE EXAMPLE</span>
-        <a href="#mechanism-geobacter_pdrh_cotransformation" class="badge" style="text-decoration: none;">Mechanism: <code>geobacter_pdrh_cotransformation</code></a>
+        <a href="#mechanism-geobacter_pdrh_cotransformation" class="badge badge-wrap" style="text-decoration: none;">Mechanism: <code>geobacter_pdrh_cotransformation</code></a>
       </div>
     </div>
     <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking representative Geobacter sulfurreducens inner-membrane cytochromes ImcH and CbcL to simultaneous transformation of 100 uM Pd(II) and 100 uM Rh(III) with 10 mM sodium acetate into cell-supported bimetallic PdRh alloy nanoparticles.</p>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (4):</strong>
-    <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
+    <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Causal nodes of Geobacter sulfurreducens simultaneous Pd(II)/Rh(III) transformation to cell-supported PdRh alloy nanoparticles" tabindex="0">
+    <table style="font-size: .88rem;">
       <thead>
         <tr>
           <th scope="col">Node</th>
@@ -467,7 +499,7 @@
                 <a href="https://www.uniprot.org/uniprotkb/Q747K6" target="_blank" rel="noopener"><code>UniProtKB:Q747K6</code></a>
                 (IMCH_GEOSL, <span class="badge" style="font-size: .7rem;">SWISS_PROT</span>)
                 — <strong>Cytochrome c-type protein ImcH</strong>
-[<code>imcH</code>]                in <em>Geobacter sulfurreducens PCA</em> (<code>NCBITaxon:243231</code>) · <code>UP000000577</code>.
+[<code>imcH</code>]                in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=243231" target="_blank" rel="noopener"><em>Geobacter sulfurreducens PCA</em> (<code>NCBITaxon:243231</code>)</a> · <a href="https://www.uniprot.org/proteomes/UP000000577" target="_blank" rel="noopener"><code>UP000000577</code></a>.
                 <span>Inner-membrane multiheme c-type cytochrome ImcH (GSU3259) required for extracellular electron transfer from the menaquinol pool to high-redox-potential metal acceptors.</span>
 [<a href="#source-xie_2026"><code>xie_2026</code></a>]<div style="font-size: .8rem; color: var(--muted);">Grounded to Geobacter sulfurreducens PCA reference proteome UP000000577 (NCBITaxon:243231) for the species-level mechanism organism Geobacter sulfurreducens (NCBITaxon:35554).</div>              </div>
             </div>
@@ -488,7 +520,7 @@
                 <a href="https://www.uniprot.org/uniprotkb/Q74GH2" target="_blank" rel="noopener"><code>UniProtKB:Q74GH2</code></a>
                 (Q74GH2_GEOSL, <span class="badge" style="font-size: .7rem;">TREMBL</span>)
                 — <strong>Cytochrome c, and cytochrome b</strong>
-[<code>cbcL</code>]                in <em>Geobacter sulfurreducens PCA</em> (<code>NCBITaxon:243231</code>) · <code>UP000000577</code>.
+[<code>cbcL</code>]                in <a href="https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=243231" target="_blank" rel="noopener"><em>Geobacter sulfurreducens PCA</em> (<code>NCBITaxon:243231</code>)</a> · <a href="https://www.uniprot.org/proteomes/UP000000577" target="_blank" rel="noopener"><code>UP000000577</code></a>.
                 <span>Inner-membrane b/c-type cytochrome CbcL (GSU0274) required for extracellular electron transfer to lower-redox-potential metal and mineral acceptors.</span>
 [<a href="#source-xie_2026"><code>xie_2026</code></a>]<div style="font-size: .8rem; color: var(--muted);">Grounded to Geobacter sulfurreducens PCA reference proteome UP000000577 (NCBITaxon:243231) for the species-level mechanism organism Geobacter sulfurreducens (NCBITaxon:35554).</div>              </div>
             </div>
@@ -520,6 +552,7 @@
         </tr>
       </tbody>
     </table>
+    </div>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Edges (3):</strong>
     <ul style="margin: .4rem 0 0; padding-left: 1.2rem; font-size: .88rem;">
@@ -550,7 +583,7 @@
       <span style="font-size: .82rem; color: var(--muted);">(accessed 2026-10-11)</span>
     </li>
     <li id="source-xie_2026" style="margin-bottom: .6rem; font-size: .92rem;">
-      <strong>xie_2026</strong>: Xie et al. Microbial synthesis of bimetallic Pd-Rh and Pd-Pt nanoparticle catalysts. Nanoscale Advances 8, 961-972 (2026); first published online December 16, 2025. DOI 10.1039/D5NA00861A. PMC12713794.2; Methods 2.1-2.4, Results 3.1-3.6, Figures 1-6, Tables 1-2 and supplementary Table S1.
+      <strong>xie_2026</strong>: Xie et al. Microbial synthesis of bimetallic Pd-Rh and Pd-Pt nanoparticle catalysts. Nanoscale Advances 8, 961-972 (2026); first published online December 16, 2025. <a href="https://doi.org/10.1039/D5NA00861A">DOI 10.1039/D5NA00861A</a>. <a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC12713794/">PMC12713794</a>.2; Methods 2.1-2.4, Results 3.1-3.6, Figures 1-6, Tables 1-2 and supplementary Table S1.
       <br><a href="https://doi.org/10.1039/D5NA00861A" target="_blank" rel="noopener" style="font-size: .85rem; word-break: break-all;">https://doi.org/10.1039/D5NA00861A</a>
       <span style="font-size: .82rem; color: var(--muted);">(accessed 2026-10-11)</span>
     </li>
@@ -564,6 +597,7 @@
 
 <div class="detail-section">
   <h2>Curation History</h2>
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Curation history of Rhodium" tabindex="0">
   <table style="font-size: .88rem;">
     <thead>
       <tr>
@@ -588,14 +622,73 @@
       </tr>
     </tbody>
   </table>
+  </div>
+</div>
+
+<div class="detail-section" id="structured-reviews">
+  <h2>Structured Reviews (5)</h2>
+  <p class="section-note">Saved review observations that include this record, newest first. Each links its review bundle on GitHub; <code>review.yaml</code> beside it is authoritative.</p>
+  <div class="record-table-scroll detail-table-scroll" role="region" aria-label="Structured reviews of Rhodium" tabindex="0">
+  <table style="font-size: .88rem;">
+    <thead>
+      <tr>
+        <th scope="col">Finished</th>
+        <th scope="col">Review</th>
+        <th scope="col">Scope</th>
+        <th scope="col">Verdict</th>
+        <th scope="col">Reviewer</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><time datetime="2026-10-24T02:45:06Z">2026-10-24</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261024T024506Z-cycle3-stage4-causal-graphs-cohort-review/review.md">Cycle 3 Stage 4 cross-cohort review: causal_graphs and UniProt protein_examples records (104/104)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-24T02:45:00Z">2026-10-24</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261024T024500Z-cycle3-stage4-element-cohort-review/review.md">Cycle 3 Stage 4 full-cohort review: element records (66/66)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-22T11:50:00Z">2026-10-22</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261022T115000Z-cycle2-stage4-element-cohort-review/review.md">Cycle 2 Stage 4 full-cohort review: element records (66/66)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-22T02:58:00Z">2026-10-22</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261022T025800Z-stage4-element-cohort-review/review.md">Stage 4 full-cohort review: element records (66/66)</a></td>
+        <td>category</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (claude-opus-4-6)</td>
+      </tr>
+      <tr>
+        <td><time datetime="2026-10-11T07:00:23Z">2026-10-11</time></td>
+        <td><a href="https://github.com/CultureBotAI/CMMMech/blob/main/reviews/structured/20261011T070023Z-rhodium-round9-independent/review.md">Independent scientific review of the rhodium round9 record</a></td>
+        <td>record</td>
+        <td><span class="badge">pass with limitations</span></td>
+        <td>agent (GPT-6)</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
 </div>
 
 <p class="history" style="font-size: .85rem; color: var(--muted); margin-top: 1.5rem;">
   Record source: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/data/records/rhodium.yaml"><code>data/records/rhodium.yaml</code></a>
+  · <a href="https://github.com/CultureBotAI/CMMMech/edit/main/data/records/rhodium.yaml">Edit on GitHub</a>
+  · <a href="https://github.com/CultureBotAI/CMMMech/issues/new?title=Problem%20with%20cmmmech%3Arhodium&amp;body=https%3A%2F%2Fculturebotai.github.io%2FCMMMech%2Fpages%2Fmaterials%2Frhodium.html">Report a problem with this record</a>
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (663 materials · 607 mechanisms · latest curation 2026-10-25 · corpus digest <code>9e4e29cfa244</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · <a href="../index.html#downloads">Downloads</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="../schema.html">LinkML schema</a> (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">YAML</a>) · generated by <code>scripts/render_pages.py</code> (663 materials · 607 mechanisms · latest curation 2026-10-25 · corpus digest <code>9e4e29cfa244</code>)</p>
+  <p class="license">Project data: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-DATA">CC BY 4.0</a>. Code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Third-party source material keeps its own terms (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE">licence scope</a>).</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

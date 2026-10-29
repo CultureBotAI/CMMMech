@@ -52,13 +52,17 @@ header .brand {
   color: var(--ink);
   letter-spacing: -.01em;
 }
+/* Links wrap as whole words: body's overflow-wrap:anywhere otherwise split each
+   label letter by letter once the row was narrower than the viewport. */
 header nav {
   display: flex;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: .3rem 1rem;
 }
 header nav a {
   color: var(--muted);
   font-weight: 500;
+  white-space: nowrap;
 }
 header nav a:hover {
   color: var(--accent);
@@ -543,8 +547,10 @@ main {
   min-width: 0;
 }
 @media (max-width: 860px) {
+  /* minmax(0, ...): a bare 1fr track grows to its widest item's min-content,
+     so a wide table opened in the column could widen the page. */
   .browse-layout {
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
   }
   .facet-sidebar {
     position: static;
@@ -788,4 +794,80 @@ main {
   color: var(--muted);
 }
 
+/* ---- Unified X-Mech site features (2026-10-25). Existing tokens only, so both
+   themes are inherited without another dark block. ---- */
+
+/* Skip link: the first tab stop on every page, shown only while focused. */
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 2100;
+  padding: .5rem .75rem;
+  background: var(--card);
+  color: var(--accent);
+  border: 2px solid var(--accent);
+  border-radius: 6px;
+  font-weight: 600;
+}
+.skip-link:focus { top: .5rem; }
+main:focus { outline: none; }
+
+/* Detail tables on record and schema pages scroll inside a named region. Their
+   cells keep whole words (break-word, unlike body's anywhere, does not shrink a
+   column below its longest word), so a narrow screen scrolls the table rather
+   than splitting words letter by letter. */
+.record-table-scroll.detail-table-scroll { margin: .4rem 0 .8rem; }
+.detail-table-scroll th, .detail-table-scroll td { overflow-wrap: break-word; }
+.record-table-scroll:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+.badge-row { display: flex; flex-wrap: wrap; gap: .3rem; }
+.badge-wrap { white-space: normal; overflow-wrap: anywhere; text-transform: none; }
+
+/* Record identifier, review status and its explanation. */
+.record-id { margin: -.1rem 0 .5rem; font-size: .9rem; color: var(--muted); }
+.review-status {
+  margin: .2rem 0 1rem;
+  padding: .55rem .8rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 8px;
+  font-size: .9rem;
+}
+.review-status p { margin: 0; }
+.status-meaning { margin-top: .35rem; }
+.status-meaning summary { cursor: pointer; color: var(--accent); font-size: .85rem; }
+.status-meaning ul { margin: .35rem 0; padding-left: 1.2rem; }
+.status-meaning p { margin: .35rem 0 0; }
+.quote-source, .section-note { font-size: .82rem; color: var(--muted); }
+.curation-counts dt { margin-top: .45rem; font-weight: 600; }
+.curation-counts dd { margin: .1rem 0 0 1rem; color: var(--muted); }
+.download-list li { margin-bottom: .5rem; }
+
+/* Generated schema reference (pages/schema.html). */
+.schema-class h3, .schema-enum h3 { margin: 0 0 .4rem; }
+.schema-table caption { text-align: left; padding: .4rem .7rem; font-size: .82rem; color: var(--muted); }
+.schema-table th[scope="row"] { background: none; font-weight: 400; }
+.schema-table td:last-child { min-width: 16rem; }
+.schema-values dt { margin-top: .5rem; }
+.schema-values dd { margin: .1rem 0 0 1rem; color: var(--muted); }
+
+/* Text alternatives for the map and graph canvases, and the map's coverage. */
+.visual-table { margin: .8rem 0; }
+.visual-table summary { cursor: pointer; color: var(--accent); font-weight: 600; }
+.visual-table .record-table-scroll { max-height: 70vh; overflow-y: auto; }
+.map-coverage { font-size: .92rem; }
+.missing-list { columns: 16rem; margin: .4rem 0 0; padding-left: 1.2rem; font-size: .88rem; }
+.missing-list li { break-inside: avoid; }
+.notice {
+  padding: .6rem .8rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 4px solid var(--accent);
+  border-radius: 6px;
+}
+
+/* Not-found page (404.html, copied to the Pages artifact root). */
+.not-found-search { flex-wrap: wrap; }
+.not-found-search label { flex-basis: 100%; font-weight: 600; }
+.not-found-links { line-height: 1.9; }
 

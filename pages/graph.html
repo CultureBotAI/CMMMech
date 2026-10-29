@@ -8,20 +8,21 @@
 <script src="theme-toggle.js"></script>
 </head>
 <body>
+<a class="skip-link" href="#main-content">Skip to main content</a>
 <header>
   <a class="brand" href="index.html">CMMMech</a>
-  <nav>
+  <nav aria-label="Site">
     <a href="index.html">Home</a>
     <a href="browse.html">Browse</a>
     <a href="map.html">Text map</a>
     <a href="graph.html">Mechanism graph</a>
-    <a href="index.json">JSON</a>
-    <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">Schema</a>
+    <a href="index.html#downloads">Downloads</a>
+    <a href="schema.html">Schema</a>
     <a href="https://github.com/CultureBotAI/CMMMech">GitHub</a>
     <a href="https://culturebotai.github.io/mechs/">All Mech projects</a>
   </nav>
 </header>
-<main>
+<main id="main-content" tabindex="-1">
 <div class="page-top-bar">
   <div class="breadcrumbs">
     <a href="index.html">CMMMech</a> &gt;
@@ -82,11 +83,24 @@
   </aside>
 
   <div class="browse-main">
+    <noscript><p class="notice">The mechanism graph is drawn by JavaScript. Every material and its mechanisms are listed on <a href="browse.html">Browse</a>.</p></noscript>
     <div class="map-wrap">
-      <canvas id="mech-graph" width="980" height="640"></canvas>
+      <canvas id="mech-graph" width="980" height="640" role="img" aria-label="Network of 653 materials, processes and taxa joined by 968 mechanism links. The table below the graph lists the links."></canvas>
       <div id="graph-tip" class="map-tip" hidden></div>
       <div class="map-hint">scroll to zoom · drag to pan · double-click to reset · click node to open record · Esc clears filter</div>
     </div>
+    <details class="visual-table" id="graph-table-details">
+      <summary>View the network links as a table</summary>
+      <noscript><p>The table is built from the graph data by JavaScript. Every material and its mechanisms are listed on <a href="browse.html">Browse</a>.</p></noscript>
+      <p class="map-search-status" id="graph-table-count" role="status"></p>
+      <div class="record-table-scroll" role="region" aria-label="Mechanism network links" tabindex="0">
+        <table id="graph-table">
+          <caption>Links drawn in the mechanism network, with the current filters</caption>
+          <thead><tr><th scope="col">From</th><th scope="col">Mechanism</th><th scope="col">To</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </details>
   </div>
 </div>
 
@@ -105,8 +119,10 @@
   const dpr = window.devicePixelRatio || 1;
   let W = 980, H = 640;
   function resize() {
-    const rect = canvas.parentElement.getBoundingClientRect();
-    W = Math.max(360, Math.floor(rect.width));
+    // The wrapper's inner width, with no floor: a 360 px minimum overflowed a
+    // phone-width wrapper and was clipped by it.
+    const inner = Math.floor(canvas.parentElement.clientWidth);
+    W = inner > 0 ? inner : 360;
     H = Math.max(440, Math.min(700, Math.floor(W * 0.66)));
     canvas.width = W * dpr;
     canvas.height = H * dpr;
@@ -304,12 +320,51 @@
     draw();
   }, { passive: false });
 
-  searchEl.addEventListener('input', () => { query = searchEl.value.trim().toLowerCase(); syncUrl(); draw(); });
+  // The table alternative lists the links the canvas currently draws. It is
+  // built from the same data only while open, and rebuilt when a filter changes.
+  const tableDetails = document.getElementById('graph-table-details');
+  const tableBody = document.querySelector('#graph-table tbody');
+  const tableCount = document.getElementById('graph-table-count');
+  function nodeCell(n) {
+    const td = document.createElement('td');
+    const label = n.label + ' (' + n.type + ')';
+    if (n.href) {
+      const a = document.createElement('a');
+      a.href = n.href;
+      a.textContent = label;
+      td.appendChild(a);
+    } else {
+      td.textContent = label;
+    }
+    return td;
+  }
+  function renderTable() {
+    if (!tableDetails.open) return;
+    const { hasFilter, matchedEdges } = activeSet();
+    const rows = matchedEdges
+      .map(e => [byId[e.source], e, byId[e.target]])
+      .filter(([s, , t]) => s && t)
+      .sort((a, b) => a[0].label.localeCompare(b[0].label) || a[2].label.localeCompare(b[2].label));
+    const frag = document.createDocumentFragment();
+    for (const [s, e, t] of rows) {
+      const tr = document.createElement('tr');
+      const mech = document.createElement('td');
+      mech.textContent = e.label || (e.process || '').replace(/_/g, ' ');
+      tr.append(nodeCell(s), mech, nodeCell(t));
+      frag.appendChild(tr);
+    }
+    tableBody.replaceChildren(frag);
+    tableCount.textContent = `${rows.length} links ${hasFilter ? 'match the filters' : 'drawn'}`;
+  }
+  function refresh() { draw(); renderTable(); }
+  tableDetails.addEventListener('toggle', renderTable);
+
+  searchEl.addEventListener('input', () => { query = searchEl.value.trim().toLowerCase(); syncUrl(); refresh(); });
   searchEl.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') { searchEl.value = ''; query = ''; syncUrl(); draw(); }
+    if (e.key === 'Escape') { searchEl.value = ''; query = ''; syncUrl(); refresh(); }
   });
-  procEl.addEventListener('change', () => { procFilter = procEl.value; syncUrl(); draw(); });
-  kindEl.addEventListener('change', () => { kindFilter = kindEl.value; syncUrl(); draw(); });
+  procEl.addEventListener('change', () => { procFilter = procEl.value; syncUrl(); refresh(); });
+  kindEl.addEventListener('change', () => { kindFilter = kindEl.value; syncUrl(); refresh(); });
 
   const initParams = new URLSearchParams(window.location.search);
   if (initParams.get('q')) { searchEl.value = initParams.get('q'); query = searchEl.value.trim().toLowerCase(); }
@@ -323,7 +378,8 @@
 </script>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="index.json" download>Download index.json</a> · <a href="corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (663 materials · 607 mechanisms · latest curation 2026-10-25 · corpus digest <code>9e4e29cfa244</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · <a href="index.html#downloads">Downloads</a> · <a href="index.json" download>Download index.json</a> · <a href="corpus_map.json" download>Download corpus_map.json</a> · <a href="schema.html">LinkML schema</a> (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">YAML</a>) · generated by <code>scripts/render_pages.py</code> (663 materials · 607 mechanisms · latest curation 2026-10-25 · corpus digest <code>9e4e29cfa244</code>)</p>
+  <p class="license">Project data: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-DATA">CC BY 4.0</a>. Code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a>. Third-party source material keeps its own terms (<a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE">licence scope</a>).</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

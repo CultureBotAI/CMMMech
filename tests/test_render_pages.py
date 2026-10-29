@@ -159,13 +159,7 @@ def test_ima_symbol_and_polymorph_or_grade_rendered(tmp_path):
     assert "moi" in prepared["search_text"]
     assert "3c-sic" in prepared["search_text"]
 
-    env = render_pages.Environment(
-        loader=render_pages.FileSystemLoader(str(render_pages.TEMPLATES_DIR)),
-        autoescape=render_pages.select_autoescape(["html"]),
-        trim_blocks=True,
-        lstrip_blocks=True,
-    )
-    env.filters["curie_url"] = render_pages.curie_url
+    env = render_pages.template_environment()
     env.globals["build_provenance"] = {
         "total_materials": 1,
         "total_mechanisms": 0,
