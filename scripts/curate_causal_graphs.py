@@ -399,19 +399,29 @@ def apply_curation_patch(record: dict[str, Any], patch: dict[str, Any]) -> tuple
 def write_record_atomic(record: dict[str, Any], path: Path) -> None:
     """Serialize record YAML with canonical key order and replace target file atomically."""
     ordered = order_record_keys(record)
-    with tempfile.NamedTemporaryFile(
-        mode="w",
-        encoding="utf-8",
-        dir=path.parent,
-        prefix=f".{path.stem}-",
-        suffix=".tmp",
-        delete=False,
-    ) as stream:
-        tmp_name = stream.name
-        yaml.safe_dump(ordered, stream, sort_keys=False, allow_unicode=True, width=1000)
-        stream.flush()
-        os.fsync(stream.fileno())
-    os.replace(tmp_name, path)
+    serialized = yaml.safe_dump(ordered, sort_keys=False, allow_unicode=True, width=1000)
+    tmp_name: str | None = None
+    try:
+        with tempfile.NamedTemporaryFile(
+            mode="w",
+            encoding="utf-8",
+            dir=path.parent,
+            prefix=f".{path.stem}-",
+            suffix=".tmp",
+            delete=False,
+        ) as stream:
+            tmp_name = stream.name
+            stream.write(serialized)
+            stream.flush()
+            os.fsync(stream.fileno())
+        os.replace(tmp_name, path)
+    except PermissionError:
+        if tmp_name is not None:
+            try:
+                Path(tmp_name).unlink(missing_ok=True)
+            except OSError:
+                pass
+        path.write_text(serialized, encoding="utf-8")
 
 
 def curate_record_file(

@@ -341,3 +341,38 @@ def test_apply_curation_patch_syncs_node_and_mechanism_protein_examples_parity(r
     )
     assert "UniProtKB:Q99999" in {p["uniprot_accession"] for p in node_after["protein_examples"]}
 
+
+def test_write_record_atomic_falls_back_when_tempfile_or_replace_blocked(
+    tmp_path, record, monkeypatch
+):
+    """Seatbelt sandboxes blocking workspace NamedTemporaryFile or os.replace fall back cleanly."""
+    target = tmp_path / "data" / "records" / "synthetic-material.yaml"
+    target.parent.mkdir(parents=True, exist_ok=True)
+    target.write_text(yaml.safe_dump(record), encoding="utf-8")
+
+    # Case 1: NamedTemporaryFile creation raises PermissionError
+    def forbid_named_tempfile(*args, **kwargs):
+        raise PermissionError(1, "Operation not permitted")
+
+    monkeypatch.setattr(curate_mod.tempfile, "NamedTemporaryFile", forbid_named_tempfile)
+    record["ima_symbol"] = "Syn"
+    curate_mod.write_record_atomic(record, target)
+    loaded = read_record(target)
+    assert loaded["ima_symbol"] == "Syn"
+    assert list(target.parent.glob(".*")) == []
+
+    # Case 2: NamedTemporaryFile succeeds, but os.replace raises PermissionError
+    monkeypatch.undo()
+
+    def forbid_replace(src, dst):
+        raise PermissionError(1, "Operation not permitted")
+
+    monkeypatch.setattr(curate_mod.os, "replace", forbid_replace)
+    record["polymorph_or_grade"] = "2H-Syn"
+    curate_mod.write_record_atomic(record, target)
+    loaded_after = read_record(target)
+    assert loaded_after["polymorph_or_grade"] == "2H-Syn"
+    assert list(target.parent.glob(".*")) == []
+
+
+

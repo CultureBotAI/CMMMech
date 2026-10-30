@@ -158,7 +158,7 @@ Verify `id`, `name`, and target entity category in `data/records/**/*.yaml` agai
 
 ### 3. Review every claim
 
-Check every functional, binding, transport, or pathway claim against inspected primary literature (`PMID`/`DOI`). Do not extrapolate lanthanide/actinide specificity across uncharacterized homologs without experimental evidence.
+Check every functional, binding, transport, or pathway claim against inspected primary literature (`PMID`/`DOI`). Never load full multi-page PDFs, master-list catalogues, `.full.txt` dumps, or raw conversation transcripts into context with `read_file`; inspect bounded source-text passages (`<= 2-8 KB` per page/passage) via `python scripts/index_bounded_pdf_passages.py` or single-page `mutool draw -q -F txt <pdf> <page>`, and visually confirm ambiguous table column alignment on single rendered pages (`mutool draw -q -r 150 -o <page.png> <pdf> <page>`). Verify each retained numeric assertion against a compact claim-evidence table (source SHA-256 hash, printed page/table, row/column/sample label, unit, measurement method, and `measured`/`calculated`/`inferred`/`censored`/`not_determined` status), separate empirical measurements from theoretical/recalculated/endmember values, preserve paper-internal contradictions explicitly, and keep `Source.title` concise (`<= 1000` characters, without embedded assay prose dumps). Do not extrapolate lanthanide/actinide specificity across uncharacterized homologs without experimental evidence.
 
 ### 4. Assess completeness and resolve supported gaps
 

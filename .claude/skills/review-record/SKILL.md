@@ -19,9 +19,25 @@ This skill does not authorize shared messages, issues, PRs, merging, or admissio
 ## Scientific checks
 
 - Check primary full text, methods, results, figures/tables and relevant
-  supplements. Record exact section/table locators and access limitations.
-  Search for corrections, retractions and directly relevant conflicting results;
-  state search coverage, not an unsupported claim that none exist.
+  supplements. Never call `read_file` directly on full multi-page PDFs,
+  master-list catalogues, bulk `.full.txt` dumps, or raw conversation
+  transcripts; inspect bounded text excerpts (`<= 2-8 KB` per page/passage) via
+  `python scripts/index_bounded_pdf_passages.py` or single-page
+  `mutool draw -q -F txt <pdf> <page>`, and visually confirm dense composition
+  or crystal-structure table alignment on single rendered pages
+  (`mutool draw -q -r 150 -o <page.png> <pdf> <page>`). Verify every
+  retained numeric assertion against a compact claim-evidence table (source
+  SHA-256 hash, printed page/table, row/column/sample label, unit, measurement
+  method, and `measured`/`calculated`/`inferred`/`censored`/`not_determined`
+  status), distinguish theoretical/recalculated/endmember values from empirical
+  analyses, and require `Source.title` to remain a concise bibliographic title
+  (`<= 1000` characters, without embedded `wt.%`/`apfu`/`wR2 =`/`GOF =` assay
+  dumps). Any scientific content retained in `Source.title` carries the same
+  scientific review (`scientific_review: true`) and successor-hash obligations
+  as `description` and `mechanisms`. Record exact section/table locators and
+  access limitations. Search for corrections, retractions and directly relevant
+  conflicting results; state search coverage, not an unsupported claim that none
+  exist.
 - Resolve every asserted external identifier and verify its label and scope.
   An element, ion, mineral species, commodity, alloy and secondary resource
   are different concepts. A species identifier does not identify a strain or

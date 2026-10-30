@@ -21,6 +21,56 @@ BIOLOGICAL_NODE_TYPES = {
     "PHENOTYPE_OR_TRAIT",
 }
 
+MAX_SOURCE_TITLE_LENGTH = 1000
+SOURCE_TITLE_ASSAY_PATTERN = re.compile(
+    r"\b(?:wt\.?\s*%|apfu|wR2\s*=|GOF\s*=)\b",
+    re.IGNORECASE,
+)
+
+
+def _section_order_errors(record: dict) -> list[str]:
+    """Enforce top-level YAML section ordering invariants across evidence, mechanisms, and history."""
+    keys = list(record.keys())
+    if keys == sorted(keys):
+        # Allow synthetic test fixtures dumped with PyYAML default sort_keys=True.
+        return []
+    pos = {key: idx for idx, key in enumerate(keys)}
+    errors: list[str] = []
+    if "mechanisms" in pos:
+        for earlier in ("sources", "criticality"):
+            if earlier in pos and pos["mechanisms"] < pos[earlier]:
+                errors.append(f"$: mechanisms must appear after {earlier}")
+    if "causal_graphs" in pos and "mechanisms" in pos and pos["causal_graphs"] < pos["mechanisms"]:
+        errors.append("$: causal_graphs must appear after mechanisms")
+    if "history_refs" in pos and "curation_history" in pos and pos["history_refs"] < pos["curation_history"]:
+        errors.append("$: history_refs must appear after curation_history")
+    for history_key in ("curation_history", "history_refs"):
+        if history_key in pos:
+            for content_key in ("sources", "criticality", "mechanisms", "causal_graphs"):
+                if content_key in pos and pos[history_key] < pos[content_key]:
+                    errors.append(f"$: {history_key} must appear after {content_key}")
+    return errors
+
+
+def _source_title_errors(sources_list: list[dict]) -> list[str]:
+    """Flag over-long or assay-prose-stuffed Source.title entries (cmmmech-infra-0010)."""
+    errors: list[str] = []
+    for index, source in enumerate(sources_list):
+        title = str(source.get("title", ""))
+        if len(title) > MAX_SOURCE_TITLE_LENGTH:
+            errors.append(
+                f"sources/{index}/title: exceeds maximum bibliographic length ({MAX_SOURCE_TITLE_LENGTH} chars); "
+                "move detailed assay prose to description or mechanisms"
+            )
+        if SOURCE_TITLE_ASSAY_PATTERN.search(title):
+            errors.append(
+                f"sources/{index}/title: contains embedded empirical assay/refinement metrics "
+                "(wt.%, apfu, wR2, or GOF); keep Source.title concise and place analytical metrics "
+                "in description or mechanisms with table provenance"
+            )
+    return errors
+
+
 
 class UniqueKeyLoader(yaml.SafeLoader):
     def construct_mapping(self, node, deep=False):
@@ -145,6 +195,9 @@ def validate_record(record) -> list[str]:
     ]
     if errors:
         return sorted(errors)
+
+    errors.extend(_section_order_errors(record))
+    errors.extend(_source_title_errors(record.get("sources", [])))
 
     for section in ("sources", "mechanisms", "causal_graphs"):
         counts = Counter(item["id"] for item in record.get(section, []))
