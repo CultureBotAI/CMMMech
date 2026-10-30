@@ -11,15 +11,14 @@ verdict: pass_with_limitations
 scientific_review: true
 summary: Reviewed all 417 mineral records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b,
   including the 5 new Cycle 5 Stage 1 IMA critical-element mineral species (aluminosugilite,
-  andreybulakhite, grimmite, liguowuite, yttrotungstite-nd), the 7 Cycle 5 Stage 2
-  primary-source mineral mechanism additions/enrichments (arsenopyrite, bastnaesite-ce,
-  chalcocite, galena, manganite, monazite-ce, spodumene), and the 7 Cycle 5 Stage
-  3 mineral UniProtKB protein grounding expansions (Carrollite, Cubanite, Pentlandite,
-  Pyrrhotite, Sphalerite, Stibnite, Valleriite). Verified IMA symbols, chemical formulas,
-  Mindat/Wikidata/CHEBI external identifiers, 285/417 records with primary-source
-  mechanisms (343 mechanisms total), 54/417 with causal_graphs (57 graphs), and 52/417
-  with UniProtKB protein_examples (27 unique accessions). No open findings in this
-  cohort.
+  andreybulakhite, grimmite, liguowuite, yttrotungstite-nd), the 4 Cycle 5 Stage 2
+  causal-graph synchronizations (enstatite, wheatleyite, whewellite, zincite), and
+  the 11 Cycle 5 Stage 3 mineral Sqr paralog protein grounding expansions (anglesite,
+  arsenopyrite, bornite, djurleite, galena, kesterite, marcasite, orpiment, realgar,
+  sphalerite, stannite). Verified IMA symbols, chemical formulas, Mindat/Wikidata/CHEBI
+  external identifiers, 285/417 records with primary-source mechanisms (343 mechanisms
+  total), 54/417 with causal_graphs (57 graphs), and 52/417 with UniProtKB protein_examples
+  (27 unique accessions). No open findings in this cohort.
 reviewer:
   identity: antigravity / cmmmech-cycle5-stage4-cohort-reviewer
   kind: agent
@@ -8837,9 +8836,10 @@ assessments:
   - ev-mineral-cohort-audit
   summary: 285/417 mineral records contain primary-source-supported mechanisms (343
     mechanisms total); 54/417 contain causal_graphs (57 graphs), with 52/54 grounded
-    to 27 unique UniProtKB accessions and 2/54 (cmmmech:goethite, cmmmech:lepidocrocite)
-    plus 2 graphs in cmmmech:ferrihydrite explicitly marked UNGROUNDED where strain-level
-    sequences are absent.
+    to 27 unique UniProtKB accessions and 3 GENE_OR_PROTEIN nodes across cmmmech:ferrihydrite
+    (ax17_extracellular_fe3_reductase_system), cmmmech:lindbergite (serpula_himantioides_acid_pathway),
+    and cmmmech:magnetite (ax17_extracellular_fe3_reductase_system) explicitly marked
+    UNGROUNDED where strain-level sequences are absent.
 findings: []
 actions: []
 evidence:
@@ -8856,9 +8856,11 @@ limitations:
   liguowuite, and yttrotungstite-nd) currently document IMA identity, formula, and
   type-locality mineralogy without published microbial extraction/transformation/recovery
   experiments (285/417 mineral records carry curated mechanisms).
-- Five GENE_OR_PROTEIN nodes across cmmmech:ferrihydrite (2 graphs), cmmmech:goethite
-  (1 graph), and cmmmech:lepidocrocite (1 graph) remain explicitly UNGROUNDED because
-  strain-resolved UniProtKB entries do not exist for the reported experimental organisms.
+- Three GENE_OR_PROTEIN nodes across cmmmech:ferrihydrite (ax17_extracellular_fe3_reductase_system),
+  cmmmech:lindbergite (serpula_himantioides_acid_pathway), and cmmmech:magnetite (ax17_extracellular_fe3_reductase_system)
+  remain explicitly UNGROUNDED because strain-resolved UniProtKB entries do not exist
+  for the reported experimental organisms (52/54 mineral records with causal_graphs
+  carry GROUNDED protein_examples).
 notes:
 - Cohort covers 100% (417/417) of target records in data/records/*.yaml at commit
   208134600496b954831b125033d33caa508dba8b.

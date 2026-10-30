@@ -11,13 +11,17 @@ verdict: pass
 scientific_review: true
 summary: Reviewed data/records/andreybulakhite.yaml (cmmmech:andreybulakhite) at commit
   208134600496b954831b125033d33caa508dba8b following its Cycle 5 Stage 1 addition
-  as an IMA-approved nickel oxalate dihydrate mineral (Ni(C2O4)·2H2O, IMA 2023-037,
-  symbol Adb, Mindat:472063, Wikidata:Q122866134). Verified primary-source alignment
-  against Frank-Kamenetskaya et al. (2024, Mineralogical Magazine 88:113-123, DOI:10.1180/mgm.2023.92)
-  for both the biological lichen biomineralization mechanism (Lecanora cf. polytropa
-  apothecia on weathered nickel-bearing pyrrhotite at Nud II, Monchegorsk pluton)
-  and the abiotic anthropotype mechanism (evaporative precipitation on electrolysis
-  tankhouse walls at Kola Mining and Metallurgical Company). No open findings.
+  as an IMA-approved nickel oxalate dihydrate mineral (ideal formula Ni(C2O4)(H2O)2
+  / Ni(C2O4)·2H2O, holotype EDX empirical formula (Ni0.63Cu0.27Mg0.08Co0.02)Sigma1.00(C2O4)·2H2O,
+  IMA:2023-037, symbol Adb). Verified primary-source alignment against the September
+  2026 IMA Master List (ima_2026_09, PDF p. 11) and Vereshchagin et al. (2025, European
+  Journal of Mineralogy 37:63-74, DOI:10.5194/ejm-37-63-2025) for both the biological
+  lichen biomineralization mechanism (lichen_apothecia_nickel_oxalate_biomineralization
+  in Lecanora cf. polytropa apothecia on weathered pyrrhotite–pentlandite–chalcopyrite
+  veinlets at the Nyud-II deposit, Monchegorsk pluton) and the abiotic anthropotype
+  mechanism (abiotic_anthropotype_nickel_oxalate_precipitation via room-temperature
+  aqueous precipitation of synthetic alpha-Ni(C2O4)·2H2O from 500 mL NiCl2·6H2O +
+  Na2C2O4 solution at 23–25 °C and pH 6.0–7.2). No open findings.
 reviewer:
   identity: antigravity / cmmmech-cycle5-stage4-record-reviewer
   kind: agent
@@ -85,33 +89,42 @@ assessments:
   - cmmmech:andreybulakhite
   evidence_ids:
   - ev-andreybulakhite-file
-  - ev-andreybulakhite-fk2024
-  summary: All crystallographic, chemical (ICP-OES Ni0.985Mg0.008Cu0.005Mn0.001Zn0.001(C2O4)·2.03H2O),
-    and biological claims (Lecanora cf. polytropa NCBITaxon:94426 oxalic-acid weathering
-    of pyrrhotite/pentlandite to form 2-5 um andreybulakhite crystals) are faithfully
-    supported by Frank-Kamenetskaya et al. (2024) without industrial leaching extrapolation.
+  - ev-andreybulakhite-vereshchagin2025
+  summary: All crystallographic (monoclinic C2/c, a = 11.8392(5) Å, b = 5.3312(2)
+    Å, c = 9.8357(7) Å, beta = 126.723(5)°, V = 497.59(3) Å3), chemical (EDX empirical
+    formula (Ni0.63Cu0.27Mg0.08Co0.02)Sigma1.00(C2O4)·2H2O with complete Fe exclusion
+    below detection), biological (Lecanora cf. polytropa apothecia oxalic-acid biomineralization
+    of crystals up to 2 x 1 x 1 um in aggregates up to 40 x 30 x 30 um), and synthetic
+    anthropotype (aqueous NiCl2·6H2O + Na2C2O4 precipitation at 23–25 °C, pH 6.0–7.2)
+    claims are faithfully supported by Vereshchagin et al. (2025) and the September
+    2026 IMA Master List without species-level NCBITaxon over-grounding or industrial
+    leaching extrapolation.
 findings: []
 actions: []
 evidence:
 - evidence_id: ev-andreybulakhite-file
   kind: record_content
   reference: data/records/andreybulakhite.yaml
-  locator: lines 1-94
+  locator: lines 1-164
   accessed_at: '2026-10-30T20:10:07Z'
   support: supports
-  summary: Inspected all 94 lines of data/records/andreybulakhite.yaml, including
-    IMA 2023-037 metadata, Mindat/Wikidata identifiers, and two mechanisms.
-- evidence_id: ev-andreybulakhite-fk2024
+  summary: Inspected all 164 lines of data/records/andreybulakhite.yaml, including
+    IMA:2023-037 identifier, two sources (ima_2026_09 and vereshchagin_2025_andreybulakhite),
+    and two mechanisms (lichen_apothecia_nickel_oxalate_biomineralization and abiotic_anthropotype_nickel_oxalate_precipitation).
+- evidence_id: ev-andreybulakhite-vereshchagin2025
   kind: primary_source
-  reference: DOI:10.1180/mgm.2023.92
-  locator: Frank-Kamenetskaya et al. 2024 Mineralogical Magazine 88:113-123
+  reference: DOI:10.5194/ejm-37-63-2025
+  locator: Vereshchagin et al. 2025 European Journal of Mineralogy 37:63-74, pp. 63-72,
+    Tables 1-5, Figs. 1-5
   accessed_at: '2026-10-30T20:10:07Z'
   support: supports
-  summary: Frank-Kamenetskaya et al. (2024) characterize holotype andreybulakhite
-    in Lecanora cf. polytropa apothecia on weathered nickeliferous pyrrhotite at Nud
-    II and anthropotype crystals in Kola MMC electrolysis shop.
+  summary: Vereshchagin et al. (2025) characterize holotype andreybulakhite (ML OF-978)
+    in Lecanora cf. polytropa apothecia on weathered Cu-Ni sulfide veinlets at the
+    Nyud-II deposit and its synthetic monoclinic alpha-Ni(C2O4)·2H2O anthropotype
+    precipitated from aqueous NiCl2·6H2O + Na2C2O4 at 23-25 °C and pH 6.0-7.2.
 limitations:
-- Lecanora cf. polytropa is an unsequenced field lichen specimen (identified morphologically
-  to species-complex level) without a characterized oxalate-biosynthesis proteome
-  in UniProtKB, so no protein-grounded causal_graph is attached.
+- The host lichen in Vereshchagin et al. (2025) was identified morphologically in
+  open nomenclature as Lecanora cf. polytropa without molecular barcoding or isolate
+  accession, so no species-level NCBITaxon CURIE or protein-grounded causal_graph
+  is assigned.
 notes: []

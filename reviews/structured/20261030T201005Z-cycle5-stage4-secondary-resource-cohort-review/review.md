@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 111 secondary_resource records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b, including the 6 Cycle 5 Stage 2 primary-source enrichments (acid-mine-drainage, coal-fly-ash, copper-slag, phosphogypsum, red-mud, spent-lithium-ion-battery-cathode-material) and the 5 Cycle 5 Stage 3 UniProtKB protein grounding expansions (electroplating-sludge, printed-circuit-board-manufacturing-sludge, spent-vanadium-phosphorus-oxide-catalyst, traction-battery-hydrometallurgical-residue, waste-liquid-crystal-display-panels). Verified that all 3 Cycle 4 Stage 4 findings remain resolved, 108/111 records carry primary-source-supported microbial mechanisms (145 mechanisms total), and 29/111 carry causal_graphs and UniProtKB protein_examples (23 unique accessions). Identified 1 minor graph/label finding (cmmmech-cycle5-stage4-finding-0003 on cmmmech:waste-liquid-crystal-display-panels) for Stage 5 grouped remediation.
+Reviewed all 111 secondary_resource records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b, including the 4 Cycle 5 Stage 2 causal-graph synchronizations (fluorescent-lamp-phosphor, spent-fluid-catalytic-cracking-catalyst, traction-battery-hydrometallurgical-residue, waste-liquid-crystal-display-panels) and the 4 Cycle 5 Stage 3 Sqr paralog grounding expansions (electroplating-sludge, nickel-flotation-tailings, traction-battery-hydrometallurgical-residue, waste-liquid-crystal-display-panels). Verified that all 3 Cycle 4 Stage 4 findings remain resolved, 108/111 records carry primary-source-supported microbial mechanisms (145 mechanisms total), and 29/111 carry causal_graphs and UniProtKB protein_examples (23 unique accessions). Identified 1 minor graph/label finding (cmmmech-cycle5-stage4-finding-0003 on cmmmech:waste-liquid-crystal-display-panels) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -179,7 +179,7 @@ Update causal_graphs[0].nodes[1].label and description in data/records/waste-liq
 
 ## Limits And Additional Notes
 
-- Three secondary_resource records (cmmmech:bauxite-residue, cmmmech:electronic-waste, cmmmech:spent-catalyst) are maintained umbrella/synonym-boundary records where specific experimental feedstocks are curated under narrower waste/residue records (108/111 secondary_resource records carry direct mechanisms).
+- Three secondary_resource records (cmmmech:oil-and-gas-produced-water, cmmmech:spent-vegetable-oil-hydrogenation-catalyst, cmmmech:theisen-sludge) currently document resource identity and composition without curated microbial mechanism entries (108/111 secondary_resource records carry direct mechanisms).
 - In data/records/waste-liquid-crystal-display-panels.yaml, causal_graphs[0].nodes[1] (tth_hydrolase) retains a single-species A. ferrooxidans label/description without the two grounded A. thiooxidans tth paralog loci (tracked as open finding cmmmech-cycle5-stage4-finding-0003 for Stage 5 remediation).
 - Cohort covers 100% (111/111) of target records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b.
 
@@ -200,16 +200,16 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 summary: Reviewed all 111 secondary_resource records in data/records/*.yaml at commit
-  208134600496b954831b125033d33caa508dba8b, including the 6 Cycle 5 Stage 2 primary-source
-  enrichments (acid-mine-drainage, coal-fly-ash, copper-slag, phosphogypsum, red-mud,
-  spent-lithium-ion-battery-cathode-material) and the 5 Cycle 5 Stage 3 UniProtKB
-  protein grounding expansions (electroplating-sludge, printed-circuit-board-manufacturing-sludge,
-  spent-vanadium-phosphorus-oxide-catalyst, traction-battery-hydrometallurgical-residue,
-  waste-liquid-crystal-display-panels). Verified that all 3 Cycle 4 Stage 4 findings
-  remain resolved, 108/111 records carry primary-source-supported microbial mechanisms
-  (145 mechanisms total), and 29/111 carry causal_graphs and UniProtKB protein_examples
-  (23 unique accessions). Identified 1 minor graph/label finding (cmmmech-cycle5-stage4-finding-0003
-  on cmmmech:waste-liquid-crystal-display-panels) for Stage 5 grouped remediation.
+  208134600496b954831b125033d33caa508dba8b, including the 4 Cycle 5 Stage 2 causal-graph
+  synchronizations (fluorescent-lamp-phosphor, spent-fluid-catalytic-cracking-catalyst,
+  traction-battery-hydrometallurgical-residue, waste-liquid-crystal-display-panels)
+  and the 4 Cycle 5 Stage 3 Sqr paralog grounding expansions (electroplating-sludge,
+  nickel-flotation-tailings, traction-battery-hydrometallurgical-residue, waste-liquid-crystal-display-panels).
+  Verified that all 3 Cycle 4 Stage 4 findings remain resolved, 108/111 records carry
+  primary-source-supported microbial mechanisms (145 mechanisms total), and 29/111
+  carry causal_graphs and UniProtKB protein_examples (23 unique accessions). Identified
+  1 minor graph/label finding (cmmmech-cycle5-stage4-finding-0003 on cmmmech:waste-liquid-crystal-display-panels)
+  for Stage 5 grouped remediation.
 reviewer:
   identity: antigravity / cmmmech-cycle5-stage4-cohort-reviewer
   kind: agent
@@ -2538,10 +2538,10 @@ evidence:
   summary: Full programmatic and source-backed audit of all 111 secondary_resource
     records at commit 208134600496b954831b125033d33caa508dba8b.
 limitations:
-- Three secondary_resource records (cmmmech:bauxite-residue, cmmmech:electronic-waste,
-  cmmmech:spent-catalyst) are maintained umbrella/synonym-boundary records where specific
-  experimental feedstocks are curated under narrower waste/residue records (108/111
-  secondary_resource records carry direct mechanisms).
+- Three secondary_resource records (cmmmech:oil-and-gas-produced-water, cmmmech:spent-vegetable-oil-hydrogenation-catalyst,
+  cmmmech:theisen-sludge) currently document resource identity and composition without
+  curated microbial mechanism entries (108/111 secondary_resource records carry direct
+  mechanisms).
 - In data/records/waste-liquid-crystal-display-panels.yaml, causal_graphs[0].nodes[1]
   (tth_hydrolase) retains a single-species A. ferrooxidans label/description without
   the two grounded A. thiooxidans tth paralog loci (tracked as open finding cmmmech-cycle5-stage4-finding-0003

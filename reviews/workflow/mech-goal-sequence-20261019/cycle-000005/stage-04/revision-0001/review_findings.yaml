@@ -89,11 +89,12 @@ findings:
   - cmmmech:synthetic-graphite
   - cmmmech:uranium
   - cmmmech:vanadium
-  summary: Across the 668-record corpus, 13 records (chromium.yaml, electrical-steel.yaml, hafnium.yaml,
-    manganese.yaml, praseodymium.yaml, rare-earth-element-commodities.yaml, scandium.yaml, selenium.yaml,
-    silicon-carbide.yaml, silicon.yaml, synthetic-graphite.yaml, uranium.yaml, vanadium.yaml) serialize
-    top-level 'criticality' before 'sources', whereas CriticalMineralRecord in src/cmmmech/schema/cmmmech.yaml
-    and CANONICAL_RECORD_KEYS in scripts/new_history.py place 'sources' before 'criticality'.
+  summary: Across the 668-record corpus, 13 records (chromium.yaml, electrical-steel.yaml,
+    hafnium.yaml, manganese.yaml, praseodymium.yaml, rare-earth-element-commodities.yaml,
+    scandium.yaml, selenium.yaml, silicon-carbide.yaml, silicon.yaml, synthetic-graphite.yaml,
+    uranium.yaml, vanadium.yaml) serialize top-level 'criticality' before 'sources',
+    whereas CriticalMineralRecord in src/cmmmech/schema/cmmmech.yaml and CANONICAL_RECORD_KEYS
+    in scripts/new_history.py place 'sources' before 'criticality'.
 - finding_id: cmmmech-cycle5-stage4-finding-0002
   issue_key: cmmmech.tetrahedrite-concentrate.tth-hydrolase-label-and-edge-explanation
   review_id: 20261030T201008Z-tetrahedrite-concentrate-cycle5-stage4-record-review
@@ -102,13 +103,15 @@ findings:
   category: graph
   target_ids:
   - cmmmech:tetrahedrite-concentrate
-  summary: In data/records/tetrahedrite-concentrate.yaml (cmmmech:tetrahedrite-concentrate), causal_graphs[0]
-    (ferrooxidans_tetrahedrite_bioleaching_graph) node tth_hydrolase (lines 304-307) retains single-species
-    label 'Tth tetrathionate hydrolase (tth / AFE_0029)' and generic description without Acidithiobacillus
-    ferrivorans tetH (Acife_0037, UniProtKB:A0A060URH6), whereas sibling node sqr_reductase (lines 209-212)
-    and edges[0].evidence[0].explanation (line 380) explicitly name both experimental species arms (A.
-    ferrooxidans and A. ferrivorans). In addition, edges[0].evidence[0].explanation (line 380) states
-    'individual sqr/tth/tetH genes were not mutated', omitting sqr2 (Acife_2586, UniProtKB:G2JTR4).
+  summary: In data/records/tetrahedrite-concentrate.yaml (cmmmech:tetrahedrite-concentrate),
+    causal_graphs[0] (ferrooxidans_tetrahedrite_bioleaching_graph) node tth_hydrolase
+    (lines 304-307) retains single-species label 'Tth tetrathionate hydrolase (tth
+    / AFE_0029)' and generic description without Acidithiobacillus ferrivorans tetH
+    (UniProtKB:A0A060URH6, reference proteome UP000193925 strain CF27), whereas sibling
+    node sqr_reductase (lines 209-212) and edges[0].evidence[0].explanation (line
+    380) explicitly name both experimental species arms (A. ferrooxidans and A. ferrivorans).
+    In addition, edges[0].evidence[0].explanation (line 380) states 'individual sqr/tth/tetH
+    genes were not mutated', omitting sqr2 (AFERRI_20483, UniProtKB:A0A060UMZ1).
 - finding_id: cmmmech-cycle5-stage4-finding-0003
   issue_key: cmmmech.waste-liquid-crystal-display-panels.tth-hydrolase-dual-species-label
   review_id: 20261030T201009Z-waste-liquid-crystal-display-panels-cycle5-stage4-record-review
@@ -118,8 +121,9 @@ findings:
   target_ids:
   - cmmmech:waste-liquid-crystal-display-panels
   summary: In data/records/waste-liquid-crystal-display-panels.yaml (cmmmech:waste-liquid-crystal-display-panels),
-    causal_graphs[0] (ferrooxidans_lcd_indium_bioleaching_graph) node tth_hydrolase (lines 297-300) retains
-    single-species label 'Tth tetrathionate hydrolase (tth / AFE_0029)' and generic description without
-    the two grounded Acidithiobacillus thiooxidans ATCC 19377 tth paralogs (GCD22_14205 UniProtKB:A0A5P9XPU3
-    and GCD22_02315 UniProtKB:A0A5P9XS05), whereas sibling node sqr_reductase (lines 204-207) explicitly
+    causal_graphs[0] (ferrooxidans_lcd_indium_bioleaching_graph) node tth_hydrolase
+    (lines 297-300) retains single-species label 'Tth tetrathionate hydrolase (tth
+    / AFE_0029)' and generic description without the two grounded Acidithiobacillus
+    thiooxidans ATCC 19377 tth paralogs (GCD22_14205 UniProtKB:A0A5P9XPU3 and GCD22_02315
+    UniProtKB:A0A5P9XS05), whereas sibling node sqr_reductase (lines 204-207) explicitly
     lists both A. ferrooxidans and A. thiooxidans paralog loci.

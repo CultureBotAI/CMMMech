@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 31 primary_resource records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b, including the 4 Cycle 5 Stage 2 primary-source enrichments (black-shale-ore, copper-molybdenum-porphyry-ore, Lateritic nickel ore, phosphate-rock) and the 2 Cycle 5 Stage 3 UniProtKB protein grounding expansions (polymetallic-sulfide-ore, tetrahedrite-concentrate). All 31/31 records carry primary-source-supported microbial mechanisms (42 mechanisms total), and 7/31 carry causal_graphs and UniProtKB protein_examples (15 unique accessions). Identified 1 minor graph/label finding (cmmmech-cycle5-stage4-finding-0002 on cmmmech:tetrahedrite-concentrate) for Stage 5 grouped remediation.
+Reviewed all 31 primary_resource records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b, including the 3 Cycle 5 Stage 2 causal-graph synchronizations (allanite-concentrate, dunite, tetrahedrite-concentrate) and the Cycle 5 Stage 3 Sqr/Sqr2 paralog grounding expansion on tetrahedrite-concentrate. All 31/31 records carry primary-source-supported microbial mechanisms (42 mechanisms total), and 7/31 (allanite-concentrate, dunite, kaolin, lithium-bearing-geothermal-brine, lithium-mica-ore, manganese-ore, tetrahedrite-concentrate) carry causal_graphs and UniProtKB protein_examples (15 unique accessions). Identified 1 minor graph/label finding (cmmmech-cycle5-stage4-finding-0002 on cmmmech:tetrahedrite-concentrate) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -76,15 +76,15 @@ All 31/31 primary_resource records contain primary-source-supported microbial me
 
 minor / open / confirmed; issue key: cmmmech.tetrahedrite-concentrate.tth-hydrolase-label-and-edge-explanation.
 
-In data/records/tetrahedrite-concentrate.yaml (cmmmech:tetrahedrite-concentrate), causal_graphs[0] (ferrooxidans_tetrahedrite_bioleaching_graph) node tth_hydrolase (lines 304-307) retains single-species label 'Tth tetrathionate hydrolase (tth / AFE_0029)' and generic description without Acidithiobacillus ferrivorans tetH (Acife_0037, UniProtKB:A0A060URH6), whereas sibling node sqr_reductase (lines 209-212) and edges[0].evidence[0].explanation (line 380) explicitly name both experimental species arms (A. ferrooxidans and A. ferrivorans). In addition, edges[0].evidence[0].explanation (line 380) states 'individual sqr/tth/tetH genes were not mutated', omitting sqr2 (Acife_2586, UniProtKB:G2JTR4).
+In data/records/tetrahedrite-concentrate.yaml (cmmmech:tetrahedrite-concentrate), causal_graphs[0] (ferrooxidans_tetrahedrite_bioleaching_graph) node tth_hydrolase (lines 304-307) retains single-species label 'Tth tetrathionate hydrolase (tth / AFE_0029)' and generic description without Acidithiobacillus ferrivorans tetH (UniProtKB:A0A060URH6, reference proteome UP000193925 strain CF27), whereas sibling node sqr_reductase (lines 209-212) and edges[0].evidence[0].explanation (line 380) explicitly name both experimental species arms (A. ferrooxidans and A. ferrivorans). In addition, edges[0].evidence[0].explanation (line 380) states 'individual sqr/tth/tetH genes were not mutated', omitting sqr2 (AFERRI_20483, UniProtKB:A0A060UMZ1).
 
 ## Recommended Actions And Acceptance Checks
 
 ### act-fix-tetrahedrite-concentrate-tth-label-and-edge-explanation
 
-Update causal_graphs[0].nodes[1].label and description in data/records/tetrahedrite-concentrate.yaml to include both A. ferrooxidans Tth (tth / AFE_0029) and A. ferrivorans TetH (tetH / Acife_0037), and update causal_graphs[0].edges[0].evidence[0].explanation to list sqr/sqr2/tth/tetH during Stage 5 grouped remediation with a canonical history sidecar.
+Update causal_graphs[0].nodes[1].label and description in data/records/tetrahedrite-concentrate.yaml to include both A. ferrooxidans Tth (tth / AFE_0029) and A. ferrivorans TetH (tetH / UniProtKB:A0A060URH6), and update causal_graphs[0].edges[0].evidence[0].explanation to list sqr/sqr2/tth/tetH during Stage 5 grouped remediation with a canonical history sidecar.
 
-- causal_graphs[0].nodes[1].label and description in data/records/tetrahedrite-concentrate.yaml name both A. ferrooxidans Tth (AFE_0029) and A. ferrivorans TetH (Acife_0037).
+- causal_graphs[0].nodes[1].label and description in data/records/tetrahedrite-concentrate.yaml name both A. ferrooxidans Tth (tth / AFE_0029) and A. ferrivorans TetH (tetH / UniProtKB:A0A060URH6).
 - causal_graphs[0].edges[0].evidence[0].explanation lists individual sqr/sqr2/tth/tetH genes.
 - A matching EDIT history sidecar exists in history/records/tetrahedrite-concentrate/ and passes just check.
 
@@ -120,14 +120,15 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 summary: Reviewed all 31 primary_resource records in data/records/*.yaml at commit
-  208134600496b954831b125033d33caa508dba8b, including the 4 Cycle 5 Stage 2 primary-source
-  enrichments (black-shale-ore, copper-molybdenum-porphyry-ore, Lateritic nickel ore,
-  phosphate-rock) and the 2 Cycle 5 Stage 3 UniProtKB protein grounding expansions
-  (polymetallic-sulfide-ore, tetrahedrite-concentrate). All 31/31 records carry primary-source-supported
-  microbial mechanisms (42 mechanisms total), and 7/31 carry causal_graphs and UniProtKB
-  protein_examples (15 unique accessions). Identified 1 minor graph/label finding
-  (cmmmech-cycle5-stage4-finding-0002 on cmmmech:tetrahedrite-concentrate) for Stage
-  5 grouped remediation.
+  208134600496b954831b125033d33caa508dba8b, including the 3 Cycle 5 Stage 2 causal-graph
+  synchronizations (allanite-concentrate, dunite, tetrahedrite-concentrate) and the
+  Cycle 5 Stage 3 Sqr/Sqr2 paralog grounding expansion on tetrahedrite-concentrate.
+  All 31/31 records carry primary-source-supported microbial mechanisms (42 mechanisms
+  total), and 7/31 (allanite-concentrate, dunite, kaolin, lithium-bearing-geothermal-brine,
+  lithium-mica-ore, manganese-ore, tetrahedrite-concentrate) carry causal_graphs and
+  UniProtKB protein_examples (15 unique accessions). Identified 1 minor graph/label
+  finding (cmmmech-cycle5-stage4-finding-0002 on cmmmech:tetrahedrite-concentrate)
+  for Stage 5 grouped remediation.
 reviewer:
   identity: antigravity / cmmmech-cycle5-stage4-cohort-reviewer
   kind: agent
@@ -821,11 +822,11 @@ findings:
     causal_graphs[0] (ferrooxidans_tetrahedrite_bioleaching_graph) node tth_hydrolase
     (lines 304-307) retains single-species label 'Tth tetrathionate hydrolase (tth
     / AFE_0029)' and generic description without Acidithiobacillus ferrivorans tetH
-    (Acife_0037, UniProtKB:A0A060URH6), whereas sibling node sqr_reductase (lines
-    209-212) and edges[0].evidence[0].explanation (line 380) explicitly name both
-    experimental species arms (A. ferrooxidans and A. ferrivorans). In addition, edges[0].evidence[0].explanation
-    (line 380) states 'individual sqr/tth/tetH genes were not mutated', omitting sqr2
-    (Acife_2586, UniProtKB:G2JTR4).
+    (UniProtKB:A0A060URH6, reference proteome UP000193925 strain CF27), whereas sibling
+    node sqr_reductase (lines 209-212) and edges[0].evidence[0].explanation (line
+    380) explicitly name both experimental species arms (A. ferrooxidans and A. ferrivorans).
+    In addition, edges[0].evidence[0].explanation (line 380) states 'individual sqr/tth/tetH
+    genes were not mutated', omitting sqr2 (AFERRI_20483, UniProtKB:A0A060UMZ1).
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/tetrahedrite-concentrate.yaml
@@ -838,16 +839,17 @@ actions:
   - cmmmech:tetrahedrite-concentrate
   description: Update causal_graphs[0].nodes[1].label and description in data/records/tetrahedrite-concentrate.yaml
     to include both A. ferrooxidans Tth (tth / AFE_0029) and A. ferrivorans TetH (tetH
-    / Acife_0037), and update causal_graphs[0].edges[0].evidence[0].explanation to
-    list sqr/sqr2/tth/tetH during Stage 5 grouped remediation with a canonical history
-    sidecar.
+    / UniProtKB:A0A060URH6), and update causal_graphs[0].edges[0].evidence[0].explanation
+    to list sqr/sqr2/tth/tetH during Stage 5 grouped remediation with a canonical
+    history sidecar.
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/tetrahedrite-concentrate.yaml
     role: maintained_record
   acceptance_checks:
   - causal_graphs[0].nodes[1].label and description in data/records/tetrahedrite-concentrate.yaml
-    name both A. ferrooxidans Tth (AFE_0029) and A. ferrivorans TetH (Acife_0037).
+    name both A. ferrooxidans Tth (tth / AFE_0029) and A. ferrivorans TetH (tetH /
+    UniProtKB:A0A060URH6).
   - causal_graphs[0].edges[0].evidence[0].explanation lists individual sqr/sqr2/tth/tetH
     genes.
   - A matching EDIT history sidecar exists in history/records/tetrahedrite-concentrate/

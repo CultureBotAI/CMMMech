@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 66 element records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b. Every element record carries a verified CHEBI atom identifier, dated government/intergovernmental criticality assessments (USGS, DOE, EU, and allied lists), and primary-source-backed microbial mechanisms across 63/66 element records (66 mechanisms total), including 24/66 with multi-step causal_graphs (25 graphs) and 23/66 with live-verified UniProtKB protein_examples (33 unique accessions, including Cycle 5 Stage 3 Desulfovibrio desulfuricans Cyt c3 UniProtKB:B8J498 on gold and Sqor UniProtKB:A0A5P9XUB1 on zinc). Identified 1 minor convention finding (cmmmech-cycle5-stage4-finding-0001: criticality serialized before sources in 9 element records: chromium, hafnium, manganese, praseodymium, scandium, selenium, silicon, uranium, vanadium) for Stage 5 grouped remediation.
+Reviewed all 66 element records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b, including the 4 element records synchronized in Cycle 5 Stage 2 (cerium, lanthanum, neodymium, zinc) and the Cycle 5 Stage 3 Sqr paralog grounding expansion on zinc (UniProtKB:B7J411 and UniProtKB:A0A543Q349). Every element record carries a verified CHEBI atom identifier, dated government/intergovernmental criticality assessments (USGS, DOE, EU, and allied lists), and primary-source-backed microbial mechanisms across 63/66 element records (66 mechanisms total), including 24/66 with multi-step causal_graphs (25 graphs) and 23/66 with live-verified UniProtKB protein_examples (33 unique accessions). Identified 1 minor convention finding (cmmmech-cycle5-stage4-finding-0001: criticality serialized before sources in 9 element records: chromium, hafnium, manganese, praseodymium, scandium, selenium, silicon, uranium, vanadium) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -109,7 +109,7 @@ All 66 element records carry canonical CHEBI atom CURIEs and labels with 0 cross
 
 evidence: supported. Targets: cmmmech:aluminium, cmmmech:antimony, cmmmech:arsenic, cmmmech:beryllium, cmmmech:bismuth, cmmmech:boron, cmmmech:cadmium, cmmmech:cerium, cmmmech:cesium, cmmmech:chromium, cmmmech:cobalt, cmmmech:copper, cmmmech:dysprosium, cmmmech:erbium, cmmmech:europium, cmmmech:fluorine, cmmmech:gadolinium, cmmmech:gallium, cmmmech:germanium, cmmmech:gold, cmmmech:hafnium, cmmmech:helium, cmmmech:holmium, cmmmech:indium, cmmmech:iridium, cmmmech:iron, cmmmech:lanthanum, cmmmech:lead, cmmmech:lithium, cmmmech:lutetium, cmmmech:magnesium, cmmmech:manganese, cmmmech:molybdenum, cmmmech:neodymium, cmmmech:nickel, cmmmech:niobium, cmmmech:osmium, cmmmech:palladium, cmmmech:phosphorus, cmmmech:platinum, cmmmech:praseodymium, cmmmech:promethium, cmmmech:rhenium, cmmmech:rhodium, cmmmech:rubidium, cmmmech:ruthenium, cmmmech:samarium, cmmmech:scandium, cmmmech:selenium, cmmmech:silicon, cmmmech:silver, cmmmech:strontium, cmmmech:tantalum, cmmmech:tellurium, cmmmech:terbium, cmmmech:thallium, cmmmech:thulium, cmmmech:tin, cmmmech:titanium, cmmmech:tungsten, cmmmech:uranium, cmmmech:vanadium, cmmmech:ytterbium, cmmmech:yttrium, cmmmech:zinc, cmmmech:zirconium.
 
-63/66 element records contain primary-source-supported microbial mechanisms (66 mechanisms total); 24/66 contain causal_graphs (25 graphs), with 23/24 grounded to 33 unique UniProtKB accessions and 1/24 (cmmmech:iron) explicitly marked UNGROUNDED. Nine element records serialize criticality before sources.
+63/66 element records contain primary-source-supported microbial mechanisms (66 mechanisms total); 24/66 contain causal_graphs (25 graphs), with 23/24 grounded to 33 unique UniProtKB accessions and 3 GENE_OR_PROTEIN nodes across cmmmech:iron (ax17_extracellular_fe3_reductase_system), cmmmech:manganese (mopa_heme_peroxidase), and cmmmech:praseodymium (melba_lanm_o36) explicitly marked UNGROUNDED where strain-resolved UniProtKB entries are absent. Nine element records serialize criticality before sources.
 
 ## Findings
 
@@ -141,7 +141,7 @@ Reorder top-level YAML keys so sources precedes criticality in Stage 5 grouped r
 ## Limits And Additional Notes
 
 - Three element records currently lack curated microbial mechanism entries: cmmmech:beryllium, cmmmech:helium, and cmmmech:promethium are maintained criticality-anchored element records awaiting primary microbial extraction/transformation/recovery evidence. (63/66 element records have curated mechanisms; 3/66 remain identity and criticality records only.)
-- cmmmech:iron ax17_ferrihydrite_transformation_graph remains explicitly UNGROUNDED: Caloranaerobacter ferrireducens / Thermococcus acidaminovorans Ax17 lacks a sequenced strain proteome or strain-resolved iron-reductase sequence in UniProtKB. (23/24 element records with causal_graphs have GROUNDED GENE_OR_PROTEIN nodes; cmmmech:iron retains protein_grounding_status: UNGROUNDED.)
+- Three GENE_OR_PROTEIN nodes in the element cohort remain explicitly UNGROUNDED due to absent strain-resolved sequences in UniProtKB: ax17_extracellular_fe3_reductase_system in cmmmech:iron (Desulfovulcanus ferrireducens Ax17), mopa_heme_peroxidase in cmmmech:manganese, and melba_lanm_o36 in cmmmech:praseodymium (23/24 element records with causal_graphs carry GROUNDED protein_examples; cmmmech:iron has only an UNGROUNDED node).
 - Cohort covers 100% (66/66) of target records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b.
 
 ## Complete Structured Record
@@ -160,16 +160,18 @@ skill: .claude/skills/review-yaml-category/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: 'Reviewed all 66 element records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b.
-  Every element record carries a verified CHEBI atom identifier, dated government/intergovernmental
-  criticality assessments (USGS, DOE, EU, and allied lists), and primary-source-backed
-  microbial mechanisms across 63/66 element records (66 mechanisms total), including
-  24/66 with multi-step causal_graphs (25 graphs) and 23/66 with live-verified UniProtKB
-  protein_examples (33 unique accessions, including Cycle 5 Stage 3 Desulfovibrio
-  desulfuricans Cyt c3 UniProtKB:B8J498 on gold and Sqor UniProtKB:A0A5P9XUB1 on zinc).
-  Identified 1 minor convention finding (cmmmech-cycle5-stage4-finding-0001: criticality
-  serialized before sources in 9 element records: chromium, hafnium, manganese, praseodymium,
-  scandium, selenium, silicon, uranium, vanadium) for Stage 5 grouped remediation.'
+summary: 'Reviewed all 66 element records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b,
+  including the 4 element records synchronized in Cycle 5 Stage 2 (cerium, lanthanum,
+  neodymium, zinc) and the Cycle 5 Stage 3 Sqr paralog grounding expansion on zinc
+  (UniProtKB:B7J411 and UniProtKB:A0A543Q349). Every element record carries a verified
+  CHEBI atom identifier, dated government/intergovernmental criticality assessments
+  (USGS, DOE, EU, and allied lists), and primary-source-backed microbial mechanisms
+  across 63/66 element records (66 mechanisms total), including 24/66 with multi-step
+  causal_graphs (25 graphs) and 23/66 with live-verified UniProtKB protein_examples
+  (33 unique accessions). Identified 1 minor convention finding (cmmmech-cycle5-stage4-finding-0001:
+  criticality serialized before sources in 9 element records: chromium, hafnium, manganese,
+  praseodymium, scandium, selenium, silicon, uranium, vanadium) for Stage 5 grouped
+  remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle5-stage4-cohort-reviewer
   kind: agent
@@ -1615,8 +1617,11 @@ assessments:
   - ev-element-cohort-audit
   summary: 63/66 element records contain primary-source-supported microbial mechanisms
     (66 mechanisms total); 24/66 contain causal_graphs (25 graphs), with 23/24 grounded
-    to 33 unique UniProtKB accessions and 1/24 (cmmmech:iron) explicitly marked UNGROUNDED.
-    Nine element records serialize criticality before sources.
+    to 33 unique UniProtKB accessions and 3 GENE_OR_PROTEIN nodes across cmmmech:iron
+    (ax17_extracellular_fe3_reductase_system), cmmmech:manganese (mopa_heme_peroxidase),
+    and cmmmech:praseodymium (melba_lanm_o36) explicitly marked UNGROUNDED where strain-resolved
+    UniProtKB entries are absent. Nine element records serialize criticality before
+    sources.
 findings:
 - finding_id: cmmmech-cycle5-stage4-finding-0001
   issue_key: cmmmech.records.criticality-before-sources-key-order
@@ -1740,11 +1745,11 @@ limitations:
   records awaiting primary microbial extraction/transformation/recovery evidence.
   (63/66 element records have curated mechanisms; 3/66 remain identity and criticality
   records only.)'
-- 'cmmmech:iron ax17_ferrihydrite_transformation_graph remains explicitly UNGROUNDED:
-  Caloranaerobacter ferrireducens / Thermococcus acidaminovorans Ax17 lacks a sequenced
-  strain proteome or strain-resolved iron-reductase sequence in UniProtKB. (23/24
-  element records with causal_graphs have GROUNDED GENE_OR_PROTEIN nodes; cmmmech:iron
-  retains protein_grounding_status: UNGROUNDED.)'
+- 'Three GENE_OR_PROTEIN nodes in the element cohort remain explicitly UNGROUNDED
+  due to absent strain-resolved sequences in UniProtKB: ax17_extracellular_fe3_reductase_system
+  in cmmmech:iron (Desulfovulcanus ferrireducens Ax17), mopa_heme_peroxidase in cmmmech:manganese,
+  and melba_lanm_o36 in cmmmech:praseodymium (23/24 element records with causal_graphs
+  carry GROUNDED protein_examples; cmmmech:iron has only an UNGROUNDED node).'
 notes:
 - Cohort covers 100% (66/66) of target records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b.
 boundary_decisions:

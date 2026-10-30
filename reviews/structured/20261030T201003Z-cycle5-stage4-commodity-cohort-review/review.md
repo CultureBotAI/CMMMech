@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 36 commodity records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b. All 36 commodity records maintain explicit boundary definitions separating refined/traded chemical or metallurgical commodities from pure elements, minerals, and raw/waste resources, with 6/36 carrying direct microbial mechanisms (6 mechanisms) and 4/36 carrying causal_graphs and UniProtKB protein_examples (6 unique accessions, including Cycle 5 Stage 3 Sqr paralog UniProtKB:B7J411 on copper-concentrate and zinc-concentrate). Identified 1 minor convention finding (cmmmech-cycle5-stage4-finding-0001: criticality serialized before sources in 4 commodity records: electrical-steel, rare-earth-element-commodities, silicon-carbide, synthetic-graphite) for Stage 5 grouped remediation.
+Reviewed all 36 commodity records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b, including the Cycle 5 Stage 2 causal-graph synchronization and Cycle 5 Stage 3 Sqr paralog grounding expansion (UniProtKB:B7J411) on titanium-metal. All 36 commodity records maintain explicit boundary definitions separating refined/traded chemical or metallurgical commodities from pure elements, minerals, and raw/waste resources, with 6/36 (borates, coking-coal, phosphate-rock, rare-earth-element-commodities, tin-copper-solder, titanium-metal) carrying direct microbial mechanisms (6 mechanisms) and 4/36 (borates, phosphate-rock, rare-earth-element-commodities, titanium-metal) carrying causal_graphs and UniProtKB protein_examples (6 unique accessions). Identified 1 minor convention finding (cmmmech-cycle5-stage4-finding-0001: criticality serialized before sources in 4 commodity records: electrical-steel, rare-earth-element-commodities, silicon-carbide, synthetic-graphite) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -104,7 +104,7 @@ Reorder top-level YAML keys so sources precedes criticality in Stage 5 grouped r
 
 ## Limits And Additional Notes
 
-- 30 of 36 commodity records represent trade/regulatory commodity classes (e.g., battery-grade lithium carbonate, ferrochrome, metallurgical alumina) where microbial processing acts on upstream mineral or resource records rather than the refined commodity itself (6/36 commodity records carry direct microbial mechanisms).
+- 30 of 36 commodity records represent trade/regulatory commodity classes (e.g., alumina, bauxite, ferroboron, fluorspar, lithium-carbonate) where microbial processing acts on upstream mineral or resource records rather than the refined commodity itself (6/36 commodity records carry direct microbial mechanisms).
 - Cohort covers 100% (36/36) of target records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b.
 
 ## Complete Structured Record
@@ -123,14 +123,17 @@ skill: .claude/skills/review-yaml-category/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: 'Reviewed all 36 commodity records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b.
-  All 36 commodity records maintain explicit boundary definitions separating refined/traded
-  chemical or metallurgical commodities from pure elements, minerals, and raw/waste
-  resources, with 6/36 carrying direct microbial mechanisms (6 mechanisms) and 4/36
-  carrying causal_graphs and UniProtKB protein_examples (6 unique accessions, including
-  Cycle 5 Stage 3 Sqr paralog UniProtKB:B7J411 on copper-concentrate and zinc-concentrate).
-  Identified 1 minor convention finding (cmmmech-cycle5-stage4-finding-0001: criticality
-  serialized before sources in 4 commodity records: electrical-steel, rare-earth-element-commodities,
+summary: 'Reviewed all 36 commodity records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b,
+  including the Cycle 5 Stage 2 causal-graph synchronization and Cycle 5 Stage 3 Sqr
+  paralog grounding expansion (UniProtKB:B7J411) on titanium-metal. All 36 commodity
+  records maintain explicit boundary definitions separating refined/traded chemical
+  or metallurgical commodities from pure elements, minerals, and raw/waste resources,
+  with 6/36 (borates, coking-coal, phosphate-rock, rare-earth-element-commodities,
+  tin-copper-solder, titanium-metal) carrying direct microbial mechanisms (6 mechanisms)
+  and 4/36 (borates, phosphate-rock, rare-earth-element-commodities, titanium-metal)
+  carrying causal_graphs and UniProtKB protein_examples (6 unique accessions). Identified
+  1 minor convention finding (cmmmech-cycle5-stage4-finding-0001: criticality serialized
+  before sources in 4 commodity records: electrical-steel, rare-earth-element-commodities,
   silicon-carbide, synthetic-graphite) for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle5-stage4-cohort-reviewer
@@ -980,9 +983,9 @@ evidence:
   summary: Full programmatic and source-backed audit of all 36 commodity records at
     commit 208134600496b954831b125033d33caa508dba8b.
 limitations:
-- 30 of 36 commodity records represent trade/regulatory commodity classes (e.g., battery-grade
-  lithium carbonate, ferrochrome, metallurgical alumina) where microbial processing
-  acts on upstream mineral or resource records rather than the refined commodity itself
+- 30 of 36 commodity records represent trade/regulatory commodity classes (e.g., alumina,
+  bauxite, ferroboron, fluorspar, lithium-carbonate) where microbial processing acts
+  on upstream mineral or resource records rather than the refined commodity itself
   (6/36 commodity records carry direct microbial mechanisms).
 notes:
 - Cohort covers 100% (36/36) of target records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b.

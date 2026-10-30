@@ -12,9 +12,10 @@ verdict: pass_with_limitations
 scientific_review: true
 summary: 'Reviewed data/records/tetrahedrite-concentrate.yaml (cmmmech:tetrahedrite-concentrate)
   at commit 208134600496b954831b125033d33caa508dba8b following Cycle 5 Stage 3 expansion
-  of Acidithiobacillus ferrooxidans ATCC 23270 and Acidithiobacillus ferrivorans DSM
-  22755 / CF27 UniProtKB protein_examples (6 entries: B7JBP8, B7J411, G2JTS6, G2JTR4,
-  B7J3C9, A0A060URH6). Verified all 6 UniProtKB accessions and synchronization between
+  of Acidithiobacillus ferrooxidans ATCC 23270 (UP000001362) and Acidithiobacillus
+  ferrivorans CF27 (UP000193925) UniProtKB protein_examples (6 entries: B7JBP8, B7J411,
+  A0A060UVE9, A0A060UMZ1, B7J3C9, A0A060URH6) for the Kupka et al. (2025, DOI:10.1007/s40831-025-01089-0)
+  bioleaching study. Verified all 6 UniProtKB accessions and synchronization between
   mechanisms[0] and causal_graphs[0]. Identified 1 minor graph/label finding (cmmmech-cycle5-stage4-finding-0002:
   causal_graphs[0].nodes[1] tth_hydrolase retains single-species A. ferrooxidans label/description
   and edges[0].evidence[0].explanation omits sqr2) for Stage 5 grouped remediation.'
@@ -86,10 +87,12 @@ assessments:
   - cmmmech:tetrahedrite-concentrate
   evidence_ids:
   - ev-tetrahedrite-file
-  - ev-tetrahedrite-michel2026
-  summary: All 6 UniProtKB protein_examples (B7JBP8, B7J411, G2JTS6, G2JTR4, B7J3C9,
-    A0A060URH6) are accurately grounded, qualified with partial support, and synchronized
-    between mechanisms[0] and causal_graphs[0]. However, causal_graphs[0].nodes[1]
+  - ev-tetrahedrite-kupka2025
+  summary: All 6 UniProtKB protein_examples (B7JBP8 [AFE_1792], B7J411 [sqr / AFE_0267],
+    A0A060UVE9 [sqr / AFERRI_11118], A0A060UMZ1 [sqr2 / AFERRI_20483], B7J3C9 [tth
+    / AFE_0029], and A0A060URH6 [tetH]) are accurately grounded to reference proteomes
+    UP000001362 and UP000193925, qualified with partial support against kupka_2025,
+    and synchronized between mechanisms[0] and causal_graphs[0]. However, causal_graphs[0].nodes[1]
     (tth_hydrolase) retains a single-species A. ferrooxidans label/description and
     edges[0].evidence[0].explanation omits sqr2.
 findings:
@@ -109,16 +112,16 @@ findings:
   - causal_graphs[0].edges[0].evidence[0].explanation
   evidence_ids:
   - ev-tetrahedrite-file
-  - ev-tetrahedrite-michel2026
+  - ev-tetrahedrite-kupka2025
   description: In data/records/tetrahedrite-concentrate.yaml (cmmmech:tetrahedrite-concentrate),
     causal_graphs[0] (ferrooxidans_tetrahedrite_bioleaching_graph) node tth_hydrolase
     (lines 304-307) retains single-species label 'Tth tetrathionate hydrolase (tth
     / AFE_0029)' and generic description without Acidithiobacillus ferrivorans tetH
-    (Acife_0037, UniProtKB:A0A060URH6), whereas sibling node sqr_reductase (lines
-    209-212) and edges[0].evidence[0].explanation (line 380) explicitly name both
-    experimental species arms (A. ferrooxidans and A. ferrivorans). In addition, edges[0].evidence[0].explanation
-    (line 380) states 'individual sqr/tth/tetH genes were not mutated', omitting sqr2
-    (Acife_2586, UniProtKB:G2JTR4).
+    (UniProtKB:A0A060URH6, reference proteome UP000193925 strain CF27), whereas sibling
+    node sqr_reductase (lines 209-212) and edges[0].evidence[0].explanation (line
+    380) explicitly name both experimental species arms (A. ferrooxidans and A. ferrivorans).
+    In addition, edges[0].evidence[0].explanation (line 380) states 'individual sqr/tth/tetH
+    genes were not mutated', omitting sqr2 (AFERRI_20483, UniProtKB:A0A060UMZ1).
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/tetrahedrite-concentrate.yaml
@@ -131,16 +134,17 @@ actions:
   - cmmmech:tetrahedrite-concentrate
   description: Update causal_graphs[0].nodes[1].label and description in data/records/tetrahedrite-concentrate.yaml
     to include both A. ferrooxidans Tth (tth / AFE_0029) and A. ferrivorans TetH (tetH
-    / Acife_0037), and update causal_graphs[0].edges[0].evidence[0].explanation to
-    list sqr/sqr2/tth/tetH during Stage 5 grouped remediation with a canonical history
-    sidecar.
+    / UniProtKB:A0A060URH6), and update causal_graphs[0].edges[0].evidence[0].explanation
+    to list sqr/sqr2/tth/tetH during Stage 5 grouped remediation with a canonical
+    history sidecar.
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/tetrahedrite-concentrate.yaml
     role: maintained_record
   acceptance_checks:
   - causal_graphs[0].nodes[1].label and description in data/records/tetrahedrite-concentrate.yaml
-    name both A. ferrooxidans Tth (AFE_0029) and A. ferrivorans TetH (Acife_0037).
+    name both A. ferrooxidans Tth (tth / AFE_0029) and A. ferrivorans TetH (tetH /
+    UniProtKB:A0A060URH6).
   - causal_graphs[0].edges[0].evidence[0].explanation lists individual sqr/sqr2/tth/tetH
     genes.
   - A matching EDIT history sidecar exists in history/records/tetrahedrite-concentrate/
@@ -149,22 +153,23 @@ evidence:
 - evidence_id: ev-tetrahedrite-file
   kind: record_content
   reference: data/records/tetrahedrite-concentrate.yaml
-  locator: lines 1-428
+  locator: lines 1-444
   accessed_at: '2026-10-30T20:10:08Z'
   support: supports
-  summary: Inspected all 428 lines of data/records/tetrahedrite-concentrate.yaml,
+  summary: Inspected all 444 lines of data/records/tetrahedrite-concentrate.yaml,
     including mechanisms[0] (6 protein_examples) and causal_graphs[0] (5 nodes, 4
     edges).
-- evidence_id: ev-tetrahedrite-michel2026
+- evidence_id: ev-tetrahedrite-kupka2025
   kind: primary_source
-  reference: DOI:10.3390/microorganisms14030594
-  locator: Michel et al. 2026 Microorganisms 14(3):594, Sections 2-3, Tables 1-2,
-    Figures 1-6
+  reference: DOI:10.1007/s40831-025-01089-0
+  locator: Kupka et al. 2025 Journal of Sustainable Metallurgy 11:3685-3699, Tables
+    1-2, Figures 1-8, Supplement Figures S1-S12
   accessed_at: '2026-10-30T20:10:08Z'
   support: supports
-  summary: Michel et al. (2026) assayed separate pure-culture shake-flask bioleaching
-    arms of Acidithiobacillus ferrooxidans DSM 14882T and Acidithiobacillus ferrivorans
-    DSM 22755T on flotation tetrahedrite concentrate.
+  summary: Kupka et al. (2025) assayed separate aerobic shake-flask bioleaching arms
+    of Acidithiobacillus ferrooxidans DSM 14882 and Acidithiobacillus ferrivorans
+    SS3 (DSM 17398) on Strieborna vein flotation tetrahedrite concentrate over 120
+    days at 25 °C.
 limitations:
 - data/records/tetrahedrite-concentrate.yaml retains a single-species A. ferrooxidans
   label/description on causal_graphs[0].nodes[1] (tth_hydrolase) and omits sqr2 in
