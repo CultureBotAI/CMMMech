@@ -62,7 +62,7 @@ No findings recorded within this review's declared scope.
 | --- | --- | --- | --- |
 | owner | data/records/yttrotungstite-nd.yaml; Working-tree record data/records/yttrotungstite-nd.yaml | supports | Working-tree record data/records/yttrotungstite-nd.yaml (SHA-256 6c7e4579bf2bae64f7d38fc87dd0a28e29984fd3f78fcfc840200cce8edeac89) captures the IMA:2023-064 identity (ima_symbol Ytgs-Nd, formula NdW2O7(OH)(H2O)), Nyakabingo tungsten mine (10 km NNW of Kigali, Rwanda) holotypes WPA504 and ULG 21981, Table 1 (p. 376) WDS chemistry (n = 17), monoclinic P21/m single-crystal XRD structure refinement (Tables 3–7), powder XRD (Table 2), Raman and optical properties, IMA-CNMNC Newsletter 91 formula uniformization across the yttrotungstite group, and 0 mechanisms (no microbial mechanism or industrial recovery yield asserted). |
 | ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List, PDF p. 238 | supports | Confirms Yttrotungstite-(Nd), symbol Ytgs-Nd, formula NdW2O7(OH)(H2O), status A, IMA No. 2023-064, country Rwanda, and sole reference European Journal of Mineralogy 38 (2026), 373. |
-| hatert_2026_primary | https://doi.org/10.5194/ejm-38-373-2026; Hatert F, Philippo S, Vignola P, and Guennou M (2026) Eur. J. Mineral. 38:373-382, pp. 373-382, Tables 1-7, Figures 1-6 (passages/ejm-38-373-2026.p1..p10.all-pages.w1.part*.txt; 24 passages) | supports | All 10 pages (24 bounded passages &lt;= 1,800 B in summary.json) inspected: confirms Nyakabingo tungsten mine (10 km NNW of Kigali, Rwanda; Mesoproterozoic Karagwe–Ankole belt), holotype specimens WPA504 (Natural History Museum of Luxembourg) and ULG 21981 (Laboratory of Mineralogy, University of Liège, Belgium), associated ferberite, anthoinite, raspite, quartz, and muscovite, Table 1 (p. 376) WDS chemistry (n = 17: WO3 73.40, Nd2O3 9.37, Sm2O3 3.56, Ce2O3 3.17, Pr2O3 2.10, Gd2O3 1.74, La2O3 1.44, Y2O3 0.91, Dy2O3 0.81, Yb2O3 0.71, P2O5 0.18, CaO 0.09, Er2O3 0.09, MoO3 0.07, Eu2O3 0.07, Tb2O3 0.07, As2O5 0.04, TiO2 0.03, SiO2 0.02, Al2O3 0.01, K2O 0.01, H2Ocalc 4.24, total 102.13 wt%), empirical formula (Nd0.35Sm0.13Ce0.12Pr0.08Gd0.06La0.06Y0.05Dy0.03Yb0.02Ca0.01)Sigma0.91(W2.01P0.02)Sigma2.03O7(OH)(H2O), monoclinic P21/m SCXRD unit cell (a = 5.8534(3) Å, b = 8.6881(3) Å in abstract/text vs 8.6681(3) Å in Table 3, c = 7.0488(4) Å, beta = 105.336(5)°, V = 345.70(3) Å3, Z = 2, Dcalc = 6.279 g/cm3, R1 = 0.0362, R1(all) = 0.0398; Tables 3–7), PXRD cell (a = 5.856(3) Å, b = 8.698(4) Å, c = 7.054(3) Å, beta = 105.30(4)°, V = 346.6(2) Å3; Table 2), and biaxial negative optics (alpha = 1.90(2), beta = 1.99(2), gamma = 2.02(2), 2Vmeas = 65(5)°). |
+| hatert_2026_primary | https://doi.org/10.5194/ejm-38-373-2026; Hatert F, Philippo S, Vignola P, and Guennou M (2026) Eur. J. Mineral. 38:373-382, pp. 373-382, Tables 1-7, Figures 1-6 (passages/ejm-38-373-2026.p1..p10.all-pages.w1.part*.txt; 24 passages) | supports | All 10 pages (24 bounded passages &lt;= 1,800 B in summary.json) inspected: confirms Nyakabingo tungsten mine (10 km NNW of Kigali, Rwanda; Mesoproterozoic Karagwe–Ankole belt), holotype specimens WPA504 (Natural History Museum of Luxembourg) and ULG 21981 (Laboratory of Mineralogy, University of Liège, Belgium), associated ferberite, anthoinite, raspite, quartz, and muscovite, Table 1 (p. 376) WDS chemistry (n = 17: WO3 73.40, Nd2O3 9.37, Sm2O3 3.56, Ce2O3 3.17, Pr2O3 2.10, Gd2O3 1.74, La2O3 1.44, Y2O3 0.91, Dy2O3 0.81, Yb2O3 0.71, P2O5 0.18, CaO 0.09, Er2O3 0.09, MoO3 0.07, Eu2O3 0.07, Tb2O3 0.07, As2O5 0.04, TiO2 0.03, SiO2 0.02, Al2O3 0.01, K2O 0.01, H2Ocalc 4.24, total 102.13 wt%), empirical formula (Nd0.36Sm0.13Ce0.12Pr0.08La0.06Gd0.06Y0.05Dy0.03Yb0.02Ca0.01)Sigma0.92(W2.02P0.02)Sigma2.04O7(OH)(H2O), monoclinic P21/m SCXRD unit cell (a = 5.8534(3) Å, b = 8.6881(3) Å in abstract/text vs 8.6681(3) Å in Table 3, c = 7.0488(4) Å, beta = 105.336(5)°, V = 345.70(3) Å3, Z = 2, Dcalc = 6.25 g/cm3 (6.331 g/cm3 in Table 3), R1 = 0.0362, R1(all) = 0.0398; Tables 3–7), Debye–Scherrer PXRD cell (a = 5.84(1) Å, b = 8.64(1) Å, c = 7.045(8) Å, beta = 106.1(1)°, V = 341.3(6) Å3; Table 2, p. 377), and biaxial optics with alpha = 1.90(2) and gamma = 2.10(2) at 589 nm. |
 | create_history | history/records/yttrotungstite-nd/2026-10-30T132624Z-antigravity-a8e673.yaml; Canonical CREATE history sidecar history/records/yttrotungstite-nd/2026-10-30T132624Z-antigravity-a8e673.yaml | supports | Canonical CREATE history sidecar (SHA-256 c59d8198e4fda6d990228c95c73281f34b722e5a160bb79a9b6badf4023f1285) preserved untouched as immutable per AGENTS.md; note that its details string cited a preliminary estimate of 21 passages whereas summary.json indexes 24 bounded passages across the 10 pages of ejm-38-373-2026.pdf. |
 | validation | data/records/yttrotungstite-nd.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | Checked 668 record(s); 0 failed. Checked 1104 history record(s); 0 error(s). |
 
@@ -113,7 +113,7 @@ source:
     sha256: e2c2ef23db32c9385e91e0ba41d24e59f465362d9499231aa45d94f996e8edb2
     role: context
   - path: research/sources/round123-minerals/20261030T133900Z-source-investigation.md
-    sha256: b96dfb26e15f741ddbadafcb31065511c28085b9c4fcaf159baa881ce43f365a
+    sha256: 82628141d7f25fa1b66dfc94beaebca00f1ba9c5c408a8571358d5602aba94aa
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
@@ -182,13 +182,13 @@ evidence:
     (n = 17: WO3 73.40, Nd2O3 9.37, Sm2O3 3.56, Ce2O3 3.17, Pr2O3 2.10, Gd2O3 1.74,
     La2O3 1.44, Y2O3 0.91, Dy2O3 0.81, Yb2O3 0.71, P2O5 0.18, CaO 0.09, Er2O3 0.09,
     MoO3 0.07, Eu2O3 0.07, Tb2O3 0.07, As2O5 0.04, TiO2 0.03, SiO2 0.02, Al2O3 0.01,
-    K2O 0.01, H2Ocalc 4.24, total 102.13 wt%), empirical formula (Nd0.35Sm0.13Ce0.12Pr0.08Gd0.06La0.06Y0.05Dy0.03Yb0.02Ca0.01)Sigma0.91(W2.01P0.02)Sigma2.03O7(OH)(H2O),
+    K2O 0.01, H2Ocalc 4.24, total 102.13 wt%), empirical formula (Nd0.36Sm0.13Ce0.12Pr0.08La0.06Gd0.06Y0.05Dy0.03Yb0.02Ca0.01)Sigma0.92(W2.02P0.02)Sigma2.04O7(OH)(H2O),
     monoclinic P21/m SCXRD unit cell (a = 5.8534(3) Å, b = 8.6881(3) Å in abstract/text
     vs 8.6681(3) Å in Table 3, c = 7.0488(4) Å, beta = 105.336(5)°, V = 345.70(3)
-    Å3, Z = 2, Dcalc = 6.279 g/cm3, R1 = 0.0362, R1(all) = 0.0398; Tables 3–7), PXRD
-    cell (a = 5.856(3) Å, b = 8.698(4) Å, c = 7.054(3) Å, beta = 105.30(4)°, V = 346.6(2)
-    Å3; Table 2), and biaxial negative optics (alpha = 1.90(2), beta = 1.99(2), gamma
-    = 2.02(2), 2Vmeas = 65(5)°).'
+    Å3, Z = 2, Dcalc = 6.25 g/cm3 (6.331 g/cm3 in Table 3), R1 = 0.0362, R1(all) =
+    0.0398; Tables 3–7), Debye–Scherrer PXRD cell (a = 5.84(1) Å, b = 8.64(1) Å, c
+    = 7.045(8) Å, beta = 106.1(1)°, V = 341.3(6) Å3; Table 2, p. 377), and biaxial
+    optics with alpha = 1.90(2) and gamma = 2.10(2) at 589 nm.'
   snapshot_sha256: d808836aadb6c476d90fd624e23cd145f7fb7933236cbb1f4bdbe523f66e5c53
 - evidence_id: create_history
   kind: record_content
