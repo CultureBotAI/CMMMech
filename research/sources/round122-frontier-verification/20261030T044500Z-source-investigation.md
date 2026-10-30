@@ -4,8 +4,10 @@
 - **Cycle / Stage:** Cycle 4, Stage 1 (`add_records`) — Round 122
 - **Trusted base commit:** `4f543693bee75b97389de4d4c915a1e451297f1f` (`Unify agent instructions for Claude Code, Codex and Antigravity (#853)`)
 - **Predecessor Cycle 4 Stage 1 checkpoints:**
-  - **Round 120 (PR #837):** `7918502cee65b588f4e0e7cf5bce94d49ba55e51` (`16` records admitted)
-  - **Round 121 (PR #841):** `2d8ce7a1fee97b74098a1faf5a82481ee115123d` / reviewed head `54bce1c96bcc6e5b7fe2f66da0a94bda646038ef` (`1` record admitted: `monteregianite-y`; remediation issue `#842` closed)
+  - **Round 120 (PR #837):** `7918502cee65b588f4e0e7cf5bce94d49ba55e51` (`16` records admitted: `bario-orthojoaquinite`, `behoite`, `calciohilairite`, `cassidyite`, `coconinoite`, `dissakisite-ce`, `franciscanite`, `lucasite-ce`, `manganokhomyakovite`, `metazellerite`, `olmsteadite`, `petscheckite`, `titanowodginite`, `virgilite`, `widgiemoolthalite`, `zektzerite`; canonical source dossier `research/sources/round120-minerals/20261024T114154Z-source-investigation.{json,md}`, initial dossier `research/sources/round120-minerals/20261024T073500Z-source-investigation.{json,md}`)
+  - **Round 121 (PR #841):** `2d8ce7a1fee97b74098a1faf5a82481ee115123d` / reviewed head `54bce1c96bcc6e5b7fe2f66da0a94bda646038ef` (`1` record admitted: `monteregianite-y`; remediation issue `#842` closed; source dossier `research/sources/round121-minerals/20261025T055800Z-source-investigation.{json,md}`)
+- **Prior-cycle source dossiers verified:** `research/sources/round118-minerals/20261022T072500Z-source-investigation.{json,md}` (Round 118, PR #810) and `research/sources/round119-minerals/20261023T072000Z-source-investigation.{json,md}` (Round 119, PR #824)
+- **Round 122 review remediation issue:** `https://github.com/CultureBotAI/CMMMech/issues/855`
 
 ## 1. Investigation Scope
 
@@ -58,9 +60,9 @@ Because `rg` (`ripgrep`) is not installed on this macOS host (`rg`, `/usr/local/
   - `#496` — Lower Kittanning coal bed microbial consortium / `16S rRNA` primary source
   - `#497` — Fort Union Formation PRB coal and produced-water primary source
   - `#498` — Illinois Basin coal / coal-waste primary source
-- **Open Stage 6 (`implement_infrastructure`) Intake Tasks (`INFRA_TASKS.md`):**
-  - `cmmmech-infra-0010` (`#839`) — Claim-evidence pre-commit check for verbatim source quotes, locator tokens, and unit/temperature/pH/recovery parity
-  - `cmmmech-infra-0011` (`#840`) — Bounded page/passage PDF extractor and context-budget guard for primary-source curation
+- **Open Stage 6 (`infrastructure_implementation`) Intake Tasks (`INFRA_TASKS.md`):**
+  - `cmmmech-infra-0010` (`#839`) — Add source-table and measurement-provenance guardrails to CMMMech curation skills, review instructions, and fixtures
+  - `cmmmech-infra-0011` (`#840`) — Codify bounded source-text excerpts (<= 2-8 KB per page/passage) and single-page PDF inspection across CMMMech discovery, curation, and review skills and helpers to prevent full-PDF context-window overflow
 
 ## 6. Bounded-Frontier Exhaustion Determination
 

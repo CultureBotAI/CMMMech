@@ -14,7 +14,8 @@
       "merge_commit": "7918502cee65b588f4e0e7cf5bce94d49ba55e51",
       "admitted_records_count": 16,
       "ingest_report": "research/ingests/round120-frontier-20261024.json",
-      "source_investigation": "research/sources/round120-minerals/20261024T073500Z-source-investigation.json"
+      "source_investigation": "research/sources/round120-minerals/20261024T114154Z-source-investigation.json",
+      "initial_source_investigation": "research/sources/round120-minerals/20261024T073500Z-source-investigation.json"
     },
     {
       "round": 121,
@@ -31,6 +32,13 @@
       "source_investigation": "research/sources/round121-minerals/20261025T055800Z-source-investigation.json"
     }
   ],
+  "prior_cycle_source_dossiers": [
+    "research/sources/round118-minerals/20261022T072500Z-source-investigation.json",
+    "research/sources/round118-minerals/20261022T072500Z-source-investigation.md",
+    "research/sources/round119-minerals/20261023T072000Z-source-investigation.json",
+    "research/sources/round119-minerals/20261023T072000Z-source-investigation.md"
+  ],
+  "remediation_issue_url": "https://github.com/CultureBotAI/CMMMech/issues/855",
   "scope": "Repeated bounded-frontier verification and local source-archive exhaustion audit for Cycle 4 Stage 1 (add_records) following PR #837 (Round 120, 16 records) and PR #841 (Round 121, 1 record: monteregianite-y). Audits all local PDF download directories (/private/tmp/cmm-round117-research through /private/tmp/cmm-round120-research), the bounded source-text archive (cmm-bounded-source-text/), the September 2026 IMA Master List of Minerals, and all 6,730 files across data/records, research, reviews, and history (including hidden and ignored files and resolving symlinks) to verify whether any further evidence-backed critical mineral or material candidate in the bounded local frontier can be admitted without violating primary-source verification rules.",
   "local_source_archive_audit": {
     "tmp_pdf_directories_checked": [
@@ -117,22 +125,22 @@
     "total_admitted_in_cycle4_stage1": 17,
     "round120_pr837_count": 16,
     "round120_pr837_record_ids": [
-      "agardite-ce",
-      "agardite-nd",
-      "calciouranoite",
-      "chernovite-y",
-      "chistyakovaite",
-      "clarkeite",
-      "cousinite",
-      "coutinhoite",
-      "demesmaekerite",
-      "fontanite",
-      "francoisite-ce",
-      "gasparite-ce",
-      "gauthierite",
-      "kamotoite--(y)",
-      "kimrobinsonite",
-      "kobeite-y"
+      "bario-orthojoaquinite",
+      "behoite",
+      "calciohilairite",
+      "cassidyite",
+      "coconinoite",
+      "dissakisite-ce",
+      "franciscanite",
+      "lucasite-ce",
+      "manganokhomyakovite",
+      "metazellerite",
+      "olmsteadite",
+      "petscheckite",
+      "titanowodginite",
+      "virgilite",
+      "widgiemoolthalite",
+      "zektzerite"
     ],
     "round121_pr841_count": 1,
     "round121_pr841_record_ids": [
@@ -357,15 +365,17 @@
     "stage6_infrastructure_issues": [
       {
         "task_id": "cmmmech-infra-0010",
+        "stage_id": "infrastructure_implementation",
         "issue_number": 839,
         "url": "https://github.com/CultureBotAI/CMMMech/issues/839",
-        "topic": "Add claim-evidence pre-commit check for verbatim source quotes, locator tokens, and unit/temperature/pH/recovery parity"
+        "topic": "Add source-table and measurement-provenance guardrails to CMMMech curation skills, review instructions, and fixtures"
       },
       {
         "task_id": "cmmmech-infra-0011",
+        "stage_id": "infrastructure_implementation",
         "issue_number": 840,
         "url": "https://github.com/CultureBotAI/CMMMech/issues/840",
-        "topic": "Add bounded page/passage PDF extractor and context-budget guard for primary-source curation"
+        "topic": "Codify bounded source-text excerpts (<= 2-8 KB per page/passage) and single-page PDF inspection across CMMMech discovery, curation, and review skills and helpers to prevent full-PDF context-window overflow"
       }
     ]
   },
