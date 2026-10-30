@@ -1,0 +1,377 @@
+{
+  "investigation_id": "round122-frontier-verification-20261030T044500Z",
+  "generated_at": "2026-10-30T04:45:00Z",
+  "cycle": 4,
+  "stage": 1,
+  "stage_id": "add_records",
+  "round": 122,
+  "trusted_base_commit": "4f543693bee75b97389de4d4c915a1e451297f1f",
+  "predecessor_checkpoints": [
+    {
+      "round": 120,
+      "pr_number": 837,
+      "pr_url": "https://github.com/CultureBotAI/CMMMech/pull/837",
+      "merge_commit": "7918502cee65b588f4e0e7cf5bce94d49ba55e51",
+      "admitted_records_count": 16,
+      "ingest_report": "research/ingests/round120-frontier-20261024.json",
+      "source_investigation": "research/sources/round120-minerals/20261024T073500Z-source-investigation.json"
+    },
+    {
+      "round": 121,
+      "pr_number": 841,
+      "pr_url": "https://github.com/CultureBotAI/CMMMech/pull/841",
+      "merge_commit": "2d8ce7a1fee97b74098a1faf5a82481ee115123d",
+      "reviewed_head_sha": "54bce1c96bcc6e5b7fe2f66da0a94bda646038ef",
+      "admitted_records_count": 1,
+      "admitted_record_ids": [
+        "monteregianite-y"
+      ],
+      "remediation_issue_url": "https://github.com/CultureBotAI/CMMMech/issues/842",
+      "ingest_report": "research/ingests/round121-frontier-20261025.json",
+      "source_investigation": "research/sources/round121-minerals/20261025T055800Z-source-investigation.json"
+    }
+  ],
+  "scope": "Repeated bounded-frontier verification and local source-archive exhaustion audit for Cycle 4 Stage 1 (add_records) following PR #837 (Round 120, 16 records) and PR #841 (Round 121, 1 record: monteregianite-y). Audits all local PDF download directories (/private/tmp/cmm-round117-research through /private/tmp/cmm-round120-research), the bounded source-text archive (cmm-bounded-source-text/), the September 2026 IMA Master List of Minerals, and all 6,730 files across data/records, research, reviews, and history (including hidden and ignored files and resolving symlinks) to verify whether any further evidence-backed critical mineral or material candidate in the bounded local frontier can be admitted without violating primary-source verification rules.",
+  "local_source_archive_audit": {
+    "tmp_pdf_directories_checked": [
+      {
+        "path": "/private/tmp/cmm-round117-research",
+        "exists": true,
+        "file_count": 0,
+        "pdf_count": 0,
+        "status": "Cleared by macOS periodic /tmp cleanup prior to 2026-10-30; all 15 admissible candidates from Round 118 were already curated in PR #810."
+      },
+      {
+        "path": "/private/tmp/cmm-round118-research",
+        "exists": true,
+        "file_count": 0,
+        "pdf_count": 0,
+        "status": "Cleared by macOS periodic /tmp cleanup prior to 2026-10-30; all 15 admissible candidates from Round 118 were already curated in PR #810."
+      },
+      {
+        "path": "/private/tmp/cmm-round119-research",
+        "exists": true,
+        "file_count": 0,
+        "pdf_count": 0,
+        "status": "Cleared by macOS periodic /tmp cleanup prior to 2026-10-30; all 15 admissible candidates from Round 119 were already curated in PR #824."
+      },
+      {
+        "path": "/private/tmp/cmm-round120-research",
+        "exists": true,
+        "file_count": 0,
+        "pdf_count": 0,
+        "status": "Cleared by macOS periodic /tmp cleanup on 2026-10-27; all 16 Round 120 candidates were curated in PR #837 and the remaining Round 120/121 PDFs were extracted into cmm-bounded-source-text/ before cleanup."
+      }
+    ],
+    "tmp_pdf_glob_count": 0,
+    "bounded_source_text_handoff": {
+      "directory": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/workspace/reports/mech-resume-20261024/cmm-bounded-source-text",
+      "summary_json": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/workspace/reports/mech-resume-20261024/cmm-bounded-source-text/summary.json",
+      "passage_map_tsv": "/Users/marcin/Documents/VIMSS/ontology/KG-Hub/KG-Microbe/culturebotai-claw/workspace/reports/mech-resume-20261024/cmm-bounded-source-text/passage-map.tsv",
+      "passage_count": 17,
+      "max_passage_bytes": 1907,
+      "extracted_sources": [
+        {
+          "source_id": "cm16-561",
+          "source_pdf": "/private/tmp/cmm-round120-research/CM16_561.pdf",
+          "citation": "Chao, G. Y. (1978) Monteregianite, a new hydrous sodium potassium yttrium silicate mineral from Mont St-Hilaire, Québec. The Canadian Mineralogist, 16(4), 561-565.",
+          "pages": 5,
+          "disposition": "Curated and merged in Round 121 (PR #841, data/records/monteregianite-y.yaml)."
+        },
+        {
+          "source_id": "am72-365",
+          "source_pdf": "/private/tmp/cmm-round120-research/AM72_365.pdf",
+          "citation": "Ghose, S., Sen Gupta, P. K., & Campana, C. F. (1987) Monteregianite-(Y), KNa2YSi8O19·5H2O, a new layer silicate structure type with octagonal anddecagonal rings of tetrahedra. American Mineralogist, 72(3-4), 365-374.",
+          "pages": 10,
+          "ocr_note": "Marked with candidate_text_misses=['monteregianite-y'] in summary.json because the embedded OCR layer dropped the accented 'é' in 'montérégianite' ('Montregianite, Nao&YrSiruOrr. 10H2O'). Bounded lines 1-50 of am72-365.full.txt and page 1 of AM72_365.pdf were verified and curated into data/records/monteregianite-y.yaml in Round 121 (PR #841).",
+          "disposition": "Curated and merged in Round 121 (PR #841, data/records/monteregianite-y.yaml)."
+        },
+        {
+          "source_id": "ima-round118",
+          "source_pdf": "/private/tmp/cmm-round118-research/ima_pages_round118.pdf",
+          "citation": "International Mineralogical Association Commission on New Minerals, Nomenclature and Classification (IMA-CNMNC) List of Mineral Names (September 2026).",
+          "pages": 244,
+          "disposition": "Authoritative nomenclature baseline; 4 bounded passage files (pages 124, 127, 147, 178) plus bounded single-entry snippets verified for all Round 118-121 candidates (pages 77, 89, 98, 124, 127, 137, 147, 178, 222)."
+        },
+        {
+          "source_id": "ima-round119",
+          "source_pdf": "/private/tmp/cmm-round119-research/ima_pages_round119.pdf",
+          "citation": "International Mineralogical Association Commission on New Minerals, Nomenclature and Classification (IMA-CNMNC) List of Mineral Names (September 2026).",
+          "pages": 244,
+          "disposition": "Identical September 2026 IMA Master List copy; 4 bounded passage files (pages 124, 127, 147, 178) verified."
+        }
+      ]
+    }
+  },
+  "repository_deduplication_inventory": {
+    "method": "Python os.walk(..., followlinks=True) complete inventory across data/records, research, reviews, and history including hidden and .gitignore-ignored files, executed because rg (ripgrep) is not installed on the macOS host (checked rg, /usr/local/bin/rg, /opt/homebrew/bin/rg, /usr/local/Caskroom/miniforge/base/bin/rg -> exit 127).",
+    "total_files_scanned": 6730,
+    "records_scanned": 663,
+    "history_sidecars_scanned": 1013,
+    "structured_review_bundles_scanned": 844,
+    "symlinks_resolved": true,
+    "ignored_and_hidden_included": true,
+    "inaccessible_paths": []
+  },
+  "cycle4_stage1_cumulative_admissions": {
+    "total_admitted_in_cycle4_stage1": 17,
+    "round120_pr837_count": 16,
+    "round120_pr837_record_ids": [
+      "agardite-ce",
+      "agardite-nd",
+      "calciouranoite",
+      "chernovite-y",
+      "chistyakovaite",
+      "clarkeite",
+      "cousinite",
+      "coutinhoite",
+      "demesmaekerite",
+      "fontanite",
+      "francoisite-ce",
+      "gasparite-ce",
+      "gauthierite",
+      "kamotoite--(y)",
+      "kimrobinsonite",
+      "kobeite-y"
+    ],
+    "round121_pr841_count": 1,
+    "round121_pr841_record_ids": [
+      "monteregianite-y"
+    ],
+    "round122_admitted_count": 0,
+    "round122_admitted_record_ids": [],
+    "corpus_record_count_after_round122": 663
+  },
+  "candidate_verification_ledger": [
+    {
+      "candidate_id": "monteregianite-y",
+      "preferred_label": "monteregianite-(Y)",
+      "ima_identifier": "1987 s.p.",
+      "ima_status": "Rn",
+      "ima_formula": "KNa2YSi8O19·5H2O",
+      "ima_page": 147,
+      "standalone_record_in_corpus": true,
+      "record_path": "data/records/monteregianite-y.yaml",
+      "disposition": "admitted_in_round121_pr841",
+      "rationale": "Already admitted, adversarially reviewed, remediated (#842), and merged in Round 121 (PR #841, merge commit 2d8ce7a1fee97b74098a1faf5a82481ee115123d)."
+    },
+    {
+      "candidate_id": "cesstibtantite",
+      "preferred_label": "cesstibtantite (discredited IMA:1980-068)",
+      "ima_identifier": "IMA:1980-068",
+      "ima_status": "Discredited / reclassified (2010 pyrochlore-supergroup nomenclature)",
+      "ima_formula": null,
+      "ima_page": 98,
+      "standalone_record_in_corpus": false,
+      "associated_mentions_in_data_records": [
+        "data/records/kimrobinsonite.yaml"
+      ],
+      "replacement_species_in_ima_2026_09": [
+        {
+          "candidate_id": "hydrokenomicrolite",
+          "ima_identifier": "IMA:2011-103",
+          "ima_status": "A",
+          "ima_formula": "(☐,H2O)2Ta2(O,OH)6(H2O)",
+          "ima_page": 98,
+          "ima_citations": "American Mineralogist 98 (2013), 292; Mineralogical Magazine 75 (2011), 2535",
+          "local_primary_pdf_available": false,
+          "standalone_record_in_corpus": false
+        },
+        {
+          "candidate_id": "hydroxycalciomicrolite",
+          "ima_identifier": "IMA:2013-073",
+          "ima_status": "A",
+          "ima_formula": "Ca1.5Ta2O6(OH)",
+          "ima_page": 98,
+          "ima_citations": "Mineralogical Magazine 81 (2017), 555",
+          "local_primary_pdf_available": false,
+          "standalone_record_in_corpus": false
+        }
+      ],
+      "disposition": "excluded_discredited_species",
+      "rationale": "Absent as an accepted species in the September 2026 IMA Master List; discredited/reclassified into hydrokenomicrolite (IMA:2011-103) and hydroxycalciomicrolite (IMA:2013-073), neither of which has local primary full-text PDFs on disk."
+    },
+    {
+      "candidate_id": "protasite",
+      "preferred_label": "protasite",
+      "ima_identifier": "IMA:1984-001",
+      "ima_status": "A",
+      "ima_formula": "Ba(UO2)3O3(OH)2(H2O)3",
+      "ima_page": 178,
+      "standalone_record_in_corpus": false,
+      "associated_mentions_in_data_records": [],
+      "inspected_primary_sources": [
+        "Pagoaga, M. K., Appleman, D. E., & Stewart, J. M. (1987) Crystal structures and crystal chemistry of the uranyl oxide hydrates becquerelite, billietite, and protasite. American Mineralogist, 72(11-12), 1230-1238."
+      ],
+      "missing_primary_sources": [
+        "Pagoaga, M. K., Appleman, D. E., & Stewart, J. M. (1986) A new barium uranyl oxide hydrate mineral, protasite. Mineralogical Magazine, 50(355), 125-128."
+      ],
+      "local_primary_pdf_available": false,
+      "disposition": "held_pending_primary_source",
+      "rationale": "1987 structure paper was inspected in Round 121, but the 1986 Mineralogical Magazine type-description paper cited by the September 2026 IMA Master List (p. 178) is not locally available on disk."
+    },
+    {
+      "candidate_id": "lepersonnite-gd",
+      "preferred_label": "lepersonnite-(Gd)",
+      "ima_identifier": "1987 s.p.",
+      "ima_status": "Rn",
+      "ima_formula": "[Ca0.5Gd0.5(H2O)18(OH)1.5][Gd(UO2)12(SiO3OH)2(CO3)4(OH)10O2(H2O)5]",
+      "ima_page": 124,
+      "standalone_record_in_corpus": false,
+      "associated_mentions_in_data_records": [],
+      "inspected_primary_sources": [
+        "Deliens, M., & Piret, P. (1982) Bijvoetite et lepersonnite, carbonates hydratés d'uranyle et de terres rares de Shinkolobwe, Zaïre. The Canadian Mineralogist, 20(2), 231-238."
+      ],
+      "missing_primary_sources": [
+        "Mineralogical Magazine 89 (2025), 549 (crystal structure and formula redefinition of lepersonnite-(Gd))."
+      ],
+      "local_primary_pdf_available": false,
+      "disposition": "held_pending_primary_source",
+      "rationale": "1982 description was inspected in Round 121, but the 2025 Mineralogical Magazine structure/redefinition paper that updated the IMA-accepted formula (p. 124) is not locally available on disk."
+    },
+    {
+      "candidate_id": "lokkaite-y",
+      "preferred_label": "lokkaite-(Y)",
+      "ima_identifier": "1987 s.p.",
+      "ima_status": "Rn",
+      "ima_formula": "CaY4(CO3)7·9H2O",
+      "ima_page": 127,
+      "standalone_record_in_corpus": false,
+      "associated_mentions_in_data_records": [],
+      "inspected_primary_sources": [
+        "Nagai, K., & Miyawaki, R. (1986) Supplemental study of lokkaite-(Y) from Kirigo, Japan. American Mineralogist, 71(7-8), 1028-1033."
+      ],
+      "missing_primary_sources": [
+        "Perttunen, V. (1971) Lokkaite, a new hydrous RE-carbonate from Pyörönmaa pegmatite in Kangasala, SW-Finland. Bulletin of the Geological Society of Finland, 43, 67-72."
+      ],
+      "local_primary_pdf_available": false,
+      "disposition": "held_pending_primary_source",
+      "rationale": "1986 Kirigo supplemental study was inspected in Round 121, but the sole IMA-cited type description (Perttunen 1970/1971, Bull. Geol. Soc. Finland 43:67-72, IMA p. 127) is not locally available on disk."
+    },
+    {
+      "candidate_id": "haiweeite",
+      "preferred_label": "haiweeite",
+      "ima_identifier": "1962 s.p.",
+      "ima_status": "A",
+      "ima_formula": "Ca(UO2)2(Si5O12)(OH)2(H2O)6·2H2O",
+      "ima_page": 89,
+      "standalone_record_in_corpus": false,
+      "associated_mentions_in_data_records": [
+        "data/records/coutinhoite.yaml",
+        "data/records/weeksite.yaml"
+      ],
+      "inspected_primary_sources": [
+        "McBurney, T. C., & Murdoch, J. (1959) Haiweeite, a new uranium mineral from California. American Mineralogist, 44, 839-843."
+      ],
+      "missing_primary_sources": [
+        "Plášil, J., Fejfarová, K., Čejka, J., Dušek, M., Škoda, R., & Sejkora, J. (2013) Revision of the crystal structure and chemical formula of haiweeite, Ca(UO2)2(Si5O12)(OH)2·8H2O. American Mineralogist, 98, 718-723."
+      ],
+      "local_primary_pdf_available": false,
+      "disposition": "held_pending_primary_source",
+      "rationale": "Held since Round 118 pending full text of the 2013 American Mineralogist structure and formula revision (Plášil et al. 2013, Am. Mineral. 98:718, IMA p. 89), which is not locally available on disk."
+    },
+    {
+      "candidate_id": "fourmarierite",
+      "preferred_label": "fourmarierite",
+      "ima_identifier": "G (1924)",
+      "ima_status": "G",
+      "ima_formula": "Pb1-xO3-2x(UO2)4(OH)4+2x·4H2O",
+      "ima_page": 77,
+      "standalone_record_in_corpus": false,
+      "associated_mentions_in_data_records": [
+        "data/records/richetite.yaml"
+      ],
+      "inspected_primary_sources": [
+        "Li, Y., & Burns, P. C. (2000) The crystal structure of synthetic fourmarierite, Pb[(UO2)4O3(OH)4](H2O)4. The Canadian Mineralogist, 38, 737-749."
+      ],
+      "missing_primary_sources": [
+        "Buttgenbach, H. (1924) La fourmariérite, nouvelle espèce minérale. Annales de la Société Géologique de Belgique, 47, C41-C43."
+      ],
+      "local_primary_pdf_available": false,
+      "disposition": "held_pending_primary_source",
+      "rationale": "Held since Round 118 pending full text of the 1924 Buttgenbach original type description (Ann. Soc. Géol. Belgique 47:C41, IMA p. 77), which is not locally available on disk."
+    },
+    {
+      "candidate_id": "masuyite",
+      "preferred_label": "masuyite",
+      "ima_identifier": "G (1947)",
+      "ima_status": "G",
+      "ima_formula": "Pb(UO2)3O3(OH)2(H2O)3",
+      "ima_page": 137,
+      "standalone_record_in_corpus": false,
+      "associated_mentions_in_data_records": [
+        "data/records/richetite.yaml"
+      ],
+      "inspected_primary_sources": [],
+      "missing_primary_sources": [
+        "Vaes, J. F. (1947) Six nouveaux minéraux d'urane provenant de Shinkolobwe (Katanga). Annales de la Société Géologique de Belgique, 70, B212-B225.",
+        "Burns, P. C., & Hanchar, J. M. (1999) The structure of masuyite, Pb[(UO2)3O3(OH)2](H2O)3, and its relationship to protasite. The Canadian Mineralogist, 37, 1483-1491 (noted on IMA p. 137 as 37 (1999), 1483; Round 118 note cited p. 1003)."
+      ],
+      "local_primary_pdf_available": false,
+      "disposition": "held_pending_primary_source",
+      "rationale": "Held since Round 118 pending full text of the 1947 Vaes original type description and local full-text verification of the 1999 Canadian Mineralogist structure paper (IMA p. 137)."
+    },
+    {
+      "candidate_id": "tsumoite",
+      "preferred_label": "tsumoite",
+      "ima_identifier": "IMA:1972-010a",
+      "ima_status": "A",
+      "ima_formula": "BiTe",
+      "ima_page": 222,
+      "standalone_record_in_corpus": false,
+      "associated_mentions_in_data_records": [],
+      "inspected_primary_sources": [
+        "Shimazaki, H., & Ozawa, T. (1978) Tsumoite, BiTe, a new mineral from the Tsumo mine, Japan. American Mineralogist, 63, 1162-1165."
+      ],
+      "missing_primary_sources": [
+        "Yamana, K., Kihara, K., & Matsumoto, T. (1979) Bismuth tellurides: BiTe and Bi4Te3. Acta Crystallographica, B35, 147-149."
+      ],
+      "local_primary_pdf_available": false,
+      "disposition": "held_pending_primary_source",
+      "rationale": "Held since Round 118 pending full text of the paywalled 1979 Acta Crystallographica structure paper (IMA p. 222), which is not locally available on disk."
+    }
+  ],
+  "carried_forward_open_issues": {
+    "source_tracking_issues": [
+      {
+        "issue_number": 495,
+        "url": "https://github.com/CultureBotAI/CMMMech/issues/495",
+        "topic": "Dry Creek, Montana coalbed methane produced-water and coal-interburden study"
+      },
+      {
+        "issue_number": 496,
+        "url": "https://github.com/CultureBotAI/CMMMech/issues/496",
+        "topic": "Lower Kittanning coal bed microbial consortium / 16S rRNA primary source"
+      },
+      {
+        "issue_number": 497,
+        "url": "https://github.com/CultureBotAI/CMMMech/issues/497",
+        "topic": "Fort Union Formation PRB coal and produced-water primary source"
+      },
+      {
+        "issue_number": 498,
+        "url": "https://github.com/CultureBotAI/CMMMech/issues/498",
+        "topic": "Illinois Basin coal / coal-waste primary source"
+      }
+    ],
+    "stage6_infrastructure_issues": [
+      {
+        "task_id": "cmmmech-infra-0010",
+        "issue_number": 839,
+        "url": "https://github.com/CultureBotAI/CMMMech/issues/839",
+        "topic": "Add claim-evidence pre-commit check for verbatim source quotes, locator tokens, and unit/temperature/pH/recovery parity"
+      },
+      {
+        "task_id": "cmmmech-infra-0011",
+        "issue_number": 840,
+        "url": "https://github.com/CultureBotAI/CMMMech/issues/840",
+        "topic": "Add bounded page/passage PDF extractor and context-budget guard for primary-source curation"
+      }
+    ]
+  },
+  "frontier_status": {
+    "bounded_frontier_exhausted": true,
+    "source_exhaustion_claimed": false,
+    "summary": "All locally available primary-source PDFs and bounded text passages in the Cycle 4 Stage 1 frontier have been exhaustively audited and curated (16 records in Round 120 PR #837 + 1 record in Round 121 PR #841 = 17 records admitted in Cycle 4 Stage 1, bringing data/records/ to 663 records). Every remaining candidate is either discredited/reclassified in the September 2026 IMA Master List (cesstibtantite -> hydrokenomicrolite / hydroxycalciomicrolite) or explicitly held pending unacquired external/paywalled primary papers (protasite, lepersonnite-gd, lokkaite-y, haiweeite, fourmarierite, masuyite, tsumoite; plus coalbed/coal-waste source issues #495-#498). Per cmmmech-add-record and cmmmech-discover-sources rules, source unavailability is an explicit hold rather than grounds for fabricated or abstract-only records. Therefore, the Cycle 4 Stage 1 bounded add_records frontier is exhausted (bounded_frontier_exhausted: true) while global scientific/mineralogical source exhaustion is not claimed (source_exhaustion_claimed: false)."
+  }
+}
