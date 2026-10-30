@@ -1,115 +1,42 @@
 id: cmmmech:cathode-ray-tube-glass
 name: Waste lead-bearing cathode-ray-tube glass
 material_kind: secondary_resource
-description: >-
-  Discarded lead-bearing cathode-ray-tube (CRT) glass is a composite secondary
-  resource for lead recovery, distinct from elemental lead, a lead mineral,
-  separated CRT fluorescent powder and spent fluorescent-lamp phosphor. The
-  accepted laboratory feed is described as waste CRT glass and contains 22.08
-  wt.% PbO in the source composition table. Its exact component, supplier and
-  device history are not reported. The source's general distinction between
-  lead-bearing funnel/neck glass and typically non-leaded screen glass does not
-  establish that this experimental sample was a separately collected funnel
-  fraction. Constituent criticality designations are not inherited.
+description: Discarded lead-bearing cathode-ray-tube (CRT) glass is a composite secondary resource for lead recovery, distinct from elemental lead, a lead mineral, separated CRT fluorescent powder and spent fluorescent-lamp phosphor. The accepted laboratory feed is described as waste CRT glass and contains 22.08 wt.% PbO in the source composition table. Its exact component, supplier and device history are not reported. The source's general distinction between lead-bearing funnel/neck glass and typically non-leaded screen glass does not establish that this experimental sample was a separately collected funnel fraction. Constituent criticality designations are not inherited.
+sources:
+- id: imrelucaci2021
+  title: Imre-Lucaci, Á., Fogarasi, M., Imre-Lucaci, F. and Fogarasi, S. Chemical– Electrochemical Process Concept for Lead Recovery from Waste Cathode Ray Tube Glass. Materials 14(6):1546 (2021), DOI 10.3390/ma14061546, published 22 March 2021. Complete 12-page original, including Figures 1–8 and Tables 1–4, inspected; EuropePMC PMC8004233 full-text XML corroborates text. No supplementary-material link was identified in these inspected originals.
+  url: https://doi.org/10.3390/ma14061546
+  accessed_on: '2026-10-14'
 mechanisms:
 - id: thermal_acid_electrochemical_recovery
   name: Thermal pretreatment, acetic-acid dissolution and lead electrodeposition
   process: recovery
+  description: Laboratory treatment with sodium carbonate at high temperature followed by acetic-acid leaching solubilizes lead from CRT glass. Electrochemical tests deposit metallic lead on a stainless-steel cathode and investigate acid regeneration at a graphite anode. Dissolved lead and electrodeposited lead are different outcomes. The results support partial laboratory recovery; they do not establish complete feed-lead recovery, sustained closed-loop operation or industrial deployment. No organism or biological treatment was used.
+  context: 'Imre-Lucaci et al. (2021), Sections 2.1–2.3 and Table 1: 10 g of CRT glass ground to 3.5–5.5 micrometres was combined with 24 g Na2CO3, heated at 1000 degrees C for 30 min, cooled and washed with 100 mL distilled water. The washed solid was stirred with 150 mL acetic acid at 80 degrees C for one hour; acid concentrations of 0.2–1 M were compared and lead was measured by atomic absorption spectrometry. The divided galvanostatic electrochemical reactor recirculated 150 mL electrolyte containing 9.25 g/L Pb2+, 3.91 g/L magnesium acetate and 7.24 g/L calcium acetate at 22 degrees C. Flow rates of 15, 30 and 45 mL/min and current densities of 4, 8 and 12 mA/cm2 were compared. Section 2.3 states two hours for each electrochemical experiment. The electrolyte composition is described as corresponding to the final leachate; whether every test used authentic unmodified leachate rather than a composition-matched solution is not explicit. Process conditions are compared, but no untreated-glass
+    or no-carbonate thermal control and no independent replicate count are specified.'
   microbial: false
-  description: >-
-    Laboratory treatment with sodium carbonate at high temperature followed by
-    acetic-acid leaching solubilizes lead from CRT glass. Electrochemical tests
-    deposit metallic lead on a stainless-steel cathode and investigate acid
-    regeneration at a graphite anode. Dissolved lead and electrodeposited lead
-    are different outcomes. The results support partial laboratory recovery;
-    they do not establish complete feed-lead recovery, sustained closed-loop
-    operation or industrial deployment. No organism or biological treatment
-    was used.
-  context: >-
-    Imre-Lucaci et al. (2021), Sections 2.1–2.3 and Table 1: 10 g of CRT glass
-    ground to 3.5–5.5 micrometres was combined with 24 g Na2CO3, heated at 1000
-    degrees C for 30 min, cooled and washed with 100 mL distilled water. The
-    washed solid was stirred with 150 mL acetic acid at 80 degrees C for one
-    hour; acid concentrations of 0.2–1 M were compared and lead was measured by
-    atomic absorption spectrometry. The divided galvanostatic electrochemical
-    reactor recirculated 150 mL electrolyte containing 9.25 g/L Pb2+, 3.91 g/L
-    magnesium acetate and 7.24 g/L calcium acetate at 22 degrees C. Flow rates
-    of 15, 30 and 45 mL/min and current densities of 4, 8 and 12 mA/cm2 were
-    compared. Section 2.3 states two hours for each electrochemical experiment.
-    The electrolyte composition is described as corresponding to the final
-    leachate; whether every test used authentic unmodified leachate rather than
-    a composition-matched solution is not explicit. Process conditions are
-    compared, but no untreated-glass or no-carbonate thermal control and no
-    independent replicate count are specified.
   evidence:
   - source_ref: imrelucaci2021
     supports: support
-    explanation: >-
-      Sections 2.4 and 3.1, Figures 1–3: dissolution degree is dissolved lead
-      divided by the initial lead in the processed solid. The authors select
-      0.6 M acetic acid as a compromise between dissolution and acid use and
-      report a resulting 9.25 g/L lead solution. Their statement that this is
-      80% of the maximum obtainable concentration in the acid series is not an
-      80% whole-feed recovery yield. Higher acid concentrations give greater
-      dissolution in Figure 1; the selected concentration does not establish
-      complete extraction.
+    explanation: 'Sections 2.4 and 3.1, Figures 1–3: dissolution degree is dissolved lead divided by the initial lead in the processed solid. The authors select 0.6 M acetic acid as a compromise between dissolution and acid use and report a resulting 9.25 g/L lead solution. Their statement that this is 80% of the maximum obtainable concentration in the acid series is not an 80% whole-feed recovery yield. Higher acid concentrations give greater dissolution in Figure 1; the selected concentration does not establish complete extraction.'
   - source_ref: imrelucaci2021
     supports: support
-    explanation: >-
-      Sections 2.3–2.4 and 3.2, Figures 4–7 and Table 2: electrodeposited lead
-      was quantified after dissolving the deposit in concentrated nitric acid;
-      residual solution lead was measured by atomic absorption. Extraction
-      degree here means deposited lead divided by initial lead in the
-      electrolyte, not initial lead in the glass. Increasing current and flow
-      increases deposition over the tested range. The chosen 45 mL/min and
-      4 mA/cm2 condition minimizes the reported specific energy consumption;
-      it is not the condition with maximum deposited fraction. Current
-      efficiency describes electrical-charge use, not whole-feed material
-      recovery.
+    explanation: 'Sections 2.3–2.4 and 3.2, Figures 4–7 and Table 2: electrodeposited lead was quantified after dissolving the deposit in concentrated nitric acid; residual solution lead was measured by atomic absorption. Extraction degree here means deposited lead divided by initial lead in the electrolyte, not initial lead in the glass. Increasing current and flow increases deposition over the tested range. The chosen 45 mL/min and 4 mA/cm2 condition minimizes the reported specific energy consumption; it is not the condition with maximum deposited fraction. Current efficiency describes electrical-charge use, not whole-feed material recovery.'
   - source_ref: imrelucaci2021
     supports: partial
-    explanation: >-
-      Section 4 reports a 99.98 wt.% lead deposit and approximately 10% of the
-      initial treated-waste lead recovered as metal in one hour, with the rest
-      described as dissolved lead acetate. The one-hour statement conflicts
-      with the two-hour electrochemical protocol in Section 2.3, and the claim
-      about all remaining lead being dissolved is not reconciled with partial
-      dissolution in Figure 1. Deposit purity is source-reported without a
-      detailed impurity assay or replicate uncertainty. These statements are
-      retained as qualified source reports, not a verified integrated mass
-      balance; the abstract's complete-recovery wording is not accepted.
+    explanation: Section 4 reports a 99.98 wt.% lead deposit and approximately 10% of the initial treated-waste lead recovered as metal in one hour, with the rest described as dissolved lead acetate. The one-hour statement conflicts with the two-hour electrochemical protocol in Section 2.3, and the claim about all remaining lead being dissolved is not reconciled with partial dissolution in Figure 1. Deposit purity is source-reported without a detailed impurity assay or replicate uncertainty. These statements are retained as qualified source reports, not a verified integrated mass balance; the abstract's complete-recovery wording is not accepted.
   - source_ref: imrelucaci2021
     supports: partial
-    explanation: >-
-      Section 3.3, Figure 8 and Tables 3–4 assess a modeled 10 kg/h CRT-glass
-      process using the Biwer–Heinzle method. Table 3 uses 7.8 kg/h Na2CO3 per
-      10 kg/h glass, unlike the experimental 24 g per 10 g ratio, and Table 4
-      lists 2.02 kg/h lead output without reconciling it to the conclusion's
-      approximately 10% one-hour metal recovery. These environmental-model
-      flows are not measured plant throughput or an independently demonstrated
-      metal yield. Section 4 explicitly leaves scale-up to future work; no
-      claim of established environmental superiority or industrial deployment
-      is made here.
-sources:
-- id: imrelucaci2021
-  title: >-
-    Imre-Lucaci, Á., Fogarasi, M., Imre-Lucaci, F. and Fogarasi, S. Chemical–
-    Electrochemical Process Concept for Lead Recovery from Waste Cathode Ray
-    Tube Glass. Materials 14(6):1546 (2021), DOI 10.3390/ma14061546, published
-    22 March 2021. Complete 12-page original, including Figures 1–8 and Tables
-    1–4, inspected; EuropePMC PMC8004233 full-text XML corroborates text. No
-    supplementary-material link was identified in these inspected originals.
-  url: https://doi.org/10.3390/ma14061546
-  accessed_on: '2026-10-14'
+    explanation: Section 3.3, Figure 8 and Tables 3–4 assess a modeled 10 kg/h CRT-glass process using the Biwer–Heinzle method. Table 3 uses 7.8 kg/h Na2CO3 per 10 kg/h glass, unlike the experimental 24 g per 10 g ratio, and Table 4 lists 2.02 kg/h lead output without reconciling it to the conclusion's approximately 10% one-hour metal recovery. These environmental-model flows are not measured plant throughput or an independently demonstrated metal yield. Section 4 explicitly leaves scale-up to future work; no claim of established environmental superiority or industrial deployment is made here.
 curation_history:
 - timestamp: '2026-10-14T15:44:12+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
-  summary: >-
-    Created a waste lead-bearing CRT-glass resource with qualified abiotic
-    thermal, acid-leaching and electrodeposition evidence. Preserved unknown
-    component provenance, recovery denominators, source timing and modeled-flow
-    contradictions; deferred inaccessible microbial originals without
-    transferring their claims.
+  summary: Created a waste lead-bearing CRT-glass resource with qualified abiotic thermal, acid-leaching and electrodeposition evidence. Preserved unknown component provenance, recovery denominators, source timing and modeled-flow contradictions; deferred inaccessible microbial originals without transferring their claims.
+- timestamp: '2026-10-30T10:36:04Z'
+  curator: claude
+  action: edit
+  summary: Normalize top-level mechanisms/sources/criticality YAML key order in cathode-ray-tube-glass.yaml (#863)
 history_refs:
 - history/records/cathode-ray-tube-glass/2026-10-14T154456Z-codex-6992dd.yaml
+- history/records/cathode-ray-tube-glass/2026-10-30T103604Z-claude-46fbd7.yaml

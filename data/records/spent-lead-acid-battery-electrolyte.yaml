@@ -1,125 +1,59 @@
 id: cmmmech:spent-lead-acid-battery-electrolyte
 name: Spent lead-acid battery electrolyte
 material_kind: secondary_resource
-description: Waste acidic electrolyte drained from used lead-acid batteries and its chemically pretreated
-  liquid effluent. The accepted biological experiment concerns the residual sulfate-, Pb- and Cd-bearing
-  liquid after lime precipitation and carbonation, not untreated concentrated acid, solid lead paste,
-  battery grids or an intact battery. This use-derived liquid resource is distinct from elemental
-  lead, galena and other spent-battery chemistries. No constituent criticality designation is inherited.
+description: Waste acidic electrolyte drained from used lead-acid batteries and its chemically pretreated liquid effluent. The accepted biological experiment concerns the residual sulfate-, Pb- and Cd-bearing liquid after lime precipitation and carbonation, not untreated concentrated acid, solid lead paste, battery grids or an intact battery. This use-derived liquid resource is distinct from elemental lead, galena and other spent-battery chemistries. No constituent criticality designation is inherited.
 sources:
 - id: gu2020
-  title: Gu, S., Fu, B. and Ahn, J.W. (2020). Simultaneous Removal of Residual Sulfate and Heavy
-    Metals from Spent Electrolyte of Lead-Acid Battery after Precipitation and Carbonation. Sustainability
-    12(3), 1263. DOI 10.3390/su12031263. Complete 11-page primary, Scheme 1, Figures 1–5 and Table
-    1; original two-page Supporting Information, Table S1 and analytical methods.
+  title: Gu, S., Fu, B. and Ahn, J.W. (2020). Simultaneous Removal of Residual Sulfate and Heavy Metals from Spent Electrolyte of Lead-Acid Battery after Precipitation and Carbonation. Sustainability 12(3), 1263. DOI 10.3390/su12031263. Complete 11-page primary, Scheme 1, Figures 1–5 and Table 1; original two-page Supporting Information, Table S1 and analytical methods.
   url: https://doi.org/10.3390/su12031263
   accessed_on: '2026-10-12'
 - id: vu2019
-  title: Vu, H.H.T., Gu, S., Thriveni, T., Khan, M.D., Tuan, L.Q. and Ahn, J.W. (2019). Sustainable
-    Treatment for Sulfate and Lead Removal from Battery Wastewater. Sustainability 11(13), 3497.
-    DOI 10.3390/su11133497. Complete eight-page primary; Materials 2.1 establishes used-battery
-    acid origin; Methods 2.2 and Figures 1–4 contextualize upstream chemical treatment.
+  title: Vu, H.H.T., Gu, S., Thriveni, T., Khan, M.D., Tuan, L.Q. and Ahn, J.W. (2019). Sustainable Treatment for Sulfate and Lead Removal from Battery Wastewater. Sustainability 11(13), 3497. DOI 10.3390/su11133497. Complete eight-page primary; Materials 2.1 establishes used-battery acid origin; Methods 2.2 and Figures 1–4 contextualize upstream chemical treatment.
   url: https://doi.org/10.3390/su11133497
   accessed_on: '2026-10-12'
 mechanisms:
 - id: mixed_srb_associated_precipitation
   name: Mixed sulfate-reducing culture-associated precipitation from pretreated electrolyte
   process: biomineralization
+  description: In a laboratory batch inoculated with an enriched sulfate-reducing community, sulfate decreased and Pb/Cd fell below the reported analytical detection limits while a mixed solid formed. The authors interpret sulfide and bicarbonate generation as promoting sulfide/carbonate precipitation. These observations support culture-associated removal in this pretreated liquid, without a matched uninoculated comparison establishing microbial necessity or advantage. No isolated Pb or Cd product yield is demonstrated.
+  context: 'Gu2020 Methods 2.1–2.2, pp.2–3: the liquid followed the precipitation/carbonation process cited to Vu2019. Initial Table 1 concentrations were sulfate 3013.5 mg/L, Ca 400.1 mg/L, Pb 0.924 mg/L and Cd 2.10 mg/L at pH 7.01. A mixed culture from an unnamed local wastewater plant was enriched for one month in Postgate C medium before inoculation; the paper reports Gram-negative bacteria but no species, strain or sequence identification. Methanol was supplied at 4 g/L, temperature at 30 degrees C and initial redox potential at a reported 0.1 V without a stated electrode reference. Immobilized SRB were used in a 1-L glass vessel; actual working volume, inoculum dose and immobilization carrier are not specified. Results calls the medium anaerobic and sterilized without detailing sterilization. Parameters were monitored every two days; the text assigns the principal endpoint to 12 days, while Figure 1 extends through day 14. No matched sterile, killed-biomass, no-methanol or pH-matched
+    abiotic removal series is reported. Replicate numbers and the meaning of Figure 1 error bars are not stated. Metal concentrations were determined by ICP-OES, which does not independently resolve the oxidation states printed in Table 1.'
   microbial: true
-  description: In a laboratory batch inoculated with an enriched sulfate-reducing community, sulfate
-    decreased and Pb/Cd fell below the reported analytical detection limits while a mixed solid
-    formed. The authors interpret sulfide and bicarbonate generation as promoting sulfide/carbonate
-    precipitation. These observations support culture-associated removal in this pretreated liquid,
-    without a matched uninoculated comparison establishing microbial necessity or advantage. No
-    isolated Pb or Cd product yield is demonstrated.
-  context: 'Gu2020 Methods 2.1–2.2, pp.2–3: the liquid followed the precipitation/carbonation process
-    cited to Vu2019. Initial Table 1 concentrations were sulfate 3013.5 mg/L, Ca 400.1 mg/L, Pb
-    0.924 mg/L and Cd 2.10 mg/L at pH 7.01. A mixed culture from an unnamed local wastewater plant
-    was enriched for one month in Postgate C medium before inoculation; the paper reports Gram-negative
-    bacteria but no species, strain or sequence identification. Methanol was supplied at 4 g/L,
-    temperature at 30 degrees C and initial redox potential at a reported 0.1 V without a stated
-    electrode reference. Immobilized SRB were used in a 1-L glass vessel; actual working volume,
-    inoculum dose and immobilization carrier are not specified. Results calls the medium anaerobic
-    and sterilized without detailing sterilization. Parameters were monitored every two days; the
-    text assigns the principal endpoint to 12 days, while Figure 1 extends through day 14. No matched
-    sterile, killed-biomass, no-methanol or pH-matched abiotic removal series is reported. Replicate
-    numbers and the meaning of Figure 1 error bars are not stated. Metal concentrations were determined
-    by ICP-OES, which does not independently resolve the oxidation states printed in Table 1.'
   evidence:
   - source_ref: gu2020
     supports: support
-    explanation: Results 3.1, Figure 1 and Table 1 report sulfate decreasing to 27.1 mg/L after
-      the SRB stage, approximately 99.1% relative to its initial 3013.5 mg/L concentration. Pb and
-      Cd are labelled ODL, interpreted explicitly on p.6 as below detection, with limits 0.05 mg/L
-      Pb and 0.005 mg/L Cd. The source therefore reports removal bounds greater than 94.6% and 99.8%,
-      respectively, rather than measured zero or exact complete removal. These are liquid-concentration
-      comparisons for the pretreated effluent, not whole-battery inventory or recovered-product
-      yields. The 99.2% sulfate value in Table 1 includes the later chemical stage.
+    explanation: Results 3.1, Figure 1 and Table 1 report sulfate decreasing to 27.1 mg/L after the SRB stage, approximately 99.1% relative to its initial 3013.5 mg/L concentration. Pb and Cd are labelled ODL, interpreted explicitly on p.6 as below detection, with limits 0.05 mg/L Pb and 0.005 mg/L Cd. The source therefore reports removal bounds greater than 94.6% and 99.8%, respectively, rather than measured zero or exact complete removal. These are liquid-concentration comparisons for the pretreated effluent, not whole-battery inventory or recovered-product yields. The 99.2% sulfate value in Table 1 includes the later chemical stage.
   - source_ref: gu2020
     supports: partial
-    explanation: Figure 3 and p.6 assign calcite, galena and hawleyite to the filtered solid after
-      drying at 80 degrees C for 48 h. The prose estimates 96% calcite and approximately 2% each
-      PbS and CdS, but does not supply a quantitative phase-refinement method, harvested mass or
-      closed metal balance; those numbers are not adopted as verified bulk purity or recovery. Figures
-      2 and 4 and SI Table S1 are thermodynamic simulations, not measurements of each dissolved
-      species or a unique cellular precipitation pathway. Post-SRB pH is 8.81 in Results 3.1.1 but
-      8.86 in Table 1; the conflict is retained.
+    explanation: Figure 3 and p.6 assign calcite, galena and hawleyite to the filtered solid after drying at 80 degrees C for 48 h. The prose estimates 96% calcite and approximately 2% each PbS and CdS, but does not supply a quantitative phase-refinement method, harvested mass or closed metal balance; those numbers are not adopted as verified bulk purity or recovery. Figures 2 and 4 and SI Table S1 are thermodynamic simulations, not measurements of each dissolved species or a unique cellular precipitation pathway. Post-SRB pH is 8.81 in Results 3.1.1 but 8.86 in Table 1; the conflict is retained.
   - source_ref: gu2020
     supports: partial
-    explanation: Methods 2.2 names a 4500-S2− sulfide method, while SI p.2 describes diluted HUMAS
-      sulfate and sulfide kits; the main assigns bicarbonate measurement to Raman, whereas the SI
-      describes carbonate-band analysis at 1066 cm−1 without a calibration or speciation conversion.
-      Thus the printed sulfide/bicarbonate values and ionic labels are retained as source-reported
-      analytical quantities, without independently resolving all species or measurement uncertainty.
-      The supplement does not resolve the missing culture authentication, immobilization or comparative-control
-      details.
+    explanation: Methods 2.2 names a 4500-S2− sulfide method, while SI p.2 describes diluted HUMAS sulfate and sulfide kits; the main assigns bicarbonate measurement to Raman, whereas the SI describes carbonate-band analysis at 1066 cm−1 without a calibration or speciation conversion. Thus the printed sulfide/bicarbonate values and ionic labels are retained as source-reported analytical quantities, without independently resolving all species or measurement uncertainty. The supplement does not resolve the missing culture authentication, immobilization or comparative-control details.
   - source_ref: vu2019
     supports: context_only
-    explanation: Materials 2.1, p.2, identifies wastewater generated when sulfuric acid from used
-      lead-acid batteries was poured into a storage tank at a battery company. Methods 2.2, pp.2–3,
-      describes lime treatment followed by CO2 carbonation. This establishes the secondary-resource
-      origin and upstream processing context; it is not an independent replication of the later
-      SRB experiment. The earlier experiment mixes 200 mL wastewater with 200 mL reagent suspension
-      and dilutes filtrate to 500 mL for analysis. Exact batch continuity and concentration/dilution
-      normalization across the two articles are not established, so their efficiencies are not multiplied
-      into a whole-process yield.
+    explanation: Materials 2.1, p.2, identifies wastewater generated when sulfuric acid from used lead-acid batteries was poured into a storage tank at a battery company. Methods 2.2, pp.2–3, describes lime treatment followed by CO2 carbonation. This establishes the secondary-resource origin and upstream processing context; it is not an independent replication of the later SRB experiment. The earlier experiment mixes 200 mL wastewater with 200 mL reagent suspension and dilutes filtrate to 500 mL for analysis. Exact batch continuity and concentration/dilution normalization across the two articles are not established, so their efficiencies are not multiplied into a whole-process yield.
 - id: ferrous_hydroxide_polishing
   name: Separate chemical sulfide polishing after the culture stage
   process: other
+  description: Addition of ferrous hydroxide to the filtered liquid from the SRB stage lowered the reported residual sulfide concentration and produced a further mixed precipitate. This reagent-driven downstream step is separate from the culture-associated stage and does not establish selective metal recovery or a discharge-ready effluent.
+  context: 'Gu2020 Methods 2.2: fresh Fe(OH)2 at 6.29 g/L was added after filtering the first precipitate, followed by 24 h stirring at 200 rpm, filtration and drying of the second solid at 80 degrees C for 48 h. No fresh microbial inoculation is assigned to this chemical step. The earlier culture may have conditioned its feed; microbial:false describes the stated reagent treatment, not proof that every cell was removed by filtration.'
   microbial: false
-  description: Addition of ferrous hydroxide to the filtered liquid from the SRB stage lowered the
-    reported residual sulfide concentration and produced a further mixed precipitate. This reagent-driven
-    downstream step is separate from the culture-associated stage and does not establish selective
-    metal recovery or a discharge-ready effluent.
-  context: 'Gu2020 Methods 2.2: fresh Fe(OH)2 at 6.29 g/L was added after filtering the first precipitate,
-    followed by 24 h stirring at 200 rpm, filtration and drying of the second solid at 80 degrees
-    C for 48 h. No fresh microbial inoculation is assigned to this chemical step. The earlier culture
-    may have conditioned its feed; microbial:false describes the stated reagent treatment, not proof
-    that every cell was removed by filtration.'
   evidence:
   - source_ref: gu2020
     supports: support
-    explanation: Results 3.2, Figure 5 and Table 1 report the sulfide-labelled liquid concentration
-      decreasing from 1001 to 1.27 mg/L after Fe(OH)2 treatment. Figure 5 shows the initially black
-      sediment becoming red on drying and an XRD pattern assigned to magnetite, troilite and siderite.
-      The proposed oxidation during drying is an interpretation; the dried assemblage is not assumed
-      to be identical to the phases in the wet reactor. No harvested product mass or metal-specific
-      isolated recovery is reported.
+    explanation: Results 3.2, Figure 5 and Table 1 report the sulfide-labelled liquid concentration decreasing from 1001 to 1.27 mg/L after Fe(OH)2 treatment. Figure 5 shows the initially black sediment becoming red on drying and an XRD pattern assigned to magnetite, troilite and siderite. The proposed oxidation during drying is an interpretation; the dried assemblage is not assumed to be identical to the phases in the wet reactor. No harvested product mass or metal-specific isolated recovery is reported.
   - source_ref: gu2020
     supports: partial
-    explanation: The abstract and conclusion claim that no new impurities were introduced and that
-      the effluent was safe for direct discharge. Table 1 instead reports 89.5 mg/L Fe after precipitation,
-      and final pH 9.08 and sulfide 1.27 mg/L exceed the same table's printed comparison values
-      of pH 6–9 and sulfide 1.0 mg/L. These internal limitations prevent adopting either claim;
-      this is not a verification of regulatory compliance. The initial and post-SRB Fe cells are
-      NA, not measured zero. Laboratory vessel operation and industrial waste origin do not establish
-      pilot or industrial deployment.
-history_refs:
-- history/records/spent-lead-acid-battery-electrolyte/2026-10-12T144802Z-codex-2bfdb3.yaml
+    explanation: The abstract and conclusion claim that no new impurities were introduced and that the effluent was safe for direct discharge. Table 1 instead reports 89.5 mg/L Fe after precipitation, and final pH 9.08 and sulfide 1.27 mg/L exceed the same table's printed comparison values of pH 6–9 and sulfide 1.0 mg/L. These internal limitations prevent adopting either claim; this is not a verification of regulatory compliance. The initial and post-SRB Fe cells are NA, not measured zero. Laboratory vessel operation and industrial waste origin do not establish pilot or industrial deployment.
 curation_history:
 - timestamp: '2026-10-12T14:48:15.292246+00:00'
   curator: Codex (GPT-6; codex)
   action: CREATE
-  summary: Created the distinct spent-electrolyte resource from complete original main/SI and upstream-origin
-    evidence, separating culture-associated precipitation from chemical sulfide polishing and preserving
-    source/control/scale limitations.
+  summary: Created the distinct spent-electrolyte resource from complete original main/SI and upstream-origin evidence, separating culture-associated precipitation from chemical sulfide polishing and preserving source/control/scale limitations.
+- timestamp: '2026-10-30T10:36:05Z'
+  curator: claude
+  action: edit
+  summary: Normalize top-level curation_history/history_refs YAML key order in spent-lead-acid-battery-electrolyte.yaml (#864)
+history_refs:
+- history/records/spent-lead-acid-battery-electrolyte/2026-10-12T144802Z-codex-2bfdb3.yaml
+- history/records/spent-lead-acid-battery-electrolyte/2026-10-30T103605Z-claude-80ccb1.yaml

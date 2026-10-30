@@ -1,0 +1,27 @@
+history_version: 1
+target:
+  kind: record
+  slug: zinc-leach-residue
+  path: data/records/zinc-leach-residue.yaml
+session:
+  id: 2026-10-30T103605Z-claude-1bd882
+  timestamp: '2026-10-30T10:36:05Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Normalize top-level curation_history/history_refs YAML key order in zinc-leach-residue.yaml
+    (#864)
+  details: Resolved Cycle 4 Stage 4 finding cmmmech-cycle4-stage4-finding-0003 (#864 / GRP-C4S5-003)
+    in data/records/zinc-leach-residue.yaml by normalizing top-level YAML keys to CANONICAL_RECORD_KEYS
+    so curation_history precedes history_refs.
+  sections:
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/864

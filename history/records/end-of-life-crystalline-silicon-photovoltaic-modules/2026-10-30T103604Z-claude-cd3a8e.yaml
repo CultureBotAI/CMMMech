@@ -1,0 +1,28 @@
+history_version: 1
+target:
+  kind: record
+  slug: end-of-life-crystalline-silicon-photovoltaic-modules
+  path: data/records/end-of-life-crystalline-silicon-photovoltaic-modules.yaml
+session:
+  id: 2026-10-30T103604Z-claude-cd3a8e
+  timestamp: '2026-10-30T10:36:04Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Normalize top-level mechanisms/sources/criticality YAML key order in end-of-life-crystalline-silicon-photovoltaic-modules.yaml
+    (#863)
+  details: Resolved Cycle 4 Stage 4 finding cmmmech-cycle4-stage4-finding-0002 (#863 / GRP-C4S5-002)
+    in data/records/end-of-life-crystalline-silicon-photovoltaic-modules.yaml by normalizing
+    top-level YAML keys to CANONICAL_RECORD_KEYS so sources and criticality precede mechanisms
+    and causal_graphs.
+  sections:
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/863
