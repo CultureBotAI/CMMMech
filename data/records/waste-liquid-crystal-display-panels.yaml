@@ -334,12 +334,12 @@ causal_graphs:
   - id: solid_feed_substrate
     label: Crushed waste LCD panel powder
     node_type: MATERIAL_OR_PHASE
-    description: Starting mineral or secondary-resource feed (Crushed waste LCD panel powder (ITO-bearing)).
+    description: Crushed (<1.0 mm) and milled (<0.5 mm) waste mobile-phone LCD panel glass powder bearing indium tin oxide (ITO; reported 0.1% In and 0.025% Sn by MP-AES) leached at 2.5% w/v pulp density.
     protein_grounding_status: NOT_APPLICABLE
   - id: solubilized_metal_species
     label: Dissolved In(III) in acidic bioleachate
     node_type: CHEMICAL_ENTITY
-    description: Leached product state (Dissolved In(III) in acidic bioleachate) in willner2018.
+    description: Dissolved In in filtered 35-day leachate (reaching 13.90 mg/dm3 In in inoculated modified 9K medium vs 0.82 mg/dm3 In in the sterile 9K control; reported as 55.6% In extraction, alongside non-selective Sn release of 3.15 vs 4.59 mg/dm3 in sterile 9K).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: sqr_reductase
@@ -350,7 +350,7 @@ causal_graphs:
     evidence:
     - source_ref: willner2018
       supports: partial
-      explanation: Reduced sulfur oxidation in A. ferrooxidans couples Sqr and polythionate hydrolysis to proton generation.
+      explanation: Reduced-sulfur oxidation in the elemental-sulfur-supplemented mixed Acidithiobacillus ferrooxidans and Acidithiobacillus thiooxidans culture couples Sqr/Sqor and tetrathionate hydrolysis (Tth) to sulfuric acid proton generation; individual sqr/sqor/tth genes were not mutated in Willner et al. (2018).
   - source: tth_hydrolase
     target: acidic_ferric_sulfate_lixiviant
     predicate: produces
@@ -362,22 +362,22 @@ causal_graphs:
       explanation: Sulfur-compound oxidation maintains the acidic lixiviant required for metal solubilization.
   - source: acidic_ferric_sulfate_lixiviant
     target: solid_feed_substrate
-    predicate: acts_on
-    relationship: acidic and oxidative mineral/feed attack
-    description: Biogenic acid and ferric ions attack Crushed waste LCD panel powder (ITO-bearing).
+    predicate: solubilizes
+    relationship: Adapted mixed A. ferrooxidans and A. thiooxidans culture in sulfur-supplemented 9K medium leaches waste LCD powder
+    description: 4-week-adapted mixed A. ferrooxidans and A. thiooxidans culture in modified 9K medium (or sulfuric acid medium) supplemented with elemental sulfur (initial pH 1.9) contacts 2.5% w/v crushed/milled LCD panel powder at 30 degrees C over 35 days.
     evidence:
     - source_ref: willner2018
       supports: partial
-      explanation: Culture-generated acidic ferric/sulfate medium attacks Crushed waste LCD panel powder (ITO-bearing).
+      explanation: Willner et al. (2018) demonstrate enhanced In mobilization in inoculated modified 9K medium over 35 days relative to sterile controls, though sterile controls were not matched to the evolving pH and redox trajectories of the inoculated flasks.
   - source: solid_feed_substrate
     target: solubilized_metal_species
     predicate: produces
-    relationship: oxidative/acidic dissolution
-    description: Biogenic sulfuric acid and Fe3+ in 9K medium leach indium from crushed LCD panel powder.
+    relationship: 35-day bioleaching of waste LCD powder increases dissolved indium in modified 9K filtrate
+    description: 35-day leaching of 2.5% w/v waste LCD panel powder at 30 degrees C yields 13.90 mg/dm3 dissolved In in inoculated modified 9K filtrate vs 0.82 mg/dm3 In in the sterile 9K control (55.6% reported In extraction), whereas day-35 Sn was 3.15 mg/dm3 inoculated vs 4.59 mg/dm3 in sterile 9K.
     evidence:
     - source_ref: willner2018
       supports: support
-      explanation: Biogenic sulfuric acid and Fe3+ in 9K medium leach indium from crushed LCD panel powder.
+      explanation: MP-AES filtrate measurements in Willner et al. (2018) Section 3.2, Figure 4A, and Table 2 confirm 13.90 mg/dm3 In in inoculated 9K medium at day 35 vs 0.82 mg/dm3 In in the parallel sterile 9K control.
 curation_history:
 - timestamp: '2026-10-11T13:46:10Z'
   curator: Codex (GPT-6; Codex)
@@ -403,6 +403,10 @@ curation_history:
   curator: claude
   action: edit
   summary: Include sqor in Sqr/Sqor causal-graph descriptions and protein_examples evidence explanations (#859)
+- timestamp: '2026-10-30T17:10:04Z'
+  curator: marcin
+  action: edit
+  summary: Upgrade waste-liquid-crystal-display-panels causal_graphs[0] lixiviant predicate to solubilizes and ground text in willner2018
 history_refs:
 - history/records/waste-liquid-crystal-display-panels/2026-10-11T134610Z-codex-b0f4f2.yaml
 - history/records/waste-liquid-crystal-display-panels/2026-10-18T042750Z-antigravity-75eedb.yaml
@@ -410,3 +414,4 @@ history_refs:
 - history/records/waste-liquid-crystal-display-panels/2026-10-24T015709Z-marcin-28e15b.yaml
 - history/records/waste-liquid-crystal-display-panels/2026-10-30T074106Z-claude-claude-opus-4-6-antigravity-e50238.yaml
 - history/records/waste-liquid-crystal-display-panels/2026-10-30T080931Z-claude-0ee1a5.yaml
+- history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml

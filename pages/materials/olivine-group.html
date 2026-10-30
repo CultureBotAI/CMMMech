@@ -305,11 +305,11 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Starting solid substrate (Magnesium-rich San Carlos olivine) exposed to the acidic biolixiviant.</div>          </td>
+<div>Milled (~40 um), ultrasonically washed San Carlos magnesium-rich olivine powder (100% olivine by XRD after pyroxene removal; assumed Fo90.68) leached at 5% w/v pulp density (0.5 g per 10 mL liquid).</div>          </td>
         </tr>
         <tr id="causal-node-gluconobacter_olivine_bioleaching_graph-dissolved_mg_ni_and_oxalate">
           <td>
-            <strong>Dissolved Mg/Fe/Ni ions and secondary glushinskite/oxalate solids</strong><br>
+            <strong>Dissolved Mg and Ni ions and secondary glushinskite/oxalate solids</strong><br>
             <code style="font-size: .78rem; color: var(--muted);">dissolved_mg_ni_and_oxalate</code>
           </td>
           <td>
@@ -317,7 +317,7 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Solubilized metal ions or altered phase (Dissolved Mg/Fe/Ni ions and secondary glushinskite/oxalate solids) released into the leachate.</div>          </td>
+<div>Dissolved Mg (day-15 mean ~9565 ppm with cells and ~7203 ppm cell-free vs 242 ppm glucose control) and Ni in 0.45-um filtrate, accompanied by residual secondary Mg-oxalate (glushinskite, 32 wt% with cells and 20 wt% cell-free by XRD) and amorphous silica.</div>          </td>
         </tr>
       </tbody>
     </table>
@@ -334,11 +334,11 @@
         <code>gdh_dehydrogenase</code> &rarr; <strong>periplasmic oxidation of glucose to gluconic acid</strong> (<code>produces</code>) &rarr; <code>gluconic_acid_biolixiviant</code>
 : Membrane-bound Gdh oxidizes D-glucose to gluconic acid, lowering supernatant pH and supplying organic-acid ligands.[<a href="#source-klug_2026"><code>klug_2026</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
-        <code>gluconic_acid_biolixiviant</code> &rarr; <strong>acidolysis and ligand complexation</strong> (<code>acts_on</code>) &rarr; <code>san_carlos_olivine_feed</code>
-: Protons and gluconate ligands attack the solid phase in the leaching reaction.[<a href="#source-klug_2026"><code>klug_2026</code></a>]      </li>
+        <code>gluconic_acid_biolixiviant</code> &rarr; <strong>Engineered G. oxydans B58 biolixiviant dissolves San Carlos olivine powder</strong> (<code>dissolves</code>) &rarr; <code>san_carlos_olivine_feed</code>
+: Cell-containing and 0.2-um-filtered cell-free G. oxydans B58 (delta-pstS, P112:mgdh) biolixiviants (initial pH ~2.4–2.5) react statically with 5% w/v San Carlos olivine powder at 30 degrees C over 15 days.[<a href="#source-klug_2026"><code>klug_2026</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
-        <code>san_carlos_olivine_feed</code> &rarr; <strong>dissolution and metal mobilization</strong> (<code>produces</code>) &rarr; <code>dissolved_mg_ni_and_oxalate</code>
-: Dissolution of Magnesium-rich San Carlos olivine yields Dissolved Mg/Fe/Ni ions and secondary glushinskite/oxalate solids in the aqueous leachate.[<a href="#source-klug_2026"><code>klug_2026</code></a>]      </li>
+        <code>san_carlos_olivine_feed</code> &rarr; <strong>15-day bioleaching of San Carlos olivine releases dissolved Mg and Ni and precipitates secondary Mg-oxalate</strong> (<code>produces</code>) &rarr; <code>dissolved_mg_ni_and_oxalate</code>
+: 15-day leaching of 5% w/v San Carlos olivine yields ~9565 ppm dissolved Mg with cells and ~7203 ppm cell-free (vs 242 ppm glucose control) plus dissolved Ni, while solid residues contain 32 wt% (with cells) and 20 wt% (cell-free) secondary Mg-oxalate (assigned to glushinskite by XRD/Raman) and amorphous silica.[<a href="#source-klug_2026"><code>klug_2026</code></a>]      </li>
     </ul>
   </div>
 </div>
@@ -410,6 +410,18 @@
         <td><span class="badge">EDIT</span></td>
         <td>Normalized 2019 IMA-CNMNC Nomenclature Compendium source ID from ima_compendium to ima_compendium_2019 in olivine-group.yaml (#831).</td>
       </tr>
+      <tr>
+        <td><code>2026-10-30T17:10:03Z</code></td>
+        <td>marcin</td>
+        <td><span class="badge">edit</span></td>
+        <td>Upgrade olivine-group causal_graphs[0] lixiviant predicate to dissolves and replace template node/edge text with klug_2026 details</td>
+      </tr>
+      <tr>
+        <td><code>2026-10-30T17:57:59Z</code></td>
+        <td>marcin</td>
+        <td><span class="badge">edit</span></td>
+        <td>Align olivine-group product node label with measured Mg and Ni filtrate ions in klug_2026</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -419,7 +431,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (668 materials · 609 mechanisms · latest curation 2026-10-30 · corpus digest <code>e3369161e653</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (668 materials · 609 mechanisms · latest curation 2026-10-30 · corpus digest <code>82d80f2e689d</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

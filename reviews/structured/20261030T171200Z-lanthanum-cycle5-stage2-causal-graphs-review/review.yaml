@@ -1,0 +1,189 @@
+schema_version: 1.0.0
+review_id: 20261030T171200Z-lanthanum-cycle5-stage2-causal-graphs-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 5 Stage 2 causal-graph review of Lanthanum (cmmmech:lanthanum)
+started_at: '2026-10-30T17:10:00Z'
+finished_at: '2026-10-30T17:12:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle5-stage2-causal-graphs-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md verifying
+    the Cycle 5 Stage 2 causal_graphs[0] (aspergillus_cexa_lanthanum_precipitation_graph) update in data/records/lanthanum.yaml
+    (SHA-256 eca2a756a20c63a497823a64fb51fd877f157f4f2c8b9b7479d0a1af925ab930) against mechanisms[0] (niger_supernatant_lanthanum_precipitation)
+    and its cited primary source kang2019 (DOI:10.1007/s00253-018-9489-0).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 2f2de84859ee4156bb09f2a0110d35edc48b8020
+  state: working_tree
+  inputs:
+  - path: data/records/lanthanum.yaml
+    sha256: eca2a756a20c63a497823a64fb51fd877f157f4f2c8b9b7479d0a1af925ab930
+    role: target
+  - path: history/records/lanthanum/2026-10-30T171003Z-marcin-571ffd.yaml
+    sha256: 66d7dd8affec7922269a20e7b1539335a722b4ab34a0d9120388cb78e97d85ea
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:lanthanum
+  path: data/records/lanthanum.yaml
+  label: Lanthanum
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lanthanum.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/lanthanum/2026-10-30T171003Z-marcin-571ffd.yaml
+    role: canonical_history
+scope:
+  description: Cycle 5 Stage 2 causal-graph review of data/records/lanthanum.yaml (SHA-256 eca2a756a20c63a497823a64fb51fd877f157f4f2c8b9b7479d0a1af925ab930)
+    and its canonical EDIT history sidecar(s) (history/records/lanthanum/2026-10-30T171003Z-marcin-571ffd.yaml)
+    verifying full synchronization between causal_graphs[0] (aspergillus_cexa_lanthanum_precipitation_graph)
+    and mechanisms[0] (niger_supernatant_lanthanum_precipitation).
+  selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:lanthanum
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:lanthanum
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/lanthanum.yaml
+  locator: 'Working-tree record data/records/lanthanum.yaml (causal_graphs[0]: aspergillus_cexa_lanthanum_precipitation_graph)'
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: 'Synchronized causal_graphs[0] (aspergillus_cexa_lanthanum_precipitation_graph, mechanism_ref:
+    niger_supernatant_lanthanum_precipitation) in data/records/lanthanum.yaml with mechanisms[0] (Lanthanum
+    precipitation using Aspergillus niger culture supernatant) and primary source kang2019 (DOI:10.1007/s00253-018-9489-0):
+    edge secreted_organic_acids -> starting_substrate uses predicate ''chelates'' (supports: partial)
+    and edge starting_substrate -> transformed_product uses predicate ''transforms_into'' (supports: support).
+    Upgraded secreted_organic_acids -> starting_substrate from acts_on (support) to chelates (partial)
+    to match mechanisms[0].evidence[1], and replaced template starting_substrate and transformed_product
+    node/edge descriptions with exact kang2019 7-day AP1 supernatant LaCl3 bioprecipitation conditions.'
+  snapshot_sha256: eca2a756a20c63a497823a64fb51fd877f157f4f2c8b9b7479d0a1af925ab930
+- evidence_id: primary_source
+  kind: primary_source
+  reference: DOI:10.1007/s00253-018-9489-0
+  locator: 'kang2019: Kang, Csetenyi and Gadd (2019; published online 2018). Biotransformation of lanthanum
+    by Aspergillus niger. Applied Microbiology and Biotechnology 103:981-993; Methods, Table 1 and Figures
+    3-9. (https://doi.org/10.1007/s00253-018-9489-0)'
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: 'A. niger ATCC 1015 cultures produced supernatants that precipitated La supplied as soluble
+    lanthanum chloride. Recovered crystals included lanthanum oxalate decahydrate; higher-La supernatant
+    reactions also produced a phosphorus-containing phase. Microbial involvement is the prior fungal culture
+    step. Chemical oxalic acid also precipitated La, so the experiment does not establish a requirement
+    for living cells during precipitation or a unique biological precipitation reaction. Substrate-edge
+    evidence (kang2019, supports: partial): Kang et al. (2019) demonstrate La2(C2O4)3·10H2O precipitation
+    from 63-um-filtered A. niger AP1 supernatant (plus a phosphorus-containing phase at higher La loading),
+    though fungal-supernatant oxalate concentration was not directly measured and 25 mM chemical oxalic
+    acid comparators were not pH-matched. Product-edge evidence (kang2019, supports: support): Arsenazo
+    III supernatant colorimetry (Figure 7a,c) and SEM/EDS, XRD, and FTIR (Figures 4, 8, and 9) confirm
+    aqueous La depletion and La2(C2O4)3·10H2O crystallization.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/lanthanum/2026-10-30T171003Z-marcin-571ffd.yaml
+  locator: Canonical EDIT history sidecar history/records/lanthanum/2026-10-30T171003Z-marcin-571ffd.yaml
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/lanthanum/2026-10-30T171003Z-marcin-571ffd.yaml
+    (SHA-256 66d7dd8affec7922269a20e7b1539335a722b4ab34a0d9120388cb78e97d85ea): Align lanthanum causal_graphs[0]
+    node/edge descriptions, chelates predicate, and partial organic-acid support with kang2019 — Upgraded
+    secreted_organic_acids -> starting_substrate from acts_on (support) to chelates (partial) to match
+    mechanisms[0].evidence[1], and replaced template starting_substrate and transformed_product node/edge
+    descriptions with exact kang2019 7-day AP1 supernatant LaCl3 bioprecipitation conditions.'
+  snapshot_sha256: 66d7dd8affec7922269a20e7b1539335a722b4ab34a0d9120388cb78e97d85ea
+- evidence_id: validation
+  kind: validation
+  reference: data/records/lanthanum.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and validate-history --base
+    main
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: data/records/lanthanum.yaml and history/records/lanthanum/2026-10-30T171003Z-marcin-571ffd.yaml
+    pass strict LinkML schema and history validation with 0 errors.
+  snapshot_sha256: eca2a756a20c63a497823a64fb51fd877f157f4f2c8b9b7479d0a1af925ab930
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 668 record(s); 0 failed.
+  target_ids:
+  - cmmmech:lanthanum
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:lanthanum
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_mechanism_synchronization
+  area: graph
+  topic: Synchronization of causal_graphs[0] (aspergillus_cexa_lanthanum_precipitation_graph) with mechanisms[0]
+    (niger_supernatant_lanthanum_precipitation) and primary source kang2019 (DOI:10.1007/s00253-018-9489-0)
+  outcome: supported
+  summary: 'Synchronized causal_graphs[0] (aspergillus_cexa_lanthanum_precipitation_graph, mechanism_ref:
+    niger_supernatant_lanthanum_precipitation) in data/records/lanthanum.yaml with mechanisms[0] (Lanthanum
+    precipitation using Aspergillus niger culture supernatant) and primary source kang2019 (DOI:10.1007/s00253-018-9489-0):
+    edge secreted_organic_acids -> starting_substrate uses predicate ''chelates'' (supports: partial)
+    and edge starting_substrate -> transformed_product uses predicate ''transforms_into'' (supports: support).
+    Upgraded secreted_organic_acids -> starting_substrate from acts_on (support) to chelates (partial)
+    to match mechanisms[0].evidence[1], and replaced template starting_substrate and transformed_product
+    node/edge descriptions with exact kang2019 7-day AP1 supernatant LaCl3 bioprecipitation conditions.'
+  target_ids:
+  - cmmmech:lanthanum
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
+  outcome: supported
+  summary: data/records/lanthanum.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar(s) (history/records/lanthanum/2026-10-30T171003Z-marcin-571ffd.yaml,
+    latest SHA-256 66d7dd8affec7922269a20e7b1539335a722b4ab34a0d9120388cb78e97d85ea) and passing all LinkML
+    and history validation gates.
+  target_ids:
+  - cmmmech:lanthanum
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Lanthanum (cmmmech:lanthanum) passes Cycle 5 Stage 2 causal-graph review (scientific_review:
+  true) at SHA-256 eca2a756a20c63a497823a64fb51fd877f157f4f2c8b9b7479d0a1af925ab930: Synchronized causal_graphs[0]
+  (aspergillus_cexa_lanthanum_precipitation_graph, mechanism_ref: niger_supernatant_lanthanum_precipitation)
+  in data/records/lanthanum.yaml with mechanisms[0] (Lanthanum precipitation using Aspergillus niger culture
+  supernatant) and primary source kang2019 (DOI:10.1007/s00253-018-9489-0): edge secreted_organic_acids
+  -> starting_substrate uses predicate ''chelates'' (supports: partial) and edge starting_substrate ->
+  transformed_product uses predicate ''transforms_into'' (supports: support). Upgraded secreted_organic_acids
+  -> starting_substrate from acts_on (support) to chelates (partial) to match mechanisms[0].evidence[1],
+  and replaced template starting_substrate and transformed_product node/edge descriptions with exact kang2019
+  7-day AP1 supernatant LaCl3 bioprecipitation conditions.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes;
+  an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 5 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py.
+related_reviews: []

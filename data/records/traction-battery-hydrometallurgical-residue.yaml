@@ -520,12 +520,12 @@ causal_graphs:
   - id: solid_feed_substrate
     label: Industrial traction-battery hydrometallurgical residues (nickel-line and cobalt-line residues)
     node_type: MATERIAL_OR_PHASE
-    description: Starting mineral or secondary-resource feed (Traction-battery nickel and cobalt hydrometallurgical residues).
+    description: Separate industrial acid-leached nickel-line and cobalt-line traction-battery hydrometallurgical residues suspended at 10–50% w/v (200–1000 g per 2 L) in 3-L beakers with 9K medium (initial pH 1.9).
     protein_grounding_status: NOT_APPLICABLE
   - id: solubilized_metal_species
     label: Solubilized Ni and Co in acidic leachates from separate residue lines
     node_type: CHEMICAL_ENTITY
-    description: Leached product state (Solubilized Ni and Co in acidic leachates from separate residue lines) in lu2025.
+    description: Dissolved Ni (from the nickel-line residue) and Co (from the cobalt-line residue) in filtered 12-day 9K leachates measured by ICP-MS across 30, 40, and 45 degrees C single-culture and consortium arms.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: sqr_reductase
@@ -548,22 +548,22 @@ causal_graphs:
       explanation: Sulfur-compound oxidation maintains the acidic lixiviant required for metal solubilization.
   - source: acidic_ferric_sulfate_lixiviant
     target: solid_feed_substrate
-    predicate: acts_on
-    relationship: acidic and oxidative mineral/feed attack
-    description: Biogenic acid and ferric ions attack Traction-battery nickel and cobalt hydrometallurgical residues.
+    predicate: solubilizes
+    relationship: Biogenic sulfuric acid and Fe(III)/Fe(II) redox cycling leach separate Ni-line and Co-line battery residues
+    description: 7-day-precultured single and mixed acidophile cultures (A. ferrooxidans, L. ferriphilum, A. thiooxidans, A. caldus, and S. thermotolerans) in 2 L 9K medium (initial pH 1.9) leach separate nickel-line and cobalt-line residues at 10–50% w/v over 12 days at 30, 40, or 45 degrees C.
     evidence:
     - source_ref: lu2025
       supports: partial
-      explanation: Culture-generated acidic ferric/sulfate medium attacks Traction-battery nickel and cobalt hydrometallurgical residues.
+      explanation: Lu et al. (2025) Sections 3.1.1–3.1.4 and Figures 1–4 report higher Ni and Co leaching ratios in inoculated single and consortium arms than in the 30 degrees C uninoculated blank, though matched 40/45 degrees C abiotic controls and pH/iron-matched controls were not reported.
   - source: solid_feed_substrate
     target: solubilized_metal_species
     predicate: produces
-    relationship: oxidative/acidic dissolution
-    description: Biogenic sulfuric acid and Fe3+/Fe2+ redox cycling leach Ni and Co from separate hydrometallurgical battery residues.
+    relationship: 12-day bioleaching of separate Ni-line and Co-line battery residues releases dissolved Ni and Co
+    description: Over 12 days in 2 L 9K medium, inoculated single and mixed acidophile cultures increase dissolved Ni release from the nickel-line residue and dissolved Co release from the cobalt-line residue relative to the 30 degrees C blank control.
     evidence:
     - source_ref: lu2025
       supports: support
-      explanation: Biogenic sulfuric acid and Fe3+/Fe2+ redox cycling leach Ni and Co from separate hydrometallurgical battery residues.
+      explanation: ICP-MS filtrate time series in Lu et al. (2025) Figures 1–4 confirm higher dissolved Ni and Co release from the respective battery residues in inoculated 9K systems than in the 30 degrees C blank.
 curation_history:
 - timestamp: '2026-10-12T14:49:44.531130+00:00'
   curator: Codex (GPT-6; codex)
@@ -593,6 +593,10 @@ curation_history:
   curator: claude
   action: edit
   summary: Fix solid_feed_substrate sample codes and consortium causal-graph labels in traction-battery-hydrometallurgical-residue.yaml (#862)
+- timestamp: '2026-10-30T17:10:04Z'
+  curator: marcin
+  action: edit
+  summary: Upgrade traction-battery-hydrometallurgical-residue causal_graphs[0] lixiviant predicate to solubilizes and ground text in lu2025
 history_refs:
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-12T144943Z-codex-e18c9e.yaml
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-18T042750Z-antigravity-437365.yaml
@@ -601,3 +605,4 @@ history_refs:
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-30T074106Z-claude-claude-opus-4-6-antigravity-53967a.yaml
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-30T080817Z-claude-9f9b68.yaml
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-30T103604Z-claude-33e08d.yaml
+- history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml

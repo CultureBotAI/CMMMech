@@ -297,7 +297,7 @@ causal_graphs:
   - id: solubilized_ree_ions
     label: Dissolved rare-earth elements (La, Ce, Nd, Y)
     node_type: CHEMICAL_ENTITY
-    description: Solubilized metal ions or altered phase (Dissolved rare-earth elements (La, Ce, Nd, Y)) released into the leachate.
+    description: Dissolved rare-earth elements in 0.45-um-filtered leachate after 24-h bioleaching of crushed allanite concentrate at 10% w/v (500 mg per 5 mL) and 1% w/v pulp density.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: pstc_phosphate_permease
@@ -338,22 +338,22 @@ causal_graphs:
       explanation: Periplasmic glucose oxidation by G. oxydans generates the acidic gluconic-acid-rich biolixiviant.
   - source: gluconic_acid_biolixiviant
     target: allanite_concentrate_feed
-    predicate: acts_on
-    relationship: acidolysis and ligand complexation
-    description: Protons and gluconate ligands attack the solid phase in the leaching reaction.
+    predicate: solubilizes
+    relationship: Gluconic acid-rich G. oxydans B58 biolixiviant leaches crushed allanite concentrate
+    description: Glucose-grown G. oxydans B58 and engineered delta-pstS, P112:mgdh biolixiviants contact crushed allanite concentrate at 10% w/v (500 mg in 5 mL) and 1% w/v pulp density for 24 h at room temperature and 200 rpm.
     evidence:
     - source_ref: schmitz2025
       supports: support
-      explanation: Biolixiviant acidity and organic-acid complexation promote dissolution of the solid substrate.
+      explanation: Schmitz et al. (2025) Figures 1–3 and Data S1–S3 demonstrate culture-associated REE solubilization from crushed allanite concentrate at 10% and 1% w/v pulp density above no-bacteria controls.
   - source: allanite_concentrate_feed
     target: solubilized_ree_ions
     predicate: produces
-    relationship: dissolution and metal mobilization
-    description: Acidolysis and organic-acid complexation of crushed allanite ore concentrate (Zappall) release dissolved REEs into the leachate.
+    relationship: 24-h bioleaching of crushed allanite concentrate releases dissolved REEs into 0.45-um filtrate
+    description: 24-h bioleaching of crushed allanite concentrate at 200 rpm releases dissolved REEs into 0.45-um-filtered leachate, with the delta-pstS, P112:mgdh strain achieving 53.1% (at 10% w/v) and 73.1% (at 1% w/v) relative improvements over wild-type B58.
     evidence:
     - source_ref: schmitz2025
       supports: support
-      explanation: Biolixiviant treatment of crushed allanite concentrate solubilizes rare-earth elements.
+      explanation: ICP-MS measurements in Schmitz et al. (2025) Figures 1–3 and Data S2 confirm increased dissolved REE extraction from allanite concentrate, including 53.1% (10% w/v) and 73.1% (1% w/v) relative improvements for delta-pstS, P112:mgdh over wild-type.
 curation_history:
 - timestamp: '2026-10-12T09:17:02Z'
   curator: codex (GPT-6)
@@ -371,8 +371,13 @@ curation_history:
   curator: claude (claude-opus-4-6; antigravity)
   action: EDIT
   summary: 'Synchronize causal_graphs[].nodes[].protein_examples[].evidence[].explanation with mechanisms[].protein_examples for UniProtKB:Q5FT13, UniProtKB:Q5FTI1 (Issue #818).'
+- timestamp: '2026-10-30T17:10:03Z'
+  curator: marcin
+  action: edit
+  summary: Upgrade allanite-concentrate causal_graphs[0] lixiviant predicate to solubilizes and ground product/edge descriptions in schmitz2025
 history_refs:
 - history/records/allanite-concentrate/2026-10-12T091702Z-codex-5d49fc.yaml
 - history/records/allanite-concentrate/2026-10-18T042750Z-antigravity-092f04.yaml
 - history/records/allanite-concentrate/2026-10-21T184653Z-claude-5a83c3.yaml
 - history/records/allanite-concentrate/2026-10-22T132123Z-claude-0e7ffc.yaml
+- history/records/allanite-concentrate/2026-10-30T171003Z-marcin-894052.yaml

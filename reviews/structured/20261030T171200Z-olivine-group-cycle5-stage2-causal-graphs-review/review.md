@@ -1,0 +1,318 @@
+# Cycle 5 Stage 2 causal-graph review of Olivine group (cmmmech:olivine-group)
+
+- Review: 20261030T171200Z-olivine-group-cycle5-stage2-causal-graphs-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-30T17:10:00Z
+- Finished UTC: 2026-10-30T17:12:00Z
+- Reviewer: antigravity / cmmmech-cycle5-stage2-causal-graphs-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Olivine group (cmmmech:olivine-group) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256 4f358cb0aa080647a7347325ebd770e0761c104a60467dbe25991263e0bb2141: Synchronized causal_graphs[0] (gluconobacter_olivine_bioleaching_graph, mechanism_ref: san_carlos_olivine_bioleaching) in data/records/olivine-group.yaml with mechanisms[0] (Bioleaching of magnesium-rich San Carlos olivine with secondary oxalate formation) and primary source klug_2026 (DOI:10.1038/s41598-026-63817-0): edge gluconic_acid_biolixiviant -&gt; san_carlos_olivine_feed uses predicate 'dissolves' (supports: support) and edge san_carlos_olivine_feed -&gt; dissolved_mg_ni_and_oxalate uses predicate 'produces' (supports: support). Upgraded gluconic_acid_biolixiviant -&gt; san_carlos_olivine_feed from acts_on to dissolves and replaced template node and edge descriptions with exact klug_2026 5% w/v San Carlos olivine leaching (~9565 ppm Mg with cells, ~7203 ppm cell-free) and secondary Mg-oxalate (glushinskite, 32% and 20% XRD) metrics. Updated causal_graphs[0] product node 'dissolved_mg_ni_and_oxalate' label from 'Dissolved Mg/Fe/Ni ions and secondary glushinskite/oxalate solids' to 'Dissolved Mg and Ni ions and secondary glushinskite/oxalate solids' to match its description (Fe was not measured in filtrate by Klug et al., 2026).
+
+## Scope And Provenance
+
+Cycle 5 Stage 2 causal-graph review of data/records/olivine-group.yaml (SHA-256 4f358cb0aa080647a7347325ebd770e0761c104a60467dbe25991263e0bb2141) and its canonical EDIT history sidecar(s) (history/records/olivine-group/2026-10-30T171003Z-marcin-2737ff.yaml, history/records/olivine-group/2026-10-30T175759Z-marcin-69c5e7.yaml) verifying full synchronization between causal_graphs[0] (gluconobacter_olivine_bioleaching_graph) and mechanisms[0] (san_carlos_olivine_bioleaching).
+
+Selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:olivine-group
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 2f2de84859ee4156bb09f2a0110d35edc48b8020.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:olivine-group | data/records/olivine-group.yaml | maintained | Olivine group |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:olivine-group | Checked 668 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:olivine-group | All history sidecars pass validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Synchronization of causal_graphs[0] (gluconobacter_olivine_bioleaching_graph) with mechanisms[0] (san_carlos_olivine_bioleaching) and primary source klug_2026 (DOI:10.1038/s41598-026-63817-0)
+
+graph: supported. Targets: cmmmech:olivine-group.
+
+Synchronized causal_graphs[0] (gluconobacter_olivine_bioleaching_graph, mechanism_ref: san_carlos_olivine_bioleaching) in data/records/olivine-group.yaml with mechanisms[0] (Bioleaching of magnesium-rich San Carlos olivine with secondary oxalate formation) and primary source klug_2026 (DOI:10.1038/s41598-026-63817-0): edge gluconic_acid_biolixiviant -&gt; san_carlos_olivine_feed uses predicate 'dissolves' (supports: support) and edge san_carlos_olivine_feed -&gt; dissolved_mg_ni_and_oxalate uses predicate 'produces' (supports: support). Upgraded gluconic_acid_biolixiviant -&gt; san_carlos_olivine_feed from acts_on to dissolves and replaced template node and edge descriptions with exact klug_2026 5% w/v San Carlos olivine leaching (~9565 ppm Mg with cells, ~7203 ppm cell-free) and secondary Mg-oxalate (glushinskite, 32% and 20% XRD) metrics. Updated causal_graphs[0] product node 'dissolved_mg_ni_and_oxalate' label from 'Dissolved Mg/Fe/Ni ions and secondary glushinskite/oxalate solids' to 'Dissolved Mg and Ni ions and secondary glushinskite/oxalate solids' to match its description (Fe was not measured in filtrate by Klug et al., 2026).
+
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
+
+provenance: supported. Targets: cmmmech:olivine-group.
+
+data/records/olivine-group.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/olivine-group/2026-10-30T171003Z-marcin-2737ff.yaml, history/records/olivine-group/2026-10-30T175759Z-marcin-69c5e7.yaml, latest SHA-256 8ebb00339e5b4a68b61eba20ad79a6740b71cad24783a866776580ebcc0a7157) and passing all LinkML and history validation gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/olivine-group.yaml; Working-tree record data/records/olivine-group.yaml (causal_graphs[0]: gluconobacter_olivine_bioleaching_graph) | supports | Synchronized causal_graphs[0] (gluconobacter_olivine_bioleaching_graph, mechanism_ref: san_carlos_olivine_bioleaching) in data/records/olivine-group.yaml with mechanisms[0] (Bioleaching of magnesium-rich San Carlos olivine with secondary oxalate formation) and primary source klug_2026 (DOI:10.1038/s41598-026-63817-0): edge gluconic_acid_biolixiviant -&gt; san_carlos_olivine_feed uses predicate 'dissolves' (supports: support) and edge san_carlos_olivine_feed -&gt; dissolved_mg_ni_and_oxalate uses predicate 'produces' (supports: support). Upgraded gluconic_acid_biolixiviant -&gt; san_carlos_olivine_feed from acts_on to dissolves and replaced template node and edge descriptions with exact klug_2026 5% w/v San Carlos olivine leaching (~9565 ppm Mg with cells, ~7203 ppm cell-free) and secondary Mg-oxalate (glushinskite, 32% and 20% XRD) metrics. Updated causal_graphs[0] product node 'dissolved_mg_ni_and_oxalate' label from 'Dissolved Mg/Fe/Ni ions and secondary glushinskite/oxalate solids' to 'Dissolved Mg and Ni ions and secondary glushinskite/oxalate solids' to match its description (Fe was not measured in filtrate by Klug et al., 2026). |
+| primary_source | DOI:10.1038/s41598-026-63817-0; klug_2026: Klug et al. (2026). Bioleaching of olivine and enstatite with formation of Mg-oxalate mediated by engineered Gluconobacter oxydans. Scientific Reports 16:25317. DOI 10.1038/s41598-026-63817-0; Methods, Figures 2-6 and Discussion. (https://doi.org/10.1038/s41598-026-63817-0) | supports | The authors' selected olivine-only powder released Mg and Ni in both cell-containing and cell-free Gluconobacter oxydans biolixiviant experiments. Direct cultures had higher final filtrate Mg than the cell-free arm. Residues contained author-assigned Mg-oxalate and amorphous silica; this is conditional transformation of the tested magnesium-rich olivine, not proof of a response shared by every group member. Substrate-edge evidence (klug_2026, supports: support): Klug et al. (2026) demonstrate dissolution of XRD-pure San Carlos olivine powder at 5% w/v over 15 days in both cell-containing and cell-free G. oxydans B58 delta-pstS, P112:mgdh biolixiviant arms. Product-edge evidence (klug_2026, supports: support): Klug et al. (2026) ICP-MS data row 6, XRD minerals rows 4/10/14, Figure S1 Raman, and Figure S3 XRD confirm high filtrate Mg/Ni release and secondary Mg-oxalate (glushinskite) formation. |
+| edit_history | history/records/olivine-group/2026-10-30T171003Z-marcin-2737ff.yaml; Canonical EDIT history sidecar history/records/olivine-group/2026-10-30T171003Z-marcin-2737ff.yaml | supports | Canonical EDIT history sidecar history/records/olivine-group/2026-10-30T171003Z-marcin-2737ff.yaml (SHA-256 7e0558890fe4a0ffbcd8e8651b1f21a7a58047d8c54c7fee2baf57779e6cdbe8): Upgrade olivine-group causal_graphs[0] lixiviant predicate to dissolves and replace template node/edge text with klug_2026 details — Upgraded gluconic_acid_biolixiviant -&gt; san_carlos_olivine_feed from acts_on to dissolves and replaced template node and edge descriptions with exact klug_2026 5% w/v San Carlos olivine leaching (~9565 ppm Mg with cells, ~7203 ppm cell-free) and secondary Mg-oxalate (glushinskite, 32% and 20% XRD) metrics. |
+| edit_history_2 | history/records/olivine-group/2026-10-30T175759Z-marcin-69c5e7.yaml; Canonical EDIT history sidecar history/records/olivine-group/2026-10-30T175759Z-marcin-69c5e7.yaml | supports | Canonical EDIT history sidecar history/records/olivine-group/2026-10-30T175759Z-marcin-69c5e7.yaml (SHA-256 8ebb00339e5b4a68b61eba20ad79a6740b71cad24783a866776580ebcc0a7157): Align olivine-group product node label with measured Mg and Ni filtrate ions in klug_2026 — Updated causal_graphs[0] product node 'dissolved_mg_ni_and_oxalate' label from 'Dissolved Mg/Fe/Ni ions and secondary glushinskite/oxalate solids' to 'Dissolved Mg and Ni ions and secondary glushinskite/oxalate solids' to match its description (Fe was not measured in filtrate by Klug et al., 2026). |
+| validation | data/records/olivine-group.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/olivine-group.yaml and history/records/olivine-group/2026-10-30T171003Z-marcin-2737ff.yaml, history/records/olivine-group/2026-10-30T175759Z-marcin-69c5e7.yaml pass strict LinkML schema and history validation with 0 errors. |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed during Cycle 5 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261030T171200Z-olivine-group-cycle5-stage2-causal-graphs-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 5 Stage 2 causal-graph review of Olivine group (cmmmech:olivine-group)
+started_at: '2026-10-30T17:10:00Z'
+finished_at: '2026-10-30T17:12:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle5-stage2-causal-graphs-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 5 Stage 2 causal_graphs[0] (gluconobacter_olivine_bioleaching_graph)
+    update in data/records/olivine-group.yaml (SHA-256 4f358cb0aa080647a7347325ebd770e0761c104a60467dbe25991263e0bb2141)
+    against mechanisms[0] (san_carlos_olivine_bioleaching) and its cited primary source
+    klug_2026 (DOI:10.1038/s41598-026-63817-0).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 2f2de84859ee4156bb09f2a0110d35edc48b8020
+  state: working_tree
+  inputs:
+  - path: data/records/olivine-group.yaml
+    sha256: 4f358cb0aa080647a7347325ebd770e0761c104a60467dbe25991263e0bb2141
+    role: target
+  - path: history/records/olivine-group/2026-10-30T171003Z-marcin-2737ff.yaml
+    sha256: 7e0558890fe4a0ffbcd8e8651b1f21a7a58047d8c54c7fee2baf57779e6cdbe8
+    role: context
+  - path: history/records/olivine-group/2026-10-30T175759Z-marcin-69c5e7.yaml
+    sha256: 8ebb00339e5b4a68b61eba20ad79a6740b71cad24783a866776580ebcc0a7157
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:olivine-group
+  path: data/records/olivine-group.yaml
+  label: Olivine group
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/olivine-group.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/olivine-group/2026-10-30T171003Z-marcin-2737ff.yaml
+    role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/olivine-group/2026-10-30T175759Z-marcin-69c5e7.yaml
+    role: canonical_history
+scope:
+  description: Cycle 5 Stage 2 causal-graph review of data/records/olivine-group.yaml
+    (SHA-256 4f358cb0aa080647a7347325ebd770e0761c104a60467dbe25991263e0bb2141) and
+    its canonical EDIT history sidecar(s) (history/records/olivine-group/2026-10-30T171003Z-marcin-2737ff.yaml,
+    history/records/olivine-group/2026-10-30T175759Z-marcin-69c5e7.yaml) verifying
+    full synchronization between causal_graphs[0] (gluconobacter_olivine_bioleaching_graph)
+    and mechanisms[0] (san_carlos_olivine_bioleaching).
+  selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:olivine-group
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:olivine-group
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/olivine-group.yaml
+  locator: 'Working-tree record data/records/olivine-group.yaml (causal_graphs[0]:
+    gluconobacter_olivine_bioleaching_graph)'
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: 'Synchronized causal_graphs[0] (gluconobacter_olivine_bioleaching_graph,
+    mechanism_ref: san_carlos_olivine_bioleaching) in data/records/olivine-group.yaml
+    with mechanisms[0] (Bioleaching of magnesium-rich San Carlos olivine with secondary
+    oxalate formation) and primary source klug_2026 (DOI:10.1038/s41598-026-63817-0):
+    edge gluconic_acid_biolixiviant -> san_carlos_olivine_feed uses predicate ''dissolves''
+    (supports: support) and edge san_carlos_olivine_feed -> dissolved_mg_ni_and_oxalate
+    uses predicate ''produces'' (supports: support). Upgraded gluconic_acid_biolixiviant
+    -> san_carlos_olivine_feed from acts_on to dissolves and replaced template node
+    and edge descriptions with exact klug_2026 5% w/v San Carlos olivine leaching
+    (~9565 ppm Mg with cells, ~7203 ppm cell-free) and secondary Mg-oxalate (glushinskite,
+    32% and 20% XRD) metrics. Updated causal_graphs[0] product node ''dissolved_mg_ni_and_oxalate''
+    label from ''Dissolved Mg/Fe/Ni ions and secondary glushinskite/oxalate solids''
+    to ''Dissolved Mg and Ni ions and secondary glushinskite/oxalate solids'' to match
+    its description (Fe was not measured in filtrate by Klug et al., 2026).'
+  snapshot_sha256: 4f358cb0aa080647a7347325ebd770e0761c104a60467dbe25991263e0bb2141
+- evidence_id: primary_source
+  kind: primary_source
+  reference: DOI:10.1038/s41598-026-63817-0
+  locator: 'klug_2026: Klug et al. (2026). Bioleaching of olivine and enstatite with
+    formation of Mg-oxalate mediated by engineered Gluconobacter oxydans. Scientific
+    Reports 16:25317. DOI 10.1038/s41598-026-63817-0; Methods, Figures 2-6 and Discussion.
+    (https://doi.org/10.1038/s41598-026-63817-0)'
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: 'The authors'' selected olivine-only powder released Mg and Ni in both
+    cell-containing and cell-free Gluconobacter oxydans biolixiviant experiments.
+    Direct cultures had higher final filtrate Mg than the cell-free arm. Residues
+    contained author-assigned Mg-oxalate and amorphous silica; this is conditional
+    transformation of the tested magnesium-rich olivine, not proof of a response shared
+    by every group member. Substrate-edge evidence (klug_2026, supports: support):
+    Klug et al. (2026) demonstrate dissolution of XRD-pure San Carlos olivine powder
+    at 5% w/v over 15 days in both cell-containing and cell-free G. oxydans B58 delta-pstS,
+    P112:mgdh biolixiviant arms. Product-edge evidence (klug_2026, supports: support):
+    Klug et al. (2026) ICP-MS data row 6, XRD minerals rows 4/10/14, Figure S1 Raman,
+    and Figure S3 XRD confirm high filtrate Mg/Ni release and secondary Mg-oxalate
+    (glushinskite) formation.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/olivine-group/2026-10-30T171003Z-marcin-2737ff.yaml
+  locator: Canonical EDIT history sidecar history/records/olivine-group/2026-10-30T171003Z-marcin-2737ff.yaml
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/olivine-group/2026-10-30T171003Z-marcin-2737ff.yaml
+    (SHA-256 7e0558890fe4a0ffbcd8e8651b1f21a7a58047d8c54c7fee2baf57779e6cdbe8): Upgrade
+    olivine-group causal_graphs[0] lixiviant predicate to dissolves and replace template
+    node/edge text with klug_2026 details — Upgraded gluconic_acid_biolixiviant ->
+    san_carlos_olivine_feed from acts_on to dissolves and replaced template node and
+    edge descriptions with exact klug_2026 5% w/v San Carlos olivine leaching (~9565
+    ppm Mg with cells, ~7203 ppm cell-free) and secondary Mg-oxalate (glushinskite,
+    32% and 20% XRD) metrics.'
+  snapshot_sha256: 7e0558890fe4a0ffbcd8e8651b1f21a7a58047d8c54c7fee2baf57779e6cdbe8
+- evidence_id: edit_history_2
+  kind: record_content
+  reference: history/records/olivine-group/2026-10-30T175759Z-marcin-69c5e7.yaml
+  locator: Canonical EDIT history sidecar history/records/olivine-group/2026-10-30T175759Z-marcin-69c5e7.yaml
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/olivine-group/2026-10-30T175759Z-marcin-69c5e7.yaml
+    (SHA-256 8ebb00339e5b4a68b61eba20ad79a6740b71cad24783a866776580ebcc0a7157): Align
+    olivine-group product node label with measured Mg and Ni filtrate ions in klug_2026
+    — Updated causal_graphs[0] product node ''dissolved_mg_ni_and_oxalate'' label
+    from ''Dissolved Mg/Fe/Ni ions and secondary glushinskite/oxalate solids'' to
+    ''Dissolved Mg and Ni ions and secondary glushinskite/oxalate solids'' to match
+    its description (Fe was not measured in filtrate by Klug et al., 2026).'
+  snapshot_sha256: 8ebb00339e5b4a68b61eba20ad79a6740b71cad24783a866776580ebcc0a7157
+- evidence_id: validation
+  kind: validation
+  reference: data/records/olivine-group.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: data/records/olivine-group.yaml and history/records/olivine-group/2026-10-30T171003Z-marcin-2737ff.yaml,
+    history/records/olivine-group/2026-10-30T175759Z-marcin-69c5e7.yaml pass strict
+    LinkML schema and history validation with 0 errors.
+  snapshot_sha256: 4f358cb0aa080647a7347325ebd770e0761c104a60467dbe25991263e0bb2141
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 668 record(s); 0 failed.
+  target_ids:
+  - cmmmech:olivine-group
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:olivine-group
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_mechanism_synchronization
+  area: graph
+  topic: Synchronization of causal_graphs[0] (gluconobacter_olivine_bioleaching_graph)
+    with mechanisms[0] (san_carlos_olivine_bioleaching) and primary source klug_2026
+    (DOI:10.1038/s41598-026-63817-0)
+  outcome: supported
+  summary: 'Synchronized causal_graphs[0] (gluconobacter_olivine_bioleaching_graph,
+    mechanism_ref: san_carlos_olivine_bioleaching) in data/records/olivine-group.yaml
+    with mechanisms[0] (Bioleaching of magnesium-rich San Carlos olivine with secondary
+    oxalate formation) and primary source klug_2026 (DOI:10.1038/s41598-026-63817-0):
+    edge gluconic_acid_biolixiviant -> san_carlos_olivine_feed uses predicate ''dissolves''
+    (supports: support) and edge san_carlos_olivine_feed -> dissolved_mg_ni_and_oxalate
+    uses predicate ''produces'' (supports: support). Upgraded gluconic_acid_biolixiviant
+    -> san_carlos_olivine_feed from acts_on to dissolves and replaced template node
+    and edge descriptions with exact klug_2026 5% w/v San Carlos olivine leaching
+    (~9565 ppm Mg with cells, ~7203 ppm cell-free) and secondary Mg-oxalate (glushinskite,
+    32% and 20% XRD) metrics. Updated causal_graphs[0] product node ''dissolved_mg_ni_and_oxalate''
+    label from ''Dissolved Mg/Fe/Ni ions and secondary glushinskite/oxalate solids''
+    to ''Dissolved Mg and Ni ions and secondary glushinskite/oxalate solids'' to match
+    its description (Fe was not measured in filtrate by Klug et al., 2026).'
+  target_ids:
+  - cmmmech:olivine-group
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
+  outcome: supported
+  summary: data/records/olivine-group.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar(s) (history/records/olivine-group/2026-10-30T171003Z-marcin-2737ff.yaml,
+    history/records/olivine-group/2026-10-30T175759Z-marcin-69c5e7.yaml, latest SHA-256
+    8ebb00339e5b4a68b61eba20ad79a6740b71cad24783a866776580ebcc0a7157) and passing
+    all LinkML and history validation gates.
+  target_ids:
+  - cmmmech:olivine-group
+  evidence_ids:
+  - owner
+  - edit_history
+  - edit_history_2
+  - validation
+findings: []
+actions: []
+summary: 'Olivine group (cmmmech:olivine-group) passes Cycle 5 Stage 2 causal-graph
+  review (scientific_review: true) at SHA-256 4f358cb0aa080647a7347325ebd770e0761c104a60467dbe25991263e0bb2141:
+  Synchronized causal_graphs[0] (gluconobacter_olivine_bioleaching_graph, mechanism_ref:
+  san_carlos_olivine_bioleaching) in data/records/olivine-group.yaml with mechanisms[0]
+  (Bioleaching of magnesium-rich San Carlos olivine with secondary oxalate formation)
+  and primary source klug_2026 (DOI:10.1038/s41598-026-63817-0): edge gluconic_acid_biolixiviant
+  -> san_carlos_olivine_feed uses predicate ''dissolves'' (supports: support) and
+  edge san_carlos_olivine_feed -> dissolved_mg_ni_and_oxalate uses predicate ''produces''
+  (supports: support). Upgraded gluconic_acid_biolixiviant -> san_carlos_olivine_feed
+  from acts_on to dissolves and replaced template node and edge descriptions with
+  exact klug_2026 5% w/v San Carlos olivine leaching (~9565 ppm Mg with cells, ~7203
+  ppm cell-free) and secondary Mg-oxalate (glushinskite, 32% and 20% XRD) metrics.
+  Updated causal_graphs[0] product node ''dissolved_mg_ni_and_oxalate'' label from
+  ''Dissolved Mg/Fe/Ni ions and secondary glushinskite/oxalate solids'' to ''Dissolved
+  Mg and Ni ions and secondary glushinskite/oxalate solids'' to match its description
+  (Fe was not measured in filtrate by Klug et al., 2026).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 5 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py.
+related_reviews: []
+```

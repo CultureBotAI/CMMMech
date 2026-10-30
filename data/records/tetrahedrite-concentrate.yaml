@@ -159,7 +159,7 @@ mechanisms:
 causal_graphs:
 - id: ferrooxidans_tetrahedrite_bioleaching_graph
   name: Acidithiobacillus ferrooxidans and Acidithiobacillus ferrivorans oxidative bioleaching of tetrahedrite concentrate
-  description: Causal pathway linking Acidithiobacillus ferrooxidans and Acidithiobacillus ferrivorans sulfur/iron oxidation pathways (Sqr, Tth/TetH) to Cu, Sb, Zn, and Fe mobilization from mixed tetrahedrite concentrate.
+  description: Causal pathway linking Acidithiobacillus ferrooxidans and Acidithiobacillus ferrivorans sulfur/iron oxidation pathways (Sqr, Tth/TetH) to Cu, Zn, Ag, and sulfate mobilization (with transient Sb release) from mixed tetrahedrite concentrate.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: acidophile_associated_metal_mobilization
   nodes:
@@ -277,12 +277,12 @@ causal_graphs:
   - id: solid_feed_substrate
     label: Ground natural tetrahedrite concentrate
     node_type: MATERIAL_OR_PHASE
-    description: Starting mineral or secondary-resource feed (Mixed tetrahedrite-bearing sulfide concentrate).
+    description: Milled (<100 um) Strieborna vein flotation concentrate from the Maria Mine (bulk 25.59 wt% Cu, 19.68 wt% Sb, 0.57 wt% Ag; tetrahedrite accompanied by siderite, quartz, and minor pyrite, arsenopyrite, and chalcopyrite) at 2% pulp density.
     protein_grounding_status: NOT_APPLICABLE
   - id: solubilized_metal_species
     label: Dissolved Cu, Zn, Ag, and sulfate in acidic leach liquor (with transient Sb release)
     node_type: CHEMICAL_ENTITY
-    description: Leached product state (Dissolved Cu, Zn, Ag, and sulfate in acidic leach liquor (with transient Sb release)) in kupka_2025.
+    description: 0.2-um-filtered acidic leachate containing dissolved Cu, Zn, Ag, and sulfate (with transient early Sb release that subsequently declined) alongside Cu/S-depleted, Sb/Fe-enriched grain alteration rims after 120-day bioleaching.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: sqr_reductase
@@ -293,7 +293,7 @@ causal_graphs:
     evidence:
     - source_ref: kupka_2025
       supports: partial
-      explanation: Reduced sulfur oxidation in A. ferrooxidans couples Sqr and polythionate hydrolysis to proton generation.
+      explanation: Reduced-sulfur oxidation in separate Acidithiobacillus ferrooxidans DSM 14882 and Acidithiobacillus ferrivorans SS3 (DSM 17398) culture arms couples Sqr and tetrathionate hydrolysis (Tth/TetH) to sulfate and proton generation; individual sqr/tth/tetH genes were not mutated in Kupka et al. (2025).
   - source: tth_hydrolase
     target: acidic_ferric_sulfate_lixiviant
     predicate: produces
@@ -305,22 +305,22 @@ causal_graphs:
       explanation: Sulfur-compound oxidation maintains the acidic lixiviant required for metal solubilization.
   - source: acidic_ferric_sulfate_lixiviant
     target: solid_feed_substrate
-    predicate: acts_on
-    relationship: acidic and oxidative mineral/feed attack
-    description: Biogenic acid and ferric ions attack Mixed tetrahedrite-bearing sulfide concentrate.
+    predicate: solubilizes
+    relationship: Culture-generated acidic ferric-sulfate medium oxidatively leaches Strieborna tetrahedrite concentrate
+    description: Separate A. ferrooxidans DSM 14882 and A. ferrivorans SS3 (DSM 17398) cultures in iron-free basal medium (initial pH 1.5, relying on concentrate-derived iron) oxidatively leach 2% pulp density tetrahedrite concentrate at 25 degrees C and 150 rpm over 120 days.
     evidence:
     - source_ref: kupka_2025
       supports: partial
-      explanation: Culture-generated acidic ferric/sulfate medium attacks Mixed tetrahedrite-bearing sulfide concentrate.
+      explanation: Kupka et al. (2025) demonstrate higher Cu mobilization, sulfate accumulation, and O2 consumption in inoculated flasks than in the autoclaved control over 120 days, though unbuffered pH and ferric-iron trajectories were not matched independently of living cells.
   - source: solid_feed_substrate
     target: solubilized_metal_species
     predicate: produces
-    relationship: oxidative/acidic dissolution
-    description: Acidic ferric-sulfate and bacterial sulfur/iron oxidation leach Cu, Zn, and Ag (with transient low Sb) from tetrahedrite concentrate.
+    relationship: 120-day oxidative bioleaching of tetrahedrite concentrate mobilizes Cu, Zn, Ag, and sulfate
+    description: 120-day bioleaching of 2% pulp density Strieborna tetrahedrite concentrate increases dissolved Cu, Zn, Ag, and sulfate in 0.2-um-filtered leachate relative to uninoculated controls, while dissolved Sb rises early and subsequently declines alongside Sb/Fe-enriched alteration rims.
     evidence:
     - source_ref: kupka_2025
       supports: support
-      explanation: Acidic ferric-sulfate and bacterial sulfur/iron oxidation leach Cu, Zn, and Ag (with transient low Sb) from tetrahedrite concentrate.
+      explanation: Kupka et al. (2025) Figures 2–5 and S12 document increased dissolved Cu, sulfate, Zn, and Ag trajectories and transient Sb release in 0.2-um-filtered leachates relative to abiotic controls.
 curation_history:
 - timestamp: '2026-10-12T11:17:04.769972Z'
   curator: Codex (GPT-6)
@@ -338,8 +338,18 @@ curation_history:
   curator: marcin
   action: edit
   summary: Added Acidithiobacillus ferrivorans Sqr (UniProtKB:A0A060UVE9) and TetH (UniProtKB:A0A060URH6) protein examples to tetrahedrite-concentrate.yaml.
+- timestamp: '2026-10-30T17:10:04Z'
+  curator: marcin
+  action: edit
+  summary: Upgrade tetrahedrite-concentrate causal_graphs[0] lixiviant predicate to solubilizes and ground node/edge text in kupka_2025
+- timestamp: '2026-10-30T17:57:59Z'
+  curator: marcin
+  action: edit
+  summary: Align tetrahedrite-concentrate causal_graphs[0].description with measured Cu, Zn, Ag, and sulfate mobilization in kupka_2025
 history_refs:
 - history/records/tetrahedrite-concentrate/2026-10-12T111707Z-codex-f553c9.yaml
 - history/records/tetrahedrite-concentrate/2026-10-18T042750Z-antigravity-7c96ea.yaml
 - history/records/tetrahedrite-concentrate/2026-10-21T184653Z-claude-ba9118.yaml
 - history/records/tetrahedrite-concentrate/2026-10-24T015709Z-marcin-f8beb6.yaml
+- history/records/tetrahedrite-concentrate/2026-10-30T171004Z-marcin-f2dc1e.yaml
+- history/records/tetrahedrite-concentrate/2026-10-30T175759Z-marcin-428fe7.yaml

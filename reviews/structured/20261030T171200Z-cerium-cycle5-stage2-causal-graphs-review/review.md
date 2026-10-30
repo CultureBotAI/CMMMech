@@ -1,0 +1,285 @@
+# Cycle 5 Stage 2 causal-graph review of Cerium (cmmmech:cerium)
+
+- Review: 20261030T171200Z-cerium-cycle5-stage2-causal-graphs-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-30T17:10:00Z
+- Finished UTC: 2026-10-30T17:12:00Z
+- Reviewer: antigravity / cmmmech-cycle5-stage2-causal-graphs-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Cerium (cmmmech:cerium) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256 7837cfe3c8dd804673181a9472a069e90cbcb9cba4503c4ce8e485235da5f618: Synchronized causal_graphs[0] (aspergillus_cexa_cerium_precipitation_graph, mechanism_ref: fungal_leachate_cerium_precipitation) in data/records/cerium.yaml with mechanisms[0] (Cerium precipitation using pretreated biomass-free fungal struvite leachate) and primary source kang_2022 (DOI:10.1007/s00253-021-11721-0): edge secreted_organic_acids -&gt; starting_substrate uses predicate 'chelates' (supports: partial) and edge starting_substrate -&gt; transformed_product uses predicate 'transforms_into' (supports: support). Upgraded secreted_organic_acids -&gt; starting_substrate from acts_on (support) to chelates (partial) to match mechanisms[0].evidence[2] (background 1 g/L Na2HPO4 in Modified Czapek-Dox medium and absence of matched synthetic phosphate/oxalate control), and replaced generic starting_substrate node and edge descriptions with exact kang_2022 14-day struvite leachate CeCl3 precipitation parameters.
+
+## Scope And Provenance
+
+Cycle 5 Stage 2 causal-graph review of data/records/cerium.yaml (SHA-256 7837cfe3c8dd804673181a9472a069e90cbcb9cba4503c4ce8e485235da5f618) and its canonical EDIT history sidecar(s) (history/records/cerium/2026-10-30T171003Z-marcin-ee8e02.yaml) verifying full synchronization between causal_graphs[0] (aspergillus_cexa_cerium_precipitation_graph) and mechanisms[0] (fungal_leachate_cerium_precipitation).
+
+Selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:cerium
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 2f2de84859ee4156bb09f2a0110d35edc48b8020.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:cerium | data/records/cerium.yaml | maintained | Cerium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:cerium | Checked 668 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:cerium | All history sidecars pass validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Synchronization of causal_graphs[0] (aspergillus_cexa_cerium_precipitation_graph) with mechanisms[0] (fungal_leachate_cerium_precipitation) and primary source kang_2022 (DOI:10.1007/s00253-021-11721-0)
+
+graph: supported. Targets: cmmmech:cerium.
+
+Synchronized causal_graphs[0] (aspergillus_cexa_cerium_precipitation_graph, mechanism_ref: fungal_leachate_cerium_precipitation) in data/records/cerium.yaml with mechanisms[0] (Cerium precipitation using pretreated biomass-free fungal struvite leachate) and primary source kang_2022 (DOI:10.1007/s00253-021-11721-0): edge secreted_organic_acids -&gt; starting_substrate uses predicate 'chelates' (supports: partial) and edge starting_substrate -&gt; transformed_product uses predicate 'transforms_into' (supports: support). Upgraded secreted_organic_acids -&gt; starting_substrate from acts_on (support) to chelates (partial) to match mechanisms[0].evidence[2] (background 1 g/L Na2HPO4 in Modified Czapek-Dox medium and absence of matched synthetic phosphate/oxalate control), and replaced generic starting_substrate node and edge descriptions with exact kang_2022 14-day struvite leachate CeCl3 precipitation parameters.
+
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
+
+provenance: supported. Targets: cmmmech:cerium.
+
+data/records/cerium.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/cerium/2026-10-30T171003Z-marcin-ee8e02.yaml, latest SHA-256 f0204ea51fb097c8d3fc99edb6b8ddb0476fe4095830fa442782f3fcf4908ac9) and passing all LinkML and history validation gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/cerium.yaml; Working-tree record data/records/cerium.yaml (causal_graphs[0]: aspergillus_cexa_cerium_precipitation_graph) | supports | Synchronized causal_graphs[0] (aspergillus_cexa_cerium_precipitation_graph, mechanism_ref: fungal_leachate_cerium_precipitation) in data/records/cerium.yaml with mechanisms[0] (Cerium precipitation using pretreated biomass-free fungal struvite leachate) and primary source kang_2022 (DOI:10.1007/s00253-021-11721-0): edge secreted_organic_acids -&gt; starting_substrate uses predicate 'chelates' (supports: partial) and edge starting_substrate -&gt; transformed_product uses predicate 'transforms_into' (supports: support). Upgraded secreted_organic_acids -&gt; starting_substrate from acts_on (support) to chelates (partial) to match mechanisms[0].evidence[2] (background 1 g/L Na2HPO4 in Modified Czapek-Dox medium and absence of matched synthetic phosphate/oxalate control), and replaced generic starting_substrate node and edge descriptions with exact kang_2022 14-day struvite leachate CeCl3 precipitation parameters. |
+| primary_source | DOI:10.1007/s00253-021-11721-0; kang_2022: Kang, Csetenyi, Gao and Gadd (2022). Solubilization of struvite and biorecovery of cerium by Aspergillus niger. Applied Microbiology and Biotechnology 106:821-833. DOI 10.1007/s00253-021-11721-0; PMC8763747; Methods, Figures 3, 6 and 9, Table 2 and Discussion. (https://doi.org/10.1007/s00253-021-11721-0) | supports | Pretreated culture filtrate from Aspergillus niger ATCC 1015 growth on struvite-bearing material precipitated cerium-bearing phosphate and, at higher Ce loading, oxalate phases. Microbial involvement denotes upstream leachate production; the cerium reaction itself was cell-free. Substrate-edge evidence (kang_2022, supports: partial): Kang et al. (2022) identify CePO4·H2O at 20 mM CeCl3 and phosphate plus Ce2(C2O4)3·10H2O at 50 mM CeCl3 by XRD/Rietveld and FTIR, but Modified Czapek-Dox medium contained 1 g/L Na2HPO4 and a matched synthetic phosphate/oxalate or untreated-filtrate control was not reported. Product-edge evidence (kang_2022, supports: support): Arsenazo III colorimetry (Figure 3), powder XRD with Rietveld refinement (Figure 6, Table 2), and FTIR (Figure 9) confirm &gt;99% aqueous Ce removal and precipitation of CePO4·H2O and Ce2(C2O4)3·10H2O. |
+| edit_history | history/records/cerium/2026-10-30T171003Z-marcin-ee8e02.yaml; Canonical EDIT history sidecar history/records/cerium/2026-10-30T171003Z-marcin-ee8e02.yaml | supports | Canonical EDIT history sidecar history/records/cerium/2026-10-30T171003Z-marcin-ee8e02.yaml (SHA-256 f0204ea51fb097c8d3fc99edb6b8ddb0476fe4095830fa442782f3fcf4908ac9): Align cerium causal_graphs[0] substrate/edge descriptions, chelates predicate, and partial organic-acid support with kang_2022 — Upgraded secreted_organic_acids -&gt; starting_substrate from acts_on (support) to chelates (partial) to match mechanisms[0].evidence[2] (background 1 g/L Na2HPO4 in Modified Czapek-Dox medium and absence of matched synthetic phosphate/oxalate control), and replaced generic starting_substrate node and edge descriptions with exact kang_2022 14-day struvite leachate CeCl3 precipitation parameters. |
+| validation | data/records/cerium.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/cerium.yaml and history/records/cerium/2026-10-30T171003Z-marcin-ee8e02.yaml pass strict LinkML schema and history validation with 0 errors. |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed during Cycle 5 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261030T171200Z-cerium-cycle5-stage2-causal-graphs-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 5 Stage 2 causal-graph review of Cerium (cmmmech:cerium)
+started_at: '2026-10-30T17:10:00Z'
+finished_at: '2026-10-30T17:12:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle5-stage2-causal-graphs-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 5 Stage 2 causal_graphs[0] (aspergillus_cexa_cerium_precipitation_graph)
+    update in data/records/cerium.yaml (SHA-256 7837cfe3c8dd804673181a9472a069e90cbcb9cba4503c4ce8e485235da5f618)
+    against mechanisms[0] (fungal_leachate_cerium_precipitation) and its cited primary
+    source kang_2022 (DOI:10.1007/s00253-021-11721-0).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 2f2de84859ee4156bb09f2a0110d35edc48b8020
+  state: working_tree
+  inputs:
+  - path: data/records/cerium.yaml
+    sha256: 7837cfe3c8dd804673181a9472a069e90cbcb9cba4503c4ce8e485235da5f618
+    role: target
+  - path: history/records/cerium/2026-10-30T171003Z-marcin-ee8e02.yaml
+    sha256: f0204ea51fb097c8d3fc99edb6b8ddb0476fe4095830fa442782f3fcf4908ac9
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:cerium
+  path: data/records/cerium.yaml
+  label: Cerium
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cerium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/cerium/2026-10-30T171003Z-marcin-ee8e02.yaml
+    role: canonical_history
+scope:
+  description: Cycle 5 Stage 2 causal-graph review of data/records/cerium.yaml (SHA-256
+    7837cfe3c8dd804673181a9472a069e90cbcb9cba4503c4ce8e485235da5f618) and its canonical
+    EDIT history sidecar(s) (history/records/cerium/2026-10-30T171003Z-marcin-ee8e02.yaml)
+    verifying full synchronization between causal_graphs[0] (aspergillus_cexa_cerium_precipitation_graph)
+    and mechanisms[0] (fungal_leachate_cerium_precipitation).
+  selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:cerium
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:cerium
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/cerium.yaml
+  locator: 'Working-tree record data/records/cerium.yaml (causal_graphs[0]: aspergillus_cexa_cerium_precipitation_graph)'
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: 'Synchronized causal_graphs[0] (aspergillus_cexa_cerium_precipitation_graph,
+    mechanism_ref: fungal_leachate_cerium_precipitation) in data/records/cerium.yaml
+    with mechanisms[0] (Cerium precipitation using pretreated biomass-free fungal
+    struvite leachate) and primary source kang_2022 (DOI:10.1007/s00253-021-11721-0):
+    edge secreted_organic_acids -> starting_substrate uses predicate ''chelates''
+    (supports: partial) and edge starting_substrate -> transformed_product uses predicate
+    ''transforms_into'' (supports: support). Upgraded secreted_organic_acids -> starting_substrate
+    from acts_on (support) to chelates (partial) to match mechanisms[0].evidence[2]
+    (background 1 g/L Na2HPO4 in Modified Czapek-Dox medium and absence of matched
+    synthetic phosphate/oxalate control), and replaced generic starting_substrate
+    node and edge descriptions with exact kang_2022 14-day struvite leachate CeCl3
+    precipitation parameters.'
+  snapshot_sha256: 7837cfe3c8dd804673181a9472a069e90cbcb9cba4503c4ce8e485235da5f618
+- evidence_id: primary_source
+  kind: primary_source
+  reference: DOI:10.1007/s00253-021-11721-0
+  locator: 'kang_2022: Kang, Csetenyi, Gao and Gadd (2022). Solubilization of struvite
+    and biorecovery of cerium by Aspergillus niger. Applied Microbiology and Biotechnology
+    106:821-833. DOI 10.1007/s00253-021-11721-0; PMC8763747; Methods, Figures 3, 6
+    and 9, Table 2 and Discussion. (https://doi.org/10.1007/s00253-021-11721-0)'
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: 'Pretreated culture filtrate from Aspergillus niger ATCC 1015 growth on
+    struvite-bearing material precipitated cerium-bearing phosphate and, at higher
+    Ce loading, oxalate phases. Microbial involvement denotes upstream leachate production;
+    the cerium reaction itself was cell-free. Substrate-edge evidence (kang_2022,
+    supports: partial): Kang et al. (2022) identify CePO4·H2O at 20 mM CeCl3 and phosphate
+    plus Ce2(C2O4)3·10H2O at 50 mM CeCl3 by XRD/Rietveld and FTIR, but Modified Czapek-Dox
+    medium contained 1 g/L Na2HPO4 and a matched synthetic phosphate/oxalate or untreated-filtrate
+    control was not reported. Product-edge evidence (kang_2022, supports: support):
+    Arsenazo III colorimetry (Figure 3), powder XRD with Rietveld refinement (Figure
+    6, Table 2), and FTIR (Figure 9) confirm >99% aqueous Ce removal and precipitation
+    of CePO4·H2O and Ce2(C2O4)3·10H2O.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/cerium/2026-10-30T171003Z-marcin-ee8e02.yaml
+  locator: Canonical EDIT history sidecar history/records/cerium/2026-10-30T171003Z-marcin-ee8e02.yaml
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/cerium/2026-10-30T171003Z-marcin-ee8e02.yaml
+    (SHA-256 f0204ea51fb097c8d3fc99edb6b8ddb0476fe4095830fa442782f3fcf4908ac9): Align
+    cerium causal_graphs[0] substrate/edge descriptions, chelates predicate, and partial
+    organic-acid support with kang_2022 — Upgraded secreted_organic_acids -> starting_substrate
+    from acts_on (support) to chelates (partial) to match mechanisms[0].evidence[2]
+    (background 1 g/L Na2HPO4 in Modified Czapek-Dox medium and absence of matched
+    synthetic phosphate/oxalate control), and replaced generic starting_substrate
+    node and edge descriptions with exact kang_2022 14-day struvite leachate CeCl3
+    precipitation parameters.'
+  snapshot_sha256: f0204ea51fb097c8d3fc99edb6b8ddb0476fe4095830fa442782f3fcf4908ac9
+- evidence_id: validation
+  kind: validation
+  reference: data/records/cerium.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: data/records/cerium.yaml and history/records/cerium/2026-10-30T171003Z-marcin-ee8e02.yaml
+    pass strict LinkML schema and history validation with 0 errors.
+  snapshot_sha256: 7837cfe3c8dd804673181a9472a069e90cbcb9cba4503c4ce8e485235da5f618
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 668 record(s); 0 failed.
+  target_ids:
+  - cmmmech:cerium
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:cerium
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_mechanism_synchronization
+  area: graph
+  topic: Synchronization of causal_graphs[0] (aspergillus_cexa_cerium_precipitation_graph)
+    with mechanisms[0] (fungal_leachate_cerium_precipitation) and primary source kang_2022
+    (DOI:10.1007/s00253-021-11721-0)
+  outcome: supported
+  summary: 'Synchronized causal_graphs[0] (aspergillus_cexa_cerium_precipitation_graph,
+    mechanism_ref: fungal_leachate_cerium_precipitation) in data/records/cerium.yaml
+    with mechanisms[0] (Cerium precipitation using pretreated biomass-free fungal
+    struvite leachate) and primary source kang_2022 (DOI:10.1007/s00253-021-11721-0):
+    edge secreted_organic_acids -> starting_substrate uses predicate ''chelates''
+    (supports: partial) and edge starting_substrate -> transformed_product uses predicate
+    ''transforms_into'' (supports: support). Upgraded secreted_organic_acids -> starting_substrate
+    from acts_on (support) to chelates (partial) to match mechanisms[0].evidence[2]
+    (background 1 g/L Na2HPO4 in Modified Czapek-Dox medium and absence of matched
+    synthetic phosphate/oxalate control), and replaced generic starting_substrate
+    node and edge descriptions with exact kang_2022 14-day struvite leachate CeCl3
+    precipitation parameters.'
+  target_ids:
+  - cmmmech:cerium
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
+  outcome: supported
+  summary: data/records/cerium.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar(s) (history/records/cerium/2026-10-30T171003Z-marcin-ee8e02.yaml,
+    latest SHA-256 f0204ea51fb097c8d3fc99edb6b8ddb0476fe4095830fa442782f3fcf4908ac9)
+    and passing all LinkML and history validation gates.
+  target_ids:
+  - cmmmech:cerium
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Cerium (cmmmech:cerium) passes Cycle 5 Stage 2 causal-graph review (scientific_review:
+  true) at SHA-256 7837cfe3c8dd804673181a9472a069e90cbcb9cba4503c4ce8e485235da5f618:
+  Synchronized causal_graphs[0] (aspergillus_cexa_cerium_precipitation_graph, mechanism_ref:
+  fungal_leachate_cerium_precipitation) in data/records/cerium.yaml with mechanisms[0]
+  (Cerium precipitation using pretreated biomass-free fungal struvite leachate) and
+  primary source kang_2022 (DOI:10.1007/s00253-021-11721-0): edge secreted_organic_acids
+  -> starting_substrate uses predicate ''chelates'' (supports: partial) and edge starting_substrate
+  -> transformed_product uses predicate ''transforms_into'' (supports: support). Upgraded
+  secreted_organic_acids -> starting_substrate from acts_on (support) to chelates
+  (partial) to match mechanisms[0].evidence[2] (background 1 g/L Na2HPO4 in Modified
+  Czapek-Dox medium and absence of matched synthetic phosphate/oxalate control), and
+  replaced generic starting_substrate node and edge descriptions with exact kang_2022
+  14-day struvite leachate CeCl3 precipitation parameters.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 5 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py.
+related_reviews: []
+```
