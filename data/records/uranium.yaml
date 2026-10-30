@@ -1,29 +1,17 @@
 id: cmmmech:uranium
 name: Uranium
 material_kind: element
-description: Uranium (U), represented here as an element distinct from the dissolved U(VI) feed and electrode-associated
-  material in a laboratory bioelectrochemical separation study. The United States 2025 designation applies
-  to the named uranium commodity; it does not identify a uranium mineral species or establish the criticality
-  of every uranium compound.
+description: Uranium (U), represented here as an element distinct from the dissolved U(VI) feed and electrode-associated material in a laboratory bioelectrochemical separation study. The United States 2025 designation applies to the named uranium commodity; it does not identify a uranium mineral species or establish the criticality of every uranium compound.
 identifiers:
 - id: CHEBI:27214
   label: uranium atom
-criticality:
-- jurisdiction: United States of America
-  list_name: U.S. Department of the Interior Final List of Critical Minerals
-  edition: 2025 (published November 7, 2025; 90 FR 50494-50497)
-  classification: critical
-  source_ref: usgs_2025
 sources:
 - id: kane_2026_bes
-  title: Kane, Selvage, Ciechanowicz and Campbell (2026). Data acquired in experiments on bioelectrochemical
-    systems for critical mineral recovery. U.S. Geological Survey data release, published September 15,
-    2026. DOI 10.5066/P9ERLSM6.
+  title: Kane, Selvage, Ciechanowicz and Campbell (2026). Data acquired in experiments on bioelectrochemical systems for critical mineral recovery. U.S. Geological Survey data release, published September 15, 2026. DOI 10.5066/P9ERLSM6.
   url: https://doi.org/10.5066/P9ERLSM6
   accessed_on: '2026-10-09'
 - id: usgs_2025
-  title: U.S. Geological Survey (2025). Final 2025 List of Critical Minerals. Federal Register 90 FR 50494-50497,
-    November 7, 2025.
+  title: U.S. Geological Survey (2025). Final 2025 List of Critical Minerals. Federal Register 90 FR 50494-50497, November 7, 2025.
   url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
   accessed_on: '2026-10-09'
 - id: chebi_uranium
@@ -34,149 +22,27 @@ sources:
   title: 'NCBI Taxonomy: Shewanella oneidensis MR-1 (Taxonomy ID 211586)'
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=211586
   accessed_on: '2026-10-09'
+criticality:
+- jurisdiction: United States of America
+  list_name: U.S. Department of the Interior Final List of Critical Minerals
+  edition: 2025 (published November 7, 2025; 90 FR 50494-50497)
+  classification: critical
+  source_ref: usgs_2025
 mechanisms:
 - id: oneidensis_bes_uranium_separation
   name: Uranium separation in an MR-1-inoculated electrochemical system
   process: separation
-  description: A laboratory electrochemical system inoculated with Shewanella oneidensis MR-1 showed aqueous
-    uranium depletion and uranium associated with the carbon-felt working electrode. Abiotic systems also
-    removed uranium. This supports separation in the combined biological and electrical system, with partial
-    evidence for a microbial mechanism; microbial necessity, a specific electron-transfer pathway and
-    a purified uranium product are not established by this record.
-  context: 'Defined electrolyte, not ore or industrial waste: 100 mL working and counter chambers separated
-    by Nafion 117, with carbon-felt electrodes. The working solution contained 30 mM bicarbonate, 10 mM
-    PIPES, 30 mM ammonium acetate, 40 mM NaCl, and Wolfe''s vitamins and trace metals. Dissolved U(VI)
-    was prepared from U metal in HCl and hydrogen peroxide. Chambers were purged with nitrogen containing
-    400 ppm CO2. After equilibration and the second solution sample, the biotic system was inoculated
-    and the working electrode poised at -800 mV versus saturated Ag/AgCl. The metadata specifies ambient-temperature
-    equilibration and experiments lasting 72-574 h, with a shorter abiotic U repeat; it does not provide
-    an exact controlled assay temperature or inoculum density/preparation. The original biotic U series
-    has recorded pH values of 7.01-8.21 after inoculation, so this was not a constant-pH assay. Filtered
-    samples were measured by ICP-OES. Electrode material underwent carbonate extraction followed by concentrated
-    acid extraction. Independent replicate counts and a statistical microbial-effect estimate are not
-    assigned here. Neither stable mineral identity nor industrial deployment is claimed.'
+  description: A laboratory electrochemical system inoculated with Shewanella oneidensis MR-1 showed aqueous uranium depletion and uranium associated with the carbon-felt working electrode. Abiotic systems also removed uranium. This supports separation in the combined biological and electrical system, with partial evidence for a microbial mechanism; microbial necessity, a specific electron-transfer pathway and a purified uranium product are not established by this record.
+  context: 'Defined electrolyte, not ore or industrial waste: 100 mL working and counter chambers separated by Nafion 117, with carbon-felt electrodes. The working solution contained 30 mM bicarbonate, 10 mM PIPES, 30 mM ammonium acetate, 40 mM NaCl, and Wolfe''s vitamins and trace metals. Dissolved U(VI) was prepared from U metal in HCl and hydrogen peroxide. Chambers were purged with nitrogen containing 400 ppm CO2. After equilibration and the second solution sample, the biotic system was inoculated and the working electrode poised at -800 mV versus saturated Ag/AgCl. The metadata specifies ambient-temperature equilibration and experiments lasting 72-574 h, with a shorter abiotic U repeat; it does not provide an exact controlled assay temperature or inoculum density/preparation. The original biotic U series has recorded pH values of 7.01-8.21 after inoculation, so this was not a constant-pH assay. Filtered samples were measured by ICP-OES. Electrode material underwent carbonate extraction
+    followed by concentrated acid extraction. Independent replicate counts and a statistical microbial-effect estimate are not assigned here. Neither stable mineral identity nor industrial deployment is claimed.'
   microbial: true
   organisms:
   - id: NCBITaxon:211586
     label: Shewanella oneidensis MR-1
-  evidence:
-  - source_ref: kane_2026_bes
-    supports: support
-    explanation: FGDC process steps 1-4 and tables T1-T3 and T6 support the laboratory separation observation.
-      In T3, the original biotic series has 975 mg/kg U at BESU.8Vb_W.EQ and less than 0.1 mg/kg at BESU.8Vb_W.END;
-      the latter is encoded as -0.1, a detection limit, not zero or a negative concentration. T6 reports
-      uranium in the subsequent electrode acid extract. These observations are not a mass-balanced recovery
-      percentage or product purity measurement.
-  - source_ref: kane_2026_bes
-    supports: partial
-    explanation: Abiotic T3 samples also decrease, from 914 mg/kg at BESU.8Va_W.t0 to 0.819 mg/kg at BESU.8Va_W.END.
-      T2 shows different pH histories, and the source reports pre-electrolysis sorption. T6 original biotic
-      and abiotic acid extracts use concentrated HCl and HNO3 respectively, so their amounts are not a
-      matched assay of microbial enhancement. These controls limit attribution of the observed separation
-      specifically to MR-1 metabolism.
-  - source_ref: kane_2026_bes
-    supports: support
-    explanation: T9_SEM.pdf pages 2-6 show deposits and U-labelled EDS signals on both abiotic and biotic
-      U electrodes, supporting electrode association. T8_XRD.csv supplies diffraction counts for these
-      conditions and a carbon-felt blank, but this curation does not assign a crystalline phase or oxidation
-      state from those data.
-  observations:
-  - id: u_biotic_equilibrated
-    source_ref: kane_2026_bes
-    source_table: T3_AqueousICPOES.csv
-    source_sample_id: BESU.8Vb_W.EQ
-    source_column: U_ppm
-    raw_value: '975'
-    analyte:
-      id: CHEBI:27214
-      label: uranium atom
-    material_form: Uranium-bearing electrolyte. ICP-OES measures total elemental U; the atom identifier
-      grounds the element, not neutral atoms in solution or an oxidation-state measurement.
-    sampled_fraction: Working-chamber solution filtered at 0.22 micrometres before preservation in 1%
-      nitric acid.
-    study_arm: biotic
-    result_status: measured
-    value: 975
-    unit: mg/kg
-    analyzed_on: '2024-09-24'
-    sampled_on: '2024-09-06'
-    sampling_source_locator: T2_pH.csv; SampleID=BESU.8Vb_W.EQ; Date column
-    context: Post-equilibration baseline of the run assigned to the biotic arm. Metadata process steps
-      1 and 3 place inoculation after this second solution sample, so study_arm does not assert cells
-      were present when this baseline was sampled. This source cell is not a recovery percentage or an
-      independent microbial-effect estimate.
-  - id: u_biotic_endpoint
-    source_ref: kane_2026_bes
-    source_table: T3_AqueousICPOES.csv
-    source_sample_id: BESU.8Vb_W.END
-    source_column: U_ppm
-    raw_value: '-0.1'
-    analyte:
-      id: CHEBI:27214
-      label: uranium atom
-    material_form: Uranium-bearing electrolyte. ICP-OES measures total elemental U; the atom identifier
-      grounds the element, not neutral atoms in solution or an oxidation-state measurement.
-    sampled_fraction: Working-chamber solution filtered at 0.22 micrometres before preservation in 1%
-      nitric acid.
-    study_arm: biotic
-    result_status: below_detection
-    detection_limit: 0.1
-    unit: mg/kg
-    analyzed_on: '2024-10-29'
-    sampled_on: '2024-09-27'
-    sampling_source_locator: T2_pH.csv; SampleID=BESU.8Vb_W.END; Date column
-    context: 'Original biotic-run endpoint. T1 and metadata step 8 define the negative source token as
-      below detection: U is less than 0.1 mg/kg. No measured value or zero is assigned. Analytical and
-      sample dates are separate, and this endpoint is not a mass-balanced recovery yield.'
-  - id: u_abiotic_t0
-    source_ref: kane_2026_bes
-    source_table: T3_AqueousICPOES.csv
-    source_sample_id: BESU.8Va_W.t0
-    source_column: U_ppm
-    raw_value: '914'
-    analyte:
-      id: CHEBI:27214
-      label: uranium atom
-    material_form: Uranium-bearing electrolyte. ICP-OES measures total elemental U; the atom identifier
-      grounds the element, not neutral atoms in solution or an oxidation-state measurement.
-    sampled_fraction: Working-chamber solution filtered at 0.22 micrometres before preservation in 1%
-      nitric acid.
-    study_arm: abiotic
-    result_status: measured
-    value: 914
-    unit: mg/kg
-    analyzed_on: '2024-09-24'
-    sampled_on: '2024-08-08'
-    sampling_source_locator: T2_pH.csv; SampleID=BESU.8Va_W.t0; Date column
-    context: Source-labelled t0 point of the original abiotic run. It is a concentration observation under
-      the stated electrochemical conditions, not a paired microbial-effect estimate; the biotic run has
-      a different starting concentration and pH history.
-  - id: u_abiotic_endpoint
-    source_ref: kane_2026_bes
-    source_table: T3_AqueousICPOES.csv
-    source_sample_id: BESU.8Va_W.END
-    source_column: U_ppm
-    raw_value: '0.819'
-    analyte:
-      id: CHEBI:27214
-      label: uranium atom
-    material_form: Uranium-bearing electrolyte. ICP-OES measures total elemental U; the atom identifier
-      grounds the element, not neutral atoms in solution or an oxidation-state measurement.
-    sampled_fraction: Working-chamber solution filtered at 0.22 micrometres before preservation in 1%
-      nitric acid.
-    study_arm: abiotic
-    result_status: measured
-    value: 0.819
-    unit: mg/kg
-    analyzed_on: '2024-09-24'
-    context: Original abiotic-run endpoint. T2 contains no exact match for this sample ID, so sample collection
-      date is unrecorded; the ICP-OES analysis date is not substituted. This point retains evidence of
-      abiotic removal without deriving a matched microbial benefit.
   protein_examples:
   - uniprot_accession: UniProtKB:Q8EG34
     entry_name: Q8EG34_SHEON
-    protein_name: Extracellular iron oxide respiratory system surface decaheme cytochrome c component
-      MtrC
+    protein_name: Extracellular iron oxide respiratory system surface decaheme cytochrome c component MtrC
     gene_symbol: mtrC
     entry_status: TREMBL
     target_organism:
@@ -191,17 +57,14 @@ mechanisms:
     pfam_ids:
     - Pfam:PF22113
     - Pfam:PF22111
-    functional_role: Outer-membrane surface decaheme c-type cytochrome MtrC (SO_1778) serving as a terminal
-      extracellular electron-transfer reductase.
+    functional_role: Outer-membrane surface decaheme c-type cytochrome MtrC (SO_1778) serving as a terminal extracellular electron-transfer reductase.
     evidence:
     - source_ref: kane_2026_bes
       supports: partial
-      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (mtrC) for extracellular
-        electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
+      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (mtrC) for extracellular electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
   - uniprot_accession: UniProtKB:Q8EG33
     entry_name: Q8EG33_SHEON
-    protein_name: Extracelllular iron oxide respiratory system surface decaheme cytochrome c component
-      OmcA
+    protein_name: Extracelllular iron oxide respiratory system surface decaheme cytochrome c component OmcA
     gene_symbol: omcA
     entry_status: TREMBL
     target_organism:
@@ -216,13 +79,11 @@ mechanisms:
     pfam_ids:
     - Pfam:PF22113
     - Pfam:PF22112
-    functional_role: Outer-membrane surface decaheme c-type cytochrome OmcA (SO_1779) partnering with
-      MtrC in extracellular metal/mineral reduction.
+    functional_role: Outer-membrane surface decaheme c-type cytochrome OmcA (SO_1779) partnering with MtrC in extracellular metal/mineral reduction.
     evidence:
     - source_ref: kane_2026_bes
       supports: partial
-      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (omcA) for extracellular
-        electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
+      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (omcA) for extracellular electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
   - uniprot_accession: UniProtKB:Q8E8S0
     entry_name: CYMA_SHEON
     protein_name: Tetraheme c-type cytochrome CymA
@@ -242,19 +103,100 @@ mechanisms:
     - InterPro:IPR038266
     pfam_ids:
     - Pfam:PF03264
-    functional_role: Inner-membrane tetraheme c-type menaquinol dehydrogenase CymA (EC 7.1.1.8; SO_4591)
-      transferring electrons from the menaquinol pool to periplasmic and outer-membrane electron-transfer
-      pathways.
+    functional_role: Inner-membrane tetraheme c-type menaquinol dehydrogenase CymA (EC 7.1.1.8; SO_4591) transferring electrons from the menaquinol pool to periplasmic and outer-membrane electron-transfer pathways.
     evidence:
     - source_ref: kane_2026_bes
       supports: partial
-      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (cymA) for extracellular
-        electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
+      explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (cymA) for extracellular electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
+  evidence:
+  - source_ref: kane_2026_bes
+    supports: support
+    explanation: FGDC process steps 1-4 and tables T1-T3 and T6 support the laboratory separation observation. In T3, the original biotic series has 975 mg/kg U at BESU.8Vb_W.EQ and less than 0.1 mg/kg at BESU.8Vb_W.END; the latter is encoded as -0.1, a detection limit, not zero or a negative concentration. T6 reports uranium in the subsequent electrode acid extract. These observations are not a mass-balanced recovery percentage or product purity measurement.
+  - source_ref: kane_2026_bes
+    supports: partial
+    explanation: Abiotic T3 samples also decrease, from 914 mg/kg at BESU.8Va_W.t0 to 0.819 mg/kg at BESU.8Va_W.END. T2 shows different pH histories, and the source reports pre-electrolysis sorption. T6 original biotic and abiotic acid extracts use concentrated HCl and HNO3 respectively, so their amounts are not a matched assay of microbial enhancement. These controls limit attribution of the observed separation specifically to MR-1 metabolism.
+  - source_ref: kane_2026_bes
+    supports: support
+    explanation: T9_SEM.pdf pages 2-6 show deposits and U-labelled EDS signals on both abiotic and biotic U electrodes, supporting electrode association. T8_XRD.csv supplies diffraction counts for these conditions and a carbon-felt blank, but this curation does not assign a crystalline phase or oxidation state from those data.
+  observations:
+  - id: u_biotic_equilibrated
+    source_ref: kane_2026_bes
+    source_table: T3_AqueousICPOES.csv
+    source_sample_id: BESU.8Vb_W.EQ
+    source_column: U_ppm
+    raw_value: '975'
+    analyte:
+      id: CHEBI:27214
+      label: uranium atom
+    material_form: Uranium-bearing electrolyte. ICP-OES measures total elemental U; the atom identifier grounds the element, not neutral atoms in solution or an oxidation-state measurement.
+    sampled_fraction: Working-chamber solution filtered at 0.22 micrometres before preservation in 1% nitric acid.
+    study_arm: biotic
+    result_status: measured
+    value: 975
+    unit: mg/kg
+    analyzed_on: '2024-09-24'
+    sampled_on: '2024-09-06'
+    sampling_source_locator: T2_pH.csv; SampleID=BESU.8Vb_W.EQ; Date column
+    context: Post-equilibration baseline of the run assigned to the biotic arm. Metadata process steps 1 and 3 place inoculation after this second solution sample, so study_arm does not assert cells were present when this baseline was sampled. This source cell is not a recovery percentage or an independent microbial-effect estimate.
+  - id: u_biotic_endpoint
+    source_ref: kane_2026_bes
+    source_table: T3_AqueousICPOES.csv
+    source_sample_id: BESU.8Vb_W.END
+    source_column: U_ppm
+    raw_value: '-0.1'
+    analyte:
+      id: CHEBI:27214
+      label: uranium atom
+    material_form: Uranium-bearing electrolyte. ICP-OES measures total elemental U; the atom identifier grounds the element, not neutral atoms in solution or an oxidation-state measurement.
+    sampled_fraction: Working-chamber solution filtered at 0.22 micrometres before preservation in 1% nitric acid.
+    study_arm: biotic
+    result_status: below_detection
+    detection_limit: 0.1
+    unit: mg/kg
+    analyzed_on: '2024-10-29'
+    sampled_on: '2024-09-27'
+    sampling_source_locator: T2_pH.csv; SampleID=BESU.8Vb_W.END; Date column
+    context: 'Original biotic-run endpoint. T1 and metadata step 8 define the negative source token as below detection: U is less than 0.1 mg/kg. No measured value or zero is assigned. Analytical and sample dates are separate, and this endpoint is not a mass-balanced recovery yield.'
+  - id: u_abiotic_t0
+    source_ref: kane_2026_bes
+    source_table: T3_AqueousICPOES.csv
+    source_sample_id: BESU.8Va_W.t0
+    source_column: U_ppm
+    raw_value: '914'
+    analyte:
+      id: CHEBI:27214
+      label: uranium atom
+    material_form: Uranium-bearing electrolyte. ICP-OES measures total elemental U; the atom identifier grounds the element, not neutral atoms in solution or an oxidation-state measurement.
+    sampled_fraction: Working-chamber solution filtered at 0.22 micrometres before preservation in 1% nitric acid.
+    study_arm: abiotic
+    result_status: measured
+    value: 914
+    unit: mg/kg
+    analyzed_on: '2024-09-24'
+    sampled_on: '2024-08-08'
+    sampling_source_locator: T2_pH.csv; SampleID=BESU.8Va_W.t0; Date column
+    context: Source-labelled t0 point of the original abiotic run. It is a concentration observation under the stated electrochemical conditions, not a paired microbial-effect estimate; the biotic run has a different starting concentration and pH history.
+  - id: u_abiotic_endpoint
+    source_ref: kane_2026_bes
+    source_table: T3_AqueousICPOES.csv
+    source_sample_id: BESU.8Va_W.END
+    source_column: U_ppm
+    raw_value: '0.819'
+    analyte:
+      id: CHEBI:27214
+      label: uranium atom
+    material_form: Uranium-bearing electrolyte. ICP-OES measures total elemental U; the atom identifier grounds the element, not neutral atoms in solution or an oxidation-state measurement.
+    sampled_fraction: Working-chamber solution filtered at 0.22 micrometres before preservation in 1% nitric acid.
+    study_arm: abiotic
+    result_status: measured
+    value: 0.819
+    unit: mg/kg
+    analyzed_on: '2024-09-24'
+    context: Original abiotic-run endpoint. T2 contains no exact match for this sample ID, so sample collection date is unrecorded; the ICP-OES analysis date is not substituted. This point retains evidence of abiotic removal without deriving a matched microbial benefit.
 causal_graphs:
 - id: mr1_bes_uranium_reduction_graph
   name: Shewanella oneidensis MR-1 extracellular electron transfer in bioelectrochemical uranium separation
-  description: Causal pathway linking Shewanella oneidensis MR-1 CymA, MtrC, and OmcA extracellular electron-transfer
-    proteins to reductive uranium deposition in a bioelectrochemical system.
+  description: Causal pathway linking Shewanella oneidensis MR-1 CymA, MtrC, and OmcA extracellular electron-transfer proteins to reductive uranium deposition in a bioelectrochemical system.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: oneidensis_bes_uranium_separation
   nodes:
@@ -262,8 +204,7 @@ causal_graphs:
     label: CymA inner-membrane tetraheme cytochrome c (SO_4591)
     node_type: GENE_OR_PROTEIN
     gene_symbol: cymA
-    description: Inner-membrane menaquinol dehydrogenase delivering electrons into the periplasmic Mtr
-      pathway.
+    description: Inner-membrane menaquinol dehydrogenase delivering electrons into the periplasmic Mtr pathway.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:Q8E8S0
@@ -285,26 +226,21 @@ causal_graphs:
       - InterPro:IPR038266
       pfam_ids:
       - Pfam:PF03264
-      functional_role: Inner-membrane tetraheme c-type menaquinol dehydrogenase CymA (EC 7.1.1.8; SO_4591)
-        transferring electrons from the menaquinol pool to periplasmic and outer-membrane electron-transfer
-        pathways.
+      functional_role: Inner-membrane tetraheme c-type menaquinol dehydrogenase CymA (EC 7.1.1.8; SO_4591) transferring electrons from the menaquinol pool to periplasmic and outer-membrane electron-transfer pathways.
       evidence:
       - source_ref: kane_2026_bes
         supports: partial
-        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (cymA) for extracellular
-          electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
+        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (cymA) for extracellular electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
   - id: mtrc_cytochrome
     label: MtrC outer-membrane decaheme cytochrome c (SO_1778)
     node_type: GENE_OR_PROTEIN
     gene_symbol: mtrC
-    description: Terminal cell-surface decaheme cytochrome c of the MtrCAB extracellular electron-transfer
-      complex.
+    description: Terminal cell-surface decaheme cytochrome c of the MtrCAB extracellular electron-transfer complex.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:Q8EG34
       entry_name: Q8EG34_SHEON
-      protein_name: Extracellular iron oxide respiratory system surface decaheme cytochrome c component
-        MtrC
+      protein_name: Extracellular iron oxide respiratory system surface decaheme cytochrome c component MtrC
       gene_symbol: mtrC
       entry_status: TREMBL
       target_organism:
@@ -319,13 +255,11 @@ causal_graphs:
       pfam_ids:
       - Pfam:PF22113
       - Pfam:PF22111
-      functional_role: Outer-membrane surface decaheme c-type cytochrome MtrC (SO_1778) serving as a terminal
-        extracellular electron-transfer reductase.
+      functional_role: Outer-membrane surface decaheme c-type cytochrome MtrC (SO_1778) serving as a terminal extracellular electron-transfer reductase.
       evidence:
       - source_ref: kane_2026_bes
         supports: partial
-        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (mtrC) for extracellular
-          electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
+        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (mtrC) for extracellular electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
   - id: omca_cytochrome
     label: OmcA outer-membrane decaheme cytochrome c (SO_1779)
     node_type: GENE_OR_PROTEIN
@@ -335,8 +269,7 @@ causal_graphs:
     protein_examples:
     - uniprot_accession: UniProtKB:Q8EG33
       entry_name: Q8EG33_SHEON
-      protein_name: Extracelllular iron oxide respiratory system surface decaheme cytochrome c component
-        OmcA
+      protein_name: Extracelllular iron oxide respiratory system surface decaheme cytochrome c component OmcA
       gene_symbol: omcA
       entry_status: TREMBL
       target_organism:
@@ -351,18 +284,15 @@ causal_graphs:
       pfam_ids:
       - Pfam:PF22113
       - Pfam:PF22112
-      functional_role: Outer-membrane surface decaheme c-type cytochrome OmcA (SO_1779) partnering with
-        MtrC in extracellular metal/mineral reduction.
+      functional_role: Outer-membrane surface decaheme c-type cytochrome OmcA (SO_1779) partnering with MtrC in extracellular metal/mineral reduction.
       evidence:
       - source_ref: kane_2026_bes
         supports: partial
-        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (omcA) for extracellular
-          electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
+        explanation: Representative Shewanella oneidensis MR-1 Mtr-pathway cytochrome (omcA) for extracellular electron transfer in kane_2026_bes; individual cytochrome genes were not mutated.
   - id: oxidized_metal_substrate
     label: Dissolved U(VI) in defined bicarbonate/PIPES electrolyte
     node_type: CHEMICAL_ENTITY
-    description: Terminal electron acceptor substrate (Dissolved U(VI) in defined bicarbonate/PIPES electrolyte)
-      in kane_2026_bes.
+    description: Terminal electron acceptor substrate (Dissolved U(VI) in defined bicarbonate/PIPES electrolyte) in kane_2026_bes.
     protein_grounding_status: NOT_APPLICABLE
   - id: reduced_metal_product
     label: Cell-associated reduced U(IV) precipitate
@@ -374,70 +304,62 @@ causal_graphs:
     target: mtrc_cytochrome
     predicate: provides_electrons_to
     relationship: trans-periplasmic respiratory electron transfer
-    description: CymA transfers electrons from the inner-membrane menaquinone pool to the MtrCAB outer-membrane
-      conduit.
+    description: CymA transfers electrons from the inner-membrane menaquinone pool to the MtrCAB outer-membrane conduit.
     evidence:
     - source_ref: kane_2026_bes
       supports: partial
-      explanation: Respiratory electron transport in S. oneidensis MR-1 routes electrons from CymA to
-        outer-membrane decaheme cytochromes.
+      explanation: Respiratory electron transport in S. oneidensis MR-1 routes electrons from CymA to outer-membrane decaheme cytochromes.
   - source: mtrc_cytochrome
     target: oxidized_metal_substrate
     predicate: reduces
     relationship: direct or flavin-mediated extracellular electron transfer
-    description: MtrC transfers electrons across the outer membrane interface to Dissolved U(VI) in defined
-      bicarbonate/PIPES electrolyte.
+    description: MtrC transfers electrons across the outer membrane interface to Dissolved U(VI) in defined bicarbonate/PIPES electrolyte.
     evidence:
     - source_ref: kane_2026_bes
       supports: partial
-      explanation: MtrC participates in extracellular reduction of Dissolved U(VI) in defined bicarbonate/PIPES
-        electrolyte.
+      explanation: MtrC participates in extracellular reduction of Dissolved U(VI) in defined bicarbonate/PIPES electrolyte.
   - source: omca_cytochrome
     target: oxidized_metal_substrate
     predicate: reduces
     relationship: cell-surface decaheme cytochrome reduction
-    description: OmcA transfers electrons at the cell-mineral/solution interface to Dissolved U(VI) in
-      defined bicarbonate/PIPES electrolyte.
+    description: OmcA transfers electrons at the cell-mineral/solution interface to Dissolved U(VI) in defined bicarbonate/PIPES electrolyte.
     evidence:
     - source_ref: kane_2026_bes
       supports: partial
-      explanation: OmcA contributes to extracellular reduction of Dissolved U(VI) in defined bicarbonate/PIPES
-        electrolyte.
+      explanation: OmcA contributes to extracellular reduction of Dissolved U(VI) in defined bicarbonate/PIPES electrolyte.
   - source: oxidized_metal_substrate
     target: reduced_metal_product
     predicate: transforms_into
     relationship: reductive valence transformation and phase formation
-    description: Extracellular electron transfer converts Dissolved U(VI) in defined bicarbonate/PIPES
-      electrolyte into Cell-associated reduced U(IV) precipitate.
+    description: Extracellular electron transfer converts Dissolved U(VI) in defined bicarbonate/PIPES electrolyte into Cell-associated reduced U(IV) precipitate.
     evidence:
     - source_ref: kane_2026_bes
       supports: support
-      explanation: Shewanella oneidensis MR-1 bioelectrochemical/anaerobic reduction converts Dissolved
-        U(VI) in defined bicarbonate/PIPES electrolyte into Cell-associated reduced U(IV) precipitate
-        in kane_2026_bes.
+      explanation: Shewanella oneidensis MR-1 bioelectrochemical/anaerobic reduction converts Dissolved U(VI) in defined bicarbonate/PIPES electrolyte into Cell-associated reduced U(IV) precipitate in kane_2026_bes.
 curation_history:
 - timestamp: '2026-10-09T04:48:34Z'
   curator: Codex (GPT-6; Codex)
   action: create_record
-  summary: Curated element identity, US 2025 designation and laboratory BES separation observations with
-    abiotic and analytical limitations.
+  summary: Curated element identity, US 2025 designation and laboratory BES separation observations with abiotic and analytical limitations.
 - timestamp: '2026-10-09T05:49:58Z'
   curator: Codex (GPT-6; Codex)
   action: curate_source_observations
-  summary: Added four exact T3 uranium concentration cells with raw values, censored-result handling and
-    separate analysis/sample provenance. Preserved prior claims and histories; no recovery yield was inferred.
+  summary: Added four exact T3 uranium concentration cells with raw values, censored-result handling and separate analysis/sample provenance. Preserved prior claims and histories; no recovery yield was inferred.
 - timestamp: '2026-10-18T04:27:50Z'
   curator: antigravity
   action: EDIT
-  summary: Added verified UniProtKB protein examples (MtrC UniProtKB:Q8EG34, OmcA UniProtKB:Q8EG33, CymA
-    UniProtKB:Q8E8S0) and causal graph for Shewanella oneidensis MR-1 bioelectrochemical uranium separation.
+  summary: Added verified UniProtKB protein examples (MtrC UniProtKB:Q8EG34, OmcA UniProtKB:Q8EG33, CymA UniProtKB:Q8E8S0) and causal graph for Shewanella oneidensis MR-1 bioelectrochemical uranium separation.
 - timestamp: '2026-10-21T18:46:53Z'
   curator: claude
   action: EDIT
-  summary: Set representative CymA/MtrC/OmcA cytochrome evidence to partial and refined substrate/product
-    labels in uranium.yaml.
+  summary: Set representative CymA/MtrC/OmcA cytochrome evidence to partial and refined substrate/product labels in uranium.yaml.
+- timestamp: '2026-10-30T22:26:51Z'
+  curator: claude
+  action: edit
+  summary: Normalized top-level key ordering in uranium.yaml so sources precedes criticality per CANONICAL_RECORD_KEYS.
 history_refs:
 - history/records/uranium/2026-10-09T044834Z-codex-003092.yaml
 - history/records/uranium/2026-10-09T054958Z-codex-6ae682.yaml
 - history/records/uranium/2026-10-18T042750Z-antigravity-3a1b87.yaml
 - history/records/uranium/2026-10-21T184653Z-claude-8d44a4.yaml
+- history/records/uranium/2026-10-30T222651Z-claude-cd5fe1.yaml

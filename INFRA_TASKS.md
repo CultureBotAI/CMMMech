@@ -249,8 +249,14 @@ tasks:
 - **Status**: `resolved`
 - **Disposition**: Resolved in Cycle 4 Stage 6 (issue `#822` and companion issue `#866`, `IGRP-C4S6-003`) by adding `_write_exclusive()` fallback when `NamedTemporaryFile(dir=path.parent)` or `os.link()` raises `PermissionError` in `src/cmmmech/history.py` `cmd_new()` and adding in-place `path.write_text(..., encoding="utf-8")` fallback when `NamedTemporaryFile(dir=path.parent)` or `os.replace()` raises `PermissionError` in `scripts/curate_causal_graphs.py` `write_record_atomic()`, verified by unit tests in `tests/test_history.py` and `tests/test_curate_causal_graphs.py`.
 
+### `cmmmech-infra-0013` — Enforce canonical `sources`-before-`criticality` top-level section ordering in `src/cmmmech/validation.py`
 
-
-
-
+- **Originating run / cycle / stage**: `mech-goal-sequence-20261019` / cycle `5` / stage `5` (`resolve_review_findings`)
+- **Observation**: During Cycle 5 Stage 4 (`review_corpus`) and Stage 5 (`resolve_review_findings`), `13` legacy records (`chromium`, `electrical-steel`, `hafnium`, `manganese`, `praseodymium`, `rare-earth-element-commodities`, `scandium`, `selenium`, `silicon-carbide`, `silicon`, `synthetic-graphite`, `uranium`, and `vanadium`) were found to serialize `criticality` before `sources` (`cmmmech-cycle5-stage4-finding-0001`, `GRP-C5S5-001`, https://github.com/CultureBotAI/CMMMech/issues/877). Although `CANONICAL_RECORD_KEYS` in `scripts/curate_causal_graphs.py` places `sources` before `criticality`, `_section_order_errors()` in `src/cmmmech/validation.py` currently enforces `causal_graphs`/`mechanisms` before `curation_history`/`history_refs` and `protein_examples` placement inside `mechanisms`, but does not yet check that `sources` precedes `criticality` when both top-level keys are present.
+- **Desired outcome**: During Cycle 5 Stage 6 (`implement_infrastructure`), extend `_section_order_errors()` in `src/cmmmech/validation.py` to enforce that `sources` precedes `criticality` (and `mechanisms` / `causal_graphs`) when present, and add corresponding unit tests in `tests/test_validation.py` so future record edits cannot reintroduce non-canonical top-level section ordering.
+- **Evidence paths**: `src/cmmmech/validation.py`, `tests/test_validation.py`, `scripts/curate_causal_graphs.py`, `reviews/structured/20261030T222000Z-cycle5-stage5-remediation-verification/review.yaml`
+- **Priority**: medium
+- **Dependencies**: `cmmmech-infra-0004`, `cmmmech-infra-0010` (https://github.com/CultureBotAI/CMMMech/issues/839)
+- **Issue**: https://github.com/CultureBotAI/CMMMech/issues/839 (`GRP-C5S5-001` companion https://github.com/CultureBotAI/CMMMech/issues/877)
+- **Status**: `note`
 
