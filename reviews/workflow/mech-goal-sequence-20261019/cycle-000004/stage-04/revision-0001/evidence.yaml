@@ -1,0 +1,43 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 4
+stage: 4
+revision: 1
+outcome: completed
+summary: Completed full-inventory Cycle 4 Stage 4 scientific and structural review
+  of all 663 eligible CMMMech records at frozen commit b527ecdabb331c0ff10764032306ed3fd4a05c53
+  across 6 disjoint material_kind cohort reviews (66 element, 412 mineral, 7 mineral_group,
+  36 commodity, 31 primary_resource, 111 secondary_resource), 1 cross-cohort causal_graphs/protein_examples
+  review (120 records), and 3 single-record reviews (palladium, traction-battery-hydrometallurgical-residue,
+  bornite). Preserved 3 open minor findings (cmmmech-cycle4-stage4-finding-0001, cmmmech-cycle4-stage4-finding-0002,
+  cmmmech-cycle4-stage4-finding-0003) across 25 records for Stage 5 grouped remediation.
+source_revision: b527ecdabb331c0ff10764032306ed3fd4a05c53
+scope_frozen_at: '2026-10-30T08:37:00Z'
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000003/stage-05/revision-0001/evidence.yaml
+  sha256: 4ac52306de1e4342c8633d9e4be1625ab6a5da818066fb636f73aaa631262dc4
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-04/revision-0001/review_report.md
+  sha256: 68c94259b6e699c21e537c60ce63114e940d76b20e1166301771a5699b13aedf
+  kind: review_report
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-04/revision-0001/review_findings.yaml
+  sha256: 16f18d1c01170e0ca9338b0840e6896a53d3d690ab06b1944003e3bba82c0c12
+  kind: review_findings
+findings:
+- finding_id: cmmmech-cycle4-stage4-finding-0001
+  status: open
+  summary: "In data/records/traction-battery-hydrometallurgical-residue.yaml (cmmmech:traction-battery-hydrometallurgical-residue), causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph) node solid_feed_substrate (line 521) carries label 'Industrial traction-battery hydrometallurgical residues (BR1, BR2, BR4)', where (BR1, BR2, BR4) are bauxite-residue sample codes from Borra et al. (2016) rather than the separate nickel-line and cobalt-line traction-battery hydrometallurgical residues in Lu et al. (2025, lu2025). In addition, nodes[0].label ('Sqr sulfide-quinone reductase (AFE_1792)'), nodes[1].label ('Tth tetrathionate hydrolase (tth / AFE_0029)'), and edges[0].evidence[0].explanation ('Reduced sulfur oxidation in A. ferrooxidans couples Sqr and polythionate hydrolysis to proton generation.') retain single-species A. ferrooxidans labels whereas sqr_reductase and tth_hydrolase are grounded across the five-member acidophile consortium."
+- finding_id: cmmmech-cycle4-stage4-finding-0002
+  status: open
+  summary: "Across the 663-record corpus, 8 records (cadmium-telluride-photovoltaic-module-scrap, cathode-ray-tube-glass, churchite-y, end-of-life-cigs-photovoltaic-modules, end-of-life-crystalline-silicon-photovoltaic-modules, iron-ore-tailings, polymetallic-nodules, waste-printed-circuit-boards) serialize top-level 'mechanisms' before 'sources' (and in churchite-y before 'sources' and 'criticality'), whereas CANONICAL_RECORD_KEYS in scripts/new_history.py and the LinkML MaterialRecord class place 'sources' and 'criticality' before 'mechanisms' and 'causal_graphs'."
+- finding_id: cmmmech-cycle4-stage4-finding-0003
+  status: open
+  summary: "Across the 663-record corpus, 16 records (aluminium-salt-slag, beryllium, beverage-carton-hydropulping-reject, biogas-desulfurization-sulfur-residue, cesium, electroformed-copper-silver-manufacturing-scrap, ground-waste-tire-rubber, ion-adsorption-rare-earth-clay, pharmaceutical-blister-packaging-waste, rhenium, rubidium, spent-lead-acid-battery-electrolyte, spent-vanadium-flow-battery-electrolyte, strontium, zinc-leach-residue, zinc-purification-hot-filter-cake) serialize top-level 'history_refs' before 'curation_history', whereas CANONICAL_RECORD_KEYS in scripts/new_history.py and the LinkML MaterialRecord class place 'curation_history' before 'history_refs'."
+groups: []
+carry_forward_ids:
+- cmmmech-cycle4-stage4-finding-0001
+- cmmmech-cycle4-stage4-finding-0002
+- cmmmech-cycle4-stage4-finding-0003
+infra_tasks: []

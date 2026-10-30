@@ -1,0 +1,120 @@
+schema_version: 1.0.0
+run_id: mech-goal-sequence-20261019
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+cycle: 4
+stage: 4
+revision: 1
+source_revision: b527ecdabb331c0ff10764032306ed3fd4a05c53
+frozen_inventory_count: 663
+structured_review_bundles:
+- review_id: 20261030T084500Z-cycle4-stage4-element-cohort-review
+  kind: category
+  population_size: 66
+  reviewed_count: 66
+  verdict: pass_with_limitations
+  path: reviews/structured/20261030T084500Z-cycle4-stage4-element-cohort-review/review.yaml
+- review_id: 20261030T084501Z-cycle4-stage4-mineral-cohort-review
+  kind: category
+  population_size: 412
+  reviewed_count: 412
+  verdict: pass_with_limitations
+  path: reviews/structured/20261030T084501Z-cycle4-stage4-mineral-cohort-review/review.yaml
+- review_id: 20261030T084502Z-cycle4-stage4-mineral-group-cohort-review
+  kind: category
+  population_size: 7
+  reviewed_count: 7
+  verdict: pass_with_limitations
+  path: reviews/structured/20261030T084502Z-cycle4-stage4-mineral-group-cohort-review/review.yaml
+- review_id: 20261030T084503Z-cycle4-stage4-commodity-cohort-review
+  kind: category
+  population_size: 36
+  reviewed_count: 36
+  verdict: pass_with_limitations
+  path: reviews/structured/20261030T084503Z-cycle4-stage4-commodity-cohort-review/review.yaml
+- review_id: 20261030T084504Z-cycle4-stage4-primary-resource-cohort-review
+  kind: category
+  population_size: 31
+  reviewed_count: 31
+  verdict: pass_with_limitations
+  path: reviews/structured/20261030T084504Z-cycle4-stage4-primary-resource-cohort-review/review.yaml
+- review_id: 20261030T084505Z-cycle4-stage4-secondary-resource-cohort-review
+  kind: category
+  population_size: 111
+  reviewed_count: 111
+  verdict: pass_with_limitations
+  path: reviews/structured/20261030T084505Z-cycle4-stage4-secondary-resource-cohort-review/review.yaml
+- review_id: 20261030T084506Z-cycle4-stage4-causal-graphs-cohort-review
+  kind: category
+  population_size: 120
+  reviewed_count: 120
+  verdict: pass_with_limitations
+  path: reviews/structured/20261030T084506Z-cycle4-stage4-causal-graphs-cohort-review/review.yaml
+- review_id: 20261030T084507Z-palladium-cycle4-stage4-record-review
+  kind: record
+  population_size: 1
+  reviewed_count: 1
+  verdict: pass
+  path: reviews/structured/20261030T084507Z-palladium-cycle4-stage4-record-review/review.yaml
+- review_id: 20261030T084508Z-traction-battery-hydrometallurgical-residue-cycle4-stage4-record-review
+  kind: record
+  population_size: 1
+  reviewed_count: 1
+  verdict: pass_with_limitations
+  path: reviews/structured/20261030T084508Z-traction-battery-hydrometallurgical-residue-cycle4-stage4-record-review/review.yaml
+- review_id: 20261030T084509Z-bornite-cycle4-stage4-record-review
+  kind: record
+  population_size: 1
+  reviewed_count: 1
+  verdict: pass
+  path: reviews/structured/20261030T084509Z-bornite-cycle4-stage4-record-review/review.yaml
+findings:
+- finding_id: cmmmech-cycle4-stage4-finding-0001
+  issue_key: cmmmech.traction-battery-hydrometallurgical-residue.causal-node-spurious-br-sample-codes-and-consortium-label
+  review_id: 20261030T084508Z-traction-battery-hydrometallurgical-residue-cycle4-stage4-record-review
+  status: open
+  severity: minor
+  category: graph
+  target_ids:
+  - cmmmech:traction-battery-hydrometallurgical-residue
+  summary: "In data/records/traction-battery-hydrometallurgical-residue.yaml (cmmmech:traction-battery-hydrometallurgical-residue), causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph) node solid_feed_substrate (line 521) carries label 'Industrial traction-battery hydrometallurgical residues (BR1, BR2, BR4)', where (BR1, BR2, BR4) are bauxite-residue sample codes from Borra et al. (2016) rather than the separate nickel-line and cobalt-line traction-battery hydrometallurgical residues in Lu et al. (2025, lu2025). In addition, nodes[0].label ('Sqr sulfide-quinone reductase (AFE_1792)'), nodes[1].label ('Tth tetrathionate hydrolase (tth / AFE_0029)'), and edges[0].evidence[0].explanation ('Reduced sulfur oxidation in A. ferrooxidans couples Sqr and polythionate hydrolysis to proton generation.') retain single-species A. ferrooxidans labels whereas sqr_reductase and tth_hydrolase are grounded across the five-member acidophile consortium."
+- finding_id: cmmmech-cycle4-stage4-finding-0002
+  issue_key: cmmmech.records.mechanisms-before-sources-key-order
+  review_id: 20261030T084505Z-cycle4-stage4-secondary-resource-cohort-review
+  status: open
+  severity: minor
+  category: representation
+  target_ids:
+  - cmmmech:cadmium-telluride-photovoltaic-module-scrap
+  - cmmmech:cathode-ray-tube-glass
+  - cmmmech:churchite-y
+  - cmmmech:end-of-life-cigs-photovoltaic-modules
+  - cmmmech:end-of-life-crystalline-silicon-photovoltaic-modules
+  - cmmmech:iron-ore-tailings
+  - cmmmech:polymetallic-nodules
+  - cmmmech:waste-printed-circuit-boards
+  summary: "Across the 663-record corpus, 8 records (cadmium-telluride-photovoltaic-module-scrap, cathode-ray-tube-glass, churchite-y, end-of-life-cigs-photovoltaic-modules, end-of-life-crystalline-silicon-photovoltaic-modules, iron-ore-tailings, polymetallic-nodules, waste-printed-circuit-boards) serialize top-level 'mechanisms' before 'sources' (and in churchite-y before 'sources' and 'criticality'), whereas CANONICAL_RECORD_KEYS in scripts/new_history.py and the LinkML MaterialRecord class place 'sources' and 'criticality' before 'mechanisms' and 'causal_graphs'."
+- finding_id: cmmmech-cycle4-stage4-finding-0003
+  issue_key: cmmmech.records.history-refs-before-curation-history-key-order
+  review_id: 20261030T084505Z-cycle4-stage4-secondary-resource-cohort-review
+  status: open
+  severity: minor
+  category: representation
+  target_ids:
+  - cmmmech:aluminium-salt-slag
+  - cmmmech:beryllium
+  - cmmmech:beverage-carton-hydropulping-reject
+  - cmmmech:biogas-desulfurization-sulfur-residue
+  - cmmmech:cesium
+  - cmmmech:electroformed-copper-silver-manufacturing-scrap
+  - cmmmech:ground-waste-tire-rubber
+  - cmmmech:ion-adsorption-rare-earth-clay
+  - cmmmech:pharmaceutical-blister-packaging-waste
+  - cmmmech:rhenium
+  - cmmmech:rubidium
+  - cmmmech:spent-lead-acid-battery-electrolyte
+  - cmmmech:spent-vanadium-flow-battery-electrolyte
+  - cmmmech:strontium
+  - cmmmech:zinc-leach-residue
+  - cmmmech:zinc-purification-hot-filter-cake
+  summary: "Across the 663-record corpus, 16 records (aluminium-salt-slag, beryllium, beverage-carton-hydropulping-reject, biogas-desulfurization-sulfur-residue, cesium, electroformed-copper-silver-manufacturing-scrap, ground-waste-tire-rubber, ion-adsorption-rare-earth-clay, pharmaceutical-blister-packaging-waste, rhenium, rubidium, spent-lead-acid-battery-electrolyte, spent-vanadium-flow-battery-electrolyte, strontium, zinc-leach-residue, zinc-purification-hot-filter-cake) serialize top-level 'history_refs' before 'curation_history', whereas CANONICAL_RECORD_KEYS in scripts/new_history.py and the LinkML MaterialRecord class place 'curation_history' before 'history_refs'."

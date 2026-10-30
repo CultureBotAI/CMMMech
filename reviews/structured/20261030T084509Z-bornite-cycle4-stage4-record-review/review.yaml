@@ -1,0 +1,130 @@
+schema_version: 1.0.0
+review_id: 20261030T084509Z-bornite-cycle4-stage4-record-review
+title: 'Cycle 4 Stage 4 record review: cmmmech:bornite (Bornite)'
+repository: CultureBotAI/CMMMech
+kind: record
+started_at: '2026-10-30T08:43:00Z'
+finished_at: '2026-10-30T08:45:09Z'
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: pass
+scientific_review: true
+summary: Reviewed data/records/bornite.yaml (cmmmech:bornite) at commit b527ecdabb331c0ff10764032306ed3fd4a05c53
+  following Cycle 4 Stage 1 record addition and Cycle 4 Stage 2-3 causal graph and
+  UniProtKB protein grounding. Verified IMA-CNMNC September 2026 species identity
+  (Cu5FeS4, approved 1962 s.p., PDF page 29), mechanisms ferrooxidans_associated_copper_release
+  (Zhang et al. 2019, DOI:10.1039/C9RA03658J and correction DOI:10.1039/C9RA90072A)
+  and consortium_biofilm_associated_leaching (Bobadilla-Fazzini & Poblete-Castro 2021,
+  DOI:10.3389/fmicb.2021.761997), causal graph ferrooxidans_associated_copper_release_graph
+  (5 nodes, 4 edges), and synchronized reviewed Swiss-Prot UniProtKB protein_examples
+  for Acidithiobacillus ferrooxidans ATCC 23270 Sqr (UniProtKB:B7JBP8, SQRD_ACIF2,
+  AFE_1792, UP000001362) and Tth (UniProtKB:B7J3C9, TTH_ACIF2, tth, UP000001362).
+  Zero open findings.
+reviewer:
+  identity: antigravity / cmmmech-cycle4-stage4-record-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of Cycle 4 Stage 4 record_review
+    (.claude/skills/review-yaml-record/SKILL.md) against frozen commit b527ecdabb331c0ff10764032306ed3fd4a05c53.
+source:
+  git_revision: b527ecdabb331c0ff10764032306ed3fd4a05c53
+  state: git_commit
+  inputs:
+  - path: data/records/bornite.yaml
+    sha256: e49b571d3f60035b09e4ef30b5ec2d920a66ecab3039bbc70548b25d9b9b402c
+    role: target
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+  - path: src/cmmmech/validation.py
+    sha256: 63ff33d51b753dd715e6bd1c3e5f60a99e4fcb41b3aee68d536306a862d922e2
+    role: context
+scope:
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:bornite
+  selection: data/records/bornite.yaml at b527ecdabb331c0ff10764032306ed3fd4a05c53
+  description: Single-record Cycle 4 Stage 4 audit of cmmmech:bornite after Cycle
+    4 Stage 1-3 curation and grounding.
+targets:
+- target_id: cmmmech:bornite
+  path: data/records/bornite.yaml
+  kind: maintained
+  label: Bornite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/bornite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+checks:
+- check_id: cmmmech-validate-bornite
+  name: cmmmech validate bornite.yaml
+  status: passed
+  required: true
+  command: .venv/bin/cmmmech validate data/records/bornite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:bornite
+  evidence_ids:
+  - ev-bornite-file
+  summary: data/records/bornite.yaml passes LinkML structural and semantic validation
+    with 0 errors.
+assessments:
+- assessment_id: assess-bornite-mechanisms-graph-and-proteins
+  topic: IMA bornite identity, Zhang et al. (2019) and Bobadilla-Fazzini & Poblete-Castro
+    (2021) mechanisms, causal graph, and Swiss-Prot Sqr/Tth groundings
+  area: graph
+  outcome: supported
+  target_ids:
+  - cmmmech:bornite
+  evidence_ids:
+  - ev-bornite-file
+  - ev-bornite-zhang2019
+  - ev-bornite-bobadilla2021
+  summary: Both mechanisms, all source discrepancies (day-12 vs day-14 Cu extraction,
+    biomass unit conflict, optical vs QEMSCAN bornite abundance, Fe(II) concentration
+    discrepancy), causal graph ferrooxidans_associated_copper_release_graph, and Swiss-Prot
+    UniProtKB:B7JBP8 and UniProtKB:B7J3C9 protein_examples are accurately represented
+    and synchronized.
+findings: []
+actions: []
+evidence:
+- evidence_id: ev-bornite-file
+  kind: record_content
+  reference: data/records/bornite.yaml
+  locator: lines 1-240
+  accessed_at: '2026-10-30T08:45:09Z'
+  support: supports
+  summary: Verified IMA September 2026 bornite identity, two bioleaching mechanisms,
+    causal graph ferrooxidans_associated_copper_release_graph, and synchronized UniProtKB:B7JBP8
+    and UniProtKB:B7J3C9 protein_examples.
+- evidence_id: ev-bornite-zhang2019
+  kind: primary_source
+  reference: DOI:10.1039/C9RA03658J
+  locator: Zhang et al. 2019 RSC Advances 9:26609-26618, Sections 2-3, Figures 1-5,
+    SI Table S1
+  accessed_at: '2026-10-30T08:45:09Z'
+  support: supports
+  summary: Supports culture-associated copper release from Guangxi natural bornite
+    specimen in shaken pH 1.70-1.80 9K medium with A. ferrooxidans and documents day-12
+    peak vs day-14 endpoint and SR-XRD/Raman residual phases.
+- evidence_id: ev-bornite-bobadilla2021
+  kind: primary_source
+  reference: DOI:10.3389/fmicb.2021.761997
+  locator: Bobadilla-Fazzini & Poblete-Castro 2021 Front. Microbiol. 12:761997, Methods
+    and Figures 3-6
+  accessed_at: '2026-10-30T08:45:09Z'
+  support: supports
+  summary: Supports laminar-flow chamber biofilm-associated copper mobilization (~54%
+    feed Cu at day 32) on mixed Chilean bornite specimen inoculated with Leptospirillum
+    spp. and A. thiooxidans enrichment.
+limitations: []
+notes: []
