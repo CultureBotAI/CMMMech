@@ -208,7 +208,7 @@
         <a href="#mechanism-mixed_feed_enstatite_bioleaching" class="badge" style="text-decoration: none;">Mechanism: <code>mixed_feed_enstatite_bioleaching</code></a>
       </div>
     </div>
-    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking pstS disruption and PqqC/Gdh-mediated gluconic acid production to metal release from enstatite-bearing mixed silicate feed.</p>
+    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking engineered Gluconobacter oxydans B58 (delta-pstS, P112:mgdh) periplasmic glucose oxidation (Gdh, PqqC) and Pst-system disruption (PstS) to organic-acid leaching of Mg and Ni from a 69 wt% olivine / 31 wt% enstatite mixed ultramafic mineral feed, where partial enstatite dissolution is inferred by XRD and mass-balance modeling.</p>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (6):</strong>
     <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
@@ -309,7 +309,7 @@
         </tr>
         <tr id="causal-node-gluconobacter_enstatite_bioleaching_graph-dissolved_mg_fe_ni_ions">
           <td>
-            <strong>Dissolved Mg, Fe, Mn, Co, and Ni in leachate</strong><br>
+            <strong>Dissolved Mg and Ni in mixed-feed filtrate</strong><br>
             <code style="font-size: .78rem; color: var(--muted);">dissolved_mg_fe_ni_ions</code>
           </td>
           <td>
@@ -317,7 +317,7 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Solubilized metal ions or altered phase (Dissolved Mg, Fe, Mn, Co, and Ni in leachate) released into the leachate.</div>          </td>
+<div>Blank-corrected dissolved Mg (day-15 mean ~8487 ppm with cells and ~7051 ppm cell-free vs 265 ppm glucose control) and Ni in 0.45-um-filtered leachate from the 69 wt% olivine / 31 wt% enstatite mixed feed.</div>          </td>
         </tr>
       </tbody>
     </table>
@@ -334,11 +334,11 @@
         <code>gdh_dehydrogenase</code> &rarr; <strong>periplasmic oxidation of glucose to gluconic acid</strong> (<code>produces</code>) &rarr; <code>gluconic_acid_biolixiviant</code>
 : Membrane-bound Gdh oxidizes D-glucose to gluconic acid, lowering supernatant pH and supplying organic-acid ligands.[<a href="#source-klug_2026"><code>klug_2026</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
-        <code>gluconic_acid_biolixiviant</code> &rarr; <strong>acidolysis and ligand complexation</strong> (<code>acts_on</code>) &rarr; <code>enstatite_mixed_feed</code>
-: Protons and gluconate ligands attack the solid phase in the leaching reaction.[<a href="#source-klug_2026"><code>klug_2026</code></a>]      </li>
+        <code>gluconic_acid_biolixiviant</code> &rarr; <strong>Engineered G. oxydans B58 biolixiviant leaches the 69 wt% olivine / 31 wt% enstatite mixed feed</strong> (<code>solubilizes</code>) &rarr; <code>enstatite_mixed_feed</code>
+: Cell-containing and 0.2-um-filtered cell-free G. oxydans B58 (delta-pstS, P112:mgdh) biolixiviants (initial pH ~2.4–2.5) react with 5% w/v (0.5 g per 10 mL) milled 69 wt% olivine / 31 wt% enstatite powder statically at 30 degrees C over 15 days.[<a href="#source-klug_2026"><code>klug_2026</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
-        <code>enstatite_mixed_feed</code> &rarr; <strong>dissolution and metal mobilization</strong> (<code>produces</code>) &rarr; <code>dissolved_mg_fe_ni_ions</code>
-: Dissolution of Enstatite-bearing mixed silicate feed yields Dissolved Mg, Fe, Mn, Co, and Ni in leachate in the aqueous leachate.[<a href="#source-klug_2026"><code>klug_2026</code></a>]      </li>
+        <code>enstatite_mixed_feed</code> &rarr; <strong>15-day bioleaching of the 69/31 olivine-enstatite mixed feed releases dissolved Mg and Ni</strong> (<code>produces</code>) &rarr; <code>dissolved_mg_fe_ni_ions</code>
+: 15-day leaching of the 69 wt% olivine / 31 wt% enstatite mixed feed at 5% w/v yields ~8487 ppm Mg with cells and ~7051 ppm Mg cell-free (vs 265 ppm control) alongside dissolved Ni; Figure 6c–d mass balance allocates ~26% of initial feed Mg to enstatite at day 0 and ~13% (with cells) or ~10% (cell-free) at day 15.[<a href="#source-klug_2026"><code>klug_2026</code></a>]      </li>
     </ul>
   </div>
 </div>
@@ -404,6 +404,12 @@
         <td><span class="badge">EDIT</span></td>
         <td>Replaced erroneous pstC (UniProtKB:Q5FT13) with pstS (UniProtKB:Q5FTI1) matching the engineered G. oxydans B58 delta-pstS, P112:mgdh strain in Klug et al. (2026), and set unmutated gene evidence to partial.</td>
       </tr>
+      <tr>
+        <td><code>2026-10-30T17:10:03Z</code></td>
+        <td>marcin</td>
+        <td><span class="badge">edit</span></td>
+        <td>Align enstatite causal_graphs[0] with klug_2026 Mg/Ni mixed-feed measurements and partial mass-balance support</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -413,7 +419,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (668 materials · 609 mechanisms · latest curation 2026-10-30 · corpus digest <code>e3369161e653</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (668 materials · 609 mechanisms · latest curation 2026-10-30 · corpus digest <code>4b9a508f6e5b</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

@@ -1,0 +1,165 @@
+schema_version: 1.0.0
+review_id: 20261030T171200Z-lanthanum-cycle5-stage2-causal-graphs-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 5 Stage 2 causal-graph review of Lanthanum (cmmmech:lanthanum)
+started_at: '2026-10-30T17:10:00Z'
+finished_at: '2026-10-30T17:12:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle5-stage2-causal-graphs-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md verifying
+    the Cycle 5 Stage 2 causal_graphs[0] update in data/records/lanthanum.yaml (SHA-256 eca2a756a20c63a497823a64fb51fd877f157f4f2c8b9b7479d0a1af925ab930)
+    against mechanisms[0] and its cited primary source (DOI:10.1007/s00253-019-10305-5).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 9e3221733b5efe6fb1be27fcc03692abc3a0de44
+  state: working_tree
+  inputs:
+  - path: data/records/lanthanum.yaml
+    sha256: eca2a756a20c63a497823a64fb51fd877f157f4f2c8b9b7479d0a1af925ab930
+    role: target
+  - path: history/records/lanthanum/2026-10-30T171003Z-marcin-571ffd.yaml
+    sha256: 66d7dd8affec7922269a20e7b1539335a722b4ab34a0d9120388cb78e97d85ea
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:lanthanum
+  path: data/records/lanthanum.yaml
+  label: Lanthanum
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lanthanum.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/lanthanum/2026-10-30T171003Z-marcin-571ffd.yaml
+    role: canonical_history
+scope:
+  description: Cycle 5 Stage 2 causal-graph review of data/records/lanthanum.yaml (SHA-256 eca2a756a20c63a497823a64fb51fd877f157f4f2c8b9b7479d0a1af925ab930)
+    and its canonical EDIT history sidecar (history/records/lanthanum/2026-10-30T171003Z-marcin-571ffd.yaml)
+    verifying full synchronization between causal_graphs[0] and mechanisms[0].
+  selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:lanthanum
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:lanthanum
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/lanthanum.yaml
+  locator: Working-tree record data/records/lanthanum.yaml
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: 'Synchronized causal_graphs[0] (aspergillus_lanthanum_bioprecipitation_graph) in data/records/lanthanum.yaml
+    with mechanisms[0]: replaced generic organic-acid bioleaching prose with the actual soluble LaCl3
+    (5-20 mM) bioprecipitation pathway to La2(C2O4)3·10H2O (plus calcination to La2O2CO3 at 600 degrees
+    C and La2O3 at 900 degrees C), and refined the secreted_organic_acids -> starting_substrate predicate
+    from acts_on to precipitates.'
+  snapshot_sha256: eca2a756a20c63a497823a64fb51fd877f157f4f2c8b9b7479d0a1af925ab930
+- evidence_id: primary_source
+  kind: primary_source
+  reference: DOI:10.1007/s00253-019-10305-5
+  locator: Kang X, Csetenyi L, and Gadd GM (2020) Appl. Microbiol. Biotechnol. 104:1339-1350, Sections
+    2-3, Figures 1-7
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: Kang et al. (2020) demonstrated that Aspergillus niger ATCC 1015 precipitates soluble LaCl3
+    (5-20 mM) at 25 degrees C in the dark via extracellular oxalic acid into crystalline lanthanum oxalate
+    decahydrate La2(C2O4)3·10H2O (removing nearly 100% of dissolved La3+ at 5-15 mM and ~75% at 20 mM,
+    with culture pH reaching 2.45 at 5 mM and 1.78 at 20 mM), which converts to La2O2CO3 at 600 degrees
+    C and pure La2O3 at 900 degrees C.
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/lanthanum/2026-10-30T171003Z-marcin-571ffd.yaml
+  locator: Canonical EDIT history sidecar history/records/lanthanum/2026-10-30T171003Z-marcin-571ffd.yaml
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: Canonical EDIT history sidecar history/records/lanthanum/2026-10-30T171003Z-marcin-571ffd.yaml
+    (SHA-256 66d7dd8affec7922269a20e7b1539335a722b4ab34a0d9120388cb78e97d85ea) records the Cycle 5 Stage
+    2 causal_graphs[0] update via scripts/curate_causal_graphs.py.
+  snapshot_sha256: 66d7dd8affec7922269a20e7b1539335a722b4ab34a0d9120388cb78e97d85ea
+- evidence_id: validation
+  kind: validation
+  reference: data/records/lanthanum.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and validate-history --base
+    main
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: data/records/lanthanum.yaml and history/records/lanthanum/2026-10-30T171003Z-marcin-571ffd.yaml
+    pass strict LinkML schema and history validation with 0 errors.
+  snapshot_sha256: eca2a756a20c63a497823a64fb51fd877f157f4f2c8b9b7479d0a1af925ab930
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 668 record(s); 0 failed.
+  target_ids:
+  - cmmmech:lanthanum
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:lanthanum
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_mechanism_synchronization
+  area: graph
+  topic: Synchronization of causal_graphs[0] with mechanisms[0] and primary source (DOI:10.1007/s00253-019-10305-5)
+  outcome: supported
+  summary: 'Synchronized causal_graphs[0] (aspergillus_lanthanum_bioprecipitation_graph) in data/records/lanthanum.yaml
+    with mechanisms[0]: replaced generic organic-acid bioleaching prose with the actual soluble LaCl3
+    (5-20 mM) bioprecipitation pathway to La2(C2O4)3·10H2O (plus calcination to La2O2CO3 at 600 degrees
+    C and La2O3 at 900 degrees C), and refined the secreted_organic_acids -> starting_substrate predicate
+    from acts_on to precipitates.'
+  target_ids:
+  - cmmmech:lanthanum
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: data/records/lanthanum.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar history/records/lanthanum/2026-10-30T171003Z-marcin-571ffd.yaml
+    and passing all LinkML and history validation gates.
+  target_ids:
+  - cmmmech:lanthanum
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Lanthanum (cmmmech:lanthanum) passes Cycle 5 Stage 2 causal-graph review (scientific_review:
+  true) at SHA-256 eca2a756a20c63a497823a64fb51fd877f157f4f2c8b9b7479d0a1af925ab930: Synchronized causal_graphs[0]
+  (aspergillus_lanthanum_bioprecipitation_graph) in data/records/lanthanum.yaml with mechanisms[0]: replaced
+  generic organic-acid bioleaching prose with the actual soluble LaCl3 (5-20 mM) bioprecipitation pathway
+  to La2(C2O4)3·10H2O (plus calcination to La2O2CO3 at 600 degrees C and La2O3 at 900 degrees C), and
+  refined the secreted_organic_acids -> starting_substrate predicate from acts_on to precipitates.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes;
+  an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 5 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py.
+related_reviews: []

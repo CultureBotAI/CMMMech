@@ -1,0 +1,252 @@
+# Cycle 5 Stage 2 causal-graph review of Whewellite (cmmmech:whewellite)
+
+- Review: 20261030T171200Z-whewellite-cycle5-stage2-causal-graphs-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-30T17:10:00Z
+- Finished UTC: 2026-10-30T17:12:00Z
+- Reviewer: antigravity / cmmmech-cycle5-stage2-causal-graphs-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Whewellite (cmmmech:whewellite) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256 11d4a2a0f35c27b763ba6128e40aad957410648673afe3af244a786f2b368ace: Synchronized causal_graphs[0] (aspergillus_whewellite_biomineralization_graph) in data/records/whewellite.yaml with mechanisms[0]: replaced generic organic-acid bioleaching prose with the actual dissolution of apatite-nepheline rock and crystallization of whewellite (CaC2O4·H2O), refined the substrate edge predicate from acts_on to precipitates, and aligned supports: partial to reflect the missing uninoculated control and quantitative organic-acid assay.
+
+## Scope And Provenance
+
+Cycle 5 Stage 2 causal-graph review of data/records/whewellite.yaml (SHA-256 11d4a2a0f35c27b763ba6128e40aad957410648673afe3af244a786f2b368ace) and its canonical EDIT history sidecar (history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml) verifying full synchronization between causal_graphs[0] and mechanisms[0].
+
+Selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:whewellite
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9e3221733b5efe6fb1be27fcc03692abc3a0de44.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:whewellite | data/records/whewellite.yaml | maintained | Whewellite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:whewellite | Checked 668 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:whewellite | All history sidecars pass validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Synchronization of causal_graphs[0] with mechanisms[0] and primary source (DOI:10.3390/min9040256)
+
+graph: supported. Targets: cmmmech:whewellite.
+
+Synchronized causal_graphs[0] (aspergillus_whewellite_biomineralization_graph) in data/records/whewellite.yaml with mechanisms[0]: replaced generic organic-acid bioleaching prose with the actual dissolution of apatite-nepheline rock and crystallization of whewellite (CaC2O4·H2O), refined the substrate edge predicate from acts_on to precipitates, and aligned supports: partial to reflect the missing uninoculated control and quantitative organic-acid assay.
+
+### Verification of canonical EDIT history sidecar and strict schema validation
+
+provenance: supported. Targets: cmmmech:whewellite.
+
+data/records/whewellite.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml and passing all LinkML and history validation gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/whewellite.yaml; Working-tree record data/records/whewellite.yaml | supports | Synchronized causal_graphs[0] (aspergillus_whewellite_biomineralization_graph) in data/records/whewellite.yaml with mechanisms[0]: replaced generic organic-acid bioleaching prose with the actual dissolution of apatite-nepheline rock and crystallization of whewellite (CaC2O4·H2O), refined the substrate edge predicate from acts_on to precipitates, and aligned supports: partial to reflect the missing uninoculated control and quantitative organic-acid assay. |
+| primary_source | DOI:10.3390/min9040256; Frank-Kamenetskaya OV et al. (2019) Minerals 9(4):256, pp. 1-15, Sections 2-3, Tables 1-3, Figures 1-8 | supports | Frank-Kamenetskaya et al. (2019) demonstrated that Aspergillus niger Strain Ch4/07 (GenBank KF768341) dissolves calcium-bearing apatite-nepheline rock in liquid Czapek-Dox medium (30 g/L glucose, initial pH 5.5 dropping to 4.0 at day 5 and rising to 4.5 at endpoint) at 25 degrees C over 19-21 days and precipitates calcium oxalate monohydrate (whewellite, CaC2O4·H2O) as the sole experimental oxalate phase, without a matched uninoculated control or quantitative organic-acid time series. |
+| edit_history | history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml; Canonical EDIT history sidecar history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml | supports | Canonical EDIT history sidecar history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml (SHA-256 4efc29a296186ef60e7dbdaba11bd97052bb0f675306219b8a41f54e518cdb08) records the Cycle 5 Stage 2 causal_graphs[0] update via scripts/curate_causal_graphs.py. |
+| validation | data/records/whewellite.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/whewellite.yaml and history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml pass strict LinkML schema and history validation with 0 errors. |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed during Cycle 5 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261030T171200Z-whewellite-cycle5-stage2-causal-graphs-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 5 Stage 2 causal-graph review of Whewellite (cmmmech:whewellite)
+started_at: '2026-10-30T17:10:00Z'
+finished_at: '2026-10-30T17:12:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle5-stage2-causal-graphs-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 5 Stage 2 causal_graphs[0] update in data/records/whewellite.yaml
+    (SHA-256 11d4a2a0f35c27b763ba6128e40aad957410648673afe3af244a786f2b368ace) against
+    mechanisms[0] and its cited primary source (DOI:10.3390/min9040256).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 9e3221733b5efe6fb1be27fcc03692abc3a0de44
+  state: working_tree
+  inputs:
+  - path: data/records/whewellite.yaml
+    sha256: 11d4a2a0f35c27b763ba6128e40aad957410648673afe3af244a786f2b368ace
+    role: target
+  - path: history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml
+    sha256: 4efc29a296186ef60e7dbdaba11bd97052bb0f675306219b8a41f54e518cdb08
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:whewellite
+  path: data/records/whewellite.yaml
+  label: Whewellite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/whewellite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml
+    role: canonical_history
+scope:
+  description: Cycle 5 Stage 2 causal-graph review of data/records/whewellite.yaml
+    (SHA-256 11d4a2a0f35c27b763ba6128e40aad957410648673afe3af244a786f2b368ace) and
+    its canonical EDIT history sidecar (history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml)
+    verifying full synchronization between causal_graphs[0] and mechanisms[0].
+  selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:whewellite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:whewellite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/whewellite.yaml
+  locator: Working-tree record data/records/whewellite.yaml
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: 'Synchronized causal_graphs[0] (aspergillus_whewellite_biomineralization_graph)
+    in data/records/whewellite.yaml with mechanisms[0]: replaced generic organic-acid
+    bioleaching prose with the actual dissolution of apatite-nepheline rock and crystallization
+    of whewellite (CaC2O4·H2O), refined the substrate edge predicate from acts_on
+    to precipitates, and aligned supports: partial to reflect the missing uninoculated
+    control and quantitative organic-acid assay.'
+  snapshot_sha256: 11d4a2a0f35c27b763ba6128e40aad957410648673afe3af244a786f2b368ace
+- evidence_id: primary_source
+  kind: primary_source
+  reference: DOI:10.3390/min9040256
+  locator: Frank-Kamenetskaya OV et al. (2019) Minerals 9(4):256, pp. 1-15, Sections
+    2-3, Tables 1-3, Figures 1-8
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: Frank-Kamenetskaya et al. (2019) demonstrated that Aspergillus niger Strain
+    Ch4/07 (GenBank KF768341) dissolves calcium-bearing apatite-nepheline rock in
+    liquid Czapek-Dox medium (30 g/L glucose, initial pH 5.5 dropping to 4.0 at day
+    5 and rising to 4.5 at endpoint) at 25 degrees C over 19-21 days and precipitates
+    calcium oxalate monohydrate (whewellite, CaC2O4·H2O) as the sole experimental
+    oxalate phase, without a matched uninoculated control or quantitative organic-acid
+    time series.
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml
+  locator: Canonical EDIT history sidecar history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: Canonical EDIT history sidecar history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml
+    (SHA-256 4efc29a296186ef60e7dbdaba11bd97052bb0f675306219b8a41f54e518cdb08) records
+    the Cycle 5 Stage 2 causal_graphs[0] update via scripts/curate_causal_graphs.py.
+  snapshot_sha256: 4efc29a296186ef60e7dbdaba11bd97052bb0f675306219b8a41f54e518cdb08
+- evidence_id: validation
+  kind: validation
+  reference: data/records/whewellite.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: data/records/whewellite.yaml and history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml
+    pass strict LinkML schema and history validation with 0 errors.
+  snapshot_sha256: 11d4a2a0f35c27b763ba6128e40aad957410648673afe3af244a786f2b368ace
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 668 record(s); 0 failed.
+  target_ids:
+  - cmmmech:whewellite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:whewellite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_mechanism_synchronization
+  area: graph
+  topic: Synchronization of causal_graphs[0] with mechanisms[0] and primary source
+    (DOI:10.3390/min9040256)
+  outcome: supported
+  summary: 'Synchronized causal_graphs[0] (aspergillus_whewellite_biomineralization_graph)
+    in data/records/whewellite.yaml with mechanisms[0]: replaced generic organic-acid
+    bioleaching prose with the actual dissolution of apatite-nepheline rock and crystallization
+    of whewellite (CaC2O4·H2O), refined the substrate edge predicate from acts_on
+    to precipitates, and aligned supports: partial to reflect the missing uninoculated
+    control and quantitative organic-acid assay.'
+  target_ids:
+  - cmmmech:whewellite
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: data/records/whewellite.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml
+    and passing all LinkML and history validation gates.
+  target_ids:
+  - cmmmech:whewellite
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Whewellite (cmmmech:whewellite) passes Cycle 5 Stage 2 causal-graph review
+  (scientific_review: true) at SHA-256 11d4a2a0f35c27b763ba6128e40aad957410648673afe3af244a786f2b368ace:
+  Synchronized causal_graphs[0] (aspergillus_whewellite_biomineralization_graph) in
+  data/records/whewellite.yaml with mechanisms[0]: replaced generic organic-acid bioleaching
+  prose with the actual dissolution of apatite-nepheline rock and crystallization
+  of whewellite (CaC2O4·H2O), refined the substrate edge predicate from acts_on to
+  precipitates, and aligned supports: partial to reflect the missing uninoculated
+  control and quantitative organic-acid assay.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 5 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py.
+related_reviews: []
+```

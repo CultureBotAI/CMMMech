@@ -176,12 +176,12 @@ causal_graphs:
   - id: solid_feed_substrate
     label: Sphalerite (ZnS) in controlled potential-stat leach solution
     node_type: MATERIAL_OR_PHASE
-    description: Starting mineral or secondary-resource feed (Sphalerite (ZnS) concentrate).
+    description: Milled (45–53 um), Na2S-washed Gamsberg sphalerite concentrate (98% sphalerite by XRD, 53.3% Zn) suspended at 5 g/L in a 2 L aerated, stirred constant-redox electrolysis cell (pH 1.6, 35 degrees C, Fe(III) held at 1 g/L).
     protein_grounding_status: NOT_APPLICABLE
   - id: solubilized_metal_species
     label: Dissolved Zn2+ and oxidized elemental-sulfur product layer
     node_type: CHEMICAL_ENTITY
-    description: Leached product state (Dissolved Zn2+ and oxidized elemental-sulfur product layer) in fowler_crundwell_1999.
+    description: Dissolved Zn in 0.45-um filtrate accompanied by bacterial oxidation of the porous surface elemental-sulfur product layer on sphalerite at elevated Fe(II) concentrations (4 and 8 g/L Fe(II)).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: sqr_reductase
@@ -205,21 +205,21 @@ causal_graphs:
   - source: acidic_ferric_sulfate_lixiviant
     target: solid_feed_substrate
     predicate: dissolves
-    relationship: acidic and oxidative mineral/feed attack
-    description: Biogenic acid and ferric ions attack Sphalerite (ZnS) concentrate.
+    relationship: Constant-redox Fe(III) (1 g/L) and A. ferrooxidans FC1 sulfur-layer oxidation dissolve sphalerite at elevated Fe(II)
+    description: In a 2 L electrolysis cell holding Fe(III) at 1 g/L, pH 1.6, and 35 degrees C with varied Fe(II), Fe(III) oxidizes sphalerite (ZnS) while A. ferrooxidans FC1 oxidizes the accumulating surface elemental-sulfur product layer at 4–8 g/L Fe(II).
     evidence:
     - source_ref: fowler_crundwell_1999
       supports: partial
-      explanation: Culture-generated acidic ferric/sulfate medium attacks Sphalerite (ZnS) concentrate.
+      explanation: Fowler and Crundwell (1999) held Fe(III) constant at 1 g/L electrochemically (rather than relying on culture-generated Fe(III) accumulation) and showed that A. ferrooxidans FC1 enhances sphalerite dissolution at 4 and 8 g/L Fe(II) after 8–12 h via removal of the surface sulfur layer, whereas Fowler and Crundwell (1998) found no bacterial enhancement at 1 g/L Fe(II).
   - source: solid_feed_substrate
     target: solubilized_metal_species
     predicate: produces
-    relationship: oxidative/acidic dissolution
-    description: At high Fe(II) concentration where a porous elemental-sulfur layer forms on sphalerite, A. ferrooxidans oxidizes the surface sulfur layer and increases Zn2+ dissolution.
+    relationship: Bacterial removal of the porous surface elemental-sulfur layer increases sphalerite Zn dissolution at 4–8 g/L Fe(II)
+    description: At 1 g/L Fe(III) and 4 g/L (100 h) or 8 g/L (69 h) Fe(II), A. ferrooxidans FC1 oxidizes the diffusion-limiting elemental-sulfur layer on sphalerite and increases dissolved Zn in 0.45-um filtrate above matched sterile electrochemical controls after 8–12 h.
     evidence:
     - source_ref: fowler_crundwell_1999
       supports: support
-      explanation: At high Fe(II) concentration where a porous elemental-sulfur layer forms on sphalerite, A. ferrooxidans oxidizes the surface sulfur layer and increases Zn2+ dissolution.
+      explanation: Atomic spectrophotometry filtrate Zn time series and surface sulfur analyses in Fowler and Crundwell (1999) Figures 2–6 confirm increased Zn dissolution and lower surface elemental sulfur in inoculated runs at 4 and 8 g/L Fe(II) relative to sterile controls.
 curation_history:
 - timestamp: '2026-10-11T04:20:59Z'
   curator: codex (GPT-6)
@@ -237,8 +237,13 @@ curation_history:
   curator: claude
   action: edit
   summary: 'Upgraded acidic ferric-sulfate sphalerite attack edge in zinc.yaml from acts_on to dissolves (Issue #807, PR #811).'
+- timestamp: '2026-10-30T17:10:04Z'
+  curator: marcin
+  action: edit
+  summary: Align zinc causal_graphs[0] node/edge descriptions with fowler_crundwell_1999 controlled-redox electrolysis cell sphalerite leaching
 history_refs:
 - history/records/zinc/2026-10-11T042052Z-codex-227643.yaml
 - history/records/zinc/2026-10-18T042750Z-antigravity-f3cace.yaml
 - history/records/zinc/2026-10-21T184653Z-claude-902ef0.yaml
 - history/records/zinc/2026-10-22T093020Z-claude-48dd6e.yaml
+- history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml

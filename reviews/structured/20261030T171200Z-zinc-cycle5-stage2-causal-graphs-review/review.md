@@ -1,0 +1,253 @@
+# Cycle 5 Stage 2 causal-graph review of Zinc (cmmmech:zinc)
+
+- Review: 20261030T171200Z-zinc-cycle5-stage2-causal-graphs-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-30T17:10:00Z
+- Finished UTC: 2026-10-30T17:12:00Z
+- Reviewer: antigravity / cmmmech-cycle5-stage2-causal-graphs-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Zinc (cmmmech:zinc) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256 2b376c474591caadd5e19689dcb85928a92e68392354fa6dd26e6d07734125a5: Synchronized causal_graphs[0] (ferrooxidans_zinc_bioleaching_graph) in data/records/zinc.yaml with mechanisms[0]: replaced generic bauxite-residue prose with the exact Sajjad et al. (2021) sphalerite ore bioleaching findings (90.2% Zn in mixed W1+W2 culture vs 74.6% W2, 51.4% W1, and 14.3% abiotic control over 25 days at 30 degrees C), and refined the substrate edge predicate from acts_on to solubilizes.
+
+## Scope And Provenance
+
+Cycle 5 Stage 2 causal-graph review of data/records/zinc.yaml (SHA-256 2b376c474591caadd5e19689dcb85928a92e68392354fa6dd26e6d07734125a5) and its canonical EDIT history sidecar (history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml) verifying full synchronization between causal_graphs[0] and mechanisms[0].
+
+Selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:zinc
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 9e3221733b5efe6fb1be27fcc03692abc3a0de44.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:zinc | data/records/zinc.yaml | maintained | Zinc |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:zinc | Checked 668 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:zinc | All history sidecars pass validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Synchronization of causal_graphs[0] with mechanisms[0] and primary source (DOI:10.1007/s11356-021-15027-0)
+
+graph: supported. Targets: cmmmech:zinc.
+
+Synchronized causal_graphs[0] (ferrooxidans_zinc_bioleaching_graph) in data/records/zinc.yaml with mechanisms[0]: replaced generic bauxite-residue prose with the exact Sajjad et al. (2021) sphalerite ore bioleaching findings (90.2% Zn in mixed W1+W2 culture vs 74.6% W2, 51.4% W1, and 14.3% abiotic control over 25 days at 30 degrees C), and refined the substrate edge predicate from acts_on to solubilizes.
+
+### Verification of canonical EDIT history sidecar and strict schema validation
+
+provenance: supported. Targets: cmmmech:zinc.
+
+data/records/zinc.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml and passing all LinkML and history validation gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/zinc.yaml; Working-tree record data/records/zinc.yaml | supports | Synchronized causal_graphs[0] (ferrooxidans_zinc_bioleaching_graph) in data/records/zinc.yaml with mechanisms[0]: replaced generic bauxite-residue prose with the exact Sajjad et al. (2021) sphalerite ore bioleaching findings (90.2% Zn in mixed W1+W2 culture vs 74.6% W2, 51.4% W1, and 14.3% abiotic control over 25 days at 30 degrees C), and refined the substrate edge predicate from acts_on to solubilizes. |
+| primary_source | DOI:10.1007/s11356-021-15027-0; sajjad2021 / Sajjad W et al. (2021) Environ. Sci. Pollut. Res., Sections 2-3, Figures 1-7, Tables 1-3 | supports | Sajjad et al. (2021) demonstrated bioleaching of sphalerite ore (57.2% Zn, 8.5% Fe, 31.11% S, 1.38% Cu, 0.79% Pb; 2% w/v pulp density in modified 9K medium at initial pH 2.0, 30 degrees C, 150 rpm for 25 days) using indigenous acidophilic sulfur-oxidizing strain Acidithiobacillusiaz / Acidithiobacillus sp. W1 (16S rRNA 99.7% identical to A. ferrooxidans strain B22) and iron-oxidizing strain Acidithiobacillus ferrooxidans W2, recovering 90.2% Zn (~10,318.9 mg/L) in mixed W1+W2 culture vs 74.6% (W2 alone), 51.4% (W1 alone), and 14.3% (abiotic control), with jarosite, elemental S0, and KAl3(SO4)2(OH)6 residue phases and no direct Rus/Sqr/Tth enzyme characterization. |
+| edit_history | history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml; Canonical EDIT history sidecar history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml | supports | Canonical EDIT history sidecar history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml (SHA-256 95da7029fb706145c925eb1dac9a55b9fa8269dd844d23de45f85918af835089) records the Cycle 5 Stage 2 causal_graphs[0] update via scripts/curate_causal_graphs.py. |
+| validation | data/records/zinc.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/zinc.yaml and history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml pass strict LinkML schema and history validation with 0 errors. |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed during Cycle 5 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261030T171200Z-zinc-cycle5-stage2-causal-graphs-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 5 Stage 2 causal-graph review of Zinc (cmmmech:zinc)
+started_at: '2026-10-30T17:10:00Z'
+finished_at: '2026-10-30T17:12:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle5-stage2-causal-graphs-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 5 Stage 2 causal_graphs[0] update in data/records/zinc.yaml
+    (SHA-256 2b376c474591caadd5e19689dcb85928a92e68392354fa6dd26e6d07734125a5) against
+    mechanisms[0] and its cited primary source (DOI:10.1007/s11356-021-15027-0).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 9e3221733b5efe6fb1be27fcc03692abc3a0de44
+  state: working_tree
+  inputs:
+  - path: data/records/zinc.yaml
+    sha256: 2b376c474591caadd5e19689dcb85928a92e68392354fa6dd26e6d07734125a5
+    role: target
+  - path: history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml
+    sha256: 95da7029fb706145c925eb1dac9a55b9fa8269dd844d23de45f85918af835089
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:zinc
+  path: data/records/zinc.yaml
+  label: Zinc
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/zinc.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml
+    role: canonical_history
+scope:
+  description: Cycle 5 Stage 2 causal-graph review of data/records/zinc.yaml (SHA-256
+    2b376c474591caadd5e19689dcb85928a92e68392354fa6dd26e6d07734125a5) and its canonical
+    EDIT history sidecar (history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml)
+    verifying full synchronization between causal_graphs[0] and mechanisms[0].
+  selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:zinc
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:zinc
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/zinc.yaml
+  locator: Working-tree record data/records/zinc.yaml
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: 'Synchronized causal_graphs[0] (ferrooxidans_zinc_bioleaching_graph) in
+    data/records/zinc.yaml with mechanisms[0]: replaced generic bauxite-residue prose
+    with the exact Sajjad et al. (2021) sphalerite ore bioleaching findings (90.2%
+    Zn in mixed W1+W2 culture vs 74.6% W2, 51.4% W1, and 14.3% abiotic control over
+    25 days at 30 degrees C), and refined the substrate edge predicate from acts_on
+    to solubilizes.'
+  snapshot_sha256: 2b376c474591caadd5e19689dcb85928a92e68392354fa6dd26e6d07734125a5
+- evidence_id: primary_source
+  kind: primary_source
+  reference: DOI:10.1007/s11356-021-15027-0
+  locator: sajjad2021 / Sajjad W et al. (2021) Environ. Sci. Pollut. Res., Sections
+    2-3, Figures 1-7, Tables 1-3
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: Sajjad et al. (2021) demonstrated bioleaching of sphalerite ore (57.2%
+    Zn, 8.5% Fe, 31.11% S, 1.38% Cu, 0.79% Pb; 2% w/v pulp density in modified 9K
+    medium at initial pH 2.0, 30 degrees C, 150 rpm for 25 days) using indigenous
+    acidophilic sulfur-oxidizing strain Acidithiobacillusiaz / Acidithiobacillus sp.
+    W1 (16S rRNA 99.7% identical to A. ferrooxidans strain B22) and iron-oxidizing
+    strain Acidithiobacillus ferrooxidans W2, recovering 90.2% Zn (~10,318.9 mg/L)
+    in mixed W1+W2 culture vs 74.6% (W2 alone), 51.4% (W1 alone), and 14.3% (abiotic
+    control), with jarosite, elemental S0, and KAl3(SO4)2(OH)6 residue phases and
+    no direct Rus/Sqr/Tth enzyme characterization.
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml
+  locator: Canonical EDIT history sidecar history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: Canonical EDIT history sidecar history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml
+    (SHA-256 95da7029fb706145c925eb1dac9a55b9fa8269dd844d23de45f85918af835089) records
+    the Cycle 5 Stage 2 causal_graphs[0] update via scripts/curate_causal_graphs.py.
+  snapshot_sha256: 95da7029fb706145c925eb1dac9a55b9fa8269dd844d23de45f85918af835089
+- evidence_id: validation
+  kind: validation
+  reference: data/records/zinc.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: data/records/zinc.yaml and history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml
+    pass strict LinkML schema and history validation with 0 errors.
+  snapshot_sha256: 2b376c474591caadd5e19689dcb85928a92e68392354fa6dd26e6d07734125a5
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 668 record(s); 0 failed.
+  target_ids:
+  - cmmmech:zinc
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:zinc
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_mechanism_synchronization
+  area: graph
+  topic: Synchronization of causal_graphs[0] with mechanisms[0] and primary source
+    (DOI:10.1007/s11356-021-15027-0)
+  outcome: supported
+  summary: 'Synchronized causal_graphs[0] (ferrooxidans_zinc_bioleaching_graph) in
+    data/records/zinc.yaml with mechanisms[0]: replaced generic bauxite-residue prose
+    with the exact Sajjad et al. (2021) sphalerite ore bioleaching findings (90.2%
+    Zn in mixed W1+W2 culture vs 74.6% W2, 51.4% W1, and 14.3% abiotic control over
+    25 days at 30 degrees C), and refined the substrate edge predicate from acts_on
+    to solubilizes.'
+  target_ids:
+  - cmmmech:zinc
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: data/records/zinc.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml
+    and passing all LinkML and history validation gates.
+  target_ids:
+  - cmmmech:zinc
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Zinc (cmmmech:zinc) passes Cycle 5 Stage 2 causal-graph review (scientific_review:
+  true) at SHA-256 2b376c474591caadd5e19689dcb85928a92e68392354fa6dd26e6d07734125a5:
+  Synchronized causal_graphs[0] (ferrooxidans_zinc_bioleaching_graph) in data/records/zinc.yaml
+  with mechanisms[0]: replaced generic bauxite-residue prose with the exact Sajjad
+  et al. (2021) sphalerite ore bioleaching findings (90.2% Zn in mixed W1+W2 culture
+  vs 74.6% W2, 51.4% W1, and 14.3% abiotic control over 25 days at 30 degrees C),
+  and refined the substrate edge predicate from acts_on to solubilizes.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 5 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py.
+related_reviews: []
+```

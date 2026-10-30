@@ -224,12 +224,12 @@ causal_graphs:
   - id: san_carlos_olivine_feed
     label: Magnesium-rich San Carlos olivine
     node_type: MATERIAL_OR_PHASE
-    description: Starting solid substrate (Magnesium-rich San Carlos olivine) exposed to the acidic biolixiviant.
+    description: Milled (~40 um), ultrasonically washed San Carlos magnesium-rich olivine powder (100% olivine by XRD after pyroxene removal; assumed Fo90.68) leached at 5% w/v pulp density (0.5 g per 10 mL liquid).
     protein_grounding_status: NOT_APPLICABLE
   - id: dissolved_mg_ni_and_oxalate
     label: Dissolved Mg/Fe/Ni ions and secondary glushinskite/oxalate solids
     node_type: CHEMICAL_ENTITY
-    description: Solubilized metal ions or altered phase (Dissolved Mg/Fe/Ni ions and secondary glushinskite/oxalate solids) released into the leachate.
+    description: Dissolved Mg (day-15 mean ~9565 ppm with cells and ~7203 ppm cell-free vs 242 ppm glucose control) and Ni in 0.45-um filtrate, accompanied by residual secondary Mg-oxalate (glushinskite, 32 wt% with cells and 20 wt% cell-free by XRD) and amorphous silica.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: psts_phosphate_binding
@@ -261,22 +261,22 @@ causal_graphs:
       explanation: Periplasmic glucose oxidation by G. oxydans generates the acidic gluconic-acid-rich biolixiviant.
   - source: gluconic_acid_biolixiviant
     target: san_carlos_olivine_feed
-    predicate: acts_on
-    relationship: acidolysis and ligand complexation
-    description: Protons and gluconate ligands attack the solid phase in the leaching reaction.
+    predicate: dissolves
+    relationship: Engineered G. oxydans B58 biolixiviant dissolves San Carlos olivine powder
+    description: Cell-containing and 0.2-um-filtered cell-free G. oxydans B58 (delta-pstS, P112:mgdh) biolixiviants (initial pH ~2.4–2.5) react statically with 5% w/v San Carlos olivine powder at 30 degrees C over 15 days.
     evidence:
     - source_ref: klug_2026
       supports: support
-      explanation: Biolixiviant acidity and organic-acid complexation promote dissolution of the solid substrate.
+      explanation: Klug et al. (2026) demonstrate dissolution of XRD-pure San Carlos olivine powder at 5% w/v over 15 days in both cell-containing and cell-free G. oxydans B58 delta-pstS, P112:mgdh biolixiviant arms.
   - source: san_carlos_olivine_feed
     target: dissolved_mg_ni_and_oxalate
     predicate: produces
-    relationship: dissolution and metal mobilization
-    description: Dissolution of Magnesium-rich San Carlos olivine yields Dissolved Mg/Fe/Ni ions and secondary glushinskite/oxalate solids in the aqueous leachate.
+    relationship: 15-day bioleaching of San Carlos olivine releases dissolved Mg and Ni and precipitates secondary Mg-oxalate
+    description: 15-day leaching of 5% w/v San Carlos olivine yields ~9565 ppm dissolved Mg with cells and ~7203 ppm cell-free (vs 242 ppm glucose control) plus dissolved Ni, while solid residues contain 32 wt% (with cells) and 20 wt% (cell-free) secondary Mg-oxalate (assigned to glushinskite by XRD/Raman) and amorphous silica.
     evidence:
     - source_ref: klug_2026
       supports: support
-      explanation: Measured aqueous metal release above sterile-medium controls confirms substrate leaching.
+      explanation: Klug et al. (2026) ICP-MS data row 6, XRD minerals rows 4/10/14, Figure S1 Raman, and Figure S3 XRD confirm high filtrate Mg/Ni release and secondary Mg-oxalate (glushinskite) formation.
 curation_history:
 - timestamp: '2026-10-11T10:51:48.882231+00:00'
   curator: codex (GPT-6; codex)
@@ -294,8 +294,13 @@ curation_history:
   curator: claude
   action: EDIT
   summary: Normalized 2019 IMA-CNMNC Nomenclature Compendium source ID from ima_compendium to ima_compendium_2019 in olivine-group.yaml (#831).
+- timestamp: '2026-10-30T17:10:03Z'
+  curator: marcin
+  action: edit
+  summary: Upgrade olivine-group causal_graphs[0] lixiviant predicate to dissolves and replace template node/edge text with klug_2026 details
 history_refs:
 - history/records/olivine-group/2026-10-11T105148Z-codex-b09182.yaml
 - history/records/olivine-group/2026-10-18T042750Z-antigravity-cb88b0.yaml
 - history/records/olivine-group/2026-10-21T184653Z-claude-f1118d.yaml
 - history/records/olivine-group/2026-10-24T034011Z-claude-4d2bc8.yaml
+- history/records/olivine-group/2026-10-30T171003Z-marcin-2737ff.yaml

@@ -135,7 +135,7 @@ causal_graphs:
   - id: starting_substrate
     label: Fluorapatite-rich phosphate rock
     node_type: MATERIAL_OR_PHASE
-    description: Starting substrate or solution feed (Fluorapatite-rich phosphate rock) exposed to fungal metabolites.
+    description: Approximately 5 x 5 mm biofilm-free fragments of fluorapatite-rich apatite-nepheline rock (sample-1 dump block) covered by 15 mL liquid Czapek-Dox medium (30.0 g/L glucose, initial pH 5.5) in Petri dishes.
     protein_grounding_status: NOT_APPLICABLE
   - id: transformed_product
     label: Whewellite (Ca(C2O4)·H2O) crystals
@@ -155,21 +155,21 @@ causal_graphs:
   - source: secreted_organic_acids
     target: starting_substrate
     predicate: dissolves
-    relationship: acidolysis, complexation, and anion reaction
-    description: Secreted organic acids react with Fluorapatite-rich phosphate rock.
+    relationship: Fungal organic-acid secretion lowers medium pH from 5.5 to 4.0 and attacks fluorapatite-rich apatite-nepheline rock
+    description: During 2–15 days of A. niger Ch4/07 growth at 20–25 degrees C, culture pH drops from 5.5 to 4.0 at day 5 (rising to 4.5 at endpoint), promoting Ca release from the fluorapatite-rich apatite-nepheline rock substrate.
     evidence:
     - source_ref: frank_kamenetskaya_2019
       supports: partial
-      explanation: Fungal organic acids mediate dissolution/precipitation of Fluorapatite-rich phosphate rock.
+      explanation: Frank-Kamenetskaya et al. (2019) document culture pH reduction from 5.5 to 4.0–4.5 and dissolution textures on apatite-nepheline rock, though no matched uninoculated control, killed-biomass arm, or organic-acid concentration series was reported for this rock experiment.
   - source: starting_substrate
     target: transformed_product
     predicate: transforms_into
-    relationship: secondary oxalate/phosphate precipitation or mineral alteration
-    description: Reaction of Fluorapatite-rich phosphate rock (apatite-nepheline ore) with fungal metabolites in experimental Aspergillus niger Ch4/07 culture produces Whewellite (Ca(C2O4)·H2O) crystals.
+    relationship: Live A. niger Ch4/07 culture on fluorapatite-rich apatite-nepheline rock crystallizes whewellite
+    description: In triplicate 2–15 day A. niger Ch4/07 cultures on fluorapatite-rich apatite-nepheline rock fragments in Czapek-Dox medium, calcium oxalate monohydrate (whewellite, CaC2O4·H2O) crystallizes on the rock surface alongside retained substrate phases.
     evidence:
     - source_ref: frank_kamenetskaya_2019
       supports: support
-      explanation: Experimental Aspergillus niger Ch4/07 culture on fluorapatite-rich phosphate rock (apatite-nepheline ore) yielded whewellite (Ca(C2O4)·H2O) crystals by XRD and SEM.
+      explanation: Sections 2.2 and 3.4, powder XRD at day 5 (Figure 3 trace 3), and SEM at days 5 and 12 (Figure 7) identify whewellite (CaC2O4·H2O) in all three experimental culture replicates.
 curation_history:
 - timestamp: '2026-10-14T10:45:06.275870+00:00'
   curator: codex (GPT-6; codex)
@@ -187,8 +187,13 @@ curation_history:
   curator: claude
   action: edit
   summary: 'Upgraded fungal fluorapatite-rock dissolution edge in whewellite.yaml from acts_on to dissolves (Issue #807, PR #811).'
+- timestamp: '2026-10-30T17:10:03Z'
+  curator: marcin
+  action: edit
+  summary: Align whewellite causal_graphs[0] with frank_kamenetskaya_2019 apatite-nepheline rock culture evidence and partial acid-step support
 history_refs:
 - history/records/whewellite/2026-10-14T104509Z-codex-bf78cf.yaml
 - history/records/whewellite/2026-10-18T042750Z-antigravity-9c7dda.yaml
 - history/records/whewellite/2026-10-21T184653Z-claude-2e0bf2.yaml
 - history/records/whewellite/2026-10-22T093021Z-claude-42142d.yaml
+- history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml

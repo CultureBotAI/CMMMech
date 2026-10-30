@@ -1,0 +1,172 @@
+schema_version: 1.0.0
+review_id: 20261030T171200Z-tetrahedrite-concentrate-cycle5-stage2-causal-graphs-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 5 Stage 2 causal-graph review of Tetrahedrite concentrate (cmmmech:tetrahedrite-concentrate)
+started_at: '2026-10-30T17:10:00Z'
+finished_at: '2026-10-30T17:12:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle5-stage2-causal-graphs-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md verifying
+    the Cycle 5 Stage 2 causal_graphs[0] update in data/records/tetrahedrite-concentrate.yaml (SHA-256
+    7d6164790fb1c371da1491bc91d07ba73c6c495098e2f89fe9ca38df7d235885) against mechanisms[0] and its cited
+    primary source (DOI:10.3390/min15101036).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 9e3221733b5efe6fb1be27fcc03692abc3a0de44
+  state: working_tree
+  inputs:
+  - path: data/records/tetrahedrite-concentrate.yaml
+    sha256: 7d6164790fb1c371da1491bc91d07ba73c6c495098e2f89fe9ca38df7d235885
+    role: target
+  - path: history/records/tetrahedrite-concentrate/2026-10-30T171004Z-marcin-f2dc1e.yaml
+    sha256: 5c3f15468c3f48432f41a905a701aadcaa1d4eae26c6f74eb343545823bdbb35
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:tetrahedrite-concentrate
+  path: data/records/tetrahedrite-concentrate.yaml
+  label: Tetrahedrite concentrate
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tetrahedrite-concentrate.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/tetrahedrite-concentrate/2026-10-30T171004Z-marcin-f2dc1e.yaml
+    role: canonical_history
+scope:
+  description: Cycle 5 Stage 2 causal-graph review of data/records/tetrahedrite-concentrate.yaml (SHA-256
+    7d6164790fb1c371da1491bc91d07ba73c6c495098e2f89fe9ca38df7d235885) and its canonical EDIT history sidecar
+    (history/records/tetrahedrite-concentrate/2026-10-30T171004Z-marcin-f2dc1e.yaml) verifying full synchronization
+    between causal_graphs[0] and mechanisms[0].
+  selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:tetrahedrite-concentrate
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:tetrahedrite-concentrate
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/tetrahedrite-concentrate.yaml
+  locator: Working-tree record data/records/tetrahedrite-concentrate.yaml
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: 'Synchronized causal_graphs[0] (ferrooxidans_tetrahedrite_bioleaching_graph) in data/records/tetrahedrite-concentrate.yaml
+    with mechanisms[0]: replaced generic bauxite-residue prose with the exact Kupka et al. (2025) Roznava-Strieborna
+    tetrahedrite concentrate bioleaching findings (qualitative Cu, Zn, Ag, and sulfate trends, transient
+    Sb mobilization, and Sb/Fe-enriched alteration rims without pooling inconsistent Fig. 2a vs Fig. 2b-c
+    units or asserting tripuhyite as confirmed), refined the substrate edge predicate from acts_on to
+    solubilizes, and aligned supports: partial.'
+  snapshot_sha256: 7d6164790fb1c371da1491bc91d07ba73c6c495098e2f89fe9ca38df7d235885
+- evidence_id: primary_source
+  kind: primary_source
+  reference: DOI:10.3390/min15101036
+  locator: Kupka D et al. (2025) Minerals 15(10):1036, pp. 1-14, Sections 2-3, Figures 1-7, Tables 1-2
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: Kupka et al. (2025) investigated oxidative bioleaching of flotation tetrahedrite concentrate
+    from the Roznava-Strieborna vein (Eastern Slovakia; ~37.7% tetrahedrite, 36.1% siderite, 15.8% pyrite,
+    5.2% chalcopyrite, 5.2% quartz; 21.80% Cu, 21.55% Fe, 10.60% Sb, 2.28% Zn, 0.42% As, 0.16% Ag, 19.45%
+    S) by Acidithiobacillus ferrooxidans streaks (67-day static screening and 202-day shake-flask bioleaching
+    in 0K at pH 1.8 and 30 degrees C with periodic Fe2+ regeneration), observing progressive Cu, Zn, Ag,
+    and sulfate release (vs abiotic precipitation at pH > 5), transient early Sb mobilization (<15 mg/L),
+    and Cu/S-depleted, Sb/Fe-enriched residual tetrahedrite rims without direct Rus/Sqr/Tth enzyme assays.
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/tetrahedrite-concentrate/2026-10-30T171004Z-marcin-f2dc1e.yaml
+  locator: Canonical EDIT history sidecar history/records/tetrahedrite-concentrate/2026-10-30T171004Z-marcin-f2dc1e.yaml
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: Canonical EDIT history sidecar history/records/tetrahedrite-concentrate/2026-10-30T171004Z-marcin-f2dc1e.yaml
+    (SHA-256 5c3f15468c3f48432f41a905a701aadcaa1d4eae26c6f74eb343545823bdbb35) records the Cycle 5 Stage
+    2 causal_graphs[0] update via scripts/curate_causal_graphs.py.
+  snapshot_sha256: 5c3f15468c3f48432f41a905a701aadcaa1d4eae26c6f74eb343545823bdbb35
+- evidence_id: validation
+  kind: validation
+  reference: data/records/tetrahedrite-concentrate.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and validate-history --base
+    main
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: data/records/tetrahedrite-concentrate.yaml and history/records/tetrahedrite-concentrate/2026-10-30T171004Z-marcin-f2dc1e.yaml
+    pass strict LinkML schema and history validation with 0 errors.
+  snapshot_sha256: 7d6164790fb1c371da1491bc91d07ba73c6c495098e2f89fe9ca38df7d235885
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 668 record(s); 0 failed.
+  target_ids:
+  - cmmmech:tetrahedrite-concentrate
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:tetrahedrite-concentrate
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_mechanism_synchronization
+  area: graph
+  topic: Synchronization of causal_graphs[0] with mechanisms[0] and primary source (DOI:10.3390/min15101036)
+  outcome: supported
+  summary: 'Synchronized causal_graphs[0] (ferrooxidans_tetrahedrite_bioleaching_graph) in data/records/tetrahedrite-concentrate.yaml
+    with mechanisms[0]: replaced generic bauxite-residue prose with the exact Kupka et al. (2025) Roznava-Strieborna
+    tetrahedrite concentrate bioleaching findings (qualitative Cu, Zn, Ag, and sulfate trends, transient
+    Sb mobilization, and Sb/Fe-enriched alteration rims without pooling inconsistent Fig. 2a vs Fig. 2b-c
+    units or asserting tripuhyite as confirmed), refined the substrate edge predicate from acts_on to
+    solubilizes, and aligned supports: partial.'
+  target_ids:
+  - cmmmech:tetrahedrite-concentrate
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: data/records/tetrahedrite-concentrate.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar history/records/tetrahedrite-concentrate/2026-10-30T171004Z-marcin-f2dc1e.yaml
+    and passing all LinkML and history validation gates.
+  target_ids:
+  - cmmmech:tetrahedrite-concentrate
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Tetrahedrite concentrate (cmmmech:tetrahedrite-concentrate) passes Cycle 5 Stage 2 causal-graph
+  review (scientific_review: true) at SHA-256 7d6164790fb1c371da1491bc91d07ba73c6c495098e2f89fe9ca38df7d235885:
+  Synchronized causal_graphs[0] (ferrooxidans_tetrahedrite_bioleaching_graph) in data/records/tetrahedrite-concentrate.yaml
+  with mechanisms[0]: replaced generic bauxite-residue prose with the exact Kupka et al. (2025) Roznava-Strieborna
+  tetrahedrite concentrate bioleaching findings (qualitative Cu, Zn, Ag, and sulfate trends, transient
+  Sb mobilization, and Sb/Fe-enriched alteration rims without pooling inconsistent Fig. 2a vs Fig. 2b-c
+  units or asserting tripuhyite as confirmed), refined the substrate edge predicate from acts_on to solubilizes,
+  and aligned supports: partial.'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes;
+  an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 5 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py.
+related_reviews: []
