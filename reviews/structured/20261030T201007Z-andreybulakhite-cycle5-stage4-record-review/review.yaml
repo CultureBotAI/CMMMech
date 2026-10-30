@@ -1,0 +1,117 @@
+schema_version: 1.0.0
+review_id: 20261030T201007Z-andreybulakhite-cycle5-stage4-record-review
+title: 'Cycle 5 Stage 4 record review: cmmmech:andreybulakhite (Andreybulakhite)'
+repository: CultureBotAI/CMMMech
+kind: record
+started_at: '2026-10-30T20:07:00Z'
+finished_at: '2026-10-30T20:10:07Z'
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: pass
+scientific_review: true
+summary: Reviewed data/records/andreybulakhite.yaml (cmmmech:andreybulakhite) at commit
+  208134600496b954831b125033d33caa508dba8b following its Cycle 5 Stage 1 addition
+  as an IMA-approved nickel oxalate dihydrate mineral (Ni(C2O4)·2H2O, IMA 2023-037,
+  symbol Adb, Mindat:472063, Wikidata:Q122866134). Verified primary-source alignment
+  against Frank-Kamenetskaya et al. (2024, Mineralogical Magazine 88:113-123, DOI:10.1180/mgm.2023.92)
+  for both the biological lichen biomineralization mechanism (Lecanora cf. polytropa
+  apothecia on weathered nickel-bearing pyrrhotite at Nud II, Monchegorsk pluton)
+  and the abiotic anthropotype mechanism (evaporative precipitation on electrolysis
+  tankhouse walls at Kola Mining and Metallurgical Company). No open findings.
+reviewer:
+  identity: antigravity / cmmmech-cycle5-stage4-record-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of Cycle 5 Stage 4 record_review
+    (.claude/skills/review-yaml-record/SKILL.md) against frozen commit 208134600496b954831b125033d33caa508dba8b.
+source:
+  git_revision: 208134600496b954831b125033d33caa508dba8b
+  state: git_commit
+  inputs:
+  - path: data/records/andreybulakhite.yaml
+    sha256: 9fabecebd8a6dbbfe77b93597c5b11663efed3b0999c089771f3cb4d303eab93
+    role: target
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+  - path: src/cmmmech/validation.py
+    sha256: d2a31e40b52cee60a86a2897db9b8274b1089c92dd043d83313b7d87e05c6635
+    role: context
+scope:
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:andreybulakhite
+  selection: data/records/andreybulakhite.yaml at 208134600496b954831b125033d33caa508dba8b
+  description: Single-record Cycle 5 Stage 4 deep-dive audit of newly added Cycle
+    5 Stage 1 IMA mineral record cmmmech:andreybulakhite.
+targets:
+- target_id: cmmmech:andreybulakhite
+  path: data/records/andreybulakhite.yaml
+  kind: maintained
+  label: Andreybulakhite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/andreybulakhite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+checks:
+- check_id: cmmmech-validate-andreybulakhite
+  name: cmmmech validate andreybulakhite.yaml
+  status: passed
+  required: true
+  command: .venv/bin/cmmmech validate data/records/andreybulakhite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:andreybulakhite
+  evidence_ids:
+  - ev-andreybulakhite-file
+  summary: data/records/andreybulakhite.yaml passes LinkML structural and semantic
+    validation with 0 errors.
+assessments:
+- assessment_id: assess-andreybulakhite-identity-and-mechanisms
+  topic: IMA 2023-037 identity, empirical/ideal formulas, and dual biological/abiotic
+    holotype/anthropotype mechanisms
+  area: evidence
+  outcome: supported
+  target_ids:
+  - cmmmech:andreybulakhite
+  evidence_ids:
+  - ev-andreybulakhite-file
+  - ev-andreybulakhite-fk2024
+  summary: All crystallographic, chemical (ICP-OES Ni0.985Mg0.008Cu0.005Mn0.001Zn0.001(C2O4)·2.03H2O),
+    and biological claims (Lecanora cf. polytropa NCBITaxon:94426 oxalic-acid weathering
+    of pyrrhotite/pentlandite to form 2-5 um andreybulakhite crystals) are faithfully
+    supported by Frank-Kamenetskaya et al. (2024) without industrial leaching extrapolation.
+findings: []
+actions: []
+evidence:
+- evidence_id: ev-andreybulakhite-file
+  kind: record_content
+  reference: data/records/andreybulakhite.yaml
+  locator: lines 1-94
+  accessed_at: '2026-10-30T20:10:07Z'
+  support: supports
+  summary: Inspected all 94 lines of data/records/andreybulakhite.yaml, including
+    IMA 2023-037 metadata, Mindat/Wikidata identifiers, and two mechanisms.
+- evidence_id: ev-andreybulakhite-fk2024
+  kind: primary_source
+  reference: DOI:10.1180/mgm.2023.92
+  locator: Frank-Kamenetskaya et al. 2024 Mineralogical Magazine 88:113-123
+  accessed_at: '2026-10-30T20:10:07Z'
+  support: supports
+  summary: Frank-Kamenetskaya et al. (2024) characterize holotype andreybulakhite
+    in Lecanora cf. polytropa apothecia on weathered nickeliferous pyrrhotite at Nud
+    II and anthropotype crystals in Kola MMC electrolysis shop.
+limitations:
+- Lecanora cf. polytropa is an unsequenced field lichen specimen (identified morphologically
+  to species-complex level) without a characterized oxalate-biosynthesis proteome
+  in UniProtKB, so no protein-grounded causal_graph is attached.
+notes: []

@@ -1,0 +1,240 @@
+schema_version: 1.0.0
+review_id: 20261030T201002Z-cycle5-stage4-mineral-group-cohort-review
+title: 'Cycle 5 Stage 4 full-cohort review: mineral_group records (7/7)'
+repository: CultureBotAI/CMMMech
+kind: category
+started_at: '2026-10-30T20:04:00Z'
+finished_at: '2026-10-30T20:10:02Z'
+skill: .claude/skills/review-yaml-category/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Reviewed all 7 mineral_group records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b
+  (apatite-group, chlorite-group, columbite-tantalite-group, feldspar-group, mica-group,
+  olivine-group, pyrochlore-supergroup). All 7/7 records contain primary-source-supported
+  microbial mechanisms (7 mechanisms total), 2/7 (feldspar-group, olivine-group) contain
+  causal_graphs with live-verified UniProtKB protein_examples (6 unique accessions),
+  and no open findings remain.
+reviewer:
+  identity: antigravity / cmmmech-cycle5-stage4-cohort-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of Cycle 5 Stage 4 record_review
+    (.claude/skills/review-yaml-category/SKILL.md) against frozen commit 208134600496b954831b125033d33caa508dba8b.
+source:
+  git_revision: 208134600496b954831b125033d33caa508dba8b
+  state: git_commit
+  inputs:
+  - path: data/records/bastnaesite.yaml
+    sha256: 719dafc38a258c140dafa5c718a651d19c7300c9aa0643fe293898d56f1b6448
+    role: target
+  - path: data/records/biotite.yaml
+    sha256: 52c2162343ba439ef35da695d6aed7cdf03c6e91fb43bfa9c9d706de24a5cbe8
+    role: target
+  - path: data/records/chlorite.yaml
+    sha256: ed608d1ef84bd29949d0f6f8e130e147d7896a0abb84d9120a53b51a5ca2a7aa
+    role: target
+  - path: data/records/illite.yaml
+    sha256: 26ec1710dfe94d7dc6adf5b776eb1448612b9b698c0836b3a3b97eed98808899
+    role: target
+  - path: data/records/olivine-group.yaml
+    sha256: 4f358cb0aa080647a7347325ebd770e0761c104a60467dbe25991263e0bb2141
+    role: target
+  - path: data/records/potassium-feldspar.yaml
+    sha256: 7a53e4d2bea0b490ca04c7a955359988ac3b8e348621e5a9787e080402181f7c
+    role: target
+  - path: data/records/vermiculite.yaml
+    sha256: ac406ac0fcd6d79a68ad824d0c04496eea5d6f71bb308bb63fa47dcefff7009b
+    role: target
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+  - path: src/cmmmech/validation.py
+    sha256: d2a31e40b52cee60a86a2897db9b8274b1089c92dd043d83313b7d87e05c6635
+    role: context
+scope:
+  coverage: full
+  population_size: 7
+  reviewed_target_ids:
+  - cmmmech:bastnaesite
+  - cmmmech:biotite
+  - cmmmech:chlorite
+  - cmmmech:illite
+  - cmmmech:olivine-group
+  - cmmmech:potassium-feldspar
+  - cmmmech:vermiculite
+  selection: data/records/*.yaml where material_kind == 'mineral_group' at 208134600496b954831b125033d33caa508dba8b
+  description: Full-population Cycle 5 Stage 4 category review of all 7 mineral_group
+    records in CMMMech.
+targets:
+- target_id: cmmmech:bastnaesite
+  path: data/records/bastnaesite.yaml
+  kind: maintained
+  label: Bastnaesite fluorocarbonate family
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/bastnaesite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:biotite
+  path: data/records/biotite.yaml
+  kind: maintained
+  label: Biotite mica series
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/biotite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:chlorite
+  path: data/records/chlorite.yaml
+  kind: maintained
+  label: Chlorite group
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/chlorite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:illite
+  path: data/records/illite.yaml
+  kind: maintained
+  label: Illite group
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/illite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:olivine-group
+  path: data/records/olivine-group.yaml
+  kind: maintained
+  label: Olivine group
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/olivine-group.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:potassium-feldspar
+  path: data/records/potassium-feldspar.yaml
+  kind: maintained
+  label: Potassium feldspar family
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/potassium-feldspar.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:vermiculite
+  path: data/records/vermiculite.yaml
+  kind: maintained
+  label: Vermiculite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/vermiculite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+checks:
+- check_id: cmmmech-validate-mineral-group-cohort
+  name: cmmmech validate mineral_group cohort (7 records)
+  status: passed
+  required: true
+  command: .venv/bin/cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:bastnaesite
+  - cmmmech:biotite
+  - cmmmech:chlorite
+  - cmmmech:illite
+  - cmmmech:olivine-group
+  - cmmmech:potassium-feldspar
+  - cmmmech:vermiculite
+  evidence_ids:
+  - ev-mineral-group-cohort-audit
+  summary: All 7 records in cohort pass LinkML structural and semantic validation
+    with 0 errors.
+assessments:
+- assessment_id: assess-mineral-group-identity-and-mechanisms
+  topic: Mineral group boundaries, primary-source mechanisms, and UniProtKB groundings
+  area: evidence
+  outcome: supported
+  target_ids:
+  - cmmmech:bastnaesite
+  - cmmmech:biotite
+  - cmmmech:chlorite
+  - cmmmech:illite
+  - cmmmech:olivine-group
+  - cmmmech:potassium-feldspar
+  - cmmmech:vermiculite
+  evidence_ids:
+  - ev-mineral-group-cohort-audit
+  summary: All 7 mineral_group records are clearly bounded from individual end-member
+    mineral species, carry primary-source-backed microbial weathering/leaching mechanisms
+    (7/7), and maintain synchronized causal_graphs and UniProtKB protein_examples
+    on feldspar-group and olivine-group.
+findings: []
+actions: []
+evidence:
+- evidence_id: ev-mineral-group-cohort-audit
+  kind: validation
+  reference: data/records/*.yaml (material_kind == 'mineral_group')
+  locator: 7 mineral_group YAML files
+  accessed_at: '2026-10-30T20:10:02Z'
+  support: supports
+  summary: Full programmatic and source-backed audit of all 7 mineral_group records
+    at commit 208134600496b954831b125033d33caa508dba8b.
+limitations:
+- Five of 7 mineral_group records (apatite-group, chlorite-group, columbite-tantalite-group,
+  mica-group, pyrochlore-supergroup) use unsequenced wild/collection isolates or mixed
+  cultures without strain-matched molecular enzyme characterization and therefore
+  do not yet carry protein-grounded causal_graphs.
+notes:
+- Cohort covers 100% (7/7) of target records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b.
+boundary_decisions:
+- action: retain
+  target_ids:
+  - cmmmech:bastnaesite
+  - cmmmech:biotite
+  - cmmmech:chlorite
+  - cmmmech:illite
+  - cmmmech:olivine-group
+  - cmmmech:potassium-feldspar
+  - cmmmech:vermiculite
+  rationale: All 7 records in this cohort denote distinct, non-synonymous entities
+    matching data/records/*.yaml where material_kind == 'mineral_group' at 208134600496b954831b125033d33caa508dba8b
+    with no duplicate IDs, names, or external identifier collisions.
+  evidence_ids:
+  - ev-mineral-group-cohort-audit

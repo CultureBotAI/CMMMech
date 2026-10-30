@@ -1,0 +1,125 @@
+schema_version: 1.0.0
+run_id: mech-goal-sequence-20261019
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+cycle: 5
+stage: 4
+revision: 1
+source_revision: 208134600496b954831b125033d33caa508dba8b
+frozen_inventory_count: 668
+structured_review_bundles:
+- review_id: 20261030T201000Z-cycle5-stage4-element-cohort-review
+  kind: category
+  population_size: 66
+  reviewed_count: 66
+  verdict: pass_with_limitations
+  path: reviews/structured/20261030T201000Z-cycle5-stage4-element-cohort-review/review.yaml
+- review_id: 20261030T201001Z-cycle5-stage4-mineral-cohort-review
+  kind: category
+  population_size: 417
+  reviewed_count: 417
+  verdict: pass_with_limitations
+  path: reviews/structured/20261030T201001Z-cycle5-stage4-mineral-cohort-review/review.yaml
+- review_id: 20261030T201002Z-cycle5-stage4-mineral-group-cohort-review
+  kind: category
+  population_size: 7
+  reviewed_count: 7
+  verdict: pass_with_limitations
+  path: reviews/structured/20261030T201002Z-cycle5-stage4-mineral-group-cohort-review/review.yaml
+- review_id: 20261030T201003Z-cycle5-stage4-commodity-cohort-review
+  kind: category
+  population_size: 36
+  reviewed_count: 36
+  verdict: pass_with_limitations
+  path: reviews/structured/20261030T201003Z-cycle5-stage4-commodity-cohort-review/review.yaml
+- review_id: 20261030T201004Z-cycle5-stage4-primary-resource-cohort-review
+  kind: category
+  population_size: 31
+  reviewed_count: 31
+  verdict: pass_with_limitations
+  path: reviews/structured/20261030T201004Z-cycle5-stage4-primary-resource-cohort-review/review.yaml
+- review_id: 20261030T201005Z-cycle5-stage4-secondary-resource-cohort-review
+  kind: category
+  population_size: 111
+  reviewed_count: 111
+  verdict: pass_with_limitations
+  path: reviews/structured/20261030T201005Z-cycle5-stage4-secondary-resource-cohort-review/review.yaml
+- review_id: 20261030T201006Z-cycle5-stage4-causal-graphs-cohort-review
+  kind: category
+  population_size: 120
+  reviewed_count: 120
+  verdict: pass_with_limitations
+  path: reviews/structured/20261030T201006Z-cycle5-stage4-causal-graphs-cohort-review/review.yaml
+- review_id: 20261030T201007Z-andreybulakhite-cycle5-stage4-record-review
+  kind: record
+  population_size: 1
+  reviewed_count: 1
+  verdict: pass
+  path: reviews/structured/20261030T201007Z-andreybulakhite-cycle5-stage4-record-review/review.yaml
+- review_id: 20261030T201008Z-tetrahedrite-concentrate-cycle5-stage4-record-review
+  kind: record
+  population_size: 1
+  reviewed_count: 1
+  verdict: pass_with_limitations
+  path: reviews/structured/20261030T201008Z-tetrahedrite-concentrate-cycle5-stage4-record-review/review.yaml
+- review_id: 20261030T201009Z-waste-liquid-crystal-display-panels-cycle5-stage4-record-review
+  kind: record
+  population_size: 1
+  reviewed_count: 1
+  verdict: pass_with_limitations
+  path: reviews/structured/20261030T201009Z-waste-liquid-crystal-display-panels-cycle5-stage4-record-review/review.yaml
+findings:
+- finding_id: cmmmech-cycle5-stage4-finding-0001
+  issue_key: cmmmech.records.criticality-before-sources-key-order
+  review_id: 20261030T201000Z-cycle5-stage4-element-cohort-review
+  status: open
+  severity: minor
+  category: representation
+  target_ids:
+  - cmmmech:chromium
+  - cmmmech:electrical-steel
+  - cmmmech:hafnium
+  - cmmmech:manganese
+  - cmmmech:praseodymium
+  - cmmmech:rare-earth-element-commodities
+  - cmmmech:scandium
+  - cmmmech:selenium
+  - cmmmech:silicon-carbide
+  - cmmmech:silicon
+  - cmmmech:synthetic-graphite
+  - cmmmech:uranium
+  - cmmmech:vanadium
+  summary: Across the 668-record corpus, 13 records (chromium.yaml, electrical-steel.yaml, hafnium.yaml,
+    manganese.yaml, praseodymium.yaml, rare-earth-element-commodities.yaml, scandium.yaml, selenium.yaml,
+    silicon-carbide.yaml, silicon.yaml, synthetic-graphite.yaml, uranium.yaml, vanadium.yaml) serialize
+    top-level 'criticality' before 'sources', whereas CriticalMineralRecord in src/cmmmech/schema/cmmmech.yaml
+    and CANONICAL_RECORD_KEYS in scripts/new_history.py place 'sources' before 'criticality'.
+- finding_id: cmmmech-cycle5-stage4-finding-0002
+  issue_key: cmmmech.tetrahedrite-concentrate.tth-hydrolase-label-and-edge-explanation
+  review_id: 20261030T201008Z-tetrahedrite-concentrate-cycle5-stage4-record-review
+  status: open
+  severity: minor
+  category: graph
+  target_ids:
+  - cmmmech:tetrahedrite-concentrate
+  summary: In data/records/tetrahedrite-concentrate.yaml (cmmmech:tetrahedrite-concentrate), causal_graphs[0]
+    (ferrooxidans_tetrahedrite_bioleaching_graph) node tth_hydrolase (lines 304-307) retains single-species
+    label 'Tth tetrathionate hydrolase (tth / AFE_0029)' and generic description without Acidithiobacillus
+    ferrivorans tetH (Acife_0037, UniProtKB:A0A060URH6), whereas sibling node sqr_reductase (lines 209-212)
+    and edges[0].evidence[0].explanation (line 380) explicitly name both experimental species arms (A.
+    ferrooxidans and A. ferrivorans). In addition, edges[0].evidence[0].explanation (line 380) states
+    'individual sqr/tth/tetH genes were not mutated', omitting sqr2 (Acife_2586, UniProtKB:G2JTR4).
+- finding_id: cmmmech-cycle5-stage4-finding-0003
+  issue_key: cmmmech.waste-liquid-crystal-display-panels.tth-hydrolase-dual-species-label
+  review_id: 20261030T201009Z-waste-liquid-crystal-display-panels-cycle5-stage4-record-review
+  status: open
+  severity: minor
+  category: graph
+  target_ids:
+  - cmmmech:waste-liquid-crystal-display-panels
+  summary: In data/records/waste-liquid-crystal-display-panels.yaml (cmmmech:waste-liquid-crystal-display-panels),
+    causal_graphs[0] (ferrooxidans_lcd_indium_bioleaching_graph) node tth_hydrolase (lines 297-300) retains
+    single-species label 'Tth tetrathionate hydrolase (tth / AFE_0029)' and generic description without
+    the two grounded Acidithiobacillus thiooxidans ATCC 19377 tth paralogs (GCD22_14205 UniProtKB:A0A5P9XPU3
+    and GCD22_02315 UniProtKB:A0A5P9XS05), whereas sibling node sqr_reductase (lines 204-207) explicitly
+    lists both A. ferrooxidans and A. thiooxidans paralog loci.
