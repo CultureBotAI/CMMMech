@@ -69,7 +69,7 @@ the 241-page IMA Master List), bulk `.full.txt` extractions, or raw conversation
 transcripts; instead inspect bounded text passages (`<= 2-8 KB` per page/passage)
 via `python scripts/index_bounded_pdf_passages.py` or single-page
 `mutool draw -q -F txt <pdf> <page>`, and use single-page PNG rendering
-(`python scripts/render_pages.py <pdf> <page> --dpi 150`) whenever dense
+(`mutool draw -q -r 150 -o <page.png> <pdf> <page>`) whenever dense
 chemical-composition or crystal-structure tables have ambiguous column alignment.
 Verify source identity, edition/version and access dates; keep `Source.title`
 as a concise bibliographic title (`<= 1000` characters, without embedded

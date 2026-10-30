@@ -25,7 +25,7 @@ This skill does not authorize shared messages, issues, PRs, merging, or admissio
   `python scripts/index_bounded_pdf_passages.py` or single-page
   `mutool draw -q -F txt <pdf> <page>`, and visually confirm dense composition
   or crystal-structure table alignment on single rendered pages
-  (`python scripts/render_pages.py <pdf> <page> --dpi 150`). Verify every
+  (`mutool draw -q -r 150 -o <page.png> <pdf> <page>`). Verify every
   retained numeric assertion against a compact claim-evidence table (source
   SHA-256 hash, printed page/table, row/column/sample label, unit, measurement
   method, and `measured`/`calculated`/`inferred`/`censored`/`not_determined`

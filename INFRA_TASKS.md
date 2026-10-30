@@ -245,9 +245,9 @@ tasks:
 - **Evidence paths**: `src/cmmmech/history.py`, `scripts/curate_causal_graphs.py`, `tests/test_history.py`, `tests/test_curate_causal_graphs.py`
 - **Priority**: low
 - **Dependencies**: `cmmmech-infra-0004`, `cmmmech-infra-0006`
-- **Issue**: https://github.com/CultureBotAI/CMMMech/issues/866 (`IGRP-C4S6-003`, cross-referencing https://github.com/CultureBotAI/CMMMech/issues/822)
+- **Issue**: https://github.com/CultureBotAI/CMMMech/issues/822 (`IGRP-C4S6-003`, companion issue https://github.com/CultureBotAI/CMMMech/issues/866)
 - **Status**: `resolved`
-- **Disposition**: Resolved in Cycle 4 Stage 6 (issue `#866`, `IGRP-C4S6-003`, cross-referencing `#822`) by adding `_write_exclusive()` fallback when `NamedTemporaryFile(dir=path.parent)` or `os.link()` raises `PermissionError` in `src/cmmmech/history.py` `cmd_new()` and adding in-place `path.write_text(..., encoding="utf-8")` fallback when `NamedTemporaryFile(dir=path.parent)` or `os.replace()` raises `PermissionError` in `scripts/curate_causal_graphs.py` `write_record_atomic()`, verified by unit tests in `tests/test_history.py` and `tests/test_curate_causal_graphs.py`.
+- **Disposition**: Resolved in Cycle 4 Stage 6 (issue `#822` and companion issue `#866`, `IGRP-C4S6-003`) by adding `_write_exclusive()` fallback when `NamedTemporaryFile(dir=path.parent)` or `os.link()` raises `PermissionError` in `src/cmmmech/history.py` `cmd_new()` and adding in-place `path.write_text(..., encoding="utf-8")` fallback when `NamedTemporaryFile(dir=path.parent)` or `os.replace()` raises `PermissionError` in `scripts/curate_causal_graphs.py` `write_record_atomic()`, verified by unit tests in `tests/test_history.py` and `tests/test_curate_causal_graphs.py`.
 
 
 

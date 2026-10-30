@@ -74,7 +74,7 @@ transcripts; instead extract bounded text windows (`<= 2-8 KB` per page/passage)
 using `python scripts/index_bounded_pdf_passages.py` (which writes `summary.json`,
 `passage-map.tsv`, and `<= 2 KB` passage files) or single-page
 `mutool draw -q -F txt <pdf> <page>`, and render only individual pages via
-`python scripts/render_pages.py <pdf> <page> --dpi 150` when table-column
+`mutool draw -q -r 150 -o <page.png> <pdf> <page>` when table-column
 alignment or figure inspection requires visual confirmation. Resolve DOI or
 accession and confirm title, authors/owner, version and material/organism scope.
 For a downloadable dataset, inspect its data dictionary and a relevant sample;

@@ -69,7 +69,7 @@ figures or tables in evidence explanations. Inspect primary-source PDFs through
 bounded text passages (`<= 2-8 KB` per page/window via
 `python scripts/index_bounded_pdf_passages.py` or single-page
 `mutool draw -q -F txt <pdf> <page>`) and single-page visual rendering
-(`python scripts/render_pages.py <pdf> <page> --dpi 150`) whenever dense
+(`mutool draw -q -r 150 -o <page.png> <pdf> <page>`) whenever dense
 composition or crystal-structure tables have ambiguous column alignment; never
 load entire multi-page PDFs, master-list catalogues, or `.full.txt` dumps into
 chat context. Verify every retained numeric assertion against a compact
