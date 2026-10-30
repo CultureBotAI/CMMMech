@@ -1,0 +1,302 @@
+# Cycle 5 Stage 3 protein-examples review of Electroplating sludge (cmmmech:electroplating-sludge)
+
+- Review: 20261030T191200Z-electroplating-sludge-cycle5-stage3-protein-examples-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-30T19:10:00Z
+- Finished UTC: 2026-10-30T19:12:00Z
+- Reviewer: antigravity / cmmmech-cycle5-stage3-protein-examples-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Electroplating sludge (cmmmech:electroplating-sludge) passes Cycle 5 Stage 3 protein-examples review (scientific_review: true) at SHA-256 52fe4cc69ac0807a77d921c2de8c35a25bf812c345ed1854b4b46c58e6cf281b: Enriched data/records/electroplating-sludge.yaml (SHA-256 52fe4cc69ac0807a77d921c2de8c35a25bf812c345ed1854b4b46c58e6cf281b) across causal_graph 'chennai_sulfur_culture_leaching_graph' (mechanism_ref: chennai_sulfur_culture_leaching, sqr_reductase node grounded with UniProtKB:B7J411 (sqr, B7J411_ACIF2, UP000001362)); causal_graph 'cell_removed_ferric_acid_ultrasound_graph' (mechanism_ref: cell_removed_ferric_acid_ultrasound, sqr_reductase node grounded with UniProtKB:B7J411 (sqr, B7J411_ACIF2, UP000001362)) with 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples, preserving supports: partial and explicit representational-grounding caveats from primary source(s) prabhu2015, kordloo2026. Live-verified UniProtKB REST API metadata for UniProtKB:B7J411 (entry_name: B7J411_ACIF2, protein_name: Sulfide quinone reductase, putative, gene_symbol: sqr, ordered locus AFE_0267, 375 aa, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362, InterPro:IPR036188/IPR023753/IPR052541, Pfam:PF07992).
+
+## Scope And Provenance
+
+Cycle 5 Stage 3 protein-examples review of data/records/electroplating-sludge.yaml (SHA-256 52fe4cc69ac0807a77d921c2de8c35a25bf812c345ed1854b4b46c58e6cf281b) and its canonical EDIT history sidecar(s) (history/records/electroplating-sludge/2026-10-30T191017Z-claude-6bedd4.yaml) verifying exact UniProtKB accession, proteome, organism, domain, and partial-support scope across causal_graph 'chennai_sulfur_culture_leaching_graph' (mechanism_ref: chennai_sulfur_culture_leaching, sqr_reductase node grounded with UniProtKB:B7J411 (sqr, B7J411_ACIF2, UP000001362)); causal_graph 'cell_removed_ferric_acid_ultrasound_graph' (mechanism_ref: cell_removed_ferric_acid_ultrasound, sqr_reductase node grounded with UniProtKB:B7J411 (sqr, B7J411_ACIF2, UP000001362)).
+
+Selection: Cycle 5 Stage 3 protein_examples enrichment for cmmmech:electroplating-sludge
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 887cb85593a3bf412dad024896bfff8e5e5b232d.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:electroplating-sludge | data/records/electroplating-sludge.yaml | maintained | Electroplating sludge |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:electroplating-sludge | Checked 668 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:electroplating-sludge | All history sidecars pass validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Verification of UniProtKB ProteinExample grounding and parity across causal_graph 'chennai_sulfur_culture_leaching_graph' (mechanism_ref: chennai_sulfur_culture_leaching, sqr_reductase node grounded with UniProtKB:B7J411 (sqr, B7J411_ACIF2, UP000001362)); causal_graph 'cell_removed_ferric_acid_ultrasound_graph' (mechanism_ref: cell_removed_ferric_acid_ultrasound, sqr_reductase node grounded with UniProtKB:B7J411 (sqr, B7J411_ACIF2, UP000001362))
+
+graph: supported. Targets: cmmmech:electroplating-sludge.
+
+Enriched data/records/electroplating-sludge.yaml (SHA-256 52fe4cc69ac0807a77d921c2de8c35a25bf812c345ed1854b4b46c58e6cf281b) across causal_graph 'chennai_sulfur_culture_leaching_graph' (mechanism_ref: chennai_sulfur_culture_leaching, sqr_reductase node grounded with UniProtKB:B7J411 (sqr, B7J411_ACIF2, UP000001362)); causal_graph 'cell_removed_ferric_acid_ultrasound_graph' (mechanism_ref: cell_removed_ferric_acid_ultrasound, sqr_reductase node grounded with UniProtKB:B7J411 (sqr, B7J411_ACIF2, UP000001362)) with 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples, preserving supports: partial and explicit representational-grounding caveats from primary source(s) prabhu2015, kordloo2026. Live-verified UniProtKB REST API metadata for UniProtKB:B7J411 (entry_name: B7J411_ACIF2, protein_name: Sulfide quinone reductase, putative, gene_symbol: sqr, ordered locus AFE_0267, 375 aa, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362, InterPro:IPR036188/IPR023753/IPR052541, Pfam:PF07992).
+
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
+
+provenance: supported. Targets: cmmmech:electroplating-sludge.
+
+data/records/electroplating-sludge.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/electroplating-sludge/2026-10-30T191017Z-claude-6bedd4.yaml (SHA-256 d04a6a00a40eefcfdac1332048778f0355164588c6430feb9a7f367306b75903): Added live-verified Acidithiobacillus ferrooxidans ATCC 23270 Sqr paralog (UniProtKB:B7J411, sqr / AFE_0267) to sqr_reductase across both causal graphs in electroplating-sludge.yaml. — ) and passing all LinkML and history validation gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/electroplating-sludge.yaml; Working-tree record data/records/electroplating-sludge.yaml (mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples) | supports | Enriched data/records/electroplating-sludge.yaml (SHA-256 52fe4cc69ac0807a77d921c2de8c35a25bf812c345ed1854b4b46c58e6cf281b) across causal_graph 'chennai_sulfur_culture_leaching_graph' (mechanism_ref: chennai_sulfur_culture_leaching, sqr_reductase node grounded with UniProtKB:B7J411 (sqr, B7J411_ACIF2, UP000001362)); causal_graph 'cell_removed_ferric_acid_ultrasound_graph' (mechanism_ref: cell_removed_ferric_acid_ultrasound, sqr_reductase node grounded with UniProtKB:B7J411 (sqr, B7J411_ACIF2, UP000001362)) with 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples, preserving supports: partial and explicit representational-grounding caveats from primary source(s) prabhu2015, kordloo2026. |
+| primary_source | DOI:10.15244/pjoes/30931; prabhu2015: Sundramurthy Venkatesa Prabhu and Rajoo Baskar (2015). Detoxification of Electroplating Sludge by Bioleaching: Process and Kinetic Aspects. Polish Journal of Environmental Studies 24(3):1249-1257. DOI 10.15244/pjoes/30931. Complete original pp. 1249-1257, Figures 1-10 and Tables 1-4 inspected; downloaded PDF has an additional blank page. (https://doi.org/10.15244/pjoes/30931); kordloo2026: Kordloo et al. (2026). Enhanced detoxification and valuable metal extraction from electroplating sludge via ultrasonic-assisted ferric sulfate bio acid. Scientific Reports 16:6799. DOI 10.1038/s41598-026-37924-x. Final 13-page publisher PDF, Figures 1-5, Tables 1-4 and original Supplementary Material 1 DOCX (Figures S1-S6; Tables S1-S3) inspected. (https://doi.org/10.1038/s41598-026-37924-x) | supports | Live-verified UniProtKB REST API metadata for UniProtKB:B7J411 (entry_name: B7J411_ACIF2, protein_name: Sulfide quinone reductase, putative, gene_symbol: sqr, ordered locus AFE_0267, 375 aa, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362, InterPro:IPR036188/IPR023753/IPR052541, Pfam:PF07992). Primary mechanism source(s) (prabhu2015: Sundramurthy Venkatesa Prabhu and Rajoo Baskar (2015). Detoxification of Electroplating Sludge by Bioleaching: Process and Kinetic Aspects. Polish Journal of Environmental Studies 24(3):1249-1257. DOI 10.15244/pjoes/30931. Complete original pp. 1249-1257, Figures 1-10 and Tables 1-4 inspected; downloaded PDF has an additional blank page. (https://doi.org/10.15244/pjoes/30931); kordloo2026: Kordloo et al. (2026). Enhanced detoxification and valuable metal extraction from electroplating sludge via ultrasonic-assisted ferric sulfate bio acid. Scientific Reports 16:6799. DOI 10.1038/s41598-026-37924-x. Final 13-page publisher PDF, Figures 1-5, Tables 1-4 and original Supplementary Material 1 DOCX (Figures S1-S6; Tables S1-S3) inspected. (https://doi.org/10.1038/s41598-026-37924-x)) report whole-cell or culture-level sulfur/iron oxidation without gene-level sqr knockouts or proteomics; therefore supports: partial is strictly preserved on all added ProteinExample evidence items. |
+| edit_history | history/records/electroplating-sludge/2026-10-30T191017Z-claude-6bedd4.yaml; Canonical EDIT history sidecar history/records/electroplating-sludge/2026-10-30T191017Z-claude-6bedd4.yaml | supports | Canonical EDIT history sidecar history/records/electroplating-sludge/2026-10-30T191017Z-claude-6bedd4.yaml (SHA-256 d04a6a00a40eefcfdac1332048778f0355164588c6430feb9a7f367306b75903): Added live-verified Acidithiobacillus ferrooxidans ATCC 23270 Sqr paralog (UniProtKB:B7J411, sqr / AFE_0267) to sqr_reductase across both causal graphs in electroplating-sludge.yaml. —  |
+| validation | data/records/electroplating-sludge.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/electroplating-sludge.yaml and history/records/electroplating-sludge/2026-10-30T191017Z-claude-6bedd4.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed during Cycle 5 Stage 3 (protein_examples) using scripts/curate_causal_graphs.py.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261030T191200Z-electroplating-sludge-cycle5-stage3-protein-examples-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 5 Stage 3 protein-examples review of Electroplating sludge (cmmmech:electroplating-sludge)
+started_at: '2026-10-30T19:10:00Z'
+finished_at: '2026-10-30T19:12:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle5-stage3-protein-examples-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 5 Stage 3 ProteinExample enrichment in data/records/electroplating-sludge.yaml
+    (SHA-256 52fe4cc69ac0807a77d921c2de8c35a25bf812c345ed1854b4b46c58e6cf281b) against
+    live UniProtKB REST API metadata and cited primary source(s) prabhu2015, kordloo2026.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 887cb85593a3bf412dad024896bfff8e5e5b232d
+  state: working_tree
+  inputs:
+  - path: data/records/electroplating-sludge.yaml
+    sha256: 52fe4cc69ac0807a77d921c2de8c35a25bf812c345ed1854b4b46c58e6cf281b
+    role: target
+  - path: history/records/electroplating-sludge/2026-10-30T191017Z-claude-6bedd4.yaml
+    sha256: d04a6a00a40eefcfdac1332048778f0355164588c6430feb9a7f367306b75903
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:electroplating-sludge
+  path: data/records/electroplating-sludge.yaml
+  label: Electroplating sludge
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/electroplating-sludge.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/electroplating-sludge/2026-10-30T191017Z-claude-6bedd4.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 5 Stage 3 protein-examples review of data/records/electroplating-sludge.yaml
+    (SHA-256 52fe4cc69ac0807a77d921c2de8c35a25bf812c345ed1854b4b46c58e6cf281b) and
+    its canonical EDIT history sidecar(s) (history/records/electroplating-sludge/2026-10-30T191017Z-claude-6bedd4.yaml)
+    verifying exact UniProtKB accession, proteome, organism, domain, and partial-support
+    scope across causal_graph ''chennai_sulfur_culture_leaching_graph'' (mechanism_ref:
+    chennai_sulfur_culture_leaching, sqr_reductase node grounded with UniProtKB:B7J411
+    (sqr, B7J411_ACIF2, UP000001362)); causal_graph ''cell_removed_ferric_acid_ultrasound_graph''
+    (mechanism_ref: cell_removed_ferric_acid_ultrasound, sqr_reductase node grounded
+    with UniProtKB:B7J411 (sqr, B7J411_ACIF2, UP000001362)).'
+  selection: Cycle 5 Stage 3 protein_examples enrichment for cmmmech:electroplating-sludge
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:electroplating-sludge
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/electroplating-sludge.yaml
+  locator: Working-tree record data/records/electroplating-sludge.yaml (mechanisms[].protein_examples
+    and causal_graphs[].nodes[].protein_examples)
+  accessed_at: '2026-10-30T19:11:30Z'
+  support: supports
+  summary: 'Enriched data/records/electroplating-sludge.yaml (SHA-256 52fe4cc69ac0807a77d921c2de8c35a25bf812c345ed1854b4b46c58e6cf281b)
+    across causal_graph ''chennai_sulfur_culture_leaching_graph'' (mechanism_ref:
+    chennai_sulfur_culture_leaching, sqr_reductase node grounded with UniProtKB:B7J411
+    (sqr, B7J411_ACIF2, UP000001362)); causal_graph ''cell_removed_ferric_acid_ultrasound_graph''
+    (mechanism_ref: cell_removed_ferric_acid_ultrasound, sqr_reductase node grounded
+    with UniProtKB:B7J411 (sqr, B7J411_ACIF2, UP000001362)) with 100% parity between
+    mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples, preserving
+    supports: partial and explicit representational-grounding caveats from primary
+    source(s) prabhu2015, kordloo2026.'
+  snapshot_sha256: 52fe4cc69ac0807a77d921c2de8c35a25bf812c345ed1854b4b46c58e6cf281b
+- evidence_id: primary_source
+  kind: primary_source
+  reference: DOI:10.15244/pjoes/30931
+  locator: 'prabhu2015: Sundramurthy Venkatesa Prabhu and Rajoo Baskar (2015). Detoxification
+    of Electroplating Sludge by Bioleaching: Process and Kinetic Aspects. Polish Journal
+    of Environmental Studies 24(3):1249-1257. DOI 10.15244/pjoes/30931. Complete original
+    pp. 1249-1257, Figures 1-10 and Tables 1-4 inspected; downloaded PDF has an additional
+    blank page. (https://doi.org/10.15244/pjoes/30931); kordloo2026: Kordloo et al.
+    (2026). Enhanced detoxification and valuable metal extraction from electroplating
+    sludge via ultrasonic-assisted ferric sulfate bio acid. Scientific Reports 16:6799.
+    DOI 10.1038/s41598-026-37924-x. Final 13-page publisher PDF, Figures 1-5, Tables
+    1-4 and original Supplementary Material 1 DOCX (Figures S1-S6; Tables S1-S3) inspected.
+    (https://doi.org/10.1038/s41598-026-37924-x)'
+  accessed_at: '2026-10-30T19:11:30Z'
+  support: supports
+  summary: 'Live-verified UniProtKB REST API metadata for UniProtKB:B7J411 (entry_name:
+    B7J411_ACIF2, protein_name: Sulfide quinone reductase, putative, gene_symbol:
+    sqr, ordered locus AFE_0267, 375 aa, TREMBL, NCBITaxon:243159 Acidithiobacillus
+    ferrooxidans ATCC 23270, UP000001362, InterPro:IPR036188/IPR023753/IPR052541,
+    Pfam:PF07992). Primary mechanism source(s) (prabhu2015: Sundramurthy Venkatesa
+    Prabhu and Rajoo Baskar (2015). Detoxification of Electroplating Sludge by Bioleaching:
+    Process and Kinetic Aspects. Polish Journal of Environmental Studies 24(3):1249-1257.
+    DOI 10.15244/pjoes/30931. Complete original pp. 1249-1257, Figures 1-10 and Tables
+    1-4 inspected; downloaded PDF has an additional blank page. (https://doi.org/10.15244/pjoes/30931);
+    kordloo2026: Kordloo et al. (2026). Enhanced detoxification and valuable metal
+    extraction from electroplating sludge via ultrasonic-assisted ferric sulfate bio
+    acid. Scientific Reports 16:6799. DOI 10.1038/s41598-026-37924-x. Final 13-page
+    publisher PDF, Figures 1-5, Tables 1-4 and original Supplementary Material 1 DOCX
+    (Figures S1-S6; Tables S1-S3) inspected. (https://doi.org/10.1038/s41598-026-37924-x))
+    report whole-cell or culture-level sulfur/iron oxidation without gene-level sqr
+    knockouts or proteomics; therefore supports: partial is strictly preserved on
+    all added ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/electroplating-sludge/2026-10-30T191017Z-claude-6bedd4.yaml
+  locator: Canonical EDIT history sidecar history/records/electroplating-sludge/2026-10-30T191017Z-claude-6bedd4.yaml
+  accessed_at: '2026-10-30T19:11:30Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/electroplating-sludge/2026-10-30T191017Z-claude-6bedd4.yaml
+    (SHA-256 d04a6a00a40eefcfdac1332048778f0355164588c6430feb9a7f367306b75903): Added
+    live-verified Acidithiobacillus ferrooxidans ATCC 23270 Sqr paralog (UniProtKB:B7J411,
+    sqr / AFE_0267) to sqr_reductase across both causal graphs in electroplating-sludge.yaml.
+    — '
+  snapshot_sha256: d04a6a00a40eefcfdac1332048778f0355164588c6430feb9a7f367306b75903
+- evidence_id: validation
+  kind: validation
+  reference: data/records/electroplating-sludge.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-10-30T19:11:30Z'
+  support: supports
+  summary: data/records/electroplating-sludge.yaml and history/records/electroplating-sludge/2026-10-30T191017Z-claude-6bedd4.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: 52fe4cc69ac0807a77d921c2de8c35a25bf812c345ed1854b4b46c58e6cf281b
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 668 record(s); 0 failed.
+  target_ids:
+  - cmmmech:electroplating-sludge
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:electroplating-sludge
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: protein_example_grounding_and_scope
+  area: graph
+  topic: 'Verification of UniProtKB ProteinExample grounding and parity across causal_graph
+    ''chennai_sulfur_culture_leaching_graph'' (mechanism_ref: chennai_sulfur_culture_leaching,
+    sqr_reductase node grounded with UniProtKB:B7J411 (sqr, B7J411_ACIF2, UP000001362));
+    causal_graph ''cell_removed_ferric_acid_ultrasound_graph'' (mechanism_ref: cell_removed_ferric_acid_ultrasound,
+    sqr_reductase node grounded with UniProtKB:B7J411 (sqr, B7J411_ACIF2, UP000001362))'
+  outcome: supported
+  summary: 'Enriched data/records/electroplating-sludge.yaml (SHA-256 52fe4cc69ac0807a77d921c2de8c35a25bf812c345ed1854b4b46c58e6cf281b)
+    across causal_graph ''chennai_sulfur_culture_leaching_graph'' (mechanism_ref:
+    chennai_sulfur_culture_leaching, sqr_reductase node grounded with UniProtKB:B7J411
+    (sqr, B7J411_ACIF2, UP000001362)); causal_graph ''cell_removed_ferric_acid_ultrasound_graph''
+    (mechanism_ref: cell_removed_ferric_acid_ultrasound, sqr_reductase node grounded
+    with UniProtKB:B7J411 (sqr, B7J411_ACIF2, UP000001362)) with 100% parity between
+    mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples, preserving
+    supports: partial and explicit representational-grounding caveats from primary
+    source(s) prabhu2015, kordloo2026. Live-verified UniProtKB REST API metadata for
+    UniProtKB:B7J411 (entry_name: B7J411_ACIF2, protein_name: Sulfide quinone reductase,
+    putative, gene_symbol: sqr, ordered locus AFE_0267, 375 aa, TREMBL, NCBITaxon:243159
+    Acidithiobacillus ferrooxidans ATCC 23270, UP000001362, InterPro:IPR036188/IPR023753/IPR052541,
+    Pfam:PF07992).'
+  target_ids:
+  - cmmmech:electroplating-sludge
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
+  outcome: supported
+  summary: 'data/records/electroplating-sludge.yaml was updated exclusively through
+    scripts/curate_causal_graphs.py (curate_record_file), producing append-only history
+    sidecar(s) (history/records/electroplating-sludge/2026-10-30T191017Z-claude-6bedd4.yaml
+    (SHA-256 d04a6a00a40eefcfdac1332048778f0355164588c6430feb9a7f367306b75903): Added
+    live-verified Acidithiobacillus ferrooxidans ATCC 23270 Sqr paralog (UniProtKB:B7J411,
+    sqr / AFE_0267) to sqr_reductase across both causal graphs in electroplating-sludge.yaml.
+    — ) and passing all LinkML and history validation gates.'
+  target_ids:
+  - cmmmech:electroplating-sludge
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Electroplating sludge (cmmmech:electroplating-sludge) passes Cycle 5 Stage
+  3 protein-examples review (scientific_review: true) at SHA-256 52fe4cc69ac0807a77d921c2de8c35a25bf812c345ed1854b4b46c58e6cf281b:
+  Enriched data/records/electroplating-sludge.yaml (SHA-256 52fe4cc69ac0807a77d921c2de8c35a25bf812c345ed1854b4b46c58e6cf281b)
+  across causal_graph ''chennai_sulfur_culture_leaching_graph'' (mechanism_ref: chennai_sulfur_culture_leaching,
+  sqr_reductase node grounded with UniProtKB:B7J411 (sqr, B7J411_ACIF2, UP000001362));
+  causal_graph ''cell_removed_ferric_acid_ultrasound_graph'' (mechanism_ref: cell_removed_ferric_acid_ultrasound,
+  sqr_reductase node grounded with UniProtKB:B7J411 (sqr, B7J411_ACIF2, UP000001362))
+  with 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples,
+  preserving supports: partial and explicit representational-grounding caveats from
+  primary source(s) prabhu2015, kordloo2026. Live-verified UniProtKB REST API metadata
+  for UniProtKB:B7J411 (entry_name: B7J411_ACIF2, protein_name: Sulfide quinone reductase,
+  putative, gene_symbol: sqr, ordered locus AFE_0267, 375 aa, TREMBL, NCBITaxon:243159
+  Acidithiobacillus ferrooxidans ATCC 23270, UP000001362, InterPro:IPR036188/IPR023753/IPR052541,
+  Pfam:PF07992).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 5 Stage 3 (protein_examples) using scripts/curate_causal_graphs.py.
+related_reviews: []
+```

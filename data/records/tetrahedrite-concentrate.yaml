@@ -64,6 +64,27 @@ mechanisms:
     - source_ref: kupka_2025
       supports: partial
       explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (AFE_1792) for oxidative sulfur/acid generation in kupka_2025; individual sqr/tth genes were not mutated.
+  - uniprot_accession: UniProtKB:B7J411
+    entry_name: B7J411_ACIF2
+    protein_name: Sulfide quinone reductase, putative
+    gene_symbol: sqr
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase paralog (sqr, locus AFE_0267; 375 aa) in Acidithiobacillus ferrooxidans ATCC 23270 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during acidophilic sulfur/sulfide bioleaching.
+    annotation_note: Grounded to second sulfide-quinone reductase paralog (sqr, locus AFE_0267; 375 aa) in reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 / DSM 14882 (NCBITaxon:243159), matching the DSM 14882 experimental culture arm in kupka_2025.
+    evidence:
+    - source_ref: kupka_2025
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 / DSM 14882 sulfide-quinone reductase paralog (sqr, locus AFE_0267) for oxidative sulfur/acid generation in the separate A. ferrooxidans DSM 14882 leaching arm of kupka_2025; individual sqr/tth genes were not mutated.
   - uniprot_accession: UniProtKB:A0A060UVE9
     entry_name: A0A060UVE9_9PROT
     protein_name: Sulfide-quinone reductase
@@ -86,7 +107,28 @@ mechanisms:
     evidence:
     - source_ref: kupka_2025
       supports: partial
-      explanation: Representative Acidithiobacillus ferrivorans sulfide-quinone reductase (sqr) for oxidative sulfur/acid generation in the separate A. ferrivorans SS3 leaching arm of kupka_2025; individual sqr/tetH genes were not mutated.
+      explanation: Representative Acidithiobacillus ferrivorans sulfide-quinone reductase (sqr) for oxidative sulfur/acid generation in the separate A. ferrivorans SS3 (DSM 17398) leaching arm of kupka_2025; individual sqr/sqr2/tetH genes were not mutated.
+  - uniprot_accession: UniProtKB:A0A060UMZ1
+    entry_name: A0A060UMZ1_9PROT
+    protein_name: Sulfide quinone oxidoreductase
+    gene_symbol: sqr2
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:160808
+      label: Acidithiobacillus ferrivorans
+    reference_proteome_id: UP000193925
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide quinone oxidoreductase paralog (sqr2, locus AFERRI_20483; 435 aa) in Acidithiobacillus ferrivorans oxidizing reduced sulfur species coupled to quinone reduction during acidophilic sulfide bioleaching.
+    annotation_note: Grounded to second sulfide quinone oxidoreductase paralog (sqr2, locus AFERRI_20483; 435 aa) in Acidithiobacillus ferrivorans reference-proteome entry UP000193925 (NCBITaxon:160808; strain CF27) representing the second experimental species arm (tested with strain SS3 / DSM 17398 in kupka_2025).
+    evidence:
+    - source_ref: kupka_2025
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrivorans sulfide quinone oxidoreductase paralog (sqr2, locus AFERRI_20483) for oxidative sulfur/acid generation in the separate A. ferrivorans SS3 (DSM 17398) leaching arm of kupka_2025; individual sqr/sqr2/tetH genes were not mutated.
   - uniprot_accession: UniProtKB:B7J3C9
     entry_name: TTH_ACIF2
     protein_name: Tetrathionate hydrolase
@@ -132,7 +174,7 @@ mechanisms:
     evidence:
     - source_ref: kupka_2025
       supports: partial
-      explanation: Representative Acidithiobacillus ferrivorans tetrathionate hydrolase (tetH) for oxidative sulfur/acid generation in the separate A. ferrivorans SS3 leaching arm of kupka_2025; individual sqr/tetH genes were not mutated.
+      explanation: Representative Acidithiobacillus ferrivorans tetrathionate hydrolase (tetH) for oxidative sulfur/acid generation in the separate A. ferrivorans SS3 (DSM 17398) leaching arm of kupka_2025; individual sqr/sqr2/tetH genes were not mutated.
   evidence:
   - source_ref: kupka_2025
     supports: support
@@ -164,10 +206,10 @@ causal_graphs:
   mechanism_ref: acidophile_associated_metal_mobilization
   nodes:
   - id: sqr_reductase
-    label: Sqr sulfide-quinone reductase (AFE_1792)
+    label: Sqr sulfide-quinone reductase (AFE_1792 / sqr AFE_0267 / sqr / sqr2)
     node_type: GENE_OR_PROTEIN
     gene_symbol: AFE_1792
-    description: Inner-membrane flavoprotein oxidizing sulfide to zero-valent sulfur/polysulfide intermediates.
+    description: Inner-membrane flavoprotein (AFE_1792 / sqr AFE_0267 in A. ferrooxidans; sqr AFERRI_11118 / sqr2 AFERRI_20483 in A. ferrivorans) oxidizing sulfide to zero-valent sulfur/polysulfide intermediates.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:B7JBP8
@@ -193,6 +235,27 @@ causal_graphs:
       - source_ref: kupka_2025
         supports: partial
         explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (AFE_1792) for oxidative sulfur/acid generation in kupka_2025; individual sqr/tth genes were not mutated.
+    - uniprot_accession: UniProtKB:B7J411
+      entry_name: B7J411_ACIF2
+      protein_name: Sulfide quinone reductase, putative
+      gene_symbol: sqr
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase paralog (sqr, locus AFE_0267; 375 aa) in Acidithiobacillus ferrooxidans ATCC 23270 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during acidophilic sulfur/sulfide bioleaching.
+      annotation_note: Grounded to second sulfide-quinone reductase paralog (sqr, locus AFE_0267; 375 aa) in reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 / DSM 14882 (NCBITaxon:243159), matching the DSM 14882 experimental culture arm in kupka_2025.
+      evidence:
+      - source_ref: kupka_2025
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 / DSM 14882 sulfide-quinone reductase paralog (sqr, locus AFE_0267) for oxidative sulfur/acid generation in the separate A. ferrooxidans DSM 14882 leaching arm of kupka_2025; individual sqr/tth genes were not mutated.
     - uniprot_accession: UniProtKB:A0A060UVE9
       entry_name: A0A060UVE9_9PROT
       protein_name: Sulfide-quinone reductase
@@ -215,7 +278,28 @@ causal_graphs:
       evidence:
       - source_ref: kupka_2025
         supports: partial
-        explanation: Representative Acidithiobacillus ferrivorans sulfide-quinone reductase (sqr) for oxidative sulfur/acid generation in the separate A. ferrivorans SS3 leaching arm of kupka_2025; individual sqr/tetH genes were not mutated.
+        explanation: Representative Acidithiobacillus ferrivorans sulfide-quinone reductase (sqr) for oxidative sulfur/acid generation in the separate A. ferrivorans SS3 (DSM 17398) leaching arm of kupka_2025; individual sqr/sqr2/tetH genes were not mutated.
+    - uniprot_accession: UniProtKB:A0A060UMZ1
+      entry_name: A0A060UMZ1_9PROT
+      protein_name: Sulfide quinone oxidoreductase
+      gene_symbol: sqr2
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:160808
+        label: Acidithiobacillus ferrivorans
+      reference_proteome_id: UP000193925
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide quinone oxidoreductase paralog (sqr2, locus AFERRI_20483; 435 aa) in Acidithiobacillus ferrivorans oxidizing reduced sulfur species coupled to quinone reduction during acidophilic sulfide bioleaching.
+      annotation_note: Grounded to second sulfide quinone oxidoreductase paralog (sqr2, locus AFERRI_20483; 435 aa) in Acidithiobacillus ferrivorans reference-proteome entry UP000193925 (NCBITaxon:160808; strain CF27) representing the second experimental species arm (tested with strain SS3 / DSM 17398 in kupka_2025).
+      evidence:
+      - source_ref: kupka_2025
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrivorans sulfide quinone oxidoreductase paralog (sqr2, locus AFERRI_20483) for oxidative sulfur/acid generation in the separate A. ferrivorans SS3 (DSM 17398) leaching arm of kupka_2025; individual sqr/sqr2/tetH genes were not mutated.
   - id: tth_hydrolase
     label: Tth tetrathionate hydrolase (tth / AFE_0029)
     node_type: GENE_OR_PROTEIN
@@ -268,7 +352,7 @@ causal_graphs:
       evidence:
       - source_ref: kupka_2025
         supports: partial
-        explanation: Representative Acidithiobacillus ferrivorans tetrathionate hydrolase (tetH) for oxidative sulfur/acid generation in the separate A. ferrivorans SS3 leaching arm of kupka_2025; individual sqr/tetH genes were not mutated.
+        explanation: Representative Acidithiobacillus ferrivorans tetrathionate hydrolase (tetH) for oxidative sulfur/acid generation in the separate A. ferrivorans SS3 (DSM 17398) leaching arm of kupka_2025; individual sqr/sqr2/tetH genes were not mutated.
   - id: acidic_ferric_sulfate_lixiviant
     label: Biogenic sulfuric acid and Fe(III) oxidative lixiviant
     node_type: CHEMICAL_ENTITY
@@ -346,6 +430,10 @@ curation_history:
   curator: marcin
   action: edit
   summary: Align tetrahedrite-concentrate causal_graphs[0].description with measured Cu, Zn, Ag, and sulfate mobilization in kupka_2025
+- timestamp: '2026-10-30T19:10:18Z'
+  curator: claude
+  action: edit
+  summary: Added live-verified Acidithiobacillus ferrooxidans Sqr (UniProtKB:B7J411, sqr / AFE_0267) and Acidithiobacillus ferrivorans Sqr2 (UniProtKB:A0A060UMZ1, sqr2 / AFERRI_20483) paralogs to sqr_reductase in tetrahedrite-concentrate.yaml.
 history_refs:
 - history/records/tetrahedrite-concentrate/2026-10-12T111707Z-codex-f553c9.yaml
 - history/records/tetrahedrite-concentrate/2026-10-18T042750Z-antigravity-7c96ea.yaml
@@ -353,3 +441,4 @@ history_refs:
 - history/records/tetrahedrite-concentrate/2026-10-24T015709Z-marcin-f8beb6.yaml
 - history/records/tetrahedrite-concentrate/2026-10-30T171004Z-marcin-f2dc1e.yaml
 - history/records/tetrahedrite-concentrate/2026-10-30T175759Z-marcin-428fe7.yaml
+- history/records/tetrahedrite-concentrate/2026-10-30T191018Z-claude-d8e9c5.yaml
