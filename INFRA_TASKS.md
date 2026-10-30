@@ -93,7 +93,7 @@ tasks:
     summary: Fallback when workspace dotfile NamedTemporaryFile creation/unlink or os.replace raises PermissionError in src/cmmmech/history.py cmd_new() and scripts/curate_causal_graphs.py write_record_atomic() inside macOS Seatbelt sandboxes
     status: note
     issue_url: https://github.com/CultureBotAI/CMMMech/issues/822
-    disposition: "Recorded during Cycle 4 Stage 2 causal_graphs review and curation across all 663 records (16 Acidithiobacillus thiooxidans records curated via scripts/curate_causal_graphs.py, raising causal_graphs coverage from 104 records / 111 graphs to 120 records / 127 graphs); noted for Stage 6 evaluation alongside issue #822."
+    disposition: "Recorded during Cycle 4 Stage 2 causal_graphs review and curation across all 663 records (16 Acidithiobacillus thiooxidans records curated via scripts/curate_causal_graphs.py, raising causal_graphs coverage from 104 records / 111 graphs to 120 records / 127 graphs) and re-confirmed during Cycle 4 Stage 3 (18 records) and Cycle 4 Stage 5 (25 records across #862, #863, #864); noted for Stage 6 evaluation alongside issue #822."
 ```
 <!-- mech-infra-tasks:end -->
 
@@ -247,7 +247,7 @@ tasks:
 - **Dependencies**: `cmmmech-infra-0004`, `cmmmech-infra-0006`
 - **Issue**: https://github.com/CultureBotAI/CMMMech/issues/822
 - **Status**: `note`
-- **Disposition**: Recorded during Cycle 4 Stage 2 (`causal_graphs`) and re-confirmed during Cycle 4 Stage 3 (`protein_examples`) as a non-blocking writer/sandbox observation linked to `https://github.com/CultureBotAI/CMMMech/issues/822`.
+- **Disposition**: Recorded during Cycle 4 Stage 2 (`causal_graphs`) and re-confirmed during Cycle 4 Stage 3 (`protein_examples`) and Cycle 4 Stage 5 (`resolve_review_findings`, 25 records across `#862`, `#863`, `#864`) as a non-blocking writer/sandbox observation linked to `https://github.com/CultureBotAI/CMMMech/issues/822`.
 
 
 

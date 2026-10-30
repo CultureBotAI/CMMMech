@@ -1,76 +1,39 @@
 id: cmmmech:end-of-life-cigs-photovoltaic-modules
 name: End-of-life CIGS photovoltaic modules
 material_kind: secondary_resource
-description: Discarded copper-indium-gallium-selenide (CIGS) thin-film photovoltaic modules and their
-  separated coated-glass fractions are a composite secondary resource. The curated study explicitly describes
-  end-of-life Q-Smart panels supplied by Polyeco S.A. This scope excludes crystalline-silicon and CdTe
-  modules, sputtering targets, production-chamber scrap, and factory-supplied cells without documented
-  end-of-life provenance. The resource is distinct from its constituent elements and from a pure CIGS
-  compound or mineral species. Constituent criticality designations are not inherited.
+description: Discarded copper-indium-gallium-selenide (CIGS) thin-film photovoltaic modules and their separated coated-glass fractions are a composite secondary resource. The curated study explicitly describes end-of-life Q-Smart panels supplied by Polyeco S.A. This scope excludes crystalline-silicon and CdTe modules, sputtering targets, production-chamber scrap, and factory-supplied cells without documented end-of-life provenance. The resource is distinct from its constituent elements and from a pure CIGS compound or mineral species. Constituent criticality designations are not inherited.
+sources:
+- id: theocharis2021
+  title: Theocharis, M., Tsakiridis, P.E., Kousi, P., Hatzikioseyian, A., Zarkadas, I., Remoundaki, E. and Lyberatos, G. Hydrometallurgical Treatment for the Extraction and Separation of Indium and Gallium from End-of-Life CIGS Photovoltaic Panels. Materials Proceedings 5(1):51 (2021), DOI 10.3390/materproc2021005051. Complete six-page publisher PDF inspected, including all four figures and four tables; conference proceeding published 1 December 2021.
+  url: https://doi.org/10.3390/materproc2021005051
+  accessed_on: '2026-10-14'
 mechanisms:
 - id: acid_leaching_thermally_delaminated_cigs
   name: Chemical leaching of metals from thermally separated CIGS-coated glass
   process: recycling
+  description: Laboratory acid treatment transfers indium, gallium and other metals from separated CIGS-coated glass to solution. This is an abiotic thermal and hydrometallurgical treatment. Measured leachate concentrations establish dissolution under the tested conditions, not a closed whole-module recovery yield or a purified final product.
+  context: 'Theocharis et al. (2021), Sections 2.1–2.5 and 3.1–3.2: source-described end-of-life Q-Smart panels were dismantled and thermally treated, then manually separated into clear glass, coated glass and ash; ribbons and polymer films were removed. The abstract specifies 550 degrees C for 15 minutes in excess air, while Section 2.3 describes membrane decomposition at 540–550 degrees C. Its parenthetical 1500 degrees C refers to the laboratory furnace specification, not the adopted sample treatment. Approximately 1.5-by-1.5 cm coated-glass pieces were leached. Tests compared 6 N nitric, hydrochloric and sulfuric acids at ambient temperature and a reported solid/liquid ratio of 30%, with a further hydrochloric-acid test at 80 degrees C. Nitric-acid concentrations of 1, 3 and 6 N were tested at reported solid/liquid ratios of 50% and 70%; the percentage basis is not defined. The authors state that leaching and recovery experiments were repeated twice, without reporting dispersion or independent
+    feed-batch replication. Coated-glass characterization used SEM-EDS, WD-XRF, ICP-OES and AAS after digestion. No organism, inoculum or biological treatment was used.'
   microbial: false
-  description: Laboratory acid treatment transfers indium, gallium and other metals from separated CIGS-coated
-    glass to solution. This is an abiotic thermal and hydrometallurgical treatment. Measured leachate
-    concentrations establish dissolution under the tested conditions, not a closed whole-module recovery
-    yield or a purified final product.
-  context: 'Theocharis et al. (2021), Sections 2.1–2.5 and 3.1–3.2: source-described end-of-life Q-Smart
-    panels were dismantled and thermally treated, then manually separated into clear glass, coated glass
-    and ash; ribbons and polymer films were removed. The abstract specifies 550 degrees C for 15 minutes
-    in excess air, while Section 2.3 describes membrane decomposition at 540–550 degrees C. Its parenthetical
-    1500 degrees C refers to the laboratory furnace specification, not the adopted sample treatment. Approximately
-    1.5-by-1.5 cm coated-glass pieces were leached. Tests compared 6 N nitric, hydrochloric and sulfuric
-    acids at ambient temperature and a reported solid/liquid ratio of 30%, with a further hydrochloric-acid
-    test at 80 degrees C. Nitric-acid concentrations of 1, 3 and 6 N were tested at reported solid/liquid
-    ratios of 50% and 70%; the percentage basis is not defined. The authors state that leaching and recovery
-    experiments were repeated twice, without reporting dispersion or independent feed-batch replication.
-    Coated-glass characterization used SEM-EDS, WD-XRF, ICP-OES and AAS after digestion. No organism,
-    inoculum or biological treatment was used.'
   evidence:
   - source_ref: theocharis2021
     supports: support
-    explanation: Sections 3.1–3.2, Figures 2–4 and Tables 1–2 support a characterized composite feed and
-      dissolved metals after acid contact. Table 2 reports, for 6 N HNO3 at 25 degrees C and a stated
-      S/L of 70%, In 47 mg/L, Ga 20 mg/L, Mo 169 mg/L, Cu 39 mg/L and Zn 105 mg/L. These are individual
-      leachate concentrations, not extraction percentages. Section 3.2 reports faster film delamination
-      with nitric acid (about 30 minutes) than hydrochloric acid (four days), but does not give a complete
-      matched kinetic protocol for every Table 2 cell.
+    explanation: Sections 3.1–3.2, Figures 2–4 and Tables 1–2 support a characterized composite feed and dissolved metals after acid contact. Table 2 reports, for 6 N HNO3 at 25 degrees C and a stated S/L of 70%, In 47 mg/L, Ga 20 mg/L, Mo 169 mg/L, Cu 39 mg/L and Zn 105 mg/L. These are individual leachate concentrations, not extraction percentages. Section 3.2 reports faster film delamination with nitric acid (about 30 minutes) than hydrochloric acid (four days), but does not give a complete matched kinetic protocol for every Table 2 cell.
   - source_ref: theocharis2021
     supports: partial
-    explanation: 'The abstract and Table 1 report different coated-glass compositions: for example, In
-      0.02% versus 0.01% and Cu 0.05% versus 0.01%. These are not silently reconciled or used as a whole-panel
-      denominator. The authors call extraction quantitative, but the undefined S/L basis, differing feed
-      composition reports and absent closed inventory balance prevent an independently verified whole-module
-      percentage. Selenium-rich solid residue is assigned from SEM-EDS in Figure 4; part of the selenium
-      reportedly volatilizes during heating, without a demonstrated closed capture balance or unique crystalline
-      residue-phase identification.'
+    explanation: 'The abstract and Table 1 report different coated-glass compositions: for example, In 0.02% versus 0.01% and Cu 0.05% versus 0.01%. These are not silently reconciled or used as a whole-panel denominator. The authors call extraction quantitative, but the undefined S/L basis, differing feed composition reports and absent closed inventory balance prevent an independently verified whole-module percentage. Selenium-rich solid residue is assigned from SEM-EDS in Figure 4; part of the selenium reportedly volatilizes during heating, without a demonstrated closed capture balance or unique crystalline residue-phase identification.'
   - source_ref: theocharis2021
     supports: context_only
-    explanation: Section 2.6 explicitly describes preliminary solvent-extraction tests using synthetic
-      In/Ga/Mo solutions. The 97% In and 72% Ga extraction values in Tables 3–4 therefore are not adopted
-      as recovery yields from the actual panel leachate. Table 3 includes Ga and Mo co-extraction, and
-      Table 4 shows Ga in the organic phase despite prose referring to raffinate. The stage starting masses
-      are not reconciled as a closed sequential balance. Figure 1 is a Visual MINTEQ calculation, not
-      a measured precipitation experiment. Stripping and oxide production are discussed with a citation
-      to a separate spent-oxide-target study; this proceeding does not establish isolated CIGS-derived
-      oxide purity or yield. Industrial deployment is not demonstrated.
-sources:
-- id: theocharis2021
-  title: Theocharis, M., Tsakiridis, P.E., Kousi, P., Hatzikioseyian, A., Zarkadas, I., Remoundaki, E.
-    and Lyberatos, G. Hydrometallurgical Treatment for the Extraction and Separation of Indium and Gallium
-    from End-of-Life CIGS Photovoltaic Panels. Materials Proceedings 5(1):51 (2021), DOI 10.3390/materproc2021005051.
-    Complete six-page publisher PDF inspected, including all four figures and four tables; conference
-    proceeding published 1 December 2021.
-  url: https://doi.org/10.3390/materproc2021005051
-  accessed_on: '2026-10-14'
+    explanation: Section 2.6 explicitly describes preliminary solvent-extraction tests using synthetic In/Ga/Mo solutions. The 97% In and 72% Ga extraction values in Tables 3–4 therefore are not adopted as recovery yields from the actual panel leachate. Table 3 includes Ga and Mo co-extraction, and Table 4 shows Ga in the organic phase despite prose referring to raffinate. The stage starting masses are not reconciled as a closed sequential balance. Figure 1 is a Visual MINTEQ calculation, not a measured precipitation experiment. Stripping and oxide production are discussed with a citation to a separate spent-oxide-target study; this proceeding does not establish isolated CIGS-derived oxide purity or yield. Industrial deployment is not demonstrated.
 curation_history:
 - timestamp: '2026-10-14T13:58:45.362685+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
-  summary: Created a distinct end-of-life CIGS module resource with qualified abiotic leaching evidence;
-    kept synthetic solvent extraction, inconsistent composition reports and unavailable whole-feed recovery
-    balances explicit.
+  summary: Created a distinct end-of-life CIGS module resource with qualified abiotic leaching evidence; kept synthetic solvent extraction, inconsistent composition reports and unavailable whole-feed recovery balances explicit.
+- timestamp: '2026-10-30T10:36:04Z'
+  curator: claude
+  action: edit
+  summary: Normalize top-level mechanisms/sources/criticality YAML key order in end-of-life-cigs-photovoltaic-modules.yaml (#863)
 history_refs:
 - history/records/end-of-life-cigs-photovoltaic-modules/2026-10-14T135848Z-codex-1f7db2.yaml
+- history/records/end-of-life-cigs-photovoltaic-modules/2026-10-30T103604Z-claude-353478.yaml

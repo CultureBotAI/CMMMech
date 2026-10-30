@@ -1,121 +1,53 @@
 id: cmmmech:biogas-desulfurization-sulfur-residue
 name: Biogas-desulfurization sulfur residue
 material_kind: secondary_resource
-description: >-
-  Sulfur-rich material recovered from biogas desulfurization, represented by
-  dried powder obtained from a Danish biogas-plant desulfurization unit. Its
-  process origin defines this secondary resource; it is not pure sulfur as
-  an element, a natural sulfur mineral, commercial acid or the battery black
-  mass subsequently leached with its conversion liquor. The selected study
-  does not establish universal residue composition or inherited criticality.
+description: Sulfur-rich material recovered from biogas desulfurization, represented by dried powder obtained from a Danish biogas-plant desulfurization unit. Its process origin defines this secondary resource; it is not pure sulfur as an element, a natural sulfur mineral, commercial acid or the battery black mass subsequently leached with its conversion liquor. The selected study does not establish universal residue composition or inherited criticality.
 sources:
 - id: lalropuia2026
-  title: >-
-    Lalropuia, Meriläinen, Rassy, Pakostova and Guebitz (2026). Indirect
-    bioleaching for metal recovery from battery black mass using microbially
-    generated acid from a secondary sulfur resource. Frontiers in Microbiology
-    17:1921494, published 27 August 2026. DOI 10.3389/fmicb.2026.1921494;
-    Sections 2.1-2.4 and 3.1-3.3, Table 1 and Figures 1-4.
+  title: Lalropuia, Meriläinen, Rassy, Pakostova and Guebitz (2026). Indirect bioleaching for metal recovery from battery black mass using microbially generated acid from a secondary sulfur resource. Frontiers in Microbiology 17:1921494, published 27 August 2026. DOI 10.3389/fmicb.2026.1921494; Sections 2.1-2.4 and 3.1-3.3, Table 1 and Figures 1-4.
   url: https://doi.org/10.3389/fmicb.2026.1921494
   accessed_on: '2026-10-11'
 - id: dsm1927
-  title: >-
-    DSMZ catalogue DSM 1927: Acidithiobacillus ferrooxidans, strain F221.
-    This conflicts with the primary paper's A. thiooxidans DSM 1927 label;
-    the experimental organism is not silently reassigned.
+  title: 'DSMZ catalogue DSM 1927: Acidithiobacillus ferrooxidans, strain F221. This conflicts with the primary paper''s A. thiooxidans DSM 1927 label; the experimental organism is not silently reassigned.'
   url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-1927
   accessed_on: '2026-10-11'
 - id: dsm9466
-  title: >-
-    DSMZ catalogue DSM 9466: Acidithiobacillus caldus, strain C-SH12.
-    Collection identity corroborates the label but does not independently
-    authenticate the study stock or a causal role within its mixed culture.
+  title: 'DSMZ catalogue DSM 9466: Acidithiobacillus caldus, strain C-SH12. Collection identity corroborates the label but does not independently authenticate the study stock or a causal role within its mixed culture.'
   url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-9466
   accessed_on: '2026-10-11'
 mechanisms:
 - id: mixed_culture_sulfur_to_acid_liquor
   name: Culture-associated conversion of recovered sulfur to acidic liquor
   process: redox_transformation
+  description: A living mixed acidophile culture was cultivated with biogas-derived sulfur powder to produce sulfate-containing acidic liquor for subsequent leaching. This is an observed laboratory use of the sulfur resource as an oxidation substrate. One reported strain identifier conflicts with its collection assignment, so exact culture membership and strain-specific causality remain unresolved. No species identifier is assigned to the mixed mechanism.
+  context: Section 2.2 identifies dried powdered sulfur from a biogas desulfurization unit in Denmark, without a supplier-specific composition, purity or drying protocol. The paper names A. thiooxidans DSM 1927 and A. caldus DSM 9466, separately pregrown for 21 days at 30 degrees C and 150 rpm in 250 mL flasks, then combined 1:1 v/v. The DSM 1927 species conflict remains explicit rather than being repaired from assumption. Acid production used a 2 L reactor with 1.8 L working volume, initial medium pH 3.5, 1% w/v sulfur, 30 degrees C, 250 rpm magnetic stirring and 50 L/h pressurized air. The medium is source-labelled basalt salt medium with a literature reference rather than a complete recipe in this paper. After 14-21 days, 1.2 L was withdrawn and replaced with fresh medium and sulfur; the remaining 0.6 L inoculated the next cycle. Ten cycles yielded approximately 12 L collected liquor. Withdrawals were centrifuged at 9000 rpm for 20 minutes to remove solids and stored at 4 degrees C. A
+    verified sterile filtrate is not established. Ion chromatography and NaOH titration with phenolphthalein were used for the reported acid concentration. Independent acid-production replication, uninoculated residue controls, per-cycle sulfur accounting and residue characterization are not reported here.
   microbial: true
-  description: >-
-    A living mixed acidophile culture was cultivated with biogas-derived sulfur
-    powder to produce sulfate-containing acidic liquor for subsequent leaching.
-    This is an observed laboratory use of the sulfur resource as an oxidation
-    substrate. One reported strain identifier conflicts with its collection
-    assignment, so exact culture membership and strain-specific causality remain
-    unresolved. No species identifier is assigned to the mixed mechanism.
-  context: >-
-    Section 2.2 identifies dried powdered sulfur from a biogas desulfurization
-    unit in Denmark, without a supplier-specific composition, purity or drying
-    protocol. The paper names A. thiooxidans DSM 1927 and A. caldus DSM 9466,
-    separately pregrown for 21 days at 30 degrees C and 150 rpm in 250 mL
-    flasks, then combined 1:1 v/v. The DSM 1927 species conflict remains
-    explicit rather than being repaired from assumption. Acid production used
-    a 2 L reactor with 1.8 L working volume, initial medium pH 3.5, 1% w/v
-    sulfur, 30 degrees C, 250 rpm magnetic stirring and 50 L/h pressurized air.
-    The medium is source-labelled basalt salt medium with a literature
-    reference rather than a complete recipe in this paper. After 14-21 days,
-    1.2 L was withdrawn and replaced with fresh medium and sulfur; the
-    remaining 0.6 L inoculated the next cycle. Ten cycles yielded approximately
-    12 L collected liquor. Withdrawals were centrifuged at 9000 rpm for
-    20 minutes to remove solids and stored at 4 degrees C. A verified sterile
-    filtrate is not established. Ion chromatography and NaOH titration with
-    phenolphthalein were used for the reported acid concentration. Independent
-    acid-production replication, uninoculated residue controls, per-cycle
-    sulfur accounting and residue characterization are not reported here.
   evidence:
   - source_ref: lalropuia2026
     supports: support
-    explanation: >-
-      Methods 2.2 and Results 3.1 directly connect the actual desulfurization
-      powder to cultivated acidic liquor. Results report 0.63 M biogenic
-      sulfuric acid and pH 0.44 in liquor used for downstream experiments.
-      These reported solution measurements are not a single-cycle sulfur
-      conversion fraction, acid purity specification, isolated-product yield
-      or validated mass balance. Retained liquor and repeated sulfur additions
-      prevent deriving conversion from the nominal initial loading alone.
+    explanation: Methods 2.2 and Results 3.1 directly connect the actual desulfurization powder to cultivated acidic liquor. Results report 0.63 M biogenic sulfuric acid and pH 0.44 in liquor used for downstream experiments. These reported solution measurements are not a single-cycle sulfur conversion fraction, acid purity specification, isolated-product yield or validated mass balance. Retained liquor and repeated sulfur additions prevent deriving conversion from the nominal initial loading alone.
   - source_ref: dsm1927
     supports: partial
-    explanation: >-
-      The live collection identifies DSM 1927 as A. ferrooxidans F221, whereas
-      the paper calls it A. thiooxidans. Neither the catalogue nor the paper
-      resolves which stock was used. The record therefore preserves the
-      mixed-culture observation without a verified assignment of its first
-      member or a strain-specific mechanism.
+    explanation: The live collection identifies DSM 1927 as A. ferrooxidans F221, whereas the paper calls it A. thiooxidans. Neither the catalogue nor the paper resolves which stock was used. The record therefore preserves the mixed-culture observation without a verified assignment of its first member or a strain-specific mechanism.
   - source_ref: dsm9466
     supports: context_only
-    explanation: >-
-      DSM 9466 resolves to A. caldus C-SH12, consistent with the paper's second
-      culture label. This supports collection nomenclature only; no pure-culture
-      comparator or independent stock authentication in this study establishes
-      which member caused the observed acid production.
+    explanation: DSM 9466 resolves to A. caldus C-SH12, consistent with the paper's second culture label. This supports collection nomenclature only; no pure-culture comparator or independent stock authentication in this study establishes which member caused the observed acid production.
   - source_ref: lalropuia2026
     supports: partial
-    explanation: >-
-      Faster oxidation than commercial sulfur and benefits of organic coatings
-      are attributed to earlier publications in Section 3.1, not demonstrated
-      by matched sulfur-source controls in this experiment. The repeated-cycle
-      acid-production protocol does not establish a universal feed advantage,
-      complete sulfur recovery or an identified molecular pathway. No economic
-      or life-cycle assessment of this process is supplied.
+    explanation: Faster oxidation than commercial sulfur and benefits of organic coatings are attributed to earlier publications in Section 3.1, not demonstrated by matched sulfur-source controls in this experiment. The repeated-cycle acid-production protocol does not establish a universal feed advantage, complete sulfur recovery or an identified molecular pathway. No economic or life-cycle assessment of this process is supplied.
   - source_ref: lalropuia2026
     supports: context_only
-    explanation: >-
-      Sections 2.3-2.4 and Figures 1-4 concern a different material, NMC battery
-      black mass, leached with the collected liquor at 22 degrees C with
-      peroxide and surfactant comparisons. Those duplicate laboratory assays,
-      including a nominal 1 L vessel, are downstream use evidence rather than
-      measurements of the sulfur residue. Biosurfactants did not improve metal
-      leaching; peroxide-free controls also gave the reported high Li/Mn
-      endpoints. These comparisons do not establish sulfur-source superiority
-      or live-cell necessity. Filtered-liquid metal release and local SEM-EDS
-      non-detection do not prove isolated metal products or industrial deployment.
-history_refs:
-- history/records/biogas-desulfurization-sulfur-residue/2026-10-11T145542Z-codex-606521.yaml
+    explanation: Sections 2.3-2.4 and Figures 1-4 concern a different material, NMC battery black mass, leached with the collected liquor at 22 degrees C with peroxide and surfactant comparisons. Those duplicate laboratory assays, including a nominal 1 L vessel, are downstream use evidence rather than measurements of the sulfur residue. Biosurfactants did not improve metal leaching; peroxide-free controls also gave the reported high Li/Mn endpoints. These comparisons do not establish sulfur-source superiority or live-cell necessity. Filtered-liquid metal release and local SEM-EDS non-detection do not prove isolated metal products or industrial deployment.
 curation_history:
 - timestamp: '2026-10-11T14:55:14.813549Z'
   curator: Codex (GPT-6; Codex)
   action: CREATE
-  summary: Created the process-defined sulfur residue resource and qualified mixed-culture
-    acid-production observation, preserving the DSM 1927 identity conflict, incomplete mass
-    accounting, separate downstream battery use and laboratory limits.
+  summary: Created the process-defined sulfur residue resource and qualified mixed-culture acid-production observation, preserving the DSM 1927 identity conflict, incomplete mass accounting, separate downstream battery use and laboratory limits.
+- timestamp: '2026-10-30T10:36:05Z'
+  curator: claude
+  action: edit
+  summary: Normalize top-level curation_history/history_refs YAML key order in biogas-desulfurization-sulfur-residue.yaml (#864)
+history_refs:
+- history/records/biogas-desulfurization-sulfur-residue/2026-10-11T145542Z-codex-606521.yaml
+- history/records/biogas-desulfurization-sulfur-residue/2026-10-30T103605Z-claude-ae66f6.yaml

@@ -277,7 +277,7 @@ causal_graphs:
   mechanism_ref: acidophile_culture_associated_leaching
   nodes:
   - id: sqr_reductase
-    label: Sqr sulfide-quinone reductase (AFE_1792)
+    label: Sqr / Sqor sulfide-quinone reductase (consortium sqr / sqor)
     node_type: GENE_OR_PROTEIN
     gene_symbol: AFE_1792
     description: Inner-membrane flavoprotein (Sqr/Sqor) oxidizing sulfide to zero-valent sulfur/polysulfide intermediates.
@@ -416,7 +416,7 @@ causal_graphs:
         supports: partial
         explanation: Representative Sulfobacillus thermotolerans sulfide-quinone oxidoreductase (BXT84_01680) for the S. thermotolerans DSM 17362 member in the 40 degrees C single-culture and 40/45 degrees C consortium arms (MC40-25St / MC45-40AS) of lu2025; individual genes were not mutated.
   - id: tth_hydrolase
-    label: Tth tetrathionate hydrolase (tth / AFE_0029)
+    label: Tth / TetH tetrathionate hydrolase (consortium tth)
     node_type: GENE_OR_PROTEIN
     gene_symbol: tth
     description: Periplasmic pyrroloquinoline-domain hydrolase disproportionating tetrathionate into sulfate and protons.
@@ -518,7 +518,7 @@ causal_graphs:
     description: Acidic H2SO4 and Fe(III)-bearing leaching solution sustained by chemolithoautotrophic metabolism.
     protein_grounding_status: NOT_APPLICABLE
   - id: solid_feed_substrate
-    label: Industrial traction-battery hydrometallurgical residues (BR1, BR2, BR4)
+    label: Industrial traction-battery hydrometallurgical residues (nickel-line and cobalt-line residues)
     node_type: MATERIAL_OR_PHASE
     description: Starting mineral or secondary-resource feed (Traction-battery nickel and cobalt hydrometallurgical residues).
     protein_grounding_status: NOT_APPLICABLE
@@ -536,7 +536,7 @@ causal_graphs:
     evidence:
     - source_ref: lu2025
       supports: partial
-      explanation: Reduced sulfur oxidation in A. ferrooxidans couples Sqr and polythionate hydrolysis to proton generation.
+      explanation: Reduced sulfur oxidation in the five-member acidophile consortium couples Sqr/Sqor and tetrathionate hydrolysis to sulfuric acid proton generation.
   - source: tth_hydrolase
     target: acidic_ferric_sulfate_lixiviant
     predicate: produces
@@ -589,6 +589,10 @@ curation_history:
   curator: claude
   action: edit
   summary: Fix Sulfobacillus thermotolerans DSM 17362 strain ID, MC45-40AS consortium label, and 40 C single-culture temperature in UniProtKB:A0ABN5H056 grounding (#859)
+- timestamp: '2026-10-30T10:36:04Z'
+  curator: claude
+  action: edit
+  summary: Fix solid_feed_substrate sample codes and consortium causal-graph labels in traction-battery-hydrometallurgical-residue.yaml (#862)
 history_refs:
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-12T144943Z-codex-e18c9e.yaml
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-18T042750Z-antigravity-437365.yaml
@@ -596,3 +600,4 @@ history_refs:
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-24T015709Z-marcin-eab866.yaml
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-30T074106Z-claude-claude-opus-4-6-antigravity-53967a.yaml
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-30T080817Z-claude-9f9b68.yaml
+- history/records/traction-battery-hydrometallurgical-residue/2026-10-30T103604Z-claude-33e08d.yaml

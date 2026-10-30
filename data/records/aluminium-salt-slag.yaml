@@ -1,117 +1,46 @@
 id: cmmmech:aluminium-salt-slag
 name: Aluminium salt slag
 material_kind: secondary_resource
-description: >-
-  Salt-flux-bearing mixed slag from aluminium scrap remelting, containing
-  process salts and oxide-rich solids. The accepted study sampled a rotary
-  furnace batch from a Brazilian recycler using NaCl/KCl flux. This resource
-  is defined by salt-flux remelting origin, distinct from the existing
-  post-metal-recovery secondary aluminium dross specimen, generic smelting
-  slag, bauxite residue, elemental aluminium or a single mineral. Laboratory
-  water leaching and recovered salt crystals are documented; microbial action,
-  inherited criticality and industrial deployment of this recipe are not.
+description: Salt-flux-bearing mixed slag from aluminium scrap remelting, containing process salts and oxide-rich solids. The accepted study sampled a rotary furnace batch from a Brazilian recycler using NaCl/KCl flux. This resource is defined by salt-flux remelting origin, distinct from the existing post-metal-recovery secondary aluminium dross specimen, generic smelting slag, bauxite residue, elemental aluminium or a single mineral. Laboratory water leaching and recovered salt crystals are documented; microbial action, inherited criticality and industrial deployment of this recipe are not.
 sources:
-  - id: teixeira2022
-    title: >-
-      Teixeira, Ambros, Sampaio, Raposo, De Brum and Moncunill (2022).
-      Optimization of Water Leaching of Chlorides from Aluminum Salt Slag.
-      Minerals 12(9):1141. DOI 10.3390/min12091141. Complete 15-page original,
-      Sections 2-5, Figures 1-12 and Tables 1-5; published 9 September 2022.
-    url: https://doi.org/10.3390/min12091141
-    accessed_on: '2026-10-16'
+- id: teixeira2022
+  title: Teixeira, Ambros, Sampaio, Raposo, De Brum and Moncunill (2022). Optimization of Water Leaching of Chlorides from Aluminum Salt Slag. Minerals 12(9):1141. DOI 10.3390/min12091141. Complete 15-page original, Sections 2-5, Figures 1-12 and Tables 1-5; published 9 September 2022.
+  url: https://doi.org/10.3390/min12091141
+  accessed_on: '2026-10-16'
 mechanisms:
-  - id: water_leaching_salt_crystallization
-    name: Abiotic chloride-salt dissolution and evaporative crystallization
-    process: separation
-    microbial: false
-    description: >-
-      Water dissolved chloride salts from crushed salt slag. Filtration and
-      evaporation yielded NaCl/KCl-bearing crystals and a residue with lower
-      salt content. The reported chloride-removal fraction is a head-assay
-      normalized leachate measure, not aluminium recovery or the mass yield
-      of saleable salt. Product characterization supports recovery of mixed
-      salts with impurities. The paper reports a preliminary scaled solids
-      and elemental balance; it does not measure an industrial throughput or
-      a complete gas and water balance.
-    context: >-
-      Section 2.1 sampled 481 kg comprising a rotary-furnace slag batch from
-      a 14-tonne charge of manufacturing scrap, end-of-life scrap and primary
-      aluminium dross, with reported NaCl:KCl flux ratio 3:1. After four days
-      cooling, jaw crushing below 19 mm and staged homogenization/riffling,
-      separate aliquots were roller crushed below 2.8 mm or ball milled below
-      0.5 mm. Section 2.2/Figures 2-3 used 70-160 g laboratory portions,
-      distilled or tap water initially at pH 6.9-7.0, 25 degrees C and 55 rpm,
-      with 20, 30 or 40 wt.% solids and sampling over two hours. The authors
-      state duplicate tests; the listed 72 assays describe combinations, not
-      72 independent replicates of one condition. The selected arm used
-      tap water, below-2.8-mm feed, 30 wt.% solids and 90 min. Filtered solids
-      were dried at 50 degrees C for eight hours. The evaporation temperature
-      is inconsistent: Section 2.2 specifies 85 degrees C for 24 h, while
-      Figure 3 gives 50 degrees C for 24 h. No biological treatment was used.
-    evidence:
-      - source_ref: teixeira2022
-        supports: support
-        explanation: >-
-          Section 3.2/Figure 5b and page 9 report 91.2% chloride removal for
-          the selected tap-water arm at 90 min; the same curve reaches 92.2%
-          at 120 min. The abstract/conclusion greater-than-92% summary is therefore
-          not accepted for the 90-minute selected condition. Equation 1
-          defines removal using normalized leachate/head-slag chloride
-          concentrations. Figure 4 preserves a less favorable coarse-feed
-          result: below-19-mm feed at 40 wt.% solids could not be agitated.
-          Finer grinding offered limited improvement over roller crushing
-          for more dilute pulps; those observations concern this feed only.
-      - source_ref: teixeira2022
-        supports: support
-        explanation: >-
-          Section 3.3/Figures 8-11 identify NaCl and KCl in evaporated
-          crystals and diminished salt peaks in the residual slag. Table 5
-          separately reports K, Na and Cl mass percentages of 8.78, 28.84
-          and 51.92 in recovered salts, and 0.24, 0.78 and 1.41 in residual
-          slag. Thus salt-forming elements total about 90% in the crystals,
-          with appreciable impurities; these percentages are composition,
-          not recovery yield. The ED-XRF estimate of about 95.6% differs
-          from titration/FAAS. The source proposes filtration/evaporation
-          improvements and does not demonstrate remelting with this product.
-      - source_ref: teixeira2022
-        supports: support
-        explanation: >-
-          Section 4/Figure 12 reports a preliminary balance scaled to the
-          481 kg furnace batch: 116.4 kg recovered salts and 364.6 kg leached
-          residue, with 24.2% of feed mass dissolved. The authors estimate
-          about 90% salt purity and 92% overall salt recovery using
-          titration/FAAS analyses. Their elemental closure error is at most
-          +0.15% for K using those assays, versus approximately -8% for K
-          using ED-XRF. This reported solids/element balance is distinct
-          from the Figure 5 chloride-removal measurement; it is not evidence
-          that the laboratory recipe was operated on the entire 481 kg
-          batch. The recovered NaCl:KCl ratio of 4.3:1 motivates proposed
-          KCl addition before reuse, whose performance was not tested here.
-      - source_ref: teixeira2022
-        supports: partial
-        explanation: >-
-          Tables 1 and 3 list high Al percentages in ED-XRF elemental
-          compositions without oxygen; they do not quantify metallic-Al
-          content, bulk alumina recovery or the aluminium mass balance.
-          XRD phase non-detection does not demonstrate absence of hydrolyzable
-          constituents or negligible gas emission: no direct gas balance is
-          reported. Table 3's zero K entry is a non-detection, whereas Table 5
-          gives 0.24% K by another method, not evidence for zero potassium.
-          Impurities below the stated approximately 5% XRD detection limit
-          can remain despite only NaCl/KCl peaks in the recovered crystals.
-          Figure 12 is a proposed flowsheet. Subsequent aluminium recovery,
-          complete detoxification and industrial closed-loop flux reuse
-          are outside the demonstrated experiment.
-
-history_refs:
-  - history/records/aluminium-salt-slag/2026-10-16T055723Z-codex-8110f0.yaml
-  - history/records/aluminium-salt-slag/2026-10-16T060525Z-codex-6eef61.yaml
+- id: water_leaching_salt_crystallization
+  name: Abiotic chloride-salt dissolution and evaporative crystallization
+  process: separation
+  description: Water dissolved chloride salts from crushed salt slag. Filtration and evaporation yielded NaCl/KCl-bearing crystals and a residue with lower salt content. The reported chloride-removal fraction is a head-assay normalized leachate measure, not aluminium recovery or the mass yield of saleable salt. Product characterization supports recovery of mixed salts with impurities. The paper reports a preliminary scaled solids and elemental balance; it does not measure an industrial throughput or a complete gas and water balance.
+  context: 'Section 2.1 sampled 481 kg comprising a rotary-furnace slag batch from a 14-tonne charge of manufacturing scrap, end-of-life scrap and primary aluminium dross, with reported NaCl:KCl flux ratio 3:1. After four days cooling, jaw crushing below 19 mm and staged homogenization/riffling, separate aliquots were roller crushed below 2.8 mm or ball milled below 0.5 mm. Section 2.2/Figures 2-3 used 70-160 g laboratory portions, distilled or tap water initially at pH 6.9-7.0, 25 degrees C and 55 rpm, with 20, 30 or 40 wt.% solids and sampling over two hours. The authors state duplicate tests; the listed 72 assays describe combinations, not 72 independent replicates of one condition. The selected arm used tap water, below-2.8-mm feed, 30 wt.% solids and 90 min. Filtered solids were dried at 50 degrees C for eight hours. The evaporation temperature is inconsistent: Section 2.2 specifies 85 degrees C for 24 h, while Figure 3 gives 50 degrees C for 24 h. No biological treatment was used.'
+  microbial: false
+  evidence:
+  - source_ref: teixeira2022
+    supports: support
+    explanation: 'Section 3.2/Figure 5b and page 9 report 91.2% chloride removal for the selected tap-water arm at 90 min; the same curve reaches 92.2% at 120 min. The abstract/conclusion greater-than-92% summary is therefore not accepted for the 90-minute selected condition. Equation 1 defines removal using normalized leachate/head-slag chloride concentrations. Figure 4 preserves a less favorable coarse-feed result: below-19-mm feed at 40 wt.% solids could not be agitated. Finer grinding offered limited improvement over roller crushing for more dilute pulps; those observations concern this feed only.'
+  - source_ref: teixeira2022
+    supports: support
+    explanation: Section 3.3/Figures 8-11 identify NaCl and KCl in evaporated crystals and diminished salt peaks in the residual slag. Table 5 separately reports K, Na and Cl mass percentages of 8.78, 28.84 and 51.92 in recovered salts, and 0.24, 0.78 and 1.41 in residual slag. Thus salt-forming elements total about 90% in the crystals, with appreciable impurities; these percentages are composition, not recovery yield. The ED-XRF estimate of about 95.6% differs from titration/FAAS. The source proposes filtration/evaporation improvements and does not demonstrate remelting with this product.
+  - source_ref: teixeira2022
+    supports: support
+    explanation: 'Section 4/Figure 12 reports a preliminary balance scaled to the 481 kg furnace batch: 116.4 kg recovered salts and 364.6 kg leached residue, with 24.2% of feed mass dissolved. The authors estimate about 90% salt purity and 92% overall salt recovery using titration/FAAS analyses. Their elemental closure error is at most +0.15% for K using those assays, versus approximately -8% for K using ED-XRF. This reported solids/element balance is distinct from the Figure 5 chloride-removal measurement; it is not evidence that the laboratory recipe was operated on the entire 481 kg batch. The recovered NaCl:KCl ratio of 4.3:1 motivates proposed KCl addition before reuse, whose performance was not tested here.'
+  - source_ref: teixeira2022
+    supports: partial
+    explanation: 'Tables 1 and 3 list high Al percentages in ED-XRF elemental compositions without oxygen; they do not quantify metallic-Al content, bulk alumina recovery or the aluminium mass balance. XRD phase non-detection does not demonstrate absence of hydrolyzable constituents or negligible gas emission: no direct gas balance is reported. Table 3''s zero K entry is a non-detection, whereas Table 5 gives 0.24% K by another method, not evidence for zero potassium. Impurities below the stated approximately 5% XRD detection limit can remain despite only NaCl/KCl peaks in the recovered crystals. Figure 12 is a proposed flowsheet. Subsequent aluminium recovery, complete detoxification and industrial closed-loop flux reuse are outside the demonstrated experiment.'
 curation_history:
-  - timestamp: "2026-10-16T05:57:40.805922+00:00"
-    curator: Codex GPT-6
-    action: CREATE
-    summary: "Create a salt-flux remelting resource with chloride leaching, impure recovered crystals, and explicit analytical and protocol limits."
-  - timestamp: "2026-10-16T06:05:34.181400+00:00"
-    curator: Codex GPT-6
-    action: EDIT
-    summary: "Address issue480: acknowledge the source-reported scaled solids and elemental balance while preserving the lack of demonstrated industrial throughput, gas/water balance and flux reuse."
+- timestamp: '2026-10-16T05:57:40.805922+00:00'
+  curator: Codex GPT-6
+  action: CREATE
+  summary: Create a salt-flux remelting resource with chloride leaching, impure recovered crystals, and explicit analytical and protocol limits.
+- timestamp: '2026-10-16T06:05:34.181400+00:00'
+  curator: Codex GPT-6
+  action: EDIT
+  summary: 'Address issue480: acknowledge the source-reported scaled solids and elemental balance while preserving the lack of demonstrated industrial throughput, gas/water balance and flux reuse.'
+- timestamp: '2026-10-30T10:36:04Z'
+  curator: claude
+  action: edit
+  summary: Normalize top-level curation_history/history_refs YAML key order in aluminium-salt-slag.yaml (#864)
+history_refs:
+- history/records/aluminium-salt-slag/2026-10-16T055723Z-codex-8110f0.yaml
+- history/records/aluminium-salt-slag/2026-10-16T060525Z-codex-6eef61.yaml
+- history/records/aluminium-salt-slag/2026-10-30T103604Z-claude-fd4cfd.yaml

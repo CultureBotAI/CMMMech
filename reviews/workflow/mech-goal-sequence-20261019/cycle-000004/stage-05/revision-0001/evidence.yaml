@@ -1,0 +1,125 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 4
+stage: 5
+revision: 1
+outcome: completed
+summary: Consumed the 3 Cycle 4 Stage 4 review findings (cmmmech-cycle4-stage4-finding-0001,
+  cmmmech-cycle4-stage4-finding-0002, cmmmech-cycle4-stage4-finding-0003) across 25
+  records, grouped them by root cause and repair ownership into GRP-C4S5-001 (#862),
+  GRP-C4S5-002 (#863), and GRP-C4S5-003 (#864), applied all 25 record remediations
+  via scripts/curate_causal_graphs.py with 25 append-only EDIT history sidecars and
+  regenerated pages/, preserved all immutable Stage 4 review bundles untouched, and
+  verified all 25 remediated records in structured review bundle 20261030T104000Z-cycle4-stage5-remediation-verification
+  with verdict pass and 0 carry-forward findings.
+source_revision: cfbf9053da1f950d6c2f6c7bac55f8bb38a5116f
+scope_frozen_at: '2026-10-30T10:35:00Z'
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-04/revision-0001/evidence.yaml
+  sha256: 757e91d63f85ce1e0a97b5f05f7150273dff631c57ea0a65d4fa9333afbc48ee
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-05/revision-0001/issue_map.md
+  sha256: 85e9f26b9a0871f2e71936897fbb8f66e0787be7709c4e6b78b9c9da14f89d37
+  kind: issue_map
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-05/revision-0001/validation.md
+  sha256: 0a55f9923cf50a12cacb624b32d815d2c24ca7dfca04ce9a91a1122fcdb53c60
+  kind: validation
+findings:
+- finding_id: cmmmech-cycle4-stage4-finding-0001
+  carried_from: cmmmech-cycle4-stage4-finding-0001
+  status: resolved
+  group_id: GRP-C4S5-001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/862
+  summary: In data/records/traction-battery-hydrometallurgical-residue.yaml (cmmmech:traction-battery-hydrometallurgical-residue),
+    causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph) node solid_feed_substrate
+    (line 521) carries label 'Industrial traction-battery hydrometallurgical residues
+    (BR1, BR2, BR4)', where (BR1, BR2, BR4) are bauxite-residue sample codes from
+    Borra et al. (2016) rather than the separate nickel-line and cobalt-line traction-battery
+    hydrometallurgical residues in Lu et al. (2025, lu2025). In addition, nodes[0].label
+    ('Sqr sulfide-quinone reductase (AFE_1792)'), nodes[1].label ('Tth tetrathionate
+    hydrolase (tth / AFE_0029)'), and edges[0].evidence[0].explanation ('Reduced sulfur
+    oxidation in A. ferrooxidans couples Sqr and polythionate hydrolysis to proton
+    generation.') retain single-species A. ferrooxidans labels whereas sqr_reductase
+    and tth_hydrolase are grounded across the five-member acidophile consortium.
+  disposition: 'Resolved under #862 (GRP-C4S5-001) by updating causal_graphs[0] node
+    solid_feed_substrate label to ''Industrial traction-battery hydrometallurgical
+    residues (nickel-line and cobalt-line residues)'', nodes[0..1].label to consortium
+    Sqr/Sqor and Tth/TetH labels, and edges[0].evidence[0].explanation to reflect
+    the five-member acidophile consortium in data/records/traction-battery-hydrometallurgical-residue.yaml
+    with an append-only EDIT history sidecar; verified in reviews/structured/20261030T104000Z-cycle4-stage5-remediation-verification/review.yaml.'
+- finding_id: cmmmech-cycle4-stage4-finding-0002
+  carried_from: cmmmech-cycle4-stage4-finding-0002
+  status: resolved
+  group_id: GRP-C4S5-002
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/863
+  summary: Across the 663-record corpus, 8 records (cadmium-telluride-photovoltaic-module-scrap,
+    cathode-ray-tube-glass, churchite-y, end-of-life-cigs-photovoltaic-modules, end-of-life-crystalline-silicon-photovoltaic-modules,
+    iron-ore-tailings, polymetallic-nodules, waste-printed-circuit-boards) serialize
+    top-level 'mechanisms' before 'sources' (and in churchite-y before 'sources' and
+    'criticality'), whereas CANONICAL_RECORD_KEYS in scripts/new_history.py and the
+    LinkML MaterialRecord class place 'sources' and 'criticality' before 'mechanisms'
+    and 'causal_graphs'.
+  disposition: 'Resolved under #863 (GRP-C4S5-002) by normalizing top-level YAML key
+    order to CANONICAL_RECORD_KEYS across all 8 affected records with 8 append-only
+    EDIT history sidecars; verified in reviews/structured/20261030T104000Z-cycle4-stage5-remediation-verification/review.yaml.'
+- finding_id: cmmmech-cycle4-stage4-finding-0003
+  carried_from: cmmmech-cycle4-stage4-finding-0003
+  status: resolved
+  group_id: GRP-C4S5-003
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/864
+  summary: Across the 663-record corpus, 16 records (aluminium-salt-slag, beryllium,
+    beverage-carton-hydropulping-reject, biogas-desulfurization-sulfur-residue, cesium,
+    electroformed-copper-silver-manufacturing-scrap, ground-waste-tire-rubber, ion-adsorption-rare-earth-clay,
+    pharmaceutical-blister-packaging-waste, rhenium, rubidium, spent-lead-acid-battery-electrolyte,
+    spent-vanadium-flow-battery-electrolyte, strontium, zinc-leach-residue, zinc-purification-hot-filter-cake)
+    serialize top-level 'history_refs' before 'curation_history', whereas CANONICAL_RECORD_KEYS
+    in scripts/new_history.py and the LinkML MaterialRecord class place 'curation_history'
+    before 'history_refs'.
+  disposition: 'Resolved under #864 (GRP-C4S5-003) by normalizing top-level YAML key
+    order to CANONICAL_RECORD_KEYS across all 16 affected records with 16 append-only
+    EDIT history sidecars; verified in reviews/structured/20261030T104000Z-cycle4-stage5-remediation-verification/review.yaml.'
+groups:
+- group_id: GRP-C4S5-001
+  finding_ids:
+  - cmmmech-cycle4-stage4-finding-0001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/862
+  status: resolved
+  summary: Correct causal_graphs[0] solid_feed_substrate label and five-member consortium
+    enzyme/edge labels in traction-battery-hydrometallurgical-residue.yaml per Lu
+    et al. (2025) with an append-only EDIT history sidecar.
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-05/revision-0001/validation.md
+  disposition: Updated causal_graphs[0] nodes[0..1].label, nodes[3].label, and edges[0].evidence[0].explanation
+    in traction-battery-hydrometallurgical-residue.yaml with an append-only EDIT history
+    sidecar and verified in 20261030T104000Z-cycle4-stage5-remediation-verification.
+- group_id: GRP-C4S5-002
+  finding_ids:
+  - cmmmech-cycle4-stage4-finding-0002
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/863
+  status: resolved
+  summary: Normalize top-level YAML key order so sources and criticality precede mechanisms
+    and causal_graphs across 8 records with append-only EDIT history sidecars.
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-05/revision-0001/validation.md
+  disposition: Normalized top-level YAML key ordering to CANONICAL_RECORD_KEYS across
+    all 8 records in GRP-C4S5-002 with 8 append-only EDIT history sidecars and verified
+    in 20261030T104000Z-cycle4-stage5-remediation-verification.
+- group_id: GRP-C4S5-003
+  finding_ids:
+  - cmmmech-cycle4-stage4-finding-0003
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/864
+  status: resolved
+  summary: Normalize top-level YAML key order so curation_history precedes history_refs
+    across 16 records with append-only EDIT history sidecars.
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-05/revision-0001/validation.md
+  disposition: Normalized top-level YAML key ordering to CANONICAL_RECORD_KEYS across
+    all 16 records in GRP-C4S5-003 with 16 append-only EDIT history sidecars and verified
+    in 20261030T104000Z-cycle4-stage5-remediation-verification.
+carry_forward_ids: []
+infra_tasks: []
