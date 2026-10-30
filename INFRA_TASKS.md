@@ -89,6 +89,11 @@ tasks:
     status: open
     issue_url: https://github.com/CultureBotAI/CMMMech/issues/840
     disposition: "Intaken during Cycle 4 Stage 1 Round 121 context recovery (issue #840) after predecessor conversation 90bf344d-94f5-4c19-9fe4-def0147ca35c exceeded the 1M-token context limit by attaching 503 full PDF pages; queued for bounded implementation in Cycle 4 Stage 6 (infrastructure_implementation)."
+  - task_id: cmmmech-infra-0012
+    summary: Fallback when workspace dotfile NamedTemporaryFile creation/unlink or os.replace raises PermissionError in src/cmmmech/history.py cmd_new() and scripts/curate_causal_graphs.py write_record_atomic() inside macOS Seatbelt sandboxes
+    status: note
+    issue_url: https://github.com/CultureBotAI/CMMMech/issues/822
+    disposition: "Recorded during Cycle 4 Stage 2 causal_graphs review and curation across all 663 records (16 Acidithiobacillus thiooxidans records curated via scripts/curate_causal_graphs.py, raising causal_graphs coverage from 104 records / 111 graphs to 120 records / 127 graphs); noted for Stage 6 evaluation alongside issue #822."
 ```
 <!-- mech-infra-tasks:end -->
 
@@ -231,6 +236,19 @@ tasks:
 - **Issue**: https://github.com/CultureBotAI/CMMMech/issues/840
 - **Status**: `open`
 - **Disposition**: Intaken during Cycle 4 Stage 1 Round 121 context recovery (`https://github.com/CultureBotAI/CMMMech/issues/840`) for bounded implementation in Cycle 4 Stage 6 (`infrastructure_implementation`).
+
+### `cmmmech-infra-0012` — Workspace `NamedTemporaryFile` and `os.replace()` Seatbelt fallback in `src/cmmmech/history.py` and `scripts/curate_causal_graphs.py`
+
+- **Originating run / cycle / stage**: `mech-goal-sequence-20261019` / cycle `4` / stage `2` (`causal_graphs`)
+- **Observation**: During the Cycle 4 Stage 2 corpus-wide causal-graph review and curation across all `663` records (`16` `Acidithiobacillus thiooxidans` aerobic sulfur-oxidizing bioleaching / extracellular bioacid-lixiviant records curated via `scripts/curate_causal_graphs.py` — `arsenic`, `automotive-wastewater-treatment-sludge`, `blast-furnace-cast-house-dust`, `copper-smelter-slag`, `discarded-led-lamps`, `electric-arc-furnace-dust`, `gaas-production-hydroxide-sludge`, `gallium`, `gold-mine-tailings`, `metallic-machining-burrs`, `nickel-based-superalloy-residue-powders`, `spent-alkaline-zinc-carbon-batteries`, `spent-automotive-three-way-catalyst`, `spent-hydrodesulfurization-catalyst`, `spent-selective-catalytic-reduction-catalyst`, and `spent-sulfuric-acid-production-catalyst` — raising `causal_graphs` coverage from `104` records / `111` graphs to `120` records / `127` graphs with `209` `GROUNDED` `GENE_OR_PROTEIN` nodes, `6` source-limited `UNGROUNDED` `GENE_OR_PROTEIN` nodes across `coal-combustion-residuals.yaml`, `potash.yaml`, and `vanadium-bearing-shale.yaml`, and `258` `ProteinExample` instances across `57` unique UniProtKB accessions, while preserving `162` species/genus-grounded records without `causal_graphs` where primary sources document single-step whole-cell sorption/precipitation/bioleaching or unresolved direct-vs-indirect reductive mechanisms such as `jarosite`, `nickel-laterite-ore`, and `nickel`, `217` ungrounded/consortium/abiotic-comparator mechanism records without species-level `NCBITaxon` `organisms[].id` including the `5` Cycle 4 Stage 1 abiotic thermal/dehydration comparator mineral records `behoite`, `calciohilairite`, `coconinoite`, `metazellerite`, and `widgiemoolthalite`, and `164` criticality/identity-only records without `mechanisms` including the `12` Cycle 4 Stage 1 mineral records without published microbial studies), invoking `curate_record_file(..., record_history=True)` inside the standard macOS Seatbelt sandbox failed with `PermissionError: [Errno 1] Operation not permitted: '.../history/records/arsenic/.new-history-uta9fcw6.tmp'`. Although `cmmmech-infra-0006` (`https://github.com/CultureBotAI/CMMMech/issues/822`) added an `O_CREAT | O_EXCL` fallback when `os.link()` raises `PermissionError` in `src/cmmmech/history.py:291-305`, `cmd_new()` still creates and unlinks a `.new-history-*.tmp` `NamedTemporaryFile` inside `history/records/<slug>/`, and `write_record_atomic()` in `scripts/curate_causal_graphs.py:399-415` similarly creates a `.{stem}-*.tmp` `NamedTemporaryFile` inside `data/records/` and calls `os.replace()`, which Seatbelt blocks when unlinking/replacing workspace files.
+- **Desired outcome**: Evaluate updating `cmd_new()` in `src/cmmmech/history.py` to write directly via `os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL | O_NOFOLLOW, 0o644)` when `NamedTemporaryFile(dir=path.parent)` or `os.link()` raises `PermissionError`, and updating `write_record_atomic()` in `scripts/curate_causal_graphs.py` to fall back to direct in-place `path.write_text(..., encoding="utf-8")` when `NamedTemporaryFile(dir=path.parent)` or `os.replace()` raises `PermissionError` inside Seatbelt sandboxes.
+- **Evidence paths**: `src/cmmmech/history.py`, `scripts/curate_causal_graphs.py`, `tests/test_history.py`, `tests/test_curate_causal_graphs.py`
+- **Priority**: low
+- **Dependencies**: `cmmmech-infra-0004`, `cmmmech-infra-0006`
+- **Issue**: https://github.com/CultureBotAI/CMMMech/issues/822
+- **Status**: `note`
+- **Disposition**: Recorded during Cycle 4 Stage 2 (`causal_graphs`) as a non-blocking writer/sandbox observation linked to `https://github.com/CultureBotAI/CMMMech/issues/822`.
+
 
 
 

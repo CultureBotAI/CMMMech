@@ -1,23 +1,14 @@
 id: cmmmech:spent-alkaline-zinc-carbon-batteries
 name: Spent alkaline and zinc-carbon batteries
 material_kind: secondary_resource
-description: End-of-life non-button alkaline and zinc-carbon batteries, represented by a mixed AA-cell
-  powder after dismantling, electrolyte washing and drying. This secondary resource is distinct
-  from the curated watch/button-cell powder, nickel-metal-hydride batteries and lithium-ion battery
-  black mass. The selected experiment treats the two primary-cell chemistries together; it does
-  not establish separate chemistry-specific performance or a universal battery composition. Constituent-element
-  criticality is not inherited.
+description: End-of-life non-button alkaline and zinc-carbon batteries, represented by a mixed AA-cell powder after dismantling, electrolyte washing and drying. This secondary resource is distinct from the curated watch/button-cell powder, nickel-metal-hydride batteries and lithium-ion battery black mass. The selected experiment treats the two primary-cell chemistries together; it does not establish separate chemistry-specific performance or a universal battery composition. Constituent-element criticality is not inherited.
 sources:
 - id: falco2014
-  title: Falco, Martínez, Di Nanno, Thomas and Curutchet (2014). Study of a pilot plant for the
-    recovery of metals from spent alkaline and zinc-carbon batteries with biological sulphuric acid
-    and polythionate production. Latin American Applied Research 44(2):123–129. DOI 10.52292/j.laar.2014.429;
-    complete seven-page publisher PDF, Methods II.A–H, Results III.A–C, Figures 1–7 and Table 1.
+  title: Falco, Martínez, Di Nanno, Thomas and Curutchet (2014). Study of a pilot plant for the recovery of metals from spent alkaline and zinc-carbon batteries with biological sulphuric acid and polythionate production. Latin American Applied Research 44(2):123–129. DOI 10.52292/j.laar.2014.429; complete seven-page publisher PDF, Methods II.A–H, Results III.A–C, Figures 1–7 and Table 1.
   url: https://doi.org/10.52292/j.laar.2014.429
   accessed_on: '2026-10-12'
 - id: dsm11478
-  title: 'DSMZ catalogue: Acidithiobacillus thiooxidans DSM 11478, strain Tth04. Collection identity
-    does not authenticate the experimental stock.'
+  title: 'DSMZ catalogue: Acidithiobacillus thiooxidans DSM 11478, strain Tth04. Collection identity does not authenticate the experimental stock.'
   url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-11478
   accessed_on: '2026-10-12'
 - id: ncbi930
@@ -28,108 +19,211 @@ mechanisms:
 - id: biogenic_acid_medium_leaching
   name: Indirect leaching with a sulfur-oxidizing culture medium
   process: bioleaching
+  description: Sulfur-grown Acidithiobacillus thiooxidans DSM 11478 produced an acidified, polythionate-containing medium in a separate air-lift reactor. This medium mobilized Zn and Mn from prepared mixed AA battery powder. Microbial involvement is upstream lixiviant production; direct cell attack on the battery powder and an isolated polythionate-specific causal effect were not demonstrated. Removal or inactivation of all cells before the leaching stage was not established.
+  context: 'Methods II.B–F, pp.124–125: mixed spent AA alkaline and Zn-C cells of different brands were opened; casing, ferrous components, plastic and paper were separated, powder was washed with distilled water and dried overnight at a printed 150 degrees without an explicit temperature-unit letter. Figure 1 also separates a zinc can. Table 1 reports mixed-powder compositions both with and without that can, without transparently binding one of those assays to every extraction denominator. No absolute whole-cell inventory is reconstructed. The culture was maintained at 30 degrees C and 180 rpm in mineral salts medium, initially pH 2.5 with 1% m/V elemental sulfur. The 26.5-L total-volume air-lift reactor held sulfur as substrate and attachment support, was maintained at 30 degrees C and was inoculated once; acidified liquid was replaced with fresh mineral medium without reinoculation. The conclusion selects 8 kg sulfur, 10 L medium, 138 L/h air and a 350 mM proton endpoint. These are acid-production
+    settings, not a claim of 10 L battery-leaching volume. The separate 50-L leaching vessel contained 2 kg prepared powder and 28 L biological medium at pH near 0.4, stirred at 200 rpm. Medium was replaced when pH and dissolved-metal measurements plateaued. Leaching-stage temperature and a full sampling/mass-balance correction were not specified. The authors call the integrated apparatus a pilot plant; the stated vessel and feed scales do not establish commercial deployment.'
   microbial: true
   organisms:
   - id: NCBITaxon:930
     label: Acidithiobacillus thiooxidans
-  description: Sulfur-grown Acidithiobacillus thiooxidans DSM 11478 produced an acidified, polythionate-containing
-    medium in a separate air-lift reactor. This medium mobilized Zn and Mn from prepared mixed AA
-    battery powder. Microbial involvement is upstream lixiviant production; direct cell attack on
-    the battery powder and an isolated polythionate-specific causal effect were not demonstrated.
-    Removal or inactivation of all cells before the leaching stage was not established.
-  context: 'Methods II.B–F, pp.124–125: mixed spent AA alkaline and Zn-C cells of different brands
-    were opened; casing, ferrous components, plastic and paper were separated, powder was washed
-    with distilled water and dried overnight at a printed 150 degrees without an explicit temperature-unit
-    letter. Figure 1 also separates a zinc can. Table 1 reports mixed-powder compositions both with
-    and without that can, without transparently binding one of those assays to every extraction
-    denominator. No absolute whole-cell inventory is reconstructed. The culture was maintained at
-    30 degrees C and 180 rpm in mineral salts medium, initially pH 2.5 with 1% m/V elemental sulfur.
-    The 26.5-L total-volume air-lift reactor held sulfur as substrate and attachment support, was
-    maintained at 30 degrees C and was inoculated once; acidified liquid was replaced with fresh
-    mineral medium without reinoculation. The conclusion selects 8 kg sulfur, 10 L medium, 138 L/h
-    air and a 350 mM proton endpoint. These are acid-production settings, not a claim of 10 L battery-leaching
-    volume. The separate 50-L leaching vessel contained 2 kg prepared powder and 28 L biological
-    medium at pH near 0.4, stirred at 200 rpm. Medium was replaced when pH and dissolved-metal measurements
-    plateaued. Leaching-stage temperature and a full sampling/mass-balance correction were not specified.
-    The authors call the integrated apparatus a pilot plant; the stated vessel and feed scales do
-    not establish commercial deployment.'
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A543Q349
+    entry_name: A0A543Q349_ACITH
+    protein_name: Pyridine nucleotide-disulfide oxidoreductase
+    gene_symbol: sqr
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (sqr) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans DSM 11478 / Tth04 (NCBITaxon:930) in Falco et al. (2014).
+    evidence:
+    - source_ref: falco2014
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for air-lift sulfur oxidation and biogenic sulfuric-acid/polythionate leaching of Zn and Mn from spent AA battery powder by Acidithiobacillus thiooxidans DSM 11478 in Falco et al. (2014); individual sqr/tth genes were not mutated or directly assayed.
+  - uniprot_accession: UniProtKB:A0A5P9XPU3
+    entry_name: A0A5P9XPU3_ACITH
+    protein_name: Tetrathionate hydrolase
+    gene_symbol: tth
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase (tth) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans DSM 11478 / Tth04 (NCBITaxon:930) in Falco et al. (2014).
+    evidence:
+    - source_ref: falco2014
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for air-lift sulfur oxidation and biogenic sulfuric-acid/polythionate leaching of Zn and Mn from spent AA battery powder by Acidithiobacillus thiooxidans DSM 11478 in Falco et al. (2014); individual sqr/tth genes were not mutated or directly assayed.
   evidence:
   - source_ref: falco2014
     supports: support
-    explanation: Figures 1–4 and Methods II.B–C distinguish culture-based acid production from subsequent
-      powder treatment. Figure 4 reports protons, sulfate, polythionates and free cells during the
-      reactor time course. Results III.B, p.127 and Figure 6 report 100% Zn and 65% Mn extraction
-      after two fresh-medium loads. These are source-reported percentages for prepared powder, not
-      isolated-product or whole-battery yields. Figure 6 plots metal-extracted percent despite its
-      concentration caption; the first- and second-load bars are not summed here, and cumulative
-      accounting is not independently reconstructed. The abstract instead reports 67% Mn, an unresolved
-      difference retained without harmonization.
+    explanation: Figures 1–4 and Methods II.B–C distinguish culture-based acid production from subsequent powder treatment. Figure 4 reports protons, sulfate, polythionates and free cells during the reactor time course. Results III.B, p.127 and Figure 6 report 100% Zn and 65% Mn extraction after two fresh-medium loads. These are source-reported percentages for prepared powder, not isolated-product or whole-battery yields. Figure 6 plots metal-extracted percent despite its concentration caption; the first- and second-load bars are not summed here, and cumulative accounting is not independently reconstructed. The abstract instead reports 67% Mn, an unresolved difference retained without harmonization.
   - source_ref: falco2014
     supports: partial
-    explanation: Methods II.F and Results III.B describe S1 commercial sulfuric acid and S2 biological
-      medium at the same stated acid concentration. The prose reports 60% more extracted Mn and
-      40% more Zn in S2 relative to S1, but does not supply the underlying numerical series, uncertainty,
-      matched evolving pH/composition or a sterile sulfur-reactor control. These relative increases
-      are not extraction percentages or evidence that live-cell contact was necessary. Equation
-      6 is a proposed generalized polythionate reaction, not a separately tested molecular pathway.
-      Reactor productivity errors elsewhere refer to successive steps rather than independent battery-leaching
-      replicates.
+    explanation: Methods II.F and Results III.B describe S1 commercial sulfuric acid and S2 biological medium at the same stated acid concentration. The prose reports 60% more extracted Mn and 40% more Zn in S2 relative to S1, but does not supply the underlying numerical series, uncertainty, matched evolving pH/composition or a sterile sulfur-reactor control. These relative increases are not extraction percentages or evidence that live-cell contact was necessary. Equation 6 is a proposed generalized polythionate reaction, not a separately tested molecular pathway. Reactor productivity errors elsewhere refer to successive steps rather than independent battery-leaching replicates.
   - source_ref: falco2014
     supports: partial
-    explanation: Table 1 and Figure 5 establish heterogeneous Zn/Mn-containing feed, including residual
-      K in the EDS spectrum despite electrolyte washing. Results III.B characterize remaining solid
-      as Mn/O-rich; the reported Mn2O3 diffraction assignment concerns material calcined at 500
-      degrees C, not a directly established as-leached crystalline phase. Partial Mn extraction
-      remains explicit. Figure 4 also shows free-cell counts declining late in the acid-production
-      run; acid production is not evidence of unrestricted culture tolerance or indefinite performance.
+    explanation: Table 1 and Figure 5 establish heterogeneous Zn/Mn-containing feed, including residual K in the EDS spectrum despite electrolyte washing. Results III.B characterize remaining solid as Mn/O-rich; the reported Mn2O3 diffraction assignment concerns material calcined at 500 degrees C, not a directly established as-leached crystalline phase. Partial Mn extraction remains explicit. Figure 4 also shows free-cell counts declining late in the acid-production run; acid production is not evidence of unrestricted culture tolerance or indefinite performance.
   - source_ref: dsm11478
     supports: context_only
-    explanation: The current DSMZ record assigns DSM 11478/Tth04 to Acidithiobacillus thiooxidans
-      and records mine-drainage provenance. This corroborates the reported culture-collection label,
-      without independent authentication of cells used in the 2014 experiment.
+    explanation: The current DSMZ record assigns DSM 11478/Tth04 to Acidithiobacillus thiooxidans and records mine-drainage provenance. This corroborates the reported culture-collection label, without independent authentication of cells used in the 2014 experiment.
   - source_ref: ncbi930
     supports: context_only
-    explanation: The species-level NCBI identifier identifies A. thiooxidans; it does not encode
-      the experimental strain or prove its causal contribution.
+    explanation: The species-level NCBI identifier identifies A. thiooxidans; it does not encode the experimental strain or prove its causal contribution.
 - id: downstream_leachate_electrolysis
   name: Separate electrolysis of the biologically generated leachate
   process: recovery
+  description: An externally powered electrolysis stage deposited a source-assigned metallic Zn cathodic solid and a Mn-oxide anodic solid from an aliquot of the preceding leachate. This stage is electrochemical, not demonstrated microbial electrodeposition. Deposits and source-reported leachate recovery are documented, but the experiment does not establish a closed whole-battery recovery yield, battery-grade products or commercial production.
+  context: Methods II.G–H, p.125 used 6.5 L leaching liquor, two stainless-steel electrodes separated by 25 cm, average current density 100 A/m2, atmospheric pressure and room temperature. Bath samples were analyzed by atomic absorption and pH, and end-of-run solids by acid digestion/atomic absorption, SEM-EDS, diffraction and BET methods. The article does not provide a complete deposit-mass and metal-inventory reconciliation across washing, leaching, liquid replacement, sampling and electrolysis.
   microbial: false
-  description: An externally powered electrolysis stage deposited a source-assigned metallic Zn
-    cathodic solid and a Mn-oxide anodic solid from an aliquot of the preceding leachate. This stage
-    is electrochemical, not demonstrated microbial electrodeposition. Deposits and source-reported
-    leachate recovery are documented, but the experiment does not establish a closed whole-battery
-    recovery yield, battery-grade products or commercial production.
-  context: Methods II.G–H, p.125 used 6.5 L leaching liquor, two stainless-steel electrodes separated
-    by 25 cm, average current density 100 A/m2, atmospheric pressure and room temperature. Bath
-    samples were analyzed by atomic absorption and pH, and end-of-run solids by acid digestion/atomic
-    absorption, SEM-EDS, diffraction and BET methods. The article does not provide a complete deposit-mass
-    and metal-inventory reconciliation across washing, leaching, liquid replacement, sampling and
-    electrolysis.
   evidence:
   - source_ref: falco2014
     supports: support
-    explanation: Results III.C, pp.127–128 reports 36% Mn and 66% Zn recovery from leaching solution
-      after 68 hours, with metallic Zn described at the cathode and brown Mn oxide at the anode.
-      These leachate-stage percentages are not multiplied by leaching percentages to infer overall
-      recovery. Figure 7 shows the anodic solid's laminar morphology, not a quantitative purity
-      or phase determination.
+    explanation: Results III.C, pp.127–128 reports 36% Mn and 66% Zn recovery from leaching solution after 68 hours, with metallic Zn described at the cathode and brown Mn oxide at the anode. These leachate-stage percentages are not multiplied by leaching percentages to infer overall recovery. Figure 7 shows the anodic solid's laminar morphology, not a quantitative purity or phase determination.
   - source_ref: falco2014
     supports: partial
-    explanation: Current efficiency for both deposits was below 10%. The bath became green and the
-      anode lost mass; the authors attribute the principal Fe impurity to electrode corrosion. The
-      reported Zn deposit purity is 90%; Mn-oxide purity is 82% in Results and 85% in Conclusions.
-      The final electrolysis pH is described as 1.8 and later 1.5. These unresolved differences
-      and low efficiencies are preserved. The Mn2O3 assignment again follows 500-degree-C calcination;
-      it cannot establish an identical crystalline phase in the untreated anodic deposit. Claimed
-      economic and ecological advantages were not a demonstrated full process cost or life-cycle
-      assessment.
+    explanation: Current efficiency for both deposits was below 10%. The bath became green and the anode lost mass; the authors attribute the principal Fe impurity to electrode corrosion. The reported Zn deposit purity is 90%; Mn-oxide purity is 82% in Results and 85% in Conclusions. The final electrolysis pH is described as 1.8 and later 1.5. These unresolved differences and low efficiencies are preserved. The Mn2O3 assignment again follows 500-degree-C calcination; it cannot establish an identical crystalline phase in the untreated anodic deposit. Claimed economic and ecological advantages were not a demonstrated full process cost or life-cycle assessment.
+causal_graphs:
+- id: biogenic_acid_medium_leaching_graph
+  name: Acidithiobacillus thiooxidans DSM 11478 air-lift biogenic sulfuric-acid and polythionate leaching of Zn and Mn from spent AA alkaline and zinc-carbon battery powder
+  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to air-lift reactor generation of acidic sulfate/polythionate medium and subsequent two-load mobilization of Zn and Mn from washed mixed AA alkaline and zinc-carbon battery powder.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: biogenic_acid_medium_leaching
+  nodes:
+  - id: sqr_reductase
+    label: Sqr sulfide-quinone reductase (sqr)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: sqr
+    description: Membrane-bound sulfide-quinone reductase oxidizing reduced sulfur species to zero-valent sulfur and polythionate intermediates.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A543Q349
+      entry_name: A0A543Q349_ACITH
+      protein_name: Pyridine nucleotide-disulfide oxidoreductase
+      gene_symbol: sqr
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (sqr) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans DSM 11478 / Tth04 (NCBITaxon:930) in Falco et al. (2014).
+      evidence:
+      - source_ref: falco2014
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for air-lift sulfur oxidation and biogenic sulfuric-acid/polythionate leaching of Zn and Mn from spent AA battery powder by Acidithiobacillus thiooxidans DSM 11478 in Falco et al. (2014); individual sqr/tth genes were not mutated or directly assayed.
+  - id: tth_hydrolase
+    label: Tth tetrathionate hydrolase (tth)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: tth
+    description: Periplasmic tetrathionate hydrolase disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A5P9XPU3
+      entry_name: A0A5P9XPU3_ACITH
+      protein_name: Tetrathionate hydrolase
+      gene_symbol: tth
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase (tth) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans DSM 11478 / Tth04 (NCBITaxon:930) in Falco et al. (2014).
+      evidence:
+      - source_ref: falco2014
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for air-lift sulfur oxidation and biogenic sulfuric-acid/polythionate leaching of Zn and Mn from spent AA battery powder by Acidithiobacillus thiooxidans DSM 11478 in Falco et al. (2014); individual sqr/tth genes were not mutated or directly assayed.
+  - id: airlift_biogenic_sulfuric_polythionate_medium
+    label: Air-lift reactor A. thiooxidans DSM 11478 sulfuric-acid and polythionate medium (~350 mM H+, pH ~0.4; 28 L per leaching load)
+    node_type: CHEMICAL_ENTITY
+    description: Acidified, polythionate-containing mineral medium (~350 mM H+, pH near 0.4) produced by Acidithiobacillus thiooxidans DSM 11478 on 8 kg elemental sulfur in a 26.5-L air-lift reactor at 30 C and transferred in 28-L loads to a 50-L stirred leaching vessel.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: mixed_spent_aa_battery_powder
+    label: Dismantled, washed, and dried mixed spent AA alkaline and Zn-C battery powder (2 kg in 28 L medium at 200 rpm)
+    node_type: MATERIAL_OR_PHASE
+    description: 2 kg of electrolyte-washed and dried internal powder from dismantled mixed spent AA alkaline and zinc-carbon batteries, stirred at 200 rpm in 28 L biological medium across two successive medium loads.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: mobilized_battery_zn_and_mn
+    label: Dissolved Zn (100% reported) and Mn (65% in Results / 67% in Abstract) in leaching liquor after two biological-medium loads
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved Zn and Mn in the leaching liquor after two fresh biological-medium loads (source-reported 100% Zn and 65% Mn in Results III.B / Figure 6 vs 67% Mn in Abstract, with 40% more Zn and 60% more Mn reported in biological medium S2 than acid-matched commercial H2SO4 S1).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: sqr_reductase
+    target: tth_hydrolase
+    predicate: supplies_substrate_for
+    relationship: oxidation of reduced sulfur intermediates to polythionates
+    description: Sulfide/sulfur oxidation generates reduced sulfur and polythionate intermediates metabolized by periplasmic tetrathionate hydrolase.
+    evidence:
+    - source_ref: falco2014
+      supports: partial
+      explanation: Reduced-sulfur oxidation in Acidithiobacillus thiooxidans couples Sqr and polythionate hydrolysis during air-lift sulfur oxidation and biogenic sulfuric-acid/polythionate leaching of Zn and Mn from spent AA battery powder by Acidithiobacillus thiooxidans DSM 11478 in Falco et al. (2014); individual enzymes were not directly assayed.
+  - source: tth_hydrolase
+    target: airlift_biogenic_sulfuric_polythionate_medium
+    predicate: produces
+    relationship: polythionate disproportionation and sulfuric-acid proton generation
+    description: Periplasmic tetrathionate hydrolysis generates sulfate and protons, acidifying the sulfur-oxidizing culture medium.
+    evidence:
+    - source_ref: falco2014
+      supports: partial
+      explanation: Chemolithoautotrophic sulfur oxidation by Acidithiobacillus thiooxidans generates the acidic sulfate/polythionate medium during air-lift sulfur oxidation and biogenic sulfuric-acid/polythionate leaching of Zn and Mn from spent AA battery powder by Acidithiobacillus thiooxidans DSM 11478 in Falco et al. (2014); individual enzyme activities were not isolated.
+  - source: airlift_biogenic_sulfuric_polythionate_medium
+    target: mixed_spent_aa_battery_powder
+    predicate: solubilizes
+    relationship: two-load acidic and polythionate-assisted leaching of washed mixed AA battery powder
+    description: Two successive 28-L loads of air-lift reactor biological medium (pH ~0.4) contact 2 kg of washed mixed AA battery powder at 200 rpm, supplying protons and polythionates for Zn and Mn oxide dissolution.
+    evidence:
+    - source_ref: falco2014
+      supports: support
+      explanation: Methods II.B-F and Figures 1-4 of Falco et al. (2014) document upstream sulfur oxidation by DSM 11478 in the 26.5-L air-lift reactor (~350 mM H+, pH ~0.4, with measured sulfate and polythionates) and subsequent treatment of 2 kg battery powder in 28 L biological medium.
+  - source: mixed_spent_aa_battery_powder
+    target: mobilized_battery_zn_and_mn
+    predicate: produces
+    relationship: solubilization of Zn and Mn into battery leaching liquor
+    description: Two biological-medium loads mobilize source-reported 100% Zn and 65% Mn (67% in Abstract) from the prepared battery powder into solution prior to separate downstream electrolysis.
+    evidence:
+    - source_ref: falco2014
+      supports: support
+      explanation: Results III.B (p. 127) and Figure 6 of Falco et al. (2014) report 100% Zn and 65% Mn extraction after two biological-medium loads (with Abstract stating 67% Mn and prose reporting 40% more Zn and 60% more Mn in biological medium S2 than commercial H2SO4 S1 without raw control series).
 curation_history:
 - timestamp: '2026-10-12T13:19:52.376103+00:00'
   curator: Codex (GPT-6; codex)
   action: CREATE
-  summary: Created the mixed spent AA alkaline/zinc-carbon resource from full primary evidence,
-    distinguishing upstream biological medium production, qualified powder leaching and separate
-    electrolysis while retaining source and mass-balance limits.
+  summary: Created the mixed spent AA alkaline/zinc-carbon resource from full primary evidence, distinguishing upstream biological medium production, qualified powder leaching and separate electrolysis while retaining source and mass-balance limits.
+- timestamp: '2026-10-30T06:04:43Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: edit
+  summary: Added representative Acidithiobacillus thiooxidans ATCC 19377 Sqr (UniProtKB:A0A543Q349) and Tth (UniProtKB:A0A5P9XPU3) protein examples and causal graph (biogenic_acid_medium_leaching_graph) to spent-alkaline-zinc-carbon-batteries.yaml.
 history_refs:
 - history/records/spent-alkaline-zinc-carbon-batteries/2026-10-12T131959Z-codex-734d22.yaml
+- history/records/spent-alkaline-zinc-carbon-batteries/2026-10-30T060443Z-claude-claude-opus-4-6-antigravity-34e2b7.yaml

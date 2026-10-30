@@ -1,146 +1,228 @@
 id: cmmmech:gold-mine-tailings
 name: Gold-mine tailings
 material_kind: secondary_resource
-description: Processing-derived residual material from gold production, distinct from unprocessed
-  gold ore, elemental gold, individual mineral species and isolated rare-earth products. The curated
-  experiment concerns one air-dried, sieved batch obtained from the Mouteh Gold Factory tailings dam.
-  It supports qualified chemical pretreatment and culture-associated praseodymium, cerium and europium
-  mobilization at laboratory scale; its composition and behavior do not define all gold-mine tailings.
-  No criticality designation is inherited from constituents.
+description: Processing-derived residual material from gold production, distinct from unprocessed gold ore, elemental gold, individual mineral species and isolated rare-earth products. The curated experiment concerns one air-dried, sieved batch obtained from the Mouteh Gold Factory tailings dam. It supports qualified chemical pretreatment and culture-associated praseodymium, cerium and europium mobilization at laboratory scale; its composition and behavior do not define all gold-mine tailings. No criticality designation is inherited from constituents.
+sources:
+- id: fereydouni2025
+  title: Fereydouni, H., Naseri, T. and Mousavi, S.M. (2025). Synergistic recovery of Pr, Eu, and Ce from gold mine tailings using bioleaching and oxalic acid pretreatment. Scientific Reports 15:4478. DOI 10.1038/s41598-025-88594-0; published 6 February 2025. Complete 12-page publisher article, Figures 1–7, Table 1 and Methods/Results/Conclusion inspected; no supplementary-file link identified in complete publisher HTML or PMC XML. Underlying data available from corresponding author on reasonable request.
+  url: https://doi.org/10.1038/s41598-025-88594-0
+  accessed_on: '2026-10-12'
+- id: ncbi_thiooxidans
+  title: 'NCBI Taxonomy 930: Acidithiobacillus thiooxidans, species; current official taxonomy XML inspected on 12 October 2026.'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930
+  accessed_on: '2026-10-12'
 mechanisms:
 - id: oxalic_acid_pretreatment
   name: Chemical oxalic-acid pretreatment of a mixed gold-tailings feed
   process: other
+  description: An abiotic oxalic-acid stage preceded the bacterial-culture assay and reportedly dissolved some iron while the three assayed rare-earth elements remained below detection in its filtrate. This is a chemical pretreatment observation, not microbial oxalate production, complete iron removal or isolated-metal recovery.
+  context: 'Fereydouni et al. (2025), Methods and Conclusion: tailings were air dried and sieved through mesh 200 to less than 75 micrometres. The Conclusion and abstract specify 2 M oxalic acid, 90 degrees C and a liquid-to-solid ratio of 60 mL/g for 6 h; Methods independently specifies 500 rpm, 6 h, a heated flask sealed with foil and subsequent vacuum filtration, but omits the acid concentration, temperature and liquid-to-solid ratio. The bioleaching solid loading is not this chemical-stage ratio. Rinsing, drying and residual oxalate carryover into the subsequent culture stage are not detailed. Only one tailings batch was studied.'
   microbial: false
-  description: An abiotic oxalic-acid stage preceded the bacterial-culture assay and reportedly dissolved
-    some iron while the three assayed rare-earth elements remained below detection in its filtrate.
-    This is a chemical pretreatment observation, not microbial oxalate production, complete iron removal
-    or isolated-metal recovery.
-  context: 'Fereydouni et al. (2025), Methods and Conclusion: tailings were air dried and sieved through
-    mesh 200 to less than 75 micrometres. The Conclusion and abstract specify 2 M oxalic acid, 90
-    degrees C and a liquid-to-solid ratio of 60 mL/g for 6 h; Methods independently specifies 500
-    rpm, 6 h, a heated flask sealed with foil and subsequent vacuum filtration, but omits the acid
-    concentration, temperature and liquid-to-solid ratio. The bioleaching solid loading is not this
-    chemical-stage ratio. Rinsing, drying and residual oxalate carryover into the subsequent culture
-    stage are not detailed. Only one tailings batch was studied.'
   evidence:
   - source_ref: fereydouni2025
     supports: support
-    explanation: Methods Characteristics GMT (p. 2), Results Pretreatment with oxalic acid (p. 3)
-      and Conclusion (p. 10) identify the processing waste and chemical stage. The authors report
-      at most 20% iron dissolution and Pr, Ce and Eu below 0.01 mg/L in the oxalic-acid leachate.
-      Below detection is not zero and does not by itself close a rare-earth mass balance or establish
-      quantitative retention in the residue.
+    explanation: Methods Characteristics GMT (p. 2), Results Pretreatment with oxalic acid (p. 3) and Conclusion (p. 10) identify the processing waste and chemical stage. The authors report at most 20% iron dissolution and Pr, Ce and Eu below 0.01 mg/L in the oxalic-acid leachate. Below detection is not zero and does not by itself close a rare-earth mass balance or establish quantitative retention in the residue.
   - source_ref: fereydouni2025
     supports: partial
-    explanation: Figure 3 and pp. 5–6 compare source-assigned quartz, clinochlore, muscovite, albite
-      and gypsum peaks. Prose first says clinochlore and gypsum were removed, then narrows this to
-      reduced peaks and explicitly disclaims complete contaminant removal. Figure 3 also labels hydrogen
-      oxalate hydrate after pretreatment. These qualitative patterns do not quantify phase abundance,
-      establish a particular rare-earth host or prove that iron removal alone caused subsequent extraction
-      changes. Figures 4–6 provide FTIR/SEM/EDX context rather than a phase-specific dissolution
-      balance.
+    explanation: Figure 3 and pp. 5–6 compare source-assigned quartz, clinochlore, muscovite, albite and gypsum peaks. Prose first says clinochlore and gypsum were removed, then narrows this to reduced peaks and explicitly disclaims complete contaminant removal. Figure 3 also labels hydrogen oxalate hydrate after pretreatment. These qualitative patterns do not quantify phase abundance, establish a particular rare-earth host or prove that iron removal alone caused subsequent extraction changes. Figures 4–6 provide FTIR/SEM/EDX context rather than a phase-specific dissolution balance.
 - id: thiooxidans_culture_associated_ree_mobilization
   name: Sulfur-oxidizing culture-associated rare-earth mobilization after pretreatment
   process: bioleaching
+  description: A living A. thiooxidans culture was used to condition sulfur-containing medium before addition of the mixed tailings. The paper reports higher dissolved Pr, Ce and Eu extraction endpoints for oxalic-acid-pretreated than untreated tailings. Acid generation is a plausible culture contribution, but omitted control data, incomplete loading information and inconsistent growth descriptions prevent a quantified microbial advantage, a unique molecular mechanism or a demonstrated synergistic interaction from being inferred.
+  context: Methods pp. 2–3 attributes strain PTCC 1717 to IROST, Tehran; the species identifier is verified at NCBI but does not authenticate the experimental stock or strain. Growth medium is listed as elemental sulfur 5 g/L, (NH4)2SO4 2 g/L, K2HPO4.3H2O 0.25 g/L, MgSO4.7H2O 0.25 g/L and KCl 0.1 g/L. Propagation used 10% (v/v) inoculum at 30 degrees C and 140 rpm. The two-step assay separately specifies 100 mL medium in 250 mL flasks, 2% (v/v) inoculum described as 10^8 cells/mL, 30 degrees C, 140 rpm and seven days of leaching. Results chooses culture day 12 for tailings addition, whereas Methods calls the addition the end of logarithmic growth and Results/Conclusion describe its onset; no harmonized growth-stage interpretation is imposed. Bioleaching solids mass/pulp density, pretreatment-residue mass and assay-specific feed composition, filtration cutoff, replicate number and error-bar definition are not supplied in the inspected article. Hemocytometer counts are not viability or CFU
+    measurements. Filtered liquor was analyzed by ICP-OES; water could be added to compensate evaporation.
   microbial: true
   organisms:
   - id: NCBITaxon:930
     label: Acidithiobacillus thiooxidans
-  description: A living A. thiooxidans culture was used to condition sulfur-containing medium before
-    addition of the mixed tailings. The paper reports higher dissolved Pr, Ce and Eu extraction endpoints
-    for oxalic-acid-pretreated than untreated tailings. Acid generation is a plausible culture contribution,
-    but omitted control data, incomplete loading information and inconsistent growth descriptions
-    prevent a quantified microbial advantage, a unique molecular mechanism or a demonstrated synergistic
-    interaction from being inferred.
-  context: Methods pp. 2–3 attributes strain PTCC 1717 to IROST, Tehran; the species identifier is
-    verified at NCBI but does not authenticate the experimental stock or strain. Growth medium is
-    listed as elemental sulfur 5 g/L, (NH4)2SO4 2 g/L, K2HPO4.3H2O 0.25 g/L, MgSO4.7H2O 0.25 g/L and
-    KCl 0.1 g/L. Propagation used 10% (v/v) inoculum at 30 degrees C and 140 rpm. The two-step assay
-    separately specifies 100 mL medium in 250 mL flasks, 2% (v/v) inoculum described as 10^8 cells/mL,
-    30 degrees C, 140 rpm and seven days of leaching. Results chooses culture day 12 for tailings
-    addition, whereas Methods calls the addition the end of logarithmic growth and Results/Conclusion
-    describe its onset; no harmonized growth-stage interpretation is imposed. Bioleaching solids mass/pulp
-    density, pretreatment-residue mass and assay-specific feed composition, filtration cutoff, replicate
-    number and error-bar definition are not supplied in the inspected article. Hemocytometer counts
-    are not viability or CFU measurements. Filtered liquor was analyzed by ICP-OES; water could be
-    added to compensate evaporation.
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A543Q349
+    entry_name: A0A543Q349_ACITH
+    protein_name: Pyridine nucleotide-disulfide oxidoreductase
+    gene_symbol: sqr
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (sqr) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans PTCC 1717 (NCBITaxon:930) in Fereydouni et al. (2025).
+    evidence:
+    - source_ref: fereydouni2025
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-oxidizing medium conditioning and culture-associated Pr, Ce, and Eu mobilization from oxalic-acid-pretreated gold-mine tailings by Acidithiobacillus thiooxidans PTCC 1717 in Fereydouni et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
+  - uniprot_accession: UniProtKB:A0A5P9XPU3
+    entry_name: A0A5P9XPU3_ACITH
+    protein_name: Tetrathionate hydrolase
+    gene_symbol: tth
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase (tth) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans PTCC 1717 (NCBITaxon:930) in Fereydouni et al. (2025).
+    evidence:
+    - source_ref: fereydouni2025
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing medium conditioning and culture-associated Pr, Ce, and Eu mobilization from oxalic-acid-pretreated gold-mine tailings by Acidithiobacillus thiooxidans PTCC 1717 in Fereydouni et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
   evidence:
   - source_ref: fereydouni2025
     supports: support
-    explanation: 'Results Extraction of metals (p. 4) and original Figure 2 (p. 5) report increased
-      solution-extraction endpoints between days 3 and 7 in the pretreated culture assay: Pr 57% to
-      76%, Ce 31% to 46% and Eu 5% to 14%. Figure 2 includes a seven-day untreated-feed culture comparator
-      with lower bars. These are the authors'' reported percentages, not curator-recalculated yields.
-      Equation 1 (p. 3) defines the numerator as leachate concentration Cs (mg/L) times solution volume
-      Vs (L), divided by feed content Cf (mg/g) times feed mass Mf. It does not measure an isolated
-      product. The publication does not provide the solid loading or post-pretreatment inventories
-      needed to reconstruct the denominator and closed mass balance across both stages.'
+    explanation: 'Results Extraction of metals (p. 4) and original Figure 2 (p. 5) report increased solution-extraction endpoints between days 3 and 7 in the pretreated culture assay: Pr 57% to 76%, Ce 31% to 46% and Eu 5% to 14%. Figure 2 includes a seven-day untreated-feed culture comparator with lower bars. These are the authors'' reported percentages, not curator-recalculated yields. Equation 1 (p. 3) defines the numerator as leachate concentration Cs (mg/L) times solution volume Vs (L), divided by feed content Cf (mg/g) times feed mass Mf. It does not measure an isolated product. The publication does not provide the solid loading or post-pretreatment inventories needed to reconstruct the denominator and closed mass balance across both stages.'
   - source_ref: fereydouni2025
     supports: partial
-    explanation: The original Figure 2 bar heights and Results compare pretreated with untreated bacterial
-      cultures. Abstract reports increases of 24.4%, 14.4% and 9.1% for Pr, Ce, Eu; Results rounds
-      these to 24, 14, 9%. The plotted comparison is consistent with differences in extraction percentage
-      points, not established relative-percent gains or a factorial synergy estimate. The Results
-      says uninoculated controls under the same conditions gave near-zero extraction but explicitly
-      omits their data from Figure 2; numerical control trajectories, uncertainties and pH/sulfuric-acid
-      matching are not provided. This is an asserted control result, not independently reconstructable
-      evidence that biological chemistry outperforms matched abiotic acid. Dead-cell, cell-free-liquor
-      and acid-matched comparisons are not shown.
+    explanation: The original Figure 2 bar heights and Results compare pretreated with untreated bacterial cultures. Abstract reports increases of 24.4%, 14.4% and 9.1% for Pr, Ce, Eu; Results rounds these to 24, 14, 9%. The plotted comparison is consistent with differences in extraction percentage points, not established relative-percent gains or a factorial synergy estimate. The Results says uninoculated controls under the same conditions gave near-zero extraction but explicitly omits their data from Figure 2; numerical control trajectories, uncertainties and pH/sulfuric-acid matching are not provided. This is an asserted control result, not independently reconstructable evidence that biological chemistry outperforms matched abiotic acid. Dead-cell, cell-free-liquor and acid-matched comparisons are not shown.
   - source_ref: fereydouni2025
     supports: partial
-    explanation: Figure 1a (p. 4) begins with a cell-count point around 4 x 10^8 cells/mL and declines
-      over a 14-day axis, whereas p. 3 states an initial 4 x 10^6 cells/mL and describes maximum growth/log-phase
-      onset at day 12. Figure 1b spans seven days, with pH approximately 0.8 to 0.6 and back to 0.8,
-      not a plotted 3.5-to-0.7 preculture trajectory. The graph/text do not unambiguously align propagation,
-      addition and assay times. Hemocytometry does not establish the prose assertion that cells eventually
-      died. Sulfate/pH/Eh observations are compatible with changing medium chemistry, but do not demonstrate
-      a specific metabolic flux or iron oxidation-state ratio.
+    explanation: Figure 1a (p. 4) begins with a cell-count point around 4 x 10^8 cells/mL and declines over a 14-day axis, whereas p. 3 states an initial 4 x 10^6 cells/mL and describes maximum growth/log-phase onset at day 12. Figure 1b spans seven days, with pH approximately 0.8 to 0.6 and back to 0.8, not a plotted 3.5-to-0.7 preculture trajectory. The graph/text do not unambiguously align propagation, addition and assay times. Hemocytometry does not establish the prose assertion that cells eventually died. Sulfate/pH/Eh observations are compatible with changing medium chemistry, but do not demonstrate a specific metabolic flux or iron oxidation-state ratio.
   - source_ref: fereydouni2025
     supports: partial
-    explanation: Methods p. 2 reports bulk ICP-OES feed concentrations in mg/kg, including Fe 322743,
-      Al 527, Pr 100, Eu 213 and Ce 112; p. 5 later repeats 322743 for Fe with an incompatible mg/L
-      label. Figure 6 EDX tables are explicitly Wt.% and list Fe 15.65, 5.12, 1.71 across stages,
-      while p. 6 calls these v/v. The middle two-entry table sums to 89.47%, and EDX Al values 84.35–98.29%
-      differ greatly from the stated bulk Al assay. These EDX values cannot substitute for bulk feed
-      inventories, absolute iron removal or a closed mass balance. Figure 2 plots Fe on a Recovery(%)
-      axis, whereas p. 4 describes an iron content falling to 1%; those quantities are not equated
-      here.
+    explanation: Methods p. 2 reports bulk ICP-OES feed concentrations in mg/kg, including Fe 322743, Al 527, Pr 100, Eu 213 and Ce 112; p. 5 later repeats 322743 for Fe with an incompatible mg/L label. Figure 6 EDX tables are explicitly Wt.% and list Fe 15.65, 5.12, 1.71 across stages, while p. 6 calls these v/v. The middle two-entry table sums to 89.47%, and EDX Al values 84.35–98.29% differ greatly from the stated bulk Al assay. These EDX values cannot substitute for bulk feed inventories, absolute iron removal or a closed mass balance. Figure 2 plots Fe on a Recovery(%) axis, whereas p. 4 describes an iron content falling to 1%; those quantities are not equated here.
   - source_ref: fereydouni2025
     supports: partial
-    explanation: Figure 7/Table 1 (p. 9) present fitted shrinking-core comparisons, not direct rate-limiting-step
-      measurements. The text on p. 10 gives Eu conventional chemical-reaction R-squared as 0.9168,
-      but Table 1/Figure 7e assign 0.9168 to diffusion and 0.9611 to chemical reaction. Its claim
-      that sulfate-adjusted models predict better conflicts with the lower reported R-squared values,
-      including 0.4012 for Ce and 0.2617 for Eu. These fits do not establish a unique mechanism. Single-batch
-      shake-flask data and qualitative surface images provide no isolated-REE product, gold-recovery
-      result, demonstrated industrial deployment or universal gold-tailings performance.
+    explanation: Figure 7/Table 1 (p. 9) present fitted shrinking-core comparisons, not direct rate-limiting-step measurements. The text on p. 10 gives Eu conventional chemical-reaction R-squared as 0.9168, but Table 1/Figure 7e assign 0.9168 to diffusion and 0.9611 to chemical reaction. Its claim that sulfate-adjusted models predict better conflicts with the lower reported R-squared values, including 0.4012 for Ce and 0.2617 for Eu. These fits do not establish a unique mechanism. Single-batch shake-flask data and qualitative surface images provide no isolated-REE product, gold-recovery result, demonstrated industrial deployment or universal gold-tailings performance.
   - source_ref: ncbi_thiooxidans
     supports: context_only
-    explanation: NCBI Taxonomy 930 resolves to Acidithiobacillus thiooxidans at species rank. This
-      supports the stated species mapping only; PTCC 1717 remains the publication's culture-collection
-      attribution and is not independently authenticated by the species record.
-sources:
-- id: fereydouni2025
-  title: Fereydouni, H., Naseri, T. and Mousavi, S.M. (2025). Synergistic recovery of Pr, Eu, and
-    Ce from gold mine tailings using bioleaching and oxalic acid pretreatment. Scientific Reports
-    15:4478. DOI 10.1038/s41598-025-88594-0; published 6 February 2025. Complete 12-page publisher
-    article, Figures 1–7, Table 1 and Methods/Results/Conclusion inspected; no supplementary-file
-    link identified in complete publisher HTML or PMC XML. Underlying data available from corresponding
-    author on reasonable request.
-  url: https://doi.org/10.1038/s41598-025-88594-0
-  accessed_on: '2026-10-12'
-- id: ncbi_thiooxidans
-  title: 'NCBI Taxonomy 930: Acidithiobacillus thiooxidans, species; current official taxonomy XML
-    inspected on 12 October 2026.'
-  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930
-  accessed_on: '2026-10-12'
+    explanation: NCBI Taxonomy 930 resolves to Acidithiobacillus thiooxidans at species rank. This supports the stated species mapping only; PTCC 1717 remains the publication's culture-collection attribution and is not independently authenticated by the species record.
+causal_graphs:
+- id: thiooxidans_culture_associated_ree_mobilization_graph
+  name: Acidithiobacillus thiooxidans PTCC 1717 sulfur-oxidizing culture-associated mobilization of Pr, Ce, and Eu from oxalic-acid-pretreated gold-mine tailings
+  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to conditioning of elemental-sulfur mineral medium and subsequent culture-associated mobilization of Pr, Ce, and Eu from oxalic-acid-pretreated Mouteh gold-mine tailings.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: thiooxidans_culture_associated_ree_mobilization
+  nodes:
+  - id: sqr_reductase
+    label: Sqr sulfide-quinone reductase (sqr)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: sqr
+    description: Membrane-bound sulfide-quinone reductase oxidizing reduced sulfur species to zero-valent sulfur and polythionate intermediates.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A543Q349
+      entry_name: A0A543Q349_ACITH
+      protein_name: Pyridine nucleotide-disulfide oxidoreductase
+      gene_symbol: sqr
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (sqr) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans PTCC 1717 (NCBITaxon:930) in Fereydouni et al. (2025).
+      evidence:
+      - source_ref: fereydouni2025
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-oxidizing medium conditioning and culture-associated Pr, Ce, and Eu mobilization from oxalic-acid-pretreated gold-mine tailings by Acidithiobacillus thiooxidans PTCC 1717 in Fereydouni et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
+  - id: tth_hydrolase
+    label: Tth tetrathionate hydrolase (tth)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: tth
+    description: Periplasmic tetrathionate hydrolase disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A5P9XPU3
+      entry_name: A0A5P9XPU3_ACITH
+      protein_name: Tetrathionate hydrolase
+      gene_symbol: tth
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase (tth) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans PTCC 1717 (NCBITaxon:930) in Fereydouni et al. (2025).
+      evidence:
+      - source_ref: fereydouni2025
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing medium conditioning and culture-associated Pr, Ce, and Eu mobilization from oxalic-acid-pretreated gold-mine tailings by Acidithiobacillus thiooxidans PTCC 1717 in Fereydouni et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
+  - id: conditioned_sulfur_oxidizing_culture_medium
+    label: Acidified A. thiooxidans PTCC 1717 elemental-sulfur culture medium (5 g/L S0, pH ~0.6-0.8 at 30 C and 140 rpm)
+    node_type: CHEMICAL_ENTITY
+    description: 100 mL elemental-sulfur mineral medium (5 g/L S0) inoculated with Acidithiobacillus thiooxidans PTCC 1717 in 250 mL flasks at 30 C and 140 rpm (acidified to pH ~0.6-0.8 before 7-day tailings contact).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: pretreated_mouteh_gold_tailings
+    label: Oxalic-acid-pretreated vs untreated Mouteh gold-mine tailings (<75 um; bulk feed 100 mg/kg Pr, 112 mg/kg Ce, 213 mg/kg Eu)
+    node_type: MATERIAL_OR_PHASE
+    description: Air-dried <75-um tailings from the Mouteh Gold Factory tailings dam (100 mg/kg Pr, 112 mg/kg Ce, 213 mg/kg Eu, 322,743 mg/kg Fe), tested after 2 M oxalic-acid pretreatment (90 C, 6 h) alongside an untreated-tailings culture comparator.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: mobilized_tailings_pr_ce_eu
+    label: Dissolved Pr (76%), Ce (46%), and Eu (14%) in day-7 filtered culture liquor (24, 14, and 9 percentage points above untreated culture)
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved Pr, Ce, and Eu measured by ICP-OES in filtered culture liquor after 7 days (reported as 76% Pr, 46% Ce, and 14% Eu for pretreated tailings vs ~52% Pr, ~32% Ce, and ~5% Eu for untreated tailings; uninoculated control trajectories omitted).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: sqr_reductase
+    target: tth_hydrolase
+    predicate: supplies_substrate_for
+    relationship: oxidation of reduced sulfur intermediates to polythionates
+    description: Sulfide/sulfur oxidation generates reduced sulfur and polythionate intermediates metabolized by periplasmic tetrathionate hydrolase.
+    evidence:
+    - source_ref: fereydouni2025
+      supports: partial
+      explanation: Reduced-sulfur oxidation in Acidithiobacillus thiooxidans couples Sqr and polythionate hydrolysis during sulfur-oxidizing medium conditioning and culture-associated Pr, Ce, and Eu mobilization from oxalic-acid-pretreated gold-mine tailings by Acidithiobacillus thiooxidans PTCC 1717 in Fereydouni et al. (2025); individual enzymes were not directly assayed.
+  - source: tth_hydrolase
+    target: conditioned_sulfur_oxidizing_culture_medium
+    predicate: produces
+    relationship: polythionate disproportionation and sulfuric-acid proton generation
+    description: Periplasmic tetrathionate hydrolysis generates sulfate and protons, acidifying the sulfur-oxidizing culture medium.
+    evidence:
+    - source_ref: fereydouni2025
+      supports: partial
+      explanation: Chemolithoautotrophic sulfur oxidation by Acidithiobacillus thiooxidans generates the acidic sulfate/polythionate medium during sulfur-oxidizing medium conditioning and culture-associated Pr, Ce, and Eu mobilization from oxalic-acid-pretreated gold-mine tailings by Acidithiobacillus thiooxidans PTCC 1717 in Fereydouni et al. (2025); individual enzyme activities were not isolated.
+  - source: conditioned_sulfur_oxidizing_culture_medium
+    target: pretreated_mouteh_gold_tailings
+    predicate: solubilizes
+    relationship: 7-day acidic culture leaching of oxalic-acid-pretreated gold-mine tailings
+    description: Conditioned PTCC 1717 sulfur medium (pH ~0.6-0.8) leaches oxalic-acid-pretreated and untreated Mouteh gold-mine tailings over 7 days at 30 C and 140 rpm.
+    evidence:
+    - source_ref: fereydouni2025
+      supports: partial
+      explanation: Methods pp. 2-3 and Figures 1-2 of Fereydouni et al. (2025) describe two-step conditioning of 5 g/L elemental-sulfur medium by PTCC 1717 followed by 7-day tailings leaching, though bioleaching pulp density, post-pretreatment residue mass, and numerical uninoculated control trajectories are omitted.
+  - source: pretreated_mouteh_gold_tailings
+    target: mobilized_tailings_pr_ce_eu
+    predicate: produces
+    relationship: mobilization of dissolved Pr, Ce, and Eu into filtered culture leachate
+    description: 7-day culture leaching of pretreated tailings reaches source-reported 76% Pr, 46% Ce, and 14% Eu extraction (up from 57%, 31%, and 5% at day 3, and exceeding the 7-day untreated-tailings culture comparator).
+    evidence:
+    - source_ref: fereydouni2025
+      supports: support
+      explanation: Results p. 4 and Figure 2 of Fereydouni et al. (2025) report day-7 solution extraction endpoints of 76% Pr, 46% Ce, and 14% Eu for oxalic-acid-pretreated tailings in PTCC 1717 culture (24.4, 14.4, and 9.1 percentage points higher than untreated tailings in culture).
 curation_history:
 - timestamp: '2026-10-12T09:15:16.946343+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
-  summary: Created a distinct gold-production tailings resource with separately scoped chemical pretreatment
-    and culture-associated REE mobilization, preserving incomplete controls, inconsistent quantities
-    and timelines, and laboratory/solution-extraction limits.
+  summary: Created a distinct gold-production tailings resource with separately scoped chemical pretreatment and culture-associated REE mobilization, preserving incomplete controls, inconsistent quantities and timelines, and laboratory/solution-extraction limits.
+- timestamp: '2026-10-30T06:04:43Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: edit
+  summary: Added representative Acidithiobacillus thiooxidans ATCC 19377 Sqr (UniProtKB:A0A543Q349) and Tth (UniProtKB:A0A5P9XPU3) protein examples and causal graph (thiooxidans_culture_associated_ree_mobilization_graph) to gold-mine-tailings.yaml.
 history_refs:
 - history/records/gold-mine-tailings/2026-10-12T091525Z-codex-622d1c.yaml
+- history/records/gold-mine-tailings/2026-10-30T060443Z-claude-claude-opus-4-6-antigravity-673f77.yaml

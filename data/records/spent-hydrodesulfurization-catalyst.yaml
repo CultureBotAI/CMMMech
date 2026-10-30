@@ -1,114 +1,216 @@
 id: cmmmech:spent-hydrodesulfurization-catalyst
 name: Spent hydrodesulfurization catalyst
 material_kind: secondary_resource
-description: Used catalyst from hydrodesulfurization of petroleum feeds, represented here by a characterized
-  raw catalyst from a Brazilian diesel-treatment unit. This process-defined secondary resource is distinct
-  from spent fluid catalytic cracking and hydrocracking catalysts, from fresh catalyst formulations, and
-  from its constituent elements. The selected material was described as CoMo on alumina, but its measured
-  composition and microbial response do not define all spent HDS catalysts. No constituent-element criticality
-  designation is inherited.
+description: Used catalyst from hydrodesulfurization of petroleum feeds, represented here by a characterized raw catalyst from a Brazilian diesel-treatment unit. This process-defined secondary resource is distinct from spent fluid catalytic cracking and hydrocracking catalysts, from fresh catalyst formulations, and from its constituent elements. The selected material was described as CoMo on alumina, but its measured composition and microbial response do not define all spent HDS catalysts. No constituent-element criticality designation is inherited.
 sources:
 - id: ferreira_2017
-  title: Ferreira, Sérvulo, da Costa, Ferreira, Godoy and Oliveira (2017). Bioleaching of Metals from
-    a Spent Diesel Hydrodesulfurization Catalyst Employing Acidithiobacillus thiooxidans FG-01. Brazilian
-    Journal of Chemical Engineering 34(1):119-129. DOI 10.1590/0104-6632.20170341s20150208; methods pp.
-    120-122, Tables 1-4 and Figures 1-4.
+  title: Ferreira, Sérvulo, da Costa, Ferreira, Godoy and Oliveira (2017). Bioleaching of Metals from a Spent Diesel Hydrodesulfurization Catalyst Employing Acidithiobacillus thiooxidans FG-01. Brazilian Journal of Chemical Engineering 34(1):119-129. DOI 10.1590/0104-6632.20170341s20150208; methods pp. 120-122, Tables 1-4 and Figures 1-4.
   url: https://doi.org/10.1590/0104-6632.20170341s20150208
   accessed_on: '2026-10-11'
 - id: ferreira_2015
-  title: Ferreira, Sérvulo, Ferreira and Oliveira. Assessment of Metal Recovery from Raw Spent Hydrodesulfurization
-    Catalyst through Bioleaching and Chemical Leaching. Brazilian Journal of Petroleum and Gas 9(4):137-145,
-    issue dated 2015; author-hosted metadata dated January 2016. DOI 10.5419/bjpg2015-0014. Related source
-    with unresolved abstract/body and filtration/SEM inconsistencies.
+  title: Ferreira, Sérvulo, Ferreira and Oliveira. Assessment of Metal Recovery from Raw Spent Hydrodesulfurization Catalyst through Bioleaching and Chemical Leaching. Brazilian Journal of Petroleum and Gas 9(4):137-145, issue dated 2015; author-hosted metadata dated January 2016. DOI 10.5419/bjpg2015-0014. Related source with unresolved abstract/body and filtration/SEM inconsistencies.
   url: https://doi.org/10.5419/bjpg2015-0014
   accessed_on: '2026-10-11'
 - id: ncbi_thiooxidans
-  title: 'NCBI Taxonomy 930: Acidithiobacillus thiooxidans, species; this identifier does not identify
-    strain FG-01.'
+  title: 'NCBI Taxonomy 930: Acidithiobacillus thiooxidans, species; this identifier does not identify strain FG-01.'
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
   accessed_on: '2026-10-11'
 mechanisms:
 - id: fg01_hds_leaching
   name: FG-01 culture-associated acid leaching of raw diesel HDS catalyst
   process: bioleaching
+  description: Acidithiobacillus thiooxidans FG-01 cultivation and previously grown culture medium were associated with Al, Mo and V mobilization from raw spent diesel HDS catalyst. Commercial sulfuric acid gave similar or greater release in relevant comparisons, limiting any claim of microbial enhancement. Direct culture and two-stage leaching are separate assay arms; neither established an isolated metal product or industrial operation.
+  context: Ferreira et al. (2017) obtained 200 kg of spent catalyst from a Brazilian heavy-oil refinery diesel-treatment unit and subsampled it; the leaching feed received no grinding, solvent washing or decoking. Analytical digestion and microscopy drying/coating are characterization steps, not leach pretreatments. FG-01 was reported as a uranium-mine isolate from Paraná, supplied by the State University of São Paulo; no accession verifying the exact strain is supplied. Four-day T&K preculture was at 30 +/-1 degrees C and 150 rpm; general assays used 500 mL flasks with 100 mL medium, nominal initial 10^5 cells/mL, initial pH 2 adjusted with sulfuric acid, 29 +/-1 degrees C and 150 rpm. One-stage experiments used 5 g/L catalyst with or without 10 g/L elemental sulfur; Table 2 labels incubation 30 degrees C and samples at days 1, 3 and 7. In two-stage assays, catalyst was added after growth without catalyst had generated reported acidity around 40 g/L as sulfuric acid; the resulting solution
+    was diluted before 5-50 g/L catalyst additions. The 2017 paper does not describe removing cells before this second stage; filtration of 25 mL analytical aliquots through 0.22-micrometre membranes must not be interpreted as preparation of a cell-free lixiviant. AAS measured the filtered-liquid metals. At least three replicate flasks were sacrificed during monitoring. Autoclaved medium controls and commercial sulfuric-acid controls were included; Table 3 does not identify its endpoint time or final acid concentration explicitly.
   microbial: true
-  description: Acidithiobacillus thiooxidans FG-01 cultivation and previously grown culture medium were
-    associated with Al, Mo and V mobilization from raw spent diesel HDS catalyst. Commercial sulfuric
-    acid gave similar or greater release in relevant comparisons, limiting any claim of microbial enhancement.
-    Direct culture and two-stage leaching are separate assay arms; neither established an isolated metal
-    product or industrial operation.
-  context: Ferreira et al. (2017) obtained 200 kg of spent catalyst from a Brazilian heavy-oil refinery
-    diesel-treatment unit and subsampled it; the leaching feed received no grinding, solvent washing or
-    decoking. Analytical digestion and microscopy drying/coating are characterization steps, not leach
-    pretreatments. FG-01 was reported as a uranium-mine isolate from Paraná, supplied by the State University
-    of São Paulo; no accession verifying the exact strain is supplied. Four-day T&K preculture was at
-    30 +/-1 degrees C and 150 rpm; general assays used 500 mL flasks with 100 mL medium, nominal initial
-    10^5 cells/mL, initial pH 2 adjusted with sulfuric acid, 29 +/-1 degrees C and 150 rpm. One-stage
-    experiments used 5 g/L catalyst with or without 10 g/L elemental sulfur; Table 2 labels incubation
-    30 degrees C and samples at days 1, 3 and 7. In two-stage assays, catalyst was added after growth
-    without catalyst had generated reported acidity around 40 g/L as sulfuric acid; the resulting solution
-    was diluted before 5-50 g/L catalyst additions. The 2017 paper does not describe removing cells before
-    this second stage; filtration of 25 mL analytical aliquots through 0.22-micrometre membranes must
-    not be interpreted as preparation of a cell-free lixiviant. AAS measured the filtered-liquid metals.
-    At least three replicate flasks were sacrificed during monitoring. Autoclaved medium controls and
-    commercial sulfuric-acid controls were included; Table 3 does not identify its endpoint time or final
-    acid concentration explicitly.
   organisms:
   - id: NCBITaxon:930
     label: Acidithiobacillus thiooxidans
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A543Q349
+    entry_name: A0A543Q349_ACITH
+    protein_name: Pyridine nucleotide-disulfide oxidoreductase
+    gene_symbol: sqr
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (sqr) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans isolate FG-01 (NCBITaxon:930) in Ferreira et al. (2017).
+    evidence:
+    - source_ref: ferreira_2017
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/tth genes were not mutated or directly assayed.
+  - uniprot_accession: UniProtKB:A0A5P9XPU3
+    entry_name: A0A5P9XPU3_ACITH
+    protein_name: Tetrathionate hydrolase
+    gene_symbol: tth
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase (tth) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans isolate FG-01 (NCBITaxon:930) in Ferreira et al. (2017).
+    evidence:
+    - source_ref: ferreira_2017
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/tth genes were not mutated or directly assayed.
   evidence:
   - source_ref: ferreira_2017
     supports: support
-    explanation: Methods pp. 120-122 establish the diesel HDS origin, raw feed, strain provenance and
-      separate culture/leach stages. Figures 1-3 show culture-associated acidification and sulfur-dependent
-      activity. Table 2 reports seven-day Mo release of 39 +/-4% without added elemental sulfur and 37
-      +/-3% with it; Table 3 reports two-stage Mo release of 55 +/-6% at 5 g/L and 39 +/-3% at 50 g/L.
-      These are the source’s mass-normalized leaching percentages based on feed composition and liquid
-      analysis, not isolated-product yields. Table 3 reports low Co, Cu and Ni release rather than universal
-      extraction of every catalyst metal.
+    explanation: Methods pp. 120-122 establish the diesel HDS origin, raw feed, strain provenance and separate culture/leach stages. Figures 1-3 show culture-associated acidification and sulfur-dependent activity. Table 2 reports seven-day Mo release of 39 +/-4% without added elemental sulfur and 37 +/-3% with it; Table 3 reports two-stage Mo release of 55 +/-6% at 5 g/L and 39 +/-3% at 50 g/L. These are the source’s mass-normalized leaching percentages based on feed composition and liquid analysis, not isolated-product yields. Table 3 reports low Co, Cu and Ni release rather than universal extraction of every catalyst metal.
   - source_ref: ferreira_2017
     supports: partial
-    explanation: Table 2 gives seven-day commercial-acid Mo release of 65 +/-5%, exceeding both culture
-      arms, despite the text calling the processes equivalent. For two-stage Mo, Table 3 pairs 55 +/-6%
-      biological versus 54 +/-4% chemical at 5 g/L, and 39 +/-3% versus 41 +/-4% at 50 g/L; corresponding
-      entries share the source’s non-significance letters. Al and V also show acid-only comparability.
-      Uninoculated medium metal release is stated as below 0.5% but underlying data are not shown; that
-      medium control is distinct from the stronger commercial-acid comparison. No biosurfactant production
-      was measured, no enzyme causality was established, and nominal acid matching does not prove identical
-      full medium chemistry or pH trajectories.
+    explanation: Table 2 gives seven-day commercial-acid Mo release of 65 +/-5%, exceeding both culture arms, despite the text calling the processes equivalent. For two-stage Mo, Table 3 pairs 55 +/-6% biological versus 54 +/-4% chemical at 5 g/L, and 39 +/-3% versus 41 +/-4% at 50 g/L; corresponding entries share the source’s non-significance letters. Al and V also show acid-only comparability. Uninoculated medium metal release is stated as below 0.5% but underlying data are not shown; that medium control is distinct from the stronger commercial-acid comparison. No biosurfactant production was measured, no enzyme causality was established, and nominal acid matching does not prove identical full medium chemistry or pH trajectories.
   - source_ref: ferreira_2017
     supports: partial
-    explanation: Quantitative inconsistencies remain unresolved. At 50 g/L, Table 3 Al is 24 +/-2%, whereas
-      the abstract gives 26%. The conclusion’s Ni below-5% statement conflicts with Table 2 day-seven
-      5 +/-2%. Figure 2 text describes 3.1 x 10^6 cells/mL as nearly unchanged although the caption specifies
-      initial 10^5 cells/mL; Figure 3 starts nearer 10^6, preventing a confident shared inoculum/biomass
-      trajectory. The p. 126 mass-recovery sentence reports 31.3 g/L Al, 54.6 g/L Mo and another 30.4
-      g/L Mo, incompatible with Table 1 feed contents at 50 g/L and with its own repeated analyte label.
-      These numbers are not silently corrected or accepted as measured recovered concentrations. Missing
-      Table 3 endpoint and final acid concentration prevent a fully specified optimum claim.
+    explanation: Quantitative inconsistencies remain unresolved. At 50 g/L, Table 3 Al is 24 +/-2%, whereas the abstract gives 26%. The conclusion’s Ni below-5% statement conflicts with Table 2 day-seven 5 +/-2%. Figure 2 text describes 3.1 x 10^6 cells/mL as nearly unchanged although the caption specifies initial 10^5 cells/mL; Figure 3 starts nearer 10^6, preventing a confident shared inoculum/biomass trajectory. The p. 126 mass-recovery sentence reports 31.3 g/L Al, 54.6 g/L Mo and another 30.4 g/L Mo, incompatible with Table 1 feed contents at 50 g/L and with its own repeated analyte label. These numbers are not silently corrected or accepted as measured recovered concentrations. Missing Table 3 endpoint and final acid concentration prevent a fully specified optimum claim.
   - source_ref: ferreira_2017
     supports: partial
-    explanation: Table 4 and Figure 4 concern local surface EDS composition and morphology; they do not
-      establish bulk mass balance, a named crystalline product, intracellular uptake, or organic deposition
-      merely from increased oxygen signal. Table 1 feed digestion and filtered-liquid AAS do not provide
-      an isolated-product recovery accounting. The source’s economic and environmental advantages are
-      proposals, not a measured cost study or deployment evidence.
+    explanation: Table 4 and Figure 4 concern local surface EDS composition and morphology; they do not establish bulk mass balance, a named crystalline product, intracellular uptake, or organic deposition merely from increased oxygen signal. Table 1 feed digestion and filtered-liquid AAS do not provide an isolated-product recovery accounting. The source’s economic and environmental advantages are proposals, not a measured cost study or deployment evidence.
   - source_ref: ferreira_2015
     supports: context_only
-    explanation: This related same-group FG-01 diesel HDS paper is retained as context rather than independent
-      replication or an additional accepted yield. Its 27.5 g/L, nominal 20 g/L sulfuric-acid, four-day
-      protocol differs from the 2017 arms and reports chemical/biological comparability. The abstract
-      gives about 65% Al and 25% Mo, whereas the body/conclusion give about 24-28% Al and 46% Mo. Methods
-      say culture broth was filtered at 0.22 micrometres before leaching, but the SEM discussion assigns
-      attached cells; the biomass state remains unresolved. Complete author-hosted text and figure captions
-      were inspected, but full-resolution figures were not acquired in this curation. The two publications’
-      similar feed composition and shared strain do not establish independent feed batches.
+    explanation: This related same-group FG-01 diesel HDS paper is retained as context rather than independent replication or an additional accepted yield. Its 27.5 g/L, nominal 20 g/L sulfuric-acid, four-day protocol differs from the 2017 arms and reports chemical/biological comparability. The abstract gives about 65% Al and 25% Mo, whereas the body/conclusion give about 24-28% Al and 46% Mo. Methods say culture broth was filtered at 0.22 micrometres before leaching, but the SEM discussion assigns attached cells; the biomass state remains unresolved. Complete author-hosted text and figure captions were inspected, but full-resolution figures were not acquired in this curation. The two publications’ similar feed composition and shared strain do not establish independent feed batches.
+causal_graphs:
+- id: fg01_hds_leaching_graph
+  name: Acidithiobacillus thiooxidans FG-01 direct and two-stage sulfuric-acid leaching of Mo, Al, and V from raw spent diesel HDS catalyst
+  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to sulfur-dependent sulfuric-acid generation by isolate FG-01 and mobilization of Mo, Al, and V from raw unground Brazilian diesel hydrodesulfurization catalyst.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: fg01_hds_leaching
+  nodes:
+  - id: sqr_reductase
+    label: Sqr sulfide-quinone reductase (sqr)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: sqr
+    description: Membrane-bound sulfide-quinone reductase oxidizing reduced sulfur species to zero-valent sulfur and polythionate intermediates.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A543Q349
+      entry_name: A0A543Q349_ACITH
+      protein_name: Pyridine nucleotide-disulfide oxidoreductase
+      gene_symbol: sqr
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (sqr) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans isolate FG-01 (NCBITaxon:930) in Ferreira et al. (2017).
+      evidence:
+      - source_ref: ferreira_2017
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/tth genes were not mutated or directly assayed.
+  - id: tth_hydrolase
+    label: Tth tetrathionate hydrolase (tth)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: tth
+    description: Periplasmic tetrathionate hydrolase disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A5P9XPU3
+      entry_name: A0A5P9XPU3_ACITH
+      protein_name: Tetrathionate hydrolase
+      gene_symbol: tth
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase (tth) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans isolate FG-01 (NCBITaxon:930) in Ferreira et al. (2017).
+      evidence:
+      - source_ref: ferreira_2017
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/tth genes were not mutated or directly assayed.
+  - id: fg01_sulfur_oxidizing_acid_medium
+    label: Acidified A. thiooxidans FG-01 T&K medium with elemental sulfur (direct 10 g/L S0 culture or diluted ~40 g/L H2SO4-equivalent two-stage broth)
+    node_type: CHEMICAL_ENTITY
+    description: Acidic culture medium produced by Acidithiobacillus thiooxidans isolate FG-01 in T&K medium (initial pH 2.0, 29-30 C, 150 rpm) either in one-stage flasks (+/- 10 g/L S0) or after pre-growth without catalyst to ~40 g/L H2SO4-equivalent acidity followed by dilution.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: raw_spent_diesel_hds_catalyst
+    label: Raw unground Brazilian refinery spent CoMo/alumina diesel HDS catalyst (5-50 g/L)
+    node_type: MATERIAL_OR_PHASE
+    description: Subsampled raw spent CoMo-on-alumina catalyst from a Brazilian heavy-oil refinery diesel hydrodesulfurization unit (tested without grinding, solvent washing, or decoking at 5 g/L in one-stage and 5-50 g/L in two-stage assays).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: mobilized_hds_mo_al_v
+    label: Dissolved Mo (37-39% one-stage at 5 g/L; 55 +/- 6% at 5 g/L and 39 +/- 3% at 50 g/L two-stage), Al, and V in 0.22-um-filtered leachate
+    node_type: CHEMICAL_ENTITY
+    description: 'Dissolved Mo, Al, and V measured by AAS in 0.22-um-filtered aliquots (one-stage day-7 Mo: 39 +/- 4% without S0 and 37 +/- 3% with S0 vs 65 +/- 5% in commercial H2SO4; two-stage Mo: 55 +/- 6% biological vs 54 +/- 4% chemical at 5 g/L and 39 +/- 3% vs 41 +/- 4% at 50 g/L, with low Co, Cu, and Ni release).'
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: sqr_reductase
+    target: tth_hydrolase
+    predicate: supplies_substrate_for
+    relationship: oxidation of reduced sulfur intermediates to polythionates
+    description: Sulfide/sulfur oxidation generates reduced sulfur and polythionate intermediates metabolized by periplasmic tetrathionate hydrolase.
+    evidence:
+    - source_ref: ferreira_2017
+      supports: partial
+      explanation: Reduced-sulfur oxidation in Acidithiobacillus thiooxidans couples Sqr and polythionate hydrolysis during sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual enzymes were not directly assayed.
+  - source: tth_hydrolase
+    target: fg01_sulfur_oxidizing_acid_medium
+    predicate: produces
+    relationship: polythionate disproportionation and sulfuric-acid proton generation
+    description: Periplasmic tetrathionate hydrolysis generates sulfate and protons, acidifying the sulfur-oxidizing culture medium.
+    evidence:
+    - source_ref: ferreira_2017
+      supports: partial
+      explanation: Chemolithoautotrophic sulfur oxidation by Acidithiobacillus thiooxidans generates the acidic sulfate/polythionate medium during sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual enzyme activities were not isolated.
+  - source: fg01_sulfur_oxidizing_acid_medium
+    target: raw_spent_diesel_hds_catalyst
+    predicate: solubilizes
+    relationship: one-stage and two-stage acidic culture leaching of raw spent diesel HDS catalyst
+    description: FG-01 culture and pre-acidified culture broth leach raw spent diesel HDS catalyst at 5-50 g/L, with two-stage extraction closely matching nominal concentration-matched commercial sulfuric acid.
+    evidence:
+    - source_ref: ferreira_2017
+      supports: support
+      explanation: Methods pp. 120-122, Figures 1-3, and Tables 2-3 of Ferreira et al. (2017) document sulfur-dependent acidification by FG-01 and one-stage/two-stage leaching of raw spent HDS catalyst alongside autoclaved-medium (<0.5% release) and commercial sulfuric-acid comparators.
+  - source: raw_spent_diesel_hds_catalyst
+    target: mobilized_hds_mo_al_v
+    predicate: produces
+    relationship: mobilization of Mo, Al, and V into 0.22-um-filtered leachate without microbial enhancement over commercial H2SO4
+    description: Leaching mobilizes 55 +/- 6% Mo at 5 g/L and 39 +/- 3% Mo at 50 g/L in two-stage assays (statistically indistinguishable from 54 +/- 4% and 41 +/- 4% in commercial H2SO4) and 37-39% Mo in 7-day one-stage assays (below 65 +/- 5% in commercial H2SO4).
+    evidence:
+    - source_ref: ferreira_2017
+      supports: partial
+      explanation: Tables 2-3 of Ferreira et al. (2017) report 39 +/- 4% (no S0) and 37 +/- 3% (+S0) 7-day one-stage Mo release versus 65 +/- 5% for commercial H2SO4, and two-stage Mo release of 55 +/- 6% (5 g/L) and 39 +/- 3% (50 g/L) matching commercial H2SO4 (54 +/- 4% and 41 +/- 4%).
 curation_history:
 - timestamp: '2026-10-11T11:13:13.293796+00:00'
   curator: Codex (GPT-6; Codex)
   action: CREATE
-  summary: Created the process-defined spent HDS secondary-resource record from full primary evidence,
-    preserving acid-only comparisons, direct/two-stage distinctions, conflicting measurements and laboratory
-    limits.
+  summary: Created the process-defined spent HDS secondary-resource record from full primary evidence, preserving acid-only comparisons, direct/two-stage distinctions, conflicting measurements and laboratory limits.
+- timestamp: '2026-10-30T06:04:43Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: edit
+  summary: Added representative Acidithiobacillus thiooxidans ATCC 19377 Sqr (UniProtKB:A0A543Q349) and Tth (UniProtKB:A0A5P9XPU3) protein examples and causal graph (fg01_hds_leaching_graph) to spent-hydrodesulfurization-catalyst.yaml.
 history_refs:
 - history/records/spent-hydrodesulfurization-catalyst/2026-10-11T111316Z-codex-824afe.yaml
+- history/records/spent-hydrodesulfurization-catalyst/2026-10-30T060443Z-claude-claude-opus-4-6-antigravity-246224.yaml
