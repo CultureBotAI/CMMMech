@@ -46,7 +46,7 @@ mechanisms:
     evidence:
     - source_ref: yagnentkovsky_2009
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-pearl oxidation in iron-free 9K medium and laboratory column leaching of Ni and Zn from automotive wastewater-treatment sludge by Acidithiobacillus thiooxidans DSM 11478 (strain Tth04) in Yagnentkovsky et al. (2009); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-pearl oxidation in iron-free 9K medium and laboratory column leaching of Ni and Zn from automotive wastewater-treatment sludge by Acidithiobacillus thiooxidans DSM 11478 (strain Tth04) in Yagnentkovsky et al. (2009); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - uniprot_accession: UniProtKB:A0A5P9XUB1
     entry_name: A0A5P9XUB1_ACITH
     protein_name: Pyridine nucleotide-disulfide oxidoreductase
@@ -67,7 +67,7 @@ mechanisms:
     evidence:
     - source_ref: yagnentkovsky_2009
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for sulfur-pearl oxidation in iron-free 9K medium and laboratory column leaching of Ni and Zn from automotive wastewater-treatment sludge by Acidithiobacillus thiooxidans DSM 11478 (strain Tth04) in Yagnentkovsky et al. (2009); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for sulfur-pearl oxidation in iron-free 9K medium and laboratory column leaching of Ni and Zn from automotive wastewater-treatment sludge by Acidithiobacillus thiooxidans DSM 11478 (strain Tth04) in Yagnentkovsky et al. (2009); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - uniprot_accession: UniProtKB:A0A5P9XPU3
     entry_name: A0A5P9XPU3_ACITH
     protein_name: Tetrathionate hydrolase
@@ -89,7 +89,7 @@ mechanisms:
     evidence:
     - source_ref: yagnentkovsky_2009
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-pearl oxidation in iron-free 9K medium and laboratory column leaching of Ni and Zn from automotive wastewater-treatment sludge by Acidithiobacillus thiooxidans DSM 11478 (strain Tth04) in Yagnentkovsky et al. (2009); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-pearl oxidation in iron-free 9K medium and laboratory column leaching of Ni and Zn from automotive wastewater-treatment sludge by Acidithiobacillus thiooxidans DSM 11478 (strain Tth04) in Yagnentkovsky et al. (2009); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - uniprot_accession: UniProtKB:A0A5P9XS05
     entry_name: A0A5P9XS05_ACITH
     protein_name: Tetrathionate hydrolase
@@ -111,7 +111,7 @@ mechanisms:
     evidence:
     - source_ref: yagnentkovsky_2009
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for sulfur-pearl oxidation in iron-free 9K medium and laboratory column leaching of Ni and Zn from automotive wastewater-treatment sludge by Acidithiobacillus thiooxidans DSM 11478 (strain Tth04) in Yagnentkovsky et al. (2009); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for sulfur-pearl oxidation in iron-free 9K medium and laboratory column leaching of Ni and Zn from automotive wastewater-treatment sludge by Acidithiobacillus thiooxidans DSM 11478 (strain Tth04) in Yagnentkovsky et al. (2009); individual sqr/sqor/tth genes were not mutated or directly assayed.
   evidence:
   - source_ref: yagnentkovsky_2009
     supports: support
@@ -125,15 +125,15 @@ mechanisms:
 causal_graphs:
 - id: dsm11478_biogenic_acid_leaching_graph
   name: Acidithiobacillus thiooxidans DSM 11478 (Tth04) biogenic-acid column leaching of Ni and Zn from automotive wastewater-treatment sludge
-  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to production of acidic iron-free 9K medium on sulfur pearls at 30 C and subsequent laboratory column leaching of Ni and Zn from dried, ground, 100-200 mesh automotive wastewater-treatment sludge.
+  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr/Sqor and Tth to production of acidic iron-free 9K medium on sulfur pearls at 30 C and subsequent laboratory column leaching of Ni and Zn from dried, ground, 100-200 mesh automotive wastewater-treatment sludge.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: dsm11478_biogenic_acid_leaching
   nodes:
   - id: sqr_reductase
-    label: Sqr sulfide-quinone reductase (sqr)
+    label: Sqr/Sqor sulfide-quinone reductase (sqr / sqor)
     node_type: GENE_OR_PROTEIN
     gene_symbol: sqr
-    description: Membrane-bound sulfide-quinone reductase oxidizing reduced sulfur species to zero-valent sulfur and polythionate intermediates.
+    description: Membrane-bound sulfide-quinone reductase (Sqr/Sqor; GCD22_02301 / GCD22_03207) oxidizing reduced sulfur species to zero-valent sulfur and polythionate intermediates.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A0A543Q349
@@ -156,7 +156,7 @@ causal_graphs:
       evidence:
       - source_ref: yagnentkovsky_2009
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-pearl oxidation in iron-free 9K medium and laboratory column leaching of Ni and Zn from automotive wastewater-treatment sludge by Acidithiobacillus thiooxidans DSM 11478 (strain Tth04) in Yagnentkovsky et al. (2009); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-pearl oxidation in iron-free 9K medium and laboratory column leaching of Ni and Zn from automotive wastewater-treatment sludge by Acidithiobacillus thiooxidans DSM 11478 (strain Tth04) in Yagnentkovsky et al. (2009); individual sqr/sqor/tth genes were not mutated or directly assayed.
     - uniprot_accession: UniProtKB:A0A5P9XUB1
       entry_name: A0A5P9XUB1_ACITH
       protein_name: Pyridine nucleotide-disulfide oxidoreductase
@@ -177,7 +177,7 @@ causal_graphs:
       evidence:
       - source_ref: yagnentkovsky_2009
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for sulfur-pearl oxidation in iron-free 9K medium and laboratory column leaching of Ni and Zn from automotive wastewater-treatment sludge by Acidithiobacillus thiooxidans DSM 11478 (strain Tth04) in Yagnentkovsky et al. (2009); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for sulfur-pearl oxidation in iron-free 9K medium and laboratory column leaching of Ni and Zn from automotive wastewater-treatment sludge by Acidithiobacillus thiooxidans DSM 11478 (strain Tth04) in Yagnentkovsky et al. (2009); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - id: tth_hydrolase
     label: Tth tetrathionate hydrolase (tth)
     node_type: GENE_OR_PROTEIN
@@ -206,7 +206,7 @@ causal_graphs:
       evidence:
       - source_ref: yagnentkovsky_2009
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-pearl oxidation in iron-free 9K medium and laboratory column leaching of Ni and Zn from automotive wastewater-treatment sludge by Acidithiobacillus thiooxidans DSM 11478 (strain Tth04) in Yagnentkovsky et al. (2009); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-pearl oxidation in iron-free 9K medium and laboratory column leaching of Ni and Zn from automotive wastewater-treatment sludge by Acidithiobacillus thiooxidans DSM 11478 (strain Tth04) in Yagnentkovsky et al. (2009); individual sqr/sqor/tth genes were not mutated or directly assayed.
     - uniprot_accession: UniProtKB:A0A5P9XS05
       entry_name: A0A5P9XS05_ACITH
       protein_name: Tetrathionate hydrolase
@@ -228,7 +228,7 @@ causal_graphs:
       evidence:
       - source_ref: yagnentkovsky_2009
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for sulfur-pearl oxidation in iron-free 9K medium and laboratory column leaching of Ni and Zn from automotive wastewater-treatment sludge by Acidithiobacillus thiooxidans DSM 11478 (strain Tth04) in Yagnentkovsky et al. (2009); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for sulfur-pearl oxidation in iron-free 9K medium and laboratory column leaching of Ni and Zn from automotive wastewater-treatment sludge by Acidithiobacillus thiooxidans DSM 11478 (strain Tth04) in Yagnentkovsky et al. (2009); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - id: dsm11478_biogenic_acid_9k_lixiviant
     label: Acidic iron-free 9K medium generated by A. thiooxidans DSM 11478 (Tth04) on sulfur pearls at 30 C (initial pH 1, 1.5, or 2; 360 mL at 15 mL/h)
     node_type: CHEMICAL_ENTITY
@@ -298,8 +298,13 @@ curation_history:
   curator: claude (Claude Opus 4.6; antigravity)
   action: edit
   summary: Added live-verified Acidithiobacillus thiooxidans ATCC 19377 Sqor (UniProtKB:A0A5P9XUB1, locus GCD22_03207) and full-length sulfur-cluster Tth (UniProtKB:A0A5P9XS05, locus GCD22_02315) paralog protein examples to sqr_reductase and tth_hydrolase in automotive-wastewater-treatment-sludge.yaml.
+- timestamp: '2026-10-30T08:09:29Z'
+  curator: claude
+  action: edit
+  summary: Include sqor in Sqr/Sqor causal-graph descriptions and protein_examples evidence explanations (#859)
 history_refs:
 - history/records/automotive-wastewater-treatment-sludge/2026-10-11T114051Z-codex-5e4461.yaml
 - history/records/automotive-wastewater-treatment-sludge/2026-10-30T060443Z-claude-claude-opus-4-6-antigravity-e4b7c4.yaml
 - history/records/automotive-wastewater-treatment-sludge/2026-10-30T065346Z-claude-claude-opus-4-6-antigravity-051861.yaml
 - history/records/automotive-wastewater-treatment-sludge/2026-10-30T074104Z-claude-claude-opus-4-6-antigravity-f5aea8.yaml
+- history/records/automotive-wastewater-treatment-sludge/2026-10-30T080929Z-claude-173482.yaml

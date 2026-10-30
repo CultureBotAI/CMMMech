@@ -46,7 +46,7 @@ mechanisms:
     evidence:
     - source_ref: potysz2019
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-oxidizing acidification and Cu, Zn, and Fe bioleaching from 0.25-0.5 mm crystalline and amorphous copper-smelter slags by Acidithiobacillus thiooxidans DSM 9463 in Potysz & Kierczak (2019); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-oxidizing acidification and Cu, Zn, and Fe bioleaching from 0.25-0.5 mm crystalline and amorphous copper-smelter slags by Acidithiobacillus thiooxidans DSM 9463 in Potysz & Kierczak (2019); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - uniprot_accession: UniProtKB:A0A5P9XUB1
     entry_name: A0A5P9XUB1_ACITH
     protein_name: Pyridine nucleotide-disulfide oxidoreductase
@@ -67,7 +67,7 @@ mechanisms:
     evidence:
     - source_ref: potysz2019
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for sulfur-oxidizing acidification and Cu, Zn, and Fe bioleaching from 0.25-0.5 mm crystalline and amorphous copper-smelter slags by Acidithiobacillus thiooxidans DSM 9463 in Potysz & Kierczak (2019); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for sulfur-oxidizing acidification and Cu, Zn, and Fe bioleaching from 0.25-0.5 mm crystalline and amorphous copper-smelter slags by Acidithiobacillus thiooxidans DSM 9463 in Potysz & Kierczak (2019); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - uniprot_accession: UniProtKB:A0A5P9XPU3
     entry_name: A0A5P9XPU3_ACITH
     protein_name: Tetrathionate hydrolase
@@ -89,7 +89,7 @@ mechanisms:
     evidence:
     - source_ref: potysz2019
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing acidification and Cu, Zn, and Fe bioleaching from 0.25-0.5 mm crystalline and amorphous copper-smelter slags by Acidithiobacillus thiooxidans DSM 9463 in Potysz & Kierczak (2019); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing acidification and Cu, Zn, and Fe bioleaching from 0.25-0.5 mm crystalline and amorphous copper-smelter slags by Acidithiobacillus thiooxidans DSM 9463 in Potysz & Kierczak (2019); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - uniprot_accession: UniProtKB:A0A5P9XS05
     entry_name: A0A5P9XS05_ACITH
     protein_name: Tetrathionate hydrolase
@@ -111,7 +111,7 @@ mechanisms:
     evidence:
     - source_ref: potysz2019
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for sulfur-oxidizing acidification and Cu, Zn, and Fe bioleaching from 0.25-0.5 mm crystalline and amorphous copper-smelter slags by Acidithiobacillus thiooxidans DSM 9463 in Potysz & Kierczak (2019); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for sulfur-oxidizing acidification and Cu, Zn, and Fe bioleaching from 0.25-0.5 mm crystalline and amorphous copper-smelter slags by Acidithiobacillus thiooxidans DSM 9463 in Potysz & Kierczak (2019); individual sqr/sqor/tth genes were not mutated or directly assayed.
   evidence:
   - source_ref: potysz2019
     supports: support
@@ -128,15 +128,15 @@ mechanisms:
 causal_graphs:
 - id: sulfur_oxidizer_associated_slag_leaching_graph
   name: Acidithiobacillus thiooxidans DSM 9463 sulfur-oxidizing bioleaching of Cu, Zn, and Fe from crystalline and amorphous copper-smelter slags
-  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to sulfur-oxidizing acidification (reaching pH 0.90 for crystalline slag CS and pH 0.62 for amorphous slag AS at 1% pulp density after 21 days) and mobilization of Cu, Zn, and Fe from 0.25-0.5 mm copper-smelter slags.
+  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr/Sqor and Tth to sulfur-oxidizing acidification (reaching pH 0.90 for crystalline slag CS and pH 0.62 for amorphous slag AS at 1% pulp density after 21 days) and mobilization of Cu, Zn, and Fe from 0.25-0.5 mm copper-smelter slags.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: sulfur_oxidizer_associated_slag_leaching
   nodes:
   - id: sqr_reductase
-    label: Sqr sulfide-quinone reductase (sqr)
+    label: Sqr/Sqor sulfide-quinone reductase (sqr / sqor)
     node_type: GENE_OR_PROTEIN
     gene_symbol: sqr
-    description: Membrane-bound sulfide-quinone reductase oxidizing reduced sulfur species to zero-valent sulfur and polythionate intermediates.
+    description: Membrane-bound sulfide-quinone reductase (Sqr/Sqor; GCD22_02301 / GCD22_03207) oxidizing reduced sulfur species to zero-valent sulfur and polythionate intermediates.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A0A543Q349
@@ -159,7 +159,7 @@ causal_graphs:
       evidence:
       - source_ref: potysz2019
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-oxidizing acidification and Cu, Zn, and Fe bioleaching from 0.25-0.5 mm crystalline and amorphous copper-smelter slags by Acidithiobacillus thiooxidans DSM 9463 in Potysz & Kierczak (2019); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-oxidizing acidification and Cu, Zn, and Fe bioleaching from 0.25-0.5 mm crystalline and amorphous copper-smelter slags by Acidithiobacillus thiooxidans DSM 9463 in Potysz & Kierczak (2019); individual sqr/sqor/tth genes were not mutated or directly assayed.
     - uniprot_accession: UniProtKB:A0A5P9XUB1
       entry_name: A0A5P9XUB1_ACITH
       protein_name: Pyridine nucleotide-disulfide oxidoreductase
@@ -180,7 +180,7 @@ causal_graphs:
       evidence:
       - source_ref: potysz2019
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for sulfur-oxidizing acidification and Cu, Zn, and Fe bioleaching from 0.25-0.5 mm crystalline and amorphous copper-smelter slags by Acidithiobacillus thiooxidans DSM 9463 in Potysz & Kierczak (2019); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for sulfur-oxidizing acidification and Cu, Zn, and Fe bioleaching from 0.25-0.5 mm crystalline and amorphous copper-smelter slags by Acidithiobacillus thiooxidans DSM 9463 in Potysz & Kierczak (2019); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - id: tth_hydrolase
     label: Tth tetrathionate hydrolase (tth)
     node_type: GENE_OR_PROTEIN
@@ -209,7 +209,7 @@ causal_graphs:
       evidence:
       - source_ref: potysz2019
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing acidification and Cu, Zn, and Fe bioleaching from 0.25-0.5 mm crystalline and amorphous copper-smelter slags by Acidithiobacillus thiooxidans DSM 9463 in Potysz & Kierczak (2019); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing acidification and Cu, Zn, and Fe bioleaching from 0.25-0.5 mm crystalline and amorphous copper-smelter slags by Acidithiobacillus thiooxidans DSM 9463 in Potysz & Kierczak (2019); individual sqr/sqor/tth genes were not mutated or directly assayed.
     - uniprot_accession: UniProtKB:A0A5P9XS05
       entry_name: A0A5P9XS05_ACITH
       protein_name: Tetrathionate hydrolase
@@ -231,7 +231,7 @@ causal_graphs:
       evidence:
       - source_ref: potysz2019
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for sulfur-oxidizing acidification and Cu, Zn, and Fe bioleaching from 0.25-0.5 mm crystalline and amorphous copper-smelter slags by Acidithiobacillus thiooxidans DSM 9463 in Potysz & Kierczak (2019); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for sulfur-oxidizing acidification and Cu, Zn, and Fe bioleaching from 0.25-0.5 mm crystalline and amorphous copper-smelter slags by Acidithiobacillus thiooxidans DSM 9463 in Potysz & Kierczak (2019); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - id: biogenic_sulfuric_acid_slag_lixiviant
     label: Acidified A. thiooxidans DSM 9463 mineral-salt sulfur medium (2% v/v inoculum, 1% w/v S0, initial pH 3.5 falling to pH 0.90 [CS] and 0.62 [AS] at 21 days, 150 rpm)
     node_type: CHEMICAL_ENTITY
@@ -301,8 +301,13 @@ curation_history:
   curator: claude (Claude Opus 4.6; antigravity)
   action: edit
   summary: Added live-verified Acidithiobacillus thiooxidans ATCC 19377 Sqor (UniProtKB:A0A5P9XUB1, locus GCD22_03207) and full-length sulfur-cluster Tth (UniProtKB:A0A5P9XS05, locus GCD22_02315) paralog protein examples to sqr_reductase and tth_hydrolase in copper-smelter-slag.yaml.
+- timestamp: '2026-10-30T08:09:30Z'
+  curator: claude
+  action: edit
+  summary: Include sqor in Sqr/Sqor causal-graph descriptions and protein_examples evidence explanations (#859)
 history_refs:
 - history/records/copper-smelter-slag/2026-10-11T142004Z-codex-b5d18a.yaml
 - history/records/copper-smelter-slag/2026-10-30T060443Z-claude-claude-opus-4-6-antigravity-2c994a.yaml
 - history/records/copper-smelter-slag/2026-10-30T065346Z-claude-claude-opus-4-6-antigravity-b6b385.yaml
 - history/records/copper-smelter-slag/2026-10-30T074105Z-claude-claude-opus-4-6-antigravity-a6ef27.yaml
+- history/records/copper-smelter-slag/2026-10-30T080930Z-claude-9d242a.yaml

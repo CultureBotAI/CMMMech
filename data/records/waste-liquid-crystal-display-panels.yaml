@@ -51,7 +51,7 @@ mechanisms:
     evidence:
     - source_ref: willner2018
       supports: partial
-      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (AFE_1792) for oxidative sulfur/acid generation in willner2018; individual sqr/tth genes were not mutated.
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (AFE_1792) for oxidative sulfur/acid generation in willner2018; individual sqr/sqor/tth genes were not mutated.
   - uniprot_accession: UniProtKB:A0A543Q349
     entry_name: A0A543Q349_ACITH
     protein_name: Pyridine nucleotide-disulfide oxidoreductase
@@ -72,7 +72,7 @@ mechanisms:
     evidence:
     - source_ref: willner2018
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for the sulfur-oxidizing A. thiooxidans partner in the elemental-sulfur-supplemented mixed culture of willner2018; individual genes were not mutated.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for the sulfur-oxidizing A. thiooxidans partner in the elemental-sulfur-supplemented mixed culture of willner2018; individual sqr/sqor/tth genes were not mutated.
   - uniprot_accession: UniProtKB:A0A5P9XUB1
     entry_name: A0A5P9XUB1_ACITH
     protein_name: Pyridine nucleotide-disulfide oxidoreductase
@@ -93,7 +93,7 @@ mechanisms:
     evidence:
     - source_ref: willner2018
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for the sulfur-oxidizing A. thiooxidans partner in the elemental-sulfur-supplemented mixed culture of willner2018; individual genes were not mutated.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for the sulfur-oxidizing A. thiooxidans partner in the elemental-sulfur-supplemented mixed culture of willner2018; individual sqr/sqor/tth genes were not mutated.
   - uniprot_accession: UniProtKB:B7J3C9
     entry_name: TTH_ACIF2
     protein_name: Tetrathionate hydrolase
@@ -117,7 +117,7 @@ mechanisms:
     evidence:
     - source_ref: willner2018
       supports: partial
-      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (tth) for oxidative sulfur/acid generation in willner2018; individual sqr/tth genes were not mutated.
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (tth) for oxidative sulfur/acid generation in willner2018; individual sqr/sqor/tth genes were not mutated.
   - uniprot_accession: UniProtKB:A0A5P9XPU3
     entry_name: A0A5P9XPU3_ACITH
     protein_name: Tetrathionate hydrolase
@@ -139,7 +139,7 @@ mechanisms:
     evidence:
     - source_ref: willner2018
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for the sulfur-oxidizing A. thiooxidans partner in the elemental-sulfur-supplemented mixed culture of willner2018; individual genes were not mutated.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for the sulfur-oxidizing A. thiooxidans partner in the elemental-sulfur-supplemented mixed culture of willner2018; individual sqr/sqor/tth genes were not mutated.
   - uniprot_accession: UniProtKB:A0A5P9XS05
     entry_name: A0A5P9XS05_ACITH
     protein_name: Tetrathionate hydrolase
@@ -161,7 +161,7 @@ mechanisms:
     evidence:
     - source_ref: willner2018
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for the sulfur-oxidizing A. thiooxidans partner in the elemental-sulfur-supplemented mixed culture of willner2018; individual genes were not mutated.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for the sulfur-oxidizing A. thiooxidans partner in the elemental-sulfur-supplemented mixed culture of willner2018; individual sqr/sqor/tth genes were not mutated.
   evidence:
   - source_ref: willner2018
     supports: support
@@ -175,15 +175,15 @@ mechanisms:
 causal_graphs:
 - id: ferrooxidans_lcd_indium_bioleaching_graph
   name: Mixed Acidithiobacillus ferrooxidans and Acidithiobacillus thiooxidans biogenic acid leaching of indium from waste LCD powder
-  description: Causal pathway linking Acidithiobacillus ferrooxidans and Acidithiobacillus thiooxidans sulfur/iron oxidation enzymes (Sqr, Tth) to acidic ferric-sulfate mobilization of indium from waste LCD panel powder.
+  description: Causal pathway linking Acidithiobacillus ferrooxidans and Acidithiobacillus thiooxidans sulfur/iron oxidation enzymes (Sqr/Sqor, Tth) to acidic ferric-sulfate mobilization of indium from waste LCD panel powder.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: adapted_acidophile_lcd_leaching
   nodes:
   - id: sqr_reductase
-    label: Sqr sulfide-quinone reductase (AFE_1792)
+    label: Sqr/Sqor sulfide-quinone reductase (AFE_1792 / sqr / sqor)
     node_type: GENE_OR_PROTEIN
     gene_symbol: AFE_1792
-    description: Inner-membrane flavoprotein oxidizing sulfide to zero-valent sulfur/polysulfide intermediates.
+    description: Inner-membrane flavoprotein (Sqr/Sqor; AFE_1792 / GCD22_02301 / GCD22_03207) oxidizing sulfide to zero-valent sulfur/polysulfide intermediates.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:B7JBP8
@@ -208,7 +208,7 @@ causal_graphs:
       evidence:
       - source_ref: willner2018
         supports: partial
-        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (AFE_1792) for oxidative sulfur/acid generation in willner2018; individual sqr/tth genes were not mutated.
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (AFE_1792) for oxidative sulfur/acid generation in willner2018; individual sqr/sqor/tth genes were not mutated.
     - uniprot_accession: UniProtKB:A0A543Q349
       entry_name: A0A543Q349_ACITH
       protein_name: Pyridine nucleotide-disulfide oxidoreductase
@@ -229,7 +229,7 @@ causal_graphs:
       evidence:
       - source_ref: willner2018
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for the sulfur-oxidizing A. thiooxidans partner in the elemental-sulfur-supplemented mixed culture of willner2018; individual genes were not mutated.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for the sulfur-oxidizing A. thiooxidans partner in the elemental-sulfur-supplemented mixed culture of willner2018; individual sqr/sqor/tth genes were not mutated.
     - uniprot_accession: UniProtKB:A0A5P9XUB1
       entry_name: A0A5P9XUB1_ACITH
       protein_name: Pyridine nucleotide-disulfide oxidoreductase
@@ -250,7 +250,7 @@ causal_graphs:
       evidence:
       - source_ref: willner2018
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for the sulfur-oxidizing A. thiooxidans partner in the elemental-sulfur-supplemented mixed culture of willner2018; individual genes were not mutated.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for the sulfur-oxidizing A. thiooxidans partner in the elemental-sulfur-supplemented mixed culture of willner2018; individual sqr/sqor/tth genes were not mutated.
   - id: tth_hydrolase
     label: Tth tetrathionate hydrolase (tth / AFE_0029)
     node_type: GENE_OR_PROTEIN
@@ -281,7 +281,7 @@ causal_graphs:
       evidence:
       - source_ref: willner2018
         supports: partial
-        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (tth) for oxidative sulfur/acid generation in willner2018; individual sqr/tth genes were not mutated.
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfur-oxidation enzyme (tth) for oxidative sulfur/acid generation in willner2018; individual sqr/sqor/tth genes were not mutated.
     - uniprot_accession: UniProtKB:A0A5P9XPU3
       entry_name: A0A5P9XPU3_ACITH
       protein_name: Tetrathionate hydrolase
@@ -303,7 +303,7 @@ causal_graphs:
       evidence:
       - source_ref: willner2018
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for the sulfur-oxidizing A. thiooxidans partner in the elemental-sulfur-supplemented mixed culture of willner2018; individual genes were not mutated.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for the sulfur-oxidizing A. thiooxidans partner in the elemental-sulfur-supplemented mixed culture of willner2018; individual sqr/sqor/tth genes were not mutated.
     - uniprot_accession: UniProtKB:A0A5P9XS05
       entry_name: A0A5P9XS05_ACITH
       protein_name: Tetrathionate hydrolase
@@ -325,7 +325,7 @@ causal_graphs:
       evidence:
       - source_ref: willner2018
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for the sulfur-oxidizing A. thiooxidans partner in the elemental-sulfur-supplemented mixed culture of willner2018; individual genes were not mutated.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for the sulfur-oxidizing A. thiooxidans partner in the elemental-sulfur-supplemented mixed culture of willner2018; individual sqr/sqor/tth genes were not mutated.
   - id: acidic_ferric_sulfate_lixiviant
     label: Biogenic sulfuric acid and Fe(III) oxidative lixiviant
     node_type: CHEMICAL_ENTITY
@@ -399,9 +399,14 @@ curation_history:
   curator: claude (Claude Opus 4.6; antigravity)
   action: edit
   summary: Added live-verified Acidithiobacillus thiooxidans ATCC 19377 Sqor (UniProtKB:A0A5P9XUB1, locus GCD22_03207) and full-length sulfur-cluster Tth (UniProtKB:A0A5P9XS05, locus GCD22_02315) paralog protein examples to sqr_reductase and tth_hydrolase in waste-liquid-crystal-display-panels.yaml.
+- timestamp: '2026-10-30T08:09:31Z'
+  curator: claude
+  action: edit
+  summary: Include sqor in Sqr/Sqor causal-graph descriptions and protein_examples evidence explanations (#859)
 history_refs:
 - history/records/waste-liquid-crystal-display-panels/2026-10-11T134610Z-codex-b0f4f2.yaml
 - history/records/waste-liquid-crystal-display-panels/2026-10-18T042750Z-antigravity-75eedb.yaml
 - history/records/waste-liquid-crystal-display-panels/2026-10-21T184653Z-claude-f7960b.yaml
 - history/records/waste-liquid-crystal-display-panels/2026-10-24T015709Z-marcin-28e15b.yaml
 - history/records/waste-liquid-crystal-display-panels/2026-10-30T074106Z-claude-claude-opus-4-6-antigravity-e50238.yaml
+- history/records/waste-liquid-crystal-display-panels/2026-10-30T080931Z-claude-0ee1a5.yaml

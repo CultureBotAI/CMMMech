@@ -47,7 +47,7 @@ mechanisms:
     evidence:
     - source_ref: ferreira_2017
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - uniprot_accession: UniProtKB:A0A5P9XUB1
     entry_name: A0A5P9XUB1_ACITH
     protein_name: Pyridine nucleotide-disulfide oxidoreductase
@@ -68,7 +68,7 @@ mechanisms:
     evidence:
     - source_ref: ferreira_2017
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - uniprot_accession: UniProtKB:A0A5P9XPU3
     entry_name: A0A5P9XPU3_ACITH
     protein_name: Tetrathionate hydrolase
@@ -90,7 +90,7 @@ mechanisms:
     evidence:
     - source_ref: ferreira_2017
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - uniprot_accession: UniProtKB:A0A5P9XS05
     entry_name: A0A5P9XS05_ACITH
     protein_name: Tetrathionate hydrolase
@@ -112,7 +112,7 @@ mechanisms:
     evidence:
     - source_ref: ferreira_2017
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/sqor/tth genes were not mutated or directly assayed.
   evidence:
   - source_ref: ferreira_2017
     supports: support
@@ -132,15 +132,15 @@ mechanisms:
 causal_graphs:
 - id: fg01_hds_leaching_graph
   name: Acidithiobacillus thiooxidans FG-01 direct and two-stage sulfuric-acid leaching of Mo, Al, and V from raw spent diesel HDS catalyst
-  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to sulfur-dependent sulfuric-acid generation by isolate FG-01 and mobilization of Mo, Al, and V from raw unground Brazilian diesel hydrodesulfurization catalyst.
+  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr/Sqor and Tth to sulfur-dependent sulfuric-acid generation by isolate FG-01 and mobilization of Mo, Al, and V from raw unground Brazilian diesel hydrodesulfurization catalyst.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: fg01_hds_leaching
   nodes:
   - id: sqr_reductase
-    label: Sqr sulfide-quinone reductase (sqr)
+    label: Sqr/Sqor sulfide-quinone reductase (sqr / sqor)
     node_type: GENE_OR_PROTEIN
     gene_symbol: sqr
-    description: Membrane-bound sulfide-quinone reductase oxidizing reduced sulfur species to zero-valent sulfur and polythionate intermediates.
+    description: Membrane-bound sulfide-quinone reductase (Sqr/Sqor; GCD22_02301 / GCD22_03207) oxidizing reduced sulfur species to zero-valent sulfur and polythionate intermediates.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A0A543Q349
@@ -163,7 +163,7 @@ causal_graphs:
       evidence:
       - source_ref: ferreira_2017
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/sqor/tth genes were not mutated or directly assayed.
     - uniprot_accession: UniProtKB:A0A5P9XUB1
       entry_name: A0A5P9XUB1_ACITH
       protein_name: Pyridine nucleotide-disulfide oxidoreductase
@@ -184,7 +184,7 @@ causal_graphs:
       evidence:
       - source_ref: ferreira_2017
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - id: tth_hydrolase
     label: Tth tetrathionate hydrolase (tth)
     node_type: GENE_OR_PROTEIN
@@ -213,7 +213,7 @@ causal_graphs:
       evidence:
       - source_ref: ferreira_2017
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/sqor/tth genes were not mutated or directly assayed.
     - uniprot_accession: UniProtKB:A0A5P9XS05
       entry_name: A0A5P9XS05_ACITH
       protein_name: Tetrathionate hydrolase
@@ -235,7 +235,7 @@ causal_graphs:
       evidence:
       - source_ref: ferreira_2017
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - id: fg01_sulfur_oxidizing_acid_medium
     label: Acidified A. thiooxidans FG-01 T&K medium with elemental sulfur (direct 10 g/L S0 culture or diluted ~40 g/L H2SO4-equivalent two-stage broth)
     node_type: CHEMICAL_ENTITY
@@ -301,7 +301,12 @@ curation_history:
   curator: claude (Claude Opus 4.6; antigravity)
   action: edit
   summary: Added live-verified Acidithiobacillus thiooxidans ATCC 19377 Sqor (UniProtKB:A0A5P9XUB1, locus GCD22_03207) and full-length sulfur-cluster Tth (UniProtKB:A0A5P9XS05, locus GCD22_02315) paralog protein examples to sqr_reductase and tth_hydrolase in spent-hydrodesulfurization-catalyst.yaml.
+- timestamp: '2026-10-30T08:09:31Z'
+  curator: claude
+  action: edit
+  summary: Include sqor in Sqr/Sqor causal-graph descriptions and protein_examples evidence explanations (#859)
 history_refs:
 - history/records/spent-hydrodesulfurization-catalyst/2026-10-11T111316Z-codex-824afe.yaml
 - history/records/spent-hydrodesulfurization-catalyst/2026-10-30T060443Z-claude-claude-opus-4-6-antigravity-246224.yaml
 - history/records/spent-hydrodesulfurization-catalyst/2026-10-30T074106Z-claude-claude-opus-4-6-antigravity-2716fd.yaml
+- history/records/spent-hydrodesulfurization-catalyst/2026-10-30T080931Z-claude-897d8e.yaml

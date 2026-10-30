@@ -158,11 +158,11 @@ mechanisms:
     pfam_ids:
     - Pfam:PF07992
     functional_role: Membrane-bound sulfide-quinone oxidoreductase (BXT84_01680; 381 aa) in Sulfobacillus thermotolerans oxidizing reduced sulfur species during moderately thermophilic acidophilic consortium bioleaching.
-    annotation_note: Grounded to reference-proteome entry UP000325292 for Sulfobacillus thermotolerans (NCBITaxon:338644), representing the CGMCC 1.15711 S. thermotolerans consortium member (MC40-25St / MC45-25St) in lu2025.
+    annotation_note: Grounded to reference-proteome entry UP000325292 for Sulfobacillus thermotolerans (NCBITaxon:338644), representing the S. thermotolerans DSM 17362 consortium member (MC40-25St / MC45-40AS) in lu2025.
     evidence:
     - source_ref: lu2025
       supports: partial
-      explanation: Representative Sulfobacillus thermotolerans sulfide-quinone oxidoreductase (BXT84_01680) for the S. thermotolerans member in the 40/45 degrees C single-culture and MC40-25St/MC45-25St consortium arms of lu2025; individual genes were not mutated.
+      explanation: Representative Sulfobacillus thermotolerans sulfide-quinone oxidoreductase (BXT84_01680) for the S. thermotolerans DSM 17362 member in the 40 degrees C single-culture and 40/45 degrees C consortium arms (MC40-25St / MC45-40AS) of lu2025; individual genes were not mutated.
   - uniprot_accession: UniProtKB:B7J3C9
     entry_name: TTH_ACIF2
     protein_name: Tetrathionate hydrolase
@@ -280,7 +280,7 @@ causal_graphs:
     label: Sqr sulfide-quinone reductase (AFE_1792)
     node_type: GENE_OR_PROTEIN
     gene_symbol: AFE_1792
-    description: Inner-membrane flavoprotein oxidizing sulfide to zero-valent sulfur/polysulfide intermediates.
+    description: Inner-membrane flavoprotein (Sqr/Sqor) oxidizing sulfide to zero-valent sulfur/polysulfide intermediates.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:B7JBP8
@@ -410,11 +410,11 @@ causal_graphs:
       pfam_ids:
       - Pfam:PF07992
       functional_role: Membrane-bound sulfide-quinone oxidoreductase (BXT84_01680; 381 aa) in Sulfobacillus thermotolerans oxidizing reduced sulfur species during moderately thermophilic acidophilic consortium bioleaching.
-      annotation_note: Grounded to reference-proteome entry UP000325292 for Sulfobacillus thermotolerans (NCBITaxon:338644), representing the CGMCC 1.15711 S. thermotolerans consortium member (MC40-25St / MC45-25St) in lu2025.
+      annotation_note: Grounded to reference-proteome entry UP000325292 for Sulfobacillus thermotolerans (NCBITaxon:338644), representing the S. thermotolerans DSM 17362 consortium member (MC40-25St / MC45-40AS) in lu2025.
       evidence:
       - source_ref: lu2025
         supports: partial
-        explanation: Representative Sulfobacillus thermotolerans sulfide-quinone oxidoreductase (BXT84_01680) for the S. thermotolerans member in the 40/45 degrees C single-culture and MC40-25St/MC45-25St consortium arms of lu2025; individual genes were not mutated.
+        explanation: Representative Sulfobacillus thermotolerans sulfide-quinone oxidoreductase (BXT84_01680) for the S. thermotolerans DSM 17362 member in the 40 degrees C single-culture and 40/45 degrees C consortium arms (MC40-25St / MC45-40AS) of lu2025; individual genes were not mutated.
   - id: tth_hydrolase
     label: Tth tetrathionate hydrolase (tth / AFE_0029)
     node_type: GENE_OR_PROTEIN
@@ -585,9 +585,14 @@ curation_history:
   curator: claude (Claude Opus 4.6; antigravity)
   action: edit
   summary: Added live-verified Acidithiobacillus thiooxidans ATCC 19377 Sqor (UniProtKB:A0A5P9XUB1) and full-length sulfur-cluster Tth (UniProtKB:A0A5P9XS05) paralogs plus Sulfobacillus thermotolerans Sqr (UniProtKB:A0ABN5H056) protein examples to sqr_reductase and tth_hydrolase in traction-battery-hydrometallurgical-residue.yaml.
+- timestamp: '2026-10-30T08:08:17Z'
+  curator: claude
+  action: edit
+  summary: Fix Sulfobacillus thermotolerans DSM 17362 strain ID, MC45-40AS consortium label, and 40 C single-culture temperature in UniProtKB:A0ABN5H056 grounding (#859)
 history_refs:
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-12T144943Z-codex-e18c9e.yaml
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-18T042750Z-antigravity-437365.yaml
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-21T184653Z-claude-75d927.yaml
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-24T015709Z-marcin-eab866.yaml
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-30T074106Z-claude-claude-opus-4-6-antigravity-53967a.yaml
+- history/records/traction-battery-hydrometallurgical-residue/2026-10-30T080817Z-claude-9f9b68.yaml

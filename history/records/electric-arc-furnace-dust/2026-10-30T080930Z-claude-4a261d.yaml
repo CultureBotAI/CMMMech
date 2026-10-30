@@ -1,0 +1,27 @@
+history_version: 1
+target:
+  kind: record
+  slug: electric-arc-furnace-dust
+  path: data/records/electric-arc-furnace-dust.yaml
+session:
+  id: 2026-10-30T080930Z-claude-4a261d
+  timestamp: '2026-10-30T08:09:30Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Include sqor in Sqr/Sqor causal-graph descriptions and protein_examples evidence
+    explanations (#859)
+  details: 'Resolved PR #858 adversarial review Finding 2 (#859) by updating causal_graphs[0].description,
+    sqr_reductase label/description, and protein_examples[].evidence[0].explanation across
+    mechanisms and causal_graphs to explicitly reference sqr/sqor/tth alongside Sqr/Sqor and
+    Tth.'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs

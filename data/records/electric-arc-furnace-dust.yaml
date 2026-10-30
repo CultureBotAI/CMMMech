@@ -51,7 +51,7 @@ mechanisms:
     evidence:
     - source_ref: frueholz_2025
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for 3-L bioreactor sulfur oxidation and 0.22-um-filtered biogenic-acid zinc leaching from electric-arc-furnace dusts (Dust 1 and Dust 2) by Acidithiobacillus thiooxidans DSM 504 in Frueholz et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for 3-L bioreactor sulfur oxidation and 0.22-um-filtered biogenic-acid zinc leaching from electric-arc-furnace dusts (Dust 1 and Dust 2) by Acidithiobacillus thiooxidans DSM 504 in Frueholz et al. (2025); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - uniprot_accession: UniProtKB:A0A5P9XUB1
     entry_name: A0A5P9XUB1_ACITH
     protein_name: Pyridine nucleotide-disulfide oxidoreductase
@@ -72,7 +72,7 @@ mechanisms:
     evidence:
     - source_ref: frueholz_2025
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for 3-L bioreactor sulfur oxidation and 0.22-um-filtered biogenic-acid zinc leaching from electric-arc-furnace dusts (Dust 1 and Dust 2) by Acidithiobacillus thiooxidans DSM 504 in Frueholz et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for 3-L bioreactor sulfur oxidation and 0.22-um-filtered biogenic-acid zinc leaching from electric-arc-furnace dusts (Dust 1 and Dust 2) by Acidithiobacillus thiooxidans DSM 504 in Frueholz et al. (2025); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - uniprot_accession: UniProtKB:A0A5P9XPU3
     entry_name: A0A5P9XPU3_ACITH
     protein_name: Tetrathionate hydrolase
@@ -94,7 +94,7 @@ mechanisms:
     evidence:
     - source_ref: frueholz_2025
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for 3-L bioreactor sulfur oxidation and 0.22-um-filtered biogenic-acid zinc leaching from electric-arc-furnace dusts (Dust 1 and Dust 2) by Acidithiobacillus thiooxidans DSM 504 in Frueholz et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for 3-L bioreactor sulfur oxidation and 0.22-um-filtered biogenic-acid zinc leaching from electric-arc-furnace dusts (Dust 1 and Dust 2) by Acidithiobacillus thiooxidans DSM 504 in Frueholz et al. (2025); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - uniprot_accession: UniProtKB:A0A5P9XS05
     entry_name: A0A5P9XS05_ACITH
     protein_name: Tetrathionate hydrolase
@@ -116,7 +116,7 @@ mechanisms:
     evidence:
     - source_ref: frueholz_2025
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for 3-L bioreactor sulfur oxidation and 0.22-um-filtered biogenic-acid zinc leaching from electric-arc-furnace dusts (Dust 1 and Dust 2) by Acidithiobacillus thiooxidans DSM 504 in Frueholz et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for 3-L bioreactor sulfur oxidation and 0.22-um-filtered biogenic-acid zinc leaching from electric-arc-furnace dusts (Dust 1 and Dust 2) by Acidithiobacillus thiooxidans DSM 504 in Frueholz et al. (2025); individual sqr/sqor/tth genes were not mutated or directly assayed.
   evidence:
   - source_ref: frueholz_2025
     supports: support
@@ -156,15 +156,15 @@ mechanisms:
 causal_graphs:
 - id: filtered_biogenic_acid_zinc_leaching_graph
   name: Acidithiobacillus thiooxidans DSM 504 0.22-um-filtered biogenic-acid leaching of zinc from electric-arc-furnace dusts
-  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to 3-L stirred-reactor production of 0.22-um-filtered biogenic sulfuric acid (~50 g/L sulfate, pH 0.3, ~0.5 M calculated acidity) and rapid zinc mobilization from electric-arc-furnace dusts (Dust 1 and Dust 2).
+  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr/Sqor and Tth to 3-L stirred-reactor production of 0.22-um-filtered biogenic sulfuric acid (~50 g/L sulfate, pH 0.3, ~0.5 M calculated acidity) and rapid zinc mobilization from electric-arc-furnace dusts (Dust 1 and Dust 2).
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: filtered_biogenic_acid_zinc_leaching
   nodes:
   - id: sqr_reductase
-    label: Sqr sulfide-quinone reductase (sqr)
+    label: Sqr/Sqor sulfide-quinone reductase (sqr / sqor)
     node_type: GENE_OR_PROTEIN
     gene_symbol: sqr
-    description: Membrane-bound sulfide-quinone reductase oxidizing reduced sulfur species to zero-valent sulfur and polythionate intermediates.
+    description: Membrane-bound sulfide-quinone reductase (Sqr/Sqor; GCD22_02301 / GCD22_03207) oxidizing reduced sulfur species to zero-valent sulfur and polythionate intermediates.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A0A543Q349
@@ -187,7 +187,7 @@ causal_graphs:
       evidence:
       - source_ref: frueholz_2025
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for 3-L bioreactor sulfur oxidation and 0.22-um-filtered biogenic-acid zinc leaching from electric-arc-furnace dusts (Dust 1 and Dust 2) by Acidithiobacillus thiooxidans DSM 504 in Frueholz et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for 3-L bioreactor sulfur oxidation and 0.22-um-filtered biogenic-acid zinc leaching from electric-arc-furnace dusts (Dust 1 and Dust 2) by Acidithiobacillus thiooxidans DSM 504 in Frueholz et al. (2025); individual sqr/sqor/tth genes were not mutated or directly assayed.
     - uniprot_accession: UniProtKB:A0A5P9XUB1
       entry_name: A0A5P9XUB1_ACITH
       protein_name: Pyridine nucleotide-disulfide oxidoreductase
@@ -208,7 +208,7 @@ causal_graphs:
       evidence:
       - source_ref: frueholz_2025
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for 3-L bioreactor sulfur oxidation and 0.22-um-filtered biogenic-acid zinc leaching from electric-arc-furnace dusts (Dust 1 and Dust 2) by Acidithiobacillus thiooxidans DSM 504 in Frueholz et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for 3-L bioreactor sulfur oxidation and 0.22-um-filtered biogenic-acid zinc leaching from electric-arc-furnace dusts (Dust 1 and Dust 2) by Acidithiobacillus thiooxidans DSM 504 in Frueholz et al. (2025); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - id: tth_hydrolase
     label: Tth tetrathionate hydrolase (tth)
     node_type: GENE_OR_PROTEIN
@@ -237,7 +237,7 @@ causal_graphs:
       evidence:
       - source_ref: frueholz_2025
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for 3-L bioreactor sulfur oxidation and 0.22-um-filtered biogenic-acid zinc leaching from electric-arc-furnace dusts (Dust 1 and Dust 2) by Acidithiobacillus thiooxidans DSM 504 in Frueholz et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for 3-L bioreactor sulfur oxidation and 0.22-um-filtered biogenic-acid zinc leaching from electric-arc-furnace dusts (Dust 1 and Dust 2) by Acidithiobacillus thiooxidans DSM 504 in Frueholz et al. (2025); individual sqr/sqor/tth genes were not mutated or directly assayed.
     - uniprot_accession: UniProtKB:A0A5P9XS05
       entry_name: A0A5P9XS05_ACITH
       protein_name: Tetrathionate hydrolase
@@ -259,7 +259,7 @@ causal_graphs:
       evidence:
       - source_ref: frueholz_2025
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for 3-L bioreactor sulfur oxidation and 0.22-um-filtered biogenic-acid zinc leaching from electric-arc-furnace dusts (Dust 1 and Dust 2) by Acidithiobacillus thiooxidans DSM 504 in Frueholz et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for 3-L bioreactor sulfur oxidation and 0.22-um-filtered biogenic-acid zinc leaching from electric-arc-furnace dusts (Dust 1 and Dust 2) by Acidithiobacillus thiooxidans DSM 504 in Frueholz et al. (2025); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - id: filtered_bioreactor_biogenic_sulfuric_acid
     label: 0.22-um-filtered A. thiooxidans DSM 504 3-L bioreactor biogenic acid (~50 g/L sulfate, pH 0.3, ~0.5 M calculated acidity)
     node_type: CHEMICAL_ENTITY
@@ -329,8 +329,13 @@ curation_history:
   curator: claude (Claude Opus 4.6; antigravity)
   action: edit
   summary: Added live-verified Acidithiobacillus thiooxidans ATCC 19377 Sqor (UniProtKB:A0A5P9XUB1, locus GCD22_03207) and full-length sulfur-cluster Tth (UniProtKB:A0A5P9XS05, locus GCD22_02315) paralog protein examples to sqr_reductase and tth_hydrolase in electric-arc-furnace-dust.yaml.
+- timestamp: '2026-10-30T08:09:30Z'
+  curator: claude
+  action: edit
+  summary: Include sqor in Sqr/Sqor causal-graph descriptions and protein_examples evidence explanations (#859)
 history_refs:
 - history/records/electric-arc-furnace-dust/2026-10-11T153000Z-codex-86367d.yaml
 - history/records/electric-arc-furnace-dust/2026-10-30T060443Z-claude-claude-opus-4-6-antigravity-dfe984.yaml
 - history/records/electric-arc-furnace-dust/2026-10-30T065347Z-claude-claude-opus-4-6-antigravity-e21591.yaml
 - history/records/electric-arc-furnace-dust/2026-10-30T074105Z-claude-claude-opus-4-6-antigravity-e676e4.yaml
+- history/records/electric-arc-furnace-dust/2026-10-30T080930Z-claude-4a261d.yaml
