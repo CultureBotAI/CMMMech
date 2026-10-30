@@ -11,11 +11,11 @@
 
 ## Summary
 
-Grimmite (IMA:2020-060, status A, NiCo2S4) passes primary-source scientific review (scientific_review: true) at SHA-256 d4fe726dedc99105182e1d2d95e0a98e387cee8abb7b0bdeb6f5aee162c2cadf against all 35 bounded passages of Sejkora et al. (2021, Eur. J. Mineral. 33:175-187).
+Grimmite (IMA:2020-060, status A, NiCo2S4) passes primary-source scientific review (scientific_review: true) at SHA-256 d4fe726dedc99105182e1d2d95e0a98e387cee8abb7b0bdeb6f5aee162c2cadf against all 39 bounded passages (13 pages) of Škácha et al. (2021, Eur. J. Mineral. 33:175-187).
 
 ## Scope And Provenance
 
-Primary-source scientific review of data/records/grimmite.yaml (SHA-256 d4fe726dedc99105182e1d2d95e0a98e387cee8abb7b0bdeb6f5aee162c2cadf) and its canonical CREATE history sidecar against all 35 bounded primary-source passages from Sejkora et al. (2021, Eur. J. Mineral. 33:175-187) and the September 2026 IMA-CNMNC Master List (PDF p. 86).
+Primary-source scientific review of data/records/grimmite.yaml (SHA-256 d4fe726dedc99105182e1d2d95e0a98e387cee8abb7b0bdeb6f5aee162c2cadf) and its canonical CREATE history sidecar against all 39 bounded primary-source passages (13 pages) from Škácha et al. (2021, Eur. J. Mineral. 33:175-187) and the September 2026 IMA-CNMNC Master List (PDF p. 86).
 
 Selection: Round 123 newly admitted mineral record grimmite
 Coverage: full; 1 reviewed / 1 in the declared population.
@@ -35,17 +35,17 @@ Working-tree hashes do not imply those bytes were committed.
 
 ## Scientific And Domain Assessments
 
-### Verification of IMA:2020-060 identity, Příbram Brod shaft No. 15 holotype chemistry, and cubic Fd-3m inverse-thiospinel structure for grimmite
+### Verification of IMA:2020-060 identity, Příbram Jerusalem deposit shaft no. 9 cotypes P1P 49/2020 and 3/2020 chemistry, and cubic Fd-3m inverse-thiospinel structure for grimmite
 
 evidence: supported. Targets: cmmmech:grimmite.
 
-All numeric, crystallographic, reflectance, Raman, and chemical claims in data/records/grimmite.yaml (SHA-256 d4fe726dedc99105182e1d2d95e0a98e387cee8abb7b0bdeb6f5aee162c2cadf) match the bounded primary-source passages of Sejkora et al. (2021, Eur. J. Mineral. 33:175-187) and the September 2026 IMA Master List (p. 86).
+All numeric, crystallographic, reflectance, and chemical claims in data/records/grimmite.yaml (SHA-256 d4fe726dedc99105182e1d2d95e0a98e387cee8abb7b0bdeb6f5aee162c2cadf) match the bounded primary-source passages of Škácha et al. (2021, Eur. J. Mineral. 33:175-187, 13 pages, 39 bounded passages) and the September 2026 IMA Master List (p. 86).
 
-### Verification of abiotic hydrothermal replacement and inverse-thiospinel ordering mechanism and append-only CREATE provenance
+### Verification of 0 mechanisms (abiotic hydrothermal occurrence only) and append-only CREATE provenance
 
 provenance: supported. Targets: cmmmech:grimmite.
 
-The abiotic mechanism abiotic_hydrothermal_replacement_and_inverse_thiospinel_ordering accurately represents the post-uraninite hydrothermal replacement of ullmannite/alloclasite, the silica-tube synthesis of NiCo2S4 from high-purity elements at 300-400 °C, and the quantum-chemical demonstration of the inverse-thiospinel Co[NiCo]S4 configuration, with explicit disclosure that no microbial extraction, bioleaching, or biotransformation study is reported. Append-only CREATE history sidecar passes validation with 0 errors.
+data/records/grimmite.yaml accurately omits mechanisms (0 mechanisms) because Škácha et al. (2021) reports a natural hydrothermal carbonate-vein mineral description without any microbial extraction, bioleaching, biomineralization, or synthetic recovery experiment, and explicitly discloses that no criticality designation, microbial mechanism, or industrial recovery yield is asserted. Append-only CREATE history sidecar passes validation with 0 errors.
 
 ## Findings
 
@@ -60,16 +60,16 @@ No findings recorded within this review's declared scope.
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| owner | data/records/grimmite.yaml; Working-tree record data/records/grimmite.yaml | supports | Working-tree record data/records/grimmite.yaml (SHA-256 d4fe726dedc99105182e1d2d95e0a98e387cee8abb7b0bdeb6f5aee162c2cadf) captures the IMA:2020-060 identity, Příbram Brod shaft No. 15 holotype chemistry (Table 1, n = 15) and synthetic NiCo2S4 chemistry (n = 9), cubic Fd-3m inverse-thiospinel Co[NiCo]S4 structure, powder XRD, reflectance, and abiotic hydrothermal replacement and inverse-thiospinel cation-ordering mechanism. |
-| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List, PDF p. 86 (ima-round118.p086.grimmite.w01.part01.txt) | supports | Confirms Grimmite, formula NiCo2S4, status A, IMA No. 2020-060, country Czechia, and sole reference European Journal of Mineralogy 33 (2021), 175. |
-| sejkora_2021_primary | https://doi.org/10.5194/ejm-33-175-2021; Sejkora et al. (2021) Eur. J. Mineral. 33:175-187, pp. 175-187, Tables 1-5, Figures 1-9 (ejm-33-175-2021.p001-p013) | supports | All 13 pages (35 bounded passages &lt;= 1,800 B) inspected: confirms Příbram Brod shaft No. 15 holotype (P1N 84915, National Museum, Prague; synthetic analogue P1N 114746), Table 1 WDS chemistry (n = 15: Ni 20.69, Co 36.11, Fe 0.87, Cu 0.14, Sb 0.08, Bi 0.13, S 41.80, Total 99.81 wt%; synthetic n = 9: Ni 19.35, Co 38.68, S 42.19, Total 100.22 wt%), empirical formula (Ni1.08Co1.88Fe0.05)Sigma3.01S3.99, cubic Fd-3m unit cell (natural a = 9.3933(9) Å, V = 828.8(2) Å3, Z = 8, Dcalc = 4.888 g/cm3; synthetic a = 9.3863(1) Å, V = 826.95(2) Å3, Dcalc = 4.896 g/cm3), Rietveld + quantum-chemical inverse-thiospinel Co[NiCo]S4 configuration, powder XRD (Table 3; 6 strongest lines 5.424, 3.321, 2.832, 2.348, 1.8076, 1.6605 Å), and COM reflectance (Table 2). |
-| create_history | history/records/grimmite/2026-10-30T132620Z-antigravity-76b8bf.yaml; Canonical CREATE history sidecar history/records/grimmite/2026-10-30T132620Z-antigravity-76b8bf.yaml | supports | Canonical CREATE history sidecar (SHA-256 fe0c1c6544457737e240ecb3bf2c29031b213a9f1c55822bbca74fb31eec627f) preserved untouched. |
+| owner | data/records/grimmite.yaml; Working-tree record data/records/grimmite.yaml | supports | Working-tree record data/records/grimmite.yaml (SHA-256 d4fe726dedc99105182e1d2d95e0a98e387cee8abb7b0bdeb6f5aee162c2cadf) captures the IMA:2020-060 identity, shaft no. 9 Jerusalem deposit (Příbram) cotypes P1P 49/2020 and 3/2020 WDS chemistry (Table 2, p. 177, n = 13 on SCXRD grain), COM reflectance (Table 1, p. 177), cubic Fd-3m inverse-thiospinel Co[NiCo]S4 single-crystal XRD structure on FIB-extracted grain (Tables 4–6), calculated powder XRD (Table 3), and 0 mechanisms (no microbial mechanism or industrial recovery yield asserted). |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List, PDF p. 86 | supports | Confirms Grimmite, formula NiCo2S4, status A, IMA No. 2020-060, country Czechia, and sole reference European Journal of Mineralogy 33 (2021), 175. |
+| skacha_2021_primary | https://doi.org/10.5194/ejm-33-175-2021; Škácha P, Sejkora J, Plášil J, Dolníček Z, and Ulmanová J (2021) Eur. J. Mineral. 33:175-187, pp. 175-187, Tables 1-6, Figures 1-9 (passages/ejm-33-175-2021.p1..p13.all-pages.w1.part*.txt; 39 passages) | supports | All 13 pages (39 bounded passages &lt;= 1,800 B in summary.json) inspected: confirms shaft no. 9, Jerusalem deposit, Příbram polymetallic ore district, central Bohemia, Czech Republic, two cotype specimens P1P 49/2020 (National Museum, Prague) and 3/2020 (Mining Museum Příbram), hydrothermal dolomite-calcite vein mineral assemblage (ullmannite, gersdorffite, cobaltite, millerite, siegenite, tučekite, bornite, chalcopyrite, galena, sphalerite, tetrahedrite, nickeline, rammelsbergite, löllingite, native bismuth), Table 2 (p. 177) WDS chemistry on the SCXRD grain (n = 13: Ni 19.27, Co 38.23, Fe 1.16, Bi 0.62, Pb 0.46, As 0.09, Cu 0.08, Mn 0.03, S 41.05, total 100.99 wt%), empirical formula Ni1.01(Co1.99Fe0.06Pb0.01Bi0.01)Sigma2.07S3.92, COM reflectance in air (42.5% at 470 nm, 45.9% at 546 nm, 47.7% at 589 nm, 50.2% at 650 nm; Table 1, p. 177), cubic Fd-3m SCXRD refinement on a FIB-extracted 12 x 10 x 4 um grain (a = 9.3933(9) Å, V = 828.81(14) Å3, Z = 8, Dcalc = 4.918 g/cm3, Robs = 0.0539 in Table 5 vs 0.0489 in abstract, Tables 4–6), and calculated powder XRD lines (2.8322, 1.6605, 2.3483, 1.8077, 5.4232, 3.3210, 1.9174 Å; Table 3). |
+| create_history | history/records/grimmite/2026-10-30T132620Z-antigravity-76b8bf.yaml; Canonical CREATE history sidecar history/records/grimmite/2026-10-30T132620Z-antigravity-76b8bf.yaml | supports | Canonical CREATE history sidecar (SHA-256 fe0c1c6544457737e240ecb3bf2c29031b213a9f1c55822bbca74fb31eec627f) preserved untouched as immutable per AGENTS.md; note that its details string cited a preliminary estimate of 40 passages whereas summary.json indexes 39 bounded passages across the 13 pages of ejm-33-175-2021.pdf. |
 | validation | data/records/grimmite.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | Checked 668 record(s); 0 failed. Checked 1104 history record(s); 0 error(s). |
 
 ## Limits And Additional Notes
 
-- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review will be executed prior to merge.
-- Executed under the Round 123 bounded source-text workflow (scripts/index_bounded_pdf_passages.py, max 1,800 bytes per passage).
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed under the Round 123 bounded source-text workflow (scripts/index_bounded_pdf_passages.py, max 1,800 bytes per passage) and synchronized in response to PR #868 review issue #869.
 
 ## Complete Structured Record
 
@@ -90,9 +90,9 @@ reviewer:
   independence: self_review
   independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
     verifying all scientific claims in data/records/grimmite.yaml (SHA-256 d4fe726dedc99105182e1d2d95e0a98e387cee8abb7b0bdeb6f5aee162c2cadf)
-    against all 35 bounded passages of Sejkora et al. (2021, Eur. J. Mineral. 33:175-187,
-    ejm-33-175-2021.p001-p013) and the September 2026 IMA-CNMNC Master List (PDF p.
-    86, ima-round118.p086.grimmite.w01.part01.txt).
+    against all 39 bounded passages (13 pages) of Škácha P, Sejkora J, Plášil J, Dolníček
+    Z, and Ulmanová J (2021, Eur. J. Mineral. 33:175-187, passages/ejm-33-175-2021.p1..p13.all-pages.w1.part*.txt)
+    and the September 2026 IMA-CNMNC Master List (PDF p. 86).
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
@@ -108,10 +108,10 @@ source:
     sha256: fe0c1c6544457737e240ecb3bf2c29031b213a9f1c55822bbca74fb31eec627f
     role: context
   - path: research/sources/round123-minerals/20261030T133900Z-source-investigation.json
-    sha256: 7f74c6d14d19c18e9ea76b4fc45d1acc6d9903db72aad62912ec87d0c98890f3
+    sha256: e2c2ef23db32c9385e91e0ba41d24e59f465362d9499231aa45d94f996e8edb2
     role: context
   - path: research/sources/round123-minerals/20261030T133900Z-source-investigation.md
-    sha256: 0913a3e1dc7e5eac00893aba72cf85b3e436dabc0496a6bcfc24d558d1ae43d6
+    sha256: b96dfb26e15f741ddbadafcb31065511c28085b9c4fcaf159baa881ce43f365a
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
@@ -131,9 +131,9 @@ targets:
 scope:
   description: Primary-source scientific review of data/records/grimmite.yaml (SHA-256
     d4fe726dedc99105182e1d2d95e0a98e387cee8abb7b0bdeb6f5aee162c2cadf) and its canonical
-    CREATE history sidecar against all 35 bounded primary-source passages from Sejkora
-    et al. (2021, Eur. J. Mineral. 33:175-187) and the September 2026 IMA-CNMNC Master
-    List (PDF p. 86).
+    CREATE history sidecar against all 39 bounded primary-source passages (13 pages)
+    from Škácha et al. (2021, Eur. J. Mineral. 33:175-187) and the September 2026
+    IMA-CNMNC Master List (PDF p. 86).
   selection: Round 123 newly admitted mineral record grimmite
   coverage: full
   population_size: 1
@@ -147,37 +147,43 @@ evidence:
   accessed_at: '2026-10-30T13:41:00Z'
   support: supports
   summary: Working-tree record data/records/grimmite.yaml (SHA-256 d4fe726dedc99105182e1d2d95e0a98e387cee8abb7b0bdeb6f5aee162c2cadf)
-    captures the IMA:2020-060 identity, Příbram Brod shaft No. 15 holotype chemistry
-    (Table 1, n = 15) and synthetic NiCo2S4 chemistry (n = 9), cubic Fd-3m inverse-thiospinel
-    Co[NiCo]S4 structure, powder XRD, reflectance, and abiotic hydrothermal replacement
-    and inverse-thiospinel cation-ordering mechanism.
+    captures the IMA:2020-060 identity, shaft no. 9 Jerusalem deposit (Příbram) cotypes
+    P1P 49/2020 and 3/2020 WDS chemistry (Table 2, p. 177, n = 13 on SCXRD grain),
+    COM reflectance (Table 1, p. 177), cubic Fd-3m inverse-thiospinel Co[NiCo]S4 single-crystal
+    XRD structure on FIB-extracted grain (Tables 4–6), calculated powder XRD (Table
+    3), and 0 mechanisms (no microbial mechanism or industrial recovery yield asserted).
   snapshot_sha256: d4fe726dedc99105182e1d2d95e0a98e387cee8abb7b0bdeb6f5aee162c2cadf
 - evidence_id: ima_authority
   kind: authority
   reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
-  locator: IMA-CNMNC September 2026 Master List, PDF p. 86 (ima-round118.p086.grimmite.w01.part01.txt)
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 86
   accessed_at: '2026-10-30T13:41:00Z'
   support: supports
   summary: Confirms Grimmite, formula NiCo2S4, status A, IMA No. 2020-060, country
     Czechia, and sole reference European Journal of Mineralogy 33 (2021), 175.
   snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
-- evidence_id: sejkora_2021_primary
+- evidence_id: skacha_2021_primary
   kind: primary_source
   reference: https://doi.org/10.5194/ejm-33-175-2021
-  locator: Sejkora et al. (2021) Eur. J. Mineral. 33:175-187, pp. 175-187, Tables
-    1-5, Figures 1-9 (ejm-33-175-2021.p001-p013)
+  locator: Škácha P, Sejkora J, Plášil J, Dolníček Z, and Ulmanová J (2021) Eur. J.
+    Mineral. 33:175-187, pp. 175-187, Tables 1-6, Figures 1-9 (passages/ejm-33-175-2021.p1..p13.all-pages.w1.part*.txt;
+    39 passages)
   accessed_at: '2026-10-30T13:41:00Z'
   support: supports
-  summary: 'All 13 pages (35 bounded passages <= 1,800 B) inspected: confirms Příbram
-    Brod shaft No. 15 holotype (P1N 84915, National Museum, Prague; synthetic analogue
-    P1N 114746), Table 1 WDS chemistry (n = 15: Ni 20.69, Co 36.11, Fe 0.87, Cu 0.14,
-    Sb 0.08, Bi 0.13, S 41.80, Total 99.81 wt%; synthetic n = 9: Ni 19.35, Co 38.68,
-    S 42.19, Total 100.22 wt%), empirical formula (Ni1.08Co1.88Fe0.05)Sigma3.01S3.99,
-    cubic Fd-3m unit cell (natural a = 9.3933(9) Å, V = 828.8(2) Å3, Z = 8, Dcalc
-    = 4.888 g/cm3; synthetic a = 9.3863(1) Å, V = 826.95(2) Å3, Dcalc = 4.896 g/cm3),
-    Rietveld + quantum-chemical inverse-thiospinel Co[NiCo]S4 configuration, powder
-    XRD (Table 3; 6 strongest lines 5.424, 3.321, 2.832, 2.348, 1.8076, 1.6605 Å),
-    and COM reflectance (Table 2).'
+  summary: 'All 13 pages (39 bounded passages <= 1,800 B in summary.json) inspected:
+    confirms shaft no. 9, Jerusalem deposit, Příbram polymetallic ore district, central
+    Bohemia, Czech Republic, two cotype specimens P1P 49/2020 (National Museum, Prague)
+    and 3/2020 (Mining Museum Příbram), hydrothermal dolomite-calcite vein mineral
+    assemblage (ullmannite, gersdorffite, cobaltite, millerite, siegenite, tučekite,
+    bornite, chalcopyrite, galena, sphalerite, tetrahedrite, nickeline, rammelsbergite,
+    löllingite, native bismuth), Table 2 (p. 177) WDS chemistry on the SCXRD grain
+    (n = 13: Ni 19.27, Co 38.23, Fe 1.16, Bi 0.62, Pb 0.46, As 0.09, Cu 0.08, Mn 0.03,
+    S 41.05, total 100.99 wt%), empirical formula Ni1.01(Co1.99Fe0.06Pb0.01Bi0.01)Sigma2.07S3.92,
+    COM reflectance in air (42.5% at 470 nm, 45.9% at 546 nm, 47.7% at 589 nm, 50.2%
+    at 650 nm; Table 1, p. 177), cubic Fd-3m SCXRD refinement on a FIB-extracted 12
+    x 10 x 4 um grain (a = 9.3933(9) Å, V = 828.81(14) Å3, Z = 8, Dcalc = 4.918 g/cm3,
+    Robs = 0.0539 in Table 5 vs 0.0489 in abstract, Tables 4–6), and calculated powder
+    XRD lines (2.8322, 1.6605, 2.3483, 1.8077, 5.4232, 3.3210, 1.9174 Å; Table 3).'
   snapshot_sha256: a972dd34d42f93acc53cd3c99b31923398278bf0f47141a4d9d354096429cf11
 - evidence_id: create_history
   kind: record_content
@@ -186,7 +192,9 @@ evidence:
   accessed_at: '2026-10-30T13:41:00Z'
   support: supports
   summary: Canonical CREATE history sidecar (SHA-256 fe0c1c6544457737e240ecb3bf2c29031b213a9f1c55822bbca74fb31eec627f)
-    preserved untouched.
+    preserved untouched as immutable per AGENTS.md; note that its details string cited
+    a preliminary estimate of 40 passages whereas summary.json indexes 39 bounded
+    passages across the 13 pages of ejm-33-175-2021.pdf.
   snapshot_sha256: fe0c1c6544457737e240ecb3bf2c29031b213a9f1c55822bbca74fb31eec627f
 - evidence_id: validation
   kind: validation
@@ -225,49 +233,50 @@ checks:
 assessments:
 - assessment_id: identity_and_primary_source_verification
   area: evidence
-  topic: Verification of IMA:2020-060 identity, Příbram Brod shaft No. 15 holotype
-    chemistry, and cubic Fd-3m inverse-thiospinel structure for grimmite
+  topic: Verification of IMA:2020-060 identity, Příbram Jerusalem deposit shaft no.
+    9 cotypes P1P 49/2020 and 3/2020 chemistry, and cubic Fd-3m inverse-thiospinel
+    structure for grimmite
   outcome: supported
-  summary: All numeric, crystallographic, reflectance, Raman, and chemical claims
-    in data/records/grimmite.yaml (SHA-256 d4fe726dedc99105182e1d2d95e0a98e387cee8abb7b0bdeb6f5aee162c2cadf)
-    match the bounded primary-source passages of Sejkora et al. (2021, Eur. J. Mineral.
-    33:175-187) and the September 2026 IMA Master List (p. 86).
+  summary: All numeric, crystallographic, reflectance, and chemical claims in data/records/grimmite.yaml
+    (SHA-256 d4fe726dedc99105182e1d2d95e0a98e387cee8abb7b0bdeb6f5aee162c2cadf) match
+    the bounded primary-source passages of Škácha et al. (2021, Eur. J. Mineral. 33:175-187,
+    13 pages, 39 bounded passages) and the September 2026 IMA Master List (p. 86).
   target_ids:
   - cmmmech:grimmite
   evidence_ids:
   - owner
   - ima_authority
-  - sejkora_2021_primary
-- assessment_id: mechanism_and_provenance_verification
+  - skacha_2021_primary
+- assessment_id: mechanism_absence_and_provenance_verification
   area: provenance
-  topic: Verification of abiotic hydrothermal replacement and inverse-thiospinel ordering
-    mechanism and append-only CREATE provenance
+  topic: Verification of 0 mechanisms (abiotic hydrothermal occurrence only) and append-only
+    CREATE provenance
   outcome: supported
-  summary: The abiotic mechanism abiotic_hydrothermal_replacement_and_inverse_thiospinel_ordering
-    accurately represents the post-uraninite hydrothermal replacement of ullmannite/alloclasite,
-    the silica-tube synthesis of NiCo2S4 from high-purity elements at 300-400 °C,
-    and the quantum-chemical demonstration of the inverse-thiospinel Co[NiCo]S4 configuration,
-    with explicit disclosure that no microbial extraction, bioleaching, or biotransformation
-    study is reported. Append-only CREATE history sidecar passes validation with 0
-    errors.
+  summary: data/records/grimmite.yaml accurately omits mechanisms (0 mechanisms) because
+    Škácha et al. (2021) reports a natural hydrothermal carbonate-vein mineral description
+    without any microbial extraction, bioleaching, biomineralization, or synthetic
+    recovery experiment, and explicitly discloses that no criticality designation,
+    microbial mechanism, or industrial recovery yield is asserted. Append-only CREATE
+    history sidecar passes validation with 0 errors.
   target_ids:
   - cmmmech:grimmite
   evidence_ids:
   - owner
-  - sejkora_2021_primary
+  - skacha_2021_primary
   - create_history
   - validation
 findings: []
 actions: []
 summary: 'Grimmite (IMA:2020-060, status A, NiCo2S4) passes primary-source scientific
   review (scientific_review: true) at SHA-256 d4fe726dedc99105182e1d2d95e0a98e387cee8abb7b0bdeb6f5aee162c2cadf
-  against all 35 bounded passages of Sejkora et al. (2021, Eur. J. Mineral. 33:175-187).'
+  against all 39 bounded passages (13 pages) of Škácha et al. (2021, Eur. J. Mineral.
+  33:175-187).'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
-  working-tree bytes; an independent subagent PR review will be executed prior to
-  merge.'
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
 notes:
-- Executed under the Round 123 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
-  max 1,800 bytes per passage).
+- 'Executed under the Round 123 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage) and synchronized in response to PR #868 review issue
+  #869.'
 related_reviews: []
 ```

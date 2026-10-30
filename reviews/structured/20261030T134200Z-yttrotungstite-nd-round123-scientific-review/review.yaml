@@ -2,7 +2,8 @@ schema_version: 1.0.0
 review_id: 20261030T134200Z-yttrotungstite-nd-round123-scientific-review
 kind: record
 repository: CultureBotAI/CMMMech
-title: Primary-source scientific review of yttrotungstite-(Nd) (IMA:2025-003, status A, NdW2O6(OH)3)
+title: Primary-source scientific review of yttrotungstite-(Nd) (IMA:2023-064, status
+  A, NdW2O7(OH)(H2O))
 started_at: '2026-10-30T13:40:00Z'
 finished_at: '2026-10-30T13:42:00Z'
 reviewer:
@@ -11,11 +12,11 @@ reviewer:
   model: antigravity
   independence: self_review
   independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
-    verifying all scientific claims in data/records/yttrotungstite-nd.yaml
-    (SHA-256 6c7e4579bf2bae64f7d38fc87dd0a28e29984fd3f78fcfc840200cce8edeac89) against
-    all 33 bounded passages of Meisser et al. (2026, Eur. J. Mineral. 38:373-385,
-    ejm-38-373-2026.p001-p013) and the September 2026 IMA-CNMNC Master List (PDF p.
-    238, ima-round118.p238.yttrotungstite-nd.w01.part01.txt).
+    verifying all scientific claims in data/records/yttrotungstite-nd.yaml (SHA-256
+    6c7e4579bf2bae64f7d38fc87dd0a28e29984fd3f78fcfc840200cce8edeac89) against all
+    24 bounded passages (10 pages) of Hatert F, Philippo S, Vignola P, and Guennou
+    M (2026, Eur. J. Mineral. 38:373-382, passages/ejm-38-373-2026.p1..p10.all-pages.w1.part*.txt)
+    and the September 2026 IMA-CNMNC Master List (PDF p. 238).
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
@@ -31,10 +32,10 @@ source:
     sha256: c59d8198e4fda6d990228c95c73281f34b722e5a160bb79a9b6badf4023f1285
     role: context
   - path: research/sources/round123-minerals/20261030T133900Z-source-investigation.json
-    sha256: 7f74c6d14d19c18e9ea76b4fc45d1acc6d9903db72aad62912ec87d0c98890f3
+    sha256: e2c2ef23db32c9385e91e0ba41d24e59f465362d9499231aa45d94f996e8edb2
     role: context
   - path: research/sources/round123-minerals/20261030T133900Z-source-investigation.md
-    sha256: 0913a3e1dc7e5eac00893aba72cf85b3e436dabc0496a6bcfc24d558d1ae43d6
+    sha256: b96dfb26e15f741ddbadafcb31065511c28085b9c4fcaf159baa881ce43f365a
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
@@ -54,9 +55,9 @@ targets:
 scope:
   description: Primary-source scientific review of data/records/yttrotungstite-nd.yaml
     (SHA-256 6c7e4579bf2bae64f7d38fc87dd0a28e29984fd3f78fcfc840200cce8edeac89) and
-    its canonical CREATE history sidecar against all 33 bounded primary-source passages
-    from Meisser et al. (2026, Eur. J. Mineral. 38:373-385) and the September 2026
-    IMA-CNMNC Master List (PDF p. 238).
+    its canonical CREATE history sidecar against all 24 bounded primary-source passages
+    (10 pages) from Hatert et al. (2026, Eur. J. Mineral. 38:373-382) and the September
+    2026 IMA-CNMNC Master List (PDF p. 238).
   selection: Round 123 newly admitted mineral record yttrotungstite-nd
   coverage: full
   population_size: 1
@@ -70,39 +71,46 @@ evidence:
   accessed_at: '2026-10-30T13:41:00Z'
   support: supports
   summary: Working-tree record data/records/yttrotungstite-nd.yaml (SHA-256 6c7e4579bf2bae64f7d38fc87dd0a28e29984fd3f78fcfc840200cce8edeac89)
-    captures the IMA:2025-003 identity, Nyakabingo Mine holotype chemistry (Table
-    1, n = 13), monoclinic P21/m edge-sharing W6+O6 octahedral ribbon and NdO8 antiprismatic
-    layer structure (refined on Nyakabingo holotype and Kirwa Mine cotype), powder
-    XRD, optical/reflectance properties, and abiotic tropical supergene weathering
-    and M-type lanthanide tetrad fractionation mechanism.
+    captures the IMA:2023-064 identity (ima_symbol Ytgs-Nd, formula NdW2O7(OH)(H2O)),
+    Nyakabingo tungsten mine (10 km NNW of Kigali, Rwanda) holotypes WPA504 and ULG
+    21981, Table 1 (p. 376) WDS chemistry (n = 17), monoclinic P21/m single-crystal
+    XRD structure refinement (Tables 3–7), powder XRD (Table 2), Raman and optical
+    properties, IMA-CNMNC Newsletter 91 formula uniformization across the yttrotungstite
+    group, and 0 mechanisms (no microbial mechanism or industrial recovery yield asserted).
   snapshot_sha256: 6c7e4579bf2bae64f7d38fc87dd0a28e29984fd3f78fcfc840200cce8edeac89
 - evidence_id: ima_authority
   kind: authority
   reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
-  locator: IMA-CNMNC September 2026 Master List, PDF p. 238 (ima-round118.p238.yttrotungstite-nd.w01.part01.txt)
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 238
   accessed_at: '2026-10-30T13:41:00Z'
   support: supports
-  summary: Confirms Yttrotungstite-(Nd), formula NdW2O6(OH)3, status A, IMA No. 2025-003,
-    country Rwanda, and sole reference European Journal of Mineralogy 38 (2026), 373.
+  summary: Confirms Yttrotungstite-(Nd), symbol Ytgs-Nd, formula NdW2O7(OH)(H2O),
+    status A, IMA No. 2023-064, country Rwanda, and sole reference European Journal
+    of Mineralogy 38 (2026), 373.
   snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
-- evidence_id: meisser_2026_primary
+- evidence_id: hatert_2026_primary
   kind: primary_source
   reference: https://doi.org/10.5194/ejm-38-373-2026
-  locator: Meisser et al. (2026) Eur. J. Mineral. 38:373-385, pp. 373-385, Tables
-    1-7, Figures 1-9 (ejm-38-373-2026.p001-p013)
+  locator: Hatert F, Philippo S, Vignola P, and Guennou M (2026) Eur. J. Mineral.
+    38:373-382, pp. 373-382, Tables 1-7, Figures 1-6 (passages/ejm-38-373-2026.p1..p10.all-pages.w1.part*.txt;
+    24 passages)
   accessed_at: '2026-10-30T13:41:00Z'
   support: supports
-  summary: 'All 13 pages (33 bounded passages <= 1,800 B) inspected: confirms Nyakabingo
-    Mine holotype (MGL 080379, Musée cantonal de géologie de Lausanne; cotype RGM.1332735,
-    Naturalis, Leiden, from Kirwa Mine, Uganda), Table 1 WDS chemistry (n = 13: WO3
-    71.82, SiO2 0.13, Al2O3 0.08, Y2O3 1.72, La2O3 1.54, Ce2O3 5.26, Pr2O3 1.62,
-    Nd2O3 7.77, Sm2O3 1.88, Eu2O3 0.44, Gd2O3 1.45, Tb2O3 0.20, Dy2O3 0.90, Ho2O3
-    0.04, Er2O3 0.25, Yb2O3 0.11, CaO 0.09, H2Ocalc 4.19, Total 99.49 wt%), empirical
-    formula (Nd0.30Ce0.21Y0.10Sm0.07Pr0.06La0.06Gd0.05Dy0.03Eu0.02Ca0.01Er0.01Tb0.01Yb0.004Ho0.001Al0.01)Sigma0.95(W2.00Si0.01)Sigma2.01O5.90(OH)3.00,
-    monoclinic P21/m unit cell (holotype a = 5.8141(15), b = 8.636(2), c = 6.9939(14)
-    Å, β = 105.05(2)°, V = 339.12(14) Å3, Z = 2, Dcalc = 6.238 g/cm3; Kirwa cotype
-    R1 = 0.0398), powder XRD (Table 2; 9 strongest lines 6.72, 5.63, 4.91, 4.65,
-    3.36, 3.24, 2.811, 2.615, 2.011 Å), and tropical weathering origin.'
+  summary: 'All 10 pages (24 bounded passages <= 1,800 B in summary.json) inspected:
+    confirms Nyakabingo tungsten mine (10 km NNW of Kigali, Rwanda; Mesoproterozoic
+    Karagwe–Ankole belt), holotype specimens WPA504 (Natural History Museum of Luxembourg)
+    and ULG 21981 (Laboratory of Mineralogy, University of Liège, Belgium), associated
+    ferberite, anthoinite, raspite, quartz, and muscovite, Table 1 (p. 376) WDS chemistry
+    (n = 17: WO3 73.40, Nd2O3 9.37, Sm2O3 3.56, Ce2O3 3.17, Pr2O3 2.10, Gd2O3 1.74,
+    La2O3 1.44, Y2O3 0.91, Dy2O3 0.81, Yb2O3 0.71, P2O5 0.18, CaO 0.09, Er2O3 0.09,
+    MoO3 0.07, Eu2O3 0.07, Tb2O3 0.07, As2O5 0.04, TiO2 0.03, SiO2 0.02, Al2O3 0.01,
+    K2O 0.01, H2Ocalc 4.24, total 102.13 wt%), empirical formula (Nd0.35Sm0.13Ce0.12Pr0.08Gd0.06La0.06Y0.05Dy0.03Yb0.02Ca0.01)Sigma0.91(W2.01P0.02)Sigma2.03O7(OH)(H2O),
+    monoclinic P21/m SCXRD unit cell (a = 5.8534(3) Å, b = 8.6881(3) Å in abstract/text
+    vs 8.6681(3) Å in Table 3, c = 7.0488(4) Å, beta = 105.336(5)°, V = 345.70(3)
+    Å3, Z = 2, Dcalc = 6.279 g/cm3, R1 = 0.0362, R1(all) = 0.0398; Tables 3–7), PXRD
+    cell (a = 5.856(3) Å, b = 8.698(4) Å, c = 7.054(3) Å, beta = 105.30(4)°, V = 346.6(2)
+    Å3; Table 2), and biaxial negative optics (alpha = 1.90(2), beta = 1.99(2), gamma
+    = 2.02(2), 2Vmeas = 65(5)°).'
   snapshot_sha256: d808836aadb6c476d90fd624e23cd145f7fb7933236cbb1f4bdbe523f66e5c53
 - evidence_id: create_history
   kind: record_content
@@ -111,7 +119,9 @@ evidence:
   accessed_at: '2026-10-30T13:41:00Z'
   support: supports
   summary: Canonical CREATE history sidecar (SHA-256 c59d8198e4fda6d990228c95c73281f34b722e5a160bb79a9b6badf4023f1285)
-    preserved untouched.
+    preserved untouched as immutable per AGENTS.md; note that its details string cited
+    a preliminary estimate of 21 passages whereas summary.json indexes 24 bounded
+    passages across the 10 pages of ejm-38-373-2026.pdf.
   snapshot_sha256: c59d8198e4fda6d990228c95c73281f34b722e5a160bb79a9b6badf4023f1285
 - evidence_id: validation
   kind: validation
@@ -150,47 +160,48 @@ checks:
 assessments:
 - assessment_id: identity_and_primary_source_verification
   area: evidence
-  topic: Verification of IMA:2025-003 identity, Nyakabingo Mine holotype chemistry,
-    and monoclinic P21/m structure for yttrotungstite-(Nd)
+  topic: Verification of IMA:2023-064 identity, Nyakabingo tungsten mine holotypes
+    WPA504 and ULG 21981 chemistry, and monoclinic P21/m structure for yttrotungstite-(Nd)
   outcome: supported
-  summary: 'All numeric, crystallographic, Raman, optical, reflectance, and chemical
-    claims in data/records/yttrotungstite-nd.yaml (SHA-256 6c7e4579bf2bae64f7d38fc87dd0a28e29984fd3f78fcfc840200cce8edeac89)
-    match the bounded primary-source passages of Meisser et al. (2026, Eur. J. Mineral.
-    38:373-385) and the September 2026 IMA Master List (p. 238).'
+  summary: All numeric, crystallographic, Raman, optical, and chemical claims in data/records/yttrotungstite-nd.yaml
+    (SHA-256 6c7e4579bf2bae64f7d38fc87dd0a28e29984fd3f78fcfc840200cce8edeac89) match
+    the bounded primary-source passages of Hatert et al. (2026, Eur. J. Mineral. 38:373-382,
+    10 pages, 24 bounded passages) and the September 2026 IMA Master List (p. 238).
   target_ids:
   - cmmmech:yttrotungstite-nd
   evidence_ids:
   - owner
   - ima_authority
-  - meisser_2026_primary
-- assessment_id: mechanism_and_provenance_verification
+  - hatert_2026_primary
+- assessment_id: mechanism_absence_and_provenance_verification
   area: provenance
-  topic: Verification of abiotic tropical supergene weathering and M-type lanthanide
-    tetrad fractionation mechanism and append-only CREATE provenance
+  topic: Verification of 0 mechanisms (abiotic secondary occurrence only) and append-only
+    CREATE provenance
   outcome: supported
-  summary: The abiotic mechanism abiotic_supergene_ferberite_weathering_and_lanthanide_tetrad_fractionation
-    accurately represents the tropical oxidation of Re-rich ferberite and pyrite,
-    Ce4+ immobilization in cerianite-(Ce), and M-type tetrad REE-complexing solution
-    precipitation of yttrotungstite-(Nd), with explicit disclosure that no microbial
-    extraction, bioleaching, or biotransformation study is reported. Append-only CREATE
-    history sidecar passes validation with 0 errors.
+  summary: data/records/yttrotungstite-nd.yaml accurately omits mechanisms (0 mechanisms)
+    because Hatert et al. (2026) reports a natural secondary mineral description without
+    any microbial extraction, bioleaching, biomineralization, or synthetic recovery
+    experiment, and explicitly discloses that no criticality designation, microbial
+    mechanism, or industrial recovery yield is asserted. Append-only CREATE history
+    sidecar passes validation with 0 errors.
   target_ids:
   - cmmmech:yttrotungstite-nd
   evidence_ids:
   - owner
-  - meisser_2026_primary
+  - hatert_2026_primary
   - create_history
   - validation
 findings: []
 actions: []
-summary: 'Yttrotungstite-(Nd) (IMA:2025-003, status A, NdW2O6(OH)3) passes primary-source
+summary: 'Yttrotungstite-(Nd) (IMA:2023-064, status A, NdW2O7(OH)(H2O)) passes primary-source
   scientific review (scientific_review: true) at SHA-256 6c7e4579bf2bae64f7d38fc87dd0a28e29984fd3f78fcfc840200cce8edeac89
-  against all 33 bounded passages of Meisser et al. (2026, Eur. J. Mineral. 38:373-385).'
+  against all 24 bounded passages (10 pages) of Hatert et al. (2026, Eur. J. Mineral.
+  38:373-382).'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
-  working-tree bytes; an independent subagent PR review will be executed prior to
-  merge.'
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
 notes:
-- Executed under the Round 123 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
-  max 1,800 bytes per passage).
+- 'Executed under the Round 123 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage) and synchronized in response to PR #868 review issue
+  #869.'
 related_reviews: []
