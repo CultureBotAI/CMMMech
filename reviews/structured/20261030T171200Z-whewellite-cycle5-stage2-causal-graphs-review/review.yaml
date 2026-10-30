@@ -11,14 +11,15 @@ reviewer:
   model: antigravity
   independence: self_review
   independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md verifying
-    the Cycle 5 Stage 2 causal_graphs[0] update in data/records/whewellite.yaml (SHA-256 11d4a2a0f35c27b763ba6128e40aad957410648673afe3af244a786f2b368ace)
-    against mechanisms[0] and its cited primary source (DOI:10.3390/min9040256).
+    the Cycle 5 Stage 2 causal_graphs[0] (aspergillus_cexa_whewellite_formation_graph) update in data/records/whewellite.yaml
+    (SHA-256 11d4a2a0f35c27b763ba6128e40aad957410648673afe3af244a786f2b368ace) against mechanisms[0] (ch407_culture_associated_whewellite)
+    and its cited primary source frank_kamenetskaya_2019 (DOI:10.3390/min9110656).
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 source:
-  git_revision: 9e3221733b5efe6fb1be27fcc03692abc3a0de44
+  git_revision: 2f2de84859ee4156bb09f2a0110d35edc48b8020
   state: working_tree
   inputs:
   - path: data/records/whewellite.yaml
@@ -44,8 +45,9 @@ targets:
     role: canonical_history
 scope:
   description: Cycle 5 Stage 2 causal-graph review of data/records/whewellite.yaml (SHA-256 11d4a2a0f35c27b763ba6128e40aad957410648673afe3af244a786f2b368ace)
-    and its canonical EDIT history sidecar (history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml)
-    verifying full synchronization between causal_graphs[0] and mechanisms[0].
+    and its canonical EDIT history sidecar(s) (history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml)
+    verifying full synchronization between causal_graphs[0] (aspergillus_cexa_whewellite_formation_graph)
+    and mechanisms[0] (ch407_culture_associated_whewellite).
   selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:whewellite
   coverage: full
   population_size: 1
@@ -55,36 +57,51 @@ evidence:
 - evidence_id: owner
   kind: record_content
   reference: data/records/whewellite.yaml
-  locator: Working-tree record data/records/whewellite.yaml
+  locator: 'Working-tree record data/records/whewellite.yaml (causal_graphs[0]: aspergillus_cexa_whewellite_formation_graph)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: 'Synchronized causal_graphs[0] (aspergillus_whewellite_biomineralization_graph) in data/records/whewellite.yaml
-    with mechanisms[0]: replaced generic organic-acid bioleaching prose with the actual dissolution of
-    apatite-nepheline rock and crystallization of whewellite (CaC2O4·H2O), refined the substrate edge
-    predicate from acts_on to precipitates, and aligned supports: partial to reflect the missing uninoculated
-    control and quantitative organic-acid assay.'
+  summary: 'Synchronized causal_graphs[0] (aspergillus_cexa_whewellite_formation_graph, mechanism_ref:
+    ch407_culture_associated_whewellite) in data/records/whewellite.yaml with mechanisms[0] (Culture-associated
+    whewellite on fluorapatite-rich rock) and primary source frank_kamenetskaya_2019 (DOI:10.3390/min9110656):
+    edge secreted_organic_acids -> starting_substrate uses predicate ''dissolves'' (supports: partial)
+    and edge starting_substrate -> transformed_product uses predicate ''transforms_into'' (supports: support).
+    Replaced generic starting_substrate description and template edge text (''or supernatant treatment'')
+    with exact frank_kamenetskaya_2019 live A. niger Ch4/07 apatite-nepheline rock culture parameters
+    (pH 5.5 to 4.0-4.5, day-5/day-12 whewellite identification) and set secreted_organic_acids -> starting_substrate
+    to supports: partial to match mechanisms[0].evidence[1].'
   snapshot_sha256: 11d4a2a0f35c27b763ba6128e40aad957410648673afe3af244a786f2b368ace
 - evidence_id: primary_source
   kind: primary_source
-  reference: DOI:10.3390/min9040256
-  locator: Frank-Kamenetskaya OV et al. (2019) Minerals 9(4):256, pp. 1-15, Sections 2-3, Tables 1-3,
-    Figures 1-8
+  reference: DOI:10.3390/min9110656
+  locator: 'frank_kamenetskaya_2019: Frank-Kamenetskaya, Olga V.; Ivanyuk, Gregory Yu.; Zelenskaya, Marina
+    S.; Izatulina, Alina R.; Kalashnikov, Andrey O.; Vlasov, Dmitry Yu.; Polyanskaya, Evgeniya I. (2019).
+    Calcium Oxalates in Lichens on Surface of Apatite-Nepheline Ore (Kola Peninsula, Russia). Minerals
+    9(11):656. DOI 10.3390/min9110656. Complete 13-page original inspected, including Figures 1-7 and
+    Tables 1-2; PDF metadata dated 20 November 2019 agrees with the publisher updated-version entry. (https://doi.org/10.3390/min9110656)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Frank-Kamenetskaya et al. (2019) demonstrated that Aspergillus niger Strain Ch4/07 (GenBank
-    KF768341) dissolves calcium-bearing apatite-nepheline rock in liquid Czapek-Dox medium (30 g/L glucose,
-    initial pH 5.5 dropping to 4.0 at day 5 and rising to 4.5 at endpoint) at 25 degrees C over 19-21
-    days and precipitates calcium oxalate monohydrate (whewellite, CaC2O4·H2O) as the sole experimental
-    oxalate phase, without a matched uninoculated control or quantitative organic-acid time series.
+  summary: 'Growing A. niger cultures were associated with whewellite crystallization on mixed apatite-nepheline
+    rock. Diffraction and microscopy support a calcium-oxalate product; fungal acid secretion and host
+    dissolution are proposed explanations rather than independently isolated causal steps. Substrate-edge
+    evidence (frank_kamenetskaya_2019, supports: partial): Frank-Kamenetskaya et al. (2019) document culture
+    pH reduction from 5.5 to 4.0–4.5 and dissolution textures on apatite-nepheline rock, though no matched
+    uninoculated control, killed-biomass arm, or organic-acid concentration series was reported for this
+    rock experiment. Product-edge evidence (frank_kamenetskaya_2019, supports: support): Sections 2.2
+    and 3.4, powder XRD at day 5 (Figure 3 trace 3), and SEM at days 5 and 12 (Figure 7) identify whewellite
+    (CaC2O4·H2O) in all three experimental culture replicates.'
 - evidence_id: edit_history
   kind: record_content
   reference: history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml
   locator: Canonical EDIT history sidecar history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Canonical EDIT history sidecar history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml
-    (SHA-256 4efc29a296186ef60e7dbdaba11bd97052bb0f675306219b8a41f54e518cdb08) records the Cycle 5 Stage
-    2 causal_graphs[0] update via scripts/curate_causal_graphs.py.
+  summary: 'Canonical EDIT history sidecar history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml
+    (SHA-256 4efc29a296186ef60e7dbdaba11bd97052bb0f675306219b8a41f54e518cdb08): Align whewellite causal_graphs[0]
+    with frank_kamenetskaya_2019 apatite-nepheline rock culture evidence and partial acid-step support
+    — Replaced generic starting_substrate description and template edge text (''or supernatant treatment'')
+    with exact frank_kamenetskaya_2019 live A. niger Ch4/07 apatite-nepheline rock culture parameters
+    (pH 5.5 to 4.0-4.5, day-5/day-12 whewellite identification) and set secreted_organic_acids -> starting_substrate
+    to supports: partial to match mechanisms[0].evidence[1].'
   snapshot_sha256: 4efc29a296186ef60e7dbdaba11bd97052bb0f675306219b8a41f54e518cdb08
 - evidence_id: validation
   kind: validation
@@ -124,13 +141,18 @@ checks:
 assessments:
 - assessment_id: causal_graph_and_mechanism_synchronization
   area: graph
-  topic: Synchronization of causal_graphs[0] with mechanisms[0] and primary source (DOI:10.3390/min9040256)
+  topic: Synchronization of causal_graphs[0] (aspergillus_cexa_whewellite_formation_graph) with mechanisms[0]
+    (ch407_culture_associated_whewellite) and primary source frank_kamenetskaya_2019 (DOI:10.3390/min9110656)
   outcome: supported
-  summary: 'Synchronized causal_graphs[0] (aspergillus_whewellite_biomineralization_graph) in data/records/whewellite.yaml
-    with mechanisms[0]: replaced generic organic-acid bioleaching prose with the actual dissolution of
-    apatite-nepheline rock and crystallization of whewellite (CaC2O4·H2O), refined the substrate edge
-    predicate from acts_on to precipitates, and aligned supports: partial to reflect the missing uninoculated
-    control and quantitative organic-acid assay.'
+  summary: 'Synchronized causal_graphs[0] (aspergillus_cexa_whewellite_formation_graph, mechanism_ref:
+    ch407_culture_associated_whewellite) in data/records/whewellite.yaml with mechanisms[0] (Culture-associated
+    whewellite on fluorapatite-rich rock) and primary source frank_kamenetskaya_2019 (DOI:10.3390/min9110656):
+    edge secreted_organic_acids -> starting_substrate uses predicate ''dissolves'' (supports: partial)
+    and edge starting_substrate -> transformed_product uses predicate ''transforms_into'' (supports: support).
+    Replaced generic starting_substrate description and template edge text (''or supernatant treatment'')
+    with exact frank_kamenetskaya_2019 live A. niger Ch4/07 apatite-nepheline rock culture parameters
+    (pH 5.5 to 4.0-4.5, day-5/day-12 whewellite identification) and set secreted_organic_acids -> starting_substrate
+    to supports: partial to match mechanisms[0].evidence[1].'
   target_ids:
   - cmmmech:whewellite
   evidence_ids:
@@ -138,11 +160,12 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
   summary: data/records/whewellite.yaml was updated exclusively through scripts/curate_causal_graphs.py
-    (curate_record_file), producing append-only history sidecar history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml
-    and passing all LinkML and history validation gates.
+    (curate_record_file), producing append-only history sidecar(s) (history/records/whewellite/2026-10-30T171003Z-marcin-2fa500.yaml,
+    latest SHA-256 4efc29a296186ef60e7dbdaba11bd97052bb0f675306219b8a41f54e518cdb08) and passing all LinkML
+    and history validation gates.
   target_ids:
   - cmmmech:whewellite
   evidence_ids:
@@ -153,11 +176,14 @@ findings: []
 actions: []
 summary: 'Whewellite (cmmmech:whewellite) passes Cycle 5 Stage 2 causal-graph review (scientific_review:
   true) at SHA-256 11d4a2a0f35c27b763ba6128e40aad957410648673afe3af244a786f2b368ace: Synchronized causal_graphs[0]
-  (aspergillus_whewellite_biomineralization_graph) in data/records/whewellite.yaml with mechanisms[0]:
-  replaced generic organic-acid bioleaching prose with the actual dissolution of apatite-nepheline rock
-  and crystallization of whewellite (CaC2O4·H2O), refined the substrate edge predicate from acts_on to
-  precipitates, and aligned supports: partial to reflect the missing uninoculated control and quantitative
-  organic-acid assay.'
+  (aspergillus_cexa_whewellite_formation_graph, mechanism_ref: ch407_culture_associated_whewellite) in
+  data/records/whewellite.yaml with mechanisms[0] (Culture-associated whewellite on fluorapatite-rich
+  rock) and primary source frank_kamenetskaya_2019 (DOI:10.3390/min9110656): edge secreted_organic_acids
+  -> starting_substrate uses predicate ''dissolves'' (supports: partial) and edge starting_substrate ->
+  transformed_product uses predicate ''transforms_into'' (supports: support). Replaced generic starting_substrate
+  description and template edge text (''or supernatant treatment'') with exact frank_kamenetskaya_2019
+  live A. niger Ch4/07 apatite-nepheline rock culture parameters (pH 5.5 to 4.0-4.5, day-5/day-12 whewellite
+  identification) and set secreted_organic_acids -> starting_substrate to supports: partial to match mechanisms[0].evidence[1].'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes;
   an independent subagent PR review is executed prior to merge.'

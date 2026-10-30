@@ -11,15 +11,15 @@
 
 ## Summary
 
-Zincite (cmmmech:zincite) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256 f85c711be3858731e2f25b4b6fab45299dfc958f78c1baa7b76737e3e6c7713a: Synchronized causal_graphs[0] (aspergillus_zincite_biomineralization_graph) in data/records/zincite.yaml with mechanisms[0]: replaced generic organic-acid bioleaching prose with the actual solubilization of insoluble ZnO (zincite), Zn3(PO4)2, and Co3(PO4)2 on solid agar and transformation into crystalline zinc oxalate dihydrate (ZnC2O4·2H2O) and cobalt oxalates, and refined the substrate edge predicate from acts_on to solubilizes.
+Zincite (cmmmech:zincite) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256 f85c711be3858731e2f25b4b6fab45299dfc958f78c1baa7b76737e3e6c7713a: Synchronized causal_graphs[0] (aspergillus_cexa_zincite_transformation_graph, mechanism_ref: fungal_metabolite_associated_partial_transformation) in data/records/zincite.yaml with mechanisms[0] (Partial transformation of zincite-structured nanoparticles by fungal-conditioned liquid) and primary source sebesta2020 (DOI:10.3390/jof6040210): edge secreted_organic_acids -&gt; starting_substrate uses predicate 'dissolves' (supports: partial) and edge starting_substrate -&gt; transformed_product uses predicate 'transforms_into' (supports: support). Upgraded secreted_organic_acids -&gt; starting_substrate from acts_on (support) to dissolves (partial) to match mechanisms[0].evidence[1], removed 'Fungal culture or supernatant treatment' boilerplate, and replaced template node/edge descriptions with exact sebesta2020 5-day 0.45-um-filtered A. niger CBS 140837 conditioned-water ZnO nanoparticle partial transformation details.
 
 ## Scope And Provenance
 
-Cycle 5 Stage 2 causal-graph review of data/records/zincite.yaml (SHA-256 f85c711be3858731e2f25b4b6fab45299dfc958f78c1baa7b76737e3e6c7713a) and its canonical EDIT history sidecar (history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml) verifying full synchronization between causal_graphs[0] and mechanisms[0].
+Cycle 5 Stage 2 causal-graph review of data/records/zincite.yaml (SHA-256 f85c711be3858731e2f25b4b6fab45299dfc958f78c1baa7b76737e3e6c7713a) and its canonical EDIT history sidecar(s) (history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml) verifying full synchronization between causal_graphs[0] (aspergillus_cexa_zincite_transformation_graph) and mechanisms[0] (fungal_metabolite_associated_partial_transformation).
 
 Selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:zincite
 Coverage: full; 1 reviewed / 1 in the declared population.
-Source: working_tree at Git base 9e3221733b5efe6fb1be27fcc03692abc3a0de44.
+Source: working_tree at Git base 2f2de84859ee4156bb09f2a0110d35edc48b8020.
 Working-tree hashes do not imply those bytes were committed.
 
 | Target | Path / selector | Kind | Label |
@@ -35,17 +35,17 @@ Working-tree hashes do not imply those bytes were committed.
 
 ## Scientific And Domain Assessments
 
-### Synchronization of causal_graphs[0] with mechanisms[0] and primary source (DOI:10.1016/S0953-7562(96)80028-1)
+### Synchronization of causal_graphs[0] (aspergillus_cexa_zincite_transformation_graph) with mechanisms[0] (fungal_metabolite_associated_partial_transformation) and primary source sebesta2020 (DOI:10.3390/jof6040210)
 
 graph: supported. Targets: cmmmech:zincite.
 
-Synchronized causal_graphs[0] (aspergillus_zincite_biomineralization_graph) in data/records/zincite.yaml with mechanisms[0]: replaced generic organic-acid bioleaching prose with the actual solubilization of insoluble ZnO (zincite), Zn3(PO4)2, and Co3(PO4)2 on solid agar and transformation into crystalline zinc oxalate dihydrate (ZnC2O4·2H2O) and cobalt oxalates, and refined the substrate edge predicate from acts_on to solubilizes.
+Synchronized causal_graphs[0] (aspergillus_cexa_zincite_transformation_graph, mechanism_ref: fungal_metabolite_associated_partial_transformation) in data/records/zincite.yaml with mechanisms[0] (Partial transformation of zincite-structured nanoparticles by fungal-conditioned liquid) and primary source sebesta2020 (DOI:10.3390/jof6040210): edge secreted_organic_acids -&gt; starting_substrate uses predicate 'dissolves' (supports: partial) and edge starting_substrate -&gt; transformed_product uses predicate 'transforms_into' (supports: support). Upgraded secreted_organic_acids -&gt; starting_substrate from acts_on (support) to dissolves (partial) to match mechanisms[0].evidence[1], removed 'Fungal culture or supernatant treatment' boilerplate, and replaced template node/edge descriptions with exact sebesta2020 5-day 0.45-um-filtered A. niger CBS 140837 conditioned-water ZnO nanoparticle partial transformation details.
 
-### Verification of canonical EDIT history sidecar and strict schema validation
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
 
 provenance: supported. Targets: cmmmech:zincite.
 
-data/records/zincite.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml and passing all LinkML and history validation gates.
+data/records/zincite.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml, latest SHA-256 084ef1626bce886f07a7556200bd470b7d348df0b6d27b267798701d03b9ed68) and passing all LinkML and history validation gates.
 
 ## Findings
 
@@ -60,9 +60,9 @@ No findings recorded within this review's declared scope.
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| owner | data/records/zincite.yaml; Working-tree record data/records/zincite.yaml | supports | Synchronized causal_graphs[0] (aspergillus_zincite_biomineralization_graph) in data/records/zincite.yaml with mechanisms[0]: replaced generic organic-acid bioleaching prose with the actual solubilization of insoluble ZnO (zincite), Zn3(PO4)2, and Co3(PO4)2 on solid agar and transformation into crystalline zinc oxalate dihydrate (ZnC2O4·2H2O) and cobalt oxalates, and refined the substrate edge predicate from acts_on to solubilizes. |
-| primary_source | DOI:10.1016/S0953-7562(96)80028-1; Sayer JA and Gadd GM (1997) Mycol. Res. 101(6):653-661, Materials and Methods &amp; Results, Figures 1-6, Tables 1-2 | supports | Sayer and Gadd (1997) demonstrated that Aspergillus niger CBS 113.50 grown on solid Malt Extract Agar amended with 0.2-1.0% (w/v) insoluble ZnO (zincite), Zn3(PO4)2, or Co3(PO4)2 at 25 degrees C in the dark dissolves the insoluble metal compounds (producing clear halos via H+ and organic acid excretion) and precipitates crystalline zinc oxalate dihydrate (ZnC2O4·2H2O) and cobalt oxalate dihydrate/tetrahydrate. |
-| edit_history | history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml; Canonical EDIT history sidecar history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml | supports | Canonical EDIT history sidecar history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml (SHA-256 084ef1626bce886f07a7556200bd470b7d348df0b6d27b267798701d03b9ed68) records the Cycle 5 Stage 2 causal_graphs[0] update via scripts/curate_causal_graphs.py. |
+| owner | data/records/zincite.yaml; Working-tree record data/records/zincite.yaml (causal_graphs[0]: aspergillus_cexa_zincite_transformation_graph) | supports | Synchronized causal_graphs[0] (aspergillus_cexa_zincite_transformation_graph, mechanism_ref: fungal_metabolite_associated_partial_transformation) in data/records/zincite.yaml with mechanisms[0] (Partial transformation of zincite-structured nanoparticles by fungal-conditioned liquid) and primary source sebesta2020 (DOI:10.3390/jof6040210): edge secreted_organic_acids -&gt; starting_substrate uses predicate 'dissolves' (supports: partial) and edge starting_substrate -&gt; transformed_product uses predicate 'transforms_into' (supports: support). Upgraded secreted_organic_acids -&gt; starting_substrate from acts_on (support) to dissolves (partial) to match mechanisms[0].evidence[1], removed 'Fungal culture or supernatant treatment' boilerplate, and replaced template node/edge descriptions with exact sebesta2020 5-day 0.45-um-filtered A. niger CBS 140837 conditioned-water ZnO nanoparticle partial transformation details. |
+| primary_source | DOI:10.3390/jof6040210; sebesta2020: Sebesta M et al. (2020). Fungus Aspergillus niger Processes Exogenous Zinc Nanoparticles into a Biogenic Oxalate Mineral. Journal of Fungi 6, 210. DOI 10.3390/jof6040210. Complete ten-page original, Figures 1-5 and official six-page supplement including Table S1/Figure S1. (https://doi.org/10.3390/jof6040210) | supports | Liquid conditioned by Aspergillus niger CBS 140837 transformed part of a commercial ZnO nanoparticle preparation into a zinc oxalate dihydrate-assigned phase while residual zincite remained. The fungus conditioned the liquid upstream; live-cell contact during the nanoparticle reaction was not demonstrated. Dissolution followed by oxalate precipitation is consistent with the observations, but the specific ligand requirement and proposed core-shell architecture were not established by matched controls or spatial phase mapping. Substrate-edge evidence (sebesta2020, supports: partial): Sebesta et al. (2020) Section 3.2 report oxalic acid decreasing from 11.6 to 1.2 mmol/L (estimating ~43 mg or 8.6% of the 500 mg ZnO transformed), though no time-matched unconditioned-water or pH-matched control was reported for this 5-day assay. Product-edge evidence (sebesta2020, supports: support): Powder XRD (Figure 4) and TEM (Figure 5) in Sebesta et al. (2020) confirm partial conversion of zincite nanoparticles into zinc oxalate dihydrate alongside retained zincite peaks. |
+| edit_history | history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml; Canonical EDIT history sidecar history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml | supports | Canonical EDIT history sidecar history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml (SHA-256 084ef1626bce886f07a7556200bd470b7d348df0b6d27b267798701d03b9ed68): Align zincite causal_graphs[0] node/edge descriptions, dissolves predicate, and partial support with sebesta2020 — Upgraded secreted_organic_acids -&gt; starting_substrate from acts_on (support) to dissolves (partial) to match mechanisms[0].evidence[1], removed 'Fungal culture or supernatant treatment' boilerplate, and replaced template node/edge descriptions with exact sebesta2020 5-day 0.45-um-filtered A. niger CBS 140837 conditioned-water ZnO nanoparticle partial transformation details. |
 | validation | data/records/zincite.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/zincite.yaml and history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml pass strict LinkML schema and history validation with 0 errors. |
 
 ## Limits And Additional Notes
@@ -88,15 +88,16 @@ reviewer:
   model: antigravity
   independence: self_review
   independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
-    verifying the Cycle 5 Stage 2 causal_graphs[0] update in data/records/zincite.yaml
-    (SHA-256 f85c711be3858731e2f25b4b6fab45299dfc958f78c1baa7b76737e3e6c7713a) against
-    mechanisms[0] and its cited primary source (DOI:10.1016/S0953-7562(96)80028-1).
+    verifying the Cycle 5 Stage 2 causal_graphs[0] (aspergillus_cexa_zincite_transformation_graph)
+    update in data/records/zincite.yaml (SHA-256 f85c711be3858731e2f25b4b6fab45299dfc958f78c1baa7b76737e3e6c7713a)
+    against mechanisms[0] (fungal_metabolite_associated_partial_transformation) and
+    its cited primary source sebesta2020 (DOI:10.3390/jof6040210).
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 source:
-  git_revision: 9e3221733b5efe6fb1be27fcc03692abc3a0de44
+  git_revision: 2f2de84859ee4156bb09f2a0110d35edc48b8020
   state: working_tree
   inputs:
   - path: data/records/zincite.yaml
@@ -123,8 +124,9 @@ targets:
 scope:
   description: Cycle 5 Stage 2 causal-graph review of data/records/zincite.yaml (SHA-256
     f85c711be3858731e2f25b4b6fab45299dfc958f78c1baa7b76737e3e6c7713a) and its canonical
-    EDIT history sidecar (history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml)
-    verifying full synchronization between causal_graphs[0] and mechanisms[0].
+    EDIT history sidecar(s) (history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml)
+    verifying full synchronization between causal_graphs[0] (aspergillus_cexa_zincite_transformation_graph)
+    and mechanisms[0] (fungal_metabolite_associated_partial_transformation).
   selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:zincite
   coverage: full
   population_size: 1
@@ -134,37 +136,60 @@ evidence:
 - evidence_id: owner
   kind: record_content
   reference: data/records/zincite.yaml
-  locator: Working-tree record data/records/zincite.yaml
+  locator: 'Working-tree record data/records/zincite.yaml (causal_graphs[0]: aspergillus_cexa_zincite_transformation_graph)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: 'Synchronized causal_graphs[0] (aspergillus_zincite_biomineralization_graph)
-    in data/records/zincite.yaml with mechanisms[0]: replaced generic organic-acid
-    bioleaching prose with the actual solubilization of insoluble ZnO (zincite), Zn3(PO4)2,
-    and Co3(PO4)2 on solid agar and transformation into crystalline zinc oxalate dihydrate
-    (ZnC2O4·2H2O) and cobalt oxalates, and refined the substrate edge predicate from
-    acts_on to solubilizes.'
+  summary: 'Synchronized causal_graphs[0] (aspergillus_cexa_zincite_transformation_graph,
+    mechanism_ref: fungal_metabolite_associated_partial_transformation) in data/records/zincite.yaml
+    with mechanisms[0] (Partial transformation of zincite-structured nanoparticles
+    by fungal-conditioned liquid) and primary source sebesta2020 (DOI:10.3390/jof6040210):
+    edge secreted_organic_acids -> starting_substrate uses predicate ''dissolves''
+    (supports: partial) and edge starting_substrate -> transformed_product uses predicate
+    ''transforms_into'' (supports: support). Upgraded secreted_organic_acids -> starting_substrate
+    from acts_on (support) to dissolves (partial) to match mechanisms[0].evidence[1],
+    removed ''Fungal culture or supernatant treatment'' boilerplate, and replaced
+    template node/edge descriptions with exact sebesta2020 5-day 0.45-um-filtered
+    A. niger CBS 140837 conditioned-water ZnO nanoparticle partial transformation
+    details.'
   snapshot_sha256: f85c711be3858731e2f25b4b6fab45299dfc958f78c1baa7b76737e3e6c7713a
 - evidence_id: primary_source
   kind: primary_source
-  reference: DOI:10.1016/S0953-7562(96)80028-1
-  locator: Sayer JA and Gadd GM (1997) Mycol. Res. 101(6):653-661, Materials and Methods
-    & Results, Figures 1-6, Tables 1-2
+  reference: DOI:10.3390/jof6040210
+  locator: 'sebesta2020: Sebesta M et al. (2020). Fungus Aspergillus niger Processes
+    Exogenous Zinc Nanoparticles into a Biogenic Oxalate Mineral. Journal of Fungi
+    6, 210. DOI 10.3390/jof6040210. Complete ten-page original, Figures 1-5 and official
+    six-page supplement including Table S1/Figure S1. (https://doi.org/10.3390/jof6040210)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Sayer and Gadd (1997) demonstrated that Aspergillus niger CBS 113.50 grown
-    on solid Malt Extract Agar amended with 0.2-1.0% (w/v) insoluble ZnO (zincite),
-    Zn3(PO4)2, or Co3(PO4)2 at 25 degrees C in the dark dissolves the insoluble metal
-    compounds (producing clear halos via H+ and organic acid excretion) and precipitates
-    crystalline zinc oxalate dihydrate (ZnC2O4·2H2O) and cobalt oxalate dihydrate/tetrahydrate.
+  summary: 'Liquid conditioned by Aspergillus niger CBS 140837 transformed part of
+    a commercial ZnO nanoparticle preparation into a zinc oxalate dihydrate-assigned
+    phase while residual zincite remained. The fungus conditioned the liquid upstream;
+    live-cell contact during the nanoparticle reaction was not demonstrated. Dissolution
+    followed by oxalate precipitation is consistent with the observations, but the
+    specific ligand requirement and proposed core-shell architecture were not established
+    by matched controls or spatial phase mapping. Substrate-edge evidence (sebesta2020,
+    supports: partial): Sebesta et al. (2020) Section 3.2 report oxalic acid decreasing
+    from 11.6 to 1.2 mmol/L (estimating ~43 mg or 8.6% of the 500 mg ZnO transformed),
+    though no time-matched unconditioned-water or pH-matched control was reported
+    for this 5-day assay. Product-edge evidence (sebesta2020, supports: support):
+    Powder XRD (Figure 4) and TEM (Figure 5) in Sebesta et al. (2020) confirm partial
+    conversion of zincite nanoparticles into zinc oxalate dihydrate alongside retained
+    zincite peaks.'
 - evidence_id: edit_history
   kind: record_content
   reference: history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml
   locator: Canonical EDIT history sidecar history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Canonical EDIT history sidecar history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml
-    (SHA-256 084ef1626bce886f07a7556200bd470b7d348df0b6d27b267798701d03b9ed68) records
-    the Cycle 5 Stage 2 causal_graphs[0] update via scripts/curate_causal_graphs.py.
+  summary: 'Canonical EDIT history sidecar history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml
+    (SHA-256 084ef1626bce886f07a7556200bd470b7d348df0b6d27b267798701d03b9ed68): Align
+    zincite causal_graphs[0] node/edge descriptions, dissolves predicate, and partial
+    support with sebesta2020 — Upgraded secreted_organic_acids -> starting_substrate
+    from acts_on (support) to dissolves (partial) to match mechanisms[0].evidence[1],
+    removed ''Fungal culture or supernatant treatment'' boilerplate, and replaced
+    template node/edge descriptions with exact sebesta2020 5-day 0.45-um-filtered
+    A. niger CBS 140837 conditioned-water ZnO nanoparticle partial transformation
+    details.'
   snapshot_sha256: 084ef1626bce886f07a7556200bd470b7d348df0b6d27b267798701d03b9ed68
 - evidence_id: validation
   kind: validation
@@ -204,15 +229,22 @@ checks:
 assessments:
 - assessment_id: causal_graph_and_mechanism_synchronization
   area: graph
-  topic: Synchronization of causal_graphs[0] with mechanisms[0] and primary source
-    (DOI:10.1016/S0953-7562(96)80028-1)
+  topic: Synchronization of causal_graphs[0] (aspergillus_cexa_zincite_transformation_graph)
+    with mechanisms[0] (fungal_metabolite_associated_partial_transformation) and primary
+    source sebesta2020 (DOI:10.3390/jof6040210)
   outcome: supported
-  summary: 'Synchronized causal_graphs[0] (aspergillus_zincite_biomineralization_graph)
-    in data/records/zincite.yaml with mechanisms[0]: replaced generic organic-acid
-    bioleaching prose with the actual solubilization of insoluble ZnO (zincite), Zn3(PO4)2,
-    and Co3(PO4)2 on solid agar and transformation into crystalline zinc oxalate dihydrate
-    (ZnC2O4·2H2O) and cobalt oxalates, and refined the substrate edge predicate from
-    acts_on to solubilizes.'
+  summary: 'Synchronized causal_graphs[0] (aspergillus_cexa_zincite_transformation_graph,
+    mechanism_ref: fungal_metabolite_associated_partial_transformation) in data/records/zincite.yaml
+    with mechanisms[0] (Partial transformation of zincite-structured nanoparticles
+    by fungal-conditioned liquid) and primary source sebesta2020 (DOI:10.3390/jof6040210):
+    edge secreted_organic_acids -> starting_substrate uses predicate ''dissolves''
+    (supports: partial) and edge starting_substrate -> transformed_product uses predicate
+    ''transforms_into'' (supports: support). Upgraded secreted_organic_acids -> starting_substrate
+    from acts_on (support) to dissolves (partial) to match mechanisms[0].evidence[1],
+    removed ''Fungal culture or supernatant treatment'' boilerplate, and replaced
+    template node/edge descriptions with exact sebesta2020 5-day 0.45-um-filtered
+    A. niger CBS 140837 conditioned-water ZnO nanoparticle partial transformation
+    details.'
   target_ids:
   - cmmmech:zincite
   evidence_ids:
@@ -220,10 +252,11 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
   summary: data/records/zincite.yaml was updated exclusively through scripts/curate_causal_graphs.py
-    (curate_record_file), producing append-only history sidecar history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml
+    (curate_record_file), producing append-only history sidecar(s) (history/records/zincite/2026-10-30T171003Z-marcin-c48b41.yaml,
+    latest SHA-256 084ef1626bce886f07a7556200bd470b7d348df0b6d27b267798701d03b9ed68)
     and passing all LinkML and history validation gates.
   target_ids:
   - cmmmech:zincite
@@ -235,11 +268,17 @@ findings: []
 actions: []
 summary: 'Zincite (cmmmech:zincite) passes Cycle 5 Stage 2 causal-graph review (scientific_review:
   true) at SHA-256 f85c711be3858731e2f25b4b6fab45299dfc958f78c1baa7b76737e3e6c7713a:
-  Synchronized causal_graphs[0] (aspergillus_zincite_biomineralization_graph) in data/records/zincite.yaml
-  with mechanisms[0]: replaced generic organic-acid bioleaching prose with the actual
-  solubilization of insoluble ZnO (zincite), Zn3(PO4)2, and Co3(PO4)2 on solid agar
-  and transformation into crystalline zinc oxalate dihydrate (ZnC2O4·2H2O) and cobalt
-  oxalates, and refined the substrate edge predicate from acts_on to solubilizes.'
+  Synchronized causal_graphs[0] (aspergillus_cexa_zincite_transformation_graph, mechanism_ref:
+  fungal_metabolite_associated_partial_transformation) in data/records/zincite.yaml
+  with mechanisms[0] (Partial transformation of zincite-structured nanoparticles by
+  fungal-conditioned liquid) and primary source sebesta2020 (DOI:10.3390/jof6040210):
+  edge secreted_organic_acids -> starting_substrate uses predicate ''dissolves'' (supports:
+  partial) and edge starting_substrate -> transformed_product uses predicate ''transforms_into''
+  (supports: support). Upgraded secreted_organic_acids -> starting_substrate from
+  acts_on (support) to dissolves (partial) to match mechanisms[0].evidence[1], removed
+  ''Fungal culture or supernatant treatment'' boilerplate, and replaced template node/edge
+  descriptions with exact sebesta2020 5-day 0.45-um-filtered A. niger CBS 140837 conditioned-water
+  ZnO nanoparticle partial transformation details.'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes; an independent subagent PR review is executed prior to merge.'

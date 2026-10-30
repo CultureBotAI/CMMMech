@@ -11,21 +11,25 @@ reviewer:
   model: antigravity
   independence: self_review
   independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md verifying
-    the Cycle 5 Stage 2 causal_graphs[0] update in data/records/dunite.yaml (SHA-256 d06791b168c51fe7a7dcfb05dfaffba9eb49ece56ed1c4535c3d50eb4255c4f0)
-    against mechanisms[0] and its cited primary source (DOI:10.1093/jambio/lxag045).
+    the Cycle 5 Stage 2 causal_graphs[0] (gluconobacter_dunite_bioleaching_graph) update in data/records/dunite.yaml
+    (SHA-256 47f4822e55b2d4df659f31fe5bfe9be50cec4c1e0b69ee734e50fec9d136c766) against mechanisms[0] (bacterial_biolixiviant_dunite_leaching)
+    and its cited primary source lee2025 (DOI:10.1038/s41598-025-99655-9).
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 source:
-  git_revision: 9e3221733b5efe6fb1be27fcc03692abc3a0de44
+  git_revision: 2f2de84859ee4156bb09f2a0110d35edc48b8020
   state: working_tree
   inputs:
   - path: data/records/dunite.yaml
-    sha256: d06791b168c51fe7a7dcfb05dfaffba9eb49ece56ed1c4535c3d50eb4255c4f0
+    sha256: 47f4822e55b2d4df659f31fe5bfe9be50cec4c1e0b69ee734e50fec9d136c766
     role: target
   - path: history/records/dunite/2026-10-30T171003Z-marcin-eefde3.yaml
     sha256: 68b504e28422d69eef879719e2b9375387e6b53c42c8383ebd3084bc4e6f8855
+    role: context
+  - path: history/records/dunite/2026-10-30T175759Z-marcin-95056b.yaml
+    sha256: dfc0caf9de93194204e2cf1283adab4ab764eae6e0df48278d3435e00da30b81
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
@@ -42,10 +46,14 @@ targets:
   - repository: CultureBotAI/CMMMech
     path: history/records/dunite/2026-10-30T171003Z-marcin-eefde3.yaml
     role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/dunite/2026-10-30T175759Z-marcin-95056b.yaml
+    role: canonical_history
 scope:
-  description: Cycle 5 Stage 2 causal-graph review of data/records/dunite.yaml (SHA-256 d06791b168c51fe7a7dcfb05dfaffba9eb49ece56ed1c4535c3d50eb4255c4f0)
-    and its canonical EDIT history sidecar (history/records/dunite/2026-10-30T171003Z-marcin-eefde3.yaml)
-    verifying full synchronization between causal_graphs[0] and mechanisms[0].
+  description: Cycle 5 Stage 2 causal-graph review of data/records/dunite.yaml (SHA-256 47f4822e55b2d4df659f31fe5bfe9be50cec4c1e0b69ee734e50fec9d136c766)
+    and its canonical EDIT history sidecar(s) (history/records/dunite/2026-10-30T171003Z-marcin-eefde3.yaml,
+    history/records/dunite/2026-10-30T175759Z-marcin-95056b.yaml) verifying full synchronization between
+    causal_graphs[0] (gluconobacter_dunite_bioleaching_graph) and mechanisms[0] (bacterial_biolixiviant_dunite_leaching).
   selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:dunite
   coverage: full
   population_size: 1
@@ -55,37 +63,63 @@ evidence:
 - evidence_id: owner
   kind: record_content
   reference: data/records/dunite.yaml
-  locator: Working-tree record data/records/dunite.yaml
+  locator: 'Working-tree record data/records/dunite.yaml (causal_graphs[0]: gluconobacter_dunite_bioleaching_graph)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: 'Synchronized causal_graphs[0] (aspergillus_dunite_bioleaching_graph) in data/records/dunite.yaml
-    with mechanisms[0]: replaced generic organic-acid bioleaching prose and unmeasured Fe claims with
-    the exact Klug et al. (2026) Mg and Ni dissolution and secondary glushinskite/amorphous silica findings,
-    and refined the substrate edge predicate from acts_on to solubilizes.'
-  snapshot_sha256: d06791b168c51fe7a7dcfb05dfaffba9eb49ece56ed1c4535c3d50eb4255c4f0
+  summary: 'Synchronized causal_graphs[0] (gluconobacter_dunite_bioleaching_graph, mechanism_ref: bacterial_biolixiviant_dunite_leaching)
+    in data/records/dunite.yaml with mechanisms[0] (Conditional metal leaching from dunite-deposit powders
+    with bacterial biolixiviant) and primary source lee2025 (DOI:10.1038/s41598-025-99655-9): edge gluconic_acid_biolixiviant
+    -> dunite_powder_feed uses predicate ''solubilizes'' (supports: support) and edge dunite_powder_feed
+    -> leached_mg_ni_co_ions uses predicate ''produces'' (supports: support). Upgraded gluconic_acid_biolixiviant
+    -> dunite_powder_feed from acts_on to solubilizes and reconciled leached_mg_ni_co_ions node and edge
+    descriptions with the five elements reported in mechanisms[0] (Mg, Mn, Fe, Co, and Ni in lee2025).
+    Replaced ''Mg, Ni, Mn, Co, and Cr mobilization from dunite.'' in causal_graphs[0].description with
+    ''Mg, Mn, Fe, Co, and Ni mobilization from North Carolina Day Brook dunite powders.'' because Cr leaching
+    from dunite was below detection in Lee et al. (2025) (lee2025).'
+  snapshot_sha256: 47f4822e55b2d4df659f31fe5bfe9be50cec4c1e0b69ee734e50fec9d136c766
 - evidence_id: primary_source
   kind: primary_source
-  reference: DOI:10.1093/jambio/lxag045
-  locator: Klug H et al. (2026) J. Appl. Microbiol. 137(3):lxag045, pp. 1-14, Sections 2-3, Figures 1-6,
-    Tables 1-3
+  reference: DOI:10.1038/s41598-025-99655-9
+  locator: 'lee2025: Lee et al. (2025). Bio-accelerated weathering of ultramafic minerals with Gluconobacter
+    oxydans. Scientific Reports 15:15134, published 30 April 2025; DOI 10.1038/s41598-025-99655-9. Results,
+    Figures 2-8, Materials and methods, and Limitations of the study. (https://doi.org/10.1038/s41598-025-99655-9)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Klug et al. (2026) demonstrated that Aspergillus niger ATCC 1015 cultured for 14 days on 10%
-    w/v D-glucose (producing ~28,735 +/- 5,204 ppm oxalate and ~3,932 +/- 1,039 ppm citrate, pH ~1.8)
-    leaches Greek dunite (~45 wt% forsteritic olivine, ~40 wt% lizardite, ~7 wt% enstatite) at 5% w/v
-    over 15 days at 30 degrees C, mobilizing ~9,565 ppm Mg and ~112.4 ppm Ni with cells (~7,203 ppm Mg
-    and ~74.5 ppm Ni cell-free) vs 242.1 ppm Mg and 7.3 ppm Ni in glucose controls, while precipitating
-    32 wt% (with cells) and 20 wt% (cell-free) secondary Mg-oxalate (glushinskite) plus amorphous silica.
+  summary: 'Glucose-grown Gluconobacter oxydans NRRL B-58 produced an acidic biolixiviant that mobilized
+    Mg, Mn, Fe, Co and Ni from the tested rock powders. Compared with deionized water, release increased;
+    at 1% pulp density the advantage over initially pH-matched gluconic acid was small, and removing cells
+    after biolixiviant production did not significantly change short-term release. The supported mechanism
+    is biologically produced leaching chemistry, without demonstrated cell-contact necessity, an identified
+    additional active metabolite, or mineral-specific flux. Substrate-edge evidence (lee2025, supports:
+    support): Lee et al. (2025) Figures 2–7 demonstrate biolixiviant-driven dissolution of Day Brook dunite
+    powders (DUN-1 and DUN-2) across 24–96 h. Product-edge evidence (lee2025, supports: support): ICP-MS
+    filtrate analyses in Lee et al. (2025) Figures 2, 3, and 6 confirm mobilization of Mg, Mn, Fe, Co,
+    and Ni from DUN-1 dunite powder over 24–96 h.'
 - evidence_id: edit_history
   kind: record_content
   reference: history/records/dunite/2026-10-30T171003Z-marcin-eefde3.yaml
   locator: Canonical EDIT history sidecar history/records/dunite/2026-10-30T171003Z-marcin-eefde3.yaml
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Canonical EDIT history sidecar history/records/dunite/2026-10-30T171003Z-marcin-eefde3.yaml
-    (SHA-256 68b504e28422d69eef879719e2b9375387e6b53c42c8383ebd3084bc4e6f8855) records the Cycle 5 Stage
-    2 causal_graphs[0] update via scripts/curate_causal_graphs.py.
+  summary: 'Canonical EDIT history sidecar history/records/dunite/2026-10-30T171003Z-marcin-eefde3.yaml
+    (SHA-256 68b504e28422d69eef879719e2b9375387e6b53c42c8383ebd3084bc4e6f8855): Reconcile dunite causal_graphs[0]
+    element list (Mg, Mn, Fe, Co, Ni) and solubilizes predicate with lee2025 — Upgraded gluconic_acid_biolixiviant
+    -> dunite_powder_feed from acts_on to solubilizes and reconciled leached_mg_ni_co_ions node and edge
+    descriptions with the five elements reported in mechanisms[0] (Mg, Mn, Fe, Co, and Ni in lee2025).'
   snapshot_sha256: 68b504e28422d69eef879719e2b9375387e6b53c42c8383ebd3084bc4e6f8855
+- evidence_id: edit_history_2
+  kind: record_content
+  reference: history/records/dunite/2026-10-30T175759Z-marcin-95056b.yaml
+  locator: Canonical EDIT history sidecar history/records/dunite/2026-10-30T175759Z-marcin-95056b.yaml
+  accessed_at: '2026-10-30T17:11:30Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/dunite/2026-10-30T175759Z-marcin-95056b.yaml
+    (SHA-256 dfc0caf9de93194204e2cf1283adab4ab764eae6e0df48278d3435e00da30b81): Align dunite causal_graphs[0].description
+    with measured Mg, Mn, Fe, Co, and Ni mobilization in lee2025 — Replaced ''Mg, Ni, Mn, Co, and Cr mobilization
+    from dunite.'' in causal_graphs[0].description with ''Mg, Mn, Fe, Co, and Ni mobilization from North
+    Carolina Day Brook dunite powders.'' because Cr leaching from dunite was below detection in Lee et
+    al. (2025) (lee2025).'
+  snapshot_sha256: dfc0caf9de93194204e2cf1283adab4ab764eae6e0df48278d3435e00da30b81
 - evidence_id: validation
   kind: validation
   reference: data/records/dunite.yaml
@@ -93,9 +127,10 @@ evidence:
     main
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: data/records/dunite.yaml and history/records/dunite/2026-10-30T171003Z-marcin-eefde3.yaml pass
-    strict LinkML schema and history validation with 0 errors.
-  snapshot_sha256: d06791b168c51fe7a7dcfb05dfaffba9eb49ece56ed1c4535c3d50eb4255c4f0
+  summary: data/records/dunite.yaml and history/records/dunite/2026-10-30T171003Z-marcin-eefde3.yaml,
+    history/records/dunite/2026-10-30T175759Z-marcin-95056b.yaml pass strict LinkML schema and history
+    validation with 0 errors.
+  snapshot_sha256: 47f4822e55b2d4df659f31fe5bfe9be50cec4c1e0b69ee734e50fec9d136c766
 checks:
 - check_id: validate_records
   name: Strict corpus validation
@@ -124,12 +159,19 @@ checks:
 assessments:
 - assessment_id: causal_graph_and_mechanism_synchronization
   area: graph
-  topic: Synchronization of causal_graphs[0] with mechanisms[0] and primary source (DOI:10.1093/jambio/lxag045)
+  topic: Synchronization of causal_graphs[0] (gluconobacter_dunite_bioleaching_graph) with mechanisms[0]
+    (bacterial_biolixiviant_dunite_leaching) and primary source lee2025 (DOI:10.1038/s41598-025-99655-9)
   outcome: supported
-  summary: 'Synchronized causal_graphs[0] (aspergillus_dunite_bioleaching_graph) in data/records/dunite.yaml
-    with mechanisms[0]: replaced generic organic-acid bioleaching prose and unmeasured Fe claims with
-    the exact Klug et al. (2026) Mg and Ni dissolution and secondary glushinskite/amorphous silica findings,
-    and refined the substrate edge predicate from acts_on to solubilizes.'
+  summary: 'Synchronized causal_graphs[0] (gluconobacter_dunite_bioleaching_graph, mechanism_ref: bacterial_biolixiviant_dunite_leaching)
+    in data/records/dunite.yaml with mechanisms[0] (Conditional metal leaching from dunite-deposit powders
+    with bacterial biolixiviant) and primary source lee2025 (DOI:10.1038/s41598-025-99655-9): edge gluconic_acid_biolixiviant
+    -> dunite_powder_feed uses predicate ''solubilizes'' (supports: support) and edge dunite_powder_feed
+    -> leached_mg_ni_co_ions uses predicate ''produces'' (supports: support). Upgraded gluconic_acid_biolixiviant
+    -> dunite_powder_feed from acts_on to solubilizes and reconciled leached_mg_ni_co_ions node and edge
+    descriptions with the five elements reported in mechanisms[0] (Mg, Mn, Fe, Co, and Ni in lee2025).
+    Replaced ''Mg, Ni, Mn, Co, and Cr mobilization from dunite.'' in causal_graphs[0].description with
+    ''Mg, Mn, Fe, Co, and Ni mobilization from North Carolina Day Brook dunite powders.'' because Cr leaching
+    from dunite was below detection in Lee et al. (2025) (lee2025).'
   target_ids:
   - cmmmech:dunite
   evidence_ids:
@@ -137,25 +179,33 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
   summary: data/records/dunite.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file),
-    producing append-only history sidecar history/records/dunite/2026-10-30T171003Z-marcin-eefde3.yaml
+    producing append-only history sidecar(s) (history/records/dunite/2026-10-30T171003Z-marcin-eefde3.yaml,
+    history/records/dunite/2026-10-30T175759Z-marcin-95056b.yaml, latest SHA-256 dfc0caf9de93194204e2cf1283adab4ab764eae6e0df48278d3435e00da30b81)
     and passing all LinkML and history validation gates.
   target_ids:
   - cmmmech:dunite
   evidence_ids:
   - owner
   - edit_history
+  - edit_history_2
   - validation
 findings: []
 actions: []
 summary: 'Dunite (cmmmech:dunite) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true)
-  at SHA-256 d06791b168c51fe7a7dcfb05dfaffba9eb49ece56ed1c4535c3d50eb4255c4f0: Synchronized causal_graphs[0]
-  (aspergillus_dunite_bioleaching_graph) in data/records/dunite.yaml with mechanisms[0]: replaced generic
-  organic-acid bioleaching prose and unmeasured Fe claims with the exact Klug et al. (2026) Mg and Ni
-  dissolution and secondary glushinskite/amorphous silica findings, and refined the substrate edge predicate
-  from acts_on to solubilizes.'
+  at SHA-256 47f4822e55b2d4df659f31fe5bfe9be50cec4c1e0b69ee734e50fec9d136c766: Synchronized causal_graphs[0]
+  (gluconobacter_dunite_bioleaching_graph, mechanism_ref: bacterial_biolixiviant_dunite_leaching) in data/records/dunite.yaml
+  with mechanisms[0] (Conditional metal leaching from dunite-deposit powders with bacterial biolixiviant)
+  and primary source lee2025 (DOI:10.1038/s41598-025-99655-9): edge gluconic_acid_biolixiviant -> dunite_powder_feed
+  uses predicate ''solubilizes'' (supports: support) and edge dunite_powder_feed -> leached_mg_ni_co_ions
+  uses predicate ''produces'' (supports: support). Upgraded gluconic_acid_biolixiviant -> dunite_powder_feed
+  from acts_on to solubilizes and reconciled leached_mg_ni_co_ions node and edge descriptions with the
+  five elements reported in mechanisms[0] (Mg, Mn, Fe, Co, and Ni in lee2025). Replaced ''Mg, Ni, Mn,
+  Co, and Cr mobilization from dunite.'' in causal_graphs[0].description with ''Mg, Mn, Fe, Co, and Ni
+  mobilization from North Carolina Day Brook dunite powders.'' because Cr leaching from dunite was below
+  detection in Lee et al. (2025) (lee2025).'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes;
   an independent subagent PR review is executed prior to merge.'

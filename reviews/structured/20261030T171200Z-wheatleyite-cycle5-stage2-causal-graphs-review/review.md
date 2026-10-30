@@ -11,15 +11,15 @@
 
 ## Summary
 
-Wheatleyite (cmmmech:wheatleyite) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256 711045eaf9a26e67608bfa4b436edfb07d4ec00d50a2338b12721881e4c25bfb: Synchronized causal_graphs[0] (aspergillus_wheatleyite_biomineralization_graph) in data/records/wheatleyite.yaml with mechanisms[0]: replaced generic organic-acid bioleaching prose with the actual transformation of Pb5(PO4)3Cl, PbS, and Pb3O4 into secondary PbC2O4 and transient wheatleyite (Na2Cu(C2O4)2·2H2O) in Cu2O-amended cultures, refined the substrate edge predicate from acts_on to precipitates, and aligned supports: partial on the starting_substrate -&gt; leached_product_state edge.
+Wheatleyite (cmmmech:wheatleyite) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256 711045eaf9a26e67608bfa4b436edfb07d4ec00d50a2338b12721881e4c25bfb: Synchronized causal_graphs[0] (aspergillus_cexa_wheatleyite_formation_graph, mechanism_ref: transient_fungal_culture_oxalate) in data/records/wheatleyite.yaml with mechanisms[0] (Transient wheatleyite assignment during fungal culture on weathered copper ore) and primary source frank2021 (DOI:10.1038/s41598-021-03600-5): edge secreted_organic_acids -&gt; starting_substrate uses predicate 'solubilizes' (supports: partial) and edge starting_substrate -&gt; transformed_product uses predicate 'transforms_into' (supports: support). Upgraded secreted_organic_acids -&gt; starting_substrate from acts_on (support) to solubilizes (partial) matching sibling record moolooite.yaml, removed the inaccurate 'or supernatant treatment' boilerplate from starting_substrate -&gt; transformed_product, and grounded substrate/product node and edge descriptions in frank2021.
 
 ## Scope And Provenance
 
-Cycle 5 Stage 2 causal-graph review of data/records/wheatleyite.yaml (SHA-256 711045eaf9a26e67608bfa4b436edfb07d4ec00d50a2338b12721881e4c25bfb) and its canonical EDIT history sidecar (history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml) verifying full synchronization between causal_graphs[0] and mechanisms[0].
+Cycle 5 Stage 2 causal-graph review of data/records/wheatleyite.yaml (SHA-256 711045eaf9a26e67608bfa4b436edfb07d4ec00d50a2338b12721881e4c25bfb) and its canonical EDIT history sidecar(s) (history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml) verifying full synchronization between causal_graphs[0] (aspergillus_cexa_wheatleyite_formation_graph) and mechanisms[0] (transient_fungal_culture_oxalate).
 
 Selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:wheatleyite
 Coverage: full; 1 reviewed / 1 in the declared population.
-Source: working_tree at Git base 9e3221733b5efe6fb1be27fcc03692abc3a0de44.
+Source: working_tree at Git base 2f2de84859ee4156bb09f2a0110d35edc48b8020.
 Working-tree hashes do not imply those bytes were committed.
 
 | Target | Path / selector | Kind | Label |
@@ -35,17 +35,17 @@ Working-tree hashes do not imply those bytes were committed.
 
 ## Scientific And Domain Assessments
 
-### Synchronization of causal_graphs[0] with mechanisms[0] and primary source (DOI:10.1111/j.1472-4669.2007.00143.x)
+### Synchronization of causal_graphs[0] (aspergillus_cexa_wheatleyite_formation_graph) with mechanisms[0] (transient_fungal_culture_oxalate) and primary source frank2021 (DOI:10.1038/s41598-021-03600-5)
 
 graph: supported. Targets: cmmmech:wheatleyite.
 
-Synchronized causal_graphs[0] (aspergillus_wheatleyite_biomineralization_graph) in data/records/wheatleyite.yaml with mechanisms[0]: replaced generic organic-acid bioleaching prose with the actual transformation of Pb5(PO4)3Cl, PbS, and Pb3O4 into secondary PbC2O4 and transient wheatleyite (Na2Cu(C2O4)2·2H2O) in Cu2O-amended cultures, refined the substrate edge predicate from acts_on to precipitates, and aligned supports: partial on the starting_substrate -&gt; leached_product_state edge.
+Synchronized causal_graphs[0] (aspergillus_cexa_wheatleyite_formation_graph, mechanism_ref: transient_fungal_culture_oxalate) in data/records/wheatleyite.yaml with mechanisms[0] (Transient wheatleyite assignment during fungal culture on weathered copper ore) and primary source frank2021 (DOI:10.1038/s41598-021-03600-5): edge secreted_organic_acids -&gt; starting_substrate uses predicate 'solubilizes' (supports: partial) and edge starting_substrate -&gt; transformed_product uses predicate 'transforms_into' (supports: support). Upgraded secreted_organic_acids -&gt; starting_substrate from acts_on (support) to solubilizes (partial) matching sibling record moolooite.yaml, removed the inaccurate 'or supernatant treatment' boilerplate from starting_substrate -&gt; transformed_product, and grounded substrate/product node and edge descriptions in frank2021.
 
-### Verification of canonical EDIT history sidecar and strict schema validation
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
 
 provenance: supported. Targets: cmmmech:wheatleyite.
 
-data/records/wheatleyite.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml and passing all LinkML and history validation gates.
+data/records/wheatleyite.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml, latest SHA-256 27eddb0beda14c6a941de0b4e04f103181fb2d220fb4672a653535538135b6d1) and passing all LinkML and history validation gates.
 
 ## Findings
 
@@ -60,9 +60,9 @@ No findings recorded within this review's declared scope.
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| owner | data/records/wheatleyite.yaml; Working-tree record data/records/wheatleyite.yaml | supports | Synchronized causal_graphs[0] (aspergillus_wheatleyite_biomineralization_graph) in data/records/wheatleyite.yaml with mechanisms[0]: replaced generic organic-acid bioleaching prose with the actual transformation of Pb5(PO4)3Cl, PbS, and Pb3O4 into secondary PbC2O4 and transient wheatleyite (Na2Cu(C2O4)2·2H2O) in Cu2O-amended cultures, refined the substrate edge predicate from acts_on to precipitates, and aligned supports: partial on the starting_substrate -&gt; leached_product_state edge. |
-| primary_source | DOI:10.1111/j.1472-4669.2007.00143.x; Fomina M et al. (2008) Geobiology 6(3):305-318, Sections 2-3, Figures 1-6, Tables 1-3 | supports | Fomina et al. (2008) demonstrated that Aspergillus niger ATCC 201373 transforms toxic lead salts and minerals (5 mM pyromorphite Pb5(PO4)3Cl or lead sulfide PbS, and 2.5 mM lead tetraoxide Pb3O4) at 25 degrees C in the dark for up to 30 days via secreted oxalic acid into secondary lead oxalate (PbC2O4), with transient wheatleyite (Na2Cu(C2O4)2·2H2O) detected only in Cu2O-amended biotic cultures. |
-| edit_history | history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml; Canonical EDIT history sidecar history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml | supports | Canonical EDIT history sidecar history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml (SHA-256 27eddb0beda14c6a941de0b4e04f103181fb2d220fb4672a653535538135b6d1) records the Cycle 5 Stage 2 causal_graphs[0] update via scripts/curate_causal_graphs.py. |
+| owner | data/records/wheatleyite.yaml; Working-tree record data/records/wheatleyite.yaml (causal_graphs[0]: aspergillus_cexa_wheatleyite_formation_graph) | supports | Synchronized causal_graphs[0] (aspergillus_cexa_wheatleyite_formation_graph, mechanism_ref: transient_fungal_culture_oxalate) in data/records/wheatleyite.yaml with mechanisms[0] (Transient wheatleyite assignment during fungal culture on weathered copper ore) and primary source frank2021 (DOI:10.1038/s41598-021-03600-5): edge secreted_organic_acids -&gt; starting_substrate uses predicate 'solubilizes' (supports: partial) and edge starting_substrate -&gt; transformed_product uses predicate 'transforms_into' (supports: support). Upgraded secreted_organic_acids -&gt; starting_substrate from acts_on (support) to solubilizes (partial) matching sibling record moolooite.yaml, removed the inaccurate 'or supernatant treatment' boilerplate from starting_substrate -&gt; transformed_product, and grounded substrate/product node and edge descriptions in frank2021. |
+| primary_source | DOI:10.1038/s41598-021-03600-5; frank2021: Frank-Kamenetskaya et al. (2021). Copper oxalate formation by lichens and fungi. Scientific Reports 11:24239. Complete nine-page article, Materials and methods, Results, Discussion and Figures 1-6. DOI 10.1038/s41598-021-03600-5. Same experiment as the moolooite record. (https://doi.org/10.1038/s41598-021-03600-5) | supports | The source assigned wheatleyite in mixed solids on malachite-bearing weathered ore after five days of Aspergillus niger Ch4/07 culture. The corresponding six-day pattern no longer displayed the assigned wheatleyite peaks, while moolooite remained. This supports transient culture-associated occurrence, not a quantified conversion pathway, complete dissolution, exclusive fungal causation or isolated copper recovery. The proposed reactants are fungal oxalate, substrate-derived copper and sodium supplied by the nutrient medium. Substrate-edge evidence (frank2021, supports: partial): Frank-Kamenetskaya et al. (2021) observe transient wheatleyite and moolooite formation on malachite-bearing ore after 5 days of A. niger Ch4/07 culture, though direct oxalate measurements, numerical pH trajectories, and matched uninoculated controls were not reported. Product-edge evidence (frank2021, supports: support): Powder XRD (Figure 5c) and SEM-EDX (Figure 6c–d) at day 5 identify acicular wheatleyite alongside moolooite on the malachite-bearing substrate, whereas the day-6 XRD pattern (Figure 5b) retains moolooite without wheatleyite peaks. |
+| edit_history | history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml; Canonical EDIT history sidecar history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml | supports | Canonical EDIT history sidecar history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml (SHA-256 27eddb0beda14c6a941de0b4e04f103181fb2d220fb4672a653535538135b6d1): Align wheatleyite causal_graphs[0] with frank2021 live-culture malachite-bearing ore biomineralization and moolooite.yaml parity — Upgraded secreted_organic_acids -&gt; starting_substrate from acts_on (support) to solubilizes (partial) matching sibling record moolooite.yaml, removed the inaccurate 'or supernatant treatment' boilerplate from starting_substrate -&gt; transformed_product, and grounded substrate/product node and edge descriptions in frank2021. |
 | validation | data/records/wheatleyite.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/wheatleyite.yaml and history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml pass strict LinkML schema and history validation with 0 errors. |
 
 ## Limits And Additional Notes
@@ -88,15 +88,16 @@ reviewer:
   model: antigravity
   independence: self_review
   independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
-    verifying the Cycle 5 Stage 2 causal_graphs[0] update in data/records/wheatleyite.yaml
-    (SHA-256 711045eaf9a26e67608bfa4b436edfb07d4ec00d50a2338b12721881e4c25bfb) against
-    mechanisms[0] and its cited primary source (DOI:10.1111/j.1472-4669.2007.00143.x).
+    verifying the Cycle 5 Stage 2 causal_graphs[0] (aspergillus_cexa_wheatleyite_formation_graph)
+    update in data/records/wheatleyite.yaml (SHA-256 711045eaf9a26e67608bfa4b436edfb07d4ec00d50a2338b12721881e4c25bfb)
+    against mechanisms[0] (transient_fungal_culture_oxalate) and its cited primary
+    source frank2021 (DOI:10.1038/s41598-021-03600-5).
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 source:
-  git_revision: 9e3221733b5efe6fb1be27fcc03692abc3a0de44
+  git_revision: 2f2de84859ee4156bb09f2a0110d35edc48b8020
   state: working_tree
   inputs:
   - path: data/records/wheatleyite.yaml
@@ -123,8 +124,9 @@ targets:
 scope:
   description: Cycle 5 Stage 2 causal-graph review of data/records/wheatleyite.yaml
     (SHA-256 711045eaf9a26e67608bfa4b436edfb07d4ec00d50a2338b12721881e4c25bfb) and
-    its canonical EDIT history sidecar (history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml)
-    verifying full synchronization between causal_graphs[0] and mechanisms[0].
+    its canonical EDIT history sidecar(s) (history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml)
+    verifying full synchronization between causal_graphs[0] (aspergillus_cexa_wheatleyite_formation_graph)
+    and mechanisms[0] (transient_fungal_culture_oxalate).
   selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:wheatleyite
   coverage: full
   population_size: 1
@@ -134,37 +136,58 @@ evidence:
 - evidence_id: owner
   kind: record_content
   reference: data/records/wheatleyite.yaml
-  locator: Working-tree record data/records/wheatleyite.yaml
+  locator: 'Working-tree record data/records/wheatleyite.yaml (causal_graphs[0]: aspergillus_cexa_wheatleyite_formation_graph)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: 'Synchronized causal_graphs[0] (aspergillus_wheatleyite_biomineralization_graph)
-    in data/records/wheatleyite.yaml with mechanisms[0]: replaced generic organic-acid
-    bioleaching prose with the actual transformation of Pb5(PO4)3Cl, PbS, and Pb3O4
-    into secondary PbC2O4 and transient wheatleyite (Na2Cu(C2O4)2·2H2O) in Cu2O-amended
-    cultures, refined the substrate edge predicate from acts_on to precipitates, and
-    aligned supports: partial on the starting_substrate -> leached_product_state edge.'
+  summary: 'Synchronized causal_graphs[0] (aspergillus_cexa_wheatleyite_formation_graph,
+    mechanism_ref: transient_fungal_culture_oxalate) in data/records/wheatleyite.yaml
+    with mechanisms[0] (Transient wheatleyite assignment during fungal culture on
+    weathered copper ore) and primary source frank2021 (DOI:10.1038/s41598-021-03600-5):
+    edge secreted_organic_acids -> starting_substrate uses predicate ''solubilizes''
+    (supports: partial) and edge starting_substrate -> transformed_product uses predicate
+    ''transforms_into'' (supports: support). Upgraded secreted_organic_acids -> starting_substrate
+    from acts_on (support) to solubilizes (partial) matching sibling record moolooite.yaml,
+    removed the inaccurate ''or supernatant treatment'' boilerplate from starting_substrate
+    -> transformed_product, and grounded substrate/product node and edge descriptions
+    in frank2021.'
   snapshot_sha256: 711045eaf9a26e67608bfa4b436edfb07d4ec00d50a2338b12721881e4c25bfb
 - evidence_id: primary_source
   kind: primary_source
-  reference: DOI:10.1111/j.1472-4669.2007.00143.x
-  locator: Fomina M et al. (2008) Geobiology 6(3):305-318, Sections 2-3, Figures 1-6,
-    Tables 1-3
+  reference: DOI:10.1038/s41598-021-03600-5
+  locator: 'frank2021: Frank-Kamenetskaya et al. (2021). Copper oxalate formation
+    by lichens and fungi. Scientific Reports 11:24239. Complete nine-page article,
+    Materials and methods, Results, Discussion and Figures 1-6. DOI 10.1038/s41598-021-03600-5.
+    Same experiment as the moolooite record. (https://doi.org/10.1038/s41598-021-03600-5)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Fomina et al. (2008) demonstrated that Aspergillus niger ATCC 201373 transforms
-    toxic lead salts and minerals (5 mM pyromorphite Pb5(PO4)3Cl or lead sulfide PbS,
-    and 2.5 mM lead tetraoxide Pb3O4) at 25 degrees C in the dark for up to 30 days
-    via secreted oxalic acid into secondary lead oxalate (PbC2O4), with transient
-    wheatleyite (Na2Cu(C2O4)2·2H2O) detected only in Cu2O-amended biotic cultures.
+  summary: 'The source assigned wheatleyite in mixed solids on malachite-bearing weathered
+    ore after five days of Aspergillus niger Ch4/07 culture. The corresponding six-day
+    pattern no longer displayed the assigned wheatleyite peaks, while moolooite remained.
+    This supports transient culture-associated occurrence, not a quantified conversion
+    pathway, complete dissolution, exclusive fungal causation or isolated copper recovery.
+    The proposed reactants are fungal oxalate, substrate-derived copper and sodium
+    supplied by the nutrient medium. Substrate-edge evidence (frank2021, supports:
+    partial): Frank-Kamenetskaya et al. (2021) observe transient wheatleyite and moolooite
+    formation on malachite-bearing ore after 5 days of A. niger Ch4/07 culture, though
+    direct oxalate measurements, numerical pH trajectories, and matched uninoculated
+    controls were not reported. Product-edge evidence (frank2021, supports: support):
+    Powder XRD (Figure 5c) and SEM-EDX (Figure 6c–d) at day 5 identify acicular wheatleyite
+    alongside moolooite on the malachite-bearing substrate, whereas the day-6 XRD
+    pattern (Figure 5b) retains moolooite without wheatleyite peaks.'
 - evidence_id: edit_history
   kind: record_content
   reference: history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml
   locator: Canonical EDIT history sidecar history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Canonical EDIT history sidecar history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml
-    (SHA-256 27eddb0beda14c6a941de0b4e04f103181fb2d220fb4672a653535538135b6d1) records
-    the Cycle 5 Stage 2 causal_graphs[0] update via scripts/curate_causal_graphs.py.
+  summary: 'Canonical EDIT history sidecar history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml
+    (SHA-256 27eddb0beda14c6a941de0b4e04f103181fb2d220fb4672a653535538135b6d1): Align
+    wheatleyite causal_graphs[0] with frank2021 live-culture malachite-bearing ore
+    biomineralization and moolooite.yaml parity — Upgraded secreted_organic_acids
+    -> starting_substrate from acts_on (support) to solubilizes (partial) matching
+    sibling record moolooite.yaml, removed the inaccurate ''or supernatant treatment''
+    boilerplate from starting_substrate -> transformed_product, and grounded substrate/product
+    node and edge descriptions in frank2021.'
   snapshot_sha256: 27eddb0beda14c6a941de0b4e04f103181fb2d220fb4672a653535538135b6d1
 - evidence_id: validation
   kind: validation
@@ -204,15 +227,21 @@ checks:
 assessments:
 - assessment_id: causal_graph_and_mechanism_synchronization
   area: graph
-  topic: Synchronization of causal_graphs[0] with mechanisms[0] and primary source
-    (DOI:10.1111/j.1472-4669.2007.00143.x)
+  topic: Synchronization of causal_graphs[0] (aspergillus_cexa_wheatleyite_formation_graph)
+    with mechanisms[0] (transient_fungal_culture_oxalate) and primary source frank2021
+    (DOI:10.1038/s41598-021-03600-5)
   outcome: supported
-  summary: 'Synchronized causal_graphs[0] (aspergillus_wheatleyite_biomineralization_graph)
-    in data/records/wheatleyite.yaml with mechanisms[0]: replaced generic organic-acid
-    bioleaching prose with the actual transformation of Pb5(PO4)3Cl, PbS, and Pb3O4
-    into secondary PbC2O4 and transient wheatleyite (Na2Cu(C2O4)2·2H2O) in Cu2O-amended
-    cultures, refined the substrate edge predicate from acts_on to precipitates, and
-    aligned supports: partial on the starting_substrate -> leached_product_state edge.'
+  summary: 'Synchronized causal_graphs[0] (aspergillus_cexa_wheatleyite_formation_graph,
+    mechanism_ref: transient_fungal_culture_oxalate) in data/records/wheatleyite.yaml
+    with mechanisms[0] (Transient wheatleyite assignment during fungal culture on
+    weathered copper ore) and primary source frank2021 (DOI:10.1038/s41598-021-03600-5):
+    edge secreted_organic_acids -> starting_substrate uses predicate ''solubilizes''
+    (supports: partial) and edge starting_substrate -> transformed_product uses predicate
+    ''transforms_into'' (supports: support). Upgraded secreted_organic_acids -> starting_substrate
+    from acts_on (support) to solubilizes (partial) matching sibling record moolooite.yaml,
+    removed the inaccurate ''or supernatant treatment'' boilerplate from starting_substrate
+    -> transformed_product, and grounded substrate/product node and edge descriptions
+    in frank2021.'
   target_ids:
   - cmmmech:wheatleyite
   evidence_ids:
@@ -220,10 +249,11 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
   summary: data/records/wheatleyite.yaml was updated exclusively through scripts/curate_causal_graphs.py
-    (curate_record_file), producing append-only history sidecar history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml
+    (curate_record_file), producing append-only history sidecar(s) (history/records/wheatleyite/2026-10-30T171003Z-marcin-d52b49.yaml,
+    latest SHA-256 27eddb0beda14c6a941de0b4e04f103181fb2d220fb4672a653535538135b6d1)
     and passing all LinkML and history validation gates.
   target_ids:
   - cmmmech:wheatleyite
@@ -235,12 +265,16 @@ findings: []
 actions: []
 summary: 'Wheatleyite (cmmmech:wheatleyite) passes Cycle 5 Stage 2 causal-graph review
   (scientific_review: true) at SHA-256 711045eaf9a26e67608bfa4b436edfb07d4ec00d50a2338b12721881e4c25bfb:
-  Synchronized causal_graphs[0] (aspergillus_wheatleyite_biomineralization_graph)
-  in data/records/wheatleyite.yaml with mechanisms[0]: replaced generic organic-acid
-  bioleaching prose with the actual transformation of Pb5(PO4)3Cl, PbS, and Pb3O4
-  into secondary PbC2O4 and transient wheatleyite (Na2Cu(C2O4)2·2H2O) in Cu2O-amended
-  cultures, refined the substrate edge predicate from acts_on to precipitates, and
-  aligned supports: partial on the starting_substrate -> leached_product_state edge.'
+  Synchronized causal_graphs[0] (aspergillus_cexa_wheatleyite_formation_graph, mechanism_ref:
+  transient_fungal_culture_oxalate) in data/records/wheatleyite.yaml with mechanisms[0]
+  (Transient wheatleyite assignment during fungal culture on weathered copper ore)
+  and primary source frank2021 (DOI:10.1038/s41598-021-03600-5): edge secreted_organic_acids
+  -> starting_substrate uses predicate ''solubilizes'' (supports: partial) and edge
+  starting_substrate -> transformed_product uses predicate ''transforms_into'' (supports:
+  support). Upgraded secreted_organic_acids -> starting_substrate from acts_on (support)
+  to solubilizes (partial) matching sibling record moolooite.yaml, removed the inaccurate
+  ''or supernatant treatment'' boilerplate from starting_substrate -> transformed_product,
+  and grounded substrate/product node and edge descriptions in frank2021.'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes; an independent subagent PR review is executed prior to merge.'

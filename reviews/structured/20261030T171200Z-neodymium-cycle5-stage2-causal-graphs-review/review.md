@@ -11,15 +11,15 @@
 
 ## Summary
 
-Neodymium (cmmmech:neodymium) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256 91a74a542eb1dbd45aeb4cbd24f3ced3f382854dc7e7e3d2292effcded89341f: Synchronized causal_graphs[0] (gluconobacter_neodymium_bioleaching_graph) in data/records/neodymium.yaml with mechanisms[0]: replaced generic organic-acid bioleaching prose and unmeasured Ce3+-&gt;Ce4+ redox language with the exact Schmitz et al. (2021) Delta_pqqC (96% drop), Delta_mgdh (94% drop), and P_0169::mgdh (+53% REE extraction) genetic and bioleaching results on synthetic NdFeB magnet powder, and refined the substrate edge predicate from acts_on to solubilizes.
+Neodymium (cmmmech:neodymium) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256 91a74a542eb1dbd45aeb4cbd24f3ced3f382854dc7e7e3d2292effcded89341f: Synchronized causal_graphs[0] (gluconobacter_neodymium_phosphate_bioleaching_graph, mechanism_ref: gluconobacter_synthetic_phosphate_bioleaching) in data/records/neodymium.yaml with mechanisms[0] (Gluconobacter oxydans biolixiviant releases Nd from synthetic phosphate) and primary source marecos2025 (DOI:10.1038/s42003-025-08061-4): edge gluconic_acid_biolixiviant -&gt; synthetic_ndpo4_substrate uses predicate 'solubilizes' (supports: support) and edge synthetic_ndpo4_substrate -&gt; dissolved_neodymium_ions uses predicate 'produces' (supports: support). Upgraded gluconic_acid_biolixiviant -&gt; synthetic_ndpo4_substrate from acts_on to solubilizes and replaced template node and edge descriptions with exact marecos2025 synthetic Mon2 NdPO4 bioleaching details.
 
 ## Scope And Provenance
 
-Cycle 5 Stage 2 causal-graph review of data/records/neodymium.yaml (SHA-256 91a74a542eb1dbd45aeb4cbd24f3ced3f382854dc7e7e3d2292effcded89341f) and its canonical EDIT history sidecar (history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml) verifying full synchronization between causal_graphs[0] and mechanisms[0].
+Cycle 5 Stage 2 causal-graph review of data/records/neodymium.yaml (SHA-256 91a74a542eb1dbd45aeb4cbd24f3ced3f382854dc7e7e3d2292effcded89341f) and its canonical EDIT history sidecar(s) (history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml) verifying full synchronization between causal_graphs[0] (gluconobacter_neodymium_phosphate_bioleaching_graph) and mechanisms[0] (gluconobacter_synthetic_phosphate_bioleaching).
 
 Selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:neodymium
 Coverage: full; 1 reviewed / 1 in the declared population.
-Source: working_tree at Git base 9e3221733b5efe6fb1be27fcc03692abc3a0de44.
+Source: working_tree at Git base 2f2de84859ee4156bb09f2a0110d35edc48b8020.
 Working-tree hashes do not imply those bytes were committed.
 
 | Target | Path / selector | Kind | Label |
@@ -35,17 +35,17 @@ Working-tree hashes do not imply those bytes were committed.
 
 ## Scientific And Domain Assessments
 
-### Synchronization of causal_graphs[0] with mechanisms[0] and primary source (DOI:10.3389/fmicb.2021.650754)
+### Synchronization of causal_graphs[0] (gluconobacter_neodymium_phosphate_bioleaching_graph) with mechanisms[0] (gluconobacter_synthetic_phosphate_bioleaching) and primary source marecos2025 (DOI:10.1038/s42003-025-08061-4)
 
 graph: supported. Targets: cmmmech:neodymium.
 
-Synchronized causal_graphs[0] (gluconobacter_neodymium_bioleaching_graph) in data/records/neodymium.yaml with mechanisms[0]: replaced generic organic-acid bioleaching prose and unmeasured Ce3+-&gt;Ce4+ redox language with the exact Schmitz et al. (2021) Delta_pqqC (96% drop), Delta_mgdh (94% drop), and P_0169::mgdh (+53% REE extraction) genetic and bioleaching results on synthetic NdFeB magnet powder, and refined the substrate edge predicate from acts_on to solubilizes.
+Synchronized causal_graphs[0] (gluconobacter_neodymium_phosphate_bioleaching_graph, mechanism_ref: gluconobacter_synthetic_phosphate_bioleaching) in data/records/neodymium.yaml with mechanisms[0] (Gluconobacter oxydans biolixiviant releases Nd from synthetic phosphate) and primary source marecos2025 (DOI:10.1038/s42003-025-08061-4): edge gluconic_acid_biolixiviant -&gt; synthetic_ndpo4_substrate uses predicate 'solubilizes' (supports: support) and edge synthetic_ndpo4_substrate -&gt; dissolved_neodymium_ions uses predicate 'produces' (supports: support). Upgraded gluconic_acid_biolixiviant -&gt; synthetic_ndpo4_substrate from acts_on to solubilizes and replaced template node and edge descriptions with exact marecos2025 synthetic Mon2 NdPO4 bioleaching details.
 
-### Verification of canonical EDIT history sidecar and strict schema validation
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
 
 provenance: supported. Targets: cmmmech:neodymium.
 
-data/records/neodymium.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml and passing all LinkML and history validation gates.
+data/records/neodymium.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml, latest SHA-256 f872aadf745e6d7011b8e94cb0b02dfa12b3f11a930b6c3dfec3ed9d97199e30) and passing all LinkML and history validation gates.
 
 ## Findings
 
@@ -60,9 +60,9 @@ No findings recorded within this review's declared scope.
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| owner | data/records/neodymium.yaml; Working-tree record data/records/neodymium.yaml | supports | Synchronized causal_graphs[0] (gluconobacter_neodymium_bioleaching_graph) in data/records/neodymium.yaml with mechanisms[0]: replaced generic organic-acid bioleaching prose and unmeasured Ce3+-&gt;Ce4+ redox language with the exact Schmitz et al. (2021) Delta_pqqC (96% drop), Delta_mgdh (94% drop), and P_0169::mgdh (+53% REE extraction) genetic and bioleaching results on synthetic NdFeB magnet powder, and refined the substrate edge predicate from acts_on to solubilizes. |
-| primary_source | DOI:10.3389/fmicb.2021.650754; Schmitz AM et al. (2021) Front. Microbiol. 12:650754, pp. 1-14, Sections 2-3, Figures 1-6, Tables 1-3 | supports | Schmitz et al. (2021) performed high-throughput screen of an 8,826-strain Gluconobacter oxydans B58 whole-genome knockout library and identified clean deletions Delta_pqqC (GOX_RS06010) and Delta_mgdh (GOX_RS01365), which abolished PQQ-dependent glucose dehydrogenase activity and gluconic acid production, maintained biolixiviant pH near 5.43-5.64 (vs 2.13 wild type), and reduced total REE bioleaching from synthetic NdFeB magnet powder (containing Nd and Dy) by 96% and 94%, while mgdh overexpression under P_0169 lowered pH to 2.09 and increased REE extraction by 53%. |
-| edit_history | history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml; Canonical EDIT history sidecar history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml | supports | Canonical EDIT history sidecar history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml (SHA-256 f872aadf745e6d7011b8e94cb0b02dfa12b3f11a930b6c3dfec3ed9d97199e30) records the Cycle 5 Stage 2 causal_graphs[0] update via scripts/curate_causal_graphs.py. |
+| owner | data/records/neodymium.yaml; Working-tree record data/records/neodymium.yaml (causal_graphs[0]: gluconobacter_neodymium_phosphate_bioleaching_graph) | supports | Synchronized causal_graphs[0] (gluconobacter_neodymium_phosphate_bioleaching_graph, mechanism_ref: gluconobacter_synthetic_phosphate_bioleaching) in data/records/neodymium.yaml with mechanisms[0] (Gluconobacter oxydans biolixiviant releases Nd from synthetic phosphate) and primary source marecos2025 (DOI:10.1038/s42003-025-08061-4): edge gluconic_acid_biolixiviant -&gt; synthetic_ndpo4_substrate uses predicate 'solubilizes' (supports: support) and edge synthetic_ndpo4_substrate -&gt; dissolved_neodymium_ions uses predicate 'produces' (supports: support). Upgraded gluconic_acid_biolixiviant -&gt; synthetic_ndpo4_substrate from acts_on to solubilizes and replaced template node and edge descriptions with exact marecos2025 synthetic Mon2 NdPO4 bioleaching details. |
+| primary_source | DOI:10.1038/s42003-025-08061-4; marecos2025: Marecos et al. (2025). Direct genome-scale screening of Gluconobacter oxydans B58 for rare earth element bioleaching. Communications Biology 8:682. (https://doi.org/10.1038/s42003-025-08061-4) | supports | Biolixiviants produced by Gluconobacter oxydans B58 and its engineered derivatives solubilized Nd from synthetic Nd-phosphate powder. Selected transposon disruption strains changed filtered-leachate Nd concentrations relative to wild-type comparators. These observations do not identify a unique non-acid lixiviant or establish a recovered Nd product. Substrate-edge evidence (marecos2025, supports: support): Marecos et al. (2025) demonstrate 24-h bioleaching of 1% w/v synthetic Mon2 Nd-phosphate powder by G. oxydans B58 and selected transposon mutants above no-bacteria controls. Product-edge evidence (marecos2025, supports: support): ICP-MS analysis of 0.45-um-filtered leachates in Marecos et al. (2025) confirms Nd solubilization from synthetic Mon2 above no-bacteria controls. |
+| edit_history | history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml; Canonical EDIT history sidecar history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml | supports | Canonical EDIT history sidecar history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml (SHA-256 f872aadf745e6d7011b8e94cb0b02dfa12b3f11a930b6c3dfec3ed9d97199e30): Upgrade neodymium causal_graphs[0] lixiviant predicate to solubilizes and ground node/edge text in marecos2025 — Upgraded gluconic_acid_biolixiviant -&gt; synthetic_ndpo4_substrate from acts_on to solubilizes and replaced template node and edge descriptions with exact marecos2025 synthetic Mon2 NdPO4 bioleaching details. |
 | validation | data/records/neodymium.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/neodymium.yaml and history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml pass strict LinkML schema and history validation with 0 errors. |
 
 ## Limits And Additional Notes
@@ -88,15 +88,16 @@ reviewer:
   model: antigravity
   independence: self_review
   independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
-    verifying the Cycle 5 Stage 2 causal_graphs[0] update in data/records/neodymium.yaml
-    (SHA-256 91a74a542eb1dbd45aeb4cbd24f3ced3f382854dc7e7e3d2292effcded89341f) against
-    mechanisms[0] and its cited primary source (DOI:10.3389/fmicb.2021.650754).
+    verifying the Cycle 5 Stage 2 causal_graphs[0] (gluconobacter_neodymium_phosphate_bioleaching_graph)
+    update in data/records/neodymium.yaml (SHA-256 91a74a542eb1dbd45aeb4cbd24f3ced3f382854dc7e7e3d2292effcded89341f)
+    against mechanisms[0] (gluconobacter_synthetic_phosphate_bioleaching) and its
+    cited primary source marecos2025 (DOI:10.1038/s42003-025-08061-4).
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 source:
-  git_revision: 9e3221733b5efe6fb1be27fcc03692abc3a0de44
+  git_revision: 2f2de84859ee4156bb09f2a0110d35edc48b8020
   state: working_tree
   inputs:
   - path: data/records/neodymium.yaml
@@ -123,8 +124,9 @@ targets:
 scope:
   description: Cycle 5 Stage 2 causal-graph review of data/records/neodymium.yaml
     (SHA-256 91a74a542eb1dbd45aeb4cbd24f3ced3f382854dc7e7e3d2292effcded89341f) and
-    its canonical EDIT history sidecar (history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml)
-    verifying full synchronization between causal_graphs[0] and mechanisms[0].
+    its canonical EDIT history sidecar(s) (history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml)
+    verifying full synchronization between causal_graphs[0] (gluconobacter_neodymium_phosphate_bioleaching_graph)
+    and mechanisms[0] (gluconobacter_synthetic_phosphate_bioleaching).
   selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:neodymium
   coverage: full
   population_size: 1
@@ -134,40 +136,50 @@ evidence:
 - evidence_id: owner
   kind: record_content
   reference: data/records/neodymium.yaml
-  locator: Working-tree record data/records/neodymium.yaml
+  locator: 'Working-tree record data/records/neodymium.yaml (causal_graphs[0]: gluconobacter_neodymium_phosphate_bioleaching_graph)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: 'Synchronized causal_graphs[0] (gluconobacter_neodymium_bioleaching_graph)
-    in data/records/neodymium.yaml with mechanisms[0]: replaced generic organic-acid
-    bioleaching prose and unmeasured Ce3+->Ce4+ redox language with the exact Schmitz
-    et al. (2021) Delta_pqqC (96% drop), Delta_mgdh (94% drop), and P_0169::mgdh (+53%
-    REE extraction) genetic and bioleaching results on synthetic NdFeB magnet powder,
-    and refined the substrate edge predicate from acts_on to solubilizes.'
+  summary: 'Synchronized causal_graphs[0] (gluconobacter_neodymium_phosphate_bioleaching_graph,
+    mechanism_ref: gluconobacter_synthetic_phosphate_bioleaching) in data/records/neodymium.yaml
+    with mechanisms[0] (Gluconobacter oxydans biolixiviant releases Nd from synthetic
+    phosphate) and primary source marecos2025 (DOI:10.1038/s42003-025-08061-4): edge
+    gluconic_acid_biolixiviant -> synthetic_ndpo4_substrate uses predicate ''solubilizes''
+    (supports: support) and edge synthetic_ndpo4_substrate -> dissolved_neodymium_ions
+    uses predicate ''produces'' (supports: support). Upgraded gluconic_acid_biolixiviant
+    -> synthetic_ndpo4_substrate from acts_on to solubilizes and replaced template
+    node and edge descriptions with exact marecos2025 synthetic Mon2 NdPO4 bioleaching
+    details.'
   snapshot_sha256: 91a74a542eb1dbd45aeb4cbd24f3ced3f382854dc7e7e3d2292effcded89341f
 - evidence_id: primary_source
   kind: primary_source
-  reference: DOI:10.3389/fmicb.2021.650754
-  locator: Schmitz AM et al. (2021) Front. Microbiol. 12:650754, pp. 1-14, Sections
-    2-3, Figures 1-6, Tables 1-3
+  reference: DOI:10.1038/s42003-025-08061-4
+  locator: 'marecos2025: Marecos et al. (2025). Direct genome-scale screening of Gluconobacter
+    oxydans B58 for rare earth element bioleaching. Communications Biology 8:682.
+    (https://doi.org/10.1038/s42003-025-08061-4)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Schmitz et al. (2021) performed high-throughput screen of an 8,826-strain
-    Gluconobacter oxydans B58 whole-genome knockout library and identified clean deletions
-    Delta_pqqC (GOX_RS06010) and Delta_mgdh (GOX_RS01365), which abolished PQQ-dependent
-    glucose dehydrogenase activity and gluconic acid production, maintained biolixiviant
-    pH near 5.43-5.64 (vs 2.13 wild type), and reduced total REE bioleaching from
-    synthetic NdFeB magnet powder (containing Nd and Dy) by 96% and 94%, while mgdh
-    overexpression under P_0169 lowered pH to 2.09 and increased REE extraction by
-    53%.
+  summary: 'Biolixiviants produced by Gluconobacter oxydans B58 and its engineered
+    derivatives solubilized Nd from synthetic Nd-phosphate powder. Selected transposon
+    disruption strains changed filtered-leachate Nd concentrations relative to wild-type
+    comparators. These observations do not identify a unique non-acid lixiviant or
+    establish a recovered Nd product. Substrate-edge evidence (marecos2025, supports:
+    support): Marecos et al. (2025) demonstrate 24-h bioleaching of 1% w/v synthetic
+    Mon2 Nd-phosphate powder by G. oxydans B58 and selected transposon mutants above
+    no-bacteria controls. Product-edge evidence (marecos2025, supports: support):
+    ICP-MS analysis of 0.45-um-filtered leachates in Marecos et al. (2025) confirms
+    Nd solubilization from synthetic Mon2 above no-bacteria controls.'
 - evidence_id: edit_history
   kind: record_content
   reference: history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml
   locator: Canonical EDIT history sidecar history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Canonical EDIT history sidecar history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml
-    (SHA-256 f872aadf745e6d7011b8e94cb0b02dfa12b3f11a930b6c3dfec3ed9d97199e30) records
-    the Cycle 5 Stage 2 causal_graphs[0] update via scripts/curate_causal_graphs.py.
+  summary: 'Canonical EDIT history sidecar history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml
+    (SHA-256 f872aadf745e6d7011b8e94cb0b02dfa12b3f11a930b6c3dfec3ed9d97199e30): Upgrade
+    neodymium causal_graphs[0] lixiviant predicate to solubilizes and ground node/edge
+    text in marecos2025 — Upgraded gluconic_acid_biolixiviant -> synthetic_ndpo4_substrate
+    from acts_on to solubilizes and replaced template node and edge descriptions with
+    exact marecos2025 synthetic Mon2 NdPO4 bioleaching details.'
   snapshot_sha256: f872aadf745e6d7011b8e94cb0b02dfa12b3f11a930b6c3dfec3ed9d97199e30
 - evidence_id: validation
   kind: validation
@@ -207,15 +219,20 @@ checks:
 assessments:
 - assessment_id: causal_graph_and_mechanism_synchronization
   area: graph
-  topic: Synchronization of causal_graphs[0] with mechanisms[0] and primary source
-    (DOI:10.3389/fmicb.2021.650754)
+  topic: Synchronization of causal_graphs[0] (gluconobacter_neodymium_phosphate_bioleaching_graph)
+    with mechanisms[0] (gluconobacter_synthetic_phosphate_bioleaching) and primary
+    source marecos2025 (DOI:10.1038/s42003-025-08061-4)
   outcome: supported
-  summary: 'Synchronized causal_graphs[0] (gluconobacter_neodymium_bioleaching_graph)
-    in data/records/neodymium.yaml with mechanisms[0]: replaced generic organic-acid
-    bioleaching prose and unmeasured Ce3+->Ce4+ redox language with the exact Schmitz
-    et al. (2021) Delta_pqqC (96% drop), Delta_mgdh (94% drop), and P_0169::mgdh (+53%
-    REE extraction) genetic and bioleaching results on synthetic NdFeB magnet powder,
-    and refined the substrate edge predicate from acts_on to solubilizes.'
+  summary: 'Synchronized causal_graphs[0] (gluconobacter_neodymium_phosphate_bioleaching_graph,
+    mechanism_ref: gluconobacter_synthetic_phosphate_bioleaching) in data/records/neodymium.yaml
+    with mechanisms[0] (Gluconobacter oxydans biolixiviant releases Nd from synthetic
+    phosphate) and primary source marecos2025 (DOI:10.1038/s42003-025-08061-4): edge
+    gluconic_acid_biolixiviant -> synthetic_ndpo4_substrate uses predicate ''solubilizes''
+    (supports: support) and edge synthetic_ndpo4_substrate -> dissolved_neodymium_ions
+    uses predicate ''produces'' (supports: support). Upgraded gluconic_acid_biolixiviant
+    -> synthetic_ndpo4_substrate from acts_on to solubilizes and replaced template
+    node and edge descriptions with exact marecos2025 synthetic Mon2 NdPO4 bioleaching
+    details.'
   target_ids:
   - cmmmech:neodymium
   evidence_ids:
@@ -223,10 +240,11 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
   summary: data/records/neodymium.yaml was updated exclusively through scripts/curate_causal_graphs.py
-    (curate_record_file), producing append-only history sidecar history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml
+    (curate_record_file), producing append-only history sidecar(s) (history/records/neodymium/2026-10-30T171004Z-marcin-d172c1.yaml,
+    latest SHA-256 f872aadf745e6d7011b8e94cb0b02dfa12b3f11a930b6c3dfec3ed9d97199e30)
     and passing all LinkML and history validation gates.
   target_ids:
   - cmmmech:neodymium
@@ -238,12 +256,15 @@ findings: []
 actions: []
 summary: 'Neodymium (cmmmech:neodymium) passes Cycle 5 Stage 2 causal-graph review
   (scientific_review: true) at SHA-256 91a74a542eb1dbd45aeb4cbd24f3ced3f382854dc7e7e3d2292effcded89341f:
-  Synchronized causal_graphs[0] (gluconobacter_neodymium_bioleaching_graph) in data/records/neodymium.yaml
-  with mechanisms[0]: replaced generic organic-acid bioleaching prose and unmeasured
-  Ce3+->Ce4+ redox language with the exact Schmitz et al. (2021) Delta_pqqC (96% drop),
-  Delta_mgdh (94% drop), and P_0169::mgdh (+53% REE extraction) genetic and bioleaching
-  results on synthetic NdFeB magnet powder, and refined the substrate edge predicate
-  from acts_on to solubilizes.'
+  Synchronized causal_graphs[0] (gluconobacter_neodymium_phosphate_bioleaching_graph,
+  mechanism_ref: gluconobacter_synthetic_phosphate_bioleaching) in data/records/neodymium.yaml
+  with mechanisms[0] (Gluconobacter oxydans biolixiviant releases Nd from synthetic
+  phosphate) and primary source marecos2025 (DOI:10.1038/s42003-025-08061-4): edge
+  gluconic_acid_biolixiviant -> synthetic_ndpo4_substrate uses predicate ''solubilizes''
+  (supports: support) and edge synthetic_ndpo4_substrate -> dissolved_neodymium_ions
+  uses predicate ''produces'' (supports: support). Upgraded gluconic_acid_biolixiviant
+  -> synthetic_ndpo4_substrate from acts_on to solubilizes and replaced template node
+  and edge descriptions with exact marecos2025 synthetic Mon2 NdPO4 bioleaching details.'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes; an independent subagent PR review is executed prior to merge.'

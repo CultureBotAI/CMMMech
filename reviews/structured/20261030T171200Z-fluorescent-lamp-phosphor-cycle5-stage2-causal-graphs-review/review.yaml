@@ -11,15 +11,15 @@ reviewer:
   model: antigravity
   independence: self_review
   independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md verifying
-    the Cycle 5 Stage 2 causal_graphs[0] update in data/records/fluorescent-lamp-phosphor.yaml (SHA-256
-    cd27c40ce1c11eae898b561a7adc83373d0f3d228f393025edc2421a58272e03) against mechanisms[0] and its cited
-    primary source (DOI:10.1016/j.hydromet.2016.01.031).
+    the Cycle 5 Stage 2 causal_graphs[0] (gluconobacter_phosphor_bioleaching_graph) update in data/records/fluorescent-lamp-phosphor.yaml
+    (SHA-256 cd27c40ce1c11eae898b561a7adc83373d0f3d228f393025edc2421a58272e03) against mechanisms[0] (gluconobacter_biolixiviant_ree_release)
+    and its cited primary source schmitz2021 (DOI:10.1038/s41467-021-27047-4).
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 source:
-  git_revision: 9e3221733b5efe6fb1be27fcc03692abc3a0de44
+  git_revision: 2f2de84859ee4156bb09f2a0110d35edc48b8020
   state: working_tree
   inputs:
   - path: data/records/fluorescent-lamp-phosphor.yaml
@@ -45,9 +45,9 @@ targets:
     role: canonical_history
 scope:
   description: Cycle 5 Stage 2 causal-graph review of data/records/fluorescent-lamp-phosphor.yaml (SHA-256
-    cd27c40ce1c11eae898b561a7adc83373d0f3d228f393025edc2421a58272e03) and its canonical EDIT history sidecar
+    cd27c40ce1c11eae898b561a7adc83373d0f3d228f393025edc2421a58272e03) and its canonical EDIT history sidecar(s)
     (history/records/fluorescent-lamp-phosphor/2026-10-30T171004Z-marcin-139c21.yaml) verifying full synchronization
-    between causal_graphs[0] and mechanisms[0].
+    between causal_graphs[0] (gluconobacter_phosphor_bioleaching_graph) and mechanisms[0] (gluconobacter_biolixiviant_ree_release).
   selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:fluorescent-lamp-phosphor
   coverage: full
   population_size: 1
@@ -57,36 +57,46 @@ evidence:
 - evidence_id: owner
   kind: record_content
   reference: data/records/fluorescent-lamp-phosphor.yaml
-  locator: Working-tree record data/records/fluorescent-lamp-phosphor.yaml
+  locator: 'Working-tree record data/records/fluorescent-lamp-phosphor.yaml (causal_graphs[0]: gluconobacter_phosphor_bioleaching_graph)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: 'Synchronized causal_graphs[0] (gluconobacter_phosphor_bioleaching_graph) in data/records/fluorescent-lamp-phosphor.yaml
-    with mechanisms[0]: replaced unmeasured Ce3+->Ce4+ redox language with the actual Reed et al. (2016)
-    retorted phosphor powder bioleaching findings (preferential Y2O3:Eu3+ red phosphor dissolution vs
-    phosphate/aluminate phosphors and higher whole-supernatant recovery than abiotic gluconic acid alone),
-    refined the substrate edge predicate from acts_on to solubilizes, and aligned supports: partial on
-    the gluconic_acid_lixiviant -> starting_substrate edge.'
+  summary: 'Synchronized causal_graphs[0] (gluconobacter_phosphor_bioleaching_graph, mechanism_ref: gluconobacter_biolixiviant_ree_release)
+    in data/records/fluorescent-lamp-phosphor.yaml with mechanisms[0] (Rare-earth release from retorted
+    phosphor by Gluconobacter biolixiviant) and primary source schmitz2021 (DOI:10.1038/s41467-021-27047-4):
+    edge gluconic_acid_biolixiviant -> retorted_lamp_phosphor uses predicate ''solubilizes'' (supports:
+    support) and edge retorted_lamp_phosphor -> leached_y_eu_ree uses predicate ''produces'' (supports:
+    support). Upgraded gluconic_acid_biolixiviant -> retorted_lamp_phosphor from acts_on to solubilizes
+    and replaced template node and edge descriptions with exact schmitz2021 4% w/v retorted lamp phosphor
+    bioleaching parameters (4.7% vs 5.5% total REE extraction).'
   snapshot_sha256: cd27c40ce1c11eae898b561a7adc83373d0f3d228f393025edc2421a58272e03
 - evidence_id: primary_source
   kind: primary_source
-  reference: DOI:10.1016/j.hydromet.2016.01.031
-  locator: Reed DW et al. (2016) Hydrometallurgy 166:34-40, Sections 2-3, Figures 1-5, Tables 1-2
+  reference: DOI:10.1038/s41467-021-27047-4
+  locator: 'schmitz2021: Schmitz et al. (2021). Generation of a Gluconobacter oxydans knockout collection
+    for improved extraction of rare earth elements. Nature Communications 12:6693. (https://doi.org/10.1038/s41467-021-27047-4)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Reed et al. (2016) demonstrated that cell-free supernatant of Gluconobacter oxydans strain
-    B58 grown on pikovskaya phosphate medium with 10% glucose produces organic acids (predominantly gluconic
-    acid) that solubilize Y, Eu, La, Ce, and Tb from retorted fluorescent-lamp phosphor powder (~2% total
-    REEs; Y2O3:Eu3+ red phosphor most readily leached relative to phosphate/aluminate phosphors), whereas
-    abiotic gluconic acid alone underperformed whole-supernatant biolixiviant.
+  summary: 'Acidic biolixiviant produced by living Gluconobacter oxydans B58-derived cultures solubilized
+    rare-earth elements from retorted lamp phosphor. Cultures were centrifuged before the clarified biolixiviant
+    contacted the solid. A pstC transposon disruption increased total rare-earth extraction relative to
+    proxy wild-type. The endpoint is dissolved material in filtered leachate, not separation into purified
+    products. Substrate-edge evidence (schmitz2021, supports: support): Schmitz et al. (2021) Figure 4C
+    and Results demonstrate 36-h REE solubilization from 4% w/v retorted lamp phosphor by clarified G.
+    oxydans B58 biolixiviants. Product-edge evidence (schmitz2021, supports: support): ICP-MS measurements
+    in Schmitz et al. (2021) Figure 4C confirm 4.7% total REE extraction for proxy wild-type and 5.5%
+    for the pstC disruption mutant after 36 h.'
 - evidence_id: edit_history
   kind: record_content
   reference: history/records/fluorescent-lamp-phosphor/2026-10-30T171004Z-marcin-139c21.yaml
   locator: Canonical EDIT history sidecar history/records/fluorescent-lamp-phosphor/2026-10-30T171004Z-marcin-139c21.yaml
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Canonical EDIT history sidecar history/records/fluorescent-lamp-phosphor/2026-10-30T171004Z-marcin-139c21.yaml
-    (SHA-256 5ad25aed10a94b721ced92fe151aa17e396a08f6c854d8baeb6a7e3a1c593835) records the Cycle 5 Stage
-    2 causal_graphs[0] update via scripts/curate_causal_graphs.py.
+  summary: 'Canonical EDIT history sidecar history/records/fluorescent-lamp-phosphor/2026-10-30T171004Z-marcin-139c21.yaml
+    (SHA-256 5ad25aed10a94b721ced92fe151aa17e396a08f6c854d8baeb6a7e3a1c593835): Upgrade fluorescent-lamp-phosphor
+    causal_graphs[0] lixiviant predicate to solubilizes and ground node/edge text in schmitz2021 — Upgraded
+    gluconic_acid_biolixiviant -> retorted_lamp_phosphor from acts_on to solubilizes and replaced template
+    node and edge descriptions with exact schmitz2021 4% w/v retorted lamp phosphor bioleaching parameters
+    (4.7% vs 5.5% total REE extraction).'
   snapshot_sha256: 5ad25aed10a94b721ced92fe151aa17e396a08f6c854d8baeb6a7e3a1c593835
 - evidence_id: validation
   kind: validation
@@ -126,14 +136,17 @@ checks:
 assessments:
 - assessment_id: causal_graph_and_mechanism_synchronization
   area: graph
-  topic: Synchronization of causal_graphs[0] with mechanisms[0] and primary source (DOI:10.1016/j.hydromet.2016.01.031)
+  topic: Synchronization of causal_graphs[0] (gluconobacter_phosphor_bioleaching_graph) with mechanisms[0]
+    (gluconobacter_biolixiviant_ree_release) and primary source schmitz2021 (DOI:10.1038/s41467-021-27047-4)
   outcome: supported
-  summary: 'Synchronized causal_graphs[0] (gluconobacter_phosphor_bioleaching_graph) in data/records/fluorescent-lamp-phosphor.yaml
-    with mechanisms[0]: replaced unmeasured Ce3+->Ce4+ redox language with the actual Reed et al. (2016)
-    retorted phosphor powder bioleaching findings (preferential Y2O3:Eu3+ red phosphor dissolution vs
-    phosphate/aluminate phosphors and higher whole-supernatant recovery than abiotic gluconic acid alone),
-    refined the substrate edge predicate from acts_on to solubilizes, and aligned supports: partial on
-    the gluconic_acid_lixiviant -> starting_substrate edge.'
+  summary: 'Synchronized causal_graphs[0] (gluconobacter_phosphor_bioleaching_graph, mechanism_ref: gluconobacter_biolixiviant_ree_release)
+    in data/records/fluorescent-lamp-phosphor.yaml with mechanisms[0] (Rare-earth release from retorted
+    phosphor by Gluconobacter biolixiviant) and primary source schmitz2021 (DOI:10.1038/s41467-021-27047-4):
+    edge gluconic_acid_biolixiviant -> retorted_lamp_phosphor uses predicate ''solubilizes'' (supports:
+    support) and edge retorted_lamp_phosphor -> leached_y_eu_ree uses predicate ''produces'' (supports:
+    support). Upgraded gluconic_acid_biolixiviant -> retorted_lamp_phosphor from acts_on to solubilizes
+    and replaced template node and edge descriptions with exact schmitz2021 4% w/v retorted lamp phosphor
+    bioleaching parameters (4.7% vs 5.5% total REE extraction).'
   target_ids:
   - cmmmech:fluorescent-lamp-phosphor
   evidence_ids:
@@ -141,11 +154,12 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
   summary: data/records/fluorescent-lamp-phosphor.yaml was updated exclusively through scripts/curate_causal_graphs.py
-    (curate_record_file), producing append-only history sidecar history/records/fluorescent-lamp-phosphor/2026-10-30T171004Z-marcin-139c21.yaml
-    and passing all LinkML and history validation gates.
+    (curate_record_file), producing append-only history sidecar(s) (history/records/fluorescent-lamp-phosphor/2026-10-30T171004Z-marcin-139c21.yaml,
+    latest SHA-256 5ad25aed10a94b721ced92fe151aa17e396a08f6c854d8baeb6a7e3a1c593835) and passing all LinkML
+    and history validation gates.
   target_ids:
   - cmmmech:fluorescent-lamp-phosphor
   evidence_ids:
@@ -156,12 +170,14 @@ findings: []
 actions: []
 summary: 'Spent fluorescent-lamp phosphor powder (cmmmech:fluorescent-lamp-phosphor) passes Cycle 5 Stage
   2 causal-graph review (scientific_review: true) at SHA-256 cd27c40ce1c11eae898b561a7adc83373d0f3d228f393025edc2421a58272e03:
-  Synchronized causal_graphs[0] (gluconobacter_phosphor_bioleaching_graph) in data/records/fluorescent-lamp-phosphor.yaml
-  with mechanisms[0]: replaced unmeasured Ce3+->Ce4+ redox language with the actual Reed et al. (2016)
-  retorted phosphor powder bioleaching findings (preferential Y2O3:Eu3+ red phosphor dissolution vs phosphate/aluminate
-  phosphors and higher whole-supernatant recovery than abiotic gluconic acid alone), refined the substrate
-  edge predicate from acts_on to solubilizes, and aligned supports: partial on the gluconic_acid_lixiviant
-  -> starting_substrate edge.'
+  Synchronized causal_graphs[0] (gluconobacter_phosphor_bioleaching_graph, mechanism_ref: gluconobacter_biolixiviant_ree_release)
+  in data/records/fluorescent-lamp-phosphor.yaml with mechanisms[0] (Rare-earth release from retorted
+  phosphor by Gluconobacter biolixiviant) and primary source schmitz2021 (DOI:10.1038/s41467-021-27047-4):
+  edge gluconic_acid_biolixiviant -> retorted_lamp_phosphor uses predicate ''solubilizes'' (supports:
+  support) and edge retorted_lamp_phosphor -> leached_y_eu_ree uses predicate ''produces'' (supports:
+  support). Upgraded gluconic_acid_biolixiviant -> retorted_lamp_phosphor from acts_on to solubilizes
+  and replaced template node and edge descriptions with exact schmitz2021 4% w/v retorted lamp phosphor
+  bioleaching parameters (4.7% vs 5.5% total REE extraction).'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes;
   an independent subagent PR review is executed prior to merge.'

@@ -11,14 +11,15 @@ reviewer:
   model: antigravity
   independence: self_review
   independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md verifying
-    the Cycle 5 Stage 2 causal_graphs[0] update in data/records/titanium-metal.yaml (SHA-256 bbb910dc494825e9d99307c5ea43b9cfbd640c1dcc508c6d2b6aba397ce08ac0)
-    against mechanisms[0] and its cited primary source (DOI:10.1038/s41529-023-00419-z).
+    the Cycle 5 Stage 2 causal_graphs[0] (ferrooxidans_titanium_sponge_grinding_graph) update in data/records/titanium-metal.yaml
+    (SHA-256 bbb910dc494825e9d99307c5ea43b9cfbd640c1dcc508c6d2b6aba397ce08ac0) against mechanisms[0] (culture_ferric_grinding_of_titanium_sponge)
+    and its cited primary source baranov2013-sponge (https://journal.mmi.kpi.ua/old/article/view/29005).
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 source:
-  git_revision: 9e3221733b5efe6fb1be27fcc03692abc3a0de44
+  git_revision: 2f2de84859ee4156bb09f2a0110d35edc48b8020
   state: working_tree
   inputs:
   - path: data/records/titanium-metal.yaml
@@ -44,8 +45,9 @@ targets:
     role: canonical_history
 scope:
   description: Cycle 5 Stage 2 causal-graph review of data/records/titanium-metal.yaml (SHA-256 bbb910dc494825e9d99307c5ea43b9cfbd640c1dcc508c6d2b6aba397ce08ac0)
-    and its canonical EDIT history sidecar (history/records/titanium-metal/2026-10-30T171004Z-marcin-2254f7.yaml)
-    verifying full synchronization between causal_graphs[0] and mechanisms[0].
+    and its canonical EDIT history sidecar(s) (history/records/titanium-metal/2026-10-30T171004Z-marcin-2254f7.yaml)
+    verifying full synchronization between causal_graphs[0] (ferrooxidans_titanium_sponge_grinding_graph)
+    and mechanisms[0] (culture_ferric_grinding_of_titanium_sponge).
   selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:titanium-metal
   coverage: full
   population_size: 1
@@ -55,36 +57,53 @@ evidence:
 - evidence_id: owner
   kind: record_content
   reference: data/records/titanium-metal.yaml
-  locator: Working-tree record data/records/titanium-metal.yaml
+  locator: 'Working-tree record data/records/titanium-metal.yaml (causal_graphs[0]: ferrooxidans_titanium_sponge_grinding_graph)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: 'Synchronized causal_graphs[0] (desulfovibrio_titanium_biocorrosion_graph) in data/records/titanium-metal.yaml
-    with mechanisms[0]: replaced generic organic-acid bioleaching prose with the actual Desulfovibrio
-    vulgaris anaerobic biocorrosion pathway on Grade 2 CpTi coupons (biogenic sulfide attack on the passive
-    TiO2 film, TiS2 formation, OCP shift to -0.58 V vs SCE, and ~5-um deep pitting) while retaining acts_on
-    on biogenic_sulfide_agent -> starting_substrate.'
+  summary: 'Synchronized causal_graphs[0] (ferrooxidans_titanium_sponge_grinding_graph, mechanism_ref:
+    culture_ferric_grinding_of_titanium_sponge) in data/records/titanium-metal.yaml with mechanisms[0]
+    (Culture-containing ferric-solution grinding of titanium sponge feeds) and primary source baranov2013-sponge
+    (https://journal.mmi.kpi.ua/old/article/view/29005): edge acidic_ferric_sulfate_lixiviant -> solid_feed_substrate
+    uses predicate ''acts_on'' (supports: partial) and edge solid_feed_substrate -> solubilized_metal_species
+    uses predicate ''produces'' (supports: partial). Replaced generic ''Culture-generated acidic ferric/sulfate
+    medium attacks Titanium sponge feed'' description and explanation on acidic_ferric_sulfate_lixiviant
+    -> solid_feed_substrate with exact baranov2013-sponge 1:1 bacterial-solution disintegrator treatment
+    details.'
   snapshot_sha256: bbb910dc494825e9d99307c5ea43b9cfbd640c1dcc508c6d2b6aba397ce08ac0
 - evidence_id: primary_source
   kind: primary_source
-  reference: DOI:10.1038/s41529-023-00419-z
-  locator: puta_2023 / NPJ Materials Degradation (2023) 7:99, Sections 2-3, Figures 1-7, Tables 1-3
+  reference: https://journal.mmi.kpi.ua/old/article/view/29005
+  locator: 'baranov2013-sponge: Baranov, Kryukovskaya and Maronchuk (2013), The production of titanium
+    nanopowders from the titanium sponge and titanium industry waste using method of the bacterial leaching.
+    Visnyk NTUU KPI, Mechanical Engineering 3(69), 131-135. Complete Russian original, Figures 1-3 and
+    the unnumbered composition table; printed issue year 2013, manuscript received 22 December 2012. Portal
+    posting date 2014-01-07 differs from the issue year. Publisher-declared DOI 10.20535/2305-9001.2013.69.29005
+    returned HTTP 404 at doi.org and Crossref on the access date; the official article/PDF is accessible.
+    (https://journal.mmi.kpi.ua/old/article/view/29005)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: The primary study (puta_2023) investigated microbially influenced corrosion (MIC) of commercially
-    pure Grade 2 titanium (CpTi) coupons in modified Postgate C medium inoculated with Desulfovibrio vulgaris
-    over 14 days at 37 degrees C, demonstrating biofilm attachment (~23-um thick), biogenic H2S production,
-    breakdown of the passive TiO2 film into needle-like TiS2 corrosion products, open-circuit potential
-    shift to -0.58 V vs SCE, reduced charge-transfer resistance, and ~5-um deep pitting corrosion without
-    direct DsrAB enzymatic characterization.
+  summary: 'Baranov and colleagues processed titanium sponge and a source-described titanium slag in a
+    rotating disintegrator with ferric-sulfate solution containing Thiobacillus ferrooxidans. They obtained
+    fine agglomerated powders reported to contain titanium oxides and hydride. This supports a culture-associated
+    mechanical and chemical workflow; it does not isolate bacterial causality, demonstrate microbial titanium
+    reduction, or establish a pure titanium-metal product. Substrate-edge evidence (baranov2013-sponge,
+    supports: partial): Baranov et al. (2013) contacted and co-milled titanium sponge and waste feeds
+    with A. ferrooxidans ferric-sulfate solution in a mechanical disintegrator without sterile-medium
+    or dry mechanical-only controls. Product-edge evidence (baranov2013-sponge, supports: partial): Baranov
+    et al. (2013) report disintegration into fine agglomerated powder with reported titanium oxides and
+    hydride, without published XRD patterns or abiotic controls.'
 - evidence_id: edit_history
   kind: record_content
   reference: history/records/titanium-metal/2026-10-30T171004Z-marcin-2254f7.yaml
   locator: Canonical EDIT history sidecar history/records/titanium-metal/2026-10-30T171004Z-marcin-2254f7.yaml
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Canonical EDIT history sidecar history/records/titanium-metal/2026-10-30T171004Z-marcin-2254f7.yaml
-    (SHA-256 b4da8fa8c9fe8376c675f0836c0c96595d765f6343b0ea9965aa14eed706441a) records the Cycle 5 Stage
-    2 causal_graphs[0] update via scripts/curate_causal_graphs.py.
+  summary: 'Canonical EDIT history sidecar history/records/titanium-metal/2026-10-30T171004Z-marcin-2254f7.yaml
+    (SHA-256 b4da8fa8c9fe8376c675f0836c0c96595d765f6343b0ea9965aa14eed706441a): Replace leftover template
+    description/explanation on titanium-metal causal_graphs[0] lixiviant edge with baranov2013-sponge
+    details — Replaced generic ''Culture-generated acidic ferric/sulfate medium attacks Titanium sponge
+    feed'' description and explanation on acidic_ferric_sulfate_lixiviant -> solid_feed_substrate with
+    exact baranov2013-sponge 1:1 bacterial-solution disintegrator treatment details.'
   snapshot_sha256: b4da8fa8c9fe8376c675f0836c0c96595d765f6343b0ea9965aa14eed706441a
 - evidence_id: validation
   kind: validation
@@ -124,13 +143,18 @@ checks:
 assessments:
 - assessment_id: causal_graph_and_mechanism_synchronization
   area: graph
-  topic: Synchronization of causal_graphs[0] with mechanisms[0] and primary source (DOI:10.1038/s41529-023-00419-z)
+  topic: Synchronization of causal_graphs[0] (ferrooxidans_titanium_sponge_grinding_graph) with mechanisms[0]
+    (culture_ferric_grinding_of_titanium_sponge) and primary source baranov2013-sponge (https://journal.mmi.kpi.ua/old/article/view/29005)
   outcome: supported
-  summary: 'Synchronized causal_graphs[0] (desulfovibrio_titanium_biocorrosion_graph) in data/records/titanium-metal.yaml
-    with mechanisms[0]: replaced generic organic-acid bioleaching prose with the actual Desulfovibrio
-    vulgaris anaerobic biocorrosion pathway on Grade 2 CpTi coupons (biogenic sulfide attack on the passive
-    TiO2 film, TiS2 formation, OCP shift to -0.58 V vs SCE, and ~5-um deep pitting) while retaining acts_on
-    on biogenic_sulfide_agent -> starting_substrate.'
+  summary: 'Synchronized causal_graphs[0] (ferrooxidans_titanium_sponge_grinding_graph, mechanism_ref:
+    culture_ferric_grinding_of_titanium_sponge) in data/records/titanium-metal.yaml with mechanisms[0]
+    (Culture-containing ferric-solution grinding of titanium sponge feeds) and primary source baranov2013-sponge
+    (https://journal.mmi.kpi.ua/old/article/view/29005): edge acidic_ferric_sulfate_lixiviant -> solid_feed_substrate
+    uses predicate ''acts_on'' (supports: partial) and edge solid_feed_substrate -> solubilized_metal_species
+    uses predicate ''produces'' (supports: partial). Replaced generic ''Culture-generated acidic ferric/sulfate
+    medium attacks Titanium sponge feed'' description and explanation on acidic_ferric_sulfate_lixiviant
+    -> solid_feed_substrate with exact baranov2013-sponge 1:1 bacterial-solution disintegrator treatment
+    details.'
   target_ids:
   - cmmmech:titanium-metal
   evidence_ids:
@@ -138,11 +162,12 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
   summary: data/records/titanium-metal.yaml was updated exclusively through scripts/curate_causal_graphs.py
-    (curate_record_file), producing append-only history sidecar history/records/titanium-metal/2026-10-30T171004Z-marcin-2254f7.yaml
-    and passing all LinkML and history validation gates.
+    (curate_record_file), producing append-only history sidecar(s) (history/records/titanium-metal/2026-10-30T171004Z-marcin-2254f7.yaml,
+    latest SHA-256 b4da8fa8c9fe8376c675f0836c0c96595d765f6343b0ea9965aa14eed706441a) and passing all LinkML
+    and history validation gates.
   target_ids:
   - cmmmech:titanium-metal
   evidence_ids:
@@ -153,11 +178,14 @@ findings: []
 actions: []
 summary: 'Titanium metal (cmmmech:titanium-metal) passes Cycle 5 Stage 2 causal-graph review (scientific_review:
   true) at SHA-256 bbb910dc494825e9d99307c5ea43b9cfbd640c1dcc508c6d2b6aba397ce08ac0: Synchronized causal_graphs[0]
-  (desulfovibrio_titanium_biocorrosion_graph) in data/records/titanium-metal.yaml with mechanisms[0]:
-  replaced generic organic-acid bioleaching prose with the actual Desulfovibrio vulgaris anaerobic biocorrosion
-  pathway on Grade 2 CpTi coupons (biogenic sulfide attack on the passive TiO2 film, TiS2 formation, OCP
-  shift to -0.58 V vs SCE, and ~5-um deep pitting) while retaining acts_on on biogenic_sulfide_agent ->
-  starting_substrate.'
+  (ferrooxidans_titanium_sponge_grinding_graph, mechanism_ref: culture_ferric_grinding_of_titanium_sponge)
+  in data/records/titanium-metal.yaml with mechanisms[0] (Culture-containing ferric-solution grinding
+  of titanium sponge feeds) and primary source baranov2013-sponge (https://journal.mmi.kpi.ua/old/article/view/29005):
+  edge acidic_ferric_sulfate_lixiviant -> solid_feed_substrate uses predicate ''acts_on'' (supports: partial)
+  and edge solid_feed_substrate -> solubilized_metal_species uses predicate ''produces'' (supports: partial).
+  Replaced generic ''Culture-generated acidic ferric/sulfate medium attacks Titanium sponge feed'' description
+  and explanation on acidic_ferric_sulfate_lixiviant -> solid_feed_substrate with exact baranov2013-sponge
+  1:1 bacterial-solution disintegrator treatment details.'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes;
   an independent subagent PR review is executed prior to merge.'

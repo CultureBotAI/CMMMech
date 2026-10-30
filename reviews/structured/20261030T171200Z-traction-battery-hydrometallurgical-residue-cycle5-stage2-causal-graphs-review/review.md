@@ -11,15 +11,15 @@
 
 ## Summary
 
-Traction-battery hydrometallurgical residue (cmmmech:traction-battery-hydrometallurgical-residue) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256 c6896cbd183fa9dd50760f6baf526609f4c84cc2dcf7b554323d035fbeffadea: Synchronized causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph) in data/records/traction-battery-hydrometallurgical-residue.yaml with mechanisms[0]: replaced generic bauxite-residue prose and unmeasured Mn/Li extraction claims on leached_product_state and the two downstream edges with the exact Lu et al. (2025) separate nickel-line (Ni) and cobalt-line (Co) traction-battery residue bioleaching findings across 10-50% w/v and 30/40/45 degrees C, refined the substrate edge predicate from acts_on to solubilizes, and aligned supports: partial.
+Traction-battery hydrometallurgical residue (cmmmech:traction-battery-hydrometallurgical-residue) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256 c6896cbd183fa9dd50760f6baf526609f4c84cc2dcf7b554323d035fbeffadea: Synchronized causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph, mechanism_ref: acidophile_culture_associated_leaching) in data/records/traction-battery-hydrometallurgical-residue.yaml with mechanisms[0] (Acidophile culture-associated release from separate nickel and cobalt residues) and primary source lu2025 (DOI:10.1039/D5RA07472J): edge acidic_ferric_sulfate_lixiviant -&gt; solid_feed_substrate uses predicate 'solubilizes' (supports: partial) and edge solid_feed_substrate -&gt; solubilized_metal_species uses predicate 'produces' (supports: support). Upgraded acidic_ferric_sulfate_lixiviant -&gt; solid_feed_substrate from acts_on to solubilizes (retaining supports: partial for unmatched 40/45 degrees C and pH/iron controls) and replaced template node/edge descriptions with exact lu2025 separate nickel-line and cobalt-line EV battery residue bioleaching parameters.
 
 ## Scope And Provenance
 
-Cycle 5 Stage 2 causal-graph review of data/records/traction-battery-hydrometallurgical-residue.yaml (SHA-256 c6896cbd183fa9dd50760f6baf526609f4c84cc2dcf7b554323d035fbeffadea) and its canonical EDIT history sidecar (history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml) verifying full synchronization between causal_graphs[0] and mechanisms[0].
+Cycle 5 Stage 2 causal-graph review of data/records/traction-battery-hydrometallurgical-residue.yaml (SHA-256 c6896cbd183fa9dd50760f6baf526609f4c84cc2dcf7b554323d035fbeffadea) and its canonical EDIT history sidecar(s) (history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml) verifying full synchronization between causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph) and mechanisms[0] (acidophile_culture_associated_leaching).
 
 Selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:traction-battery-hydrometallurgical-residue
 Coverage: full; 1 reviewed / 1 in the declared population.
-Source: working_tree at Git base 9e3221733b5efe6fb1be27fcc03692abc3a0de44.
+Source: working_tree at Git base 2f2de84859ee4156bb09f2a0110d35edc48b8020.
 Working-tree hashes do not imply those bytes were committed.
 
 | Target | Path / selector | Kind | Label |
@@ -35,17 +35,17 @@ Working-tree hashes do not imply those bytes were committed.
 
 ## Scientific And Domain Assessments
 
-### Synchronization of causal_graphs[0] with mechanisms[0] and primary source (DOI:10.1039/D5RA07472J)
+### Synchronization of causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph) with mechanisms[0] (acidophile_culture_associated_leaching) and primary source lu2025 (DOI:10.1039/D5RA07472J)
 
 graph: supported. Targets: cmmmech:traction-battery-hydrometallurgical-residue.
 
-Synchronized causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph) in data/records/traction-battery-hydrometallurgical-residue.yaml with mechanisms[0]: replaced generic bauxite-residue prose and unmeasured Mn/Li extraction claims on leached_product_state and the two downstream edges with the exact Lu et al. (2025) separate nickel-line (Ni) and cobalt-line (Co) traction-battery residue bioleaching findings across 10-50% w/v and 30/40/45 degrees C, refined the substrate edge predicate from acts_on to solubilizes, and aligned supports: partial.
+Synchronized causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph, mechanism_ref: acidophile_culture_associated_leaching) in data/records/traction-battery-hydrometallurgical-residue.yaml with mechanisms[0] (Acidophile culture-associated release from separate nickel and cobalt residues) and primary source lu2025 (DOI:10.1039/D5RA07472J): edge acidic_ferric_sulfate_lixiviant -&gt; solid_feed_substrate uses predicate 'solubilizes' (supports: partial) and edge solid_feed_substrate -&gt; solubilized_metal_species uses predicate 'produces' (supports: support). Upgraded acidic_ferric_sulfate_lixiviant -&gt; solid_feed_substrate from acts_on to solubilizes (retaining supports: partial for unmatched 40/45 degrees C and pH/iron controls) and replaced template node/edge descriptions with exact lu2025 separate nickel-line and cobalt-line EV battery residue bioleaching parameters.
 
-### Verification of canonical EDIT history sidecar and strict schema validation
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
 
 provenance: supported. Targets: cmmmech:traction-battery-hydrometallurgical-residue.
 
-data/records/traction-battery-hydrometallurgical-residue.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml and passing all LinkML and history validation gates.
+data/records/traction-battery-hydrometallurgical-residue.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml, latest SHA-256 9298b22005fec24cbb2447a74a6d2acf93d7f883ffb8cc8a5a25c884e3ca21b8) and passing all LinkML and history validation gates.
 
 ## Findings
 
@@ -60,9 +60,9 @@ No findings recorded within this review's declared scope.
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| owner | data/records/traction-battery-hydrometallurgical-residue.yaml; Working-tree record data/records/traction-battery-hydrometallurgical-residue.yaml | supports | Synchronized causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph) in data/records/traction-battery-hydrometallurgical-residue.yaml with mechanisms[0]: replaced generic bauxite-residue prose and unmeasured Mn/Li extraction claims on leached_product_state and the two downstream edges with the exact Lu et al. (2025) separate nickel-line (Ni) and cobalt-line (Co) traction-battery residue bioleaching findings across 10-50% w/v and 30/40/45 degrees C, refined the substrate edge predicate from acts_on to solubilizes, and aligned supports: partial. |
-| primary_source | DOI:10.1039/D5RA07472J; Lu et al. (2025) RSC Advances 15:45979-45985, Sections 2.1-2.4, Tables 1-2, Figures 1-6, SI Table S1 | supports | Lu et al. (2025) studied bioleaching of separate acid-leached nickel-line and cobalt-line traction-battery hydrometallurgical residues across 10-50% w/v pulp density (200-1,000 g per 2 L 9K medium, initial pH 1.9) and 30, 40, and 45 degrees C using single cultures and consortia of Acidithiobacillus ferrooxidans, A. thiooxidans, A. caldus, Leptospirillum ferriphilum, and Sulfobacillus thermotolerans, tracking Ni (from the nickel-line residue) and Co (from the cobalt-line residue) recovery alongside Fe2+/Fe3+ redox cycling and sulfuric acid generation without direct Sqr/Sqor or Tth/TetH protein assays. |
-| edit_history | history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml; Canonical EDIT history sidecar history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml | supports | Canonical EDIT history sidecar history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml (SHA-256 9298b22005fec24cbb2447a74a6d2acf93d7f883ffb8cc8a5a25c884e3ca21b8) records the Cycle 5 Stage 2 causal_graphs[0] update via scripts/curate_causal_graphs.py. |
+| owner | data/records/traction-battery-hydrometallurgical-residue.yaml; Working-tree record data/records/traction-battery-hydrometallurgical-residue.yaml (causal_graphs[0]: ferrooxidans_battery_residue_bioleaching_graph) | supports | Synchronized causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph, mechanism_ref: acidophile_culture_associated_leaching) in data/records/traction-battery-hydrometallurgical-residue.yaml with mechanisms[0] (Acidophile culture-associated release from separate nickel and cobalt residues) and primary source lu2025 (DOI:10.1039/D5RA07472J): edge acidic_ferric_sulfate_lixiviant -&gt; solid_feed_substrate uses predicate 'solubilizes' (supports: partial) and edge solid_feed_substrate -&gt; solubilized_metal_species uses predicate 'produces' (supports: support). Upgraded acidic_ferric_sulfate_lixiviant -&gt; solid_feed_substrate from acts_on to solubilizes (retaining supports: partial for unmatched 40/45 degrees C and pH/iron controls) and replaced template node/edge descriptions with exact lu2025 separate nickel-line and cobalt-line EV battery residue bioleaching parameters. |
+| primary_source | DOI:10.1039/D5RA07472J; lu2025: Lu, H., Zhang, H., Chen, X., Wang, L. and Yan, X. (2025). Bioleaching of sludge from acid-leached waste traction batteries used in electric vehicles for the extraction of Ni and Co using optimized microbial consortia. RSC Advances 15, 45979–45985. DOI 10.1039/D5RA07472J; complete Europe PMC XML, Sections 2–3, Tables 1–2, original Figures 1–6 and two-page SI Table S1. (https://doi.org/10.1039/D5RA07472J) | supports | Living acidophilic cultures were associated with increased dissolved-metal release from separate acid-leached nickel-line and cobalt-line residues. Single cultures and mixtures were compared. Iron and sulfur metabolism is a proposed explanation; the experiment does not isolate a unique cellular pathway or establish the contribution of each mixture member. The claim is laboratory solution release rather than isolated-product recovery or industrial deployment. Substrate-edge evidence (lu2025, supports: partial): Lu et al. (2025) Sections 3.1.1–3.1.4 and Figures 1–4 report higher Ni and Co leaching ratios in inoculated single and consortium arms than in the 30 degrees C uninoculated blank, though matched 40/45 degrees C abiotic controls and pH/iron-matched controls were not reported. Product-edge evidence (lu2025, supports: support): ICP-MS filtrate time series in Lu et al. (2025) Figures 1–4 confirm higher dissolved Ni and Co release from the respective battery residues in inoculated 9K systems than in the 30 degrees C blank. |
+| edit_history | history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml; Canonical EDIT history sidecar history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml | supports | Canonical EDIT history sidecar history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml (SHA-256 9298b22005fec24cbb2447a74a6d2acf93d7f883ffb8cc8a5a25c884e3ca21b8): Upgrade traction-battery-hydrometallurgical-residue causal_graphs[0] lixiviant predicate to solubilizes and ground text in lu2025 — Upgraded acidic_ferric_sulfate_lixiviant -&gt; solid_feed_substrate from acts_on to solubilizes (retaining supports: partial for unmatched 40/45 degrees C and pH/iron controls) and replaced template node/edge descriptions with exact lu2025 separate nickel-line and cobalt-line EV battery residue bioleaching parameters. |
 | validation | data/records/traction-battery-hydrometallurgical-residue.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/traction-battery-hydrometallurgical-residue.yaml and history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml pass strict LinkML schema and history validation with 0 errors. |
 
 ## Limits And Additional Notes
@@ -89,15 +89,16 @@ reviewer:
   model: antigravity
   independence: self_review
   independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
-    verifying the Cycle 5 Stage 2 causal_graphs[0] update in data/records/traction-battery-hydrometallurgical-residue.yaml
-    (SHA-256 c6896cbd183fa9dd50760f6baf526609f4c84cc2dcf7b554323d035fbeffadea) against
-    mechanisms[0] and its cited primary source (DOI:10.1039/D5RA07472J).
+    verifying the Cycle 5 Stage 2 causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph)
+    update in data/records/traction-battery-hydrometallurgical-residue.yaml (SHA-256
+    c6896cbd183fa9dd50760f6baf526609f4c84cc2dcf7b554323d035fbeffadea) against mechanisms[0]
+    (acidophile_culture_associated_leaching) and its cited primary source lu2025 (DOI:10.1039/D5RA07472J).
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 source:
-  git_revision: 9e3221733b5efe6fb1be27fcc03692abc3a0de44
+  git_revision: 2f2de84859ee4156bb09f2a0110d35edc48b8020
   state: working_tree
   inputs:
   - path: data/records/traction-battery-hydrometallurgical-residue.yaml
@@ -124,8 +125,9 @@ targets:
 scope:
   description: Cycle 5 Stage 2 causal-graph review of data/records/traction-battery-hydrometallurgical-residue.yaml
     (SHA-256 c6896cbd183fa9dd50760f6baf526609f4c84cc2dcf7b554323d035fbeffadea) and
-    its canonical EDIT history sidecar (history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml)
-    verifying full synchronization between causal_graphs[0] and mechanisms[0].
+    its canonical EDIT history sidecar(s) (history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml)
+    verifying full synchronization between causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph)
+    and mechanisms[0] (acidophile_culture_associated_leaching).
   selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:traction-battery-hydrometallurgical-residue
   coverage: full
   population_size: 1
@@ -135,41 +137,59 @@ evidence:
 - evidence_id: owner
   kind: record_content
   reference: data/records/traction-battery-hydrometallurgical-residue.yaml
-  locator: Working-tree record data/records/traction-battery-hydrometallurgical-residue.yaml
+  locator: 'Working-tree record data/records/traction-battery-hydrometallurgical-residue.yaml
+    (causal_graphs[0]: ferrooxidans_battery_residue_bioleaching_graph)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: 'Synchronized causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph)
-    in data/records/traction-battery-hydrometallurgical-residue.yaml with mechanisms[0]:
-    replaced generic bauxite-residue prose and unmeasured Mn/Li extraction claims
-    on leached_product_state and the two downstream edges with the exact Lu et al.
-    (2025) separate nickel-line (Ni) and cobalt-line (Co) traction-battery residue
-    bioleaching findings across 10-50% w/v and 30/40/45 degrees C, refined the substrate
-    edge predicate from acts_on to solubilizes, and aligned supports: partial.'
+  summary: 'Synchronized causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph,
+    mechanism_ref: acidophile_culture_associated_leaching) in data/records/traction-battery-hydrometallurgical-residue.yaml
+    with mechanisms[0] (Acidophile culture-associated release from separate nickel
+    and cobalt residues) and primary source lu2025 (DOI:10.1039/D5RA07472J): edge
+    acidic_ferric_sulfate_lixiviant -> solid_feed_substrate uses predicate ''solubilizes''
+    (supports: partial) and edge solid_feed_substrate -> solubilized_metal_species
+    uses predicate ''produces'' (supports: support). Upgraded acidic_ferric_sulfate_lixiviant
+    -> solid_feed_substrate from acts_on to solubilizes (retaining supports: partial
+    for unmatched 40/45 degrees C and pH/iron controls) and replaced template node/edge
+    descriptions with exact lu2025 separate nickel-line and cobalt-line EV battery
+    residue bioleaching parameters.'
   snapshot_sha256: c6896cbd183fa9dd50760f6baf526609f4c84cc2dcf7b554323d035fbeffadea
 - evidence_id: primary_source
   kind: primary_source
   reference: DOI:10.1039/D5RA07472J
-  locator: Lu et al. (2025) RSC Advances 15:45979-45985, Sections 2.1-2.4, Tables
-    1-2, Figures 1-6, SI Table S1
+  locator: 'lu2025: Lu, H., Zhang, H., Chen, X., Wang, L. and Yan, X. (2025). Bioleaching
+    of sludge from acid-leached waste traction batteries used in electric vehicles
+    for the extraction of Ni and Co using optimized microbial consortia. RSC Advances
+    15, 45979–45985. DOI 10.1039/D5RA07472J; complete Europe PMC XML, Sections 2–3,
+    Tables 1–2, original Figures 1–6 and two-page SI Table S1. (https://doi.org/10.1039/D5RA07472J)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Lu et al. (2025) studied bioleaching of separate acid-leached nickel-line
-    and cobalt-line traction-battery hydrometallurgical residues across 10-50% w/v
-    pulp density (200-1,000 g per 2 L 9K medium, initial pH 1.9) and 30, 40, and 45
-    degrees C using single cultures and consortia of Acidithiobacillus ferrooxidans,
-    A. thiooxidans, A. caldus, Leptospirillum ferriphilum, and Sulfobacillus thermotolerans,
-    tracking Ni (from the nickel-line residue) and Co (from the cobalt-line residue)
-    recovery alongside Fe2+/Fe3+ redox cycling and sulfuric acid generation without
-    direct Sqr/Sqor or Tth/TetH protein assays.
+  summary: 'Living acidophilic cultures were associated with increased dissolved-metal
+    release from separate acid-leached nickel-line and cobalt-line residues. Single
+    cultures and mixtures were compared. Iron and sulfur metabolism is a proposed
+    explanation; the experiment does not isolate a unique cellular pathway or establish
+    the contribution of each mixture member. The claim is laboratory solution release
+    rather than isolated-product recovery or industrial deployment. Substrate-edge
+    evidence (lu2025, supports: partial): Lu et al. (2025) Sections 3.1.1–3.1.4 and
+    Figures 1–4 report higher Ni and Co leaching ratios in inoculated single and consortium
+    arms than in the 30 degrees C uninoculated blank, though matched 40/45 degrees
+    C abiotic controls and pH/iron-matched controls were not reported. Product-edge
+    evidence (lu2025, supports: support): ICP-MS filtrate time series in Lu et al.
+    (2025) Figures 1–4 confirm higher dissolved Ni and Co release from the respective
+    battery residues in inoculated 9K systems than in the 30 degrees C blank.'
 - evidence_id: edit_history
   kind: record_content
   reference: history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml
   locator: Canonical EDIT history sidecar history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Canonical EDIT history sidecar history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml
-    (SHA-256 9298b22005fec24cbb2447a74a6d2acf93d7f883ffb8cc8a5a25c884e3ca21b8) records
-    the Cycle 5 Stage 2 causal_graphs[0] update via scripts/curate_causal_graphs.py.
+  summary: 'Canonical EDIT history sidecar history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml
+    (SHA-256 9298b22005fec24cbb2447a74a6d2acf93d7f883ffb8cc8a5a25c884e3ca21b8): Upgrade
+    traction-battery-hydrometallurgical-residue causal_graphs[0] lixiviant predicate
+    to solubilizes and ground text in lu2025 — Upgraded acidic_ferric_sulfate_lixiviant
+    -> solid_feed_substrate from acts_on to solubilizes (retaining supports: partial
+    for unmatched 40/45 degrees C and pH/iron controls) and replaced template node/edge
+    descriptions with exact lu2025 separate nickel-line and cobalt-line EV battery
+    residue bioleaching parameters.'
   snapshot_sha256: 9298b22005fec24cbb2447a74a6d2acf93d7f883ffb8cc8a5a25c884e3ca21b8
 - evidence_id: validation
   kind: validation
@@ -209,16 +229,21 @@ checks:
 assessments:
 - assessment_id: causal_graph_and_mechanism_synchronization
   area: graph
-  topic: Synchronization of causal_graphs[0] with mechanisms[0] and primary source
-    (DOI:10.1039/D5RA07472J)
+  topic: Synchronization of causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph)
+    with mechanisms[0] (acidophile_culture_associated_leaching) and primary source
+    lu2025 (DOI:10.1039/D5RA07472J)
   outcome: supported
-  summary: 'Synchronized causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph)
-    in data/records/traction-battery-hydrometallurgical-residue.yaml with mechanisms[0]:
-    replaced generic bauxite-residue prose and unmeasured Mn/Li extraction claims
-    on leached_product_state and the two downstream edges with the exact Lu et al.
-    (2025) separate nickel-line (Ni) and cobalt-line (Co) traction-battery residue
-    bioleaching findings across 10-50% w/v and 30/40/45 degrees C, refined the substrate
-    edge predicate from acts_on to solubilizes, and aligned supports: partial.'
+  summary: 'Synchronized causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph,
+    mechanism_ref: acidophile_culture_associated_leaching) in data/records/traction-battery-hydrometallurgical-residue.yaml
+    with mechanisms[0] (Acidophile culture-associated release from separate nickel
+    and cobalt residues) and primary source lu2025 (DOI:10.1039/D5RA07472J): edge
+    acidic_ferric_sulfate_lixiviant -> solid_feed_substrate uses predicate ''solubilizes''
+    (supports: partial) and edge solid_feed_substrate -> solubilized_metal_species
+    uses predicate ''produces'' (supports: support). Upgraded acidic_ferric_sulfate_lixiviant
+    -> solid_feed_substrate from acts_on to solubilizes (retaining supports: partial
+    for unmatched 40/45 degrees C and pH/iron controls) and replaced template node/edge
+    descriptions with exact lu2025 separate nickel-line and cobalt-line EV battery
+    residue bioleaching parameters.'
   target_ids:
   - cmmmech:traction-battery-hydrometallurgical-residue
   evidence_ids:
@@ -226,11 +251,12 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
   summary: data/records/traction-battery-hydrometallurgical-residue.yaml was updated
     exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing
-    append-only history sidecar history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml
+    append-only history sidecar(s) (history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml,
+    latest SHA-256 9298b22005fec24cbb2447a74a6d2acf93d7f883ffb8cc8a5a25c884e3ca21b8)
     and passing all LinkML and history validation gates.
   target_ids:
   - cmmmech:traction-battery-hydrometallurgical-residue
@@ -243,12 +269,16 @@ actions: []
 summary: 'Traction-battery hydrometallurgical residue (cmmmech:traction-battery-hydrometallurgical-residue)
   passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256
   c6896cbd183fa9dd50760f6baf526609f4c84cc2dcf7b554323d035fbeffadea: Synchronized causal_graphs[0]
-  (ferrooxidans_battery_residue_bioleaching_graph) in data/records/traction-battery-hydrometallurgical-residue.yaml
-  with mechanisms[0]: replaced generic bauxite-residue prose and unmeasured Mn/Li
-  extraction claims on leached_product_state and the two downstream edges with the
-  exact Lu et al. (2025) separate nickel-line (Ni) and cobalt-line (Co) traction-battery
-  residue bioleaching findings across 10-50% w/v and 30/40/45 degrees C, refined the
-  substrate edge predicate from acts_on to solubilizes, and aligned supports: partial.'
+  (ferrooxidans_battery_residue_bioleaching_graph, mechanism_ref: acidophile_culture_associated_leaching)
+  in data/records/traction-battery-hydrometallurgical-residue.yaml with mechanisms[0]
+  (Acidophile culture-associated release from separate nickel and cobalt residues)
+  and primary source lu2025 (DOI:10.1039/D5RA07472J): edge acidic_ferric_sulfate_lixiviant
+  -> solid_feed_substrate uses predicate ''solubilizes'' (supports: partial) and edge
+  solid_feed_substrate -> solubilized_metal_species uses predicate ''produces'' (supports:
+  support). Upgraded acidic_ferric_sulfate_lixiviant -> solid_feed_substrate from
+  acts_on to solubilizes (retaining supports: partial for unmatched 40/45 degrees
+  C and pH/iron controls) and replaced template node/edge descriptions with exact
+  lu2025 separate nickel-line and cobalt-line EV battery residue bioleaching parameters.'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes; an independent subagent PR review is executed prior to merge.'

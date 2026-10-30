@@ -11,15 +11,15 @@
 
 ## Summary
 
-Zinc (cmmmech:zinc) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256 2b376c474591caadd5e19689dcb85928a92e68392354fa6dd26e6d07734125a5: Synchronized causal_graphs[0] (ferrooxidans_zinc_bioleaching_graph) in data/records/zinc.yaml with mechanisms[0]: replaced generic bauxite-residue prose with the exact Sajjad et al. (2021) sphalerite ore bioleaching findings (90.2% Zn in mixed W1+W2 culture vs 74.6% W2, 51.4% W1, and 14.3% abiotic control over 25 days at 30 degrees C), and refined the substrate edge predicate from acts_on to solubilizes.
+Zinc (cmmmech:zinc) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256 2b376c474591caadd5e19689dcb85928a92e68392354fa6dd26e6d07734125a5: Synchronized causal_graphs[0] (ferrooxidans_sphalerite_zinc_dissolution_graph, mechanism_ref: ferrooxidans_sphalerite_dissolution) in data/records/zinc.yaml with mechanisms[0] (Conditional enhancement of sphalerite-concentrate dissolution) and primary source fowler_crundwell_1999 (DOI:10.1128/AEM.65.12.5285-5292.1999): edge acidic_ferric_sulfate_lixiviant -&gt; solid_feed_substrate uses predicate 'dissolves' (supports: partial) and edge solid_feed_substrate -&gt; solubilized_metal_species uses predicate 'produces' (supports: support). Replaced leftover template substrate/product node descriptions and inaccurate 'Culture-generated acidic ferric/sulfate medium' edge text with exact fowler_crundwell_1999 constant-Fe(III) (1 g/L) redox-controlled electrolysis cell sphalerite leaching and surface elemental-sulfur oxidation details.
 
 ## Scope And Provenance
 
-Cycle 5 Stage 2 causal-graph review of data/records/zinc.yaml (SHA-256 2b376c474591caadd5e19689dcb85928a92e68392354fa6dd26e6d07734125a5) and its canonical EDIT history sidecar (history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml) verifying full synchronization between causal_graphs[0] and mechanisms[0].
+Cycle 5 Stage 2 causal-graph review of data/records/zinc.yaml (SHA-256 2b376c474591caadd5e19689dcb85928a92e68392354fa6dd26e6d07734125a5) and its canonical EDIT history sidecar(s) (history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml) verifying full synchronization between causal_graphs[0] (ferrooxidans_sphalerite_zinc_dissolution_graph) and mechanisms[0] (ferrooxidans_sphalerite_dissolution).
 
 Selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:zinc
 Coverage: full; 1 reviewed / 1 in the declared population.
-Source: working_tree at Git base 9e3221733b5efe6fb1be27fcc03692abc3a0de44.
+Source: working_tree at Git base 2f2de84859ee4156bb09f2a0110d35edc48b8020.
 Working-tree hashes do not imply those bytes were committed.
 
 | Target | Path / selector | Kind | Label |
@@ -35,17 +35,17 @@ Working-tree hashes do not imply those bytes were committed.
 
 ## Scientific And Domain Assessments
 
-### Synchronization of causal_graphs[0] with mechanisms[0] and primary source (DOI:10.1007/s11356-021-15027-0)
+### Synchronization of causal_graphs[0] (ferrooxidans_sphalerite_zinc_dissolution_graph) with mechanisms[0] (ferrooxidans_sphalerite_dissolution) and primary source fowler_crundwell_1999 (DOI:10.1128/AEM.65.12.5285-5292.1999)
 
 graph: supported. Targets: cmmmech:zinc.
 
-Synchronized causal_graphs[0] (ferrooxidans_zinc_bioleaching_graph) in data/records/zinc.yaml with mechanisms[0]: replaced generic bauxite-residue prose with the exact Sajjad et al. (2021) sphalerite ore bioleaching findings (90.2% Zn in mixed W1+W2 culture vs 74.6% W2, 51.4% W1, and 14.3% abiotic control over 25 days at 30 degrees C), and refined the substrate edge predicate from acts_on to solubilizes.
+Synchronized causal_graphs[0] (ferrooxidans_sphalerite_zinc_dissolution_graph, mechanism_ref: ferrooxidans_sphalerite_dissolution) in data/records/zinc.yaml with mechanisms[0] (Conditional enhancement of sphalerite-concentrate dissolution) and primary source fowler_crundwell_1999 (DOI:10.1128/AEM.65.12.5285-5292.1999): edge acidic_ferric_sulfate_lixiviant -&gt; solid_feed_substrate uses predicate 'dissolves' (supports: partial) and edge solid_feed_substrate -&gt; solubilized_metal_species uses predicate 'produces' (supports: support). Replaced leftover template substrate/product node descriptions and inaccurate 'Culture-generated acidic ferric/sulfate medium' edge text with exact fowler_crundwell_1999 constant-Fe(III) (1 g/L) redox-controlled electrolysis cell sphalerite leaching and surface elemental-sulfur oxidation details.
 
-### Verification of canonical EDIT history sidecar and strict schema validation
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
 
 provenance: supported. Targets: cmmmech:zinc.
 
-data/records/zinc.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml and passing all LinkML and history validation gates.
+data/records/zinc.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml, latest SHA-256 95da7029fb706145c925eb1dac9a55b9fa8269dd844d23de45f85918af835089) and passing all LinkML and history validation gates.
 
 ## Findings
 
@@ -60,9 +60,9 @@ No findings recorded within this review's declared scope.
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| owner | data/records/zinc.yaml; Working-tree record data/records/zinc.yaml | supports | Synchronized causal_graphs[0] (ferrooxidans_zinc_bioleaching_graph) in data/records/zinc.yaml with mechanisms[0]: replaced generic bauxite-residue prose with the exact Sajjad et al. (2021) sphalerite ore bioleaching findings (90.2% Zn in mixed W1+W2 culture vs 74.6% W2, 51.4% W1, and 14.3% abiotic control over 25 days at 30 degrees C), and refined the substrate edge predicate from acts_on to solubilizes. |
-| primary_source | DOI:10.1007/s11356-021-15027-0; sajjad2021 / Sajjad W et al. (2021) Environ. Sci. Pollut. Res., Sections 2-3, Figures 1-7, Tables 1-3 | supports | Sajjad et al. (2021) demonstrated bioleaching of sphalerite ore (57.2% Zn, 8.5% Fe, 31.11% S, 1.38% Cu, 0.79% Pb; 2% w/v pulp density in modified 9K medium at initial pH 2.0, 30 degrees C, 150 rpm for 25 days) using indigenous acidophilic sulfur-oxidizing strain Acidithiobacillusiaz / Acidithiobacillus sp. W1 (16S rRNA 99.7% identical to A. ferrooxidans strain B22) and iron-oxidizing strain Acidithiobacillus ferrooxidans W2, recovering 90.2% Zn (~10,318.9 mg/L) in mixed W1+W2 culture vs 74.6% (W2 alone), 51.4% (W1 alone), and 14.3% (abiotic control), with jarosite, elemental S0, and KAl3(SO4)2(OH)6 residue phases and no direct Rus/Sqr/Tth enzyme characterization. |
-| edit_history | history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml; Canonical EDIT history sidecar history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml | supports | Canonical EDIT history sidecar history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml (SHA-256 95da7029fb706145c925eb1dac9a55b9fa8269dd844d23de45f85918af835089) records the Cycle 5 Stage 2 causal_graphs[0] update via scripts/curate_causal_graphs.py. |
+| owner | data/records/zinc.yaml; Working-tree record data/records/zinc.yaml (causal_graphs[0]: ferrooxidans_sphalerite_zinc_dissolution_graph) | supports | Synchronized causal_graphs[0] (ferrooxidans_sphalerite_zinc_dissolution_graph, mechanism_ref: ferrooxidans_sphalerite_dissolution) in data/records/zinc.yaml with mechanisms[0] (Conditional enhancement of sphalerite-concentrate dissolution) and primary source fowler_crundwell_1999 (DOI:10.1128/AEM.65.12.5285-5292.1999): edge acidic_ferric_sulfate_lixiviant -&gt; solid_feed_substrate uses predicate 'dissolves' (supports: partial) and edge solid_feed_substrate -&gt; solubilized_metal_species uses predicate 'produces' (supports: support). Replaced leftover template substrate/product node descriptions and inaccurate 'Culture-generated acidic ferric/sulfate medium' edge text with exact fowler_crundwell_1999 constant-Fe(III) (1 g/L) redox-controlled electrolysis cell sphalerite leaching and surface elemental-sulfur oxidation details. |
+| primary_source | DOI:10.1128/AEM.65.12.5285-5292.1999; fowler_crundwell_1999: Fowler TA and Crundwell FK (1999). Leaching of Zinc Sulfide by Thiobacillus ferrooxidans: Bacterial Oxidation of the Sulfur Product Layer Increases the Rate of Zinc Sulfide Dissolution at High Concentrations of Ferrous Ions. Applied and Environmental Microbiology 65:5285-5292. doi:10.1128/AEM.65.12.5285-5292.1999. Methods; Figures 2-6; Discussion. (https://doi.org/10.1128/AEM.65.12.5285-5292.1999) | supports | Living Thiobacillus ferrooxidans FC1, using the paper's historical name, increased zinc dissolution relative to matched chemical controls at elevated ferrous concentrations after an initial period without an advantage. Surface analyses and kinetic modeling support sulfur-layer removal as the explanation; they do not establish a specific enzyme or direct biological oxidation of the ZnS lattice. Substrate-edge evidence (fowler_crundwell_1999, supports: partial): Fowler and Crundwell (1999) held Fe(III) constant at 1 g/L electrochemically (rather than relying on culture-generated Fe(III) accumulation) and showed that A. ferrooxidans FC1 enhances sphalerite dissolution at 4 and 8 g/L Fe(II) after 8–12 h via removal of the surface sulfur layer, whereas Fowler and Crundwell (1998) found no bacterial enhancement at 1 g/L Fe(II). Product-edge evidence (fowler_crundwell_1999, supports: support): Atomic spectrophotometry filtrate Zn time series and surface sulfur analyses in Fowler and Crundwell (1999) Figures 2–6 confirm increased Zn dissolution and lower surface elemental sulfur in inoculated runs at 4 and 8 g/L Fe(II) relative to sterile controls. |
+| edit_history | history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml; Canonical EDIT history sidecar history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml | supports | Canonical EDIT history sidecar history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml (SHA-256 95da7029fb706145c925eb1dac9a55b9fa8269dd844d23de45f85918af835089): Align zinc causal_graphs[0] node/edge descriptions with fowler_crundwell_1999 controlled-redox electrolysis cell sphalerite leaching — Replaced leftover template substrate/product node descriptions and inaccurate 'Culture-generated acidic ferric/sulfate medium' edge text with exact fowler_crundwell_1999 constant-Fe(III) (1 g/L) redox-controlled electrolysis cell sphalerite leaching and surface elemental-sulfur oxidation details. |
 | validation | data/records/zinc.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/zinc.yaml and history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml pass strict LinkML schema and history validation with 0 errors. |
 
 ## Limits And Additional Notes
@@ -88,15 +88,16 @@ reviewer:
   model: antigravity
   independence: self_review
   independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
-    verifying the Cycle 5 Stage 2 causal_graphs[0] update in data/records/zinc.yaml
-    (SHA-256 2b376c474591caadd5e19689dcb85928a92e68392354fa6dd26e6d07734125a5) against
-    mechanisms[0] and its cited primary source (DOI:10.1007/s11356-021-15027-0).
+    verifying the Cycle 5 Stage 2 causal_graphs[0] (ferrooxidans_sphalerite_zinc_dissolution_graph)
+    update in data/records/zinc.yaml (SHA-256 2b376c474591caadd5e19689dcb85928a92e68392354fa6dd26e6d07734125a5)
+    against mechanisms[0] (ferrooxidans_sphalerite_dissolution) and its cited primary
+    source fowler_crundwell_1999 (DOI:10.1128/AEM.65.12.5285-5292.1999).
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 source:
-  git_revision: 9e3221733b5efe6fb1be27fcc03692abc3a0de44
+  git_revision: 2f2de84859ee4156bb09f2a0110d35edc48b8020
   state: working_tree
   inputs:
   - path: data/records/zinc.yaml
@@ -123,8 +124,9 @@ targets:
 scope:
   description: Cycle 5 Stage 2 causal-graph review of data/records/zinc.yaml (SHA-256
     2b376c474591caadd5e19689dcb85928a92e68392354fa6dd26e6d07734125a5) and its canonical
-    EDIT history sidecar (history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml)
-    verifying full synchronization between causal_graphs[0] and mechanisms[0].
+    EDIT history sidecar(s) (history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml)
+    verifying full synchronization between causal_graphs[0] (ferrooxidans_sphalerite_zinc_dissolution_graph)
+    and mechanisms[0] (ferrooxidans_sphalerite_dissolution).
   selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:zinc
   coverage: full
   population_size: 1
@@ -134,41 +136,58 @@ evidence:
 - evidence_id: owner
   kind: record_content
   reference: data/records/zinc.yaml
-  locator: Working-tree record data/records/zinc.yaml
+  locator: 'Working-tree record data/records/zinc.yaml (causal_graphs[0]: ferrooxidans_sphalerite_zinc_dissolution_graph)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: 'Synchronized causal_graphs[0] (ferrooxidans_zinc_bioleaching_graph) in
-    data/records/zinc.yaml with mechanisms[0]: replaced generic bauxite-residue prose
-    with the exact Sajjad et al. (2021) sphalerite ore bioleaching findings (90.2%
-    Zn in mixed W1+W2 culture vs 74.6% W2, 51.4% W1, and 14.3% abiotic control over
-    25 days at 30 degrees C), and refined the substrate edge predicate from acts_on
-    to solubilizes.'
+  summary: 'Synchronized causal_graphs[0] (ferrooxidans_sphalerite_zinc_dissolution_graph,
+    mechanism_ref: ferrooxidans_sphalerite_dissolution) in data/records/zinc.yaml
+    with mechanisms[0] (Conditional enhancement of sphalerite-concentrate dissolution)
+    and primary source fowler_crundwell_1999 (DOI:10.1128/AEM.65.12.5285-5292.1999):
+    edge acidic_ferric_sulfate_lixiviant -> solid_feed_substrate uses predicate ''dissolves''
+    (supports: partial) and edge solid_feed_substrate -> solubilized_metal_species
+    uses predicate ''produces'' (supports: support). Replaced leftover template substrate/product
+    node descriptions and inaccurate ''Culture-generated acidic ferric/sulfate medium''
+    edge text with exact fowler_crundwell_1999 constant-Fe(III) (1 g/L) redox-controlled
+    electrolysis cell sphalerite leaching and surface elemental-sulfur oxidation details.'
   snapshot_sha256: 2b376c474591caadd5e19689dcb85928a92e68392354fa6dd26e6d07734125a5
 - evidence_id: primary_source
   kind: primary_source
-  reference: DOI:10.1007/s11356-021-15027-0
-  locator: sajjad2021 / Sajjad W et al. (2021) Environ. Sci. Pollut. Res., Sections
-    2-3, Figures 1-7, Tables 1-3
+  reference: DOI:10.1128/AEM.65.12.5285-5292.1999
+  locator: 'fowler_crundwell_1999: Fowler TA and Crundwell FK (1999). Leaching of
+    Zinc Sulfide by Thiobacillus ferrooxidans: Bacterial Oxidation of the Sulfur Product
+    Layer Increases the Rate of Zinc Sulfide Dissolution at High Concentrations of
+    Ferrous Ions. Applied and Environmental Microbiology 65:5285-5292. doi:10.1128/AEM.65.12.5285-5292.1999.
+    Methods; Figures 2-6; Discussion. (https://doi.org/10.1128/AEM.65.12.5285-5292.1999)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Sajjad et al. (2021) demonstrated bioleaching of sphalerite ore (57.2%
-    Zn, 8.5% Fe, 31.11% S, 1.38% Cu, 0.79% Pb; 2% w/v pulp density in modified 9K
-    medium at initial pH 2.0, 30 degrees C, 150 rpm for 25 days) using indigenous
-    acidophilic sulfur-oxidizing strain Acidithiobacillusiaz / Acidithiobacillus sp.
-    W1 (16S rRNA 99.7% identical to A. ferrooxidans strain B22) and iron-oxidizing
-    strain Acidithiobacillus ferrooxidans W2, recovering 90.2% Zn (~10,318.9 mg/L)
-    in mixed W1+W2 culture vs 74.6% (W2 alone), 51.4% (W1 alone), and 14.3% (abiotic
-    control), with jarosite, elemental S0, and KAl3(SO4)2(OH)6 residue phases and
-    no direct Rus/Sqr/Tth enzyme characterization.
+  summary: 'Living Thiobacillus ferrooxidans FC1, using the paper''s historical name,
+    increased zinc dissolution relative to matched chemical controls at elevated ferrous
+    concentrations after an initial period without an advantage. Surface analyses
+    and kinetic modeling support sulfur-layer removal as the explanation; they do
+    not establish a specific enzyme or direct biological oxidation of the ZnS lattice.
+    Substrate-edge evidence (fowler_crundwell_1999, supports: partial): Fowler and
+    Crundwell (1999) held Fe(III) constant at 1 g/L electrochemically (rather than
+    relying on culture-generated Fe(III) accumulation) and showed that A. ferrooxidans
+    FC1 enhances sphalerite dissolution at 4 and 8 g/L Fe(II) after 8–12 h via removal
+    of the surface sulfur layer, whereas Fowler and Crundwell (1998) found no bacterial
+    enhancement at 1 g/L Fe(II). Product-edge evidence (fowler_crundwell_1999, supports:
+    support): Atomic spectrophotometry filtrate Zn time series and surface sulfur
+    analyses in Fowler and Crundwell (1999) Figures 2–6 confirm increased Zn dissolution
+    and lower surface elemental sulfur in inoculated runs at 4 and 8 g/L Fe(II) relative
+    to sterile controls.'
 - evidence_id: edit_history
   kind: record_content
   reference: history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml
   locator: Canonical EDIT history sidecar history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Canonical EDIT history sidecar history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml
-    (SHA-256 95da7029fb706145c925eb1dac9a55b9fa8269dd844d23de45f85918af835089) records
-    the Cycle 5 Stage 2 causal_graphs[0] update via scripts/curate_causal_graphs.py.
+  summary: 'Canonical EDIT history sidecar history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml
+    (SHA-256 95da7029fb706145c925eb1dac9a55b9fa8269dd844d23de45f85918af835089): Align
+    zinc causal_graphs[0] node/edge descriptions with fowler_crundwell_1999 controlled-redox
+    electrolysis cell sphalerite leaching — Replaced leftover template substrate/product
+    node descriptions and inaccurate ''Culture-generated acidic ferric/sulfate medium''
+    edge text with exact fowler_crundwell_1999 constant-Fe(III) (1 g/L) redox-controlled
+    electrolysis cell sphalerite leaching and surface elemental-sulfur oxidation details.'
   snapshot_sha256: 95da7029fb706145c925eb1dac9a55b9fa8269dd844d23de45f85918af835089
 - evidence_id: validation
   kind: validation
@@ -208,15 +227,20 @@ checks:
 assessments:
 - assessment_id: causal_graph_and_mechanism_synchronization
   area: graph
-  topic: Synchronization of causal_graphs[0] with mechanisms[0] and primary source
-    (DOI:10.1007/s11356-021-15027-0)
+  topic: Synchronization of causal_graphs[0] (ferrooxidans_sphalerite_zinc_dissolution_graph)
+    with mechanisms[0] (ferrooxidans_sphalerite_dissolution) and primary source fowler_crundwell_1999
+    (DOI:10.1128/AEM.65.12.5285-5292.1999)
   outcome: supported
-  summary: 'Synchronized causal_graphs[0] (ferrooxidans_zinc_bioleaching_graph) in
-    data/records/zinc.yaml with mechanisms[0]: replaced generic bauxite-residue prose
-    with the exact Sajjad et al. (2021) sphalerite ore bioleaching findings (90.2%
-    Zn in mixed W1+W2 culture vs 74.6% W2, 51.4% W1, and 14.3% abiotic control over
-    25 days at 30 degrees C), and refined the substrate edge predicate from acts_on
-    to solubilizes.'
+  summary: 'Synchronized causal_graphs[0] (ferrooxidans_sphalerite_zinc_dissolution_graph,
+    mechanism_ref: ferrooxidans_sphalerite_dissolution) in data/records/zinc.yaml
+    with mechanisms[0] (Conditional enhancement of sphalerite-concentrate dissolution)
+    and primary source fowler_crundwell_1999 (DOI:10.1128/AEM.65.12.5285-5292.1999):
+    edge acidic_ferric_sulfate_lixiviant -> solid_feed_substrate uses predicate ''dissolves''
+    (supports: partial) and edge solid_feed_substrate -> solubilized_metal_species
+    uses predicate ''produces'' (supports: support). Replaced leftover template substrate/product
+    node descriptions and inaccurate ''Culture-generated acidic ferric/sulfate medium''
+    edge text with exact fowler_crundwell_1999 constant-Fe(III) (1 g/L) redox-controlled
+    electrolysis cell sphalerite leaching and surface elemental-sulfur oxidation details.'
   target_ids:
   - cmmmech:zinc
   evidence_ids:
@@ -224,10 +248,11 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
   summary: data/records/zinc.yaml was updated exclusively through scripts/curate_causal_graphs.py
-    (curate_record_file), producing append-only history sidecar history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml
+    (curate_record_file), producing append-only history sidecar(s) (history/records/zinc/2026-10-30T171004Z-marcin-ba79d5.yaml,
+    latest SHA-256 95da7029fb706145c925eb1dac9a55b9fa8269dd844d23de45f85918af835089)
     and passing all LinkML and history validation gates.
   target_ids:
   - cmmmech:zinc
@@ -239,11 +264,16 @@ findings: []
 actions: []
 summary: 'Zinc (cmmmech:zinc) passes Cycle 5 Stage 2 causal-graph review (scientific_review:
   true) at SHA-256 2b376c474591caadd5e19689dcb85928a92e68392354fa6dd26e6d07734125a5:
-  Synchronized causal_graphs[0] (ferrooxidans_zinc_bioleaching_graph) in data/records/zinc.yaml
-  with mechanisms[0]: replaced generic bauxite-residue prose with the exact Sajjad
-  et al. (2021) sphalerite ore bioleaching findings (90.2% Zn in mixed W1+W2 culture
-  vs 74.6% W2, 51.4% W1, and 14.3% abiotic control over 25 days at 30 degrees C),
-  and refined the substrate edge predicate from acts_on to solubilizes.'
+  Synchronized causal_graphs[0] (ferrooxidans_sphalerite_zinc_dissolution_graph, mechanism_ref:
+  ferrooxidans_sphalerite_dissolution) in data/records/zinc.yaml with mechanisms[0]
+  (Conditional enhancement of sphalerite-concentrate dissolution) and primary source
+  fowler_crundwell_1999 (DOI:10.1128/AEM.65.12.5285-5292.1999): edge acidic_ferric_sulfate_lixiviant
+  -> solid_feed_substrate uses predicate ''dissolves'' (supports: partial) and edge
+  solid_feed_substrate -> solubilized_metal_species uses predicate ''produces'' (supports:
+  support). Replaced leftover template substrate/product node descriptions and inaccurate
+  ''Culture-generated acidic ferric/sulfate medium'' edge text with exact fowler_crundwell_1999
+  constant-Fe(III) (1 g/L) redox-controlled electrolysis cell sphalerite leaching
+  and surface elemental-sulfur oxidation details.'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes; an independent subagent PR review is executed prior to merge.'

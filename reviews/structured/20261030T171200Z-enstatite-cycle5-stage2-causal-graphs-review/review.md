@@ -11,15 +11,15 @@
 
 ## Summary
 
-Enstatite (cmmmech:enstatite) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256 28592615c3443e0fb6cfc4d8a34c6de750e260b69937a3f5b495053b67ba5463: Synchronized causal_graphs[0] (aspergillus_enstatite_bioleaching_graph) in data/records/enstatite.yaml with mechanisms[0]: replaced generic prose and unmeasured Fe filtrate claims with the exact Klug et al. (2026) bulk-dunite Mg/Ni and Figure 6c-d enstatite-attributed Mg mass-balance evidence, refined the substrate edge predicate from acts_on to solubilizes, and aligned supports: partial on both substrate edges.
+Enstatite (cmmmech:enstatite) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256 28592615c3443e0fb6cfc4d8a34c6de750e260b69937a3f5b495053b67ba5463: Synchronized causal_graphs[0] (gluconobacter_enstatite_bioleaching_graph, mechanism_ref: mixed_feed_enstatite_bioleaching) in data/records/enstatite.yaml with mechanisms[0] (Enstatite-bearing mixed-feed leaching by engineered bacterial biolixiviant) and primary source klug_2026 (DOI:10.1038/s41598-026-63817-0): edge gluconic_acid_biolixiviant -&gt; enstatite_mixed_feed uses predicate 'solubilizes' (supports: partial) and edge enstatite_mixed_feed -&gt; dissolved_mg_fe_ni_ions uses predicate 'produces' (supports: partial). Removed unmeasured Fe from causal_graphs[0] description and dissolved_mg_fe_ni_ions label/description (klug_2026 reports Mg and Ni in filtrate), upgraded gluconic_acid_biolixiviant -&gt; enstatite_mixed_feed to solubilizes, and set both substrate edges to supports: partial to match mechanisms[0].evidence mass-balance inference.
 
 ## Scope And Provenance
 
-Cycle 5 Stage 2 causal-graph review of data/records/enstatite.yaml (SHA-256 28592615c3443e0fb6cfc4d8a34c6de750e260b69937a3f5b495053b67ba5463) and its canonical EDIT history sidecar (history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml) verifying full synchronization between causal_graphs[0] and mechanisms[0].
+Cycle 5 Stage 2 causal-graph review of data/records/enstatite.yaml (SHA-256 28592615c3443e0fb6cfc4d8a34c6de750e260b69937a3f5b495053b67ba5463) and its canonical EDIT history sidecar(s) (history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml) verifying full synchronization between causal_graphs[0] (gluconobacter_enstatite_bioleaching_graph) and mechanisms[0] (mixed_feed_enstatite_bioleaching).
 
 Selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:enstatite
 Coverage: full; 1 reviewed / 1 in the declared population.
-Source: working_tree at Git base 9e3221733b5efe6fb1be27fcc03692abc3a0de44.
+Source: working_tree at Git base 2f2de84859ee4156bb09f2a0110d35edc48b8020.
 Working-tree hashes do not imply those bytes were committed.
 
 | Target | Path / selector | Kind | Label |
@@ -35,17 +35,17 @@ Working-tree hashes do not imply those bytes were committed.
 
 ## Scientific And Domain Assessments
 
-### Synchronization of causal_graphs[0] with mechanisms[0] and primary source (DOI:10.1093/jambio/lxag045)
+### Synchronization of causal_graphs[0] (gluconobacter_enstatite_bioleaching_graph) with mechanisms[0] (mixed_feed_enstatite_bioleaching) and primary source klug_2026 (DOI:10.1038/s41598-026-63817-0)
 
 graph: supported. Targets: cmmmech:enstatite.
 
-Synchronized causal_graphs[0] (aspergillus_enstatite_bioleaching_graph) in data/records/enstatite.yaml with mechanisms[0]: replaced generic prose and unmeasured Fe filtrate claims with the exact Klug et al. (2026) bulk-dunite Mg/Ni and Figure 6c-d enstatite-attributed Mg mass-balance evidence, refined the substrate edge predicate from acts_on to solubilizes, and aligned supports: partial on both substrate edges.
+Synchronized causal_graphs[0] (gluconobacter_enstatite_bioleaching_graph, mechanism_ref: mixed_feed_enstatite_bioleaching) in data/records/enstatite.yaml with mechanisms[0] (Enstatite-bearing mixed-feed leaching by engineered bacterial biolixiviant) and primary source klug_2026 (DOI:10.1038/s41598-026-63817-0): edge gluconic_acid_biolixiviant -&gt; enstatite_mixed_feed uses predicate 'solubilizes' (supports: partial) and edge enstatite_mixed_feed -&gt; dissolved_mg_fe_ni_ions uses predicate 'produces' (supports: partial). Removed unmeasured Fe from causal_graphs[0] description and dissolved_mg_fe_ni_ions label/description (klug_2026 reports Mg and Ni in filtrate), upgraded gluconic_acid_biolixiviant -&gt; enstatite_mixed_feed to solubilizes, and set both substrate edges to supports: partial to match mechanisms[0].evidence mass-balance inference.
 
-### Verification of canonical EDIT history sidecar and strict schema validation
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
 
 provenance: supported. Targets: cmmmech:enstatite.
 
-data/records/enstatite.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml and passing all LinkML and history validation gates.
+data/records/enstatite.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml, latest SHA-256 54afed1477467a6a9b555a427dabc51bd391f00b89b703f35621faaa61e3d46a) and passing all LinkML and history validation gates.
 
 ## Findings
 
@@ -60,9 +60,9 @@ No findings recorded within this review's declared scope.
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| owner | data/records/enstatite.yaml; Working-tree record data/records/enstatite.yaml | supports | Synchronized causal_graphs[0] (aspergillus_enstatite_bioleaching_graph) in data/records/enstatite.yaml with mechanisms[0]: replaced generic prose and unmeasured Fe filtrate claims with the exact Klug et al. (2026) bulk-dunite Mg/Ni and Figure 6c-d enstatite-attributed Mg mass-balance evidence, refined the substrate edge predicate from acts_on to solubilizes, and aligned supports: partial on both substrate edges. |
-| primary_source | DOI:10.1093/jambio/lxag045; Klug H et al. (2026) J. Appl. Microbiol. 137(3):lxag045, pp. 1-14, Sections 2-3, Figures 1-6 (esp. Fig. 6c-d), Tables 1-3 | supports | Klug et al. (2026) leached bulk Greek dunite (~45 wt% forsterite, ~40 wt% lizardite, ~7 wt% enstatite) with Aspergillus niger ATCC 1015 broth at 5% w/v (0.5 g per 10 mL) for 15 days at 30 degrees C, yielding blank-corrected day-15 Mg means of ~8,487 ppm with cells and ~7,051 ppm cell-free vs 265 ppm in the glucose control; Figure 6c-d allocates ~26% of initial feed Mg to enstatite at day 0 and ~13% (with cells) or ~10% (cell-free) at day 15 without single-mineral enstatite bioleaching assays. |
-| edit_history | history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml; Canonical EDIT history sidecar history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml | supports | Canonical EDIT history sidecar history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml (SHA-256 54afed1477467a6a9b555a427dabc51bd391f00b89b703f35621faaa61e3d46a) records the Cycle 5 Stage 2 causal_graphs[0] update via scripts/curate_causal_graphs.py. |
+| owner | data/records/enstatite.yaml; Working-tree record data/records/enstatite.yaml (causal_graphs[0]: gluconobacter_enstatite_bioleaching_graph) | supports | Synchronized causal_graphs[0] (gluconobacter_enstatite_bioleaching_graph, mechanism_ref: mixed_feed_enstatite_bioleaching) in data/records/enstatite.yaml with mechanisms[0] (Enstatite-bearing mixed-feed leaching by engineered bacterial biolixiviant) and primary source klug_2026 (DOI:10.1038/s41598-026-63817-0): edge gluconic_acid_biolixiviant -&gt; enstatite_mixed_feed uses predicate 'solubilizes' (supports: partial) and edge enstatite_mixed_feed -&gt; dissolved_mg_fe_ni_ions uses predicate 'produces' (supports: partial). Removed unmeasured Fe from causal_graphs[0] description and dissolved_mg_fe_ni_ions label/description (klug_2026 reports Mg and Ni in filtrate), upgraded gluconic_acid_biolixiviant -&gt; enstatite_mixed_feed to solubilizes, and set both substrate edges to supports: partial to match mechanisms[0].evidence mass-balance inference. |
+| primary_source | DOI:10.1038/s41598-026-63817-0; klug_2026: Klug et al. (2026). Bioleaching of olivine and enstatite with formation of Mg-oxalate mediated by engineered Gluconobacter oxydans. Scientific Reports 16:25317. DOI 10.1038/s41598-026-63817-0; Methods, Figures 2-6 and Discussion. (https://doi.org/10.1038/s41598-026-63817-0) | supports | An enstatite-bearing olivine mixture released Mg and Ni into the analyzed liquid fraction in both cell-containing and cell-free bacterial-biolixiviant arms. XRD and the authors' mass-balance model are consistent with partial enstatite dissolution, but the study did not test a pure-enstatite feed or measure enstatite-specific aqueous flux. Substrate-edge evidence (klug_2026, supports: partial): Klug et al. (2026) tested enstatite only within a 69 wt% olivine / 31 wt% enstatite mixed powder (without a pure-enstatite control or pH-matched abiotic control) and inferred partial enstatite dissolution from XRD and mass-balance modeling. Product-edge evidence (klug_2026, supports: partial): Klug et al. (2026) ICP-MS worksheet row 6 and Figure 6c–d measure bulk filtrate Mg and Ni from the 69/31 olivine-enstatite mixture and estimate enstatite's contribution by mass balance rather than direct phase-specific flux measurement. |
+| edit_history | history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml; Canonical EDIT history sidecar history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml | supports | Canonical EDIT history sidecar history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml (SHA-256 54afed1477467a6a9b555a427dabc51bd391f00b89b703f35621faaa61e3d46a): Align enstatite causal_graphs[0] with klug_2026 Mg/Ni mixed-feed measurements and partial mass-balance support — Removed unmeasured Fe from causal_graphs[0] description and dissolved_mg_fe_ni_ions label/description (klug_2026 reports Mg and Ni in filtrate), upgraded gluconic_acid_biolixiviant -&gt; enstatite_mixed_feed to solubilizes, and set both substrate edges to supports: partial to match mechanisms[0].evidence mass-balance inference. |
 | validation | data/records/enstatite.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/enstatite.yaml and history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml pass strict LinkML schema and history validation with 0 errors. |
 
 ## Limits And Additional Notes
@@ -88,15 +88,16 @@ reviewer:
   model: antigravity
   independence: self_review
   independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
-    verifying the Cycle 5 Stage 2 causal_graphs[0] update in data/records/enstatite.yaml
-    (SHA-256 28592615c3443e0fb6cfc4d8a34c6de750e260b69937a3f5b495053b67ba5463) against
-    mechanisms[0] and its cited primary source (DOI:10.1093/jambio/lxag045).
+    verifying the Cycle 5 Stage 2 causal_graphs[0] (gluconobacter_enstatite_bioleaching_graph)
+    update in data/records/enstatite.yaml (SHA-256 28592615c3443e0fb6cfc4d8a34c6de750e260b69937a3f5b495053b67ba5463)
+    against mechanisms[0] (mixed_feed_enstatite_bioleaching) and its cited primary
+    source klug_2026 (DOI:10.1038/s41598-026-63817-0).
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 source:
-  git_revision: 9e3221733b5efe6fb1be27fcc03692abc3a0de44
+  git_revision: 2f2de84859ee4156bb09f2a0110d35edc48b8020
   state: working_tree
   inputs:
   - path: data/records/enstatite.yaml
@@ -123,8 +124,9 @@ targets:
 scope:
   description: Cycle 5 Stage 2 causal-graph review of data/records/enstatite.yaml
     (SHA-256 28592615c3443e0fb6cfc4d8a34c6de750e260b69937a3f5b495053b67ba5463) and
-    its canonical EDIT history sidecar (history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml)
-    verifying full synchronization between causal_graphs[0] and mechanisms[0].
+    its canonical EDIT history sidecar(s) (history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml)
+    verifying full synchronization between causal_graphs[0] (gluconobacter_enstatite_bioleaching_graph)
+    and mechanisms[0] (mixed_feed_enstatite_bioleaching).
   selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:enstatite
   coverage: full
   population_size: 1
@@ -134,39 +136,56 @@ evidence:
 - evidence_id: owner
   kind: record_content
   reference: data/records/enstatite.yaml
-  locator: Working-tree record data/records/enstatite.yaml
+  locator: 'Working-tree record data/records/enstatite.yaml (causal_graphs[0]: gluconobacter_enstatite_bioleaching_graph)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: 'Synchronized causal_graphs[0] (aspergillus_enstatite_bioleaching_graph)
-    in data/records/enstatite.yaml with mechanisms[0]: replaced generic prose and
-    unmeasured Fe filtrate claims with the exact Klug et al. (2026) bulk-dunite Mg/Ni
-    and Figure 6c-d enstatite-attributed Mg mass-balance evidence, refined the substrate
-    edge predicate from acts_on to solubilizes, and aligned supports: partial on both
-    substrate edges.'
+  summary: 'Synchronized causal_graphs[0] (gluconobacter_enstatite_bioleaching_graph,
+    mechanism_ref: mixed_feed_enstatite_bioleaching) in data/records/enstatite.yaml
+    with mechanisms[0] (Enstatite-bearing mixed-feed leaching by engineered bacterial
+    biolixiviant) and primary source klug_2026 (DOI:10.1038/s41598-026-63817-0): edge
+    gluconic_acid_biolixiviant -> enstatite_mixed_feed uses predicate ''solubilizes''
+    (supports: partial) and edge enstatite_mixed_feed -> dissolved_mg_fe_ni_ions uses
+    predicate ''produces'' (supports: partial). Removed unmeasured Fe from causal_graphs[0]
+    description and dissolved_mg_fe_ni_ions label/description (klug_2026 reports Mg
+    and Ni in filtrate), upgraded gluconic_acid_biolixiviant -> enstatite_mixed_feed
+    to solubilizes, and set both substrate edges to supports: partial to match mechanisms[0].evidence
+    mass-balance inference.'
   snapshot_sha256: 28592615c3443e0fb6cfc4d8a34c6de750e260b69937a3f5b495053b67ba5463
 - evidence_id: primary_source
   kind: primary_source
-  reference: DOI:10.1093/jambio/lxag045
-  locator: Klug H et al. (2026) J. Appl. Microbiol. 137(3):lxag045, pp. 1-14, Sections
-    2-3, Figures 1-6 (esp. Fig. 6c-d), Tables 1-3
+  reference: DOI:10.1038/s41598-026-63817-0
+  locator: 'klug_2026: Klug et al. (2026). Bioleaching of olivine and enstatite with
+    formation of Mg-oxalate mediated by engineered Gluconobacter oxydans. Scientific
+    Reports 16:25317. DOI 10.1038/s41598-026-63817-0; Methods, Figures 2-6 and Discussion.
+    (https://doi.org/10.1038/s41598-026-63817-0)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Klug et al. (2026) leached bulk Greek dunite (~45 wt% forsterite, ~40 wt%
-    lizardite, ~7 wt% enstatite) with Aspergillus niger ATCC 1015 broth at 5% w/v
-    (0.5 g per 10 mL) for 15 days at 30 degrees C, yielding blank-corrected day-15
-    Mg means of ~8,487 ppm with cells and ~7,051 ppm cell-free vs 265 ppm in the glucose
-    control; Figure 6c-d allocates ~26% of initial feed Mg to enstatite at day 0 and
-    ~13% (with cells) or ~10% (cell-free) at day 15 without single-mineral enstatite
-    bioleaching assays.
+  summary: 'An enstatite-bearing olivine mixture released Mg and Ni into the analyzed
+    liquid fraction in both cell-containing and cell-free bacterial-biolixiviant arms.
+    XRD and the authors'' mass-balance model are consistent with partial enstatite
+    dissolution, but the study did not test a pure-enstatite feed or measure enstatite-specific
+    aqueous flux. Substrate-edge evidence (klug_2026, supports: partial): Klug et
+    al. (2026) tested enstatite only within a 69 wt% olivine / 31 wt% enstatite mixed
+    powder (without a pure-enstatite control or pH-matched abiotic control) and inferred
+    partial enstatite dissolution from XRD and mass-balance modeling. Product-edge
+    evidence (klug_2026, supports: partial): Klug et al. (2026) ICP-MS worksheet row
+    6 and Figure 6c–d measure bulk filtrate Mg and Ni from the 69/31 olivine-enstatite
+    mixture and estimate enstatite''s contribution by mass balance rather than direct
+    phase-specific flux measurement.'
 - evidence_id: edit_history
   kind: record_content
   reference: history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml
   locator: Canonical EDIT history sidecar history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Canonical EDIT history sidecar history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml
-    (SHA-256 54afed1477467a6a9b555a427dabc51bd391f00b89b703f35621faaa61e3d46a) records
-    the Cycle 5 Stage 2 causal_graphs[0] update via scripts/curate_causal_graphs.py.
+  summary: 'Canonical EDIT history sidecar history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml
+    (SHA-256 54afed1477467a6a9b555a427dabc51bd391f00b89b703f35621faaa61e3d46a): Align
+    enstatite causal_graphs[0] with klug_2026 Mg/Ni mixed-feed measurements and partial
+    mass-balance support — Removed unmeasured Fe from causal_graphs[0] description
+    and dissolved_mg_fe_ni_ions label/description (klug_2026 reports Mg and Ni in
+    filtrate), upgraded gluconic_acid_biolixiviant -> enstatite_mixed_feed to solubilizes,
+    and set both substrate edges to supports: partial to match mechanisms[0].evidence
+    mass-balance inference.'
   snapshot_sha256: 54afed1477467a6a9b555a427dabc51bd391f00b89b703f35621faaa61e3d46a
 - evidence_id: validation
   kind: validation
@@ -206,15 +225,21 @@ checks:
 assessments:
 - assessment_id: causal_graph_and_mechanism_synchronization
   area: graph
-  topic: Synchronization of causal_graphs[0] with mechanisms[0] and primary source
-    (DOI:10.1093/jambio/lxag045)
+  topic: Synchronization of causal_graphs[0] (gluconobacter_enstatite_bioleaching_graph)
+    with mechanisms[0] (mixed_feed_enstatite_bioleaching) and primary source klug_2026
+    (DOI:10.1038/s41598-026-63817-0)
   outcome: supported
-  summary: 'Synchronized causal_graphs[0] (aspergillus_enstatite_bioleaching_graph)
-    in data/records/enstatite.yaml with mechanisms[0]: replaced generic prose and
-    unmeasured Fe filtrate claims with the exact Klug et al. (2026) bulk-dunite Mg/Ni
-    and Figure 6c-d enstatite-attributed Mg mass-balance evidence, refined the substrate
-    edge predicate from acts_on to solubilizes, and aligned supports: partial on both
-    substrate edges.'
+  summary: 'Synchronized causal_graphs[0] (gluconobacter_enstatite_bioleaching_graph,
+    mechanism_ref: mixed_feed_enstatite_bioleaching) in data/records/enstatite.yaml
+    with mechanisms[0] (Enstatite-bearing mixed-feed leaching by engineered bacterial
+    biolixiviant) and primary source klug_2026 (DOI:10.1038/s41598-026-63817-0): edge
+    gluconic_acid_biolixiviant -> enstatite_mixed_feed uses predicate ''solubilizes''
+    (supports: partial) and edge enstatite_mixed_feed -> dissolved_mg_fe_ni_ions uses
+    predicate ''produces'' (supports: partial). Removed unmeasured Fe from causal_graphs[0]
+    description and dissolved_mg_fe_ni_ions label/description (klug_2026 reports Mg
+    and Ni in filtrate), upgraded gluconic_acid_biolixiviant -> enstatite_mixed_feed
+    to solubilizes, and set both substrate edges to supports: partial to match mechanisms[0].evidence
+    mass-balance inference.'
   target_ids:
   - cmmmech:enstatite
   evidence_ids:
@@ -222,10 +247,11 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
   summary: data/records/enstatite.yaml was updated exclusively through scripts/curate_causal_graphs.py
-    (curate_record_file), producing append-only history sidecar history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml
+    (curate_record_file), producing append-only history sidecar(s) (history/records/enstatite/2026-10-30T171003Z-marcin-b20b9c.yaml,
+    latest SHA-256 54afed1477467a6a9b555a427dabc51bd391f00b89b703f35621faaa61e3d46a)
     and passing all LinkML and history validation gates.
   target_ids:
   - cmmmech:enstatite
@@ -237,11 +263,16 @@ findings: []
 actions: []
 summary: 'Enstatite (cmmmech:enstatite) passes Cycle 5 Stage 2 causal-graph review
   (scientific_review: true) at SHA-256 28592615c3443e0fb6cfc4d8a34c6de750e260b69937a3f5b495053b67ba5463:
-  Synchronized causal_graphs[0] (aspergillus_enstatite_bioleaching_graph) in data/records/enstatite.yaml
-  with mechanisms[0]: replaced generic prose and unmeasured Fe filtrate claims with
-  the exact Klug et al. (2026) bulk-dunite Mg/Ni and Figure 6c-d enstatite-attributed
-  Mg mass-balance evidence, refined the substrate edge predicate from acts_on to solubilizes,
-  and aligned supports: partial on both substrate edges.'
+  Synchronized causal_graphs[0] (gluconobacter_enstatite_bioleaching_graph, mechanism_ref:
+  mixed_feed_enstatite_bioleaching) in data/records/enstatite.yaml with mechanisms[0]
+  (Enstatite-bearing mixed-feed leaching by engineered bacterial biolixiviant) and
+  primary source klug_2026 (DOI:10.1038/s41598-026-63817-0): edge gluconic_acid_biolixiviant
+  -> enstatite_mixed_feed uses predicate ''solubilizes'' (supports: partial) and edge
+  enstatite_mixed_feed -> dissolved_mg_fe_ni_ions uses predicate ''produces'' (supports:
+  partial). Removed unmeasured Fe from causal_graphs[0] description and dissolved_mg_fe_ni_ions
+  label/description (klug_2026 reports Mg and Ni in filtrate), upgraded gluconic_acid_biolixiviant
+  -> enstatite_mixed_feed to solubilizes, and set both substrate edges to supports:
+  partial to match mechanisms[0].evidence mass-balance inference.'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes; an independent subagent PR review is executed prior to merge.'

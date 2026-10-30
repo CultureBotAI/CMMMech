@@ -11,15 +11,15 @@
 
 ## Summary
 
-Waste liquid-crystal display panels (cmmmech:waste-liquid-crystal-display-panels) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256 4e8a7b1ae9364ec88d6adfb9cc85ba71e6b71d05df8d929da4615fe6fe0bcbab: Synchronized causal_graphs[0] (thiooxidans_lcd_panel_bioleaching_graph) in data/records/waste-liquid-crystal-display-panels.yaml with mechanisms[0]: replaced generic bauxite-residue prose with the exact two-step A. thiooxidans DSM 9463 waste LCD panel bioleaching findings (biogenic H2SO4 lowering pH to ~0.62, 100% In extraction at 1-10% w/v, 20-26% Sr co-dissolution, and &lt;1% Sn extraction), and refined the substrate edge predicate from acts_on to solubilizes.
+Waste liquid-crystal display panels (cmmmech:waste-liquid-crystal-display-panels) passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256 4e8a7b1ae9364ec88d6adfb9cc85ba71e6b71d05df8d929da4615fe6fe0bcbab: Synchronized causal_graphs[0] (ferrooxidans_lcd_indium_bioleaching_graph, mechanism_ref: adapted_acidophile_lcd_leaching) in data/records/waste-liquid-crystal-display-panels.yaml with mechanisms[0] (Culture-associated indium mobilization from prepared waste LCD powder) and primary source willner2018 (DOI:10.5277/ppmp1878): edge acidic_ferric_sulfate_lixiviant -&gt; solid_feed_substrate uses predicate 'solubilizes' (supports: partial) and edge solid_feed_substrate -&gt; solubilized_metal_species uses predicate 'produces' (supports: support). Upgraded acidic_ferric_sulfate_lixiviant -&gt; solid_feed_substrate from acts_on to solubilizes (retaining supports: partial for unmatched pH/redox controls), included A. thiooxidans alongside A. ferrooxidans in sqr_reductase -&gt; tth_hydrolase, and replaced template node/edge descriptions with exact willner2018 2.5% w/v LCD powder In/Sn leaching data.
 
 ## Scope And Provenance
 
-Cycle 5 Stage 2 causal-graph review of data/records/waste-liquid-crystal-display-panels.yaml (SHA-256 4e8a7b1ae9364ec88d6adfb9cc85ba71e6b71d05df8d929da4615fe6fe0bcbab) and its canonical EDIT history sidecar (history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml) verifying full synchronization between causal_graphs[0] and mechanisms[0].
+Cycle 5 Stage 2 causal-graph review of data/records/waste-liquid-crystal-display-panels.yaml (SHA-256 4e8a7b1ae9364ec88d6adfb9cc85ba71e6b71d05df8d929da4615fe6fe0bcbab) and its canonical EDIT history sidecar(s) (history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml) verifying full synchronization between causal_graphs[0] (ferrooxidans_lcd_indium_bioleaching_graph) and mechanisms[0] (adapted_acidophile_lcd_leaching).
 
 Selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:waste-liquid-crystal-display-panels
 Coverage: full; 1 reviewed / 1 in the declared population.
-Source: working_tree at Git base 9e3221733b5efe6fb1be27fcc03692abc3a0de44.
+Source: working_tree at Git base 2f2de84859ee4156bb09f2a0110d35edc48b8020.
 Working-tree hashes do not imply those bytes were committed.
 
 | Target | Path / selector | Kind | Label |
@@ -35,17 +35,17 @@ Working-tree hashes do not imply those bytes were committed.
 
 ## Scientific And Domain Assessments
 
-### Synchronization of causal_graphs[0] with mechanisms[0] and primary source (DOI:10.3390/recycling9030037)
+### Synchronization of causal_graphs[0] (ferrooxidans_lcd_indium_bioleaching_graph) with mechanisms[0] (adapted_acidophile_lcd_leaching) and primary source willner2018 (DOI:10.5277/ppmp1878)
 
 graph: supported. Targets: cmmmech:waste-liquid-crystal-display-panels.
 
-Synchronized causal_graphs[0] (thiooxidans_lcd_panel_bioleaching_graph) in data/records/waste-liquid-crystal-display-panels.yaml with mechanisms[0]: replaced generic bauxite-residue prose with the exact two-step A. thiooxidans DSM 9463 waste LCD panel bioleaching findings (biogenic H2SO4 lowering pH to ~0.62, 100% In extraction at 1-10% w/v, 20-26% Sr co-dissolution, and &lt;1% Sn extraction), and refined the substrate edge predicate from acts_on to solubilizes.
+Synchronized causal_graphs[0] (ferrooxidans_lcd_indium_bioleaching_graph, mechanism_ref: adapted_acidophile_lcd_leaching) in data/records/waste-liquid-crystal-display-panels.yaml with mechanisms[0] (Culture-associated indium mobilization from prepared waste LCD powder) and primary source willner2018 (DOI:10.5277/ppmp1878): edge acidic_ferric_sulfate_lixiviant -&gt; solid_feed_substrate uses predicate 'solubilizes' (supports: partial) and edge solid_feed_substrate -&gt; solubilized_metal_species uses predicate 'produces' (supports: support). Upgraded acidic_ferric_sulfate_lixiviant -&gt; solid_feed_substrate from acts_on to solubilizes (retaining supports: partial for unmatched pH/redox controls), included A. thiooxidans alongside A. ferrooxidans in sqr_reductase -&gt; tth_hydrolase, and replaced template node/edge descriptions with exact willner2018 2.5% w/v LCD powder In/Sn leaching data.
 
-### Verification of canonical EDIT history sidecar and strict schema validation
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
 
 provenance: supported. Targets: cmmmech:waste-liquid-crystal-display-panels.
 
-data/records/waste-liquid-crystal-display-panels.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml and passing all LinkML and history validation gates.
+data/records/waste-liquid-crystal-display-panels.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml, latest SHA-256 7a1693622de5120e8ff97e5027b3c2d884eb7f4e39addbb797b155ac0bd4f106) and passing all LinkML and history validation gates.
 
 ## Findings
 
@@ -60,9 +60,9 @@ No findings recorded within this review's declared scope.
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| owner | data/records/waste-liquid-crystal-display-panels.yaml; Working-tree record data/records/waste-liquid-crystal-display-panels.yaml | supports | Synchronized causal_graphs[0] (thiooxidans_lcd_panel_bioleaching_graph) in data/records/waste-liquid-crystal-display-panels.yaml with mechanisms[0]: replaced generic bauxite-residue prose with the exact two-step A. thiooxidans DSM 9463 waste LCD panel bioleaching findings (biogenic H2SO4 lowering pH to ~0.62, 100% In extraction at 1-10% w/v, 20-26% Sr co-dissolution, and &lt;1% Sn extraction), and refined the substrate edge predicate from acts_on to solubilizes. |
-| primary_source | DOI:10.3390/recycling9030037; willerding2024 / Recycling (2024) 9(3):37, Sections 2-3, Figures 1-6, Tables 1-4 | supports | The primary study (willerding2024) demonstrated two-step bioleaching of crushed waste LCD glass powder (&lt;120 um, 224 mg In/kg, 725 mg Sn/kg, 1,284 mg Sr/kg) by Acidithiobacillus thiooxidans DSM 9463 adapted to 10% w/v LCD powder in elemental-sulfur medium (1% S0, pH ~0.62 after 14 days pre-cultivation at 30 degrees C), achieving 100% indium extraction (~2.19 mg/L at 1% w/v and ~21.74 mg/L at 10% w/v) and 20-26% strontium extraction with negligible tin mobilization (&lt;1%) and no direct Sqr or Tth protein assays. |
-| edit_history | history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml; Canonical EDIT history sidecar history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml | supports | Canonical EDIT history sidecar history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml (SHA-256 7a1693622de5120e8ff97e5027b3c2d884eb7f4e39addbb797b155ac0bd4f106) records the Cycle 5 Stage 2 causal_graphs[0] update via scripts/curate_causal_graphs.py. |
+| owner | data/records/waste-liquid-crystal-display-panels.yaml; Working-tree record data/records/waste-liquid-crystal-display-panels.yaml (causal_graphs[0]: ferrooxidans_lcd_indium_bioleaching_graph) | supports | Synchronized causal_graphs[0] (ferrooxidans_lcd_indium_bioleaching_graph, mechanism_ref: adapted_acidophile_lcd_leaching) in data/records/waste-liquid-crystal-display-panels.yaml with mechanisms[0] (Culture-associated indium mobilization from prepared waste LCD powder) and primary source willner2018 (DOI:10.5277/ppmp1878): edge acidic_ferric_sulfate_lixiviant -&gt; solid_feed_substrate uses predicate 'solubilizes' (supports: partial) and edge solid_feed_substrate -&gt; solubilized_metal_species uses predicate 'produces' (supports: support). Upgraded acidic_ferric_sulfate_lixiviant -&gt; solid_feed_substrate from acts_on to solubilizes (retaining supports: partial for unmatched pH/redox controls), included A. thiooxidans alongside A. ferrooxidans in sqr_reductase -&gt; tth_hydrolase, and replaced template node/edge descriptions with exact willner2018 2.5% w/v LCD powder In/Sn leaching data. |
+| primary_source | DOI:10.5277/ppmp1878; willner2018: Willner, Fornalczyk, Gajda and Saternus (2018). Bioleaching of indium and tin from used LCD panels. Physicochemical Problems of Mineral Processing 54(3):639-645, DOI 10.5277/ppmp1878; Sections 2-4, Figures 1-4 and Tables 1-2. Institutional copy of published article. (https://dbc.wroc.pl/Content/43709/PDF/PPoMP_2018_54_3_639_645.pdf) | supports | An adapted mixed acidophile culture increased indium in filtered leachate relative to sterile controls in the tested laboratory systems. Tin also entered solution, but the iron-containing sterile control performed comparably or better for tin. Changing acidity, iron chemistry and precipitation prevent assignment of the observed contrast to one organism or a demonstrated direct biological oxidation of the oxide feed. Substrate-edge evidence (willner2018, supports: partial): Willner et al. (2018) demonstrate enhanced In mobilization in inoculated modified 9K medium over 35 days relative to sterile controls, though sterile controls were not matched to the evolving pH and redox trajectories of the inoculated flasks. Product-edge evidence (willner2018, supports: support): MP-AES filtrate measurements in Willner et al. (2018) Section 3.2, Figure 4A, and Table 2 confirm 13.90 mg/dm3 In in inoculated 9K medium at day 35 vs 0.82 mg/dm3 In in the parallel sterile 9K control. |
+| edit_history | history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml; Canonical EDIT history sidecar history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml | supports | Canonical EDIT history sidecar history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml (SHA-256 7a1693622de5120e8ff97e5027b3c2d884eb7f4e39addbb797b155ac0bd4f106): Upgrade waste-liquid-crystal-display-panels causal_graphs[0] lixiviant predicate to solubilizes and ground text in willner2018 — Upgraded acidic_ferric_sulfate_lixiviant -&gt; solid_feed_substrate from acts_on to solubilizes (retaining supports: partial for unmatched pH/redox controls), included A. thiooxidans alongside A. ferrooxidans in sqr_reductase -&gt; tth_hydrolase, and replaced template node/edge descriptions with exact willner2018 2.5% w/v LCD powder In/Sn leaching data. |
 | validation | data/records/waste-liquid-crystal-display-panels.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/waste-liquid-crystal-display-panels.yaml and history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml pass strict LinkML schema and history validation with 0 errors. |
 
 ## Limits And Additional Notes
@@ -89,15 +89,16 @@ reviewer:
   model: antigravity
   independence: self_review
   independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
-    verifying the Cycle 5 Stage 2 causal_graphs[0] update in data/records/waste-liquid-crystal-display-panels.yaml
-    (SHA-256 4e8a7b1ae9364ec88d6adfb9cc85ba71e6b71d05df8d929da4615fe6fe0bcbab) against
-    mechanisms[0] and its cited primary source (DOI:10.3390/recycling9030037).
+    verifying the Cycle 5 Stage 2 causal_graphs[0] (ferrooxidans_lcd_indium_bioleaching_graph)
+    update in data/records/waste-liquid-crystal-display-panels.yaml (SHA-256 4e8a7b1ae9364ec88d6adfb9cc85ba71e6b71d05df8d929da4615fe6fe0bcbab)
+    against mechanisms[0] (adapted_acidophile_lcd_leaching) and its cited primary
+    source willner2018 (DOI:10.5277/ppmp1878).
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 source:
-  git_revision: 9e3221733b5efe6fb1be27fcc03692abc3a0de44
+  git_revision: 2f2de84859ee4156bb09f2a0110d35edc48b8020
   state: working_tree
   inputs:
   - path: data/records/waste-liquid-crystal-display-panels.yaml
@@ -124,8 +125,9 @@ targets:
 scope:
   description: Cycle 5 Stage 2 causal-graph review of data/records/waste-liquid-crystal-display-panels.yaml
     (SHA-256 4e8a7b1ae9364ec88d6adfb9cc85ba71e6b71d05df8d929da4615fe6fe0bcbab) and
-    its canonical EDIT history sidecar (history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml)
-    verifying full synchronization between causal_graphs[0] and mechanisms[0].
+    its canonical EDIT history sidecar(s) (history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml)
+    verifying full synchronization between causal_graphs[0] (ferrooxidans_lcd_indium_bioleaching_graph)
+    and mechanisms[0] (adapted_acidophile_lcd_leaching).
   selection: Cycle 5 Stage 2 causal_graphs update for cmmmech:waste-liquid-crystal-display-panels
   coverage: full
   population_size: 1
@@ -135,39 +137,57 @@ evidence:
 - evidence_id: owner
   kind: record_content
   reference: data/records/waste-liquid-crystal-display-panels.yaml
-  locator: Working-tree record data/records/waste-liquid-crystal-display-panels.yaml
+  locator: 'Working-tree record data/records/waste-liquid-crystal-display-panels.yaml
+    (causal_graphs[0]: ferrooxidans_lcd_indium_bioleaching_graph)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: 'Synchronized causal_graphs[0] (thiooxidans_lcd_panel_bioleaching_graph)
-    in data/records/waste-liquid-crystal-display-panels.yaml with mechanisms[0]: replaced
-    generic bauxite-residue prose with the exact two-step A. thiooxidans DSM 9463
-    waste LCD panel bioleaching findings (biogenic H2SO4 lowering pH to ~0.62, 100%
-    In extraction at 1-10% w/v, 20-26% Sr co-dissolution, and <1% Sn extraction),
-    and refined the substrate edge predicate from acts_on to solubilizes.'
+  summary: 'Synchronized causal_graphs[0] (ferrooxidans_lcd_indium_bioleaching_graph,
+    mechanism_ref: adapted_acidophile_lcd_leaching) in data/records/waste-liquid-crystal-display-panels.yaml
+    with mechanisms[0] (Culture-associated indium mobilization from prepared waste
+    LCD powder) and primary source willner2018 (DOI:10.5277/ppmp1878): edge acidic_ferric_sulfate_lixiviant
+    -> solid_feed_substrate uses predicate ''solubilizes'' (supports: partial) and
+    edge solid_feed_substrate -> solubilized_metal_species uses predicate ''produces''
+    (supports: support). Upgraded acidic_ferric_sulfate_lixiviant -> solid_feed_substrate
+    from acts_on to solubilizes (retaining supports: partial for unmatched pH/redox
+    controls), included A. thiooxidans alongside A. ferrooxidans in sqr_reductase
+    -> tth_hydrolase, and replaced template node/edge descriptions with exact willner2018
+    2.5% w/v LCD powder In/Sn leaching data.'
   snapshot_sha256: 4e8a7b1ae9364ec88d6adfb9cc85ba71e6b71d05df8d929da4615fe6fe0bcbab
 - evidence_id: primary_source
   kind: primary_source
-  reference: DOI:10.3390/recycling9030037
-  locator: willerding2024 / Recycling (2024) 9(3):37, Sections 2-3, Figures 1-6, Tables
-    1-4
+  reference: DOI:10.5277/ppmp1878
+  locator: 'willner2018: Willner, Fornalczyk, Gajda and Saternus (2018). Bioleaching
+    of indium and tin from used LCD panels. Physicochemical Problems of Mineral Processing
+    54(3):639-645, DOI 10.5277/ppmp1878; Sections 2-4, Figures 1-4 and Tables 1-2.
+    Institutional copy of published article. (https://dbc.wroc.pl/Content/43709/PDF/PPoMP_2018_54_3_639_645.pdf)'
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: The primary study (willerding2024) demonstrated two-step bioleaching of
-    crushed waste LCD glass powder (<120 um, 224 mg In/kg, 725 mg Sn/kg, 1,284 mg
-    Sr/kg) by Acidithiobacillus thiooxidans DSM 9463 adapted to 10% w/v LCD powder
-    in elemental-sulfur medium (1% S0, pH ~0.62 after 14 days pre-cultivation at 30
-    degrees C), achieving 100% indium extraction (~2.19 mg/L at 1% w/v and ~21.74
-    mg/L at 10% w/v) and 20-26% strontium extraction with negligible tin mobilization
-    (<1%) and no direct Sqr or Tth protein assays.
+  summary: 'An adapted mixed acidophile culture increased indium in filtered leachate
+    relative to sterile controls in the tested laboratory systems. Tin also entered
+    solution, but the iron-containing sterile control performed comparably or better
+    for tin. Changing acidity, iron chemistry and precipitation prevent assignment
+    of the observed contrast to one organism or a demonstrated direct biological oxidation
+    of the oxide feed. Substrate-edge evidence (willner2018, supports: partial): Willner
+    et al. (2018) demonstrate enhanced In mobilization in inoculated modified 9K medium
+    over 35 days relative to sterile controls, though sterile controls were not matched
+    to the evolving pH and redox trajectories of the inoculated flasks. Product-edge
+    evidence (willner2018, supports: support): MP-AES filtrate measurements in Willner
+    et al. (2018) Section 3.2, Figure 4A, and Table 2 confirm 13.90 mg/dm3 In in inoculated
+    9K medium at day 35 vs 0.82 mg/dm3 In in the parallel sterile 9K control.'
 - evidence_id: edit_history
   kind: record_content
   reference: history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml
   locator: Canonical EDIT history sidecar history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml
   accessed_at: '2026-10-30T17:11:30Z'
   support: supports
-  summary: Canonical EDIT history sidecar history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml
-    (SHA-256 7a1693622de5120e8ff97e5027b3c2d884eb7f4e39addbb797b155ac0bd4f106) records
-    the Cycle 5 Stage 2 causal_graphs[0] update via scripts/curate_causal_graphs.py.
+  summary: 'Canonical EDIT history sidecar history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml
+    (SHA-256 7a1693622de5120e8ff97e5027b3c2d884eb7f4e39addbb797b155ac0bd4f106): Upgrade
+    waste-liquid-crystal-display-panels causal_graphs[0] lixiviant predicate to solubilizes
+    and ground text in willner2018 — Upgraded acidic_ferric_sulfate_lixiviant -> solid_feed_substrate
+    from acts_on to solubilizes (retaining supports: partial for unmatched pH/redox
+    controls), included A. thiooxidans alongside A. ferrooxidans in sqr_reductase
+    -> tth_hydrolase, and replaced template node/edge descriptions with exact willner2018
+    2.5% w/v LCD powder In/Sn leaching data.'
   snapshot_sha256: 7a1693622de5120e8ff97e5027b3c2d884eb7f4e39addbb797b155ac0bd4f106
 - evidence_id: validation
   kind: validation
@@ -207,15 +227,21 @@ checks:
 assessments:
 - assessment_id: causal_graph_and_mechanism_synchronization
   area: graph
-  topic: Synchronization of causal_graphs[0] with mechanisms[0] and primary source
-    (DOI:10.3390/recycling9030037)
+  topic: Synchronization of causal_graphs[0] (ferrooxidans_lcd_indium_bioleaching_graph)
+    with mechanisms[0] (adapted_acidophile_lcd_leaching) and primary source willner2018
+    (DOI:10.5277/ppmp1878)
   outcome: supported
-  summary: 'Synchronized causal_graphs[0] (thiooxidans_lcd_panel_bioleaching_graph)
-    in data/records/waste-liquid-crystal-display-panels.yaml with mechanisms[0]: replaced
-    generic bauxite-residue prose with the exact two-step A. thiooxidans DSM 9463
-    waste LCD panel bioleaching findings (biogenic H2SO4 lowering pH to ~0.62, 100%
-    In extraction at 1-10% w/v, 20-26% Sr co-dissolution, and <1% Sn extraction),
-    and refined the substrate edge predicate from acts_on to solubilizes.'
+  summary: 'Synchronized causal_graphs[0] (ferrooxidans_lcd_indium_bioleaching_graph,
+    mechanism_ref: adapted_acidophile_lcd_leaching) in data/records/waste-liquid-crystal-display-panels.yaml
+    with mechanisms[0] (Culture-associated indium mobilization from prepared waste
+    LCD powder) and primary source willner2018 (DOI:10.5277/ppmp1878): edge acidic_ferric_sulfate_lixiviant
+    -> solid_feed_substrate uses predicate ''solubilizes'' (supports: partial) and
+    edge solid_feed_substrate -> solubilized_metal_species uses predicate ''produces''
+    (supports: support). Upgraded acidic_ferric_sulfate_lixiviant -> solid_feed_substrate
+    from acts_on to solubilizes (retaining supports: partial for unmatched pH/redox
+    controls), included A. thiooxidans alongside A. ferrooxidans in sqr_reductase
+    -> tth_hydrolase, and replaced template node/edge descriptions with exact willner2018
+    2.5% w/v LCD powder In/Sn leaching data.'
   target_ids:
   - cmmmech:waste-liquid-crystal-display-panels
   evidence_ids:
@@ -223,11 +249,12 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
   summary: data/records/waste-liquid-crystal-display-panels.yaml was updated exclusively
     through scripts/curate_causal_graphs.py (curate_record_file), producing append-only
-    history sidecar history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml
+    history sidecar(s) (history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml,
+    latest SHA-256 7a1693622de5120e8ff97e5027b3c2d884eb7f4e39addbb797b155ac0bd4f106)
     and passing all LinkML and history validation gates.
   target_ids:
   - cmmmech:waste-liquid-crystal-display-panels
@@ -240,11 +267,17 @@ actions: []
 summary: 'Waste liquid-crystal display panels (cmmmech:waste-liquid-crystal-display-panels)
   passes Cycle 5 Stage 2 causal-graph review (scientific_review: true) at SHA-256
   4e8a7b1ae9364ec88d6adfb9cc85ba71e6b71d05df8d929da4615fe6fe0bcbab: Synchronized causal_graphs[0]
-  (thiooxidans_lcd_panel_bioleaching_graph) in data/records/waste-liquid-crystal-display-panels.yaml
-  with mechanisms[0]: replaced generic bauxite-residue prose with the exact two-step
-  A. thiooxidans DSM 9463 waste LCD panel bioleaching findings (biogenic H2SO4 lowering
-  pH to ~0.62, 100% In extraction at 1-10% w/v, 20-26% Sr co-dissolution, and <1%
-  Sn extraction), and refined the substrate edge predicate from acts_on to solubilizes.'
+  (ferrooxidans_lcd_indium_bioleaching_graph, mechanism_ref: adapted_acidophile_lcd_leaching)
+  in data/records/waste-liquid-crystal-display-panels.yaml with mechanisms[0] (Culture-associated
+  indium mobilization from prepared waste LCD powder) and primary source willner2018
+  (DOI:10.5277/ppmp1878): edge acidic_ferric_sulfate_lixiviant -> solid_feed_substrate
+  uses predicate ''solubilizes'' (supports: partial) and edge solid_feed_substrate
+  -> solubilized_metal_species uses predicate ''produces'' (supports: support). Upgraded
+  acidic_ferric_sulfate_lixiviant -> solid_feed_substrate from acts_on to solubilizes
+  (retaining supports: partial for unmatched pH/redox controls), included A. thiooxidans
+  alongside A. ferrooxidans in sqr_reductase -> tth_hydrolase, and replaced template
+  node/edge descriptions with exact willner2018 2.5% w/v LCD powder In/Sn leaching
+  data.'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes; an independent subagent PR review is executed prior to merge.'
