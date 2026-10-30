@@ -1,0 +1,65 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 4
+stage: 6
+revision: 1
+outcome: completed
+summary: "Froze INFRA_TASKS.md at supervisor cutoff 2026-10-30T11:32:42Z (sha256 ae32f3e0efa4afdf567f5635920a9481eb253773838a8bc89d238725f0b914b8) across the 5 non-resolved infrastructure tasks (cmmmech-infra-0001, cmmmech-infra-0005, cmmmech-infra-0010, cmmmech-infra-0011, cmmmech-infra-0012; while retaining previously resolved cmmmech-infra-0002 through cmmmech-infra-0004 and cmmmech-infra-0006 through cmmmech-infra-0009 in INFRA_TASKS.md), grouped and linked cmmmech-infra-0010 to GitHub issue #839, cmmmech-infra-0011 to GitHub issue #840, and cmmmech-infra-0012 to GitHub issue #866 (cross-referencing #822), implemented and validated cmmmech-infra-0010 (#839: _source_title_errors() and _section_order_errors() in src/cmmmech/validation.py plus claim-evidence table and Source.title scientific-review rules across repository-owned .claude/skills/* and docs/records.md), cmmmech-infra-0011 (#840: scripts/index_bounded_pdf_passages.py and bounded source-text / single-page PDF inspection rules across repository-owned .claude/skills/* and docs/records.md), and cmmmech-infra-0012 (#866: _write_exclusive() fallback in src/cmmmech/history.py cmd_new() and in-place path.write_text() fallback in scripts/curate_causal_graphs.py write_record_atomic()), and explicitly carried forward deferred upstream-governed scripts/record_review.py tasks cmmmech-infra-0001 and cmmmech-infra-0005 under open issue #805."
+source_revision: 83a7898cf5da09adaa7fa3e4d673654704b65f8f
+scope_frozen_at: '2026-10-30T11:32:42Z'
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-06/revision-0001/infra_snapshot.md
+  sha256: ae32f3e0efa4afdf567f5635920a9481eb253773838a8bc89d238725f0b914b8
+  kind: infra_snapshot
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-06/revision-0001/implementation_plan.md
+  sha256: a8ed27f8344acb5d9322acb66da51f6eeed5a574cc53f1e58c5b8db6e0eb3d92
+  kind: implementation_plan
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-06/revision-0001/validation.md
+  sha256: 0e855b1818503831217526221f6942a864e1298b19d91e0bda5e1cfd87200162
+  kind: validation
+findings: []
+groups: []
+carry_forward_ids: []
+infra_tasks:
+- task_id: cmmmech-infra-0001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
+  status: deferred
+  summary: "Anchor scripts/record_review.py _directory() traversal at repository ROOT instead of filesystem root / so review validation runs inside Seatbelt sandboxes"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-06/revision-0001/validation.md
+  disposition: "Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6, Cycle 3 Stage 6, and Cycle 4 Stage 6 because scripts/record_review.py and tests/test_record_review_contract.py are vendored artifacts governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); tracked under open issue #805 for coordinated upstream implementation and sync."
+- task_id: cmmmech-infra-0005
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
+  status: deferred
+  summary: "Batch git cat-file object size and content checks in scripts/record_review.py assert_append_only() and source_provenance() via git cat-file --batch"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-06/revision-0001/validation.md
+  disposition: "Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6, Cycle 3 Stage 6, and Cycle 4 Stage 6 because scripts/record_review.py is a vendored artifact governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); grouped with cmmmech-infra-0001 under open issue #805 for upstream implementation and sync."
+- task_id: cmmmech-infra-0010
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/839
+  status: resolved
+  summary: "Add source-table and measurement-provenance guardrails to CMMMech curation skills, review instructions, and fixtures"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-06/revision-0001/validation.md
+  disposition: "Resolved in Cycle 4 Stage 6 (#839, IGRP-C4S6-001) by adding mechanical Source.title conciseness/assay-prose guardrails and canonical top-level section ordering validation in src/cmmmech/validation.py (tested in tests/test_validation.py) and updating repository-owned .claude/skills/cmmmech-add-record/SKILL.md, .claude/skills/curate-yaml-record/SKILL.md, .claude/skills/review-record/SKILL.md, and docs/records.md with compact claim-evidence mapping, single-page visual table-alignment verification, empirical-vs-theoretical analysis separation, and scientific_review: true successor-hash obligations for any scientific content in Source.title."
+- task_id: cmmmech-infra-0011
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/840
+  status: resolved
+  summary: "Codify bounded source-text excerpts (<= 2-8 KB per page/passage) and single-page PDF inspection across CMMMech discovery, curation, and review skills and helpers to prevent full-PDF context-window overflow"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-06/revision-0001/validation.md
+  disposition: "Resolved in Cycle 4 Stage 6 (#840, IGRP-C4S6-002) by implementing scripts/index_bounded_pdf_passages.py (emitting summary.json, passage-map.tsv, and <= 2 KB UTF-8 passage files, tested in tests/test_index_bounded_pdf_passages.py) and codifying bounded source-text inspection and single-page visual rendering rules across repository-owned .claude/skills/cmmmech-discover-sources/SKILL.md, .claude/skills/cmmmech-add-record/SKILL.md, .claude/skills/curate-yaml-record/SKILL.md, .claude/skills/review-record/SKILL.md, and docs/records.md."
+- task_id: cmmmech-infra-0012
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/822
+  status: resolved
+  summary: "Fallback when workspace dotfile NamedTemporaryFile creation/unlink or os.replace raises PermissionError in src/cmmmech/history.py cmd_new() and scripts/curate_causal_graphs.py write_record_atomic() inside macOS Seatbelt sandboxes"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-06/revision-0001/validation.md
+  disposition: "Resolved in Cycle 4 Stage 6 (#822 and companion issue #866, IGRP-C4S6-003) by adding _write_exclusive() fallback when NamedTemporaryFile(dir=path.parent) or os.link() raises PermissionError in src/cmmmech/history.py cmd_new() and adding in-place path.write_text() fallback when NamedTemporaryFile(dir=path.parent) or os.replace() raises PermissionError in scripts/curate_causal_graphs.py write_record_atomic(), verified by unit tests in tests/test_history.py and tests/test_curate_causal_graphs.py."

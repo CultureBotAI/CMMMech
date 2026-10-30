@@ -232,6 +232,23 @@ def cmd_validate(args: argparse.Namespace) -> int:
     return int(bool(errors))
 
 
+def _write_exclusive(path: Path, serialized: str) -> None:
+    """Create a history sidecar exclusively without overwriting an existing file."""
+    flags = os.O_WRONLY | os.O_CREAT | os.O_EXCL | getattr(os, "O_NOFOLLOW", 0)
+    fd = os.open(path, flags, 0o644)
+    try:
+        with os.fdopen(fd, "w", encoding="utf-8") as target_stream:
+            target_stream.write(serialized)
+            target_stream.flush()
+            os.fsync(target_stream.fileno())
+    except BaseException:
+        try:
+            path.unlink()
+        except OSError:
+            pass
+        raise
+
+
 def cmd_new(args: argparse.Namespace) -> int:
     root = args.repo_root.resolve()
     try:
@@ -279,30 +296,25 @@ def cmd_new(args: argparse.Namespace) -> int:
             raise ValueError("; ".join(problems))
         path.parent.mkdir(parents=True, exist_ok=True)
         # Link a complete temporary file atomically; linking never overwrites an
-        # existing name. If a sandbox prohibits hardlink creation (PermissionError),
-        # fall back to O_CREAT | O_EXCL so an existing session is never overwritten.
+        # existing name. If a sandbox prohibits workspace dotfile creation/unlink
+        # or hardlink creation (PermissionError), fall back to O_CREAT | O_EXCL
+        # so an existing session is never overwritten.
         serialized = yaml.safe_dump(data, sort_keys=False, allow_unicode=True, width=88)
-        with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent,
-                                         prefix=".new-history-", suffix=".tmp") as stream:
-            stream.write(serialized)
-            stream.flush()
-            os.fsync(stream.fileno())
-            try:
-                os.link(stream.name, path)
-            except PermissionError:
-                flags = os.O_WRONLY | os.O_CREAT | os.O_EXCL | getattr(os, "O_NOFOLLOW", 0)
-                fd = os.open(path, flags, 0o644)
+        wrote_target = False
+        try:
+            with tempfile.NamedTemporaryFile(mode="w", encoding="utf-8", dir=path.parent,
+                                             prefix=".new-history-", suffix=".tmp") as stream:
+                stream.write(serialized)
+                stream.flush()
+                os.fsync(stream.fileno())
                 try:
-                    with os.fdopen(fd, "w", encoding="utf-8") as target_stream:
-                        target_stream.write(serialized)
-                        target_stream.flush()
-                        os.fsync(target_stream.fileno())
-                except BaseException:
-                    try:
-                        path.unlink()
-                    except OSError:
-                        pass
-                    raise
+                    os.link(stream.name, path)
+                except PermissionError:
+                    _write_exclusive(path, serialized)
+                wrote_target = True
+        except PermissionError:
+            if not wrote_target:
+                _write_exclusive(path, serialized)
         print(relative)
         return 0
     except (OSError, ValueError) as exc:

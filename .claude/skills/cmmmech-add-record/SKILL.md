@@ -63,10 +63,24 @@ extraction alone does not make them secondary resources or traded commodities.
 Use `.claude/skills/cmmmech-discover-sources/SKILL.md` when additional source
 investigation is needed. A discovery report is a handoff, not verification of
 every proposed claim. Inspect the official list, primary full text, methods,
-results, tables/figures and supplements relevant to the record. Verify source
-identity, edition/version and access dates; retain precise locators in source
-titles, evidence explanations or a research dossier. For local-only work,
-distinguish inspected artifacts from live checks not performed.
+results, tables/figures and supplements relevant to the record. Never call
+`read_file` directly on full multi-page PDFs, master-list catalogues (such as
+the 241-page IMA Master List), bulk `.full.txt` extractions, or raw conversation
+transcripts; instead inspect bounded text passages (`<= 2-8 KB` per page/passage)
+via `python scripts/index_bounded_pdf_passages.py` or single-page
+`mutool draw -q -F txt <pdf> <page>`, and use single-page PNG rendering
+(`python scripts/render_pages.py <pdf> <page> --dpi 150`) whenever dense
+chemical-composition or crystal-structure tables have ambiguous column alignment.
+Verify source identity, edition/version and access dates; keep `Source.title`
+as a concise bibliographic title (`<= 1000` characters, without embedded
+`wt.%`, `apfu`, `wR2 =`, or `GOF =` assay dumps) and retain detailed conditions,
+compositions, and precise locators in `description`, `mechanisms`, `evidence`,
+or a research dossier. Build a compact claim-evidence table for every retained
+numeric assertion (source SHA-256 hash, printed page/table, row/column/sample
+label, unit, measurement method, and `measured`/`calculated`/`inferred`/`censored`/`not_determined`
+status), distinguish theoretical/recalculated/endmember values from empirical
+analyses, and preserve paper-internal contradictions explicitly. For local-only
+work, distinguish inspected artifacts from live checks not performed.
 
 - Criticality requires authority, jurisdiction, exact list, edition and source.
   Explain grouped-list or commodity mappings in the record. Historical editions

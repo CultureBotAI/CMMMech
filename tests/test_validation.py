@@ -359,4 +359,48 @@ def test_dissolution_and_solubilization_causal_predicates(record, predicate):
     assert validate_record(record) == []
 
 
+def test_source_title_conciseness_and_assay_prose_guardrail(record):
+    """Source.title must remain bibliographic and not embed empirical assay dumps (cmmmech-infra-0010)."""
+    record["sources"][0]["title"] = (
+        "Synthetic Paper (2026); EPMA Table 1 reports Nb2O5 44.12 wt.% (0.98 apfu) "
+        "and single-crystal refinement wR2 = 0.054, GOF = 1.08."
+    )
+    errs = validate_record(record)
+    assert any("contains embedded empirical assay/refinement metrics" in e for e in errs)
+
+    record["sources"][0]["title"] = "Synthetic Paper (2026) " + ("A" * 1005)
+    errs_long = validate_record(record)
+    assert any("exceeds maximum bibliographic length" in e for e in errs_long)
+
+
+def test_top_level_section_ordering_guardrail(record):
+    """Top-level sections must preserve canonical evidence/mechanism/history ordering (cmmmech-infra-0010)."""
+    misordered_mech = {
+        "id": record["id"],
+        "name": record["name"],
+        "material_kind": record["material_kind"],
+        "description": record["description"],
+        "mechanisms": record["mechanisms"],
+        "sources": record["sources"],
+        "criticality": record["criticality"],
+    }
+    errs_mech = validate_record(misordered_mech)
+    assert any("mechanisms must appear after sources" in e for e in errs_mech)
+    assert any("mechanisms must appear after criticality" in e for e in errs_mech)
+
+    misordered_history = copy.deepcopy(record)
+    misordered_history["history_refs"] = ["history/records/synthetic-material/2026-10-07T120000Z-tester-123abc.yaml"]
+    misordered_history["curation_history"] = [
+        {
+            "timestamp": "2026-10-07T12:00:00Z",
+            "curator": "tester",
+            "action": "audit",
+            "summary": "Synthetic audit",
+        }
+    ]
+    errs_hist = validate_record(misordered_history)
+    assert any("history_refs must appear after curation_history" in e for e in errs_hist)
+
+
+
 

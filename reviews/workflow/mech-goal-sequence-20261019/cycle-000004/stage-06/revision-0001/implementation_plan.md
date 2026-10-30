@@ -1,0 +1,44 @@
+# Cycle 4 Stage 6 Infrastructure Implementation Plan
+
+- **Run ID**: `mech-goal-sequence-20261019`
+- **Repository**: `CultureBotAI/CMMMech` (`cmmmech`)
+- **Cycle / Stage**: `4` / `6` (`infrastructure`)
+- **Frozen `INFRA_TASKS.md` Cutoff Timestamp**: `2026-10-30T11:32:42Z`
+- **Frozen `INFRA_TASKS.md` SHA-256**: `ae32f3e0efa4afdf567f5635920a9481eb253773838a8bc89d238725f0b914b8`
+- **Frozen Snapshot Path**: `reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-06/revision-0001/infra_snapshot.md`
+
+## 1. Frozen Task Intake & Dependency-Aware Issue Grouping
+
+The supervisor-frozen `INFRA_TASKS.md` snapshot (`ae32f3e0efa4afdf567f5635920a9481eb253773838a8bc89d238725f0b914b8`, 12 total tasks: `cmmmech-infra-0001` through `cmmmech-infra-0012`, including 5 non-resolved tasks `cmmmech-infra-0001`, `cmmmech-infra-0005`, `cmmmech-infra-0010`, `cmmmech-infra-0011`, and `cmmmech-infra-0012`) was partitioned by repair ownership and dependency structure into GitHub issues in `CultureBotAI/CMMMech`:
+
+| Group ID | Task IDs | Category | Target | GitHub Issue | Planned Disposition | Dependencies |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| `IGRP-C1S6-001` | `cmmmech-infra-0001`, `cmmmech-infra-0005` | `workflow` | `scripts/record_review.py`, `tests/test_record_review_contract.py` | [#805](https://github.com/CultureBotAI/CMMMech/issues/805) | `deferred` | Upstream `CultureBotAI/culturebotai-claw` vendored sync (`scripts/check_vendored_sync.py`) |
+| `IGRP-C1S6-002` | `cmmmech-infra-0002` | `schema` | `src/cmmmech/schema/cmmmech.yaml`, `scripts/render_pages.py`, `src/cmmmech/templates/material.html` | [#806](https://github.com/CultureBotAI/CMMMech/issues/806) | `resolved` (Cycle 1 Stage 6) | None |
+| `IGRP-C1S6-003` | `cmmmech-infra-0003` | `schema` | `src/cmmmech/schema/cmmmech.yaml` | [#807](https://github.com/CultureBotAI/CMMMech/issues/807) | `resolved` (Cycle 1 Stage 6) | None |
+| `IGRP-C1S6-004` | `cmmmech-infra-0004` | `script` | `scripts/curate_causal_graphs.py`, `tests/test_curate_causal_graphs.py` | [#808](https://github.com/CultureBotAI/CMMMech/issues/808) | `resolved` (Cycle 1 Stage 6) | `cmmmech-infra-0002`, `cmmmech-infra-0003` |
+| `IGRP-C2S6-001` | `cmmmech-infra-0006` | `script` | `src/cmmmech/history.py`, `tests/test_history.py` | [#822](https://github.com/CultureBotAI/CMMMech/issues/822) | `resolved` (Cycle 2 Stage 6) | `cmmmech-infra-0004` |
+| `IGRP-C3S6-001` | `cmmmech-infra-0007` | `script` | `scripts/render_pages.py`, `tests/test_render_pages.py` | [#834](https://github.com/CultureBotAI/CMMMech/issues/834) | `resolved` (Cycle 3 Stage 6) | None |
+| `IGRP-C3S6-002` | `cmmmech-infra-0008`, `cmmmech-infra-0009` | `script` | `scripts/curate_causal_graphs.py`, `tests/test_curate_causal_graphs.py` | [#835](https://github.com/CultureBotAI/CMMMech/issues/835) | `resolved` (Cycle 3 Stage 6) | `cmmmech-infra-0004` |
+| `IGRP-C4S6-001` | `cmmmech-infra-0010` | `validation` / `skill` | `src/cmmmech/validation.py`, `tests/test_validation.py`, `.claude/skills/*`, `docs/records.md` | [#839](https://github.com/CultureBotAI/CMMMech/issues/839) | `resolved` (Cycle 4 Stage 6) | [#838](https://github.com/CultureBotAI/CMMMech/issues/838), [#837](https://github.com/CultureBotAI/CMMMech/pull/837) |
+| `IGRP-C4S6-002` | `cmmmech-infra-0011` | `script` / `skill` | `scripts/index_bounded_pdf_passages.py`, `tests/test_index_bounded_pdf_passages.py`, `.claude/skills/*`, `docs/records.md` | [#840](https://github.com/CultureBotAI/CMMMech/issues/840) | `resolved` (Cycle 4 Stage 6) | `cmmmech-infra-0010` ([#839](https://github.com/CultureBotAI/CMMMech/issues/839)) |
+| `IGRP-C4S6-003` | `cmmmech-infra-0012` | `script` | `src/cmmmech/history.py`, `scripts/curate_causal_graphs.py`, `tests/test_history.py`, `tests/test_curate_causal_graphs.py` | [#866](https://github.com/CultureBotAI/CMMMech/issues/866) | `resolved` (Cycle 4 Stage 6) | `cmmmech-infra-0004`, `cmmmech-infra-0006` ([#822](https://github.com/CultureBotAI/CMMMech/issues/822)) |
+
+## 2. Dependency Order & Execution Plan
+
+1. **Step 1 — Preserve Cycle 1, Cycle 2 & Cycle 3 Stage 6 Resolved Infrastructure (`cmmmech-infra-0002`, `cmmmech-infra-0003`, `cmmmech-infra-0004`, `cmmmech-infra-0006`, `cmmmech-infra-0007`, `cmmmech-infra-0008`, `cmmmech-infra-0009`)**:
+   - Retain all schema, history sidecar, static page renderer, and CLI writer enhancements delivered in Cycles 1–3 Stage 6 (`#806`, `#807`, `#808`, `#822`, `#834`, `#835`) and verify regression-free operation across the 663-record corpus and 1,017 history sidecars.
+2. **Step 2 — Implement Source-Table & Measurement-Provenance Guardrails and Top-Level Section Ordering (`cmmmech-infra-0010`, `#839`, `IGRP-C4S6-001`)**:
+   - In `src/cmmmech/validation.py`, add `_source_title_errors(sources_list)` to reject `Source.title` strings exceeding `MAX_SOURCE_TITLE_LENGTH = 1000` characters or containing dense assay/crystallographic prose tokens (`SOURCE_TITLE_ASSAY_PATTERN = r"\b(?:wt\.?\s*%|apfu|wR2\s*=|GOF\s*=)\b"`), and add `_section_order_errors(record)` to enforce canonical top-level YAML section ordering (`(sources, criticality) < mechanisms < causal_graphs < curation_history < history_refs`).
+   - Add unit tests `test_source_title_conciseness_and_assay_prose_guardrail` and `test_top_level_section_ordering_guardrail` in `tests/test_validation.py`.
+   - Update repository-owned `.claude/skills/cmmmech-add-record/SKILL.md`, `.claude/skills/curate-yaml-record/SKILL.md`, `.claude/skills/review-record/SKILL.md`, and `docs/records.md` (while preserving governed `docs/record-reviews.md`) to require a compact claim-evidence mapping table for retained numeric claims, single-page visual confirmation of ambiguous table alignment, explicit empirical-vs-theoretical/endmember analysis separation, concise bibliographic `Source.title` strings, and `scientific_review: true` successor-hash obligations for any scientific content in `Source.title`.
+3. **Step 3 — Implement Bounded Source-Text Excerpt Indexing & Single-Page PDF Inspection (`cmmmech-infra-0011`, `#840`, `IGRP-C4S6-002`)**:
+   - Create `scripts/index_bounded_pdf_passages.py` to deterministically extract and split local research PDFs into bounded UTF-8 passage files (`<= 2 KB` default, configurable up to `8 KB`) with `summary.json` (recording PDF SHA-256, page count, passage count, and `max_passage_bytes`) and `passage-map.tsv` manifests.
+   - Add unit tests `test_index_bounded_pdf_passages_splits_and_indexes` and `test_split_bounded_passages_respects_utf8_byte_limit` in `tests/test_index_bounded_pdf_passages.py`.
+   - Update `.claude/skills/cmmmech-discover-sources/SKILL.md`, `.claude/skills/cmmmech-add-record/SKILL.md`, `.claude/skills/curate-yaml-record/SKILL.md`, `.claude/skills/review-record/SKILL.md`, and `docs/records.md` to forbid calling `read_file` on full multi-page PDFs, master-list catalogues (such as the 241-page IMA Master List), `.full.txt` archives, or raw conversation transcripts, and to mandate bounded page/passage extraction (`<= 2–8 KB`) plus single-page PNG rendering (`scripts/render_pages.py`) only when table-column alignment or figure inspection requires visual confirmation.
+4. **Step 4 — Implement Workspace `NamedTemporaryFile` and `os.replace()` Seatbelt Fallbacks (`cmmmech-infra-0012`, `#866`, `IGRP-C4S6-003`)**:
+   - In `src/cmmmech/history.py`, extract `_write_exclusive(path: Path, serialized: str)` (`os.open(path, os.O_WRONLY | os.O_CREAT | os.O_EXCL | O_NOFOLLOW, 0o644)` with `fsync`) and update `cmd_new()` so that if `NamedTemporaryFile(dir=path.parent)` creation/cleanup or `os.link()` raises `PermissionError` inside a macOS Seatbelt sandbox, it falls back cleanly to `_write_exclusive(path, serialized)` while preserving append-only non-overwriting guarantees.
+   - In `scripts/curate_causal_graphs.py`, update `write_record_atomic()` so that if `NamedTemporaryFile(dir=path.parent)` creation or `os.replace(tmp_name, path)` raises `PermissionError` inside a macOS Seatbelt sandbox, it cleans up any temporary file if permitted and falls back to writing `serialized` in place via `path.write_text(serialized, encoding="utf-8")`.
+   - Add unit tests `test_scaffolder_falls_back_when_named_temporary_file_blocked` in `tests/test_history.py` and `test_write_record_atomic_falls_back_when_tempfile_or_replace_blocked` in `tests/test_curate_causal_graphs.py`.
+5. **Step 5 — Explicit Deferral of Upstream-Governed `scripts/record_review.py` Tasks (`cmmmech-infra-0001`, `cmmmech-infra-0005`, `#805`, `IGRP-C1S6-001`)**:
+   - Because `scripts/record_review.py` and `tests/test_record_review_contract.py` are vendored artifacts governed by `CultureBotAI/culturebotai-claw` and enforced by `scripts/check_vendored_sync.py`, retain both tasks in open issue [#805](https://github.com/CultureBotAI/CMMMech/issues/805) (`status: deferred`) and carry them forward explicitly.

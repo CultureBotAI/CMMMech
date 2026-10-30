@@ -6,9 +6,18 @@ It never dereferences URLs or resolves ontology identifiers.
 
 Required record fields are `id`, `name`, `material_kind`, `description`, and a
 nonempty `sources` list. IDs use `cmmmech:<lowercase-slug>`. Every source has a
-record-local ID, title, HTTPS/HTTP URL, and access date. Quote dates in YAML.
-Sources establish provenance; they do not imply that an agent has verified
-the publication or that every claim in it is correct.
+record-local ID, concise bibliographic `title` (`<= 1000` characters, without
+embedded `wt.%`, `apfu`, `wR2 =`, or `GOF =` assay dumps), HTTPS/HTTP URL, and
+access date. Quote dates in YAML. Keep top-level sections in canonical order so
+`sources` and `criticality` precede `mechanisms`, `mechanisms` precedes
+`causal_graphs`, and `curation_history` precedes `history_refs`. Sources
+establish provenance; they do not imply that an agent has verified the
+publication or that every claim in it is correct. Structural validation
+(`cmmmech validate`) checks schema compliance, section ordering, and concise
+`Source.title` formatting; it never establishes scientific truth. Any scientific
+content retained in `Source.title` is subject to the same primary-literature
+scientific review (`scientific_review: true`) and successor-hash tracking as
+`description` and `mechanisms`.
 
 Optional criticality entries each require jurisdiction, list name, edition,
 classification (`critical`, `strategic`, `not_listed`, or `unknown`), and a
@@ -56,12 +65,23 @@ economic constituent or potential value. Resource records do not inherit the
 criticality designation of an element they contain.
 
 For each mechanism, cite the primary experiment and locate supporting methods,
-figures or tables in evidence explanations. Include relevant pretreatment,
-organism resolution, conditions, controls, outcome and scale. Distinguish
-measured from fitted values, dissolved-metal removal from an isolated product,
-and observations from a proposed molecular cause. Source contradictions may
-be retained as a second `partial` evidence entry explaining the narrower claim.
-Do not manufacture a `refute` entry merely to populate every evidence type.
+figures or tables in evidence explanations. Inspect primary-source PDFs through
+bounded text passages (`<= 2-8 KB` per page/window via
+`python scripts/index_bounded_pdf_passages.py` or single-page
+`mutool draw -q -F txt <pdf> <page>`) and single-page visual rendering
+(`python scripts/render_pages.py <pdf> <page> --dpi 150`) whenever dense
+composition or crystal-structure tables have ambiguous column alignment; never
+load entire multi-page PDFs, master-list catalogues, or `.full.txt` dumps into
+chat context. Verify every retained numeric assertion against a compact
+claim-evidence mapping (source SHA-256 hash, printed page/table, row/column/sample
+label, unit, measurement method, and `measured`/`calculated`/`inferred`/`censored`/`not_determined`
+status), and distinguish empirical analyses from theoretical, recalculated, or
+endmember values. Include relevant pretreatment, organism resolution,
+conditions, controls, outcome and scale. Distinguish measured from fitted
+values, dissolved-metal removal from an isolated product, and observations from
+a proposed molecular cause. Source contradictions may be retained as a second
+`partial` evidence entry explaining the narrower claim. Do not manufacture a
+`refute` entry merely to populate every evidence type.
 
 Apply [.claude/skills/review-record/SKILL.md](../.claude/skills/review-record/SKILL.md)
 to each new or materially changed record. New rounds use the shared schema and
