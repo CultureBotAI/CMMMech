@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 36 commodity records in data/records/*.yaml at commit b527ecdabb331c0ff10764032306ed3fd4a05c53. All 36 commodity records accurately distinguish refined, alloy, chemical, or grouped critical-mineral commodity designations from chemical elements and IMA mineral species. 6/36 commodity records contain primary-source-backed microbial mechanisms (6 mechanisms), and 4/36 (cmmmech:borates, cmmmech:kaolin, cmmmech:rare-earth-element-commodities, cmmmech:titanium-metal) include grounded causal_graphs and live-verified UniProtKB protein_examples across 5 unique accessions. Zero open findings.
+Reviewed all 36 commodity records in data/records/*.yaml at commit b527ecdabb331c0ff10764032306ed3fd4a05c53. All 36 commodity records accurately distinguish refined, alloy, chemical, or grouped critical-mineral commodity designations from chemical elements and IMA mineral species. 6/36 commodity records contain primary-source-backed microbial mechanisms (6 mechanisms), and 4/36 (cmmmech:borates, cmmmech:phosphate-rock, cmmmech:rare-earth-element-commodities, cmmmech:titanium-metal) include grounded causal_graphs and live-verified UniProtKB protein_examples across 5 unique accessions. Zero open findings.
 
 ## Scope And Provenance
 
@@ -117,7 +117,7 @@ summary: Reviewed all 36 commodity records in data/records/*.yaml at commit b527
   All 36 commodity records accurately distinguish refined, alloy, chemical, or grouped
   critical-mineral commodity designations from chemical elements and IMA mineral species.
   6/36 commodity records contain primary-source-backed microbial mechanisms (6 mechanisms),
-  and 4/36 (cmmmech:borates, cmmmech:kaolin, cmmmech:rare-earth-element-commodities,
+  and 4/36 (cmmmech:borates, cmmmech:phosphate-rock, cmmmech:rare-earth-element-commodities,
   cmmmech:titanium-metal) include grounded causal_graphs and live-verified UniProtKB
   protein_examples across 5 unique accessions. Zero open findings.
 reviewer:

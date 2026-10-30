@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 111 secondary_resource records in data/records/*.yaml at commit b527ecdabb331c0ff10764032306ed3fd4a05c53, including cmmmech:traction-battery-hydrometallurgical-residue following Cycle 4 Stage 3 five-member consortium UniProtKB grounding expansion. 108/111 secondary_resource records contain primary-source-backed microbial mechanisms (145 mechanisms total), and 29/111 contain multi-step causal_graphs (32 graphs) and live-verified UniProtKB protein_examples across 21 unique accessions. Identified 3 minor findings (cmmmech-cycle4-stage4-finding-0001 on cmmmech:traction-battery-hydrometallurgical-residue, cmmmech-cycle4-stage4-finding-0002 on 6 secondary_resource records, and cmmmech-cycle4-stage4-finding-0003 on 10 secondary_resource records) for Stage 5 grouped remediation.
+Reviewed all 111 secondary_resource records in data/records/*.yaml at commit b527ecdabb331c0ff10764032306ed3fd4a05c53, including cmmmech:traction-battery-hydrometallurgical-residue following Cycle 4 Stage 3 five-member consortium UniProtKB grounding expansion. 108/111 secondary_resource records contain primary-source-backed mechanisms (145 mechanisms total), and 29/111 contain multi-step causal_graphs (32 graphs) and live-verified UniProtKB protein_examples across 21 unique accessions. Identified 3 minor findings (cmmmech-cycle4-stage4-finding-0001 on cmmmech:traction-battery-hydrometallurgical-residue, cmmmech-cycle4-stage4-finding-0002 on 6 secondary_resource records, and cmmmech-cycle4-stage4-finding-0003 on 10 secondary_resource records) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -208,7 +208,7 @@ Reorder top-level trailing YAML keys so curation_history precedes history_refs i
 
 ## Limits And Additional Notes
 
-- Three secondary_resource records currently lack curated microbial mechanisms: cmmmech:copper-electrorefining-anode-slime, cmmmech:ferrochrome-slag, and cmmmech:titanium-dioxide-waste-acid are maintained secondary-resource records awaiting primary experimental microbial bioleaching/recovery studies. (108/111 secondary_resource records carry microbial mechanisms; 3/111 document feedstock identity and composition only.)
+- Three secondary_resource records currently lack curated mechanisms entries: cmmmech:oil-and-gas-produced-water, cmmmech:spent-vegetable-oil-hydrogenation-catalyst, and cmmmech:theisen-sludge are maintained secondary-resource records awaiting primary experimental microbial bioleaching/recovery studies. (108/111 secondary_resource records carry curated mechanisms entries; 3/111 document feedstock identity, criticality, and composition only.)
 - Cohort covers 100% (111/111) of secondary_resource records in data/records/*.yaml at commit b527ecdabb331c0ff10764032306ed3fd4a05c53.
 
 ## Complete Structured Record
@@ -230,10 +230,10 @@ scientific_review: true
 summary: Reviewed all 111 secondary_resource records in data/records/*.yaml at commit
   b527ecdabb331c0ff10764032306ed3fd4a05c53, including cmmmech:traction-battery-hydrometallurgical-residue
   following Cycle 4 Stage 3 five-member consortium UniProtKB grounding expansion.
-  108/111 secondary_resource records contain primary-source-backed microbial mechanisms
-  (145 mechanisms total), and 29/111 contain multi-step causal_graphs (32 graphs)
-  and live-verified UniProtKB protein_examples across 21 unique accessions. Identified
-  3 minor findings (cmmmech-cycle4-stage4-finding-0001 on cmmmech:traction-battery-hydrometallurgical-residue,
+  108/111 secondary_resource records contain primary-source-backed mechanisms (145
+  mechanisms total), and 29/111 contain multi-step causal_graphs (32 graphs) and live-verified
+  UniProtKB protein_examples across 21 unique accessions. Identified 3 minor findings
+  (cmmmech-cycle4-stage4-finding-0001 on cmmmech:traction-battery-hydrometallurgical-residue,
   cmmmech-cycle4-stage4-finding-0002 on 6 secondary_resource records, and cmmmech-cycle4-stage4-finding-0003
   on 10 secondary_resource records) for Stage 5 grouped remediation.
 reviewer:
@@ -2915,11 +2915,11 @@ evidence:
     Lf, Tt, Ac, St) and consortia (MC40-25St, MC45-40AS), without (BR1, BR2, BR4)
     sample codes.
 limitations:
-- 'Three secondary_resource records currently lack curated microbial mechanisms: cmmmech:copper-electrorefining-anode-slime,
-  cmmmech:ferrochrome-slag, and cmmmech:titanium-dioxide-waste-acid are maintained
-  secondary-resource records awaiting primary experimental microbial bioleaching/recovery
-  studies. (108/111 secondary_resource records carry microbial mechanisms; 3/111 document
-  feedstock identity and composition only.)'
+- 'Three secondary_resource records currently lack curated mechanisms entries: cmmmech:oil-and-gas-produced-water,
+  cmmmech:spent-vegetable-oil-hydrogenation-catalyst, and cmmmech:theisen-sludge are
+  maintained secondary-resource records awaiting primary experimental microbial bioleaching/recovery
+  studies. (108/111 secondary_resource records carry curated mechanisms entries; 3/111
+  document feedstock identity, criticality, and composition only.)'
 notes:
 - Cohort covers 100% (111/111) of secondary_resource records in data/records/*.yaml
   at commit b527ecdabb331c0ff10764032306ed3fd4a05c53.

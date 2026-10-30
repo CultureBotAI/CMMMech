@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 7 mineral_group records in data/records/*.yaml at commit b527ecdabb331c0ff10764032306ed3fd4a05c53. All 7 mineral_group records (allanite-group, apatite-group, chlorite,eudialyte-group, monazite-group, olivine-group, pyrochlore-supergroup) maintain clear group-level scope distinct from single IMA endmember species and carry primary-source-backed microbial mechanisms (7/7 records, 7 mechanisms). Two records (cmmmech:chlorite and cmmmech:olivine-group) include multi-step causal_graphs and live-verified UniProtKB protein_examples across 6 unique accessions. Zero open findings.
+Reviewed all 7 mineral_group records in data/records/*.yaml at commit b527ecdabb331c0ff10764032306ed3fd4a05c53. All 7 mineral_group records (bastnaesite, biotite, chlorite, illite, olivine-group, potassium-feldspar, vermiculite) maintain clear group-level scope distinct from single IMA endmember species and carry primary-source-backed microbial mechanisms (7/7 records, 7 mechanisms). Two records (cmmmech:chlorite and cmmmech:olivine-group) include multi-step causal_graphs and live-verified UniProtKB protein_examples across 6 unique accessions. Zero open findings.
 
 ## Scope And Provenance
 
@@ -65,7 +65,7 @@ No findings recorded within this review's declared scope.
 
 ## Limits And Additional Notes
 
-- Five mineral_group records use consortium or unsequenced isolates without gene-level causal graphs: allanite-group, apatite-group, eudialyte-group, monazite-group, and pyrochlore-supergroup mechanisms involve mixed consortia or isolates without gene-resolved enzyme assays. (2/7 mineral_group records carry causal_graphs and UniProtKB protein_examples; 5/7 record organism/consortium-level mechanisms only.)
+- Five mineral_group records use consortium or unsequenced isolates without gene-level causal graphs: bastnaesite, biotite, illite, potassium-feldspar, and vermiculite mechanisms involve mixed consortia or isolates without gene-resolved enzyme assays. (2/7 mineral_group records carry causal_graphs and UniProtKB protein_examples; 5/7 record organism/consortium-level mechanisms only.)
 - Cohort covers 100% (7/7) of mineral_group records in data/records/*.yaml at commit b527ecdabb331c0ff10764032306ed3fd4a05c53.
 
 ## Complete Structured Record
@@ -85,12 +85,12 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 summary: Reviewed all 7 mineral_group records in data/records/*.yaml at commit b527ecdabb331c0ff10764032306ed3fd4a05c53.
-  All 7 mineral_group records (allanite-group, apatite-group, chlorite,eudialyte-group,
-  monazite-group, olivine-group, pyrochlore-supergroup) maintain clear group-level
-  scope distinct from single IMA endmember species and carry primary-source-backed
-  microbial mechanisms (7/7 records, 7 mechanisms). Two records (cmmmech:chlorite
-  and cmmmech:olivine-group) include multi-step causal_graphs and live-verified UniProtKB
-  protein_examples across 6 unique accessions. Zero open findings.
+  All 7 mineral_group records (bastnaesite, biotite, chlorite, illite, olivine-group,
+  potassium-feldspar, vermiculite) maintain clear group-level scope distinct from
+  single IMA endmember species and carry primary-source-backed microbial mechanisms
+  (7/7 records, 7 mechanisms). Two records (cmmmech:chlorite and cmmmech:olivine-group)
+  include multi-step causal_graphs and live-verified UniProtKB protein_examples across
+  6 unique accessions. Zero open findings.
 reviewer:
   identity: antigravity / cmmmech-cycle4-stage4-cohort-reviewer
   kind: agent
@@ -313,10 +313,10 @@ evidence:
     at commit b527ecdabb331c0ff10764032306ed3fd4a05c53.
 limitations:
 - 'Five mineral_group records use consortium or unsequenced isolates without gene-level
-  causal graphs: allanite-group, apatite-group, eudialyte-group, monazite-group, and
-  pyrochlore-supergroup mechanisms involve mixed consortia or isolates without gene-resolved
-  enzyme assays. (2/7 mineral_group records carry causal_graphs and UniProtKB protein_examples;
-  5/7 record organism/consortium-level mechanisms only.)'
+  causal graphs: bastnaesite, biotite, illite, potassium-feldspar, and vermiculite
+  mechanisms involve mixed consortia or isolates without gene-resolved enzyme assays.
+  (2/7 mineral_group records carry causal_graphs and UniProtKB protein_examples; 5/7
+  record organism/consortium-level mechanisms only.)'
 notes:
 - Cohort covers 100% (7/7) of mineral_group records in data/records/*.yaml at commit
   b527ecdabb331c0ff10764032306ed3fd4a05c53.

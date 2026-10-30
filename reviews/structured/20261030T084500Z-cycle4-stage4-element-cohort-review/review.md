@@ -141,7 +141,7 @@ Reorder top-level trailing YAML keys so curation_history precedes history_refs i
 
 ## Limits And Additional Notes
 
-- Three element records currently lack curated microbial mechanism entries: cmmmech:barium, cmmmech:helium, and cmmmech:zirconium are maintained criticality-anchored element records awaiting primary microbial extraction/transformation/recovery evidence. (63/66 element records have curated mechanisms; 3/66 remain identity and criticality records only.)
+- Three element records currently lack curated microbial mechanism entries: cmmmech:beryllium, cmmmech:helium, and cmmmech:promethium are maintained criticality-anchored element records awaiting primary microbial extraction/transformation/recovery evidence. (63/66 element records have curated mechanisms; 3/66 remain identity and criticality records only.)
 - cmmmech:iron ax17_ferrihydrite_transformation_graph remains explicitly UNGROUNDED: Caloranaerobacter ferrireducens / Thermococcus acidaminovorans Ax17 lacks a sequenced strain proteome or strain-resolved iron-reductase sequence in UniProtKB. (23/24 element records with causal_graphs have GROUNDED GENE_OR_PROTEIN nodes; cmmmech:iron retains protein_grounding_status: UNGROUNDED.)
 - Cohort covers 100% (66/66) of element records in data/records/*.yaml at commit b527ecdabb331c0ff10764032306ed3fd4a05c53.
 
@@ -1781,8 +1781,8 @@ evidence:
   summary: Full programmatic and source-backed audit of all 66 element records at
     commit b527ecdabb331c0ff10764032306ed3fd4a05c53.
 limitations:
-- 'Three element records currently lack curated microbial mechanism entries: cmmmech:barium,
-  cmmmech:helium, and cmmmech:zirconium are maintained criticality-anchored element
+- 'Three element records currently lack curated microbial mechanism entries: cmmmech:beryllium,
+  cmmmech:helium, and cmmmech:promethium are maintained criticality-anchored element
   records awaiting primary microbial extraction/transformation/recovery evidence.
   (63/66 element records have curated mechanisms; 3/66 remain identity and criticality
   records only.)'
