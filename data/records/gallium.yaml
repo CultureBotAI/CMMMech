@@ -92,7 +92,7 @@ mechanisms:
 causal_graphs:
 - id: thiooxidans_hydroxide_sludge_leaching_graph
   name: Acidithiobacillus thiooxidans DSM 14887 sulfur-oxidizing bioleaching of gallium from GaAs-production hydroxide sludge
-  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to culture-associated acidification in elemental-sulfur-supplemented mineral medium and gallium mobilization from GaAs-production hydroxide sludge.
+  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to sulfur-oxidizing acidification in HBS minimal medium (1% elemental sulfur, initial pH 1.8, 12.9 mM Al and 1 mL H2SO4) and gallium mobilization from 3% w/v dried GaAs-production hydroxide sludge.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: thiooxidans_hydroxide_sludge_leaching
   nodes:
@@ -154,19 +154,19 @@ causal_graphs:
         supports: partial
         explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing acidification and gallium bioleaching from GaAs-production hydroxide sludge by Acidithiobacillus thiooxidans DSM 14887 in Fritze et al. (2026); individual sqr/tth genes were not mutated or directly assayed.
   - id: biogenic_sulfuric_acid_lixiviant
-    label: Acidified sulfur-oxidizing mineral medium (10 g/L S0, initial pH 2.5 falling below pH 2 over 27 days at 30 C)
+    label: Acidified A. thiooxidans DSM 14887 HBS sulfur-oxidizing medium (1% S0, initial pH 1.8, 12.9 mM Al and 1 mL H2SO4, 10% w/v inoculum at 30 C)
     node_type: CHEMICAL_ENTITY
-    description: 50 mL elemental-sulfur-supplemented mineral medium inoculated with Acidithiobacillus thiooxidans DSM 14887 (10^7 cells/mL) in 100 mL baffled flasks at 30 C and 120 rpm, acidifying from pH 2.5 to below pH 2 over 27 days.
+    description: 50 mL shake-flask bioleaching medium (HBS minimal medium with 1% elemental sulfur, initial pH 1.8, 12.9 mM Al [molar Al:F 1.5:1] and 1 mL H2SO4 to alleviate fluoride inhibition) inoculated at 10% w/v with sludge-adapted Acidithiobacillus thiooxidans DSM 14887 (adapted to 5% w/v sludge with 12.9 mM Al) and incubated at 30 C for 8 days.
     protein_grounding_status: NOT_APPLICABLE
   - id: gaas_hydroxide_sludge_feed
-    label: Freiberg GaAs-production hydroxide sludge (2% w/v wet basis; 1400 mg/kg Ga, 2340 mg/kg As dry basis)
+    label: Dried Freiberg GaAs-production hydroxide sludge (3% w/v; 1.21% Ga, 1.34% As, 6.97% Fe, 32.81% Si by handheld XRF)
     node_type: MATERIAL_OR_PHASE
-    description: Industrial hydroxide sludge from GaAs wafer-production wastewater treatment (71 wt% water; dry solids containing 1400 mg/kg Ga and 2340 mg/kg As), autoclaved with medium at 2% (w/v) wet sludge.
+    description: 'Industrial GaAs wafer-production wastewater hydroxide sludge dried at 60 C for 48 h and mortar-homogenized (Table 1 handheld XRF: 1.21% Ga, 1.34% As, 6.97% Fe, 32.81% Si), tested at 3% w/v in 50 mL shake-flask setups.'
     protein_grounding_status: NOT_APPLICABLE
   - id: mobilized_dissolved_gallium
-    label: Mobilized dissolved gallium in 0.22-um-filtered bioleachate (~72.4% day-27 extraction vs ~8.1% in uninoculated control)
+    label: Mobilized dissolved gallium in day-8 leachate (94% of feed Ga in biotic assay [86% at day 1] vs 77% Ga in acid-adjusted abiotic comparator)
     node_type: CHEMICAL_ENTITY
-    description: Dissolved gallium measured by ICP-MS in 0.22-micrometer-filtered supernatant (~72.4% day-27 extraction in inoculated flasks vs ~8.1% in uninoculated controls, accompanied by ~35.1% arsenic co-mobilization).
+    description: Dissolved gallium mobilized into solution during 8-day leaching of 3% w/v dried sludge (86% of feed Ga leached within day 1 and 94% Ga in solution at day 8 in the biotic assay vs 77% Ga in the acid-adjusted abiotic comparator).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: sqr_reductase
@@ -190,21 +190,21 @@ causal_graphs:
   - source: biogenic_sulfuric_acid_lixiviant
     target: gaas_hydroxide_sludge_feed
     predicate: solubilizes
-    relationship: culture-associated acidic solubilization of wet GaAs-production hydroxide sludge
-    description: Inoculated A. thiooxidans DSM 14887 flasks acidify from pH 2.5 to below pH 2 over 27 days while uninoculated controls drift above pH 4, driving pH-dependent gallium solubilization.
+    relationship: acidic and culture-associated solubilization of 3% w/v dried GaAs-production hydroxide sludge
+    description: Sludge-adapted A. thiooxidans DSM 14887 in HBS medium with 1% elemental sulfur, initial pH 1.8, 12.9 mM Al (molar Al:F 1.5:1), and 1 mL H2SO4 drives rapid acidic dissolution of 3% w/v dried hydroxide sludge at 30 C over 8 days.
     evidence:
     - source_ref: fritze2026
       supports: support
-      explanation: Figure 1a-b and Section 3.1 of Fritze et al. (2026) report pH dropping from ~2.5 to below 2 in inoculated DSM 14887 flasks with 10 g/L elemental sulfur and 2% (w/v) wet sludge over 27 days, whereas uninoculated controls drifted above pH 4; no pH-matched abiotic sulfuric-acid control was included.
+      explanation: Sections 2.1-2.3, Table 2, and Section 3.2 of Fritze et al. (2026) document 8-day bioleaching of 3% w/v dried GaAs-production hydroxide sludge (1.21% Ga, 1.34% As, 6.97% Fe, 32.81% Si) in 50 mL HBS medium with 1% elemental sulfur, initial pH 1.8, 12.9 mM Al (molar Al:F 1.5:1), 1 mL H2SO4, and 10% w/v sludge-adapted A. thiooxidans DSM 14887 at 30 C alongside an acid-adjusted abiotic comparator.
   - source: gaas_hydroxide_sludge_feed
     target: mobilized_dissolved_gallium
     predicate: produces
-    relationship: gallium mobilization into 0.22-um-filtered bioleachate
-    description: 27-day sulfur-supplemented bioleaching mobilizes ~72.4% of feed gallium into filtered solution versus ~8.1% in uninoculated controls, alongside ~35.1% arsenic co-mobilization.
+    relationship: gallium mobilization into solution during 8-day shake-flask bioleaching
+    description: 3% w/v dried-sludge bioleaching releases 86% of feed Ga within day 1 and 94% Ga at day 8 in the biotic assay compared with 77% Ga in the acid-adjusted abiotic comparator (provisional culture-associated increment over simplified abiotic controls).
     evidence:
     - source_ref: fritze2026
       supports: support
-      explanation: Section 3.1 and Figure 1b of Fritze et al. (2026) report ~72.4% gallium extraction after 27 days in inoculated DSM 14887 flasks versus ~8.1% in uninoculated controls (mean +/- SD, n=3), normalized to initial dry-mass gallium content without isolated gallium product recovery.
+      explanation: Section 3.2 and Figure 3 of Fritze et al. (2026) report 86% of feed Ga leached within day 1 and 94% Ga in solution at day 8 in the 3% w/v biotic assay versus 77% Ga in the acid-adjusted abiotic comparator; the authors note that abiotic controls were simplified relative to the full biotic system.
 curation_history:
 - timestamp: '2026-10-11T04:20:54Z'
   curator: Codex (GPT-6; Codex)
@@ -214,6 +214,11 @@ curation_history:
   curator: claude (Claude Opus 4.6; antigravity)
   action: edit
   summary: Added representative Acidithiobacillus thiooxidans ATCC 19377 Sqr (UniProtKB:A0A543Q349) and Tth (UniProtKB:A0A5P9XPU3) protein examples and causal graph (thiooxidans_hydroxide_sludge_leaching_graph) to gallium.yaml.
+- timestamp: '2026-10-30T06:53:46Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: edit
+  summary: 'Remediated PR856-F2 (#857): aligned causal_graphs[0] (thiooxidans_hydroxide_sludge_leaching_graph) and protein_examples with curated mechanisms[0] in gallium.yaml.'
 history_refs:
 - history/records/gallium/2026-10-11T042054Z-codex-19549c.yaml
 - history/records/gallium/2026-10-30T060443Z-claude-claude-opus-4-6-antigravity-300b19.yaml
+- history/records/gallium/2026-10-30T065346Z-claude-claude-opus-4-6-antigravity-230a7a.yaml

@@ -92,7 +92,7 @@ mechanisms:
 causal_graphs:
 - id: thiooxidans_hydroxide_sludge_comobilization_graph
   name: Acidithiobacillus thiooxidans DSM 14887 sulfur-oxidizing bioleaching and arsenic co-mobilization from GaAs-production hydroxide sludge
-  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to culture-associated acidification in elemental-sulfur-supplemented mineral medium and co-mobilization of dissolved arsenic from GaAs-production hydroxide sludge.
+  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to sulfur-oxidizing acidification in HBS minimal medium (1% elemental sulfur, initial pH 1.8, 12.9 mM Al and 1 mL H2SO4) and co-mobilization of dissolved arsenic from 3% w/v dried GaAs-production hydroxide sludge.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: thiooxidans_hydroxide_sludge_comobilization
   nodes:
@@ -154,19 +154,19 @@ causal_graphs:
         supports: partial
         explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing acidification and arsenic co-mobilization from GaAs-production hydroxide sludge by Acidithiobacillus thiooxidans DSM 14887 in Fritze et al. (2026); individual sqr/tth genes were not mutated or directly assayed.
   - id: biogenic_sulfuric_acid_lixiviant
-    label: Acidified sulfur-oxidizing mineral medium (10 g/L S0, initial pH 2.5 falling below pH 2 over 27 days at 30 C)
+    label: Acidified A. thiooxidans DSM 14887 HBS sulfur-oxidizing medium (1% S0, initial pH 1.8, 12.9 mM Al and 1 mL H2SO4, 10% w/v inoculum at 30 C)
     node_type: CHEMICAL_ENTITY
-    description: 50 mL elemental-sulfur-supplemented mineral medium inoculated with Acidithiobacillus thiooxidans DSM 14887 (10^7 cells/mL) in 100 mL baffled flasks at 30 C and 120 rpm, acidifying from pH 2.5 to below pH 2 over 27 days.
+    description: 50 mL shake-flask bioleaching medium (HBS minimal medium with 1% elemental sulfur, initial pH 1.8, 12.9 mM Al [molar Al:F 1.5:1] and 1 mL H2SO4 to alleviate fluoride inhibition) inoculated at 10% w/v with sludge-adapted Acidithiobacillus thiooxidans DSM 14887 (adapted to 5% w/v sludge with 12.9 mM Al) and incubated at 30 C for 8 days.
     protein_grounding_status: NOT_APPLICABLE
   - id: gaas_hydroxide_sludge_feed
-    label: Freiberg GaAs-production hydroxide sludge (2% w/v wet basis; 2340 mg/kg As, 1400 mg/kg Ga dry basis)
+    label: Dried Freiberg GaAs-production hydroxide sludge (3% w/v; 1.34% As, 1.21% Ga, 6.97% Fe, 32.81% Si by handheld XRF)
     node_type: MATERIAL_OR_PHASE
-    description: Industrial hydroxide sludge from GaAs wafer-production wastewater treatment (71 wt% water; dry solids containing 2340 mg/kg As and 1400 mg/kg Ga), autoclaved with medium at 2% (w/v) wet sludge.
+    description: 'Industrial GaAs wafer-production wastewater hydroxide sludge dried at 60 C for 48 h and mortar-homogenized (Table 1 handheld XRF: 1.34% As, 1.21% Ga, 6.97% Fe, 32.81% Si), tested at 3% w/v in 50 mL shake-flask setups.'
     protein_grounding_status: NOT_APPLICABLE
   - id: comobilized_dissolved_arsenic
-    label: Co-mobilized dissolved arsenic in 0.22-um-filtered bioleachate (~35.1% day-27 extraction vs ~34.5% in uninoculated control)
+    label: Co-mobilized dissolved arsenic in day-8 leachate (68% of feed As in biotic assay vs 66% As in acid-adjusted abiotic comparator)
     node_type: CHEMICAL_ENTITY
-    description: Dissolved arsenic measured by ICP-MS in 0.22-micrometer-filtered supernatant (~35.1% day-27 extraction in inoculated flasks vs ~34.5% in uninoculated controls; ~69% vs ~50% at day 10; non-selective co-mobilization without net microbial increment over abiotic control at endpoint).
+    description: Dissolved arsenic mobilized into solution after 8 days of 3% w/v dried-sludge leaching (68% of feed As in the biotic assay vs 66% As in the acid-adjusted abiotic comparator), associated with acid-promoted dissolution of the poorly crystalline ferrihydrite host phase rather than a demonstrated microbial arsenic redox reaction.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: sqr_reductase
@@ -189,22 +189,22 @@ causal_graphs:
       explanation: Chemolithoautotrophic sulfur oxidation by Acidithiobacillus thiooxidans generates the acidic sulfate/polythionate medium during sulfur-oxidizing acidification and arsenic co-mobilization from GaAs-production hydroxide sludge by Acidithiobacillus thiooxidans DSM 14887 in Fritze et al. (2026); individual enzyme activities were not isolated.
   - source: biogenic_sulfuric_acid_lixiviant
     target: gaas_hydroxide_sludge_feed
-    predicate: acts_on
-    relationship: culture-associated acidification of wet GaAs-production hydroxide sludge
-    description: Inoculated A. thiooxidans DSM 14887 flasks acidify from pH 2.5 to below pH 2 over 27 days while uninoculated controls drift above pH 4.
+    predicate: solubilizes
+    relationship: acidic dissolution of ferrihydrite-hosted GaAs-production hydroxide sludge at 3% w/v
+    description: Sludge-adapted A. thiooxidans DSM 14887 in HBS medium with 1% elemental sulfur, initial pH 1.8, 12.9 mM Al (molar Al:F 1.5:1), and 1 mL H2SO4 maintains acidic conditions that dissolve the poorly crystalline ferrihydrite host phase of 3% w/v dried sludge over 8 days at 30 C.
     evidence:
     - source_ref: fritze2026
       supports: support
-      explanation: Figure 1a and Section 3.1 of Fritze et al. (2026) report pH dropping from ~2.5 to below 2 in A. thiooxidans DSM 14887 flasks with 10 g/L elemental sulfur and 2% (w/v) wet hydroxide sludge over 27 days, whereas uninoculated controls rose above pH 4.
+      explanation: Sections 2.1-2.3, Tables 1-2, and Section 3.2 of Fritze et al. (2026) document 8-day shake-flask bioleaching of 3% w/v dried hydroxide sludge (1.34% As, 1.21% Ga, 6.97% Fe, 32.81% Si) at 30 C in 50 mL HBS medium with 1% elemental sulfur, initial pH 1.8, 12.9 mM Al (molar Al:F 1.5:1), 1 mL H2SO4, and 10% w/v sludge-adapted A. thiooxidans DSM 14887 inoculum alongside an acid-adjusted abiotic comparator.
   - source: gaas_hydroxide_sludge_feed
     target: comobilized_dissolved_arsenic
     predicate: produces
-    relationship: non-selective arsenic co-mobilization during acidic hydroxide-sludge leaching
-    description: Acidic leaching co-mobilizes arsenic into 0.22-um-filtered liquor (~35.1% in inoculated flasks and ~34.5% in uninoculated controls at day 27, reaching ~69% in inoculated flasks at day 10), without selective gallium/arsenic separation.
+    relationship: non-selective arsenic co-mobilization during ferrihydrite host dissolution
+    description: 8-day leaching at 3% w/v dried sludge releases 68% of feed As into solution in the biotic assay versus 66% As in the acid-adjusted abiotic comparator, reflecting acid-driven ferrihydrite host dissolution without arsenic-specific microbial enhancement over acid.
     evidence:
     - source_ref: fritze2026
       supports: partial
-      explanation: Section 3.1 and Figure 1b of Fritze et al. (2026) report ~35.1% day-27 arsenic extraction in inoculated DSM 14887 flasks versus ~34.5% in uninoculated controls (with ~69% vs ~50% at day 10), demonstrating non-selective arsenic co-mobilization rather than a net endpoint microbial advantage for arsenic.
+      explanation: Section 3.2 and Figure 3 of Fritze et al. (2026) report 68% of feed As in solution after 8 days in the 3% w/v biotic assay versus 66% As in the acid-adjusted abiotic comparator, attributing arsenic release to dissolution of the ferrihydrite host phase rather than a demonstrated microbial arsenic redox transformation or arsenic-specific increment over acid.
 curation_history:
 - timestamp: '2026-10-11T04:21:03Z'
   curator: Codex (GPT-6; Codex)
@@ -214,6 +214,11 @@ curation_history:
   curator: claude (Claude Opus 4.6; antigravity)
   action: edit
   summary: Added representative Acidithiobacillus thiooxidans ATCC 19377 Sqr (UniProtKB:A0A543Q349) and Tth (UniProtKB:A0A5P9XPU3) protein examples and causal graph (thiooxidans_hydroxide_sludge_comobilization_graph) to arsenic.yaml.
+- timestamp: '2026-10-30T06:53:46Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: edit
+  summary: 'Remediated PR856-F1 (#857): aligned causal_graphs[0] (thiooxidans_hydroxide_sludge_comobilization_graph) and protein_examples with curated mechanisms[0] in arsenic.yaml.'
 history_refs:
 - history/records/arsenic/2026-10-11T042103Z-codex-36b267.yaml
 - history/records/arsenic/2026-10-30T060443Z-claude-claude-opus-4-6-antigravity-a9dbc6.yaml
+- history/records/arsenic/2026-10-30T065346Z-claude-claude-opus-4-6-antigravity-4edc04.yaml

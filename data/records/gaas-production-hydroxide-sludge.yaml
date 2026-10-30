@@ -43,7 +43,7 @@ mechanisms:
     evidence:
     - source_ref: fritze2026
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-oxidizing acidification and Ga/As mobilization from GaAs-production hydroxide sludge by Acidithiobacillus thiooxidans DSM 14887 in Fritze et al. (2026); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-oxidizing acidification and Ga, As, and Fe mobilization from GaAs-production hydroxide sludge by Acidithiobacillus thiooxidans DSM 14887 in Fritze et al. (2026); individual sqr/tth genes were not mutated or directly assayed.
   - uniprot_accession: UniProtKB:A0A5P9XPU3
     entry_name: A0A5P9XPU3_ACITH
     protein_name: Tetrathionate hydrolase
@@ -65,7 +65,7 @@ mechanisms:
     evidence:
     - source_ref: fritze2026
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing acidification and Ga/As mobilization from GaAs-production hydroxide sludge by Acidithiobacillus thiooxidans DSM 14887 in Fritze et al. (2026); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing acidification and Ga, As, and Fe mobilization from GaAs-production hydroxide sludge by Acidithiobacillus thiooxidans DSM 14887 in Fritze et al. (2026); individual sqr/tth genes were not mutated or directly assayed.
   evidence:
   - source_ref: fritze2026
     supports: support
@@ -78,8 +78,8 @@ mechanisms:
     explanation: The abstract's Al:Fe wording conflicts with the methods' Al:F; the selected flask dose follows Table 2 rather than the separate 1.4:1 optimization/reactor setting. Section 3.4 reports faster chemical processing at higher solids loading and discusses further iron reduction, silica removal and downstream precipitation as process-development issues. No selective microbial product isolation, product purity or commercial microbial operation is established for this feed.
 causal_graphs:
 - id: thiooxidans_sludge_leaching_graph
-  name: Acidithiobacillus thiooxidans DSM 14887 sulfur-oxidizing bioleaching of gallium and arsenic from GaAs-production hydroxide sludge
-  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to culture-associated acidification in elemental-sulfur-supplemented mineral medium and mobilization of gallium and arsenic from GaAs-production hydroxide sludge.
+  name: Acidithiobacillus thiooxidans DSM 14887 sulfur-oxidizing bioleaching of gallium, arsenic, and iron from GaAs-production hydroxide sludge
+  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to sulfur-oxidizing acidification in HBS minimal medium (1% elemental sulfur, initial pH 1.8, 12.9 mM Al and 1 mL H2SO4) and mobilization of gallium, arsenic, and iron from 3% w/v dried GaAs-production hydroxide sludge.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: thiooxidans_sludge_leaching
   nodes:
@@ -110,7 +110,7 @@ causal_graphs:
       evidence:
       - source_ref: fritze2026
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-oxidizing acidification and Ga/As mobilization from GaAs-production hydroxide sludge by Acidithiobacillus thiooxidans DSM 14887 in Fritze et al. (2026); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-oxidizing acidification and Ga, As, and Fe mobilization from GaAs-production hydroxide sludge by Acidithiobacillus thiooxidans DSM 14887 in Fritze et al. (2026); individual sqr/tth genes were not mutated or directly assayed.
   - id: tth_hydrolase
     label: Tth tetrathionate hydrolase (tth)
     node_type: GENE_OR_PROTEIN
@@ -139,21 +139,21 @@ causal_graphs:
       evidence:
       - source_ref: fritze2026
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing acidification and Ga/As mobilization from GaAs-production hydroxide sludge by Acidithiobacillus thiooxidans DSM 14887 in Fritze et al. (2026); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing acidification and Ga, As, and Fe mobilization from GaAs-production hydroxide sludge by Acidithiobacillus thiooxidans DSM 14887 in Fritze et al. (2026); individual sqr/tth genes were not mutated or directly assayed.
   - id: biogenic_sulfuric_acid_lixiviant
-    label: Acidified sulfur-oxidizing mineral medium (10 g/L S0, initial pH 2.5 falling below pH 2 over 27 days at 30 C)
+    label: Acidified A. thiooxidans DSM 14887 HBS sulfur-oxidizing medium (1% S0, initial pH 1.8, 12.9 mM Al and 1 mL H2SO4, 10% w/v inoculum at 30 C)
     node_type: CHEMICAL_ENTITY
-    description: 50 mL elemental-sulfur-supplemented mineral medium inoculated with Acidithiobacillus thiooxidans DSM 14887 (10^7 cells/mL) in 100 mL baffled flasks at 30 C and 120 rpm, acidifying from pH 2.5 to below pH 2 over 27 days.
+    description: 50 mL shake-flask bioleaching medium (HBS minimal medium with 1% elemental sulfur, initial pH 1.8, 12.9 mM Al [molar Al:F 1.5:1] and 1 mL H2SO4 to complex fluoride) inoculated at 10% w/v with sludge-adapted Acidithiobacillus thiooxidans DSM 14887 (adapted to 5% w/v sludge with 12.9 mM Al) and incubated at 30 C for 8 days.
     protein_grounding_status: NOT_APPLICABLE
   - id: gaas_hydroxide_sludge_feed
-    label: Freiberg GaAs-production hydroxide sludge (2% w/v wet basis; 1400 mg/kg Ga, 2340 mg/kg As, 6780 mg/kg Fe, 1600 mg/kg Al dry basis)
+    label: Dried Freiberg GaAs-production hydroxide sludge (3% w/v; 32.81% Si, 6.97% Fe, 1.21% Ga, 1.34% As, 1.83% Ca, 0.27% P by XRF; 0.538% F by ISE)
     node_type: MATERIAL_OR_PHASE
-    description: Industrial hydroxide sludge from GaAs wafer-production wastewater treatment (71 wt% water; dry solids with 1400 mg/kg Ga, 2340 mg/kg As, 6780 mg/kg Fe, and 1600 mg/kg Al), autoclaved with medium at 2% (w/v) wet sludge.
+    description: 'Industrial GaAs wafer-production wastewater hydroxide sludge dried at 60 C for 48 h and mortar-homogenized (Table 1 handheld XRF: 32.81% Si, 6.97% Fe, 1.21% Ga, 1.34% As, 1.83% Ca, 0.27% P; Section 2.1 ISE: 0.538% F), tested at 3% w/v in 50 mL shake-flask setups.'
     protein_grounding_status: NOT_APPLICABLE
   - id: mobilized_dissolved_ga_and_as
-    label: Dissolved Ga (~72.4% vs ~8.1% control) and co-mobilized As (~35.1% vs ~34.5% control) in day-27 filtered leachate
+    label: Dissolved Ga (94% vs 77% abiotic), As (68% vs 66% abiotic), and Fe (73% vs 62% abiotic) in day-8 leachate
     node_type: CHEMICAL_ENTITY
-    description: Dissolved gallium (~72.4% day-27 extraction vs ~8.1% control) and arsenic (~35.1% day-27 extraction vs ~34.5% control; ~69% vs ~50% at day 10) measured by ICP-MS in 0.22-um-filtered liquor.
+    description: Dissolved gallium (94% of feed Ga at day 8, with 86% leached within day 1, vs 77% Ga in the acid-adjusted abiotic comparator), arsenic (68% vs 66%), and iron (73% vs 62%) after 8 days of 3% w/v dried-sludge leaching.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: sqr_reductase
@@ -164,7 +164,7 @@ causal_graphs:
     evidence:
     - source_ref: fritze2026
       supports: partial
-      explanation: Reduced-sulfur oxidation in Acidithiobacillus thiooxidans couples Sqr and polythionate hydrolysis during sulfur-oxidizing acidification and Ga/As mobilization from GaAs-production hydroxide sludge by Acidithiobacillus thiooxidans DSM 14887 in Fritze et al. (2026); individual enzymes were not directly assayed.
+      explanation: Reduced-sulfur oxidation in Acidithiobacillus thiooxidans couples Sqr and polythionate hydrolysis during sulfur-oxidizing acidification and Ga, As, and Fe mobilization from GaAs-production hydroxide sludge by Acidithiobacillus thiooxidans DSM 14887 in Fritze et al. (2026); individual enzymes were not directly assayed.
   - source: tth_hydrolase
     target: biogenic_sulfuric_acid_lixiviant
     predicate: produces
@@ -173,25 +173,25 @@ causal_graphs:
     evidence:
     - source_ref: fritze2026
       supports: partial
-      explanation: Chemolithoautotrophic sulfur oxidation by Acidithiobacillus thiooxidans generates the acidic sulfate/polythionate medium during sulfur-oxidizing acidification and Ga/As mobilization from GaAs-production hydroxide sludge by Acidithiobacillus thiooxidans DSM 14887 in Fritze et al. (2026); individual enzyme activities were not isolated.
+      explanation: Chemolithoautotrophic sulfur oxidation by Acidithiobacillus thiooxidans generates the acidic sulfate/polythionate medium during sulfur-oxidizing acidification and Ga, As, and Fe mobilization from GaAs-production hydroxide sludge by Acidithiobacillus thiooxidans DSM 14887 in Fritze et al. (2026); individual enzyme activities were not isolated.
   - source: biogenic_sulfuric_acid_lixiviant
     target: gaas_hydroxide_sludge_feed
     predicate: solubilizes
-    relationship: culture-associated acidic solubilization of wet GaAs-production hydroxide sludge
-    description: Inoculated A. thiooxidans DSM 14887 flasks acidify from pH 2.5 to below pH 2 over 27 days while uninoculated controls drift above pH 4.
+    relationship: acidic and culture-associated dissolution of 3% w/v dried GaAs-production hydroxide sludge
+    description: Sludge-adapted A. thiooxidans DSM 14887 in HBS minimal medium with 1% elemental sulfur, initial pH 1.8, 12.9 mM Al (molar Al:F 1.5:1), and 1 mL H2SO4 solubilizes 3% w/v dried hydroxide sludge over 8 days at 30 C.
     evidence:
     - source_ref: fritze2026
       supports: support
-      explanation: Figure 1a and Section 3.1 of Fritze et al. (2026) report pH dropping from ~2.5 to below 2 in inoculated DSM 14887 flasks with 10 g/L elemental sulfur and 2% (w/v) wet sludge over 27 days, whereas uninoculated controls drifted above pH 4; no pH-matched abiotic sulfuric-acid control was included.
+      explanation: Sections 2.1-2.3, Tables 1-2, and Figures 2-3 of Fritze et al. (2026) document 8-day shake-flask bioleaching of 3% w/v dried hydroxide sludge (32.81% Si, 6.97% Fe, 1.21% Ga, 1.34% As, 0.538% F) in 50 mL HBS medium with 1% elemental sulfur, initial pH 1.8, 12.9 mM Al (molar Al:F 1.5:1), 1 mL H2SO4, and 10% w/v sludge-adapted A. thiooxidans DSM 14887 at 30 C alongside an acid-adjusted abiotic comparator.
   - source: gaas_hydroxide_sludge_feed
     target: mobilized_dissolved_ga_and_as
     predicate: produces
-    relationship: co-mobilization of dissolved gallium and arsenic into filtered bioleachate
-    description: 27-day sulfur-supplemented bioleaching mobilizes ~72.4% of feed gallium (vs ~8.1% control) and ~35.1% of feed arsenic (vs ~34.5% control at day 27 and ~69% vs ~50% at day 10) into filtered solution.
+    relationship: co-mobilization of dissolved Ga, As, and Fe during 8-day hydroxide-sludge bioleaching
+    description: 8-day leaching at 3% w/v dried sludge mobilizes 94% Ga (86% within day 1), 68% As, and 73% Fe in the biotic assay versus 77% Ga, 66% As, and 62% Fe in the acid-adjusted abiotic comparator.
     evidence:
     - source_ref: fritze2026
       supports: support
-      explanation: Section 3.1 and Figure 1b of Fritze et al. (2026) report ~72.4% Ga and ~35.1% As extraction after 27 days in inoculated DSM 14887 flasks versus ~8.1% Ga and ~34.5% As in uninoculated controls (mean +/- SD, n=3), normalized to initial dry-sludge mass without isolated metal recovery.
+      explanation: Section 3.2 and Figure 3 of Fritze et al. (2026) report day-8 dissolved recoveries of 94% Ga (86% at day 1), 68% As, and 73% Fe in the 3% w/v biotic assay compared with 77% Ga, 66% As, and 62% Fe in the acid-adjusted abiotic comparator.
 curation_history:
 - timestamp: '2026-10-11T04:55:45Z'
   curator: Codex (GPT-6; Codex)
@@ -201,6 +201,11 @@ curation_history:
   curator: claude (Claude Opus 4.6; antigravity)
   action: edit
   summary: Added representative Acidithiobacillus thiooxidans ATCC 19377 Sqr (UniProtKB:A0A543Q349) and Tth (UniProtKB:A0A5P9XPU3) protein examples and causal graph (thiooxidans_sludge_leaching_graph) to gaas-production-hydroxide-sludge.yaml.
+- timestamp: '2026-10-30T06:53:46Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: edit
+  summary: 'Remediated PR856-F3 (#857): aligned causal_graphs[0] (thiooxidans_sludge_leaching_graph) and protein_examples with curated mechanisms[0] in gaas-production-hydroxide-sludge.yaml.'
 history_refs:
 - history/records/gaas-production-hydroxide-sludge/2026-10-11T045526Z-codex-51d3db.yaml
 - history/records/gaas-production-hydroxide-sludge/2026-10-30T060443Z-claude-claude-opus-4-6-antigravity-c9361f.yaml
+- history/records/gaas-production-hydroxide-sludge/2026-10-30T065346Z-claude-claude-opus-4-6-antigravity-60514d.yaml

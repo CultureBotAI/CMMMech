@@ -175,13 +175,13 @@
   <h3>Causal Graphs &amp; Molecular Pathways (1)</h3>
   <div class="mechanism-box" id="causal-graph-thiooxidans_sludge_leaching_graph">
     <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap; gap: .5rem;">
-      <h4 style="margin: 0; font-size: 1.12rem;">Acidithiobacillus thiooxidans DSM 14887 sulfur-oxidizing bioleaching of gallium and arsenic from GaAs-production hydroxide sludge</h4>
+      <h4 style="margin: 0; font-size: 1.12rem;">Acidithiobacillus thiooxidans DSM 14887 sulfur-oxidizing bioleaching of gallium, arsenic, and iron from GaAs-production hydroxide sludge</h4>
       <div>
         <span class="badge">REPRESENTATIVE EXAMPLE</span>
         <a href="#mechanism-thiooxidans_sludge_leaching" class="badge" style="text-decoration: none;">Mechanism: <code>thiooxidans_sludge_leaching</code></a>
       </div>
     </div>
-    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to culture-associated acidification in elemental-sulfur-supplemented mineral medium and mobilization of gallium and arsenic from GaAs-production hydroxide sludge.</p>
+    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to sulfur-oxidizing acidification in HBS minimal medium (1% elemental sulfur, initial pH 1.8, 12.9 mM Al and 1 mL H2SO4) and mobilization of gallium, arsenic, and iron from 3% w/v dried GaAs-production hydroxide sludge.</p>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (5):</strong>
     <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
@@ -237,7 +237,7 @@
         </tr>
         <tr id="causal-node-thiooxidans_sludge_leaching_graph-biogenic_sulfuric_acid_lixiviant">
           <td>
-            <strong>Acidified sulfur-oxidizing mineral medium (10 g/L S0, initial pH 2.5 falling below pH 2 over 27 days at 30 C)</strong><br>
+            <strong>Acidified A. thiooxidans DSM 14887 HBS sulfur-oxidizing medium (1% S0, initial pH 1.8, 12.9 mM Al and 1 mL H2SO4, 10% w/v inoculum at 30 C)</strong><br>
             <code style="font-size: .78rem; color: var(--muted);">biogenic_sulfuric_acid_lixiviant</code>
           </td>
           <td>
@@ -245,11 +245,11 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>50 mL elemental-sulfur-supplemented mineral medium inoculated with Acidithiobacillus thiooxidans DSM 14887 (10^7 cells/mL) in 100 mL baffled flasks at 30 C and 120 rpm, acidifying from pH 2.5 to below pH 2 over 27 days.</div>          </td>
+<div>50 mL shake-flask bioleaching medium (HBS minimal medium with 1% elemental sulfur, initial pH 1.8, 12.9 mM Al [molar Al:F 1.5:1] and 1 mL H2SO4 to complex fluoride) inoculated at 10% w/v with sludge-adapted Acidithiobacillus thiooxidans DSM 14887 (adapted to 5% w/v sludge with 12.9 mM Al) and incubated at 30 C for 8 days.</div>          </td>
         </tr>
         <tr id="causal-node-thiooxidans_sludge_leaching_graph-gaas_hydroxide_sludge_feed">
           <td>
-            <strong>Freiberg GaAs-production hydroxide sludge (2% w/v wet basis; 1400 mg/kg Ga, 2340 mg/kg As, 6780 mg/kg Fe, 1600 mg/kg Al dry basis)</strong><br>
+            <strong>Dried Freiberg GaAs-production hydroxide sludge (3% w/v; 32.81% Si, 6.97% Fe, 1.21% Ga, 1.34% As, 1.83% Ca, 0.27% P by XRF; 0.538% F by ISE)</strong><br>
             <code style="font-size: .78rem; color: var(--muted);">gaas_hydroxide_sludge_feed</code>
           </td>
           <td>
@@ -257,11 +257,11 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Industrial hydroxide sludge from GaAs wafer-production wastewater treatment (71 wt% water; dry solids with 1400 mg/kg Ga, 2340 mg/kg As, 6780 mg/kg Fe, and 1600 mg/kg Al), autoclaved with medium at 2% (w/v) wet sludge.</div>          </td>
+<div>Industrial GaAs wafer-production wastewater hydroxide sludge dried at 60 C for 48 h and mortar-homogenized (Table 1 handheld XRF: 32.81% Si, 6.97% Fe, 1.21% Ga, 1.34% As, 1.83% Ca, 0.27% P; Section 2.1 ISE: 0.538% F), tested at 3% w/v in 50 mL shake-flask setups.</div>          </td>
         </tr>
         <tr id="causal-node-thiooxidans_sludge_leaching_graph-mobilized_dissolved_ga_and_as">
           <td>
-            <strong>Dissolved Ga (~72.4% vs ~8.1% control) and co-mobilized As (~35.1% vs ~34.5% control) in day-27 filtered leachate</strong><br>
+            <strong>Dissolved Ga (94% vs 77% abiotic), As (68% vs 66% abiotic), and Fe (73% vs 62% abiotic) in day-8 leachate</strong><br>
             <code style="font-size: .78rem; color: var(--muted);">mobilized_dissolved_ga_and_as</code>
           </td>
           <td>
@@ -269,7 +269,7 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Dissolved gallium (~72.4% day-27 extraction vs ~8.1% control) and arsenic (~35.1% day-27 extraction vs ~34.5% control; ~69% vs ~50% at day 10) measured by ICP-MS in 0.22-um-filtered liquor.</div>          </td>
+<div>Dissolved gallium (94% of feed Ga at day 8, with 86% leached within day 1, vs 77% Ga in the acid-adjusted abiotic comparator), arsenic (68% vs 66%), and iron (73% vs 62%) after 8 days of 3% w/v dried-sludge leaching.</div>          </td>
         </tr>
       </tbody>
     </table>
@@ -283,11 +283,11 @@
         <code>tth_hydrolase</code> &rarr; <strong>polythionate disproportionation and sulfuric-acid proton generation</strong> (<code>produces</code>) &rarr; <code>biogenic_sulfuric_acid_lixiviant</code>
 : Periplasmic tetrathionate hydrolysis generates sulfate and protons, acidifying the sulfur-oxidizing culture medium.[<a href="#source-fritze2026"><code>fritze2026</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
-        <code>biogenic_sulfuric_acid_lixiviant</code> &rarr; <strong>culture-associated acidic solubilization of wet GaAs-production hydroxide sludge</strong> (<code>solubilizes</code>) &rarr; <code>gaas_hydroxide_sludge_feed</code>
-: Inoculated A. thiooxidans DSM 14887 flasks acidify from pH 2.5 to below pH 2 over 27 days while uninoculated controls drift above pH 4.[<a href="#source-fritze2026"><code>fritze2026</code></a>]      </li>
+        <code>biogenic_sulfuric_acid_lixiviant</code> &rarr; <strong>acidic and culture-associated dissolution of 3% w/v dried GaAs-production hydroxide sludge</strong> (<code>solubilizes</code>) &rarr; <code>gaas_hydroxide_sludge_feed</code>
+: Sludge-adapted A. thiooxidans DSM 14887 in HBS minimal medium with 1% elemental sulfur, initial pH 1.8, 12.9 mM Al (molar Al:F 1.5:1), and 1 mL H2SO4 solubilizes 3% w/v dried hydroxide sludge over 8 days at 30 C.[<a href="#source-fritze2026"><code>fritze2026</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
-        <code>gaas_hydroxide_sludge_feed</code> &rarr; <strong>co-mobilization of dissolved gallium and arsenic into filtered bioleachate</strong> (<code>produces</code>) &rarr; <code>mobilized_dissolved_ga_and_as</code>
-: 27-day sulfur-supplemented bioleaching mobilizes ~72.4% of feed gallium (vs ~8.1% control) and ~35.1% of feed arsenic (vs ~34.5% control at day 27 and ~69% vs ~50% at day 10) into filtered solution.[<a href="#source-fritze2026"><code>fritze2026</code></a>]      </li>
+        <code>gaas_hydroxide_sludge_feed</code> &rarr; <strong>co-mobilization of dissolved Ga, As, and Fe during 8-day hydroxide-sludge bioleaching</strong> (<code>produces</code>) &rarr; <code>mobilized_dissolved_ga_and_as</code>
+: 8-day leaching at 3% w/v dried sludge mobilizes 94% Ga (86% within day 1), 68% As, and 73% Fe in the biotic assay versus 77% Ga, 66% As, and 62% Fe in the acid-adjusted abiotic comparator.[<a href="#source-fritze2026"><code>fritze2026</code></a>]      </li>
     </ul>
   </div>
 </div>
@@ -332,6 +332,12 @@
         <td><span class="badge">edit</span></td>
         <td>Added representative Acidithiobacillus thiooxidans ATCC 19377 Sqr (UniProtKB:A0A543Q349) and Tth (UniProtKB:A0A5P9XPU3) protein examples and causal graph (thiooxidans_sludge_leaching_graph) to gaas-production-hydroxide-sludge.yaml.</td>
       </tr>
+      <tr>
+        <td><code>2026-10-30T06:53:46Z</code></td>
+        <td>claude (Claude Opus 4.6; antigravity)</td>
+        <td><span class="badge">edit</span></td>
+        <td>Remediated PR856-F3 (#857): aligned causal_graphs[0] (thiooxidans_sludge_leaching_graph) and protein_examples with curated mechanisms[0] in gaas-production-hydroxide-sludge.yaml.</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -341,7 +347,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (663 materials · 607 mechanisms · latest curation 2026-10-30 · corpus digest <code>eba8ace46ecc</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (663 materials · 607 mechanisms · latest curation 2026-10-30 · corpus digest <code>f914324baa6d</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·
