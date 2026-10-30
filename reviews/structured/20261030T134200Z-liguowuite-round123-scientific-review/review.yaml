@@ -1,0 +1,204 @@
+schema_version: 1.0.0
+review_id: 20261030T134200Z-liguowuite-round123-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Primary-source scientific review of liguowuite (IMA:2020-097, status A, WO3)
+started_at: '2026-10-30T13:40:00Z'
+finished_at: '2026-10-30T13:42:00Z'
+reviewer:
+  identity: antigravity / round123-scientific-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/liguowuite.yaml (SHA-256 8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5)
+    against all 33 bounded passages (14 pages) of Xue Y, Sun N, He H, Chen A, and
+    Yang Y (2022, Eur. J. Mineral. 34:95-108, passages/ejm-34-95-2022.p1..p14.all-pages.w1.part*.txt)
+    and the September 2026 IMA-CNMNC Master List (PDF p. 125).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 3684ac763165c2343e93af37c9eef7b21608edd5
+  state: working_tree
+  inputs:
+  - path: data/records/liguowuite.yaml
+    sha256: 8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5
+    role: target
+  - path: history/records/liguowuite/2026-10-30T132622Z-antigravity-c7ea8f.yaml
+    sha256: a8196bef70201f1dcfdeb8cffb66a33e6bd0f8a1c140708ac9f2b72510bc8932
+    role: context
+  - path: research/sources/round123-minerals/20261030T133900Z-source-investigation.json
+    sha256: e2c2ef23db32c9385e91e0ba41d24e59f465362d9499231aa45d94f996e8edb2
+    role: context
+  - path: research/sources/round123-minerals/20261030T133900Z-source-investigation.md
+    sha256: 82628141d7f25fa1b66dfc94beaebca00f1ba9c5c408a8571358d5602aba94aa
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:liguowuite
+  path: data/records/liguowuite.yaml
+  label: Liguowuite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/liguowuite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/liguowuite/2026-10-30T132622Z-antigravity-c7ea8f.yaml
+    role: canonical_history
+scope:
+  description: Primary-source scientific review of data/records/liguowuite.yaml (SHA-256
+    8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5) and its canonical
+    CREATE history sidecar against all 33 bounded primary-source passages (14 pages)
+    from Xue et al. (2022, Eur. J. Mineral. 34:95-108) and the September 2026 IMA-CNMNC
+    Master List (PDF p. 125).
+  selection: Round 123 newly admitted mineral record liguowuite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:liguowuite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/liguowuite.yaml
+  locator: Working-tree record data/records/liguowuite.yaml
+  accessed_at: '2026-10-30T13:41:00Z'
+  support: supports
+  summary: Working-tree record data/records/liguowuite.yaml (SHA-256 8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5)
+    captures the IMA:2020-097 identity, Nanyang village (Huaping County, Lijiang Prefecture,
+    Yunnan Province, southern Panzhihua–Xichang region) type specimens 21K005 and
+    M16121, Table 1 (p. 98) WDS chemistry (15 spots on 4 grains), monoclinic P21/n
+    A-site-vacant perovskite-type WO3 Rietveld PXRD structure (Tables 2–5), Raman
+    and FTIR spectra, physical/optical properties, and 0 mechanisms (no microbial
+    mechanism or industrial recovery yield asserted).
+  snapshot_sha256: 8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 125
+  accessed_at: '2026-10-30T13:41:00Z'
+  support: supports
+  summary: Confirms Liguowuite, formula WO3, status A, IMA No. 2020-097, country China,
+    and sole reference European Journal of Mineralogy 34 (2022), 95.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: xue_2022_primary
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-34-95-2022
+  locator: Xue Y, Sun N, He H, Chen A, and Yang Y (2022) Eur. J. Mineral. 34:95-108,
+    pp. 95-108, Tables 1-5, Figures 1-9 (passages/ejm-34-95-2022.p1..p14.all-pages.w1.part*.txt;
+    33 passages)
+  accessed_at: '2026-10-30T13:41:00Z'
+  support: supports
+  summary: 'All 14 pages (33 bounded passages <= 1,800 B in summary.json) inspected:
+    confirms type locality in a weathered granite biotite-quartz monzonite vein near
+    Nanyang village, Huaping County, Lijiang Prefecture, Yunnan Province, southern
+    Panzhihua–Xichang (Pan–Xi) region, China, type specimens 21K005 (Museum of China
+    University of Geosciences, Beijing) and M16121 (Geological Museum of China, Beijing),
+    Table 1 (p. 98) WDS chemistry (15 spots across 4 grains: WO3 99.23, CaO 0.06,
+    Na2O 0.04, TeO2 0.03, K2O 0.01, Al2O3 n.d., total 99.37 wt%), empirical formula
+    (K0.0005Na0.0029Ca0.0025)Sigma0.0059(W1.0001Te0.0004)Sigma1.0005O3 (W1.00O3),
+    monoclinic P21/n Rietveld PXRD unit cell (a = 7.32582(18) Å, b = 7.54767(18) Å,
+    c = 7.71128(18) Å, beta = 90.678(3)°, V = 426.348(19) Å3, Z = 8, Dcalc = 7.22
+    g/cm3, Rwp = 0.0604, Rp = 0.0454; Tables 2–5), calculated Gladstone–Dale refractive
+    index n = 2.24, FTIR bands (870, 792, 548, 511, 490, 464, 439, 418 cm-1), and
+    Raman bands (806, 716, 327, 272, 134 cm-1).'
+  snapshot_sha256: 64e9a5aca65fe7b51b164738652de4cbd4bdc9b122726e68045fff0c7053ebce
+- evidence_id: create_history
+  kind: record_content
+  reference: history/records/liguowuite/2026-10-30T132622Z-antigravity-c7ea8f.yaml
+  locator: Canonical CREATE history sidecar history/records/liguowuite/2026-10-30T132622Z-antigravity-c7ea8f.yaml
+  accessed_at: '2026-10-30T13:41:00Z'
+  support: supports
+  summary: Canonical CREATE history sidecar (SHA-256 a8196bef70201f1dcfdeb8cffb66a33e6bd0f8a1c140708ac9f2b72510bc8932)
+    preserved untouched as immutable per AGENTS.md; note that its details string cited
+    a preliminary estimate of 32 passages whereas summary.json indexes 33 bounded
+    passages across the 14 pages of ejm-34-95-2022.pdf.
+  snapshot_sha256: a8196bef70201f1dcfdeb8cffb66a33e6bd0f8a1c140708ac9f2b72510bc8932
+- evidence_id: validation
+  kind: validation
+  reference: data/records/liguowuite.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-10-30T13:41:00Z'
+  support: supports
+  summary: Checked 668 record(s); 0 failed. Checked 1104 history record(s); 0 error(s).
+  snapshot_sha256: 8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 668 record(s); 0 failed.
+  target_ids:
+  - cmmmech:liguowuite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1104 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:liguowuite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA:2020-097 identity, Nanyang village (Pan–Xi region) type
+    specimens 21K005 and M16121 chemistry, and monoclinic P21/n Rietveld structure
+    for liguowuite
+  outcome: supported
+  summary: All numeric, crystallographic, Raman, FTIR, optical, and chemical claims
+    in data/records/liguowuite.yaml (SHA-256 8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5)
+    match the bounded primary-source passages of Xue et al. (2022, Eur. J. Mineral.
+    34:95-108, 14 pages, 33 bounded passages) and the September 2026 IMA Master List
+    (p. 125).
+  target_ids:
+  - cmmmech:liguowuite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - xue_2022_primary
+- assessment_id: mechanism_absence_and_provenance_verification
+  area: provenance
+  topic: Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE
+    provenance
+  outcome: supported
+  summary: data/records/liguowuite.yaml accurately omits mechanisms (0 mechanisms)
+    because Xue et al. (2022) reports a natural mineral description without any microbial
+    extraction, bioleaching, biomineralization, or synthetic recovery experiment,
+    and explicitly discloses that no criticality designation, microbial mechanism,
+    or industrial recovery yield is asserted. Append-only CREATE history sidecar passes
+    validation with 0 errors.
+  target_ids:
+  - cmmmech:liguowuite
+  evidence_ids:
+  - owner
+  - xue_2022_primary
+  - create_history
+  - validation
+findings: []
+actions: []
+summary: 'Liguowuite (IMA:2020-097, status A, WO3) passes primary-source scientific
+  review (scientific_review: true) at SHA-256 8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5
+  against all 33 bounded passages (14 pages) of Xue et al. (2022, Eur. J. Mineral.
+  34:95-108).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- 'Executed under the Round 123 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage) and synchronized in response to PR #868 review issue
+  #869.'
+related_reviews: []
