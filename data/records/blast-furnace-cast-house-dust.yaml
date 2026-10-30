@@ -1,167 +1,226 @@
 id: cmmmech:blast-furnace-cast-house-dust
 name: Blast-furnace cast-house dust
 material_kind: secondary_resource
-description: >-
-  Dust generated during periodic tapping and casting of liquid iron and slag
-  from a blast furnace, represented by an iron-rich, zinc-bearing sample from
-  an Austrian steelmaker. This process-defined secondary resource is distinct
-  from blast-furnace flue-gas dust, electric-arc-furnace dust, slag, natural ore
-  and its constituent elements or mineral phases. The selected sample does
-  not establish a universal dust composition or inherit elemental criticality.
+description: Dust generated during periodic tapping and casting of liquid iron and slag from a blast furnace, represented by an iron-rich, zinc-bearing sample from an Austrian steelmaker. This process-defined secondary resource is distinct from blast-furnace flue-gas dust, electric-arc-furnace dust, slag, natural ore and its constituent elements or mineral phases. The selected sample does not establish a universal dust composition or inherit elemental criticality.
 sources:
 - id: frueholz_2025
-  title: >-
-    Frueholz, Habermaier, Spiess, Birklbauer, Guebitz and Haberbauer (2025).
-    Zinc extraction from cast-house dust using the chemolithotrophic
-    microorganism Acidithiobacillus thiooxidans. Biochemical Engineering
-    Journal 222:109859. DOI 10.1016/j.bej.2025.109859; online 8 July 2025,
-    October issue. Methods 2.1-2.7, Results 3.1-3.5, Tables 1-3 and Figures 1-11.
+  title: Frueholz, Habermaier, Spiess, Birklbauer, Guebitz and Haberbauer (2025). Zinc extraction from cast-house dust using the chemolithotrophic microorganism Acidithiobacillus thiooxidans. Biochemical Engineering Journal 222:109859. DOI 10.1016/j.bej.2025.109859; online 8 July 2025, October issue. Methods 2.1-2.7, Results 3.1-3.5, Tables 1-3 and Figures 1-11.
   url: https://doi.org/10.1016/j.bej.2025.109859
   accessed_on: '2026-10-11'
 - id: frueholz_2025_supplement
-  title: >-
-    Supplementary statistical tables to DOI 10.1016/j.bej.2025.109859,
-    publisher DOCX. First table compares aeration groups; second compares
-    sampling days. Native table cells and local LibreOffice rendering checked;
-    cached DOCX captions are Tables 4-5, while rendered sequence fields show 1-2.
+  title: Supplementary statistical tables to DOI 10.1016/j.bej.2025.109859, publisher DOCX. First table compares aeration groups; second compares sampling days. Native table cells and local LibreOffice rendering checked; cached DOCX captions are Tables 4-5, while rendered sequence fields show 1-2.
   url: https://ars.els-cdn.com/content/image/1-s2.0-S1369703X25002335-mmc1.docx
   accessed_on: '2026-10-11'
 - id: frueholz_2024
-  title: >-
-    Frueholz et al. (2024). Zinc removal from metallurgical dusts with iron-
-    and sulfur-oxidizing bacteria. Minerals Engineering 206:108535. DOI
-    10.1016/j.mineng.2023.108535; online 19 December 2023. The 2025 study's
-    reference 9: feed characterization and separate chemical-acid context,
-    Methods 2.1-2.3, Results 3.1 and 3.3, Table 1 and Figures 2 and 4.
+  title: 'Frueholz et al. (2024). Zinc removal from metallurgical dusts with iron- and sulfur-oxidizing bacteria. Minerals Engineering 206:108535. DOI 10.1016/j.mineng.2023.108535; online 19 December 2023. The 2025 study''s reference 9: feed characterization and separate chemical-acid context, Methods 2.1-2.3, Results 3.1 and 3.3, Table 1 and Figures 2 and 4.'
   url: https://doi.org/10.1016/j.mineng.2023.108535
   accessed_on: '2026-10-11'
 - id: ncbi_thiooxidans
-  title: >-
-    NCBI Taxonomy 930, Acidithiobacillus thiooxidans, species-level identity.
-    This authority does not identify or authenticate the experimental culture.
+  title: NCBI Taxonomy 930, Acidithiobacillus thiooxidans, species-level identity. This authority does not identify or authenticate the experimental culture.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
   accessed_on: '2026-10-11'
 mechanisms:
 - id: sulfur_oxidizing_culture_associated_zinc_mobilization
   name: Culture-associated zinc mobilization during repeated reactor cycles
   process: bioleaching
+  description: A living culture assigned by the authors to Acidithiobacillus thiooxidans, supplied with elemental sulfur, was associated with acidification, sulfate accumulation and filtered-liquid zinc in serial laboratory reactor cycles. Iron was less extensively mobilized under the tested conditions. The evidence supports conditional solubilization in an acidic culture system, without proving a unique cellular dissolution pathway, isolated zinc recovery, validated residue reuse or industrial deployment.
+  context: Frueholz et al. (2025) used actual cast-house dust from an Austrian steelmaking company, with reported dry mass 99.9%. Drying a characterization aliquot at 105 degrees C does not establish pretreatment of the whole feed; dust sterilization is not specified. The paper does not report a strain accession, culture-collection origin or independent stock authentication. Precultivation used sulfur-containing universal medium initially adjusted to pH 3.5 with sulfuric acid, 0.02 g/L yeast extract and 1% w/v technical elemental sulfur. Reactor experiments used 2.7 L medium plus 0.3 L culture, a 3-L working volume, 30 degrees C and 160 rpm. Following seven days of cultivation, reported pH was 0.85 before the first dust addition. Loading progressed through 50, 75, 100 and 125 g/L in 14-day cycles. Each exchange removed two-thirds of the stirred contents, retaining 1 L with culture, liquid and residual solid, then restored 3 L with fresh medium, added dust and sulfur at a stated 7.5 g/L.
+    Three successive 125-g/L cycles used 75 L/h air (0.42 vvm), followed by three at 90 L/h (0.50 vvm) in the same reactor. These are serial cycles, not six independent reactors. Samples were taken 30 minutes after dust addition, labeled day 0, and on days 7 and 14; liquid passed through 0.2-micrometre filters for total-element ICP analysis, with sulfate analyzed by ion chromatography. Controls used 100-mL uninoculated cultivation-medium batches at the four dust loadings; their reactor geometry, culture history and evolving acidity were not matched to the biotic reactor.
   microbial: true
-  description: >-
-    A living culture assigned by the authors to Acidithiobacillus thiooxidans,
-    supplied with elemental sulfur, was associated with acidification, sulfate
-    accumulation and filtered-liquid zinc in serial laboratory reactor cycles.
-    Iron was less extensively mobilized under the tested conditions. The
-    evidence supports conditional solubilization in an acidic culture system,
-    without proving a unique cellular dissolution pathway, isolated zinc
-    recovery, validated residue reuse or industrial deployment.
-  context: >-
-    Frueholz et al. (2025) used actual cast-house dust from an Austrian
-    steelmaking company, with reported dry mass 99.9%. Drying a characterization
-    aliquot at 105 degrees C does not establish pretreatment of the whole feed;
-    dust sterilization is not specified. The paper does not report a strain
-    accession, culture-collection origin or independent stock authentication.
-    Precultivation used sulfur-containing universal medium initially adjusted
-    to pH 3.5 with sulfuric acid, 0.02 g/L yeast extract and 1% w/v technical
-    elemental sulfur. Reactor experiments used 2.7 L medium plus 0.3 L culture,
-    a 3-L working volume, 30 degrees C and 160 rpm. Following seven days of
-    cultivation, reported pH was 0.85 before the first dust addition. Loading
-    progressed through 50, 75, 100 and 125 g/L in 14-day cycles. Each exchange
-    removed two-thirds of the stirred contents, retaining 1 L with culture,
-    liquid and residual solid, then restored 3 L with fresh medium, added dust
-    and sulfur at a stated 7.5 g/L. Three successive 125-g/L cycles used
-    75 L/h air (0.42 vvm), followed by three at 90 L/h (0.50 vvm) in the same
-    reactor. These are serial cycles, not six independent reactors. Samples
-    were taken 30 minutes after dust addition, labeled day 0, and on days 7
-    and 14; liquid passed through 0.2-micrometre filters for total-element
-    ICP analysis, with sulfate analyzed by ion chromatography. Controls used
-    100-mL uninoculated cultivation-medium batches at the four dust loadings;
-    their reactor geometry, culture history and evolving acidity were not
-    matched to the biotic reactor.
   organisms:
   - id: NCBITaxon:930
     label: Acidithiobacillus thiooxidans
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A543Q349
+    entry_name: A0A543Q349_ACITH
+    protein_name: Pyridine nucleotide-disulfide oxidoreductase
+    gene_symbol: sqr
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (sqr) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans (NCBITaxon:930) in the cast-house dust experiments of Frueholz et al. (2025).
+    evidence:
+    - source_ref: frueholz_2025
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-oxidizing acidification and zinc mobilization from blast-furnace cast-house dust by Acidithiobacillus thiooxidans in Frueholz et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
+  - uniprot_accession: UniProtKB:A0A5P9XPU3
+    entry_name: A0A5P9XPU3_ACITH
+    protein_name: Tetrathionate hydrolase
+    gene_symbol: tth
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase (tth) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans (NCBITaxon:930) in the cast-house dust experiments of Frueholz et al. (2025).
+    evidence:
+    - source_ref: frueholz_2025
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing acidification and zinc mobilization from blast-furnace cast-house dust by Acidithiobacillus thiooxidans in Frueholz et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
   evidence:
   - source_ref: frueholz_2025
     supports: support
-    explanation: >-
-      Results 3.3 and Figure 7 report pooled 125-g/L cycle means of
-      68.1 +/- 2.1% Zn and 5.1 +/- 2.1% Fe at day 7, versus
-      75.2 +/- 5.5% Zn and 9.0 +/- 1.5% Fe at day 14. Error bars are reported
-      standard deviations across six serial cycles. These are the paper's
-      apparent cycle leaching percentages, not independently reconstructed
-      recovery yields. Substantial Zn was already in liquid at the 30-minute
-      day-0 sample; that sample is not an unreacted baseline.
+    explanation: Results 3.3 and Figure 7 report pooled 125-g/L cycle means of 68.1 +/- 2.1% Zn and 5.1 +/- 2.1% Fe at day 7, versus 75.2 +/- 5.5% Zn and 9.0 +/- 1.5% Fe at day 14. Error bars are reported standard deviations across six serial cycles. These are the paper's apparent cycle leaching percentages, not independently reconstructed recovery yields. Substantial Zn was already in liquid at the 30-minute day-0 sample; that sample is not an unreacted baseline.
   - source_ref: frueholz_2025
     supports: partial
-    explanation: >-
-      Methods 2.5, Equation 3 subtracts estimated metal carried in the retained
-      1 L of liquid and normalizes to the metal inventory in newly added dust.
-      It assumes homogeneous solids during withdrawal. Retained solids can
-      continue dissolving, and their contribution is not separately resolved
-      by that liquid subtraction. Individual cycle feed/residue inventories,
-      sampling losses and a complete Zn/Fe balance are not supplied. Published
-      percentages therefore cannot be interpreted as verified extraction from
-      a fresh independent dust charge or whole-process recovered-metal yields.
+    explanation: Methods 2.5, Equation 3 subtracts estimated metal carried in the retained 1 L of liquid and normalizes to the metal inventory in newly added dust. It assumes homogeneous solids during withdrawal. Retained solids can continue dissolving, and their contribution is not separately resolved by that liquid subtraction. Individual cycle feed/residue inventories, sampling losses and a complete Zn/Fe balance are not supplied. Published percentages therefore cannot be interpreted as verified extraction from a fresh independent dust charge or whole-process recovered-metal yields.
   - source_ref: frueholz_2025_supplement
     supports: partial
-    explanation: >-
-      The first supplementary table's row labeled 0.42 vvm; Day 7; Zn gives
-      75.22526% with SD 3.01688%, repeating its day-14 entry. This conflicts
-      with Figure 6 and the second table's pooled day-7 mean 68.05669%; the
-      two listed day-7 subgroup means do not reproduce that pooled mean.
-      The discrepancy remains unresolved. Sequential cycles share retained
-      material, and repeated sampling shares a cycle; the reported two-sample
-      tests do not establish independent reactor replication. No corrected
-      value or independently verified significance claim is assigned here.
+    explanation: The first supplementary table's row labeled 0.42 vvm; Day 7; Zn gives 75.22526% with SD 3.01688%, repeating its day-14 entry. This conflicts with Figure 6 and the second table's pooled day-7 mean 68.05669%; the two listed day-7 subgroup means do not reproduce that pooled mean. The discrepancy remains unresolved. Sequential cycles share retained material, and repeated sampling shares a cycle; the reported two-sample tests do not establish independent reactor replication. No corrected value or independently verified significance claim is assigned here.
   - source_ref: frueholz_2025
     supports: partial
-    explanation: >-
-      Figure 4 reports negligible Zn release in uninoculated medium and some
-      Al release. The control has no matched preacidification or pH trajectory,
-      so it cannot isolate live-cell action from acidic solution history.
-      Figures 5 and 8-9 support acidification and sulfate-associated Zn
-      mobilization; medium sulfate and retained liquor also contribute to the
-      measured sulfate pool. ORP and sulfate are not direct cell counts or a
-      demonstrated gene, adhesion or exopolysaccharide mechanism. The authors
-      explicitly leave contact versus non-contact dissolution unresolved.
+    explanation: Figure 4 reports negligible Zn release in uninoculated medium and some Al release. The control has no matched preacidification or pH trajectory, so it cannot isolate live-cell action from acidic solution history. Figures 5 and 8-9 support acidification and sulfate-associated Zn mobilization; medium sulfate and retained liquor also contribute to the measured sulfate pool. ORP and sulfate are not direct cell counts or a demonstrated gene, adhesion or exopolysaccharide mechanism. The authors explicitly leave contact versus non-contact dissolution unresolved.
   - source_ref: frueholz_2025
     supports: partial
-    explanation: >-
-      Results 3.3 and Figures 6 and 11 show no demonstrated enhancement of
-      Zn extraction when aeration increased from 0.42 to 0.50 vvm. The fitted
-      oxygen-transfer coefficient is about 14 per hour under both settings.
-      Sequential operation confounds aeration with reactor history; the
-      result does not establish that oxygen supply never limits this culture.
-      Fitted transfer parameters are not direct metal-recovery measurements.
+    explanation: Results 3.3 and Figures 6 and 11 show no demonstrated enhancement of Zn extraction when aeration increased from 0.42 to 0.50 vvm. The fitted oxygen-transfer coefficient is about 14 per hour under both settings. Sequential operation confounds aeration with reactor history; the result does not establish that oxygen supply never limits this culture. Fitted transfer parameters are not direct metal-recovery measurements.
   - source_ref: frueholz_2024
     supports: context_only
-    explanation: >-
-      Reference 9 establishes cast-house tapping origin and reports the feed's
-      Fe-rich mixed mineralogy, including iron oxides, zincite and Zn-bearing
-      spinels. Its 0.5-M sulfuric-acid flask experiments also mobilized Zn
-      without a living culture. These are different assays, not matched
-      controls for the 2025 reactor or independent replication of its
-      A. thiooxidans outcomes. Its A. ferrooxidans results are not pooled with
-      the 2025 data and do not identify the later culture's strain.
+    explanation: Reference 9 establishes cast-house tapping origin and reports the feed's Fe-rich mixed mineralogy, including iron oxides, zincite and Zn-bearing spinels. Its 0.5-M sulfuric-acid flask experiments also mobilized Zn without a living culture. These are different assays, not matched controls for the 2025 reactor or independent replication of its A. thiooxidans outcomes. Its A. ferrooxidans results are not pooled with the 2025 data and do not identify the later culture's strain.
   - source_ref: frueholz_2025
     supports: partial
-    explanation: >-
-      Table 2 compares untreated dust with one selected cycle residue: Fe
-      concentration increases and Zn/S concentrations decrease, but residue
-      mass is not given. Concentration changes and similar SEM particle-size
-      distributions do not close element balances or certify steelmaking
-      reuse. Zinc remains in the residue. Proposed precipitation, solvent
-      extraction, bioelectrochemical recovery and regional annual tonnage
-      projections were not demonstrated process outputs. No isolated Zn
-      product, complete wastewater/sulfur loop, economic demonstration or
-      industrial biological operation was established.
+    explanation: 'Table 2 compares untreated dust with one selected cycle residue: Fe concentration increases and Zn/S concentrations decrease, but residue mass is not given. Concentration changes and similar SEM particle-size distributions do not close element balances or certify steelmaking reuse. Zinc remains in the residue. Proposed precipitation, solvent extraction, bioelectrochemical recovery and regional annual tonnage projections were not demonstrated process outputs. No isolated Zn product, complete wastewater/sulfur loop, economic demonstration or industrial biological operation was established.'
+causal_graphs:
+- id: sulfur_oxidizing_culture_associated_zinc_mobilization_graph
+  name: Acidithiobacillus thiooxidans sulfur-oxidizing culture-associated zinc mobilization from blast-furnace cast-house dust
+  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to culture-associated acidification in sulfur-supplemented mineral medium and zinc mobilization from blast-furnace cast-house dust.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: sulfur_oxidizing_culture_associated_zinc_mobilization
+  nodes:
+  - id: sqr_reductase
+    label: Sqr sulfide-quinone reductase (sqr)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: sqr
+    description: Membrane-bound sulfide-quinone reductase oxidizing reduced sulfur species to zero-valent sulfur and polythionate intermediates.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A543Q349
+      entry_name: A0A543Q349_ACITH
+      protein_name: Pyridine nucleotide-disulfide oxidoreductase
+      gene_symbol: sqr
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (sqr) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans (NCBITaxon:930) in the cast-house dust experiments of Frueholz et al. (2025).
+      evidence:
+      - source_ref: frueholz_2025
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-oxidizing acidification and zinc mobilization from blast-furnace cast-house dust by Acidithiobacillus thiooxidans in Frueholz et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
+  - id: tth_hydrolase
+    label: Tth tetrathionate hydrolase (tth)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: tth
+    description: Periplasmic tetrathionate hydrolase disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A5P9XPU3
+      entry_name: A0A5P9XPU3_ACITH
+      protein_name: Tetrathionate hydrolase
+      gene_symbol: tth
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase (tth) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans (NCBITaxon:930) in the cast-house dust experiments of Frueholz et al. (2025).
+      evidence:
+      - source_ref: frueholz_2025
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing acidification and zinc mobilization from blast-furnace cast-house dust by Acidithiobacillus thiooxidans in Frueholz et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
+  - id: acidified_sulfur_oxidizing_culture_medium
+    label: Acidified A. thiooxidans sulfur-oxidizing culture medium (pH dropping from ~3.6 to ~0.9 over 14 days at 30 C)
+    node_type: CHEMICAL_ENTITY
+    description: Elemental-sulfur-containing culture medium inoculated with Acidithiobacillus thiooxidans (10% v/v, ~10^7 cells/mL) in shake flasks at 30 C and 120 rpm, acidifying from pH ~3.6 to ~0.9 over 14 days.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: blast_furnace_cast_house_dust_feed
+    label: Voestalpine Stahl Linz blast-furnace cast-house dust (10-50 g/L; 562 +/- 25 mg/kg Zn, 520.2 g/kg Fe, 232 +/- 11 mg/kg Pb)
+    node_type: MATERIAL_OR_PHASE
+    description: Iron-oxide-rich secondary dust from the blast-furnace cast-house dedusting system at voestalpine Stahl GmbH (Linz, Austria; 520.2 g/kg Fe, 562 +/- 25 mg/kg Zn, 232 +/- 11 mg/kg Pb), tested at 10, 20, and 50 g/L.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: mobilized_dissolved_zinc_in_leachate
+    label: Dissolved Zn in filtered bioleachate (~3-6 mg/L; reported 98% at 10 g/L and 71% at 20 g/L after 14 days, exceeding nominal digest inventory)
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved zinc measured by ICP-MS in 0.22-um-filtered leachate (~3 mg/L across 10-50 g/L in inoculated flasks vs <2 mg/L at 50 g/L in uninoculated control; source-reported 98% at 10 g/L and 71% at 20 g/L exceed the nominal Table 1 Zn inventory).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: sqr_reductase
+    target: tth_hydrolase
+    predicate: supplies_substrate_for
+    relationship: oxidation of reduced sulfur intermediates to polythionates
+    description: Sulfide/sulfur oxidation generates reduced sulfur and polythionate intermediates metabolized by periplasmic tetrathionate hydrolase.
+    evidence:
+    - source_ref: frueholz_2025
+      supports: partial
+      explanation: Reduced-sulfur oxidation in Acidithiobacillus thiooxidans couples Sqr and polythionate hydrolysis during sulfur-oxidizing acidification and zinc mobilization from blast-furnace cast-house dust by Acidithiobacillus thiooxidans in Frueholz et al. (2025); individual enzymes were not directly assayed.
+  - source: tth_hydrolase
+    target: acidified_sulfur_oxidizing_culture_medium
+    predicate: produces
+    relationship: polythionate disproportionation and sulfuric-acid proton generation
+    description: Periplasmic tetrathionate hydrolysis generates sulfate and protons, acidifying the sulfur-oxidizing culture medium.
+    evidence:
+    - source_ref: frueholz_2025
+      supports: partial
+      explanation: Chemolithoautotrophic sulfur oxidation by Acidithiobacillus thiooxidans generates the acidic sulfate/polythionate medium during sulfur-oxidizing acidification and zinc mobilization from blast-furnace cast-house dust by Acidithiobacillus thiooxidans in Frueholz et al. (2025); individual enzyme activities were not isolated.
+  - source: acidified_sulfur_oxidizing_culture_medium
+    target: blast_furnace_cast_house_dust_feed
+    predicate: solubilizes
+    relationship: culture-associated acidification and proton attack on blast-furnace cast-house dust
+    description: Inoculated A. thiooxidans flasks acidify from pH ~3.6 to ~0.9 over 14 days across 10-50 g/L dust loadings while uninoculated controls reach pH 4.2-6.1.
+    evidence:
+    - source_ref: frueholz_2025
+      supports: support
+      explanation: Section 3.2 and Figure 1 of Frueholz et al. (2025) report pH dropping from ~3.6 to ~0.9 in inoculated A. thiooxidans flasks over 14 days at 10-50 g/L cast-house dust, whereas uninoculated controls rose to pH 4.2-6.1; no pH-matched abiotic acid control was included for cast-house dust.
+  - source: blast_furnace_cast_house_dust_feed
+    target: mobilized_dissolved_zinc_in_leachate
+    predicate: produces
+    relationship: zinc mobilization into 0.22-um-filtered leachate
+    description: 14-day bioleaching yields ~3-6 mg/L dissolved Zn in inoculated flasks (reported as 98% at 10 g/L and 71% at 20 g/L, though ~6 mg/L exceeds the nominal 5.62 mg/L Zn inventory from 10 g/L of 562 mg/kg dust).
+    evidence:
+    - source_ref: frueholz_2025
+      supports: partial
+      explanation: Section 3.2 and Figure 2 of Frueholz et al. (2025) report higher dissolved Zn in inoculated flasks than uninoculated controls over 14 days (labelled 98% at 10 g/L and 71% at 20 g/L), while noting that ~6 mg/L dissolved Zn at 10 g/L exceeds the nominal 562 mg/kg Table 1 digest inventory.
 curation_history:
 - timestamp: '2026-10-11T14:56:01.329605+00:00'
   curator: Codex (GPT-6; Codex)
   action: CREATE
-  summary: >-
-    Curated the distinct cast-house dust resource from primary reactor evidence
-    and its supplement, retaining serial-cycle accounting limits, a conflicting
-    supplementary value, unmatched controls and laboratory deployment scope.
+  summary: Curated the distinct cast-house dust resource from primary reactor evidence and its supplement, retaining serial-cycle accounting limits, a conflicting supplementary value, unmatched controls and laboratory deployment scope.
+- timestamp: '2026-10-30T06:04:43Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: edit
+  summary: Added representative Acidithiobacillus thiooxidans ATCC 19377 Sqr (UniProtKB:A0A543Q349) and Tth (UniProtKB:A0A5P9XPU3) protein examples and causal graph (sulfur_oxidizing_culture_associated_zinc_mobilization_graph) to blast-furnace-cast-house-dust.yaml.
 history_refs:
 - history/records/blast-furnace-cast-house-dust/2026-10-11T145820Z-codex-f1ffa6.yaml
+- history/records/blast-furnace-cast-house-dust/2026-10-30T060443Z-claude-claude-opus-4-6-antigravity-75c0cf.yaml

@@ -1,151 +1,224 @@
 id: cmmmech:spent-sulfuric-acid-production-catalyst
 name: Spent sulfuric-acid-production catalyst
 material_kind: secondary_resource
-description: >-
-  Used catalyst from sulfur-dioxide oxidation in sulfuric-acid production,
-  represented here by vanadium-bearing material from a copper-smelter acid unit.
-  This process-defined secondary resource is distinct from petroleum
-  hydrodesulfurization catalysts, automotive converters, fresh catalyst and its
-  constituent elements or mineral phases. The selected silica-rich feed does
-  not define every spent acid-plant catalyst. No constituent-element criticality
-  designation is inherited.
+description: Used catalyst from sulfur-dioxide oxidation in sulfuric-acid production, represented here by vanadium-bearing material from a copper-smelter acid unit. This process-defined secondary resource is distinct from petroleum hydrodesulfurization catalysts, automotive converters, fresh catalyst and its constituent elements or mineral phases. The selected silica-rich feed does not define every spent acid-plant catalyst. No constituent-element criticality designation is inherited.
 sources:
 - id: mikoda_2020
-  title: >-
-    Mikoda, Potysz, Kucha and Kmiecik (2020). Vanadium removal from spent sulfuric
-    acid plant catalyst using citric acid and Acidithiobacillus thiooxidans.
-    Archives of Civil and Mechanical Engineering 20:132. DOI
-    10.1007/s43452-020-00136-9; Methods 2.1-2.5, Results 3.1-3.3,
-    Tables 1-3 and Figures 1-9.
+  title: Mikoda, Potysz, Kucha and Kmiecik (2020). Vanadium removal from spent sulfuric acid plant catalyst using citric acid and Acidithiobacillus thiooxidans. Archives of Civil and Mechanical Engineering 20:132. DOI 10.1007/s43452-020-00136-9; Methods 2.1-2.5, Results 3.1-3.3, Tables 1-3 and Figures 1-9.
   url: https://doi.org/10.1007/s43452-020-00136-9
   accessed_on: '2026-10-11'
 - id: mikoda_2020_supplement
-  title: >-
-    Supplementary material to Mikoda et al. (2020), DOI
-    10.1007/s43452-020-00136-9. Figures S1-S3: catalyst preparation,
-    post-experiment activity test and culture-liquid color. DOCX inspected,
-    including its embedded figure images.
+  title: 'Supplementary material to Mikoda et al. (2020), DOI 10.1007/s43452-020-00136-9. Figures S1-S3: catalyst preparation, post-experiment activity test and culture-liquid color. DOCX inspected, including its embedded figure images.'
   url: https://media.springernature.com/original/springer-static/esm/art%3A10.1007%2Fs43452-020-00136-9/MediaObjects/43452_2020_136_MOESM1_ESM.docx
   accessed_on: '2026-10-11'
 - id: mikoda_residues
-  title: >-
-    Mikoda, Potysz, Gruszecka-Kosowska, Kmiecik and Tomczyk. Spent sulfuric acid
-    plant catalyst: valuable resource of vanadium or risky residue? Process
-    comparison for environmental implications. Published online 27 October 2020;
-    Environmental Science and Pollution Research 28:59358-59367 (2021).
-    DOI 10.1007/s11356-020-11349-z; Methods, Figures 1-3 and Tables 1-4.
+  title: 'Mikoda, Potysz, Gruszecka-Kosowska, Kmiecik and Tomczyk. Spent sulfuric acid plant catalyst: valuable resource of vanadium or risky residue? Process comparison for environmental implications. Published online 27 October 2020; Environmental Science and Pollution Research 28:59358-59367 (2021). DOI 10.1007/s11356-020-11349-z; Methods, Figures 1-3 and Tables 1-4.'
   url: https://doi.org/10.1007/s11356-020-11349-z
   accessed_on: '2026-10-11'
 - id: dsm9463
-  title: >-
-    DSMZ catalogue: Acidithiobacillus thiooxidans DSM 9463, strain designation
-    B-S2, isolated from an Australian bioleaching reactor. Collection identity
-    does not independently verify the study's experimental stock.
+  title: 'DSMZ catalogue: Acidithiobacillus thiooxidans DSM 9463, strain designation B-S2, isolated from an Australian bioleaching reactor. Collection identity does not independently verify the study''s experimental stock.'
   url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-9463
   accessed_on: '2026-10-11'
 - id: ncbi_thiooxidans
-  title: >-
-    NCBI Taxonomy 930: Acidithiobacillus thiooxidans, species. This identifier
-    does not identify the experimental DSM 9463 stock.
+  title: 'NCBI Taxonomy 930: Acidithiobacillus thiooxidans, species. This identifier does not identify the experimental DSM 9463 stock.'
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
   accessed_on: '2026-10-11'
 mechanisms:
 - id: dsm9463_culture_associated_v_leaching
   name: Loading-dependent culture-associated vanadium mobilization
   process: bioleaching
+  description: Living Acidithiobacillus thiooxidans DSM 9463 culture with elemental sulfur was associated with increased filtered-liquid vanadium at low catalyst loading, together with acidification and increasing sulfate. Higher-loading experiments lacked the same advantage over uninoculated controls. The evidence supports a conditional laboratory solubilization observation, without establishing direct enzymatic vanadium reduction, isolated vanadium recovery or industrial deployment.
+  context: 'Mikoda et al. (2020) studied actual spent catalyst from a copper-smelter sulfuric-acid unit: approximately 10-mm granules were comminuted and sieved. Main Methods name 100- and 200-micrometre sieves, whereas supplementary Figure S1 names a 250-micrometre sieve; the fraction used for each bioleaching arm is not explicitly assigned. Table 3 reports 65.5 wt% SiO2 and 5.50 wt% V2O5 on an oxide-composition basis, not pure vanadium oxide or a universal feed composition. Culture DSM 9463 was supplied by DSMZ, pregrown in mineral medium with 1% w/v sulfur to reported pH 1.7, and added at 2% v/v. Assays used fresh mineral medium initially adjusted to pH 2.5 with sulfuric acid, 2% w/v added elemental sulfur, 28 degrees C and 100 rpm. Materials were autoclaved at 121 degrees C for 15 minutes. The paper names 50-cm3 flasks but does not clearly specify working liquid volume. Pulp densities were 1, 2, 5, 10 and 20%, with at least duplicate biotic and uninoculated batches sampled on days 1,
+    7, 14, 21 and 28. Pulp-density percentages are retained as source labels rather than silently assigned an unstated basis. Liquid aliquots were filtered at 0.22 micrometres, diluted and acidified for ICP-MS total-element V analysis; the stated quantification limit was 0.001 mg/L. No pH-trajectory-matched sterile acid control was reported.'
   microbial: true
-  description: >-
-    Living Acidithiobacillus thiooxidans DSM 9463 culture with elemental sulfur
-    was associated with increased filtered-liquid vanadium at low catalyst
-    loading, together with acidification and increasing sulfate. Higher-loading
-    experiments lacked the same advantage over uninoculated controls. The
-    evidence supports a conditional laboratory solubilization observation,
-    without establishing direct enzymatic vanadium reduction, isolated vanadium
-    recovery or industrial deployment.
-  context: >-
-    Mikoda et al. (2020) studied actual spent catalyst from a copper-smelter
-    sulfuric-acid unit: approximately 10-mm granules were comminuted and sieved.
-    Main Methods name 100- and 200-micrometre sieves, whereas supplementary
-    Figure S1 names a 250-micrometre sieve; the fraction used for each bioleaching
-    arm is not explicitly assigned. Table 3 reports 65.5 wt% SiO2 and 5.50 wt%
-    V2O5 on an oxide-composition basis, not pure vanadium oxide or a universal
-    feed composition. Culture DSM 9463 was supplied by DSMZ, pregrown in mineral
-    medium with 1% w/v sulfur to reported pH 1.7, and added at 2% v/v. Assays
-    used fresh mineral medium initially adjusted to pH 2.5 with sulfuric acid,
-    2% w/v added elemental sulfur, 28 degrees C and 100 rpm. Materials were
-    autoclaved at 121 degrees C for 15 minutes. The paper names 50-cm3 flasks
-    but does not clearly specify working liquid volume. Pulp densities were
-    1, 2, 5, 10 and 20%, with at least duplicate biotic and uninoculated batches
-    sampled on days 1, 7, 14, 21 and 28. Pulp-density percentages are retained
-    as source labels rather than silently assigned an unstated basis. Liquid
-    aliquots were filtered at 0.22 micrometres, diluted and acidified for ICP-MS
-    total-element V analysis; the stated quantification limit was 0.001 mg/L.
-    No pH-trajectory-matched sterile acid control was reported.
   organisms:
   - id: NCBITaxon:930
     label: Acidithiobacillus thiooxidans
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A543Q349
+    entry_name: A0A543Q349_ACITH
+    protein_name: Pyridine nucleotide-disulfide oxidoreductase
+    gene_symbol: sqr
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (sqr) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans DSM 9463 (NCBITaxon:930) in Mikoda et al. (2020).
+    evidence:
+    - source_ref: mikoda_2020
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for elemental-sulfur oxidation and loading-dependent vanadium bioleaching from spent sulfuric-acid-plant catalyst by Acidithiobacillus thiooxidans DSM 9463 in Mikoda et al. (2020); individual sqr/tth genes were not mutated or directly assayed.
+  - uniprot_accession: UniProtKB:A0A5P9XPU3
+    entry_name: A0A5P9XPU3_ACITH
+    protein_name: Tetrathionate hydrolase
+    gene_symbol: tth
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase (tth) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans DSM 9463 (NCBITaxon:930) in Mikoda et al. (2020).
+    evidence:
+    - source_ref: mikoda_2020
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for elemental-sulfur oxidation and loading-dependent vanadium bioleaching from spent sulfuric-acid-plant catalyst by Acidithiobacillus thiooxidans DSM 9463 in Mikoda et al. (2020); individual sqr/tth genes were not mutated or directly assayed.
   evidence:
   - source_ref: mikoda_2020
     supports: support
-    explanation: >-
-      Results 3.2, Figure 7 and Perspectives 3.3 assign day-21 liquid V release
-      of 93% to 1% pulp density and 85.5% to 2%, versus at most 17% in the
-      corresponding uninoculated series. These source percentages normalize
-      filtered-liquid V to the initial feed V inventory; they are not isolated
-      product yields. Lower culture pH and increasing sulfate in Figure 9
-      support culture-associated acidification, without separating the effects
-      of cells from their evolving solution chemistry.
+    explanation: Results 3.2, Figure 7 and Perspectives 3.3 assign day-21 liquid V release of 93% to 1% pulp density and 85.5% to 2%, versus at most 17% in the corresponding uninoculated series. These source percentages normalize filtered-liquid V to the initial feed V inventory; they are not isolated product yields. Lower culture pH and increasing sulfate in Figure 9 support culture-associated acidification, without separating the effects of cells from their evolving solution chemistry.
   - source_ref: mikoda_2020
     supports: partial
-    explanation: >-
-      The abstract instead attributes 93% to 2% pulp density. Results 3.2 also
-      labels both day-28 values, 80% and 74%, as 1%, while Figure 7 distinguishes
-      the two arms. These inconsistencies remain unresolved. The low-loading
-      liquid V inventory declined after day 21. At 5-20% pulp density, Figure 8
-      shows decreasing liquid V with controls often exceeding inoculated arms;
-      no universal microbial advantage or monotonic extraction is established.
-      Oxygen-transfer limitation and precipitation are proposed explanations,
-      not independently isolated causes.
+    explanation: The abstract instead attributes 93% to 2% pulp density. Results 3.2 also labels both day-28 values, 80% and 74%, as 1%, while Figure 7 distinguishes the two arms. These inconsistencies remain unresolved. The low-loading liquid V inventory declined after day 21. At 5-20% pulp density, Figure 8 shows decreasing liquid V with controls often exceeding inoculated arms; no universal microbial advantage or monotonic extraction is established. Oxygen-transfer limitation and precipitation are proposed explanations, not independently isolated causes.
   - source_ref: mikoda_2020_supplement
     supports: partial
-    explanation: >-
-      Figures S2-S3 show a qualitative sulfur-settling transfer assay and
-      changing solution color. These are activity/speciation clues, not cell
-      counts, quantified survival, or direct measurement of V oxidation state.
-      Figure S1's sieve description conflicts with main Methods. The observed
-      colors cannot independently establish a microbial V(V)-reduction pathway.
+    explanation: Figures S2-S3 show a qualitative sulfur-settling transfer assay and changing solution color. These are activity/speciation clues, not cell counts, quantified survival, or direct measurement of V oxidation state. Figure S1's sieve description conflicts with main Methods. The observed colors cannot independently establish a microbial V(V)-reduction pathway.
   - source_ref: mikoda_2020
     supports: partial
-    explanation: >-
-      Figures 1-2 and Table 3 describe mixed feed and residual phases;
-      disappearance of XRD peaks and lower residual-solid V concentration do
-      not supply residue mass or a complete V balance. Color and the pH/Eh
-      comparison in Figure 6 do not directly identify dissolved V species.
-      Kinetic fits use selected incomplete time series to improve R-squared
-      values (Methods 2.5), so they do not demonstrate a unique rate-controlling
-      mechanism. Separate reagent-grade citric-acid leaching is abiotic, under
-      different temperature, duration and vessel conditions; it is not evidence
-      that DSM 9463 produced citrate.
+    explanation: Figures 1-2 and Table 3 describe mixed feed and residual phases; disappearance of XRD peaks and lower residual-solid V concentration do not supply residue mass or a complete V balance. Color and the pH/Eh comparison in Figure 6 do not directly identify dissolved V species. Kinetic fits use selected incomplete time series to improve R-squared values (Methods 2.5), so they do not demonstrate a unique rate-controlling mechanism. Separate reagent-grade citric-acid leaching is abiotic, under different temperature, duration and vessel conditions; it is not evidence that DSM 9463 produced citrate.
   - source_ref: mikoda_residues
     supports: context_only
-    explanation: >-
-      This related same-group study explicitly follows the earlier work and
-      repeats its raw/residue oxide compositions. Its 2%-pulp-density 93% claim
-      does not resolve the earlier arm conflict or establish independent
-      replication. The approximately 96% statement compares solid V
-      concentrations, without residue-mass accounting for a recovered yield.
-      The separate SPLP assay (1 g residue, 20 mL pH-4.2 solution, 18 hours)
-      reports bioleached-residue V and Al of 6.4 and 4.8 mg/L in Table 3;
-      residual leachability remains. These observations do not demonstrate a
-      metal-free or universally safe residue, a regulatory determination,
-      validated concrete use, or a recovered vanadium product.
+    explanation: This related same-group study explicitly follows the earlier work and repeats its raw/residue oxide compositions. Its 2%-pulp-density 93% claim does not resolve the earlier arm conflict or establish independent replication. The approximately 96% statement compares solid V concentrations, without residue-mass accounting for a recovered yield. The separate SPLP assay (1 g residue, 20 mL pH-4.2 solution, 18 hours) reports bioleached-residue V and Al of 6.4 and 4.8 mg/L in Table 3; residual leachability remains. These observations do not demonstrate a metal-free or universally safe residue, a regulatory determination, validated concrete use, or a recovered vanadium product.
+causal_graphs:
+- id: dsm9463_culture_associated_v_leaching_graph
+  name: Acidithiobacillus thiooxidans DSM 9463 loading-dependent sulfur-oxidizing bioleaching of vanadium from spent sulfuric-acid-production catalyst
+  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to elemental-sulfur oxidation, culture acidification, and pulp-density-dependent vanadium mobilization from comminuted copper-smelter sulfuric-acid-plant catalyst.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: dsm9463_culture_associated_v_leaching
+  nodes:
+  - id: sqr_reductase
+    label: Sqr sulfide-quinone reductase (sqr)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: sqr
+    description: Membrane-bound sulfide-quinone reductase oxidizing reduced sulfur species to zero-valent sulfur and polythionate intermediates.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A543Q349
+      entry_name: A0A543Q349_ACITH
+      protein_name: Pyridine nucleotide-disulfide oxidoreductase
+      gene_symbol: sqr
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (sqr) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans DSM 9463 (NCBITaxon:930) in Mikoda et al. (2020).
+      evidence:
+      - source_ref: mikoda_2020
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for elemental-sulfur oxidation and loading-dependent vanadium bioleaching from spent sulfuric-acid-plant catalyst by Acidithiobacillus thiooxidans DSM 9463 in Mikoda et al. (2020); individual sqr/tth genes were not mutated or directly assayed.
+  - id: tth_hydrolase
+    label: Tth tetrathionate hydrolase (tth)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: tth
+    description: Periplasmic tetrathionate hydrolase disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A5P9XPU3
+      entry_name: A0A5P9XPU3_ACITH
+      protein_name: Tetrathionate hydrolase
+      gene_symbol: tth
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase (tth) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans DSM 9463 (NCBITaxon:930) in Mikoda et al. (2020).
+      evidence:
+      - source_ref: mikoda_2020
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for elemental-sulfur oxidation and loading-dependent vanadium bioleaching from spent sulfuric-acid-plant catalyst by Acidithiobacillus thiooxidans DSM 9463 in Mikoda et al. (2020); individual sqr/tth genes were not mutated or directly assayed.
+  - id: dsm9463_sulfur_oxidizing_culture_medium
+    label: Acidified A. thiooxidans DSM 9463 mineral medium with 2% w/v elemental sulfur (initial pH 2.5 at 28 C and 100 rpm)
+    node_type: CHEMICAL_ENTITY
+    description: Mineral medium initially adjusted to pH 2.5, supplemented with 2% (w/v) elemental sulfur, and inoculated at 2% (v/v) with sulfur-pregrown Acidithiobacillus thiooxidans DSM 9463 (pH 1.7), incubated at 28 C and 100 rpm for 28 days.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: comminuted_spent_acid_plant_catalyst
+    label: Comminuted copper-smelter spent sulfuric-acid-plant catalyst (65.5 wt% SiO2, 5.50 wt% V2O5; tested at 1%, 2%, 5%, 10%, and 20% pulp density)
+    node_type: MATERIAL_OR_PHASE
+    description: Comminuted and sieved silica-rich vanadium catalyst from a copper-smelter sulfuric-acid unit (65.5 wt% SiO2 and 5.50 wt% V2O5 on an oxide basis), autoclaved and tested at 1, 2, 5, 10, and 20% pulp density.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: mobilized_catalyst_vanadium
+    label: Dissolved V in 0.22-um-filtered leachate (93% at 1% and 85.5% at 2% pulp density on day 21 vs <=17% in uninoculated controls; no biotic advantage at 5-20%)
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved vanadium measured by ICP-MS in 0.22-um-filtered leachate (reaching day-21 maxima of 93% at 1% pulp density and 85.5% at 2% pulp density in Results 3.2/Figure 7 vs <=17% in uninoculated controls, declining to 80% and 74% by day 28, and showing no microbial advantage at 5-20% pulp density).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: sqr_reductase
+    target: tth_hydrolase
+    predicate: supplies_substrate_for
+    relationship: oxidation of reduced sulfur intermediates to polythionates
+    description: Sulfide/sulfur oxidation generates reduced sulfur and polythionate intermediates metabolized by periplasmic tetrathionate hydrolase.
+    evidence:
+    - source_ref: mikoda_2020
+      supports: partial
+      explanation: Reduced-sulfur oxidation in Acidithiobacillus thiooxidans couples Sqr and polythionate hydrolysis during elemental-sulfur oxidation and loading-dependent vanadium bioleaching from spent sulfuric-acid-plant catalyst by Acidithiobacillus thiooxidans DSM 9463 in Mikoda et al. (2020); individual enzymes were not directly assayed.
+  - source: tth_hydrolase
+    target: dsm9463_sulfur_oxidizing_culture_medium
+    predicate: produces
+    relationship: polythionate disproportionation and sulfuric-acid proton generation
+    description: Periplasmic tetrathionate hydrolysis generates sulfate and protons, acidifying the sulfur-oxidizing culture medium.
+    evidence:
+    - source_ref: mikoda_2020
+      supports: partial
+      explanation: Chemolithoautotrophic sulfur oxidation by Acidithiobacillus thiooxidans generates the acidic sulfate/polythionate medium during elemental-sulfur oxidation and loading-dependent vanadium bioleaching from spent sulfuric-acid-plant catalyst by Acidithiobacillus thiooxidans DSM 9463 in Mikoda et al. (2020); individual enzyme activities were not isolated.
+  - source: dsm9463_sulfur_oxidizing_culture_medium
+    target: comminuted_spent_acid_plant_catalyst
+    predicate: solubilizes
+    relationship: pulp-density-dependent culture acidification and vanadium solubilization from spent acid-plant catalyst
+    description: At 1-2% pulp density, inoculated DSM 9463 flasks with 2% (w/v) S0 generate lower pH and rising sulfate over 28 days compared with uninoculated controls, whereas high pulp densities (5-20%) inhibit biotic enhancement.
+    evidence:
+    - source_ref: mikoda_2020
+      supports: support
+      explanation: Results 3.2 and Figures 7-9 of Mikoda et al. (2020) show lower pH, rising sulfate, and strongly enhanced vanadium solubilization at 1-2% pulp density in DSM 9463 flasks versus uninoculated controls, while at 5-20% pulp density uninoculated controls often equaled or exceeded biotic flasks; no pH-matched abiotic acid control was included.
+  - source: comminuted_spent_acid_plant_catalyst
+    target: mobilized_catalyst_vanadium
+    predicate: produces
+    relationship: vanadium release into 0.22-um-filtered leachate at low pulp density
+    description: Day-21 filtered-liquid vanadium reaches 93% at 1% pulp density and 85.5% at 2% pulp density in Results 3.2/Figure 7 (though Abstract assigns 93% to 2% pulp density) versus <=17% in uninoculated controls, before declining to 80% and 74% at day 28.
+    evidence:
+    - source_ref: mikoda_2020
+      supports: support
+      explanation: Results 3.2, Figure 7, and Perspectives 3.3 of Mikoda et al. (2020) report day-21 vanadium extraction of 93% (1% pulp density) and 85.5% (2% pulp density) versus <=17% in uninoculated controls, while preserving the Abstract's conflicting 2%-pulp-density attribution and the lack of biotic advantage at 5-20% loading.
 curation_history:
 - timestamp: '2026-10-11T14:19:32.351097+00:00'
   curator: Codex (GPT-6; Codex)
   action: CREATE
-  summary: >-
-    Created the process-defined spent sulfuric-acid catalyst record from primary
-    full text and supplements, retaining loading-dependent controls, source
-    contradictions, companion-study overlap and laboratory recovery limits.
+  summary: Created the process-defined spent sulfuric-acid catalyst record from primary full text and supplements, retaining loading-dependent controls, source contradictions, companion-study overlap and laboratory recovery limits.
+- timestamp: '2026-10-30T06:04:43Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: edit
+  summary: Added representative Acidithiobacillus thiooxidans ATCC 19377 Sqr (UniProtKB:A0A543Q349) and Tth (UniProtKB:A0A5P9XPU3) protein examples and causal graph (dsm9463_culture_associated_v_leaching_graph) to spent-sulfuric-acid-production-catalyst.yaml.
 history_refs:
 - history/records/spent-sulfuric-acid-production-catalyst/2026-10-11T141934Z-codex-62c311.yaml
+- history/records/spent-sulfuric-acid-production-catalyst/2026-10-30T060443Z-claude-claude-opus-4-6-antigravity-2cee2c.yaml

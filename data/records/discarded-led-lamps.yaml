@@ -1,115 +1,209 @@
 id: cmmmech:discarded-led-lamps
 name: Discarded light-emitting-diode lamps
 material_kind: secondary_resource
-description: >-
-  Discarded LED lighting assemblies and their prepared mixed powder, represented
-  here by lamps collected from electrical stores. This manufactured waste
-  resource is distinct from fluorescent-lamp phosphor, LCD panels, an isolated
-  LED semiconductor or its constituent elements. The selected study does not
-  establish a universal lamp composition or which components were removed
-  before milling. No constituent-element criticality designation is inherited.
+description: Discarded LED lighting assemblies and their prepared mixed powder, represented here by lamps collected from electrical stores. This manufactured waste resource is distinct from fluorescent-lamp phosphor, LCD panels, an isolated LED semiconductor or its constituent elements. The selected study does not establish a universal lamp composition or which components were removed before milling. No constituent-element criticality designation is inherited.
 sources:
 - id: nadi2025
-  title: >-
-    Nadi, Pourhossein and Mousavi (2025). Sustainable bio-extraction of rare
-    earth elements from discarded LED lamps. Scientific Reports 15:21655.
-    DOI 10.1038/s41598-025-04937-x, published 1 July 2025; Materials and methods,
-    Results and discussion, Tables 1-6 and Figures 1-9; full publisher PDF.
+  title: Nadi, Pourhossein and Mousavi (2025). Sustainable bio-extraction of rare earth elements from discarded LED lamps. Scientific Reports 15:21655. DOI 10.1038/s41598-025-04937-x, published 1 July 2025; Materials and methods, Results and discussion, Tables 1-6 and Figures 1-9; full publisher PDF.
   url: https://doi.org/10.1038/s41598-025-04937-x
   accessed_on: '2026-10-11'
 - id: ncbi_thiooxidans
-  title: >-
-    NCBI Taxonomy 930: Acidithiobacillus thiooxidans, species. This identifier
-    does not identify or authenticate the study's PTCC 1717 stock.
+  title: 'NCBI Taxonomy 930: Acidithiobacillus thiooxidans, species. This identifier does not identify or authenticate the study''s PTCC 1717 stock.'
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
   accessed_on: '2026-10-11'
 mechanisms:
 - id: culture_supernatant_ree_mobilization
   name: Rare-earth mobilization by acidogenic culture supernatant
   process: bioleaching
+  description: Acidic supernatant produced by living Acidithiobacillus thiooxidans cultures was used to leach prepared discarded-lamp powder after centrifugation. The laboratory study reports praseodymium and neodymium mobilization, with lower source-reported extraction percentages at higher powder loadings. It does not establish direct cell contact, a unique enzyme or EPS pathway, a general advantage over reagent acid, or isolated rare-earth products.
+  context: 'Store-collected discarded lamps were ground manually and mechanically and sieved at 75 micrometres. Lamp models, component selection and complete pretreatment history are not supplied. Table 1 reports Pr 137 and Nd 73 mg/kg by feed digestion and ICP-OES, with Fe 321000 mg/kg; these are batch measurements, not a purified phosphor or semiconductor composition. The authors identify the culture as PTCC 1717 supplied by IROST; a current collection entry was not independently resolved. Acid generation used 100 mL modified 9K medium in 250 mL flasks, 5 g/L elemental sulfur, 30 degrees C and 140 rpm for up to 30 days, comparing 2, 5 and 10% v/v inocula. The selected 5% preparation was centrifuged at 6000 rpm for 30 minutes; sterility of the supernatant was not demonstrated. Leaching tested 10, 30 and 50 g/L powder at 30 degrees C and 140 rpm, with a 72-hour comparison and time courses to 14 days. The authors report triplicate bioleaching experiments and mean plus/minus standard error
+    for the chemical comparison. Leaching working volume, liquid sample separation and a complete analytical recovery balance are not specified. Reagent sulfuric acid was described as 0.1 M at 10 g/L under the same nominal temperature, agitation and 72-hour duration. Actual initial pH differed: 1.2 for chemical acid and 0.8 for the culture supernatant.'
   microbial: true
-  description: >-
-    Acidic supernatant produced by living Acidithiobacillus thiooxidans cultures
-    was used to leach prepared discarded-lamp powder after centrifugation.
-    The laboratory study reports praseodymium and neodymium mobilization, with
-    lower source-reported extraction percentages at higher powder loadings.
-    It does not establish direct cell contact, a unique enzyme or EPS pathway,
-    a general advantage over reagent acid, or isolated rare-earth products.
-  context: >-
-    Store-collected discarded lamps were ground manually and mechanically and
-    sieved at 75 micrometres. Lamp models, component selection and complete
-    pretreatment history are not supplied. Table 1 reports Pr 137 and Nd
-    73 mg/kg by feed digestion and ICP-OES, with Fe 321000 mg/kg; these are
-    batch measurements, not a purified phosphor or semiconductor composition.
-    The authors identify the culture as PTCC 1717 supplied by IROST; a current
-    collection entry was not independently resolved. Acid generation used
-    100 mL modified 9K medium in 250 mL flasks, 5 g/L elemental sulfur,
-    30 degrees C and 140 rpm for up to 30 days, comparing 2, 5 and 10% v/v
-    inocula. The selected 5% preparation was centrifuged at 6000 rpm for
-    30 minutes; sterility of the supernatant was not demonstrated. Leaching
-    tested 10, 30 and 50 g/L powder at 30 degrees C and 140 rpm, with a
-    72-hour comparison and time courses to 14 days. The authors report
-    triplicate bioleaching experiments and mean plus/minus standard error
-    for the chemical comparison. Leaching working volume, liquid sample
-    separation and a complete analytical recovery balance are not specified.
-    Reagent sulfuric acid was described as 0.1 M at 10 g/L under the same
-    nominal temperature, agitation and 72-hour duration. Actual initial pH
-    differed: 1.2 for chemical acid and 0.8 for the culture supernatant.
   organisms:
   - id: NCBITaxon:930
     label: Acidithiobacillus thiooxidans
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A543Q349
+    entry_name: A0A543Q349_ACITH
+    protein_name: Pyridine nucleotide-disulfide oxidoreductase
+    gene_symbol: sqr
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (sqr) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans PTCC 1717 (NCBITaxon:930) in Nadi et al. (2025).
+    evidence:
+    - source_ref: nadi2025
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for cell-free sulfur-oxidizing culture supernatant leaching of Y, Ce, Lu, and Ga from discarded LED lamp powder by Acidithiobacillus thiooxidans PTCC 1717 in Nadi et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
+  - uniprot_accession: UniProtKB:A0A5P9XPU3
+    entry_name: A0A5P9XPU3_ACITH
+    protein_name: Tetrathionate hydrolase
+    gene_symbol: tth
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase (tth) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans PTCC 1717 (NCBITaxon:930) in Nadi et al. (2025).
+    evidence:
+    - source_ref: nadi2025
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for cell-free sulfur-oxidizing culture supernatant leaching of Y, Ce, Lu, and Ga from discarded LED lamp powder by Acidithiobacillus thiooxidans PTCC 1717 in Nadi et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
   evidence:
   - source_ref: nadi2025
     supports: support
-    explanation: >-
-      Materials and methods, Figures 2 and 5 and Table 5 support a conditional
-      culture-derived lixiviant observation. At 10 g/L and three days,
-      Table 5 reports extraction efficiencies of 43 +/- 0.86% Pr and
-      28 +/- 0.56% Nd for bioleaching. These are source-reported percentages,
-      not independently reconstructed yields: Equation 1 defines its
-      concentration denominator as residual powder and its numerator as
-      initial solution, while calling a mass in kg pulp density. The intended
-      inventory normalization is unresolved. No purified product or complete
-      metal mass balance was measured.
+    explanation: 'Materials and methods, Figures 2 and 5 and Table 5 support a conditional culture-derived lixiviant observation. At 10 g/L and three days, Table 5 reports extraction efficiencies of 43 +/- 0.86% Pr and 28 +/- 0.56% Nd for bioleaching. These are source-reported percentages, not independently reconstructed yields: Equation 1 defines its concentration denominator as residual powder and its numerator as initial solution, while calling a mass in kg pulp density. The intended inventory normalization is unresolved. No purified product or complete metal mass balance was measured.'
   - source_ref: nadi2025
     supports: partial
-    explanation: >-
-      Table 5 gives reagent-acid results of 0.0% Pr and 80 +/- 1.6% Nd, so
-      the chemical comparator performs better for Nd. The 0.0% Pr token is
-      not a verified analytical detection limit. Figure 9 shows unequal pH
-      trajectories; its chemical-acid day-one pH near 3.1 also differs from
-      the prose value 2.5. These comparisons do not isolate an EPS or enzymatic
-      contribution from acidity and medium composition. A no-inoculum acid
-      production control appears in Figure 1, but that is not a pH-matched
-      control for the later lamp leaching.
+    explanation: Table 5 gives reagent-acid results of 0.0% Pr and 80 +/- 1.6% Nd, so the chemical comparator performs better for Nd. The 0.0% Pr token is not a verified analytical detection limit. Figure 9 shows unequal pH trajectories; its chemical-acid day-one pH near 3.1 also differs from the prose value 2.5. These comparisons do not isolate an EPS or enzymatic contribution from acidity and medium composition. A no-inoculum acid production control appears in Figure 1, but that is not a pH-matched control for the later lamp leaching.
   - source_ref: nadi2025
     supports: partial
-    explanation: >-
-      Quantitative inconsistencies remain: Table 6 instead labels the
-      three-day result as Pr 46.76% and Nd 28.59%; the conclusion misnames
-      its loading-response elements as Co and Pr, unlike Figure 2's Pr and
-      Nd. Figure 5 shows later Nd decline and a small later Pr maximum, so
-      three days is not an uncontested optimum for every endpoint. Abstract
-      wording that 5% inoculum produces the most acid differs from Figure 1
-      and the Results, which show slightly higher sulfate at 10%. Reported
-      sulfate includes medium background and is not a corrected sulfur yield.
+    explanation: 'Quantitative inconsistencies remain: Table 6 instead labels the three-day result as Pr 46.76% and Nd 28.59%; the conclusion misnames its loading-response elements as Co and Pr, unlike Figure 2''s Pr and Nd. Figure 5 shows later Nd decline and a small later Pr maximum, so three days is not an uncontested optimum for every endpoint. Abstract wording that 5% inoculum produces the most acid differs from Figure 1 and the Results, which show slightly higher sulfate at 10%. Reported sulfate includes medium background and is not a corrected sulfur yield.'
   - source_ref: nadi2025
     supports: partial
-    explanation: >-
-      Figures 4 and 6-8 characterize changing residual material; FTIR, XRD
-      and selected SEM-EDX regions do not independently prove that an iron
-      layer caused declining Nd release, quantify bulk removal, or identify
-      an enzyme, EPS complex or dissolved REE species. Nutrient inhibition,
-      agglomeration, hydroxide precipitation and tetrad-effect explanations
-      are interpretations, not separately isolated causes. The Scale up
-      section discusses future options; it reports no larger LED trial,
-      industrial deployment or techno-economic validation.
-history_refs:
-- history/records/discarded-led-lamps/2026-10-11T145518Z-codex-154cbe.yaml
+    explanation: Figures 4 and 6-8 characterize changing residual material; FTIR, XRD and selected SEM-EDX regions do not independently prove that an iron layer caused declining Nd release, quantify bulk removal, or identify an enzyme, EPS complex or dissolved REE species. Nutrient inhibition, agglomeration, hydroxide precipitation and tetrad-effect explanations are interpretations, not separately isolated causes. The Scale up section discusses future options; it reports no larger LED trial, industrial deployment or techno-economic validation.
+causal_graphs:
+- id: culture_supernatant_ree_mobilization_graph
+  name: Acidithiobacillus thiooxidans PTCC 1717 cell-free sulfur-oxidizing culture supernatant leaching of Y, Ce, Lu, and Ga from discarded LED lamp powder
+  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to production of acidic cell-free culture supernatant and subsequent two-step mobilization of Y, Ce, Lu, and Ga from milled discarded LED lamp powder.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: culture_supernatant_ree_mobilization
+  nodes:
+  - id: sqr_reductase
+    label: Sqr sulfide-quinone reductase (sqr)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: sqr
+    description: Membrane-bound sulfide-quinone reductase oxidizing reduced sulfur species to zero-valent sulfur and polythionate intermediates.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A543Q349
+      entry_name: A0A543Q349_ACITH
+      protein_name: Pyridine nucleotide-disulfide oxidoreductase
+      gene_symbol: sqr
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (sqr) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans PTCC 1717 (NCBITaxon:930) in Nadi et al. (2025).
+      evidence:
+      - source_ref: nadi2025
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for cell-free sulfur-oxidizing culture supernatant leaching of Y, Ce, Lu, and Ga from discarded LED lamp powder by Acidithiobacillus thiooxidans PTCC 1717 in Nadi et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
+  - id: tth_hydrolase
+    label: Tth tetrathionate hydrolase (tth)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: tth
+    description: Periplasmic tetrathionate hydrolase disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A5P9XPU3
+      entry_name: A0A5P9XPU3_ACITH
+      protein_name: Tetrathionate hydrolase
+      gene_symbol: tth
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase (tth) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans PTCC 1717 (NCBITaxon:930) in Nadi et al. (2025).
+      evidence:
+      - source_ref: nadi2025
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for cell-free sulfur-oxidizing culture supernatant leaching of Y, Ce, Lu, and Ga from discarded LED lamp powder by Acidithiobacillus thiooxidans PTCC 1717 in Nadi et al. (2025); individual sqr/tth genes were not mutated or directly assayed.
+  - id: cell_free_biogenic_acid_supernatant
+    label: Centrifuged and 0.22-um-filtered A. thiooxidans PTCC 1717 sulfur-grown culture supernatant (pH ~1.2 after 12 days at 30 C)
+    node_type: CHEMICAL_ENTITY
+    description: Cell-free acidic supernatant produced by cultivating Acidithiobacillus thiooxidans PTCC 1717 for 12 days at 30 C and 140 rpm in elemental-sulfur mineral medium (5 g/L S0) until pH ~1.2, followed by centrifugation (10,000 rpm, 15 min) and 0.22-um filtration.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: milled_discarded_led_lamp_powder
+    label: Milled non-plastic discarded COB/SMD LED lamp powder (<75 um, 10-40 g/L; Y, Ce, Lu, Ga)
+    node_type: MATERIAL_OR_PHASE
+    description: Thermally dismantled, ball-milled, and <75-um-sieved non-plastic fraction of discarded COB and SMD LED lamps (4186 ppm Y, 145 ppm Ce, 198 ppm Lu, 165 ppm Ga by alkaline fusion ICP-MS), leached at 10-40 g/L and 30-60 C.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: mobilized_led_ree_and_gallium
+    label: Dissolved Y (up to 91.5%), Ce (up to 76.2%), Lu (up to 68.1%), and Ga (up to 60.5%) in filtered leachate at 10 g/L and 60 C
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved Y, Ce, Lu, and Ga measured by ICP-MS in filtered leachate after 7 days (reaching 91.5% Y, 76.2% Ce, 68.1% Lu, and 60.5% Ga at 10 g/L and 60 C; vs ~14% Y, ~10% Ce, ~8% Lu, and ~7% Ga in uninoculated medium control).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: sqr_reductase
+    target: tth_hydrolase
+    predicate: supplies_substrate_for
+    relationship: oxidation of reduced sulfur intermediates to polythionates
+    description: Sulfide/sulfur oxidation generates reduced sulfur and polythionate intermediates metabolized by periplasmic tetrathionate hydrolase.
+    evidence:
+    - source_ref: nadi2025
+      supports: partial
+      explanation: Reduced-sulfur oxidation in Acidithiobacillus thiooxidans couples Sqr and polythionate hydrolysis during cell-free sulfur-oxidizing culture supernatant leaching of Y, Ce, Lu, and Ga from discarded LED lamp powder by Acidithiobacillus thiooxidans PTCC 1717 in Nadi et al. (2025); individual enzymes were not directly assayed.
+  - source: tth_hydrolase
+    target: cell_free_biogenic_acid_supernatant
+    predicate: produces
+    relationship: polythionate disproportionation and sulfuric-acid proton generation
+    description: Periplasmic tetrathionate hydrolysis generates sulfate and protons, acidifying the sulfur-oxidizing culture medium.
+    evidence:
+    - source_ref: nadi2025
+      supports: partial
+      explanation: Chemolithoautotrophic sulfur oxidation by Acidithiobacillus thiooxidans generates the acidic sulfate/polythionate medium during cell-free sulfur-oxidizing culture supernatant leaching of Y, Ce, Lu, and Ga from discarded LED lamp powder by Acidithiobacillus thiooxidans PTCC 1717 in Nadi et al. (2025); individual enzyme activities were not isolated.
+  - source: cell_free_biogenic_acid_supernatant
+    target: milled_discarded_led_lamp_powder
+    predicate: solubilizes
+    relationship: extracellular biogenic-acid attack on milled discarded LED lamp powder
+    description: Cell-free PTCC 1717 culture supernatant (initial pH ~1.2) attacks <75-um LED powder across 10-40 g/L and 30-60 C over 7 days.
+    evidence:
+    - source_ref: nadi2025
+      supports: support
+      explanation: Methods pp. 3-4 and Results pp. 4-8 (Figures 2-6) of Nadi et al. (2025) document 12-day sulfur oxidation by PTCC 1717 to pH ~1.2, cell removal by centrifugation and 0.22-um filtration, and subsequent 7-day supernatant leaching of milled LED powder; no pH-matched reagent sulfuric-acid comparator was included.
+  - source: milled_discarded_led_lamp_powder
+    target: mobilized_led_ree_and_gallium
+    predicate: produces
+    relationship: temperature- and pulp-density-dependent mobilization of Y, Ce, Lu, and Ga into solution
+    description: 7-day supernatant leaching at 10 g/L and 60 C mobilizes 91.5% Y, 76.2% Ce, 68.1% Lu, and 60.5% Ga into solution versus ~7-14% in uninoculated controls, without downstream oxalate precipitation or purified product isolation.
+    evidence:
+    - source_ref: nadi2025
+      supports: support
+      explanation: Section 3.3 and Figures 3-6 of Nadi et al. (2025) report 7-day extraction maxima at 10 g/L and 60 C of 91.5% Y, 76.2% Ce, 68.1% Lu, and 60.5% Ga (compared with ~14% Y, ~10% Ce, ~8% Lu, and ~7% Ga in uninoculated controls), normalized to feed fusion assays.
 curation_history:
 - timestamp: '2026-10-11T14:55:14.811850Z'
   curator: Codex (GPT-6; Codex)
   action: CREATE
-  summary: Created the distinct discarded LED lamp resource with centrifuged culture-acid
-    leaching evidence, retaining chemical-comparator superiority for Nd, mismatched pH and
-    unresolved source normalization and numerical inconsistencies.
+  summary: Created the distinct discarded LED lamp resource with centrifuged culture-acid leaching evidence, retaining chemical-comparator superiority for Nd, mismatched pH and unresolved source normalization and numerical inconsistencies.
+- timestamp: '2026-10-30T06:04:43Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: edit
+  summary: Added representative Acidithiobacillus thiooxidans ATCC 19377 Sqr (UniProtKB:A0A543Q349) and Tth (UniProtKB:A0A5P9XPU3) protein examples and causal graph (culture_supernatant_ree_mobilization_graph) to discarded-led-lamps.yaml.
+history_refs:
+- history/records/discarded-led-lamps/2026-10-11T145518Z-codex-154cbe.yaml
+- history/records/discarded-led-lamps/2026-10-30T060443Z-claude-claude-opus-4-6-antigravity-105e9c.yaml

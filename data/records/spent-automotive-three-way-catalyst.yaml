@@ -1,99 +1,213 @@
 id: cmmmech:spent-automotive-three-way-catalyst
 name: Spent automotive three-way catalyst
 material_kind: secondary_resource
-description: Used automotive three-way catalytic-converter material, represented here by a real vehicle-treatment-centre
-  catalyst containing a ceramic support and metal-bearing coating. This use-defined secondary resource
-  is distinct from its constituent platinum-group elements, fresh catalyst, refinery hydrocracking or
-  hydrodesulfurization catalysts, and automotive wastewater-treatment sludge. The selected cryomilled
-  feed does not define every converter formulation. No constituent criticality designation is inherited.
+description: Used automotive three-way catalytic-converter material, represented here by a real vehicle-treatment-centre catalyst containing a ceramic support and metal-bearing coating. This use-defined secondary resource is distinct from its constituent platinum-group elements, fresh catalyst, refinery hydrocracking or hydrodesulfurization catalysts, and automotive wastewater-treatment sludge. The selected cryomilled feed does not define every converter formulation. No constituent criticality designation is inherited.
 sources:
 - id: compagnone_2023
-  title: Compagnone, González-Cortés, Yeste, Cantero and Ramírez (2023). Bioleaching of the α-alumina
-    layer of spent three-way catalysts as a pretreatment for the recovery of platinum group metals. Journal
-    of Environmental Management 345:118825. DOI 10.1016/j.jenvman.2023.118825; Methods 2.1-2.6, Results
-    3.2-3.5, Figures 2-6. Full primary repository PDF inspected; supplementary files and underlying dataset
-    contents unavailable in this assessment.
+  title: Compagnone, González-Cortés, Yeste, Cantero and Ramírez (2023). Bioleaching of the α-alumina layer of spent three-way catalysts as a pretreatment for the recovery of platinum group metals. Journal of Environmental Management 345:118825. DOI 10.1016/j.jenvman.2023.118825; Methods 2.1-2.6, Results 3.2-3.5, Figures 2-6. Full primary repository PDF inspected; supplementary files and underlying dataset contents unavailable in this assessment.
   url: https://doi.org/10.1016/j.jenvman.2023.118825
   accessed_on: '2026-10-11'
 - id: dsm11478
-  title: 'DSMZ catalogue: Acidithiobacillus thiooxidans DSM 11478, strain designation Tth04. Confirms
-    collection strain identity; does not independently verify the experimental stock.'
+  title: 'DSMZ catalogue: Acidithiobacillus thiooxidans DSM 11478, strain designation Tth04. Confirms collection strain identity; does not independently verify the experimental stock.'
   url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-11478
   accessed_on: '2026-10-11'
 - id: ncbi_thiooxidans
-  title: 'NCBI Taxonomy 930: Acidithiobacillus thiooxidans, species. The species identifier is distinct
-    from DSM 11478 strain provenance.'
+  title: 'NCBI Taxonomy 930: Acidithiobacillus thiooxidans, species. The species identifier is distinct from DSM 11478 strain provenance.'
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930&mode=Info
   accessed_on: '2026-10-11'
 mechanisms:
 - id: dsm11478_biogenic_acid_pretreatment
   name: Biogenic-acid pretreatment of spent three-way catalyst
   process: bioleaching
+  description: Acidithiobacillus thiooxidans DSM 11478 cultures produced acidic media subsequently applied to pulverized spent automotive catalyst. Culture-containing and bacteria-depleted media mobilized aluminium, with a condition-dependent comparison against commercial sulfuric acid. The experiment demonstrates a laboratory pretreatment observation, not phase-specific alumina removal, validated platinum-group enrichment, isolated metal recovery or industrial deployment.
+  context: Compagnone et al. obtained a real spent three-way catalyst from the El Caimán authorized vehicle-treatment centre in Cádiz and cryomilled it. The main text reports XRF feed aluminium and platinum; complete composition is assigned to unavailable Table S1. Acid preparation used 180 mL 0K medium, 20 mL exponential-phase inoculum and 2 g biogenic sulfur, at 30 degrees C and 150 rpm. The sulfur came from a separate anoxic biogas-desulfurization process. Day-4 exponential and day-14 stationary cultures provided initially pH 1 and pH 0.7 lixiviants; sulfur-removal filtration retained cells. Day-20 culture was centrifuged at 1610 x g for 10 minutes to make the source-labelled bacteria-free pH 0.55 lixiviant; complete cell removal was not independently demonstrated. Commercial sulfuric acid at pH 0.55 was the chemical comparator. Each lixiviant treated 5, 30 or 60% w/v catalyst for 14 days at 30 degrees C and 150 rpm. These are unlike culture ages and starting chemistries, not matched-pH
+    microbial-versus-sterile pairs. Samples were centrifuged at 1610 x g for 10 minutes, with recovered liquid analyzed by an aluminium photometric assay and endpoint ICP-AES. The paper does not clearly report independent replicate counts for the catalyst-leaching arms; triplication stated for the separate sulfur/pH experiment and local EDX measurements must not be transferred to these arms.
   microbial: true
-  description: Acidithiobacillus thiooxidans DSM 11478 cultures produced acidic media subsequently applied
-    to pulverized spent automotive catalyst. Culture-containing and bacteria-depleted media mobilized
-    aluminium, with a condition-dependent comparison against commercial sulfuric acid. The experiment
-    demonstrates a laboratory pretreatment observation, not phase-specific alumina removal, validated
-    platinum-group enrichment, isolated metal recovery or industrial deployment.
-  context: Compagnone et al. obtained a real spent three-way catalyst from the El Caimán authorized vehicle-treatment
-    centre in Cádiz and cryomilled it. The main text reports XRF feed aluminium and platinum; complete
-    composition is assigned to unavailable Table S1. Acid preparation used 180 mL 0K medium, 20 mL exponential-phase
-    inoculum and 2 g biogenic sulfur, at 30 degrees C and 150 rpm. The sulfur came from a separate anoxic
-    biogas-desulfurization process. Day-4 exponential and day-14 stationary cultures provided initially
-    pH 1 and pH 0.7 lixiviants; sulfur-removal filtration retained cells. Day-20 culture was centrifuged
-    at 1610 x g for 10 minutes to make the source-labelled bacteria-free pH 0.55 lixiviant; complete cell
-    removal was not independently demonstrated. Commercial sulfuric acid at pH 0.55 was the chemical comparator.
-    Each lixiviant treated 5, 30 or 60% w/v catalyst for 14 days at 30 degrees C and 150 rpm. These are
-    unlike culture ages and starting chemistries, not matched-pH microbial-versus-sterile pairs. Samples
-    were centrifuged at 1610 x g for 10 minutes, with recovered liquid analyzed by an aluminium photometric
-    assay and endpoint ICP-AES. The paper does not clearly report independent replicate counts for the
-    catalyst-leaching arms; triplication stated for the separate sulfur/pH experiment and local EDX measurements
-    must not be transferred to these arms.
   organisms:
   - id: NCBITaxon:930
     label: Acidithiobacillus thiooxidans
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A543Q349
+    entry_name: A0A543Q349_ACITH
+    protein_name: Pyridine nucleotide-disulfide oxidoreductase
+    gene_symbol: sqr
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (sqr) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans DSM 11478 / Tth04 (NCBITaxon:930) in Compagnone et al. (2023).
+    evidence:
+    - source_ref: compagnone_2023
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for biogenic-sulfur oxidation and acidic pretreatment aluminium leaching from spent automotive three-way catalyst by Acidithiobacillus thiooxidans DSM 11478 in Compagnone et al. (2023); individual sqr/tth genes were not mutated or directly assayed.
+  - uniprot_accession: UniProtKB:A0A5P9XPU3
+    entry_name: A0A5P9XPU3_ACITH
+    protein_name: Tetrathionate hydrolase
+    gene_symbol: tth
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase (tth) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans DSM 11478 / Tth04 (NCBITaxon:930) in Compagnone et al. (2023).
+    evidence:
+    - source_ref: compagnone_2023
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for biogenic-sulfur oxidation and acidic pretreatment aluminium leaching from spent automotive three-way catalyst by Acidithiobacillus thiooxidans DSM 11478 in Compagnone et al. (2023); individual sqr/tth genes were not mutated or directly assayed.
   evidence:
   - source_ref: compagnone_2023
     supports: support
-    explanation: Methods 2.1-2.5 and Figure 4 identify the feed and leaching comparison. At 5% w/v catalyst,
-      the day-14 stationary-culture acid gave higher reported liquid aluminium release than the bacteria-depleted,
-      exponential-culture and commercial-acid arms. Figure 4 gives 54.5%, 23.4%, 21.7% and 24.7%, respectively,
-      on the source's feed-normalized aluminium-leaching basis. These are reported leaching percentages,
-      not isolated-product recovery. The lower-loading advantage does not establish a universal advantage
-      of living cells or a specific gene or enzyme mechanism.
+    explanation: Methods 2.1-2.5 and Figure 4 identify the feed and leaching comparison. At 5% w/v catalyst, the day-14 stationary-culture acid gave higher reported liquid aluminium release than the bacteria-depleted, exponential-culture and commercial-acid arms. Figure 4 gives 54.5%, 23.4%, 21.7% and 24.7%, respectively, on the source's feed-normalized aluminium-leaching basis. These are reported leaching percentages, not isolated-product recovery. The lower-loading advantage does not establish a universal advantage of living cells or a specific gene or enzyme mechanism.
   - source_ref: compagnone_2023
     supports: partial
-    explanation: Figure 4 is narrower than Results 3.4 prose. At 30% w/v, the plotted bacteria-free value
-      of 5.9% exceeds the stationary-culture value of 5.1%; at 60% w/v, the plotted stationary-culture
-      2.5% slightly exceeds bacteria-free 2.4%. The text instead calls bacteria-free acid highest at both
-      high loadings and quotes 5.9% collectively. No significance assessment establishes that the 60%
-      difference is meaningful. The economic discussion separately uses 57.1% aluminium extraction where
-      the abstract, main result and Figure 4 use 54.5%. These discrepancies remain unresolved; neither
-      high-loading superiority nor a reconciled optimum is asserted.
+    explanation: Figure 4 is narrower than Results 3.4 prose. At 30% w/v, the plotted bacteria-free value of 5.9% exceeds the stationary-culture value of 5.1%; at 60% w/v, the plotted stationary-culture 2.5% slightly exceeds bacteria-free 2.4%. The text instead calls bacteria-free acid highest at both high loadings and quotes 5.9% collectively. No significance assessment establishes that the 60% difference is meaningful. The economic discussion separately uses 57.1% aluminium extraction where the abstract, main result and Figure 4 use 54.5%. These discrepancies remain unresolved; neither high-loading superiority nor a reconciled optimum is asserted.
   - source_ref: compagnone_2023
     supports: partial
-    explanation: Total-element aluminium in the recovered liquid cannot assign dissolution uniquely to
-      the alumina coating instead of the aluminium-bearing ceramic support. Initial sulfuric-acid concentration
-      was estimated rather than measured, and the differing ages, residual chemistry and pH trajectories
-      limit attribution to live cells. The main text's cell-count trends and microscopy suggest activity
-      and association, but they do not demonstrate sulfur-residue consumption, an EPS-specific causal
-      pathway or necessity of direct cell contact.
+    explanation: Total-element aluminium in the recovered liquid cannot assign dissolution uniquely to the alumina coating instead of the aluminium-bearing ceramic support. Initial sulfuric-acid concentration was estimated rather than measured, and the differing ages, residual chemistry and pH trajectories limit attribution to live cells. The main text's cell-count trends and microscopy suggest activity and association, but they do not demonstrate sulfur-residue consumption, an EPS-specific causal pathway or necessity of direct cell contact.
   - source_ref: compagnone_2023
     supports: partial
-    explanation: Results 3.4 calculates platinum-group enrichment from assumed retained platinum and aluminium
-      mass loss; it does not measure a recovered PGM product. That section reports non-detection of Pt
-      in post-treatment liquid and solid analyses, without a detection limit, while Results 3.5 reports
-      Pt in selected EDX-analyzed biological globules. Figures 5-6 show selected surfaces and aggregates,
-      not a bulk mass balance or proof of intracellular uptake. Local EDX composition is not a percentage
-      of feed platinum recovered. Source percentage bases also switch between w/w and w/v in discussing
-      feed composition. Unknown analytical detection limits, unresolved heterogeneous fractions and unavailable
-      supplementary composition prevent stronger recovery or purity claims.
+    explanation: Results 3.4 calculates platinum-group enrichment from assumed retained platinum and aluminium mass loss; it does not measure a recovered PGM product. That section reports non-detection of Pt in post-treatment liquid and solid analyses, without a detection limit, while Results 3.5 reports Pt in selected EDX-analyzed biological globules. Figures 5-6 show selected surfaces and aggregates, not a bulk mass balance or proof of intracellular uptake. Local EDX composition is not a percentage of feed platinum recovered. Source percentage bases also switch between w/w and w/v in discussing feed composition. Unknown analytical detection limits, unresolved heterogeneous fractions and unavailable supplementary composition prevent stronger recovery or purity claims.
+causal_graphs:
+- id: dsm11478_biogenic_acid_pretreatment_graph
+  name: Acidithiobacillus thiooxidans DSM 11478 biogenic-acid pretreatment and aluminium leaching from spent automotive three-way catalyst
+  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to oxidation of biogenic sulfur in 0K medium and subsequent solid-loading-dependent mobilization of aluminium from cryomilled spent automotive three-way catalyst.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: dsm11478_biogenic_acid_pretreatment
+  nodes:
+  - id: sqr_reductase
+    label: Sqr sulfide-quinone reductase (sqr)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: sqr
+    description: Membrane-bound sulfide-quinone reductase oxidizing reduced sulfur species to zero-valent sulfur and polythionate intermediates.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A543Q349
+      entry_name: A0A543Q349_ACITH
+      protein_name: Pyridine nucleotide-disulfide oxidoreductase
+      gene_symbol: sqr
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (sqr) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans DSM 11478 / Tth04 (NCBITaxon:930) in Compagnone et al. (2023).
+      evidence:
+      - source_ref: compagnone_2023
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for biogenic-sulfur oxidation and acidic pretreatment aluminium leaching from spent automotive three-way catalyst by Acidithiobacillus thiooxidans DSM 11478 in Compagnone et al. (2023); individual sqr/tth genes were not mutated or directly assayed.
+  - id: tth_hydrolase
+    label: Tth tetrathionate hydrolase (tth)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: tth
+    description: Periplasmic tetrathionate hydrolase disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A5P9XPU3
+      entry_name: A0A5P9XPU3_ACITH
+      protein_name: Tetrathionate hydrolase
+      gene_symbol: tth
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase (tth) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans DSM 11478 / Tth04 (NCBITaxon:930) in Compagnone et al. (2023).
+      evidence:
+      - source_ref: compagnone_2023
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for biogenic-sulfur oxidation and acidic pretreatment aluminium leaching from spent automotive three-way catalyst by Acidithiobacillus thiooxidans DSM 11478 in Compagnone et al. (2023); individual sqr/tth genes were not mutated or directly assayed.
+  - id: dsm11478_biogenic_sulfur_acid_lixiviants
+    label: A. thiooxidans DSM 11478 biogenic-sulfur 0K lixiviants (day-4 exponential pH 1.0, day-14 stationary pH 0.7, and day-20 centrifuged pH 0.55)
+    node_type: CHEMICAL_ENTITY
+    description: 'Acidic lixiviants produced by Acidithiobacillus thiooxidans DSM 11478 grown on 2 g biogenic sulfur in 180 mL 0K medium + 20 mL inoculum at 30 C and 150 rpm: day-4 exponential culture (pH 1.0), day-14 stationary culture (pH 0.7), and day-20 centrifuged supernatant (1610 g, 10 min, pH 0.55).'
+    protein_grounding_status: NOT_APPLICABLE
+  - id: cryomilled_spent_three_way_catalyst
+    label: Cryomilled El Caiman spent automotive three-way catalyst (5%, 30%, and 60% w/v; ceramic support and alumina/PGM washcoat)
+    node_type: MATERIAL_OR_PHASE
+    description: Cryomilled spent automotive three-way catalytic converter material from the El Caiman authorized vehicle-treatment centre (Cadiz, Spain), treated at 5%, 30%, and 60% (w/v) for 14 days at 30 C and 150 rpm.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: mobilized_catalyst_aluminium
+    label: Dissolved Al in centrifuged leachate (54.5% with day-14 stationary culture at 5% w/v vs 24.7% with pH-0.55 commercial H2SO4; <=5.9% at 30-60% w/v)
+    node_type: CHEMICAL_ENTITY
+    description: 'Dissolved aluminium measured in centrifuged leachate after 14 days (at 5% w/v: 54.5% in day-14 stationary culture vs 23.4% in day-20 centrifuged lixiviant, 21.7% in day-4 exponential culture, and 24.7% in pH-0.55 commercial H2SO4; at 30-60% w/v: 2.4-5.9% across arms).'
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: sqr_reductase
+    target: tth_hydrolase
+    predicate: supplies_substrate_for
+    relationship: oxidation of reduced sulfur intermediates to polythionates
+    description: Sulfide/sulfur oxidation generates reduced sulfur and polythionate intermediates metabolized by periplasmic tetrathionate hydrolase.
+    evidence:
+    - source_ref: compagnone_2023
+      supports: partial
+      explanation: Reduced-sulfur oxidation in Acidithiobacillus thiooxidans couples Sqr and polythionate hydrolysis during biogenic-sulfur oxidation and acidic pretreatment aluminium leaching from spent automotive three-way catalyst by Acidithiobacillus thiooxidans DSM 11478 in Compagnone et al. (2023); individual enzymes were not directly assayed.
+  - source: tth_hydrolase
+    target: dsm11478_biogenic_sulfur_acid_lixiviants
+    predicate: produces
+    relationship: polythionate disproportionation and sulfuric-acid proton generation
+    description: Periplasmic tetrathionate hydrolysis generates sulfate and protons, acidifying the sulfur-oxidizing culture medium.
+    evidence:
+    - source_ref: compagnone_2023
+      supports: partial
+      explanation: Chemolithoautotrophic sulfur oxidation by Acidithiobacillus thiooxidans generates the acidic sulfate/polythionate medium during biogenic-sulfur oxidation and acidic pretreatment aluminium leaching from spent automotive three-way catalyst by Acidithiobacillus thiooxidans DSM 11478 in Compagnone et al. (2023); individual enzyme activities were not isolated.
+  - source: dsm11478_biogenic_sulfur_acid_lixiviants
+    target: cryomilled_spent_three_way_catalyst
+    predicate: solubilizes
+    relationship: 14-day acidic culture and supernatant pretreatment of cryomilled spent three-way catalyst
+    description: DSM 11478 biogenic-acid lixiviants (initial pH 1.0, 0.7, and 0.55) contact cryomilled catalyst at 5%, 30%, and 60% (w/v) for 14 days at 30 C and 150 rpm.
+    evidence:
+    - source_ref: compagnone_2023
+      supports: support
+      explanation: Methods 2.1-2.5 and Figure 4 of Compagnone et al. (2023) document preparation of day-4 (pH 1.0), day-14 (pH 0.7), and day-20 centrifuged (pH 0.55) DSM 11478 lixiviants on biogenic sulfur and 14-day contact with 5-60% (w/v) cryomilled catalyst.
+  - source: cryomilled_spent_three_way_catalyst
+    target: mobilized_catalyst_aluminium
+    predicate: produces
+    relationship: loading-dependent aluminium solubilization into recovered liquid
+    description: At 5% (w/v) loading, 14-day leaching mobilizes 54.5% of feed Al with day-14 stationary culture versus 23.4% with day-20 centrifuged lixiviant, 21.7% with day-4 culture, and 24.7% with pH-0.55 commercial H2SO4, while high loadings (30-60% w/v) yield only 2.4-5.9% Al.
+    evidence:
+    - source_ref: compagnone_2023
+      supports: support
+      explanation: Results 3.4 and Figure 4 of Compagnone et al. (2023) report 54.5% feed-normalized liquid aluminium release at 5% (w/v) with the day-14 stationary culture versus 23.4%, 21.7%, and 24.7% in the bacteria-free, exponential, and commercial H2SO4 arms, without isolating washcoat vs cordierite-support dissolution or a recovered PGM product.
 curation_history:
 - timestamp: '2026-10-11T13:46:54.274021+00:00'
   curator: Codex (GPT-6; Codex; round23_identity_gaps)
   action: CREATE
-  summary: Created a distinct spent automotive three-way-catalyst resource from rechecked primary evidence
-    and authority-verified organism identity; retained acid-comparator, figure/text, phase-assignment
-    and platinum-recovery limits.
+  summary: Created a distinct spent automotive three-way-catalyst resource from rechecked primary evidence and authority-verified organism identity; retained acid-comparator, figure/text, phase-assignment and platinum-recovery limits.
+- timestamp: '2026-10-30T06:04:43Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: edit
+  summary: Added representative Acidithiobacillus thiooxidans ATCC 19377 Sqr (UniProtKB:A0A543Q349) and Tth (UniProtKB:A0A5P9XPU3) protein examples and causal graph (dsm11478_biogenic_acid_pretreatment_graph) to spent-automotive-three-way-catalyst.yaml.
 history_refs:
 - history/records/spent-automotive-three-way-catalyst/2026-10-11T134655Z-codex-971fce.yaml
+- history/records/spent-automotive-three-way-catalyst/2026-10-30T060443Z-claude-claude-opus-4-6-antigravity-f23582.yaml
