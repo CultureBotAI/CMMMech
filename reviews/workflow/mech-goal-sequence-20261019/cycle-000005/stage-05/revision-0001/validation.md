@@ -3,8 +3,8 @@
 - **Repository**: `CultureBotAI/CMMMech` (`cmmmech`)
 - **Post-Remediation Structured Review ID**: `20261030T222000Z-cycle5-stage5-remediation-verification`
 - **Post-Remediation Structured Review Bundle**:
-  - `reviews/structured/20261030T222000Z-cycle5-stage5-remediation-verification/review.yaml` (`sha256: 9eb6918607c53f92c7ea3a884a5473c82537278324dd08df2a078ce43c71e72e`)
-  - `reviews/structured/20261030T222000Z-cycle5-stage5-remediation-verification/review.md` (`sha256: 4b9c889ead89c8a336f63f04ee167ee98e2e152eda168dffc021dd5f387cdc96`)
+  - `reviews/structured/20261030T222000Z-cycle5-stage5-remediation-verification/review.yaml` (`sha256: bb3f9e66f022834ff00ec1eaf6bd0eeec163ce13d5d5f2da69a529c523ae09a6`)
+  - `reviews/structured/20261030T222000Z-cycle5-stage5-remediation-verification/review.md` (`sha256: 273bc6928b70aa1dd49dfa7d48a93f276b0a55aebce2f68997bb63a62d886105`)
 - **Immutable Stage 4 Review Bundles**: Preserved byte-for-byte (`scripts/record_review.py check --require-reviews --base main` verified).
 
 ## 1. Record & History Sidecar Inventory (15 Remediated Records)
@@ -23,7 +23,7 @@
 12. `data/records/tetrahedrite-concentrate.yaml` (`causal_graphs[0]` `tth_hydrolase` node label/description and `edges[0]` explanation aligned with both `A. ferrooxidans` `tth`/`AFE_0029` and `A. ferrivorans` `tetH`/`UniProtKB:A0A060URH6` per Kupka et al. 2025 (`#878` / `GRP-C5S5-002`)) — `history/records/tetrahedrite-concentrate/2026-10-30T222651Z-claude-b6026b.yaml`
 13. `data/records/uranium.yaml` (top-level YAML key order normalized so sources precedes criticality (`#877` / `GRP-C5S5-001`)) — `history/records/uranium/2026-10-30T222651Z-claude-cd5fe1.yaml`
 14. `data/records/vanadium.yaml` (top-level YAML key order normalized so sources precedes criticality (`#877` / `GRP-C5S5-001`)) — `history/records/vanadium/2026-10-30T222651Z-claude-598c16.yaml`
-15. `data/records/waste-liquid-crystal-display-panels.yaml` (`causal_graphs[0]` `tth_hydrolase` node label/description aligned with both `A. thiooxidans` ATCC 19377 `tth` paralogs `GCD22_14205` and `GCD22_02315` alongside `A. ferrooxidans` `tth`/`AFE_0029` per Pourhossein & Mousavi 2023 (`#879` / `GRP-C5S5-003`)) — `history/records/waste-liquid-crystal-display-panels/2026-10-30T222652Z-claude-9536c6.yaml`
+15. `data/records/waste-liquid-crystal-display-panels.yaml` (`causal_graphs[0]` `tth_hydrolase` node label/description aligned with both `A. thiooxidans` ATCC 19377 `tth` paralogs `GCD22_14205` and `GCD22_02315` alongside `A. ferrooxidans` `tth`/`AFE_0029` per Willner et al. 2018 (`#879` / `GRP-C5S5-003`)) — `history/records/waste-liquid-crystal-display-panels/2026-10-30T222652Z-claude-9536c6.yaml`
 
 ## 2. Validation Gate Results
 

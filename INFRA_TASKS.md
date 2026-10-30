@@ -94,6 +94,10 @@ tasks:
     status: resolved
     issue_url: https://github.com/CultureBotAI/CMMMech/issues/822
     disposition: "Resolved in Cycle 4 Stage 6 (issue #822 and companion issue #866, IGRP-C4S6-003) by adding _write_exclusive() fallback when NamedTemporaryFile(dir=path.parent) or os.link() raises PermissionError in src/cmmmech/history.py cmd_new() and adding in-place path.write_text() fallback when NamedTemporaryFile(dir=path.parent) or os.replace() raises PermissionError in scripts/curate_causal_graphs.py write_record_atomic(), verified by unit tests in tests/test_history.py and tests/test_curate_causal_graphs.py."
+  - task_id: cmmmech-infra-0013
+    summary: Enforce canonical sources-before-criticality top-level section ordering in src/cmmmech/validation.py _section_order_errors() and tests/test_validation.py
+    status: note
+    issue_url: https://github.com/CultureBotAI/CMMMech/issues/839
 ```
 <!-- mech-infra-tasks:end -->
 

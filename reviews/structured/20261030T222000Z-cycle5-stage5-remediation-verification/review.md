@@ -11,7 +11,7 @@
 
 ## Summary
 
-Post-remediation scientific and structural verification of all 15 CMMMech records remediated in Cycle 5 Stage 5 (run mech-goal-sequence-20261019, cycle 5, stage 5) across GitHub issues #877 (GRP-C5S5-001: cmmmech-cycle5-stage4-finding-0001, 13 records normalized to serialize top-level sources before criticality per CANONICAL_RECORD_KEYS), #878 (GRP-C5S5-002: cmmmech-cycle5-stage4-finding-0002, tetrahedrite-concentrate.yaml causal_graphs[0] tth_hydrolase node label/description and outgoing edge[0] evidence explanation updated to cover both Acidithiobacillus ferrooxidans tth/AFE_0029 and Acidithiobacillus ferrivorans tetH/UniProtKB:A0A060URH6 per Kupka et al. 2025), and #879 (GRP-C5S5-003: cmmmech-cycle5-stage4-finding-0003, waste-liquid-crystal-display-panels.yaml causal_graphs[0] tth_hydrolase node label and description updated to include both Acidithiobacillus thiooxidans ATCC 19377 tth paralogs GCD22_14205 and GCD22_02315 alongside A. ferrooxidans tth/AFE_0029 per Pourhossein &amp; Mousavi 2023). All 3 carried-forward Cycle 5 Stage 4 findings are verified as resolved with 15 append-only EDIT history sidecars.
+Post-remediation scientific and structural verification of all 15 CMMMech records remediated in Cycle 5 Stage 5 (run mech-goal-sequence-20261019, cycle 5, stage 5) across GitHub issues #877 (GRP-C5S5-001: cmmmech-cycle5-stage4-finding-0001, 13 records normalized to serialize top-level sources before criticality per CANONICAL_RECORD_KEYS), #878 (GRP-C5S5-002: cmmmech-cycle5-stage4-finding-0002, tetrahedrite-concentrate.yaml causal_graphs[0] tth_hydrolase node label/description and outgoing edge[0] evidence explanation updated to cover both Acidithiobacillus ferrooxidans tth/AFE_0029 and Acidithiobacillus ferrivorans tetH/UniProtKB:A0A060URH6 per Kupka et al. 2025), and #879 (GRP-C5S5-003: cmmmech-cycle5-stage4-finding-0003, waste-liquid-crystal-display-panels.yaml causal_graphs[0] tth_hydrolase node label and description updated to include both Acidithiobacillus thiooxidans ATCC 19377 tth paralogs GCD22_14205 and GCD22_02315 alongside A. ferrooxidans tth/AFE_0029 per Willner et al. 2018). All 3 carried-forward Cycle 5 Stage 4 findings are verified as resolved with 15 append-only EDIT history sidecars.
 
 ## Scope And Provenance
 
@@ -82,15 +82,15 @@ Disposition: Resolved under GitHub issue #877 (group GRP-C5S5-001) by normalizin
 
 ### cmmmech-cycle5-stage4-finding-0002: tetrahedrite-concentrate.yaml causal_graphs[0] tth_hydrolase node and edge labels now cover both A. ferrooxidans and A. ferrivorans
 
-minor / resolved / confirmed; issue key: cmmmech.tetrahedrite-concentrate.causal-node-tth-hydrolase-species-label-scope.
+minor / resolved / confirmed; issue key: cmmmech.tetrahedrite-concentrate.tth-hydrolase-label-and-edge-explanation.
 
-Updated causal_graphs[0] (ferrooxidans_tetrahedrite_bioleaching_graph) in data/records/tetrahedrite-concentrate.yaml so nodes[1].label (tth_hydrolase) reads 'Tth / TetH tetrathionate hydrolase (tth / AFE_0029 / tetH)', nodes[1].description names both A. ferrooxidans tth/AFE_0029 and A. ferrivorans CF27 tetH (UniProtKB:A0A060URH6), and edges[0].evidence[0].explanation covers both separate culture arms per Kupka et al. (2025) with an append-only EDIT history sidecar.
+Updated causal_graphs[0] (ferrooxidans_tetrahedrite_bioleaching_graph) in data/records/tetrahedrite-concentrate.yaml so nodes[1].label (tth_hydrolase) reads 'Tth / TetH tetrathionate hydrolase (tth / AFE_0029 / tetH)', nodes[1].description names both A. ferrooxidans tth/AFE_0029 and A. ferrivorans CF27 tetH (UniProtKB:A0A060URH6), and edges[0].evidence[0].explanation covers both separate culture arms (including sqr2) per Kupka et al. (2025) with an append-only EDIT history sidecar.
 
 Disposition: Resolved under GitHub issue #878 (group GRP-C5S5-002) by updating nodes[1].label, nodes[1].description, and edges[0].evidence[0].explanation in data/records/tetrahedrite-concentrate.yaml with an append-only EDIT history sidecar.
 
 ### cmmmech-cycle5-stage4-finding-0003: waste-liquid-crystal-display-panels.yaml causal_graphs[0] tth_hydrolase node label and description now name both A. thiooxidans tth paralogs
 
-minor / resolved / confirmed; issue key: cmmmech.waste-liquid-crystal-display-panels.causal-node-tth-hydrolase-paralog-label-scope.
+minor / resolved / confirmed; issue key: cmmmech.waste-liquid-crystal-display-panels.tth-hydrolase-dual-species-label.
 
 Updated causal_graphs[0] (ferrooxidans_lcd_indium_bioleaching_graph) in data/records/waste-liquid-crystal-display-panels.yaml so nodes[1].label (tth_hydrolase) reads 'Tth tetrathionate hydrolase (tth AFE_0029 / tth GCD22_14205 / tth GCD22_02315)' and nodes[1].description names both Acidithiobacillus thiooxidans ATCC 19377 tth paralogs (GCD22_14205 and GCD22_02315) alongside A. ferrooxidans tth (AFE_0029) with an append-only EDIT history sidecar.
 
@@ -106,8 +106,8 @@ Disposition: Resolved under GitHub issue #879 (group GRP-C5S5-003) by updating n
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| ev-kupka2025-doi | https://doi.org/10.3390/min15050499; Kupka et al. (2025) Minerals 15(5):499, Sections 2-3 (separate A. ferrooxidans DSM 14882 and A. ferrivorans SS3 DSM 17398 bioleaching arms) | supports | Kupka et al. (2025) evaluate alkaline-pretreated and untreated tetrahedrite concentrate bioleaching in separate Acidithiobacillus ferrooxidans DSM 14882 and Acidithiobacillus ferrivorans SS3 (DSM 17398) culture arms. |
-| ev-pourhossein2023-doi | https://doi.org/10.1016/j.resconrec.2022.106732; Pourhossein &amp; Mousavi (2023) Resources, Conservation and Recycling 189:106732 (adapted A. ferrooxidans and A. thiooxidans LCD bioleaching) | supports | Pourhossein &amp; Mousavi (2023) characterize biogenic sulfuric acid generation and indium solubilization from waste LCD panels by Acidithiobacillus ferrooxidans and Acidithiobacillus thiooxidans. |
+| ev-kupka2025-doi | https://doi.org/10.1007/s40831-025-01089-0; Kupka et al. (2025) Journal of Sustainable Metallurgy 11:3685-3699 (separate A. ferrooxidans DSM 14882 and A. ferrivorans SS3 DSM 17398 bioleaching arms) | supports | Kupka et al. (2025) evaluate alkaline-pretreated and untreated tetrahedrite concentrate bioleaching in separate Acidithiobacillus ferrooxidans DSM 14882 and Acidithiobacillus ferrivorans SS3 (DSM 17398) culture arms. |
+| ev-willner2018-doi | https://doi.org/10.5277/ppmp1878; Willner, Fornalczyk, Gajda and Saternus (2018) Physicochemical Problems of Mineral Processing 54(3):639-645 (mixed A. ferrooxidans and A. thiooxidans LCD indium bioleaching) | supports | Willner et al. (2018) characterize biogenic sulfuric acid generation and indium solubilization from waste LCD panels by Acidithiobacillus ferrooxidans and Acidithiobacillus thiooxidans. |
 | ev-cycle5-stage4-findings | reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-04/revision-0001/review_findings.yaml; findings[0..2] | supports | Frozen Cycle 5 Stage 4 review findings ledger defining cmmmech-cycle5-stage4-finding-0001, cmmmech-cycle5-stage4-finding-0002, and cmmmech-cycle5-stage4-finding-0003 across the 15 target records. |
 | ev-schema | src/cmmmech/schema/cmmmech.yaml; classes.MaterialRecord, classes.CausalGraph, classes.CausalNode, classes.CausalEdge | supports | Canonical LinkML schema defining MaterialRecord top-level slot order and CausalGraph structure. |
 | ev-curate-script | scripts/curate_causal_graphs.py; CANONICAL_RECORD_KEYS | supports | Canonical top-level YAML key ordering tuple CANONICAL_RECORD_KEYS placing sources before criticality, mechanisms, causal_graphs, curation_history, and history_refs. |
@@ -144,7 +144,7 @@ summary: 'Post-remediation scientific and structural verification of all 15 CMMM
   and #879 (GRP-C5S5-003: cmmmech-cycle5-stage4-finding-0003, waste-liquid-crystal-display-panels.yaml
   causal_graphs[0] tth_hydrolase node label and description updated to include both
   Acidithiobacillus thiooxidans ATCC 19377 tth paralogs GCD22_14205 and GCD22_02315
-  alongside A. ferrooxidans tth/AFE_0029 per Pourhossein & Mousavi 2023). All 3 carried-forward
+  alongside A. ferrooxidans tth/AFE_0029 per Willner et al. 2018). All 3 carried-forward
   Cycle 5 Stage 4 findings are verified as resolved with 15 append-only EDIT history
   sidecars.'
 reviewer:
@@ -550,29 +550,30 @@ checks:
   target_ids:
   - cmmmech:waste-liquid-crystal-display-panels
   evidence_ids:
-  - ev-pourhossein2023-doi
+  - ev-willner2018-doi
   - ev-cycle5-stage4-findings
   - ev-schema
 evidence:
 - evidence_id: ev-kupka2025-doi
   kind: primary_source
-  reference: https://doi.org/10.3390/min15050499
-  locator: Kupka et al. (2025) Minerals 15(5):499, Sections 2-3 (separate A. ferrooxidans
-    DSM 14882 and A. ferrivorans SS3 DSM 17398 bioleaching arms)
+  reference: https://doi.org/10.1007/s40831-025-01089-0
+  locator: Kupka et al. (2025) Journal of Sustainable Metallurgy 11:3685-3699 (separate
+    A. ferrooxidans DSM 14882 and A. ferrivorans SS3 DSM 17398 bioleaching arms)
   accessed_at: '2026-10-30T22:20:00Z'
   support: supports
   summary: Kupka et al. (2025) evaluate alkaline-pretreated and untreated tetrahedrite
     concentrate bioleaching in separate Acidithiobacillus ferrooxidans DSM 14882 and
     Acidithiobacillus ferrivorans SS3 (DSM 17398) culture arms.
-- evidence_id: ev-pourhossein2023-doi
+- evidence_id: ev-willner2018-doi
   kind: primary_source
-  reference: https://doi.org/10.1016/j.resconrec.2022.106732
-  locator: Pourhossein & Mousavi (2023) Resources, Conservation and Recycling 189:106732
-    (adapted A. ferrooxidans and A. thiooxidans LCD bioleaching)
+  reference: https://doi.org/10.5277/ppmp1878
+  locator: Willner, Fornalczyk, Gajda and Saternus (2018) Physicochemical Problems
+    of Mineral Processing 54(3):639-645 (mixed A. ferrooxidans and A. thiooxidans
+    LCD indium bioleaching)
   accessed_at: '2026-10-30T22:20:00Z'
   support: supports
-  summary: Pourhossein & Mousavi (2023) characterize biogenic sulfuric acid generation
-    and indium solubilization from waste LCD panels by Acidithiobacillus ferrooxidans
+  summary: Willner et al. (2018) characterize biogenic sulfuric acid generation and
+    indium solubilization from waste LCD panels by Acidithiobacillus ferrooxidans
     and Acidithiobacillus thiooxidans.
 - evidence_id: ev-cycle5-stage4-findings
   kind: record_content
@@ -673,7 +674,7 @@ assessments:
   target_ids:
   - cmmmech:waste-liquid-crystal-display-panels
   evidence_ids:
-  - ev-pourhossein2023-doi
+  - ev-willner2018-doi
   - ev-cycle5-stage4-findings
   - ev-schema
   metrics:
@@ -773,7 +774,7 @@ findings:
   external_issues:
   - https://github.com/CultureBotAI/CMMMech/issues/877
 - finding_id: cmmmech-cycle5-stage4-finding-0002
-  issue_key: cmmmech.tetrahedrite-concentrate.causal-node-tth-hydrolase-species-label-scope
+  issue_key: cmmmech.tetrahedrite-concentrate.tth-hydrolase-label-and-edge-explanation
   category: graph
   severity: minor
   status: resolved
@@ -784,8 +785,8 @@ findings:
     in data/records/tetrahedrite-concentrate.yaml so nodes[1].label (tth_hydrolase)
     reads 'Tth / TetH tetrathionate hydrolase (tth / AFE_0029 / tetH)', nodes[1].description
     names both A. ferrooxidans tth/AFE_0029 and A. ferrivorans CF27 tetH (UniProtKB:A0A060URH6),
-    and edges[0].evidence[0].explanation covers both separate culture arms per Kupka
-    et al. (2025) with an append-only EDIT history sidecar.
+    and edges[0].evidence[0].explanation covers both separate culture arms (including
+    sqr2) per Kupka et al. (2025) with an append-only EDIT history sidecar.
   target_ids:
   - cmmmech:tetrahedrite-concentrate
   field_paths:
@@ -818,7 +819,7 @@ findings:
   external_issues:
   - https://github.com/CultureBotAI/CMMMech/issues/878
 - finding_id: cmmmech-cycle5-stage4-finding-0003
-  issue_key: cmmmech.waste-liquid-crystal-display-panels.causal-node-tth-hydrolase-paralog-label-scope
+  issue_key: cmmmech.waste-liquid-crystal-display-panels.tth-hydrolase-dual-species-label
   category: graph
   severity: minor
   status: resolved
@@ -839,7 +840,7 @@ findings:
   - curation_history
   - history_refs
   evidence_ids:
-  - ev-pourhossein2023-doi
+  - ev-willner2018-doi
   - ev-cycle5-stage4-findings
   - ev-schema
   owner_paths:
@@ -882,7 +883,7 @@ boundary_decisions:
   - cmmmech:waste-liquid-crystal-display-panels
   evidence_ids:
   - ev-kupka2025-doi
-  - ev-pourhossein2023-doi
+  - ev-willner2018-doi
   - ev-cycle5-stage4-findings
   - ev-schema
   - ev-curate-script
