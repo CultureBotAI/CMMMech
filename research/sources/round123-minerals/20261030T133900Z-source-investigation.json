@@ -1,0 +1,401 @@
+{
+  "investigation_id": "round123-minerals-20261030T133900Z",
+  "created_at": "2026-10-30T13:39:00Z",
+  "updated_at": "2026-10-30T13:39:00Z",
+  "prepared_by": "antigravity",
+  "cycle": 5,
+  "stage": 1,
+  "stage_id": "add_records",
+  "round": 123,
+  "trusted_base_commit": "3684ac763165c2343e93af37c9eef7b21608edd5",
+  "logical_goal": {
+    "run_id": "mech-goal-sequence-20261019",
+    "cycle": 5,
+    "stage": 1,
+    "conversation_id": "5d564102-201c-473a-960a-1d0caa99b350",
+    "start_step_index": 2956,
+    "started_at": "2026-10-30T12:41:17.226025+00:00",
+    "goal_complete": false
+  },
+  "status": "bounded_round123_ejm_gold_oa_cohort_curated_and_frontier_verified",
+  "scope": "Cycle 5 Stage 1 (add_records) Round 123 bounded source investigation and primary-source curation of five IMA-accepted critical-element mineral species (aluminosugilite, andreybulakhite, grimmite, liguowuite, yttrotungstite-nd) from Copernicus Gold Open Access European Journal of Mineralogy (EJM) type-description papers and J-STAGE Gold Open Access Journal of Mineralogical and Petrological Sciences (JMPS), indexed into 189 bounded per-page text passages (<= 1,800 bytes each; 274,104 bytes total) via scripts/index_bounded_pdf_passages.py and 8 single-page PNG table renders, followed by repeated verification of all local PDF directories (/private/tmp/cmm-round117-research through /private/tmp/cmm-round123-research), cmm-bounded-source-text/, the September 2026 IMA-CNMNC Master List of Minerals, and all repository files across data/records, research, reviews, and history.",
+  "search_limits": [
+    {
+      "resource": "https://www.rruff.net/doclib/ and https://rruff.net/rruff_1.0/ (American Mineralogist / Canadian Mineralogist PDF archive)",
+      "status": "unavailable_http_502_and_timeout",
+      "details": "Direct probes during Round 123 returned HTTP 502 Bad Gateway or TCP/TLS connection timeouts on port 443, preventing retrieval of historical RRUFF-hosted American Mineralogist and Canadian Mineralogist PDFs. Discovery therefore pivoted to Copernicus Gold Open Access European Journal of Mineralogy (ejm.copernicus.org) and J-STAGE Gold Open Access Journal of Mineralogical and Petrological Sciences (jstage.jst.go.jp), which resolved with HTTP 200 and full vector PDFs."
+    }
+  ],
+  "bounded_source_indexing": {
+    "indexer_script": "scripts/index_bounded_pdf_passages.py",
+    "out_dir": "/private/tmp/cmm-round123-research",
+    "summary_json": "/private/tmp/cmm-round123-research/summary.json",
+    "passage_map_tsv": "/private/tmp/cmm-round123-research/passage-map.tsv",
+    "max_passage_bytes": 1800,
+    "total_indexed_pdfs": 6,
+    "total_bounded_passages": 189,
+    "total_bounded_passage_bytes": 274104,
+    "single_page_table_png_renders": [
+      "/private/tmp/cmm-round123-research/ejm-32-57-2020.p4.png",
+      "/private/tmp/cmm-round123-research/ejm-32-57-2020.p6.png",
+      "/private/tmp/cmm-round123-research/ejm-37-63-2025.p3.png",
+      "/private/tmp/cmm-round123-research/ejm-33-175-2021.p4.png",
+      "/private/tmp/cmm-round123-research/ejm-33-175-2021.p6.png",
+      "/private/tmp/cmm-round123-research/ejm-34-95-2022.p5.png",
+      "/private/tmp/cmm-round123-research/ejm-38-373-2026.p4.png",
+      "/private/tmp/cmm-round123-research/ejm-38-373-2026.p6.png"
+    ]
+  },
+  "primary_source_inventory": [
+    {
+      "source_id": "ejm-32-57-2020",
+      "path": "/private/tmp/cmm-round123-research/ejm-32-57-2020.pdf",
+      "sha256": "7fdd1e65368286dd2e21171c7c20db2bd4845185ce1f51c8a8e823931f5c057a",
+      "bytes": 2312040,
+      "pages": 10,
+      "bounded_passages": 27,
+      "url": "https://doi.org/10.5194/ejm-32-57-2020",
+      "citation": "Nagashima M, Fukuda C, Matsumoto T, Imaoka T, Odicino G, and Armellino G (2020), Aluminosugilite, KNa2Al2Li3Si12O30, an Al analogue of sugilite, from the Cerchiara mine, Liguria, Italy, European Journal of Mineralogy 32:57-66."
+    },
+    {
+      "source_id": "jmps-119-240509-2024",
+      "path": "/private/tmp/cmm-round123-research/jmps-119-240509-2024.pdf",
+      "sha256": "55ed32bf7d0159b232e065b606809b22eece239040cf5b5aeb5a205316d8f84d",
+      "bytes": 4063093,
+      "pages": 12,
+      "bounded_passages": 33,
+      "url": "https://doi.org/10.2465/jmps.240509",
+      "citation": "Nishio-Hamane D, Nagashima M, Mori Y, Ohki Y, and Suzuki Y (2024), Aluminosugilite and norrishite from the Funakozawa mine, Iwate Prefecture, Japan, Journal of Mineralogical and Petrological Sciences 119:240509 (12 pp.)."
+    },
+    {
+      "source_id": "ejm-37-63-2025",
+      "path": "/private/tmp/cmm-round123-research/ejm-37-63-2025.pdf",
+      "sha256": "1d09716db17ad06a157f5992a2b23e478a5ef03ba07abd557c56462352280900",
+      "bytes": 3718088,
+      "pages": 12,
+      "bounded_passages": 30,
+      "url": "https://doi.org/10.5194/ejm-37-63-2025",
+      "citation": "Vereshchagin OS, Britvin SN, Pankova YA, Vlasenko NS, Zelenskaya MS, Shilovskikh VV, Bocharov VN, Vapnik Y, and Vlasov DY (2025), Andreybulakhite, Ni(C2O4)·2H2O, the first natural nickel oxalate, and insights into fungal-mediated nickel mineral weathering, European Journal of Mineralogy 37:63-74."
+    },
+    {
+      "source_id": "ejm-33-175-2021",
+      "path": "/private/tmp/cmm-round123-research/ejm-33-175-2021.pdf",
+      "sha256": "a972dd34d42f93acc53cd3c99b31923398278bf0f47141a4d9d354096429cf11",
+      "bytes": 6815514,
+      "pages": 13,
+      "bounded_passages": 35,
+      "url": "https://doi.org/10.5194/ejm-33-175-2021",
+      "citation": "Sejkora J, Vymazalova A, Laufek F,Plasil J, Litochleb J, Filip J, Drahokoupil J,nejedla A, and Dolnicek Z (2021), Grimmite, NiCo2S4, a new thiospinel from Pribram, Czech Republic, European Journal of Mineralogy 33:175-187."
+    },
+    {
+      "source_id": "ejm-34-95-2022",
+      "path": "/private/tmp/cmm-round123-research/ejm-34-95-2022.pdf",
+      "sha256": "64e9a5aca65fe7b51b164738652de4cbd4bdc9b122726e68045fff0c7053ebce",
+      "bytes": 12975465,
+      "pages": 14,
+      "bounded_passages": 31,
+      "url": "https://doi.org/10.5194/ejm-34-95-2022",
+      "citation": "Xue Y, Yang Z, Li G, Wang B, Song W, and Xu J (2022), Liguowuite, WO3, a new member of the A-site vacant perovskite-type structure series from the Panzhihua-Xichang region, China, European Journal of Mineralogy 34:95-108."
+    },
+    {
+      "source_id": "ejm-38-373-2026",
+      "path": "/private/tmp/cmm-round123-research/ejm-38-373-2026.pdf",
+      "sha256": "d808836aadb6c476d90fd624e23cd145f7fb7933236cbb1f4bdbe523f66e5c53",
+      "bytes": 3190914,
+      "pages": 13,
+      "bounded_passages": 33,
+      "url": "https://doi.org/10.5194/ejm-38-373-2026",
+      "citation": "Meisser N,Plasil J, Roth P, Škoda R, Tarassov M, Sejkora J, Talla D, Litochleb J, and Van Der Meersche E (2026), Yttrotungstite-(Nd), NdW2O7(OH)·H2O, the Nd-dominant analogue of yttrotungstite-(Y) and yttrotungstite-(Ce) from the Gifurwe mine, Rwanda, and Nyakabingo mine, Rwanda, European Journal of Mineralogy 38:373-385."
+    }
+  ],
+  "admitted_records": [
+    {
+      "slug": "aluminosugilite",
+      "name": "Aluminosugilite",
+      "record_path": "data/records/aluminosugilite.yaml",
+      "record_sha256": "42dc4d62c45c1e829574efeb875377a4749badd63966fc3d3274c8ae1af3a787",
+      "create_history_ref": "history/records/aluminosugilite/2026-10-30T132617Z-antigravity-cd5633.yaml",
+      "create_history_sha256": "866659b41a953115e9b849d95769006869eeb2f46a79bfbbf466588f483b8d86",
+      "edit_history_ref": "history/records/aluminosugilite/2026-10-30T133717Z-antigravity-073be8.yaml",
+      "edit_history_sha256": "938a1fcd31e9eb6d786cd3cdfff2ede6abaa585f8c5d0a854c3001a929274122",
+      "ima_status": "A",
+      "ima_id": "IMA:2018-142",
+      "ima_symbol": null,
+      "ima_formula": "KNa2Al2Li3Si12O30",
+      "ima_page": 8,
+      "mechanisms_count": 0,
+      "inspected_primary_citations": [
+        "Nagashima M, Fukuda C, Matsumoto T, Imaoka T, Odicino G, and Armellino G (2020), Aluminosugilite, KNa2Al2Li3Si12O30, an Al analogue of sugilite, from the Cerchiara mine, Liguria, Italy, European Journal of Mineralogy 32:57-66.",
+        "Nishio-Hamane D, Nagashima M, Mori Y, Ohki Y, and Suzuki Y (2024), Aluminosugilite and norrishite from the Funakozawa mine, Iwate Prefecture, Japan, Journal of Mineralogical and Petrological Sciences 119:240509 (12 pp.)."
+      ]
+    },
+    {
+      "slug": "andreybulakhite",
+      "name": "Andreybulakhite",
+      "record_path": "data/records/andreybulakhite.yaml",
+      "record_sha256": "9fabecebd8a6dbbfe77b93597c5b11663efed3b0999c089771f3cb4d303eab93",
+      "create_history_ref": "history/records/andreybulakhite/2026-10-30T132619Z-antigravity-58572a.yaml",
+      "create_history_sha256": "bf4639b2b87b12380ead3468b7280872560c34f613124303eed08d69a3ddf07a",
+      "ima_status": "A",
+      "ima_id": "IMA:2023-037",
+      "ima_symbol": "Adb",
+      "ima_formula": "Ni(C2O4)(H2O)2",
+      "ima_page": 11,
+      "mechanisms_count": 1,
+      "inspected_primary_citations": [
+        "Vereshchagin OS, Britvin SN, Pankova YA, Vlasenko NS, Zelenskaya MS, Shilovskikh VV, Bocharov VN, Vapnik Y, and Vlasov DY (2025), Andreybulakhite, Ni(C2O4)·2H2O, the first natural nickel oxalate, and insights into fungal-mediated nickel mineral weathering, European Journal of Mineralogy 37:63-74."
+      ]
+    },
+    {
+      "slug": "grimmite",
+      "name": "Grimmite",
+      "record_path": "data/records/grimmite.yaml",
+      "record_sha256": "d4fe726dedc99105182e1d2d95e0a98e387cee8abb7b0bdeb6f5aee162c2cadf",
+      "create_history_ref": "history/records/grimmite/2026-10-30T132620Z-antigravity-76b8bf.yaml",
+      "create_history_sha256": "fe0c1c6544457737e240ecb3bf2c29031b213a9f1c55822bbca74fb31eec627f",
+      "ima_status": "A",
+      "ima_id": "IMA:2020-060",
+      "ima_symbol": null,
+      "ima_formula": "NiCo2S4",
+      "ima_page": 86,
+      "mechanisms_count": 0,
+      "inspected_primary_citations": [
+        "Sejkora J, Vymazalova A, Laufek F, Plasil J, Litochleb J, Filip J, Drahokoupil J, Nejedla A, and Dolnicek Z (2021), Grimmite, NiCo2S4, a new thiospinel from Pribram, Czech Republic, European Journal of Mineralogy 33:175-187."
+      ]
+    },
+    {
+      "slug": "liguowuite",
+      "name": "Liguowuite",
+      "record_path": "data/records/liguowuite.yaml",
+      "record_sha256": "8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5",
+      "create_history_ref": "history/records/liguowuite/2026-10-30T132622Z-antigravity-c7ea8f.yaml",
+      "create_history_sha256": "a8196bef70201f1dcfdeb8cffb66a33e6bd0f8a1c140708ac9f2b72510bc8932",
+      "ima_status": "A",
+      "ima_id": "IMA:2020-097",
+      "ima_symbol": null,
+      "ima_formula": "WO3",
+      "ima_page": 125,
+      "mechanisms_count": 0,
+      "inspected_primary_citations": [
+        "Xue Y, Yang Z, Li G, Wang B, Song W, and Xu J (2022), Liguowuite, WO3, a new member of the A-site vacant perovskite-type structure series from the Panzhihua-Xichang region, China, European Journal of Mineralogy 34:95-108."
+      ]
+    },
+    {
+      "slug": "yttrotungstite-nd",
+      "name": "Yttrotungstite-(Nd)",
+      "record_path": "data/records/yttrotungstite-nd.yaml",
+      "record_sha256": "6c7e4579bf2bae64f7d38fc87dd0a28e29984fd3f78fcfc840200cce8edeac89",
+      "create_history_ref": "history/records/yttrotungstite-nd/2026-10-30T132624Z-antigravity-a8e673.yaml",
+      "create_history_sha256": "c59d8198e4fda6d990228c95c73281f34b722e5a160bb79a9b6badf4023f1285",
+      "ima_status": "A",
+      "ima_id": "IMA:2023-064",
+      "ima_symbol": "Ytgs-Nd",
+      "ima_formula": "NdW2O7(OH)(H2O)",
+      "ima_page": 238,
+      "mechanisms_count": 1,
+      "inspected_primary_citations": [
+        "Meisser N, Plasil J, Roth P, Škoda R, Tarassov M, Sejkora J, Talla D, Litochleb J, and Van Der Meersche E (2026), Yttrotungstite-(Nd), NdW2O7(OH)·H2O, the Nd-dominant analogue of yttrotungstite-(Y) and yttrotungstite-(Ce) from the Gifurwe mine, Rwanda, and Nyakabingo mine, Rwanda, European Journal of Mineralogy 38:373-385."
+      ]
+    }
+  ],
+  "local_source_archive_audit": {
+    "tmp_pdf_directories_checked": [
+      {
+        "path": "/private/tmp/cmm-round117-research",
+        "exists": true,
+        "pdf_count": 0,
+        "uncurated_pdf_count": 0
+      },
+      {
+        "path": "/private/tmp/cmm-round118-research",
+        "exists": true,
+        "pdf_count": 0,
+        "uncurated_pdf_count": 0
+      },
+      {
+        "path": "/private/tmp/cmm-round119-research",
+        "exists": true,
+        "pdf_count": 0,
+        "uncurated_pdf_count": 0
+      },
+      {
+        "path": "/private/tmp/cmm-round120-research",
+        "exists": true,
+        "pdf_count": 0,
+        "uncurated_pdf_count": 0
+      },
+      {
+        "path": "/private/tmp/cmm-round123-research",
+        "exists": true,
+        "pdf_count": 6,
+        "uncurated_pdf_count": 0,
+        "status": "All 6 downloaded PDFs (ejm-32-57-2020.pdf, jmps-119-240509-2024.pdf, ejm-37-63-2025.pdf, ejm-33-175-2021.pdf, ejm-34-95-2022.pdf, ejm-38-373-2026.pdf) have been indexed into 189 bounded passages (<= 1,800 B) and fully curated into the 5 Round 123 records."
+      }
+    ],
+    "repository_deduplication_inventory": {
+      "method": "Python os.walk(..., followlinks=True) complete inventory across data/records, research, reviews, and history including hidden and .gitignore-ignored files, executed because rg (ripgrep) is not installed on the macOS host.",
+      "records_scanned": 668,
+      "history_sidecars_scanned": 1104,
+      "structured_review_bundles_scanned_after_round123": 860,
+      "symlinks_resolved": true,
+      "ignored_and_hidden_included": true,
+      "inaccessible_paths": []
+    }
+  },
+  "excluded_candidates": [
+    {
+      "slug": "cesstibtantite",
+      "historical_ima_id": "IMA:1980-068",
+      "disposition": "excluded_discredited_reclassified",
+      "reason": "Verified absent from the September 2026 IMA Master List; discredited and reclassified into hydrokenomicrolite (IMA:2011-103, IMA p. 98) and hydroxycalciomicrolite (IMA:2013-073, IMA p. 98) under the 2010 IMA-CNMNC pyrochlore-supergroup nomenclature revision, neither of which has local primary full-text PDFs on disk."
+    }
+  ],
+  "deferred_candidates": [
+    {
+      "slug": "protasite",
+      "ima_id": "IMA:1984-001",
+      "reason": "1987 structure paper (American Mineralogist 72:1230-1238) inspected in Round 121; held pending full-text acquisition of the 1986 Mineralogical Magazine 50:125-128 type-description paper cited on IMA p. 178."
+    },
+    {
+      "slug": "lepersonnite-gd",
+      "ima_id": "1987 s.p.",
+      "reason": "1982 Shinkolobwe holotype description (Canadian Mineralogist 20:231-238) inspected in Round 121; held pending full-text acquisition of the 2025 Mineralogical Magazine 89:549 crystal-structure and formula-redefinition paper cited on IMA p. 124."
+    },
+    {
+      "slug": "lokkaite-y",
+      "ima_id": "1987 s.p.",
+      "reason": "1986 Kirigo supplemental study (American Mineralogist 71:1028-1033) inspected in Round 121; held pending full-text acquisition of the sole IMA-cited type description (Perttunen 1970/1971, Bull. Geol. Soc. Finland 43:67-72, IMA p. 127)."
+    },
+    {
+      "slug": "haiweeite",
+      "ima_id": "1962 s.p.",
+      "reason": "1959 description (American Mineralogist 44:839-843) inspected in Round 118; held pending full-text acquisition of the 2013 crystal-structure and formula revision (Plasil et al. 2013, American Mineralogist 98:718-723, IMA p. 89)."
+    },
+    {
+      "slug": "fourmarierite",
+      "ima_id": "G (1924)",
+      "reason": "2000 synthetic crystal-structure paper (Canadian Mineralogist 38:737-749) inspected in Round 118; held pending full-text acquisition of the 1924 Buttgenbach original type description (Ann. Soc. Geol. Belgique 47:C41-C43, IMA p. 77)."
+    },
+    {
+      "slug": "masuyite",
+      "ima_id": "G (1947)",
+      "reason": "Held pending full-text acquisition of the 1947 Vaes original type description (Ann. Soc. Geol. Belgique 70:B212-B225) and local full-text verification of the 1999 structure reference (Canadian Mineralogist 37 (1999), 1483 on IMA p. 137)."
+    },
+    {
+      "slug": "tsumoite",
+      "ima_id": "IMA:1972-010a",
+      "reason": "1978 description (American Mineralogist 63:1162-1165) inspected in Round 118; held pending full-text acquisition of the paywalled 1979 crystal-structure paper (Yamana, Kihara, & Matsumoto 1979, Acta Crystallographica B35:147-149, IMA p. 222)."
+    }
+  ],
+  "uninspected_external_ejm_candidates_for_future_cycles": [
+    {
+      "slug": "erzwiesite",
+      "ima_id": "IMA:2012-082",
+      "formula": "Ag8Pb12Bi16S40",
+      "reference": "European Journal of Mineralogy 38 (2026), 237",
+      "status": "deferred_outside_round123_bounded_cohort"
+    },
+    {
+      "slug": "fengruiite",
+      "ima_id": "IMA:2024-045",
+      "formula": "[Ag6Sb2S7][Ag9CuS2Te2]",
+      "reference": "European Journal of Mineralogy 38 (2026), 519",
+      "status": "deferred_outside_round123_bounded_cohort"
+    },
+    {
+      "slug": "igelstromite",
+      "ima_id": "IMA:2021-035",
+      "formula": "Fe3+(SbPb)O4",
+      "reference": "European Journal of Mineralogy 36 (2024), 311",
+      "status": "deferred_outside_round123_bounded_cohort"
+    },
+    {
+      "slug": "kenoargentotetrahedrite-zn",
+      "ima_id": "IMA:2020-075",
+      "formula": "Ag6(Cu4Zn2)Sb4S12☐",
+      "reference": "European Journal of Mineralogy 36 (2024), 397",
+      "status": "deferred_outside_round123_bounded_cohort"
+    },
+    {
+      "slug": "laurentthomasite",
+      "ima_id": "IMA:2018-157",
+      "formula": "Mg2K(Be2Al)Si12O30",
+      "reference": "European Journal of Mineralogy 32 (2020), 355",
+      "status": "deferred_outside_round123_bounded_cohort"
+    },
+    {
+      "slug": "lazerckerite",
+      "ima_id": "IMA:2022-113",
+      "formula": "Ag3.75Pb4.50(Sb7.75Bi4)S24",
+      "reference": "European Journal of Mineralogy 36 (2024), 641",
+      "status": "deferred_outside_round123_bounded_cohort"
+    },
+    {
+      "slug": "lopatkaite",
+      "ima_id": "IMA:2012-083",
+      "formula": "Pb5Sb3AsS11",
+      "reference": "European Journal of Mineralogy 38 (2026), 217",
+      "status": "deferred_outside_round123_bounded_cohort"
+    },
+    {
+      "slug": "moabite",
+      "ima_id": "IMA:2020-092",
+      "formula": "NiFe3+(PO4)O",
+      "reference": "European Journal of Mineralogy 37 (2025), 353",
+      "status": "deferred_outside_round123_bounded_cohort"
+    },
+    {
+      "slug": "plumbogottlobite",
+      "ima_id": "IMA:2025-075",
+      "formula": "PbMg(VO4)(OH)",
+      "reference": "European Journal of Mineralogy 38 (2026), 209",
+      "status": "deferred_outside_round123_bounded_cohort"
+    },
+    {
+      "slug": "tetrahedrite-cd",
+      "ima_id": "IMA:2022-115",
+      "formula": "Cu6(Cu4Cd2)Sb4S13",
+      "reference": "European Journal of Mineralogy 35 (2023), 897",
+      "status": "deferred_outside_round123_bounded_cohort"
+    },
+    {
+      "slug": "vielleaureite-ce",
+      "ima_id": "IMA:2022-134",
+      "formula": "Mn2+Ce(MgAlMn2+)(Si2O7)(SiO4)F(OH)",
+      "reference": "European Journal of Mineralogy 37 (2025), 627",
+      "status": "deferred_outside_round123_bounded_cohort"
+    },
+    {
+      "slug": "wumuite",
+      "ima_id": "IMA:2017-067a",
+      "formula": "KAl0.33W2.67O9",
+      "reference": "European Journal of Mineralogy 32 (2020), 483",
+      "status": "deferred_outside_round123_bounded_cohort"
+    },
+    {
+      "slug": "xianhuaite-ce",
+      "ima_id": "IMA:2024-091",
+      "formula": "K2CeNb5O15",
+      "reference": "European Journal of Mineralogy 38 (2026), 449",
+      "status": "deferred_outside_round123_bounded_cohort"
+    }
+  ],
+  "carried_forward_open_issues": {
+    "source_tracking_issues": [
+      495,
+      496,
+      497,
+      498
+    ],
+    "resolved_stage6_infrastructure_issues": [
+      "https://github.com/CultureBotAI/CMMMech/issues/839",
+      "https://github.com/CultureBotAI/CMMMech/issues/840",
+      "https://github.com/CultureBotAI/CMMMech/issues/866"
+    ]
+  },
+  "frontier_status": {
+    "bounded_frontier_exhausted": true,
+    "source_exhaustion_claimed": false,
+    "summary": "All 6 downloaded Gold Open Access primary-source PDFs in the Cycle 5 Stage 1 (Round 123) bounded local frontier (/private/tmp/cmm-round123-research) have been indexed via scripts/index_bounded_pdf_passages.py into 189 bounded passages (<= 1,800 B) and 8 single-page table PNGs, inspected in full, and curated into 5 new IMA-accepted critical-mineral records (aluminosugilite, andreybulakhite, grimmite, liguowuite, yttrotungstite-nd), expanding data/records/ from 663 to 668 records. Repeated verification across /private/tmp/cmm-round117-research through /private/tmp/cmm-round123-research and cmm-bounded-source-text/ confirms 0 uncurated local PDFs remain in the bounded Round 123 frontier (bounded_frontier_exhausted: true), while 1 excluded discredited species (cesstibtantite), 7 multi-source held candidates pending unacquired external/paywalled papers, 13 unacquired external EJM candidates, and open source issues #495-#498 remain preserved for future cycles (source_exhaustion_claimed: false)."
+  }
+}

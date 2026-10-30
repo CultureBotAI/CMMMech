@@ -1,0 +1,276 @@
+# Primary-source scientific review of andreybulakhite (IMA:2023-037, status A, Ni(C2O4)·2H2O)
+
+- Review: 20261030T134200Z-andreybulakhite-round123-scientific-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-30T13:40:00Z
+- Finished UTC: 2026-10-30T13:42:00Z
+- Reviewer: antigravity / round123-scientific-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Andreybulakhite (IMA:2023-037, status A, Ni(C2O4)·2H2O) passes primary-source scientific review (scientific_review: true) at SHA-256 9fabecebd8a6dbbfe77b93597c5b11663efed3b0999c089771f3cb4d303eab93 against all 30 bounded passages of Vereshchagin et al. (2025, Eur. J. Mineral. 37:63-74).
+
+## Scope And Provenance
+
+Primary-source scientific review of data/records/andreybulakhite.yaml (SHA-256 9fabecebd8a6dbbfe77b93597c5b11663efed3b0999c089771f3cb4d303eab93) and its canonical CREATE history sidecar against all 30 bounded primary-source passages from Vereshchagin et al. (2025, Eur. J. Mineral. 37:63-74) and the September 2026 IMA-CNMNC Master List (PDF p. 11).
+
+Selection: Round 123 newly admitted mineral record andreybulakhite
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 3684ac763165c2343e93af37c9eef7b21608edd5.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:andreybulakhite | data/records/andreybulakhite.yaml | maintained | Andreybulakhite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:andreybulakhite | Checked 668 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:andreybulakhite | Checked 1104 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Verification of IMA:2023-037 identity, Nud II deposit holotype chemistry, and humboldtine-group polytypism for andreybulakhite
+
+evidence: supported. Targets: cmmmech:andreybulakhite.
+
+All numeric, crystallographic, optical, IR, and chemical claims in data/records/andreybulakhite.yaml (SHA-256 9fabecebd8a6dbbfe77b93597c5b11663efed3b0999c089771f3cb4d303eab93) match the bounded primary-source passages of Vereshchagin et al. (2025, Eur. J. Mineral. 37:63-74) and the September 2026 IMA Master List (p. 11).
+
+### Verification of fungal-lichen biogenic oxalate bioleaching and biomineralization mechanism and append-only CREATE provenance
+
+provenance: supported. Targets: cmmmech:andreybulakhite.
+
+The microbial mechanism fungal_lichen_oxalate_bioleaching_and_nickel_oxalate_biomineralization accurately represents the biogenic oxalate excretion by lithobiontic crustose lichen and fungal biofilms (NCBITaxon:4751, Fungi) at the Nud II critical-zone interface, with explicit disclosure that species-level fungal/lichen taxonomy was not determined in Vereshchagin et al. (2025). Append-only CREATE history sidecar passes validation with 0 errors.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/andreybulakhite.yaml; Working-tree record data/records/andreybulakhite.yaml | supports | Working-tree record data/records/andreybulakhite.yaml (SHA-256 9fabecebd8a6dbbfe77b93597c5b11663efed3b0999c089771f3cb4d303eab93) captures the IMA:2023-037 identity, Nud II deposit holotype chemistry (Table 1, 10 EDS spots + CHN), monoclinic C2/c and orthorhombic Cccm humboldtine-group polytypism, powder XRD, physical/optical properties, and fungal-lichen biogenic oxalate bioleaching and biomineralization mechanism at the biological-geological interface. |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List, PDF p. 11 (ima-round118.p011.andreybulakhite.w01.part01.txt) | supports | Confirms Andreybulakhite, formula Ni(C2O4)·2H2O, status A, IMA No. 2023-037, country Russia, and sole reference European Journal of Mineralogy 37 (2025), 63. |
+| vereshchagin_2025_primary | https://doi.org/10.5194/ejm-37-63-2025; Vereshchagin et al. (2025) Eur. J. Mineral. 37:63-74, pp. 63-74, Tables 1-5, Figures 1-9 (ejm-37-63-2025.p001-p012) | supports | All 12 pages (30 bounded passages &lt;= 1,800 B) inspected: confirms Nud II deposit holotype (# 1/20031, Mineralogical Museum of St. Petersburg State University), crustose lichen and dark fungal biofilms on primary Ni-rich pyrrhotite + pentlandite + chalcopyrite ore and secondary violarite + morenosite, Table 1 EDS + CHN chemistry (NiO 29.74, MgO 3.91, CuO 3.55, FeO 2.41, CoO 0.56, MnO 0.14, ZnO 0.13, C2O3 40.31, H2O 20.13, Total 100.88 wt%), empirical formula (Ni0.64Mg0.16Cu0.07Fe0.05Co0.01)Sigma0.93(C2O4)1.00·2.19H2O, ordered α-polytype (monoclinic C2/c, a = 11.832(3), b = 5.335(1), c = 9.914(3) Å, β = 127.08(3)°, V = 499.3(3) Å3, Z = 4, Dcalc = 2.432 g/cm3) and disordered β-polytype (orthorhombic Cccm, a = 11.8427(15), b = 5.3607(5), c = 15.6578(17) Å, V = 994.04(19) Å3, Z = 8, R1 = 0.0457 at 100 K), powder XRD (Table 2; 8 strongest lines 4.71, 3.90, 3.56, 2.95, 2.52, 2.07, 1.97, 1.85 Å), optical properties (α = 1.491(2), β = 1.545(5), γ = 1.596(2), 2Vmeas = 85(5)°), and biogenic oxalate origin. |
+| create_history | history/records/andreybulakhite/2026-10-30T132619Z-antigravity-58572a.yaml; Canonical CREATE history sidecar history/records/andreybulakhite/2026-10-30T132619Z-antigravity-58572a.yaml | supports | Canonical CREATE history sidecar (SHA-256 bf4639b2b87b12380ead3468b7280872560c34f613124303eed08d69a3ddf07a) preserved untouched. |
+| validation | data/records/andreybulakhite.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | Checked 668 record(s); 0 failed. Checked 1104 history record(s); 0 error(s). |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review will be executed prior to merge.
+- Executed under the Round 123 bounded source-text workflow (scripts/index_bounded_pdf_passages.py, max 1,800 bytes per passage).
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261030T134200Z-andreybulakhite-round123-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Primary-source scientific review of andreybulakhite (IMA:2023-037, status A,
+  Ni(C2O4)·2H2O)
+started_at: '2026-10-30T13:40:00Z'
+finished_at: '2026-10-30T13:42:00Z'
+reviewer:
+  identity: antigravity / round123-scientific-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/andreybulakhite.yaml (SHA-256
+    9fabecebd8a6dbbfe77b93597c5b11663efed3b0999c089771f3cb4d303eab93) against all
+    30 bounded passages of Vereshchagin et al. (2025, Eur. J. Mineral. 37:63-74, ejm-37-63-2025.p001-p012)
+    and the September 2026 IMA-CNMNC Master List (PDF p. 11, ima-round118.p011.andreybulakhite.w01.part01.txt).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 3684ac763165c2343e93af37c9eef7b21608edd5
+  state: working_tree
+  inputs:
+  - path: data/records/andreybulakhite.yaml
+    sha256: 9fabecebd8a6dbbfe77b93597c5b11663efed3b0999c089771f3cb4d303eab93
+    role: target
+  - path: history/records/andreybulakhite/2026-10-30T132619Z-antigravity-58572a.yaml
+    sha256: bf4639b2b87b12380ead3468b7280872560c34f613124303eed08d69a3ddf07a
+    role: context
+  - path: research/sources/round123-minerals/20261030T133900Z-source-investigation.json
+    sha256: 7f74c6d14d19c18e9ea76b4fc45d1acc6d9903db72aad62912ec87d0c98890f3
+    role: context
+  - path: research/sources/round123-minerals/20261030T133900Z-source-investigation.md
+    sha256: 0913a3e1dc7e5eac00893aba72cf85b3e436dabc0496a6bcfc24d558d1ae43d6
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:andreybulakhite
+  path: data/records/andreybulakhite.yaml
+  label: Andreybulakhite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/andreybulakhite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/andreybulakhite/2026-10-30T132619Z-antigravity-58572a.yaml
+    role: canonical_history
+scope:
+  description: Primary-source scientific review of data/records/andreybulakhite.yaml
+    (SHA-256 9fabecebd8a6dbbfe77b93597c5b11663efed3b0999c089771f3cb4d303eab93) and
+    its canonical CREATE history sidecar against all 30 bounded primary-source passages
+    from Vereshchagin et al. (2025, Eur. J. Mineral. 37:63-74) and the September 2026
+    IMA-CNMNC Master List (PDF p. 11).
+  selection: Round 123 newly admitted mineral record andreybulakhite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:andreybulakhite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/andreybulakhite.yaml
+  locator: Working-tree record data/records/andreybulakhite.yaml
+  accessed_at: '2026-10-30T13:41:00Z'
+  support: supports
+  summary: Working-tree record data/records/andreybulakhite.yaml (SHA-256 9fabecebd8a6dbbfe77b93597c5b11663efed3b0999c089771f3cb4d303eab93)
+    captures the IMA:2023-037 identity, Nud II deposit holotype chemistry (Table 1,
+    10 EDS spots + CHN), monoclinic C2/c and orthorhombic Cccm humboldtine-group polytypism,
+    powder XRD, physical/optical properties, and fungal-lichen biogenic oxalate bioleaching
+    and biomineralization mechanism at the biological-geological interface.
+  snapshot_sha256: 9fabecebd8a6dbbfe77b93597c5b11663efed3b0999c089771f3cb4d303eab93
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 11 (ima-round118.p011.andreybulakhite.w01.part01.txt)
+  accessed_at: '2026-10-30T13:41:00Z'
+  support: supports
+  summary: Confirms Andreybulakhite, formula Ni(C2O4)·2H2O, status A, IMA No. 2023-037,
+    country Russia, and sole reference European Journal of Mineralogy 37 (2025), 63.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: vereshchagin_2025_primary
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-37-63-2025
+  locator: Vereshchagin et al. (2025) Eur. J. Mineral. 37:63-74, pp. 63-74, Tables
+    1-5, Figures 1-9 (ejm-37-63-2025.p001-p012)
+  accessed_at: '2026-10-30T13:41:00Z'
+  support: supports
+  summary: 'All 12 pages (30 bounded passages <= 1,800 B) inspected: confirms Nud
+    II deposit holotype (# 1/20031, Mineralogical Museum of St. Petersburg State University),
+    crustose lichen and dark fungal biofilms on primary Ni-rich pyrrhotite + pentlandite
+    + chalcopyrite ore and secondary violarite + morenosite, Table 1 EDS + CHN chemistry
+    (NiO 29.74, MgO 3.91, CuO 3.55, FeO 2.41, CoO 0.56, MnO 0.14, ZnO 0.13, C2O3 40.31,
+    H2O 20.13, Total 100.88 wt%), empirical formula (Ni0.64Mg0.16Cu0.07Fe0.05Co0.01)Sigma0.93(C2O4)1.00·2.19H2O,
+    ordered α-polytype (monoclinic C2/c, a = 11.832(3), b = 5.335(1), c = 9.914(3)
+    Å, β = 127.08(3)°, V = 499.3(3) Å3, Z = 4, Dcalc = 2.432 g/cm3) and disordered
+    β-polytype (orthorhombic Cccm, a = 11.8427(15), b = 5.3607(5), c = 15.6578(17)
+    Å, V = 994.04(19) Å3, Z = 8, R1 = 0.0457 at 100 K), powder XRD (Table 2; 8 strongest
+    lines 4.71, 3.90, 3.56, 2.95, 2.52, 2.07, 1.97, 1.85 Å), optical properties (α
+    = 1.491(2), β = 1.545(5), γ = 1.596(2), 2Vmeas = 85(5)°), and biogenic oxalate
+    origin.'
+  snapshot_sha256: 1d09716db17ad06a157f5992a2b23e478a5ef03ba07abd557c56462352280900
+- evidence_id: create_history
+  kind: record_content
+  reference: history/records/andreybulakhite/2026-10-30T132619Z-antigravity-58572a.yaml
+  locator: Canonical CREATE history sidecar history/records/andreybulakhite/2026-10-30T132619Z-antigravity-58572a.yaml
+  accessed_at: '2026-10-30T13:41:00Z'
+  support: supports
+  summary: Canonical CREATE history sidecar (SHA-256 bf4639b2b87b12380ead3468b7280872560c34f613124303eed08d69a3ddf07a)
+    preserved untouched.
+  snapshot_sha256: bf4639b2b87b12380ead3468b7280872560c34f613124303eed08d69a3ddf07a
+- evidence_id: validation
+  kind: validation
+  reference: data/records/andreybulakhite.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-10-30T13:41:00Z'
+  support: supports
+  summary: Checked 668 record(s); 0 failed. Checked 1104 history record(s); 0 error(s).
+  snapshot_sha256: 9fabecebd8a6dbbfe77b93597c5b11663efed3b0999c089771f3cb4d303eab93
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 668 record(s); 0 failed.
+  target_ids:
+  - cmmmech:andreybulakhite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1104 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:andreybulakhite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA:2023-037 identity, Nud II deposit holotype chemistry,
+    and humboldtine-group polytypism for andreybulakhite
+  outcome: supported
+  summary: All numeric, crystallographic, optical, IR, and chemical claims in data/records/andreybulakhite.yaml
+    (SHA-256 9fabecebd8a6dbbfe77b93597c5b11663efed3b0999c089771f3cb4d303eab93) match
+    the bounded primary-source passages of Vereshchagin et al. (2025, Eur. J. Mineral.
+    37:63-74) and the September 2026 IMA Master List (p. 11).
+  target_ids:
+  - cmmmech:andreybulakhite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - vereshchagin_2025_primary
+- assessment_id: mechanism_and_provenance_verification
+  area: provenance
+  topic: Verification of fungal-lichen biogenic oxalate bioleaching and biomineralization
+    mechanism and append-only CREATE provenance
+  outcome: supported
+  summary: The microbial mechanism fungal_lichen_oxalate_bioleaching_and_nickel_oxalate_biomineralization
+    accurately represents the biogenic oxalate excretion by lithobiontic crustose
+    lichen and fungal biofilms (NCBITaxon:4751, Fungi) at the Nud II critical-zone
+    interface, with explicit disclosure that species-level fungal/lichen taxonomy
+    was not determined in Vereshchagin et al. (2025). Append-only CREATE history sidecar
+    passes validation with 0 errors.
+  target_ids:
+  - cmmmech:andreybulakhite
+  evidence_ids:
+  - owner
+  - vereshchagin_2025_primary
+  - create_history
+  - validation
+findings: []
+actions: []
+summary: 'Andreybulakhite (IMA:2023-037, status A, Ni(C2O4)·2H2O) passes primary-source
+  scientific review (scientific_review: true) at SHA-256 9fabecebd8a6dbbfe77b93597c5b11663efed3b0999c089771f3cb4d303eab93
+  against all 30 bounded passages of Vereshchagin et al. (2025, Eur. J. Mineral. 37:63-74).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review will be executed prior to
+  merge.'
+notes:
+- Executed under the Round 123 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage).
+related_reviews: []
+```

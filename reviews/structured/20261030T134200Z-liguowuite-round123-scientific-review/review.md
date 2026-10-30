@@ -1,0 +1,272 @@
+# Primary-source scientific review of liguowuite (IMA:2020-097, status A, WO3)
+
+- Review: 20261030T134200Z-liguowuite-round123-scientific-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-30T13:40:00Z
+- Finished UTC: 2026-10-30T13:42:00Z
+- Reviewer: antigravity / round123-scientific-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Liguowuite (IMA:2020-097, status A, WO3) passes primary-source scientific review (scientific_review: true) at SHA-256 8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5 against all 31 bounded passages of Xue et al. (2022, Eur. J. Mineral. 34:95-108).
+
+## Scope And Provenance
+
+Primary-source scientific review of data/records/liguowuite.yaml (SHA-256 8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5) and its canonical CREATE history sidecar against all 31 bounded primary-source passages from Xue et al. (2022, Eur. J. Mineral. 34:95-108) and the September 2026 IMA-CNMNC Master List (PDF p. 125).
+
+Selection: Round 123 newly admitted mineral record liguowuite
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 3684ac763165c2343e93af37c9eef7b21608edd5.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:liguowuite | data/records/liguowuite.yaml | maintained | Liguowuite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:liguowuite | Checked 668 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:liguowuite | Checked 1104 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Verification of IMA:2020-097 identity, Nanling holotype chemistry and multi-valency model, and monoclinic P21/n structure for liguowuite
+
+evidence: supported. Targets: cmmmech:liguowuite.
+
+All numeric, crystallographic, Raman, optical, and chemical claims in data/records/liguowuite.yaml (SHA-256 8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5) match the bounded primary-source passages of Xue et al. (2022, Eur. J. Mineral. 34:95-108) and the September 2026 IMA Master List (p. 125).
+
+### Verification of abiotic magmato-hydrothermal crystallization and mixed-valency mechanism and append-only CREATE provenance
+
+provenance: supported. Targets: cmmmech:liguowuite.
+
+The abiotic mechanism abiotic_magmato_hydrothermal_tungsten_trioxide_crystallization_and_mixed_valency accurately represents the post-magmatic high-temperature fluid crystallization (~700 °C) and partial reduction of W6+ to W5+, with explicit disclosure that no microbial extraction, bioleaching, or biotransformation study is reported. Append-only CREATE history sidecar passes validation with 0 errors.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/liguowuite.yaml; Working-tree record data/records/liguowuite.yaml | supports | Working-tree record data/records/liguowuite.yaml (SHA-256 8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5) captures the IMA:2020-097 identity, Nanling (Jiaoli/Medusa) holotype chemistry (Table 1, n = 10) and multi-valency charge-balance model (Table 7), monoclinic P21/n perovskite-supergroup A-site-vacant WO3 structure, powder XRD, physical/optical properties, and abiotic high-temperature magmato-hydrothermal crystallization mechanism. |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List, PDF p. 125 (ima-round118.p125.liguowuite.w01.part01.txt) | supports | Confirms Liguowuite, formula WO3, status A, IMA No. 2020-097, country China, and sole reference European Journal of Mineralogy 34 (2022), 95. |
+| xue_2022_primary | https://doi.org/10.5194/ejm-34-95-2022; Xue et al. (2022) Eur. J. Mineral. 34:95-108, pp. 95-108, Tables 1-7, Figures 1-8 (ejm-34-95-2022.p001-p014) | supports | All 14 pages (31 bounded passages &lt;= 1,800 B) inspected: confirms Nanling (Jiaoli / Medusa) holotype (M16107, Geological Museum of China, Beijing; cotype G20201228, Crystal Structure Laboratory, CUGB), Table 1 WDS chemistry (n = 10: WO3 99.13, MoO3 0.25, CaO 0.08, MgO 0.01, Fe2O3 0.09, Al2O3 0.04, Total 99.60 wt%), empirical formula (K0.0005Na0.0005Ca0.0033Mg0.0007)Sigma0.0050(W0.9949Mo0.0040Fe3+0.0026Al0.0019)Sigma1.0034O3, Table 7 multi-valency charge-balance model (W6+ 0.9163 + W5+ 0.0729 apfu = 84.33 wt% WO3 + 12.96 wt% W2O5), monoclinic P21/n structure (a = 7.3126(5), b = 7.5252(4), c = 7.6895(5) Å, β = 90.415(6)°, V = 423.13(5) Å3, Z = 8, Dcalc = 7.269 g/cm3, R1 = 0.0430), powder XRD (Table 2; 8 strongest lines 3.841, 3.760, 3.657, 3.103, 2.687, 2.665, 2.628, 2.164 Å), and physical/Raman properties. |
+| create_history | history/records/liguowuite/2026-10-30T132622Z-antigravity-c7ea8f.yaml; Canonical CREATE history sidecar history/records/liguowuite/2026-10-30T132622Z-antigravity-c7ea8f.yaml | supports | Canonical CREATE history sidecar (SHA-256 a8196bef70201f1dcfdeb8cffb66a33e6bd0f8a1c140708ac9f2b72510bc8932) preserved untouched. |
+| validation | data/records/liguowuite.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | Checked 668 record(s); 0 failed. Checked 1104 history record(s); 0 error(s). |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review will be executed prior to merge.
+- Executed under the Round 123 bounded source-text workflow (scripts/index_bounded_pdf_passages.py, max 1,800 bytes per passage).
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261030T134200Z-liguowuite-round123-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Primary-source scientific review of liguowuite (IMA:2020-097, status A, WO3)
+started_at: '2026-10-30T13:40:00Z'
+finished_at: '2026-10-30T13:42:00Z'
+reviewer:
+  identity: antigravity / round123-scientific-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/liguowuite.yaml (SHA-256 8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5)
+    against all 31 bounded passages of Xue et al. (2022, Eur. J. Mineral. 34:95-108,
+    ejm-34-95-2022.p001-p014) and the September 2026 IMA-CNMNC Master List (PDF p.
+    125, ima-round118.p125.liguowuite.w01.part01.txt).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 3684ac763165c2343e93af37c9eef7b21608edd5
+  state: working_tree
+  inputs:
+  - path: data/records/liguowuite.yaml
+    sha256: 8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5
+    role: target
+  - path: history/records/liguowuite/2026-10-30T132622Z-antigravity-c7ea8f.yaml
+    sha256: a8196bef70201f1dcfdeb8cffb66a33e6bd0f8a1c140708ac9f2b72510bc8932
+    role: context
+  - path: research/sources/round123-minerals/20261030T133900Z-source-investigation.json
+    sha256: 7f74c6d14d19c18e9ea76b4fc45d1acc6d9903db72aad62912ec87d0c98890f3
+    role: context
+  - path: research/sources/round123-minerals/20261030T133900Z-source-investigation.md
+    sha256: 0913a3e1dc7e5eac00893aba72cf85b3e436dabc0496a6bcfc24d558d1ae43d6
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:liguowuite
+  path: data/records/liguowuite.yaml
+  label: Liguowuite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/liguowuite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/liguowuite/2026-10-30T132622Z-antigravity-c7ea8f.yaml
+    role: canonical_history
+scope:
+  description: Primary-source scientific review of data/records/liguowuite.yaml (SHA-256
+    8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5) and its canonical
+    CREATE history sidecar against all 31 bounded primary-source passages from Xue
+    et al. (2022, Eur. J. Mineral. 34:95-108) and the September 2026 IMA-CNMNC Master
+    List (PDF p. 125).
+  selection: Round 123 newly admitted mineral record liguowuite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:liguowuite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/liguowuite.yaml
+  locator: Working-tree record data/records/liguowuite.yaml
+  accessed_at: '2026-10-30T13:41:00Z'
+  support: supports
+  summary: Working-tree record data/records/liguowuite.yaml (SHA-256 8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5)
+    captures the IMA:2020-097 identity, Nanling (Jiaoli/Medusa) holotype chemistry
+    (Table 1, n = 10) and multi-valency charge-balance model (Table 7), monoclinic
+    P21/n perovskite-supergroup A-site-vacant WO3 structure, powder XRD, physical/optical
+    properties, and abiotic high-temperature magmato-hydrothermal crystallization
+    mechanism.
+  snapshot_sha256: 8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 125 (ima-round118.p125.liguowuite.w01.part01.txt)
+  accessed_at: '2026-10-30T13:41:00Z'
+  support: supports
+  summary: Confirms Liguowuite, formula WO3, status A, IMA No. 2020-097, country China,
+    and sole reference European Journal of Mineralogy 34 (2022), 95.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: xue_2022_primary
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-34-95-2022
+  locator: Xue et al. (2022) Eur. J. Mineral. 34:95-108, pp. 95-108, Tables 1-7, Figures
+    1-8 (ejm-34-95-2022.p001-p014)
+  accessed_at: '2026-10-30T13:41:00Z'
+  support: supports
+  summary: 'All 14 pages (31 bounded passages <= 1,800 B) inspected: confirms Nanling
+    (Jiaoli / Medusa) holotype (M16107, Geological Museum of China, Beijing; cotype
+    G20201228, Crystal Structure Laboratory, CUGB), Table 1 WDS chemistry (n = 10:
+    WO3 99.13, MoO3 0.25, CaO 0.08, MgO 0.01, Fe2O3 0.09, Al2O3 0.04, Total 99.60
+    wt%), empirical formula (K0.0005Na0.0005Ca0.0033Mg0.0007)Sigma0.0050(W0.9949Mo0.0040Fe3+0.0026Al0.0019)Sigma1.0034O3,
+    Table 7 multi-valency charge-balance model (W6+ 0.9163 + W5+ 0.0729 apfu = 84.33
+    wt% WO3 + 12.96 wt% W2O5), monoclinic P21/n structure (a = 7.3126(5), b = 7.5252(4),
+    c = 7.6895(5) Å, β = 90.415(6)°, V = 423.13(5) Å3, Z = 8, Dcalc = 7.269 g/cm3,
+    R1 = 0.0430), powder XRD (Table 2; 8 strongest lines 3.841, 3.760, 3.657, 3.103,
+    2.687, 2.665, 2.628, 2.164 Å), and physical/Raman properties.'
+  snapshot_sha256: 64e9a5aca65fe7b51b164738652de4cbd4bdc9b122726e68045fff0c7053ebce
+- evidence_id: create_history
+  kind: record_content
+  reference: history/records/liguowuite/2026-10-30T132622Z-antigravity-c7ea8f.yaml
+  locator: Canonical CREATE history sidecar history/records/liguowuite/2026-10-30T132622Z-antigravity-c7ea8f.yaml
+  accessed_at: '2026-10-30T13:41:00Z'
+  support: supports
+  summary: Canonical CREATE history sidecar (SHA-256 a8196bef70201f1dcfdeb8cffb66a33e6bd0f8a1c140708ac9f2b72510bc8932)
+    preserved untouched.
+  snapshot_sha256: a8196bef70201f1dcfdeb8cffb66a33e6bd0f8a1c140708ac9f2b72510bc8932
+- evidence_id: validation
+  kind: validation
+  reference: data/records/liguowuite.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-10-30T13:41:00Z'
+  support: supports
+  summary: Checked 668 record(s); 0 failed. Checked 1104 history record(s); 0 error(s).
+  snapshot_sha256: 8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 668 record(s); 0 failed.
+  target_ids:
+  - cmmmech:liguowuite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1104 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:liguowuite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA:2020-097 identity, Nanling holotype chemistry and multi-valency
+    model, and monoclinic P21/n structure for liguowuite
+  outcome: supported
+  summary: All numeric, crystallographic, Raman, optical, and chemical claims in data/records/liguowuite.yaml
+    (SHA-256 8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5) match
+    the bounded primary-source passages of Xue et al. (2022, Eur. J. Mineral. 34:95-108)
+    and the September 2026 IMA Master List (p. 125).
+  target_ids:
+  - cmmmech:liguowuite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - xue_2022_primary
+- assessment_id: mechanism_and_provenance_verification
+  area: provenance
+  topic: Verification of abiotic magmato-hydrothermal crystallization and mixed-valency
+    mechanism and append-only CREATE provenance
+  outcome: supported
+  summary: The abiotic mechanism abiotic_magmato_hydrothermal_tungsten_trioxide_crystallization_and_mixed_valency
+    accurately represents the post-magmatic high-temperature fluid crystallization
+    (~700 °C) and partial reduction of W6+ to W5+, with explicit disclosure that no
+    microbial extraction, bioleaching, or biotransformation study is reported. Append-only
+    CREATE history sidecar passes validation with 0 errors.
+  target_ids:
+  - cmmmech:liguowuite
+  evidence_ids:
+  - owner
+  - xue_2022_primary
+  - create_history
+  - validation
+findings: []
+actions: []
+summary: 'Liguowuite (IMA:2020-097, status A, WO3) passes primary-source scientific
+  review (scientific_review: true) at SHA-256 8c4b6b0385acd182192d596b3231137beb5acd24dd182d4f71c33697351860a5
+  against all 31 bounded passages of Xue et al. (2022, Eur. J. Mineral. 34:95-108).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review will be executed prior to
+  merge.'
+notes:
+- Executed under the Round 123 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage).
+related_reviews: []
+```
