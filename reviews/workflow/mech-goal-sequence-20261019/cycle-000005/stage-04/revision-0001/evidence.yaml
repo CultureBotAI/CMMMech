@@ -1,0 +1,63 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 5
+stage: 4
+revision: 1
+outcome: completed
+summary: Completed full-inventory Cycle 5 Stage 4 scientific and structural review
+  of all 668 eligible CMMMech records at frozen commit 208134600496b954831b125033d33caa508dba8b
+  across 6 disjoint material_kind cohort reviews (66 element, 417 mineral, 7 mineral_group,
+  36 commodity, 31 primary_resource, 111 secondary_resource), 1 cross-cohort causal_graphs/protein_examples
+  review (120 records), and 3 single-record reviews (andreybulakhite, tetrahedrite-concentrate,
+  waste-liquid-crystal-display-panels). Preserved 3 open minor findings (cmmmech-cycle5-stage4-finding-0001,
+  cmmmech-cycle5-stage4-finding-0002, cmmmech-cycle5-stage4-finding-0003) across 15
+  records for Stage 5 grouped remediation.
+source_revision: 208134600496b954831b125033d33caa508dba8b
+scope_frozen_at: '2026-10-30T20:03:00Z'
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000004/stage-05/revision-0001/evidence.yaml
+  sha256: f8da027d26f3482f19cfda6b64f6497e13b7add766edfb8f6caf3f3448dc5a96
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-04/revision-0001/review_report.md
+  sha256: 05c73d2e2efabdd577f167e4aa8613afdd17b6d0248efacbed2289d29606cf7c
+  kind: review_report
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-04/revision-0001/review_findings.yaml
+  sha256: 0f6b6c28ffeeb331796856984db47e730a531393b844d55e79b3def915843afa
+  kind: review_findings
+findings:
+- finding_id: cmmmech-cycle5-stage4-finding-0001
+  status: open
+  summary: Across the 668-record corpus, 13 records (chromium.yaml, electrical-steel.yaml,
+    hafnium.yaml, manganese.yaml, praseodymium.yaml, rare-earth-element-commodities.yaml,
+    scandium.yaml, selenium.yaml, silicon-carbide.yaml, silicon.yaml, synthetic-graphite.yaml,
+    uranium.yaml, vanadium.yaml) serialize top-level 'criticality' before 'sources',
+    whereas CriticalMineralRecord in src/cmmmech/schema/cmmmech.yaml and CANONICAL_RECORD_KEYS
+    in scripts/new_history.py place 'sources' before 'criticality'.
+- finding_id: cmmmech-cycle5-stage4-finding-0002
+  status: open
+  summary: In data/records/tetrahedrite-concentrate.yaml (cmmmech:tetrahedrite-concentrate),
+    causal_graphs[0] (ferrooxidans_tetrahedrite_bioleaching_graph) node tth_hydrolase
+    (lines 304-307) retains single-species label 'Tth tetrathionate hydrolase (tth
+    / AFE_0029)' and generic description without Acidithiobacillus ferrivorans tetH
+    (UniProtKB:A0A060URH6, reference proteome UP000193925 strain CF27), whereas sibling
+    node sqr_reductase (lines 209-212) and edges[0].evidence[0].explanation (line
+    380) explicitly name both experimental species arms (A. ferrooxidans and A. ferrivorans).
+    In addition, edges[0].evidence[0].explanation (line 380) states 'individual sqr/tth/tetH
+    genes were not mutated', omitting sqr2 (AFERRI_20483, UniProtKB:A0A060UMZ1).
+- finding_id: cmmmech-cycle5-stage4-finding-0003
+  status: open
+  summary: In data/records/waste-liquid-crystal-display-panels.yaml (cmmmech:waste-liquid-crystal-display-panels),
+    causal_graphs[0] (ferrooxidans_lcd_indium_bioleaching_graph) node tth_hydrolase
+    (lines 297-300) retains single-species label 'Tth tetrathionate hydrolase (tth
+    / AFE_0029)' and generic description without the two grounded Acidithiobacillus
+    thiooxidans ATCC 19377 tth paralogs (GCD22_14205 UniProtKB:A0A5P9XPU3 and GCD22_02315
+    UniProtKB:A0A5P9XS05), whereas sibling node sqr_reductase (lines 204-207) explicitly
+    lists both A. ferrooxidans and A. thiooxidans paralog loci.
+groups: []
+carry_forward_ids:
+- cmmmech-cycle5-stage4-finding-0001
+- cmmmech-cycle5-stage4-finding-0002
+- cmmmech-cycle5-stage4-finding-0003
+infra_tasks: []

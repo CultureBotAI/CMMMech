@@ -1,0 +1,912 @@
+# Cycle 5 Stage 4 full-cohort review: primary_resource records (31/31)
+
+- Review: 20261030T201004Z-cycle5-stage4-primary-resource-cohort-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-30T20:05:00Z
+- Finished UTC: 2026-10-30T20:10:04Z
+- Reviewer: antigravity / cmmmech-cycle5-stage4-cohort-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Reviewed all 31 primary_resource records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b, including the 3 Cycle 5 Stage 2 causal-graph synchronizations (allanite-concentrate, dunite, tetrahedrite-concentrate) and the Cycle 5 Stage 3 Sqr/Sqr2 paralog grounding expansion on tetrahedrite-concentrate. All 31/31 records carry primary-source-supported microbial mechanisms (42 mechanisms total), and 7/31 (allanite-concentrate, dunite, kaolin, lithium-bearing-geothermal-brine, lithium-mica-ore, manganese-ore, tetrahedrite-concentrate) carry causal_graphs and UniProtKB protein_examples (15 unique accessions). Identified 1 minor graph/label finding (cmmmech-cycle5-stage4-finding-0002 on cmmmech:tetrahedrite-concentrate) for Stage 5 grouped remediation.
+
+## Scope And Provenance
+
+Full-population Cycle 5 Stage 4 category review of all 31 primary_resource records in CMMMech.
+
+Selection: data/records/*.yaml where material_kind == 'primary_resource' at 208134600496b954831b125033d33caa508dba8b
+Coverage: full; 31 reviewed / 31 in the declared population.
+Source: git_commit at Git base 208134600496b954831b125033d33caa508dba8b.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:allanite-concentrate | data/records/allanite-concentrate.yaml | maintained | Allanite concentrate |
+| cmmmech:basalt | data/records/basalt.yaml | maintained | Basaltic rock |
+| cmmmech:carbonatite-associated-rare-earth-ore | data/records/carbonatite-associated-rare-earth-ore.yaml | maintained | Carbonatite-associated rare-earth ore |
+| cmmmech:cassiterite-polymetallic-sulfide-ore | data/records/cassiterite-polymetallic-sulfide-ore.yaml | maintained | Cassiterite-polymetallic sulfide ore |
+| cmmmech:chalcopyrite-enargite-concentrate | data/records/chalcopyrite-enargite-concentrate.yaml | maintained | Chalcopyrite-enargite concentrate |
+| cmmmech:cobalt-rich-ferromanganese-crusts | data/records/cobalt-rich-ferromanganese-crusts.yaml | maintained | Cobalt-rich ferromanganese crusts |
+| cmmmech:dunite | data/records/dunite.yaml | maintained | Dunite |
+| cmmmech:enargite-pyrite-concentrate | data/records/enargite-pyrite-concentrate.yaml | maintained | Enargite-pyrite concentrate |
+| cmmmech:eucrite-meteorite | data/records/eucrite-meteorite.yaml | maintained | Eucrite meteorite |
+| cmmmech:eudialyte-concentrate | data/records/eudialyte-concentrate.yaml | maintained | Eudialyte concentrate |
+| cmmmech:eudialyte-ore | data/records/eudialyte-ore.yaml | maintained | Eudialyte ore |
+| cmmmech:ion-adsorption-rare-earth-clay | data/records/ion-adsorption-rare-earth-clay.yaml | maintained | Ion-adsorption rare-earth clay |
+| cmmmech:kaolin | data/records/kaolin.yaml | maintained | Natural kaolin feed |
+| cmmmech:l-chondrite-meteorite | data/records/l-chondrite-meteorite.yaml | maintained | L-chondrite meteorite |
+| cmmmech:lithium-bearing-geothermal-brine | data/records/lithium-bearing-geothermal-brine.yaml | maintained | Lithium-bearing geothermal brine |
+| cmmmech:lithium-mica-ore | data/records/lithium-mica-ore.yaml | maintained | Lithium-mica ore |
+| cmmmech:ludwigite-ore | data/records/ludwigite-ore.yaml | maintained | Ludwigite boron-iron ore |
+| cmmmech:manganese-ore | data/records/manganese-ore.yaml | maintained | Manganese ore |
+| cmmmech:metalliferous-black-shale | data/records/metalliferous-black-shale.yaml | maintained | Metalliferous black shale |
+| cmmmech:monazite-ore | data/records/monazite-ore.yaml | maintained | Monazite ore |
+| cmmmech:nickel-laterite-ore | data/records/nickel-laterite-ore.yaml | maintained | Nickel laterite ore |
+| cmmmech:nickeline-bearing-ore | data/records/nickeline-bearing-ore.yaml | maintained | Nickeline-bearing ore |
+| cmmmech:oxidized-zinc-ore | data/records/oxidized-zinc-ore.yaml | maintained | Oxidized zinc ore |
+| cmmmech:polymetallic-nodules | data/records/polymetallic-nodules.yaml | maintained | Polymetallic nodules |
+| cmmmech:rare-earth-rich-deep-sea-mud | data/records/rare-earth-rich-deep-sea-mud.yaml | maintained | Rare-earth-rich deep-sea mud |
+| cmmmech:seafloor-massive-sulfides | data/records/seafloor-massive-sulfides.yaml | maintained | Seafloor massive sulfides |
+| cmmmech:seawater | data/records/seawater.yaml | maintained | Seawater |
+| cmmmech:silica-sand | data/records/silica-sand.yaml | maintained | Natural silica-sand feed |
+| cmmmech:tennantite-concentrate | data/records/tennantite-concentrate.yaml | maintained | Tennantite concentrate |
+| cmmmech:tetrahedrite-concentrate | data/records/tetrahedrite-concentrate.yaml | maintained | Tetrahedrite concentrate |
+| cmmmech:xenotime-concentrate | data/records/xenotime-concentrate.yaml | maintained | Xenotime concentrate |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| cmmmech validate primary_resource cohort (31 records) | passed | True | cmmmech:allanite-concentrate, cmmmech:basalt, cmmmech:carbonatite-associated-rare-earth-ore, cmmmech:cassiterite-polymetallic-sulfide-ore, cmmmech:chalcopyrite-enargite-concentrate, cmmmech:cobalt-rich-ferromanganese-crusts, cmmmech:dunite, cmmmech:enargite-pyrite-concentrate, cmmmech:eucrite-meteorite, cmmmech:eudialyte-concentrate, cmmmech:eudialyte-ore, cmmmech:ion-adsorption-rare-earth-clay, cmmmech:kaolin, cmmmech:l-chondrite-meteorite, cmmmech:lithium-bearing-geothermal-brine, cmmmech:lithium-mica-ore, cmmmech:ludwigite-ore, cmmmech:manganese-ore, cmmmech:metalliferous-black-shale, cmmmech:monazite-ore, cmmmech:nickel-laterite-ore, cmmmech:nickeline-bearing-ore, cmmmech:oxidized-zinc-ore, cmmmech:polymetallic-nodules, cmmmech:rare-earth-rich-deep-sea-mud, cmmmech:seafloor-massive-sulfides, cmmmech:seawater, cmmmech:silica-sand, cmmmech:tennantite-concentrate, cmmmech:tetrahedrite-concentrate, cmmmech:xenotime-concentrate | All 31 records in cohort pass LinkML structural and semantic validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Primary ore/brine resource identity, bioleaching mechanisms, causal graphs, and UniProtKB protein examples
+
+evidence: supported. Targets: cmmmech:allanite-concentrate, cmmmech:basalt, cmmmech:carbonatite-associated-rare-earth-ore, cmmmech:cassiterite-polymetallic-sulfide-ore, cmmmech:chalcopyrite-enargite-concentrate, cmmmech:cobalt-rich-ferromanganese-crusts, cmmmech:dunite, cmmmech:enargite-pyrite-concentrate, cmmmech:eucrite-meteorite, cmmmech:eudialyte-concentrate, cmmmech:eudialyte-ore, cmmmech:ion-adsorption-rare-earth-clay, cmmmech:kaolin, cmmmech:l-chondrite-meteorite, cmmmech:lithium-bearing-geothermal-brine, cmmmech:lithium-mica-ore, cmmmech:ludwigite-ore, cmmmech:manganese-ore, cmmmech:metalliferous-black-shale, cmmmech:monazite-ore, cmmmech:nickel-laterite-ore, cmmmech:nickeline-bearing-ore, cmmmech:oxidized-zinc-ore, cmmmech:polymetallic-nodules, cmmmech:rare-earth-rich-deep-sea-mud, cmmmech:seafloor-massive-sulfides, cmmmech:seawater, cmmmech:silica-sand, cmmmech:tennantite-concentrate, cmmmech:tetrahedrite-concentrate, cmmmech:xenotime-concentrate.
+
+All 31/31 primary_resource records contain primary-source-supported microbial mechanisms (42 mechanisms total) and 7/31 contain causal_graphs grounded to 15 unique UniProtKB accessions. In cmmmech:tetrahedrite-concentrate, causal_graphs[0].nodes[1] (tth_hydrolase) retains a single-species label/description and edges[0].evidence[0].explanation omits sqr2.
+
+## Findings
+
+### cmmmech-cycle5-stage4-finding-0002: causal_graphs[0] in tetrahedrite-concentrate.yaml retains single-species tth_hydrolase label/description and omits sqr2 in edges[0].evidence[0].explanation
+
+minor / open / confirmed; issue key: cmmmech.tetrahedrite-concentrate.tth-hydrolase-label-and-edge-explanation.
+
+In data/records/tetrahedrite-concentrate.yaml (cmmmech:tetrahedrite-concentrate), causal_graphs[0] (ferrooxidans_tetrahedrite_bioleaching_graph) node tth_hydrolase (lines 304-307) retains single-species label 'Tth tetrathionate hydrolase (tth / AFE_0029)' and generic description without Acidithiobacillus ferrivorans tetH (UniProtKB:A0A060URH6, reference proteome UP000193925 strain CF27), whereas sibling node sqr_reductase (lines 209-212) and edges[0].evidence[0].explanation (line 380) explicitly name both experimental species arms (A. ferrooxidans and A. ferrivorans). In addition, edges[0].evidence[0].explanation (line 380) states 'individual sqr/tth/tetH genes were not mutated', omitting sqr2 (AFERRI_20483, UniProtKB:A0A060UMZ1).
+
+## Recommended Actions And Acceptance Checks
+
+### act-fix-tetrahedrite-concentrate-tth-label-and-edge-explanation
+
+Update causal_graphs[0].nodes[1].label and description in data/records/tetrahedrite-concentrate.yaml to include both A. ferrooxidans Tth (tth / AFE_0029) and A. ferrivorans TetH (tetH / UniProtKB:A0A060URH6), and update causal_graphs[0].edges[0].evidence[0].explanation to list sqr/sqr2/tth/tetH during Stage 5 grouped remediation with a canonical history sidecar.
+
+- causal_graphs[0].nodes[1].label and description in data/records/tetrahedrite-concentrate.yaml name both A. ferrooxidans Tth (tth / AFE_0029) and A. ferrivorans TetH (tetH / UniProtKB:A0A060URH6).
+- causal_graphs[0].edges[0].evidence[0].explanation lists individual sqr/sqr2/tth/tetH genes.
+- A matching EDIT history sidecar exists in history/records/tetrahedrite-concentrate/ and passes just check.
+
+## Category Boundaries
+
+- retain: cmmmech:allanite-concentrate, cmmmech:basalt, cmmmech:carbonatite-associated-rare-earth-ore, cmmmech:cassiterite-polymetallic-sulfide-ore, cmmmech:chalcopyrite-enargite-concentrate, cmmmech:cobalt-rich-ferromanganese-crusts, cmmmech:dunite, cmmmech:enargite-pyrite-concentrate, cmmmech:eucrite-meteorite, cmmmech:eudialyte-concentrate, cmmmech:eudialyte-ore, cmmmech:ion-adsorption-rare-earth-clay, cmmmech:kaolin, cmmmech:l-chondrite-meteorite, cmmmech:lithium-bearing-geothermal-brine, cmmmech:lithium-mica-ore, cmmmech:ludwigite-ore, cmmmech:manganese-ore, cmmmech:metalliferous-black-shale, cmmmech:monazite-ore, cmmmech:nickel-laterite-ore, cmmmech:nickeline-bearing-ore, cmmmech:oxidized-zinc-ore, cmmmech:polymetallic-nodules, cmmmech:rare-earth-rich-deep-sea-mud, cmmmech:seafloor-massive-sulfides, cmmmech:seawater, cmmmech:silica-sand, cmmmech:tennantite-concentrate, cmmmech:tetrahedrite-concentrate, cmmmech:xenotime-concentrate. All 31 records in this cohort denote distinct, non-synonymous entities matching data/records/*.yaml where material_kind == 'primary_resource' at 208134600496b954831b125033d33caa508dba8b with no duplicate IDs, names, or external identifier collisions.
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| ev-primary-resource-cohort-audit | data/records/*.yaml (material_kind == 'primary_resource'); 31 primary_resource YAML files | supports | Full programmatic and source-backed audit of all 31 primary_resource records at commit 208134600496b954831b125033d33caa508dba8b. |
+
+## Limits And Additional Notes
+
+- In data/records/tetrahedrite-concentrate.yaml, causal_graphs[0].nodes[1] (tth_hydrolase) retains a single-species label/description and edges[0].evidence[0].explanation omits sqr2 (tracked as open finding cmmmech-cycle5-stage4-finding-0002 for Stage 5 remediation).
+- Cohort covers 100% (31/31) of target records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261030T201004Z-cycle5-stage4-primary-resource-cohort-review
+title: 'Cycle 5 Stage 4 full-cohort review: primary_resource records (31/31)'
+repository: CultureBotAI/CMMMech
+kind: category
+started_at: '2026-10-30T20:05:00Z'
+finished_at: '2026-10-30T20:10:04Z'
+skill: .claude/skills/review-yaml-category/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: Reviewed all 31 primary_resource records in data/records/*.yaml at commit
+  208134600496b954831b125033d33caa508dba8b, including the 3 Cycle 5 Stage 2 causal-graph
+  synchronizations (allanite-concentrate, dunite, tetrahedrite-concentrate) and the
+  Cycle 5 Stage 3 Sqr/Sqr2 paralog grounding expansion on tetrahedrite-concentrate.
+  All 31/31 records carry primary-source-supported microbial mechanisms (42 mechanisms
+  total), and 7/31 (allanite-concentrate, dunite, kaolin, lithium-bearing-geothermal-brine,
+  lithium-mica-ore, manganese-ore, tetrahedrite-concentrate) carry causal_graphs and
+  UniProtKB protein_examples (15 unique accessions). Identified 1 minor graph/label
+  finding (cmmmech-cycle5-stage4-finding-0002 on cmmmech:tetrahedrite-concentrate)
+  for Stage 5 grouped remediation.
+reviewer:
+  identity: antigravity / cmmmech-cycle5-stage4-cohort-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of Cycle 5 Stage 4 record_review
+    (.claude/skills/review-yaml-category/SKILL.md) against frozen commit 208134600496b954831b125033d33caa508dba8b.
+source:
+  git_revision: 208134600496b954831b125033d33caa508dba8b
+  state: git_commit
+  inputs:
+  - path: data/records/allanite-concentrate.yaml
+    sha256: 5ff8f325fe6c9edb11534431427b11a2c617145e9a97d7de1b2449143b8b0ad9
+    role: target
+  - path: data/records/basalt.yaml
+    sha256: e7f999badce7c3ebca3fe28a56827f602d4162b5b6e4b00729b06b019001e1e5
+    role: target
+  - path: data/records/carbonatite-associated-rare-earth-ore.yaml
+    sha256: 9e856c3d9aa14c56fb3a7b70ae3ec0a97da48045debc569dcdf832a7258e0be2
+    role: target
+  - path: data/records/cassiterite-polymetallic-sulfide-ore.yaml
+    sha256: abbdb703ae4d540946590f5d7adf5067fd3fccd38fb27b65811898bfd2eea39f
+    role: target
+  - path: data/records/chalcopyrite-enargite-concentrate.yaml
+    sha256: 50c5e78a591a14b0244e47ae414de6effc6cbd5343b2523351c7121275ab4dc8
+    role: target
+  - path: data/records/cobalt-rich-ferromanganese-crusts.yaml
+    sha256: 2fb1a8680f44580a73bd26c503266ff645f03c3fef01380f23ad15db532a04f1
+    role: target
+  - path: data/records/dunite.yaml
+    sha256: 47f4822e55b2d4df659f31fe5bfe9be50cec4c1e0b69ee734e50fec9d136c766
+    role: target
+  - path: data/records/enargite-pyrite-concentrate.yaml
+    sha256: 95d205d0feb7212875387fa5ddba9e88f32765eb8e1c502926eb681643f35c1a
+    role: target
+  - path: data/records/eucrite-meteorite.yaml
+    sha256: 92a87d16eb94ca6965bc030fc3ea541135f7e7b56c7559c50dd73c5733f6d0c8
+    role: target
+  - path: data/records/eudialyte-concentrate.yaml
+    sha256: afa309420e2e20f08868b5708c24e08ba612088643b9c484d9c53d755846b647
+    role: target
+  - path: data/records/eudialyte-ore.yaml
+    sha256: ddecf732576b7bd3d791b9bb2d90529a202cae0bcfeb0caefbf8d0e6a6e39f5e
+    role: target
+  - path: data/records/ion-adsorption-rare-earth-clay.yaml
+    sha256: 3a3c3cd05e03e27a3cb97e31d3ebc9c1f9b4c89747a48b029257cc02570ecf1d
+    role: target
+  - path: data/records/kaolin.yaml
+    sha256: 8e754fc3cba67a9b31d2cae9ef8846128fbe6f39c1b3d591d3e5434fb25b29f0
+    role: target
+  - path: data/records/l-chondrite-meteorite.yaml
+    sha256: 34584d2e958a41003f07514974d96899043cc729ea68c621ebef65254875601f
+    role: target
+  - path: data/records/lithium-bearing-geothermal-brine.yaml
+    sha256: 53dc79243621d802befd7d309d8b12a079c57e81b1b5c9fabb3b25511c70dfa8
+    role: target
+  - path: data/records/lithium-mica-ore.yaml
+    sha256: 48a2f772fe3feb00eab2dee2b5d80e8daa45f5605ddb504282571ef7d5a925cf
+    role: target
+  - path: data/records/ludwigite-ore.yaml
+    sha256: c55996420abc0062e76e4f91370f9dd2d28e508d77604fe17d23f6dba38ff5c5
+    role: target
+  - path: data/records/manganese-ore.yaml
+    sha256: 94180086908103d6ef736b9e61e4fdea69c07e65a12f1fb11981bd5b46fb3d1a
+    role: target
+  - path: data/records/metalliferous-black-shale.yaml
+    sha256: b8fd8aa9806b963cd1f803988fb27633658f597a10495fe667bb5c701367a7ef
+    role: target
+  - path: data/records/monazite-ore.yaml
+    sha256: 8b2de973c88b9156995737a0b9314600c0b9eaebb1808444db9019fc7213a82b
+    role: target
+  - path: data/records/nickel-laterite-ore.yaml
+    sha256: 98c1bee7184d632ed9ea7ed901dfd231b43f95c84d7d9d0d6df224fa6540d1d6
+    role: target
+  - path: data/records/nickeline-bearing-ore.yaml
+    sha256: ed5380b36177b247c2adbb0b63444f8663c7bbad02ea438c29800e05a270a47a
+    role: target
+  - path: data/records/oxidized-zinc-ore.yaml
+    sha256: a7b4bca381fce99518963f2ea3d8228c0cf19a7923ec7fe438ca17ee7163fc22
+    role: target
+  - path: data/records/polymetallic-nodules.yaml
+    sha256: 1fb81047e94d62e7af4cf218733f32692e8cd90443acd64c4c60c4dbbef8f20d
+    role: target
+  - path: data/records/rare-earth-rich-deep-sea-mud.yaml
+    sha256: 82896cb3ce5eb02dfaee2a537582b6a414c192332fffb582ce30ba1b31154151
+    role: target
+  - path: data/records/seafloor-massive-sulfides.yaml
+    sha256: aa25b49b9db4d610f888489c6d49836b7c8adea6415fca42e6403391f2b5aaea
+    role: target
+  - path: data/records/seawater.yaml
+    sha256: 3eca7555a6f0a9f377001f5968a9924b73d014179255a4c1d4a6bcf412850ec5
+    role: target
+  - path: data/records/silica-sand.yaml
+    sha256: 5bbd5618ce6bb4cdf9738e4fe16386517e204ac6752abd6182b2e4864d356808
+    role: target
+  - path: data/records/tennantite-concentrate.yaml
+    sha256: 3c5e3548fd7d4dcd1e81b08f1006a24cfeebb9ad77934a5be5dc4e5a168dc7ad
+    role: target
+  - path: data/records/tetrahedrite-concentrate.yaml
+    sha256: 3fdb94f907c15d06181c587c3b808643b58df94c6ab31d0febd2f33fe026a00f
+    role: target
+  - path: data/records/xenotime-concentrate.yaml
+    sha256: 8e1d30e8c05053055fc352625e894a6575f3ed288c5c702d0aff702cdb9290ea
+    role: target
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+  - path: src/cmmmech/validation.py
+    sha256: d2a31e40b52cee60a86a2897db9b8274b1089c92dd043d83313b7d87e05c6635
+    role: context
+scope:
+  coverage: full
+  population_size: 31
+  reviewed_target_ids:
+  - cmmmech:allanite-concentrate
+  - cmmmech:basalt
+  - cmmmech:carbonatite-associated-rare-earth-ore
+  - cmmmech:cassiterite-polymetallic-sulfide-ore
+  - cmmmech:chalcopyrite-enargite-concentrate
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+  - cmmmech:dunite
+  - cmmmech:enargite-pyrite-concentrate
+  - cmmmech:eucrite-meteorite
+  - cmmmech:eudialyte-concentrate
+  - cmmmech:eudialyte-ore
+  - cmmmech:ion-adsorption-rare-earth-clay
+  - cmmmech:kaolin
+  - cmmmech:l-chondrite-meteorite
+  - cmmmech:lithium-bearing-geothermal-brine
+  - cmmmech:lithium-mica-ore
+  - cmmmech:ludwigite-ore
+  - cmmmech:manganese-ore
+  - cmmmech:metalliferous-black-shale
+  - cmmmech:monazite-ore
+  - cmmmech:nickel-laterite-ore
+  - cmmmech:nickeline-bearing-ore
+  - cmmmech:oxidized-zinc-ore
+  - cmmmech:polymetallic-nodules
+  - cmmmech:rare-earth-rich-deep-sea-mud
+  - cmmmech:seafloor-massive-sulfides
+  - cmmmech:seawater
+  - cmmmech:silica-sand
+  - cmmmech:tennantite-concentrate
+  - cmmmech:tetrahedrite-concentrate
+  - cmmmech:xenotime-concentrate
+  selection: data/records/*.yaml where material_kind == 'primary_resource' at 208134600496b954831b125033d33caa508dba8b
+  description: Full-population Cycle 5 Stage 4 category review of all 31 primary_resource
+    records in CMMMech.
+targets:
+- target_id: cmmmech:allanite-concentrate
+  path: data/records/allanite-concentrate.yaml
+  kind: maintained
+  label: Allanite concentrate
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/allanite-concentrate.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:basalt
+  path: data/records/basalt.yaml
+  kind: maintained
+  label: Basaltic rock
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/basalt.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:carbonatite-associated-rare-earth-ore
+  path: data/records/carbonatite-associated-rare-earth-ore.yaml
+  kind: maintained
+  label: Carbonatite-associated rare-earth ore
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/carbonatite-associated-rare-earth-ore.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:cassiterite-polymetallic-sulfide-ore
+  path: data/records/cassiterite-polymetallic-sulfide-ore.yaml
+  kind: maintained
+  label: Cassiterite-polymetallic sulfide ore
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cassiterite-polymetallic-sulfide-ore.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:chalcopyrite-enargite-concentrate
+  path: data/records/chalcopyrite-enargite-concentrate.yaml
+  kind: maintained
+  label: Chalcopyrite-enargite concentrate
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/chalcopyrite-enargite-concentrate.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:cobalt-rich-ferromanganese-crusts
+  path: data/records/cobalt-rich-ferromanganese-crusts.yaml
+  kind: maintained
+  label: Cobalt-rich ferromanganese crusts
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cobalt-rich-ferromanganese-crusts.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:dunite
+  path: data/records/dunite.yaml
+  kind: maintained
+  label: Dunite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/dunite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:enargite-pyrite-concentrate
+  path: data/records/enargite-pyrite-concentrate.yaml
+  kind: maintained
+  label: Enargite-pyrite concentrate
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/enargite-pyrite-concentrate.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:eucrite-meteorite
+  path: data/records/eucrite-meteorite.yaml
+  kind: maintained
+  label: Eucrite meteorite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/eucrite-meteorite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:eudialyte-concentrate
+  path: data/records/eudialyte-concentrate.yaml
+  kind: maintained
+  label: Eudialyte concentrate
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/eudialyte-concentrate.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:eudialyte-ore
+  path: data/records/eudialyte-ore.yaml
+  kind: maintained
+  label: Eudialyte ore
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/eudialyte-ore.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:ion-adsorption-rare-earth-clay
+  path: data/records/ion-adsorption-rare-earth-clay.yaml
+  kind: maintained
+  label: Ion-adsorption rare-earth clay
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/ion-adsorption-rare-earth-clay.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:kaolin
+  path: data/records/kaolin.yaml
+  kind: maintained
+  label: Natural kaolin feed
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/kaolin.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:l-chondrite-meteorite
+  path: data/records/l-chondrite-meteorite.yaml
+  kind: maintained
+  label: L-chondrite meteorite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/l-chondrite-meteorite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:lithium-bearing-geothermal-brine
+  path: data/records/lithium-bearing-geothermal-brine.yaml
+  kind: maintained
+  label: Lithium-bearing geothermal brine
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lithium-bearing-geothermal-brine.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:lithium-mica-ore
+  path: data/records/lithium-mica-ore.yaml
+  kind: maintained
+  label: Lithium-mica ore
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lithium-mica-ore.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:ludwigite-ore
+  path: data/records/ludwigite-ore.yaml
+  kind: maintained
+  label: Ludwigite boron-iron ore
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/ludwigite-ore.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:manganese-ore
+  path: data/records/manganese-ore.yaml
+  kind: maintained
+  label: Manganese ore
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/manganese-ore.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:metalliferous-black-shale
+  path: data/records/metalliferous-black-shale.yaml
+  kind: maintained
+  label: Metalliferous black shale
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/metalliferous-black-shale.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:monazite-ore
+  path: data/records/monazite-ore.yaml
+  kind: maintained
+  label: Monazite ore
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/monazite-ore.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:nickel-laterite-ore
+  path: data/records/nickel-laterite-ore.yaml
+  kind: maintained
+  label: Nickel laterite ore
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/nickel-laterite-ore.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:nickeline-bearing-ore
+  path: data/records/nickeline-bearing-ore.yaml
+  kind: maintained
+  label: Nickeline-bearing ore
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/nickeline-bearing-ore.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:oxidized-zinc-ore
+  path: data/records/oxidized-zinc-ore.yaml
+  kind: maintained
+  label: Oxidized zinc ore
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/oxidized-zinc-ore.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:polymetallic-nodules
+  path: data/records/polymetallic-nodules.yaml
+  kind: maintained
+  label: Polymetallic nodules
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/polymetallic-nodules.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:rare-earth-rich-deep-sea-mud
+  path: data/records/rare-earth-rich-deep-sea-mud.yaml
+  kind: maintained
+  label: Rare-earth-rich deep-sea mud
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/rare-earth-rich-deep-sea-mud.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:seafloor-massive-sulfides
+  path: data/records/seafloor-massive-sulfides.yaml
+  kind: maintained
+  label: Seafloor massive sulfides
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/seafloor-massive-sulfides.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:seawater
+  path: data/records/seawater.yaml
+  kind: maintained
+  label: Seawater
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/seawater.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:silica-sand
+  path: data/records/silica-sand.yaml
+  kind: maintained
+  label: Natural silica-sand feed
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/silica-sand.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:tennantite-concentrate
+  path: data/records/tennantite-concentrate.yaml
+  kind: maintained
+  label: Tennantite concentrate
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tennantite-concentrate.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:tetrahedrite-concentrate
+  path: data/records/tetrahedrite-concentrate.yaml
+  kind: maintained
+  label: Tetrahedrite concentrate
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tetrahedrite-concentrate.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+- target_id: cmmmech:xenotime-concentrate
+  path: data/records/xenotime-concentrate.yaml
+  kind: maintained
+  label: Xenotime concentrate
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/xenotime-concentrate.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+checks:
+- check_id: cmmmech-validate-primary-resource-cohort
+  name: cmmmech validate primary_resource cohort (31 records)
+  status: passed
+  required: true
+  command: .venv/bin/cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:allanite-concentrate
+  - cmmmech:basalt
+  - cmmmech:carbonatite-associated-rare-earth-ore
+  - cmmmech:cassiterite-polymetallic-sulfide-ore
+  - cmmmech:chalcopyrite-enargite-concentrate
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+  - cmmmech:dunite
+  - cmmmech:enargite-pyrite-concentrate
+  - cmmmech:eucrite-meteorite
+  - cmmmech:eudialyte-concentrate
+  - cmmmech:eudialyte-ore
+  - cmmmech:ion-adsorption-rare-earth-clay
+  - cmmmech:kaolin
+  - cmmmech:l-chondrite-meteorite
+  - cmmmech:lithium-bearing-geothermal-brine
+  - cmmmech:lithium-mica-ore
+  - cmmmech:ludwigite-ore
+  - cmmmech:manganese-ore
+  - cmmmech:metalliferous-black-shale
+  - cmmmech:monazite-ore
+  - cmmmech:nickel-laterite-ore
+  - cmmmech:nickeline-bearing-ore
+  - cmmmech:oxidized-zinc-ore
+  - cmmmech:polymetallic-nodules
+  - cmmmech:rare-earth-rich-deep-sea-mud
+  - cmmmech:seafloor-massive-sulfides
+  - cmmmech:seawater
+  - cmmmech:silica-sand
+  - cmmmech:tennantite-concentrate
+  - cmmmech:tetrahedrite-concentrate
+  - cmmmech:xenotime-concentrate
+  evidence_ids:
+  - ev-primary-resource-cohort-audit
+  summary: All 31 records in cohort pass LinkML structural and semantic validation
+    with 0 errors.
+assessments:
+- assessment_id: assess-primary-resource-mechanisms-and-grounding
+  topic: Primary ore/brine resource identity, bioleaching mechanisms, causal graphs,
+    and UniProtKB protein examples
+  area: evidence
+  outcome: supported
+  target_ids:
+  - cmmmech:allanite-concentrate
+  - cmmmech:basalt
+  - cmmmech:carbonatite-associated-rare-earth-ore
+  - cmmmech:cassiterite-polymetallic-sulfide-ore
+  - cmmmech:chalcopyrite-enargite-concentrate
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+  - cmmmech:dunite
+  - cmmmech:enargite-pyrite-concentrate
+  - cmmmech:eucrite-meteorite
+  - cmmmech:eudialyte-concentrate
+  - cmmmech:eudialyte-ore
+  - cmmmech:ion-adsorption-rare-earth-clay
+  - cmmmech:kaolin
+  - cmmmech:l-chondrite-meteorite
+  - cmmmech:lithium-bearing-geothermal-brine
+  - cmmmech:lithium-mica-ore
+  - cmmmech:ludwigite-ore
+  - cmmmech:manganese-ore
+  - cmmmech:metalliferous-black-shale
+  - cmmmech:monazite-ore
+  - cmmmech:nickel-laterite-ore
+  - cmmmech:nickeline-bearing-ore
+  - cmmmech:oxidized-zinc-ore
+  - cmmmech:polymetallic-nodules
+  - cmmmech:rare-earth-rich-deep-sea-mud
+  - cmmmech:seafloor-massive-sulfides
+  - cmmmech:seawater
+  - cmmmech:silica-sand
+  - cmmmech:tennantite-concentrate
+  - cmmmech:tetrahedrite-concentrate
+  - cmmmech:xenotime-concentrate
+  evidence_ids:
+  - ev-primary-resource-cohort-audit
+  summary: All 31/31 primary_resource records contain primary-source-supported microbial
+    mechanisms (42 mechanisms total) and 7/31 contain causal_graphs grounded to 15
+    unique UniProtKB accessions. In cmmmech:tetrahedrite-concentrate, causal_graphs[0].nodes[1]
+    (tth_hydrolase) retains a single-species label/description and edges[0].evidence[0].explanation
+    omits sqr2.
+findings:
+- finding_id: cmmmech-cycle5-stage4-finding-0002
+  issue_key: cmmmech.tetrahedrite-concentrate.tth-hydrolase-label-and-edge-explanation
+  title: causal_graphs[0] in tetrahedrite-concentrate.yaml retains single-species
+    tth_hydrolase label/description and omits sqr2 in edges[0].evidence[0].explanation
+  severity: minor
+  category: graph
+  certainty: confirmed
+  status: open
+  target_ids:
+  - cmmmech:tetrahedrite-concentrate
+  field_paths:
+  - causal_graphs[0].nodes[1].label
+  - causal_graphs[0].nodes[1].description
+  - causal_graphs[0].edges[0].evidence[0].explanation
+  evidence_ids:
+  - ev-primary-resource-cohort-audit
+  description: In data/records/tetrahedrite-concentrate.yaml (cmmmech:tetrahedrite-concentrate),
+    causal_graphs[0] (ferrooxidans_tetrahedrite_bioleaching_graph) node tth_hydrolase
+    (lines 304-307) retains single-species label 'Tth tetrathionate hydrolase (tth
+    / AFE_0029)' and generic description without Acidithiobacillus ferrivorans tetH
+    (UniProtKB:A0A060URH6, reference proteome UP000193925 strain CF27), whereas sibling
+    node sqr_reductase (lines 209-212) and edges[0].evidence[0].explanation (line
+    380) explicitly name both experimental species arms (A. ferrooxidans and A. ferrivorans).
+    In addition, edges[0].evidence[0].explanation (line 380) states 'individual sqr/tth/tetH
+    genes were not mutated', omitting sqr2 (AFERRI_20483, UniProtKB:A0A060UMZ1).
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tetrahedrite-concentrate.yaml
+    role: maintained_record
+actions:
+- action_id: act-fix-tetrahedrite-concentrate-tth-label-and-edge-explanation
+  finding_ids:
+  - cmmmech-cycle5-stage4-finding-0002
+  target_ids:
+  - cmmmech:tetrahedrite-concentrate
+  description: Update causal_graphs[0].nodes[1].label and description in data/records/tetrahedrite-concentrate.yaml
+    to include both A. ferrooxidans Tth (tth / AFE_0029) and A. ferrivorans TetH (tetH
+    / UniProtKB:A0A060URH6), and update causal_graphs[0].edges[0].evidence[0].explanation
+    to list sqr/sqr2/tth/tetH during Stage 5 grouped remediation with a canonical
+    history sidecar.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tetrahedrite-concentrate.yaml
+    role: maintained_record
+  acceptance_checks:
+  - causal_graphs[0].nodes[1].label and description in data/records/tetrahedrite-concentrate.yaml
+    name both A. ferrooxidans Tth (tth / AFE_0029) and A. ferrivorans TetH (tetH /
+    UniProtKB:A0A060URH6).
+  - causal_graphs[0].edges[0].evidence[0].explanation lists individual sqr/sqr2/tth/tetH
+    genes.
+  - A matching EDIT history sidecar exists in history/records/tetrahedrite-concentrate/
+    and passes just check.
+evidence:
+- evidence_id: ev-primary-resource-cohort-audit
+  kind: validation
+  reference: data/records/*.yaml (material_kind == 'primary_resource')
+  locator: 31 primary_resource YAML files
+  accessed_at: '2026-10-30T20:10:04Z'
+  support: supports
+  summary: Full programmatic and source-backed audit of all 31 primary_resource records
+    at commit 208134600496b954831b125033d33caa508dba8b.
+limitations:
+- In data/records/tetrahedrite-concentrate.yaml, causal_graphs[0].nodes[1] (tth_hydrolase)
+  retains a single-species label/description and edges[0].evidence[0].explanation
+  omits sqr2 (tracked as open finding cmmmech-cycle5-stage4-finding-0002 for Stage
+  5 remediation).
+notes:
+- Cohort covers 100% (31/31) of target records in data/records/*.yaml at commit 208134600496b954831b125033d33caa508dba8b.
+boundary_decisions:
+- action: retain
+  target_ids:
+  - cmmmech:allanite-concentrate
+  - cmmmech:basalt
+  - cmmmech:carbonatite-associated-rare-earth-ore
+  - cmmmech:cassiterite-polymetallic-sulfide-ore
+  - cmmmech:chalcopyrite-enargite-concentrate
+  - cmmmech:cobalt-rich-ferromanganese-crusts
+  - cmmmech:dunite
+  - cmmmech:enargite-pyrite-concentrate
+  - cmmmech:eucrite-meteorite
+  - cmmmech:eudialyte-concentrate
+  - cmmmech:eudialyte-ore
+  - cmmmech:ion-adsorption-rare-earth-clay
+  - cmmmech:kaolin
+  - cmmmech:l-chondrite-meteorite
+  - cmmmech:lithium-bearing-geothermal-brine
+  - cmmmech:lithium-mica-ore
+  - cmmmech:ludwigite-ore
+  - cmmmech:manganese-ore
+  - cmmmech:metalliferous-black-shale
+  - cmmmech:monazite-ore
+  - cmmmech:nickel-laterite-ore
+  - cmmmech:nickeline-bearing-ore
+  - cmmmech:oxidized-zinc-ore
+  - cmmmech:polymetallic-nodules
+  - cmmmech:rare-earth-rich-deep-sea-mud
+  - cmmmech:seafloor-massive-sulfides
+  - cmmmech:seawater
+  - cmmmech:silica-sand
+  - cmmmech:tennantite-concentrate
+  - cmmmech:tetrahedrite-concentrate
+  - cmmmech:xenotime-concentrate
+  rationale: All 31 records in this cohort denote distinct, non-synonymous entities
+    matching data/records/*.yaml where material_kind == 'primary_resource' at 208134600496b954831b125033d33caa508dba8b
+    with no duplicate IDs, names, or external identifier collisions.
+  evidence_ids:
+  - ev-primary-resource-cohort-audit
+```

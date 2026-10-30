@@ -1,0 +1,130 @@
+schema_version: 1.0.0
+review_id: 20261030T201007Z-andreybulakhite-cycle5-stage4-record-review
+title: 'Cycle 5 Stage 4 record review: cmmmech:andreybulakhite (Andreybulakhite)'
+repository: CultureBotAI/CMMMech
+kind: record
+started_at: '2026-10-30T20:07:00Z'
+finished_at: '2026-10-30T20:10:07Z'
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: pass
+scientific_review: true
+summary: Reviewed data/records/andreybulakhite.yaml (cmmmech:andreybulakhite) at commit
+  208134600496b954831b125033d33caa508dba8b following its Cycle 5 Stage 1 addition
+  as an IMA-approved nickel oxalate dihydrate mineral (ideal formula Ni(C2O4)(H2O)2
+  / Ni(C2O4)·2H2O, holotype EDX empirical formula (Ni0.63Cu0.27Mg0.08Co0.02)Sigma1.00(C2O4)·2H2O,
+  IMA:2023-037, symbol Adb). Verified primary-source alignment against the September
+  2026 IMA Master List (ima_2026_09, PDF p. 11) and Vereshchagin et al. (2025, European
+  Journal of Mineralogy 37:63-74, DOI:10.5194/ejm-37-63-2025) for both the biological
+  lichen biomineralization mechanism (lichen_apothecia_nickel_oxalate_biomineralization
+  in Lecanora cf. polytropa apothecia on weathered pyrrhotite–pentlandite–chalcopyrite
+  veinlets at the Nyud-II deposit, Monchegorsk pluton) and the abiotic anthropotype
+  mechanism (abiotic_anthropotype_nickel_oxalate_precipitation via room-temperature
+  aqueous precipitation of synthetic alpha-Ni(C2O4)·2H2O from 500 mL NiCl2·6H2O +
+  Na2C2O4 solution at 23–25 °C and pH 6.0–7.2). No open findings.
+reviewer:
+  identity: antigravity / cmmmech-cycle5-stage4-record-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of Cycle 5 Stage 4 record_review
+    (.claude/skills/review-yaml-record/SKILL.md) against frozen commit 208134600496b954831b125033d33caa508dba8b.
+source:
+  git_revision: 208134600496b954831b125033d33caa508dba8b
+  state: git_commit
+  inputs:
+  - path: data/records/andreybulakhite.yaml
+    sha256: 9fabecebd8a6dbbfe77b93597c5b11663efed3b0999c089771f3cb4d303eab93
+    role: target
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+  - path: src/cmmmech/validation.py
+    sha256: d2a31e40b52cee60a86a2897db9b8274b1089c92dd043d83313b7d87e05c6635
+    role: context
+scope:
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:andreybulakhite
+  selection: data/records/andreybulakhite.yaml at 208134600496b954831b125033d33caa508dba8b
+  description: Single-record Cycle 5 Stage 4 deep-dive audit of newly added Cycle
+    5 Stage 1 IMA mineral record cmmmech:andreybulakhite.
+targets:
+- target_id: cmmmech:andreybulakhite
+  path: data/records/andreybulakhite.yaml
+  kind: maintained
+  label: Andreybulakhite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/andreybulakhite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+checks:
+- check_id: cmmmech-validate-andreybulakhite
+  name: cmmmech validate andreybulakhite.yaml
+  status: passed
+  required: true
+  command: .venv/bin/cmmmech validate data/records/andreybulakhite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:andreybulakhite
+  evidence_ids:
+  - ev-andreybulakhite-file
+  summary: data/records/andreybulakhite.yaml passes LinkML structural and semantic
+    validation with 0 errors.
+assessments:
+- assessment_id: assess-andreybulakhite-identity-and-mechanisms
+  topic: IMA 2023-037 identity, empirical/ideal formulas, and dual biological/abiotic
+    holotype/anthropotype mechanisms
+  area: evidence
+  outcome: supported
+  target_ids:
+  - cmmmech:andreybulakhite
+  evidence_ids:
+  - ev-andreybulakhite-file
+  - ev-andreybulakhite-vereshchagin2025
+  summary: All crystallographic (monoclinic C2/c, a = 11.8392(5) Å, b = 5.3312(2)
+    Å, c = 9.8357(7) Å, beta = 126.723(5)°, V = 497.59(3) Å3), chemical (EDX empirical
+    formula (Ni0.63Cu0.27Mg0.08Co0.02)Sigma1.00(C2O4)·2H2O with complete Fe exclusion
+    below detection), biological (Lecanora cf. polytropa apothecia oxalic-acid biomineralization
+    of crystals up to 2 x 1 x 1 um in aggregates up to 40 x 30 x 30 um), and synthetic
+    anthropotype (aqueous NiCl2·6H2O + Na2C2O4 precipitation at 23–25 °C, pH 6.0–7.2)
+    claims are faithfully supported by Vereshchagin et al. (2025) and the September
+    2026 IMA Master List without species-level NCBITaxon over-grounding or industrial
+    leaching extrapolation.
+findings: []
+actions: []
+evidence:
+- evidence_id: ev-andreybulakhite-file
+  kind: record_content
+  reference: data/records/andreybulakhite.yaml
+  locator: lines 1-164
+  accessed_at: '2026-10-30T20:10:07Z'
+  support: supports
+  summary: Inspected all 164 lines of data/records/andreybulakhite.yaml, including
+    IMA:2023-037 identifier, two sources (ima_2026_09 and vereshchagin_2025_andreybulakhite),
+    and two mechanisms (lichen_apothecia_nickel_oxalate_biomineralization and abiotic_anthropotype_nickel_oxalate_precipitation).
+- evidence_id: ev-andreybulakhite-vereshchagin2025
+  kind: primary_source
+  reference: DOI:10.5194/ejm-37-63-2025
+  locator: Vereshchagin et al. 2025 European Journal of Mineralogy 37:63-74, pp. 63-72,
+    Tables 1-5, Figs. 1-5
+  accessed_at: '2026-10-30T20:10:07Z'
+  support: supports
+  summary: Vereshchagin et al. (2025) characterize holotype andreybulakhite (ML OF-978)
+    in Lecanora cf. polytropa apothecia on weathered Cu-Ni sulfide veinlets at the
+    Nyud-II deposit and its synthetic monoclinic alpha-Ni(C2O4)·2H2O anthropotype
+    precipitated from aqueous NiCl2·6H2O + Na2C2O4 at 23-25 °C and pH 6.0-7.2.
+limitations:
+- The host lichen in Vereshchagin et al. (2025) was identified morphologically in
+  open nomenclature as Lecanora cf. polytropa without molecular barcoding or isolate
+  accession, so no species-level NCBITaxon CURIE or protein-grounded causal_graph
+  is assigned.
+notes: []
