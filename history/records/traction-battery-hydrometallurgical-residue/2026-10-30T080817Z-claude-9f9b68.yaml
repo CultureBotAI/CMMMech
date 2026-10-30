@@ -1,0 +1,28 @@
+history_version: 1
+target:
+  kind: record
+  slug: traction-battery-hydrometallurgical-residue
+  path: data/records/traction-battery-hydrometallurgical-residue.yaml
+session:
+  id: 2026-10-30T080817Z-claude-9f9b68
+  timestamp: '2026-10-30T08:08:17Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Fix Sulfobacillus thermotolerans DSM 17362 strain ID, MC45-40AS consortium label,
+    and 40 C single-culture temperature in UniProtKB:A0ABN5H056 grounding (#859)
+  details: 'Resolved PR #858 adversarial review Finding 1 (#859) by updating annotation_note
+    and evidence[0].explanation for UniProtKB:A0ABN5H056 (Sulfobacillus thermotolerans BXT84_01680)
+    in mechanisms[0].protein_examples and causal_graphs[0].nodes[0].protein_examples to cite
+    S. thermotolerans DSM 17362, the 40 degrees C single-culture arm, and the 40/45 degrees
+    C consortium arms (MC40-25St / MC45-40AS) of lu2025.'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs

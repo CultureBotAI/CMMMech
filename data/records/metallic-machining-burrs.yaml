@@ -47,7 +47,28 @@ mechanisms:
     evidence:
     - source_ref: gomez_ramirez2020_burrs
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-oxidizing acidification and culture-associated Fe and Mo leaching from metallic machining burrs by Acidithiobacillus thiooxidans DSM 26636 in Gomez-Ramirez et al. (2020); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-oxidizing acidification and culture-associated Fe and Mo leaching from metallic machining burrs by Acidithiobacillus thiooxidans DSM 26636 in Gomez-Ramirez et al. (2020); individual sqr/sqor/tth genes were not mutated or directly assayed.
+  - uniprot_accession: UniProtKB:A0A5P9XUB1
+    entry_name: A0A5P9XUB1_ACITH
+    protein_name: Pyridine nucleotide-disulfide oxidoreductase
+    gene_symbol: sqor
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207; 379 aa) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+    annotation_note: Grounded to second sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207; 379 aa) in reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans DSM 26636 (NCBITaxon:930) in Gomez-Ramirez et al. (2020).
+    evidence:
+    - source_ref: gomez_ramirez2020_burrs
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for sulfur-oxidizing acidification and culture-associated Fe and Mo leaching from metallic machining burrs by Acidithiobacillus thiooxidans DSM 26636 in Gomez-Ramirez et al. (2020); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - uniprot_accession: UniProtKB:A0A5P9XPU3
     entry_name: A0A5P9XPU3_ACITH
     protein_name: Tetrathionate hydrolase
@@ -69,7 +90,29 @@ mechanisms:
     evidence:
     - source_ref: gomez_ramirez2020_burrs
       supports: partial
-      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing acidification and culture-associated Fe and Mo leaching from metallic machining burrs by Acidithiobacillus thiooxidans DSM 26636 in Gomez-Ramirez et al. (2020); individual sqr/tth genes were not mutated or directly assayed.
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing acidification and culture-associated Fe and Mo leaching from metallic machining burrs by Acidithiobacillus thiooxidans DSM 26636 in Gomez-Ramirez et al. (2020); individual sqr/sqor/tth genes were not mutated or directly assayed.
+  - uniprot_accession: UniProtKB:A0A5P9XS05
+    entry_name: A0A5P9XS05_ACITH
+    protein_name: Tetrathionate hydrolase
+    gene_symbol: tth
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Full-length sulfur-cluster periplasmic tetrathionate hydrolase paralog (tth, locus GCD22_02315; 503 aa) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+    annotation_note: Grounded to full-length 503-aa sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315, co-localized with sqr GCD22_02301) in reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans DSM 26636 (NCBITaxon:930) in Gomez-Ramirez et al. (2020).
+    evidence:
+    - source_ref: gomez_ramirez2020_burrs
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for sulfur-oxidizing acidification and culture-associated Fe and Mo leaching from metallic machining burrs by Acidithiobacillus thiooxidans DSM 26636 in Gomez-Ramirez et al. (2020); individual sqr/sqor/tth genes were not mutated or directly assayed.
   evidence:
   - source_ref: gomez_ramirez2020_burrs
     supports: support
@@ -95,15 +138,15 @@ mechanisms:
 causal_graphs:
 - id: sulfur_oxidation_associated_burr_leaching_graph
   name: Acidithiobacillus thiooxidans DSM 26636 sulfur-oxidizing culture-associated leaching of Fe and Mo from metallic machining burrs
-  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr and Tth to sulfate and titratable-acidity generation in elemental-sulfur-supplemented modified Starkey medium and limited mobilization of Fe and Mo from industrial metallic machining burrs.
+  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr/Sqor and Tth to sulfate and titratable-acidity generation in elemental-sulfur-supplemented modified Starkey medium and limited mobilization of Fe and Mo from industrial metallic machining burrs.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: sulfur_oxidation_associated_burr_leaching
   nodes:
   - id: sqr_reductase
-    label: Sqr sulfide-quinone reductase (sqr)
+    label: Sqr/Sqor sulfide-quinone reductase (sqr / sqor)
     node_type: GENE_OR_PROTEIN
     gene_symbol: sqr
-    description: Membrane-bound sulfide-quinone reductase oxidizing reduced sulfur species to zero-valent sulfur and polythionate intermediates.
+    description: Membrane-bound sulfide-quinone reductase (Sqr/Sqor; GCD22_02301 / GCD22_03207) oxidizing reduced sulfur species to zero-valent sulfur and polythionate intermediates.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A0A543Q349
@@ -126,7 +169,28 @@ causal_graphs:
       evidence:
       - source_ref: gomez_ramirez2020_burrs
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-oxidizing acidification and culture-associated Fe and Mo leaching from metallic machining burrs by Acidithiobacillus thiooxidans DSM 26636 in Gomez-Ramirez et al. (2020); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr) for sulfur-oxidizing acidification and culture-associated Fe and Mo leaching from metallic machining burrs by Acidithiobacillus thiooxidans DSM 26636 in Gomez-Ramirez et al. (2020); individual sqr/sqor/tth genes were not mutated or directly assayed.
+    - uniprot_accession: UniProtKB:A0A5P9XUB1
+      entry_name: A0A5P9XUB1_ACITH
+      protein_name: Pyridine nucleotide-disulfide oxidoreductase
+      gene_symbol: sqor
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207; 379 aa) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+      annotation_note: Grounded to second sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207; 379 aa) in reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans DSM 26636 (NCBITaxon:930) in Gomez-Ramirez et al. (2020).
+      evidence:
+      - source_ref: gomez_ramirez2020_burrs
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for sulfur-oxidizing acidification and culture-associated Fe and Mo leaching from metallic machining burrs by Acidithiobacillus thiooxidans DSM 26636 in Gomez-Ramirez et al. (2020); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - id: tth_hydrolase
     label: Tth tetrathionate hydrolase (tth)
     node_type: GENE_OR_PROTEIN
@@ -155,7 +219,29 @@ causal_graphs:
       evidence:
       - source_ref: gomez_ramirez2020_burrs
         supports: partial
-        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing acidification and culture-associated Fe and Mo leaching from metallic machining burrs by Acidithiobacillus thiooxidans DSM 26636 in Gomez-Ramirez et al. (2020); individual sqr/tth genes were not mutated or directly assayed.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing acidification and culture-associated Fe and Mo leaching from metallic machining burrs by Acidithiobacillus thiooxidans DSM 26636 in Gomez-Ramirez et al. (2020); individual sqr/sqor/tth genes were not mutated or directly assayed.
+    - uniprot_accession: UniProtKB:A0A5P9XS05
+      entry_name: A0A5P9XS05_ACITH
+      protein_name: Tetrathionate hydrolase
+      gene_symbol: tth
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Full-length sulfur-cluster periplasmic tetrathionate hydrolase paralog (tth, locus GCD22_02315; 503 aa) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+      annotation_note: Grounded to full-length 503-aa sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315, co-localized with sqr GCD22_02301) in reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans DSM 26636 (NCBITaxon:930) in Gomez-Ramirez et al. (2020).
+      evidence:
+      - source_ref: gomez_ramirez2020_burrs
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for sulfur-oxidizing acidification and culture-associated Fe and Mo leaching from metallic machining burrs by Acidithiobacillus thiooxidans DSM 26636 in Gomez-Ramirez et al. (2020); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - id: acidified_starkey_sulfur_medium
     label: Acidified A. thiooxidans DSM 26636 modified Starkey medium + 1% w/v S0 (~0.15-0.16 M titratable acidity over 21 days at 30 C)
     node_type: CHEMICAL_ENTITY
@@ -217,6 +303,16 @@ curation_history:
   curator: claude (Claude Opus 4.6; antigravity)
   action: edit
   summary: Added representative Acidithiobacillus thiooxidans ATCC 19377 Sqr (UniProtKB:A0A543Q349) and Tth (UniProtKB:A0A5P9XPU3) protein examples and causal graph (sulfur_oxidation_associated_burr_leaching_graph) to metallic-machining-burrs.yaml.
+- timestamp: '2026-10-30T07:41:05Z'
+  curator: claude (Claude Opus 4.6; antigravity)
+  action: edit
+  summary: Added live-verified Acidithiobacillus thiooxidans ATCC 19377 Sqor (UniProtKB:A0A5P9XUB1, locus GCD22_03207) and full-length sulfur-cluster Tth (UniProtKB:A0A5P9XS05, locus GCD22_02315) paralog protein examples to sqr_reductase and tth_hydrolase in metallic-machining-burrs.yaml.
+- timestamp: '2026-10-30T08:09:30Z'
+  curator: claude
+  action: edit
+  summary: Include sqor in Sqr/Sqor causal-graph descriptions and protein_examples evidence explanations (#859)
 history_refs:
 - history/records/metallic-machining-burrs/2026-10-15T093227Z-codex-4c2035.yaml
 - history/records/metallic-machining-burrs/2026-10-30T060443Z-claude-claude-opus-4-6-antigravity-9db323.yaml
+- history/records/metallic-machining-burrs/2026-10-30T074105Z-claude-claude-opus-4-6-antigravity-35d302.yaml
+- history/records/metallic-machining-burrs/2026-10-30T080930Z-claude-8bc652.yaml
