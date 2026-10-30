@@ -58,6 +58,27 @@ mechanisms:
     - source_ref: zhang2019
       supports: partial
       explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfide-quinone reductase (AFE_1792) for reduced-sulfur oxidation during culture-associated leaching of a Guangxi natural bornite specimen in Zhang et al. (2019); individual sqr/tth genes were not mutated.
+  - uniprot_accession: UniProtKB:B7J411
+    entry_name: B7J411_ACIF2
+    protein_name: Sulfide quinone reductase, putative
+    gene_symbol: sqr
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase paralog (sqr, locus AFE_0267; 375 aa) in Acidithiobacillus ferrooxidans ATCC 23270 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during acidophilic sulfur/sulfide bioleaching.
+    annotation_note: Grounded to second sulfide-quinone reductase paralog (sqr, locus AFE_0267; 375 aa) in reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing the unaccessioned Central South University Acidithiobacillus ferrooxidans culture (NCBITaxon:920) in Zhang et al. (2019).
+    evidence:
+    - source_ref: zhang2019
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfide-quinone reductase paralog (sqr, locus AFE_0267) for reduced-sulfur oxidation during culture-associated 9K-medium leaching of a Guangxi natural bornite specimen in Zhang et al. (2019); individual sqr/tth genes were not mutated.
   - uniprot_accession: UniProtKB:B7J3C9
     entry_name: TTH_ACIF2
     protein_name: Tetrathionate hydrolase
@@ -114,10 +135,10 @@ causal_graphs:
   mechanism_ref: ferrooxidans_associated_copper_release
   nodes:
   - id: sqr_reductase
-    label: Sqr sulfide-quinone reductase (AFE_1792)
+    label: Sqr sulfide-quinone reductase (AFE_1792 / sqr AFE_0267)
     node_type: GENE_OR_PROTEIN
     gene_symbol: AFE_1792
-    description: Inner-membrane flavoprotein oxidizing sulfide to zero-valent sulfur/polysulfide intermediates.
+    description: Inner-membrane flavoprotein (AFE_1792 / sqr AFE_0267) oxidizing sulfide to zero-valent sulfur/polysulfide intermediates.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:B7JBP8
@@ -143,6 +164,27 @@ causal_graphs:
       - source_ref: zhang2019
         supports: partial
         explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfide-quinone reductase (AFE_1792) for reduced-sulfur oxidation during culture-associated leaching of a Guangxi natural bornite specimen in Zhang et al. (2019); individual sqr/tth genes were not mutated.
+    - uniprot_accession: UniProtKB:B7J411
+      entry_name: B7J411_ACIF2
+      protein_name: Sulfide quinone reductase, putative
+      gene_symbol: sqr
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase paralog (sqr, locus AFE_0267; 375 aa) in Acidithiobacillus ferrooxidans ATCC 23270 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during acidophilic sulfur/sulfide bioleaching.
+      annotation_note: Grounded to second sulfide-quinone reductase paralog (sqr, locus AFE_0267; 375 aa) in reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing the unaccessioned Central South University Acidithiobacillus ferrooxidans culture (NCBITaxon:920) in Zhang et al. (2019).
+      evidence:
+      - source_ref: zhang2019
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 sulfide-quinone reductase paralog (sqr, locus AFE_0267) for reduced-sulfur oxidation during culture-associated 9K-medium leaching of a Guangxi natural bornite specimen in Zhang et al. (2019); individual sqr/tth genes were not mutated.
   - id: tth_hydrolase
     label: Tth tetrathionate hydrolase (tth / AFE_0029)
     node_type: GENE_OR_PROTEIN
@@ -235,6 +277,11 @@ curation_history:
   curator: claude (Claude Opus 4.6; antigravity)
   action: edit
   summary: Added representative Acidithiobacillus ferrooxidans Sqr (UniProtKB:B7JBP8) and Tth (UniProtKB:B7J3C9) protein examples and causal graph to bornite.yaml.
+- timestamp: '2026-10-30T19:10:17Z'
+  curator: claude
+  action: edit
+  summary: Added live-verified Acidithiobacillus ferrooxidans ATCC 23270 Sqr paralog (UniProtKB:B7J411, sqr / AFE_0267) to sqr_reductase in bornite.yaml.
 history_refs:
 - history/records/bornite/2026-10-11T194734Z-codex-824206.yaml
 - history/records/bornite/2026-10-24T010720Z-claude-claude-opus-4-6-antigravity-ff9fd2.yaml
+- history/records/bornite/2026-10-30T191017Z-claude-72a7b7.yaml
