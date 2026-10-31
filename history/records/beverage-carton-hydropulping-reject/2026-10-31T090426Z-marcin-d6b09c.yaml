@@ -1,0 +1,34 @@
+history_version: 1
+target:
+  kind: record
+  slug: beverage-carton-hydropulping-reject
+  path: data/records/beverage-carton-hydropulping-reject.yaml
+session:
+  id: 2026-10-31T090426Z-marcin-d6b09c
+  timestamp: '2026-10-31T09:04:26Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Remediate spent_acid_leaching_after_fibre_removal_graph and spent_acid_leaching_after_fibre_removal
+    protein_examples to match primary-source experimental conditions, strains, and outcomes
+    (#892)
+  details: 'Updated causal graph ''spent_acid_leaching_after_fibre_removal_graph'' and mechanism
+    ''spent_acid_leaching_after_fibre_removal'' protein_examples (UniProtKB:A0A543Q349, UniProtKB:A0A5P9XUB1,
+    UniProtKB:A0A5P9XPU3, UniProtKB:A0A5P9XS05, UniProtKB:F9ZQD6, UniProtKB:F9ZN43, UniProtKB:F9ZNI0)
+    to align strictly with primary-source experimental conditions, strains, assays, and support
+    levels documented in ''kremser2022_cartons'' (resolving #892).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/892
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/888

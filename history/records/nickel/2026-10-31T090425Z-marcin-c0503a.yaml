@@ -1,0 +1,34 @@
+history_version: 1
+target:
+  kind: record
+  slug: nickel
+  path: data/records/nickel.yaml
+session:
+  id: 2026-10-31T090425Z-marcin-c0503a
+  timestamp: '2026-10-31T09:04:25Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Remediate thiooxidans_laterite_bioleaching_graph and thiooxidans_laterite_bioleaching
+    protein_examples to match primary-source experimental conditions, strains, and outcomes
+    (#892)
+  details: 'Updated causal graph ''thiooxidans_laterite_bioleaching_graph'' and mechanism
+    ''thiooxidans_laterite_bioleaching'' protein_examples (UniProtKB:A0A543Q349, UniProtKB:A0A5P9XUB1,
+    UniProtKB:A0A5P9XPU3, UniProtKB:A0A5P9XS05) to align strictly with primary-source experimental
+    conditions, strains, assays, and support levels documented in ''hetz_schippers_2025''
+    (resolving #892).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/892
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/888
