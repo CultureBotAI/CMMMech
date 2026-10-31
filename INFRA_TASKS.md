@@ -38,7 +38,7 @@ tasks:
     summary: Anchor scripts/record_review.py _directory() traversal at repository ROOT instead of filesystem root / so review validation runs inside Seatbelt sandboxes
     status: deferred
     issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
-    disposition: "Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6, Cycle 3 Stage 6, and Cycle 4 Stage 6 because scripts/record_review.py and tests/test_record_review_contract.py are vendored artifacts governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); tracked under open issue #805 for coordinated upstream implementation and sync."
+    disposition: "Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6, Cycle 3 Stage 6, Cycle 4 Stage 6, and Cycle 5 Stage 6 because scripts/record_review.py and tests/test_record_review_contract.py are vendored artifacts governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); tracked under open issue #805 for coordinated upstream implementation and sync."
   - task_id: cmmmech-infra-0002
     summary: Add optional MaterialTerm/CriticalMineralRecord metadata slots for IMA mineral symbols and engineered material polymorph/grade identifiers in src/cmmmech/schema/cmmmech.yaml
     status: resolved
@@ -58,7 +58,7 @@ tasks:
     summary: Batch git cat-file object size and content checks in scripts/record_review.py assert_append_only() and source_provenance() via git cat-file --batch
     status: deferred
     issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
-    disposition: "Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6, Cycle 3 Stage 6, and Cycle 4 Stage 6 because scripts/record_review.py is a vendored artifact governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); grouped with cmmmech-infra-0001 under open issue #805 for upstream implementation and sync."
+    disposition: "Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6, Cycle 3 Stage 6, Cycle 4 Stage 6, and Cycle 5 Stage 6 because scripts/record_review.py is a vendored artifact governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); grouped with cmmmech-infra-0001 under open issue #805 for upstream implementation and sync."
   - task_id: cmmmech-infra-0006
     summary: Replace os.link() in src/cmmmech/history.py cmd_new() with exclusive-create or os.replace() fallback so scripts/curate_causal_graphs.py and cmmmech new-history succeed inside macOS Seatbelt sandboxes
     status: resolved
@@ -96,8 +96,9 @@ tasks:
     disposition: "Resolved in Cycle 4 Stage 6 (issue #822 and companion issue #866, IGRP-C4S6-003) by adding _write_exclusive() fallback when NamedTemporaryFile(dir=path.parent) or os.link() raises PermissionError in src/cmmmech/history.py cmd_new() and adding in-place path.write_text() fallback when NamedTemporaryFile(dir=path.parent) or os.replace() raises PermissionError in scripts/curate_causal_graphs.py write_record_atomic(), verified by unit tests in tests/test_history.py and tests/test_curate_causal_graphs.py."
   - task_id: cmmmech-infra-0013
     summary: Enforce canonical sources-before-criticality top-level section ordering in src/cmmmech/validation.py _section_order_errors() and tests/test_validation.py
-    status: note
+    status: resolved
     issue_url: https://github.com/CultureBotAI/CMMMech/issues/839
+    disposition: "Resolved in Cycle 5 Stage 6 (issue #839 and companion issues #882 and #877, IGRP-C5S6-001) by extending _section_order_errors() in src/cmmmech/validation.py to enforce that criticality appears after sources when both top-level keys are present (and the record is not an alphabetically sorted synthetic fixture dict), verified by unit tests in tests/test_validation.py and full 668-record corpus validation."
 ```
 <!-- mech-infra-tasks:end -->
 
@@ -113,7 +114,7 @@ tasks:
 - **Dependencies**: Upstream `CultureBotAI/culturebotai-claw` vendored-artifact governance (`scripts/check_vendored_sync.py`)
 - **Issue**: https://github.com/CultureBotAI/CMMMech/issues/805 (`IGRP-C1S6-001`)
 - **Status**: `deferred`
-- **Disposition**: Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6, Cycle 3 Stage 6, and Cycle 4 Stage 6 because `scripts/record_review.py` and `tests/test_record_review_contract.py` are governed vendored artifacts enforced by `scripts/check_vendored_sync.py`. Tracked in issue `#805` for upstream implementation in `CultureBotAI/culturebotai-claw` and subsequent vendored sync.
+- **Disposition**: Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6, Cycle 3 Stage 6, Cycle 4 Stage 6, and Cycle 5 Stage 6 because `scripts/record_review.py` and `tests/test_record_review_contract.py` are governed vendored artifacts enforced by `scripts/check_vendored_sync.py`. Tracked in issue `#805` for upstream implementation in `CultureBotAI/culturebotai-claw` and subsequent vendored sync.
 
 ### `cmmmech-infra-0002` — Optional `CriticalMineralRecord` slots for IMA symbols and polymorph/grade classifications
 
@@ -161,7 +162,7 @@ tasks:
 - **Dependencies**: Upstream `CultureBotAI/culturebotai-claw` vendored-artifact governance (`scripts/check_vendored_sync.py`), `cmmmech-infra-0001`
 - **Issue**: https://github.com/CultureBotAI/CMMMech/issues/805 (`IGRP-C1S6-001`)
 - **Status**: `deferred`
-- **Disposition**: Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6, Cycle 3 Stage 6, and Cycle 4 Stage 6 because `scripts/record_review.py` is a governed vendored artifact enforced by `scripts/check_vendored_sync.py`. Grouped with `cmmmech-infra-0001` under issue `#805` for coordinated upstream implementation in `CultureBotAI/culturebotai-claw` and subsequent vendored sync.
+- **Disposition**: Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6, Cycle 3 Stage 6, Cycle 4 Stage 6, and Cycle 5 Stage 6 because `scripts/record_review.py` is a governed vendored artifact enforced by `scripts/check_vendored_sync.py`. Grouped with `cmmmech-infra-0001` under issue `#805` for coordinated upstream implementation in `CultureBotAI/culturebotai-claw` and subsequent vendored sync.
 
 ### `cmmmech-infra-0006` — Exclusive-create fallback for `os.link()` in `src/cmmmech/history.py` `cmd_new()`
 
@@ -261,6 +262,7 @@ tasks:
 - **Evidence paths**: `src/cmmmech/validation.py`, `tests/test_validation.py`, `scripts/curate_causal_graphs.py`, `reviews/structured/20261030T222000Z-cycle5-stage5-remediation-verification/review.yaml`
 - **Priority**: medium
 - **Dependencies**: `cmmmech-infra-0004`, `cmmmech-infra-0010` (https://github.com/CultureBotAI/CMMMech/issues/839)
-- **Issue**: https://github.com/CultureBotAI/CMMMech/issues/839 (`GRP-C5S5-001` companion https://github.com/CultureBotAI/CMMMech/issues/877)
-- **Status**: `note`
+- **Issue**: https://github.com/CultureBotAI/CMMMech/issues/839 (`IGRP-C5S6-001`; companion issues https://github.com/CultureBotAI/CMMMech/issues/882 and https://github.com/CultureBotAI/CMMMech/issues/877)
+- **Status**: `resolved`
+- **Disposition**: Resolved in Cycle 5 Stage 6 (issue `#839` and companion issues `#882` and `#877`, `IGRP-C5S6-001`) by extending `_section_order_errors()` in `src/cmmmech/validation.py` to emit `$: criticality must appear after sources` whenever both top-level keys are present and `criticality` precedes `sources` (while preserving the synthetic `sort_keys=True` fixture allowance), adding regression test coverage in `tests/test_validation.py`, and verifying all `668` records in `data/records/*.yaml`.
 

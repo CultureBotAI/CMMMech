@@ -374,7 +374,19 @@ def test_source_title_conciseness_and_assay_prose_guardrail(record):
 
 
 def test_top_level_section_ordering_guardrail(record):
-    """Top-level sections must preserve canonical evidence/mechanism/history ordering (cmmmech-infra-0010)."""
+    """Top-level sections must preserve canonical evidence/mechanism/history ordering (cmmmech-infra-0010, cmmmech-infra-0013)."""
+    misordered_crit_sources = {
+        "id": record["id"],
+        "name": record["name"],
+        "material_kind": record["material_kind"],
+        "description": record["description"],
+        "criticality": record["criticality"],
+        "sources": record["sources"],
+        "mechanisms": record["mechanisms"],
+    }
+    errs_crit_sources = validate_record(misordered_crit_sources)
+    assert any("criticality must appear after sources" in e for e in errs_crit_sources)
+
     misordered_mech = {
         "id": record["id"],
         "name": record["name"],

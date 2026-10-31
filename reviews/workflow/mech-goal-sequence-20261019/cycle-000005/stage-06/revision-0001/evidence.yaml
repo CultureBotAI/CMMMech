@@ -1,0 +1,49 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 5
+stage: 6
+revision: 1
+outcome: completed
+summary: "Froze INFRA_TASKS.md at supervisor cutoff 2026-10-31T00:16:21Z (sha256 db9e7a512b24c52f7ba8d1b47ff7019a32768c390f2c0d6e6cc10296f23870a0) across the 3 non-resolved infrastructure tasks (cmmmech-infra-0001, cmmmech-infra-0005, and cmmmech-infra-0013; while retaining previously resolved cmmmech-infra-0002 through cmmmech-infra-0004 and cmmmech-infra-0006 through cmmmech-infra-0012 in INFRA_TASKS.md), grouped and linked cmmmech-infra-0013 to GitHub issue #882 (cross-referencing #839 and #877), implemented and validated cmmmech-infra-0013 (#882, IGRP-C5S6-001: extending _section_order_errors() in src/cmmmech/validation.py to enforce that criticality appears after sources when both top-level keys are present and adding regression test coverage in tests/test_validation.py), and explicitly carried forward deferred upstream-governed scripts/record_review.py tasks cmmmech-infra-0001 and cmmmech-infra-0005 under open issue #805."
+source_revision: b9ef4149f461d261ee2c82a4f0ab1c7c6c023b57
+scope_frozen_at: '2026-10-31T00:16:21Z'
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-06/revision-0001/infra_snapshot.md
+  sha256: db9e7a512b24c52f7ba8d1b47ff7019a32768c390f2c0d6e6cc10296f23870a0
+  kind: infra_snapshot
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-06/revision-0001/implementation_plan.md
+  sha256: d62dc382141ebd69017dd2fc48adafa084103892d4f1c76163d29108d5a631c0
+  kind: implementation_plan
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-06/revision-0001/validation.md
+  sha256: ab7b4800861e216e11d62105383ec20a46eeb873f9689feac9c44cb365a93295
+  kind: validation
+findings: []
+groups: []
+carry_forward_ids: []
+infra_tasks:
+- task_id: cmmmech-infra-0001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
+  status: deferred
+  summary: "Anchor scripts/record_review.py _directory() traversal at repository ROOT instead of filesystem root / so review validation runs inside Seatbelt sandboxes"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-06/revision-0001/validation.md
+  disposition: "Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6, Cycle 3 Stage 6, Cycle 4 Stage 6, and Cycle 5 Stage 6 because scripts/record_review.py and tests/test_record_review_contract.py are vendored artifacts governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); tracked under open issue #805 for coordinated upstream implementation and sync."
+- task_id: cmmmech-infra-0005
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/805
+  status: deferred
+  summary: "Batch git cat-file object size and content checks in scripts/record_review.py assert_append_only() and source_provenance() via git cat-file --batch"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-06/revision-0001/validation.md
+  disposition: "Deferred in Cycle 1 Stage 6 and carried forward in Cycle 2 Stage 6, Cycle 3 Stage 6, Cycle 4 Stage 6, and Cycle 5 Stage 6 because scripts/record_review.py is a vendored artifact governed by CultureBotAI/culturebotai-claw (enforced by scripts/check_vendored_sync.py); grouped with cmmmech-infra-0001 under open issue #805 for upstream implementation and sync."
+- task_id: cmmmech-infra-0013
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/839
+  status: resolved
+  summary: "Enforce canonical sources-before-criticality top-level section ordering in src/cmmmech/validation.py _section_order_errors() and tests/test_validation.py"
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-06/revision-0001/implementation_plan.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-06/revision-0001/validation.md
+  disposition: "Resolved in Cycle 5 Stage 6 (issue #839 and companion issues #882 and #877, IGRP-C5S6-001) by extending _section_order_errors() in src/cmmmech/validation.py to enforce that criticality appears after sources when both top-level keys are present (and the record is not an alphabetically sorted synthetic fixture dict), verified by unit tests in tests/test_validation.py and full 668-record corpus validation."
