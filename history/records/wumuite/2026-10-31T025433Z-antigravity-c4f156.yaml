@@ -1,0 +1,35 @@
+history_version: 1
+target:
+  kind: record
+  slug: wumuite
+  path: data/records/wumuite.yaml
+session:
+  id: 2026-10-31T025433Z-antigravity-c4f156
+  timestamp: '2026-10-31T02:54:33Z'
+  actors:
+  - name: antigravity
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity-cli
+    agent_version: '2.0'
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Remediated PR #884 adversarial review findings F-05..F-06 (Issue #885): corrected
+    Table 6–7 bond lengths and BVS values, Section 6.2 second SCXRD / 38 weak superlattice
+    reflection details, and exact published article title in Xue et al. (2020).'
+  details: 'Updated description and sources[1].title in data/records/wumuite.yaml after re-inspecting
+    primary-source passages of ejm-32-483-2020 (Xue, Li, and Xie 2020, Eur. J. Mineral. 32:483-494)
+    for Issue #885 in PR #884.'
+  sections:
+  - description
+  - sources
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/885
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/884
+  urls:
+  - https://doi.org/10.5194/ejm-32-483-2020
