@@ -1,9 +1,9 @@
 # Primary-source scientific review of wumuite (IMA:2017-067a, status A, KAl0.33W2.67O9)
 
-- Review: 20261031T030000Z-wumuite-round124-scientific-review
+- Review: 20261031T035200Z-wumuite-round124-scientific-review
 - Repository: CultureBotAI/CMMMech
-- Started UTC: 2026-10-31T02:58:00Z
-- Finished UTC: 2026-10-31T03:00:00Z
+- Started UTC: 2026-10-31T03:50:00Z
+- Finished UTC: 2026-10-31T03:52:00Z
 - Reviewer: antigravity / round124-scientific-reviewer (self_review)
 - Completion: completed
 - Verdict: pass_with_limitations
@@ -19,7 +19,7 @@ Primary-source scientific review of data/records/wumuite.yaml (SHA-256 303d5e7ca
 
 Selection: Round 124 newly admitted mineral record wumuite
 Coverage: full; 1 reviewed / 1 in the declared population.
-Source: working_tree at Git base f67a43c3820cb330cdd4f14695c34245645a1a70.
+Source: working_tree at Git base 3bc979ae840cdc0f98aa0231c4b8005f1e409a3c.
 Working-tree hashes do not imply those bytes were committed.
 
 | Target | Path / selector | Kind | Label |
@@ -35,7 +35,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 ## Scientific And Domain Assessments
 
-### Verification of IMA:2017-067a identity, Pan-Xi type locality, EPMA chemistry, orthorhombic Pbam HTB-type structure, and internal source discrepancies for wumuite
+### Verification of IMA:2017-067a identity, Huaping County (Pan-Xi) type locality, WDS EPMA chemistry, hexagonal P6/mmm HTB-type structure, and internal source discrepancies for wumuite
 
 evidence: supported. Targets: cmmmech:wumuite.
 
@@ -60,11 +60,11 @@ No findings recorded within this review's declared scope.
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| owner | data/records/wumuite.yaml; Working-tree record data/records/wumuite.yaml | supports | Working-tree record data/records/wumuite.yaml (SHA-256 303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77) captures IMA:2017-067a identity, Panzhihua-Xichang (Pan-Xi) region type locality (Wumu village, Miyi County, Sichuan Province, China), holotype repository M13627 (Geological Museum of China), Table 1 (p. 485) EPMA chemistry (12 points), orthorhombic Pbam HTB-type structure (Tables 2-5), internal primary-source discrepancies (Abstract coordinates 26°46'8.21" N vs Section 2 26°46'18.21" N; Table 3 c = 3.7711(3) Å vs Abstract and Section 6.2 c = 3.7713 Å; Section 6.2 prose space-group typo P4/mbm vs orthorhombic Pbam in Abstract, Table 3, and Section 6.2 heading), and 0 mechanisms. |
+| owner | data/records/wumuite.yaml; Working-tree record data/records/wumuite.yaml | supports | Working-tree record data/records/wumuite.yaml (SHA-256 303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77) captures IMA:2017-067a identity, Nanyang village (Huaping County, Lijiang City, Yunnan Province, Pan-Xi region, China) type locality, holotype M13782 (Geological Museum of China, Beijing) and cotype NY-6-2Z (China University of Geosciences, Beijing), Table 1 (p. 486) WDS EPMA chemistry (10 points on JEOL JXA-8100: WO3 91.16, K2O 5.55, Al2O3 2.52, TeO2 0.59, total 99.82 wt%, empirical formula K0.80(W2.68Al0.34Te0.03)Sigma3.05O9), hexagonal P6/mmm HTB-type structure (Tables 2-5; primary SCXRD a = 7.2952(5) Å, c = 3.7711(3) Å, V = 173.81(2) Å3, Z = 1, R1 = 0.025; second SCXRD a = 7.2904(2) Å, c = 3.7686(2) Å, V = 173.47(1) Å3 with 38 weak superlattice reflections), internal primary-source discrepancies (Abstract coordinates 26°46'8.21" N vs Section 2 26°46'18.21" N; Table 3 c = 3.7711(3) Å vs Abstract and Section 6.2 c = 3.7713 Å), and 0 mechanisms. |
 | ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List, PDF p. 236 | supports | Confirms Wumuite, formula KAl0.33W2.67O9, status A, IMA No. 2017-067a, country China, and sole reference European Journal of Mineralogy 32 (2020), 483. |
-| xue_2020_primary | https://doi.org/10.5194/ejm-32-483-2020; Xue Y, Li G, and Xie Y (2020) Wumuite (KAl0.33W2.67O9) – a new mineral with an HTB-type structure from the Panzhihua–Xichang region in China, Eur. J. Mineral. 32:483-494, pp. 483-494, Tables 1-6, Figures 1-9 (29 bounded passages &lt;= 1,800 B across 12 full-PDF pages; 11 main-text pages / 26 passages, plus PNG renders of pages 3 and 6) | supports | All 12 full-PDF pages (29 bounded passages &lt;= 1,800 B, 43,172 passage bytes / 43,210 raw text bytes; 11 main-text pages pp. 483-493, 26 passages) and PNG renders of pages 3 and 6 inspected, confirming verbatim title, type locality, holotype M13627, Table 1 EPMA composition (total 99.64 wt%), empirical formula K1.06(W2.63Al0.32)Sigma2.95O9, orthorhombic Pbam cell parameters, and all three internal primary-source discrepancies. |
+| xue_2020_primary | https://doi.org/10.5194/ejm-32-483-2020; Xue Y, Li G, and Xie Y (2020) Wumuite (KAl0.33W2.67O9) – a new mineral with an HTB-type structure from the Panzhihua–Xichang region in China, Eur. J. Mineral. 32:483-494, pp. 483-494, Tables 1-6, Figures 1-9 (29 bounded passages &lt;= 1,800 B across 12 full-PDF pages; 11 main-text pages / 26 passages, plus PNG renders of pages 3 and 6) | supports | All 12 full-PDF pages (29 bounded passages &lt;= 1,800 B, 43,172 passage bytes / 43,210 raw text bytes; 11 main-text pages pp. 483-493, 26 passages) and PNG renders of pages 3 and 6 inspected, confirming verbatim title, Nanyang village (Huaping County, Lijiang City, Yunnan Province) type locality, holotype M13782 and cotype NY-6-2Z, Table 1 WDS EPMA composition (10 points, total 99.82 wt%), empirical formula K0.80(W2.68Al0.34Te0.03)Sigma3.05O9, hexagonal P6/mmm cell parameters (a = 7.2952(5) Å, c = 3.7711(3) Å, V = 173.81(2) Å3, Z = 1, R1 = 0.025), and both internal primary-source discrepancies. |
 | create_history | history/records/wumuite/2026-10-31T014341Z-antigravity-a5dc6c.yaml; Canonical CREATE history sidecar history/records/wumuite/2026-10-31T014341Z-antigravity-a5dc6c.yaml | supports | Canonical CREATE history sidecar (SHA-256 278dbc89230d8c4d4ed9b7064ddce89829b095c2a0d7e90506ddac40d0733bbd) matches record curation_history[0].timestamp and top-level record sections. |
-| edit_history | history/records/wumuite/2026-10-31T025433Z-antigravity-c4f156.yaml; Canonical EDIT history sidecar history/records/wumuite/2026-10-31T025433Z-antigravity-c4f156.yaml | supports | Canonical EDIT history sidecar (SHA-256 a9279a871035ca946d463c371d846eae859293f3a7eae92c8a63d7ea4efe43ae) records PR |
+| edit_history | history/records/wumuite/2026-10-31T025433Z-antigravity-c4f156.yaml; Canonical EDIT history sidecar history/records/wumuite/2026-10-31T025433Z-antigravity-c4f156.yaml | supports | Canonical EDIT history sidecar (SHA-256 a9279a871035ca946d463c371d846eae859293f3a7eae92c8a63d7ea4efe43ae) records PR 884 remediation (issue 885) aligning type-locality county/province, holotype/cotype numbers, Table 1 chemistry, and hexagonal P6/mmm structure with Xue, Li, and Xie (2020). |
 | validation | data/records/wumuite.yaml; Real CLI validation via .venv/bin/cmmmech validate --require-records and .venv/bin/cmmmech validate-history --base main | supports | Checked 673 record(s); 0 failed. Checked 1167 history record(s); 0 error(s). |
 
 ## Limits And Additional Notes
@@ -78,12 +78,12 @@ The sibling review.yaml is authoritative.
 
 ```yaml
 schema_version: 1.0.0
-review_id: 20261031T030000Z-wumuite-round124-scientific-review
+review_id: 20261031T035200Z-wumuite-round124-scientific-review
 kind: record
 repository: CultureBotAI/CMMMech
 title: Primary-source scientific review of wumuite (IMA:2017-067a, status A, KAl0.33W2.67O9)
-started_at: '2026-10-31T02:58:00Z'
-finished_at: '2026-10-31T03:00:00Z'
+started_at: '2026-10-31T03:50:00Z'
+finished_at: '2026-10-31T03:52:00Z'
 reviewer:
   identity: antigravity / round124-scientific-reviewer
   kind: agent
@@ -100,7 +100,7 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 source:
-  git_revision: f67a43c3820cb330cdd4f14695c34245645a1a70
+  git_revision: 3bc979ae840cdc0f98aa0231c4b8005f1e409a3c
   state: working_tree
   inputs:
   - path: data/records/wumuite.yaml
@@ -113,10 +113,10 @@ source:
     sha256: a9279a871035ca946d463c371d846eae859293f3a7eae92c8a63d7ea4efe43ae
     role: context
   - path: research/sources/round124-minerals/20261031T015000Z-source-investigation.json
-    sha256: 9f97d3454585a593332f939a491d8dd7cc23adbe4fffee67dbdb057e822e4b1e
+    sha256: e96414f9ad3c4b28ddbfbc8c30d030ad25666e2df2e673fb209ef1ef2d1605b6
     role: context
   - path: research/sources/round124-minerals/20261031T015000Z-source-investigation.md
-    sha256: 5dd0aa6ee7ad095cc1bc94868a377707cacfd15ad6d7f368899148861403a7eb
+    sha256: fe0a768099b9a6f53cb1f365f5e45cadfe9e5b21ec31e5e8b40ac7325382a1f1
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
@@ -153,22 +153,26 @@ evidence:
   kind: record_content
   reference: data/records/wumuite.yaml
   locator: Working-tree record data/records/wumuite.yaml
-  accessed_at: '2026-10-31T02:59:00Z'
+  accessed_at: '2026-10-31T03:51:00Z'
   support: supports
-  summary: Working-tree record data/records/wumuite.yaml (SHA-256 303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77)
-    captures IMA:2017-067a identity, Panzhihua-Xichang (Pan-Xi) region type locality
-    (Wumu village, Miyi County, Sichuan Province, China), holotype repository M13627
-    (Geological Museum of China), Table 1 (p. 485) EPMA chemistry (12 points), orthorhombic
-    Pbam HTB-type structure (Tables 2-5), internal primary-source discrepancies (Abstract
-    coordinates 26°46'8.21" N vs Section 2 26°46'18.21" N; Table 3 c = 3.7711(3) Å
-    vs Abstract and Section 6.2 c = 3.7713 Å; Section 6.2 prose space-group typo P4/mbm
-    vs orthorhombic Pbam in Abstract, Table 3, and Section 6.2 heading), and 0 mechanisms.
+  summary: 'Working-tree record data/records/wumuite.yaml (SHA-256 303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77)
+    captures IMA:2017-067a identity, Nanyang village (Huaping County, Lijiang City,
+    Yunnan Province, Pan-Xi region, China) type locality, holotype M13782 (Geological
+    Museum of China, Beijing) and cotype NY-6-2Z (China University of Geosciences,
+    Beijing), Table 1 (p. 486) WDS EPMA chemistry (10 points on JEOL JXA-8100: WO3
+    91.16, K2O 5.55, Al2O3 2.52, TeO2 0.59, total 99.82 wt%, empirical formula K0.80(W2.68Al0.34Te0.03)Sigma3.05O9),
+    hexagonal P6/mmm HTB-type structure (Tables 2-5; primary SCXRD a = 7.2952(5) Å,
+    c = 3.7711(3) Å, V = 173.81(2) Å3, Z = 1, R1 = 0.025; second SCXRD a = 7.2904(2)
+    Å, c = 3.7686(2) Å, V = 173.47(1) Å3 with 38 weak superlattice reflections), internal
+    primary-source discrepancies (Abstract coordinates 26°46''8.21" N vs Section 2
+    26°46''18.21" N; Table 3 c = 3.7711(3) Å vs Abstract and Section 6.2 c = 3.7713
+    Å), and 0 mechanisms.'
   snapshot_sha256: 303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77
 - evidence_id: ima_authority
   kind: authority
   reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
   locator: IMA-CNMNC September 2026 Master List, PDF p. 236
-  accessed_at: '2026-10-31T02:59:00Z'
+  accessed_at: '2026-10-31T03:51:00Z'
   support: supports
   summary: Confirms Wumuite, formula KAl0.33W2.67O9, status A, IMA No. 2017-067a,
     country China, and sole reference European Journal of Mineralogy 32 (2020), 483.
@@ -181,20 +185,22 @@ evidence:
     Mineral. 32:483-494, pp. 483-494, Tables 1-6, Figures 1-9 (29 bounded passages
     <= 1,800 B across 12 full-PDF pages; 11 main-text pages / 26 passages, plus PNG
     renders of pages 3 and 6)
-  accessed_at: '2026-10-31T02:59:00Z'
+  accessed_at: '2026-10-31T03:51:00Z'
   support: supports
   summary: All 12 full-PDF pages (29 bounded passages <= 1,800 B, 43,172 passage bytes
     / 43,210 raw text bytes; 11 main-text pages pp. 483-493, 26 passages) and PNG
-    renders of pages 3 and 6 inspected, confirming verbatim title, type locality,
-    holotype M13627, Table 1 EPMA composition (total 99.64 wt%), empirical formula
-    K1.06(W2.63Al0.32)Sigma2.95O9, orthorhombic Pbam cell parameters, and all three
+    renders of pages 3 and 6 inspected, confirming verbatim title, Nanyang village
+    (Huaping County, Lijiang City, Yunnan Province) type locality, holotype M13782
+    and cotype NY-6-2Z, Table 1 WDS EPMA composition (10 points, total 99.82 wt%),
+    empirical formula K0.80(W2.68Al0.34Te0.03)Sigma3.05O9, hexagonal P6/mmm cell parameters
+    (a = 7.2952(5) Å, c = 3.7711(3) Å, V = 173.81(2) Å3, Z = 1, R1 = 0.025), and both
     internal primary-source discrepancies.
   snapshot_sha256: 1ee1fcd925ad830ab3df485c984ab969714ade6c45f1f8871ea49112a141dd72
 - evidence_id: create_history
   kind: record_content
   reference: history/records/wumuite/2026-10-31T014341Z-antigravity-a5dc6c.yaml
   locator: Canonical CREATE history sidecar history/records/wumuite/2026-10-31T014341Z-antigravity-a5dc6c.yaml
-  accessed_at: '2026-10-31T02:59:00Z'
+  accessed_at: '2026-10-31T03:51:00Z'
   support: supports
   summary: Canonical CREATE history sidecar (SHA-256 278dbc89230d8c4d4ed9b7064ddce89829b095c2a0d7e90506ddac40d0733bbd)
     matches record curation_history[0].timestamp and top-level record sections.
@@ -203,17 +209,19 @@ evidence:
   kind: record_content
   reference: history/records/wumuite/2026-10-31T025433Z-antigravity-c4f156.yaml
   locator: Canonical EDIT history sidecar history/records/wumuite/2026-10-31T025433Z-antigravity-c4f156.yaml
-  accessed_at: '2026-10-31T02:59:00Z'
+  accessed_at: '2026-10-31T03:51:00Z'
   support: supports
   summary: Canonical EDIT history sidecar (SHA-256 a9279a871035ca946d463c371d846eae859293f3a7eae92c8a63d7ea4efe43ae)
-    records PR
+    records PR 884 remediation (issue 885) aligning type-locality county/province,
+    holotype/cotype numbers, Table 1 chemistry, and hexagonal P6/mmm structure with
+    Xue, Li, and Xie (2020).
   snapshot_sha256: a9279a871035ca946d463c371d846eae859293f3a7eae92c8a63d7ea4efe43ae
 - evidence_id: validation
   kind: validation
   reference: data/records/wumuite.yaml
   locator: Real CLI validation via .venv/bin/cmmmech validate --require-records and
     .venv/bin/cmmmech validate-history --base main
-  accessed_at: '2026-10-31T02:59:00Z'
+  accessed_at: '2026-10-31T03:51:00Z'
   support: supports
   summary: Checked 673 record(s); 0 failed. Checked 1167 history record(s); 0 error(s).
   snapshot_sha256: 303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77
@@ -245,8 +253,9 @@ checks:
 assessments:
 - assessment_id: identity_and_primary_source_verification
   area: evidence
-  topic: Verification of IMA:2017-067a identity, Pan-Xi type locality, EPMA chemistry,
-    orthorhombic Pbam HTB-type structure, and internal source discrepancies for wumuite
+  topic: Verification of IMA:2017-067a identity, Huaping County (Pan-Xi) type locality,
+    WDS EPMA chemistry, hexagonal P6/mmm HTB-type structure, and internal source discrepancies
+    for wumuite
   outcome: supported
   summary: All numeric, crystallographic, optical, and chemical claims in data/records/wumuite.yaml
     (SHA-256 303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77) match

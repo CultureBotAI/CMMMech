@@ -1,7 +1,7 @@
 # Round 124 Critical Mineral Source Investigation and Bounded Frontier Audit
 
 - **Investigation ID:** `20261031T015000Z-round124-minerals`
-- **Created At:** `2026-10-31T01:50:00Z` (updated `2026-10-31T02:58:00Z`)
+- **Created At:** `2026-10-31T01:50:00Z` (updated `2026-10-31T03:52:00Z`)
 - **Cycle / Stage:** Cycle 6, Stage 1 (`add_records`)
 - **Corpus Transition:** `668 -> 673` records (`+5` records), `1157 -> 1167` canonical history sidecars (`+5` `CREATE` sidecars, `+5` `EDIT` sidecars)
 - **Bounded Passage Indexing (`scripts/index_bounded_pdf_passages.py`):** `5` open-access *European Journal of Mineralogy* PDFs (`57` full-PDF pages total; `48` main-text pages) indexed into `153` UTF-8 text passages (`<= 1,800` bytes each; `222,547` passage bytes / `222,733` raw text bytes total; `120` main-text passages) plus `11` single-page PNG table renders (`150` DPI via `mutool draw`).
@@ -25,17 +25,13 @@
    - Section 5.2 prose (pp. 359–360) prints single-crystal XRD unit-cell parameters `a = 9.95800(7) Å`, `c = 14.114916(11) Å` (digit-duplication typo for `14.14916(11) Å`), `V = 1215.081(15) Å3` for crystal size `39.6 x 28.7 x 16.9 um`, whereas Table 6 (p. 362) prints `a = 9.95800(10) Å`, `c = 14.14920(10) Å`, `V = 1215.085(19) Å3` for crystal size `0.40 x 0.29 x 0.17 mm`.
 2. **`wumuite` (`Xue, Li, & Xie 2020`, *Eur. J. Mineral.* 32:483–494):**
    - The Abstract (p. 483) prints type-locality coordinates `26°46'8.21" N, 101°27'13.86" E`, whereas Section 2 (p. 484) prints `26°46'18.21" N, 101°27'13.86" E`.
-   - Table 3 (p. 488) reports the single-crystal XRD unit-cell parameter `c = 3.7711(3) Å` (`V = 229.66(4) Å3`), whereas the Abstract (p. 483) and Section 6.2 prose (p. 487) print `c = 3.7713 Å`.
-   - Section 6.2 prose (p. 487) prints the space group as `P4/mbm` (a tetragonal symbol), whereas the Abstract (p. 483), Table 3 (p. 488), and Section 6.2 heading (p. 487) report orthorhombic space group `Pbam` (`No. 55`).
+   - Table 3 (p. 488) reports the single-crystal XRD unit-cell parameter `c = 3.7711(3) Å` (`V = 173.81(2) Å3`), whereas the Abstract (p. 483) and Section 6.2 prose (p. 487) print `c = 3.7713 Å`.
 3. **`moabite` (`Britvin et al. 2025`, *Eur. J. Mineral.* 37:353–363):**
    - The Abstract (p. 353) reports `Dcalc = 4.324 g/cm3` (calculated from the empirical formula) and prints PXRD line `3,321(37)(102)` with a comma decimal separator, whereas Table 5 (p. 358) reports `Dx = 4.338 g/cm3` (crystallographic density for ideal `NiFe(PO4)O`) and Table 4 (p. 357) prints `3.321 (37) (102)`.
-   - Table 2 (p. 356) labels the iron oxide column header `FeO*` with footnote `* Total iron calculated as Fe2O3` for trivalent `Fe3+` (`89.9 % Fe2O3 + 1.4 % Co2O3 + 0.7 % Cr2O3 + 8.0 % Al2O3 = 100.0 %`).
 4. **`vielleaureite-ce` (`Ragu et al. 2025`, *Eur. J. Mineral.* 37:627–638):**
    - In the empirical formula, the rounded `A2` cations (`Ce0.66La0.32Nd0.02Er0.01`) sum to `1.01 apfu` while printed as `Sigma1.00`, and Table 5 (p. 633) prints the proposed `M1` site population with combined `Mn0.09` (`Mn2+0.08 + Mn3+0.02`).
-   - Section 4.1 (p. 631) reports `V2O3 0.04 wt%` (`0.00–0.12`, `SD 0.04`) and `PbO 0.06 wt%` (`0.00–0.15`, `SD 0.05`) in the text while omitting those trace oxides from Table 2 (p. 631).
 5. **`xianhuaite-ce` (`Yang et al. 2026`, *Eur. J. Mineral.* 38:449–459):**
-   - Table 1 (p. 452) prints `Pr2O3` mean `0.28 wt%` (`SD 0.08`) with a range of `0.00–0.23` (mean exceeds upper range bound) and includes `Ta2O5 0.08 wt%` (`0.00–0.20`, `SD 0.09`), which rounds to `0.003 apfu` on `15 O` and is omitted from the printed empirical formula.
-   - Section 3 text (p. 451) reports `U (562 ppm)` and `Pb (325 ppm)` whereas Table 2 (p. 452) prints `U = 561 ppm` and `Pb = 326 ppm`.
+   - Table 1 (p. 452) prints `Pr2O3` mean `0.28 wt%` (`SD 0.14`) with a range of `0.00–0.23` (mean exceeds upper range bound) and includes `Ta2O5 0.08 wt%` (`0.00–0.20`, `SD 0.09`), which rounds to `0.003 apfu` on `15 O` and is omitted from the printed empirical formula.
 
 ## 2. Remaining Deferred External Single-Reference Candidates (8)
 
