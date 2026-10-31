@@ -36,6 +36,8 @@ def _section_order_errors(record: dict) -> list[str]:
         return []
     pos = {key: idx for idx, key in enumerate(keys)}
     errors: list[str] = []
+    if "criticality" in pos and "sources" in pos and pos["criticality"] < pos["sources"]:
+        errors.append("$: criticality must appear after sources")
     if "mechanisms" in pos:
         for earlier in ("sources", "criticality"):
             if earlier in pos and pos["mechanisms"] < pos[earlier]:
