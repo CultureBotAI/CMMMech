@@ -1,88 +1,44 @@
 id: cmmmech:silicon
 name: Silicon
 material_kind: element
-description: The element Si, distinct from dissolved silicic acid, biogenic silica, crystalline silica
-  minerals and the silicon-metal commodity. The United States 2025 list's Silicon material designation
-  is mapped to this element; it does not designate every silicate or imply that diatom silica formation
-  recovers semiconductor-grade or metallic silicon.
+description: The element Si, distinct from dissolved silicic acid, biogenic silica, crystalline silica minerals and the silicon-metal commodity. The United States 2025 list's Silicon material designation is mapped to this element; it does not designate every silicate or imply that diatom silica formation recovers semiconductor-grade or metallic silicon.
 identifiers:
 - id: CHEBI:27573
   label: silicon atom
-criticality:
-- jurisdiction: United States
-  list_name: Department of the Interior Final List of Critical Minerals
-  edition: 2025 final list, published 7 November 2025
-  classification: critical
-  source_ref: us_2025
 sources:
 - id: chebi_silicon
   title: ChEBI:27573 - silicon atom; formula Si and net charge 0
   url: https://www.ebi.ac.uk/chebi/CHEBI:27573
   accessed_on: '2026-10-11'
 - id: us_2025
-  title: US Department of the Interior, Geological Survey. Final 2025 List of Critical Minerals, 7 November
-    2025, Federal Register 90:50494-50497, document 2025-19813; Silicon row on page 50497.
+  title: US Department of the Interior, Geological Survey. Final 2025 List of Critical Minerals, 7 November 2025, Federal Register 90:50494-50497, document 2025-19813; Silicon row on page 50497.
   url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
   accessed_on: '2026-10-11'
 - id: shrestha_2015
-  title: Shrestha and Hildebrand (2015). Evidence for a Regulatory Role of Diatom Silicon Transporters
-    in Cellular Silicon Responses. Eukaryotic Cell 14:29-40. DOI 10.1128/EC.00209-14; PMC4279021. Culture
-    conditions, silicon uptake and silica incorporation methods; Results and Figures 6-8; Discussion.
+  title: Shrestha and Hildebrand (2015). Evidence for a Regulatory Role of Diatom Silicon Transporters in Cellular Silicon Responses. Eukaryotic Cell 14:29-40. DOI 10.1128/EC.00209-14; PMC4279021. Culture conditions, silicon uptake and silica incorporation methods; Results and Figures 6-8; Discussion.
   url: https://doi.org/10.1128/EC.00209-14
   accessed_on: '2026-10-11'
 - id: ncbi_ccmp1335
-  title: NCBI Taxonomy 296543 - Thalassiosira pseudonana CCMP1335; strain-specific entry displayed as
-    no rank in the Taxonomy Browser.
+  title: NCBI Taxonomy 296543 - Thalassiosira pseudonana CCMP1335; strain-specific entry displayed as no rank in the Taxonomy Browser.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=296543&mode=Info
   accessed_on: '2026-10-11'
+criticality:
+- jurisdiction: United States
+  list_name: Department of the Interior Final List of Critical Minerals
+  edition: 2025 final list, published 7 November 2025
+  classification: critical
+  source_ref: us_2025
 mechanisms:
 - id: ccmp1335_silicic_acid_utilization
   name: Conditional SIT contribution to diatom silicic-acid uptake and silica incorporation
   process: biomineralization
-  description: Living Thalassiosira pseudonana CCMP1335 cultures depleted silicic acid from medium and
-    incorporated a fluorescent silica tracer into their frustules. Joint SIT1/SIT2 knockdown delayed solution
-    depletion and reduced the silica-associated fluorescence at low silicic-acid supply. This supports
-    a conditional contribution to silicon utilization and cell-wall biosilicification, without establishing
-    an exclusive transporter, a directly demonstrated sensing pathway, or metal recovery.
-  context: Laboratory stock cultures grew in NEPC medium containing 100 micromolar Si(OH)4, on an orbital
-    shaker at 18 degrees C under continuous light of 100 microeinsteins/m2/s. Exponentially growing cells
-    were harvested and deprived of silicic acid before replenishment. Silica-incorporation Methods specify
-    24 h deprivation; Figures 7-8 describe overnight starvation. Sodium silicate supplied a nominal 20
-    micromolar Si(OH)4 concentration for the selected assays. Silicomolybdate colorimetry of centrifuged
-    supernatant measured disappearance, normalized per cell; this is a net-depletion proxy for uptake.
-    PDMPO at 100 ng/mL, added five minutes before silicate, provided a flow-cytometric proxy for newly
-    incorporated silica. A subset of clones was compared at 200 micromolar supply in a separate incorporation
-    assay. Measured assay pH and an abiotic medium-depletion blank are not specified in the inspected
-    main methods. No isolated silica mass, crystallographic phase, Si(0) product or industrial deployment
-    is established here.
+  description: Living Thalassiosira pseudonana CCMP1335 cultures depleted silicic acid from medium and incorporated a fluorescent silica tracer into their frustules. Joint SIT1/SIT2 knockdown delayed solution depletion and reduced the silica-associated fluorescence at low silicic-acid supply. This supports a conditional contribution to silicon utilization and cell-wall biosilicification, without establishing an exclusive transporter, a directly demonstrated sensing pathway, or metal recovery.
+  context: Laboratory stock cultures grew in NEPC medium containing 100 micromolar Si(OH)4, on an orbital shaker at 18 degrees C under continuous light of 100 microeinsteins/m2/s. Exponentially growing cells were harvested and deprived of silicic acid before replenishment. Silica-incorporation Methods specify 24 h deprivation; Figures 7-8 describe overnight starvation. Sodium silicate supplied a nominal 20 micromolar Si(OH)4 concentration for the selected assays. Silicomolybdate colorimetry of centrifuged supernatant measured disappearance, normalized per cell; this is a net-depletion proxy for uptake. PDMPO at 100 ng/mL, added five minutes before silicate, provided a flow-cytometric proxy for newly incorporated silica. A subset of clones was compared at 200 micromolar supply in a separate incorporation assay. Measured assay pH and an abiotic medium-depletion blank are not specified in the inspected main methods. No isolated silica mass, crystallographic phase, Si(0) product or industrial
+    deployment is established here.
   microbial: true
   organisms:
   - id: NCBITaxon:296543
     label: Thalassiosira pseudonana CCMP1335
-  evidence:
-  - source_ref: shrestha_2015
-    supports: support
-    explanation: Figure 7 compares wild type with RNAi clones R-13, R-14 and R-22 and antisense clones
-      A-2, A-7 and A-8. Results report that wild type depleted the supplied silicic acid by 2 h, whereas
-      the RNAi clones required an additional hour; antisense clones showed a similar delay. Figure 8A-B
-      shows lower PDMPO fluorescence in the knockdowns at 20 micromolar supply. These are different assays
-      and do not equate net solution depletion with the amount of solid silica.
-  - source_ref: shrestha_2015
-    supports: partial
-    explanation: Figure 8C tests wild type, R-13, A-2 and A-7 at 200 micromolar supply. The authors report
-      no incorporation difference in this comparison; the plotted trajectories are not numerically identical.
-      Figures 7-8 state standard deviations with n=3 but do not identify independent culture versus technical
-      replication. The captions provide no inferential statistical test for the high-supply null statement.
-      This limits claims that SIT knockdown universally suppresses silicification or that passive diffusion
-      was directly demonstrated by this assay.
-  - source_ref: shrestha_2015
-    supports: partial
-    explanation: Vector design and Figure 6 establish knockdown rather than gene deletion. Sequence similarity
-      prevented separate SIT1 and SIT2 perturbations; the immunoblot antiserum recognized all three SITs.
-      No rescue experiment is described in the inspected main article. A sensing role is the authors'
-      hypothesis, with an upstream sensor retained as an alternative. Supplementary construct/alignment
-      files could not be acquired through the checked legitimate routes, so their sequences and supplementary
-      predictions were not verified.
   protein_examples:
   - uniprot_accession: UniProtKB:B8C2V9
     entry_name: B8C2V9_THAPS
@@ -97,18 +53,12 @@ mechanisms:
     - InterPro:IPR004693
     pfam_ids:
     - Pfam:PF03842
-    functional_role: High-affinity sodium/silicic acid symporter SIT1 (THAPSDRAFT_268895) mediating active
-      uptake of dissolved orthosilicic acid (Si(OH)4) across the diatom plasma membrane under silicon-limiting
-      conditions.
-    annotation_note: Experimental strain is Thalassiosira pseudonana CCMP1335 (NCBITaxon:296543); grounded
-      to the species-level Thalassiosira pseudonana reference proteome entry SIT1 (UniProtKB:B8C2V9, NCBITaxon:35128,
-      UP000001449), which was sequenced from strain CCMP1335.
+    functional_role: High-affinity sodium/silicic acid symporter SIT1 (THAPSDRAFT_268895) mediating active uptake of dissolved orthosilicic acid (Si(OH)4) across the diatom plasma membrane under silicon-limiting conditions.
+    annotation_note: Experimental strain is Thalassiosira pseudonana CCMP1335 (NCBITaxon:296543); grounded to the species-level Thalassiosira pseudonana reference proteome entry SIT1 (UniProtKB:B8C2V9, NCBITaxon:35128, UP000001449), which was sequenced from strain CCMP1335.
     evidence:
     - source_ref: shrestha_2015
       supports: partial
-      explanation: Co-targeted by RNAi or antisense RNA knockdown of SIT1 and SIT2 in Thalassiosira pseudonana
-        (Shrestha & Hildebrand 2015), delaying Si uptake and growth under low silicic acid (20 uM) while
-        single-gene contributions were not separated.
+      explanation: Co-targeted by RNAi or antisense RNA knockdown of SIT1 and SIT2 in Thalassiosira pseudonana (Shrestha & Hildebrand 2015), delaying Si uptake and growth under low silicic acid (20 uM) while single-gene contributions were not separated.
   - uniprot_accession: UniProtKB:B5YNJ0
     entry_name: B5YNJ0_THAPS
     protein_name: Silicic acid transporter, silicon transport
@@ -122,23 +72,26 @@ mechanisms:
     - InterPro:IPR004693
     pfam_ids:
     - Pfam:PF03842
-    functional_role: Silicon transporter SIT2 (THAPSDRAFT_41392) co-mediating silicic acid transport and
-      silicon-responsive regulation of frustule biosilicification in Thalassiosira pseudonana CCMP1335.
-    annotation_note: Experimental strain is Thalassiosira pseudonana CCMP1335 (NCBITaxon:296543); grounded
-      to the species-level Thalassiosira pseudonana reference proteome entry SIT2 (UniProtKB:B5YNJ0, NCBITaxon:35128,
-      UP000001449), which was sequenced from strain CCMP1335.
+    functional_role: Silicon transporter SIT2 (THAPSDRAFT_41392) co-mediating silicic acid transport and silicon-responsive regulation of frustule biosilicification in Thalassiosira pseudonana CCMP1335.
+    annotation_note: Experimental strain is Thalassiosira pseudonana CCMP1335 (NCBITaxon:296543); grounded to the species-level Thalassiosira pseudonana reference proteome entry SIT2 (UniProtKB:B5YNJ0, NCBITaxon:35128, UP000001449), which was sequenced from strain CCMP1335.
     evidence:
     - source_ref: shrestha_2015
       supports: partial
-      explanation: Co-targeted by RNAi or antisense RNA knockdown of SIT1 and SIT2 in Thalassiosira pseudonana
-        (Shrestha & Hildebrand 2015), delaying Si uptake and growth under low silicic acid (20 uM) while
-        single-gene contributions were not separated.
+      explanation: Co-targeted by RNAi or antisense RNA knockdown of SIT1 and SIT2 in Thalassiosira pseudonana (Shrestha & Hildebrand 2015), delaying Si uptake and growth under low silicic acid (20 uM) while single-gene contributions were not separated.
+  evidence:
+  - source_ref: shrestha_2015
+    supports: support
+    explanation: Figure 7 compares wild type with RNAi clones R-13, R-14 and R-22 and antisense clones A-2, A-7 and A-8. Results report that wild type depleted the supplied silicic acid by 2 h, whereas the RNAi clones required an additional hour; antisense clones showed a similar delay. Figure 8A-B shows lower PDMPO fluorescence in the knockdowns at 20 micromolar supply. These are different assays and do not equate net solution depletion with the amount of solid silica.
+  - source_ref: shrestha_2015
+    supports: partial
+    explanation: Figure 8C tests wild type, R-13, A-2 and A-7 at 200 micromolar supply. The authors report no incorporation difference in this comparison; the plotted trajectories are not numerically identical. Figures 7-8 state standard deviations with n=3 but do not identify independent culture versus technical replication. The captions provide no inferential statistical test for the high-supply null statement. This limits claims that SIT knockdown universally suppresses silicification or that passive diffusion was directly demonstrated by this assay.
+  - source_ref: shrestha_2015
+    supports: partial
+    explanation: Vector design and Figure 6 establish knockdown rather than gene deletion. Sequence similarity prevented separate SIT1 and SIT2 perturbations; the immunoblot antiserum recognized all three SITs. No rescue experiment is described in the inspected main article. A sensing role is the authors' hypothesis, with an upstream sensor retained as an alternative. Supplementary construct/alignment files could not be acquired through the checked legitimate routes, so their sequences and supplementary predictions were not verified.
 causal_graphs:
 - id: ccmp1335_sit1_sit2_biosilicification_graph
   name: Thalassiosira pseudonana CCMP1335 SIT1 and SIT2 silicic acid transport and frustule biosilicification
-  description: Causal pathway linking silicon transporters SIT1 (UniProtKB:B8C2V9) and SIT2 (UniProtKB:B5YNJ0)
-    in Thalassiosira pseudonana CCMP1335 to uptake of dissolved orthosilicic acid and intracellular polymerization
-    into amorphous hydrated silica frustules.
+  description: Causal pathway linking silicon transporters SIT1 (UniProtKB:B8C2V9) and SIT2 (UniProtKB:B5YNJ0) in Thalassiosira pseudonana CCMP1335 to uptake of dissolved orthosilicic acid and intracellular polymerization into amorphous hydrated silica frustules.
   scope: RECORD_SPECIFIC_MECHANISM
   mechanism_ref: ccmp1335_silicic_acid_utilization
   nodes:
@@ -162,18 +115,12 @@ causal_graphs:
       - InterPro:IPR004693
       pfam_ids:
       - Pfam:PF03842
-      functional_role: High-affinity sodium/silicic acid symporter SIT1 (THAPSDRAFT_268895) mediating
-        active uptake of dissolved orthosilicic acid (Si(OH)4) across the diatom plasma membrane under
-        silicon-limiting conditions.
-      annotation_note: Experimental strain is Thalassiosira pseudonana CCMP1335 (NCBITaxon:296543); grounded
-        to the species-level Thalassiosira pseudonana reference proteome entry SIT1 (UniProtKB:B8C2V9,
-        NCBITaxon:35128, UP000001449), which was sequenced from strain CCMP1335.
+      functional_role: High-affinity sodium/silicic acid symporter SIT1 (THAPSDRAFT_268895) mediating active uptake of dissolved orthosilicic acid (Si(OH)4) across the diatom plasma membrane under silicon-limiting conditions.
+      annotation_note: Experimental strain is Thalassiosira pseudonana CCMP1335 (NCBITaxon:296543); grounded to the species-level Thalassiosira pseudonana reference proteome entry SIT1 (UniProtKB:B8C2V9, NCBITaxon:35128, UP000001449), which was sequenced from strain CCMP1335.
       evidence:
       - source_ref: shrestha_2015
         supports: partial
-        explanation: Co-targeted by RNAi or antisense RNA knockdown of SIT1 and SIT2 in Thalassiosira
-          pseudonana (Shrestha & Hildebrand 2015), delaying Si uptake and growth under low silicic acid
-          (20 uM) while single-gene contributions were not separated.
+        explanation: Co-targeted by RNAi or antisense RNA knockdown of SIT1 and SIT2 in Thalassiosira pseudonana (Shrestha & Hildebrand 2015), delaying Si uptake and growth under low silicic acid (20 uM) while single-gene contributions were not separated.
   - id: sit2_silicon_transporter
     label: SIT2 silicon transporter (SIT2 / THAPSDRAFT_41392)
     node_type: GENE_OR_PROTEIN
@@ -194,17 +141,12 @@ causal_graphs:
       - InterPro:IPR004693
       pfam_ids:
       - Pfam:PF03842
-      functional_role: Silicon transporter SIT2 (THAPSDRAFT_41392) co-mediating silicic acid transport
-        and silicon-responsive regulation of frustule biosilicification in Thalassiosira pseudonana CCMP1335.
-      annotation_note: Experimental strain is Thalassiosira pseudonana CCMP1335 (NCBITaxon:296543); grounded
-        to the species-level Thalassiosira pseudonana reference proteome entry SIT2 (UniProtKB:B5YNJ0,
-        NCBITaxon:35128, UP000001449), which was sequenced from strain CCMP1335.
+      functional_role: Silicon transporter SIT2 (THAPSDRAFT_41392) co-mediating silicic acid transport and silicon-responsive regulation of frustule biosilicification in Thalassiosira pseudonana CCMP1335.
+      annotation_note: Experimental strain is Thalassiosira pseudonana CCMP1335 (NCBITaxon:296543); grounded to the species-level Thalassiosira pseudonana reference proteome entry SIT2 (UniProtKB:B5YNJ0, NCBITaxon:35128, UP000001449), which was sequenced from strain CCMP1335.
       evidence:
       - source_ref: shrestha_2015
         supports: partial
-        explanation: Co-targeted by RNAi or antisense RNA knockdown of SIT1 and SIT2 in Thalassiosira
-          pseudonana (Shrestha & Hildebrand 2015), delaying Si uptake and growth under low silicic acid
-          (20 uM) while single-gene contributions were not separated.
+        explanation: Co-targeted by RNAi or antisense RNA knockdown of SIT1 and SIT2 in Thalassiosira pseudonana (Shrestha & Hildebrand 2015), delaying Si uptake and growth under low silicic acid (20 uM) while single-gene contributions were not separated.
   - id: dissolved_orthosilicic_acid
     label: Dissolved orthosilicic acid (Si(OH)4)
     node_type: CHEMICAL_ENTITY
@@ -220,28 +162,20 @@ causal_graphs:
     target: dissolved_orthosilicic_acid
     predicate: transports
     relationship: high-affinity silicic acid transport and proposed low-Si sensing (joint SIT1/SIT2 knockdown)
-    description: Joint RNAi or antisense RNA knockdown of SIT1 and SIT2 delays silicic acid uptake and
-      growth at low Si (20 uM), whereas high-Si uptake (100-200 uM) proceeds via diffusion; a direct silicon-sensor
-      role remains a proposed hypothesis.
+    description: Joint RNAi or antisense RNA knockdown of SIT1 and SIT2 delays silicic acid uptake and growth at low Si (20 uM), whereas high-Si uptake (100-200 uM) proceeds via diffusion; a direct silicon-sensor role remains a proposed hypothesis.
     evidence:
     - source_ref: shrestha_2015
       supports: partial
-      explanation: RNAi and antisense RNA constructs simultaneously reduced both SIT1 and SIT2 transcripts
-        and protein levels, delaying Si uptake at 20 uM Si(OH)4 without isolating SIT1 vs SIT2 or directly
-        proving receptor/sensor signaling.
+      explanation: RNAi and antisense RNA constructs simultaneously reduced both SIT1 and SIT2 transcripts and protein levels, delaying Si uptake at 20 uM Si(OH)4 without isolating SIT1 vs SIT2 or directly proving receptor/sensor signaling.
   - source: sit2_silicon_transporter
     target: dissolved_orthosilicic_acid
     predicate: transports
     relationship: high-affinity silicic acid transport and proposed low-Si sensing (joint SIT1/SIT2 knockdown)
-    description: Joint RNAi or antisense RNA knockdown of SIT1 and SIT2 delays silicic acid uptake and
-      growth at low Si (20 uM), whereas high-Si uptake (100-200 uM) proceeds via diffusion; a direct silicon-sensor
-      role remains a proposed hypothesis.
+    description: Joint RNAi or antisense RNA knockdown of SIT1 and SIT2 delays silicic acid uptake and growth at low Si (20 uM), whereas high-Si uptake (100-200 uM) proceeds via diffusion; a direct silicon-sensor role remains a proposed hypothesis.
     evidence:
     - source_ref: shrestha_2015
       supports: partial
-      explanation: RNAi and antisense RNA constructs simultaneously reduced both SIT1 and SIT2 transcripts
-        and protein levels, delaying Si uptake at 20 uM Si(OH)4 without isolating SIT1 vs SIT2 or directly
-        proving receptor/sensor signaling.
+      explanation: RNAi and antisense RNA constructs simultaneously reduced both SIT1 and SIT2 transcripts and protein levels, delaying Si uptake at 20 uM Si(OH)4 without isolating SIT1 vs SIT2 or directly proving receptor/sensor signaling.
   - source: dissolved_orthosilicic_acid
     target: biogenic_frustule_silica
     predicate: incorporates_into
@@ -250,33 +184,31 @@ causal_graphs:
     evidence:
     - source_ref: shrestha_2015
       supports: support
-      explanation: PDMPO fluorescence and Si depletion track incorporation into newly synthesized frustule
-        valves.
+      explanation: PDMPO fluorescence and Si depletion track incorporation into newly synthesized frustule valves.
 curation_history:
 - timestamp: '2026-10-11T06:50:31Z'
   curator: Codex (GPT-6; Codex)
   action: CREATE
-  summary: Created silicon identity and dated US criticality with primary diatom uptake and silica-incorporation
-    evidence, preserving conditional joint knockdown effects and assay, causal and supplementary-access
-    limits.
+  summary: Created silicon identity and dated US criticality with primary diatom uptake and silica-incorporation evidence, preserving conditional joint knockdown effects and assay, causal and supplementary-access limits.
 - timestamp: '2026-10-18T04:27:50Z'
   curator: antigravity
   action: EDIT
-  summary: Added verified UniProtKB protein examples (SIT1 UniProtKB:B8C2V9, SIT2 UniProtKB:B5YNJ0) and
-    causal graph for Thalassiosira pseudonana CCMP1335 silicic acid utilization.
+  summary: Added verified UniProtKB protein examples (SIT1 UniProtKB:B8C2V9, SIT2 UniProtKB:B5YNJ0) and causal graph for Thalassiosira pseudonana CCMP1335 silicic acid utilization.
 - timestamp: '2026-10-18T06:58:33Z'
   curator: antigravity
   action: EDIT
-  summary: Added explicit annotation_note documenting strain/species or comparator NCBITaxon mapping on
-    ProteinExample entries and normalized causal_graphs key order.
+  summary: Added explicit annotation_note documenting strain/species or comparator NCBITaxon mapping on ProteinExample entries and normalized causal_graphs key order.
 - timestamp: '2026-10-21T18:46:53Z'
   curator: claude
   action: EDIT
-  summary: 'Clarified in silicon.yaml that RNAi/antisense constructs simultaneously knocked down both
-    SIT1 and SIT2, delayed uptake specifically at low Si (20 uM), and that Si sensing is a proposed hypothesis
-    (supports: partial).'
+  summary: 'Clarified in silicon.yaml that RNAi/antisense constructs simultaneously knocked down both SIT1 and SIT2, delayed uptake specifically at low Si (20 uM), and that Si sensing is a proposed hypothesis (supports: partial).'
+- timestamp: '2026-10-30T22:26:51Z'
+  curator: claude
+  action: edit
+  summary: Normalized top-level key ordering in silicon.yaml so sources precedes criticality per CANONICAL_RECORD_KEYS.
 history_refs:
 - history/records/silicon/2026-10-11T065000Z-codex-0bbe5d.yaml
 - history/records/silicon/2026-10-18T042750Z-antigravity-3a2867.yaml
 - history/records/silicon/2026-10-18T065833Z-antigravity-43813e.yaml
 - history/records/silicon/2026-10-21T184653Z-claude-bbc7aa.yaml
+- history/records/silicon/2026-10-30T222651Z-claude-c42173.yaml

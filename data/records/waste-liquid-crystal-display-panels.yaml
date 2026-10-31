@@ -294,10 +294,10 @@ causal_graphs:
         supports: partial
         explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for the sulfur-oxidizing A. thiooxidans partner in the elemental-sulfur-supplemented mixed culture of willner2018; individual sqr/sqor/tth genes were not mutated.
   - id: tth_hydrolase
-    label: Tth tetrathionate hydrolase (tth / AFE_0029)
+    label: Tth tetrathionate hydrolase (tth AFE_0029 / tth GCD22_14205 / tth GCD22_02315)
     node_type: GENE_OR_PROTEIN
     gene_symbol: tth
-    description: Periplasmic pyrroloquinoline-domain hydrolase disproportionating tetrathionate into sulfate and protons.
+    description: Periplasmic pyrroloquinoline-domain hydrolase (tth / AFE_0029 in A. ferrooxidans and tth / GCD22_14205, GCD22_02315 in A. thiooxidans ATCC 19377) disproportionating tetrathionate into sulfate and protons.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:B7J3C9
@@ -453,6 +453,10 @@ curation_history:
   curator: claude
   action: edit
   summary: Added live-verified Acidithiobacillus ferrooxidans ATCC 23270 Sqr paralog (UniProtKB:B7J411, sqr / AFE_0267) to sqr_reductase in waste-liquid-crystal-display-panels.yaml.
+- timestamp: '2026-10-30T22:26:52Z'
+  curator: claude
+  action: edit
+  summary: Updated tth_hydrolase node label and description in ferrooxidans_lcd_indium_bioleaching_graph to include both A. thiooxidans ATCC 19377 tth paralogs (GCD22_14205 and GCD22_02315).
 history_refs:
 - history/records/waste-liquid-crystal-display-panels/2026-10-11T134610Z-codex-b0f4f2.yaml
 - history/records/waste-liquid-crystal-display-panels/2026-10-18T042750Z-antigravity-75eedb.yaml
@@ -462,3 +466,4 @@ history_refs:
 - history/records/waste-liquid-crystal-display-panels/2026-10-30T080931Z-claude-0ee1a5.yaml
 - history/records/waste-liquid-crystal-display-panels/2026-10-30T171004Z-marcin-3d4e09.yaml
 - history/records/waste-liquid-crystal-display-panels/2026-10-30T191018Z-claude-d2615d.yaml
+- history/records/waste-liquid-crystal-display-panels/2026-10-30T222652Z-claude-9536c6.yaml

@@ -1,0 +1,27 @@
+history_version: 1
+target:
+  kind: record
+  slug: electrical-steel
+  path: data/records/electrical-steel.yaml
+session:
+  id: 2026-10-30T222651Z-claude-81cb3b
+  timestamp: '2026-10-30T22:26:51Z'
+  actors:
+  - name: claude
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Normalized top-level key ordering in electrical-steel.yaml so sources precedes
+    criticality per CANONICAL_RECORD_KEYS.
+  details: 'Reordered top-level record keys to match CANONICAL_RECORD_KEYS (sources before
+    criticality) so subsequent curation rounds touch only intended fields; resolved cmmmech-cycle5-stage4-finding-0001
+    (GRP-C5S5-001, #877) without altering any scientific claims, ontology terms, or measurements.'
+  sections:
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/877

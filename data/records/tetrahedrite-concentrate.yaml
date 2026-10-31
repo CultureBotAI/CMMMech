@@ -301,10 +301,10 @@ causal_graphs:
         supports: partial
         explanation: Representative Acidithiobacillus ferrivorans sulfide quinone oxidoreductase paralog (sqr2, locus AFERRI_20483) for oxidative sulfur/acid generation in the separate A. ferrivorans SS3 (DSM 17398) leaching arm of kupka_2025; individual sqr/sqr2/tetH genes were not mutated.
   - id: tth_hydrolase
-    label: Tth tetrathionate hydrolase (tth / AFE_0029)
+    label: Tth / TetH tetrathionate hydrolase (tth / AFE_0029 / tetH)
     node_type: GENE_OR_PROTEIN
     gene_symbol: tth
-    description: Periplasmic pyrroloquinoline-domain hydrolase disproportionating tetrathionate into sulfate and protons.
+    description: Periplasmic pyrroloquinoline-domain hydrolase (tth / AFE_0029 in A. ferrooxidans; tetH UniProtKB:A0A060URH6 in A. ferrivorans CF27 UP000193925) disproportionating tetrathionate into sulfate and protons.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:B7J3C9
@@ -377,7 +377,7 @@ causal_graphs:
     evidence:
     - source_ref: kupka_2025
       supports: partial
-      explanation: Reduced-sulfur oxidation in separate Acidithiobacillus ferrooxidans DSM 14882 and Acidithiobacillus ferrivorans SS3 (DSM 17398) culture arms couples Sqr and tetrathionate hydrolysis (Tth/TetH) to sulfate and proton generation; individual sqr/tth/tetH genes were not mutated in Kupka et al. (2025).
+      explanation: Reduced-sulfur oxidation in separate Acidithiobacillus ferrooxidans DSM 14882 and Acidithiobacillus ferrivorans SS3 (DSM 17398) culture arms couples Sqr and tetrathionate hydrolysis (Tth/TetH) to sulfate and proton generation; individual sqr/sqr2/tth/tetH genes were not mutated in Kupka et al. (2025).
   - source: tth_hydrolase
     target: acidic_ferric_sulfate_lixiviant
     predicate: produces
@@ -434,6 +434,10 @@ curation_history:
   curator: claude
   action: edit
   summary: Added live-verified Acidithiobacillus ferrooxidans Sqr (UniProtKB:B7J411, sqr / AFE_0267) and Acidithiobacillus ferrivorans Sqr2 (UniProtKB:A0A060UMZ1, sqr2 / AFERRI_20483) paralogs to sqr_reductase in tetrahedrite-concentrate.yaml.
+- timestamp: '2026-10-30T22:26:51Z'
+  curator: claude
+  action: edit
+  summary: Updated tth_hydrolase node label/description and edge explanation in ferrooxidans_tetrahedrite_bioleaching_graph to cover both A. ferrooxidans tth and A. ferrivorans tetH.
 history_refs:
 - history/records/tetrahedrite-concentrate/2026-10-12T111707Z-codex-f553c9.yaml
 - history/records/tetrahedrite-concentrate/2026-10-18T042750Z-antigravity-7c96ea.yaml
@@ -442,3 +446,4 @@ history_refs:
 - history/records/tetrahedrite-concentrate/2026-10-30T171004Z-marcin-f2dc1e.yaml
 - history/records/tetrahedrite-concentrate/2026-10-30T175759Z-marcin-428fe7.yaml
 - history/records/tetrahedrite-concentrate/2026-10-30T191018Z-claude-d8e9c5.yaml
+- history/records/tetrahedrite-concentrate/2026-10-30T222651Z-claude-b6026b.yaml

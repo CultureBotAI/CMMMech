@@ -1,0 +1,123 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 5
+stage: 5
+revision: 1
+outcome: completed
+summary: Consumed the 3 Cycle 5 Stage 4 review findings (cmmmech-cycle5-stage4-finding-0001,
+  cmmmech-cycle5-stage4-finding-0002, cmmmech-cycle5-stage4-finding-0003) across 15
+  records, grouped them by root cause and repair ownership into GRP-C5S5-001 (#877),
+  GRP-C5S5-002 (#878), and GRP-C5S5-003 (#879), applied all 15 record remediations
+  via scripts/curate_causal_graphs.py with 15 append-only EDIT history sidecars and
+  regenerated pages/, preserved all immutable Stage 4 review bundles untouched, and
+  verified all 15 remediated records in structured review bundle 20261030T222000Z-cycle5-stage5-remediation-verification
+  with verdict pass and 0 carry-forward findings.
+source_revision: 35a238bcbe1239d32e401f11976481f3e3cb1f5f
+scope_frozen_at: '2026-10-30T22:15:00Z'
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-04/revision-0001/evidence.yaml
+  sha256: d77d6b46b063baee49ecc557266e16a8f3b08fbaa55c8ad43543c42df65c57dc
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-05/revision-0001/issue_map.md
+  sha256: cea52871f5a42bb47b951ef9bbeb993acd4d9b95c596aa0106fda0dcabbaa46d
+  kind: issue_map
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-05/revision-0001/validation.md
+  sha256: 85db28fbd5af39dfdff6b5cffffd98bdf8fa54a8ce9f59bdd5913f56a5b9473c
+  kind: validation
+findings:
+- finding_id: cmmmech-cycle5-stage4-finding-0001
+  carried_from: cmmmech-cycle5-stage4-finding-0001
+  status: resolved
+  group_id: GRP-C5S5-001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/877
+  summary: Across the 668-record corpus, 13 records (chromium.yaml, electrical-steel.yaml,
+    hafnium.yaml, manganese.yaml, praseodymium.yaml, rare-earth-element-commodities.yaml,
+    scandium.yaml, selenium.yaml, silicon-carbide.yaml, silicon.yaml, synthetic-graphite.yaml,
+    uranium.yaml, vanadium.yaml) serialize top-level 'criticality' before 'sources',
+    whereas CriticalMineralRecord in src/cmmmech/schema/cmmmech.yaml and CANONICAL_RECORD_KEYS
+    in scripts/new_history.py place 'sources' before 'criticality'.
+  disposition: 'Resolved under #877 (GRP-C5S5-001) by normalizing top-level YAML key
+    order to CANONICAL_RECORD_KEYS across all 13 affected records with 13 append-only
+    EDIT history sidecars; verified in reviews/structured/20261030T222000Z-cycle5-stage5-remediation-verification/review.yaml.'
+- finding_id: cmmmech-cycle5-stage4-finding-0002
+  carried_from: cmmmech-cycle5-stage4-finding-0002
+  status: resolved
+  group_id: GRP-C5S5-002
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/878
+  summary: In data/records/tetrahedrite-concentrate.yaml (cmmmech:tetrahedrite-concentrate),
+    causal_graphs[0] (ferrooxidans_tetrahedrite_bioleaching_graph) node tth_hydrolase
+    (lines 304-307) retains single-species label 'Tth tetrathionate hydrolase (tth
+    / AFE_0029)' and generic description without Acidithiobacillus ferrivorans tetH
+    (UniProtKB:A0A060URH6, reference proteome UP000193925 strain CF27), whereas sibling
+    node sqr_reductase (lines 209-212) and edges[0].evidence[0].explanation (line
+    380) explicitly name both experimental species arms (A. ferrooxidans and A. ferrivorans).
+    In addition, edges[0].evidence[0].explanation (line 380) states 'individual sqr/tth/tetH
+    genes were not mutated', omitting sqr2 (AFERRI_20483, UniProtKB:A0A060UMZ1).
+  disposition: 'Resolved under #878 (GRP-C5S5-002) by updating causal_graphs[0] nodes[1].label,
+    nodes[1].description, and edges[0].evidence[0].explanation in data/records/tetrahedrite-concentrate.yaml
+    to cover both A. ferrooxidans tth/AFE_0029 and A. ferrivorans tetH/UniProtKB:A0A060URH6
+    (and sqr2) per Kupka et al. (2025) with an append-only EDIT history sidecar; verified
+    in reviews/structured/20261030T222000Z-cycle5-stage5-remediation-verification/review.yaml.'
+- finding_id: cmmmech-cycle5-stage4-finding-0003
+  carried_from: cmmmech-cycle5-stage4-finding-0003
+  status: resolved
+  group_id: GRP-C5S5-003
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/879
+  summary: In data/records/waste-liquid-crystal-display-panels.yaml (cmmmech:waste-liquid-crystal-display-panels),
+    causal_graphs[0] (ferrooxidans_lcd_indium_bioleaching_graph) node tth_hydrolase
+    (lines 297-300) retains single-species label 'Tth tetrathionate hydrolase (tth
+    / AFE_0029)' and generic description without the two grounded Acidithiobacillus
+    thiooxidans ATCC 19377 tth paralogs (GCD22_14205 UniProtKB:A0A5P9XPU3 and GCD22_02315
+    UniProtKB:A0A5P9XS05), whereas sibling node sqr_reductase (lines 204-207) explicitly
+    lists both A. ferrooxidans and A. thiooxidans paralog loci.
+  disposition: 'Resolved under #879 (GRP-C5S5-003) by updating causal_graphs[0] nodes[1].label
+    and nodes[1].description in data/records/waste-liquid-crystal-display-panels.yaml
+    to name both Acidithiobacillus thiooxidans ATCC 19377 tth paralogs (GCD22_14205
+    and GCD22_02315) alongside A. ferrooxidans tth (AFE_0029) per Willner et al.
+    (2018) with an append-only EDIT history sidecar; verified in reviews/structured/20261030T222000Z-cycle5-stage5-remediation-verification/review.yaml.'
+groups:
+- group_id: GRP-C5S5-001
+  finding_ids:
+  - cmmmech-cycle5-stage4-finding-0001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/877
+  status: resolved
+  summary: Normalize top-level YAML key order so sources precedes criticality across
+    13 records with append-only EDIT history sidecars.
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-05/revision-0001/validation.md
+  disposition: Normalized top-level YAML key ordering to CANONICAL_RECORD_KEYS across
+    all 13 records in GRP-C5S5-001 with 13 append-only EDIT history sidecars and verified
+    in 20261030T222000Z-cycle5-stage5-remediation-verification.
+- group_id: GRP-C5S5-002
+  finding_ids:
+  - cmmmech-cycle5-stage4-finding-0002
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/878
+  status: resolved
+  summary: Harmonize shared tth_hydrolase node label, description, and edge explanation
+    in tetrahedrite-concentrate.yaml across A. ferrooxidans and A. ferrivorans per
+    Kupka et al. (2025) with an append-only EDIT history sidecar.
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-05/revision-0001/validation.md
+  disposition: Updated causal_graphs[0] nodes[1].label, nodes[1].description, and
+    edges[0].evidence[0].explanation in tetrahedrite-concentrate.yaml with an append-only
+    EDIT history sidecar and verified in 20261030T222000Z-cycle5-stage5-remediation-verification.
+- group_id: GRP-C5S5-003
+  finding_ids:
+  - cmmmech-cycle5-stage4-finding-0003
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/879
+  status: resolved
+  summary: Harmonize shared tth_hydrolase node label and description in waste-liquid-crystal-display-panels.yaml
+    to name both A. thiooxidans tth paralogs (GCD22_14205 and GCD22_02315) with an
+    append-only EDIT history sidecar.
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000005/stage-05/revision-0001/validation.md
+  disposition: Updated causal_graphs[0] nodes[1].label and nodes[1].description in
+    waste-liquid-crystal-display-panels.yaml with an append-only EDIT history sidecar
+    and verified in 20261030T222000Z-cycle5-stage5-remediation-verification.
+carry_forward_ids: []
+infra_tasks: []
