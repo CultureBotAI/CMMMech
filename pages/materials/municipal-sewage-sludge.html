@@ -427,10 +427,10 @@
           <td>
 <div>Acidified sludge-culture mixture in 250 mL bottles (10 mL sludge + 90 mL medium/culture, 30 C, 150 rpm; 10 mL mixture replaced with fresh sludge at days 21 and 42) supplemented at day 42 with a nominal 10 g/L elemental sulfur (80% pure) and incubated through day 63 (Phase 3), reaching pH 0.9 in the A. thiooxidans + S0 (T+S) arm.</div>          </td>
         </tr>
-        <tr id="causal-node-sulfur_assisted_culture_acidification_graph-anaerobically_digested_municipal_sewage_sludge">
+        <tr id="causal-node-sulfur_assisted_culture_acidification_graph-municipal_sewage_sludge_suspension">
           <td>
             <strong>Partially dewatered raw municipal sewage sludge from Lehtoniemi WWTP (Kuopio, Finland; 5.59% total solids)</strong><br>
-            <code style="font-size: .78rem; color: var(--muted);">anaerobically_digested_municipal_sewage_sludge</code>
+            <code style="font-size: .78rem; color: var(--muted);">municipal_sewage_sludge_suspension</code>
           </td>
           <td>
             <span class="badge">MATERIAL OR PHASE</span>
@@ -439,10 +439,10 @@
           <td>
 <div>Partially dewatered raw municipal sewage sludge from the Lehtoniemi wastewater treatment plant (Kuopio, Finland; 5.59% total solids), incubated as 10 mL sludge + 90 mL medium/culture with 10 mL replacements by fresh sludge at days 21 and 42.</div>          </td>
         </tr>
-        <tr id="causal-node-sulfur_assisted_culture_acidification_graph-solubilized_sludge_heavy_metals_and_dewatered_cake">
+        <tr id="causal-node-sulfur_assisted_culture_acidification_graph-bioleached_sludge_and_solubilized_heavy_metals">
           <td>
             <strong>0.45-um-filtered dissolved phosphorus in Phase 3 (days 42-63: reported 92% P solubilization at pH 0.9 in A. thiooxidans T+S vs 27% in mixed TC+S, 10% in A. ferrooxidans F+S, and 5-10% in sulfur-free phases)</strong><br>
-            <code style="font-size: .78rem; color: var(--muted);">solubilized_sludge_heavy_metals_and_dewatered_cake</code>
+            <code style="font-size: .78rem; color: var(--muted);">bioleached_sludge_and_solubilized_heavy_metals</code>
           </td>
           <td>
             <span class="badge">CHEMICAL ENTITY</span>
@@ -463,10 +463,10 @@
         <code>tth_hydrolase</code> &rarr; <strong>sulfuric acid proton and lixiviant generation</strong> (<code>produces</code>) &rarr; <code>biogenic_sulfuric_acid_oxidizing_sludge_liquor</code>
 : Tth tetrathionate hydrolases (A. ferrooxidans tth AFE_0029; A. thiooxidans tth GCD22_14205, tth GCD22_02315) disproportionates tetrathionate and polythionate intermediates into sulfate and H+, generating Sulfur-supplemented acidic culture suspension (nominal 10 g/L 80%-pure S0 added at day 42; reaching pH 0.9 in T+S at day 63, 30 C, 150 rpm).[<a href="#source-pradhan_2021"><code>pradhan_2021</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
-        <code>biogenic_sulfuric_acid_oxidizing_sludge_liquor</code> &rarr; <strong>sulfur-assisted culture acidification and dissolution of sludge-bound phosphorus in Phase 3 (days 42-63)</strong> (<code>solubilizes</code>) &rarr; <code>anaerobically_digested_municipal_sewage_sludge</code>
+        <code>biogenic_sulfuric_acid_oxidizing_sludge_liquor</code> &rarr; <strong>sulfur-assisted culture acidification and dissolution of sludge-bound phosphorus in Phase 3 (days 42-63)</strong> (<code>solubilizes</code>) &rarr; <code>municipal_sewage_sludge_suspension</code>
 : Addition of nominal 10 g/L elemental sulfur (80% pure) at day 42 drives microbial sulfur oxidation and culture acidification in 250 mL bottles at 30 C and 150 rpm (down to pH 0.9 in the A. thiooxidans T+S arm by day 63), dissolving sludge-bound phosphorus from Lehtoniemi WWTP municipal sewage sludge.[<a href="#source-pradhan_2021"><code>pradhan_2021</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
-        <code>anaerobically_digested_municipal_sewage_sludge</code> &rarr; <strong>Phase 3 (days 42-63) 0.45-um-filtered phosphorus solubilization (92% in T+S at pH 0.9, 27% in TC+S, 10% in F+S)</strong> (<code>produces</code>) &rarr; <code>solubilized_sludge_heavy_metals_and_dewatered_cake</code>
+        <code>municipal_sewage_sludge_suspension</code> &rarr; <strong>Phase 3 (days 42-63) 0.45-um-filtered phosphorus solubilization (92% in T+S at pH 0.9, 27% in TC+S, 10% in F+S)</strong> (<code>produces</code>) &rarr; <code>bioleached_sludge_and_solubilized_heavy_metals</code>
 : Phase 3 (days 42-63) elemental-sulfur-assisted incubation reaches a reported 92% 0.45-um-filtered phosphorus solubilization at pH 0.9 in the A. thiooxidans DSM 14887 + S0 (T+S) arm, compared with 27% in the equal-volume mixed-culture TC+S arm and 10% in the A. ferrooxidans DSM 29444 F+S arm.[<a href="#source-pradhan_2021"><code>pradhan_2021</code></a>]      </li>
     </ul>
   </div>
@@ -538,6 +538,12 @@
         <td><span class="badge">edit</span></td>
         <td>Remediate sulfur_assisted_culture_acidification_graph and sulfur_assisted_culture_acidification protein_examples to match primary-source experimental conditions, strains, and outcomes (#892)</td>
       </tr>
+      <tr>
+        <td><code>2026-10-31T09:46:24Z</code></td>
+        <td>marcin</td>
+        <td><span class="badge">edit</span></td>
+        <td>Rename node IDs in sulfur_assisted_culture_acidification_graph to match Lehtoniemi raw municipal sewage sludge phosphorus solubilization scope (#892)</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -547,7 +553,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (673 materials · 609 mechanisms · latest curation 2026-10-31 · corpus digest <code>7045a4b24de8</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (673 materials · 609 mechanisms · latest curation 2026-10-31 · corpus digest <code>662ace861a58</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

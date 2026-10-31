@@ -1,0 +1,29 @@
+history_version: 1
+target:
+  kind: record
+  slug: nickel-laterite-ore
+  path: data/records/nickel-laterite-ore.yaml
+session:
+  id: 2026-10-31T094622Z-marcin-31202a
+  timestamp: '2026-10-31T09:46:22Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Align aerobic_sulfur_oxidizer_leaching_graph Piaui duration, node ID, and outcome
+    claims with Hetz & Schippers (2025) curated mechanism (#892)
+  details: Rename piaui_nickel_laterite_ores_p1_p2 to multi_deposit_nickel_laterite_ores,
+    set Piaui duration to 15 days, and remove unverified Piaui percentage strings (#892).
+  sections:
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/892
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/888

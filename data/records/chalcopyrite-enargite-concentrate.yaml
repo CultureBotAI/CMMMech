@@ -203,7 +203,7 @@ causal_graphs:
     node_type: MATERIAL_OR_PHASE
     description: 'Three complex copper-sulfide concentrates tested as received at 1% (w/v) without washing or sterilization (Figure 1 chalcopyrite/enargite/pyrite contents: D3 12/21/30 wt% [D50 39 um], Eb 17/6.7/36 wt% [D50 81 um], and Ea 8/24/10 wt% [D50 49 um], plus bornite, chalcocite, geerite, and other phases).'
     protein_grounding_status: NOT_APPLICABLE
-  - id: solubilized_copper_and_ferric_arsenate_precipitate
+  - id: selectively_leached_enargite_and_chalcopyrite_solution
     label: 'Feed- and carbon-dose-dependent soluble Cu over 30-35 d: Eb 74% (0% C), 92% (0.05% C), 100% (0.3% C) at day 30; D3 >60% (0% C) vs ~100% (0.05% C) at day 35; Ea 54% (0% C) with highest final Cu at 0.05% C'
     node_type: CHEMICAL_ENTITY
     description: 'ICP-OES soluble copper fractions over 30-35 days showing feed-specific activated-carbon responses (Section 3.2.1, Figure 6): for Eb, 74%, 92%, and 100% soluble Cu at day 30 with 0, 0.05%, and 0.3% (w/v) carbon; for D3, plateau just above 60% without carbon versus near-complete dissolution at 0.05% (w/v) carbon by day 35; for Ea, 54% without carbon and higher final Cu at 0.05% than 0.3% (w/v) carbon, alongside arm-dependent soluble arsenic (Figure S4).'
@@ -237,7 +237,7 @@ causal_graphs:
       supports: partial
       explanation: Sections 2.1-2.5 and 3.2 and Figures 1, 5, 6, and S4 of Oyama et al. (2021) document 30-35 day mixed-culture leaching of 1% (w/v) D3, Eb, and Ea concentrates at 45 C; support is partial because the concentrates were not sterilized (making no-added-cell flasks non-sterile comparators that also showed substantial Cu dissolution in D3 and Ea), pH readjustments differed by feed, and individual consortium member contributions were not isolated.
   - source: arsenic_rich_chalcopyrite_enargite_concentrate
-    target: solubilized_copper_and_ferric_arsenate_precipitate
+    target: selectively_leached_enargite_and_chalcopyrite_solution
     predicate: produces
     relationship: concentrate- and carbon-dose-dependent copper solubilization across D3, Eb, and Ea
     description: Over 30-35 days, soluble copper reaches 74%, 92%, and 100% for Eb (at 0, 0.05%, and 0.3% w/v carbon at day 30), rises from >60% (0% C) to ~100% (0.05% C) for D3 by day 35, and reaches 54% (0% C) with highest final extraction at 0.05% C for Ea.
@@ -258,7 +258,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: Remediate conditional_carbon_assisted_bioleaching_graph and conditional_carbon_assisted_bioleaching protein_examples to match primary-source experimental conditions, strains, and outcomes (#892)
+- timestamp: '2026-10-31T09:46:22Z'
+  curator: marcin
+  action: edit
+  summary: Rename terminal node ID in conditional_carbon_assisted_bioleaching_graph to remove ferric arsenate precipitate implication (#892)
 history_refs:
 - history/records/chalcopyrite-enargite-concentrate/2026-10-12T114445Z-codex-48240b.yaml
 - history/records/chalcopyrite-enargite-concentrate/2026-10-31T053145Z-marcin-8eb0b4.yaml
 - history/records/chalcopyrite-enargite-concentrate/2026-10-31T090426Z-marcin-42be98.yaml
+- history/records/chalcopyrite-enargite-concentrate/2026-10-31T094622Z-marcin-0a610a.yaml

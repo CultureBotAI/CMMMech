@@ -541,10 +541,10 @@ causal_graphs:
     node_type: CHEMICAL_ENTITY
     description: Duplicate 250 mL flasks containing 190 mL poor medium (water acidified to pH 3 with H2SO4 plus 5 g/L elemental sulfur) and 10 mL ore-adapted Acidithiobacillus ferrooxidans SmolnikLC + Acidithiobacillus thiooxidans SmolnikF inoculum, pre-cultivated until pH dropped to 1.5 before adding 2 g (10 g/L) ore and incubated without shaking at 30 C (contrasted with rich 9K-type medium containing 44.2 g/L FeSO4.7H2O + 4 g/L S0, which showed no Li bioleaching).
     protein_grounding_status: NOT_APPLICABLE
-  - id: beauvoir_lepidolite_zinnwaldite_concentrate
+  - id: beauvoir_lepidolite_concentrate
     label: Crushed whole-rock Beauvoir (France) lithium-mica ore (<150 um with ~75% <100 um, 2 g in 200 mL [10 g/L]; XRD polylithionite, muscovite, kaolinite; AAS 1.21% Li vs Table 1 3.79% Li2O [~1.76% Li])
     node_type: MATERIAL_OR_PHASE
-    description: Crushed and sieved (<150 um, ~75% <100 um) whole-rock lithium-mica ore from Beauvoir, France (assigned to polylithionite, muscovite, and kaolinite in Figure S2A despite lepidolite/zinnwaldite wording in text; feed lithium reported as 1.21% Li by AAS in Methods vs 3.79% Li2O [~1.76% Li] in Table 1), added at 2 g per 200 mL (10 g/L) after dry heat sterilization (160 C, 3 h).
+    description: Crushed and sieved (<150 um, ~75% <100 um) whole-rock lithium-mica ore from Beauvoir, France (assigned to polylithionite, muscovite, and kaolinite in Figure S2A; feed lithium reported as 1.21% Li by AAS in Methods vs 3.79% Li2O [~1.76% Li] in Table 1), added at 2 g per 200 mL (10 g/L).
     protein_grounding_status: NOT_APPLICABLE
   - id: solubilized_lithium_and_rubidium_leachate
     label: '0.2-um-filtered dissolved Li by AAS in poor medium: up to 11 mg/L Li (8.8% feed-lithium extraction) over 336/366 days at 30 C (0% Li bioleaching in rich medium)'
@@ -571,15 +571,15 @@ causal_graphs:
       supports: partial
       explanation: Chemolithoautotrophic sulfur oxidation by Acidithiobacillus ferrooxidans and Acidithiobacillus thiooxidans generates sulfuric-acid protons and acidifies the leaching system during mixed Acidithiobacillus ferrooxidans SmolnikLC and Acidithiobacillus thiooxidans SmolnikF poor-medium (initial pH 3 H2SO4 + 5 g/L S0, pre-acidified to pH 1.5) versus rich-medium bioleaching of crushed Beauvoir lithium-mica ore (10 g/L) at 30 C in Sedlakova-Kadukova et al. (2020); individual enzyme activities were not isolated.
   - source: acidophile_sulfur_supplemented_9k_medium
-    target: beauvoir_lepidolite_zinnwaldite_concentrate
+    target: beauvoir_lepidolite_concentrate
     predicate: solubilizes
     relationship: poor-medium sulfur-oxidizing acidification and slow acid/microbial attack on Beauvoir lithium-mica ore
     description: Ore-adapted A. ferrooxidans SmolnikLC + A. thiooxidans SmolnikF cultures in poor medium (5 g/L S0, pre-acidified to pH 1.5) leach 10 g/L crushed Beauvoir ore at 30 C without shaking over 336/366 days.
     evidence:
     - source_ref: sedlakova2020
       supports: partial
-      explanation: Results (pp. 2-5), Figures 1-2 and 4-5, and Methods (p. 9) of Sedlakova-Kadukova et al. (2020) show higher dissolved Li in inoculated poor medium than in its uninoculated control over 336/366 days; support is partial because uninoculated controls were not pH-matched to the pre-acidified (pH 1.5) biotic trajectory, rich medium showed no Li bioleaching, and individual SmolnikLC vs SmolnikF roles were not separated.
-  - source: beauvoir_lepidolite_zinnwaldite_concentrate
+      explanation: Materials and methods, Table 1, Figures 1-4, and Results and discussion of Sedlakova-Kadukova et al. (2020) show higher dissolved Li in inoculated poor medium than in its uninoculated control over 336/366 days; support is partial because uninoculated controls were not pH-matched to the pre-acidified (pH 1.5) biotic trajectory, rich medium showed no Li bioleaching, and individual SmolnikLC vs SmolnikF roles were not separated.
+  - source: beauvoir_lepidolite_concentrate
     target: solubilized_lithium_and_rubidium_leachate
     predicate: produces
     relationship: mobilization of up to 11 mg/L dissolved Li (8.8% feed-Li extraction) in poor medium over 336/366 days
@@ -587,7 +587,7 @@ causal_graphs:
     evidence:
     - source_ref: sedlakova2020
       supports: partial
-      explanation: Figures 1-2 and 4 and Results pp. 2-4 of Sedlakova-Kadukova et al. (2020) report a maximum of 11 mg/L dissolved Li and 8.8% extraction in poor medium; support is partial because the paper prints 336 days in text/Figures 1-2 versus 366 days in Methods/Figures 4-5, feed Li assays differ between 1.21% Li (AAS) and 3.79% Li2O (Table 1), and no lithium product was isolated.
+      explanation: Materials and methods, Table 1, Figures 1-4, and Results and discussion of Sedlakova-Kadukova et al. (2020) report a maximum of 11 mg/L dissolved Li and 8.8% extraction in poor medium; support is partial because the paper prints 336 days in text/Figures 1-2 versus 366 days in Methods/Figure 4, feed Li assays differ between 1.21% Li (AAS) and 3.79% Li2O (Table 1), and no lithium product was isolated.
 curation_history:
 - timestamp: '2026-10-12T02:37:16Z'
   curator: codex (GPT-6; codex)
@@ -609,9 +609,14 @@ curation_history:
   curator: marcin
   action: edit
   summary: Remediate beauvoir_acidophile_leaching_graph and beauvoir_acidophile_leaching protein_examples to match primary-source experimental conditions, strains, and outcomes (#892)
+- timestamp: '2026-10-31T09:46:23Z'
+  curator: marcin
+  action: edit
+  summary: Align beauvoir_acidophile_leaching_graph node ID, feed sterilization scope, and figure citations with Sedlakova-Kadukova et al. (2020) (#892)
 history_refs:
 - history/records/lithium-mica-ore/2026-10-12T023720Z-codex-9e7491.yaml
 - history/records/lithium-mica-ore/2026-10-12T032137Z-codex-47f29b.yaml
 - history/records/lithium-mica-ore/2026-10-22T110306Z-claude-9f2ec3.yaml
 - history/records/lithium-mica-ore/2026-10-31T053145Z-marcin-e54381.yaml
 - history/records/lithium-mica-ore/2026-10-31T090428Z-marcin-cce1ba.yaml
+- history/records/lithium-mica-ore/2026-10-31T094623Z-marcin-27ee56.yaml

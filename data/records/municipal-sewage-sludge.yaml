@@ -400,12 +400,12 @@ causal_graphs:
     node_type: CHEMICAL_ENTITY
     description: Acidified sludge-culture mixture in 250 mL bottles (10 mL sludge + 90 mL medium/culture, 30 C, 150 rpm; 10 mL mixture replaced with fresh sludge at days 21 and 42) supplemented at day 42 with a nominal 10 g/L elemental sulfur (80% pure) and incubated through day 63 (Phase 3), reaching pH 0.9 in the A. thiooxidans + S0 (T+S) arm.
     protein_grounding_status: NOT_APPLICABLE
-  - id: anaerobically_digested_municipal_sewage_sludge
+  - id: municipal_sewage_sludge_suspension
     label: Partially dewatered raw municipal sewage sludge from Lehtoniemi WWTP (Kuopio, Finland; 5.59% total solids)
     node_type: MATERIAL_OR_PHASE
     description: Partially dewatered raw municipal sewage sludge from the Lehtoniemi wastewater treatment plant (Kuopio, Finland; 5.59% total solids), incubated as 10 mL sludge + 90 mL medium/culture with 10 mL replacements by fresh sludge at days 21 and 42.
     protein_grounding_status: NOT_APPLICABLE
-  - id: solubilized_sludge_heavy_metals_and_dewatered_cake
+  - id: bioleached_sludge_and_solubilized_heavy_metals
     label: '0.45-um-filtered dissolved phosphorus in Phase 3 (days 42-63: reported 92% P solubilization at pH 0.9 in A. thiooxidans T+S vs 27% in mixed TC+S, 10% in A. ferrooxidans F+S, and 5-10% in sulfur-free phases)'
     node_type: CHEMICAL_ENTITY
     description: 'Dissolved phosphorus measured in 0.45-um-filtered supernatant during Phase 3 (days 42-63 after adding nominal 10 g/L 80%-pure S0): 92% reported P solubilization at pH 0.9 in the A. thiooxidans + S0 (T+S) arm, compared with 27% in the mixed-culture TC+S arm, 10% in the A. ferrooxidans F+S arm, and 5-10% in the preceding sulfur-free phases.'
@@ -430,7 +430,7 @@ causal_graphs:
       supports: partial
       explanation: Chemolithoautotrophic sulfur oxidation by Acidithiobacillus ferrooxidans and Acidithiobacillus thiooxidans generates sulfuric-acid protons and acidifies the leaching system during elemental-sulfur-assisted (nominal 10 g/L 80%-pure S0 added at day 42 through day 63 in Phase 3) culture acidification and phosphorus solubilization from Lehtoniemi WWTP municipal sewage sludge by Acidithiobacillus ferrooxidans DSM 29444 and Acidithiobacillus thiooxidans DSM 14887 in Pradhan et al. (2021); individual enzyme activities were not isolated.
   - source: biogenic_sulfuric_acid_oxidizing_sludge_liquor
-    target: anaerobically_digested_municipal_sewage_sludge
+    target: municipal_sewage_sludge_suspension
     predicate: solubilizes
     relationship: sulfur-assisted culture acidification and dissolution of sludge-bound phosphorus in Phase 3 (days 42-63)
     description: Addition of nominal 10 g/L elemental sulfur (80% pure) at day 42 drives microbial sulfur oxidation and culture acidification in 250 mL bottles at 30 C and 150 rpm (down to pH 0.9 in the A. thiooxidans T+S arm by day 63), dissolving sludge-bound phosphorus from Lehtoniemi WWTP municipal sewage sludge.
@@ -438,8 +438,8 @@ causal_graphs:
     - source_ref: pradhan_2021
       supports: partial
       explanation: Pradhan et al. (2021) (IJERPH 18:7135) report that adding nominal 10 g/L elemental sulfur (80% pure) at day 42 in Phase 3 (days 42-63) acidified the culture to pH 0.9 in the A. thiooxidans DSM 14887 (T+S) arm and increased 0.45-um-filtered phosphorus solubilization relative to the preceding sulfur-free phases (5-10% P); support is partial because the growth medium contained phosphate, indigenous sludge microbes grew in uninoculated controls, and no closed P mass balance was established.
-  - source: anaerobically_digested_municipal_sewage_sludge
-    target: solubilized_sludge_heavy_metals_and_dewatered_cake
+  - source: municipal_sewage_sludge_suspension
+    target: bioleached_sludge_and_solubilized_heavy_metals
     predicate: produces
     relationship: Phase 3 (days 42-63) 0.45-um-filtered phosphorus solubilization (92% in T+S at pH 0.9, 27% in TC+S, 10% in F+S)
     description: Phase 3 (days 42-63) elemental-sulfur-assisted incubation reaches a reported 92% 0.45-um-filtered phosphorus solubilization at pH 0.9 in the A. thiooxidans DSM 14887 + S0 (T+S) arm, compared with 27% in the equal-volume mixed-culture TC+S arm and 10% in the A. ferrooxidans DSM 29444 F+S arm.
@@ -460,7 +460,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: Remediate sulfur_assisted_culture_acidification_graph and sulfur_assisted_culture_acidification protein_examples to match primary-source experimental conditions, strains, and outcomes (#892)
+- timestamp: '2026-10-31T09:46:24Z'
+  curator: marcin
+  action: edit
+  summary: Rename node IDs in sulfur_assisted_culture_acidification_graph to match Lehtoniemi raw municipal sewage sludge phosphorus solubilization scope (#892)
 history_refs:
 - history/records/municipal-sewage-sludge/2026-10-15T022845Z-codex-ebd103.yaml
 - history/records/municipal-sewage-sludge/2026-10-31T053145Z-marcin-954114.yaml
 - history/records/municipal-sewage-sludge/2026-10-31T090428Z-marcin-0b2cf6.yaml
+- history/records/municipal-sewage-sludge/2026-10-31T094624Z-marcin-f642ed.yaml

@@ -1,0 +1,29 @@
+history_version: 1
+target:
+  kind: record
+  slug: beverage-carton-hydropulping-reject
+  path: data/records/beverage-carton-hydropulping-reject.yaml
+session:
+  id: 2026-10-31T094623Z-marcin-49fbea
+  timestamp: '2026-10-31T09:46:23Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Align direct-culture DSM 583 comparator wording in spent_acid_leaching_after_fibre_removal_graph
+    with Kremser et al. (2022) curated mechanism (#892)
+  details: Replace unverified 38%/6-week comparator text with ~88% at 10 g/L and ~20% at 25
+    g/L over 14 days as established in mechanisms[0].evidence[1] (#892).
+  sections:
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/892
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/888

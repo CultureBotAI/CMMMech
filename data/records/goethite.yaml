@@ -392,7 +392,7 @@ causal_graphs:
   - id: dissolved_ferrous_iron_cobalt_manganese
     label: '0.2-um-filtered total dissolved Fe by ferrozine assay after 5 weeks: 1.9 mM with A. thiooxidans DSM 14887 (30 C, final pH 1.2 vs 0.08 mM control) and 3.8 mM with A. caldus DSM 8584 (45 C, final pH 1.0 vs 0.3 mM control)'
     node_type: CHEMICAL_ENTITY
-    description: 'Endpoint 0.2-um-filtered total dissolved iron (measured by ferrozine spectrophotometric assay after 5 weeks in Series 1, Figure 1 and Table 3): 1.9 mM Fe (final pH 1.2) with A. thiooxidans DSM 14887 at 30 C versus 0.08 mM (final pH 2.9) in the uninoculated 30 C control, and 3.8 mM Fe (final pH 1.0) with A. caldus DSM 8584 at 45 C versus 0.3 mM (final pH 2.4) in the uninoculated 45 C control.'
+    description: 'Endpoint 0.2-um-filtered total dissolved iron (measured by ferrozine spectrophotometric assay after 5 weeks in Series 1, Methods 2.1-2.3, Results 3.1, Figure 1, and Discussion): 1.9 mM Fe (final pH 1.2) with A. thiooxidans DSM 14887 at 30 C versus 0.08 mM in the uninoculated 30 C control, and 3.8 mM Fe (final pH 1.0) with A. caldus DSM 8584 at 45 C versus 0.3 mM in the uninoculated 45 C control.'
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: sqr_reductase
@@ -421,7 +421,7 @@ causal_graphs:
     evidence:
     - source_ref: stankovic_2024
       supports: partial
-      explanation: Series 1 Methods, Results, Figure 1, and Table 3 of Stankovic & Schippers (2024) show acidification to pH 1.2 (DSM 14887, 30 C) and pH 1.0 (DSM 8584, 45 C) and elevated dissolved Fe relative to uninoculated controls (pH 2.9 and 2.4); support is partial because no acid-matched or killed-cell control separates proton-promoted dissolution, sulfur-intermediate chemistry, and cellular electron transfer.
+      explanation: Methods 2.1-2.3, Results 3.1, Figure 1, and Discussion of Stankovic & Schippers (2024) show acidification to pH 1.2 (DSM 14887, 30 C) and pH 1.0 (DSM 8584, 45 C) and elevated dissolved Fe relative to uninoculated controls; support is partial because no acid-matched or killed-cell control separates proton-promoted dissolution, sulfur-intermediate chemistry, and cellular electron transfer.
   - source: natural_compact_goethite_concentrate
     target: dissolved_ferrous_iron_cobalt_manganese
     predicate: produces
@@ -430,7 +430,7 @@ causal_graphs:
     evidence:
     - source_ref: stankovic_2024
       supports: partial
-      explanation: Figure 1 and Table 3 of Stankovic & Schippers (2024) report 5-week endpoint dissolved Fe of 1.9 mM (DSM 14887, 30 C) and 3.8 mM (DSM 8584, 45 C) versus 0.08 mM and 0.3 mM in uninoculated controls; support is partial because replicate dispersion is not printed in Table 3, feed-mass recovery is not calculated from the 85% Fe2O3 XRF value, and no iron product was isolated.
+      explanation: Methods 2.1-2.3, Results 3.1, Figure 1, and Discussion of Stankovic & Schippers (2024) report 5-week endpoint dissolved Fe of 1.9 mM (DSM 14887, 30 C) and 3.8 mM (DSM 8584, 45 C) versus 0.08 mM and 0.3 mM in uninoculated controls; support is partial because individual replicate values are not tabulated, feed-mass recovery is not calculated from the 85% Fe2O3 XRF value, and no iron product was isolated.
 curation_history:
 - timestamp: '2026-10-11T12:13:26.307790+00:00'
   curator: codex (GPT-6; codex)
@@ -444,7 +444,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: Remediate sulfur_oxidizer_goethite_mobilization_graph and sulfur_oxidizer_goethite_mobilization protein_examples to match primary-source experimental conditions, strains, and outcomes (#892)
+- timestamp: '2026-10-31T09:46:23Z'
+  curator: marcin
+  action: edit
+  summary: Align sulfur_oxidizer_goethite_mobilization_graph section citations and control pH wording with Stankovic & Schippers (2024) curated mechanism (#892)
 history_refs:
 - history/records/goethite/2026-10-11T121318Z-codex-f97231.yaml
 - history/records/goethite/2026-10-31T053145Z-marcin-b99169.yaml
 - history/records/goethite/2026-10-31T090427Z-marcin-3871c8.yaml
+- history/records/goethite/2026-10-31T094623Z-marcin-bb4112.yaml

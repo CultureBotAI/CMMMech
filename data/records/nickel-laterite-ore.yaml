@@ -298,15 +298,15 @@ causal_graphs:
     node_type: CHEMICAL_ENTITY
     description: 1.5 L basal salts medium with 1% (w/v) elemental sulfur (and 3 mM ferrous iron / ferrous sulfate described in Methods) in 2-L stirred, air-supplied reactors at 30 C and initial pH 3.0, inoculated at 10% (v/v) with an equal-volume six-strain Acidithiobacillus thiooxidans mixture (DSM 14887T, DSM 504, DSM 622, DSM 103717, DSM 9463, RAM8) and pre-grown for 4 days before 10% (w/v) ore addition, with leaching pH either maintained at 1.5 or unmaintained.
     protein_grounding_status: NOT_APPLICABLE
-  - id: piaui_nickel_laterite_ores_p1_p2
+  - id: multi_deposit_nickel_laterite_ores
     label: 'Six homogenized, sieved (<2 mm), unwashed Brazilian laterite ores at 10% w/v: Barro Alto (BaSt, 1P5, BaC), Jacare (JacC, JacF), and Piaui (Piaui)'
     node_type: MATERIAL_OR_PHASE
-    description: Six homogenized, sieved (<2 mm), unwashed Brazilian laterite ore samples from Barro Alto (BaSt stockpile, 1P5, BaC), Jacare (JacC, JacF), and Piaui (Piaui), added at 10% (w/v) after 4 days of sulfur pre-growth and leached for 15 days (BaSt, 1P5), 20 days (BaC), 24 days (JacC, JacF), or 15/21 days (Piaui).
+    description: Six homogenized, sieved (<2 mm), unwashed Brazilian laterite ore samples from Barro Alto (BaSt stockpile, 1P5, BaC), Jacare (JacC, JacF), and Piaui (Piaui), added at 10% (w/v) after 4 days of sulfur pre-growth and leached for 15 days (BaSt, 1P5), 20 days (BaC), 24 days (JacC, JacF), or 15 days (Piaui).
     protein_grounding_status: NOT_APPLICABLE
   - id: mobilized_laterite_ni_co_mn_mg_fe
-    label: 'Ore-dependent dissolved Ni and Co (BaSt unmaintained pH at 15 d: 83.0 +/- 5.7% Ni, 83.0 +/- 3.0% Co vs 33.6 +/- 0.1% Ni, 23.9 +/- 0.1% Co in matched-pH control; Piaui: 38.6-53.8% Ni, 67.6-90.0% Co)'
+    label: 'Ore-dependent dissolved Ni and Co (BaSt unmaintained pH at 15 d: 83.0 +/- 5.7% Ni, 83.0 +/- 3.0% Co vs 33.6 +/- 0.1% Ni, 23.9 +/- 0.1% Co in matched-pH control; similar biotic and chemical Ni extraction for 1P5 and Piaui; minimal extraction for JacF)'
     node_type: CHEMICAL_ENTITY
-    description: '0.2-um-filtered ICP-OES dissolved Ni and Co showing strong feed dependence: for Barro Alto stockpile sample BaSt (unmaintained pH, 15 d), 83.0 +/- 5.7% Ni and 83.0 +/- 3.0% Co (four bioreactors) versus 33.6 +/- 0.1% Ni and 23.9 +/- 0.1% Co in matched-pH uninoculated controls (two reactors), whereas 1P5 and Piaui (38.6% Ni / 67.6% Co at pH 1.5; 53.8% Ni / 90.0% Co unmaintained) showed little or no Ni advantage over matched-pH chemical controls and JacF extraction was very low.'
+    description: '0.2-um-filtered ICP-OES dissolved Ni and Co showing strong feed dependence: for Barro Alto stockpile sample BaSt (unmaintained pH, 15 d), 83.0 +/- 5.7% Ni and 83.0 +/- 3.0% Co (four bioreactors) versus 33.6 +/- 0.1% Ni and 23.9 +/- 0.1% Co in matched-pH uninoculated controls (two reactors), whereas 1P5 and Piaui showed little or no Ni advantage over matched-pH chemical controls and JacF extraction was very low.'
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: sqr_reductase
@@ -328,7 +328,7 @@ causal_graphs:
       supports: partial
       explanation: Chemolithoautotrophic sulfur oxidation by Acidithiobacillus thiooxidans generates the acidic sulfate/polythionate medium during aerobic sulfur-oxidizing bioleaching of six Brazilian nickel laterite ores (BaSt, 1P5, BaC, JacC, JacF, Piaui) by a six-strain Acidithiobacillus thiooxidans mixture in 2-L stirred reactors in Hetz & Schippers (2025); individual enzyme activities were not isolated.
   - source: biogenic_sulfuric_acid_laterite_medium
-    target: piaui_nickel_laterite_ores_p1_p2
+    target: multi_deposit_nickel_laterite_ores
     predicate: solubilizes
     relationship: biogenic sulfuric-acid attack and conditional culture-associated reductive dissolution of Brazilian laterite ores
     description: Six-strain A. thiooxidans cultures pre-grown for 4 days on 1% (w/v) S0 in 2-L stirred air-supplied reactors at 30 C leach 10% (w/v) sieved (<2 mm) Brazilian laterites over 15-24 days under maintained (pH 1.5) or unmaintained pH trajectories alongside matched-pH uninoculated controls.
@@ -336,11 +336,11 @@ causal_graphs:
     - source_ref: hetz_schippers_2025
       supports: partial
       explanation: Methods and Results (Figures 1-10) of Hetz & Schippers (2025) compare six-strain A. thiooxidans bioreactors (10% w/v ore, 1% w/v S0, 30 C, pH 1.5 or unmaintained over 15-24 d) against uninoculated controls adjusted to the biotic pH trajectories; biotic enhancement beyond acidolysis occurred only for selected feeds (notably BaSt, BaC, and JacC) and the aerobic ferric-iron reduction mechanism remained unresolved.
-  - source: piaui_nickel_laterite_ores_p1_p2
+  - source: multi_deposit_nickel_laterite_ores
     target: mobilized_laterite_ni_co_mn_mg_fe
     predicate: produces
     relationship: strongly ore-dependent Ni and Co mobilization into 0.2-um-filtered reactor leachate
-    description: In BaSt (unmaintained pH, 15 d), bioleaching mobilizes 83.0 +/- 5.7% Ni and 83.0 +/- 3.0% Co versus 33.6 +/- 0.1% Ni and 23.9 +/- 0.1% Co in matched-pH controls, whereas 1P5 and Piaui (38.6% Ni at pH 1.5; 53.8% Ni unmaintained) show similar biotic and chemical Ni extraction and JacF shows minimal extraction.
+    description: In BaSt (unmaintained pH, 15 d), bioleaching mobilizes 83.0 +/- 5.7% Ni and 83.0 +/- 3.0% Co versus 33.6 +/- 0.1% Ni and 23.9 +/- 0.1% Co in matched-pH controls, whereas 1P5 and Piaui show similar biotic and chemical Ni extraction and JacF shows minimal extraction.
     evidence:
     - source_ref: hetz_schippers_2025
       supports: partial
@@ -362,8 +362,13 @@ curation_history:
   curator: marcin
   action: edit
   summary: Remediate aerobic_sulfur_oxidizer_leaching_graph and aerobic_sulfur_oxidizer_leaching protein_examples to match primary-source experimental conditions, strains, and outcomes (#892)
+- timestamp: '2026-10-31T09:46:22Z'
+  curator: marcin
+  action: edit
+  summary: Align aerobic_sulfur_oxidizer_leaching_graph Piaui duration, node ID, and outcome claims with Hetz & Schippers (2025) curated mechanism (#892)
 history_refs:
 - history/records/nickel-laterite-ore/2026-10-11T121306Z-codex-4f14be.yaml
 - history/records/nickel-laterite-ore/2026-10-12T012121Z-codex-742f3f.yaml
 - history/records/nickel-laterite-ore/2026-10-31T053145Z-marcin-e7bd94.yaml
 - history/records/nickel-laterite-ore/2026-10-31T090425Z-marcin-0010a2.yaml
+- history/records/nickel-laterite-ore/2026-10-31T094622Z-marcin-31202a.yaml

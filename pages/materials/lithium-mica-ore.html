@@ -670,17 +670,17 @@
           <td>
 <div>Duplicate 250 mL flasks containing 190 mL poor medium (water acidified to pH 3 with H2SO4 plus 5 g/L elemental sulfur) and 10 mL ore-adapted Acidithiobacillus ferrooxidans SmolnikLC + Acidithiobacillus thiooxidans SmolnikF inoculum, pre-cultivated until pH dropped to 1.5 before adding 2 g (10 g/L) ore and incubated without shaking at 30 C (contrasted with rich 9K-type medium containing 44.2 g/L FeSO4.7H2O + 4 g/L S0, which showed no Li bioleaching).</div>          </td>
         </tr>
-        <tr id="causal-node-beauvoir_acidophile_leaching_graph-beauvoir_lepidolite_zinnwaldite_concentrate">
+        <tr id="causal-node-beauvoir_acidophile_leaching_graph-beauvoir_lepidolite_concentrate">
           <td>
             <strong>Crushed whole-rock Beauvoir (France) lithium-mica ore (&lt;150 um with ~75% &lt;100 um, 2 g in 200 mL [10 g/L]; XRD polylithionite, muscovite, kaolinite; AAS 1.21% Li vs Table 1 3.79% Li2O [~1.76% Li])</strong><br>
-            <code style="font-size: .78rem; color: var(--muted);">beauvoir_lepidolite_zinnwaldite_concentrate</code>
+            <code style="font-size: .78rem; color: var(--muted);">beauvoir_lepidolite_concentrate</code>
           </td>
           <td>
             <span class="badge">MATERIAL OR PHASE</span>
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Crushed and sieved (&lt;150 um, ~75% &lt;100 um) whole-rock lithium-mica ore from Beauvoir, France (assigned to polylithionite, muscovite, and kaolinite in Figure S2A despite lepidolite/zinnwaldite wording in text; feed lithium reported as 1.21% Li by AAS in Methods vs 3.79% Li2O [~1.76% Li] in Table 1), added at 2 g per 200 mL (10 g/L) after dry heat sterilization (160 C, 3 h).</div>          </td>
+<div>Crushed and sieved (&lt;150 um, ~75% &lt;100 um) whole-rock lithium-mica ore from Beauvoir, France (assigned to polylithionite, muscovite, and kaolinite in Figure S2A; feed lithium reported as 1.21% Li by AAS in Methods vs 3.79% Li2O [~1.76% Li] in Table 1), added at 2 g per 200 mL (10 g/L).</div>          </td>
         </tr>
         <tr id="causal-node-beauvoir_acidophile_leaching_graph-solubilized_lithium_and_rubidium_leachate">
           <td>
@@ -706,10 +706,10 @@
         <code>tth_hydrolase</code> &rarr; <strong>sulfuric acid proton and lixiviant generation</strong> (<code>produces</code>) &rarr; <code>acidophile_sulfur_supplemented_9k_medium</code>
 : Tth tetrathionate hydrolases (A. ferrooxidans tth AFE_0029; A. thiooxidans tth GCD22_14205, tth GCD22_02315) disproportionates tetrathionate and polythionate intermediates into sulfate and H+, generating Pre-acidified nutrient-poor sulfur medium (190 mL H2SO4 at initial pH 3 + 5 g/L S0 + 10 mL adapted A. ferrooxidans SmolnikLC / A. thiooxidans SmolnikF inoculum, pre-acidified to pH 1.5 at 30 C).[<a href="#source-sedlakova2020"><code>sedlakova2020</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
-        <code>acidophile_sulfur_supplemented_9k_medium</code> &rarr; <strong>poor-medium sulfur-oxidizing acidification and slow acid/microbial attack on Beauvoir lithium-mica ore</strong> (<code>solubilizes</code>) &rarr; <code>beauvoir_lepidolite_zinnwaldite_concentrate</code>
+        <code>acidophile_sulfur_supplemented_9k_medium</code> &rarr; <strong>poor-medium sulfur-oxidizing acidification and slow acid/microbial attack on Beauvoir lithium-mica ore</strong> (<code>solubilizes</code>) &rarr; <code>beauvoir_lepidolite_concentrate</code>
 : Ore-adapted A. ferrooxidans SmolnikLC + A. thiooxidans SmolnikF cultures in poor medium (5 g/L S0, pre-acidified to pH 1.5) leach 10 g/L crushed Beauvoir ore at 30 C without shaking over 336/366 days.[<a href="#source-sedlakova2020"><code>sedlakova2020</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
-        <code>beauvoir_lepidolite_zinnwaldite_concentrate</code> &rarr; <strong>mobilization of up to 11 mg/L dissolved Li (8.8% feed-Li extraction) in poor medium over 336/366 days</strong> (<code>produces</code>) &rarr; <code>solubilized_lithium_and_rubidium_leachate</code>
+        <code>beauvoir_lepidolite_concentrate</code> &rarr; <strong>mobilization of up to 11 mg/L dissolved Li (8.8% feed-Li extraction) in poor medium over 336/366 days</strong> (<code>produces</code>) &rarr; <code>solubilized_lithium_and_rubidium_leachate</code>
 : Poor-medium bioleaching of 10 g/L Beauvoir ore yields up to 11 mg/L dissolved Li (8.8% extraction) over 336/366 days at 30 C, while rich medium yields no lithium bioleaching.[<a href="#source-sedlakova2020"><code>sedlakova2020</code></a>]      </li>
     </ul>
   </div>
@@ -798,6 +798,12 @@
         <td><span class="badge">edit</span></td>
         <td>Remediate beauvoir_acidophile_leaching_graph and beauvoir_acidophile_leaching protein_examples to match primary-source experimental conditions, strains, and outcomes (#892)</td>
       </tr>
+      <tr>
+        <td><code>2026-10-31T09:46:23Z</code></td>
+        <td>marcin</td>
+        <td><span class="badge">edit</span></td>
+        <td>Align beauvoir_acidophile_leaching_graph node ID, feed sterilization scope, and figure citations with Sedlakova-Kadukova et al. (2020) (#892)</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -807,7 +813,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (673 materials · 609 mechanisms · latest curation 2026-10-31 · corpus digest <code>7045a4b24de8</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (673 materials · 609 mechanisms · latest curation 2026-10-31 · corpus digest <code>662ace861a58</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

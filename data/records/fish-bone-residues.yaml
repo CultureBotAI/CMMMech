@@ -135,7 +135,7 @@ mechanisms:
 causal_graphs:
 - id: acidophile_broth_phosphorus_mobilization_graph
   name: Acidithiobacillus ferrooxidans F7-01 9K-broth acidification and phosphorus mobilization from ground fish-bone residues
-  description: Causal pathway linking representative Acidithiobacillus ferrooxidans reduced-sulfur oxidation enzymes Sqr (AFE_1792, AFE_0267) and Tth (AFE_0029) to acidogenic metabolism by living Acidithiobacillus ferrooxidans F7-01 (isolated from Iron Bridge tailings impoundment, Poland; 10% v/v inoculum in 250 mL 9K medium with 44.2 g/L FeSO4.7H2O, 0.8 g/L elemental sulfur, 0.5 g/L K2HPO4, initial pH 2.5 adjusted with H2SO4; 7-day precursor cultivation at 30 C followed by 12-day shaken cultivation at 34 C) and mobilization of liquid-phase phosphorus (ICP-OES as P2O5 equivalent) from 2, 4, 10, and 20 g/L ground (<1 mm) fish-bone residues (19.9 wt% P2O5 = 8.68 wt% P).
+  description: Causal pathway linking representative Acidithiobacillus ferrooxidans reduced-sulfur oxidation enzymes Sqr (AFE_1792, AFE_0267) and Tth (AFE_0029) to acidogenic metabolism by living Acidithiobacillus ferrooxidans F7-01 (isolated from Iron Bridge tailings impoundment, Poland; 10% v/v inoculum in 250 mL 9K medium with 44.2 g/L FeSO4.7H2O, 0.8 g/L elemental sulfur, 0.5 g/L K2HPO4, initial pH 2.5 adjusted with H2SO4; 7-day precursor cultivation at 30 C followed by 12-day shaken cultivation at 34 C) and mobilization of liquid-phase phosphorus (ICP-OES as P2O5 equivalent) from 2, 4, 10, and 20 g/L ground (<1 mm) fish-bone residues.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: acidophile_broth_phosphorus_mobilization
   nodes:
@@ -227,14 +227,14 @@ causal_graphs:
     description: Acidic culture broth in 250 mL 9K medium (44.2 g/L FeSO4.7H2O, 0.8 g/L elemental sulfur, 0.5 g/L K2HPO4, initial pH 2.5 adjusted with H2SO4) inoculated at 10% v/v with a 72-h culture of living Acidithiobacillus ferrooxidans F7-01 (Iron Bridge tailings isolate, Poland), pre-cultured for 7 days at 30 C and then incubated with fish-bone residues for 12 days of shaken cultivation at 34 C.
     protein_grounding_status: NOT_APPLICABLE
   - id: dried_ground_fish_bone_hydroxyapatite
-    label: 'Ground (<1 mm) fish-bone residues (Table 1: 19.9 wt% P2O5 = 8.68 wt% P; tested at 2, 4, 10, and 20 g/L)'
+    label: Ground (<1 mm) fish-bone residues (tested at nominal doses of 2, 4, 10, and 20 g/L)
     node_type: MATERIAL_OR_PHASE
-    description: 'Ground (<1 mm) fish-bone raw material for fertilizers (Table 1: 19.9 wt% P2O5, equivalent to 8.68 wt% P), added at nominal doses of 2, 4, 10, and 20 g/L during 12-day shaken cultivation at 34 C.'
+    description: Ground (<1 mm) fish-bone raw material for fertilizers, added at nominal doses of 2, 4, 10, and 20 g/L during 12-day shaken cultivation at 34 C.
     protein_grounding_status: NOT_APPLICABLE
   - id: dissolved_orthophosphate_from_fish_bones
-    label: Permeate liquid-phase phosphorus (ICP-OES as P2O5 equivalent; Table 2 fitted Cmax up to 1295 mg/L P2O5 eq at 20 g/L and fitted 75.5% solubilization at 2 g/L across Figures 1b/2b and 3)
+    label: Permeate liquid-phase phosphorus (ICP-OES as P2O5 equivalent; higher liquid concentration but lower fitted fractional solubilization at higher bone doses across Table 2 and Figures 1b/2b)
     node_type: CHEMICAL_ENTITY
-    description: 'Liquid-phase phosphorus in permeates analyzed after nitric-acid digestion by ICP-OES and reported as P2O5 equivalent (triplicate means in Table 2 and Figures 1b/2b and 3): liquid-phase P2O5 concentration increased while pH fell over 12 days at 34 C, with higher nominal bone doses increasing fitted maximum liquid concentration up to 1295 mg/L P2O5 equivalent at 20 g/L while reducing fitted fractional solubilization from 75.5% at 2 g/L.'
+    description: 'Liquid-phase phosphorus in permeates analyzed after nitric-acid digestion by ICP-OES and reported as P2O5 equivalent (triplicate means in Sections 2.1-2.3 and 3.1-3.3, Table 1, Table 2, and Figures 1b/2b): liquid-phase P2O5 concentration increased while pH fell over 12 days at 34 C, with higher nominal bone doses (2, 4, 10, and 20 g/L) increasing reported liquid concentrations while reducing Table 2 fitted fractional solubilization.'
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: sqr_reductase
@@ -267,12 +267,12 @@ causal_graphs:
   - source: dried_ground_fish_bone_hydroxyapatite
     target: dissolved_orthophosphate_from_fish_bones
     predicate: produces
-    relationship: liquid-phase P2O5 mobilization into permeate (Table 2 fitted 75.5% solubilization at 2 g/L and fitted 1295 mg/L P2O5 eq at 20 g/L)
-    description: 12-day shaken cultivation at 34 C increases permeate phosphorus (ICP-OES as P2O5 equivalent), with higher nominal fish-bone doses (2, 4, 10, and 20 g/L) raising fitted liquid concentration up to 1295 mg/L P2O5 equivalent at 20 g/L while reducing fitted fractional solubilization from 75.5% at 2 g/L (Table 2, Figures 1b/2b).
+    relationship: dose-dependent liquid-phase P2O5 mobilization into permeate across 2-20 g/L fish-bone doses
+    description: 12-day shaken cultivation at 34 C increases permeate phosphorus (ICP-OES as P2O5 equivalent) while pH decreases across 2, 4, 10, and 20 g/L fish-bone doses, with higher nominal feed doses increasing reported liquid concentrations but reducing Table 2 fitted fractional solubilization (Figures 1b/2b, Table 2).
     evidence:
     - source_ref: wyciszkiewicz_2017_acidophile
       supports: partial
-      explanation: Table 1, Table 2, and Figures 1b/2b and 3 of Wyciszkiewicz et al. (2017) report triplicate mean permeate P2O5 trajectories and fitted model parameters (up to 75.5% fitted solubilization at 2 g/L and 1295 mg/L fitted P2O5 equivalent at 20 g/L); support is partial because 9K medium contained 0.5 g/L K2HPO4 and H2SO4, Table 2 reports fitted model parameters rather than background-subtracted direct mass-balance yields, and no matched abiotic control was run.
+      explanation: Sections 2.1-2.3 and 3.1-3.3, Table 1, Table 2, and Figures 1b/2b of Wyciszkiewicz et al. (2017) report triplicate mean permeate P2O5 trajectories and fitted model parameters across 2-20 g/L fish-bone doses; support is partial because 9K medium contained 0.5 g/L K2HPO4 and H2SO4, Table 2 reports fitted kinetic model parameters rather than background-subtracted direct mass-balance yields, and no matched abiotic control was run.
 curation_history:
 - timestamp: '2026-10-15T15:11:22.675318+00:00'
   curator: Codex (GPT-6; codex)
@@ -286,7 +286,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: Remediate acidophile_broth_phosphorus_mobilization_graph and acidophile_broth_phosphorus_mobilization protein_examples to match primary-source experimental conditions, strains, and outcomes (#892)
+- timestamp: '2026-10-31T09:46:24Z'
+  curator: marcin
+  action: edit
+  summary: Align acidophile_broth_phosphorus_mobilization_graph quantitative claims with Wyciszkiewicz et al. (2017) curated mechanism in fish-bone-residues.yaml (#892)
 history_refs:
 - history/records/fish-bone-residues/2026-10-15T151141Z-codex-99e593.yaml
 - history/records/fish-bone-residues/2026-10-31T053146Z-marcin-7c80b9.yaml
 - history/records/fish-bone-residues/2026-10-31T090429Z-marcin-5e603d.yaml
+- history/records/fish-bone-residues/2026-10-31T094624Z-marcin-224f85.yaml
