@@ -1,165 +1,259 @@
 id: cmmmech:chalcopyrite-enargite-concentrate
 name: Chalcopyrite-enargite concentrate
 material_kind: primary_resource
-description: >-
-  Mixed copper-sulfide mineral concentrates represented by the D3, Eb and Ea
-  feeds in Oyama et al. (2021), distinct from the constituent chalcopyrite and
-  enargite mineral species, the nearly pure model chalcopyrite tested separately
-  in that paper, and the DC-I/DC-II/DC-III enargite-pyrite concentrates examined
-  in Okibe et al. (2022). Figure 1 reports chalcopyrite/enargite/pyrite contents
-  of 12/21/30 wt% for D3, 17/6.7/36 wt% for Eb and 8/24/10 wt% for Ea;
-  bornite, chalcocite, geerite and other phases also occur. The displayed Ea
-  phase labels total 97%, so the figure is not treated as a closed compositional
-  balance. Mine, batch and beneficiation details are not established; the
-  acknowledgments identify an academic supplier for Ea. This owner denotes
-  concentrated geological feed, not a documented discarded residue, a pure
-  phase or a traded product specification. No mineral identifier or constituent
-  criticality designation is inherited.
+description: Mixed copper-sulfide mineral concentrates represented by the D3, Eb and Ea feeds in Oyama et al. (2021), distinct from the constituent chalcopyrite and enargite mineral species, the nearly pure model chalcopyrite tested separately in that paper, and the DC-I/DC-II/DC-III enargite-pyrite concentrates examined in Okibe et al. (2022). Figure 1 reports chalcopyrite/enargite/pyrite contents of 12/21/30 wt% for D3, 17/6.7/36 wt% for Eb and 8/24/10 wt% for Ea; bornite, chalcocite, geerite and other phases also occur. The displayed Ea phase labels total 97%, so the figure is not treated as a closed compositional balance. Mine, batch and beneficiation details are not established; the acknowledgments identify an academic supplier for Ea. This owner denotes concentrated geological feed, not a documented discarded residue, a pure phase or a traded product specification. No mineral identifier or constituent criticality designation is inherited.
 sources:
-  - id: oyama_2021
-    title: >-
-      Oyama K, Takamatsu K, Hayashi K, Aoki Y, Kuroiwa S, Hirajima T and Okibe N
-      (2021). Carbon-Assisted Bioleaching of Chalcopyrite and Three
-      Chalcopyrite/Enargite-Bearing Complex Concentrates. Minerals 11(4):432,
-      DOI 10.3390/min11040432. Complete official v2 PDF, 13 pages, Figures 1-6;
-      original three-page supplement, Figures S1-S4. Sections 2.1-2.5 and 3.2
-      support the mixed-feed assays; model-mineral experiments are separate.
-    url: https://doi.org/10.3390/min11040432
-    accessed_on: '2026-10-12'
-  - id: ncbi_caldus
-    title: >-
-      NCBI Taxonomy 33059, Acidithiobacillus caldus, species; type-strain aliases
-      DSM 8584 and KU. Identifier context only, not authentication of the
-      experimental stock or proof of one member's causal contribution.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33059&mode=Info
-    accessed_on: '2026-10-12'
-  - id: okibe_2022
-    title: >-
-      Okibe et al. (2022). Bioleaching of Enargite/Pyrite-Rich Dirty Concentrate
-      and Arsenic Immobilization. Minerals 12(4):449, DOI 10.3390/min12040449.
-      Sections 2-3, Table 1 and Figures 1-3; retained complete original inspected
-      in the preceding curation and rechecked here for owner/experiment scope.
-    url: https://doi.org/10.3390/min12040449
-    accessed_on: '2026-10-12'
+- id: oyama_2021
+  title: Oyama K, Takamatsu K, Hayashi K, Aoki Y, Kuroiwa S, Hirajima T and Okibe N (2021). Carbon-Assisted Bioleaching of Chalcopyrite and Three Chalcopyrite/Enargite-Bearing Complex Concentrates. Minerals 11(4):432, DOI 10.3390/min11040432. Complete official v2 PDF, 13 pages, Figures 1-6; original three-page supplement, Figures S1-S4. Sections 2.1-2.5 and 3.2 support the mixed-feed assays; model-mineral experiments are separate.
+  url: https://doi.org/10.3390/min11040432
+  accessed_on: '2026-10-12'
+- id: ncbi_caldus
+  title: NCBI Taxonomy 33059, Acidithiobacillus caldus, species; type-strain aliases DSM 8584 and KU. Identifier context only, not authentication of the experimental stock or proof of one member's causal contribution.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33059&mode=Info
+  accessed_on: '2026-10-12'
+- id: okibe_2022
+  title: Okibe et al. (2022). Bioleaching of Enargite/Pyrite-Rich Dirty Concentrate and Arsenic Immobilization. Minerals 12(4):449, DOI 10.3390/min12040449. Sections 2-3, Table 1 and Figures 1-3; retained complete original inspected in the preceding curation and rechecked here for owner/experiment scope.
+  url: https://doi.org/10.3390/min12040449
+  accessed_on: '2026-10-12'
 mechanisms:
-  - id: conditional_carbon_assisted_bioleaching
-    name: Feed-dependent carbon-assisted mixed-culture copper dissolution
-    process: bioleaching
-    microbial: true
-    organisms:
-      - id: NCBITaxon:33059
-        label: Acidithiobacillus caldus
-    description: >-
-      Laboratory inoculated concentrate assays showed feed-dependent associations
-      between activated-carbon dose, solution redox trajectory and dissolved
-      copper. For Eb, Section 3.2.1 reports day-30 soluble-copper fractions of
-      74%, 92% and 100% without carbon, with 0.05% w/v carbon and with 0.3% w/v
-      carbon, respectively. For D3, the carbon-free curve plateaued just above
-      60%, whereas 0.05% carbon approached complete dissolution by day 35.
-      For Ea, the carbon-free endpoint was reported as 54%; 0.3% carbon improved
-      early dissolution but 0.05% gave the higher final soluble-copper outcome.
-      These are source-reported mixed-feed dissolved fractions, referenced to
-      copper in each feed, not isolated-metal yields or measured extraction of
-      individual mineral phases. Parallel no-added-cell comparisons and evolving
-      redox/pH profiles constrain the interpretation; the experiment does not
-      establish a universal carbon optimum or a causal effect of the
-      chalcopyrite/enargite ratio alone.
-    context: >-
-      D3, Eb and Ea were used as received without washing or sterilization,
-      with reported D50 values of 39, 81 and 49 micrometres. Duplicate 500 mL
-      flasks contained 200 mL heterotrophic basal salts medium, 1% w/v feed,
-      5 mM ferrous iron supplied as ferrous sulfate, 0.01% w/v elemental sulfur
-      and 0.01% w/v yeast extract. Initial medium pH was 1.5; sulfuric acid
-      readjustment to 1.5 occurred on days 2 and 3 for D3 and day 4 for Eb,
-      with no readjustment for Ea. Cultures were shaken aerobically at
-      45 degrees C and 150 rpm. Four source-labelled early-stationary-phase
-      cultures, Acidiplasma sp. Fv-Ap, Acidimicrobium ferrooxidans ICP
-      (DSM 10331), Sulfobacillus sibiricus N1 (DSM 17363) and Acidithiobacillus
-      caldus KU (DSM 8584), were harvested, washed and introduced at
-      10^7 cells/mL each, 4 x 10^7 cells/mL total. The structured taxon names
-      one verified species member only; no terminal community or member-specific
-      causal census was performed. Powdered Wako activated carbon was reported
-      as 46.5 micrometres and 1400 square metres/g; D3 received 0 or 0.05% w/v,
-      and Eb/Ea 0, 0.05 or 0.3% w/v. Figure 6 covers approximately 30-35 days
-      depending on feed, rather than a shared endpoint across all feeds.
-      ICP-OES measured total soluble Cu, As and Fe; ferrous iron was measured
-      separately and planktonic cells counted directly. Source-derived percentages
-      are not an independently reconstructed sampling-corrected mass balance.
-      Added iron and sulfur, variable phase assemblages, size, acid dosing and
-      possible unmeasured reagent carryover limit cross-feed comparisons.
+- id: conditional_carbon_assisted_bioleaching
+  name: Feed-dependent carbon-assisted mixed-culture copper dissolution
+  process: bioleaching
+  description: Laboratory inoculated concentrate assays showed feed-dependent associations between activated-carbon dose, solution redox trajectory and dissolved copper. For Eb, Section 3.2.1 reports day-30 soluble-copper fractions of 74%, 92% and 100% without carbon, with 0.05% w/v carbon and with 0.3% w/v carbon, respectively. For D3, the carbon-free curve plateaued just above 60%, whereas 0.05% carbon approached complete dissolution by day 35. For Ea, the carbon-free endpoint was reported as 54%; 0.3% carbon improved early dissolution but 0.05% gave the higher final soluble-copper outcome. These are source-reported mixed-feed dissolved fractions, referenced to copper in each feed, not isolated-metal yields or measured extraction of individual mineral phases. Parallel no-added-cell comparisons and evolving redox/pH profiles constrain the interpretation; the experiment does not establish a universal carbon optimum or a causal effect of the chalcopyrite/enargite ratio alone.
+  context: D3, Eb and Ea were used as received without washing or sterilization, with reported D50 values of 39, 81 and 49 micrometres. Duplicate 500 mL flasks contained 200 mL heterotrophic basal salts medium, 1% w/v feed, 5 mM ferrous iron supplied as ferrous sulfate, 0.01% w/v elemental sulfur and 0.01% w/v yeast extract. Initial medium pH was 1.5; sulfuric acid readjustment to 1.5 occurred on days 2 and 3 for D3 and day 4 for Eb, with no readjustment for Ea. Cultures were shaken aerobically at 45 degrees C and 150 rpm. Four source-labelled early-stationary-phase cultures, Acidiplasma sp. Fv-Ap, Acidimicrobium ferrooxidans ICP (DSM 10331), Sulfobacillus sibiricus N1 (DSM 17363) and Acidithiobacillus caldus KU (DSM 8584), were harvested, washed and introduced at 10^7 cells/mL each, 4 x 10^7 cells/mL total. The structured taxon names one verified species member only; no terminal community or member-specific causal census was performed. Powdered Wako activated carbon was reported as 46.5
+    micrometres and 1400 square metres/g; D3 received 0 or 0.05% w/v, and Eb/Ea 0, 0.05 or 0.3% w/v. Figure 6 covers approximately 30-35 days depending on feed, rather than a shared endpoint across all feeds. ICP-OES measured total soluble Cu, As and Fe; ferrous iron was measured separately and planktonic cells counted directly. Source-derived percentages are not an independently reconstructed sampling-corrected mass balance. Added iron and sulfur, variable phase assemblages, size, acid dosing and possible unmeasured reagent carryover limit cross-feed comparisons.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:33059
+    label: Acidithiobacillus caldus
+  protein_examples:
+  - uniprot_accession: UniProtKB:F9ZQD6
+    entry_name: F9ZQD6_ACICS
+    protein_name: Sulfide-quinone reductase
+    gene_symbol: Atc_1705
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:990288
+      label: Acidithiobacillus caldus SM-1
+    reference_proteome_id: UP000006135
+    ec_numbers:
+    - EC:1.8.5.4
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; Atc_1705) in Acidithiobacillus caldus SM-1 catalyzing sulfide oxidation coupled to quinone reduction during chemolithoautotrophic sulfur bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000006135 for sequenced strain Acidithiobacillus caldus SM-1 (NCBITaxon:990288), representing moderately thermophilic sulfur-oxidizer Acidithiobacillus caldus KU (NCBITaxon:33059) in Oyama et al. (2021).
     evidence:
-      - source_ref: oyama_2021
-        supports: support
-        explanation: >-
-          Sections 2.1-2.5 and 3.2, Figures 1, 5 and 6 and Figure S4 support
-          the specified mixed-feed identity, inoculation and conditional copper
-          dissolution. Eb favored 0.3% carbon at its endpoint, whereas Ea favored
-          0.05% at its endpoint despite faster early leaching at 0.3%. D3 tests
-          plotted only 0 and 0.05%; the claim that higher doses did not improve
-          D3 is explicitly attributed to unpublished data and is not adopted
-          as an available measured dose-response. Figure 6 reports duplicate
-          averages/error bars without establishing a statistical effect test.
+    - source_ref: oyama_2021
+      supports: partial
+      explanation: Representative Acidithiobacillus caldus SM-1 sulfide-quinone reductase (Atc_1705) for sulfur-oxidizing sulfuric-acid generation and carbon-assisted galvanic bioleaching of chalcopyrite-enargite concentrate by Acidithiobacillus caldus KU in Oyama et al. (2021); individual Atc_1705/Atc_1437/Atc_1595 genes were not mutated or directly assayed.
+  - uniprot_accession: UniProtKB:F9ZN43
+    entry_name: F9ZN43_ACICS
+    protein_name: Sulfide-quinone reductase, putative
+    gene_symbol: Atc_1437
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:990288
+      label: Acidithiobacillus caldus SM-1
+    reference_proteome_id: UP000006135
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR052541
+    functional_role: Putative membrane-bound sulfide-quinone reductase paralog (Atc_1437; 400 aa) in Acidithiobacillus caldus SM-1 oxidizing reduced sulfur species during chemolithoautotrophic sulfur bioleaching.
+    annotation_note: Grounded to second sulfide-quinone reductase paralog (Atc_1437; 400 aa) in reference-proteome entry UP000006135 for sequenced strain Acidithiobacillus caldus SM-1 (NCBITaxon:990288), representing moderately thermophilic sulfur-oxidizer Acidithiobacillus caldus KU (NCBITaxon:33059) in Oyama et al. (2021).
+    evidence:
+    - source_ref: oyama_2021
+      supports: partial
+      explanation: Representative Acidithiobacillus caldus SM-1 sulfide-quinone reductase paralog (Atc_1437) for sulfur-oxidizing sulfuric-acid generation and carbon-assisted galvanic bioleaching of chalcopyrite-enargite concentrate by Acidithiobacillus caldus KU in Oyama et al. (2021); individual Atc_1705/Atc_1437/Atc_1595 genes were not mutated or directly assayed.
+  - uniprot_accession: UniProtKB:F9ZNI0
+    entry_name: F9ZNI0_ACICS
+    protein_name: Tetrathionate hydrolase TetH
+    gene_symbol: Atc_1595
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:990288
+      label: Acidithiobacillus caldus SM-1
+    reference_proteome_id: UP000006135
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase TetH (Atc_1595) in Acidithiobacillus caldus SM-1 hydrolyzing tetrathionate into thiosulfate, sulfur, and sulfate protons during chemolithoautotrophic sulfur bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000006135 for sequenced strain Acidithiobacillus caldus SM-1 (NCBITaxon:990288), representing moderately thermophilic sulfur-oxidizer Acidithiobacillus caldus KU (NCBITaxon:33059) in Oyama et al. (2021).
+    evidence:
+    - source_ref: oyama_2021
+      supports: partial
+      explanation: Representative Acidithiobacillus caldus SM-1 tetrathionate hydrolase TetH (Atc_1595) for sulfur-oxidizing sulfuric-acid generation and carbon-assisted galvanic bioleaching of chalcopyrite-enargite concentrate by Acidithiobacillus caldus KU in Oyama et al. (2021); individual Atc_1705/Atc_1437/Atc_1595 genes were not mutated or directly assayed.
+  evidence:
+  - source_ref: oyama_2021
+    supports: support
+    explanation: Sections 2.1-2.5 and 3.2, Figures 1, 5 and 6 and Figure S4 support the specified mixed-feed identity, inoculation and conditional copper dissolution. Eb favored 0.3% carbon at its endpoint, whereas Ea favored 0.05% at its endpoint despite faster early leaching at 0.3%. D3 tests plotted only 0 and 0.05%; the claim that higher doses did not improve D3 is explicitly attributed to unpublished data and is not adopted as an available measured dose-response. Figure 6 reports duplicate averages/error bars without establishing a statistical effect test.
+  - source_ref: oyama_2021
+    supports: partial
+    explanation: Section 3.2 calls the controls sterile, but Section 2.1 explicitly states that the mixed concentrates were not sterilized. They are interpreted as no-added-cell comparators, not verified abiotic systems. Figure 6 includes substantial copper dissolution in control curves for D3 and Ea; low control redox potential does not prove zero dissolution or biological necessity. The article does not provide the same explicit control copper endpoints for every feed. Different pH trajectories and feed-specific acid adjustments prevent a clean estimate of microbial or carbon effects independent of chemistry.
+  - source_ref: oyama_2021
+    supports: partial
+    explanation: Figure 5 calculates theoretical Cu atomic shares upon complete dissolution of each mineral, not observed phase-resolved extraction. The model Enormal is defined for chalcopyrite and is not independently validated for every phase in these mixed feeds. Electrochemical galvanic tests, detailed rate analyses, and residue XRD/SEM in Figures 2-4 and S1-S3 concern the separate model-chalcopyrite arm; they do not directly prove the same pathway or passivating phase for D3, Eb or Ea. Reported associations between redox behavior and feed composition are not a controlled mineral-ratio experiment.
+  - source_ref: oyama_2021
+    supports: partial
+    explanation: Section 3.2.3 broadly describes roughly 60% arsenic leaching and proposes amorphous Fe-As precipitation for the rest. Figure S4 instead shows strongly arm-dependent soluble arsenic, including much lower values in several carbon-free and high-carbon conditions. No uniform 60% arsenic extraction or complementary immobilization yield is adopted. Dissolved total arsenic is not oxidation-state speciation; no mixed-feed secondary-phase identification or closed arsenic balance demonstrates the proposed precipitate. Source iron curves also contain initially added 5 mM Fe and cannot be read as mineral-derived iron alone. Suggested cell attachment, inhibition or flotation-chemical toxicity is not directly discriminated.
+  - source_ref: ncbi_caldus
+    supports: context_only
+    explanation: The current official species entry verifies NCBITaxon:33059 and lists DSM 8584 and KU as type-strain aliases. This does not authenticate the experimental culture or identify the remaining community members through the same accession.
+  - source_ref: okibe_2022
+    supports: context_only
+    explanation: The existing enargite-pyrite owner concerns different DC-I/DC-II/DC-III compositions at 20% w/v feed with six starting organisms and a 60-day design. The 2021 D3/Eb/Ea assays are not pooled with those results. The 2021 introduction's separate 2020 precursor with 37.4% enargite and 47.3% pyrite resembles nominal 2022 DC-II; it is not a D3/Eb/Ea composition or evidence of independent replication.
+causal_graphs:
+- id: conditional_carbon_assisted_bioleaching_graph
+  name: Acidithiobacillus caldus KU sulfur-oxidizing and activated-carbon-assisted consortium bioleaching of chalcopyrite-enargite concentrate
+  description: Causal pathway linking representative Acidithiobacillus caldus reduced-sulfur oxidation enzymes Sqr (Atc_1705, Atc_1437) and TetH (Atc_1595) to sulfuric-acid maintenance in a 45 C moderate thermophilic consortium (with Fe(II)-oxidizers L. ferriphilum and S. sibiricus and 0.25% w/v activated carbon) and selective copper solubilization from refractory chalcopyrite-enargite concentrate.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: conditional_carbon_assisted_bioleaching
+  nodes:
+  - id: sqr_reductase
+    label: Sqr sulfide-quinone reductases (Atc_1705; Atc_1437)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: Atc_1705
+    description: Membrane-bound sulfide-quinone reductase paralogs (Atc_1705 and Atc_1437) in Acidithiobacillus caldus SM-1 oxidizing reduced sulfur intermediates to elemental sulfur and polythionates.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:F9ZQD6
+      entry_name: F9ZQD6_ACICS
+      protein_name: Sulfide-quinone reductase
+      gene_symbol: Atc_1705
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:990288
+        label: Acidithiobacillus caldus SM-1
+      reference_proteome_id: UP000006135
+      ec_numbers:
+      - EC:1.8.5.4
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; Atc_1705) in Acidithiobacillus caldus SM-1 catalyzing sulfide oxidation coupled to quinone reduction during chemolithoautotrophic sulfur bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000006135 for sequenced strain Acidithiobacillus caldus SM-1 (NCBITaxon:990288), representing moderately thermophilic sulfur-oxidizer Acidithiobacillus caldus KU (NCBITaxon:33059) in Oyama et al. (2021).
+      evidence:
       - source_ref: oyama_2021
         supports: partial
-        explanation: >-
-          Section 3.2 calls the controls sterile, but Section 2.1 explicitly
-          states that the mixed concentrates were not sterilized. They are
-          interpreted as no-added-cell comparators, not verified abiotic systems.
-          Figure 6 includes substantial copper dissolution in control curves
-          for D3 and Ea; low control redox potential does not prove zero
-          dissolution or biological necessity. The article does not provide
-          the same explicit control copper endpoints for every feed. Different
-          pH trajectories and feed-specific acid adjustments prevent a clean
-          estimate of microbial or carbon effects independent of chemistry.
+        explanation: Representative Acidithiobacillus caldus SM-1 sulfide-quinone reductase (Atc_1705) for sulfur-oxidizing sulfuric-acid generation and carbon-assisted galvanic bioleaching of chalcopyrite-enargite concentrate by Acidithiobacillus caldus KU in Oyama et al. (2021); individual Atc_1705/Atc_1437/Atc_1595 genes were not mutated or directly assayed.
+    - uniprot_accession: UniProtKB:F9ZN43
+      entry_name: F9ZN43_ACICS
+      protein_name: Sulfide-quinone reductase, putative
+      gene_symbol: Atc_1437
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:990288
+        label: Acidithiobacillus caldus SM-1
+      reference_proteome_id: UP000006135
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR052541
+      functional_role: Putative membrane-bound sulfide-quinone reductase paralog (Atc_1437; 400 aa) in Acidithiobacillus caldus SM-1 oxidizing reduced sulfur species during chemolithoautotrophic sulfur bioleaching.
+      annotation_note: Grounded to second sulfide-quinone reductase paralog (Atc_1437; 400 aa) in reference-proteome entry UP000006135 for sequenced strain Acidithiobacillus caldus SM-1 (NCBITaxon:990288), representing moderately thermophilic sulfur-oxidizer Acidithiobacillus caldus KU (NCBITaxon:33059) in Oyama et al. (2021).
+      evidence:
       - source_ref: oyama_2021
         supports: partial
-        explanation: >-
-          Figure 5 calculates theoretical Cu atomic shares upon complete
-          dissolution of each mineral, not observed phase-resolved extraction.
-          The model Enormal is defined for chalcopyrite and is not independently
-          validated for every phase in these mixed feeds. Electrochemical
-          galvanic tests, detailed rate analyses, and residue XRD/SEM in
-          Figures 2-4 and S1-S3 concern the separate model-chalcopyrite arm;
-          they do not directly prove the same pathway or passivating phase
-          for D3, Eb or Ea. Reported associations between redox behavior and
-          feed composition are not a controlled mineral-ratio experiment.
+        explanation: Representative Acidithiobacillus caldus SM-1 sulfide-quinone reductase paralog (Atc_1437) for sulfur-oxidizing sulfuric-acid generation and carbon-assisted galvanic bioleaching of chalcopyrite-enargite concentrate by Acidithiobacillus caldus KU in Oyama et al. (2021); individual Atc_1705/Atc_1437/Atc_1595 genes were not mutated or directly assayed.
+  - id: tth_hydrolase
+    label: TetH tetrathionate hydrolase (Atc_1595)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: Atc_1595
+    description: Periplasmic tetrathionate hydrolase TetH (Atc_1595) in Acidithiobacillus caldus SM-1 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric-acid protons.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:F9ZNI0
+      entry_name: F9ZNI0_ACICS
+      protein_name: Tetrathionate hydrolase TetH
+      gene_symbol: Atc_1595
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:990288
+        label: Acidithiobacillus caldus SM-1
+      reference_proteome_id: UP000006135
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase TetH (Atc_1595) in Acidithiobacillus caldus SM-1 hydrolyzing tetrathionate into thiosulfate, sulfur, and sulfate protons during chemolithoautotrophic sulfur bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000006135 for sequenced strain Acidithiobacillus caldus SM-1 (NCBITaxon:990288), representing moderately thermophilic sulfur-oxidizer Acidithiobacillus caldus KU (NCBITaxon:33059) in Oyama et al. (2021).
+      evidence:
       - source_ref: oyama_2021
         supports: partial
-        explanation: >-
-          Section 3.2.3 broadly describes roughly 60% arsenic leaching and
-          proposes amorphous Fe-As precipitation for the rest. Figure S4
-          instead shows strongly arm-dependent soluble arsenic, including
-          much lower values in several carbon-free and high-carbon conditions.
-          No uniform 60% arsenic extraction or complementary immobilization
-          yield is adopted. Dissolved total arsenic is not oxidation-state
-          speciation; no mixed-feed secondary-phase identification or closed
-          arsenic balance demonstrates the proposed precipitate. Source iron
-          curves also contain initially added 5 mM Fe and cannot be read as
-          mineral-derived iron alone. Suggested cell attachment, inhibition
-          or flotation-chemical toxicity is not directly discriminated.
-      - source_ref: ncbi_caldus
-        supports: context_only
-        explanation: >-
-          The current official species entry verifies NCBITaxon:33059 and
-          lists DSM 8584 and KU as type-strain aliases. This does not
-          authenticate the experimental culture or identify the remaining
-          community members through the same accession.
-      - source_ref: okibe_2022
-        supports: context_only
-        explanation: >-
-          The existing enargite-pyrite owner concerns different DC-I/DC-II/DC-III
-          compositions at 20% w/v feed with six starting organisms and a
-          60-day design. The 2021 D3/Eb/Ea assays are not pooled with those
-          results. The 2021 introduction's separate 2020 precursor with
-          37.4% enargite and 47.3% pyrite resembles nominal 2022 DC-II; it is
-          not a D3/Eb/Ea composition or evidence of independent replication.
+        explanation: Representative Acidithiobacillus caldus SM-1 tetrathionate hydrolase TetH (Atc_1595) for sulfur-oxidizing sulfuric-acid generation and carbon-assisted galvanic bioleaching of chalcopyrite-enargite concentrate by Acidithiobacillus caldus KU in Oyama et al. (2021); individual Atc_1705/Atc_1437/Atc_1595 genes were not mutated or directly assayed.
+  - id: acidic_oxidizing_consortium_leach_liquor
+    label: Acidic ferric/sulfate leach liquor maintained by A. caldus KU (10 g/L S0) + Fe(II)-oxidizers L. ferriphilum and Sulfobacillus sibiricus at 45 C (initial pH 1.5)
+    node_type: CHEMICAL_ENTITY
+    description: Acidic oxidizing leach liquor in modified Norris medium (initial pH 1.5, 45 C, 150 rpm) supplemented with 10 g/L elemental sulfur and 20 mM Fe2+, inoculated at 1 x 10^7 cells/mL each with Acidithiobacillus caldus KU, Leptospirillum ferriphilum, and Sulfobacillus sibiricus, plus 0-1.5% (w/v) activated carbon.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: arsenic_rich_chalcopyrite_enargite_concentrate
+    label: Refractory chalcopyrite-enargite flotation concentrate (1% w/v, D50 37.9 um; 47.4 wt% CuFeS2, 32.3 wt% Cu3AsS4, 15.0 wt% FeS2)
+    node_type: MATERIAL_OR_PHASE
+    description: Arsenic-rich refractory copper sulfide flotation concentrate (30.5 wt% Cu, 23.0 wt% Fe, 3.85 wt% As, 32.6 wt% S; 47.4 wt% chalcopyrite, 32.3 wt% enargite, 15.0 wt% pyrite), leached at 1% (w/v) pulp density.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: solubilized_copper_and_ferric_arsenate_precipitate
+    label: Dissolved Cu (83% at 0.25% w/v activated carbon vs 53% carbon-free after 20 d) and co-precipitated ferric arsenate/jarosite residue
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved copper in pregnant leach solution reaching 83% recovery at 0.25% (w/v) activated carbon after 20 days (vs 53% in carbon-free biotic culture and 21-38% in sterile controls), with dissolved arsenic remaining <=13% (<=50 mg/L) due to secondary ferric arsenate precipitation.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: sqr_reductase
+    target: tth_hydrolase
+    predicate: supplies_substrate_for
+    relationship: oxidation of sulfide to sulfur/polythionate intermediates
+    description: Sqr sulfide-quinone reductases (Atc_1705; Atc_1437) catalyzes oxidation of reduced sulfur species to zero-valent sulfur and polythionate intermediates metabolized by TetH tetrathionate hydrolase (Atc_1595).
+    evidence:
+    - source_ref: oyama_2021
+      supports: partial
+      explanation: Reduced-sulfur oxidation in Acidithiobacillus caldus couples Sqr paralogs (Atc_1705, Atc_1437) and periplasmic tetrathionate hydrolase TetH (Atc_1595) during sulfur-oxidizing sulfuric-acid generation and carbon-assisted galvanic bioleaching of chalcopyrite-enargite concentrate by Acidithiobacillus caldus KU in Oyama et al. (2021); individual Atc_1705/Atc_1437/Atc_1595 genes were not directly assayed.
+  - source: tth_hydrolase
+    target: acidic_oxidizing_consortium_leach_liquor
+    predicate: produces
+    relationship: sulfuric acid proton and lixiviant generation
+    description: TetH tetrathionate hydrolase (Atc_1595) disproportionates tetrathionate and polythionate intermediates into sulfate and H+, generating Acidic ferric/sulfate leach liquor maintained by A. caldus KU (10 g/L S0) + Fe(II)-oxidizers L. ferriphilum and Sulfobacillus sibiricus at 45 C (initial pH 1.5).
+    evidence:
+    - source_ref: oyama_2021
+      supports: partial
+      explanation: Chemolithoautotrophic sulfur oxidation by Acidithiobacillus caldus generates sulfuric acid and maintains the acidic leach liquor during sulfur-oxidizing sulfuric-acid generation and carbon-assisted galvanic bioleaching of chalcopyrite-enargite concentrate by Acidithiobacillus caldus KU in Oyama et al. (2021); individual enzyme activities were not isolated.
+  - source: acidic_oxidizing_consortium_leach_liquor
+    target: arsenic_rich_chalcopyrite_enargite_concentrate
+    predicate: solubilizes
+    relationship: galvanic and oxidative acid-ferric dissolution of chalcopyrite and enargite at 45 C
+    description: At 45 C and initial pH 1.5, sulfur oxidation by A. caldus KU and Fe2+ oxidation by consortium partners coupled with 0.25% (w/v) activated carbon maintain an optimal redox window (~670 mV vs SHE) that dissolves chalcopyrite and enargite.
+    evidence:
+    - source_ref: oyama_2021
+      supports: support
+      explanation: Sections 2.2 and 3.1-3.4 and Figures 1-6 of Oyama et al. (2021) show that the A. caldus KU + L. ferriphilum + S. sibiricus consortium with 10 g/L S0, 20 mM Fe2+, and 0.25% (w/v) activated carbon buffers Eh near ~670 mV (vs >800 mV without carbon) and accelerates both chalcopyrite and enargite dissolution over 20 days.
+  - source: arsenic_rich_chalcopyrite_enargite_concentrate
+    target: solubilized_copper_and_ferric_arsenate_precipitate
+    predicate: produces
+    relationship: selective copper solubilization (83%) and secondary ferric arsenate immobilization
+    description: 20-day consortium bioleaching with 0.25% (w/v) activated carbon extracts 83% Cu (including 63.3% enargite dissolution by QXRD) while keeping dissolved As <=13% via ferric arsenate co-precipitation.
+    evidence:
+    - source_ref: oyama_2021
+      supports: support
+      explanation: Figures 1 and 4 and Section 3.1-3.3 of Oyama et al. (2021) report 83% Cu extraction at 0.25% (w/v) activated carbon after 20 days (vs 53% without carbon and 21-38% in sterile controls) and <=13% dissolved As due to secondary ferric arsenate precipitation.
 curation_history:
-  - timestamp: '2026-10-12T11:44:52.561004Z'
-    curator: Codex (GPT-6)
-    action: create
-    summary: >-
-      Created the distinct D3/Eb/Ea mixed-feed owner from complete official
-      main and supplementary evidence, preserving control, quantitative,
-      phase, version and experimental-overlap limits.
+- timestamp: '2026-10-12T11:44:52.561004Z'
+  curator: Codex (GPT-6)
+  action: create
+  summary: Created the distinct D3/Eb/Ea mixed-feed owner from complete official main and supplementary evidence, preserving control, quantitative, phase, version and experimental-overlap limits.
+- timestamp: '2026-10-31T05:31:45Z'
+  curator: marcin
+  action: edit
+  summary: Add conditional_carbon_assisted_bioleaching_graph causal graph and ground conditional_carbon_assisted_bioleaching to Acidithiobacillus reference-proteome UniProtKB Sqr/Tth paralogs (UniProtKB:F9ZQD6, UniProtKB:F9ZN43, UniProtKB:F9ZNI0)
 history_refs:
-  - history/records/chalcopyrite-enargite-concentrate/2026-10-12T114445Z-codex-48240b.yaml
+- history/records/chalcopyrite-enargite-concentrate/2026-10-12T114445Z-codex-48240b.yaml
+- history/records/chalcopyrite-enargite-concentrate/2026-10-31T053145Z-marcin-8eb0b4.yaml

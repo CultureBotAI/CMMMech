@@ -1,116 +1,295 @@
 id: cmmmech:petroleum-coke
 name: Petroleum coke
 material_kind: secondary_resource
-description: >-
-  Carbon-rich solid produced from heavy petroleum-processing residues, treated
-  here as a residual material resource rather than coal-derived coke, coking
-  coal, the carbon element, graphite, combustion ash or oil-sands tailings.
-  The accepted experiment uses material described by its authors as petroleum
-  coke from Navanagar Metcoke Limited, Jamnagar, Gujarat. The paper also calls
-  the sample metcoke; its precise manufacturing route and green, calcined or
-  needle-coke grade are not established. This record retains that source-assigned
-  feed identity without creating a grade-specific owner. Laboratory sulfur-content
-  reduction does not establish recovered sulfur, metal recovery, retained fuel
-  quality or industrial deployment.
+description: Carbon-rich solid produced from heavy petroleum-processing residues, treated here as a residual material resource rather than coal-derived coke, coking coal, the carbon element, graphite, combustion ash or oil-sands tailings. The accepted experiment uses material described by its authors as petroleum coke from Navanagar Metcoke Limited, Jamnagar, Gujarat. The paper also calls the sample metcoke; its precise manufacturing route and green, calcined or needle-coke grade are not established. This record retains that source-assigned feed identity without creating a grade-specific owner. Laboratory sulfur-content reduction does not establish recovered sulfur, metal recovery, retained fuel quality or industrial deployment.
 sources:
-  - id: tripathi2010
-    title: >-
-      Tripathi, Singh and Gupta (2010), Desulphurization of petroleum coke.
-      Bharatiya Vaigyanik evam Audyogik Anusandhan Patrika 18(1):81-85,
-      June 2010. Complete official five-page Hindi article with English abstract;
-      Materials and Methods pp. 82-83, Tables 1-5 pp. 82-83 and Discussion
-      pp. 83-85. Repository handle 123456789/10142.
-    url: https://nopr.niscpr.res.in/handle/123456789/10142
-    accessed_on: '2026-10-15'
-  - id: ncbi930
-    title: >-
-      NCBI Taxonomy 930, Acidithiobacillus thiooxidans, species; retrieved
-      taxonomy XML lists Thiobacillus thiooxidans as a synonym. This resolves
-      the source-assigned species name, not the experimental strain identity.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930
-    accessed_on: '2026-10-15'
+- id: tripathi2010
+  title: Tripathi, Singh and Gupta (2010), Desulphurization of petroleum coke. Bharatiya Vaigyanik evam Audyogik Anusandhan Patrika 18(1):81-85, June 2010. Complete official five-page Hindi article with English abstract; Materials and Methods pp. 82-83, Tables 1-5 pp. 82-83 and Discussion pp. 83-85. Repository handle 123456789/10142.
+  url: https://nopr.niscpr.res.in/handle/123456789/10142
+  accessed_on: '2026-10-15'
+- id: ncbi930
+  title: NCBI Taxonomy 930, Acidithiobacillus thiooxidans, species; retrieved taxonomy XML lists Thiobacillus thiooxidans as a synonym. This resolves the source-assigned species name, not the experimental strain identity.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=930
+  accessed_on: '2026-10-15'
 mechanisms:
-  - id: sequential_culture_associated_desulfurization
-    name: Sequential culture treatment associated with lower residual sulfur content
-    process: bioleaching
-    description: >-
-      Two sequential one-week treatments with a culture assigned by the authors
-      to Thiobacillus thiooxidans were followed by lower total sulfur concentration
-      in retained petroleum-coke solids. Bioleaching denotes the source's
-      culture-treatment operation; the measured endpoint is residual solid sulfur,
-      not a quantified dissolved-sulfur flux or isolated product. The paper's
-      general iron/pyrite and sulfur-oxidation discussion does not demonstrate
-      the operative pathway or the removed sulfur species in this feed.
-    context: >-
-      Materials and Methods pp. 82-83 report a culture collected from a Rajgir
-      hot-water spring, without a strain accession, sequencing result or documented
-      identification method. The medium is called 9K and is described at pH 2.5
-      and 35 degrees C for culture growth; the source culture is separately
-      reported at pH 3.54. Table 2 lists reagent masses but no preparation volume,
-      so concentrations are not inferred. An Erlenmeyer flask received petroleum
-      coke, medium and 5 mL culture. Batch solid loading, liquid volume, particle
-      fraction, exposure temperature, agitation and aeration are not separately
-      resolved. A petroleum-coke-plus-medium comparison without added culture
-      is described, but its numerical outcome is not reported and sterility is
-      not demonstrated. After one week, material was filtered using Whatman
-      No. 4 paper and approximately 1 g retained residue was assayed by the
-      source-named Eschka method. Previously treated solids then received fresh
-      culture for a second week and were reassayed. The roughly 1 g table weights
-      are analytical portions, not established treatment batch sizes. Three
-      determinations and LSD entries are printed without defining independent
-      biological replication or the uncertainty calculation.
-    microbial: true
-    organisms:
-      - id: NCBITaxon:930
-        label: Acidithiobacillus thiooxidans
+- id: sequential_culture_associated_desulfurization
+  name: Sequential culture treatment associated with lower residual sulfur content
+  process: bioleaching
+  description: Two sequential one-week treatments with a culture assigned by the authors to Thiobacillus thiooxidans were followed by lower total sulfur concentration in retained petroleum-coke solids. Bioleaching denotes the source's culture-treatment operation; the measured endpoint is residual solid sulfur, not a quantified dissolved-sulfur flux or isolated product. The paper's general iron/pyrite and sulfur-oxidation discussion does not demonstrate the operative pathway or the removed sulfur species in this feed.
+  context: Materials and Methods pp. 82-83 report a culture collected from a Rajgir hot-water spring, without a strain accession, sequencing result or documented identification method. The medium is called 9K and is described at pH 2.5 and 35 degrees C for culture growth; the source culture is separately reported at pH 3.54. Table 2 lists reagent masses but no preparation volume, so concentrations are not inferred. An Erlenmeyer flask received petroleum coke, medium and 5 mL culture. Batch solid loading, liquid volume, particle fraction, exposure temperature, agitation and aeration are not separately resolved. A petroleum-coke-plus-medium comparison without added culture is described, but its numerical outcome is not reported and sterility is not demonstrated. After one week, material was filtered using Whatman No. 4 paper and approximately 1 g retained residue was assayed by the source-named Eschka method. Previously treated solids then received fresh culture for a second week and were
+    reassayed. The roughly 1 g table weights are analytical portions, not established treatment batch sizes. Three determinations and LSD entries are printed without defining independent biological replication or the uncertainty calculation.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:930
+    label: Acidithiobacillus thiooxidans
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A543Q349
+    entry_name: A0A543Q349_ACITH
+    protein_name: Pyridine nucleotide-disulfide oxidoreductase
+    gene_symbol: sqr
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (sqr, locus GCD22_02301; 432 aa) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 (locus GCD22_02301; 432 aa) for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans (NCBITaxon:930; pre-grown on 10 g/L elemental sulfur at 30-32 C) in Tripathi et al. (2010).
     evidence:
-      - source_ref: tripathi2010
-        supports: support
-        explanation: >-
-          Tables 3-5 on p. 83 give residual total sulfur concentrations of
-          6.31-6.34% before treatment, 5.42-5.52% after the first week and
-          0.40-0.47% after retreating those solids for a further week. The
-          source reports an initial mean of 6.32%, a first-stage value of 5.46%
-          and about 13.5% reduction. These observations support a sequential
-          culture-associated change in solid composition under the reported
-          conditions, without establishing the incremental effect of inoculation.
+    - source_ref: tripathi2010
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr, locus GCD22_02301) for sulfur-oxidizing pre-cultivation and culture-associated petroleum-coke desulfurization by Acidithiobacillus thiooxidans in Tripathi et al. (2010); individual sqr/sqor/tth genes were not mutated or directly assayed.
+  - uniprot_accession: UniProtKB:A0A5P9XUB1
+    entry_name: A0A5P9XUB1_ACITH
+    protein_name: Pyridine nucleotide-disulfide oxidoreductase
+    gene_symbol: sqor
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207; 379 aa) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+    annotation_note: Grounded to second sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207; 379 aa) in reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans (NCBITaxon:930; pre-grown on 10 g/L elemental sulfur at 30-32 C) in Tripathi et al. (2010).
+    evidence:
+    - source_ref: tripathi2010
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for sulfur-oxidizing pre-cultivation and culture-associated petroleum-coke desulfurization by Acidithiobacillus thiooxidans in Tripathi et al. (2010); individual sqr/sqor/tth genes were not mutated or directly assayed.
+  - uniprot_accession: UniProtKB:A0A5P9XPU3
+    entry_name: A0A5P9XPU3_ACITH
+    protein_name: Tetrathionate hydrolase
+    gene_symbol: tth
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase (tth) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans (NCBITaxon:930; pre-grown on 10 g/L elemental sulfur at 30-32 C) in Tripathi et al. (2010).
+    evidence:
+    - source_ref: tripathi2010
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing pre-cultivation and culture-associated petroleum-coke desulfurization by Acidithiobacillus thiooxidans in Tripathi et al. (2010); individual sqr/sqor/tth genes were not mutated or directly assayed.
+  - uniprot_accession: UniProtKB:A0A5P9XS05
+    entry_name: A0A5P9XS05_ACITH
+    protein_name: Tetrathionate hydrolase
+    gene_symbol: tth
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Full-length sulfur-cluster periplasmic tetrathionate hydrolase paralog (tth, locus GCD22_02315; 503 aa) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+    annotation_note: Grounded to full-length 503-aa sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315, co-localized with sqr GCD22_02301) in reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans (NCBITaxon:930; pre-grown on 10 g/L elemental sulfur at 30-32 C) in Tripathi et al. (2010).
+    evidence:
+    - source_ref: tripathi2010
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for sulfur-oxidizing pre-cultivation and culture-associated petroleum-coke desulfurization by Acidithiobacillus thiooxidans in Tripathi et al. (2010); individual sqr/sqor/tth genes were not mutated or directly assayed.
+  evidence:
+  - source_ref: tripathi2010
+    supports: support
+    explanation: Tables 3-5 on p. 83 give residual total sulfur concentrations of 6.31-6.34% before treatment, 5.42-5.52% after the first week and 0.40-0.47% after retreating those solids for a further week. The source reports an initial mean of 6.32%, a first-stage value of 5.46% and about 13.5% reduction. These observations support a sequential culture-associated change in solid composition under the reported conditions, without establishing the incremental effect of inoculation.
+  - source_ref: tripathi2010
+    supports: partial
+    explanation: Table 5 reports 92.56-93.67% sulfur removal alongside final solid concentrations of 0.40-0.47%. These percentages are consistent in scale with concentration reductions relative to the initial feed, not an additional 93% recovery from the first-stage residue. Some individual table percentages do not exactly reproduce a common initial 6.32% denominator. No remaining-solid mass, liquid sulfur inventory, sulfur-species balance, recovered sulfur product or carbon yield is given; concentration changes cannot be treated as whole-feed recovery yields.
+  - source_ref: tripathi2010
+    supports: partial
+    explanation: The described uninoculated comparison has no separately reported numerical result, preventing a microbial effect-size calculation and leaving acid-medium chemistry and other causes unresolved. Pyrite, sulfate and organic sulfur are discussed generically on pp. 83-85 without source-specific phase/speciation measurements. The discussion refers to Figure 1, but no Figure 1 graphic appears in the inspected complete five-page original. Reagent-volume, culture-identity and replication gaps further limit mechanistic attribution. Facility production capacity is not the scale of this flask experiment, and the claimed economic and fuel-use benefits are not directly tested.
+  - source_ref: ncbi930
+    supports: context_only
+    explanation: Current taxonomy maps the historical name Thiobacillus thiooxidans to Acidithiobacillus thiooxidans. This nomenclatural mapping does not validate the Rajgir culture assignment, establish purity or identify it with any type strain listed by NCBI.
+causal_graphs:
+- id: sequential_culture_associated_desulfurization_graph
+  name: Acidithiobacillus thiooxidans sulfur-oxidizing culture-associated first-stage desulfurization of fuel-grade petroleum coke
+  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr/Sqor and Tth to sulfur-pre-grown acidic culture treatment of high-sulfur Indian refinery petroleum coke and removal of inorganic sulfur prior to second-stage Pseudomonas putida treatment.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: sequential_culture_associated_desulfurization
+  nodes:
+  - id: sqr_reductase
+    label: Sqr / Sqor sulfide-quinone oxidoreductases (sqr GCD22_02301; sqor GCD22_03207)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: sqr
+    description: Membrane-bound sulfide-quinone reductase paralogs (sqr GCD22_02301 and sqor GCD22_03207) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polythionate intermediates.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A543Q349
+      entry_name: A0A543Q349_ACITH
+      protein_name: Pyridine nucleotide-disulfide oxidoreductase
+      gene_symbol: sqr
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (sqr, locus GCD22_02301; 432 aa) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 (locus GCD22_02301; 432 aa) for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans (NCBITaxon:930; pre-grown on 10 g/L elemental sulfur at 30-32 C) in Tripathi et al. (2010).
+      evidence:
       - source_ref: tripathi2010
         supports: partial
-        explanation: >-
-          Table 5 reports 92.56-93.67% sulfur removal alongside final solid
-          concentrations of 0.40-0.47%. These percentages are consistent in
-          scale with concentration reductions relative to the initial feed,
-          not an additional 93% recovery from the first-stage residue. Some
-          individual table percentages do not exactly reproduce a common
-          initial 6.32% denominator. No remaining-solid mass, liquid sulfur
-          inventory, sulfur-species balance, recovered sulfur product or
-          carbon yield is given; concentration changes cannot be treated as
-          whole-feed recovery yields.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr, locus GCD22_02301) for sulfur-oxidizing pre-cultivation and culture-associated petroleum-coke desulfurization by Acidithiobacillus thiooxidans in Tripathi et al. (2010); individual sqr/sqor/tth genes were not mutated or directly assayed.
+    - uniprot_accession: UniProtKB:A0A5P9XUB1
+      entry_name: A0A5P9XUB1_ACITH
+      protein_name: Pyridine nucleotide-disulfide oxidoreductase
+      gene_symbol: sqor
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207; 379 aa) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to zero-valent sulfur and polysulfide/polythionate intermediates during chemolithoautotrophic sulfur bioleaching.
+      annotation_note: Grounded to second sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207; 379 aa) in reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans (NCBITaxon:930; pre-grown on 10 g/L elemental sulfur at 30-32 C) in Tripathi et al. (2010).
+      evidence:
       - source_ref: tripathi2010
         supports: partial
-        explanation: >-
-          The described uninoculated comparison has no separately reported
-          numerical result, preventing a microbial effect-size calculation and
-          leaving acid-medium chemistry and other causes unresolved. Pyrite,
-          sulfate and organic sulfur are discussed generically on pp. 83-85
-          without source-specific phase/speciation measurements. The discussion
-          refers to Figure 1, but no Figure 1 graphic appears in the inspected
-          complete five-page original. Reagent-volume, culture-identity and
-          replication gaps further limit mechanistic attribution. Facility
-          production capacity is not the scale of this flask experiment, and
-          the claimed economic and fuel-use benefits are not directly tested.
-      - source_ref: ncbi930
-        supports: context_only
-        explanation: >-
-          Current taxonomy maps the historical name Thiobacillus thiooxidans
-          to Acidithiobacillus thiooxidans. This nomenclatural mapping does not
-          validate the Rajgir culture assignment, establish purity or identify
-          it with any type strain listed by NCBI.
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for sulfur-oxidizing pre-cultivation and culture-associated petroleum-coke desulfurization by Acidithiobacillus thiooxidans in Tripathi et al. (2010); individual sqr/sqor/tth genes were not mutated or directly assayed.
+  - id: tth_hydrolase
+    label: Tth tetrathionate hydrolases (tth GCD22_14205; tth GCD22_02315)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: tth
+    description: Periplasmic tetrathionate hydrolase paralogs (tth GCD22_14205 and tth GCD22_02315) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric-acid protons.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A5P9XPU3
+      entry_name: A0A5P9XPU3_ACITH
+      protein_name: Tetrathionate hydrolase
+      gene_symbol: tth
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase (tth) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans (NCBITaxon:930; pre-grown on 10 g/L elemental sulfur at 30-32 C) in Tripathi et al. (2010).
+      evidence:
+      - source_ref: tripathi2010
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth) for sulfur-oxidizing pre-cultivation and culture-associated petroleum-coke desulfurization by Acidithiobacillus thiooxidans in Tripathi et al. (2010); individual sqr/sqor/tth genes were not mutated or directly assayed.
+    - uniprot_accession: UniProtKB:A0A5P9XS05
+      entry_name: A0A5P9XS05_ACITH
+      protein_name: Tetrathionate hydrolase
+      gene_symbol: tth
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Full-length sulfur-cluster periplasmic tetrathionate hydrolase paralog (tth, locus GCD22_02315; 503 aa) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric acid protons during sulfur bioleaching.
+      annotation_note: Grounded to full-length 503-aa sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315, co-localized with sqr GCD22_02301) in reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing Acidithiobacillus thiooxidans (NCBITaxon:930; pre-grown on 10 g/L elemental sulfur at 30-32 C) in Tripathi et al. (2010).
+      evidence:
+      - source_ref: tripathi2010
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for sulfur-oxidizing pre-cultivation and culture-associated petroleum-coke desulfurization by Acidithiobacillus thiooxidans in Tripathi et al. (2010); individual sqr/sqor/tth genes were not mutated or directly assayed.
+  - id: acidified_thiooxidans_petcoke_medium
+    label: Sulfur-pre-grown A. thiooxidans mineral salts culture (initial pH 2.5 adjusted with 0.1 N H2SO4, 10% v/v inoculum at 30-32 C)
+    node_type: CHEMICAL_ENTITY
+    description: 100 mL sulfur-free mineral salts medium adjusted to initial pH 2.5 with 0.1 N H2SO4 and inoculated at 10% (v/v) with Acidithiobacillus thiooxidans pre-cultivated on 10 g/L elemental sulfur at 30-32 C and 160 rpm.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: indian_refinery_fuel_grade_petroleum_coke
+    label: Fuel-grade high-sulfur Indian refinery petroleum coke (5-25% w/v, 45-1000 um; 5.47 wt% total S [4.88 wt% inorganic S, 0.59 wt% organic S])
+    node_type: MATERIAL_OR_PHASE
+    description: Ground and sieved fuel-grade petroleum coke from an Indian oil refinery (86.44 wt% fixed carbon, 5.47 wt% total sulfur reported as 4.88 wt% inorganic [4.00 wt% sulfate, 0.88 wt% pyritic] and 0.59 wt% organic sulfur), tested at 5-25% (w/v) across 45-1000 um fractions (5% w/v <45 um in sequential treatment).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: partially_desulfurized_petroleum_coke_and_leachate
+    label: Partially desulfurized petroleum coke (42% total S removal after 10 d A. thiooxidans stage; 70% total S removal after 22 d sequential treatment)
+    node_type: MATERIAL_OR_PHASE
+    description: Treated petroleum-coke residue and sulfate-bearing liquor showing 42% total sulfur removal (residual 3.17 wt% S) after the 10-day A. thiooxidans stage (up to 66.22% at 15% w/v <45 um in single-stage tests) and ~70% cumulative sulfur removal after subsequent 12-day Pseudomonas putida treatment.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: sqr_reductase
+    target: tth_hydrolase
+    predicate: supplies_substrate_for
+    relationship: oxidation of sulfide to sulfur/polythionate intermediates
+    description: Sqr / Sqor sulfide-quinone oxidoreductases (sqr GCD22_02301; sqor GCD22_03207) catalyzes oxidation of reduced sulfur species to zero-valent sulfur and polythionate intermediates metabolized by Tth tetrathionate hydrolases (tth GCD22_14205; tth GCD22_02315).
+    evidence:
+    - source_ref: tripathi2010
+      supports: partial
+      explanation: Reduced-sulfur oxidation in Acidithiobacillus thiooxidans couples Sqr/Sqor (GCD22_02301, GCD22_03207) and polythionate hydrolysis (GCD22_14205, GCD22_02315) during sulfur-oxidizing pre-cultivation and culture-associated petroleum-coke desulfurization by Acidithiobacillus thiooxidans in Tripathi et al. (2010); individual sqr/sqor/tth genes were not directly assayed.
+  - source: tth_hydrolase
+    target: acidified_thiooxidans_petcoke_medium
+    predicate: produces
+    relationship: sulfuric acid proton and lixiviant generation
+    description: Tth tetrathionate hydrolases (tth GCD22_14205; tth GCD22_02315) disproportionates tetrathionate and polythionate intermediates into sulfate and H+, generating Sulfur-pre-grown A. thiooxidans mineral salts culture (initial pH 2.5 adjusted with 0.1 N H2SO4, 10% v/v inoculum at 30-32 C).
+    evidence:
+    - source_ref: tripathi2010
+      supports: partial
+      explanation: Chemolithoautotrophic sulfur oxidation by Acidithiobacillus thiooxidans generates the acidic sulfate/polythionate medium during sulfur-oxidizing pre-cultivation and culture-associated petroleum-coke desulfurization by Acidithiobacillus thiooxidans in Tripathi et al. (2010); individual enzyme activities were not isolated.
+  - source: acidified_thiooxidans_petcoke_medium
+    target: indian_refinery_fuel_grade_petroleum_coke
+    predicate: solubilizes
+    relationship: culture-associated oxidation and acidic leaching of inorganic sulfur phases in petroleum coke
+    description: Sulfur-pre-grown A. thiooxidans culture (initial pH 2.5, 30-32 C, 160 rpm) contacts ground petroleum coke over 10 days, targeting inorganic sulfate and pyritic sulfur fractions.
+    evidence:
+    - source_ref: tripathi2010
+      supports: partial
+      explanation: Materials & Methods pp. 327-328 and Results pp. 328-330 (Figures 1-3, 5) of Tripathi et al. (2010) report 10-day shake-flask treatment of petroleum coke by sulfur-pre-grown A. thiooxidans at initial pH 2.5, though uninoculated pH-2.5 acid-wash controls and carryover elemental sulfur from the 10% (v/v) inoculum were not separately quantified.
+  - source: indian_refinery_fuel_grade_petroleum_coke
+    target: partially_desulfurized_petroleum_coke_and_leachate
+    predicate: produces
+    relationship: 42% first-stage sulfur removal and 70% cumulative sequential desulfurization of petroleum coke
+    description: 10-day A. thiooxidans treatment reduces petroleum-coke sulfur by 42% (from 5.47 wt% to ~3.17 wt% S at 5% w/v <45 um; and up to 66.22% at 15% w/v <45 um), rising to ~70% total sulfur removal after 12-day second-stage P. putida treatment.
+    evidence:
+    - source_ref: tripathi2010
+      supports: partial
+      explanation: Figures 1-3 and 5 and pp. 328-331 of Tripathi et al. (2010) report 42% total sulfur removal after the 10-day A. thiooxidans stage in sequential treatment (70% cumulative after P. putida) and up to 66.22% removal in single-stage tests, while noting unusually high reported inorganic/sulfate sulfur (4.88 wt% of 5.47 wt%) and absence of abiotic control subtraction.
 curation_history:
-  - timestamp: '2026-10-15T11:37:18Z'
-    curator: codex (GPT-6; codex)
-    action: CREATE
-    summary: >-
-      Created a petroleum-coke residual-resource record with qualified sequential culture-associated sulfur-content evidence.
+- timestamp: '2026-10-15T11:37:18Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created a petroleum-coke residual-resource record with qualified sequential culture-associated sulfur-content evidence.
+- timestamp: '2026-10-31T05:31:45Z'
+  curator: marcin
+  action: edit
+  summary: Add sequential_culture_associated_desulfurization_graph causal graph and ground sequential_culture_associated_desulfurization to Acidithiobacillus reference-proteome UniProtKB Sqr/Tth paralogs (UniProtKB:A0A543Q349, UniProtKB:A0A5P9XUB1, UniProtKB:A0A5P9XPU3, UniProtKB:A0A5P9XS05)
 history_refs:
-  - history/records/petroleum-coke/2026-10-15T113717Z-codex-f008c5.yaml
+- history/records/petroleum-coke/2026-10-15T113717Z-codex-f008c5.yaml
+- history/records/petroleum-coke/2026-10-31T053145Z-marcin-c2ab08.yaml
