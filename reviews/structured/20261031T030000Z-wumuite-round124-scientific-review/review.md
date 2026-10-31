@@ -1,0 +1,292 @@
+# Primary-source scientific review of wumuite (IMA:2017-067a, status A, KAl0.33W2.67O9)
+
+- Review: 20261031T030000Z-wumuite-round124-scientific-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-10-31T02:58:00Z
+- Finished UTC: 2026-10-31T03:00:00Z
+- Reviewer: antigravity / round124-scientific-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Wumuite (IMA:2017-067a, status A, KAl0.33W2.67O9) passes primary-source scientific review (scientific_review: true) at SHA-256 303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77 against all 29 bounded passages (12 full-PDF pages; 11 main-text pages / 26 passages) and rendered table PNGs of Xue, Li, and Xie (2020, Eur. J. Mineral. 32:483-494).
+
+## Scope And Provenance
+
+Primary-source scientific review of data/records/wumuite.yaml (SHA-256 303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77) and its canonical CREATE and EDIT history sidecars against all 29 bounded primary-source passages (12 full-PDF pages; 11 main-text pages / 26 passages) and rendered PNGs of pages 3 and 6 from Xue, Li, and Xie (2020, Eur. J. Mineral. 32:483-494) and the September 2026 IMA-CNMNC Master List (PDF p. 236).
+
+Selection: Round 124 newly admitted mineral record wumuite
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base f67a43c3820cb330cdd4f14695c34245645a1a70.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:wumuite | data/records/wumuite.yaml | maintained | Wumuite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:wumuite | Checked 673 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:wumuite | Checked 1167 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Verification of IMA:2017-067a identity, Pan-Xi type locality, EPMA chemistry, orthorhombic Pbam HTB-type structure, and internal source discrepancies for wumuite
+
+evidence: supported. Targets: cmmmech:wumuite.
+
+All numeric, crystallographic, optical, and chemical claims in data/records/wumuite.yaml (SHA-256 303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77) match the bounded primary-source passages and rendered table PNGs of Xue, Li, and Xie (2020, Eur. J. Mineral. 32:483-494) and the September 2026 IMA Master List (p. 236).
+
+### Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE + EDIT provenance
+
+provenance: supported. Targets: cmmmech:wumuite.
+
+data/records/wumuite.yaml accurately omits mechanisms (0 mechanisms) and explicitly discloses that no criticality designation, microbial mechanism, or industrial recovery yield is asserted. Append-only CREATE and EDIT history sidecars pass validation with 0 errors.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/wumuite.yaml; Working-tree record data/records/wumuite.yaml | supports | Working-tree record data/records/wumuite.yaml (SHA-256 303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77) captures IMA:2017-067a identity, Panzhihua-Xichang (Pan-Xi) region type locality (Wumu village, Miyi County, Sichuan Province, China), holotype repository M13627 (Geological Museum of China), Table 1 (p. 485) EPMA chemistry (12 points), orthorhombic Pbam HTB-type structure (Tables 2-5), internal primary-source discrepancies (Abstract coordinates 26°46'8.21" N vs Section 2 26°46'18.21" N; Table 3 c = 3.7711(3) Å vs Abstract and Section 6.2 c = 3.7713 Å; Section 6.2 prose space-group typo P4/mbm vs orthorhombic Pbam in Abstract, Table 3, and Section 6.2 heading), and 0 mechanisms. |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List, PDF p. 236 | supports | Confirms Wumuite, formula KAl0.33W2.67O9, status A, IMA No. 2017-067a, country China, and sole reference European Journal of Mineralogy 32 (2020), 483. |
+| xue_2020_primary | https://doi.org/10.5194/ejm-32-483-2020; Xue Y, Li G, and Xie Y (2020) Wumuite (KAl0.33W2.67O9) – a new mineral with an HTB-type structure from the Panzhihua–Xichang region in China, Eur. J. Mineral. 32:483-494, pp. 483-494, Tables 1-6, Figures 1-9 (29 bounded passages &lt;= 1,800 B across 12 full-PDF pages; 11 main-text pages / 26 passages, plus PNG renders of pages 3 and 6) | supports | All 12 full-PDF pages (29 bounded passages &lt;= 1,800 B, 43,172 passage bytes / 43,210 raw text bytes; 11 main-text pages pp. 483-493, 26 passages) and PNG renders of pages 3 and 6 inspected, confirming verbatim title, type locality, holotype M13627, Table 1 EPMA composition (total 99.64 wt%), empirical formula K1.06(W2.63Al0.32)Sigma2.95O9, orthorhombic Pbam cell parameters, and all three internal primary-source discrepancies. |
+| create_history | history/records/wumuite/2026-10-31T014341Z-antigravity-a5dc6c.yaml; Canonical CREATE history sidecar history/records/wumuite/2026-10-31T014341Z-antigravity-a5dc6c.yaml | supports | Canonical CREATE history sidecar (SHA-256 278dbc89230d8c4d4ed9b7064ddce89829b095c2a0d7e90506ddac40d0733bbd) matches record curation_history[0].timestamp and top-level record sections. |
+| edit_history | history/records/wumuite/2026-10-31T025433Z-antigravity-c4f156.yaml; Canonical EDIT history sidecar history/records/wumuite/2026-10-31T025433Z-antigravity-c4f156.yaml | supports | Canonical EDIT history sidecar (SHA-256 a9279a871035ca946d463c371d846eae859293f3a7eae92c8a63d7ea4efe43ae) records PR |
+| validation | data/records/wumuite.yaml; Real CLI validation via .venv/bin/cmmmech validate --require-records and .venv/bin/cmmmech validate-history --base main | supports | Checked 673 record(s); 0 failed. Checked 1167 history record(s); 0 error(s). |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed under the Round 124 bounded source-text workflow (scripts/index_bounded_pdf_passages.py, max 1,800 bytes per passage) plus single-page PNG renders of Tables 1-3.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261031T030000Z-wumuite-round124-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Primary-source scientific review of wumuite (IMA:2017-067a, status A, KAl0.33W2.67O9)
+started_at: '2026-10-31T02:58:00Z'
+finished_at: '2026-10-31T03:00:00Z'
+reviewer:
+  identity: antigravity / round124-scientific-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/wumuite.yaml (SHA-256 303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77)
+    and its CREATE + EDIT history sidecars against all 29 bounded passages (12 full-PDF
+    pages; 11 main-text pages / 26 passages) and single-page PNG renders of pages
+    3 and 6 of Xue Y, Li G, and Xie Y (2020, Eur. J. Mineral. 32:483-494) and the
+    September 2026 IMA-CNMNC Master List (PDF p. 236).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: f67a43c3820cb330cdd4f14695c34245645a1a70
+  state: working_tree
+  inputs:
+  - path: data/records/wumuite.yaml
+    sha256: 303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77
+    role: target
+  - path: history/records/wumuite/2026-10-31T014341Z-antigravity-a5dc6c.yaml
+    sha256: 278dbc89230d8c4d4ed9b7064ddce89829b095c2a0d7e90506ddac40d0733bbd
+    role: context
+  - path: history/records/wumuite/2026-10-31T025433Z-antigravity-c4f156.yaml
+    sha256: a9279a871035ca946d463c371d846eae859293f3a7eae92c8a63d7ea4efe43ae
+    role: context
+  - path: research/sources/round124-minerals/20261031T015000Z-source-investigation.json
+    sha256: 9f97d3454585a593332f939a491d8dd7cc23adbe4fffee67dbdb057e822e4b1e
+    role: context
+  - path: research/sources/round124-minerals/20261031T015000Z-source-investigation.md
+    sha256: 5dd0aa6ee7ad095cc1bc94868a377707cacfd15ad6d7f368899148861403a7eb
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:wumuite
+  path: data/records/wumuite.yaml
+  label: Wumuite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/wumuite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/wumuite/2026-10-31T014341Z-antigravity-a5dc6c.yaml
+    role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/wumuite/2026-10-31T025433Z-antigravity-c4f156.yaml
+    role: canonical_history
+scope:
+  description: Primary-source scientific review of data/records/wumuite.yaml (SHA-256
+    303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77) and its canonical
+    CREATE and EDIT history sidecars against all 29 bounded primary-source passages
+    (12 full-PDF pages; 11 main-text pages / 26 passages) and rendered PNGs of pages
+    3 and 6 from Xue, Li, and Xie (2020, Eur. J. Mineral. 32:483-494) and the September
+    2026 IMA-CNMNC Master List (PDF p. 236).
+  selection: Round 124 newly admitted mineral record wumuite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:wumuite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/wumuite.yaml
+  locator: Working-tree record data/records/wumuite.yaml
+  accessed_at: '2026-10-31T02:59:00Z'
+  support: supports
+  summary: Working-tree record data/records/wumuite.yaml (SHA-256 303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77)
+    captures IMA:2017-067a identity, Panzhihua-Xichang (Pan-Xi) region type locality
+    (Wumu village, Miyi County, Sichuan Province, China), holotype repository M13627
+    (Geological Museum of China), Table 1 (p. 485) EPMA chemistry (12 points), orthorhombic
+    Pbam HTB-type structure (Tables 2-5), internal primary-source discrepancies (Abstract
+    coordinates 26°46'8.21" N vs Section 2 26°46'18.21" N; Table 3 c = 3.7711(3) Å
+    vs Abstract and Section 6.2 c = 3.7713 Å; Section 6.2 prose space-group typo P4/mbm
+    vs orthorhombic Pbam in Abstract, Table 3, and Section 6.2 heading), and 0 mechanisms.
+  snapshot_sha256: 303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 236
+  accessed_at: '2026-10-31T02:59:00Z'
+  support: supports
+  summary: Confirms Wumuite, formula KAl0.33W2.67O9, status A, IMA No. 2017-067a,
+    country China, and sole reference European Journal of Mineralogy 32 (2020), 483.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: xue_2020_primary
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-32-483-2020
+  locator: Xue Y, Li G, and Xie Y (2020) Wumuite (KAl0.33W2.67O9) – a new mineral
+    with an HTB-type structure from the Panzhihua–Xichang region in China, Eur. J.
+    Mineral. 32:483-494, pp. 483-494, Tables 1-6, Figures 1-9 (29 bounded passages
+    <= 1,800 B across 12 full-PDF pages; 11 main-text pages / 26 passages, plus PNG
+    renders of pages 3 and 6)
+  accessed_at: '2026-10-31T02:59:00Z'
+  support: supports
+  summary: All 12 full-PDF pages (29 bounded passages <= 1,800 B, 43,172 passage bytes
+    / 43,210 raw text bytes; 11 main-text pages pp. 483-493, 26 passages) and PNG
+    renders of pages 3 and 6 inspected, confirming verbatim title, type locality,
+    holotype M13627, Table 1 EPMA composition (total 99.64 wt%), empirical formula
+    K1.06(W2.63Al0.32)Sigma2.95O9, orthorhombic Pbam cell parameters, and all three
+    internal primary-source discrepancies.
+  snapshot_sha256: 1ee1fcd925ad830ab3df485c984ab969714ade6c45f1f8871ea49112a141dd72
+- evidence_id: create_history
+  kind: record_content
+  reference: history/records/wumuite/2026-10-31T014341Z-antigravity-a5dc6c.yaml
+  locator: Canonical CREATE history sidecar history/records/wumuite/2026-10-31T014341Z-antigravity-a5dc6c.yaml
+  accessed_at: '2026-10-31T02:59:00Z'
+  support: supports
+  summary: Canonical CREATE history sidecar (SHA-256 278dbc89230d8c4d4ed9b7064ddce89829b095c2a0d7e90506ddac40d0733bbd)
+    matches record curation_history[0].timestamp and top-level record sections.
+  snapshot_sha256: 278dbc89230d8c4d4ed9b7064ddce89829b095c2a0d7e90506ddac40d0733bbd
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/wumuite/2026-10-31T025433Z-antigravity-c4f156.yaml
+  locator: Canonical EDIT history sidecar history/records/wumuite/2026-10-31T025433Z-antigravity-c4f156.yaml
+  accessed_at: '2026-10-31T02:59:00Z'
+  support: supports
+  summary: Canonical EDIT history sidecar (SHA-256 a9279a871035ca946d463c371d846eae859293f3a7eae92c8a63d7ea4efe43ae)
+    records PR
+  snapshot_sha256: a9279a871035ca946d463c371d846eae859293f3a7eae92c8a63d7ea4efe43ae
+- evidence_id: validation
+  kind: validation
+  reference: data/records/wumuite.yaml
+  locator: Real CLI validation via .venv/bin/cmmmech validate --require-records and
+    .venv/bin/cmmmech validate-history --base main
+  accessed_at: '2026-10-31T02:59:00Z'
+  support: supports
+  summary: Checked 673 record(s); 0 failed. Checked 1167 history record(s); 0 error(s).
+  snapshot_sha256: 303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: .venv/bin/cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 673 record(s); 0 failed.
+  target_ids:
+  - cmmmech:wumuite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: .venv/bin/cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1167 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:wumuite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA:2017-067a identity, Pan-Xi type locality, EPMA chemistry,
+    orthorhombic Pbam HTB-type structure, and internal source discrepancies for wumuite
+  outcome: supported
+  summary: All numeric, crystallographic, optical, and chemical claims in data/records/wumuite.yaml
+    (SHA-256 303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77) match
+    the bounded primary-source passages and rendered table PNGs of Xue, Li, and Xie
+    (2020, Eur. J. Mineral. 32:483-494) and the September 2026 IMA Master List (p.
+    236).
+  target_ids:
+  - cmmmech:wumuite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - xue_2020_primary
+- assessment_id: mechanism_absence_and_provenance_verification
+  area: provenance
+  topic: Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE
+    + EDIT provenance
+  outcome: supported
+  summary: data/records/wumuite.yaml accurately omits mechanisms (0 mechanisms) and
+    explicitly discloses that no criticality designation, microbial mechanism, or
+    industrial recovery yield is asserted. Append-only CREATE and EDIT history sidecars
+    pass validation with 0 errors.
+  target_ids:
+  - cmmmech:wumuite
+  evidence_ids:
+  - owner
+  - xue_2020_primary
+  - create_history
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Wumuite (IMA:2017-067a, status A, KAl0.33W2.67O9) passes primary-source
+  scientific review (scientific_review: true) at SHA-256 303d5e7ca9d113f8db3ca26550f3baa8040bdef50f1dbe0f96a1cb299b056c77
+  against all 29 bounded passages (12 full-PDF pages; 11 main-text pages / 26 passages)
+  and rendered table PNGs of Xue, Li, and Xie (2020, Eur. J. Mineral. 32:483-494).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed under the Round 124 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage) plus single-page PNG renders of Tables 1-3.
+related_reviews: []
+```

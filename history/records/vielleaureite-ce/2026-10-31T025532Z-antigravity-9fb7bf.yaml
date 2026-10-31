@@ -1,0 +1,36 @@
+history_version: 1
+target:
+  kind: record
+  slug: vielleaureite-ce
+  path: data/records/vielleaureite-ce.yaml
+session:
+  id: 2026-10-31T025532Z-antigravity-9fb7bf
+  timestamp: '2026-10-31T02:55:32Z'
+  actors:
+  - name: antigravity
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity-cli
+    agent_version: '2.0'
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Remediated PR #884 adversarial review finding F-11 (Issue #885): clarified that
+    Section 8.2 NanoSIMS light-element analysis (Table 8) was performed on coexisting Mn-dominant
+    hellandite rather than holotype vielleaureite-(Ce) fragment VA2016-5, and updated exact
+    published article title in Ragu et al. (2025).'
+  details: 'Updated description and sources[1].title in data/records/vielleaureite-ce.yaml
+    after re-inspecting primary-source passages of ejm-37-627-2025 (Ragu et al. 2025, Eur.
+    J. Mineral. 37:627-638) for Issue #885 in PR #884.'
+  sections:
+  - description
+  - sources
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/885
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/884
+  urls:
+  - https://doi.org/10.5194/ejm-37-627-2025

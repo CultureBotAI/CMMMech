@@ -1,0 +1,36 @@
+history_version: 1
+target:
+  kind: record
+  slug: laurentthomasite
+  path: data/records/laurentthomasite.yaml
+session:
+  id: 2026-10-31T025403Z-antigravity-87d29f
+  timestamp: '2026-10-31T02:54:03Z'
+  actors:
+  - name: antigravity
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity-cli
+    agent_version: '2.0'
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Remediated PR #884 adversarial review findings F-01..F-04 (Issue #885): corrected
+    Mössbauer CS/QS/RA parameters (Table 4), 532 nm pulsed DPSS Raman description (Fig. 4),
+    CAMECA SX100 WDS / 0.1 g ICP-MS sample mass, Rietveld PXRD and SCXRD site-occupancy details
+    (Tables 5-7), and exact published article title in Ferraris et al. (2020).'
+  details: 'Updated description and sources[1].title in data/records/laurentthomasite.yaml
+    after re-inspecting primary-source passages of ejm-32-355-2020 (Ferraris et al. 2020,
+    Eur. J. Mineral. 32:355-365) for Issue #885 in PR #884.'
+  sections:
+  - description
+  - sources
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/885
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/884
+  urls:
+  - https://doi.org/10.5194/ejm-32-355-2020
