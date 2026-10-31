@@ -752,7 +752,10 @@ keeps measured values, detection limits, sample dates and analysis dates distinc
 
 ## Local Checks
 
+Fetch the retained review references before the first check in a new checkout:
+
 ```bash
+git fetch origin --tags
 uv sync --extra dev --locked
 just check
 uv run cmmmech validate
@@ -760,12 +763,19 @@ uv run cmmmech validate path/to/record.yaml
 uv run cmmmech validate --require-records
 ```
 
+Saved scientific reviews can cite commits retained by `review-base/*` tags
+outside the history of `main`. A clone made with `--no-tags` can lack those
+commits even after fetching `main`. See the
+[review provenance setup and recovery guide](docs/record-review-profile.md#checking-provenance-in-a-new-checkout)
+for shallow clones and unavailable source revisions.
+
 The locked development dependencies include `just`; use `uv run just check`
 if it is not otherwise on your PATH. CI runs `uv run python scripts/check.py`,
 including the recipe argument-forwarding regressions. This local gate uses no
 research provider, model, credential, or network
-lookup after dependencies are installed. CI also runs the separate canonical
-artifact check, which reads the pinned public CLAW revision:
+lookup after dependencies and retained Git references are available. CI also
+runs the separate canonical artifact check, which reads the pinned public CLAW
+revision:
 
 ```bash
 bash scripts/check_vendored_sync.sh
