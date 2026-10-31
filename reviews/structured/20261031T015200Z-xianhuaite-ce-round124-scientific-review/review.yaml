@@ -1,0 +1,188 @@
+schema_version: 1.0.0
+review_id: 20261031T015200Z-xianhuaite-ce-round124-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Primary-source scientific review of xianhuaite-(Ce) (IMA:2024-091, status A,
+  K2CeNb5O15)
+started_at: '2026-10-31T01:51:10Z'
+finished_at: '2026-10-31T01:52:00Z'
+reviewer:
+  identity: antigravity / round124-scientific-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/xianhuaite-ce.yaml (SHA-256 bded1436940de7290ef097aae277bae82aa543529d685bdb8c80c6a8be067f36)
+    against all 26 bounded passages (11 pages) and single-page PNG renders of pages
+    4, 6, and 7 of Yang B et al. (2026, Eur. J. Mineral. 38:449-459) and the September
+    2026 IMA-CNMNC Master List (PDF p. 236).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: e954c96898ce97da6781984c7da7ea5d4fda9bfa
+  state: working_tree
+  inputs:
+  - path: data/records/xianhuaite-ce.yaml
+    sha256: bded1436940de7290ef097aae277bae82aa543529d685bdb8c80c6a8be067f36
+    role: target
+  - path: history/records/xianhuaite-ce/2026-10-31T014447Z-antigravity-4ccc72.yaml
+    sha256: 2ad06ecde6fadc591fd8759cb337f7668905b029749f4aec8599eb5e0c80a744
+    role: context
+  - path: research/sources/round124-minerals/20261031T015000Z-source-investigation.json
+    sha256: 896abccad090d9bb3f258cc2b6144323e1b1aae69e88550611b2eb5d59a5266e
+    role: context
+  - path: research/sources/round124-minerals/20261031T015000Z-source-investigation.md
+    sha256: 8f3b2d8438f251351d1a566cc19c320f6f77257d13b30a3cf394b237e25feb3e
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:xianhuaite-ce
+  path: data/records/xianhuaite-ce.yaml
+  label: Xianhuaite-(Ce)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/xianhuaite-ce.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/xianhuaite-ce/2026-10-31T014447Z-antigravity-4ccc72.yaml
+    role: canonical_history
+scope:
+  description: Primary-source scientific review of data/records/xianhuaite-ce.yaml
+    (SHA-256 bded1436940de7290ef097aae277bae82aa543529d685bdb8c80c6a8be067f36) and
+    its canonical CREATE history sidecar against all 26 bounded primary-source passages
+    (11 pages) and rendered PNGs of pages 4, 6, and 7 from Yang et al. (2026, Eur.
+    J. Mineral. 38:449-459) and the September 2026 IMA-CNMNC Master List (PDF p. 236).
+  selection: Round 124 newly admitted mineral record xianhuaite-ce
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:xianhuaite-ce
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/xianhuaite-ce.yaml
+  locator: Working-tree record data/records/xianhuaite-ce.yaml
+  accessed_at: '2026-10-31T01:51:00Z'
+  support: supports
+  summary: Working-tree record data/records/xianhuaite-ce.yaml (SHA-256 bded1436940de7290ef097aae277bae82aa543529d685bdb8c80c6a8be067f36)
+    captures IMA:2024-091 identity, Bayan Obo Fe-Nb-REE deposit (Baotou City, Inner
+    Mongolia, China) type locality, holotype repository GMC M16159, Table 1 (p. 452)
+    16-point EPMA chemistry, tetragonal P4/mbm tungsten-bronze-type crystal structure
+    (Tables 2-6), Raman spectrum, physical/optical properties, Table 1 Pr2O3 mean-vs-range
+    and Ta2O5 rounding discrepancies, and 0 mechanisms.
+  snapshot_sha256: bded1436940de7290ef097aae277bae82aa543529d685bdb8c80c6a8be067f36
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 236
+  accessed_at: '2026-10-31T01:51:00Z'
+  support: supports
+  summary: Confirms Xianhuaite-(Ce), formula K2CeNb5O15, status A, IMA No. 2024-091,
+    country China, and sole reference European Journal of Mineralogy 38 (2026), 449.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: yang_2026_primary
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-38-449-2026
+  locator: Yang B et al. (2026) Eur. J. Mineral. 38:449-459, pp. 449-459, Tables 1-6,
+    Figures 1-8 (26 bounded passages <= 1,800 B and PNG renders of pages 4, 6, and
+    7)
+  accessed_at: '2026-10-31T01:51:00Z'
+  support: supports
+  summary: All 11 pages (26 bounded passages <= 1,800 B) and PNG renders of pages
+    4, 6, and 7 inspected, confirming type locality, holotype specimen M16159, Table
+    1 16-point EPMA composition (total 99.65 wt%), empirical formula (K1.74Na0.05Ba0.04)(Ce0.48La0.24Nd0.14Pb0.07Ca0.03Th0.02Pr0.01Fe2+0.01)(Nb4.80Ti0.17Fe3+0.04)O15,
+    tetragonal P4/mbm cell parameters, and Table 1 Pr2O3/Ta2O5 discrepancies.
+  snapshot_sha256: 872617555378d4463559b187a9a4b4acdfc0dbdac6ba4b4545521a69032a5805
+- evidence_id: create_history
+  kind: record_content
+  reference: history/records/xianhuaite-ce/2026-10-31T014447Z-antigravity-4ccc72.yaml
+  locator: Canonical CREATE history sidecar history/records/xianhuaite-ce/2026-10-31T014447Z-antigravity-4ccc72.yaml
+  accessed_at: '2026-10-31T01:51:00Z'
+  support: supports
+  summary: Canonical CREATE history sidecar (SHA-256 2ad06ecde6fadc591fd8759cb337f7668905b029749f4aec8599eb5e0c80a744)
+    matches record curation_history[0].timestamp and top-level record sections.
+  snapshot_sha256: 2ad06ecde6fadc591fd8759cb337f7668905b029749f4aec8599eb5e0c80a744
+- evidence_id: validation
+  kind: validation
+  reference: data/records/xianhuaite-ce.yaml
+  locator: Real CLI validation via .venv/bin/cmmmech validate --require-records and
+    .venv/bin/cmmmech validate-history --base main
+  accessed_at: '2026-10-31T01:51:00Z'
+  support: supports
+  summary: Checked 673 record(s); 0 failed. Checked 1162 history record(s); 0 error(s).
+  snapshot_sha256: bded1436940de7290ef097aae277bae82aa543529d685bdb8c80c6a8be067f36
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: .venv/bin/cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 673 record(s); 0 failed.
+  target_ids:
+  - cmmmech:xianhuaite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: .venv/bin/cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1162 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:xianhuaite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA:2024-091 identity, Bayan Obo type locality, EPMA chemistry,
+    tetragonal P4/mbm structure, and Table 1 discrepancies for xianhuaite-(Ce)
+  outcome: supported
+  summary: All numeric, crystallographic, Raman, optical, and chemical claims in data/records/xianhuaite-ce.yaml
+    (SHA-256 bded1436940de7290ef097aae277bae82aa543529d685bdb8c80c6a8be067f36) match
+    the bounded primary-source passages and rendered table PNGs of Yang et al. (2026,
+    Eur. J. Mineral. 38:449-459) and the September 2026 IMA Master List (p. 236).
+  target_ids:
+  - cmmmech:xianhuaite-ce
+  evidence_ids:
+  - owner
+  - ima_authority
+  - yang_2026_primary
+- assessment_id: mechanism_absence_and_provenance_verification
+  area: provenance
+  topic: Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE
+    provenance
+  outcome: supported
+  summary: data/records/xianhuaite-ce.yaml accurately omits mechanisms (0 mechanisms)
+    and explicitly discloses that no criticality designation, microbial mechanism,
+    or industrial recovery yield is asserted. Append-only CREATE history sidecar passes
+    validation with 0 errors.
+  target_ids:
+  - cmmmech:xianhuaite-ce
+  evidence_ids:
+  - owner
+  - yang_2026_primary
+  - create_history
+  - validation
+findings: []
+actions: []
+summary: 'Xianhuaite-(Ce) (IMA:2024-091, status A, K2CeNb5O15) passes primary-source
+  scientific review (scientific_review: true) at SHA-256 bded1436940de7290ef097aae277bae82aa543529d685bdb8c80c6a8be067f36
+  against all 26 bounded passages (11 pages) and rendered table PNGs of Yang et al.
+  (2026, Eur. J. Mineral. 38:449-459).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed under the Round 124 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage) plus single-page PNG renders of Tables 1-6.
+related_reviews: []
