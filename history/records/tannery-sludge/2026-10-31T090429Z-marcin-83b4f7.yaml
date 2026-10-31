@@ -1,0 +1,34 @@
+history_version: 1
+target:
+  kind: record
+  slug: tannery-sludge
+  path: data/records/tannery-sludge.yaml
+session:
+  id: 2026-10-31T090429Z-marcin-83b4f7
+  timestamp: '2026-10-31T09:04:29Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Remediate xiamen_acidophile_associated_chromium_leaching_graph and xiamen_acidophile_associated_chromium_leaching
+    protein_examples to match primary-source experimental conditions, strains, and outcomes
+    (#892)
+  details: 'Updated causal graph ''xiamen_acidophile_associated_chromium_leaching_graph''
+    and mechanism ''xiamen_acidophile_associated_chromium_leaching'' protein_examples (UniProtKB:B7JBP8,
+    UniProtKB:B7J411, UniProtKB:B7J3C9, UniProtKB:A0A543Q349, UniProtKB:A0A5P9XUB1, UniProtKB:A0A5P9XPU3,
+    UniProtKB:A0A5P9XS05) to align strictly with primary-source experimental conditions, strains,
+    assays, and support levels documented in ''wang2019'' (resolving #892).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/892
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/888

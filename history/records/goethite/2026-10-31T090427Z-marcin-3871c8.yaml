@@ -1,0 +1,34 @@
+history_version: 1
+target:
+  kind: record
+  slug: goethite
+  path: data/records/goethite.yaml
+session:
+  id: 2026-10-31T090427Z-marcin-3871c8
+  timestamp: '2026-10-31T09:04:27Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Remediate sulfur_oxidizer_goethite_mobilization_graph and sulfur_oxidizer_goethite_mobilization
+    protein_examples to match primary-source experimental conditions, strains, and outcomes
+    (#892)
+  details: 'Updated causal graph ''sulfur_oxidizer_goethite_mobilization_graph'' and mechanism
+    ''sulfur_oxidizer_goethite_mobilization'' protein_examples (UniProtKB:A0A543Q349, UniProtKB:A0A5P9XUB1,
+    UniProtKB:A0A5P9XPU3, UniProtKB:A0A5P9XS05, UniProtKB:F9ZQD6, UniProtKB:F9ZN43, UniProtKB:F9ZNI0)
+    to align strictly with primary-source experimental conditions, strains, assays, and support
+    levels documented in ''stankovic_2024'' (resolving #892).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/892
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/888

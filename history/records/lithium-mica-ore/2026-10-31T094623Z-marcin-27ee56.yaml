@@ -1,0 +1,30 @@
+history_version: 1
+target:
+  kind: record
+  slug: lithium-mica-ore
+  path: data/records/lithium-mica-ore.yaml
+session:
+  id: 2026-10-31T094623Z-marcin-27ee56
+  timestamp: '2026-10-31T09:46:23Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Align beauvoir_acidophile_leaching_graph node ID, feed sterilization scope, and
+    figure citations with Sedlakova-Kadukova et al. (2020) (#892)
+  details: Rename beauvoir_lepidolite_zinnwaldite_concentrate to beauvoir_lepidolite_concentrate,
+    remove unverified dry-heat sterilization and Figure 5 references, and match mechanisms[1]
+    section citations (#892).
+  sections:
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/892
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/888

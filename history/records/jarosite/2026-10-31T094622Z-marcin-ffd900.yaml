@@ -1,0 +1,29 @@
+history_version: 1
+target:
+  kind: record
+  slug: jarosite
+  path: data/records/jarosite.yaml
+session:
+  id: 2026-10-31T094622Z-marcin-ffd900
+  timestamp: '2026-10-31T09:46:22Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Align thiooxidans_sulfur_assisted_dissolution_graph node IDs and pH description
+    with Chen et al. (2022) curated mechanism (#892)
+  details: Rename node IDs to remove 9K/goethite remnants and remove unverified pH 1.18 endpoint
+    number (#892).
+  sections:
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/892
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/888

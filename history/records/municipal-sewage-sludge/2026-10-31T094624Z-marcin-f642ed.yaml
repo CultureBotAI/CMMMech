@@ -1,0 +1,30 @@
+history_version: 1
+target:
+  kind: record
+  slug: municipal-sewage-sludge
+  path: data/records/municipal-sewage-sludge.yaml
+session:
+  id: 2026-10-31T094624Z-marcin-f642ed
+  timestamp: '2026-10-31T09:46:24Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Rename node IDs in sulfur_assisted_culture_acidification_graph to match Lehtoniemi
+    raw municipal sewage sludge phosphorus solubilization scope (#892)
+  details: Replace anaerobically_digested_municipal_sewage_sludge and dewatered_cake node
+    IDs with municipal_sewage_sludge_suspension and bioleached_sludge_and_solubilized_heavy_metals
+    (#892).
+  sections:
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/892
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/888

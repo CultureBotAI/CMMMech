@@ -1,0 +1,33 @@
+history_version: 1
+target:
+  kind: record
+  slug: lithium-mica-ore
+  path: data/records/lithium-mica-ore.yaml
+session:
+  id: 2026-10-31T090428Z-marcin-cce1ba
+  timestamp: '2026-10-31T09:04:28Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Remediate beauvoir_acidophile_leaching_graph and beauvoir_acidophile_leaching protein_examples
+    to match primary-source experimental conditions, strains, and outcomes (#892)
+  details: 'Updated causal graph ''beauvoir_acidophile_leaching_graph'' and mechanism ''beauvoir_acidophile_leaching''
+    protein_examples (UniProtKB:B7JBP8, UniProtKB:B7J411, UniProtKB:B7J3C9, UniProtKB:A0A543Q349,
+    UniProtKB:A0A5P9XUB1, UniProtKB:A0A5P9XPU3, UniProtKB:A0A5P9XS05) to align strictly with
+    primary-source experimental conditions, strains, assays, and support levels documented
+    in ''sedlakova2020'' (resolving #892).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/892
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/888
