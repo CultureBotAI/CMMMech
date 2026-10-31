@@ -1,0 +1,35 @@
+history_version: 1
+target:
+  kind: record
+  slug: hafnium
+  path: data/records/hafnium.yaml
+session:
+  id: 2026-10-31T120502Z-marcin-70646e
+  timestamp: '2026-10-31T12:05:02Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Clarify UniProtKB:Q50964 entry name (Q50964_NEIGO) and review status (TREMBL) in
+    hafnium.yaml provenance history (#895)
+  details: 'Appends a canonical correction session for history/records/hafnium/2026-10-31T110150Z-marcin-3be82a.yaml
+    (#895): clarifies that the existing species-level Neisseria gonorrhoeae (NCBITaxon:485)
+    ferric-binding periplasmic protein anchor UniProtKB:Q50964 in data/records/hafnium.yaml
+    has uniprot_entry_name Q50964_NEIGO and review_status TREMBL (matching live UniProtKB
+    REST API metadata), alongside the newly added Neisseria gonorrhoeae FA 1090 reference-proteome
+    (UP000000535, NCBITaxon:242231) entry UniProtKB:Q5FA17 (Q5FA17_NEIG1, TREMBL, fbpA / NGO_0217).'
+  sections:
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/895
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/893
+  urls:
+  - https://rest.uniprot.org/uniprotkb/Q50964.json
+  - https://rest.uniprot.org/uniprotkb/Q5FA17.json

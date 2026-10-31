@@ -1,0 +1,40 @@
+history_version: 1
+target:
+  kind: record
+  slug: thulium
+  path: data/records/thulium.yaml
+session:
+  id: 2026-10-31T120502Z-marcin-dd7951
+  timestamp: '2026-10-31T12:05:02Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Align Bacillus subtilis 168 LtaS2/LtaS1/YqgS/YvgJ functional_role and node description
+    EC numbers with structured UniProtKB ec_numbers (EC 2.7.8.46 / EC 2.7.8.-, formerly EC
+    2.7.8.40) (#896)
+  details: Updates ltas_synthase_paralogs.description and the functional_role descriptions
+    on UniProtKB:O34952 (LtaS2, EC:2.7.8.-), UniProtKB:Q797B3 (LtaS1, EC:2.7.8.46), UniProtKB:P54496
+    (YqgS, EC:2.7.8.46), and UniProtKB:O32206 (YvgJ, EC:2.7.8.-) across both causal_graphs[0].nodes[0].protein_examples
+    and mechanisms[0].protein_examples in data/records/thulium.yaml so prose EC numbers explicitly
+    match structured UniProtKB ec_numbers while noting the transferred EC 2.7.8.40 designation
+    (#896).
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/896
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/893
+  urls:
+  - https://rest.uniprot.org/uniprotkb/O34952.json
+  - https://rest.uniprot.org/uniprotkb/Q797B3.json
+  - https://rest.uniprot.org/uniprotkb/P54496.json
+  - https://rest.uniprot.org/uniprotkb/O32206.json
