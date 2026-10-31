@@ -1,0 +1,36 @@
+history_version: 1
+target:
+  kind: record
+  slug: thulium
+  path: data/records/thulium.yaml
+session:
+  id: 2026-10-31T111131Z-marcin-086a0f
+  timestamp: '2026-10-31T11:11:31Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Synchronize InterPro and Pfam cross-references on Bacillus subtilis LtaS2/LtaS1/YqgS/YvgJ
+    (UniProtKB:O34952, UniProtKB:Q797B3, UniProtKB:P54496, UniProtKB:O32206) with live UniProtKB
+  details: 'Cycle 6 Stage 3 protein_examples curation: synchronized interpro_ids and pfam_ids
+    on Bacillus subtilis subsp. subtilis str. 168 lipoteichoic acid synthase/primase paralogs
+    LtaS2 (ltaS2, UniProtKB:O34952), LtaS1 (ltaS1, UniProtKB:Q797B3), YqgS (yqgS, UniProtKB:P54496),
+    and YvgJ (yvgJ, UniProtKB:O32206) with live UniProtKB cross-references (replacing retired
+    InterPro:IPR016283, InterPro:IPR026587, and InterPro:IPR017849 with live InterPro:IPR000917,
+    InterPro:IPR012160, InterPro:IPR017850, InterPro:IPR050448, InterPro:IPR060270 and adding
+    Pfam:PF27449 alongside Pfam:PF00884) across node and mechanism protein_examples.'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  urls:
+  - https://rest.uniprot.org/uniprotkb/O34952.json
+  - https://rest.uniprot.org/uniprotkb/Q797B3.json
+  - https://rest.uniprot.org/uniprotkb/P54496.json
+  - https://rest.uniprot.org/uniprotkb/O32206.json

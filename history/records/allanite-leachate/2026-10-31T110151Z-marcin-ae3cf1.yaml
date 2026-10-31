@@ -1,0 +1,35 @@
+history_version: 1
+target:
+  kind: record
+  slug: allanite-leachate
+  path: data/records/allanite-leachate.yaml
+session:
+  id: 2026-10-31T110151Z-marcin-ae3cf1
+  timestamp: '2026-10-31T11:01:51Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Add Pichia kudriavzevii reference-proteome PYK1 (UniProtKB:A0A1V2LFH0) and GPD
+    (UniProtKB:A0A2U9RB90) protein examples and synchronize live UniProtKB cross-references
+  details: 'Cycle 6 Stage 3 protein_examples curation: added endogenous Pichia kudriavzevii
+    (Issatchenkia orientalis) CBS 573 reference-proteome (UP000249293) pyruvate kinase UniProtKB:A0A1V2LFH0
+    (locus C5L36_0A06840, evaluated as JL09_g4285 in strain JL02) and glycerol-3-phosphate
+    dehydrogenase UniProtKB:A0A2U9RB90 (locus C5L36_0E02100) alongside existing entries, updated
+    UniProtKB:A0A1V2LT98 to its current live reference_proteome_id UP000249293 (replacing
+    merged UP000249646) and live Pfam/InterPro sets, and synchronized live InterPro cross-references
+    on UniProtKB:P00549 and UniProtKB:A8W1U0 across node and mechanism protein_examples.'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  urls:
+  - https://rest.uniprot.org/uniprotkb/A0A1V2LFH0.json
+  - https://rest.uniprot.org/uniprotkb/A0A2U9RB90.json
+  - https://rest.uniprot.org/uniprotkb/A0A1V2LT98.json

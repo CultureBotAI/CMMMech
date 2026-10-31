@@ -35,34 +35,6 @@ mechanisms:
   - id: NCBITaxon:4909
     label: Pichia kudriavzevii
   protein_examples:
-  - uniprot_accession: UniProtKB:A0A1V2LT98
-    entry_name: A0A1V2LT98_PICKU
-    protein_name: Pyruvate carboxylase
-    gene_symbol: PYC
-    entry_status: TREMBL
-    target_organism:
-      id: NCBITaxon:4909
-      label: Pichia kudriavzevii
-    reference_proteome_id: UP000249646
-    ec_numbers:
-    - EC:6.4.1.1
-    interpro_ids:
-    - InterPro:IPR000891
-    - InterPro:IPR005930
-    - InterPro:IPR011761
-    pfam_ids:
-    - Pfam:PF00682
-    - Pfam:PF02436
-    - Pfam:PF02786
-    functional_role: Endogenous pyruvate carboxylase (EC 6.4.1.1; locus B5S52_g3644) overexpressed at two integrated copies in Issatchenkia orientalis (Pichia kudriavzevii) strain OA_Pcoah_PYC and retained in strain JL04 to convert pyruvate into oxaloacetate, the immediate substrate cleaved to oxalic acid.
-    annotation_note: Grounded to reference-proteome entry UniProtKB:A0A1V2LT98 (UP000249646) for Pichia kudriavzevii (heterotypic synonym Issatchenkia orientalis; NCBITaxon:4909). Strain JL04 also expresses three codon-optimized copies of heterologous Penicillium chrysogenum oxaloacetate hydrolase Pcoah (omitted as a separate ProteinExample because UniProtKB TrEMBL auto-annotates Penicillium rubens Pc22g24830 / UniProtKB:B6HR98 as Isocitrate lyase EC 4.1.3.1 via PROSITE-ProRule PRU10119 on PF13714) and one copy of Hevea brasiliensis oxalate transporter HbOT2.
-    evidence:
-    - source_ref: lu2026
-      supports: support
-      explanation: Lu et al. (2026), Section 'Metabolic engineering of I. orientalis for oxalic acid production' and Fig. 2, integrated two copies of endogenous pyruvate carboxylase (PYC) in strain OA_Pcoah_PYC (retained in JL01-JL04) to increase conversion of pyruvate to oxaloacetate and raise oxalic acid titer.
-    - source_ref: lu2026_supplement
-      supports: support
-      explanation: Supplementary Table 1 and Supplementary Fig. 1 document integration of two copies of endogenous I. orientalis PYC into the landing-pad chromosome of engineered strain JL04.
   - uniprot_accession: UniProtKB:P00549
     entry_name: KPYK1_YEAST
     protein_name: Pyruvate kinase 1
@@ -76,8 +48,14 @@ mechanisms:
     - EC:2.7.1.40
     interpro_ids:
     - InterPro:IPR001697
+    - InterPro:IPR011037
     - InterPro:IPR015793
-    - InterPro:IPR015794
+    - InterPro:IPR015795
+    - InterPro:IPR015806
+    - InterPro:IPR015813
+    - InterPro:IPR018209
+    - InterPro:IPR036918
+    - InterPro:IPR040442
     pfam_ids:
     - Pfam:PF00224
     - Pfam:PF02887
@@ -90,6 +68,38 @@ mechanisms:
     - source_ref: lu2026_supplement
       supports: support
       explanation: Supplementary Table 1 and Supplementary Fig. 5 document integration of heterologous S. cerevisiae PYK1 in strains JL03 and JL04.
+  - uniprot_accession: UniProtKB:A0A1V2LFH0
+    entry_name: A0A1V2LFH0_PICKU
+    protein_name: Pyruvate kinase
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:4909
+      label: Pichia kudriavzevii
+    reference_proteome_id: UP000249293
+    ec_numbers:
+    - EC:2.7.1.40
+    interpro_ids:
+    - InterPro:IPR001697
+    - InterPro:IPR011037
+    - InterPro:IPR015793
+    - InterPro:IPR015795
+    - InterPro:IPR015806
+    - InterPro:IPR015813
+    - InterPro:IPR018209
+    - InterPro:IPR036918
+    - InterPro:IPR040442
+    pfam_ids:
+    - Pfam:PF00224
+    - Pfam:PF02887
+    functional_role: Endogenous Pichia kudriavzevii (Issatchenkia orientalis) pyruvate kinase (EC 2.7.1.40; locus C5L36_0A06840 / JL09_g4285) evaluated alongside heterologous S. cerevisiae PYK1 in strain JL02 to increase glycolytic pyruvate supply toward oxaloacetate and oxalic acid.
+    annotation_note: Grounded to the Pichia kudriavzevii CBS 573 reference-proteome entry UniProtKB:A0A1V2LFH0 (UP000249293, NCBITaxon:4909; locus C5L36_0A06840) corresponding to the endogenous pyruvate kinase (JL09_g4285) tested as an overexpression candidate in strain JL02.
+    evidence:
+    - source_ref: lu2026
+      supports: partial
+      explanation: Lu et al. (2026) evaluated overexpression of endogenous I. orientalis pyruvate kinase (JL09_g4285) versus heterologous S. cerevisiae PYK1 in strain JL02; S. cerevisiae PYK1 was selected for strain JL03/JL04 after achieving higher oxalic acid titer (5.95 g/L in shake flasks).
+    - source_ref: lu2026_supplement
+      supports: partial
+      explanation: Supplementary Table 1 and Supplementary Fig. 5 document evaluation of endogenous I. orientalis PYK1 (JL09_g4285) alongside S. cerevisiae PYK1 in strain JL02.
   - uniprot_accession: UniProtKB:A8W1U0
     entry_name: A8W1U0_PICKU
     protein_name: Glycerol-3-phosphate dehydrogenase [NAD(+)]
@@ -102,7 +112,11 @@ mechanisms:
     - EC:1.1.1.8
     interpro_ids:
     - InterPro:IPR006109
+    - InterPro:IPR006168
+    - InterPro:IPR008927
     - InterPro:IPR011128
+    - InterPro:IPR013328
+    - InterPro:IPR036291
     pfam_ids:
     - Pfam:PF01210
     - Pfam:PF07479
@@ -115,6 +129,78 @@ mechanisms:
     - source_ref: lu2026_supplement
       supports: support
       explanation: Supplementary Table 1 and Supplementary Fig. 4 document the Δgpd knockout genotype in engineered strains JL02, JL03, and JL04.
+  - uniprot_accession: UniProtKB:A0A2U9RB90
+    entry_name: A0A2U9RB90_PICKU
+    protein_name: Glycerol-3-phosphate dehydrogenase [NAD(+)]
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:4909
+      label: Pichia kudriavzevii
+    reference_proteome_id: UP000249293
+    ec_numbers:
+    - EC:1.1.1.8
+    interpro_ids:
+    - InterPro:IPR006109
+    - InterPro:IPR006168
+    - InterPro:IPR008927
+    - InterPro:IPR011128
+    - InterPro:IPR013328
+    - InterPro:IPR017751
+    - InterPro:IPR036291
+    pfam_ids:
+    - Pfam:PF01210
+    - Pfam:PF07479
+    functional_role: Reference-proteome endogenous NAD-dependent glycerol-3-phosphate dehydrogenase (EC 1.1.1.8; locus C5L36_0E02100) deleted in Issatchenkia orientalis (Pichia kudriavzevii) strain JL02 (and retained in JL04) to abolish glycerol byproduct accumulation (~12.0 g/L in parental JL01) during fed-batch oxalic-acid fermentation.
+    annotation_note: Grounded to the Pichia kudriavzevii CBS 573 reference-proteome entry UniProtKB:A0A2U9RB90 (UP000249293, NCBITaxon:4909; locus C5L36_0E02100) alongside species-level UniProtKB:A8W1U0 (gene symbol GPD), corresponding to the endogenous GPD locus (JL09_g1506 in strain SD108) deleted in strains JL02-JL04.
+    evidence:
+    - source_ref: lu2026
+      supports: support
+      explanation: Lu et al. (2026), Section 'Metabolic engineering of I. orientalis for oxalic acid production' and Fig. 2c, knocked out the GPD gene in strain JL01 to generate strain JL02 (ancestor of JL04), eliminating detectable glycerol byproduct accumulation while maintaining 14.72 g/L oxalic acid.
+    - source_ref: lu2026_supplement
+      supports: support
+      explanation: Supplementary Table 1 and Supplementary Fig. 4 document the Δgpd knockout genotype in engineered strains JL02, JL03, and JL04.
+  - uniprot_accession: UniProtKB:A0A1V2LT98
+    entry_name: A0A1V2LT98_PICKU
+    protein_name: Pyruvate carboxylase
+    gene_symbol: PYC
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:4909
+      label: Pichia kudriavzevii
+    reference_proteome_id: UP000249293
+    ec_numbers:
+    - EC:6.4.1.1
+    interpro_ids:
+    - InterPro:IPR000089
+    - InterPro:IPR000891
+    - InterPro:IPR003379
+    - InterPro:IPR005479
+    - InterPro:IPR005481
+    - InterPro:IPR005482
+    - InterPro:IPR005930
+    - InterPro:IPR011053
+    - InterPro:IPR011054
+    - InterPro:IPR011761
+    - InterPro:IPR011764
+    - InterPro:IPR013785
+    - InterPro:IPR016185
+    - InterPro:IPR055268
+    pfam_ids:
+    - Pfam:PF00289
+    - Pfam:PF00364
+    - Pfam:PF00682
+    - Pfam:PF02436
+    - Pfam:PF02785
+    - Pfam:PF02786
+    functional_role: Endogenous cytosolic pyruvate carboxylase (EC 6.4.1.1; locus C5L36_0A02450 / B5S52_g3644) that carboxylates pyruvate with bicarbonate and ATP to replenish cytosolic oxaloacetate for OahA-catalyzed oxalate synthesis in I. orientalis JL03 and JL04.
+    annotation_note: Grounded to Pichia kudriavzevii (Issatchenkia orientalis) CBS 573 reference-proteome pyruvate carboxylase UniProtKB:A0A1V2LT98 (UP000249293, NCBITaxon:4909; locus C5L36_0A02450 / B5S52_g3644), corresponding to the endogenous PYC locus (JL09_g4901 in strain SD108) overexpressed in strains JL03 and JL04.
+    evidence:
+    - source_ref: lu2026
+      supports: support
+      explanation: Lu et al. (2026), Section 'Metabolic engineering of I. orientalis for oxalic acid production' and Fig. 2, integrated two copies of endogenous pyruvate carboxylase (PYC) in strain OA_Pcoah_PYC (retained in JL01-JL04) to increase conversion of pyruvate to oxaloacetate and raise oxalic acid titer.
+    - source_ref: lu2026_supplement
+      supports: support
+      explanation: Supplementary Table 1 and Supplementary Fig. 1 document integration of two copies of endogenous I. orientalis PYC into the landing-pad chromosome of engineered strain JL04.
   evidence:
   - source_ref: lu2026
     supports: support
@@ -137,7 +223,8 @@ mechanisms:
 causal_graphs:
 - id: engineered_kudriavzevii_jl04_oxalate_ree_precipitation_graph
   name: Engineered Issatchenkia orientalis (Pichia kudriavzevii) JL04 bio-oxalic acid biosynthesis and REE precipitation from allanite leachate
-  description: Causal pathway linking metabolic engineering of Issatchenkia orientalis (Pichia kudriavzevii) SD108 strain JL04 (heterologous S. cerevisiae PYK1 overexpression, endogenous GPD deletion, endogenous PYC overexpression, heterologous P. chrysogenum Pcoah oxaloacetate hydrolase, and H. brasiliensis HbOT2 transporter) to extracellular oxalic-acid accumulation in culture supernatant and selective rare-earth oxalate precipitation from chemically prepared Halleck Creek allanite leachate.
+  description: Causal pathway for engineered Issatchenkia orientalis (Pichia kudriavzevii) strain JL04 in a two-step bioprocess where fed-batch glucose fermentation produces oxalic acid (19.0 g/L at 0.16 g/L/h) that selectively precipitates rare earth elements from acidic allanite leachate (Lu et al. 2026). Strain JL04 combines heterologous expression of Aspergillus niger oxaloacetate acetylhydrolase oahA (An10g00820; UniProtKB:A2QUT2) and the A. niger dicarboxylate-tricarboxylate carrier dtcA (An08g05400; UniProtKB:A2QPZ7) with overexpression of Saccharomyces cerevisiae pyruvate kinase PYK1 (CDC19; UniProtKB:P00549, selected over evaluated endogenous I. orientalis PYK1 JL09_g4285 / C5L36_0A06840, UniProtKB:A0A1V2LFH0) and endogenous I. orientalis pyruvate carboxylase PYC (JL09_g4901 / C5L36_0A02450; UniProtKB:A0A1V2LT98 in reference proteome UP000249293) plus deletion of endogenous glycerol-3-phosphate dehydrogenase GPD (JL09_g1506 / C5L36_0E02100; UniProtKB:A8W1U0 and reference-proteome
+    UniProtKB:A0A2U9RB90).
   scope: RECORD_SPECIFIC_MECHANISM
   mechanism_ref: yeast_supernatant_oxalate_precipitation
   nodes:
@@ -145,7 +232,7 @@ causal_graphs:
     label: Heterologous S. cerevisiae pyruvate kinase PYK1 (CDC19)
     node_type: GENE_OR_PROTEIN
     gene_symbol: CDC19
-    description: Heterologous Saccharomyces cerevisiae pyruvate kinase 1 overexpressed in I. orientalis JL03/JL04 to increase glycolytic flux from phosphoenolpyruvate to pyruvate.
+    description: Overexpression of heterologous Saccharomyces cerevisiae pyruvate kinase PYK1 (CDC19 / YAL038W, EC 2.7.1.40; UniProtKB:P00549) in I. orientalis JL03/JL04 (selected after evaluating heterologous S. cerevisiae PYK1 against endogenous I. orientalis PYK1 JL09_g4285 / C5L36_0A06840, UniProtKB:A0A1V2LFH0, in strain JL02) to strengthen glycolytic conversion of phosphoenolpyruvate to pyruvate.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:P00549
@@ -161,8 +248,14 @@ causal_graphs:
       - EC:2.7.1.40
       interpro_ids:
       - InterPro:IPR001697
+      - InterPro:IPR011037
       - InterPro:IPR015793
-      - InterPro:IPR015794
+      - InterPro:IPR015795
+      - InterPro:IPR015806
+      - InterPro:IPR015813
+      - InterPro:IPR018209
+      - InterPro:IPR036918
+      - InterPro:IPR040442
       pfam_ids:
       - Pfam:PF00224
       - Pfam:PF02887
@@ -175,11 +268,43 @@ causal_graphs:
       - source_ref: lu2026_supplement
         supports: support
         explanation: Supplementary Table 1 and Supplementary Fig. 5 document integration of heterologous S. cerevisiae PYK1 in strains JL03 and JL04.
+    - uniprot_accession: UniProtKB:A0A1V2LFH0
+      entry_name: A0A1V2LFH0_PICKU
+      protein_name: Pyruvate kinase
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:4909
+        label: Pichia kudriavzevii
+      reference_proteome_id: UP000249293
+      ec_numbers:
+      - EC:2.7.1.40
+      interpro_ids:
+      - InterPro:IPR001697
+      - InterPro:IPR011037
+      - InterPro:IPR015793
+      - InterPro:IPR015795
+      - InterPro:IPR015806
+      - InterPro:IPR015813
+      - InterPro:IPR018209
+      - InterPro:IPR036918
+      - InterPro:IPR040442
+      pfam_ids:
+      - Pfam:PF00224
+      - Pfam:PF02887
+      functional_role: Endogenous Pichia kudriavzevii (Issatchenkia orientalis) pyruvate kinase (EC 2.7.1.40; locus C5L36_0A06840 / JL09_g4285) evaluated alongside heterologous S. cerevisiae PYK1 in strain JL02 to increase glycolytic pyruvate supply toward oxaloacetate and oxalic acid.
+      annotation_note: Grounded to the Pichia kudriavzevii CBS 573 reference-proteome entry UniProtKB:A0A1V2LFH0 (UP000249293, NCBITaxon:4909; locus C5L36_0A06840) corresponding to the endogenous pyruvate kinase (JL09_g4285) tested as an overexpression candidate in strain JL02.
+      evidence:
+      - source_ref: lu2026
+        supports: partial
+        explanation: Lu et al. (2026) evaluated overexpression of endogenous I. orientalis pyruvate kinase (JL09_g4285) versus heterologous S. cerevisiae PYK1 in strain JL02; S. cerevisiae PYK1 was selected for strain JL03/JL04 after achieving higher oxalic acid titer (5.95 g/L in shake flasks).
+      - source_ref: lu2026_supplement
+        supports: partial
+        explanation: Supplementary Table 1 and Supplementary Fig. 5 document evaluation of endogenous I. orientalis PYK1 (JL09_g4285) alongside S. cerevisiae PYK1 in strain JL02.
   - id: gpd_glycerol_phosphate_dehydrogenase_knockout
     label: Endogenous glycerol-3-phosphate dehydrogenase GPD deletion (Δgpd)
     node_type: GENE_OR_PROTEIN
     gene_symbol: GPD
-    description: Endogenous Pichia kudriavzevii glycerol-3-phosphate dehydrogenase gene deleted in JL02/JL04 to eliminate competing glycerol byproduct synthesis.
+    description: Homozygous deletion of endogenous I. orientalis (P. kudriavzevii) NAD-dependent glycerol-3-phosphate dehydrogenase GPD (locus JL09_g1506; UniProtKB:A8W1U0 and reference-proteome locus C5L36_0E02100, UniProtKB:A0A2U9RB90, EC 1.1.1.8) in strains JL02-JL04 to eliminate glycerol byproduct formation (~12.0 g/L in parental strain JL01) and redirect glycolytic carbon flux toward pyruvate, oxaloacetate, and oxalic acid.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A8W1U0
@@ -194,7 +319,11 @@ causal_graphs:
       - EC:1.1.1.8
       interpro_ids:
       - InterPro:IPR006109
+      - InterPro:IPR006168
+      - InterPro:IPR008927
       - InterPro:IPR011128
+      - InterPro:IPR013328
+      - InterPro:IPR036291
       pfam_ids:
       - Pfam:PF01210
       - Pfam:PF07479
@@ -207,11 +336,41 @@ causal_graphs:
       - source_ref: lu2026_supplement
         supports: support
         explanation: Supplementary Table 1 and Supplementary Fig. 4 document the Δgpd knockout genotype in engineered strains JL02, JL03, and JL04.
+    - uniprot_accession: UniProtKB:A0A2U9RB90
+      entry_name: A0A2U9RB90_PICKU
+      protein_name: Glycerol-3-phosphate dehydrogenase [NAD(+)]
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:4909
+        label: Pichia kudriavzevii
+      reference_proteome_id: UP000249293
+      ec_numbers:
+      - EC:1.1.1.8
+      interpro_ids:
+      - InterPro:IPR006109
+      - InterPro:IPR006168
+      - InterPro:IPR008927
+      - InterPro:IPR011128
+      - InterPro:IPR013328
+      - InterPro:IPR017751
+      - InterPro:IPR036291
+      pfam_ids:
+      - Pfam:PF01210
+      - Pfam:PF07479
+      functional_role: Reference-proteome endogenous NAD-dependent glycerol-3-phosphate dehydrogenase (EC 1.1.1.8; locus C5L36_0E02100) deleted in Issatchenkia orientalis (Pichia kudriavzevii) strain JL02 (and retained in JL04) to abolish glycerol byproduct accumulation (~12.0 g/L in parental JL01) during fed-batch oxalic-acid fermentation.
+      annotation_note: Grounded to the Pichia kudriavzevii CBS 573 reference-proteome entry UniProtKB:A0A2U9RB90 (UP000249293, NCBITaxon:4909; locus C5L36_0E02100) alongside species-level UniProtKB:A8W1U0 (gene symbol GPD), corresponding to the endogenous GPD locus (JL09_g1506 in strain SD108) deleted in strains JL02-JL04.
+      evidence:
+      - source_ref: lu2026
+        supports: support
+        explanation: Lu et al. (2026), Section 'Metabolic engineering of I. orientalis for oxalic acid production' and Fig. 2c, knocked out the GPD gene in strain JL01 to generate strain JL02 (ancestor of JL04), eliminating detectable glycerol byproduct accumulation while maintaining 14.72 g/L oxalic acid.
+      - source_ref: lu2026_supplement
+        supports: support
+        explanation: Supplementary Table 1 and Supplementary Fig. 4 document the Δgpd knockout genotype in engineered strains JL02, JL03, and JL04.
   - id: pyc_pyruvate_carboxylase
     label: Endogenous pyruvate carboxylase PYC (2x copy integration, with Pcoah and HbOT2)
     node_type: GENE_OR_PROTEIN
     gene_symbol: PYC
-    description: Endogenous Pichia kudriavzevii pyruvate carboxylase overexpressed at two copies alongside heterologous P. chrysogenum Pcoah (3x) and H. brasiliensis HbOT2 (1x) and Δg4567 (OCA5 homolog) to convert pyruvate via oxaloacetate into secreted oxalic acid.
+    description: Overexpression of endogenous I. orientalis (P. kudriavzevii) cytosolic pyruvate carboxylase PYC (locus JL09_g4901; reference-proteome locus C5L36_0A02450 / B5S52_g3644, EC 6.4.1.1) in strain JL03/JL04 to carboxylate pyruvate to cytosolic oxaloacetate.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A0A1V2LT98
@@ -222,19 +381,33 @@ causal_graphs:
       target_organism:
         id: NCBITaxon:4909
         label: Pichia kudriavzevii
-      reference_proteome_id: UP000249646
+      reference_proteome_id: UP000249293
       ec_numbers:
       - EC:6.4.1.1
       interpro_ids:
+      - InterPro:IPR000089
       - InterPro:IPR000891
+      - InterPro:IPR003379
+      - InterPro:IPR005479
+      - InterPro:IPR005481
+      - InterPro:IPR005482
       - InterPro:IPR005930
+      - InterPro:IPR011053
+      - InterPro:IPR011054
       - InterPro:IPR011761
+      - InterPro:IPR011764
+      - InterPro:IPR013785
+      - InterPro:IPR016185
+      - InterPro:IPR055268
       pfam_ids:
+      - Pfam:PF00289
+      - Pfam:PF00364
       - Pfam:PF00682
       - Pfam:PF02436
+      - Pfam:PF02785
       - Pfam:PF02786
-      functional_role: Endogenous pyruvate carboxylase (EC 6.4.1.1; locus B5S52_g3644) overexpressed at two integrated copies in Issatchenkia orientalis (Pichia kudriavzevii) strain OA_Pcoah_PYC and retained in strain JL04 to convert pyruvate into oxaloacetate, the immediate substrate cleaved to oxalic acid.
-      annotation_note: Grounded to reference-proteome entry UniProtKB:A0A1V2LT98 (UP000249646) for Pichia kudriavzevii (heterotypic synonym Issatchenkia orientalis; NCBITaxon:4909). Strain JL04 also expresses three codon-optimized copies of heterologous Penicillium chrysogenum oxaloacetate hydrolase Pcoah (omitted as a separate ProteinExample because UniProtKB TrEMBL auto-annotates Penicillium rubens Pc22g24830 / UniProtKB:B6HR98 as Isocitrate lyase EC 4.1.3.1 via PROSITE-ProRule PRU10119 on PF13714) and one copy of Hevea brasiliensis oxalate transporter HbOT2.
+      functional_role: Endogenous cytosolic pyruvate carboxylase (EC 6.4.1.1; locus C5L36_0A02450 / B5S52_g3644) that carboxylates pyruvate with bicarbonate and ATP to replenish cytosolic oxaloacetate for OahA-catalyzed oxalate synthesis in I. orientalis JL03 and JL04.
+      annotation_note: Grounded to Pichia kudriavzevii (Issatchenkia orientalis) CBS 573 reference-proteome pyruvate carboxylase UniProtKB:A0A1V2LT98 (UP000249293, NCBITaxon:4909; locus C5L36_0A02450 / B5S52_g3644), corresponding to the endogenous PYC locus (JL09_g4901 in strain SD108) overexpressed in strains JL03 and JL04.
       evidence:
       - source_ref: lu2026
         supports: support
@@ -312,6 +485,11 @@ curation_history:
   curator: claude
   action: edit
   summary: Added verified UniProtKB protein examples (PYC UniProtKB:A0A1V2LT98, PYK1/CDC19 UniProtKB:P00549, GPD UniProtKB:A8W1U0) and engineered JL04 causal graph to allanite-leachate.yaml.
+- timestamp: '2026-10-31T11:01:51Z'
+  curator: marcin
+  action: edit
+  summary: Add Pichia kudriavzevii reference-proteome PYK1 (UniProtKB:A0A1V2LFH0) and GPD (UniProtKB:A0A2U9RB90) protein examples and synchronize live UniProtKB cross-references
 history_refs:
 - history/records/allanite-leachate/2026-10-12T100026Z-codex-3c88ef.yaml
 - history/records/allanite-leachate/2026-10-22T104028Z-claude-d3cbaa.yaml
+- history/records/allanite-leachate/2026-10-31T110151Z-marcin-ae3cf1.yaml

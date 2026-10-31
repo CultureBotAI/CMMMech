@@ -1,0 +1,225 @@
+schema_version: 1.0.0
+review_id: 20261031T110700Z-allanite-concentrate-cycle6-stage3-protein-examples
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 6 Stage 3 protein_examples review of Allanite concentrate (cmmmech:allanite-concentrate)
+started_at: '2026-10-31T11:02:00Z'
+finished_at: '2026-10-31T11:07:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle6-stage3-protein-examples-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md verifying
+    Cycle 6 Stage 3 protein_examples curation and live UniProtKB cross-reference synchronization in data/records/allanite-concentrate.yaml
+    (SHA-256 ba71a3f46b79fb93a742dcf7449344897cf9e6761d3e1d7750b819ae219fdc54) against live UniProtKB
+    REST API metadata and cited primary source(s) schmitz2025.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: a9115e6c42e82a2294937959035366cd22788704
+  state: working_tree
+  inputs:
+  - path: data/records/allanite-concentrate.yaml
+    sha256: ba71a3f46b79fb93a742dcf7449344897cf9e6761d3e1d7750b819ae219fdc54
+    role: target
+  - path: history/records/allanite-concentrate/2026-10-31T110150Z-marcin-5ba57f.yaml
+    sha256: d4fa896e8864e8bcc9aadb6f68d0abaa983272ce70f67458af43e6edcf74272a
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:allanite-concentrate
+  path: data/records/allanite-concentrate.yaml
+  label: Allanite concentrate
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/allanite-concentrate.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/allanite-concentrate/2026-10-31T110150Z-marcin-5ba57f.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 6 Stage 3 protein_examples review of data/records/allanite-concentrate.yaml (SHA-256
+    ba71a3f46b79fb93a742dcf7449344897cf9e6761d3e1d7750b819ae219fdc54) and its canonical EDIT history sidecar
+    (history/records/allanite-concentrate/2026-10-31T110150Z-marcin-5ba57f.yaml) verifying UniProtKB accession
+    identity, reference-proteome grounding, InterPro/Pfam cross-reference correspondence, node/mechanism
+    parity, and primary-source evidence fidelity across causal_graph ''gluconobacter_allanite_bioleaching_graph''
+    (mechanism_ref: engineered_gluconobacter_bioleaching, 7 nodes / 6 edges; pstc_phosphate_permease:
+    [UniProtKB:Q5FT13 (pstC, Q5FT13_GLUOX, UP000006375)]; psts_phosphate_binding: [UniProtKB:Q5FTI1 (pstS,
+    Q5FTI1_GLUOX, UP000006375), UniProtKB:Q5FSF4 (pstS, Q5FSF4_GLUOX, UP000006375)]; pqqc_synthase: [UniProtKB:Q9L3B2
+    (pqqC, PQQC_GLUOX, UP000006375)]; gdh_dehydrogenase: [UniProtKB:P27175 (gdh, DHG_GLUOX, UP000006375)]).'
+  selection: Cycle 6 Stage 3 protein_examples curation for cmmmech:allanite-concentrate
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:allanite-concentrate
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/allanite-concentrate.yaml
+  locator: Working-tree record data/records/allanite-concentrate.yaml (causal_graphs and mechanisms[].protein_examples)
+  accessed_at: '2026-10-31T11:06:30Z'
+  support: supports
+  summary: 'Curated data/records/allanite-concentrate.yaml (SHA-256 ba71a3f46b79fb93a742dcf7449344897cf9e6761d3e1d7750b819ae219fdc54)
+    with causal_graph ''gluconobacter_allanite_bioleaching_graph'' (mechanism_ref: engineered_gluconobacter_bioleaching,
+    7 nodes / 6 edges; pstc_phosphate_permease: [UniProtKB:Q5FT13 (pstC, Q5FT13_GLUOX, UP000006375)];
+    psts_phosphate_binding: [UniProtKB:Q5FTI1 (pstS, Q5FTI1_GLUOX, UP000006375), UniProtKB:Q5FSF4 (pstS,
+    Q5FSF4_GLUOX, UP000006375)]; pqqc_synthase: [UniProtKB:Q9L3B2 (pqqC, PQQC_GLUOX, UP000006375)]; gdh_dehydrogenase:
+    [UniProtKB:P27175 (gdh, DHG_GLUOX, UP000006375)]), achieving 100% parity between mechanisms[].protein_examples
+    and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats
+    from primary source(s) schmitz2025.'
+  snapshot_sha256: ba71a3f46b79fb93a742dcf7449344897cf9e6761d3e1d7750b819ae219fdc54
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://doi.org/10.1038/s42003-025-08109-5
+  locator: 'schmitz2025: Schmitz AM et al. (2025). High efficiency rare earth element bioleaching with
+    systems biology guided engineering of Gluconobacter oxydans. Communications Biology 8:815. DOI 10.1038/s42003-025-08109-5;
+    complete original eight-page article, Figures 1-3, Results, Discussion and Materials and methods.
+    (https://doi.org/10.1038/s42003-025-08109-5)'
+  accessed_at: '2026-10-31T11:06:30Z'
+  support: supports
+  summary: 'Live-verified UniProtKB reference-proteome and domain cross-reference grounding across UniProtKB:Q5FT13
+    (Q5FT13_GLUOX, Phosphate transport system permease protein, gene_symbol: pstC, TREMBL, NCBITaxon:290633
+    Gluconobacter oxydans 621H, UP000006375, interpro: [InterPro:IPR000515, InterPro:IPR035906, InterPro:IPR011864,
+    InterPro:IPR051124], pfam: [Pfam:PF00528]); UniProtKB:Q5FTI1 (Q5FTI1_GLUOX, Phosphate-binding protein
+    PstS, gene_symbol: pstS, TREMBL, NCBITaxon:290633 Gluconobacter oxydans 621H, UP000006375, interpro:
+    [InterPro:IPR005673, InterPro:IPR024370, InterPro:IPR050962], pfam: [Pfam:PF12849]); UniProtKB:Q5FSF4
+    (Q5FSF4_GLUOX, Phosphate-binding protein PstS, gene_symbol: pstS, TREMBL, NCBITaxon:290633 Gluconobacter
+    oxydans 621H, UP000006375, interpro: [InterPro:IPR005673, InterPro:IPR024370, InterPro:IPR050962],
+    pfam: [Pfam:PF12849]); UniProtKB:Q9L3B2 (PQQC_GLUOX, Pyrroloquinoline-quinone synthase, gene_symbol:
+    pqqC, SWISS_PROT, NCBITaxon:290633 Gluconobacter oxydans 621H, UP000006375, interpro: [InterPro:IPR016084,
+    InterPro:IPR011845, InterPro:IPR039068, InterPro:IPR004305], pfam: [Pfam:PF03070]); UniProtKB:P27175
+    (DHG_GLUOX, Quinoprotein glucose dehydrogenase, gene_symbol: gdh, SWISS_PROT, NCBITaxon:290633 Gluconobacter
+    oxydans 621H, UP000006375, interpro: [InterPro:IPR018391, InterPro:IPR017511, InterPro:IPR002372,
+    InterPro:IPR011047, InterPro:IPR001479], pfam: [Pfam:PF01011]). Primary mechanism source(s) (schmitz2025)
+    support the stated organism, substrate, and partial/direct support levels on all ProteinExample evidence
+    items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/allanite-concentrate/2026-10-31T110150Z-marcin-5ba57f.yaml
+  locator: Canonical EDIT history sidecar history/records/allanite-concentrate/2026-10-31T110150Z-marcin-5ba57f.yaml
+  accessed_at: '2026-10-31T11:06:30Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/allanite-concentrate/2026-10-31T110150Z-marcin-5ba57f.yaml
+    (SHA-256 d4fa896e8864e8bcc9aadb6f68d0abaa983272ce70f67458af43e6edcf74272a): Add second Gluconobacter
+    oxydans 621H reference-proteome PstS paralog (UniProtKB:Q5FSF4, locus GOX0920) to psts_phosphate_binding
+    — Cycle 6 Stage 3 protein_examples curation: added the second Gluconobacter oxydans 621H reference-proteome
+    (UP000006375) periplasmic phosphate-binding protein PstS paralog UniProtKB:Q5FSF4 (Q5FSF4_GLUOX, locus
+    GOX0920) alongside GOX0537 (UniProtKB:Q5FTI1) on node psts_phosphate_binding and mirrored both paralogs
+    onto mechanism engineered_gluconobacter_bioleaching, because the engineered strain B58 delta-pstS
+    source does not resolve which 621H pstS locus corresponds to the deleted allele.'
+  snapshot_sha256: d4fa896e8864e8bcc9aadb6f68d0abaa983272ce70f67458af43e6edcf74272a
+- evidence_id: validation
+  kind: validation
+  reference: data/records/allanite-concentrate.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and validate-history --base
+    main
+  accessed_at: '2026-10-31T11:06:30Z'
+  support: supports
+  summary: data/records/allanite-concentrate.yaml and history/records/allanite-concentrate/2026-10-31T110150Z-marcin-5ba57f.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with 0 errors.
+  snapshot_sha256: ba71a3f46b79fb93a742dcf7449344897cf9e6761d3e1d7750b819ae219fdc54
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 673 record(s); 0 failed.
+  target_ids:
+  - cmmmech:allanite-concentrate
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:allanite-concentrate
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: protein_examples_and_uniprot_grounding
+  area: graph
+  topic: 'Verification of protein_examples UniProtKB accession identity, InterPro/Pfam cross-references,
+    and node/mechanism parity across causal_graph ''gluconobacter_allanite_bioleaching_graph'' (mechanism_ref:
+    engineered_gluconobacter_bioleaching, 7 nodes / 6 edges; pstc_phosphate_permease: [UniProtKB:Q5FT13
+    (pstC, Q5FT13_GLUOX, UP000006375)]; psts_phosphate_binding: [UniProtKB:Q5FTI1 (pstS, Q5FTI1_GLUOX,
+    UP000006375), UniProtKB:Q5FSF4 (pstS, Q5FSF4_GLUOX, UP000006375)]; pqqc_synthase: [UniProtKB:Q9L3B2
+    (pqqC, PQQC_GLUOX, UP000006375)]; gdh_dehydrogenase: [UniProtKB:P27175 (gdh, DHG_GLUOX, UP000006375)])'
+  outcome: supported
+  summary: 'Curated data/records/allanite-concentrate.yaml (SHA-256 ba71a3f46b79fb93a742dcf7449344897cf9e6761d3e1d7750b819ae219fdc54)
+    with causal_graph ''gluconobacter_allanite_bioleaching_graph'' (mechanism_ref: engineered_gluconobacter_bioleaching,
+    7 nodes / 6 edges; pstc_phosphate_permease: [UniProtKB:Q5FT13 (pstC, Q5FT13_GLUOX, UP000006375)];
+    psts_phosphate_binding: [UniProtKB:Q5FTI1 (pstS, Q5FTI1_GLUOX, UP000006375), UniProtKB:Q5FSF4 (pstS,
+    Q5FSF4_GLUOX, UP000006375)]; pqqc_synthase: [UniProtKB:Q9L3B2 (pqqC, PQQC_GLUOX, UP000006375)]; gdh_dehydrogenase:
+    [UniProtKB:P27175 (gdh, DHG_GLUOX, UP000006375)]), achieving 100% parity between mechanisms[].protein_examples
+    and causal_graphs[].nodes[].protein_examples and live-verifying UniProtKB metadata across UniProtKB:Q5FT13
+    (Q5FT13_GLUOX, Phosphate transport system permease protein, gene_symbol: pstC, TREMBL, NCBITaxon:290633
+    Gluconobacter oxydans 621H, UP000006375, interpro: [InterPro:IPR000515, InterPro:IPR035906, InterPro:IPR011864,
+    InterPro:IPR051124], pfam: [Pfam:PF00528]); UniProtKB:Q5FTI1 (Q5FTI1_GLUOX, Phosphate-binding protein
+    PstS, gene_symbol: pstS, TREMBL, NCBITaxon:290633 Gluconobacter oxydans 621H, UP000006375, interpro:
+    [InterPro:IPR005673, InterPro:IPR024370, InterPro:IPR050962], pfam: [Pfam:PF12849]); UniProtKB:Q5FSF4
+    (Q5FSF4_GLUOX, Phosphate-binding protein PstS, gene_symbol: pstS, TREMBL, NCBITaxon:290633 Gluconobacter
+    oxydans 621H, UP000006375, interpro: [InterPro:IPR005673, InterPro:IPR024370, InterPro:IPR050962],
+    pfam: [Pfam:PF12849]); UniProtKB:Q9L3B2 (PQQC_GLUOX, Pyrroloquinoline-quinone synthase, gene_symbol:
+    pqqC, SWISS_PROT, NCBITaxon:290633 Gluconobacter oxydans 621H, UP000006375, interpro: [InterPro:IPR016084,
+    InterPro:IPR011845, InterPro:IPR039068, InterPro:IPR004305], pfam: [Pfam:PF03070]); UniProtKB:P27175
+    (DHG_GLUOX, Quinoprotein glucose dehydrogenase, gene_symbol: gdh, SWISS_PROT, NCBITaxon:290633 Gluconobacter
+    oxydans 621H, UP000006375, interpro: [InterPro:IPR018391, InterPro:IPR017511, InterPro:IPR002372,
+    InterPro:IPR011047, InterPro:IPR001479], pfam: [Pfam:PF01011]).'
+  target_ids:
+  - cmmmech:allanite-concentrate
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: 'data/records/allanite-concentrate.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar history/records/allanite-concentrate/2026-10-31T110150Z-marcin-5ba57f.yaml
+    (SHA-256 d4fa896e8864e8bcc9aadb6f68d0abaa983272ce70f67458af43e6edcf74272a: Add second Gluconobacter
+    oxydans 621H reference-proteome PstS paralog (UniProtKB:Q5FSF4, locus GOX0920) to psts_phosphate_binding)
+    and passing all LinkML and history validation gates.'
+  target_ids:
+  - cmmmech:allanite-concentrate
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Allanite concentrate (cmmmech:allanite-concentrate) passes Cycle 6 Stage 3 protein_examples
+  review (scientific_review: true) at SHA-256 ba71a3f46b79fb93a742dcf7449344897cf9e6761d3e1d7750b819ae219fdc54:
+  Add second Gluconobacter oxydans 621H reference-proteome PstS paralog (UniProtKB:Q5FSF4, locus GOX0920)
+  to psts_phosphate_binding. Live-verified UniProtKB metadata across UniProtKB:Q5FT13 (Q5FT13_GLUOX, Phosphate
+  transport system permease protein, gene_symbol: pstC, TREMBL, NCBITaxon:290633 Gluconobacter oxydans
+  621H, UP000006375, interpro: [InterPro:IPR000515, InterPro:IPR035906, InterPro:IPR011864, InterPro:IPR051124],
+  pfam: [Pfam:PF00528]); UniProtKB:Q5FTI1 (Q5FTI1_GLUOX, Phosphate-binding protein PstS, gene_symbol:
+  pstS, TREMBL, NCBITaxon:290633 Gluconobacter oxydans 621H, UP000006375, interpro: [InterPro:IPR005673,
+  InterPro:IPR024370, InterPro:IPR050962], pfam: [Pfam:PF12849]); UniProtKB:Q5FSF4 (Q5FSF4_GLUOX, Phosphate-binding
+  protein PstS, gene_symbol: pstS, TREMBL, NCBITaxon:290633 Gluconobacter oxydans 621H, UP000006375, interpro:
+  [InterPro:IPR005673, InterPro:IPR024370, InterPro:IPR050962], pfam: [Pfam:PF12849]); UniProtKB:Q9L3B2
+  (PQQC_GLUOX, Pyrroloquinoline-quinone synthase, gene_symbol: pqqC, SWISS_PROT, NCBITaxon:290633 Gluconobacter
+  oxydans 621H, UP000006375, interpro: [InterPro:IPR016084, InterPro:IPR011845, InterPro:IPR039068, InterPro:IPR004305],
+  pfam: [Pfam:PF03070]); UniProtKB:P27175 (DHG_GLUOX, Quinoprotein glucose dehydrogenase, gene_symbol:
+  gdh, SWISS_PROT, NCBITaxon:290633 Gluconobacter oxydans 621H, UP000006375, interpro: [InterPro:IPR018391,
+  InterPro:IPR017511, InterPro:IPR002372, InterPro:IPR011047, InterPro:IPR001479], pfam: [Pfam:PF01011]).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes;
+  an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 6 Stage 3 (protein_examples) using scripts/curate_causal_graphs.py.
+related_reviews: []

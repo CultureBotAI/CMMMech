@@ -1,0 +1,212 @@
+schema_version: 1.0.0
+review_id: 20261031T110700Z-enstatite-cycle6-stage3-protein-examples
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 6 Stage 3 protein_examples review of Enstatite (cmmmech:enstatite)
+started_at: '2026-10-31T11:02:00Z'
+finished_at: '2026-10-31T11:07:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle6-stage3-protein-examples-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md verifying
+    Cycle 6 Stage 3 protein_examples curation and live UniProtKB cross-reference synchronization in data/records/enstatite.yaml
+    (SHA-256 b3fd3f1258b68a168c6f5ba7e59356b3507fd87ed51644f4f4ec3d4de2704d82) against live UniProtKB
+    REST API metadata and cited primary source(s) klug_2026.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: a9115e6c42e82a2294937959035366cd22788704
+  state: working_tree
+  inputs:
+  - path: data/records/enstatite.yaml
+    sha256: b3fd3f1258b68a168c6f5ba7e59356b3507fd87ed51644f4f4ec3d4de2704d82
+    role: target
+  - path: history/records/enstatite/2026-10-31T110150Z-marcin-ebc484.yaml
+    sha256: a579282ccb96003b900e974f3edd549cd7a8d8b9c7051be0d0cbc40c81d8d74b
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:enstatite
+  path: data/records/enstatite.yaml
+  label: Enstatite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/enstatite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/enstatite/2026-10-31T110150Z-marcin-ebc484.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 6 Stage 3 protein_examples review of data/records/enstatite.yaml (SHA-256 b3fd3f1258b68a168c6f5ba7e59356b3507fd87ed51644f4f4ec3d4de2704d82)
+    and its canonical EDIT history sidecar (history/records/enstatite/2026-10-31T110150Z-marcin-ebc484.yaml)
+    verifying UniProtKB accession identity, reference-proteome grounding, InterPro/Pfam cross-reference
+    correspondence, node/mechanism parity, and primary-source evidence fidelity across causal_graph ''gluconobacter_enstatite_bioleaching_graph''
+    (mechanism_ref: mixed_feed_enstatite_bioleaching, 6 nodes / 5 edges; psts_phosphate_binding: [UniProtKB:Q5FTI1
+    (pstS, Q5FTI1_GLUOX, UP000006375), UniProtKB:Q5FSF4 (pstS, Q5FSF4_GLUOX, UP000006375)]; pqqc_synthase:
+    [UniProtKB:Q9L3B2 (pqqC, PQQC_GLUOX, UP000006375)]; gdh_dehydrogenase: [UniProtKB:P27175 (gdh, DHG_GLUOX,
+    UP000006375)]).'
+  selection: Cycle 6 Stage 3 protein_examples curation for cmmmech:enstatite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:enstatite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/enstatite.yaml
+  locator: Working-tree record data/records/enstatite.yaml (causal_graphs and mechanisms[].protein_examples)
+  accessed_at: '2026-10-31T11:06:30Z'
+  support: supports
+  summary: 'Curated data/records/enstatite.yaml (SHA-256 b3fd3f1258b68a168c6f5ba7e59356b3507fd87ed51644f4f4ec3d4de2704d82)
+    with causal_graph ''gluconobacter_enstatite_bioleaching_graph'' (mechanism_ref: mixed_feed_enstatite_bioleaching,
+    6 nodes / 5 edges; psts_phosphate_binding: [UniProtKB:Q5FTI1 (pstS, Q5FTI1_GLUOX, UP000006375), UniProtKB:Q5FSF4
+    (pstS, Q5FSF4_GLUOX, UP000006375)]; pqqc_synthase: [UniProtKB:Q9L3B2 (pqqC, PQQC_GLUOX, UP000006375)];
+    gdh_dehydrogenase: [UniProtKB:P27175 (gdh, DHG_GLUOX, UP000006375)]), achieving 100% parity between
+    mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful
+    support levels and caveats from primary source(s) klug_2026.'
+  snapshot_sha256: b3fd3f1258b68a168c6f5ba7e59356b3507fd87ed51644f4f4ec3d4de2704d82
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41598-026-63817-0
+  locator: 'klug_2026: Klug et al. (2026). Bioleaching of olivine and enstatite with formation of Mg-oxalate
+    mediated by engineered Gluconobacter oxydans. Scientific Reports 16:25317. DOI 10.1038/s41598-026-63817-0;
+    Methods, Figures 2-6 and Discussion. (https://doi.org/10.1038/s41598-026-63817-0)'
+  accessed_at: '2026-10-31T11:06:30Z'
+  support: supports
+  summary: 'Live-verified UniProtKB reference-proteome and domain cross-reference grounding across UniProtKB:Q5FTI1
+    (Q5FTI1_GLUOX, Phosphate-binding protein PstS, gene_symbol: pstS, TREMBL, NCBITaxon:290633 Gluconobacter
+    oxydans 621H, UP000006375, interpro: [InterPro:IPR005673, InterPro:IPR024370, InterPro:IPR050962],
+    pfam: [Pfam:PF12849]); UniProtKB:Q5FSF4 (Q5FSF4_GLUOX, Phosphate-binding protein PstS, gene_symbol:
+    pstS, TREMBL, NCBITaxon:290633 Gluconobacter oxydans 621H, UP000006375, interpro: [InterPro:IPR005673,
+    InterPro:IPR024370, InterPro:IPR050962], pfam: [Pfam:PF12849]); UniProtKB:Q9L3B2 (PQQC_GLUOX, Pyrroloquinoline-quinone
+    synthase, gene_symbol: pqqC, SWISS_PROT, NCBITaxon:290633 Gluconobacter oxydans 621H, UP000006375,
+    interpro: [InterPro:IPR016084, InterPro:IPR011845, InterPro:IPR039068, InterPro:IPR004305], pfam:
+    [Pfam:PF03070]); UniProtKB:P27175 (DHG_GLUOX, Quinoprotein glucose dehydrogenase, gene_symbol: gdh,
+    SWISS_PROT, NCBITaxon:290633 Gluconobacter oxydans 621H, UP000006375, interpro: [InterPro:IPR018391,
+    InterPro:IPR017511, InterPro:IPR002372, InterPro:IPR011047, InterPro:IPR001479], pfam: [Pfam:PF01011]).
+    Primary mechanism source(s) (klug_2026) support the stated organism, substrate, and partial/direct
+    support levels on all ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/enstatite/2026-10-31T110150Z-marcin-ebc484.yaml
+  locator: Canonical EDIT history sidecar history/records/enstatite/2026-10-31T110150Z-marcin-ebc484.yaml
+  accessed_at: '2026-10-31T11:06:30Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/enstatite/2026-10-31T110150Z-marcin-ebc484.yaml
+    (SHA-256 a579282ccb96003b900e974f3edd549cd7a8d8b9c7051be0d0cbc40c81d8d74b): Add second Gluconobacter
+    oxydans 621H reference-proteome PstS paralog (UniProtKB:Q5FSF4, locus GOX0920) to psts_phosphate_binding
+    — Cycle 6 Stage 3 protein_examples curation: added the second Gluconobacter oxydans 621H reference-proteome
+    (UP000006375) periplasmic phosphate-binding protein PstS paralog UniProtKB:Q5FSF4 (Q5FSF4_GLUOX, locus
+    GOX0920) alongside GOX0537 (UniProtKB:Q5FTI1) on node psts_phosphate_binding and mirrored both paralogs
+    onto mechanism mixed_feed_enstatite_bioleaching, because the engineered strain B58 delta-pstS source
+    does not resolve which 621H pstS locus corresponds to the deleted allele.'
+  snapshot_sha256: a579282ccb96003b900e974f3edd549cd7a8d8b9c7051be0d0cbc40c81d8d74b
+- evidence_id: validation
+  kind: validation
+  reference: data/records/enstatite.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and validate-history --base
+    main
+  accessed_at: '2026-10-31T11:06:30Z'
+  support: supports
+  summary: data/records/enstatite.yaml and history/records/enstatite/2026-10-31T110150Z-marcin-ebc484.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with 0 errors.
+  snapshot_sha256: b3fd3f1258b68a168c6f5ba7e59356b3507fd87ed51644f4f4ec3d4de2704d82
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 673 record(s); 0 failed.
+  target_ids:
+  - cmmmech:enstatite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:enstatite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: protein_examples_and_uniprot_grounding
+  area: graph
+  topic: 'Verification of protein_examples UniProtKB accession identity, InterPro/Pfam cross-references,
+    and node/mechanism parity across causal_graph ''gluconobacter_enstatite_bioleaching_graph'' (mechanism_ref:
+    mixed_feed_enstatite_bioleaching, 6 nodes / 5 edges; psts_phosphate_binding: [UniProtKB:Q5FTI1 (pstS,
+    Q5FTI1_GLUOX, UP000006375), UniProtKB:Q5FSF4 (pstS, Q5FSF4_GLUOX, UP000006375)]; pqqc_synthase: [UniProtKB:Q9L3B2
+    (pqqC, PQQC_GLUOX, UP000006375)]; gdh_dehydrogenase: [UniProtKB:P27175 (gdh, DHG_GLUOX, UP000006375)])'
+  outcome: supported
+  summary: 'Curated data/records/enstatite.yaml (SHA-256 b3fd3f1258b68a168c6f5ba7e59356b3507fd87ed51644f4f4ec3d4de2704d82)
+    with causal_graph ''gluconobacter_enstatite_bioleaching_graph'' (mechanism_ref: mixed_feed_enstatite_bioleaching,
+    6 nodes / 5 edges; psts_phosphate_binding: [UniProtKB:Q5FTI1 (pstS, Q5FTI1_GLUOX, UP000006375), UniProtKB:Q5FSF4
+    (pstS, Q5FSF4_GLUOX, UP000006375)]; pqqc_synthase: [UniProtKB:Q9L3B2 (pqqC, PQQC_GLUOX, UP000006375)];
+    gdh_dehydrogenase: [UniProtKB:P27175 (gdh, DHG_GLUOX, UP000006375)]), achieving 100% parity between
+    mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and live-verifying UniProtKB
+    metadata across UniProtKB:Q5FTI1 (Q5FTI1_GLUOX, Phosphate-binding protein PstS, gene_symbol: pstS,
+    TREMBL, NCBITaxon:290633 Gluconobacter oxydans 621H, UP000006375, interpro: [InterPro:IPR005673, InterPro:IPR024370,
+    InterPro:IPR050962], pfam: [Pfam:PF12849]); UniProtKB:Q5FSF4 (Q5FSF4_GLUOX, Phosphate-binding protein
+    PstS, gene_symbol: pstS, TREMBL, NCBITaxon:290633 Gluconobacter oxydans 621H, UP000006375, interpro:
+    [InterPro:IPR005673, InterPro:IPR024370, InterPro:IPR050962], pfam: [Pfam:PF12849]); UniProtKB:Q9L3B2
+    (PQQC_GLUOX, Pyrroloquinoline-quinone synthase, gene_symbol: pqqC, SWISS_PROT, NCBITaxon:290633 Gluconobacter
+    oxydans 621H, UP000006375, interpro: [InterPro:IPR016084, InterPro:IPR011845, InterPro:IPR039068,
+    InterPro:IPR004305], pfam: [Pfam:PF03070]); UniProtKB:P27175 (DHG_GLUOX, Quinoprotein glucose dehydrogenase,
+    gene_symbol: gdh, SWISS_PROT, NCBITaxon:290633 Gluconobacter oxydans 621H, UP000006375, interpro:
+    [InterPro:IPR018391, InterPro:IPR017511, InterPro:IPR002372, InterPro:IPR011047, InterPro:IPR001479],
+    pfam: [Pfam:PF01011]).'
+  target_ids:
+  - cmmmech:enstatite
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: 'data/records/enstatite.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar history/records/enstatite/2026-10-31T110150Z-marcin-ebc484.yaml
+    (SHA-256 a579282ccb96003b900e974f3edd549cd7a8d8b9c7051be0d0cbc40c81d8d74b: Add second Gluconobacter
+    oxydans 621H reference-proteome PstS paralog (UniProtKB:Q5FSF4, locus GOX0920) to psts_phosphate_binding)
+    and passing all LinkML and history validation gates.'
+  target_ids:
+  - cmmmech:enstatite
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Enstatite (cmmmech:enstatite) passes Cycle 6 Stage 3 protein_examples review (scientific_review:
+  true) at SHA-256 b3fd3f1258b68a168c6f5ba7e59356b3507fd87ed51644f4f4ec3d4de2704d82: Add second Gluconobacter
+  oxydans 621H reference-proteome PstS paralog (UniProtKB:Q5FSF4, locus GOX0920) to psts_phosphate_binding.
+  Live-verified UniProtKB metadata across UniProtKB:Q5FTI1 (Q5FTI1_GLUOX, Phosphate-binding protein PstS,
+  gene_symbol: pstS, TREMBL, NCBITaxon:290633 Gluconobacter oxydans 621H, UP000006375, interpro: [InterPro:IPR005673,
+  InterPro:IPR024370, InterPro:IPR050962], pfam: [Pfam:PF12849]); UniProtKB:Q5FSF4 (Q5FSF4_GLUOX, Phosphate-binding
+  protein PstS, gene_symbol: pstS, TREMBL, NCBITaxon:290633 Gluconobacter oxydans 621H, UP000006375, interpro:
+  [InterPro:IPR005673, InterPro:IPR024370, InterPro:IPR050962], pfam: [Pfam:PF12849]); UniProtKB:Q9L3B2
+  (PQQC_GLUOX, Pyrroloquinoline-quinone synthase, gene_symbol: pqqC, SWISS_PROT, NCBITaxon:290633 Gluconobacter
+  oxydans 621H, UP000006375, interpro: [InterPro:IPR016084, InterPro:IPR011845, InterPro:IPR039068, InterPro:IPR004305],
+  pfam: [Pfam:PF03070]); UniProtKB:P27175 (DHG_GLUOX, Quinoprotein glucose dehydrogenase, gene_symbol:
+  gdh, SWISS_PROT, NCBITaxon:290633 Gluconobacter oxydans 621H, UP000006375, interpro: [InterPro:IPR018391,
+  InterPro:IPR017511, InterPro:IPR002372, InterPro:IPR011047, InterPro:IPR001479], pfam: [Pfam:PF01011]).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes;
+  an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 6 Stage 3 (protein_examples) using scripts/curate_causal_graphs.py.
+related_reviews: []
