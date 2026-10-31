@@ -26,6 +26,10 @@ sources:
   title: NCBI Taxonomy 485 - Neisseria gonorrhoeae; species, not donor strain
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=485&mode=Info
   accessed_on: '2026-10-11'
+- id: ncbi_neisseria_fa1090
+  title: NCBI Taxonomy 242231 - Neisseria gonorrhoeae FA 1090; reference-proteome strain (UP000000535)
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=242231&mode=Info
+  accessed_on: '2026-10-31'
 criticality:
 - jurisdiction: United States of America
   list_name: U.S. Department of the Interior Final List of Critical Minerals
@@ -63,6 +67,27 @@ mechanisms:
     - source_ref: alexeev_2003
       supports: partial
       explanation: Alexeev et al. (2003) prepared apo-nFbp with citrate and reacted it with [Hf(NTA)2]2- in 10 mM Tris (pH 7.4) to form a 1.8-A crystal structure of an oxo-bridged multinuclear Hf cluster coordinated by Tyr195 and Tyr196; residue necessity was not tested by mutagenesis.
+  - uniprot_accession: UniProtKB:Q5FA17
+    entry_name: Q5FA17_NEIG1
+    protein_name: Iron ABC transporter substrate-binding protein
+    gene_symbol: fbpA
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:242231
+      label: Neisseria gonorrhoeae FA 1090
+    reference_proteome_id: UP000000535
+    interpro_ids:
+    - InterPro:IPR026045
+    - InterPro:IPR006059
+    - InterPro:IPR006061
+    pfam_ids:
+    - Pfam:PF01547
+    functional_role: Reference-proteome periplasmic ferric-ion-binding protein FbpA (fbpA / NGO_0217, 100% sequence-identical 331-aa precursor to UniProtKB:Q50964) that binds oxo-bridged polynuclear Hf(IV) clusters within its interdomain metal-binding cleft in vitro.
+    annotation_note: Grounded to the Neisseria gonorrhoeae FA 1090 reference-proteome entry UniProtKB:Q5FA17 (UP000000535, NCBITaxon:242231; locus NGO_0217), which shares an identical 331-amino-acid sequence with species-level UniProtKB:Q50964 (NCBITaxon:485).
+    evidence:
+    - source_ref: alexeev_2003
+      supports: partial
+      explanation: Alexeev et al. (2003) prepared apo-nFbp with citrate and reacted it with [Hf(NTA)2]2- in 10 mM Tris (pH 7.4) to form a 1.8-A crystal structure of an oxo-bridged multinuclear Hf cluster coordinated by Tyr195 and Tyr196; residue necessity was not tested by mutagenesis.
   evidence:
   - source_ref: alexeev_2003
     supports: support
@@ -76,7 +101,7 @@ mechanisms:
 causal_graphs:
 - id: gonorrhoeae_fbpa_hafnium_cluster_binding_graph
   name: Neisseria gonorrhoeae FbpA periplasmic binding protein coordination of polynuclear Hf(IV) clusters
-  description: Causal pathway linking purified Neisseria gonorrhoeae ferric-ion-binding protein FbpA (UniProtKB:Q50964) to high-affinity coordination and nucleation of oxo-bridged polynuclear Hf(IV) clusters in vitro.
+  description: Causal pathway linking purified Neisseria gonorrhoeae ferric-ion-binding protein FbpA (UniProtKB:Q50964 / reference-proteome UniProtKB:Q5FA17) to high-affinity coordination and nucleation of oxo-bridged polynuclear Hf(IV) clusters in vitro.
   scope: RECORD_SPECIFIC_MECHANISM
   mechanism_ref: isolated_fbp_hafnium_cluster_binding
   nodes:
@@ -102,6 +127,27 @@ causal_graphs:
       pfam_ids:
       - Pfam:PF01547
       functional_role: Periplasmic ferric-ion-binding protein FbpA (fbpA) that binds oxo-bridged polynuclear Hf(IV) clusters (3-5 Hf atoms) within its interdomain metal-binding cleft in vitro.
+      evidence:
+      - source_ref: alexeev_2003
+        supports: partial
+        explanation: Alexeev et al. (2003) prepared apo-nFbp with citrate and reacted it with [Hf(NTA)2]2- in 10 mM Tris (pH 7.4) to form a 1.8-A crystal structure of an oxo-bridged multinuclear Hf cluster coordinated by Tyr195 and Tyr196; residue necessity was not tested by mutagenesis.
+    - uniprot_accession: UniProtKB:Q5FA17
+      entry_name: Q5FA17_NEIG1
+      protein_name: Iron ABC transporter substrate-binding protein
+      gene_symbol: fbpA
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:242231
+        label: Neisseria gonorrhoeae FA 1090
+      reference_proteome_id: UP000000535
+      interpro_ids:
+      - InterPro:IPR026045
+      - InterPro:IPR006059
+      - InterPro:IPR006061
+      pfam_ids:
+      - Pfam:PF01547
+      functional_role: Reference-proteome periplasmic ferric-ion-binding protein FbpA (fbpA / NGO_0217, 100% sequence-identical 331-aa precursor to UniProtKB:Q50964) that binds oxo-bridged polynuclear Hf(IV) clusters within its interdomain metal-binding cleft in vitro.
+      annotation_note: Grounded to the Neisseria gonorrhoeae FA 1090 reference-proteome entry UniProtKB:Q5FA17 (UP000000535, NCBITaxon:242231; locus NGO_0217), which shares an identical 331-amino-acid sequence with species-level UniProtKB:Q50964 (NCBITaxon:485).
       evidence:
       - source_ref: alexeev_2003
         supports: partial
@@ -152,8 +198,18 @@ curation_history:
   curator: claude
   action: edit
   summary: Normalized top-level key ordering in hafnium.yaml so sources precedes criticality per CANONICAL_RECORD_KEYS.
+- timestamp: '2026-10-31T11:01:50Z'
+  curator: marcin
+  action: edit
+  summary: Add Neisseria gonorrhoeae FA 1090 reference-proteome FbpA protein example (UniProtKB:Q5FA17, UP000000535) alongside species-level UniProtKB:Q50964
+- timestamp: '2026-10-31T12:05:02Z'
+  curator: marcin
+  action: edit
+  summary: Clarify UniProtKB:Q50964 entry name (Q50964_NEIGO) and review status (TREMBL) in hafnium.yaml provenance history (#895)
 history_refs:
 - history/records/hafnium/2026-10-11T075415Z-codex-3cf591.yaml
 - history/records/hafnium/2026-10-18T042750Z-antigravity-2fc5bb.yaml
 - history/records/hafnium/2026-10-21T184653Z-claude-a6e457.yaml
 - history/records/hafnium/2026-10-30T222651Z-claude-d9fec8.yaml
+- history/records/hafnium/2026-10-31T110150Z-marcin-3be82a.yaml
+- history/records/hafnium/2026-10-31T120502Z-marcin-70646e.yaml

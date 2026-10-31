@@ -1,0 +1,246 @@
+schema_version: 1.0.0
+review_id: 20261031T110700Z-allanite-leachate-cycle6-stage3-protein-examples
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 6 Stage 3 protein_examples review of Allanite-derived rare-earth leachate (cmmmech:allanite-leachate)
+started_at: '2026-10-31T11:02:00Z'
+finished_at: '2026-10-31T11:07:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle6-stage3-protein-examples-reviewer
+  kind: agent
+  model: antigravity
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md verifying
+    Cycle 6 Stage 3 protein_examples curation and live UniProtKB cross-reference synchronization in data/records/allanite-leachate.yaml
+    (SHA-256 32fe127fe3a3ce0400199d40c0545a85345b00bb0fda2a5078a539039c3a4e1c) against live UniProtKB
+    REST API metadata and cited primary source(s) lu2026, lu2026_supplement.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: a9115e6c42e82a2294937959035366cd22788704
+  state: working_tree
+  inputs:
+  - path: data/records/allanite-leachate.yaml
+    sha256: 32fe127fe3a3ce0400199d40c0545a85345b00bb0fda2a5078a539039c3a4e1c
+    role: target
+  - path: history/records/allanite-leachate/2026-10-31T110151Z-marcin-ae3cf1.yaml
+    sha256: 769c91c4249dd6345d939fd68671a1e7718ebd5aef4c798e8bf542e376cadc8b
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:allanite-leachate
+  path: data/records/allanite-leachate.yaml
+  label: Allanite-derived rare-earth leachate
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/allanite-leachate.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/allanite-leachate/2026-10-31T110151Z-marcin-ae3cf1.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 6 Stage 3 protein_examples review of data/records/allanite-leachate.yaml (SHA-256
+    32fe127fe3a3ce0400199d40c0545a85345b00bb0fda2a5078a539039c3a4e1c) and its canonical EDIT history sidecar
+    (history/records/allanite-leachate/2026-10-31T110151Z-marcin-ae3cf1.yaml) verifying UniProtKB accession
+    identity, reference-proteome grounding, InterPro/Pfam cross-reference correspondence, node/mechanism
+    parity, and primary-source evidence fidelity across causal_graph ''engineered_kudriavzevii_jl04_oxalate_ree_precipitation_graph''
+    (mechanism_ref: yeast_supernatant_oxalate_precipitation, 6 nodes / 5 edges; pyk1_pyruvate_kinase:
+    [UniProtKB:P00549 (CDC19, KPYK1_YEAST, UP000002311), UniProtKB:A0A1V2LFH0 (n/a, A0A1V2LFH0_PICKU,
+    UP000249293)]; gpd_glycerol_phosphate_dehydrogenase_knockout: [UniProtKB:A8W1U0 (GPD, A8W1U0_PICKU,
+    n/a), UniProtKB:A0A2U9RB90 (n/a, A0A2U9RB90_PICKU, UP000249293)]; pyc_pyruvate_carboxylase: [UniProtKB:A0A1V2LT98
+    (PYC, A0A1V2LT98_PICKU, UP000249293)]).'
+  selection: Cycle 6 Stage 3 protein_examples curation for cmmmech:allanite-leachate
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:allanite-leachate
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/allanite-leachate.yaml
+  locator: Working-tree record data/records/allanite-leachate.yaml (causal_graphs and mechanisms[].protein_examples)
+  accessed_at: '2026-10-31T11:06:30Z'
+  support: supports
+  summary: 'Curated data/records/allanite-leachate.yaml (SHA-256 32fe127fe3a3ce0400199d40c0545a85345b00bb0fda2a5078a539039c3a4e1c)
+    with causal_graph ''engineered_kudriavzevii_jl04_oxalate_ree_precipitation_graph'' (mechanism_ref:
+    yeast_supernatant_oxalate_precipitation, 6 nodes / 5 edges; pyk1_pyruvate_kinase: [UniProtKB:P00549
+    (CDC19, KPYK1_YEAST, UP000002311), UniProtKB:A0A1V2LFH0 (n/a, A0A1V2LFH0_PICKU, UP000249293)]; gpd_glycerol_phosphate_dehydrogenase_knockout:
+    [UniProtKB:A8W1U0 (GPD, A8W1U0_PICKU, n/a), UniProtKB:A0A2U9RB90 (n/a, A0A2U9RB90_PICKU, UP000249293)];
+    pyc_pyruvate_carboxylase: [UniProtKB:A0A1V2LT98 (PYC, A0A1V2LT98_PICKU, UP000249293)]), achieving
+    100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and
+    preserving source-faithful support levels and caveats from primary source(s) lu2026, lu2026_supplement.'
+  snapshot_sha256: 32fe127fe3a3ce0400199d40c0545a85345b00bb0fda2a5078a539039c3a4e1c
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41467-026-68957-5
+  locator: 'lu2026: Lu J et al. (2026). Bio-based oxalic acid production in Issatchenkia orientalis enables
+    sustainable rare earth recovery. Nature Communications 17:2193. DOI 10.1038/s41467-026-68957-5; original
+    article, Figures 2-4 and Methods, especially Precipitation test, pages 7-9. (https://doi.org/10.1038/s41467-026-68957-5)'
+  accessed_at: '2026-10-31T11:06:30Z'
+  support: supports
+  summary: 'Live-verified UniProtKB reference-proteome and domain cross-reference grounding across UniProtKB:P00549
+    (KPYK1_YEAST, Pyruvate kinase 1, gene_symbol: CDC19, SWISS_PROT, NCBITaxon:559292 Saccharomyces cerevisiae
+    S288c, UP000002311, interpro: [InterPro:IPR001697, InterPro:IPR011037, InterPro:IPR015793, InterPro:IPR015795,
+    InterPro:IPR015806, InterPro:IPR015813, InterPro:IPR018209, InterPro:IPR036918, InterPro:IPR040442],
+    pfam: [Pfam:PF00224, Pfam:PF02887]); UniProtKB:A0A1V2LFH0 (A0A1V2LFH0_PICKU, Pyruvate kinase, gene_symbol:
+    n/a, TREMBL, NCBITaxon:4909 Pichia kudriavzevii, UP000249293, interpro: [InterPro:IPR001697, InterPro:IPR011037,
+    InterPro:IPR015793, InterPro:IPR015795, InterPro:IPR015806, InterPro:IPR015813, InterPro:IPR018209,
+    InterPro:IPR036918, InterPro:IPR040442], pfam: [Pfam:PF00224, Pfam:PF02887]); UniProtKB:A8W1U0 (A8W1U0_PICKU,
+    Glycerol-3-phosphate dehydrogenase [NAD(+)], gene_symbol: GPD, TREMBL, NCBITaxon:4909 Pichia kudriavzevii,
+    n/a, interpro: [InterPro:IPR006109, InterPro:IPR006168, InterPro:IPR008927, InterPro:IPR011128, InterPro:IPR013328,
+    InterPro:IPR036291], pfam: [Pfam:PF01210, Pfam:PF07479]); UniProtKB:A0A2U9RB90 (A0A2U9RB90_PICKU,
+    Glycerol-3-phosphate dehydrogenase [NAD(+)], gene_symbol: n/a, TREMBL, NCBITaxon:4909 Pichia kudriavzevii,
+    UP000249293, interpro: [InterPro:IPR006109, InterPro:IPR006168, InterPro:IPR008927, InterPro:IPR011128,
+    InterPro:IPR013328, InterPro:IPR017751, InterPro:IPR036291], pfam: [Pfam:PF01210, Pfam:PF07479]);
+    UniProtKB:A0A1V2LT98 (A0A1V2LT98_PICKU, Pyruvate carboxylase, gene_symbol: PYC, TREMBL, NCBITaxon:4909
+    Pichia kudriavzevii, UP000249293, interpro: [InterPro:IPR000089, InterPro:IPR000891, InterPro:IPR003379,
+    InterPro:IPR005479, InterPro:IPR005481, InterPro:IPR005482, InterPro:IPR005930, InterPro:IPR011053,
+    InterPro:IPR011054, InterPro:IPR011761, InterPro:IPR011764, InterPro:IPR013785, InterPro:IPR016185,
+    InterPro:IPR055268], pfam: [Pfam:PF00289, Pfam:PF00364, Pfam:PF00682, Pfam:PF02436, Pfam:PF02785,
+    Pfam:PF02786]). Primary mechanism source(s) (lu2026, lu2026_supplement) support the stated organism,
+    substrate, and partial/direct support levels on all ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/allanite-leachate/2026-10-31T110151Z-marcin-ae3cf1.yaml
+  locator: Canonical EDIT history sidecar history/records/allanite-leachate/2026-10-31T110151Z-marcin-ae3cf1.yaml
+  accessed_at: '2026-10-31T11:06:30Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/allanite-leachate/2026-10-31T110151Z-marcin-ae3cf1.yaml
+    (SHA-256 769c91c4249dd6345d939fd68671a1e7718ebd5aef4c798e8bf542e376cadc8b): Add Pichia kudriavzevii
+    reference-proteome PYK1 (UniProtKB:A0A1V2LFH0) and GPD (UniProtKB:A0A2U9RB90) protein examples and
+    synchronize live UniProtKB cross-references — Cycle 6 Stage 3 protein_examples curation: added endogenous
+    Pichia kudriavzevii (Issatchenkia orientalis) CBS 573 reference-proteome (UP000249293) pyruvate kinase
+    UniProtKB:A0A1V2LFH0 (locus C5L36_0A06840, evaluated as JL09_g4285 in strain JL02) and glycerol-3-phosphate
+    dehydrogenase UniProtKB:A0A2U9RB90 (locus C5L36_0E02100) alongside existing entries, updated UniProtKB:A0A1V2LT98
+    to its current live reference_proteome_id UP000249293 (replacing merged UP000249646) and live Pfam/InterPro
+    sets, and synchronized live InterPro cross-references on UniProtKB:P00549 and UniProtKB:A8W1U0 across
+    node and mechanism protein_examples.'
+  snapshot_sha256: 769c91c4249dd6345d939fd68671a1e7718ebd5aef4c798e8bf542e376cadc8b
+- evidence_id: validation
+  kind: validation
+  reference: data/records/allanite-leachate.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and validate-history --base
+    main
+  accessed_at: '2026-10-31T11:06:30Z'
+  support: supports
+  summary: data/records/allanite-leachate.yaml and history/records/allanite-leachate/2026-10-31T110151Z-marcin-ae3cf1.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with 0 errors.
+  snapshot_sha256: 32fe127fe3a3ce0400199d40c0545a85345b00bb0fda2a5078a539039c3a4e1c
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 673 record(s); 0 failed.
+  target_ids:
+  - cmmmech:allanite-leachate
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:allanite-leachate
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: protein_examples_and_uniprot_grounding
+  area: graph
+  topic: 'Verification of protein_examples UniProtKB accession identity, InterPro/Pfam cross-references,
+    and node/mechanism parity across causal_graph ''engineered_kudriavzevii_jl04_oxalate_ree_precipitation_graph''
+    (mechanism_ref: yeast_supernatant_oxalate_precipitation, 6 nodes / 5 edges; pyk1_pyruvate_kinase:
+    [UniProtKB:P00549 (CDC19, KPYK1_YEAST, UP000002311), UniProtKB:A0A1V2LFH0 (n/a, A0A1V2LFH0_PICKU,
+    UP000249293)]; gpd_glycerol_phosphate_dehydrogenase_knockout: [UniProtKB:A8W1U0 (GPD, A8W1U0_PICKU,
+    n/a), UniProtKB:A0A2U9RB90 (n/a, A0A2U9RB90_PICKU, UP000249293)]; pyc_pyruvate_carboxylase: [UniProtKB:A0A1V2LT98
+    (PYC, A0A1V2LT98_PICKU, UP000249293)])'
+  outcome: supported
+  summary: 'Curated data/records/allanite-leachate.yaml (SHA-256 32fe127fe3a3ce0400199d40c0545a85345b00bb0fda2a5078a539039c3a4e1c)
+    with causal_graph ''engineered_kudriavzevii_jl04_oxalate_ree_precipitation_graph'' (mechanism_ref:
+    yeast_supernatant_oxalate_precipitation, 6 nodes / 5 edges; pyk1_pyruvate_kinase: [UniProtKB:P00549
+    (CDC19, KPYK1_YEAST, UP000002311), UniProtKB:A0A1V2LFH0 (n/a, A0A1V2LFH0_PICKU, UP000249293)]; gpd_glycerol_phosphate_dehydrogenase_knockout:
+    [UniProtKB:A8W1U0 (GPD, A8W1U0_PICKU, n/a), UniProtKB:A0A2U9RB90 (n/a, A0A2U9RB90_PICKU, UP000249293)];
+    pyc_pyruvate_carboxylase: [UniProtKB:A0A1V2LT98 (PYC, A0A1V2LT98_PICKU, UP000249293)]), achieving
+    100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and
+    live-verifying UniProtKB metadata across UniProtKB:P00549 (KPYK1_YEAST, Pyruvate kinase 1, gene_symbol:
+    CDC19, SWISS_PROT, NCBITaxon:559292 Saccharomyces cerevisiae S288c, UP000002311, interpro: [InterPro:IPR001697,
+    InterPro:IPR011037, InterPro:IPR015793, InterPro:IPR015795, InterPro:IPR015806, InterPro:IPR015813,
+    InterPro:IPR018209, InterPro:IPR036918, InterPro:IPR040442], pfam: [Pfam:PF00224, Pfam:PF02887]);
+    UniProtKB:A0A1V2LFH0 (A0A1V2LFH0_PICKU, Pyruvate kinase, gene_symbol: n/a, TREMBL, NCBITaxon:4909
+    Pichia kudriavzevii, UP000249293, interpro: [InterPro:IPR001697, InterPro:IPR011037, InterPro:IPR015793,
+    InterPro:IPR015795, InterPro:IPR015806, InterPro:IPR015813, InterPro:IPR018209, InterPro:IPR036918,
+    InterPro:IPR040442], pfam: [Pfam:PF00224, Pfam:PF02887]); UniProtKB:A8W1U0 (A8W1U0_PICKU, Glycerol-3-phosphate
+    dehydrogenase [NAD(+)], gene_symbol: GPD, TREMBL, NCBITaxon:4909 Pichia kudriavzevii, n/a, interpro:
+    [InterPro:IPR006109, InterPro:IPR006168, InterPro:IPR008927, InterPro:IPR011128, InterPro:IPR013328,
+    InterPro:IPR036291], pfam: [Pfam:PF01210, Pfam:PF07479]); UniProtKB:A0A2U9RB90 (A0A2U9RB90_PICKU,
+    Glycerol-3-phosphate dehydrogenase [NAD(+)], gene_symbol: n/a, TREMBL, NCBITaxon:4909 Pichia kudriavzevii,
+    UP000249293, interpro: [InterPro:IPR006109, InterPro:IPR006168, InterPro:IPR008927, InterPro:IPR011128,
+    InterPro:IPR013328, InterPro:IPR017751, InterPro:IPR036291], pfam: [Pfam:PF01210, Pfam:PF07479]);
+    UniProtKB:A0A1V2LT98 (A0A1V2LT98_PICKU, Pyruvate carboxylase, gene_symbol: PYC, TREMBL, NCBITaxon:4909
+    Pichia kudriavzevii, UP000249293, interpro: [InterPro:IPR000089, InterPro:IPR000891, InterPro:IPR003379,
+    InterPro:IPR005479, InterPro:IPR005481, InterPro:IPR005482, InterPro:IPR005930, InterPro:IPR011053,
+    InterPro:IPR011054, InterPro:IPR011761, InterPro:IPR011764, InterPro:IPR013785, InterPro:IPR016185,
+    InterPro:IPR055268], pfam: [Pfam:PF00289, Pfam:PF00364, Pfam:PF00682, Pfam:PF02436, Pfam:PF02785,
+    Pfam:PF02786]).'
+  target_ids:
+  - cmmmech:allanite-leachate
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: 'data/records/allanite-leachate.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar history/records/allanite-leachate/2026-10-31T110151Z-marcin-ae3cf1.yaml
+    (SHA-256 769c91c4249dd6345d939fd68671a1e7718ebd5aef4c798e8bf542e376cadc8b: Add Pichia kudriavzevii
+    reference-proteome PYK1 (UniProtKB:A0A1V2LFH0) and GPD (UniProtKB:A0A2U9RB90) protein examples and
+    synchronize live UniProtKB cross-references) and passing all LinkML and history validation gates.'
+  target_ids:
+  - cmmmech:allanite-leachate
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Allanite-derived rare-earth leachate (cmmmech:allanite-leachate) passes Cycle 6 Stage 3 protein_examples
+  review (scientific_review: true) at SHA-256 32fe127fe3a3ce0400199d40c0545a85345b00bb0fda2a5078a539039c3a4e1c:
+  Add Pichia kudriavzevii reference-proteome PYK1 (UniProtKB:A0A1V2LFH0) and GPD (UniProtKB:A0A2U9RB90)
+  protein examples and synchronize live UniProtKB cross-references. Live-verified UniProtKB metadata across
+  UniProtKB:P00549 (KPYK1_YEAST, Pyruvate kinase 1, gene_symbol: CDC19, SWISS_PROT, NCBITaxon:559292 Saccharomyces
+  cerevisiae S288c, UP000002311, interpro: [InterPro:IPR001697, InterPro:IPR011037, InterPro:IPR015793,
+  InterPro:IPR015795, InterPro:IPR015806, InterPro:IPR015813, InterPro:IPR018209, InterPro:IPR036918,
+  InterPro:IPR040442], pfam: [Pfam:PF00224, Pfam:PF02887]); UniProtKB:A0A1V2LFH0 (A0A1V2LFH0_PICKU, Pyruvate
+  kinase, gene_symbol: n/a, TREMBL, NCBITaxon:4909 Pichia kudriavzevii, UP000249293, interpro: [InterPro:IPR001697,
+  InterPro:IPR011037, InterPro:IPR015793, InterPro:IPR015795, InterPro:IPR015806, InterPro:IPR015813,
+  InterPro:IPR018209, InterPro:IPR036918, InterPro:IPR040442], pfam: [Pfam:PF00224, Pfam:PF02887]); UniProtKB:A8W1U0
+  (A8W1U0_PICKU, Glycerol-3-phosphate dehydrogenase [NAD(+)], gene_symbol: GPD, TREMBL, NCBITaxon:4909
+  Pichia kudriavzevii, n/a, interpro: [InterPro:IPR006109, InterPro:IPR006168, InterPro:IPR008927, InterPro:IPR011128,
+  InterPro:IPR013328, InterPro:IPR036291], pfam: [Pfam:PF01210, Pfam:PF07479]); UniProtKB:A0A2U9RB90 (A0A2U9RB90_PICKU,
+  Glycerol-3-phosphate dehydrogenase [NAD(+)], gene_symbol: n/a, TREMBL, NCBITaxon:4909 Pichia kudriavzevii,
+  UP000249293, interpro: [InterPro:IPR006109, InterPro:IPR006168, InterPro:IPR008927, InterPro:IPR011128,
+  InterPro:IPR013328, InterPro:IPR017751, InterPro:IPR036291], pfam: [Pfam:PF01210, Pfam:PF07479]); UniProtKB:A0A1V2LT98
+  (A0A1V2LT98_PICKU, Pyruvate carboxylase, gene_symbol: PYC, TREMBL, NCBITaxon:4909 Pichia kudriavzevii,
+  UP000249293, interpro: [InterPro:IPR000089, InterPro:IPR000891, InterPro:IPR003379, InterPro:IPR005479,
+  InterPro:IPR005481, InterPro:IPR005482, InterPro:IPR005930, InterPro:IPR011053, InterPro:IPR011054,
+  InterPro:IPR011761, InterPro:IPR011764, InterPro:IPR013785, InterPro:IPR016185, InterPro:IPR055268],
+  pfam: [Pfam:PF00289, Pfam:PF00364, Pfam:PF00682, Pfam:PF02436, Pfam:PF02785, Pfam:PF02786]).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes;
+  an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 6 Stage 3 (protein_examples) using scripts/curate_causal_graphs.py.
+related_reviews: []

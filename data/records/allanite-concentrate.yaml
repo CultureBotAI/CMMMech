@@ -43,6 +43,94 @@ mechanisms:
   - id: NCBITaxon:442
     label: Gluconobacter oxydans
   protein_examples:
+  - uniprot_accession: UniProtKB:Q5FT13
+    entry_name: Q5FT13_GLUOX
+    protein_name: Phosphate transport system permease protein
+    gene_symbol: pstC
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:290633
+      label: Gluconobacter oxydans 621H
+    reference_proteome_id: UP000006375
+    interpro_ids:
+    - InterPro:IPR000515
+    - InterPro:IPR035906
+    - InterPro:IPR011864
+    - InterPro:IPR051124
+    pfam_ids:
+    - Pfam:PF00528
+    functional_role: Phosphate ABC transporter permease subunit PstC (GOX0706) disrupted in engineered Gluconobacter oxydans strains to derepress acidogenesis.
+    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633) orthologous to the engineered B58 locus.
+    evidence:
+    - source_ref: schmitz2025
+      supports: partial
+      explanation: Tested in Schmitz et al. (2025) as part of the combined B58 delta-pstS, P112:mgdh (or pstC/pstS) engineered biolixiviant strain; Figure S2 Panel B and main text have a pstS label discrepancy and do not isolate single-gene contributions on allanite.
+  - uniprot_accession: UniProtKB:Q5FTI1
+    entry_name: Q5FTI1_GLUOX
+    protein_name: Phosphate-binding protein PstS
+    gene_symbol: pstS
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:290633
+      label: Gluconobacter oxydans 621H
+    reference_proteome_id: UP000006375
+    interpro_ids:
+    - InterPro:IPR005673
+    - InterPro:IPR024370
+    - InterPro:IPR050962
+    pfam_ids:
+    - Pfam:PF12849
+    functional_role: Periplasmic phosphate-binding protein PstS (GOX0537) targeted in engineered high-acid Gluconobacter oxydans strains.
+    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633; locus GOX0537) alongside paralog GOX0920 (UniProtKB:Q5FSF4) because the primary source specifies delta-pstS in strain B58 without resolving which 621H pstS paralog corresponds to the deleted locus.
+    evidence:
+    - source_ref: schmitz2025
+      supports: partial
+      explanation: Tested in Schmitz et al. (2025) as part of the combined B58 delta-pstS, P112:mgdh (or pstC/pstS) engineered biolixiviant strain; Figure S2 Panel B and main text have a pstS label discrepancy and do not isolate single-gene contributions on allanite.
+  - uniprot_accession: UniProtKB:Q5FSF4
+    entry_name: Q5FSF4_GLUOX
+    protein_name: Phosphate-binding protein PstS
+    gene_symbol: pstS
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:290633
+      label: Gluconobacter oxydans 621H
+    reference_proteome_id: UP000006375
+    interpro_ids:
+    - InterPro:IPR005673
+    - InterPro:IPR024370
+    - InterPro:IPR050962
+    pfam_ids:
+    - Pfam:PF12849
+    functional_role: Second periplasmic phosphate-binding protein PstS paralog (GOX0920) in the Gluconobacter oxydans 621H reference proteome corresponding to the pstS gene targeted in engineered high-acid Gluconobacter oxydans B58 strains.
+    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633; locus GOX0920) alongside paralog GOX0537 (UniProtKB:Q5FTI1) because the primary source specifies delta-pstS in strain B58 without resolving which 621H pstS paralog corresponds to the deleted locus.
+    evidence:
+    - source_ref: schmitz2025
+      supports: partial
+      explanation: Tested in Schmitz et al. (2025) as part of the combined B58 delta-pstS, P112:mgdh (or pstC/pstS) engineered biolixiviant strain; Figure S2 Panel B and main text have a pstS label discrepancy and do not isolate single-gene contributions on allanite.
+  - uniprot_accession: UniProtKB:Q9L3B2
+    entry_name: PQQC_GLUOX
+    protein_name: Pyrroloquinoline-quinone synthase
+    gene_symbol: pqqC
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:290633
+      label: Gluconobacter oxydans 621H
+    reference_proteome_id: UP000006375
+    ec_numbers:
+    - EC:1.3.3.11
+    interpro_ids:
+    - InterPro:IPR016084
+    - InterPro:IPR011845
+    - InterPro:IPR039068
+    - InterPro:IPR004305
+    pfam_ids:
+    - Pfam:PF03070
+    functional_role: Pyrroloquinoline-quinone synthase (EC 1.3.3.11) catalyzing the final ring-closure and oxidation steps of PQQ cofactor biosynthesis required for holo-Gdh activity.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0985).
+    evidence:
+    - source_ref: schmitz2025
+      supports: support
+      explanation: Biosynthesis of the pyrroloquinoline quinone (PQQ) cofactor is required for periplasmic quinoprotein dehydrogenase activity during acidogenic biolixiviant production.
   - uniprot_accession: UniProtKB:P27175
     entry_name: DHG_GLUOX
     protein_name: Quinoprotein glucose dehydrogenase
@@ -68,73 +156,6 @@ mechanisms:
     - source_ref: schmitz2025
       supports: support
       explanation: Glucose oxidation by membrane-bound PQQ-dependent glucose dehydrogenase generates the gluconic acid-dominated acidic biolixiviant used to leach the mineral/feed.
-  - uniprot_accession: UniProtKB:Q9L3B2
-    entry_name: PQQC_GLUOX
-    protein_name: Pyrroloquinoline-quinone synthase
-    gene_symbol: pqqC
-    entry_status: SWISS_PROT
-    target_organism:
-      id: NCBITaxon:290633
-      label: Gluconobacter oxydans 621H
-    reference_proteome_id: UP000006375
-    ec_numbers:
-    - EC:1.3.3.11
-    interpro_ids:
-    - InterPro:IPR016084
-    - InterPro:IPR011845
-    - InterPro:IPR039068
-    - InterPro:IPR004305
-    pfam_ids:
-    - Pfam:PF03070
-    functional_role: Pyrroloquinoline-quinone synthase (EC 1.3.3.11) catalyzing the final ring-closure and oxidation steps of PQQ cofactor biosynthesis required for holo-Gdh activity.
-    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000006375 for Gluconobacter oxydans 621H (NCBITaxon:290633; locus GOX0985).
-    evidence:
-    - source_ref: schmitz2025
-      supports: support
-      explanation: Biosynthesis of the pyrroloquinoline quinone (PQQ) cofactor is required for periplasmic quinoprotein dehydrogenase activity during acidogenic biolixiviant production.
-  - uniprot_accession: UniProtKB:Q5FTI1
-    entry_name: Q5FTI1_GLUOX
-    protein_name: Phosphate-binding protein PstS
-    gene_symbol: pstS
-    entry_status: TREMBL
-    target_organism:
-      id: NCBITaxon:290633
-      label: Gluconobacter oxydans 621H
-    reference_proteome_id: UP000006375
-    interpro_ids:
-    - InterPro:IPR005673
-    - InterPro:IPR024370
-    - InterPro:IPR050962
-    pfam_ids:
-    - Pfam:PF12849
-    functional_role: Periplasmic phosphate-binding protein PstS (GOX0537) targeted in engineered high-acid Gluconobacter oxydans strains.
-    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633) orthologous to the engineered B58 locus.
-    evidence:
-    - source_ref: schmitz2025
-      supports: partial
-      explanation: Tested in Schmitz et al. (2025) as part of the combined B58 delta-pstS, P112:mgdh (or pstC/pstS) engineered biolixiviant strain; Figure S2 Panel B and main text have a pstS label discrepancy and do not isolate single-gene contributions on allanite.
-  - uniprot_accession: UniProtKB:Q5FT13
-    entry_name: Q5FT13_GLUOX
-    protein_name: Phosphate transport system permease protein
-    gene_symbol: pstC
-    entry_status: TREMBL
-    target_organism:
-      id: NCBITaxon:290633
-      label: Gluconobacter oxydans 621H
-    reference_proteome_id: UP000006375
-    interpro_ids:
-    - InterPro:IPR000515
-    - InterPro:IPR035906
-    - InterPro:IPR011864
-    - InterPro:IPR051124
-    pfam_ids:
-    - Pfam:PF00528
-    functional_role: Phosphate ABC transporter permease subunit PstC (GOX0706) disrupted in engineered Gluconobacter oxydans strains to derepress acidogenesis.
-    annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633) orthologous to the engineered B58 locus.
-    evidence:
-    - source_ref: schmitz2025
-      supports: partial
-      explanation: Tested in Schmitz et al. (2025) as part of the combined B58 delta-pstS, P112:mgdh (or pstC/pstS) engineered biolixiviant strain; Figure S2 Panel B and main text have a pstS label discrepancy and do not isolate single-gene contributions on allanite.
   evidence:
   - source_ref: schmitz2025
     supports: support
@@ -197,7 +218,7 @@ causal_graphs:
     label: pstS (Phosphate-binding protein PstS)
     node_type: GENE_OR_PROTEIN
     gene_symbol: pstS
-    description: Periplasmic phosphate-binding protein PstS (GOX0537) targeted in engineered high-acid Gluconobacter oxydans strains.
+    description: Periplasmic phosphate-binding protein PstS (GOX0537 / GOX0920) targeted in engineered high-acid Gluconobacter oxydans strains.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:Q5FTI1
@@ -216,7 +237,28 @@ causal_graphs:
       pfam_ids:
       - Pfam:PF12849
       functional_role: Periplasmic phosphate-binding protein PstS (GOX0537) targeted in engineered high-acid Gluconobacter oxydans strains.
-      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633) orthologous to the engineered B58 locus.
+      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633; locus GOX0537) alongside paralog GOX0920 (UniProtKB:Q5FSF4) because the primary source specifies delta-pstS in strain B58 without resolving which 621H pstS paralog corresponds to the deleted locus.
+      evidence:
+      - source_ref: schmitz2025
+        supports: partial
+        explanation: Tested in Schmitz et al. (2025) as part of the combined B58 delta-pstS, P112:mgdh (or pstC/pstS) engineered biolixiviant strain; Figure S2 Panel B and main text have a pstS label discrepancy and do not isolate single-gene contributions on allanite.
+    - uniprot_accession: UniProtKB:Q5FSF4
+      entry_name: Q5FSF4_GLUOX
+      protein_name: Phosphate-binding protein PstS
+      gene_symbol: pstS
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:290633
+        label: Gluconobacter oxydans 621H
+      reference_proteome_id: UP000006375
+      interpro_ids:
+      - InterPro:IPR005673
+      - InterPro:IPR024370
+      - InterPro:IPR050962
+      pfam_ids:
+      - Pfam:PF12849
+      functional_role: Second periplasmic phosphate-binding protein PstS paralog (GOX0920) in the Gluconobacter oxydans 621H reference proteome corresponding to the pstS gene targeted in engineered high-acid Gluconobacter oxydans B58 strains.
+      annotation_note: Grounded to Gluconobacter oxydans 621H reference proteome UP000006375 (NCBITaxon:290633; locus GOX0920) alongside paralog GOX0537 (UniProtKB:Q5FTI1) because the primary source specifies delta-pstS in strain B58 without resolving which 621H pstS paralog corresponds to the deleted locus.
       evidence:
       - source_ref: schmitz2025
         supports: partial
@@ -313,7 +355,7 @@ causal_graphs:
     target: gdh_dehydrogenase
     predicate: modulates
     relationship: genetic perturbation or regulatory coupling in engineered strain
-    description: Periplasmic phosphate-binding protein PstS (GOX0537) targeted in engineered high-acid Gluconobacter oxydans strains.
+    description: Periplasmic phosphate-binding protein PstS (GOX0537 / GOX0920) targeted in engineered high-acid Gluconobacter oxydans strains.
     evidence:
     - source_ref: schmitz2025
       supports: partial
@@ -375,9 +417,14 @@ curation_history:
   curator: marcin
   action: edit
   summary: Upgrade allanite-concentrate causal_graphs[0] lixiviant predicate to solubilizes and ground product/edge descriptions in schmitz2025
+- timestamp: '2026-10-31T11:01:50Z'
+  curator: marcin
+  action: edit
+  summary: Add second Gluconobacter oxydans 621H reference-proteome PstS paralog (UniProtKB:Q5FSF4, locus GOX0920) to psts_phosphate_binding
 history_refs:
 - history/records/allanite-concentrate/2026-10-12T091702Z-codex-5d49fc.yaml
 - history/records/allanite-concentrate/2026-10-18T042750Z-antigravity-092f04.yaml
 - history/records/allanite-concentrate/2026-10-21T184653Z-claude-5a83c3.yaml
 - history/records/allanite-concentrate/2026-10-22T132123Z-claude-0e7ffc.yaml
 - history/records/allanite-concentrate/2026-10-30T171003Z-marcin-894052.yaml
+- history/records/allanite-concentrate/2026-10-31T110150Z-marcin-5ba57f.yaml

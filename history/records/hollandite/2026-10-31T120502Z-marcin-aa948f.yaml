@@ -1,0 +1,41 @@
+history_version: 1
+target:
+  kind: record
+  slug: hollandite
+  path: data/records/hollandite.yaml
+session:
+  id: 2026-10-31T120502Z-marcin-aa948f
+  timestamp: '2026-10-31T12:05:02Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Record correction session for hollandite.yaml clarifying Coniophora puteana and
+    Serpula lacrymans organism attribution for UniProtKB:A0A5M3MRX5, UniProtKB:A0A5M3MJR8,
+    and UniProtKB:F8QHM8 (#894)
+  details: 'Corrects the organism and enzyme attribution in the inline curation_history entry
+    and supersedes the summary/details text of immutable session sidecar history/records/hollandite/2026-10-31T110151Z-marcin-6a6abf.yaml
+    (#894): the three brown_rot_oxalate_secretion_pathway protein_examples whose InterPro
+    cross-references were synchronized with live UniProtKB are brown-rot Agaricomycetes enzymes—Coniophora
+    puteana RWD-64-598-SS2 (NCBITaxon:741705, reference proteome UP000053558) (S)-malate dehydrogenase
+    (NAD(+), oxaloacetate-forming) (UniProtKB:A0A5M3MRX5, A0A5M3MRX5_CONPW, TREMBL, locus
+    CONPU1_130082) and pyruvate carboxylase (UniProtKB:A0A5M3MJR8, A0A5M3MJR8_CONPW, TREMBL,
+    locus CONPU1_130680), and Serpula lacrymans var. lacrymans S7.3 (NCBITaxon:936435, reference
+    proteome UP000008063) pyruvate carboxylase (UniProtKB:F8QHM8, F8QHM8_SERL3, TREMBL, locus
+    SERLA73DRAFT_190159)—not Aspergillus niger MdhC/Pyc.'
+  sections:
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/894
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/893
+  urls:
+  - https://rest.uniprot.org/uniprotkb/A0A5M3MRX5.json
+  - https://rest.uniprot.org/uniprotkb/A0A5M3MJR8.json
+  - https://rest.uniprot.org/uniprotkb/F8QHM8.json
