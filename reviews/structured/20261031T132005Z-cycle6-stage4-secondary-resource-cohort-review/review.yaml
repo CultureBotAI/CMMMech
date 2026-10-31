@@ -9,17 +9,22 @@ skill: .claude/skills/review-yaml-category/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: Reviewed all 111 secondary_resource records in data/records/*.yaml at commit
-  fab0682688678750d7da4e5357dda11592d5fac3, including the Cycle 6 Stage 2-3 causal-graph
-  and UniProtKB grounding additions on cmmmech:chromite-beneficiation-tailings and
-  cmmmech:petroleum-coke and the Cycle 5 Stage 5 remediation of cmmmech:waste-liquid-crystal-display-panels
-  and 7 secondary_resource key-order records. 108/111 secondary_resource records contain
-  primary-source-backed microbial mechanisms (145 mechanisms total), and 37/111 contain
-  multi-step causal_graphs (40 graphs) and live-verified UniProtKB protein_examples
-  across 25 unique accessions. Identified 2 minor graph node label/description findings
-  (cmmmech-cycle6-stage4-finding-0001 on cmmmech:traction-battery-hydrometallurgical-residue
+summary: 'Reviewed all 111 secondary_resource records in data/records/*.yaml at commit
+  fab0682688678750d7da4e5357dda11592d5fac3, including the 8 Cycle 6 Stage 2 (PR #888,
+  commit a9115e6c) secondary_resource causal-graph and UniProtKB grounding additions
+  (cmmmech:beverage-carton-hydropulping-reject, cmmmech:chromite-beneficiation-tailings,
+  cmmmech:fish-bone-residues, cmmmech:municipal-sewage-sludge, cmmmech:petroleum-coke,
+  cmmmech:pharmaceutical-blister-packaging-waste, cmmmech:poultry-bone-residues, cmmmech:tannery-sludge),
+  the Cycle 6 Stage 3 (PR #893, commit fab06826) UniProtKB grounding addition on cmmmech:allanite-leachate,
+  and the Cycle 5 Stage 5 (PR #880, commit b9ef4149) remediation of cmmmech:waste-liquid-crystal-display-panels.
+  108/111 secondary_resource records contain primary-source-backed mechanisms (107/111
+  with microbial: true mechanisms and 1/111, cmmmech:ferrochrome-slag, with an abiotic
+  microbial: false mechanism hydrochloric_acid_magnesium_extraction; 145 mechanisms
+  total), and 37/111 contain multi-step causal_graphs (40 graphs) and live-verified
+  UniProtKB protein_examples across 25 unique accessions. Identified 2 minor graph
+  node label/description findings (cmmmech-cycle6-stage4-finding-0001 on cmmmech:traction-battery-hydrometallurgical-residue
   and cmmmech-cycle6-stage4-finding-0002 across 14 single-species A. thiooxidans secondary_resource
-  records) for Stage 5 grouped remediation.
+  records) for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle6-stage4-cohort-reviewer
   kind: agent
@@ -2411,13 +2416,15 @@ assessments:
   evidence_ids:
   - ev-secondary-resource-cohort-audit
   - ev-traction-battery-lu2025
-  summary: 108/111 secondary_resource records contain primary-source-backed microbial
-    mechanisms (145 mechanisms total) and 37/111 contain grounded causal_graphs (40
-    graphs) and UniProtKB protein_examples across 25 unique accessions. In cmmmech:traction-battery-hydrometallurgical-residue,
+  summary: '108/111 secondary_resource records contain primary-source-backed mechanisms
+    (107/111 with microbial: true mechanisms and 1/111, cmmmech:ferrochrome-slag,
+    with an abiotic microbial: false mechanism hydrochloric_acid_magnesium_extraction;
+    145 mechanisms total) and 37/111 contain grounded causal_graphs (40 graphs) and
+    UniProtKB protein_examples across 25 unique accessions. In cmmmech:traction-battery-hydrometallurgical-residue,
     tth_hydrolase omits tetH from the parenthetical label and omits grounded consortium
     species/loci in description; in 14 single-species A. thiooxidans secondary_resource
     records, tth_hydrolase retains a pre-expansion singular label and omits paralog
-    loci GCD22_14205 and GCD22_02315.
+    loci GCD22_14205 and GCD22_02315.'
 findings:
 - finding_id: cmmmech-cycle6-stage4-finding-0001
   issue_key: cmmmech.traction-battery-hydrometallurgical-residue.tth-hydrolase-consortium-label-and-description-omit-species-and-loci
@@ -2437,7 +2444,7 @@ findings:
   - ev-secondary-resource-cohort-audit
   - ev-traction-battery-lu2025
   description: In data/records/traction-battery-hydrometallurgical-residue.yaml (cmmmech:traction-battery-hydrometallurgical-residue),
-    causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph) node tth_hydrolase
+    causal_graphs[0] (acidophile_culture_associated_leaching_graph) node tth_hydrolase
     (lines 496-500) is grounded to 4 consortium tetrathionate hydrolase protein_examples
     across 3 species (Acidithiobacillus ferrooxidans ATCC 23270 UniProtKB:B7J3C9 tth
     / AFE_0029, Acidithiobacillus thiooxidans ATCC 19377 UniProtKB:A0A5P9XPU3 tth
@@ -2494,15 +2501,19 @@ findings:
     description ''Periplasmic tetrathionate hydrolase disproportionating tetrathionate
     into thiosulfate, elemental sulfur, sulfate, and protons.'' without naming the
     two grounded paralog loci (GCD22_14205 and GCD22_02315), whereas sibling node
-    sqr_reductase in all 16 graphs explicitly names ''(Sqr/Sqor; GCD22_02301 / GCD22_03207)''
-    in its description and the 5 Cycle 6 Stage 2/3 A. thiooxidans records (chromite-beneficiation-tailings,
-    jarosite, nickel-laterite-ore, nickel, petroleum-coke) explicitly name ''(tth
-    GCD22_14205; tth GCD22_02315)''. In this scope, 14 record(s) (automotive-wastewater-treatment-sludge,
-    blast-furnace-cast-house-dust, copper-smelter-slag, discarded-led-lamps, electric-arc-furnace-dust,
-    gaas-production-hydroxide-sludge, gold-mine-tailings, metallic-machining-burrs,
-    nickel-based-superalloy-residue-powders, spent-alkaline-zinc-carbon-batteries,
-    spent-automotive-three-way-catalyst, spent-hydrodesulfurization-catalyst, spent-selective-catalytic-reduction-catalyst,
-    spent-sulfuric-acid-production-catalyst) exhibit this node label/description lag.'
+    sqr_reductase in all 16 graphs has label ''Sqr/Sqor sulfide-quinone reductase
+    (sqr / sqor)'' and explicitly names ''(Sqr/Sqor; GCD22_02301 / GCD22_03207)''
+    in its description, and the 8 Cycle 6 Stage 2 (PR #888, commit a9115e6c) single-species
+    A. thiooxidans records (beverage-carton-hydropulping-reject, chromite-beneficiation-tailings,
+    goethite, jarosite, nickel-laterite-ore, nickel, petroleum-coke, pharmaceutical-blister-packaging-waste)
+    explicitly name ''(tth GCD22_14205; tth GCD22_02315)'' in tth_hydrolase.label
+    and ''(tth GCD22_14205 and tth GCD22_02315)'' in tth_hydrolase.description. In
+    this scope, 14 record(s) (automotive-wastewater-treatment-sludge, blast-furnace-cast-house-dust,
+    copper-smelter-slag, discarded-led-lamps, electric-arc-furnace-dust, gaas-production-hydroxide-sludge,
+    gold-mine-tailings, metallic-machining-burrs, nickel-based-superalloy-residue-powders,
+    spent-alkaline-zinc-carbon-batteries, spent-automotive-three-way-catalyst, spent-hydrodesulfurization-catalyst,
+    spent-selective-catalytic-reduction-catalyst, spent-sulfuric-acid-production-catalyst)
+    exhibit this node label/description lag.'
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/automotive-wastewater-treatment-sludge.yaml
@@ -2663,11 +2674,13 @@ evidence:
     hydrolase grounded across A. ferrooxidans (tth / AFE_0029), A. thiooxidans (tth
     GCD22_14205 / GCD22_02315), and A. caldus (Atc_1595 / TetH).
 limitations:
-- 'Three secondary_resource records currently lack curated microbial mechanisms: cmmmech:copper-electrorefining-anode-slime,
-  cmmmech:ferrochrome-slag, and cmmmech:titanium-dioxide-waste-acid are maintained
-  secondary-resource records awaiting primary experimental microbial bioleaching/recovery
-  studies. (108/111 secondary_resource records carry microbial mechanisms; 3/111 document
-  feedstock identity and composition only.)'
+- 'Three secondary_resource records currently lack curated mechanisms (and one additional
+  record carries an abiotic mechanism only): cmmmech:oil-and-gas-produced-water, cmmmech:spent-vegetable-oil-hydrogenation-catalyst,
+  and cmmmech:theisen-sludge are maintained secondary-resource records without mechanisms
+  (and cmmmech:ferrochrome-slag currently carries only an abiotic microbial: false
+  HCl leaching mechanism) awaiting primary experimental microbial bioleaching/recovery
+  studies. (108/111 secondary_resource records carry mechanisms (107/111 microbial,
+  1/111 abiotic); 3/111 document feedstock identity and composition only.)'
 notes:
 - Cohort covers 100% (111/111) of secondary_resource records in data/records/*.yaml
   at commit fab0682688678750d7da4e5357dda11592d5fac3.

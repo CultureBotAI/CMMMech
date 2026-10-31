@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed data/records/xianhuaite-ce.yaml (cmmmech:xianhuaite-ce) at commit fab0682688678750d7da4e5357dda11592d5fac3 following Cycle 6 Stage 1 curation. Verified IMA-CNMNC September 2026 species identity (IMA 2024-091, symbol Xhu-Ce, ideal formula K2CeNb5O15, tetragonal tungsten bronze group, Bayan Obo Fe-Nb-REE deposit type locality) against IMA-CNMNC September 2026 p. 256 and Yang et al. (2026, Am. Mineral. 111(3):449-459, DOI:10.2138/am-2025-9833). Identified 1 minor completeness finding (cmmmech-cycle6-stage4-finding-0003: description states IMA symbol Xhu-Ce, but top-level ima_symbol: Xhu-Ce slot is omitted) for Stage 5 grouped remediation.
+Reviewed data/records/xianhuaite-ce.yaml (cmmmech:xianhuaite-ce) at commit fab0682688678750d7da4e5357dda11592d5fac3 following Cycle 6 Stage 1 curation. Verified IMA-CNMNC September 2026 species identity (IMA 2024-091, symbol Xhu-Ce, ideal formula K2CeNb5O15, tetragonal tungsten bronze group, Bayan Obo Fe-Nb-REE deposit type locality) against IMA-CNMNC September 2026 PDF p. 236 and Yang et al. (2026, Eur. J. Mineral. 38:449-459, DOI:10.5194/ejm-38-449-2026). Identified 1 minor completeness finding (cmmmech-cycle6-stage4-finding-0003: description states IMA symbol Xhu-Ce, but top-level ima_symbol: Xhu-Ce slot is omitted) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -38,7 +38,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 completeness: supported. Targets: cmmmech:xianhuaite-ce.
 
-Xianhuaite-(Ce) formula (K2CeNb5O15), IMA 2024-091 approval, Bayan Obo type locality, and empirical composition are accurately curated from Yang et al. (2026) and IMA September 2026 p. 256, but top-level ima_symbol: Xhu-Ce is omitted despite being stated in description.
+Xianhuaite-(Ce) formula (K2CeNb5O15), IMA 2024-091 approval, Bayan Obo type locality, and empirical composition are accurately curated from Yang et al. (2026, Eur. J. Mineral. 38:449-459) and IMA-CNMNC September 2026 PDF p. 236, but top-level ima_symbol: Xhu-Ce is omitted despite being stated in description.
 
 ## Findings
 
@@ -46,7 +46,7 @@ Xianhuaite-(Ce) formula (K2CeNb5O15), IMA 2024-091 approval, Bayan Obo type loca
 
 minor / open / confirmed; issue key: cmmmech.round124-minerals.missing-ima-symbol-slot.
 
-Both data/records/vielleaureite-ce.yaml (cmmmech:vielleaureite-ce) and data/records/xianhuaite-ce.yaml (cmmmech:xianhuaite-ce), curated in Cycle 6 Stage 1 (PR #884), state their IMA-CNMNC-approved mineral symbols in description ('Vielleaureite-(Ce) (IMA 2022-134, symbol Vlr-Ce; ...)' from Ragu et al. 2025 Eur. J. Mineral. 37:627-643, p. 627; and 'Xianhuaite-(Ce) (IMA 2024-091, symbol Xhu-Ce)' from Yang et al. 2026 Am. Mineral. 111(3):449-459, p. 449), but omit the top-level ima_symbol slot (ima_symbol: Vlr-Ce and ima_symbol: Xhu-Ce after material_kind: mineral), unlike peer IMA mineral records such as data/records/andreybulakhite.yaml (ima_symbol: Adb) and data/records/yttrotungstite-nd.yaml (ima_symbol: Ytgs-Nd). In this scope, 1 record(s) (xianhuaite-ce) omit ima_symbol.
+Both data/records/vielleaureite-ce.yaml (cmmmech:vielleaureite-ce) and data/records/xianhuaite-ce.yaml (cmmmech:xianhuaite-ce), curated in Cycle 6 Stage 1 (PR #884), state their IMA-CNMNC-approved mineral symbols in description ('Vielleaureite-(Ce) (IMA 2022-134, symbol Vlr-Ce; ...)' from Ragu et al. 2025 Eur. J. Mineral. 37:627-638, p. 627 and IMA-CNMNC September 2026 PDF p. 228; and 'Xianhuaite-(Ce) (IMA 2024-091, symbol Xhu-Ce)' from Yang et al. 2026 Eur. J. Mineral. 38:449-459, p. 449 and IMA-CNMNC September 2026 PDF p. 236), but omit the top-level ima_symbol slot (ima_symbol: Vlr-Ce and ima_symbol: Xhu-Ce after material_kind: mineral), unlike peer IMA mineral records such as data/records/andreybulakhite.yaml (ima_symbol: Adb) and data/records/yttrotungstite-nd.yaml (ima_symbol: Ytgs-Nd). In this scope, 1 record(s) (xianhuaite-ce) omit ima_symbol.
 
 ## Recommended Actions And Acceptance Checks
 
@@ -64,8 +64,8 @@ Add top-level ima_symbol: Vlr-Ce to data/records/vielleaureite-ce.yaml and top-l
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| ev-xianhuaite-ce-file | data/records/xianhuaite-ce.yaml; lines 1-69 | supports | Inspected all 69 lines of data/records/xianhuaite-ce.yaml, verifying description ('Xianhuaite-(Ce) (IMA 2024-091, symbol Xhu-Ce)') and absence of top-level ima_symbol. |
-| ev-yang2026-xianhuaite-ce-rec | DOI:10.2138/am-2025-9833; Yang et al. 2026 Am. Mineral. 111(3):449-459, p. 449 (abstract) | supports | Yang et al. (2026) report IMA 2024-091 approval and symbol Xhu-Ce for xianhuaite-(Ce). |
+| ev-xianhuaite-ce-file | data/records/xianhuaite-ce.yaml; lines 1-123 | supports | Inspected all 123 lines of data/records/xianhuaite-ce.yaml, verifying description ('Xianhuaite-(Ce) (IMA 2024-091, symbol Xhu-Ce)') and absence of top-level ima_symbol. |
+| ev-yang2026-xianhuaite-ce-rec | DOI:10.5194/ejm-38-449-2026; Yang et al. 2026 Eur. J. Mineral. 38:449-459, p. 449 (abstract); IMA-CNMNC September 2026 PDF p. 236 | supports | Yang et al. (2026) and IMA-CNMNC September 2026 (PDF p. 236) report IMA 2024-091 approval and symbol Xhu-Ce for xianhuaite-(Ce). |
 
 ## Limits And Additional Notes
 
@@ -91,10 +91,10 @@ summary: 'Reviewed data/records/xianhuaite-ce.yaml (cmmmech:xianhuaite-ce) at co
   fab0682688678750d7da4e5357dda11592d5fac3 following Cycle 6 Stage 1 curation. Verified
   IMA-CNMNC September 2026 species identity (IMA 2024-091, symbol Xhu-Ce, ideal formula
   K2CeNb5O15, tetragonal tungsten bronze group, Bayan Obo Fe-Nb-REE deposit type locality)
-  against IMA-CNMNC September 2026 p. 256 and Yang et al. (2026, Am. Mineral. 111(3):449-459,
-  DOI:10.2138/am-2025-9833). Identified 1 minor completeness finding (cmmmech-cycle6-stage4-finding-0003:
-  description states IMA symbol Xhu-Ce, but top-level ima_symbol: Xhu-Ce slot is omitted)
-  for Stage 5 grouped remediation.'
+  against IMA-CNMNC September 2026 PDF p. 236 and Yang et al. (2026, Eur. J. Mineral.
+  38:449-459, DOI:10.5194/ejm-38-449-2026). Identified 1 minor completeness finding
+  (cmmmech-cycle6-stage4-finding-0003: description states IMA symbol Xhu-Ce, but top-level
+  ima_symbol: Xhu-Ce slot is omitted) for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle6-stage4-record-reviewer
   kind: agent
@@ -165,8 +165,8 @@ assessments:
   - ev-yang2026-xianhuaite-ce-rec
   summary: 'Xianhuaite-(Ce) formula (K2CeNb5O15), IMA 2024-091 approval, Bayan Obo
     type locality, and empirical composition are accurately curated from Yang et al.
-    (2026) and IMA September 2026 p. 256, but top-level ima_symbol: Xhu-Ce is omitted
-    despite being stated in description.'
+    (2026, Eur. J. Mineral. 38:449-459) and IMA-CNMNC September 2026 PDF p. 236, but
+    top-level ima_symbol: Xhu-Ce is omitted despite being stated in description.'
 findings:
 - finding_id: cmmmech-cycle6-stage4-finding-0003
   issue_key: cmmmech.round124-minerals.missing-ima-symbol-slot
@@ -188,8 +188,9 @@ findings:
     and data/records/xianhuaite-ce.yaml (cmmmech:xianhuaite-ce), curated in Cycle
     6 Stage 1 (PR #884), state their IMA-CNMNC-approved mineral symbols in description
     (''Vielleaureite-(Ce) (IMA 2022-134, symbol Vlr-Ce; ...)'' from Ragu et al. 2025
-    Eur. J. Mineral. 37:627-643, p. 627; and ''Xianhuaite-(Ce) (IMA 2024-091, symbol
-    Xhu-Ce)'' from Yang et al. 2026 Am. Mineral. 111(3):449-459, p. 449), but omit
+    Eur. J. Mineral. 37:627-638, p. 627 and IMA-CNMNC September 2026 PDF p. 228; and
+    ''Xianhuaite-(Ce) (IMA 2024-091, symbol Xhu-Ce)'' from Yang et al. 2026 Eur. J.
+    Mineral. 38:449-459, p. 449 and IMA-CNMNC September 2026 PDF p. 236), but omit
     the top-level ima_symbol slot (ima_symbol: Vlr-Ce and ima_symbol: Xhu-Ce after
     material_kind: mineral), unlike peer IMA mineral records such as data/records/andreybulakhite.yaml
     (ima_symbol: Adb) and data/records/yttrotungstite-nd.yaml (ima_symbol: Ytgs-Nd).
@@ -220,18 +221,20 @@ evidence:
 - evidence_id: ev-xianhuaite-ce-file
   kind: record_content
   reference: data/records/xianhuaite-ce.yaml
-  locator: lines 1-69
+  locator: lines 1-123
   accessed_at: '2026-10-31T13:20:09Z'
   support: supports
-  summary: Inspected all 69 lines of data/records/xianhuaite-ce.yaml, verifying description
+  summary: Inspected all 123 lines of data/records/xianhuaite-ce.yaml, verifying description
     ('Xianhuaite-(Ce) (IMA 2024-091, symbol Xhu-Ce)') and absence of top-level ima_symbol.
 - evidence_id: ev-yang2026-xianhuaite-ce-rec
   kind: primary_source
-  reference: DOI:10.2138/am-2025-9833
-  locator: Yang et al. 2026 Am. Mineral. 111(3):449-459, p. 449 (abstract)
+  reference: DOI:10.5194/ejm-38-449-2026
+  locator: Yang et al. 2026 Eur. J. Mineral. 38:449-459, p. 449 (abstract); IMA-CNMNC
+    September 2026 PDF p. 236
   accessed_at: '2026-10-31T13:20:09Z'
   support: supports
-  summary: Yang et al. (2026) report IMA 2024-091 approval and symbol Xhu-Ce for xianhuaite-(Ce).
+  summary: Yang et al. (2026) and IMA-CNMNC September 2026 (PDF p. 236) report IMA
+    2024-091 approval and symbol Xhu-Ce for xianhuaite-(Ce).
 limitations:
 - 'data/records/xianhuaite-ce.yaml states IMA symbol Xhu-Ce in description but omits
   top-level ima_symbol: Xhu-Ce (tracked as open finding cmmmech-cycle6-stage4-finding-0003

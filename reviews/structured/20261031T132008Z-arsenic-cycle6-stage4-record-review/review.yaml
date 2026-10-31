@@ -10,17 +10,20 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 summary: 'Reviewed data/records/arsenic.yaml (cmmmech:arsenic) at commit fab0682688678750d7da4e5357dda11592d5fac3.
-  Verified CHEBI:27563 (arsenic atom) identity, USGS 2025, DOE 2023, and EU 2024 Annex
-  II criticality entries, mechanism thiooxidans_arsenic_bioleaching (Lee et al. 2015,
-  DOI:10.1007/s11356-014-3516-x), causal graph thiooxidans_arsenic_bioleaching_graph
-  (5 nodes, 4 edges), and all 4 synchronized Acidithiobacillus thiooxidans ATCC 19377
-  UniProtKB protein_examples (Sqr/Sqor UniProtKB:A0A543Q349 GCD22_02301 and UniProtKB:A0A5P9XUB1
-  GCD22_03207; Tth UniProtKB:A0A5P9XPU3 tth / GCD22_14205 and UniProtKB:A0A5P9XS05
-  tth / GCD22_02315). Identified 1 minor graph node label/description finding (cmmmech-cycle6-stage4-finding-0002:
-  causal_graphs[0].nodes[1] tth_hydrolase retains singular label ''Tth tetrathionate
-  hydrolase (tth)'' and generic description omitting paralog loci GCD22_14205 and
-  GCD22_02315, whereas sibling node sqr_reductase explicitly names ''(Sqr/Sqor; GCD22_02301
-  / GCD22_03207)'') for Stage 5 grouped remediation.'
+  Verified CHEBI:27563 (arsenic atom) identity, USGS Final List of Critical Minerals
+  (edition 2025) criticality entry (lines 25-30), mechanism thiooxidans_hydroxide_sludge_comobilization
+  (Fritze et al. 2026, Frontiers in Microbiology 17:1807986, DOI:10.3389/fmicb.2026.1807986,
+  Acidithiobacillus thiooxidans DSM 14887 bioleaching of GaAs-production hydroxide
+  sludge, lines 17-20 and 32), causal graph thiooxidans_hydroxide_sludge_comobilization_graph
+  (line 136; 5 nodes, 4 edges), and all 4 synchronized Acidithiobacillus thiooxidans
+  ATCC 19377 UniProtKB protein_examples (Sqr/Sqor UniProtKB:A0A543Q349 GCD22_02301
+  and UniProtKB:A0A5P9XUB1 GCD22_03207; Tth UniProtKB:A0A5P9XPU3 tth / GCD22_14205
+  and UniProtKB:A0A5P9XS05 tth / GCD22_02315). Identified 1 minor graph node label/description
+  finding (cmmmech-cycle6-stage4-finding-0002: causal_graphs[0].nodes[1] tth_hydrolase
+  at lines 191-195 retains singular label ''Tth tetrathionate hydrolase (tth)'' and
+  generic description omitting paralog loci GCD22_14205 and GCD22_02315, whereas sibling
+  node sqr_reductase at lines 142-146 explicitly names ''(Sqr/Sqor; GCD22_02301 /
+  GCD22_03207)'' in description) for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle6-stage4-record-reviewer
   kind: agent
@@ -87,7 +90,7 @@ assessments:
   - cmmmech:arsenic
   evidence_ids:
   - ev-arsenic-file
-  - ev-arsenic-lee2015
+  - ev-arsenic-fritze2026
   summary: All 4 A. thiooxidans ATCC 19377 UniProtKB protein_examples (2 Sqr/Sqor
     and 2 Tth paralogs) are accurately grounded and synchronized between mechanisms[0]
     and causal_graphs[0]. However, causal_graphs[0].nodes[1] (tth_hydrolase) retains
@@ -110,7 +113,7 @@ findings:
   - causal_graphs[0].nodes[1].description
   evidence_ids:
   - ev-arsenic-file
-  - ev-arsenic-lee2015
+  - ev-arsenic-fritze2026
   description: 'Across the 673-record corpus, 16 single-species Acidithiobacillus
     thiooxidans records (arsenic, automotive-wastewater-treatment-sludge, blast-furnace-cast-house-dust,
     copper-smelter-slag, discarded-led-lamps, electric-arc-furnace-dust, gaas-production-hydroxide-sludge,
@@ -124,11 +127,14 @@ findings:
     description ''Periplasmic tetrathionate hydrolase disproportionating tetrathionate
     into thiosulfate, elemental sulfur, sulfate, and protons.'' without naming the
     two grounded paralog loci (GCD22_14205 and GCD22_02315), whereas sibling node
-    sqr_reductase in all 16 graphs explicitly names ''(Sqr/Sqor; GCD22_02301 / GCD22_03207)''
-    in its description and the 5 Cycle 6 Stage 2/3 A. thiooxidans records (chromite-beneficiation-tailings,
-    jarosite, nickel-laterite-ore, nickel, petroleum-coke) explicitly name ''(tth
-    GCD22_14205; tth GCD22_02315)''. In this scope, 1 record(s) (arsenic) exhibit
-    this node label/description lag.'
+    sqr_reductase in all 16 graphs has label ''Sqr/Sqor sulfide-quinone reductase
+    (sqr / sqor)'' and explicitly names ''(Sqr/Sqor; GCD22_02301 / GCD22_03207)''
+    in its description, and the 8 Cycle 6 Stage 2 (PR #888, commit a9115e6c) single-species
+    A. thiooxidans records (beverage-carton-hydropulping-reject, chromite-beneficiation-tailings,
+    goethite, jarosite, nickel-laterite-ore, nickel, petroleum-coke, pharmaceutical-blister-packaging-waste)
+    explicitly name ''(tth GCD22_14205; tth GCD22_02315)'' in tth_hydrolase.label
+    and ''(tth GCD22_14205 and tth GCD22_02315)'' in tth_hydrolase.description. In
+    this scope, 1 record(s) (arsenic) exhibit this node label/description lag.'
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/arsenic.yaml
@@ -157,19 +163,20 @@ evidence:
 - evidence_id: ev-arsenic-file
   kind: record_content
   reference: data/records/arsenic.yaml
-  locator: lines 1-355 (nodes[0] lines 199-203, nodes[1] lines 259-264)
+  locator: lines 1-321 (nodes[0] lines 142-146, nodes[1] lines 191-195)
   accessed_at: '2026-10-31T13:20:08Z'
   support: supports
-  summary: Inspected all 355 lines of data/records/arsenic.yaml, verifying sqr_reductase
-    vs tth_hydrolase node labels and descriptions.
-- evidence_id: ev-arsenic-lee2015
+  summary: Inspected all 321 lines of data/records/arsenic.yaml, verifying sqr_reductase
+    (lines 142-146) vs tth_hydrolase (lines 191-195) node labels and descriptions.
+- evidence_id: ev-arsenic-fritze2026
   kind: primary_source
-  reference: DOI:10.1007/s11356-014-3516-x
-  locator: Lee et al. 2015 Environ. Sci. Pollut. Res. 22:2853-2860
+  reference: DOI:10.3389/fmicb.2026.1807986
+  locator: Fritze et al. 2026 Front. Microbiol. 17:1807986, pp. 1-14, Tables 1-3,
+    Figures 1-6
   accessed_at: '2026-10-31T13:20:08Z'
   support: supports
-  summary: Lee et al. (2015) report sulfur-driven bioleaching of arsenic-contaminated
-    soil/tailings by Acidithiobacillus thiooxidans.
+  summary: Fritze et al. (2026) report Acidithiobacillus thiooxidans DSM 14887 sulfur-driven
+    bioleaching and arsenic co-mobilization from GaAs-production hydroxide sludge.
 limitations:
 - data/records/arsenic.yaml node tth_hydrolase retains pre-expansion singular label
   and description omitting paralog loci GCD22_14205 and GCD22_02315 (tracked as open

@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 36 commodity records in data/records/*.yaml at commit fab0682688678750d7da4e5357dda11592d5fac3. All 36 commodity records accurately distinguish refined, alloy, chemical, or grouped critical-mineral commodity designations from chemical elements and IMA mineral species. 6/36 commodity records contain primary-source-backed microbial mechanisms (6 mechanisms), and 4/36 (cmmmech:borates, cmmmech:kaolin, cmmmech:rare-earth-element-commodities, cmmmech:titanium-metal) include grounded causal_graphs and live-verified UniProtKB protein_examples across 6 unique accessions. Zero open findings.
+Reviewed all 36 commodity records in data/records/*.yaml at commit fab0682688678750d7da4e5357dda11592d5fac3, including the 4 commodity records remediated for canonical top-level key order in Cycle 5 Stage 5 (PR #880, commit b9ef4149: cmmmech:electrical-steel, cmmmech:rare-earth-element-commodities, cmmmech:silicon-carbide, cmmmech:synthetic-graphite). All 36 commodity records accurately distinguish refined, alloy, chemical, or grouped critical-mineral commodity designations from chemical elements and IMA mineral species. 6/36 commodity records contain primary-source-backed microbial mechanisms (6 mechanisms), and 4/36 (cmmmech:borates, cmmmech:phosphate-rock, cmmmech:rare-earth-element-commodities, cmmmech:titanium-metal) include grounded causal_graphs and live-verified UniProtKB protein_examples across 6 unique accessions. Zero open findings.
 
 ## Scope And Provenance
 
@@ -113,13 +113,16 @@ skill: .claude/skills/review-yaml-category/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: Reviewed all 36 commodity records in data/records/*.yaml at commit fab0682688678750d7da4e5357dda11592d5fac3.
-  All 36 commodity records accurately distinguish refined, alloy, chemical, or grouped
-  critical-mineral commodity designations from chemical elements and IMA mineral species.
-  6/36 commodity records contain primary-source-backed microbial mechanisms (6 mechanisms),
-  and 4/36 (cmmmech:borates, cmmmech:kaolin, cmmmech:rare-earth-element-commodities,
-  cmmmech:titanium-metal) include grounded causal_graphs and live-verified UniProtKB
-  protein_examples across 6 unique accessions. Zero open findings.
+summary: 'Reviewed all 36 commodity records in data/records/*.yaml at commit fab0682688678750d7da4e5357dda11592d5fac3,
+  including the 4 commodity records remediated for canonical top-level key order in
+  Cycle 5 Stage 5 (PR #880, commit b9ef4149: cmmmech:electrical-steel, cmmmech:rare-earth-element-commodities,
+  cmmmech:silicon-carbide, cmmmech:synthetic-graphite). All 36 commodity records accurately
+  distinguish refined, alloy, chemical, or grouped critical-mineral commodity designations
+  from chemical elements and IMA mineral species. 6/36 commodity records contain primary-source-backed
+  microbial mechanisms (6 mechanisms), and 4/36 (cmmmech:borates, cmmmech:phosphate-rock,
+  cmmmech:rare-earth-element-commodities, cmmmech:titanium-metal) include grounded
+  causal_graphs and live-verified UniProtKB protein_examples across 6 unique accessions.
+  Zero open findings.'
 reviewer:
   identity: antigravity / cmmmech-cycle6-stage4-cohort-reviewer
   kind: agent

@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 133 records with causal_graphs (and all 130 records with UniProtKB protein_examples) in data/records/*.yaml at commit fab0682688678750d7da4e5357dda11592d5fac3, including the 5 Cycle 6 Stage 2-3 records (cmmmech:chromite-beneficiation-tailings, cmmmech:jarosite, cmmmech:nickel-laterite-ore, cmmmech:nickel, cmmmech:petroleum-coke). Verified 141 causal graphs, 642 nodes, 501 edges, 243 GENE_OR_PROTEIN nodes (237 GROUNDED, 6 UNGROUNDED across 6 records), and 394 protein_examples per layer (788 total across mechanisms and causal_graphs, with 100% synchronization and 67 unique live-verified UniProtKB accessions: 22 SWISS_PROT and 45 TREMBL). Identified 2 minor graph node label/description findings (cmmmech-cycle6-stage4-finding-0001 on cmmmech:traction-battery-hydrometallurgical-residue and cmmmech-cycle6-stage4-finding-0002 across 16 single-species A. thiooxidans records) for Stage 5 grouped remediation.
+Reviewed all 133 records with causal_graphs (and all 130 records with UniProtKB protein_examples) in data/records/*.yaml at commit fab0682688678750d7da4e5357dda11592d5fac3, including the 14 Cycle 6 Stage 2 (PR #888, commit a9115e6c) records (beverage-carton-hydropulping-reject, chalcopyrite-enargite-concentrate, chromite-beneficiation-tailings, fish-bone-residues, goethite, jarosite, lithium-mica-ore, municipal-sewage-sludge, nickel-laterite-ore, nickel, petroleum-coke, pharmaceutical-blister-packaging-waste, poultry-bone-residues, tannery-sludge) and the 12 Cycle 6 Stage 3 (PR #893, commit fab06826) records (allanite-concentrate, allanite-leachate, cerussite, dunite, enstatite, fluorapatite, hafnium, hollandite, humboldtine, malachite, olivine-group, thulium). Verified 141 causal graphs, 642 nodes, 501 edges, 243 GENE_OR_PROTEIN nodes (237 GROUNDED, 6 UNGROUNDED across 6 records), and 394 protein_examples per layer (788 total across mechanisms and causal_graphs, with 100% synchronization and 67 unique live-verified UniProtKB accessions: 22 SWISS_PROT and 45 TREMBL). Identified 2 minor graph node label/description findings (cmmmech-cycle6-stage4-finding-0001 on cmmmech:traction-battery-hydrometallurgical-residue and cmmmech-cycle6-stage4-finding-0002 across 16 single-species A. thiooxidans records) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -179,13 +179,13 @@ All 141 causal graphs reference valid record mechanisms and form connected direc
 
 minor / open / confirmed; issue key: cmmmech.traction-battery-hydrometallurgical-residue.tth-hydrolase-consortium-label-and-description-omit-species-and-loci.
 
-In data/records/traction-battery-hydrometallurgical-residue.yaml (cmmmech:traction-battery-hydrometallurgical-residue), causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph) node tth_hydrolase (lines 496-500) is grounded to 4 consortium tetrathionate hydrolase protein_examples across 3 species (Acidithiobacillus ferrooxidans ATCC 23270 UniProtKB:B7J3C9 tth / AFE_0029, Acidithiobacillus thiooxidans ATCC 19377 UniProtKB:A0A5P9XPU3 tth / GCD22_14205 and UniProtKB:A0A5P9XS05 tth / GCD22_02315, and Acidithiobacillus caldus SM-1 UniProtKB:F9ZNI0 Atc_1595 / TetH), but retains label 'Tth / TetH tetrathionate hydrolase (consortium tth)' (omitting tetH from the parenthetical) and a generic description 'Periplasmic pyrroloquinoline-domain hydrolase disproportionating tetrathionate into sulfate and protons.' that omits all grounded consortium species and locus tags, whereas sibling node sqr_reductase (lines 318-322) explicitly lists all grounded consortium species and locus tags in its description.
+In data/records/traction-battery-hydrometallurgical-residue.yaml (cmmmech:traction-battery-hydrometallurgical-residue), causal_graphs[0] (acidophile_culture_associated_leaching_graph) node tth_hydrolase (lines 496-500) is grounded to 4 consortium tetrathionate hydrolase protein_examples across 3 species (Acidithiobacillus ferrooxidans ATCC 23270 UniProtKB:B7J3C9 tth / AFE_0029, Acidithiobacillus thiooxidans ATCC 19377 UniProtKB:A0A5P9XPU3 tth / GCD22_14205 and UniProtKB:A0A5P9XS05 tth / GCD22_02315, and Acidithiobacillus caldus SM-1 UniProtKB:F9ZNI0 Atc_1595 / TetH), but retains label 'Tth / TetH tetrathionate hydrolase (consortium tth)' (omitting tetH from the parenthetical) and a generic description 'Periplasmic pyrroloquinoline-domain hydrolase disproportionating tetrathionate into sulfate and protons.' that omits all grounded consortium species and locus tags, whereas sibling node sqr_reductase (lines 318-322) explicitly lists all grounded consortium species and locus tags in its description.
 
 ### cmmmech-cycle6-stage4-finding-0002: 16 single-species Acidithiobacillus thiooxidans causal_graphs retain singular tth_hydrolase node label and omit grounded paralog loci (GCD22_14205, GCD22_02315) in description
 
 minor / open / confirmed; issue key: cmmmech.thiooxidans-causal-graphs.tth-hydrolase-node-omits-paralog-loci.
 
-Across the 673-record corpus, 16 single-species Acidithiobacillus thiooxidans records (arsenic, automotive-wastewater-treatment-sludge, blast-furnace-cast-house-dust, copper-smelter-slag, discarded-led-lamps, electric-arc-furnace-dust, gaas-production-hydroxide-sludge, gallium, gold-mine-tailings, metallic-machining-burrs, nickel-based-superalloy-residue-powders, spent-alkaline-zinc-carbon-batteries, spent-automotive-three-way-catalyst, spent-hydrodesulfurization-catalyst, spent-selective-catalytic-reduction-catalyst, spent-sulfuric-acid-production-catalyst) whose tth_hydrolase causal-graph nodes were expanded in Cycle 5 Stage 3 (PR #872) to include both A. thiooxidans ATCC 19377 tetrathionate hydrolase paralogs (UniProtKB:A0A5P9XPU3 tth / GCD22_14205 and UniProtKB:A0A5P9XS05 tth / GCD22_02315) still retain the pre-expansion singular label 'Tth tetrathionate hydrolase (tth)' and generic description 'Periplasmic tetrathionate hydrolase disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.' without naming the two grounded paralog loci (GCD22_14205 and GCD22_02315), whereas sibling node sqr_reductase in all 16 graphs explicitly names '(Sqr/Sqor; GCD22_02301 / GCD22_03207)' in its description and the 5 Cycle 6 Stage 2/3 A. thiooxidans records (chromite-beneficiation-tailings, jarosite, nickel-laterite-ore, nickel, petroleum-coke) explicitly name '(tth GCD22_14205; tth GCD22_02315)'. In this scope, 16 record(s) (arsenic, automotive-wastewater-treatment-sludge, blast-furnace-cast-house-dust, copper-smelter-slag, discarded-led-lamps, electric-arc-furnace-dust, gaas-production-hydroxide-sludge, gallium, gold-mine-tailings, metallic-machining-burrs, nickel-based-superalloy-residue-powders, spent-alkaline-zinc-carbon-batteries, spent-automotive-three-way-catalyst, spent-hydrodesulfurization-catalyst, spent-selective-catalytic-reduction-catalyst, spent-sulfuric-acid-production-catalyst) exhibit this node label/description lag.
+Across the 673-record corpus, 16 single-species Acidithiobacillus thiooxidans records (arsenic, automotive-wastewater-treatment-sludge, blast-furnace-cast-house-dust, copper-smelter-slag, discarded-led-lamps, electric-arc-furnace-dust, gaas-production-hydroxide-sludge, gallium, gold-mine-tailings, metallic-machining-burrs, nickel-based-superalloy-residue-powders, spent-alkaline-zinc-carbon-batteries, spent-automotive-three-way-catalyst, spent-hydrodesulfurization-catalyst, spent-selective-catalytic-reduction-catalyst, spent-sulfuric-acid-production-catalyst) whose tth_hydrolase causal-graph nodes were expanded in Cycle 5 Stage 3 (PR #872) to include both A. thiooxidans ATCC 19377 tetrathionate hydrolase paralogs (UniProtKB:A0A5P9XPU3 tth / GCD22_14205 and UniProtKB:A0A5P9XS05 tth / GCD22_02315) still retain the pre-expansion singular label 'Tth tetrathionate hydrolase (tth)' and generic description 'Periplasmic tetrathionate hydrolase disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.' without naming the two grounded paralog loci (GCD22_14205 and GCD22_02315), whereas sibling node sqr_reductase in all 16 graphs has label 'Sqr/Sqor sulfide-quinone reductase (sqr / sqor)' and explicitly names '(Sqr/Sqor; GCD22_02301 / GCD22_03207)' in its description, and the 8 Cycle 6 Stage 2 (PR #888, commit a9115e6c) single-species A. thiooxidans records (beverage-carton-hydropulping-reject, chromite-beneficiation-tailings, goethite, jarosite, nickel-laterite-ore, nickel, petroleum-coke, pharmaceutical-blister-packaging-waste) explicitly name '(tth GCD22_14205; tth GCD22_02315)' in tth_hydrolase.label and '(tth GCD22_14205 and tth GCD22_02315)' in tth_hydrolase.description. In this scope, 16 record(s) (arsenic, automotive-wastewater-treatment-sludge, blast-furnace-cast-house-dust, copper-smelter-slag, discarded-led-lamps, electric-arc-furnace-dust, gaas-production-hydroxide-sludge, gallium, gold-mine-tailings, metallic-machining-burrs, nickel-based-superalloy-residue-powders, spent-alkaline-zinc-carbon-batteries, spent-automotive-three-way-catalyst, spent-hydrodesulfurization-catalyst, spent-selective-catalytic-reduction-catalyst, spent-sulfuric-acid-production-catalyst) exhibit this node label/description lag.
 
 ## Recommended Actions And Acceptance Checks
 
@@ -239,15 +239,19 @@ verdict: pass_with_limitations
 scientific_review: true
 summary: 'Reviewed all 133 records with causal_graphs (and all 130 records with UniProtKB
   protein_examples) in data/records/*.yaml at commit fab0682688678750d7da4e5357dda11592d5fac3,
-  including the 5 Cycle 6 Stage 2-3 records (cmmmech:chromite-beneficiation-tailings,
-  cmmmech:jarosite, cmmmech:nickel-laterite-ore, cmmmech:nickel, cmmmech:petroleum-coke).
-  Verified 141 causal graphs, 642 nodes, 501 edges, 243 GENE_OR_PROTEIN nodes (237
-  GROUNDED, 6 UNGROUNDED across 6 records), and 394 protein_examples per layer (788
-  total across mechanisms and causal_graphs, with 100% synchronization and 67 unique
-  live-verified UniProtKB accessions: 22 SWISS_PROT and 45 TREMBL). Identified 2 minor
-  graph node label/description findings (cmmmech-cycle6-stage4-finding-0001 on cmmmech:traction-battery-hydrometallurgical-residue
-  and cmmmech-cycle6-stage4-finding-0002 across 16 single-species A. thiooxidans records)
-  for Stage 5 grouped remediation.'
+  including the 14 Cycle 6 Stage 2 (PR #888, commit a9115e6c) records (beverage-carton-hydropulping-reject,
+  chalcopyrite-enargite-concentrate, chromite-beneficiation-tailings, fish-bone-residues,
+  goethite, jarosite, lithium-mica-ore, municipal-sewage-sludge, nickel-laterite-ore,
+  nickel, petroleum-coke, pharmaceutical-blister-packaging-waste, poultry-bone-residues,
+  tannery-sludge) and the 12 Cycle 6 Stage 3 (PR #893, commit fab06826) records (allanite-concentrate,
+  allanite-leachate, cerussite, dunite, enstatite, fluorapatite, hafnium, hollandite,
+  humboldtine, malachite, olivine-group, thulium). Verified 141 causal graphs, 642
+  nodes, 501 edges, 243 GENE_OR_PROTEIN nodes (237 GROUNDED, 6 UNGROUNDED across 6
+  records), and 394 protein_examples per layer (788 total across mechanisms and causal_graphs,
+  with 100% synchronization and 67 unique live-verified UniProtKB accessions: 22 SWISS_PROT
+  and 45 TREMBL). Identified 2 minor graph node label/description findings (cmmmech-cycle6-stage4-finding-0001
+  on cmmmech:traction-battery-hydrometallurgical-residue and cmmmech-cycle6-stage4-finding-0002
+  across 16 single-species A. thiooxidans records) for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle6-stage4-cohort-reviewer
   kind: agent
@@ -3126,7 +3130,7 @@ findings:
   - ev-causal-graphs-cohort-audit
   - ev-traction-battery-lu2025-cg
   description: In data/records/traction-battery-hydrometallurgical-residue.yaml (cmmmech:traction-battery-hydrometallurgical-residue),
-    causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph) node tth_hydrolase
+    causal_graphs[0] (acidophile_culture_associated_leaching_graph) node tth_hydrolase
     (lines 496-500) is grounded to 4 consortium tetrathionate hydrolase protein_examples
     across 3 species (Acidithiobacillus ferrooxidans ATCC 23270 UniProtKB:B7J3C9 tth
     / AFE_0029, Acidithiobacillus thiooxidans ATCC 19377 UniProtKB:A0A5P9XPU3 tth
@@ -3185,15 +3189,19 @@ findings:
     description ''Periplasmic tetrathionate hydrolase disproportionating tetrathionate
     into thiosulfate, elemental sulfur, sulfate, and protons.'' without naming the
     two grounded paralog loci (GCD22_14205 and GCD22_02315), whereas sibling node
-    sqr_reductase in all 16 graphs explicitly names ''(Sqr/Sqor; GCD22_02301 / GCD22_03207)''
-    in its description and the 5 Cycle 6 Stage 2/3 A. thiooxidans records (chromite-beneficiation-tailings,
-    jarosite, nickel-laterite-ore, nickel, petroleum-coke) explicitly name ''(tth
-    GCD22_14205; tth GCD22_02315)''. In this scope, 16 record(s) (arsenic, automotive-wastewater-treatment-sludge,
-    blast-furnace-cast-house-dust, copper-smelter-slag, discarded-led-lamps, electric-arc-furnace-dust,
-    gaas-production-hydroxide-sludge, gallium, gold-mine-tailings, metallic-machining-burrs,
-    nickel-based-superalloy-residue-powders, spent-alkaline-zinc-carbon-batteries,
-    spent-automotive-three-way-catalyst, spent-hydrodesulfurization-catalyst, spent-selective-catalytic-reduction-catalyst,
-    spent-sulfuric-acid-production-catalyst) exhibit this node label/description lag.'
+    sqr_reductase in all 16 graphs has label ''Sqr/Sqor sulfide-quinone reductase
+    (sqr / sqor)'' and explicitly names ''(Sqr/Sqor; GCD22_02301 / GCD22_03207)''
+    in its description, and the 8 Cycle 6 Stage 2 (PR #888, commit a9115e6c) single-species
+    A. thiooxidans records (beverage-carton-hydropulping-reject, chromite-beneficiation-tailings,
+    goethite, jarosite, nickel-laterite-ore, nickel, petroleum-coke, pharmaceutical-blister-packaging-waste)
+    explicitly name ''(tth GCD22_14205; tth GCD22_02315)'' in tth_hydrolase.label
+    and ''(tth GCD22_14205 and tth GCD22_02315)'' in tth_hydrolase.description. In
+    this scope, 16 record(s) (arsenic, automotive-wastewater-treatment-sludge, blast-furnace-cast-house-dust,
+    copper-smelter-slag, discarded-led-lamps, electric-arc-furnace-dust, gaas-production-hydroxide-sludge,
+    gallium, gold-mine-tailings, metallic-machining-burrs, nickel-based-superalloy-residue-powders,
+    spent-alkaline-zinc-carbon-batteries, spent-automotive-three-way-catalyst, spent-hydrodesulfurization-catalyst,
+    spent-selective-catalytic-reduction-catalyst, spent-sulfuric-acid-production-catalyst)
+    exhibit this node label/description lag.'
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/arsenic.yaml

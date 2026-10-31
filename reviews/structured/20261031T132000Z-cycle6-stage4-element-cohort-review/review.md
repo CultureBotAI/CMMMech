@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 66 element records in data/records/*.yaml at commit fab0682688678750d7da4e5357dda11592d5fac3, including the Cycle 6 Stage 2-3 causal graph and UniProtKB grounding additions on cmmmech:nickel (thiooxidans_pentlandite_bioleaching_graph, 4 A. thiooxidans Sqr/Sqor and Tth protein_examples) and the Cycle 5 Stage 5 top-level key-order normalizations across 5 element records (beryllium, cesium, rhenium, rubidium, strontium). Every element record carries a verified CHEBI atom identifier, dated government/intergovernmental criticality assessments, and primary-source-backed microbial mechanisms across 63/66 element records (66 mechanisms total), including 25/66 with multi-step causal_graphs (26 graphs) and 24/66 with live-verified UniProtKB protein_examples (34 unique accessions). Identified 1 minor graph node label/description finding (cmmmech-cycle6-stage4-finding-0002 in 2 element records: arsenic, gallium) for Stage 5 grouped remediation.
+Reviewed all 66 element records in data/records/*.yaml at commit fab0682688678750d7da4e5357dda11592d5fac3, including the Cycle 6 Stage 2 (PR #888, commit a9115e6c) causal graph and UniProtKB grounding addition on cmmmech:nickel (thiooxidans_pentlandite_bioleaching_graph, 4 A. thiooxidans Sqr/Sqor and Tth protein_examples), the Cycle 6 Stage 3 (PR #893, commit fab06826) UniProtKB grounding additions and synchronizations on cmmmech:hafnium and cmmmech:thulium, and the Cycle 5 Stage 5 (PR #880, commit b9ef4149) top-level key-order normalizations across 9 element records (chromium, hafnium, manganese, praseodymium, scandium, selenium, silicon, uranium, vanadium). Every element record carries a verified CHEBI atom identifier, dated government/intergovernmental criticality assessments, and primary-source-backed microbial mechanisms across 63/66 element records (66 mechanisms total), including 25/66 with multi-step causal_graphs (26 graphs) and 24/66 with live-verified UniProtKB protein_examples (34 unique accessions). Identified 1 minor graph node label/description finding (cmmmech-cycle6-stage4-finding-0002 in 2 element records: arsenic, gallium) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -110,7 +110,7 @@ All 66 element records carry canonical CHEBI atom CURIEs and labels with 0 cross
 
 evidence: supported. Targets: cmmmech:aluminium, cmmmech:antimony, cmmmech:arsenic, cmmmech:beryllium, cmmmech:bismuth, cmmmech:boron, cmmmech:cadmium, cmmmech:cerium, cmmmech:cesium, cmmmech:chromium, cmmmech:cobalt, cmmmech:copper, cmmmech:dysprosium, cmmmech:erbium, cmmmech:europium, cmmmech:fluorine, cmmmech:gadolinium, cmmmech:gallium, cmmmech:germanium, cmmmech:gold, cmmmech:hafnium, cmmmech:helium, cmmmech:holmium, cmmmech:indium, cmmmech:iridium, cmmmech:iron, cmmmech:lanthanum, cmmmech:lead, cmmmech:lithium, cmmmech:lutetium, cmmmech:magnesium, cmmmech:manganese, cmmmech:molybdenum, cmmmech:neodymium, cmmmech:nickel, cmmmech:niobium, cmmmech:osmium, cmmmech:palladium, cmmmech:phosphorus, cmmmech:platinum, cmmmech:praseodymium, cmmmech:promethium, cmmmech:rhenium, cmmmech:rhodium, cmmmech:rubidium, cmmmech:ruthenium, cmmmech:samarium, cmmmech:scandium, cmmmech:selenium, cmmmech:silicon, cmmmech:silver, cmmmech:strontium, cmmmech:tantalum, cmmmech:tellurium, cmmmech:terbium, cmmmech:thallium, cmmmech:thulium, cmmmech:tin, cmmmech:titanium, cmmmech:tungsten, cmmmech:uranium, cmmmech:vanadium, cmmmech:ytterbium, cmmmech:yttrium, cmmmech:zinc, cmmmech:zirconium.
 
-63/66 element records contain primary-source-supported microbial mechanisms (66 mechanisms total); 25/66 contain causal_graphs (26 graphs), with 24/25 grounded to 34 unique UniProtKB accessions (including cmmmech:nickel grounded in Cycle 6 Stage 3) and 1/25 (cmmmech:iron) plus 2 mechanisms in cmmmech:manganese and cmmmech:praseodymium explicitly marked UNGROUNDED. Two element records (cmmmech:arsenic, cmmmech:gallium) retain pre-expansion singular tth_hydrolase node labels and descriptions omitting paralog loci GCD22_14205 and GCD22_02315.
+63/66 element records contain primary-source-supported microbial mechanisms (66 mechanisms total); 25/66 contain causal_graphs (26 graphs), with 24/25 grounded to 34 unique UniProtKB accessions (including cmmmech:nickel grounded in Cycle 6 Stage 2 and cmmmech:hafnium and cmmmech:thulium grounded in Cycle 6 Stage 3) and 1/25 (cmmmech:iron) plus 2 mechanisms in cmmmech:manganese and cmmmech:praseodymium explicitly marked UNGROUNDED. Two element records (cmmmech:arsenic, cmmmech:gallium) retain pre-expansion singular tth_hydrolase node labels and descriptions omitting paralog loci GCD22_14205 and GCD22_02315.
 
 ## Findings
 
@@ -118,7 +118,7 @@ evidence: supported. Targets: cmmmech:aluminium, cmmmech:antimony, cmmmech:arsen
 
 minor / open / confirmed; issue key: cmmmech.thiooxidans-causal-graphs.tth-hydrolase-node-omits-paralog-loci.
 
-Across the 673-record corpus, 16 single-species Acidithiobacillus thiooxidans records (arsenic, automotive-wastewater-treatment-sludge, blast-furnace-cast-house-dust, copper-smelter-slag, discarded-led-lamps, electric-arc-furnace-dust, gaas-production-hydroxide-sludge, gallium, gold-mine-tailings, metallic-machining-burrs, nickel-based-superalloy-residue-powders, spent-alkaline-zinc-carbon-batteries, spent-automotive-three-way-catalyst, spent-hydrodesulfurization-catalyst, spent-selective-catalytic-reduction-catalyst, spent-sulfuric-acid-production-catalyst) whose tth_hydrolase causal-graph nodes were expanded in Cycle 5 Stage 3 (PR #872) to include both A. thiooxidans ATCC 19377 tetrathionate hydrolase paralogs (UniProtKB:A0A5P9XPU3 tth / GCD22_14205 and UniProtKB:A0A5P9XS05 tth / GCD22_02315) still retain the pre-expansion singular label 'Tth tetrathionate hydrolase (tth)' and generic description 'Periplasmic tetrathionate hydrolase disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.' without naming the two grounded paralog loci (GCD22_14205 and GCD22_02315), whereas sibling node sqr_reductase in all 16 graphs explicitly names '(Sqr/Sqor; GCD22_02301 / GCD22_03207)' in its description and the 5 Cycle 6 Stage 2/3 A. thiooxidans records (chromite-beneficiation-tailings, jarosite, nickel-laterite-ore, nickel, petroleum-coke) explicitly name '(tth GCD22_14205; tth GCD22_02315)'. In this scope, 2 record(s) (arsenic, gallium) exhibit this node label/description lag.
+Across the 673-record corpus, 16 single-species Acidithiobacillus thiooxidans records (arsenic, automotive-wastewater-treatment-sludge, blast-furnace-cast-house-dust, copper-smelter-slag, discarded-led-lamps, electric-arc-furnace-dust, gaas-production-hydroxide-sludge, gallium, gold-mine-tailings, metallic-machining-burrs, nickel-based-superalloy-residue-powders, spent-alkaline-zinc-carbon-batteries, spent-automotive-three-way-catalyst, spent-hydrodesulfurization-catalyst, spent-selective-catalytic-reduction-catalyst, spent-sulfuric-acid-production-catalyst) whose tth_hydrolase causal-graph nodes were expanded in Cycle 5 Stage 3 (PR #872) to include both A. thiooxidans ATCC 19377 tetrathionate hydrolase paralogs (UniProtKB:A0A5P9XPU3 tth / GCD22_14205 and UniProtKB:A0A5P9XS05 tth / GCD22_02315) still retain the pre-expansion singular label 'Tth tetrathionate hydrolase (tth)' and generic description 'Periplasmic tetrathionate hydrolase disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.' without naming the two grounded paralog loci (GCD22_14205 and GCD22_02315), whereas sibling node sqr_reductase in all 16 graphs has label 'Sqr/Sqor sulfide-quinone reductase (sqr / sqor)' and explicitly names '(Sqr/Sqor; GCD22_02301 / GCD22_03207)' in its description, and the 8 Cycle 6 Stage 2 (PR #888, commit a9115e6c) single-species A. thiooxidans records (beverage-carton-hydropulping-reject, chromite-beneficiation-tailings, goethite, jarosite, nickel-laterite-ore, nickel, petroleum-coke, pharmaceutical-blister-packaging-waste) explicitly name '(tth GCD22_14205; tth GCD22_02315)' in tth_hydrolase.label and '(tth GCD22_14205 and tth GCD22_02315)' in tth_hydrolase.description. In this scope, 2 record(s) (arsenic, gallium) exhibit this node label/description lag.
 
 ## Recommended Actions And Acceptance Checks
 
@@ -141,7 +141,7 @@ Update causal_graphs[0].nodes[1].label and causal_graphs[0].nodes[1].description
 
 ## Limits And Additional Notes
 
-- Three element records currently lack curated microbial mechanism entries: cmmmech:barium, cmmmech:helium, and cmmmech:zirconium are maintained criticality-anchored element records awaiting primary microbial extraction/transformation/recovery evidence. (63/66 element records have curated mechanisms; 3/66 remain identity and criticality records only.)
+- Three element records currently lack curated microbial mechanism entries: cmmmech:beryllium, cmmmech:helium, and cmmmech:promethium are maintained criticality-anchored element records awaiting primary microbial extraction/transformation/recovery evidence. (63/66 element records have curated mechanisms; 3/66 remain identity and criticality records only.)
 - Three element causal graphs contain source-limited UNGROUNDED GENE_OR_PROTEIN nodes: Caloranaerobacter ferrireducens / Thermococcus acidaminovorans Ax17 (cmmmech:iron), Penicillium/Aspergillus/Acinetobacter organic-acid leaching isolates (cmmmech:manganese), and Acidovorax sp. LW1 cell-surface Pr(III) biosorption (cmmmech:praseodymium) lack strain-resolved enzyme groundings in UniProtKB. (24/25 element records with causal_graphs have GROUNDED GENE_OR_PROTEIN nodes; 3 graphs retain explicitly documented UNGROUNDED nodes.)
 - Cohort covers 100% (66/66) of element records in data/records/*.yaml at commit fab0682688678750d7da4e5357dda11592d5fac3.
 
@@ -162,14 +162,17 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 summary: 'Reviewed all 66 element records in data/records/*.yaml at commit fab0682688678750d7da4e5357dda11592d5fac3,
-  including the Cycle 6 Stage 2-3 causal graph and UniProtKB grounding additions on
-  cmmmech:nickel (thiooxidans_pentlandite_bioleaching_graph, 4 A. thiooxidans Sqr/Sqor
-  and Tth protein_examples) and the Cycle 5 Stage 5 top-level key-order normalizations
-  across 5 element records (beryllium, cesium, rhenium, rubidium, strontium). Every
-  element record carries a verified CHEBI atom identifier, dated government/intergovernmental
-  criticality assessments, and primary-source-backed microbial mechanisms across 63/66
-  element records (66 mechanisms total), including 25/66 with multi-step causal_graphs
-  (26 graphs) and 24/66 with live-verified UniProtKB protein_examples (34 unique accessions).
+  including the Cycle 6 Stage 2 (PR #888, commit a9115e6c) causal graph and UniProtKB
+  grounding addition on cmmmech:nickel (thiooxidans_pentlandite_bioleaching_graph,
+  4 A. thiooxidans Sqr/Sqor and Tth protein_examples), the Cycle 6 Stage 3 (PR #893,
+  commit fab06826) UniProtKB grounding additions and synchronizations on cmmmech:hafnium
+  and cmmmech:thulium, and the Cycle 5 Stage 5 (PR #880, commit b9ef4149) top-level
+  key-order normalizations across 9 element records (chromium, hafnium, manganese,
+  praseodymium, scandium, selenium, silicon, uranium, vanadium). Every element record
+  carries a verified CHEBI atom identifier, dated government/intergovernmental criticality
+  assessments, and primary-source-backed microbial mechanisms across 63/66 element
+  records (66 mechanisms total), including 25/66 with multi-step causal_graphs (26
+  graphs) and 24/66 with live-verified UniProtKB protein_examples (34 unique accessions).
   Identified 1 minor graph node label/description finding (cmmmech-cycle6-stage4-finding-0002
   in 2 element records: arsenic, gallium) for Stage 5 grouped remediation.'
 reviewer:
@@ -1696,10 +1699,11 @@ assessments:
   summary: 63/66 element records contain primary-source-supported microbial mechanisms
     (66 mechanisms total); 25/66 contain causal_graphs (26 graphs), with 24/25 grounded
     to 34 unique UniProtKB accessions (including cmmmech:nickel grounded in Cycle
-    6 Stage 3) and 1/25 (cmmmech:iron) plus 2 mechanisms in cmmmech:manganese and
-    cmmmech:praseodymium explicitly marked UNGROUNDED. Two element records (cmmmech:arsenic,
-    cmmmech:gallium) retain pre-expansion singular tth_hydrolase node labels and descriptions
-    omitting paralog loci GCD22_14205 and GCD22_02315.
+    6 Stage 2 and cmmmech:hafnium and cmmmech:thulium grounded in Cycle 6 Stage 3)
+    and 1/25 (cmmmech:iron) plus 2 mechanisms in cmmmech:manganese and cmmmech:praseodymium
+    explicitly marked UNGROUNDED. Two element records (cmmmech:arsenic, cmmmech:gallium)
+    retain pre-expansion singular tth_hydrolase node labels and descriptions omitting
+    paralog loci GCD22_14205 and GCD22_02315.
 findings:
 - finding_id: cmmmech-cycle6-stage4-finding-0002
   issue_key: cmmmech.thiooxidans-causal-graphs.tth-hydrolase-node-omits-paralog-loci
@@ -1731,11 +1735,15 @@ findings:
     description ''Periplasmic tetrathionate hydrolase disproportionating tetrathionate
     into thiosulfate, elemental sulfur, sulfate, and protons.'' without naming the
     two grounded paralog loci (GCD22_14205 and GCD22_02315), whereas sibling node
-    sqr_reductase in all 16 graphs explicitly names ''(Sqr/Sqor; GCD22_02301 / GCD22_03207)''
-    in its description and the 5 Cycle 6 Stage 2/3 A. thiooxidans records (chromite-beneficiation-tailings,
-    jarosite, nickel-laterite-ore, nickel, petroleum-coke) explicitly name ''(tth
-    GCD22_14205; tth GCD22_02315)''. In this scope, 2 record(s) (arsenic, gallium)
-    exhibit this node label/description lag.'
+    sqr_reductase in all 16 graphs has label ''Sqr/Sqor sulfide-quinone reductase
+    (sqr / sqor)'' and explicitly names ''(Sqr/Sqor; GCD22_02301 / GCD22_03207)''
+    in its description, and the 8 Cycle 6 Stage 2 (PR #888, commit a9115e6c) single-species
+    A. thiooxidans records (beverage-carton-hydropulping-reject, chromite-beneficiation-tailings,
+    goethite, jarosite, nickel-laterite-ore, nickel, petroleum-coke, pharmaceutical-blister-packaging-waste)
+    explicitly name ''(tth GCD22_14205; tth GCD22_02315)'' in tth_hydrolase.label
+    and ''(tth GCD22_14205 and tth GCD22_02315)'' in tth_hydrolase.description. In
+    this scope, 2 record(s) (arsenic, gallium) exhibit this node label/description
+    lag.'
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/arsenic.yaml
@@ -1777,8 +1785,8 @@ evidence:
   summary: Full programmatic and source-backed audit of all 66 element records at
     commit fab0682688678750d7da4e5357dda11592d5fac3.
 limitations:
-- 'Three element records currently lack curated microbial mechanism entries: cmmmech:barium,
-  cmmmech:helium, and cmmmech:zirconium are maintained criticality-anchored element
+- 'Three element records currently lack curated microbial mechanism entries: cmmmech:beryllium,
+  cmmmech:helium, and cmmmech:promethium are maintained criticality-anchored element
   records awaiting primary microbial extraction/transformation/recovery evidence.
   (63/66 element records have curated mechanisms; 3/66 remain identity and criticality
   records only.)'

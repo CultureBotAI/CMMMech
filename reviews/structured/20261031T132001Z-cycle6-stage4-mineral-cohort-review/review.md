@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 422 mineral records in data/records/*.yaml at commit fab0682688678750d7da4e5357dda11592d5fac3, including the 5 Cycle 6 Stage 1 Round 124 IMA mineral additions (laurentthomasite, moabite, vielleaureite-ce, wumuite, xianhuaite-ce) and the Cycle 6 Stage 2-3 cmmmech:jarosite causal-graph and UniProtKB grounding addition (thiooxidans_sulfur_coupled_jarosite_transformation_graph, 4 A. thiooxidans Sqr/Sqor and Tth protein_examples). All 422 mineral records are grounded to IMA-CNMNC mineral species identity without fabricating constituent-element criticality inheritance. 285/422 mineral records contain primary-source-supported microbial mechanisms (343 mechanisms total), 56/422 contain causal_graphs (59 graphs), and 54/56 carry live-verified UniProtKB protein_examples across 35 unique accessions (with cmmmech:ferrihydrite and cmmmech:magnetite plus the Pseudomonas sp. OX1 graph in cmmmech:lindbergite explicitly UNGROUNDED). Identified 1 minor completeness finding (cmmmech-cycle6-stage4-finding-0003: missing top-level ima_symbol slot on cmmmech:vielleaureite-ce and cmmmech:xianhuaite-ce despite IMA symbols Vlr-Ce and Xhu-Ce stated in description) for Stage 5 grouped remediation.
+Reviewed all 422 mineral records in data/records/*.yaml at commit fab0682688678750d7da4e5357dda11592d5fac3, including the 5 Cycle 6 Stage 1 (PR #884) Round 124 IMA mineral additions (laurentthomasite, moabite, vielleaureite-ce, wumuite, xianhuaite-ce), the 2 Cycle 6 Stage 2 (PR #888, commit a9115e6c) mineral causal-graph and UniProtKB grounding additions (cmmmech:goethite and cmmmech:jarosite), and the 6 Cycle 6 Stage 3 (PR #893, commit fab06826) mineral UniProtKB grounding additions and synchronizations (cmmmech:cerussite, cmmmech:enstatite, cmmmech:fluorapatite, cmmmech:hollandite, cmmmech:humboldtine, cmmmech:malachite). All 422 mineral records are grounded to IMA-CNMNC mineral species identity without fabricating constituent-element criticality inheritance. 285/422 mineral records contain primary-source-supported microbial mechanisms (343 mechanisms total), 56/422 contain causal_graphs (59 graphs), and 54/56 carry live-verified UniProtKB protein_examples across 35 unique accessions (with cmmmech:ferrihydrite and cmmmech:magnetite plus the Pseudomonas sp. OX1 graph in cmmmech:lindbergite explicitly UNGROUNDED). Identified 1 minor completeness finding (cmmmech-cycle6-stage4-finding-0003: missing top-level ima_symbol slot on cmmmech:vielleaureite-ce and cmmmech:xianhuaite-ce despite IMA symbols Vlr-Ce and Xhu-Ce stated in description) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -466,7 +466,7 @@ All 422 mineral records accurately distinguish IMA-approved mineral species from
 
 evidence: supported. Targets: cmmmech:acanthite, cmmmech:adamsite-y, cmmmech:akaganeite, cmmmech:alabandite, cmmmech:albite, cmmmech:alburnite, cmmmech:alicewilsonite-yce, cmmmech:alicewilsonite-yla, cmmmech:aluminosugilite, cmmmech:alunite, cmmmech:amblygonite, cmmmech:ameghinite, cmmmech:ammonioborite, cmmmech:ammoniojarosite, cmmmech:anatase, cmmmech:ancylite-ce, cmmmech:andersonite, cmmmech:andreybulakhite, cmmmech:anglesite, cmmmech:anhydrite, cmmmech:anilite, cmmmech:annabergite, cmmmech:anorthite, cmmmech:aragonite, cmmmech:argentojarosite, cmmmech:argyrodite, cmmmech:aristarainite, cmmmech:arsenopyrite, cmmmech:artinite, cmmmech:asbolane, cmmmech:atacamite, cmmmech:autunite, cmmmech:azurite, cmmmech:baddeleyite, cmmmech:bainbridgeite-ndce, cmmmech:bainbridgeite-yce, cmmmech:baricite, cmmmech:bario-orthojoaquinite, cmmmech:bassanite, cmmmech:becquerelite, cmmmech:behoite, cmmmech:beudantite, cmmmech:bijvoetite-y, cmmmech:billietite, cmmmech:birnessite, cmmmech:bismuthinite, cmmmech:bixbyite-mn, cmmmech:bobierrite, cmmmech:boehmite, cmmmech:boltwoodite, cmmmech:boracite, cmmmech:borax, cmmmech:bornite, cmmmech:briartite, cmmmech:brochantite, cmmmech:brookite, cmmmech:brucite, cmmmech:brushite, cmmmech:burbankite, cmmmech:burtite, cmmmech:cabalzarite, cmmmech:cabriite, cmmmech:cadmoindite, cmmmech:calcioancylite-la, cmmmech:calcioburbankite, cmmmech:calciohilairite, cmmmech:calcioveatchite, cmmmech:calcite, cmmmech:calkinsite-ce, cmmmech:carnotite, cmmmech:carrollite, cmmmech:cassidyite, cmmmech:cassiterite, cmmmech:catapleiite, cmmmech:cattiite, cmmmech:cavansite, cmmmech:caysichite-y, cmmmech:celestine, cmmmech:cerianite-ce, cmmmech:cerussite, cmmmech:chalcocite, cmmmech:chalcopyrite, cmmmech:chernikovite, cmmmech:childrenite, cmmmech:chlorapatite, cmmmech:chromite, cmmmech:chrysotile, cmmmech:chukanovite, cmmmech:churchite-y, cmmmech:cinnabar, cmmmech:cobaltite, cmmmech:coconinoite, cmmmech:coffinite, cmmmech:colemanite, cmmmech:compreignacite, cmmmech:coquimbite, cmmmech:cordylite-ce, cmmmech:corkite, cmmmech:coutinhoite, cmmmech:covellite, cmmmech:crandallite, cmmmech:cryptomelane, cmmmech:cuprite, cmmmech:cuprosklodowskite, cmmmech:curite, cmmmech:digenite, cmmmech:diopside, cmmmech:dissakisite-ce, cmmmech:dittmarite, cmmmech:djurleite, cmmmech:dolomite, cmmmech:donnayite-y, cmmmech:dypingite, cmmmech:dzhalindite, cmmmech:elpidite, cmmmech:enstatite, cmmmech:eosphorite, cmmmech:erythrite, cmmmech:ezcurrite, cmmmech:falcondoite, cmmmech:falottaite, cmmmech:feitknechtite, cmmmech:felsobanyaite, cmmmech:feroxyhyte, cmmmech:ferricopiapite, cmmmech:ferrihydrite, cmmmech:ferrokesterite, cmmmech:ferrotitanowodginite, cmmmech:ferrowodginite, cmmmech:fetiasite, cmmmech:florencite-ce, cmmmech:florencite-la, cmmmech:fluorapatite, cmmmech:fluorite, cmmmech:forsterite, cmmmech:franciscanite, cmmmech:fritzscheite, cmmmech:gaidonnayite, cmmmech:galena, cmmmech:gatelite-ce, cmmmech:germanite, cmmmech:gersdorffite, cmmmech:gibbsite, cmmmech:ginorite, cmmmech:gittinsite, cmmmech:glushinskite, cmmmech:goethite, cmmmech:goldmanite, cmmmech:gorceixite, cmmmech:gowerite, cmmmech:goyazite, cmmmech:greenockite, cmmmech:greigite, cmmmech:grimmite, cmmmech:gypsum, cmmmech:gysinite-nd, cmmmech:hafnon, cmmmech:hannayite, cmmmech:haradaite, cmmmech:hauerite, cmmmech:hausmannite, cmmmech:hawleyite, cmmmech:hazenite, cmmmech:heazlewoodite, cmmmech:hematite, cmmmech:hemimorphite, cmmmech:heterogenite, cmmmech:heterosite, cmmmech:hollandite, cmmmech:hopeite, cmmmech:horvathite-y, cmmmech:humboldtine, cmmmech:huntite, cmmmech:hureaulite, cmmmech:hydroboracite, cmmmech:hydrocerussite, cmmmech:hydromagnesite, cmmmech:hydroniumjarosite, cmmmech:hydrotalcite, cmmmech:hydroxylapatite, cmmmech:hydrozincite, cmmmech:ilmenite, cmmmech:inderborite, cmmmech:inderite, cmmmech:indite, cmmmech:inyoite, cmmmech:jadarite, cmmmech:jarosite, cmmmech:kaliborite, cmmmech:kaolinite, cmmmech:katsarosite, cmmmech:kernite, cmmmech:kesterite, cmmmech:khomyakovite, cmmmech:kimrobinsonite, cmmmech:kimuraite-y, cmmmech:kornelite, cmmmech:kozoite-la, cmmmech:kozoite-nd, cmmmech:kukharenkoite-ce, cmmmech:kuliokite-y, cmmmech:kurnakovite, cmmmech:kutnohorite, cmmmech:laforetite, cmmmech:lansfordite, cmmmech:lanthanite-ce, cmmmech:lanthanite-la, cmmmech:lanthanite-nd, cmmmech:larderellite, cmmmech:laueite, cmmmech:laurentthomasite, cmmmech:lemoynite, cmmmech:lepidocrocite, cmmmech:liandratite, cmmmech:libethenite, cmmmech:liguowuite, cmmmech:lindbergite, cmmmech:lithiophilite, cmmmech:lizardite, cmmmech:loellingite, cmmmech:lorenzenite, cmmmech:lucasite-ce, cmmmech:ludlamite, cmmmech:lukechangite-ce, cmmmech:mackinawite, cmmmech:maghemite, cmmmech:magnetite, cmmmech:malachite, cmmmech:manganite, cmmmech:manganokhomyakovite, cmmmech:manganokukisvumite, cmmmech:marcasite, cmmmech:margaritasite, cmmmech:mcallisterite, cmmmech:mckelveyite-y, cmmmech:melanterite, cmmmech:meta-ankoleite, cmmmech:metacinnabar, cmmmech:metaschoepite, cmmmech:metastudtite, cmmmech:metatorbernite, cmmmech:metatyuyamunite, cmmmech:metavivianite, cmmmech:metazellerite, cmmmech:metazeunerite, cmmmech:meyerhofferite, cmmmech:microcline, cmmmech:millerite, cmmmech:mimetite, cmmmech:moabite, cmmmech:molybdenite, cmmmech:monazite-ce, cmmmech:monazite-gd, cmmmech:monazite-la, cmmmech:monazite-nd, cmmmech:monazite-sm, cmmmech:monetite, cmmmech:monohydrocalcite, cmmmech:montebrasite, cmmmech:monteregianite-y, cmmmech:montmorillonite, cmmmech:montroseite, cmmmech:moolooite, cmmmech:muscovite, cmmmech:natroboltwoodite, cmmmech:natrojarosite, cmmmech:natrolemoynite, cmmmech:navajoite, cmmmech:nepheline, cmmmech:nesquehonite, cmmmech:newberyite, cmmmech:ningyoite, cmmmech:nobleite, cmmmech:nontronite, cmmmech:okanoganite-y, cmmmech:olmsteadite, cmmmech:orpiment, cmmmech:orthoclase, cmmmech:otavite, cmmmech:palygorskite, cmmmech:paracoquimbite, cmmmech:paramontroseite, cmmmech:parasymplesite, cmmmech:parauranophane, cmmmech:pascoite, cmmmech:pentagonite, cmmmech:pentlandite, cmmmech:perovskite, cmmmech:pertlikite, cmmmech:petalite, cmmmech:petersenite-ce, cmmmech:petrukite, cmmmech:petscheckite, cmmmech:phlogopite, cmmmech:phosphoferrite, cmmmech:phosphophyllite, cmmmech:piilonenite-nd, cmmmech:pinnoite, cmmmech:plumbojarosite, cmmmech:polydymite, cmmmech:polylithionite, cmmmech:powellite, cmmmech:preobrazhenskite, cmmmech:priceite, cmmmech:probertite, cmmmech:pyrite, cmmmech:pyroaurite, cmmmech:pyrochroite, cmmmech:pyrolusite, cmmmech:pyromorphite, cmmmech:pyrrhotite, cmmmech:qaqarssukite-ce, cmmmech:quenstedtite, cmmmech:ramsdellite, cmmmech:realgar, cmmmech:regerite, cmmmech:renierite, cmmmech:retzian-nd, cmmmech:rhabdophane-ce, cmmmech:rhabdophane-la, cmmmech:rhodochrosite, cmmmech:rhomboclase, cmmmech:richetite, cmmmech:riebeckite, cmmmech:rivadavite, cmmmech:romanechite, cmmmech:roquesite, cmmmech:roscoelite, cmmmech:rozenite, cmmmech:rutherfordine, cmmmech:rutile, cmmmech:sabinaite, cmmmech:sabugalite, cmmmech:sakuraiite, cmmmech:saleeite, cmmmech:saponite, cmmmech:sauconite, cmmmech:scheelite, cmmmech:schertelite, cmmmech:schoepite, cmmmech:schwertmannite, cmmmech:scorodite, cmmmech:senarmontite, cmmmech:sepiolite, cmmmech:sheldrickite, cmmmech:siderite, cmmmech:simonkolleite, cmmmech:sklodowskite, cmmmech:skutterudite, cmmmech:smithsonite, cmmmech:soddyite, cmmmech:sphalerite, cmmmech:spodumene, cmmmech:stannite, cmmmech:stevensite, cmmmech:stibnite, cmmmech:stolzite, cmmmech:strengite, cmmmech:strontianite, cmmmech:struvite-k, cmmmech:struvite, cmmmech:studtite, cmmmech:sulfoborite, cmmmech:svanbergite, cmmmech:switzerite, cmmmech:synchysite-ce, cmmmech:szaibelyite, cmmmech:szomolnokite, cmmmech:talc, cmmmech:tennantite-in, cmmmech:tenorite, cmmmech:thomasclarkite-y, cmmmech:tincalconite, cmmmech:titanite, cmmmech:titanowodginite, cmmmech:todorokite, cmmmech:torbernite, cmmmech:triphylite, cmmmech:troilite, cmmmech:tunellite, cmmmech:ulexite, cmmmech:uramphite, cmmmech:uraninite, cmmmech:uranophane, cmmmech:uranopilite, cmmmech:vaesite, cmmmech:vandenbrandeite, cmmmech:variscite, cmmmech:vaterite, cmmmech:veatchite, cmmmech:vielleaureite-ce, cmmmech:violarite, cmmmech:virgilite, cmmmech:vivianite, cmmmech:voltaite, cmmmech:weddellite, cmmmech:weeksite, cmmmech:weloganite, cmmmech:wheatleyite, cmmmech:whewellite, cmmmech:whitlockite, cmmmech:widgiemoolthalite, cmmmech:willemite, cmmmech:wollastonite, cmmmech:woodhouseite, cmmmech:wulfenite, cmmmech:wumuite, cmmmech:wurtzite, cmmmech:xenotime-gd, cmmmech:xenotime-y, cmmmech:xenotime-yb, cmmmech:xianhuaite-ce, cmmmech:yanomamite, cmmmech:yttrotungstite-nd, cmmmech:yusupovite, cmmmech:zektzerite, cmmmech:zeunerite, cmmmech:zincite, cmmmech:zincobriartite, cmmmech:zippeite, cmmmech:zircon, cmmmech:zirconolite.
 
-285/422 mineral records contain primary-source-supported microbial mechanisms (343 mechanisms total), 56/422 contain causal_graphs (59 graphs), and 54/56 carry verified UniProtKB protein_examples across 35 unique accessions (including cmmmech:jarosite grounded in Cycle 6 Stage 3).
+285/422 mineral records contain primary-source-supported microbial mechanisms (343 mechanisms total), 56/422 contain causal_graphs (59 graphs), and 54/56 carry verified UniProtKB protein_examples across 35 unique accessions (including cmmmech:goethite and cmmmech:jarosite grounded in Cycle 6 Stage 2 and cmmmech:cerussite, cmmmech:enstatite, cmmmech:fluorapatite, cmmmech:hollandite, cmmmech:humboldtine, and cmmmech:malachite grounded in Cycle 6 Stage 3).
 
 ## Findings
 
@@ -474,7 +474,7 @@ evidence: supported. Targets: cmmmech:acanthite, cmmmech:adamsite-y, cmmmech:aka
 
 minor / open / confirmed; issue key: cmmmech.round124-minerals.missing-ima-symbol-slot.
 
-Both data/records/vielleaureite-ce.yaml (cmmmech:vielleaureite-ce) and data/records/xianhuaite-ce.yaml (cmmmech:xianhuaite-ce), curated in Cycle 6 Stage 1 (PR #884), state their IMA-CNMNC-approved mineral symbols in description ('Vielleaureite-(Ce) (IMA 2022-134, symbol Vlr-Ce; ...)' from Ragu et al. 2025 Eur. J. Mineral. 37:627-643, p. 627; and 'Xianhuaite-(Ce) (IMA 2024-091, symbol Xhu-Ce)' from Yang et al. 2026 Am. Mineral. 111(3):449-459, p. 449), but omit the top-level ima_symbol slot (ima_symbol: Vlr-Ce and ima_symbol: Xhu-Ce after material_kind: mineral), unlike peer IMA mineral records such as data/records/andreybulakhite.yaml (ima_symbol: Adb) and data/records/yttrotungstite-nd.yaml (ima_symbol: Ytgs-Nd). In this scope, 2 record(s) (vielleaureite-ce, xianhuaite-ce) omit ima_symbol.
+Both data/records/vielleaureite-ce.yaml (cmmmech:vielleaureite-ce) and data/records/xianhuaite-ce.yaml (cmmmech:xianhuaite-ce), curated in Cycle 6 Stage 1 (PR #884), state their IMA-CNMNC-approved mineral symbols in description ('Vielleaureite-(Ce) (IMA 2022-134, symbol Vlr-Ce; ...)' from Ragu et al. 2025 Eur. J. Mineral. 37:627-638, p. 627 and IMA-CNMNC September 2026 PDF p. 228; and 'Xianhuaite-(Ce) (IMA 2024-091, symbol Xhu-Ce)' from Yang et al. 2026 Eur. J. Mineral. 38:449-459, p. 449 and IMA-CNMNC September 2026 PDF p. 236), but omit the top-level ima_symbol slot (ima_symbol: Vlr-Ce and ima_symbol: Xhu-Ce after material_kind: mineral), unlike peer IMA mineral records such as data/records/andreybulakhite.yaml (ima_symbol: Adb) and data/records/yttrotungstite-nd.yaml (ima_symbol: Ytgs-Nd). In this scope, 2 record(s) (vielleaureite-ce, xianhuaite-ce) omit ima_symbol.
 
 ## Recommended Actions And Acceptance Checks
 
@@ -494,8 +494,8 @@ Add top-level ima_symbol: Vlr-Ce to data/records/vielleaureite-ce.yaml and top-l
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
 | ev-mineral-cohort-audit | data/records/*.yaml (material_kind == 'mineral'); 422 mineral YAML files | supports | Full programmatic and source-backed audit of all 422 mineral records at commit fab0682688678750d7da4e5357dda11592d5fac3. |
-| ev-ragu2025-vielleaureite-ce | DOI:10.5194/ejm-37-627-2025; Ragu et al. 2025 Eur. J. Mineral. 37:627-643, p. 627 (abstract) | supports | Ragu et al. (2025) report IMA 2022-134 approval and symbol Vlr-Ce for vielleaureite-(Ce). |
-| ev-yang2026-xianhuaite-ce | DOI:10.2138/am-2025-9833; Yang et al. 2026 Am. Mineral. 111(3):449-459, p. 449 (abstract) | supports | Yang et al. (2026) report IMA 2024-091 approval and symbol Xhu-Ce for xianhuaite-(Ce). |
+| ev-ragu2025-vielleaureite-ce | DOI:10.5194/ejm-37-627-2025; Ragu et al. 2025 Eur. J. Mineral. 37:627-638, p. 627 (abstract); IMA-CNMNC September 2026 PDF p. 228 | supports | Ragu et al. (2025) and IMA-CNMNC September 2026 (PDF p. 228) report IMA 2022-134 approval and symbol Vlr-Ce for vielleaureite-(Ce). |
+| ev-yang2026-xianhuaite-ce | DOI:10.5194/ejm-38-449-2026; Yang et al. 2026 Eur. J. Mineral. 38:449-459, p. 449 (abstract); IMA-CNMNC September 2026 PDF p. 236 | supports | Yang et al. (2026) and IMA-CNMNC September 2026 (PDF p. 236) report IMA 2024-091 approval and symbol Xhu-Ce for xianhuaite-(Ce). |
 
 ## Limits And Additional Notes
 
@@ -520,19 +520,21 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 summary: 'Reviewed all 422 mineral records in data/records/*.yaml at commit fab0682688678750d7da4e5357dda11592d5fac3,
-  including the 5 Cycle 6 Stage 1 Round 124 IMA mineral additions (laurentthomasite,
-  moabite, vielleaureite-ce, wumuite, xianhuaite-ce) and the Cycle 6 Stage 2-3 cmmmech:jarosite
-  causal-graph and UniProtKB grounding addition (thiooxidans_sulfur_coupled_jarosite_transformation_graph,
-  4 A. thiooxidans Sqr/Sqor and Tth protein_examples). All 422 mineral records are
-  grounded to IMA-CNMNC mineral species identity without fabricating constituent-element
-  criticality inheritance. 285/422 mineral records contain primary-source-supported
-  microbial mechanisms (343 mechanisms total), 56/422 contain causal_graphs (59 graphs),
-  and 54/56 carry live-verified UniProtKB protein_examples across 35 unique accessions
-  (with cmmmech:ferrihydrite and cmmmech:magnetite plus the Pseudomonas sp. OX1 graph
-  in cmmmech:lindbergite explicitly UNGROUNDED). Identified 1 minor completeness finding
-  (cmmmech-cycle6-stage4-finding-0003: missing top-level ima_symbol slot on cmmmech:vielleaureite-ce
-  and cmmmech:xianhuaite-ce despite IMA symbols Vlr-Ce and Xhu-Ce stated in description)
-  for Stage 5 grouped remediation.'
+  including the 5 Cycle 6 Stage 1 (PR #884) Round 124 IMA mineral additions (laurentthomasite,
+  moabite, vielleaureite-ce, wumuite, xianhuaite-ce), the 2 Cycle 6 Stage 2 (PR #888,
+  commit a9115e6c) mineral causal-graph and UniProtKB grounding additions (cmmmech:goethite
+  and cmmmech:jarosite), and the 6 Cycle 6 Stage 3 (PR #893, commit fab06826) mineral
+  UniProtKB grounding additions and synchronizations (cmmmech:cerussite, cmmmech:enstatite,
+  cmmmech:fluorapatite, cmmmech:hollandite, cmmmech:humboldtine, cmmmech:malachite).
+  All 422 mineral records are grounded to IMA-CNMNC mineral species identity without
+  fabricating constituent-element criticality inheritance. 285/422 mineral records
+  contain primary-source-supported microbial mechanisms (343 mechanisms total), 56/422
+  contain causal_graphs (59 graphs), and 54/56 carry live-verified UniProtKB protein_examples
+  across 35 unique accessions (with cmmmech:ferrihydrite and cmmmech:magnetite plus
+  the Pseudomonas sp. OX1 graph in cmmmech:lindbergite explicitly UNGROUNDED). Identified
+  1 minor completeness finding (cmmmech-cycle6-stage4-finding-0003: missing top-level
+  ima_symbol slot on cmmmech:vielleaureite-ce and cmmmech:xianhuaite-ce despite IMA
+  symbols Vlr-Ce and Xhu-Ce stated in description) for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle6-stage4-cohort-reviewer
   kind: agent
@@ -9893,7 +9895,9 @@ assessments:
   - ev-mineral-cohort-audit
   summary: 285/422 mineral records contain primary-source-supported microbial mechanisms
     (343 mechanisms total), 56/422 contain causal_graphs (59 graphs), and 54/56 carry
-    verified UniProtKB protein_examples across 35 unique accessions (including cmmmech:jarosite
+    verified UniProtKB protein_examples across 35 unique accessions (including cmmmech:goethite
+    and cmmmech:jarosite grounded in Cycle 6 Stage 2 and cmmmech:cerussite, cmmmech:enstatite,
+    cmmmech:fluorapatite, cmmmech:hollandite, cmmmech:humboldtine, and cmmmech:malachite
     grounded in Cycle 6 Stage 3).
 findings:
 - finding_id: cmmmech-cycle6-stage4-finding-0003
@@ -9918,8 +9922,9 @@ findings:
     and data/records/xianhuaite-ce.yaml (cmmmech:xianhuaite-ce), curated in Cycle
     6 Stage 1 (PR #884), state their IMA-CNMNC-approved mineral symbols in description
     (''Vielleaureite-(Ce) (IMA 2022-134, symbol Vlr-Ce; ...)'' from Ragu et al. 2025
-    Eur. J. Mineral. 37:627-643, p. 627; and ''Xianhuaite-(Ce) (IMA 2024-091, symbol
-    Xhu-Ce)'' from Yang et al. 2026 Am. Mineral. 111(3):449-459, p. 449), but omit
+    Eur. J. Mineral. 37:627-638, p. 627 and IMA-CNMNC September 2026 PDF p. 228; and
+    ''Xianhuaite-(Ce) (IMA 2024-091, symbol Xhu-Ce)'' from Yang et al. 2026 Eur. J.
+    Mineral. 38:449-459, p. 449 and IMA-CNMNC September 2026 PDF p. 236), but omit
     the top-level ima_symbol slot (ima_symbol: Vlr-Ce and ima_symbol: Xhu-Ce after
     material_kind: mineral), unlike peer IMA mineral records such as data/records/andreybulakhite.yaml
     (ima_symbol: Adb) and data/records/yttrotungstite-nd.yaml (ima_symbol: Ytgs-Nd).
@@ -9965,17 +9970,21 @@ evidence:
 - evidence_id: ev-ragu2025-vielleaureite-ce
   kind: primary_source
   reference: DOI:10.5194/ejm-37-627-2025
-  locator: Ragu et al. 2025 Eur. J. Mineral. 37:627-643, p. 627 (abstract)
+  locator: Ragu et al. 2025 Eur. J. Mineral. 37:627-638, p. 627 (abstract); IMA-CNMNC
+    September 2026 PDF p. 228
   accessed_at: '2026-10-31T13:20:01Z'
   support: supports
-  summary: Ragu et al. (2025) report IMA 2022-134 approval and symbol Vlr-Ce for vielleaureite-(Ce).
+  summary: Ragu et al. (2025) and IMA-CNMNC September 2026 (PDF p. 228) report IMA
+    2022-134 approval and symbol Vlr-Ce for vielleaureite-(Ce).
 - evidence_id: ev-yang2026-xianhuaite-ce
   kind: primary_source
-  reference: DOI:10.2138/am-2025-9833
-  locator: Yang et al. 2026 Am. Mineral. 111(3):449-459, p. 449 (abstract)
+  reference: DOI:10.5194/ejm-38-449-2026
+  locator: Yang et al. 2026 Eur. J. Mineral. 38:449-459, p. 449 (abstract); IMA-CNMNC
+    September 2026 PDF p. 236
   accessed_at: '2026-10-31T13:20:01Z'
   support: supports
-  summary: Yang et al. (2026) report IMA 2024-091 approval and symbol Xhu-Ce for xianhuaite-(Ce).
+  summary: Yang et al. (2026) and IMA-CNMNC September 2026 (PDF p. 236) report IMA
+    2024-091 approval and symbol Xhu-Ce for xianhuaite-(Ce).
 limitations:
 - '137 of 422 IMA mineral species records currently lack curated microbial mechanisms:
   137 mineral species records (including 5 Round 124 critical-element mineral species

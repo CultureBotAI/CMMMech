@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed data/records/traction-battery-hydrometallurgical-residue.yaml (cmmmech:traction-battery-hydrometallurgical-residue) at commit fab0682688678750d7da4e5357dda11592d5fac3. Verified feedstock scope (separate acid-leached nickel-line and cobalt-line traction-battery hydrometallurgical residues from Lu et al. 2025, DOI:10.1039/D5RA07472J), mechanism ferrooxidans_battery_residue_bioleaching, causal graph ferrooxidans_battery_residue_bioleaching_graph (5 nodes, 4 edges), and all 10 synchronized UniProtKB protein_examples across the five-member acidophile consortium (6 Sqr/Sqor entries and 4 Tth/TetH entries). Identified 1 minor graph node label/description finding (cmmmech-cycle6-stage4-finding-0001: node tth_hydrolase uses label 'Tth / TetH tetrathionate hydrolase (consortium tth)' omitting tetH from the parenthetical and a generic description omitting the 4 grounded consortium species and locus tags across A. ferrooxidans, A. thiooxidans, and A. caldus, whereas sibling node sqr_reductase explicitly lists all grounded consortium species and locus tags) for Stage 5 grouped remediation.
+Reviewed data/records/traction-battery-hydrometallurgical-residue.yaml (cmmmech:traction-battery-hydrometallurgical-residue) at commit fab0682688678750d7da4e5357dda11592d5fac3. Verified feedstock scope (separate acid-leached nickel-line and cobalt-line traction-battery hydrometallurgical residues from Lu et al. 2025, DOI:10.1039/D5RA07472J), mechanism acidophile_culture_associated_leaching, causal graph acidophile_culture_associated_leaching_graph (5 nodes, 4 edges), and all 12 synchronized UniProtKB protein_examples per layer (24 total across mechanisms[0] and causal_graphs[0]: 8 Sqr/Sqor entries — UniProtKB:B7JBP8, UniProtKB:B7J411, UniProtKB:A0A543Q349, UniProtKB:A0A5P9XUB1, UniProtKB:F9ZQD6, UniProtKB:F9ZN43, UniProtKB:A0A059XTE6, UniProtKB:A0ABN5H056 — and 4 Tth/TetH entries — UniProtKB:B7J3C9, UniProtKB:A0A5P9XPU3, UniProtKB:A0A5P9XS05, UniProtKB:F9ZNI0) across the five-member acidophile consortium. Identified 1 minor graph node label/description finding (cmmmech-cycle6-stage4-finding-0001: node tth_hydrolase uses label 'Tth / TetH tetrathionate hydrolase (consortium tth)' omitting tetH from the parenthetical and a generic description omitting the 4 grounded consortium species and locus tags across A. ferrooxidans, A. thiooxidans, and A. caldus, whereas sibling node sqr_reductase explicitly lists all grounded consortium species and locus tags) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -38,7 +38,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 graph: supported. Targets: cmmmech:traction-battery-hydrometallurgical-residue.
 
-All 10 UniProtKB protein_examples across the five consortium species are accurately grounded, qualified with partial support, and synchronized between mechanisms[0] and causal_graphs[0]. However, causal_graphs[0].nodes[1] (tth_hydrolase) omits tetH from the parenthetical label and omits the grounded consortium species and locus tags in description.
+All 12 UniProtKB protein_examples per layer (8 Sqr/Sqor and 4 Tth/TetH entries across the five consortium species) are accurately grounded, qualified with partial support, and synchronized between mechanisms[0] and causal_graphs[0] (24 total). However, causal_graphs[0].nodes[1] (tth_hydrolase) omits tetH from the parenthetical label and omits the grounded consortium species and locus tags in description.
 
 ## Findings
 
@@ -46,7 +46,7 @@ All 10 UniProtKB protein_examples across the five consortium species are accurat
 
 minor / open / confirmed; issue key: cmmmech.traction-battery-hydrometallurgical-residue.tth-hydrolase-consortium-label-and-description-omit-species-and-loci.
 
-In data/records/traction-battery-hydrometallurgical-residue.yaml (cmmmech:traction-battery-hydrometallurgical-residue), causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph) node tth_hydrolase (lines 496-500) is grounded to 4 consortium tetrathionate hydrolase protein_examples across 3 species (Acidithiobacillus ferrooxidans ATCC 23270 UniProtKB:B7J3C9 tth / AFE_0029, Acidithiobacillus thiooxidans ATCC 19377 UniProtKB:A0A5P9XPU3 tth / GCD22_14205 and UniProtKB:A0A5P9XS05 tth / GCD22_02315, and Acidithiobacillus caldus SM-1 UniProtKB:F9ZNI0 Atc_1595 / TetH), but retains label 'Tth / TetH tetrathionate hydrolase (consortium tth)' (omitting tetH from the parenthetical) and a generic description 'Periplasmic pyrroloquinoline-domain hydrolase disproportionating tetrathionate into sulfate and protons.' that omits all grounded consortium species and locus tags, whereas sibling node sqr_reductase (lines 318-322) explicitly lists all grounded consortium species and locus tags in its description.
+In data/records/traction-battery-hydrometallurgical-residue.yaml (cmmmech:traction-battery-hydrometallurgical-residue), causal_graphs[0] (acidophile_culture_associated_leaching_graph) node tth_hydrolase (lines 496-500) is grounded to 4 consortium tetrathionate hydrolase protein_examples across 3 species (Acidithiobacillus ferrooxidans ATCC 23270 UniProtKB:B7J3C9 tth / AFE_0029, Acidithiobacillus thiooxidans ATCC 19377 UniProtKB:A0A5P9XPU3 tth / GCD22_14205 and UniProtKB:A0A5P9XS05 tth / GCD22_02315, and Acidithiobacillus caldus SM-1 UniProtKB:F9ZNI0 Atc_1595 / TetH), but retains label 'Tth / TetH tetrathionate hydrolase (consortium tth)' (omitting tetH from the parenthetical) and a generic description 'Periplasmic pyrroloquinoline-domain hydrolase disproportionating tetrathionate into sulfate and protons.' that omits all grounded consortium species and locus tags, whereas sibling node sqr_reductase (lines 318-322) explicitly lists all grounded consortium species and locus tags in its description.
 
 ## Recommended Actions And Acceptance Checks
 
@@ -65,7 +65,7 @@ Update causal_graphs[0].nodes[1].label to 'Tth / TetH tetrathionate hydrolase (c
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| ev-traction-battery-file | data/records/traction-battery-hydrometallurgical-residue.yaml; lines 1-699 (nodes[0] lines 317-322, nodes[1] lines 495-500) | supports | Inspected all 699 lines of data/records/traction-battery-hydrometallurgical-residue.yaml, verifying sqr_reductase vs tth_hydrolase node labels and descriptions. |
+| ev-traction-battery-file | data/records/traction-battery-hydrometallurgical-residue.yaml; lines 1-692 (nodes[0] lines 318-322, nodes[1] lines 496-500) | supports | Inspected all 692 lines of data/records/traction-battery-hydrometallurgical-residue.yaml, verifying sqr_reductase (lines 318-322) vs tth_hydrolase (lines 496-500) node labels and descriptions. |
 | ev-traction-battery-lu2025-rec | DOI:10.1039/D5RA07472J; Lu et al. 2025 RSC Advances 15:45979-45985, Sections 2.1-2.4, Tables 1-2, Figures 1-6, SI Table S1 | supports | Lu et al. (2025) studied separate acid-leached nickel-line and cobalt-line traction-battery hydrometallurgical residues leached by five acidophilic cultures and consortia. |
 
 ## Limits And Additional Notes
@@ -92,16 +92,19 @@ scientific_review: true
 summary: 'Reviewed data/records/traction-battery-hydrometallurgical-residue.yaml (cmmmech:traction-battery-hydrometallurgical-residue)
   at commit fab0682688678750d7da4e5357dda11592d5fac3. Verified feedstock scope (separate
   acid-leached nickel-line and cobalt-line traction-battery hydrometallurgical residues
-  from Lu et al. 2025, DOI:10.1039/D5RA07472J), mechanism ferrooxidans_battery_residue_bioleaching,
-  causal graph ferrooxidans_battery_residue_bioleaching_graph (5 nodes, 4 edges),
-  and all 10 synchronized UniProtKB protein_examples across the five-member acidophile
-  consortium (6 Sqr/Sqor entries and 4 Tth/TetH entries). Identified 1 minor graph
-  node label/description finding (cmmmech-cycle6-stage4-finding-0001: node tth_hydrolase
-  uses label ''Tth / TetH tetrathionate hydrolase (consortium tth)'' omitting tetH
-  from the parenthetical and a generic description omitting the 4 grounded consortium
-  species and locus tags across A. ferrooxidans, A. thiooxidans, and A. caldus, whereas
-  sibling node sqr_reductase explicitly lists all grounded consortium species and
-  locus tags) for Stage 5 grouped remediation.'
+  from Lu et al. 2025, DOI:10.1039/D5RA07472J), mechanism acidophile_culture_associated_leaching,
+  causal graph acidophile_culture_associated_leaching_graph (5 nodes, 4 edges), and
+  all 12 synchronized UniProtKB protein_examples per layer (24 total across mechanisms[0]
+  and causal_graphs[0]: 8 Sqr/Sqor entries — UniProtKB:B7JBP8, UniProtKB:B7J411, UniProtKB:A0A543Q349,
+  UniProtKB:A0A5P9XUB1, UniProtKB:F9ZQD6, UniProtKB:F9ZN43, UniProtKB:A0A059XTE6,
+  UniProtKB:A0ABN5H056 — and 4 Tth/TetH entries — UniProtKB:B7J3C9, UniProtKB:A0A5P9XPU3,
+  UniProtKB:A0A5P9XS05, UniProtKB:F9ZNI0) across the five-member acidophile consortium.
+  Identified 1 minor graph node label/description finding (cmmmech-cycle6-stage4-finding-0001:
+  node tth_hydrolase uses label ''Tth / TetH tetrathionate hydrolase (consortium tth)''
+  omitting tetH from the parenthetical and a generic description omitting the 4 grounded
+  consortium species and locus tags across A. ferrooxidans, A. thiooxidans, and A.
+  caldus, whereas sibling node sqr_reductase explicitly lists all grounded consortium
+  species and locus tags) for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle6-stage4-record-reviewer
   kind: agent
@@ -169,11 +172,12 @@ assessments:
   evidence_ids:
   - ev-traction-battery-file
   - ev-traction-battery-lu2025-rec
-  summary: All 10 UniProtKB protein_examples across the five consortium species are
-    accurately grounded, qualified with partial support, and synchronized between
-    mechanisms[0] and causal_graphs[0]. However, causal_graphs[0].nodes[1] (tth_hydrolase)
-    omits tetH from the parenthetical label and omits the grounded consortium species
-    and locus tags in description.
+  summary: All 12 UniProtKB protein_examples per layer (8 Sqr/Sqor and 4 Tth/TetH
+    entries across the five consortium species) are accurately grounded, qualified
+    with partial support, and synchronized between mechanisms[0] and causal_graphs[0]
+    (24 total). However, causal_graphs[0].nodes[1] (tth_hydrolase) omits tetH from
+    the parenthetical label and omits the grounded consortium species and locus tags
+    in description.
 findings:
 - finding_id: cmmmech-cycle6-stage4-finding-0001
   issue_key: cmmmech.traction-battery-hydrometallurgical-residue.tth-hydrolase-consortium-label-and-description-omit-species-and-loci
@@ -193,7 +197,7 @@ findings:
   - ev-traction-battery-file
   - ev-traction-battery-lu2025-rec
   description: In data/records/traction-battery-hydrometallurgical-residue.yaml (cmmmech:traction-battery-hydrometallurgical-residue),
-    causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph) node tth_hydrolase
+    causal_graphs[0] (acidophile_culture_associated_leaching_graph) node tth_hydrolase
     (lines 496-500) is grounded to 4 consortium tetrathionate hydrolase protein_examples
     across 3 species (Acidithiobacillus ferrooxidans ATCC 23270 UniProtKB:B7J3C9 tth
     / AFE_0029, Acidithiobacillus thiooxidans ATCC 19377 UniProtKB:A0A5P9XPU3 tth
@@ -236,11 +240,12 @@ evidence:
 - evidence_id: ev-traction-battery-file
   kind: record_content
   reference: data/records/traction-battery-hydrometallurgical-residue.yaml
-  locator: lines 1-699 (nodes[0] lines 317-322, nodes[1] lines 495-500)
+  locator: lines 1-692 (nodes[0] lines 318-322, nodes[1] lines 496-500)
   accessed_at: '2026-10-31T13:20:07Z'
   support: supports
-  summary: Inspected all 699 lines of data/records/traction-battery-hydrometallurgical-residue.yaml,
-    verifying sqr_reductase vs tth_hydrolase node labels and descriptions.
+  summary: Inspected all 692 lines of data/records/traction-battery-hydrometallurgical-residue.yaml,
+    verifying sqr_reductase (lines 318-322) vs tth_hydrolase (lines 496-500) node
+    labels and descriptions.
 - evidence_id: ev-traction-battery-lu2025-rec
   kind: primary_source
   reference: DOI:10.1039/D5RA07472J
