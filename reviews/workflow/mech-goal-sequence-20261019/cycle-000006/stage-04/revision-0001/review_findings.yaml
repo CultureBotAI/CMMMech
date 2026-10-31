@@ -1,0 +1,148 @@
+schema_version: 1.0.0
+run_id: mech-goal-sequence-20261019
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+cycle: 6
+stage: 4
+revision: 1
+source_revision: fab0682688678750d7da4e5357dda11592d5fac3
+frozen_inventory_count: 673
+structured_review_bundles:
+- review_id: 20261031T132000Z-cycle6-stage4-element-cohort-review
+  kind: category
+  population_size: 66
+  reviewed_count: 66
+  verdict: pass_with_limitations
+  path: reviews/structured/20261031T132000Z-cycle6-stage4-element-cohort-review/review.yaml
+- review_id: 20261031T132001Z-cycle6-stage4-mineral-cohort-review
+  kind: category
+  population_size: 422
+  reviewed_count: 422
+  verdict: pass_with_limitations
+  path: reviews/structured/20261031T132001Z-cycle6-stage4-mineral-cohort-review/review.yaml
+- review_id: 20261031T132002Z-cycle6-stage4-mineral-group-cohort-review
+  kind: category
+  population_size: 7
+  reviewed_count: 7
+  verdict: pass_with_limitations
+  path: reviews/structured/20261031T132002Z-cycle6-stage4-mineral-group-cohort-review/review.yaml
+- review_id: 20261031T132003Z-cycle6-stage4-commodity-cohort-review
+  kind: category
+  population_size: 36
+  reviewed_count: 36
+  verdict: pass_with_limitations
+  path: reviews/structured/20261031T132003Z-cycle6-stage4-commodity-cohort-review/review.yaml
+- review_id: 20261031T132004Z-cycle6-stage4-primary-resource-cohort-review
+  kind: category
+  population_size: 31
+  reviewed_count: 31
+  verdict: pass_with_limitations
+  path: reviews/structured/20261031T132004Z-cycle6-stage4-primary-resource-cohort-review/review.yaml
+- review_id: 20261031T132005Z-cycle6-stage4-secondary-resource-cohort-review
+  kind: category
+  population_size: 111
+  reviewed_count: 111
+  verdict: pass_with_limitations
+  path: reviews/structured/20261031T132005Z-cycle6-stage4-secondary-resource-cohort-review/review.yaml
+- review_id: 20261031T132006Z-cycle6-stage4-causal-graphs-cohort-review
+  kind: category
+  population_size: 133
+  reviewed_count: 133
+  verdict: pass_with_limitations
+  path: reviews/structured/20261031T132006Z-cycle6-stage4-causal-graphs-cohort-review/review.yaml
+- review_id: 20261031T132007Z-traction-battery-hydrometallurgical-residue-cycle6-stage4-record-review
+  kind: record
+  population_size: 1
+  reviewed_count: 1
+  verdict: pass_with_limitations
+  path: reviews/structured/20261031T132007Z-traction-battery-hydrometallurgical-residue-cycle6-stage4-record-review/review.yaml
+- review_id: 20261031T132008Z-arsenic-cycle6-stage4-record-review
+  kind: record
+  population_size: 1
+  reviewed_count: 1
+  verdict: pass_with_limitations
+  path: reviews/structured/20261031T132008Z-arsenic-cycle6-stage4-record-review/review.yaml
+- review_id: 20261031T132009Z-xianhuaite-ce-cycle6-stage4-record-review
+  kind: record
+  population_size: 1
+  reviewed_count: 1
+  verdict: pass_with_limitations
+  path: reviews/structured/20261031T132009Z-xianhuaite-ce-cycle6-stage4-record-review/review.yaml
+findings:
+- finding_id: cmmmech-cycle6-stage4-finding-0001
+  issue_key: cmmmech.traction-battery-hydrometallurgical-residue.tth-hydrolase-consortium-label-and-description-omit-species-and-loci
+  review_id: 20261031T132007Z-traction-battery-hydrometallurgical-residue-cycle6-stage4-record-review
+  status: open
+  severity: minor
+  category: graph
+  target_ids:
+  - cmmmech:traction-battery-hydrometallurgical-residue
+  summary: In data/records/traction-battery-hydrometallurgical-residue.yaml (cmmmech:traction-battery-hydrometallurgical-residue),
+    causal_graphs[0] (ferrooxidans_battery_residue_bioleaching_graph) node tth_hydrolase
+    (lines 496-500) is grounded to 4 consortium tetrathionate hydrolase protein_examples
+    across 3 species (Acidithiobacillus ferrooxidans ATCC 23270 UniProtKB:B7J3C9 tth
+    / AFE_0029, Acidithiobacillus thiooxidans ATCC 19377 UniProtKB:A0A5P9XPU3 tth
+    / GCD22_14205 and UniProtKB:A0A5P9XS05 tth / GCD22_02315, and Acidithiobacillus
+    caldus SM-1 UniProtKB:F9ZNI0 Atc_1595 / TetH), but retains label 'Tth / TetH tetrathionate
+    hydrolase (consortium tth)' (omitting tetH from the parenthetical) and a generic
+    description 'Periplasmic pyrroloquinoline-domain hydrolase disproportionating
+    tetrathionate into sulfate and protons.' that omits all grounded consortium species
+    and locus tags, whereas sibling node sqr_reductase (lines 318-322) explicitly
+    lists all grounded consortium species and locus tags in its description.
+- finding_id: cmmmech-cycle6-stage4-finding-0002
+  issue_key: cmmmech.thiooxidans-causal-graphs.tth-hydrolase-node-omits-paralog-loci
+  review_id: 20261031T132006Z-cycle6-stage4-causal-graphs-cohort-review
+  status: open
+  severity: minor
+  category: graph
+  target_ids:
+  - cmmmech:arsenic
+  - cmmmech:automotive-wastewater-treatment-sludge
+  - cmmmech:blast-furnace-cast-house-dust
+  - cmmmech:copper-smelter-slag
+  - cmmmech:discarded-led-lamps
+  - cmmmech:electric-arc-furnace-dust
+  - cmmmech:gaas-production-hydroxide-sludge
+  - cmmmech:gallium
+  - cmmmech:gold-mine-tailings
+  - cmmmech:metallic-machining-burrs
+  - cmmmech:nickel-based-superalloy-residue-powders
+  - cmmmech:spent-alkaline-zinc-carbon-batteries
+  - cmmmech:spent-automotive-three-way-catalyst
+  - cmmmech:spent-hydrodesulfurization-catalyst
+  - cmmmech:spent-selective-catalytic-reduction-catalyst
+  - cmmmech:spent-sulfuric-acid-production-catalyst
+  summary: 'Across 16 single-species Acidithiobacillus thiooxidans records (2 element:
+    arsenic.yaml, gallium.yaml; 14 secondary_resource: automotive-wastewater-treatment-sludge.yaml,
+    blast-furnace-cast-house-dust.yaml, copper-smelter-slag.yaml, discarded-led-lamps.yaml,
+    electric-arc-furnace-dust.yaml, gaas-production-hydroxide-sludge.yaml, gold-mine-tailings.yaml,
+    metallic-machining-burrs.yaml, nickel-based-superalloy-residue-powders.yaml, spent-alkaline-zinc-carbon-batteries.yaml,
+    spent-automotive-three-way-catalyst.yaml, spent-hydrodesulfurization-catalyst.yaml,
+    spent-selective-catalytic-reduction-catalyst.yaml, spent-sulfuric-acid-production-catalyst.yaml)
+    whose tth_hydrolase causal-graph nodes were expanded in Cycle 5 Stage 3 (PR #872)
+    to include both A. thiooxidans ATCC 19377 tetrathionate hydrolase paralogs (UniProtKB:A0A5P9XPU3
+    tth / GCD22_14205 and UniProtKB:A0A5P9XS05 tth / GCD22_02315), causal_graphs[0].nodes[1]
+    still retains the pre-expansion singular label ''Tth tetrathionate hydrolase (tth)''
+    and generic description ''Periplasmic tetrathionate hydrolase disproportionating
+    tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.'' without
+    naming GCD22_14205 and GCD22_02315, whereas sibling node sqr_reductase explicitly
+    names ''(Sqr/Sqor; GCD22_02301 / GCD22_03207)'' and the 5 Cycle 6 Stage 2/3 A.
+    thiooxidans records explicitly name ''(tth GCD22_14205; tth GCD22_02315)''.'
+- finding_id: cmmmech-cycle6-stage4-finding-0003
+  issue_key: cmmmech.round124-minerals.missing-ima-symbol-slot
+  review_id: 20261031T132001Z-cycle6-stage4-mineral-cohort-review
+  status: open
+  severity: minor
+  category: completeness
+  target_ids:
+  - cmmmech:vielleaureite-ce
+  - cmmmech:xianhuaite-ce
+  summary: 'Both data/records/vielleaureite-ce.yaml (cmmmech:vielleaureite-ce) and
+    data/records/xianhuaite-ce.yaml (cmmmech:xianhuaite-ce), curated in Cycle 6 Stage
+    1 (PR #884), state their IMA-CNMNC-approved mineral symbols in description (''Vielleaureite-(Ce)
+    (IMA 2022-134, symbol Vlr-Ce; ...)'' from Ragu et al. 2025 Eur. J. Mineral. 37:627-643,
+    p. 627; and ''Xianhuaite-(Ce) (IMA 2024-091, symbol Xhu-Ce)'' from Yang et al.
+    2026 Am. Mineral. 111(3):449-459, p. 449), but omit the top-level ima_symbol slot
+    (ima_symbol: Vlr-Ce and ima_symbol: Xhu-Ce after material_kind: mineral), unlike
+    peer IMA mineral records such as data/records/andreybulakhite.yaml (ima_symbol:
+    Adb) and data/records/yttrotungstite-nd.yaml (ima_symbol: Ytgs-Nd).'
