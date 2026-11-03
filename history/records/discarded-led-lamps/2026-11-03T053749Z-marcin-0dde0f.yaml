@@ -1,0 +1,31 @@
+history_version: 1
+target:
+  kind: record
+  slug: discarded-led-lamps
+  path: data/records/discarded-led-lamps.yaml
+session:
+  id: 2026-11-03T053749Z-marcin-0dde0f
+  timestamp: '2026-11-03T05:37:49Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Update tth_hydrolase causal node label and description to reflect both Acidithiobacillus
+    thiooxidans ATCC 19377 tth paralogs (#902).
+  details: 'Resolved Cycle 6 Stage 4 review finding cmmmech-cycle6-stage4-finding-0002 (Issue
+    #902) by updating causal_graphs[0].nodes[1] (id: tth_hydrolase) label to ''Tth tetrathionate
+    hydrolase (tth GCD22_14205; tth GCD22_02315)'' and description to ''Periplasmic pyrroloquinoline-domain
+    tetrathionate hydrolase paralogs (tth GCD22_14205 and tth GCD22_02315) disproportionating
+    tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.'' so node prose
+    matches the two attached UniProtKB protein_examples (A0A7U3ZMP7 and A0A7U3ZKL4).'
+  sections:
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/902

@@ -494,10 +494,10 @@ causal_graphs:
         supports: partial
         explanation: Representative Sulfobacillus thermotolerans sulfide-quinone oxidoreductase (BXT84_01680) for the S. thermotolerans DSM 17362 member in the 40 degrees C single-culture and 40/45 degrees C consortium arms (MC40-25St / MC45-40AS) of lu2025; individual genes were not mutated.
   - id: tth_hydrolase
-    label: Tth / TetH tetrathionate hydrolase (consortium tth)
+    label: Tth / TetH tetrathionate hydrolase (consortium tth / tetH)
     node_type: GENE_OR_PROTEIN
     gene_symbol: tth
-    description: Periplasmic pyrroloquinoline-domain hydrolase disproportionating tetrathionate into sulfate and protons.
+    description: Periplasmic pyrroloquinoline-domain tetrathionate hydrolase (Acidithiobacillus ferrooxidans ATCC 23270 tth / AFE_0029; Acidithiobacillus thiooxidans ATCC 19377 tth / GCD22_14205 and tth / GCD22_02315; Acidithiobacillus caldus SM-1 Atc_1595 / TetH) disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:B7J3C9
@@ -679,6 +679,10 @@ curation_history:
   curator: claude
   action: edit
   summary: Added live-verified Acidithiobacillus ferrooxidans ATCC 23270 Sqr (UniProtKB:B7J411, sqr / AFE_0267) and Acidithiobacillus caldus SM-1 Sqr (UniProtKB:F9ZN43, Atc_1437) paralogs to sqr_reductase in traction-battery-hydrometallurgical-residue.yaml.
+- timestamp: '2026-11-03T05:40:36Z'
+  curator: marcin
+  action: edit
+  summary: Update tth_hydrolase causal node label and description to reflect all four attached consortium Tth/TetH protein_examples (#901).
 history_refs:
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-12T144943Z-codex-e18c9e.yaml
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-18T042750Z-antigravity-437365.yaml
@@ -689,3 +693,4 @@ history_refs:
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-30T103604Z-claude-33e08d.yaml
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-30T171004Z-marcin-1ffdd2.yaml
 - history/records/traction-battery-hydrometallurgical-residue/2026-10-30T191018Z-claude-1190d2.yaml
+- history/records/traction-battery-hydrometallurgical-residue/2026-11-03T054036Z-marcin-c8d303.yaml

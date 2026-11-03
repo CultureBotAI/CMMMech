@@ -186,10 +186,10 @@ causal_graphs:
         supports: partial
         explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for sulfur-dependent acidification and one-stage/two-stage Mo, Al, and V leaching from raw spent diesel HDS catalyst by Acidithiobacillus thiooxidans FG-01 in Ferreira et al. (2017); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - id: tth_hydrolase
-    label: Tth tetrathionate hydrolase (tth)
+    label: Tth tetrathionate hydrolase (tth GCD22_14205; tth GCD22_02315)
     node_type: GENE_OR_PROTEIN
     gene_symbol: tth
-    description: Periplasmic tetrathionate hydrolase disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.
+    description: Periplasmic pyrroloquinoline-domain tetrathionate hydrolase paralogs (tth GCD22_14205 and tth GCD22_02315) disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A0A5P9XPU3
@@ -305,8 +305,13 @@ curation_history:
   curator: claude
   action: edit
   summary: Include sqor in Sqr/Sqor causal-graph descriptions and protein_examples evidence explanations (#859)
+- timestamp: '2026-11-03T05:37:50Z'
+  curator: marcin
+  action: edit
+  summary: Update tth_hydrolase causal node label and description to reflect both Acidithiobacillus thiooxidans ATCC 19377 tth paralogs (#902).
 history_refs:
 - history/records/spent-hydrodesulfurization-catalyst/2026-10-11T111316Z-codex-824afe.yaml
 - history/records/spent-hydrodesulfurization-catalyst/2026-10-30T060443Z-claude-claude-opus-4-6-antigravity-246224.yaml
 - history/records/spent-hydrodesulfurization-catalyst/2026-10-30T074106Z-claude-claude-opus-4-6-antigravity-2716fd.yaml
 - history/records/spent-hydrodesulfurization-catalyst/2026-10-30T080931Z-claude-897d8e.yaml
+- history/records/spent-hydrodesulfurization-catalyst/2026-11-03T053750Z-marcin-7f1ffe.yaml
