@@ -52,7 +52,7 @@ Working-tree hashes do not imply those bytes were committed.
 | Append-only history sidecar validation | passed | True | cmmmech:arsenic, cmmmech:automotive-wastewater-treatment-sludge, cmmmech:blast-furnace-cast-house-dust, cmmmech:copper-smelter-slag, cmmmech:discarded-led-lamps, cmmmech:electric-arc-furnace-dust, cmmmech:gaas-production-hydroxide-sludge, cmmmech:gallium, cmmmech:gold-mine-tailings, cmmmech:metallic-machining-burrs, cmmmech:nickel-based-superalloy-residue-powders, cmmmech:spent-alkaline-zinc-carbon-batteries, cmmmech:spent-automotive-three-way-catalyst, cmmmech:spent-hydrodesulfurization-catalyst, cmmmech:spent-selective-catalytic-reduction-catalyst, cmmmech:spent-sulfuric-acid-production-catalyst, cmmmech:traction-battery-hydrometallurgical-residue, cmmmech:vielleaureite-ce, cmmmech:xianhuaite-ce | All 19 new EDIT history sidecars and existing history sidecars (1245 total) pass .venv/bin/python -m cmmmech.cli validate-history --base main. |
 | Consortium Tth / TetH tetrathionate hydrolase label and description fidelity in traction-battery-hydrometallurgical-residue.yaml (#901) | passed | True | cmmmech:traction-battery-hydrometallurgical-residue | In data/records/traction-battery-hydrometallurgical-residue.yaml, causal_graphs[0].nodes[1] (tth_hydrolase) now carries label 'Tth / TetH tetrathionate hydrolase (consortium tth / tetH)' and description naming all 4 attached consortium protein_examples (Acidithiobacillus ferrooxidans ATCC 23270 tth / AFE_0029 [UniProtKB:B7J3C9]; Acidithiobacillus thiooxidans ATCC 19377 tth / GCD22_14205 [UniProtKB:A0A5P9XPU3] and tth / GCD22_02315 [UniProtKB:A0A5P9XS05]; Acidithiobacillus caldus SM-1 Atc_1595 / TetH [UniProtKB:F9ZNI0]). |
 | Acidithiobacillus thiooxidans ATCC 19377 tth paralog label and description fidelity across 16 records (#902) | passed | True | cmmmech:arsenic, cmmmech:automotive-wastewater-treatment-sludge, cmmmech:blast-furnace-cast-house-dust, cmmmech:copper-smelter-slag, cmmmech:discarded-led-lamps, cmmmech:electric-arc-furnace-dust, cmmmech:gaas-production-hydroxide-sludge, cmmmech:gallium, cmmmech:gold-mine-tailings, cmmmech:metallic-machining-burrs, cmmmech:nickel-based-superalloy-residue-powders, cmmmech:spent-alkaline-zinc-carbon-batteries, cmmmech:spent-automotive-three-way-catalyst, cmmmech:spent-hydrodesulfurization-catalyst, cmmmech:spent-selective-catalytic-reduction-catalyst, cmmmech:spent-sulfuric-acid-production-catalyst | Across all 16 single-species Acidithiobacillus thiooxidans records in GRP-C6S5-002 (arsenic, automotive-wastewater-treatment-sludge, blast-furnace-cast-house-dust, copper-smelter-slag, discarded-led-lamps, electric-arc-furnace-dust, gaas-production-hydroxide-sludge, gallium, gold-mine-tailings, metallic-machining-burrs, nickel-based-superalloy-residue-powders, spent-alkaline-zinc-carbon-batteries, spent-automotive-three-way-catalyst, spent-hydrodesulfurization-catalyst, spent-selective-catalytic-reduction-catalyst, spent-sulfuric-acid-production-catalyst), causal_graphs[0].nodes[1] (tth_hydrolase) now carries label 'Tth tetrathionate hydrolase (tth GCD22_14205; tth GCD22_02315)' and description 'Periplasmic pyrroloquinoline-domain tetrathionate hydrolase paralogs (tth GCD22_14205 and tth GCD22_02315) disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.' |
-| IMA-CNMNC mineral symbol completeness on vielleaureite-ce.yaml and xianhuaite-ce.yaml (#903) | passed | True | cmmmech:vielleaureite-ce, cmmmech:xianhuaite-ce | data/records/vielleaureite-ce.yaml (IMA:2022-134, ragu_2025_vielleaureite_ce) now carries top-level ima_symbol: Vlr-Ce and data/records/xianhuaite-ce.yaml (IMA:2024-091, yang_2026_xianhuaite_ce) now carries top-level ima_symbol: Xhu-Ce immediately after material_kind: mineral; all 355 mineral records in CMMMech now have top-level ima_symbol populated (355/355 = 100%). |
+| IMA-CNMNC mineral symbol completeness on vielleaureite-ce.yaml and xianhuaite-ce.yaml (#903) | passed | True | cmmmech:vielleaureite-ce, cmmmech:xianhuaite-ce | data/records/vielleaureite-ce.yaml (IMA:2022-134, ragu_2025_vielleaureite_ce) now carries top-level ima_symbol: Vlr-Ce and data/records/xianhuaite-ce.yaml (IMA:2024-091, yang_2026_xianhuaite_ce) now carries top-level ima_symbol: Xhu-Ce immediately after material_kind: mineral (2/2 = 100% of GRP-C6S5-003 targets, bringing mineral records in CMMMech whose descriptions state an IMA-CNMNC symbol to 4/4 = 100% across the 422-mineral corpus: andreybulakhite, vielleaureite-ce, xianhuaite-ce, yttrotungstite-nd). |
 
 ## Scientific And Domain Assessments
 
@@ -68,17 +68,17 @@ graph: supported. Targets: cmmmech:arsenic, cmmmech:automotive-wastewater-treatm
 
 All 16 single-species Acidithiobacillus thiooxidans records in GRP-C6S5-002 now carry causal_graphs[0].nodes[1] (tth_hydrolase) label 'Tth tetrathionate hydrolase (tth GCD22_14205; tth GCD22_02315)' and description naming both periplasmic pyrroloquinoline-domain tetrathionate hydrolase paralogs (UniProtKB:A0A5P9XPU3 and UniProtKB:A0A5P9XS05).
 
-### Top-level ima_symbol completeness across mineral records (#903)
+### Top-level ima_symbol completeness across mineral records stating an IMA-CNMNC symbol in description (#903)
 
 completeness: supported. Targets: cmmmech:vielleaureite-ce, cmmmech:xianhuaite-ce.
 
-Adding ima_symbol: Vlr-Ce to vielleaureite-ce.yaml and ima_symbol: Xhu-Ce to xianhuaite-ce.yaml brings top-level ima_symbol completeness across all 355 mineral records in CMMMech to 100% (355/355).
+Adding ima_symbol: Vlr-Ce to vielleaureite-ce.yaml and ima_symbol: Xhu-Ce to xianhuaite-ce.yaml resolves 2/2 (100%) of the GRP-C6S5-003 targets and brings top-level ima_symbol completeness across mineral records in the 422-mineral CMMMech corpus whose descriptions state an IMA-CNMNC symbol to 100% (4/4: andreybulakhite, vielleaureite-ce, xianhuaite-ce, yttrotungstite-nd).
 
 ## Findings
 
 ### cmmmech-cycle6-stage4-finding-0001: traction-battery-hydrometallurgical-residue.yaml causal_graphs[0].nodes[1] (tth_hydrolase) label and description now reflect all 4 consortium Tth/TetH protein_examples
 
-minor / resolved / confirmed; issue key: cmmmech.traction-battery-hydrometallurgical-residue.tth-hydrolase-node-description-incomplete-consortium-scope.
+minor / resolved / confirmed; issue key: cmmmech.traction-battery-hydrometallurgical-residue.tth-hydrolase-consortium-label-and-description-omit-species-and-loci.
 
 Updated causal_graphs[0].nodes[1] (id: tth_hydrolase) in data/records/traction-battery-hydrometallurgical-residue.yaml so label reads 'Tth / TetH tetrathionate hydrolase (consortium tth / tetH)' and description reads 'Periplasmic pyrroloquinoline-domain tetrathionate hydrolase (Acidithiobacillus ferrooxidans ATCC 23270 tth / AFE_0029; Acidithiobacillus thiooxidans ATCC 19377 tth / GCD22_14205 and tth / GCD22_02315; Acidithiobacillus caldus SM-1 Atc_1595 / TetH) disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.' with an append-only EDIT history sidecar.
 
@@ -86,7 +86,7 @@ Disposition: Resolved under GitHub issue #901 (group GRP-C6S5-001) by updating c
 
 ### cmmmech-cycle6-stage4-finding-0002: 16 single-species Acidithiobacillus thiooxidans records now name both tth paralogs (GCD22_14205 and GCD22_02315) on causal_graphs[0].nodes[1] (tth_hydrolase)
 
-minor / resolved / confirmed; issue key: cmmmech.records.tth-hydrolase-single-species-node-label-description-single-paralog.
+minor / resolved / confirmed; issue key: cmmmech.thiooxidans-causal-graphs.tth-hydrolase-node-omits-paralog-loci.
 
 Updated causal_graphs[0].nodes[1] (id: tth_hydrolase) across all 16 single-species Acidithiobacillus thiooxidans records (arsenic, automotive-wastewater-treatment-sludge, blast-furnace-cast-house-dust, copper-smelter-slag, discarded-led-lamps, electric-arc-furnace-dust, gaas-production-hydroxide-sludge, gallium, gold-mine-tailings, metallic-machining-burrs, nickel-based-superalloy-residue-powders, spent-alkaline-zinc-carbon-batteries, spent-automotive-three-way-catalyst, spent-hydrodesulfurization-catalyst, spent-selective-catalytic-reduction-catalyst, spent-sulfuric-acid-production-catalyst) so label reads 'Tth tetrathionate hydrolase (tth GCD22_14205; tth GCD22_02315)' and description reads 'Periplasmic pyrroloquinoline-domain tetrathionate hydrolase paralogs (tth GCD22_14205 and tth GCD22_02315) disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.' with 16 append-only EDIT history sidecars.
 
@@ -94,7 +94,7 @@ Disposition: Resolved under GitHub issue #902 (group GRP-C6S5-002) by updating c
 
 ### cmmmech-cycle6-stage4-finding-0003: vielleaureite-ce.yaml and xianhuaite-ce.yaml now carry top-level ima_symbol: Vlr-Ce and ima_symbol: Xhu-Ce
 
-minor / resolved / confirmed; issue key: cmmmech.records.mineral-missing-top-level-ima-symbol-vielleaureite-xianhuaite.
+minor / resolved / confirmed; issue key: cmmmech.round124-minerals.missing-ima-symbol-slot.
 
 Populated top-level ima_symbol: Vlr-Ce in data/records/vielleaureite-ce.yaml (IMA:2022-134, ragu_2025_vielleaureite_ce) and top-level ima_symbol: Xhu-Ce in data/records/xianhuaite-ce.yaml (IMA:2024-091, yang_2026_xianhuaite_ce) immediately after material_kind: mineral via scripts/curate_causal_graphs.py with 2 append-only EDIT history sidecars.
 
@@ -110,9 +110,9 @@ Disposition: Resolved under GitHub issue #903 (group GRP-C6S5-003) by populating
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| ev-lu2025-doi | https://doi.org/10.3390/recycling10030113; Lu et al. (2025) Recycling 10(3):113 (five-member acidophile consortium including A. ferrooxidans, A. thiooxidans, A. caldus) | supports | Lu et al. (2025) report bioleaching of traction-battery hydrometallurgical residues by a five-member acidophile consortium including Acidithiobacillus ferrooxidans, Acidithiobacillus thiooxidans, and Acidithiobacillus caldus. |
-| ev-ragu2025-vielleaureite | https://doi.org/10.5194/ejm-37-915-2025; Ragu et al. (2025) European Journal of Mineralogy 37:915-927 (IMA 2022-134, symbol Vlr-Ce) | supports | Ragu et al. (2025) define IMA-CNMNC approved mineral species vielleaureite-(Ce) (IMA 2022-134) with official IMA symbol Vlr-Ce. |
-| ev-yang2026-xianhuaite | https://doi.org/10.3749/2500059; Yang et al. (2026) Canadian Journal of Mineralogy and Petrology (IMA 2024-091, symbol Xhu-Ce) | supports | Yang et al. (2026) define IMA-CNMNC approved mineral species xianhuaite-(Ce) (IMA 2024-091) with official IMA symbol Xhu-Ce. |
+| ev-lu2025-doi | https://doi.org/10.1039/D5RA07472J; Lu et al. (2025) RSC Advances 15:45979-45985 (five-member acidophile consortium including A. ferrooxidans, A. thiooxidans, A. caldus) | supports | Lu et al. (2025) report bioleaching of traction-battery hydrometallurgical residues by a five-member acidophile consortium including Acidithiobacillus ferrooxidans, Acidithiobacillus thiooxidans, and Acidithiobacillus caldus. |
+| ev-ragu2025-vielleaureite | https://doi.org/10.5194/ejm-37-627-2025; Ragu et al. (2025) European Journal of Mineralogy 37:627-638 (IMA 2022-134, symbol Vlr-Ce) | supports | Ragu et al. (2025) define IMA-CNMNC approved mineral species vielleaureite-(Ce) (IMA 2022-134) with official IMA symbol Vlr-Ce. |
+| ev-yang2026-xianhuaite | https://doi.org/10.5194/ejm-38-449-2026; Yang et al. (2026) European Journal of Mineralogy 38:449-459 (IMA 2024-091, symbol Xhu-Ce) | supports | Yang et al. (2026) define IMA-CNMNC approved mineral species xianhuaite-(Ce) (IMA 2024-091) with official IMA symbol Xhu-Ce. |
 | ev-cycle6-stage4-findings | reviews/workflow/mech-goal-sequence-20261019/cycle-000006/stage-04/revision-0001/review_findings.yaml; findings[0..2] | supports | Frozen Cycle 6 Stage 4 review findings ledger defining cmmmech-cycle6-stage4-finding-0001, cmmmech-cycle6-stage4-finding-0002, and cmmmech-cycle6-stage4-finding-0003 across the 19 target records. |
 | ev-schema | src/cmmmech/schema/cmmmech.yaml; classes.MaterialRecord, classes.CausalGraph, classes.CausalNode | supports | Canonical LinkML schema defining MaterialRecord top-level slots (including ima_symbol) and CausalNode structure. |
 | ev-curate-causal-graphs-script | scripts/curate_causal_graphs.py; CANONICAL_RECORD_KEYS, apply_curation_patch, curate_record_file | supports | Native writer scripts/curate_causal_graphs.py enforcing CANONICAL_RECORD_KEYS ordering, ima_symbol and causal_graphs patching, pre/post validation, and atomic history sidecar minting. |
@@ -641,8 +641,10 @@ checks:
   summary: 'data/records/vielleaureite-ce.yaml (IMA:2022-134, ragu_2025_vielleaureite_ce)
     now carries top-level ima_symbol: Vlr-Ce and data/records/xianhuaite-ce.yaml (IMA:2024-091,
     yang_2026_xianhuaite_ce) now carries top-level ima_symbol: Xhu-Ce immediately
-    after material_kind: mineral; all 355 mineral records in CMMMech now have top-level
-    ima_symbol populated (355/355 = 100%).'
+    after material_kind: mineral (2/2 = 100% of GRP-C6S5-003 targets, bringing mineral
+    records in CMMMech whose descriptions state an IMA-CNMNC symbol to 4/4 = 100%
+    across the 422-mineral corpus: andreybulakhite, vielleaureite-ce, xianhuaite-ce,
+    yttrotungstite-nd).'
   target_ids:
   - cmmmech:vielleaureite-ce
   - cmmmech:xianhuaite-ce
@@ -654,8 +656,8 @@ checks:
 evidence:
 - evidence_id: ev-lu2025-doi
   kind: primary_source
-  reference: https://doi.org/10.3390/recycling10030113
-  locator: Lu et al. (2025) Recycling 10(3):113 (five-member acidophile consortium
+  reference: https://doi.org/10.1039/D5RA07472J
+  locator: Lu et al. (2025) RSC Advances 15:45979-45985 (five-member acidophile consortium
     including A. ferrooxidans, A. thiooxidans, A. caldus)
   accessed_at: '2026-11-03T05:50:30Z'
   support: supports
@@ -664,8 +666,8 @@ evidence:
     Acidithiobacillus thiooxidans, and Acidithiobacillus caldus.
 - evidence_id: ev-ragu2025-vielleaureite
   kind: primary_source
-  reference: https://doi.org/10.5194/ejm-37-915-2025
-  locator: Ragu et al. (2025) European Journal of Mineralogy 37:915-927 (IMA 2022-134,
+  reference: https://doi.org/10.5194/ejm-37-627-2025
+  locator: Ragu et al. (2025) European Journal of Mineralogy 37:627-638 (IMA 2022-134,
     symbol Vlr-Ce)
   accessed_at: '2026-11-03T05:50:30Z'
   support: supports
@@ -673,8 +675,8 @@ evidence:
     (IMA 2022-134) with official IMA symbol Vlr-Ce.
 - evidence_id: ev-yang2026-xianhuaite
   kind: primary_source
-  reference: https://doi.org/10.3749/2500059
-  locator: Yang et al. (2026) Canadian Journal of Mineralogy and Petrology (IMA 2024-091,
+  reference: https://doi.org/10.5194/ejm-38-449-2026
+  locator: Yang et al. (2026) European Journal of Mineralogy 38:449-459 (IMA 2024-091,
     symbol Xhu-Ce)
   accessed_at: '2026-11-03T05:50:30Z'
   support: supports
@@ -775,11 +777,14 @@ assessments:
     maximum: 1.0
 - assessment_id: assess-grp3-mineral-ima-symbol-completeness
   area: completeness
-  topic: Top-level ima_symbol completeness across mineral records (#903)
+  topic: Top-level ima_symbol completeness across mineral records stating an IMA-CNMNC
+    symbol in description (#903)
   outcome: supported
   summary: 'Adding ima_symbol: Vlr-Ce to vielleaureite-ce.yaml and ima_symbol: Xhu-Ce
-    to xianhuaite-ce.yaml brings top-level ima_symbol completeness across all 355
-    mineral records in CMMMech to 100% (355/355).'
+    to xianhuaite-ce.yaml resolves 2/2 (100%) of the GRP-C6S5-003 targets and brings
+    top-level ima_symbol completeness across mineral records in the 422-mineral CMMMech
+    corpus whose descriptions state an IMA-CNMNC symbol to 100% (4/4: andreybulakhite,
+    vielleaureite-ce, xianhuaite-ce, yttrotungstite-nd).'
   target_ids:
   - cmmmech:vielleaureite-ce
   - cmmmech:xianhuaite-ce
@@ -792,13 +797,14 @@ assessments:
   - name: mineral_cohort_ima_symbol_completeness
     value: 1.0
     unit: fraction
-    definition: Fraction of mineral records in CMMMech with top-level ima_symbol populated
-    denominator: 355
+    definition: Fraction of mineral records in CMMMech whose descriptions state an
+      IMA-CNMNC symbol that carry a populated top-level ima_symbol slot
+    denominator: 4
     minimum: 0.0
     maximum: 1.0
 findings:
 - finding_id: cmmmech-cycle6-stage4-finding-0001
-  issue_key: cmmmech.traction-battery-hydrometallurgical-residue.tth-hydrolase-node-description-incomplete-consortium-scope
+  issue_key: cmmmech.traction-battery-hydrometallurgical-residue.tth-hydrolase-consortium-label-and-description-omit-species-and-loci
   category: graph
   severity: minor
   status: resolved
@@ -844,7 +850,7 @@ findings:
   external_issues:
   - https://github.com/CultureBotAI/CMMMech/issues/901
 - finding_id: cmmmech-cycle6-stage4-finding-0002
-  issue_key: cmmmech.records.tth-hydrolase-single-species-node-label-description-single-paralog
+  issue_key: cmmmech.thiooxidans-causal-graphs.tth-hydrolase-node-omits-paralog-loci
   category: graph
   severity: minor
   status: resolved
@@ -958,7 +964,7 @@ findings:
   external_issues:
   - https://github.com/CultureBotAI/CMMMech/issues/902
 - finding_id: cmmmech-cycle6-stage4-finding-0003
-  issue_key: cmmmech.records.mineral-missing-top-level-ima-symbol-vielleaureite-xianhuaite
+  issue_key: cmmmech.round124-minerals.missing-ima-symbol-slot
   category: completeness
   severity: minor
   status: resolved
