@@ -1,0 +1,42 @@
+history_version: 1
+target:
+  kind: record
+  slug: igelstromite
+  path: data/records/igelstromite.yaml
+session:
+  id: 2026-11-03T101706Z-antigravity-8ce276
+  timestamp: '2026-11-03T10:17:06Z'
+  actors:
+  - name: antigravity
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity-cli
+    agent_version: '2.0'
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Remediated PR #910 independent review findings F-09, F-10, F-11, and F-12 (#911,
+    #912): replaced powder XRD unit cell and strongest reflections with exact Section 5.2
+    and Table 11 values, replaced Table 10 Fe-O and Sb-O bond lengths and means with exact
+    values, replaced manganoschafarzikite host/paragenesis with igelstromite host/paragenesis,
+    and corrected streak, cleavage, hardness, reflected-light colour/internal reflections,
+    Mossbauer asymmetry parameter a12, and EPMA current/beam conditions.'
+  details: 'Corrected Igelstromite (IMA:2021-035) record against Holtstam et al. (2024) Eur.
+    J. Mineral. 36:311-322: updated powder XRD refined unit cell (a = 8.484(3) A, c = 6.038(3)
+    A, V = 434.6(3) A3, Section 5.2, p. 314) and strongest observed lines (Table 11, p. 319:
+    3.21, 2.46, 2.69, 1.946, 1.667, 4.25, 1.778, 3.01 A); updated Table 10 (p. 318) bond lengths
+    and means (Fe-O1 x 2 = 2.097(6), Fe-O2 x 4 = 2.064(5), mean 2.075 A; Sb-O1 x 2 = 2.070(3),
+    Sb-O2 = 2.051(7), mean 2.063 A); updated host rock and associated minerals to Section
+    2 (p. 312, Fig. 1); and updated Section 3/4/6.2 physical, optical, Mossbauer (a12 = 0.60(2)),
+    and EPMA (15 kV, 10 nA, 1-2 um beam) parameters.'
+  sections:
+  - description
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/911
+  - https://github.com/CultureBotAI/CMMMech/issues/912
+  - https://github.com/CultureBotAI/CMMMech/issues/913
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/910

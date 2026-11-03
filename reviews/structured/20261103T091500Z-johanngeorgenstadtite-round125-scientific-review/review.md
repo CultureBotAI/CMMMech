@@ -1,0 +1,303 @@
+# Primary-source scientific review of johanngeorgenstadtite (IMA:2019-122, status A, Ni2+4.5(AsO4)3)
+
+- Review: 20261103T091500Z-johanngeorgenstadtite-round125-scientific-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-03T09:14:00Z
+- Finished UTC: 2026-11-03T09:15:00Z
+- Reviewer: antigravity / round125-scientific-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Johanngeorgenstadtite (IMA:2019-122, status A, Ni2+4.5(AsO4)3) passes primary-source scientific review (scientific_review: true) at SHA-256 f736a07ae232dadb3c2bae2d258ddb3d9d64af0d0627e0ce2e1a24d6280c49cd against all 32 bounded passages (13 full-PDF pages; 11 main-text pages / 26 passages) and rendered table PNGs of Kampf et al. (2020, Eur. J. Mineral. 32:373-385).
+
+## Scope And Provenance
+
+Primary-source scientific review of data/records/johanngeorgenstadtite.yaml (SHA-256 f736a07ae232dadb3c2bae2d258ddb3d9d64af0d0627e0ce2e1a24d6280c49cd) and its canonical CREATE and EDIT history sidecars against all 32 bounded primary-source passages (13 full-PDF pages; 11 main-text pages / 26 passages) and rendered PNGs of pages 4, 5, 6, and 8 from Kampf et al. (2020, Eur. J. Mineral. 32:373-385) and the September 2026 IMA-CNMNC Master List (PDF p. 105).
+
+Selection: Round 125 newly admitted mineral record johanngeorgenstadtite
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base e92f76440168fe1c799d9d52f1b63632dbb02aa1.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:johanngeorgenstadtite | data/records/johanngeorgenstadtite.yaml | maintained | Johanngeorgenstadtite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:johanngeorgenstadtite | Checked 678 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:johanngeorgenstadtite | Checked 1255 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Verification of IMA:2019-122 identity, Johanngeorgenstadt type locality, Cameca SX-50 WDS chemistry, 532 nm Raman spectrum, monoclinic C2/c alluaudite-type structure, and internal source discrepancies for johanngeorgenstadtite
+
+evidence: supported. Targets: cmmmech:johanngeorgenstadtite.
+
+All numeric, crystallographic, optical, Raman, and chemical claims in data/records/johanngeorgenstadtite.yaml (SHA-256 f736a07ae232dadb3c2bae2d258ddb3d9d64af0d0627e0ce2e1a24d6280c49cd) match the bounded primary-source passages and rendered table PNGs of Kampf et al. (2020, Eur. J. Mineral. 32:373-385) and the September 2026 IMA Master List (p. 105).
+
+### Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE and EDIT provenance
+
+provenance: supported. Targets: cmmmech:johanngeorgenstadtite.
+
+data/records/johanngeorgenstadtite.yaml accurately omits mechanisms (0 mechanisms) and explicitly discloses that no criticality designation, microbial mechanism, or industrial recovery yield is asserted. Append-only CREATE and EDIT history sidecars pass validation with 0 errors.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/johanngeorgenstadtite.yaml; Working-tree record data/records/johanngeorgenstadtite.yaml | supports | Working-tree record data/records/johanngeorgenstadtite.yaml (SHA-256 f736a07ae232dadb3c2bae2d258ddb3d9d64af0d0627e0ce2e1a24d6280c49cd) captures IMA:2019-122 identity, Johanngeorgenstadt (Erzgebirge, Saxony, Germany) type locality, American Museum of Natural History holotype catalogue no. 17956, Table 1 (p. 377) Cameca SX-50 WDS chemistry (5 spots on 4 crystals, NiO 39.12 wt%, CoO 8.23 wt%, CuO 1.54 wt%, As2O5 51.12 wt%, total 100.01 wt%, empirical formula (Ni2+3.56Co2+0.75Cu2+0.13)Sigma4.44As3.02O12), monoclinic C2/c alluaudite-type structure (Tables 2b, 3, 4b, 5b, 6b; SCXRD a = 11.933(3) Å, b = 12.753(3) Å, c = 6.6956(17) Å, beta = 113.302(8)°, V = 935.9(4) Å3, Z = 4, R1 = 0.0375; PXRD a = 11.930(4) Å, b = 12.755(4) Å, c = 6.697(2) Å, beta = 113.285(11)°, V = 936.1(5) Å3), physical, optical (biaxial (-) alpha = 1.83(1), beta = 1.86(1), gamma = 1.88(1), 2Vmeas = 78(1)°, 2Vcalc = 77.3°), and 532 nm Raman properties (doublet at 850 and 802 cm-1), internal primary-source discrepancies (Table 3 40 mm x 30 mm x 20 mm unit typo and Dx = 4.880 g/cm3; Table 5b &lt;M1-O&gt; / &lt;M2-O&gt; printed as &lt;M1-O4&gt; / &lt;M2-O4&gt;; Table 6b vs Section 7.2 BVS rounding), and 0 mechanisms. |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List, PDF p. 105 | supports | Confirms Johanngeorgenstadtite, formula Ni2+4.5(AsO4)3, status A, IMA No. 2019-122, country Germany, and sole reference European Journal of Mineralogy 32 (2020), 373-385. |
+| kampf_2020_primary | https://doi.org/10.5194/ejm-32-373-2020; Kampf AR, Nash BP, Plášil J, Smith JB, and Feinglos MN (2020) Niasite and johanngeorgenstadtite, Ni2+4.5(AsO4)3 dimorphs from Johanngeorgenstadt, Germany, Eur. J. Mineral. 32:373-385, pp. 373-385, Tables 1-6b, Figures 4, 5, 8 (32 bounded passages &lt;= 1,800 B across 13 full-PDF pages; 11 main-text pages / 26 passages, plus PNG renders of pages 4, 5, 6, and 8) | supports | All 13 full-PDF pages (32 bounded passages &lt;= 1,800 B, 44,785 passage bytes / 44,829 raw text bytes; 11 main-text pages pp. 373-383, 26 passages) and PNG renders of pages 4, 5, 6, and 8 inspected, confirming verbatim title, type locality, holotype AMNH 17956, physical and optical constants, Fig. 5 Raman spectrum, Table 1 WDS composition, monoclinic C2/c cell parameters, and all internal primary-source typographical discrepancies. |
+| create_history | history/records/johanngeorgenstadtite/2026-11-03T091254Z-antigravity-ee9475.yaml; Canonical CREATE history sidecar history/records/johanngeorgenstadtite/2026-11-03T091254Z-antigravity-ee9475.yaml | supports | Canonical CREATE history sidecar (SHA-256 c305dac622731dfe05d794eca2c752672e2ab8186f850c6b5ea619b45e32e4d7) matches record curation_history[0].timestamp and top-level record sections. |
+| edit_history | history/records/johanngeorgenstadtite/2026-11-03T101609Z-antigravity-9eb999.yaml; Canonical EDIT history sidecar history/records/johanngeorgenstadtite/2026-11-03T101609Z-antigravity-9eb999.yaml | supports | Canonical EDIT history sidecar (SHA-256 abdd24539ac419e7e08087e07e323ee452639816dec7e5e653c0ef2b64d744f9) matches record curation_history[1].timestamp and documents PR #910 remediation of findings F-05 and F-06 (#912). |
+| validation | data/records/johanngeorgenstadtite.yaml; Real CLI validation via .venv/bin/cmmmech validate --require-records and .venv/bin/cmmmech validate-history --base main | supports | Checked 678 record(s); 0 failed. Checked 1255 history record(s); 0 error(s). |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed under the Round 125 bounded source-text workflow (scripts/index_bounded_pdf_passages.py, max 1,800 bytes per passage) plus single-page PNG renders of pages 4, 5, 6, and 8.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261103T091500Z-johanngeorgenstadtite-round125-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Primary-source scientific review of johanngeorgenstadtite (IMA:2019-122, status
+  A, Ni2+4.5(AsO4)3)
+started_at: '2026-11-03T09:14:00Z'
+finished_at: '2026-11-03T09:15:00Z'
+reviewer:
+  identity: antigravity / round125-scientific-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/johanngeorgenstadtite.yaml (SHA-256
+    f736a07ae232dadb3c2bae2d258ddb3d9d64af0d0627e0ce2e1a24d6280c49cd) and its CREATE
+    and EDIT history sidecars against all 32 bounded passages (13 full-PDF pages;
+    11 main-text pages / 26 passages) and single-page PNG renders of pages 4, 5, 6,
+    and 8 of Kampf AR, Nash BP, Plášil J, Smith JB, and Feinglos MN (2020, Eur. J.
+    Mineral. 32:373-385) and the September 2026 IMA-CNMNC Master List (PDF p. 105).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: e92f76440168fe1c799d9d52f1b63632dbb02aa1
+  state: working_tree
+  inputs:
+  - path: data/records/johanngeorgenstadtite.yaml
+    sha256: f736a07ae232dadb3c2bae2d258ddb3d9d64af0d0627e0ce2e1a24d6280c49cd
+    role: target
+  - path: history/records/johanngeorgenstadtite/2026-11-03T091254Z-antigravity-ee9475.yaml
+    sha256: c305dac622731dfe05d794eca2c752672e2ab8186f850c6b5ea619b45e32e4d7
+    role: context
+  - path: history/records/johanngeorgenstadtite/2026-11-03T101609Z-antigravity-9eb999.yaml
+    sha256: abdd24539ac419e7e08087e07e323ee452639816dec7e5e653c0ef2b64d744f9
+    role: context
+  - path: research/sources/round125-minerals/20261103T085500Z-source-investigation.json
+    sha256: bfa3569cb5599a4ce0ae5c0550271a84710ab5de03b4b534d9a3547507142f9e
+    role: context
+  - path: research/sources/round125-minerals/20261103T085500Z-source-investigation.md
+    sha256: 527929d6f847c40e10158d89d13d9cfede8516975ad141de8d9f95e9a9e627bf
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:johanngeorgenstadtite
+  path: data/records/johanngeorgenstadtite.yaml
+  label: Johanngeorgenstadtite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/johanngeorgenstadtite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/johanngeorgenstadtite/2026-11-03T091254Z-antigravity-ee9475.yaml
+    role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/johanngeorgenstadtite/2026-11-03T101609Z-antigravity-9eb999.yaml
+    role: canonical_history
+scope:
+  description: Primary-source scientific review of data/records/johanngeorgenstadtite.yaml
+    (SHA-256 f736a07ae232dadb3c2bae2d258ddb3d9d64af0d0627e0ce2e1a24d6280c49cd) and
+    its canonical CREATE and EDIT history sidecars against all 32 bounded primary-source
+    passages (13 full-PDF pages; 11 main-text pages / 26 passages) and rendered PNGs
+    of pages 4, 5, 6, and 8 from Kampf et al. (2020, Eur. J. Mineral. 32:373-385)
+    and the September 2026 IMA-CNMNC Master List (PDF p. 105).
+  selection: Round 125 newly admitted mineral record johanngeorgenstadtite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:johanngeorgenstadtite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/johanngeorgenstadtite.yaml
+  locator: Working-tree record data/records/johanngeorgenstadtite.yaml
+  accessed_at: '2026-11-03T09:14:30Z'
+  support: supports
+  summary: Working-tree record data/records/johanngeorgenstadtite.yaml (SHA-256 f736a07ae232dadb3c2bae2d258ddb3d9d64af0d0627e0ce2e1a24d6280c49cd)
+    captures IMA:2019-122 identity, Johanngeorgenstadt (Erzgebirge, Saxony, Germany)
+    type locality, American Museum of Natural History holotype catalogue no. 17956,
+    Table 1 (p. 377) Cameca SX-50 WDS chemistry (5 spots on 4 crystals, NiO 39.12
+    wt%, CoO 8.23 wt%, CuO 1.54 wt%, As2O5 51.12 wt%, total 100.01 wt%, empirical
+    formula (Ni2+3.56Co2+0.75Cu2+0.13)Sigma4.44As3.02O12), monoclinic C2/c alluaudite-type
+    structure (Tables 2b, 3, 4b, 5b, 6b; SCXRD a = 11.933(3) Å, b = 12.753(3) Å, c
+    = 6.6956(17) Å, beta = 113.302(8)°, V = 935.9(4) Å3, Z = 4, R1 = 0.0375; PXRD
+    a = 11.930(4) Å, b = 12.755(4) Å, c = 6.697(2) Å, beta = 113.285(11)°, V = 936.1(5)
+    Å3), physical, optical (biaxial (-) alpha = 1.83(1), beta = 1.86(1), gamma = 1.88(1),
+    2Vmeas = 78(1)°, 2Vcalc = 77.3°), and 532 nm Raman properties (doublet at 850
+    and 802 cm-1), internal primary-source discrepancies (Table 3 40 mm x 30 mm x
+    20 mm unit typo and Dx = 4.880 g/cm3; Table 5b <M1-O> / <M2-O> printed as <M1-O4>
+    / <M2-O4>; Table 6b vs Section 7.2 BVS rounding), and 0 mechanisms.
+  snapshot_sha256: f736a07ae232dadb3c2bae2d258ddb3d9d64af0d0627e0ce2e1a24d6280c49cd
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 105
+  accessed_at: '2026-11-03T09:14:30Z'
+  support: supports
+  summary: Confirms Johanngeorgenstadtite, formula Ni2+4.5(AsO4)3, status A, IMA No.
+    2019-122, country Germany, and sole reference European Journal of Mineralogy 32
+    (2020), 373-385.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: kampf_2020_primary
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-32-373-2020
+  locator: Kampf AR, Nash BP, Plášil J, Smith JB, and Feinglos MN (2020) Niasite and
+    johanngeorgenstadtite, Ni2+4.5(AsO4)3 dimorphs from Johanngeorgenstadt, Germany,
+    Eur. J. Mineral. 32:373-385, pp. 373-385, Tables 1-6b, Figures 4, 5, 8 (32 bounded
+    passages <= 1,800 B across 13 full-PDF pages; 11 main-text pages / 26 passages,
+    plus PNG renders of pages 4, 5, 6, and 8)
+  accessed_at: '2026-11-03T09:14:30Z'
+  support: supports
+  summary: All 13 full-PDF pages (32 bounded passages <= 1,800 B, 44,785 passage bytes
+    / 44,829 raw text bytes; 11 main-text pages pp. 373-383, 26 passages) and PNG
+    renders of pages 4, 5, 6, and 8 inspected, confirming verbatim title, type locality,
+    holotype AMNH 17956, physical and optical constants, Fig. 5 Raman spectrum, Table
+    1 WDS composition, monoclinic C2/c cell parameters, and all internal primary-source
+    typographical discrepancies.
+  snapshot_sha256: d714ae2487c000a867ff054cd60abe9369a81c2b57a51636e9e9f7c7d56cfdca
+- evidence_id: create_history
+  kind: record_content
+  reference: history/records/johanngeorgenstadtite/2026-11-03T091254Z-antigravity-ee9475.yaml
+  locator: Canonical CREATE history sidecar history/records/johanngeorgenstadtite/2026-11-03T091254Z-antigravity-ee9475.yaml
+  accessed_at: '2026-11-03T09:14:30Z'
+  support: supports
+  summary: Canonical CREATE history sidecar (SHA-256 c305dac622731dfe05d794eca2c752672e2ab8186f850c6b5ea619b45e32e4d7)
+    matches record curation_history[0].timestamp and top-level record sections.
+  snapshot_sha256: c305dac622731dfe05d794eca2c752672e2ab8186f850c6b5ea619b45e32e4d7
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/johanngeorgenstadtite/2026-11-03T101609Z-antigravity-9eb999.yaml
+  locator: Canonical EDIT history sidecar history/records/johanngeorgenstadtite/2026-11-03T101609Z-antigravity-9eb999.yaml
+  accessed_at: '2026-11-03T09:14:30Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar (SHA-256 abdd24539ac419e7e08087e07e323ee452639816dec7e5e653c0ef2b64d744f9)
+    matches record curation_history[1].timestamp and documents PR #910 remediation
+    of findings F-05 and F-06 (#912).'
+  snapshot_sha256: abdd24539ac419e7e08087e07e323ee452639816dec7e5e653c0ef2b64d744f9
+- evidence_id: validation
+  kind: validation
+  reference: data/records/johanngeorgenstadtite.yaml
+  locator: Real CLI validation via .venv/bin/cmmmech validate --require-records and
+    .venv/bin/cmmmech validate-history --base main
+  accessed_at: '2026-11-03T09:14:40Z'
+  support: supports
+  summary: Checked 678 record(s); 0 failed. Checked 1255 history record(s); 0 error(s).
+  snapshot_sha256: f736a07ae232dadb3c2bae2d258ddb3d9d64af0d0627e0ce2e1a24d6280c49cd
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: .venv/bin/cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 678 record(s); 0 failed.
+  target_ids:
+  - cmmmech:johanngeorgenstadtite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: .venv/bin/cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1255 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:johanngeorgenstadtite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA:2019-122 identity, Johanngeorgenstadt type locality,
+    Cameca SX-50 WDS chemistry, 532 nm Raman spectrum, monoclinic C2/c alluaudite-type
+    structure, and internal source discrepancies for johanngeorgenstadtite
+  outcome: supported
+  summary: All numeric, crystallographic, optical, Raman, and chemical claims in data/records/johanngeorgenstadtite.yaml
+    (SHA-256 f736a07ae232dadb3c2bae2d258ddb3d9d64af0d0627e0ce2e1a24d6280c49cd) match
+    the bounded primary-source passages and rendered table PNGs of Kampf et al. (2020,
+    Eur. J. Mineral. 32:373-385) and the September 2026 IMA Master List (p. 105).
+  target_ids:
+  - cmmmech:johanngeorgenstadtite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - kampf_2020_primary
+- assessment_id: mechanism_absence_and_provenance_verification
+  area: provenance
+  topic: Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE
+    and EDIT provenance
+  outcome: supported
+  summary: data/records/johanngeorgenstadtite.yaml accurately omits mechanisms (0
+    mechanisms) and explicitly discloses that no criticality designation, microbial
+    mechanism, or industrial recovery yield is asserted. Append-only CREATE and EDIT
+    history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:johanngeorgenstadtite
+  evidence_ids:
+  - owner
+  - kampf_2020_primary
+  - create_history
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Johanngeorgenstadtite (IMA:2019-122, status A, Ni2+4.5(AsO4)3) passes primary-source
+  scientific review (scientific_review: true) at SHA-256 f736a07ae232dadb3c2bae2d258ddb3d9d64af0d0627e0ce2e1a24d6280c49cd
+  against all 32 bounded passages (13 full-PDF pages; 11 main-text pages / 26 passages)
+  and rendered table PNGs of Kampf et al. (2020, Eur. J. Mineral. 32:373-385).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed under the Round 125 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage) plus single-page PNG renders of pages 4, 5, 6, and
+  8.
+related_reviews: []
+```
