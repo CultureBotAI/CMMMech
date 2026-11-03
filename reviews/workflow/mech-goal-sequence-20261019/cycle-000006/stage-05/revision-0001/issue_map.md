@@ -1,0 +1,33 @@
+# Stage 5 Grouped Remediation Issue Map (`mech-goal-sequence-20261019`, Cycle 6, Stage 5)
+
+- **Repository**: `CultureBotAI/CMMMech` (`cmmmech`)
+- **Source Revision**: `58145fe45a1916d42a73bb601835b0c52d0e0d09`
+- **Post-Remediation Record Revision**: `08304a088fc550056e5f85461cd3aa06d727555d` (`review-base/cycle6-stage5-08304a08-20261103`)
+- **Scope Frozen At**: `2026-11-03T05:25:00Z`
+- **Previous Stage Evidence**: `reviews/workflow/mech-goal-sequence-20261019/cycle-000006/stage-04/revision-0001/evidence.yaml` (`5bfba508f2d5a6d9d49a3f925332602d2f47d3938c8ad5b3edd923bc9b9f4670`)
+- **Post-Remediation Structured Review Bundle**: `reviews/structured/20261103T055100Z-cycle6-stage5-remediation-verification/review.yaml` (`sha256: 4ba855a788e0ab6865e76a19b67e5bc87cb2df581af79354dbbb9df59a666ced`)
+
+## 1. Deduplication Against Open & Closed GitHub Issues
+
+Before creating issues, the open and closed GitHub issue queues in `CultureBotAI/CMMMech` were searched via `gh issue list --repo CultureBotAI/CMMMech --state all --limit 50` and `gh issue list --repo CultureBotAI/CMMMech --state open --limit 100`. Open issues (`#106`, `#115`, `#805`, `#822`, `#839`, `#840`) were inspected and none covered the 3 Cycle 6 Stage 4 review findings (`cmmmech-cycle6-stage4-finding-0001`, `cmmmech-cycle6-stage4-finding-0002`, `cmmmech-cycle6-stage4-finding-0003`). Three new tracked GitHub issues (`#901`, `#902`, `#903`) were created, one per root-cause and repair-ownership group.
+
+## 2. Root-Cause Groups, Issue Mapping, and Finding Dispositions
+
+| Group ID | Finding IDs | Issue Key | GitHub Issue | Status | Target Records (19 total) | Disposition |
+| --- | --- | --- | --- | --- | --- | --- |
+| `GRP-C6S5-001` | `cmmmech-cycle6-stage4-finding-0001` | `cmmmech.traction-battery-hydrometallurgical-residue.tth-hydrolase-consortium-label-and-description-omit-species-and-loci` | [`#901`](https://github.com/CultureBotAI/CMMMech/issues/901) | `resolved` | 1 secondary_resource record (`traction-battery-hydrometallurgical-residue`) | Updated `causal_graphs[0].nodes[1]` (`id: tth_hydrolase`) in `data/records/traction-battery-hydrometallurgical-residue.yaml` so `label` reads `Tth / TetH tetrathionate hydrolase (consortium tth / tetH)` and `description` names all 4 attached consortium `protein_examples` (`Acidithiobacillus ferrooxidans` ATCC 23270 `tth` / `AFE_0029` [`UniProtKB:B7J3C9`]; `Acidithiobacillus thiooxidans` ATCC 19377 `tth` / `GCD22_14205` [`UniProtKB:A0A5P9XPU3`] and `tth` / `GCD22_02315` [`UniProtKB:A0A5P9XS05`]; `Acidithiobacillus caldus` SM-1 `Atc_1595` / `TetH` [`UniProtKB:F9ZNI0`]) with 1 append-only `EDIT` history sidecar (`history/records/traction-battery-hydrometallurgical-residue/2026-11-03T054959Z-marcin-feddbd.yaml`). |
+| `GRP-C6S5-002` | `cmmmech-cycle6-stage4-finding-0002` | `cmmmech.thiooxidans-causal-graphs.tth-hydrolase-node-omits-paralog-loci` | [`#902`](https://github.com/CultureBotAI/CMMMech/issues/902) | `resolved` | 16 records (`arsenic`, `automotive-wastewater-treatment-sludge`, `blast-furnace-cast-house-dust`, `copper-smelter-slag`, `discarded-led-lamps`, `electric-arc-furnace-dust`, `gaas-production-hydroxide-sludge`, `gallium`, `gold-mine-tailings`, `metallic-machining-burrs`, `nickel-based-superalloy-residue-powders`, `spent-alkaline-zinc-carbon-batteries`, `spent-automotive-three-way-catalyst`, `spent-hydrodesulfurization-catalyst`, `spent-selective-catalytic-reduction-catalyst`, `spent-sulfuric-acid-production-catalyst`) | Updated `causal_graphs[0].nodes[1]` (`id: tth_hydrolase`) across all 16 single-species `Acidithiobacillus thiooxidans` records so `label` reads `Tth tetrathionate hydrolase (tth GCD22_14205; tth GCD22_02315)` and `description` reads `Periplasmic pyrroloquinoline-domain tetrathionate hydrolase paralogs (tth GCD22_14205 and tth GCD22_02315) disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.` matching both attached `protein_examples` (`UniProtKB:A0A5P9XPU3` and `UniProtKB:A0A5P9XS05`) with 16 append-only `EDIT` history sidecars. |
+| `GRP-C6S5-003` | `cmmmech-cycle6-stage4-finding-0003` | `cmmmech.round124-minerals.missing-ima-symbol-slot` | [`#903`](https://github.com/CultureBotAI/CMMMech/issues/903) | `resolved` | 2 mineral records (`vielleaureite-ce`, `xianhuaite-ce`) | Populated top-level `ima_symbol: Vlr-Ce` in `data/records/vielleaureite-ce.yaml` (`IMA:2022-134`, `ragu_2025_vielleaureite_ce`) and top-level `ima_symbol: Xhu-Ce` in `data/records/xianhuaite-ce.yaml` (`IMA:2024-091`, `yang_2026_xianhuaite_ce`) immediately after `material_kind: mineral` via `scripts/curate_causal_graphs.py` with 2 append-only `EDIT` history sidecars (`history/records/vielleaureite-ce/2026-11-03T054036Z-marcin-e0cdfb.yaml`, `history/records/xianhuaite-ce/2026-11-03T054036Z-marcin-b70284.yaml`). |
+
+## 3. Carry-Forward Blockers & Infrastructure Tasks
+
+- **Carry-Forward Findings (`carry_forward_ids`)**: `[]` (0 open/deferred findings remain).
+- **Infrastructure Tasks (`infra_tasks`)**: `[]` (all 3 Cycle 6 Stage 4 findings were resolved directly in record YAML and history sidecars through `scripts/curate_causal_graphs.py`).
+
+## 4. PR #904 Adversarial Review Follow-Up Issues
+
+During Round 1 independent adversarial review of PR [`#904`](https://github.com/CultureBotAI/CMMMech/pull/904), all 19 remediated records, 19 `EDIT` history sidecars, `pages/`, and `reviews/workflow/latest.yaml` passed with 0 defects, and 4 documentation/metadata defects in the Stage 5 review and workflow evidence artifacts were filed and resolved before merge:
+- [`#905`](https://github.com/CultureBotAI/CMMMech/issues/905): Corrected primary-source DOIs and journal locators (`ev-lu2025-doi`, `ev-ragu2025-vielleaureite`, `ev-yang2026-xianhuaite`) in `reviews/structured/20261103T055100Z-cycle6-stage5-remediation-verification/review.yaml`.
+- [`#906`](https://github.com/CultureBotAI/CMMMech/issues/906): Restored exact Stage 4 `issue_key` values across `reviews/structured/20261103T055100Z-cycle6-stage5-remediation-verification/review.yaml` and `issue_map.md` for longitudinal finding continuity.
+- [`#907`](https://github.com/CultureBotAI/CMMMech/issues/907): Corrected the mineral `ima_symbol` completeness statement and metric denominator (`4/4` mineral records stating an IMA-CNMNC symbol in `description` across the `422`-mineral corpus, and `2/2` of the `GRP-C6S5-003` target records) in `review.yaml` and PR `#904`.
+- [`#908`](https://github.com/CultureBotAI/CMMMech/issues/908): Aligned `findings[0..2].summary` in `reviews/workflow/mech-goal-sequence-20261019/cycle-000006/stage-05/revision-0001/evidence.yaml` verbatim with `reviews/workflow/mech-goal-sequence-20261019/cycle-000006/stage-04/revision-0001/evidence.yaml`.

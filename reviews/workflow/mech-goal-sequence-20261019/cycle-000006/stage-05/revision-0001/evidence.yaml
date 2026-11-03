@@ -1,0 +1,147 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 6
+stage: 5
+revision: 1
+outcome: completed
+summary: Consumed the 3 Cycle 6 Stage 4 review findings (cmmmech-cycle6-stage4-finding-0001,
+  cmmmech-cycle6-stage4-finding-0002, cmmmech-cycle6-stage4-finding-0003) across 19
+  records, grouped them by root cause and repair ownership into GRP-C6S5-001 (#901),
+  GRP-C6S5-002 (#902), and GRP-C6S5-003 (#903), applied all 19 record remediations
+  via scripts/curate_causal_graphs.py with 19 append-only EDIT history sidecars and
+  regenerated pages/, preserved all immutable Stage 4 review bundles untouched, and
+  verified all 19 remediated records in structured review bundle 20261103T055100Z-cycle6-stage5-remediation-verification
+  with verdict pass and 0 carry-forward findings.
+source_revision: 58145fe45a1916d42a73bb601835b0c52d0e0d09
+scope_frozen_at: '2026-11-03T05:25:00Z'
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000006/stage-04/revision-0001/evidence.yaml
+  sha256: 5bfba508f2d5a6d9d49a3f925332602d2f47d3938c8ad5b3edd923bc9b9f4670
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000006/stage-05/revision-0001/issue_map.md
+  sha256: b640879275317b414e127156cb2fd603f05daf7840f99fa4c9bd06bc4945665d
+  kind: issue_map
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000006/stage-05/revision-0001/validation.md
+  sha256: 71c128b3932b61757d06d7fabd69d0862512ceb092467bcae7b80230932803c2
+  kind: validation
+findings:
+- finding_id: cmmmech-cycle6-stage4-finding-0001
+  carried_from: cmmmech-cycle6-stage4-finding-0001
+  status: resolved
+  group_id: GRP-C6S5-001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/901
+  summary: In data/records/traction-battery-hydrometallurgical-residue.yaml (cmmmech:traction-battery-hydrometallurgical-residue),
+    causal_graphs[0] (acidophile_culture_associated_leaching_graph) node tth_hydrolase
+    (lines 496-500) is grounded to 4 consortium tetrathionate hydrolase protein_examples
+    across 3 species (Acidithiobacillus ferrooxidans ATCC 23270 UniProtKB:B7J3C9 tth
+    / AFE_0029, Acidithiobacillus thiooxidans ATCC 19377 UniProtKB:A0A5P9XPU3 tth
+    / GCD22_14205 and UniProtKB:A0A5P9XS05 tth / GCD22_02315, and Acidithiobacillus
+    caldus SM-1 UniProtKB:F9ZNI0 Atc_1595 / TetH), but retains label 'Tth / TetH tetrathionate
+    hydrolase (consortium tth)' (omitting tetH from the parenthetical) and a generic
+    description 'Periplasmic pyrroloquinoline-domain hydrolase disproportionating
+    tetrathionate into sulfate and protons.' that omits all grounded consortium species
+    and locus tags, whereas sibling node sqr_reductase (lines 318-322) explicitly
+    lists all grounded consortium species and locus tags in its description.
+  disposition: 'Resolved under #901 (GRP-C6S5-001) by updating causal_graphs[0].nodes[1]
+    (tth_hydrolase) label to ''Tth / TetH tetrathionate hydrolase (consortium tth
+    / tetH)'' and description to name all 4 attached consortium protein_examples (A.
+    ferrooxidans ATCC 23270 tth / AFE_0029 [UniProtKB:B7J3C9]; A. thiooxidans ATCC
+    19377 tth / GCD22_14205 [UniProtKB:A0A5P9XPU3] and tth / GCD22_02315 [UniProtKB:A0A5P9XS05];
+    A. caldus SM-1 Atc_1595 / TetH [UniProtKB:F9ZNI0]) in data/records/traction-battery-hydrometallurgical-residue.yaml
+    with an append-only EDIT history sidecar; verified in reviews/structured/20261103T055100Z-cycle6-stage5-remediation-verification/review.yaml.'
+- finding_id: cmmmech-cycle6-stage4-finding-0002
+  carried_from: cmmmech-cycle6-stage4-finding-0002
+  status: resolved
+  group_id: GRP-C6S5-002
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/902
+  summary: 'Across 16 single-species Acidithiobacillus thiooxidans records (2 element:
+    arsenic.yaml, gallium.yaml; 14 secondary_resource: automotive-wastewater-treatment-sludge.yaml,
+    blast-furnace-cast-house-dust.yaml, copper-smelter-slag.yaml, discarded-led-lamps.yaml,
+    electric-arc-furnace-dust.yaml, gaas-production-hydroxide-sludge.yaml, gold-mine-tailings.yaml,
+    metallic-machining-burrs.yaml, nickel-based-superalloy-residue-powders.yaml, spent-alkaline-zinc-carbon-batteries.yaml,
+    spent-automotive-three-way-catalyst.yaml, spent-hydrodesulfurization-catalyst.yaml,
+    spent-selective-catalytic-reduction-catalyst.yaml, spent-sulfuric-acid-production-catalyst.yaml)
+    whose tth_hydrolase causal-graph nodes were expanded in Cycle 5 Stage 3 (PR #872)
+    to include both A. thiooxidans ATCC 19377 tetrathionate hydrolase paralogs (UniProtKB:A0A5P9XPU3
+    tth / GCD22_14205 and UniProtKB:A0A5P9XS05 tth / GCD22_02315), causal_graphs[0].nodes[1]
+    still retains the pre-expansion singular label ''Tth tetrathionate hydrolase (tth)''
+    and generic description ''Periplasmic tetrathionate hydrolase disproportionating
+    tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.'' without
+    naming GCD22_14205 and GCD22_02315, whereas sibling node sqr_reductase has label
+    ''Sqr/Sqor sulfide-quinone reductase (sqr / sqor)'' and explicitly names ''(Sqr/Sqor;
+    GCD22_02301 / GCD22_03207)'' in description, and the 8 Cycle 6 Stage 2 (PR #888,
+    commit a9115e6c) single-species A. thiooxidans records (beverage-carton-hydropulping-reject,
+    chromite-beneficiation-tailings, goethite, jarosite, nickel-laterite-ore, nickel,
+    petroleum-coke, pharmaceutical-blister-packaging-waste) explicitly name ''(tth
+    GCD22_14205; tth GCD22_02315)'' in tth_hydrolase.label and ''(tth GCD22_14205
+    and tth GCD22_02315)'' in tth_hydrolase.description.'
+  disposition: 'Resolved under #902 (GRP-C6S5-002) by updating causal_graphs[0].nodes[1]
+    (tth_hydrolase) label to ''Tth tetrathionate hydrolase (tth GCD22_14205; tth GCD22_02315)''
+    and description to ''Periplasmic pyrroloquinoline-domain tetrathionate hydrolase
+    paralogs (tth GCD22_14205 and tth GCD22_02315) disproportionating tetrathionate
+    into thiosulfate, elemental sulfur, sulfate, and protons.'' across all 16 affected
+    records with 16 append-only EDIT history sidecars; verified in reviews/structured/20261103T055100Z-cycle6-stage5-remediation-verification/review.yaml.'
+- finding_id: cmmmech-cycle6-stage4-finding-0003
+  carried_from: cmmmech-cycle6-stage4-finding-0003
+  status: resolved
+  group_id: GRP-C6S5-003
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/903
+  summary: 'Both data/records/vielleaureite-ce.yaml (cmmmech:vielleaureite-ce) and
+    data/records/xianhuaite-ce.yaml (cmmmech:xianhuaite-ce), curated in Cycle 6 Stage
+    1 (PR #884), state their IMA-CNMNC-approved mineral symbols in description (''Vielleaureite-(Ce)
+    (IMA 2022-134, symbol Vlr-Ce; ...)'' from Ragu et al. 2025 Eur. J. Mineral. 37:627-638,
+    p. 627 and IMA-CNMNC September 2026 PDF p. 228; and ''Xianhuaite-(Ce) (IMA 2024-091,
+    symbol Xhu-Ce)'' from Yang et al. 2026 Eur. J. Mineral. 38:449-459, p. 449 and
+    IMA-CNMNC September 2026 PDF p. 236), but omit the top-level ima_symbol slot (ima_symbol:
+    Vlr-Ce and ima_symbol: Xhu-Ce after material_kind: mineral), unlike peer IMA mineral
+    records such as data/records/andreybulakhite.yaml (ima_symbol: Adb) and data/records/yttrotungstite-nd.yaml
+    (ima_symbol: Ytgs-Nd).'
+  disposition: 'Resolved under #903 (GRP-C6S5-003) by populating top-level ima_symbol:
+    Vlr-Ce in data/records/vielleaureite-ce.yaml and ima_symbol: Xhu-Ce in data/records/xianhuaite-ce.yaml
+    immediately after material_kind: mineral with 2 append-only EDIT history sidecars;
+    verified in reviews/structured/20261103T055100Z-cycle6-stage5-remediation-verification/review.yaml.'
+groups:
+- group_id: GRP-C6S5-001
+  finding_ids:
+  - cmmmech-cycle6-stage4-finding-0001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/901
+  status: resolved
+  summary: Update causal_graphs[0].nodes[1] (tth_hydrolase) label and description
+    in traction-battery-hydrometallurgical-residue.yaml to reflect all 4 attached
+    consortium Tth/TetH protein_examples with an append-only EDIT history sidecar.
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000006/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000006/stage-05/revision-0001/validation.md
+  disposition: Updated causal_graphs[0].nodes[1] (tth_hydrolase) label and description
+    in traction-battery-hydrometallurgical-residue.yaml with an append-only EDIT history
+    sidecar and verified in 20261103T055100Z-cycle6-stage5-remediation-verification.
+- group_id: GRP-C6S5-002
+  finding_ids:
+  - cmmmech-cycle6-stage4-finding-0002
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/902
+  status: resolved
+  summary: Update causal_graphs[0].nodes[1] (tth_hydrolase) label and description
+    across 16 single-species Acidithiobacillus thiooxidans records to name both tth
+    paralogs (GCD22_14205 and GCD22_02315) with append-only EDIT history sidecars.
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000006/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000006/stage-05/revision-0001/validation.md
+  disposition: Updated causal_graphs[0].nodes[1] (tth_hydrolase) label and description
+    across all 16 single-species A. thiooxidans records in GRP-C6S5-002 with 16 append-only
+    EDIT history sidecars and verified in 20261103T055100Z-cycle6-stage5-remediation-verification.
+- group_id: GRP-C6S5-003
+  finding_ids:
+  - cmmmech-cycle6-stage4-finding-0003
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/903
+  status: resolved
+  summary: 'Populate top-level ima_symbol: Vlr-Ce on vielleaureite-ce.yaml and ima_symbol:
+    Xhu-Ce on xianhuaite-ce.yaml with append-only EDIT history sidecars.'
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000006/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000006/stage-05/revision-0001/validation.md
+  disposition: Populated top-level ima_symbol on vielleaureite-ce.yaml and xianhuaite-ce.yaml
+    with 2 append-only EDIT history sidecars and verified in 20261103T055100Z-cycle6-stage5-remediation-verification.
+carry_forward_ids: []
+infra_tasks: []
