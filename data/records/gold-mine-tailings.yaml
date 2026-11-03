@@ -198,10 +198,10 @@ causal_graphs:
         supports: partial
         explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for sulfur-oxidizing medium conditioning and culture-associated Pr, Ce, and Eu mobilization from oxalic-acid-pretreated gold-mine tailings by Acidithiobacillus thiooxidans PTCC 1717 in Fereydouni et al. (2025); individual sqr/sqor/tth genes were not mutated or directly assayed.
   - id: tth_hydrolase
-    label: Tth tetrathionate hydrolase (tth)
+    label: Tth tetrathionate hydrolase (tth GCD22_14205; tth GCD22_02315)
     node_type: GENE_OR_PROTEIN
     gene_symbol: tth
-    description: Periplasmic tetrathionate hydrolase disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.
+    description: Periplasmic pyrroloquinoline-domain tetrathionate hydrolase paralogs (tth GCD22_14205 and tth GCD22_02315) disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and protons.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A0A5P9XPU3
@@ -317,8 +317,13 @@ curation_history:
   curator: claude
   action: edit
   summary: Include sqor in Sqr/Sqor causal-graph descriptions and protein_examples evidence explanations (#859)
+- timestamp: '2026-11-03T05:50:01Z'
+  curator: marcin
+  action: edit
+  summary: Update tth_hydrolase causal node label and description to reflect both Acidithiobacillus thiooxidans ATCC 19377 tth paralogs (#902).
 history_refs:
 - history/records/gold-mine-tailings/2026-10-12T091525Z-codex-622d1c.yaml
 - history/records/gold-mine-tailings/2026-10-30T060443Z-claude-claude-opus-4-6-antigravity-673f77.yaml
 - history/records/gold-mine-tailings/2026-10-30T074105Z-claude-claude-opus-4-6-antigravity-f6052e.yaml
 - history/records/gold-mine-tailings/2026-10-30T080930Z-claude-7e7a57.yaml
+- history/records/gold-mine-tailings/2026-11-03T055001Z-marcin-e0dfb1.yaml
