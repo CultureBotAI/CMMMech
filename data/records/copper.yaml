@@ -1,130 +1,318 @@
 id: cmmmech:copper
 name: Copper
 material_kind: element
-description: >-
-  Copper is the element Cu, grounded by the ChEBI copper-atom identifier.
-  The United States 2025 designation names the copper commodity; it does
-  not designate every copper-bearing mineral or waste. Experimental copper
-  released from chalcopyrite concentrate is distinct from elemental copper
-  metal and from a recovered, purified product.
+description: Copper is the element Cu, grounded by the ChEBI copper-atom identifier. The United States 2025 designation names the copper commodity; it does not designate every copper-bearing mineral or waste. Experimental copper released from chalcopyrite concentrate is distinct from elemental copper metal and from a recovered, purified product.
 identifiers:
-  - id: CHEBI:28694
-    label: copper atom
+- id: CHEBI:28694
+  label: copper atom
 sources:
-  - id: chebi_copper
-    title: 'ChEBI:28694, copper atom; elemental identity, Cu, charge 0.'
-    url: https://www.ebi.ac.uk/chebi/CHEBI:28694
-    accessed_on: '2026-10-11'
-  - id: usgs_2025
-    title: >-
-      U.S. Department of the Interior. Final 2025 List of Critical Minerals.
-      Federal Register 90 FR 50494-50497, November 7, 2025; copper row.
-    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
-    accessed_on: '2026-10-11'
-  - id: christel_2018
-    title: >-
-      Christel et al. (2018). Weak Iron Oxidation by Sulfobacillus
-      thermosulfidooxidans Maintains a Favorable Redox Potential for
-      Chalcopyrite Bioleaching. Frontiers in Microbiology 9:3059.
-      DOI 10.3389/fmicb.2018.03059; Methods, Bioleaching of Chalcopyrite
-      Concentrate results, and Figure 1.
-    url: https://doi.org/10.3389/fmicb.2018.03059
-    accessed_on: '2026-10-11'
-  - id: taxonomy_sulfobacillus
-    title: >-
-      NCBI Taxonomy 28034, Sulfobacillus thermosulfidooxidans;
-      species record lists DSM 9293 as type strain.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28034
-    accessed_on: '2026-10-11'
-  - id: taxonomy_leptospirillum
-    title: >-
-      NCBI Taxonomy 178606, Leptospirillum ferriphilum;
-      species record lists DSM 14647 as type strain.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=178606
-    accessed_on: '2026-10-11'
-  - id: taxonomy_acidithiobacillus
-    title: >-
-      NCBI Taxonomy 33059, Acidithiobacillus caldus;
-      species record lists DSM 8584 as type strain.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33059
-    accessed_on: '2026-10-11'
+- id: chebi_copper
+  title: ChEBI:28694, copper atom; elemental identity, Cu, charge 0.
+  url: https://www.ebi.ac.uk/chebi/CHEBI:28694
+  accessed_on: '2026-10-11'
+- id: usgs_2025
+  title: U.S. Department of the Interior. Final 2025 List of Critical Minerals. Federal Register 90 FR 50494-50497, November 7, 2025; copper row.
+  url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  accessed_on: '2026-10-11'
+- id: christel_2018
+  title: Christel et al. (2018). Weak Iron Oxidation by Sulfobacillus thermosulfidooxidans Maintains a Favorable Redox Potential for Chalcopyrite Bioleaching. Frontiers in Microbiology 9:3059. DOI 10.3389/fmicb.2018.03059; Methods, Bioleaching of Chalcopyrite Concentrate results, and Figure 1.
+  url: https://doi.org/10.3389/fmicb.2018.03059
+  accessed_on: '2026-10-11'
+- id: taxonomy_sulfobacillus
+  title: NCBI Taxonomy 28034, Sulfobacillus thermosulfidooxidans; species record lists DSM 9293 as type strain.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28034
+  accessed_on: '2026-10-11'
+- id: taxonomy_leptospirillum
+  title: NCBI Taxonomy 178606, Leptospirillum ferriphilum; species record lists DSM 14647 as type strain.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=178606
+  accessed_on: '2026-10-11'
+- id: taxonomy_acidithiobacillus
+  title: NCBI Taxonomy 33059, Acidithiobacillus caldus; species record lists DSM 8584 as type strain.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=33059
+  accessed_on: '2026-10-11'
 criticality:
-  - jurisdiction: United States of America
-    list_name: U.S. Department of the Interior Final List of Critical Minerals
-    edition: '2025 (published November 7, 2025; 90 FR 50494-50497)'
-    classification: critical
-    source_ref: usgs_2025
+- jurisdiction: United States of America
+  list_name: U.S. Department of the Interior Final List of Critical Minerals
+  edition: 2025 (published November 7, 2025; 90 FR 50494-50497)
+  classification: critical
+  source_ref: usgs_2025
 mechanisms:
-  - id: acidophile_chalcopyrite_copper_release
-    name: Acidophile-dependent copper release from chalcopyrite concentrate
-    process: bioleaching
-    description: >-
-      Defined acidophile cultures promoted copper release from chalcopyrite
-      concentrate in laboratory flasks. The Acidithiobacillus caldus plus
-      Sulfobacillus thermosulfidooxidans combination produced the largest
-      reported copper concentration in the initial experiment. Adding the
-      strong iron oxidizer Leptospirillum ferriphilum did not maximize copper
-      release: all binary combinations outperformed the three-species mixture.
-      This is a conditional leaching result, not isolated copper recovery
-      or demonstrated deployment of a designed consortium at industrial scale.
-    context: >-
-      Aitik-mine flotation concentrate, reported as 29.5% Cu, sieved to
-      50-100 micrometres; EDTA/NaOH and acetone washes, overnight drying at
-      60 degrees C and 10 hours at 120 degrees C under nitrogen preceded
-      inoculation. The source notes accompanying bornite may occur at the
-      deposit; this is not an assay on an elemental copper feed. Living
-      A. caldus DSM 8584, S. thermosulfidooxidans DSM 9293 and L. ferriphilum
-      DSM 14647 were tested singly and in all two- and three-species
-      combinations, with uninoculated controls. Species-level identifiers
-      below do not replace these experimental strain designations.
-      Four flasks per treatment contained 100 mL MAC medium, initially pH
-      1.8, and 2% w/v concentrate in 250 mL vessels; inocula were 10^7 cells
-      per mL per species. Incubation was at 38 +/- 2 degrees C and 120 rpm.
-      Inoculated runs ended 14 days after the onset of iron oxidation
-      (redox potential above 400 mV versus Ag/AgCl), giving 14-20 days total
-      incubation. Endpoints are therefore not a common elapsed-time rate.
-      AAS after heated HCl digestion of slurry measured total released
-      copper, including dissolved and precipitated fractions.
-    microbial: true
-    organisms:
-      - id: NCBITaxon:33059
-        label: Acidithiobacillus caldus
-      - id: NCBITaxon:28034
-        label: Sulfobacillus thermosulfidooxidans
-      - id: NCBITaxon:178606
-        label: Leptospirillum ferriphilum
+- id: acidophile_chalcopyrite_copper_release
+  name: Acidophile-dependent copper release from chalcopyrite concentrate
+  process: bioleaching
+  description: 'Defined acidophile cultures promoted copper release from chalcopyrite concentrate in laboratory flasks. The Acidithiobacillus caldus plus Sulfobacillus thermosulfidooxidans combination produced the largest reported copper concentration in the initial experiment. Adding the strong iron oxidizer Leptospirillum ferriphilum did not maximize copper release: all binary combinations outperformed the three-species mixture. This is a conditional leaching result, not isolated copper recovery or demonstrated deployment of a designed consortium at industrial scale.'
+  context: Aitik-mine flotation concentrate, reported as 29.5% Cu, sieved to 50-100 micrometres; EDTA/NaOH and acetone washes, overnight drying at 60 degrees C and 10 hours at 120 degrees C under nitrogen preceded inoculation. The source notes accompanying bornite may occur at the deposit; this is not an assay on an elemental copper feed. Living A. caldus DSM 8584, S. thermosulfidooxidans DSM 9293 and L. ferriphilum DSM 14647 were tested singly and in all two- and three-species combinations, with uninoculated controls. Species-level identifiers below do not replace these experimental strain designations. Four flasks per treatment contained 100 mL MAC medium, initially pH 1.8, and 2% w/v concentrate in 250 mL vessels; inocula were 10^7 cells per mL per species. Incubation was at 38 +/- 2 degrees C and 120 rpm. Inoculated runs ended 14 days after the onset of iron oxidation (redox potential above 400 mV versus Ag/AgCl), giving 14-20 days total incubation. Endpoints are therefore not a common
+    elapsed-time rate. AAS after heated HCl digestion of slurry measured total released copper, including dissolved and precipitated fractions.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:33059
+    label: Acidithiobacillus caldus
+  - id: NCBITaxon:28034
+    label: Sulfobacillus thermosulfidooxidans
+  - id: NCBITaxon:178606
+    label: Leptospirillum ferriphilum
+  protein_examples:
+  - uniprot_accession: UniProtKB:F9ZQD6
+    entry_name: F9ZQD6_ACICS
+    protein_name: Sulfide-quinone reductase
+    gene_symbol: Atc_1705
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:990288
+      label: Acidithiobacillus caldus SM-1
+    reference_proteome_id: UP000006135
+    ec_numbers:
+    - EC:1.8.5.4
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; Atc_1705) in Acidithiobacillus caldus SM-1 catalyzing sulfide oxidation coupled to quinone reduction during moderately thermophilic bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000006135 for sequenced strain Acidithiobacillus caldus SM-1 (NCBITaxon:990288), representing Acidithiobacillus caldus DSM 8584 (NCBITaxon:33059) tested singly and in binary/ternary combinations with Sulfobacillus thermosulfidooxidans DSM 9293 and Leptospirillum ferriphilum DSM 14647 on Aitik chalcopyrite concentrate in Christel et al. (2018).
     evidence:
-      - source_ref: christel_2018
-        supports: support
-        explanation: >-
-          Methods and Bioleaching of Chalcopyrite Concentrate results, Figure
-          1C, support composition-dependent copper release. The initial
-          A. caldus/S. thermosulfidooxidans treatment reached 14.2 +/- 0.3 mM
-          total released Cu; Figure 1 identifies means +/- SD with n=4.
-          Uninoculated controls released 2.4 +/- 0.3 mM Cu after 15 days.
-          The record preserves the authors' concentration assay, without
-          converting it to a recovery percentage or a purified metal yield.
+    - source_ref: christel_2018
+      supports: partial
+      explanation: Representative Acidithiobacillus caldus SM-1 sulfide-quinone reductase (Atc_1705) for reduced-sulfur oxidation by A. caldus DSM 8584 during 38 C bioleaching of 2% w/v Aitik chalcopyrite concentrate in Christel et al. (2018); individual sqr/tetH genes were not mutated.
+  - uniprot_accession: UniProtKB:F9ZN43
+    entry_name: F9ZN43_ACICS
+    protein_name: Sulfide-quinone reductase, putative
+    gene_symbol: Atc_1437
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:990288
+      label: Acidithiobacillus caldus SM-1
+    reference_proteome_id: UP000006135
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR052541
+    functional_role: Putative membrane-bound sulfide-quinone reductase paralog (Atc_1437; 400 aa) in Acidithiobacillus caldus SM-1 oxidizing reduced sulfur species during moderately thermophilic bioleaching.
+    annotation_note: Grounded to second sulfide-quinone reductase paralog (Atc_1437; 400 aa) in reference-proteome entry UP000006135 for sequenced strain Acidithiobacillus caldus SM-1 (NCBITaxon:990288), representing Acidithiobacillus caldus DSM 8584 (NCBITaxon:33059) tested singly and in binary/ternary combinations on Aitik chalcopyrite concentrate in Christel et al. (2018).
+    evidence:
+    - source_ref: christel_2018
+      supports: partial
+      explanation: Representative Acidithiobacillus caldus SM-1 sulfide-quinone reductase paralog (Atc_1437) for reduced-sulfur oxidation by A. caldus DSM 8584 during 38 C bioleaching of 2% w/v Aitik chalcopyrite concentrate in Christel et al. (2018); individual genes were not mutated.
+  - uniprot_accession: UniProtKB:A0A059XTE6
+    entry_name: A0A059XTE6_9BACT
+    protein_name: Sulfide-quinone reductase
+    gene_symbol: Y981_02650
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:1441628
+      label: Leptospirillum ferriphilum YSK
+    reference_proteome_id: UP000027059
+    ec_numbers:
+    - EC:1.8.5.4
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; Y981_02650) in Leptospirillum ferriphilum YSK annotated in the reference proteome of this acidophilic bioleaching consortium member.
+    annotation_note: Grounded to reference-proteome entry UP000027059 for sequenced strain Leptospirillum ferriphilum YSK (NCBITaxon:1441628), representing Leptospirillum ferriphilum DSM 14647 (NCBITaxon:178606) tested singly and in binary/ternary combinations on Aitik chalcopyrite concentrate in Christel et al. (2018).
+    evidence:
+    - source_ref: christel_2018
+      supports: partial
+      explanation: Representative Leptospirillum ferriphilum YSK sulfide-quinone reductase homolog (Y981_02650) for the L. ferriphilum DSM 14647 treatments at 38 C in Christel et al. (2018); individual genes were not mutated.
+  - uniprot_accession: UniProtKB:F9ZNI0
+    entry_name: F9ZNI0_ACICS
+    protein_name: Tetrathionate hydrolase TetH
+    gene_symbol: Atc_1595
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:990288
+      label: Acidithiobacillus caldus SM-1
+    reference_proteome_id: UP000006135
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase TetH (Atc_1595) in Acidithiobacillus caldus SM-1 hydrolyzing tetrathionate into thiosulfate, elemental sulfur, and sulfate protons during moderately thermophilic bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000006135 for sequenced strain Acidithiobacillus caldus SM-1 (NCBITaxon:990288), representing Acidithiobacillus caldus DSM 8584 (NCBITaxon:33059) tested singly and in binary/ternary combinations on Aitik chalcopyrite concentrate in Christel et al. (2018).
+    evidence:
+    - source_ref: christel_2018
+      supports: partial
+      explanation: Representative Acidithiobacillus caldus SM-1 tetrathionate hydrolase TetH (Atc_1595) for tetrathionate disproportionation by A. caldus DSM 8584 during 38 C bioleaching of 2% w/v Aitik chalcopyrite concentrate in Christel et al. (2018); individual genes were not mutated.
+  evidence:
+  - source_ref: christel_2018
+    supports: support
+    explanation: Methods and Bioleaching of Chalcopyrite Concentrate results, Figure 1C, support composition-dependent copper release. The initial A. caldus/S. thermosulfidooxidans treatment reached 14.2 +/- 0.3 mM total released Cu; Figure 1 identifies means +/- SD with n=4. Uninoculated controls released 2.4 +/- 0.3 mM Cu after 15 days. The record preserves the authors' concentration assay, without converting it to a recovery percentage or a purified metal yield.
+  - source_ref: christel_2018
+    supports: partial
+    explanation: The same results section reports marginal leaching by A. caldus alone and attributes its late iron oxidation to possible surviving environmental contaminants. It also reports variable run lengths and lower performance of the three-species mixture than the binary mixtures. These observations limit generalization to arbitrary acidophile mixtures and unsterilized ores. Low-redox and cell- attachment explanations, candidate iron-oxidation genes and scale-up feasibility remain interpretations or future tests, not demonstrated molecular causes or industrial performance.
+causal_graphs:
+- id: acidophile_chalcopyrite_copper_release_graph
+  name: Acidophile-dependent copper release from Aitik chalcopyrite concentrate at 38 C
+  description: Causal pathway linking representative Acidithiobacillus caldus (Atc_1705, Atc_1437, Atc_1595) and Leptospirillum ferriphilum (Y981_02650) sulfur-oxidation enzymes alongside Sulfobacillus thermosulfidooxidans DSM 9293 iron oxidation to conditional copper release from 2% w/v Aitik chalcopyrite concentrate at 38 C in Christel et al. (2018).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: acidophile_chalcopyrite_copper_release
+  nodes:
+  - id: sqr_reductase
+    label: Sqr sulfide-quinone reductases (A. caldus Atc_1705, Atc_1437; L. ferriphilum Y981_02650)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: Atc_1705
+    description: Membrane-bound sulfide-quinone reductase homologs in Acidithiobacillus caldus SM-1 (Atc_1705 and Atc_1437) and Leptospirillum ferriphilum YSK (Y981_02650) oxidizing reduced sulfur species to elemental sulfur and polythionate intermediates.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:F9ZQD6
+      entry_name: F9ZQD6_ACICS
+      protein_name: Sulfide-quinone reductase
+      gene_symbol: Atc_1705
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:990288
+        label: Acidithiobacillus caldus SM-1
+      reference_proteome_id: UP000006135
+      ec_numbers:
+      - EC:1.8.5.4
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; Atc_1705) in Acidithiobacillus caldus SM-1 catalyzing sulfide oxidation coupled to quinone reduction during moderately thermophilic bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000006135 for sequenced strain Acidithiobacillus caldus SM-1 (NCBITaxon:990288), representing Acidithiobacillus caldus DSM 8584 (NCBITaxon:33059) tested singly and in binary/ternary combinations with Sulfobacillus thermosulfidooxidans DSM 9293 and Leptospirillum ferriphilum DSM 14647 on Aitik chalcopyrite concentrate in Christel et al. (2018).
+      evidence:
       - source_ref: christel_2018
         supports: partial
-        explanation: >-
-          The same results section reports marginal leaching by A. caldus
-          alone and attributes its late iron oxidation to possible surviving
-          environmental contaminants. It also reports variable run lengths
-          and lower performance of the three-species mixture than the binary
-          mixtures. These observations limit generalization to arbitrary
-          acidophile mixtures and unsterilized ores. Low-redox and cell-
-          attachment explanations, candidate iron-oxidation genes and scale-up
-          feasibility remain interpretations or future tests, not demonstrated
-          molecular causes or industrial performance.
+        explanation: Representative Acidithiobacillus caldus SM-1 sulfide-quinone reductase (Atc_1705) for reduced-sulfur oxidation by A. caldus DSM 8584 during 38 C bioleaching of 2% w/v Aitik chalcopyrite concentrate in Christel et al. (2018); individual sqr/tetH genes were not mutated.
+    - uniprot_accession: UniProtKB:F9ZN43
+      entry_name: F9ZN43_ACICS
+      protein_name: Sulfide-quinone reductase, putative
+      gene_symbol: Atc_1437
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:990288
+        label: Acidithiobacillus caldus SM-1
+      reference_proteome_id: UP000006135
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR052541
+      functional_role: Putative membrane-bound sulfide-quinone reductase paralog (Atc_1437; 400 aa) in Acidithiobacillus caldus SM-1 oxidizing reduced sulfur species during moderately thermophilic bioleaching.
+      annotation_note: Grounded to second sulfide-quinone reductase paralog (Atc_1437; 400 aa) in reference-proteome entry UP000006135 for sequenced strain Acidithiobacillus caldus SM-1 (NCBITaxon:990288), representing Acidithiobacillus caldus DSM 8584 (NCBITaxon:33059) tested singly and in binary/ternary combinations on Aitik chalcopyrite concentrate in Christel et al. (2018).
+      evidence:
+      - source_ref: christel_2018
+        supports: partial
+        explanation: Representative Acidithiobacillus caldus SM-1 sulfide-quinone reductase paralog (Atc_1437) for reduced-sulfur oxidation by A. caldus DSM 8584 during 38 C bioleaching of 2% w/v Aitik chalcopyrite concentrate in Christel et al. (2018); individual genes were not mutated.
+    - uniprot_accession: UniProtKB:A0A059XTE6
+      entry_name: A0A059XTE6_9BACT
+      protein_name: Sulfide-quinone reductase
+      gene_symbol: Y981_02650
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:1441628
+        label: Leptospirillum ferriphilum YSK
+      reference_proteome_id: UP000027059
+      ec_numbers:
+      - EC:1.8.5.4
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; Y981_02650) in Leptospirillum ferriphilum YSK annotated in the reference proteome of this acidophilic bioleaching consortium member.
+      annotation_note: Grounded to reference-proteome entry UP000027059 for sequenced strain Leptospirillum ferriphilum YSK (NCBITaxon:1441628), representing Leptospirillum ferriphilum DSM 14647 (NCBITaxon:178606) tested singly and in binary/ternary combinations on Aitik chalcopyrite concentrate in Christel et al. (2018).
+      evidence:
+      - source_ref: christel_2018
+        supports: partial
+        explanation: Representative Leptospirillum ferriphilum YSK sulfide-quinone reductase homolog (Y981_02650) for the L. ferriphilum DSM 14647 treatments at 38 C in Christel et al. (2018); individual genes were not mutated.
+  - id: tth_hydrolase
+    label: TetH tetrathionate hydrolase (A. caldus Atc_1595)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: Atc_1595
+    description: Periplasmic tetrathionate hydrolase TetH (Atc_1595) in Acidithiobacillus caldus SM-1 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric-acid protons.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:F9ZNI0
+      entry_name: F9ZNI0_ACICS
+      protein_name: Tetrathionate hydrolase TetH
+      gene_symbol: Atc_1595
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:990288
+        label: Acidithiobacillus caldus SM-1
+      reference_proteome_id: UP000006135
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase TetH (Atc_1595) in Acidithiobacillus caldus SM-1 hydrolyzing tetrathionate into thiosulfate, elemental sulfur, and sulfate protons during moderately thermophilic bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000006135 for sequenced strain Acidithiobacillus caldus SM-1 (NCBITaxon:990288), representing Acidithiobacillus caldus DSM 8584 (NCBITaxon:33059) tested singly and in binary/ternary combinations on Aitik chalcopyrite concentrate in Christel et al. (2018).
+      evidence:
+      - source_ref: christel_2018
+        supports: partial
+        explanation: Representative Acidithiobacillus caldus SM-1 tetrathionate hydrolase TetH (Atc_1595) for tetrathionate disproportionation by A. caldus DSM 8584 during 38 C bioleaching of 2% w/v Aitik chalcopyrite concentrate in Christel et al. (2018); individual genes were not mutated.
+  - id: defined_acidophile_mac_medium_leach_system
+    label: Defined single, binary, and ternary cultures of A. caldus DSM 8584, S. thermosulfidooxidans DSM 9293, and L. ferriphilum DSM 14647 (10^7 cells/mL per species) in 100 mL MAC medium (initial pH 1.8, 38 +/- 2 C, 120 rpm)
+    node_type: CHEMICAL_ENTITY
+    description: Quadruplicate 250 mL flasks containing 100 mL MAC medium (initial pH 1.8) at 38 +/- 2 C and 120 rpm inoculated with A. caldus DSM 8584, S. thermosulfidooxidans DSM 9293, and L. ferriphilum DSM 14647 singly and in all binary and ternary combinations (10^7 cells/mL per species).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: washed_aitik_chalcopyrite_concentrate_feed
+    label: EDTA/acetone-washed, 120 C nitrogen-heated Aitik flotation chalcopyrite concentrate (50-100 um, 29.5% Cu, 2% w/v)
+    node_type: MATERIAL_OR_PHASE
+    description: 50-100 um sieve fraction of Aitik flotation chalcopyrite concentrate (29.5% Cu, with accompanying deposit bornite noted) washed with EDTA/NaOH and acetone, dried overnight at 60 C, and heated for 10 h at 120 C under nitrogen.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: total_released_copper_in_acid_digested_slurry
+    label: 'Total released copper (dissolved + HCl-redissolved precipitate): 14.2 +/- 0.3 mM Cu in initial A. caldus + S. thermosulfidooxidans pair vs 2.4 +/- 0.3 mM in 15-day uninoculated controls (n=4)'
+    node_type: CHEMICAL_ENTITY
+    description: Total released copper measured by AAS after heated HCl slurry digestion across 14-20 elapsed days (14 days after Eh > 400 mV vs Ag/AgCl), reaching 14.2 +/- 0.3 mM Cu in the initial A. caldus + S. thermosulfidooxidans binary treatment compared with 2.4 +/- 0.3 mM Cu in uninoculated controls (Figure 1C).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: sqr_reductase
+    target: tth_hydrolase
+    predicate: supplies_substrate_for
+    relationship: oxidation of sulfide to sulfur/polythionate intermediates
+    description: Sqr sulfide-quinone reductases (A. caldus Atc_1705, Atc_1437; L. ferriphilum Y981_02650) oxidizes reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by TetH tetrathionate hydrolase (A. caldus Atc_1595).
+    evidence:
+    - source_ref: christel_2018
+      supports: partial
+      explanation: Reduced-sulfur oxidation in Acidithiobacillus caldus DSM 8584 and Leptospirillum ferriphilum DSM 14647 couples Sqr homologs (Atc_1705, Atc_1437, Y981_02650) and periplasmic TetH (Atc_1595) during 38 C chalcopyrite-concentrate bioleaching in Christel et al. (2018); individual genes were not mutated.
+  - source: tth_hydrolase
+    target: defined_acidophile_mac_medium_leach_system
+    predicate: produces
+    relationship: sulfuric acid proton and lixiviant generation
+    description: TetH tetrathionate hydrolase (A. caldus Atc_1595) disproportionates tetrathionate and polythionate intermediates into sulfate and H+, contributing to Defined single, binary, and ternary cultures of A. caldus DSM 8584, S. thermosulfidooxidans DSM 9293, and L. ferriphilum DSM 14647 (10^7 cells/mL per species) in 100 mL MAC medium (initial pH 1.8, 38 +/- 2 C, 120 rpm).
+    evidence:
+    - source_ref: christel_2018
+      supports: partial
+      explanation: Sulfur oxidation by A. caldus DSM 8584 supplies sulfuric-acid protons while iron oxidation by S. thermosulfidooxidans DSM 9293 and L. ferriphilum DSM 14647 controls solution redox potential in MAC medium in Christel et al. (2018).
+  - source: defined_acidophile_mac_medium_leach_system
+    target: washed_aitik_chalcopyrite_concentrate_feed
+    predicate: solubilizes
+    relationship: culture-composition-dependent oxidative copper release from 2% w/v Aitik chalcopyrite concentrate at 38 C
+    description: Defined binary and ternary acidophile cultures in 100 mL MAC medium at 38 C promote copper release from 2% w/v washed Aitik chalcopyrite concentrate over 14-20 days, with all binary combinations exceeding the three-species mixture.
+    evidence:
+    - source_ref: christel_2018
+      supports: support
+      explanation: Methods, Bioleaching of Chalcopyrite Concentrate results, and Figure 1C of Christel et al. (2018) support composition-dependent copper release exceeding uninoculated controls.
+  - source: washed_aitik_chalcopyrite_concentrate_feed
+    target: total_released_copper_in_acid_digested_slurry
+    predicate: produces
+    relationship: release of 14.2 +/- 0.3 mM total Cu in the initial A. caldus + S. thermosulfidooxidans treatment vs 2.4 +/- 0.3 mM in uninoculated controls
+    description: Heated HCl digestion of sampled slurry followed by AAS measures 14.2 +/- 0.3 mM total released Cu (dissolved plus precipitated fractions) for the initial A. caldus + S. thermosulfidooxidans treatment versus 2.4 +/- 0.3 mM Cu after 15 days in uninoculated controls (n=4).
+    evidence:
+    - source_ref: christel_2018
+      supports: support
+      explanation: Figure 1C of Christel et al. (2018) reports 14.2 +/- 0.3 mM total released Cu for A. caldus + S. thermosulfidooxidans versus 2.4 +/- 0.3 mM Cu in uninoculated controls (means +/- SD, n=4), without converting slurry-digest concentrations into a purified copper metal yield.
 curation_history:
-  - timestamp: '2026-10-11T04:02:09Z'
-    curator: Codex (GPT-6)
-    action: CREATE
-    summary: >-
-      Added a copper element record with verified ChEBI identity, the final
-      United States 2025 commodity designation, and bounded laboratory
-      chalcopyrite-concentrate bioleaching evidence from Christel et al. 2018.
-      Retained controls, unequal endpoints, assay fractions, possible
-      contamination and unestablished industrial deployment.
+- timestamp: '2026-10-11T04:02:09Z'
+  curator: Codex (GPT-6)
+  action: CREATE
+  summary: Added a copper element record with verified ChEBI identity, the final United States 2025 commodity designation, and bounded laboratory chalcopyrite-concentrate bioleaching evidence from Christel et al. 2018. Retained controls, unequal endpoints, assay fractions, possible contamination and unestablished industrial deployment.
+- timestamp: '2026-11-04T10:19:15Z'
+  curator: marcin
+  action: edit
+  summary: Add acidophile_chalcopyrite_copper_release_graph causal graph and ground acidophile_chalcopyrite_copper_release to Acidithiobacillus caldus and Leptospirillum ferriphilum reference-proteome UniProtKB Sqr/TetH homologs (UniProtKB:F9ZQD6, UniProtKB:F9ZN43, UniProtKB:A0A059XTE6, UniProtKB:F9ZNI0)
 history_refs:
-  - history/records/copper/2026-10-11T040209Z-codex-558c98.yaml
+- history/records/copper/2026-10-11T040209Z-codex-558c98.yaml
+- history/records/copper/2026-11-04T101915Z-marcin-9a2191.yaml
