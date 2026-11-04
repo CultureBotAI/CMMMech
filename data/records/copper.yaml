@@ -116,6 +116,27 @@ mechanisms:
     - source_ref: christel_2018
       supports: partial
       explanation: Representative Leptospirillum ferriphilum YSK sulfide-quinone reductase homolog (Y981_02650) for the L. ferriphilum DSM 14647 treatments at 38 C in Christel et al. (2018); individual genes were not mutated.
+  - uniprot_accession: UniProtKB:A0A1W1W805
+    entry_name: A0A1W1W805_SULTA
+    protein_name: Sulfide-quinone oxidoreductase
+    gene_symbol: SAMN00768000_0580
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:929705
+      label: Sulfobacillus thermosulfidooxidans DSM 9293
+    reference_proteome_id: UP000192660
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone oxidoreductase (SAMN00768000_0580; 432 aa) in Sulfobacillus thermosulfidooxidans DSM 9293 oxidizing reduced sulfur species coupled to quinone reduction during moderately thermophilic bioleaching.
+    annotation_note: Grounded directly to reference-proteome entry UP000192660 for the exact experimental strain Sulfobacillus thermosulfidooxidans DSM 9293 (NCBITaxon:929705) tested singly and in binary/ternary combinations with Acidithiobacillus caldus DSM 8584 and Leptospirillum ferriphilum DSM 14647 on Aitik chalcopyrite concentrate in Christel et al. (2018).
+    evidence:
+    - source_ref: christel_2018
+      supports: partial
+      explanation: Strain-matched Sulfobacillus thermosulfidooxidans DSM 9293 sulfide-quinone oxidoreductase (SAMN00768000_0580) for the S. thermosulfidooxidans DSM 9293 single, binary, and ternary treatments at 38 C in Christel et al. (2018); individual genes were not mutated.
   - uniprot_accession: UniProtKB:F9ZNI0
     entry_name: F9ZNI0_ACICS
     protein_name: Tetrathionate hydrolase TetH
@@ -138,6 +159,27 @@ mechanisms:
     - source_ref: christel_2018
       supports: partial
       explanation: Representative Acidithiobacillus caldus SM-1 tetrathionate hydrolase TetH (Atc_1595) for tetrathionate disproportionation by A. caldus DSM 8584 during 38 C bioleaching of 2% w/v Aitik chalcopyrite concentrate in Christel et al. (2018); individual genes were not mutated.
+  - uniprot_accession: UniProtKB:A4ZV25
+    entry_name: A4ZV25_9PROT
+    protein_name: TetH
+    gene_symbol: tetH
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:33059
+      label: Acidithiobacillus caldus
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase TetH (tetH, locus BAE30_05680; 502 aa) in Acidithiobacillus caldus hydrolyzing tetrathionate into thiosulfate, elemental sulfur, and sulfate protons during moderately thermophilic bioleaching.
+    annotation_note: Grounded to Acidithiobacillus caldus strain ZBY tetrathionate hydrolase TetH (tetH, locus BAE30_05680; NCBITaxon:33059), providing a second species-matched TetH ortholog alongside SM-1 Atc_1595 for Acidithiobacillus caldus DSM 8584 (NCBITaxon:33059) tested on Aitik chalcopyrite concentrate in Christel et al. (2018).
+    evidence:
+    - source_ref: christel_2018
+      supports: partial
+      explanation: Representative Acidithiobacillus caldus tetrathionate hydrolase TetH (tetH, locus BAE30_05680) for tetrathionate disproportionation by A. caldus DSM 8584 during 38 C bioleaching of 2% w/v Aitik chalcopyrite concentrate in Christel et al. (2018); individual genes were not mutated.
   evidence:
   - source_ref: christel_2018
     supports: support
@@ -148,15 +190,15 @@ mechanisms:
 causal_graphs:
 - id: acidophile_chalcopyrite_copper_release_graph
   name: Acidophile-dependent copper release from Aitik chalcopyrite concentrate at 38 C
-  description: Causal pathway linking representative Acidithiobacillus caldus (Atc_1705, Atc_1437, Atc_1595) and Leptospirillum ferriphilum (Y981_02650) sulfur-oxidation enzymes alongside Sulfobacillus thermosulfidooxidans DSM 9293 iron oxidation to conditional copper release from 2% w/v Aitik chalcopyrite concentrate at 38 C in Christel et al. (2018).
+  description: Causal pathway linking representative Acidithiobacillus caldus (Atc_1705, Atc_1437, Atc_1595, tetH BAE30_05680), Leptospirillum ferriphilum (Y981_02650), and strain-matched Sulfobacillus thermosulfidooxidans DSM 9293 (SAMN00768000_0580) sulfur-oxidation enzymes alongside S. thermosulfidooxidans DSM 9293 iron oxidation to conditional copper release from 2% w/v Aitik chalcopyrite concentrate at 38 C in Christel et al. (2018).
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: acidophile_chalcopyrite_copper_release
   nodes:
   - id: sqr_reductase
-    label: Sqr sulfide-quinone reductases (A. caldus Atc_1705, Atc_1437; L. ferriphilum Y981_02650)
+    label: Sqr sulfide-quinone oxidoreductases (A. caldus Atc_1705, Atc_1437; L. ferriphilum Y981_02650; S. thermosulfidooxidans SAMN00768000_0580)
     node_type: GENE_OR_PROTEIN
     gene_symbol: Atc_1705
-    description: Membrane-bound sulfide-quinone reductase homologs in Acidithiobacillus caldus SM-1 (Atc_1705 and Atc_1437) and Leptospirillum ferriphilum YSK (Y981_02650) oxidizing reduced sulfur species to elemental sulfur and polythionate intermediates.
+    description: Membrane-bound sulfide-quinone oxidoreductase homologs in Acidithiobacillus caldus SM-1 (Atc_1705 and Atc_1437), Leptospirillum ferriphilum YSK (Y981_02650), and Sulfobacillus thermosulfidooxidans DSM 9293 (SAMN00768000_0580) oxidizing reduced sulfur species to elemental sulfur and polythionate intermediates.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:F9ZQD6
@@ -223,11 +265,32 @@ causal_graphs:
       - source_ref: christel_2018
         supports: partial
         explanation: Representative Leptospirillum ferriphilum YSK sulfide-quinone reductase homolog (Y981_02650) for the L. ferriphilum DSM 14647 treatments at 38 C in Christel et al. (2018); individual genes were not mutated.
+    - uniprot_accession: UniProtKB:A0A1W1W805
+      entry_name: A0A1W1W805_SULTA
+      protein_name: Sulfide-quinone oxidoreductase
+      gene_symbol: SAMN00768000_0580
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:929705
+        label: Sulfobacillus thermosulfidooxidans DSM 9293
+      reference_proteome_id: UP000192660
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone oxidoreductase (SAMN00768000_0580; 432 aa) in Sulfobacillus thermosulfidooxidans DSM 9293 oxidizing reduced sulfur species coupled to quinone reduction during moderately thermophilic bioleaching.
+      annotation_note: Grounded directly to reference-proteome entry UP000192660 for the exact experimental strain Sulfobacillus thermosulfidooxidans DSM 9293 (NCBITaxon:929705) tested singly and in binary/ternary combinations with Acidithiobacillus caldus DSM 8584 and Leptospirillum ferriphilum DSM 14647 on Aitik chalcopyrite concentrate in Christel et al. (2018).
+      evidence:
+      - source_ref: christel_2018
+        supports: partial
+        explanation: Strain-matched Sulfobacillus thermosulfidooxidans DSM 9293 sulfide-quinone oxidoreductase (SAMN00768000_0580) for the S. thermosulfidooxidans DSM 9293 single, binary, and ternary treatments at 38 C in Christel et al. (2018); individual genes were not mutated.
   - id: tth_hydrolase
-    label: TetH tetrathionate hydrolase (A. caldus Atc_1595)
+    label: TetH tetrathionate hydrolases (A. caldus Atc_1595, tetH BAE30_05680)
     node_type: GENE_OR_PROTEIN
     gene_symbol: Atc_1595
-    description: Periplasmic tetrathionate hydrolase TetH (Atc_1595) in Acidithiobacillus caldus SM-1 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric-acid protons.
+    description: Periplasmic tetrathionate hydrolase TetH homologs in Acidithiobacillus caldus (SM-1 Atc_1595 and ZBY tetH / BAE30_05680) disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric-acid protons.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:F9ZNI0
@@ -252,6 +315,27 @@ causal_graphs:
       - source_ref: christel_2018
         supports: partial
         explanation: Representative Acidithiobacillus caldus SM-1 tetrathionate hydrolase TetH (Atc_1595) for tetrathionate disproportionation by A. caldus DSM 8584 during 38 C bioleaching of 2% w/v Aitik chalcopyrite concentrate in Christel et al. (2018); individual genes were not mutated.
+    - uniprot_accession: UniProtKB:A4ZV25
+      entry_name: A4ZV25_9PROT
+      protein_name: TetH
+      gene_symbol: tetH
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:33059
+        label: Acidithiobacillus caldus
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase TetH (tetH, locus BAE30_05680; 502 aa) in Acidithiobacillus caldus hydrolyzing tetrathionate into thiosulfate, elemental sulfur, and sulfate protons during moderately thermophilic bioleaching.
+      annotation_note: Grounded to Acidithiobacillus caldus strain ZBY tetrathionate hydrolase TetH (tetH, locus BAE30_05680; NCBITaxon:33059), providing a second species-matched TetH ortholog alongside SM-1 Atc_1595 for Acidithiobacillus caldus DSM 8584 (NCBITaxon:33059) tested on Aitik chalcopyrite concentrate in Christel et al. (2018).
+      evidence:
+      - source_ref: christel_2018
+        supports: partial
+        explanation: Representative Acidithiobacillus caldus tetrathionate hydrolase TetH (tetH, locus BAE30_05680) for tetrathionate disproportionation by A. caldus DSM 8584 during 38 C bioleaching of 2% w/v Aitik chalcopyrite concentrate in Christel et al. (2018); individual genes were not mutated.
   - id: defined_acidophile_mac_medium_leach_system
     label: Defined single, binary, and ternary cultures of A. caldus DSM 8584, S. thermosulfidooxidans DSM 9293, and L. ferriphilum DSM 14647 (10^7 cells/mL per species) in 100 mL MAC medium (initial pH 1.8, 38 +/- 2 C, 120 rpm)
     node_type: CHEMICAL_ENTITY
@@ -272,7 +356,7 @@ causal_graphs:
     target: tth_hydrolase
     predicate: supplies_substrate_for
     relationship: oxidation of sulfide to sulfur/polythionate intermediates
-    description: Sqr sulfide-quinone reductases (A. caldus Atc_1705, Atc_1437; L. ferriphilum Y981_02650) oxidizes reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by TetH tetrathionate hydrolase (A. caldus Atc_1595).
+    description: Sqr sulfide-quinone oxidoreductases (A. caldus Atc_1705, Atc_1437; L. ferriphilum Y981_02650; S. thermosulfidooxidans SAMN00768000_0580) oxidizes reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by TetH tetrathionate hydrolases (A. caldus Atc_1595, tetH BAE30_05680).
     evidence:
     - source_ref: christel_2018
       supports: partial
@@ -281,7 +365,7 @@ causal_graphs:
     target: defined_acidophile_mac_medium_leach_system
     predicate: produces
     relationship: sulfuric acid proton and lixiviant generation
-    description: TetH tetrathionate hydrolase (A. caldus Atc_1595) disproportionates tetrathionate and polythionate intermediates into sulfate and H+, contributing to Defined single, binary, and ternary cultures of A. caldus DSM 8584, S. thermosulfidooxidans DSM 9293, and L. ferriphilum DSM 14647 (10^7 cells/mL per species) in 100 mL MAC medium (initial pH 1.8, 38 +/- 2 C, 120 rpm).
+    description: TetH tetrathionate hydrolases (A. caldus Atc_1595, tetH BAE30_05680) disproportionates tetrathionate and polythionate intermediates into sulfate and H+, contributing to Defined single, binary, and ternary cultures of A. caldus DSM 8584, S. thermosulfidooxidans DSM 9293, and L. ferriphilum DSM 14647 (10^7 cells/mL per species) in 100 mL MAC medium (initial pH 1.8, 38 +/- 2 C, 120 rpm).
     evidence:
     - source_ref: christel_2018
       supports: partial
@@ -313,6 +397,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Add acidophile_chalcopyrite_copper_release_graph causal graph and ground acidophile_chalcopyrite_copper_release to Acidithiobacillus caldus and Leptospirillum ferriphilum reference-proteome UniProtKB Sqr/TetH homologs (UniProtKB:F9ZQD6, UniProtKB:F9ZN43, UniProtKB:A0A059XTE6, UniProtKB:F9ZNI0)
+- timestamp: '2026-11-04T11:37:42Z'
+  curator: marcin
+  action: edit
+  summary: Enrich copper protein_examples with strain-matched Sulfobacillus thermosulfidooxidans DSM 9293 Sqr (UniProtKB:A0A1W1W805) and Acidithiobacillus caldus TetH (UniProtKB:A4ZV25)
 history_refs:
 - history/records/copper/2026-10-11T040209Z-codex-558c98.yaml
 - history/records/copper/2026-11-04T101915Z-marcin-9a2191.yaml
+- history/records/copper/2026-11-04T113742Z-marcin-29bb2e.yaml

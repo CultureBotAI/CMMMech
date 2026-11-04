@@ -1,0 +1,327 @@
+# Cycle 7 Stage 3 protein-examples review of Pyrite-roasting cinder (cmmmech:pyrite-roasting-cinder)
+
+- Review: 20261104T114000Z-pyrite-roasting-cinder-cycle7-stage3-protein-examples-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-04T11:37:00Z
+- Finished UTC: 2026-11-04T11:40:00Z
+- Reviewer: antigravity / cmmmech-cycle7-stage3-protein-examples-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Pyrite-roasting cinder (cmmmech:pyrite-roasting-cinder) passes Cycle 7 Stage 3 protein-examples review (scientific_review: true) at SHA-256 be3dcb8b6a52c3bf14ac8e11f09baa7d943299c9c6afbe9e32e4ceea0d8daec7: Curated data/records/pyrite-roasting-cinder.yaml (SHA-256 be3dcb8b6a52c3bf14ac8e11f09baa7d943299c9c6afbe9e32e4ceea0d8daec7) in Cycle 7 Stage 3 (protein_examples) across causal_graph 'acidophile_ash_assay_limited_response_graph' (mechanism_ref: acidophile_ash_assay_limited_response, 5 nodes / 4 edges; sqr_reductase: [UniProtKB:F9ZQD6 (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43 (Atc_1437, F9ZN43_ACICS, UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT, UP000027059), UniProtKB:A0A1W1W805 (SAMN00768000_0580, A0A1W1W805_SULTA, UP000192660)]; tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135), UniProtKB:A4ZV25 (tetH, A4ZV25_9PROT, NCBITaxon:33059)]), maintaining 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from primary source(s) pereira2025. Live-verified UniProtKB grounding across UniProtKB:F9ZQD6 (F9ZQD6_ACICS, Sulfide-quinone reductase, gene_symbol: Atc_1705, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:F9ZN43 (F9ZN43_ACICS, Sulfide-quinone reductase, putative, gene_symbol: Atc_1437, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:A0A059XTE6 (A0A059XTE6_9BACT, Sulfide-quinone reductase, gene_symbol: Y981_02650, TREMBL, NCBITaxon:1441628 Leptospirillum ferriphilum YSK, UP000027059); UniProtKB:A0A1W1W805 (A0A1W1W805_SULTA, Sulfide-quinone oxidoreductase, gene_symbol: SAMN00768000_0580, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660); UniProtKB:F9ZNI0 (F9ZNI0_ACICS, Tetrathionate hydrolase TetH, gene_symbol: Atc_1595, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:A4ZV25 (A4ZV25_9PROT, TetH, gene_symbol: tetH, TREMBL, NCBITaxon:33059 Acidithiobacillus caldus, no-ref-proteome).
+
+## Scope And Provenance
+
+Cycle 7 Stage 3 protein-examples review of data/records/pyrite-roasting-cinder.yaml (SHA-256 be3dcb8b6a52c3bf14ac8e11f09baa7d943299c9c6afbe9e32e4ceea0d8daec7) and its canonical EDIT history sidecar (history/records/pyrite-roasting-cinder/2026-11-04T113742Z-marcin-c4162b.yaml) verifying UniProtKB accession/metadata grounding, consortium organism coverage, causal-graph node/edge parity, and primary-source evidence fidelity across causal_graph 'acidophile_ash_assay_limited_response_graph' (mechanism_ref: acidophile_ash_assay_limited_response, 5 nodes / 4 edges; sqr_reductase: [UniProtKB:F9ZQD6 (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43 (Atc_1437, F9ZN43_ACICS, UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT, UP000027059), UniProtKB:A0A1W1W805 (SAMN00768000_0580, A0A1W1W805_SULTA, UP000192660)]; tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135), UniProtKB:A4ZV25 (tetH, A4ZV25_9PROT, NCBITaxon:33059)]).
+
+Selection: Cycle 7 Stage 3 protein_examples curation for cmmmech:pyrite-roasting-cinder
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 8bf82c8dfa25a35f12b60617b86751bc3ce7df71.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:pyrite-roasting-cinder | data/records/pyrite-roasting-cinder.yaml | maintained | Pyrite-roasting cinder |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:pyrite-roasting-cinder | Checked 678 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:pyrite-roasting-cinder | All history sidecars pass validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Verification of live UniProtKB ProteinExample grounding, consortium organism representation, and node/mechanism parity across causal_graph 'acidophile_ash_assay_limited_response_graph' (sqr_reductase: [UniProtKB:F9ZQD6 (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43 (Atc_1437, F9ZN43_ACICS, UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT, UP000027059), UniProtKB:A0A1W1W805 (SAMN00768000_0580, A0A1W1W805_SULTA, UP000192660)]; tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135), UniProtKB:A4ZV25 (tetH, A4ZV25_9PROT, NCBITaxon:33059)])
+
+graph: supported. Targets: cmmmech:pyrite-roasting-cinder.
+
+Curated data/records/pyrite-roasting-cinder.yaml (SHA-256 be3dcb8b6a52c3bf14ac8e11f09baa7d943299c9c6afbe9e32e4ceea0d8daec7) in Cycle 7 Stage 3 (protein_examples) across causal_graph 'acidophile_ash_assay_limited_response_graph' (mechanism_ref: acidophile_ash_assay_limited_response, 5 nodes / 4 edges; sqr_reductase: [UniProtKB:F9ZQD6 (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43 (Atc_1437, F9ZN43_ACICS, UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT, UP000027059), UniProtKB:A0A1W1W805 (SAMN00768000_0580, A0A1W1W805_SULTA, UP000192660)]; tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135), UniProtKB:A4ZV25 (tetH, A4ZV25_9PROT, NCBITaxon:33059)]), maintaining 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from primary source(s) pereira2025. Live-verified UniProtKB grounding across UniProtKB:F9ZQD6 (F9ZQD6_ACICS, Sulfide-quinone reductase, gene_symbol: Atc_1705, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:F9ZN43 (F9ZN43_ACICS, Sulfide-quinone reductase, putative, gene_symbol: Atc_1437, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:A0A059XTE6 (A0A059XTE6_9BACT, Sulfide-quinone reductase, gene_symbol: Y981_02650, TREMBL, NCBITaxon:1441628 Leptospirillum ferriphilum YSK, UP000027059); UniProtKB:A0A1W1W805 (A0A1W1W805_SULTA, Sulfide-quinone oxidoreductase, gene_symbol: SAMN00768000_0580, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660); UniProtKB:F9ZNI0 (F9ZNI0_ACICS, Tetrathionate hydrolase TetH, gene_symbol: Atc_1595, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:A4ZV25 (A4ZV25_9PROT, TetH, gene_symbol: tetH, TREMBL, NCBITaxon:33059 Acidithiobacillus caldus, no-ref-proteome).
+
+### Verification of canonical EDIT history sidecar and strict schema validation
+
+provenance: supported. Targets: cmmmech:pyrite-roasting-cinder.
+
+data/records/pyrite-roasting-cinder.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/pyrite-roasting-cinder/2026-11-04T113742Z-marcin-c4162b.yaml (SHA-256 3f6982317cdcf0cb9323640dc171e542003d490b8f7468c6c0d2cbe14cd9d95f: Enrich pyrite-roasting-cinder protein_examples with strain-matched Sulfobacillus thermosulfidooxidans DSM 9293 Sqr (UniProtKB:A0A1W1W805) and Acidithiobacillus caldus TetH (UniProtKB:A4ZV25) — Added strain-matched Sulfobacillus thermosulfidooxidans DSM 9293 sulfide-quinone oxidoreductase (UniProtKB:A0A1W1W805; SAMN00768000_0580) to sqr_reductase and Acidithiobacillus caldus tetrathionate hydrolase TetH (UniProtKB:A4ZV25; tetH BAE30_05680) to tth_hydrolase in acidophile_ash_assay_limited_response_graph and synchronized mechanisms[1].protein_examples.) and passing all LinkML, protein_examples parity, and history validation gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/pyrite-roasting-cinder.yaml; Working-tree record data/records/pyrite-roasting-cinder.yaml (causal_graphs and mechanisms[].protein_examples) | supports | Curated data/records/pyrite-roasting-cinder.yaml (SHA-256 be3dcb8b6a52c3bf14ac8e11f09baa7d943299c9c6afbe9e32e4ceea0d8daec7) in Cycle 7 Stage 3 (protein_examples) across causal_graph 'acidophile_ash_assay_limited_response_graph' (mechanism_ref: acidophile_ash_assay_limited_response, 5 nodes / 4 edges; sqr_reductase: [UniProtKB:F9ZQD6 (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43 (Atc_1437, F9ZN43_ACICS, UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT, UP000027059), UniProtKB:A0A1W1W805 (SAMN00768000_0580, A0A1W1W805_SULTA, UP000192660)]; tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135), UniProtKB:A4ZV25 (tetH, A4ZV25_9PROT, NCBITaxon:33059)]), maintaining 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from primary source(s) pereira2025. |
+| primary_source | https://scriptiebank.be/file/21588/download?token=QIzLpVs8; pereira2025:   (https://scriptiebank.be/file/21588/download?token=QIzLpVs8) | supports | Live-verified UniProtKB grounding across UniProtKB:F9ZQD6 (F9ZQD6_ACICS, Sulfide-quinone reductase, gene_symbol: Atc_1705, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:F9ZN43 (F9ZN43_ACICS, Sulfide-quinone reductase, putative, gene_symbol: Atc_1437, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:A0A059XTE6 (A0A059XTE6_9BACT, Sulfide-quinone reductase, gene_symbol: Y981_02650, TREMBL, NCBITaxon:1441628 Leptospirillum ferriphilum YSK, UP000027059); UniProtKB:A0A1W1W805 (A0A1W1W805_SULTA, Sulfide-quinone oxidoreductase, gene_symbol: SAMN00768000_0580, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660); UniProtKB:F9ZNI0 (F9ZNI0_ACICS, Tetrathionate hydrolase TetH, gene_symbol: Atc_1595, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:A4ZV25 (A4ZV25_9PROT, TetH, gene_symbol: tetH, TREMBL, NCBITaxon:33059 Acidithiobacillus caldus, no-ref-proteome). Primary mechanism source(s) (pereira2025:   (https://scriptiebank.be/file/21588/download?token=QIzLpVs8)) report culture-level activity without single-gene knockouts or isolated isoform sequencing; supports: partial is strictly preserved on all enzyme-level edges and ProteinExample evidence items. |
+| edit_history | history/records/pyrite-roasting-cinder/2026-11-04T113742Z-marcin-c4162b.yaml; Canonical EDIT history sidecar history/records/pyrite-roasting-cinder/2026-11-04T113742Z-marcin-c4162b.yaml | supports | Canonical EDIT history sidecar history/records/pyrite-roasting-cinder/2026-11-04T113742Z-marcin-c4162b.yaml (SHA-256 3f6982317cdcf0cb9323640dc171e542003d490b8f7468c6c0d2cbe14cd9d95f): Enrich pyrite-roasting-cinder protein_examples with strain-matched Sulfobacillus thermosulfidooxidans DSM 9293 Sqr (UniProtKB:A0A1W1W805) and Acidithiobacillus caldus TetH (UniProtKB:A4ZV25) — Added strain-matched Sulfobacillus thermosulfidooxidans DSM 9293 sulfide-quinone oxidoreductase (UniProtKB:A0A1W1W805; SAMN00768000_0580) to sqr_reductase and Acidithiobacillus caldus tetrathionate hydrolase TetH (UniProtKB:A4ZV25; tetH BAE30_05680) to tth_hydrolase in acidophile_ash_assay_limited_response_graph and synchronized mechanisms[1].protein_examples. |
+| validation | data/records/pyrite-roasting-cinder.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/pyrite-roasting-cinder.yaml and history/records/pyrite-roasting-cinder/2026-11-04T113742Z-marcin-c4162b.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed during Cycle 7 Stage 3 (protein_examples) using scripts/curate_causal_graphs.py.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261104T114000Z-pyrite-roasting-cinder-cycle7-stage3-protein-examples-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 7 Stage 3 protein-examples review of Pyrite-roasting cinder (cmmmech:pyrite-roasting-cinder)
+started_at: '2026-11-04T11:37:00Z'
+finished_at: '2026-11-04T11:40:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle7-stage3-protein-examples-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 7 Stage 3 ProteinExample and causal_graphs curation in data/records/pyrite-roasting-cinder.yaml
+    (SHA-256 be3dcb8b6a52c3bf14ac8e11f09baa7d943299c9c6afbe9e32e4ceea0d8daec7) against
+    live UniProtKB REST API metadata, NCBI Taxonomy, and cited primary source(s) pereira2025.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 8bf82c8dfa25a35f12b60617b86751bc3ce7df71
+  state: working_tree
+  inputs:
+  - path: data/records/pyrite-roasting-cinder.yaml
+    sha256: be3dcb8b6a52c3bf14ac8e11f09baa7d943299c9c6afbe9e32e4ceea0d8daec7
+    role: target
+  - path: history/records/pyrite-roasting-cinder/2026-11-04T113742Z-marcin-c4162b.yaml
+    sha256: 3f6982317cdcf0cb9323640dc171e542003d490b8f7468c6c0d2cbe14cd9d95f
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:pyrite-roasting-cinder
+  path: data/records/pyrite-roasting-cinder.yaml
+  label: Pyrite-roasting cinder
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/pyrite-roasting-cinder.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/pyrite-roasting-cinder/2026-11-04T113742Z-marcin-c4162b.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 7 Stage 3 protein-examples review of data/records/pyrite-roasting-cinder.yaml
+    (SHA-256 be3dcb8b6a52c3bf14ac8e11f09baa7d943299c9c6afbe9e32e4ceea0d8daec7) and
+    its canonical EDIT history sidecar (history/records/pyrite-roasting-cinder/2026-11-04T113742Z-marcin-c4162b.yaml)
+    verifying UniProtKB accession/metadata grounding, consortium organism coverage,
+    causal-graph node/edge parity, and primary-source evidence fidelity across causal_graph
+    ''acidophile_ash_assay_limited_response_graph'' (mechanism_ref: acidophile_ash_assay_limited_response,
+    5 nodes / 4 edges; sqr_reductase: [UniProtKB:F9ZQD6 (Atc_1705, F9ZQD6_ACICS, UP000006135),
+    UniProtKB:F9ZN43 (Atc_1437, F9ZN43_ACICS, UP000006135), UniProtKB:A0A059XTE6 (Y981_02650,
+    A0A059XTE6_9BACT, UP000027059), UniProtKB:A0A1W1W805 (SAMN00768000_0580, A0A1W1W805_SULTA,
+    UP000192660)]; tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135),
+    UniProtKB:A4ZV25 (tetH, A4ZV25_9PROT, NCBITaxon:33059)]).'
+  selection: Cycle 7 Stage 3 protein_examples curation for cmmmech:pyrite-roasting-cinder
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:pyrite-roasting-cinder
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/pyrite-roasting-cinder.yaml
+  locator: Working-tree record data/records/pyrite-roasting-cinder.yaml (causal_graphs
+    and mechanisms[].protein_examples)
+  accessed_at: '2026-11-04T11:39:30Z'
+  support: supports
+  summary: 'Curated data/records/pyrite-roasting-cinder.yaml (SHA-256 be3dcb8b6a52c3bf14ac8e11f09baa7d943299c9c6afbe9e32e4ceea0d8daec7)
+    in Cycle 7 Stage 3 (protein_examples) across causal_graph ''acidophile_ash_assay_limited_response_graph''
+    (mechanism_ref: acidophile_ash_assay_limited_response, 5 nodes / 4 edges; sqr_reductase:
+    [UniProtKB:F9ZQD6 (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43 (Atc_1437,
+    F9ZN43_ACICS, UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT,
+    UP000027059), UniProtKB:A0A1W1W805 (SAMN00768000_0580, A0A1W1W805_SULTA, UP000192660)];
+    tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135), UniProtKB:A4ZV25
+    (tetH, A4ZV25_9PROT, NCBITaxon:33059)]), maintaining 100% parity between mechanisms[].protein_examples
+    and causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+    levels and caveats from primary source(s) pereira2025.'
+  snapshot_sha256: be3dcb8b6a52c3bf14ac8e11f09baa7d943299c9c6afbe9e32e4ceea0d8daec7
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://scriptiebank.be/file/21588/download?token=QIzLpVs8
+  locator: 'pereira2025:   (https://scriptiebank.be/file/21588/download?token=QIzLpVs8)'
+  accessed_at: '2026-11-04T11:39:30Z'
+  support: supports
+  summary: 'Live-verified UniProtKB grounding across UniProtKB:F9ZQD6 (F9ZQD6_ACICS,
+    Sulfide-quinone reductase, gene_symbol: Atc_1705, TREMBL, NCBITaxon:990288 Acidithiobacillus
+    caldus SM-1, UP000006135); UniProtKB:F9ZN43 (F9ZN43_ACICS, Sulfide-quinone reductase,
+    putative, gene_symbol: Atc_1437, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus
+    SM-1, UP000006135); UniProtKB:A0A059XTE6 (A0A059XTE6_9BACT, Sulfide-quinone reductase,
+    gene_symbol: Y981_02650, TREMBL, NCBITaxon:1441628 Leptospirillum ferriphilum
+    YSK, UP000027059); UniProtKB:A0A1W1W805 (A0A1W1W805_SULTA, Sulfide-quinone oxidoreductase,
+    gene_symbol: SAMN00768000_0580, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans
+    DSM 9293, UP000192660); UniProtKB:F9ZNI0 (F9ZNI0_ACICS, Tetrathionate hydrolase
+    TetH, gene_symbol: Atc_1595, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus
+    SM-1, UP000006135); UniProtKB:A4ZV25 (A4ZV25_9PROT, TetH, gene_symbol: tetH, TREMBL,
+    NCBITaxon:33059 Acidithiobacillus caldus, no-ref-proteome). Primary mechanism
+    source(s) (pereira2025:   (https://scriptiebank.be/file/21588/download?token=QIzLpVs8))
+    report culture-level activity without single-gene knockouts or isolated isoform
+    sequencing; supports: partial is strictly preserved on all enzyme-level edges
+    and ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/pyrite-roasting-cinder/2026-11-04T113742Z-marcin-c4162b.yaml
+  locator: Canonical EDIT history sidecar history/records/pyrite-roasting-cinder/2026-11-04T113742Z-marcin-c4162b.yaml
+  accessed_at: '2026-11-04T11:39:30Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/pyrite-roasting-cinder/2026-11-04T113742Z-marcin-c4162b.yaml
+    (SHA-256 3f6982317cdcf0cb9323640dc171e542003d490b8f7468c6c0d2cbe14cd9d95f): Enrich
+    pyrite-roasting-cinder protein_examples with strain-matched Sulfobacillus thermosulfidooxidans
+    DSM 9293 Sqr (UniProtKB:A0A1W1W805) and Acidithiobacillus caldus TetH (UniProtKB:A4ZV25)
+    — Added strain-matched Sulfobacillus thermosulfidooxidans DSM 9293 sulfide-quinone
+    oxidoreductase (UniProtKB:A0A1W1W805; SAMN00768000_0580) to sqr_reductase and
+    Acidithiobacillus caldus tetrathionate hydrolase TetH (UniProtKB:A4ZV25; tetH
+    BAE30_05680) to tth_hydrolase in acidophile_ash_assay_limited_response_graph and
+    synchronized mechanisms[1].protein_examples.'
+  snapshot_sha256: 3f6982317cdcf0cb9323640dc171e542003d490b8f7468c6c0d2cbe14cd9d95f
+- evidence_id: validation
+  kind: validation
+  reference: data/records/pyrite-roasting-cinder.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-04T11:39:30Z'
+  support: supports
+  summary: data/records/pyrite-roasting-cinder.yaml and history/records/pyrite-roasting-cinder/2026-11-04T113742Z-marcin-c4162b.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: be3dcb8b6a52c3bf14ac8e11f09baa7d943299c9c6afbe9e32e4ceea0d8daec7
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 678 record(s); 0 failed.
+  target_ids:
+  - cmmmech:pyrite-roasting-cinder
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:pyrite-roasting-cinder
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: protein_examples_and_causal_graph_grounding
+  area: graph
+  topic: 'Verification of live UniProtKB ProteinExample grounding, consortium organism
+    representation, and node/mechanism parity across causal_graph ''acidophile_ash_assay_limited_response_graph''
+    (sqr_reductase: [UniProtKB:F9ZQD6 (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43
+    (Atc_1437, F9ZN43_ACICS, UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT,
+    UP000027059), UniProtKB:A0A1W1W805 (SAMN00768000_0580, A0A1W1W805_SULTA, UP000192660)];
+    tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135), UniProtKB:A4ZV25
+    (tetH, A4ZV25_9PROT, NCBITaxon:33059)])'
+  outcome: supported
+  summary: 'Curated data/records/pyrite-roasting-cinder.yaml (SHA-256 be3dcb8b6a52c3bf14ac8e11f09baa7d943299c9c6afbe9e32e4ceea0d8daec7)
+    in Cycle 7 Stage 3 (protein_examples) across causal_graph ''acidophile_ash_assay_limited_response_graph''
+    (mechanism_ref: acidophile_ash_assay_limited_response, 5 nodes / 4 edges; sqr_reductase:
+    [UniProtKB:F9ZQD6 (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43 (Atc_1437,
+    F9ZN43_ACICS, UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT,
+    UP000027059), UniProtKB:A0A1W1W805 (SAMN00768000_0580, A0A1W1W805_SULTA, UP000192660)];
+    tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135), UniProtKB:A4ZV25
+    (tetH, A4ZV25_9PROT, NCBITaxon:33059)]), maintaining 100% parity between mechanisms[].protein_examples
+    and causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+    levels and caveats from primary source(s) pereira2025. Live-verified UniProtKB
+    grounding across UniProtKB:F9ZQD6 (F9ZQD6_ACICS, Sulfide-quinone reductase, gene_symbol:
+    Atc_1705, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135);
+    UniProtKB:F9ZN43 (F9ZN43_ACICS, Sulfide-quinone reductase, putative, gene_symbol:
+    Atc_1437, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135);
+    UniProtKB:A0A059XTE6 (A0A059XTE6_9BACT, Sulfide-quinone reductase, gene_symbol:
+    Y981_02650, TREMBL, NCBITaxon:1441628 Leptospirillum ferriphilum YSK, UP000027059);
+    UniProtKB:A0A1W1W805 (A0A1W1W805_SULTA, Sulfide-quinone oxidoreductase, gene_symbol:
+    SAMN00768000_0580, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans
+    DSM 9293, UP000192660); UniProtKB:F9ZNI0 (F9ZNI0_ACICS, Tetrathionate hydrolase
+    TetH, gene_symbol: Atc_1595, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus
+    SM-1, UP000006135); UniProtKB:A4ZV25 (A4ZV25_9PROT, TetH, gene_symbol: tetH, TREMBL,
+    NCBITaxon:33059 Acidithiobacillus caldus, no-ref-proteome).'
+  target_ids:
+  - cmmmech:pyrite-roasting-cinder
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: 'data/records/pyrite-roasting-cinder.yaml was updated exclusively through
+    scripts/curate_causal_graphs.py (curate_record_file), producing append-only history
+    sidecar history/records/pyrite-roasting-cinder/2026-11-04T113742Z-marcin-c4162b.yaml
+    (SHA-256 3f6982317cdcf0cb9323640dc171e542003d490b8f7468c6c0d2cbe14cd9d95f: Enrich
+    pyrite-roasting-cinder protein_examples with strain-matched Sulfobacillus thermosulfidooxidans
+    DSM 9293 Sqr (UniProtKB:A0A1W1W805) and Acidithiobacillus caldus TetH (UniProtKB:A4ZV25)
+    — Added strain-matched Sulfobacillus thermosulfidooxidans DSM 9293 sulfide-quinone
+    oxidoreductase (UniProtKB:A0A1W1W805; SAMN00768000_0580) to sqr_reductase and
+    Acidithiobacillus caldus tetrathionate hydrolase TetH (UniProtKB:A4ZV25; tetH
+    BAE30_05680) to tth_hydrolase in acidophile_ash_assay_limited_response_graph and
+    synchronized mechanisms[1].protein_examples.) and passing all LinkML, protein_examples
+    parity, and history validation gates.'
+  target_ids:
+  - cmmmech:pyrite-roasting-cinder
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Pyrite-roasting cinder (cmmmech:pyrite-roasting-cinder) passes Cycle 7 Stage
+  3 protein-examples review (scientific_review: true) at SHA-256 be3dcb8b6a52c3bf14ac8e11f09baa7d943299c9c6afbe9e32e4ceea0d8daec7:
+  Curated data/records/pyrite-roasting-cinder.yaml (SHA-256 be3dcb8b6a52c3bf14ac8e11f09baa7d943299c9c6afbe9e32e4ceea0d8daec7)
+  in Cycle 7 Stage 3 (protein_examples) across causal_graph ''acidophile_ash_assay_limited_response_graph''
+  (mechanism_ref: acidophile_ash_assay_limited_response, 5 nodes / 4 edges; sqr_reductase:
+  [UniProtKB:F9ZQD6 (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43 (Atc_1437,
+  F9ZN43_ACICS, UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT,
+  UP000027059), UniProtKB:A0A1W1W805 (SAMN00768000_0580, A0A1W1W805_SULTA, UP000192660)];
+  tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135), UniProtKB:A4ZV25
+  (tetH, A4ZV25_9PROT, NCBITaxon:33059)]), maintaining 100% parity between mechanisms[].protein_examples
+  and causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+  levels and caveats from primary source(s) pereira2025. Live-verified UniProtKB grounding
+  across UniProtKB:F9ZQD6 (F9ZQD6_ACICS, Sulfide-quinone reductase, gene_symbol: Atc_1705,
+  TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:F9ZN43
+  (F9ZN43_ACICS, Sulfide-quinone reductase, putative, gene_symbol: Atc_1437, TREMBL,
+  NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:A0A059XTE6
+  (A0A059XTE6_9BACT, Sulfide-quinone reductase, gene_symbol: Y981_02650, TREMBL, NCBITaxon:1441628
+  Leptospirillum ferriphilum YSK, UP000027059); UniProtKB:A0A1W1W805 (A0A1W1W805_SULTA,
+  Sulfide-quinone oxidoreductase, gene_symbol: SAMN00768000_0580, TREMBL, NCBITaxon:929705
+  Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660); UniProtKB:F9ZNI0 (F9ZNI0_ACICS,
+  Tetrathionate hydrolase TetH, gene_symbol: Atc_1595, TREMBL, NCBITaxon:990288 Acidithiobacillus
+  caldus SM-1, UP000006135); UniProtKB:A4ZV25 (A4ZV25_9PROT, TetH, gene_symbol: tetH,
+  TREMBL, NCBITaxon:33059 Acidithiobacillus caldus, no-ref-proteome).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 7 Stage 3 (protein_examples) using scripts/curate_causal_graphs.py.
+related_reviews:
+- repository: CultureBotAI/CMMMech
+  review_id: 20261104T102200Z-pyrite-roasting-cinder-cycle7-stage2-causal-graphs-review
+  relationship: supersedes
+```

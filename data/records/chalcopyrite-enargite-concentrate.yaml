@@ -90,6 +90,27 @@ mechanisms:
     - source_ref: oyama_2021
       supports: partial
       explanation: Representative Acidithiobacillus caldus SM-1 tetrathionate hydrolase TetH (Atc_1595) for feed-dependent carbon-assisted mixed-culture bioleaching of three chalcopyrite/enargite/pyrite concentrates (D3, Eb, Ea) at 45 C by a four-member consortium including Acidithiobacillus caldus KU in Oyama et al. (2021); individual Atc_1705/Atc_1437/Atc_1595 genes were not mutated or directly assayed.
+  - uniprot_accession: UniProtKB:A4ZV25
+    entry_name: A4ZV25_9PROT
+    protein_name: TetH
+    gene_symbol: tetH
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:33059
+      label: Acidithiobacillus caldus
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase TetH (tetH, locus BAE30_05680; 502 aa) in Acidithiobacillus caldus hydrolyzing tetrathionate into thiosulfate, elemental sulfur, and sulfate protons during moderately thermophilic bioleaching.
+    annotation_note: Grounded to Acidithiobacillus caldus strain ZBY tetrathionate hydrolase TetH (tetH, locus BAE30_05680; NCBITaxon:33059), providing a second species-matched TetH ortholog alongside SM-1 Atc_1595 for moderately thermophilic sulfur-oxidizer Acidithiobacillus caldus KU (DSM 8584; NCBITaxon:33059) within the four-member consortium in Oyama et al. (2021).
+    evidence:
+    - source_ref: oyama_2021
+      supports: partial
+      explanation: Representative Acidithiobacillus caldus tetrathionate hydrolase TetH (tetH, locus BAE30_05680) for feed-dependent carbon-assisted mixed-culture bioleaching of three chalcopyrite/enargite/pyrite concentrates (D3, Eb, Ea) at 45 C by a four-member consortium including Acidithiobacillus caldus KU in Oyama et al. (2021); individual genes were not mutated or directly assayed.
   evidence:
   - source_ref: oyama_2021
     supports: support
@@ -112,7 +133,7 @@ mechanisms:
 causal_graphs:
 - id: conditional_carbon_assisted_bioleaching_graph
   name: Acidithiobacillus caldus KU sulfur-oxidizing and activated-carbon-assisted four-member consortium bioleaching of chalcopyrite-enargite-pyrite concentrates (D3, Eb, Ea)
-  description: Causal pathway linking representative Acidithiobacillus caldus reduced-sulfur oxidation enzymes Sqr (Atc_1705, Atc_1437) and TetH (Atc_1595) to sulfuric-acid and redox regulation in a 45 C four-member moderately thermophilic consortium (Acidiplasma sp. Fv-Ap, Acidimicrobium ferrooxidans ICP, Sulfobacillus sibiricus N1, and Acidithiobacillus caldus KU) with 0, 0.05%, or 0.3% w/v activated carbon across three chalcopyrite-enargite-pyrite concentrates (D3, Eb, and Ea).
+  description: Causal pathway linking representative Acidithiobacillus caldus reduced-sulfur oxidation enzymes Sqr (Atc_1705, Atc_1437) and TetH (Atc_1595, tetH BAE30_05680) to sulfuric-acid and redox regulation in a 45 C four-member moderately thermophilic consortium (Acidiplasma sp. Fv-Ap, Acidimicrobium ferrooxidans ICP, Sulfobacillus sibiricus N1, and Acidithiobacillus caldus KU) with 0, 0.05%, or 0.3% w/v activated carbon across three chalcopyrite-enargite-pyrite concentrates (D3, Eb, and Ea).
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: conditional_carbon_assisted_bioleaching
   nodes:
@@ -165,10 +186,10 @@ causal_graphs:
         supports: partial
         explanation: Representative Acidithiobacillus caldus SM-1 sulfide-quinone reductase paralog (Atc_1437) for feed-dependent carbon-assisted mixed-culture bioleaching of three chalcopyrite/enargite/pyrite concentrates (D3, Eb, Ea) at 45 C by a four-member consortium including Acidithiobacillus caldus KU in Oyama et al. (2021); individual Atc_1705/Atc_1437/Atc_1595 genes were not mutated or directly assayed.
   - id: tth_hydrolase
-    label: TetH tetrathionate hydrolase (Atc_1595)
+    label: TetH tetrathionate hydrolases (Atc_1595; tetH BAE30_05680)
     node_type: GENE_OR_PROTEIN
     gene_symbol: Atc_1595
-    description: Periplasmic tetrathionate hydrolase TetH (Atc_1595) in Acidithiobacillus caldus SM-1 disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric-acid protons.
+    description: Periplasmic tetrathionate hydrolase TetH homologs in Acidithiobacillus caldus (SM-1 Atc_1595 and ZBY tetH / BAE30_05680) disproportionating tetrathionate into thiosulfate, elemental sulfur, sulfate, and sulfuric-acid protons.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:F9ZNI0
@@ -193,6 +214,27 @@ causal_graphs:
       - source_ref: oyama_2021
         supports: partial
         explanation: Representative Acidithiobacillus caldus SM-1 tetrathionate hydrolase TetH (Atc_1595) for feed-dependent carbon-assisted mixed-culture bioleaching of three chalcopyrite/enargite/pyrite concentrates (D3, Eb, Ea) at 45 C by a four-member consortium including Acidithiobacillus caldus KU in Oyama et al. (2021); individual Atc_1705/Atc_1437/Atc_1595 genes were not mutated or directly assayed.
+    - uniprot_accession: UniProtKB:A4ZV25
+      entry_name: A4ZV25_9PROT
+      protein_name: TetH
+      gene_symbol: tetH
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:33059
+        label: Acidithiobacillus caldus
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase TetH (tetH, locus BAE30_05680; 502 aa) in Acidithiobacillus caldus hydrolyzing tetrathionate into thiosulfate, elemental sulfur, and sulfate protons during moderately thermophilic bioleaching.
+      annotation_note: Grounded to Acidithiobacillus caldus strain ZBY tetrathionate hydrolase TetH (tetH, locus BAE30_05680; NCBITaxon:33059), providing a second species-matched TetH ortholog alongside SM-1 Atc_1595 for moderately thermophilic sulfur-oxidizer Acidithiobacillus caldus KU (DSM 8584; NCBITaxon:33059) within the four-member consortium in Oyama et al. (2021).
+      evidence:
+      - source_ref: oyama_2021
+        supports: partial
+        explanation: Representative Acidithiobacillus caldus tetrathionate hydrolase TetH (tetH, locus BAE30_05680) for feed-dependent carbon-assisted mixed-culture bioleaching of three chalcopyrite/enargite/pyrite concentrates (D3, Eb, Ea) at 45 C by a four-member consortium including Acidithiobacillus caldus KU in Oyama et al. (2021); individual genes were not mutated or directly assayed.
   - id: acidic_oxidizing_consortium_leach_liquor
     label: Four-member 45 C consortium (Acidiplasma sp. Fv-Ap, A. ferrooxidans ICP, S. sibiricus N1, A. caldus KU; 10^7 cells/mL each) in 200 mL heterotrophic basal salts medium (5 mM Fe2+, 0.01% w/v S0, 0.01% w/v yeast extract, initial pH 1.5, 0/0.05/0.3% w/v activated carbon)
     node_type: CHEMICAL_ENTITY
@@ -213,7 +255,7 @@ causal_graphs:
     target: tth_hydrolase
     predicate: supplies_substrate_for
     relationship: oxidation of sulfide to sulfur/polythionate intermediates
-    description: Sqr sulfide-quinone reductases (Atc_1705; Atc_1437) catalyzes oxidation of reduced sulfur species to zero-valent sulfur and polythionate intermediates metabolized by TetH tetrathionate hydrolase (Atc_1595).
+    description: Sqr sulfide-quinone reductases (Atc_1705; Atc_1437) catalyzes oxidation of reduced sulfur species to zero-valent sulfur and polythionate intermediates metabolized by TetH tetrathionate hydrolases (Atc_1595; tetH BAE30_05680).
     evidence:
     - source_ref: oyama_2021
       supports: partial
@@ -222,7 +264,7 @@ causal_graphs:
     target: acidic_oxidizing_consortium_leach_liquor
     predicate: produces
     relationship: sulfuric acid proton and lixiviant generation
-    description: TetH tetrathionate hydrolase (Atc_1595) disproportionates tetrathionate and polythionate intermediates into sulfate and H+, generating Four-member 45 C consortium (Acidiplasma sp. Fv-Ap, A. ferrooxidans ICP, S. sibiricus N1, A. caldus KU; 10^7 cells/mL each) in 200 mL heterotrophic basal salts medium (5 mM Fe2+, 0.01% w/v S0, 0.01% w/v yeast extract, initial pH 1.5, 0/0.05/0.3% w/v activated carbon).
+    description: TetH tetrathionate hydrolases (Atc_1595; tetH BAE30_05680) disproportionates tetrathionate and polythionate intermediates into sulfate and H+, generating Four-member 45 C consortium (Acidiplasma sp. Fv-Ap, A. ferrooxidans ICP, S. sibiricus N1, A. caldus KU; 10^7 cells/mL each) in 200 mL heterotrophic basal salts medium (5 mM Fe2+, 0.01% w/v S0, 0.01% w/v yeast extract, initial pH 1.5, 0/0.05/0.3% w/v activated carbon).
     evidence:
     - source_ref: oyama_2021
       supports: partial
@@ -262,8 +304,13 @@ curation_history:
   curator: marcin
   action: edit
   summary: Rename terminal node ID in conditional_carbon_assisted_bioleaching_graph to remove ferric arsenate precipitate implication (#892)
+- timestamp: '2026-11-04T11:37:41Z'
+  curator: marcin
+  action: edit
+  summary: Enrich chalcopyrite-enargite-concentrate tth_hydrolase protein_examples with second Acidithiobacillus caldus TetH ortholog (UniProtKB:A4ZV25)
 history_refs:
 - history/records/chalcopyrite-enargite-concentrate/2026-10-12T114445Z-codex-48240b.yaml
 - history/records/chalcopyrite-enargite-concentrate/2026-10-31T053145Z-marcin-8eb0b4.yaml
 - history/records/chalcopyrite-enargite-concentrate/2026-10-31T090426Z-marcin-42be98.yaml
 - history/records/chalcopyrite-enargite-concentrate/2026-10-31T094622Z-marcin-0a610a.yaml
+- history/records/chalcopyrite-enargite-concentrate/2026-11-04T113741Z-marcin-a47150.yaml
