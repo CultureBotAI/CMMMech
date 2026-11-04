@@ -1,0 +1,154 @@
+schema_version: 1.0.0
+run_id: mech-goal-sequence-20261019
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+cycle: 7
+stage: 4
+revision: 1
+source_revision: ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c
+frozen_inventory_count: 678
+structured_review_bundles:
+- review_id: 20261104T124500Z-cycle7-stage4-element-cohort-review
+  kind: category
+  population_size: 66
+  reviewed_count: 66
+  verdict: pass_with_limitations
+  path: reviews/structured/20261104T124500Z-cycle7-stage4-element-cohort-review/review.yaml
+- review_id: 20261104T124501Z-cycle7-stage4-mineral-cohort-review
+  kind: category
+  population_size: 427
+  reviewed_count: 427
+  verdict: pass_with_limitations
+  path: reviews/structured/20261104T124501Z-cycle7-stage4-mineral-cohort-review/review.yaml
+- review_id: 20261104T124502Z-cycle7-stage4-mineral-group-cohort-review
+  kind: category
+  population_size: 7
+  reviewed_count: 7
+  verdict: pass_with_limitations
+  path: reviews/structured/20261104T124502Z-cycle7-stage4-mineral-group-cohort-review/review.yaml
+- review_id: 20261104T124503Z-cycle7-stage4-commodity-cohort-review
+  kind: category
+  population_size: 36
+  reviewed_count: 36
+  verdict: pass_with_limitations
+  path: reviews/structured/20261104T124503Z-cycle7-stage4-commodity-cohort-review/review.yaml
+- review_id: 20261104T124504Z-cycle7-stage4-primary-resource-cohort-review
+  kind: category
+  population_size: 31
+  reviewed_count: 31
+  verdict: pass_with_limitations
+  path: reviews/structured/20261104T124504Z-cycle7-stage4-primary-resource-cohort-review/review.yaml
+- review_id: 20261104T124505Z-cycle7-stage4-secondary-resource-cohort-review
+  kind: category
+  population_size: 111
+  reviewed_count: 111
+  verdict: pass_with_limitations
+  path: reviews/structured/20261104T124505Z-cycle7-stage4-secondary-resource-cohort-review/review.yaml
+- review_id: 20261104T124506Z-cycle7-stage4-causal-graphs-cohort-review
+  kind: category
+  population_size: 142
+  reviewed_count: 142
+  verdict: pass_with_limitations
+  path: reviews/structured/20261104T124506Z-cycle7-stage4-causal-graphs-cohort-review/review.yaml
+- review_id: 20261104T124507Z-fengruiite-cycle7-stage4-record-review
+  kind: record
+  population_size: 1
+  reviewed_count: 1
+  verdict: pass_with_limitations
+  path: reviews/structured/20261104T124507Z-fengruiite-cycle7-stage4-record-review/review.yaml
+- review_id: 20261104T124508Z-manganese-ore-cycle7-stage4-record-review
+  kind: record
+  population_size: 1
+  reviewed_count: 1
+  verdict: pass_with_limitations
+  path: reviews/structured/20261104T124508Z-manganese-ore-cycle7-stage4-record-review/review.yaml
+- review_id: 20261104T124509Z-cassiterite-polymetallic-sulfide-ore-cycle7-stage4-record-review
+  kind: record
+  population_size: 1
+  reviewed_count: 1
+  verdict: pass_with_limitations
+  path: reviews/structured/20261104T124509Z-cassiterite-polymetallic-sulfide-ore-cycle7-stage4-record-review/review.yaml
+findings:
+- finding_id: cmmmech-cycle7-stage4-finding-0001
+  issue_key: cmmmech.round125-minerals.missing-ima-symbol-slot
+  review_id: 20261104T124501Z-cycle7-stage4-mineral-cohort-review
+  status: open
+  severity: minor
+  category: completeness
+  target_ids:
+  - cmmmech:fengruiite
+  - cmmmech:igelstromite
+  - cmmmech:lazerckerite
+  - cmmmech:plumbogottlobite
+  summary: 'Four of the five IMA-CNMNC Round 125 mineral records curated in Cycle
+    7 Stage 1 (PR #910, commit fa7431ae) — data/records/fengruiite.yaml (cmmmech:fengruiite,
+    IMA 2024-045), data/records/igelstromite.yaml (cmmmech:igelstromite, IMA 2021-035),
+    data/records/lazerckerite.yaml (cmmmech:lazerckerite, IMA 2022-113), and data/records/plumbogottlobite.yaml
+    (cmmmech:plumbogottlobite, IMA 2025-075) — explicitly state their IMA-CNMNC-approved
+    mineral symbols in description (''IMA symbol Fru'' in fengruiite.yaml line 8 from
+    Tian et al. 2026 Eur. J. Mineral. 38:519-530, p. 519; ''IMA symbol Ig'' in igelstromite.yaml
+    line 9 from Holtstam et al. 2024 Eur. J. Mineral. 36:311-322, p. 311; ''official
+    IMA symbol Lzc'' in lazerckerite.yaml lines 11-12 from Pazout et al. 2024 Eur.
+    J. Mineral. 36:641-656, p. 641; and ''official IMA symbol Pgtb'' in plumbogottlobite.yaml
+    line 8 from Kampf et al. 2026 Eur. J. Mineral. 38:209-216, p. 209), but omit the
+    top-level ima_symbol slot (ima_symbol: Fru, ima_symbol: Ig, ima_symbol: Lzc, and
+    ima_symbol: Pgtb immediately following material_kind: mineral), unlike peer IMA
+    mineral records such as data/records/andreybulakhite.yaml (ima_symbol: Adb), data/records/vielleaureite-ce.yaml
+    (ima_symbol: Vlr-Ce), data/records/xianhuaite-ce.yaml (ima_symbol: Xhu-Ce), and
+    data/records/yttrotungstite-nd.yaml (ima_symbol: Ytgs-Nd).'
+- finding_id: cmmmech-cycle7-stage4-finding-0002
+  issue_key: cmmmech.cycle7-stage3-sulfur-graphs.edge-desc-grammar-and-incomplete-edge-evidence-loci
+  review_id: 20261104T124506Z-cycle7-stage4-causal-graphs-cohort-review
+  status: open
+  severity: minor
+  category: graph
+  target_ids:
+  - cmmmech:cassiterite-polymetallic-sulfide-ore
+  - cmmmech:chalcopyrite
+  - cmmmech:chalcopyrite-enargite-concentrate
+  - cmmmech:coal-beneficiation-waste
+  - cmmmech:copper
+  - cmmmech:copper-smelter-flue-dust
+  - cmmmech:molybdenite
+  - cmmmech:pyrite-roasting-cinder
+  - cmmmech:skutterudite
+  summary: 'Across the 9 sulfur-oxidizing causal graphs updated in Cycle 7 Stage 3
+    (PR #915, commit ff4a9841) (1 element: copper.yaml; 3 mineral: chalcopyrite.yaml,
+    molybdenite.yaml, skutterudite.yaml; 2 primary_resource: cassiterite-polymetallic-sulfide-ore.yaml,
+    chalcopyrite-enargite-concentrate.yaml; 3 secondary_resource: coal-beneficiation-waste.yaml,
+    copper-smelter-flue-dust.yaml, pyrite-roasting-cinder.yaml), edges[0] (sqr_reductase
+    -> tth_hydrolase) and edges[1] (tth_hydrolase -> <leach_system>) had their pluralized
+    node labels substituted into edge.description while retaining singular verbs (''Sqr
+    ... oxidoreductases (...) oxidizes ...'' or ''Sqr ... reductases (...) catalyzes
+    ...'', and ''TetH/Tth tetrathionate hydrolases (...) disproportionates ...'' or
+    ''Tth tetrathionate hydrolases (...) disproportionates ...''), and in 7 of those
+    9 records (cassiterite-polymetallic-sulfide-ore.yaml, chalcopyrite.yaml, chalcopyrite-enargite-concentrate.yaml,
+    coal-beneficiation-waste.yaml, copper.yaml, molybdenite.yaml, pyrite-roasting-cinder.yaml)
+    edges[0].evidence[0].explanation still lists only the pre-Stage-3 Sqr/TetH/Tth
+    locus subset (''(Atc_1705, Atc_1437, Y981_02650) and TetH (Atc_1595)'' or ''Sqr
+    paralogs (AFE_1792, AFE_0267) and Tth (AFE_0029)''), omitting the Stage-3-added
+    Sulfobacillus thermosulfidooxidans DSM 9293 Sqr (SAMN00768000_0580), Acidithiobacillus
+    caldus ZBY TetH (tetH / BAE30_05680), and Acidithiobacillus ferrooxidans DSM 16523
+    Tth (DN052_12875) homologs grounded on sqr_reductase and tth_hydrolase.'
+- finding_id: cmmmech-cycle7-stage4-finding-0003
+  issue_key: cmmmech.aspergillus-atcc1015-cexa-node.description-omits-strain-matched-g3y4n5
+  review_id: 20261104T124508Z-manganese-ore-cycle7-stage4-record-review
+  status: open
+  severity: minor
+  category: graph
+  target_ids:
+  - cmmmech:birnessite
+  - cmmmech:lindbergite
+  - cmmmech:manganese-ore
+  summary: In data/records/birnessite.yaml (cmmmech:birnessite, causal_graphs[1] fungal_synthetic_cobalt_birnessite_transformation_graph,
+    lines 316-363), data/records/lindbergite.yaml (cmmmech:lindbergite, causal_graphs[0]
+    niger_associated_manganese_oxalate_formation_graph, lines 151-198), and data/records/manganese-ore.yaml
+    (cmmmech:manganese-ore, causal_graphs[0] fungal_nkamouna_laterite_transformation_graph,
+    lines 136-183), node cexa_citrate_exporter is grounded to both the strain-matched
+    Aspergillus niger ATCC 1015 reference-proteome entry UniProtKB:G3Y4N5 (CEXA_ASPNA,
+    locus ASPNIDRAFT_56962) and the species-level reviewed entry UniProtKB:A0A254TZW7
+    (CEXA_ASPNG), but cexa_citrate_exporter.description still reads 'Reviewed Aspergillus
+    niger plasma-membrane citrate exporter (UniProtKB:A0A254TZW7) representing the
+    fungal organic-acid secretion machinery.', naming only UniProtKB:A0A254TZW7 and
+    omitting the strain-matched ATCC 1015 reference-proteome entry UniProtKB:G3Y4N5
+    (CEXA_ASPNA / ASPNIDRAFT_56962).
