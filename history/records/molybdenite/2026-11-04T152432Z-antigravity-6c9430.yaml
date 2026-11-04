@@ -1,0 +1,29 @@
+history_version: 1
+target:
+  kind: record
+  slug: molybdenite
+  path: data/records/molybdenite.yaml
+session:
+  id: 2026-11-04T152432Z-antigravity-6c9430
+  timestamp: '2026-11-04T15:24:32Z'
+  actors:
+  - name: antigravity
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Pluralize Sqr/Tth edge verbs and include A. ferrooxidans Tth DN052_12875 in sqr_reductase
+    -> tth_hydrolase edge explanation (Issue #919, GRP-C7S5-002).'
+  details: 'Updated causal_graphs[0].edges[0..1].description to use plural verbs (''oxidize'',
+    ''disproportionate'') and expanded causal_graphs[0].edges[0].evidence[0].explanation to
+    list Acidithiobacillus ferrooxidans Tth (DN052_12875) added in Cycle 7 Stage 3, resolving
+    cmmmech-cycle7-stage4-finding-0002 (Issue #919).'
+  sections:
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/919

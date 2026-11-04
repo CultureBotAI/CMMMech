@@ -314,16 +314,16 @@ causal_graphs:
     target: tth_hydrolase
     predicate: supplies_substrate_for
     relationship: oxidation of sulfide to sulfur/polythionate intermediates
-    description: Sqr / Sqor sulfide-quinone oxidoreductases (A. thiooxidans sqr GCD22_02301, sqor GCD22_03207; S. thermosulfidooxidans SAMN00768000_0580) oxidizes reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by Tth tetrathionate hydrolases (tth GCD22_14205; tth GCD22_02315).
+    description: Sqr / Sqor sulfide-quinone oxidoreductases (A. thiooxidans sqr GCD22_02301, sqor GCD22_03207; S. thermosulfidooxidans SAMN00768000_0580) oxidize reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by Tth tetrathionate hydrolases (tth GCD22_14205; tth GCD22_02315).
     evidence:
     - source_ref: johnson2020
       supports: partial
-      explanation: Oxidation of 0.5% w/v zero-valent sulfur in Acidithiobacillus thiooxidans couples Sqr/Sqor paralogs (GCD22_02301, GCD22_03207) and periplasmic Tth paralogs (GCD22_14205, GCD22_02315) during 35 C bioreactor processing of Bou Azzer skutterudite concentrate in Johnson et al. (2020); individual genes were not directly assayed.
+      explanation: Oxidation of 0.5% w/v zero-valent sulfur in Acidithiobacillus thiooxidans and Sulfobacillus thermosulfidooxidans couples Sqr/Sqor homologs (GCD22_02301, GCD22_03207, SAMN00768000_0580) and periplasmic Tth paralogs (GCD22_14205, GCD22_02315) during 35 C bioreactor processing of Bou Azzer skutterudite concentrate in Johnson et al. (2020); individual genes were not directly assayed.
   - source: tth_hydrolase
     target: acidophile_sulfur_ferrous_bioreactor_and_pyrite_flask_lixiviant
     predicate: produces
     relationship: sulfuric acid proton and lixiviant generation
-    description: Tth tetrathionate hydrolases (tth GCD22_14205; tth GCD22_02315) disproportionates tetrathionate and polythionate intermediates into sulfate and H+, contributing to 35 C acidophile consortium (with A. thiooxidans and S. thermosulfidooxidans as dominant 16-day culturable members) in 1-L bioreactor medium (0.5% w/v S0, 5 mM FeSO4, pH 1.8 falling to 1.5) or 5% w/v pyrite-preconditioned flask.
+    description: Tth tetrathionate hydrolases (tth GCD22_14205; tth GCD22_02315) disproportionate tetrathionate and polythionate intermediates into sulfate and H+, contributing to 35 C acidophile consortium (with A. thiooxidans and S. thermosulfidooxidans as dominant 16-day culturable members) in 1-L bioreactor medium (0.5% w/v S0, 5 mM FeSO4, pH 1.8 falling to 1.5) or 5% w/v pyrite-preconditioned flask.
     evidence:
     - source_ref: johnson2020
       supports: partial
@@ -359,7 +359,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: Enrich skutterudite sqr_reductase protein_examples with Sulfobacillus thermosulfidooxidans DSM 9293 Sqr (UniProtKB:A0A1W1W805)
+- timestamp: '2026-11-04T15:24:32Z'
+  curator: antigravity
+  action: EDIT
+  summary: 'Pluralize Sqr/Sqor and Tth edge verbs and include S. thermosulfidooxidans SAMN00768000_0580 in sqr_reductase -> tth_hydrolase edge explanation (Issue #919, GRP-C7S5-002).'
 history_refs:
 - history/records/skutterudite/2026-10-15T083258Z-codex-b2814f.yaml
 - history/records/skutterudite/2026-11-04T102015Z-marcin-a368a0.yaml
 - history/records/skutterudite/2026-11-04T113742Z-marcin-2d9ab0.yaml
+- history/records/skutterudite/2026-11-04T152432Z-antigravity-ffdaf9.yaml

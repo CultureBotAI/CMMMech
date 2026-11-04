@@ -440,16 +440,16 @@ causal_graphs:
     target: tth_hydrolase
     predicate: supplies_substrate_for
     relationship: oxidation of sulfide to sulfur/polythionate intermediates
-    description: Sqr / Sqor sulfide-quinone oxidoreductases (A. ferrooxidans AFE_1792, sqr AFE_0267; A. thiooxidans sqr GCD22_02301, sqor GCD22_03207; L. ferrooxidans LFE_1004) oxidizes reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by Tth tetrathionate hydrolases (A. ferrooxidans tth AFE_0029; A. thiooxidans tth GCD22_14205, tth GCD22_02315).
+    description: Sqr / Sqor sulfide-quinone oxidoreductases (A. ferrooxidans AFE_1792, sqr AFE_0267; A. thiooxidans sqr GCD22_02301, sqor GCD22_03207; L. ferrooxidans LFE_1004) oxidize reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by Tth tetrathionate hydrolases (A. ferrooxidans tth AFE_0029; A. thiooxidans tth GCD22_14205, tth GCD22_02315).
     evidence:
     - source_ref: bakhtiari2008
       supports: partial
-      explanation: Reduced-sulfur oxidation in the adapted Acidithiobacillus ferrooxidans and Acidithiobacillus thiooxidans consortium members couples Sqr/Sqor homologs (AFE_1792, AFE_0267, GCD22_02301, GCD22_03207) and periplasmic Tth homologs (AFE_0029, GCD22_14205, GCD22_02315) during bioleaching of sulfide-bearing preleached smelter dust in Bakhtiari et al. (2008); individual genes were not directly assayed.
+      explanation: Reduced-sulfur oxidation in the adapted Acidithiobacillus ferrooxidans, Acidithiobacillus thiooxidans, and Leptospirillum ferrooxidans consortium members couples Sqr/Sqor homologs (AFE_1792, AFE_0267, GCD22_02301, GCD22_03207, LFE_1004) and periplasmic Tth homologs (AFE_0029, GCD22_14205, GCD22_02315) during bioleaching of sulfide-bearing preleached smelter dust in Bakhtiari et al. (2008); individual genes were not directly assayed.
   - source: tth_hydrolase
     target: adapted_mesophilic_consortium_9k_leach_system
     predicate: produces
     relationship: sulfuric acid proton and lixiviant generation
-    description: Tth tetrathionate hydrolases (A. ferrooxidans tth AFE_0029; A. thiooxidans tth GCD22_14205, tth GCD22_02315) disproportionates tetrathionate and polythionate intermediates into sulfate and H+, contributing to Adapted Sarcheshmeh AMD consortium (A. ferrooxidans, A. thiooxidans, L. ferrooxidans; 10% v/v) in 9K medium (initial pH 1.8, 32-34 C, supplemental H2SO4 from day 114).
+    description: Tth tetrathionate hydrolases (A. ferrooxidans tth AFE_0029; A. thiooxidans tth GCD22_14205, tth GCD22_02315) disproportionate tetrathionate and polythionate intermediates into sulfate and H+, contributing to Adapted Sarcheshmeh AMD consortium (A. ferrooxidans, A. thiooxidans, L. ferrooxidans; 10% v/v) in 9K medium (initial pH 1.8, 32-34 C, supplemental H2SO4 from day 114).
     evidence:
     - source_ref: bakhtiari2008
       supports: partial
@@ -485,7 +485,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: Enrich copper-smelter-flue-dust sqr_reductase protein_examples with Leptospirillum ferrooxidans C2-3 Sqr (UniProtKB:I0IN58) and align node.gene_symbol to AFE_1792
+- timestamp: '2026-11-04T15:24:32Z'
+  curator: antigravity
+  action: EDIT
+  summary: 'Pluralize Sqr/Sqor and Tth edge verbs and include L. ferrooxidans LFE_1004 in sqr_reductase -> tth_hydrolase edge explanation (Issue #919, GRP-C7S5-002).'
 history_refs:
 - history/records/copper-smelter-flue-dust/2026-10-12T145039Z-codex-2fa9ea.yaml
 - history/records/copper-smelter-flue-dust/2026-11-04T101915Z-marcin-e34f00.yaml
 - history/records/copper-smelter-flue-dust/2026-11-04T113741Z-marcin-7fadf7.yaml
+- history/records/copper-smelter-flue-dust/2026-11-04T152432Z-antigravity-f72235.yaml

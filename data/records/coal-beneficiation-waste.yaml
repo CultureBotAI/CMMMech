@@ -363,16 +363,16 @@ causal_graphs:
     target: tth_hydrolase
     predicate: supplies_substrate_for
     relationship: oxidation of sulfide to sulfur/polythionate intermediates
-    description: Sqr sulfide-quinone reductases (AFE_1792; sqr AFE_0267) oxidizes reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by Tth tetrathionate hydrolases (tth AFE_0029; DN052_12875).
+    description: Sqr sulfide-quinone reductases (AFE_1792; sqr AFE_0267) oxidize reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by Tth tetrathionate hydrolases (tth AFE_0029; DN052_12875).
     evidence:
     - source_ref: blayda2018
       supports: partial
-      explanation: Oxidation of 5.0 g/L sodium thiosulfate (Na2S2O3) and reduced sulfur intermediates in Acidithiobacillus ferrooxidans couples Sqr paralogs (AFE_1792, AFE_0267) and periplasmic tetrathionate hydrolase Tth (AFE_0029) in the three-stage cascade of Blayda et al. (2018); individual genes were not directly assayed.
+      explanation: Oxidation of 5.0 g/L sodium thiosulfate (Na2S2O3) and reduced sulfur intermediates in Acidithiobacillus ferrooxidans couples Sqr paralogs (AFE_1792, AFE_0267) and periplasmic tetrathionate hydrolase Tth homologs (AFE_0029, DN052_12875) in the three-stage cascade of Blayda et al. (2018); individual genes were not directly assayed.
   - source: tth_hydrolase
     target: thiosulfate_recommended_medium_and_ferrooxidans_preparation
     predicate: produces
     relationship: sulfuric acid proton and lixiviant generation
-    description: Tth tetrathionate hydrolases (tth AFE_0029; DN052_12875) disproportionates tetrathionate and polythionate intermediates into sulfate and H+, contributing to 194 L thiosulfate medium (5.0 g/L Na2S2O3, 1.0 g/L KH2PO4, 2.0 g/L (NH4)2SO4, 0.1 g/L KCl, 0.5 g/L MgSO4, 0.5 g/L NH4Cl) plus 6 L bacterial preparation (A. ferrooxidans Lv black 37 and Lv red 9; 223.6 +/- 3.79 x 10^8 CFU/cm3) at 30 +/- 2 C (final liquor pH 1.7-2.4).
+    description: Tth tetrathionate hydrolases (tth AFE_0029; DN052_12875) disproportionate tetrathionate and polythionate intermediates into sulfate and H+, contributing to 194 L thiosulfate medium (5.0 g/L Na2S2O3, 1.0 g/L KH2PO4, 2.0 g/L (NH4)2SO4, 0.1 g/L KCl, 0.5 g/L MgSO4, 0.5 g/L NH4Cl) plus 6 L bacterial preparation (A. ferrooxidans Lv black 37 and Lv red 9; 223.6 +/- 3.79 x 10^8 CFU/cm3) at 30 +/- 2 C (final liquor pH 1.7-2.4).
     evidence:
     - source_ref: blayda2018
       supports: partial
@@ -420,6 +420,10 @@ curation_history:
   curator: marcin
   action: edit
   summary: Enrich coal-beneficiation-waste tth_hydrolase protein_examples with second Acidithiobacillus ferrooxidans Tth ortholog (UniProtKB:A0A2W1K175)
+- timestamp: '2026-11-04T15:24:32Z'
+  curator: antigravity
+  action: EDIT
+  summary: 'Pluralize Sqr/Tth edge verbs and include A. ferrooxidans Tth DN052_12875 in sqr_reductase -> tth_hydrolase edge explanation (Issue #919, GRP-C7S5-002).'
 history_refs:
 - history/records/coal-beneficiation-waste/2026-10-12T023644Z-codex-ef668b.yaml
 - history/records/coal-beneficiation-waste/2026-10-12T024545Z-codex-a1785a.yaml
@@ -427,3 +431,4 @@ history_refs:
 - history/records/coal-beneficiation-waste/2026-10-12T035448Z-codex-16922a.yaml
 - history/records/coal-beneficiation-waste/2026-11-04T102016Z-marcin-44b213.yaml
 - history/records/coal-beneficiation-waste/2026-11-04T113741Z-marcin-b18f5d.yaml
+- history/records/coal-beneficiation-waste/2026-11-04T152432Z-antigravity-a9c3bd.yaml

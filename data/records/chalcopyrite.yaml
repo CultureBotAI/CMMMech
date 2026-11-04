@@ -343,16 +343,16 @@ causal_graphs:
     target: tth_hydrolase
     predicate: supplies_substrate_for
     relationship: oxidation of sulfide to sulfur/polythionate intermediates
-    description: Sqr sulfide-quinone oxidoreductases (A. caldus Atc_1705, Atc_1437; L. ferriphilum Y981_02650; S. thermosulfidooxidans SAMN00768000_0580) oxidizes reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by TetH tetrathionate hydrolases (A. caldus Atc_1595, tetH BAE30_05680).
+    description: Sqr sulfide-quinone oxidoreductases (A. caldus Atc_1705, Atc_1437; L. ferriphilum Y981_02650; S. thermosulfidooxidans SAMN00768000_0580) oxidize reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by TetH tetrathionate hydrolases (A. caldus Atc_1595, tetH BAE30_05680).
     evidence:
     - source_ref: christel_2018
       supports: partial
-      explanation: Reduced-sulfur oxidation in Acidithiobacillus caldus DSM 8584 and Leptospirillum ferriphilum DSM 14647 couples Sqr homologs (Atc_1705, Atc_1437, Y981_02650) and periplasmic TetH (Atc_1595) during 38 C bioleaching of Aitik chalcopyrite concentrate in Christel et al. (2018); individual genes were not directly mutated.
+      explanation: Reduced-sulfur oxidation in Acidithiobacillus caldus DSM 8584, Leptospirillum ferriphilum DSM 14647, and Sulfobacillus thermosulfidooxidans DSM 9293 couples Sqr homologs (Atc_1705, Atc_1437, Y981_02650, SAMN00768000_0580) and periplasmic TetH homologs (Atc_1595, tetH BAE30_05680) during 38 C bioleaching of Aitik chalcopyrite concentrate in Christel et al. (2018); individual genes were not directly mutated.
   - source: tth_hydrolase
     target: defined_acidophile_mac_medium_leach_system
     predicate: produces
     relationship: sulfuric acid proton and lixiviant generation
-    description: TetH tetrathionate hydrolases (A. caldus Atc_1595, tetH BAE30_05680) disproportionates tetrathionate and polythionate intermediates into sulfate and H+, contributing to Defined single, binary, and ternary cultures of A. caldus DSM 8584, S. thermosulfidooxidans DSM 9293, and L. ferriphilum DSM 14647 (10^7 cells/mL per species) in 100 mL MAC medium (initial pH 1.8, 38 +/- 2 C, 120 rpm).
+    description: TetH tetrathionate hydrolases (A. caldus Atc_1595, tetH BAE30_05680) disproportionate tetrathionate and polythionate intermediates into sulfate and H+, contributing to Defined single, binary, and ternary cultures of A. caldus DSM 8584, S. thermosulfidooxidans DSM 9293, and L. ferriphilum DSM 14647 (10^7 cells/mL per species) in 100 mL MAC medium (initial pH 1.8, 38 +/- 2 C, 120 rpm).
     evidence:
     - source_ref: christel_2018
       supports: partial
@@ -388,7 +388,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: Enrich chalcopyrite protein_examples with strain-matched Sulfobacillus thermosulfidooxidans DSM 9293 Sqr (UniProtKB:A0A1W1W805) and Acidithiobacillus caldus TetH (UniProtKB:A4ZV25)
+- timestamp: '2026-11-04T15:24:32Z'
+  curator: antigravity
+  action: EDIT
+  summary: 'Pluralize Sqr/TetH edge verbs and include S. thermosulfidooxidans DSM 9293 SAMN00768000_0580 and A. caldus tetH BAE30_05680 in sqr_reductase -> tth_hydrolase edge explanation (Issue #919, GRP-C7S5-002).'
 history_refs:
 - history/records/chalcopyrite/2026-10-11T045602Z-codex-d13bc9.yaml
 - history/records/chalcopyrite/2026-11-04T101915Z-marcin-d99b4b.yaml
 - history/records/chalcopyrite/2026-11-04T113741Z-marcin-0942cf.yaml
+- history/records/chalcopyrite/2026-11-04T152432Z-antigravity-87ae01.yaml
