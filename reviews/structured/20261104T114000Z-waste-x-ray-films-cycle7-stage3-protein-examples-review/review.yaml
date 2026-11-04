@@ -1,0 +1,205 @@
+schema_version: 1.0.0
+review_id: 20261104T114000Z-waste-x-ray-films-cycle7-stage3-protein-examples-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 7 Stage 3 protein-examples review of Waste X-ray films (cmmmech:waste-x-ray-films)
+started_at: '2026-11-04T11:37:00Z'
+finished_at: '2026-11-04T11:40:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle7-stage3-protein-examples-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 7 Stage 3 ProteinExample and causal_graphs curation in data/records/waste-x-ray-films.yaml
+    (SHA-256 3242ca80051b33f22675a7473e171b25570c1596f03526b2c3b5a7a05971c454) against
+    live UniProtKB REST API metadata, NCBI Taxonomy, and cited primary source(s) shankar2010.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 8bf82c8dfa25a35f12b60617b86751bc3ce7df71
+  state: working_tree
+  inputs:
+  - path: data/records/waste-x-ray-films.yaml
+    sha256: 3242ca80051b33f22675a7473e171b25570c1596f03526b2c3b5a7a05971c454
+    role: target
+  - path: history/records/waste-x-ray-films/2026-11-04T113920Z-marcin-598caa.yaml
+    sha256: 068a6caa55a1ed432db28a57a8a10990a2da0cd622ad1ff097522d47339eec99
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:waste-x-ray-films
+  path: data/records/waste-x-ray-films.yaml
+  label: Waste X-ray films
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/waste-x-ray-films.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/waste-x-ray-films/2026-11-04T113920Z-marcin-598caa.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 7 Stage 3 protein-examples review of data/records/waste-x-ray-films.yaml
+    (SHA-256 3242ca80051b33f22675a7473e171b25570c1596f03526b2c3b5a7a05971c454) and
+    its canonical EDIT history sidecar (history/records/waste-x-ray-films/2026-11-04T113920Z-marcin-598caa.yaml)
+    verifying UniProtKB accession/metadata grounding, consortium organism coverage,
+    causal-graph node/edge parity, and primary-source evidence fidelity across causal_graph
+    ''fungal_supernatant_emulsion_stripping_graph'' (mechanism_ref: fungal_supernatant_emulsion_stripping,
+    3 nodes / 2 edges; conidiobolus_alkaline_protease_supernatant: [UniProtKB:A0A137NYV2
+    (A0A137NYV2_CONC2, A0A137NYV2_CONC2, UP000070444), UniProtKB:A0A137NYS1 (A0A137NYS1_CONC2,
+    A0A137NYS1_CONC2, UP000070444)]).'
+  selection: Cycle 7 Stage 3 protein_examples curation for cmmmech:waste-x-ray-films
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:waste-x-ray-films
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/waste-x-ray-films.yaml
+  locator: Working-tree record data/records/waste-x-ray-films.yaml (causal_graphs
+    and mechanisms[].protein_examples)
+  accessed_at: '2026-11-04T11:39:30Z'
+  support: supports
+  summary: 'Curated data/records/waste-x-ray-films.yaml (SHA-256 3242ca80051b33f22675a7473e171b25570c1596f03526b2c3b5a7a05971c454)
+    in Cycle 7 Stage 3 (protein_examples) across causal_graph ''fungal_supernatant_emulsion_stripping_graph''
+    (mechanism_ref: fungal_supernatant_emulsion_stripping, 3 nodes / 2 edges; conidiobolus_alkaline_protease_supernatant:
+    [UniProtKB:A0A137NYV2 (A0A137NYV2_CONC2, A0A137NYV2_CONC2, UP000070444), UniProtKB:A0A137NYS1
+    (A0A137NYS1_CONC2, A0A137NYS1_CONC2, UP000070444)]), maintaining 100% parity between
+    mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and
+    preserving source-faithful support levels and caveats from primary source(s) shankar2010.'
+  snapshot_sha256: 3242ca80051b33f22675a7473e171b25570c1596f03526b2c3b5a7a05971c454
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://nepjol.info/index.php/KUSET/article/download/3311/2851
+  locator: 'shankar2010:   (https://nepjol.info/index.php/KUSET/article/download/3311/2851)'
+  accessed_at: '2026-11-04T11:39:30Z'
+  support: supports
+  summary: 'Live-verified UniProtKB grounding across UniProtKB:A0A137NYV2 (A0A137NYV2_CONC2,
+    Subtilisin-like protease, TREMBL, NCBITaxon:796925 Conidiobolus coronatus NRRL
+    28638, UP000070444); UniProtKB:A0A137NYS1 (A0A137NYS1_CONC2, Subtilisin-like protease,
+    TREMBL, NCBITaxon:796925 Conidiobolus coronatus NRRL 28638, UP000070444). Primary
+    mechanism source(s) (shankar2010:   (https://nepjol.info/index.php/KUSET/article/download/3311/2851))
+    report culture-level activity without single-gene knockouts or isolated isoform
+    sequencing; supports: partial is strictly preserved on all enzyme-level edges
+    and ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/waste-x-ray-films/2026-11-04T113920Z-marcin-598caa.yaml
+  locator: Canonical EDIT history sidecar history/records/waste-x-ray-films/2026-11-04T113920Z-marcin-598caa.yaml
+  accessed_at: '2026-11-04T11:39:30Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/waste-x-ray-films/2026-11-04T113920Z-marcin-598caa.yaml
+    (SHA-256 068a6caa55a1ed432db28a57a8a10990a2da0cd622ad1ff097522d47339eec99): Enrich
+    waste-x-ray-films conidiobolus_alkaline_protease_supernatant protein_examples
+    with second Conidiobolus coronatus NRRL 28638 subtilisin-like protease paralog
+    (UniProtKB:A0A137NYS1) — Added Conidiobolus coronatus NRRL 28638 subtilisin-like
+    protease paralog (UniProtKB:A0A137NYS1; CONCODRAFT_9891) to conidiobolus_alkaline_protease_supernatant
+    in fungal_supernatant_emulsion_stripping_graph and synchronized mechanisms[0].protein_examples.'
+  snapshot_sha256: 068a6caa55a1ed432db28a57a8a10990a2da0cd622ad1ff097522d47339eec99
+- evidence_id: validation
+  kind: validation
+  reference: data/records/waste-x-ray-films.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-04T11:39:30Z'
+  support: supports
+  summary: data/records/waste-x-ray-films.yaml and history/records/waste-x-ray-films/2026-11-04T113920Z-marcin-598caa.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: 3242ca80051b33f22675a7473e171b25570c1596f03526b2c3b5a7a05971c454
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 678 record(s); 0 failed.
+  target_ids:
+  - cmmmech:waste-x-ray-films
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:waste-x-ray-films
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: protein_examples_and_causal_graph_grounding
+  area: graph
+  topic: 'Verification of live UniProtKB ProteinExample grounding, consortium organism
+    representation, and node/mechanism parity across causal_graph ''fungal_supernatant_emulsion_stripping_graph''
+    (conidiobolus_alkaline_protease_supernatant: [UniProtKB:A0A137NYV2 (A0A137NYV2_CONC2,
+    A0A137NYV2_CONC2, UP000070444), UniProtKB:A0A137NYS1 (A0A137NYS1_CONC2, A0A137NYS1_CONC2,
+    UP000070444)])'
+  outcome: supported
+  summary: 'Curated data/records/waste-x-ray-films.yaml (SHA-256 3242ca80051b33f22675a7473e171b25570c1596f03526b2c3b5a7a05971c454)
+    in Cycle 7 Stage 3 (protein_examples) across causal_graph ''fungal_supernatant_emulsion_stripping_graph''
+    (mechanism_ref: fungal_supernatant_emulsion_stripping, 3 nodes / 2 edges; conidiobolus_alkaline_protease_supernatant:
+    [UniProtKB:A0A137NYV2 (A0A137NYV2_CONC2, A0A137NYV2_CONC2, UP000070444), UniProtKB:A0A137NYS1
+    (A0A137NYS1_CONC2, A0A137NYS1_CONC2, UP000070444)]), maintaining 100% parity between
+    mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and
+    preserving source-faithful support levels and caveats from primary source(s) shankar2010.
+    Live-verified UniProtKB grounding across UniProtKB:A0A137NYV2 (A0A137NYV2_CONC2,
+    Subtilisin-like protease, TREMBL, NCBITaxon:796925 Conidiobolus coronatus NRRL
+    28638, UP000070444); UniProtKB:A0A137NYS1 (A0A137NYS1_CONC2, Subtilisin-like protease,
+    TREMBL, NCBITaxon:796925 Conidiobolus coronatus NRRL 28638, UP000070444).'
+  target_ids:
+  - cmmmech:waste-x-ray-films
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: 'data/records/waste-x-ray-films.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar history/records/waste-x-ray-films/2026-11-04T113920Z-marcin-598caa.yaml
+    (SHA-256 068a6caa55a1ed432db28a57a8a10990a2da0cd622ad1ff097522d47339eec99: Enrich
+    waste-x-ray-films conidiobolus_alkaline_protease_supernatant protein_examples
+    with second Conidiobolus coronatus NRRL 28638 subtilisin-like protease paralog
+    (UniProtKB:A0A137NYS1) — Added Conidiobolus coronatus NRRL 28638 subtilisin-like
+    protease paralog (UniProtKB:A0A137NYS1; CONCODRAFT_9891) to conidiobolus_alkaline_protease_supernatant
+    in fungal_supernatant_emulsion_stripping_graph and synchronized mechanisms[0].protein_examples.)
+    and passing all LinkML, protein_examples parity, and history validation gates.'
+  target_ids:
+  - cmmmech:waste-x-ray-films
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Waste X-ray films (cmmmech:waste-x-ray-films) passes Cycle 7 Stage 3 protein-examples
+  review (scientific_review: true) at SHA-256 3242ca80051b33f22675a7473e171b25570c1596f03526b2c3b5a7a05971c454:
+  Curated data/records/waste-x-ray-films.yaml (SHA-256 3242ca80051b33f22675a7473e171b25570c1596f03526b2c3b5a7a05971c454)
+  in Cycle 7 Stage 3 (protein_examples) across causal_graph ''fungal_supernatant_emulsion_stripping_graph''
+  (mechanism_ref: fungal_supernatant_emulsion_stripping, 3 nodes / 2 edges; conidiobolus_alkaline_protease_supernatant:
+  [UniProtKB:A0A137NYV2 (A0A137NYV2_CONC2, A0A137NYV2_CONC2, UP000070444), UniProtKB:A0A137NYS1
+  (A0A137NYS1_CONC2, A0A137NYS1_CONC2, UP000070444)]), maintaining 100% parity between
+  mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving
+  source-faithful support levels and caveats from primary source(s) shankar2010. Live-verified
+  UniProtKB grounding across UniProtKB:A0A137NYV2 (A0A137NYV2_CONC2, Subtilisin-like
+  protease, TREMBL, NCBITaxon:796925 Conidiobolus coronatus NRRL 28638, UP000070444);
+  UniProtKB:A0A137NYS1 (A0A137NYS1_CONC2, Subtilisin-like protease, TREMBL, NCBITaxon:796925
+  Conidiobolus coronatus NRRL 28638, UP000070444).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 7 Stage 3 (protein_examples) using scripts/curate_causal_graphs.py.
+related_reviews: []

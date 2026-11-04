@@ -82,6 +82,27 @@ mechanisms:
     - source_ref: johnson2020
       supports: partial
       explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for reduced-sulfur oxidation during 35 C bioreactor processing of Bou Azzer skutterudite concentrate in Johnson et al. (2020); individual genes were not mutated.
+  - uniprot_accession: UniProtKB:A0A1W1W805
+    entry_name: A0A1W1W805_SULTA
+    protein_name: Sulfide-quinone oxidoreductase
+    gene_symbol: SAMN00768000_0580
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:929705
+      label: Sulfobacillus thermosulfidooxidans DSM 9293
+    reference_proteome_id: UP000192660
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone oxidoreductase (SAMN00768000_0580; 432 aa) in Sulfobacillus thermosulfidooxidans DSM 9293 oxidizing reduced sulfur species coupled to quinone reduction during moderately thermophilic bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000192660 for sequenced type strain Sulfobacillus thermosulfidooxidans DSM 9293 (NCBITaxon:929705), representing Sulfobacillus thermosulfidooxidans (NCBITaxon:28034), identified alongside Acidithiobacillus thiooxidans by colony 16S rRNA sequencing as a dominant viable consortium member after 16-day bioreactor bioleaching of Bou Azzer skutterudite-dominated concentrate in Johnson et al. (2020).
+    evidence:
+    - source_ref: johnson2020
+      supports: partial
+      explanation: Representative Sulfobacillus thermosulfidooxidans DSM 9293 sulfide-quinone oxidoreductase (SAMN00768000_0580) for reduced-sulfur oxidation by the S. thermosulfidooxidans consortium member during 35 C bioreactor processing of Bou Azzer skutterudite concentrate in Johnson et al. (2020); individual genes were not mutated.
   - uniprot_accession: UniProtKB:A0A5P9XPU3
     entry_name: A0A5P9XPU3_ACITH
     protein_name: Tetrathionate hydrolase
@@ -148,15 +169,15 @@ mechanisms:
 causal_graphs:
 - id: acidophile_skutterudite_concentrate_bioleaching_graph
   name: Acidophile consortium bioleaching of Bou Azzer skutterudite-dominated cobalt arsenide concentrate and concurrent scorodite biomineralization
-  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr/Sqor (GCD22_02301, GCD22_03207) and Tth (GCD22_14205, GCD22_02315) alongside Sulfobacillus thermosulfidooxidans iron/sulfur oxidation in an acidic 35 C bioreactor (0.5% w/v S0, 5 mM Fe2+, pH 1.8->1.5) and pyrite-conditioned flask to bulk cobalt solubilization (49% over 16 days) and concurrent secondary scorodite precipitation from Bou Azzer skutterudite-dominated concentrate in Johnson et al. (2020).
+  description: Causal pathway linking representative Acidithiobacillus thiooxidans reduced-sulfur oxidation enzymes Sqr/Sqor (GCD22_02301, GCD22_03207) and Tth (GCD22_14205, GCD22_02315) and Sulfobacillus thermosulfidooxidans Sqr (SAMN00768000_0580) alongside consortium iron oxidation in an acidic 35 C bioreactor (0.5% w/v S0, 5 mM Fe2+, pH 1.8->1.5) and pyrite-conditioned flask to bulk cobalt solubilization (49% over 16 days) and concurrent secondary scorodite precipitation from Bou Azzer skutterudite-dominated concentrate in Johnson et al. (2020).
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: acidophile-associated-leaching-of-skutterudite-bearing-concentrate
   nodes:
   - id: sqr_reductase
-    label: Sqr / Sqor sulfide-quinone oxidoreductases (sqr GCD22_02301; sqor GCD22_03207)
+    label: Sqr / Sqor sulfide-quinone oxidoreductases (A. thiooxidans sqr GCD22_02301, sqor GCD22_03207; S. thermosulfidooxidans SAMN00768000_0580)
     node_type: GENE_OR_PROTEIN
     gene_symbol: sqr
-    description: Membrane-bound sulfide-quinone oxidoreductase paralogs (sqr / GCD22_02301 and sqor / GCD22_03207) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to elemental sulfur and polythionate intermediates.
+    description: Membrane-bound sulfide-quinone oxidoreductase homologs in Acidithiobacillus thiooxidans ATCC 19377 (sqr / GCD22_02301 and sqor / GCD22_03207) and Sulfobacillus thermosulfidooxidans DSM 9293 (SAMN00768000_0580) oxidizing reduced sulfur species to elemental sulfur and polythionate intermediates.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A0A543Q349
@@ -201,6 +222,27 @@ causal_graphs:
       - source_ref: johnson2020
         supports: partial
         explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for reduced-sulfur oxidation during 35 C bioreactor processing of Bou Azzer skutterudite concentrate in Johnson et al. (2020); individual genes were not mutated.
+    - uniprot_accession: UniProtKB:A0A1W1W805
+      entry_name: A0A1W1W805_SULTA
+      protein_name: Sulfide-quinone oxidoreductase
+      gene_symbol: SAMN00768000_0580
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:929705
+        label: Sulfobacillus thermosulfidooxidans DSM 9293
+      reference_proteome_id: UP000192660
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone oxidoreductase (SAMN00768000_0580; 432 aa) in Sulfobacillus thermosulfidooxidans DSM 9293 oxidizing reduced sulfur species coupled to quinone reduction during moderately thermophilic bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000192660 for sequenced type strain Sulfobacillus thermosulfidooxidans DSM 9293 (NCBITaxon:929705), representing Sulfobacillus thermosulfidooxidans (NCBITaxon:28034), identified alongside Acidithiobacillus thiooxidans by colony 16S rRNA sequencing as a dominant viable consortium member after 16-day bioreactor bioleaching of Bou Azzer skutterudite-dominated concentrate in Johnson et al. (2020).
+      evidence:
+      - source_ref: johnson2020
+        supports: partial
+        explanation: Representative Sulfobacillus thermosulfidooxidans DSM 9293 sulfide-quinone oxidoreductase (SAMN00768000_0580) for reduced-sulfur oxidation by the S. thermosulfidooxidans consortium member during 35 C bioreactor processing of Bou Azzer skutterudite concentrate in Johnson et al. (2020); individual genes were not mutated.
   - id: tth_hydrolase
     label: Tth tetrathionate hydrolases (tth GCD22_14205; tth GCD22_02315)
     node_type: GENE_OR_PROTEIN
@@ -272,7 +314,7 @@ causal_graphs:
     target: tth_hydrolase
     predicate: supplies_substrate_for
     relationship: oxidation of sulfide to sulfur/polythionate intermediates
-    description: Sqr / Sqor sulfide-quinone oxidoreductases (sqr GCD22_02301; sqor GCD22_03207) oxidizes reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by Tth tetrathionate hydrolases (tth GCD22_14205; tth GCD22_02315).
+    description: Sqr / Sqor sulfide-quinone oxidoreductases (A. thiooxidans sqr GCD22_02301, sqor GCD22_03207; S. thermosulfidooxidans SAMN00768000_0580) oxidizes reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by Tth tetrathionate hydrolases (tth GCD22_14205; tth GCD22_02315).
     evidence:
     - source_ref: johnson2020
       supports: partial
@@ -313,6 +355,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Add acidophile_skutterudite_concentrate_bioleaching_graph causal graph and ground acidophile-associated-leaching-of-skutterudite-bearing-concentrate to Acidithiobacillus thiooxidans ATCC 19377 reference-proteome UniProtKB Sqr/Sqor/Tth paralogs (UniProtKB:A0A543Q349, UniProtKB:A0A5P9XUB1, UniProtKB:A0A5P9XPU3, UniProtKB:A0A5P9XS05)
+- timestamp: '2026-11-04T11:37:42Z'
+  curator: marcin
+  action: edit
+  summary: Enrich skutterudite sqr_reductase protein_examples with Sulfobacillus thermosulfidooxidans DSM 9293 Sqr (UniProtKB:A0A1W1W805)
 history_refs:
 - history/records/skutterudite/2026-10-15T083258Z-codex-b2814f.yaml
 - history/records/skutterudite/2026-11-04T102015Z-marcin-a368a0.yaml
+- history/records/skutterudite/2026-11-04T113742Z-marcin-2d9ab0.yaml

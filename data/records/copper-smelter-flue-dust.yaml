@@ -121,6 +121,29 @@ mechanisms:
     - source_ref: bakhtiari2008
       supports: partial
       explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for reduced-sulfur oxidation during shake-flask and two-stage stirred-tank bioleaching of acid-pretreated Sarcheshmeh copper-smelter flue dust in Bakhtiari et al. (2008); individual genes were not mutated or directly assayed.
+  - uniprot_accession: UniProtKB:I0IN58
+    entry_name: I0IN58_LEPFC
+    protein_name: Sulfide-quinone reductase
+    gene_symbol: LFE_1004
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:1162668
+      label: Leptospirillum ferrooxidans C2-3
+    reference_proteome_id: UP000007382
+    ec_numbers:
+    - EC:1.8.5.4
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; LFE_1004; 391 aa) in Leptospirillum ferrooxidans C2-3 annotated in the reference proteome of this mesophilic acidophilic bioleaching consortium member.
+    annotation_note: Grounded to reference-proteome entry UP000007382 for sequenced strain Leptospirillum ferrooxidans C2-3 (NCBITaxon:1162668), representing the Sarcheshmeh acid-mine-drainage Leptospirillum ferrooxidans isolate (NCBITaxon:180) in the three-species adapted mesophilic consortium (with A. ferrooxidans and A. thiooxidans) in Bakhtiari et al. (2008).
+    evidence:
+    - source_ref: bakhtiari2008
+      supports: partial
+      explanation: Representative Leptospirillum ferrooxidans C2-3 sulfide-quinone reductase homolog (LFE_1004) for the L. ferrooxidans member of the adapted Sarcheshmeh mesophilic consortium during shake-flask and two-stage stirred-tank bioleaching of acid-pretreated copper-smelter flue dust in Bakhtiari et al. (2008); individual genes were not mutated or directly assayed.
   - uniprot_accession: UniProtKB:B7J3C9
     entry_name: TTH_ACIF2
     protein_name: Tetrathionate hydrolase
@@ -202,15 +225,15 @@ mechanisms:
 causal_graphs:
 - id: adapted_acidophile_dust_bioleaching_graph
   name: Adapted mesophilic acidophile consortium bioleaching of acid-pretreated Sarcheshmeh copper-smelter flue dust
-  description: Causal pathway linking representative Acidithiobacillus ferrooxidans and Acidithiobacillus thiooxidans sulfide-quinone oxidoreductase (Sqr/Sqor) and tetrathionate hydrolase (Tth) homologs (alongside Leptospirillum ferrooxidans iron oxidation and supplemental H2SO4) to copper extraction from H2SO4-preleached Sarcheshmeh smelter flue dust in shake flasks and two-stage continuous stirred-tank reactors in Bakhtiari et al. (2008).
+  description: Causal pathway linking representative Acidithiobacillus ferrooxidans, Acidithiobacillus thiooxidans, and Leptospirillum ferrooxidans sulfide-quinone oxidoreductase (Sqr/Sqor) and tetrathionate hydrolase (Tth) homologs (alongside L. ferrooxidans and A. ferrooxidans iron oxidation and supplemental H2SO4) to copper extraction from H2SO4-preleached Sarcheshmeh smelter flue dust in shake flasks and two-stage continuous stirred-tank reactors in Bakhtiari et al. (2008).
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: adapted_acidophile_dust_bioleaching
   nodes:
   - id: sqr_reductase
-    label: Sqr / Sqor sulfide-quinone oxidoreductases (A. ferrooxidans AFE_1792, sqr AFE_0267; A. thiooxidans sqr GCD22_02301, sqor GCD22_03207)
+    label: Sqr / Sqor sulfide-quinone oxidoreductases (A. ferrooxidans AFE_1792, sqr AFE_0267; A. thiooxidans sqr GCD22_02301, sqor GCD22_03207; L. ferrooxidans LFE_1004)
     node_type: GENE_OR_PROTEIN
-    gene_symbol: sqr
-    description: Membrane-bound sulfide-quinone oxidoreductase homologs in Acidithiobacillus ferrooxidans ATCC 23270 (AFE_1792 and sqr / AFE_0267) and Acidithiobacillus thiooxidans ATCC 19377 (sqr / GCD22_02301 and sqor / GCD22_03207) oxidizing reduced sulfur species to elemental sulfur and polythionates.
+    gene_symbol: AFE_1792
+    description: Membrane-bound sulfide-quinone oxidoreductase homologs in Acidithiobacillus ferrooxidans ATCC 23270 (AFE_1792 and sqr / AFE_0267), Acidithiobacillus thiooxidans ATCC 19377 (sqr / GCD22_02301 and sqor / GCD22_03207), and Leptospirillum ferrooxidans C2-3 (LFE_1004) oxidizing reduced sulfur species to elemental sulfur and polythionates.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:B7JBP8
@@ -299,6 +322,29 @@ causal_graphs:
       - source_ref: bakhtiari2008
         supports: partial
         explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for reduced-sulfur oxidation during shake-flask and two-stage stirred-tank bioleaching of acid-pretreated Sarcheshmeh copper-smelter flue dust in Bakhtiari et al. (2008); individual genes were not mutated or directly assayed.
+    - uniprot_accession: UniProtKB:I0IN58
+      entry_name: I0IN58_LEPFC
+      protein_name: Sulfide-quinone reductase
+      gene_symbol: LFE_1004
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:1162668
+        label: Leptospirillum ferrooxidans C2-3
+      reference_proteome_id: UP000007382
+      ec_numbers:
+      - EC:1.8.5.4
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (EC 1.8.5.4; LFE_1004; 391 aa) in Leptospirillum ferrooxidans C2-3 annotated in the reference proteome of this mesophilic acidophilic bioleaching consortium member.
+      annotation_note: Grounded to reference-proteome entry UP000007382 for sequenced strain Leptospirillum ferrooxidans C2-3 (NCBITaxon:1162668), representing the Sarcheshmeh acid-mine-drainage Leptospirillum ferrooxidans isolate (NCBITaxon:180) in the three-species adapted mesophilic consortium (with A. ferrooxidans and A. thiooxidans) in Bakhtiari et al. (2008).
+      evidence:
+      - source_ref: bakhtiari2008
+        supports: partial
+        explanation: Representative Leptospirillum ferrooxidans C2-3 sulfide-quinone reductase homolog (LFE_1004) for the L. ferrooxidans member of the adapted Sarcheshmeh mesophilic consortium during shake-flask and two-stage stirred-tank bioleaching of acid-pretreated copper-smelter flue dust in Bakhtiari et al. (2008); individual genes were not mutated or directly assayed.
   - id: tth_hydrolase
     label: Tth tetrathionate hydrolases (A. ferrooxidans tth AFE_0029; A. thiooxidans tth GCD22_14205, tth GCD22_02315)
     node_type: GENE_OR_PROTEIN
@@ -394,7 +440,7 @@ causal_graphs:
     target: tth_hydrolase
     predicate: supplies_substrate_for
     relationship: oxidation of sulfide to sulfur/polythionate intermediates
-    description: Sqr / Sqor sulfide-quinone oxidoreductases (A. ferrooxidans AFE_1792, sqr AFE_0267; A. thiooxidans sqr GCD22_02301, sqor GCD22_03207) oxidizes reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by Tth tetrathionate hydrolases (A. ferrooxidans tth AFE_0029; A. thiooxidans tth GCD22_14205, tth GCD22_02315).
+    description: Sqr / Sqor sulfide-quinone oxidoreductases (A. ferrooxidans AFE_1792, sqr AFE_0267; A. thiooxidans sqr GCD22_02301, sqor GCD22_03207; L. ferrooxidans LFE_1004) oxidizes reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by Tth tetrathionate hydrolases (A. ferrooxidans tth AFE_0029; A. thiooxidans tth GCD22_14205, tth GCD22_02315).
     evidence:
     - source_ref: bakhtiari2008
       supports: partial
@@ -435,6 +481,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Add adapted_acidophile_dust_bioleaching_graph causal graph and ground adapted_acidophile_dust_bioleaching to Acidithiobacillus ferrooxidans and Acidithiobacillus thiooxidans reference-proteome UniProtKB Sqr/Sqor/Tth homologs (UniProtKB:B7JBP8, UniProtKB:B7J411, UniProtKB:A0A543Q349, UniProtKB:A0A5P9XUB1, UniProtKB:B7J3C9, UniProtKB:A0A5P9XPU3, UniProtKB:A0A5P9XS05)
+- timestamp: '2026-11-04T11:37:41Z'
+  curator: marcin
+  action: edit
+  summary: Enrich copper-smelter-flue-dust sqr_reductase protein_examples with Leptospirillum ferrooxidans C2-3 Sqr (UniProtKB:I0IN58) and align node.gene_symbol to AFE_1792
 history_refs:
 - history/records/copper-smelter-flue-dust/2026-10-12T145039Z-codex-2fa9ea.yaml
 - history/records/copper-smelter-flue-dust/2026-11-04T101915Z-marcin-e34f00.yaml
+- history/records/copper-smelter-flue-dust/2026-11-04T113741Z-marcin-7fadf7.yaml

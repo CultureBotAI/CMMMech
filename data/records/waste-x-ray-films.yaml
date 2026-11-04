@@ -59,6 +59,32 @@ mechanisms:
     - source_ref: shankar2010
       supports: partial
       explanation: Shankar et al. (2010) used crude cell-free alkaline protease supernatant from Conidiobolus coronatus ATCC PTA-4132 to strip gelatin-silver emulsion without sequencing or purifying the specific subtilisin-like protease isoform.
+  - uniprot_accession: UniProtKB:A0A137NYS1
+    entry_name: A0A137NYS1_CONC2
+    protein_name: Subtilisin-like protease
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:796925
+      label: Conidiobolus coronatus NRRL 28638
+    reference_proteome_id: UP000070444
+    interpro_ids:
+    - InterPro:IPR034193
+    - InterPro:IPR000209
+    - InterPro:IPR036852
+    - InterPro:IPR023827
+    - InterPro:IPR022398
+    - InterPro:IPR023828
+    - InterPro:IPR050131
+    - InterPro:IPR015500
+    - InterPro:IPR037045
+    pfam_ids:
+    - Pfam:PF00082
+    functional_role: Secreted subtilisin-like serine alkaline protease paralog (peptidase S8 family; locus CONCODRAFT_9891; 420 aa) in Conidiobolus coronatus capable of hydrolyzing extracellular protein/gelatin substrates.
+    annotation_note: Grounded to tandem reference-proteome subtilisin-like protease paralog in UP000070444 (UniProtKB:A0A137NYS1; locus CONCODRAFT_9891; 420 aa; UniProt partial EC 3.4.-.- omitted per schema 3-level numeric EC pattern) for Conidiobolus coronatus NRRL 28638 (NCBITaxon:796925), alongside CONCODRAFT_77703 (UniProtKB:A0A137NYV2), representing the extracellular alkaline protease activity in crude supernatant of experimental strain Conidiobolus coronatus ATCC PTA-4132 (NCBITaxon:34488).
+    evidence:
+    - source_ref: shankar2010
+      supports: partial
+      explanation: Shankar et al. (2010) used crude cell-free alkaline protease supernatant from Conidiobolus coronatus ATCC PTA-4132 to strip gelatin-silver emulsion without sequencing or purifying the specific subtilisin-like protease isoform; CONCODRAFT_9891 is a second secreted peptidase S8 family paralog in the C. coronatus NRRL 28638 reference proteome.
   evidence:
   - source_ref: shankar2010
     supports: support
@@ -125,7 +151,7 @@ causal_graphs:
   - id: conidiobolus_alkaline_protease_supernatant
     label: Conidiobolus coronatus extracellular subtilisin-like alkaline protease
     node_type: GENE_OR_PROTEIN
-    description: Secreted subtilisin-like alkaline protease in cell-free MGYP-soybean-meal culture supernatant of Conidiobolus coronatus ATCC PTA-4132 (Shankar et al. 2010), grounded to reference-proteome Conidiobolus coronatus NRRL 28638 subtilisin-like protease (UniProtKB:A0A137NYV2; CONCODRAFT_77703).
+    description: Secreted subtilisin-like alkaline protease in cell-free MGYP-soybean-meal culture supernatant of Conidiobolus coronatus ATCC PTA-4132 (Shankar et al. 2010), grounded to reference-proteome Conidiobolus coronatus NRRL 28638 subtilisin-like protease paralogs (UniProtKB:A0A137NYV2 / CONCODRAFT_77703 and UniProtKB:A0A137NYS1 / CONCODRAFT_9891).
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A0A137NYV2
@@ -153,6 +179,32 @@ causal_graphs:
       - source_ref: shankar2010
         supports: partial
         explanation: Shankar et al. (2010) used crude cell-free alkaline protease supernatant from Conidiobolus coronatus ATCC PTA-4132 to strip gelatin-silver emulsion without sequencing or purifying the specific subtilisin-like protease isoform.
+    - uniprot_accession: UniProtKB:A0A137NYS1
+      entry_name: A0A137NYS1_CONC2
+      protein_name: Subtilisin-like protease
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:796925
+        label: Conidiobolus coronatus NRRL 28638
+      reference_proteome_id: UP000070444
+      interpro_ids:
+      - InterPro:IPR034193
+      - InterPro:IPR000209
+      - InterPro:IPR036852
+      - InterPro:IPR023827
+      - InterPro:IPR022398
+      - InterPro:IPR023828
+      - InterPro:IPR050131
+      - InterPro:IPR015500
+      - InterPro:IPR037045
+      pfam_ids:
+      - Pfam:PF00082
+      functional_role: Secreted subtilisin-like serine alkaline protease paralog (peptidase S8 family; locus CONCODRAFT_9891; 420 aa) in Conidiobolus coronatus capable of hydrolyzing extracellular protein/gelatin substrates.
+      annotation_note: Grounded to tandem reference-proteome subtilisin-like protease paralog in UP000070444 (UniProtKB:A0A137NYS1; locus CONCODRAFT_9891; 420 aa; UniProt partial EC 3.4.-.- omitted per schema 3-level numeric EC pattern) for Conidiobolus coronatus NRRL 28638 (NCBITaxon:796925), alongside CONCODRAFT_77703 (UniProtKB:A0A137NYV2), representing the extracellular alkaline protease activity in crude supernatant of experimental strain Conidiobolus coronatus ATCC PTA-4132 (NCBITaxon:34488).
+      evidence:
+      - source_ref: shankar2010
+        supports: partial
+        explanation: Shankar et al. (2010) used crude cell-free alkaline protease supernatant from Conidiobolus coronatus ATCC PTA-4132 to strip gelatin-silver emulsion without sequencing or purifying the specific subtilisin-like protease isoform; CONCODRAFT_9891 is a second secreted peptidase S8 family paralog in the C. coronatus NRRL 28638 reference proteome.
   - id: used_xray_film_gelatin_silver_layer
     label: Used medical X-ray film gelatin-silver emulsion layer (2 x 2 cm pieces)
     node_type: MATERIAL_OR_PHASE
@@ -281,8 +333,13 @@ curation_history:
   curator: claude
   action: edit
   summary: 'Upgraded protease-to-gelatin causal graph edges in waste-x-ray-films.yaml from acts_on to hydrolyzes (Issue #807, PR #811).'
+- timestamp: '2026-11-04T11:39:20Z'
+  curator: marcin
+  action: edit
+  summary: Enrich waste-x-ray-films conidiobolus_alkaline_protease_supernatant protein_examples with second Conidiobolus coronatus NRRL 28638 subtilisin-like protease paralog (UniProtKB:A0A137NYS1)
 history_refs:
 - history/records/waste-x-ray-films/2026-10-14T194146Z-codex-1b7408.yaml
 - history/records/waste-x-ray-films/2026-10-21T184653Z-claude-66623a.yaml
 - history/records/waste-x-ray-films/2026-10-22T013811Z-claude-001312.yaml
 - history/records/waste-x-ray-films/2026-10-22T093020Z-claude-a096ee.yaml
+- history/records/waste-x-ray-films/2026-11-04T113920Z-marcin-598caa.yaml
