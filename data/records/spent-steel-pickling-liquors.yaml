@@ -1,158 +1,296 @@
 id: cmmmech:spent-steel-pickling-liquors
 name: Spent steel-pickling liquors
 material_kind: secondary_resource
-description: >-
-  Acidic metal-bearing process liquids remaining after removal of oxide scale
-  from steel surfaces. The accepted experiment uses hydrochloric-acid liquor
-  collected from a steel-processing plant's pickling bath, subsequently filtered
-  and diluted with laboratory 9K medium. This liquid feed is distinct from
-  steelmaking slag, mill scale, electroplating-bath effluents, treatment sludge
-  and synthetic iron-salt solutions. It is represented as one process-resource
-  identity, without separate owners for acid recipes or facilities. Evidence
-  here concerns culture-associated iron redox transformation and sediment
-  formation in the hydrochloric-liquor arm; it does not establish performance
-  for every steel-pickling liquor, isolated metal recovery or criticality.
+description: Acidic metal-bearing process liquids remaining after removal of oxide scale from steel surfaces. The accepted experiment uses hydrochloric-acid liquor collected from a steel-processing plant's pickling bath, subsequently filtered and diluted with laboratory 9K medium. This liquid feed is distinct from steelmaking slag, mill scale, electroplating-bath effluents, treatment sludge and synthetic iron-salt solutions. It is represented as one process-resource identity, without separate owners for acid recipes or facilities. Evidence here concerns culture-associated iron redox transformation and sediment formation in the hydrochloric-liquor arm; it does not establish performance for every steel-pickling liquor, isolated metal recovery or criticality.
 sources:
-  - id: qin2016
-    title: >-
-      Qin, Xie, Guo, Shan, Li, Xue, Xiao and Ma, Ferrous bio-oxidation by
-      Acidithiobacillus ferrooxidans in hydrochloric acid pickling waste liquor.
-      Desalination and Water Treatment 57(4):1836-1843 (2016; online 6 December
-      2014), DOI 10.1080/19443994.2014.981221. Complete official eight-page
-      original, sections 2-4, Table 1 and Figures 1-8 inspected. No separate
-      supplement is announced in the inspected original.
-    url: https://doi.org/10.1080/19443994.2014.981221
-    accessed_on: '2026-10-15'
-  - id: genbankkf378735
-    title: >-
-      NCBI GenBank KF378735.1, Acidithiobacillus ferrooxidans strain XJF-8
-      partial 16S ribosomal RNA gene, 1440 bases. Current source qualifiers
-      specify coal mine drainage and China: Shanxi, conflicting with the
-      paper's Tianjin factory-outlet isolation account. This is the accession
-      cited by the paper, not independently confirmed identity of its culture.
-    url: https://www.ncbi.nlm.nih.gov/nuccore/KF378735.1
-    accessed_on: '2026-10-15'
-  - id: ncbi920
-    title: >-
-      NCBI Taxonomy 920, Acidithiobacillus ferrooxidans, species rank;
-      current authoritative taxonomy XML. Species nomenclature does not
-      resolve the conflicting experimental-isolate provenance.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920
-    accessed_on: '2026-10-15'
+- id: qin2016
+  title: Qin, Xie, Guo, Shan, Li, Xue, Xiao and Ma, Ferrous bio-oxidation by Acidithiobacillus ferrooxidans in hydrochloric acid pickling waste liquor. Desalination and Water Treatment 57(4):1836-1843 (2016; online 6 December 2014), DOI 10.1080/19443994.2014.981221. Complete official eight-page original, sections 2-4, Table 1 and Figures 1-8 inspected. No separate supplement is announced in the inspected original.
+  url: https://doi.org/10.1080/19443994.2014.981221
+  accessed_on: '2026-10-15'
+- id: genbankkf378735
+  title: 'NCBI GenBank KF378735.1, Acidithiobacillus ferrooxidans strain XJF-8 partial 16S ribosomal RNA gene, 1440 bases. Current source qualifiers specify coal mine drainage and China: Shanxi, conflicting with the paper''s Tianjin factory-outlet isolation account. This is the accession cited by the paper, not independently confirmed identity of its culture.'
+  url: https://www.ncbi.nlm.nih.gov/nuccore/KF378735.1
+  accessed_on: '2026-10-15'
+- id: ncbi920
+  title: NCBI Taxonomy 920, Acidithiobacillus ferrooxidans, species rank; current authoritative taxonomy XML. Species nomenclature does not resolve the conflicting experimental-isolate provenance.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920
+  accessed_on: '2026-10-15'
 mechanisms:
-  - id: culture_associated_ferrous_oxidation
-    name: Conditional culture-associated Fe(II) oxidation in diluted pickling liquor
-    process: redox_transformation
-    microbial: true
-    description: >-
-      A culture assigned by the authors to Acidithiobacillus ferrooxidans was
-      associated with declining dissolved Fe(II) in filtered hydrochloric
-      steel-pickling liquor mixed with 9K medium. Iron oxidation and formation
-      of iron-sulfate-containing sediments are the source interpretation.
-      The measured percentage endpoint is Fe(II) oxidation, not recovered
-      iron yield, and reagent-derived iron, sulfate and ammonium cannot be
-      assigned exclusively to the waste feed. The assay does not establish
-      a particular molecular pathway or biological necessity for precipitation.
-    context: >-
-      Sections 2.1-2.3, printed p. 1837, describe serial cultivation and colony
-      isolation from sediment near a polymerization ferric-chloride factory
-      outlet in Tianjin. The reported isolation culture used 50 mL in 250 mL
-      Erlenmeyer flasks, 30 degrees C and 100 rpm; these are explicitly culture
-      conditions, not separately established working volume or temperature
-      for every waste-liquor assay. The actual plant liquor was filtered at
-      0.22 micrometres and mixed with 9K medium, with late-exponential-phase
-      inoculum and Fe(II) monitoring by dichromate titration. Inoculum quantity
-      and exact waste-assay working volume are not given. The authors state
-      that the 9K comparison's ferrous content was matched to each mixed
-      medium. Figure 1 also includes low-response CK curves, but the inspected
-      methods do not define CK preparation, inoculation or sterility; it is
-      not treated as a fully documented matched sterile control. Section 2.4
-      specifies three repeats for single-factor pH/iron/chloride experiments,
-      without establishing independent biological replication for every
-      waste-fraction or sediment-characterization arm.
-    organisms:
-      - id: NCBITaxon:920
-        label: Acidithiobacillus ferrooxidans
+- id: culture_associated_ferrous_oxidation
+  name: Conditional culture-associated Fe(II) oxidation in diluted pickling liquor
+  process: redox_transformation
+  description: A culture assigned by the authors to Acidithiobacillus ferrooxidans was associated with declining dissolved Fe(II) in filtered hydrochloric steel-pickling liquor mixed with 9K medium. Iron oxidation and formation of iron-sulfate-containing sediments are the source interpretation. The measured percentage endpoint is Fe(II) oxidation, not recovered iron yield, and reagent-derived iron, sulfate and ammonium cannot be assigned exclusively to the waste feed. The assay does not establish a particular molecular pathway or biological necessity for precipitation.
+  context: Sections 2.1-2.3, printed p. 1837, describe serial cultivation and colony isolation from sediment near a polymerization ferric-chloride factory outlet in Tianjin. The reported isolation culture used 50 mL in 250 mL Erlenmeyer flasks, 30 degrees C and 100 rpm; these are explicitly culture conditions, not separately established working volume or temperature for every waste-liquor assay. The actual plant liquor was filtered at 0.22 micrometres and mixed with 9K medium, with late-exponential-phase inoculum and Fe(II) monitoring by dichromate titration. Inoculum quantity and exact waste-assay working volume are not given. The authors state that the 9K comparison's ferrous content was matched to each mixed medium. Figure 1 also includes low-response CK curves, but the inspected methods do not define CK preparation, inoculation or sterility; it is not treated as a fully documented matched sterile control. Section 2.4 specifies three repeats for single-factor pH/iron/chloride experiments,
+    without establishing independent biological replication for every waste-fraction or sediment-characterization arm.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:920
+    label: Acidithiobacillus ferrooxidans
+  protein_examples:
+  - uniprot_accession: UniProtKB:B7JAQ7
+    entry_name: B7JAQ7_ACIF2
+    protein_name: Cytochrome c
+    gene_symbol: cyc2
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    functional_role: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153; 485 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 catalyzing initial extracellular oxidation of Fe(II) to Fe(III) and transferring electrons into the periplasmic rusticyanin-dependent iron-oxidation chain.
+    annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing the Acidithiobacillus ferrooxidans soil/coal-gangue enrichment culture (NCBITaxon:920; Sections 2.1-2.3, isolated in 50 mL medium in 250 mL flasks at 30 C and 100 rpm) oxidizing Fe(II) in 20%, 40%, and 60% v/v 0.22-um-filtered HCl spent steel-pickling liquor mixtures with 9K medium in Qin et al. (2016).
     evidence:
-      - source_ref: qin2016
-        supports: support
-        explanation: >-
-          Section 3.1 on p. 1838 and Figure 1 on p. 1839 support substantial
-          Fe(II) oxidation in the 20%, 40% and 60% waste-volume mixtures, with
-          progressively delayed responses relative to inoculated 9K medium.
-          The source reports near-complete oxidation for 20% after about
-          45 h onward, and 99.9% for 60% at day 17, compared with near-complete
-          oxidation in its 9K comparison by day 4. These are source-reported
-          Fe(II) conversion percentages in mixed media, not fractions of
-          original waste iron isolated or recovered. The 60% curve's prolonged
-          lag is retained despite the abstract's favorable tolerance wording.
+    - source_ref: qin2016
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 outer-membrane Cyc2 (cyc2, AFE_3153) for aerobic Fe(II) oxidation in 20%, 40%, and 60% v/v HCl pickling-liquor/9K mixtures in Qin et al. (2016) (Sections 2.1-2.3 and 3.1-3.3); strain identity was not molecularly typed and individual rus-operon genes were not directly assayed.
+  - uniprot_accession: UniProtKB:B7JAQ0
+    entry_name: RUS_ACIF2
+    protein_name: Rusticyanin
+    gene_symbol: rus
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR000923
+    - InterPro:IPR028871
+    - InterPro:IPR050845
+    - InterPro:IPR033138
+    - InterPro:IPR008972
+    - InterPro:IPR001243
+    pfam_ids:
+    - Pfam:PF00127
+    ncbifam_ids:
+    - NCBIfam:TIGR03095
+    go_terms:
+    - id: GO:0042597
+      label: periplasmic space
+    - id: GO:0005507
+      label: copper ion binding
+    - id: GO:0009055
+      label: electron transfer activity
+    functional_role: Periplasmic type-I blue copper electron carrier rusticyanin (rus, locus AFE_3146; 187 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) and downstream aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing the Acidithiobacillus ferrooxidans soil/coal-gangue enrichment culture (NCBITaxon:920; Sections 2.1-2.3) in 20%, 40%, and 60% v/v HCl spent steel-pickling liquor mixtures with 9K medium in Qin et al. (2016).
+    evidence:
+    - source_ref: qin2016
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic rusticyanin (rus, AFE_3146) for aerobic Fe(II) oxidation in 20-60% v/v HCl pickling-liquor/9K mixtures in Qin et al. (2016) (Sections 2.1-2.3 and 3.1-3.3); individual genes were not directly assayed.
+  - uniprot_accession: UniProtKB:B7JAQ6
+    entry_name: B7JAQ6_ACIF2
+    protein_name: Cytochrome c552
+    gene_symbol: cyc1
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR009056
+    - InterPro:IPR036909
+    - InterPro:IPR024167
+    - InterPro:IPR050597
+    pfam_ids:
+    - Pfam:PF00034
+    go_terms:
+    - id: GO:0042597
+      label: periplasmic space
+    - id: GO:0009055
+      label: electron transfer activity
+    - id: GO:0020037
+      label: heme binding
+    - id: GO:0005506
+      label: iron ion binding
+    functional_role: Periplasmic diheme cytochrome c4 Cyc1 / cytochrome c552 (cyc1, locus AFE_3152; 230 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 transferring electrons from periplasmic rusticyanin (AFE_3146) to inner-membrane aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+    annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing the Acidithiobacillus ferrooxidans soil/coal-gangue enrichment culture (NCBITaxon:920; Sections 2.1-2.3) in 20%, 40%, and 60% v/v HCl spent steel-pickling liquor mixtures with 9K medium in Qin et al. (2016).
+    evidence:
+    - source_ref: qin2016
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic diheme cytochrome c4 Cyc1 (cyc1, AFE_3152) for aerobic Fe(II) oxidation in 20-60% v/v HCl pickling-liquor/9K mixtures in Qin et al. (2016) (Sections 2.1-2.3 and 3.1-3.3); individual genes were not directly assayed.
+  evidence:
+  - source_ref: qin2016
+    supports: support
+    explanation: Section 3.1 on p. 1838 and Figure 1 on p. 1839 support substantial Fe(II) oxidation in the 20%, 40% and 60% waste-volume mixtures, with progressively delayed responses relative to inoculated 9K medium. The source reports near-complete oxidation for 20% after about 45 h onward, and 99.9% for 60% at day 17, compared with near-complete oxidation in its 9K comparison by day 4. These are source-reported Fe(II) conversion percentages in mixed media, not fractions of original waste iron isolated or recovered. The 60% curve's prolonged lag is retained despite the abstract's favorable tolerance wording.
+  - source_ref: qin2016
+    supports: partial
+    explanation: Section 3.1 reports no ferrous oxidation after inoculation of 70% and 80% waste mixtures; no corresponding time-course graph is provided. Section 2.3 instead describes a nominal 20/40/60-to-100% mixing sequence. Neither a demonstrated effective undiluted-waste treatment nor an unreported 100% outcome is inferred. Figure 2 and Table 1 support strong inhibition at the tested low-pH settings, but the narrative's pH 1.3 growth threshold is not a separately tested Table 1 level. Oxidation curves do not themselves directly measure viable-cell growth.
+  - source_ref: qin2016
+    supports: partial
+    explanation: Sections 2.1-2.2 print 0.5 g/L FeSO4·7H2O in the culture recipe and raw liquor Fe(II) 250 mg/L, yet section 3.1 assigns 7.13, 5.35 and 3.57 g/L Fe(II) to the 20%, 40% and 60% mixtures. These values are not reconciled by the printed recipe. The raw-liquor Cl 310 mg/L and pH 0 also do not establish a complete consistent acid/ion balance. Table 1 labels chloride-ion concentrations, whereas later text sometimes calls the 200-800 mg/L levels NaCl/KCl concentrations. Figures 3-4 show delayed oxidation relative to 9K despite the conclusion's no-inhibition wording. Table 1 is a single-factor design, so the abstract's combined pH 1.4, Fe(II) 0.04 mol/L and chloride 800 mg/L statement is not adopted as a jointly tested operating point. The 40% discussion says growth resumed after 84 h but reached its endpoint at 80 h, while Figure 1b approaches its plateau later; no precise reconciled kinetic estimate is asserted.
+  - source_ref: qin2016
+    supports: partial
+    explanation: Figures 5-8 on pp. 1840-1842 show SEM morphology, EDS, XRD and FTIR for sediments from the 60% waste/9K arm and comparison material. Section 3.3.1 calls the principal phase potassium jarosite while printing (NH4)Fe3(SO4)2(OH)6; the abstract and conclusion use the ammonium formula. This unresolved name/formula discrepancy and the absence of quantitative phase refinement prevent a phase-pure product claim. FTIR chloride interaction and adaptation are proposed interpretations, not demonstrated covalent binding or causal tolerance mechanisms. No solid-product mass balance, isolated iron yield, acid-reuse performance, cadmium fate, recovered-product purity or industrial treatment is established.
+  - source_ref: genbankkf378735
+    supports: context_only
+    explanation: 'The paper''s KF378735 accession resolves to KF378735.1, a partial 16S sequence assigned to A. ferrooxidans strain XJF-8 with source qualifiers coal mine drainage and China: Shanxi. These differ from the Tianjin factory-outlet isolation in section 2.1. The species label is retained as the authors'' assignment; the experimental culture is not equated with a verified XJF-8 deposit, type strain or whole genome, and sequence provenance does not prove function.'
+  - source_ref: ncbi920
+    supports: context_only
+    explanation: Current NCBI taxonomy confirms the species label Acidithiobacillus ferrooxidans and its historical Thiobacillus ferrooxidans synonym. This resolves nomenclature only, not the study's culture-provenance conflict or causal contribution relative to incompletely described controls.
+causal_graphs:
+- id: culture_associated_ferrous_oxidation_graph
+  name: Acidithiobacillus ferrooxidans Fe(II) oxidation and chloride/acid inhibition threshold in HCl spent steel-pickling liquor mixtures
+  description: Causal pathway linking representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation proteins (cyc2 AFE_3153, rus AFE_3146, cyc1 AFE_3152) in a soil/coal-gangue enrichment culture to Fe(II) oxidation and jarosite-like ferric hydroxysulfate precipitation across 20%, 40%, and 60% v/v mixtures of 0.22-um-filtered HCl spent steel-pickling liquor with 9K medium (versus zero oxidation at 70% and 80% v/v) in Qin et al. (2016) (Sections 2.1-2.3 and 3.1-3.3, Table 1, Figures 1-8).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: culture_associated_ferrous_oxidation
+  nodes:
+  - id: cyc2_outer_membrane_cytochrome
+    label: Outer-membrane monoheme cytochrome c Cyc2 (cyc2 AFE_3153)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cyc2
+    description: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153; 485 aa) in the rus operon (AFE_3146-AFE_3153) of Acidithiobacillus ferrooxidans ATCC 23270 catalyzing initial extracellular oxidation of Fe(II) to Fe(III).
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JAQ7
+      entry_name: B7JAQ7_ACIF2
+      protein_name: Cytochrome c
+      gene_symbol: cyc2
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      functional_role: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153; 485 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 catalyzing initial extracellular oxidation of Fe(II) to Fe(III) and transferring electrons into the periplasmic rusticyanin-dependent iron-oxidation chain.
+      annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing the Acidithiobacillus ferrooxidans soil/coal-gangue enrichment culture (NCBITaxon:920; Sections 2.1-2.3, isolated in 50 mL medium in 250 mL flasks at 30 C and 100 rpm) oxidizing Fe(II) in 20%, 40%, and 60% v/v 0.22-um-filtered HCl spent steel-pickling liquor mixtures with 9K medium in Qin et al. (2016).
+      evidence:
       - source_ref: qin2016
         supports: partial
-        explanation: >-
-          Section 3.1 reports no ferrous oxidation after inoculation of 70%
-          and 80% waste mixtures; no corresponding time-course graph is
-          provided. Section 2.3 instead describes a nominal 20/40/60-to-100%
-          mixing sequence. Neither a demonstrated effective undiluted-waste
-          treatment nor an unreported 100% outcome is inferred. Figure 2 and
-          Table 1 support strong inhibition at the tested low-pH settings,
-          but the narrative's pH 1.3 growth threshold is not a separately
-          tested Table 1 level. Oxidation curves do not themselves directly
-          measure viable-cell growth.
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 outer-membrane Cyc2 (cyc2, AFE_3153) for aerobic Fe(II) oxidation in 20%, 40%, and 60% v/v HCl pickling-liquor/9K mixtures in Qin et al. (2016) (Sections 2.1-2.3 and 3.1-3.3); strain identity was not molecularly typed and individual rus-operon genes were not directly assayed.
+  - id: rus_cyc1_periplasmic_electron_transfer
+    label: Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: rus
+    description: 'Soluble periplasmic electron-transfer carriers of the rus operon (AFE_3146-AFE_3153) in Acidithiobacillus ferrooxidans ATCC 23270: type-I blue-copper rusticyanin (rus / AFE_3146) and periplasmic diheme cytochrome c4 Cyc1 / cytochrome c552 (cyc1 / AFE_3152), which relay electrons from outer-membrane Cyc2 to inner-membrane aa3-type cytochrome c oxidase (coxBACD, AFE_3149-AFE_3147/AFE_3150) and uphill bc1 electron transport (cycA1, AFE_3151).'
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JAQ0
+      entry_name: RUS_ACIF2
+      protein_name: Rusticyanin
+      gene_symbol: rus
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR000923
+      - InterPro:IPR028871
+      - InterPro:IPR050845
+      - InterPro:IPR033138
+      - InterPro:IPR008972
+      - InterPro:IPR001243
+      pfam_ids:
+      - Pfam:PF00127
+      ncbifam_ids:
+      - NCBIfam:TIGR03095
+      go_terms:
+      - id: GO:0042597
+        label: periplasmic space
+      - id: GO:0005507
+        label: copper ion binding
+      - id: GO:0009055
+        label: electron transfer activity
+      functional_role: Periplasmic type-I blue copper electron carrier rusticyanin (rus, locus AFE_3146; 187 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) and downstream aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing the Acidithiobacillus ferrooxidans soil/coal-gangue enrichment culture (NCBITaxon:920; Sections 2.1-2.3) in 20%, 40%, and 60% v/v HCl spent steel-pickling liquor mixtures with 9K medium in Qin et al. (2016).
+      evidence:
       - source_ref: qin2016
         supports: partial
-        explanation: >-
-          Sections 2.1-2.2 print 0.5 g/L FeSO4·7H2O in the culture recipe and
-          raw liquor Fe(II) 250 mg/L, yet section 3.1 assigns 7.13, 5.35 and
-          3.57 g/L Fe(II) to the 20%, 40% and 60% mixtures. These values are
-          not reconciled by the printed recipe. The raw-liquor Cl 310 mg/L
-          and pH 0 also do not establish a complete consistent acid/ion
-          balance. Table 1 labels chloride-ion concentrations, whereas later
-          text sometimes calls the 200-800 mg/L levels NaCl/KCl concentrations.
-          Figures 3-4 show delayed oxidation relative to 9K despite the
-          conclusion's no-inhibition wording. Table 1 is a single-factor
-          design, so the abstract's combined pH 1.4, Fe(II) 0.04 mol/L and
-          chloride 800 mg/L statement is not adopted as a jointly tested
-          operating point. The 40% discussion says growth resumed after
-          84 h but reached its endpoint at 80 h, while Figure 1b approaches
-          its plateau later; no precise reconciled kinetic estimate is asserted.
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic rusticyanin (rus, AFE_3146) for aerobic Fe(II) oxidation in 20-60% v/v HCl pickling-liquor/9K mixtures in Qin et al. (2016) (Sections 2.1-2.3 and 3.1-3.3); individual genes were not directly assayed.
+    - uniprot_accession: UniProtKB:B7JAQ6
+      entry_name: B7JAQ6_ACIF2
+      protein_name: Cytochrome c552
+      gene_symbol: cyc1
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR009056
+      - InterPro:IPR036909
+      - InterPro:IPR024167
+      - InterPro:IPR050597
+      pfam_ids:
+      - Pfam:PF00034
+      go_terms:
+      - id: GO:0042597
+        label: periplasmic space
+      - id: GO:0009055
+        label: electron transfer activity
+      - id: GO:0020037
+        label: heme binding
+      - id: GO:0005506
+        label: iron ion binding
+      functional_role: Periplasmic diheme cytochrome c4 Cyc1 / cytochrome c552 (cyc1, locus AFE_3152; 230 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 transferring electrons from periplasmic rusticyanin (AFE_3146) to inner-membrane aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+      annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing the Acidithiobacillus ferrooxidans soil/coal-gangue enrichment culture (NCBITaxon:920; Sections 2.1-2.3) in 20%, 40%, and 60% v/v HCl spent steel-pickling liquor mixtures with 9K medium in Qin et al. (2016).
+      evidence:
       - source_ref: qin2016
         supports: partial
-        explanation: >-
-          Figures 5-8 on pp. 1840-1842 show SEM morphology, EDS, XRD and FTIR
-          for sediments from the 60% waste/9K arm and comparison material.
-          Section 3.3.1 calls the principal phase potassium jarosite while
-          printing (NH4)Fe3(SO4)2(OH)6; the abstract and conclusion use the
-          ammonium formula. This unresolved name/formula discrepancy and
-          the absence of quantitative phase refinement prevent a phase-pure
-          product claim. FTIR chloride interaction and adaptation are proposed
-          interpretations, not demonstrated covalent binding or causal
-          tolerance mechanisms. No solid-product mass balance, isolated
-          iron yield, acid-reuse performance, cadmium fate, recovered-product
-          purity or industrial treatment is established.
-      - source_ref: genbankkf378735
-        supports: context_only
-        explanation: >-
-          The paper's KF378735 accession resolves to KF378735.1, a partial
-          16S sequence assigned to A. ferrooxidans strain XJF-8 with source
-          qualifiers coal mine drainage and China: Shanxi. These differ from
-          the Tianjin factory-outlet isolation in section 2.1. The species
-          label is retained as the authors' assignment; the experimental
-          culture is not equated with a verified XJF-8 deposit, type strain
-          or whole genome, and sequence provenance does not prove function.
-      - source_ref: ncbi920
-        supports: context_only
-        explanation: >-
-          Current NCBI taxonomy confirms the species label Acidithiobacillus
-          ferrooxidans and its historical Thiobacillus ferrooxidans synonym.
-          This resolves nomenclature only, not the study's culture-provenance
-          conflict or causal contribution relative to incompletely described controls.
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic diheme cytochrome c4 Cyc1 (cyc1, AFE_3152) for aerobic Fe(II) oxidation in 20-60% v/v HCl pickling-liquor/9K mixtures in Qin et al. (2016) (Sections 2.1-2.3 and 3.1-3.3); individual genes were not directly assayed.
+  - id: inoculated_9k_pickling_liquor_culture_system
+    label: Soil/coal-gangue A. ferrooxidans enrichment culture (isolated in 50 mL medium in 250 mL flasks at 30 C and 100 rpm; Section 2.1) inoculated into 9K medium mixed with 20, 40, 60, 70, or 80% v/v filtered HCl pickling liquor
+    node_type: BIOLOGICAL_PROCESS
+    description: Soil and coal-gangue enrichment culture attributed to Acidithiobacillus ferrooxidans after serial subculturing in 9K medium (50 mL in 250 mL Erlenmeyer flasks, 30 C, 100 rpm; Section 2.1, without 16S rRNA typing or reported waste-assay working volume/inoculum size), tested across 20%, 40%, 60%, 70%, and 80% v/v mixtures of 0.22-um-filtered HCl pickling liquor with 9K medium and Fe-matched pure 9K controls (Table 1, Sections 2.2-2.3).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: filtered_hcl_spent_steel_pickling_liquor_mixtures
+    label: 0.22-um-filtered plant HCl spent steel-pickling liquor mixed at 20-80% v/v with 9K medium (Section 2.1 reports raw Fe(II) 250 mg/L, Cl 310 mg/L, pH 0, whereas Section 3.1 assigns 7.13, 5.35, and 3.57 g/L Fe(II) to the 20%, 40%, and 60% waste mixtures; Table 1)
+    node_type: MATERIAL_OR_PHASE
+    description: 0.22-um-filtered hydrochloric-acid spent steel-pickling liquor from a plant in Gongyi, Henan, mixed at 20%, 40%, 60%, 70%, and 80% v/v with 9K medium (Table 1; Section 2.1 reports the raw liquor as Fe(II) 250 mg/L, Cl 310 mg/L, and pH 0, whereas Section 3.1 states that the 20%, 40%, and 60% mixtures had initial Fe(II) concentrations of 7.13, 5.35, and 3.57 g/L matched by pure 9K controls).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: oxidized_ferric_liquor_and_jarosite_like_sediment_vs_70_80_inhibition
+    label: Near-complete Fe(II) oxidation in 20% (~45 h onward), 40%, and 60% (99.9% at day 17 vs day 4 in Fe-matched 9K; Figures 1-4) and uncalcined jarosite-like sediment (SEM/EDS, XRD Figure 7, FTIR Figure 8) vs zero oxidation at 70-80% v/v
+    node_type: MATERIAL_OR_PHASE
+    description: Near-complete Fe(II) oxidation in the 20% mixture from ~45 h onward and 99.9% oxidation in the 60% mixture at day 17 (versus day 4 in the 3.57 g/L Fe-matched 9K control; Figures 1-4), contrasted with zero ferrous oxidation in the 70% and 80% waste mixtures, accompanied by yellow uncalcined jarosite-like ferric hydroxysulfate sediment from the 60% arm characterized by SEM/EDS (Figures 5-6), XRD (Figure 7; Section 3.3.1 writes 'potassium jarosite' alongside the ammonium-jarosite formula (NH4)Fe3(SO4)2(OH)6), and FTIR (Figure 8).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cyc2_outer_membrane_cytochrome
+    target: rus_cyc1_periplasmic_electron_transfer
+    predicate: provides_electrons_to
+    relationship: extracellular Fe(II) oxidation and transmembrane electron delivery into the rus operon periplasmic relay
+    description: Outer-membrane monoheme cytochrome c Cyc2 (cyc2 AFE_3153) oxidizes extracellular Fe(II) to Fe(III) and delivers electrons across the outer membrane to Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).
+    evidence:
+    - source_ref: qin2016
+      supports: partial
+      explanation: Aerobic Fe(II) oxidation in Acidithiobacillus ferrooxidans couples outer-membrane Cyc2 (AFE_3153) to periplasmic rusticyanin (AFE_3146) and Cyc1 (AFE_3152) in 20-60% v/v pickling-liquor/9K mixtures in Qin et al. (2016) (Sections 2.1-2.3 and 3.1-3.2); individual rus-operon genes were not directly assayed.
+  - source: rus_cyc1_periplasmic_electron_transfer
+    target: inoculated_9k_pickling_liquor_culture_system
+    predicate: drives
+    relationship: microbial Fe(II) oxidation across 20%, 40%, and 60% v/v pickling-liquor mixtures vs complete arrest at 70% and 80% v/v
+    description: The A. ferrooxidans enrichment culture drives Fe(II) oxidation in 20%, 40%, and 60% v/v mixtures with 9K medium (with progressively longer lag phases relative to Fe-matched 9K controls as waste fraction increases), whereas 70% and 80% v/v mixtures show no Fe(II) oxidation.
+    evidence:
+    - source_ref: qin2016
+      supports: partial
+      explanation: Sections 3.1-3.2 and Figures 1-4 of Qin et al. (2016) document Fe(II) oxidation kinetics across the 20-80% v/v dilution series and Fe-matched 9K controls.
+  - source: inoculated_9k_pickling_liquor_culture_system
+    target: filtered_hcl_spent_steel_pickling_liquor_mixtures
+    predicate: oxidizes
+    relationship: oxidation of dissolved Fe(II) in 20%, 40%, and 60% v/v HCl pickling-liquor/9K mixtures (7.13, 5.35, and 3.57 g/L Fe(II) in Section 3.1)
+    description: In 20%, 40%, and 60% v/v mixtures with 9K medium, the culture oxidizes dissolved Fe(II) to Fe(III), reaching near-complete oxidation from ~45 h onward in 20% waste and 99.9% oxidation at day 17 in 60% waste (Figure 1, Figure 4).
+    evidence:
+    - source_ref: qin2016
+      supports: partial
+      explanation: Sections 3.1-3.2 and Figures 1-4 of Qin et al. (2016) show near-complete Fe(II) oxidation in 20-60% v/v mixtures compared with zero oxidation in 70-80% v/v mixtures, while support is partial because no sterile uninoculated control was run at matching pH and iron concentration and raw vs mixture Fe(II) values are internally inconsistent.
+  - source: filtered_hcl_spent_steel_pickling_liquor_mixtures
+    target: oxidized_ferric_liquor_and_jarosite_like_sediment_vs_70_80_inhibition
+    predicate: produces
+    relationship: ferric-rich oxidized solution and uncalcined jarosite-like ferric hydroxysulfate sediment characterized by SEM/EDS, XRD (Figure 7), and FTIR (Figure 8)
+    description: Fe(II) oxidation in the 60% v/v pickling-liquor/9K mixture and Fe-matched 9K control precipitates yellow uncalcined jarosite-like sediments analyzed by SEM, EDS, XRD, and FTIR (Figures 5-8), with Section 3.3.1 exhibiting an unresolved nomenclature discrepancy between the text label 'potassium jarosite' and formula '(NH4)Fe3(SO4)2(OH)6'.
+    evidence:
+    - source_ref: qin2016
+      supports: partial
+      explanation: Section 3.3 and Figures 5-8 of Qin et al. (2016) support formation of the uncalcined jarosite-group ferric hydroxysulfate sediment in the 60% mixture, while support is partial because potassium vs ammonium jarosite assignment conflicts in Section 3.3.1 and precipitate recovery yield is not reported.
 curation_history:
-  - timestamp: '2026-10-15T12:46:33.162660+00:00'
-    curator: codex (GPT-6; codex)
-    action: CREATE
-    summary: >-
-      Created a distinct spent steel-pickling liquid resource with qualified
-      culture-associated Fe(II) oxidation, inhibitory outcomes and explicit
-      source/sequence inconsistencies; no isolated recovery claim.
+- timestamp: '2026-10-15T12:46:33.162660+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created a distinct spent steel-pickling liquid resource with qualified culture-associated Fe(II) oxidation, inhibitory outcomes and explicit source/sequence inconsistencies; no isolated recovery claim.
+- timestamp: '2026-11-04T21:05:59Z'
+  curator: marcin
+  action: edit
+  summary: Add culture_associated_ferrous_oxidation_graph causal graph and ground culture_associated_ferrous_oxidation to Acidithiobacillus ferrooxidans ATCC 23270 rus-operon UniProtKB entries (UniProtKB:B7JAQ7, UniProtKB:B7JAQ0, UniProtKB:B7JAQ6)
+- timestamp: '2026-11-04T22:38:01Z'
+  curator: marcin
+  action: edit
+  summary: 'Align culture_associated_ferrous_oxidation_graph and protein_examples annotations with Sections 2.1-2.3 and 3.1-3.3, Table 1, and Figures 1-8 in Qin et al. (2016) (Issue #925)'
 history_refs:
-  - history/records/spent-steel-pickling-liquors/2026-10-15T124623Z-codex-d8a138.yaml
+- history/records/spent-steel-pickling-liquors/2026-10-15T124623Z-codex-d8a138.yaml
+- history/records/spent-steel-pickling-liquors/2026-11-04T210559Z-marcin-c6c2e4.yaml
+- history/records/spent-steel-pickling-liquors/2026-11-04T223801Z-marcin-76e1a5.yaml

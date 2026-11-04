@@ -1,127 +1,283 @@
 id: cmmmech:nickel-smelter-slag
 name: Nickel smelter slag
 material_kind: secondary_resource
-description: >-
-  Mixed solid residue from pyrometallurgical smelting in nickel extraction,
-  distinct from nickel ore, flotation concentrate, flotation tailings and
-  an individual constituent mineral. The curated case is the flash-furnace
-  slag supplied by Votorantim Metais from its Serra de Fortaleza-MG nickel
-  extraction operation in Brazil for a 2010 doctoral thesis. The source
-  reports original particles of 100-500 micrometres and a dominant
-  fayalite/forsterite-type iron-magnesium silicate diffraction pattern;
-  that assignment does not make the bulk slag a pure mineral. Table 7
-  reports total Ni 0.26%, Cu 0.27% and Co 0.06%, versus aqua-regia-soluble
-  Ni 0.07%, Cu 0.06% and Co 0.06%. The latter is an operational digestion
-  fraction, not water solubility. These feed-specific assays do not define
-  every nickel slag. No constituent criticality status or industrial
-  microbial deployment is inferred.
+description: Mixed solid residue from pyrometallurgical smelting in nickel extraction, distinct from nickel ore, flotation concentrate, flotation tailings and an individual constituent mineral. The curated case is the flash-furnace slag supplied by Votorantim Metais from its Serra de Fortaleza-MG nickel extraction operation in Brazil for a 2010 doctoral thesis. The source reports original particles of 100-500 micrometres and a dominant fayalite/forsterite-type iron-magnesium silicate diffraction pattern; that assignment does not make the bulk slag a pure mineral. Table 7 reports total Ni 0.26%, Cu 0.27% and Co 0.06%, versus aqua-regia-soluble Ni 0.07%, Cu 0.06% and Co 0.06%. The latter is an operational digestion fraction, not water solubility. These feed-specific assays do not define every nickel slag. No constituent criticality status or industrial microbial deployment is inferred.
 sources:
-  - id: munoz_blandon2010
-    title: >-
-      Nury Alexandra Munoz Blandon (2010). Recuperacao de niquel e outros
-      metais a partir de diferentes fontes (rejeitos minerais de processo
-      industrial e pentlandita (Ni,Fe)9S8) por lixiviacao bacteriana e acida.
-      Doctoral thesis, UNESP, Instituto de Quimica, Araraquara.
-      Official repository handle 11449/100745, issued 15 July 2010;
-      repository accession in 2014 is not the experiment's publication year.
-      Original 125-page PDF; source pp. 33, 36-39 and 50-58,
-      Tables 1-2 and 7-9, Figures 4-9. Repository title wording differs
-      slightly from the thesis front matter.
-    url: https://hdl.handle.net/11449/100745
-    accessed_on: '2026-10-14'
-  - id: ncbi_ferrooxidans
-    title: >-
-      NCBI Taxonomy 920, Acidithiobacillus ferrooxidans, species entry.
-      Resolves the source species name; it does not authenticate the
-      experimental LR isolate or identify it with the listed type strain.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
-    accessed_on: '2026-10-14'
+- id: munoz_blandon2010
+  title: Nury Alexandra Munoz Blandon (2010). Recuperacao de niquel e outros metais a partir de diferentes fontes (rejeitos minerais de processo industrial e pentlandita (Ni,Fe)9S8) por lixiviacao bacteriana e acida. Doctoral thesis, UNESP, Instituto de Quimica, Araraquara. Official repository handle 11449/100745, issued 15 July 2010; repository accession in 2014 is not the experiment's publication year. Original 125-page PDF; source pp. 33, 36-39 and 50-58, Tables 1-2 and 7-9, Figures 4-9. Repository title wording differs slightly from the thesis front matter.
+  url: https://hdl.handle.net/11449/100745
+  accessed_on: '2026-10-14'
+- id: ncbi_ferrooxidans
+  title: NCBI Taxonomy 920, Acidithiobacillus ferrooxidans, species entry. Resolves the source species name; it does not authenticate the experimental LR isolate or identify it with the listed type strain.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
+  accessed_on: '2026-10-14'
 mechanisms:
-  - id: lr_associated_leaching_with_nickel_null
-    name: Acidophile inoculation during slag leaching with little nickel advantage
-    process: bioleaching
-    microbial: true
-    organisms:
-      - id: NCBITaxon:920
-        label: Acidithiobacillus ferrooxidans
-    description: >-
-      Acidic leaching of slag was tested with source-labelled
-      A. ferrooxidans LR, an isolate reported from acidic uranium-ore
-      leachate at Lagoa Real, Bahia. Inoculation generally sustained a
-      higher redox potential, but nickel release was similar to the
-      corresponding uninoculated controls. The record documents microbial
-      involvement in the assay and its limited metal-leaching benefit,
-      not an established microbial enhancement of nickel recovery.
-      Iron oxidation and secondary jarosite formation are consistent with
-      the redox and diffraction observations; adsorption, passivation and
-      the location of nickel within the silicate matrix remain proposed
-      explanations for limited extraction. Dissolved metal was measured,
-      without isolation of a nickel product.
-    context: >-
-      Laboratory duplicate 250 mL Erlenmeyer flasks contained 150 mL T&K
-      medium, 5% w/v original-size slag and 5% v/v inoculum, incubated at
-      30 degrees C and 150 rpm for 14 days. The nominally no-added-iron
-      medium and the medium with 120 mmol/L Fe(II) each had an
-      uninoculated counterpart. A third pair used previously grown
-      culture containing approximately 120 mmol/L Fe(III), compared with
-      culture described as sterile. T&K preculture medium was pH 1.8;
-      experimental pH drifted upward and was corrected with sulfuric acid,
-      as indicated in Figure 7, rather than remaining on an identical
-      trajectory in all arms. Solution Ni and Cu used flame atomic
-      absorption; redox used a platinum electrode against Ag/AgCl with
-      saturated KCl. Total-feed assays used HF/microwave digestion,
-      whereas the separate soluble fraction used aqua regia. The washed
-      cells described for separate Warburg respirometry are not stated
-      to have been used in these leaching flasks: inoculum carryover is
-      not blank-corrected, and no added iron is not proof of no iron.
-      No LR strain accession or independent authentication is supplied.
+- id: lr_associated_leaching_with_nickel_null
+  name: Acidophile inoculation during slag leaching with little nickel advantage
+  process: bioleaching
+  description: Acidic leaching of slag was tested with source-labelled A. ferrooxidans LR, an isolate reported from acidic uranium-ore leachate at Lagoa Real, Bahia. Inoculation generally sustained a higher redox potential, but nickel release was similar to the corresponding uninoculated controls. The record documents microbial involvement in the assay and its limited metal-leaching benefit, not an established microbial enhancement of nickel recovery. Iron oxidation and secondary jarosite formation are consistent with the redox and diffraction observations; adsorption, passivation and the location of nickel within the silicate matrix remain proposed explanations for limited extraction. Dissolved metal was measured, without isolation of a nickel product.
+  context: 'Laboratory duplicate 250 mL Erlenmeyer flasks contained 150 mL T&K medium, 5% w/v original-size slag and 5% v/v inoculum, incubated at 30 degrees C and 150 rpm for 14 days. The nominally no-added-iron medium and the medium with 120 mmol/L Fe(II) each had an uninoculated counterpart. A third pair used previously grown culture containing approximately 120 mmol/L Fe(III), compared with culture described as sterile. T&K preculture medium was pH 1.8; experimental pH drifted upward and was corrected with sulfuric acid, as indicated in Figure 7, rather than remaining on an identical trajectory in all arms. Solution Ni and Cu used flame atomic absorption; redox used a platinum electrode against Ag/AgCl with saturated KCl. Total-feed assays used HF/microwave digestion, whereas the separate soluble fraction used aqua regia. The washed cells described for separate Warburg respirometry are not stated to have been used in these leaching flasks: inoculum carryover is not blank-corrected, and
+    no added iron is not proof of no iron. No LR strain accession or independent authentication is supplied.'
+  microbial: true
+  organisms:
+  - id: NCBITaxon:920
+    label: Acidithiobacillus ferrooxidans
+  protein_examples:
+  - uniprot_accession: UniProtKB:B7JAQ7
+    entry_name: B7JAQ7_ACIF2
+    protein_name: Cytochrome c
+    gene_symbol: cyc2
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    functional_role: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153; 485 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 catalyzing initial extracellular oxidation of Fe(II) to Fe(III) and transferring electrons into the periplasmic rusticyanin-dependent iron-oxidation chain.
+    annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing Acidithiobacillus ferrooxidans strain LR (NCBITaxon:920; pages 33, 36-39, and 50-58) tested in T&K medium across no-added-Fe, 120 mmol/L Fe(II), and pre-grown ~120 mmol/L Fe(III) arms on 5% w/v Brazilian flash-furnace nickel smelter slag in Munoz Blandon (2010).
     evidence:
-      - source_ref: munoz_blandon2010
-        supports: support
-        explanation: >-
-          Pages 33 and 36-39, Tables 1-2 and Figures 4 and 7-9 establish
-          feed provenance, culture and flask treatment. Table 9 on page 56
-          reports day-14 Ni extraction relative to total feed Ni as
-          inoculated/control pairs of 13/13%, 12/12% and 11/10% for the
-          no-added-iron, ferrous and grown-ferric-culture treatments,
-          respectively. Corresponding total-Cu percentages are 8/5%,
-          8/7% and 4/4%. These source-reported values indicate a small
-          or absent treatment difference under this design; they are
-          not a statistically demonstrated equivalence or general
-          impossibility of biological slag leaching. Percentages against
-          the smaller aqua-regia-soluble fraction in the adjacent columns
-          must not be presented as total-metal recovery.
+    - source_ref: munoz_blandon2010
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 outer-membrane Cyc2 (cyc2, AFE_3153) for Fe(II) oxidation by A. ferrooxidans strain LR in T&K medium in Munoz Blandon (2010) (pages 36-39 and 50-58); individual rus-operon genes were not directly assayed.
+  - uniprot_accession: UniProtKB:B7JAQ0
+    entry_name: RUS_ACIF2
+    protein_name: Rusticyanin
+    gene_symbol: rus
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR000923
+    - InterPro:IPR028871
+    - InterPro:IPR050845
+    - InterPro:IPR033138
+    - InterPro:IPR008972
+    - InterPro:IPR001243
+    pfam_ids:
+    - Pfam:PF00127
+    ncbifam_ids:
+    - NCBIfam:TIGR03095
+    go_terms:
+    - id: GO:0042597
+      label: periplasmic space
+    - id: GO:0005507
+      label: copper ion binding
+    - id: GO:0009055
+      label: electron transfer activity
+    functional_role: Periplasmic type-I blue copper electron carrier rusticyanin (rus, locus AFE_3146; 187 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) and downstream aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing Acidithiobacillus ferrooxidans strain LR (NCBITaxon:920; pages 33, 36-39, and 50-58) tested on 5% w/v Brazilian flash-furnace nickel smelter slag in Munoz Blandon (2010).
+    evidence:
+    - source_ref: munoz_blandon2010
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic rusticyanin (rus, AFE_3146) for Fe(II) oxidation by A. ferrooxidans strain LR in Munoz Blandon (2010) (pages 36-39 and 50-58); individual genes were not directly assayed.
+  - uniprot_accession: UniProtKB:B7JAQ6
+    entry_name: B7JAQ6_ACIF2
+    protein_name: Cytochrome c552
+    gene_symbol: cyc1
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR009056
+    - InterPro:IPR036909
+    - InterPro:IPR024167
+    - InterPro:IPR050597
+    pfam_ids:
+    - Pfam:PF00034
+    go_terms:
+    - id: GO:0042597
+      label: periplasmic space
+    - id: GO:0009055
+      label: electron transfer activity
+    - id: GO:0020037
+      label: heme binding
+    - id: GO:0005506
+      label: iron ion binding
+    functional_role: Periplasmic diheme cytochrome c4 Cyc1 / cytochrome c552 (cyc1, locus AFE_3152; 230 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 transferring electrons from periplasmic rusticyanin (AFE_3146) to inner-membrane aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+    annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing Acidithiobacillus ferrooxidans strain LR (NCBITaxon:920; pages 33, 36-39, and 50-58) tested on 5% w/v Brazilian flash-furnace nickel smelter slag in Munoz Blandon (2010).
+    evidence:
+    - source_ref: munoz_blandon2010
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic diheme cytochrome c4 Cyc1 (cyc1, AFE_3152) for Fe(II) oxidation by A. ferrooxidans strain LR in Munoz Blandon (2010) (pages 36-39 and 50-58); individual genes were not directly assayed.
+  evidence:
+  - source_ref: munoz_blandon2010
+    supports: support
+    explanation: Pages 33 and 36-39, Tables 1-2 and Figures 4 and 7-9 establish feed provenance, culture and flask treatment. Table 9 on page 56 reports day-14 Ni extraction relative to total feed Ni as inoculated/control pairs of 13/13%, 12/12% and 11/10% for the no-added-iron, ferrous and grown-ferric-culture treatments, respectively. Corresponding total-Cu percentages are 8/5%, 8/7% and 4/4%. These source-reported values indicate a small or absent treatment difference under this design; they are not a statistically demonstrated equivalence or general impossibility of biological slag leaching. Percentages against the smaller aqua-regia-soluble fraction in the adjacent columns must not be presented as total-metal recovery.
+  - source_ref: munoz_blandon2010
+    supports: partial
+    explanation: Figures 7-9 show elevated redox in inoculated arms, persistent dominant silicate peaks and minor peaks assigned to jarosite. These observations do not prove a unique nickel-release pathway or quantify secondary-phase mass. Separate respirometry on page 52 used washed cells, pH 2.2 glycine buffer and different loading; its oxygen consumption is not evidence of enhanced nickel release in the 14-day flasks. Duplicate assays are stated, but plotted dispersion, statistical tests, a complete metal mass balance and a killed-cell or inoculum-broth control are not provided for the leaching results.
+  - source_ref: munoz_blandon2010
+    supports: context_only
+    explanation: Table 8 reports greater Ni extraction in a separate 48-hour chemical acid test at pH 0.5 than in the microbial flasks. Its loading, pH control and duration differ, so this is not a matched test of microbial efficiency. Static acid-curing experiments later in the thesis contain concentration-unit and total-versus-soluble reporting inconsistencies; their numerical yields are not assigned to this mechanism. Neither industrial origin of the feed nor proposed static processing establishes industrial bioleaching deployment.
+causal_graphs:
+- id: lr_associated_leaching_with_nickel_null_graph
+  name: Acidithiobacillus ferrooxidans LR Fe(II) oxidation, jarosite formation, and null nickel-extraction advantage on flash-furnace nickel smelter slag
+  description: Causal pathway linking representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation proteins (cyc2 AFE_3153, rus AFE_3146, cyc1 AFE_3152) in strain LR to higher solution redox potential and jarosite XRD peaks in T&K media at 30 C and 150 rpm, while yielding no meaningful nickel-leaching advantage over matched uninoculated controls on 5% w/v Serra de Fortaleza flash-furnace nickel smelter slag in Munoz Blandon (2010) (pages 33, 36-39, and 50-58, Tables 1-2 and 7-9, Figures 4-9).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: lr_associated_leaching_with_nickel_null
+  nodes:
+  - id: cyc2_outer_membrane_cytochrome
+    label: Outer-membrane monoheme cytochrome c Cyc2 (cyc2 AFE_3153)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cyc2
+    description: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153; 485 aa) in the rus operon (AFE_3146-AFE_3153) of Acidithiobacillus ferrooxidans ATCC 23270 catalyzing initial extracellular oxidation of Fe(II) to Fe(III).
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JAQ7
+      entry_name: B7JAQ7_ACIF2
+      protein_name: Cytochrome c
+      gene_symbol: cyc2
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      functional_role: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153; 485 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 catalyzing initial extracellular oxidation of Fe(II) to Fe(III) and transferring electrons into the periplasmic rusticyanin-dependent iron-oxidation chain.
+      annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing Acidithiobacillus ferrooxidans strain LR (NCBITaxon:920; pages 33, 36-39, and 50-58) tested in T&K medium across no-added-Fe, 120 mmol/L Fe(II), and pre-grown ~120 mmol/L Fe(III) arms on 5% w/v Brazilian flash-furnace nickel smelter slag in Munoz Blandon (2010).
+      evidence:
       - source_ref: munoz_blandon2010
         supports: partial
-        explanation: >-
-          Figures 7-9 show elevated redox in inoculated arms, persistent
-          dominant silicate peaks and minor peaks assigned to jarosite.
-          These observations do not prove a unique nickel-release pathway
-          or quantify secondary-phase mass. Separate respirometry on
-          page 52 used washed cells, pH 2.2 glycine buffer and different
-          loading; its oxygen consumption is not evidence of enhanced
-          nickel release in the 14-day flasks. Duplicate assays are stated,
-          but plotted dispersion, statistical tests, a complete metal
-          mass balance and a killed-cell or inoculum-broth control are
-          not provided for the leaching results.
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 outer-membrane Cyc2 (cyc2, AFE_3153) for Fe(II) oxidation by A. ferrooxidans strain LR in T&K medium in Munoz Blandon (2010) (pages 36-39 and 50-58); individual rus-operon genes were not directly assayed.
+  - id: rus_cyc1_periplasmic_electron_transfer
+    label: Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: rus
+    description: 'Soluble periplasmic electron-transfer carriers of the rus operon (AFE_3146-AFE_3153) in Acidithiobacillus ferrooxidans ATCC 23270: type-I blue-copper rusticyanin (rus / AFE_3146) and periplasmic diheme cytochrome c4 Cyc1 / cytochrome c552 (cyc1 / AFE_3152), which relay electrons from outer-membrane Cyc2 to inner-membrane aa3-type cytochrome c oxidase (coxBACD, AFE_3149-AFE_3147/AFE_3150) and uphill bc1 electron transport (cycA1, AFE_3151).'
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JAQ0
+      entry_name: RUS_ACIF2
+      protein_name: Rusticyanin
+      gene_symbol: rus
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR000923
+      - InterPro:IPR028871
+      - InterPro:IPR050845
+      - InterPro:IPR033138
+      - InterPro:IPR008972
+      - InterPro:IPR001243
+      pfam_ids:
+      - Pfam:PF00127
+      ncbifam_ids:
+      - NCBIfam:TIGR03095
+      go_terms:
+      - id: GO:0042597
+        label: periplasmic space
+      - id: GO:0005507
+        label: copper ion binding
+      - id: GO:0009055
+        label: electron transfer activity
+      functional_role: Periplasmic type-I blue copper electron carrier rusticyanin (rus, locus AFE_3146; 187 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) and downstream aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing Acidithiobacillus ferrooxidans strain LR (NCBITaxon:920; pages 33, 36-39, and 50-58) tested on 5% w/v Brazilian flash-furnace nickel smelter slag in Munoz Blandon (2010).
+      evidence:
       - source_ref: munoz_blandon2010
-        supports: context_only
-        explanation: >-
-          Table 8 reports greater Ni extraction in a separate 48-hour
-          chemical acid test at pH 0.5 than in the microbial flasks.
-          Its loading, pH control and duration differ, so this is not a
-          matched test of microbial efficiency. Static acid-curing
-          experiments later in the thesis contain concentration-unit
-          and total-versus-soluble reporting inconsistencies; their
-          numerical yields are not assigned to this mechanism. Neither
-          industrial origin of the feed nor proposed static processing
-          establishes industrial bioleaching deployment.
-
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic rusticyanin (rus, AFE_3146) for Fe(II) oxidation by A. ferrooxidans strain LR in Munoz Blandon (2010) (pages 36-39 and 50-58); individual genes were not directly assayed.
+    - uniprot_accession: UniProtKB:B7JAQ6
+      entry_name: B7JAQ6_ACIF2
+      protein_name: Cytochrome c552
+      gene_symbol: cyc1
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR009056
+      - InterPro:IPR036909
+      - InterPro:IPR024167
+      - InterPro:IPR050597
+      pfam_ids:
+      - Pfam:PF00034
+      go_terms:
+      - id: GO:0042597
+        label: periplasmic space
+      - id: GO:0009055
+        label: electron transfer activity
+      - id: GO:0020037
+        label: heme binding
+      - id: GO:0005506
+        label: iron ion binding
+      functional_role: Periplasmic diheme cytochrome c4 Cyc1 / cytochrome c552 (cyc1, locus AFE_3152; 230 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 transferring electrons from periplasmic rusticyanin (AFE_3146) to inner-membrane aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+      annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing Acidithiobacillus ferrooxidans strain LR (NCBITaxon:920; pages 33, 36-39, and 50-58) tested on 5% w/v Brazilian flash-furnace nickel smelter slag in Munoz Blandon (2010).
+      evidence:
+      - source_ref: munoz_blandon2010
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic diheme cytochrome c4 Cyc1 (cyc1, AFE_3152) for Fe(II) oxidation by A. ferrooxidans strain LR in Munoz Blandon (2010) (pages 36-39 and 50-58); individual genes were not directly assayed.
+  - id: strain_lr_tk_medium_leach_regimes
+    label: A. ferrooxidans LR (5% v/v inoculum) in duplicate 250 mL flasks (150 mL T&K medium initially pH 1.8 with H2SO4 corrections, 30 C, 150 rpm, 14 days) across no-added-Fe, 120 mmol/L Fe(II), and pre-grown ~120 mmol/L Fe(III) regimes
+    node_type: CHEMICAL_ENTITY
+    description: 'Duplicate 250 mL shake flasks containing 150 mL T&K medium (initially adjusted to pH 1.8 with H2SO4 corrections during initial slag acid demand; Tables 1-2, pages 36-39) at 30 C and 150 rpm for 14 days with 5% v/v A. ferrooxidans LR inoculum across three regimes: (1) T&K medium without added iron vs uninoculated control, (2) T&K medium with 120 mmol/L Fe(II) vs uninoculated control, and (3) pre-grown LR culture containing ~120 mmol/L Fe(III) vs a sterile-described counterpart.'
+    protein_grounding_status: NOT_APPLICABLE
+  - id: serra_de_fortaleza_flash_furnace_nickel_slag
+    label: 5% w/v Serra de Fortaleza-MG flash-furnace nickel smelter slag (100-500 um original particles; fayalite/forsterite-type Fe-Mg silicate XRD pattern; Table 7 total HF/microwave-digested Ni 0.26%, Cu 0.27%, Co 0.06% vs aqua-regia-soluble Ni 0.07%, Cu 0.06%, Co 0.06%)
+    node_type: MATERIAL_OR_PHASE
+    description: Flash-furnace nickel smelter slag from Serra de Fortaleza-MG, Brazil (page 33; 100-500 um original particle size, dominant fayalite/forsterite-type Fe-Mg silicate XRD pattern in Figure 5, page 51; Table 7, page 50 reports total HF/HCl/HNO3 microwave-digested Ni 0.26%, Cu 0.27%, Co 0.06% versus aqua-regia-soluble Ni 0.07%, Cu 0.06%, Co 0.06%), leached at 5% w/v.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: null_nickel_differential_and_modest_co_cu_leachate_with_jarosite
+    label: Higher Eh and jarosite XRD peaks in Fe-supplemented inoculated flasks with null 14-day total-Ni advantage over controls (13/13%, 12/12%, and 11/10% total Ni; 8/5%, 8/7%, and 4/4% total Cu in Table 9, page 56)
+    node_type: CHEMICAL_ENTITY
+    description: 'Higher redox potential and jarosite XRD peaks in iron-supplemented inoculated residues (Figures 4 and 6-8), but essentially identical 14-day extraction relative to total HF-digested feed metal between inoculated and control arms in Table 9 (page 56): 13% vs 13% total Ni (8% vs 5% total Cu) without added Fe, 12% vs 12% total Ni (8% vs 7% total Cu) with 120 mmol/L Fe(II), and 11% vs 10% total Ni (4% vs 4% total Cu) with ~120 mmol/L Fe(III), explicitly distinct from the higher percentages in Table 8 and Figure 9 calculated against the smaller aqua-regia-soluble fraction.'
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cyc2_outer_membrane_cytochrome
+    target: rus_cyc1_periplasmic_electron_transfer
+    predicate: provides_electrons_to
+    relationship: extracellular Fe(II) oxidation and transmembrane electron delivery into the rus operon periplasmic relay
+    description: Outer-membrane monoheme cytochrome c Cyc2 (cyc2 AFE_3153) oxidizes extracellular Fe(II) to Fe(III) and delivers electrons across the outer membrane to Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).
+    evidence:
+    - source_ref: munoz_blandon2010
+      supports: partial
+      explanation: Aerobic Fe(II) oxidation in Acidithiobacillus ferrooxidans strain LR couples outer-membrane Cyc2 (AFE_3153) to periplasmic rusticyanin (AFE_3146) and Cyc1 (AFE_3152) during T&K medium cultivation in Munoz Blandon (2010) (pages 36-39 and 50-58); individual genes were not directly assayed.
+  - source: rus_cyc1_periplasmic_electron_transfer
+    target: strain_lr_tk_medium_leach_regimes
+    predicate: drives
+    relationship: microbial oxidation of slag-released and 120 mmol/L supplemented Fe(II) raising solution Eh and precipitating jarosite
+    description: Inoculation with A. ferrooxidans LR oxidizes dissolved Fe(II) (both slag-derived and 120 mmol/L supplemented FeSO4), maintaining elevated solution Eh and forming jarosite XRD peaks in iron-supplemented flasks compared with uninoculated controls.
+    evidence:
+    - source_ref: munoz_blandon2010
+      supports: partial
+      explanation: Pages 51-55 and Figures 4 and 6-8 of Munoz Blandon (2010) show sustained higher Eh, ferrous-iron oxidation, and jarosite XRD reflections in inoculated A. ferrooxidans LR flasks compared with uninoculated controls.
+  - source: strain_lr_tk_medium_leach_regimes
+    target: serra_de_fortaleza_flash_furnace_nickel_slag
+    predicate: acts_on
+    relationship: 14-day acid/ferric leaching of 5% w/v flash-furnace nickel smelter slag across three iron regimes at 30 C and 150 rpm
+    description: Contacting 5% w/v flash-furnace slag with the three T&K regimes for 14 days dissolves acid-labile fractions, dominated by the H2SO4 added to satisfy slag acid demand.
+    evidence:
+    - source_ref: munoz_blandon2010
+      supports: partial
+      explanation: Pages 50-58, Tables 7-9, and Figures 6-9 of Munoz Blandon (2010) show that bulk metal dissolution is driven primarily by sulfuric-acid attack on the silicate slag rather than biological catalysis.
+  - source: serra_de_fortaleza_flash_furnace_nickel_slag
+    target: null_nickel_differential_and_modest_co_cu_leachate_with_jarosite
+    predicate: produces
+    relationship: null 14-day total-nickel extraction difference between inoculated and control arms (13/13%, 12/12%, 11/10% total Ni; 8/5%, 8/7%, 4/4% total Cu in Table 9) with jarosite formation
+    description: At 14 days, total nickel extraction is virtually indistinguishable between inoculated and control arms across all three regimes (13% vs 13%, 12% vs 12%, and 11% vs 10% total Ni, with 8% vs 5%, 8% vs 7%, and 4% vs 4% total Cu in Table 9, page 56), while higher percentages in Table 8 and Figure 9 reflect normalization to the smaller aqua-regia-soluble fraction.
+    evidence:
+    - source_ref: munoz_blandon2010
+      supports: support
+      explanation: Tables 7-9 (pages 50, 55, and 56) and Figures 4-9 of Munoz Blandon (2010) directly demonstrate the null total-nickel differential between inoculated LR flasks and controls across all three iron regimes.
 curation_history:
-  - timestamp: '2026-10-14T05:35:29.026392+00:00'
-    curator: codex (GPT-6; codex)
-    action: CREATE
-    summary: >-
-      Created a process-defined nickel slag resource with source-labelled LR leaching assays, preserving negligible nickel advantage, analytical fractions and laboratory scope.
+- timestamp: '2026-10-14T05:35:29.026392+00:00'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Created a process-defined nickel slag resource with source-labelled LR leaching assays, preserving negligible nickel advantage, analytical fractions and laboratory scope.
+- timestamp: '2026-11-04T21:05:59Z'
+  curator: marcin
+  action: edit
+  summary: Add lr_associated_leaching_with_nickel_null_graph causal graph and ground lr_associated_leaching_with_nickel_null to Acidithiobacillus ferrooxidans ATCC 23270 rus-operon UniProtKB entries (UniProtKB:B7JAQ7, UniProtKB:B7JAQ0, UniProtKB:B7JAQ6)
+- timestamp: '2026-11-04T22:38:01Z'
+  curator: marcin
+  action: edit
+  summary: 'Align lr_associated_leaching_with_nickel_null_graph and protein_examples annotations with pages 33, 36-39, and 50-58, Tables 1-2 and 7-9, and Figures 4-9 in Munoz Blandon (2010) (Issue #925)'
 history_refs:
-  - history/records/nickel-smelter-slag/2026-10-14T053537Z-codex-23c8e8.yaml
+- history/records/nickel-smelter-slag/2026-10-14T053537Z-codex-23c8e8.yaml
+- history/records/nickel-smelter-slag/2026-11-04T210559Z-marcin-bd6580.yaml
+- history/records/nickel-smelter-slag/2026-11-04T223801Z-marcin-329785.yaml

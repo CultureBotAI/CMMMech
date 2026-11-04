@@ -1,0 +1,34 @@
+history_version: 1
+target:
+  kind: record
+  slug: basic-oxygen-furnace-steelmaking-dust
+  path: data/records/basic-oxygen-furnace-steelmaking-dust.yaml
+session:
+  id: 2026-11-04T223800Z-marcin-7fd8bf
+  timestamp: '2026-11-04T22:38:00Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Align acidophile_assisted_dust_leaching_graph and protein_examples annotations
+    with 5% w/v adaptation, 11.1 g/L FeSO4.7H2O medium, and Table 3 column outcomes (Issue
+    #925)'
+  details: 'Updated acidophile_assisted_dust_leaching_graph and protein_examples in basic-oxygen-furnace-steelmaking-dust.yaml
+    to match the 5% w/v BOS-D adaptation, 11.1 g/L FeSO4.7H2O (~2.22 g/L Fe(II)) medium recipe
+    with 5 M H2SO4 pH 1.75 readjustment, air-dried/autoclaved (<2 mm) dust preparation, and
+    Table 3 / Figures 1-5 batch and column outcomes in Tezyapar Kara et al. (2024) (Issue
+    #925).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/925
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/924
