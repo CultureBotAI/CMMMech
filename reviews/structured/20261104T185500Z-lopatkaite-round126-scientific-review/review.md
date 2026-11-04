@@ -1,0 +1,289 @@
+# Primary-source scientific review of lopatkaite (IMA:2012-083, status A, Pb5Sb3AsS11)
+
+- Review: 20261104T185500Z-lopatkaite-round126-scientific-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-04T18:54:00Z
+- Finished UTC: 2026-11-04T18:55:00Z
+- Reviewer: antigravity / round126-scientific-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Lopatkaite (IMA:2012-083, status A, Pb5Sb3AsS11) passes primary-source scientific review (scientific_review: true) at SHA-256 971c58ea5199fec6c0cfec4d863c747a0b64b4db5c29c60783bbd765156f4c87 against all bounded passages and rendered table PNGs of Topa D, Makovicky E, Putz H, and Zagler G (2026) Lopatkaite, a new mineral from Taylor Pit, Madoc, Ontario, Canada, Eur. J. Mineral. 38:217-229, pp. 217-229, Tables 1-6, Figures 1-9 (34 bounded passages &lt;= 1,800 B across 13 full-PDF pages; 11 main-text pages / 28 passages, plus PNG renders of pages 4 and 6).
+
+## Scope And Provenance
+
+Primary-source scientific review of data/records/lopatkaite.yaml (SHA-256 971c58ea5199fec6c0cfec4d863c747a0b64b4db5c29c60783bbd765156f4c87) and its canonical CREATE history sidecar against all bounded primary-source passages and rendered table PNGs from Topa D, Makovicky E, Putz H, and Zagler G (2026) Lopatkaite, a new mineral from Taylor Pit, Madoc, Ontario, Canada, Eur. J. Mineral. 38:217-229, pp. 217-229, Tables 1-6, Figures 1-9 (34 bounded passages &lt;= 1,800 B across 13 full-PDF pages; 11 main-text pages / 28 passages, plus PNG renders of pages 4 and 6) and the September 2026 IMA-CNMNC Master List (PDF p. 128).
+
+Selection: Round 126 newly admitted mineral record lopatkaite
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base c9d6d587179eee095ce18bc669ad5874f3346208.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:lopatkaite | data/records/lopatkaite.yaml | maintained | Lopatkaite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:lopatkaite | Checked 683 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:lopatkaite | Checked 1295 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Verification of IMA:2012-083 identity, Taylor Pit (Madoc) type locality, JEOL JXA-8530F WDS chemistry, COM reflectance, monoclinic P21/c boulangerite-homeotype structure, and internal source discrepancy for lopatkaite
+
+evidence: supported. Targets: cmmmech:lopatkaite.
+
+All numeric, crystallographic, optical, Raman, and chemical claims in data/records/lopatkaite.yaml (SHA-256 971c58ea5199fec6c0cfec4d863c747a0b64b4db5c29c60783bbd765156f4c87) match the bounded primary-source passages and rendered table PNGs of Topa D, Makovicky E, Putz H, and Zagler G (2026) Lopatkaite, a new mineral from Taylor Pit, Madoc, Ontario, Canada, Eur. J. Mineral. 38:217-229, pp. 217-229, Tables 1-6, Figures 1-9 (34 bounded passages &lt;= 1,800 B across 13 full-PDF pages; 11 main-text pages / 28 passages, plus PNG renders of pages 4 and 6) and the September 2026 IMA Master List (p. 128).
+
+### Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE provenance
+
+provenance: supported. Targets: cmmmech:lopatkaite.
+
+data/records/lopatkaite.yaml accurately omits mechanisms (0 mechanisms) and explicitly discloses that no biological or microbial interaction data are reported in the type mineralogical description. Append-only CREATE history sidecar passes validation with 0 errors.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/lopatkaite.yaml; Working-tree record data/records/lopatkaite.yaml | supports | Working-tree record data/records/lopatkaite.yaml (SHA-256 971c58ea5199fec6c0cfec4d863c747a0b64b4db5c29c60783bbd765156f4c87) captures IMA:2012-083 identity (symbol Lpk), Taylor Pit (Madoc, Hastings County, Ontario, Canada) type locality, holotype NHMW O 3954 (former Salzburg catalogue no. 15008), Table 2 (p. 220) JEOL JXA-8530F WDS chemistry for SCXRD Group 5 (4 points, Pb 57.81(4) wt%, Sb 20.03(9) wt%, S 19.08(6) wt%, As 3.53(8) wt%, total 100.46(22) wt%, empirical formula Pb10.28(3)As1.74(4)Sb6.06(3)S21.92(3)) and Group 6 (5 points, Pb 57.36(6) wt%, Sb 18.77(13) wt%, S 19.20(1) wt%, As 4.43(7) wt%, total 99.77(2) wt%, empirical formula Pb10.17(1)As2.17(3)Sb5.66(4)S21.99(1)), monoclinic P21/c (#14) boulangerite-homeotype structure (Tables 3, 4, 5, 6; SCXRD a = 8.0806(6) A, b = 23.3597(18) A, c = 21.4880(16) A, beta = 100.7090(10) deg, V = 3985.4(5) A3, Z = 4 for Pb10As2Sb6S22 / Z = 8 for Pb5Sb3AsS11, R1 = 0.0412, wR(on Fo^2) = 0.0842), COM reflectance (Table 1), internal primary-source discrepancy (Table 5 site (Pb,Sb)4 BVS printed as '2128' for 2.128 v.u.), and 0 mechanisms. |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List, PDF p. 128 | supports | Confirms Lopatkaite, formula Pb5Sb3AsS11, status A, IMA:2012-083, and primary reference in European Journal of Mineralogy. |
+| topa_2026_lopatkaite_primary | https://doi.org/10.5194/ejm-38-217-2026; Topa D, Makovicky E, Putz H, and Zagler G (2026) Lopatkaite, a new mineral from Taylor Pit, Madoc, Ontario, Canada, Eur. J. Mineral. 38:217-229, pp. 217-229, Tables 1-6, Figures 1-9 (34 bounded passages &lt;= 1,800 B across 13 full-PDF pages; 11 main-text pages / 28 passages, plus PNG renders of pages 4 and 6) | supports | All 13 full-PDF pages (34 bounded passages &lt;= 1,800 B, 52,386 passage bytes / 52,428 raw text bytes; 11 main-text pages pp. 217-227, 28 passages) and PNG renders of pages 4 and 6 inspected, confirming verbatim title, type locality, holotype NHMW O 3954, COM reflectance, Table 2 WDS composition, monoclinic P21/c cell parameters, and Table 5 BVS decimal typo. |
+| create_history | history/records/lopatkaite/2026-11-04T184724Z-antigravity-9f176b.yaml; Canonical CREATE history sidecar history/records/lopatkaite/2026-11-04T184724Z-antigravity-9f176b.yaml | supports | Canonical CREATE history sidecar (SHA-256 abf6844880b6e6e5019dcb74fe607d10d8c613d8b2864ab7bf3b7b5f28f33a68) matches record curation_history[0].timestamp and top-level record sections. |
+| validation | data/records/lopatkaite.yaml; Real CLI validation via .venv/bin/cmmmech validate --require-records and .venv/bin/cmmmech validate-history --base main | supports | Checked 683 record(s); 0 failed. Checked 1295 history record(s); 0 error(s). |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed under the Round 126 bounded source-text workflow (scripts/index_bounded_pdf_passages.py, max 1,800 bytes per passage) plus single-page 150-DPI PNG table renders.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261104T185500Z-lopatkaite-round126-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Primary-source scientific review of lopatkaite (IMA:2012-083, status A, Pb5Sb3AsS11)
+started_at: '2026-11-04T18:54:00Z'
+finished_at: '2026-11-04T18:55:00Z'
+reviewer:
+  identity: antigravity / round126-scientific-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/lopatkaite.yaml (SHA-256 971c58ea5199fec6c0cfec4d863c747a0b64b4db5c29c60783bbd765156f4c87)
+    and its CREATE history sidecar against all bounded passages and single-page PNG
+    table renders of Topa D, Makovicky E, Putz H, and Zagler G (2026) Lopatkaite,
+    a new mineral from Taylor Pit, Madoc, Ontario, Canada, Eur. J. Mineral. 38:217-229,
+    pp. 217-229, Tables 1-6, Figures 1-9 (34 bounded passages <= 1,800 B across 13
+    full-PDF pages; 11 main-text pages / 28 passages, plus PNG renders of pages 4
+    and 6) and the September 2026 IMA-CNMNC Master List (PDF p. 128).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: c9d6d587179eee095ce18bc669ad5874f3346208
+  state: working_tree
+  inputs:
+  - path: data/records/lopatkaite.yaml
+    sha256: 971c58ea5199fec6c0cfec4d863c747a0b64b4db5c29c60783bbd765156f4c87
+    role: target
+  - path: history/records/lopatkaite/2026-11-04T184724Z-antigravity-9f176b.yaml
+    sha256: abf6844880b6e6e5019dcb74fe607d10d8c613d8b2864ab7bf3b7b5f28f33a68
+    role: context
+  - path: research/sources/round126-minerals/20261104T185000Z-source-investigation.json
+    sha256: 317e9060cab21bc74b8dd539dc3954d42ef0e32c0617c092497291e90ec92f89
+    role: context
+  - path: research/sources/round126-minerals/20261104T185000Z-source-investigation.md
+    sha256: 35e097910742bfb45ce517d36bb29f1a20ee2c480db21eccf7f745acc42362ab
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:lopatkaite
+  path: data/records/lopatkaite.yaml
+  label: Lopatkaite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lopatkaite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/lopatkaite/2026-11-04T184724Z-antigravity-9f176b.yaml
+    role: canonical_history
+scope:
+  description: Primary-source scientific review of data/records/lopatkaite.yaml (SHA-256
+    971c58ea5199fec6c0cfec4d863c747a0b64b4db5c29c60783bbd765156f4c87) and its canonical
+    CREATE history sidecar against all bounded primary-source passages and rendered
+    table PNGs from Topa D, Makovicky E, Putz H, and Zagler G (2026) Lopatkaite, a
+    new mineral from Taylor Pit, Madoc, Ontario, Canada, Eur. J. Mineral. 38:217-229,
+    pp. 217-229, Tables 1-6, Figures 1-9 (34 bounded passages <= 1,800 B across 13
+    full-PDF pages; 11 main-text pages / 28 passages, plus PNG renders of pages 4
+    and 6) and the September 2026 IMA-CNMNC Master List (PDF p. 128).
+  selection: Round 126 newly admitted mineral record lopatkaite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:lopatkaite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/lopatkaite.yaml
+  locator: Working-tree record data/records/lopatkaite.yaml
+  accessed_at: '2026-11-04T18:54:30Z'
+  support: supports
+  summary: Working-tree record data/records/lopatkaite.yaml (SHA-256 971c58ea5199fec6c0cfec4d863c747a0b64b4db5c29c60783bbd765156f4c87)
+    captures IMA:2012-083 identity (symbol Lpk), Taylor Pit (Madoc, Hastings County,
+    Ontario, Canada) type locality, holotype NHMW O 3954 (former Salzburg catalogue
+    no. 15008), Table 2 (p. 220) JEOL JXA-8530F WDS chemistry for SCXRD Group 5 (4
+    points, Pb 57.81(4) wt%, Sb 20.03(9) wt%, S 19.08(6) wt%, As 3.53(8) wt%, total
+    100.46(22) wt%, empirical formula Pb10.28(3)As1.74(4)Sb6.06(3)S21.92(3)) and Group
+    6 (5 points, Pb 57.36(6) wt%, Sb 18.77(13) wt%, S 19.20(1) wt%, As 4.43(7) wt%,
+    total 99.77(2) wt%, empirical formula Pb10.17(1)As2.17(3)Sb5.66(4)S21.99(1)),
+    monoclinic P21/c (#14) boulangerite-homeotype structure (Tables 3, 4, 5, 6; SCXRD
+    a = 8.0806(6) A, b = 23.3597(18) A, c = 21.4880(16) A, beta = 100.7090(10) deg,
+    V = 3985.4(5) A3, Z = 4 for Pb10As2Sb6S22 / Z = 8 for Pb5Sb3AsS11, R1 = 0.0412,
+    wR(on Fo^2) = 0.0842), COM reflectance (Table 1), internal primary-source discrepancy
+    (Table 5 site (Pb,Sb)4 BVS printed as '2128' for 2.128 v.u.), and 0 mechanisms.
+  snapshot_sha256: 971c58ea5199fec6c0cfec4d863c747a0b64b4db5c29c60783bbd765156f4c87
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 128
+  accessed_at: '2026-11-04T18:54:30Z'
+  support: supports
+  summary: Confirms Lopatkaite, formula Pb5Sb3AsS11, status A, IMA:2012-083, and primary
+    reference in European Journal of Mineralogy.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: topa_2026_lopatkaite_primary
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-38-217-2026
+  locator: Topa D, Makovicky E, Putz H, and Zagler G (2026) Lopatkaite, a new mineral
+    from Taylor Pit, Madoc, Ontario, Canada, Eur. J. Mineral. 38:217-229, pp. 217-229,
+    Tables 1-6, Figures 1-9 (34 bounded passages <= 1,800 B across 13 full-PDF pages;
+    11 main-text pages / 28 passages, plus PNG renders of pages 4 and 6)
+  accessed_at: '2026-11-04T18:54:30Z'
+  support: supports
+  summary: All 13 full-PDF pages (34 bounded passages <= 1,800 B, 52,386 passage bytes
+    / 52,428 raw text bytes; 11 main-text pages pp. 217-227, 28 passages) and PNG
+    renders of pages 4 and 6 inspected, confirming verbatim title, type locality,
+    holotype NHMW O 3954, COM reflectance, Table 2 WDS composition, monoclinic P21/c
+    cell parameters, and Table 5 BVS decimal typo.
+  snapshot_sha256: 12c1bdd8dc95b9024445f67dbf309140995accbef6d8d9b3dc38aba029163abb
+- evidence_id: create_history
+  kind: record_content
+  reference: history/records/lopatkaite/2026-11-04T184724Z-antigravity-9f176b.yaml
+  locator: Canonical CREATE history sidecar history/records/lopatkaite/2026-11-04T184724Z-antigravity-9f176b.yaml
+  accessed_at: '2026-11-04T18:54:30Z'
+  support: supports
+  summary: Canonical CREATE history sidecar (SHA-256 abf6844880b6e6e5019dcb74fe607d10d8c613d8b2864ab7bf3b7b5f28f33a68)
+    matches record curation_history[0].timestamp and top-level record sections.
+  snapshot_sha256: abf6844880b6e6e5019dcb74fe607d10d8c613d8b2864ab7bf3b7b5f28f33a68
+- evidence_id: validation
+  kind: validation
+  reference: data/records/lopatkaite.yaml
+  locator: Real CLI validation via .venv/bin/cmmmech validate --require-records and
+    .venv/bin/cmmmech validate-history --base main
+  accessed_at: '2026-11-04T18:54:40Z'
+  support: supports
+  summary: Checked 683 record(s); 0 failed. Checked 1295 history record(s); 0 error(s).
+  snapshot_sha256: 971c58ea5199fec6c0cfec4d863c747a0b64b4db5c29c60783bbd765156f4c87
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: .venv/bin/cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 683 record(s); 0 failed.
+  target_ids:
+  - cmmmech:lopatkaite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: .venv/bin/cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1295 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:lopatkaite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA:2012-083 identity, Taylor Pit (Madoc) type locality,
+    JEOL JXA-8530F WDS chemistry, COM reflectance, monoclinic P21/c boulangerite-homeotype
+    structure, and internal source discrepancy for lopatkaite
+  outcome: supported
+  summary: All numeric, crystallographic, optical, Raman, and chemical claims in data/records/lopatkaite.yaml
+    (SHA-256 971c58ea5199fec6c0cfec4d863c747a0b64b4db5c29c60783bbd765156f4c87) match
+    the bounded primary-source passages and rendered table PNGs of Topa D, Makovicky
+    E, Putz H, and Zagler G (2026) Lopatkaite, a new mineral from Taylor Pit, Madoc,
+    Ontario, Canada, Eur. J. Mineral. 38:217-229, pp. 217-229, Tables 1-6, Figures
+    1-9 (34 bounded passages <= 1,800 B across 13 full-PDF pages; 11 main-text pages
+    / 28 passages, plus PNG renders of pages 4 and 6) and the September 2026 IMA Master
+    List (p. 128).
+  target_ids:
+  - cmmmech:lopatkaite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - topa_2026_lopatkaite_primary
+- assessment_id: mechanism_absence_and_provenance_verification
+  area: provenance
+  topic: Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE
+    provenance
+  outcome: supported
+  summary: data/records/lopatkaite.yaml accurately omits mechanisms (0 mechanisms)
+    and explicitly discloses that no biological or microbial interaction data are
+    reported in the type mineralogical description. Append-only CREATE history sidecar
+    passes validation with 0 errors.
+  target_ids:
+  - cmmmech:lopatkaite
+  evidence_ids:
+  - owner
+  - topa_2026_lopatkaite_primary
+  - create_history
+  - validation
+findings: []
+actions: []
+summary: 'Lopatkaite (IMA:2012-083, status A, Pb5Sb3AsS11) passes primary-source scientific
+  review (scientific_review: true) at SHA-256 971c58ea5199fec6c0cfec4d863c747a0b64b4db5c29c60783bbd765156f4c87
+  against all bounded passages and rendered table PNGs of Topa D, Makovicky E, Putz
+  H, and Zagler G (2026) Lopatkaite, a new mineral from Taylor Pit, Madoc, Ontario,
+  Canada, Eur. J. Mineral. 38:217-229, pp. 217-229, Tables 1-6, Figures 1-9 (34 bounded
+  passages <= 1,800 B across 13 full-PDF pages; 11 main-text pages / 28 passages,
+  plus PNG renders of pages 4 and 6).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed under the Round 126 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage) plus single-page 150-DPI PNG table renders.
+related_reviews: []
+```

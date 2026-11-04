@@ -1,0 +1,294 @@
+# Primary-source scientific review of kenoargentotetrahedrite-zn (IMA:2020-075, status A, [Ag6]4+(Cu4Zn2)Sb4S12[])
+
+- Review: 20261104T185500Z-kenoargentotetrahedrite-zn-round126-scientific-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-04T18:54:00Z
+- Finished UTC: 2026-11-04T18:55:00Z
+- Reviewer: antigravity / round126-scientific-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Kenoargentotetrahedrite-(Zn) (IMA:2020-075, status A, [Ag6]4+(Cu4Zn2)Sb4S12[]) passes primary-source scientific review (scientific_review: true) at SHA-256 e57171f3a27ab6d37b0e4721ea2a48c7f3989143b1f171377dbba7bbda20d049 against all bounded passages and rendered table PNGs of Qu K, Sima X, Gu X, Sun W, Fan G, Yang Z, and Wang Y (2024) Kenoargentotetrahedrite-(Zn), [Ag6]4+(Cu4Zn2)Sb4S12□, a new member of the tetrahedrite group from the Yindongpo Au deposit, China, Eur. J. Mineral. 36:397-409, pp. 397-409, Tables 1-7, Figures 1-6 (38 bounded passages &lt;= 1,800 B across 13 full-PDF pages; 10 main-text pages / 27 passages, plus PNG renders of pages 4 and 6).
+
+## Scope And Provenance
+
+Primary-source scientific review of data/records/kenoargentotetrahedrite-zn.yaml (SHA-256 e57171f3a27ab6d37b0e4721ea2a48c7f3989143b1f171377dbba7bbda20d049) and its canonical CREATE history sidecar against all bounded primary-source passages and rendered table PNGs from Qu K, Sima X, Gu X, Sun W, Fan G, Yang Z, and Wang Y (2024) Kenoargentotetrahedrite-(Zn), [Ag6]4+(Cu4Zn2)Sb4S12□, a new member of the tetrahedrite group from the Yindongpo Au deposit, China, Eur. J. Mineral. 36:397-409, pp. 397-409, Tables 1-7, Figures 1-6 (38 bounded passages &lt;= 1,800 B across 13 full-PDF pages; 10 main-text pages / 27 passages, plus PNG renders of pages 4 and 6) and the September 2026 IMA-CNMNC Master List (PDF p. 111).
+
+Selection: Round 126 newly admitted mineral record kenoargentotetrahedrite-zn
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base c9d6d587179eee095ce18bc669ad5874f3346208.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:kenoargentotetrahedrite-zn | data/records/kenoargentotetrahedrite-zn.yaml | maintained | Kenoargentotetrahedrite-(Zn) |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:kenoargentotetrahedrite-zn | Checked 683 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:kenoargentotetrahedrite-zn | Checked 1295 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Verification of IMA:2020-075 identity, Yindongpo type locality, JEOL JXA-8100 WDS chemistry, 785 nm Raman spectrum, cubic I-43m [Ag6]4+-bearing tetrahedrite structure, and internal source discrepancy for kenoargentotetrahedrite-(Zn)
+
+evidence: supported. Targets: cmmmech:kenoargentotetrahedrite-zn.
+
+All numeric, crystallographic, optical, Raman, and chemical claims in data/records/kenoargentotetrahedrite-zn.yaml (SHA-256 e57171f3a27ab6d37b0e4721ea2a48c7f3989143b1f171377dbba7bbda20d049) match the bounded primary-source passages and rendered table PNGs of Qu K, Sima X, Gu X, Sun W, Fan G, Yang Z, and Wang Y (2024) Kenoargentotetrahedrite-(Zn), [Ag6]4+(Cu4Zn2)Sb4S12□, a new member of the tetrahedrite group from the Yindongpo Au deposit, China, Eur. J. Mineral. 36:397-409, pp. 397-409, Tables 1-7, Figures 1-6 (38 bounded passages &lt;= 1,800 B across 13 full-PDF pages; 10 main-text pages / 27 passages, plus PNG renders of pages 4 and 6) and the September 2026 IMA Master List (p. 111).
+
+### Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE provenance
+
+provenance: supported. Targets: cmmmech:kenoargentotetrahedrite-zn.
+
+data/records/kenoargentotetrahedrite-zn.yaml accurately omits mechanisms (0 mechanisms) and explicitly discloses that no biological or microbial interaction data are reported in the type mineralogical description. Append-only CREATE history sidecar passes validation with 0 errors.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/kenoargentotetrahedrite-zn.yaml; Working-tree record data/records/kenoargentotetrahedrite-zn.yaml | supports | Working-tree record data/records/kenoargentotetrahedrite-zn.yaml (SHA-256 e57171f3a27ab6d37b0e4721ea2a48c7f3989143b1f171377dbba7bbda20d049) captures IMA:2020-075 identity (symbol Kattr-Zn), Yindongpo gold deposit (Tongbai County, Henan Province, China) type locality, holotype M16112 at the Geological Museum of China, Table 1 (p. 400) JEOL JXA-8100 WDS chemistry (9 points, Sb 24.97 wt%, Ag 22.51 wt%, Cu 21.75 wt%, S 21.29 wt%, Zn 4.28 wt%, Fe 2.16 wt%, Cd 1.62 wt%, As 1.15 wt%, total 99.73 wt%, empirical formula M(2)(Ag3.75Cu2.25)Sigma6.00M(1)[Cu3.90(Zn1.18Fe0.69Cd0.26)Sigma2.13]Sigma6.03X(3)(Sb3.69As0.27)Sigma3.96S(1)S11.94S(2)[]), cubic I-43m (#217) tetrahedrite-group structure with subvalent [Ag6]4+ cluster (Tables 2-7; SCXRD a = 10.4624(4) A, V = 1145.23(13) A3, Z = 2, R1 = 0.0247, wR2 = 0.0383; PXRD a = 10.4336(5) A, V = 1135.81(17) A3), 785 nm Raman spectrum (353, 346, 314, 282, 214, 201, 160 cm-1), internal primary-source discrepancy (0.436(9) vs 0.438(9) apfu for 2 x M(2b)), and 0 mechanisms. |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List, PDF p. 111 | supports | Confirms Kenoargentotetrahedrite-(Zn), formula [Ag6]4+(Cu4Zn2)Sb4S12[], status A, IMA:2020-075, and primary reference in European Journal of Mineralogy. |
+| qu_2024_primary | https://doi.org/10.5194/ejm-36-397-2024; Qu K, Sima X, Gu X, Sun W, Fan G, Yang Z, and Wang Y (2024) Kenoargentotetrahedrite-(Zn), [Ag6]4+(Cu4Zn2)Sb4S12□, a new member of the tetrahedrite group from the Yindongpo Au deposit, China, Eur. J. Mineral. 36:397-409, pp. 397-409, Tables 1-7, Figures 1-6 (38 bounded passages &lt;= 1,800 B across 13 full-PDF pages; 10 main-text pages / 27 passages, plus PNG renders of pages 4 and 6) | supports | All 13 full-PDF pages (38 bounded passages &lt;= 1,800 B, 54,674 passage bytes / 54,717 raw text bytes; 10 main-text pages pp. 397-406, 27 passages) and PNG renders of pages 4 and 6 inspected, confirming verbatim title, type locality, holotype M16112, Fig. 6 Raman spectrum, Table 1 WDS composition, cubic I-43m cell parameters, and internal primary-source discrepancy. |
+| create_history | history/records/kenoargentotetrahedrite-zn/2026-11-04T184721Z-antigravity-b800cb.yaml; Canonical CREATE history sidecar history/records/kenoargentotetrahedrite-zn/2026-11-04T184721Z-antigravity-b800cb.yaml | supports | Canonical CREATE history sidecar (SHA-256 10a749e8f04cc1764b693933d184fefcbe087daeedd3adf0c392efd89efc4fbe) matches record curation_history[0].timestamp and top-level record sections. |
+| validation | data/records/kenoargentotetrahedrite-zn.yaml; Real CLI validation via .venv/bin/cmmmech validate --require-records and .venv/bin/cmmmech validate-history --base main | supports | Checked 683 record(s); 0 failed. Checked 1295 history record(s); 0 error(s). |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed under the Round 126 bounded source-text workflow (scripts/index_bounded_pdf_passages.py, max 1,800 bytes per passage) plus single-page 150-DPI PNG table renders.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261104T185500Z-kenoargentotetrahedrite-zn-round126-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Primary-source scientific review of kenoargentotetrahedrite-zn (IMA:2020-075,
+  status A, [Ag6]4+(Cu4Zn2)Sb4S12[])
+started_at: '2026-11-04T18:54:00Z'
+finished_at: '2026-11-04T18:55:00Z'
+reviewer:
+  identity: antigravity / round126-scientific-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/kenoargentotetrahedrite-zn.yaml
+    (SHA-256 e57171f3a27ab6d37b0e4721ea2a48c7f3989143b1f171377dbba7bbda20d049) and
+    its CREATE history sidecar against all bounded passages and single-page PNG table
+    renders of Qu K, Sima X, Gu X, Sun W, Fan G, Yang Z, and Wang Y (2024) Kenoargentotetrahedrite-(Zn),
+    [Ag6]4+(Cu4Zn2)Sb4S12□, a new member of the tetrahedrite group from the Yindongpo
+    Au deposit, China, Eur. J. Mineral. 36:397-409, pp. 397-409, Tables 1-7, Figures
+    1-6 (38 bounded passages <= 1,800 B across 13 full-PDF pages; 10 main-text pages
+    / 27 passages, plus PNG renders of pages 4 and 6) and the September 2026 IMA-CNMNC
+    Master List (PDF p. 111).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: c9d6d587179eee095ce18bc669ad5874f3346208
+  state: working_tree
+  inputs:
+  - path: data/records/kenoargentotetrahedrite-zn.yaml
+    sha256: e57171f3a27ab6d37b0e4721ea2a48c7f3989143b1f171377dbba7bbda20d049
+    role: target
+  - path: history/records/kenoargentotetrahedrite-zn/2026-11-04T184721Z-antigravity-b800cb.yaml
+    sha256: 10a749e8f04cc1764b693933d184fefcbe087daeedd3adf0c392efd89efc4fbe
+    role: context
+  - path: research/sources/round126-minerals/20261104T185000Z-source-investigation.json
+    sha256: 317e9060cab21bc74b8dd539dc3954d42ef0e32c0617c092497291e90ec92f89
+    role: context
+  - path: research/sources/round126-minerals/20261104T185000Z-source-investigation.md
+    sha256: 35e097910742bfb45ce517d36bb29f1a20ee2c480db21eccf7f745acc42362ab
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:kenoargentotetrahedrite-zn
+  path: data/records/kenoargentotetrahedrite-zn.yaml
+  label: Kenoargentotetrahedrite-(Zn)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/kenoargentotetrahedrite-zn.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/kenoargentotetrahedrite-zn/2026-11-04T184721Z-antigravity-b800cb.yaml
+    role: canonical_history
+scope:
+  description: Primary-source scientific review of data/records/kenoargentotetrahedrite-zn.yaml
+    (SHA-256 e57171f3a27ab6d37b0e4721ea2a48c7f3989143b1f171377dbba7bbda20d049) and
+    its canonical CREATE history sidecar against all bounded primary-source passages
+    and rendered table PNGs from Qu K, Sima X, Gu X, Sun W, Fan G, Yang Z, and Wang
+    Y (2024) Kenoargentotetrahedrite-(Zn), [Ag6]4+(Cu4Zn2)Sb4S12□, a new member of
+    the tetrahedrite group from the Yindongpo Au deposit, China, Eur. J. Mineral.
+    36:397-409, pp. 397-409, Tables 1-7, Figures 1-6 (38 bounded passages <= 1,800
+    B across 13 full-PDF pages; 10 main-text pages / 27 passages, plus PNG renders
+    of pages 4 and 6) and the September 2026 IMA-CNMNC Master List (PDF p. 111).
+  selection: Round 126 newly admitted mineral record kenoargentotetrahedrite-zn
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:kenoargentotetrahedrite-zn
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/kenoargentotetrahedrite-zn.yaml
+  locator: Working-tree record data/records/kenoargentotetrahedrite-zn.yaml
+  accessed_at: '2026-11-04T18:54:30Z'
+  support: supports
+  summary: Working-tree record data/records/kenoargentotetrahedrite-zn.yaml (SHA-256
+    e57171f3a27ab6d37b0e4721ea2a48c7f3989143b1f171377dbba7bbda20d049) captures IMA:2020-075
+    identity (symbol Kattr-Zn), Yindongpo gold deposit (Tongbai County, Henan Province,
+    China) type locality, holotype M16112 at the Geological Museum of China, Table
+    1 (p. 400) JEOL JXA-8100 WDS chemistry (9 points, Sb 24.97 wt%, Ag 22.51 wt%,
+    Cu 21.75 wt%, S 21.29 wt%, Zn 4.28 wt%, Fe 2.16 wt%, Cd 1.62 wt%, As 1.15 wt%,
+    total 99.73 wt%, empirical formula M(2)(Ag3.75Cu2.25)Sigma6.00M(1)[Cu3.90(Zn1.18Fe0.69Cd0.26)Sigma2.13]Sigma6.03X(3)(Sb3.69As0.27)Sigma3.96S(1)S11.94S(2)[]),
+    cubic I-43m (#217) tetrahedrite-group structure with subvalent [Ag6]4+ cluster
+    (Tables 2-7; SCXRD a = 10.4624(4) A, V = 1145.23(13) A3, Z = 2, R1 = 0.0247, wR2
+    = 0.0383; PXRD a = 10.4336(5) A, V = 1135.81(17) A3), 785 nm Raman spectrum (353,
+    346, 314, 282, 214, 201, 160 cm-1), internal primary-source discrepancy (0.436(9)
+    vs 0.438(9) apfu for 2 x M(2b)), and 0 mechanisms.
+  snapshot_sha256: e57171f3a27ab6d37b0e4721ea2a48c7f3989143b1f171377dbba7bbda20d049
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 111
+  accessed_at: '2026-11-04T18:54:30Z'
+  support: supports
+  summary: Confirms Kenoargentotetrahedrite-(Zn), formula [Ag6]4+(Cu4Zn2)Sb4S12[],
+    status A, IMA:2020-075, and primary reference in European Journal of Mineralogy.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: qu_2024_primary
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-36-397-2024
+  locator: Qu K, Sima X, Gu X, Sun W, Fan G, Yang Z, and Wang Y (2024) Kenoargentotetrahedrite-(Zn),
+    [Ag6]4+(Cu4Zn2)Sb4S12□, a new member of the tetrahedrite group from the Yindongpo
+    Au deposit, China, Eur. J. Mineral. 36:397-409, pp. 397-409, Tables 1-7, Figures
+    1-6 (38 bounded passages <= 1,800 B across 13 full-PDF pages; 10 main-text pages
+    / 27 passages, plus PNG renders of pages 4 and 6)
+  accessed_at: '2026-11-04T18:54:30Z'
+  support: supports
+  summary: All 13 full-PDF pages (38 bounded passages <= 1,800 B, 54,674 passage bytes
+    / 54,717 raw text bytes; 10 main-text pages pp. 397-406, 27 passages) and PNG
+    renders of pages 4 and 6 inspected, confirming verbatim title, type locality,
+    holotype M16112, Fig. 6 Raman spectrum, Table 1 WDS composition, cubic I-43m cell
+    parameters, and internal primary-source discrepancy.
+  snapshot_sha256: 621c1204eb5720c1f4b74eff577fb87027324faa8e9618f7ffef409d496d0401
+- evidence_id: create_history
+  kind: record_content
+  reference: history/records/kenoargentotetrahedrite-zn/2026-11-04T184721Z-antigravity-b800cb.yaml
+  locator: Canonical CREATE history sidecar history/records/kenoargentotetrahedrite-zn/2026-11-04T184721Z-antigravity-b800cb.yaml
+  accessed_at: '2026-11-04T18:54:30Z'
+  support: supports
+  summary: Canonical CREATE history sidecar (SHA-256 10a749e8f04cc1764b693933d184fefcbe087daeedd3adf0c392efd89efc4fbe)
+    matches record curation_history[0].timestamp and top-level record sections.
+  snapshot_sha256: 10a749e8f04cc1764b693933d184fefcbe087daeedd3adf0c392efd89efc4fbe
+- evidence_id: validation
+  kind: validation
+  reference: data/records/kenoargentotetrahedrite-zn.yaml
+  locator: Real CLI validation via .venv/bin/cmmmech validate --require-records and
+    .venv/bin/cmmmech validate-history --base main
+  accessed_at: '2026-11-04T18:54:40Z'
+  support: supports
+  summary: Checked 683 record(s); 0 failed. Checked 1295 history record(s); 0 error(s).
+  snapshot_sha256: e57171f3a27ab6d37b0e4721ea2a48c7f3989143b1f171377dbba7bbda20d049
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: .venv/bin/cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 683 record(s); 0 failed.
+  target_ids:
+  - cmmmech:kenoargentotetrahedrite-zn
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: .venv/bin/cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1295 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:kenoargentotetrahedrite-zn
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA:2020-075 identity, Yindongpo type locality, JEOL JXA-8100
+    WDS chemistry, 785 nm Raman spectrum, cubic I-43m [Ag6]4+-bearing tetrahedrite
+    structure, and internal source discrepancy for kenoargentotetrahedrite-(Zn)
+  outcome: supported
+  summary: All numeric, crystallographic, optical, Raman, and chemical claims in data/records/kenoargentotetrahedrite-zn.yaml
+    (SHA-256 e57171f3a27ab6d37b0e4721ea2a48c7f3989143b1f171377dbba7bbda20d049) match
+    the bounded primary-source passages and rendered table PNGs of Qu K, Sima X, Gu
+    X, Sun W, Fan G, Yang Z, and Wang Y (2024) Kenoargentotetrahedrite-(Zn), [Ag6]4+(Cu4Zn2)Sb4S12□,
+    a new member of the tetrahedrite group from the Yindongpo Au deposit, China, Eur.
+    J. Mineral. 36:397-409, pp. 397-409, Tables 1-7, Figures 1-6 (38 bounded passages
+    <= 1,800 B across 13 full-PDF pages; 10 main-text pages / 27 passages, plus PNG
+    renders of pages 4 and 6) and the September 2026 IMA Master List (p. 111).
+  target_ids:
+  - cmmmech:kenoargentotetrahedrite-zn
+  evidence_ids:
+  - owner
+  - ima_authority
+  - qu_2024_primary
+- assessment_id: mechanism_absence_and_provenance_verification
+  area: provenance
+  topic: Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE
+    provenance
+  outcome: supported
+  summary: data/records/kenoargentotetrahedrite-zn.yaml accurately omits mechanisms
+    (0 mechanisms) and explicitly discloses that no biological or microbial interaction
+    data are reported in the type mineralogical description. Append-only CREATE history
+    sidecar passes validation with 0 errors.
+  target_ids:
+  - cmmmech:kenoargentotetrahedrite-zn
+  evidence_ids:
+  - owner
+  - qu_2024_primary
+  - create_history
+  - validation
+findings: []
+actions: []
+summary: 'Kenoargentotetrahedrite-(Zn) (IMA:2020-075, status A, [Ag6]4+(Cu4Zn2)Sb4S12[])
+  passes primary-source scientific review (scientific_review: true) at SHA-256 e57171f3a27ab6d37b0e4721ea2a48c7f3989143b1f171377dbba7bbda20d049
+  against all bounded passages and rendered table PNGs of Qu K, Sima X, Gu X, Sun
+  W, Fan G, Yang Z, and Wang Y (2024) Kenoargentotetrahedrite-(Zn), [Ag6]4+(Cu4Zn2)Sb4S12□,
+  a new member of the tetrahedrite group from the Yindongpo Au deposit, China, Eur.
+  J. Mineral. 36:397-409, pp. 397-409, Tables 1-7, Figures 1-6 (38 bounded passages
+  <= 1,800 B across 13 full-PDF pages; 10 main-text pages / 27 passages, plus PNG
+  renders of pages 4 and 6).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed under the Round 126 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage) plus single-page 150-DPI PNG table renders.
+related_reviews: []
+```
