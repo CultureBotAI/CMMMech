@@ -1,0 +1,29 @@
+history_version: 1
+target:
+  kind: record
+  slug: lindbergite
+  path: data/records/lindbergite.yaml
+session:
+  id: 2026-11-04T152432Z-antigravity-6dfe61
+  timestamp: '2026-11-04T15:24:32Z'
+  actors:
+  - name: antigravity
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Include strain-matched Aspergillus niger ATCC 1015 UniProtKB:G3Y4N5 in cexa_citrate_exporter.description
+    in causal_graphs[0] (Issue #920, GRP-C7S5-003).'
+  details: 'Updated causal_graphs[0].nodes[0].description (cexa_citrate_exporter in niger_associated_manganese_oxalate_formation_graph)
+    to cite both the strain-matched Aspergillus niger ATCC 1015 CexA entry (UniProtKB:G3Y4N5,
+    CEXA_ASPNA / ASPNIDRAFT_56962) and the species-level entry (UniProtKB:A0A254TZW7, CEXA_ASPNG),
+    resolving cmmmech-cycle7-stage4-finding-0003 (Issue #920).'
+  sections:
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/920

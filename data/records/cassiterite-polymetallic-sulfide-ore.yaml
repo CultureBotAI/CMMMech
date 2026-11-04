@@ -345,16 +345,16 @@ causal_graphs:
     target: tth_hydrolase
     predicate: supplies_substrate_for
     relationship: oxidation of sulfide to sulfur/polythionate intermediates
-    description: Sqr sulfide-quinone oxidoreductases (A. caldus Atc_1705, Atc_1437; L. ferriphilum Y981_02650; S. thermosulfidooxidans SAMN00768000_0580) oxidizes reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by TetH tetrathionate hydrolases (A. caldus Atc_1595, tetH BAE30_05680).
+    description: Sqr sulfide-quinone oxidoreductases (A. caldus Atc_1705, Atc_1437; L. ferriphilum Y981_02650; S. thermosulfidooxidans SAMN00768000_0580) oxidize reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by TetH tetrathionate hydrolases (A. caldus Atc_1595, tetH BAE30_05680).
     evidence:
     - source_ref: wang2025
       supports: partial
-      explanation: Representative reduced-sulfur oxidation in Acidithiobacillus caldus and Leptospirillum ferriphilum couples Sqr homologs (Atc_1705, Atc_1437, Y981_02650) to periplasmic TetH (Atc_1595) during 45 C consortium pretreatment of Myanmar cassiterite-polymetallic sulfide ore in Wang et al. (2025); individual enzyme activities were not directly assayed.
+      explanation: Representative reduced-sulfur oxidation in Acidithiobacillus caldus, Leptospirillum ferriphilum, and Sulfobacillus thermosulfidooxidans couples Sqr homologs (Atc_1705, Atc_1437, Y981_02650, SAMN00768000_0580) to periplasmic TetH homologs (Atc_1595, tetH BAE30_05680) during 45 C consortium pretreatment of Myanmar cassiterite-polymetallic sulfide ore in Wang et al. (2025); individual enzyme activities were not directly assayed.
   - source: tth_hydrolase
     target: moderately_thermophilic_consortium_leach_system
     predicate: produces
     relationship: sulfuric acid proton and lixiviant generation
-    description: TetH tetrathionate hydrolases (A. caldus Atc_1595, tetH BAE30_05680) disproportionates tetrathionate and polythionate intermediates into sulfate and H+, contributing to 45 C iron-free modified 9K culture system (initial pH 2.0, 170 rpm) with single or 1:1:1 mixed L. ferriphilum, S. thermosulfidooxidans, and A. caldus inocula (10% v/v).
+    description: TetH tetrathionate hydrolases (A. caldus Atc_1595, tetH BAE30_05680) disproportionate tetrathionate and polythionate intermediates into sulfate and H+, contributing to 45 C iron-free modified 9K culture system (initial pH 2.0, 170 rpm) with single or 1:1:1 mixed L. ferriphilum, S. thermosulfidooxidans, and A. caldus inocula (10% v/v).
     evidence:
     - source_ref: wang2025
       supports: partial
@@ -390,7 +390,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: Enrich cassiterite-polymetallic-sulfide-ore protein_examples with Sulfobacillus thermosulfidooxidans DSM 9293 Sqr (UniProtKB:A0A1W1W805) and Acidithiobacillus caldus TetH (UniProtKB:A4ZV25)
+- timestamp: '2026-11-04T15:24:32Z'
+  curator: antigravity
+  action: EDIT
+  summary: 'Pluralize Sqr/TetH edge verbs and include S. thermosulfidooxidans SAMN00768000_0580 and A. caldus tetH BAE30_05680 in sqr_reductase -> tth_hydrolase edge explanation (Issue #919, GRP-C7S5-002).'
 history_refs:
 - history/records/cassiterite-polymetallic-sulfide-ore/2026-10-12T052443Z-codex-dc0f7f.yaml
 - history/records/cassiterite-polymetallic-sulfide-ore/2026-11-04T101915Z-marcin-80de24.yaml
 - history/records/cassiterite-polymetallic-sulfide-ore/2026-11-04T113741Z-marcin-121fc3.yaml
+- history/records/cassiterite-polymetallic-sulfide-ore/2026-11-04T152432Z-antigravity-bdbd30.yaml

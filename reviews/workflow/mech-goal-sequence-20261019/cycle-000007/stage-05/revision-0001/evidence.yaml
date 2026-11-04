@@ -1,0 +1,145 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 7
+stage: 5
+revision: 1
+outcome: completed
+summary: Consumed the 3 Cycle 7 Stage 4 review findings (cmmmech-cycle7-stage4-finding-0001, cmmmech-cycle7-stage4-finding-0002,
+  cmmmech-cycle7-stage4-finding-0003) across 16 distinct records, grouped them by root cause and repair
+  ownership into GRP-C7S5-001 (#918, 4 Round 125 mineral records fengruiite, igelstromite, lazerckerite,
+  plumbogottlobite populated with top-level ima_symbol Fru, Ig, Lzc, Pgtb), GRP-C7S5-002 (#919, 9 Stage
+  3 sulfur-oxidizing records updated to pluralize edge verbs and list all node-attached Sqr and TetH/Tth
+  loci in outgoing edge evidence explanations), and GRP-C7S5-003 (#920, 3 Aspergillus niger ATCC 1015
+  records birnessite [causal_graphs[1].nodes[0]], lindbergite [causal_graphs[0].nodes[0]], and manganese-ore
+  [causal_graphs[0].nodes[0]] updated so cexa_citrate_exporter.description explicitly names both strain-matched
+  ATCC 1015 CexA UniProtKB:G3Y4N5 [CEXA_ASPNA / ASPNIDRAFT_56962] and species-level reviewed CexA UniProtKB:A0A254TZW7
+  [CEXA_ASPNG]), applied all 16 record remediations with 16 append-only EDIT history sidecars and regenerated
+  pages/, preserved all immutable Stage 4 review bundles untouched, and verified all 16 remediated records
+  in structured review bundle 20261104T153000Z-cycle7-stage5-remediation-verification with verdict pass
+  and 0 carry-forward findings.
+source_revision: 7369b587c86b77cbd43a38cdfdb2477ae8bba1d0
+scope_frozen_at: '2026-11-04T15:20:00Z'
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000007/stage-04/revision-0001/evidence.yaml
+  sha256: 908833964996c9690db95c25eb7249bb5f98e4c2beaebdf015df2ffe270aca4c
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000007/stage-05/revision-0001/issue_map.md
+  sha256: f195bd01919b8bd69f13bcf71e950794f433230eb8a66843b23a2193115ec5dd
+  kind: issue_map
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000007/stage-05/revision-0001/validation.md
+  sha256: 0349f431d931df6cb4d3aa730b40f685ee787ffe5cb0ee17bfc38a65b5f63d83
+  kind: validation
+findings:
+- finding_id: cmmmech-cycle7-stage4-finding-0001
+  carried_from: cmmmech-cycle7-stage4-finding-0001
+  status: resolved
+  group_id: GRP-C7S5-001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/918
+  summary: 'Four of the five IMA-CNMNC Round 125 mineral records curated in Cycle 7 Stage 1 (PR #910,
+    commit fa7431ae) — data/records/fengruiite.yaml (cmmmech:fengruiite, IMA 2024-045), data/records/igelstromite.yaml
+    (cmmmech:igelstromite, IMA 2021-035), data/records/lazerckerite.yaml (cmmmech:lazerckerite, IMA 2022-113),
+    and data/records/plumbogottlobite.yaml (cmmmech:plumbogottlobite, IMA 2025-075) — explicitly state
+    their IMA-CNMNC-approved mineral symbols in description (''IMA symbol Fru'' in fengruiite.yaml line
+    8 from Tian et al. 2026 Eur. J. Mineral. 38:519-530, p. 519; ''IMA symbol Ig'' in igelstromite.yaml
+    line 9 from Holtstam et al. 2024 Eur. J. Mineral. 36:311-322, p. 311; ''official IMA symbol Lzc''
+    in lazerckerite.yaml lines 11-12 from Pazout et al. 2024 Eur. J. Mineral. 36:641-656, p. 641; and
+    ''official IMA symbol Pgtb'' in plumbogottlobite.yaml line 8 from Kampf et al. 2026 Eur. J. Mineral.
+    38:209-216, p. 209), but omit the top-level ima_symbol slot (ima_symbol: Fru, ima_symbol: Ig, ima_symbol:
+    Lzc, and ima_symbol: Pgtb immediately following material_kind: mineral), unlike peer IMA mineral records
+    such as data/records/andreybulakhite.yaml (ima_symbol: Adb), data/records/vielleaureite-ce.yaml (ima_symbol:
+    Vlr-Ce), data/records/xianhuaite-ce.yaml (ima_symbol: Xhu-Ce), and data/records/yttrotungstite-nd.yaml
+    (ima_symbol: Ytgs-Nd).'
+  disposition: 'Resolved under #918 (GRP-C7S5-001) by populating top-level ima_symbol: Fru in data/records/fengruiite.yaml,
+    ima_symbol: Ig in data/records/igelstromite.yaml, ima_symbol: Lzc in data/records/lazerckerite.yaml,
+    and ima_symbol: Pgtb in data/records/plumbogottlobite.yaml immediately after material_kind: mineral
+    with 4 append-only EDIT history sidecars; verified in reviews/structured/20261104T153000Z-cycle7-stage5-remediation-verification/review.yaml.'
+- finding_id: cmmmech-cycle7-stage4-finding-0002
+  carried_from: cmmmech-cycle7-stage4-finding-0002
+  status: resolved
+  group_id: GRP-C7S5-002
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/919
+  summary: 'Across the 9 sulfur-oxidizing causal graphs updated in Cycle 7 Stage 3 (PR #915, commit ff4a9841)
+    (1 element: copper.yaml; 3 mineral: chalcopyrite.yaml, molybdenite.yaml, skutterudite.yaml; 2 primary_resource:
+    cassiterite-polymetallic-sulfide-ore.yaml, chalcopyrite-enargite-concentrate.yaml; 3 secondary_resource:
+    coal-beneficiation-waste.yaml, copper-smelter-flue-dust.yaml, pyrite-roasting-cinder.yaml), edges[0]
+    (sqr_reductase -> tth_hydrolase) and edges[1] (tth_hydrolase -> <leach_system>) had their pluralized
+    node labels substituted into edge.description while retaining singular verbs (''Sqr ... oxidoreductases
+    (...) oxidizes ...'' or ''Sqr ... reductases (...) catalyzes ...'', and ''TetH/Tth tetrathionate hydrolases
+    (...) disproportionates ...'' or ''Tth tetrathionate hydrolases (...) disproportionates ...''), and
+    in 7 of those 9 records (cassiterite-polymetallic-sulfide-ore.yaml, chalcopyrite.yaml, chalcopyrite-enargite-concentrate.yaml,
+    coal-beneficiation-waste.yaml, copper.yaml, molybdenite.yaml, pyrite-roasting-cinder.yaml) edges[0].evidence[0].explanation
+    still lists only the pre-Stage-3 Sqr/TetH/Tth locus subset (''(Atc_1705, Atc_1437, Y981_02650) and
+    TetH (Atc_1595)'' or ''Sqr paralogs (AFE_1792, AFE_0267) and Tth (AFE_0029)''), omitting the Stage-3-added
+    Sulfobacillus thermosulfidooxidans DSM 9293 Sqr (SAMN00768000_0580), Acidithiobacillus caldus ZBY
+    TetH (tetH / BAE30_05680), and Acidithiobacillus ferrooxidans DSM 16523 Tth (DN052_12875) homologs
+    grounded on sqr_reductase and tth_hydrolase.'
+  disposition: 'Resolved under #919 (GRP-C7S5-002) by pluralizing outgoing edge verbs (''oxidizes'' ->
+    ''oxidize'', ''catalyzes'' -> ''catalyze'', ''disproportionates'' -> ''disproportionate'') and expanding
+    parenthetical locus lists in causal_graphs[0].edges[i].evidence[0].explanation to name every node-attached
+    Sqr and TetH/Tth locus across all 9 affected sulfur-oxidizing records with 9 append-only EDIT history
+    sidecars; verified in reviews/structured/20261104T153000Z-cycle7-stage5-remediation-verification/review.yaml.'
+- finding_id: cmmmech-cycle7-stage4-finding-0003
+  carried_from: cmmmech-cycle7-stage4-finding-0003
+  status: resolved
+  group_id: GRP-C7S5-003
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/920
+  summary: In data/records/birnessite.yaml (cmmmech:birnessite, causal_graphs[1] fungal_synthetic_cobalt_birnessite_transformation_graph,
+    lines 316-363), data/records/lindbergite.yaml (cmmmech:lindbergite, causal_graphs[0] niger_associated_manganese_oxalate_formation_graph,
+    lines 151-198), and data/records/manganese-ore.yaml (cmmmech:manganese-ore, causal_graphs[0] fungal_nkamouna_laterite_transformation_graph,
+    lines 136-183), node cexa_citrate_exporter is grounded to both the strain-matched Aspergillus niger
+    ATCC 1015 reference-proteome entry UniProtKB:G3Y4N5 (CEXA_ASPNA, locus ASPNIDRAFT_56962) and the species-level
+    reviewed entry UniProtKB:A0A254TZW7 (CEXA_ASPNG), but cexa_citrate_exporter.description still reads
+    'Reviewed Aspergillus niger plasma-membrane citrate exporter (UniProtKB:A0A254TZW7) representing the
+    fungal organic-acid secretion machinery.', naming only UniProtKB:A0A254TZW7 and omitting the strain-matched
+    ATCC 1015 reference-proteome entry UniProtKB:G3Y4N5 (CEXA_ASPNA / ASPNIDRAFT_56962).
+  disposition: 'Resolved under #920 (GRP-C7S5-003) by updating cexa_citrate_exporter node description
+    in data/records/birnessite.yaml (causal_graphs[1].nodes[0]), data/records/lindbergite.yaml (causal_graphs[0].nodes[0]),
+    and data/records/manganese-ore.yaml (causal_graphs[0].nodes[0]) to explicitly name both strain-matched
+    A. niger ATCC 1015 CexA UniProtKB:G3Y4N5 (CEXA_ASPNA / ASPNIDRAFT_56962) and species-level reviewed
+    CexA UniProtKB:A0A254TZW7 (CEXA_ASPNG) with 3 append-only EDIT history sidecars; verified in reviews/structured/20261104T153000Z-cycle7-stage5-remediation-verification/review.yaml.'
+groups:
+- group_id: GRP-C7S5-001
+  finding_ids:
+  - cmmmech-cycle7-stage4-finding-0001
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/918
+  status: resolved
+  summary: 'Populate top-level ima_symbol: Fru, Ig, Lzc, and Pgtb on the 4 Round 125 mineral records (fengruiite,
+    igelstromite, lazerckerite, plumbogottlobite) with 4 append-only EDIT history sidecars.'
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000007/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000007/stage-05/revision-0001/validation.md
+  disposition: Populated top-level ima_symbol on fengruiite.yaml, igelstromite.yaml, lazerckerite.yaml,
+    and plumbogottlobite.yaml with 4 append-only EDIT history sidecars and verified in 20261104T153000Z-cycle7-stage5-remediation-verification.
+- group_id: GRP-C7S5-002
+  finding_ids:
+  - cmmmech-cycle7-stage4-finding-0002
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/919
+  status: resolved
+  summary: Pluralize outgoing causal-graph edge verbs and list all node-attached Sqr and TetH/Tth loci
+    in edge evidence explanations across 9 Stage 3 sulfur-oxidizing records with 9 append-only EDIT history
+    sidecars.
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000007/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000007/stage-05/revision-0001/validation.md
+  disposition: Updated outgoing causal-graph edge descriptions and edge evidence explanations across all
+    9 sulfur-oxidizing records in GRP-C7S5-002 with 9 append-only EDIT history sidecars and verified in
+    20261104T153000Z-cycle7-stage5-remediation-verification.
+- group_id: GRP-C7S5-003
+  finding_ids:
+  - cmmmech-cycle7-stage4-finding-0003
+  issue_url: https://github.com/CultureBotAI/CMMMech/issues/920
+  status: resolved
+  summary: Update cexa_citrate_exporter node description in birnessite.yaml (causal_graphs[1].nodes[0]),
+    lindbergite.yaml (causal_graphs[0].nodes[0]), and manganese-ore.yaml (causal_graphs[0].nodes[0]) to
+    explicitly name strain-matched A. niger ATCC 1015 CexA UniProtKB:G3Y4N5 (CEXA_ASPNA / ASPNIDRAFT_56962)
+    alongside species-level reviewed CexA UniProtKB:A0A254TZW7 (CEXA_ASPNG) with 3 append-only EDIT history
+    sidecars.
+  resolution_evidence:
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000007/stage-05/revision-0001/issue_map.md
+  - reviews/workflow/mech-goal-sequence-20261019/cycle-000007/stage-05/revision-0001/validation.md
+  disposition: Updated cexa_citrate_exporter.description across birnessite.yaml, lindbergite.yaml, and
+    manganese-ore.yaml with 3 append-only EDIT history sidecars and verified in 20261104T153000Z-cycle7-stage5-remediation-verification.
+carry_forward_ids: []
+infra_tasks: []

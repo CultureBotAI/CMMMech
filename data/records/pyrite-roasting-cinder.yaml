@@ -374,16 +374,16 @@ causal_graphs:
     target: tth_hydrolase
     predicate: supplies_substrate_for
     relationship: oxidation of sulfide to sulfur/polythionate intermediates
-    description: Sqr sulfide-quinone oxidoreductases (A. caldus Atc_1705, Atc_1437; L. ferriphilum Y981_02650; S. thermosulfidooxidans SAMN00768000_0580) oxidizes reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by TetH tetrathionate hydrolases (A. caldus Atc_1595, tetH BAE30_05680).
+    description: Sqr sulfide-quinone oxidoreductases (A. caldus Atc_1705, Atc_1437; L. ferriphilum Y981_02650; S. thermosulfidooxidans SAMN00768000_0580) oxidize reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by TetH tetrathionate hydrolases (A. caldus Atc_1595, tetH BAE30_05680).
     evidence:
     - source_ref: pereira2025
       supports: partial
-      explanation: Reduced-sulfur oxidation in the SLA consortium members Acidithiobacillus caldus DSM 8584 and Leptospirillum ferriphilum DSM 14647 couples Sqr homologs (Atc_1705, Atc_1437, Y981_02650) and periplasmic TetH (Atc_1595) when supplied with 1% wt/vol elemental sulfur at 42 C in Pereira da Luz (2025); individual genes were not directly assayed.
+      explanation: Reduced-sulfur oxidation in the SLA consortium members Acidithiobacillus caldus DSM 8584, Leptospirillum ferriphilum DSM 14647, and Sulfobacillus thermosulfidooxidans DSM 9293T couples Sqr homologs (Atc_1705, Atc_1437, Y981_02650, SAMN00768000_0580) and periplasmic TetH homologs (Atc_1595, tetH BAE30_05680) when supplied with 1% wt/vol elemental sulfur at 42 C in Pereira da Luz (2025); individual genes were not directly assayed.
   - source: tth_hydrolase
     target: sla_consortium_sulfur_ferrous_hbs_leach_system
     predicate: produces
     relationship: sulfuric acid proton and lixiviant generation
-    description: TetH tetrathionate hydrolases (A. caldus Atc_1595, tetH BAE30_05680) disproportionates tetrathionate and polythionate intermediates into sulfate and H+, contributing to 7-day-adapted SLA consortium (S. thermosulfidooxidans DSM 9293T, L. ferriphilum DSM 14647, A. caldus DSM 8584; 10% v/v) in 100 mL HBS medium with 1% wt/vol S0 and 54 mM Fe2+ (initial pH 1.66, 42 C, 9 days).
+    description: TetH tetrathionate hydrolases (A. caldus Atc_1595, tetH BAE30_05680) disproportionate tetrathionate and polythionate intermediates into sulfate and H+, contributing to 7-day-adapted SLA consortium (S. thermosulfidooxidans DSM 9293T, L. ferriphilum DSM 14647, A. caldus DSM 8584; 10% v/v) in 100 mL HBS medium with 1% wt/vol S0 and 54 mM Fe2+ (initial pH 1.66, 42 C, 9 days).
     evidence:
     - source_ref: pereira2025
       supports: partial
@@ -419,7 +419,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: Enrich pyrite-roasting-cinder protein_examples with strain-matched Sulfobacillus thermosulfidooxidans DSM 9293 Sqr (UniProtKB:A0A1W1W805) and Acidithiobacillus caldus TetH (UniProtKB:A4ZV25)
+- timestamp: '2026-11-04T15:24:32Z'
+  curator: antigravity
+  action: EDIT
+  summary: 'Pluralize Sqr/TetH edge verbs and include S. thermosulfidooxidans DSM 9293T SAMN00768000_0580 and A. caldus tetH BAE30_05680 in sqr_reductase -> tth_hydrolase edge explanation (Issue #919, GRP-C7S5-002).'
 history_refs:
 - history/records/pyrite-roasting-cinder/2026-10-12T140217Z-codex-e8c8b0.yaml
 - history/records/pyrite-roasting-cinder/2026-11-04T102015Z-marcin-a73e3b.yaml
 - history/records/pyrite-roasting-cinder/2026-11-04T113742Z-marcin-c4162b.yaml
+- history/records/pyrite-roasting-cinder/2026-11-04T152432Z-antigravity-6455ec.yaml

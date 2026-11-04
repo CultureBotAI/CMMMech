@@ -255,16 +255,16 @@ causal_graphs:
     target: tth_hydrolase
     predicate: supplies_substrate_for
     relationship: oxidation of sulfide to sulfur/polythionate intermediates
-    description: Sqr sulfide-quinone reductases (Atc_1705; Atc_1437) catalyzes oxidation of reduced sulfur species to zero-valent sulfur and polythionate intermediates metabolized by TetH tetrathionate hydrolases (Atc_1595; tetH BAE30_05680).
+    description: Sqr sulfide-quinone reductases (Atc_1705; Atc_1437) catalyze oxidation of reduced sulfur species to zero-valent sulfur and polythionate intermediates metabolized by TetH tetrathionate hydrolases (Atc_1595; tetH BAE30_05680).
     evidence:
     - source_ref: oyama_2021
       supports: partial
-      explanation: Reduced-sulfur oxidation in Acidithiobacillus caldus couples Sqr paralogs (Atc_1705, Atc_1437) and periplasmic tetrathionate hydrolase TetH (Atc_1595) during feed-dependent carbon-assisted mixed-culture bioleaching of three chalcopyrite/enargite/pyrite concentrates (D3, Eb, Ea) at 45 C by a four-member consortium including Acidithiobacillus caldus KU in Oyama et al. (2021); individual Atc_1705/Atc_1437/Atc_1595 genes were not directly assayed.
+      explanation: Reduced-sulfur oxidation in Acidithiobacillus caldus couples Sqr paralogs (Atc_1705, Atc_1437) and periplasmic tetrathionate hydrolase TetH homologs (Atc_1595, tetH BAE30_05680) during feed-dependent carbon-assisted mixed-culture bioleaching of three chalcopyrite/enargite/pyrite concentrates (D3, Eb, Ea) at 45 C by a four-member consortium including Acidithiobacillus caldus KU in Oyama et al. (2021); individual Atc_1705/Atc_1437/Atc_1595/tetH genes were not directly assayed.
   - source: tth_hydrolase
     target: acidic_oxidizing_consortium_leach_liquor
     predicate: produces
     relationship: sulfuric acid proton and lixiviant generation
-    description: TetH tetrathionate hydrolases (Atc_1595; tetH BAE30_05680) disproportionates tetrathionate and polythionate intermediates into sulfate and H+, generating Four-member 45 C consortium (Acidiplasma sp. Fv-Ap, A. ferrooxidans ICP, S. sibiricus N1, A. caldus KU; 10^7 cells/mL each) in 200 mL heterotrophic basal salts medium (5 mM Fe2+, 0.01% w/v S0, 0.01% w/v yeast extract, initial pH 1.5, 0/0.05/0.3% w/v activated carbon).
+    description: TetH tetrathionate hydrolases (Atc_1595; tetH BAE30_05680) disproportionate tetrathionate and polythionate intermediates into sulfate and H+, generating Four-member 45 C consortium (Acidiplasma sp. Fv-Ap, A. ferrooxidans ICP, S. sibiricus N1, A. caldus KU; 10^7 cells/mL each) in 200 mL heterotrophic basal salts medium (5 mM Fe2+, 0.01% w/v S0, 0.01% w/v yeast extract, initial pH 1.5, 0/0.05/0.3% w/v activated carbon).
     evidence:
     - source_ref: oyama_2021
       supports: partial
@@ -308,9 +308,14 @@ curation_history:
   curator: marcin
   action: edit
   summary: Enrich chalcopyrite-enargite-concentrate tth_hydrolase protein_examples with second Acidithiobacillus caldus TetH ortholog (UniProtKB:A4ZV25)
+- timestamp: '2026-11-04T15:24:32Z'
+  curator: antigravity
+  action: EDIT
+  summary: 'Pluralize Sqr/TetH edge verbs and include A. caldus tetH BAE30_05680 in sqr_reductase -> tth_hydrolase edge explanation (Issue #919, GRP-C7S5-002).'
 history_refs:
 - history/records/chalcopyrite-enargite-concentrate/2026-10-12T114445Z-codex-48240b.yaml
 - history/records/chalcopyrite-enargite-concentrate/2026-10-31T053145Z-marcin-8eb0b4.yaml
 - history/records/chalcopyrite-enargite-concentrate/2026-10-31T090426Z-marcin-42be98.yaml
 - history/records/chalcopyrite-enargite-concentrate/2026-10-31T094622Z-marcin-0a610a.yaml
 - history/records/chalcopyrite-enargite-concentrate/2026-11-04T113741Z-marcin-a47150.yaml
+- history/records/chalcopyrite-enargite-concentrate/2026-11-04T152432Z-antigravity-12930b.yaml
