@@ -1,0 +1,36 @@
+history_version: 1
+target:
+  kind: record
+  slug: tennantite-concentrate
+  path: data/records/tennantite-concentrate.yaml
+session:
+  id: 2026-11-04T223801Z-marcin-6f0b14
+  timestamp: '2026-11-04T22:38:01Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Align acidophile_associated_copper_mobilization_graph and protein_examples annotations
+    with 200 mL/1.2 L culture conditions, MLA/bulk assays, and 52%/38% Cu endpoints in Kondo
+    et al. (2024) (Issue #925)'
+  details: 'Updated acidophile_associated_copper_mobilization_graph and protein_examples in
+    tennantite-concentrate.yaml to match the 50-day duplicate shake flasks (200 mL medium
+    in 500 mL vessels, 0.02% yeast extract, 5 mM Fe(II), 5% w/v concentrate, 10% v/v inoculum,
+    initial pH 1.5, 45 C, 150 rpm), 100-day 2-L batch reactors (1.2 L medium, pH 2.0 through
+    day 37 and 1.5 from day 38, day-53 20 mM vs 10 mM Fe(II) additions), MLA/bulk assays (41
+    um median size, 31% S, 23% Cu, 12% Fe, 10% Zn, 7.8% Sb, 6.2% As), and ~70%/45%/52%/38%
+    Cu flask endpoints in Kondo et al. (2024) (Issue #925).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/925
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/924

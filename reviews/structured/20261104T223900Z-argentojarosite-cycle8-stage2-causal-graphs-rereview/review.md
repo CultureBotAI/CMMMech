@@ -1,0 +1,339 @@
+# Cycle 8 Stage 2 causal-graphs re-review of Argentojarosite (cmmmech:argentojarosite) after Issue #925 fixes
+
+- Review: 20261104T223900Z-argentojarosite-cycle8-stage2-causal-graphs-rereview
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-04T22:38:00Z
+- Finished UTC: 2026-11-04T22:39:00Z
+- Reviewer: antigravity / cmmmech-cycle8-stage2-causal-graphs-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Argentojarosite (cmmmech:argentojarosite) passes Cycle 8 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 6299c4d55ac692aa65156c04b00531c3a630c7249466d1509c8a3857c7cd7965: Curated data/records/argentojarosite.yaml (SHA-256 6299c4d55ac692aa65156c04b00531c3a630c7249466d1509c8a3857c7cd7965) with causal_graph 'culture_conditioned_argentojarosite_precipitation_graph' (mechanism_ref: culture_conditioned_argentojarosite_precipitation, 5 nodes / 4 edges; cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362)]; rus_cyc1_periplasmic_electron_transfer: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from primary source(s) mukherjee2013. Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).
+
+## Scope And Provenance
+
+Cycle 8 Stage 2 causal-graphs review of data/records/argentojarosite.yaml (SHA-256 6299c4d55ac692aa65156c04b00531c3a630c7249466d1509c8a3857c7cd7965) and its canonical EDIT history sidecar(s) (history/records/argentojarosite/2026-11-04T210559Z-marcin-b5e273.yaml, history/records/argentojarosite/2026-11-04T223800Z-marcin-833ddf.yaml) verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source evidence fidelity across causal_graph 'culture_conditioned_argentojarosite_precipitation_graph' (mechanism_ref: culture_conditioned_argentojarosite_precipitation, 5 nodes / 4 edges; cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362)]; rus_cyc1_periplasmic_electron_transfer: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]).
+
+Selection: Cycle 8 Stage 2 causal_graphs curation for cmmmech:argentojarosite
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base e299e1aca151b2192b36a718acf832b137818789.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:argentojarosite | data/records/argentojarosite.yaml | maintained | Argentojarosite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:argentojarosite | Checked 683 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:argentojarosite | All history sidecars pass validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Verification of causal_graphs structure, UniProtKB paralog grounding, and parity across causal_graph 'culture_conditioned_argentojarosite_precipitation_graph' (mechanism_ref: culture_conditioned_argentojarosite_precipitation, 5 nodes / 4 edges; cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362)]; rus_cyc1_periplasmic_electron_transfer: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)])
+
+graph: supported. Targets: cmmmech:argentojarosite.
+
+Curated data/records/argentojarosite.yaml (SHA-256 6299c4d55ac692aa65156c04b00531c3a630c7249466d1509c8a3857c7cd7965) with causal_graph 'culture_conditioned_argentojarosite_precipitation_graph' (mechanism_ref: culture_conditioned_argentojarosite_precipitation, 5 nodes / 4 edges; cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362)]; rus_cyc1_periplasmic_electron_transfer: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from primary source(s) mukherjee2013. Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).
+
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
+
+provenance: supported. Targets: cmmmech:argentojarosite.
+
+data/records/argentojarosite.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/argentojarosite/2026-11-04T210559Z-marcin-b5e273.yaml (SHA-256 46ed5b66bf609f706ff6cde4f3339278b8460ff34a9386836fea41d64b4b7643): Add culture_conditioned_argentojarosite_precipitation_graph causal graph and ground culture_conditioned_argentojarosite_precipitation to Acidithiobacillus ferrooxidans ATCC 23270 rus-operon UniProtKB entries (UniProtKB:B7JAQ7, UniProtKB:B7JAQ0, UniProtKB:B7JAQ6) — Added representative Acidithiobacillus ferrooxidans ATCC 23270 rus-operon iron-oxidation protein_examples (UniProtKB:B7JAQ7 cyc2/AFE_3153, UniProtKB:B7JAQ0 rus/AFE_3146, UniProtKB:B7JAQ6 cyc1/AFE_3152) and culture_conditioned_argentojarosite_precipitation_graph causal graph to argentojarosite.yaml.; history/records/argentojarosite/2026-11-04T223800Z-marcin-833ddf.yaml (SHA-256 b14ef759b56a27962344c7ac7032c0850c3f6b7e824a1a5fb381aab0554a3f2d): Align culture_conditioned_argentojarosite_precipitation_graph and protein_examples annotations with modified K/NH4-free medium and sampling schedule (Issue #925) — Updated culture_conditioned_argentojarosite_precipitation_graph and protein_examples in argentojarosite.yaml to match the modified potassium- and ammonium-free medium (120 mM FeSO4.7H2O, 1.9 mM MgSO4.7H2O, 4.0 mM H2SO4, 3.6 mM H3PO4, 7.6 mM HNO3; 22 +/- 2 C, 180 rpm, 5 to 7 days) and 8 h, 5 d, or 14 d AgNO3 sampling schedule in Mukherjee (2013) (Issue #925).) and passing all LinkML and history validation gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/argentojarosite.yaml; Working-tree record data/records/argentojarosite.yaml (causal_graphs and mechanisms[].protein_examples) | supports | Curated data/records/argentojarosite.yaml (SHA-256 6299c4d55ac692aa65156c04b00531c3a630c7249466d1509c8a3857c7cd7965) with causal_graph 'culture_conditioned_argentojarosite_precipitation_graph' (mechanism_ref: culture_conditioned_argentojarosite_precipitation, 5 nodes / 4 edges; cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362)]; rus_cyc1_periplasmic_electron_transfer: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from primary source(s) mukherjee2013. |
+| primary_source | https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=osu1374139251&amp;disposition=inline; mukherjee2013: Mukherjee C (2013). Characterization of argentojarosite synthesized with biologically produced ferric sulfate solutions. MSc thesis, Ohio State University, Microbiology. Official OhioLink accession osu1374139251, complete 71-page deposited PDF; experimental sections 2-4, printed pages 28-53 (PDF pages 38-63), Figures 5-16 and Tables 7-10. (https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=osu1374139251&amp;disposition=inline) | supports | Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362). Primary mechanism source(s) (mukherjee2013: Mukherjee C (2013). Characterization of argentojarosite synthesized with biologically produced ferric sulfate solutions. MSc thesis, Ohio State University, Microbiology. Official OhioLink accession osu1374139251, complete 71-page deposited PDF; experimental sections 2-4, printed pages 28-53 (PDF pages 38-63), Figures 5-16 and Tables 7-10. (https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=osu1374139251&amp;disposition=inline)) report culture-level iron/sulfur oxidation and mineral transformation/leaching without single-gene knockouts; supports: partial is strictly preserved on all enzyme-level edges and ProteinExample evidence items. |
+| edit_history | history/records/argentojarosite/2026-11-04T210559Z-marcin-b5e273.yaml; Canonical EDIT history sidecar history/records/argentojarosite/2026-11-04T210559Z-marcin-b5e273.yaml | supports | Canonical EDIT history sidecar history/records/argentojarosite/2026-11-04T210559Z-marcin-b5e273.yaml (SHA-256 46ed5b66bf609f706ff6cde4f3339278b8460ff34a9386836fea41d64b4b7643): Add culture_conditioned_argentojarosite_precipitation_graph causal graph and ground culture_conditioned_argentojarosite_precipitation to Acidithiobacillus ferrooxidans ATCC 23270 rus-operon UniProtKB entries (UniProtKB:B7JAQ7, UniProtKB:B7JAQ0, UniProtKB:B7JAQ6) — Added representative Acidithiobacillus ferrooxidans ATCC 23270 rus-operon iron-oxidation protein_examples (UniProtKB:B7JAQ7 cyc2/AFE_3153, UniProtKB:B7JAQ0 rus/AFE_3146, UniProtKB:B7JAQ6 cyc1/AFE_3152) and culture_conditioned_argentojarosite_precipitation_graph causal graph to argentojarosite.yaml. |
+| edit_history_2 | history/records/argentojarosite/2026-11-04T223800Z-marcin-833ddf.yaml; Canonical EDIT history sidecar history/records/argentojarosite/2026-11-04T223800Z-marcin-833ddf.yaml | supports | Canonical EDIT history sidecar history/records/argentojarosite/2026-11-04T223800Z-marcin-833ddf.yaml (SHA-256 b14ef759b56a27962344c7ac7032c0850c3f6b7e824a1a5fb381aab0554a3f2d): Align culture_conditioned_argentojarosite_precipitation_graph and protein_examples annotations with modified K/NH4-free medium and sampling schedule (Issue #925) — Updated culture_conditioned_argentojarosite_precipitation_graph and protein_examples in argentojarosite.yaml to match the modified potassium- and ammonium-free medium (120 mM FeSO4.7H2O, 1.9 mM MgSO4.7H2O, 4.0 mM H2SO4, 3.6 mM H3PO4, 7.6 mM HNO3; 22 +/- 2 C, 180 rpm, 5 to 7 days) and 8 h, 5 d, or 14 d AgNO3 sampling schedule in Mukherjee (2013) (Issue #925). |
+| validation | data/records/argentojarosite.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/argentojarosite.yaml and history/records/argentojarosite/2026-11-04T210559Z-marcin-b5e273.yaml, history/records/argentojarosite/2026-11-04T223800Z-marcin-833ddf.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed during Cycle 8 Stage 2 (causal_graphs) after addressing Issue #925 internal-consistency findings using scripts/curate_causal_graphs.py; supersedes initial review 20261104T210700Z-argentojarosite-cycle8-stage2-causal-graphs-review.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261104T223900Z-argentojarosite-cycle8-stage2-causal-graphs-rereview
+kind: record
+repository: CultureBotAI/CMMMech
+title: 'Cycle 8 Stage 2 causal-graphs re-review of Argentojarosite (cmmmech:argentojarosite)
+  after Issue #925 fixes'
+started_at: '2026-11-04T22:38:00Z'
+finished_at: '2026-11-04T22:39:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle8-stage2-causal-graphs-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 8 Stage 2 causal_graphs and ProteinExample curation in data/records/argentojarosite.yaml
+    (SHA-256 6299c4d55ac692aa65156c04b00531c3a630c7249466d1509c8a3857c7cd7965) against
+    UniProtKB reference proteomes and cited primary source(s) mukherjee2013.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: e299e1aca151b2192b36a718acf832b137818789
+  state: working_tree
+  inputs:
+  - path: data/records/argentojarosite.yaml
+    sha256: 6299c4d55ac692aa65156c04b00531c3a630c7249466d1509c8a3857c7cd7965
+    role: target
+  - path: history/records/argentojarosite/2026-11-04T210559Z-marcin-b5e273.yaml
+    sha256: 46ed5b66bf609f706ff6cde4f3339278b8460ff34a9386836fea41d64b4b7643
+    role: context
+  - path: history/records/argentojarosite/2026-11-04T223800Z-marcin-833ddf.yaml
+    sha256: b14ef759b56a27962344c7ac7032c0850c3f6b7e824a1a5fb381aab0554a3f2d
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:argentojarosite
+  path: data/records/argentojarosite.yaml
+  label: Argentojarosite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/argentojarosite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/argentojarosite/2026-11-04T210559Z-marcin-b5e273.yaml
+    role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/argentojarosite/2026-11-04T223800Z-marcin-833ddf.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 8 Stage 2 causal-graphs review of data/records/argentojarosite.yaml
+    (SHA-256 6299c4d55ac692aa65156c04b00531c3a630c7249466d1509c8a3857c7cd7965) and
+    its canonical EDIT history sidecar(s) (history/records/argentojarosite/2026-11-04T210559Z-marcin-b5e273.yaml,
+    history/records/argentojarosite/2026-11-04T223800Z-marcin-833ddf.yaml) verifying
+    causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source
+    evidence fidelity across causal_graph ''culture_conditioned_argentojarosite_precipitation_graph''
+    (mechanism_ref: culture_conditioned_argentojarosite_precipitation, 5 nodes / 4
+    edges; cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2,
+    UP000001362)]; rus_cyc1_periplasmic_electron_transfer: [UniProtKB:B7JAQ0 (rus,
+    RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]).'
+  selection: Cycle 8 Stage 2 causal_graphs curation for cmmmech:argentojarosite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:argentojarosite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/argentojarosite.yaml
+  locator: Working-tree record data/records/argentojarosite.yaml (causal_graphs and
+    mechanisms[].protein_examples)
+  accessed_at: '2026-11-04T22:38:30Z'
+  support: supports
+  summary: 'Curated data/records/argentojarosite.yaml (SHA-256 6299c4d55ac692aa65156c04b00531c3a630c7249466d1509c8a3857c7cd7965)
+    with causal_graph ''culture_conditioned_argentojarosite_precipitation_graph''
+    (mechanism_ref: culture_conditioned_argentojarosite_precipitation, 5 nodes / 4
+    edges; cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2,
+    UP000001362)]; rus_cyc1_periplasmic_electron_transfer: [UniProtKB:B7JAQ0 (rus,
+    RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]),
+    achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and caveats from primary source(s)
+    mukherjee2013.'
+  snapshot_sha256: 6299c4d55ac692aa65156c04b00531c3a630c7249466d1509c8a3857c7cd7965
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=osu1374139251&disposition=inline
+  locator: 'mukherjee2013: Mukherjee C (2013). Characterization of argentojarosite
+    synthesized with biologically produced ferric sulfate solutions. MSc thesis, Ohio
+    State University, Microbiology. Official OhioLink accession osu1374139251, complete
+    71-page deposited PDF; experimental sections 2-4, printed pages 28-53 (PDF pages
+    38-63), Figures 5-16 and Tables 7-10. (https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=osu1374139251&disposition=inline)'
+  accessed_at: '2026-11-04T22:38:30Z'
+  support: supports
+  summary: 'Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7
+    (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus
+    ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin,
+    gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans
+    ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol:
+    cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).
+    Primary mechanism source(s) (mukherjee2013: Mukherjee C (2013). Characterization
+    of argentojarosite synthesized with biologically produced ferric sulfate solutions.
+    MSc thesis, Ohio State University, Microbiology. Official OhioLink accession osu1374139251,
+    complete 71-page deposited PDF; experimental sections 2-4, printed pages 28-53
+    (PDF pages 38-63), Figures 5-16 and Tables 7-10. (https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=osu1374139251&disposition=inline))
+    report culture-level iron/sulfur oxidation and mineral transformation/leaching
+    without single-gene knockouts; supports: partial is strictly preserved on all
+    enzyme-level edges and ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/argentojarosite/2026-11-04T210559Z-marcin-b5e273.yaml
+  locator: Canonical EDIT history sidecar history/records/argentojarosite/2026-11-04T210559Z-marcin-b5e273.yaml
+  accessed_at: '2026-11-04T22:38:30Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/argentojarosite/2026-11-04T210559Z-marcin-b5e273.yaml
+    (SHA-256 46ed5b66bf609f706ff6cde4f3339278b8460ff34a9386836fea41d64b4b7643): Add
+    culture_conditioned_argentojarosite_precipitation_graph causal graph and ground
+    culture_conditioned_argentojarosite_precipitation to Acidithiobacillus ferrooxidans
+    ATCC 23270 rus-operon UniProtKB entries (UniProtKB:B7JAQ7, UniProtKB:B7JAQ0, UniProtKB:B7JAQ6)
+    — Added representative Acidithiobacillus ferrooxidans ATCC 23270 rus-operon iron-oxidation
+    protein_examples (UniProtKB:B7JAQ7 cyc2/AFE_3153, UniProtKB:B7JAQ0 rus/AFE_3146,
+    UniProtKB:B7JAQ6 cyc1/AFE_3152) and culture_conditioned_argentojarosite_precipitation_graph
+    causal graph to argentojarosite.yaml.'
+  snapshot_sha256: 46ed5b66bf609f706ff6cde4f3339278b8460ff34a9386836fea41d64b4b7643
+- evidence_id: edit_history_2
+  kind: record_content
+  reference: history/records/argentojarosite/2026-11-04T223800Z-marcin-833ddf.yaml
+  locator: Canonical EDIT history sidecar history/records/argentojarosite/2026-11-04T223800Z-marcin-833ddf.yaml
+  accessed_at: '2026-11-04T22:38:30Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/argentojarosite/2026-11-04T223800Z-marcin-833ddf.yaml
+    (SHA-256 b14ef759b56a27962344c7ac7032c0850c3f6b7e824a1a5fb381aab0554a3f2d): Align
+    culture_conditioned_argentojarosite_precipitation_graph and protein_examples annotations
+    with modified K/NH4-free medium and sampling schedule (Issue #925) — Updated culture_conditioned_argentojarosite_precipitation_graph
+    and protein_examples in argentojarosite.yaml to match the modified potassium-
+    and ammonium-free medium (120 mM FeSO4.7H2O, 1.9 mM MgSO4.7H2O, 4.0 mM H2SO4,
+    3.6 mM H3PO4, 7.6 mM HNO3; 22 +/- 2 C, 180 rpm, 5 to 7 days) and 8 h, 5 d, or
+    14 d AgNO3 sampling schedule in Mukherjee (2013) (Issue #925).'
+  snapshot_sha256: b14ef759b56a27962344c7ac7032c0850c3f6b7e824a1a5fb381aab0554a3f2d
+- evidence_id: validation
+  kind: validation
+  reference: data/records/argentojarosite.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-04T22:38:30Z'
+  support: supports
+  summary: data/records/argentojarosite.yaml and history/records/argentojarosite/2026-11-04T210559Z-marcin-b5e273.yaml,
+    history/records/argentojarosite/2026-11-04T223800Z-marcin-833ddf.yaml pass strict
+    LinkML schema, protein_examples parity, and history validation with 0 errors.
+  snapshot_sha256: 6299c4d55ac692aa65156c04b00531c3a630c7249466d1509c8a3857c7cd7965
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 683 record(s); 0 failed.
+  target_ids:
+  - cmmmech:argentojarosite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:argentojarosite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_protein_grounding
+  area: graph
+  topic: 'Verification of causal_graphs structure, UniProtKB paralog grounding, and
+    parity across causal_graph ''culture_conditioned_argentojarosite_precipitation_graph''
+    (mechanism_ref: culture_conditioned_argentojarosite_precipitation, 5 nodes / 4
+    edges; cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2,
+    UP000001362)]; rus_cyc1_periplasmic_electron_transfer: [UniProtKB:B7JAQ0 (rus,
+    RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)])'
+  outcome: supported
+  summary: 'Curated data/records/argentojarosite.yaml (SHA-256 6299c4d55ac692aa65156c04b00531c3a630c7249466d1509c8a3857c7cd7965)
+    with causal_graph ''culture_conditioned_argentojarosite_precipitation_graph''
+    (mechanism_ref: culture_conditioned_argentojarosite_precipitation, 5 nodes / 4
+    edges; cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2,
+    UP000001362)]; rus_cyc1_periplasmic_electron_transfer: [UniProtKB:B7JAQ0 (rus,
+    RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]),
+    achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and caveats from primary source(s)
+    mukherjee2013. Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7
+    (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus
+    ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin,
+    gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans
+    ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol:
+    cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).'
+  target_ids:
+  - cmmmech:argentojarosite
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
+  outcome: supported
+  summary: 'data/records/argentojarosite.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar(s) (history/records/argentojarosite/2026-11-04T210559Z-marcin-b5e273.yaml
+    (SHA-256 46ed5b66bf609f706ff6cde4f3339278b8460ff34a9386836fea41d64b4b7643): Add
+    culture_conditioned_argentojarosite_precipitation_graph causal graph and ground
+    culture_conditioned_argentojarosite_precipitation to Acidithiobacillus ferrooxidans
+    ATCC 23270 rus-operon UniProtKB entries (UniProtKB:B7JAQ7, UniProtKB:B7JAQ0, UniProtKB:B7JAQ6)
+    — Added representative Acidithiobacillus ferrooxidans ATCC 23270 rus-operon iron-oxidation
+    protein_examples (UniProtKB:B7JAQ7 cyc2/AFE_3153, UniProtKB:B7JAQ0 rus/AFE_3146,
+    UniProtKB:B7JAQ6 cyc1/AFE_3152) and culture_conditioned_argentojarosite_precipitation_graph
+    causal graph to argentojarosite.yaml.; history/records/argentojarosite/2026-11-04T223800Z-marcin-833ddf.yaml
+    (SHA-256 b14ef759b56a27962344c7ac7032c0850c3f6b7e824a1a5fb381aab0554a3f2d): Align
+    culture_conditioned_argentojarosite_precipitation_graph and protein_examples annotations
+    with modified K/NH4-free medium and sampling schedule (Issue #925) — Updated culture_conditioned_argentojarosite_precipitation_graph
+    and protein_examples in argentojarosite.yaml to match the modified potassium-
+    and ammonium-free medium (120 mM FeSO4.7H2O, 1.9 mM MgSO4.7H2O, 4.0 mM H2SO4,
+    3.6 mM H3PO4, 7.6 mM HNO3; 22 +/- 2 C, 180 rpm, 5 to 7 days) and 8 h, 5 d, or
+    14 d AgNO3 sampling schedule in Mukherjee (2013) (Issue #925).) and passing all
+    LinkML and history validation gates.'
+  target_ids:
+  - cmmmech:argentojarosite
+  evidence_ids:
+  - owner
+  - edit_history
+  - edit_history_2
+  - validation
+findings: []
+actions: []
+summary: 'Argentojarosite (cmmmech:argentojarosite) passes Cycle 8 Stage 2 causal-graphs
+  review (scientific_review: true) at SHA-256 6299c4d55ac692aa65156c04b00531c3a630c7249466d1509c8a3857c7cd7965:
+  Curated data/records/argentojarosite.yaml (SHA-256 6299c4d55ac692aa65156c04b00531c3a630c7249466d1509c8a3857c7cd7965)
+  with causal_graph ''culture_conditioned_argentojarosite_precipitation_graph'' (mechanism_ref:
+  culture_conditioned_argentojarosite_precipitation, 5 nodes / 4 edges; cyc2_outer_membrane_cytochrome:
+  [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362)]; rus_cyc1_periplasmic_electron_transfer:
+  [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2,
+  UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and
+  causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+  levels and caveats from primary source(s) mukherjee2013. Live-verified UniProtKB
+  reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c,
+  gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC
+  23270, UP000001362); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus,
+  SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362);
+  UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159
+  Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- 'Executed during Cycle 8 Stage 2 (causal_graphs) after addressing Issue #925 internal-consistency
+  findings using scripts/curate_causal_graphs.py; supersedes initial review 20261104T210700Z-argentojarosite-cycle8-stage2-causal-graphs-review.'
+related_reviews: []
+```

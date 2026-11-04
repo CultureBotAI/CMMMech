@@ -1,0 +1,32 @@
+history_version: 1
+target:
+  kind: record
+  slug: eudialyte-ore
+  path: data/records/eudialyte-ore.yaml
+session:
+  id: 2026-11-04T223800Z-marcin-43b914
+  timestamp: '2026-11-04T22:38:00Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Align culture_assisted_acid_leaching_graph and protein_examples annotations with
+    Sections 4.5.2-4.5.4 and 7.4.1 and Figures 4.5.2.1-4.5.4.1 in Hunter (2020) (Issue #925)'
+  details: 'Updated culture_assisted_acid_leaching_graph and protein_examples in eudialyte-ore.yaml
+    to cite Sections 4.5.2-4.5.4 and 7.4.1 and Figures 4.5.2.1, 4.5.3.1, and 4.5.3.4-4.5.4.1
+    of Hunter (2020) and match the ~3-week room-temperature (~25 C) triplicate 125 mL flask
+    conditions and absence of silica gelation at 0.50-1.00 g ore loading (Issue #925).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/925
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/924

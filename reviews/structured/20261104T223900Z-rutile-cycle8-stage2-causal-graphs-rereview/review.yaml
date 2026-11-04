@@ -1,0 +1,263 @@
+schema_version: 1.0.0
+review_id: 20261104T223900Z-rutile-cycle8-stage2-causal-graphs-rereview
+kind: record
+repository: CultureBotAI/CMMMech
+title: 'Cycle 8 Stage 2 causal-graphs re-review of Rutile (cmmmech:rutile) after Issue
+  #925 fixes'
+started_at: '2026-11-04T22:38:00Z'
+finished_at: '2026-11-04T22:39:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle8-stage2-causal-graphs-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 8 Stage 2 causal_graphs and ProteinExample curation in data/records/rutile.yaml
+    (SHA-256 b821b191e489a8b4ac7a7ec766cdc5a78d888f680d1d78cbd946af2a79328f49) against
+    UniProtKB reference proteomes and cited primary source(s) lu2012.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: e299e1aca151b2192b36a718acf832b137818789
+  state: working_tree
+  inputs:
+  - path: data/records/rutile.yaml
+    sha256: b821b191e489a8b4ac7a7ec766cdc5a78d888f680d1d78cbd946af2a79328f49
+    role: target
+  - path: history/records/rutile/2026-11-04T210559Z-marcin-4ab766.yaml
+    sha256: 6d361090a279a9e96ada1a00fa71b92e08e10d7993870e34b925e3f21fe1d23b
+    role: context
+  - path: history/records/rutile/2026-11-04T223801Z-marcin-f9c476.yaml
+    sha256: 5a97ef67547fb05f5be2ebf2183fbbe3e770468775dd610950c348c09608d618
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:rutile
+  path: data/records/rutile.yaml
+  label: Rutile
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/rutile.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/rutile/2026-11-04T210559Z-marcin-4ab766.yaml
+    role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/rutile/2026-11-04T223801Z-marcin-f9c476.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 8 Stage 2 causal-graphs review of data/records/rutile.yaml (SHA-256
+    b821b191e489a8b4ac7a7ec766cdc5a78d888f680d1d78cbd946af2a79328f49) and its canonical
+    EDIT history sidecar(s) (history/records/rutile/2026-11-04T210559Z-marcin-4ab766.yaml,
+    history/records/rutile/2026-11-04T223801Z-marcin-f9c476.yaml) verifying causal-graph
+    node/edge topology, UniProtKB reference-proteome grounding, and primary-source
+    evidence fidelity across causal_graph ''photocatalytic_support_of_iron_cycling_graph''
+    (mechanism_ref: photocatalytic_support_of_iron_cycling, 5 nodes / 4 edges; cyc2_outer_membrane_cytochrome:
+    [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362)]; rus_cyc1_periplasmic_electron_transfer:
+    [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2,
+    UP000001362)]).'
+  selection: Cycle 8 Stage 2 causal_graphs curation for cmmmech:rutile
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:rutile
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/rutile.yaml
+  locator: Working-tree record data/records/rutile.yaml (causal_graphs and mechanisms[].protein_examples)
+  accessed_at: '2026-11-04T22:38:30Z'
+  support: supports
+  summary: 'Curated data/records/rutile.yaml (SHA-256 b821b191e489a8b4ac7a7ec766cdc5a78d888f680d1d78cbd946af2a79328f49)
+    with causal_graph ''photocatalytic_support_of_iron_cycling_graph'' (mechanism_ref:
+    photocatalytic_support_of_iron_cycling, 5 nodes / 4 edges; cyc2_outer_membrane_cytochrome:
+    [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362)]; rus_cyc1_periplasmic_electron_transfer:
+    [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2,
+    UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and
+    causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+    levels and caveats from primary source(s) lu2012.'
+  snapshot_sha256: b821b191e489a8b4ac7a7ec766cdc5a78d888f680d1d78cbd946af2a79328f49
+- evidence_id: primary_source
+  kind: primary_source
+  reference: DOI:10.1038/ncomms1768
+  locator: 'lu2012: Lu A, Li Y, Jin S and colleagues (2012). Growth of non-phototrophic
+    microorganisms using solar energy through mineral photocatalysis. Nature Communications
+    3:768. DOI 10.1038/ncomms1768. Complete original eight-page article, especially
+    Figures 1, 2 and 4, Results on pages 2-5 and Methods on pages 6-7; original twelve-page
+    Supplementary Information, especially Figure S2 and pages 5-11. (https://doi.org/10.1038/ncomms1768)'
+  accessed_at: '2026-11-04T22:38:30Z'
+  support: supports
+  summary: 'Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7
+    (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus
+    ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin,
+    gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans
+    ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol:
+    cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).
+    Primary mechanism source(s) (lu2012: Lu A, Li Y, Jin S and colleagues (2012).
+    Growth of non-phototrophic microorganisms using solar energy through mineral photocatalysis.
+    Nature Communications 3:768. DOI 10.1038/ncomms1768. Complete original eight-page
+    article, especially Figures 1, 2 and 4, Results on pages 2-5 and Methods on pages
+    6-7; original twelve-page Supplementary Information, especially Figure S2 and
+    pages 5-11. (https://doi.org/10.1038/ncomms1768)) report culture-level iron/sulfur
+    oxidation and mineral transformation/leaching without single-gene knockouts; supports:
+    partial is strictly preserved on all enzyme-level edges and ProteinExample evidence
+    items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/rutile/2026-11-04T210559Z-marcin-4ab766.yaml
+  locator: Canonical EDIT history sidecar history/records/rutile/2026-11-04T210559Z-marcin-4ab766.yaml
+  accessed_at: '2026-11-04T22:38:30Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/rutile/2026-11-04T210559Z-marcin-4ab766.yaml
+    (SHA-256 6d361090a279a9e96ada1a00fa71b92e08e10d7993870e34b925e3f21fe1d23b): Add
+    photocatalytic_support_of_iron_cycling_graph causal graph and ground photocatalytic_support_of_iron_cycling
+    to Acidithiobacillus ferrooxidans ATCC 23270 rus-operon UniProtKB entries (UniProtKB:B7JAQ7,
+    UniProtKB:B7JAQ0, UniProtKB:B7JAQ6) — Added representative Acidithiobacillus ferrooxidans
+    ATCC 23270 rus-operon protein_examples (UniProtKB:B7JAQ7 cyc2/AFE_3153, UniProtKB:B7JAQ0
+    rus/AFE_3146, UniProtKB:B7JAQ6 cyc1/AFE_3152) and photocatalytic_support_of_iron_cycling_graph
+    causal graph to rutile.yaml.'
+  snapshot_sha256: 6d361090a279a9e96ada1a00fa71b92e08e10d7993870e34b925e3f21fe1d23b
+- evidence_id: edit_history_2
+  kind: record_content
+  reference: history/records/rutile/2026-11-04T223801Z-marcin-f9c476.yaml
+  locator: Canonical EDIT history sidecar history/records/rutile/2026-11-04T223801Z-marcin-f9c476.yaml
+  accessed_at: '2026-11-04T22:38:30Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/rutile/2026-11-04T223801Z-marcin-f9c476.yaml
+    (SHA-256 5a97ef67547fb05f5be2ebf2183fbbe3e770468775dd610950c348c09608d618): Align
+    photocatalytic_support_of_iron_cycling_graph and protein_examples annotations
+    with 350 mL PEM two-chamber reactor, 3.5e5 cells/mL HZ-PKU-1, and 0.54 g rutile
+    graphite photoanode (Issue #925) — Updated photocatalytic_support_of_iron_cycling_graph
+    and protein_examples in rutile.yaml to match Results (pages 2-5), Methods (pages
+    6-7), Figures 1, 2, and 4, and Supplementary Information pages 5-11 and Figure
+    S2 of Lu et al. (2012) (two 350 mL PEM-separated chambers, 1000 ohm resistor,
+    0.54 g 40-um natural rutile + 0.06 g acetylene black on 5 x 7 cm graphite anode,
+    12.5 g/L ascorbic acid + 2.5 g/L KCl under ~13.5 mW/cm2 380-760 nm light, 3.5e5
+    cells/mL HZ-PKU-1 in 41.7 g/L FeSO4.7H2O modified 9K medium) (Issue #925).'
+  snapshot_sha256: 5a97ef67547fb05f5be2ebf2183fbbe3e770468775dd610950c348c09608d618
+- evidence_id: validation
+  kind: validation
+  reference: data/records/rutile.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-04T22:38:30Z'
+  support: supports
+  summary: data/records/rutile.yaml and history/records/rutile/2026-11-04T210559Z-marcin-4ab766.yaml,
+    history/records/rutile/2026-11-04T223801Z-marcin-f9c476.yaml pass strict LinkML
+    schema, protein_examples parity, and history validation with 0 errors.
+  snapshot_sha256: b821b191e489a8b4ac7a7ec766cdc5a78d888f680d1d78cbd946af2a79328f49
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 683 record(s); 0 failed.
+  target_ids:
+  - cmmmech:rutile
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:rutile
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_protein_grounding
+  area: graph
+  topic: 'Verification of causal_graphs structure, UniProtKB paralog grounding, and
+    parity across causal_graph ''photocatalytic_support_of_iron_cycling_graph'' (mechanism_ref:
+    photocatalytic_support_of_iron_cycling, 5 nodes / 4 edges; cyc2_outer_membrane_cytochrome:
+    [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362)]; rus_cyc1_periplasmic_electron_transfer:
+    [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2,
+    UP000001362)])'
+  outcome: supported
+  summary: 'Curated data/records/rutile.yaml (SHA-256 b821b191e489a8b4ac7a7ec766cdc5a78d888f680d1d78cbd946af2a79328f49)
+    with causal_graph ''photocatalytic_support_of_iron_cycling_graph'' (mechanism_ref:
+    photocatalytic_support_of_iron_cycling, 5 nodes / 4 edges; cyc2_outer_membrane_cytochrome:
+    [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362)]; rus_cyc1_periplasmic_electron_transfer:
+    [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2,
+    UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and
+    causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+    levels and caveats from primary source(s) lu2012. Live-verified UniProtKB reference-proteome
+    grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2,
+    TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362);
+    UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159
+    Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2,
+    Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus
+    ferrooxidans ATCC 23270, UP000001362).'
+  target_ids:
+  - cmmmech:rutile
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
+  outcome: supported
+  summary: 'data/records/rutile.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar(s) (history/records/rutile/2026-11-04T210559Z-marcin-4ab766.yaml
+    (SHA-256 6d361090a279a9e96ada1a00fa71b92e08e10d7993870e34b925e3f21fe1d23b): Add
+    photocatalytic_support_of_iron_cycling_graph causal graph and ground photocatalytic_support_of_iron_cycling
+    to Acidithiobacillus ferrooxidans ATCC 23270 rus-operon UniProtKB entries (UniProtKB:B7JAQ7,
+    UniProtKB:B7JAQ0, UniProtKB:B7JAQ6) — Added representative Acidithiobacillus ferrooxidans
+    ATCC 23270 rus-operon protein_examples (UniProtKB:B7JAQ7 cyc2/AFE_3153, UniProtKB:B7JAQ0
+    rus/AFE_3146, UniProtKB:B7JAQ6 cyc1/AFE_3152) and photocatalytic_support_of_iron_cycling_graph
+    causal graph to rutile.yaml.; history/records/rutile/2026-11-04T223801Z-marcin-f9c476.yaml
+    (SHA-256 5a97ef67547fb05f5be2ebf2183fbbe3e770468775dd610950c348c09608d618): Align
+    photocatalytic_support_of_iron_cycling_graph and protein_examples annotations
+    with 350 mL PEM two-chamber reactor, 3.5e5 cells/mL HZ-PKU-1, and 0.54 g rutile
+    graphite photoanode (Issue #925) — Updated photocatalytic_support_of_iron_cycling_graph
+    and protein_examples in rutile.yaml to match Results (pages 2-5), Methods (pages
+    6-7), Figures 1, 2, and 4, and Supplementary Information pages 5-11 and Figure
+    S2 of Lu et al. (2012) (two 350 mL PEM-separated chambers, 1000 ohm resistor,
+    0.54 g 40-um natural rutile + 0.06 g acetylene black on 5 x 7 cm graphite anode,
+    12.5 g/L ascorbic acid + 2.5 g/L KCl under ~13.5 mW/cm2 380-760 nm light, 3.5e5
+    cells/mL HZ-PKU-1 in 41.7 g/L FeSO4.7H2O modified 9K medium) (Issue #925).) and
+    passing all LinkML and history validation gates.'
+  target_ids:
+  - cmmmech:rutile
+  evidence_ids:
+  - owner
+  - edit_history
+  - edit_history_2
+  - validation
+findings: []
+actions: []
+summary: 'Rutile (cmmmech:rutile) passes Cycle 8 Stage 2 causal-graphs review (scientific_review:
+  true) at SHA-256 b821b191e489a8b4ac7a7ec766cdc5a78d888f680d1d78cbd946af2a79328f49:
+  Curated data/records/rutile.yaml (SHA-256 b821b191e489a8b4ac7a7ec766cdc5a78d888f680d1d78cbd946af2a79328f49)
+  with causal_graph ''photocatalytic_support_of_iron_cycling_graph'' (mechanism_ref:
+  photocatalytic_support_of_iron_cycling, 5 nodes / 4 edges; cyc2_outer_membrane_cytochrome:
+  [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362)]; rus_cyc1_periplasmic_electron_transfer:
+  [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2,
+  UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and
+  causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+  levels and caveats from primary source(s) lu2012. Live-verified UniProtKB reference-proteome
+  grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2,
+  TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362);
+  UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159
+  Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2,
+  Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans
+  ATCC 23270, UP000001362).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- 'Executed during Cycle 8 Stage 2 (causal_graphs) after addressing Issue #925 internal-consistency
+  findings using scripts/curate_causal_graphs.py; supersedes initial review 20261104T210700Z-rutile-cycle8-stage2-causal-graphs-review.'
+related_reviews: []
