@@ -9,25 +9,25 @@ skill: .claude/skills/review-yaml-category/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: 'Reviewed all 31 primary_resource records in data/records/*.yaml at commit
-  ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c, including the Cycle 7 Stage 2 (PR #914,
-  commit 8bf82c8d) causal-graph addition on cmmmech:cassiterite-polymetallic-sulfide-ore
-  (thermosulfidooxidans_caldus_cassiterite_sulfide_ore_bioleaching_graph) and the
-  Cycle 7 Stage 3 (PR #915, commit ff4a9841) multi-strain Sqr/TetH/Tth UniProtKB grounding
-  expansions on cmmmech:cassiterite-polymetallic-sulfide-ore and cmmmech:chalcopyrite-enargite-concentrate.
-  All 31 primary_resource records contain primary-source-supported microbial mechanisms
-  (42 mechanisms total), 10/31 contain causal_graphs (11 graphs), and 10/10 carry
-  live-verified UniProtKB protein_examples across 26 unique accessions. Identified
-  2 minor graph findings across 3 records (cmmmech-cycle7-stage4-finding-0002 on cassiterite-polymetallic-sulfide-ore
-  and chalcopyrite-enargite-concentrate; and cmmmech-cycle7-stage4-finding-0003 on
-  manganese-ore) for Stage 5 grouped remediation.'
+summary: 'Reviewed all 31 primary_resource records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c,
+  including the Cycle 7 Stage 2 (PR #914, commit 4d80ff7b) causal-graph and UniProtKB grounding addition
+  on cmmmech:cassiterite-polymetallic-sulfide-ore (moderately_thermophilic_ore_pretreatment_graph) and
+  the Cycle 7 Stage 3 (PR #915, commit ff4a9841) UniProtKB grounding expansions on cmmmech:cassiterite-polymetallic-sulfide-ore
+  (adding Sulfobacillus thermosulfidooxidans Cutipayun UniProtKB:A0A1W1W805 and Acidithiobacillus caldus
+  MTH-04 UniProtKB:A4ZV25) and cmmmech:chalcopyrite-enargite-concentrate (adding S. thermosulfidooxidans
+  UniProtKB:A0A1W1W805, A. caldus MTH-04 UniProtKB:A4ZV25, and Acidithiobacillus ferrooxidans YNTRS-40
+  UniProtKB:A0A2Z6DW24). All 31 primary_resource records contain primary-source-supported microbial mechanisms
+  (48 mechanisms total), and 10/31 contain multi-step causal_graphs (11 graphs) and live-verified UniProtKB
+  protein_examples across 26 unique accessions. Identified 2 minor graph findings (cmmmech-cycle7-stage4-finding-0002
+  on cmmmech:cassiterite-polymetallic-sulfide-ore and cmmmech:chalcopyrite-enargite-concentrate, and cmmmech-cycle7-stage4-finding-0003
+  on cmmmech:manganese-ore) for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle7-stage4-cohort-reviewer
   kind: agent
   model: claude-opus-4-6
   independence: self_review
-  independence_basis: Single-agent Goal Mode execution of Cycle 7 Stage 4 record_review
-    (.claude/skills/review-yaml-category/SKILL.md) against frozen commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+  independence_basis: Single-agent Goal Mode execution of Cycle 7 Stage 4 record_review (.claude/skills/review-yaml-category/SKILL.md)
+    against frozen commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 source:
   git_revision: ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c
   state: git_commit
@@ -645,8 +645,8 @@ checks:
   - cmmmech:xenotime-concentrate
   evidence_ids:
   - ev-primary-resource-cohort-audit
-  summary: All 31 records in this cohort pass LinkML structural, semantic, and canonical
-    top-level key-order validation with 0 errors and 0 warnings.
+  summary: All 31 records in this cohort pass LinkML structural, semantic, and canonical top-level key-order
+    validation with 0 errors and 0 warnings.
 - check_id: just-verify-history-primary-resources
   name: just verify-history (primary-resources)
   status: passed
@@ -688,12 +688,12 @@ checks:
   - cmmmech:xenotime-concentrate
   evidence_ids:
   - ev-primary-resource-cohort-audit
-  summary: All 31 records in this cohort have intact append-only history sidecars
-    and matching curation_history metadata.
+  summary: All 31 records in this cohort have intact append-only history sidecars and matching curation_history
+    metadata.
 assessments:
 - assessment_id: assess-primary-resource-identity-and-mechanisms
-  topic: Natural ore/concentrate/brine identity, microbial bioleaching mechanisms,
-    causal graphs, and UniProtKB grounding
+  topic: Natural ore/concentrate/brine identity, microbial bioleaching mechanisms, causal graphs, and
+    UniProtKB grounding
   area: evidence
   outcome: supported
   target_ids:
@@ -732,14 +732,15 @@ assessments:
   - ev-primary-resource-cohort-audit
   - ev-pr-stage3-graphs
   - ev-manganese-ore-cexa
-  summary: All 31 primary_resource records carry primary-source-supported microbial
-    mechanisms (42 mechanisms) and 10/31 carry grounded causal_graphs (11 graphs)
-    across 26 unique UniProtKB accessions.
+  summary: All 31 primary_resource records contain primary-source-supported microbial mechanisms (48 mechanisms
+    total), and 10/31 contain grounded causal_graphs (11 graphs) and live-verified UniProtKB protein_examples
+    across 26 unique accessions. Identified 2 minor graph findings across 3 primary_resource records (cmmmech:cassiterite-polymetallic-sulfide-ore,
+    cmmmech:chalcopyrite-enargite-concentrate, and cmmmech:manganese-ore).
 findings:
 - finding_id: cmmmech-cycle7-stage4-finding-0002
   issue_key: cmmmech.cycle7-stage3-sulfur-graphs.edge-desc-grammar-and-incomplete-edge-evidence-loci
-  title: Nine Cycle 7 Stage 3 sulfur-oxidizing causal graphs have subject-verb number
-    disagreement in edge descriptions and 7 omit Stage-3-added homolog loci in edges[0].evidence[0].explanation
+  title: Nine Cycle 7 Stage 3 sulfur-oxidizing causal graphs have subject-verb number disagreement in
+    edge descriptions and 7 omit Stage-3-added homolog loci in edges[0].evidence[0].explanation
   severity: minor
   category: graph
   certainty: confirmed
@@ -754,25 +755,22 @@ findings:
   evidence_ids:
   - ev-primary-resource-cohort-audit
   - ev-pr-stage3-graphs
-  description: 'Across the 9 sulfur-oxidizing causal graphs updated in Cycle 7 Stage
-    3 (PR #915, commit ff4a9841) (1 element: copper.yaml; 3 mineral: chalcopyrite.yaml,
-    molybdenite.yaml, skutterudite.yaml; 2 primary_resource: cassiterite-polymetallic-sulfide-ore.yaml,
-    chalcopyrite-enargite-concentrate.yaml; 3 secondary_resource: coal-beneficiation-waste.yaml,
-    copper-smelter-flue-dust.yaml, pyrite-roasting-cinder.yaml), edges[0] (sqr_reductase
-    -> tth_hydrolase) and edges[1] (tth_hydrolase -> <leach_system>) had their pluralized
-    node labels substituted into edge.description while retaining singular verbs (''Sqr
-    ... oxidoreductases (...) oxidizes ...'' or ''Sqr ... reductases (...) catalyzes
-    ...'', and ''TetH/Tth tetrathionate hydrolases (...) disproportionates ...'' or
-    ''Tth tetrathionate hydrolases (...) disproportionates ...''), and in 7 of those
-    9 records (cassiterite-polymetallic-sulfide-ore.yaml, chalcopyrite.yaml, chalcopyrite-enargite-concentrate.yaml,
-    coal-beneficiation-waste.yaml, copper.yaml, molybdenite.yaml, pyrite-roasting-cinder.yaml)
-    edges[0].evidence[0].explanation still lists only the pre-Stage-3 Sqr/TetH/Tth
-    locus subset (''(Atc_1705, Atc_1437, Y981_02650) and TetH (Atc_1595)'' or ''Sqr
-    paralogs (AFE_1792, AFE_0267) and Tth (AFE_0029)''), omitting the Stage-3-added
-    Sulfobacillus thermosulfidooxidans DSM 9293 Sqr (SAMN00768000_0580), Acidithiobacillus
-    caldus ZBY TetH (tetH / BAE30_05680), and Acidithiobacillus ferrooxidans DSM 16523
-    Tth (DN052_12875) homologs grounded on sqr_reductase and tth_hydrolase. In this
-    scope, 2 record(s) (cassiterite-polymetallic-sulfide-ore, chalcopyrite-enargite-concentrate)
+  description: 'Across the 9 sulfur-oxidizing causal graphs updated in Cycle 7 Stage 3 (PR #915, commit
+    ff4a9841) (1 element: copper.yaml; 3 mineral: chalcopyrite.yaml, molybdenite.yaml, skutterudite.yaml;
+    2 primary_resource: cassiterite-polymetallic-sulfide-ore.yaml, chalcopyrite-enargite-concentrate.yaml;
+    3 secondary_resource: coal-beneficiation-waste.yaml, copper-smelter-flue-dust.yaml, pyrite-roasting-cinder.yaml),
+    edges[0] (sqr_reductase -> tth_hydrolase) and edges[1] (tth_hydrolase -> <leach_system>) had their
+    pluralized node labels substituted into edge.description while retaining singular verbs (''Sqr ...
+    oxidoreductases (...) oxidizes ...'' or ''Sqr ... reductases (...) catalyzes ...'', and ''TetH/Tth
+    tetrathionate hydrolases (...) disproportionates ...'' or ''Tth tetrathionate hydrolases (...) disproportionates
+    ...''), and in 7 of those 9 records (cassiterite-polymetallic-sulfide-ore.yaml, chalcopyrite.yaml,
+    chalcopyrite-enargite-concentrate.yaml, coal-beneficiation-waste.yaml, copper.yaml, molybdenite.yaml,
+    pyrite-roasting-cinder.yaml) edges[0].evidence[0].explanation still lists only the pre-Stage-3 Sqr/TetH/Tth
+    locus subset (''(Atc_1705, Atc_1437, Y981_02650) and TetH (Atc_1595)'' or ''Sqr paralogs (AFE_1792,
+    AFE_0267) and Tth (AFE_0029)''), omitting the Stage-3-added Sulfobacillus thermosulfidooxidans DSM
+    9293 Sqr (SAMN00768000_0580), Acidithiobacillus caldus ZBY TetH (tetH / BAE30_05680), and Acidithiobacillus
+    ferrooxidans DSM 16523 Tth (DN052_12875) homologs grounded on sqr_reductase and tth_hydrolase. In
+    this scope, 2 record(s) (cassiterite-polymetallic-sulfide-ore, chalcopyrite-enargite-concentrate)
     are affected.'
   owner_paths:
   - repository: CultureBotAI/CMMMech
@@ -783,9 +781,8 @@ findings:
     role: maintained_record
 - finding_id: cmmmech-cycle7-stage4-finding-0003
   issue_key: cmmmech.aspergillus-atcc1015-cexa-node.description-omits-strain-matched-g3y4n5
-  title: Aspergillus niger ATCC 1015 cexa_citrate_exporter causal-graph nodes in birnessite,
-    lindbergite, and manganese-ore omit strain-matched UniProtKB:G3Y4N5 (CEXA_ASPNA
-    / ASPNIDRAFT_56962) from node.description
+  title: Aspergillus niger ATCC 1015 cexa_citrate_exporter causal-graph nodes in birnessite, lindbergite,
+    and manganese-ore omit strain-matched UniProtKB:G3Y4N5 (CEXA_ASPNA / ASPNIDRAFT_56962) from node.description
   severity: minor
   category: graph
   certainty: confirmed
@@ -797,19 +794,16 @@ findings:
   evidence_ids:
   - ev-primary-resource-cohort-audit
   - ev-manganese-ore-cexa
-  description: In data/records/birnessite.yaml (cmmmech:birnessite, causal_graphs[1]
-    fungal_synthetic_cobalt_birnessite_transformation_graph, lines 316-363), data/records/lindbergite.yaml
-    (cmmmech:lindbergite, causal_graphs[0] niger_associated_manganese_oxalate_formation_graph,
-    lines 151-198), and data/records/manganese-ore.yaml (cmmmech:manganese-ore, causal_graphs[0]
-    fungal_nkamouna_laterite_transformation_graph, lines 136-183), node cexa_citrate_exporter
-    is grounded to both the strain-matched Aspergillus niger ATCC 1015 reference-proteome
-    entry UniProtKB:G3Y4N5 (CEXA_ASPNA, locus ASPNIDRAFT_56962) and the species-level
-    reviewed entry UniProtKB:A0A254TZW7 (CEXA_ASPNG), but cexa_citrate_exporter.description
-    still reads 'Reviewed Aspergillus niger plasma-membrane citrate exporter (UniProtKB:A0A254TZW7)
-    representing the fungal organic-acid secretion machinery.', naming only UniProtKB:A0A254TZW7
-    and omitting the strain-matched ATCC 1015 reference-proteome entry UniProtKB:G3Y4N5
-    (CEXA_ASPNA / ASPNIDRAFT_56962). In this scope, 1 record(s) (manganese-ore) are
-    affected.
+  description: In data/records/birnessite.yaml (cmmmech:birnessite, causal_graphs[1] fungal_synthetic_cobalt_birnessite_transformation_graph,
+    lines 316-363), data/records/lindbergite.yaml (cmmmech:lindbergite, causal_graphs[0] niger_associated_manganese_oxalate_formation_graph,
+    lines 151-198), and data/records/manganese-ore.yaml (cmmmech:manganese-ore, causal_graphs[0] fungal_nkamouna_laterite_transformation_graph,
+    lines 136-183), node cexa_citrate_exporter is grounded to both the strain-matched Aspergillus niger
+    ATCC 1015 reference-proteome entry UniProtKB:G3Y4N5 (CEXA_ASPNA, locus ASPNIDRAFT_56962) and the species-level
+    reviewed entry UniProtKB:A0A254TZW7 (CEXA_ASPNG), but cexa_citrate_exporter.description still reads
+    'Reviewed Aspergillus niger plasma-membrane citrate exporter (UniProtKB:A0A254TZW7) representing the
+    fungal organic-acid secretion machinery.', naming only UniProtKB:A0A254TZW7 and omitting the strain-matched
+    ATCC 1015 reference-proteome entry UniProtKB:G3Y4N5 (CEXA_ASPNA / ASPNIDRAFT_56962). In this scope,
+    1 record(s) (manganese-ore) are affected.
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/manganese-ore.yaml
@@ -822,10 +816,10 @@ actions:
   - cmmmech:cassiterite-polymetallic-sulfide-ore
   - cmmmech:chalcopyrite-enargite-concentrate
   description: Update causal_graphs[0].edges[0].description and causal_graphs[0].edges[1].description
-    across the 9 Cycle 7 Stage 3 sulfur-oxidizing records so plural subjects take
-    plural verbs ('oxidize'/'catalyze' and 'disproportionate'), and update causal_graphs[0].edges[0].evidence[0].explanation
-    in the 7 affected records to list all grounded Sqr and TetH/Tth homolog loci during
-    Stage 5 grouped remediation with canonical history provenance.
+    across the 9 Cycle 7 Stage 3 sulfur-oxidizing records so plural subjects take plural verbs ('oxidize'/'catalyze'
+    and 'disproportionate'), and update causal_graphs[0].edges[0].evidence[0].explanation in the 7 affected
+    records to list all grounded Sqr and TetH/Tth homolog loci during Stage 5 grouped remediation with
+    canonical history provenance.
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/cassiterite-polymetallic-sulfide-ore.yaml
@@ -834,27 +828,26 @@ actions:
     path: data/records/chalcopyrite-enargite-concentrate.yaml
     role: maintained_record
   acceptance_checks:
-  - All 9 records use grammatical plural verbs in causal_graphs[0].edges[0..1].description
-    and list all grounded Sqr and TetH/Tth loci in edges[0].evidence[0].explanation.
+  - All 9 records use grammatical plural verbs in causal_graphs[0].edges[0..1].description and list all
+    grounded Sqr and TetH/Tth loci in edges[0].evidence[0].explanation.
   - Matching EDIT history sidecars exist in history/records/ and pass just check.
 - action_id: act-include-g3y4n5-in-aspergillus-atcc1015-cexa-node-descriptions
   finding_ids:
   - cmmmech-cycle7-stage4-finding-0003
   target_ids:
   - cmmmech:manganese-ore
-  description: Update cexa_citrate_exporter.description in birnessite.yaml (causal_graphs[1]),
-    lindbergite.yaml (causal_graphs[0]), and manganese-ore.yaml (causal_graphs[0])
-    to explicitly cite both the strain-matched Aspergillus niger ATCC 1015 reference-proteome
-    entry UniProtKB:G3Y4N5 (CEXA_ASPNA / ASPNIDRAFT_56962) and the species-level reviewed
-    entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) during Stage 5 grouped remediation with
-    canonical history provenance.
+  description: Update cexa_citrate_exporter.description in birnessite.yaml (causal_graphs[1]), lindbergite.yaml
+    (causal_graphs[0]), and manganese-ore.yaml (causal_graphs[0]) to explicitly cite both the strain-matched
+    Aspergillus niger ATCC 1015 reference-proteome entry UniProtKB:G3Y4N5 (CEXA_ASPNA / ASPNIDRAFT_56962)
+    and the species-level reviewed entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) during Stage 5 grouped remediation
+    with canonical history provenance.
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/manganese-ore.yaml
     role: maintained_record
   acceptance_checks:
-  - cexa_citrate_exporter.description in birnessite.yaml, lindbergite.yaml, and manganese-ore.yaml
-    names both UniProtKB:G3Y4N5 (ASPNIDRAFT_56962) and UniProtKB:A0A254TZW7.
+  - cexa_citrate_exporter.description in birnessite.yaml, lindbergite.yaml, and manganese-ore.yaml names
+    both UniProtKB:G3Y4N5 (ASPNIDRAFT_56962) and UniProtKB:A0A254TZW7.
   - Matching EDIT history sidecars exist in history/records/ and pass just check.
 evidence:
 - evidence_id: ev-primary-resource-cohort-audit
@@ -863,33 +856,33 @@ evidence:
   locator: 31 primary_resource YAML files
   accessed_at: '2026-11-04T12:45:04Z'
   support: supports
-  summary: Full programmatic and source-backed audit of all 31 primary_resource records
-    at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+  summary: Full programmatic and source-backed audit of all 31 primary_resource records at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 - evidence_id: ev-pr-stage3-graphs
   kind: record_content
   reference: data/records/cassiterite-polymetallic-sulfide-ore.yaml; data/records/chalcopyrite-enargite-concentrate.yaml
   locator: causal_graphs[0].edges[0..1]
   accessed_at: '2026-11-04T12:45:04Z'
   support: supports
-  summary: Inspected causal_graphs[0].edges[0..1] in cassiterite-polymetallic-sulfide-ore.yaml
-    and chalcopyrite-enargite-concentrate.yaml, confirming plural subject labels with
-    singular verbs in edge.description and pre-Stage-3 locus subsets in edges[0].evidence[0].explanation.
+  summary: Inspected causal_graphs[0].edges[0..1] in cassiterite-polymetallic-sulfide-ore.yaml and chalcopyrite-enargite-concentrate.yaml,
+    confirming plural subject labels with singular verbs in edge.description and pre-Stage-3 locus subsets
+    in edges[0].evidence[0].explanation.
 - evidence_id: ev-manganese-ore-cexa
   kind: record_content
   reference: data/records/manganese-ore.yaml
   locator: causal_graphs[0].nodes[0] (lines 136-183)
   accessed_at: '2026-11-04T12:45:04Z'
   support: supports
-  summary: Inspected cexa_citrate_exporter node in manganese-ore.yaml, confirming
-    grounding to both UniProtKB:G3Y4N5 (ATCC 1015) and UniProtKB:A0A254TZW7 while
-    description names only UniProtKB:A0A254TZW7.
+  summary: Inspected cexa_citrate_exporter node in manganese-ore.yaml, confirming grounding to both UniProtKB:G3Y4N5
+    (ATCC 1015) and UniProtKB:A0A254TZW7 while description names only UniProtKB:A0A254TZW7.
 limitations:
-- 21 of 31 primary_resource records report whole-cell or mixed-consortium bioleaching
-  kinetics without gene- or enzyme-resolved intermediates in the cited primary papers
-  and therefore do not carry causal_graphs.
+- 'Twenty-one primary_resource records currently curate organism- or consortium-level microbial mechanisms
+  without multi-step causal_graphs or UniProtKB protein_examples: In those 21 natural ore, brine, clay,
+  and concentrate records, the cited experimental bioleaching studies report whole-cell or mixed-consortium
+  extraction yields without isolating specific gene or enzyme catalysts on the natural ore matrix. (10/31
+  primary_resource records have grounded causal_graphs and protein_examples; 21/31 curate organism/consortium-level
+  mechanisms.)'
 notes:
-- Cohort covers 100% (31/31) of primary_resource records in data/records/*.yaml at
-  commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+- Cohort covers 100% (31/31) of primary_resource records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 boundary_decisions:
 - action: retain
   target_ids:
@@ -924,8 +917,7 @@ boundary_decisions:
   - cmmmech:tennantite-concentrate
   - cmmmech:tetrahedrite-concentrate
   - cmmmech:xenotime-concentrate
-  rationale: All 31 records in this cohort denote distinct natural ores, concentrates,
-    clays, or brines matching data/records/*.yaml where material_kind == 'primary_resource'
-    at ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+  rationale: All 31 records in this cohort denote distinct natural ores, concentrates, clays, or brines
+    matching data/records/*.yaml where material_kind == 'primary_resource' at ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
   evidence_ids:
   - ev-primary-resource-cohort-audit

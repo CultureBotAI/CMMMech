@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 7 mineral_group records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c (cmmmech:allanite-group, cmmmech:apatite-group, cmmmech:bastnaesite-group, cmmmech:illite-group, cmmmech:monazite-group, cmmmech:olivine-group, cmmmech:smectite-group). All 7 mineral_group records accurately represent multi-species mineral supergroups/series where experimental substrates are reported at group level, 7/7 contain primary-source-supported microbial mechanisms (7 mechanisms total), and 2/7 (cmmmech:bastnaesite-group and cmmmech:olivine-group) contain causal_graphs (2 graphs) with live-verified UniProtKB protein_examples across 7 unique accessions. Zero open defects were found in this cohort.
+Reviewed all 7 mineral_group records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c (bastnaesite, biotite, chlorite, illite, olivine-group, potassium-feldspar, vermiculite). All 7 mineral_group records carry primary-source-supported microbial mechanisms (14 mechanisms total), and 2/7 (cmmmech:chlorite and cmmmech:olivine-group) carry multi-step causal_graphs (2 graphs) and live-verified UniProtKB protein_examples (9 per layer across 7 unique accessions). No open findings identified in this cohort.
 
 ## Scope And Provenance
 
@@ -45,7 +45,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 evidence: supported. Targets: cmmmech:bastnaesite, cmmmech:biotite, cmmmech:chlorite, cmmmech:illite, cmmmech:olivine-group, cmmmech:potassium-feldspar, cmmmech:vermiculite.
 
-All 7 mineral_group records pass all schema, semantic, key-order, and primary-source mechanism checks with 0 open findings.
+All 7 mineral_group records contain primary-source-supported microbial mechanisms (14 mechanisms total), and 2/7 (cmmmech:chlorite and cmmmech:olivine-group) contain grounded causal_graphs (2 graphs) and live-verified UniProtKB protein_examples across 7 unique accessions.
 
 ## Findings
 
@@ -65,7 +65,7 @@ No findings recorded within this review's declared scope.
 
 ## Limits And Additional Notes
 
-- 5 of 7 mineral_group records (allanite-group, apatite-group, illite-group, monazite-group, smectite-group) report whole-cell/organic-acid mineral dissolution or transformation without gene- or enzyme-resolved steps in their cited primary studies and therefore do not carry causal_graphs.
+- Five mineral_group records currently lack multi-step causal_graphs and UniProtKB protein_examples: bastnaesite, biotite, illite, potassium-feldspar, and vermiculite curate organism- or consortium-level microbial weathering/bioleaching mechanisms where the cited mineral-substrate studies do not isolate individual genetic or enzymatic determinants. (2/7 mineral_group records have grounded causal_graphs and protein_examples; 5/7 curate organism-level mechanisms only.)
 - Cohort covers 100% (7/7) of mineral_group records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 
 ## Complete Structured Record
@@ -85,13 +85,11 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 summary: Reviewed all 7 mineral_group records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c
-  (cmmmech:allanite-group, cmmmech:apatite-group, cmmmech:bastnaesite-group, cmmmech:illite-group,
-  cmmmech:monazite-group, cmmmech:olivine-group, cmmmech:smectite-group). All 7 mineral_group
-  records accurately represent multi-species mineral supergroups/series where experimental
-  substrates are reported at group level, 7/7 contain primary-source-supported microbial
-  mechanisms (7 mechanisms total), and 2/7 (cmmmech:bastnaesite-group and cmmmech:olivine-group)
-  contain causal_graphs (2 graphs) with live-verified UniProtKB protein_examples across
-  7 unique accessions. Zero open defects were found in this cohort.
+  (bastnaesite, biotite, chlorite, illite, olivine-group, potassium-feldspar, vermiculite).
+  All 7 mineral_group records carry primary-source-supported microbial mechanisms
+  (14 mechanisms total), and 2/7 (cmmmech:chlorite and cmmmech:olivine-group) carry
+  multi-step causal_graphs (2 graphs) and live-verified UniProtKB protein_examples
+  (9 per layer across 7 unique accessions). No open findings identified in this cohort.
 reviewer:
   identity: antigravity / cmmmech-cycle7-stage4-cohort-reviewer
   kind: agent
@@ -297,8 +295,10 @@ assessments:
   - cmmmech:vermiculite
   evidence_ids:
   - ev-mineral-group-cohort-audit
-  summary: All 7 mineral_group records pass all schema, semantic, key-order, and primary-source
-    mechanism checks with 0 open findings.
+  summary: All 7 mineral_group records contain primary-source-supported microbial
+    mechanisms (14 mechanisms total), and 2/7 (cmmmech:chlorite and cmmmech:olivine-group)
+    contain grounded causal_graphs (2 graphs) and live-verified UniProtKB protein_examples
+    across 7 unique accessions.
 findings: []
 actions: []
 evidence:
@@ -311,10 +311,12 @@ evidence:
   summary: Full programmatic and source-backed audit of all 7 mineral_group records
     at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 limitations:
-- 5 of 7 mineral_group records (allanite-group, apatite-group, illite-group, monazite-group,
-  smectite-group) report whole-cell/organic-acid mineral dissolution or transformation
-  without gene- or enzyme-resolved steps in their cited primary studies and therefore
-  do not carry causal_graphs.
+- 'Five mineral_group records currently lack multi-step causal_graphs and UniProtKB
+  protein_examples: bastnaesite, biotite, illite, potassium-feldspar, and vermiculite
+  curate organism- or consortium-level microbial weathering/bioleaching mechanisms
+  where the cited mineral-substrate studies do not isolate individual genetic or enzymatic
+  determinants. (2/7 mineral_group records have grounded causal_graphs and protein_examples;
+  5/7 curate organism-level mechanisms only.)'
 notes:
 - Cohort covers 100% (7/7) of mineral_group records in data/records/*.yaml at commit
   ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.

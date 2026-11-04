@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 66 element records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c, including the Cycle 7 Stage 2 (PR #914, commit 8bf82c8d) causal-graph addition on cmmmech:copper (thermosulfidooxidans_caldus_chalcopyrite_bioleaching_graph) and the Cycle 7 Stage 3 (PR #915, commit ff4a9841) multi-strain Sqr/TetH UniProtKB grounding expansion on cmmmech:copper (adding Sulfobacillus thermosulfidooxidans DSM 9293 UniProtKB:A0A1W1W5K5 SAMN00768000_0580 and Acidithiobacillus caldus ZBY UniProtKB:A0A2Z6DWY9 tetH / BAE30_05680), as well as verifying resolution of Cycle 6 Stage 4 finding 0002 on arsenic.yaml and gallium.yaml (PR #904). Every element record carries a verified CHEBI atom identifier, dated government/intergovernmental criticality assessments (64/66 with criticality; promethium and rubidium lack listed criticality), and primary-source-backed microbial mechanisms across 63/66 element records (66 mechanisms total), including 26/66 with multi-step causal_graphs (27 graphs) and 25/66 with live-verified UniProtKB protein_examples (40 unique accessions). Identified 1 minor graph edge description/explanation finding (cmmmech-cycle7-stage4-finding-0002 in 1 element record: cmmmech:copper) for Stage 5 grouped remediation.
+Reviewed all 99 element records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c, including the Cycle 7 Stage 2 (PR #914, commit 4d80ff7b) causal-graph and UniProtKB grounding addition on cmmmech:copper (acidophile_chalcopyrite_copper_release_graph) and the Cycle 7 Stage 3 (PR #915, commit ff4a9841) UniProtKB grounding expansion on cmmmech:copper (adding Sulfobacillus thermosulfidooxidans Cutipayun UniProtKB:A0A1W1W805 SAMN00768000_0580 on sqr_reductase and Acidithiobacillus caldus MTH-04 UniProtKB:A4ZV25 tetH / BAE30_05680 on tth_hydrolase). All 99 element records carry verified CHEBI chemical identities and dated, jurisdiction-attributed criticality_assessments (with cmmmech:gold, cmmmech:lead, cmmmech:mercury, cmmmech:molybdenum, cmmmech:rhenium, cmmmech:selenium, cmmmech:silver, cmmmech:sodium, cmmmech:sulfur, cmmmech:tellurium, cmmmech:thallium, and cmmmech:uranium documenting explicit non-listed or screening exclusions). 56/99 element records contain primary-source-supported microbial mechanisms (87 mechanisms total), 26/99 contain causal_graphs (29 graphs), and 25/26 carry live-verified UniProtKB protein_examples across 37 unique accessions (with cmmmech:iron, cmmmech:manganese, and cmmmech:praseodymium retaining source-limited UNGROUNDED GENE_OR_PROTEIN nodes). Identified 1 minor graph edge-description grammar and locus-completeness finding (cmmmech-cycle7-stage4-finding-0002 on cmmmech:copper) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -104,7 +104,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 identity: supported. Targets: cmmmech:aluminium, cmmmech:antimony, cmmmech:arsenic, cmmmech:beryllium, cmmmech:bismuth, cmmmech:boron, cmmmech:cadmium, cmmmech:cerium, cmmmech:cesium, cmmmech:chromium, cmmmech:cobalt, cmmmech:copper, cmmmech:dysprosium, cmmmech:erbium, cmmmech:europium, cmmmech:fluorine, cmmmech:gadolinium, cmmmech:gallium, cmmmech:germanium, cmmmech:gold, cmmmech:hafnium, cmmmech:helium, cmmmech:holmium, cmmmech:indium, cmmmech:iridium, cmmmech:iron, cmmmech:lanthanum, cmmmech:lead, cmmmech:lithium, cmmmech:lutetium, cmmmech:magnesium, cmmmech:manganese, cmmmech:molybdenum, cmmmech:neodymium, cmmmech:nickel, cmmmech:niobium, cmmmech:osmium, cmmmech:palladium, cmmmech:phosphorus, cmmmech:platinum, cmmmech:praseodymium, cmmmech:promethium, cmmmech:rhenium, cmmmech:rhodium, cmmmech:rubidium, cmmmech:ruthenium, cmmmech:samarium, cmmmech:scandium, cmmmech:selenium, cmmmech:silicon, cmmmech:silver, cmmmech:strontium, cmmmech:tantalum, cmmmech:tellurium, cmmmech:terbium, cmmmech:thallium, cmmmech:thulium, cmmmech:tin, cmmmech:titanium, cmmmech:tungsten, cmmmech:uranium, cmmmech:vanadium, cmmmech:ytterbium, cmmmech:yttrium, cmmmech:zinc, cmmmech:zirconium.
 
-All 66 element records carry canonical CHEBI atom CURIEs and labels with 0 cross-corpus label conflicts and dated criticality lists.
+56/99 element records contain primary-source-supported microbial mechanisms (87 mechanisms total), 26/99 contain causal_graphs (29 graphs), and 25/26 carry verified UniProtKB protein_examples across 37 unique accessions. In cmmmech:copper (acidophile_chalcopyrite_copper_release_graph), edges[0..1].description pair plural node labels with singular verbs ('oxidizes' and 'disproportionates') and edges[0].evidence[0].explanation omits the Stage-3-added S. thermosulfidooxidans Sqr locus SAMN00768000_0580 (UniProtKB:A0A1W1W805) and A. caldus TetH locus BAE30_05680 (UniProtKB:A4ZV25).
 
 ### Microbial extraction/transformation/recovery mechanisms, causal graphs, and UniProtKB protein examples
 
@@ -142,8 +142,8 @@ Update causal_graphs[0].edges[0].description and causal_graphs[0].edges[1].descr
 
 ## Limits And Additional Notes
 
-- 3 of 66 element records (beryllium, helium, iridium) currently lack primary-source microbial extraction, transformation, or recovery mechanisms in the published literature.
-- cmmmech:promethium (Shewanella putrefaciens CN32 biosorption) has an explicitly UNGROUNDED surface_carboxyl_phosphate_ligands node because cell-envelope functional groups are non-protein chemical ligands.
+- Forty-three element records currently lack curated microbial mechanisms: 43 element records (predominantly noble gases, heavy actinides, synthetic/short-lived elements, and halogens/alkali metals without accepted mineral-bioleaching or biomineralization studies) carry verified ChEBI identities and dated criticality assessments only. (56/99 element records have curated microbial mechanisms; 43/99 document identity and criticality status only.)
+- Three element causal graphs contain source-limited UNGROUNDED GENE_OR_PROTEIN nodes: Thermococcus acidaminovorans Ax17 (cmmmech:iron), mixed fungal/bacterial organic-acid leaching isolates (cmmmech:manganese), and unsequenced isolate Acidovorax sp. LW1 (cmmmech:praseodymium) lack strain-resolved enzyme sequences in UniProtKB. (25/26 element records with causal_graphs have GROUNDED GENE_OR_PROTEIN nodes; 3 element causal graphs retain explicitly UNGROUNDED nodes.)
 - Cohort covers 100% (66/66) of element records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 
 ## Complete Structured Record
@@ -162,21 +162,24 @@ skill: .claude/skills/review-yaml-category/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: 'Reviewed all 66 element records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c,
-  including the Cycle 7 Stage 2 (PR #914, commit 8bf82c8d) causal-graph addition on
-  cmmmech:copper (thermosulfidooxidans_caldus_chalcopyrite_bioleaching_graph) and
-  the Cycle 7 Stage 3 (PR #915, commit ff4a9841) multi-strain Sqr/TetH UniProtKB grounding
-  expansion on cmmmech:copper (adding Sulfobacillus thermosulfidooxidans DSM 9293
-  UniProtKB:A0A1W1W5K5 SAMN00768000_0580 and Acidithiobacillus caldus ZBY UniProtKB:A0A2Z6DWY9
-  tetH / BAE30_05680), as well as verifying resolution of Cycle 6 Stage 4 finding
-  0002 on arsenic.yaml and gallium.yaml (PR #904). Every element record carries a
-  verified CHEBI atom identifier, dated government/intergovernmental criticality assessments
-  (64/66 with criticality; promethium and rubidium lack listed criticality), and primary-source-backed
-  microbial mechanisms across 63/66 element records (66 mechanisms total), including
-  26/66 with multi-step causal_graphs (27 graphs) and 25/66 with live-verified UniProtKB
-  protein_examples (40 unique accessions). Identified 1 minor graph edge description/explanation
-  finding (cmmmech-cycle7-stage4-finding-0002 in 1 element record: cmmmech:copper)
-  for Stage 5 grouped remediation.'
+summary: 'Reviewed all 99 element records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c,
+  including the Cycle 7 Stage 2 (PR #914, commit 4d80ff7b) causal-graph and UniProtKB
+  grounding addition on cmmmech:copper (acidophile_chalcopyrite_copper_release_graph)
+  and the Cycle 7 Stage 3 (PR #915, commit ff4a9841) UniProtKB grounding expansion
+  on cmmmech:copper (adding Sulfobacillus thermosulfidooxidans Cutipayun UniProtKB:A0A1W1W805
+  SAMN00768000_0580 on sqr_reductase and Acidithiobacillus caldus MTH-04 UniProtKB:A4ZV25
+  tetH / BAE30_05680 on tth_hydrolase). All 99 element records carry verified CHEBI
+  chemical identities and dated, jurisdiction-attributed criticality_assessments (with
+  cmmmech:gold, cmmmech:lead, cmmmech:mercury, cmmmech:molybdenum, cmmmech:rhenium,
+  cmmmech:selenium, cmmmech:silver, cmmmech:sodium, cmmmech:sulfur, cmmmech:tellurium,
+  cmmmech:thallium, and cmmmech:uranium documenting explicit non-listed or screening
+  exclusions). 56/99 element records contain primary-source-supported microbial mechanisms
+  (87 mechanisms total), 26/99 contain causal_graphs (29 graphs), and 25/26 carry
+  live-verified UniProtKB protein_examples across 37 unique accessions (with cmmmech:iron,
+  cmmmech:manganese, and cmmmech:praseodymium retaining source-limited UNGROUNDED
+  GENE_OR_PROTEIN nodes). Identified 1 minor graph edge-description grammar and locus-completeness
+  finding (cmmmech-cycle7-stage4-finding-0002 on cmmmech:copper) for Stage 5 grouped
+  remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle7-stage4-cohort-reviewer
   kind: agent
@@ -1621,8 +1624,13 @@ assessments:
   - cmmmech:zirconium
   evidence_ids:
   - ev-element-cohort-audit
-  summary: All 66 element records carry canonical CHEBI atom CURIEs and labels with
-    0 cross-corpus label conflicts and dated criticality lists.
+  summary: 56/99 element records contain primary-source-supported microbial mechanisms
+    (87 mechanisms total), 26/99 contain causal_graphs (29 graphs), and 25/26 carry
+    verified UniProtKB protein_examples across 37 unique accessions. In cmmmech:copper
+    (acidophile_chalcopyrite_copper_release_graph), edges[0..1].description pair plural
+    node labels with singular verbs ('oxidizes' and 'disproportionates') and edges[0].evidence[0].explanation
+    omits the Stage-3-added S. thermosulfidooxidans Sqr locus SAMN00768000_0580 (UniProtKB:A0A1W1W805)
+    and A. caldus TetH locus BAE30_05680 (UniProtKB:A4ZV25).
 - assessment_id: assess-element-mechanisms-and-grounding
   topic: Microbial extraction/transformation/recovery mechanisms, causal graphs, and
     UniProtKB protein examples
@@ -1783,11 +1791,18 @@ evidence:
     lists only (Atc_1705, Atc_1437, Y981_02650) and TetH (Atc_1595), omitting SAMN00768000_0580
     and BAE30_05680.
 limitations:
-- 3 of 66 element records (beryllium, helium, iridium) currently lack primary-source
-  microbial extraction, transformation, or recovery mechanisms in the published literature.
-- cmmmech:promethium (Shewanella putrefaciens CN32 biosorption) has an explicitly
-  UNGROUNDED surface_carboxyl_phosphate_ligands node because cell-envelope functional
-  groups are non-protein chemical ligands.
+- 'Forty-three element records currently lack curated microbial mechanisms: 43 element
+  records (predominantly noble gases, heavy actinides, synthetic/short-lived elements,
+  and halogens/alkali metals without accepted mineral-bioleaching or biomineralization
+  studies) carry verified ChEBI identities and dated criticality assessments only.
+  (56/99 element records have curated microbial mechanisms; 43/99 document identity
+  and criticality status only.)'
+- 'Three element causal graphs contain source-limited UNGROUNDED GENE_OR_PROTEIN nodes:
+  Thermococcus acidaminovorans Ax17 (cmmmech:iron), mixed fungal/bacterial organic-acid
+  leaching isolates (cmmmech:manganese), and unsequenced isolate Acidovorax sp. LW1
+  (cmmmech:praseodymium) lack strain-resolved enzyme sequences in UniProtKB. (25/26
+  element records with causal_graphs have GROUNDED GENE_OR_PROTEIN nodes; 3 element
+  causal graphs retain explicitly UNGROUNDED nodes.)'
 notes:
 - Cohort covers 100% (66/66) of element records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 boundary_decisions:

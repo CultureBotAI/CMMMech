@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed data/records/fengruiite.yaml (cmmmech:fengruiite) at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c following Cycle 7 Stage 1 curation (PR #910, commit fa7431ae). Verified IMA-CNMNC Round 125 species identity (IMA 2024-045, symbol Fru, ideal formula Li2MgBe2(SiO3)4, trigonal P3121, 9.75 wt% BeO and 6.23 wt% Li2O, Fengrui granitic pegmatite district,盧氏 County, Henan Province, China type locality) against Tian et al. (2026, Eur. J. Mineral. 38:519-530, DOI:10.5194/ejm-38-519-2026) and IMA-CNMNC September 2026 PDF. Identified 1 minor completeness finding (cmmmech-cycle7-stage4-finding-0001: description states 'IMA symbol Fru', but top-level ima_symbol: Fru slot is omitted) for Stage 5 grouped remediation.
+Adversarial single-record review of data/records/fengruiite.yaml (cmmmech:fengruiite, added in Cycle 7 Stage 1 PR #910) at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c. Verified IMA-CNMNC mineral identity (IMA:2024-045, symbol Fru; silver-copper-antimony-tellurium sulfosalt of the pearceite-polybasite group, polybasite-Tac 111 polytype), September 2026 IMA-CNMNC Master List ideal formula [Ag6Sb2S7][Ag9CuS2Te2] (ideal composition Ag 67.20 wt%, S 12.84 wt%, Sb 10.11 wt%, Te 7.21 wt%, Cu 2.64 wt%; empirical WDS formula [(Ag5.87Cu0.29)Sigma6.16(Sb1.89As0.03)Sigma1.92S7][Ag9CuS2(Te1.28S0.63)Sigma1.91]), trigonal symmetry (space group P-3m1, #164, a = 7.6087(9) A, c = 11.970(2) A, V = 600.13(17) A3, Z = 1, Dcalc = 6.62 g/cm3), and holotype occurrence (GMCTM2024004 from a galena-quartz vein at 380 m elevation of the H5 polymetallic sulfide orebody, Haopinggou Ag-Pb-Zn-Au deposit, Xiayu orefield, ~60 km SW of Luoning County, Henan Province, eastern Qinling, China) against Tian et al. (2026, Eur. J. Mineral. 38:519-530, DOI:10.5194/ejm-38-519-2026) and the September 2026 IMA-CNMNC List of Mineral Names (PDF p. 71). Confirmed one minor completeness finding (cmmmech-cycle7-stage4-finding-0001: top-level ima_symbol: Fru is omitted despite symbol Fru being explicitly stated in description) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -38,7 +38,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 completeness: supported. Targets: cmmmech:fengruiite.
 
-Fengruiite formula (Li2MgBe2(SiO3)4), IMA 2024-045 approval, Fengrui pegmatite type locality, and empirical composition are accurately curated from Tian et al. (2026, Eur. J. Mineral. 38:519-530), but top-level ima_symbol: Fru is omitted despite being stated in description.
+Identity, ideal and empirical formulas ([Ag6Sb2S7][Ag9CuS2Te2]; [(Ag5.87Cu0.29)Sigma6.16(Sb1.89As0.03)Sigma1.92S7][Ag9CuS2(Te1.28S0.63)Sigma1.91]), trigonal P-3m1 unit-cell parameters, holotype repository (GMCTM2024004, Geological Museum of China), and Haopinggou Ag-Pb-Zn-Au deposit type-locality metadata match Tian et al. (2026, DOI:10.5194/ejm-38-519-2026) and the September 2026 IMA-CNMNC Master List (p. 71); top-level ima_symbol: Fru slot is omitted.
 
 ## Findings
 
@@ -87,15 +87,22 @@ skill: .claude/skills/review-yaml-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: 'Reviewed data/records/fengruiite.yaml (cmmmech:fengruiite) at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c
-  following Cycle 7 Stage 1 curation (PR #910, commit fa7431ae). Verified IMA-CNMNC
-  Round 125 species identity (IMA 2024-045, symbol Fru, ideal formula Li2MgBe2(SiO3)4,
-  trigonal P3121, 9.75 wt% BeO and 6.23 wt% Li2O, Fengrui granitic pegmatite district,盧氏
-  County, Henan Province, China type locality) against Tian et al. (2026, Eur. J.
-  Mineral. 38:519-530, DOI:10.5194/ejm-38-519-2026) and IMA-CNMNC September 2026 PDF.
-  Identified 1 minor completeness finding (cmmmech-cycle7-stage4-finding-0001: description
-  states ''IMA symbol Fru'', but top-level ima_symbol: Fru slot is omitted) for Stage
-  5 grouped remediation.'
+summary: 'Adversarial single-record review of data/records/fengruiite.yaml (cmmmech:fengruiite,
+  added in Cycle 7 Stage 1 PR #910) at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+  Verified IMA-CNMNC mineral identity (IMA:2024-045, symbol Fru; silver-copper-antimony-tellurium
+  sulfosalt of the pearceite-polybasite group, polybasite-Tac 111 polytype), September
+  2026 IMA-CNMNC Master List ideal formula [Ag6Sb2S7][Ag9CuS2Te2] (ideal composition
+  Ag 67.20 wt%, S 12.84 wt%, Sb 10.11 wt%, Te 7.21 wt%, Cu 2.64 wt%; empirical WDS
+  formula [(Ag5.87Cu0.29)Sigma6.16(Sb1.89As0.03)Sigma1.92S7][Ag9CuS2(Te1.28S0.63)Sigma1.91]),
+  trigonal symmetry (space group P-3m1, #164, a = 7.6087(9) A, c = 11.970(2) A, V
+  = 600.13(17) A3, Z = 1, Dcalc = 6.62 g/cm3), and holotype occurrence (GMCTM2024004
+  from a galena-quartz vein at 380 m elevation of the H5 polymetallic sulfide orebody,
+  Haopinggou Ag-Pb-Zn-Au deposit, Xiayu orefield, ~60 km SW of Luoning County, Henan
+  Province, eastern Qinling, China) against Tian et al. (2026, Eur. J. Mineral. 38:519-530,
+  DOI:10.5194/ejm-38-519-2026) and the September 2026 IMA-CNMNC List of Mineral Names
+  (PDF p. 71). Confirmed one minor completeness finding (cmmmech-cycle7-stage4-finding-0001:
+  top-level ima_symbol: Fru is omitted despite symbol Fru being explicitly stated
+  in description) for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle7-stage4-record-reviewer
   kind: agent
@@ -164,10 +171,11 @@ assessments:
   evidence_ids:
   - ev-fengruiite-file
   - ev-tian2026-fengruiite
-  summary: 'Fengruiite formula (Li2MgBe2(SiO3)4), IMA 2024-045 approval, Fengrui pegmatite
-    type locality, and empirical composition are accurately curated from Tian et al.
-    (2026, Eur. J. Mineral. 38:519-530), but top-level ima_symbol: Fru is omitted
-    despite being stated in description.'
+  summary: 'Identity, ideal and empirical formulas ([Ag6Sb2S7][Ag9CuS2Te2]; [(Ag5.87Cu0.29)Sigma6.16(Sb1.89As0.03)Sigma1.92S7][Ag9CuS2(Te1.28S0.63)Sigma1.91]),
+    trigonal P-3m1 unit-cell parameters, holotype repository (GMCTM2024004, Geological
+    Museum of China), and Haopinggou Ag-Pb-Zn-Au deposit type-locality metadata match
+    Tian et al. (2026, DOI:10.5194/ejm-38-519-2026) and the September 2026 IMA-CNMNC
+    Master List (p. 71); top-level ima_symbol: Fru slot is omitted.'
 findings:
 - finding_id: cmmmech-cycle7-stage4-finding-0001
   issue_key: cmmmech.round125-minerals.missing-ima-symbol-slot

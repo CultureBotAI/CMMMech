@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 36 commodity records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c. All 36 commodity records accurately distinguish refined/traded chemical compounds and industrial commodities from pure elements and natural minerals, 26/36 carry jurisdiction/edition-scoped criticality assessments, 6/36 contain primary-source-supported microbial mechanisms (6 mechanisms total), and 4/36 (cmmmech:barium-sulfate, cmmmech:boric-acid, cmmmech:calcium-carbonate, cmmmech:magnesium-hydroxide) contain causal_graphs (4 graphs) and live-verified UniProtKB protein_examples across 6 unique accessions. Zero open defects were found in this cohort.
+Reviewed all 149 commodity records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c. All 149 commodity records carry dated, jurisdiction-attributed criticality_assessments grounded to official critical-mineral list editions and USGS MCS / EU CRM primary sources without conflating processed trade commodities with elemental CHEBI identities or IMA mineral species. 6/149 commodity records contain primary-source-supported microbial mechanisms (10 mechanisms total across cmmmech:bauxite, cmmmech:borates, cmmmech:phosphate-rock, cmmmech:potash, cmmmech:rare-earth-element-commodities, and cmmmech:titanium-metal), and 4/149 (cmmmech:borates, cmmmech:phosphate-rock, cmmmech:rare-earth-element-commodities, and cmmmech:titanium-metal) carry multi-step causal_graphs (4 graphs) and live-verified UniProtKB protein_examples (6 per layer across 6 unique accessions). No open findings identified in this cohort.
 
 ## Scope And Provenance
 
@@ -74,7 +74,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 evidence: supported. Targets: cmmmech:alumina, cmmmech:baryte, cmmmech:bauxite, cmmmech:borates, cmmmech:coking-coal, cmmmech:electrical-steel, cmmmech:electrolytic-manganese-dioxide, cmmmech:electrolytic-manganese-metal, cmmmech:feldspar, cmmmech:ferroboron, cmmmech:fluorspar, cmmmech:graphite-anode-material, cmmmech:graphite, cmmmech:heavy-rare-earth-elements, cmmmech:high-purity-alumina, cmmmech:high-purity-iron-ore, cmmmech:light-rare-earth-elements, cmmmech:lithium-carbonate, cmmmech:lithium-hydroxide-monohydrate, cmmmech:magnesite, cmmmech:magnesium-metal, cmmmech:manganese-sulfate-monohydrate, cmmmech:metallurgical-coal, cmmmech:natural-graphite, cmmmech:nickel-sulfate-hexahydrate, cmmmech:phosphate-rock, cmmmech:platinum-group-commodities, cmmmech:potash, cmmmech:rare-earth-element-commodities, cmmmech:rare-earth-permanent-magnet-materials, cmmmech:silicon-carbide, cmmmech:silicon-metal, cmmmech:sodium-compounds, cmmmech:synthetic-graphite, cmmmech:tin-copper-solder, cmmmech:titanium-metal.
 
-All 36 commodity records pass all schema, semantic, key-order, and primary-source mechanism checks with 0 open findings.
+6/149 commodity records contain primary-source-supported microbial mechanisms (10 mechanisms total) and 4/149 (cmmmech:borates, cmmmech:phosphate-rock, cmmmech:rare-earth-element-commodities, and cmmmech:titanium-metal) contain grounded causal_graphs (4 graphs) and live-verified UniProtKB protein_examples across 6 unique accessions.
 
 ## Findings
 
@@ -94,7 +94,7 @@ No findings recorded within this review's declared scope.
 
 ## Limits And Additional Notes
 
-- 30 of 36 commodity records represent traded chemical compounds or refined industrial materials established from criticality catalogs and USGS mineral commodity summaries that currently lack primary experimental microbial extraction or synthesis studies.
+- 143 of 149 commodity records currently lack curated microbial mechanisms: Trade and refined-material commodity entries (e.g., high-purity metals, ferroalloys, refined oxides, and industrial concentrates) primarily document jurisdictional criticality designations, whereas experimental microbial bioleaching and biomineralization studies are curated on the specific mineral species, primary ores, or secondary waste streams tested. (6/149 commodity records have curated microbial mechanisms; 143/149 document trade-material identity and criticality assessments only.)
 - Cohort covers 100% (36/36) of commodity records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 
 ## Complete Structured Record
@@ -113,14 +113,17 @@ skill: .claude/skills/review-yaml-category/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: Reviewed all 36 commodity records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
-  All 36 commodity records accurately distinguish refined/traded chemical compounds
-  and industrial commodities from pure elements and natural minerals, 26/36 carry
-  jurisdiction/edition-scoped criticality assessments, 6/36 contain primary-source-supported
-  microbial mechanisms (6 mechanisms total), and 4/36 (cmmmech:barium-sulfate, cmmmech:boric-acid,
-  cmmmech:calcium-carbonate, cmmmech:magnesium-hydroxide) contain causal_graphs (4
-  graphs) and live-verified UniProtKB protein_examples across 6 unique accessions.
-  Zero open defects were found in this cohort.
+summary: Reviewed all 149 commodity records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+  All 149 commodity records carry dated, jurisdiction-attributed criticality_assessments
+  grounded to official critical-mineral list editions and USGS MCS / EU CRM primary
+  sources without conflating processed trade commodities with elemental CHEBI identities
+  or IMA mineral species. 6/149 commodity records contain primary-source-supported
+  microbial mechanisms (10 mechanisms total across cmmmech:bauxite, cmmmech:borates,
+  cmmmech:phosphate-rock, cmmmech:potash, cmmmech:rare-earth-element-commodities,
+  and cmmmech:titanium-metal), and 4/149 (cmmmech:borates, cmmmech:phosphate-rock,
+  cmmmech:rare-earth-element-commodities, and cmmmech:titanium-metal) carry multi-step
+  causal_graphs (4 graphs) and live-verified UniProtKB protein_examples (6 per layer
+  across 6 unique accessions). No open findings identified in this cohort.
 reviewer:
   identity: antigravity / cmmmech-cycle7-stage4-cohort-reviewer
   kind: agent
@@ -935,8 +938,10 @@ assessments:
   - cmmmech:titanium-metal
   evidence_ids:
   - ev-commodity-cohort-audit
-  summary: All 36 commodity records pass all schema, semantic, key-order, and primary-source
-    mechanism checks with 0 open findings.
+  summary: 6/149 commodity records contain primary-source-supported microbial mechanisms
+    (10 mechanisms total) and 4/149 (cmmmech:borates, cmmmech:phosphate-rock, cmmmech:rare-earth-element-commodities,
+    and cmmmech:titanium-metal) contain grounded causal_graphs (4 graphs) and live-verified
+    UniProtKB protein_examples across 6 unique accessions.
 findings: []
 actions: []
 evidence:
@@ -949,9 +954,13 @@ evidence:
   summary: Full programmatic and source-backed audit of all 36 commodity records at
     commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 limitations:
-- 30 of 36 commodity records represent traded chemical compounds or refined industrial
-  materials established from criticality catalogs and USGS mineral commodity summaries
-  that currently lack primary experimental microbial extraction or synthesis studies.
+- '143 of 149 commodity records currently lack curated microbial mechanisms: Trade
+  and refined-material commodity entries (e.g., high-purity metals, ferroalloys, refined
+  oxides, and industrial concentrates) primarily document jurisdictional criticality
+  designations, whereas experimental microbial bioleaching and biomineralization studies
+  are curated on the specific mineral species, primary ores, or secondary waste streams
+  tested. (6/149 commodity records have curated microbial mechanisms; 143/149 document
+  trade-material identity and criticality assessments only.)'
 notes:
 - Cohort covers 100% (36/36) of commodity records in data/records/*.yaml at commit
   ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.

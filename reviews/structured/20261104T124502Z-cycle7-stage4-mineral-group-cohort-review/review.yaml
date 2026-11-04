@@ -10,20 +10,17 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 summary: Reviewed all 7 mineral_group records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c
-  (cmmmech:allanite-group, cmmmech:apatite-group, cmmmech:bastnaesite-group, cmmmech:illite-group,
-  cmmmech:monazite-group, cmmmech:olivine-group, cmmmech:smectite-group). All 7 mineral_group
-  records accurately represent multi-species mineral supergroups/series where experimental
-  substrates are reported at group level, 7/7 contain primary-source-supported microbial
-  mechanisms (7 mechanisms total), and 2/7 (cmmmech:bastnaesite-group and cmmmech:olivine-group)
-  contain causal_graphs (2 graphs) with live-verified UniProtKB protein_examples across
-  7 unique accessions. Zero open defects were found in this cohort.
+  (bastnaesite, biotite, chlorite, illite, olivine-group, potassium-feldspar, vermiculite). All 7 mineral_group
+  records carry primary-source-supported microbial mechanisms (14 mechanisms total), and 2/7 (cmmmech:chlorite
+  and cmmmech:olivine-group) carry multi-step causal_graphs (2 graphs) and live-verified UniProtKB protein_examples
+  (9 per layer across 7 unique accessions). No open findings identified in this cohort.
 reviewer:
   identity: antigravity / cmmmech-cycle7-stage4-cohort-reviewer
   kind: agent
   model: claude-opus-4-6
   independence: self_review
-  independence_basis: Single-agent Goal Mode execution of Cycle 7 Stage 4 record_review
-    (.claude/skills/review-yaml-category/SKILL.md) against frozen commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+  independence_basis: Single-agent Goal Mode execution of Cycle 7 Stage 4 record_review (.claude/skills/review-yaml-category/SKILL.md)
+    against frozen commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 source:
   git_revision: ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c
   state: git_commit
@@ -185,8 +182,8 @@ checks:
   - cmmmech:vermiculite
   evidence_ids:
   - ev-mineral-group-cohort-audit
-  summary: All 7 records in this cohort pass LinkML structural, semantic, and canonical
-    top-level key-order validation with 0 errors and 0 warnings.
+  summary: All 7 records in this cohort pass LinkML structural, semantic, and canonical top-level key-order
+    validation with 0 errors and 0 warnings.
 - check_id: just-verify-history-mineral-groups
   name: just verify-history (mineral-groups)
   status: passed
@@ -204,12 +201,11 @@ checks:
   - cmmmech:vermiculite
   evidence_ids:
   - ev-mineral-group-cohort-audit
-  summary: All 7 records in this cohort have intact append-only history sidecars and
-    matching curation_history metadata.
+  summary: All 7 records in this cohort have intact append-only history sidecars and matching curation_history
+    metadata.
 assessments:
 - assessment_id: assess-mineral-group-identity-and-mechanisms
-  topic: Mineral group boundary discipline, microbial mechanisms, causal graphs, and
-    UniProtKB grounding
+  topic: Mineral group boundary discipline, microbial mechanisms, causal graphs, and UniProtKB grounding
   area: evidence
   outcome: supported
   target_ids:
@@ -222,8 +218,9 @@ assessments:
   - cmmmech:vermiculite
   evidence_ids:
   - ev-mineral-group-cohort-audit
-  summary: All 7 mineral_group records pass all schema, semantic, key-order, and primary-source
-    mechanism checks with 0 open findings.
+  summary: All 7 mineral_group records contain primary-source-supported microbial mechanisms (14 mechanisms
+    total), and 2/7 (cmmmech:chlorite and cmmmech:olivine-group) contain grounded causal_graphs (2 graphs)
+    and live-verified UniProtKB protein_examples across 7 unique accessions.
 findings: []
 actions: []
 evidence:
@@ -233,16 +230,15 @@ evidence:
   locator: 7 mineral_group YAML files
   accessed_at: '2026-11-04T12:45:02Z'
   support: supports
-  summary: Full programmatic and source-backed audit of all 7 mineral_group records
-    at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+  summary: Full programmatic and source-backed audit of all 7 mineral_group records at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 limitations:
-- 5 of 7 mineral_group records (allanite-group, apatite-group, illite-group, monazite-group,
-  smectite-group) report whole-cell/organic-acid mineral dissolution or transformation
-  without gene- or enzyme-resolved steps in their cited primary studies and therefore
-  do not carry causal_graphs.
+- 'Five mineral_group records currently lack multi-step causal_graphs and UniProtKB protein_examples:
+  bastnaesite, biotite, illite, potassium-feldspar, and vermiculite curate organism- or consortium-level
+  microbial weathering/bioleaching mechanisms where the cited mineral-substrate studies do not isolate
+  individual genetic or enzymatic determinants. (2/7 mineral_group records have grounded causal_graphs
+  and protein_examples; 5/7 curate organism-level mechanisms only.)'
 notes:
-- Cohort covers 100% (7/7) of mineral_group records in data/records/*.yaml at commit
-  ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+- Cohort covers 100% (7/7) of mineral_group records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 boundary_decisions:
 - action: retain
   target_ids:
@@ -253,7 +249,7 @@ boundary_decisions:
   - cmmmech:olivine-group
   - cmmmech:potassium-feldspar
   - cmmmech:vermiculite
-  rationale: All 7 records in this cohort denote distinct mineral groups matching
-    data/records/*.yaml where material_kind == 'mineral_group' at ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+  rationale: All 7 records in this cohort denote distinct mineral groups matching data/records/*.yaml
+    where material_kind == 'mineral_group' at ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
   evidence_ids:
   - ev-mineral-group-cohort-audit

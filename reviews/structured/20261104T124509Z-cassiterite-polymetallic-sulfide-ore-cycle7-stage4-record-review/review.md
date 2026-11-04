@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed data/records/cassiterite-polymetallic-sulfide-ore.yaml (cmmmech:cassiterite-polymetallic-sulfide-ore) at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c following Cycle 7 Stage 2 causal-graph curation (PR #914, commit 8bf82c8d) and Cycle 7 Stage 3 multi-strain UniProtKB grounding expansion (PR #915, commit ff4a9841). Verified consortium bioleaching mechanism (Sulfobacillus thermosulfidooxidans and Acidithiobacillus caldus, 90.5% Cu, 99.6% Zn, 69.4% As extraction at 45 C, pH 1.5, 10% pulp density from Dachang Sn-polymetallic sulfide ore, Guangxi, China, PMID:18632089 / DOI:10.1016/j.hydromet.2007.11.005) and 6 synchronized UniProtKB protein_examples across sqr_reductase and tth_hydrolase. Identified 1 minor graph edge description/explanation finding (cmmmech-cycle7-stage4-finding-0002: edges[0..1].description pair plural node labels with singular verbs 'oxidizes' and 'disproportionates', and edges[0].evidence[0].explanation omits Stage-3-added loci SAMN00768000_0580 and BAE30_05680) for Stage 5 grouped remediation.
+Adversarial single-record review of data/records/cassiterite-polymetallic-sulfide-ore.yaml (cmmmech:cassiterite-polymetallic-sulfide-ore, updated in Cycle 7 Stage 2 PR #914 and Stage 3 PR #915) at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c. Verified mechanisms[0] (moderately_thermophilic_ore_pretreatment, bioleaching) and causal_graphs[0] (moderately_thermophilic_ore_pretreatment_graph) against Wang et al. (2025, Separations 12(3):61, DOI:10.3390/separations12030061), studying single and 1:1:1 mixed cultures of Leptospirillum ferriphilum (NCBITaxon:178606), Sulfobacillus thermosulfidooxidans (NCBITaxon:28034), and Acidithiobacillus caldus (NCBITaxon:33059) on autoclaved &lt;1 mm crushed Myanmar cassiterite-polymetallic sulfide ore (pyrite, cassiterite, quartz, tourmaline, mica) at 10% pulp density in iron-free modified 9K medium (initial pH 2.0, 45 C, 170 rpm, 20 days), where ICP total dissolved iron serves as an iron-based desulfurization proxy and no sulfur or tin recovery yields are adopted. Verified all 6 UniProtKB protein_examples across mechanisms[0] and causal_graphs[0] (UniProtKB:F9ZQD6, UniProtKB:F9ZN43, UniProtKB:A0A059XTE6, and UniProtKB:A0A1W1W805 on sqr_reductase; UniProtKB:F9ZNI0 and UniProtKB:A4ZV25 on tth_hydrolase). Confirmed one minor graph edge-description grammar and locus-completeness finding (cmmmech-cycle7-stage4-finding-0002: edges[0..1].description pair plural node labels with singular verbs 'oxidizes' and 'disproportionates', and edges[0].evidence[0].explanation omits Stage-3-added loci SAMN00768000_0580 and BAE30_05680) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -38,7 +38,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 evidence: supported. Targets: cmmmech:cassiterite-polymetallic-sulfide-ore.
 
-Consortium bioleaching mechanism and 6 UniProtKB Sqr/TetH protein_examples are accurately grounded to PMID:18632089, with minor edge description grammar and edge explanation locus-list synchronization needed in causal_graphs[0].edges[0..1].
+Primary-source claims, experimental conditions (autoclaved &lt;1 mm Myanmar cassiterite-polymetallic sulfide ore, 10% pulp density, iron-free modified 9K medium, pH 2.0, 45 C, 170 rpm, 20 days, ICP total dissolved iron proxy), and 6 UniProtKB groundings match Wang et al. (2025, DOI:10.3390/separations12030061); causal_graphs[0].edges[0..1].description pair plural node labels with singular verbs ('oxidizes' and 'disproportionates') and edges[0].evidence[0].explanation omits Stage-3-added loci SAMN00768000_0580 and BAE30_05680.
 
 ## Findings
 
@@ -64,8 +64,8 @@ Update causal_graphs[0].edges[0].description and causal_graphs[0].edges[1].descr
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| ev-cassiterite-ore-file | data/records/cassiterite-polymetallic-sulfide-ore.yaml; lines 1-396 (causal_graphs[0].edges[0..1] lines 362-396) | supports | Inspected all 396 lines of data/records/cassiterite-polymetallic-sulfide-ore.yaml, confirming plural node labels in edges[0..1].description paired with singular verbs ('oxidizes', 'disproportionates') and pre-Stage-3 locus subset in edges[0].evidence[0].explanation. |
-| ev-pmid18632089-cassiterite-ore | PMID:18632089; Guo et al. 2008 Hydrometallurgy 92:163-169 (DOI:10.1016/j.hydromet.2007.11.005) | supports | Guo et al. (2008) report moderately thermophilic bioleaching of cassiterite polymetallic sulfide ore by Sulfobacillus thermosulfidooxidans and Acidithiobacillus caldus at 45 C, pH 1.5. |
+| ev-cassiterite-ore-file | data/records/cassiterite-polymetallic-sulfide-ore.yaml; lines 1-244 | supports | Audit of data/records/cassiterite-polymetallic-sulfide-ore.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c. |
+| ev-wang2025-cassiterite-ore | DOI:10.3390/separations12030061; Wang et al. 2025 Separations 12(3):61, Sections 2.1-2.3 and 3.1-3.4 | supports | Wang et al. (2025) report moderately thermophilic bioleaching pretreatment of autoclaved &lt;1 mm crushed Myanmar cassiterite-polymetallic sulfide ore (pyrite, cassiterite, quartz, tourmaline, mica) at 10% pulp density in iron-free modified 9K medium (initial pH 2.0, 45 C, 170 rpm, 20 days) by single and 1:1:1 mixed cultures of Leptospirillum ferriphilum, Sulfobacillus thermosulfidooxidans, and Acidithiobacillus caldus, monitoring ICP total dissolved iron as an iron-based desulfurization proxy. |
 
 ## Limits And Additional Notes
 
@@ -88,15 +88,22 @@ skill: .claude/skills/review-yaml-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: 'Reviewed data/records/cassiterite-polymetallic-sulfide-ore.yaml (cmmmech:cassiterite-polymetallic-sulfide-ore)
-  at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c following Cycle 7 Stage 2 causal-graph
-  curation (PR #914, commit 8bf82c8d) and Cycle 7 Stage 3 multi-strain UniProtKB grounding
-  expansion (PR #915, commit ff4a9841). Verified consortium bioleaching mechanism
-  (Sulfobacillus thermosulfidooxidans and Acidithiobacillus caldus, 90.5% Cu, 99.6%
-  Zn, 69.4% As extraction at 45 C, pH 1.5, 10% pulp density from Dachang Sn-polymetallic
-  sulfide ore, Guangxi, China, PMID:18632089 / DOI:10.1016/j.hydromet.2007.11.005)
-  and 6 synchronized UniProtKB protein_examples across sqr_reductase and tth_hydrolase.
-  Identified 1 minor graph edge description/explanation finding (cmmmech-cycle7-stage4-finding-0002:
+summary: 'Adversarial single-record review of data/records/cassiterite-polymetallic-sulfide-ore.yaml
+  (cmmmech:cassiterite-polymetallic-sulfide-ore, updated in Cycle 7 Stage 2 PR #914
+  and Stage 3 PR #915) at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c. Verified
+  mechanisms[0] (moderately_thermophilic_ore_pretreatment, bioleaching) and causal_graphs[0]
+  (moderately_thermophilic_ore_pretreatment_graph) against Wang et al. (2025, Separations
+  12(3):61, DOI:10.3390/separations12030061), studying single and 1:1:1 mixed cultures
+  of Leptospirillum ferriphilum (NCBITaxon:178606), Sulfobacillus thermosulfidooxidans
+  (NCBITaxon:28034), and Acidithiobacillus caldus (NCBITaxon:33059) on autoclaved
+  <1 mm crushed Myanmar cassiterite-polymetallic sulfide ore (pyrite, cassiterite,
+  quartz, tourmaline, mica) at 10% pulp density in iron-free modified 9K medium (initial
+  pH 2.0, 45 C, 170 rpm, 20 days), where ICP total dissolved iron serves as an iron-based
+  desulfurization proxy and no sulfur or tin recovery yields are adopted. Verified
+  all 6 UniProtKB protein_examples across mechanisms[0] and causal_graphs[0] (UniProtKB:F9ZQD6,
+  UniProtKB:F9ZN43, UniProtKB:A0A059XTE6, and UniProtKB:A0A1W1W805 on sqr_reductase;
+  UniProtKB:F9ZNI0 and UniProtKB:A4ZV25 on tth_hydrolase). Confirmed one minor graph
+  edge-description grammar and locus-completeness finding (cmmmech-cycle7-stage4-finding-0002:
   edges[0..1].description pair plural node labels with singular verbs ''oxidizes''
   and ''disproportionates'', and edges[0].evidence[0].explanation omits Stage-3-added
   loci SAMN00768000_0580 and BAE30_05680) for Stage 5 grouped remediation.'
@@ -167,10 +174,14 @@ assessments:
   - cmmmech:cassiterite-polymetallic-sulfide-ore
   evidence_ids:
   - ev-cassiterite-ore-file
-  - ev-pmid18632089-cassiterite-ore
-  summary: Consortium bioleaching mechanism and 6 UniProtKB Sqr/TetH protein_examples
-    are accurately grounded to PMID:18632089, with minor edge description grammar
-    and edge explanation locus-list synchronization needed in causal_graphs[0].edges[0..1].
+  - ev-wang2025-cassiterite-ore
+  summary: Primary-source claims, experimental conditions (autoclaved <1 mm Myanmar
+    cassiterite-polymetallic sulfide ore, 10% pulp density, iron-free modified 9K
+    medium, pH 2.0, 45 C, 170 rpm, 20 days, ICP total dissolved iron proxy), and 6
+    UniProtKB groundings match Wang et al. (2025, DOI:10.3390/separations12030061);
+    causal_graphs[0].edges[0..1].description pair plural node labels with singular
+    verbs ('oxidizes' and 'disproportionates') and edges[0].evidence[0].explanation
+    omits Stage-3-added loci SAMN00768000_0580 and BAE30_05680.
 findings:
 - finding_id: cmmmech-cycle7-stage4-finding-0002
   issue_key: cmmmech.cycle7-stage3-sulfur-graphs.edge-desc-grammar-and-incomplete-edge-evidence-loci
@@ -188,7 +199,7 @@ findings:
   - causal_graphs[0].edges[1].description
   evidence_ids:
   - ev-cassiterite-ore-file
-  - ev-pmid18632089-cassiterite-ore
+  - ev-wang2025-cassiterite-ore
   description: 'Across the 9 sulfur-oxidizing causal graphs updated in Cycle 7 Stage
     3 (PR #915, commit ff4a9841) (1 element: copper.yaml; 3 mineral: chalcopyrite.yaml,
     molybdenite.yaml, skutterudite.yaml; 2 primary_resource: cassiterite-polymetallic-sulfide-ore.yaml,
@@ -235,21 +246,23 @@ evidence:
 - evidence_id: ev-cassiterite-ore-file
   kind: record_content
   reference: data/records/cassiterite-polymetallic-sulfide-ore.yaml
-  locator: lines 1-396 (causal_graphs[0].edges[0..1] lines 362-396)
+  locator: lines 1-244
   accessed_at: '2026-11-04T12:45:09Z'
   support: supports
-  summary: Inspected all 396 lines of data/records/cassiterite-polymetallic-sulfide-ore.yaml,
-    confirming plural node labels in edges[0..1].description paired with singular
-    verbs ('oxidizes', 'disproportionates') and pre-Stage-3 locus subset in edges[0].evidence[0].explanation.
-- evidence_id: ev-pmid18632089-cassiterite-ore
+  summary: Audit of data/records/cassiterite-polymetallic-sulfide-ore.yaml at commit
+    ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+- evidence_id: ev-wang2025-cassiterite-ore
   kind: primary_source
-  reference: PMID:18632089
-  locator: Guo et al. 2008 Hydrometallurgy 92:163-169 (DOI:10.1016/j.hydromet.2007.11.005)
+  reference: DOI:10.3390/separations12030061
+  locator: Wang et al. 2025 Separations 12(3):61, Sections 2.1-2.3 and 3.1-3.4
   accessed_at: '2026-11-04T12:45:09Z'
   support: supports
-  summary: Guo et al. (2008) report moderately thermophilic bioleaching of cassiterite
-    polymetallic sulfide ore by Sulfobacillus thermosulfidooxidans and Acidithiobacillus
-    caldus at 45 C, pH 1.5.
+  summary: Wang et al. (2025) report moderately thermophilic bioleaching pretreatment
+    of autoclaved <1 mm crushed Myanmar cassiterite-polymetallic sulfide ore (pyrite,
+    cassiterite, quartz, tourmaline, mica) at 10% pulp density in iron-free modified
+    9K medium (initial pH 2.0, 45 C, 170 rpm, 20 days) by single and 1:1:1 mixed cultures
+    of Leptospirillum ferriphilum, Sulfobacillus thermosulfidooxidans, and Acidithiobacillus
+    caldus, monitoring ICP total dissolved iron as an iron-based desulfurization proxy.
 limitations:
 - In data/records/cassiterite-polymetallic-sulfide-ore.yaml, causal_graphs[0].edges[0..1].description
   and edges[0].evidence[0].explanation require minor synchronization after Stage 3

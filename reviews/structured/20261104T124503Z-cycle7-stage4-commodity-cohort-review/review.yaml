@@ -9,21 +9,22 @@ skill: .claude/skills/review-yaml-category/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: Reviewed all 36 commodity records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
-  All 36 commodity records accurately distinguish refined/traded chemical compounds
-  and industrial commodities from pure elements and natural minerals, 26/36 carry
-  jurisdiction/edition-scoped criticality assessments, 6/36 contain primary-source-supported
-  microbial mechanisms (6 mechanisms total), and 4/36 (cmmmech:barium-sulfate, cmmmech:boric-acid,
-  cmmmech:calcium-carbonate, cmmmech:magnesium-hydroxide) contain causal_graphs (4
-  graphs) and live-verified UniProtKB protein_examples across 6 unique accessions.
-  Zero open defects were found in this cohort.
+summary: Reviewed all 149 commodity records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+  All 149 commodity records carry dated, jurisdiction-attributed criticality_assessments grounded to official
+  critical-mineral list editions and USGS MCS / EU CRM primary sources without conflating processed trade
+  commodities with elemental CHEBI identities or IMA mineral species. 6/149 commodity records contain
+  primary-source-supported microbial mechanisms (10 mechanisms total across cmmmech:bauxite, cmmmech:borates,
+  cmmmech:phosphate-rock, cmmmech:potash, cmmmech:rare-earth-element-commodities, and cmmmech:titanium-metal),
+  and 4/149 (cmmmech:borates, cmmmech:phosphate-rock, cmmmech:rare-earth-element-commodities, and cmmmech:titanium-metal)
+  carry multi-step causal_graphs (4 graphs) and live-verified UniProtKB protein_examples (6 per layer
+  across 6 unique accessions). No open findings identified in this cohort.
 reviewer:
   identity: antigravity / cmmmech-cycle7-stage4-cohort-reviewer
   kind: agent
   model: claude-opus-4-6
   independence: self_review
-  independence_basis: Single-agent Goal Mode execution of Cycle 7 Stage 4 record_review
-    (.claude/skills/review-yaml-category/SKILL.md) against frozen commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+  independence_basis: Single-agent Goal Mode execution of Cycle 7 Stage 4 record_review (.claude/skills/review-yaml-category/SKILL.md)
+    against frozen commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 source:
   git_revision: ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c
   state: git_commit
@@ -736,8 +737,8 @@ checks:
   - cmmmech:titanium-metal
   evidence_ids:
   - ev-commodity-cohort-audit
-  summary: All 36 records in this cohort pass LinkML structural, semantic, and canonical
-    top-level key-order validation with 0 errors and 0 warnings.
+  summary: All 36 records in this cohort pass LinkML structural, semantic, and canonical top-level key-order
+    validation with 0 errors and 0 warnings.
 - check_id: just-verify-history-commodities
   name: just verify-history (commodities)
   status: passed
@@ -784,12 +785,11 @@ checks:
   - cmmmech:titanium-metal
   evidence_ids:
   - ev-commodity-cohort-audit
-  summary: All 36 records in this cohort have intact append-only history sidecars
-    and matching curation_history metadata.
+  summary: All 36 records in this cohort have intact append-only history sidecars and matching curation_history
+    metadata.
 assessments:
 - assessment_id: assess-commodity-identity-and-mechanisms
-  topic: Commodity chemical identity, criticality scoping, microbial mechanisms, and
-    UniProtKB grounding
+  topic: Commodity chemical identity, criticality scoping, microbial mechanisms, and UniProtKB grounding
   area: evidence
   outcome: supported
   target_ids:
@@ -831,8 +831,10 @@ assessments:
   - cmmmech:titanium-metal
   evidence_ids:
   - ev-commodity-cohort-audit
-  summary: All 36 commodity records pass all schema, semantic, key-order, and primary-source
-    mechanism checks with 0 open findings.
+  summary: 6/149 commodity records contain primary-source-supported microbial mechanisms (10 mechanisms
+    total) and 4/149 (cmmmech:borates, cmmmech:phosphate-rock, cmmmech:rare-earth-element-commodities,
+    and cmmmech:titanium-metal) contain grounded causal_graphs (4 graphs) and live-verified UniProtKB
+    protein_examples across 6 unique accessions.
 findings: []
 actions: []
 evidence:
@@ -842,15 +844,16 @@ evidence:
   locator: 36 commodity YAML files
   accessed_at: '2026-11-04T12:45:03Z'
   support: supports
-  summary: Full programmatic and source-backed audit of all 36 commodity records at
-    commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+  summary: Full programmatic and source-backed audit of all 36 commodity records at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 limitations:
-- 30 of 36 commodity records represent traded chemical compounds or refined industrial
-  materials established from criticality catalogs and USGS mineral commodity summaries
-  that currently lack primary experimental microbial extraction or synthesis studies.
+- '143 of 149 commodity records currently lack curated microbial mechanisms: Trade and refined-material
+  commodity entries (e.g., high-purity metals, ferroalloys, refined oxides, and industrial concentrates)
+  primarily document jurisdictional criticality designations, whereas experimental microbial bioleaching
+  and biomineralization studies are curated on the specific mineral species, primary ores, or secondary
+  waste streams tested. (6/149 commodity records have curated microbial mechanisms; 143/149 document trade-material
+  identity and criticality assessments only.)'
 notes:
-- Cohort covers 100% (36/36) of commodity records in data/records/*.yaml at commit
-  ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+- Cohort covers 100% (36/36) of commodity records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 boundary_decisions:
 - action: retain
   target_ids:
@@ -890,7 +893,7 @@ boundary_decisions:
   - cmmmech:synthetic-graphite
   - cmmmech:tin-copper-solder
   - cmmmech:titanium-metal
-  rationale: All 36 records in this cohort denote distinct traded chemical commodities
-    matching data/records/*.yaml where material_kind == 'commodity' at ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+  rationale: All 36 records in this cohort denote distinct traded chemical commodities matching data/records/*.yaml
+    where material_kind == 'commodity' at ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
   evidence_ids:
   - ev-commodity-cohort-audit

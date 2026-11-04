@@ -531,8 +531,8 @@ Update cexa_citrate_exporter.description in birnessite.yaml (causal_graphs[1]), 
 
 ## Limits And Additional Notes
 
-- 142 of 427 IMA mineral species records currently lack curated microbial mechanisms: 142 mineral species records (including 5 Round 125 critical-element mineral species added in Cycle 7 Stage 1) were established from IMA-CNMNC mineral catalogs and type-locality descriptions and await primary experimental microbial extraction, transformation, or biomineralization evidence. (285/427 mineral records have curated microbial mechanisms; 142/427 are IMA identity records only.)
-- Three mineral causal graphs contain source-limited UNGROUNDED GENE_OR_PROTEIN nodes: Thermococcus acidaminovorans Ax17 (cmmmech:ferrihydrite and cmmmech:magnetite) and unsequenced isolate Pseudomonas sp. OX1 (cmmmech:lindbergite pseudomonas_sp_ox1_mn_oxalate_biomineralization_graph) lack strain-resolved enzyme sequences in UniProtKB.
+- 137 of 426 IMA mineral species records currently lack curated microbial mechanisms: 137 mineral species records (including the 4 Round 125 critical-element mineral species fengruiite, igelstromite, lazerckerite, and plumbogottlobite added in Cycle 7 Stage 1) were established from IMA-CNMNC mineral catalogs and type-locality descriptions and await primary experimental microbial extraction, transformation, or biomineralization evidence. (289/426 mineral records have curated microbial mechanisms; 137/426 are IMA identity records only.)
+- Three mineral causal graphs contain source-limited UNGROUNDED GENE_OR_PROTEIN nodes: Thermococcus acidaminovorans Ax17 (cmmmech:ferrihydrite and cmmmech:magnetite) and unsequenced isolate Pseudomonas sp. OX1 (cmmmech:lindbergite pseudomonas_sp_ox1_mn_oxalate_biomineralization_graph) lack strain-resolved enzyme sequences in UniProtKB. (58/60 mineral records with causal_graphs have GROUNDED GENE_OR_PROTEIN nodes; 3 mineral causal graphs retain explicitly UNGROUNDED nodes.)
 - Cohort covers 100% (427/427) of mineral records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 
 ## Complete Structured Record
@@ -10292,16 +10292,19 @@ evidence:
     confirming grounding to both UniProtKB:G3Y4N5 (ATCC 1015) and UniProtKB:A0A254TZW7
     while description names only UniProtKB:A0A254TZW7.
 limitations:
-- '142 of 427 IMA mineral species records currently lack curated microbial mechanisms:
-  142 mineral species records (including 5 Round 125 critical-element mineral species
-  added in Cycle 7 Stage 1) were established from IMA-CNMNC mineral catalogs and type-locality
-  descriptions and await primary experimental microbial extraction, transformation,
-  or biomineralization evidence. (285/427 mineral records have curated microbial mechanisms;
-  142/427 are IMA identity records only.)'
+- '137 of 426 IMA mineral species records currently lack curated microbial mechanisms:
+  137 mineral species records (including the 4 Round 125 critical-element mineral
+  species fengruiite, igelstromite, lazerckerite, and plumbogottlobite added in Cycle
+  7 Stage 1) were established from IMA-CNMNC mineral catalogs and type-locality descriptions
+  and await primary experimental microbial extraction, transformation, or biomineralization
+  evidence. (289/426 mineral records have curated microbial mechanisms; 137/426 are
+  IMA identity records only.)'
 - 'Three mineral causal graphs contain source-limited UNGROUNDED GENE_OR_PROTEIN nodes:
   Thermococcus acidaminovorans Ax17 (cmmmech:ferrihydrite and cmmmech:magnetite) and
   unsequenced isolate Pseudomonas sp. OX1 (cmmmech:lindbergite pseudomonas_sp_ox1_mn_oxalate_biomineralization_graph)
-  lack strain-resolved enzyme sequences in UniProtKB.'
+  lack strain-resolved enzyme sequences in UniProtKB. (58/60 mineral records with
+  causal_graphs have GROUNDED GENE_OR_PROTEIN nodes; 3 mineral causal graphs retain
+  explicitly UNGROUNDED nodes.)'
 notes:
 - Cohort covers 100% (427/427) of mineral records in data/records/*.yaml at commit
   ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.

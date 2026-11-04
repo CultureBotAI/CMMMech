@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 31 primary_resource records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c, including the Cycle 7 Stage 2 (PR #914, commit 8bf82c8d) causal-graph addition on cmmmech:cassiterite-polymetallic-sulfide-ore (thermosulfidooxidans_caldus_cassiterite_sulfide_ore_bioleaching_graph) and the Cycle 7 Stage 3 (PR #915, commit ff4a9841) multi-strain Sqr/TetH/Tth UniProtKB grounding expansions on cmmmech:cassiterite-polymetallic-sulfide-ore and cmmmech:chalcopyrite-enargite-concentrate. All 31 primary_resource records contain primary-source-supported microbial mechanisms (42 mechanisms total), 10/31 contain causal_graphs (11 graphs), and 10/10 carry live-verified UniProtKB protein_examples across 26 unique accessions. Identified 2 minor graph findings across 3 records (cmmmech-cycle7-stage4-finding-0002 on cassiterite-polymetallic-sulfide-ore and chalcopyrite-enargite-concentrate; and cmmmech-cycle7-stage4-finding-0003 on manganese-ore) for Stage 5 grouped remediation.
+Reviewed all 31 primary_resource records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c, including the Cycle 7 Stage 2 (PR #914, commit 4d80ff7b) causal-graph and UniProtKB grounding addition on cmmmech:cassiterite-polymetallic-sulfide-ore (moderately_thermophilic_ore_pretreatment_graph) and the Cycle 7 Stage 3 (PR #915, commit ff4a9841) UniProtKB grounding expansions on cmmmech:cassiterite-polymetallic-sulfide-ore (adding Sulfobacillus thermosulfidooxidans Cutipayun UniProtKB:A0A1W1W805 and Acidithiobacillus caldus MTH-04 UniProtKB:A4ZV25) and cmmmech:chalcopyrite-enargite-concentrate (adding S. thermosulfidooxidans UniProtKB:A0A1W1W805, A. caldus MTH-04 UniProtKB:A4ZV25, and Acidithiobacillus ferrooxidans YNTRS-40 UniProtKB:A0A2Z6DW24). All 31 primary_resource records contain primary-source-supported microbial mechanisms (48 mechanisms total), and 10/31 contain multi-step causal_graphs (11 graphs) and live-verified UniProtKB protein_examples across 26 unique accessions. Identified 2 minor graph findings (cmmmech-cycle7-stage4-finding-0002 on cmmmech:cassiterite-polymetallic-sulfide-ore and cmmmech:chalcopyrite-enargite-concentrate, and cmmmech-cycle7-stage4-finding-0003 on cmmmech:manganese-ore) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -69,7 +69,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 evidence: supported. Targets: cmmmech:allanite-concentrate, cmmmech:basalt, cmmmech:carbonatite-associated-rare-earth-ore, cmmmech:cassiterite-polymetallic-sulfide-ore, cmmmech:chalcopyrite-enargite-concentrate, cmmmech:cobalt-rich-ferromanganese-crusts, cmmmech:dunite, cmmmech:enargite-pyrite-concentrate, cmmmech:eucrite-meteorite, cmmmech:eudialyte-concentrate, cmmmech:eudialyte-ore, cmmmech:ion-adsorption-rare-earth-clay, cmmmech:kaolin, cmmmech:l-chondrite-meteorite, cmmmech:lithium-bearing-geothermal-brine, cmmmech:lithium-mica-ore, cmmmech:ludwigite-ore, cmmmech:manganese-ore, cmmmech:metalliferous-black-shale, cmmmech:monazite-ore, cmmmech:nickel-laterite-ore, cmmmech:nickeline-bearing-ore, cmmmech:oxidized-zinc-ore, cmmmech:polymetallic-nodules, cmmmech:rare-earth-rich-deep-sea-mud, cmmmech:seafloor-massive-sulfides, cmmmech:seawater, cmmmech:silica-sand, cmmmech:tennantite-concentrate, cmmmech:tetrahedrite-concentrate, cmmmech:xenotime-concentrate.
 
-All 31 primary_resource records carry primary-source-supported microbial mechanisms (42 mechanisms) and 10/31 carry grounded causal_graphs (11 graphs) across 26 unique UniProtKB accessions.
+All 31 primary_resource records contain primary-source-supported microbial mechanisms (48 mechanisms total), and 10/31 contain grounded causal_graphs (11 graphs) and live-verified UniProtKB protein_examples across 26 unique accessions. Identified 2 minor graph findings across 3 primary_resource records (cmmmech:cassiterite-polymetallic-sulfide-ore, cmmmech:chalcopyrite-enargite-concentrate, and cmmmech:manganese-ore).
 
 ## Findings
 
@@ -115,7 +115,7 @@ Update cexa_citrate_exporter.description in birnessite.yaml (causal_graphs[1]), 
 
 ## Limits And Additional Notes
 
-- 21 of 31 primary_resource records report whole-cell or mixed-consortium bioleaching kinetics without gene- or enzyme-resolved intermediates in the cited primary papers and therefore do not carry causal_graphs.
+- Twenty-one primary_resource records currently curate organism- or consortium-level microbial mechanisms without multi-step causal_graphs or UniProtKB protein_examples: In those 21 natural ore, brine, clay, and concentrate records, the cited experimental bioleaching studies report whole-cell or mixed-consortium extraction yields without isolating specific gene or enzyme catalysts on the natural ore matrix. (10/31 primary_resource records have grounded causal_graphs and protein_examples; 21/31 curate organism/consortium-level mechanisms.)
 - Cohort covers 100% (31/31) of primary_resource records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 
 ## Complete Structured Record
@@ -136,16 +136,19 @@ verdict: pass_with_limitations
 scientific_review: true
 summary: 'Reviewed all 31 primary_resource records in data/records/*.yaml at commit
   ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c, including the Cycle 7 Stage 2 (PR #914,
-  commit 8bf82c8d) causal-graph addition on cmmmech:cassiterite-polymetallic-sulfide-ore
-  (thermosulfidooxidans_caldus_cassiterite_sulfide_ore_bioleaching_graph) and the
-  Cycle 7 Stage 3 (PR #915, commit ff4a9841) multi-strain Sqr/TetH/Tth UniProtKB grounding
-  expansions on cmmmech:cassiterite-polymetallic-sulfide-ore and cmmmech:chalcopyrite-enargite-concentrate.
-  All 31 primary_resource records contain primary-source-supported microbial mechanisms
-  (42 mechanisms total), 10/31 contain causal_graphs (11 graphs), and 10/10 carry
-  live-verified UniProtKB protein_examples across 26 unique accessions. Identified
-  2 minor graph findings across 3 records (cmmmech-cycle7-stage4-finding-0002 on cassiterite-polymetallic-sulfide-ore
-  and chalcopyrite-enargite-concentrate; and cmmmech-cycle7-stage4-finding-0003 on
-  manganese-ore) for Stage 5 grouped remediation.'
+  commit 4d80ff7b) causal-graph and UniProtKB grounding addition on cmmmech:cassiterite-polymetallic-sulfide-ore
+  (moderately_thermophilic_ore_pretreatment_graph) and the Cycle 7 Stage 3 (PR #915,
+  commit ff4a9841) UniProtKB grounding expansions on cmmmech:cassiterite-polymetallic-sulfide-ore
+  (adding Sulfobacillus thermosulfidooxidans Cutipayun UniProtKB:A0A1W1W805 and Acidithiobacillus
+  caldus MTH-04 UniProtKB:A4ZV25) and cmmmech:chalcopyrite-enargite-concentrate (adding
+  S. thermosulfidooxidans UniProtKB:A0A1W1W805, A. caldus MTH-04 UniProtKB:A4ZV25,
+  and Acidithiobacillus ferrooxidans YNTRS-40 UniProtKB:A0A2Z6DW24). All 31 primary_resource
+  records contain primary-source-supported microbial mechanisms (48 mechanisms total),
+  and 10/31 contain multi-step causal_graphs (11 graphs) and live-verified UniProtKB
+  protein_examples across 26 unique accessions. Identified 2 minor graph findings
+  (cmmmech-cycle7-stage4-finding-0002 on cmmmech:cassiterite-polymetallic-sulfide-ore
+  and cmmmech:chalcopyrite-enargite-concentrate, and cmmmech-cycle7-stage4-finding-0003
+  on cmmmech:manganese-ore) for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle7-stage4-cohort-reviewer
   kind: agent
@@ -857,9 +860,11 @@ assessments:
   - ev-primary-resource-cohort-audit
   - ev-pr-stage3-graphs
   - ev-manganese-ore-cexa
-  summary: All 31 primary_resource records carry primary-source-supported microbial
-    mechanisms (42 mechanisms) and 10/31 carry grounded causal_graphs (11 graphs)
-    across 26 unique UniProtKB accessions.
+  summary: All 31 primary_resource records contain primary-source-supported microbial
+    mechanisms (48 mechanisms total), and 10/31 contain grounded causal_graphs (11
+    graphs) and live-verified UniProtKB protein_examples across 26 unique accessions.
+    Identified 2 minor graph findings across 3 primary_resource records (cmmmech:cassiterite-polymetallic-sulfide-ore,
+    cmmmech:chalcopyrite-enargite-concentrate, and cmmmech:manganese-ore).
 findings:
 - finding_id: cmmmech-cycle7-stage4-finding-0002
   issue_key: cmmmech.cycle7-stage3-sulfur-graphs.edge-desc-grammar-and-incomplete-edge-evidence-loci
@@ -1009,9 +1014,13 @@ evidence:
     grounding to both UniProtKB:G3Y4N5 (ATCC 1015) and UniProtKB:A0A254TZW7 while
     description names only UniProtKB:A0A254TZW7.
 limitations:
-- 21 of 31 primary_resource records report whole-cell or mixed-consortium bioleaching
-  kinetics without gene- or enzyme-resolved intermediates in the cited primary papers
-  and therefore do not carry causal_graphs.
+- 'Twenty-one primary_resource records currently curate organism- or consortium-level
+  microbial mechanisms without multi-step causal_graphs or UniProtKB protein_examples:
+  In those 21 natural ore, brine, clay, and concentrate records, the cited experimental
+  bioleaching studies report whole-cell or mixed-consortium extraction yields without
+  isolating specific gene or enzyme catalysts on the natural ore matrix. (10/31 primary_resource
+  records have grounded causal_graphs and protein_examples; 21/31 curate organism/consortium-level
+  mechanisms.)'
 notes:
 - Cohort covers 100% (31/31) of primary_resource records in data/records/*.yaml at
   commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.

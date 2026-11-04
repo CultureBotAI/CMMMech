@@ -226,7 +226,7 @@ Update cexa_citrate_exporter.description in birnessite.yaml (causal_graphs[1]), 
 
 ## Limits And Additional Notes
 
-- 6 GENE_OR_PROTEIN nodes across 4 causal graphs (cmmmech:promethium surface_carboxyl_phosphate_ligands, cmmmech:ferrihydrite and cmmmech:magnetite Thermococcus acidaminovorans Ax17, and cmmmech:lindbergite Pseudomonas sp. OX1) are explicitly marked UNGROUNDED due to non-protein chemical ligands or unsequenced strains lacking UniProtKB entries.
+- Six GENE_OR_PROTEIN nodes across 6 records remain explicitly UNGROUNDED due to absent UniProtKB strain-proteome coverage: Thermococcus acidaminovorans Ax17 (ferrihydrite, iron, magnetite), unsequenced isolate Pseudomonas sp. OX1 (lindbergite first graph), mixed fungal/bacterial organic-acid leaching isolates (manganese), and unsequenced isolate Acidovorax sp. LW1 (praseodymium) lack strain-resolved enzyme sequences in UniProtKB. (259/265 GENE_OR_PROTEIN nodes are GROUNDED; 6/265 remain explicitly UNGROUNDED.)
 - Cross-cohort slice covers 100% (142/142) of records with causal_graphs at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 
 ## Complete Structured Record
@@ -3526,10 +3526,13 @@ evidence:
     and manganese-ore.yaml are grounded to both UniProtKB:G3Y4N5 (ATCC 1015) and UniProtKB:A0A254TZW7
     while description names only UniProtKB:A0A254TZW7.
 limitations:
-- 6 GENE_OR_PROTEIN nodes across 4 causal graphs (cmmmech:promethium surface_carboxyl_phosphate_ligands,
-  cmmmech:ferrihydrite and cmmmech:magnetite Thermococcus acidaminovorans Ax17, and
-  cmmmech:lindbergite Pseudomonas sp. OX1) are explicitly marked UNGROUNDED due to
-  non-protein chemical ligands or unsequenced strains lacking UniProtKB entries.
+- 'Six GENE_OR_PROTEIN nodes across 6 records remain explicitly UNGROUNDED due to
+  absent UniProtKB strain-proteome coverage: Thermococcus acidaminovorans Ax17 (ferrihydrite,
+  iron, magnetite), unsequenced isolate Pseudomonas sp. OX1 (lindbergite first graph),
+  mixed fungal/bacterial organic-acid leaching isolates (manganese), and unsequenced
+  isolate Acidovorax sp. LW1 (praseodymium) lack strain-resolved enzyme sequences
+  in UniProtKB. (259/265 GENE_OR_PROTEIN nodes are GROUNDED; 6/265 remain explicitly
+  UNGROUNDED.)'
 notes:
 - Cross-cohort slice covers 100% (142/142) of records with causal_graphs at commit
   ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
