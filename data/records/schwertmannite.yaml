@@ -1,25 +1,17 @@
 id: cmmmech:schwertmannite
 name: Schwertmannite
 material_kind: mineral
-description: Schwertmannite is an iron(III) oxyhydroxysulfate mineral listed as approved under IMA 1990-006
-  in the September 2026 IMA compilation. It is distinct from elemental iron, dissolved ferrous sulfate,
-  jarosite and an unspecified iron precipitate. The evidence below concerns laboratory synthesis from
-  dissolved reagents and subsequent testing of the collected material, not extraction from a natural ore
-  or industrial mineral recovery. No criticality designation is inherited from a constituent element.
+description: Schwertmannite is an iron(III) oxyhydroxysulfate mineral listed as approved under IMA 1990-006 in the September 2026 IMA compilation. It is distinct from elemental iron, dissolved ferrous sulfate, jarosite and an unspecified iron precipitate. The evidence below concerns laboratory synthesis from dissolved reagents and subsequent testing of the collected material, not extraction from a natural ore or industrial mineral recovery. No criticality designation is inherited from a constituent element.
 identifiers:
 - id: IMA:1990-006
   label: Schwertmannite
 sources:
 - id: ima_2026_09
-  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Schwertmannite row, PDF page 195; introductory
-    column definitions and distribution terms.
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Schwertmannite row, PDF page 195; introductory column definitions and distribution terms.
   url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
   accessed_on: '2026-10-11'
 - id: song2018
-  title: Song, Liu and Wang (2018). Comparison of the Biological and Chemical Synthesis of Schwertmannite
-    at a Consistent Fe2+ Oxidation Efficiency and the Effect of Extracellular Polymeric Substances of
-    Acidithiobacillus ferrooxidans on Biomineralization. Materials 11(9):1739. Sections 2-3, Figures 1-7
-    and Table 1; complete 13-page primary article.
+  title: Song, Liu and Wang (2018). Comparison of the Biological and Chemical Synthesis of Schwertmannite at a Consistent Fe2+ Oxidation Efficiency and the Effect of Extracellular Polymeric Substances of Acidithiobacillus ferrooxidans on Biomineralization. Materials 11(9):1739. Sections 2-3, Figures 1-7 and Table 1; complete 13-page primary article.
   url: https://doi.org/10.3390/ma11091739
   accessed_on: '2026-10-11'
 - id: ncbi_ferrooxidans
@@ -30,113 +22,524 @@ mechanisms:
 - id: lx5_ferrous_oxidation_and_schwertmannite_precipitation
   name: Resting-cell iron oxidation associated with schwertmannite precipitation
   process: biomineralization
+  description: Washed resting cells of source-reported A. ferrooxidans LX5 oxidized dissolved Fe(II) in acidic ferrous sulfate solution while an iron precipitate formed and was assigned to schwertmannite by powder X-ray diffraction. A cell-free hydrogen-peroxide comparator also formed the phase. Biological total-iron precipitation was lower than the chemical comparator at 60 hours despite higher subsequent arsenic uptake by the collected biological material. The study supports microbial participation in reagent-based mineral formation, not a requirement for living cells in every schwertmannite synthesis or superior biological recovery yield.
+  context: Song et al. report obtaining LX5 as CGMCC No. 0727. The asserted taxon identifier verifies the species, not that strain accession. Cells grown in modified 9K medium containing 44.48 g/L FeSO4.7H2O were collected at the end of exponential growth, filtered to remove precipitate, centrifuged, washed three times in pH 1.5 sulfuric acid and resuspended at pH 2.5. The formation assay used 225 mL solution containing 11.12 g FeSO4.7H2O in 500 mL flasks, with 10% v/v resting-cell inoculum and reported density 6.0 x 10^6 cells/mL. Initial pH was adjusted to 3.0 with sulfuric acid; incubation was at 28 degrees C and 180 rpm, with triplicate treatments. The chemical arm used 11.12 g FeSO4.7H2O in 250 mL effective volume, with approximately 6 mL of 30% H2O2 added by pump at a constant rate selected to approximate the average biological Fe(II) oxidation rate. Periodic samples were filtered at 0.22 micrometers before Fe(II) and total-Fe measurement. Section 2.2.1 says collection followed complete
+    Fe(II) oxidation, reported at 60 hours, whereas Figures 1-3 captions describe 72 hours. The 60-hour solution comparison is retained separately from that unresolved collection-time discrepancy. These are laboratory flask experiments with reagent substrates, not industrial deployment.
   microbial: true
   organisms:
   - id: NCBITaxon:920
     label: Acidithiobacillus ferrooxidans
-  description: Washed resting cells of source-reported A. ferrooxidans LX5 oxidized dissolved Fe(II) in
-    acidic ferrous sulfate solution while an iron precipitate formed and was assigned to schwertmannite
-    by powder X-ray diffraction. A cell-free hydrogen-peroxide comparator also formed the phase. Biological
-    total-iron precipitation was lower than the chemical comparator at 60 hours despite higher subsequent
-    arsenic uptake by the collected biological material. The study supports microbial participation in
-    reagent-based mineral formation, not a requirement for living cells in every schwertmannite synthesis
-    or superior biological recovery yield.
-  context: Song et al. report obtaining LX5 as CGMCC No. 0727. The asserted taxon identifier verifies
-    the species, not that strain accession. Cells grown in modified 9K medium containing 44.48 g/L FeSO4.7H2O
-    were collected at the end of exponential growth, filtered to remove precipitate, centrifuged, washed
-    three times in pH 1.5 sulfuric acid and resuspended at pH 2.5. The formation assay used 225 mL solution
-    containing 11.12 g FeSO4.7H2O in 500 mL flasks, with 10% v/v resting-cell inoculum and reported density
-    6.0 x 10^6 cells/mL. Initial pH was adjusted to 3.0 with sulfuric acid; incubation was at 28 degrees
-    C and 180 rpm, with triplicate treatments. The chemical arm used 11.12 g FeSO4.7H2O in 250 mL effective
-    volume, with approximately 6 mL of 30% H2O2 added by pump at a constant rate selected to approximate
-    the average biological Fe(II) oxidation rate. Periodic samples were filtered at 0.22 micrometers before
-    Fe(II) and total-Fe measurement. Section 2.2.1 says collection followed complete Fe(II) oxidation,
-    reported at 60 hours, whereas Figures 1-3 captions describe 72 hours. The 60-hour solution comparison
-    is retained separately from that unresolved collection-time discrepancy. These are laboratory flask
-    experiments with reagent substrates, not industrial deployment.
+  protein_examples:
+  - uniprot_accession: UniProtKB:B7JAQ7
+    entry_name: B7JAQ7_ACIF2
+    protein_name: Cytochrome c
+    gene_symbol: cyc2
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    functional_role: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153; 485 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 catalyzing initial extracellular oxidation of Fe(II) to Fe(III) and transferring electrons into the periplasmic rusticyanin-dependent iron-oxidation chain.
+    annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing Acidithiobacillus ferrooxidans LX5 (= CGMCC 0727; NCBITaxon:920, Section 2.1) oxidizing 160 mmol/L Fe2+ at 28 C and 180 rpm during 72 h biogenic schwertmannite synthesis in Song et al. (2018).
+    evidence:
+    - source_ref: song2018
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 outer-membrane Cyc2 (cyc2, AFE_3153) for aerobic Fe(II) oxidation by strain LX5 (CGMCC 0727) in 160 mmol/L FeSO4 modified 9K medium in Song et al. (2018); individual rus-operon genes were not directly assayed.
+  - uniprot_accession: UniProtKB:B7JAQ0
+    entry_name: RUS_ACIF2
+    protein_name: Rusticyanin
+    gene_symbol: rus
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR000923
+    - InterPro:IPR028871
+    - InterPro:IPR050845
+    - InterPro:IPR033138
+    - InterPro:IPR008972
+    - InterPro:IPR001243
+    pfam_ids:
+    - Pfam:PF00127
+    ncbifam_ids:
+    - NCBIfam:TIGR03095
+    go_terms:
+    - id: GO:0042597
+      label: periplasmic space
+    - id: GO:0005507
+      label: copper ion binding
+    - id: GO:0009055
+      label: electron transfer activity
+    functional_role: Periplasmic type-I blue copper electron carrier rusticyanin (rus, locus AFE_3146; 187 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) and downstream aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing Acidithiobacillus ferrooxidans LX5 (= CGMCC 0727; NCBITaxon:920, Section 2.1) during 72 h biogenic schwertmannite synthesis in Song et al. (2018).
+    evidence:
+    - source_ref: song2018
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic rusticyanin (rus, AFE_3146) for aerobic Fe(II) oxidation by strain LX5 in Song et al. (2018); individual genes were not directly assayed.
+  - uniprot_accession: UniProtKB:B7JAQ6
+    entry_name: B7JAQ6_ACIF2
+    protein_name: Cytochrome c552
+    gene_symbol: cyc1
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR009056
+    - InterPro:IPR036909
+    - InterPro:IPR024167
+    - InterPro:IPR050597
+    pfam_ids:
+    - Pfam:PF00034
+    go_terms:
+    - id: GO:0042597
+      label: periplasmic space
+    - id: GO:0009055
+      label: electron transfer activity
+    - id: GO:0020037
+      label: heme binding
+    - id: GO:0005506
+      label: iron ion binding
+    functional_role: Periplasmic diheme cytochrome c4 Cyc1 / cytochrome c552 (cyc1, locus AFE_3152; 230 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 transferring electrons from periplasmic rusticyanin (AFE_3146) to inner-membrane aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+    annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing Acidithiobacillus ferrooxidans LX5 (= CGMCC 0727; NCBITaxon:920, Section 2.1) during 72 h biogenic schwertmannite synthesis in Song et al. (2018).
+    evidence:
+    - source_ref: song2018
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic diheme cytochrome c4 Cyc1 (cyc1, AFE_3152) for aerobic Fe(II) oxidation by strain LX5 in Song et al. (2018); individual genes were not directly assayed.
   evidence:
   - source_ref: song2018
     supports: support
-    explanation: Sections 3.1-3.2 and Figures 1-3 show Fe(II) oxidation and precipitate formation in both
-      arms. Broad XRD features were assigned to the schwertmannite reference pattern 47-1775; the authors
-      report no other characteristic peaks. This supports the stated phase assignment but does not quantify
-      amorphous impurities or establish absolute product purity. Biological material had a rough, spiny
-      aggregate morphology, contrasting with smoother chemical particles.
+    explanation: Sections 3.1-3.2 and Figures 1-3 show Fe(II) oxidation and precipitate formation in both arms. Broad XRD features were assigned to the schwertmannite reference pattern 47-1775; the authors report no other characteristic peaks. This supports the stated phase assignment but does not quantify amorphous impurities or establish absolute product purity. Biological material had a rough, spiny aggregate morphology, contrasting with smoother chemical particles.
   - source_ref: song2018
     supports: partial
-    explanation: 'Section 3.1 and Figure 1 report total-Fe precipitation of 35.0% in the biological arm
-      and 47.9% in the chemical arm after 60 hours. These percentages quantify dissolved total-Fe loss
-      relative to initial dissolved total Fe; they are not isolated mineral-mass or elemental-metal recovery
-      yields. Matching the average oxidation rate did not match every time point: at 12 hours Fe(II) oxidation
-      was 11.0% biologically and 18.4% chemically. The H2O2 comparator changes oxidant chemistry and does
-      not isolate an exclusive enzymatic or extracellular-polymer cause of precipitation.'
+    explanation: 'Section 3.1 and Figure 1 report total-Fe precipitation of 35.0% in the biological arm and 47.9% in the chemical arm after 60 hours. These percentages quantify dissolved total-Fe loss relative to initial dissolved total Fe; they are not isolated mineral-mass or elemental-metal recovery yields. Matching the average oxidation rate did not match every time point: at 12 hours Fe(II) oxidation was 11.0% biologically and 18.4% chemically. The H2O2 comparator changes oxidant chemistry and does not isolate an exclusive enzymatic or extracellular-polymer cause of precipitation.'
   - source_ref: song2018
     supports: context_only
-    explanation: 'Sections 2.2.2 and 3.3 and Figure 4 test a downstream property of the collected materials:
-      25 mg solid in 100 mL solution initially containing 0-30 mg/L As(III), adjusted to pH 7.5, at 28
-      degrees C and 180 rpm for four hours, in triplicate. The authors report saturation uptake of 117
-      mg/g for biological and 87 mg/g for chemical material. These are source-reported mass-normalized
-      uptake values under this assay, not microbial arsenic extraction or universal capacities. Section
-      2.3 specifies total-As analysis of filtrates, so the experiment does not independently resolve arsenic
-      redox speciation. It demonstrates neither isolated arsenic recovery nor a living-cell adsorption
-      mechanism.'
+    explanation: 'Sections 2.2.2 and 3.3 and Figure 4 test a downstream property of the collected materials: 25 mg solid in 100 mL solution initially containing 0-30 mg/L As(III), adjusted to pH 7.5, at 28 degrees C and 180 rpm for four hours, in triplicate. The authors report saturation uptake of 117 mg/g for biological and 87 mg/g for chemical material. These are source-reported mass-normalized uptake values under this assay, not microbial arsenic extraction or universal capacities. Section 2.3 specifies total-As analysis of filtrates, so the experiment does not independently resolve arsenic redox speciation. It demonstrates neither isolated arsenic recovery nor a living-cell adsorption mechanism.'
   - source_ref: ncbi_ferrooxidans
     supports: context_only
-    explanation: The current authority resolves the asserted species name and identifier. LX5 and CGMCC
-      No. 0727 remain primary-source strain labels; the species node is not evidence of a strain-specific
-      mechanism.
+    explanation: The current authority resolves the asserted species name and identifier. LX5 and CGMCC No. 0727 remain primary-source strain labels; the species node is not evidence of a strain-specific mechanism.
 - id: lx5_eps_removal_perturbation
   name: Increased collected precipitate after extracellular-material removal
   process: biomineralization
+  description: A separate experiment found more dried precipitate after centrifugation and removal of the cell supernatant than with conventional resting cells or centrifuged cells whose detached extracellular material was retained. This is evidence for a treatment-associated difference in biomineralization, with extracellular polymer inhibition proposed by the authors. It does not identify a specific polymer, enzyme or exclusive molecular cause.
+  context: Section 2.2.3 compared conventional LX5 resting cells, cells centrifuged at 20,000 g for 20 minutes at 4 degrees C then resuspended with their supernatant, and similarly centrifuged cells whose supernatant was removed and replaced by the same volume of deionized water. Each treatment used 25 mL cell suspension plus 225 mL solution containing 11.12 g FeSO4.7H2O, with reported cell density approximately 6.0 x 10^6 cells/mL and initial pH 3.0, at 28 degrees C and 180 rpm for 72 hours. Solids were filtered through Whatman No. 4 paper, washed once and dried at 60 degrees C to constant mass. This is a separate assay from the 60-hour solution comparison.
   microbial: true
   organisms:
   - id: NCBITaxon:920
     label: Acidithiobacillus ferrooxidans
-  description: A separate experiment found more dried precipitate after centrifugation and removal of
-    the cell supernatant than with conventional resting cells or centrifuged cells whose detached extracellular
-    material was retained. This is evidence for a treatment-associated difference in biomineralization,
-    with extracellular polymer inhibition proposed by the authors. It does not identify a specific polymer,
-    enzyme or exclusive molecular cause.
-  context: Section 2.2.3 compared conventional LX5 resting cells, cells centrifuged at 20,000 g for 20
-    minutes at 4 degrees C then resuspended with their supernatant, and similarly centrifuged cells whose
-    supernatant was removed and replaced by the same volume of deionized water. Each treatment used 25
-    mL cell suspension plus 225 mL solution containing 11.12 g FeSO4.7H2O, with reported cell density
-    approximately 6.0 x 10^6 cells/mL and initial pH 3.0, at 28 degrees C and 180 rpm for 72 hours. Solids
-    were filtered through Whatman No. 4 paper, washed once and dried at 60 degrees C to constant mass.
-    This is a separate assay from the 60-hour solution comparison.
+  protein_examples:
+  - uniprot_accession: UniProtKB:B7JAQ7
+    entry_name: B7JAQ7_ACIF2
+    protein_name: Cytochrome c
+    gene_symbol: cyc2
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    functional_role: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153; 485 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 catalyzing initial extracellular oxidation of Fe(II) to Fe(III) and transferring electrons into the periplasmic rusticyanin-dependent iron-oxidation chain.
+    annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing centrifugation-sheared, EPS-depleted Acidithiobacillus ferrooxidans LX5 (= CGMCC 0727; NCBITaxon:920, Sections 2.2 and 3.3-3.4) tested in the 12-40 h EPS-removal perturbation assay in Song et al. (2018).
+    evidence:
+    - source_ref: song2018
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 outer-membrane Cyc2 (cyc2, AFE_3153) for Fe(II) oxidation by EPS-depleted vs untreated A. ferrooxidans LX5 cells in Song et al. (2018); individual rus-operon genes were not directly assayed.
+  - uniprot_accession: UniProtKB:B7JAQ0
+    entry_name: RUS_ACIF2
+    protein_name: Rusticyanin
+    gene_symbol: rus
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR000923
+    - InterPro:IPR028871
+    - InterPro:IPR050845
+    - InterPro:IPR033138
+    - InterPro:IPR008972
+    - InterPro:IPR001243
+    pfam_ids:
+    - Pfam:PF00127
+    ncbifam_ids:
+    - NCBIfam:TIGR03095
+    go_terms:
+    - id: GO:0042597
+      label: periplasmic space
+    - id: GO:0005507
+      label: copper ion binding
+    - id: GO:0009055
+      label: electron transfer activity
+    functional_role: Periplasmic type-I blue copper electron carrier rusticyanin (rus, locus AFE_3146; 187 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) and downstream aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing centrifugation-sheared, EPS-depleted Acidithiobacillus ferrooxidans LX5 (= CGMCC 0727; NCBITaxon:920) in the 12-40 h EPS-removal perturbation assay in Song et al. (2018).
+    evidence:
+    - source_ref: song2018
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic rusticyanin (rus, AFE_3146) for Fe(II) oxidation by EPS-depleted vs untreated A. ferrooxidans LX5 cells in Song et al. (2018); individual genes were not directly assayed.
+  - uniprot_accession: UniProtKB:B7JAQ6
+    entry_name: B7JAQ6_ACIF2
+    protein_name: Cytochrome c552
+    gene_symbol: cyc1
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR009056
+    - InterPro:IPR036909
+    - InterPro:IPR024167
+    - InterPro:IPR050597
+    pfam_ids:
+    - Pfam:PF00034
+    go_terms:
+    - id: GO:0042597
+      label: periplasmic space
+    - id: GO:0009055
+      label: electron transfer activity
+    - id: GO:0020037
+      label: heme binding
+    - id: GO:0005506
+      label: iron ion binding
+    functional_role: Periplasmic diheme cytochrome c4 Cyc1 / cytochrome c552 (cyc1, locus AFE_3152; 230 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 transferring electrons from periplasmic rusticyanin (AFE_3146) to inner-membrane aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+    annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing centrifugation-sheared, EPS-depleted Acidithiobacillus ferrooxidans LX5 (= CGMCC 0727; NCBITaxon:920) in the 12-40 h EPS-removal perturbation assay in Song et al. (2018).
+    evidence:
+    - source_ref: song2018
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic diheme cytochrome c4 Cyc1 (cyc1, AFE_3152) for Fe(II) oxidation by EPS-depleted vs untreated A. ferrooxidans LX5 cells in Song et al. (2018); individual genes were not directly assayed.
   evidence:
   - source_ref: song2018
     supports: support
-    explanation: Figures 5-7 and Table 1 report similar Fe(II) oxidation trajectories but collected dry
-      masses of 0.89, 0.96 and 1.29 g for conventional, detached-but-retained, and detached-and-removed
-      treatments, respectively. Table 1 reports BET areas of 68.23, 56.76 and 86.43 square meters/g for
-      those arms. These are precipitate properties, not purity-corrected mineral yields or metal recovery
-      percentages.
+    explanation: Figures 5-7 and Table 1 report similar Fe(II) oxidation trajectories but collected dry masses of 0.89, 0.96 and 1.29 g for conventional, detached-but-retained, and detached-and-removed treatments, respectively. Table 1 reports BET areas of 68.23, 56.76 and 86.43 square meters/g for those arms. These are precipitate properties, not purity-corrected mineral yields or metal recovery percentages.
   - source_ref: song2018
     supports: partial
-    explanation: Supernatant removal also changes dissolved constituents and the handling treatment; there
-      is no purified-polymer add-back or independent viability assay that isolates the proposed cause.
-      Organic carbon was used as an extracellular-material proxy, and Figure 5a labels its concentration
-      mg/L whereas Section 3.4 prints mg/mL; no reconciled concentration is adopted here. The hydroxyl
-      coefficients in Table 1's calculated formulas also do not follow the article's stated Fe8O8(OH)8-2x(SO4)x
-      relation. Those formulas are not used as mineral identity or stoichiometric proof.
+    explanation: Supernatant removal also changes dissolved constituents and the handling treatment; there is no purified-polymer add-back or independent viability assay that isolates the proposed cause. Organic carbon was used as an extracellular-material proxy, and Figure 5a labels its concentration mg/L whereas Section 3.4 prints mg/mL; no reconciled concentration is adopted here. The hydroxyl coefficients in Table 1's calculated formulas also do not follow the article's stated Fe8O8(OH)8-2x(SO4)x relation. Those formulas are not used as mineral identity or stoichiometric proof.
+causal_graphs:
+- id: lx5_ferrous_oxidation_and_schwertmannite_precipitation_graph
+  name: Acidithiobacillus ferrooxidans LX5 Fe(II) oxidation and 72 h biogenic schwertmannite precipitation
+  description: Causal pathway linking representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation proteins (cyc2 AFE_3153, rus AFE_3146, cyc1 AFE_3152) in strain LX5 (CGMCC 0727) to complete oxidation of 160 mmol/L Fe2+ within ~40-48 h and progressive hydrolysis/nucleation of XRD- and FTIR-characterized schwertmannite over 72 h at 28 C in Song et al. (2018).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: lx5_ferrous_oxidation_and_schwertmannite_precipitation
+  nodes:
+  - id: cyc2_outer_membrane_cytochrome
+    label: Outer-membrane monoheme cytochrome c Cyc2 (cyc2 AFE_3153)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cyc2
+    description: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153; 485 aa) in the rus operon (AFE_3146-AFE_3153) of Acidithiobacillus ferrooxidans ATCC 23270 catalyzing initial extracellular oxidation of Fe(II) to Fe(III).
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JAQ7
+      entry_name: B7JAQ7_ACIF2
+      protein_name: Cytochrome c
+      gene_symbol: cyc2
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      functional_role: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153; 485 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 catalyzing initial extracellular oxidation of Fe(II) to Fe(III) and transferring electrons into the periplasmic rusticyanin-dependent iron-oxidation chain.
+      annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing Acidithiobacillus ferrooxidans LX5 (= CGMCC 0727; NCBITaxon:920, Section 2.1) oxidizing 160 mmol/L Fe2+ at 28 C and 180 rpm during 72 h biogenic schwertmannite synthesis in Song et al. (2018).
+      evidence:
+      - source_ref: song2018
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 outer-membrane Cyc2 (cyc2, AFE_3153) for aerobic Fe(II) oxidation by strain LX5 (CGMCC 0727) in 160 mmol/L FeSO4 modified 9K medium in Song et al. (2018); individual rus-operon genes were not directly assayed.
+  - id: rus_cyc1_periplasmic_electron_transfer
+    label: Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: rus
+    description: 'Soluble periplasmic electron-transfer carriers of the rus operon (AFE_3146-AFE_3153) in Acidithiobacillus ferrooxidans ATCC 23270: type-I blue-copper rusticyanin (rus / AFE_3146) and periplasmic diheme cytochrome c4 Cyc1 / cytochrome c552 (cyc1 / AFE_3152), which relay electrons from outer-membrane Cyc2 to inner-membrane aa3-type cytochrome c oxidase (coxBACD, AFE_3149-AFE_3147/AFE_3150) and uphill bc1 electron transport (cycA1, AFE_3151).'
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JAQ0
+      entry_name: RUS_ACIF2
+      protein_name: Rusticyanin
+      gene_symbol: rus
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR000923
+      - InterPro:IPR028871
+      - InterPro:IPR050845
+      - InterPro:IPR033138
+      - InterPro:IPR008972
+      - InterPro:IPR001243
+      pfam_ids:
+      - Pfam:PF00127
+      ncbifam_ids:
+      - NCBIfam:TIGR03095
+      go_terms:
+      - id: GO:0042597
+        label: periplasmic space
+      - id: GO:0005507
+        label: copper ion binding
+      - id: GO:0009055
+        label: electron transfer activity
+      functional_role: Periplasmic type-I blue copper electron carrier rusticyanin (rus, locus AFE_3146; 187 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) and downstream aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing Acidithiobacillus ferrooxidans LX5 (= CGMCC 0727; NCBITaxon:920, Section 2.1) during 72 h biogenic schwertmannite synthesis in Song et al. (2018).
+      evidence:
+      - source_ref: song2018
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic rusticyanin (rus, AFE_3146) for aerobic Fe(II) oxidation by strain LX5 in Song et al. (2018); individual genes were not directly assayed.
+    - uniprot_accession: UniProtKB:B7JAQ6
+      entry_name: B7JAQ6_ACIF2
+      protein_name: Cytochrome c552
+      gene_symbol: cyc1
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR009056
+      - InterPro:IPR036909
+      - InterPro:IPR024167
+      - InterPro:IPR050597
+      pfam_ids:
+      - Pfam:PF00034
+      go_terms:
+      - id: GO:0042597
+        label: periplasmic space
+      - id: GO:0009055
+        label: electron transfer activity
+      - id: GO:0020037
+        label: heme binding
+      - id: GO:0005506
+        label: iron ion binding
+      functional_role: Periplasmic diheme cytochrome c4 Cyc1 / cytochrome c552 (cyc1, locus AFE_3152; 230 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 transferring electrons from periplasmic rusticyanin (AFE_3146) to inner-membrane aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+      annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing Acidithiobacillus ferrooxidans LX5 (= CGMCC 0727; NCBITaxon:920, Section 2.1) during 72 h biogenic schwertmannite synthesis in Song et al. (2018).
+      evidence:
+      - source_ref: song2018
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic diheme cytochrome c4 Cyc1 (cyc1, AFE_3152) for aerobic Fe(II) oxidation by strain LX5 in Song et al. (2018); individual genes were not directly assayed.
+  - id: lx5_ferrous_sulfate_oxidation_system
+    label: A. ferrooxidans LX5 suspension (~5 x 10^7 cells/mL) in 160 mmol/L Fe2+ (FeSO4*7H2O) modified 9K salts (initial pH 2.50, 28 C, 180 rpm) oxidizing 100% of Fe2+ by ~40-48 h and lowering pH to 2.02
+    node_type: CHEMICAL_ENTITY
+    description: Triplicate 500 mL flasks containing 160 mmol/L Fe2+ (from FeSO4*7H2O) and modified 9K salts at initial pH 2.50, 28 C, and 180 rpm inoculated with A. ferrooxidans LX5 (~5 x 10^7 cells/mL), achieving complete Fe2+ oxidation by ~40-48 h while pH declines from 2.50 to 2.02 over 72 h (Figure 1a).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: eps_complexed_ferric_sulfate_hydrolysis_interface
+    label: Ferric-ion (Fe3+) complexation with cell-surface EPS (31.5 -> 58.3 mg/g dry weight, bound Fe3+ rising from 8.4% to 69.2%) and acidic ferric-sulfate hydrolysis
+    node_type: CELLULAR_STRUCTURE
+    description: Cell-surface extracellular polymeric substances (EPS) of A. ferrooxidans LX5 whose content increases from 31.5 to 58.3 mg/g dry cell weight over 12-72 h while the EPS-bound Fe3+ fraction rises from 8.4% to 69.2% (Figures 4-5), templating ferric-oxyhydroxysulfate hydrolysis.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: biogenic_schwertmannite_precipitate_72h
+    label: 6.45 g/L biogenic schwertmannite precipitate at 72 h (36.1% total Fe precipitated; XRD broad peak at 2theta = 35.16 deg PDF 47-1775; evolving from 100-150 nm spheres to 1-2 um hedgehog aggregates)
+    node_type: MATERIAL_OR_PHASE
+    description: Precipitated biogenic schwertmannite increasing from 1.24 g/L at 12 h to 6.45 g/L at 72 h (36.1% total Fe precipitated; Figure 1b), identified by a broad XRD reflection near 2theta = 35.16 deg (JCPDS No. 47-1775) and FTIR sulfate/FeOOH bands (Figure 2) and maturing from 100-150 nm smooth spheres (12 h) to 700-900 nm (40 h) and 1-2 um hedgehog-like aggregates (72 h; Figure 3).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cyc2_outer_membrane_cytochrome
+    target: rus_cyc1_periplasmic_electron_transfer
+    predicate: provides_electrons_to
+    relationship: extracellular Fe(II) oxidation and transmembrane electron delivery into the rus operon periplasmic relay
+    description: Outer-membrane monoheme cytochrome c Cyc2 (cyc2 AFE_3153) oxidizes extracellular Fe(II) to Fe(III) and delivers electrons across the outer membrane to Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).
+    evidence:
+    - source_ref: song2018
+      supports: partial
+      explanation: Aerobic Fe(II) oxidation in Acidithiobacillus ferrooxidans LX5 (CGMCC 0727) couples outer-membrane Cyc2 (AFE_3153) to periplasmic rusticyanin (AFE_3146) and Cyc1 (AFE_3152) during 160 mmol/L Fe2+ oxidation at 28 C in Song et al. (2018); individual rus-operon genes were not directly assayed.
+  - source: rus_cyc1_periplasmic_electron_transfer
+    target: lx5_ferrous_sulfate_oxidation_system
+    predicate: drives
+    relationship: complete microbial oxidation of 160 mmol/L Fe2+ within ~40-48 h and solution acidification from pH 2.50 to 2.02
+    description: Inoculation with ~5 x 10^7 cells/mL A. ferrooxidans LX5 oxidizes 160 mmol/L Fe2+ to completion within ~40-48 h at 28 C and 180 rpm while ferric hydrolysis lowers solution pH from 2.50 to 2.02 over 72 h.
+    evidence:
+    - source_ref: song2018
+      supports: partial
+      explanation: Section 3.1 and Figure 1a of Song et al. (2018) document the Fe2+ oxidation trajectory (reaching 100% by ~40-48 h) and the pH decline from 2.50 to 2.02 over 72 h.
+  - source: lx5_ferrous_sulfate_oxidation_system
+    target: eps_complexed_ferric_sulfate_hydrolysis_interface
+    predicate: nucleates
+    relationship: EPS-bound Fe3+ enrichment (8.4% to 69.2%) and ferric-sulfate hydrolysis templating schwertmannite nucleation
+    description: Ferric ions generated by LX5 Fe(II) oxidation accumulate within cell-surface EPS (whose bound Fe3+ fraction increases from 8.4% at 12 h to 69.2% at 72 h as EPS rises from 31.5 to 58.3 mg/g dry weight) and hydrolyze with sulfate to nucleate schwertmannite.
+    evidence:
+    - source_ref: song2018
+      supports: support
+      explanation: Sections 3.2-3.3 and Figures 4-5 of Song et al. (2018) demonstrate the time-series increase in EPS content (31.5 to 58.3 mg/g), EPS-bound Fe3+ fraction (8.4% to 69.2%), and C-O-Fe/O-H/C=O FTIR shifts during schwertmannite formation.
+  - source: eps_complexed_ferric_sulfate_hydrolysis_interface
+    target: biogenic_schwertmannite_precipitate_72h
+    predicate: produces
+    relationship: accumulation of 6.45 g/L schwertmannite (36.1% total Fe precipitated) with spherical-to-hedgehog morphological maturation over 72 h
+    description: Over 12-72 h, ferric hydrolysis yields 1.24 to 6.45 g/L schwertmannite (36.1% total Fe precipitated at 72 h) exhibiting the broad 2theta = 35.16 deg XRD peak (PDF 47-1775), sulfate/FeOOH FTIR bands, and SEM transition from 100-150 nm spheres to 1-2 um hedgehog-like particles.
+    evidence:
+    - source_ref: song2018
+      supports: support
+      explanation: Sections 3.1-3.2 and Figures 1b, 2, and 3 of Song et al. (2018) support the 1.24 -> 6.45 g/L precipitate mass series, 36.1% Fe precipitation fraction, XRD/FTIR phase identification, and SEM morphology series.
+- id: lx5_eps_removal_perturbation_graph
+  name: Centrifugal EPS-depletion perturbation of Acidithiobacillus ferrooxidans LX5 Fe(II) oxidation and schwertmannite precipitation
+  description: Causal pathway linking representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation proteins (cyc2 AFE_3153, rus AFE_3146, cyc1 AFE_3152) in centrifugation-sheared, EPS-depleted strain LX5 (10,000 x g for 20 min) to lower 12-40 h Fe2+ oxidation efficiency (16.4-85.6% vs 22.9-95.5% in untreated cells) and reduced schwertmannite mass yield (0.43-4.63 g/L vs 1.24-5.73 g/L) in Song et al. (2018).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: lx5_eps_removal_perturbation
+  nodes:
+  - id: cyc2_outer_membrane_cytochrome
+    label: Outer-membrane monoheme cytochrome c Cyc2 (cyc2 AFE_3153)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cyc2
+    description: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153; 485 aa) in the rus operon (AFE_3146-AFE_3153) of Acidithiobacillus ferrooxidans ATCC 23270 catalyzing initial extracellular oxidation of Fe(II) to Fe(III).
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JAQ7
+      entry_name: B7JAQ7_ACIF2
+      protein_name: Cytochrome c
+      gene_symbol: cyc2
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      functional_role: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153; 485 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 catalyzing initial extracellular oxidation of Fe(II) to Fe(III) and transferring electrons into the periplasmic rusticyanin-dependent iron-oxidation chain.
+      annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing centrifugation-sheared, EPS-depleted Acidithiobacillus ferrooxidans LX5 (= CGMCC 0727; NCBITaxon:920, Sections 2.2 and 3.3-3.4) tested in the 12-40 h EPS-removal perturbation assay in Song et al. (2018).
+      evidence:
+      - source_ref: song2018
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 outer-membrane Cyc2 (cyc2, AFE_3153) for Fe(II) oxidation by EPS-depleted vs untreated A. ferrooxidans LX5 cells in Song et al. (2018); individual rus-operon genes were not directly assayed.
+  - id: rus_cyc1_periplasmic_electron_transfer
+    label: Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: rus
+    description: 'Soluble periplasmic electron-transfer carriers of the rus operon (AFE_3146-AFE_3153) in Acidithiobacillus ferrooxidans ATCC 23270: type-I blue-copper rusticyanin (rus / AFE_3146) and periplasmic diheme cytochrome c4 Cyc1 / cytochrome c552 (cyc1 / AFE_3152), which relay electrons from outer-membrane Cyc2 to inner-membrane aa3-type cytochrome c oxidase (coxBACD, AFE_3149-AFE_3147/AFE_3150) and uphill bc1 electron transport (cycA1, AFE_3151).'
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JAQ0
+      entry_name: RUS_ACIF2
+      protein_name: Rusticyanin
+      gene_symbol: rus
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR000923
+      - InterPro:IPR028871
+      - InterPro:IPR050845
+      - InterPro:IPR033138
+      - InterPro:IPR008972
+      - InterPro:IPR001243
+      pfam_ids:
+      - Pfam:PF00127
+      ncbifam_ids:
+      - NCBIfam:TIGR03095
+      go_terms:
+      - id: GO:0042597
+        label: periplasmic space
+      - id: GO:0005507
+        label: copper ion binding
+      - id: GO:0009055
+        label: electron transfer activity
+      functional_role: Periplasmic type-I blue copper electron carrier rusticyanin (rus, locus AFE_3146; 187 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) and downstream aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing centrifugation-sheared, EPS-depleted Acidithiobacillus ferrooxidans LX5 (= CGMCC 0727; NCBITaxon:920) in the 12-40 h EPS-removal perturbation assay in Song et al. (2018).
+      evidence:
+      - source_ref: song2018
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic rusticyanin (rus, AFE_3146) for Fe(II) oxidation by EPS-depleted vs untreated A. ferrooxidans LX5 cells in Song et al. (2018); individual genes were not directly assayed.
+    - uniprot_accession: UniProtKB:B7JAQ6
+      entry_name: B7JAQ6_ACIF2
+      protein_name: Cytochrome c552
+      gene_symbol: cyc1
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR009056
+      - InterPro:IPR036909
+      - InterPro:IPR024167
+      - InterPro:IPR050597
+      pfam_ids:
+      - Pfam:PF00034
+      go_terms:
+      - id: GO:0042597
+        label: periplasmic space
+      - id: GO:0009055
+        label: electron transfer activity
+      - id: GO:0020037
+        label: heme binding
+      - id: GO:0005506
+        label: iron ion binding
+      functional_role: Periplasmic diheme cytochrome c4 Cyc1 / cytochrome c552 (cyc1, locus AFE_3152; 230 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 transferring electrons from periplasmic rusticyanin (AFE_3146) to inner-membrane aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+      annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing centrifugation-sheared, EPS-depleted Acidithiobacillus ferrooxidans LX5 (= CGMCC 0727; NCBITaxon:920) in the 12-40 h EPS-removal perturbation assay in Song et al. (2018).
+      evidence:
+      - source_ref: song2018
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic diheme cytochrome c4 Cyc1 (cyc1, AFE_3152) for Fe(II) oxidation by EPS-depleted vs untreated A. ferrooxidans LX5 cells in Song et al. (2018); individual genes were not directly assayed.
+  - id: centrifugation_eps_depleted_lx5_cells
+    label: Centrifugation-sheared, EPS-depleted A. ferrooxidans LX5 cells (10,000 x g, 20 min) vs untreated EPS-intact LX5 cells in 160 mmol/L Fe2+ medium (pH 2.50, 28 C)
+    node_type: CELLULAR_STRUCTURE
+    description: A. ferrooxidans LX5 cells subjected to physical EPS stripping by centrifugation at 10,000 x g for 20 min (Section 2.2) and inoculated into 160 mmol/L Fe2+ medium at initial pH 2.50 and 28 C in parallel with untreated EPS-intact LX5 controls over 12-40 h.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: attenuated_12_to_40h_ferrous_oxidation_flux
+    label: Reduced 12-40 h Fe2+ oxidation efficiency in EPS-depleted LX5 (16.4-85.6% vs 22.9-95.5% in untreated cells; Figure 6a)
+    node_type: BIOLOGICAL_PROCESS
+    description: Lower Fe2+-to-Fe3+ oxidation efficiency across 12-40 h in flasks inoculated with EPS-depleted LX5 cells (16.4% at 12 h to 85.6% at 40 h) compared with untreated EPS-intact LX5 cells (22.9% at 12 h to 95.5% at 40 h; Figure 6a).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: reduced_12_to_40h_schwertmannite_precipitate_yield
+    label: Reduced 12-40 h schwertmannite precipitate yield in EPS-depleted LX5 (0.43-4.63 g/L vs 1.24-5.73 g/L in untreated controls; Figure 6b)
+    node_type: MATERIAL_OR_PHASE
+    description: Lower recovered schwertmannite precipitate mass across 12-40 h in the EPS-depleted LX5 treatment (0.43 g/L at 12 h to 4.63 g/L at 40 h) relative to the untreated EPS-intact LX5 control (1.24 g/L at 12 h to 5.73 g/L at 40 h; Figure 6b), reflecting combined effects of reduced Fe2+ oxidation and diminished EPS nucleation sites.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cyc2_outer_membrane_cytochrome
+    target: rus_cyc1_periplasmic_electron_transfer
+    predicate: provides_electrons_to
+    relationship: extracellular Fe(II) oxidation and transmembrane electron delivery into the rus operon periplasmic relay
+    description: Outer-membrane monoheme cytochrome c Cyc2 (cyc2 AFE_3153) oxidizes extracellular Fe(II) to Fe(III) and delivers electrons across the outer membrane to Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).
+    evidence:
+    - source_ref: song2018
+      supports: partial
+      explanation: Aerobic Fe(II) oxidation in Acidithiobacillus ferrooxidans LX5 couples outer-membrane Cyc2 (AFE_3153) to periplasmic rusticyanin (AFE_3146) and Cyc1 (AFE_3152) in both untreated and centrifugation-sheared cells in Song et al. (2018); individual rus-operon genes were not directly assayed.
+  - source: rus_cyc1_periplasmic_electron_transfer
+    target: centrifugation_eps_depleted_lx5_cells
+    predicate: modulates
+    relationship: physical EPS stripping (10,000 x g, 20 min) perturbing cell-envelope Fe(II)/Fe(III) interface in A. ferrooxidans LX5
+    description: Centrifugal shearing at 10,000 x g for 20 min removes the outer EPS layer that complexes Fe(II)/Fe(III) at the cell surface alongside the Cyc2-Rus-Cyc1 respiratory chain.
+    evidence:
+    - source_ref: song2018
+      supports: partial
+      explanation: Sections 2.2 and 3.4 and Figure 6 of Song et al. (2018) describe the 10,000 x g centrifugal EPS-removal perturbation of A. ferrooxidans LX5 cells.
+  - source: centrifugation_eps_depleted_lx5_cells
+    target: attenuated_12_to_40h_ferrous_oxidation_flux
+    predicate: drives
+    relationship: attenuation of 12-40 h Fe2+ oxidation efficiency from 22.9-95.5% (untreated) to 16.4-85.6% (EPS-depleted)
+    description: Across 12-40 h in 160 mmol/L Fe2+ medium, EPS-depleted LX5 cells oxidize 16.4-85.6% of initial Fe2+ compared with 22.9-95.5% in untreated EPS-intact cells (Figure 6a).
+    evidence:
+    - source_ref: song2018
+      supports: support
+      explanation: Section 3.4 and Figure 6a of Song et al. (2018) directly report the lower 12-40 h Fe2+ oxidation percentages (16.4-85.6% vs 22.9-95.5%) after centrifugal EPS removal.
+  - source: attenuated_12_to_40h_ferrous_oxidation_flux
+    target: reduced_12_to_40h_schwertmannite_precipitate_yield
+    predicate: produces
+    relationship: reduction of 12-40 h schwertmannite precipitate yield from 1.24-5.73 g/L (untreated) to 0.43-4.63 g/L (EPS-depleted)
+    description: Lower Fe2+ oxidation rate and loss of EPS-bound Fe3+ nucleation sites reduce the 12-40 h schwertmannite precipitate concentration to 0.43-4.63 g/L in EPS-depleted LX5 flasks versus 1.24-5.73 g/L in untreated controls (Figure 6b).
+    evidence:
+    - source_ref: song2018
+      supports: partial
+      explanation: Figure 6b and Section 3.4 of Song et al. (2018) confirm the reduced 0.43-4.63 g/L vs 1.24-5.73 g/L precipitate mass series, while support for pure EPS-templating causality is partial because Fe2+ oxidation efficiency also declined in the EPS-depleted arm.
 curation_history:
 - timestamp: '2026-10-11T21:46:33Z'
   curator: codex (GPT-6; codex)
   action: CREATE
-  summary: Added IMA-grounded schwertmannite with controlled LX5 formation evidence, a distinct extracellular-material
-    perturbation and qualified downstream arsenic adsorption, preserving null comparisons and source discrepancies.
+  summary: Added IMA-grounded schwertmannite with controlled LX5 formation evidence, a distinct extracellular-material perturbation and qualified downstream arsenic adsorption, preserving null comparisons and source discrepancies.
 - timestamp: '2026-10-11T21:50:53Z'
   curator: codex (GPT-6; codex)
   action: EDIT
-  summary: 'Corrected issue118 denominator wording: dissolved total-Fe loss is divided by initial dissolved
-    total Fe, preserving the reported percentages and the source-specific interpretation.'
+  summary: 'Corrected issue118 denominator wording: dissolved total-Fe loss is divided by initial dissolved total Fe, preserving the reported percentages and the source-specific interpretation.'
 - timestamp: '2026-10-22T05:04:34Z'
   curator: claude (claude-opus-4-6; antigravity)
   action: EDIT
-  summary: 'Add structured IMA:1990-006 (Schwertmannite) entry to identifiers to match the approved IMA-CNMNC
-    species number already cited in description and ima_2026_09 (Issue #801).'
+  summary: 'Add structured IMA:1990-006 (Schwertmannite) entry to identifiers to match the approved IMA-CNMNC species number already cited in description and ima_2026_09 (Issue #801).'
+- timestamp: '2026-11-04T21:05:59Z'
+  curator: marcin
+  action: edit
+  summary: Add lx5_ferrous_oxidation_and_schwertmannite_precipitation_graph and lx5_eps_removal_perturbation_graph causal graphs and ground both mechanisms to Acidithiobacillus ferrooxidans ATCC 23270 rus-operon UniProtKB entries (UniProtKB:B7JAQ7, UniProtKB:B7JAQ0, UniProtKB:B7JAQ6)
 history_refs:
 - history/records/schwertmannite/2026-10-11T214621Z-codex-af894f.yaml
 - history/records/schwertmannite/2026-10-11T215042Z-codex-fd5c52.yaml
 - history/records/schwertmannite/2026-10-22T050434Z-claude-f3d414.yaml
+- history/records/schwertmannite/2026-11-04T210559Z-marcin-714018.yaml

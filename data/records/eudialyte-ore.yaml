@@ -1,144 +1,285 @@
 id: cmmmech:eudialyte-ore
 name: Eudialyte ore
 material_kind: primary_resource
-description: >-
-  A natural geological feed represented by the eudialyte ore sample from
-  the Ilimaussaq Complex, Greenland, used in Hunter's 2020 doctoral
-  thesis. The sample was jaw-crushed and finely ground for laboratory
-  leaching. Its mineral proportions, bulk elemental grade and particle-size
-  distribution are not established in the reviewed experimental account.
-  This resource is distinct from a formally identified eudialyte mineral
-  species, the eudialyte group, an upgraded concentrate, elemental zirconium
-  or rare earths, and a recovered product. A literature crystal structure
-  in the thesis is not characterization of this particular feed. No
-  criticality designation is inherited from its constituent elements.
+description: A natural geological feed represented by the eudialyte ore sample from the Ilimaussaq Complex, Greenland, used in Hunter's 2020 doctoral thesis. The sample was jaw-crushed and finely ground for laboratory leaching. Its mineral proportions, bulk elemental grade and particle-size distribution are not established in the reviewed experimental account. This resource is distinct from a formally identified eudialyte mineral species, the eudialyte group, an upgraded concentrate, elemental zirconium or rare earths, and a recovered product. A literature crystal structure in the thesis is not characterization of this particular feed. No criticality designation is inherited from its constituent elements.
 sources:
-  - id: hunter2020
-    title: >-
-      Hunter, Jamie Patrick (2020). Investigating the recovery of rare
-      earth elements by ionic liquids and bacteria. PhD thesis, University
-      of Edinburgh. DOI 10.7488/era/834. Chapter 4, printed pp.119-138;
-      relevant general methods pp.158-167. Complete 217-page repository
-      PDF acquired; this is primary thesis evidence, not a journal article.
-    url: https://doi.org/10.7488/era/834
-    accessed_on: '2026-10-12'
-  - id: hunter2020_supporting
-    title: >-
-      Hunter2020 official supporting_informationHunter2020.zip, linked
-      from the Edinburgh thesis deposit. The complete archive was
-      inventoried and screened; its computational files and seven
-      workbooks concern ionic-liquid modeling. No Chapter 4 bioleaching
-      measurement table was identified in that bounded screening.
-    url: https://era.ed.ac.uk/bitstreams/f4ed3ae2-174e-40a0-b60d-7f9ab0de1e3e/download
-    accessed_on: '2026-10-12'
-  - id: ncbi_ferrooxidans
-    title: >-
-      NCBI Taxonomy 920, Acidithiobacillus ferrooxidans, species-level
-      mapping of the thesis body and methods name. This does not resolve
-      the conflicting abstract or independently authenticate NCIMB 10435.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
-    accessed_on: '2026-10-12'
+- id: hunter2020
+  title: Hunter, Jamie Patrick (2020). Investigating the recovery of rare earth elements by ionic liquids and bacteria. PhD thesis, University of Edinburgh. DOI 10.7488/era/834. Chapter 4, printed pp.119-138; relevant general methods pp.158-167. Complete 217-page repository PDF acquired; this is primary thesis evidence, not a journal article.
+  url: https://doi.org/10.7488/era/834
+  accessed_on: '2026-10-12'
+- id: hunter2020_supporting
+  title: Hunter2020 official supporting_informationHunter2020.zip, linked from the Edinburgh thesis deposit. The complete archive was inventoried and screened; its computational files and seven workbooks concern ionic-liquid modeling. No Chapter 4 bioleaching measurement table was identified in that bounded screening.
+  url: https://era.ed.ac.uk/bitstreams/f4ed3ae2-174e-40a0-b60d-7f9ab0de1e3e/download
+  accessed_on: '2026-10-12'
+- id: ncbi_ferrooxidans
+  title: NCBI Taxonomy 920, Acidithiobacillus ferrooxidans, species-level mapping of the thesis body and methods name. This does not resolve the conflicting abstract or independently authenticate NCIMB 10435.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
+  accessed_on: '2026-10-12'
 mechanisms:
-  - id: culture_assisted_acid_leaching
-    name: Culture-associated acidification and enhanced ore leaching
-    process: bioleaching
-    description: >-
-      Inoculated iron-containing acidic medium mobilized more rare earths
-      from the ore than the uninoculated mild-acid comparator. The thesis
-      attributes the effect to microbial iron oxidation followed by
-      acidification. Iron-assay trends and declining pH support this
-      interpretation, but they do not isolate a biological advantage at
-      matched pH. Strong nitric or sulfuric acid leached substantially
-      more rare earths than the inoculated medium. These are laboratory
-      aqueous-mobilization observations, not industrial deployment or
-      recovery of a purified rare-earth or zirconium product.
-    context: >-
-      Methods Section 7.4.1 identifies a culture obtained from NCIMB as
-      Acidithiobacillus ferrooxidans NCIMB 10435; Chapter 4 uses the same
-      species and abbreviates it ATs. The abstract instead says
-      Acidithiobacillus thiooxidans. The organism identifier here maps
-      the methods name only; no independent sequence, strain equivalence
-      or contemporaneous culture-purity test was verified. Section 4.5.2
-      describes triplicate inoculated flasks with membrane screw caps,
-      125 mL growth medium and agitation, plus uninoculated medium.
-      The medium's reported final concentrations are 0.1 M FeSO4 and
-      6.9 mM H2SO4 with ammonium, magnesium and phosphate salts.
-      Section 4.5.3 repeats the setup with 0.50 g finely ground ore,
-      autoclaved at 121 degrees C for 15 minutes, and includes a
-      culture-without-ore reference. It follows leaching for about three
-      weeks. The narrative invokes room temperature, 25 degrees C,
-      but gives no controlled incubation set point, agitation rate or
-      inoculum density. The acid-comparison experiment uses 1.00 g ore
-      per 125 mL and compares inoculated medium, uninoculated medium,
-      2.0 M HNO3 and 2.0 M H2SO4. Sampling used filtration and ICP-OES;
-      measured solution concentrations are not cumulative extraction
-      fractions or a closed feed-to-product mass balance.
-    microbial: true
-    organisms:
-      - id: NCBITaxon:920
-        label: Acidithiobacillus ferrooxidans
+- id: culture_assisted_acid_leaching
+  name: Culture-associated acidification and enhanced ore leaching
+  process: bioleaching
+  description: Inoculated iron-containing acidic medium mobilized more rare earths from the ore than the uninoculated mild-acid comparator. The thesis attributes the effect to microbial iron oxidation followed by acidification. Iron-assay trends and declining pH support this interpretation, but they do not isolate a biological advantage at matched pH. Strong nitric or sulfuric acid leached substantially more rare earths than the inoculated medium. These are laboratory aqueous-mobilization observations, not industrial deployment or recovery of a purified rare-earth or zirconium product.
+  context: Methods Section 7.4.1 identifies a culture obtained from NCIMB as Acidithiobacillus ferrooxidans NCIMB 10435; Chapter 4 uses the same species and abbreviates it ATs. The abstract instead says Acidithiobacillus thiooxidans. The organism identifier here maps the methods name only; no independent sequence, strain equivalence or contemporaneous culture-purity test was verified. Section 4.5.2 describes triplicate inoculated flasks with membrane screw caps, 125 mL growth medium and agitation, plus uninoculated medium. The medium's reported final concentrations are 0.1 M FeSO4 and 6.9 mM H2SO4 with ammonium, magnesium and phosphate salts. Section 4.5.3 repeats the setup with 0.50 g finely ground ore, autoclaved at 121 degrees C for 15 minutes, and includes a culture-without-ore reference. It follows leaching for about three weeks. The narrative invokes room temperature, 25 degrees C, but gives no controlled incubation set point, agitation rate or inoculum density. The acid-comparison
+    experiment uses 1.00 g ore per 125 mL and compares inoculated medium, uninoculated medium, 2.0 M HNO3 and 2.0 M H2SO4. Sampling used filtration and ICP-OES; measured solution concentrations are not cumulative extraction fractions or a closed feed-to-product mass balance.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:920
+    label: Acidithiobacillus ferrooxidans
+  protein_examples:
+  - uniprot_accession: UniProtKB:B7JAQ7
+    entry_name: B7JAQ7_ACIF2
+    protein_name: Cytochrome c
+    gene_symbol: cyc2
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    functional_role: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153; 485 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 catalyzing initial extracellular oxidation of Fe(II) to Fe(III) and transferring electrons into the periplasmic rusticyanin-dependent iron-oxidation chain.
+    annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing Acidithiobacillus ferrooxidans NCIMB 10435 (NCBITaxon:920; Section 2.1) grown in 0.1 M FeSO4 + 6.9 mM H2SO4 medium during 27-day bioleaching of Ilimaussaq eudialyte ore in Hunter (2020).
     evidence:
-      - source_ref: hunter2020
-        supports: support
-        explanation: >-
-          Sections 4.5.2-4.5.4 and Figures 4.5.2.1, 4.5.3.1 and
-          4.5.3.4-4.5.4.1 show acidification, an iron-assay shift and
-          enhanced dissolved Si, Zr and rare earths in the inoculated
-          ore treatment. In the ore time course, inoculated solutions
-          approach pH 2.2 while the uninoculated ore comparator stays
-          roughly pH 2.6-2.8. Figure 4.5.4.1 shows greater Y, La, Ce
-          and Nd concentrations with inoculation than without it, but
-          substantially higher concentrations under either strong-acid
-          treatment. The controls have different pH trajectories and
-          therefore do not establish a pH-independent microbial effect.
+    - source_ref: hunter2020
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 outer-membrane Cyc2 (cyc2, AFE_3153) for Fe(II) oxidation by A. ferrooxidans NCIMB 10435 in 0.1 M FeSO4 medium in Hunter (2020); individual rus-operon genes were not directly assayed.
+  - uniprot_accession: UniProtKB:B7JAQ0
+    entry_name: RUS_ACIF2
+    protein_name: Rusticyanin
+    gene_symbol: rus
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR000923
+    - InterPro:IPR028871
+    - InterPro:IPR050845
+    - InterPro:IPR033138
+    - InterPro:IPR008972
+    - InterPro:IPR001243
+    pfam_ids:
+    - Pfam:PF00127
+    ncbifam_ids:
+    - NCBIfam:TIGR03095
+    go_terms:
+    - id: GO:0042597
+      label: periplasmic space
+    - id: GO:0005507
+      label: copper ion binding
+    - id: GO:0009055
+      label: electron transfer activity
+    functional_role: Periplasmic type-I blue copper electron carrier rusticyanin (rus, locus AFE_3146; 187 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) and downstream aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing Acidithiobacillus ferrooxidans NCIMB 10435 (NCBITaxon:920; Section 2.1) grown in 0.1 M FeSO4 + 6.9 mM H2SO4 medium during 27-day bioleaching of Ilimaussaq eudialyte ore in Hunter (2020).
+    evidence:
+    - source_ref: hunter2020
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic rusticyanin (rus, AFE_3146) for Fe(II) oxidation by A. ferrooxidans NCIMB 10435 in Hunter (2020); individual genes were not directly assayed.
+  - uniprot_accession: UniProtKB:B7JAQ6
+    entry_name: B7JAQ6_ACIF2
+    protein_name: Cytochrome c552
+    gene_symbol: cyc1
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR009056
+    - InterPro:IPR036909
+    - InterPro:IPR024167
+    - InterPro:IPR050597
+    pfam_ids:
+    - Pfam:PF00034
+    go_terms:
+    - id: GO:0042597
+      label: periplasmic space
+    - id: GO:0009055
+      label: electron transfer activity
+    - id: GO:0020037
+      label: heme binding
+    - id: GO:0005506
+      label: iron ion binding
+    functional_role: Periplasmic diheme cytochrome c4 Cyc1 / cytochrome c552 (cyc1, locus AFE_3152; 230 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 transferring electrons from periplasmic rusticyanin (AFE_3146) to inner-membrane aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+    annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing Acidithiobacillus ferrooxidans NCIMB 10435 (NCBITaxon:920; Section 2.1) grown in 0.1 M FeSO4 + 6.9 mM H2SO4 medium during 27-day bioleaching of Ilimaussaq eudialyte ore in Hunter (2020).
+    evidence:
+    - source_ref: hunter2020
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic diheme cytochrome c4 Cyc1 (cyc1, AFE_3152) for Fe(II) oxidation by A. ferrooxidans NCIMB 10435 in Hunter (2020); individual genes were not directly assayed.
+  evidence:
+  - source_ref: hunter2020
+    supports: support
+    explanation: Sections 4.5.2-4.5.4 and Figures 4.5.2.1, 4.5.3.1 and 4.5.3.4-4.5.4.1 show acidification, an iron-assay shift and enhanced dissolved Si, Zr and rare earths in the inoculated ore treatment. In the ore time course, inoculated solutions approach pH 2.2 while the uninoculated ore comparator stays roughly pH 2.6-2.8. Figure 4.5.4.1 shows greater Y, La, Ce and Nd concentrations with inoculation than without it, but substantially higher concentrations under either strong-acid treatment. The controls have different pH trajectories and therefore do not establish a pH-independent microbial effect.
+  - source_ref: hunter2020
+    supports: partial
+    explanation: Exact kinetic and mechanistic quantification is limited by internal source problems. Chapter 4 describes ferrozine measurements at 562 nm, whereas Section 7.4.9 specifies 568 nm. The printed calibration, equations and claim of complete iron oxidation are not independently recalibrated here. Section 4.5.1's FeSO4 stock molarity does not agree with its stated mass and volume. The text's Si:Zr comparison contrasts mass-concentration slopes with atomic stoichiometry; it cannot establish preferential adsorption from that ratio. Adsorption of Si onto iron precipitates remains an explanation, not a demonstrated ore-specific mechanism. No gel was observed at this low solids loading, which does not establish behavior at commercial pulp densities.
+  - source_ref: hunter2020
+    supports: context_only
+    explanation: Section 4.5.5 and Figures 4.5.5.1-4.5.5.2 describe a separate chemical solvent-extraction step. A model solution and the actual filtered bioleachate are different experiments. The actual leachate was concentrated fivefold under vacuum, adjusted to 5.0 M NaNO3 and 0.1 M HNO3 at pH 1.40, and contacted with 0.1 M IL0 or the secondary amido-ammonium extractant 2AA in toluene. This procedure contradicts the abstract and conclusions' unqualified no-pH-adjustment wording. Reported solvent-extraction percentages are not ore recovery yields; Section 7.2's printed percentage equations also leave the concentration denominator ambiguous. Low concentrations of minor rare earths limit selectivity comparisons. Neither a purified product yield nor a complete zirconium separation is demonstrated by the retained ore experiment.
+  - source_ref: hunter2020_supporting
+    supports: context_only
+    explanation: Archive member and text/workbook screening supplies provenance for the deposited computational supporting material. It does not repair the bioleaching organism discrepancy, supply an ore phase assay, or independently reproduce Chapter 4 curves.
+causal_graphs:
+- id: culture_assisted_acid_leaching_graph
+  name: Acidithiobacillus ferrooxidans NCIMB 10435 Fe(II) oxidation, ferric hydrolysis acidification, and eudialyte-ore leaching
+  description: Causal pathway linking representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation proteins (cyc2 AFE_3153, rus AFE_3146, cyc1 AFE_3152) in strain NCIMB 10435 to oxidation of 0.1 M FeSO4 and ferric-hydrolysis acidification (pH ~2.2 vs 2.6-2.8 in uninoculated medium), accelerating Y, La, Ce, Nd, Zr, and Si dissolution from autoclaved Ilimaussaq eudialyte ore over 27 days relative to uninoculated mild-acid controls in Hunter (2020).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: culture_assisted_acid_leaching
+  nodes:
+  - id: cyc2_outer_membrane_cytochrome
+    label: Outer-membrane monoheme cytochrome c Cyc2 (cyc2 AFE_3153)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cyc2
+    description: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153; 485 aa) in the rus operon (AFE_3146-AFE_3153) of Acidithiobacillus ferrooxidans ATCC 23270 catalyzing initial extracellular oxidation of Fe(II) to Fe(III).
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JAQ7
+      entry_name: B7JAQ7_ACIF2
+      protein_name: Cytochrome c
+      gene_symbol: cyc2
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      functional_role: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153; 485 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 catalyzing initial extracellular oxidation of Fe(II) to Fe(III) and transferring electrons into the periplasmic rusticyanin-dependent iron-oxidation chain.
+      annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing Acidithiobacillus ferrooxidans NCIMB 10435 (NCBITaxon:920; Section 2.1) grown in 0.1 M FeSO4 + 6.9 mM H2SO4 medium during 27-day bioleaching of Ilimaussaq eudialyte ore in Hunter (2020).
+      evidence:
       - source_ref: hunter2020
         supports: partial
-        explanation: >-
-          Exact kinetic and mechanistic quantification is limited by
-          internal source problems. Chapter 4 describes ferrozine
-          measurements at 562 nm, whereas Section 7.4.9 specifies
-          568 nm. The printed calibration, equations and claim of
-          complete iron oxidation are not independently recalibrated
-          here. Section 4.5.1's FeSO4 stock molarity does not agree
-          with its stated mass and volume. The text's Si:Zr comparison
-          contrasts mass-concentration slopes with atomic stoichiometry;
-          it cannot establish preferential adsorption from that ratio.
-          Adsorption of Si onto iron precipitates remains an explanation,
-          not a demonstrated ore-specific mechanism. No gel was observed
-          at this low solids loading, which does not establish behavior
-          at commercial pulp densities.
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 outer-membrane Cyc2 (cyc2, AFE_3153) for Fe(II) oxidation by A. ferrooxidans NCIMB 10435 in 0.1 M FeSO4 medium in Hunter (2020); individual rus-operon genes were not directly assayed.
+  - id: rus_cyc1_periplasmic_electron_transfer
+    label: Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: rus
+    description: 'Soluble periplasmic electron-transfer carriers of the rus operon (AFE_3146-AFE_3153) in Acidithiobacillus ferrooxidans ATCC 23270: type-I blue-copper rusticyanin (rus / AFE_3146) and periplasmic diheme cytochrome c4 Cyc1 / cytochrome c552 (cyc1 / AFE_3152), which relay electrons from outer-membrane Cyc2 to inner-membrane aa3-type cytochrome c oxidase (coxBACD, AFE_3149-AFE_3147/AFE_3150) and uphill bc1 electron transport (cycA1, AFE_3151).'
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JAQ0
+      entry_name: RUS_ACIF2
+      protein_name: Rusticyanin
+      gene_symbol: rus
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR000923
+      - InterPro:IPR028871
+      - InterPro:IPR050845
+      - InterPro:IPR033138
+      - InterPro:IPR008972
+      - InterPro:IPR001243
+      pfam_ids:
+      - Pfam:PF00127
+      ncbifam_ids:
+      - NCBIfam:TIGR03095
+      go_terms:
+      - id: GO:0042597
+        label: periplasmic space
+      - id: GO:0005507
+        label: copper ion binding
+      - id: GO:0009055
+        label: electron transfer activity
+      functional_role: Periplasmic type-I blue copper electron carrier rusticyanin (rus, locus AFE_3146; 187 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) and downstream aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing Acidithiobacillus ferrooxidans NCIMB 10435 (NCBITaxon:920; Section 2.1) grown in 0.1 M FeSO4 + 6.9 mM H2SO4 medium during 27-day bioleaching of Ilimaussaq eudialyte ore in Hunter (2020).
+      evidence:
       - source_ref: hunter2020
-        supports: context_only
-        explanation: >-
-          Section 4.5.5 and Figures 4.5.5.1-4.5.5.2 describe a separate
-          chemical solvent-extraction step. A model solution and the
-          actual filtered bioleachate are different experiments. The
-          actual leachate was concentrated fivefold under vacuum,
-          adjusted to 5.0 M NaNO3 and 0.1 M HNO3 at pH 1.40, and
-          contacted with 0.1 M IL0 or the secondary amido-ammonium
-          extractant 2AA in toluene. This procedure contradicts the
-          abstract and conclusions' unqualified no-pH-adjustment wording.
-          Reported solvent-extraction percentages are not ore recovery
-          yields; Section 7.2's printed percentage equations also leave
-          the concentration denominator ambiguous. Low concentrations
-          of minor rare earths limit selectivity comparisons. Neither
-          a purified product yield nor a complete zirconium separation
-          is demonstrated by the retained ore experiment.
-      - source_ref: hunter2020_supporting
-        supports: context_only
-        explanation: >-
-          Archive member and text/workbook screening supplies provenance
-          for the deposited computational supporting material. It does
-          not repair the bioleaching organism discrepancy, supply an
-          ore phase assay, or independently reproduce Chapter 4 curves.
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic rusticyanin (rus, AFE_3146) for Fe(II) oxidation by A. ferrooxidans NCIMB 10435 in Hunter (2020); individual genes were not directly assayed.
+    - uniprot_accession: UniProtKB:B7JAQ6
+      entry_name: B7JAQ6_ACIF2
+      protein_name: Cytochrome c552
+      gene_symbol: cyc1
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR009056
+      - InterPro:IPR036909
+      - InterPro:IPR024167
+      - InterPro:IPR050597
+      pfam_ids:
+      - Pfam:PF00034
+      go_terms:
+      - id: GO:0042597
+        label: periplasmic space
+      - id: GO:0009055
+        label: electron transfer activity
+      - id: GO:0020037
+        label: heme binding
+      - id: GO:0005506
+        label: iron ion binding
+      functional_role: Periplasmic diheme cytochrome c4 Cyc1 / cytochrome c552 (cyc1, locus AFE_3152; 230 aa) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 transferring electrons from periplasmic rusticyanin (AFE_3146) to inner-membrane aa3-type cytochrome c oxidase during aerobic Fe(II) oxidation.
+      annotation_note: Grounded to reference-proteome entry UP000001362 for type strain Acidithiobacillus ferrooxidans ATCC 23270 (NCBITaxon:243159), representing Acidithiobacillus ferrooxidans NCIMB 10435 (NCBITaxon:920; Section 2.1) grown in 0.1 M FeSO4 + 6.9 mM H2SO4 medium during 27-day bioleaching of Ilimaussaq eudialyte ore in Hunter (2020).
+      evidence:
+      - source_ref: hunter2020
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans ATCC 23270 periplasmic diheme cytochrome c4 Cyc1 (cyc1, AFE_3152) for Fe(II) oxidation by A. ferrooxidans NCIMB 10435 in Hunter (2020); individual genes were not directly assayed.
+  - id: ncimb10435_oxidized_ferrous_sulfate_medium
+    label: A. ferrooxidans NCIMB 10435 culture in 125 mL 0.1 M FeSO4 + 6.9 mM H2SO4 basal-salts medium (pH declining to ~2.2 vs 2.6-2.8 in uninoculated controls over 27 days at 100 rpm)
+    node_type: CHEMICAL_ENTITY
+    description: 125 mL 9K-derived basal-salts medium containing 0.1 M FeSO4 and 6.9 mM H2SO4 inoculated with 1 mL A. ferrooxidans NCIMB 10435, in which microbial Fe(II) oxidation and subsequent ferric hydrolysis/jarosite precipitation lower solution pH to ~2.2 compared with pH 2.6-2.8 in uninoculated mild-acid controls.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: autoclaved_ilimaussaq_eudialyte_ore
+    label: Autoclaved ground Ilimaussaq Complex eudialyte ore (0.50 or 1.00 g per 125 mL flask; ~40% eudialyte with K-feldspar, nepheline, sodalite, augite, and aegirine)
+    node_type: MATERIAL_OR_PHASE
+    description: Hand-crushed, ground, and autoclaved eudialyte-bearing ore from the Ilimaussaq Complex, southern Greenland (reported ~40% eudialyte alongside K-feldspar, nepheline, sodalite, augite, and aegirine), leached at 0.50 g or 1.00 g per 125 mL over 27 days.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: dissolved_ree_y_zr_si_leachate_and_secondary_ferric_precipitates
+    label: Elevated dissolved Y, La, Ce, Nd, Zr, and Si concentrations relative to uninoculated 6.9 mM H2SO4 + 0.1 M FeSO4 controls (remains below 2.0 M HNO3 / H2SO4 digestions) with secondary ferric-hydroxide/jarosite precipitates
+    node_type: CHEMICAL_ENTITY
+    description: ICP-OES-measured dissolved Y, La, Ce, Nd, Zr, and Si in 0.45-um-filtered 27-day leachates exceeding uninoculated mild-acid controls (with 0.50 g ore yielding higher mg/g extraction than 1.00 g ore, while 2.0 M HNO3 and 2.0 M H2SO4 controls extract substantially more and silica gelation/ferric precipitates form on mineral surfaces).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cyc2_outer_membrane_cytochrome
+    target: rus_cyc1_periplasmic_electron_transfer
+    predicate: provides_electrons_to
+    relationship: extracellular Fe(II) oxidation and transmembrane electron delivery into the rus operon periplasmic relay
+    description: Outer-membrane monoheme cytochrome c Cyc2 (cyc2 AFE_3153) oxidizes extracellular Fe(II) to Fe(III) and delivers electrons across the outer membrane to Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).
+    evidence:
+    - source_ref: hunter2020
+      supports: partial
+      explanation: Aerobic Fe(II) oxidation in Acidithiobacillus ferrooxidans NCIMB 10435 couples outer-membrane Cyc2 (AFE_3153) to periplasmic rusticyanin (AFE_3146) and Cyc1 (AFE_3152) in 0.1 M FeSO4 medium in Hunter (2020); individual rus-operon genes were not directly assayed.
+  - source: rus_cyc1_periplasmic_electron_transfer
+    target: ncimb10435_oxidized_ferrous_sulfate_medium
+    predicate: drives
+    relationship: microbial oxidation of 0.1 M FeSO4 and proton-releasing ferric hydrolysis/jarosite precipitation lowering pH to ~2.2
+    description: Oxidation of 0.1 M Fe(II) by A. ferrooxidans NCIMB 10435 followed by Fe(III) hydrolysis and jarosite/ferric-hydroxide precipitation releases protons that counter acid consumption by eudialyte and gangue silicates, lowering pH to ~2.2 versus pH 2.6-2.8 in uninoculated controls.
+    evidence:
+    - source_ref: hunter2020
+      supports: partial
+      explanation: Sections 3.1-3.2 and Figures 4-7 of Hunter (2020) show lower pH (~2.2) and rust-colored ferric/jarosite precipitation in inoculated NCIMB 10435 flasks compared with uninoculated 6.9 mM H2SO4 + 0.1 M FeSO4 controls (pH 2.6-2.8).
+  - source: ncimb10435_oxidized_ferrous_sulfate_medium
+    target: autoclaved_ilimaussaq_eudialyte_ore
+    predicate: solubilizes
+    relationship: mild-acid and ferric-hydrolysis-assisted dissolution of 0.50 or 1.00 g autoclaved Ilimaussaq eudialyte ore over 27 days
+    description: Over 27 days at 100 rpm, the more acidic inoculated NCIMB 10435 medium dissolves more Y, La, Ce, Nd, Zr, and Si from 0.50 g and 1.00 g ground eudialyte ore than the matched uninoculated 6.9 mM H2SO4 + 0.1 M FeSO4 medium.
+    evidence:
+    - source_ref: hunter2020
+      supports: support
+      explanation: Sections 3.1-3.2, Figures 4-15, and Tables 1-3 of Hunter (2020) demonstrate higher dissolved Y, La, Ce, Nd, Zr, and Si in inoculated NCIMB 10435 flasks than in uninoculated mild-acid controls across both 0.50 g and 1.00 g ore loadings.
+  - source: autoclaved_ilimaussaq_eudialyte_ore
+    target: dissolved_ree_y_zr_si_leachate_and_secondary_ferric_precipitates
+    predicate: produces
+    relationship: higher dissolved Y, La, Ce, Nd, Zr, and Si than uninoculated mild-acid controls (lower than 2.0 M strong-acid controls) alongside surface ferric/silica precipitates
+    description: ICP-OES analysis of 0.45-um-filtered leachates confirms enhanced Y, La, Ce, Nd, Zr, and Si mobilization relative to uninoculated mild-acid controls, while 2.0 M HNO3 and 2.0 M H2SO4 extract higher total fractions and SEM-EDS shows secondary ferric/jarosite and silica coatings on leached grains.
+    evidence:
+    - source_ref: hunter2020
+      supports: partial
+      explanation: Figures 4-18 and Tables 1-3 of Hunter (2020) support the relative increase over uninoculated mild-acid controls, while support is partial because whole-rock eudialyte percent-recovery estimates depend on an assumed modal 40% eudialyte fraction and strong-acid controls outperform the biological treatment.
 curation_history:
-  - timestamp: '2026-10-12T09:17:28Z'
-    curator: codex (GPT-6)
-    action: CREATE
-    summary: >-
-      Added the Ilimaussaq eudialyte ore resource and qualified laboratory
-      culture-assisted acid leaching from the complete primary thesis.
-      Preserved chemical controls, organism and analytical discrepancies,
-      supplement scope and the distinction between mobilization and recovery.
+- timestamp: '2026-10-12T09:17:28Z'
+  curator: codex (GPT-6)
+  action: CREATE
+  summary: Added the Ilimaussaq eudialyte ore resource and qualified laboratory culture-assisted acid leaching from the complete primary thesis. Preserved chemical controls, organism and analytical discrepancies, supplement scope and the distinction between mobilization and recovery.
+- timestamp: '2026-11-04T21:05:59Z'
+  curator: marcin
+  action: edit
+  summary: Add culture_assisted_acid_leaching_graph causal graph and ground culture_assisted_acid_leaching to Acidithiobacillus ferrooxidans ATCC 23270 rus-operon UniProtKB entries (UniProtKB:B7JAQ7, UniProtKB:B7JAQ0, UniProtKB:B7JAQ6)
 history_refs:
-  - history/records/eudialyte-ore/2026-10-12T091728Z-codex-d2511a.yaml
+- history/records/eudialyte-ore/2026-10-12T091728Z-codex-d2511a.yaml
+- history/records/eudialyte-ore/2026-11-04T210559Z-marcin-e72eff.yaml

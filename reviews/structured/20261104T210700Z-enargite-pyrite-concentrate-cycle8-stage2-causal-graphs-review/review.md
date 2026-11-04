@@ -1,0 +1,322 @@
+# Cycle 8 Stage 2 causal-graphs review of Enargite-pyrite concentrate (cmmmech:enargite-pyrite-concentrate)
+
+- Review: 20261104T210700Z-enargite-pyrite-concentrate-cycle8-stage2-causal-graphs-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-04T21:05:00Z
+- Finished UTC: 2026-11-04T21:07:00Z
+- Reviewer: antigravity / cmmmech-cycle8-stage2-causal-graphs-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Enargite-pyrite concentrate (cmmmech:enargite-pyrite-concentrate) passes Cycle 8 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 ff9c612bc793c8fe73cf7aced61e5618b9d7a0605b1b1293074469d52d1c640d: Curated data/records/enargite-pyrite-concentrate.yaml (SHA-256 ff9c612bc793c8fe73cf7aced61e5618b9d7a0605b1b1293074469d52d1c640d) with causal_graph 'conditional_acidophile_leaching_graph' (mechanism_ref: conditional_acidophile_leaching, 5 nodes / 4 edges; sor_sulfur_oxygenase_reductase: [UniProtKB:A0A1W1WDM4 (SAMN00768000_1627, A0A1W1WDM4_SULTA, UP000192660), UniProtKB:A0A1W1WET7 (SAMN00768000_1798, A0A1W1WET7_SULTA, UP000192660)]; rus_soxe_iron_electron_transfer: [UniProtKB:A0A1W1WGA9 (SAMN00768000_2174, A0A1W1WGA9_SULTA, UP000192660), UniProtKB:A0A1W1WGH8 (SAMN00768000_2232, A0A1W1WGH8_SULTA, UP000192660)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from primary source(s) okibe_2022. Live-verified UniProtKB reference-proteome grounding across UniProtKB:A0A1W1WDM4 (A0A1W1WDM4_SULTA, Sulfur oxygenase/reductase, gene_symbol: SAMN00768000_1627, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660); UniProtKB:A0A1W1WET7 (A0A1W1WET7_SULTA, Sulfur oxygenase reductase, gene_symbol: SAMN00768000_1798, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660); UniProtKB:A0A1W1WGA9 (A0A1W1WGA9_SULTA, Rusticyanin, gene_symbol: SAMN00768000_2174, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660); UniProtKB:A0A1W1WGH8 (A0A1W1WGH8_SULTA, Sulfocyanin, gene_symbol: SAMN00768000_2232, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660).
+
+## Scope And Provenance
+
+Cycle 8 Stage 2 causal-graphs review of data/records/enargite-pyrite-concentrate.yaml (SHA-256 ff9c612bc793c8fe73cf7aced61e5618b9d7a0605b1b1293074469d52d1c640d) and its canonical EDIT history sidecar(s) (history/records/enargite-pyrite-concentrate/2026-11-04T210559Z-marcin-40f392.yaml) verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source evidence fidelity across causal_graph 'conditional_acidophile_leaching_graph' (mechanism_ref: conditional_acidophile_leaching, 5 nodes / 4 edges; sor_sulfur_oxygenase_reductase: [UniProtKB:A0A1W1WDM4 (SAMN00768000_1627, A0A1W1WDM4_SULTA, UP000192660), UniProtKB:A0A1W1WET7 (SAMN00768000_1798, A0A1W1WET7_SULTA, UP000192660)]; rus_soxe_iron_electron_transfer: [UniProtKB:A0A1W1WGA9 (SAMN00768000_2174, A0A1W1WGA9_SULTA, UP000192660), UniProtKB:A0A1W1WGH8 (SAMN00768000_2232, A0A1W1WGH8_SULTA, UP000192660)]).
+
+Selection: Cycle 8 Stage 2 causal_graphs curation for cmmmech:enargite-pyrite-concentrate
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 4d0c73a2a05c271df0b845f389dfa216535a05b5.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:enargite-pyrite-concentrate | data/records/enargite-pyrite-concentrate.yaml | maintained | Enargite-pyrite concentrate |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:enargite-pyrite-concentrate | Checked 683 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:enargite-pyrite-concentrate | All history sidecars pass validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Verification of causal_graphs structure, UniProtKB paralog grounding, and parity across causal_graph 'conditional_acidophile_leaching_graph' (mechanism_ref: conditional_acidophile_leaching, 5 nodes / 4 edges; sor_sulfur_oxygenase_reductase: [UniProtKB:A0A1W1WDM4 (SAMN00768000_1627, A0A1W1WDM4_SULTA, UP000192660), UniProtKB:A0A1W1WET7 (SAMN00768000_1798, A0A1W1WET7_SULTA, UP000192660)]; rus_soxe_iron_electron_transfer: [UniProtKB:A0A1W1WGA9 (SAMN00768000_2174, A0A1W1WGA9_SULTA, UP000192660), UniProtKB:A0A1W1WGH8 (SAMN00768000_2232, A0A1W1WGH8_SULTA, UP000192660)])
+
+graph: supported. Targets: cmmmech:enargite-pyrite-concentrate.
+
+Curated data/records/enargite-pyrite-concentrate.yaml (SHA-256 ff9c612bc793c8fe73cf7aced61e5618b9d7a0605b1b1293074469d52d1c640d) with causal_graph 'conditional_acidophile_leaching_graph' (mechanism_ref: conditional_acidophile_leaching, 5 nodes / 4 edges; sor_sulfur_oxygenase_reductase: [UniProtKB:A0A1W1WDM4 (SAMN00768000_1627, A0A1W1WDM4_SULTA, UP000192660), UniProtKB:A0A1W1WET7 (SAMN00768000_1798, A0A1W1WET7_SULTA, UP000192660)]; rus_soxe_iron_electron_transfer: [UniProtKB:A0A1W1WGA9 (SAMN00768000_2174, A0A1W1WGA9_SULTA, UP000192660), UniProtKB:A0A1W1WGH8 (SAMN00768000_2232, A0A1W1WGH8_SULTA, UP000192660)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from primary source(s) okibe_2022. Live-verified UniProtKB reference-proteome grounding across UniProtKB:A0A1W1WDM4 (A0A1W1WDM4_SULTA, Sulfur oxygenase/reductase, gene_symbol: SAMN00768000_1627, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660); UniProtKB:A0A1W1WET7 (A0A1W1WET7_SULTA, Sulfur oxygenase reductase, gene_symbol: SAMN00768000_1798, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660); UniProtKB:A0A1W1WGA9 (A0A1W1WGA9_SULTA, Rusticyanin, gene_symbol: SAMN00768000_2174, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660); UniProtKB:A0A1W1WGH8 (A0A1W1WGH8_SULTA, Sulfocyanin, gene_symbol: SAMN00768000_2232, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660).
+
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
+
+provenance: supported. Targets: cmmmech:enargite-pyrite-concentrate.
+
+data/records/enargite-pyrite-concentrate.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/enargite-pyrite-concentrate/2026-11-04T210559Z-marcin-40f392.yaml (SHA-256 72fdd662529647784dd81fb8cc32c0d9b85a12fe41097ac350519c30336c6a22): Add conditional_acidophile_leaching_graph causal graph and ground conditional_acidophile_leaching to Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) reference-proteome UniProtKB SOR, Rusticyanin, and Sulfocyanin entries (UniProtKB:A0A1W1WDM4, UniProtKB:A0A1W1WET7, UniProtKB:A0A1W1WGA9, UniProtKB:A0A1W1WGH8) — Added Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) reference-proteome protein_examples (UniProtKB:A0A1W1WDM4 SAMN00768000_1627, UniProtKB:A0A1W1WET7 SAMN00768000_1798, UniProtKB:A0A1W1WGA9 SAMN00768000_2174, UniProtKB:A0A1W1WGH8 SAMN00768000_2232) and conditional_acidophile_leaching_graph causal graph to enargite-pyrite-concentrate.yaml.) and passing all LinkML and history validation gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/enargite-pyrite-concentrate.yaml; Working-tree record data/records/enargite-pyrite-concentrate.yaml (causal_graphs and mechanisms[].protein_examples) | supports | Curated data/records/enargite-pyrite-concentrate.yaml (SHA-256 ff9c612bc793c8fe73cf7aced61e5618b9d7a0605b1b1293074469d52d1c640d) with causal_graph 'conditional_acidophile_leaching_graph' (mechanism_ref: conditional_acidophile_leaching, 5 nodes / 4 edges; sor_sulfur_oxygenase_reductase: [UniProtKB:A0A1W1WDM4 (SAMN00768000_1627, A0A1W1WDM4_SULTA, UP000192660), UniProtKB:A0A1W1WET7 (SAMN00768000_1798, A0A1W1WET7_SULTA, UP000192660)]; rus_soxe_iron_electron_transfer: [UniProtKB:A0A1W1WGA9 (SAMN00768000_2174, A0A1W1WGA9_SULTA, UP000192660), UniProtKB:A0A1W1WGH8 (SAMN00768000_2232, A0A1W1WGH8_SULTA, UP000192660)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from primary source(s) okibe_2022. |
+| primary_source | DOI:10.3390/min12040449; okibe_2022: Okibe N, Hayashi K, Oyama K, Shimada K, Aoki Y, Suwa T and Hirajima T (2022). Bioleaching of Enargite/Pyrite-Rich Dirty Concentrate and Arsenic Immobilization. Minerals 12(4):449; DOI 10.3390/min12040449. Complete original 11-page article, Figures 1-6, Tables 1-2 and two-page supplement Figures S1-S2. (https://doi.org/10.3390/min12040449) | supports | Live-verified UniProtKB reference-proteome grounding across UniProtKB:A0A1W1WDM4 (A0A1W1WDM4_SULTA, Sulfur oxygenase/reductase, gene_symbol: SAMN00768000_1627, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660); UniProtKB:A0A1W1WET7 (A0A1W1WET7_SULTA, Sulfur oxygenase reductase, gene_symbol: SAMN00768000_1798, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660); UniProtKB:A0A1W1WGA9 (A0A1W1WGA9_SULTA, Rusticyanin, gene_symbol: SAMN00768000_2174, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660); UniProtKB:A0A1W1WGH8 (A0A1W1WGH8_SULTA, Sulfocyanin, gene_symbol: SAMN00768000_2232, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660). Primary mechanism source(s) (okibe_2022: Okibe N, Hayashi K, Oyama K, Shimada K, Aoki Y, Suwa T and Hirajima T (2022). Bioleaching of Enargite/Pyrite-Rich Dirty Concentrate and Arsenic Immobilization. Minerals 12(4):449; DOI 10.3390/min12040449. Complete original 11-page article, Figures 1-6, Tables 1-2 and two-page supplement Figures S1-S2. (https://doi.org/10.3390/min12040449)) report culture-level iron/sulfur oxidation and mineral transformation/leaching without single-gene knockouts; supports: partial is strictly preserved on all enzyme-level edges and ProteinExample evidence items. |
+| edit_history | history/records/enargite-pyrite-concentrate/2026-11-04T210559Z-marcin-40f392.yaml; Canonical EDIT history sidecar history/records/enargite-pyrite-concentrate/2026-11-04T210559Z-marcin-40f392.yaml | supports | Canonical EDIT history sidecar history/records/enargite-pyrite-concentrate/2026-11-04T210559Z-marcin-40f392.yaml (SHA-256 72fdd662529647784dd81fb8cc32c0d9b85a12fe41097ac350519c30336c6a22): Add conditional_acidophile_leaching_graph causal graph and ground conditional_acidophile_leaching to Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) reference-proteome UniProtKB SOR, Rusticyanin, and Sulfocyanin entries (UniProtKB:A0A1W1WDM4, UniProtKB:A0A1W1WET7, UniProtKB:A0A1W1WGA9, UniProtKB:A0A1W1WGH8) — Added Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) reference-proteome protein_examples (UniProtKB:A0A1W1WDM4 SAMN00768000_1627, UniProtKB:A0A1W1WET7 SAMN00768000_1798, UniProtKB:A0A1W1WGA9 SAMN00768000_2174, UniProtKB:A0A1W1WGH8 SAMN00768000_2232) and conditional_acidophile_leaching_graph causal graph to enargite-pyrite-concentrate.yaml. |
+| validation | data/records/enargite-pyrite-concentrate.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/enargite-pyrite-concentrate.yaml and history/records/enargite-pyrite-concentrate/2026-11-04T210559Z-marcin-40f392.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed during Cycle 8 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261104T210700Z-enargite-pyrite-concentrate-cycle8-stage2-causal-graphs-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 8 Stage 2 causal-graphs review of Enargite-pyrite concentrate (cmmmech:enargite-pyrite-concentrate)
+started_at: '2026-11-04T21:05:00Z'
+finished_at: '2026-11-04T21:07:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle8-stage2-causal-graphs-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 8 Stage 2 causal_graphs and ProteinExample curation in data/records/enargite-pyrite-concentrate.yaml
+    (SHA-256 ff9c612bc793c8fe73cf7aced61e5618b9d7a0605b1b1293074469d52d1c640d) against
+    UniProtKB reference proteomes and cited primary source(s) okibe_2022.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 4d0c73a2a05c271df0b845f389dfa216535a05b5
+  state: working_tree
+  inputs:
+  - path: data/records/enargite-pyrite-concentrate.yaml
+    sha256: ff9c612bc793c8fe73cf7aced61e5618b9d7a0605b1b1293074469d52d1c640d
+    role: target
+  - path: history/records/enargite-pyrite-concentrate/2026-11-04T210559Z-marcin-40f392.yaml
+    sha256: 72fdd662529647784dd81fb8cc32c0d9b85a12fe41097ac350519c30336c6a22
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:enargite-pyrite-concentrate
+  path: data/records/enargite-pyrite-concentrate.yaml
+  label: Enargite-pyrite concentrate
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/enargite-pyrite-concentrate.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/enargite-pyrite-concentrate/2026-11-04T210559Z-marcin-40f392.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 8 Stage 2 causal-graphs review of data/records/enargite-pyrite-concentrate.yaml
+    (SHA-256 ff9c612bc793c8fe73cf7aced61e5618b9d7a0605b1b1293074469d52d1c640d) and
+    its canonical EDIT history sidecar(s) (history/records/enargite-pyrite-concentrate/2026-11-04T210559Z-marcin-40f392.yaml)
+    verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding,
+    and primary-source evidence fidelity across causal_graph ''conditional_acidophile_leaching_graph''
+    (mechanism_ref: conditional_acidophile_leaching, 5 nodes / 4 edges; sor_sulfur_oxygenase_reductase:
+    [UniProtKB:A0A1W1WDM4 (SAMN00768000_1627, A0A1W1WDM4_SULTA, UP000192660), UniProtKB:A0A1W1WET7
+    (SAMN00768000_1798, A0A1W1WET7_SULTA, UP000192660)]; rus_soxe_iron_electron_transfer:
+    [UniProtKB:A0A1W1WGA9 (SAMN00768000_2174, A0A1W1WGA9_SULTA, UP000192660), UniProtKB:A0A1W1WGH8
+    (SAMN00768000_2232, A0A1W1WGH8_SULTA, UP000192660)]).'
+  selection: Cycle 8 Stage 2 causal_graphs curation for cmmmech:enargite-pyrite-concentrate
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:enargite-pyrite-concentrate
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/enargite-pyrite-concentrate.yaml
+  locator: Working-tree record data/records/enargite-pyrite-concentrate.yaml (causal_graphs
+    and mechanisms[].protein_examples)
+  accessed_at: '2026-11-04T21:06:30Z'
+  support: supports
+  summary: 'Curated data/records/enargite-pyrite-concentrate.yaml (SHA-256 ff9c612bc793c8fe73cf7aced61e5618b9d7a0605b1b1293074469d52d1c640d)
+    with causal_graph ''conditional_acidophile_leaching_graph'' (mechanism_ref: conditional_acidophile_leaching,
+    5 nodes / 4 edges; sor_sulfur_oxygenase_reductase: [UniProtKB:A0A1W1WDM4 (SAMN00768000_1627,
+    A0A1W1WDM4_SULTA, UP000192660), UniProtKB:A0A1W1WET7 (SAMN00768000_1798, A0A1W1WET7_SULTA,
+    UP000192660)]; rus_soxe_iron_electron_transfer: [UniProtKB:A0A1W1WGA9 (SAMN00768000_2174,
+    A0A1W1WGA9_SULTA, UP000192660), UniProtKB:A0A1W1WGH8 (SAMN00768000_2232, A0A1W1WGH8_SULTA,
+    UP000192660)]), achieving 100% parity between mechanisms[].protein_examples and
+    causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+    levels and caveats from primary source(s) okibe_2022.'
+  snapshot_sha256: ff9c612bc793c8fe73cf7aced61e5618b9d7a0605b1b1293074469d52d1c640d
+- evidence_id: primary_source
+  kind: primary_source
+  reference: DOI:10.3390/min12040449
+  locator: 'okibe_2022: Okibe N, Hayashi K, Oyama K, Shimada K, Aoki Y, Suwa T and
+    Hirajima T (2022). Bioleaching of Enargite/Pyrite-Rich Dirty Concentrate and Arsenic
+    Immobilization. Minerals 12(4):449; DOI 10.3390/min12040449. Complete original
+    11-page article, Figures 1-6, Tables 1-2 and two-page supplement Figures S1-S2.
+    (https://doi.org/10.3390/min12040449)'
+  accessed_at: '2026-11-04T21:06:30Z'
+  support: supports
+  summary: 'Live-verified UniProtKB reference-proteome grounding across UniProtKB:A0A1W1WDM4
+    (A0A1W1WDM4_SULTA, Sulfur oxygenase/reductase, gene_symbol: SAMN00768000_1627,
+    TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660);
+    UniProtKB:A0A1W1WET7 (A0A1W1WET7_SULTA, Sulfur oxygenase reductase, gene_symbol:
+    SAMN00768000_1798, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans
+    DSM 9293, UP000192660); UniProtKB:A0A1W1WGA9 (A0A1W1WGA9_SULTA, Rusticyanin, gene_symbol:
+    SAMN00768000_2174, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans
+    DSM 9293, UP000192660); UniProtKB:A0A1W1WGH8 (A0A1W1WGH8_SULTA, Sulfocyanin, gene_symbol:
+    SAMN00768000_2232, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans
+    DSM 9293, UP000192660). Primary mechanism source(s) (okibe_2022: Okibe N, Hayashi
+    K, Oyama K, Shimada K, Aoki Y, Suwa T and Hirajima T (2022). Bioleaching of Enargite/Pyrite-Rich
+    Dirty Concentrate and Arsenic Immobilization. Minerals 12(4):449; DOI 10.3390/min12040449.
+    Complete original 11-page article, Figures 1-6, Tables 1-2 and two-page supplement
+    Figures S1-S2. (https://doi.org/10.3390/min12040449)) report culture-level iron/sulfur
+    oxidation and mineral transformation/leaching without single-gene knockouts; supports:
+    partial is strictly preserved on all enzyme-level edges and ProteinExample evidence
+    items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/enargite-pyrite-concentrate/2026-11-04T210559Z-marcin-40f392.yaml
+  locator: Canonical EDIT history sidecar history/records/enargite-pyrite-concentrate/2026-11-04T210559Z-marcin-40f392.yaml
+  accessed_at: '2026-11-04T21:06:30Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/enargite-pyrite-concentrate/2026-11-04T210559Z-marcin-40f392.yaml
+    (SHA-256 72fdd662529647784dd81fb8cc32c0d9b85a12fe41097ac350519c30336c6a22): Add
+    conditional_acidophile_leaching_graph causal graph and ground conditional_acidophile_leaching
+    to Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) reference-proteome UniProtKB
+    SOR, Rusticyanin, and Sulfocyanin entries (UniProtKB:A0A1W1WDM4, UniProtKB:A0A1W1WET7,
+    UniProtKB:A0A1W1WGA9, UniProtKB:A0A1W1WGH8) — Added Sulfobacillus thermosulfidooxidans
+    DSM 9293 (= AT-1) reference-proteome protein_examples (UniProtKB:A0A1W1WDM4 SAMN00768000_1627,
+    UniProtKB:A0A1W1WET7 SAMN00768000_1798, UniProtKB:A0A1W1WGA9 SAMN00768000_2174,
+    UniProtKB:A0A1W1WGH8 SAMN00768000_2232) and conditional_acidophile_leaching_graph
+    causal graph to enargite-pyrite-concentrate.yaml.'
+  snapshot_sha256: 72fdd662529647784dd81fb8cc32c0d9b85a12fe41097ac350519c30336c6a22
+- evidence_id: validation
+  kind: validation
+  reference: data/records/enargite-pyrite-concentrate.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-04T21:06:30Z'
+  support: supports
+  summary: data/records/enargite-pyrite-concentrate.yaml and history/records/enargite-pyrite-concentrate/2026-11-04T210559Z-marcin-40f392.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: ff9c612bc793c8fe73cf7aced61e5618b9d7a0605b1b1293074469d52d1c640d
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 683 record(s); 0 failed.
+  target_ids:
+  - cmmmech:enargite-pyrite-concentrate
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:enargite-pyrite-concentrate
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_protein_grounding
+  area: graph
+  topic: 'Verification of causal_graphs structure, UniProtKB paralog grounding, and
+    parity across causal_graph ''conditional_acidophile_leaching_graph'' (mechanism_ref:
+    conditional_acidophile_leaching, 5 nodes / 4 edges; sor_sulfur_oxygenase_reductase:
+    [UniProtKB:A0A1W1WDM4 (SAMN00768000_1627, A0A1W1WDM4_SULTA, UP000192660), UniProtKB:A0A1W1WET7
+    (SAMN00768000_1798, A0A1W1WET7_SULTA, UP000192660)]; rus_soxe_iron_electron_transfer:
+    [UniProtKB:A0A1W1WGA9 (SAMN00768000_2174, A0A1W1WGA9_SULTA, UP000192660), UniProtKB:A0A1W1WGH8
+    (SAMN00768000_2232, A0A1W1WGH8_SULTA, UP000192660)])'
+  outcome: supported
+  summary: 'Curated data/records/enargite-pyrite-concentrate.yaml (SHA-256 ff9c612bc793c8fe73cf7aced61e5618b9d7a0605b1b1293074469d52d1c640d)
+    with causal_graph ''conditional_acidophile_leaching_graph'' (mechanism_ref: conditional_acidophile_leaching,
+    5 nodes / 4 edges; sor_sulfur_oxygenase_reductase: [UniProtKB:A0A1W1WDM4 (SAMN00768000_1627,
+    A0A1W1WDM4_SULTA, UP000192660), UniProtKB:A0A1W1WET7 (SAMN00768000_1798, A0A1W1WET7_SULTA,
+    UP000192660)]; rus_soxe_iron_electron_transfer: [UniProtKB:A0A1W1WGA9 (SAMN00768000_2174,
+    A0A1W1WGA9_SULTA, UP000192660), UniProtKB:A0A1W1WGH8 (SAMN00768000_2232, A0A1W1WGH8_SULTA,
+    UP000192660)]), achieving 100% parity between mechanisms[].protein_examples and
+    causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+    levels and caveats from primary source(s) okibe_2022. Live-verified UniProtKB
+    reference-proteome grounding across UniProtKB:A0A1W1WDM4 (A0A1W1WDM4_SULTA, Sulfur
+    oxygenase/reductase, gene_symbol: SAMN00768000_1627, TREMBL, NCBITaxon:929705
+    Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660); UniProtKB:A0A1W1WET7
+    (A0A1W1WET7_SULTA, Sulfur oxygenase reductase, gene_symbol: SAMN00768000_1798,
+    TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660);
+    UniProtKB:A0A1W1WGA9 (A0A1W1WGA9_SULTA, Rusticyanin, gene_symbol: SAMN00768000_2174,
+    TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660);
+    UniProtKB:A0A1W1WGH8 (A0A1W1WGH8_SULTA, Sulfocyanin, gene_symbol: SAMN00768000_2232,
+    TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans DSM 9293, UP000192660).'
+  target_ids:
+  - cmmmech:enargite-pyrite-concentrate
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
+  outcome: supported
+  summary: 'data/records/enargite-pyrite-concentrate.yaml was updated exclusively
+    through scripts/curate_causal_graphs.py (curate_record_file), producing append-only
+    history sidecar(s) (history/records/enargite-pyrite-concentrate/2026-11-04T210559Z-marcin-40f392.yaml
+    (SHA-256 72fdd662529647784dd81fb8cc32c0d9b85a12fe41097ac350519c30336c6a22): Add
+    conditional_acidophile_leaching_graph causal graph and ground conditional_acidophile_leaching
+    to Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) reference-proteome UniProtKB
+    SOR, Rusticyanin, and Sulfocyanin entries (UniProtKB:A0A1W1WDM4, UniProtKB:A0A1W1WET7,
+    UniProtKB:A0A1W1WGA9, UniProtKB:A0A1W1WGH8) — Added Sulfobacillus thermosulfidooxidans
+    DSM 9293 (= AT-1) reference-proteome protein_examples (UniProtKB:A0A1W1WDM4 SAMN00768000_1627,
+    UniProtKB:A0A1W1WET7 SAMN00768000_1798, UniProtKB:A0A1W1WGA9 SAMN00768000_2174,
+    UniProtKB:A0A1W1WGH8 SAMN00768000_2232) and conditional_acidophile_leaching_graph
+    causal graph to enargite-pyrite-concentrate.yaml.) and passing all LinkML and
+    history validation gates.'
+  target_ids:
+  - cmmmech:enargite-pyrite-concentrate
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Enargite-pyrite concentrate (cmmmech:enargite-pyrite-concentrate) passes
+  Cycle 8 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 ff9c612bc793c8fe73cf7aced61e5618b9d7a0605b1b1293074469d52d1c640d:
+  Curated data/records/enargite-pyrite-concentrate.yaml (SHA-256 ff9c612bc793c8fe73cf7aced61e5618b9d7a0605b1b1293074469d52d1c640d)
+  with causal_graph ''conditional_acidophile_leaching_graph'' (mechanism_ref: conditional_acidophile_leaching,
+  5 nodes / 4 edges; sor_sulfur_oxygenase_reductase: [UniProtKB:A0A1W1WDM4 (SAMN00768000_1627,
+  A0A1W1WDM4_SULTA, UP000192660), UniProtKB:A0A1W1WET7 (SAMN00768000_1798, A0A1W1WET7_SULTA,
+  UP000192660)]; rus_soxe_iron_electron_transfer: [UniProtKB:A0A1W1WGA9 (SAMN00768000_2174,
+  A0A1W1WGA9_SULTA, UP000192660), UniProtKB:A0A1W1WGH8 (SAMN00768000_2232, A0A1W1WGH8_SULTA,
+  UP000192660)]), achieving 100% parity between mechanisms[].protein_examples and
+  causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+  levels and caveats from primary source(s) okibe_2022. Live-verified UniProtKB reference-proteome
+  grounding across UniProtKB:A0A1W1WDM4 (A0A1W1WDM4_SULTA, Sulfur oxygenase/reductase,
+  gene_symbol: SAMN00768000_1627, TREMBL, NCBITaxon:929705 Sulfobacillus thermosulfidooxidans
+  DSM 9293, UP000192660); UniProtKB:A0A1W1WET7 (A0A1W1WET7_SULTA, Sulfur oxygenase
+  reductase, gene_symbol: SAMN00768000_1798, TREMBL, NCBITaxon:929705 Sulfobacillus
+  thermosulfidooxidans DSM 9293, UP000192660); UniProtKB:A0A1W1WGA9 (A0A1W1WGA9_SULTA,
+  Rusticyanin, gene_symbol: SAMN00768000_2174, TREMBL, NCBITaxon:929705 Sulfobacillus
+  thermosulfidooxidans DSM 9293, UP000192660); UniProtKB:A0A1W1WGH8 (A0A1W1WGH8_SULTA,
+  Sulfocyanin, gene_symbol: SAMN00768000_2232, TREMBL, NCBITaxon:929705 Sulfobacillus
+  thermosulfidooxidans DSM 9293, UP000192660).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 8 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py.
+related_reviews: []
+```

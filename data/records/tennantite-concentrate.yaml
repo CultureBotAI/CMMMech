@@ -1,132 +1,295 @@
 id: cmmmech:tennantite-concentrate
 name: Tennantite concentrate
 material_kind: primary_resource
-description: >-
-  A mixed mineral concentrate enriched in source-labelled tennantite, represented
-  here by the feed studied by Kondo et al. (2024). This resource is distinct from
-  a pure mineral species, the separately described tennantite-(In), and elemental
-  copper or arsenic. The study reports mineral liberation analysis of about
-  60 wt% tennantite, 23% pyrite, 8.2% sphalerite, 6.3% gangue, 1.6% galena and
-  0.97% chalcopyrite (rounded values). Bulk elemental composition is reported as
-  S 31%, Cu 23%, Fe 12%, Zn 10%, Sb 7.8% and As 6.2%, with median particle size
-  41 micrometres. Its geographic origin and beneficiation route are not given.
-  Generic discussion of flotation wastes does not establish that this particular
-  feed was discarded waste. The informal tennantite phase label does not resolve
-  a modern mineral species or establish the ideal Cu12As4S13 composition of every
-  grain. No criticality designation is transferred from a constituent element.
+description: A mixed mineral concentrate enriched in source-labelled tennantite, represented here by the feed studied by Kondo et al. (2024). This resource is distinct from a pure mineral species, the separately described tennantite-(In), and elemental copper or arsenic. The study reports mineral liberation analysis of about 60 wt% tennantite, 23% pyrite, 8.2% sphalerite, 6.3% gangue, 1.6% galena and 0.97% chalcopyrite (rounded values). Bulk elemental composition is reported as S 31%, Cu 23%, Fe 12%, Zn 10%, Sb 7.8% and As 6.2%, with median particle size 41 micrometres. Its geographic origin and beneficiation route are not given. Generic discussion of flotation wastes does not establish that this particular feed was discarded waste. The informal tennantite phase label does not resolve a modern mineral species or establish the ideal Cu12As4S13 composition of every grain. No criticality designation is transferred from a constituent element.
 sources:
-  - id: kondo_2024
-    title: >-
-      Kondo S, Hayashi K, Phann I and Okibe N (2024). Bioleaching of tennantite
-      concentrate: influence of microbial community and solution redox potential.
-      Frontiers in Microbiology 14:1339549. Published 8 January 2024 in volume
-      designated 2023; DOI 10.3389/fmicb.2023.1339549. Sections 2-4, Figures 1-6,
-      Table 1 and data availability statement.
-    url: https://doi.org/10.3389/fmicb.2023.1339549
-    accessed_on: '2026-10-12'
-  - id: ncbi_sulfobacillus
-    title: >-
-      NCBI Taxonomy 28034, Sulfobacillus thermosulfidooxidans, species; lists
-      DSM 9293 and AT-1 as type-strain designations. Identifier context only,
-      not independent authentication of the experimental culture.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28034&mode=Info
-    accessed_on: '2026-10-12'
+- id: kondo_2024
+  title: 'Kondo S, Hayashi K, Phann I and Okibe N (2024). Bioleaching of tennantite concentrate: influence of microbial community and solution redox potential. Frontiers in Microbiology 14:1339549. Published 8 January 2024 in volume designated 2023; DOI 10.3389/fmicb.2023.1339549. Sections 2-4, Figures 1-6, Table 1 and data availability statement.'
+  url: https://doi.org/10.3389/fmicb.2023.1339549
+  accessed_on: '2026-10-12'
+- id: ncbi_sulfobacillus
+  title: NCBI Taxonomy 28034, Sulfobacillus thermosulfidooxidans, species; lists DSM 9293 and AT-1 as type-strain designations. Identifier context only, not independent authentication of the experimental culture.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=28034&mode=Info
+  accessed_on: '2026-10-12'
 mechanisms:
-  - id: acidophile_associated_copper_mobilization
-    name: Acidophile-associated copper mobilization with variable carbon addition
-    process: bioleaching
-    microbial: true
-    organisms:
-      - id: NCBITaxon:28034
-        label: Sulfobacillus thermosulfidooxidans
-    description: >-
-      In inoculated acidic laboratory suspensions, copper entered the filtered
-      liquid while the effect of activated carbon depended on culture history
-      and experimental conditions. Source-reported final copper dissolution in
-      50-day flasks was about 70% with 0.01% activated carbon versus 45% without
-      it; larger carbon additions gave 52% and 38% at 0.025% and 0.05%, respectively.
-      In later 100-day pH-controlled reactors both carbon-free and 0.01% carbon
-      systems reached about 60% copper dissolution. These percentages describe
-      reported dissolved copper relative to the mixed feed inventory, not
-      isolated metal recovery or a pure-tennantite yield. Carbon-free systems
-      were also inoculated; no uninoculated leaching control is described.
-      Redox profiles, cell growth and community composition are consistent with
-      microbial involvement but do not isolate its advantage over matched
-      chemical leaching or prove a particular member's necessity.
-    context: >-
-      Unwashed, unsterilized concentrate was used. The initial inoculum contained
-      source-labelled Acidimicrobium ferrooxidans ICP (DSM 10331), Acidiplasma sp.
-      Fv-Ap, Acidithiobacillus caldus KU (DSM 8584), Sulfobacillus sibiricus N1
-      (DSM 17363), S. thermotolerans Kr1 (DSM 17362) and S. thermosulfidooxidans
-      AT-1 (DSM 9293), with equal initial cell densities before pre-growth on
-      concentrate. The paper's acknowledgement instead calls Fv-Ap Acidisphaera;
-      that inconsistency is not resolved here. The structured organism denotes
-      one reported community member, not the entire consortium or a verified
-      strain accession. Terminal 16S V3-V4 amplicon analysis reported 99.9%
-      S. thermosulfidooxidans in flask residue and dominance in reactor residue;
-      this is not a time-resolved census or proof of strain identity or causality.
-      Duplicate flasks contained 200 mL acidophile basal salts medium in 500 mL
-      vessels, 0.02% yeast extract, 5 mM Fe(II), 5% w/v concentrate and 10% v/v
-      pre-grown inoculum, initially pH 1.5 with sulfuric acid, at 45 degrees C
-      and 150 rpm for 50 days. Carbon doses were 0, 0.01, 0.025 and 0.05% w/v;
-      pH subsequently diverged, so the carbon comparison is not pH matched.
-      Two later 2 L reactor systems contained 1.2 L medium, 0.02% yeast extract,
-      5% concentrate and 10% inoculum descended from flask cultures, at 45 degrees C
-      and 150 rpm. Each carbon condition is one described reactor, not duplicate
-      reactors. Sulfuric acid maintained pH 2.0 through day 37 and 1.5 from day 38.
-      Day-53 Fe(II) additions differed: 20 mM without carbon and 10 mM with carbon.
-      Terminal outcomes therefore cannot be treated as a clean factorial carbon
-      effect or independent replication of the earlier flasks. Filtered 0.45-micrometre
-      aliquots were measured by ICP-OES; plotted total-element concentrations
-      do not identify oxidation state. No isolated copper product, complete
-      sampling-corrected mass balance or industrial deployment was demonstrated.
+- id: acidophile_associated_copper_mobilization
+  name: Acidophile-associated copper mobilization with variable carbon addition
+  process: bioleaching
+  description: In inoculated acidic laboratory suspensions, copper entered the filtered liquid while the effect of activated carbon depended on culture history and experimental conditions. Source-reported final copper dissolution in 50-day flasks was about 70% with 0.01% activated carbon versus 45% without it; larger carbon additions gave 52% and 38% at 0.025% and 0.05%, respectively. In later 100-day pH-controlled reactors both carbon-free and 0.01% carbon systems reached about 60% copper dissolution. These percentages describe reported dissolved copper relative to the mixed feed inventory, not isolated metal recovery or a pure-tennantite yield. Carbon-free systems were also inoculated; no uninoculated leaching control is described. Redox profiles, cell growth and community composition are consistent with microbial involvement but do not isolate its advantage over matched chemical leaching or prove a particular member's necessity.
+  context: 'Unwashed, unsterilized concentrate was used. The initial inoculum contained source-labelled Acidimicrobium ferrooxidans ICP (DSM 10331), Acidiplasma sp. Fv-Ap, Acidithiobacillus caldus KU (DSM 8584), Sulfobacillus sibiricus N1 (DSM 17363), S. thermotolerans Kr1 (DSM 17362) and S. thermosulfidooxidans AT-1 (DSM 9293), with equal initial cell densities before pre-growth on concentrate. The paper''s acknowledgement instead calls Fv-Ap Acidisphaera; that inconsistency is not resolved here. The structured organism denotes one reported community member, not the entire consortium or a verified strain accession. Terminal 16S V3-V4 amplicon analysis reported 99.9% S. thermosulfidooxidans in flask residue and dominance in reactor residue; this is not a time-resolved census or proof of strain identity or causality. Duplicate flasks contained 200 mL acidophile basal salts medium in 500 mL vessels, 0.02% yeast extract, 5 mM Fe(II), 5% w/v concentrate and 10% v/v pre-grown inoculum, initially
+    pH 1.5 with sulfuric acid, at 45 degrees C and 150 rpm for 50 days. Carbon doses were 0, 0.01, 0.025 and 0.05% w/v; pH subsequently diverged, so the carbon comparison is not pH matched. Two later 2 L reactor systems contained 1.2 L medium, 0.02% yeast extract, 5% concentrate and 10% inoculum descended from flask cultures, at 45 degrees C and 150 rpm. Each carbon condition is one described reactor, not duplicate reactors. Sulfuric acid maintained pH 2.0 through day 37 and 1.5 from day 38. Day-53 Fe(II) additions differed: 20 mM without carbon and 10 mM with carbon. Terminal outcomes therefore cannot be treated as a clean factorial carbon effect or independent replication of the earlier flasks. Filtered 0.45-micrometre aliquots were measured by ICP-OES; plotted total-element concentrations do not identify oxidation state. No isolated copper product, complete sampling-corrected mass balance or industrial deployment was demonstrated.'
+  microbial: true
+  organisms:
+  - id: NCBITaxon:28034
+    label: Sulfobacillus thermosulfidooxidans
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A1W1WDM4
+    entry_name: A0A1W1WDM4_SULTA
+    protein_name: Sulfur oxygenase/reductase
+    gene_symbol: SAMN00768000_1627
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:929705
+      label: Sulfobacillus thermosulfidooxidans DSM 9293
+    reference_proteome_id: UP000192660
+    interpro_ids:
+    - InterPro:IPR011008
+    - InterPro:IPR011661
+    pfam_ids:
+    - Pfam:PF07682
+    ncbifam_ids:
+    - NCBIfam:NF047630
+    functional_role: Cytoplasmic sulfur oxygenase/reductase (ORF SAMN00768000_1627; 306 aa) in Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) catalyzing oxygen-dependent disproportionation of zero-valent sulfur into sulfite, thiosulfate, and hydrogen sulfide during moderately thermophilic sulfide-mineral bioleaching.
+    annotation_note: Grounded to first sulfur oxygenase/reductase paralog (SAMN00768000_1627; 306 aa) in reference-proteome entry UP000192660 for type strain Sulfobacillus thermosulfidooxidans DSM 9293 = AT-1 (NCBITaxon:929705), representing Sulfobacillus thermosulfidooxidans AT-1 (= DSM 9293; NCBITaxon:28034, Section 2.2) in the 45 C mixed acidophile consortium (reaching 99.9% S. thermosulfidooxidans 16S dominance in day-50 0.01%-carbon flask residue) leaching 5% w/v tennantite concentrate in Kondo et al. (2024).
     evidence:
-      - source_ref: kondo_2024
-        supports: support
-        explanation: >-
-          Sections 2.1-2.5, Figures 1-4 and Section 3 support the specific
-          mixed-feed culture assays and their reported dissolved-metal outcomes.
-          Figure 2 shows nonmonotonic carbon-dose effects and rising pH in carbon
-          arms; Figure 4 shows similar later copper trajectories, unequal iron
-          additions and the intervening pH change. These are two linked culture
-          stages, not universal operating optima. Figure 3 derives rates from
-          Figure 2 and is not an independent kinetic experiment.
+    - source_ref: kondo_2024
+      supports: partial
+      explanation: Grounded to first sulfur oxygenase/reductase paralog (SAMN00768000_1627) of Sulfobacillus thermosulfidooxidans DSM 9293 (= strain AT-1, reported in Section 2.2 of Kondo et al., 2024) for sulfur oxidation during 45 C tennantite-concentrate bioleaching; individual gene expression was not directly assayed.
+  - uniprot_accession: UniProtKB:A0A1W1WET7
+    entry_name: A0A1W1WET7_SULTA
+    protein_name: Sulfur oxygenase reductase
+    gene_symbol: SAMN00768000_1798
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:929705
+      label: Sulfobacillus thermosulfidooxidans DSM 9293
+    reference_proteome_id: UP000192660
+    interpro_ids:
+    - InterPro:IPR011008
+    - InterPro:IPR011661
+    pfam_ids:
+    - Pfam:PF07682
+    ncbifam_ids:
+    - NCBIfam:NF047630
+    functional_role: Second sulfur oxygenase reductase paralog (ORF SAMN00768000_1798; 306 aa) in Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) catalyzing elemental-sulfur disproportionation and acid-generating sulfur oxidation during moderately thermophilic sulfide-concentrate bioleaching.
+    annotation_note: Grounded to second sulfur oxygenase reductase paralog (SAMN00768000_1798; 306 aa) in reference-proteome entry UP000192660 for type strain Sulfobacillus thermosulfidooxidans DSM 9293 = AT-1 (NCBITaxon:929705), representing Sulfobacillus thermosulfidooxidans AT-1 (= DSM 9293; NCBITaxon:28034, Section 2.2) in the 45 C mixed acidophile consortium (reaching 99.9% S. thermosulfidooxidans 16S dominance in flask residue) in Kondo et al. (2024).
+    evidence:
+    - source_ref: kondo_2024
+      supports: partial
+      explanation: Grounded to second sulfur oxygenase reductase paralog (SAMN00768000_1798) of Sulfobacillus thermosulfidooxidans DSM 9293 (= strain AT-1, reported in Section 2.2 of Kondo et al., 2024) for sulfur oxidation during 45 C tennantite-concentrate bioleaching; individual gene expression was not directly assayed.
+  - uniprot_accession: UniProtKB:A0A1W1WGA9
+    entry_name: A0A1W1WGA9_SULTA
+    protein_name: Rusticyanin
+    gene_symbol: SAMN00768000_2174
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:929705
+      label: Sulfobacillus thermosulfidooxidans DSM 9293
+    reference_proteome_id: UP000192660
+    interpro_ids:
+    - InterPro:IPR028871
+    - InterPro:IPR050845
+    - InterPro:IPR033138
+    - InterPro:IPR008972
+    functional_role: Cupredoxin-like blue-copper electron-transfer protein rusticyanin (ORF SAMN00768000_2174; 258 aa) in Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) mediating aerobic Fe(II) oxidation and ferric-lixiviant regeneration during moderately thermophilic bioleaching.
+    annotation_note: Grounded to unique Rusticyanin entry (SAMN00768000_2174; 258 aa) in reference-proteome UP000192660 for type strain Sulfobacillus thermosulfidooxidans DSM 9293 = AT-1 (NCBITaxon:929705), representing Sulfobacillus thermosulfidooxidans AT-1 (= DSM 9293; NCBITaxon:28034, Section 2.2) in the 45 C mixed acidophile consortium (reaching 99.9% S. thermosulfidooxidans 16S dominance in flask residue) in Kondo et al. (2024).
+    evidence:
+    - source_ref: kondo_2024
+      supports: partial
+      explanation: Grounded to unique Rusticyanin entry (SAMN00768000_2174) of Sulfobacillus thermosulfidooxidans DSM 9293 (= strain AT-1, reported in Section 2.2 of Kondo et al., 2024) for aerobic Fe(II) oxidation during 45 C tennantite-concentrate bioleaching; individual gene expression was not directly assayed.
+  - uniprot_accession: UniProtKB:A0A1W1WGH8
+    entry_name: A0A1W1WGH8_SULTA
+    protein_name: Sulfocyanin
+    gene_symbol: SAMN00768000_2232
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:929705
+      label: Sulfobacillus thermosulfidooxidans DSM 9293
+    reference_proteome_id: UP000192660
+    interpro_ids:
+    - InterPro:IPR033138
+    - InterPro:IPR008972
+    - InterPro:IPR049544
+    pfam_ids:
+    - Pfam:PF06525
+    functional_role: Blue-copper electron carrier sulfocyanin (ORF SAMN00768000_2232; 175 aa) in Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) participating in membrane/periplasmic respiratory electron transfer during Fe(II) and reduced-sulfur oxidation at 45 C.
+    annotation_note: Grounded to unique Sulfocyanin-named entry (SAMN00768000_2232; 175 aa) in reference-proteome UP000192660 for type strain Sulfobacillus thermosulfidooxidans DSM 9293 = AT-1 (NCBITaxon:929705), representing Sulfobacillus thermosulfidooxidans AT-1 (= DSM 9293; NCBITaxon:28034, Section 2.2) in the 45 C mixed acidophile consortium (reaching 99.9% S. thermosulfidooxidans 16S dominance in flask residue) in Kondo et al. (2024).
+    evidence:
+    - source_ref: kondo_2024
+      supports: partial
+      explanation: Grounded to unique Sulfocyanin entry (SAMN00768000_2232) of Sulfobacillus thermosulfidooxidans DSM 9293 (= strain AT-1, reported in Section 2.2 of Kondo et al., 2024) for respiratory electron transfer during 45 C tennantite-concentrate bioleaching; individual gene expression was not directly assayed.
+  evidence:
+  - source_ref: kondo_2024
+    supports: support
+    explanation: Sections 2.1-2.5, Figures 1-4 and Section 3 support the specific mixed-feed culture assays and their reported dissolved-metal outcomes. Figure 2 shows nonmonotonic carbon-dose effects and rising pH in carbon arms; Figure 4 shows similar later copper trajectories, unequal iron additions and the intervening pH change. These are two linked culture stages, not universal operating optima. Figure 3 derives rates from Figure 2 and is not an independent kinetic experiment.
+  - source_ref: kondo_2024
+    supports: partial
+    explanation: Figures 5-6 and Section 3.2 show As/Fe/O/S/Sb-bearing secondary particles and declining relative tennantite diffraction peaks. They do not independently identify a pure ferric-arsenate or scorodite product, quantify phase-specific dissolution, or demonstrate long-term arsenic stability. Reported final dissolved arsenic is about 4% in the 0.01% carbon flask and 15% in both reactors, not an isolated arsenic recovery yield. The proposed ferric-arsenate/basic-ferric-sulfate association remains tentative. Iron percentages are especially difficult to interpret after unequal external iron additions. Terminal community dominance and separate tolerance tests in Table 1 cannot establish that selection caused every change in leaching.
+  - source_ref: ncbi_sulfobacillus
+    supports: context_only
+    explanation: Resolves the species label and type-strain aliases for the reported member; it does not verify the stock used or resolve the other consortium members and source naming discrepancy.
+causal_graphs:
+- id: acidophile_associated_copper_mobilization_graph
+  name: Sulfobacillus thermosulfidooxidans-dominated 45 C bioleaching of tennantite concentrate across 50-day flasks and 100-day pH-controlled reactors
+  description: Causal pathway linking Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) sulfur oxygenase/reductase paralogs (SAMN00768000_1627, SAMN00768000_1798) and blue-copper electron carriers Rusticyanin (SAMN00768000_2174) and Sulfocyanin (SAMN00768000_2232) in a 45 C mixed acidophile consortium (reaching 99.9% S. thermosulfidooxidans 16S relative abundance in day-50 0.01%-carbon flask residue) to copper and zinc dissolution and amorphous As/Fe/O/S/Sb secondary precipitation from 5% w/v tennantite concentrate in 50-day flasks and 100-day 2-L pH-controlled batch reactors in Kondo et al. (2024).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: acidophile_associated_copper_mobilization
+  nodes:
+  - id: sor_sulfur_oxygenase_reductase
+    label: Sulfur oxygenase/reductase paralogs (S. thermosulfidooxidans DSM 9293 SAMN00768000_1627; SAMN00768000_1798)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: SAMN00768000_1627
+    description: Complete 2-paralog cytoplasmic sulfur oxygenase/reductase (SOR) enzyme complement (SAMN00768000_1627 and SAMN00768000_1798; 306 aa each, InterPro:IPR011661 / Pfam:PF07682 / NCBIfam:NF047630) in Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) catalyzing oxygen-dependent disproportionation of elemental sulfur into sulfite, thiosulfate, and sulfide.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A1W1WDM4
+      entry_name: A0A1W1WDM4_SULTA
+      protein_name: Sulfur oxygenase/reductase
+      gene_symbol: SAMN00768000_1627
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:929705
+        label: Sulfobacillus thermosulfidooxidans DSM 9293
+      reference_proteome_id: UP000192660
+      interpro_ids:
+      - InterPro:IPR011008
+      - InterPro:IPR011661
+      pfam_ids:
+      - Pfam:PF07682
+      ncbifam_ids:
+      - NCBIfam:NF047630
+      functional_role: Cytoplasmic sulfur oxygenase/reductase (ORF SAMN00768000_1627; 306 aa) in Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) catalyzing oxygen-dependent disproportionation of zero-valent sulfur into sulfite, thiosulfate, and hydrogen sulfide during moderately thermophilic sulfide-mineral bioleaching.
+      annotation_note: Grounded to first sulfur oxygenase/reductase paralog (SAMN00768000_1627; 306 aa) in reference-proteome entry UP000192660 for type strain Sulfobacillus thermosulfidooxidans DSM 9293 = AT-1 (NCBITaxon:929705), representing Sulfobacillus thermosulfidooxidans AT-1 (= DSM 9293; NCBITaxon:28034, Section 2.2) in the 45 C mixed acidophile consortium (reaching 99.9% S. thermosulfidooxidans 16S dominance in day-50 0.01%-carbon flask residue) leaching 5% w/v tennantite concentrate in Kondo et al. (2024).
+      evidence:
       - source_ref: kondo_2024
         supports: partial
-        explanation: >-
-          Figures 5-6 and Section 3.2 show As/Fe/O/S/Sb-bearing secondary particles
-          and declining relative tennantite diffraction peaks. They do not
-          independently identify a pure ferric-arsenate or scorodite product,
-          quantify phase-specific dissolution, or demonstrate long-term arsenic
-          stability. Reported final dissolved arsenic is about 4% in the 0.01%
-          carbon flask and 15% in both reactors, not an isolated arsenic recovery
-          yield. The proposed ferric-arsenate/basic-ferric-sulfate association
-          remains tentative. Iron percentages are especially difficult to
-          interpret after unequal external iron additions.
-          Terminal community dominance and separate tolerance tests in Table 1
-          cannot establish that selection caused every change in leaching.
-      - source_ref: ncbi_sulfobacillus
-        supports: context_only
-        explanation: >-
-          Resolves the species label and type-strain aliases for the reported
-          member; it does not verify the stock used or resolve the other
-          consortium members and source naming discrepancy.
+        explanation: Grounded to first sulfur oxygenase/reductase paralog (SAMN00768000_1627) of Sulfobacillus thermosulfidooxidans DSM 9293 (= strain AT-1, reported in Section 2.2 of Kondo et al., 2024) for sulfur oxidation during 45 C tennantite-concentrate bioleaching; individual gene expression was not directly assayed.
+    - uniprot_accession: UniProtKB:A0A1W1WET7
+      entry_name: A0A1W1WET7_SULTA
+      protein_name: Sulfur oxygenase reductase
+      gene_symbol: SAMN00768000_1798
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:929705
+        label: Sulfobacillus thermosulfidooxidans DSM 9293
+      reference_proteome_id: UP000192660
+      interpro_ids:
+      - InterPro:IPR011008
+      - InterPro:IPR011661
+      pfam_ids:
+      - Pfam:PF07682
+      ncbifam_ids:
+      - NCBIfam:NF047630
+      functional_role: Second sulfur oxygenase reductase paralog (ORF SAMN00768000_1798; 306 aa) in Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) catalyzing elemental-sulfur disproportionation and acid-generating sulfur oxidation during moderately thermophilic sulfide-concentrate bioleaching.
+      annotation_note: Grounded to second sulfur oxygenase reductase paralog (SAMN00768000_1798; 306 aa) in reference-proteome entry UP000192660 for type strain Sulfobacillus thermosulfidooxidans DSM 9293 = AT-1 (NCBITaxon:929705), representing Sulfobacillus thermosulfidooxidans AT-1 (= DSM 9293; NCBITaxon:28034, Section 2.2) in the 45 C mixed acidophile consortium (reaching 99.9% S. thermosulfidooxidans 16S dominance in flask residue) in Kondo et al. (2024).
+      evidence:
+      - source_ref: kondo_2024
+        supports: partial
+        explanation: Grounded to second sulfur oxygenase reductase paralog (SAMN00768000_1798) of Sulfobacillus thermosulfidooxidans DSM 9293 (= strain AT-1, reported in Section 2.2 of Kondo et al., 2024) for sulfur oxidation during 45 C tennantite-concentrate bioleaching; individual gene expression was not directly assayed.
+  - id: rus_soxe_iron_electron_transfer
+    label: Rusticyanin and sulfocyanin blue-copper electron carriers (S. thermosulfidooxidans DSM 9293 SAMN00768000_2174; SAMN00768000_2232)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: SAMN00768000_2174
+    description: Unique Rusticyanin (SAMN00768000_2174; 258 aa) and full-length Sulfocyanin (SAMN00768000_2232; 175 aa) cupredoxin electron-transfer proteins in Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) mediating aerobic Fe(II) oxidation and ferric-iron regeneration at 45 C.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A1W1WGA9
+      entry_name: A0A1W1WGA9_SULTA
+      protein_name: Rusticyanin
+      gene_symbol: SAMN00768000_2174
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:929705
+        label: Sulfobacillus thermosulfidooxidans DSM 9293
+      reference_proteome_id: UP000192660
+      interpro_ids:
+      - InterPro:IPR028871
+      - InterPro:IPR050845
+      - InterPro:IPR033138
+      - InterPro:IPR008972
+      functional_role: Cupredoxin-like blue-copper electron-transfer protein rusticyanin (ORF SAMN00768000_2174; 258 aa) in Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) mediating aerobic Fe(II) oxidation and ferric-lixiviant regeneration during moderately thermophilic bioleaching.
+      annotation_note: Grounded to unique Rusticyanin entry (SAMN00768000_2174; 258 aa) in reference-proteome UP000192660 for type strain Sulfobacillus thermosulfidooxidans DSM 9293 = AT-1 (NCBITaxon:929705), representing Sulfobacillus thermosulfidooxidans AT-1 (= DSM 9293; NCBITaxon:28034, Section 2.2) in the 45 C mixed acidophile consortium (reaching 99.9% S. thermosulfidooxidans 16S dominance in flask residue) in Kondo et al. (2024).
+      evidence:
+      - source_ref: kondo_2024
+        supports: partial
+        explanation: Grounded to unique Rusticyanin entry (SAMN00768000_2174) of Sulfobacillus thermosulfidooxidans DSM 9293 (= strain AT-1, reported in Section 2.2 of Kondo et al., 2024) for aerobic Fe(II) oxidation during 45 C tennantite-concentrate bioleaching; individual gene expression was not directly assayed.
+    - uniprot_accession: UniProtKB:A0A1W1WGH8
+      entry_name: A0A1W1WGH8_SULTA
+      protein_name: Sulfocyanin
+      gene_symbol: SAMN00768000_2232
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:929705
+        label: Sulfobacillus thermosulfidooxidans DSM 9293
+      reference_proteome_id: UP000192660
+      interpro_ids:
+      - InterPro:IPR033138
+      - InterPro:IPR008972
+      - InterPro:IPR049544
+      pfam_ids:
+      - Pfam:PF06525
+      functional_role: Blue-copper electron carrier sulfocyanin (ORF SAMN00768000_2232; 175 aa) in Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) participating in membrane/periplasmic respiratory electron transfer during Fe(II) and reduced-sulfur oxidation at 45 C.
+      annotation_note: Grounded to unique Sulfocyanin-named entry (SAMN00768000_2232; 175 aa) in reference-proteome UP000192660 for type strain Sulfobacillus thermosulfidooxidans DSM 9293 = AT-1 (NCBITaxon:929705), representing Sulfobacillus thermosulfidooxidans AT-1 (= DSM 9293; NCBITaxon:28034, Section 2.2) in the 45 C mixed acidophile consortium (reaching 99.9% S. thermosulfidooxidans 16S dominance in flask residue) in Kondo et al. (2024).
+      evidence:
+      - source_ref: kondo_2024
+        supports: partial
+        explanation: Grounded to unique Sulfocyanin entry (SAMN00768000_2232) of Sulfobacillus thermosulfidooxidans DSM 9293 (= strain AT-1, reported in Section 2.2 of Kondo et al., 2024) for respiratory electron transfer during 45 C tennantite-concentrate bioleaching; individual gene expression was not directly assayed.
+  - id: s_thermosulfidooxidans_dominated_45c_leach_systems
+    label: 45 C mixed acidophile consortium (reaching 99.9% S. thermosulfidooxidans 16S abundance in 0.01%-C flask residue and ~93%/68-86% in 2-L reactors with Acidiplasma) in pH 1.5 HBS medium across 50-day flasks (0-0.05% w/v carbon) and 100-day pH-controlled (1.65 -> 2.0) 2-L batch reactors
+    node_type: CHEMICAL_ENTITY
+    description: 'Two linked 45 C culture stages at 5% w/v pulp density: (1) 50-day baffled flasks (100 mL HBS medium, initial pH 1.5, 10 mM Fe2+, 0.01% yeast extract, 1.0 x 10^7 cells/mL inoculum, 0, 0.01, 0.025, or 0.05% w/v Shirasagi DO-5 activated carbon, where S. thermosulfidooxidans reached 99.9% 16S abundance at day 50 in 0.01% C) and (2) 100-day 2-L aerated stirred batch reactors (1 L working volume, 5% v/v subcultured 0.01%-C flask slurry inoculum, pH controlled at 1.65 then 2.0 from day 47, with 0% vs 0.01% w/v carbon and staged 10 mM Fe2+ additions).'
+    protein_grounding_status: NOT_APPLICABLE
+  - id: flotation_tennantite_pyrite_sphalerite_concentrate
+    label: 5% w/v non-sterilized tennantite flotation concentrate (D50 = 18.6 um; ~60 wt% tennantite, 23 wt% pyrite, 8.2 wt% sphalerite, 0.7 wt% chalcopyrite; XRF 32.8% Cu, 15.8% Fe, 10.6% As, 5.4% Zn, 2.5% Sb, 29.5% S)
+    node_type: MATERIAL_OR_PHASE
+    description: 'Fine sulfide flotation concentrate (D50 = 18.6 um, D90 = 56.1 um) containing ~60 wt% tennantite alongside 23 wt% pyrite, 8.2 wt% sphalerite, 0.7 wt% chalcopyrite, and 7.6 wt% quartz (XRF: 32.8 wt% Cu, 15.8 wt% Fe, 10.6 wt% As, 5.4 wt% Zn, 2.5 wt% Sb, 29.5 wt% S), leached at 5% w/v without sterilization.'
+    protein_grounding_status: NOT_APPLICABLE
+  - id: dissolved_cu_zn_and_amorphous_arsenic_iron_precipitates
+    label: Nonmonotonic 50-day flask Cu solubilization (~70% at 0.01% C vs 45% at 0% C, 59% at 0.025% C, 35% at 0.05% C; ~4% dissolved As at 0.01% C, Figure 2) and ~60% Cu / nearly 100% Zn / ~15% As in both 100-day pH-controlled reactors (Figure 4) with XRD-amorphous As/Fe/O/S/Sb precipitates (Figures 5-6)
+    node_type: CHEMICAL_ENTITY
+    description: Dose-dependent 50-day flask copper solubilization peaking near 70% at 0.01% w/v carbon (vs 45% without carbon and 35% at 0.05% carbon, while pH rose from 1.5 to ~2.7 in carbon arms and dissolved As remained near 4% at 0.01% C; Figure 2), followed by ~60% Cu, nearly 100% Zn, and ~15% dissolved As in both 0% and 0.01% C 100-day pH-controlled reactors (Figure 4) and formation of XRD-amorphous As/Fe/O/S/Sb-bearing secondary particles alongside declining tennantite XRD peak intensity (Figures 5-6).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: sor_sulfur_oxygenase_reductase
+    target: s_thermosulfidooxidans_dominated_45c_leach_systems
+    predicate: produces
+    relationship: elemental-sulfur disproportionation and sulfuric-acid proton generation at 45 C
+    description: Sulfur oxygenase/reductase paralogs (S. thermosulfidooxidans DSM 9293 SAMN00768000_1627; SAMN00768000_1798) disproportionates elemental sulfur intermediates into sulfur oxyanions and sulfuric-acid protons in 45 C mixed acidophile consortium (reaching 99.9% S. thermosulfidooxidans 16S abundance in 0.01%-C flask residue and ~93%/68-86% in 2-L reactors with Acidiplasma) in pH 1.5 HBS medium across 50-day flasks (0-0.05% w/v carbon) and 100-day pH-controlled (1.65 -> 2.0) 2-L batch reactors.
+    evidence:
+    - source_ref: kondo_2024
+      supports: partial
+      explanation: Sulfur oxidation in Sulfobacillus thermosulfidooxidans AT-1 (= DSM 9293, which reached 99.9% 16S abundance in the day-50 0.01%-carbon flask residue and ~68-93% in the 2-L reactors) involves the two reference-proteome sulfur oxygenase/reductase paralogs (SAMN00768000_1627 and SAMN00768000_1798) in Kondo et al. (2024); gene-level expression was not directly assayed.
+  - source: rus_soxe_iron_electron_transfer
+    target: s_thermosulfidooxidans_dominated_45c_leach_systems
+    predicate: drives
+    relationship: aerobic Fe(II)-to-Fe(III) oxidation and redox-potential control at 45 C
+    description: Rusticyanin and sulfocyanin blue-copper electron carriers (S. thermosulfidooxidans DSM 9293 SAMN00768000_2174; SAMN00768000_2232) mediates respiratory Fe(II) oxidation to regenerate ferric iron (Fe3+) and regulate solution Eh in 45 C mixed acidophile consortium (reaching 99.9% S. thermosulfidooxidans 16S abundance in 0.01%-C flask residue and ~93%/68-86% in 2-L reactors with Acidiplasma) in pH 1.5 HBS medium across 50-day flasks (0-0.05% w/v carbon) and 100-day pH-controlled (1.65 -> 2.0) 2-L batch reactors.
+    evidence:
+    - source_ref: kondo_2024
+      supports: partial
+      explanation: Aerobic Fe(II) oxidation in Sulfobacillus thermosulfidooxidans AT-1 (= DSM 9293) utilizes the reference-proteome blue-copper electron carriers Rusticyanin (SAMN00768000_2174) and Sulfocyanin (SAMN00768000_2232) alongside Acidiplasma to oxidize Fe(II) and regulate Eh across the 50-day flask and 100-day reactor stages in Kondo et al. (2024).
+  - source: s_thermosulfidooxidans_dominated_45c_leach_systems
+    target: flotation_tennantite_pyrite_sphalerite_concentrate
+    predicate: solubilizes
+    relationship: 45 C oxidative bioleaching of 5% w/v tennantite concentrate in 50-day flasks (0-0.05% w/v C) and 100-day pH-controlled 2-L reactors (0% vs 0.01% w/v C)
+    description: In 50-day flasks and 100-day pH-controlled 2-L reactors at 45 C, the S. thermosulfidooxidans-dominated consortium oxidizes tennantite, pyrite, and sphalerite in the 5% w/v concentrate.
+    evidence:
+    - source_ref: kondo_2024
+      supports: support
+      explanation: Sections 2.1-2.5 and 3.1-3.2 and Figures 1-4 of Kondo et al. (2024) document community selection (Figure 1) and dissolved Cu, Zn, Fe, and As trajectories in the 50-day flasks (Figure 2) and 100-day 2-L reactors (Figure 4).
+  - source: flotation_tennantite_pyrite_sphalerite_concentrate
+    target: dissolved_cu_zn_and_amorphous_arsenic_iron_precipitates
+    predicate: produces
+    relationship: ~70% vs 45% soluble Cu in 50-day flasks (0.01% vs 0% C), ~60% Cu and ~100% Zn in 100-day reactors, and amorphous As/Fe/O/S/Sb secondary precipitates
+    description: ICP-OES and XRD/SEM-EDS show ~70% Cu solubilization (and ~4% dissolved As) at 0.01% C versus 45% Cu at 0% C in 50-day flasks (Figure 2), ~60% Cu, nearly 100% Zn, and ~15% dissolved As in both 100-day pH-controlled reactors (Figure 4), and XRD-silent As/Fe/O/S/Sb-bearing secondary particles with reduced tennantite XRD peaks (Figures 5-6).
+    evidence:
+    - source_ref: kondo_2024
+      supports: partial
+      explanation: Figures 2, 4, 5, and 6 of Kondo et al. (2024) support the reported dissolved Cu/Zn/As endpoints and amorphous secondary precipitate chemistry, while support is partial because no uninoculated leaching control was included, unequal external Fe(II) additions occurred in the reactors, and crystalline ferric arsenate/scorodite was not identified by XRD.
 curation_history:
-  - timestamp: '2026-10-12T10:34:34.119493Z'
-    curator: Codex (GPT-6)
-    action: create
-    summary: >-
-      Curated the mixed concentrate identity and separately scoped flask/reactor
-      leaching observations from the complete Kondo2024 original, preserving
-      controls, nonmonotonic carbon effects, source discrepancies and limits on
-      phase identity, causal attribution and recovered product.
-  - timestamp: '2026-10-12T10:44:51.012272Z'
-    curator: Codex (GPT-6)
-    action: edit
-    summary: >-
-      Addressed independent review F1 and issue 167 by removing the unsupported
-      claim of inconsistent early reactor redox maxima. The original Section 3.2
-      and Figure 4E agree; experimental qualifications remain unchanged.
+- timestamp: '2026-10-12T10:34:34.119493Z'
+  curator: Codex (GPT-6)
+  action: create
+  summary: Curated the mixed concentrate identity and separately scoped flask/reactor leaching observations from the complete Kondo2024 original, preserving controls, nonmonotonic carbon effects, source discrepancies and limits on phase identity, causal attribution and recovered product.
+- timestamp: '2026-10-12T10:44:51.012272Z'
+  curator: Codex (GPT-6)
+  action: edit
+  summary: Addressed independent review F1 and issue 167 by removing the unsupported claim of inconsistent early reactor redox maxima. The original Section 3.2 and Figure 4E agree; experimental qualifications remain unchanged.
+- timestamp: '2026-11-04T21:06:00Z'
+  curator: marcin
+  action: edit
+  summary: Add acidophile_associated_copper_mobilization_graph causal graph and ground acidophile_associated_copper_mobilization to Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) reference-proteome UniProtKB SOR, Rusticyanin, and Sulfocyanin entries (UniProtKB:A0A1W1WDM4, UniProtKB:A0A1W1WET7, UniProtKB:A0A1W1WGA9, UniProtKB:A0A1W1WGH8)
 history_refs:
-  - history/records/tennantite-concentrate/2026-10-12T103421Z-codex-feb6a6.yaml
-  - history/records/tennantite-concentrate/2026-10-12T104425Z-codex-b15461.yaml
+- history/records/tennantite-concentrate/2026-10-12T103421Z-codex-feb6a6.yaml
+- history/records/tennantite-concentrate/2026-10-12T104425Z-codex-b15461.yaml
+- history/records/tennantite-concentrate/2026-11-04T210600Z-marcin-ba6b24.yaml
