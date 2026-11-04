@@ -1,0 +1,310 @@
+# Cycle 7 Stage 2 causal-graphs review of Copper (cmmmech:copper)
+
+- Review: 20261104T102200Z-copper-cycle7-stage2-causal-graphs-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-04T10:15:00Z
+- Finished UTC: 2026-11-04T10:22:00Z
+- Reviewer: antigravity / cmmmech-cycle7-stage2-causal-graphs-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Copper (cmmmech:copper) passes Cycle 7 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 31f397d6f1e6ff70838ab6547be7519dda1c5ab0cbf4170b05db1326cb81d0ca: Curated data/records/copper.yaml (SHA-256 31f397d6f1e6ff70838ab6547be7519dda1c5ab0cbf4170b05db1326cb81d0ca) with causal_graph 'acidophile_chalcopyrite_copper_release_graph' (mechanism_ref: acidophile_chalcopyrite_copper_release, 5 nodes / 4 edges; sqr_reductase: [UniProtKB:F9ZQD6 (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43 (Atc_1437, F9ZN43_ACICS, UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT, UP000027059)]; tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from primary source(s) christel_2018. Live-verified UniProtKB reference-proteome grounding across UniProtKB:F9ZQD6 (F9ZQD6_ACICS, Sulfide-quinone reductase, gene_symbol: Atc_1705, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:F9ZN43 (F9ZN43_ACICS, Sulfide-quinone reductase, putative, gene_symbol: Atc_1437, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:A0A059XTE6 (A0A059XTE6_9BACT, Sulfide-quinone reductase, gene_symbol: Y981_02650, TREMBL, NCBITaxon:1441628 Leptospirillum ferriphilum YSK, UP000027059); UniProtKB:F9ZNI0 (F9ZNI0_ACICS, Tetrathionate hydrolase TetH, gene_symbol: Atc_1595, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135).
+
+## Scope And Provenance
+
+Cycle 7 Stage 2 causal-graphs review of data/records/copper.yaml (SHA-256 31f397d6f1e6ff70838ab6547be7519dda1c5ab0cbf4170b05db1326cb81d0ca) and its canonical EDIT history sidecar(s) (history/records/copper/2026-11-04T101915Z-marcin-9a2191.yaml) verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source evidence fidelity across causal_graph 'acidophile_chalcopyrite_copper_release_graph' (mechanism_ref: acidophile_chalcopyrite_copper_release, 5 nodes / 4 edges; sqr_reductase: [UniProtKB:F9ZQD6 (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43 (Atc_1437, F9ZN43_ACICS, UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT, UP000027059)]; tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135)]).
+
+Selection: Cycle 7 Stage 2 causal_graphs curation for cmmmech:copper
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base fa7431aece56c8a1d2344a7812db30b2a78f8022.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:copper | data/records/copper.yaml | maintained | Copper |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:copper | Checked 678 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:copper | All history sidecars pass validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Verification of causal_graphs structure, UniProtKB paralog grounding, and parity across causal_graph 'acidophile_chalcopyrite_copper_release_graph' (mechanism_ref: acidophile_chalcopyrite_copper_release, 5 nodes / 4 edges; sqr_reductase: [UniProtKB:F9ZQD6 (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43 (Atc_1437, F9ZN43_ACICS, UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT, UP000027059)]; tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135)])
+
+graph: supported. Targets: cmmmech:copper.
+
+Curated data/records/copper.yaml (SHA-256 31f397d6f1e6ff70838ab6547be7519dda1c5ab0cbf4170b05db1326cb81d0ca) with causal_graph 'acidophile_chalcopyrite_copper_release_graph' (mechanism_ref: acidophile_chalcopyrite_copper_release, 5 nodes / 4 edges; sqr_reductase: [UniProtKB:F9ZQD6 (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43 (Atc_1437, F9ZN43_ACICS, UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT, UP000027059)]; tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from primary source(s) christel_2018. Live-verified UniProtKB reference-proteome grounding across UniProtKB:F9ZQD6 (F9ZQD6_ACICS, Sulfide-quinone reductase, gene_symbol: Atc_1705, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:F9ZN43 (F9ZN43_ACICS, Sulfide-quinone reductase, putative, gene_symbol: Atc_1437, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:A0A059XTE6 (A0A059XTE6_9BACT, Sulfide-quinone reductase, gene_symbol: Y981_02650, TREMBL, NCBITaxon:1441628 Leptospirillum ferriphilum YSK, UP000027059); UniProtKB:F9ZNI0 (F9ZNI0_ACICS, Tetrathionate hydrolase TetH, gene_symbol: Atc_1595, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135).
+
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
+
+provenance: supported. Targets: cmmmech:copper.
+
+data/records/copper.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/copper/2026-11-04T101915Z-marcin-9a2191.yaml (SHA-256 e040725aecb277c001fce2f167f4cf7990caf01108665025fc5dbf7fb8f10cf2): Add acidophile_chalcopyrite_copper_release_graph causal graph and ground acidophile_chalcopyrite_copper_release to Acidithiobacillus caldus and Leptospirillum ferriphilum reference-proteome UniProtKB Sqr/TetH homologs (UniProtKB:F9ZQD6, UniProtKB:F9ZN43, UniProtKB:A0A059XTE6, UniProtKB:F9ZNI0) — Added representative Acidithiobacillus caldus SM-1 (UniProtKB:F9ZQD6, UniProtKB:F9ZN43, UniProtKB:F9ZNI0) and Leptospirillum ferriphilum YSK (UniProtKB:A0A059XTE6) protein_examples and acidophile_chalcopyrite_copper_release_graph causal graph to copper.yaml.) and passing all LinkML and history validation gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/copper.yaml; Working-tree record data/records/copper.yaml (causal_graphs and mechanisms[].protein_examples) | supports | Curated data/records/copper.yaml (SHA-256 31f397d6f1e6ff70838ab6547be7519dda1c5ab0cbf4170b05db1326cb81d0ca) with causal_graph 'acidophile_chalcopyrite_copper_release_graph' (mechanism_ref: acidophile_chalcopyrite_copper_release, 5 nodes / 4 edges; sqr_reductase: [UniProtKB:F9ZQD6 (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43 (Atc_1437, F9ZN43_ACICS, UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT, UP000027059)]; tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from primary source(s) christel_2018. |
+| primary_source | DOI:10.3389/fmicb.2018.03059; christel_2018: Christel et al. (2018). Weak Iron Oxidation by Sulfobacillus thermosulfidooxidans Maintains a Favorable Redox Potential for Chalcopyrite Bioleaching. Frontiers in Microbiology 9:3059. DOI 10.3389/fmicb.2018.03059; Methods, Bioleaching of Chalcopyrite Concentrate results, and Figure 1. (https://doi.org/10.3389/fmicb.2018.03059) | supports | Live-verified UniProtKB reference-proteome grounding across UniProtKB:F9ZQD6 (F9ZQD6_ACICS, Sulfide-quinone reductase, gene_symbol: Atc_1705, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:F9ZN43 (F9ZN43_ACICS, Sulfide-quinone reductase, putative, gene_symbol: Atc_1437, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:A0A059XTE6 (A0A059XTE6_9BACT, Sulfide-quinone reductase, gene_symbol: Y981_02650, TREMBL, NCBITaxon:1441628 Leptospirillum ferriphilum YSK, UP000027059); UniProtKB:F9ZNI0 (F9ZNI0_ACICS, Tetrathionate hydrolase TetH, gene_symbol: Atc_1595, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135). Primary mechanism source(s) (christel_2018: Christel et al. (2018). Weak Iron Oxidation by Sulfobacillus thermosulfidooxidans Maintains a Favorable Redox Potential for Chalcopyrite Bioleaching. Frontiers in Microbiology 9:3059. DOI 10.3389/fmicb.2018.03059; Methods, Bioleaching of Chalcopyrite Concentrate results, and Figure 1. (https://doi.org/10.3389/fmicb.2018.03059)) report culture-level sulfur oxidation and leaching without single-gene sqr/tth knockouts; supports: partial is strictly preserved on all enzyme-level edges and ProteinExample evidence items. |
+| edit_history | history/records/copper/2026-11-04T101915Z-marcin-9a2191.yaml; Canonical EDIT history sidecar history/records/copper/2026-11-04T101915Z-marcin-9a2191.yaml | supports | Canonical EDIT history sidecar history/records/copper/2026-11-04T101915Z-marcin-9a2191.yaml (SHA-256 e040725aecb277c001fce2f167f4cf7990caf01108665025fc5dbf7fb8f10cf2): Add acidophile_chalcopyrite_copper_release_graph causal graph and ground acidophile_chalcopyrite_copper_release to Acidithiobacillus caldus and Leptospirillum ferriphilum reference-proteome UniProtKB Sqr/TetH homologs (UniProtKB:F9ZQD6, UniProtKB:F9ZN43, UniProtKB:A0A059XTE6, UniProtKB:F9ZNI0) — Added representative Acidithiobacillus caldus SM-1 (UniProtKB:F9ZQD6, UniProtKB:F9ZN43, UniProtKB:F9ZNI0) and Leptospirillum ferriphilum YSK (UniProtKB:A0A059XTE6) protein_examples and acidophile_chalcopyrite_copper_release_graph causal graph to copper.yaml. |
+| validation | data/records/copper.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/copper.yaml and history/records/copper/2026-11-04T101915Z-marcin-9a2191.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed during Cycle 7 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261104T102200Z-copper-cycle7-stage2-causal-graphs-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 7 Stage 2 causal-graphs review of Copper (cmmmech:copper)
+started_at: '2026-11-04T10:15:00Z'
+finished_at: '2026-11-04T10:22:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle7-stage2-causal-graphs-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 7 Stage 2 causal_graphs and ProteinExample curation in data/records/copper.yaml
+    (SHA-256 31f397d6f1e6ff70838ab6547be7519dda1c5ab0cbf4170b05db1326cb81d0ca) against
+    UniProtKB reference proteomes and cited primary source(s) christel_2018.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: fa7431aece56c8a1d2344a7812db30b2a78f8022
+  state: working_tree
+  inputs:
+  - path: data/records/copper.yaml
+    sha256: 31f397d6f1e6ff70838ab6547be7519dda1c5ab0cbf4170b05db1326cb81d0ca
+    role: target
+  - path: history/records/copper/2026-11-04T101915Z-marcin-9a2191.yaml
+    sha256: e040725aecb277c001fce2f167f4cf7990caf01108665025fc5dbf7fb8f10cf2
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:copper
+  path: data/records/copper.yaml
+  label: Copper
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/copper.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/copper/2026-11-04T101915Z-marcin-9a2191.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 7 Stage 2 causal-graphs review of data/records/copper.yaml (SHA-256
+    31f397d6f1e6ff70838ab6547be7519dda1c5ab0cbf4170b05db1326cb81d0ca) and its canonical
+    EDIT history sidecar(s) (history/records/copper/2026-11-04T101915Z-marcin-9a2191.yaml)
+    verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding,
+    and primary-source evidence fidelity across causal_graph ''acidophile_chalcopyrite_copper_release_graph''
+    (mechanism_ref: acidophile_chalcopyrite_copper_release, 5 nodes / 4 edges; sqr_reductase:
+    [UniProtKB:F9ZQD6 (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43 (Atc_1437,
+    F9ZN43_ACICS, UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT,
+    UP000027059)]; tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135)]).'
+  selection: Cycle 7 Stage 2 causal_graphs curation for cmmmech:copper
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:copper
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/copper.yaml
+  locator: Working-tree record data/records/copper.yaml (causal_graphs and mechanisms[].protein_examples)
+  accessed_at: '2026-11-04T10:21:00Z'
+  support: supports
+  summary: 'Curated data/records/copper.yaml (SHA-256 31f397d6f1e6ff70838ab6547be7519dda1c5ab0cbf4170b05db1326cb81d0ca)
+    with causal_graph ''acidophile_chalcopyrite_copper_release_graph'' (mechanism_ref:
+    acidophile_chalcopyrite_copper_release, 5 nodes / 4 edges; sqr_reductase: [UniProtKB:F9ZQD6
+    (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43 (Atc_1437, F9ZN43_ACICS,
+    UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT, UP000027059)];
+    tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135)]), achieving
+    100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and caveats from primary source(s)
+    christel_2018.'
+  snapshot_sha256: 31f397d6f1e6ff70838ab6547be7519dda1c5ab0cbf4170b05db1326cb81d0ca
+- evidence_id: primary_source
+  kind: primary_source
+  reference: DOI:10.3389/fmicb.2018.03059
+  locator: 'christel_2018: Christel et al. (2018). Weak Iron Oxidation by Sulfobacillus
+    thermosulfidooxidans Maintains a Favorable Redox Potential for Chalcopyrite Bioleaching.
+    Frontiers in Microbiology 9:3059. DOI 10.3389/fmicb.2018.03059; Methods, Bioleaching
+    of Chalcopyrite Concentrate results, and Figure 1. (https://doi.org/10.3389/fmicb.2018.03059)'
+  accessed_at: '2026-11-04T10:21:00Z'
+  support: supports
+  summary: 'Live-verified UniProtKB reference-proteome grounding across UniProtKB:F9ZQD6
+    (F9ZQD6_ACICS, Sulfide-quinone reductase, gene_symbol: Atc_1705, TREMBL, NCBITaxon:990288
+    Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:F9ZN43 (F9ZN43_ACICS, Sulfide-quinone
+    reductase, putative, gene_symbol: Atc_1437, TREMBL, NCBITaxon:990288 Acidithiobacillus
+    caldus SM-1, UP000006135); UniProtKB:A0A059XTE6 (A0A059XTE6_9BACT, Sulfide-quinone
+    reductase, gene_symbol: Y981_02650, TREMBL, NCBITaxon:1441628 Leptospirillum ferriphilum
+    YSK, UP000027059); UniProtKB:F9ZNI0 (F9ZNI0_ACICS, Tetrathionate hydrolase TetH,
+    gene_symbol: Atc_1595, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1,
+    UP000006135). Primary mechanism source(s) (christel_2018: Christel et al. (2018).
+    Weak Iron Oxidation by Sulfobacillus thermosulfidooxidans Maintains a Favorable
+    Redox Potential for Chalcopyrite Bioleaching. Frontiers in Microbiology 9:3059.
+    DOI 10.3389/fmicb.2018.03059; Methods, Bioleaching of Chalcopyrite Concentrate
+    results, and Figure 1. (https://doi.org/10.3389/fmicb.2018.03059)) report culture-level
+    sulfur oxidation and leaching without single-gene sqr/tth knockouts; supports:
+    partial is strictly preserved on all enzyme-level edges and ProteinExample evidence
+    items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/copper/2026-11-04T101915Z-marcin-9a2191.yaml
+  locator: Canonical EDIT history sidecar history/records/copper/2026-11-04T101915Z-marcin-9a2191.yaml
+  accessed_at: '2026-11-04T10:21:00Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/copper/2026-11-04T101915Z-marcin-9a2191.yaml
+    (SHA-256 e040725aecb277c001fce2f167f4cf7990caf01108665025fc5dbf7fb8f10cf2): Add
+    acidophile_chalcopyrite_copper_release_graph causal graph and ground acidophile_chalcopyrite_copper_release
+    to Acidithiobacillus caldus and Leptospirillum ferriphilum reference-proteome
+    UniProtKB Sqr/TetH homologs (UniProtKB:F9ZQD6, UniProtKB:F9ZN43, UniProtKB:A0A059XTE6,
+    UniProtKB:F9ZNI0) — Added representative Acidithiobacillus caldus SM-1 (UniProtKB:F9ZQD6,
+    UniProtKB:F9ZN43, UniProtKB:F9ZNI0) and Leptospirillum ferriphilum YSK (UniProtKB:A0A059XTE6)
+    protein_examples and acidophile_chalcopyrite_copper_release_graph causal graph
+    to copper.yaml.'
+  snapshot_sha256: e040725aecb277c001fce2f167f4cf7990caf01108665025fc5dbf7fb8f10cf2
+- evidence_id: validation
+  kind: validation
+  reference: data/records/copper.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-04T10:21:00Z'
+  support: supports
+  summary: data/records/copper.yaml and history/records/copper/2026-11-04T101915Z-marcin-9a2191.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: 31f397d6f1e6ff70838ab6547be7519dda1c5ab0cbf4170b05db1326cb81d0ca
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 678 record(s); 0 failed.
+  target_ids:
+  - cmmmech:copper
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:copper
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_protein_grounding
+  area: graph
+  topic: 'Verification of causal_graphs structure, UniProtKB paralog grounding, and
+    parity across causal_graph ''acidophile_chalcopyrite_copper_release_graph'' (mechanism_ref:
+    acidophile_chalcopyrite_copper_release, 5 nodes / 4 edges; sqr_reductase: [UniProtKB:F9ZQD6
+    (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43 (Atc_1437, F9ZN43_ACICS,
+    UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT, UP000027059)];
+    tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135)])'
+  outcome: supported
+  summary: 'Curated data/records/copper.yaml (SHA-256 31f397d6f1e6ff70838ab6547be7519dda1c5ab0cbf4170b05db1326cb81d0ca)
+    with causal_graph ''acidophile_chalcopyrite_copper_release_graph'' (mechanism_ref:
+    acidophile_chalcopyrite_copper_release, 5 nodes / 4 edges; sqr_reductase: [UniProtKB:F9ZQD6
+    (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43 (Atc_1437, F9ZN43_ACICS,
+    UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT, UP000027059)];
+    tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135)]), achieving
+    100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and caveats from primary source(s)
+    christel_2018. Live-verified UniProtKB reference-proteome grounding across UniProtKB:F9ZQD6
+    (F9ZQD6_ACICS, Sulfide-quinone reductase, gene_symbol: Atc_1705, TREMBL, NCBITaxon:990288
+    Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:F9ZN43 (F9ZN43_ACICS, Sulfide-quinone
+    reductase, putative, gene_symbol: Atc_1437, TREMBL, NCBITaxon:990288 Acidithiobacillus
+    caldus SM-1, UP000006135); UniProtKB:A0A059XTE6 (A0A059XTE6_9BACT, Sulfide-quinone
+    reductase, gene_symbol: Y981_02650, TREMBL, NCBITaxon:1441628 Leptospirillum ferriphilum
+    YSK, UP000027059); UniProtKB:F9ZNI0 (F9ZNI0_ACICS, Tetrathionate hydrolase TetH,
+    gene_symbol: Atc_1595, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1,
+    UP000006135).'
+  target_ids:
+  - cmmmech:copper
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
+  outcome: supported
+  summary: 'data/records/copper.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar(s) (history/records/copper/2026-11-04T101915Z-marcin-9a2191.yaml
+    (SHA-256 e040725aecb277c001fce2f167f4cf7990caf01108665025fc5dbf7fb8f10cf2): Add
+    acidophile_chalcopyrite_copper_release_graph causal graph and ground acidophile_chalcopyrite_copper_release
+    to Acidithiobacillus caldus and Leptospirillum ferriphilum reference-proteome
+    UniProtKB Sqr/TetH homologs (UniProtKB:F9ZQD6, UniProtKB:F9ZN43, UniProtKB:A0A059XTE6,
+    UniProtKB:F9ZNI0) — Added representative Acidithiobacillus caldus SM-1 (UniProtKB:F9ZQD6,
+    UniProtKB:F9ZN43, UniProtKB:F9ZNI0) and Leptospirillum ferriphilum YSK (UniProtKB:A0A059XTE6)
+    protein_examples and acidophile_chalcopyrite_copper_release_graph causal graph
+    to copper.yaml.) and passing all LinkML and history validation gates.'
+  target_ids:
+  - cmmmech:copper
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Copper (cmmmech:copper) passes Cycle 7 Stage 2 causal-graphs review (scientific_review:
+  true) at SHA-256 31f397d6f1e6ff70838ab6547be7519dda1c5ab0cbf4170b05db1326cb81d0ca:
+  Curated data/records/copper.yaml (SHA-256 31f397d6f1e6ff70838ab6547be7519dda1c5ab0cbf4170b05db1326cb81d0ca)
+  with causal_graph ''acidophile_chalcopyrite_copper_release_graph'' (mechanism_ref:
+  acidophile_chalcopyrite_copper_release, 5 nodes / 4 edges; sqr_reductase: [UniProtKB:F9ZQD6
+  (Atc_1705, F9ZQD6_ACICS, UP000006135), UniProtKB:F9ZN43 (Atc_1437, F9ZN43_ACICS,
+  UP000006135), UniProtKB:A0A059XTE6 (Y981_02650, A0A059XTE6_9BACT, UP000027059)];
+  tth_hydrolase: [UniProtKB:F9ZNI0 (Atc_1595, F9ZNI0_ACICS, UP000006135)]), achieving
+  100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+  and preserving source-faithful support levels and caveats from primary source(s)
+  christel_2018. Live-verified UniProtKB reference-proteome grounding across UniProtKB:F9ZQD6
+  (F9ZQD6_ACICS, Sulfide-quinone reductase, gene_symbol: Atc_1705, TREMBL, NCBITaxon:990288
+  Acidithiobacillus caldus SM-1, UP000006135); UniProtKB:F9ZN43 (F9ZN43_ACICS, Sulfide-quinone
+  reductase, putative, gene_symbol: Atc_1437, TREMBL, NCBITaxon:990288 Acidithiobacillus
+  caldus SM-1, UP000006135); UniProtKB:A0A059XTE6 (A0A059XTE6_9BACT, Sulfide-quinone
+  reductase, gene_symbol: Y981_02650, TREMBL, NCBITaxon:1441628 Leptospirillum ferriphilum
+  YSK, UP000027059); UniProtKB:F9ZNI0 (F9ZNI0_ACICS, Tetrathionate hydrolase TetH,
+  gene_symbol: Atc_1595, TREMBL, NCBITaxon:990288 Acidithiobacillus caldus SM-1, UP000006135).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 7 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py.
+related_reviews: []
+```

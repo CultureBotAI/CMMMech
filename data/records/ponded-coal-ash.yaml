@@ -1,23 +1,10 @@
 id: cmmmech:ponded-coal-ash
 name: Ponded mixed coal ash
 material_kind: secondary_resource
-description: >-
-  Mixed fly and bottom ash deposited in coal-combustion ash ponds, represented here
-  by a sample from a Philippine circulating-fluidized-bed power plant burning local
-  and imported coal. The mixture is a distinct secondary resource from separately
-  collected coal fly ash, pure coal bottom ash and coal-gasification slag. Its
-  fly-to-bottom ratio, residence time and plant identity are unreported. A laboratory
-  mixed-culture study supports qualified metal mobilization from the mixed feed;
-  it does not resolve either ash component's individual response or establish an
-  isolated metal product, criticality designation or industrial deployment.
+description: Mixed fly and bottom ash deposited in coal-combustion ash ponds, represented here by a sample from a Philippine circulating-fluidized-bed power plant burning local and imported coal. The mixture is a distinct secondary resource from separately collected coal fly ash, pure coal bottom ash and coal-gasification slag. Its fly-to-bottom ratio, residence time and plant identity are unreported. A laboratory mixed-culture study supports qualified metal mobilization from the mixed feed; it does not resolve either ash component's individual response or establish an isolated metal product, criticality designation or industrial deployment.
 sources:
 - id: pangayao_2015
-  title: >-
-    Pangayao, van Hullebusch, Gallardo and Bacani (2015). Bioleaching of trace metals
-    from coal ash using mixed culture of Acidithiobacillus albertensis and
-    Acidithiobacillus thiooxidans. Journal of Engineering Science and Technology,
-    Special Issue on SOMCHE 2014 and RSCE 2014 Conference, 36-45. Sections 2.1-2.5,
-    Figures 1-2, Tables 1-5 and Sections 3.1-3.5; complete 10-page original.
+  title: Pangayao, van Hullebusch, Gallardo and Bacani (2015). Bioleaching of trace metals from coal ash using mixed culture of Acidithiobacillus albertensis and Acidithiobacillus thiooxidans. Journal of Engineering Science and Technology, Special Issue on SOMCHE 2014 and RSCE 2014 Conference, 36-45. Sections 2.1-2.5, Figures 1-2, Tables 1-5 and Sections 3.1-3.5; complete 10-page original.
   url: https://jestec.taylors.edu.my/Special%20Issue%208_SOMCHE_2014/SOMCHE%202014_8_2015_036_045.pdf
   accessed_on: '2026-10-15'
 - id: ncbi_albertensis
@@ -40,88 +27,286 @@ mechanisms:
 - id: mixed_acidophile_mobilization
   name: Culture-associated metal mobilization from mixed pond ash
   process: bioleaching
-  description: >-
-    Pangayao and colleagues measured zinc, manganese, chromium, iron and copper
-    in filtered liquors following 15-day contact of the mixed ash with source-designated
-    A. albertensis ATCC 35403 and A. thiooxidans ATCC 19377 cultures. Lower final pH
-    and reported metal solubilization are consistent with culture-associated acid
-    leaching. Added sulfuric acid and the absence of matched uninoculated controls
-    prevent assignment of the full response to microbial sulfur oxidation or to
-    either organism separately. No isolated recovered metal was demonstrated.
-  context: >-
-    The pond ash was dried at 105 degrees C for 24 hours and sieved using a stated
-    number-200 mesh; the paper's accompanying 0.075-micrometre value is inconsistent
-    and is not accepted as a verified particle cutoff. The source reports DSMZ-supplied
-    cultures under ATCC designations; catalogue correspondence does not authenticate
-    the experimental stocks or their mixing ratio, which is unreported. Cultures were
-    incubated for 10 days at 30 degrees C and 160 rpm in a medium containing ammonium
-    sulfate, magnesium sulfate, calcium chloride, potassium dihydrogen phosphate and
-    10 g/L elemental sulfur. Leaching used 250 mL flasks containing 100 mL medium,
-    1-5 g ash, 1-5 mL inoculum and 1-3 g added sulfur, at 30 degrees C and 160 rpm.
-    Ash/medium were autoclaved at 121 degrees C for 15 minutes and adjusted with
-    1 M sulfuric acid from pH 6.5-8 to pH 2 before sulfur and inoculum addition.
-    The 17-run Box-Behnken design includes repeated central settings; duplicate runs
-    are reported. After 15 days, 0.45-micrometre cellulose-acetate-filtered liquor was
-    nitric-acid-preserved for ICP-OES. No acid-only, uninoculated or no-sulfur series
-    is displayed, and no sulfur balance or direct organism-specific growth assay is
-    supplied. This is a flask experiment with industrial-origin feed, not an
-    industrial treatment demonstration.
+  description: Pangayao and colleagues measured zinc, manganese, chromium, iron and copper in filtered liquors following 15-day contact of the mixed ash with source-designated A. albertensis ATCC 35403 and A. thiooxidans ATCC 19377 cultures. Lower final pH and reported metal solubilization are consistent with culture-associated acid leaching. Added sulfuric acid and the absence of matched uninoculated controls prevent assignment of the full response to microbial sulfur oxidation or to either organism separately. No isolated recovered metal was demonstrated.
+  context: The pond ash was dried at 105 degrees C for 24 hours and sieved using a stated number-200 mesh; the paper's accompanying 0.075-micrometre value is inconsistent and is not accepted as a verified particle cutoff. The source reports DSMZ-supplied cultures under ATCC designations; catalogue correspondence does not authenticate the experimental stocks or their mixing ratio, which is unreported. Cultures were incubated for 10 days at 30 degrees C and 160 rpm in a medium containing ammonium sulfate, magnesium sulfate, calcium chloride, potassium dihydrogen phosphate and 10 g/L elemental sulfur. Leaching used 250 mL flasks containing 100 mL medium, 1-5 g ash, 1-5 mL inoculum and 1-3 g added sulfur, at 30 degrees C and 160 rpm. Ash/medium were autoclaved at 121 degrees C for 15 minutes and adjusted with 1 M sulfuric acid from pH 6.5-8 to pH 2 before sulfur and inoculum addition. The 17-run Box-Behnken design includes repeated central settings; duplicate runs are reported. After 15 days,
+    0.45-micrometre cellulose-acetate-filtered liquor was nitric-acid-preserved for ICP-OES. No acid-only, uninoculated or no-sulfur series is displayed, and no sulfur balance or direct organism-specific growth assay is supplied. This is a flask experiment with industrial-origin feed, not an industrial treatment demonstration.
   microbial: true
   organisms:
   - id: NCBITaxon:119978
     label: Acidithiobacillus albertensis
   - id: NCBITaxon:930
     label: Acidithiobacillus thiooxidans
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A543Q349
+    entry_name: A0A543Q349_ACITH
+    protein_name: Pyridine nucleotide-disulfide oxidoreductase
+    gene_symbol: sqr
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide-quinone reductase (sqr, locus GCD22_02301) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to elemental sulfur and polythionate intermediates during acidophilic bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing the DSMZ-supplied Acidithiobacillus thiooxidans ATCC 19377 / DSM 14887 culture (NCBITaxon:930) co-inoculated with Acidithiobacillus albertensis ATCC 35403 / DSM 14366 and elemental sulfur in Pangayao et al. (2015).
+    evidence:
+    - source_ref: pangayao_2015
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr, locus GCD22_02301) for elemental-sulfur oxidation and acid generation during 15-day mixed-culture bioleaching of ponded coal ash at 30 C in Pangayao et al. (2015); individual genes were not mutated and matched uninoculated controls were not included.
+  - uniprot_accession: UniProtKB:A0A5P9XUB1
+    entry_name: A0A5P9XUB1_ACITH
+    protein_name: Pyridine nucleotide-disulfide oxidoreductase
+    gene_symbol: sqor
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR036188
+    - InterPro:IPR023753
+    - InterPro:IPR052541
+    pfam_ids:
+    - Pfam:PF07992
+    functional_role: Membrane-bound sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207; 379 aa) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species during acidophilic bioleaching.
+    annotation_note: Grounded to second sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207; 379 aa) in reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing the DSMZ-supplied Acidithiobacillus thiooxidans ATCC 19377 / DSM 14887 culture (NCBITaxon:930) in Pangayao et al. (2015).
+    evidence:
+    - source_ref: pangayao_2015
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for elemental-sulfur oxidation during 15-day mixed-culture bioleaching of ponded coal ash in Pangayao et al. (2015); individual genes were not mutated.
+  - uniprot_accession: UniProtKB:A0A5P9XPU3
+    entry_name: A0A5P9XPU3_ACITH
+    protein_name: Tetrathionate hydrolase
+    gene_symbol: tth
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Periplasmic tetrathionate hydrolase (tth, locus GCD22_14205) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into sulfate and sulfuric-acid protons during acidophilic bioleaching.
+    annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing the DSMZ-supplied Acidithiobacillus thiooxidans ATCC 19377 / DSM 14887 culture (NCBITaxon:930) in Pangayao et al. (2015).
+    evidence:
+    - source_ref: pangayao_2015
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth, locus GCD22_14205) for polythionate disproportionation and sulfuric-acid generation during 15-day mixed-culture bioleaching of ponded coal ash in Pangayao et al. (2015); individual genes were not mutated.
+  - uniprot_accession: UniProtKB:A0A5P9XS05
+    entry_name: A0A5P9XS05_ACITH
+    protein_name: Tetrathionate hydrolase
+    gene_symbol: tth
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:637390
+      label: Acidithiobacillus thiooxidans ATCC 19377
+    reference_proteome_id: UP000363590
+    interpro_ids:
+    - InterPro:IPR018391
+    - InterPro:IPR002372
+    - InterPro:IPR011047
+    - InterPro:IPR015943
+    pfam_ids:
+    - Pfam:PF13360
+    functional_role: Full-length sulfur-cluster periplasmic tetrathionate hydrolase paralog (tth, locus GCD22_02315; 503 aa) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into sulfate and sulfuric-acid protons during acidophilic bioleaching.
+    annotation_note: Grounded to full-length 503-aa sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315, co-localized with sqr GCD22_02301) in reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing the DSMZ-supplied Acidithiobacillus thiooxidans ATCC 19377 / DSM 14887 culture (NCBITaxon:930) in Pangayao et al. (2015).
+    evidence:
+    - source_ref: pangayao_2015
+      supports: partial
+      explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for polythionate disproportionation and sulfuric-acid generation during 15-day mixed-culture bioleaching of ponded coal ash in Pangayao et al. (2015); individual genes were not mutated.
   evidence:
   - source_ref: pangayao_2015
     supports: support
-    explanation: >-
-      Sections 2.2-2.5 and 3.1-3.3, Figures 1-2 and Tables 1-3 support the mixed-feed
-      identity, treatment and filtered-liquor assays. Table 3 reports run-specific
-      maxima of 56.69% Zn and 69.32% Cu in run 13, 70.68% Mn in run 15, and 79.86%
-      Cr and 70.74% Fe in run 17; these are not one combined optimum or isolated
-      product yields. Figure 2 and Section 3.2 show final pH approximately 0.61-1.39
-      after the initial chemical adjustment to pH 2.
+    explanation: Sections 2.2-2.5 and 3.1-3.3, Figures 1-2 and Tables 1-3 support the mixed-feed identity, treatment and filtered-liquor assays. Table 3 reports run-specific maxima of 56.69% Zn and 69.32% Cu in run 13, 70.68% Mn in run 15, and 79.86% Cr and 70.74% Fe in run 17; these are not one combined optimum or isolated product yields. Figure 2 and Section 3.2 show final pH approximately 0.61-1.39 after the initial chemical adjustment to pH 2.
   - source_ref: pangayao_2015
     supports: partial
-    explanation: >-
-      The paper labels Table 3 values as percent metal leached but does not give
-      the calculation equation, initial-feed digestion procedure, blank corrections,
-      raw liquor concentrations or complete solution/residue mass balance. Its
-      reported total feed concentrations in Section 3.1 therefore do not independently
-      validate the percentage denominator. Added chemical acid, unquantified inoculum
-      chemistry and missing matched controls limit microbial attribution; pH decline
-      alone does not establish growth or sulfur-oxidation causality. Neither species
-      contribution nor fly-ash/bottom-ash-specific extraction is resolved.
+    explanation: The paper labels Table 3 values as percent metal leached but does not give the calculation equation, initial-feed digestion procedure, blank corrections, raw liquor concentrations or complete solution/residue mass balance. Its reported total feed concentrations in Section 3.1 therefore do not independently validate the percentage denominator. Added chemical acid, unquantified inoculum chemistry and missing matched controls limit microbial attribution; pH decline alone does not establish growth or sulfur-oxidation causality. Neither species contribution nor fly-ash/bottom-ash-specific extraction is resolved.
   - source_ref: pangayao_2015
     supports: partial
-    explanation: >-
-      Section 3.3 states 59.69% maximal Zn whereas Table 3, abstract and conclusion
-      give 56.69%. Table 5 is numerical model optimization, not a separately described
-      validation experiment; its Zn prediction 56.88% conflicts with abstract 56.38%,
-      and its 1 g sulfur settings for Zn/Mn contradict the conclusion's general 3 g
-      optimum. The inoculum main effect is reported nonsignificant. Table 4 gives
-      Fe/Cu lack-of-fit p-values 0.0417/0.0416 despite broad model-adequacy wording.
-      These source inconsistencies and statistical limitations prevent a validated
-      optimum, universal enhancement or scale-up performance claim.
+    explanation: Section 3.3 states 59.69% maximal Zn whereas Table 3, abstract and conclusion give 56.69%. Table 5 is numerical model optimization, not a separately described validation experiment; its Zn prediction 56.88% conflicts with abstract 56.38%, and its 1 g sulfur settings for Zn/Mn contradict the conclusion's general 3 g optimum. The inoculum main effect is reported nonsignificant. Table 4 gives Fe/Cu lack-of-fit p-values 0.0417/0.0416 despite broad model-adequacy wording. These source inconsistencies and statistical limitations prevent a validated optimum, universal enhancement or scale-up performance claim.
   - source_ref: atcc_albertensis
     supports: context_only
-    explanation: >-
-      The catalogue corroborates the source's ATCC 35403 species designation and
-      DSM 14366 correspondence. It does not establish purity, growth or the strain's
-      separate causal contribution in the mixed-culture experiment.
+    explanation: The catalogue corroborates the source's ATCC 35403 species designation and DSM 14366 correspondence. It does not establish purity, growth or the strain's separate causal contribution in the mixed-culture experiment.
   - source_ref: atcc_thiooxidans
     supports: context_only
-    explanation: >-
-      The catalogue corroborates ATCC 19377 as A. thiooxidans and lists DSM 14887.
-      This is culture-identity context, not an independent ash-leaching experiment.
+    explanation: The catalogue corroborates ATCC 19377 as A. thiooxidans and lists DSM 14887. This is culture-identity context, not an independent ash-leaching experiment.
+causal_graphs:
+- id: mixed_acidophile_mobilization_graph
+  name: Acidithiobacillus thiooxidans ATCC 19377 and Acidithiobacillus albertensis ATCC 35403 sulfur-supplemented acid leaching of ponded mixed coal ash
+  description: Causal pathway linking type-strain Acidithiobacillus thiooxidans ATCC 19377 reduced-sulfur oxidation enzymes Sqr/Sqor (GCD22_02301, GCD22_03207) and Tth (GCD22_14205, GCD22_02315) in mixed culture with Acidithiobacillus albertensis ATCC 35403 and 1-3 g elemental sulfur to pH reduction (from pH 2.0 to 0.61-1.39) and trace-metal solubilization from ponded mixed coal ash over 15 days at 30 C in Pangayao et al. (2015).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: mixed_acidophile_mobilization
+  nodes:
+  - id: sqr_reductase
+    label: Sqr / Sqor sulfide-quinone oxidoreductases (sqr GCD22_02301; sqor GCD22_03207)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: sqr
+    description: Membrane-bound sulfide-quinone oxidoreductase paralogs (sqr / GCD22_02301 and sqor / GCD22_03207) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to elemental sulfur and polythionate intermediates.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A543Q349
+      entry_name: A0A543Q349_ACITH
+      protein_name: Pyridine nucleotide-disulfide oxidoreductase
+      gene_symbol: sqr
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide-quinone reductase (sqr, locus GCD22_02301) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species to elemental sulfur and polythionate intermediates during acidophilic bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing the DSMZ-supplied Acidithiobacillus thiooxidans ATCC 19377 / DSM 14887 culture (NCBITaxon:930) co-inoculated with Acidithiobacillus albertensis ATCC 35403 / DSM 14366 and elemental sulfur in Pangayao et al. (2015).
+      evidence:
+      - source_ref: pangayao_2015
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide-quinone reductase (sqr, locus GCD22_02301) for elemental-sulfur oxidation and acid generation during 15-day mixed-culture bioleaching of ponded coal ash at 30 C in Pangayao et al. (2015); individual genes were not mutated and matched uninoculated controls were not included.
+    - uniprot_accession: UniProtKB:A0A5P9XUB1
+      entry_name: A0A5P9XUB1_ACITH
+      protein_name: Pyridine nucleotide-disulfide oxidoreductase
+      gene_symbol: sqor
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR036188
+      - InterPro:IPR023753
+      - InterPro:IPR052541
+      pfam_ids:
+      - Pfam:PF07992
+      functional_role: Membrane-bound sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207; 379 aa) in Acidithiobacillus thiooxidans ATCC 19377 oxidizing reduced sulfur species during acidophilic bioleaching.
+      annotation_note: Grounded to second sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207; 379 aa) in reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing the DSMZ-supplied Acidithiobacillus thiooxidans ATCC 19377 / DSM 14887 culture (NCBITaxon:930) in Pangayao et al. (2015).
+      evidence:
+      - source_ref: pangayao_2015
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 sulfide:quinone oxidoreductase paralog (sqor, locus GCD22_03207) for elemental-sulfur oxidation during 15-day mixed-culture bioleaching of ponded coal ash in Pangayao et al. (2015); individual genes were not mutated.
+  - id: tth_hydrolase
+    label: Tth tetrathionate hydrolases (tth GCD22_14205; tth GCD22_02315)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: tth
+    description: Periplasmic tetrathionate hydrolase paralogs (tth / GCD22_14205 and full-length sulfur-cluster tth / GCD22_02315) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into sulfate and sulfuric-acid protons.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A5P9XPU3
+      entry_name: A0A5P9XPU3_ACITH
+      protein_name: Tetrathionate hydrolase
+      gene_symbol: tth
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Periplasmic tetrathionate hydrolase (tth, locus GCD22_14205) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into sulfate and sulfuric-acid protons during acidophilic bioleaching.
+      annotation_note: Grounded to reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing the DSMZ-supplied Acidithiobacillus thiooxidans ATCC 19377 / DSM 14887 culture (NCBITaxon:930) in Pangayao et al. (2015).
+      evidence:
+      - source_ref: pangayao_2015
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 tetrathionate hydrolase (tth, locus GCD22_14205) for polythionate disproportionation and sulfuric-acid generation during 15-day mixed-culture bioleaching of ponded coal ash in Pangayao et al. (2015); individual genes were not mutated.
+    - uniprot_accession: UniProtKB:A0A5P9XS05
+      entry_name: A0A5P9XS05_ACITH
+      protein_name: Tetrathionate hydrolase
+      gene_symbol: tth
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:637390
+        label: Acidithiobacillus thiooxidans ATCC 19377
+      reference_proteome_id: UP000363590
+      interpro_ids:
+      - InterPro:IPR018391
+      - InterPro:IPR002372
+      - InterPro:IPR011047
+      - InterPro:IPR015943
+      pfam_ids:
+      - Pfam:PF13360
+      functional_role: Full-length sulfur-cluster periplasmic tetrathionate hydrolase paralog (tth, locus GCD22_02315; 503 aa) in Acidithiobacillus thiooxidans ATCC 19377 disproportionating tetrathionate into sulfate and sulfuric-acid protons during acidophilic bioleaching.
+      annotation_note: Grounded to full-length 503-aa sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315, co-localized with sqr GCD22_02301) in reference-proteome entry UP000363590 for type strain Acidithiobacillus thiooxidans ATCC 19377 (NCBITaxon:637390), representing the DSMZ-supplied Acidithiobacillus thiooxidans ATCC 19377 / DSM 14887 culture (NCBITaxon:930) in Pangayao et al. (2015).
+      evidence:
+      - source_ref: pangayao_2015
+        supports: partial
+        explanation: Representative Acidithiobacillus thiooxidans ATCC 19377 full-length sulfur-cluster tetrathionate hydrolase paralog (tth, locus GCD22_02315) for polythionate disproportionation and sulfuric-acid generation during 15-day mixed-culture bioleaching of ponded coal ash in Pangayao et al. (2015); individual genes were not mutated.
+  - id: mixed_acidophile_sulfur_supplemented_leach_liquor
+    label: Mixed A. albertensis ATCC 35403 and A. thiooxidans ATCC 19377 inoculum (1-5 mL) with 1-3 g elemental sulfur in 100 mL basal salts medium (pre-adjusted to pH 2.0 with 1 M H2SO4, reaching final pH 0.61-1.39 after 15 d at 30 C, 160 rpm)
+    node_type: CHEMICAL_ENTITY
+    description: 17-run Box-Behnken shake-flask series (250 mL flasks, 100 mL basal salts medium pre-adjusted from pH 6.5-8 to pH 2.0 with 1 M H2SO4 after autoclaving) inoculated with 1-5 mL mixed A. albertensis ATCC 35403 (DSM 14366) and A. thiooxidans ATCC 19377 (DSM 14887) plus 1-3 g elemental sulfur at 30 C and 160 rpm for 15 days, reaching final pH 0.61-1.39.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: autoclaved_philippine_cfb_ponded_mixed_coal_ash
+    label: Autoclaved, number-200-mesh-sieved Philippine CFB power-plant ponded mixed fly and bottom ash (1-5 g per 100 mL medium)
+    node_type: MATERIAL_OR_PHASE
+    description: Ponded mixed fly and bottom ash from a Philippine circulating-fluidized-bed coal power plant, dried at 105 C for 24 h, sieved through a number-200 mesh, autoclaved at 121 C for 15 min in medium at 1-5 g per 100 mL, and pre-adjusted to pH 2.0 with 1 M H2SO4.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: solubilized_ash_trace_metals_in_filtered_liquor
+    label: '15-day 0.45-um-filtered ICP-OES trace-metal maxima across Box-Behnken runs: 56.69% Zn and 69.32% Cu (run 13), 70.68% Mn (run 15), and 79.86% Cr and 70.74% Fe (run 17)'
+    node_type: CHEMICAL_ENTITY
+    description: Nitric-acid-preserved 0.45-um-filtered leachates after 15 days analyzed by ICP-OES, with Table 3 reporting run-specific maxima of 56.69% Zn and 69.32% Cu in run 13, 70.68% Mn in run 15, and 79.86% Cr and 70.74% Fe in run 17 (without uninoculated controls or closed mass-balance equations).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: sqr_reductase
+    target: tth_hydrolase
+    predicate: supplies_substrate_for
+    relationship: oxidation of sulfide to sulfur/polythionate intermediates
+    description: Sqr / Sqor sulfide-quinone oxidoreductases (sqr GCD22_02301; sqor GCD22_03207) oxidizes reduced sulfur species to elemental sulfur and polythionate intermediates metabolized by Tth tetrathionate hydrolases (tth GCD22_14205; tth GCD22_02315).
+    evidence:
+    - source_ref: pangayao_2015
+      supports: partial
+      explanation: Oxidation of added elemental sulfur (1-3 g per 100 mL) in Acidithiobacillus thiooxidans ATCC 19377 couples Sqr/Sqor paralogs (GCD22_02301, GCD22_03207) and periplasmic Tth paralogs (GCD22_14205, GCD22_02315) during 15-day mixed-culture incubation with A. albertensis ATCC 35403 in Pangayao et al. (2015); individual enzyme activities were not assayed.
+  - source: tth_hydrolase
+    target: mixed_acidophile_sulfur_supplemented_leach_liquor
+    predicate: produces
+    relationship: sulfuric acid proton and lixiviant generation
+    description: Tth tetrathionate hydrolases (tth GCD22_14205; tth GCD22_02315) disproportionates tetrathionate and polythionate intermediates into sulfate and H+, contributing to Mixed A. albertensis ATCC 35403 and A. thiooxidans ATCC 19377 inoculum (1-5 mL) with 1-3 g elemental sulfur in 100 mL basal salts medium (pre-adjusted to pH 2.0 with 1 M H2SO4, reaching final pH 0.61-1.39 after 15 d at 30 C, 160 rpm).
+    evidence:
+    - source_ref: pangayao_2015
+      supports: partial
+      explanation: Microbial oxidation of added elemental sulfur lowers medium pH from the initial 1 M H2SO4-adjusted pH 2.0 to final pH 0.61-1.39 over 15 days at 30 C in Pangayao et al. (2015) (Figure 2, Section 3.2), though no uninoculated or acid-only control series was included.
+  - source: mixed_acidophile_sulfur_supplemented_leach_liquor
+    target: autoclaved_philippine_cfb_ponded_mixed_coal_ash
+    predicate: solubilizes
+    relationship: 15-day culture- and acid-associated trace-metal mobilization from 1-5 g/100 mL ponded mixed coal ash across a 17-run Box-Behnken design
+    description: Over 15 days at 30 C and 160 rpm, the sulfur-supplemented A. albertensis ATCC 35403 + A. thiooxidans ATCC 19377 culture system (starting at chemically adjusted pH 2.0 and reaching pH 0.61-1.39) mobilizes Zn, Cu, Mn, Cr, and Fe from 1-5 g ponded coal ash.
+    evidence:
+    - source_ref: pangayao_2015
+      supports: support
+      explanation: Sections 2.2-2.5 and 3.1-3.3, Figures 1-2, and Tables 1-3 of Pangayao et al. (2015) support culture-associated acidification (final pH 0.61-1.39) and trace-metal solubilization in filtered 15-day liquors.
+  - source: autoclaved_philippine_cfb_ponded_mixed_coal_ash
+    target: solubilized_ash_trace_metals_in_filtered_liquor
+    predicate: produces
+    relationship: run-specific 15-day filtered-liquor maxima of 56.69% Zn, 69.32% Cu, 70.68% Mn, 79.86% Cr, and 70.74% Fe
+    description: ICP-OES analysis of 0.45-um-filtered 15-day leachates yields run-specific maxima in Table 3 of 56.69% Zn and 69.32% Cu (run 13), 70.68% Mn (run 15), and 79.86% Cr and 70.74% Fe (run 17).
+    evidence:
+    - source_ref: pangayao_2015
+      supports: partial
+      explanation: Table 3 of Pangayao et al. (2015) reports the run-specific percent-leached maxima; support is partial because the paper omits the percentage calculation equation, raw liquor concentrations, matched uninoculated controls, and species-specific contributions, and contains text/table discrepancies for maximal Zn (59.69% in Section 3.3 prose vs 56.69% in Table 3).
 curation_history:
 - timestamp: '2026-10-15T16:16:05.719620+00:00'
   curator: Codex (GPT-6; Codex)
   action: CREATE
-  summary: >-
-    Created the distinct mixed pond-ash secondary-resource owner with primary
-    culture-associated solubilization evidence, verified species identifiers and
-    explicit control, denominator, source-conflict and scale limits.
+  summary: Created the distinct mixed pond-ash secondary-resource owner with primary culture-associated solubilization evidence, verified species identifiers and explicit control, denominator, source-conflict and scale limits.
+- timestamp: '2026-11-04T10:20:15Z'
+  curator: marcin
+  action: edit
+  summary: Add mixed_acidophile_mobilization_graph causal graph and ground mixed_acidophile_mobilization to Acidithiobacillus thiooxidans ATCC 19377 reference-proteome UniProtKB Sqr/Sqor/Tth paralogs (UniProtKB:A0A543Q349, UniProtKB:A0A5P9XUB1, UniProtKB:A0A5P9XPU3, UniProtKB:A0A5P9XS05)
 history_refs:
 - history/records/ponded-coal-ash/2026-10-15T161610Z-codex-6e98b8.yaml
+- history/records/ponded-coal-ash/2026-11-04T102015Z-marcin-1b91a8.yaml
