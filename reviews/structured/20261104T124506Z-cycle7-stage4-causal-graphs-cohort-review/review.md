@@ -226,7 +226,7 @@ Update cexa_citrate_exporter.description in birnessite.yaml (causal_graphs[1]), 
 
 ## Limits And Additional Notes
 
-- Six GENE_OR_PROTEIN nodes across 6 records remain explicitly UNGROUNDED due to absent UniProtKB strain-proteome coverage: Thermococcus acidaminovorans Ax17 (ferrihydrite, iron, magnetite), unsequenced isolate Pseudomonas sp. OX1 (lindbergite first graph), mixed fungal/bacterial organic-acid leaching isolates (manganese), and unsequenced isolate Acidovorax sp. LW1 (praseodymium) lack strain-resolved enzyme sequences in UniProtKB. (259/265 GENE_OR_PROTEIN nodes are GROUNDED; 6/265 remain explicitly UNGROUNDED.)
+- 6 GENE_OR_PROTEIN nodes across 6 causal graphs in 6 records (cmmmech:iron, cmmmech:ferrihydrite, and cmmmech:magnetite ax17_ferrihydrite_transformation_graph node ax17_extracellular_fe3_reductase_system in unsequenced Shewanella sp. AX-17; cmmmech:manganese gb1_mnxg_mcoa_mopa_manganese_oxidation_graph node mopa_heme_peroxidase in Pseudomonas putida GB-1; cmmmech:praseodymium melba_mex_lanm_pr_la_separation_graph node melba_lanm_o36 for synthetic engineered variant Melba-LanM(O36); and cmmmech:lindbergite himantioides_associated_lindbergite_formation_graph node serpula_himantioides_acid_pathway in Serpula himantioides) are explicitly marked UNGROUNDED due to unsequenced strains, unverified isoform sequences, or synthetic engineered constructs lacking natural UniProtKB accessions.
 - Cross-cohort slice covers 100% (142/142) of records with causal_graphs at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 
 ## Complete Structured Record
@@ -3526,13 +3526,15 @@ evidence:
     and manganese-ore.yaml are grounded to both UniProtKB:G3Y4N5 (ATCC 1015) and UniProtKB:A0A254TZW7
     while description names only UniProtKB:A0A254TZW7.
 limitations:
-- 'Six GENE_OR_PROTEIN nodes across 6 records remain explicitly UNGROUNDED due to
-  absent UniProtKB strain-proteome coverage: Thermococcus acidaminovorans Ax17 (ferrihydrite,
-  iron, magnetite), unsequenced isolate Pseudomonas sp. OX1 (lindbergite first graph),
-  mixed fungal/bacterial organic-acid leaching isolates (manganese), and unsequenced
-  isolate Acidovorax sp. LW1 (praseodymium) lack strain-resolved enzyme sequences
-  in UniProtKB. (259/265 GENE_OR_PROTEIN nodes are GROUNDED; 6/265 remain explicitly
-  UNGROUNDED.)'
+- 6 GENE_OR_PROTEIN nodes across 6 causal graphs in 6 records (cmmmech:iron, cmmmech:ferrihydrite,
+  and cmmmech:magnetite ax17_ferrihydrite_transformation_graph node ax17_extracellular_fe3_reductase_system
+  in unsequenced Shewanella sp. AX-17; cmmmech:manganese gb1_mnxg_mcoa_mopa_manganese_oxidation_graph
+  node mopa_heme_peroxidase in Pseudomonas putida GB-1; cmmmech:praseodymium melba_mex_lanm_pr_la_separation_graph
+  node melba_lanm_o36 for synthetic engineered variant Melba-LanM(O36); and cmmmech:lindbergite
+  himantioides_associated_lindbergite_formation_graph node serpula_himantioides_acid_pathway
+  in Serpula himantioides) are explicitly marked UNGROUNDED due to unsequenced strains,
+  unverified isoform sequences, or synthetic engineered constructs lacking natural
+  UniProtKB accessions.
 notes:
 - Cross-cohort slice covers 100% (142/142) of records with causal_graphs at commit
   ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.

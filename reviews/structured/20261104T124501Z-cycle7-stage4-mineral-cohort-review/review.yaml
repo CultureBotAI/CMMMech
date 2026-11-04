@@ -9,18 +9,17 @@ skill: .claude/skills/review-yaml-category/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: 'Reviewed all 427 mineral records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c,
-  including the 5 Cycle 7 Stage 1 (PR #910, commit fa7431ae) Round 125 IMA mineral additions (cmmmech:fengruiite,
-  cmmmech:igelstromite, cmmmech:johanngeorgenstadtite, cmmmech:lazerckerite, cmmmech:plumbogottlobite),
-  the 3 Cycle 7 Stage 2 (PR #914, commit 8bf82c8d) and Stage 3 (PR #915, commit ff4a9841) mineral causal-graph
-  and UniProtKB grounding additions/expansions (cmmmech:chalcopyrite, cmmmech:molybdenite, cmmmech:skutterudite),
-  and verified resolution of Cycle 6 Stage 4 finding 0003 on vielleaureite-ce.yaml and xianhuaite-ce.yaml
-  (PR #904). All 427 mineral records are grounded to IMA-CNMNC mineral species identity without fabricating
-  constituent-element criticality inheritance. 285/427 mineral records contain primary-source-supported
-  microbial mechanisms (343 mechanisms total), 59/427 contain causal_graphs (62 graphs), and 57/59 carry
-  live-verified UniProtKB protein_examples across 39 unique accessions. Identified 3 minor findings across
-  9 mineral records (cmmmech-cycle7-stage4-finding-0001 on fengruiite, igelstromite, lazerckerite, plumbogottlobite;
-  cmmmech-cycle7-stage4-finding-0002 on chalcopyrite, molybdenite, skutterudite; and cmmmech-cycle7-stage4-finding-0003
+summary: 'Reviewed all 427 mineral records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c, including
+  the 5 Cycle 7 Stage 1 (PR #910, commit fa7431ae) Round 125 IMA mineral additions (cmmmech:fengruiite, cmmmech:igelstromite,
+  cmmmech:johanngeorgenstadtite, cmmmech:lazerckerite, cmmmech:plumbogottlobite), the 3 Cycle 7 Stage 2 (PR #914, commit 8bf82c8d)
+  and Stage 3 (PR #915, commit ff4a9841) mineral causal-graph and UniProtKB grounding additions/expansions (cmmmech:chalcopyrite,
+  cmmmech:molybdenite, cmmmech:skutterudite), and verified resolution of Cycle 6 Stage 4 finding 0003 on vielleaureite-ce.yaml
+  and xianhuaite-ce.yaml (PR #904). All 427 mineral records are grounded to IMA-CNMNC mineral species identity without fabricating
+  constituent-element criticality inheritance. 285/427 mineral records contain primary-source-supported microbial mechanisms
+  (343 mechanisms total), 59/427 contain causal_graphs (62 graphs, 93 GENE_OR_PROTEIN nodes: 90 GROUNDED and 3 UNGROUNDED),
+  and 57/427 (57/59 with causal_graphs) carry live-verified UniProtKB protein_examples across 39 unique accessions. Identified
+  3 minor findings across 9 mineral records (cmmmech-cycle7-stage4-finding-0001 on fengruiite, igelstromite, lazerckerite,
+  plumbogottlobite; cmmmech-cycle7-stage4-finding-0002 on chalcopyrite, molybdenite, skutterudite; and cmmmech-cycle7-stage4-finding-0003
   on birnessite, lindbergite) for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle7-stage4-cohort-reviewer
@@ -8170,8 +8169,8 @@ checks:
   - cmmmech:zirconolite
   evidence_ids:
   - ev-mineral-cohort-audit
-  summary: All 427 records in this cohort pass LinkML structural, semantic, and canonical top-level key-order
-    validation with 0 errors and 0 warnings.
+  summary: All 427 records in this cohort pass LinkML structural, semantic, and canonical top-level key-order validation with
+    0 errors and 0 warnings.
 - check_id: just-verify-history-minerals
   name: just verify-history (minerals)
   status: passed
@@ -8609,8 +8608,7 @@ checks:
   - cmmmech:zirconolite
   evidence_ids:
   - ev-mineral-cohort-audit
-  summary: All 427 records in this cohort have intact append-only history sidecars and matching curation_history
-    metadata.
+  summary: All 427 records in this cohort have intact append-only history sidecars and matching curation_history metadata.
 assessments:
 - assessment_id: assess-mineral-identity-and-ima-completeness
   topic: IMA-CNMNC mineral species identity, chemical formulae, external identifiers, and ima_symbol completeness
@@ -9047,13 +9045,11 @@ assessments:
   evidence_ids:
   - ev-mineral-cohort-audit
   - ev-round125-ima-symbols
-  summary: All 427 mineral records accurately distinguish IMA-approved mineral species from constituent
-    elements, commodities, and mixed ores/concentrates. Four Round 125 mineral records (fengruiite, igelstromite,
-    lazerckerite, plumbogottlobite) state IMA symbols (Fru, Ig, Lzc, Pgtb) in description but omit the
-    top-level ima_symbol slot.
+  summary: All 427 mineral records accurately distinguish IMA-approved mineral species from constituent elements, commodities,
+    and mixed ores/concentrates. Four Round 125 mineral records (fengruiite, igelstromite, lazerckerite, plumbogottlobite)
+    state IMA symbols (Fru, Ig, Lzc, Pgtb) in description but omit the top-level ima_symbol slot.
 - assessment_id: assess-mineral-mechanisms-and-causal-graphs
-  topic: Microbial mineral leaching/biomineralization mechanisms, causal graphs, and UniProtKB protein
-    examples
+  topic: Microbial mineral leaching/biomineralization mechanisms, causal graphs, and UniProtKB protein examples
   area: evidence
   outcome: supported
   target_ids:
@@ -9488,14 +9484,13 @@ assessments:
   - ev-mineral-cohort-audit
   - ev-mineral-stage3-graphs
   - ev-mineral-cexa-nodes
-  summary: 285/427 mineral records contain primary-source-supported microbial mechanisms (343 mechanisms
-    total), 59/427 contain causal_graphs (62 graphs), and 57/59 carry verified UniProtKB protein_examples
-    across 39 unique accessions.
+  summary: 285/427 mineral records contain primary-source-supported microbial mechanisms (343 mechanisms total), 59/427 contain
+    causal_graphs (62 graphs), and 57/59 carry verified UniProtKB protein_examples across 39 unique accessions.
 findings:
 - finding_id: cmmmech-cycle7-stage4-finding-0001
   issue_key: cmmmech.round125-minerals.missing-ima-symbol-slot
-  title: Four Cycle 7 Stage 1 (Round 125) IMA mineral records state IMA-approved symbols (Fru, Ig, Lzc,
-    Pgtb) in description but omit the top-level ima_symbol slot
+  title: Four Cycle 7 Stage 1 (Round 125) IMA mineral records state IMA-approved symbols (Fru, Ig, Lzc, Pgtb) in description
+    but omit the top-level ima_symbol slot
   severity: minor
   category: completeness
   certainty: confirmed
@@ -9511,21 +9506,18 @@ findings:
   evidence_ids:
   - ev-mineral-cohort-audit
   - ev-round125-ima-symbols
-  description: 'Four of the five IMA-CNMNC Round 125 mineral records curated in Cycle 7 Stage 1 (PR #910,
-    commit fa7431ae) — data/records/fengruiite.yaml (cmmmech:fengruiite, IMA 2024-045), data/records/igelstromite.yaml
-    (cmmmech:igelstromite, IMA 2021-035), data/records/lazerckerite.yaml (cmmmech:lazerckerite, IMA 2022-113),
-    and data/records/plumbogottlobite.yaml (cmmmech:plumbogottlobite, IMA 2025-075) — explicitly state
-    their IMA-CNMNC-approved mineral symbols in description (''IMA symbol Fru'' in fengruiite.yaml line
-    8 from Tian et al. 2026 Eur. J. Mineral. 38:519-530, p. 519; ''IMA symbol Ig'' in igelstromite.yaml
-    line 9 from Holtstam et al. 2024 Eur. J. Mineral. 36:311-322, p. 311; ''official IMA symbol Lzc''
-    in lazerckerite.yaml lines 11-12 from Pazout et al. 2024 Eur. J. Mineral. 36:641-656, p. 641; and
-    ''official IMA symbol Pgtb'' in plumbogottlobite.yaml line 8 from Kampf et al. 2026 Eur. J. Mineral.
-    38:209-216, p. 209), but omit the top-level ima_symbol slot (ima_symbol: Fru, ima_symbol: Ig, ima_symbol:
-    Lzc, and ima_symbol: Pgtb immediately following material_kind: mineral), unlike peer IMA mineral records
-    such as data/records/andreybulakhite.yaml (ima_symbol: Adb), data/records/vielleaureite-ce.yaml (ima_symbol:
-    Vlr-Ce), data/records/xianhuaite-ce.yaml (ima_symbol: Xhu-Ce), and data/records/yttrotungstite-nd.yaml
-    (ima_symbol: Ytgs-Nd). In this scope, 4 record(s) (fengruiite, igelstromite, lazerckerite, plumbogottlobite)
-    omit ima_symbol.'
+  description: 'Four of the five IMA-CNMNC Round 125 mineral records curated in Cycle 7 Stage 1 (PR #910, commit fa7431ae)
+    — data/records/fengruiite.yaml (cmmmech:fengruiite, IMA 2024-045), data/records/igelstromite.yaml (cmmmech:igelstromite,
+    IMA 2021-035), data/records/lazerckerite.yaml (cmmmech:lazerckerite, IMA 2022-113), and data/records/plumbogottlobite.yaml
+    (cmmmech:plumbogottlobite, IMA 2025-075) — explicitly state their IMA-CNMNC-approved mineral symbols in description (''IMA
+    symbol Fru'' in fengruiite.yaml line 8 from Tian et al. 2026 Eur. J. Mineral. 38:519-530, p. 519; ''IMA symbol Ig'' in
+    igelstromite.yaml line 9 from Holtstam et al. 2024 Eur. J. Mineral. 36:311-322, p. 311; ''official IMA symbol Lzc'' in
+    lazerckerite.yaml lines 11-12 from Pazout et al. 2024 Eur. J. Mineral. 36:641-656, p. 641; and ''official IMA symbol Pgtb''
+    in plumbogottlobite.yaml line 8 from Kampf et al. 2026 Eur. J. Mineral. 38:209-216, p. 209), but omit the top-level ima_symbol
+    slot (ima_symbol: Fru, ima_symbol: Ig, ima_symbol: Lzc, and ima_symbol: Pgtb immediately following material_kind: mineral),
+    unlike peer IMA mineral records such as data/records/andreybulakhite.yaml (ima_symbol: Adb), data/records/vielleaureite-ce.yaml
+    (ima_symbol: Vlr-Ce), data/records/xianhuaite-ce.yaml (ima_symbol: Xhu-Ce), and data/records/yttrotungstite-nd.yaml (ima_symbol:
+    Ytgs-Nd). In this scope, 4 record(s) (fengruiite, igelstromite, lazerckerite, plumbogottlobite) omit ima_symbol.'
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/fengruiite.yaml
@@ -9541,8 +9533,8 @@ findings:
     role: maintained_record
 - finding_id: cmmmech-cycle7-stage4-finding-0002
   issue_key: cmmmech.cycle7-stage3-sulfur-graphs.edge-desc-grammar-and-incomplete-edge-evidence-loci
-  title: Nine Cycle 7 Stage 3 sulfur-oxidizing causal graphs have subject-verb number disagreement in
-    edge descriptions and 7 omit Stage-3-added homolog loci in edges[0].evidence[0].explanation
+  title: Nine Cycle 7 Stage 3 sulfur-oxidizing causal graphs have subject-verb number disagreement in edge descriptions and
+    7 omit Stage-3-added homolog loci in edges[0].evidence[0].explanation
   severity: minor
   category: graph
   certainty: confirmed
@@ -9558,22 +9550,19 @@ findings:
   evidence_ids:
   - ev-mineral-cohort-audit
   - ev-mineral-stage3-graphs
-  description: 'Across the 9 sulfur-oxidizing causal graphs updated in Cycle 7 Stage 3 (PR #915, commit
-    ff4a9841) (1 element: copper.yaml; 3 mineral: chalcopyrite.yaml, molybdenite.yaml, skutterudite.yaml;
-    2 primary_resource: cassiterite-polymetallic-sulfide-ore.yaml, chalcopyrite-enargite-concentrate.yaml;
-    3 secondary_resource: coal-beneficiation-waste.yaml, copper-smelter-flue-dust.yaml, pyrite-roasting-cinder.yaml),
-    edges[0] (sqr_reductase -> tth_hydrolase) and edges[1] (tth_hydrolase -> <leach_system>) had their
-    pluralized node labels substituted into edge.description while retaining singular verbs (''Sqr ...
-    oxidoreductases (...) oxidizes ...'' or ''Sqr ... reductases (...) catalyzes ...'', and ''TetH/Tth
-    tetrathionate hydrolases (...) disproportionates ...'' or ''Tth tetrathionate hydrolases (...) disproportionates
-    ...''), and in 7 of those 9 records (cassiterite-polymetallic-sulfide-ore.yaml, chalcopyrite.yaml,
-    chalcopyrite-enargite-concentrate.yaml, coal-beneficiation-waste.yaml, copper.yaml, molybdenite.yaml,
-    pyrite-roasting-cinder.yaml) edges[0].evidence[0].explanation still lists only the pre-Stage-3 Sqr/TetH/Tth
-    locus subset (''(Atc_1705, Atc_1437, Y981_02650) and TetH (Atc_1595)'' or ''Sqr paralogs (AFE_1792,
-    AFE_0267) and Tth (AFE_0029)''), omitting the Stage-3-added Sulfobacillus thermosulfidooxidans DSM
-    9293 Sqr (SAMN00768000_0580), Acidithiobacillus caldus ZBY TetH (tetH / BAE30_05680), and Acidithiobacillus
-    ferrooxidans DSM 16523 Tth (DN052_12875) homologs grounded on sqr_reductase and tth_hydrolase. In
-    this scope, 3 record(s) (chalcopyrite, molybdenite, skutterudite) are affected.'
+  description: 'Across the 9 sulfur-oxidizing causal graphs updated in Cycle 7 Stage 3 (PR #915, commit ff4a9841) (1 element:
+    copper.yaml; 3 mineral: chalcopyrite.yaml, molybdenite.yaml, skutterudite.yaml; 2 primary_resource: cassiterite-polymetallic-sulfide-ore.yaml,
+    chalcopyrite-enargite-concentrate.yaml; 3 secondary_resource: coal-beneficiation-waste.yaml, copper-smelter-flue-dust.yaml,
+    pyrite-roasting-cinder.yaml), edges[0] (sqr_reductase -> tth_hydrolase) and edges[1] (tth_hydrolase -> <leach_system>)
+    had their pluralized node labels substituted into edge.description while retaining singular verbs (''Sqr ... oxidoreductases
+    (...) oxidizes ...'' or ''Sqr ... reductases (...) catalyzes ...'', and ''TetH/Tth tetrathionate hydrolases (...) disproportionates
+    ...'' or ''Tth tetrathionate hydrolases (...) disproportionates ...''), and in 7 of those 9 records (cassiterite-polymetallic-sulfide-ore.yaml,
+    chalcopyrite.yaml, chalcopyrite-enargite-concentrate.yaml, coal-beneficiation-waste.yaml, copper.yaml, molybdenite.yaml,
+    pyrite-roasting-cinder.yaml) edges[0].evidence[0].explanation still lists only the pre-Stage-3 Sqr/TetH/Tth locus subset
+    (''(Atc_1705, Atc_1437, Y981_02650) and TetH (Atc_1595)'' or ''Sqr paralogs (AFE_1792, AFE_0267) and Tth (AFE_0029)''),
+    omitting the Stage-3-added Sulfobacillus thermosulfidooxidans DSM 9293 Sqr (SAMN00768000_0580), Acidithiobacillus caldus
+    ZBY TetH (tetH / BAE30_05680), and Acidithiobacillus ferrooxidans DSM 16523 Tth (DN052_12875) homologs grounded on sqr_reductase
+    and tth_hydrolase. In this scope, 3 record(s) (chalcopyrite, molybdenite, skutterudite) are affected.'
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/chalcopyrite.yaml
@@ -9586,8 +9575,8 @@ findings:
     role: maintained_record
 - finding_id: cmmmech-cycle7-stage4-finding-0003
   issue_key: cmmmech.aspergillus-atcc1015-cexa-node.description-omits-strain-matched-g3y4n5
-  title: Aspergillus niger ATCC 1015 cexa_citrate_exporter causal-graph nodes in birnessite, lindbergite,
-    and manganese-ore omit strain-matched UniProtKB:G3Y4N5 (CEXA_ASPNA / ASPNIDRAFT_56962) from node.description
+  title: Aspergillus niger ATCC 1015 cexa_citrate_exporter causal-graph nodes in birnessite, lindbergite, and manganese-ore
+    omit strain-matched UniProtKB:G3Y4N5 (CEXA_ASPNA / ASPNIDRAFT_56962) from node.description
   severity: minor
   category: graph
   certainty: confirmed
@@ -9603,13 +9592,12 @@ findings:
   description: In data/records/birnessite.yaml (cmmmech:birnessite, causal_graphs[1] fungal_synthetic_cobalt_birnessite_transformation_graph,
     lines 316-363), data/records/lindbergite.yaml (cmmmech:lindbergite, causal_graphs[0] niger_associated_manganese_oxalate_formation_graph,
     lines 151-198), and data/records/manganese-ore.yaml (cmmmech:manganese-ore, causal_graphs[0] fungal_nkamouna_laterite_transformation_graph,
-    lines 136-183), node cexa_citrate_exporter is grounded to both the strain-matched Aspergillus niger
-    ATCC 1015 reference-proteome entry UniProtKB:G3Y4N5 (CEXA_ASPNA, locus ASPNIDRAFT_56962) and the species-level
-    reviewed entry UniProtKB:A0A254TZW7 (CEXA_ASPNG), but cexa_citrate_exporter.description still reads
-    'Reviewed Aspergillus niger plasma-membrane citrate exporter (UniProtKB:A0A254TZW7) representing the
-    fungal organic-acid secretion machinery.', naming only UniProtKB:A0A254TZW7 and omitting the strain-matched
-    ATCC 1015 reference-proteome entry UniProtKB:G3Y4N5 (CEXA_ASPNA / ASPNIDRAFT_56962). In this scope,
-    2 record(s) (birnessite, lindbergite) are affected.
+    lines 136-183), node cexa_citrate_exporter is grounded to both the strain-matched Aspergillus niger ATCC 1015 reference-proteome
+    entry UniProtKB:G3Y4N5 (CEXA_ASPNA, locus ASPNIDRAFT_56962) and the species-level reviewed entry UniProtKB:A0A254TZW7
+    (CEXA_ASPNG), but cexa_citrate_exporter.description still reads 'Reviewed Aspergillus niger plasma-membrane citrate exporter
+    (UniProtKB:A0A254TZW7) representing the fungal organic-acid secretion machinery.', naming only UniProtKB:A0A254TZW7 and
+    omitting the strain-matched ATCC 1015 reference-proteome entry UniProtKB:G3Y4N5 (CEXA_ASPNA / ASPNIDRAFT_56962). In this
+    scope, 2 record(s) (birnessite, lindbergite) are affected.
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/birnessite.yaml
@@ -9626,9 +9614,9 @@ actions:
   - cmmmech:igelstromite
   - cmmmech:lazerckerite
   - cmmmech:plumbogottlobite
-  description: 'Add top-level ima_symbol: Fru (fengruiite.yaml), ima_symbol: Ig (igelstromite.yaml), ima_symbol:
-    Lzc (lazerckerite.yaml), and ima_symbol: Pgtb (plumbogottlobite.yaml) in canonical key order (immediately
-    following material_kind: mineral) during Stage 5 grouped remediation with canonical history provenance.'
+  description: 'Add top-level ima_symbol: Fru (fengruiite.yaml), ima_symbol: Ig (igelstromite.yaml), ima_symbol: Lzc (lazerckerite.yaml),
+    and ima_symbol: Pgtb (plumbogottlobite.yaml) in canonical key order (immediately following material_kind: mineral) during
+    Stage 5 grouped remediation with canonical history provenance.'
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/fengruiite.yaml
@@ -9643,8 +9631,8 @@ actions:
     path: data/records/plumbogottlobite.yaml
     role: maintained_record
   acceptance_checks:
-  - fengruiite.yaml, igelstromite.yaml, lazerckerite.yaml, and plumbogottlobite.yaml carry top-level ima_symbol
-    in CANONICAL_RECORD_KEYS order.
+  - fengruiite.yaml, igelstromite.yaml, lazerckerite.yaml, and plumbogottlobite.yaml carry top-level ima_symbol in CANONICAL_RECORD_KEYS
+    order.
   - Matching EDIT history sidecars exist in history/records/ and pass just check.
 - action_id: act-normalize-stage3-sulfur-graph-edge-descriptions-and-explanations
   finding_ids:
@@ -9653,11 +9641,10 @@ actions:
   - cmmmech:chalcopyrite
   - cmmmech:molybdenite
   - cmmmech:skutterudite
-  description: Update causal_graphs[0].edges[0].description and causal_graphs[0].edges[1].description
-    across the 9 Cycle 7 Stage 3 sulfur-oxidizing records so plural subjects take plural verbs ('oxidize'/'catalyze'
-    and 'disproportionate'), and update causal_graphs[0].edges[0].evidence[0].explanation in the 7 affected
-    records to list all grounded Sqr and TetH/Tth homolog loci during Stage 5 grouped remediation with
-    canonical history provenance.
+  description: Update causal_graphs[0].edges[0].description and causal_graphs[0].edges[1].description across the 9 Cycle 7
+    Stage 3 sulfur-oxidizing records so plural subjects take plural verbs ('oxidize'/'catalyze' and 'disproportionate'), and
+    update causal_graphs[0].edges[0].evidence[0].explanation in the 7 affected records to list all grounded Sqr and TetH/Tth
+    homolog loci during Stage 5 grouped remediation with canonical history provenance.
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/chalcopyrite.yaml
@@ -9669,8 +9656,8 @@ actions:
     path: data/records/skutterudite.yaml
     role: maintained_record
   acceptance_checks:
-  - All 9 records use grammatical plural verbs in causal_graphs[0].edges[0..1].description and list all
-    grounded Sqr and TetH/Tth loci in edges[0].evidence[0].explanation.
+  - All 9 records use grammatical plural verbs in causal_graphs[0].edges[0..1].description and list all grounded Sqr and TetH/Tth
+    loci in edges[0].evidence[0].explanation.
   - Matching EDIT history sidecars exist in history/records/ and pass just check.
 - action_id: act-include-g3y4n5-in-aspergillus-atcc1015-cexa-node-descriptions
   finding_ids:
@@ -9678,11 +9665,10 @@ actions:
   target_ids:
   - cmmmech:birnessite
   - cmmmech:lindbergite
-  description: Update cexa_citrate_exporter.description in birnessite.yaml (causal_graphs[1]), lindbergite.yaml
-    (causal_graphs[0]), and manganese-ore.yaml (causal_graphs[0]) to explicitly cite both the strain-matched
-    Aspergillus niger ATCC 1015 reference-proteome entry UniProtKB:G3Y4N5 (CEXA_ASPNA / ASPNIDRAFT_56962)
-    and the species-level reviewed entry UniProtKB:A0A254TZW7 (CEXA_ASPNG) during Stage 5 grouped remediation
-    with canonical history provenance.
+  description: Update cexa_citrate_exporter.description in birnessite.yaml (causal_graphs[1]), lindbergite.yaml (causal_graphs[0]),
+    and manganese-ore.yaml (causal_graphs[0]) to explicitly cite both the strain-matched Aspergillus niger ATCC 1015 reference-proteome
+    entry UniProtKB:G3Y4N5 (CEXA_ASPNA / ASPNIDRAFT_56962) and the species-level reviewed entry UniProtKB:A0A254TZW7 (CEXA_ASPNG)
+    during Stage 5 grouped remediation with canonical history provenance.
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/birnessite.yaml
@@ -9691,8 +9677,8 @@ actions:
     path: data/records/lindbergite.yaml
     role: maintained_record
   acceptance_checks:
-  - cexa_citrate_exporter.description in birnessite.yaml, lindbergite.yaml, and manganese-ore.yaml names
-    both UniProtKB:G3Y4N5 (ASPNIDRAFT_56962) and UniProtKB:A0A254TZW7.
+  - cexa_citrate_exporter.description in birnessite.yaml, lindbergite.yaml, and manganese-ore.yaml names both UniProtKB:G3Y4N5
+    (ASPNIDRAFT_56962) and UniProtKB:A0A254TZW7.
   - Matching EDIT history sidecars exist in history/records/ and pass just check.
 evidence:
 - evidence_id: ev-mineral-cohort-audit
@@ -9705,41 +9691,38 @@ evidence:
 - evidence_id: ev-round125-ima-symbols
   kind: primary_source
   reference: DOI:10.5194/ejm-38-519-2026; DOI:10.5194/ejm-36-311-2024; DOI:10.5194/ejm-36-641-2024; DOI:10.5194/ejm-38-209-2026
-  locator: Tian et al. 2026 p. 519 (Fru); Holtstam et al. 2024 p. 311 (Ig); Pazout et al. 2024 p. 641
-    (Lzc); Kampf et al. 2026 p. 209 (Pgtb)
+  locator: Tian et al. 2026 p. 519 (Fru); Holtstam et al. 2024 p. 311 (Ig); Pazout et al. 2024 p. 641 (Lzc); Kampf et al.
+    2026 p. 209 (Pgtb)
   accessed_at: '2026-11-04T12:45:01Z'
   support: supports
-  summary: Primary descriptions and IMA-CNMNC September 2026 catalog establish symbols Fru, Ig, Lzc, and
-    Pgtb, which are stated in record descriptions but omitted from the top-level ima_symbol slot.
+  summary: Primary descriptions and IMA-CNMNC September 2026 catalog establish symbols Fru, Ig, Lzc, and Pgtb, which are stated
+    in record descriptions but omitted from the top-level ima_symbol slot.
 - evidence_id: ev-mineral-stage3-graphs
   kind: record_content
   reference: data/records/chalcopyrite.yaml; data/records/molybdenite.yaml; data/records/skutterudite.yaml
   locator: causal_graphs[0].edges[0..1]
   accessed_at: '2026-11-04T12:45:01Z'
   support: supports
-  summary: Inspected causal_graphs[0].edges[0..1] in chalcopyrite.yaml, molybdenite.yaml, and skutterudite.yaml,
-    confirming plural subject labels paired with singular verbs in edge.description and pre-Stage-3 locus
-    lists in edges[0].evidence[0].explanation on chalcopyrite.yaml and molybdenite.yaml.
+  summary: Inspected causal_graphs[0].edges[0..1] in chalcopyrite.yaml, molybdenite.yaml, and skutterudite.yaml, confirming
+    plural subject labels paired with singular verbs in edge.description and pre-Stage-3 locus lists in edges[0].evidence[0].explanation
+    on chalcopyrite.yaml and molybdenite.yaml.
 - evidence_id: ev-mineral-cexa-nodes
   kind: record_content
   reference: data/records/birnessite.yaml; data/records/lindbergite.yaml
   locator: birnessite.yaml lines 316-363; lindbergite.yaml lines 151-198
   accessed_at: '2026-11-04T12:45:01Z'
   support: supports
-  summary: Inspected cexa_citrate_exporter nodes in birnessite.yaml and lindbergite.yaml, confirming grounding
-    to both UniProtKB:G3Y4N5 (ATCC 1015) and UniProtKB:A0A254TZW7 while description names only UniProtKB:A0A254TZW7.
+  summary: Inspected cexa_citrate_exporter nodes in birnessite.yaml and lindbergite.yaml, confirming grounding to both UniProtKB:G3Y4N5
+    (ATCC 1015) and UniProtKB:A0A254TZW7 while description names only UniProtKB:A0A254TZW7.
 limitations:
-- '137 of 426 IMA mineral species records currently lack curated microbial mechanisms: 137 mineral species
-  records (including the 4 Round 125 critical-element mineral species fengruiite, igelstromite, lazerckerite,
-  and plumbogottlobite added in Cycle 7 Stage 1) were established from IMA-CNMNC mineral catalogs and
-  type-locality descriptions and await primary experimental microbial extraction, transformation, or biomineralization
-  evidence. (289/426 mineral records have curated microbial mechanisms; 137/426 are IMA identity records
-  only.)'
-- 'Three mineral causal graphs contain source-limited UNGROUNDED GENE_OR_PROTEIN nodes: Thermococcus acidaminovorans
-  Ax17 (cmmmech:ferrihydrite and cmmmech:magnetite) and unsequenced isolate Pseudomonas sp. OX1 (cmmmech:lindbergite
-  pseudomonas_sp_ox1_mn_oxalate_biomineralization_graph) lack strain-resolved enzyme sequences in UniProtKB.
-  (58/60 mineral records with causal_graphs have GROUNDED GENE_OR_PROTEIN nodes; 3 mineral causal graphs
-  retain explicitly UNGROUNDED nodes.)'
+- '142 of 427 IMA mineral species records currently lack curated microbial mechanisms: 142 mineral species records (including
+  5 Round 125 critical-element mineral species added in Cycle 7 Stage 1) were established from IMA-CNMNC mineral catalogs
+  and type-locality descriptions and await primary experimental microbial extraction, transformation, or biomineralization
+  evidence (285/427 mineral records have curated microbial mechanisms; 142/427 are IMA identity records only).'
+- '3 GENE_OR_PROTEIN nodes across 3 mineral causal graphs are explicitly marked UNGROUNDED: cmmmech:ferrihydrite and cmmmech:magnetite
+  (ax17_ferrihydrite_transformation_graph node ax17_extracellular_fe3_reductase_system in unsequenced Shewanella sp. AX-17)
+  and cmmmech:lindbergite (himantioides_associated_lindbergite_formation_graph node serpula_himantioides_acid_pathway in Serpula
+  himantioides) lack strain- or enzyme-resolved sequences in UniProtKB.'
 notes:
 - Cohort covers 100% (427/427) of mineral records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 boundary_decisions:
@@ -10172,8 +10155,7 @@ boundary_decisions:
   - cmmmech:zippeite
   - cmmmech:zircon
   - cmmmech:zirconolite
-  rationale: All 427 records in this cohort denote distinct, non-synonymous entities matching data/records/*.yaml
-    where material_kind == 'mineral' at ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c with no duplicate IDs,
-    names, or external identifier collisions.
+  rationale: All 427 records in this cohort denote distinct, non-synonymous entities matching data/records/*.yaml where material_kind
+    == 'mineral' at ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c with no duplicate IDs, names, or external identifier collisions.
   evidence_ids:
   - ev-mineral-cohort-audit

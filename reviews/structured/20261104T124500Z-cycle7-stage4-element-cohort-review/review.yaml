@@ -9,21 +9,17 @@ skill: .claude/skills/review-yaml-category/SKILL.md
 completion: completed
 verdict: pass_with_limitations
 scientific_review: true
-summary: 'Reviewed all 99 element records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c,
-  including the Cycle 7 Stage 2 (PR #914, commit 4d80ff7b) causal-graph and UniProtKB grounding addition
-  on cmmmech:copper (acidophile_chalcopyrite_copper_release_graph) and the Cycle 7 Stage 3 (PR #915, commit
-  ff4a9841) UniProtKB grounding expansion on cmmmech:copper (adding Sulfobacillus thermosulfidooxidans
-  Cutipayun UniProtKB:A0A1W1W805 SAMN00768000_0580 on sqr_reductase and Acidithiobacillus caldus MTH-04
-  UniProtKB:A4ZV25 tetH / BAE30_05680 on tth_hydrolase). All 99 element records carry verified CHEBI chemical
-  identities and dated, jurisdiction-attributed criticality_assessments (with cmmmech:gold, cmmmech:lead,
-  cmmmech:mercury, cmmmech:molybdenum, cmmmech:rhenium, cmmmech:selenium, cmmmech:silver, cmmmech:sodium,
-  cmmmech:sulfur, cmmmech:tellurium, cmmmech:thallium, and cmmmech:uranium documenting explicit non-listed
-  or screening exclusions). 56/99 element records contain primary-source-supported microbial mechanisms
-  (87 mechanisms total), 26/99 contain causal_graphs (29 graphs), and 25/26 carry live-verified UniProtKB
-  protein_examples across 37 unique accessions (with cmmmech:iron, cmmmech:manganese, and cmmmech:praseodymium
-  retaining source-limited UNGROUNDED GENE_OR_PROTEIN nodes). Identified 1 minor graph edge-description
-  grammar and locus-completeness finding (cmmmech-cycle7-stage4-finding-0002 on cmmmech:copper) for Stage
-  5 grouped remediation.'
+summary: 'Reviewed all 66 element records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c, including
+  the Cycle 7 Stage 2 (PR #914, commit 8bf82c8d) causal-graph addition on cmmmech:copper (acidophile_chalcopyrite_copper_release_graph)
+  and the Cycle 7 Stage 3 (PR #915, commit ff4a9841) multi-strain Sqr/TetH UniProtKB grounding expansion on cmmmech:copper
+  (adding Sulfobacillus thermosulfidooxidans DSM 9293 UniProtKB:A0A1W1W805 SAMN00768000_0580 and Acidithiobacillus caldus
+  ZBY UniProtKB:A4ZV25 tetH / BAE30_05680), as well as verifying resolution of Cycle 6 Stage 4 finding 0002 on arsenic.yaml
+  and gallium.yaml (PR #904). Every element record carries a verified CHEBI atom identifier, dated government/intergovernmental
+  criticality assessments (64/66 with criticality; cmmmech:gold and cmmmech:thallium lack listed criticality), and primary-source-backed
+  microbial mechanisms across 63/66 element records (66 mechanisms total), including 26/66 with multi-step causal_graphs (27
+  graphs, 51 GENE_OR_PROTEIN nodes: 48 GROUNDED and 3 UNGROUNDED) and 25/66 with live-verified UniProtKB protein_examples
+  (40 unique accessions). Identified 1 minor graph edge description/explanation finding (cmmmech-cycle7-stage4-finding-0002
+  in 1 element record: cmmmech:copper) for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle7-stage4-cohort-reviewer
   kind: agent
@@ -1313,8 +1309,8 @@ checks:
   - cmmmech:zirconium
   evidence_ids:
   - ev-element-cohort-audit
-  summary: All 66 records in this cohort pass LinkML structural, semantic, and canonical top-level key-order
-    validation with 0 errors and 0 warnings.
+  summary: All 66 records in this cohort pass LinkML structural, semantic, and canonical top-level key-order validation with
+    0 errors and 0 warnings.
 - check_id: just-verify-history-elements
   name: just verify-history (elements)
   status: passed
@@ -1391,8 +1387,7 @@ checks:
   - cmmmech:zirconium
   evidence_ids:
   - ev-element-cohort-audit
-  summary: All 66 records in this cohort have intact append-only history sidecars and matching curation_history
-    metadata.
+  summary: All 66 records in this cohort have intact append-only history sidecars and matching curation_history metadata.
 assessments:
 - assessment_id: assess-element-identity-and-criticality
   topic: CHEBI atom identity, boundary discipline, and jurisdiction/edition-scoped criticality
@@ -1467,15 +1462,10 @@ assessments:
   - cmmmech:zirconium
   evidence_ids:
   - ev-element-cohort-audit
-  summary: 56/99 element records contain primary-source-supported microbial mechanisms (87 mechanisms
-    total), 26/99 contain causal_graphs (29 graphs), and 25/26 carry verified UniProtKB protein_examples
-    across 37 unique accessions. In cmmmech:copper (acidophile_chalcopyrite_copper_release_graph), edges[0..1].description
-    pair plural node labels with singular verbs ('oxidizes' and 'disproportionates') and edges[0].evidence[0].explanation
-    omits the Stage-3-added S. thermosulfidooxidans Sqr locus SAMN00768000_0580 (UniProtKB:A0A1W1W805)
-    and A. caldus TetH locus BAE30_05680 (UniProtKB:A4ZV25).
+  summary: All 66 element records carry canonical CHEBI atom CURIEs and labels with 0 cross-corpus label conflicts and dated
+    criticality lists (64/66 with criticality; gold and thallium without criticality).
 - assessment_id: assess-element-mechanisms-and-grounding
-  topic: Microbial extraction/transformation/recovery mechanisms, causal graphs, and UniProtKB protein
-    examples
+  topic: Microbial extraction/transformation/recovery mechanisms, causal graphs, and UniProtKB protein examples
   area: evidence
   outcome: supported
   target_ids:
@@ -1548,15 +1538,14 @@ assessments:
   evidence_ids:
   - ev-element-cohort-audit
   - ev-copper-stage3-graph
-  summary: 63/66 element records contain primary-source-backed microbial mechanisms (66 mechanisms), 26/66
-    contain causal_graphs (27 graphs), and 25/66 carry live-verified UniProtKB protein_examples (40 unique
-    accessions). In cmmmech:copper, edges[0..1].description and edges[0].evidence[0].explanation require
-    minor synchronization after Stage 3 expansion.
+  summary: 63/66 element records contain primary-source-backed microbial mechanisms (66 mechanisms), 26/66 contain causal_graphs
+    (27 graphs), and 25/66 carry live-verified UniProtKB protein_examples (40 unique accessions). In cmmmech:copper, edges[0..1].description
+    and edges[0].evidence[0].explanation require minor synchronization after Stage 3 expansion.
 findings:
 - finding_id: cmmmech-cycle7-stage4-finding-0002
   issue_key: cmmmech.cycle7-stage3-sulfur-graphs.edge-desc-grammar-and-incomplete-edge-evidence-loci
-  title: Nine Cycle 7 Stage 3 sulfur-oxidizing causal graphs have subject-verb number disagreement in
-    edge descriptions and 7 omit Stage-3-added homolog loci in edges[0].evidence[0].explanation
+  title: Nine Cycle 7 Stage 3 sulfur-oxidizing causal graphs have subject-verb number disagreement in edge descriptions and
+    7 omit Stage-3-added homolog loci in edges[0].evidence[0].explanation
   severity: minor
   category: graph
   certainty: confirmed
@@ -1570,22 +1559,19 @@ findings:
   evidence_ids:
   - ev-element-cohort-audit
   - ev-copper-stage3-graph
-  description: 'Across the 9 sulfur-oxidizing causal graphs updated in Cycle 7 Stage 3 (PR #915, commit
-    ff4a9841) (1 element: copper.yaml; 3 mineral: chalcopyrite.yaml, molybdenite.yaml, skutterudite.yaml;
-    2 primary_resource: cassiterite-polymetallic-sulfide-ore.yaml, chalcopyrite-enargite-concentrate.yaml;
-    3 secondary_resource: coal-beneficiation-waste.yaml, copper-smelter-flue-dust.yaml, pyrite-roasting-cinder.yaml),
-    edges[0] (sqr_reductase -> tth_hydrolase) and edges[1] (tth_hydrolase -> <leach_system>) had their
-    pluralized node labels substituted into edge.description while retaining singular verbs (''Sqr ...
-    oxidoreductases (...) oxidizes ...'' or ''Sqr ... reductases (...) catalyzes ...'', and ''TetH/Tth
-    tetrathionate hydrolases (...) disproportionates ...'' or ''Tth tetrathionate hydrolases (...) disproportionates
-    ...''), and in 7 of those 9 records (cassiterite-polymetallic-sulfide-ore.yaml, chalcopyrite.yaml,
-    chalcopyrite-enargite-concentrate.yaml, coal-beneficiation-waste.yaml, copper.yaml, molybdenite.yaml,
-    pyrite-roasting-cinder.yaml) edges[0].evidence[0].explanation still lists only the pre-Stage-3 Sqr/TetH/Tth
-    locus subset (''(Atc_1705, Atc_1437, Y981_02650) and TetH (Atc_1595)'' or ''Sqr paralogs (AFE_1792,
-    AFE_0267) and Tth (AFE_0029)''), omitting the Stage-3-added Sulfobacillus thermosulfidooxidans DSM
-    9293 Sqr (SAMN00768000_0580), Acidithiobacillus caldus ZBY TetH (tetH / BAE30_05680), and Acidithiobacillus
-    ferrooxidans DSM 16523 Tth (DN052_12875) homologs grounded on sqr_reductase and tth_hydrolase. In
-    this scope, 1 record(s) (copper) are affected.'
+  description: 'Across the 9 sulfur-oxidizing causal graphs updated in Cycle 7 Stage 3 (PR #915, commit ff4a9841) (1 element:
+    copper.yaml; 3 mineral: chalcopyrite.yaml, molybdenite.yaml, skutterudite.yaml; 2 primary_resource: cassiterite-polymetallic-sulfide-ore.yaml,
+    chalcopyrite-enargite-concentrate.yaml; 3 secondary_resource: coal-beneficiation-waste.yaml, copper-smelter-flue-dust.yaml,
+    pyrite-roasting-cinder.yaml), edges[0] (sqr_reductase -> tth_hydrolase) and edges[1] (tth_hydrolase -> <leach_system>)
+    had their pluralized node labels substituted into edge.description while retaining singular verbs (''Sqr ... oxidoreductases
+    (...) oxidizes ...'' or ''Sqr ... reductases (...) catalyzes ...'', and ''TetH/Tth tetrathionate hydrolases (...) disproportionates
+    ...'' or ''Tth tetrathionate hydrolases (...) disproportionates ...''), and in 7 of those 9 records (cassiterite-polymetallic-sulfide-ore.yaml,
+    chalcopyrite.yaml, chalcopyrite-enargite-concentrate.yaml, coal-beneficiation-waste.yaml, copper.yaml, molybdenite.yaml,
+    pyrite-roasting-cinder.yaml) edges[0].evidence[0].explanation still lists only the pre-Stage-3 Sqr/TetH/Tth locus subset
+    (''(Atc_1705, Atc_1437, Y981_02650) and TetH (Atc_1595)'' or ''Sqr paralogs (AFE_1792, AFE_0267) and Tth (AFE_0029)''),
+    omitting the Stage-3-added Sulfobacillus thermosulfidooxidans DSM 9293 Sqr (SAMN00768000_0580), Acidithiobacillus caldus
+    ZBY TetH (tetH / BAE30_05680), and Acidithiobacillus ferrooxidans DSM 16523 Tth (DN052_12875) homologs grounded on sqr_reductase
+    and tth_hydrolase. In this scope, 1 record(s) (copper) are affected.'
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/copper.yaml
@@ -1596,18 +1582,17 @@ actions:
   - cmmmech-cycle7-stage4-finding-0002
   target_ids:
   - cmmmech:copper
-  description: Update causal_graphs[0].edges[0].description and causal_graphs[0].edges[1].description
-    across the 9 Cycle 7 Stage 3 sulfur-oxidizing records so plural subjects take plural verbs ('oxidize'/'catalyze'
-    and 'disproportionate'), and update causal_graphs[0].edges[0].evidence[0].explanation in the 7 affected
-    records to list all grounded Sqr and TetH/Tth homolog loci during Stage 5 grouped remediation with
-    canonical history provenance.
+  description: Update causal_graphs[0].edges[0].description and causal_graphs[0].edges[1].description across the 9 Cycle 7
+    Stage 3 sulfur-oxidizing records so plural subjects take plural verbs ('oxidize'/'catalyze' and 'disproportionate'), and
+    update causal_graphs[0].edges[0].evidence[0].explanation in the 7 affected records to list all grounded Sqr and TetH/Tth
+    homolog loci during Stage 5 grouped remediation with canonical history provenance.
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/copper.yaml
     role: maintained_record
   acceptance_checks:
-  - All 9 records use grammatical plural verbs in causal_graphs[0].edges[0..1].description and list all
-    grounded Sqr and TetH/Tth loci in edges[0].evidence[0].explanation.
+  - All 9 records use grammatical plural verbs in causal_graphs[0].edges[0..1].description and list all grounded Sqr and TetH/Tth
+    loci in edges[0].evidence[0].explanation.
   - Matching EDIT history sidecars exist in history/records/ and pass just check.
 evidence:
 - evidence_id: ev-element-cohort-audit
@@ -1623,20 +1608,16 @@ evidence:
   locator: causal_graphs[0].edges[0..1] (lines 389-424)
   accessed_at: '2026-11-04T12:45:00Z'
   support: supports
-  summary: In data/records/copper.yaml, edges[0].description uses singular 'oxidizes', edges[1].description
-    uses singular 'disproportionates', and edges[0].evidence[0].explanation lists only (Atc_1705, Atc_1437,
-    Y981_02650) and TetH (Atc_1595), omitting SAMN00768000_0580 and BAE30_05680.
+  summary: In data/records/copper.yaml, edges[0].description uses singular 'oxidizes', edges[1].description uses singular
+    'disproportionates', and edges[0].evidence[0].explanation lists only (Atc_1705, Atc_1437, Y981_02650) and TetH (Atc_1595),
+    omitting SAMN00768000_0580 and BAE30_05680.
 limitations:
-- 'Forty-three element records currently lack curated microbial mechanisms: 43 element records (predominantly
-  noble gases, heavy actinides, synthetic/short-lived elements, and halogens/alkali metals without accepted
-  mineral-bioleaching or biomineralization studies) carry verified ChEBI identities and dated criticality
-  assessments only. (56/99 element records have curated microbial mechanisms; 43/99 document identity
-  and criticality status only.)'
-- 'Three element causal graphs contain source-limited UNGROUNDED GENE_OR_PROTEIN nodes: Thermococcus acidaminovorans
-  Ax17 (cmmmech:iron), mixed fungal/bacterial organic-acid leaching isolates (cmmmech:manganese), and
-  unsequenced isolate Acidovorax sp. LW1 (cmmmech:praseodymium) lack strain-resolved enzyme sequences
-  in UniProtKB. (25/26 element records with causal_graphs have GROUNDED GENE_OR_PROTEIN nodes; 3 element
-  causal graphs retain explicitly UNGROUNDED nodes.)'
+- 3 of 66 element records (cmmmech:beryllium, cmmmech:helium, cmmmech:promethium) currently lack primary-source microbial
+  extraction, transformation, or recovery mechanisms in the published literature.
+- '3 GENE_OR_PROTEIN nodes across 3 element causal graphs are explicitly marked UNGROUNDED: cmmmech:iron (ax17_ferrihydrite_transformation_graph
+  node ax17_extracellular_fe3_reductase_system in unsequenced Shewanella sp. AX-17), cmmmech:manganese (gb1_mnxg_mcoa_mopa_manganese_oxidation_graph
+  node mopa_heme_peroxidase in Pseudomonas putida GB-1), and cmmmech:praseodymium (melba_mex_lanm_pr_la_separation_graph node
+  melba_lanm_o36 for synthetic engineered lanmodulin variant Melba-LanM(O36)).'
 notes:
 - Cohort covers 100% (66/66) of element records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 boundary_decisions:
@@ -1708,7 +1689,7 @@ boundary_decisions:
   - cmmmech:yttrium
   - cmmmech:zinc
   - cmmmech:zirconium
-  rationale: All 66 records in this cohort denote distinct chemical elements matching data/records/*.yaml
-    where material_kind == 'element' at ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+  rationale: All 66 records in this cohort denote distinct chemical elements matching data/records/*.yaml where material_kind
+    == 'element' at ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
   evidence_ids:
   - ev-element-cohort-audit

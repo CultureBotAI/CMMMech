@@ -10,17 +10,16 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 summary: 'Reviewed all 111 secondary_resource records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c,
-  including the 4 Cycle 7 Stage 2 (PR #914, commit 4d80ff7b) secondary_resource causal-graph and UniProtKB
-  grounding additions (cmmmech:coal-beneficiation-waste, cmmmech:copper-smelter-flue-dust, cmmmech:ponded-coal-ash,
-  cmmmech:pyrite-roasting-cinder) and the 4 Cycle 7 Stage 3 (PR #915, commit ff4a9841) UniProtKB grounding
-  expansions (cmmmech:coal-beneficiation-waste, cmmmech:copper-smelter-flue-dust, cmmmech:pyrite-roasting-cinder,
-  cmmmech:waste-x-ray-films). 108/111 secondary_resource records contain primary-source-backed mechanisms
-  (107/111 with microbial: true mechanisms and 1/111, cmmmech:ferrochrome-slag, with an abiotic microbial:
-  false mechanism hydrochloric_acid_magnesium_extraction; 145 mechanisms total), and 41/111 contain multi-step
-  causal_graphs (44 graphs) and live-verified UniProtKB protein_examples across 30 unique accessions.
-  Identified 1 minor graph edge-description grammar and locus-completeness finding (cmmmech-cycle7-stage4-finding-0002
-  across cmmmech:coal-beneficiation-waste, cmmmech:copper-smelter-flue-dust, and cmmmech:pyrite-roasting-cinder)
-  for Stage 5 grouped remediation.'
+  including the 4 Cycle 7 Stage 2 (PR #914, commit 8bf82c8d) causal-graph and UniProtKB grounding additions (cmmmech:coal-beneficiation-waste,
+  cmmmech:copper-smelter-flue-dust, cmmmech:ponded-coal-ash, cmmmech:pyrite-roasting-cinder), the 4 Cycle 7 Stage 3 (PR #915,
+  commit ff4a9841) multi-strain/paralog UniProtKB expansions (cmmmech:coal-beneficiation-waste, cmmmech:copper-smelter-flue-dust,
+  cmmmech:pyrite-roasting-cinder, cmmmech:waste-x-ray-films), and verified resolution of Cycle 6 Stage 4 findings 0001 and
+  0002 across 15 secondary_resource records (PR #904). 108/111 secondary_resource records contain primary-source-supported
+  mechanisms (145 mechanisms total: 107 records with microbial mechanisms and 1 record, cmmmech:copper-anode-slime, with an
+  abiotic chloride-leaching comparator mechanism), and 41/111 contain causal_graphs (44 graphs, 84 GENE_OR_PROTEIN nodes,
+  all 84 GROUNDED) and live-verified UniProtKB protein_examples across 30 unique accessions. Identified 1 minor graph edge
+  description/explanation finding (cmmmech-cycle7-stage4-finding-0002 in 3 secondary_resource records: coal-beneficiation-waste,
+  copper-smelter-flue-dust, pyrite-roasting-cinder) for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle7-stage4-cohort-reviewer
   kind: agent
@@ -2165,8 +2164,8 @@ checks:
   - cmmmech:zinc-purification-hot-filter-cake
   evidence_ids:
   - ev-secondary-resource-cohort-audit
-  summary: All 111 records in this cohort pass LinkML structural, semantic, and canonical top-level key-order
-    validation with 0 errors and 0 warnings.
+  summary: All 111 records in this cohort pass LinkML structural, semantic, and canonical top-level key-order validation with
+    0 errors and 0 warnings.
 - check_id: just-verify-history-secondary-resources
   name: just verify-history (secondary-resources)
   status: passed
@@ -2288,12 +2287,11 @@ checks:
   - cmmmech:zinc-purification-hot-filter-cake
   evidence_ids:
   - ev-secondary-resource-cohort-audit
-  summary: All 111 records in this cohort have intact append-only history sidecars and matching curation_history
-    metadata.
+  summary: All 111 records in this cohort have intact append-only history sidecars and matching curation_history metadata.
 assessments:
 - assessment_id: assess-secondary-resource-identity-and-mechanisms
-  topic: Anthropogenic waste/tailings/slag/spent-catalyst identity, microbial bioleaching mechanisms,
-    causal graphs, and UniProtKB grounding
+  topic: Anthropogenic waste/tailings/slag/spent-catalyst identity, microbial bioleaching mechanisms, causal graphs, and UniProtKB
+    grounding
   area: evidence
   outcome: supported
   target_ids:
@@ -2411,19 +2409,13 @@ assessments:
   evidence_ids:
   - ev-secondary-resource-cohort-audit
   - ev-sr-stage3-graphs
-  summary: '108/111 secondary_resource records contain primary-source-backed mechanisms (107/111 with
-    microbial: true mechanisms and 1/111, cmmmech:ferrochrome-slag, with an abiotic microbial: false mechanism
-    hydrochloric_acid_magnesium_extraction; 145 mechanisms total) and 41/111 contain grounded causal_graphs
-    (44 graphs) and live-verified UniProtKB protein_examples across 30 unique accessions. In cmmmech:coal-beneficiation-waste,
-    cmmmech:copper-smelter-flue-dust, and cmmmech:pyrite-roasting-cinder, causal_graphs[0].edges[0..1].description
-    pair plural node labels with singular verbs (''oxidizes''/''catalyzes'' and ''disproportionates'')
-    and edges[0].evidence[0].explanation in coal-beneficiation-waste and pyrite-roasting-cinder omits
-    Stage-3-added UniProtKB homolog loci.'
+  summary: 108/111 secondary_resource records contain primary-source-supported mechanisms (145 total) and 41/111 contain grounded
+    causal_graphs (44 graphs) across 30 unique UniProtKB accessions.
 findings:
 - finding_id: cmmmech-cycle7-stage4-finding-0002
   issue_key: cmmmech.cycle7-stage3-sulfur-graphs.edge-desc-grammar-and-incomplete-edge-evidence-loci
-  title: Nine Cycle 7 Stage 3 sulfur-oxidizing causal graphs have subject-verb number disagreement in
-    edge descriptions and 7 omit Stage-3-added homolog loci in edges[0].evidence[0].explanation
+  title: Nine Cycle 7 Stage 3 sulfur-oxidizing causal graphs have subject-verb number disagreement in edge descriptions and
+    7 omit Stage-3-added homolog loci in edges[0].evidence[0].explanation
   severity: minor
   category: graph
   certainty: confirmed
@@ -2439,22 +2431,19 @@ findings:
   evidence_ids:
   - ev-secondary-resource-cohort-audit
   - ev-sr-stage3-graphs
-  description: 'Across the 9 sulfur-oxidizing causal graphs updated in Cycle 7 Stage 3 (PR #915, commit
-    ff4a9841) (1 element: copper.yaml; 3 mineral: chalcopyrite.yaml, molybdenite.yaml, skutterudite.yaml;
-    2 primary_resource: cassiterite-polymetallic-sulfide-ore.yaml, chalcopyrite-enargite-concentrate.yaml;
-    3 secondary_resource: coal-beneficiation-waste.yaml, copper-smelter-flue-dust.yaml, pyrite-roasting-cinder.yaml),
-    edges[0] (sqr_reductase -> tth_hydrolase) and edges[1] (tth_hydrolase -> <leach_system>) had their
-    pluralized node labels substituted into edge.description while retaining singular verbs (''Sqr ...
-    oxidoreductases (...) oxidizes ...'' or ''Sqr ... reductases (...) catalyzes ...'', and ''TetH/Tth
-    tetrathionate hydrolases (...) disproportionates ...'' or ''Tth tetrathionate hydrolases (...) disproportionates
-    ...''), and in 7 of those 9 records (cassiterite-polymetallic-sulfide-ore.yaml, chalcopyrite.yaml,
-    chalcopyrite-enargite-concentrate.yaml, coal-beneficiation-waste.yaml, copper.yaml, molybdenite.yaml,
-    pyrite-roasting-cinder.yaml) edges[0].evidence[0].explanation still lists only the pre-Stage-3 Sqr/TetH/Tth
-    locus subset (''(Atc_1705, Atc_1437, Y981_02650) and TetH (Atc_1595)'' or ''Sqr paralogs (AFE_1792,
-    AFE_0267) and Tth (AFE_0029)''), omitting the Stage-3-added Sulfobacillus thermosulfidooxidans DSM
-    9293 Sqr (SAMN00768000_0580), Acidithiobacillus caldus ZBY TetH (tetH / BAE30_05680), and Acidithiobacillus
-    ferrooxidans DSM 16523 Tth (DN052_12875) homologs grounded on sqr_reductase and tth_hydrolase. In
-    this scope, 3 record(s) (coal-beneficiation-waste, copper-smelter-flue-dust, pyrite-roasting-cinder)
+  description: 'Across the 9 sulfur-oxidizing causal graphs updated in Cycle 7 Stage 3 (PR #915, commit ff4a9841) (1 element:
+    copper.yaml; 3 mineral: chalcopyrite.yaml, molybdenite.yaml, skutterudite.yaml; 2 primary_resource: cassiterite-polymetallic-sulfide-ore.yaml,
+    chalcopyrite-enargite-concentrate.yaml; 3 secondary_resource: coal-beneficiation-waste.yaml, copper-smelter-flue-dust.yaml,
+    pyrite-roasting-cinder.yaml), edges[0] (sqr_reductase -> tth_hydrolase) and edges[1] (tth_hydrolase -> <leach_system>)
+    had their pluralized node labels substituted into edge.description while retaining singular verbs (''Sqr ... oxidoreductases
+    (...) oxidizes ...'' or ''Sqr ... reductases (...) catalyzes ...'', and ''TetH/Tth tetrathionate hydrolases (...) disproportionates
+    ...'' or ''Tth tetrathionate hydrolases (...) disproportionates ...''), and in 7 of those 9 records (cassiterite-polymetallic-sulfide-ore.yaml,
+    chalcopyrite.yaml, chalcopyrite-enargite-concentrate.yaml, coal-beneficiation-waste.yaml, copper.yaml, molybdenite.yaml,
+    pyrite-roasting-cinder.yaml) edges[0].evidence[0].explanation still lists only the pre-Stage-3 Sqr/TetH/Tth locus subset
+    (''(Atc_1705, Atc_1437, Y981_02650) and TetH (Atc_1595)'' or ''Sqr paralogs (AFE_1792, AFE_0267) and Tth (AFE_0029)''),
+    omitting the Stage-3-added Sulfobacillus thermosulfidooxidans DSM 9293 Sqr (SAMN00768000_0580), Acidithiobacillus caldus
+    ZBY TetH (tetH / BAE30_05680), and Acidithiobacillus ferrooxidans DSM 16523 Tth (DN052_12875) homologs grounded on sqr_reductase
+    and tth_hydrolase. In this scope, 3 record(s) (coal-beneficiation-waste, copper-smelter-flue-dust, pyrite-roasting-cinder)
     are affected.'
   owner_paths:
   - repository: CultureBotAI/CMMMech
@@ -2474,11 +2463,10 @@ actions:
   - cmmmech:coal-beneficiation-waste
   - cmmmech:copper-smelter-flue-dust
   - cmmmech:pyrite-roasting-cinder
-  description: Update causal_graphs[0].edges[0].description and causal_graphs[0].edges[1].description
-    across the 9 Cycle 7 Stage 3 sulfur-oxidizing records so plural subjects take plural verbs ('oxidize'/'catalyze'
-    and 'disproportionate'), and update causal_graphs[0].edges[0].evidence[0].explanation in the 7 affected
-    records to list all grounded Sqr and TetH/Tth homolog loci during Stage 5 grouped remediation with
-    canonical history provenance.
+  description: Update causal_graphs[0].edges[0].description and causal_graphs[0].edges[1].description across the 9 Cycle 7
+    Stage 3 sulfur-oxidizing records so plural subjects take plural verbs ('oxidize'/'catalyze' and 'disproportionate'), and
+    update causal_graphs[0].edges[0].evidence[0].explanation in the 7 affected records to list all grounded Sqr and TetH/Tth
+    homolog loci during Stage 5 grouped remediation with canonical history provenance.
   owner_paths:
   - repository: CultureBotAI/CMMMech
     path: data/records/coal-beneficiation-waste.yaml
@@ -2490,8 +2478,8 @@ actions:
     path: data/records/pyrite-roasting-cinder.yaml
     role: maintained_record
   acceptance_checks:
-  - All 9 records use grammatical plural verbs in causal_graphs[0].edges[0..1].description and list all
-    grounded Sqr and TetH/Tth loci in edges[0].evidence[0].explanation.
+  - All 9 records use grammatical plural verbs in causal_graphs[0].edges[0..1].description and list all grounded Sqr and TetH/Tth
+    loci in edges[0].evidence[0].explanation.
   - Matching EDIT history sidecars exist in history/records/ and pass just check.
 evidence:
 - evidence_id: ev-secondary-resource-cohort-audit
@@ -2507,17 +2495,15 @@ evidence:
   locator: causal_graphs[0].edges[0..1]
   accessed_at: '2026-11-04T12:45:05Z'
   support: supports
-  summary: Inspected causal_graphs[0].edges[0..1] in coal-beneficiation-waste.yaml, copper-smelter-flue-dust.yaml,
-    and pyrite-roasting-cinder.yaml, confirming plural subject labels paired with singular verbs in edge.description
-    and pre-Stage-3 locus lists in edges[0].evidence[0].explanation on coal-beneficiation-waste.yaml and
-    pyrite-roasting-cinder.yaml.
+  summary: Inspected causal_graphs[0].edges[0..1] in coal-beneficiation-waste.yaml, copper-smelter-flue-dust.yaml, and pyrite-roasting-cinder.yaml,
+    confirming plural subject labels paired with singular verbs in edge.description and pre-Stage-3 locus lists in edges[0].evidence[0].explanation
+    on coal-beneficiation-waste.yaml and pyrite-roasting-cinder.yaml.
 limitations:
-- 'Three secondary_resource records currently lack curated mechanisms (and one additional record carries
-  an abiotic mechanism only): cmmmech:oil-and-gas-produced-water, cmmmech:spent-vegetable-oil-hydrogenation-catalyst,
-  and cmmmech:theisen-sludge are maintained secondary-resource records without mechanisms (and cmmmech:ferrochrome-slag
-  currently carries only an abiotic microbial: false HCl leaching mechanism) awaiting primary experimental
-  microbial bioleaching/recovery studies. (108/111 secondary_resource records carry mechanisms (107/111
-  microbial, 1/111 abiotic); 3/111 document feedstock identity and composition only.)'
+- 3 of 111 secondary_resource records (cmmmech:oil-and-gas-produced-water, cmmmech:spent-vegetable-oil-hydrogenation-catalyst,
+  cmmmech:theisen-sludge) represent industrial waste or produced-water feedstocks that currently lack standalone microbial
+  mechanism entries.
+- 'cmmmech:copper-anode-slime reports an abiotic hydrochloric-acid/chloride leaching comparator mechanism (abiotic_acid_chloride_leaching,
+  microbial: false) without a biological agent.'
 notes:
 - Cohort covers 100% (111/111) of secondary_resource records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 boundary_decisions:
@@ -2634,7 +2620,7 @@ boundary_decisions:
   - cmmmech:wood-ash
   - cmmmech:zinc-leach-residue
   - cmmmech:zinc-purification-hot-filter-cake
-  rationale: All 111 records in this cohort denote distinct industrial wastes, tailings, slags, or e-waste
-    feedstocks matching data/records/*.yaml where material_kind == 'secondary_resource' at ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+  rationale: All 111 records in this cohort denote distinct industrial wastes, tailings, slags, or e-waste feedstocks matching
+    data/records/*.yaml where material_kind == 'secondary_resource' at ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
   evidence_ids:
   - ev-secondary-resource-cohort-audit

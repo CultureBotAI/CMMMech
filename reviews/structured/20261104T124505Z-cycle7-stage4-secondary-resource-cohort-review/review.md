@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 111 secondary_resource records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c, including the 4 Cycle 7 Stage 2 (PR #914, commit 4d80ff7b) secondary_resource causal-graph and UniProtKB grounding additions (cmmmech:coal-beneficiation-waste, cmmmech:copper-smelter-flue-dust, cmmmech:ponded-coal-ash, cmmmech:pyrite-roasting-cinder) and the 4 Cycle 7 Stage 3 (PR #915, commit ff4a9841) UniProtKB grounding expansions (cmmmech:coal-beneficiation-waste, cmmmech:copper-smelter-flue-dust, cmmmech:pyrite-roasting-cinder, cmmmech:waste-x-ray-films). 108/111 secondary_resource records contain primary-source-backed mechanisms (107/111 with microbial: true mechanisms and 1/111, cmmmech:ferrochrome-slag, with an abiotic microbial: false mechanism hydrochloric_acid_magnesium_extraction; 145 mechanisms total), and 41/111 contain multi-step causal_graphs (44 graphs) and live-verified UniProtKB protein_examples across 30 unique accessions. Identified 1 minor graph edge-description grammar and locus-completeness finding (cmmmech-cycle7-stage4-finding-0002 across cmmmech:coal-beneficiation-waste, cmmmech:copper-smelter-flue-dust, and cmmmech:pyrite-roasting-cinder) for Stage 5 grouped remediation.
+Reviewed all 111 secondary_resource records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c, including the 4 Cycle 7 Stage 2 (PR #914, commit 8bf82c8d) causal-graph and UniProtKB grounding additions (cmmmech:coal-beneficiation-waste, cmmmech:copper-smelter-flue-dust, cmmmech:ponded-coal-ash, cmmmech:pyrite-roasting-cinder), the 4 Cycle 7 Stage 3 (PR #915, commit ff4a9841) multi-strain/paralog UniProtKB expansions (cmmmech:coal-beneficiation-waste, cmmmech:copper-smelter-flue-dust, cmmmech:pyrite-roasting-cinder, cmmmech:waste-x-ray-films), and verified resolution of Cycle 6 Stage 4 findings 0001 and 0002 across 15 secondary_resource records (PR #904). 108/111 secondary_resource records contain primary-source-supported mechanisms (145 mechanisms total: 107 records with microbial mechanisms and 1 record, cmmmech:copper-anode-slime, with an abiotic chloride-leaching comparator mechanism), and 41/111 contain causal_graphs (44 graphs, 84 GENE_OR_PROTEIN nodes, all 84 GROUNDED) and live-verified UniProtKB protein_examples across 30 unique accessions. Identified 1 minor graph edge description/explanation finding (cmmmech-cycle7-stage4-finding-0002 in 3 secondary_resource records: coal-beneficiation-waste, copper-smelter-flue-dust, pyrite-roasting-cinder) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -149,7 +149,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 evidence: supported. Targets: cmmmech:acid-mine-drainage, cmmmech:allanite-leachate, cmmmech:aluminium-salt-slag, cmmmech:automotive-wastewater-treatment-sludge, cmmmech:basic-oxygen-furnace-steel-slag, cmmmech:basic-oxygen-furnace-steelmaking-dust, cmmmech:battery-black-mass, cmmmech:bauxite-residue, cmmmech:beverage-carton-hydropulping-reject, cmmmech:biogas-desulfurization-sulfur-residue, cmmmech:blast-furnace-cast-house-dust, cmmmech:boron-ore-concentration-tailings, cmmmech:cadmium-telluride-photovoltaic-module-scrap, cmmmech:cathode-ray-tube-glass, cmmmech:cemented-tungsten-carbide-scrap, cmmmech:chromite-beneficiation-tailings, cmmmech:chromite-ore-processing-residue, cmmmech:chromium-tanned-leather-shavings, cmmmech:chrysotile-asbestos-tailings, cmmmech:coal-beneficiation-waste, cmmmech:coal-fly-ash, cmmmech:coal-gasification-slag, cmmmech:coal-mine-drainage-treatment-solids, cmmmech:copper-anode-slime, cmmmech:copper-autoclave-slime, cmmmech:copper-flotation-tailings, cmmmech:copper-smelter-flue-dust, cmmmech:copper-smelter-slag, cmmmech:discarded-led-lamps, cmmmech:electric-arc-furnace-dust, cmmmech:electrical-cable-recycling-residues, cmmmech:electroformed-copper-silver-manufacturing-scrap, cmmmech:electrolytic-manganese-residue, cmmmech:electroplating-bath-effluents, cmmmech:electroplating-sludge, cmmmech:end-of-life-cigs-photovoltaic-modules, cmmmech:end-of-life-crystalline-silicon-photovoltaic-modules, cmmmech:ferrochrome-slag, cmmmech:fish-bone-residues, cmmmech:flue-gas-desulfurization-wastewater, cmmmech:fluorescent-lamp-phosphor, cmmmech:gaas-production-hydroxide-sludge, cmmmech:gold-mine-tailings, cmmmech:ground-waste-tire-rubber, cmmmech:heavy-fuel-oil-combustion-ash, cmmmech:ion-adsorption-rare-earth-leach-residue, cmmmech:iron-ore-tailings, cmmmech:kaolin-mine-waste, cmmmech:lead-blast-furnace-slag, cmmmech:metal-grinding-sludge, cmmmech:metallic-machining-burrs, cmmmech:municipal-sewage-sludge, cmmmech:municipal-waste-incineration-ash, cmmmech:nickel-based-superalloy-residue-powders, cmmmech:nickel-flotation-tailings, cmmmech:nickel-smelter-slag, cmmmech:oil-and-gas-produced-water, cmmmech:oil-sands-froth-treatment-tailings, cmmmech:petroleum-coke, cmmmech:petroleum-oily-sludge, cmmmech:pharmaceutical-blister-packaging-waste, cmmmech:phosphate-ore-tailings, cmmmech:phosphogypsum, cmmmech:pig-manure, cmmmech:ponded-coal-ash, cmmmech:poultry-bone-residues, cmmmech:pyrite-roasting-cinder, cmmmech:reverse-osmosis-concentrate, cmmmech:samarium-cobalt-magnet-scrap, cmmmech:secondary-aluminium-dross, cmmmech:sewage-sludge-incineration-ash, cmmmech:spent-alkaline-zinc-carbon-batteries, cmmmech:spent-automotive-three-way-catalyst, cmmmech:spent-cerium-glass-polishing-slurry, cmmmech:spent-copper-zinc-alumina-catalyst, cmmmech:spent-fluid-catalytic-cracking-catalyst, cmmmech:spent-hydrocracking-catalyst, cmmmech:spent-hydrodesulfurization-catalyst, cmmmech:spent-iron-molybdate-oxidation-catalyst, cmmmech:spent-ito-targets, cmmmech:spent-lead-acid-battery-electrolyte, cmmmech:spent-ndfeb-magnets, cmmmech:spent-nickel-cadmium-batteries, cmmmech:spent-nickel-metal-hydride-batteries, cmmmech:spent-nickel-steam-reforming-catalyst, cmmmech:spent-platinum-petroleum-reforming-catalyst, cmmmech:spent-potlining, cmmmech:spent-selective-catalytic-reduction-catalyst, cmmmech:spent-silver-oxide-zinc-button-cell-batteries, cmmmech:spent-steel-pickling-liquors, cmmmech:spent-sulfuric-acid-production-catalyst, cmmmech:spent-tantalum-capacitors, cmmmech:spent-vanadium-flow-battery-electrolyte, cmmmech:spent-vegetable-oil-hydrogenation-catalyst, cmmmech:spent-zinc-manganese-button-cell-batteries, cmmmech:tannery-sludge, cmmmech:tannery-wastewater, cmmmech:theisen-sludge, cmmmech:titanogypsum, cmmmech:traction-battery-hydrometallurgical-residue, cmmmech:tungsten-nickel-iron-alloy-scrap, cmmmech:tungsten-skarn-tailings, cmmmech:uranium-mine-tailings, cmmmech:used-photographic-fixer-solutions, cmmmech:waste-liquid-crystal-display-panels, cmmmech:waste-multilayer-ceramic-capacitors, cmmmech:waste-printed-circuit-boards, cmmmech:waste-x-ray-films, cmmmech:wood-ash, cmmmech:zinc-leach-residue, cmmmech:zinc-purification-hot-filter-cake.
 
-108/111 secondary_resource records contain primary-source-backed mechanisms (107/111 with microbial: true mechanisms and 1/111, cmmmech:ferrochrome-slag, with an abiotic microbial: false mechanism hydrochloric_acid_magnesium_extraction; 145 mechanisms total) and 41/111 contain grounded causal_graphs (44 graphs) and live-verified UniProtKB protein_examples across 30 unique accessions. In cmmmech:coal-beneficiation-waste, cmmmech:copper-smelter-flue-dust, and cmmmech:pyrite-roasting-cinder, causal_graphs[0].edges[0..1].description pair plural node labels with singular verbs ('oxidizes'/'catalyzes' and 'disproportionates') and edges[0].evidence[0].explanation in coal-beneficiation-waste and pyrite-roasting-cinder omits Stage-3-added UniProtKB homolog loci.
+108/111 secondary_resource records contain primary-source-supported mechanisms (145 total) and 41/111 contain grounded causal_graphs (44 graphs) across 30 unique UniProtKB accessions.
 
 ## Findings
 
@@ -181,7 +181,8 @@ Update causal_graphs[0].edges[0].description and causal_graphs[0].edges[1].descr
 
 ## Limits And Additional Notes
 
-- Three secondary_resource records currently lack curated mechanisms (and one additional record carries an abiotic mechanism only): cmmmech:oil-and-gas-produced-water, cmmmech:spent-vegetable-oil-hydrogenation-catalyst, and cmmmech:theisen-sludge are maintained secondary-resource records without mechanisms (and cmmmech:ferrochrome-slag currently carries only an abiotic microbial: false HCl leaching mechanism) awaiting primary experimental microbial bioleaching/recovery studies. (108/111 secondary_resource records carry mechanisms (107/111 microbial, 1/111 abiotic); 3/111 document feedstock identity and composition only.)
+- 3 of 111 secondary_resource records (cmmmech:oil-and-gas-produced-water, cmmmech:spent-vegetable-oil-hydrogenation-catalyst, cmmmech:theisen-sludge) represent industrial waste or produced-water feedstocks that currently lack standalone microbial mechanism entries.
+- cmmmech:copper-anode-slime reports an abiotic hydrochloric-acid/chloride leaching comparator mechanism (abiotic_acid_chloride_leaching, microbial: false) without a biological agent.
 - Cohort covers 100% (111/111) of secondary_resource records in data/records/*.yaml at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
 
 ## Complete Structured Record
@@ -202,19 +203,19 @@ verdict: pass_with_limitations
 scientific_review: true
 summary: 'Reviewed all 111 secondary_resource records in data/records/*.yaml at commit
   ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c, including the 4 Cycle 7 Stage 2 (PR #914,
-  commit 4d80ff7b) secondary_resource causal-graph and UniProtKB grounding additions
-  (cmmmech:coal-beneficiation-waste, cmmmech:copper-smelter-flue-dust, cmmmech:ponded-coal-ash,
-  cmmmech:pyrite-roasting-cinder) and the 4 Cycle 7 Stage 3 (PR #915, commit ff4a9841)
-  UniProtKB grounding expansions (cmmmech:coal-beneficiation-waste, cmmmech:copper-smelter-flue-dust,
-  cmmmech:pyrite-roasting-cinder, cmmmech:waste-x-ray-films). 108/111 secondary_resource
-  records contain primary-source-backed mechanisms (107/111 with microbial: true mechanisms
-  and 1/111, cmmmech:ferrochrome-slag, with an abiotic microbial: false mechanism
-  hydrochloric_acid_magnesium_extraction; 145 mechanisms total), and 41/111 contain
-  multi-step causal_graphs (44 graphs) and live-verified UniProtKB protein_examples
-  across 30 unique accessions. Identified 1 minor graph edge-description grammar and
-  locus-completeness finding (cmmmech-cycle7-stage4-finding-0002 across cmmmech:coal-beneficiation-waste,
-  cmmmech:copper-smelter-flue-dust, and cmmmech:pyrite-roasting-cinder) for Stage
-  5 grouped remediation.'
+  commit 8bf82c8d) causal-graph and UniProtKB grounding additions (cmmmech:coal-beneficiation-waste,
+  cmmmech:copper-smelter-flue-dust, cmmmech:ponded-coal-ash, cmmmech:pyrite-roasting-cinder),
+  the 4 Cycle 7 Stage 3 (PR #915, commit ff4a9841) multi-strain/paralog UniProtKB
+  expansions (cmmmech:coal-beneficiation-waste, cmmmech:copper-smelter-flue-dust,
+  cmmmech:pyrite-roasting-cinder, cmmmech:waste-x-ray-films), and verified resolution
+  of Cycle 6 Stage 4 findings 0001 and 0002 across 15 secondary_resource records (PR
+  #904). 108/111 secondary_resource records contain primary-source-supported mechanisms
+  (145 mechanisms total: 107 records with microbial mechanisms and 1 record, cmmmech:copper-anode-slime,
+  with an abiotic chloride-leaching comparator mechanism), and 41/111 contain causal_graphs
+  (44 graphs, 84 GENE_OR_PROTEIN nodes, all 84 GROUNDED) and live-verified UniProtKB
+  protein_examples across 30 unique accessions. Identified 1 minor graph edge description/explanation
+  finding (cmmmech-cycle7-stage4-finding-0002 in 3 secondary_resource records: coal-beneficiation-waste,
+  copper-smelter-flue-dust, pyrite-roasting-cinder) for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle7-stage4-cohort-reviewer
   kind: agent
@@ -2605,15 +2606,9 @@ assessments:
   evidence_ids:
   - ev-secondary-resource-cohort-audit
   - ev-sr-stage3-graphs
-  summary: '108/111 secondary_resource records contain primary-source-backed mechanisms
-    (107/111 with microbial: true mechanisms and 1/111, cmmmech:ferrochrome-slag,
-    with an abiotic microbial: false mechanism hydrochloric_acid_magnesium_extraction;
-    145 mechanisms total) and 41/111 contain grounded causal_graphs (44 graphs) and
-    live-verified UniProtKB protein_examples across 30 unique accessions. In cmmmech:coal-beneficiation-waste,
-    cmmmech:copper-smelter-flue-dust, and cmmmech:pyrite-roasting-cinder, causal_graphs[0].edges[0..1].description
-    pair plural node labels with singular verbs (''oxidizes''/''catalyzes'' and ''disproportionates'')
-    and edges[0].evidence[0].explanation in coal-beneficiation-waste and pyrite-roasting-cinder
-    omits Stage-3-added UniProtKB homolog loci.'
+  summary: 108/111 secondary_resource records contain primary-source-supported mechanisms
+    (145 total) and 41/111 contain grounded causal_graphs (44 graphs) across 30 unique
+    UniProtKB accessions.
 findings:
 - finding_id: cmmmech-cycle7-stage4-finding-0002
   issue_key: cmmmech.cycle7-stage3-sulfur-graphs.edge-desc-grammar-and-incomplete-edge-evidence-loci
@@ -2713,13 +2708,12 @@ evidence:
     locus lists in edges[0].evidence[0].explanation on coal-beneficiation-waste.yaml
     and pyrite-roasting-cinder.yaml.
 limitations:
-- 'Three secondary_resource records currently lack curated mechanisms (and one additional
-  record carries an abiotic mechanism only): cmmmech:oil-and-gas-produced-water, cmmmech:spent-vegetable-oil-hydrogenation-catalyst,
-  and cmmmech:theisen-sludge are maintained secondary-resource records without mechanisms
-  (and cmmmech:ferrochrome-slag currently carries only an abiotic microbial: false
-  HCl leaching mechanism) awaiting primary experimental microbial bioleaching/recovery
-  studies. (108/111 secondary_resource records carry mechanisms (107/111 microbial,
-  1/111 abiotic); 3/111 document feedstock identity and composition only.)'
+- 3 of 111 secondary_resource records (cmmmech:oil-and-gas-produced-water, cmmmech:spent-vegetable-oil-hydrogenation-catalyst,
+  cmmmech:theisen-sludge) represent industrial waste or produced-water feedstocks
+  that currently lack standalone microbial mechanism entries.
+- 'cmmmech:copper-anode-slime reports an abiotic hydrochloric-acid/chloride leaching
+  comparator mechanism (abiotic_acid_chloride_leaching, microbial: false) without
+  a biological agent.'
 notes:
 - Cohort covers 100% (111/111) of secondary_resource records in data/records/*.yaml
   at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
