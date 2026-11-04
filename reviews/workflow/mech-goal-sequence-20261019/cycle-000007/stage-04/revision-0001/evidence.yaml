@@ -1,0 +1,87 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 7
+stage: 4
+revision: 1
+outcome: completed
+summary: Completed full-inventory Cycle 7 Stage 4 scientific and structural review
+  of all 678 eligible CMMMech records at frozen commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c
+  across 6 disjoint material_kind cohort reviews (66 element, 427 mineral, 7 mineral_group,
+  36 commodity, 31 primary_resource, 111 secondary_resource), 1 cross-cohort causal_graphs/protein_examples
+  review (142 records), and 3 single-record reviews (fengruiite, manganese-ore, cassiterite-polymetallic-sulfide-ore).
+  Preserved 3 open minor findings (cmmmech-cycle7-stage4-finding-0001, cmmmech-cycle7-stage4-finding-0002,
+  cmmmech-cycle7-stage4-finding-0003) across 16 distinct records for Stage 5 grouped
+  remediation.
+source_revision: ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c
+scope_frozen_at: '2026-11-04T12:30:00Z'
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000006/stage-05/revision-0001/evidence.yaml
+  sha256: 30ab70b423aaf5b0dd58e12cb28eb108742bfc47f091cc891aca7738d9589d90
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000007/stage-04/revision-0001/review_report.md
+  sha256: c21939ba9440be45f29998e1cb4cdd15d401ec560389407950d984cb7be2df9a
+  kind: review_report
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000007/stage-04/revision-0001/review_findings.yaml
+  sha256: 0aab1790e408992f30c0438b597994623cf8208de20d8ec72e8b55b4703e169a
+  kind: review_findings
+findings:
+- finding_id: cmmmech-cycle7-stage4-finding-0001
+  status: open
+  summary: 'Four of the five IMA-CNMNC Round 125 mineral records curated in Cycle
+    7 Stage 1 (PR #910, commit fa7431ae) — data/records/fengruiite.yaml (cmmmech:fengruiite,
+    IMA 2024-045), data/records/igelstromite.yaml (cmmmech:igelstromite, IMA 2021-035),
+    data/records/lazerckerite.yaml (cmmmech:lazerckerite, IMA 2022-113), and data/records/plumbogottlobite.yaml
+    (cmmmech:plumbogottlobite, IMA 2025-075) — explicitly state their IMA-CNMNC-approved
+    mineral symbols in description (''IMA symbol Fru'' in fengruiite.yaml line 8 from
+    Tian et al. 2026 Eur. J. Mineral. 38:519-530, p. 519; ''IMA symbol Ig'' in igelstromite.yaml
+    line 9 from Holtstam et al. 2024 Eur. J. Mineral. 36:311-322, p. 311; ''official
+    IMA symbol Lzc'' in lazerckerite.yaml lines 11-12 from Pazout et al. 2024 Eur.
+    J. Mineral. 36:641-656, p. 641; and ''official IMA symbol Pgtb'' in plumbogottlobite.yaml
+    line 8 from Kampf et al. 2026 Eur. J. Mineral. 38:209-216, p. 209), but omit the
+    top-level ima_symbol slot (ima_symbol: Fru, ima_symbol: Ig, ima_symbol: Lzc, and
+    ima_symbol: Pgtb immediately following material_kind: mineral), unlike peer IMA
+    mineral records such as data/records/andreybulakhite.yaml (ima_symbol: Adb), data/records/vielleaureite-ce.yaml
+    (ima_symbol: Vlr-Ce), data/records/xianhuaite-ce.yaml (ima_symbol: Xhu-Ce), and
+    data/records/yttrotungstite-nd.yaml (ima_symbol: Ytgs-Nd).'
+- finding_id: cmmmech-cycle7-stage4-finding-0002
+  status: open
+  summary: 'Across the 9 sulfur-oxidizing causal graphs updated in Cycle 7 Stage 3
+    (PR #915, commit ff4a9841) (1 element: copper.yaml; 3 mineral: chalcopyrite.yaml,
+    molybdenite.yaml, skutterudite.yaml; 2 primary_resource: cassiterite-polymetallic-sulfide-ore.yaml,
+    chalcopyrite-enargite-concentrate.yaml; 3 secondary_resource: coal-beneficiation-waste.yaml,
+    copper-smelter-flue-dust.yaml, pyrite-roasting-cinder.yaml), edges[0] (sqr_reductase
+    -> tth_hydrolase) and edges[1] (tth_hydrolase -> <leach_system>) had their pluralized
+    node labels substituted into edge.description while retaining singular verbs (''Sqr
+    ... oxidoreductases (...) oxidizes ...'' or ''Sqr ... reductases (...) catalyzes
+    ...'', and ''TetH/Tth tetrathionate hydrolases (...) disproportionates ...'' or
+    ''Tth tetrathionate hydrolases (...) disproportionates ...''), and in 7 of those
+    9 records (cassiterite-polymetallic-sulfide-ore.yaml, chalcopyrite.yaml, chalcopyrite-enargite-concentrate.yaml,
+    coal-beneficiation-waste.yaml, copper.yaml, molybdenite.yaml, pyrite-roasting-cinder.yaml)
+    edges[0].evidence[0].explanation still lists only the pre-Stage-3 Sqr/TetH/Tth
+    locus subset (''(Atc_1705, Atc_1437, Y981_02650) and TetH (Atc_1595)'' or ''Sqr
+    paralogs (AFE_1792, AFE_0267) and Tth (AFE_0029)''), omitting the Stage-3-added
+    Sulfobacillus thermosulfidooxidans DSM 9293 Sqr (SAMN00768000_0580), Acidithiobacillus
+    caldus ZBY TetH (tetH / BAE30_05680), and Acidithiobacillus ferrooxidans DSM 16523
+    Tth (DN052_12875) homologs grounded on sqr_reductase and tth_hydrolase.'
+- finding_id: cmmmech-cycle7-stage4-finding-0003
+  status: open
+  summary: In data/records/birnessite.yaml (cmmmech:birnessite, causal_graphs[1] fungal_synthetic_cobalt_birnessite_transformation_graph,
+    lines 316-363), data/records/lindbergite.yaml (cmmmech:lindbergite, causal_graphs[0]
+    niger_associated_manganese_oxalate_formation_graph, lines 151-198), and data/records/manganese-ore.yaml
+    (cmmmech:manganese-ore, causal_graphs[0] fungal_nkamouna_laterite_transformation_graph,
+    lines 136-183), node cexa_citrate_exporter is grounded to both the strain-matched
+    Aspergillus niger ATCC 1015 reference-proteome entry UniProtKB:G3Y4N5 (CEXA_ASPNA,
+    locus ASPNIDRAFT_56962) and the species-level reviewed entry UniProtKB:A0A254TZW7
+    (CEXA_ASPNG), but cexa_citrate_exporter.description still reads 'Reviewed Aspergillus
+    niger plasma-membrane citrate exporter (UniProtKB:A0A254TZW7) representing the
+    fungal organic-acid secretion machinery.', naming only UniProtKB:A0A254TZW7 and
+    omitting the strain-matched ATCC 1015 reference-proteome entry UniProtKB:G3Y4N5
+    (CEXA_ASPNA / ASPNIDRAFT_56962).
+groups: []
+carry_forward_ids:
+- cmmmech-cycle7-stage4-finding-0001
+- cmmmech-cycle7-stage4-finding-0002
+- cmmmech-cycle7-stage4-finding-0003
+infra_tasks: []

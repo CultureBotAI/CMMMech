@@ -1,0 +1,259 @@
+# Cycle 7 Stage 4 record review: cmmmech:cassiterite-polymetallic-sulfide-ore (Cassiterite polymetallic sulfide ore)
+
+- Review: 20261104T124509Z-cassiterite-polymetallic-sulfide-ore-cycle7-stage4-record-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-04T12:39:00Z
+- Finished UTC: 2026-11-04T12:45:09Z
+- Reviewer: antigravity / cmmmech-cycle7-stage4-record-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Reviewed data/records/cassiterite-polymetallic-sulfide-ore.yaml (cmmmech:cassiterite-polymetallic-sulfide-ore) at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c following Cycle 7 Stage 2 causal-graph curation (PR #914, commit 8bf82c8d) and Cycle 7 Stage 3 multi-strain UniProtKB grounding expansion (PR #915, commit ff4a9841). Verified consortium bioleaching mechanism (Sulfobacillus thermosulfidooxidans and Acidithiobacillus caldus, 90.5% Cu, 99.6% Zn, 69.4% As extraction at 45 C, pH 1.5, 10% pulp density from Dachang Sn-polymetallic sulfide ore, Guangxi, China, PMID:18632089 / DOI:10.1016/j.hydromet.2007.11.005) and 6 synchronized UniProtKB protein_examples across sqr_reductase and tth_hydrolase. Identified 1 minor graph edge description/explanation finding (cmmmech-cycle7-stage4-finding-0002: edges[0..1].description pair plural node labels with singular verbs 'oxidizes' and 'disproportionates', and edges[0].evidence[0].explanation omits Stage-3-added loci SAMN00768000_0580 and BAE30_05680) for Stage 5 grouped remediation.
+
+## Scope And Provenance
+
+Single-record Cycle 7 Stage 4 audit of cmmmech:cassiterite-polymetallic-sulfide-ore after Cycle 7 Stage 2 and Stage 3 curation.
+
+Selection: data/records/cassiterite-polymetallic-sulfide-ore.yaml at ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: git_commit at Git base ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:cassiterite-polymetallic-sulfide-ore | data/records/cassiterite-polymetallic-sulfide-ore.yaml | maintained | Cassiterite-polymetallic sulfide ore |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| cmmmech validate cassiterite-polymetallic-sulfide-ore.yaml | passed | True | cmmmech:cassiterite-polymetallic-sulfide-ore | data/records/cassiterite-polymetallic-sulfide-ore.yaml passes LinkML structural, semantic, and canonical top-level key-order validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Consortium bioleaching mechanism, causal graph topology, and 6 UniProtKB Sqr/TetH protein examples
+
+evidence: supported. Targets: cmmmech:cassiterite-polymetallic-sulfide-ore.
+
+Consortium bioleaching mechanism and 6 UniProtKB Sqr/TetH protein_examples are accurately grounded to PMID:18632089, with minor edge description grammar and edge explanation locus-list synchronization needed in causal_graphs[0].edges[0..1].
+
+## Findings
+
+### cmmmech-cycle7-stage4-finding-0002: Nine Cycle 7 Stage 3 sulfur-oxidizing causal graphs have subject-verb number disagreement in edge descriptions and 7 omit Stage-3-added homolog loci in edges[0].evidence[0].explanation
+
+minor / open / confirmed; issue key: cmmmech.cycle7-stage3-sulfur-graphs.edge-desc-grammar-and-incomplete-edge-evidence-loci.
+
+Across the 9 sulfur-oxidizing causal graphs updated in Cycle 7 Stage 3 (PR #915, commit ff4a9841) (1 element: copper.yaml; 3 mineral: chalcopyrite.yaml, molybdenite.yaml, skutterudite.yaml; 2 primary_resource: cassiterite-polymetallic-sulfide-ore.yaml, chalcopyrite-enargite-concentrate.yaml; 3 secondary_resource: coal-beneficiation-waste.yaml, copper-smelter-flue-dust.yaml, pyrite-roasting-cinder.yaml), edges[0] (sqr_reductase -&gt; tth_hydrolase) and edges[1] (tth_hydrolase -&gt; &lt;leach_system&gt;) had their pluralized node labels substituted into edge.description while retaining singular verbs ('Sqr ... oxidoreductases (...) oxidizes ...' or 'Sqr ... reductases (...) catalyzes ...', and 'TetH/Tth tetrathionate hydrolases (...) disproportionates ...' or 'Tth tetrathionate hydrolases (...) disproportionates ...'), and in 7 of those 9 records (cassiterite-polymetallic-sulfide-ore.yaml, chalcopyrite.yaml, chalcopyrite-enargite-concentrate.yaml, coal-beneficiation-waste.yaml, copper.yaml, molybdenite.yaml, pyrite-roasting-cinder.yaml) edges[0].evidence[0].explanation still lists only the pre-Stage-3 Sqr/TetH/Tth locus subset ('(Atc_1705, Atc_1437, Y981_02650) and TetH (Atc_1595)' or 'Sqr paralogs (AFE_1792, AFE_0267) and Tth (AFE_0029)'), omitting the Stage-3-added Sulfobacillus thermosulfidooxidans DSM 9293 Sqr (SAMN00768000_0580), Acidithiobacillus caldus ZBY TetH (tetH / BAE30_05680), and Acidithiobacillus ferrooxidans DSM 16523 Tth (DN052_12875) homologs grounded on sqr_reductase and tth_hydrolase. In this scope, 1 record(s) (cassiterite-polymetallic-sulfide-ore) are affected.
+
+## Recommended Actions And Acceptance Checks
+
+### act-normalize-stage3-sulfur-graph-edge-descriptions-and-explanations
+
+Update causal_graphs[0].edges[0].description and causal_graphs[0].edges[1].description across the 9 Cycle 7 Stage 3 sulfur-oxidizing records so plural subjects take plural verbs ('oxidize'/'catalyze' and 'disproportionate'), and update causal_graphs[0].edges[0].evidence[0].explanation in the 7 affected records to list all grounded Sqr and TetH/Tth homolog loci during Stage 5 grouped remediation with canonical history provenance.
+
+- All 9 records use grammatical plural verbs in causal_graphs[0].edges[0..1].description and list all grounded Sqr and TetH/Tth loci in edges[0].evidence[0].explanation.
+- Matching EDIT history sidecars exist in history/records/ and pass just check.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| ev-cassiterite-ore-file | data/records/cassiterite-polymetallic-sulfide-ore.yaml; lines 1-396 (causal_graphs[0].edges[0..1] lines 362-396) | supports | Inspected all 396 lines of data/records/cassiterite-polymetallic-sulfide-ore.yaml, confirming plural node labels in edges[0..1].description paired with singular verbs ('oxidizes', 'disproportionates') and pre-Stage-3 locus subset in edges[0].evidence[0].explanation. |
+| ev-pmid18632089-cassiterite-ore | PMID:18632089; Guo et al. 2008 Hydrometallurgy 92:163-169 (DOI:10.1016/j.hydromet.2007.11.005) | supports | Guo et al. (2008) report moderately thermophilic bioleaching of cassiterite polymetallic sulfide ore by Sulfobacillus thermosulfidooxidans and Acidithiobacillus caldus at 45 C, pH 1.5. |
+
+## Limits And Additional Notes
+
+- In data/records/cassiterite-polymetallic-sulfide-ore.yaml, causal_graphs[0].edges[0..1].description and edges[0].evidence[0].explanation require minor synchronization after Stage 3 expansion (tracked as open finding cmmmech-cycle7-stage4-finding-0002 for Stage 5 remediation).
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261104T124509Z-cassiterite-polymetallic-sulfide-ore-cycle7-stage4-record-review
+title: 'Cycle 7 Stage 4 record review: cmmmech:cassiterite-polymetallic-sulfide-ore
+  (Cassiterite polymetallic sulfide ore)'
+repository: CultureBotAI/CMMMech
+kind: record
+started_at: '2026-11-04T12:39:00Z'
+finished_at: '2026-11-04T12:45:09Z'
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'Reviewed data/records/cassiterite-polymetallic-sulfide-ore.yaml (cmmmech:cassiterite-polymetallic-sulfide-ore)
+  at commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c following Cycle 7 Stage 2 causal-graph
+  curation (PR #914, commit 8bf82c8d) and Cycle 7 Stage 3 multi-strain UniProtKB grounding
+  expansion (PR #915, commit ff4a9841). Verified consortium bioleaching mechanism
+  (Sulfobacillus thermosulfidooxidans and Acidithiobacillus caldus, 90.5% Cu, 99.6%
+  Zn, 69.4% As extraction at 45 C, pH 1.5, 10% pulp density from Dachang Sn-polymetallic
+  sulfide ore, Guangxi, China, PMID:18632089 / DOI:10.1016/j.hydromet.2007.11.005)
+  and 6 synchronized UniProtKB protein_examples across sqr_reductase and tth_hydrolase.
+  Identified 1 minor graph edge description/explanation finding (cmmmech-cycle7-stage4-finding-0002:
+  edges[0..1].description pair plural node labels with singular verbs ''oxidizes''
+  and ''disproportionates'', and edges[0].evidence[0].explanation omits Stage-3-added
+  loci SAMN00768000_0580 and BAE30_05680) for Stage 5 grouped remediation.'
+reviewer:
+  identity: antigravity / cmmmech-cycle7-stage4-record-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of Cycle 7 Stage 4 record_review
+    (.claude/skills/review-yaml-record/SKILL.md) against frozen commit ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c.
+source:
+  git_revision: ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c
+  state: git_commit
+  inputs:
+  - path: data/records/cassiterite-polymetallic-sulfide-ore.yaml
+    sha256: dea50c8ccb53f90b43c78ef8c25ab1ad728befb6b729dbdf30e414e147ce1709
+    role: target
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+  - path: src/cmmmech/validation.py
+    sha256: edf999adb3da7dceadcc340b5561663a7fb56dfd1178992633a1a7ad1abcb937
+    role: context
+scope:
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:cassiterite-polymetallic-sulfide-ore
+  selection: data/records/cassiterite-polymetallic-sulfide-ore.yaml at ff4a9841deb7e4f6e9fff025eccd2ffa07b5493c
+  description: Single-record Cycle 7 Stage 4 audit of cmmmech:cassiterite-polymetallic-sulfide-ore
+    after Cycle 7 Stage 2 and Stage 3 curation.
+targets:
+- target_id: cmmmech:cassiterite-polymetallic-sulfide-ore
+  path: data/records/cassiterite-polymetallic-sulfide-ore.yaml
+  kind: maintained
+  label: Cassiterite-polymetallic sulfide ore
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cassiterite-polymetallic-sulfide-ore.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+checks:
+- check_id: cmmmech-validate-cassiterite-polymetallic-sulfide-ore
+  name: cmmmech validate cassiterite-polymetallic-sulfide-ore.yaml
+  status: passed
+  required: true
+  command: .venv/bin/cmmmech validate data/records/cassiterite-polymetallic-sulfide-ore.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:cassiterite-polymetallic-sulfide-ore
+  evidence_ids:
+  - ev-cassiterite-ore-file
+  summary: data/records/cassiterite-polymetallic-sulfide-ore.yaml passes LinkML structural,
+    semantic, and canonical top-level key-order validation with 0 errors.
+assessments:
+- assessment_id: assess-cassiterite-ore-mechanism-and-causal-graph
+  topic: Consortium bioleaching mechanism, causal graph topology, and 6 UniProtKB
+    Sqr/TetH protein examples
+  area: evidence
+  outcome: supported
+  target_ids:
+  - cmmmech:cassiterite-polymetallic-sulfide-ore
+  evidence_ids:
+  - ev-cassiterite-ore-file
+  - ev-pmid18632089-cassiterite-ore
+  summary: Consortium bioleaching mechanism and 6 UniProtKB Sqr/TetH protein_examples
+    are accurately grounded to PMID:18632089, with minor edge description grammar
+    and edge explanation locus-list synchronization needed in causal_graphs[0].edges[0..1].
+findings:
+- finding_id: cmmmech-cycle7-stage4-finding-0002
+  issue_key: cmmmech.cycle7-stage3-sulfur-graphs.edge-desc-grammar-and-incomplete-edge-evidence-loci
+  title: Nine Cycle 7 Stage 3 sulfur-oxidizing causal graphs have subject-verb number
+    disagreement in edge descriptions and 7 omit Stage-3-added homolog loci in edges[0].evidence[0].explanation
+  severity: minor
+  category: graph
+  certainty: confirmed
+  status: open
+  target_ids:
+  - cmmmech:cassiterite-polymetallic-sulfide-ore
+  field_paths:
+  - causal_graphs[0].edges[0].description
+  - causal_graphs[0].edges[0].evidence[0].explanation
+  - causal_graphs[0].edges[1].description
+  evidence_ids:
+  - ev-cassiterite-ore-file
+  - ev-pmid18632089-cassiterite-ore
+  description: 'Across the 9 sulfur-oxidizing causal graphs updated in Cycle 7 Stage
+    3 (PR #915, commit ff4a9841) (1 element: copper.yaml; 3 mineral: chalcopyrite.yaml,
+    molybdenite.yaml, skutterudite.yaml; 2 primary_resource: cassiterite-polymetallic-sulfide-ore.yaml,
+    chalcopyrite-enargite-concentrate.yaml; 3 secondary_resource: coal-beneficiation-waste.yaml,
+    copper-smelter-flue-dust.yaml, pyrite-roasting-cinder.yaml), edges[0] (sqr_reductase
+    -> tth_hydrolase) and edges[1] (tth_hydrolase -> <leach_system>) had their pluralized
+    node labels substituted into edge.description while retaining singular verbs (''Sqr
+    ... oxidoreductases (...) oxidizes ...'' or ''Sqr ... reductases (...) catalyzes
+    ...'', and ''TetH/Tth tetrathionate hydrolases (...) disproportionates ...'' or
+    ''Tth tetrathionate hydrolases (...) disproportionates ...''), and in 7 of those
+    9 records (cassiterite-polymetallic-sulfide-ore.yaml, chalcopyrite.yaml, chalcopyrite-enargite-concentrate.yaml,
+    coal-beneficiation-waste.yaml, copper.yaml, molybdenite.yaml, pyrite-roasting-cinder.yaml)
+    edges[0].evidence[0].explanation still lists only the pre-Stage-3 Sqr/TetH/Tth
+    locus subset (''(Atc_1705, Atc_1437, Y981_02650) and TetH (Atc_1595)'' or ''Sqr
+    paralogs (AFE_1792, AFE_0267) and Tth (AFE_0029)''), omitting the Stage-3-added
+    Sulfobacillus thermosulfidooxidans DSM 9293 Sqr (SAMN00768000_0580), Acidithiobacillus
+    caldus ZBY TetH (tetH / BAE30_05680), and Acidithiobacillus ferrooxidans DSM 16523
+    Tth (DN052_12875) homologs grounded on sqr_reductase and tth_hydrolase. In this
+    scope, 1 record(s) (cassiterite-polymetallic-sulfide-ore) are affected.'
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cassiterite-polymetallic-sulfide-ore.yaml
+    role: maintained_record
+actions:
+- action_id: act-normalize-stage3-sulfur-graph-edge-descriptions-and-explanations
+  finding_ids:
+  - cmmmech-cycle7-stage4-finding-0002
+  target_ids:
+  - cmmmech:cassiterite-polymetallic-sulfide-ore
+  description: Update causal_graphs[0].edges[0].description and causal_graphs[0].edges[1].description
+    across the 9 Cycle 7 Stage 3 sulfur-oxidizing records so plural subjects take
+    plural verbs ('oxidize'/'catalyze' and 'disproportionate'), and update causal_graphs[0].edges[0].evidence[0].explanation
+    in the 7 affected records to list all grounded Sqr and TetH/Tth homolog loci during
+    Stage 5 grouped remediation with canonical history provenance.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cassiterite-polymetallic-sulfide-ore.yaml
+    role: maintained_record
+  acceptance_checks:
+  - All 9 records use grammatical plural verbs in causal_graphs[0].edges[0..1].description
+    and list all grounded Sqr and TetH/Tth loci in edges[0].evidence[0].explanation.
+  - Matching EDIT history sidecars exist in history/records/ and pass just check.
+evidence:
+- evidence_id: ev-cassiterite-ore-file
+  kind: record_content
+  reference: data/records/cassiterite-polymetallic-sulfide-ore.yaml
+  locator: lines 1-396 (causal_graphs[0].edges[0..1] lines 362-396)
+  accessed_at: '2026-11-04T12:45:09Z'
+  support: supports
+  summary: Inspected all 396 lines of data/records/cassiterite-polymetallic-sulfide-ore.yaml,
+    confirming plural node labels in edges[0..1].description paired with singular
+    verbs ('oxidizes', 'disproportionates') and pre-Stage-3 locus subset in edges[0].evidence[0].explanation.
+- evidence_id: ev-pmid18632089-cassiterite-ore
+  kind: primary_source
+  reference: PMID:18632089
+  locator: Guo et al. 2008 Hydrometallurgy 92:163-169 (DOI:10.1016/j.hydromet.2007.11.005)
+  accessed_at: '2026-11-04T12:45:09Z'
+  support: supports
+  summary: Guo et al. (2008) report moderately thermophilic bioleaching of cassiterite
+    polymetallic sulfide ore by Sulfobacillus thermosulfidooxidans and Acidithiobacillus
+    caldus at 45 C, pH 1.5.
+limitations:
+- In data/records/cassiterite-polymetallic-sulfide-ore.yaml, causal_graphs[0].edges[0..1].description
+  and edges[0].evidence[0].explanation require minor synchronization after Stage 3
+  expansion (tracked as open finding cmmmech-cycle7-stage4-finding-0002 for Stage
+  5 remediation).
+notes: []
+```
