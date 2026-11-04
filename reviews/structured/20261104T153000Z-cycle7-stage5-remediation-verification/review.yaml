@@ -19,14 +19,16 @@ summary: 'Post-remediation scientific and structural verification of all 16 CMMM
   3 sulfur-oxidizing records cassiterite-polymetallic-sulfide-ore.yaml, chalcopyrite.yaml,
   chalcopyrite-enargite-concentrate.yaml, coal-beneficiation-waste.yaml, copper.yaml,
   copper-smelter-flue-dust.yaml, molybdenite.yaml, pyrite-roasting-cinder.yaml, and
-  skutterudite.yaml updated to pluralize singular edge description verbs and list
-  all node-attached Sqr and TetH/Tth loci in outgoing edge evidence explanations),
+  skutterudite.yaml updated to pluralize singular edge description verbs (''oxidizes''
+  -> ''oxidize'', ''catalyzes'' -> ''catalyze'', ''disproportionates'' -> ''disproportionate'')
+  and list all node-attached Sqr and TetH/Tth loci in outgoing edge evidence explanations),
   and #920 (GRP-C7S5-003: cmmmech-cycle7-stage4-finding-0003, 3 Aspergillus niger
-  ATCC 1015 records birnessite.yaml, lindbergite.yaml, and manganese-ore.yaml updated
-  so cexa_citrate_exporter.description explicitly names both strain-matched ATCC 1015
-  CexA ortholog ASPNIDRAFT_44792 [UniProtKB:G3Y4N5] and reference CBS 513.88 CexA
-  An17g01710 [UniProtKB:A2R9P9]). All 3 carried-forward Cycle 7 Stage 4 findings are
-  verified as resolved with 16 append-only EDIT history sidecars.'
+  ATCC 1015 records birnessite.yaml [causal_graphs[1].nodes[0]], lindbergite.yaml
+  [causal_graphs[0].nodes[0]], and manganese-ore.yaml [causal_graphs[0].nodes[0]]
+  updated so cexa_citrate_exporter.description explicitly names both strain-matched
+  ATCC 1015 CexA UniProtKB:G3Y4N5 [CEXA_ASPNA / ASPNIDRAFT_56962] and species-level
+  reviewed CexA UniProtKB:A0A254TZW7 [CEXA_ASPNG]). All 3 carried-forward Cycle 7
+  Stage 4 findings are verified as resolved with 16 append-only EDIT history sidecars.'
 reviewer:
   identity: antigravity / cmmmech-cycle7-stage5-remediation-reviewer
   kind: agent
@@ -422,9 +424,9 @@ checks:
     9 sulfur-oxidizing records (#919)
   status: passed
   required: true
-  summary: Verified pluralized edge verbs ('oxidize' / 'disproportionate') and complete
-    Sqr and TetH/Tth locus lists in outgoing edge evidence explanations across all
-    9 GRP-C7S5-002 records.
+  summary: Verified pluralized edge verbs ('oxidize' / 'catalyze' / 'disproportionate')
+    and complete Sqr and TetH/Tth locus lists in outgoing edge evidence explanations
+    across all 9 GRP-C7S5-002 records.
   target_ids:
   - cmmmech:cassiterite-polymetallic-sulfide-ore
   - cmmmech:chalcopyrite
@@ -446,7 +448,8 @@ checks:
   required: true
   summary: Verified that cexa_citrate_exporter.description in birnessite.yaml (causal_graphs[1].nodes[0]),
     lindbergite.yaml (causal_graphs[0].nodes[0]), and manganese-ore.yaml (causal_graphs[0].nodes[0])
-    explicitly names both ASPNIDRAFT_44792 (UniProtKB:G3Y4N5) and An17g01710 (UniProtKB:A2R9P9).
+    explicitly names both strain-matched ATCC 1015 UniProtKB:G3Y4N5 (CEXA_ASPNA /
+    ASPNIDRAFT_56962) and species-level UniProtKB:A0A254TZW7 (CEXA_ASPNG).
   target_ids:
   - cmmmech:birnessite
   - cmmmech:lindbergite
@@ -523,31 +526,34 @@ evidence:
 - evidence_id: ev-uniprot-sulfur-proteins
   kind: database
   reference: https://rest.uniprot.org/uniprotkb/
-  locator: UniProtKB:A0A0U1YFZ8, A0A0U1YGZ3, B7JAQ2, B7J3C9, A0A5P9XQF2, A0A5P9XPU3,
-    A0A5P9XS05, F9ZNW0, F9ZNI0
+  locator: UniProtKB:F9ZQD6, F9ZN43, F9ZNI0, A4ZV25, A0A059XTE6, I0IN58, A0A1W1W805,
+    B7JBP8, B7J411, B7J3C9, A0A2W1K175, A0A543Q349, A0A5P9XUB1, A0A5P9XPU3, A0A5P9XS05
   accessed_at: '2026-11-04T15:28:00Z'
   support: supports
-  summary: Confirmed all 9 UniProtKB accessions across Sulfobacillus thermosulfidooxidans
-    DSM 9293 (Sqr SAMN05428971_102344 [A0A0U1YFZ8], TetH SAMN05428971_103789 [A0A0U1YGZ3]),
-    Acidithiobacillus ferrooxidans ATCC 23270 (Sqr AFE_1792 [B7JAQ2], Tth AFE_0029
-    [B7J3C9]), Acidithiobacillus thiooxidans ATCC 19377 (Sqr GCD22_05050 [A0A5P9XQF2],
-    Tth paralogs GCD22_14205 [A0A5P9XPU3] and GCD22_02315 [A0A5P9XS05]), and Acidithiobacillus
-    caldus SM-1 (Sqr Atc_1660 [F9ZNW0], TetH Atc_1595 [F9ZNI0]) match the pluralized
-    outgoing edge descriptions and complete edge evidence explanations across the
-    9 GRP-C7S5-002 records.
+  summary: Confirmed all 15 UniProtKB accessions across Acidithiobacillus caldus SM-1
+    (Sqr Atc_1705 [F9ZQD6], Atc_1437 [F9ZN43], TetH Atc_1595 [F9ZNI0]) and A. caldus
+    ZBY (TetH tetH / BAE30_05680 [A4ZV25]), Leptospirillum ferriphilum YSK (Sqr Y981_02650
+    [A0A059XTE6]), Leptospirillum ferrooxidans C2-3 (Sqr LFE_1004 [I0IN58]), Sulfobacillus
+    thermosulfidooxidans DSM 9293 (Sqr SAMN00768000_0580 [A0A1W1W805]), Acidithiobacillus
+    ferrooxidans ATCC 23270 (Sqr AFE_1792 [B7JBP8], sqr / AFE_0267 [B7J411], Tth tth
+    / AFE_0029 [B7J3C9]) and DSM 16523 (Tth DN052_12875 [A0A2W1K175]), and Acidithiobacillus
+    thiooxidans ATCC 19377 (Sqr sqr / GCD22_02301 [A0A543Q349], sqor / GCD22_03207
+    [A0A5P9XUB1], Tth paralogs tth / GCD22_14205 [A0A5P9XPU3] and tth / GCD22_02315
+    [A0A5P9XS05]) match the pluralized outgoing edge descriptions and complete edge
+    evidence explanations across all 9 GRP-C7S5-002 records.
 - evidence_id: ev-uniprot-cexa-proteins
   kind: database
   reference: https://rest.uniprot.org/uniprotkb/
-  locator: UniProtKB:G3Y4N5 (ASPNIDRAFT_44792, Aspergillus niger ATCC 1015, TaxID
-    380704) and UniProtKB:A2R9P9 (cexa / An17g01710, Aspergillus niger CBS 513.88,
-    TaxID 425011)
+  locator: UniProtKB:G3Y4N5 (CEXA_ASPNA / ASPNIDRAFT_56962, Aspergillus niger ATCC
+    1015, TaxID 380704) and UniProtKB:A0A254TZW7 (CEXA_ASPNG, Aspergillus niger, TaxID
+    5061)
   accessed_at: '2026-11-04T15:28:00Z'
   support: supports
   summary: Confirmed that cexa_citrate_exporter.description in birnessite.yaml (causal_graphs[1].nodes[0]),
     lindbergite.yaml (causal_graphs[0].nodes[0]), and manganese-ore.yaml (causal_graphs[0].nodes[0])
-    explicitly names both strain-matched Aspergillus niger ATCC 1015 CexA ortholog
-    ASPNIDRAFT_44792 (UniProtKB:G3Y4N5) and reference strain CBS 513.88 CexA An17g01710
-    (UniProtKB:A2R9P9).
+    explicitly names both strain-matched Aspergillus niger ATCC 1015 CexA UniProtKB:G3Y4N5
+    (CEXA_ASPNA / ASPNIDRAFT_56962) and species-level reviewed CexA UniProtKB:A0A254TZW7
+    (CEXA_ASPNG).
 assessments:
 - assessment_id: assess-grp1-round125-minerals
   area: completeness
@@ -588,10 +594,9 @@ assessments:
     #919)'
   outcome: supported
   summary: All 9 Stage 3 sulfur-oxidizing records in GRP-C7S5-002 now use pluralized
-    edge description verbs ('oxidize' / 'disproportionate') matching their pluralized
-    multi-locus / multi-species node labels, and all 8 multi-locus / multi-species
-    records list every node-attached Sqr and TetH/Tth locus and UniProtKB accession
-    in outgoing edge evidence explanations.
+    edge description verbs ('oxidize' / 'catalyze' / 'disproportionate') matching
+    their pluralized multi-locus / multi-species node labels, and all 9 records list
+    every node-attached Sqr and TetH/Tth locus in outgoing edge evidence explanations.
   target_ids:
   - cmmmech:cassiterite-polymetallic-sulfide-ore
   - cmmmech:chalcopyrite
@@ -621,11 +626,12 @@ assessments:
   topic: 'Aspergillus niger ATCC 1015 cexa_citrate_exporter.description strain-matched
     ortholog inclusion (GRP-C7S5-003, #920)'
   outcome: supported
-  summary: All 3 Aspergillus niger ATCC 1015 records in GRP-C7S5-003 (birnessite.yaml,
-    lindbergite.yaml, manganese-ore.yaml) now explicitly name both strain-matched
-    A. niger ATCC 1015 CexA ortholog ASPNIDRAFT_44792 (UniProtKB:G3Y4N5) and reference
-    strain CBS 513.88 CexA An17g01710 (UniProtKB:A2R9P9) in cexa_citrate_exporter.description,
-    matching node label and outgoing edge[0].evidence[0].explanation.
+  summary: All 3 Aspergillus niger ATCC 1015 records in GRP-C7S5-003 (birnessite.yaml
+    causal_graphs[1].nodes[0], lindbergite.yaml causal_graphs[0].nodes[0], manganese-ore.yaml
+    causal_graphs[0].nodes[0]) now explicitly name both strain-matched A. niger ATCC
+    1015 CexA UniProtKB:G3Y4N5 (CEXA_ASPNA / ASPNIDRAFT_56962) and species-level reviewed
+    CexA UniProtKB:A0A254TZW7 (CEXA_ASPNG) in cexa_citrate_exporter.description, matching
+    node label and outgoing edge[0].evidence[0].explanation.
   target_ids:
   - cmmmech:birnessite
   - cmmmech:lindbergite
@@ -639,8 +645,9 @@ assessments:
   - name: grp3_cexa_description_alignment
     value: 1.0
     unit: fraction
-    definition: Fraction of GRP-C7S5-003 records naming both ATCC 1015 ASPNIDRAFT_44792
-      (UniProtKB:G3Y4N5) and CBS 513.88 An17g01710 (UniProtKB:A2R9P9) in cexa_citrate_exporter.description
+    definition: Fraction of GRP-C7S5-003 records naming both ATCC 1015 UniProtKB:G3Y4N5
+      (CEXA_ASPNA / ASPNIDRAFT_56962) and species-level UniProtKB:A0A254TZW7 (CEXA_ASPNG)
+      in cexa_citrate_exporter.description
     denominator: 3
     minimum: 0.0
     maximum: 1.0
@@ -786,11 +793,11 @@ findings:
     path: data/records/skutterudite.yaml
     role: maintained_record
   disposition_reason: 'Resolved under GitHub Issue #919 (GRP-C7S5-002): pluralized
-    singular verbs (''oxidizes'' -> ''oxidize'', ''disproportionates'' -> ''disproportionate'')
-    in sqr_oxidoreductase and tth_hydrolase outgoing edge descriptions across all
-    9 records and updated outgoing edge evidence[0].explanation across the 8 multi-locus
-    / multi-species records to name every node-attached Sqr and TetH/Tth locus and
-    UniProtKB accession, with 9 append-only EDIT history sidecars.'
+    singular verbs (''oxidizes'' -> ''oxidize'', ''catalyzes'' -> ''catalyze'', ''disproportionates''
+    -> ''disproportionate'') in sqr_oxidoreductase and tth_hydrolase outgoing edge
+    descriptions across all 9 records and updated outgoing edge evidence[0].explanation
+    across all 9 records to name every node-attached Sqr and TetH/Tth locus, with
+    9 append-only EDIT history sidecars.'
   previous_occurrences:
   - repository: CultureBotAI/CMMMech
     review_id: 20261104T124500Z-cycle7-stage4-element-cohort-review
@@ -818,8 +825,9 @@ findings:
   severity: minor
   status: resolved
   certainty: confirmed
-  title: Three Aspergillus niger ATCC 1015 records now name strain-matched ASPNIDRAFT_44792
-    (UniProtKB:G3Y4N5) alongside CBS 513.88 An17g01710 (UniProtKB:A2R9P9) in cexa_citrate_exporter.description
+  title: Three Aspergillus niger ATCC 1015 records now name strain-matched UniProtKB:G3Y4N5
+    (CEXA_ASPNA / ASPNIDRAFT_56962) alongside species-level UniProtKB:A0A254TZW7 (CEXA_ASPNG)
+    in cexa_citrate_exporter.description
   description: In data/records/birnessite.yaml (cmmmech:birnessite, causal_graphs[1]
     fungal_synthetic_cobalt_birnessite_transformation_graph, lines 316-363), data/records/lindbergite.yaml
     (cmmmech:lindbergite, causal_graphs[0] niger_associated_manganese_oxalate_formation_graph,
@@ -858,8 +866,8 @@ findings:
   disposition_reason: 'Resolved under GitHub Issue #920 (GRP-C7S5-003): updated cexa_citrate_exporter.description
     in birnessite.yaml (causal_graphs[1].nodes[0]), lindbergite.yaml (causal_graphs[0].nodes[0]),
     and manganese-ore.yaml (causal_graphs[0].nodes[0]) to explicitly name both strain-matched
-    Aspergillus niger ATCC 1015 CexA ortholog ASPNIDRAFT_44792 (UniProtKB:G3Y4N5)
-    and reference strain CBS 513.88 CexA An17g01710 (UniProtKB:A2R9P9), with 3 append-only
+    Aspergillus niger ATCC 1015 CexA UniProtKB:G3Y4N5 (CEXA_ASPNA / ASPNIDRAFT_56962)
+    and species-level reviewed CexA UniProtKB:A0A254TZW7 (CEXA_ASPNG), with 3 append-only
     EDIT history sidecars.'
   previous_occurrences:
   - repository: CultureBotAI/CMMMech
