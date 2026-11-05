@@ -1,0 +1,276 @@
+# Cycle 9 Stage 4 record review: cmmmech:rhodochrosite (Rhodochrosite)
+
+- Review: 20261105T202008Z-rhodochrosite-cycle9-stage4-record-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-05T20:16:00Z
+- Finished UTC: 2026-11-05T20:20:08Z
+- Reviewer: antigravity / cmmmech-cycle9-stage4-record-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Reviewed data/records/rhodochrosite.yaml (cmmmech:rhodochrosite) at commit f8f0d8e724bcc013b5e9d98e3d12d5c7557587af. Verified IMA mineral identity (MnCO3, 1962 s.p.), Shewanella oneidensis MR-1 colloidal Mn(IV) oxide reduction and rhodochrosite mineralization mechanism (Johnson et al. 2016, Environ. Sci. Technol. 50(8):4248-4258, DOI:10.1021/acs.est.5b04834), all synchronized UniProtKB protein_examples (MtrC UniProtKB:Q8EG34, OmcA UniProtKB:Q8EG33, CymA UniProtKB:Q8E8S0), and causal_graphs[0] (mr1_mn_oxide_rhodochrosite_graph). Identified 1 minor graph finding (cmmmech-cycle9-stage4-finding-0002: oxidized_metal_substrate and reduced_metal_product retain generic template wrappers, oxidized_metal_substrate.description states 'in Ca-free artificial freshwater medium' whereas mechanisms[0].context specifies '1 L modified M1 medium' (~6.3 mM colloidal MnO2, 20 mM lactate, no added phosphate, pH 8), and edges[1..3] interpolate capitalized node labels mid-sentence with generic one-line explanations on edges[1..2]) for Stage 5 grouped remediation.
+
+## Scope And Provenance
+
+Single-record Cycle 9 Stage 4 audit of cmmmech:rhodochrosite.
+
+Selection: data/records/rhodochrosite.yaml at f8f0d8e724bcc013b5e9d98e3d12d5c7557587af
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: git_commit at Git base f8f0d8e724bcc013b5e9d98e3d12d5c7557587af.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:rhodochrosite | data/records/rhodochrosite.yaml | maintained | Rhodochrosite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| cmmmech validate rhodochrosite.yaml | passed | True | cmmmech:rhodochrosite | data/records/rhodochrosite.yaml passes LinkML structural, semantic, and canonical top-level key-order validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Shewanella oneidensis MR-1 colloidal Mn(IV) oxide reduction and rhodochrosite precipitation causal graph
+
+graph: supported. Targets: cmmmech:rhodochrosite.
+
+All Shewanella oneidensis MR-1 UniProtKB protein_examples are accurately grounded and synchronized between mechanisms[0] and causal_graphs[0]. However, oxidized_metal_substrate and reduced_metal_product retain generic template wrappers, oxidized_metal_substrate states 'in Ca-free artificial freshwater medium' vs '1 L modified M1 medium' in mechanisms[0].context, and edges[1..3] interpolate capitalized node labels mid-sentence.
+
+## Findings
+
+### cmmmech-cycle9-stage4-finding-0002: Shewanella oneidensis MR-1 causal graphs in rhodochrosite.yaml and chlorite.yaml contain a medium-name mismatch ('Ca-free artificial freshwater medium' vs 'modified M1 medium'), template node wrappers, and mid-sentence capitalized edge labels
+
+minor / open / confirmed; issue key: cmmmech.shewanella-mr1-rhodochrosite-chlorite.medium-mismatch-template-descriptions-and-capitalized-edge-labels.
+
+In data/records/rhodochrosite.yaml (cmmmech:rhodochrosite, mineral, Johnson et al. 2016 Environ. Sci. Technol. 50(8):4248-4258, DOI:10.1021/acs.est.5b04834; causal_graphs[0] mr1_mn_oxide_rhodochrosite_graph, lines 203-362), nodes[3].description (oxidized_metal_substrate, lines 313-314) and nodes[4].description (reduced_metal_product, lines 319-320) retain generic template wrappers ('Terminal electron acceptor substrate (...) in johnson2016.' and 'Resulting reduced product state (...) in johnson2016.'), nodes[3].description states 'in Ca-free artificial freshwater medium' whereas mechanisms[0].context (line 55) and Johnson et al. (2016) Methods pp. C-D specify a stirred 1 L modified M1 medium (~6.3 mM freshly synthesized poorly ordered colloidal MnO2, 20 mM lactate, no added phosphate, pH 8 under N2), and edges[1..3] (lines 338, 342, 347, 351, 356-357) interpolate capitalized 'Colloidal Mn(IV) oxide' and 'Biogenic rhodochrosite (MnCO3) precipitates and dissolved Mn(II)' mid-sentence with generic one-line explanations on edges[1..2]. Similarly, in data/records/chlorite.yaml (cmmmech:chlorite, mineral_group, Brookshaw et al. 2014 Am. Mineral. 99(8-9):1746-1754, DOI:10.2138/am.2014.4774CCBY; causal_graphs[0] mr1_chlorite_fe_reduction_graph, lines 168-335), edges[1..2] (lines 305-306, 310-311, 316-317, 321-322) interpolate capitalized 'Chlorite-associated Fe(III) (ferroan clinochlore)' mid-sentence with generic one-line explanations. In this scope, 1 record(s) (rhodochrosite) are affected.
+
+## Recommended Actions And Acceptance Checks
+
+### act-refine-shewanella-mr1-rhodochrosite-and-chlorite-graphs
+
+Replace the generic template wrappers and 'Ca-free artificial freshwater medium' mismatch on oxidized_metal_substrate and reduced_metal_product in rhodochrosite.yaml with the exact modified M1 medium and XAS/XRD product details from Johnson et al. (2016), and replace mid-sentence capitalized node labels and generic edge explanations in rhodochrosite.yaml and chlorite.yaml during Stage 5 grouped remediation with canonical history provenance.
+
+- oxidized_metal_substrate and reduced_metal_product in rhodochrosite.yaml accurately describe the ~6.3 mM freshly synthesized colloidal MnO2 in 1 L modified M1 medium (20 mM lactate, no added phosphate, pH 8) and the 73% rhodochrosite / 27% aqueous Mn(II) XAS fit and synchrotron XRD product without template wrappers.
+- All mid-sentence node-label interpolations in edges[1..3] of rhodochrosite.yaml and edges[1..2] of chlorite.yaml use lowercase prose and study-specific evidence explanations.
+- Matching EDIT history sidecars exist in history/records/ and pass just check.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| ev-rhodochrosite-file | data/records/rhodochrosite.yaml; mechanisms[0].context (line 55); causal_graphs[0] (lines 203-362) | supports | Inspected data/records/rhodochrosite.yaml, verifying mechanisms[0].context (line 55) against causal_graphs[0].nodes[3..4] (lines 310-321) and causal_graphs[0].edges[1..3] (lines 334-362). |
+| ev-rhodochrosite-johnson2016 | DOI:10.1021/acs.est.5b04834; Johnson et al. 2016 Environ. Sci. Technol. 50(8):4248-4258, Methods pp. C-D, Table 1, Figures 1-3, SI Tables S1-S3, Figures S1-S5 | supports | Johnson et al. (2016) incubated Shewanella oneidensis MR-1 in a stirred 1 L modified M1 medium containing ~6.3 mM freshly synthesized poorly ordered colloidal MnO2 and 20 mM lactate with no added phosphate at pH 8 under N2, producing crystalline rhodochrosite (73% rhodochrosite standard and 27% aqueous Mn(II) by final XAS linear-combination fit). |
+
+## Limits And Additional Notes
+
+- data/records/rhodochrosite.yaml retains generic template wrappers, a 'Ca-free artificial freshwater medium' vs 'modified M1 medium' mismatch on oxidized_metal_substrate.description, and mid-sentence capitalized label interpolations in causal_graphs[0] (tracked as open finding cmmmech-cycle9-stage4-finding-0002 for Stage 5 remediation).
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261105T202008Z-rhodochrosite-cycle9-stage4-record-review
+title: 'Cycle 9 Stage 4 record review: cmmmech:rhodochrosite (Rhodochrosite)'
+repository: CultureBotAI/CMMMech
+kind: record
+started_at: '2026-11-05T20:16:00Z'
+finished_at: '2026-11-05T20:20:08Z'
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'Reviewed data/records/rhodochrosite.yaml (cmmmech:rhodochrosite) at commit
+  f8f0d8e724bcc013b5e9d98e3d12d5c7557587af. Verified IMA mineral identity (MnCO3,
+  1962 s.p.), Shewanella oneidensis MR-1 colloidal Mn(IV) oxide reduction and rhodochrosite
+  mineralization mechanism (Johnson et al. 2016, Environ. Sci. Technol. 50(8):4248-4258,
+  DOI:10.1021/acs.est.5b04834), all synchronized UniProtKB protein_examples (MtrC
+  UniProtKB:Q8EG34, OmcA UniProtKB:Q8EG33, CymA UniProtKB:Q8E8S0), and causal_graphs[0]
+  (mr1_mn_oxide_rhodochrosite_graph). Identified 1 minor graph finding (cmmmech-cycle9-stage4-finding-0002:
+  oxidized_metal_substrate and reduced_metal_product retain generic template wrappers,
+  oxidized_metal_substrate.description states ''in Ca-free artificial freshwater medium''
+  whereas mechanisms[0].context specifies ''1 L modified M1 medium'' (~6.3 mM colloidal
+  MnO2, 20 mM lactate, no added phosphate, pH 8), and edges[1..3] interpolate capitalized
+  node labels mid-sentence with generic one-line explanations on edges[1..2]) for
+  Stage 5 grouped remediation.'
+reviewer:
+  identity: antigravity / cmmmech-cycle9-stage4-record-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of Cycle 9 Stage 4 record_review
+    (.claude/skills/review-yaml-record/SKILL.md) against frozen commit f8f0d8e724bcc013b5e9d98e3d12d5c7557587af.
+source:
+  git_revision: f8f0d8e724bcc013b5e9d98e3d12d5c7557587af
+  state: git_commit
+  inputs:
+  - path: data/records/rhodochrosite.yaml
+    sha256: d120d1c277b742539d55e731708b4d4b628017d5b6298a70f408d6e54b30eb0c
+    role: target
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+  - path: src/cmmmech/validation.py
+    sha256: edf999adb3da7dceadcc340b5561663a7fb56dfd1178992633a1a7ad1abcb937
+    role: context
+scope:
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:rhodochrosite
+  selection: data/records/rhodochrosite.yaml at f8f0d8e724bcc013b5e9d98e3d12d5c7557587af
+  description: Single-record Cycle 9 Stage 4 audit of cmmmech:rhodochrosite.
+targets:
+- target_id: cmmmech:rhodochrosite
+  path: data/records/rhodochrosite.yaml
+  kind: maintained
+  label: Rhodochrosite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/rhodochrosite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+checks:
+- check_id: cmmmech-validate-rhodochrosite
+  name: cmmmech validate rhodochrosite.yaml
+  status: passed
+  required: true
+  command: .venv/bin/cmmmech validate data/records/rhodochrosite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:rhodochrosite
+  evidence_ids:
+  - ev-rhodochrosite-file
+  summary: data/records/rhodochrosite.yaml passes LinkML structural, semantic, and
+    canonical top-level key-order validation with 0 errors.
+assessments:
+- assessment_id: assess-rhodochrosite-mr1-graph-and-proteins
+  topic: Shewanella oneidensis MR-1 colloidal Mn(IV) oxide reduction and rhodochrosite
+    precipitation causal graph
+  area: graph
+  outcome: supported
+  target_ids:
+  - cmmmech:rhodochrosite
+  evidence_ids:
+  - ev-rhodochrosite-file
+  - ev-rhodochrosite-johnson2016
+  summary: All Shewanella oneidensis MR-1 UniProtKB protein_examples are accurately
+    grounded and synchronized between mechanisms[0] and causal_graphs[0]. However,
+    oxidized_metal_substrate and reduced_metal_product retain generic template wrappers,
+    oxidized_metal_substrate states 'in Ca-free artificial freshwater medium' vs '1
+    L modified M1 medium' in mechanisms[0].context, and edges[1..3] interpolate capitalized
+    node labels mid-sentence.
+findings:
+- finding_id: cmmmech-cycle9-stage4-finding-0002
+  issue_key: cmmmech.shewanella-mr1-rhodochrosite-chlorite.medium-mismatch-template-descriptions-and-capitalized-edge-labels
+  title: Shewanella oneidensis MR-1 causal graphs in rhodochrosite.yaml and chlorite.yaml
+    contain a medium-name mismatch ('Ca-free artificial freshwater medium' vs 'modified
+    M1 medium'), template node wrappers, and mid-sentence capitalized edge labels
+  severity: minor
+  category: graph
+  certainty: confirmed
+  status: open
+  target_ids:
+  - cmmmech:rhodochrosite
+  field_paths:
+  - causal_graphs[0].nodes[3].description
+  - causal_graphs[0].nodes[4].description
+  - causal_graphs[0].edges[1].description
+  - causal_graphs[0].edges[1].evidence[0].explanation
+  - causal_graphs[0].edges[2].description
+  - causal_graphs[0].edges[2].evidence[0].explanation
+  - causal_graphs[0].edges[3].description
+  evidence_ids:
+  - ev-rhodochrosite-file
+  - ev-rhodochrosite-johnson2016
+  description: In data/records/rhodochrosite.yaml (cmmmech:rhodochrosite, mineral,
+    Johnson et al. 2016 Environ. Sci. Technol. 50(8):4248-4258, DOI:10.1021/acs.est.5b04834;
+    causal_graphs[0] mr1_mn_oxide_rhodochrosite_graph, lines 203-362), nodes[3].description
+    (oxidized_metal_substrate, lines 313-314) and nodes[4].description (reduced_metal_product,
+    lines 319-320) retain generic template wrappers ('Terminal electron acceptor substrate
+    (...) in johnson2016.' and 'Resulting reduced product state (...) in johnson2016.'),
+    nodes[3].description states 'in Ca-free artificial freshwater medium' whereas
+    mechanisms[0].context (line 55) and Johnson et al. (2016) Methods pp. C-D specify
+    a stirred 1 L modified M1 medium (~6.3 mM freshly synthesized poorly ordered colloidal
+    MnO2, 20 mM lactate, no added phosphate, pH 8 under N2), and edges[1..3] (lines
+    338, 342, 347, 351, 356-357) interpolate capitalized 'Colloidal Mn(IV) oxide'
+    and 'Biogenic rhodochrosite (MnCO3) precipitates and dissolved Mn(II)' mid-sentence
+    with generic one-line explanations on edges[1..2]. Similarly, in data/records/chlorite.yaml
+    (cmmmech:chlorite, mineral_group, Brookshaw et al. 2014 Am. Mineral. 99(8-9):1746-1754,
+    DOI:10.2138/am.2014.4774CCBY; causal_graphs[0] mr1_chlorite_fe_reduction_graph,
+    lines 168-335), edges[1..2] (lines 305-306, 310-311, 316-317, 321-322) interpolate
+    capitalized 'Chlorite-associated Fe(III) (ferroan clinochlore)' mid-sentence with
+    generic one-line explanations. In this scope, 1 record(s) (rhodochrosite) are
+    affected.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/rhodochrosite.yaml
+    role: maintained_record
+actions:
+- action_id: act-refine-shewanella-mr1-rhodochrosite-and-chlorite-graphs
+  finding_ids:
+  - cmmmech-cycle9-stage4-finding-0002
+  target_ids:
+  - cmmmech:rhodochrosite
+  description: Replace the generic template wrappers and 'Ca-free artificial freshwater
+    medium' mismatch on oxidized_metal_substrate and reduced_metal_product in rhodochrosite.yaml
+    with the exact modified M1 medium and XAS/XRD product details from Johnson et
+    al. (2016), and replace mid-sentence capitalized node labels and generic edge
+    explanations in rhodochrosite.yaml and chlorite.yaml during Stage 5 grouped remediation
+    with canonical history provenance.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/rhodochrosite.yaml
+    role: maintained_record
+  acceptance_checks:
+  - oxidized_metal_substrate and reduced_metal_product in rhodochrosite.yaml accurately
+    describe the ~6.3 mM freshly synthesized colloidal MnO2 in 1 L modified M1 medium
+    (20 mM lactate, no added phosphate, pH 8) and the 73% rhodochrosite / 27% aqueous
+    Mn(II) XAS fit and synchrotron XRD product without template wrappers.
+  - All mid-sentence node-label interpolations in edges[1..3] of rhodochrosite.yaml
+    and edges[1..2] of chlorite.yaml use lowercase prose and study-specific evidence
+    explanations.
+  - Matching EDIT history sidecars exist in history/records/ and pass just check.
+evidence:
+- evidence_id: ev-rhodochrosite-file
+  kind: record_content
+  reference: data/records/rhodochrosite.yaml
+  locator: mechanisms[0].context (line 55); causal_graphs[0] (lines 203-362)
+  accessed_at: '2026-11-05T20:20:08Z'
+  support: supports
+  summary: Inspected data/records/rhodochrosite.yaml, verifying mechanisms[0].context
+    (line 55) against causal_graphs[0].nodes[3..4] (lines 310-321) and causal_graphs[0].edges[1..3]
+    (lines 334-362).
+- evidence_id: ev-rhodochrosite-johnson2016
+  kind: primary_source
+  reference: DOI:10.1021/acs.est.5b04834
+  locator: Johnson et al. 2016 Environ. Sci. Technol. 50(8):4248-4258, Methods pp.
+    C-D, Table 1, Figures 1-3, SI Tables S1-S3, Figures S1-S5
+  accessed_at: '2026-11-05T20:20:08Z'
+  support: supports
+  summary: Johnson et al. (2016) incubated Shewanella oneidensis MR-1 in a stirred
+    1 L modified M1 medium containing ~6.3 mM freshly synthesized poorly ordered colloidal
+    MnO2 and 20 mM lactate with no added phosphate at pH 8 under N2, producing crystalline
+    rhodochrosite (73% rhodochrosite standard and 27% aqueous Mn(II) by final XAS
+    linear-combination fit).
+limitations:
+- data/records/rhodochrosite.yaml retains generic template wrappers, a 'Ca-free artificial
+  freshwater medium' vs 'modified M1 medium' mismatch on oxidized_metal_substrate.description,
+  and mid-sentence capitalized label interpolations in causal_graphs[0] (tracked as
+  open finding cmmmech-cycle9-stage4-finding-0002 for Stage 5 remediation).
+notes: []
+```

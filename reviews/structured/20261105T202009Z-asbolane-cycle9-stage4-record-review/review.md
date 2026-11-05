@@ -1,0 +1,268 @@
+# Cycle 9 Stage 4 record review: cmmmech:asbolane (Asbolane)
+
+- Review: 20261105T202009Z-asbolane-cycle9-stage4-record-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-05T20:18:00Z
+- Finished UTC: 2026-11-05T20:20:09Z
+- Reviewer: antigravity / cmmmech-cycle9-stage4-record-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Reviewed data/records/asbolane.yaml (cmmmech:asbolane) at commit f8f0d8e724bcc013b5e9d98e3d12d5c7557587af. Verified IMA mineral identity (Mn4+(O,OH)2.(Co,Ni,Mg,Ca)x(OH)2x.nH2O, grandfathered 1841), Geobacter sulfurreducens reductive transformation of synthetic Co/Ni-asbolane mechanism (Buchanan 2021/2022 University of Manchester PhD thesis Chapter 4, pp. 115-158, Figures 4.1-4.8), all synchronized UniProtKB protein_examples (ImcH UniProtKB:Q747K6, CbcL UniProtKB:Q74GH2), and causal_graphs[0] (geobacter_associated_reductive_transformation_graph). Identified 1 minor graph finding (cmmmech-cycle9-stage4-finding-0003: nodes[2..3] use generic template descriptions that repeat their capitalized node labels in parentheses, and causal_graphs[0].description plus edges[0].description interpolate those capitalized node labels mid-sentence) for Stage 5 grouped remediation.
+
+## Scope And Provenance
+
+Single-record Cycle 9 Stage 4 audit of cmmmech:asbolane.
+
+Selection: data/records/asbolane.yaml at f8f0d8e724bcc013b5e9d98e3d12d5c7557587af
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: git_commit at Git base f8f0d8e724bcc013b5e9d98e3d12d5c7557587af.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:asbolane | data/records/asbolane.yaml | maintained | Asbolane |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| cmmmech validate asbolane.yaml | passed | True | cmmmech:asbolane | data/records/asbolane.yaml passes LinkML structural, semantic, and canonical top-level key-order validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Geobacter sulfurreducens reductive transformation of synthetic Co/Ni-asbolane causal graph and ImcH/CbcL groundings
+
+graph: supported. Targets: cmmmech:asbolane.
+
+All Geobacter sulfurreducens PCA ImcH and CbcL UniProtKB protein_examples are accurately grounded and synchronized between mechanisms[0] and causal_graphs[0]. However, nodes[2..3] retain parenthetically duplicated template descriptions and causal_graphs[0].description plus edges[0].description interpolate capitalized node labels mid-sentence.
+
+## Findings
+
+### cmmmech-cycle9-stage4-finding-0003: Geobacter sulfurreducens manganese-mineral causal graphs in asbolane.yaml, feitknechtite.yaml, and pyrochroite.yaml retain parenthetically duplicated template node descriptions and mid-sentence capitalized labels
+
+minor / open / confirmed; issue key: cmmmech.geobacter-buchanan-manganese-minerals.template-node-descriptions-and-capitalized-graph-edge-labels.
+
+Across the three Geobacter sulfurreducens synthetic Co/Ni-asbolane bioreduction records from Buchanan (2021/2022, University of Manchester PhD thesis, Chapter 4, printed pp. 115-158, Figures 4.1-4.8) — data/records/asbolane.yaml (cmmmech:asbolane, causal_graphs[0] geobacter_associated_reductive_transformation_graph, lines 172-293), data/records/feitknechtite.yaml (cmmmech:feitknechtite, causal_graphs[0] geobacter_feitknechtite_phase_formation_graph, lines 164-285), and data/records/pyrochroite.yaml (cmmmech:pyrochroite, causal_graphs[0] geobacter_pyrochroite_phase_formation_graph, lines 160-281) — nodes[2] (asbolane.yaml lines 248-249, feitknechtite.yaml lines 240-241, pyrochroite.yaml lines 236-237) and nodes[3] (asbolane.yaml lines 255-256, feitknechtite.yaml lines 247-248, pyrochroite.yaml lines 242-243) use generic template descriptions that repeat their capitalized node labels verbatim in parentheses ('Starting synthetic Co/Ni-asbolane mineral suspension (&lt;Label&gt;) incubated anaerobically with Geobacter sulfurreducens.' and 'Reduced product assemblage (&lt;Label&gt;) observed in Chapter 4 of Buchanan (2021/2022).'), and causal_graphs[0].description (asbolane.yaml lines 174-177, feitknechtite.yaml lines 166-169, pyrochroite.yaml lines 162-165) plus edges[0].description (asbolane.yaml lines 263-264, feitknechtite.yaml lines 255-256, pyrochroite.yaml lines 250-251) interpolate those capitalized node labels mid-sentence ('... reduction of Synthetic Co/Ni-asbolane suspension ... into Supernatant Mn, Co, and Ni ...' / 'Transient feitknechtite-assigned ...' / 'Pyrochroite-assigned ...'). In this scope, 1 record(s) (asbolane) are affected.
+
+## Recommended Actions And Acceptance Checks
+
+### act-refine-geobacter-buchanan-manganese-mineral-graphs
+
+Replace the parenthetically duplicated template descriptions on nodes[2..3] and normalize mid-sentence capitalized node-label interpolations in causal_graphs[0].description and edges[0].description across data/records/asbolane.yaml, data/records/feitknechtite.yaml, and data/records/pyrochroite.yaml during Stage 5 grouped remediation with canonical history provenance.
+
+- nodes[2] and nodes[3] in asbolane.yaml, feitknechtite.yaml, and pyrochroite.yaml have non-duplicated, source-specific descriptions grounded in Buchanan (2021/2022) Chapter 4.
+- causal_graphs[0].description and edges[0].description in asbolane.yaml, feitknechtite.yaml, and pyrochroite.yaml use lowercase prose without mid-sentence capitalized node labels.
+- Matching EDIT history sidecars exist in history/records/ and pass just check.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| ev-asbolane-file | data/records/asbolane.yaml; causal_graphs[0] (lines 172-293) | supports | Inspected data/records/asbolane.yaml, verifying causal_graphs[0].description (lines 174-177), nodes[2..3].description (lines 248-256), and edges[0].description (lines 263-264). |
+| ev-asbolane-buchanan2021 | https://pure.manchester.ac.uk/ws/portalfiles/portal/261215972/FULL_TEXT.PDF; Buchanan 2021/2022 University of Manchester PhD thesis, Chapter 4, printed pp. 115-158, Figures 4.1-4.8 | supports | Buchanan (2021/2022) Chapter 4 documents anaerobic incubation of synthetic Co/Ni-asbolane suspension (nominally 2 mmol/L Mn in 10 mM bicarbonate buffer with 10 mM sodium acetate and OD600 0.6 Geobacter sulfurreducens at 30 C), releasing supernatant Mn, Co, and Ni above no-cell controls and forming pyrochroite, rhodochrosite, and transient feitknechtite. |
+
+## Limits And Additional Notes
+
+- data/records/asbolane.yaml retains parenthetically duplicated template descriptions on nodes[2..3] and mid-sentence capitalized label interpolations in causal_graphs[0].description and edges[0].description (tracked as open finding cmmmech-cycle9-stage4-finding-0003 for Stage 5 remediation).
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261105T202009Z-asbolane-cycle9-stage4-record-review
+title: 'Cycle 9 Stage 4 record review: cmmmech:asbolane (Asbolane)'
+repository: CultureBotAI/CMMMech
+kind: record
+started_at: '2026-11-05T20:18:00Z'
+finished_at: '2026-11-05T20:20:09Z'
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'Reviewed data/records/asbolane.yaml (cmmmech:asbolane) at commit f8f0d8e724bcc013b5e9d98e3d12d5c7557587af.
+  Verified IMA mineral identity (Mn4+(O,OH)2.(Co,Ni,Mg,Ca)x(OH)2x.nH2O, grandfathered
+  1841), Geobacter sulfurreducens reductive transformation of synthetic Co/Ni-asbolane
+  mechanism (Buchanan 2021/2022 University of Manchester PhD thesis Chapter 4, pp.
+  115-158, Figures 4.1-4.8), all synchronized UniProtKB protein_examples (ImcH UniProtKB:Q747K6,
+  CbcL UniProtKB:Q74GH2), and causal_graphs[0] (geobacter_associated_reductive_transformation_graph).
+  Identified 1 minor graph finding (cmmmech-cycle9-stage4-finding-0003: nodes[2..3]
+  use generic template descriptions that repeat their capitalized node labels in parentheses,
+  and causal_graphs[0].description plus edges[0].description interpolate those capitalized
+  node labels mid-sentence) for Stage 5 grouped remediation.'
+reviewer:
+  identity: antigravity / cmmmech-cycle9-stage4-record-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of Cycle 9 Stage 4 record_review
+    (.claude/skills/review-yaml-record/SKILL.md) against frozen commit f8f0d8e724bcc013b5e9d98e3d12d5c7557587af.
+source:
+  git_revision: f8f0d8e724bcc013b5e9d98e3d12d5c7557587af
+  state: git_commit
+  inputs:
+  - path: data/records/asbolane.yaml
+    sha256: fc303916b2a7c64bfb657a7fc73f75e9db2146ac1ad4d2476024a5455fb56594
+    role: target
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+  - path: src/cmmmech/validation.py
+    sha256: edf999adb3da7dceadcc340b5561663a7fb56dfd1178992633a1a7ad1abcb937
+    role: context
+scope:
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:asbolane
+  selection: data/records/asbolane.yaml at f8f0d8e724bcc013b5e9d98e3d12d5c7557587af
+  description: Single-record Cycle 9 Stage 4 audit of cmmmech:asbolane.
+targets:
+- target_id: cmmmech:asbolane
+  path: data/records/asbolane.yaml
+  kind: maintained
+  label: Asbolane
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/asbolane.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+checks:
+- check_id: cmmmech-validate-asbolane
+  name: cmmmech validate asbolane.yaml
+  status: passed
+  required: true
+  command: .venv/bin/cmmmech validate data/records/asbolane.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:asbolane
+  evidence_ids:
+  - ev-asbolane-file
+  summary: data/records/asbolane.yaml passes LinkML structural, semantic, and canonical
+    top-level key-order validation with 0 errors.
+assessments:
+- assessment_id: assess-asbolane-geobacter-graph-and-proteins
+  topic: Geobacter sulfurreducens reductive transformation of synthetic Co/Ni-asbolane
+    causal graph and ImcH/CbcL groundings
+  area: graph
+  outcome: supported
+  target_ids:
+  - cmmmech:asbolane
+  evidence_ids:
+  - ev-asbolane-file
+  - ev-asbolane-buchanan2021
+  summary: All Geobacter sulfurreducens PCA ImcH and CbcL UniProtKB protein_examples
+    are accurately grounded and synchronized between mechanisms[0] and causal_graphs[0].
+    However, nodes[2..3] retain parenthetically duplicated template descriptions and
+    causal_graphs[0].description plus edges[0].description interpolate capitalized
+    node labels mid-sentence.
+findings:
+- finding_id: cmmmech-cycle9-stage4-finding-0003
+  issue_key: cmmmech.geobacter-buchanan-manganese-minerals.template-node-descriptions-and-capitalized-graph-edge-labels
+  title: Geobacter sulfurreducens manganese-mineral causal graphs in asbolane.yaml,
+    feitknechtite.yaml, and pyrochroite.yaml retain parenthetically duplicated template
+    node descriptions and mid-sentence capitalized labels
+  severity: minor
+  category: graph
+  certainty: confirmed
+  status: open
+  target_ids:
+  - cmmmech:asbolane
+  field_paths:
+  - causal_graphs[0].description
+  - causal_graphs[0].nodes[2].description
+  - causal_graphs[0].nodes[3].description
+  - causal_graphs[0].edges[0].description
+  evidence_ids:
+  - ev-asbolane-file
+  - ev-asbolane-buchanan2021
+  description: Across the three Geobacter sulfurreducens synthetic Co/Ni-asbolane
+    bioreduction records from Buchanan (2021/2022, University of Manchester PhD thesis,
+    Chapter 4, printed pp. 115-158, Figures 4.1-4.8) — data/records/asbolane.yaml
+    (cmmmech:asbolane, causal_graphs[0] geobacter_associated_reductive_transformation_graph,
+    lines 172-293), data/records/feitknechtite.yaml (cmmmech:feitknechtite, causal_graphs[0]
+    geobacter_feitknechtite_phase_formation_graph, lines 164-285), and data/records/pyrochroite.yaml
+    (cmmmech:pyrochroite, causal_graphs[0] geobacter_pyrochroite_phase_formation_graph,
+    lines 160-281) — nodes[2] (asbolane.yaml lines 248-249, feitknechtite.yaml lines
+    240-241, pyrochroite.yaml lines 236-237) and nodes[3] (asbolane.yaml lines 255-256,
+    feitknechtite.yaml lines 247-248, pyrochroite.yaml lines 242-243) use generic
+    template descriptions that repeat their capitalized node labels verbatim in parentheses
+    ('Starting synthetic Co/Ni-asbolane mineral suspension (<Label>) incubated anaerobically
+    with Geobacter sulfurreducens.' and 'Reduced product assemblage (<Label>) observed
+    in Chapter 4 of Buchanan (2021/2022).'), and causal_graphs[0].description (asbolane.yaml
+    lines 174-177, feitknechtite.yaml lines 166-169, pyrochroite.yaml lines 162-165)
+    plus edges[0].description (asbolane.yaml lines 263-264, feitknechtite.yaml lines
+    255-256, pyrochroite.yaml lines 250-251) interpolate those capitalized node labels
+    mid-sentence ('... reduction of Synthetic Co/Ni-asbolane suspension ... into Supernatant
+    Mn, Co, and Ni ...' / 'Transient feitknechtite-assigned ...' / 'Pyrochroite-assigned
+    ...'). In this scope, 1 record(s) (asbolane) are affected.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/asbolane.yaml
+    role: maintained_record
+actions:
+- action_id: act-refine-geobacter-buchanan-manganese-mineral-graphs
+  finding_ids:
+  - cmmmech-cycle9-stage4-finding-0003
+  target_ids:
+  - cmmmech:asbolane
+  description: Replace the parenthetically duplicated template descriptions on nodes[2..3]
+    and normalize mid-sentence capitalized node-label interpolations in causal_graphs[0].description
+    and edges[0].description across data/records/asbolane.yaml, data/records/feitknechtite.yaml,
+    and data/records/pyrochroite.yaml during Stage 5 grouped remediation with canonical
+    history provenance.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/asbolane.yaml
+    role: maintained_record
+  acceptance_checks:
+  - nodes[2] and nodes[3] in asbolane.yaml, feitknechtite.yaml, and pyrochroite.yaml
+    have non-duplicated, source-specific descriptions grounded in Buchanan (2021/2022)
+    Chapter 4.
+  - causal_graphs[0].description and edges[0].description in asbolane.yaml, feitknechtite.yaml,
+    and pyrochroite.yaml use lowercase prose without mid-sentence capitalized node
+    labels.
+  - Matching EDIT history sidecars exist in history/records/ and pass just check.
+evidence:
+- evidence_id: ev-asbolane-file
+  kind: record_content
+  reference: data/records/asbolane.yaml
+  locator: causal_graphs[0] (lines 172-293)
+  accessed_at: '2026-11-05T20:20:09Z'
+  support: supports
+  summary: Inspected data/records/asbolane.yaml, verifying causal_graphs[0].description
+    (lines 174-177), nodes[2..3].description (lines 248-256), and edges[0].description
+    (lines 263-264).
+- evidence_id: ev-asbolane-buchanan2021
+  kind: primary_source
+  reference: https://pure.manchester.ac.uk/ws/portalfiles/portal/261215972/FULL_TEXT.PDF
+  locator: Buchanan 2021/2022 University of Manchester PhD thesis, Chapter 4, printed
+    pp. 115-158, Figures 4.1-4.8
+  accessed_at: '2026-11-05T20:20:09Z'
+  support: supports
+  summary: Buchanan (2021/2022) Chapter 4 documents anaerobic incubation of synthetic
+    Co/Ni-asbolane suspension (nominally 2 mmol/L Mn in 10 mM bicarbonate buffer with
+    10 mM sodium acetate and OD600 0.6 Geobacter sulfurreducens at 30 C), releasing
+    supernatant Mn, Co, and Ni above no-cell controls and forming pyrochroite, rhodochrosite,
+    and transient feitknechtite.
+limitations:
+- data/records/asbolane.yaml retains parenthetically duplicated template descriptions
+  on nodes[2..3] and mid-sentence capitalized label interpolations in causal_graphs[0].description
+  and edges[0].description (tracked as open finding cmmmech-cycle9-stage4-finding-0003
+  for Stage 5 remediation).
+notes: []
+```

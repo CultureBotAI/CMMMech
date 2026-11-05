@@ -1,0 +1,288 @@
+# Cycle 9 Stage 4 record review: cmmmech:uranium (Uranium)
+
+- Review: 20261105T202007Z-uranium-cycle9-stage4-record-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-05T20:14:00Z
+- Finished UTC: 2026-11-05T20:20:07Z
+- Reviewer: antigravity / cmmmech-cycle9-stage4-record-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Reviewed data/records/uranium.yaml (cmmmech:uranium) at commit f8f0d8e724bcc013b5e9d98e3d12d5c7557587af. Verified element identity (CHEBI:27214 uranium atom), U.S. 2025 criticality designation, Shewanella oneidensis MR-1 bioelectrochemical uranium separation mechanism and four T3_AqueousICPOES.csv observations (Kane et al. 2026 USGS data release, DOI:10.5066/P9ERLSM6), all synchronized UniProtKB protein_examples (MtrC UniProtKB:Q8EG34, OmcA UniProtKB:Q8EG33, CymA UniProtKB:Q8E8S0), and causal_graphs[0] (mr1_bes_uranium_reduction_graph). Identified 1 minor graph finding (cmmmech-cycle9-stage4-finding-0001: oxidized_metal_substrate and reduced_metal_product retain generic template descriptions, reduced_metal_product is labeled 'Cell-associated reduced U(IV) precipitate' and edges[3] has supports: support despite mechanisms[0] stating that kane_2026_bes does not assign a crystalline phase or U(IV) oxidation state and abiotic controls also removed U, and edges[1..3] interpolate capitalized node labels mid-sentence with generic one-line explanations) for Stage 5 grouped remediation.
+
+## Scope And Provenance
+
+Single-record Cycle 9 Stage 4 audit of cmmmech:uranium.
+
+Selection: data/records/uranium.yaml at f8f0d8e724bcc013b5e9d98e3d12d5c7557587af
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: git_commit at Git base f8f0d8e724bcc013b5e9d98e3d12d5c7557587af.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:uranium | data/records/uranium.yaml | maintained | Uranium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| cmmmech validate uranium.yaml | passed | True | cmmmech:uranium | data/records/uranium.yaml passes LinkML structural, semantic, and canonical top-level key-order validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Shewanella oneidensis MR-1 bioelectrochemical uranium separation causal graph and CymA/MtrC/OmcA groundings
+
+graph: supported. Targets: cmmmech:uranium.
+
+All Shewanella oneidensis MR-1 UniProtKB protein_examples are accurately grounded and synchronized between mechanisms[0] and causal_graphs[0]. However, oxidized_metal_substrate and reduced_metal_product retain generic template descriptions, reduced_metal_product.label and edges[3].evidence[0].supports overstate U(IV) precipitate verification relative to mechanisms[0], and edges[1..3] interpolate capitalized node labels mid-sentence.
+
+## Findings
+
+### cmmmech-cycle9-stage4-finding-0001: Shewanella oneidensis MR-1 bioelectrochemical causal graphs in uranium.yaml and vanadium.yaml retain generic template node/edge descriptions, mid-sentence capitalized labels, and an unqualified U(IV) product label/support rating
+
+minor / open / confirmed; issue key: cmmmech.shewanella-mr1-bes-uranium-vanadium.template-node-descriptions-and-unqualified-uranium-product-label.
+
+In data/records/uranium.yaml (cmmmech:uranium, element, Kane et al. 2026 USGS data release DOI:10.5066/P9ERLSM6; causal_graphs[0] mr1_bes_uranium_reduction_graph, lines 197-338) and data/records/vanadium.yaml (cmmmech:vanadium, element, Kane et al. 2026 USGS data release DOI:10.5066/P9ERLSM6; causal_graphs[0] mr1_bes_vanadium_reduction_graph, lines 199-340), oxidized_metal_substrate (uranium.yaml line 295, vanadium.yaml line 297) and reduced_metal_product (uranium.yaml line 300, vanadium.yaml line 302) retain generic template descriptions repeating their capitalized node labels in parentheses ('Terminal electron acceptor substrate (&lt;Label&gt;) in kane_2026_bes.' and 'Resulting reduced product state (&lt;Label&gt;) in kane_2026_bes.'), and edges[1..3] (uranium.yaml lines 316, 320, 325, 329, 334, 338; vanadium.yaml lines 318, 322, 327, 331, 336, 340) interpolate those capitalized labels mid-sentence with generic one-line evidence explanations ('MtrC participates in extracellular reduction of ...', 'OmcA contributes to extracellular reduction of ...', 'Shewanella oneidensis MR-1 bioelectrochemical/anaerobic reduction converts ...') that omit the exact T3/T6/T7/T8/T9 observations. Furthermore, in data/records/uranium.yaml, causal_graphs[0].nodes[4].label ('Cell-associated reduced U(IV) precipitate', line 298) and causal_graphs[0].edges[3] (supports: support, lines 330-338) assert a reduced U(IV) precipitate with full support, whereas mechanisms[0].description (line 35) and mechanisms[0].evidence[0..2] (lines 114-120) explicitly state that kane_2026_bes (T3_AqueousICPOES.csv, T6, T8_XRD.csv, T9_SEM.pdf pp. 2-6) documents aqueous U depletion (975 mg/kg at BESU.8Vb_W.EQ to &lt;0.1 mg/kg at BESU.8Vb_W.END in biotic vs 914 -&gt; 0.819 mg/kg in abiotic) and U-labelled EDS electrode deposits without assigning a crystalline mineral phase or U(IV) oxidation state and with abiotic removal limiting microbial attribution (supports: partial). In this scope, 1 record(s) (uranium) are affected.
+
+## Recommended Actions And Acceptance Checks
+
+### act-refine-shewanella-mr1-bes-uranium-and-vanadium-graphs
+
+Replace generic template descriptions on oxidized_metal_substrate and reduced_metal_product, qualify reduced_metal_product.label and edges[3].evidence[0].supports (to partial) in uranium.yaml to match the unverified solid valence / phase and abiotic removal documented in kane_2026_bes, and replace mid-sentence capitalized node labels and generic edge explanations with source-specific prose in data/records/uranium.yaml and data/records/vanadium.yaml during Stage 5 grouped remediation with canonical history provenance.
+
+- oxidized_metal_substrate and reduced_metal_product in uranium.yaml and vanadium.yaml have study-specific descriptions grounded in kane_2026_bes T2/T3/T6/T7/T8/T9 without generic template wrappers.
+- reduced_metal_product.label and edges[3].evidence[0].supports in uranium.yaml qualify unverified solid U oxidation state/phase and partial support due to abiotic removal.
+- All mid-sentence node-label interpolations in edges[1..3] of uranium.yaml and vanadium.yaml use lowercase prose and study-specific evidence explanations.
+- Matching EDIT history sidecars exist in history/records/ and pass just check.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| ev-uranium-file | data/records/uranium.yaml; mechanisms[0] (lines 32-120); causal_graphs[0] (lines 197-338) | supports | Inspected data/records/uranium.yaml, verifying mechanisms[0] (lines 32-120) against causal_graphs[0].nodes[3..4] (lines 292-301) and causal_graphs[0].edges[1..3] (lines 312-338). |
+| ev-uranium-kane2026 | DOI:10.5066/P9ERLSM6; Kane et al. 2026 USGS data release, FGDC metadata steps 1-8, T1-T3, T6, T8_XRD.csv, T9_SEM.pdf pp. 2-6 | supports | Kane et al. (2026) report aqueous U depletion from 975 mg/kg (BESU.8Vb_W.EQ) to &lt;0.1 mg/kg (BESU.8Vb_W.END) in the biotic BES arm and from 914 mg/kg (BESU.8Va_W.t0) to 0.819 mg/kg (BESU.8Va_W.END) in the abiotic arm, plus U in electrode acid extracts (T6) and U-labelled EDS deposits on electrodes (T9_SEM.pdf pp. 2-6), without establishing a crystalline U(IV) mineral phase. |
+
+## Limits And Additional Notes
+
+- data/records/uranium.yaml retains generic template substrate/product node descriptions, an unqualified 'Cell-associated reduced U(IV) precipitate' label and 'support' rating on edges[3], and mid-sentence capitalized label interpolations in causal_graphs[0] (tracked as open finding cmmmech-cycle9-stage4-finding-0001 for Stage 5 remediation).
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261105T202007Z-uranium-cycle9-stage4-record-review
+title: 'Cycle 9 Stage 4 record review: cmmmech:uranium (Uranium)'
+repository: CultureBotAI/CMMMech
+kind: record
+started_at: '2026-11-05T20:14:00Z'
+finished_at: '2026-11-05T20:20:07Z'
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'Reviewed data/records/uranium.yaml (cmmmech:uranium) at commit f8f0d8e724bcc013b5e9d98e3d12d5c7557587af.
+  Verified element identity (CHEBI:27214 uranium atom), U.S. 2025 criticality designation,
+  Shewanella oneidensis MR-1 bioelectrochemical uranium separation mechanism and four
+  T3_AqueousICPOES.csv observations (Kane et al. 2026 USGS data release, DOI:10.5066/P9ERLSM6),
+  all synchronized UniProtKB protein_examples (MtrC UniProtKB:Q8EG34, OmcA UniProtKB:Q8EG33,
+  CymA UniProtKB:Q8E8S0), and causal_graphs[0] (mr1_bes_uranium_reduction_graph).
+  Identified 1 minor graph finding (cmmmech-cycle9-stage4-finding-0001: oxidized_metal_substrate
+  and reduced_metal_product retain generic template descriptions, reduced_metal_product
+  is labeled ''Cell-associated reduced U(IV) precipitate'' and edges[3] has supports:
+  support despite mechanisms[0] stating that kane_2026_bes does not assign a crystalline
+  phase or U(IV) oxidation state and abiotic controls also removed U, and edges[1..3]
+  interpolate capitalized node labels mid-sentence with generic one-line explanations)
+  for Stage 5 grouped remediation.'
+reviewer:
+  identity: antigravity / cmmmech-cycle9-stage4-record-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of Cycle 9 Stage 4 record_review
+    (.claude/skills/review-yaml-record/SKILL.md) against frozen commit f8f0d8e724bcc013b5e9d98e3d12d5c7557587af.
+source:
+  git_revision: f8f0d8e724bcc013b5e9d98e3d12d5c7557587af
+  state: git_commit
+  inputs:
+  - path: data/records/uranium.yaml
+    sha256: 826c448b4b6345f9105a7172edb4e596406b396f38797f0e147ba0e9d1a17249
+    role: target
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+  - path: src/cmmmech/validation.py
+    sha256: edf999adb3da7dceadcc340b5561663a7fb56dfd1178992633a1a7ad1abcb937
+    role: context
+scope:
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:uranium
+  selection: data/records/uranium.yaml at f8f0d8e724bcc013b5e9d98e3d12d5c7557587af
+  description: Single-record Cycle 9 Stage 4 audit of cmmmech:uranium.
+targets:
+- target_id: cmmmech:uranium
+  path: data/records/uranium.yaml
+  kind: maintained
+  label: Uranium
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/uranium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+checks:
+- check_id: cmmmech-validate-uranium
+  name: cmmmech validate uranium.yaml
+  status: passed
+  required: true
+  command: .venv/bin/cmmmech validate data/records/uranium.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:uranium
+  evidence_ids:
+  - ev-uranium-file
+  summary: data/records/uranium.yaml passes LinkML structural, semantic, and canonical
+    top-level key-order validation with 0 errors.
+assessments:
+- assessment_id: assess-uranium-mr1-bes-graph-and-proteins
+  topic: Shewanella oneidensis MR-1 bioelectrochemical uranium separation causal graph
+    and CymA/MtrC/OmcA groundings
+  area: graph
+  outcome: supported
+  target_ids:
+  - cmmmech:uranium
+  evidence_ids:
+  - ev-uranium-file
+  - ev-uranium-kane2026
+  summary: All Shewanella oneidensis MR-1 UniProtKB protein_examples are accurately
+    grounded and synchronized between mechanisms[0] and causal_graphs[0]. However,
+    oxidized_metal_substrate and reduced_metal_product retain generic template descriptions,
+    reduced_metal_product.label and edges[3].evidence[0].supports overstate U(IV)
+    precipitate verification relative to mechanisms[0], and edges[1..3] interpolate
+    capitalized node labels mid-sentence.
+findings:
+- finding_id: cmmmech-cycle9-stage4-finding-0001
+  issue_key: cmmmech.shewanella-mr1-bes-uranium-vanadium.template-node-descriptions-and-unqualified-uranium-product-label
+  title: Shewanella oneidensis MR-1 bioelectrochemical causal graphs in uranium.yaml
+    and vanadium.yaml retain generic template node/edge descriptions, mid-sentence
+    capitalized labels, and an unqualified U(IV) product label/support rating
+  severity: minor
+  category: graph
+  certainty: confirmed
+  status: open
+  target_ids:
+  - cmmmech:uranium
+  field_paths:
+  - causal_graphs[0].nodes[3].description
+  - causal_graphs[0].nodes[4].label
+  - causal_graphs[0].nodes[4].description
+  - causal_graphs[0].edges[1].description
+  - causal_graphs[0].edges[1].evidence[0].explanation
+  - causal_graphs[0].edges[2].description
+  - causal_graphs[0].edges[2].evidence[0].explanation
+  - causal_graphs[0].edges[3].description
+  - causal_graphs[0].edges[3].evidence[0].supports
+  - causal_graphs[0].edges[3].evidence[0].explanation
+  evidence_ids:
+  - ev-uranium-file
+  - ev-uranium-kane2026
+  description: 'In data/records/uranium.yaml (cmmmech:uranium, element, Kane et al.
+    2026 USGS data release DOI:10.5066/P9ERLSM6; causal_graphs[0] mr1_bes_uranium_reduction_graph,
+    lines 197-338) and data/records/vanadium.yaml (cmmmech:vanadium, element, Kane
+    et al. 2026 USGS data release DOI:10.5066/P9ERLSM6; causal_graphs[0] mr1_bes_vanadium_reduction_graph,
+    lines 199-340), oxidized_metal_substrate (uranium.yaml line 295, vanadium.yaml
+    line 297) and reduced_metal_product (uranium.yaml line 300, vanadium.yaml line
+    302) retain generic template descriptions repeating their capitalized node labels
+    in parentheses (''Terminal electron acceptor substrate (<Label>) in kane_2026_bes.''
+    and ''Resulting reduced product state (<Label>) in kane_2026_bes.''), and edges[1..3]
+    (uranium.yaml lines 316, 320, 325, 329, 334, 338; vanadium.yaml lines 318, 322,
+    327, 331, 336, 340) interpolate those capitalized labels mid-sentence with generic
+    one-line evidence explanations (''MtrC participates in extracellular reduction
+    of ...'', ''OmcA contributes to extracellular reduction of ...'', ''Shewanella
+    oneidensis MR-1 bioelectrochemical/anaerobic reduction converts ...'') that omit
+    the exact T3/T6/T7/T8/T9 observations. Furthermore, in data/records/uranium.yaml,
+    causal_graphs[0].nodes[4].label (''Cell-associated reduced U(IV) precipitate'',
+    line 298) and causal_graphs[0].edges[3] (supports: support, lines 330-338) assert
+    a reduced U(IV) precipitate with full support, whereas mechanisms[0].description
+    (line 35) and mechanisms[0].evidence[0..2] (lines 114-120) explicitly state that
+    kane_2026_bes (T3_AqueousICPOES.csv, T6, T8_XRD.csv, T9_SEM.pdf pp. 2-6) documents
+    aqueous U depletion (975 mg/kg at BESU.8Vb_W.EQ to <0.1 mg/kg at BESU.8Vb_W.END
+    in biotic vs 914 -> 0.819 mg/kg in abiotic) and U-labelled EDS electrode deposits
+    without assigning a crystalline mineral phase or U(IV) oxidation state and with
+    abiotic removal limiting microbial attribution (supports: partial). In this scope,
+    1 record(s) (uranium) are affected.'
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/uranium.yaml
+    role: maintained_record
+actions:
+- action_id: act-refine-shewanella-mr1-bes-uranium-and-vanadium-graphs
+  finding_ids:
+  - cmmmech-cycle9-stage4-finding-0001
+  target_ids:
+  - cmmmech:uranium
+  description: Replace generic template descriptions on oxidized_metal_substrate and
+    reduced_metal_product, qualify reduced_metal_product.label and edges[3].evidence[0].supports
+    (to partial) in uranium.yaml to match the unverified solid valence / phase and
+    abiotic removal documented in kane_2026_bes, and replace mid-sentence capitalized
+    node labels and generic edge explanations with source-specific prose in data/records/uranium.yaml
+    and data/records/vanadium.yaml during Stage 5 grouped remediation with canonical
+    history provenance.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/uranium.yaml
+    role: maintained_record
+  acceptance_checks:
+  - oxidized_metal_substrate and reduced_metal_product in uranium.yaml and vanadium.yaml
+    have study-specific descriptions grounded in kane_2026_bes T2/T3/T6/T7/T8/T9 without
+    generic template wrappers.
+  - reduced_metal_product.label and edges[3].evidence[0].supports in uranium.yaml
+    qualify unverified solid U oxidation state/phase and partial support due to abiotic
+    removal.
+  - All mid-sentence node-label interpolations in edges[1..3] of uranium.yaml and
+    vanadium.yaml use lowercase prose and study-specific evidence explanations.
+  - Matching EDIT history sidecars exist in history/records/ and pass just check.
+evidence:
+- evidence_id: ev-uranium-file
+  kind: record_content
+  reference: data/records/uranium.yaml
+  locator: mechanisms[0] (lines 32-120); causal_graphs[0] (lines 197-338)
+  accessed_at: '2026-11-05T20:20:07Z'
+  support: supports
+  summary: Inspected data/records/uranium.yaml, verifying mechanisms[0] (lines 32-120)
+    against causal_graphs[0].nodes[3..4] (lines 292-301) and causal_graphs[0].edges[1..3]
+    (lines 312-338).
+- evidence_id: ev-uranium-kane2026
+  kind: primary_source
+  reference: DOI:10.5066/P9ERLSM6
+  locator: Kane et al. 2026 USGS data release, FGDC metadata steps 1-8, T1-T3, T6,
+    T8_XRD.csv, T9_SEM.pdf pp. 2-6
+  accessed_at: '2026-11-05T20:20:07Z'
+  support: supports
+  summary: Kane et al. (2026) report aqueous U depletion from 975 mg/kg (BESU.8Vb_W.EQ)
+    to <0.1 mg/kg (BESU.8Vb_W.END) in the biotic BES arm and from 914 mg/kg (BESU.8Va_W.t0)
+    to 0.819 mg/kg (BESU.8Va_W.END) in the abiotic arm, plus U in electrode acid extracts
+    (T6) and U-labelled EDS deposits on electrodes (T9_SEM.pdf pp. 2-6), without establishing
+    a crystalline U(IV) mineral phase.
+limitations:
+- data/records/uranium.yaml retains generic template substrate/product node descriptions,
+  an unqualified 'Cell-associated reduced U(IV) precipitate' label and 'support' rating
+  on edges[3], and mid-sentence capitalized label interpolations in causal_graphs[0]
+  (tracked as open finding cmmmech-cycle9-stage4-finding-0001 for Stage 5 remediation).
+notes: []
+```
