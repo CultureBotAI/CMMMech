@@ -16,13 +16,13 @@ At commit `573410374de4d10b2595b6bf75a1f2138ea33ed7`, the `data/records/*.yaml` 
 
 | Cohort / Slice | Eligible Records | Reviewed Records | Coverage Ratio | Records with `mechanisms` (Total `mechanisms`) | Records with `causal_graphs` (Total `causal_graphs`) | Records with `protein_examples` (Unique UniProtKB Accessions) | Structured Review Bundle (`reviews/structured/<id>/`) |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | --- |
-| `element` | `66` | `66` | `1.000` | `63` (`55` microbial, `8` abiotic; `66` total) | `26` (`27`) | `25` (`40`) | `20261105T005500Z-cycle8-stage4-element-cohort-review` |
-| `mineral` | `432` | `432` | `1.000` | `285` (`129` microbial, `156` abiotic; `343` total) | `62` (`66`) | `60` (`43`) | `20261105T005501Z-cycle8-stage4-mineral-cohort-review` |
-| `mineral_group` | `7` | `7` | `1.000` | `7` (`7` microbial; `7` total) | `2` (`2`) | `2` (`7`) | `20261105T005502Z-cycle8-stage4-mineral-group-cohort-review` |
-| `commodity` | `36` | `36` | `1.000` | `6` (`4` microbial, `2` abiotic; `6` total) | `4` (`4`) | `4` (`6`) | `20261105T005503Z-cycle8-stage4-commodity-cohort-review` |
-| `primary_resource` | `31` | `31` | `1.000` | `31` (`23` microbial, `8` abiotic; `42` total) | `13` (`14`) | `13` (`35`) | `20261105T005504Z-cycle8-stage4-primary-resource-cohort-review` |
-| `secondary_resource` | `111` | `111` | `1.000` | `108` (`64` microbial, `44` abiotic; `145` total) | `45` (`48`) | `45` (`34`) | `20261105T005505Z-cycle8-stage4-secondary-resource-cohort-review` |
-| **Total Disjoint Corpus** | **`683`** | **`683`** | **`1.000`** | **`500` (`282` microbial, `218` abiotic-only; `609` total)** | **`152` (`161`)** | **`149` (`81` unique: `23` `SWISS_PROT`, `58` `TREMBL`)** | — |
+| `element` | `66` | `66` | `1.000` | `63` (`63` microbial, `0` abiotic-only; `66` microbial mechanisms, `0` abiotic) | `26` (`27`) | `25` (`40`) | `20261105T005500Z-cycle8-stage4-element-cohort-review` |
+| `mineral` | `432` | `432` | `1.000` | `285` (`158` microbial, `127` abiotic-only; `343` total: `179` microbial, `164` abiotic) | `62` (`66`) | `60` (`43`) | `20261105T005501Z-cycle8-stage4-mineral-cohort-review` |
+| `mineral_group` | `7` | `7` | `1.000` | `7` (`7` microbial, `0` abiotic-only; `7` microbial mechanisms, `0` abiotic) | `2` (`2`) | `2` (`7`) | `20261105T005502Z-cycle8-stage4-mineral-group-cohort-review` |
+| `commodity` | `36` | `36` | `1.000` | `6` (`6` microbial, `0` abiotic-only; `6` microbial mechanisms, `0` abiotic) | `4` (`4`) | `4` (`6`) | `20261105T005503Z-cycle8-stage4-commodity-cohort-review` |
+| `primary_resource` | `31` | `31` | `1.000` | `31` (`29` microbial, `2` abiotic-only; `42` total: `40` microbial, `2` abiotic) | `13` (`14`) | `13` (`35`) | `20261105T005504Z-cycle8-stage4-primary-resource-cohort-review` |
+| `secondary_resource` | `111` | `111` | `1.000` | `108` (`85` microbial, `23` abiotic-only; `145` total: `104` microbial, `41` abiotic) | `45` (`48`) | `45` (`34`) | `20261105T005505Z-cycle8-stage4-secondary-resource-cohort-review` |
+| **Total Disjoint Corpus** | **`683`** | **`683`** | **`1.000`** | **`500` (`348` microbial, `152` abiotic-only; `609` total: `402` microbial, `207` abiotic)** | **`152` (`161`)** | **`149` (`81` unique: `23` `SWISS_PROT`, `58` `TREMBL`)** | — |
 | Cross-Cohort `causal_graphs` & `protein_examples` | `152` | `152` | `1.000` | `152` | `152` (`161` graphs, `742` nodes, `581` edges, `283` `GENE_OR_PROTEIN`: `277` `GROUNDED`, `6` `UNGROUNDED`) | `149` (`491` `protein_examples` per layer, `982` total) | `20261105T005506Z-cycle8-stage4-causal-graphs-cohort-review` |
 
 ### Single-Record Deep-Dive Reviews (`kind: record`)

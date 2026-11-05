@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 36 commodity records in data/records/*.yaml at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7. All 36 commodity records maintain strict boundary separation from elements, minerals, and raw ores/wastes, carry dated jurisdiction-scoped criticality entries across all 36/36 records, and include primary-source-supported mechanisms across 6/36 records (6 mechanisms total: 4 microbial and 2 abiotic), with 4/36 (alumina, bauxite, electrolytic-manganese-dioxide, phosphate-rock) carrying causal_graphs (4 graphs, 6 GENE_OR_PROTEIN nodes: 6 GROUNDED and 0 UNGROUNDED) grounded to 6 unique UniProtKB accessions. Confirmed 0 open findings in this cohort.
+Reviewed all 36 commodity records in data/records/*.yaml at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7. All 36 commodity records maintain strict boundary separation from elements, minerals, and raw ores/wastes; 26/36 carry dated jurisdiction-scoped criticality entries (while 10 refined chemical compounds, battery precursors, and alloys — electrolytic-manganese-dioxide, electrolytic-manganese-metal, ferroboron, graphite-anode-material, lithium-carbonate, lithium-hydroxide-monohydrate, manganese-sulfate-monohydrate, metallurgical-coal, nickel-sulfate-hexahydrate, and tin-copper-solder — omit uninherited parent-element criticality lists); and 6/36 (borates, coking-coal, phosphate-rock, rare-earth-element-commodities, tin-copper-solder, titanium-metal) include primary-source-supported microbial mechanisms (6 microbial mechanisms total, 0 abiotic), with 4/36 (borates, phosphate-rock, rare-earth-element-commodities, titanium-metal) carrying causal_graphs (4 graphs, 6 GENE_OR_PROTEIN nodes: 6 GROUNDED and 0 UNGROUNDED) grounded to 6 unique UniProtKB accessions. Confirmed 0 open findings in this cohort.
 
 ## Scope And Provenance
 
@@ -115,10 +115,15 @@ verdict: pass_with_limitations
 scientific_review: true
 summary: 'Reviewed all 36 commodity records in data/records/*.yaml at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7.
   All 36 commodity records maintain strict boundary separation from elements, minerals,
-  and raw ores/wastes, carry dated jurisdiction-scoped criticality entries across
-  all 36/36 records, and include primary-source-supported mechanisms across 6/36 records
-  (6 mechanisms total: 4 microbial and 2 abiotic), with 4/36 (alumina, bauxite, electrolytic-manganese-dioxide,
-  phosphate-rock) carrying causal_graphs (4 graphs, 6 GENE_OR_PROTEIN nodes: 6 GROUNDED
+  and raw ores/wastes; 26/36 carry dated jurisdiction-scoped criticality entries (while
+  10 refined chemical compounds, battery precursors, and alloys — electrolytic-manganese-dioxide,
+  electrolytic-manganese-metal, ferroboron, graphite-anode-material, lithium-carbonate,
+  lithium-hydroxide-monohydrate, manganese-sulfate-monohydrate, metallurgical-coal,
+  nickel-sulfate-hexahydrate, and tin-copper-solder — omit uninherited parent-element
+  criticality lists); and 6/36 (borates, coking-coal, phosphate-rock, rare-earth-element-commodities,
+  tin-copper-solder, titanium-metal) include primary-source-supported microbial mechanisms
+  (6 microbial mechanisms total, 0 abiotic), with 4/36 (borates, phosphate-rock, rare-earth-element-commodities,
+  titanium-metal) carrying causal_graphs (4 graphs, 6 GENE_OR_PROTEIN nodes: 6 GROUNDED
   and 0 UNGROUNDED) grounded to 6 unique UniProtKB accessions. Confirmed 0 open findings
   in this cohort.'
 reviewer:

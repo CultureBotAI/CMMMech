@@ -238,6 +238,7 @@ findings:
   - cmmmech:schwertmannite
   field_paths:
   - causal_graphs[0].edges[0].description
+  - causal_graphs[1].edges[0].description
   evidence_ids:
   - ev-schwertmannite-file
   - ev-schwertmannite-song2018

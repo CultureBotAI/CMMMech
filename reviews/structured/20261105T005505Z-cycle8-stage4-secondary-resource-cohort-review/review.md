@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 111 secondary_resource records in data/records/*.yaml at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7, including the 4 Cycle 8 Stage 2 (PR #924, commit d69682fb) and Stage 3 (PR #926, commit 57341037) secondary_resource causal-graph and multi-strain UniProtKB grounding additions (basic-oxygen-furnace-steelmaking-dust, cemented-tungsten-carbide-scrap, nickel-smelter-slag, spent-steel-pickling-liquors), and verifying resolution of Cycle 7 Stage 4 finding 0002 on coal-beneficiation-waste, copper-smelter-flue-dust, and pyrite-roasting-cinder (PR #921, commit be23f1ee). 108/111 secondary_resource records contain primary-source-supported mechanisms (145 mechanisms total across 64 microbial and 44 abiotic records), and 45/111 contain causal_graphs (48 graphs, 92 GENE_OR_PROTEIN nodes: 92 GROUNDED and 0 UNGROUNDED) grounded to 34 unique UniProtKB accessions. Identified 1 minor graph edge description finding (cmmmech-cycle8-stage4-finding-0002 in 4 secondary_resource records: basic-oxygen-furnace-steelmaking-dust, cemented-tungsten-carbide-scrap, nickel-smelter-slag, spent-steel-pickling-liquors) for Stage 5 grouped remediation.
+Reviewed all 111 secondary_resource records in data/records/*.yaml at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7, including the 4 Cycle 8 Stage 2 (PR #924, commit d69682fb) and Stage 3 (PR #926, commit 57341037) secondary_resource causal-graph and multi-strain UniProtKB grounding additions (basic-oxygen-furnace-steelmaking-dust, cemented-tungsten-carbide-scrap, nickel-smelter-slag, spent-steel-pickling-liquors), and verifying resolution of Cycle 7 Stage 4 finding 0002 on coal-beneficiation-waste, copper-smelter-flue-dust, and pyrite-roasting-cinder (PR #921, commit be23f1ee). 108/111 secondary_resource records contain primary-source-supported mechanisms (85 records with microbial mechanisms and 23 records with abiotic-only mechanisms; 145 mechanisms total: 104 microbial and 41 abiotic), and 45/111 contain causal_graphs (48 graphs, 92 GENE_OR_PROTEIN nodes: 92 GROUNDED and 0 UNGROUNDED) grounded to 34 unique UniProtKB accessions. Identified 1 minor graph edge description finding (cmmmech-cycle8-stage4-finding-0002 in 4 secondary_resource records: basic-oxygen-furnace-steelmaking-dust, cemented-tungsten-carbide-scrap, nickel-smelter-slag, spent-steel-pickling-liquors) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -181,7 +181,7 @@ Replace mid-sentence 'to Periplasmic rusticyanin' with 'to periplasmic rusticyan
 
 ## Limits And Additional Notes
 
-- 3 of 111 secondary_resource records (cmmmech:coal-ash, cmmmech:mine-tailings, cmmmech:red-mud) are overarching waste-stream category records that currently lack substrate-specific microbial mechanism entries.
+- 3 of 111 secondary_resource records (cmmmech:oil-and-gas-produced-water, cmmmech:spent-vegetable-oil-hydrogenation-catalyst, cmmmech:theisen-sludge) currently lack primary-source extraction or bioleaching mechanism entries.
 - 63 of 108 mechanism-bearing secondary_resource records represent abiotic controls or mixed-consortium/heterotrophic leaching studies without strain-resolved enzymatic causal graphs.
 - Cohort covers 100% (111/111) of secondary_resource records in data/records/*.yaml at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7.
 
@@ -208,11 +208,12 @@ summary: 'Reviewed all 111 secondary_resource records in data/records/*.yaml at 
   cemented-tungsten-carbide-scrap, nickel-smelter-slag, spent-steel-pickling-liquors),
   and verifying resolution of Cycle 7 Stage 4 finding 0002 on coal-beneficiation-waste,
   copper-smelter-flue-dust, and pyrite-roasting-cinder (PR #921, commit be23f1ee).
-  108/111 secondary_resource records contain primary-source-supported mechanisms (145
-  mechanisms total across 64 microbial and 44 abiotic records), and 45/111 contain
-  causal_graphs (48 graphs, 92 GENE_OR_PROTEIN nodes: 92 GROUNDED and 0 UNGROUNDED)
-  grounded to 34 unique UniProtKB accessions. Identified 1 minor graph edge description
-  finding (cmmmech-cycle8-stage4-finding-0002 in 4 secondary_resource records: basic-oxygen-furnace-steelmaking-dust,
+  108/111 secondary_resource records contain primary-source-supported mechanisms (85
+  records with microbial mechanisms and 23 records with abiotic-only mechanisms; 145
+  mechanisms total: 104 microbial and 41 abiotic), and 45/111 contain causal_graphs
+  (48 graphs, 92 GENE_OR_PROTEIN nodes: 92 GROUNDED and 0 UNGROUNDED) grounded to
+  34 unique UniProtKB accessions. Identified 1 minor graph edge description finding
+  (cmmmech-cycle8-stage4-finding-0002 in 4 secondary_resource records: basic-oxygen-furnace-steelmaking-dust,
   cemented-tungsten-carbide-scrap, nickel-smelter-slag, spent-steel-pickling-liquors)
   for Stage 5 grouped remediation.'
 reviewer:
@@ -2707,9 +2708,9 @@ evidence:
     mid-sentence capitalized 'to Periplasmic rusticyanin and diheme cytochrome c4
     Cyc1 (rus AFE_3146; cyc1 AFE_3152).' in causal_graphs[0].edges[0].description.
 limitations:
-- 3 of 111 secondary_resource records (cmmmech:coal-ash, cmmmech:mine-tailings, cmmmech:red-mud)
-  are overarching waste-stream category records that currently lack substrate-specific
-  microbial mechanism entries.
+- 3 of 111 secondary_resource records (cmmmech:oil-and-gas-produced-water, cmmmech:spent-vegetable-oil-hydrogenation-catalyst,
+  cmmmech:theisen-sludge) currently lack primary-source extraction or bioleaching
+  mechanism entries.
 - 63 of 108 mechanism-bearing secondary_resource records represent abiotic controls
   or mixed-consortium/heterotrophic leaching studies without strain-resolved enzymatic
   causal graphs.

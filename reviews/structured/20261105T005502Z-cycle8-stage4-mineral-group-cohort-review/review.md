@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 7 mineral_group records in data/records/*.yaml at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7 (apatite-group, chlorite-group, eudialyte-group, illite-group, monazite-group, pyrochlore-group, smectite-group). All 7/7 mineral_group records contain primary-source-supported microbial mechanisms (7 mechanisms total), and 2/7 (cmmmech:illite-group and cmmmech:smectite-group) contain causal_graphs (2 graphs, 6 GENE_OR_PROTEIN nodes: 6 GROUNDED and 0 UNGROUNDED) grounded to 7 unique Shewanella oneidensis MR-1 UniProtKB accessions (CymA, MtrA, MtrB, MtrC, OmcA, CctA, FccA). Confirmed 0 open findings in this cohort.
+Reviewed all 7 mineral_group records in data/records/*.yaml at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7 (bastnaesite, biotite, chlorite, illite, olivine-group, potassium-feldspar, vermiculite). All 7/7 mineral_group records contain primary-source-supported microbial mechanisms (7 mechanisms total), and 2/7 (cmmmech:chlorite and cmmmech:olivine-group) contain causal_graphs (2 graphs, 6 GENE_OR_PROTEIN nodes: 6 GROUNDED and 0 UNGROUNDED) grounded to 7 unique UniProtKB accessions across Shewanella oneidensis MR-1 (CymA UniProtKB:Q8E8S0, MtrC UniProtKB:Q8EG34, OmcA UniProtKB:Q8EG33 in chlorite) and Gluconobacter oxydans 621H (PstS paralogs UniProtKB:Q5FTI1 and UniProtKB:Q5FSF4, PqqC UniProtKB:Q9L3B2, Gdh UniProtKB:P27175 in olivine-group). Confirmed 0 open findings in this cohort.
 
 ## Scope And Provenance
 
@@ -41,7 +41,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 ## Scientific And Domain Assessments
 
-### Mineral group vs endmember species distinction, microbial mechanisms, and Shewanella MR-1 causal graphs
+### Mineral group vs endmember species distinction, microbial mechanisms, and Shewanella MR-1 / Gluconobacter oxydans causal graphs
 
 evidence: supported. Targets: cmmmech:bastnaesite, cmmmech:biotite, cmmmech:chlorite, cmmmech:illite, cmmmech:olivine-group, cmmmech:potassium-feldspar, cmmmech:vermiculite.
 
@@ -65,7 +65,7 @@ No findings recorded within this review's declared scope.
 
 ## Limits And Additional Notes
 
-- 5 of 7 mineral_group records (apatite-group, chlorite-group, eudialyte-group, monazite-group, pyrochlore-group) have organic-acid or heterotrophic bioleaching mechanisms without strain-resolved enzymatic causal graphs in the cited primary studies.
+- 5 of 7 mineral_group records (bastnaesite, biotite, illite, potassium-feldspar, vermiculite) have organic-acid or heterotrophic bioleaching/bioweathering mechanisms without strain-resolved enzymatic causal graphs in the cited primary studies.
 - Cohort covers 100% (7/7) of mineral_group records in data/records/*.yaml at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7.
 
 ## Complete Structured Record
@@ -85,12 +85,14 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 summary: 'Reviewed all 7 mineral_group records in data/records/*.yaml at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7
-  (apatite-group, chlorite-group, eudialyte-group, illite-group, monazite-group, pyrochlore-group,
-  smectite-group). All 7/7 mineral_group records contain primary-source-supported
-  microbial mechanisms (7 mechanisms total), and 2/7 (cmmmech:illite-group and cmmmech:smectite-group)
-  contain causal_graphs (2 graphs, 6 GENE_OR_PROTEIN nodes: 6 GROUNDED and 0 UNGROUNDED)
-  grounded to 7 unique Shewanella oneidensis MR-1 UniProtKB accessions (CymA, MtrA,
-  MtrB, MtrC, OmcA, CctA, FccA). Confirmed 0 open findings in this cohort.'
+  (bastnaesite, biotite, chlorite, illite, olivine-group, potassium-feldspar, vermiculite).
+  All 7/7 mineral_group records contain primary-source-supported microbial mechanisms
+  (7 mechanisms total), and 2/7 (cmmmech:chlorite and cmmmech:olivine-group) contain
+  causal_graphs (2 graphs, 6 GENE_OR_PROTEIN nodes: 6 GROUNDED and 0 UNGROUNDED) grounded
+  to 7 unique UniProtKB accessions across Shewanella oneidensis MR-1 (CymA UniProtKB:Q8E8S0,
+  MtrC UniProtKB:Q8EG34, OmcA UniProtKB:Q8EG33 in chlorite) and Gluconobacter oxydans
+  621H (PstS paralogs UniProtKB:Q5FTI1 and UniProtKB:Q5FSF4, PqqC UniProtKB:Q9L3B2,
+  Gdh UniProtKB:P27175 in olivine-group). Confirmed 0 open findings in this cohort.'
 reviewer:
   identity: antigravity / cmmmech-cycle8-stage4-cohort-reviewer
   kind: agent
@@ -284,7 +286,7 @@ checks:
 assessments:
 - assessment_id: assess-mineral-group-identity-and-mechanisms
   topic: Mineral group vs endmember species distinction, microbial mechanisms, and
-    Shewanella MR-1 causal graphs
+    Shewanella MR-1 / Gluconobacter oxydans causal graphs
   area: evidence
   outcome: supported
   target_ids:
@@ -311,9 +313,9 @@ evidence:
   summary: Full programmatic and source-backed audit of all 7 mineral_group records
     at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7.
 limitations:
-- 5 of 7 mineral_group records (apatite-group, chlorite-group, eudialyte-group, monazite-group,
-  pyrochlore-group) have organic-acid or heterotrophic bioleaching mechanisms without
-  strain-resolved enzymatic causal graphs in the cited primary studies.
+- 5 of 7 mineral_group records (bastnaesite, biotite, illite, potassium-feldspar,
+  vermiculite) have organic-acid or heterotrophic bioleaching/bioweathering mechanisms
+  without strain-resolved enzymatic causal graphs in the cited primary studies.
 notes:
 - Cohort covers 100% (7/7) of mineral_group records in data/records/*.yaml at commit
   573410374de4d10b2595b6bf75a1f2138ea33ed7.

@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed data/records/uraninite.yaml (cmmmech:uraninite) at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7. Verified IMA mineral identity (UO2, CHEBI:52668), Shewanella oneidensis MR-1 uranyl reduction and extracellular/periplasmic UO2 nanoparticle bioprecipitation mechanism (Marshall et al. 2006, PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268), all synchronized Shewanella oneidensis MR-1 UniProtKB protein_examples, and causal_graphs[0]. Identified 1 minor graph node/edge description finding (cmmmech-cycle8-stage4-finding-0003: oxidized_metal_substrate and reduced_metal_product in causal_graphs[0] retain generic template placeholder descriptions and protein_examples/edges interpolate capitalized node labels mid-sentence) for Stage 5 grouped remediation.
+Reviewed data/records/uraninite.yaml (cmmmech:uraninite) at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7. Verified IMA mineral identity (UO2), Shewanella oneidensis MR-1 uranyl reduction and extracellular/periplasmic UO2 nanoparticle bioprecipitation mechanism (Marshall et al. 2006, PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268), all synchronized Shewanella oneidensis MR-1 UniProtKB protein_examples, and causal_graphs[0]. Identified 1 minor graph node/edge description finding (cmmmech-cycle8-stage4-finding-0003: oxidized_metal_substrate and reduced_metal_product in causal_graphs[0] retain generic template placeholder descriptions and protein_examples/edges interpolate capitalized node labels mid-sentence) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -46,7 +46,7 @@ All Shewanella oneidensis MR-1 UniProtKB protein_examples are accurately grounde
 
 minor / open / confirmed; issue key: cmmmech.shewanella-mr1-chromium-uraninite.unqualified-template-node-descriptions-and-capitalized-interpolations.
 
-In data/records/chromium.yaml (cmmmech:chromium, element, Belchik et al. 2011, Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10) and data/records/uraninite.yaml (cmmmech:uraninite, mineral, Marshall et al. 2006, PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268), oxidized_metal_substrate and reduced_metal_product in causal_graphs[0] retain generic template placeholder descriptions ('Oxidized metal species or mineral substrate (&lt;Label&gt;) accepting extracellular electrons.' and 'Reduced metal species or mineral phase (&lt;Label&gt;) formed by extracellular electron transfer.'), and mechanisms[0].protein_examples[0..1].evidence[0].explanation, causal_graphs[0].nodes[...].protein_examples[0].evidence[0].explanation, and causal_graphs[0].edges[...].{description,evidence[0].explanation} interpolate the capitalized node labels verbatim mid-sentence ('... to Dissolved chromate Cr(VI)', '... into Reduced Cr(III) precipitate/complexes', '... to Soluble uranyl carbonate U(VI) complexes', '... into Extracellular nanocrystalline uraninite (UO2)'). Furthermore, in chromium.yaml (causal_graphs[0].nodes[4], lines 218-222, and edges[3], lines 251-259), reduced_metal_product is labeled 'Reduced Cr(III) precipitate/complexes' without the qualification stated in mechanisms[0].description (line 35) and mechanisms[0].evidence[1].explanation (line 116) that Belchik et al. (2011) detected elemental Cr in electron-dense precipitates by TEM-EDX (Figures 2-3) and inferred Cr(III) valence from prior studies rather than oxidation-state spectroscopy. In this scope, 1 record(s) (uraninite) are affected.
+In data/records/chromium.yaml (cmmmech:chromium, element, Belchik et al. 2011, Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10; causal_graphs[0] lines 118-260, nodes[3..4] lines 213-222, edges[1..3] lines 233-259) and data/records/uraninite.yaml (cmmmech:uraninite, mineral, Marshall et al. 2006, PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268; causal_graphs[0] lines 195-397, nodes[4..5] lines 333-344, edges[2..4] lines 367-397), oxidized_metal_substrate and reduced_metal_product in causal_graphs[0] retain generic template placeholder descriptions ('Oxidized metal species or mineral substrate (&lt;Label&gt;) accepting extracellular electrons.' and 'Reduced metal species or mineral phase (&lt;Label&gt;) formed by extracellular electron transfer.'), and mechanisms[0].protein_examples[0..1].evidence[0].explanation, causal_graphs[0].nodes[...].protein_examples[0].evidence[0].explanation, and causal_graphs[0].edges[...].{description,evidence[0].explanation} interpolate the capitalized node labels verbatim mid-sentence ('... to Dissolved chromate Cr(VI)', '... into Reduced Cr(III) precipitate/complexes', '... to Soluble uranyl carbonate U(VI) complexes', '... into Extracellular nanocrystalline uraninite (UO2)'). Furthermore, in chromium.yaml (causal_graphs[0].nodes[4], lines 218-222, and edges[3], lines 251-259), reduced_metal_product is labeled 'Reduced Cr(III) precipitate/complexes' without the qualification stated in mechanisms[0].description (line 35) and mechanisms[0].evidence[1].explanation (line 116) that Belchik et al. (2011) detected elemental Cr in electron-dense precipitates by TEM-EDX (Figures 2-3) and inferred Cr(III) valence from prior studies rather than oxidation-state spectroscopy. In this scope, 1 record(s) (uraninite) are affected.
 
 ## Recommended Actions And Acceptance Checks
 
@@ -65,7 +65,7 @@ Replace the generic template descriptions on oxidized_metal_substrate and reduce
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| ev-uraninite-file | data/records/uraninite.yaml; causal_graphs[0] (lines 118-260) | supports | Inspected data/records/uraninite.yaml, verifying oxidized_metal_substrate and reduced_metal_product descriptions and mid-sentence capitalized label interpolations in protein_examples and edges. |
+| ev-uraninite-file | data/records/uraninite.yaml; causal_graphs[0] (lines 195-397) | supports | Inspected data/records/uraninite.yaml, verifying oxidized_metal_substrate and reduced_metal_product descriptions and mid-sentence capitalized label interpolations in protein_examples and edges. |
 | ev-uraninite-marshall2006 | DOI:10.1371/journal.pbio.0040268; Marshall et al. 2006 PLOS Biology 4(8):e268, pp. 1324-1333, Figures 1-6 | supports | Marshall et al. (2006) demonstrate that Shewanella oneidensis MR-1 c-type cytochromes MtrC and OmcA mediate U(VI) reduction to extracellular and periplasmic UO2 (uraninite) nanoparticles. |
 
 ## Limits And Additional Notes
@@ -89,11 +89,11 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 summary: 'Reviewed data/records/uraninite.yaml (cmmmech:uraninite) at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7.
-  Verified IMA mineral identity (UO2, CHEBI:52668), Shewanella oneidensis MR-1 uranyl
-  reduction and extracellular/periplasmic UO2 nanoparticle bioprecipitation mechanism
-  (Marshall et al. 2006, PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268),
-  all synchronized Shewanella oneidensis MR-1 UniProtKB protein_examples, and causal_graphs[0].
-  Identified 1 minor graph node/edge description finding (cmmmech-cycle8-stage4-finding-0003:
+  Verified IMA mineral identity (UO2), Shewanella oneidensis MR-1 uranyl reduction
+  and extracellular/periplasmic UO2 nanoparticle bioprecipitation mechanism (Marshall
+  et al. 2006, PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268), all synchronized
+  Shewanella oneidensis MR-1 UniProtKB protein_examples, and causal_graphs[0]. Identified
+  1 minor graph node/edge description finding (cmmmech-cycle8-stage4-finding-0003:
   oxidized_metal_substrate and reduced_metal_product in causal_graphs[0] retain generic
   template placeholder descriptions and protein_examples/edges interpolate capitalized
   node labels mid-sentence) for Stage 5 grouped remediation.'
@@ -181,18 +181,20 @@ findings:
   target_ids:
   - cmmmech:uraninite
   field_paths:
-  - causal_graphs[0].nodes[3].description
-  - causal_graphs[0].nodes[4].label
   - causal_graphs[0].nodes[4].description
+  - causal_graphs[0].nodes[5].description
   - causal_graphs[0].edges[2].description
   - causal_graphs[0].edges[3].description
+  - causal_graphs[0].edges[4].description
   evidence_ids:
   - ev-uraninite-file
   - ev-uraninite-marshall2006
   description: In data/records/chromium.yaml (cmmmech:chromium, element, Belchik et
-    al. 2011, Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10)
+    al. 2011, Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10;
+    causal_graphs[0] lines 118-260, nodes[3..4] lines 213-222, edges[1..3] lines 233-259)
     and data/records/uraninite.yaml (cmmmech:uraninite, mineral, Marshall et al. 2006,
-    PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268), oxidized_metal_substrate
+    PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268; causal_graphs[0] lines
+    195-397, nodes[4..5] lines 333-344, edges[2..4] lines 367-397), oxidized_metal_substrate
     and reduced_metal_product in causal_graphs[0] retain generic template placeholder
     descriptions ('Oxidized metal species or mineral substrate (<Label>) accepting
     extracellular electrons.' and 'Reduced metal species or mineral phase (<Label>)
@@ -238,7 +240,7 @@ evidence:
 - evidence_id: ev-uraninite-file
   kind: record_content
   reference: data/records/uraninite.yaml
-  locator: causal_graphs[0] (lines 118-260)
+  locator: causal_graphs[0] (lines 195-397)
   accessed_at: '2026-11-05T00:55:09Z'
   support: supports
   summary: Inspected data/records/uraninite.yaml, verifying oxidized_metal_substrate

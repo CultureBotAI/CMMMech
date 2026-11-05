@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 31 primary_resource records in data/records/*.yaml at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7, including the 3 Cycle 8 Stage 2 (PR #924, commit d69682fb) and Stage 3 (PR #926, commit 57341037) primary_resource causal-graph and multi-strain UniProtKB grounding additions (enargite-pyrite-concentrate, eudialyte-ore, tennantite-concentrate), and verifying resolution of Cycle 7 Stage 4 findings 0002 and 0003 on cassiterite-polymetallic-sulfide-ore, chalcopyrite-enargite-concentrate, and manganese-ore (PR #921, commit be23f1ee). All 31/31 primary_resource records contain primary-source-supported mechanisms (42 mechanisms total across 23 microbial and 8 abiotic records), and 13/31 contain causal_graphs (14 graphs, 27 GENE_OR_PROTEIN nodes: 27 GROUNDED and 0 UNGROUNDED) grounded to 35 unique UniProtKB accessions. Identified 1 minor graph edge description finding (cmmmech-cycle8-stage4-finding-0002 in 1 primary_resource record: cmmmech:eudialyte-ore) for Stage 5 grouped remediation.
+Reviewed all 31 primary_resource records in data/records/*.yaml at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7, including the 3 Cycle 8 Stage 2 (PR #924, commit d69682fb) and Stage 3 (PR #926, commit 57341037) primary_resource causal-graph and multi-strain UniProtKB grounding additions (enargite-pyrite-concentrate, eudialyte-ore, tennantite-concentrate), and verifying resolution of Cycle 7 Stage 4 findings 0002 and 0003 on cassiterite-polymetallic-sulfide-ore, chalcopyrite-enargite-concentrate, and manganese-ore (PR #921, commit be23f1ee). All 31/31 primary_resource records contain primary-source-supported mechanisms (29 records with microbial mechanisms and 2 records — eudialyte-concentrate and ludwigite-ore — with abiotic-only mechanisms; 42 mechanisms total: 40 microbial and 2 abiotic), and 13/31 contain causal_graphs (14 graphs, 27 GENE_OR_PROTEIN nodes: 27 GROUNDED and 0 UNGROUNDED) grounded to 35 unique UniProtKB accessions. Identified 1 minor graph edge description finding (cmmmech-cycle8-stage4-finding-0002 in 1 primary_resource record: cmmmech:eudialyte-ore) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -127,11 +127,13 @@ summary: 'Reviewed all 31 primary_resource records in data/records/*.yaml at com
   tennantite-concentrate), and verifying resolution of Cycle 7 Stage 4 findings 0002
   and 0003 on cassiterite-polymetallic-sulfide-ore, chalcopyrite-enargite-concentrate,
   and manganese-ore (PR #921, commit be23f1ee). All 31/31 primary_resource records
-  contain primary-source-supported mechanisms (42 mechanisms total across 23 microbial
-  and 8 abiotic records), and 13/31 contain causal_graphs (14 graphs, 27 GENE_OR_PROTEIN
-  nodes: 27 GROUNDED and 0 UNGROUNDED) grounded to 35 unique UniProtKB accessions.
-  Identified 1 minor graph edge description finding (cmmmech-cycle8-stage4-finding-0002
-  in 1 primary_resource record: cmmmech:eudialyte-ore) for Stage 5 grouped remediation.'
+  contain primary-source-supported mechanisms (29 records with microbial mechanisms
+  and 2 records — eudialyte-concentrate and ludwigite-ore — with abiotic-only mechanisms;
+  42 mechanisms total: 40 microbial and 2 abiotic), and 13/31 contain causal_graphs
+  (14 graphs, 27 GENE_OR_PROTEIN nodes: 27 GROUNDED and 0 UNGROUNDED) grounded to
+  35 unique UniProtKB accessions. Identified 1 minor graph edge description finding
+  (cmmmech-cycle8-stage4-finding-0002 in 1 primary_resource record: cmmmech:eudialyte-ore)
+  for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle8-stage4-cohort-reviewer
   kind: agent

@@ -210,7 +210,7 @@ Across the 8 Acidithiobacillus ferrooxidans records (9 causal graphs) updated in
 
 minor / open / confirmed; issue key: cmmmech.shewanella-mr1-chromium-uraninite.unqualified-template-node-descriptions-and-capitalized-interpolations.
 
-In data/records/chromium.yaml (cmmmech:chromium, element, Belchik et al. 2011, Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10) and data/records/uraninite.yaml (cmmmech:uraninite, mineral, Marshall et al. 2006, PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268), oxidized_metal_substrate and reduced_metal_product in causal_graphs[0] retain generic template placeholder descriptions ('Oxidized metal species or mineral substrate (&lt;Label&gt;) accepting extracellular electrons.' and 'Reduced metal species or mineral phase (&lt;Label&gt;) formed by extracellular electron transfer.'), and mechanisms[0].protein_examples[0..1].evidence[0].explanation, causal_graphs[0].nodes[...].protein_examples[0].evidence[0].explanation, and causal_graphs[0].edges[...].{description,evidence[0].explanation} interpolate the capitalized node labels verbatim mid-sentence ('... to Dissolved chromate Cr(VI)', '... into Reduced Cr(III) precipitate/complexes', '... to Soluble uranyl carbonate U(VI) complexes', '... into Extracellular nanocrystalline uraninite (UO2)'). Furthermore, in chromium.yaml (causal_graphs[0].nodes[4], lines 218-222, and edges[3], lines 251-259), reduced_metal_product is labeled 'Reduced Cr(III) precipitate/complexes' without the qualification stated in mechanisms[0].description (line 35) and mechanisms[0].evidence[1].explanation (line 116) that Belchik et al. (2011) detected elemental Cr in electron-dense precipitates by TEM-EDX (Figures 2-3) and inferred Cr(III) valence from prior studies rather than oxidation-state spectroscopy. In this scope, 2 record(s) (chromium, uraninite) are affected.
+In data/records/chromium.yaml (cmmmech:chromium, element, Belchik et al. 2011, Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10; causal_graphs[0] lines 118-260, nodes[3..4] lines 213-222, edges[1..3] lines 233-259) and data/records/uraninite.yaml (cmmmech:uraninite, mineral, Marshall et al. 2006, PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268; causal_graphs[0] lines 195-397, nodes[4..5] lines 333-344, edges[2..4] lines 367-397), oxidized_metal_substrate and reduced_metal_product in causal_graphs[0] retain generic template placeholder descriptions ('Oxidized metal species or mineral substrate (&lt;Label&gt;) accepting extracellular electrons.' and 'Reduced metal species or mineral phase (&lt;Label&gt;) formed by extracellular electron transfer.'), and mechanisms[0].protein_examples[0..1].evidence[0].explanation, causal_graphs[0].nodes[...].protein_examples[0].evidence[0].explanation, and causal_graphs[0].edges[...].{description,evidence[0].explanation} interpolate the capitalized node labels verbatim mid-sentence ('... to Dissolved chromate Cr(VI)', '... into Reduced Cr(III) precipitate/complexes', '... to Soluble uranyl carbonate U(VI) complexes', '... into Extracellular nanocrystalline uraninite (UO2)'). Furthermore, in chromium.yaml (causal_graphs[0].nodes[4], lines 218-222, and edges[3], lines 251-259), reduced_metal_product is labeled 'Reduced Cr(III) precipitate/complexes' without the qualification stated in mechanisms[0].description (line 35) and mechanisms[0].evidence[1].explanation (line 116) that Belchik et al. (2011) detected elemental Cr in electron-dense precipitates by TEM-EDX (Figures 2-3) and inferred Cr(III) valence from prior studies rather than oxidation-state spectroscopy. In this scope, 2 record(s) (chromium, uraninite) are affected.
 
 ## Recommended Actions And Acceptance Checks
 
@@ -3592,6 +3592,7 @@ findings:
   - cmmmech:spent-steel-pickling-liquors
   field_paths:
   - causal_graphs[0].edges[0].description
+  - causal_graphs[1].edges[0].description
   evidence_ids:
   - ev-causal-graphs-cohort-audit
   description: 'Across the 8 Acidithiobacillus ferrooxidans records (9 causal graphs)
@@ -3651,14 +3652,19 @@ findings:
   - causal_graphs[0].nodes[3].description
   - causal_graphs[0].nodes[4].label
   - causal_graphs[0].nodes[4].description
+  - causal_graphs[0].nodes[5].description
+  - causal_graphs[0].edges[1].description
   - causal_graphs[0].edges[2].description
   - causal_graphs[0].edges[3].description
+  - causal_graphs[0].edges[4].description
   evidence_ids:
   - ev-causal-graphs-cohort-audit
   description: In data/records/chromium.yaml (cmmmech:chromium, element, Belchik et
-    al. 2011, Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10)
+    al. 2011, Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10;
+    causal_graphs[0] lines 118-260, nodes[3..4] lines 213-222, edges[1..3] lines 233-259)
     and data/records/uraninite.yaml (cmmmech:uraninite, mineral, Marshall et al. 2006,
-    PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268), oxidized_metal_substrate
+    PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268; causal_graphs[0] lines
+    195-397, nodes[4..5] lines 333-344, edges[2..4] lines 367-397), oxidized_metal_substrate
     and reduced_metal_product in causal_graphs[0] retain generic template placeholder
     descriptions ('Oxidized metal species or mineral substrate (<Label>) accepting
     extracellular electrons.' and 'Reduced metal species or mineral phase (<Label>)

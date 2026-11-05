@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed data/records/eudialyte-ore.yaml (cmmmech:eudialyte-ore) at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7 following Cycle 8 Stage 2 causal-graph addition (PR #924, commit d69682fb) and Cycle 8 Stage 3 multi-strain UniProtKB grounding expansion (PR #926, commit 57341037). Verified primary_resource identity (Norra Kärr eudialyte-bearing nepheline syenite ore, ENVO:00002982), all 3 mechanisms (two-step Acidithiobacillus ferrooxidans DSM 14882 pyrite biooxidation + ferric/acid eudialyte leaching, direct single-step pyrite-assisted bioleaching, and abiotic sulfuric acid control from Mpongo et al. 2026, Minerals Engineering 237:109986, DOI:10.1016/j.mineng.2026.109986), all synchronized UniProtKB protein_examples (including A. ferrooxidans DSM 16523 UniProtKB:A0A2W1KH68 DN052_11975), and causal_graphs[0]. Identified 1 minor graph edge description finding (cmmmech-cycle8-stage4-finding-0002: mid-sentence capitalized 'Periplasmic' in causal_graphs[0].edges[0].description at line 272) for Stage 5 grouped remediation.
+Reviewed data/records/eudialyte-ore.yaml (cmmmech:eudialyte-ore) at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7 following Cycle 8 Stage 2 causal-graph addition (PR #924, commit d69682fb) and Cycle 8 Stage 3 multi-strain UniProtKB grounding expansion (PR #926, commit 57341037). Verified primary_resource identity (Ilimaussaq Complex eudialyte-bearing agpaitic nepheline syenite ore, ENVO:00002982), mechanisms[0] (culture_assisted_acid_leaching: Acidithiobacillus ferrooxidans NCIMB 10435 culture-assisted sulfuric-acid leaching in 0.1 M FeSO4 + 6.9 mM H2SO4 medium from Hunter 2020 PhD thesis, University of Edinburgh, DOI:10.7488/era/834, Chapter 4 pp. 119-138 and Section 7.4.1 pp. 158-167), all 4 synchronized UniProtKB protein_examples (including A. ferrooxidans DSM 16523 UniProtKB:A0A2W1KH68 DN052_11975), and causal_graphs[0] (culture_assisted_acid_leaching_graph). Identified 1 minor graph edge description finding (cmmmech-cycle8-stage4-finding-0002: mid-sentence capitalized 'Periplasmic' in causal_graphs[0].edges[0].description at line 272) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -34,7 +34,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 ## Scientific And Domain Assessments
 
-### Acidithiobacillus ferrooxidans DSM 14882 two-step eudialyte ore bioleaching causal graph and multi-strain Cyc2/Rus/Cyc1 groundings
+### Acidithiobacillus ferrooxidans NCIMB 10435 culture-assisted eudialyte ore leaching causal graph and multi-strain Cyc2/Rus/Cyc1 groundings
 
 graph: supported. Targets: cmmmech:eudialyte-ore.
 
@@ -65,7 +65,7 @@ Replace mid-sentence 'to Periplasmic rusticyanin' with 'to periplasmic rusticyan
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
 | ev-eudialyte-ore-file | data/records/eudialyte-ore.yaml; causal_graphs[0].edges[0].description (line 272) | supports | Inspected data/records/eudialyte-ore.yaml, verifying causal_graphs[0].edges[0].description at line 272. |
-| ev-eudialyte-ore-mpongo2026 | DOI:10.1016/j.mineng.2026.109986; Mpongo et al. 2026 Minerals Engineering 237:109986, Sections 2-3, Tables 1-3, Figures 1-7 | supports | Mpongo et al. (2026) report two-step and single-step pyrite-assisted bioleaching of Norra Kärr eudialyte ore by Acidithiobacillus ferrooxidans DSM 14882 without silica gelation. |
+| ev-eudialyte-ore-hunter2020 | DOI:10.7488/era/834; Hunter 2020 PhD thesis, University of Edinburgh, Chapter 4 pp. 119-138 and Section 7.4.1 pp. 158-167 (Table 4.1, Figures 4.7-4.8) | supports | Hunter (2020) reports culture-assisted acid leaching of Ilimaussaq Complex eudialyte ore with Acidithiobacillus ferrooxidans NCIMB 10435 in 0.1 M FeSO4 + 6.9 mM H2SO4 medium over 35 days at 30 degC. |
 
 ## Limits And Additional Notes
 
@@ -90,16 +90,16 @@ scientific_review: true
 summary: 'Reviewed data/records/eudialyte-ore.yaml (cmmmech:eudialyte-ore) at commit
   573410374de4d10b2595b6bf75a1f2138ea33ed7 following Cycle 8 Stage 2 causal-graph
   addition (PR #924, commit d69682fb) and Cycle 8 Stage 3 multi-strain UniProtKB grounding
-  expansion (PR #926, commit 57341037). Verified primary_resource identity (Norra
-  Kärr eudialyte-bearing nepheline syenite ore, ENVO:00002982), all 3 mechanisms (two-step
-  Acidithiobacillus ferrooxidans DSM 14882 pyrite biooxidation + ferric/acid eudialyte
-  leaching, direct single-step pyrite-assisted bioleaching, and abiotic sulfuric acid
-  control from Mpongo et al. 2026, Minerals Engineering 237:109986, DOI:10.1016/j.mineng.2026.109986),
-  all synchronized UniProtKB protein_examples (including A. ferrooxidans DSM 16523
-  UniProtKB:A0A2W1KH68 DN052_11975), and causal_graphs[0]. Identified 1 minor graph
-  edge description finding (cmmmech-cycle8-stage4-finding-0002: mid-sentence capitalized
-  ''Periplasmic'' in causal_graphs[0].edges[0].description at line 272) for Stage
-  5 grouped remediation.'
+  expansion (PR #926, commit 57341037). Verified primary_resource identity (Ilimaussaq
+  Complex eudialyte-bearing agpaitic nepheline syenite ore, ENVO:00002982), mechanisms[0]
+  (culture_assisted_acid_leaching: Acidithiobacillus ferrooxidans NCIMB 10435 culture-assisted
+  sulfuric-acid leaching in 0.1 M FeSO4 + 6.9 mM H2SO4 medium from Hunter 2020 PhD
+  thesis, University of Edinburgh, DOI:10.7488/era/834, Chapter 4 pp. 119-138 and
+  Section 7.4.1 pp. 158-167), all 4 synchronized UniProtKB protein_examples (including
+  A. ferrooxidans DSM 16523 UniProtKB:A0A2W1KH68 DN052_11975), and causal_graphs[0]
+  (culture_assisted_acid_leaching_graph). Identified 1 minor graph edge description
+  finding (cmmmech-cycle8-stage4-finding-0002: mid-sentence capitalized ''Periplasmic''
+  in causal_graphs[0].edges[0].description at line 272) for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle8-stage4-record-reviewer
   kind: agent
@@ -159,15 +159,15 @@ checks:
     canonical top-level key-order validation with 0 errors.
 assessments:
 - assessment_id: assess-eudialyte-ore-graph-and-proteins
-  topic: Acidithiobacillus ferrooxidans DSM 14882 two-step eudialyte ore bioleaching
-    causal graph and multi-strain Cyc2/Rus/Cyc1 groundings
+  topic: Acidithiobacillus ferrooxidans NCIMB 10435 culture-assisted eudialyte ore
+    leaching causal graph and multi-strain Cyc2/Rus/Cyc1 groundings
   area: graph
   outcome: supported
   target_ids:
   - cmmmech:eudialyte-ore
   evidence_ids:
   - ev-eudialyte-ore-file
-  - ev-eudialyte-ore-mpongo2026
+  - ev-eudialyte-ore-hunter2020
   summary: All multi-strain A. ferrooxidans Cyc2 and Rus/Cyc1 UniProtKB protein_examples
     are accurately grounded and synchronized between mechanisms[0] and causal_graphs[0].
     However, causal_graphs[0].edges[0].description (line 272) retains mid-sentence
@@ -188,7 +188,7 @@ findings:
   - causal_graphs[0].edges[0].description
   evidence_ids:
   - ev-eudialyte-ore-file
-  - ev-eudialyte-ore-mpongo2026
+  - ev-eudialyte-ore-hunter2020
   description: 'Across the 8 Acidithiobacillus ferrooxidans records (9 causal graphs)
     updated in Cycle 8 Stage 2 (PR #924, commit d69682fb) and Stage 3 (PR #926, commit
     57341037) — data/records/argentojarosite.yaml (line 279), data/records/basic-oxygen-furnace-steelmaking-dust.yaml
@@ -233,16 +233,16 @@ evidence:
   support: supports
   summary: Inspected data/records/eudialyte-ore.yaml, verifying causal_graphs[0].edges[0].description
     at line 272.
-- evidence_id: ev-eudialyte-ore-mpongo2026
+- evidence_id: ev-eudialyte-ore-hunter2020
   kind: primary_source
-  reference: DOI:10.1016/j.mineng.2026.109986
-  locator: Mpongo et al. 2026 Minerals Engineering 237:109986, Sections 2-3, Tables
-    1-3, Figures 1-7
+  reference: DOI:10.7488/era/834
+  locator: Hunter 2020 PhD thesis, University of Edinburgh, Chapter 4 pp. 119-138
+    and Section 7.4.1 pp. 158-167 (Table 4.1, Figures 4.7-4.8)
   accessed_at: '2026-11-05T00:55:08Z'
   support: supports
-  summary: Mpongo et al. (2026) report two-step and single-step pyrite-assisted bioleaching
-    of Norra Kärr eudialyte ore by Acidithiobacillus ferrooxidans DSM 14882 without
-    silica gelation.
+  summary: Hunter (2020) reports culture-assisted acid leaching of Ilimaussaq Complex
+    eudialyte ore with Acidithiobacillus ferrooxidans NCIMB 10435 in 0.1 M FeSO4 +
+    6.9 mM H2SO4 medium over 35 days at 30 degC.
 limitations:
 - data/records/eudialyte-ore.yaml retains mid-sentence capitalized 'Periplasmic' in
   causal_graphs[0].edges[0].description (tracked as open finding cmmmech-cycle8-stage4-finding-0002

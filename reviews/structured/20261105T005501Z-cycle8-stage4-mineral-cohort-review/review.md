@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 432 mineral records in data/records/*.yaml at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7, including the 5 Cycle 8 Stage 1 (PR #923, commit 863f5b2c) Round 126 IMA mineral additions (niasite, manganoschafarzikite, erzwiesite, kenoargentotetrahedrite-zn, lopatkaite — verified against IMA-CNMNC September 2026 and primary description papers), the 3 Cycle 8 Stage 2 (PR #924, commit d69682fb) and Stage 3 (PR #926, commit 57341037) mineral causal-graph and multi-strain UniProtKB grounding expansions (argentojarosite, rutile, schwertmannite), and verifying resolution of Cycle 7 Stage 4 findings 0001..0003 on fengruiite, igelstromite, lazerckerite, plumbogottlobite, chalcopyrite, molybdenite, skutterudite, birnessite, and lindbergite (PR #921, commit be23f1ee). 285/432 mineral records contain primary-source-supported mechanisms (343 mechanisms total: 129 microbial and 156 abiotic records), 62/432 contain causal_graphs (66 graphs, 101 GENE_OR_PROTEIN nodes: 98 GROUNDED and 3 UNGROUNDED), and 60/62 carry live-verified UniProtKB protein_examples across 43 unique accessions. Identified 3 minor graph findings across 4 mineral records (cmmmech-cycle8-stage4-finding-0001 on cmmmech:schwertmannite; cmmmech-cycle8-stage4-finding-0002 on cmmmech:argentojarosite, cmmmech:rutile, and cmmmech:schwertmannite; and cmmmech-cycle8-stage4-finding-0003 on cmmmech:uraninite) for Stage 5 grouped remediation.
+Reviewed all 432 mineral records in data/records/*.yaml at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7, including the 5 Cycle 8 Stage 1 (PR #923, commit 863f5b2c) Round 126 IMA mineral additions (niasite, manganoschafarzikite, erzwiesite, kenoargentotetrahedrite-zn, lopatkaite — verified against IMA-CNMNC September 2026 and primary description papers), the 3 Cycle 8 Stage 2 (PR #924, commit d69682fb) and Stage 3 (PR #926, commit 57341037) mineral causal-graph and multi-strain UniProtKB grounding expansions (argentojarosite, rutile, schwertmannite), and verifying resolution of Cycle 7 Stage 4 findings 0001..0003 on fengruiite, igelstromite, lazerckerite, plumbogottlobite, chalcopyrite, molybdenite, skutterudite, birnessite, and lindbergite (PR #921, commit be23f1ee). 285/432 mineral records contain primary-source-supported mechanisms (158 records with microbial mechanisms and 127 records with abiotic-only mechanisms; 343 mechanisms total: 179 microbial and 164 abiotic), 62/432 contain causal_graphs (66 graphs, 101 GENE_OR_PROTEIN nodes: 98 GROUNDED and 3 UNGROUNDED), and 60/62 carry live-verified UniProtKB protein_examples across 43 unique accessions. Identified 3 minor graph findings across 4 mineral records (cmmmech-cycle8-stage4-finding-0001 on cmmmech:schwertmannite; cmmmech-cycle8-stage4-finding-0002 on cmmmech:argentojarosite, cmmmech:rutile, and cmmmech:schwertmannite; and cmmmech-cycle8-stage4-finding-0003 on cmmmech:uraninite) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -496,7 +496,7 @@ Across the 8 Acidithiobacillus ferrooxidans records (9 causal graphs) updated in
 
 minor / open / confirmed; issue key: cmmmech.shewanella-mr1-chromium-uraninite.unqualified-template-node-descriptions-and-capitalized-interpolations.
 
-In data/records/chromium.yaml (cmmmech:chromium, element, Belchik et al. 2011, Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10) and data/records/uraninite.yaml (cmmmech:uraninite, mineral, Marshall et al. 2006, PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268), oxidized_metal_substrate and reduced_metal_product in causal_graphs[0] retain generic template placeholder descriptions ('Oxidized metal species or mineral substrate (&lt;Label&gt;) accepting extracellular electrons.' and 'Reduced metal species or mineral phase (&lt;Label&gt;) formed by extracellular electron transfer.'), and mechanisms[0].protein_examples[0..1].evidence[0].explanation, causal_graphs[0].nodes[...].protein_examples[0].evidence[0].explanation, and causal_graphs[0].edges[...].{description,evidence[0].explanation} interpolate the capitalized node labels verbatim mid-sentence ('... to Dissolved chromate Cr(VI)', '... into Reduced Cr(III) precipitate/complexes', '... to Soluble uranyl carbonate U(VI) complexes', '... into Extracellular nanocrystalline uraninite (UO2)'). Furthermore, in chromium.yaml (causal_graphs[0].nodes[4], lines 218-222, and edges[3], lines 251-259), reduced_metal_product is labeled 'Reduced Cr(III) precipitate/complexes' without the qualification stated in mechanisms[0].description (line 35) and mechanisms[0].evidence[1].explanation (line 116) that Belchik et al. (2011) detected elemental Cr in electron-dense precipitates by TEM-EDX (Figures 2-3) and inferred Cr(III) valence from prior studies rather than oxidation-state spectroscopy. In this scope, 1 record(s) (uraninite) are affected.
+In data/records/chromium.yaml (cmmmech:chromium, element, Belchik et al. 2011, Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10; causal_graphs[0] lines 118-260, nodes[3..4] lines 213-222, edges[1..3] lines 233-259) and data/records/uraninite.yaml (cmmmech:uraninite, mineral, Marshall et al. 2006, PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268; causal_graphs[0] lines 195-397, nodes[4..5] lines 333-344, edges[2..4] lines 367-397), oxidized_metal_substrate and reduced_metal_product in causal_graphs[0] retain generic template placeholder descriptions ('Oxidized metal species or mineral substrate (&lt;Label&gt;) accepting extracellular electrons.' and 'Reduced metal species or mineral phase (&lt;Label&gt;) formed by extracellular electron transfer.'), and mechanisms[0].protein_examples[0..1].evidence[0].explanation, causal_graphs[0].nodes[...].protein_examples[0].evidence[0].explanation, and causal_graphs[0].edges[...].{description,evidence[0].explanation} interpolate the capitalized node labels verbatim mid-sentence ('... to Dissolved chromate Cr(VI)', '... into Reduced Cr(III) precipitate/complexes', '... to Soluble uranyl carbonate U(VI) complexes', '... into Extracellular nanocrystalline uraninite (UO2)'). Furthermore, in chromium.yaml (causal_graphs[0].nodes[4], lines 218-222, and edges[3], lines 251-259), reduced_metal_product is labeled 'Reduced Cr(III) precipitate/complexes' without the qualification stated in mechanisms[0].description (line 35) and mechanisms[0].evidence[1].explanation (line 116) that Belchik et al. (2011) detected elemental Cr in electron-dense precipitates by TEM-EDX (Figures 2-3) and inferred Cr(III) valence from prior studies rather than oxidation-state spectroscopy. In this scope, 1 record(s) (uraninite) are affected.
 
 ## Recommended Actions And Acceptance Checks
 
@@ -532,7 +532,7 @@ Replace the generic template descriptions on oxidized_metal_substrate and reduce
 | --- | --- | --- | --- |
 | ev-mineral-cohort-audit | data/records/*.yaml (material_kind == 'mineral'); 432 mineral YAML files | supports | Full programmatic and source-backed audit of all 432 mineral records at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7. |
 | ev-schwertmannite-graphs | data/records/schwertmannite.yaml; causal_graphs[0..1] (lines 386, 537-583) | supports | In data/records/schwertmannite.yaml, causal_graphs[0].edges[0].description (line 386) and causal_graphs[1].edges[0].description (line 552) have mid-sentence capitalized 'Periplasmic', and causal_graphs[1] (lx5_eps_removal_perturbation_graph, lines 537-583) retains pre-remediation inverted node IDs attenuated_12_to_40h_ferrous_oxidation_flux and reduced_12_to_40h_schwertmannite_precipitate_yield on nodes[2..3] and edges[2..3]. |
-| ev-uraninite-mr1-graph | data/records/uraninite.yaml; causal_graphs[0] (lines 118-260) | supports | In data/records/uraninite.yaml, oxidized_metal_substrate and reduced_metal_product retain generic template descriptions and protein_examples/edges interpolate capitalized target labels mid-sentence. |
+| ev-uraninite-mr1-graph | data/records/uraninite.yaml; causal_graphs[0] (lines 195-397) | supports | In data/records/uraninite.yaml, oxidized_metal_substrate and reduced_metal_product retain generic template descriptions and protein_examples/edges interpolate capitalized target labels mid-sentence. |
 
 ## Limits And Additional Notes
 
@@ -565,8 +565,9 @@ summary: 'Reviewed all 432 mineral records in data/records/*.yaml at commit 5734
   rutile, schwertmannite), and verifying resolution of Cycle 7 Stage 4 findings 0001..0003
   on fengruiite, igelstromite, lazerckerite, plumbogottlobite, chalcopyrite, molybdenite,
   skutterudite, birnessite, and lindbergite (PR #921, commit be23f1ee). 285/432 mineral
-  records contain primary-source-supported mechanisms (343 mechanisms total: 129 microbial
-  and 156 abiotic records), 62/432 contain causal_graphs (66 graphs, 101 GENE_OR_PROTEIN
+  records contain primary-source-supported mechanisms (158 records with microbial
+  mechanisms and 127 records with abiotic-only mechanisms; 343 mechanisms total: 179
+  microbial and 164 abiotic), 62/432 contain causal_graphs (66 graphs, 101 GENE_OR_PROTEIN
   nodes: 98 GROUNDED and 3 UNGROUNDED), and 60/62 carry live-verified UniProtKB protein_examples
   across 43 unique accessions. Identified 3 minor graph findings across 4 mineral
   records (cmmmech-cycle8-stage4-finding-0001 on cmmmech:schwertmannite; cmmmech-cycle8-stage4-finding-0002
@@ -10207,6 +10208,7 @@ findings:
   - cmmmech:schwertmannite
   field_paths:
   - causal_graphs[0].edges[0].description
+  - causal_graphs[1].edges[0].description
   evidence_ids:
   - ev-mineral-cohort-audit
   - ev-schwertmannite-graphs
@@ -10246,18 +10248,20 @@ findings:
   target_ids:
   - cmmmech:uraninite
   field_paths:
-  - causal_graphs[0].nodes[3].description
-  - causal_graphs[0].nodes[4].label
   - causal_graphs[0].nodes[4].description
+  - causal_graphs[0].nodes[5].description
   - causal_graphs[0].edges[2].description
   - causal_graphs[0].edges[3].description
+  - causal_graphs[0].edges[4].description
   evidence_ids:
   - ev-mineral-cohort-audit
   - ev-uraninite-mr1-graph
   description: In data/records/chromium.yaml (cmmmech:chromium, element, Belchik et
-    al. 2011, Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10)
+    al. 2011, Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10;
+    causal_graphs[0] lines 118-260, nodes[3..4] lines 213-222, edges[1..3] lines 233-259)
     and data/records/uraninite.yaml (cmmmech:uraninite, mineral, Marshall et al. 2006,
-    PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268), oxidized_metal_substrate
+    PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268; causal_graphs[0] lines
+    195-397, nodes[4..5] lines 333-344, edges[2..4] lines 367-397), oxidized_metal_substrate
     and reduced_metal_product in causal_graphs[0] retain generic template placeholder
     descriptions ('Oxidized metal species or mineral substrate (<Label>) accepting
     extracellular electrons.' and 'Reduced metal species or mineral phase (<Label>)
@@ -10367,7 +10371,7 @@ evidence:
 - evidence_id: ev-uraninite-mr1-graph
   kind: record_content
   reference: data/records/uraninite.yaml
-  locator: causal_graphs[0] (lines 118-260)
+  locator: causal_graphs[0] (lines 195-397)
   accessed_at: '2026-11-05T00:55:01Z'
   support: supports
   summary: In data/records/uraninite.yaml, oxidized_metal_substrate and reduced_metal_product

@@ -127,19 +127,20 @@ findings:
   - cmmmech:chromium
   - cmmmech:uraninite
   summary: In data/records/chromium.yaml (cmmmech:chromium, element, Belchik et al. 2011,
-    Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10) and data/records/uraninite.yaml
-    (cmmmech:uraninite, mineral, Marshall et al. 2006, PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268),
-    oxidized_metal_substrate and reduced_metal_product in causal_graphs[0] retain generic
-    template placeholder descriptions ('Oxidized metal species or mineral substrate (<Label>)
-    accepting extracellular electrons.' and 'Reduced metal species or mineral phase (<Label>)
-    formed by extracellular electron transfer.'), and mechanisms[0].protein_examples[0..1].evidence[0].explanation,
+    Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10, causal_graphs[0]
+    lines 147-349) and data/records/uraninite.yaml (cmmmech:uraninite, mineral, Marshall
+    et al. 2006, PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268, causal_graphs[0]
+    lines 195-397), oxidized_metal_substrate and reduced_metal_product in causal_graphs[0]
+    retain generic template placeholder descriptions ('Oxidized metal species or mineral
+    substrate (<Label>) accepting extracellular electrons.' and 'Reduced metal species
+    or mineral phase (<Label>) formed by extracellular electron transfer.'), and mechanisms[0].protein_examples[0..1].evidence[0].explanation,
     causal_graphs[0].nodes[...].protein_examples[0].evidence[0].explanation, and causal_graphs[0].edges[...].{description,evidence[0].explanation}
     interpolate the capitalized node labels verbatim mid-sentence ('... to Dissolved chromate
     Cr(VI)', '... into Reduced Cr(III) precipitate/complexes', '... to Soluble uranyl carbonate
     U(VI) complexes', '... into Extracellular nanocrystalline uraninite (UO2)'). Furthermore,
-    in chromium.yaml (causal_graphs[0].nodes[4], lines 218-222, and edges[3], lines 251-259),
+    in chromium.yaml (causal_graphs[0].nodes[4], lines 295-300, and edges[3], lines 340-349),
     reduced_metal_product is labeled 'Reduced Cr(III) precipitate/complexes' without the qualification
-    stated in mechanisms[0].description (line 35) and mechanisms[0].evidence[1].explanation
-    (line 116) that Belchik et al. (2011) detected elemental Cr in electron-dense precipitates
+    stated in mechanisms[0].description (line 35) and mechanisms[0].evidence[0..1].explanation
+    (lines 50, 56) that Belchik et al. (2011) detected elemental Cr in electron-dense precipitates
     by TEM-EDX (Figures 2-3) and inferred Cr(III) valence from prior studies rather than oxidation-state
     spectroscopy.

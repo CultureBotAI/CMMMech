@@ -20,10 +20,10 @@ previous_evidence:
   sha256: 4d93273e4bafa3426fe2827fbebae4c4ed6e1d699fc0129f0e77936d10b9f0ac
 artifacts:
 - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000008/stage-04/revision-0001/review_report.md
-  sha256: 912ae3256e9f5d169ae7d3a8d79434d5c113eacb7f94430ab3dfcfa209ac64eb
+  sha256: b47cfe2031e746f078146c29000c4a084a5ab4cdba2b1717a121e0193d7dc7b2
   kind: review_report
 - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000008/stage-04/revision-0001/review_findings.yaml
-  sha256: 77f9ed6be5606e798b169acf4b84ec78a51274bfae56f6282a81ccb95db80ab4
+  sha256: a27a4b66bb591123d37596bd8b1554f73295fbb06ab3c07bf58ef63db3b5e4b2
   kind: review_findings
 findings:
 - finding_id: cmmmech-cycle8-stage4-finding-0001
@@ -58,20 +58,21 @@ findings:
 - finding_id: cmmmech-cycle8-stage4-finding-0003
   status: open
   summary: In data/records/chromium.yaml (cmmmech:chromium, element, Belchik et al. 2011,
-    Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10) and data/records/uraninite.yaml
-    (cmmmech:uraninite, mineral, Marshall et al. 2006, PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268),
-    oxidized_metal_substrate and reduced_metal_product in causal_graphs[0] retain generic
-    template placeholder descriptions ('Oxidized metal species or mineral substrate (<Label>)
-    accepting extracellular electrons.' and 'Reduced metal species or mineral phase (<Label>)
-    formed by extracellular electron transfer.'), and mechanisms[0].protein_examples[0..1].evidence[0].explanation,
+    Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10, causal_graphs[0]
+    lines 147-349) and data/records/uraninite.yaml (cmmmech:uraninite, mineral, Marshall
+    et al. 2006, PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268, causal_graphs[0]
+    lines 195-397), oxidized_metal_substrate and reduced_metal_product in causal_graphs[0]
+    retain generic template placeholder descriptions ('Oxidized metal species or mineral
+    substrate (<Label>) accepting extracellular electrons.' and 'Reduced metal species
+    or mineral phase (<Label>) formed by extracellular electron transfer.'), and mechanisms[0].protein_examples[0..1].evidence[0].explanation,
     causal_graphs[0].nodes[...].protein_examples[0].evidence[0].explanation, and causal_graphs[0].edges[...].{description,evidence[0].explanation}
     interpolate the capitalized node labels verbatim mid-sentence ('... to Dissolved chromate
     Cr(VI)', '... into Reduced Cr(III) precipitate/complexes', '... to Soluble uranyl carbonate
     U(VI) complexes', '... into Extracellular nanocrystalline uraninite (UO2)'). Furthermore,
-    in chromium.yaml (causal_graphs[0].nodes[4], lines 218-222, and edges[3], lines 251-259),
+    in chromium.yaml (causal_graphs[0].nodes[4], lines 295-300, and edges[3], lines 340-349),
     reduced_metal_product is labeled 'Reduced Cr(III) precipitate/complexes' without the qualification
-    stated in mechanisms[0].description (line 35) and mechanisms[0].evidence[1].explanation
-    (line 116) that Belchik et al. (2011) detected elemental Cr in electron-dense precipitates
+    stated in mechanisms[0].description (line 35) and mechanisms[0].evidence[0..1].explanation
+    (lines 50, 56) that Belchik et al. (2011) detected elemental Cr in electron-dense precipitates
     by TEM-EDX (Figures 2-3) and inferred Cr(III) valence from prior studies rather than oxidation-state
     spectroscopy.
 groups: []
