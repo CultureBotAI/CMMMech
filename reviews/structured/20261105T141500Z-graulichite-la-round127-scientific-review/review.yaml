@@ -1,0 +1,217 @@
+schema_version: 1.0.0
+review_id: 20261105T141500Z-graulichite-la-round127-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Primary-source scientific review of graulichite-la (IMA:2020-093, status A,
+  LaFe3+3(AsO4)2(OH)6)
+started_at: '2026-11-05T14:14:00Z'
+finished_at: '2026-11-05T14:15:00Z'
+reviewer:
+  identity: antigravity / round127-scientific-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/graulichite-la.yaml (SHA-256 64ceb95365f0cdb3c696047d046ac7e856182c1114970669e0cbc6454b2a4853)
+    and its CREATE history sidecar against all bounded passages and single-page PNG
+    table renders of Biagioni C, Ciriotti ME, Favreau G, Mauro D, and Zaccarini F
+    (2022) Graulichite-(La), LaFe3+3(AsO4)2(OH)6, a new addition to the alunite supergroup
+    from the Patte d'Oie mine, Bou Skour mining district, Morocco, Eur. J. Mineral.
+    34:365-374, pp. 365-374, Tables 1-7, Figures 1-4 (29 bounded passages <= 1,800
+    B across 10 full-PDF pages; 8 main-text pages / 23 passages, plus PNG renders
+    of pages 4 and 5) and the September 2026 IMA-CNMNC Master List (PDF p. 86).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 557d77ce6f1aaaa60f9106d39b389ffc795844fb
+  state: working_tree
+  inputs:
+  - path: data/records/graulichite-la.yaml
+    sha256: 64ceb95365f0cdb3c696047d046ac7e856182c1114970669e0cbc6454b2a4853
+    role: target
+  - path: history/records/graulichite-la/2026-11-05T140958Z-antigravity-e38239.yaml
+    sha256: 43906b9b21a81260e3e75862966e20c4cb9f2775f3cb021e18af9850aa839987
+    role: context
+  - path: research/sources/round127-minerals/20261105T141000Z-source-investigation.json
+    sha256: 856d32cd3111b1d3e455154ae6c02051cb7c89f651f4c7cebc36e660bfab7094
+    role: context
+  - path: research/sources/round127-minerals/20261105T141000Z-source-investigation.md
+    sha256: 4ecb0426150384a968c5b35a531593f08374c7f2376bd6d42d87cb49d2012fd0
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:graulichite-la
+  path: data/records/graulichite-la.yaml
+  label: Graulichite-(La)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/graulichite-la.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/graulichite-la/2026-11-05T140958Z-antigravity-e38239.yaml
+    role: canonical_history
+scope:
+  description: Primary-source scientific review of data/records/graulichite-la.yaml
+    (SHA-256 64ceb95365f0cdb3c696047d046ac7e856182c1114970669e0cbc6454b2a4853) and
+    its canonical CREATE history sidecar against all bounded primary-source passages
+    and rendered table PNGs from Biagioni C, Ciriotti ME, Favreau G, Mauro D, and
+    Zaccarini F (2022) Graulichite-(La), LaFe3+3(AsO4)2(OH)6, a new addition to the
+    alunite supergroup from the Patte d'Oie mine, Bou Skour mining district, Morocco,
+    Eur. J. Mineral. 34:365-374, pp. 365-374, Tables 1-7, Figures 1-4 (29 bounded
+    passages <= 1,800 B across 10 full-PDF pages; 8 main-text pages / 23 passages,
+    plus PNG renders of pages 4 and 5) and the September 2026 IMA-CNMNC Master List
+    (PDF p. 86).
+  selection: Round 127 newly admitted mineral record graulichite-la
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:graulichite-la
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/graulichite-la.yaml
+  locator: Working-tree record data/records/graulichite-la.yaml
+  accessed_at: '2026-11-05T14:14:30Z'
+  support: supports
+  summary: 'Working-tree record data/records/graulichite-la.yaml captures IMA:2020-093
+    identity, Patte d''Oie mine (Bou Skour district, Anti-Atlas, Morocco) type locality,
+    holotype 19924 (Pisa), Table 1 (p. 369) JEOL JXA 8200 WDS chemistry for Domain
+    #1 (total 78.34 wt%, norm. 100.00 wt% / arithmetic 100.02 wt%) and Domain #2 (total
+    83.66 wt%, norm. 100.00 wt% / arithmetic 100.02 wt%), trigonal R-3m (#166) alunite-supergroup
+    structure (Tables 2-6; SCXRD a = 7.252(13) A, c = 16.77(3) A, V = 764(3) A3, Z
+    = 3, R1 = 0.0956, wR2 = 0.2162), micro-Raman bands (Figure 3), primary-source
+    discrepancies (normalized sum 100.02 wt% and apparent X-O(1) vs X-O(2) bond-length
+    inversion artifact), and 0 mechanisms (SHA-256 64ceb95365f0cdb3c696047d046ac7e856182c1114970669e0cbc6454b2a4853).'
+  snapshot_sha256: 64ceb95365f0cdb3c696047d046ac7e856182c1114970669e0cbc6454b2a4853
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 86
+  accessed_at: '2026-11-05T14:14:30Z'
+  support: supports
+  summary: Confirms Graulichite-(La), status A, IMA:2020-093, and primary reference
+    in European Journal of Mineralogy.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: biagioni_2022_graulichite_la_primary
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-34-365-2022
+  locator: Biagioni C, Ciriotti ME, Favreau G, Mauro D, and Zaccarini F (2022) Graulichite-(La),
+    LaFe3+3(AsO4)2(OH)6, a new addition to the alunite supergroup from the Patte d'Oie
+    mine, Bou Skour mining district, Morocco, Eur. J. Mineral. 34:365-374, pp. 365-374,
+    Tables 1-7, Figures 1-4 (29 bounded passages <= 1,800 B across 10 full-PDF pages;
+    8 main-text pages / 23 passages, plus PNG renders of pages 4 and 5)
+  accessed_at: '2026-11-05T14:14:30Z'
+  support: supports
+  summary: All bounded passages (<= 1,800 B) and single-page 150-DPI PNG table renders
+    inspected from Biagioni C, Ciriotti ME, Favreau G, Mauro D, and Zaccarini F (2022)
+    Graulichite-(La), LaFe3+3(AsO4)2(OH)6, a new addition to the alunite supergroup
+    from the Patte d'Oie mine, Bou Skour mining district, Morocco, Eur. J. Mineral.
+    34:365-374, pp. 365-374, Tables 1-7, Figures 1-4 (29 bounded passages <= 1,800
+    B across 10 full-PDF pages; 8 main-text pages / 23 passages, plus PNG renders
+    of pages 4 and 5), confirming verbatim title, type locality, type specimen repositories,
+    WDS chemical composition, unit-cell parameters, structure refinement, and documented
+    internal source discrepancies.
+  snapshot_sha256: 1c1909adae0aec18a7e4b98b675801f777b31b8ccdb492b5449e6fb82b8e42af
+- evidence_id: create_history
+  kind: record_content
+  reference: history/records/graulichite-la/2026-11-05T140958Z-antigravity-e38239.yaml
+  locator: Canonical CREATE history sidecar history/records/graulichite-la/2026-11-05T140958Z-antigravity-e38239.yaml
+  accessed_at: '2026-11-05T14:14:30Z'
+  support: supports
+  summary: Canonical CREATE history sidecar (SHA-256 43906b9b21a81260e3e75862966e20c4cb9f2775f3cb021e18af9850aa839987)
+    matches record curation_history[0].timestamp and top-level record sections.
+  snapshot_sha256: 43906b9b21a81260e3e75862966e20c4cb9f2775f3cb021e18af9850aa839987
+- evidence_id: validation
+  kind: validation
+  reference: data/records/graulichite-la.yaml
+  locator: Real CLI validation via .venv/bin/cmmmech validate --require-records and
+    .venv/bin/cmmmech validate-history --base main
+  accessed_at: '2026-11-05T14:14:40Z'
+  support: supports
+  summary: Checked 688 record(s); 0 failed. Checked 1340 history record(s); 0 error(s).
+  snapshot_sha256: 64ceb95365f0cdb3c696047d046ac7e856182c1114970669e0cbc6454b2a4853
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: .venv/bin/cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 688 record(s); 0 failed.
+  target_ids:
+  - cmmmech:graulichite-la
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: .venv/bin/cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1340 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:graulichite-la
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA:2020-093 identity, Patte d'Oie mine type locality, JEOL
+    JXA 8200 WDS chemistry, micro-Raman spectrum, trigonal R-3m alunite-supergroup
+    structure, and internal source discrepancies for graulichite-la
+  outcome: supported
+  summary: All numeric, crystallographic, optical, spectroscopic, and chemical claims
+    in data/records/graulichite-la.yaml (SHA-256 64ceb95365f0cdb3c696047d046ac7e856182c1114970669e0cbc6454b2a4853)
+    match the bounded primary-source passages and rendered table PNGs of Biagioni
+    C, Ciriotti ME, Favreau G, Mauro D, and Zaccarini F (2022) Graulichite-(La), LaFe3+3(AsO4)2(OH)6,
+    a new addition to the alunite supergroup from the Patte d'Oie mine, Bou Skour
+    mining district, Morocco, Eur. J. Mineral. 34:365-374, pp. 365-374, Tables 1-7,
+    Figures 1-4 (29 bounded passages <= 1,800 B across 10 full-PDF pages; 8 main-text
+    pages / 23 passages, plus PNG renders of pages 4 and 5) and the September 2026
+    IMA Master List (p. 86).
+  target_ids:
+  - cmmmech:graulichite-la
+  evidence_ids:
+  - owner
+  - ima_authority
+  - biagioni_2022_graulichite_la_primary
+- assessment_id: mechanism_absence_and_provenance_verification
+  area: provenance
+  topic: Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE
+    provenance
+  outcome: supported
+  summary: data/records/graulichite-la.yaml accurately omits mechanisms (0 mechanisms)
+    and explicitly discloses that no biological or microbial interaction data are
+    reported in the type mineralogical description. Append-only CREATE history sidecar
+    passes validation with 0 errors.
+  target_ids:
+  - cmmmech:graulichite-la
+  evidence_ids:
+  - owner
+  - biagioni_2022_graulichite_la_primary
+  - create_history
+  - validation
+findings: []
+actions: []
+summary: 'Graulichite-(La) (IMA:2020-093, status A, LaFe3+3(AsO4)2(OH)6) passes primary-source
+  scientific review (scientific_review: true) at SHA-256 64ceb95365f0cdb3c696047d046ac7e856182c1114970669e0cbc6454b2a4853
+  against all bounded passages and rendered table PNGs of Biagioni C, Ciriotti ME,
+  Favreau G, Mauro D, and Zaccarini F (2022) Graulichite-(La), LaFe3+3(AsO4)2(OH)6,
+  a new addition to the alunite supergroup from the Patte d''Oie mine, Bou Skour mining
+  district, Morocco, Eur. J. Mineral. 34:365-374, pp. 365-374, Tables 1-7, Figures
+  1-4 (29 bounded passages <= 1,800 B across 10 full-PDF pages; 8 main-text pages
+  / 23 passages, plus PNG renders of pages 4 and 5).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed under the Round 127 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage) plus single-page 150-DPI PNG table renders.
+related_reviews: []

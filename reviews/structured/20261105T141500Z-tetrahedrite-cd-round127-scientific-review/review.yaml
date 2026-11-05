@@ -1,0 +1,221 @@
+schema_version: 1.0.0
+review_id: 20261105T141500Z-tetrahedrite-cd-round127-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Primary-source scientific review of tetrahedrite-cd (IMA:2022-115, status A,
+  Cu6(Cu4Cd2)Sb4S13)
+started_at: '2026-11-05T14:14:00Z'
+finished_at: '2026-11-05T14:15:00Z'
+reviewer:
+  identity: antigravity / round127-scientific-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/tetrahedrite-cd.yaml (SHA-256
+    b587167cf3071664071983bc5e2ce78e952b8e06cf7f6f068a8038381d0b1e6a) and its CREATE
+    history sidecar against all bounded passages and single-page PNG table renders
+    of Sejkora J, Biagioni C, Skacha P, Musetti S, Kasatkin AV, and Nestola F (2023)
+    Tetrahedrite-(Cd), Cu6(Cu4Cd2)Sb4S13, from Radetice near Pribram, Czech Republic:
+    the new Cd member of the tetrahedrite group, Eur. J. Mineral. 35:897-907, pp.
+    897-907, Tables 1-7, Figures 1-3 (34 bounded passages <= 1,800 B across 11 full-PDF
+    pages; 9 main-text pages / 28 passages, plus PNG renders of pages 4 and 6) and
+    the September 2026 IMA-CNMNC Master List (PDF p. 215).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 557d77ce6f1aaaa60f9106d39b389ffc795844fb
+  state: working_tree
+  inputs:
+  - path: data/records/tetrahedrite-cd.yaml
+    sha256: b587167cf3071664071983bc5e2ce78e952b8e06cf7f6f068a8038381d0b1e6a
+    role: target
+  - path: history/records/tetrahedrite-cd/2026-11-05T140447Z-antigravity-6f1290.yaml
+    sha256: fc692d6bd632c2b29a0d1c3b27dc5568246f2b86ec6fe6486f2c5e9b266b9e19
+    role: context
+  - path: research/sources/round127-minerals/20261105T141000Z-source-investigation.json
+    sha256: 856d32cd3111b1d3e455154ae6c02051cb7c89f651f4c7cebc36e660bfab7094
+    role: context
+  - path: research/sources/round127-minerals/20261105T141000Z-source-investigation.md
+    sha256: 4ecb0426150384a968c5b35a531593f08374c7f2376bd6d42d87cb49d2012fd0
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:tetrahedrite-cd
+  path: data/records/tetrahedrite-cd.yaml
+  label: Tetrahedrite-(Cd)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tetrahedrite-cd.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/tetrahedrite-cd/2026-11-05T140447Z-antigravity-6f1290.yaml
+    role: canonical_history
+scope:
+  description: 'Primary-source scientific review of data/records/tetrahedrite-cd.yaml
+    (SHA-256 b587167cf3071664071983bc5e2ce78e952b8e06cf7f6f068a8038381d0b1e6a) and
+    its canonical CREATE history sidecar against all bounded primary-source passages
+    and rendered table PNGs from Sejkora J, Biagioni C, Skacha P, Musetti S, Kasatkin
+    AV, and Nestola F (2023) Tetrahedrite-(Cd), Cu6(Cu4Cd2)Sb4S13, from Radetice near
+    Pribram, Czech Republic: the new Cd member of the tetrahedrite group, Eur. J.
+    Mineral. 35:897-907, pp. 897-907, Tables 1-7, Figures 1-3 (34 bounded passages
+    <= 1,800 B across 11 full-PDF pages; 9 main-text pages / 28 passages, plus PNG
+    renders of pages 4 and 6) and the September 2026 IMA-CNMNC Master List (PDF p.
+    215).'
+  selection: Round 127 newly admitted mineral record tetrahedrite-cd
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:tetrahedrite-cd
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/tetrahedrite-cd.yaml
+  locator: Working-tree record data/records/tetrahedrite-cd.yaml
+  accessed_at: '2026-11-05T14:14:30Z'
+  support: supports
+  summary: Working-tree record data/records/tetrahedrite-cd.yaml captures IMA:2022-115
+    identity (symbol Ttr-Cd), Radetice shaft S-1 vein (near Pribram, Czech Republic)
+    type locality and Zmeinogorsk (Russia) second occurrence, holotype P1P 43/2022
+    (Prague) and 20025 (Pisa), Table 2 (p. 900) Cameca SX100 WDS chemistry (n = 13,
+    Cu 34.85 wt%, Sb 28.07 wt%, S 23.38 wt%, Cd 11.03 wt%, Ag 2.09 wt%, Hg 0.75 wt%,
+    Pb 0.31 wt%, Zn 0.26 wt%, Fe 0.18 wt%, total 100.92 wt%, empirical formula Cu9.65(4)Ag0.34(7)Cd1.73(7)Zn0.07(4)Hg0.07(2)Fe0.06(2)Pb0.03(2)Sb4.06(3)S12.84(10)),
+    cubic I-43m (#217) tetrahedrite-group structure (Tables 3-7; SCXRD a = 10.504(3)
+    A, V = 1158.9(9) A3, Z = 2, R1 = 0.0252, wR2 = 0.0645), COM reflectance (Table
+    1), primary-source discrepancies (Abstract misprint 'Tennantite-(Cd)'; Table 3
+    reflection 4 4 4 dcalc printed as '1516' for 1.516 A; Table 6 X(3)-S(1) 2.435(3)
+    A vs p. 903 prose 2.434 A), and 0 mechanisms (SHA-256 b587167cf3071664071983bc5e2ce78e952b8e06cf7f6f068a8038381d0b1e6a).
+  snapshot_sha256: b587167cf3071664071983bc5e2ce78e952b8e06cf7f6f068a8038381d0b1e6a
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 215
+  accessed_at: '2026-11-05T14:14:30Z'
+  support: supports
+  summary: Confirms Tetrahedrite-(Cd), status A, IMA:2022-115, and primary reference
+    in European Journal of Mineralogy.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: sejkora_2023_tetrahedrite_cd_primary
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-35-897-2023
+  locator: 'Sejkora J, Biagioni C, Skacha P, Musetti S, Kasatkin AV, and Nestola F
+    (2023) Tetrahedrite-(Cd), Cu6(Cu4Cd2)Sb4S13, from Radetice near Pribram, Czech
+    Republic: the new Cd member of the tetrahedrite group, Eur. J. Mineral. 35:897-907,
+    pp. 897-907, Tables 1-7, Figures 1-3 (34 bounded passages <= 1,800 B across 11
+    full-PDF pages; 9 main-text pages / 28 passages, plus PNG renders of pages 4 and
+    6)'
+  accessed_at: '2026-11-05T14:14:30Z'
+  support: supports
+  summary: 'All bounded passages (<= 1,800 B) and single-page 150-DPI PNG table renders
+    inspected from Sejkora J, Biagioni C, Skacha P, Musetti S, Kasatkin AV, and Nestola
+    F (2023) Tetrahedrite-(Cd), Cu6(Cu4Cd2)Sb4S13, from Radetice near Pribram, Czech
+    Republic: the new Cd member of the tetrahedrite group, Eur. J. Mineral. 35:897-907,
+    pp. 897-907, Tables 1-7, Figures 1-3 (34 bounded passages <= 1,800 B across 11
+    full-PDF pages; 9 main-text pages / 28 passages, plus PNG renders of pages 4 and
+    6), confirming verbatim title, type locality, type specimen repositories, WDS
+    chemical composition, unit-cell parameters, structure refinement, and documented
+    internal source discrepancies.'
+  snapshot_sha256: 1456df9033f2bc95f866b9949954831ce7ca7688366fa2357a3de0e3768b9341
+- evidence_id: create_history
+  kind: record_content
+  reference: history/records/tetrahedrite-cd/2026-11-05T140447Z-antigravity-6f1290.yaml
+  locator: Canonical CREATE history sidecar history/records/tetrahedrite-cd/2026-11-05T140447Z-antigravity-6f1290.yaml
+  accessed_at: '2026-11-05T14:14:30Z'
+  support: supports
+  summary: Canonical CREATE history sidecar (SHA-256 fc692d6bd632c2b29a0d1c3b27dc5568246f2b86ec6fe6486f2c5e9b266b9e19)
+    matches record curation_history[0].timestamp and top-level record sections.
+  snapshot_sha256: fc692d6bd632c2b29a0d1c3b27dc5568246f2b86ec6fe6486f2c5e9b266b9e19
+- evidence_id: validation
+  kind: validation
+  reference: data/records/tetrahedrite-cd.yaml
+  locator: Real CLI validation via .venv/bin/cmmmech validate --require-records and
+    .venv/bin/cmmmech validate-history --base main
+  accessed_at: '2026-11-05T14:14:40Z'
+  support: supports
+  summary: Checked 688 record(s); 0 failed. Checked 1340 history record(s); 0 error(s).
+  snapshot_sha256: b587167cf3071664071983bc5e2ce78e952b8e06cf7f6f068a8038381d0b1e6a
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: .venv/bin/cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 688 record(s); 0 failed.
+  target_ids:
+  - cmmmech:tetrahedrite-cd
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: .venv/bin/cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1340 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:tetrahedrite-cd
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA:2022-115 identity, Radetice type locality, Cameca SX100
+    WDS chemistry, COM reflectance, cubic I-43m tetrahedrite-group structure, and
+    internal source discrepancies for tetrahedrite-cd
+  outcome: supported
+  summary: 'All numeric, crystallographic, optical, spectroscopic, and chemical claims
+    in data/records/tetrahedrite-cd.yaml (SHA-256 b587167cf3071664071983bc5e2ce78e952b8e06cf7f6f068a8038381d0b1e6a)
+    match the bounded primary-source passages and rendered table PNGs of Sejkora J,
+    Biagioni C, Skacha P, Musetti S, Kasatkin AV, and Nestola F (2023) Tetrahedrite-(Cd),
+    Cu6(Cu4Cd2)Sb4S13, from Radetice near Pribram, Czech Republic: the new Cd member
+    of the tetrahedrite group, Eur. J. Mineral. 35:897-907, pp. 897-907, Tables 1-7,
+    Figures 1-3 (34 bounded passages <= 1,800 B across 11 full-PDF pages; 9 main-text
+    pages / 28 passages, plus PNG renders of pages 4 and 6) and the September 2026
+    IMA Master List (p. 215).'
+  target_ids:
+  - cmmmech:tetrahedrite-cd
+  evidence_ids:
+  - owner
+  - ima_authority
+  - sejkora_2023_tetrahedrite_cd_primary
+- assessment_id: mechanism_absence_and_provenance_verification
+  area: provenance
+  topic: Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE
+    provenance
+  outcome: supported
+  summary: data/records/tetrahedrite-cd.yaml accurately omits mechanisms (0 mechanisms)
+    and explicitly discloses that no biological or microbial interaction data are
+    reported in the type mineralogical description. Append-only CREATE history sidecar
+    passes validation with 0 errors.
+  target_ids:
+  - cmmmech:tetrahedrite-cd
+  evidence_ids:
+  - owner
+  - sejkora_2023_tetrahedrite_cd_primary
+  - create_history
+  - validation
+findings: []
+actions: []
+summary: 'Tetrahedrite-(Cd) (IMA:2022-115, status A, Cu6(Cu4Cd2)Sb4S13) passes primary-source
+  scientific review (scientific_review: true) at SHA-256 b587167cf3071664071983bc5e2ce78e952b8e06cf7f6f068a8038381d0b1e6a
+  against all bounded passages and rendered table PNGs of Sejkora J, Biagioni C, Skacha
+  P, Musetti S, Kasatkin AV, and Nestola F (2023) Tetrahedrite-(Cd), Cu6(Cu4Cd2)Sb4S13,
+  from Radetice near Pribram, Czech Republic: the new Cd member of the tetrahedrite
+  group, Eur. J. Mineral. 35:897-907, pp. 897-907, Tables 1-7, Figures 1-3 (34 bounded
+  passages <= 1,800 B across 11 full-PDF pages; 9 main-text pages / 28 passages, plus
+  PNG renders of pages 4 and 6).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed under the Round 127 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage) plus single-page 150-DPI PNG table renders.
+related_reviews: []
