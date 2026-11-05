@@ -1,0 +1,24 @@
+# Stage 5 Grouped Remediation Issue Map (`mech-goal-sequence-20261019`, Cycle 8, Stage 5)
+
+- **Repository**: `CultureBotAI/CMMMech` (`cmmmech`)
+- **Source Revision**: `8440d1bab62f9f639cabfd86d2f3356f97594bdd`
+- **Scope Frozen At**: `2026-11-05T10:15:00Z`
+- **Previous Stage Evidence**: `reviews/workflow/mech-goal-sequence-20261019/cycle-000008/stage-04/revision-0001/evidence.yaml` (`5558a8abf6729f992d9d19992fbf027c143bc9180e99833b072008124a1bfa85`)
+- **Post-Remediation Structured Review Bundle**: `reviews/structured/20261105T102000Z-cycle8-stage5-remediation-verification/review.yaml` (`sha256: e3c54de12edf8c166e39b5b6e8af5bf80d3cad86f0af1ebe5b1860e38ad5cb66`)
+
+## 1. Deduplication Against Open & Closed GitHub Issues
+
+Before creating issues, the open and closed GitHub issue queues in `CultureBotAI/CMMMech` were searched via `gh issue list --repo CultureBotAI/CMMMech --state open --limit 100` and `gh issue list --repo CultureBotAI/CMMMech --state closed --limit 30`. Open issues (`#106`, `#115`, `#805`, `#822`, `#839`, `#840`) were inspected and none covered the 3 Cycle 8 Stage 4 review findings (`cmmmech-cycle8-stage4-finding-0001`, `cmmmech-cycle8-stage4-finding-0002`, `cmmmech-cycle8-stage4-finding-0003`). Three new tracked GitHub issues (`#929`, `#930`, `#931`) were created, one per root-cause and repair-ownership group.
+
+## 2. Root-Cause Groups, Issue Mapping, and Finding Dispositions
+
+| Group ID | Finding IDs | Issue Key | GitHub Issue | Status | Target Records (10 total) | Disposition |
+| --- | --- | --- | --- | --- | --- | --- |
+| `GRP-C8S5-001` | `cmmmech-cycle8-stage4-finding-0001` | `cmmmech.schwertmannite.lx5-eps-removal-perturbation-graph-inverted-node-ids` | [`#929`](https://github.com/CultureBotAI/CMMMech/issues/929) | `resolved` | 1 mineral record (`schwertmannite`) | Updated `causal_graphs[1].nodes[2].id` (`attenuated_12_to_40h_ferrous_oxidation_flux` -> `unimpaired_72h_ferrous_oxidation_trajectory`), `causal_graphs[1].nodes[3].id` (`reduced_12_to_40h_schwertmannite_precipitate_yield` -> `enhanced_72h_schwertmannite_precipitate_yield`), and their references in `causal_graphs[1].edges[2].target`, `causal_graphs[1].edges[3].source`, and `causal_graphs[1].edges[3].target` in `data/records/schwertmannite.yaml` to match Song et al. (2018, `Materials` 11(9):1739, `DOI:10.3390/ma11091739`, Section 3.4, Table 1, Figures 5-7), with an append-only `EDIT` history sidecar. |
+| `GRP-C8S5-002` | `cmmmech-cycle8-stage4-finding-0002` | `cmmmech.ferrooxidans-cyc2-causal-graphs.mid-sentence-capitalized-periplasmic-target-label-in-edge-description` | [`#930`](https://github.com/CultureBotAI/CMMMech/issues/930) | `resolved` | 8 records (`argentojarosite`, `basic-oxygen-furnace-steelmaking-dust`, `cemented-tungsten-carbide-scrap`, `eudialyte-ore`, `nickel-smelter-slag`, `rutile`, `schwertmannite`, `spent-steel-pickling-liquors`) | Replaced mid-sentence `to Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).` with `to periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).` in `edges[0].description` (`cyc2_outer_membrane_cytochrome -> rus_cyc1_periplasmic_electron_transfer`) across all 9 causal graphs in the 8 affected `Acidithiobacillus ferrooxidans` records, with 8 append-only `EDIT` history sidecars. |
+| `GRP-C8S5-003` | `cmmmech-cycle8-stage4-finding-0003` | `cmmmech.shewanella-mr1-chromium-uraninite.unqualified-template-node-descriptions-and-capitalized-interpolations` | [`#931`](https://github.com/CultureBotAI/CMMMech/issues/931) | `resolved` | 2 records (`chromium`, `uraninite`) | Replaced generic template placeholder descriptions on `oxidized_metal_substrate` and `reduced_metal_product` in `data/records/chromium.yaml` (`causal_graphs[0].nodes[3..4]`) and `data/records/uraninite.yaml` (`causal_graphs[0].nodes[4..5]`) with source-specific chemical/mineral descriptions, lowercased mid-sentence substrate/product label interpolations across `mechanisms[0].protein_examples`, `causal_graphs[0].nodes[].protein_examples`, and `causal_graphs[0].edges[]`, and qualified `reduced_metal_product` in `data/records/chromium.yaml` as `Reduced Cr precipitate/complexes (inferred Cr(III))` to reflect that Belchik et al. (2011, `DOI:10.1128/AEM.02463-10`, Figures 2-3) detected elemental Cr by TEM-EDX and inferred Cr(III) valence from prior studies rather than direct oxidation-state spectroscopy, with 2 append-only `EDIT` history sidecars. |
+
+## 3. Carry-Forward Blockers & Infrastructure Tasks
+
+- **Carry-Forward Findings (`carry_forward_ids`)**: `[]` (0 open/deferred findings remain).
+- **Infrastructure Tasks (`infra_tasks`)**: `[]` (all 3 Cycle 8 Stage 4 findings were resolved directly in record YAML and history sidecars).

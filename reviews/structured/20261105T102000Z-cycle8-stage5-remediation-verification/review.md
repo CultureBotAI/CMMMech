@@ -1,0 +1,858 @@
+# Cycle 8 Stage 5 Post-Remediation Verification Review: 10 Remediated CMMMech Records
+
+- Review: 20261105T102000Z-cycle8-stage5-remediation-verification
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-05T10:15:00Z
+- Finished UTC: 2026-11-05T10:20:00Z
+- Reviewer: antigravity / cmmmech-cycle8-stage5-remediation-reviewer (self_review)
+- Completion: completed
+- Verdict: pass
+- Scientific review: true
+
+## Summary
+
+Post-remediation verification review across all 10 CMMMech records modified in Cycle 8 Stage 5 (1 element, 4 mineral, 1 primary_resource, and 4 secondary_resource records) resolving all 3 open Cycle 8 Stage 4 review findings under GitHub Issues #929 (GRP-C8S5-001: schwertmannite.yaml causal_graphs[1] lx5_eps_removal_perturbation_graph nodes[2..3].id and edges[2..3] updated to unimpaired_72h_ferrous_oxidation_trajectory and enhanced_72h_schwertmannite_precipitate_yield to match Song et al. 2018 Section 3.4, Table 1, and Figures 5-7), #930 (GRP-C8S5-002: 8 Acidithiobacillus ferrooxidans records across 9 causal graphs updated to lowercase mid-sentence 'to periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).' in edges[0].description), and #931 (GRP-C8S5-003: chromium.yaml and uraninite.yaml updated to replace generic template placeholder descriptions on oxidized_metal_substrate and reduced_metal_product, lowercase mid-sentence substrate/product label interpolations across mechanisms[0] and causal_graphs[0], and qualify reduced_metal_product in chromium.yaml as 'Reduced Cr precipitate/complexes (inferred Cr(III))' per Belchik et al. 2011 TEM-EDX evidence). All 10 records pass strict validation, history validation, and page rendering checks with 0 open findings.
+
+## Scope And Provenance
+
+All 10 distinct CMMMech records affected by the 3 Cycle 8 Stage 4 findings carried into Stage 5 (1 mineral record in GRP-C8S5-001 / #929, 8 Acidithiobacillus ferrooxidans Cyc2-Rus-Cyc1 causal-graph records across 9 causal graphs in GRP-C8S5-002 / #930, and 2 Shewanella oneidensis MR-1 MtrCAB/OmcA causal-graph records in GRP-C8S5-003 / #931).
+
+Selection: cycle8_stage4_open_finding_targets
+Coverage: full; 10 reviewed / 10 in the declared population.
+Source: working_tree at Git base 8440d1bab62f9f639cabfd86d2f3356f97594bdd.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:argentojarosite | data/records/argentojarosite.yaml | maintained | Argentojarosite |
+| cmmmech:basic-oxygen-furnace-steelmaking-dust | data/records/basic-oxygen-furnace-steelmaking-dust.yaml | maintained | Basic oxygen furnace steelmaking dust |
+| cmmmech:cemented-tungsten-carbide-scrap | data/records/cemented-tungsten-carbide-scrap.yaml | maintained | Cemented tungsten carbide scrap |
+| cmmmech:chromium | data/records/chromium.yaml | maintained | Chromium |
+| cmmmech:eudialyte-ore | data/records/eudialyte-ore.yaml | maintained | Eudialyte ore |
+| cmmmech:nickel-smelter-slag | data/records/nickel-smelter-slag.yaml | maintained | Nickel smelter slag |
+| cmmmech:rutile | data/records/rutile.yaml | maintained | Rutile |
+| cmmmech:schwertmannite | data/records/schwertmannite.yaml | maintained | Schwertmannite |
+| cmmmech:spent-steel-pickling-liquors | data/records/spent-steel-pickling-liquors.yaml | maintained | Spent steel-pickling liquors |
+| cmmmech:uraninite | data/records/uraninite.yaml | maintained | Uraninite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict LinkML and semantic record validation | passed | True | cmmmech:argentojarosite, cmmmech:basic-oxygen-furnace-steelmaking-dust, cmmmech:cemented-tungsten-carbide-scrap, cmmmech:chromium, cmmmech:eudialyte-ore, cmmmech:nickel-smelter-slag, cmmmech:rutile, cmmmech:schwertmannite, cmmmech:spent-steel-pickling-liquors, cmmmech:uraninite | All 683 records (including all 10 remediated records) pass .venv/bin/python -m cmmmech.cli validate --strict with 0 errors and 0 warnings. |
+| Append-only history sidecar validation | passed | True | cmmmech:argentojarosite, cmmmech:basic-oxygen-furnace-steelmaking-dust, cmmmech:cemented-tungsten-carbide-scrap, cmmmech:chromium, cmmmech:eudialyte-ore, cmmmech:nickel-smelter-slag, cmmmech:rutile, cmmmech:schwertmannite, cmmmech:spent-steel-pickling-liquors, cmmmech:uraninite | All 10 new EDIT history sidecars and existing history sidecars pass .venv/bin/python -m cmmmech.cli validate-history --base main with 0 errors. |
+| Schwertmannite lx5_eps_removal_perturbation_graph node IDs and edge endpoints concordance (#929) | passed | True | cmmmech:schwertmannite | Verified that causal_graphs[1].nodes[2].id (unimpaired_72h_ferrous_oxidation_trajectory), causal_graphs[1].nodes[3].id (enhanced_72h_schwertmannite_precipitate_yield), and their references in causal_graphs[1].edges[2].target, causal_graphs[1].edges[3].source, and causal_graphs[1].edges[3].target in data/records/schwertmannite.yaml match the remediated labels, descriptions, and Song et al. (2018, Materials 11(9):1739, Section 3.4, Table 1, Figures 5-7) experimental results. |
+| Lowercase mid-sentence periplasmic rusticyanin target label in cyc2_outer_membrane_cytochrome outgoing edge descriptions across 8 Acidithiobacillus ferrooxidans records (#930) | passed | True | cmmmech:argentojarosite, cmmmech:basic-oxygen-furnace-steelmaking-dust, cmmmech:cemented-tungsten-carbide-scrap, cmmmech:eudialyte-ore, cmmmech:nickel-smelter-slag, cmmmech:rutile, cmmmech:schwertmannite, cmmmech:spent-steel-pickling-liquors | Verified that edges[0].description (cyc2_outer_membrane_cytochrome -&gt; rus_cyc1_periplasmic_electron_transfer) in all 9 causal graphs across argentojarosite.yaml, basic-oxygen-furnace-steelmaking-dust.yaml, cemented-tungsten-carbide-scrap.yaml, eudialyte-ore.yaml, nickel-smelter-slag.yaml, rutile.yaml, schwertmannite.yaml (causal_graphs[0..1]), and spent-steel-pickling-liquors.yaml reads '... deliver electrons across the outer membrane to periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).' with lowercase 'periplasmic'. |
+| Source-specific substrate/product node descriptions, lowercased mid-sentence label interpolations, and Cr(III) TEM-EDX qualification in chromium.yaml and uraninite.yaml (#931) | passed | True | cmmmech:chromium, cmmmech:uraninite | Verified that oxidized_metal_substrate and reduced_metal_product in data/records/chromium.yaml (causal_graphs[0].nodes[3..4]) and data/records/uraninite.yaml (causal_graphs[0].nodes[4..5]) carry source-specific descriptions from Belchik et al. (2011) and Marshall et al. (2006), all mid-sentence substrate/product label interpolations in mechanisms[0].protein_examples, causal_graphs[0].nodes[].protein_examples, and causal_graphs[0].edges[] use lowercase initial words ('dissolved chromate Cr(VI)', 'reduced Cr precipitate/complexes (inferred Cr(III))', 'soluble uranyl carbonate U(VI) complexes', 'extracellular nanocrystalline uraninite (UO2)'), and reduced_metal_product in chromium.yaml is qualified as 'Reduced Cr precipitate/complexes (inferred Cr(III))' with supports partial on edges[3]. |
+
+## Scientific And Domain Assessments
+
+### Schwertmannite lx5_eps_removal_perturbation_graph node IDs and edge endpoints concordance (GRP-C8S5-001, #929)
+
+graph: supported. Targets: cmmmech:schwertmannite.
+
+data/records/schwertmannite.yaml (causal_graphs[1] lx5_eps_removal_perturbation_graph) now uses unimpaired_72h_ferrous_oxidation_trajectory (nodes[2].id, edges[2].target, edges[3].source) and enhanced_72h_schwertmannite_precipitate_yield (nodes[3].id, edges[3].target), eliminating the legacy inverted node IDs and aligning IDs, labels, descriptions, and edge endpoints with Song et al. (2018) Section 3.4, Table 1, and Figures 5-7.
+
+### Acidithiobacillus ferrooxidans cyc2_outer_membrane_cytochrome outgoing edge mid-sentence capitalization across 8 records / 9 causal graphs (GRP-C8S5-002, #930)
+
+graph: supported. Targets: cmmmech:argentojarosite, cmmmech:basic-oxygen-furnace-steelmaking-dust, cmmmech:cemented-tungsten-carbide-scrap, cmmmech:eudialyte-ore, cmmmech:nickel-smelter-slag, cmmmech:rutile, cmmmech:schwertmannite, cmmmech:spent-steel-pickling-liquors.
+
+All 9 causal graphs across the 8 Acidithiobacillus ferrooxidans records in GRP-C8S5-002 (argentojarosite.yaml, basic-oxygen-furnace-steelmaking-dust.yaml, cemented-tungsten-carbide-scrap.yaml, eudialyte-ore.yaml, nickel-smelter-slag.yaml, rutile.yaml, schwertmannite.yaml [causal_graphs[0..1]], and spent-steel-pickling-liquors.yaml) now use lowercase 'to periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).' in edges[0].description.
+
+### Shewanella oneidensis MR-1 chromium.yaml and uraninite.yaml substrate/product node descriptions, mid-sentence label capitalization, and Cr(III) TEM-EDX qualification (GRP-C8S5-003, #931)
+
+graph: supported. Targets: cmmmech:chromium, cmmmech:uraninite.
+
+Both Shewanella oneidensis MR-1 records in GRP-C8S5-003 (chromium.yaml and uraninite.yaml) now replace generic template placeholder descriptions on oxidized_metal_substrate and reduced_metal_product with source-specific descriptions from Belchik et al. (2011) and Marshall et al. (2006), lowercase mid-sentence substrate/product label interpolations across mechanisms[0].protein_examples, causal_graphs[0].nodes[].protein_examples, and causal_graphs[0].edges[], and qualify reduced_metal_product in chromium.yaml as 'Reduced Cr precipitate/complexes (inferred Cr(III))' with supports partial on edges[3].
+
+## Findings
+
+### cmmmech-cycle8-stage4-finding-0001: Schwertmannite lx5_eps_removal_perturbation_graph nodes[2..3].id and edges[2..3] endpoints now match Song et al. (2018) unimpaired 72 h Fe(II) oxidation and enhanced schwertmannite precipitate yield
+
+minor / resolved / confirmed; issue key: cmmmech.schwertmannite.lx5-eps-removal-perturbation-graph-inverted-node-ids.
+
+In data/records/schwertmannite.yaml (cmmmech:schwertmannite, causal_graphs[1] lx5_eps_removal_perturbation_graph, lines 537-583), after Cycle 8 Stage 2 (PR #924, Issue #925) remediated nodes[2].label, nodes[2].description, nodes[3].label, and nodes[3].description to match Song et al. (2018, Materials 11(9):1739, DOI:10.3390/ma11091739, Section 3.4, Table 1, and Figures 5-7) — where 20,000 g centrifugal EPS removal leaves the 72 h Fe(II) oxidation trajectory unimpaired (Figure 5a) and increases 72 h dry schwertmannite precipitate mass from 0.89 g (conventional) and 0.96 g (EPS detached-but-retained) to 1.29 g (Figure 5b) and BET surface area to 86.43 m2/g (Table 1) — nodes[2].id (attenuated_12_to_40h_ferrous_oxidation_flux, line 537) and nodes[3].id (reduced_12_to_40h_schwertmannite_precipitate_yield, line 542) and their references in edges[2].target (line 567), edges[3].source (line 575), and edges[3].target (line 576) still retain the inverted pre-remediation node IDs that contradict their own remediated labels and descriptions.
+
+Disposition: Resolved under GitHub Issue #929 (GRP-C8S5-001): updated causal_graphs[1].nodes[2].id to unimpaired_72h_ferrous_oxidation_trajectory, causal_graphs[1].nodes[3].id to enhanced_72h_schwertmannite_precipitate_yield, and their references in causal_graphs[1].edges[2].target, causal_graphs[1].edges[3].source, and causal_graphs[1].edges[3].target in data/records/schwertmannite.yaml with an append-only EDIT history sidecar.
+
+### cmmmech-cycle8-stage4-finding-0002: Eight Acidithiobacillus ferrooxidans records (9 causal graphs) now use lowercase mid-sentence 'periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152)' in edges[0].description
+
+minor / resolved / confirmed; issue key: cmmmech.ferrooxidans-cyc2-causal-graphs.mid-sentence-capitalized-periplasmic-target-label-in-edge-description.
+
+Across the 8 Acidithiobacillus ferrooxidans records (9 causal graphs) updated in Cycle 8 Stage 2 (PR #924, commit d69682fb) and Stage 3 (PR #926, commit 57341037) — data/records/argentojarosite.yaml (line 279), data/records/basic-oxygen-furnace-steelmaking-dust.yaml (line 282), data/records/cemented-tungsten-carbide-scrap.yaml (line 283), data/records/eudialyte-ore.yaml (line 272), data/records/nickel-smelter-slag.yaml (line 265), data/records/rutile.yaml (line 273), data/records/schwertmannite.yaml (causal_graphs[0] line 386 and causal_graphs[1] line 552), and data/records/spent-steel-pickling-liquors.yaml (line 278) — edges[0].description (cyc2_outer_membrane_cytochrome -&gt; rus_cyc1_periplasmic_electron_transfer) interpolates the capitalized target node label 'Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152)' verbatim mid-sentence ('... deliver electrons across the outer membrane to Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).') instead of lowercase 'periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152)'.
+
+Disposition: Resolved under GitHub Issue #930 (GRP-C8S5-002): replaced mid-sentence 'to Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).' with 'to periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).' in edges[0].description across all 9 causal graphs in the 8 affected Acidithiobacillus ferrooxidans records, with 8 append-only EDIT history sidecars.
+
+### cmmmech-cycle8-stage4-finding-0003: Chromium and uraninite Shewanella oneidensis MR-1 records now have source-specific substrate/product node descriptions, lowercase mid-sentence label interpolations, and Cr(III) TEM-EDX qualification
+
+minor / resolved / confirmed; issue key: cmmmech.shewanella-mr1-chromium-uraninite.unqualified-template-node-descriptions-and-capitalized-interpolations.
+
+In data/records/chromium.yaml (cmmmech:chromium, element, Belchik et al. 2011, Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10; causal_graphs[0] lines 118-260, nodes[3..4] lines 213-222, edges[1..3] lines 233-259) and data/records/uraninite.yaml (cmmmech:uraninite, mineral, Marshall et al. 2006, PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268; causal_graphs[0] lines 195-397, nodes[4..5] lines 333-344, edges[2..4] lines 367-397), oxidized_metal_substrate and reduced_metal_product in causal_graphs[0] retain generic template placeholder descriptions ('Oxidized metal species or mineral substrate (&lt;Label&gt;) accepting extracellular electrons.' and 'Reduced metal species or mineral phase (&lt;Label&gt;) formed by extracellular electron transfer.'), and mechanisms[0].protein_examples[0..1].evidence[0].explanation, causal_graphs[0].nodes[...].protein_examples[0].evidence[0].explanation, and causal_graphs[0].edges[...].{description,evidence[0].explanation} interpolate the capitalized node labels verbatim mid-sentence ('... to Dissolved chromate Cr(VI)', '... into Reduced Cr(III) precipitate/complexes', '... to Soluble uranyl carbonate U(VI) complexes', '... into Extracellular nanocrystalline uraninite (UO2)'). Furthermore, in chromium.yaml (causal_graphs[0].nodes[4], lines 218-222, and edges[3], lines 251-259), reduced_metal_product is labeled 'Reduced Cr(III) precipitate/complexes' without the qualification stated in mechanisms[0].description (line 35) and mechanisms[0].evidence[1].explanation (line 116) that Belchik et al. (2011) detected elemental Cr in electron-dense precipitates by TEM-EDX (Figures 2-3) and inferred Cr(III) valence from prior studies rather than oxidation-state spectroscopy.
+
+Disposition: Resolved under GitHub Issue #931 (GRP-C8S5-003): replaced generic template placeholder descriptions on oxidized_metal_substrate and reduced_metal_product in data/records/chromium.yaml (causal_graphs[0].nodes[3..4]) and data/records/uraninite.yaml (causal_graphs[0].nodes[4..5]) with source-specific descriptions, lowercased mid-sentence substrate/product label interpolations across mechanisms[0].protein_examples, causal_graphs[0].nodes[].protein_examples, and causal_graphs[0].edges[], and qualified reduced_metal_product in chromium.yaml as 'Reduced Cr precipitate/complexes (inferred Cr(III))' to reflect Belchik et al. (2011) TEM-EDX evidence, with 2 append-only EDIT history sidecars.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+- retain: cmmmech:argentojarosite, cmmmech:basic-oxygen-furnace-steelmaking-dust, cmmmech:cemented-tungsten-carbide-scrap, cmmmech:chromium, cmmmech:eudialyte-ore, cmmmech:nickel-smelter-slag, cmmmech:rutile, cmmmech:schwertmannite, cmmmech:spent-steel-pickling-liquors, cmmmech:uraninite. All 10 remediated records represent distinct material entities (1 element, 4 IMA-approved minerals, 1 primary resource, and 4 secondary resources) with disjoint identifiers and provenance; cohort boundaries from Cycle 8 Stage 4 are retained unchanged.
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| ev-stage4-evidence | reviews/workflow/mech-goal-sequence-20261019/cycle-000008/stage-04/revision-0001/evidence.yaml; findings[0..2] (cmmmech-cycle8-stage4-finding-0001, cmmmech-cycle8-stage4-finding-0002, cmmmech-cycle8-stage4-finding-0003) | supports | Verified the 3 open Cycle 8 Stage 4 review findings and their 10 distinct target records. |
+| ev-stage4-findings | reviews/workflow/mech-goal-sequence-20261019/cycle-000008/stage-04/revision-0001/review_findings.yaml; findings[0..2] root-cause groups, issue_keys, and structured_review_bundles | supports | Confirmed exact Stage 4 finding IDs, issue_key identifiers, previous review_id occurrences, and target record lists. |
+| ev-schema | src/cmmmech/schema/cmmmech.yaml; classes.MaterialRecord, classes.CausalGraph, classes.CausalNode, classes.CausalEdge | supports | Canonical LinkML schema defining MaterialRecord and CausalGraph/CausalNode/CausalEdge structure. |
+| ev-song2018 | https://doi.org/10.3390/ma11091739; Song et al. (2018) Materials 11(9):1739, Section 3.4, Table 1, and Figures 5-7 | supports | Confirms that 20,000 g centrifugal EPS removal in Acidithiobacillus ferrooxidans LX5 leaves the 72 h Fe(II) oxidation trajectory unimpaired (Figure 5a) and increases 72 h dry schwertmannite precipitate mass from 0.89 g / 0.96 g to 1.29 g (Figure 5b) and BET surface area to 86.43 m2/g (Table 1). |
+| ev-belchik2011-marshall2006 | https://doi.org/10.1128/AEM.02463-10; Belchik et al. (2011) Appl. Environ. Microbiol. 77(12):4035-4041 (Figures 2-3) and Marshall et al. (2006) PLOS Biology 4(8):e268 (DOI:10.1371/journal.pbio.0040268, Figure 2I, Figure S4) | supports | Confirms assay conditions and phase characterization for Shewanella oneidensis MR-1 MtrCAB/OmcA reduction of Cr(VI) (0.2 mM K2CrO4 in 30 mM NaHCO3, pH 8, 10 mM lactate, 30 C; TEM-EDX elemental Cr precipitates with Cr(III) valence inferred from prior studies) and U(VI) (250 uM uranyl acetate in 30 mM NaHCO3, pH 7.0, 10 mM lactate, 30 C; HRTEM/SAED/EDX 1-5 nm nanocrystalline UO2). |
+
+## Limits And Additional Notes
+
+- This verification review is scoped to the 10 records remediated in Cycle 8 Stage 5; the remaining 673 records were verified with 0 open findings in the immutable Cycle 8 Stage 4 review bundles.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261105T102000Z-cycle8-stage5-remediation-verification
+title: 'Cycle 8 Stage 5 Post-Remediation Verification Review: 10 Remediated CMMMech
+  Records'
+repository: CultureBotAI/CMMMech
+kind: category
+started_at: '2026-11-05T10:15:00Z'
+finished_at: '2026-11-05T10:20:00Z'
+skill: .claude/skills/review-yaml-category/SKILL.md
+completion: completed
+verdict: pass
+scientific_review: true
+summary: 'Post-remediation verification review across all 10 CMMMech records modified
+  in Cycle 8 Stage 5 (1 element, 4 mineral, 1 primary_resource, and 4 secondary_resource
+  records) resolving all 3 open Cycle 8 Stage 4 review findings under GitHub Issues
+  #929 (GRP-C8S5-001: schwertmannite.yaml causal_graphs[1] lx5_eps_removal_perturbation_graph
+  nodes[2..3].id and edges[2..3] updated to unimpaired_72h_ferrous_oxidation_trajectory
+  and enhanced_72h_schwertmannite_precipitate_yield to match Song et al. 2018 Section
+  3.4, Table 1, and Figures 5-7), #930 (GRP-C8S5-002: 8 Acidithiobacillus ferrooxidans
+  records across 9 causal graphs updated to lowercase mid-sentence ''to periplasmic
+  rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).'' in edges[0].description),
+  and #931 (GRP-C8S5-003: chromium.yaml and uraninite.yaml updated to replace generic
+  template placeholder descriptions on oxidized_metal_substrate and reduced_metal_product,
+  lowercase mid-sentence substrate/product label interpolations across mechanisms[0]
+  and causal_graphs[0], and qualify reduced_metal_product in chromium.yaml as ''Reduced
+  Cr precipitate/complexes (inferred Cr(III))'' per Belchik et al. 2011 TEM-EDX evidence).
+  All 10 records pass strict validation, history validation, and page rendering checks
+  with 0 open findings.'
+reviewer:
+  identity: antigravity / cmmmech-cycle8-stage5-remediation-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Cycle 8 Stage 5 post-remediation verification review (.claude/skills/review-yaml-category/SKILL.md)
+    of the 10 remediated records against the immutable Cycle 8 Stage 4 review bundles.
+source:
+  git_revision: 8440d1bab62f9f639cabfd86d2f3356f97594bdd
+  state: working_tree
+  inputs:
+  - path: data/records/argentojarosite.yaml
+    sha256: b9bcc011760f6aa4e1c2740ad62da43d9281969cca41423413bee4be9a1d2044
+    role: target
+  - path: data/records/basic-oxygen-furnace-steelmaking-dust.yaml
+    sha256: 74024f5da99c53b4f0f51fccd71b7f72833c18cdb7e99cd73a1bb00889c93982
+    role: target
+  - path: data/records/cemented-tungsten-carbide-scrap.yaml
+    sha256: bd8b37dcd07944d0f276a0f40edf879578c933cf2bf8a14d62b942d2e63c96c0
+    role: target
+  - path: data/records/chromium.yaml
+    sha256: 2fa5feef5344357886d087965aac5b3449a68d07159aebd07638a085993c1eac
+    role: target
+  - path: data/records/eudialyte-ore.yaml
+    sha256: ece4b1e3405e97cdee81ccb810e3104d9877950f160593e0ba3d0931ab85156f
+    role: target
+  - path: data/records/nickel-smelter-slag.yaml
+    sha256: e604e1bb496cbf17ea56b787a70eff7b6b269705d830d117d85312a21c54d844
+    role: target
+  - path: data/records/rutile.yaml
+    sha256: a8ca4375c7a6a37c6af3c9853e69b1cc09233f8601218c88dd81f3670aed580d
+    role: target
+  - path: data/records/schwertmannite.yaml
+    sha256: fa22f8f32e37827a1930e082fec58ac3c51afb8f430fd55266da41b6dccf627e
+    role: target
+  - path: data/records/spent-steel-pickling-liquors.yaml
+    sha256: 81ed3c945fb436210d910ca994308462c07846d47081599b42e902648949f200
+    role: target
+  - path: data/records/uraninite.yaml
+    sha256: b530bf1c11b36f0bc3fe5b150cfd33d207d25b1076d352802125771cab3c7d35
+    role: target
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000008/stage-04/revision-0001/evidence.yaml
+    sha256: 5558a8abf6729f992d9d19992fbf027c143bc9180e99833b072008124a1bfa85
+    role: context
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000008/stage-04/revision-0001/review_findings.yaml
+    sha256: 4cfa13ac78dc7ecb40efd84afd26543a3e635b22cd2c7c27f6b591b7450944e4
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+scope:
+  description: 'All 10 distinct CMMMech records affected by the 3 Cycle 8 Stage 4
+    findings carried into Stage 5 (1 mineral record in GRP-C8S5-001 / #929, 8 Acidithiobacillus
+    ferrooxidans Cyc2-Rus-Cyc1 causal-graph records across 9 causal graphs in GRP-C8S5-002
+    / #930, and 2 Shewanella oneidensis MR-1 MtrCAB/OmcA causal-graph records in GRP-C8S5-003
+    / #931).'
+  selection: cycle8_stage4_open_finding_targets
+  coverage: full
+  population_size: 10
+  reviewed_target_ids:
+  - cmmmech:argentojarosite
+  - cmmmech:basic-oxygen-furnace-steelmaking-dust
+  - cmmmech:cemented-tungsten-carbide-scrap
+  - cmmmech:chromium
+  - cmmmech:eudialyte-ore
+  - cmmmech:nickel-smelter-slag
+  - cmmmech:rutile
+  - cmmmech:schwertmannite
+  - cmmmech:spent-steel-pickling-liquors
+  - cmmmech:uraninite
+targets:
+- target_id: cmmmech:argentojarosite
+  path: data/records/argentojarosite.yaml
+  label: Argentojarosite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: cceb718f646947513b935268bc9886814fc2420f1b40f23722b655513e4fff5f
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/argentojarosite.yaml
+    role: maintained_record
+- target_id: cmmmech:basic-oxygen-furnace-steelmaking-dust
+  path: data/records/basic-oxygen-furnace-steelmaking-dust.yaml
+  label: Basic oxygen furnace steelmaking dust
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 4cfae2b88996265a93ec69cda0c1a08e0988dd15ae67b674c935867764793e2b
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/basic-oxygen-furnace-steelmaking-dust.yaml
+    role: maintained_record
+- target_id: cmmmech:cemented-tungsten-carbide-scrap
+  path: data/records/cemented-tungsten-carbide-scrap.yaml
+  label: Cemented tungsten carbide scrap
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: b2416320d5a123ae842580588e2000b4b2251e6cf04f30aa21ef1c204f18feaf
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cemented-tungsten-carbide-scrap.yaml
+    role: maintained_record
+- target_id: cmmmech:chromium
+  path: data/records/chromium.yaml
+  label: Chromium
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: cde29ceea5159a0c05d7255fa672e73e19946edd4ff7e0e1f7d705251da46955
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/chromium.yaml
+    role: maintained_record
+- target_id: cmmmech:eudialyte-ore
+  path: data/records/eudialyte-ore.yaml
+  label: Eudialyte ore
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: dc63c1f81142bd8803286794d497725c67e3aaf43ecbf5ef6905620cbf3743c5
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/eudialyte-ore.yaml
+    role: maintained_record
+- target_id: cmmmech:nickel-smelter-slag
+  path: data/records/nickel-smelter-slag.yaml
+  label: Nickel smelter slag
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: ed2c11bb6f266d492b7e2124c3c0ba9601e2fa16c9728ed954f14d6e8633bee2
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/nickel-smelter-slag.yaml
+    role: maintained_record
+- target_id: cmmmech:rutile
+  path: data/records/rutile.yaml
+  label: Rutile
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 1ff6d47e75e773319eb9e06d2d0c92cc259d780c382b632ac81b91196bf52a6c
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/rutile.yaml
+    role: maintained_record
+- target_id: cmmmech:schwertmannite
+  path: data/records/schwertmannite.yaml
+  label: Schwertmannite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 774be087ba703d293383de48552dbd9109dfc49c41f077103833490c89304eef
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/schwertmannite.yaml
+    role: maintained_record
+- target_id: cmmmech:spent-steel-pickling-liquors
+  path: data/records/spent-steel-pickling-liquors.yaml
+  label: Spent steel-pickling liquors
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 4d5332423565351937ec8c4394921fe4d1e1b76b74b05602e0cae2aad00c26a0
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-steel-pickling-liquors.yaml
+    role: maintained_record
+- target_id: cmmmech:uraninite
+  path: data/records/uraninite.yaml
+  label: Uraninite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: aac7afa9ec4740ae36a31b570860287fce0bd85ff4aa1e8cfd61c13547481c4d
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/uraninite.yaml
+    role: maintained_record
+checks:
+- check_id: chk-validate-records
+  name: Strict LinkML and semantic record validation
+  status: passed
+  required: true
+  summary: All 683 records (including all 10 remediated records) pass .venv/bin/python
+    -m cmmmech.cli validate --strict with 0 errors and 0 warnings.
+  target_ids:
+  - cmmmech:argentojarosite
+  - cmmmech:basic-oxygen-furnace-steelmaking-dust
+  - cmmmech:cemented-tungsten-carbide-scrap
+  - cmmmech:chromium
+  - cmmmech:eudialyte-ore
+  - cmmmech:nickel-smelter-slag
+  - cmmmech:rutile
+  - cmmmech:schwertmannite
+  - cmmmech:spent-steel-pickling-liquors
+  - cmmmech:uraninite
+  command: .venv/bin/python -m cmmmech.cli validate --strict
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-validate-history
+  name: Append-only history sidecar validation
+  status: passed
+  required: true
+  summary: All 10 new EDIT history sidecars and existing history sidecars pass .venv/bin/python
+    -m cmmmech.cli validate-history --base main with 0 errors.
+  target_ids:
+  - cmmmech:argentojarosite
+  - cmmmech:basic-oxygen-furnace-steelmaking-dust
+  - cmmmech:cemented-tungsten-carbide-scrap
+  - cmmmech:chromium
+  - cmmmech:eudialyte-ore
+  - cmmmech:nickel-smelter-slag
+  - cmmmech:rutile
+  - cmmmech:schwertmannite
+  - cmmmech:spent-steel-pickling-liquors
+  - cmmmech:uraninite
+  command: .venv/bin/python -m cmmmech.cli validate-history --base main
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-grp1-schwertmannite-eps-node-ids
+  name: Schwertmannite lx5_eps_removal_perturbation_graph node IDs and edge endpoints
+    concordance (#929)
+  status: passed
+  required: true
+  summary: Verified that causal_graphs[1].nodes[2].id (unimpaired_72h_ferrous_oxidation_trajectory),
+    causal_graphs[1].nodes[3].id (enhanced_72h_schwertmannite_precipitate_yield),
+    and their references in causal_graphs[1].edges[2].target, causal_graphs[1].edges[3].source,
+    and causal_graphs[1].edges[3].target in data/records/schwertmannite.yaml match
+    the remediated labels, descriptions, and Song et al. (2018, Materials 11(9):1739,
+    Section 3.4, Table 1, Figures 5-7) experimental results.
+  target_ids:
+  - cmmmech:schwertmannite
+  evidence_ids:
+  - ev-song2018
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-grp2-ferrooxidans-cyc2-edge-capitalization
+  name: Lowercase mid-sentence periplasmic rusticyanin target label in cyc2_outer_membrane_cytochrome
+    outgoing edge descriptions across 8 Acidithiobacillus ferrooxidans records (#930)
+  status: passed
+  required: true
+  summary: Verified that edges[0].description (cyc2_outer_membrane_cytochrome -> rus_cyc1_periplasmic_electron_transfer)
+    in all 9 causal graphs across argentojarosite.yaml, basic-oxygen-furnace-steelmaking-dust.yaml,
+    cemented-tungsten-carbide-scrap.yaml, eudialyte-ore.yaml, nickel-smelter-slag.yaml,
+    rutile.yaml, schwertmannite.yaml (causal_graphs[0..1]), and spent-steel-pickling-liquors.yaml
+    reads '... deliver electrons across the outer membrane to periplasmic rusticyanin
+    and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).' with lowercase 'periplasmic'.
+  target_ids:
+  - cmmmech:argentojarosite
+  - cmmmech:basic-oxygen-furnace-steelmaking-dust
+  - cmmmech:cemented-tungsten-carbide-scrap
+  - cmmmech:eudialyte-ore
+  - cmmmech:nickel-smelter-slag
+  - cmmmech:rutile
+  - cmmmech:schwertmannite
+  - cmmmech:spent-steel-pickling-liquors
+  evidence_ids:
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-grp3-shewanella-chromium-uraninite-descriptions
+  name: Source-specific substrate/product node descriptions, lowercased mid-sentence
+    label interpolations, and Cr(III) TEM-EDX qualification in chromium.yaml and uraninite.yaml
+    (#931)
+  status: passed
+  required: true
+  summary: Verified that oxidized_metal_substrate and reduced_metal_product in data/records/chromium.yaml
+    (causal_graphs[0].nodes[3..4]) and data/records/uraninite.yaml (causal_graphs[0].nodes[4..5])
+    carry source-specific descriptions from Belchik et al. (2011) and Marshall et
+    al. (2006), all mid-sentence substrate/product label interpolations in mechanisms[0].protein_examples,
+    causal_graphs[0].nodes[].protein_examples, and causal_graphs[0].edges[] use lowercase
+    initial words ('dissolved chromate Cr(VI)', 'reduced Cr precipitate/complexes
+    (inferred Cr(III))', 'soluble uranyl carbonate U(VI) complexes', 'extracellular
+    nanocrystalline uraninite (UO2)'), and reduced_metal_product in chromium.yaml
+    is qualified as 'Reduced Cr precipitate/complexes (inferred Cr(III))' with supports
+    partial on edges[3].
+  target_ids:
+  - cmmmech:chromium
+  - cmmmech:uraninite
+  evidence_ids:
+  - ev-belchik2011-marshall2006
+  - ev-stage4-findings
+  - ev-schema
+evidence:
+- evidence_id: ev-stage4-evidence
+  kind: record_content
+  reference: reviews/workflow/mech-goal-sequence-20261019/cycle-000008/stage-04/revision-0001/evidence.yaml
+  locator: findings[0..2] (cmmmech-cycle8-stage4-finding-0001, cmmmech-cycle8-stage4-finding-0002,
+    cmmmech-cycle8-stage4-finding-0003)
+  accessed_at: '2026-11-05T10:18:00Z'
+  support: supports
+  summary: Verified the 3 open Cycle 8 Stage 4 review findings and their 10 distinct
+    target records.
+  snapshot_sha256: 5558a8abf6729f992d9d19992fbf027c143bc9180e99833b072008124a1bfa85
+- evidence_id: ev-stage4-findings
+  kind: record_content
+  reference: reviews/workflow/mech-goal-sequence-20261019/cycle-000008/stage-04/revision-0001/review_findings.yaml
+  locator: findings[0..2] root-cause groups, issue_keys, and structured_review_bundles
+  accessed_at: '2026-11-05T10:18:00Z'
+  support: supports
+  summary: Confirmed exact Stage 4 finding IDs, issue_key identifiers, previous review_id
+    occurrences, and target record lists.
+  snapshot_sha256: 4cfa13ac78dc7ecb40efd84afd26543a3e635b22cd2c7c27f6b591b7450944e4
+- evidence_id: ev-schema
+  kind: record_content
+  reference: src/cmmmech/schema/cmmmech.yaml
+  locator: classes.MaterialRecord, classes.CausalGraph, classes.CausalNode, classes.CausalEdge
+  accessed_at: '2026-11-05T10:18:00Z'
+  support: supports
+  summary: Canonical LinkML schema defining MaterialRecord and CausalGraph/CausalNode/CausalEdge
+    structure.
+  snapshot_sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+- evidence_id: ev-song2018
+  kind: primary_source
+  reference: https://doi.org/10.3390/ma11091739
+  locator: Song et al. (2018) Materials 11(9):1739, Section 3.4, Table 1, and Figures
+    5-7
+  accessed_at: '2026-11-05T10:18:00Z'
+  support: supports
+  summary: Confirms that 20,000 g centrifugal EPS removal in Acidithiobacillus ferrooxidans
+    LX5 leaves the 72 h Fe(II) oxidation trajectory unimpaired (Figure 5a) and increases
+    72 h dry schwertmannite precipitate mass from 0.89 g / 0.96 g to 1.29 g (Figure
+    5b) and BET surface area to 86.43 m2/g (Table 1).
+- evidence_id: ev-belchik2011-marshall2006
+  kind: primary_source
+  reference: https://doi.org/10.1128/AEM.02463-10
+  locator: Belchik et al. (2011) Appl. Environ. Microbiol. 77(12):4035-4041 (Figures
+    2-3) and Marshall et al. (2006) PLOS Biology 4(8):e268 (DOI:10.1371/journal.pbio.0040268,
+    Figure 2I, Figure S4)
+  accessed_at: '2026-11-05T10:18:00Z'
+  support: supports
+  summary: Confirms assay conditions and phase characterization for Shewanella oneidensis
+    MR-1 MtrCAB/OmcA reduction of Cr(VI) (0.2 mM K2CrO4 in 30 mM NaHCO3, pH 8, 10
+    mM lactate, 30 C; TEM-EDX elemental Cr precipitates with Cr(III) valence inferred
+    from prior studies) and U(VI) (250 uM uranyl acetate in 30 mM NaHCO3, pH 7.0,
+    10 mM lactate, 30 C; HRTEM/SAED/EDX 1-5 nm nanocrystalline UO2).
+assessments:
+- assessment_id: assess-grp1-schwertmannite-eps-node-ids
+  area: graph
+  topic: 'Schwertmannite lx5_eps_removal_perturbation_graph node IDs and edge endpoints
+    concordance (GRP-C8S5-001, #929)'
+  outcome: supported
+  summary: data/records/schwertmannite.yaml (causal_graphs[1] lx5_eps_removal_perturbation_graph)
+    now uses unimpaired_72h_ferrous_oxidation_trajectory (nodes[2].id, edges[2].target,
+    edges[3].source) and enhanced_72h_schwertmannite_precipitate_yield (nodes[3].id,
+    edges[3].target), eliminating the legacy inverted node IDs and aligning IDs, labels,
+    descriptions, and edge endpoints with Song et al. (2018) Section 3.4, Table 1,
+    and Figures 5-7.
+  target_ids:
+  - cmmmech:schwertmannite
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-song2018
+  - ev-schema
+  metrics:
+  - name: grp1_schwertmannite_eps_node_id_alignment
+    value: 1.0
+    unit: fraction
+    definition: Fraction of GRP-C8S5-001 records whose lx5_eps_removal_perturbation_graph
+      node IDs and edge endpoints match their remediated labels and descriptions
+    denominator: 1
+    minimum: 0.0
+    maximum: 1.0
+- assessment_id: assess-grp2-ferrooxidans-cyc2-edge-capitalization
+  area: graph
+  topic: 'Acidithiobacillus ferrooxidans cyc2_outer_membrane_cytochrome outgoing edge
+    mid-sentence capitalization across 8 records / 9 causal graphs (GRP-C8S5-002,
+    #930)'
+  outcome: supported
+  summary: All 9 causal graphs across the 8 Acidithiobacillus ferrooxidans records
+    in GRP-C8S5-002 (argentojarosite.yaml, basic-oxygen-furnace-steelmaking-dust.yaml,
+    cemented-tungsten-carbide-scrap.yaml, eudialyte-ore.yaml, nickel-smelter-slag.yaml,
+    rutile.yaml, schwertmannite.yaml [causal_graphs[0..1]], and spent-steel-pickling-liquors.yaml)
+    now use lowercase 'to periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus
+    AFE_3146; cyc1 AFE_3152).' in edges[0].description.
+  target_ids:
+  - cmmmech:argentojarosite
+  - cmmmech:basic-oxygen-furnace-steelmaking-dust
+  - cmmmech:cemented-tungsten-carbide-scrap
+  - cmmmech:eudialyte-ore
+  - cmmmech:nickel-smelter-slag
+  - cmmmech:rutile
+  - cmmmech:schwertmannite
+  - cmmmech:spent-steel-pickling-liquors
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-schema
+  metrics:
+  - name: grp2_cyc2_edge_capitalization_alignment
+    value: 1.0
+    unit: fraction
+    definition: Fraction of GRP-C8S5-002 records with lowercase mid-sentence target
+      label reference in cyc2_outer_membrane_cytochrome -> rus_cyc1_periplasmic_electron_transfer
+      edges[0].description
+    denominator: 8
+    minimum: 0.0
+    maximum: 1.0
+- assessment_id: assess-grp3-shewanella-chromium-uraninite-descriptions
+  area: graph
+  topic: 'Shewanella oneidensis MR-1 chromium.yaml and uraninite.yaml substrate/product
+    node descriptions, mid-sentence label capitalization, and Cr(III) TEM-EDX qualification
+    (GRP-C8S5-003, #931)'
+  outcome: supported
+  summary: Both Shewanella oneidensis MR-1 records in GRP-C8S5-003 (chromium.yaml
+    and uraninite.yaml) now replace generic template placeholder descriptions on oxidized_metal_substrate
+    and reduced_metal_product with source-specific descriptions from Belchik et al.
+    (2011) and Marshall et al. (2006), lowercase mid-sentence substrate/product label
+    interpolations across mechanisms[0].protein_examples, causal_graphs[0].nodes[].protein_examples,
+    and causal_graphs[0].edges[], and qualify reduced_metal_product in chromium.yaml
+    as 'Reduced Cr precipitate/complexes (inferred Cr(III))' with supports partial
+    on edges[3].
+  target_ids:
+  - cmmmech:chromium
+  - cmmmech:uraninite
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-belchik2011-marshall2006
+  - ev-schema
+  metrics:
+  - name: grp3_shewanella_node_edge_alignment
+    value: 1.0
+    unit: fraction
+    definition: Fraction of GRP-C8S5-003 records with source-specific substrate/product
+      node descriptions, lowercase mid-sentence label interpolations, and Cr(III)
+      TEM-EDX qualification
+    denominator: 2
+    minimum: 0.0
+    maximum: 1.0
+findings:
+- finding_id: cmmmech-cycle8-stage4-finding-0001
+  issue_key: cmmmech.schwertmannite.lx5-eps-removal-perturbation-graph-inverted-node-ids
+  category: graph
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Schwertmannite lx5_eps_removal_perturbation_graph nodes[2..3].id and edges[2..3]
+    endpoints now match Song et al. (2018) unimpaired 72 h Fe(II) oxidation and enhanced
+    schwertmannite precipitate yield
+  description: 'In data/records/schwertmannite.yaml (cmmmech:schwertmannite, causal_graphs[1]
+    lx5_eps_removal_perturbation_graph, lines 537-583), after Cycle 8 Stage 2 (PR
+    #924, Issue #925) remediated nodes[2].label, nodes[2].description, nodes[3].label,
+    and nodes[3].description to match Song et al. (2018, Materials 11(9):1739, DOI:10.3390/ma11091739,
+    Section 3.4, Table 1, and Figures 5-7) — where 20,000 g centrifugal EPS removal
+    leaves the 72 h Fe(II) oxidation trajectory unimpaired (Figure 5a) and increases
+    72 h dry schwertmannite precipitate mass from 0.89 g (conventional) and 0.96 g
+    (EPS detached-but-retained) to 1.29 g (Figure 5b) and BET surface area to 86.43
+    m2/g (Table 1) — nodes[2].id (attenuated_12_to_40h_ferrous_oxidation_flux, line
+    537) and nodes[3].id (reduced_12_to_40h_schwertmannite_precipitate_yield, line
+    542) and their references in edges[2].target (line 567), edges[3].source (line
+    575), and edges[3].target (line 576) still retain the inverted pre-remediation
+    node IDs that contradict their own remediated labels and descriptions.'
+  target_ids:
+  - cmmmech:schwertmannite
+  field_paths:
+  - causal_graphs[1].nodes[2].id
+  - causal_graphs[1].nodes[3].id
+  - causal_graphs[1].edges[2].target
+  - causal_graphs[1].edges[3].source
+  - causal_graphs[1].edges[3].target
+  - curation_history
+  - history_refs
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-song2018
+  - ev-schema
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/schwertmannite.yaml
+    role: maintained_record
+  disposition_reason: 'Resolved under GitHub Issue #929 (GRP-C8S5-001): updated causal_graphs[1].nodes[2].id
+    to unimpaired_72h_ferrous_oxidation_trajectory, causal_graphs[1].nodes[3].id to
+    enhanced_72h_schwertmannite_precipitate_yield, and their references in causal_graphs[1].edges[2].target,
+    causal_graphs[1].edges[3].source, and causal_graphs[1].edges[3].target in data/records/schwertmannite.yaml
+    with an append-only EDIT history sidecar.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T005501Z-cycle8-stage4-mineral-cohort-review
+    finding_id: cmmmech-cycle8-stage4-finding-0001
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T005506Z-cycle8-stage4-causal-graphs-cohort-review
+    finding_id: cmmmech-cycle8-stage4-finding-0001
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T005507Z-schwertmannite-cycle8-stage4-record-review
+    finding_id: cmmmech-cycle8-stage4-finding-0001
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/929
+- finding_id: cmmmech-cycle8-stage4-finding-0002
+  issue_key: cmmmech.ferrooxidans-cyc2-causal-graphs.mid-sentence-capitalized-periplasmic-target-label-in-edge-description
+  category: graph
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Eight Acidithiobacillus ferrooxidans records (9 causal graphs) now use lowercase
+    mid-sentence 'periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146;
+    cyc1 AFE_3152)' in edges[0].description
+  description: 'Across the 8 Acidithiobacillus ferrooxidans records (9 causal graphs)
+    updated in Cycle 8 Stage 2 (PR #924, commit d69682fb) and Stage 3 (PR #926, commit
+    57341037) — data/records/argentojarosite.yaml (line 279), data/records/basic-oxygen-furnace-steelmaking-dust.yaml
+    (line 282), data/records/cemented-tungsten-carbide-scrap.yaml (line 283), data/records/eudialyte-ore.yaml
+    (line 272), data/records/nickel-smelter-slag.yaml (line 265), data/records/rutile.yaml
+    (line 273), data/records/schwertmannite.yaml (causal_graphs[0] line 386 and causal_graphs[1]
+    line 552), and data/records/spent-steel-pickling-liquors.yaml (line 278) — edges[0].description
+    (cyc2_outer_membrane_cytochrome -> rus_cyc1_periplasmic_electron_transfer) interpolates
+    the capitalized target node label ''Periplasmic rusticyanin and diheme cytochrome
+    c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152)'' verbatim mid-sentence (''... deliver electrons
+    across the outer membrane to Periplasmic rusticyanin and diheme cytochrome c4
+    Cyc1 (rus AFE_3146; cyc1 AFE_3152).'') instead of lowercase ''periplasmic rusticyanin
+    and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152)''.'
+  target_ids:
+  - cmmmech:argentojarosite
+  - cmmmech:basic-oxygen-furnace-steelmaking-dust
+  - cmmmech:cemented-tungsten-carbide-scrap
+  - cmmmech:eudialyte-ore
+  - cmmmech:nickel-smelter-slag
+  - cmmmech:rutile
+  - cmmmech:schwertmannite
+  - cmmmech:spent-steel-pickling-liquors
+  field_paths:
+  - causal_graphs[0].edges[0].description
+  - causal_graphs[1].edges[0].description
+  - curation_history
+  - history_refs
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-schema
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/argentojarosite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/basic-oxygen-furnace-steelmaking-dust.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/cemented-tungsten-carbide-scrap.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/eudialyte-ore.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/nickel-smelter-slag.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/rutile.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/schwertmannite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-steel-pickling-liquors.yaml
+    role: maintained_record
+  disposition_reason: 'Resolved under GitHub Issue #930 (GRP-C8S5-002): replaced mid-sentence
+    ''to Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1
+    AFE_3152).'' with ''to periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus
+    AFE_3146; cyc1 AFE_3152).'' in edges[0].description across all 9 causal graphs
+    in the 8 affected Acidithiobacillus ferrooxidans records, with 8 append-only EDIT
+    history sidecars.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T005501Z-cycle8-stage4-mineral-cohort-review
+    finding_id: cmmmech-cycle8-stage4-finding-0002
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T005504Z-cycle8-stage4-primary-resource-cohort-review
+    finding_id: cmmmech-cycle8-stage4-finding-0002
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T005505Z-cycle8-stage4-secondary-resource-cohort-review
+    finding_id: cmmmech-cycle8-stage4-finding-0002
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T005506Z-cycle8-stage4-causal-graphs-cohort-review
+    finding_id: cmmmech-cycle8-stage4-finding-0002
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T005507Z-schwertmannite-cycle8-stage4-record-review
+    finding_id: cmmmech-cycle8-stage4-finding-0002
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T005508Z-eudialyte-ore-cycle8-stage4-record-review
+    finding_id: cmmmech-cycle8-stage4-finding-0002
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/930
+- finding_id: cmmmech-cycle8-stage4-finding-0003
+  issue_key: cmmmech.shewanella-mr1-chromium-uraninite.unqualified-template-node-descriptions-and-capitalized-interpolations
+  category: graph
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Chromium and uraninite Shewanella oneidensis MR-1 records now have source-specific
+    substrate/product node descriptions, lowercase mid-sentence label interpolations,
+    and Cr(III) TEM-EDX qualification
+  description: In data/records/chromium.yaml (cmmmech:chromium, element, Belchik et
+    al. 2011, Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10;
+    causal_graphs[0] lines 118-260, nodes[3..4] lines 213-222, edges[1..3] lines 233-259)
+    and data/records/uraninite.yaml (cmmmech:uraninite, mineral, Marshall et al. 2006,
+    PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268; causal_graphs[0] lines
+    195-397, nodes[4..5] lines 333-344, edges[2..4] lines 367-397), oxidized_metal_substrate
+    and reduced_metal_product in causal_graphs[0] retain generic template placeholder
+    descriptions ('Oxidized metal species or mineral substrate (<Label>) accepting
+    extracellular electrons.' and 'Reduced metal species or mineral phase (<Label>)
+    formed by extracellular electron transfer.'), and mechanisms[0].protein_examples[0..1].evidence[0].explanation,
+    causal_graphs[0].nodes[...].protein_examples[0].evidence[0].explanation, and causal_graphs[0].edges[...].{description,evidence[0].explanation}
+    interpolate the capitalized node labels verbatim mid-sentence ('... to Dissolved
+    chromate Cr(VI)', '... into Reduced Cr(III) precipitate/complexes', '... to Soluble
+    uranyl carbonate U(VI) complexes', '... into Extracellular nanocrystalline uraninite
+    (UO2)'). Furthermore, in chromium.yaml (causal_graphs[0].nodes[4], lines 218-222,
+    and edges[3], lines 251-259), reduced_metal_product is labeled 'Reduced Cr(III)
+    precipitate/complexes' without the qualification stated in mechanisms[0].description
+    (line 35) and mechanisms[0].evidence[1].explanation (line 116) that Belchik et
+    al. (2011) detected elemental Cr in electron-dense precipitates by TEM-EDX (Figures
+    2-3) and inferred Cr(III) valence from prior studies rather than oxidation-state
+    spectroscopy.
+  target_ids:
+  - cmmmech:chromium
+  - cmmmech:uraninite
+  field_paths:
+  - mechanisms[0].protein_examples
+  - causal_graphs[0].nodes
+  - causal_graphs[0].edges
+  - curation_history
+  - history_refs
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-belchik2011-marshall2006
+  - ev-schema
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/chromium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/uraninite.yaml
+    role: maintained_record
+  disposition_reason: 'Resolved under GitHub Issue #931 (GRP-C8S5-003): replaced generic
+    template placeholder descriptions on oxidized_metal_substrate and reduced_metal_product
+    in data/records/chromium.yaml (causal_graphs[0].nodes[3..4]) and data/records/uraninite.yaml
+    (causal_graphs[0].nodes[4..5]) with source-specific descriptions, lowercased mid-sentence
+    substrate/product label interpolations across mechanisms[0].protein_examples,
+    causal_graphs[0].nodes[].protein_examples, and causal_graphs[0].edges[], and qualified
+    reduced_metal_product in chromium.yaml as ''Reduced Cr precipitate/complexes (inferred
+    Cr(III))'' to reflect Belchik et al. (2011) TEM-EDX evidence, with 2 append-only
+    EDIT history sidecars.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T005500Z-cycle8-stage4-element-cohort-review
+    finding_id: cmmmech-cycle8-stage4-finding-0003
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T005501Z-cycle8-stage4-mineral-cohort-review
+    finding_id: cmmmech-cycle8-stage4-finding-0003
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T005506Z-cycle8-stage4-causal-graphs-cohort-review
+    finding_id: cmmmech-cycle8-stage4-finding-0003
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T005509Z-uraninite-cycle8-stage4-record-review
+    finding_id: cmmmech-cycle8-stage4-finding-0003
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/931
+actions: []
+boundary_decisions:
+- action: retain
+  target_ids:
+  - cmmmech:argentojarosite
+  - cmmmech:basic-oxygen-furnace-steelmaking-dust
+  - cmmmech:cemented-tungsten-carbide-scrap
+  - cmmmech:chromium
+  - cmmmech:eudialyte-ore
+  - cmmmech:nickel-smelter-slag
+  - cmmmech:rutile
+  - cmmmech:schwertmannite
+  - cmmmech:spent-steel-pickling-liquors
+  - cmmmech:uraninite
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-schema
+  rationale: All 10 remediated records represent distinct material entities (1 element,
+    4 IMA-approved minerals, 1 primary resource, and 4 secondary resources) with disjoint
+    identifiers and provenance; cohort boundaries from Cycle 8 Stage 4 are retained
+    unchanged.
+limitations:
+- This verification review is scoped to the 10 records remediated in Cycle 8 Stage
+  5; the remaining 673 records were verified with 0 open findings in the immutable
+  Cycle 8 Stage 4 review bundles.
+```
