@@ -1,0 +1,324 @@
+# Cycle 9 Stage 2 causal-graphs review of Metal grinding sludge (cmmmech:metal-grinding-sludge)
+
+- Review: 20261105T172800Z-metal-grinding-sludge-cycle9-stage2-causal-graphs-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-05T17:27:30Z
+- Finished UTC: 2026-11-05T17:28:00Z
+- Reviewer: antigravity / cmmmech-cycle9-stage2-causal-graphs-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Metal grinding sludge (cmmmech:metal-grinding-sludge) passes Cycle 9 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 4953d538103f9729d4442be32ae0423f83ea6020b86cf5049061abededd3789e: Curated data/records/metal-grinding-sludge.yaml with causal_graph 'culture_associated_grinding_sludge_leaching_graph' (mechanism_ref: culture_associated_grinding_sludge_leaching, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from fecko1996_tatra: Fecko and Kucerova (1996), Bacterial leaching of waste materials at the Tatra joint stock company, Koprivnice. Mineralia Slovaca 28(5), 388-390. Original publisher issue PDF pages 82-84; grinding-sludge methods, Figures 1-3 and Tables 1 and 3. Tables 2 and 4 and Figures 4-7 concern the separate coal-cinder/slag feed. (https://www.geology.sk/wp-content/uploads/documents/foto/MS/MS-1996-28-5.pdf). Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).
+
+## Scope And Provenance
+
+Cycle 9 Stage 2 causal-graphs review of data/records/metal-grinding-sludge.yaml (SHA-256 4953d538103f9729d4442be32ae0423f83ea6020b86cf5049061abededd3789e) and its canonical EDIT history sidecar(s) (history/records/metal-grinding-sludge/2026-11-05T172709Z-marcin-ea8122.yaml) verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source evidence fidelity across causal_graph 'culture_associated_grinding_sludge_leaching_graph' (mechanism_ref: culture_associated_grinding_sludge_leaching, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]).
+
+Selection: Cycle 9 Stage 2 causal_graphs curation for cmmmech:metal-grinding-sludge
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 503b381e1b3aba9d1b2525daf9ebffbfb005d19c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:metal-grinding-sludge | data/records/metal-grinding-sludge.yaml | maintained | Metal grinding sludge |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:metal-grinding-sludge | Checked 688 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:metal-grinding-sludge | All history sidecars pass validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Verification of causal_graphs structure, UniProtKB reference-proteome grounding, and parity across causal_graph 'culture_associated_grinding_sludge_leaching_graph' (mechanism_ref: culture_associated_grinding_sludge_leaching, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)])
+
+graph: supported. Targets: cmmmech:metal-grinding-sludge.
+
+Curated data/records/metal-grinding-sludge.yaml (SHA-256 4953d538103f9729d4442be32ae0423f83ea6020b86cf5049061abededd3789e) with causal_graph 'culture_associated_grinding_sludge_leaching_graph' (mechanism_ref: culture_associated_grinding_sludge_leaching, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from fecko1996_tatra: Fecko and Kucerova (1996), Bacterial leaching of waste materials at the Tatra joint stock company, Koprivnice. Mineralia Slovaca 28(5), 388-390. Original publisher issue PDF pages 82-84; grinding-sludge methods, Figures 1-3 and Tables 1 and 3. Tables 2 and 4 and Figures 4-7 concern the separate coal-cinder/slag feed. (https://www.geology.sk/wp-content/uploads/documents/foto/MS/MS-1996-28-5.pdf). Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).
+
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
+
+provenance: supported. Targets: cmmmech:metal-grinding-sludge.
+
+data/records/metal-grinding-sludge.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/metal-grinding-sludge/2026-11-05T172709Z-marcin-ea8122.yaml (SHA-256 2241324ac537f0833dc8ed61147dee8f71a6ac560823c775dcafe4da41e33b06): Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Acidithiobacillus ferrooxidans (NCBITaxon:920 / NCBITaxon:243159; UP000248886 / UP000001362) rus-operon protein groundings (Cyc2 AFE_3153/DN052_11975 UniProtKB:B7JAQ7/UniProtKB:A0A2W1KH68, Swiss-Prot rusticyanin AFE_3146 UniProtKB:B7JAQ0, and Cyc1 AFE_3152 UniProtKB:B7JAQ6) for culture-associated leaching of Tatra metal-grinding sludge in Fecko and Kucerova (1996).) and passing all LinkML and history validation gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/metal-grinding-sludge.yaml; Working-tree record data/records/metal-grinding-sludge.yaml (causal_graphs and mechanisms[].protein_examples) | supports | Curated data/records/metal-grinding-sludge.yaml (SHA-256 4953d538103f9729d4442be32ae0423f83ea6020b86cf5049061abededd3789e) with causal_graph 'culture_associated_grinding_sludge_leaching_graph' (mechanism_ref: culture_associated_grinding_sludge_leaching, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats. |
+| primary_source | https://www.geology.sk/wp-content/uploads/documents/foto/MS/MS-1996-28-5.pdf; fecko1996_tatra: Fecko and Kucerova (1996), Bacterial leaching of waste materials at the Tatra joint stock company, Koprivnice. Mineralia Slovaca 28(5), 388-390. Original publisher issue PDF pages 82-84; grinding-sludge methods, Figures 1-3 and Tables 1 and 3. Tables 2 and 4 and Figures 4-7 concern the separate coal-cinder/slag feed. (https://www.geology.sk/wp-content/uploads/documents/foto/MS/MS-1996-28-5.pdf) | supports | Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362). Primary mechanism source(s) (fecko1996_tatra: Fecko and Kucerova (1996), Bacterial leaching of waste materials at the Tatra joint stock company, Koprivnice. Mineralia Slovaca 28(5), 388-390. Original publisher issue PDF pages 82-84; grinding-sludge methods, Figures 1-3 and Tables 1 and 3. Tables 2 and 4 and Figures 4-7 concern the separate coal-cinder/slag feed. (https://www.geology.sk/wp-content/uploads/documents/foto/MS/MS-1996-28-5.pdf)) report culture-level mineralization or bioleaching without single-gene knockouts; supports: partial is strictly preserved on all enzyme-level edges and ProteinExample evidence items. |
+| edit_history | history/records/metal-grinding-sludge/2026-11-05T172709Z-marcin-ea8122.yaml; Canonical EDIT history sidecar history/records/metal-grinding-sludge/2026-11-05T172709Z-marcin-ea8122.yaml | supports | Canonical EDIT history sidecar history/records/metal-grinding-sludge/2026-11-05T172709Z-marcin-ea8122.yaml (SHA-256 2241324ac537f0833dc8ed61147dee8f71a6ac560823c775dcafe4da41e33b06): Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Acidithiobacillus ferrooxidans (NCBITaxon:920 / NCBITaxon:243159; UP000248886 / UP000001362) rus-operon protein groundings (Cyc2 AFE_3153/DN052_11975 UniProtKB:B7JAQ7/UniProtKB:A0A2W1KH68, Swiss-Prot rusticyanin AFE_3146 UniProtKB:B7JAQ0, and Cyc1 AFE_3152 UniProtKB:B7JAQ6) for culture-associated leaching of Tatra metal-grinding sludge in Fecko and Kucerova (1996). |
+| validation | data/records/metal-grinding-sludge.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/metal-grinding-sludge.yaml and history/records/metal-grinding-sludge/2026-11-05T172709Z-marcin-ea8122.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py for cmmmech:metal-grinding-sludge (including Issue #937 review-remediation updates).
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261105T172800Z-metal-grinding-sludge-cycle9-stage2-causal-graphs-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 9 Stage 2 causal-graphs review of Metal grinding sludge (cmmmech:metal-grinding-sludge)
+started_at: '2026-11-05T17:27:30Z'
+finished_at: '2026-11-05T17:28:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle9-stage2-causal-graphs-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 9 Stage 2 causal_graphs and ProteinExample curation in data/records/metal-grinding-sludge.yaml
+    (SHA-256 4953d538103f9729d4442be32ae0423f83ea6020b86cf5049061abededd3789e) against
+    live UniProtKB reference-proteome grounding and cited primary source(s) (fecko1996_tatra:
+    Fecko and Kucerova (1996), Bacterial leaching of waste materials at the Tatra
+    joint stock company, Koprivnice. Mineralia Slovaca 28(5), 388-390. Original publisher
+    issue PDF pages 82-84; grinding-sludge methods, Figures 1-3 and Tables 1 and 3.
+    Tables 2 and 4 and Figures 4-7 concern the separate coal-cinder/slag feed. (https://www.geology.sk/wp-content/uploads/documents/foto/MS/MS-1996-28-5.pdf)).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 503b381e1b3aba9d1b2525daf9ebffbfb005d19c
+  state: working_tree
+  inputs:
+  - path: data/records/metal-grinding-sludge.yaml
+    sha256: 4953d538103f9729d4442be32ae0423f83ea6020b86cf5049061abededd3789e
+    role: target
+  - path: history/records/metal-grinding-sludge/2026-11-05T172709Z-marcin-ea8122.yaml
+    sha256: 2241324ac537f0833dc8ed61147dee8f71a6ac560823c775dcafe4da41e33b06
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:metal-grinding-sludge
+  path: data/records/metal-grinding-sludge.yaml
+  label: Metal grinding sludge
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/metal-grinding-sludge.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/metal-grinding-sludge/2026-11-05T172709Z-marcin-ea8122.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 9 Stage 2 causal-graphs review of data/records/metal-grinding-sludge.yaml
+    (SHA-256 4953d538103f9729d4442be32ae0423f83ea6020b86cf5049061abededd3789e) and
+    its canonical EDIT history sidecar(s) (history/records/metal-grinding-sludge/2026-11-05T172709Z-marcin-ea8122.yaml)
+    verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding,
+    and primary-source evidence fidelity across causal_graph ''culture_associated_grinding_sludge_leaching_graph''
+    (mechanism_ref: culture_associated_grinding_sludge_leaching, 4 nodes / 3 edges;
+    aferro_cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2,
+    UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)];
+    aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362),
+    UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]).'
+  selection: Cycle 9 Stage 2 causal_graphs curation for cmmmech:metal-grinding-sludge
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:metal-grinding-sludge
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/metal-grinding-sludge.yaml
+  locator: Working-tree record data/records/metal-grinding-sludge.yaml (causal_graphs
+    and mechanisms[].protein_examples)
+  accessed_at: '2026-11-05T17:27:45Z'
+  support: supports
+  summary: 'Curated data/records/metal-grinding-sludge.yaml (SHA-256 4953d538103f9729d4442be32ae0423f83ea6020b86cf5049061abededd3789e)
+    with causal_graph ''culture_associated_grinding_sludge_leaching_graph'' (mechanism_ref:
+    culture_associated_grinding_sludge_leaching, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_cytochrome:
+    [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975,
+    A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0
+    (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]),
+    achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and experimental caveats.'
+  snapshot_sha256: 4953d538103f9729d4442be32ae0423f83ea6020b86cf5049061abededd3789e
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://www.geology.sk/wp-content/uploads/documents/foto/MS/MS-1996-28-5.pdf
+  locator: 'fecko1996_tatra: Fecko and Kucerova (1996), Bacterial leaching of waste
+    materials at the Tatra joint stock company, Koprivnice. Mineralia Slovaca 28(5),
+    388-390. Original publisher issue PDF pages 82-84; grinding-sludge methods, Figures
+    1-3 and Tables 1 and 3. Tables 2 and 4 and Figures 4-7 concern the separate coal-cinder/slag
+    feed. (https://www.geology.sk/wp-content/uploads/documents/foto/MS/MS-1996-28-5.pdf)'
+  accessed_at: '2026-11-05T17:27:45Z'
+  support: supports
+  summary: 'Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7
+    (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus
+    ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR,
+    Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus
+    ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol:
+    rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362);
+    UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159
+    Acidithiobacillus ferrooxidans ATCC 23270, UP000001362). Primary mechanism source(s)
+    (fecko1996_tatra: Fecko and Kucerova (1996), Bacterial leaching of waste materials
+    at the Tatra joint stock company, Koprivnice. Mineralia Slovaca 28(5), 388-390.
+    Original publisher issue PDF pages 82-84; grinding-sludge methods, Figures 1-3
+    and Tables 1 and 3. Tables 2 and 4 and Figures 4-7 concern the separate coal-cinder/slag
+    feed. (https://www.geology.sk/wp-content/uploads/documents/foto/MS/MS-1996-28-5.pdf))
+    report culture-level mineralization or bioleaching without single-gene knockouts;
+    supports: partial is strictly preserved on all enzyme-level edges and ProteinExample
+    evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/metal-grinding-sludge/2026-11-05T172709Z-marcin-ea8122.yaml
+  locator: Canonical EDIT history sidecar history/records/metal-grinding-sludge/2026-11-05T172709Z-marcin-ea8122.yaml
+  accessed_at: '2026-11-05T17:27:45Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/metal-grinding-sludge/2026-11-05T172709Z-marcin-ea8122.yaml
+    (SHA-256 2241324ac537f0833dc8ed61147dee8f71a6ac560823c775dcafe4da41e33b06): Add
+    REPRESENTATIVE_EXAMPLE causal graph and live-verified Acidithiobacillus ferrooxidans
+    (NCBITaxon:920 / NCBITaxon:243159; UP000248886 / UP000001362) rus-operon protein
+    groundings (Cyc2 AFE_3153/DN052_11975 UniProtKB:B7JAQ7/UniProtKB:A0A2W1KH68, Swiss-Prot
+    rusticyanin AFE_3146 UniProtKB:B7JAQ0, and Cyc1 AFE_3152 UniProtKB:B7JAQ6) for
+    culture-associated leaching of Tatra metal-grinding sludge in Fecko and Kucerova
+    (1996).'
+  snapshot_sha256: 2241324ac537f0833dc8ed61147dee8f71a6ac560823c775dcafe4da41e33b06
+- evidence_id: validation
+  kind: validation
+  reference: data/records/metal-grinding-sludge.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-05T17:27:45Z'
+  support: supports
+  summary: data/records/metal-grinding-sludge.yaml and history/records/metal-grinding-sludge/2026-11-05T172709Z-marcin-ea8122.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: 4953d538103f9729d4442be32ae0423f83ea6020b86cf5049061abededd3789e
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 688 record(s); 0 failed.
+  target_ids:
+  - cmmmech:metal-grinding-sludge
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:metal-grinding-sludge
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_protein_grounding
+  area: graph
+  topic: 'Verification of causal_graphs structure, UniProtKB reference-proteome grounding,
+    and parity across causal_graph ''culture_associated_grinding_sludge_leaching_graph''
+    (mechanism_ref: culture_associated_grinding_sludge_leaching, 4 nodes / 3 edges;
+    aferro_cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2,
+    UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)];
+    aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362),
+    UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)])'
+  outcome: supported
+  summary: 'Curated data/records/metal-grinding-sludge.yaml (SHA-256 4953d538103f9729d4442be32ae0423f83ea6020b86cf5049061abededd3789e)
+    with causal_graph ''culture_associated_grinding_sludge_leaching_graph'' (mechanism_ref:
+    culture_associated_grinding_sludge_leaching, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_cytochrome:
+    [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975,
+    A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0
+    (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]),
+    achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and caveats from fecko1996_tatra:
+    Fecko and Kucerova (1996), Bacterial leaching of waste materials at the Tatra
+    joint stock company, Koprivnice. Mineralia Slovaca 28(5), 388-390. Original publisher
+    issue PDF pages 82-84; grinding-sludge methods, Figures 1-3 and Tables 1 and 3.
+    Tables 2 and 4 and Figures 4-7 concern the separate coal-cinder/slag feed. (https://www.geology.sk/wp-content/uploads/documents/foto/MS/MS-1996-28-5.pdf).
+    Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2,
+    Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans
+    ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C,
+    gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans,
+    UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT,
+    NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6
+    (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus
+    ferrooxidans ATCC 23270, UP000001362).'
+  target_ids:
+  - cmmmech:metal-grinding-sludge
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
+  outcome: supported
+  summary: 'data/records/metal-grinding-sludge.yaml was updated exclusively through
+    scripts/curate_causal_graphs.py (curate_record_file), producing append-only history
+    sidecar(s) (history/records/metal-grinding-sludge/2026-11-05T172709Z-marcin-ea8122.yaml
+    (SHA-256 2241324ac537f0833dc8ed61147dee8f71a6ac560823c775dcafe4da41e33b06): Add
+    REPRESENTATIVE_EXAMPLE causal graph and live-verified Acidithiobacillus ferrooxidans
+    (NCBITaxon:920 / NCBITaxon:243159; UP000248886 / UP000001362) rus-operon protein
+    groundings (Cyc2 AFE_3153/DN052_11975 UniProtKB:B7JAQ7/UniProtKB:A0A2W1KH68, Swiss-Prot
+    rusticyanin AFE_3146 UniProtKB:B7JAQ0, and Cyc1 AFE_3152 UniProtKB:B7JAQ6) for
+    culture-associated leaching of Tatra metal-grinding sludge in Fecko and Kucerova
+    (1996).) and passing all LinkML and history validation gates.'
+  target_ids:
+  - cmmmech:metal-grinding-sludge
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Metal grinding sludge (cmmmech:metal-grinding-sludge) passes Cycle 9 Stage
+  2 causal-graphs review (scientific_review: true) at SHA-256 4953d538103f9729d4442be32ae0423f83ea6020b86cf5049061abededd3789e:
+  Curated data/records/metal-grinding-sludge.yaml with causal_graph ''culture_associated_grinding_sludge_leaching_graph''
+  (mechanism_ref: culture_associated_grinding_sludge_leaching, 4 nodes / 3 edges;
+  aferro_cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362),
+  UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay:
+  [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2,
+  UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and
+  causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+  levels and experimental caveats from fecko1996_tatra: Fecko and Kucerova (1996),
+  Bacterial leaching of waste materials at the Tatra joint stock company, Koprivnice.
+  Mineralia Slovaca 28(5), 388-390. Original publisher issue PDF pages 82-84; grinding-sludge
+  methods, Figures 1-3 and Tables 1 and 3. Tables 2 and 4 and Figures 4-7 concern
+  the separate coal-cinder/slag feed. (https://www.geology.sk/wp-content/uploads/documents/foto/MS/MS-1996-28-5.pdf).
+  Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2,
+  Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans
+  ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C,
+  gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans,
+  UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT,
+  NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6
+  (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus
+  ferrooxidans ATCC 23270, UP000001362).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- 'Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
+  for cmmmech:metal-grinding-sludge (including Issue #937 review-remediation updates).'
+related_reviews: []
+```

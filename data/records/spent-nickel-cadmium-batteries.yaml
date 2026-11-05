@@ -1,91 +1,300 @@
 id: cmmmech:spent-nickel-cadmium-batteries
 name: Spent nickel-cadmium batteries
 material_kind: secondary_resource
-description: End-of-life nickel-cadmium batteries, represented here by prepared active electrode
-  powder from dismantled cells. The accepted experiment concerns the cathode fraction, not an intact
-  battery or a pooled whole-cell metal inventory. This Ni/Cd secondary-cell resource is distinct
-  from nickel-metal-hydride batteries, mixed alkaline/zinc-carbon primary cells, button-cell powder
-  and lithium-ion black mass. Constituent-element criticality is not inherited.
+description: End-of-life nickel-cadmium batteries, represented here by prepared active electrode powder from dismantled cells. The accepted experiment concerns the cathode fraction, not an intact battery or a pooled whole-cell metal inventory. This Ni/Cd secondary-cell resource is distinct from nickel-metal-hydride batteries, mixed alkaline/zinc-carbon primary cells, button-cell powder and lithium-ion black mass. Constituent-element criticality is not inherited.
 sources:
 - id: sedlakova2017
-  title: 'Sedlakova-Kadukova, Marcincakova, Mrazikova, Willner and Fornalczyk (2017). Closing the
-    Loop: Key Role of Iron in Metal-Bearing Waste Recycling. Archives of Metallurgy and Materials
-    62(3):1459–1466. DOI 10.1515/amm-2017-0226. Complete eight-page primary PDF; Methods 2.1–2.4
-    and NiCd Results 3.1.2, especially original Figure 2 on p.1462. Other waste arms are not imported.'
+  title: 'Sedlakova-Kadukova, Marcincakova, Mrazikova, Willner and Fornalczyk (2017). Closing the Loop: Key Role of Iron in Metal-Bearing Waste Recycling. Archives of Metallurgy and Materials 62(3):1459–1466. DOI 10.1515/amm-2017-0226. Complete eight-page primary PDF; Methods 2.1–2.4 and NiCd Results 3.1.2, especially original Figure 2 on p.1462. Other waste arms are not imported.'
   url: https://doi.org/10.1515/amm-2017-0226
   accessed_on: '2026-10-12'
 - id: ncbi920
-  title: 'NCBI Taxonomy 920: Acidithiobacillus ferrooxidans, current species identity; not authentication
-    of the experimental culture.'
+  title: 'NCBI Taxonomy 920: Acidithiobacillus ferrooxidans, current species identity; not authentication of the experimental culture.'
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
   accessed_on: '2026-10-12'
 mechanisms:
 - id: acidophilic_cathode_leaching
   name: Acidophilic culture-associated cathode leaching with ferric comparison
   process: bioleaching
+  description: A culture-containing acidic leach mobilized Cd and part of the Ni from prepared spent NiCd cathode material. A separate abiotic ferric-sulfate treatment produced comparable reported extraction. The observations support culture-associated leaching but do not establish a microbial advantage, a requirement for live-cell contact, or an independently isolated ferric-oxidation mechanism. Dissolved metals were measured; an isolated Ni or Cd product was not demonstrated.
+  context: 'Methods 2.1–2.4, pp.1460–1461: batteries were opened, rolled electrodes separated, and cathode/anode active powders removed from metal grids, ground and sieved below 40 micrometres. Cathode assays were 6.5% Cd and 47.1% Ni; separately reported anode assays were 38% Cd and 22.2% Ni. Results 3.1.2 assigns the plotted experiment to cathode material; anode composition is not an extraction denominator for that arm. The stated setup used 2 g powder and 200 mL medium in 250-mL flasks, initial pH 1.5 adjusted using 10 M H2SO4 or 10% NaOH, with experiments in triplicate and sampling on days 1, 3, 7, 10, 13, 21 and 28. Five-mL leachate samples were filtered and analyzed by atomic absorption. Methods assigns a pure A. ferrooxidans culture in 9K medium and 5 mL pure-culture inoculum; culture provenance is Smolnik acid mine drainage through the Slovak Academy of Sciences, with no strain accession or experimental-stock sequence authentication. Figure 2 instead calls the biotic treatment a
+    mixture with A. thiooxidans. That unresolved caption/Methods conflict prevents a definitive culture-composition or species-specific causal conclusion. Dilute sulfuric-acid and ferric-sulfate abiotic treatments were included. The latter is described as 44.63 g/L reagent, but its printed hydrated-salt formula is malformed; no elemental-Fe concentration is inferred. Leaching temperature, agitation and a complete sampling-volume correction are not specified for this arm.'
   microbial: true
   organisms:
   - id: NCBITaxon:920
     label: Acidithiobacillus ferrooxidans
-  description: A culture-containing acidic leach mobilized Cd and part of the Ni from prepared spent
-    NiCd cathode material. A separate abiotic ferric-sulfate treatment produced comparable reported
-    extraction. The observations support culture-associated leaching but do not establish a microbial
-    advantage, a requirement for live-cell contact, or an independently isolated ferric-oxidation
-    mechanism. Dissolved metals were measured; an isolated Ni or Cd product was not demonstrated.
-  context: 'Methods 2.1–2.4, pp.1460–1461: batteries were opened, rolled electrodes separated, and
-    cathode/anode active powders removed from metal grids, ground and sieved below 40 micrometres.
-    Cathode assays were 6.5% Cd and 47.1% Ni; separately reported anode assays were 38% Cd and 22.2%
-    Ni. Results 3.1.2 assigns the plotted experiment to cathode material; anode composition is not
-    an extraction denominator for that arm. The stated setup used 2 g powder and 200 mL medium in
-    250-mL flasks, initial pH 1.5 adjusted using 10 M H2SO4 or 10% NaOH, with experiments in triplicate
-    and sampling on days 1, 3, 7, 10, 13, 21 and 28. Five-mL leachate samples were filtered and
-    analyzed by atomic absorption. Methods assigns a pure A. ferrooxidans culture in 9K medium and
-    5 mL pure-culture inoculum; culture provenance is Smolnik acid mine drainage through the Slovak
-    Academy of Sciences, with no strain accession or experimental-stock sequence authentication.
-    Figure 2 instead calls the biotic treatment a mixture with A. thiooxidans. That unresolved caption/Methods
-    conflict prevents a definitive culture-composition or species-specific causal conclusion. Dilute
-    sulfuric-acid and ferric-sulfate abiotic treatments were included. The latter is described as
-    44.63 g/L reagent, but its printed hydrated-salt formula is malformed; no elemental-Fe concentration
-    is inferred. Leaching temperature, agitation and a complete sampling-volume correction are not
-    specified for this arm.'
+  protein_examples:
+  - uniprot_accession: UniProtKB:B7JAQ7
+    entry_name: B7JAQ7_ACIF2
+    protein_name: Cytochrome c
+    gene_symbol: cyc2
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    functional_role: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270, catalyzing primary extracellular electron extraction from soluble Fe(II) at low pH.
+    annotation_note: Grounded to type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270 / DSM 14882 / NCIMB 8455; NCBITaxon:243159) as a representative strain-level entry for species-level mechanism organism Acidithiobacillus ferrooxidans (NCBITaxon:920). Supports aerobic Fe(II) biooxidation in 9K medium during 28-day spent Ni-Cd battery cathode powder leaching in Sedlakova-Kadukova et al. (2017).
+    evidence:
+    - source_ref: sedlakova2017
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans (NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting aerobic Fe(II) oxidation to Fe(III) in 9K medium (initial pH 1.5, 2 g <40 um spent Ni-Cd cathode powder in 200 mL medium + 5 mL Smolnik AMD culture inoculum over 28 days) in Sedlakova-Kadukova et al. (2017); Methods describes a pure A. ferrooxidans inoculum whereas the Figure 2 caption labels the biotic arm a mixture with A. thiooxidans, and abiotic ferric sulfate achieved comparable Cd and Ni extraction.
+  - uniprot_accession: UniProtKB:A0A2W1KH68
+    entry_name: A0A2W1KH68_ACIFR
+    protein_name: Cytochrome C
+    gene_symbol: DN052_11975
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:920
+      label: Acidithiobacillus ferrooxidans
+    reference_proteome_id: UP000248886
+    functional_role: Outer-membrane c-type cytochrome Cyc2 homolog (locus DN052_11975) in the species-level Acidithiobacillus ferrooxidans DSM 16523 reference proteome (UP000248886; NCBITaxon:920) mediating initial extracellular Fe(II) oxidation.
+    annotation_note: Grounded to species-level reference proteome UP000248886 (Acidithiobacillus ferrooxidans DSM 16523; NCBITaxon:920), providing direct species-taxon parity with mechanism organism NCBITaxon:920 alongside the ATCC 23270 rus-operon entries. Supports aerobic Fe(II) biooxidation in 9K medium during 28-day spent Ni-Cd battery cathode powder leaching in Sedlakova-Kadukova et al. (2017).
+    evidence:
+    - source_ref: sedlakova2017
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans (NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting aerobic Fe(II) oxidation to Fe(III) in 9K medium (initial pH 1.5, 2 g <40 um spent Ni-Cd cathode powder in 200 mL medium + 5 mL Smolnik AMD culture inoculum over 28 days) in Sedlakova-Kadukova et al. (2017); Methods describes a pure A. ferrooxidans inoculum whereas the Figure 2 caption labels the biotic arm a mixture with A. thiooxidans, and abiotic ferric sulfate achieved comparable Cd and Ni extraction.
+  - uniprot_accession: UniProtKB:B7JAQ0
+    entry_name: RUS_ACIF2
+    protein_name: Rusticyanin
+    gene_symbol: rus
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR000923
+    - InterPro:IPR028871
+    - InterPro:IPR050845
+    - InterPro:IPR033138
+    - InterPro:IPR008972
+    - InterPro:IPR001243
+    pfam_ids:
+    - Pfam:PF00127
+    ncbifam_ids:
+    - NCBIfam:TIGR03095
+    go_terms:
+    - id: GO:0042597
+      label: periplasmic space
+    - id: GO:0005507
+      label: copper ion binding
+    - id: GO:0009055
+      label: electron transfer activity
+    functional_role: Reviewed Swiss-Prot periplasmic blue-copper protein rusticyanin (rus, locus AFE_3146; RUS_ACIF2) shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) during aerobic Fe(II) oxidation.
+    annotation_note: Reviewed Swiss-Prot entry (RUS_ACIF2) in type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270; NCBITaxon:243159). Supports aerobic Fe(II) biooxidation in 9K medium during 28-day spent Ni-Cd battery cathode powder leaching in Sedlakova-Kadukova et al. (2017).
+    evidence:
+    - source_ref: sedlakova2017
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans (NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting aerobic Fe(II) oxidation to Fe(III) in 9K medium (initial pH 1.5, 2 g <40 um spent Ni-Cd cathode powder in 200 mL medium + 5 mL Smolnik AMD culture inoculum over 28 days) in Sedlakova-Kadukova et al. (2017); Methods describes a pure A. ferrooxidans inoculum whereas the Figure 2 caption labels the biotic arm a mixture with A. thiooxidans, and abiotic ferric sulfate achieved comparable Cd and Ni extraction.
+  - uniprot_accession: UniProtKB:B7JAQ6
+    entry_name: B7JAQ6_ACIF2
+    protein_name: Cytochrome c552
+    gene_symbol: cyc1
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR009056
+    - InterPro:IPR036909
+    - InterPro:IPR024167
+    - InterPro:IPR050597
+    pfam_ids:
+    - Pfam:PF00034
+    go_terms:
+    - id: GO:0042597
+      label: periplasmic space
+    - id: GO:0009055
+      label: electron transfer activity
+    - id: GO:0020037
+      label: heme binding
+    - id: GO:0005506
+      label: iron ion binding
+    functional_role: Periplasmic diheme cytochrome c4 Cyc1 (cyc1, locus AFE_3152) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 transferring electrons from rusticyanin (AFE_3146) to the inner-membrane aa3-type cytochrome c oxidase.
+    annotation_note: Grounded to type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270; NCBITaxon:243159). Supports aerobic Fe(II) biooxidation in 9K medium during 28-day spent Ni-Cd battery cathode powder leaching in Sedlakova-Kadukova et al. (2017).
+    evidence:
+    - source_ref: sedlakova2017
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans (NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting aerobic Fe(II) oxidation to Fe(III) in 9K medium (initial pH 1.5, 2 g <40 um spent Ni-Cd cathode powder in 200 mL medium + 5 mL Smolnik AMD culture inoculum over 28 days) in Sedlakova-Kadukova et al. (2017); Methods describes a pure A. ferrooxidans inoculum whereas the Figure 2 caption labels the biotic arm a mixture with A. thiooxidans, and abiotic ferric sulfate achieved comparable Cd and Ni extraction.
   evidence:
   - source_ref: sedlakova2017
     supports: support
-    explanation: Results 3.1.2 and Figure 2A show Cd dissolution approaching the reported 100% level
-      in both biotic and abiotic ferric treatments over the 28-day series, whereas the dilute-acid
-      comparator is lower. This is a source-reported leaching efficiency for the prepared cathode
-      fraction, not whole-cell or isolated-product recovery. The article does not give a complete
-      efficiency equation, raw analytical series or a closed metal balance for independently reconstructing
-      the percentage.
+    explanation: Results 3.1.2 and Figure 2A show Cd dissolution approaching the reported 100% level in both biotic and abiotic ferric treatments over the 28-day series, whereas the dilute-acid comparator is lower. This is a source-reported leaching efficiency for the prepared cathode fraction, not whole-cell or isolated-product recovery. The article does not give a complete efficiency equation, raw analytical series or a closed metal balance for independently reconstructing the percentage.
   - source_ref: sedlakova2017
     supports: partial
-    explanation: The abstract and Results 3.1.2 report 55% Ni extraction for both biotic and ferric
-      treatments, but Figure 2B plots those series near 45–47%, below 50%. The prose and original
-      graph are retained as conflicting source statements; neither is silently corrected or adopted
-      as a harmonized yield. Both support partial Ni dissolution and similar biotic/ferric performance,
-      rather than quantitative microbial superiority. Triplicates are stated, but Figure 2 has no
-      displayed error bars or underlying replicate values.
+    explanation: The abstract and Results 3.1.2 report 55% Ni extraction for both biotic and ferric treatments, but Figure 2B plots those series near 45–47%, below 50%. The prose and original graph are retained as conflicting source statements; neither is silently corrected or adopted as a harmonized yield. Both support partial Ni dissolution and similar biotic/ferric performance, rather than quantitative microbial superiority. Triplicates are stated, but Figure 2 has no displayed error bars or underlying replicate values.
   - source_ref: sedlakova2017
     supports: partial
-    explanation: The authors relate poor acid-only dissolution to neutralization and pH rising toward
-      7, and interpret ferric hydrolysis as sustaining acidity. Their oxidative and hydrolytic explanation
-      and generalized equations are not separate measurements of phase-specific Ni oxidation or
-      proof of an exclusive biological pathway. Figures 5 and 6 concern other-feed pH data and a
-      proposed integrated recycling model respectively; they are not a NiCd pH time series or an
-      operated closed-loop industrial plant. References 20–21 are earlier NiCd studies from overlapping
-      authors; independence from those experiments is not established here, and their uninspected
-      original measurements are not pooled with Figure 2.
+    explanation: The authors relate poor acid-only dissolution to neutralization and pH rising toward 7, and interpret ferric hydrolysis as sustaining acidity. Their oxidative and hydrolytic explanation and generalized equations are not separate measurements of phase-specific Ni oxidation or proof of an exclusive biological pathway. Figures 5 and 6 concern other-feed pH data and a proposed integrated recycling model respectively; they are not a NiCd pH time series or an operated closed-loop industrial plant. References 20–21 are earlier NiCd studies from overlapping authors; independence from those experiments is not established here, and their uninspected original measurements are not pooled with Figure 2.
   - source_ref: ncbi920
     supports: context_only
-    explanation: The live authority identifies A. ferrooxidans at species level. It does not resolve
-      the primary paper's pure-versus-mixed-culture conflict, identify a strain, or prove that this
-      organism caused the observed extraction beyond the chemical comparators.
+    explanation: The live authority identifies A. ferrooxidans at species level. It does not resolve the primary paper's pure-versus-mixed-culture conflict, identify a strain, or prove that this organism caused the observed extraction beyond the chemical comparators.
+causal_graphs:
+- id: acidophilic_cathode_leaching_graph
+  name: Acidithiobacillus ferrooxidans rus-operon Fe(II) biooxidation and ferric/acid dissolution of spent Ni-Cd battery cathode powder
+  description: Causal pathway linking representative Acidithiobacillus ferrooxidans rus-operon proteins (outer-membrane Cyc2 AFE_3153/DN052_11975, reviewed Swiss-Prot rusticyanin AFE_3146, and periplasmic Cyc1 AFE_3152 in reference proteomes UP000001362 and UP000248886) to aerobic Fe(II) oxidation in 9K medium (initial pH 1.5, 200 mL medium + 5 mL inoculum with 2 g <40-um dismantled spent Ni-Cd cathode powder assaying 6.5% Cd and 47.1% Ni) and mobilization of Cd (approaching ~100% by day 28 in Figure 2A) and partial Ni (reported as 55% in the abstract and Results 3.1.2 vs plotted near 45-47% in Figure 2B) in Sedlakova-Kadukova et al. (2017), while preserving comparable extraction in the abiotic ferric-sulfate comparator (44.63 g/L reagent), lower extraction in dilute sulfuric acid alone, and the unresolved Methods (pure A. ferrooxidans) vs Figure 2 caption (A. ferrooxidans + A. thiooxidans mixture) conflict.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: acidophilic_cathode_leaching
+  nodes:
+  - id: aferro_cyc2_outer_membrane_cytochrome
+    label: Outer-membrane cytochrome c Cyc2 (cyc2 AFE_3153; DN052_11975)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cyc2
+    description: Outer-membrane c-type cytochrome Cyc2 (AFE_3153 in UP000001362 and DN052_11975 in UP000248886) extracting electrons from extracellular Fe(II) in 9K medium at initial pH 1.5.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JAQ7
+      entry_name: B7JAQ7_ACIF2
+      protein_name: Cytochrome c
+      gene_symbol: cyc2
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      functional_role: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270, catalyzing primary extracellular electron extraction from soluble Fe(II) at low pH.
+      annotation_note: Grounded to type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270 / DSM 14882 / NCIMB 8455; NCBITaxon:243159) as a representative strain-level entry for species-level mechanism organism Acidithiobacillus ferrooxidans (NCBITaxon:920). Supports aerobic Fe(II) biooxidation in 9K medium during 28-day spent Ni-Cd battery cathode powder leaching in Sedlakova-Kadukova et al. (2017).
+      evidence:
+      - source_ref: sedlakova2017
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans (NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting aerobic Fe(II) oxidation to Fe(III) in 9K medium (initial pH 1.5, 2 g <40 um spent Ni-Cd cathode powder in 200 mL medium + 5 mL Smolnik AMD culture inoculum over 28 days) in Sedlakova-Kadukova et al. (2017); Methods describes a pure A. ferrooxidans inoculum whereas the Figure 2 caption labels the biotic arm a mixture with A. thiooxidans, and abiotic ferric sulfate achieved comparable Cd and Ni extraction.
+    - uniprot_accession: UniProtKB:A0A2W1KH68
+      entry_name: A0A2W1KH68_ACIFR
+      protein_name: Cytochrome C
+      gene_symbol: DN052_11975
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+      reference_proteome_id: UP000248886
+      functional_role: Outer-membrane c-type cytochrome Cyc2 homolog (locus DN052_11975) in the species-level Acidithiobacillus ferrooxidans DSM 16523 reference proteome (UP000248886; NCBITaxon:920) mediating initial extracellular Fe(II) oxidation.
+      annotation_note: Grounded to species-level reference proteome UP000248886 (Acidithiobacillus ferrooxidans DSM 16523; NCBITaxon:920), providing direct species-taxon parity with mechanism organism NCBITaxon:920 alongside the ATCC 23270 rus-operon entries. Supports aerobic Fe(II) biooxidation in 9K medium during 28-day spent Ni-Cd battery cathode powder leaching in Sedlakova-Kadukova et al. (2017).
+      evidence:
+      - source_ref: sedlakova2017
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans (NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting aerobic Fe(II) oxidation to Fe(III) in 9K medium (initial pH 1.5, 2 g <40 um spent Ni-Cd cathode powder in 200 mL medium + 5 mL Smolnik AMD culture inoculum over 28 days) in Sedlakova-Kadukova et al. (2017); Methods describes a pure A. ferrooxidans inoculum whereas the Figure 2 caption labels the biotic arm a mixture with A. thiooxidans, and abiotic ferric sulfate achieved comparable Cd and Ni extraction.
+  - id: aferro_rus_cyc1_periplasmic_relay
+    label: Periplasmic rusticyanin and diheme cytochrome c4 relay (rus AFE_3146; cyc1 AFE_3152)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: rus
+    description: Reviewed Swiss-Prot periplasmic rusticyanin (AFE_3146, RUS_ACIF2) and diheme cytochrome c4 Cyc1 (AFE_3152) transferring electrons from Cyc2 to the terminal oxidase during Fe(II) oxidation in 9K medium.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JAQ0
+      entry_name: RUS_ACIF2
+      protein_name: Rusticyanin
+      gene_symbol: rus
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR000923
+      - InterPro:IPR028871
+      - InterPro:IPR050845
+      - InterPro:IPR033138
+      - InterPro:IPR008972
+      - InterPro:IPR001243
+      pfam_ids:
+      - Pfam:PF00127
+      ncbifam_ids:
+      - NCBIfam:TIGR03095
+      go_terms:
+      - id: GO:0042597
+        label: periplasmic space
+      - id: GO:0005507
+        label: copper ion binding
+      - id: GO:0009055
+        label: electron transfer activity
+      functional_role: Reviewed Swiss-Prot periplasmic blue-copper protein rusticyanin (rus, locus AFE_3146; RUS_ACIF2) shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) during aerobic Fe(II) oxidation.
+      annotation_note: Reviewed Swiss-Prot entry (RUS_ACIF2) in type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270; NCBITaxon:243159). Supports aerobic Fe(II) biooxidation in 9K medium during 28-day spent Ni-Cd battery cathode powder leaching in Sedlakova-Kadukova et al. (2017).
+      evidence:
+      - source_ref: sedlakova2017
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans (NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting aerobic Fe(II) oxidation to Fe(III) in 9K medium (initial pH 1.5, 2 g <40 um spent Ni-Cd cathode powder in 200 mL medium + 5 mL Smolnik AMD culture inoculum over 28 days) in Sedlakova-Kadukova et al. (2017); Methods describes a pure A. ferrooxidans inoculum whereas the Figure 2 caption labels the biotic arm a mixture with A. thiooxidans, and abiotic ferric sulfate achieved comparable Cd and Ni extraction.
+    - uniprot_accession: UniProtKB:B7JAQ6
+      entry_name: B7JAQ6_ACIF2
+      protein_name: Cytochrome c552
+      gene_symbol: cyc1
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR009056
+      - InterPro:IPR036909
+      - InterPro:IPR024167
+      - InterPro:IPR050597
+      pfam_ids:
+      - Pfam:PF00034
+      go_terms:
+      - id: GO:0042597
+        label: periplasmic space
+      - id: GO:0009055
+        label: electron transfer activity
+      - id: GO:0020037
+        label: heme binding
+      - id: GO:0005506
+        label: iron ion binding
+      functional_role: Periplasmic diheme cytochrome c4 Cyc1 (cyc1, locus AFE_3152) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 transferring electrons from rusticyanin (AFE_3146) to the inner-membrane aa3-type cytochrome c oxidase.
+      annotation_note: Grounded to type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270; NCBITaxon:243159). Supports aerobic Fe(II) biooxidation in 9K medium during 28-day spent Ni-Cd battery cathode powder leaching in Sedlakova-Kadukova et al. (2017).
+      evidence:
+      - source_ref: sedlakova2017
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans (NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting aerobic Fe(II) oxidation to Fe(III) in 9K medium (initial pH 1.5, 2 g <40 um spent Ni-Cd cathode powder in 200 mL medium + 5 mL Smolnik AMD culture inoculum over 28 days) in Sedlakova-Kadukova et al. (2017); Methods describes a pure A. ferrooxidans inoculum whereas the Figure 2 caption labels the biotic arm a mixture with A. thiooxidans, and abiotic ferric sulfate achieved comparable Cd and Ni extraction.
+  - id: ferric_bearing_9k_cathode_leach_medium
+    label: Ferric-bearing acidic 9K culture medium (initial pH 1.5, 2 g <40 um cathode powder / 200 mL, 28 days)
+    node_type: CHEMICAL_ENTITY
+    description: Acidic Fe(III)-containing 9K medium inoculated with 5 mL Smolnik AMD culture (described as pure A. ferrooxidans in Methods 2.2 vs a mixture with A. thiooxidans in Figure 2 caption) and compared against abiotic ferric-sulfate solution (44.63 g/L reagent) and dilute sulfuric acid at initial pH 1.5.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: solubilized_cd_and_ni_from_nicd_cathode_powder
+    label: Dissolved Cd (~100% in Figure 2A) and partial Ni (55% in text vs ~45-47% in Figure 2B) from spent Ni-Cd cathode powder
+    node_type: CHEMICAL_ENTITY
+    description: 'Mobilized Cd and Ni measured by AAS over 28 days from prepared <40-um cathode powder (6.5% Cd, 47.1% Ni): Cd extraction approaches ~100% and Ni reaches 55% (text) / ~45-47% (Figure 2B) in both biotic and abiotic ferric-sulfate arms, exceeding the dilute sulfuric-acid comparator.'
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: aferro_cyc2_outer_membrane_cytochrome
+    target: aferro_rus_cyc1_periplasmic_relay
+    predicate: provides_electrons_to
+    relationship: extracellular Fe(II) oxidation coupled to periplasmic rusticyanin and Cyc1 electron relay
+    description: Cyc2 (AFE_3153 / DN052_11975) oxidizes dissolved Fe(II) in 9K medium and transfers electrons through periplasmic rusticyanin (AFE_3146) and Cyc1 (AFE_3152).
+    evidence:
+    - source_ref: sedlakova2017
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans (NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting aerobic Fe(II) oxidation to Fe(III) in 9K medium (initial pH 1.5, 2 g <40 um spent Ni-Cd cathode powder in 200 mL medium + 5 mL Smolnik AMD culture inoculum over 28 days) in Sedlakova-Kadukova et al. (2017); Methods describes a pure A. ferrooxidans inoculum whereas the Figure 2 caption labels the biotic arm a mixture with A. thiooxidans, and abiotic ferric sulfate achieved comparable Cd and Ni extraction.
+  - source: aferro_rus_cyc1_periplasmic_relay
+    target: ferric_bearing_9k_cathode_leach_medium
+    predicate: produces
+    relationship: aerobic Fe(II) biooxidation generating ferric iron and hydrolytic acidity in 9K medium
+    description: Microbial Fe(II) oxidation in 9K medium (initial pH 1.5) supplies Fe(III) whose oxidation and hydrolysis counteract alkaline cathode neutralization much like the abiotic ferric-sulfate comparator.
+    evidence:
+    - source_ref: sedlakova2017
+      supports: partial
+      explanation: Methods 2.1-2.4 and Results 3.1.2 compare the inoculated 9K arm against abiotic ferric-sulfate (44.63 g/L) and dilute-H2SO4 controls at initial pH 1.5, while leaving the pure A. ferrooxidans (Methods) vs A. ferrooxidans + A. thiooxidans (Figure 2) caption conflict unresolved.
+  - source: ferric_bearing_9k_cathode_leach_medium
+    target: solubilized_cd_and_ni_from_nicd_cathode_powder
+    predicate: dissolves
+    relationship: ferric- and acid-promoted mobilization of Cd (~100%) and partial Ni (55% text / ~45-47% Fig 2B) from spent cathode powder
+    description: Both the inoculated 9K medium and the abiotic ferric-sulfate treatment mobilize ~100% of cathode Cd (Figure 2A) and ~45-47% (Figure 2B) / 55% (text) of cathode Ni over 28 days, outperforming dilute sulfuric acid alone without demonstrating a biotic advantage over abiotic ferric sulfate.
+    evidence:
+    - source_ref: sedlakova2017
+      supports: support
+      explanation: Results 3.1.2 and Figure 2A show Cd dissolution approaching 100% over 28 days in both biotic and abiotic ferric-sulfate treatments versus lower extraction in dilute sulfuric acid.
+    - source_ref: sedlakova2017
+      supports: partial
+      explanation: Abstract and Results 3.1.2 state 55% Ni extraction for both biotic and ferric arms whereas Figure 2B plots both curves near 45-47%, and equivalent abiotic ferric performance shows that live cells are not uniquely required beyond supplying ferric iron and acidity.
 curation_history:
 - timestamp: '2026-10-12T14:02:02.669630+00:00'
   curator: Codex (GPT-6; codex)
   action: CREATE
-  summary: Created the NiCd secondary-resource owner from complete original cathode-leaching evidence,
-    preserving comparable abiotic ferric extraction, culture and numerical conflicts, and recovery/scale
-    limits.
+  summary: Created the NiCd secondary-resource owner from complete original cathode-leaching evidence, preserving comparable abiotic ferric extraction, culture and numerical conflicts, and recovery/scale limits.
+- timestamp: '2026-11-05T17:27:09Z'
+  curator: marcin
+  action: edit
+  summary: Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Acidithiobacillus ferrooxidans (NCBITaxon:920 / NCBITaxon:243159; UP000248886 / UP000001362) rus-operon protein groundings (Cyc2 AFE_3153/DN052_11975 UniProtKB:B7JAQ7/UniProtKB:A0A2W1KH68, Swiss-Prot rusticyanin AFE_3146 UniProtKB:B7JAQ0, and Cyc1 AFE_3152 UniProtKB:B7JAQ6) for spent Ni-Cd battery cathode bioleaching in Sedlakova-Kadukova et al. (2017).
 history_refs:
 - history/records/spent-nickel-cadmium-batteries/2026-10-12T140131Z-codex-21a6a4.yaml
+- history/records/spent-nickel-cadmium-batteries/2026-11-05T172709Z-marcin-7b599d.yaml
