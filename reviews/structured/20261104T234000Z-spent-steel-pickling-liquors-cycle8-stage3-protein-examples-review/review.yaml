@@ -1,0 +1,238 @@
+schema_version: 1.0.0
+review_id: 20261104T234000Z-spent-steel-pickling-liquors-cycle8-stage3-protein-examples-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 8 Stage 3 protein-examples review of Spent steel-pickling liquors (cmmmech:spent-steel-pickling-liquors)
+started_at: '2026-11-04T23:39:00Z'
+finished_at: '2026-11-04T23:40:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle8-stage3-protein-examples-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 8 Stage 3 ProteinExample enrichment in data/records/spent-steel-pickling-liquors.yaml
+    (SHA-256 ad16b4eed7a1a3ba232cc9cf37043047fe8ed6f4ed0230c2052eba6e812b0680) against
+    live UniProtKB REST API metadata, reference proteomes, and cited primary source(s)
+    qin2016.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 9b07aa22901e257f188532a8bee7a658e45c5db5
+  state: working_tree
+  inputs:
+  - path: data/records/spent-steel-pickling-liquors.yaml
+    sha256: ad16b4eed7a1a3ba232cc9cf37043047fe8ed6f4ed0230c2052eba6e812b0680
+    role: target
+  - path: history/records/spent-steel-pickling-liquors/2026-11-04T233849Z-marcin-45aba4.yaml
+    sha256: 8395b7b2602e816b6add6133cbb1ecdf9607a3b4163fd24300c70ed570e577a0
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:spent-steel-pickling-liquors
+  path: data/records/spent-steel-pickling-liquors.yaml
+  label: Spent steel-pickling liquors
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/spent-steel-pickling-liquors.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/spent-steel-pickling-liquors/2026-11-04T233849Z-marcin-45aba4.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 8 Stage 3 protein-examples review of data/records/spent-steel-pickling-liquors.yaml
+    (SHA-256 ad16b4eed7a1a3ba232cc9cf37043047fe8ed6f4ed0230c2052eba6e812b0680) and
+    its canonical EDIT history sidecar(s) (history/records/spent-steel-pickling-liquors/2026-11-04T233849Z-marcin-45aba4.yaml)
+    verifying UniProtKB reference-proteome grounding, node-to-mechanism protein_examples
+    parity, and primary-source evidence fidelity across causal_graph ''culture_associated_ferrous_oxidation_graph''
+    (mechanism_ref: culture_associated_ferrous_oxidation, 5 nodes / 4 edges; cyc2_outer_membrane_cytochrome:
+    [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975,
+    A0A2W1KH68_ACIFR, UP000248886)]; rus_cyc1_periplasmic_electron_transfer: [UniProtKB:B7JAQ0
+    (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]).'
+  selection: Cycle 8 Stage 3 protein_examples curation for cmmmech:spent-steel-pickling-liquors
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:spent-steel-pickling-liquors
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/spent-steel-pickling-liquors.yaml
+  locator: Working-tree record data/records/spent-steel-pickling-liquors.yaml (causal_graphs
+    and mechanisms[].protein_examples)
+  accessed_at: '2026-11-04T23:39:30Z'
+  support: supports
+  summary: 'Curated data/records/spent-steel-pickling-liquors.yaml (SHA-256 ad16b4eed7a1a3ba232cc9cf37043047fe8ed6f4ed0230c2052eba6e812b0680)
+    in Cycle 8 Stage 3 (protein_examples) with causal_graph ''culture_associated_ferrous_oxidation_graph''
+    (mechanism_ref: culture_associated_ferrous_oxidation, 5 nodes / 4 edges; cyc2_outer_membrane_cytochrome:
+    [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975,
+    A0A2W1KH68_ACIFR, UP000248886)]; rus_cyc1_periplasmic_electron_transfer: [UniProtKB:B7JAQ0
+    (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]),
+    achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and caveats from primary source(s)
+    qin2016.'
+  snapshot_sha256: ad16b4eed7a1a3ba232cc9cf37043047fe8ed6f4ed0230c2052eba6e812b0680
+- evidence_id: primary_source
+  kind: primary_source
+  reference: DOI:10.1080/19443994.2014.981221
+  locator: 'qin2016: Qin, Xie, Guo, Shan, Li, Xue, Xiao and Ma, Ferrous bio-oxidation
+    by Acidithiobacillus ferrooxidans in hydrochloric acid pickling waste liquor.
+    Desalination and Water Treatment 57(4):1836-1843 (2016; online 6 December 2014),
+    DOI 10.1080/19443994.2014.981221. Complete official eight-page original, sections
+    2-4, Table 1 and Figures 1-8 inspected. No separate supplement is announced in
+    the inspected original. (https://doi.org/10.1080/19443994.2014.981221)'
+  accessed_at: '2026-11-04T23:39:30Z'
+  support: supports
+  summary: 'Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7
+    (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus
+    ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR,
+    Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus
+    ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol:
+    rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362);
+    UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159
+    Acidithiobacillus ferrooxidans ATCC 23270, UP000001362). Primary mechanism source(s)
+    (qin2016: Qin, Xie, Guo, Shan, Li, Xue, Xiao and Ma, Ferrous bio-oxidation by
+    Acidithiobacillus ferrooxidans in hydrochloric acid pickling waste liquor. Desalination
+    and Water Treatment 57(4):1836-1843 (2016; online 6 December 2014), DOI 10.1080/19443994.2014.981221.
+    Complete official eight-page original, sections 2-4, Table 1 and Figures 1-8 inspected.
+    No separate supplement is announced in the inspected original. (https://doi.org/10.1080/19443994.2014.981221))
+    report culture-level iron/sulfur oxidation and mineral transformation/leaching
+    without single-gene knockouts; supports: partial is strictly preserved on all
+    enzyme-level edges and ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/spent-steel-pickling-liquors/2026-11-04T233849Z-marcin-45aba4.yaml
+  locator: Canonical EDIT history sidecar history/records/spent-steel-pickling-liquors/2026-11-04T233849Z-marcin-45aba4.yaml
+  accessed_at: '2026-11-04T23:39:30Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/spent-steel-pickling-liquors/2026-11-04T233849Z-marcin-45aba4.yaml
+    (SHA-256 8395b7b2602e816b6add6133cbb1ecdf9607a3b4163fd24300c70ed570e577a0): Add
+    species-level Acidithiobacillus ferrooxidans DSM 16523 reference-proteome Cyc2
+    ortholog (UniProtKB:A0A2W1KH68, DN052_11975) to culture_associated_ferrous_oxidation_graph
+    and culture_associated_ferrous_oxidation — Grounded cyc2_outer_membrane_cytochrome
+    and culture_associated_ferrous_oxidation to the second live-verified Acidithiobacillus
+    ferrooxidans reference-proteome rus-operon outer-membrane Cyc2 ortholog UniProtKB:A0A2W1KH68
+    (A0A2W1KH68_ACIFR, DN052_11975, 485 aa, RefSeq WP_012537628.1, UP000248886, NCBITaxon:920)
+    alongside ATCC 23270 UniProtKB:B7JAQ7 (AFE_3153, UP000001362).'
+  snapshot_sha256: 8395b7b2602e816b6add6133cbb1ecdf9607a3b4163fd24300c70ed570e577a0
+- evidence_id: validation
+  kind: validation
+  reference: data/records/spent-steel-pickling-liquors.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-04T23:39:30Z'
+  support: supports
+  summary: data/records/spent-steel-pickling-liquors.yaml and history/records/spent-steel-pickling-liquors/2026-11-04T233849Z-marcin-45aba4.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: ad16b4eed7a1a3ba232cc9cf37043047fe8ed6f4ed0230c2052eba6e812b0680
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 683 record(s); 0 failed.
+  target_ids:
+  - cmmmech:spent-steel-pickling-liquors
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:spent-steel-pickling-liquors
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_protein_grounding
+  area: graph
+  topic: 'Verification of UniProtKB reference-proteome ProteinExample grounding and
+    parity across causal_graph ''culture_associated_ferrous_oxidation_graph'' (mechanism_ref:
+    culture_associated_ferrous_oxidation, 5 nodes / 4 edges; cyc2_outer_membrane_cytochrome:
+    [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975,
+    A0A2W1KH68_ACIFR, UP000248886)]; rus_cyc1_periplasmic_electron_transfer: [UniProtKB:B7JAQ0
+    (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)])'
+  outcome: supported
+  summary: 'Curated data/records/spent-steel-pickling-liquors.yaml (SHA-256 ad16b4eed7a1a3ba232cc9cf37043047fe8ed6f4ed0230c2052eba6e812b0680)
+    in Cycle 8 Stage 3 (protein_examples) with causal_graph ''culture_associated_ferrous_oxidation_graph''
+    (mechanism_ref: culture_associated_ferrous_oxidation, 5 nodes / 4 edges; cyc2_outer_membrane_cytochrome:
+    [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975,
+    A0A2W1KH68_ACIFR, UP000248886)]; rus_cyc1_periplasmic_electron_transfer: [UniProtKB:B7JAQ0
+    (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]),
+    achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and caveats from primary source(s)
+    qin2016. Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7
+    (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus
+    ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR,
+    Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus
+    ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol:
+    rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362);
+    UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159
+    Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).'
+  target_ids:
+  - cmmmech:spent-steel-pickling-liquors
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
+  outcome: supported
+  summary: 'data/records/spent-steel-pickling-liquors.yaml was updated exclusively
+    through scripts/curate_causal_graphs.py (curate_record_file), producing append-only
+    history sidecar(s) (history/records/spent-steel-pickling-liquors/2026-11-04T233849Z-marcin-45aba4.yaml
+    (SHA-256 8395b7b2602e816b6add6133cbb1ecdf9607a3b4163fd24300c70ed570e577a0): Add
+    species-level Acidithiobacillus ferrooxidans DSM 16523 reference-proteome Cyc2
+    ortholog (UniProtKB:A0A2W1KH68, DN052_11975) to culture_associated_ferrous_oxidation_graph
+    and culture_associated_ferrous_oxidation — Grounded cyc2_outer_membrane_cytochrome
+    and culture_associated_ferrous_oxidation to the second live-verified Acidithiobacillus
+    ferrooxidans reference-proteome rus-operon outer-membrane Cyc2 ortholog UniProtKB:A0A2W1KH68
+    (A0A2W1KH68_ACIFR, DN052_11975, 485 aa, RefSeq WP_012537628.1, UP000248886, NCBITaxon:920)
+    alongside ATCC 23270 UniProtKB:B7JAQ7 (AFE_3153, UP000001362).) and passing all
+    LinkML and history validation gates.'
+  target_ids:
+  - cmmmech:spent-steel-pickling-liquors
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Spent steel-pickling liquors (cmmmech:spent-steel-pickling-liquors) passes
+  Cycle 8 Stage 3 protein-examples review (scientific_review: true) at SHA-256 ad16b4eed7a1a3ba232cc9cf37043047fe8ed6f4ed0230c2052eba6e812b0680:
+  Curated data/records/spent-steel-pickling-liquors.yaml (SHA-256 ad16b4eed7a1a3ba232cc9cf37043047fe8ed6f4ed0230c2052eba6e812b0680)
+  in Cycle 8 Stage 3 (protein_examples) with causal_graph ''culture_associated_ferrous_oxidation_graph''
+  (mechanism_ref: culture_associated_ferrous_oxidation, 5 nodes / 4 edges; cyc2_outer_membrane_cytochrome:
+  [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975,
+  A0A2W1KH68_ACIFR, UP000248886)]; rus_cyc1_periplasmic_electron_transfer: [UniProtKB:B7JAQ0
+  (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]),
+  achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+  and preserving source-faithful support levels and caveats from primary source(s)
+  qin2016. Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7
+  (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus
+  ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome
+  C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans,
+  UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT,
+  NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6
+  (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus
+  ferrooxidans ATCC 23270, UP000001362).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 8 Stage 3 (protein_examples) using scripts/curate_causal_graphs.py;
+  supersedes Cycle 8 Stage 2 review 20261104T223900Z-spent-steel-pickling-liquors-cycle8-stage2-causal-graphs-rereview.
+related_reviews: []
