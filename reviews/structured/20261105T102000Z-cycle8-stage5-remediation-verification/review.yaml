@@ -22,8 +22,9 @@ summary: 'Post-remediation verification review across all 10 CMMMech records mod
   and #931 (GRP-C8S5-003: chromium.yaml and uraninite.yaml updated to replace generic
   template placeholder descriptions on oxidized_metal_substrate and reduced_metal_product,
   lowercase mid-sentence substrate/product label interpolations across mechanisms[0]
-  and causal_graphs[0], and qualify reduced_metal_product in chromium.yaml as ''Reduced
-  Cr precipitate/complexes (inferred Cr(III))'' per Belchik et al. 2011 TEM-EDX evidence).
+  and causal_graphs[0], and qualify reduced_metal_product in chromium.yaml as ''Chromium-bearing
+  extracellular precipitates (elemental Cr by TEM-EDX; Cr(III) valence inferred from
+  prior studies)'' per Belchik et al. 2011 TEM-EDX evidence).
   All 10 records pass strict validation, history validation, and page rendering checks
   with 0 open findings.'
 reviewer:
@@ -325,11 +326,13 @@ checks:
     carry source-specific descriptions from Belchik et al. (2011) and Marshall et
     al. (2006), all mid-sentence substrate/product label interpolations in mechanisms[0].protein_examples,
     causal_graphs[0].nodes[].protein_examples, and causal_graphs[0].edges[] use lowercase
-    initial words ('dissolved chromate Cr(VI)', 'reduced Cr precipitate/complexes
-    (inferred Cr(III))', 'soluble uranyl carbonate U(VI) complexes', 'extracellular
-    nanocrystalline uraninite (UO2)'), and reduced_metal_product in chromium.yaml
-    is qualified as 'Reduced Cr precipitate/complexes (inferred Cr(III))' with supports
-    partial on edges[3].
+    initial words ('dissolved chromate Cr(VI)', 'chromium-bearing extracellular precipitates
+    (elemental Cr detected by TEM-EDX in Figures 2-3; Cr(III) valence inferred from
+    earlier studies in Belchik et al., 2011)', 'soluble uranyl carbonate U(VI) complexes',
+    'extracellular nanocrystalline uraninite (UO2)'), and reduced_metal_product in
+    chromium.yaml is qualified as 'Chromium-bearing extracellular precipitates (elemental
+    Cr by TEM-EDX; Cr(III) valence inferred from prior studies)' with supports partial
+    on edges[3].
   target_ids:
   - cmmmech:chromium
   - cmmmech:uraninite
@@ -465,8 +468,8 @@ assessments:
     (2011) and Marshall et al. (2006), lowercase mid-sentence substrate/product label
     interpolations across mechanisms[0].protein_examples, causal_graphs[0].nodes[].protein_examples,
     and causal_graphs[0].edges[], and qualify reduced_metal_product in chromium.yaml
-    as 'Reduced Cr precipitate/complexes (inferred Cr(III))' with supports partial
-    on edges[3].
+    as 'Chromium-bearing extracellular precipitates (elemental Cr by TEM-EDX; Cr(III)
+    valence inferred from prior studies)' with supports partial on edges[3].
   target_ids:
   - cmmmech:chromium
   - cmmmech:uraninite
@@ -693,9 +696,9 @@ findings:
     (causal_graphs[0].nodes[4..5]) with source-specific descriptions, lowercased mid-sentence
     substrate/product label interpolations across mechanisms[0].protein_examples,
     causal_graphs[0].nodes[].protein_examples, and causal_graphs[0].edges[], and qualified
-    reduced_metal_product in chromium.yaml as ''Reduced Cr precipitate/complexes (inferred
-    Cr(III))'' to reflect Belchik et al. (2011) TEM-EDX evidence, with 2 append-only
-    EDIT history sidecars.'
+    reduced_metal_product in chromium.yaml as ''Chromium-bearing extracellular precipitates
+    (elemental Cr by TEM-EDX; Cr(III) valence inferred from prior studies)'' to reflect
+    Belchik et al. (2011) TEM-EDX evidence, with 2 append-only EDIT history sidecars.'
   previous_occurrences:
   - repository: CultureBotAI/CMMMech
     review_id: 20261105T005500Z-cycle8-stage4-element-cohort-review

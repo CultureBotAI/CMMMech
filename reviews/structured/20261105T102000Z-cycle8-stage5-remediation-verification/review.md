@@ -11,7 +11,7 @@
 
 ## Summary
 
-Post-remediation verification review across all 10 CMMMech records modified in Cycle 8 Stage 5 (1 element, 4 mineral, 1 primary_resource, and 4 secondary_resource records) resolving all 3 open Cycle 8 Stage 4 review findings under GitHub Issues #929 (GRP-C8S5-001: schwertmannite.yaml causal_graphs[1] lx5_eps_removal_perturbation_graph nodes[2..3].id and edges[2..3] updated to unimpaired_72h_ferrous_oxidation_trajectory and enhanced_72h_schwertmannite_precipitate_yield to match Song et al. 2018 Section 3.4, Table 1, and Figures 5-7), #930 (GRP-C8S5-002: 8 Acidithiobacillus ferrooxidans records across 9 causal graphs updated to lowercase mid-sentence 'to periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).' in edges[0].description), and #931 (GRP-C8S5-003: chromium.yaml and uraninite.yaml updated to replace generic template placeholder descriptions on oxidized_metal_substrate and reduced_metal_product, lowercase mid-sentence substrate/product label interpolations across mechanisms[0] and causal_graphs[0], and qualify reduced_metal_product in chromium.yaml as 'Reduced Cr precipitate/complexes (inferred Cr(III))' per Belchik et al. 2011 TEM-EDX evidence). All 10 records pass strict validation, history validation, and page rendering checks with 0 open findings.
+Post-remediation verification review across all 10 CMMMech records modified in Cycle 8 Stage 5 (1 element, 4 mineral, 1 primary_resource, and 4 secondary_resource records) resolving all 3 open Cycle 8 Stage 4 review findings under GitHub Issues #929 (GRP-C8S5-001: schwertmannite.yaml causal_graphs[1] lx5_eps_removal_perturbation_graph nodes[2..3].id and edges[2..3] updated to unimpaired_72h_ferrous_oxidation_trajectory and enhanced_72h_schwertmannite_precipitate_yield to match Song et al. 2018 Section 3.4, Table 1, and Figures 5-7), #930 (GRP-C8S5-002: 8 Acidithiobacillus ferrooxidans records across 9 causal graphs updated to lowercase mid-sentence 'to periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).' in edges[0].description), and #931 (GRP-C8S5-003: chromium.yaml and uraninite.yaml updated to replace generic template placeholder descriptions on oxidized_metal_substrate and reduced_metal_product, lowercase mid-sentence substrate/product label interpolations across mechanisms[0] and causal_graphs[0], and qualify reduced_metal_product in chromium.yaml as 'Chromium-bearing extracellular precipitates (elemental Cr by TEM-EDX; Cr(III) valence inferred from prior studies)' per Belchik et al. 2011 TEM-EDX evidence). All 10 records pass strict validation, history validation, and page rendering checks with 0 open findings.
 
 ## Scope And Provenance
 
@@ -43,7 +43,7 @@ Working-tree hashes do not imply those bytes were committed.
 | Append-only history sidecar validation | passed | True | cmmmech:argentojarosite, cmmmech:basic-oxygen-furnace-steelmaking-dust, cmmmech:cemented-tungsten-carbide-scrap, cmmmech:chromium, cmmmech:eudialyte-ore, cmmmech:nickel-smelter-slag, cmmmech:rutile, cmmmech:schwertmannite, cmmmech:spent-steel-pickling-liquors, cmmmech:uraninite | All 10 new EDIT history sidecars and existing history sidecars pass .venv/bin/python -m cmmmech.cli validate-history --base main with 0 errors. |
 | Schwertmannite lx5_eps_removal_perturbation_graph node IDs and edge endpoints concordance (#929) | passed | True | cmmmech:schwertmannite | Verified that causal_graphs[1].nodes[2].id (unimpaired_72h_ferrous_oxidation_trajectory), causal_graphs[1].nodes[3].id (enhanced_72h_schwertmannite_precipitate_yield), and their references in causal_graphs[1].edges[2].target, causal_graphs[1].edges[3].source, and causal_graphs[1].edges[3].target in data/records/schwertmannite.yaml match the remediated labels, descriptions, and Song et al. (2018, Materials 11(9):1739, Section 3.4, Table 1, Figures 5-7) experimental results. |
 | Lowercase mid-sentence periplasmic rusticyanin target label in cyc2_outer_membrane_cytochrome outgoing edge descriptions across 8 Acidithiobacillus ferrooxidans records (#930) | passed | True | cmmmech:argentojarosite, cmmmech:basic-oxygen-furnace-steelmaking-dust, cmmmech:cemented-tungsten-carbide-scrap, cmmmech:eudialyte-ore, cmmmech:nickel-smelter-slag, cmmmech:rutile, cmmmech:schwertmannite, cmmmech:spent-steel-pickling-liquors | Verified that edges[0].description (cyc2_outer_membrane_cytochrome -&gt; rus_cyc1_periplasmic_electron_transfer) in all 9 causal graphs across argentojarosite.yaml, basic-oxygen-furnace-steelmaking-dust.yaml, cemented-tungsten-carbide-scrap.yaml, eudialyte-ore.yaml, nickel-smelter-slag.yaml, rutile.yaml, schwertmannite.yaml (causal_graphs[0..1]), and spent-steel-pickling-liquors.yaml reads '... deliver electrons across the outer membrane to periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).' with lowercase 'periplasmic'. |
-| Source-specific substrate/product node descriptions, lowercased mid-sentence label interpolations, and Cr(III) TEM-EDX qualification in chromium.yaml and uraninite.yaml (#931) | passed | True | cmmmech:chromium, cmmmech:uraninite | Verified that oxidized_metal_substrate and reduced_metal_product in data/records/chromium.yaml (causal_graphs[0].nodes[3..4]) and data/records/uraninite.yaml (causal_graphs[0].nodes[4..5]) carry source-specific descriptions from Belchik et al. (2011) and Marshall et al. (2006), all mid-sentence substrate/product label interpolations in mechanisms[0].protein_examples, causal_graphs[0].nodes[].protein_examples, and causal_graphs[0].edges[] use lowercase initial words ('dissolved chromate Cr(VI)', 'reduced Cr precipitate/complexes (inferred Cr(III))', 'soluble uranyl carbonate U(VI) complexes', 'extracellular nanocrystalline uraninite (UO2)'), and reduced_metal_product in chromium.yaml is qualified as 'Reduced Cr precipitate/complexes (inferred Cr(III))' with supports partial on edges[3]. |
+| Source-specific substrate/product node descriptions, lowercased mid-sentence label interpolations, and Cr(III) TEM-EDX qualification in chromium.yaml and uraninite.yaml (#931) | passed | True | cmmmech:chromium, cmmmech:uraninite | Verified that oxidized_metal_substrate and reduced_metal_product in data/records/chromium.yaml (causal_graphs[0].nodes[3..4]) and data/records/uraninite.yaml (causal_graphs[0].nodes[4..5]) carry source-specific descriptions from Belchik et al. (2011) and Marshall et al. (2006), all mid-sentence substrate/product label interpolations in mechanisms[0].protein_examples, causal_graphs[0].nodes[].protein_examples, and causal_graphs[0].edges[] use lowercase initial words ('dissolved chromate Cr(VI)', 'chromium-bearing extracellular precipitates (elemental Cr detected by TEM-EDX in Figures 2-3; Cr(III) valence inferred from earlier studies in Belchik et al., 2011)', 'soluble uranyl carbonate U(VI) complexes', 'extracellular nanocrystalline uraninite (UO2)'), and reduced_metal_product in chromium.yaml is qualified as 'Chromium-bearing extracellular precipitates (elemental Cr by TEM-EDX; Cr(III) valence inferred from prior studies)' with supports partial on edges[3]. |
 
 ## Scientific And Domain Assessments
 
@@ -63,7 +63,7 @@ All 9 causal graphs across the 8 Acidithiobacillus ferrooxidans records in GRP-C
 
 graph: supported. Targets: cmmmech:chromium, cmmmech:uraninite.
 
-Both Shewanella oneidensis MR-1 records in GRP-C8S5-003 (chromium.yaml and uraninite.yaml) now replace generic template placeholder descriptions on oxidized_metal_substrate and reduced_metal_product with source-specific descriptions from Belchik et al. (2011) and Marshall et al. (2006), lowercase mid-sentence substrate/product label interpolations across mechanisms[0].protein_examples, causal_graphs[0].nodes[].protein_examples, and causal_graphs[0].edges[], and qualify reduced_metal_product in chromium.yaml as 'Reduced Cr precipitate/complexes (inferred Cr(III))' with supports partial on edges[3].
+Both Shewanella oneidensis MR-1 records in GRP-C8S5-003 (chromium.yaml and uraninite.yaml) now replace generic template placeholder descriptions on oxidized_metal_substrate and reduced_metal_product with source-specific descriptions from Belchik et al. (2011) and Marshall et al. (2006), lowercase mid-sentence substrate/product label interpolations across mechanisms[0].protein_examples, causal_graphs[0].nodes[].protein_examples, and causal_graphs[0].edges[], and qualify reduced_metal_product in chromium.yaml as 'Chromium-bearing extracellular precipitates (elemental Cr by TEM-EDX; Cr(III) valence inferred from prior studies)' with supports partial on edges[3].
 
 ## Findings
 
@@ -89,7 +89,7 @@ minor / resolved / confirmed; issue key: cmmmech.shewanella-mr1-chromium-uranini
 
 In data/records/chromium.yaml (cmmmech:chromium, element, Belchik et al. 2011, Appl. Environ. Microbiol. 77(12):4035-4041, DOI:10.1128/AEM.02463-10; causal_graphs[0] lines 118-260, nodes[3..4] lines 213-222, edges[1..3] lines 233-259) and data/records/uraninite.yaml (cmmmech:uraninite, mineral, Marshall et al. 2006, PLOS Biology 4(8):e268, DOI:10.1371/journal.pbio.0040268; causal_graphs[0] lines 195-397, nodes[4..5] lines 333-344, edges[2..4] lines 367-397), oxidized_metal_substrate and reduced_metal_product in causal_graphs[0] retain generic template placeholder descriptions ('Oxidized metal species or mineral substrate (&lt;Label&gt;) accepting extracellular electrons.' and 'Reduced metal species or mineral phase (&lt;Label&gt;) formed by extracellular electron transfer.'), and mechanisms[0].protein_examples[0..1].evidence[0].explanation, causal_graphs[0].nodes[...].protein_examples[0].evidence[0].explanation, and causal_graphs[0].edges[...].{description,evidence[0].explanation} interpolate the capitalized node labels verbatim mid-sentence ('... to Dissolved chromate Cr(VI)', '... into Reduced Cr(III) precipitate/complexes', '... to Soluble uranyl carbonate U(VI) complexes', '... into Extracellular nanocrystalline uraninite (UO2)'). Furthermore, in chromium.yaml (causal_graphs[0].nodes[4], lines 218-222, and edges[3], lines 251-259), reduced_metal_product is labeled 'Reduced Cr(III) precipitate/complexes' without the qualification stated in mechanisms[0].description (line 35) and mechanisms[0].evidence[1].explanation (line 116) that Belchik et al. (2011) detected elemental Cr in electron-dense precipitates by TEM-EDX (Figures 2-3) and inferred Cr(III) valence from prior studies rather than oxidation-state spectroscopy.
 
-Disposition: Resolved under GitHub Issue #931 (GRP-C8S5-003): replaced generic template placeholder descriptions on oxidized_metal_substrate and reduced_metal_product in data/records/chromium.yaml (causal_graphs[0].nodes[3..4]) and data/records/uraninite.yaml (causal_graphs[0].nodes[4..5]) with source-specific descriptions, lowercased mid-sentence substrate/product label interpolations across mechanisms[0].protein_examples, causal_graphs[0].nodes[].protein_examples, and causal_graphs[0].edges[], and qualified reduced_metal_product in chromium.yaml as 'Reduced Cr precipitate/complexes (inferred Cr(III))' to reflect Belchik et al. (2011) TEM-EDX evidence, with 2 append-only EDIT history sidecars.
+Disposition: Resolved under GitHub Issue #931 (GRP-C8S5-003): replaced generic template placeholder descriptions on oxidized_metal_substrate and reduced_metal_product in data/records/chromium.yaml (causal_graphs[0].nodes[3..4]) and data/records/uraninite.yaml (causal_graphs[0].nodes[4..5]) with source-specific descriptions, lowercased mid-sentence substrate/product label interpolations across mechanisms[0].protein_examples, causal_graphs[0].nodes[].protein_examples, and causal_graphs[0].edges[], and qualified reduced_metal_product in chromium.yaml as 'Chromium-bearing extracellular precipitates (elemental Cr by TEM-EDX; Cr(III) valence inferred from prior studies)' to reflect Belchik et al. (2011) TEM-EDX evidence, with 2 append-only EDIT history sidecars.
 
 ## Recommended Actions And Acceptance Checks
 
@@ -140,10 +140,10 @@ summary: 'Post-remediation verification review across all 10 CMMMech records mod
   and #931 (GRP-C8S5-003: chromium.yaml and uraninite.yaml updated to replace generic
   template placeholder descriptions on oxidized_metal_substrate and reduced_metal_product,
   lowercase mid-sentence substrate/product label interpolations across mechanisms[0]
-  and causal_graphs[0], and qualify reduced_metal_product in chromium.yaml as ''Reduced
-  Cr precipitate/complexes (inferred Cr(III))'' per Belchik et al. 2011 TEM-EDX evidence).
-  All 10 records pass strict validation, history validation, and page rendering checks
-  with 0 open findings.'
+  and causal_graphs[0], and qualify reduced_metal_product in chromium.yaml as ''Chromium-bearing
+  extracellular precipitates (elemental Cr by TEM-EDX; Cr(III) valence inferred from
+  prior studies)'' per Belchik et al. 2011 TEM-EDX evidence). All 10 records pass
+  strict validation, history validation, and page rendering checks with 0 open findings.'
 reviewer:
   identity: antigravity / cmmmech-cycle8-stage5-remediation-reviewer
   kind: agent
@@ -443,11 +443,13 @@ checks:
     carry source-specific descriptions from Belchik et al. (2011) and Marshall et
     al. (2006), all mid-sentence substrate/product label interpolations in mechanisms[0].protein_examples,
     causal_graphs[0].nodes[].protein_examples, and causal_graphs[0].edges[] use lowercase
-    initial words ('dissolved chromate Cr(VI)', 'reduced Cr precipitate/complexes
-    (inferred Cr(III))', 'soluble uranyl carbonate U(VI) complexes', 'extracellular
-    nanocrystalline uraninite (UO2)'), and reduced_metal_product in chromium.yaml
-    is qualified as 'Reduced Cr precipitate/complexes (inferred Cr(III))' with supports
-    partial on edges[3].
+    initial words ('dissolved chromate Cr(VI)', 'chromium-bearing extracellular precipitates
+    (elemental Cr detected by TEM-EDX in Figures 2-3; Cr(III) valence inferred from
+    earlier studies in Belchik et al., 2011)', 'soluble uranyl carbonate U(VI) complexes',
+    'extracellular nanocrystalline uraninite (UO2)'), and reduced_metal_product in
+    chromium.yaml is qualified as 'Chromium-bearing extracellular precipitates (elemental
+    Cr by TEM-EDX; Cr(III) valence inferred from prior studies)' with supports partial
+    on edges[3].
   target_ids:
   - cmmmech:chromium
   - cmmmech:uraninite
@@ -583,8 +585,8 @@ assessments:
     (2011) and Marshall et al. (2006), lowercase mid-sentence substrate/product label
     interpolations across mechanisms[0].protein_examples, causal_graphs[0].nodes[].protein_examples,
     and causal_graphs[0].edges[], and qualify reduced_metal_product in chromium.yaml
-    as 'Reduced Cr precipitate/complexes (inferred Cr(III))' with supports partial
-    on edges[3].
+    as 'Chromium-bearing extracellular precipitates (elemental Cr by TEM-EDX; Cr(III)
+    valence inferred from prior studies)' with supports partial on edges[3].
   target_ids:
   - cmmmech:chromium
   - cmmmech:uraninite
@@ -811,9 +813,9 @@ findings:
     (causal_graphs[0].nodes[4..5]) with source-specific descriptions, lowercased mid-sentence
     substrate/product label interpolations across mechanisms[0].protein_examples,
     causal_graphs[0].nodes[].protein_examples, and causal_graphs[0].edges[], and qualified
-    reduced_metal_product in chromium.yaml as ''Reduced Cr precipitate/complexes (inferred
-    Cr(III))'' to reflect Belchik et al. (2011) TEM-EDX evidence, with 2 append-only
-    EDIT history sidecars.'
+    reduced_metal_product in chromium.yaml as ''Chromium-bearing extracellular precipitates
+    (elemental Cr by TEM-EDX; Cr(III) valence inferred from prior studies)'' to reflect
+    Belchik et al. (2011) TEM-EDX evidence, with 2 append-only EDIT history sidecars.'
   previous_occurrences:
   - repository: CultureBotAI/CMMMech
     review_id: 20261105T005500Z-cycle8-stage4-element-cohort-review
