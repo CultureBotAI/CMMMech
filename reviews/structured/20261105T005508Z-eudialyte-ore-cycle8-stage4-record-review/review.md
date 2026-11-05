@@ -1,0 +1,252 @@
+# Cycle 8 Stage 4 record review: cmmmech:eudialyte-ore (Eudialyte ore)
+
+- Review: 20261105T005508Z-eudialyte-ore-cycle8-stage4-record-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-05T00:46:00Z
+- Finished UTC: 2026-11-05T00:55:08Z
+- Reviewer: antigravity / cmmmech-cycle8-stage4-record-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Reviewed data/records/eudialyte-ore.yaml (cmmmech:eudialyte-ore) at commit 573410374de4d10b2595b6bf75a1f2138ea33ed7 following Cycle 8 Stage 2 causal-graph addition (PR #924, commit d69682fb) and Cycle 8 Stage 3 multi-strain UniProtKB grounding expansion (PR #926, commit 57341037). Verified primary_resource identity (Ilimaussaq Complex eudialyte-bearing agpaitic nepheline syenite ore), mechanisms[0] (culture_assisted_acid_leaching: Acidithiobacillus ferrooxidans NCIMB 10435 culture-assisted sulfuric-acid leaching in 0.1 M FeSO4 + 6.9 mM H2SO4 medium from Hunter 2020 PhD thesis, University of Edinburgh, DOI:10.7488/era/834, Sections 4.5.2-4.5.4 pp. 124-137 and Section 7.4.1 pp. 158-167), all 4 synchronized UniProtKB protein_examples (including A. ferrooxidans DSM 16523 UniProtKB:A0A2W1KH68 DN052_11975), and causal_graphs[0] (culture_assisted_acid_leaching_graph). Identified 1 minor graph edge description finding (cmmmech-cycle8-stage4-finding-0002: mid-sentence capitalized 'Periplasmic' in causal_graphs[0].edges[0].description at line 272) for Stage 5 grouped remediation.
+
+## Scope And Provenance
+
+Single-record Cycle 8 Stage 4 audit of cmmmech:eudialyte-ore after Cycle 8 Stage 2 and Stage 3 curations.
+
+Selection: data/records/eudialyte-ore.yaml at 573410374de4d10b2595b6bf75a1f2138ea33ed7
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: git_commit at Git base 573410374de4d10b2595b6bf75a1f2138ea33ed7.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:eudialyte-ore | data/records/eudialyte-ore.yaml | maintained | Eudialyte ore |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| cmmmech validate eudialyte-ore.yaml | passed | True | cmmmech:eudialyte-ore | data/records/eudialyte-ore.yaml passes LinkML structural, semantic, and canonical top-level key-order validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Acidithiobacillus ferrooxidans NCIMB 10435 culture-assisted eudialyte ore leaching causal graph and multi-strain Cyc2/Rus/Cyc1 groundings
+
+graph: supported. Targets: cmmmech:eudialyte-ore.
+
+All multi-strain A. ferrooxidans Cyc2 and Rus/Cyc1 UniProtKB protein_examples are accurately grounded and synchronized between mechanisms[0] and causal_graphs[0]. However, causal_graphs[0].edges[0].description (line 272) retains mid-sentence capitalized 'Periplasmic'.
+
+## Findings
+
+### cmmmech-cycle8-stage4-finding-0002: 8 Acidithiobacillus ferrooxidans records (9 causal graphs) updated in Cycle 8 Stage 2 and Stage 3 interpolate capitalized 'Periplasmic rusticyanin...' mid-sentence in edges[0].description
+
+minor / open / confirmed; issue key: cmmmech.ferrooxidans-cyc2-causal-graphs.mid-sentence-capitalized-periplasmic-target-label-in-edge-description.
+
+Across the 8 Acidithiobacillus ferrooxidans records (9 causal graphs) updated in Cycle 8 Stage 2 (PR #924, commit d69682fb) and Stage 3 (PR #926, commit 57341037) — data/records/argentojarosite.yaml (line 279), data/records/basic-oxygen-furnace-steelmaking-dust.yaml (line 282), data/records/cemented-tungsten-carbide-scrap.yaml (line 283), data/records/eudialyte-ore.yaml (line 272), data/records/nickel-smelter-slag.yaml (line 265), data/records/rutile.yaml (line 273), data/records/schwertmannite.yaml (causal_graphs[0] line 386 and causal_graphs[1] line 552), and data/records/spent-steel-pickling-liquors.yaml (line 278) — edges[0].description (cyc2_outer_membrane_cytochrome -&gt; rus_cyc1_periplasmic_electron_transfer) interpolates the capitalized target node label 'Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152)' verbatim mid-sentence ('... deliver electrons across the outer membrane to Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).') instead of lowercase 'periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152)'. In this scope, 1 record(s) (eudialyte-ore) are affected.
+
+## Recommended Actions And Acceptance Checks
+
+### act-normalize-ferrooxidans-cyc2-edge-descriptions
+
+Replace mid-sentence 'to Periplasmic rusticyanin' with 'to periplasmic rusticyanin' in edges[0].description across the affected Acidithiobacillus ferrooxidans causal graphs during Stage 5 grouped remediation with canonical history provenance.
+
+- All affected records use lowercase 'to periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152)' in edges[0].description.
+- Matching EDIT history sidecars exist in history/records/ and pass just check.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| ev-eudialyte-ore-file | data/records/eudialyte-ore.yaml; causal_graphs[0].edges[0].description (line 272) | supports | Inspected data/records/eudialyte-ore.yaml, verifying causal_graphs[0].edges[0].description at line 272. |
+| ev-eudialyte-ore-hunter2020 | DOI:10.7488/era/834; Hunter 2020 PhD thesis, University of Edinburgh, Sections 4.5.2-4.5.4 (pp. 124-137) and Section 7.4.1 (pp. 158-167), Figures 4.5.2.1, 4.5.3.1, and 4.5.3.4-4.5.4.1 | supports | Hunter (2020) reports culture-assisted acid leaching of Ilimaussaq Complex eudialyte ore with Acidithiobacillus ferrooxidans NCIMB 10435 in 0.1 M FeSO4 + 6.9 mM H2SO4 medium for about three weeks (~3 weeks) at room temperature (~25 degC). |
+
+## Limits And Additional Notes
+
+- data/records/eudialyte-ore.yaml retains mid-sentence capitalized 'Periplasmic' in causal_graphs[0].edges[0].description (tracked as open finding cmmmech-cycle8-stage4-finding-0002 for Stage 5 remediation).
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261105T005508Z-eudialyte-ore-cycle8-stage4-record-review
+title: 'Cycle 8 Stage 4 record review: cmmmech:eudialyte-ore (Eudialyte ore)'
+repository: CultureBotAI/CMMMech
+kind: record
+started_at: '2026-11-05T00:46:00Z'
+finished_at: '2026-11-05T00:55:08Z'
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'Reviewed data/records/eudialyte-ore.yaml (cmmmech:eudialyte-ore) at commit
+  573410374de4d10b2595b6bf75a1f2138ea33ed7 following Cycle 8 Stage 2 causal-graph
+  addition (PR #924, commit d69682fb) and Cycle 8 Stage 3 multi-strain UniProtKB grounding
+  expansion (PR #926, commit 57341037). Verified primary_resource identity (Ilimaussaq
+  Complex eudialyte-bearing agpaitic nepheline syenite ore), mechanisms[0] (culture_assisted_acid_leaching:
+  Acidithiobacillus ferrooxidans NCIMB 10435 culture-assisted sulfuric-acid leaching
+  in 0.1 M FeSO4 + 6.9 mM H2SO4 medium from Hunter 2020 PhD thesis, University of
+  Edinburgh, DOI:10.7488/era/834, Sections 4.5.2-4.5.4 pp. 124-137 and Section 7.4.1
+  pp. 158-167), all 4 synchronized UniProtKB protein_examples (including A. ferrooxidans
+  DSM 16523 UniProtKB:A0A2W1KH68 DN052_11975), and causal_graphs[0] (culture_assisted_acid_leaching_graph).
+  Identified 1 minor graph edge description finding (cmmmech-cycle8-stage4-finding-0002:
+  mid-sentence capitalized ''Periplasmic'' in causal_graphs[0].edges[0].description
+  at line 272) for Stage 5 grouped remediation.'
+reviewer:
+  identity: antigravity / cmmmech-cycle8-stage4-record-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of Cycle 8 Stage 4 record_review
+    (.claude/skills/review-yaml-record/SKILL.md) against frozen commit 573410374de4d10b2595b6bf75a1f2138ea33ed7.
+source:
+  git_revision: 573410374de4d10b2595b6bf75a1f2138ea33ed7
+  state: git_commit
+  inputs:
+  - path: data/records/eudialyte-ore.yaml
+    sha256: a98fad65a5f6e559075569f402d5af291c307112f72afd4a9858f70409f26dc3
+    role: target
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+  - path: src/cmmmech/validation.py
+    sha256: edf999adb3da7dceadcc340b5561663a7fb56dfd1178992633a1a7ad1abcb937
+    role: context
+scope:
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:eudialyte-ore
+  selection: data/records/eudialyte-ore.yaml at 573410374de4d10b2595b6bf75a1f2138ea33ed7
+  description: Single-record Cycle 8 Stage 4 audit of cmmmech:eudialyte-ore after
+    Cycle 8 Stage 2 and Stage 3 curations.
+targets:
+- target_id: cmmmech:eudialyte-ore
+  path: data/records/eudialyte-ore.yaml
+  kind: maintained
+  label: Eudialyte ore
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/eudialyte-ore.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+checks:
+- check_id: cmmmech-validate-eudialyte-ore
+  name: cmmmech validate eudialyte-ore.yaml
+  status: passed
+  required: true
+  command: .venv/bin/cmmmech validate data/records/eudialyte-ore.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:eudialyte-ore
+  evidence_ids:
+  - ev-eudialyte-ore-file
+  summary: data/records/eudialyte-ore.yaml passes LinkML structural, semantic, and
+    canonical top-level key-order validation with 0 errors.
+assessments:
+- assessment_id: assess-eudialyte-ore-graph-and-proteins
+  topic: Acidithiobacillus ferrooxidans NCIMB 10435 culture-assisted eudialyte ore
+    leaching causal graph and multi-strain Cyc2/Rus/Cyc1 groundings
+  area: graph
+  outcome: supported
+  target_ids:
+  - cmmmech:eudialyte-ore
+  evidence_ids:
+  - ev-eudialyte-ore-file
+  - ev-eudialyte-ore-hunter2020
+  summary: All multi-strain A. ferrooxidans Cyc2 and Rus/Cyc1 UniProtKB protein_examples
+    are accurately grounded and synchronized between mechanisms[0] and causal_graphs[0].
+    However, causal_graphs[0].edges[0].description (line 272) retains mid-sentence
+    capitalized 'Periplasmic'.
+findings:
+- finding_id: cmmmech-cycle8-stage4-finding-0002
+  issue_key: cmmmech.ferrooxidans-cyc2-causal-graphs.mid-sentence-capitalized-periplasmic-target-label-in-edge-description
+  title: 8 Acidithiobacillus ferrooxidans records (9 causal graphs) updated in Cycle
+    8 Stage 2 and Stage 3 interpolate capitalized 'Periplasmic rusticyanin...' mid-sentence
+    in edges[0].description
+  severity: minor
+  category: graph
+  certainty: confirmed
+  status: open
+  target_ids:
+  - cmmmech:eudialyte-ore
+  field_paths:
+  - causal_graphs[0].edges[0].description
+  evidence_ids:
+  - ev-eudialyte-ore-file
+  - ev-eudialyte-ore-hunter2020
+  description: 'Across the 8 Acidithiobacillus ferrooxidans records (9 causal graphs)
+    updated in Cycle 8 Stage 2 (PR #924, commit d69682fb) and Stage 3 (PR #926, commit
+    57341037) — data/records/argentojarosite.yaml (line 279), data/records/basic-oxygen-furnace-steelmaking-dust.yaml
+    (line 282), data/records/cemented-tungsten-carbide-scrap.yaml (line 283), data/records/eudialyte-ore.yaml
+    (line 272), data/records/nickel-smelter-slag.yaml (line 265), data/records/rutile.yaml
+    (line 273), data/records/schwertmannite.yaml (causal_graphs[0] line 386 and causal_graphs[1]
+    line 552), and data/records/spent-steel-pickling-liquors.yaml (line 278) — edges[0].description
+    (cyc2_outer_membrane_cytochrome -> rus_cyc1_periplasmic_electron_transfer) interpolates
+    the capitalized target node label ''Periplasmic rusticyanin and diheme cytochrome
+    c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152)'' verbatim mid-sentence (''... deliver electrons
+    across the outer membrane to Periplasmic rusticyanin and diheme cytochrome c4
+    Cyc1 (rus AFE_3146; cyc1 AFE_3152).'') instead of lowercase ''periplasmic rusticyanin
+    and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152)''. In this scope,
+    1 record(s) (eudialyte-ore) are affected.'
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/eudialyte-ore.yaml
+    role: maintained_record
+actions:
+- action_id: act-normalize-ferrooxidans-cyc2-edge-descriptions
+  finding_ids:
+  - cmmmech-cycle8-stage4-finding-0002
+  target_ids:
+  - cmmmech:eudialyte-ore
+  description: Replace mid-sentence 'to Periplasmic rusticyanin' with 'to periplasmic
+    rusticyanin' in edges[0].description across the affected Acidithiobacillus ferrooxidans
+    causal graphs during Stage 5 grouped remediation with canonical history provenance.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/eudialyte-ore.yaml
+    role: maintained_record
+  acceptance_checks:
+  - All affected records use lowercase 'to periplasmic rusticyanin and diheme cytochrome
+    c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152)' in edges[0].description.
+  - Matching EDIT history sidecars exist in history/records/ and pass just check.
+evidence:
+- evidence_id: ev-eudialyte-ore-file
+  kind: record_content
+  reference: data/records/eudialyte-ore.yaml
+  locator: causal_graphs[0].edges[0].description (line 272)
+  accessed_at: '2026-11-05T00:55:08Z'
+  support: supports
+  summary: Inspected data/records/eudialyte-ore.yaml, verifying causal_graphs[0].edges[0].description
+    at line 272.
+- evidence_id: ev-eudialyte-ore-hunter2020
+  kind: primary_source
+  reference: DOI:10.7488/era/834
+  locator: Hunter 2020 PhD thesis, University of Edinburgh, Sections 4.5.2-4.5.4 (pp.
+    124-137) and Section 7.4.1 (pp. 158-167), Figures 4.5.2.1, 4.5.3.1, and 4.5.3.4-4.5.4.1
+  accessed_at: '2026-11-05T00:55:08Z'
+  support: supports
+  summary: Hunter (2020) reports culture-assisted acid leaching of Ilimaussaq Complex
+    eudialyte ore with Acidithiobacillus ferrooxidans NCIMB 10435 in 0.1 M FeSO4 +
+    6.9 mM H2SO4 medium for about three weeks (~3 weeks) at room temperature (~25
+    degC).
+limitations:
+- data/records/eudialyte-ore.yaml retains mid-sentence capitalized 'Periplasmic' in
+  causal_graphs[0].edges[0].description (tracked as open finding cmmmech-cycle8-stage4-finding-0002
+  for Stage 5 remediation).
+notes: []
+```
