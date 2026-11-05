@@ -1,0 +1,294 @@
+# Primary-source scientific review of skogbyite (IMA:2023-085, status A, Zr(Mg2Mn3+4)SiO12)
+
+- Review: 20261105T141500Z-skogbyite-round127-scientific-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-05T14:14:00Z
+- Finished UTC: 2026-11-05T14:15:00Z
+- Reviewer: antigravity / round127-scientific-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Skogbyite (IMA:2023-085, status A, Zr(Mg2Mn3+4)SiO12) passes primary-source scientific review (scientific_review: true) at SHA-256 285ae181768fd17084cb8b5f4d163134c544a704230cc77aabd7286a0654e19c against all bounded passages and rendered table PNGs of Jonsson E, Halenius U, Majka J, and Bosi F (2025) Skogbyite, Zr(Mg2Mn3+4)SiO12, a new zirconium mineral in the braunite group from Langban, Bergslagen, Sweden, Eur. J. Mineral. 37:269-277, pp. 269-277, Tables 1-7, Figures 1-3 (27 bounded passages &lt;= 1,800 B across 9 full-PDF pages; 8 main-text pages / 25 passages, plus PNG renders of pages 3 and 6).
+
+## Scope And Provenance
+
+Primary-source scientific review of data/records/skogbyite.yaml (SHA-256 285ae181768fd17084cb8b5f4d163134c544a704230cc77aabd7286a0654e19c) and its canonical CREATE history sidecar against all bounded primary-source passages and rendered table PNGs from Jonsson E, Halenius U, Majka J, and Bosi F (2025) Skogbyite, Zr(Mg2Mn3+4)SiO12, a new zirconium mineral in the braunite group from Langban, Bergslagen, Sweden, Eur. J. Mineral. 37:269-277, pp. 269-277, Tables 1-7, Figures 1-3 (27 bounded passages &lt;= 1,800 B across 9 full-PDF pages; 8 main-text pages / 25 passages, plus PNG renders of pages 3 and 6) and the September 2026 IMA-CNMNC Master List (PDF p. 201).
+
+Selection: Round 127 newly admitted mineral record skogbyite
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 557d77ce6f1aaaa60f9106d39b389ffc795844fb.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:skogbyite | data/records/skogbyite.yaml | maintained | Skogbyite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:skogbyite | Checked 688 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:skogbyite | Checked 1340 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Verification of IMA:2023-085 identity, Langban type locality, JEOL JXA-8530F WDS chemistry, FTIR-ATR spectrum, tetragonal I41/acd braunite-group structure, and internal source discrepancies for skogbyite
+
+evidence: supported. Targets: cmmmech:skogbyite.
+
+All numeric, crystallographic, optical, spectroscopic, and chemical claims in data/records/skogbyite.yaml (SHA-256 285ae181768fd17084cb8b5f4d163134c544a704230cc77aabd7286a0654e19c) match the bounded primary-source passages and rendered table PNGs of Jonsson E, Halenius U, Majka J, and Bosi F (2025) Skogbyite, Zr(Mg2Mn3+4)SiO12, a new zirconium mineral in the braunite group from Langban, Bergslagen, Sweden, Eur. J. Mineral. 37:269-277, pp. 269-277, Tables 1-7, Figures 1-3 (27 bounded passages &lt;= 1,800 B across 9 full-PDF pages; 8 main-text pages / 25 passages, plus PNG renders of pages 3 and 6) and the September 2026 IMA Master List (p. 201).
+
+### Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE provenance
+
+provenance: supported. Targets: cmmmech:skogbyite.
+
+data/records/skogbyite.yaml accurately omits mechanisms (0 mechanisms) and explicitly discloses that no biological or microbial interaction data are reported in the type mineralogical description. Append-only CREATE history sidecar passes validation with 0 errors.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/skogbyite.yaml; Working-tree record data/records/skogbyite.yaml | supports | Working-tree record data/records/skogbyite.yaml captures IMA:2023-085 identity (symbol Skb in paper / Skg in IMA list), Langban Fe-Mn oxide deposit (Sweden) type locality, holotype GEO-NRM20230033 (Stockholm), Table 1 (p. 271) JEOL JXA-8530F WDS chemistry (19 points, Mn2O3 56.02 wt%, ZrO2 14.24 wt%, SiO2 10.51 wt%, MgO 9.86 wt%, Fe2O3 3.78 wt%, Ce2O3 2.80 wt%, Al2O3 0.79 wt%, ZnO 0.09 wt%, CaO 0.06 wt%, PbO 0.04 wt%, La2O3 0.01 wt%, Na2O 0.01 wt%, printed Total 98.42 wt% vs arithmetic sum 98.21 wt%), tetragonal I41/acd (#142) braunite-group structure (Tables 2-7; SCXRD a = 9.4914(4) A, c = 18.9875(10) A, V = 1710.52(17) A3, Z = 8, R1 = 0.0460, wR2 = 0.1154), FTIR-ATR band at 904 cm-1 (Figure 2), primary-source discrepancies (Table 1 oxide sum 98.21 vs 98.42 wt% and CaO range 0.02-0.05 vs mean 0.06 wt%; M(1) subscript sum 0.88 vs Sigma0.87; inverted c:a = 0.4999; 648 vs 658 observed reflections; Table 6 BVS rounding), and 0 mechanisms (SHA-256 285ae181768fd17084cb8b5f4d163134c544a704230cc77aabd7286a0654e19c). |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List, PDF p. 201 | supports | Confirms Skogbyite, status A, IMA:2023-085, and primary reference in European Journal of Mineralogy. |
+| jonsson_2025_skogbyite_primary | https://doi.org/10.5194/ejm-37-269-2025; Jonsson E, Halenius U, Majka J, and Bosi F (2025) Skogbyite, Zr(Mg2Mn3+4)SiO12, a new zirconium mineral in the braunite group from Langban, Bergslagen, Sweden, Eur. J. Mineral. 37:269-277, pp. 269-277, Tables 1-7, Figures 1-3 (27 bounded passages &lt;= 1,800 B across 9 full-PDF pages; 8 main-text pages / 25 passages, plus PNG renders of pages 3 and 6) | supports | All bounded passages (&lt;= 1,800 B) and single-page 150-DPI PNG table renders inspected from Jonsson E, Halenius U, Majka J, and Bosi F (2025) Skogbyite, Zr(Mg2Mn3+4)SiO12, a new zirconium mineral in the braunite group from Langban, Bergslagen, Sweden, Eur. J. Mineral. 37:269-277, pp. 269-277, Tables 1-7, Figures 1-3 (27 bounded passages &lt;= 1,800 B across 9 full-PDF pages; 8 main-text pages / 25 passages, plus PNG renders of pages 3 and 6), confirming verbatim title, type locality, type specimen repositories, WDS chemical composition, unit-cell parameters, structure refinement, and documented internal source discrepancies. |
+| create_history | history/records/skogbyite/2026-11-05T140445Z-antigravity-dc41ae.yaml; Canonical CREATE history sidecar history/records/skogbyite/2026-11-05T140445Z-antigravity-dc41ae.yaml | supports | Canonical CREATE history sidecar (SHA-256 bf9f6b15693f0cfff652a15b4e6951ad1148536b2b577a2ad0766fb8303a4aa7) matches record curation_history[0].timestamp and top-level record sections. |
+| validation | data/records/skogbyite.yaml; Real CLI validation via .venv/bin/cmmmech validate --require-records and .venv/bin/cmmmech validate-history --base main | supports | Checked 688 record(s); 0 failed. Checked 1340 history record(s); 0 error(s). |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed under the Round 127 bounded source-text workflow (scripts/index_bounded_pdf_passages.py, max 1,800 bytes per passage) plus single-page 150-DPI PNG table renders.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261105T141500Z-skogbyite-round127-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Primary-source scientific review of skogbyite (IMA:2023-085, status A, Zr(Mg2Mn3+4)SiO12)
+started_at: '2026-11-05T14:14:00Z'
+finished_at: '2026-11-05T14:15:00Z'
+reviewer:
+  identity: antigravity / round127-scientific-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/skogbyite.yaml (SHA-256 285ae181768fd17084cb8b5f4d163134c544a704230cc77aabd7286a0654e19c)
+    and its CREATE history sidecar against all bounded passages and single-page PNG
+    table renders of Jonsson E, Halenius U, Majka J, and Bosi F (2025) Skogbyite,
+    Zr(Mg2Mn3+4)SiO12, a new zirconium mineral in the braunite group from Langban,
+    Bergslagen, Sweden, Eur. J. Mineral. 37:269-277, pp. 269-277, Tables 1-7, Figures
+    1-3 (27 bounded passages <= 1,800 B across 9 full-PDF pages; 8 main-text pages
+    / 25 passages, plus PNG renders of pages 3 and 6) and the September 2026 IMA-CNMNC
+    Master List (PDF p. 201).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 557d77ce6f1aaaa60f9106d39b389ffc795844fb
+  state: working_tree
+  inputs:
+  - path: data/records/skogbyite.yaml
+    sha256: 285ae181768fd17084cb8b5f4d163134c544a704230cc77aabd7286a0654e19c
+    role: target
+  - path: history/records/skogbyite/2026-11-05T140445Z-antigravity-dc41ae.yaml
+    sha256: bf9f6b15693f0cfff652a15b4e6951ad1148536b2b577a2ad0766fb8303a4aa7
+    role: context
+  - path: research/sources/round127-minerals/20261105T141000Z-source-investigation.json
+    sha256: 856d32cd3111b1d3e455154ae6c02051cb7c89f651f4c7cebc36e660bfab7094
+    role: context
+  - path: research/sources/round127-minerals/20261105T141000Z-source-investigation.md
+    sha256: 4ecb0426150384a968c5b35a531593f08374c7f2376bd6d42d87cb49d2012fd0
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:skogbyite
+  path: data/records/skogbyite.yaml
+  label: Skogbyite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/skogbyite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/skogbyite/2026-11-05T140445Z-antigravity-dc41ae.yaml
+    role: canonical_history
+scope:
+  description: Primary-source scientific review of data/records/skogbyite.yaml (SHA-256
+    285ae181768fd17084cb8b5f4d163134c544a704230cc77aabd7286a0654e19c) and its canonical
+    CREATE history sidecar against all bounded primary-source passages and rendered
+    table PNGs from Jonsson E, Halenius U, Majka J, and Bosi F (2025) Skogbyite, Zr(Mg2Mn3+4)SiO12,
+    a new zirconium mineral in the braunite group from Langban, Bergslagen, Sweden,
+    Eur. J. Mineral. 37:269-277, pp. 269-277, Tables 1-7, Figures 1-3 (27 bounded
+    passages <= 1,800 B across 9 full-PDF pages; 8 main-text pages / 25 passages,
+    plus PNG renders of pages 3 and 6) and the September 2026 IMA-CNMNC Master List
+    (PDF p. 201).
+  selection: Round 127 newly admitted mineral record skogbyite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:skogbyite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/skogbyite.yaml
+  locator: Working-tree record data/records/skogbyite.yaml
+  accessed_at: '2026-11-05T14:14:30Z'
+  support: supports
+  summary: Working-tree record data/records/skogbyite.yaml captures IMA:2023-085 identity
+    (symbol Skb in paper / Skg in IMA list), Langban Fe-Mn oxide deposit (Sweden)
+    type locality, holotype GEO-NRM20230033 (Stockholm), Table 1 (p. 271) JEOL JXA-8530F
+    WDS chemistry (19 points, Mn2O3 56.02 wt%, ZrO2 14.24 wt%, SiO2 10.51 wt%, MgO
+    9.86 wt%, Fe2O3 3.78 wt%, Ce2O3 2.80 wt%, Al2O3 0.79 wt%, ZnO 0.09 wt%, CaO 0.06
+    wt%, PbO 0.04 wt%, La2O3 0.01 wt%, Na2O 0.01 wt%, printed Total 98.42 wt% vs arithmetic
+    sum 98.21 wt%), tetragonal I41/acd (#142) braunite-group structure (Tables 2-7;
+    SCXRD a = 9.4914(4) A, c = 18.9875(10) A, V = 1710.52(17) A3, Z = 8, R1 = 0.0460,
+    wR2 = 0.1154), FTIR-ATR band at 904 cm-1 (Figure 2), primary-source discrepancies
+    (Table 1 oxide sum 98.21 vs 98.42 wt% and CaO range 0.02-0.05 vs mean 0.06 wt%;
+    M(1) subscript sum 0.88 vs Sigma0.87; inverted c:a = 0.4999; 648 vs 658 observed
+    reflections; Table 6 BVS rounding), and 0 mechanisms (SHA-256 285ae181768fd17084cb8b5f4d163134c544a704230cc77aabd7286a0654e19c).
+  snapshot_sha256: 285ae181768fd17084cb8b5f4d163134c544a704230cc77aabd7286a0654e19c
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 201
+  accessed_at: '2026-11-05T14:14:30Z'
+  support: supports
+  summary: Confirms Skogbyite, status A, IMA:2023-085, and primary reference in European
+    Journal of Mineralogy.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: jonsson_2025_skogbyite_primary
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-37-269-2025
+  locator: Jonsson E, Halenius U, Majka J, and Bosi F (2025) Skogbyite, Zr(Mg2Mn3+4)SiO12,
+    a new zirconium mineral in the braunite group from Langban, Bergslagen, Sweden,
+    Eur. J. Mineral. 37:269-277, pp. 269-277, Tables 1-7, Figures 1-3 (27 bounded
+    passages <= 1,800 B across 9 full-PDF pages; 8 main-text pages / 25 passages,
+    plus PNG renders of pages 3 and 6)
+  accessed_at: '2026-11-05T14:14:30Z'
+  support: supports
+  summary: All bounded passages (<= 1,800 B) and single-page 150-DPI PNG table renders
+    inspected from Jonsson E, Halenius U, Majka J, and Bosi F (2025) Skogbyite, Zr(Mg2Mn3+4)SiO12,
+    a new zirconium mineral in the braunite group from Langban, Bergslagen, Sweden,
+    Eur. J. Mineral. 37:269-277, pp. 269-277, Tables 1-7, Figures 1-3 (27 bounded
+    passages <= 1,800 B across 9 full-PDF pages; 8 main-text pages / 25 passages,
+    plus PNG renders of pages 3 and 6), confirming verbatim title, type locality,
+    type specimen repositories, WDS chemical composition, unit-cell parameters, structure
+    refinement, and documented internal source discrepancies.
+  snapshot_sha256: 61604fdc9a43e344c036f8355d0cee71263952cdec241b924b2bf0c93a8ff47b
+- evidence_id: create_history
+  kind: record_content
+  reference: history/records/skogbyite/2026-11-05T140445Z-antigravity-dc41ae.yaml
+  locator: Canonical CREATE history sidecar history/records/skogbyite/2026-11-05T140445Z-antigravity-dc41ae.yaml
+  accessed_at: '2026-11-05T14:14:30Z'
+  support: supports
+  summary: Canonical CREATE history sidecar (SHA-256 bf9f6b15693f0cfff652a15b4e6951ad1148536b2b577a2ad0766fb8303a4aa7)
+    matches record curation_history[0].timestamp and top-level record sections.
+  snapshot_sha256: bf9f6b15693f0cfff652a15b4e6951ad1148536b2b577a2ad0766fb8303a4aa7
+- evidence_id: validation
+  kind: validation
+  reference: data/records/skogbyite.yaml
+  locator: Real CLI validation via .venv/bin/cmmmech validate --require-records and
+    .venv/bin/cmmmech validate-history --base main
+  accessed_at: '2026-11-05T14:14:40Z'
+  support: supports
+  summary: Checked 688 record(s); 0 failed. Checked 1340 history record(s); 0 error(s).
+  snapshot_sha256: 285ae181768fd17084cb8b5f4d163134c544a704230cc77aabd7286a0654e19c
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: .venv/bin/cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 688 record(s); 0 failed.
+  target_ids:
+  - cmmmech:skogbyite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: .venv/bin/cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1340 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:skogbyite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA:2023-085 identity, Langban type locality, JEOL JXA-8530F
+    WDS chemistry, FTIR-ATR spectrum, tetragonal I41/acd braunite-group structure,
+    and internal source discrepancies for skogbyite
+  outcome: supported
+  summary: All numeric, crystallographic, optical, spectroscopic, and chemical claims
+    in data/records/skogbyite.yaml (SHA-256 285ae181768fd17084cb8b5f4d163134c544a704230cc77aabd7286a0654e19c)
+    match the bounded primary-source passages and rendered table PNGs of Jonsson E,
+    Halenius U, Majka J, and Bosi F (2025) Skogbyite, Zr(Mg2Mn3+4)SiO12, a new zirconium
+    mineral in the braunite group from Langban, Bergslagen, Sweden, Eur. J. Mineral.
+    37:269-277, pp. 269-277, Tables 1-7, Figures 1-3 (27 bounded passages <= 1,800
+    B across 9 full-PDF pages; 8 main-text pages / 25 passages, plus PNG renders of
+    pages 3 and 6) and the September 2026 IMA Master List (p. 201).
+  target_ids:
+  - cmmmech:skogbyite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - jonsson_2025_skogbyite_primary
+- assessment_id: mechanism_absence_and_provenance_verification
+  area: provenance
+  topic: Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE
+    provenance
+  outcome: supported
+  summary: data/records/skogbyite.yaml accurately omits mechanisms (0 mechanisms)
+    and explicitly discloses that no biological or microbial interaction data are
+    reported in the type mineralogical description. Append-only CREATE history sidecar
+    passes validation with 0 errors.
+  target_ids:
+  - cmmmech:skogbyite
+  evidence_ids:
+  - owner
+  - jonsson_2025_skogbyite_primary
+  - create_history
+  - validation
+findings: []
+actions: []
+summary: 'Skogbyite (IMA:2023-085, status A, Zr(Mg2Mn3+4)SiO12) passes primary-source
+  scientific review (scientific_review: true) at SHA-256 285ae181768fd17084cb8b5f4d163134c544a704230cc77aabd7286a0654e19c
+  against all bounded passages and rendered table PNGs of Jonsson E, Halenius U, Majka
+  J, and Bosi F (2025) Skogbyite, Zr(Mg2Mn3+4)SiO12, a new zirconium mineral in the
+  braunite group from Langban, Bergslagen, Sweden, Eur. J. Mineral. 37:269-277, pp.
+  269-277, Tables 1-7, Figures 1-3 (27 bounded passages <= 1,800 B across 9 full-PDF
+  pages; 8 main-text pages / 25 passages, plus PNG renders of pages 3 and 6).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed under the Round 127 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage) plus single-page 150-DPI PNG table renders.
+related_reviews: []
+```

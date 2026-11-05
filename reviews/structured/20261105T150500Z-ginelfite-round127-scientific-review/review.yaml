@@ -1,0 +1,226 @@
+schema_version: 1.0.0
+review_id: 20261105T150500Z-ginelfite-round127-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Post-remediation primary-source scientific review of ginelfite (IMA:2022-110,
+  status A, Ag2(Ag0.5Fe2+0.5)TlPb24.5(Sb,As)32.5S75.5)
+started_at: '2026-11-05T15:04:00Z'
+finished_at: '2026-11-05T15:05:00Z'
+reviewer:
+  identity: antigravity / round127-scientific-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the remediated state of data/records/ginelfite.yaml (SHA-256 cdf6d406dba0fd315dd664ff1dabd56af504318548cad21beff9148ce41e2c39)
+    and its CREATE and EDIT history sidecars against all bounded passages and single-page
+    PNG table renders of Biagioni C, Sejkora J, Moelo Y, Favreau G, Bourgoin V, Boulliard
+    J-C, Bonaccorsi E, Mauro D, Musetti S, Pasero M, Perchiazzi N, and Ulmanova J
+    (2025) Ginelfite, Ag2(Ag0.5Fe0.5)TlPb24.5(Sb,As)32.5S75.5, a new boxwork sulfosalt
+    from Jas Roux, France: occurrence and crystal structure, Eur. J. Mineral. 37:319-335,
+    pp. 319-335, Tables 1-8, Figures 1-9 (51 bounded passages <= 1,800 B across 17
+    full-PDF pages; 15 main-text pages / 45 passages, plus PNG renders of pages 4
+    and 6) and the September 2026 IMA-CNMNC Master List (PDF p. 82).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: df2931386b7510315d5a503b2c19458cbecaf8fe
+  state: working_tree
+  inputs:
+  - path: data/records/ginelfite.yaml
+    sha256: cdf6d406dba0fd315dd664ff1dabd56af504318548cad21beff9148ce41e2c39
+    role: target
+  - path: history/records/ginelfite/2026-11-05T140956Z-antigravity-4caced.yaml
+    sha256: 2baed4137626d941ae80b3352b746b1ce9101996533ff0b16e09c26207bfbbd9
+    role: context
+  - path: history/records/ginelfite/2026-11-05T150150Z-antigravity-94393d.yaml
+    sha256: 0cb4fa35469c079405b6d79daa435cd603eba1b5f9c0c0a5459e9ade8a01925f
+    role: context
+  - path: research/sources/round127-minerals/20261105T141000Z-source-investigation.json
+    sha256: b82e02b5dc93728ff6592e457b8b6014b4c0db630dc9897f9dda9cb9cefc1e56
+    role: context
+  - path: research/sources/round127-minerals/20261105T141000Z-source-investigation.md
+    sha256: a975ff700af20636ae9f8df857ded8719f71c4455038774c930090e6ea48ebe0
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:ginelfite
+  path: data/records/ginelfite.yaml
+  label: Ginelfite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/ginelfite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/ginelfite/2026-11-05T140956Z-antigravity-4caced.yaml
+    role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/ginelfite/2026-11-05T150150Z-antigravity-94393d.yaml
+    role: canonical_history
+scope:
+  description: 'Post-remediation primary-source scientific review of data/records/ginelfite.yaml
+    (SHA-256 cdf6d406dba0fd315dd664ff1dabd56af504318548cad21beff9148ce41e2c39) and
+    its canonical CREATE and EDIT history sidecars against all bounded primary-source
+    passages and rendered table PNGs from Biagioni C, Sejkora J, Moelo Y, Favreau
+    G, Bourgoin V, Boulliard J-C, Bonaccorsi E, Mauro D, Musetti S, Pasero M, Perchiazzi
+    N, and Ulmanova J (2025) Ginelfite, Ag2(Ag0.5Fe0.5)TlPb24.5(Sb,As)32.5S75.5, a
+    new boxwork sulfosalt from Jas Roux, France: occurrence and crystal structure,
+    Eur. J. Mineral. 37:319-335, pp. 319-335, Tables 1-8, Figures 1-9 (51 bounded
+    passages <= 1,800 B across 17 full-PDF pages; 15 main-text pages / 45 passages,
+    plus PNG renders of pages 4 and 6) and the September 2026 IMA-CNMNC Master List
+    (PDF p. 82).'
+  selection: Round 127 newly admitted mineral record ginelfite (post-remediation state)
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:ginelfite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/ginelfite.yaml
+  locator: Working-tree record data/records/ginelfite.yaml
+  accessed_at: '2026-11-05T15:04:30Z'
+  support: supports
+  summary: 'Working-tree record data/records/ginelfite.yaml (SHA-256 cdf6d406dba0fd315dd664ff1dabd56af504318548cad21beff9148ce41e2c39)
+    accurately captures IMA:2022-110 identity (symbol Glf), etymology honouring Carlo
+    Gini and Francesco Guelfi, Jas Roux compartment 2 hydrothermal deposit (Hautes-Alpes,
+    France) type locality and association with Fe-poor sphalerite and lopatkaite in
+    a vug-free silicified baryte + quartz matrix, holotype 20023 (Pisa) and P1P 31/2022
+    (Prague), Dcalc = 5.765 g/cm3, VHN25 = 165 kg/mm2 (range 157-170 kg/mm2, Mohs
+    3-3.5), Table 1 COM reflectance (35.4/38.1% at 470 nm, 34.6/37.0% at 546 nm, 33.7/36.0%
+    at 589 nm, 32.3/34.6% at 650 nm), Table 2 Cameca SX 100 WDS chemistry (35 points,
+    25 kV, 20 nA, 1 um beam, total 99.91 wt%, Ev(%) = -1.1(1.0)% with range -2.3 to
+    +1.7%), triclinic P-1 (#2) zinkenite-related boxwork sulfosalt structure (61 cation
+    sites: 21 pure Pb, 1 mixed Tl(20), 12 mixed Pb/Sb M(1)-M(12), 24 Sb/As comprising
+    8 pure Sb + 1 pure As(20) + 15 mixed Sb/As, 2 pure Ag(1)-Ag(2), 1 mixed Ag(3),
+    and 76 S sites; modular sum Ev = -1.7% on p. 328; Table 8 S76 vs S75.5 formula
+    discrepancy), Table 3 seven bolded powder XRD lines (3.413, 2.965, 2.805, 2.729,
+    2.091, 1.872, 1.785 A), and 0 mechanisms.'
+  snapshot_sha256: cdf6d406dba0fd315dd664ff1dabd56af504318548cad21beff9148ce41e2c39
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 82
+  accessed_at: '2026-11-05T15:04:30Z'
+  support: supports
+  summary: Confirms Ginelfite, status A, IMA:2022-110, and primary reference in European
+    Journal of Mineralogy.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: biagioni_2025_ginelfite_primary
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-37-319-2025
+  locator: 'Biagioni C, Sejkora J, Moelo Y, Favreau G, Bourgoin V, Boulliard J-C,
+    Bonaccorsi E, Mauro D, Musetti S, Pasero M, Perchiazzi N, and Ulmanova J (2025)
+    Ginelfite, Ag2(Ag0.5Fe0.5)TlPb24.5(Sb,As)32.5S75.5, a new boxwork sulfosalt from
+    Jas Roux, France: occurrence and crystal structure, Eur. J. Mineral. 37:319-335,
+    pp. 319-335, Tables 1-8, Figures 1-9 (51 bounded passages <= 1,800 B across 17
+    full-PDF pages; 15 main-text pages / 45 passages, plus PNG renders of pages 4
+    and 6)'
+  accessed_at: '2026-11-05T15:04:30Z'
+  support: supports
+  summary: All bounded passages (<= 1,800 B) and single-page 150-DPI PNG table renders
+    inspected from Biagioni C et al. (2025, Eur. J. Mineral. 37:319-335), confirming
+    verbatim title, etymology, type locality, holotype 20023 (Pisa) and P1P 31/2022
+    (Prague), Dcalc = 5.765 g/cm3, VHN25 = 165 kg/mm2, Table 1 COM reflectance, Table
+    2 WDS chemical composition (1 um beam), Table 3 seven bolded powder XRD lines,
+    Tables 4-6 zinkenite-related boxwork structure refinement, and Table 8 S76 vs
+    S75.5 discrepancy.
+  snapshot_sha256: 284c4425266684530b3580788d4abb6216d3e3700dda288562ceb83a0afda963
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/ginelfite/2026-11-05T150150Z-antigravity-94393d.yaml
+  locator: Canonical EDIT history sidecar history/records/ginelfite/2026-11-05T150150Z-antigravity-94393d.yaml
+  accessed_at: '2026-11-05T15:04:30Z'
+  support: supports
+  summary: Canonical EDIT history sidecar (SHA-256 0cb4fa35469c079405b6d79daa435cd603eba1b5f9c0c0a5459e9ade8a01925f)
+    records the primary-source description corrections while keeping the original
+    CREATE sidecar immutable.
+  snapshot_sha256: 0cb4fa35469c079405b6d79daa435cd603eba1b5f9c0c0a5459e9ade8a01925f
+- evidence_id: validation
+  kind: validation
+  reference: data/records/ginelfite.yaml
+  locator: Real CLI validation via .venv/bin/cmmmech validate --require-records and
+    .venv/bin/cmmmech validate-history --base main
+  accessed_at: '2026-11-05T15:04:40Z'
+  support: supports
+  summary: Checked 688 record(s); 0 failed. Checked 1342 history record(s); 0 error(s).
+  snapshot_sha256: cdf6d406dba0fd315dd664ff1dabd56af504318548cad21beff9148ce41e2c39
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: .venv/bin/cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 688 record(s); 0 failed.
+  target_ids:
+  - cmmmech:ginelfite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: .venv/bin/cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1342 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:ginelfite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA:2022-110 identity, Carlo Gini & Francesco Guelfi etymology,
+    Jas Roux compartment 2 occurrence, holotype P1P 31/2022 & 20023, Cameca SX 100
+    WDS chemistry, COM reflectance, triclinic P-1 zinkenite-related boxwork structure,
+    and Table 3 seven bolded powder XRD lines for ginelfite
+  outcome: supported
+  summary: All numeric, crystallographic, optical, physical, and chemical claims in
+    data/records/ginelfite.yaml (SHA-256 cdf6d406dba0fd315dd664ff1dabd56af504318548cad21beff9148ce41e2c39)
+    match the bounded primary-source passages and rendered table PNGs of Biagioni
+    et al. (2025, Eur. J. Mineral. 37:319-335, Tables 1-8) and the September 2026
+    IMA Master List (p. 82).
+  target_ids:
+  - cmmmech:ginelfite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - biagioni_2025_ginelfite_primary
+- assessment_id: mechanism_absence_and_provenance_verification
+  area: provenance
+  topic: Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE
+    and EDIT provenance
+  outcome: supported
+  summary: data/records/ginelfite.yaml accurately omits mechanisms (0 mechanisms)
+    and explicitly discloses that no biological or microbial interaction data are
+    reported in the type mineralogical description. Append-only CREATE and EDIT history
+    sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:ginelfite
+  evidence_ids:
+  - owner
+  - biagioni_2025_ginelfite_primary
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Ginelfite (IMA:2022-110, status A, Ag2(Ag0.5Fe2+0.5)TlPb24.5(Sb,As)32.5S75.5)
+  passes post-remediation primary-source scientific review (scientific_review: true)
+  at SHA-256 cdf6d406dba0fd315dd664ff1dabd56af504318548cad21beff9148ce41e2c39 against
+  all bounded passages and rendered table PNGs of Biagioni et al. (2025, Eur. J. Mineral.
+  37:319-335, Tables 1-8).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Supersedes 20261105T141500Z-ginelfite-round127-scientific-review after resolving
+  8 description findings identified by the independent PR reviewer subagent.
+related_reviews: []
