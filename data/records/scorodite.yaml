@@ -133,6 +133,34 @@ mechanisms:
     - source_ref: tanaka2018
       supports: partial
       explanation: Representative Acidianus brierleyi DSM 1651T (NCBITaxon:41673; UP000248044) iron-oxidation respiratory chain protein (DFR85_00215-DFR85_00225 locus) supporting aerobic Fe(II) oxidation (4.5-28 mM FeSO4.7H2O) at 70 C and initial pH 1.5 or 1.2 during scorodite crystallization in Tanaka and Okibe (2018); individual respiratory proteins were not biochemically assayed.
+  - uniprot_accession: UniProtKB:A0A2U9IB88
+    entry_name: A0A2U9IB88_9CREN
+    protein_name: Sulfocyanin
+    gene_symbol: DFR85_00235
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:41673
+      label: Acidianus brierleyi
+    reference_proteome_id: UP000248044
+    interpro_ids:
+    - InterPro:IPR050845
+    - InterPro:IPR033138
+    - InterPro:IPR008972
+    - InterPro:IPR010532
+    - InterPro:IPR049544
+    pfam_ids:
+    - Pfam:PF06525
+    ncbifam_ids:
+    - NCBIfam:TIGR03094
+    go_terms:
+    - id: GO:0005507
+      label: copper ion binding
+    functional_role: Second tandem sulfocyanin blue-copper electron-transfer protein paralog (locus DFR85_00235; 223 aa, RefSeq WP_110269154.1; PF06525, TIGR03094, GO:0005507 copper ion binding) encoded in the DFR85_00215-DFR85_00260 metalloredox gene cluster of Acidianus brierleyi DSM 1651T, supporting thermoacidophilic ferrous-iron oxidation at 70 C.
+    annotation_note: Grounded to reference-proteome entry UP000248044 for Acidianus brierleyi (strain DSM 1651T; NCBITaxon:41673; dsm1651 / ncbi_brierleyi), matching the DSM 1651T strain inoculated at 1.0 x 10^7 cells/mL into 200 mL heterotrophic basal salts medium (0.02% w/v yeast extract, initial pH 1.5 or 1.2, 70 C, 100 rpm; 18 mM Fe(II) and 13 mM As(III) for unseeded 14-day bioscorodite synthesis, or 4.5-28 mM Fe(II) and 3.3-20 mM As(III) in seeded/unseeded crystallization experiments) in Tanaka and Okibe (2018).
+    evidence:
+    - source_ref: tanaka2018
+      supports: partial
+      explanation: Representative Acidianus brierleyi DSM 1651T (NCBITaxon:41673; UP000248044) tandem sulfocyanin blue-copper carrier paralog (DFR85_00235, RefSeq WP_110269154.1; TIGR03094) in the DFR85_00215-DFR85_00260 metalloredox locus supporting aerobic Fe(II) oxidation (4.5-28 mM FeSO4.7H2O) at 70 C and initial pH 1.5 or 1.2 during scorodite crystallization in Tanaka and Okibe (2018); individual respiratory proteins were not biochemically assayed.
   - uniprot_accession: UniProtKB:A0A2U9IBA2
     entry_name: A0A2U9IBA2_9CREN
     protein_name: Arsenate reductase (Azurin) small subunit
@@ -179,16 +207,16 @@ mechanisms:
 causal_graphs:
 - id: brierleyi_associated_scorodite_crystallization_graph
   name: Acidianus brierleyi DSM 1651T thermoacidophilic Fe(II)/As(III) oxidation and condition-dependent scorodite crystallization
-  description: Causal pathway linking representative Acidianus brierleyi DSM 1651T (NCBITaxon:41673; reference proteome UP000248044) metalloredox proteins in the DFR85_00215-DFR85_00260 locus (terminal oxidase subunits DFR85_00215-DFR85_00220, sulfocyanin DFR85_00225, and TIGR02694 arsenite-oxidase Rieske small subunit DFR85_00260) to culture-associated oxidation of Fe(II) (18 mM in unseeded 14-day preparation; 4.5-28 mM in Table 3 series) and As(III) (13 mM in unseeded preparation; 3.3-20 mM in Table 3 series) in 200 mL heterotrophic basal salts medium (0.02% w/v yeast extract, initial pH 1.5 or 1.2, 70 C, 100 rpm) to produce XRD-confirmed scorodite (JCPDS 37-0468, Figure 1a) without pre-existing seeds at 13 mM As(III) / 18 mM Fe(II) or with 0.15% (w/v) bioscorodite seeds at dilute 3.3 mM As(III) / 4.5 mM Fe(II) (95% solution As removal vs 11% removal and amorphous solid without seeds, and jarosite with 59% As removal at 13.5 or 20 mM Fe(II)) in Tanaka and Okibe (2018), while preserving
-    non-ideal hydration (1.55 H2O by TG in Figure 1b), unmatched chemical-seed controls (267 mM As(V) + 358 mM Fe(II)), and the Table 2 (0.59 +/- 0.20 mg/L) vs narrative (0.59 +/- 0.08 mg/L) pH-4.9 leachability uncertainty discrepancy.
+  description: Causal pathway linking representative Acidianus brierleyi DSM 1651T (NCBITaxon:41673; reference proteome UP000248044) metalloredox proteins in the DFR85_00215-DFR85_00260 locus (terminal oxidase subunits DFR85_00215-DFR85_00220, tandem sulfocyanins DFR85_00225 and DFR85_00235, and TIGR02694 arsenite-oxidase Rieske small subunit DFR85_00260) to culture-associated oxidation of Fe(II) (18 mM in unseeded 14-day preparation; 4.5-28 mM in Table 3 series) and As(III) (13 mM in unseeded preparation; 3.3-20 mM in Table 3 series) in 200 mL heterotrophic basal salts medium (0.02% w/v yeast extract, initial pH 1.5 or 1.2, 70 C, 100 rpm) to produce XRD-confirmed scorodite (JCPDS 37-0468, Figure 1a) without pre-existing seeds at 13 mM As(III) / 18 mM Fe(II) or with 0.15% (w/v) bioscorodite seeds at dilute 3.3 mM As(III) / 4.5 mM Fe(II) (95% solution As removal vs 11% removal and amorphous solid without seeds, and jarosite with 59% As removal at 13.5 or 20 mM Fe(II)) in Tanaka and Okibe
+    (2018), while preserving non-ideal hydration (1.55 H2O by TG in Figure 1b), unmatched chemical-seed controls (267 mM As(V) + 358 mM Fe(II)), and the Table 2 (0.59 +/- 0.20 mg/L) vs narrative (0.59 +/- 0.08 mg/L) pH-4.9 leachability uncertainty discrepancy.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: brierleyi_associated_scorodite_crystallization
   nodes:
   - id: abri_fox_sulfocyanin_iron_oxidation_complex
-    label: Thermoacidophilic iron-oxidation terminal oxidase and sulfocyanin complex (DFR85_00215-DFR85_00225)
+    label: Thermoacidophilic iron-oxidation terminal oxidase and tandem sulfocyanin complex (DFR85_00215-DFR85_00225; DFR85_00235)
     node_type: GENE_OR_PROTEIN
     gene_symbol: DFR85_00215
-    description: Respiratory oxidase subunits (DFR85_00215 and DFR85_00220) and sulfocyanin blue-copper carrier (DFR85_00225) in Acidianus brierleyi DSM 1651T (UP000248044) catalyzing aerobic Fe(II) oxidation at 70 C and initial pH 1.5 or 1.2.
+    description: Respiratory oxidase subunits (DFR85_00215 and DFR85_00220) and tandem sulfocyanin blue-copper carriers (DFR85_00225 and DFR85_00235) in Acidianus brierleyi DSM 1651T (UP000248044) catalyzing aerobic Fe(II) oxidation at 70 C and initial pH 1.5 or 1.2.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A0A2U9IB76
@@ -286,6 +314,34 @@ causal_graphs:
       - source_ref: tanaka2018
         supports: partial
         explanation: Representative Acidianus brierleyi DSM 1651T (NCBITaxon:41673; UP000248044) iron-oxidation respiratory chain protein (DFR85_00215-DFR85_00225 locus) supporting aerobic Fe(II) oxidation (4.5-28 mM FeSO4.7H2O) at 70 C and initial pH 1.5 or 1.2 during scorodite crystallization in Tanaka and Okibe (2018); individual respiratory proteins were not biochemically assayed.
+    - uniprot_accession: UniProtKB:A0A2U9IB88
+      entry_name: A0A2U9IB88_9CREN
+      protein_name: Sulfocyanin
+      gene_symbol: DFR85_00235
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:41673
+        label: Acidianus brierleyi
+      reference_proteome_id: UP000248044
+      interpro_ids:
+      - InterPro:IPR050845
+      - InterPro:IPR033138
+      - InterPro:IPR008972
+      - InterPro:IPR010532
+      - InterPro:IPR049544
+      pfam_ids:
+      - Pfam:PF06525
+      ncbifam_ids:
+      - NCBIfam:TIGR03094
+      go_terms:
+      - id: GO:0005507
+        label: copper ion binding
+      functional_role: Second tandem sulfocyanin blue-copper electron-transfer protein paralog (locus DFR85_00235; 223 aa, RefSeq WP_110269154.1; PF06525, TIGR03094, GO:0005507 copper ion binding) encoded in the DFR85_00215-DFR85_00260 metalloredox gene cluster of Acidianus brierleyi DSM 1651T, supporting thermoacidophilic ferrous-iron oxidation at 70 C.
+      annotation_note: Grounded to reference-proteome entry UP000248044 for Acidianus brierleyi (strain DSM 1651T; NCBITaxon:41673; dsm1651 / ncbi_brierleyi), matching the DSM 1651T strain inoculated at 1.0 x 10^7 cells/mL into 200 mL heterotrophic basal salts medium (0.02% w/v yeast extract, initial pH 1.5 or 1.2, 70 C, 100 rpm; 18 mM Fe(II) and 13 mM As(III) for unseeded 14-day bioscorodite synthesis, or 4.5-28 mM Fe(II) and 3.3-20 mM As(III) in seeded/unseeded crystallization experiments) in Tanaka and Okibe (2018).
+      evidence:
+      - source_ref: tanaka2018
+        supports: partial
+        explanation: Representative Acidianus brierleyi DSM 1651T (NCBITaxon:41673; UP000248044) tandem sulfocyanin blue-copper carrier paralog (DFR85_00235, RefSeq WP_110269154.1; TIGR03094) in the DFR85_00215-DFR85_00260 metalloredox locus supporting aerobic Fe(II) oxidation (4.5-28 mM FeSO4.7H2O) at 70 C and initial pH 1.5 or 1.2 during scorodite crystallization in Tanaka and Okibe (2018); individual respiratory proteins were not biochemically assayed.
   - id: abri_aoxa_arsenite_oxidase_subunit
     label: Twin-arginine-translocated arsenite oxidase Rieske small subunit homolog (DFR85_00260; TIGR02694)
     node_type: GENE_OR_PROTEIN
@@ -374,7 +430,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: 'Align UniProtKB:A0A2U9IBA2 (DFR85_00260) prose GO reference in scorodite.yaml with its structured go_terms annotation GO:0051537 (2 iron, 2 sulfur cluster binding) alongside TIGR02694 (aoxA) (Issue #937).'
+- timestamp: '2026-11-05T19:13:56Z'
+  curator: marcin
+  action: edit
+  summary: Add live-verified Acidianus brierleyi DSM 1651T tandem sulfocyanin paralog (UniProtKB:A0A2U9IB88, DFR85_00235, UP000248044) to scorodite causal graph and mechanism protein_examples.
 history_refs:
 - history/records/scorodite/2026-10-14T053328Z-codex-cfd8a6.yaml
 - history/records/scorodite/2026-11-05T172709Z-marcin-0257d2.yaml
 - history/records/scorodite/2026-11-05T181427Z-marcin-9aa4ee.yaml
+- history/records/scorodite/2026-11-05T191356Z-marcin-5a4705.yaml

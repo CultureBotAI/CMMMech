@@ -226,6 +226,41 @@ mechanisms:
     - source_ref: mansor2019
       supports: partial
       explanation: Representative Nitratidesulfovibrio vulgaris str. Hildenborough (DSM 644 / ATCC 29579; NCBITaxon:882) dissimilatory sulfite reductase subunit (dsvA/dsvB; DVU_0402/DVU_0403) catalyzing terminal reduction of sulfite to hydrogen sulfide during lactate-driven sulfate reduction in No Fe (500 uM NiCl2) batch cultures in Mansor et al. (2019); individual enzyme activities or gene knockouts were not directly assayed.
+  - uniprot_accession: UniProtKB:P45573
+    entry_name: DSVC_NITV2
+    protein_name: Sulfite reductase, dissimilatory-type subunit gamma
+    gene_symbol: dsvC
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:882
+      label: Nitratidesulfovibrio vulgaris str. Hildenborough
+    reference_proteome_id: UP000002194
+    ec_numbers:
+    - EC:1.8.1.22
+    interpro_ids:
+    - InterPro:IPR042072
+    - InterPro:IPR025526
+    - InterPro:IPR043163
+    - InterPro:IPR007453
+    pfam_ids:
+    - Pfam:PF04358
+    ncbifam_ids:
+    - NCBIfam:TIGR03342
+    go_terms:
+    - id: GO:0005737
+      label: cytoplasm
+    - id: GO:0018551
+      label: dissimilatory sulfite reductase (NADH) activity
+    - id: GO:0097163
+      label: sulfur carrier activity
+    - id: GO:0002143
+      label: tRNA wobble position uridine thiolation
+    functional_role: Dissimilatory-type sulfite reductase (desulfoviridin) gamma subunit / sulfur-carrier protein DsvC / DsrC (dsvC, locus DVU_2776; 105 aa, RefSeq WP_010940042.1; EC 1.8.1.22, TIGR03342, GO:0097163 sulfur carrier activity) partnering with the DsvAB catalytic core (DVU_0402-DVU_0403) via a C-terminal trisulfide intermediate during reduction of sulfite to hydrogen sulfide (H2S / HS-) in Nitratidesulfovibrio vulgaris str. Hildenborough.
+    annotation_note: Reviewed Swiss-Prot entry (DSVC_NITV2). Grounded to reference-proteome entry UP000002194 for Nitratidesulfovibrio vulgaris str. Hildenborough (strain ATCC 29579 / DSM 644 / NCIMB 8303; NCBITaxon:882; dsm644), matching the experimental strain inoculated at 1% v/v into 100 mL anoxic modified metal toxicity medium (lactate, sulfate, yeast extract, tryptone, HEPES, initial pH 7.2; nominal 500 uM total NiCl2 + FeSO4) in Mansor et al. (2019).
+    evidence:
+    - source_ref: mansor2019
+      supports: partial
+      explanation: Representative Nitratidesulfovibrio vulgaris str. Hildenborough (DSM 644 / ATCC 29579; NCBITaxon:882) dissimilatory sulfite reductase gamma / sulfur-carrier subunit (dsvC, DVU_2776; Swiss-Prot DSVC_NITV2) partnering with DsvAB (DVU_0402/DVU_0403) during terminal reduction of sulfite to hydrogen sulfide in No Fe (500 uM NiCl2) batch cultures supporting mixed nickel-sulfide solids containing a minor vaesite-assigned cubic NiS2 component precipitation in Mansor et al. (2019); individual enzyme activities or gene knockouts were not directly assayed.
   evidence:
   - source_ref: mansor2019
     supports: support
@@ -248,7 +283,7 @@ mechanisms:
 causal_graphs:
 - id: hildenborough_nickel_sulfide_formation_graph
   name: Nitratidesulfovibrio vulgaris str. Hildenborough dissimilatory sulfate reduction and conditional vaesite-assigned NiS2 precipitation in No Fe cultures
-  description: Causal pathway linking representative Nitratidesulfovibrio vulgaris str. Hildenborough (DSM 644 / ATCC 29579; NCBITaxon:882) dissimilatory sulfate-reduction enzymes (sat DVU_1295, aprBA DVU_0846-DVU_0847, and dsvAB DVU_0402-DVU_0403 in reference proteome UP000002194) to biogenic sulfide production in anoxic No Fe lactate/sulfate cultures (500 uM NiCl2, initial pH 7.2, final biotic bulk pH ~7.1) and conditional formation of a minor cubic vaesite (NiS2) component identified by small XRD reflections and SAED (~3.25, 2.01, and 1.62 A reflections in annotated Figure 4b / Table S1) in Mansor et al. (2019), while preserving unmatched biotic-vs-abiotic bulk pH (~7.1 vs 8.0-8.2), sulfide delivery, and unmeasured cell-surface pH.
+  description: Causal pathway linking representative Nitratidesulfovibrio vulgaris str. Hildenborough (DSM 644 / ATCC 29579; NCBITaxon:882) dissimilatory sulfate-reduction enzymes (sat DVU_1295, aprBA DVU_0846-DVU_0847, and dsvABC DVU_0402-DVU_0403 and DVU_2776 in reference proteome UP000002194) to biogenic sulfide production in anoxic No Fe lactate/sulfate cultures (500 uM NiCl2, initial pH 7.2, final biotic bulk pH ~7.1) and conditional formation of a minor cubic vaesite (NiS2) component identified by small XRD reflections and SAED (~3.25, 2.01, and 1.62 A reflections in annotated Figure 4b / Table S1) in Mansor et al. (2019), while preserving unmatched biotic-vs-abiotic bulk pH (~7.1 vs 8.0-8.2), sulfide delivery, and unmeasured cell-surface pH.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: hildenborough_nickel_sulfide_formation
   nodes:
@@ -366,10 +401,10 @@ causal_graphs:
         supports: partial
         explanation: Representative Nitratidesulfovibrio vulgaris str. Hildenborough (DSM 644 / ATCC 29579; NCBITaxon:882) sulfate-activation and APS-reduction enzyme in the lactate/sulfate respiratory pathway generating dissolved sulfide during mixed nickel-sulfide solids containing a minor vaesite-assigned cubic NiS2 component precipitation in Mansor et al. (2019); individual enzyme activities or gene knockouts were not assayed in the mineralization study.
   - id: dvh_dsvab_sulfite_reductase
-    label: Dissimilatory sulfite reductase desulfoviridin (dsvAB DVU_0402-DVU_0403)
+    label: Dissimilatory sulfite reductase desulfoviridin and DsvC sulfur carrier (dsvAB DVU_0402-DVU_0403; dsvC DVU_2776)
     node_type: GENE_OR_PROTEIN
     gene_symbol: dsvA
-    description: Reviewed Swiss-Prot dissimilatory sulfite reductase alpha/beta complex DsvAB (DVU_0402-DVU_0403; DSVA_NITV2 and DSVB_NITV2) in Nitratidesulfovibrio vulgaris str. Hildenborough reducing sulfite to biogenic hydrogen sulfide (H2S / HS-).
+    description: Reviewed Swiss-Prot dissimilatory sulfite reductase alpha/beta catalytic complex DsvAB (DVU_0402-DVU_0403; DSVA_NITV2 and DSVB_NITV2) and gamma sulfur-carrier subunit DsvC (DVU_2776; DSVC_NITV2) in Nitratidesulfovibrio vulgaris str. Hildenborough reducing sulfite to biogenic hydrogen sulfide (H2S / HS-).
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:P45574
@@ -457,6 +492,41 @@ causal_graphs:
       - source_ref: mansor2019
         supports: partial
         explanation: Representative Nitratidesulfovibrio vulgaris str. Hildenborough (DSM 644 / ATCC 29579; NCBITaxon:882) dissimilatory sulfite reductase subunit (dsvA/dsvB; DVU_0402/DVU_0403) catalyzing terminal reduction of sulfite to hydrogen sulfide during lactate-driven sulfate reduction in No Fe (500 uM NiCl2) batch cultures in Mansor et al. (2019); individual enzyme activities or gene knockouts were not directly assayed.
+    - uniprot_accession: UniProtKB:P45573
+      entry_name: DSVC_NITV2
+      protein_name: Sulfite reductase, dissimilatory-type subunit gamma
+      gene_symbol: dsvC
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:882
+        label: Nitratidesulfovibrio vulgaris str. Hildenborough
+      reference_proteome_id: UP000002194
+      ec_numbers:
+      - EC:1.8.1.22
+      interpro_ids:
+      - InterPro:IPR042072
+      - InterPro:IPR025526
+      - InterPro:IPR043163
+      - InterPro:IPR007453
+      pfam_ids:
+      - Pfam:PF04358
+      ncbifam_ids:
+      - NCBIfam:TIGR03342
+      go_terms:
+      - id: GO:0005737
+        label: cytoplasm
+      - id: GO:0018551
+        label: dissimilatory sulfite reductase (NADH) activity
+      - id: GO:0097163
+        label: sulfur carrier activity
+      - id: GO:0002143
+        label: tRNA wobble position uridine thiolation
+      functional_role: Dissimilatory-type sulfite reductase (desulfoviridin) gamma subunit / sulfur-carrier protein DsvC / DsrC (dsvC, locus DVU_2776; 105 aa, RefSeq WP_010940042.1; EC 1.8.1.22, TIGR03342, GO:0097163 sulfur carrier activity) partnering with the DsvAB catalytic core (DVU_0402-DVU_0403) via a C-terminal trisulfide intermediate during reduction of sulfite to hydrogen sulfide (H2S / HS-) in Nitratidesulfovibrio vulgaris str. Hildenborough.
+      annotation_note: Reviewed Swiss-Prot entry (DSVC_NITV2). Grounded to reference-proteome entry UP000002194 for Nitratidesulfovibrio vulgaris str. Hildenborough (strain ATCC 29579 / DSM 644 / NCIMB 8303; NCBITaxon:882; dsm644), matching the experimental strain inoculated at 1% v/v into 100 mL anoxic modified metal toxicity medium (lactate, sulfate, yeast extract, tryptone, HEPES, initial pH 7.2; nominal 500 uM total NiCl2 + FeSO4) in Mansor et al. (2019).
+      evidence:
+      - source_ref: mansor2019
+        supports: partial
+        explanation: Representative Nitratidesulfovibrio vulgaris str. Hildenborough (DSM 644 / ATCC 29579; NCBITaxon:882) dissimilatory sulfite reductase gamma / sulfur-carrier subunit (dsvC, DVU_2776; Swiss-Prot DSVC_NITV2) partnering with DsvAB (DVU_0402/DVU_0403) during terminal reduction of sulfite to hydrogen sulfide in No Fe (500 uM NiCl2) batch cultures supporting mixed nickel-sulfide solids containing a minor vaesite-assigned cubic NiS2 component precipitation in Mansor et al. (2019); individual enzyme activities or gene knockouts were not directly assayed.
   - id: biogenic_sulfide_ni2_no_fe_culture
     label: Biogenic sulfide and dissolved Ni(II) (500 uM NiCl2) in No Fe culture medium (bulk pH ~7.1)
     node_type: CHEMICAL_ENTITY
@@ -472,7 +542,7 @@ causal_graphs:
     target: dvh_dsvab_sulfite_reductase
     predicate: supplies_substrate_for
     relationship: ATP-dependent sulfate activation to APS and two-electron reduction to intracellular sulfite
-    description: Sat (DVU_1295) activates sulfate to APS and AprBA (DVU_0846-DVU_0847) reduces APS to sulfite for terminal reduction by DsvAB during lactate oxidation in N. vulgaris str. Hildenborough.
+    description: Sat (DVU_1295) activates sulfate to APS and AprBA (DVU_0846-DVU_0847) reduces APS to sulfite for terminal reduction by DsvAB-DsvC (DVU_0402-DVU_0403, DVU_2776) during lactate oxidation in N. vulgaris str. Hildenborough.
     evidence:
     - source_ref: mansor2019
       supports: partial
@@ -481,7 +551,7 @@ causal_graphs:
     target: biogenic_sulfide_ni2_no_fe_culture
     predicate: produces
     relationship: dissimilatory sulfite reduction generating biogenic sulfide in No Fe Ni(II) cultures
-    description: DsvAB (DVU_0402-DVU_0403) reduces sulfite to dissolved sulfide in 100 mL No Fe (500 uM NiCl2) cultures maintained near bulk pH 7.1.
+    description: DsvAB-DsvC (DVU_0402-DVU_0403, DVU_2776) reduces sulfite to dissolved sulfide in 100 mL No Fe (500 uM NiCl2) cultures maintained near bulk pH 7.1.
     evidence:
     - source_ref: mansor2019
       supports: partial
@@ -514,7 +584,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Nitratidesulfovibrio vulgaris str. Hildenborough (NCBITaxon:882; UP000002194) dissimilatory sulfate-reduction protein groundings (sat DVU_1295 UniProtKB:Q72CI8, aprA DVU_0847 UniProtKB:Q72DT2, aprB DVU_0846 UniProtKB:Q72DT3, and Swiss-Prot dsvA/dsvB DVU_0402-DVU_0403 UniProtKB:P45574/UniProtKB:P45575) for conditional vaesite-assigned NiS2 precipitation in No Fe cultures in Mansor et al. (2019).
+- timestamp: '2026-11-05T19:13:56Z'
+  curator: marcin
+  action: edit
+  summary: Add reviewed Swiss-Prot Nitratidesulfovibrio vulgaris str. Hildenborough dissimilatory sulfite reductase gamma / sulfur-carrier subunit DsvC (UniProtKB:P45573, dsvC, DVU_2776, UP000002194) to vaesite causal graph and mechanism protein_examples.
 history_refs:
 - history/records/vaesite/2026-10-14T100617Z-codex-0c8469.yaml
 - history/records/vaesite/2026-10-22T132123Z-claude-4982f7.yaml
 - history/records/vaesite/2026-11-05T171248Z-marcin-605be7.yaml
+- history/records/vaesite/2026-11-05T191356Z-marcin-b81f5d.yaml

@@ -104,6 +104,40 @@ mechanisms:
     - source_ref: pakostova2023_electroformed
       supports: partial
       explanation: Representative Acidithiobacillus ferruginosus CF3 (NCBITaxon:3063951; UP001196097) rus-operon electron-transfer protein supporting aerobic oxidation of 20 mM Fe(II) to Fe(III) during pre-growth and culture-associated ferric regeneration during 78-day leaching of defective electroformed Cu/Ag tubes in Pakostova and Herath (2023); individual rus-operon proteins were not directly assayed, and separate mixed-consortium flask and 32 C adapted-reactor arms also included other unauthenticated acidophile species.
+  - uniprot_accession: UniProtKB:A0ACD5IN56
+    entry_name: A0ACD5IN56_9PROT
+    protein_name: cytochrome-c oxidase
+    gene_symbol: HF292_015290
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:3063951
+      label: Acidithiobacillus ferruginosus
+    reference_proteome_id: UP001196097
+    ec_numbers:
+    - EC:7.1.1.9
+    interpro_ids:
+    - InterPro:IPR045187
+    - InterPro:IPR002429
+    - InterPro:IPR001505
+    - InterPro:IPR008972
+    - InterPro:IPR036257
+    pfam_ids:
+    - Pfam:PF00116
+    go_terms:
+    - id: GO:0016020
+      label: membrane
+    - id: GO:0005507
+      label: copper ion binding
+    - id: GO:0004129
+      label: cytochrome-c oxidase activity
+    - id: GO:0042773
+      label: ATP synthesis coupled electron transport
+    functional_role: Rus-operon aa3-type cytochrome-c oxidase cupredoxin subunit II CoxB (locus HF292_015290; 254 aa, RefSeq WP_215876321.1; EC 7.1.1.9, PF00116, GO:0004129 cytochrome-c oxidase activity) accepting electrons from periplasmic cytochrome c4 Cyc1 (HF292_015300) and rusticyanin (HF292_015270) to drive O2 reduction during aerobic Fe(II) oxidation in Acidithiobacillus ferruginosus CF3.
+    annotation_note: Grounded to reference-proteome entry UP001196097 for Acidithiobacillus ferruginosus CF3 (strain CF3 / DSM 114761 / MCCC M28354; NCBITaxon:3063951; ncbi_cf3_species / ncbi_cf3_biosample), matching the Bangor Acidophile Culture Collection CF3 strain tested in 0.7 L pure-culture shake flasks (20 mM initial Fe(II) at initial pH 1.7 pre-grown before adding 19.64 g ethanol-treated defective electroformed Cu/Ag tubes at ~2.8% pulp density, pH 1.9 controlled with 1 M H2SO4, ~23 C [abstract 22 C], 220 rpm [Figures 2-3 state 130 rpm], with medium replacement over 78 days) in Pakostova and Herath (2023).
+    evidence:
+    - source_ref: pakostova2023_electroformed
+      supports: partial
+      explanation: Representative Acidithiobacillus ferruginosus CF3 (NCBITaxon:3063951; UP001196097) rus-operon cytochrome-c oxidase cupredoxin subunit II (HF292_015290, RefSeq WP_215876321.1) supporting aerobic oxidation of 20 mM Fe(II) to Fe(III) during pre-growth and culture-associated ferric regeneration during 78-day leaching of defective electroformed Cu/Ag tubes in Pakostova and Herath (2023); individual rus-operon proteins were not directly assayed, and separate mixed-consortium flask and 32 C adapted-reactor arms also included other unauthenticated acidophile species.
   evidence:
   - source_ref: pakostova2023_electroformed
     supports: support
@@ -139,7 +173,7 @@ mechanisms:
 causal_graphs:
 - id: iron_oxidizing_culture_leaching_graph
   name: Acidithiobacillus ferruginosus CF3 rus-operon Fe(II) oxidation and ferric-mediated Cu dissolution from defective electroformed Cu/Ag tubes
-  description: Causal pathway linking representative Acidithiobacillus ferruginosus CF3 (NCBITaxon:3063951; reference proteome UP001196097) rus-operon ferrous-iron oxidation proteins (outer-membrane Cyc2 HF292_015305, periplasmic rusticyanin HF292_015270, and periplasmic diheme Cyc1 HF292_015300) to aerobic oxidation of 20 mM Fe(II) in basal salts medium (initial pH 1.7 during pre-growth, maintained at pH 1.9 with 1 M H2SO4 during leaching) and ferric-mediated Cu solubilization from defective electroformed Cu/Ag tubes (~500 um Cu walls over a 24-30 um inner Ag layer; 19.64 g in 0.7 L for pure CF3 over 78 days reaching 94.7% Cu solubilization in the abstract vs 95.2% in Results 3.1 after medium replacement, compared with 5.3% in 75 days in the uninoculated Fe(II)-retaining flask control, and 99.2% / 99.6% in the separate mixed-consortium flask / 32 C adapted reactor arms) in Pakostova and Herath (2023).
+  description: Causal pathway linking representative Acidithiobacillus ferruginosus CF3 (NCBITaxon:3063951; reference proteome UP001196097) rus-operon ferrous-iron oxidation proteins (outer-membrane Cyc2 HF292_015305, periplasmic rusticyanin HF292_015270, periplasmic diheme Cyc1 HF292_015300, and rus-operon cytochrome-c oxidase subunit II HF292_015290) to aerobic oxidation of 20 mM Fe(II) in basal salts medium (initial pH 1.7 during pre-growth, maintained at pH 1.9 with 1 M H2SO4 during leaching) and ferric-mediated Cu solubilization from defective electroformed Cu/Ag tubes (~500 um Cu walls over a 24-30 um inner Ag layer; 19.64 g in 0.7 L for pure CF3 over 78 days reaching 94.7% Cu solubilization in the abstract vs 95.2% in Results 3.1 after medium replacement, compared with 5.3% in 75 days in the uninoculated Fe(II)-retaining flask control, and 99.2% / 99.6% in the separate mixed-consortium flask / 32 C adapted reactor arms) in Pakostova and Herath (2023).
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: iron_oxidizing_culture_leaching
   nodes:
@@ -166,10 +200,10 @@ causal_graphs:
         supports: partial
         explanation: Representative Acidithiobacillus ferruginosus CF3 (NCBITaxon:3063951; UP001196097) rus-operon electron-transfer protein supporting aerobic oxidation of 20 mM Fe(II) to Fe(III) during pre-growth and culture-associated ferric regeneration during 78-day leaching of defective electroformed Cu/Ag tubes in Pakostova and Herath (2023); individual rus-operon proteins were not directly assayed, and separate mixed-consortium flask and 32 C adapted-reactor arms also included other unauthenticated acidophile species.
   - id: cf3_rus_cyc1_periplasmic_electron_relay
-    label: Periplasmic rusticyanin and diheme cytochrome c4 relay (HF292_015270; HF292_015300)
+    label: Periplasmic rusticyanin, diheme cytochrome c4 Cyc1, and rus-operon cytochrome-c oxidase relay (HF292_015270; HF292_015300; HF292_015290)
     node_type: GENE_OR_PROTEIN
     gene_symbol: HF292_015270
-    description: Periplasmic blue-copper rusticyanin (HF292_015270) and diheme cytochrome c4 Cyc1 (HF292_015300) in Acidithiobacillus ferruginosus CF3 coupling Fe(II) oxidation to O2 reduction during pre-growth and multi-week flask leaching.
+    description: Periplasmic blue-copper rusticyanin (HF292_015270), diheme cytochrome c4 Cyc1 (HF292_015300), and rus-operon cytochrome-c oxidase cupredoxin subunit II (HF292_015290) in Acidithiobacillus ferruginosus CF3 coupling Fe(II) oxidation to O2 reduction during pre-growth and multi-week flask leaching.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A0ACD5IM73
@@ -234,6 +268,40 @@ causal_graphs:
       - source_ref: pakostova2023_electroformed
         supports: partial
         explanation: Representative Acidithiobacillus ferruginosus CF3 (NCBITaxon:3063951; UP001196097) rus-operon electron-transfer protein supporting aerobic oxidation of 20 mM Fe(II) to Fe(III) during pre-growth and culture-associated ferric regeneration during 78-day leaching of defective electroformed Cu/Ag tubes in Pakostova and Herath (2023); individual rus-operon proteins were not directly assayed, and separate mixed-consortium flask and 32 C adapted-reactor arms also included other unauthenticated acidophile species.
+    - uniprot_accession: UniProtKB:A0ACD5IN56
+      entry_name: A0ACD5IN56_9PROT
+      protein_name: cytochrome-c oxidase
+      gene_symbol: HF292_015290
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:3063951
+        label: Acidithiobacillus ferruginosus
+      reference_proteome_id: UP001196097
+      ec_numbers:
+      - EC:7.1.1.9
+      interpro_ids:
+      - InterPro:IPR045187
+      - InterPro:IPR002429
+      - InterPro:IPR001505
+      - InterPro:IPR008972
+      - InterPro:IPR036257
+      pfam_ids:
+      - Pfam:PF00116
+      go_terms:
+      - id: GO:0016020
+        label: membrane
+      - id: GO:0005507
+        label: copper ion binding
+      - id: GO:0004129
+        label: cytochrome-c oxidase activity
+      - id: GO:0042773
+        label: ATP synthesis coupled electron transport
+      functional_role: Rus-operon aa3-type cytochrome-c oxidase cupredoxin subunit II CoxB (locus HF292_015290; 254 aa, RefSeq WP_215876321.1; EC 7.1.1.9, PF00116, GO:0004129 cytochrome-c oxidase activity) accepting electrons from periplasmic cytochrome c4 Cyc1 (HF292_015300) and rusticyanin (HF292_015270) to drive O2 reduction during aerobic Fe(II) oxidation in Acidithiobacillus ferruginosus CF3.
+      annotation_note: Grounded to reference-proteome entry UP001196097 for Acidithiobacillus ferruginosus CF3 (strain CF3 / DSM 114761 / MCCC M28354; NCBITaxon:3063951; ncbi_cf3_species / ncbi_cf3_biosample), matching the Bangor Acidophile Culture Collection CF3 strain tested in 0.7 L pure-culture shake flasks (20 mM initial Fe(II) at initial pH 1.7 pre-grown before adding 19.64 g ethanol-treated defective electroformed Cu/Ag tubes at ~2.8% pulp density, pH 1.9 controlled with 1 M H2SO4, ~23 C [abstract 22 C], 220 rpm [Figures 2-3 state 130 rpm], with medium replacement over 78 days) in Pakostova and Herath (2023).
+      evidence:
+      - source_ref: pakostova2023_electroformed
+        supports: partial
+        explanation: Representative Acidithiobacillus ferruginosus CF3 (NCBITaxon:3063951; UP001196097) rus-operon cytochrome-c oxidase cupredoxin subunit II (HF292_015290, RefSeq WP_215876321.1) supporting aerobic oxidation of 20 mM Fe(II) to Fe(III) during pre-growth and culture-associated ferric regeneration during 78-day leaching of defective electroformed Cu/Ag tubes in Pakostova and Herath (2023); individual rus-operon proteins were not directly assayed, and separate mixed-consortium flask and 32 C adapted-reactor arms also included other unauthenticated acidophile species.
   - id: regenerated_ferric_sulfate_leach_liquor
     label: Biogenic Fe(III)-regenerating acidic leach liquor (20 mM total Fe, pH 1.9 controlled with 1 M H2SO4, medium replacement)
     node_type: CHEMICAL_ENTITY
@@ -249,7 +317,7 @@ causal_graphs:
     target: cf3_rus_cyc1_periplasmic_electron_relay
     predicate: provides_electrons_to
     relationship: extracellular Fe(II) oxidation coupled to periplasmic rusticyanin/Cyc1 electron relay
-    description: Cyc2 (HF292_015305) oxidizes extracellular Fe(II) and transfers electrons through periplasmic rusticyanin (HF292_015270) and Cyc1 (HF292_015300) in Acidithiobacillus ferruginosus CF3.
+    description: Cyc2 (HF292_015305) oxidizes extracellular Fe(II) and transfers electrons through periplasmic rusticyanin (HF292_015270) and Cyc1 (HF292_015300) to the rus-operon cytochrome-c oxidase (HF292_015290) in Acidithiobacillus ferruginosus CF3.
     evidence:
     - source_ref: pakostova2023_electroformed
       supports: partial
@@ -295,8 +363,13 @@ curation_history:
   curator: marcin
   action: edit
   summary: Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Acidithiobacillus ferruginosus CF3 (NCBITaxon:3063951; UP001196097) rus-operon protein groundings (Cyc2 HF292_015305 UniProtKB:A0ACD5IM13, rusticyanin HF292_015270 UniProtKB:A0ACD5IM73, and Cyc1 HF292_015300 UniProtKB:A0ACD5IMH3) for ferric regeneration and Cu dissolution from defective electroformed Cu/Ag manufacturing scrap in Pakostova and Herath (2023).
+- timestamp: '2026-11-05T19:13:56Z'
+  curator: marcin
+  action: edit
+  summary: Add live-verified Acidithiobacillus ferruginosus CF3 rus-operon cytochrome-c oxidase subunit II (UniProtKB:A0ACD5IN56, HF292_015290, UP001196097) to electroformed-copper-silver-manufacturing-scrap causal graph and mechanism protein_examples.
 history_refs:
 - history/records/electroformed-copper-silver-manufacturing-scrap/2026-10-11T161330Z-codex-865469.yaml
 - history/records/electroformed-copper-silver-manufacturing-scrap/2026-10-11T162139Z-codex-98721d.yaml
 - history/records/electroformed-copper-silver-manufacturing-scrap/2026-10-30T103605Z-claude-255445.yaml
 - history/records/electroformed-copper-silver-manufacturing-scrap/2026-11-05T172709Z-marcin-a3a769.yaml
+- history/records/electroformed-copper-silver-manufacturing-scrap/2026-11-05T191356Z-marcin-eb6e20.yaml
