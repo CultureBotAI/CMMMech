@@ -11,11 +11,11 @@
 
 ## Summary
 
-Barićite (cmmmech:baricite) passes Cycle 9 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 c13af761df9b78e689225baf7e670b9796ce7a78692ce8b891f9d030323d07a2: Curated data/records/baricite.yaml with causal_graph 'g20_baricite_assignment_graph' (mechanism_ref: g20_baricite_assignment, 4 nodes / 3 edges; g20_sat_aprba_sulfate_activation: [UniProtKB:Q30Z34 (Dde_2265, Q30Z34_OLEA2, UP000002710), UniProtKB:Q313I5 (Dde_1110, Q313I5_OLEA2, UP000002710), UniProtKB:Q313I6 (Dde_1109, Q313I6_OLEA2, UP000002710)]; g20_dsrab_sulfite_reductase: [UniProtKB:Q315R9 (Dde_0526, Q315R9_OLEA2, UP000002710), UniProtKB:Q315R8 (Dde_0527, Q315R8_OLEA2, UP000002710)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from han_2016: Han et al. (2016). Bio-precipitation of Crystalline Magnesium Phosphate and Carbonate in Synthetic Marine Pore-water by Sulfate-reducing Bacteria. Scientific Reports 6:25734. (https://doi.org/10.1038/srep25734). Live-verified UniProtKB reference-proteome grounding across UniProtKB:Q30Z34 (Q30Z34_OLEA2, sulfate adenylyltransferase, gene_symbol: Dde_2265, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q313I5 (Q313I5_OLEA2, Adenylylsulfate reductase, alpha subunit, gene_symbol: Dde_1110, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q313I6 (Q313I6_OLEA2, Adenylylsulfate reductase, beta subunit, gene_symbol: Dde_1109, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q315R9 (Q315R9_OLEA2, Sulfite reductase, dissimilatory-type alpha subunit, gene_symbol: Dde_0526, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q315R8 (Q315R8_OLEA2, Sulfite reductase, dissimilatory-type beta subunit, gene_symbol: Dde_0527, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710).
+Barićite (cmmmech:baricite) passes Cycle 9 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 c13af761df9b78e689225baf7e670b9796ce7a78692ce8b891f9d030323d07a2: Curated data/records/baricite.yaml with causal_graph 'g20_baricite_assignment_graph' (mechanism_ref: g20_baricite_assignment, 4 nodes / 3 edges; g20_sat_aprba_sulfate_activation: [UniProtKB:Q30Z34 (Dde_2265, Q30Z34_OLEA2, UP000002710), UniProtKB:Q313I5 (Dde_1110, Q313I5_OLEA2, UP000002710), UniProtKB:Q313I6 (Dde_1109, Q313I6_OLEA2, UP000002710)]; g20_dsrab_sulfite_reductase: [UniProtKB:Q315R9 (Dde_0526, Q315R9_OLEA2, UP000002710), UniProtKB:Q315R8 (Dde_0527, Q315R8_OLEA2, UP000002710)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from han_2016: Han et al. (2016). Mineral formation during bacterial sulfate reduction in the presence of different electron donors and carbon sources. Chemical Geology 435:49-59. DOI 10.1016/j.chemgeo.2016.04.022. Complete ScholarWorks author manuscript, Sections 2-4, Tables 1-3, Figures 1-3; six publisher supplements (SI Tables 1-3 and Figures 1-3). (https://doi.org/10.1016/j.chemgeo.2016.04.022). Live-verified UniProtKB reference-proteome grounding across UniProtKB:Q30Z34 (Q30Z34_OLEA2, sulfate adenylyltransferase, gene_symbol: Dde_2265, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q313I5 (Q313I5_OLEA2, Adenylylsulfate reductase, alpha subunit, gene_symbol: Dde_1110, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q313I6 (Q313I6_OLEA2, Adenylylsulfate reductase, beta subunit, gene_symbol: Dde_1109, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q315R9 (Q315R9_OLEA2, Sulfite reductase, dissimilatory-type alpha subunit, gene_symbol: Dde_0526, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q315R8 (Q315R8_OLEA2, Sulfite reductase, dissimilatory-type beta subunit, gene_symbol: Dde_0527, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710).
 
 ## Scope And Provenance
 
-Cycle 9 Stage 2 causal-graphs review of data/records/baricite.yaml (SHA-256 c13af761df9b78e689225baf7e670b9796ce7a78692ce8b891f9d030323d07a2) and its canonical EDIT history sidecar (history/records/baricite/2026-11-05T171248Z-marcin-0b1453.yaml) verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source evidence fidelity across causal_graph 'g20_baricite_assignment_graph' (mechanism_ref: g20_baricite_assignment, 4 nodes / 3 edges; g20_sat_aprba_sulfate_activation: [UniProtKB:Q30Z34 (Dde_2265, Q30Z34_OLEA2, UP000002710), UniProtKB:Q313I5 (Dde_1110, Q313I5_OLEA2, UP000002710), UniProtKB:Q313I6 (Dde_1109, Q313I6_OLEA2, UP000002710)]; g20_dsrab_sulfite_reductase: [UniProtKB:Q315R9 (Dde_0526, Q315R9_OLEA2, UP000002710), UniProtKB:Q315R8 (Dde_0527, Q315R8_OLEA2, UP000002710)]).
+Cycle 9 Stage 2 causal-graphs review of data/records/baricite.yaml (SHA-256 c13af761df9b78e689225baf7e670b9796ce7a78692ce8b891f9d030323d07a2) and its canonical EDIT history sidecar(s) (history/records/baricite/2026-11-05T171248Z-marcin-0b1453.yaml) verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source evidence fidelity across causal_graph 'g20_baricite_assignment_graph' (mechanism_ref: g20_baricite_assignment, 4 nodes / 3 edges; g20_sat_aprba_sulfate_activation: [UniProtKB:Q30Z34 (Dde_2265, Q30Z34_OLEA2, UP000002710), UniProtKB:Q313I5 (Dde_1110, Q313I5_OLEA2, UP000002710), UniProtKB:Q313I6 (Dde_1109, Q313I6_OLEA2, UP000002710)]; g20_dsrab_sulfite_reductase: [UniProtKB:Q315R9 (Dde_0526, Q315R9_OLEA2, UP000002710), UniProtKB:Q315R8 (Dde_0527, Q315R8_OLEA2, UP000002710)]).
 
 Selection: Cycle 9 Stage 2 causal_graphs curation for cmmmech:baricite
 Coverage: full; 1 reviewed / 1 in the declared population.
@@ -39,13 +39,13 @@ Working-tree hashes do not imply those bytes were committed.
 
 graph: supported. Targets: cmmmech:baricite.
 
-Curated data/records/baricite.yaml (SHA-256 c13af761df9b78e689225baf7e670b9796ce7a78692ce8b891f9d030323d07a2) with causal_graph 'g20_baricite_assignment_graph' (mechanism_ref: g20_baricite_assignment, 4 nodes / 3 edges; g20_sat_aprba_sulfate_activation: [UniProtKB:Q30Z34 (Dde_2265, Q30Z34_OLEA2, UP000002710), UniProtKB:Q313I5 (Dde_1110, Q313I5_OLEA2, UP000002710), UniProtKB:Q313I6 (Dde_1109, Q313I6_OLEA2, UP000002710)]; g20_dsrab_sulfite_reductase: [UniProtKB:Q315R9 (Dde_0526, Q315R9_OLEA2, UP000002710), UniProtKB:Q315R8 (Dde_0527, Q315R8_OLEA2, UP000002710)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from han_2016: Han et al. (2016). Bio-precipitation of Crystalline Magnesium Phosphate and Carbonate in Synthetic Marine Pore-water by Sulfate-reducing Bacteria. Scientific Reports 6:25734. (https://doi.org/10.1038/srep25734). Live-verified UniProtKB grounding across UniProtKB:Q30Z34 (Q30Z34_OLEA2, sulfate adenylyltransferase, gene_symbol: Dde_2265, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q313I5 (Q313I5_OLEA2, Adenylylsulfate reductase, alpha subunit, gene_symbol: Dde_1110, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q313I6 (Q313I6_OLEA2, Adenylylsulfate reductase, beta subunit, gene_symbol: Dde_1109, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q315R9 (Q315R9_OLEA2, Sulfite reductase, dissimilatory-type alpha subunit, gene_symbol: Dde_0526, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q315R8 (Q315R8_OLEA2, Sulfite reductase, dissimilatory-type beta subunit, gene_symbol: Dde_0527, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710).
+Curated data/records/baricite.yaml (SHA-256 c13af761df9b78e689225baf7e670b9796ce7a78692ce8b891f9d030323d07a2) with causal_graph 'g20_baricite_assignment_graph' (mechanism_ref: g20_baricite_assignment, 4 nodes / 3 edges; g20_sat_aprba_sulfate_activation: [UniProtKB:Q30Z34 (Dde_2265, Q30Z34_OLEA2, UP000002710), UniProtKB:Q313I5 (Dde_1110, Q313I5_OLEA2, UP000002710), UniProtKB:Q313I6 (Dde_1109, Q313I6_OLEA2, UP000002710)]; g20_dsrab_sulfite_reductase: [UniProtKB:Q315R9 (Dde_0526, Q315R9_OLEA2, UP000002710), UniProtKB:Q315R8 (Dde_0527, Q315R8_OLEA2, UP000002710)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from han_2016: Han et al. (2016). Mineral formation during bacterial sulfate reduction in the presence of different electron donors and carbon sources. Chemical Geology 435:49-59. DOI 10.1016/j.chemgeo.2016.04.022. Complete ScholarWorks author manuscript, Sections 2-4, Tables 1-3, Figures 1-3; six publisher supplements (SI Tables 1-3 and Figures 1-3). (https://doi.org/10.1016/j.chemgeo.2016.04.022). Live-verified UniProtKB reference-proteome grounding across UniProtKB:Q30Z34 (Q30Z34_OLEA2, sulfate adenylyltransferase, gene_symbol: Dde_2265, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q313I5 (Q313I5_OLEA2, Adenylylsulfate reductase, alpha subunit, gene_symbol: Dde_1110, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q313I6 (Q313I6_OLEA2, Adenylylsulfate reductase, beta subunit, gene_symbol: Dde_1109, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q315R9 (Q315R9_OLEA2, Sulfite reductase, dissimilatory-type alpha subunit, gene_symbol: Dde_0526, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q315R8 (Q315R8_OLEA2, Sulfite reductase, dissimilatory-type beta subunit, gene_symbol: Dde_0527, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710).
 
-### Verification of canonical EDIT history sidecar and strict schema validation
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
 
 provenance: supported. Targets: cmmmech:baricite.
 
-data/records/baricite.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/baricite/2026-11-05T171248Z-marcin-0b1453.yaml (SHA-256 bddd35ff0ca234387f7510e9f3fc1efb57493c04765a8024c19afbdaf4c798ff) and passing all LinkML and history validation gates.
+data/records/baricite.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/baricite/2026-11-05T171248Z-marcin-0b1453.yaml (SHA-256 bddd35ff0ca234387f7510e9f3fc1efb57493c04765a8024c19afbdaf4c798ff): Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Oleidesulfovibrio alaskensis G20 (NCBITaxon:207559; UP000002710) dissimilatory sulfate-reduction protein groundings (Sat Dde_2265 UniProtKB:Q30Z34, AprBA Dde_1110/Dde_1109 UniProtKB:Q313I5/UniProtKB:Q313I6, and DsrAB Dde_0526/Dde_0527 UniProtKB:Q315R9/UniProtKB:Q315R8) for H2-fed barićite-assigned phosphate precipitation in Han et al. (2016).) and passing all LinkML and history validation gates.
 
 ## Findings
 
@@ -61,14 +61,14 @@ No findings recorded within this review's declared scope.
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
 | owner | data/records/baricite.yaml; Working-tree record data/records/baricite.yaml (causal_graphs and mechanisms[].protein_examples) | supports | Curated data/records/baricite.yaml (SHA-256 c13af761df9b78e689225baf7e670b9796ce7a78692ce8b891f9d030323d07a2) with causal_graph 'g20_baricite_assignment_graph' (mechanism_ref: g20_baricite_assignment, 4 nodes / 3 edges; g20_sat_aprba_sulfate_activation: [UniProtKB:Q30Z34 (Dde_2265, Q30Z34_OLEA2, UP000002710), UniProtKB:Q313I5 (Dde_1110, Q313I5_OLEA2, UP000002710), UniProtKB:Q313I6 (Dde_1109, Q313I6_OLEA2, UP000002710)]; g20_dsrab_sulfite_reductase: [UniProtKB:Q315R9 (Dde_0526, Q315R9_OLEA2, UP000002710), UniProtKB:Q315R8 (Dde_0527, Q315R8_OLEA2, UP000002710)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats. |
-| primary_source | DOI:10.1038/srep25734; han_2016: Han et al. (2016). Bio-precipitation of Crystalline Magnesium Phosphate and Carbonate in Synthetic Marine Pore-water by Sulfate-reducing Bacteria. Scientific Reports 6:25734. (https://doi.org/10.1038/srep25734) | supports | Live-verified UniProtKB reference-proteome grounding across UniProtKB:Q30Z34 (Q30Z34_OLEA2, sulfate adenylyltransferase, gene_symbol: Dde_2265, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q313I5 (Q313I5_OLEA2, Adenylylsulfate reductase, alpha subunit, gene_symbol: Dde_1110, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q313I6 (Q313I6_OLEA2, Adenylylsulfate reductase, beta subunit, gene_symbol: Dde_1109, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q315R9 (Q315R9_OLEA2, Sulfite reductase, dissimilatory-type alpha subunit, gene_symbol: Dde_0526, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q315R8 (Q315R8_OLEA2, Sulfite reductase, dissimilatory-type beta subunit, gene_symbol: Dde_0527, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710). Primary mechanism source(s) (han_2016: Han et al. (2016). Bio-precipitation of Crystalline Magnesium Phosphate and Carbonate in Synthetic Marine Pore-water by Sulfate-reducing Bacteria. Scientific Reports 6:25734. (https://doi.org/10.1038/srep25734)) report culture-level mineralization or bioleaching without single-gene knockouts; supports: partial is strictly preserved on all enzyme-level edges and ProteinExample evidence items. |
+| primary_source | DOI:10.1016/j.chemgeo.2016.04.022; han_2016: Han et al. (2016). Mineral formation during bacterial sulfate reduction in the presence of different electron donors and carbon sources. Chemical Geology 435:49-59. DOI 10.1016/j.chemgeo.2016.04.022. Complete ScholarWorks author manuscript, Sections 2-4, Tables 1-3, Figures 1-3; six publisher supplements (SI Tables 1-3 and Figures 1-3). (https://doi.org/10.1016/j.chemgeo.2016.04.022) | supports | Live-verified UniProtKB reference-proteome grounding across UniProtKB:Q30Z34 (Q30Z34_OLEA2, sulfate adenylyltransferase, gene_symbol: Dde_2265, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q313I5 (Q313I5_OLEA2, Adenylylsulfate reductase, alpha subunit, gene_symbol: Dde_1110, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q313I6 (Q313I6_OLEA2, Adenylylsulfate reductase, beta subunit, gene_symbol: Dde_1109, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q315R9 (Q315R9_OLEA2, Sulfite reductase, dissimilatory-type alpha subunit, gene_symbol: Dde_0526, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q315R8 (Q315R8_OLEA2, Sulfite reductase, dissimilatory-type beta subunit, gene_symbol: Dde_0527, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710). Primary mechanism source(s) (han_2016: Han et al. (2016). Mineral formation during bacterial sulfate reduction in the presence of different electron donors and carbon sources. Chemical Geology 435:49-59. DOI 10.1016/j.chemgeo.2016.04.022. Complete ScholarWorks author manuscript, Sections 2-4, Tables 1-3, Figures 1-3; six publisher supplements (SI Tables 1-3 and Figures 1-3). (https://doi.org/10.1016/j.chemgeo.2016.04.022)) report culture-level mineralization or bioleaching without single-gene knockouts; supports: partial is strictly preserved on all enzyme-level edges and ProteinExample evidence items. |
 | edit_history | history/records/baricite/2026-11-05T171248Z-marcin-0b1453.yaml; Canonical EDIT history sidecar history/records/baricite/2026-11-05T171248Z-marcin-0b1453.yaml | supports | Canonical EDIT history sidecar history/records/baricite/2026-11-05T171248Z-marcin-0b1453.yaml (SHA-256 bddd35ff0ca234387f7510e9f3fc1efb57493c04765a8024c19afbdaf4c798ff): Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Oleidesulfovibrio alaskensis G20 (NCBITaxon:207559; UP000002710) dissimilatory sulfate-reduction protein groundings (Sat Dde_2265 UniProtKB:Q30Z34, AprBA Dde_1110/Dde_1109 UniProtKB:Q313I5/UniProtKB:Q313I6, and DsrAB Dde_0526/Dde_0527 UniProtKB:Q315R9/UniProtKB:Q315R8) for H2-fed barićite-assigned phosphate precipitation in Han et al. (2016). |
 | validation | data/records/baricite.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/baricite.yaml and history/records/baricite/2026-11-05T171248Z-marcin-0b1453.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
 
 ## Limits And Additional Notes
 
 - Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
-- Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py for cmmmech:baricite.
+- Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py for cmmmech:baricite (including Issue #937 review-remediation updates).
 
 ## Complete Structured Record
 
@@ -90,10 +90,12 @@ reviewer:
   independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
     verifying the Cycle 9 Stage 2 causal_graphs and ProteinExample curation in data/records/baricite.yaml
     (SHA-256 c13af761df9b78e689225baf7e670b9796ce7a78692ce8b891f9d030323d07a2) against
-    live UniProtKB reference proteomes and cited primary source(s) (han_2016: Han
-    et al. (2016). Bio-precipitation of Crystalline Magnesium Phosphate and Carbonate
-    in Synthetic Marine Pore-water by Sulfate-reducing Bacteria. Scientific Reports
-    6:25734. (https://doi.org/10.1038/srep25734)).'
+    live UniProtKB reference-proteome grounding and cited primary source(s) (han_2016:
+    Han et al. (2016). Mineral formation during bacterial sulfate reduction in the
+    presence of different electron donors and carbon sources. Chemical Geology 435:49-59.
+    DOI 10.1016/j.chemgeo.2016.04.022. Complete ScholarWorks author manuscript, Sections
+    2-4, Tables 1-3, Figures 1-3; six publisher supplements (SI Tables 1-3 and Figures
+    1-3). (https://doi.org/10.1016/j.chemgeo.2016.04.022)).'
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
@@ -126,7 +128,7 @@ targets:
 scope:
   description: 'Cycle 9 Stage 2 causal-graphs review of data/records/baricite.yaml
     (SHA-256 c13af761df9b78e689225baf7e670b9796ce7a78692ce8b891f9d030323d07a2) and
-    its canonical EDIT history sidecar (history/records/baricite/2026-11-05T171248Z-marcin-0b1453.yaml)
+    its canonical EDIT history sidecar(s) (history/records/baricite/2026-11-05T171248Z-marcin-0b1453.yaml)
     verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding,
     and primary-source evidence fidelity across causal_graph ''g20_baricite_assignment_graph''
     (mechanism_ref: g20_baricite_assignment, 4 nodes / 3 edges; g20_sat_aprba_sulfate_activation:
@@ -158,10 +160,12 @@ evidence:
   snapshot_sha256: c13af761df9b78e689225baf7e670b9796ce7a78692ce8b891f9d030323d07a2
 - evidence_id: primary_source
   kind: primary_source
-  reference: DOI:10.1038/srep25734
-  locator: 'han_2016: Han et al. (2016). Bio-precipitation of Crystalline Magnesium
-    Phosphate and Carbonate in Synthetic Marine Pore-water by Sulfate-reducing Bacteria.
-    Scientific Reports 6:25734. (https://doi.org/10.1038/srep25734)'
+  reference: DOI:10.1016/j.chemgeo.2016.04.022
+  locator: 'han_2016: Han et al. (2016). Mineral formation during bacterial sulfate
+    reduction in the presence of different electron donors and carbon sources. Chemical
+    Geology 435:49-59. DOI 10.1016/j.chemgeo.2016.04.022. Complete ScholarWorks author
+    manuscript, Sections 2-4, Tables 1-3, Figures 1-3; six publisher supplements (SI
+    Tables 1-3 and Figures 1-3). (https://doi.org/10.1016/j.chemgeo.2016.04.022)'
   accessed_at: '2026-11-05T17:27:45Z'
   support: supports
   summary: 'Live-verified UniProtKB reference-proteome grounding across UniProtKB:Q30Z34
@@ -175,9 +179,11 @@ evidence:
     NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q315R8
     (Q315R8_OLEA2, Sulfite reductase, dissimilatory-type beta subunit, gene_symbol:
     Dde_0527, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710).
-    Primary mechanism source(s) (han_2016: Han et al. (2016). Bio-precipitation of
-    Crystalline Magnesium Phosphate and Carbonate in Synthetic Marine Pore-water by
-    Sulfate-reducing Bacteria. Scientific Reports 6:25734. (https://doi.org/10.1038/srep25734))
+    Primary mechanism source(s) (han_2016: Han et al. (2016). Mineral formation during
+    bacterial sulfate reduction in the presence of different electron donors and carbon
+    sources. Chemical Geology 435:49-59. DOI 10.1016/j.chemgeo.2016.04.022. Complete
+    ScholarWorks author manuscript, Sections 2-4, Tables 1-3, Figures 1-3; six publisher
+    supplements (SI Tables 1-3 and Figures 1-3). (https://doi.org/10.1016/j.chemgeo.2016.04.022))
     report culture-level mineralization or bioleaching without single-gene knockouts;
     supports: partial is strictly preserved on all enzyme-level edges and ProteinExample
     evidence items.'
@@ -250,15 +256,17 @@ assessments:
     [UniProtKB:Q315R9 (Dde_0526, Q315R9_OLEA2, UP000002710), UniProtKB:Q315R8 (Dde_0527,
     Q315R8_OLEA2, UP000002710)]), achieving 100% parity between mechanisms[].protein_examples
     and causal_graphs[].nodes[].protein_examples and preserving source-faithful support
-    levels and caveats from han_2016: Han et al. (2016). Bio-precipitation of Crystalline
-    Magnesium Phosphate and Carbonate in Synthetic Marine Pore-water by Sulfate-reducing
-    Bacteria. Scientific Reports 6:25734. (https://doi.org/10.1038/srep25734). Live-verified
-    UniProtKB grounding across UniProtKB:Q30Z34 (Q30Z34_OLEA2, sulfate adenylyltransferase,
-    gene_symbol: Dde_2265, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20,
-    UP000002710); UniProtKB:Q313I5 (Q313I5_OLEA2, Adenylylsulfate reductase, alpha
-    subunit, gene_symbol: Dde_1110, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis
-    G20, UP000002710); UniProtKB:Q313I6 (Q313I6_OLEA2, Adenylylsulfate reductase,
-    beta subunit, gene_symbol: Dde_1109, TREMBL, NCBITaxon:207559 Oleidesulfovibrio
+    levels and caveats from han_2016: Han et al. (2016). Mineral formation during
+    bacterial sulfate reduction in the presence of different electron donors and carbon
+    sources. Chemical Geology 435:49-59. DOI 10.1016/j.chemgeo.2016.04.022. Complete
+    ScholarWorks author manuscript, Sections 2-4, Tables 1-3, Figures 1-3; six publisher
+    supplements (SI Tables 1-3 and Figures 1-3). (https://doi.org/10.1016/j.chemgeo.2016.04.022).
+    Live-verified UniProtKB reference-proteome grounding across UniProtKB:Q30Z34 (Q30Z34_OLEA2,
+    sulfate adenylyltransferase, gene_symbol: Dde_2265, TREMBL, NCBITaxon:207559 Oleidesulfovibrio
+    alaskensis G20, UP000002710); UniProtKB:Q313I5 (Q313I5_OLEA2, Adenylylsulfate
+    reductase, alpha subunit, gene_symbol: Dde_1110, TREMBL, NCBITaxon:207559 Oleidesulfovibrio
+    alaskensis G20, UP000002710); UniProtKB:Q313I6 (Q313I6_OLEA2, Adenylylsulfate
+    reductase, beta subunit, gene_symbol: Dde_1109, TREMBL, NCBITaxon:207559 Oleidesulfovibrio
     alaskensis G20, UP000002710); UniProtKB:Q315R9 (Q315R9_OLEA2, Sulfite reductase,
     dissimilatory-type alpha subunit, gene_symbol: Dde_0526, TREMBL, NCBITaxon:207559
     Oleidesulfovibrio alaskensis G20, UP000002710); UniProtKB:Q315R8 (Q315R8_OLEA2,
@@ -271,12 +279,17 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
-  summary: data/records/baricite.yaml was updated exclusively through scripts/curate_causal_graphs.py
-    (curate_record_file), producing append-only history sidecar history/records/baricite/2026-11-05T171248Z-marcin-0b1453.yaml
-    (SHA-256 bddd35ff0ca234387f7510e9f3fc1efb57493c04765a8024c19afbdaf4c798ff) and
-    passing all LinkML and history validation gates.
+  summary: 'data/records/baricite.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar(s) (history/records/baricite/2026-11-05T171248Z-marcin-0b1453.yaml
+    (SHA-256 bddd35ff0ca234387f7510e9f3fc1efb57493c04765a8024c19afbdaf4c798ff): Add
+    REPRESENTATIVE_EXAMPLE causal graph and live-verified Oleidesulfovibrio alaskensis
+    G20 (NCBITaxon:207559; UP000002710) dissimilatory sulfate-reduction protein groundings
+    (Sat Dde_2265 UniProtKB:Q30Z34, AprBA Dde_1110/Dde_1109 UniProtKB:Q313I5/UniProtKB:Q313I6,
+    and DsrAB Dde_0526/Dde_0527 UniProtKB:Q315R9/UniProtKB:Q315R8) for H2-fed barićite-assigned
+    phosphate precipitation in Han et al. (2016).) and passing all LinkML and history
+    validation gates.'
   target_ids:
   - cmmmech:baricite
   evidence_ids:
@@ -295,9 +308,11 @@ summary: 'Barićite (cmmmech:baricite) passes Cycle 9 Stage 2 causal-graphs revi
   UniProtKB:Q315R8 (Dde_0527, Q315R8_OLEA2, UP000002710)]), achieving 100% parity
   between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
   and preserving source-faithful support levels and experimental caveats from han_2016:
-  Han et al. (2016). Bio-precipitation of Crystalline Magnesium Phosphate and Carbonate
-  in Synthetic Marine Pore-water by Sulfate-reducing Bacteria. Scientific Reports
-  6:25734. (https://doi.org/10.1038/srep25734). Live-verified UniProtKB reference-proteome
+  Han et al. (2016). Mineral formation during bacterial sulfate reduction in the presence
+  of different electron donors and carbon sources. Chemical Geology 435:49-59. DOI
+  10.1016/j.chemgeo.2016.04.022. Complete ScholarWorks author manuscript, Sections
+  2-4, Tables 1-3, Figures 1-3; six publisher supplements (SI Tables 1-3 and Figures
+  1-3). (https://doi.org/10.1016/j.chemgeo.2016.04.022). Live-verified UniProtKB reference-proteome
   grounding across UniProtKB:Q30Z34 (Q30Z34_OLEA2, sulfate adenylyltransferase, gene_symbol:
   Dde_2265, TREMBL, NCBITaxon:207559 Oleidesulfovibrio alaskensis G20, UP000002710);
   UniProtKB:Q313I5 (Q313I5_OLEA2, Adenylylsulfate reductase, alpha subunit, gene_symbol:
@@ -313,7 +328,7 @@ limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes; an independent subagent PR review is executed prior to merge.'
 notes:
-- Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
-  for cmmmech:baricite.
+- 'Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
+  for cmmmech:baricite (including Issue #937 review-remediation updates).'
 related_reviews: []
 ```

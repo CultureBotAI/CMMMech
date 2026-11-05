@@ -11,11 +11,11 @@
 
 ## Summary
 
-Mackinawite (cmmmech:mackinawite) passes Cycle 9 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 38433b1cf8e3fa550d2adc18dfac8acd4814baf65160d236db34229bcaf7af10: Curated data/records/mackinawite.yaml with causal_graph 'am13_sulfide_precipitation_and_biomass_associated_growth_graph' (mechanism_ref: am13_sulfide_precipitation_and_biomass_associated_growth, 4 nodes / 3 edges; am13_sat_aprba_sulfate_activation: [UniProtKB:L0R7X0 (sat, L0R7X0_9BACT, UP000010808), UniProtKB:L0R9F9 (aprA, L0R9F9_9BACT, UP000010808), UniProtKB:L0RB73 (DESAM_20544, L0RB73_9BACT, UP000010808)]; am13_dsvab_sulfite_reductase: [UniProtKB:L0R6S6 (dsvA, L0R6S6_9BACT, UP000010808), UniProtKB:L0R867 (dsvB, L0R867_9BACT, UP000010808)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from picard2018: Picard et al. (2018). Sulfate-reducing bacteria influence the nucleation and growth of mackinawite and greigite. Geochimica et Cosmochimica Acta 220:367-384. (https://doi.org/10.1016/j.gca.2017.10.006). Live-verified UniProtKB reference-proteome grounding across UniProtKB:L0R7X0 (L0R7X0_9BACT, sulfate adenylyltransferase, gene_symbol: sat, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R9F9 (L0R9F9_9BACT, Adenylylsulfate reductase, alpha subunit, gene_symbol: aprA, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0RB73 (L0RB73_9BACT, Adenylylsulfate reductase, beta subunit, gene_symbol: DESAM_20544, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R6S6 (L0R6S6_9BACT, Sulfite reductase, dissimilatory-type subunit alpha, gene_symbol: dsvA, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R867 (L0R867_9BACT, Sulfite reductase, dissimilatory-type subunit beta, gene_symbol: dsvB, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808).
+Mackinawite (cmmmech:mackinawite) passes Cycle 9 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 38433b1cf8e3fa550d2adc18dfac8acd4814baf65160d236db34229bcaf7af10: Curated data/records/mackinawite.yaml with causal_graph 'am13_sulfide_precipitation_and_biomass_associated_growth_graph' (mechanism_ref: am13_sulfide_precipitation_and_biomass_associated_growth, 4 nodes / 3 edges; am13_sat_aprba_sulfate_activation: [UniProtKB:L0R7X0 (sat, L0R7X0_9BACT, UP000010808), UniProtKB:L0R9F9 (aprA, L0R9F9_9BACT, UP000010808), UniProtKB:L0RB73 (DESAM_20544, L0RB73_9BACT, UP000010808)]; am13_dsvab_sulfite_reductase: [UniProtKB:L0R6S6 (dsvA, L0R6S6_9BACT, UP000010808), UniProtKB:L0R867 (dsvB, L0R867_9BACT, UP000010808)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from picard2018: Picard, Gartman, Clarke and Girguis (2018). Sulfate-reducing bacteria influence the nucleation and growth of mackinawite and greigite. Geochimica et Cosmochimica Acta 220:367-384. Sections 2-4, Tables 1-3, Figures 1-7 and original supplementary Figures S1-S3. (https://doi.org/10.1016/j.gca.2017.10.006). Live-verified UniProtKB reference-proteome grounding across UniProtKB:L0R7X0 (L0R7X0_9BACT, sulfate adenylyltransferase, gene_symbol: sat, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R9F9 (L0R9F9_9BACT, Adenylylsulfate reductase, alpha subunit, gene_symbol: aprA, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0RB73 (L0RB73_9BACT, Adenylylsulfate reductase, beta subunit, gene_symbol: DESAM_20544, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R6S6 (L0R6S6_9BACT, Sulfite reductase, dissimilatory-type subunit alpha, gene_symbol: dsvA, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R867 (L0R867_9BACT, Sulfite reductase, dissimilatory-type subunit beta, gene_symbol: dsvB, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808).
 
 ## Scope And Provenance
 
-Cycle 9 Stage 2 causal-graphs review of data/records/mackinawite.yaml (SHA-256 38433b1cf8e3fa550d2adc18dfac8acd4814baf65160d236db34229bcaf7af10) and its canonical EDIT history sidecar (history/records/mackinawite/2026-11-05T171248Z-marcin-e47522.yaml) verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source evidence fidelity across causal_graph 'am13_sulfide_precipitation_and_biomass_associated_growth_graph' (mechanism_ref: am13_sulfide_precipitation_and_biomass_associated_growth, 4 nodes / 3 edges; am13_sat_aprba_sulfate_activation: [UniProtKB:L0R7X0 (sat, L0R7X0_9BACT, UP000010808), UniProtKB:L0R9F9 (aprA, L0R9F9_9BACT, UP000010808), UniProtKB:L0RB73 (DESAM_20544, L0RB73_9BACT, UP000010808)]; am13_dsvab_sulfite_reductase: [UniProtKB:L0R6S6 (dsvA, L0R6S6_9BACT, UP000010808), UniProtKB:L0R867 (dsvB, L0R867_9BACT, UP000010808)]).
+Cycle 9 Stage 2 causal-graphs review of data/records/mackinawite.yaml (SHA-256 38433b1cf8e3fa550d2adc18dfac8acd4814baf65160d236db34229bcaf7af10) and its canonical EDIT history sidecar(s) (history/records/mackinawite/2026-11-05T171248Z-marcin-e47522.yaml) verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source evidence fidelity across causal_graph 'am13_sulfide_precipitation_and_biomass_associated_growth_graph' (mechanism_ref: am13_sulfide_precipitation_and_biomass_associated_growth, 4 nodes / 3 edges; am13_sat_aprba_sulfate_activation: [UniProtKB:L0R7X0 (sat, L0R7X0_9BACT, UP000010808), UniProtKB:L0R9F9 (aprA, L0R9F9_9BACT, UP000010808), UniProtKB:L0RB73 (DESAM_20544, L0RB73_9BACT, UP000010808)]; am13_dsvab_sulfite_reductase: [UniProtKB:L0R6S6 (dsvA, L0R6S6_9BACT, UP000010808), UniProtKB:L0R867 (dsvB, L0R867_9BACT, UP000010808)]).
 
 Selection: Cycle 9 Stage 2 causal_graphs curation for cmmmech:mackinawite
 Coverage: full; 1 reviewed / 1 in the declared population.
@@ -39,13 +39,13 @@ Working-tree hashes do not imply those bytes were committed.
 
 graph: supported. Targets: cmmmech:mackinawite.
 
-Curated data/records/mackinawite.yaml (SHA-256 38433b1cf8e3fa550d2adc18dfac8acd4814baf65160d236db34229bcaf7af10) with causal_graph 'am13_sulfide_precipitation_and_biomass_associated_growth_graph' (mechanism_ref: am13_sulfide_precipitation_and_biomass_associated_growth, 4 nodes / 3 edges; am13_sat_aprba_sulfate_activation: [UniProtKB:L0R7X0 (sat, L0R7X0_9BACT, UP000010808), UniProtKB:L0R9F9 (aprA, L0R9F9_9BACT, UP000010808), UniProtKB:L0RB73 (DESAM_20544, L0RB73_9BACT, UP000010808)]; am13_dsvab_sulfite_reductase: [UniProtKB:L0R6S6 (dsvA, L0R6S6_9BACT, UP000010808), UniProtKB:L0R867 (dsvB, L0R867_9BACT, UP000010808)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from picard2018: Picard et al. (2018). Sulfate-reducing bacteria influence the nucleation and growth of mackinawite and greigite. Geochimica et Cosmochimica Acta 220:367-384. (https://doi.org/10.1016/j.gca.2017.10.006). Live-verified UniProtKB grounding across UniProtKB:L0R7X0 (L0R7X0_9BACT, sulfate adenylyltransferase, gene_symbol: sat, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R9F9 (L0R9F9_9BACT, Adenylylsulfate reductase, alpha subunit, gene_symbol: aprA, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0RB73 (L0RB73_9BACT, Adenylylsulfate reductase, beta subunit, gene_symbol: DESAM_20544, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R6S6 (L0R6S6_9BACT, Sulfite reductase, dissimilatory-type subunit alpha, gene_symbol: dsvA, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R867 (L0R867_9BACT, Sulfite reductase, dissimilatory-type subunit beta, gene_symbol: dsvB, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808).
+Curated data/records/mackinawite.yaml (SHA-256 38433b1cf8e3fa550d2adc18dfac8acd4814baf65160d236db34229bcaf7af10) with causal_graph 'am13_sulfide_precipitation_and_biomass_associated_growth_graph' (mechanism_ref: am13_sulfide_precipitation_and_biomass_associated_growth, 4 nodes / 3 edges; am13_sat_aprba_sulfate_activation: [UniProtKB:L0R7X0 (sat, L0R7X0_9BACT, UP000010808), UniProtKB:L0R9F9 (aprA, L0R9F9_9BACT, UP000010808), UniProtKB:L0RB73 (DESAM_20544, L0RB73_9BACT, UP000010808)]; am13_dsvab_sulfite_reductase: [UniProtKB:L0R6S6 (dsvA, L0R6S6_9BACT, UP000010808), UniProtKB:L0R867 (dsvB, L0R867_9BACT, UP000010808)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from picard2018: Picard, Gartman, Clarke and Girguis (2018). Sulfate-reducing bacteria influence the nucleation and growth of mackinawite and greigite. Geochimica et Cosmochimica Acta 220:367-384. Sections 2-4, Tables 1-3, Figures 1-7 and original supplementary Figures S1-S3. (https://doi.org/10.1016/j.gca.2017.10.006). Live-verified UniProtKB reference-proteome grounding across UniProtKB:L0R7X0 (L0R7X0_9BACT, sulfate adenylyltransferase, gene_symbol: sat, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R9F9 (L0R9F9_9BACT, Adenylylsulfate reductase, alpha subunit, gene_symbol: aprA, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0RB73 (L0RB73_9BACT, Adenylylsulfate reductase, beta subunit, gene_symbol: DESAM_20544, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R6S6 (L0R6S6_9BACT, Sulfite reductase, dissimilatory-type subunit alpha, gene_symbol: dsvA, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R867 (L0R867_9BACT, Sulfite reductase, dissimilatory-type subunit beta, gene_symbol: dsvB, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808).
 
-### Verification of canonical EDIT history sidecar and strict schema validation
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
 
 provenance: supported. Targets: cmmmech:mackinawite.
 
-data/records/mackinawite.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/mackinawite/2026-11-05T171248Z-marcin-e47522.yaml (SHA-256 1a66d557e660f3ef5045192df76e94bfcc58338d891aae067fe50f145b8bfbf7) and passing all LinkML and history validation gates.
+data/records/mackinawite.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/mackinawite/2026-11-05T171248Z-marcin-e47522.yaml (SHA-256 1a66d557e660f3ef5045192df76e94bfcc58338d891aae067fe50f145b8bfbf7): Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Maridesulfovibrio hydrothermalis AM13 = DSM 14728 (NCBITaxon:1121451; UP000010808) dissimilatory sulfate-reduction protein groundings (sat DESAM_20547 UniProtKB:L0R7X0, aprA/AprB DESAM_20543-DESAM_20544 UniProtKB:L0R9F9/UniProtKB:L0RB73, and dsvAB DESAM_20117/DESAM_20116 UniProtKB:L0R6S6/UniProtKB:L0R867) for biomass-influenced mackinawite precipitation in Picard et al. (2018).) and passing all LinkML and history validation gates.
 
 ## Findings
 
@@ -61,14 +61,14 @@ No findings recorded within this review's declared scope.
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
 | owner | data/records/mackinawite.yaml; Working-tree record data/records/mackinawite.yaml (causal_graphs and mechanisms[].protein_examples) | supports | Curated data/records/mackinawite.yaml (SHA-256 38433b1cf8e3fa550d2adc18dfac8acd4814baf65160d236db34229bcaf7af10) with causal_graph 'am13_sulfide_precipitation_and_biomass_associated_growth_graph' (mechanism_ref: am13_sulfide_precipitation_and_biomass_associated_growth, 4 nodes / 3 edges; am13_sat_aprba_sulfate_activation: [UniProtKB:L0R7X0 (sat, L0R7X0_9BACT, UP000010808), UniProtKB:L0R9F9 (aprA, L0R9F9_9BACT, UP000010808), UniProtKB:L0RB73 (DESAM_20544, L0RB73_9BACT, UP000010808)]; am13_dsvab_sulfite_reductase: [UniProtKB:L0R6S6 (dsvA, L0R6S6_9BACT, UP000010808), UniProtKB:L0R867 (dsvB, L0R867_9BACT, UP000010808)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats. |
-| primary_source | DOI:10.1016/j.gca.2017.10.006; picard2018: Picard et al. (2018). Sulfate-reducing bacteria influence the nucleation and growth of mackinawite and greigite. Geochimica et Cosmochimica Acta 220:367-384. (https://doi.org/10.1016/j.gca.2017.10.006) | supports | Live-verified UniProtKB reference-proteome grounding across UniProtKB:L0R7X0 (L0R7X0_9BACT, sulfate adenylyltransferase, gene_symbol: sat, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R9F9 (L0R9F9_9BACT, Adenylylsulfate reductase, alpha subunit, gene_symbol: aprA, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0RB73 (L0RB73_9BACT, Adenylylsulfate reductase, beta subunit, gene_symbol: DESAM_20544, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R6S6 (L0R6S6_9BACT, Sulfite reductase, dissimilatory-type subunit alpha, gene_symbol: dsvA, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R867 (L0R867_9BACT, Sulfite reductase, dissimilatory-type subunit beta, gene_symbol: dsvB, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808). Primary mechanism source(s) (picard2018: Picard et al. (2018). Sulfate-reducing bacteria influence the nucleation and growth of mackinawite and greigite. Geochimica et Cosmochimica Acta 220:367-384. (https://doi.org/10.1016/j.gca.2017.10.006)) report culture-level mineralization or bioleaching without single-gene knockouts; supports: partial is strictly preserved on all enzyme-level edges and ProteinExample evidence items. |
+| primary_source | DOI:10.1016/j.gca.2017.10.006; picard2018: Picard, Gartman, Clarke and Girguis (2018). Sulfate-reducing bacteria influence the nucleation and growth of mackinawite and greigite. Geochimica et Cosmochimica Acta 220:367-384. Sections 2-4, Tables 1-3, Figures 1-7 and original supplementary Figures S1-S3. (https://doi.org/10.1016/j.gca.2017.10.006) | supports | Live-verified UniProtKB reference-proteome grounding across UniProtKB:L0R7X0 (L0R7X0_9BACT, sulfate adenylyltransferase, gene_symbol: sat, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R9F9 (L0R9F9_9BACT, Adenylylsulfate reductase, alpha subunit, gene_symbol: aprA, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0RB73 (L0RB73_9BACT, Adenylylsulfate reductase, beta subunit, gene_symbol: DESAM_20544, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R6S6 (L0R6S6_9BACT, Sulfite reductase, dissimilatory-type subunit alpha, gene_symbol: dsvA, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R867 (L0R867_9BACT, Sulfite reductase, dissimilatory-type subunit beta, gene_symbol: dsvB, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808). Primary mechanism source(s) (picard2018: Picard, Gartman, Clarke and Girguis (2018). Sulfate-reducing bacteria influence the nucleation and growth of mackinawite and greigite. Geochimica et Cosmochimica Acta 220:367-384. Sections 2-4, Tables 1-3, Figures 1-7 and original supplementary Figures S1-S3. (https://doi.org/10.1016/j.gca.2017.10.006)) report culture-level mineralization or bioleaching without single-gene knockouts; supports: partial is strictly preserved on all enzyme-level edges and ProteinExample evidence items. |
 | edit_history | history/records/mackinawite/2026-11-05T171248Z-marcin-e47522.yaml; Canonical EDIT history sidecar history/records/mackinawite/2026-11-05T171248Z-marcin-e47522.yaml | supports | Canonical EDIT history sidecar history/records/mackinawite/2026-11-05T171248Z-marcin-e47522.yaml (SHA-256 1a66d557e660f3ef5045192df76e94bfcc58338d891aae067fe50f145b8bfbf7): Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Maridesulfovibrio hydrothermalis AM13 = DSM 14728 (NCBITaxon:1121451; UP000010808) dissimilatory sulfate-reduction protein groundings (sat DESAM_20547 UniProtKB:L0R7X0, aprA/AprB DESAM_20543-DESAM_20544 UniProtKB:L0R9F9/UniProtKB:L0RB73, and dsvAB DESAM_20117/DESAM_20116 UniProtKB:L0R6S6/UniProtKB:L0R867) for biomass-influenced mackinawite precipitation in Picard et al. (2018). |
 | validation | data/records/mackinawite.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/mackinawite.yaml and history/records/mackinawite/2026-11-05T171248Z-marcin-e47522.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
 
 ## Limits And Additional Notes
 
 - Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
-- Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py for cmmmech:mackinawite.
+- Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py for cmmmech:mackinawite (including Issue #937 review-remediation updates).
 
 ## Complete Structured Record
 
@@ -90,9 +90,11 @@ reviewer:
   independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
     verifying the Cycle 9 Stage 2 causal_graphs and ProteinExample curation in data/records/mackinawite.yaml
     (SHA-256 38433b1cf8e3fa550d2adc18dfac8acd4814baf65160d236db34229bcaf7af10) against
-    live UniProtKB reference proteomes and cited primary source(s) (picard2018: Picard
-    et al. (2018). Sulfate-reducing bacteria influence the nucleation and growth of
-    mackinawite and greigite. Geochimica et Cosmochimica Acta 220:367-384. (https://doi.org/10.1016/j.gca.2017.10.006)).'
+    live UniProtKB reference-proteome grounding and cited primary source(s) (picard2018:
+    Picard, Gartman, Clarke and Girguis (2018). Sulfate-reducing bacteria influence
+    the nucleation and growth of mackinawite and greigite. Geochimica et Cosmochimica
+    Acta 220:367-384. Sections 2-4, Tables 1-3, Figures 1-7 and original supplementary
+    Figures S1-S3. (https://doi.org/10.1016/j.gca.2017.10.006)).'
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
@@ -125,7 +127,7 @@ targets:
 scope:
   description: 'Cycle 9 Stage 2 causal-graphs review of data/records/mackinawite.yaml
     (SHA-256 38433b1cf8e3fa550d2adc18dfac8acd4814baf65160d236db34229bcaf7af10) and
-    its canonical EDIT history sidecar (history/records/mackinawite/2026-11-05T171248Z-marcin-e47522.yaml)
+    its canonical EDIT history sidecar(s) (history/records/mackinawite/2026-11-05T171248Z-marcin-e47522.yaml)
     verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding,
     and primary-source evidence fidelity across causal_graph ''am13_sulfide_precipitation_and_biomass_associated_growth_graph''
     (mechanism_ref: am13_sulfide_precipitation_and_biomass_associated_growth, 4 nodes
@@ -158,9 +160,10 @@ evidence:
 - evidence_id: primary_source
   kind: primary_source
   reference: DOI:10.1016/j.gca.2017.10.006
-  locator: 'picard2018: Picard et al. (2018). Sulfate-reducing bacteria influence
-    the nucleation and growth of mackinawite and greigite. Geochimica et Cosmochimica
-    Acta 220:367-384. (https://doi.org/10.1016/j.gca.2017.10.006)'
+  locator: 'picard2018: Picard, Gartman, Clarke and Girguis (2018). Sulfate-reducing
+    bacteria influence the nucleation and growth of mackinawite and greigite. Geochimica
+    et Cosmochimica Acta 220:367-384. Sections 2-4, Tables 1-3, Figures 1-7 and original
+    supplementary Figures S1-S3. (https://doi.org/10.1016/j.gca.2017.10.006)'
   accessed_at: '2026-11-05T17:27:45Z'
   support: supports
   summary: 'Live-verified UniProtKB reference-proteome grounding across UniProtKB:L0R7X0
@@ -175,9 +178,10 @@ evidence:
     hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R867 (L0R867_9BACT,
     Sulfite reductase, dissimilatory-type subunit beta, gene_symbol: dsvB, TREMBL,
     NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808).
-    Primary mechanism source(s) (picard2018: Picard et al. (2018). Sulfate-reducing
-    bacteria influence the nucleation and growth of mackinawite and greigite. Geochimica
-    et Cosmochimica Acta 220:367-384. (https://doi.org/10.1016/j.gca.2017.10.006))
+    Primary mechanism source(s) (picard2018: Picard, Gartman, Clarke and Girguis (2018).
+    Sulfate-reducing bacteria influence the nucleation and growth of mackinawite and
+    greigite. Geochimica et Cosmochimica Acta 220:367-384. Sections 2-4, Tables 1-3,
+    Figures 1-7 and original supplementary Figures S1-S3. (https://doi.org/10.1016/j.gca.2017.10.006))
     report culture-level mineralization or bioleaching without single-gene knockouts;
     supports: partial is strictly preserved on all enzyme-level edges and ProteinExample
     evidence items.'
@@ -250,21 +254,23 @@ assessments:
     (DESAM_20544, L0RB73_9BACT, UP000010808)]; am13_dsvab_sulfite_reductase: [UniProtKB:L0R6S6
     (dsvA, L0R6S6_9BACT, UP000010808), UniProtKB:L0R867 (dsvB, L0R867_9BACT, UP000010808)]),
     achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
-    and preserving source-faithful support levels and caveats from picard2018: Picard
-    et al. (2018). Sulfate-reducing bacteria influence the nucleation and growth of
-    mackinawite and greigite. Geochimica et Cosmochimica Acta 220:367-384. (https://doi.org/10.1016/j.gca.2017.10.006).
-    Live-verified UniProtKB grounding across UniProtKB:L0R7X0 (L0R7X0_9BACT, sulfate
-    adenylyltransferase, gene_symbol: sat, TREMBL, NCBITaxon:1121451 Maridesulfovibrio
-    hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R9F9 (L0R9F9_9BACT,
-    Adenylylsulfate reductase, alpha subunit, gene_symbol: aprA, TREMBL, NCBITaxon:1121451
-    Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0RB73
-    (L0RB73_9BACT, Adenylylsulfate reductase, beta subunit, gene_symbol: DESAM_20544,
-    TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808);
-    UniProtKB:L0R6S6 (L0R6S6_9BACT, Sulfite reductase, dissimilatory-type subunit
-    alpha, gene_symbol: dsvA, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis
-    AM13 = DSM 14728, UP000010808); UniProtKB:L0R867 (L0R867_9BACT, Sulfite reductase,
-    dissimilatory-type subunit beta, gene_symbol: dsvB, TREMBL, NCBITaxon:1121451
-    Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808).'
+    and preserving source-faithful support levels and caveats from picard2018: Picard,
+    Gartman, Clarke and Girguis (2018). Sulfate-reducing bacteria influence the nucleation
+    and growth of mackinawite and greigite. Geochimica et Cosmochimica Acta 220:367-384.
+    Sections 2-4, Tables 1-3, Figures 1-7 and original supplementary Figures S1-S3.
+    (https://doi.org/10.1016/j.gca.2017.10.006). Live-verified UniProtKB reference-proteome
+    grounding across UniProtKB:L0R7X0 (L0R7X0_9BACT, sulfate adenylyltransferase,
+    gene_symbol: sat, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13
+    = DSM 14728, UP000010808); UniProtKB:L0R9F9 (L0R9F9_9BACT, Adenylylsulfate reductase,
+    alpha subunit, gene_symbol: aprA, TREMBL, NCBITaxon:1121451 Maridesulfovibrio
+    hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0RB73 (L0RB73_9BACT,
+    Adenylylsulfate reductase, beta subunit, gene_symbol: DESAM_20544, TREMBL, NCBITaxon:1121451
+    Maridesulfovibrio hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R6S6
+    (L0R6S6_9BACT, Sulfite reductase, dissimilatory-type subunit alpha, gene_symbol:
+    dsvA, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13 = DSM 14728,
+    UP000010808); UniProtKB:L0R867 (L0R867_9BACT, Sulfite reductase, dissimilatory-type
+    subunit beta, gene_symbol: dsvB, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis
+    AM13 = DSM 14728, UP000010808).'
   target_ids:
   - cmmmech:mackinawite
   evidence_ids:
@@ -272,12 +278,17 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
-  summary: data/records/mackinawite.yaml was updated exclusively through scripts/curate_causal_graphs.py
-    (curate_record_file), producing append-only history sidecar history/records/mackinawite/2026-11-05T171248Z-marcin-e47522.yaml
-    (SHA-256 1a66d557e660f3ef5045192df76e94bfcc58338d891aae067fe50f145b8bfbf7) and
-    passing all LinkML and history validation gates.
+  summary: 'data/records/mackinawite.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar(s) (history/records/mackinawite/2026-11-05T171248Z-marcin-e47522.yaml
+    (SHA-256 1a66d557e660f3ef5045192df76e94bfcc58338d891aae067fe50f145b8bfbf7): Add
+    REPRESENTATIVE_EXAMPLE causal graph and live-verified Maridesulfovibrio hydrothermalis
+    AM13 = DSM 14728 (NCBITaxon:1121451; UP000010808) dissimilatory sulfate-reduction
+    protein groundings (sat DESAM_20547 UniProtKB:L0R7X0, aprA/AprB DESAM_20543-DESAM_20544
+    UniProtKB:L0R9F9/UniProtKB:L0RB73, and dsvAB DESAM_20117/DESAM_20116 UniProtKB:L0R6S6/UniProtKB:L0R867)
+    for biomass-influenced mackinawite precipitation in Picard et al. (2018).) and
+    passing all LinkML and history validation gates.'
   target_ids:
   - cmmmech:mackinawite
   evidence_ids:
@@ -296,13 +307,15 @@ summary: 'Mackinawite (cmmmech:mackinawite) passes Cycle 9 Stage 2 causal-graphs
   (dsvA, L0R6S6_9BACT, UP000010808), UniProtKB:L0R867 (dsvB, L0R867_9BACT, UP000010808)]),
   achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
   and preserving source-faithful support levels and experimental caveats from picard2018:
-  Picard et al. (2018). Sulfate-reducing bacteria influence the nucleation and growth
-  of mackinawite and greigite. Geochimica et Cosmochimica Acta 220:367-384. (https://doi.org/10.1016/j.gca.2017.10.006).
-  Live-verified UniProtKB reference-proteome grounding across UniProtKB:L0R7X0 (L0R7X0_9BACT,
-  sulfate adenylyltransferase, gene_symbol: sat, TREMBL, NCBITaxon:1121451 Maridesulfovibrio
-  hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R9F9 (L0R9F9_9BACT, Adenylylsulfate
-  reductase, alpha subunit, gene_symbol: aprA, TREMBL, NCBITaxon:1121451 Maridesulfovibrio
-  hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0RB73 (L0RB73_9BACT, Adenylylsulfate
+  Picard, Gartman, Clarke and Girguis (2018). Sulfate-reducing bacteria influence
+  the nucleation and growth of mackinawite and greigite. Geochimica et Cosmochimica
+  Acta 220:367-384. Sections 2-4, Tables 1-3, Figures 1-7 and original supplementary
+  Figures S1-S3. (https://doi.org/10.1016/j.gca.2017.10.006). Live-verified UniProtKB
+  reference-proteome grounding across UniProtKB:L0R7X0 (L0R7X0_9BACT, sulfate adenylyltransferase,
+  gene_symbol: sat, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis AM13
+  = DSM 14728, UP000010808); UniProtKB:L0R9F9 (L0R9F9_9BACT, Adenylylsulfate reductase,
+  alpha subunit, gene_symbol: aprA, TREMBL, NCBITaxon:1121451 Maridesulfovibrio hydrothermalis
+  AM13 = DSM 14728, UP000010808); UniProtKB:L0RB73 (L0RB73_9BACT, Adenylylsulfate
   reductase, beta subunit, gene_symbol: DESAM_20544, TREMBL, NCBITaxon:1121451 Maridesulfovibrio
   hydrothermalis AM13 = DSM 14728, UP000010808); UniProtKB:L0R6S6 (L0R6S6_9BACT, Sulfite
   reductase, dissimilatory-type subunit alpha, gene_symbol: dsvA, TREMBL, NCBITaxon:1121451
@@ -314,7 +327,7 @@ limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes; an independent subagent PR review is executed prior to merge.'
 notes:
-- Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
-  for cmmmech:mackinawite.
+- 'Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
+  for cmmmech:mackinawite (including Issue #937 review-remediation updates).'
 related_reviews: []
 ```

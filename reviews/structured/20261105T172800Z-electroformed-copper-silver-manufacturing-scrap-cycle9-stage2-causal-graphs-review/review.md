@@ -11,11 +11,11 @@
 
 ## Summary
 
-Electroformed copper-silver manufacturing scrap (cmmmech:electroformed-copper-silver-manufacturing-scrap) passes Cycle 9 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 8f602fb6e8a67f3831c7981f6e069bd9969b398c8f9456d5ee7e924a4334ec7e: Curated data/records/electroformed-copper-silver-manufacturing-scrap.yaml with causal_graph 'iron_oxidizing_culture_leaching_graph' (mechanism_ref: iron_oxidizing_culture_leaching, 4 nodes / 3 edges; cf3_cyc2_outer_membrane_iron_oxidase: [UniProtKB:A0ACD5IM13 (HF292_015305, A0ACD5IM13_9PROT, UP001196097)]; cf3_rus_cyc1_periplasmic_electron_relay: [UniProtKB:A0ACD5IM73 (HF292_015270, A0ACD5IM73_9PROT, UP001196097), UniProtKB:A0ACD5IMH3 (HF292_015300, A0ACD5IMH3_9PROT, UP001196097)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from pakostova2023_electroformed: Pakostova and Herath (2023). A Bioleaching Process for Sustainable Recycling of Complex Structures with Multi-Metal Layers. Sustainability 15(19):14068. (https://doi.org/10.3390/su151914068). Live-verified UniProtKB reference-proteome grounding across UniProtKB:A0ACD5IM13 (A0ACD5IM13_9PROT, Cytochrome C, gene_symbol: HF292_015305, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097); UniProtKB:A0ACD5IM73 (A0ACD5IM73_9PROT, Rusticyanin, gene_symbol: HF292_015270, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097); UniProtKB:A0ACD5IMH3 (A0ACD5IMH3_9PROT, C-type cytochrome, gene_symbol: HF292_015300, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097).
+Electroformed copper-silver manufacturing scrap (cmmmech:electroformed-copper-silver-manufacturing-scrap) passes Cycle 9 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 8f602fb6e8a67f3831c7981f6e069bd9969b398c8f9456d5ee7e924a4334ec7e: Curated data/records/electroformed-copper-silver-manufacturing-scrap.yaml with causal_graph 'iron_oxidizing_culture_leaching_graph' (mechanism_ref: iron_oxidizing_culture_leaching, 4 nodes / 3 edges; cf3_cyc2_outer_membrane_iron_oxidase: [UniProtKB:A0ACD5IM13 (HF292_015305, A0ACD5IM13_9PROT, UP001196097)]; cf3_rus_cyc1_periplasmic_electron_relay: [UniProtKB:A0ACD5IM73 (HF292_015270, A0ACD5IM73_9PROT, UP001196097), UniProtKB:A0ACD5IMH3 (HF292_015300, A0ACD5IMH3_9PROT, UP001196097)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from pakostova2023_electroformed: Pakostova and Herath (2023). A Bioleaching Process for Sustainable Recycling of Complex Structures with Multi-Metal Layers. Sustainability 15(19):14068. DOI 10.3390/su151914068; published 22 September 2023. Main Methods 2.1-2.6, Results 3.1-3.5, Discussion, Table 1 and Figures 1-8 inspected. Supplementary Figures S1-S4 were not acquired; their main-text captions are not substituted for visual inspection. (https://doi.org/10.3390/su151914068). Live-verified UniProtKB reference-proteome grounding across UniProtKB:A0ACD5IM13 (A0ACD5IM13_9PROT, Cytochrome C, gene_symbol: HF292_015305, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097); UniProtKB:A0ACD5IM73 (A0ACD5IM73_9PROT, Rusticyanin, gene_symbol: HF292_015270, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097); UniProtKB:A0ACD5IMH3 (A0ACD5IMH3_9PROT, C-type cytochrome, gene_symbol: HF292_015300, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097).
 
 ## Scope And Provenance
 
-Cycle 9 Stage 2 causal-graphs review of data/records/electroformed-copper-silver-manufacturing-scrap.yaml (SHA-256 8f602fb6e8a67f3831c7981f6e069bd9969b398c8f9456d5ee7e924a4334ec7e) and its canonical EDIT history sidecar (history/records/electroformed-copper-silver-manufacturing-scrap/2026-11-05T172709Z-marcin-a3a769.yaml) verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source evidence fidelity across causal_graph 'iron_oxidizing_culture_leaching_graph' (mechanism_ref: iron_oxidizing_culture_leaching, 4 nodes / 3 edges; cf3_cyc2_outer_membrane_iron_oxidase: [UniProtKB:A0ACD5IM13 (HF292_015305, A0ACD5IM13_9PROT, UP001196097)]; cf3_rus_cyc1_periplasmic_electron_relay: [UniProtKB:A0ACD5IM73 (HF292_015270, A0ACD5IM73_9PROT, UP001196097), UniProtKB:A0ACD5IMH3 (HF292_015300, A0ACD5IMH3_9PROT, UP001196097)]).
+Cycle 9 Stage 2 causal-graphs review of data/records/electroformed-copper-silver-manufacturing-scrap.yaml (SHA-256 8f602fb6e8a67f3831c7981f6e069bd9969b398c8f9456d5ee7e924a4334ec7e) and its canonical EDIT history sidecar(s) (history/records/electroformed-copper-silver-manufacturing-scrap/2026-11-05T172709Z-marcin-a3a769.yaml) verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source evidence fidelity across causal_graph 'iron_oxidizing_culture_leaching_graph' (mechanism_ref: iron_oxidizing_culture_leaching, 4 nodes / 3 edges; cf3_cyc2_outer_membrane_iron_oxidase: [UniProtKB:A0ACD5IM13 (HF292_015305, A0ACD5IM13_9PROT, UP001196097)]; cf3_rus_cyc1_periplasmic_electron_relay: [UniProtKB:A0ACD5IM73 (HF292_015270, A0ACD5IM73_9PROT, UP001196097), UniProtKB:A0ACD5IMH3 (HF292_015300, A0ACD5IMH3_9PROT, UP001196097)]).
 
 Selection: Cycle 9 Stage 2 causal_graphs curation for cmmmech:electroformed-copper-silver-manufacturing-scrap
 Coverage: full; 1 reviewed / 1 in the declared population.
@@ -39,13 +39,13 @@ Working-tree hashes do not imply those bytes were committed.
 
 graph: supported. Targets: cmmmech:electroformed-copper-silver-manufacturing-scrap.
 
-Curated data/records/electroformed-copper-silver-manufacturing-scrap.yaml (SHA-256 8f602fb6e8a67f3831c7981f6e069bd9969b398c8f9456d5ee7e924a4334ec7e) with causal_graph 'iron_oxidizing_culture_leaching_graph' (mechanism_ref: iron_oxidizing_culture_leaching, 4 nodes / 3 edges; cf3_cyc2_outer_membrane_iron_oxidase: [UniProtKB:A0ACD5IM13 (HF292_015305, A0ACD5IM13_9PROT, UP001196097)]; cf3_rus_cyc1_periplasmic_electron_relay: [UniProtKB:A0ACD5IM73 (HF292_015270, A0ACD5IM73_9PROT, UP001196097), UniProtKB:A0ACD5IMH3 (HF292_015300, A0ACD5IMH3_9PROT, UP001196097)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from pakostova2023_electroformed: Pakostova and Herath (2023). A Bioleaching Process for Sustainable Recycling of Complex Structures with Multi-Metal Layers. Sustainability 15(19):14068. (https://doi.org/10.3390/su151914068). Live-verified UniProtKB grounding across UniProtKB:A0ACD5IM13 (A0ACD5IM13_9PROT, Cytochrome C, gene_symbol: HF292_015305, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097); UniProtKB:A0ACD5IM73 (A0ACD5IM73_9PROT, Rusticyanin, gene_symbol: HF292_015270, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097); UniProtKB:A0ACD5IMH3 (A0ACD5IMH3_9PROT, C-type cytochrome, gene_symbol: HF292_015300, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097).
+Curated data/records/electroformed-copper-silver-manufacturing-scrap.yaml (SHA-256 8f602fb6e8a67f3831c7981f6e069bd9969b398c8f9456d5ee7e924a4334ec7e) with causal_graph 'iron_oxidizing_culture_leaching_graph' (mechanism_ref: iron_oxidizing_culture_leaching, 4 nodes / 3 edges; cf3_cyc2_outer_membrane_iron_oxidase: [UniProtKB:A0ACD5IM13 (HF292_015305, A0ACD5IM13_9PROT, UP001196097)]; cf3_rus_cyc1_periplasmic_electron_relay: [UniProtKB:A0ACD5IM73 (HF292_015270, A0ACD5IM73_9PROT, UP001196097), UniProtKB:A0ACD5IMH3 (HF292_015300, A0ACD5IMH3_9PROT, UP001196097)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from pakostova2023_electroformed: Pakostova and Herath (2023). A Bioleaching Process for Sustainable Recycling of Complex Structures with Multi-Metal Layers. Sustainability 15(19):14068. DOI 10.3390/su151914068; published 22 September 2023. Main Methods 2.1-2.6, Results 3.1-3.5, Discussion, Table 1 and Figures 1-8 inspected. Supplementary Figures S1-S4 were not acquired; their main-text captions are not substituted for visual inspection. (https://doi.org/10.3390/su151914068). Live-verified UniProtKB reference-proteome grounding across UniProtKB:A0ACD5IM13 (A0ACD5IM13_9PROT, Cytochrome C, gene_symbol: HF292_015305, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097); UniProtKB:A0ACD5IM73 (A0ACD5IM73_9PROT, Rusticyanin, gene_symbol: HF292_015270, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097); UniProtKB:A0ACD5IMH3 (A0ACD5IMH3_9PROT, C-type cytochrome, gene_symbol: HF292_015300, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097).
 
-### Verification of canonical EDIT history sidecar and strict schema validation
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
 
 provenance: supported. Targets: cmmmech:electroformed-copper-silver-manufacturing-scrap.
 
-data/records/electroformed-copper-silver-manufacturing-scrap.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/electroformed-copper-silver-manufacturing-scrap/2026-11-05T172709Z-marcin-a3a769.yaml (SHA-256 e8aebe2e88ad45e6eca99e6db8a03390d2b1312d0f184ddc66779fa2af32a290) and passing all LinkML and history validation gates.
+data/records/electroformed-copper-silver-manufacturing-scrap.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/electroformed-copper-silver-manufacturing-scrap/2026-11-05T172709Z-marcin-a3a769.yaml (SHA-256 e8aebe2e88ad45e6eca99e6db8a03390d2b1312d0f184ddc66779fa2af32a290): Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Acidithiobacillus ferruginosus CF3 (NCBITaxon:3063951; UP001196097) rus-operon protein groundings (Cyc2 HF292_015305 UniProtKB:A0ACD5IM13, rusticyanin HF292_015270 UniProtKB:A0ACD5IM73, and Cyc1 HF292_015300 UniProtKB:A0ACD5IMH3) for ferric regeneration and Cu dissolution from defective electroformed Cu/Ag manufacturing scrap in Pakostova and Herath (2023).) and passing all LinkML and history validation gates.
 
 ## Findings
 
@@ -61,14 +61,14 @@ No findings recorded within this review's declared scope.
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
 | owner | data/records/electroformed-copper-silver-manufacturing-scrap.yaml; Working-tree record data/records/electroformed-copper-silver-manufacturing-scrap.yaml (causal_graphs and mechanisms[].protein_examples) | supports | Curated data/records/electroformed-copper-silver-manufacturing-scrap.yaml (SHA-256 8f602fb6e8a67f3831c7981f6e069bd9969b398c8f9456d5ee7e924a4334ec7e) with causal_graph 'iron_oxidizing_culture_leaching_graph' (mechanism_ref: iron_oxidizing_culture_leaching, 4 nodes / 3 edges; cf3_cyc2_outer_membrane_iron_oxidase: [UniProtKB:A0ACD5IM13 (HF292_015305, A0ACD5IM13_9PROT, UP001196097)]; cf3_rus_cyc1_periplasmic_electron_relay: [UniProtKB:A0ACD5IM73 (HF292_015270, A0ACD5IM73_9PROT, UP001196097), UniProtKB:A0ACD5IMH3 (HF292_015300, A0ACD5IMH3_9PROT, UP001196097)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats. |
-| primary_source | DOI:10.3390/su151914068; pakostova2023_electroformed: Pakostova and Herath (2023). A Bioleaching Process for Sustainable Recycling of Complex Structures with Multi-Metal Layers. Sustainability 15(19):14068. (https://doi.org/10.3390/su151914068) | supports | Live-verified UniProtKB reference-proteome grounding across UniProtKB:A0ACD5IM13 (A0ACD5IM13_9PROT, Cytochrome C, gene_symbol: HF292_015305, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097); UniProtKB:A0ACD5IM73 (A0ACD5IM73_9PROT, Rusticyanin, gene_symbol: HF292_015270, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097); UniProtKB:A0ACD5IMH3 (A0ACD5IMH3_9PROT, C-type cytochrome, gene_symbol: HF292_015300, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097). Primary mechanism source(s) (pakostova2023_electroformed: Pakostova and Herath (2023). A Bioleaching Process for Sustainable Recycling of Complex Structures with Multi-Metal Layers. Sustainability 15(19):14068. (https://doi.org/10.3390/su151914068)) report culture-level mineralization or bioleaching without single-gene knockouts; supports: partial is strictly preserved on all enzyme-level edges and ProteinExample evidence items. |
+| primary_source | DOI:10.3390/su151914068; pakostova2023_electroformed: Pakostova and Herath (2023). A Bioleaching Process for Sustainable Recycling of Complex Structures with Multi-Metal Layers. Sustainability 15(19):14068. DOI 10.3390/su151914068; published 22 September 2023. Main Methods 2.1-2.6, Results 3.1-3.5, Discussion, Table 1 and Figures 1-8 inspected. Supplementary Figures S1-S4 were not acquired; their main-text captions are not substituted for visual inspection. (https://doi.org/10.3390/su151914068) | supports | Live-verified UniProtKB reference-proteome grounding across UniProtKB:A0ACD5IM13 (A0ACD5IM13_9PROT, Cytochrome C, gene_symbol: HF292_015305, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097); UniProtKB:A0ACD5IM73 (A0ACD5IM73_9PROT, Rusticyanin, gene_symbol: HF292_015270, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097); UniProtKB:A0ACD5IMH3 (A0ACD5IMH3_9PROT, C-type cytochrome, gene_symbol: HF292_015300, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097). Primary mechanism source(s) (pakostova2023_electroformed: Pakostova and Herath (2023). A Bioleaching Process for Sustainable Recycling of Complex Structures with Multi-Metal Layers. Sustainability 15(19):14068. DOI 10.3390/su151914068; published 22 September 2023. Main Methods 2.1-2.6, Results 3.1-3.5, Discussion, Table 1 and Figures 1-8 inspected. Supplementary Figures S1-S4 were not acquired; their main-text captions are not substituted for visual inspection. (https://doi.org/10.3390/su151914068)) report culture-level mineralization or bioleaching without single-gene knockouts; supports: partial is strictly preserved on all enzyme-level edges and ProteinExample evidence items. |
 | edit_history | history/records/electroformed-copper-silver-manufacturing-scrap/2026-11-05T172709Z-marcin-a3a769.yaml; Canonical EDIT history sidecar history/records/electroformed-copper-silver-manufacturing-scrap/2026-11-05T172709Z-marcin-a3a769.yaml | supports | Canonical EDIT history sidecar history/records/electroformed-copper-silver-manufacturing-scrap/2026-11-05T172709Z-marcin-a3a769.yaml (SHA-256 e8aebe2e88ad45e6eca99e6db8a03390d2b1312d0f184ddc66779fa2af32a290): Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Acidithiobacillus ferruginosus CF3 (NCBITaxon:3063951; UP001196097) rus-operon protein groundings (Cyc2 HF292_015305 UniProtKB:A0ACD5IM13, rusticyanin HF292_015270 UniProtKB:A0ACD5IM73, and Cyc1 HF292_015300 UniProtKB:A0ACD5IMH3) for ferric regeneration and Cu dissolution from defective electroformed Cu/Ag manufacturing scrap in Pakostova and Herath (2023). |
 | validation | data/records/electroformed-copper-silver-manufacturing-scrap.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/electroformed-copper-silver-manufacturing-scrap.yaml and history/records/electroformed-copper-silver-manufacturing-scrap/2026-11-05T172709Z-marcin-a3a769.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
 
 ## Limits And Additional Notes
 
 - Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
-- Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py for cmmmech:electroformed-copper-silver-manufacturing-scrap.
+- Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py for cmmmech:electroformed-copper-silver-manufacturing-scrap (including Issue #937 review-remediation updates).
 
 ## Complete Structured Record
 
@@ -91,9 +91,12 @@ reviewer:
   independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
     verifying the Cycle 9 Stage 2 causal_graphs and ProteinExample curation in data/records/electroformed-copper-silver-manufacturing-scrap.yaml
     (SHA-256 8f602fb6e8a67f3831c7981f6e069bd9969b398c8f9456d5ee7e924a4334ec7e) against
-    live UniProtKB reference proteomes and cited primary source(s) (pakostova2023_electroformed:
+    live UniProtKB reference-proteome grounding and cited primary source(s) (pakostova2023_electroformed:
     Pakostova and Herath (2023). A Bioleaching Process for Sustainable Recycling of
-    Complex Structures with Multi-Metal Layers. Sustainability 15(19):14068. (https://doi.org/10.3390/su151914068)).'
+    Complex Structures with Multi-Metal Layers. Sustainability 15(19):14068. DOI 10.3390/su151914068;
+    published 22 September 2023. Main Methods 2.1-2.6, Results 3.1-3.5, Discussion,
+    Table 1 and Figures 1-8 inspected. Supplementary Figures S1-S4 were not acquired;
+    their main-text captions are not substituted for visual inspection. (https://doi.org/10.3390/su151914068)).'
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
@@ -126,7 +129,7 @@ targets:
 scope:
   description: 'Cycle 9 Stage 2 causal-graphs review of data/records/electroformed-copper-silver-manufacturing-scrap.yaml
     (SHA-256 8f602fb6e8a67f3831c7981f6e069bd9969b398c8f9456d5ee7e924a4334ec7e) and
-    its canonical EDIT history sidecar (history/records/electroformed-copper-silver-manufacturing-scrap/2026-11-05T172709Z-marcin-a3a769.yaml)
+    its canonical EDIT history sidecar(s) (history/records/electroformed-copper-silver-manufacturing-scrap/2026-11-05T172709Z-marcin-a3a769.yaml)
     verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding,
     and primary-source evidence fidelity across causal_graph ''iron_oxidizing_culture_leaching_graph''
     (mechanism_ref: iron_oxidizing_culture_leaching, 4 nodes / 3 edges; cf3_cyc2_outer_membrane_iron_oxidase:
@@ -161,7 +164,10 @@ evidence:
   reference: DOI:10.3390/su151914068
   locator: 'pakostova2023_electroformed: Pakostova and Herath (2023). A Bioleaching
     Process for Sustainable Recycling of Complex Structures with Multi-Metal Layers.
-    Sustainability 15(19):14068. (https://doi.org/10.3390/su151914068)'
+    Sustainability 15(19):14068. DOI 10.3390/su151914068; published 22 September 2023.
+    Main Methods 2.1-2.6, Results 3.1-3.5, Discussion, Table 1 and Figures 1-8 inspected.
+    Supplementary Figures S1-S4 were not acquired; their main-text captions are not
+    substituted for visual inspection. (https://doi.org/10.3390/su151914068)'
   accessed_at: '2026-11-05T17:27:45Z'
   support: supports
   summary: 'Live-verified UniProtKB reference-proteome grounding across UniProtKB:A0ACD5IM13
@@ -172,7 +178,10 @@ evidence:
     gene_symbol: HF292_015300, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus,
     UP001196097). Primary mechanism source(s) (pakostova2023_electroformed: Pakostova
     and Herath (2023). A Bioleaching Process for Sustainable Recycling of Complex
-    Structures with Multi-Metal Layers. Sustainability 15(19):14068. (https://doi.org/10.3390/su151914068))
+    Structures with Multi-Metal Layers. Sustainability 15(19):14068. DOI 10.3390/su151914068;
+    published 22 September 2023. Main Methods 2.1-2.6, Results 3.1-3.5, Discussion,
+    Table 1 and Figures 1-8 inspected. Supplementary Figures S1-S4 were not acquired;
+    their main-text captions are not substituted for visual inspection. (https://doi.org/10.3390/su151914068))
     report culture-level mineralization or bioleaching without single-gene knockouts;
     supports: partial is strictly preserved on all enzyme-level edges and ProteinExample
     evidence items.'
@@ -247,13 +256,17 @@ assessments:
     mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and
     preserving source-faithful support levels and caveats from pakostova2023_electroformed:
     Pakostova and Herath (2023). A Bioleaching Process for Sustainable Recycling of
-    Complex Structures with Multi-Metal Layers. Sustainability 15(19):14068. (https://doi.org/10.3390/su151914068).
-    Live-verified UniProtKB grounding across UniProtKB:A0ACD5IM13 (A0ACD5IM13_9PROT,
-    Cytochrome C, gene_symbol: HF292_015305, TREMBL, NCBITaxon:3063951 Acidithiobacillus
-    ferruginosus, UP001196097); UniProtKB:A0ACD5IM73 (A0ACD5IM73_9PROT, Rusticyanin,
-    gene_symbol: HF292_015270, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus,
-    UP001196097); UniProtKB:A0ACD5IMH3 (A0ACD5IMH3_9PROT, C-type cytochrome, gene_symbol:
-    HF292_015300, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus, UP001196097).'
+    Complex Structures with Multi-Metal Layers. Sustainability 15(19):14068. DOI 10.3390/su151914068;
+    published 22 September 2023. Main Methods 2.1-2.6, Results 3.1-3.5, Discussion,
+    Table 1 and Figures 1-8 inspected. Supplementary Figures S1-S4 were not acquired;
+    their main-text captions are not substituted for visual inspection. (https://doi.org/10.3390/su151914068).
+    Live-verified UniProtKB reference-proteome grounding across UniProtKB:A0ACD5IM13
+    (A0ACD5IM13_9PROT, Cytochrome C, gene_symbol: HF292_015305, TREMBL, NCBITaxon:3063951
+    Acidithiobacillus ferruginosus, UP001196097); UniProtKB:A0ACD5IM73 (A0ACD5IM73_9PROT,
+    Rusticyanin, gene_symbol: HF292_015270, TREMBL, NCBITaxon:3063951 Acidithiobacillus
+    ferruginosus, UP001196097); UniProtKB:A0ACD5IMH3 (A0ACD5IMH3_9PROT, C-type cytochrome,
+    gene_symbol: HF292_015300, TREMBL, NCBITaxon:3063951 Acidithiobacillus ferruginosus,
+    UP001196097).'
   target_ids:
   - cmmmech:electroformed-copper-silver-manufacturing-scrap
   evidence_ids:
@@ -261,13 +274,18 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
-  summary: data/records/electroformed-copper-silver-manufacturing-scrap.yaml was updated
-    exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing
-    append-only history sidecar history/records/electroformed-copper-silver-manufacturing-scrap/2026-11-05T172709Z-marcin-a3a769.yaml
-    (SHA-256 e8aebe2e88ad45e6eca99e6db8a03390d2b1312d0f184ddc66779fa2af32a290) and
-    passing all LinkML and history validation gates.
+  summary: 'data/records/electroformed-copper-silver-manufacturing-scrap.yaml was
+    updated exclusively through scripts/curate_causal_graphs.py (curate_record_file),
+    producing append-only history sidecar(s) (history/records/electroformed-copper-silver-manufacturing-scrap/2026-11-05T172709Z-marcin-a3a769.yaml
+    (SHA-256 e8aebe2e88ad45e6eca99e6db8a03390d2b1312d0f184ddc66779fa2af32a290): Add
+    REPRESENTATIVE_EXAMPLE causal graph and live-verified Acidithiobacillus ferruginosus
+    CF3 (NCBITaxon:3063951; UP001196097) rus-operon protein groundings (Cyc2 HF292_015305
+    UniProtKB:A0ACD5IM13, rusticyanin HF292_015270 UniProtKB:A0ACD5IM73, and Cyc1
+    HF292_015300 UniProtKB:A0ACD5IMH3) for ferric regeneration and Cu dissolution
+    from defective electroformed Cu/Ag manufacturing scrap in Pakostova and Herath
+    (2023).) and passing all LinkML and history validation gates.'
   target_ids:
   - cmmmech:electroformed-copper-silver-manufacturing-scrap
   evidence_ids:
@@ -287,7 +305,10 @@ summary: 'Electroformed copper-silver manufacturing scrap (cmmmech:electroformed
   and causal_graphs[].nodes[].protein_examples and preserving source-faithful support
   levels and experimental caveats from pakostova2023_electroformed: Pakostova and
   Herath (2023). A Bioleaching Process for Sustainable Recycling of Complex Structures
-  with Multi-Metal Layers. Sustainability 15(19):14068. (https://doi.org/10.3390/su151914068).
+  with Multi-Metal Layers. Sustainability 15(19):14068. DOI 10.3390/su151914068; published
+  22 September 2023. Main Methods 2.1-2.6, Results 3.1-3.5, Discussion, Table 1 and
+  Figures 1-8 inspected. Supplementary Figures S1-S4 were not acquired; their main-text
+  captions are not substituted for visual inspection. (https://doi.org/10.3390/su151914068).
   Live-verified UniProtKB reference-proteome grounding across UniProtKB:A0ACD5IM13
   (A0ACD5IM13_9PROT, Cytochrome C, gene_symbol: HF292_015305, TREMBL, NCBITaxon:3063951
   Acidithiobacillus ferruginosus, UP001196097); UniProtKB:A0ACD5IM73 (A0ACD5IM73_9PROT,
@@ -299,7 +320,8 @@ limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes; an independent subagent PR review is executed prior to merge.'
 notes:
-- Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
-  for cmmmech:electroformed-copper-silver-manufacturing-scrap.
+- 'Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
+  for cmmmech:electroformed-copper-silver-manufacturing-scrap (including Issue #937
+  review-remediation updates).'
 related_reviews: []
 ```

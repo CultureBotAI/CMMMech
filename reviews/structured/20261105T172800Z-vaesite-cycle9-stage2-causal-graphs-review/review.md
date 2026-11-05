@@ -11,11 +11,11 @@
 
 ## Summary
 
-Vaesite (cmmmech:vaesite) passes Cycle 9 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 cdda6a184440f171208520370bd3fb22aef53cbc2dfad7aadddbaa21abcd94c3: Curated data/records/vaesite.yaml with causal_graph 'hildenborough_nickel_sulfide_formation_graph' (mechanism_ref: hildenborough_nickel_sulfide_formation, 4 nodes / 3 edges; dvh_sat_aprba_sulfate_activation: [UniProtKB:Q72CI8 (sat, Q72CI8_NITV2, UP000002194), UniProtKB:Q72DT2 (aprA, Q72DT2_NITV2, UP000002194), UniProtKB:Q72DT3 (aprB, Q72DT3_NITV2, UP000002194)]; dvh_dsvab_sulfite_reductase: [UniProtKB:P45574 (dsvA, DSVA_NITV2, UP000002194), UniProtKB:P45575 (dsvB, DSVB_NITV2, UP000002194)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from mansor2019: Mansor et al. (2019). Biogenic and Abiogenic Nanoparticulate Nickel Sulfide Synthesis, Transformation and Crystal Growth in Aqueous Systems. Frontiers in Earth Science 7:151. (https://doi.org/10.3389/feart.2019.00151); mansor2019_si: Supplementary Material.. Live-verified UniProtKB reference-proteome grounding across UniProtKB:Q72CI8 (Q72CI8_NITV2, sulfate adenylyltransferase, gene_symbol: sat, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:Q72DT2 (Q72DT2_NITV2, Adenylyl-sulphate reductase, alpha subunit, gene_symbol: aprA, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:Q72DT3 (Q72DT3_NITV2, Adenylylsulphate reductase, beta subunit, gene_symbol: aprB, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:P45574 (DSVA_NITV2, Sulfite reductase, dissimilatory-type subunit alpha, gene_symbol: dsvA, SWISS_PROT, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:P45575 (DSVB_NITV2, Sulfite reductase, dissimilatory-type subunit beta, gene_symbol: dsvB, SWISS_PROT, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194).
+Vaesite (cmmmech:vaesite) passes Cycle 9 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 cdda6a184440f171208520370bd3fb22aef53cbc2dfad7aadddbaa21abcd94c3: Curated data/records/vaesite.yaml with causal_graph 'hildenborough_nickel_sulfide_formation_graph' (mechanism_ref: hildenborough_nickel_sulfide_formation, 4 nodes / 3 edges; dvh_sat_aprba_sulfate_activation: [UniProtKB:Q72CI8 (sat, Q72CI8_NITV2, UP000002194), UniProtKB:Q72DT2 (aprA, Q72DT2_NITV2, UP000002194), UniProtKB:Q72DT3 (aprB, Q72DT3_NITV2, UP000002194)]; dvh_dsvab_sulfite_reductase: [UniProtKB:P45574 (dsvA, DSVA_NITV2, UP000002194), UniProtKB:P45575 (dsvB, DSVB_NITV2, UP000002194)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from mansor2019: Mansor, M., Winkler, C., Hochella, M. F. Jr. and Xu, J. (2019). Nanoparticulate Nickel-Hosting Phases in Sulfidic Environments: Effects of Ferrous Iron and Bacterial Presence on Mineral Formation Mechanism and Solid-Phase Nickel Distribution. Frontiers in Earth Science 7:151. DOI 10.3389/feart.2019.00151. Full primary PDF, Methods pp.3–4, Results pp.4–6, Figures 1–11, Tables 1–2 and Discussion pp.6–13. (https://doi.org/10.3389/feart.2019.00151); mansor2019_si: Mansor et al. (2019), associated Supplementary Material, Table_1 DOCX. DOI 10.3389/feart.2019.00151.s001; Frontiers Figshare article 8323754, file 15598037. Nine annotated diffraction panels and Table S1. (https://doi.org/10.3389/feart.2019.00151.s001). Live-verified UniProtKB reference-proteome grounding across UniProtKB:Q72CI8 (Q72CI8_NITV2, sulfate adenylyltransferase, gene_symbol: sat, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:Q72DT2 (Q72DT2_NITV2, Adenylyl-sulphate reductase, alpha subunit, gene_symbol: aprA, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:Q72DT3 (Q72DT3_NITV2, Adenylylsulphate reductase, beta subunit, gene_symbol: aprB, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:P45574 (DSVA_NITV2, Sulfite reductase, dissimilatory-type subunit alpha, gene_symbol: dsvA, SWISS_PROT, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:P45575 (DSVB_NITV2, Sulfite reductase, dissimilatory-type subunit beta, gene_symbol: dsvB, SWISS_PROT, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194).
 
 ## Scope And Provenance
 
-Cycle 9 Stage 2 causal-graphs review of data/records/vaesite.yaml (SHA-256 cdda6a184440f171208520370bd3fb22aef53cbc2dfad7aadddbaa21abcd94c3) and its canonical EDIT history sidecar (history/records/vaesite/2026-11-05T171248Z-marcin-605be7.yaml) verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source evidence fidelity across causal_graph 'hildenborough_nickel_sulfide_formation_graph' (mechanism_ref: hildenborough_nickel_sulfide_formation, 4 nodes / 3 edges; dvh_sat_aprba_sulfate_activation: [UniProtKB:Q72CI8 (sat, Q72CI8_NITV2, UP000002194), UniProtKB:Q72DT2 (aprA, Q72DT2_NITV2, UP000002194), UniProtKB:Q72DT3 (aprB, Q72DT3_NITV2, UP000002194)]; dvh_dsvab_sulfite_reductase: [UniProtKB:P45574 (dsvA, DSVA_NITV2, UP000002194), UniProtKB:P45575 (dsvB, DSVB_NITV2, UP000002194)]).
+Cycle 9 Stage 2 causal-graphs review of data/records/vaesite.yaml (SHA-256 cdda6a184440f171208520370bd3fb22aef53cbc2dfad7aadddbaa21abcd94c3) and its canonical EDIT history sidecar(s) (history/records/vaesite/2026-11-05T171248Z-marcin-605be7.yaml) verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source evidence fidelity across causal_graph 'hildenborough_nickel_sulfide_formation_graph' (mechanism_ref: hildenborough_nickel_sulfide_formation, 4 nodes / 3 edges; dvh_sat_aprba_sulfate_activation: [UniProtKB:Q72CI8 (sat, Q72CI8_NITV2, UP000002194), UniProtKB:Q72DT2 (aprA, Q72DT2_NITV2, UP000002194), UniProtKB:Q72DT3 (aprB, Q72DT3_NITV2, UP000002194)]; dvh_dsvab_sulfite_reductase: [UniProtKB:P45574 (dsvA, DSVA_NITV2, UP000002194), UniProtKB:P45575 (dsvB, DSVB_NITV2, UP000002194)]).
 
 Selection: Cycle 9 Stage 2 causal_graphs curation for cmmmech:vaesite
 Coverage: full; 1 reviewed / 1 in the declared population.
@@ -39,13 +39,13 @@ Working-tree hashes do not imply those bytes were committed.
 
 graph: supported. Targets: cmmmech:vaesite.
 
-Curated data/records/vaesite.yaml (SHA-256 cdda6a184440f171208520370bd3fb22aef53cbc2dfad7aadddbaa21abcd94c3) with causal_graph 'hildenborough_nickel_sulfide_formation_graph' (mechanism_ref: hildenborough_nickel_sulfide_formation, 4 nodes / 3 edges; dvh_sat_aprba_sulfate_activation: [UniProtKB:Q72CI8 (sat, Q72CI8_NITV2, UP000002194), UniProtKB:Q72DT2 (aprA, Q72DT2_NITV2, UP000002194), UniProtKB:Q72DT3 (aprB, Q72DT3_NITV2, UP000002194)]; dvh_dsvab_sulfite_reductase: [UniProtKB:P45574 (dsvA, DSVA_NITV2, UP000002194), UniProtKB:P45575 (dsvB, DSVB_NITV2, UP000002194)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from mansor2019: Mansor et al. (2019). Biogenic and Abiogenic Nanoparticulate Nickel Sulfide Synthesis, Transformation and Crystal Growth in Aqueous Systems. Frontiers in Earth Science 7:151. (https://doi.org/10.3389/feart.2019.00151); mansor2019_si: Supplementary Material.. Live-verified UniProtKB grounding across UniProtKB:Q72CI8 (Q72CI8_NITV2, sulfate adenylyltransferase, gene_symbol: sat, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:Q72DT2 (Q72DT2_NITV2, Adenylyl-sulphate reductase, alpha subunit, gene_symbol: aprA, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:Q72DT3 (Q72DT3_NITV2, Adenylylsulphate reductase, beta subunit, gene_symbol: aprB, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:P45574 (DSVA_NITV2, Sulfite reductase, dissimilatory-type subunit alpha, gene_symbol: dsvA, SWISS_PROT, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:P45575 (DSVB_NITV2, Sulfite reductase, dissimilatory-type subunit beta, gene_symbol: dsvB, SWISS_PROT, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194).
+Curated data/records/vaesite.yaml (SHA-256 cdda6a184440f171208520370bd3fb22aef53cbc2dfad7aadddbaa21abcd94c3) with causal_graph 'hildenborough_nickel_sulfide_formation_graph' (mechanism_ref: hildenborough_nickel_sulfide_formation, 4 nodes / 3 edges; dvh_sat_aprba_sulfate_activation: [UniProtKB:Q72CI8 (sat, Q72CI8_NITV2, UP000002194), UniProtKB:Q72DT2 (aprA, Q72DT2_NITV2, UP000002194), UniProtKB:Q72DT3 (aprB, Q72DT3_NITV2, UP000002194)]; dvh_dsvab_sulfite_reductase: [UniProtKB:P45574 (dsvA, DSVA_NITV2, UP000002194), UniProtKB:P45575 (dsvB, DSVB_NITV2, UP000002194)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from mansor2019: Mansor, M., Winkler, C., Hochella, M. F. Jr. and Xu, J. (2019). Nanoparticulate Nickel-Hosting Phases in Sulfidic Environments: Effects of Ferrous Iron and Bacterial Presence on Mineral Formation Mechanism and Solid-Phase Nickel Distribution. Frontiers in Earth Science 7:151. DOI 10.3389/feart.2019.00151. Full primary PDF, Methods pp.3–4, Results pp.4–6, Figures 1–11, Tables 1–2 and Discussion pp.6–13. (https://doi.org/10.3389/feart.2019.00151); mansor2019_si: Mansor et al. (2019), associated Supplementary Material, Table_1 DOCX. DOI 10.3389/feart.2019.00151.s001; Frontiers Figshare article 8323754, file 15598037. Nine annotated diffraction panels and Table S1. (https://doi.org/10.3389/feart.2019.00151.s001). Live-verified UniProtKB reference-proteome grounding across UniProtKB:Q72CI8 (Q72CI8_NITV2, sulfate adenylyltransferase, gene_symbol: sat, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:Q72DT2 (Q72DT2_NITV2, Adenylyl-sulphate reductase, alpha subunit, gene_symbol: aprA, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:Q72DT3 (Q72DT3_NITV2, Adenylylsulphate reductase, beta subunit, gene_symbol: aprB, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:P45574 (DSVA_NITV2, Sulfite reductase, dissimilatory-type subunit alpha, gene_symbol: dsvA, SWISS_PROT, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:P45575 (DSVB_NITV2, Sulfite reductase, dissimilatory-type subunit beta, gene_symbol: dsvB, SWISS_PROT, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194).
 
-### Verification of canonical EDIT history sidecar and strict schema validation
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
 
 provenance: supported. Targets: cmmmech:vaesite.
 
-data/records/vaesite.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/vaesite/2026-11-05T171248Z-marcin-605be7.yaml (SHA-256 2ec31acbaea6eb426dc97bb9d90748afa212fb78cdc1f1e986e30fe3f78240be) and passing all LinkML and history validation gates.
+data/records/vaesite.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/vaesite/2026-11-05T171248Z-marcin-605be7.yaml (SHA-256 2ec31acbaea6eb426dc97bb9d90748afa212fb78cdc1f1e986e30fe3f78240be): Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Nitratidesulfovibrio vulgaris str. Hildenborough (NCBITaxon:882; UP000002194) dissimilatory sulfate-reduction protein groundings (sat DVU_1295 UniProtKB:Q72CI8, aprA DVU_0847 UniProtKB:Q72DT2, aprB DVU_0846 UniProtKB:Q72DT3, and Swiss-Prot dsvA/dsvB DVU_0402-DVU_0403 UniProtKB:P45574/UniProtKB:P45575) for conditional vaesite-assigned NiS2 precipitation in No Fe cultures in Mansor et al. (2019).) and passing all LinkML and history validation gates.
 
 ## Findings
 
@@ -61,14 +61,14 @@ No findings recorded within this review's declared scope.
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
 | owner | data/records/vaesite.yaml; Working-tree record data/records/vaesite.yaml (causal_graphs and mechanisms[].protein_examples) | supports | Curated data/records/vaesite.yaml (SHA-256 cdda6a184440f171208520370bd3fb22aef53cbc2dfad7aadddbaa21abcd94c3) with causal_graph 'hildenborough_nickel_sulfide_formation_graph' (mechanism_ref: hildenborough_nickel_sulfide_formation, 4 nodes / 3 edges; dvh_sat_aprba_sulfate_activation: [UniProtKB:Q72CI8 (sat, Q72CI8_NITV2, UP000002194), UniProtKB:Q72DT2 (aprA, Q72DT2_NITV2, UP000002194), UniProtKB:Q72DT3 (aprB, Q72DT3_NITV2, UP000002194)]; dvh_dsvab_sulfite_reductase: [UniProtKB:P45574 (dsvA, DSVA_NITV2, UP000002194), UniProtKB:P45575 (dsvB, DSVB_NITV2, UP000002194)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats. |
-| primary_source | DOI:10.3389/feart.2019.00151; mansor2019: Mansor et al. (2019). Biogenic and Abiogenic Nanoparticulate Nickel Sulfide Synthesis, Transformation and Crystal Growth in Aqueous Systems. Frontiers in Earth Science 7:151. (https://doi.org/10.3389/feart.2019.00151); mansor2019_si: Supplementary Material. | supports | Live-verified UniProtKB reference-proteome grounding across UniProtKB:Q72CI8 (Q72CI8_NITV2, sulfate adenylyltransferase, gene_symbol: sat, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:Q72DT2 (Q72DT2_NITV2, Adenylyl-sulphate reductase, alpha subunit, gene_symbol: aprA, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:Q72DT3 (Q72DT3_NITV2, Adenylylsulphate reductase, beta subunit, gene_symbol: aprB, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:P45574 (DSVA_NITV2, Sulfite reductase, dissimilatory-type subunit alpha, gene_symbol: dsvA, SWISS_PROT, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:P45575 (DSVB_NITV2, Sulfite reductase, dissimilatory-type subunit beta, gene_symbol: dsvB, SWISS_PROT, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194). Primary mechanism source(s) (mansor2019: Mansor et al. (2019). Biogenic and Abiogenic Nanoparticulate Nickel Sulfide Synthesis, Transformation and Crystal Growth in Aqueous Systems. Frontiers in Earth Science 7:151. (https://doi.org/10.3389/feart.2019.00151); mansor2019_si: Supplementary Material.) report culture-level mineralization or bioleaching without single-gene knockouts; supports: partial is strictly preserved on all enzyme-level edges and ProteinExample evidence items. |
+| primary_source | DOI:10.3389/feart.2019.00151; mansor2019: Mansor, M., Winkler, C., Hochella, M. F. Jr. and Xu, J. (2019). Nanoparticulate Nickel-Hosting Phases in Sulfidic Environments: Effects of Ferrous Iron and Bacterial Presence on Mineral Formation Mechanism and Solid-Phase Nickel Distribution. Frontiers in Earth Science 7:151. DOI 10.3389/feart.2019.00151. Full primary PDF, Methods pp.3–4, Results pp.4–6, Figures 1–11, Tables 1–2 and Discussion pp.6–13. (https://doi.org/10.3389/feart.2019.00151); mansor2019_si: Mansor et al. (2019), associated Supplementary Material, Table_1 DOCX. DOI 10.3389/feart.2019.00151.s001; Frontiers Figshare article 8323754, file 15598037. Nine annotated diffraction panels and Table S1. (https://doi.org/10.3389/feart.2019.00151.s001) | supports | Live-verified UniProtKB reference-proteome grounding across UniProtKB:Q72CI8 (Q72CI8_NITV2, sulfate adenylyltransferase, gene_symbol: sat, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:Q72DT2 (Q72DT2_NITV2, Adenylyl-sulphate reductase, alpha subunit, gene_symbol: aprA, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:Q72DT3 (Q72DT3_NITV2, Adenylylsulphate reductase, beta subunit, gene_symbol: aprB, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:P45574 (DSVA_NITV2, Sulfite reductase, dissimilatory-type subunit alpha, gene_symbol: dsvA, SWISS_PROT, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:P45575 (DSVB_NITV2, Sulfite reductase, dissimilatory-type subunit beta, gene_symbol: dsvB, SWISS_PROT, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194). Primary mechanism source(s) (mansor2019: Mansor, M., Winkler, C., Hochella, M. F. Jr. and Xu, J. (2019). Nanoparticulate Nickel-Hosting Phases in Sulfidic Environments: Effects of Ferrous Iron and Bacterial Presence on Mineral Formation Mechanism and Solid-Phase Nickel Distribution. Frontiers in Earth Science 7:151. DOI 10.3389/feart.2019.00151. Full primary PDF, Methods pp.3–4, Results pp.4–6, Figures 1–11, Tables 1–2 and Discussion pp.6–13. (https://doi.org/10.3389/feart.2019.00151); mansor2019_si: Mansor et al. (2019), associated Supplementary Material, Table_1 DOCX. DOI 10.3389/feart.2019.00151.s001; Frontiers Figshare article 8323754, file 15598037. Nine annotated diffraction panels and Table S1. (https://doi.org/10.3389/feart.2019.00151.s001)) report culture-level mineralization or bioleaching without single-gene knockouts; supports: partial is strictly preserved on all enzyme-level edges and ProteinExample evidence items. |
 | edit_history | history/records/vaesite/2026-11-05T171248Z-marcin-605be7.yaml; Canonical EDIT history sidecar history/records/vaesite/2026-11-05T171248Z-marcin-605be7.yaml | supports | Canonical EDIT history sidecar history/records/vaesite/2026-11-05T171248Z-marcin-605be7.yaml (SHA-256 2ec31acbaea6eb426dc97bb9d90748afa212fb78cdc1f1e986e30fe3f78240be): Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Nitratidesulfovibrio vulgaris str. Hildenborough (NCBITaxon:882; UP000002194) dissimilatory sulfate-reduction protein groundings (sat DVU_1295 UniProtKB:Q72CI8, aprA DVU_0847 UniProtKB:Q72DT2, aprB DVU_0846 UniProtKB:Q72DT3, and Swiss-Prot dsvA/dsvB DVU_0402-DVU_0403 UniProtKB:P45574/UniProtKB:P45575) for conditional vaesite-assigned NiS2 precipitation in No Fe cultures in Mansor et al. (2019). |
 | validation | data/records/vaesite.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/vaesite.yaml and history/records/vaesite/2026-11-05T171248Z-marcin-605be7.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
 
 ## Limits And Additional Notes
 
 - Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
-- Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py for cmmmech:vaesite.
+- Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py for cmmmech:vaesite (including Issue #937 review-remediation updates).
 
 ## Complete Structured Record
 
@@ -90,11 +90,15 @@ reviewer:
   independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
     verifying the Cycle 9 Stage 2 causal_graphs and ProteinExample curation in data/records/vaesite.yaml
     (SHA-256 cdda6a184440f171208520370bd3fb22aef53cbc2dfad7aadddbaa21abcd94c3) against
-    live UniProtKB reference proteomes and cited primary source(s) (mansor2019: Mansor
-    et al. (2019). Biogenic and Abiogenic Nanoparticulate Nickel Sulfide Synthesis,
-    Transformation and Crystal Growth in Aqueous Systems. Frontiers in Earth Science
-    7:151. (https://doi.org/10.3389/feart.2019.00151); mansor2019_si: Supplementary
-    Material.).'
+    live UniProtKB reference-proteome grounding and cited primary source(s) (mansor2019:
+    Mansor, M., Winkler, C., Hochella, M. F. Jr. and Xu, J. (2019). Nanoparticulate
+    Nickel-Hosting Phases in Sulfidic Environments: Effects of Ferrous Iron and Bacterial
+    Presence on Mineral Formation Mechanism and Solid-Phase Nickel Distribution. Frontiers
+    in Earth Science 7:151. DOI 10.3389/feart.2019.00151. Full primary PDF, Methods
+    pp.3–4, Results pp.4–6, Figures 1–11, Tables 1–2 and Discussion pp.6–13. (https://doi.org/10.3389/feart.2019.00151);
+    mansor2019_si: Mansor et al. (2019), associated Supplementary Material, Table_1
+    DOCX. DOI 10.3389/feart.2019.00151.s001; Frontiers Figshare article 8323754, file
+    15598037. Nine annotated diffraction panels and Table S1. (https://doi.org/10.3389/feart.2019.00151.s001)).'
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
@@ -127,7 +131,7 @@ targets:
 scope:
   description: 'Cycle 9 Stage 2 causal-graphs review of data/records/vaesite.yaml
     (SHA-256 cdda6a184440f171208520370bd3fb22aef53cbc2dfad7aadddbaa21abcd94c3) and
-    its canonical EDIT history sidecar (history/records/vaesite/2026-11-05T171248Z-marcin-605be7.yaml)
+    its canonical EDIT history sidecar(s) (history/records/vaesite/2026-11-05T171248Z-marcin-605be7.yaml)
     verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding,
     and primary-source evidence fidelity across causal_graph ''hildenborough_nickel_sulfide_formation_graph''
     (mechanism_ref: hildenborough_nickel_sulfide_formation, 4 nodes / 3 edges; dvh_sat_aprba_sulfate_activation:
@@ -160,10 +164,15 @@ evidence:
 - evidence_id: primary_source
   kind: primary_source
   reference: DOI:10.3389/feart.2019.00151
-  locator: 'mansor2019: Mansor et al. (2019). Biogenic and Abiogenic Nanoparticulate
-    Nickel Sulfide Synthesis, Transformation and Crystal Growth in Aqueous Systems.
-    Frontiers in Earth Science 7:151. (https://doi.org/10.3389/feart.2019.00151);
-    mansor2019_si: Supplementary Material.'
+  locator: 'mansor2019: Mansor, M., Winkler, C., Hochella, M. F. Jr. and Xu, J. (2019).
+    Nanoparticulate Nickel-Hosting Phases in Sulfidic Environments: Effects of Ferrous
+    Iron and Bacterial Presence on Mineral Formation Mechanism and Solid-Phase Nickel
+    Distribution. Frontiers in Earth Science 7:151. DOI 10.3389/feart.2019.00151.
+    Full primary PDF, Methods pp.3–4, Results pp.4–6, Figures 1–11, Tables 1–2 and
+    Discussion pp.6–13. (https://doi.org/10.3389/feart.2019.00151); mansor2019_si:
+    Mansor et al. (2019), associated Supplementary Material, Table_1 DOCX. DOI 10.3389/feart.2019.00151.s001;
+    Frontiers Figshare article 8323754, file 15598037. Nine annotated diffraction
+    panels and Table S1. (https://doi.org/10.3389/feart.2019.00151.s001)'
   accessed_at: '2026-11-05T17:27:45Z'
   support: supports
   summary: 'Live-verified UniProtKB reference-proteome grounding across UniProtKB:Q72CI8
@@ -178,12 +187,17 @@ evidence:
     vulgaris str. Hildenborough, UP000002194); UniProtKB:P45575 (DSVB_NITV2, Sulfite
     reductase, dissimilatory-type subunit beta, gene_symbol: dsvB, SWISS_PROT, NCBITaxon:882
     Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194). Primary mechanism
-    source(s) (mansor2019: Mansor et al. (2019). Biogenic and Abiogenic Nanoparticulate
-    Nickel Sulfide Synthesis, Transformation and Crystal Growth in Aqueous Systems.
-    Frontiers in Earth Science 7:151. (https://doi.org/10.3389/feart.2019.00151);
-    mansor2019_si: Supplementary Material.) report culture-level mineralization or
-    bioleaching without single-gene knockouts; supports: partial is strictly preserved
-    on all enzyme-level edges and ProteinExample evidence items.'
+    source(s) (mansor2019: Mansor, M., Winkler, C., Hochella, M. F. Jr. and Xu, J.
+    (2019). Nanoparticulate Nickel-Hosting Phases in Sulfidic Environments: Effects
+    of Ferrous Iron and Bacterial Presence on Mineral Formation Mechanism and Solid-Phase
+    Nickel Distribution. Frontiers in Earth Science 7:151. DOI 10.3389/feart.2019.00151.
+    Full primary PDF, Methods pp.3–4, Results pp.4–6, Figures 1–11, Tables 1–2 and
+    Discussion pp.6–13. (https://doi.org/10.3389/feart.2019.00151); mansor2019_si:
+    Mansor et al. (2019), associated Supplementary Material, Table_1 DOCX. DOI 10.3389/feart.2019.00151.s001;
+    Frontiers Figshare article 8323754, file 15598037. Nine annotated diffraction
+    panels and Table S1. (https://doi.org/10.3389/feart.2019.00151.s001)) report culture-level
+    mineralization or bioleaching without single-gene knockouts; supports: partial
+    is strictly preserved on all enzyme-level edges and ProteinExample evidence items.'
 - evidence_id: edit_history
   kind: record_content
   reference: history/records/vaesite/2026-11-05T171248Z-marcin-605be7.yaml
@@ -254,18 +268,23 @@ assessments:
     [UniProtKB:P45574 (dsvA, DSVA_NITV2, UP000002194), UniProtKB:P45575 (dsvB, DSVB_NITV2,
     UP000002194)]), achieving 100% parity between mechanisms[].protein_examples and
     causal_graphs[].nodes[].protein_examples and preserving source-faithful support
-    levels and caveats from mansor2019: Mansor et al. (2019). Biogenic and Abiogenic
-    Nanoparticulate Nickel Sulfide Synthesis, Transformation and Crystal Growth in
-    Aqueous Systems. Frontiers in Earth Science 7:151. (https://doi.org/10.3389/feart.2019.00151);
-    mansor2019_si: Supplementary Material.. Live-verified UniProtKB grounding across
-    UniProtKB:Q72CI8 (Q72CI8_NITV2, sulfate adenylyltransferase, gene_symbol: sat,
-    TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194);
-    UniProtKB:Q72DT2 (Q72DT2_NITV2, Adenylyl-sulphate reductase, alpha subunit, gene_symbol:
-    aprA, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough,
-    UP000002194); UniProtKB:Q72DT3 (Q72DT3_NITV2, Adenylylsulphate reductase, beta
-    subunit, gene_symbol: aprB, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris
-    str. Hildenborough, UP000002194); UniProtKB:P45574 (DSVA_NITV2, Sulfite reductase,
-    dissimilatory-type subunit alpha, gene_symbol: dsvA, SWISS_PROT, NCBITaxon:882
+    levels and caveats from mansor2019: Mansor, M., Winkler, C., Hochella, M. F. Jr.
+    and Xu, J. (2019). Nanoparticulate Nickel-Hosting Phases in Sulfidic Environments:
+    Effects of Ferrous Iron and Bacterial Presence on Mineral Formation Mechanism
+    and Solid-Phase Nickel Distribution. Frontiers in Earth Science 7:151. DOI 10.3389/feart.2019.00151.
+    Full primary PDF, Methods pp.3–4, Results pp.4–6, Figures 1–11, Tables 1–2 and
+    Discussion pp.6–13. (https://doi.org/10.3389/feart.2019.00151); mansor2019_si:
+    Mansor et al. (2019), associated Supplementary Material, Table_1 DOCX. DOI 10.3389/feart.2019.00151.s001;
+    Frontiers Figshare article 8323754, file 15598037. Nine annotated diffraction
+    panels and Table S1. (https://doi.org/10.3389/feart.2019.00151.s001). Live-verified
+    UniProtKB reference-proteome grounding across UniProtKB:Q72CI8 (Q72CI8_NITV2,
+    sulfate adenylyltransferase, gene_symbol: sat, TREMBL, NCBITaxon:882 Nitratidesulfovibrio
+    vulgaris str. Hildenborough, UP000002194); UniProtKB:Q72DT2 (Q72DT2_NITV2, Adenylyl-sulphate
+    reductase, alpha subunit, gene_symbol: aprA, TREMBL, NCBITaxon:882 Nitratidesulfovibrio
+    vulgaris str. Hildenborough, UP000002194); UniProtKB:Q72DT3 (Q72DT3_NITV2, Adenylylsulphate
+    reductase, beta subunit, gene_symbol: aprB, TREMBL, NCBITaxon:882 Nitratidesulfovibrio
+    vulgaris str. Hildenborough, UP000002194); UniProtKB:P45574 (DSVA_NITV2, Sulfite
+    reductase, dissimilatory-type subunit alpha, gene_symbol: dsvA, SWISS_PROT, NCBITaxon:882
     Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:P45575
     (DSVB_NITV2, Sulfite reductase, dissimilatory-type subunit beta, gene_symbol:
     dsvB, SWISS_PROT, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough,
@@ -277,12 +296,17 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
-  summary: data/records/vaesite.yaml was updated exclusively through scripts/curate_causal_graphs.py
-    (curate_record_file), producing append-only history sidecar history/records/vaesite/2026-11-05T171248Z-marcin-605be7.yaml
-    (SHA-256 2ec31acbaea6eb426dc97bb9d90748afa212fb78cdc1f1e986e30fe3f78240be) and
-    passing all LinkML and history validation gates.
+  summary: 'data/records/vaesite.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar(s) (history/records/vaesite/2026-11-05T171248Z-marcin-605be7.yaml
+    (SHA-256 2ec31acbaea6eb426dc97bb9d90748afa212fb78cdc1f1e986e30fe3f78240be): Add
+    REPRESENTATIVE_EXAMPLE causal graph and live-verified Nitratidesulfovibrio vulgaris
+    str. Hildenborough (NCBITaxon:882; UP000002194) dissimilatory sulfate-reduction
+    protein groundings (sat DVU_1295 UniProtKB:Q72CI8, aprA DVU_0847 UniProtKB:Q72DT2,
+    aprB DVU_0846 UniProtKB:Q72DT3, and Swiss-Prot dsvA/dsvB DVU_0402-DVU_0403 UniProtKB:P45574/UniProtKB:P45575)
+    for conditional vaesite-assigned NiS2 precipitation in No Fe cultures in Mansor
+    et al. (2019).) and passing all LinkML and history validation gates.'
   target_ids:
   - cmmmech:vaesite
   evidence_ids:
@@ -300,26 +324,31 @@ summary: 'Vaesite (cmmmech:vaesite) passes Cycle 9 Stage 2 causal-graphs review 
   [UniProtKB:P45574 (dsvA, DSVA_NITV2, UP000002194), UniProtKB:P45575 (dsvB, DSVB_NITV2,
   UP000002194)]), achieving 100% parity between mechanisms[].protein_examples and
   causal_graphs[].nodes[].protein_examples and preserving source-faithful support
-  levels and experimental caveats from mansor2019: Mansor et al. (2019). Biogenic
-  and Abiogenic Nanoparticulate Nickel Sulfide Synthesis, Transformation and Crystal
-  Growth in Aqueous Systems. Frontiers in Earth Science 7:151. (https://doi.org/10.3389/feart.2019.00151);
-  mansor2019_si: Supplementary Material.. Live-verified UniProtKB reference-proteome
-  grounding across UniProtKB:Q72CI8 (Q72CI8_NITV2, sulfate adenylyltransferase, gene_symbol:
-  sat, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194);
-  UniProtKB:Q72DT2 (Q72DT2_NITV2, Adenylyl-sulphate reductase, alpha subunit, gene_symbol:
-  aprA, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194);
-  UniProtKB:Q72DT3 (Q72DT3_NITV2, Adenylylsulphate reductase, beta subunit, gene_symbol:
-  aprB, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194);
-  UniProtKB:P45574 (DSVA_NITV2, Sulfite reductase, dissimilatory-type subunit alpha,
-  gene_symbol: dsvA, SWISS_PROT, NCBITaxon:882 Nitratidesulfovibrio vulgaris str.
-  Hildenborough, UP000002194); UniProtKB:P45575 (DSVB_NITV2, Sulfite reductase, dissimilatory-type
-  subunit beta, gene_symbol: dsvB, SWISS_PROT, NCBITaxon:882 Nitratidesulfovibrio
-  vulgaris str. Hildenborough, UP000002194).'
+  levels and experimental caveats from mansor2019: Mansor, M., Winkler, C., Hochella,
+  M. F. Jr. and Xu, J. (2019). Nanoparticulate Nickel-Hosting Phases in Sulfidic Environments:
+  Effects of Ferrous Iron and Bacterial Presence on Mineral Formation Mechanism and
+  Solid-Phase Nickel Distribution. Frontiers in Earth Science 7:151. DOI 10.3389/feart.2019.00151.
+  Full primary PDF, Methods pp.3–4, Results pp.4–6, Figures 1–11, Tables 1–2 and Discussion
+  pp.6–13. (https://doi.org/10.3389/feart.2019.00151); mansor2019_si: Mansor et al.
+  (2019), associated Supplementary Material, Table_1 DOCX. DOI 10.3389/feart.2019.00151.s001;
+  Frontiers Figshare article 8323754, file 15598037. Nine annotated diffraction panels
+  and Table S1. (https://doi.org/10.3389/feart.2019.00151.s001). Live-verified UniProtKB
+  reference-proteome grounding across UniProtKB:Q72CI8 (Q72CI8_NITV2, sulfate adenylyltransferase,
+  gene_symbol: sat, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough,
+  UP000002194); UniProtKB:Q72DT2 (Q72DT2_NITV2, Adenylyl-sulphate reductase, alpha
+  subunit, gene_symbol: aprA, TREMBL, NCBITaxon:882 Nitratidesulfovibrio vulgaris
+  str. Hildenborough, UP000002194); UniProtKB:Q72DT3 (Q72DT3_NITV2, Adenylylsulphate
+  reductase, beta subunit, gene_symbol: aprB, TREMBL, NCBITaxon:882 Nitratidesulfovibrio
+  vulgaris str. Hildenborough, UP000002194); UniProtKB:P45574 (DSVA_NITV2, Sulfite
+  reductase, dissimilatory-type subunit alpha, gene_symbol: dsvA, SWISS_PROT, NCBITaxon:882
+  Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194); UniProtKB:P45575
+  (DSVB_NITV2, Sulfite reductase, dissimilatory-type subunit beta, gene_symbol: dsvB,
+  SWISS_PROT, NCBITaxon:882 Nitratidesulfovibrio vulgaris str. Hildenborough, UP000002194).'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes; an independent subagent PR review is executed prior to merge.'
 notes:
-- Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
-  for cmmmech:vaesite.
+- 'Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
+  for cmmmech:vaesite (including Issue #937 review-remediation updates).'
 related_reviews: []
 ```

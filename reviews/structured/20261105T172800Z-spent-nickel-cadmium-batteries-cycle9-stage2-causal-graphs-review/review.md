@@ -11,11 +11,11 @@
 
 ## Summary
 
-Spent nickel-cadmium batteries (cmmmech:spent-nickel-cadmium-batteries) passes Cycle 9 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 fd98b25ab9312af9e65000959d8e464b594ab2e78fe6b69d39fd8bbab2c6a4ba: Curated data/records/spent-nickel-cadmium-batteries.yaml with causal_graph 'acidophilic_cathode_leaching_graph' (mechanism_ref: acidophilic_cathode_leaching, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from sedlakova2017: Sedlakova-Kadukova et al. (2017). Closing the Loop: Key Role of Iron in Metal-Bearing Waste Recycling. Archives of Metallurgy and Materials 62(3):1459-1466. (https://doi.org/10.1515/amm-2017-0226). Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).
+Spent nickel-cadmium batteries (cmmmech:spent-nickel-cadmium-batteries) passes Cycle 9 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 fd98b25ab9312af9e65000959d8e464b594ab2e78fe6b69d39fd8bbab2c6a4ba: Curated data/records/spent-nickel-cadmium-batteries.yaml with causal_graph 'acidophilic_cathode_leaching_graph' (mechanism_ref: acidophilic_cathode_leaching, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from sedlakova2017: Sedlakova-Kadukova, Marcincakova, Mrazikova, Willner and Fornalczyk (2017). Closing the Loop: Key Role of Iron in Metal-Bearing Waste Recycling. Archives of Metallurgy and Materials 62(3):1459–1466. DOI 10.1515/amm-2017-0226. Complete eight-page primary PDF; Methods 2.1–2.4 and NiCd Results 3.1.2, especially original Figure 2 on p.1462. Other waste arms are not imported. (https://doi.org/10.1515/amm-2017-0226). Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).
 
 ## Scope And Provenance
 
-Cycle 9 Stage 2 causal-graphs review of data/records/spent-nickel-cadmium-batteries.yaml (SHA-256 fd98b25ab9312af9e65000959d8e464b594ab2e78fe6b69d39fd8bbab2c6a4ba) and its canonical EDIT history sidecar (history/records/spent-nickel-cadmium-batteries/2026-11-05T172709Z-marcin-7b599d.yaml) verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source evidence fidelity across causal_graph 'acidophilic_cathode_leaching_graph' (mechanism_ref: acidophilic_cathode_leaching, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]).
+Cycle 9 Stage 2 causal-graphs review of data/records/spent-nickel-cadmium-batteries.yaml (SHA-256 fd98b25ab9312af9e65000959d8e464b594ab2e78fe6b69d39fd8bbab2c6a4ba) and its canonical EDIT history sidecar(s) (history/records/spent-nickel-cadmium-batteries/2026-11-05T172709Z-marcin-7b599d.yaml) verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source evidence fidelity across causal_graph 'acidophilic_cathode_leaching_graph' (mechanism_ref: acidophilic_cathode_leaching, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]).
 
 Selection: Cycle 9 Stage 2 causal_graphs curation for cmmmech:spent-nickel-cadmium-batteries
 Coverage: full; 1 reviewed / 1 in the declared population.
@@ -39,13 +39,13 @@ Working-tree hashes do not imply those bytes were committed.
 
 graph: supported. Targets: cmmmech:spent-nickel-cadmium-batteries.
 
-Curated data/records/spent-nickel-cadmium-batteries.yaml (SHA-256 fd98b25ab9312af9e65000959d8e464b594ab2e78fe6b69d39fd8bbab2c6a4ba) with causal_graph 'acidophilic_cathode_leaching_graph' (mechanism_ref: acidophilic_cathode_leaching, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from sedlakova2017: Sedlakova-Kadukova et al. (2017). Closing the Loop: Key Role of Iron in Metal-Bearing Waste Recycling. Archives of Metallurgy and Materials 62(3):1459-1466. (https://doi.org/10.1515/amm-2017-0226). Live-verified UniProtKB grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).
+Curated data/records/spent-nickel-cadmium-batteries.yaml (SHA-256 fd98b25ab9312af9e65000959d8e464b594ab2e78fe6b69d39fd8bbab2c6a4ba) with causal_graph 'acidophilic_cathode_leaching_graph' (mechanism_ref: acidophilic_cathode_leaching, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from sedlakova2017: Sedlakova-Kadukova, Marcincakova, Mrazikova, Willner and Fornalczyk (2017). Closing the Loop: Key Role of Iron in Metal-Bearing Waste Recycling. Archives of Metallurgy and Materials 62(3):1459–1466. DOI 10.1515/amm-2017-0226. Complete eight-page primary PDF; Methods 2.1–2.4 and NiCd Results 3.1.2, especially original Figure 2 on p.1462. Other waste arms are not imported. (https://doi.org/10.1515/amm-2017-0226). Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).
 
-### Verification of canonical EDIT history sidecar and strict schema validation
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
 
 provenance: supported. Targets: cmmmech:spent-nickel-cadmium-batteries.
 
-data/records/spent-nickel-cadmium-batteries.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/spent-nickel-cadmium-batteries/2026-11-05T172709Z-marcin-7b599d.yaml (SHA-256 8753f33e3f19583fa5602a00001e9a3aeee7abe847e0072a022768caee4d5da2) and passing all LinkML and history validation gates.
+data/records/spent-nickel-cadmium-batteries.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/spent-nickel-cadmium-batteries/2026-11-05T172709Z-marcin-7b599d.yaml (SHA-256 8753f33e3f19583fa5602a00001e9a3aeee7abe847e0072a022768caee4d5da2): Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Acidithiobacillus ferrooxidans (NCBITaxon:920 / NCBITaxon:243159; UP000248886 / UP000001362) rus-operon protein groundings (Cyc2 AFE_3153/DN052_11975 UniProtKB:B7JAQ7/UniProtKB:A0A2W1KH68, Swiss-Prot rusticyanin AFE_3146 UniProtKB:B7JAQ0, and Cyc1 AFE_3152 UniProtKB:B7JAQ6) for spent Ni-Cd battery cathode bioleaching in Sedlakova-Kadukova et al. (2017).) and passing all LinkML and history validation gates.
 
 ## Findings
 
@@ -61,14 +61,14 @@ No findings recorded within this review's declared scope.
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
 | owner | data/records/spent-nickel-cadmium-batteries.yaml; Working-tree record data/records/spent-nickel-cadmium-batteries.yaml (causal_graphs and mechanisms[].protein_examples) | supports | Curated data/records/spent-nickel-cadmium-batteries.yaml (SHA-256 fd98b25ab9312af9e65000959d8e464b594ab2e78fe6b69d39fd8bbab2c6a4ba) with causal_graph 'acidophilic_cathode_leaching_graph' (mechanism_ref: acidophilic_cathode_leaching, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_cytochrome: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats. |
-| primary_source | DOI:10.1515/amm-2017-0226; sedlakova2017: Sedlakova-Kadukova et al. (2017). Closing the Loop: Key Role of Iron in Metal-Bearing Waste Recycling. Archives of Metallurgy and Materials 62(3):1459-1466. (https://doi.org/10.1515/amm-2017-0226) | supports | Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362). Primary mechanism source(s) (sedlakova2017: Sedlakova-Kadukova et al. (2017). Closing the Loop: Key Role of Iron in Metal-Bearing Waste Recycling. Archives of Metallurgy and Materials 62(3):1459-1466. (https://doi.org/10.1515/amm-2017-0226)) report culture-level mineralization or bioleaching without single-gene knockouts; supports: partial is strictly preserved on all enzyme-level edges and ProteinExample evidence items. |
+| primary_source | DOI:10.1515/amm-2017-0226; sedlakova2017: Sedlakova-Kadukova, Marcincakova, Mrazikova, Willner and Fornalczyk (2017). Closing the Loop: Key Role of Iron in Metal-Bearing Waste Recycling. Archives of Metallurgy and Materials 62(3):1459–1466. DOI 10.1515/amm-2017-0226. Complete eight-page primary PDF; Methods 2.1–2.4 and NiCd Results 3.1.2, especially original Figure 2 on p.1462. Other waste arms are not imported. (https://doi.org/10.1515/amm-2017-0226) | supports | Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362). Primary mechanism source(s) (sedlakova2017: Sedlakova-Kadukova, Marcincakova, Mrazikova, Willner and Fornalczyk (2017). Closing the Loop: Key Role of Iron in Metal-Bearing Waste Recycling. Archives of Metallurgy and Materials 62(3):1459–1466. DOI 10.1515/amm-2017-0226. Complete eight-page primary PDF; Methods 2.1–2.4 and NiCd Results 3.1.2, especially original Figure 2 on p.1462. Other waste arms are not imported. (https://doi.org/10.1515/amm-2017-0226)) report culture-level mineralization or bioleaching without single-gene knockouts; supports: partial is strictly preserved on all enzyme-level edges and ProteinExample evidence items. |
 | edit_history | history/records/spent-nickel-cadmium-batteries/2026-11-05T172709Z-marcin-7b599d.yaml; Canonical EDIT history sidecar history/records/spent-nickel-cadmium-batteries/2026-11-05T172709Z-marcin-7b599d.yaml | supports | Canonical EDIT history sidecar history/records/spent-nickel-cadmium-batteries/2026-11-05T172709Z-marcin-7b599d.yaml (SHA-256 8753f33e3f19583fa5602a00001e9a3aeee7abe847e0072a022768caee4d5da2): Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Acidithiobacillus ferrooxidans (NCBITaxon:920 / NCBITaxon:243159; UP000248886 / UP000001362) rus-operon protein groundings (Cyc2 AFE_3153/DN052_11975 UniProtKB:B7JAQ7/UniProtKB:A0A2W1KH68, Swiss-Prot rusticyanin AFE_3146 UniProtKB:B7JAQ0, and Cyc1 AFE_3152 UniProtKB:B7JAQ6) for spent Ni-Cd battery cathode bioleaching in Sedlakova-Kadukova et al. (2017). |
 | validation | data/records/spent-nickel-cadmium-batteries.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/spent-nickel-cadmium-batteries.yaml and history/records/spent-nickel-cadmium-batteries/2026-11-05T172709Z-marcin-7b599d.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
 
 ## Limits And Additional Notes
 
 - Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
-- Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py for cmmmech:spent-nickel-cadmium-batteries.
+- Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py for cmmmech:spent-nickel-cadmium-batteries (including Issue #937 review-remediation updates).
 
 ## Complete Structured Record
 
@@ -90,9 +90,12 @@ reviewer:
   independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
     verifying the Cycle 9 Stage 2 causal_graphs and ProteinExample curation in data/records/spent-nickel-cadmium-batteries.yaml
     (SHA-256 fd98b25ab9312af9e65000959d8e464b594ab2e78fe6b69d39fd8bbab2c6a4ba) against
-    live UniProtKB reference proteomes and cited primary source(s) (sedlakova2017:
-    Sedlakova-Kadukova et al. (2017). Closing the Loop: Key Role of Iron in Metal-Bearing
-    Waste Recycling. Archives of Metallurgy and Materials 62(3):1459-1466. (https://doi.org/10.1515/amm-2017-0226)).'
+    live UniProtKB reference-proteome grounding and cited primary source(s) (sedlakova2017:
+    Sedlakova-Kadukova, Marcincakova, Mrazikova, Willner and Fornalczyk (2017). Closing
+    the Loop: Key Role of Iron in Metal-Bearing Waste Recycling. Archives of Metallurgy
+    and Materials 62(3):1459–1466. DOI 10.1515/amm-2017-0226. Complete eight-page
+    primary PDF; Methods 2.1–2.4 and NiCd Results 3.1.2, especially original Figure
+    2 on p.1462. Other waste arms are not imported. (https://doi.org/10.1515/amm-2017-0226)).'
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
@@ -125,7 +128,7 @@ targets:
 scope:
   description: 'Cycle 9 Stage 2 causal-graphs review of data/records/spent-nickel-cadmium-batteries.yaml
     (SHA-256 fd98b25ab9312af9e65000959d8e464b594ab2e78fe6b69d39fd8bbab2c6a4ba) and
-    its canonical EDIT history sidecar (history/records/spent-nickel-cadmium-batteries/2026-11-05T172709Z-marcin-7b599d.yaml)
+    its canonical EDIT history sidecar(s) (history/records/spent-nickel-cadmium-batteries/2026-11-05T172709Z-marcin-7b599d.yaml)
     verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding,
     and primary-source evidence fidelity across causal_graph ''acidophilic_cathode_leaching_graph''
     (mechanism_ref: acidophilic_cathode_leaching, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_cytochrome:
@@ -157,9 +160,11 @@ evidence:
 - evidence_id: primary_source
   kind: primary_source
   reference: DOI:10.1515/amm-2017-0226
-  locator: 'sedlakova2017: Sedlakova-Kadukova et al. (2017). Closing the Loop: Key
-    Role of Iron in Metal-Bearing Waste Recycling. Archives of Metallurgy and Materials
-    62(3):1459-1466. (https://doi.org/10.1515/amm-2017-0226)'
+  locator: 'sedlakova2017: Sedlakova-Kadukova, Marcincakova, Mrazikova, Willner and
+    Fornalczyk (2017). Closing the Loop: Key Role of Iron in Metal-Bearing Waste Recycling.
+    Archives of Metallurgy and Materials 62(3):1459–1466. DOI 10.1515/amm-2017-0226.
+    Complete eight-page primary PDF; Methods 2.1–2.4 and NiCd Results 3.1.2, especially
+    original Figure 2 on p.1462. Other waste arms are not imported. (https://doi.org/10.1515/amm-2017-0226)'
   accessed_at: '2026-11-05T17:27:45Z'
   support: supports
   summary: 'Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7
@@ -170,11 +175,14 @@ evidence:
     rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362);
     UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159
     Acidithiobacillus ferrooxidans ATCC 23270, UP000001362). Primary mechanism source(s)
-    (sedlakova2017: Sedlakova-Kadukova et al. (2017). Closing the Loop: Key Role of
-    Iron in Metal-Bearing Waste Recycling. Archives of Metallurgy and Materials 62(3):1459-1466.
-    (https://doi.org/10.1515/amm-2017-0226)) report culture-level mineralization or
-    bioleaching without single-gene knockouts; supports: partial is strictly preserved
-    on all enzyme-level edges and ProteinExample evidence items.'
+    (sedlakova2017: Sedlakova-Kadukova, Marcincakova, Mrazikova, Willner and Fornalczyk
+    (2017). Closing the Loop: Key Role of Iron in Metal-Bearing Waste Recycling. Archives
+    of Metallurgy and Materials 62(3):1459–1466. DOI 10.1515/amm-2017-0226. Complete
+    eight-page primary PDF; Methods 2.1–2.4 and NiCd Results 3.1.2, especially original
+    Figure 2 on p.1462. Other waste arms are not imported. (https://doi.org/10.1515/amm-2017-0226))
+    report culture-level mineralization or bioleaching without single-gene knockouts;
+    supports: partial is strictly preserved on all enzyme-level edges and ProteinExample
+    evidence items.'
 - evidence_id: edit_history
   kind: record_content
   reference: history/records/spent-nickel-cadmium-batteries/2026-11-05T172709Z-marcin-7b599d.yaml
@@ -243,10 +251,13 @@ assessments:
     UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving
     100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
     and preserving source-faithful support levels and caveats from sedlakova2017:
-    Sedlakova-Kadukova et al. (2017). Closing the Loop: Key Role of Iron in Metal-Bearing
-    Waste Recycling. Archives of Metallurgy and Materials 62(3):1459-1466. (https://doi.org/10.1515/amm-2017-0226).
-    Live-verified UniProtKB grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome
-    c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans
+    Sedlakova-Kadukova, Marcincakova, Mrazikova, Willner and Fornalczyk (2017). Closing
+    the Loop: Key Role of Iron in Metal-Bearing Waste Recycling. Archives of Metallurgy
+    and Materials 62(3):1459–1466. DOI 10.1515/amm-2017-0226. Complete eight-page
+    primary PDF; Methods 2.1–2.4 and NiCd Results 3.1.2, especially original Figure
+    2 on p.1462. Other waste arms are not imported. (https://doi.org/10.1515/amm-2017-0226).
+    Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2,
+    Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans
     ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C,
     gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans,
     UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT,
@@ -260,13 +271,18 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
-  summary: data/records/spent-nickel-cadmium-batteries.yaml was updated exclusively
+  summary: 'data/records/spent-nickel-cadmium-batteries.yaml was updated exclusively
     through scripts/curate_causal_graphs.py (curate_record_file), producing append-only
-    history sidecar history/records/spent-nickel-cadmium-batteries/2026-11-05T172709Z-marcin-7b599d.yaml
-    (SHA-256 8753f33e3f19583fa5602a00001e9a3aeee7abe847e0072a022768caee4d5da2) and
-    passing all LinkML and history validation gates.
+    history sidecar(s) (history/records/spent-nickel-cadmium-batteries/2026-11-05T172709Z-marcin-7b599d.yaml
+    (SHA-256 8753f33e3f19583fa5602a00001e9a3aeee7abe847e0072a022768caee4d5da2): Add
+    REPRESENTATIVE_EXAMPLE causal graph and live-verified Acidithiobacillus ferrooxidans
+    (NCBITaxon:920 / NCBITaxon:243159; UP000248886 / UP000001362) rus-operon protein
+    groundings (Cyc2 AFE_3153/DN052_11975 UniProtKB:B7JAQ7/UniProtKB:A0A2W1KH68, Swiss-Prot
+    rusticyanin AFE_3146 UniProtKB:B7JAQ0, and Cyc1 AFE_3152 UniProtKB:B7JAQ6) for
+    spent Ni-Cd battery cathode bioleaching in Sedlakova-Kadukova et al. (2017).)
+    and passing all LinkML and history validation gates.'
   target_ids:
   - cmmmech:spent-nickel-cadmium-batteries
   evidence_ids:
@@ -285,21 +301,25 @@ summary: 'Spent nickel-cadmium batteries (cmmmech:spent-nickel-cadmium-batteries
   UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100%
   parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
   and preserving source-faithful support levels and experimental caveats from sedlakova2017:
-  Sedlakova-Kadukova et al. (2017). Closing the Loop: Key Role of Iron in Metal-Bearing
-  Waste Recycling. Archives of Metallurgy and Materials 62(3):1459-1466. (https://doi.org/10.1515/amm-2017-0226).
-  Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2,
-  Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans
-  ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C,
-  gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans,
-  UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT,
-  NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6
-  (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus
-  ferrooxidans ATCC 23270, UP000001362).'
+  Sedlakova-Kadukova, Marcincakova, Mrazikova, Willner and Fornalczyk (2017). Closing
+  the Loop: Key Role of Iron in Metal-Bearing Waste Recycling. Archives of Metallurgy
+  and Materials 62(3):1459–1466. DOI 10.1515/amm-2017-0226. Complete eight-page primary
+  PDF; Methods 2.1–2.4 and NiCd Results 3.1.2, especially original Figure 2 on p.1462.
+  Other waste arms are not imported. (https://doi.org/10.1515/amm-2017-0226). Live-verified
+  UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome
+  c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC
+  23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol:
+  DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886);
+  UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159
+  Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2,
+  Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans
+  ATCC 23270, UP000001362).'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes; an independent subagent PR review is executed prior to merge.'
 notes:
-- Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
-  for cmmmech:spent-nickel-cadmium-batteries.
+- 'Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
+  for cmmmech:spent-nickel-cadmium-batteries (including Issue #937 review-remediation
+  updates).'
 related_reviews: []
 ```
