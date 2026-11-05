@@ -113,6 +113,26 @@ mechanisms:
     - source_ref: okibe_2022
       supports: partial
       explanation: Grounded to unique Sulfocyanin entry (SAMN00768000_2232) of Sulfobacillus thermosulfidooxidans DSM 9293 (= strain AT-1, reported in Okibe et al., 2022) for respiratory electron transfer during 45 C concentrate bioleaching; individual gene expression was not directly assayed.
+  - uniprot_accession: UniProtKB:A0A1W1WDD0
+    entry_name: A0A1W1WDD0_SULTA
+    protein_name: Sulfocyanin (SoxE) domain-containing protein
+    gene_symbol: SAMN00768000_1511
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:929705
+      label: Sulfobacillus thermosulfidooxidans DSM 9293
+    reference_proteome_id: UP000192660
+    interpro_ids:
+    - InterPro:IPR008972
+    - InterPro:IPR049544
+    pfam_ids:
+    - Pfam:PF06525
+    functional_role: Terminal-oxidase-cluster sulfocyanin (SoxE) cupredoxin electron carrier (ORF SAMN00768000_1511; 173 aa, RefSeq WP_084661189.1, encoded adjacent to Tat cupredoxin SAMN00768000_1512 and cytochrome c oxidase subunits SAMN00768000_1513-1514) in Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) transferring electrons during aerobic Fe(II) and reduced-sulfur oxidation at 45 C.
+    annotation_note: Grounded to the terminal-oxidase-cluster Sulfocyanin (SoxE) domain-containing protein paralog (SAMN00768000_1511; 173 aa, RefSeq WP_084661189.1, adjacent to cytochrome c oxidase subunits SAMN00768000_1513-1514) in reference-proteome UP000192660 for type strain Sulfobacillus thermosulfidooxidans DSM 9293 = AT-1 (NCBITaxon:929705), complementing Rusticyanin (SAMN00768000_2174) and Sulfocyanin (SAMN00768000_2232) in representing S. thermosulfidooxidans AT-1 (= DSM 9293; NCBITaxon:28034) in the 45 C six-member moderately thermophilic acidophile consortium leaching 20% w/v enargite-pyrite concentrates (DC-I, DC-II, DC-III) in Okibe et al. (2022).
+    evidence:
+    - source_ref: okibe_2022
+      supports: partial
+      explanation: Grounded to terminal-oxidase-cluster Sulfocyanin (SoxE) domain-containing protein (SAMN00768000_1511) of Sulfobacillus thermosulfidooxidans DSM 9293 (= strain AT-1, reported in Okibe et al., 2022) for respiratory electron transfer during 45 C concentrate bioleaching; individual gene expression was not directly assayed.
   evidence:
   - source_ref: okibe_2022
     supports: support
@@ -132,7 +152,7 @@ mechanisms:
 causal_graphs:
 - id: conditional_acidophile_leaching_graph
   name: Moderately thermophilic mixed-acidophile leaching of DC-I, DC-II, and DC-III enargite-pyrite concentrates at 45 C with feed-dependent activated-carbon response
-  description: Causal pathway linking Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) sulfur oxygenase/reductase paralogs (SAMN00768000_1627, SAMN00768000_1798) and blue-copper electron carriers Rusticyanin (SAMN00768000_2174) and Sulfocyanin (SAMN00768000_2232) within the six-member 45 C mixed acidophile culture to feed- and activated-carbon-dependent copper solubilization and amorphous As/Fe/O/Cu/S secondary precipitation across 20% w/v enargite-pyrite concentrates DC-I, DC-II, and DC-III in Okibe et al. (2022).
+  description: Causal pathway linking Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) sulfur oxygenase/reductase paralogs (SAMN00768000_1627, SAMN00768000_1798) and blue-copper electron carriers Rusticyanin (SAMN00768000_2174) and Sulfocyanin / SoxE paralogs (SAMN00768000_2232, SAMN00768000_1511) within the six-member 45 C mixed acidophile culture to feed- and activated-carbon-dependent copper solubilization and amorphous As/Fe/O/Cu/S secondary precipitation across 20% w/v enargite-pyrite concentrates DC-I, DC-II, and DC-III in Okibe et al. (2022).
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: conditional_acidophile_leaching
   nodes:
@@ -188,10 +208,10 @@ causal_graphs:
         supports: partial
         explanation: Grounded to second sulfur oxygenase reductase paralog (SAMN00768000_1798) of Sulfobacillus thermosulfidooxidans DSM 9293 (= strain AT-1, reported in Okibe et al., 2022) for elemental-sulfur disproportionation during 45 C concentrate bioleaching; individual gene expression was not directly assayed.
   - id: rus_soxe_iron_electron_transfer
-    label: Rusticyanin and sulfocyanin blue-copper electron carriers (S. thermosulfidooxidans DSM 9293 SAMN00768000_2174; SAMN00768000_2232)
+    label: Rusticyanin and sulfocyanin (SoxE) blue-copper electron carriers (S. thermosulfidooxidans DSM 9293 SAMN00768000_2174; SAMN00768000_2232; SAMN00768000_1511)
     node_type: GENE_OR_PROTEIN
     gene_symbol: SAMN00768000_2174
-    description: Unique Rusticyanin (SAMN00768000_2174; 258 aa) and full-length Sulfocyanin (SAMN00768000_2232; 175 aa) cupredoxin electron-transfer proteins in Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) mediating aerobic Fe(II) oxidation and ferric-iron regeneration at 45 C.
+    description: Unique Rusticyanin (SAMN00768000_2174; 258 aa) and Sulfocyanin / SoxE cupredoxin electron-transfer paralogs (SAMN00768000_2232, 175 aa; terminal-oxidase-cluster SAMN00768000_1511, 173 aa) in Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) mediating aerobic Fe(II) oxidation and ferric-iron regeneration at 45 C.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A0A1W1WGA9
@@ -235,6 +255,26 @@ causal_graphs:
       - source_ref: okibe_2022
         supports: partial
         explanation: Grounded to unique Sulfocyanin entry (SAMN00768000_2232) of Sulfobacillus thermosulfidooxidans DSM 9293 (= strain AT-1, reported in Okibe et al., 2022) for respiratory electron transfer during 45 C concentrate bioleaching; individual gene expression was not directly assayed.
+    - uniprot_accession: UniProtKB:A0A1W1WDD0
+      entry_name: A0A1W1WDD0_SULTA
+      protein_name: Sulfocyanin (SoxE) domain-containing protein
+      gene_symbol: SAMN00768000_1511
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:929705
+        label: Sulfobacillus thermosulfidooxidans DSM 9293
+      reference_proteome_id: UP000192660
+      interpro_ids:
+      - InterPro:IPR008972
+      - InterPro:IPR049544
+      pfam_ids:
+      - Pfam:PF06525
+      functional_role: Terminal-oxidase-cluster sulfocyanin (SoxE) cupredoxin electron carrier (ORF SAMN00768000_1511; 173 aa, RefSeq WP_084661189.1, encoded adjacent to Tat cupredoxin SAMN00768000_1512 and cytochrome c oxidase subunits SAMN00768000_1513-1514) in Sulfobacillus thermosulfidooxidans DSM 9293 (= AT-1) transferring electrons during aerobic Fe(II) and reduced-sulfur oxidation at 45 C.
+      annotation_note: Grounded to the terminal-oxidase-cluster Sulfocyanin (SoxE) domain-containing protein paralog (SAMN00768000_1511; 173 aa, RefSeq WP_084661189.1, adjacent to cytochrome c oxidase subunits SAMN00768000_1513-1514) in reference-proteome UP000192660 for type strain Sulfobacillus thermosulfidooxidans DSM 9293 = AT-1 (NCBITaxon:929705), complementing Rusticyanin (SAMN00768000_2174) and Sulfocyanin (SAMN00768000_2232) in representing S. thermosulfidooxidans AT-1 (= DSM 9293; NCBITaxon:28034) in the 45 C six-member moderately thermophilic acidophile consortium leaching 20% w/v enargite-pyrite concentrates (DC-I, DC-II, DC-III) in Okibe et al. (2022).
+      evidence:
+      - source_ref: okibe_2022
+        supports: partial
+        explanation: Grounded to terminal-oxidase-cluster Sulfocyanin (SoxE) domain-containing protein (SAMN00768000_1511) of Sulfobacillus thermosulfidooxidans DSM 9293 (= strain AT-1, reported in Okibe et al., 2022) for respiratory electron transfer during 45 C concentrate bioleaching; individual gene expression was not directly assayed.
   - id: moderately_thermophilic_mixed_culture_carbon_regimes
     label: 45 C six-member mixed acidophile culture (Acidiplasma sp. Fv-Ap, A. caldus KU DSM 8584, Am. ferrooxidans ICP DSM 10331, S. sibiricus N1 DSM 17363, S. thermotolerans Kr1 DSM 17362, S. thermosulfidooxidans AT-1 DSM 9293; 10% v/v inoculum in 200 mL pH 1.5 medium at 150 rpm) with 0% vs 0.05% w/v Shirasagi DO-5 carbon
     node_type: CHEMICAL_ENTITY
@@ -255,7 +295,7 @@ causal_graphs:
     target: moderately_thermophilic_mixed_culture_carbon_regimes
     predicate: produces
     relationship: elemental-sulfur disproportionation and sulfuric-acid proton generation at 45 C
-    description: Sulfur oxygenase/reductase paralogs (S. thermosulfidooxidans DSM 9293 SAMN00768000_1627; SAMN00768000_1798) disproportionates elemental sulfur intermediates into sulfur oxyanions and sulfuric-acid protons in 45 C six-member mixed acidophile culture (Acidiplasma sp. Fv-Ap, A. caldus KU DSM 8584, Am. ferrooxidans ICP DSM 10331, S. sibiricus N1 DSM 17363, S. thermotolerans Kr1 DSM 17362, S. thermosulfidooxidans AT-1 DSM 9293; 10% v/v inoculum in 200 mL pH 1.5 medium at 150 rpm) with 0% vs 0.05% w/v Shirasagi DO-5 carbon.
+    description: Sulfur oxygenase/reductase paralogs (S. thermosulfidooxidans DSM 9293 SAMN00768000_1627; SAMN00768000_1798) disproportionate elemental sulfur intermediates into sulfur oxyanions and sulfuric-acid protons in 45 C six-member mixed acidophile culture (Acidiplasma sp. Fv-Ap, A. caldus KU DSM 8584, Am. ferrooxidans ICP DSM 10331, S. sibiricus N1 DSM 17363, S. thermotolerans Kr1 DSM 17362, S. thermosulfidooxidans AT-1 DSM 9293; 10% v/v inoculum in 200 mL pH 1.5 medium at 150 rpm) with 0% vs 0.05% w/v Shirasagi DO-5 carbon.
     evidence:
     - source_ref: okibe_2022
       supports: partial
@@ -264,11 +304,11 @@ causal_graphs:
     target: moderately_thermophilic_mixed_culture_carbon_regimes
     predicate: drives
     relationship: aerobic Fe(II)-to-Fe(III) oxidation and redox-potential control at 45 C
-    description: Rusticyanin and sulfocyanin blue-copper electron carriers (S. thermosulfidooxidans DSM 9293 SAMN00768000_2174; SAMN00768000_2232) mediates respiratory Fe(II) oxidation to regenerate ferric iron (Fe3+) and regulate solution Eh in 45 C six-member mixed acidophile culture (Acidiplasma sp. Fv-Ap, A. caldus KU DSM 8584, Am. ferrooxidans ICP DSM 10331, S. sibiricus N1 DSM 17363, S. thermotolerans Kr1 DSM 17362, S. thermosulfidooxidans AT-1 DSM 9293; 10% v/v inoculum in 200 mL pH 1.5 medium at 150 rpm) with 0% vs 0.05% w/v Shirasagi DO-5 carbon.
+    description: Rusticyanin and sulfocyanin (SoxE) blue-copper electron carriers (S. thermosulfidooxidans DSM 9293 SAMN00768000_2174; SAMN00768000_2232; SAMN00768000_1511) mediate respiratory Fe(II) oxidation to regenerate ferric iron (Fe3+) and regulate solution Eh in 45 C six-member mixed acidophile culture (Acidiplasma sp. Fv-Ap, A. caldus KU DSM 8584, Am. ferrooxidans ICP DSM 10331, S. sibiricus N1 DSM 17363, S. thermotolerans Kr1 DSM 17362, S. thermosulfidooxidans AT-1 DSM 9293; 10% v/v inoculum in 200 mL pH 1.5 medium at 150 rpm) with 0% vs 0.05% w/v Shirasagi DO-5 carbon.
     evidence:
     - source_ref: okibe_2022
       supports: partial
-      explanation: Aerobic Fe(II) oxidation in Sulfobacillus thermosulfidooxidans AT-1 (= DSM 9293) utilizes the reference-proteome blue-copper electron carriers Rusticyanin (SAMN00768000_2174) and Sulfocyanin (SAMN00768000_2232) alongside consortium iron oxidizers to regulate Fe(III)/Fe(II) redox potential in Okibe et al. (2022); terminal community composition was not sequenced.
+      explanation: Aerobic Fe(II) oxidation in Sulfobacillus thermosulfidooxidans AT-1 (= DSM 9293) utilizes the reference-proteome blue-copper electron carriers Rusticyanin (SAMN00768000_2174) and Sulfocyanin / SoxE paralogs (SAMN00768000_2232, SAMN00768000_1511) alongside consortium iron oxidizers to regulate Fe(III)/Fe(II) redox potential in Okibe et al. (2022); terminal community composition was not sequenced.
   - source: moderately_thermophilic_mixed_culture_carbon_regimes
     target: dci_dcii_dciii_enargite_pyrite_flotation_concentrates
     predicate: solubilizes
@@ -300,7 +340,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: 'Align conditional_acidophile_leaching_graph and protein_examples annotations with six-member consortium roster, 200 mL/150 rpm conditions, and DC-I/DC-II/DC-III grades in Okibe et al. (2022) (Issue #925)'
+- timestamp: '2026-11-04T23:38:49Z'
+  curator: marcin
+  action: edit
+  summary: Add terminal-oxidase-cluster Sulfocyanin (SoxE) paralog (UniProtKB:A0A1W1WDD0, SAMN00768000_1511) to conditional_acidophile_leaching_graph and conditional_acidophile_leaching
 history_refs:
 - history/records/enargite-pyrite-concentrate/2026-10-12T111529Z-codex-1c9c39.yaml
 - history/records/enargite-pyrite-concentrate/2026-11-04T210559Z-marcin-40f392.yaml
 - history/records/enargite-pyrite-concentrate/2026-11-04T223801Z-marcin-22932a.yaml
+- history/records/enargite-pyrite-concentrate/2026-11-04T233849Z-marcin-a75de2.yaml
