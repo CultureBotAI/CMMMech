@@ -209,6 +209,39 @@ mechanisms:
     - source_ref: picard2018
       supports: partial
       explanation: Representative Maridesulfovibrio hydrothermalis AM13 = DSM 14728 (NCBITaxon:1121451) dissimilatory sulfate-reduction enzyme generating biogenic sulfide during live-cell mackinawite (FeS) precipitation in Picard et al. (2018); individual sulfate-reduction genes were not mutated, and gamma-inactivated AM13 cells supplied with reagent Na2S also increased mackinawite crystalline domain size.
+  - uniprot_accession: UniProtKB:L0RB25
+    entry_name: L0RB25_9BACT
+    protein_name: Sulfite reductase, dissimilatory-type subunit gamma
+    gene_symbol: dsvC
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:1121451
+      label: Maridesulfovibrio hydrothermalis AM13 = DSM 14728
+    reference_proteome_id: UP000010808
+    ec_numbers:
+    - EC:1.8.99.3
+    interpro_ids:
+    - InterPro:IPR042072
+    - InterPro:IPR025526
+    - InterPro:IPR043163
+    - InterPro:IPR007453
+    pfam_ids:
+    - Pfam:PF04358
+    ncbifam_ids:
+    - NCBIfam:TIGR03342
+    go_terms:
+    - id: GO:0005737
+      label: cytoplasm
+    - id: GO:0097163
+      label: sulfur carrier activity
+    - id: GO:0002143
+      label: tRNA wobble position uridine thiolation
+    functional_role: Dissimilatory-type sulfite reductase gamma / sulfur-carrier subunit DsvC / DsrC (dsvC, ORF DESAM_21662; 105 aa, RefSeq WP_015336542.1; EC 1.8.99.3, TIGR03342, GO:0097163 sulfur carrier activity) partnering with DsvAB (DESAM_20116-DESAM_20117) to reduce sulfite to hydrogen sulfide in Maridesulfovibrio hydrothermalis AM13 = DSM 14728.
+    annotation_note: Grounded to reference-proteome entry UP000010808 for Maridesulfovibrio hydrothermalis AM13 = DSM 14728 (historical Desulfovibrio hydrothermalis AM13; NCBITaxon:1121451; ncbi_am13), matching the exact DSM 14728 strain inoculated at ~10^6 or 10^8 cells/mL into 50 mL anoxic bicarbonate-buffered marine lactate/sulfate medium with nominally 4 mM FeCl2 (measured 3.81 +/- 0.17 mM Fe(II), initial pH 7.03, 35 C) in Picard et al. (2018).
+    evidence:
+    - source_ref: picard2018
+      supports: partial
+      explanation: Representative Maridesulfovibrio hydrothermalis AM13 = DSM 14728 (NCBITaxon:1121451) dissimilatory sulfite reductase gamma / sulfur-carrier subunit (dsvC, DESAM_21662, RefSeq WP_015336542.1; TIGR03342) generating biogenic sulfide with DsvAB (DESAM_20116-DESAM_20117) during live-cell mackinawite (FeS) precipitation in Picard et al. (2018); individual sulfate-reduction genes were not mutated, and gamma-inactivated AM13 cells supplied with reagent Na2S also increased mackinawite crystalline domain size.
   evidence:
   - source_ref: picard2018
     supports: support
@@ -231,7 +264,7 @@ mechanisms:
 causal_graphs:
 - id: am13_sulfide_precipitation_and_biomass_associated_growth_graph
   name: Maridesulfovibrio hydrothermalis AM13 dissimilatory sulfate reduction and biomass-influenced mackinawite (FeS) nucleation and growth
-  description: Causal pathway linking representative Maridesulfovibrio hydrothermalis AM13 = DSM 14728 (NCBITaxon:1121451; reference proteome UP000010808) dissimilatory sulfate-reduction enzymes (sat DESAM_20547, aprA/AprB DESAM_20543-DESAM_20544, and dsvAB DESAM_20116-DESAM_20117) to lactate-driven biogenic sulfide generation in anoxic marine medium (initial pH 7.03, final live-culture pH ~7.06 at 35 C) and reaction with Fe(II) (measured 3.81 +/- 0.17 mM FeCl2) to precipitate powder-XRD-verified mackinawite (FeS) with larger Scherrer crystalline domains when live or gamma-inactivated AM13 biomass encountered Fe(II) prior to sulfide production/addition in Picard et al. (2018), while preserving cell-free Na2S mackinawite formation, vivianite co-precipitation in inactive/abiotic arms, the Table 3 (18.5 +/- 7.7 nm) vs Section 3.2 (18.7 +/- 7.7 nm) inactive-cell c-axis domain discrepancy, and conditional 5-to-11-month partial greigite evolution.
+  description: Causal pathway linking representative Maridesulfovibrio hydrothermalis AM13 = DSM 14728 (NCBITaxon:1121451; reference proteome UP000010808) dissimilatory sulfate-reduction enzymes (sat DESAM_20547, aprA/AprB DESAM_20543-DESAM_20544, and dsvABC DESAM_20116-DESAM_20117 / DESAM_21662) to lactate-driven biogenic sulfide generation in anoxic marine medium (initial pH 7.03, final live-culture pH ~7.06 at 35 C) and reaction with Fe(II) (measured 3.81 +/- 0.17 mM FeCl2) to precipitate powder-XRD-verified mackinawite (FeS) with larger Scherrer crystalline domains when live or gamma-inactivated AM13 biomass encountered Fe(II) prior to sulfide production/addition in Picard et al. (2018), while preserving cell-free Na2S mackinawite formation, vivianite co-precipitation in inactive/abiotic arms, the Table 3 (18.5 +/- 7.7 nm) vs Section 3.2 (18.7 +/- 7.7 nm) inactive-cell c-axis domain discrepancy, and conditional 5-to-11-month partial greigite evolution.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: am13_sulfide_precipitation_and_biomass_associated_growth
   nodes:
@@ -337,10 +370,10 @@ causal_graphs:
         supports: partial
         explanation: Representative Maridesulfovibrio hydrothermalis AM13 = DSM 14728 (NCBITaxon:1121451) dissimilatory sulfate-reduction enzyme generating biogenic sulfide during live-cell mackinawite (FeS) precipitation in Picard et al. (2018); individual sulfate-reduction genes were not mutated, and gamma-inactivated AM13 cells supplied with reagent Na2S also increased mackinawite crystalline domain size.
   - id: am13_dsvab_sulfite_reductase
-    label: Dissimilatory sulfite reductase complex (dsvAB DESAM_20116-DESAM_20117)
+    label: Dissimilatory sulfite reductase complex and DsvC sulfur carrier (dsvAB DESAM_20116-DESAM_20117; dsvC DESAM_21662)
     node_type: GENE_OR_PROTEIN
     gene_symbol: dsvA
-    description: Dissimilatory-type sulfite reductase alpha/beta subunits DsvAB (DESAM_20117 and DESAM_20116) in Maridesulfovibrio hydrothermalis AM13 = DSM 14728 reducing sulfite to dissolved sulfide in live-cell incubations at 35 C.
+    description: Dissimilatory-type sulfite reductase alpha/beta subunits DsvAB (DESAM_20116-DESAM_20117) and gamma sulfur-carrier subunit DsvC (DESAM_21662) in Maridesulfovibrio hydrothermalis AM13 = DSM 14728 reducing sulfite to dissolved hydrogen sulfide during anaerobic lactate oxidation.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:L0R6S6
@@ -431,6 +464,39 @@ causal_graphs:
       - source_ref: picard2018
         supports: partial
         explanation: Representative Maridesulfovibrio hydrothermalis AM13 = DSM 14728 (NCBITaxon:1121451) dissimilatory sulfate-reduction enzyme generating biogenic sulfide during live-cell mackinawite (FeS) precipitation in Picard et al. (2018); individual sulfate-reduction genes were not mutated, and gamma-inactivated AM13 cells supplied with reagent Na2S also increased mackinawite crystalline domain size.
+    - uniprot_accession: UniProtKB:L0RB25
+      entry_name: L0RB25_9BACT
+      protein_name: Sulfite reductase, dissimilatory-type subunit gamma
+      gene_symbol: dsvC
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:1121451
+        label: Maridesulfovibrio hydrothermalis AM13 = DSM 14728
+      reference_proteome_id: UP000010808
+      ec_numbers:
+      - EC:1.8.99.3
+      interpro_ids:
+      - InterPro:IPR042072
+      - InterPro:IPR025526
+      - InterPro:IPR043163
+      - InterPro:IPR007453
+      pfam_ids:
+      - Pfam:PF04358
+      ncbifam_ids:
+      - NCBIfam:TIGR03342
+      go_terms:
+      - id: GO:0005737
+        label: cytoplasm
+      - id: GO:0097163
+        label: sulfur carrier activity
+      - id: GO:0002143
+        label: tRNA wobble position uridine thiolation
+      functional_role: Dissimilatory-type sulfite reductase gamma / sulfur-carrier subunit DsvC / DsrC (dsvC, ORF DESAM_21662; 105 aa, RefSeq WP_015336542.1; EC 1.8.99.3, TIGR03342, GO:0097163 sulfur carrier activity) partnering with DsvAB (DESAM_20116-DESAM_20117) to reduce sulfite to hydrogen sulfide in Maridesulfovibrio hydrothermalis AM13 = DSM 14728.
+      annotation_note: Grounded to reference-proteome entry UP000010808 for Maridesulfovibrio hydrothermalis AM13 = DSM 14728 (historical Desulfovibrio hydrothermalis AM13; NCBITaxon:1121451; ncbi_am13), matching the exact DSM 14728 strain inoculated at ~10^6 or 10^8 cells/mL into 50 mL anoxic bicarbonate-buffered marine lactate/sulfate medium with nominally 4 mM FeCl2 (measured 3.81 +/- 0.17 mM Fe(II), initial pH 7.03, 35 C) in Picard et al. (2018).
+      evidence:
+      - source_ref: picard2018
+        supports: partial
+        explanation: Representative Maridesulfovibrio hydrothermalis AM13 = DSM 14728 (NCBITaxon:1121451) dissimilatory sulfite reductase gamma / sulfur-carrier subunit (dsvC, DESAM_21662, RefSeq WP_015336542.1; TIGR03342) generating biogenic sulfide with DsvAB (DESAM_20116-DESAM_20117) during live-cell mackinawite (FeS) precipitation in Picard et al. (2018); individual sulfate-reduction genes were not mutated, and gamma-inactivated AM13 cells supplied with reagent Na2S also increased mackinawite crystalline domain size.
   - id: fe2_preexposed_am13_biomass_and_sulfide
     label: Dissolved Fe(II) (3.81 +/- 0.17 mM FeCl2) pre-contacted with AM13 biomass and reacting with biogenic or reagent sulfide
     node_type: CELLULAR_STRUCTURE
@@ -446,7 +512,7 @@ causal_graphs:
     target: am13_dsvab_sulfite_reductase
     predicate: supplies_substrate_for
     relationship: ATP-dependent sulfate activation to APS and two-electron reduction to intracellular sulfite
-    description: Sat (DESAM_20547) and AprBA (DESAM_20543-DESAM_20544) convert sulfate via APS to sulfite for terminal reduction by DsvAB (DESAM_20116-DESAM_20117) in live AM13 cultures.
+    description: Sat (DESAM_20547) and AprBA (DESAM_20543-DESAM_20544) convert sulfate via APS to sulfite for terminal reduction by DsvAB-DsvC (DESAM_20116-DESAM_20117, DESAM_21662) in live AM13 cultures.
     evidence:
     - source_ref: picard2018
       supports: partial
@@ -481,6 +547,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Maridesulfovibrio hydrothermalis AM13 = DSM 14728 (NCBITaxon:1121451; UP000010808) dissimilatory sulfate-reduction protein groundings (sat DESAM_20547 UniProtKB:L0R7X0, aprA/AprB DESAM_20543-DESAM_20544 UniProtKB:L0R9F9/UniProtKB:L0RB73, and dsvAB DESAM_20117/DESAM_20116 UniProtKB:L0R6S6/UniProtKB:L0R867) for biomass-influenced mackinawite precipitation in Picard et al. (2018).
+- timestamp: '2026-11-05T19:13:56Z'
+  curator: marcin
+  action: edit
+  summary: Add live-verified Maridesulfovibrio hydrothermalis AM13 = DSM 14728 dissimilatory sulfite reductase gamma / sulfur-carrier subunit DsvC (UniProtKB:L0RB25, DESAM_21662, UP000010808) to mackinawite causal graph and mechanism protein_examples.
 history_refs:
 - history/records/mackinawite/2026-10-11T210936Z-codex-4cb40f.yaml
 - history/records/mackinawite/2026-11-05T171248Z-marcin-e47522.yaml
+- history/records/mackinawite/2026-11-05T191356Z-marcin-c33d88.yaml

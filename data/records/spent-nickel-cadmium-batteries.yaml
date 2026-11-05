@@ -86,6 +86,37 @@ mechanisms:
     - source_ref: sedlakova2017
       supports: partial
       explanation: Representative Acidithiobacillus ferrooxidans (NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting aerobic Fe(II) oxidation to Fe(III) in 9K medium (initial pH 1.5, 2 g <40 um spent Ni-Cd cathode powder in 200 mL medium + 5 mL Smolnik AMD culture inoculum over 28 days) in Sedlakova-Kadukova et al. (2017); Methods describes a pure A. ferrooxidans inoculum whereas the Figure 2 caption labels the biotic arm a mixture with A. thiooxidans, and abiotic ferric sulfate achieved comparable Cd and Ni extraction.
+  - uniprot_accession: UniProtKB:A0A2W1KP86
+    entry_name: A0A2W1KP86_ACIFR
+    protein_name: Rusticyanin
+    gene_symbol: DN052_11940
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:920
+      label: Acidithiobacillus ferrooxidans
+    reference_proteome_id: UP000248886
+    interpro_ids:
+    - InterPro:IPR000923
+    - InterPro:IPR028871
+    - InterPro:IPR050845
+    - InterPro:IPR033138
+    - InterPro:IPR008972
+    - InterPro:IPR001243
+    pfam_ids:
+    - Pfam:PF00127
+    ncbifam_ids:
+    - NCBIfam:TIGR03095
+    go_terms:
+    - id: GO:0005507
+      label: copper ion binding
+    - id: GO:0009055
+      label: electron transfer activity
+    functional_role: Periplasmic type-I blue-copper protein rusticyanin ortholog (ORF DN052_11940; 187 aa, RefSeq WP_012537622.1; PF00127, TIGR03095, GO:0005507 copper ion binding, GO:0009055 electron transfer activity) in the rus operon (DN052_11935-DN052_11975) of Acidithiobacillus ferrooxidans DSM 16523 (UP000248886; NCBITaxon:920), shuttling electrons from outer-membrane Cyc2 (DN052_11975) to periplasmic cytochrome c4 Cyc1 during aerobic Fe(II) oxidation.
+    annotation_note: Grounded to the orthologous 187-aa rus-operon rusticyanin entry (ORF DN052_11940; RefSeq WP_012537622.1) in the species-level Acidithiobacillus ferrooxidans DSM 16523 reference proteome UP000248886 (NCBITaxon:920), providing direct species-taxon parity with mechanism organism NCBITaxon:920 alongside reviewed Swiss-Prot type-strain entry B7JAQ0 (RUS_ACIF2, AFE_3146, UP000001362). Supports aerobic Fe(II) biooxidation in 9K medium during 28-day spent Ni-Cd battery cathode powder leaching in Sedlakova-Kadukova et al. (2017).
+    evidence:
+    - source_ref: sedlakova2017
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans DSM 16523 reference-proteome rusticyanin (DN052_11940, RefSeq WP_012537622.1; NCBITaxon:920, UP000248886) supporting aerobic Fe(II) oxidation to Fe(III) in 9K medium (initial pH 1.5, 2 g <40 um spent Ni-Cd cathode powder in 200 mL medium + 5 mL Smolnik AMD culture inoculum over 28 days) in Sedlakova-Kadukova et al. (2017); Methods describes a pure A. ferrooxidans inoculum whereas the Figure 2 caption labels the biotic arm a mixture with A. thiooxidans, and abiotic ferric sulfate achieved comparable Cd and Ni extraction.
   - uniprot_accession: UniProtKB:B7JAQ6
     entry_name: B7JAQ6_ACIF2
     protein_name: Cytochrome c552
@@ -133,7 +164,7 @@ mechanisms:
 causal_graphs:
 - id: acidophilic_cathode_leaching_graph
   name: Acidithiobacillus ferrooxidans rus-operon Fe(II) biooxidation and ferric/acid dissolution of spent Ni-Cd battery cathode powder
-  description: Causal pathway linking representative Acidithiobacillus ferrooxidans rus-operon proteins (outer-membrane Cyc2 AFE_3153/DN052_11975, reviewed Swiss-Prot rusticyanin AFE_3146, and periplasmic Cyc1 AFE_3152 in reference proteomes UP000001362 and UP000248886) to aerobic Fe(II) oxidation in 9K medium (initial pH 1.5, 200 mL medium + 5 mL inoculum with 2 g <40-um dismantled spent Ni-Cd cathode powder assaying 6.5% Cd and 47.1% Ni) and mobilization of Cd (approaching ~100% by day 28 in Figure 2A) and partial Ni (reported as 55% in the abstract and Results 3.1.2 vs plotted near 45-47% in Figure 2B) in Sedlakova-Kadukova et al. (2017), while preserving comparable extraction in the abiotic ferric-sulfate comparator (44.63 g/L reagent), lower extraction in dilute sulfuric acid alone, and the unresolved Methods (pure A. ferrooxidans) vs Figure 2 caption (A. ferrooxidans + A. thiooxidans mixture) conflict.
+  description: Causal pathway linking representative Acidithiobacillus ferrooxidans rus-operon proteins (outer-membrane Cyc2 AFE_3153/DN052_11975, rusticyanin AFE_3146/DN052_11940, and periplasmic Cyc1 AFE_3152 in reference proteomes UP000001362 and UP000248886) to aerobic Fe(II) oxidation in 9K medium (initial pH 1.5, 200 mL medium + 5 mL inoculum with 2 g <40-um dismantled spent Ni-Cd cathode powder assaying 6.5% Cd and 47.1% Ni) and mobilization of Cd (approaching ~100% by day 28 in Figure 2A) and partial Ni (reported as 55% in the abstract and Results 3.1.2 vs plotted near 45-47% in Figure 2B) in Sedlakova-Kadukova et al. (2017), while preserving comparable extraction in the abiotic ferric-sulfate comparator (44.63 g/L reagent), lower extraction in dilute sulfuric acid alone, and the unresolved Methods (pure A. ferrooxidans) vs Figure 2 caption (A. ferrooxidans + A. thiooxidans mixture) conflict.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: acidophilic_cathode_leaching
   nodes:
@@ -175,10 +206,10 @@ causal_graphs:
         supports: partial
         explanation: Representative Acidithiobacillus ferrooxidans (NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting aerobic Fe(II) oxidation to Fe(III) in 9K medium (initial pH 1.5, 2 g <40 um spent Ni-Cd cathode powder in 200 mL medium + 5 mL Smolnik AMD culture inoculum over 28 days) in Sedlakova-Kadukova et al. (2017); Methods describes a pure A. ferrooxidans inoculum whereas the Figure 2 caption labels the biotic arm a mixture with A. thiooxidans, and abiotic ferric sulfate achieved comparable Cd and Ni extraction.
   - id: aferro_rus_cyc1_periplasmic_relay
-    label: Periplasmic rusticyanin and diheme cytochrome c4 relay (rus AFE_3146; cyc1 AFE_3152)
+    label: Periplasmic rusticyanin and diheme cytochrome c4 relay (rus AFE_3146 / DN052_11940; cyc1 AFE_3152)
     node_type: GENE_OR_PROTEIN
     gene_symbol: rus
-    description: Reviewed Swiss-Prot periplasmic rusticyanin (AFE_3146, RUS_ACIF2) and diheme cytochrome c4 Cyc1 (AFE_3152) transferring electrons from Cyc2 to the terminal oxidase during Fe(II) oxidation in 9K medium.
+    description: Periplasmic rusticyanin (reviewed Swiss-Prot AFE_3146 / RUS_ACIF2 in UP000001362 and DN052_11940 in UP000248886) and diheme cytochrome c4 Cyc1 (AFE_3152) transferring electrons from Cyc2 to the terminal oxidase during Fe(II) oxidation in 9K medium.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:B7JAQ0
@@ -214,6 +245,37 @@ causal_graphs:
       - source_ref: sedlakova2017
         supports: partial
         explanation: Representative Acidithiobacillus ferrooxidans (NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting aerobic Fe(II) oxidation to Fe(III) in 9K medium (initial pH 1.5, 2 g <40 um spent Ni-Cd cathode powder in 200 mL medium + 5 mL Smolnik AMD culture inoculum over 28 days) in Sedlakova-Kadukova et al. (2017); Methods describes a pure A. ferrooxidans inoculum whereas the Figure 2 caption labels the biotic arm a mixture with A. thiooxidans, and abiotic ferric sulfate achieved comparable Cd and Ni extraction.
+    - uniprot_accession: UniProtKB:A0A2W1KP86
+      entry_name: A0A2W1KP86_ACIFR
+      protein_name: Rusticyanin
+      gene_symbol: DN052_11940
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+      reference_proteome_id: UP000248886
+      interpro_ids:
+      - InterPro:IPR000923
+      - InterPro:IPR028871
+      - InterPro:IPR050845
+      - InterPro:IPR033138
+      - InterPro:IPR008972
+      - InterPro:IPR001243
+      pfam_ids:
+      - Pfam:PF00127
+      ncbifam_ids:
+      - NCBIfam:TIGR03095
+      go_terms:
+      - id: GO:0005507
+        label: copper ion binding
+      - id: GO:0009055
+        label: electron transfer activity
+      functional_role: Periplasmic type-I blue-copper protein rusticyanin ortholog (ORF DN052_11940; 187 aa, RefSeq WP_012537622.1; PF00127, TIGR03095, GO:0005507 copper ion binding, GO:0009055 electron transfer activity) in the rus operon (DN052_11935-DN052_11975) of Acidithiobacillus ferrooxidans DSM 16523 (UP000248886; NCBITaxon:920), shuttling electrons from outer-membrane Cyc2 (DN052_11975) to periplasmic cytochrome c4 Cyc1 during aerobic Fe(II) oxidation.
+      annotation_note: Grounded to the orthologous 187-aa rus-operon rusticyanin entry (ORF DN052_11940; RefSeq WP_012537622.1) in the species-level Acidithiobacillus ferrooxidans DSM 16523 reference proteome UP000248886 (NCBITaxon:920), providing direct species-taxon parity with mechanism organism NCBITaxon:920 alongside reviewed Swiss-Prot type-strain entry B7JAQ0 (RUS_ACIF2, AFE_3146, UP000001362). Supports aerobic Fe(II) biooxidation in 9K medium during 28-day spent Ni-Cd battery cathode powder leaching in Sedlakova-Kadukova et al. (2017).
+      evidence:
+      - source_ref: sedlakova2017
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans DSM 16523 reference-proteome rusticyanin (DN052_11940, RefSeq WP_012537622.1; NCBITaxon:920, UP000248886) supporting aerobic Fe(II) oxidation to Fe(III) in 9K medium (initial pH 1.5, 2 g <40 um spent Ni-Cd cathode powder in 200 mL medium + 5 mL Smolnik AMD culture inoculum over 28 days) in Sedlakova-Kadukova et al. (2017); Methods describes a pure A. ferrooxidans inoculum whereas the Figure 2 caption labels the biotic arm a mixture with A. thiooxidans, and abiotic ferric sulfate achieved comparable Cd and Ni extraction.
     - uniprot_accession: UniProtKB:B7JAQ6
       entry_name: B7JAQ6_ACIF2
       protein_name: Cytochrome c552
@@ -260,7 +322,7 @@ causal_graphs:
     target: aferro_rus_cyc1_periplasmic_relay
     predicate: provides_electrons_to
     relationship: extracellular Fe(II) oxidation coupled to periplasmic rusticyanin and Cyc1 electron relay
-    description: Cyc2 (AFE_3153 / DN052_11975) oxidizes dissolved Fe(II) in 9K medium and transfers electrons through periplasmic rusticyanin (AFE_3146) and Cyc1 (AFE_3152).
+    description: Cyc2 (AFE_3153 / DN052_11975) oxidizes dissolved Fe(II) in 9K medium and transfers electrons through periplasmic rusticyanin (AFE_3146 / DN052_11940) and Cyc1 (AFE_3152).
     evidence:
     - source_ref: sedlakova2017
       supports: partial
@@ -295,6 +357,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Acidithiobacillus ferrooxidans (NCBITaxon:920 / NCBITaxon:243159; UP000248886 / UP000001362) rus-operon protein groundings (Cyc2 AFE_3153/DN052_11975 UniProtKB:B7JAQ7/UniProtKB:A0A2W1KH68, Swiss-Prot rusticyanin AFE_3146 UniProtKB:B7JAQ0, and Cyc1 AFE_3152 UniProtKB:B7JAQ6) for spent Ni-Cd battery cathode bioleaching in Sedlakova-Kadukova et al. (2017).
+- timestamp: '2026-11-05T19:13:57Z'
+  curator: marcin
+  action: edit
+  summary: Add species-level Acidithiobacillus ferrooxidans DSM 16523 reference-proteome rusticyanin ortholog (UniProtKB:A0A2W1KP86, DN052_11940, UP000248886) to spent-nickel-cadmium-batteries causal graph and mechanism protein_examples.
 history_refs:
 - history/records/spent-nickel-cadmium-batteries/2026-10-12T140131Z-codex-21a6a4.yaml
 - history/records/spent-nickel-cadmium-batteries/2026-11-05T172709Z-marcin-7b599d.yaml
+- history/records/spent-nickel-cadmium-batteries/2026-11-05T191357Z-marcin-e3c9ee.yaml

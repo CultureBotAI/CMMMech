@@ -217,6 +217,39 @@ mechanisms:
     - source_ref: han_2016
       supports: partial
       explanation: Representative Oleidesulfovibrio alaskensis G20 (NCBITaxon:207559) dissimilatory sulfate-reduction enzyme supporting H2-dependent sulfate reduction (evidenced by black sulfide crusts on iron nails and pH shift from 7.5 to 8.3 versus 7.7/7.9 in sterile controls) during barićite-assigned phosphate precipitation in Han et al. (2016); dissolved sulfate/sulfide trajectories and individual enzyme activities were not directly measured.
+  - uniprot_accession: UniProtKB:Q314T3
+    entry_name: Q314T3_OLEA2
+    protein_name: Sulfite reductase, dissimilatory-type gamma subunit
+    gene_symbol: Dde_0762
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:207559
+      label: Oleidesulfovibrio alaskensis G20
+    reference_proteome_id: UP000002710
+    ec_numbers:
+    - EC:1.8.99.3
+    interpro_ids:
+    - InterPro:IPR042072
+    - InterPro:IPR025526
+    - InterPro:IPR043163
+    - InterPro:IPR007453
+    pfam_ids:
+    - Pfam:PF04358
+    ncbifam_ids:
+    - NCBIfam:TIGR03342
+    go_terms:
+    - id: GO:0005737
+      label: cytoplasm
+    - id: GO:0097163
+      label: sulfur carrier activity
+    - id: GO:0002143
+      label: tRNA wobble position uridine thiolation
+    functional_role: Dissimilatory-type sulfite reductase gamma / sulfur-carrier subunit DsrC / DsvC (locus Dde_0762; 105 aa, RefSeq WP_011366835.1; EC 1.8.99.3, TIGR03342, GO:0097163 sulfur carrier activity) partnering with DsrAB (Dde_0526-Dde_0527) to reduce sulfite to hydrogen sulfide during anaerobic sulfate respiration in Oleidesulfovibrio alaskensis G20.
+    annotation_note: Grounded to reference-proteome entry UP000002710 for Oleidesulfovibrio alaskensis G20 (strain ATCC BAA-1058 / DSM 17464 / G20; NCBITaxon:207559; ncbi_g20), matching the living Desulfovibrio alaskensis G20 strain inoculated into duplicate H2-purged 120-mL serum bottles containing 100 mL acetate-amended synthetic marine pore-water medium (22.3 mM sulfate, 47 mM acetate, 50.7 mM Mg, 0.89 mM phosphate in Main Table 1 vs 0.089 mM in SI Table 1) and an iron finishing nail for 10 months at 25 C in Han et al. (2016).
+    evidence:
+    - source_ref: han_2016
+      supports: partial
+      explanation: Representative Oleidesulfovibrio alaskensis G20 (NCBITaxon:207559) dissimilatory sulfite reductase gamma / sulfur-carrier subunit (Dde_0762, RefSeq WP_011366835.1; TIGR03342) supporting H2-dependent sulfate reduction (evidenced by black sulfide crusts on iron nails and pH shift from 7.5 to 8.3 versus 7.7/7.9 in sterile controls) during barićite-assigned phosphate precipitation in Han et al. (2016); dissolved sulfate/sulfide trajectories and individual enzyme activities were not directly measured.
   evidence:
   - source_ref: han_2016
     supports: support
@@ -236,7 +269,7 @@ mechanisms:
 causal_graphs:
 - id: g20_baricite_assignment_graph
   name: Oleidesulfovibrio alaskensis G20 H2-fed sulfate reduction, medium alkalinization, and barićite-assigned phosphate precipitation
-  description: Causal pathway linking representative Oleidesulfovibrio alaskensis G20 (NCBITaxon:207559; reference proteome UP000002710) dissimilatory sulfate-reduction enzymes (Sat Dde_2265, AprBA Dde_1109-Dde_1110, and DsrAB Dde_0526-Dde_0527) to H2-dependent sulfate reduction in acetate-amended synthetic marine pore-water medium (22.3 mM sulfate, 47 mM acetate, 50.7 mM MgCl2.6H2O, 8.22 mM Ca, 10.58 mM NH4+, 0.89 mM Na2HPO4 in Main Table 1 vs 0.089 mM in SI Table 1, plus an iron finishing nail; 10 months at 25 C), driving sulfide crust formation on the iron nail and pH elevation from 7.5 to 8.3 (versus 7.7 and 7.9 in sterile controls) and yielding recovered solids with Rietveld XRD assignments of 30.6 and 27.8 wt% barićite in samples 1_103 and 2_35 alongside a magnesium-phosphate decahydrate, calcite, and elemental sulfur in Han et al. (2016).
+  description: Causal pathway linking representative Oleidesulfovibrio alaskensis G20 (NCBITaxon:207559; reference proteome UP000002710) dissimilatory sulfate-reduction enzymes (Sat Dde_2265, AprBA Dde_1109-Dde_1110, and DsrAB-DsrC Dde_0526-Dde_0527 / Dde_0762) to H2-dependent sulfate reduction in acetate-amended synthetic marine pore-water medium (22.3 mM sulfate, 47 mM acetate, 50.7 mM MgCl2.6H2O, 8.22 mM Ca, 10.58 mM NH4+, 0.89 mM Na2HPO4 in Main Table 1 vs 0.089 mM in SI Table 1, plus an iron finishing nail; 10 months at 25 C), driving sulfide crust formation on the iron nail and pH elevation from 7.5 to 8.3 (versus 7.7 and 7.9 in sterile controls) and yielding recovered solids with Rietveld XRD assignments of 30.6 and 27.8 wt% barićite in samples 1_103 and 2_35 alongside a magnesium-phosphate decahydrate, calcite, and elemental sulfur in Han et al. (2016).
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: g20_baricite_assignment
   nodes:
@@ -345,10 +378,10 @@ causal_graphs:
         supports: partial
         explanation: Representative Oleidesulfovibrio alaskensis G20 (NCBITaxon:207559) dissimilatory sulfate-reduction enzyme supporting H2-dependent sulfate reduction (evidenced by black sulfide crusts on iron nails and pH shift from 7.5 to 8.3 versus 7.7/7.9 in sterile controls) during barićite-assigned phosphate precipitation in Han et al. (2016); dissolved sulfate/sulfide trajectories and individual enzyme activities were not directly measured.
   - id: g20_dsrab_sulfite_reductase
-    label: Dissimilatory sulfite reductase complex (Dde_0526-Dde_0527)
+    label: Dissimilatory sulfite reductase complex and DsrC sulfur carrier (Dde_0526-Dde_0527; Dde_0762)
     node_type: GENE_OR_PROTEIN
     gene_symbol: Dde_0526
-    description: Dissimilatory-type sulfite reductase alpha/beta subunits DsrAB (Dde_0526-Dde_0527) in Oleidesulfovibrio alaskensis G20 reducing sulfite to sulfide in the presence of an iron finishing nail.
+    description: Dissimilatory-type sulfite reductase alpha/beta subunits DsrAB (Dde_0526-Dde_0527) and gamma sulfur-carrier subunit DsrC (Dde_0762) in Oleidesulfovibrio alaskensis G20 reducing sulfite to sulfide in the presence of an iron finishing nail.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:Q315R9
@@ -440,6 +473,39 @@ causal_graphs:
       - source_ref: han_2016
         supports: partial
         explanation: Representative Oleidesulfovibrio alaskensis G20 (NCBITaxon:207559) dissimilatory sulfate-reduction enzyme supporting H2-dependent sulfate reduction (evidenced by black sulfide crusts on iron nails and pH shift from 7.5 to 8.3 versus 7.7/7.9 in sterile controls) during barićite-assigned phosphate precipitation in Han et al. (2016); dissolved sulfate/sulfide trajectories and individual enzyme activities were not directly measured.
+    - uniprot_accession: UniProtKB:Q314T3
+      entry_name: Q314T3_OLEA2
+      protein_name: Sulfite reductase, dissimilatory-type gamma subunit
+      gene_symbol: Dde_0762
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:207559
+        label: Oleidesulfovibrio alaskensis G20
+      reference_proteome_id: UP000002710
+      ec_numbers:
+      - EC:1.8.99.3
+      interpro_ids:
+      - InterPro:IPR042072
+      - InterPro:IPR025526
+      - InterPro:IPR043163
+      - InterPro:IPR007453
+      pfam_ids:
+      - Pfam:PF04358
+      ncbifam_ids:
+      - NCBIfam:TIGR03342
+      go_terms:
+      - id: GO:0005737
+        label: cytoplasm
+      - id: GO:0097163
+        label: sulfur carrier activity
+      - id: GO:0002143
+        label: tRNA wobble position uridine thiolation
+      functional_role: Dissimilatory-type sulfite reductase gamma / sulfur-carrier subunit DsrC / DsvC (locus Dde_0762; 105 aa, RefSeq WP_011366835.1; EC 1.8.99.3, TIGR03342, GO:0097163 sulfur carrier activity) partnering with DsrAB (Dde_0526-Dde_0527) to reduce sulfite to hydrogen sulfide during anaerobic sulfate respiration in Oleidesulfovibrio alaskensis G20.
+      annotation_note: Grounded to reference-proteome entry UP000002710 for Oleidesulfovibrio alaskensis G20 (strain ATCC BAA-1058 / DSM 17464 / G20; NCBITaxon:207559; ncbi_g20), matching the living Desulfovibrio alaskensis G20 strain inoculated into duplicate H2-purged 120-mL serum bottles containing 100 mL acetate-amended synthetic marine pore-water medium (22.3 mM sulfate, 47 mM acetate, 50.7 mM Mg, 0.89 mM phosphate in Main Table 1 vs 0.089 mM in SI Table 1) and an iron finishing nail for 10 months at 25 C in Han et al. (2016).
+      evidence:
+      - source_ref: han_2016
+        supports: partial
+        explanation: Representative Oleidesulfovibrio alaskensis G20 (NCBITaxon:207559) dissimilatory sulfite reductase gamma / sulfur-carrier subunit (Dde_0762, RefSeq WP_011366835.1; TIGR03342) supporting H2-dependent sulfate reduction (evidenced by black sulfide crusts on iron nails and pH shift from 7.5 to 8.3 versus 7.7/7.9 in sterile controls) during barićite-assigned phosphate precipitation in Han et al. (2016); dissolved sulfate/sulfide trajectories and individual enzyme activities were not directly measured.
   - id: sulfide_generation_iron_nail_and_ph_shift
     label: Sulfide reaction with iron finishing nail and bulk pH rise to 8.3 in Mg/PO4-rich pore-water medium
     node_type: ENVIRONMENTAL_CONDITION
@@ -455,7 +521,7 @@ causal_graphs:
     target: g20_dsrab_sulfite_reductase
     predicate: supplies_substrate_for
     relationship: ATP-dependent sulfate activation to APS and reduction to intracellular sulfite
-    description: Sat (Dde_2265) and AprBA (Dde_1109-Dde_1110) convert medium sulfate (22.3 mM) via APS to sulfite for terminal reduction by DsrAB (Dde_0526-Dde_0527) in H2-purged G20 cultures.
+    description: Sat (Dde_2265) and AprBA (Dde_1109-Dde_1110) convert medium sulfate (22.3 mM) via APS to sulfite for terminal reduction by DsrAB-DsrC (Dde_0526-Dde_0527, Dde_0762) in H2-purged G20 cultures.
     evidence:
     - source_ref: han_2016
       supports: partial
@@ -490,6 +556,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Oleidesulfovibrio alaskensis G20 (NCBITaxon:207559; UP000002710) dissimilatory sulfate-reduction protein groundings (Sat Dde_2265 UniProtKB:Q30Z34, AprBA Dde_1110/Dde_1109 UniProtKB:Q313I5/UniProtKB:Q313I6, and DsrAB Dde_0526/Dde_0527 UniProtKB:Q315R9/UniProtKB:Q315R8) for H2-fed barićite-assigned phosphate precipitation in Han et al. (2016).
+- timestamp: '2026-11-05T19:13:56Z'
+  curator: marcin
+  action: edit
+  summary: Add live-verified Oleidesulfovibrio alaskensis G20 dissimilatory sulfite reductase gamma / sulfur-carrier subunit DsrC (UniProtKB:Q314T3, Dde_0762, UP000002710) to baricite causal graph and mechanism protein_examples.
 history_refs:
 - history/records/baricite/2026-10-14T081704Z-codex-5fa318.yaml
 - history/records/baricite/2026-11-05T171248Z-marcin-0b1453.yaml
+- history/records/baricite/2026-11-05T191356Z-marcin-233ec6.yaml
