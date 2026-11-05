@@ -1,0 +1,95 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 9
+stage: 4
+revision: 1
+outcome: completed
+summary: Completed full-inventory Cycle 9 Stage 4 scientific and structural review of all 688
+  eligible CMMMech records at frozen commit f8f0d8e724bcc013b5e9d98e3d12d5c7557587af across
+  6 disjoint material_kind cohort reviews (66 element, 437 mineral, 7 mineral_group, 36 commodity,
+  31 primary_resource, 111 secondary_resource), 1 cross-cohort causal_graphs/protein_examples
+  review (162 records), and 3 single-record reviews (uranium, rhodochrosite, asbolane). Preserved
+  3 open minor findings (cmmmech-cycle9-stage4-finding-0001, cmmmech-cycle9-stage4-finding-0002,
+  cmmmech-cycle9-stage4-finding-0003) across 7 distinct records for Stage 5 grouped remediation.
+source_revision: f8f0d8e724bcc013b5e9d98e3d12d5c7557587af
+scope_frozen_at: '2026-11-05T20:06:00Z'
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000008/stage-05/revision-0001/evidence.yaml
+  sha256: 2b530258edba7183717a21c989f2ee482ed8d148856df373140c8d4008e01f85
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000009/stage-04/revision-0001/review_report.md
+  sha256: ae1e338fc2e75320a572ed60c92b2bf414baf26aa3b1972341d2e9d828077d25
+  kind: review_report
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000009/stage-04/revision-0001/review_findings.yaml
+  sha256: 15199b54eb0b306af42e55f8a7fbb3ec1b4d370bbade0d70e2d5f8ab9a2bf0d8
+  kind: review_findings
+findings:
+- finding_id: cmmmech-cycle9-stage4-finding-0001
+  status: open
+  summary: 'In data/records/uranium.yaml (cmmmech:uranium, element, Kane et al. 2026 USGS data
+    release DOI:10.5066/P9ERLSM6; causal_graphs[0] mr1_bes_uranium_reduction_graph, lines 197-338)
+    and data/records/vanadium.yaml (cmmmech:vanadium, element, Kane et al. 2026 USGS data release
+    DOI:10.5066/P9ERLSM6; causal_graphs[0] mr1_bes_vanadium_reduction_graph, lines 199-340),
+    oxidized_metal_substrate (uranium.yaml line 295, vanadium.yaml line 297) and reduced_metal_product
+    (uranium.yaml line 300, vanadium.yaml line 302) retain generic template descriptions repeating
+    their capitalized node labels in parentheses (''Terminal electron acceptor substrate (<Label>)
+    in kane_2026_bes.'' and ''Resulting reduced product state (<Label>) in kane_2026_bes.''),
+    and edges[1..3] (uranium.yaml lines 316, 320, 325, 329, 334, 338; vanadium.yaml lines 318,
+    322, 327, 331, 336, 340) interpolate those capitalized labels mid-sentence with generic
+    one-line evidence explanations (''MtrC participates in extracellular reduction of ...'',
+    ''OmcA contributes to extracellular reduction of ...'', ''Shewanella oneidensis MR-1 bioelectrochemical/anaerobic
+    reduction converts ...'') that omit the exact T3/T6/T7/T8/T9 observations. Furthermore,
+    in data/records/uranium.yaml, causal_graphs[0].nodes[4].label (''Cell-associated reduced
+    U(IV) precipitate'', line 298) and causal_graphs[0].edges[3] (supports: support, lines 330-338)
+    assert a reduced U(IV) precipitate with full support, whereas mechanisms[0].description
+    (line 35) and mechanisms[0].evidence[0..2] (lines 114-120) explicitly state that kane_2026_bes
+    (T3_AqueousICPOES.csv, T6, T8_XRD.csv, T9_SEM.pdf pp. 2-6) documents aqueous U depletion
+    (975 mg/kg at BESU.8Vb_W.EQ to <0.1 mg/kg at BESU.8Vb_W.END in biotic vs 914 -> 0.819 mg/kg
+    in abiotic) and U-labelled EDS electrode deposits without assigning a crystalline mineral
+    phase or U(IV) oxidation state and with abiotic removal limiting microbial attribution (supports:
+    partial).'
+- finding_id: cmmmech-cycle9-stage4-finding-0002
+  status: open
+  summary: In data/records/rhodochrosite.yaml (cmmmech:rhodochrosite, mineral, Johnson et al.
+    2016 Environ. Sci. Technol. 50(8):4248-4258, DOI:10.1021/acs.est.5b04834; causal_graphs[0]
+    mr1_mn_oxide_rhodochrosite_graph, lines 203-362), nodes[3].description (oxidized_metal_substrate,
+    lines 313-314) and nodes[4].description (reduced_metal_product, lines 319-320) retain generic
+    template wrappers ('Terminal electron acceptor substrate (...) in johnson2016.' and 'Resulting
+    reduced product state (...) in johnson2016.'), nodes[3].description states 'in Ca-free artificial
+    freshwater medium' whereas mechanisms[0].context (line 55) and Johnson et al. (2016) Methods
+    pp. C-D specify a stirred 1 L modified M1 medium (~6.3 mM freshly synthesized poorly ordered
+    colloidal MnO2, 20 mM lactate, no added phosphate, pH 8 under N2), and edges[1..3] (lines
+    338, 342, 347, 351, 356-357) interpolate capitalized 'Colloidal Mn(IV) oxide' and 'Biogenic
+    rhodochrosite (MnCO3) precipitates and dissolved Mn(II)' mid-sentence with generic one-line
+    explanations on edges[1..2]. Similarly, in data/records/chlorite.yaml (cmmmech:chlorite,
+    mineral_group, Brookshaw et al. 2014 Am. Mineral. 99(8-9):1746-1754, DOI:10.2138/am.2014.4774CCBY;
+    causal_graphs[0] mr1_chlorite_fe_reduction_graph, lines 168-335), edges[1..2] (lines 305-306,
+    310-311, 316-317, 321-322) interpolate capitalized 'Chlorite-associated Fe(III) (ferroan
+    clinochlore)' mid-sentence with generic one-line explanations.
+- finding_id: cmmmech-cycle9-stage4-finding-0003
+  status: open
+  summary: Across the three Geobacter sulfurreducens synthetic Co/Ni-asbolane bioreduction records
+    from Buchanan (2021/2022, University of Manchester PhD thesis, Chapter 4, printed pp. 115-158,
+    Figures 4.1-4.8) — data/records/asbolane.yaml (cmmmech:asbolane, causal_graphs[0] geobacter_associated_reductive_transformation_graph,
+    lines 172-293), data/records/feitknechtite.yaml (cmmmech:feitknechtite, causal_graphs[0]
+    geobacter_feitknechtite_phase_formation_graph, lines 164-285), and data/records/pyrochroite.yaml
+    (cmmmech:pyrochroite, causal_graphs[0] geobacter_pyrochroite_phase_formation_graph, lines
+    160-281) — nodes[2] (asbolane.yaml lines 248-249, feitknechtite.yaml lines 240-241, pyrochroite.yaml
+    lines 236-237) and nodes[3] (asbolane.yaml lines 255-256, feitknechtite.yaml lines 247-248,
+    pyrochroite.yaml lines 242-243) use generic template descriptions that repeat their capitalized
+    node labels verbatim in parentheses ('Starting synthetic Co/Ni-asbolane mineral suspension
+    (<Label>) incubated anaerobically with Geobacter sulfurreducens.' and 'Reduced product assemblage
+    (<Label>) observed in Chapter 4 of Buchanan (2021/2022).'), and causal_graphs[0].description
+    (asbolane.yaml lines 174-177, feitknechtite.yaml lines 166-169, pyrochroite.yaml lines 162-165)
+    plus edges[0].description (asbolane.yaml lines 263-264, feitknechtite.yaml lines 255-256,
+    pyrochroite.yaml lines 250-251) interpolate those capitalized node labels mid-sentence ('...
+    reduction of Synthetic Co/Ni-asbolane suspension ... into Supernatant Mn, Co, and Ni ...'
+    / 'Transient feitknechtite-assigned ...' / 'Pyrochroite-assigned ...').
+groups: []
+carry_forward_ids:
+- cmmmech-cycle9-stage4-finding-0001
+- cmmmech-cycle9-stage4-finding-0002
+- cmmmech-cycle9-stage4-finding-0003
+infra_tasks: []
