@@ -1,0 +1,23 @@
+history_version: 1
+target:
+  kind: record
+  slug: uraninite
+  path: data/records/uraninite.yaml
+session:
+  id: 2026-11-05T100230Z-marcin-a1c810
+  timestamp: '2026-11-05T10:02:30Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Replace generic substrate/product node descriptions with Marshall et al. (2006) assay and HRTEM/SAED/EDX phase details, and lowercase mid-sentence node labels across protein_examples and edges[2..4] in uraninite.yaml (Issue #931)
+  details: Replaced generic parenthetical node descriptions on oxidized_metal_substrate and reduced_metal_product with source-specific assay parameters (250 uM uranyl acetate in 30 mM NaHCO3 buffer, pH 7.0, 10 mM lactate, 30 C) and HRTEM/SAED/EDX 1-5 nm nanocrystalline UO2 characterization (Figure 2I, Figure S4), and lowercased mid-sentence node labels across protein_examples and edges[2..4].
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs

@@ -1,0 +1,23 @@
+history_version: 1
+target:
+  kind: record
+  slug: chromium
+  path: data/records/chromium.yaml
+session:
+  id: 2026-11-05T100230Z-marcin-a1c809
+  timestamp: '2026-11-05T10:02:30Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Replace generic substrate/product node descriptions, qualify TEM-EDX elemental Cr vs inferred Cr(III) valence on reduced_metal_product and edges[3], and lowercase mid-sentence node labels in chromium.yaml (Issue #931)
+  details: 'Replaced generic parenthetical node descriptions on oxidized_metal_substrate and reduced_metal_product with source-specific assay parameters (0.2 mM K2CrO4 in 30 mM NaHCO3 buffer, pH 8, 10 mM lactate, 30 C) and qualified reduced_metal_product and edges[3] (supports: partial) to reflect that Belchik et al. (2011) Figures 2-3 measured elemental Cr by TEM-EDX while Cr(III) valence was inferred from prior studies; lowercased mid-sentence node labels across protein_examples and edges[1..3].'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs

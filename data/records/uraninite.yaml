@@ -116,8 +116,7 @@ mechanisms:
     evidence:
     - source_ref: marshall2006
       supports: support
-      explanation: Cell-surface decaheme cytochrome c mediating extracellular electron transfer to Soluble
-        uranyl carbonate U(VI) complexes.
+      explanation: Cell-surface decaheme cytochrome c MtrC (SO_1778) mediating extracellular electron transfer to soluble uranyl carbonate U(VI) complexes (250 uM uranyl acetate in 30 mM sodium bicarbonate buffer; Marshall et al., 2006, Figure 1 and Figure S2).
   - uniprot_accession: UniProtKB:Q8EG33
     entry_name: Q8EG33_SHEON
     protein_name: Extracelllular iron oxide respiratory system surface decaheme cytochrome c component
@@ -141,8 +140,7 @@ mechanisms:
     evidence:
     - source_ref: marshall2006
       supports: support
-      explanation: Outer-membrane decaheme cytochrome c contributing to extracellular reduction of Soluble
-        uranyl carbonate U(VI) complexes into Extracellular nanocrystalline uraninite (UO2).
+      explanation: Outer-membrane decaheme cytochrome c OmcA (SO_1779) contributing in whole-cell deletion assays to extracellular reduction of soluble uranyl carbonate U(VI) complexes into extracellular nanocrystalline uraninite (UO2) nanoparticles (Marshall et al., 2006, Figure 1; purified OmcA lacked activity toward uranyl citrate in cell-free Figure S2).
   - uniprot_accession: UniProtKB:Q8E8S0
     entry_name: CYMA_SHEON
     protein_name: Tetraheme c-type cytochrome CymA
@@ -296,8 +294,7 @@ causal_graphs:
       evidence:
       - source_ref: marshall2006
         supports: support
-        explanation: Cell-surface decaheme cytochrome c mediating extracellular electron transfer to Soluble
-          uranyl carbonate U(VI) complexes.
+        explanation: Cell-surface decaheme cytochrome c MtrC (SO_1778) mediating extracellular electron transfer to soluble uranyl carbonate U(VI) complexes (250 uM uranyl acetate in 30 mM sodium bicarbonate buffer; Marshall et al., 2006, Figure 1 and Figure S2).
   - id: omca_cytochrome
     label: OmcA outer-membrane decaheme cytochrome c (SO_1779)
     node_type: GENE_OR_PROTEIN
@@ -328,19 +325,16 @@ causal_graphs:
       evidence:
       - source_ref: marshall2006
         supports: support
-        explanation: Outer-membrane decaheme cytochrome c contributing to extracellular reduction of Soluble
-          uranyl carbonate U(VI) complexes into Extracellular nanocrystalline uraninite (UO2).
+        explanation: Outer-membrane decaheme cytochrome c OmcA (SO_1779) contributing in whole-cell deletion assays to extracellular reduction of soluble uranyl carbonate U(VI) complexes into extracellular nanocrystalline uraninite (UO2) nanoparticles (Marshall et al., 2006, Figure 1; purified OmcA lacked activity toward uranyl citrate in cell-free Figure S2).
   - id: oxidized_metal_substrate
     label: Soluble uranyl carbonate U(VI) complexes
     node_type: CHEMICAL_ENTITY
-    description: Oxidized metal species or mineral substrate (Soluble uranyl carbonate U(VI) complexes)
-      accepting extracellular electrons.
+    description: Aqueous hexavalent uranium supplied at 250 uM uranyl acetate in anoxic 30 mM sodium bicarbonate buffer (initial pH 7.0, 10 mM sodium lactate, 2 x 10^8 cells/mL, 30 C, 25 rpm under 80:20 N2:CO2; measured as <0.2 um filtrable U(VI) by kinetic phosphorescence analysis in Marshall et al., 2006).
     protein_grounding_status: NOT_APPLICABLE
   - id: reduced_metal_product
     label: Extracellular nanocrystalline uraninite (UO2)
     node_type: MATERIAL_OR_PHASE
-    description: Reduced metal species or mineral phase (Extracellular nanocrystalline uraninite (UO2))
-      formed by extracellular electron transfer.
+    description: Extracellular and periplasmic 1-5 nm nanocrystalline UO2 particles identified as uraninite by HRTEM lattice fringes, selected-area electron diffraction (SAED), and EDX elemental analysis in carbonate-buffered resting-cell assays (Marshall et al., 2006, Figure 2I and Figure S4), often associated with extracellular polymeric material (Figures 3-6).
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: ccmc_heme_exporter
@@ -368,33 +362,29 @@ causal_graphs:
     target: oxidized_metal_substrate
     predicate: reduces
     relationship: direct or flavin-mediated extracellular electron transfer
-    description: MtrC transfers electrons across the outer membrane interface to Soluble uranyl carbonate
-      U(VI) complexes.
+    description: MtrC transfers electrons across the outer-membrane interface to soluble uranyl carbonate U(VI) complexes.
     evidence:
     - source_ref: marshall2006
       supports: support
-      explanation: MtrC participates in extracellular reduction of Soluble uranyl carbonate U(VI) complexes.
+      explanation: Slower U(VI) loss in delta-mtrC and delta-mtrC/delta-omcA mutants (Figure 1) and direct reduction of uranyl citrate by purified reduced MtrC (Figure S2) support MtrC participation in extracellular reduction of soluble U(VI) complexes in Marshall et al. (2006).
   - source: omca_cytochrome
     target: oxidized_metal_substrate
     predicate: reduces
     relationship: cell-surface decaheme cytochrome reduction
-    description: OmcA transfers electrons at the cell-mineral/solution interface to Soluble uranyl carbonate
-      U(VI) complexes.
+    description: OmcA contributes at the cell surface to whole-cell reduction of soluble uranyl carbonate U(VI) complexes.
     evidence:
     - source_ref: marshall2006
       supports: support
-      explanation: OmcA contributes to extracellular reduction of Soluble uranyl carbonate U(VI) complexes.
+      explanation: Whole-cell delta-omcA and delta-mtrC/delta-omcA deletion comparators show slower U(VI) removal than wild-type MR-1 in carbonate-buffered assays (Figure 1), although purified OmcA did not reduce uranyl citrate in cell-free Figure S2 of Marshall et al. (2006).
   - source: oxidized_metal_substrate
     target: reduced_metal_product
     predicate: transforms_into
     relationship: reductive valence transformation and phase formation
-    description: Reduction of Soluble uranyl carbonate U(VI) complexes yields Extracellular nanocrystalline
-      uraninite (UO2).
+    description: Extracellular reduction of soluble uranyl carbonate U(VI) complexes yields 1-5 nm extracellular and periplasmic nanocrystalline uraninite (UO2) particles.
     evidence:
     - source_ref: marshall2006
       supports: support
-      explanation: Extracellular reduction converts Soluble uranyl carbonate U(VI) complexes into Extracellular
-        nanocrystalline uraninite (UO2).
+      explanation: HRTEM lattice imaging, SAED patterns, and U EDX signals in Figure 2I and Figure S4 of Marshall et al. (2006) confirm conversion of dissolved U(VI) into 1-5 nm nanocrystalline uraninite (UO2) in simple bicarbonate buffer (contrasted with non-uraninite biomass-bound U(IV) in Widdel low-phosphate medium in Bernier-Latmani et al., 2010).
 curation_history:
 - timestamp: '2026-10-11T21:07:17Z'
   curator: codex (GPT-6; codex)
@@ -413,7 +403,12 @@ curation_history:
   action: EDIT
   summary: Set CymA (UniProtKB:Q8E8S0) evidence to partial in uraninite.yaml while retaining support on
     genetically tested CcmC, MtrC, and OmcA.
+- timestamp: '2026-11-05T10:02:30Z'
+  curator: marcin
+  action: edit
+  summary: 'Replace generic substrate/product node descriptions with Marshall et al. (2006) assay and HRTEM/SAED/EDX phase details, and lowercase mid-sentence node labels across protein_examples and edges[2..4] in uraninite.yaml (Issue #931)'
 history_refs:
 - history/records/uraninite/2026-10-11T210704Z-codex-2b5341.yaml
 - history/records/uraninite/2026-10-18T042750Z-antigravity-7ffbf0.yaml
 - history/records/uraninite/2026-10-21T184653Z-claude-550d56.yaml
+- history/records/uraninite/2026-11-05T100230Z-marcin-a1c810.yaml

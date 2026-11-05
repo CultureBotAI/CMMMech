@@ -383,7 +383,7 @@ causal_graphs:
     target: rus_cyc1_periplasmic_electron_transfer
     predicate: provides_electrons_to
     relationship: extracellular Fe(II) oxidation and transmembrane electron delivery into the rus operon periplasmic relay
-    description: Outer-membrane monoheme cytochrome c Cyc2 orthologs (cyc2 AFE_3153; DN052_11975) oxidize extracellular Fe(II) to Fe(III) and deliver electrons across the outer membrane to Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).
+    description: Outer-membrane monoheme cytochrome c Cyc2 orthologs (cyc2 AFE_3153; DN052_11975) oxidize extracellular Fe(II) to Fe(III) and deliver electrons across the outer membrane to periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).
     evidence:
     - source_ref: song2018
       supports: partial
@@ -534,12 +534,12 @@ causal_graphs:
     node_type: CELLULAR_STRUCTURE
     description: 'Three parallel 72 h A. ferrooxidans LX5 treatments in 225 mL solution containing 11.12 g FeSO4.7H2O at initial pH 3.0, 28 C, and 180 rpm inoculated with 25 mL cell suspension (~6.0 x 10^6 cells/mL; Sections 2.2.3 and 3.4): (1) conventional resting cells, (2) cells centrifuged at 20,000 g for 20 min at 4 C and resuspended in their detached EPS supernatant, and (3) centrifuged cells whose detached EPS supernatant was removed and replaced with deionized water.'
     protein_grounding_status: NOT_APPLICABLE
-  - id: attenuated_12_to_40h_ferrous_oxidation_flux
+  - id: unimpaired_72h_ferrous_oxidation_trajectory
     label: Unimpaired 72 h Fe(II) oxidation trajectory across all three EPS-perturbation arms paired with removal of Fe(III)-complexing EPS upon supernatant replacement (Figure 5a)
     node_type: BIOLOGICAL_PROCESS
     description: Nearly identical 72 h Fe(II) oxidation trajectories across conventional cells, EPS-detached-and-retained cells, and EPS-detached-and-removed cells (Figure 5a), demonstrating that 20,000 g EPS stripping removes EPS-mediated Fe(III) complexation/inhibition without impairing cellular Fe(II)-oxidizing activity.
     protein_grounding_status: NOT_APPLICABLE
-  - id: reduced_12_to_40h_schwertmannite_precipitate_yield
+  - id: enhanced_72h_schwertmannite_precipitate_yield
     label: Increased 72 h dry schwertmannite precipitate mass (1.29 g with EPS removed vs 0.89 g conventional and 0.96 g detached-but-retained; Figure 5b) and higher BET surface area (86.43 m2/g vs 68.23 and 56.76 m2/g; Table 1, Figures 6-7)
     node_type: MATERIAL_OR_PHASE
     description: Collected dry schwertmannite mass at 72 h increases from 0.89 g (conventional cells; BET surface area 68.23 m2/g, pore volume 0.14 cm3/g, pore diameter 7.42 nm) and 0.96 g (EPS detached but retained; BET 56.76 m2/g, 0.11 cm3/g, 6.72 nm) to 1.29 g when detached EPS is removed from the system (BET 86.43 m2/g, 0.21 cm3/g, 8.70 nm; Figure 5b, Table 1), accompanied by more densely needle-covered ~800 nm hedgehog-like spheres (Figure 7) while XRD patterns match PDF 47-1775 in all three arms (Figure 6).
@@ -549,7 +549,7 @@ causal_graphs:
     target: rus_cyc1_periplasmic_electron_transfer
     predicate: provides_electrons_to
     relationship: extracellular Fe(II) oxidation and transmembrane electron delivery into the rus operon periplasmic relay
-    description: Outer-membrane monoheme cytochrome c Cyc2 orthologs (cyc2 AFE_3153; DN052_11975) oxidize extracellular Fe(II) to Fe(III) and deliver electrons across the outer membrane to Periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).
+    description: Outer-membrane monoheme cytochrome c Cyc2 orthologs (cyc2 AFE_3153; DN052_11975) oxidize extracellular Fe(II) to Fe(III) and deliver electrons across the outer membrane to periplasmic rusticyanin and diheme cytochrome c4 Cyc1 (rus AFE_3146; cyc1 AFE_3152).
     evidence:
     - source_ref: song2018
       supports: partial
@@ -564,7 +564,7 @@ causal_graphs:
       supports: partial
       explanation: Sections 2.2.3 and 3.4 and Figure 5a of Song et al. (2018) describe the three-arm 20,000 g centrifugal EPS detachment/removal design and show unchanged Fe(II) oxidation trajectories across all three arms.
   - source: centrifugation_eps_depleted_lx5_cells
-    target: attenuated_12_to_40h_ferrous_oxidation_flux
+    target: unimpaired_72h_ferrous_oxidation_trajectory
     predicate: drives
     relationship: relief of EPS-mediated suppression of Fe(III) hydrolysis while maintaining equivalent 72 h Fe(II) oxidation (Figure 5a-b)
     description: While all three arms oxidize Fe(II) at virtually identical rates over 72 h (Figure 5a), removing the detached EPS supernatant eliminates EPS complexation of Fe(III) and promotes greater ferric hydrolysis and needle growth.
@@ -572,8 +572,8 @@ causal_graphs:
     - source_ref: song2018
       supports: support
       explanation: Section 3.4 and Figure 5a-b of Song et al. (2018) directly show that simply detaching EPS without removing it yields 0.96 g vs 0.89 g precipitate, whereas removing the detached EPS supernatant increases precipitate mass to 1.29 g at identical Fe(II) oxidation kinetics.
-  - source: attenuated_12_to_40h_ferrous_oxidation_flux
-    target: reduced_12_to_40h_schwertmannite_precipitate_yield
+  - source: unimpaired_72h_ferrous_oxidation_trajectory
+    target: enhanced_72h_schwertmannite_precipitate_yield
     predicate: produces
     relationship: increase in 72 h schwertmannite dry mass from 0.89 g / 0.96 g to 1.29 g and BET area from 68.23 / 56.76 m2/g to 86.43 m2/g (Figure 5b, Table 1, Figures 6-7)
     description: Removing detached EPS increases 72 h schwertmannite dry mass to 1.29 g (vs 0.89 g conventional and 0.96 g detached-but-retained; Figure 5b) and raises BET surface area to 86.43 m2/g (Table 1) with more needle-rich ~800 nm spheres (Figure 7) while preserving the PDF 47-1775 schwertmannite XRD pattern (Figure 6).
@@ -606,6 +606,10 @@ curation_history:
   curator: marcin
   action: edit
   summary: Add species-level Acidithiobacillus ferrooxidans DSM 16523 reference-proteome Cyc2 ortholog (UniProtKB:A0A2W1KH68, DN052_11975) to both schwertmannite causal graphs and mechanisms
+- timestamp: '2026-11-05T10:02:30Z'
+  curator: marcin
+  action: edit
+  summary: 'Rename causal_graphs[1].nodes[2..3].id and edges[2..3] endpoints to unimpaired_72h_ferrous_oxidation_trajectory and enhanced_72h_schwertmannite_precipitate_yield, and lowercase mid-sentence Periplasmic rusticyanin in edges[0].description (Issues #929, #930)'
 history_refs:
 - history/records/schwertmannite/2026-10-11T214621Z-codex-af894f.yaml
 - history/records/schwertmannite/2026-10-11T215042Z-codex-fd5c52.yaml
@@ -613,3 +617,4 @@ history_refs:
 - history/records/schwertmannite/2026-11-04T210559Z-marcin-714018.yaml
 - history/records/schwertmannite/2026-11-04T223801Z-marcin-4b4b71.yaml
 - history/records/schwertmannite/2026-11-04T233849Z-marcin-c17d50.yaml
+- history/records/schwertmannite/2026-11-05T100230Z-marcin-a1c801.yaml

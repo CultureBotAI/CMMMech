@@ -60,7 +60,7 @@ mechanisms:
     evidence:
     - source_ref: belchik_2011
       supports: support
-      explanation: Cell-surface decaheme cytochrome c mediating extracellular electron transfer to Dissolved chromate Cr(VI).
+      explanation: Cell-surface decaheme cytochrome c MtrC (SO_1778) mediating extracellular electron transfer to dissolved chromate Cr(VI) (0.2 mM K2CrO4 in resting-cell assays and chromate-dependent catalytic currents on purified-protein electrodes in Belchik et al., 2011).
   - uniprot_accession: UniProtKB:Q8EG33
     entry_name: Q8EG33_SHEON
     protein_name: Extracelllular iron oxide respiratory system surface decaheme cytochrome c component OmcA
@@ -82,7 +82,7 @@ mechanisms:
     evidence:
     - source_ref: belchik_2011
       supports: support
-      explanation: Outer-membrane decaheme cytochrome c contributing to extracellular reduction of Dissolved chromate Cr(VI) into Reduced Cr(III) precipitate/complexes.
+      explanation: Outer-membrane decaheme cytochrome c OmcA (SO_1779) contributing to extracellular reduction of dissolved chromate Cr(VI) into chromium-bearing extracellular precipitates (elemental Cr detected by TEM-EDX in Figures 2-3; Cr(III) valence inferred from earlier studies in Belchik et al., 2011).
   - uniprot_accession: UniProtKB:Q8E8S0
     entry_name: CYMA_SHEON
     protein_name: Tetraheme c-type cytochrome CymA
@@ -180,7 +180,7 @@ causal_graphs:
       evidence:
       - source_ref: belchik_2011
         supports: support
-        explanation: Cell-surface decaheme cytochrome c mediating extracellular electron transfer to Dissolved chromate Cr(VI).
+        explanation: Cell-surface decaheme cytochrome c MtrC (SO_1778) mediating extracellular electron transfer to dissolved chromate Cr(VI) (0.2 mM K2CrO4 in resting-cell assays and chromate-dependent catalytic currents on purified-protein electrodes in Belchik et al., 2011).
   - id: omca_cytochrome
     label: OmcA outer-membrane decaheme cytochrome c (SO_1779)
     node_type: GENE_OR_PROTEIN
@@ -209,16 +209,16 @@ causal_graphs:
       evidence:
       - source_ref: belchik_2011
         supports: support
-        explanation: Outer-membrane decaheme cytochrome c contributing to extracellular reduction of Dissolved chromate Cr(VI) into Reduced Cr(III) precipitate/complexes.
+        explanation: Outer-membrane decaheme cytochrome c OmcA (SO_1779) contributing to extracellular reduction of dissolved chromate Cr(VI) into chromium-bearing extracellular precipitates (elemental Cr detected by TEM-EDX in Figures 2-3; Cr(III) valence inferred from earlier studies in Belchik et al., 2011).
   - id: oxidized_metal_substrate
-    label: Dissolved chromate Cr(VI)
+    label: Dissolved chromate Cr(VI) (0.2 mM K2CrO4)
     node_type: CHEMICAL_ENTITY
-    description: Oxidized metal species or mineral substrate (Dissolved chromate Cr(VI)) accepting extracellular electrons.
+    description: Aqueous hexavalent chromium supplied at 0.2 mM K2CrO4 in 30 mM sodium bicarbonate buffer (initial pH 8, 10 mM sodium lactate, 2 x 10^8 cells/mL, 30 C, 25 rpm under 80:20 N2:CO2; measured as soluble Cr(VI) by diphenylcarbazide in Belchik et al., 2011).
     protein_grounding_status: NOT_APPLICABLE
   - id: reduced_metal_product
-    label: Reduced Cr(III) precipitate/complexes
+    label: Chromium-bearing extracellular precipitates (elemental Cr by TEM-EDX; Cr(III) valence inferred from prior studies)
     node_type: MATERIAL_OR_PHASE
-    description: Reduced metal species or mineral phase (Reduced Cr(III) precipitate/complexes) formed by extracellular electron transfer.
+    description: Extracellular electron-dense precipitates containing elemental Cr detected by TEM-EDX (Figures 2-3 of Belchik et al., 2011); assignment of the reduced product to Cr(III) was inferred from prior studies rather than independently established by oxidation-state spectroscopy in this experiment.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cyma_dehydrogenase
@@ -234,29 +234,29 @@ causal_graphs:
     target: oxidized_metal_substrate
     predicate: reduces
     relationship: direct or flavin-mediated extracellular electron transfer
-    description: MtrC transfers electrons across the outer membrane interface to Dissolved chromate Cr(VI).
+    description: MtrC transfers electrons across the outer-membrane interface to dissolved chromate Cr(VI).
     evidence:
     - source_ref: belchik_2011
       supports: support
-      explanation: MtrC participates in extracellular reduction of Dissolved chromate Cr(VI).
+      explanation: Delta-mtrC and double-deletion resting-cell kinetics (Figure 1) and purified MtrC film voltammetry (Figures 4-5, Table 1) support MtrC-catalyzed extracellular reduction of dissolved chromate Cr(VI) in Belchik et al. (2011).
   - source: omca_cytochrome
     target: oxidized_metal_substrate
     predicate: reduces
     relationship: cell-surface decaheme cytochrome reduction
-    description: OmcA transfers electrons at the cell-mineral/solution interface to Dissolved chromate Cr(VI).
+    description: OmcA transfers electrons at the cell-solution interface to dissolved chromate Cr(VI).
     evidence:
     - source_ref: belchik_2011
       supports: support
-      explanation: OmcA contributes to extracellular reduction of Dissolved chromate Cr(VI).
+      explanation: Delta-omcA and double-deletion resting-cell kinetics (Figure 1) and purified OmcA film voltammetry (Figures 4-5, Table 1) support OmcA-catalyzed extracellular reduction of dissolved chromate Cr(VI) in Belchik et al. (2011).
   - source: oxidized_metal_substrate
     target: reduced_metal_product
     predicate: transforms_into
     relationship: reductive valence transformation and phase formation
-    description: Reduction of Dissolved chromate Cr(VI) yields Reduced Cr(III) precipitate/complexes.
+    description: Extracellular reduction of dissolved chromate Cr(VI) removes aqueous Cr(VI) and forms electron-dense chromium-bearing precipitates (elemental Cr detected by TEM-EDX in Figures 2-3; Cr(III) valence inferred from prior studies rather than measured by oxidation-state spectroscopy).
     evidence:
     - source_ref: belchik_2011
-      supports: support
-      explanation: Extracellular reduction converts Dissolved chromate Cr(VI) into Reduced Cr(III) precipitate/complexes.
+      supports: partial
+      explanation: Belchik et al. (2011) (Figure 1 and Figures 2-3) document aqueous Cr(VI) removal and TEM-EDX detection of elemental Cr in extracellular electron-dense precipitates, while Cr(III) valence is inferred from earlier studies rather than established by oxidation-state spectroscopy and 31.1% residual 4 h reduction rate persists in the delta-mtrC/delta-omcA double mutant.
 curation_history:
 - timestamp: '2026-10-11T04:36:03Z'
   curator: Codex (GPT-6; Codex)
@@ -274,8 +274,13 @@ curation_history:
   curator: claude
   action: edit
   summary: Normalized top-level key ordering in chromium.yaml so sources precedes criticality per CANONICAL_RECORD_KEYS.
+- timestamp: '2026-11-05T10:02:30Z'
+  curator: marcin
+  action: edit
+  summary: 'Replace generic substrate/product node descriptions, qualify TEM-EDX elemental Cr vs inferred Cr(III) valence on reduced_metal_product and edges[3], and lowercase mid-sentence node labels in chromium.yaml (Issue #931)'
 history_refs:
 - history/records/chromium/2026-10-11T043602Z-codex-adf9c7.yaml
 - history/records/chromium/2026-10-18T042750Z-antigravity-284d2a.yaml
 - history/records/chromium/2026-10-21T184653Z-claude-c0aee8.yaml
 - history/records/chromium/2026-10-30T222650Z-claude-5d2065.yaml
+- history/records/chromium/2026-11-05T100230Z-marcin-a1c809.yaml

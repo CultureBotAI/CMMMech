@@ -314,7 +314,7 @@
         </tr>
         <tr id="causal-node-mr1_mtrc_omca_chromate_reduction_graph-oxidized_metal_substrate">
           <td>
-            <strong>Dissolved chromate Cr(VI)</strong><br>
+            <strong>Dissolved chromate Cr(VI) (0.2 mM K2CrO4)</strong><br>
             <code style="font-size: .78rem; color: var(--muted);">oxidized_metal_substrate</code>
           </td>
           <td>
@@ -322,11 +322,11 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Oxidized metal species or mineral substrate (Dissolved chromate Cr(VI)) accepting extracellular electrons.</div>          </td>
+<div>Aqueous hexavalent chromium supplied at 0.2 mM K2CrO4 in 30 mM sodium bicarbonate buffer (initial pH 8, 10 mM sodium lactate, 2 x 10^8 cells/mL, 30 C, 25 rpm under 80:20 N2:CO2; measured as soluble Cr(VI) by diphenylcarbazide in Belchik et al., 2011).</div>          </td>
         </tr>
         <tr id="causal-node-mr1_mtrc_omca_chromate_reduction_graph-reduced_metal_product">
           <td>
-            <strong>Reduced Cr(III) precipitate/complexes</strong><br>
+            <strong>Chromium-bearing extracellular precipitates (elemental Cr by TEM-EDX; Cr(III) valence inferred from prior studies)</strong><br>
             <code style="font-size: .78rem; color: var(--muted);">reduced_metal_product</code>
           </td>
           <td>
@@ -334,7 +334,7 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Reduced metal species or mineral phase (Reduced Cr(III) precipitate/complexes) formed by extracellular electron transfer.</div>          </td>
+<div>Extracellular electron-dense precipitates containing elemental Cr detected by TEM-EDX (Figures 2-3 of Belchik et al., 2011); assignment of the reduced product to Cr(III) was inferred from prior studies rather than independently established by oxidation-state spectroscopy in this experiment.</div>          </td>
         </tr>
       </tbody>
     </table>
@@ -346,13 +346,13 @@
 : CymA transfers electrons from the inner-membrane menaquinone pool to the MtrCAB outer-membrane conduit.[<a href="#source-belchik_2011"><code>belchik_2011</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
         <code>mtrc_cytochrome</code> &rarr; <strong>direct or flavin-mediated extracellular electron transfer</strong> (<code>reduces</code>) &rarr; <code>oxidized_metal_substrate</code>
-: MtrC transfers electrons across the outer membrane interface to Dissolved chromate Cr(VI).[<a href="#source-belchik_2011"><code>belchik_2011</code></a>]      </li>
+: MtrC transfers electrons across the outer-membrane interface to dissolved chromate Cr(VI).[<a href="#source-belchik_2011"><code>belchik_2011</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
         <code>omca_cytochrome</code> &rarr; <strong>cell-surface decaheme cytochrome reduction</strong> (<code>reduces</code>) &rarr; <code>oxidized_metal_substrate</code>
-: OmcA transfers electrons at the cell-mineral/solution interface to Dissolved chromate Cr(VI).[<a href="#source-belchik_2011"><code>belchik_2011</code></a>]      </li>
+: OmcA transfers electrons at the cell-solution interface to dissolved chromate Cr(VI).[<a href="#source-belchik_2011"><code>belchik_2011</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
         <code>oxidized_metal_substrate</code> &rarr; <strong>reductive valence transformation and phase formation</strong> (<code>transforms_into</code>) &rarr; <code>reduced_metal_product</code>
-: Reduction of Dissolved chromate Cr(VI) yields Reduced Cr(III) precipitate/complexes.[<a href="#source-belchik_2011"><code>belchik_2011</code></a>]      </li>
+: Extracellular reduction of dissolved chromate Cr(VI) removes aqueous Cr(VI) and forms electron-dense chromium-bearing precipitates (elemental Cr detected by TEM-EDX in Figures 2-3; Cr(III) valence inferred from prior studies rather than measured by oxidation-state spectroscopy).[<a href="#source-belchik_2011"><code>belchik_2011</code></a>]      </li>
     </ul>
   </div>
 </div>
@@ -419,6 +419,12 @@
         <td><span class="badge">edit</span></td>
         <td>Normalized top-level key ordering in chromium.yaml so sources precedes criticality per CANONICAL_RECORD_KEYS.</td>
       </tr>
+      <tr>
+        <td><code>2026-11-05T10:02:30Z</code></td>
+        <td>marcin</td>
+        <td><span class="badge">edit</span></td>
+        <td>Replace generic substrate/product node descriptions, qualify TEM-EDX elemental Cr vs inferred Cr(III) valence on reduced_metal_product and edges[3], and lowercase mid-sentence node labels in chromium.yaml (Issue #931)</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -428,7 +434,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (683 materials · 609 mechanisms · latest curation 2026-11-04 · corpus digest <code>1b67cb41f6d3</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (683 materials · 609 mechanisms · latest curation 2026-11-05 · corpus digest <code>c66a537af8a8</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·
