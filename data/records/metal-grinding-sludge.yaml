@@ -1,122 +1,305 @@
 id: cmmmech:metal-grinding-sludge
 name: Metal grinding sludge
 material_kind: secondary_resource
-description: >-
-  Sludge generated during grinding of metal workpieces with cooling fluids,
-  represented by an iron-rich sample from Tatra Koprivnice. Material collected
-  from grinding-fluid traps contains metal particles and other phases; it is
-  distinct from elemental iron, a specified alloy and coal-combustion cinder
-  or slag. The evidence concerns the sampled processing residue, not every
-  grinding sludge or an industrial bioleaching operation. No criticality
-  designation is inferred from the metals it contains.
+description: Sludge generated during grinding of metal workpieces with cooling fluids, represented by an iron-rich sample from Tatra Koprivnice. Material collected from grinding-fluid traps contains metal particles and other phases; it is distinct from elemental iron, a specified alloy and coal-combustion cinder or slag. The evidence concerns the sampled processing residue, not every grinding sludge or an industrial bioleaching operation. No criticality designation is inferred from the metals it contains.
 sources:
 - id: fecko1996_tatra
-  title: >-
-    Fecko and Kucerova (1996), Bacterial leaching of waste materials at the
-    Tatra joint stock company, Koprivnice. Mineralia Slovaca 28(5), 388-390.
-    Original publisher issue PDF pages 82-84; grinding-sludge methods,
-    Figures 1-3 and Tables 1 and 3. Tables 2 and 4 and Figures 4-7 concern
-    the separate coal-cinder/slag feed.
+  title: Fecko and Kucerova (1996), Bacterial leaching of waste materials at the Tatra joint stock company, Koprivnice. Mineralia Slovaca 28(5), 388-390. Original publisher issue PDF pages 82-84; grinding-sludge methods, Figures 1-3 and Tables 1 and 3. Tables 2 and 4 and Figures 4-7 concern the separate coal-cinder/slag feed.
   url: https://www.geology.sk/wp-content/uploads/documents/foto/MS/MS-1996-28-5.pdf
   accessed_on: '2026-10-11'
 - id: ncbi_ferrooxidans
-  title: >-
-    NCBI Taxonomy 920, Acidithiobacillus ferrooxidans; Thiobacillus
-    ferrooxidans is a homotypic synonym. Species-level mapping only.
+  title: NCBI Taxonomy 920, Acidithiobacillus ferrooxidans; Thiobacillus ferrooxidans is a homotypic synonym. Species-level mapping only.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=Info
   accessed_on: '2026-10-11'
 mechanisms:
 - id: culture_associated_grinding_sludge_leaching
   name: Acidophile culture-associated leaching of metal grinding sludge
   process: bioleaching
+  description: An acidified laboratory incubation with a source-described pure culture of Thiobacillus ferrooxidans was accompanied by changes in grinding-sludge morphology and elemental composition, increasing reported solution Fe(II) and increasing most-probable-number estimates. These observations support culture-associated leaching under the reported conditions. Without a matched abiotic comparison they do not isolate microbial enhancement over chemical dissolution. Persistent iron-bearing solids and unresolved recovery accounting preclude a complete-extraction or isolated-product claim.
+  context: Page 388 describes sterilized Erlenmeyer flasks containing 10 g waste, 180 mL 9K medium without FeSO4 and 20 mL bacterial suspension. The culture was supplied by the Mining Institute of the Slovak Academy of Sciences in Kosice; no strain accession or experimental stock authentication is reported. Incubation lasted 28 days at 26-30 degrees C, with pH maintained between 1.8 and 2.0. The source does not specify agitation, the adjusting reagent or acid additions, inoculum carry-over chemistry, or sterilization of the waste itself. It reports ICP elemental analysis and EDAX and X-ray characterization. The method used specifically to quantify solution Fe(II), leaching-flask replication, analytical detection limits and a sampling-adjusted mass balance are not described. No analysis dates are supplied for native concentration observations.
   microbial: true
   organisms:
   - id: NCBITaxon:920
     label: Acidithiobacillus ferrooxidans
-  description: >-
-    An acidified laboratory incubation with a source-described pure culture
-    of Thiobacillus ferrooxidans was accompanied by changes in grinding-sludge
-    morphology and elemental composition, increasing reported solution Fe(II)
-    and increasing most-probable-number estimates. These observations support
-    culture-associated leaching under the reported conditions. Without a
-    matched abiotic comparison they do not isolate microbial enhancement
-    over chemical dissolution. Persistent iron-bearing solids and unresolved
-    recovery accounting preclude a complete-extraction or isolated-product claim.
-  context: >-
-    Page 388 describes sterilized Erlenmeyer flasks containing 10 g waste,
-    180 mL 9K medium without FeSO4 and 20 mL bacterial suspension. The culture
-    was supplied by the Mining Institute of the Slovak Academy of Sciences
-    in Kosice; no strain accession or experimental stock authentication is
-    reported. Incubation lasted 28 days at 26-30 degrees C, with pH maintained
-    between 1.8 and 2.0. The source does not specify agitation, the adjusting
-    reagent or acid additions, inoculum carry-over chemistry, or sterilization
-    of the waste itself. It reports ICP elemental analysis and EDAX and X-ray
-    characterization. The method used specifically to quantify solution
-    Fe(II), leaching-flask replication, analytical detection limits and a
-    sampling-adjusted mass balance are not described. No analysis dates are
-    supplied for native concentration observations.
+  protein_examples:
+  - uniprot_accession: UniProtKB:B7JAQ7
+    entry_name: B7JAQ7_ACIF2
+    protein_name: Cytochrome c
+    gene_symbol: cyc2
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    functional_role: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270, catalyzing primary extracellular electron extraction from soluble Fe(II) at low pH.
+    annotation_note: Grounded to type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270 / DSM 14882 / NCIMB 8455; NCBITaxon:243159) as a representative strain-level entry for species-level mechanism organism Acidithiobacillus ferrooxidans (NCBITaxon:920). Supports iron-oxidizing acidophile metabolism in the 28-day Tatra Koprivnice metal-grinding sludge leaching incubation (10 g sludge in 180 mL FeSO4-free 9K medium + 20 mL inoculum at pH 1.8-2.0, 26-30 C) in Fecko and Kucerova (1996).
+    evidence:
+    - source_ref: fecko1996_tatra
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans (historical Thiobacillus ferrooxidans; NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting iron-oxidation-associated bacterial growth (rising MPN counts scored by iron-oxidation color change and increasing solution Fe(II) in Table 3) during 28-day acidified flask incubation of Tatra Koprivnice metal-grinding sludge at pH 1.8-2.0 and 26-30 C in Fecko and Kucerova (1996); the Slovak Academy of Sciences culture was not sequence-authenticated and no matched uninoculated control was reported.
+  - uniprot_accession: UniProtKB:A0A2W1KH68
+    entry_name: A0A2W1KH68_ACIFR
+    protein_name: Cytochrome C
+    gene_symbol: DN052_11975
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:920
+      label: Acidithiobacillus ferrooxidans
+    reference_proteome_id: UP000248886
+    functional_role: Outer-membrane c-type cytochrome Cyc2 homolog (locus DN052_11975) in the species-level Acidithiobacillus ferrooxidans DSM 16523 reference proteome (UP000248886; NCBITaxon:920) mediating initial extracellular Fe(II) oxidation.
+    annotation_note: Grounded to species-level reference proteome UP000248886 (Acidithiobacillus ferrooxidans DSM 16523; NCBITaxon:920), providing direct species-taxon parity with mechanism organism NCBITaxon:920 alongside the ATCC 23270 rus-operon entries. Supports iron-oxidizing acidophile metabolism in the 28-day Tatra Koprivnice metal-grinding sludge leaching incubation (10 g sludge in 180 mL FeSO4-free 9K medium + 20 mL inoculum at pH 1.8-2.0, 26-30 C) in Fecko and Kucerova (1996).
+    evidence:
+    - source_ref: fecko1996_tatra
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans (historical Thiobacillus ferrooxidans; NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting iron-oxidation-associated bacterial growth (rising MPN counts scored by iron-oxidation color change and increasing solution Fe(II) in Table 3) during 28-day acidified flask incubation of Tatra Koprivnice metal-grinding sludge at pH 1.8-2.0 and 26-30 C in Fecko and Kucerova (1996); the Slovak Academy of Sciences culture was not sequence-authenticated and no matched uninoculated control was reported.
+  - uniprot_accession: UniProtKB:B7JAQ0
+    entry_name: RUS_ACIF2
+    protein_name: Rusticyanin
+    gene_symbol: rus
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR000923
+    - InterPro:IPR028871
+    - InterPro:IPR050845
+    - InterPro:IPR033138
+    - InterPro:IPR008972
+    - InterPro:IPR001243
+    pfam_ids:
+    - Pfam:PF00127
+    ncbifam_ids:
+    - NCBIfam:TIGR03095
+    go_terms:
+    - id: GO:0042597
+      label: periplasmic space
+    - id: GO:0005507
+      label: copper ion binding
+    - id: GO:0009055
+      label: electron transfer activity
+    functional_role: Reviewed Swiss-Prot periplasmic blue-copper protein rusticyanin (rus, locus AFE_3146; RUS_ACIF2) shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) during aerobic Fe(II) oxidation.
+    annotation_note: Reviewed Swiss-Prot entry (RUS_ACIF2) in type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270; NCBITaxon:243159). Supports iron-oxidizing acidophile metabolism in the 28-day Tatra Koprivnice metal-grinding sludge leaching incubation (10 g sludge in 180 mL FeSO4-free 9K medium + 20 mL inoculum at pH 1.8-2.0, 26-30 C) in Fecko and Kucerova (1996).
+    evidence:
+    - source_ref: fecko1996_tatra
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans (historical Thiobacillus ferrooxidans; NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting iron-oxidation-associated bacterial growth (rising MPN counts scored by iron-oxidation color change and increasing solution Fe(II) in Table 3) during 28-day acidified flask incubation of Tatra Koprivnice metal-grinding sludge at pH 1.8-2.0 and 26-30 C in Fecko and Kucerova (1996); the Slovak Academy of Sciences culture was not sequence-authenticated and no matched uninoculated control was reported.
+  - uniprot_accession: UniProtKB:B7JAQ6
+    entry_name: B7JAQ6_ACIF2
+    protein_name: Cytochrome c552
+    gene_symbol: cyc1
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR009056
+    - InterPro:IPR036909
+    - InterPro:IPR024167
+    - InterPro:IPR050597
+    pfam_ids:
+    - Pfam:PF00034
+    go_terms:
+    - id: GO:0042597
+      label: periplasmic space
+    - id: GO:0009055
+      label: electron transfer activity
+    - id: GO:0020037
+      label: heme binding
+    - id: GO:0005506
+      label: iron ion binding
+    functional_role: Periplasmic diheme cytochrome c4 Cyc1 (cyc1, locus AFE_3152) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 transferring electrons from rusticyanin (AFE_3146) to the inner-membrane aa3-type cytochrome c oxidase.
+    annotation_note: Grounded to type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270; NCBITaxon:243159). Supports iron-oxidizing acidophile metabolism in the 28-day Tatra Koprivnice metal-grinding sludge leaching incubation (10 g sludge in 180 mL FeSO4-free 9K medium + 20 mL inoculum at pH 1.8-2.0, 26-30 C) in Fecko and Kucerova (1996).
+    evidence:
+    - source_ref: fecko1996_tatra
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans (historical Thiobacillus ferrooxidans; NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting iron-oxidation-associated bacterial growth (rising MPN counts scored by iron-oxidation color change and increasing solution Fe(II) in Table 3) during 28-day acidified flask incubation of Tatra Koprivnice metal-grinding sludge at pH 1.8-2.0 and 26-30 C in Fecko and Kucerova (1996); the Slovak Academy of Sciences culture was not sequence-authenticated and no matched uninoculated control was reported.
   evidence:
   - source_ref: fecko1996_tatra
     supports: support
-    explanation: >-
-      Pages 388-389 identify the grinding-derived feed and the inoculated
-      experiment. Figures 1-3 show the original particles, an iron globule
-      and the altered post-incubation material. The text reports persistence
-      of Fe and Fe3O4 after treatment. Table 1 gives before/after elemental
-      contents, while Table 3 reports increasing Fe(II) in solution and
-      increasing MPN estimates across the four weeks. These are distinct
-      analytical observations, not a single measurement of recovered metal.
+    explanation: Pages 388-389 identify the grinding-derived feed and the inoculated experiment. Figures 1-3 show the original particles, an iron globule and the altered post-incubation material. The text reports persistence of Fe and Fe3O4 after treatment. Table 1 gives before/after elemental contents, while Table 3 reports increasing Fe(II) in solution and increasing MPN estimates across the four weeks. These are distinct analytical observations, not a single measurement of recovered metal.
   - source_ref: fecko1996_tatra
     supports: partial
-    explanation: >-
-      No matched uninoculated leaching arm is reported in the complete
-      article. Acid dissolution, inoculum chemistry and changes in solid
-      mass therefore remain alternative or additional explanations for the
-      observations. Sterilized flasks do not establish a sterile waste feed.
-      The MPN procedure uses five parallel dilution arrays and a two-week
-      incubation at 30 degrees C, with iron-oxidation-associated color scoring;
-      this is an analytical growth assay, not five replicated leaching flasks
-      or direct proof of a particular in-flask dissolution pathway. It does
-      not authenticate the experimental strain or independently establish
-      attachment, enzyme action or microbial necessity.
+    explanation: No matched uninoculated leaching arm is reported in the complete article. Acid dissolution, inoculum chemistry and changes in solid mass therefore remain alternative or additional explanations for the observations. Sterilized flasks do not establish a sterile waste feed. The MPN procedure uses five parallel dilution arrays and a two-week incubation at 30 degrees C, with iron-oxidation-associated color scoring; this is an analytical growth assay, not five replicated leaching flasks or direct proof of a particular in-flask dissolution pathway. It does not authenticate the experimental strain or independently establish attachment, enzyme action or microbial necessity.
   - source_ref: fecko1996_tatra
     supports: partial
-    explanation: >-
-      Table 1 labels a row as recovery into the leach, but no recovery
-      equation or residue-mass denominator is provided. Its Pb, Mn and Fe
-      percentages do not equal simple depletion calculated from the listed
-      before/after concentrations. Such a calculation would itself not be
-      a mass-based recovery yield. The discrepancy is retained without
-      correcting the source or adopting those percentages. Increased relative
-      Ti and Al contents do not establish net uptake or production of these
-      elements. The abstract and results also highlight different sets of
-      best-leached elements; no performance ranking is inferred here.
+    explanation: Table 1 labels a row as recovery into the leach, but no recovery equation or residue-mass denominator is provided. Its Pb, Mn and Fe percentages do not equal simple depletion calculated from the listed before/after concentrations. Such a calculation would itself not be a mass-based recovery yield. The discrepancy is retained without correcting the source or adopting those percentages. Increased relative Ti and Al contents do not establish net uptake or production of these elements. The abstract and results also highlight different sets of best-leached elements; no performance ranking is inferred here.
   - source_ref: fecko1996_tatra
     supports: partial
-    explanation: >-
-      The study's suggestion that adaptation or longer incubation could
-      improve results is not demonstrated by an adapted-culture or duration
-      comparison. Culture survival and changed residues do not establish
-      economic suitability, isolated-metal recovery or industrial deployment.
-      The separate coal-cinder/slag experiment in Tables 2 and 4 and Figures
-      4-7 supplies no grinding-sludge controls or additional replicates; its
-      phase descriptions, production tonnage and outcomes are not transferred
-      to this resource.
+    explanation: The study's suggestion that adaptation or longer incubation could improve results is not demonstrated by an adapted-culture or duration comparison. Culture survival and changed residues do not establish economic suitability, isolated-metal recovery or industrial deployment. The separate coal-cinder/slag experiment in Tables 2 and 4 and Figures 4-7 supplies no grinding-sludge controls or additional replicates; its phase descriptions, production tonnage and outcomes are not transferred to this resource.
   - source_ref: ncbi_ferrooxidans
     supports: context_only
-    explanation: >-
-      The live NCBI species record lists Thiobacillus ferrooxidans as a
-      homotypic synonym of Acidithiobacillus ferrooxidans, consistent with
-      the historical paper name. NCBITaxon:920 is a species identifier,
-      not a strain accession or independent evidence of the mechanism.
+    explanation: The live NCBI species record lists Thiobacillus ferrooxidans as a homotypic synonym of Acidithiobacillus ferrooxidans, consistent with the historical paper name. NCBITaxon:920 is a species identifier, not a strain accession or independent evidence of the mechanism.
+causal_graphs:
+- id: culture_associated_grinding_sludge_leaching_graph
+  name: Acidithiobacillus ferrooxidans rus-operon Fe(II) oxidation and culture-associated leaching of Tatra metal-grinding sludge
+  description: Causal pathway linking representative Acidithiobacillus ferrooxidans rus-operon proteins (outer-membrane Cyc2 AFE_3153/DN052_11975, reviewed Swiss-Prot rusticyanin AFE_3146, and periplasmic Cyc1 AFE_3152 in reference proteomes UP000001362 and UP000248886) to iron-dependent acidophile activity in 180 mL FeSO4-free 9K medium inoculated with 20 mL T. ferrooxidans suspension and 10 g Tatra Koprivnice metal-grinding sludge (maintained at pH 1.8-2.0 and 26-30 C for 28 days, accompanied by rising solution Fe(II) and increasing MPN cell counts in Table 3) and morphological/elemental alteration of the sludge (Figures 1-3 and Table 1) in Fecko and Kucerova (1996), while preserving the absence of a matched uninoculated acid control, persistence of metallic Fe and Fe3O4 in treated solids, and Table 1 recovery-row accounting discrepancies.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: culture_associated_grinding_sludge_leaching
+  nodes:
+  - id: aferro_cyc2_outer_membrane_cytochrome
+    label: Outer-membrane cytochrome c Cyc2 (cyc2 AFE_3153; DN052_11975)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cyc2
+    description: Outer-membrane c-type cytochrome Cyc2 (AFE_3153 in UP000001362 and DN052_11975 in UP000248886) extracting electrons from sludge-derived soluble Fe(II) at pH 1.8-2.0 and 26-30 C.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JAQ7
+      entry_name: B7JAQ7_ACIF2
+      protein_name: Cytochrome c
+      gene_symbol: cyc2
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      functional_role: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270, catalyzing primary extracellular electron extraction from soluble Fe(II) at low pH.
+      annotation_note: Grounded to type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270 / DSM 14882 / NCIMB 8455; NCBITaxon:243159) as a representative strain-level entry for species-level mechanism organism Acidithiobacillus ferrooxidans (NCBITaxon:920). Supports iron-oxidizing acidophile metabolism in the 28-day Tatra Koprivnice metal-grinding sludge leaching incubation (10 g sludge in 180 mL FeSO4-free 9K medium + 20 mL inoculum at pH 1.8-2.0, 26-30 C) in Fecko and Kucerova (1996).
+      evidence:
+      - source_ref: fecko1996_tatra
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans (historical Thiobacillus ferrooxidans; NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting iron-oxidation-associated bacterial growth (rising MPN counts scored by iron-oxidation color change and increasing solution Fe(II) in Table 3) during 28-day acidified flask incubation of Tatra Koprivnice metal-grinding sludge at pH 1.8-2.0 and 26-30 C in Fecko and Kucerova (1996); the Slovak Academy of Sciences culture was not sequence-authenticated and no matched uninoculated control was reported.
+    - uniprot_accession: UniProtKB:A0A2W1KH68
+      entry_name: A0A2W1KH68_ACIFR
+      protein_name: Cytochrome C
+      gene_symbol: DN052_11975
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+      reference_proteome_id: UP000248886
+      functional_role: Outer-membrane c-type cytochrome Cyc2 homolog (locus DN052_11975) in the species-level Acidithiobacillus ferrooxidans DSM 16523 reference proteome (UP000248886; NCBITaxon:920) mediating initial extracellular Fe(II) oxidation.
+      annotation_note: Grounded to species-level reference proteome UP000248886 (Acidithiobacillus ferrooxidans DSM 16523; NCBITaxon:920), providing direct species-taxon parity with mechanism organism NCBITaxon:920 alongside the ATCC 23270 rus-operon entries. Supports iron-oxidizing acidophile metabolism in the 28-day Tatra Koprivnice metal-grinding sludge leaching incubation (10 g sludge in 180 mL FeSO4-free 9K medium + 20 mL inoculum at pH 1.8-2.0, 26-30 C) in Fecko and Kucerova (1996).
+      evidence:
+      - source_ref: fecko1996_tatra
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans (historical Thiobacillus ferrooxidans; NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting iron-oxidation-associated bacterial growth (rising MPN counts scored by iron-oxidation color change and increasing solution Fe(II) in Table 3) during 28-day acidified flask incubation of Tatra Koprivnice metal-grinding sludge at pH 1.8-2.0 and 26-30 C in Fecko and Kucerova (1996); the Slovak Academy of Sciences culture was not sequence-authenticated and no matched uninoculated control was reported.
+  - id: aferro_rus_cyc1_periplasmic_relay
+    label: Periplasmic rusticyanin and diheme cytochrome c4 relay (rus AFE_3146; cyc1 AFE_3152)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: rus
+    description: Reviewed Swiss-Prot periplasmic rusticyanin (AFE_3146, RUS_ACIF2) and diheme cytochrome c4 Cyc1 (AFE_3152) coupling Fe(II) oxidation to O2 reduction during growth in FeSO4-free 9K medium supplied with iron-rich grinding sludge.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JAQ0
+      entry_name: RUS_ACIF2
+      protein_name: Rusticyanin
+      gene_symbol: rus
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR000923
+      - InterPro:IPR028871
+      - InterPro:IPR050845
+      - InterPro:IPR033138
+      - InterPro:IPR008972
+      - InterPro:IPR001243
+      pfam_ids:
+      - Pfam:PF00127
+      ncbifam_ids:
+      - NCBIfam:TIGR03095
+      go_terms:
+      - id: GO:0042597
+        label: periplasmic space
+      - id: GO:0005507
+        label: copper ion binding
+      - id: GO:0009055
+        label: electron transfer activity
+      functional_role: Reviewed Swiss-Prot periplasmic blue-copper protein rusticyanin (rus, locus AFE_3146; RUS_ACIF2) shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) during aerobic Fe(II) oxidation.
+      annotation_note: Reviewed Swiss-Prot entry (RUS_ACIF2) in type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270; NCBITaxon:243159). Supports iron-oxidizing acidophile metabolism in the 28-day Tatra Koprivnice metal-grinding sludge leaching incubation (10 g sludge in 180 mL FeSO4-free 9K medium + 20 mL inoculum at pH 1.8-2.0, 26-30 C) in Fecko and Kucerova (1996).
+      evidence:
+      - source_ref: fecko1996_tatra
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans (historical Thiobacillus ferrooxidans; NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting iron-oxidation-associated bacterial growth (rising MPN counts scored by iron-oxidation color change and increasing solution Fe(II) in Table 3) during 28-day acidified flask incubation of Tatra Koprivnice metal-grinding sludge at pH 1.8-2.0 and 26-30 C in Fecko and Kucerova (1996); the Slovak Academy of Sciences culture was not sequence-authenticated and no matched uninoculated control was reported.
+    - uniprot_accession: UniProtKB:B7JAQ6
+      entry_name: B7JAQ6_ACIF2
+      protein_name: Cytochrome c552
+      gene_symbol: cyc1
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR009056
+      - InterPro:IPR036909
+      - InterPro:IPR024167
+      - InterPro:IPR050597
+      pfam_ids:
+      - Pfam:PF00034
+      go_terms:
+      - id: GO:0042597
+        label: periplasmic space
+      - id: GO:0009055
+        label: electron transfer activity
+      - id: GO:0020037
+        label: heme binding
+      - id: GO:0005506
+        label: iron ion binding
+      functional_role: Periplasmic diheme cytochrome c4 Cyc1 (cyc1, locus AFE_3152) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 transferring electrons from rusticyanin (AFE_3146) to the inner-membrane aa3-type cytochrome c oxidase.
+      annotation_note: Grounded to type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270; NCBITaxon:243159). Supports iron-oxidizing acidophile metabolism in the 28-day Tatra Koprivnice metal-grinding sludge leaching incubation (10 g sludge in 180 mL FeSO4-free 9K medium + 20 mL inoculum at pH 1.8-2.0, 26-30 C) in Fecko and Kucerova (1996).
+      evidence:
+      - source_ref: fecko1996_tatra
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans (historical Thiobacillus ferrooxidans; NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting iron-oxidation-associated bacterial growth (rising MPN counts scored by iron-oxidation color change and increasing solution Fe(II) in Table 3) during 28-day acidified flask incubation of Tatra Koprivnice metal-grinding sludge at pH 1.8-2.0 and 26-30 C in Fecko and Kucerova (1996); the Slovak Academy of Sciences culture was not sequence-authenticated and no matched uninoculated control was reported.
+  - id: acidified_sludge_culture_suspension
+    label: Acidified 9K + T. ferrooxidans suspension with rising dissolved Fe(II) and MPN counts (10 g sludge / 200 mL, pH 1.8-2.0, 26-30 C, 28 d)
+    node_type: CHEMICAL_ENTITY
+    description: Erlenmeyer flask suspension containing 10 g Tatra grinding sludge, 180 mL FeSO4-free 9K medium, and 20 mL bacterial suspension maintained at pH 1.8-2.0 over four weeks at 26-30 C, exhibiting increasing dissolved Fe(II) and increasing MPN estimates (Table 3) without a matched uninoculated acid control.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: altered_grinding_sludge_residue_and_leachate
+    label: Morphologically altered grinding-sludge residue retaining Fe/Fe3O4 alongside changed Table 1 elemental contents
+    node_type: MATERIAL_OR_PHASE
+    description: Post-incubation sludge solids and leachate after 28 days showing altered particle morphology (Figures 1-3), persistent metallic Fe and Fe3O4, and changed elemental concentrations in Table 1 (whose 'recovery into the leach' row for Pb, Mn, and Fe does not match simple before/after concentration depletion and lacks a residue-mass denominator).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: aferro_cyc2_outer_membrane_cytochrome
+    target: aferro_rus_cyc1_periplasmic_relay
+    predicate: provides_electrons_to
+    relationship: extracellular Fe(II) oxidation coupled to periplasmic rusticyanin and Cyc1 electron relay
+    description: Cyc2 (AFE_3153 / DN052_11975) oxidizes dissolved Fe(II) released from the iron-rich grinding sludge and transfers electrons to periplasmic rusticyanin (AFE_3146) and Cyc1 (AFE_3152).
+    evidence:
+    - source_ref: fecko1996_tatra
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans (historical Thiobacillus ferrooxidans; NCBITaxon:920) rus-operon Fe(II)-oxidation protein supporting iron-oxidation-associated bacterial growth (rising MPN counts scored by iron-oxidation color change and increasing solution Fe(II) in Table 3) during 28-day acidified flask incubation of Tatra Koprivnice metal-grinding sludge at pH 1.8-2.0 and 26-30 C in Fecko and Kucerova (1996); the Slovak Academy of Sciences culture was not sequence-authenticated and no matched uninoculated control was reported.
+  - source: aferro_rus_cyc1_periplasmic_relay
+    target: acidified_sludge_culture_suspension
+    predicate: drives
+    relationship: iron-oxidation-supported bacterial proliferation (rising MPN counts) in pH 1.8-2.0 sludge suspension
+    description: Because the 180 mL 9K basal medium was prepared without FeSO4, T. ferrooxidans growth over the four-week incubation (Table 3 rising MPN estimates) utilizes iron solubilized from the 10 g grinding-sludge feed at pH 1.8-2.0.
+    evidence:
+    - source_ref: fecko1996_tatra
+      supports: support
+      explanation: Pages 388-389 and Table 3 report increasing solution Fe(II) and increasing MPN bacterial counts across the four-week incubation in FeSO4-free 9K medium with 10 g grinding sludge.
+    - source_ref: fecko1996_tatra
+      supports: partial
+      explanation: No matched uninoculated acid-leaching flask control, inoculum carry-over assay, or acid-addition log was reported to separate chemical acid attack from microbial activity.
+  - source: acidified_sludge_culture_suspension
+    target: altered_grinding_sludge_residue_and_leachate
+    predicate: dissolves
+    relationship: partial dissolution and morphological alteration of grinding-sludge particles with persistent Fe and Fe3O4
+    description: Four weeks of incubation at pH 1.8-2.0 and 26-30 C alters grinding-sludge particle morphology (Figures 1-3) and elemental composition (Table 1) while leaving residual metallic Fe and Fe3O4.
+    evidence:
+    - source_ref: fecko1996_tatra
+      supports: support
+      explanation: Pages 388-389, Figures 1-3, and Table 1 document morphological alteration of the Tatra grinding sludge, persistence of Fe and Fe3O4, and before/after elemental compositions.
+    - source_ref: fecko1996_tatra
+      supports: partial
+      explanation: Table 1's reported recovery percentages for Pb, Mn, and Fe do not match simple depletion from before/after solid concentrations and lack a residue-mass balance.
 curation_history:
 - timestamp: '2026-10-11T16:58:55Z'
   curator: Codex (GPT-6)
   action: CREATE
-  summary: >-
-    Created the distinct metal grinding sludge resource from original Tatra
-    study pages, tables and micrographs. Preserved conditional culture
-    association, missing controls, persistent phases, unresolved recovery
-    accounting and separation from the companion coal-combustion feed.
+  summary: Created the distinct metal grinding sludge resource from original Tatra study pages, tables and micrographs. Preserved conditional culture association, missing controls, persistent phases, unresolved recovery accounting and separation from the companion coal-combustion feed.
+- timestamp: '2026-11-05T17:27:09Z'
+  curator: marcin
+  action: edit
+  summary: Add REPRESENTATIVE_EXAMPLE causal graph and live-verified Acidithiobacillus ferrooxidans (NCBITaxon:920 / NCBITaxon:243159; UP000248886 / UP000001362) rus-operon protein groundings (Cyc2 AFE_3153/DN052_11975 UniProtKB:B7JAQ7/UniProtKB:A0A2W1KH68, Swiss-Prot rusticyanin AFE_3146 UniProtKB:B7JAQ0, and Cyc1 AFE_3152 UniProtKB:B7JAQ6) for culture-associated leaching of Tatra metal-grinding sludge in Fecko and Kucerova (1996).
 history_refs:
 - history/records/metal-grinding-sludge/2026-10-11T165828Z-codex-72fcb5.yaml
+- history/records/metal-grinding-sludge/2026-11-05T172709Z-marcin-ea8122.yaml

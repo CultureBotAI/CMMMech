@@ -1,0 +1,233 @@
+schema_version: 1.0.0
+review_id: 20261105T172800Z-scorodite-cycle9-stage2-causal-graphs-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 9 Stage 2 causal-graphs review of Scorodite (cmmmech:scorodite)
+started_at: '2026-11-05T17:27:30Z'
+finished_at: '2026-11-05T17:28:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle9-stage2-causal-graphs-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 9 Stage 2 causal_graphs and ProteinExample curation in data/records/scorodite.yaml
+    (SHA-256 65e892091981e799befdf3594e87c0a4dc0dbcbe60af4a4f63ccf5e42a4eafdd) against
+    live UniProtKB reference proteomes and cited primary source(s) (tanaka2018: Tanaka
+    and Okibe (2018). Factors to Enable Crystallization of Environmentally Stable
+    Bioscorodite from Dilute As(III)-Contaminated Waters. Minerals 8(1):23. (https://doi.org/10.3390/min8010023)).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 503b381e1b3aba9d1b2525daf9ebffbfb005d19c
+  state: working_tree
+  inputs:
+  - path: data/records/scorodite.yaml
+    sha256: 65e892091981e799befdf3594e87c0a4dc0dbcbe60af4a4f63ccf5e42a4eafdd
+    role: target
+  - path: history/records/scorodite/2026-11-05T172709Z-marcin-0257d2.yaml
+    sha256: 4d71aeee19d27a6c19f0f561a8f608073e6bf72bae0f8bb42335ff7ca9eab24e
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:scorodite
+  path: data/records/scorodite.yaml
+  label: Scorodite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/scorodite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/scorodite/2026-11-05T172709Z-marcin-0257d2.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 9 Stage 2 causal-graphs review of data/records/scorodite.yaml
+    (SHA-256 65e892091981e799befdf3594e87c0a4dc0dbcbe60af4a4f63ccf5e42a4eafdd) and
+    its canonical EDIT history sidecar (history/records/scorodite/2026-11-05T172709Z-marcin-0257d2.yaml)
+    verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding,
+    and primary-source evidence fidelity across causal_graph ''brierleyi_associated_scorodite_crystallization_graph''
+    (mechanism_ref: brierleyi_associated_scorodite_crystallization, 4 nodes / 3 edges;
+    abri_fox_sulfocyanin_iron_oxidation_complex: [UniProtKB:A0A2U9IB76 (DFR85_00215,
+    A0A2U9IB76_9CREN, UP000248044), UniProtKB:A0A2U9IIG0 (DFR85_00220, A0A2U9IIG0_9CREN,
+    UP000248044), UniProtKB:A0A2U9IB82 (DFR85_00225, A0A2U9IB82_9CREN, UP000248044)];
+    abri_aoxa_arsenite_oxidase_subunit: [UniProtKB:A0A2U9IBA2 (DFR85_00260, A0A2U9IBA2_9CREN,
+    UP000248044)]).'
+  selection: Cycle 9 Stage 2 causal_graphs curation for cmmmech:scorodite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:scorodite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/scorodite.yaml
+  locator: Working-tree record data/records/scorodite.yaml (causal_graphs and mechanisms[].protein_examples)
+  accessed_at: '2026-11-05T17:27:45Z'
+  support: supports
+  summary: 'Curated data/records/scorodite.yaml (SHA-256 65e892091981e799befdf3594e87c0a4dc0dbcbe60af4a4f63ccf5e42a4eafdd)
+    with causal_graph ''brierleyi_associated_scorodite_crystallization_graph'' (mechanism_ref:
+    brierleyi_associated_scorodite_crystallization, 4 nodes / 3 edges; abri_fox_sulfocyanin_iron_oxidation_complex:
+    [UniProtKB:A0A2U9IB76 (DFR85_00215, A0A2U9IB76_9CREN, UP000248044), UniProtKB:A0A2U9IIG0
+    (DFR85_00220, A0A2U9IIG0_9CREN, UP000248044), UniProtKB:A0A2U9IB82 (DFR85_00225,
+    A0A2U9IB82_9CREN, UP000248044)]; abri_aoxa_arsenite_oxidase_subunit: [UniProtKB:A0A2U9IBA2
+    (DFR85_00260, A0A2U9IBA2_9CREN, UP000248044)]), achieving 100% parity between
+    mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and
+    preserving source-faithful support levels and experimental caveats.'
+  snapshot_sha256: 65e892091981e799befdf3594e87c0a4dc0dbcbe60af4a4f63ccf5e42a4eafdd
+- evidence_id: primary_source
+  kind: primary_source
+  reference: DOI:10.3390/min8010023
+  locator: 'tanaka2018: Tanaka and Okibe (2018). Factors to Enable Crystallization
+    of Environmentally Stable Bioscorodite from Dilute As(III)-Contaminated Waters.
+    Minerals 8(1):23. (https://doi.org/10.3390/min8010023)'
+  accessed_at: '2026-11-05T17:27:45Z'
+  support: supports
+  summary: 'Live-verified UniProtKB reference-proteome grounding across UniProtKB:A0A2U9IB76
+    (A0A2U9IB76_9CREN, Cytochrome B6, gene_symbol: DFR85_00215, TREMBL, NCBITaxon:41673
+    Acidianus brierleyi, UP000248044); UniProtKB:A0A2U9IIG0 (A0A2U9IIG0_9CREN, Quinol
+    oxidase subunit 2, gene_symbol: DFR85_00220, TREMBL, NCBITaxon:41673 Acidianus
+    brierleyi, UP000248044); UniProtKB:A0A2U9IB82 (A0A2U9IB82_9CREN, Sulfocyanin,
+    gene_symbol: DFR85_00225, TREMBL, NCBITaxon:41673 Acidianus brierleyi, UP000248044);
+    UniProtKB:A0A2U9IBA2 (A0A2U9IBA2_9CREN, Arsenate reductase (Azurin) small subunit,
+    gene_symbol: DFR85_00260, TREMBL, NCBITaxon:41673 Acidianus brierleyi, UP000248044).
+    Primary mechanism source(s) (tanaka2018: Tanaka and Okibe (2018). Factors to Enable
+    Crystallization of Environmentally Stable Bioscorodite from Dilute As(III)-Contaminated
+    Waters. Minerals 8(1):23. (https://doi.org/10.3390/min8010023)) report culture-level
+    mineralization or bioleaching without single-gene knockouts; supports: partial
+    is strictly preserved on all enzyme-level edges and ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/scorodite/2026-11-05T172709Z-marcin-0257d2.yaml
+  locator: Canonical EDIT history sidecar history/records/scorodite/2026-11-05T172709Z-marcin-0257d2.yaml
+  accessed_at: '2026-11-05T17:27:45Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/scorodite/2026-11-05T172709Z-marcin-0257d2.yaml
+    (SHA-256 4d71aeee19d27a6c19f0f561a8f608073e6bf72bae0f8bb42335ff7ca9eab24e): Add
+    REPRESENTATIVE_EXAMPLE causal graph and live-verified Acidianus brierleyi DSM
+    1651T (NCBITaxon:41673; UP000248044) metalloredox cluster protein groundings (DFR85_00215
+    UniProtKB:A0A2U9IB76, DFR85_00220 UniProtKB:A0A2U9IIG0, sulfocyanin DFR85_00225
+    UniProtKB:A0A2U9IB82, and TIGR02694 arsenite-oxidase Rieske small subunit DFR85_00260
+    UniProtKB:A0A2U9IBA2) for thermoacidophilic scorodite crystallization in Tanaka
+    and Okibe (2018).'
+  snapshot_sha256: 4d71aeee19d27a6c19f0f561a8f608073e6bf72bae0f8bb42335ff7ca9eab24e
+- evidence_id: validation
+  kind: validation
+  reference: data/records/scorodite.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-05T17:27:45Z'
+  support: supports
+  summary: data/records/scorodite.yaml and history/records/scorodite/2026-11-05T172709Z-marcin-0257d2.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: 65e892091981e799befdf3594e87c0a4dc0dbcbe60af4a4f63ccf5e42a4eafdd
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 688 record(s); 0 failed.
+  target_ids:
+  - cmmmech:scorodite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:scorodite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_protein_grounding
+  area: graph
+  topic: 'Verification of causal_graphs structure, UniProtKB reference-proteome grounding,
+    and parity across causal_graph ''brierleyi_associated_scorodite_crystallization_graph''
+    (mechanism_ref: brierleyi_associated_scorodite_crystallization, 4 nodes / 3 edges;
+    abri_fox_sulfocyanin_iron_oxidation_complex: [UniProtKB:A0A2U9IB76 (DFR85_00215,
+    A0A2U9IB76_9CREN, UP000248044), UniProtKB:A0A2U9IIG0 (DFR85_00220, A0A2U9IIG0_9CREN,
+    UP000248044), UniProtKB:A0A2U9IB82 (DFR85_00225, A0A2U9IB82_9CREN, UP000248044)];
+    abri_aoxa_arsenite_oxidase_subunit: [UniProtKB:A0A2U9IBA2 (DFR85_00260, A0A2U9IBA2_9CREN,
+    UP000248044)])'
+  outcome: supported
+  summary: 'Curated data/records/scorodite.yaml (SHA-256 65e892091981e799befdf3594e87c0a4dc0dbcbe60af4a4f63ccf5e42a4eafdd)
+    with causal_graph ''brierleyi_associated_scorodite_crystallization_graph'' (mechanism_ref:
+    brierleyi_associated_scorodite_crystallization, 4 nodes / 3 edges; abri_fox_sulfocyanin_iron_oxidation_complex:
+    [UniProtKB:A0A2U9IB76 (DFR85_00215, A0A2U9IB76_9CREN, UP000248044), UniProtKB:A0A2U9IIG0
+    (DFR85_00220, A0A2U9IIG0_9CREN, UP000248044), UniProtKB:A0A2U9IB82 (DFR85_00225,
+    A0A2U9IB82_9CREN, UP000248044)]; abri_aoxa_arsenite_oxidase_subunit: [UniProtKB:A0A2U9IBA2
+    (DFR85_00260, A0A2U9IBA2_9CREN, UP000248044)]), achieving 100% parity between
+    mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and
+    preserving source-faithful support levels and caveats from tanaka2018: Tanaka
+    and Okibe (2018). Factors to Enable Crystallization of Environmentally Stable
+    Bioscorodite from Dilute As(III)-Contaminated Waters. Minerals 8(1):23. (https://doi.org/10.3390/min8010023).
+    Live-verified UniProtKB grounding across UniProtKB:A0A2U9IB76 (A0A2U9IB76_9CREN,
+    Cytochrome B6, gene_symbol: DFR85_00215, TREMBL, NCBITaxon:41673 Acidianus brierleyi,
+    UP000248044); UniProtKB:A0A2U9IIG0 (A0A2U9IIG0_9CREN, Quinol oxidase subunit 2,
+    gene_symbol: DFR85_00220, TREMBL, NCBITaxon:41673 Acidianus brierleyi, UP000248044);
+    UniProtKB:A0A2U9IB82 (A0A2U9IB82_9CREN, Sulfocyanin, gene_symbol: DFR85_00225,
+    TREMBL, NCBITaxon:41673 Acidianus brierleyi, UP000248044); UniProtKB:A0A2U9IBA2
+    (A0A2U9IBA2_9CREN, Arsenate reductase (Azurin) small subunit, gene_symbol: DFR85_00260,
+    TREMBL, NCBITaxon:41673 Acidianus brierleyi, UP000248044).'
+  target_ids:
+  - cmmmech:scorodite
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: data/records/scorodite.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar history/records/scorodite/2026-11-05T172709Z-marcin-0257d2.yaml
+    (SHA-256 4d71aeee19d27a6c19f0f561a8f608073e6bf72bae0f8bb42335ff7ca9eab24e) and
+    passing all LinkML and history validation gates.
+  target_ids:
+  - cmmmech:scorodite
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Scorodite (cmmmech:scorodite) passes Cycle 9 Stage 2 causal-graphs review
+  (scientific_review: true) at SHA-256 65e892091981e799befdf3594e87c0a4dc0dbcbe60af4a4f63ccf5e42a4eafdd:
+  Curated data/records/scorodite.yaml with causal_graph ''brierleyi_associated_scorodite_crystallization_graph''
+  (mechanism_ref: brierleyi_associated_scorodite_crystallization, 4 nodes / 3 edges;
+  abri_fox_sulfocyanin_iron_oxidation_complex: [UniProtKB:A0A2U9IB76 (DFR85_00215,
+  A0A2U9IB76_9CREN, UP000248044), UniProtKB:A0A2U9IIG0 (DFR85_00220, A0A2U9IIG0_9CREN,
+  UP000248044), UniProtKB:A0A2U9IB82 (DFR85_00225, A0A2U9IB82_9CREN, UP000248044)];
+  abri_aoxa_arsenite_oxidase_subunit: [UniProtKB:A0A2U9IBA2 (DFR85_00260, A0A2U9IBA2_9CREN,
+  UP000248044)]), achieving 100% parity between mechanisms[].protein_examples and
+  causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+  levels and experimental caveats from tanaka2018: Tanaka and Okibe (2018). Factors
+  to Enable Crystallization of Environmentally Stable Bioscorodite from Dilute As(III)-Contaminated
+  Waters. Minerals 8(1):23. (https://doi.org/10.3390/min8010023). Live-verified UniProtKB
+  reference-proteome grounding across UniProtKB:A0A2U9IB76 (A0A2U9IB76_9CREN, Cytochrome
+  B6, gene_symbol: DFR85_00215, TREMBL, NCBITaxon:41673 Acidianus brierleyi, UP000248044);
+  UniProtKB:A0A2U9IIG0 (A0A2U9IIG0_9CREN, Quinol oxidase subunit 2, gene_symbol: DFR85_00220,
+  TREMBL, NCBITaxon:41673 Acidianus brierleyi, UP000248044); UniProtKB:A0A2U9IB82
+  (A0A2U9IB82_9CREN, Sulfocyanin, gene_symbol: DFR85_00225, TREMBL, NCBITaxon:41673
+  Acidianus brierleyi, UP000248044); UniProtKB:A0A2U9IBA2 (A0A2U9IBA2_9CREN, Arsenate
+  reductase (Azurin) small subunit, gene_symbol: DFR85_00260, TREMBL, NCBITaxon:41673
+  Acidianus brierleyi, UP000248044).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 9 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
+  for cmmmech:scorodite.
+related_reviews: []
