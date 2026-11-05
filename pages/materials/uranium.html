@@ -331,11 +331,11 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Terminal electron acceptor substrate (Dissolved U(VI) in defined bicarbonate/PIPES electrolyte) in kane_2026_bes.</div>          </td>
+<div>Dissolved U(VI) feed prepared from uranium metal in HCl/H2O2 in defined 30 mM bicarbonate, 10 mM PIPES, 30 mM ammonium acetate, and 40 mM NaCl electrolyte (975 mg/kg U at post-equilibration baseline BESU.8Vb_W.EQ in the biotic arm and 914 mg/kg U at BESU.8Va_W.t0 in the abiotic arm) in kane_2026_bes.</div>          </td>
         </tr>
         <tr id="causal-node-mr1_bes_uranium_reduction_graph-reduced_metal_product">
           <td>
-            <strong>Cell-associated reduced U(IV) precipitate</strong><br>
+            <strong>Depleted aqueous U and carbon-felt electrode-associated uranium deposits (unverified solid valence and phase)</strong><br>
             <code style="font-size: .78rem; color: var(--muted);">reduced_metal_product</code>
           </td>
           <td>
@@ -343,7 +343,7 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Resulting reduced product state (Cell-associated reduced U(IV) precipitate) in kane_2026_bes.</div>          </td>
+<div>Depleted aqueous uranium (&lt;0.1 mg/kg U at BESU.8Vb_W.END in biotic vs 0.819 mg/kg U at BESU.8Va_W.END in abiotic in T3_AqueousICPOES.csv) and uranium-bearing deposits on the -800 mV (vs Ag/AgCl) carbon-felt working electrode recovered in acid extracts (T6) and detected by SEM-EDS (T9_SEM.pdf pp. 2-6) without an assigned crystalline phase or U(IV) oxidation state in kane_2026_bes.</div>          </td>
         </tr>
       </tbody>
     </table>
@@ -355,13 +355,13 @@
 : CymA transfers electrons from the inner-membrane menaquinone pool to the MtrCAB outer-membrane conduit.[<a href="#source-kane_2026_bes"><code>kane_2026_bes</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
         <code>mtrc_cytochrome</code> &rarr; <strong>direct or flavin-mediated extracellular electron transfer</strong> (<code>reduces</code>) &rarr; <code>oxidized_metal_substrate</code>
-: MtrC transfers electrons across the outer membrane interface to Dissolved U(VI) in defined bicarbonate/PIPES electrolyte.[<a href="#source-kane_2026_bes"><code>kane_2026_bes</code></a>]      </li>
+: Outer-membrane decaheme cytochrome MtrC (SO_1778) delivers extracellular electrons across the MtrCAB porin-cytochrome conduit during bioelectrochemical reduction of dissolved U(VI) feed in kane_2026_bes.[<a href="#source-kane_2026_bes"><code>kane_2026_bes</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
         <code>omca_cytochrome</code> &rarr; <strong>cell-surface decaheme cytochrome reduction</strong> (<code>reduces</code>) &rarr; <code>oxidized_metal_substrate</code>
-: OmcA transfers electrons at the cell-mineral/solution interface to Dissolved U(VI) in defined bicarbonate/PIPES electrolyte.[<a href="#source-kane_2026_bes"><code>kane_2026_bes</code></a>]      </li>
+: Outer-membrane decaheme lipoprotein cytochrome OmcA (SO_1779) partners with the MtrCAB complex at the cell surface during bioelectrochemical reduction of dissolved U(VI) feed in kane_2026_bes.[<a href="#source-kane_2026_bes"><code>kane_2026_bes</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
         <code>oxidized_metal_substrate</code> &rarr; <strong>reductive valence transformation and phase formation</strong> (<code>transforms_into</code>) &rarr; <code>reduced_metal_product</code>
-: Extracellular electron transfer converts Dissolved U(VI) in defined bicarbonate/PIPES electrolyte into Cell-associated reduced U(IV) precipitate.[<a href="#source-kane_2026_bes"><code>kane_2026_bes</code></a>]      </li>
+: Bioelectrochemical reduction in the Shewanella oneidensis MR-1 reactor poised at -800 mV vs Ag/AgCl converts the dissolved U(VI) feed into depleted aqueous U (&lt;0.1 mg/kg U at BESU.8Vb_W.END) and carbon-felt electrode-associated uranium deposits (unverified solid valence and phase) in kane_2026_bes.[<a href="#source-kane_2026_bes"><code>kane_2026_bes</code></a>]      </li>
     </ul>
   </div>
 </div>
@@ -434,6 +434,12 @@
         <td><span class="badge">edit</span></td>
         <td>Normalized top-level key ordering in uranium.yaml so sources precedes criticality per CANONICAL_RECORD_KEYS.</td>
       </tr>
+      <tr>
+        <td><code>2026-11-05T23:46:52Z</code></td>
+        <td>marcin</td>
+        <td><span class="badge">edit</span></td>
+        <td>Cycle 9 Stage 5 (#940, GRP-C9S5-001): Replace generic template descriptions on oxidized_metal_substrate and reduced_metal_product in mr1_bes_uranium_reduction_graph, qualify reduced_metal_product label and edges[3].evidence[0].supports (&#39;partial&#39;) to match kane_2026_bes T3/T6/T8/T9 observations, and lowercase mid-sentence node-label interpolations in edges[1..3].</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -443,7 +449,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (688 materials · 609 mechanisms · latest curation 2026-11-05 · corpus digest <code>6439e8af89e9</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (688 materials · 609 mechanisms · latest curation 2026-11-05 · corpus digest <code>8a8af667a271</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

@@ -292,12 +292,12 @@ causal_graphs:
   - id: oxidized_metal_substrate
     label: Dissolved U(VI) in defined bicarbonate/PIPES electrolyte
     node_type: CHEMICAL_ENTITY
-    description: Terminal electron acceptor substrate (Dissolved U(VI) in defined bicarbonate/PIPES electrolyte) in kane_2026_bes.
+    description: Dissolved U(VI) feed prepared from uranium metal in HCl/H2O2 in defined 30 mM bicarbonate, 10 mM PIPES, 30 mM ammonium acetate, and 40 mM NaCl electrolyte (975 mg/kg U at post-equilibration baseline BESU.8Vb_W.EQ in the biotic arm and 914 mg/kg U at BESU.8Va_W.t0 in the abiotic arm) in kane_2026_bes.
     protein_grounding_status: NOT_APPLICABLE
   - id: reduced_metal_product
-    label: Cell-associated reduced U(IV) precipitate
+    label: Depleted aqueous U and carbon-felt electrode-associated uranium deposits (unverified solid valence and phase)
     node_type: MATERIAL_OR_PHASE
-    description: Resulting reduced product state (Cell-associated reduced U(IV) precipitate) in kane_2026_bes.
+    description: Depleted aqueous uranium (<0.1 mg/kg U at BESU.8Vb_W.END in biotic vs 0.819 mg/kg U at BESU.8Va_W.END in abiotic in T3_AqueousICPOES.csv) and uranium-bearing deposits on the -800 mV (vs Ag/AgCl) carbon-felt working electrode recovered in acid extracts (T6) and detected by SEM-EDS (T9_SEM.pdf pp. 2-6) without an assigned crystalline phase or U(IV) oxidation state in kane_2026_bes.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cyma_dehydrogenase
@@ -313,29 +313,29 @@ causal_graphs:
     target: oxidized_metal_substrate
     predicate: reduces
     relationship: direct or flavin-mediated extracellular electron transfer
-    description: MtrC transfers electrons across the outer membrane interface to Dissolved U(VI) in defined bicarbonate/PIPES electrolyte.
+    description: Outer-membrane decaheme cytochrome MtrC (SO_1778) delivers extracellular electrons across the MtrCAB porin-cytochrome conduit during bioelectrochemical reduction of dissolved U(VI) feed in kane_2026_bes.
     evidence:
     - source_ref: kane_2026_bes
       supports: partial
-      explanation: MtrC participates in extracellular reduction of Dissolved U(VI) in defined bicarbonate/PIPES electrolyte.
+      explanation: In the Shewanella oneidensis MR-1 bioelectrochemical reactor poised at -800 mV vs Ag/AgCl (T2_Setup.csv, T7_Chronoamperometry.csv), outer-membrane decaheme cytochrome MtrC (SO_1778) serves as the primary terminal reductase of the MtrCAB conduit during reduction of the dissolved U(VI) feed (975 mg/kg U at BESU.8Vb_W.EQ to <0.1 mg/kg U at BESU.8Vb_W.END in T3_AqueousICPOES.csv).
   - source: omca_cytochrome
     target: oxidized_metal_substrate
     predicate: reduces
     relationship: cell-surface decaheme cytochrome reduction
-    description: OmcA transfers electrons at the cell-mineral/solution interface to Dissolved U(VI) in defined bicarbonate/PIPES electrolyte.
+    description: Outer-membrane decaheme lipoprotein cytochrome OmcA (SO_1779) partners with the MtrCAB complex at the cell surface during bioelectrochemical reduction of dissolved U(VI) feed in kane_2026_bes.
     evidence:
     - source_ref: kane_2026_bes
       supports: partial
-      explanation: OmcA contributes to extracellular reduction of Dissolved U(VI) in defined bicarbonate/PIPES electrolyte.
+      explanation: In the Shewanella oneidensis MR-1 bioelectrochemical reactor poised at -800 mV vs Ag/AgCl (T2_Setup.csv, T7_Chronoamperometry.csv), outer-membrane decaheme cytochrome OmcA (SO_1779) provides parallel extracellular electron transfer capacity at the cell/electrode interface during reduction of the dissolved U(VI) feed (975 mg/kg U at BESU.8Vb_W.EQ to <0.1 mg/kg U at BESU.8Vb_W.END in T3_AqueousICPOES.csv).
   - source: oxidized_metal_substrate
     target: reduced_metal_product
     predicate: transforms_into
     relationship: reductive valence transformation and phase formation
-    description: Extracellular electron transfer converts Dissolved U(VI) in defined bicarbonate/PIPES electrolyte into Cell-associated reduced U(IV) precipitate.
+    description: Bioelectrochemical reduction in the Shewanella oneidensis MR-1 reactor poised at -800 mV vs Ag/AgCl converts the dissolved U(VI) feed into depleted aqueous U (<0.1 mg/kg U at BESU.8Vb_W.END) and carbon-felt electrode-associated uranium deposits (unverified solid valence and phase) in kane_2026_bes.
     evidence:
     - source_ref: kane_2026_bes
-      supports: support
-      explanation: Shewanella oneidensis MR-1 bioelectrochemical/anaerobic reduction converts Dissolved U(VI) in defined bicarbonate/PIPES electrolyte into Cell-associated reduced U(IV) precipitate in kane_2026_bes.
+      supports: partial
+      explanation: In kane_2026_bes, aqueous ICP-OES (T3_AqueousICPOES.csv) records uranium depletion from 975 mg/kg U at post-equilibration baseline BESU.8Vb_W.EQ to <0.1 mg/kg U at biotic endpoint BESU.8Vb_W.END alongside acid-extractable working-electrode U recovery (T6) and U-labelled SEM-EDS deposits on carbon felt (T9_SEM.pdf pp. 2-6), while abiotic poised-electrode controls also depleted aqueous U from 914 to 0.819 mg/kg (BESU.8Va_W.t0 to BESU.8Va_W.END) and XRD (T8_XRD.csv) did not verify a crystalline U(IV) mineral phase.
 curation_history:
 - timestamp: '2026-10-09T04:48:34Z'
   curator: Codex (GPT-6; Codex)
@@ -357,9 +357,14 @@ curation_history:
   curator: claude
   action: edit
   summary: Normalized top-level key ordering in uranium.yaml so sources precedes criticality per CANONICAL_RECORD_KEYS.
+- timestamp: '2026-11-05T23:46:52Z'
+  curator: marcin
+  action: edit
+  summary: 'Cycle 9 Stage 5 (#940, GRP-C9S5-001): Replace generic template descriptions on oxidized_metal_substrate and reduced_metal_product in mr1_bes_uranium_reduction_graph, qualify reduced_metal_product label and edges[3].evidence[0].supports (''partial'') to match kane_2026_bes T3/T6/T8/T9 observations, and lowercase mid-sentence node-label interpolations in edges[1..3].'
 history_refs:
 - history/records/uranium/2026-10-09T044834Z-codex-003092.yaml
 - history/records/uranium/2026-10-09T054958Z-codex-6ae682.yaml
 - history/records/uranium/2026-10-18T042750Z-antigravity-3a1b87.yaml
 - history/records/uranium/2026-10-21T184653Z-claude-8d44a4.yaml
 - history/records/uranium/2026-10-30T222651Z-claude-cd5fe1.yaml
+- history/records/uranium/2026-11-05T234652Z-marcin-a1c586.yaml
