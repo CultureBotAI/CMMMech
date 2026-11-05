@@ -3,7 +3,7 @@
 - **Run ID**: `mech-goal-sequence-20261019`
 - **Cycle / Stage**: Cycle 9, Stage 1 (`add_records`)
 - **Timestamp (UTC)**: `2026-11-05T14:10:00Z`
-- **Corpus Progression**: `683 -> 688` records (`+5`), `1335 -> 1340` history sidecars (`+5`), `1062 -> 1067` structured reviews (`+5`)
+- **Corpus Progression**: `683 -> 688` records (`+5`), `1335 -> 1342` history sidecars (`+5` `CREATE`, `+2` `EDIT`), `1062 -> 1069` structured reviews (`+7`)
 
 ## 1. Bounded Frontier Search & Citation Verification Protocol
 
@@ -23,22 +23,23 @@ We inspected the five open-access *European Journal of Mineralogy* single-refere
 
 | Record Path | Bytes | Record SHA-256 | History Sidecar Path | Bytes | Sidecar SHA-256 |
 | :--- | ---: | :--- | :--- | ---: | :--- |
-| `data/records/ginelfite.yaml` | `6,512` | `49d1255203a2dafb5dcf24895e134c6c3af18a8e93a74e67a6fd8bae321a515e` | `history/records/ginelfite/2026-11-05T140956Z-antigravity-4caced.yaml` | `990` | `2baed4137626d941ae80b3352b746b1ce9101996533ff0b16e09c26207bfbbd9` |
+| `data/records/ginelfite.yaml` | `9,011` | `cdf6d406dba0fd315dd664ff1dabd56af504318548cad21beff9148ce41e2c39` | `history/records/ginelfite/2026-11-05T140956Z-antigravity-4caced.yaml` (`CREATE`), `history/records/ginelfite/2026-11-05T150150Z-antigravity-94393d.yaml` (`EDIT`) | `990` / `876` | `2baed4137626d941ae80b3352b746b1ce9101996533ff0b16e09c26207bfbbd9` / `0cb4fa35469c079405b6d79daa435cd603eba1b5f9c0c0a5459e9ade8a01925f` |
 | `data/records/graulichite-la.yaml` | `7,323` | `64ceb95365f0cdb3c696047d046ac7e856182c1114970669e0cbc6454b2a4853` | `history/records/graulichite-la/2026-11-05T140958Z-antigravity-e38239.yaml` | `997` | `43906b9b21a81260e3e75862966e20c4cb9f2775f3cb021e18af9850aa839987` |
-| `data/records/karlseifertite.yaml` | `6,469` | `122b0504ce34c4a64c931ed3538c21db8cea7a7de86436364373fed2dd7c5e8e` | `history/records/karlseifertite/2026-11-05T140444Z-antigravity-3ac85f.yaml` | `1,008` | `99b821f047d6b1d578dc2a734667f182227f0289b6d2a0171bd9bd83011a4717` |
+| `data/records/karlseifertite.yaml` | `7,027` | `5a4f7e8a5c137124a0108d9bdad9bc327c84eb2a358e4d8a0aa527fd70420e2d` | `history/records/karlseifertite/2026-11-05T140444Z-antigravity-3ac85f.yaml` (`CREATE`), `history/records/karlseifertite/2026-11-05T150152Z-antigravity-599e7a.yaml` (`EDIT`) | `1,008` / `807` | `99b821f047d6b1d578dc2a734667f182227f0289b6d2a0171bd9bd83011a4717` / `f3caafe5c14456e0ae3b7f6d435bdcfed9fdc4851de8d625027fe2b7c752f59f` |
 | `data/records/skogbyite.yaml` | `6,744` | `285ae181768fd17084cb8b5f4d163134c544a704230cc77aabd7286a0654e19c` | `history/records/skogbyite/2026-11-05T140445Z-antigravity-dc41ae.yaml` | `990` | `bf9f6b15693f0cfff652a15b4e6951ad1148536b2b577a2ad0766fb8303a4aa7` |
 | `data/records/tetrahedrite-cd.yaml` | `6,780` | `b587167cf3071664071983bc5e2ce78e952b8e06cf7f6f068a8038381d0b1e6a` | `history/records/tetrahedrite-cd/2026-11-05T140447Z-antigravity-6f1290.yaml` | `1,017` | `fc692d6bd632c2b29a0d1c3b27dc5568246f2b86ec6fe6486f2c5e9b266b9e19` |
 
 ## 4. Documented Primary-Source Arithmetic & Typographical Discrepancies
 
 1. **`ginelfite`** (Biagioni et al. 2025):
-   - The September 2026 IMA-CNMNC Master List (p. 82) lists the pre-refinement formula `Ag2(Ag0.5Fe2+0.5)TlPb23.5(Sb,As)33.5S76`, whereas the published primary description (pp. 319, 320, 323, 331) reports `Ag2(Ag0.5Fe2+0.5)TlPb24.5(Sb,As)32.5S75.5` after accounting for the half-occupied `S(71)` site and refined `Pb/(Sb,As)` site populations.
-   - Table 2 (p. 322) prints the `Ev(%)` valence equilibrium error range (`n = 35`) as `-2.3–+1.7`, whereas Section 4.1 prose (p. 323) misprints the upper bound sign as `-1.1 % (ranging between -2.3 % and -1.7 %)`.
+   - The September 2026 IMA-CNMNC Master List (p. 82) lists the pre-refinement formula `Ag2(Ag0.5Fe2+0.5)TlPb23.5(Sb,As)33.5S76`, whereas the published primary description (title, abstract, Section 4.1, and Table 7) reports `Ag2(Ag0.5Fe2+0.5)TlPb24.5(Sb,As)32.5S75.5` after accounting for the half-occupied `S(71)` site and refined `Pb/(Sb,As)` site populations.
+   - Within Biagioni et al. (2025), Table 8 (p. 332) prints the formula of ginelfite with `S76` as `Ag2(Ag0.5Fe0.5)TlPb24.5(Sb,As)32.5S76`, whereas the title, abstract, Section 4.1, and Table 7 print `S75.5`; additionally, the sum of the modular boxwork structural formulae on p. 328 is `(Ag0.51Fe0.49)Ag2(Tl0.65Pb0.35)Pb21(Sb7.59Pb4.41)Sigma12.00(Sb15.52As8.48)Sigma24.00S75.5` with valence equilibrium error `Ev = -1.7%` (compared with empirical `Ev(%) = -1.1(1.0)%` with range `-2.3` to `+1.7%` in Table 2).
 2. **`graulichite-la`** (Biagioni et al. 2022):
    - Table 1 (p. 369) prints the normalized oxide totals for Domain #1 and Domain #2 as `100.00 wt%`, whereas the arithmetic sums of the 13 rounded normalized oxide values are `100.02 wt%` for both domains.
    - Because the porous, fragile lamellae yielded low unpolished EPMA totals (`78.34 wt%` and `83.66 wt%`) and only `47` unique reflections up to `2theta = 31.75 deg`, the isotropic structure refinement (`R1 = 0.0956`) exhibits an apparent inversion of `X–O(1)` (`1.65(9) A`) vs `X–O(2)` (`1.56(5) A x 3`) bond lengths explicitly identified by the authors as a refinement artifact.
 3. **`karlseifertite`** (Kampf et al. 2024):
    - Section 1 (p. 874) states `(Warr symbol: Karl)` whereas the IMA Master List (p. 109) assigns `Ksf`.
+   - Section 4 (p. 874) prints the simplified formula as `Pb(Ga,Ge,Fe3+,Al)[(As,S,W)O4]2(OH)6`, omitting the subscript `3` on the octahedral `G`-site group `(Ga,Ge,Fe3+,Al)3` corresponding to the alunite-supergroup general formula `DG3(TX4)2X'6`.
    - Table 5 (p. 877) prints the mean bond lengths as `<Pb-O> = 2.802 A`, `<Ga-O> = 1.993 A`, and `<As-O> = 1.694 A`, whereas the multiplicity-weighted arithmetic means of the listed distances (`Pb-O2 2.785(7) x 6`, `Pb-O3 2.838(4) x 6`; `Ga-O2 1.959(7) x 2`, `Ga-O3 1.965(3) x 4`; `As-O1 1.671(13) x 1`, `As-O2 1.699(7) x 3`) are `2.812 A`, `1.963 A`, and `1.692 A`, respectively.
    - Table 6 (p. 877) prints the anion bond-valence sums for `O1` and `O2` as `1.81` and `1.95 v.u.`, whereas the rounded row contributions sum to `1.82` and `1.94 v.u.`.
 4. **`skogbyite`** (Jonsson et al. 2025):
