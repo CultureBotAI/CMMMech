@@ -1,0 +1,214 @@
+schema_version: 1.0.0
+review_id: 20261106T025000Z-luxembourgite-round128-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Primary-source scientific review of luxembourgite (IMA:2018-154, status A,
+  AgCuPbBi4Se8)
+started_at: '2026-11-06T02:48:00Z'
+finished_at: '2026-11-06T02:50:00Z'
+reviewer:
+  identity: antigravity / round128-scientific-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/luxembourgite.yaml (SHA-256 025aa43b48e777f0d30e9e8f4e88e88054bbaeaa835cf91877e60bbd9bdf0646)
+    and its CREATE history sidecar against all bounded passages and single-page PNG
+    table renders of Philippo S, Hatert F, Bruni Y, Vignola P, and Sejkora J (2020)
+    Luxembourgite, AgCuPbBi4Se8, a new mineral species from Bivels, Grand Duchy of
+    Luxembourg, Eur. J. Mineral. 32:449-455, pp. 449-455, Tables 1-6, Figures 1-4
+    (20 bounded passages <= 1,800 B across 7 full-PDF pages; 6 main-text pages / 17
+    passages, plus PNG renders of pages 2 and 4) and the September 2026 IMA-CNMNC
+    Master List (PDF p. 129).
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 64b792b36bbc67623dd1e9d8d13ec382dd8607e2
+  state: working_tree
+  inputs:
+  - path: data/records/luxembourgite.yaml
+    sha256: 025aa43b48e777f0d30e9e8f4e88e88054bbaeaa835cf91877e60bbd9bdf0646
+    role: target
+  - path: history/records/luxembourgite/2026-11-06T024320Z-antigravity-583019.yaml
+    sha256: 5dd20a298c1980a114416cdd491d22925f035b7298d74e9462e7b1dab1034e9c
+    role: context
+  - path: research/sources/round128-minerals/20261106T024500Z-source-investigation.json
+    sha256: 719d9bfac8c452d6c367e5b825459aa671923870a023af25d9ae4e3c59124d2b
+    role: context
+  - path: research/sources/round128-minerals/20261106T024500Z-source-investigation.md
+    sha256: 1dbf68f573243d539af512a7cc0d9ebefb5e91c1e7bdcf3b8a403c37033c2620
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:luxembourgite
+  path: data/records/luxembourgite.yaml
+  label: Luxembourgite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/luxembourgite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/luxembourgite/2026-11-06T024320Z-antigravity-583019.yaml
+    role: canonical_history
+scope:
+  description: Primary-source scientific review of data/records/luxembourgite.yaml
+    (SHA-256 025aa43b48e777f0d30e9e8f4e88e88054bbaeaa835cf91877e60bbd9bdf0646) and
+    its canonical CREATE history sidecar against all bounded primary-source passages
+    and rendered table PNGs from Philippo S, Hatert F, Bruni Y, Vignola P, and Sejkora
+    J (2020) Luxembourgite, AgCuPbBi4Se8, a new mineral species from Bivels, Grand
+    Duchy of Luxembourg, Eur. J. Mineral. 32:449-455, pp. 449-455, Tables 1-6, Figures
+    1-4 (20 bounded passages <= 1,800 B across 7 full-PDF pages; 6 main-text pages
+    / 17 passages, plus PNG renders of pages 2 and 4) and the September 2026 IMA-CNMNC
+    Master List (PDF p. 129).
+  selection: Round 128 newly admitted mineral record luxembourgite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:luxembourgite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/luxembourgite.yaml
+  locator: Working-tree record data/records/luxembourgite.yaml
+  accessed_at: '2026-11-06T02:49:00Z'
+  support: supports
+  summary: Working-tree record data/records/luxembourgite.yaml captures IMA:2018-154
+    identity (symbol Lux), Bivels (Luxembourg) hydrothermal dolomite-siderite vein
+    type locality, cotypes FD040 (Luxembourg) and 21302 (Liege), Table 1 (p. 450)
+    JEOL JXA-8200 WDS chemistry (5 points, Bi 43.73, Se 31.04, Pb 11.95, Ag 6.60,
+    Cu 2.66, Fe 0.02, S 0.01 wt%, Total 96.01 wt%), monoclinic P21/m (#11) watkinsonite-analogue
+    structure (Tables 2-6; SCXRD a = 13.002(1), b = 4.1543(3), c = 15.312(2) A, beta
+    = 108.92(1) deg, V = 782.4(2) A3, Z = 2, R1 = 0.0476), primary-source discrepancies
+    (ideal Ag 5.58 vs 5.84 wt% digit transposition summing to 99.74 wt%; Dcalc 8.00
+    vs 7.397 g/cm3; M-O for M-Se bond-length misprint), and 0 mechanisms (SHA-256
+    025aa43b48e777f0d30e9e8f4e88e88054bbaeaa835cf91877e60bbd9bdf0646).
+  snapshot_sha256: 025aa43b48e777f0d30e9e8f4e88e88054bbaeaa835cf91877e60bbd9bdf0646
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 129
+  accessed_at: '2026-11-06T02:49:00Z'
+  support: supports
+  summary: Confirms Luxembourgite, status A, IMA:2018-154, and primary reference in
+    European Journal of Mineralogy.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: philippo_2020_luxembourgite_primary
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-32-449-2020
+  locator: Philippo S, Hatert F, Bruni Y, Vignola P, and Sejkora J (2020) Luxembourgite,
+    AgCuPbBi4Se8, a new mineral species from Bivels, Grand Duchy of Luxembourg, Eur.
+    J. Mineral. 32:449-455, pp. 449-455, Tables 1-6, Figures 1-4 (20 bounded passages
+    <= 1,800 B across 7 full-PDF pages; 6 main-text pages / 17 passages, plus PNG
+    renders of pages 2 and 4)
+  accessed_at: '2026-11-06T02:49:00Z'
+  support: supports
+  summary: All bounded passages (<= 1,800 B) and single-page 150-DPI PNG table renders
+    inspected from Philippo S, Hatert F, Bruni Y, Vignola P, and Sejkora J (2020)
+    Luxembourgite, AgCuPbBi4Se8, a new mineral species from Bivels, Grand Duchy of
+    Luxembourg, Eur. J. Mineral. 32:449-455, pp. 449-455, Tables 1-6, Figures 1-4
+    (20 bounded passages <= 1,800 B across 7 full-PDF pages; 6 main-text pages / 17
+    passages, plus PNG renders of pages 2 and 4), confirming verbatim title, type
+    locality, type specimen repositories, chemical composition, unit-cell parameters,
+    structure refinement, and documented internal source discrepancies.
+  snapshot_sha256: 9e9072c491874e921834315615b67a2305bc57de8137e7c64e08eeb169200254
+- evidence_id: create_history
+  kind: record_content
+  reference: history/records/luxembourgite/2026-11-06T024320Z-antigravity-583019.yaml
+  locator: Canonical CREATE history sidecar history/records/luxembourgite/2026-11-06T024320Z-antigravity-583019.yaml
+  accessed_at: '2026-11-06T02:49:00Z'
+  support: supports
+  summary: Canonical CREATE history sidecar (SHA-256 5dd20a298c1980a114416cdd491d22925f035b7298d74e9462e7b1dab1034e9c)
+    matches record curation_history[0].timestamp and top-level record sections.
+  snapshot_sha256: 5dd20a298c1980a114416cdd491d22925f035b7298d74e9462e7b1dab1034e9c
+- evidence_id: validation
+  kind: validation
+  reference: data/records/luxembourgite.yaml
+  locator: Real CLI validation via .venv/bin/cmmmech validate --require-records and
+    .venv/bin/cmmmech validate-history --base main
+  accessed_at: '2026-11-06T02:49:30Z'
+  support: supports
+  summary: Checked 693 record(s); 0 failed. Checked 1379 history record(s); 0 error(s).
+  snapshot_sha256: 025aa43b48e777f0d30e9e8f4e88e88054bbaeaa835cf91877e60bbd9bdf0646
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: .venv/bin/cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 693 record(s); 0 failed.
+  target_ids:
+  - cmmmech:luxembourgite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: .venv/bin/cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1379 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:luxembourgite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA:2018-154 identity, Bivels type locality, JEOL JXA-8200
+    WDS chemistry, monoclinic P21/m crystal structure, and internal source discrepancies
+    for luxembourgite
+  outcome: supported
+  summary: All numeric, crystallographic, optical, spectroscopic, and chemical claims
+    in data/records/luxembourgite.yaml (SHA-256 025aa43b48e777f0d30e9e8f4e88e88054bbaeaa835cf91877e60bbd9bdf0646)
+    match the bounded primary-source passages and rendered table PNGs of Philippo
+    S, Hatert F, Bruni Y, Vignola P, and Sejkora J (2020) Luxembourgite, AgCuPbBi4Se8,
+    a new mineral species from Bivels, Grand Duchy of Luxembourg, Eur. J. Mineral.
+    32:449-455, pp. 449-455, Tables 1-6, Figures 1-4 (20 bounded passages <= 1,800
+    B across 7 full-PDF pages; 6 main-text pages / 17 passages, plus PNG renders of
+    pages 2 and 4) and the September 2026 IMA Master List (p. 129).
+  target_ids:
+  - cmmmech:luxembourgite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - philippo_2020_luxembourgite_primary
+- assessment_id: mechanism_absence_and_provenance_verification
+  area: provenance
+  topic: Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE
+    provenance
+  outcome: supported
+  summary: data/records/luxembourgite.yaml accurately omits mechanisms (0 mechanisms)
+    and explicitly discloses that no biological or microbial interaction data are
+    reported in the type mineralogical description. Append-only CREATE history sidecar
+    passes validation with 0 errors.
+  target_ids:
+  - cmmmech:luxembourgite
+  evidence_ids:
+  - owner
+  - philippo_2020_luxembourgite_primary
+  - create_history
+  - validation
+findings: []
+actions: []
+summary: 'Luxembourgite (IMA:2018-154, status A, AgCuPbBi4Se8) passes primary-source
+  scientific review (scientific_review: true) at SHA-256 025aa43b48e777f0d30e9e8f4e88e88054bbaeaa835cf91877e60bbd9bdf0646
+  against all bounded passages and rendered table PNGs of Philippo S, Hatert F, Bruni
+  Y, Vignola P, and Sejkora J (2020) Luxembourgite, AgCuPbBi4Se8, a new mineral species
+  from Bivels, Grand Duchy of Luxembourg, Eur. J. Mineral. 32:449-455, pp. 449-455,
+  Tables 1-6, Figures 1-4 (20 bounded passages <= 1,800 B across 7 full-PDF pages;
+  6 main-text pages / 17 passages, plus PNG renders of pages 2 and 4).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed under the Round 128 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage) plus single-page 150-DPI PNG table renders.
+related_reviews: []
