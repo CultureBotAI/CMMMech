@@ -1,0 +1,350 @@
+# Cycle 10 Stage 2 causal-graphs review of Metalliferous black shale (cmmmech:metalliferous-black-shale)
+
+- Review: 20261106T050600Z-metalliferous-black-shale-cycle10-stage2-causal-graphs-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-06T05:05:30Z
+- Finished UTC: 2026-11-06T05:06:00Z
+- Reviewer: antigravity / cmmmech-cycle10-stage2-causal-graphs-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Metalliferous black shale (cmmmech:metalliferous-black-shale) passes Cycle 10 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 ce657a3e86288971e93d42d8679dff542f44f148962c7207b380600107cb2d3a: Curated data/records/metalliferous-black-shale.yaml with causal_graph 'heap1_acid_leaching_comparison_graph' (mechanism_ref: heap1_acid_leaching_comparison, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from anjum_2009: Anjum F, Bhatti HN and Ambreen A. Bioleaching of Black Shale by Acidithiobacillus ferrooxidans. Asian Journal of Chemistry 21(7):5251-5266, printed 2009; publisher landing metadata lists 2010. Primary PDF, especially pp5252-5253, 5257, 5262 and Table 3 on p5264. No DOI verified. (https://asianpubs.org/index.php/ajchem/article/view/18301/18250). Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).
+
+## Scope And Provenance
+
+Cycle 10 Stage 2 causal-graphs review of data/records/metalliferous-black-shale.yaml (SHA-256 ce657a3e86288971e93d42d8679dff542f44f148962c7207b380600107cb2d3a) and its canonical EDIT history sidecar(s) (history/records/metalliferous-black-shale/2026-11-06T045848Z-marcin-25fe3d.yaml, history/records/metalliferous-black-shale/2026-11-06T062554Z-marcin-f8674b.yaml) verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source evidence fidelity across causal_graph 'heap1_acid_leaching_comparison_graph' (mechanism_ref: heap1_acid_leaching_comparison, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]).
+
+Selection: Cycle 10 Stage 2 causal_graphs curation for cmmmech:metalliferous-black-shale
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 0fbb411bcb9bba9d4871d7791d5a13ebc4b50723.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:metalliferous-black-shale | data/records/metalliferous-black-shale.yaml | maintained | Metalliferous black shale |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:metalliferous-black-shale | Checked 693 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:metalliferous-black-shale | All history sidecars pass validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Verification of causal_graphs structure, UniProtKB reference-proteome grounding, and parity across causal_graph 'heap1_acid_leaching_comparison_graph' (mechanism_ref: heap1_acid_leaching_comparison, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)])
+
+graph: supported. Targets: cmmmech:metalliferous-black-shale.
+
+Curated data/records/metalliferous-black-shale.yaml (SHA-256 ce657a3e86288971e93d42d8679dff542f44f148962c7207b380600107cb2d3a) with causal_graph 'heap1_acid_leaching_comparison_graph' (mechanism_ref: heap1_acid_leaching_comparison, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from anjum_2009: Anjum F, Bhatti HN and Ambreen A. Bioleaching of Black Shale by Acidithiobacillus ferrooxidans. Asian Journal of Chemistry 21(7):5251-5266, printed 2009; publisher landing metadata lists 2010. Primary PDF, especially pp5252-5253, 5257, 5262 and Table 3 on p5264. No DOI verified. (https://asianpubs.org/index.php/ajchem/article/view/18301/18250). Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).
+
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
+
+provenance: supported. Targets: cmmmech:metalliferous-black-shale.
+
+data/records/metalliferous-black-shale.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/metalliferous-black-shale/2026-11-06T045848Z-marcin-25fe3d.yaml (SHA-256 6ed7c34cb30979f555ecea8f8cb92708487a095cc0ac37232025567e7484a95b): Add evidence-backed causal_graphs representation and 4 live-verified Acidithiobacillus ferrooxidans rus-operon protein groundings (UniProtKB:B7JAQ7, UniProtKB:A0A2W1KH68, UniProtKB:B7JAQ0, UniProtKB:B7JAQ6) for heap1_acid_leaching_comparison, preserving Table 3 mg/dm3 leachate outcomes and internal Table 3 vs prose/figure percentage discrepancies.; history/records/metalliferous-black-shale/2026-11-06T062554Z-marcin-f8674b.yaml (SHA-256 142f7aea0a602472612979ccdcdaad705b7c467a441433307586630dec220f03): Align metalliferous-black-shale.yaml protein_examples and causal_graphs with Table 3 in Anjum et al. (2009): Cu is 1.75 mg/dm3 across all iron-supplemented cultures and controls (no microbial Cu increment), Mn is higher at pH 2.0/1.5 +Fe (25.3 vs 19.5; 26.8 vs 24.0 mg/dm3) but lower at pH 2.5 +Fe (15.8 vs 17.85 mg/dm3), Fe is 103.00 vs 74.25 mg/dm3 at pH 1.5 -Fe, and unsupplemented non-iron cells are marked ND (p. 5262) (Issue #947).) and passing all LinkML and history validation gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/metalliferous-black-shale.yaml; Working-tree record data/records/metalliferous-black-shale.yaml (causal_graphs and mechanisms[].protein_examples) | supports | Curated data/records/metalliferous-black-shale.yaml (SHA-256 ce657a3e86288971e93d42d8679dff542f44f148962c7207b380600107cb2d3a) with causal_graph 'heap1_acid_leaching_comparison_graph' (mechanism_ref: heap1_acid_leaching_comparison, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats. |
+| primary_source | https://asianpubs.org/index.php/ajchem/article/view/18301/18250; anjum_2009: Anjum F, Bhatti HN and Ambreen A. Bioleaching of Black Shale by Acidithiobacillus ferrooxidans. Asian Journal of Chemistry 21(7):5251-5266, printed 2009; publisher landing metadata lists 2010. Primary PDF, especially pp5252-5253, 5257, 5262 and Table 3 on p5264. No DOI verified. (https://asianpubs.org/index.php/ajchem/article/view/18301/18250) | supports | Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362). Primary mechanism source(s) (anjum_2009: Anjum F, Bhatti HN and Ambreen A. Bioleaching of Black Shale by Acidithiobacillus ferrooxidans. Asian Journal of Chemistry 21(7):5251-5266, printed 2009; publisher landing metadata lists 2010. Primary PDF, especially pp5252-5253, 5257, 5262 and Table 3 on p5264. No DOI verified. (https://asianpubs.org/index.php/ajchem/article/view/18301/18250)) report culture-level mineralization, biosorption, or bioleaching without single-gene knockouts; supports: partial is strictly preserved on all enzyme-level edges and ProteinExample evidence items. |
+| edit_history | history/records/metalliferous-black-shale/2026-11-06T045848Z-marcin-25fe3d.yaml; Canonical EDIT history sidecar history/records/metalliferous-black-shale/2026-11-06T045848Z-marcin-25fe3d.yaml | supports | Canonical EDIT history sidecar history/records/metalliferous-black-shale/2026-11-06T045848Z-marcin-25fe3d.yaml (SHA-256 6ed7c34cb30979f555ecea8f8cb92708487a095cc0ac37232025567e7484a95b): Add evidence-backed causal_graphs representation and 4 live-verified Acidithiobacillus ferrooxidans rus-operon protein groundings (UniProtKB:B7JAQ7, UniProtKB:A0A2W1KH68, UniProtKB:B7JAQ0, UniProtKB:B7JAQ6) for heap1_acid_leaching_comparison, preserving Table 3 mg/dm3 leachate outcomes and internal Table 3 vs prose/figure percentage discrepancies. |
+| edit_history_2 | history/records/metalliferous-black-shale/2026-11-06T062554Z-marcin-f8674b.yaml; Canonical EDIT history sidecar history/records/metalliferous-black-shale/2026-11-06T062554Z-marcin-f8674b.yaml | supports | Canonical EDIT history sidecar history/records/metalliferous-black-shale/2026-11-06T062554Z-marcin-f8674b.yaml (SHA-256 142f7aea0a602472612979ccdcdaad705b7c467a441433307586630dec220f03): Align metalliferous-black-shale.yaml protein_examples and causal_graphs with Table 3 in Anjum et al. (2009): Cu is 1.75 mg/dm3 across all iron-supplemented cultures and controls (no microbial Cu increment), Mn is higher at pH 2.0/1.5 +Fe (25.3 vs 19.5; 26.8 vs 24.0 mg/dm3) but lower at pH 2.5 +Fe (15.8 vs 17.85 mg/dm3), Fe is 103.00 vs 74.25 mg/dm3 at pH 1.5 -Fe, and unsupplemented non-iron cells are marked ND (p. 5262) (Issue #947). |
+| validation | data/records/metalliferous-black-shale.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/metalliferous-black-shale.yaml and history/records/metalliferous-black-shale/2026-11-06T045848Z-marcin-25fe3d.yaml, history/records/metalliferous-black-shale/2026-11-06T062554Z-marcin-f8674b.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed during Cycle 10 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py for cmmmech:metalliferous-black-shale (including Issue #947 review-remediation updates).
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261106T050600Z-metalliferous-black-shale-cycle10-stage2-causal-graphs-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 10 Stage 2 causal-graphs review of Metalliferous black shale (cmmmech:metalliferous-black-shale)
+started_at: '2026-11-06T05:05:30Z'
+finished_at: '2026-11-06T05:06:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle10-stage2-causal-graphs-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 10 Stage 2 causal_graphs and ProteinExample curation in data/records/metalliferous-black-shale.yaml
+    (SHA-256 ce657a3e86288971e93d42d8679dff542f44f148962c7207b380600107cb2d3a) against
+    live UniProtKB reference-proteome grounding and cited primary source(s) (anjum_2009:
+    Anjum F, Bhatti HN and Ambreen A. Bioleaching of Black Shale by Acidithiobacillus
+    ferrooxidans. Asian Journal of Chemistry 21(7):5251-5266, printed 2009; publisher
+    landing metadata lists 2010. Primary PDF, especially pp5252-5253, 5257, 5262 and
+    Table 3 on p5264. No DOI verified. (https://asianpubs.org/index.php/ajchem/article/view/18301/18250)).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 0fbb411bcb9bba9d4871d7791d5a13ebc4b50723
+  state: working_tree
+  inputs:
+  - path: data/records/metalliferous-black-shale.yaml
+    sha256: ce657a3e86288971e93d42d8679dff542f44f148962c7207b380600107cb2d3a
+    role: target
+  - path: history/records/metalliferous-black-shale/2026-11-06T045848Z-marcin-25fe3d.yaml
+    sha256: 6ed7c34cb30979f555ecea8f8cb92708487a095cc0ac37232025567e7484a95b
+    role: context
+  - path: history/records/metalliferous-black-shale/2026-11-06T062554Z-marcin-f8674b.yaml
+    sha256: 142f7aea0a602472612979ccdcdaad705b7c467a441433307586630dec220f03
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:metalliferous-black-shale
+  path: data/records/metalliferous-black-shale.yaml
+  label: Metalliferous black shale
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/metalliferous-black-shale.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/metalliferous-black-shale/2026-11-06T045848Z-marcin-25fe3d.yaml
+    role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/metalliferous-black-shale/2026-11-06T062554Z-marcin-f8674b.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 10 Stage 2 causal-graphs review of data/records/metalliferous-black-shale.yaml
+    (SHA-256 ce657a3e86288971e93d42d8679dff542f44f148962c7207b380600107cb2d3a) and
+    its canonical EDIT history sidecar(s) (history/records/metalliferous-black-shale/2026-11-06T045848Z-marcin-25fe3d.yaml,
+    history/records/metalliferous-black-shale/2026-11-06T062554Z-marcin-f8674b.yaml)
+    verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding,
+    and primary-source evidence fidelity across causal_graph ''heap1_acid_leaching_comparison_graph''
+    (mechanism_ref: heap1_acid_leaching_comparison, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase:
+    [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975,
+    A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0
+    (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]).'
+  selection: Cycle 10 Stage 2 causal_graphs curation for cmmmech:metalliferous-black-shale
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:metalliferous-black-shale
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/metalliferous-black-shale.yaml
+  locator: Working-tree record data/records/metalliferous-black-shale.yaml (causal_graphs
+    and mechanisms[].protein_examples)
+  accessed_at: '2026-11-06T05:05:45Z'
+  support: supports
+  summary: 'Curated data/records/metalliferous-black-shale.yaml (SHA-256 ce657a3e86288971e93d42d8679dff542f44f148962c7207b380600107cb2d3a)
+    with causal_graph ''heap1_acid_leaching_comparison_graph'' (mechanism_ref: heap1_acid_leaching_comparison,
+    4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase: [UniProtKB:B7JAQ7
+    (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR,
+    UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2,
+    UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving
+    100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and experimental caveats.'
+  snapshot_sha256: ce657a3e86288971e93d42d8679dff542f44f148962c7207b380600107cb2d3a
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://asianpubs.org/index.php/ajchem/article/view/18301/18250
+  locator: 'anjum_2009: Anjum F, Bhatti HN and Ambreen A. Bioleaching of Black Shale
+    by Acidithiobacillus ferrooxidans. Asian Journal of Chemistry 21(7):5251-5266,
+    printed 2009; publisher landing metadata lists 2010. Primary PDF, especially pp5252-5253,
+    5257, 5262 and Table 3 on p5264. No DOI verified. (https://asianpubs.org/index.php/ajchem/article/view/18301/18250)'
+  accessed_at: '2026-11-06T05:05:45Z'
+  support: supports
+  summary: 'Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7
+    (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus
+    ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR,
+    Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus
+    ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol:
+    rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362);
+    UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159
+    Acidithiobacillus ferrooxidans ATCC 23270, UP000001362). Primary mechanism source(s)
+    (anjum_2009: Anjum F, Bhatti HN and Ambreen A. Bioleaching of Black Shale by Acidithiobacillus
+    ferrooxidans. Asian Journal of Chemistry 21(7):5251-5266, printed 2009; publisher
+    landing metadata lists 2010. Primary PDF, especially pp5252-5253, 5257, 5262 and
+    Table 3 on p5264. No DOI verified. (https://asianpubs.org/index.php/ajchem/article/view/18301/18250))
+    report culture-level mineralization, biosorption, or bioleaching without single-gene
+    knockouts; supports: partial is strictly preserved on all enzyme-level edges and
+    ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/metalliferous-black-shale/2026-11-06T045848Z-marcin-25fe3d.yaml
+  locator: Canonical EDIT history sidecar history/records/metalliferous-black-shale/2026-11-06T045848Z-marcin-25fe3d.yaml
+  accessed_at: '2026-11-06T05:05:45Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/metalliferous-black-shale/2026-11-06T045848Z-marcin-25fe3d.yaml
+    (SHA-256 6ed7c34cb30979f555ecea8f8cb92708487a095cc0ac37232025567e7484a95b): Add
+    evidence-backed causal_graphs representation and 4 live-verified Acidithiobacillus
+    ferrooxidans rus-operon protein groundings (UniProtKB:B7JAQ7, UniProtKB:A0A2W1KH68,
+    UniProtKB:B7JAQ0, UniProtKB:B7JAQ6) for heap1_acid_leaching_comparison, preserving
+    Table 3 mg/dm3 leachate outcomes and internal Table 3 vs prose/figure percentage
+    discrepancies.'
+  snapshot_sha256: 6ed7c34cb30979f555ecea8f8cb92708487a095cc0ac37232025567e7484a95b
+- evidence_id: edit_history_2
+  kind: record_content
+  reference: history/records/metalliferous-black-shale/2026-11-06T062554Z-marcin-f8674b.yaml
+  locator: Canonical EDIT history sidecar history/records/metalliferous-black-shale/2026-11-06T062554Z-marcin-f8674b.yaml
+  accessed_at: '2026-11-06T05:05:45Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/metalliferous-black-shale/2026-11-06T062554Z-marcin-f8674b.yaml
+    (SHA-256 142f7aea0a602472612979ccdcdaad705b7c467a441433307586630dec220f03): Align
+    metalliferous-black-shale.yaml protein_examples and causal_graphs with Table 3
+    in Anjum et al. (2009): Cu is 1.75 mg/dm3 across all iron-supplemented cultures
+    and controls (no microbial Cu increment), Mn is higher at pH 2.0/1.5 +Fe (25.3
+    vs 19.5; 26.8 vs 24.0 mg/dm3) but lower at pH 2.5 +Fe (15.8 vs 17.85 mg/dm3),
+    Fe is 103.00 vs 74.25 mg/dm3 at pH 1.5 -Fe, and unsupplemented non-iron cells
+    are marked ND (p. 5262) (Issue #947).'
+  snapshot_sha256: 142f7aea0a602472612979ccdcdaad705b7c467a441433307586630dec220f03
+- evidence_id: validation
+  kind: validation
+  reference: data/records/metalliferous-black-shale.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-06T05:05:45Z'
+  support: supports
+  summary: data/records/metalliferous-black-shale.yaml and history/records/metalliferous-black-shale/2026-11-06T045848Z-marcin-25fe3d.yaml,
+    history/records/metalliferous-black-shale/2026-11-06T062554Z-marcin-f8674b.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: ce657a3e86288971e93d42d8679dff542f44f148962c7207b380600107cb2d3a
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 693 record(s); 0 failed.
+  target_ids:
+  - cmmmech:metalliferous-black-shale
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:metalliferous-black-shale
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_protein_grounding
+  area: graph
+  topic: 'Verification of causal_graphs structure, UniProtKB reference-proteome grounding,
+    and parity across causal_graph ''heap1_acid_leaching_comparison_graph'' (mechanism_ref:
+    heap1_acid_leaching_comparison, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase:
+    [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975,
+    A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0
+    (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)])'
+  outcome: supported
+  summary: 'Curated data/records/metalliferous-black-shale.yaml (SHA-256 ce657a3e86288971e93d42d8679dff542f44f148962c7207b380600107cb2d3a)
+    with causal_graph ''heap1_acid_leaching_comparison_graph'' (mechanism_ref: heap1_acid_leaching_comparison,
+    4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase: [UniProtKB:B7JAQ7
+    (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR,
+    UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2,
+    UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving
+    100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and caveats from anjum_2009: Anjum
+    F, Bhatti HN and Ambreen A. Bioleaching of Black Shale by Acidithiobacillus ferrooxidans.
+    Asian Journal of Chemistry 21(7):5251-5266, printed 2009; publisher landing metadata
+    lists 2010. Primary PDF, especially pp5252-5253, 5257, 5262 and Table 3 on p5264.
+    No DOI verified. (https://asianpubs.org/index.php/ajchem/article/view/18301/18250).
+    Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2,
+    Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans
+    ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C,
+    gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans,
+    UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT,
+    NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6
+    (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus
+    ferrooxidans ATCC 23270, UP000001362).'
+  target_ids:
+  - cmmmech:metalliferous-black-shale
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
+  outcome: supported
+  summary: 'data/records/metalliferous-black-shale.yaml was updated exclusively through
+    scripts/curate_causal_graphs.py (curate_record_file), producing append-only history
+    sidecar(s) (history/records/metalliferous-black-shale/2026-11-06T045848Z-marcin-25fe3d.yaml
+    (SHA-256 6ed7c34cb30979f555ecea8f8cb92708487a095cc0ac37232025567e7484a95b): Add
+    evidence-backed causal_graphs representation and 4 live-verified Acidithiobacillus
+    ferrooxidans rus-operon protein groundings (UniProtKB:B7JAQ7, UniProtKB:A0A2W1KH68,
+    UniProtKB:B7JAQ0, UniProtKB:B7JAQ6) for heap1_acid_leaching_comparison, preserving
+    Table 3 mg/dm3 leachate outcomes and internal Table 3 vs prose/figure percentage
+    discrepancies.; history/records/metalliferous-black-shale/2026-11-06T062554Z-marcin-f8674b.yaml
+    (SHA-256 142f7aea0a602472612979ccdcdaad705b7c467a441433307586630dec220f03): Align
+    metalliferous-black-shale.yaml protein_examples and causal_graphs with Table 3
+    in Anjum et al. (2009): Cu is 1.75 mg/dm3 across all iron-supplemented cultures
+    and controls (no microbial Cu increment), Mn is higher at pH 2.0/1.5 +Fe (25.3
+    vs 19.5; 26.8 vs 24.0 mg/dm3) but lower at pH 2.5 +Fe (15.8 vs 17.85 mg/dm3),
+    Fe is 103.00 vs 74.25 mg/dm3 at pH 1.5 -Fe, and unsupplemented non-iron cells
+    are marked ND (p. 5262) (Issue #947).) and passing all LinkML and history validation
+    gates.'
+  target_ids:
+  - cmmmech:metalliferous-black-shale
+  evidence_ids:
+  - owner
+  - edit_history
+  - edit_history_2
+  - validation
+findings: []
+actions: []
+summary: 'Metalliferous black shale (cmmmech:metalliferous-black-shale) passes Cycle
+  10 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 ce657a3e86288971e93d42d8679dff542f44f148962c7207b380600107cb2d3a:
+  Curated data/records/metalliferous-black-shale.yaml with causal_graph ''heap1_acid_leaching_comparison_graph''
+  (mechanism_ref: heap1_acid_leaching_comparison, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase:
+  [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975,
+  A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0
+  (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]),
+  achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+  and preserving source-faithful support levels and experimental caveats from anjum_2009:
+  Anjum F, Bhatti HN and Ambreen A. Bioleaching of Black Shale by Acidithiobacillus
+  ferrooxidans. Asian Journal of Chemistry 21(7):5251-5266, printed 2009; publisher
+  landing metadata lists 2010. Primary PDF, especially pp5252-5253, 5257, 5262 and
+  Table 3 on p5264. No DOI verified. (https://asianpubs.org/index.php/ajchem/article/view/18301/18250).
+  Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2,
+  Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans
+  ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C,
+  gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans,
+  UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT,
+  NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6
+  (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus
+  ferrooxidans ATCC 23270, UP000001362).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- 'Executed during Cycle 10 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
+  for cmmmech:metalliferous-black-shale (including Issue #947 review-remediation updates).'
+related_reviews: []
+```

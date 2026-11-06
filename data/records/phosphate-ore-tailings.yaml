@@ -1,138 +1,394 @@
 id: cmmmech:phosphate-ore-tailings
 name: Phosphate-ore tailings
 material_kind: secondary_resource
-description: >-
-  Residual material from phosphate-ore processing, distinct from phosphate
-  rock as a commodity, a phosphate concentrate, phosphogypsum and a pure
-  phosphate mineral. The curated example is the Florida phosphate tailings
-  specimen studied by Somasundaran and colleagues, described as predominantly
-  clay-bearing and supplied by Florida University, USA. The paper does not
-  identify its mine or processing plant. Composition and leaching behavior
-  are specimen-specific; constituent rare earth elements do not confer a
-  criticality designation on this resource.
+description: Residual material from phosphate-ore processing, distinct from phosphate rock as a commodity, a phosphate concentrate, phosphogypsum and a pure phosphate mineral. The curated example is the Florida phosphate tailings specimen studied by Somasundaran and colleagues, described as predominantly clay-bearing and supplied by Florida University, USA. The paper does not identify its mine or processing plant. Composition and leaching behavior are specimen-specific; constituent rare earth elements do not confer a criticality designation on this resource.
 sources:
-  - id: somasundaran2018
-    title: >-
-      Somasundaran P, Hussien S, Patra P and El Shall H (2018).
-      Environmentally Benign Bio-Leaching Extraction of Rare Earth Elements
-      from Non-Conventional Resources. Annals of Microbiology and Research
-      2(1):54-60. DOI 10.36959/958/570. Complete seven-page publisher PDF
-      inspected, including methods pp.54-55, Table 1 and Figures 1-8.
-      Tailings and concentrate results are separate experimental feeds.
-    url: https://scholars.direct/Articles/microbiology/amr-2-009.pdf
-    accessed_on: '2026-10-16'
-  - id: ncbi_ferrooxidans
-    title: >-
-      NCBI Taxonomy, taxon 920, Acidithiobacillus ferrooxidans, rank species.
-      This identifier does not resolve the study's unspecified ATCC strain.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
-    accessed_on: '2026-10-16'
-  - id: ncbi_niger
-    title: >-
-      NCBI Taxonomy, taxon 5061, Aspergillus niger, rank species. This is the
-      authors' species identification, not a verified strain or genome
-      accession for their phosphate-concentrate isolate.
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=info
-    accessed_on: '2026-10-16'
+- id: somasundaran2018
+  title: Somasundaran P, Hussien S, Patra P and El Shall H (2018). Environmentally Benign Bio-Leaching Extraction of Rare Earth Elements from Non-Conventional Resources. Annals of Microbiology and Research 2(1):54-60. DOI 10.36959/958/570. Complete seven-page publisher PDF inspected, including methods pp.54-55, Table 1 and Figures 1-8. Tailings and concentrate results are separate experimental feeds.
+  url: https://scholars.direct/Articles/microbiology/amr-2-009.pdf
+  accessed_on: '2026-10-16'
+- id: ncbi_ferrooxidans
+  title: NCBI Taxonomy, taxon 920, Acidithiobacillus ferrooxidans, rank species. This identifier does not resolve the study's unspecified ATCC strain.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
+  accessed_on: '2026-10-16'
+- id: ncbi_niger
+  title: NCBI Taxonomy, taxon 5061, Aspergillus niger, rank species. This is the authors' species identification, not a verified strain or genome accession for their phosphate-concentrate isolate.
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=5061&mode=info
+  accessed_on: '2026-10-16'
 mechanisms:
-  - id: culture_associated_ree_leaching
-    name: Culture-associated rare earth leaching in bacterial and fungal arms
-    process: bioleaching
-    microbial: true
-    description: >-
-      Separate living cultures identified as Acidithiobacillus ferrooxidans
-      and Aspergillus niger were incubated with phosphate tailings in
-      laboratory shake flasks. The paper reports aggregate rare earth
-      signal in clarified leachate. Without matched sterile or acid-matched
-      leaching controls, these observations establish culture-associated
-      leaching but not a microbial increment, an exclusive biochemical
-      pathway or recovery of an isolated rare earth product.
-    context: >-
-      Methods p.55 describe 500 mL flasks with 250 mL medium, 1% pulp
-      density, 30 degrees C and 150 rpm. The bacterial arm used ferrous
-      sulfate 9K medium adjusted to leaching pH 1.7, distinct from growth
-      medium pH 2.5, and 1 mL stationary-phase inoculum reported as
-      approximately 5 x 10^8 cells/mL. Its ATCC accession is unspecified.
-      The fungus was isolated from phosphate concentrate and ore-adapted;
-      it used modified Czapek-Dox liquid medium, with pH 7.5 in Figure 4.
-      Methods report autoclaving fungal samples and medium at 121 degrees C,
-      but conflict between one mL culture and two mL spore inoculum.
-      The received tailings particle size was about 147 micrometres;
-      Figures 3-4 explicitly specify ground 75 micrometre particles for
-      both accepted time-series arms. Later optimization compares several
-      separately ground size classes.
-      The nominal 2-3 day bacterial and 24 h fungal methods conflict with
-      time-series figures extending to six and five days, respectively.
-      Figures 1-2 show pure-culture growth curves, without explicit paired
-      with-feed and without-feed series. They are not uninoculated
-      leaching controls. Leachate was filtered through
-      Whatman No.1 paper and centrifuged at 7000 rpm for more than ten
-      minutes before an Arsenazo I colorimetric assay near 520 nm. This is
-      an operational aggregate assay, not an element-resolved analysis.
-      The paper does not supply sufficient calibration, interference or
-      mass-balance information to independently validate its absolute
-      extraction percentages. These are laboratory observations, not
-      evidence of industrial deployment or environmental or economic superiority.
-    organisms:
-      - id: NCBITaxon:920
-        label: Acidithiobacillus ferrooxidans
-      - id: NCBITaxon:5061
-        label: Aspergillus niger
+- id: culture_associated_ree_leaching
+  name: Culture-associated rare earth leaching in bacterial and fungal arms
+  process: bioleaching
+  description: Separate living cultures identified as Acidithiobacillus ferrooxidans and Aspergillus niger were incubated with phosphate tailings in laboratory shake flasks. The paper reports aggregate rare earth signal in clarified leachate. Without matched sterile or acid-matched leaching controls, these observations establish culture-associated leaching but not a microbial increment, an exclusive biochemical pathway or recovery of an isolated rare earth product.
+  context: Methods p.55 describe 500 mL flasks with 250 mL medium, 1% pulp density, 30 degrees C and 150 rpm. The bacterial arm used ferrous sulfate 9K medium adjusted to leaching pH 1.7, distinct from growth medium pH 2.5, and 1 mL stationary-phase inoculum reported as approximately 5 x 10^8 cells/mL. Its ATCC accession is unspecified. The fungus was isolated from phosphate concentrate and ore-adapted; it used modified Czapek-Dox liquid medium, with pH 7.5 in Figure 4. Methods report autoclaving fungal samples and medium at 121 degrees C, but conflict between one mL culture and two mL spore inoculum. The received tailings particle size was about 147 micrometres; Figures 3-4 explicitly specify ground 75 micrometre particles for both accepted time-series arms. Later optimization compares several separately ground size classes. The nominal 2-3 day bacterial and 24 h fungal methods conflict with time-series figures extending to six and five days, respectively. Figures 1-2 show pure-culture
+    growth curves, without explicit paired with-feed and without-feed series. They are not uninoculated leaching controls. Leachate was filtered through Whatman No.1 paper and centrifuged at 7000 rpm for more than ten minutes before an Arsenazo I colorimetric assay near 520 nm. This is an operational aggregate assay, not an element-resolved analysis. The paper does not supply sufficient calibration, interference or mass-balance information to independently validate its absolute extraction percentages. These are laboratory observations, not evidence of industrial deployment or environmental or economic superiority.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:920
+    label: Acidithiobacillus ferrooxidans
+  - id: NCBITaxon:5061
+    label: Aspergillus niger
+  protein_examples:
+  - uniprot_accession: UniProtKB:B7JAQ7
+    entry_name: B7JAQ7_ACIF2
+    protein_name: Cytochrome c
+    gene_symbol: cyc2
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    functional_role: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270, catalyzing primary extracellular electron extraction from soluble Fe(II) at low pH.
+    annotation_note: Grounded to type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270 / DSM 14882 / NCIMB 8455; NCBITaxon:243159) as a representative strain-level entry for species-level mechanism organism Acidithiobacillus ferrooxidans (NCBITaxon:920). Represents the unspecified ATCC Acidithiobacillus ferrooxidans culture tested in ferrous sulfate 9K medium (pH 1.7) on 75 um Florida phosphate tailings in Somasundaran et al. (2018).
     evidence:
-      - source_ref: somasundaran2018
-        supports: support
-        explanation: >-
-          Methods pp.54-55 and Figures 3-4 support the narrow observation
-          that the authors tested the two named cultures separately on
-          Florida phosphate tailings and reported rare earth signal in
-          clarified liquid. The species labels are the authors' assignments;
-          neither a strain accession nor sequence-based identification is
-          supplied for the experimental organisms.
+    - source_ref: somasundaran2018
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein supporting ferrous-iron oxidation in the bacterial shake-flask arm (1 mL stationary-phase inoculum at ~5 x 10^8 cells/mL in 250 mL ferrous sulfate 9K medium adjusted to leaching pH 1.7 with 1% pulp density of 75 um ground Florida phosphate tailings at 30 C and 150 rpm, reporting ~45% aggregate Arsenazo I rare earth signal by day 3 in Figure 3) in Somasundaran et al. (2018); the ATCC strain accession is unspecified, individual rus-operon proteins were not assayed, and no matched sterile 9K pH-1.7 leaching control was reported.
+  - uniprot_accession: UniProtKB:A0A2W1KH68
+    entry_name: A0A2W1KH68_ACIFR
+    protein_name: Cytochrome C
+    gene_symbol: DN052_11975
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:920
+      label: Acidithiobacillus ferrooxidans
+    reference_proteome_id: UP000248886
+    functional_role: Outer-membrane c-type cytochrome Cyc2 homolog (locus DN052_11975) in the species-level Acidithiobacillus ferrooxidans DSM 16523 reference proteome (UP000248886; NCBITaxon:920) mediating initial extracellular Fe(II) oxidation.
+    annotation_note: Grounded to species-level reference proteome UP000248886 (Acidithiobacillus ferrooxidans DSM 16523; NCBITaxon:920), providing direct species-taxon parity with mechanism organism NCBITaxon:920 alongside the ATCC 23270 rus-operon entries. Represents the unspecified ATCC Acidithiobacillus ferrooxidans culture tested in ferrous sulfate 9K medium (pH 1.7) on 75 um Florida phosphate tailings in Somasundaran et al. (2018).
+    evidence:
+    - source_ref: somasundaran2018
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein supporting ferrous-iron oxidation in the bacterial shake-flask arm (1 mL stationary-phase inoculum at ~5 x 10^8 cells/mL in 250 mL ferrous sulfate 9K medium adjusted to leaching pH 1.7 with 1% pulp density of 75 um ground Florida phosphate tailings at 30 C and 150 rpm, reporting ~45% aggregate Arsenazo I rare earth signal by day 3 in Figure 3) in Somasundaran et al. (2018); the ATCC strain accession is unspecified, individual rus-operon proteins were not assayed, and no matched sterile 9K pH-1.7 leaching control was reported.
+  - uniprot_accession: UniProtKB:B7JAQ0
+    entry_name: RUS_ACIF2
+    protein_name: Rusticyanin
+    gene_symbol: rus
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR000923
+    - InterPro:IPR028871
+    - InterPro:IPR050845
+    - InterPro:IPR033138
+    - InterPro:IPR008972
+    - InterPro:IPR001243
+    pfam_ids:
+    - Pfam:PF00127
+    ncbifam_ids:
+    - NCBIfam:TIGR03095
+    go_terms:
+    - id: GO:0042597
+      label: periplasmic space
+    - id: GO:0005507
+      label: copper ion binding
+    - id: GO:0009055
+      label: electron transfer activity
+    functional_role: Reviewed Swiss-Prot periplasmic blue-copper protein rusticyanin (rus, locus AFE_3146; RUS_ACIF2) shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) during aerobic Fe(II) oxidation.
+    annotation_note: Reviewed Swiss-Prot entry (RUS_ACIF2) in type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270; NCBITaxon:243159). Represents the unspecified ATCC Acidithiobacillus ferrooxidans culture tested in ferrous sulfate 9K medium (pH 1.7) on 75 um Florida phosphate tailings in Somasundaran et al. (2018).
+    evidence:
+    - source_ref: somasundaran2018
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein supporting ferrous-iron oxidation in the bacterial shake-flask arm (1 mL stationary-phase inoculum at ~5 x 10^8 cells/mL in 250 mL ferrous sulfate 9K medium adjusted to leaching pH 1.7 with 1% pulp density of 75 um ground Florida phosphate tailings at 30 C and 150 rpm, reporting ~45% aggregate Arsenazo I rare earth signal by day 3 in Figure 3) in Somasundaran et al. (2018); the ATCC strain accession is unspecified, individual rus-operon proteins were not assayed, and no matched sterile 9K pH-1.7 leaching control was reported.
+  - uniprot_accession: UniProtKB:B7JAQ6
+    entry_name: B7JAQ6_ACIF2
+    protein_name: Cytochrome c552
+    gene_symbol: cyc1
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR009056
+    - InterPro:IPR036909
+    - InterPro:IPR024167
+    - InterPro:IPR050597
+    pfam_ids:
+    - Pfam:PF00034
+    go_terms:
+    - id: GO:0042597
+      label: periplasmic space
+    - id: GO:0009055
+      label: electron transfer activity
+    - id: GO:0020037
+      label: heme binding
+    - id: GO:0005506
+      label: iron ion binding
+    functional_role: Periplasmic diheme cytochrome c4 Cyc1 (cyc1, locus AFE_3152) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 transferring electrons from rusticyanin (AFE_3146) to the inner-membrane aa3-type cytochrome c oxidase.
+    annotation_note: Grounded to type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270; NCBITaxon:243159). Represents the unspecified ATCC Acidithiobacillus ferrooxidans culture tested in ferrous sulfate 9K medium (pH 1.7) on 75 um Florida phosphate tailings in Somasundaran et al. (2018).
+    evidence:
+    - source_ref: somasundaran2018
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein supporting ferrous-iron oxidation in the bacterial shake-flask arm (1 mL stationary-phase inoculum at ~5 x 10^8 cells/mL in 250 mL ferrous sulfate 9K medium adjusted to leaching pH 1.7 with 1% pulp density of 75 um ground Florida phosphate tailings at 30 C and 150 rpm, reporting ~45% aggregate Arsenazo I rare earth signal by day 3 in Figure 3) in Somasundaran et al. (2018); the ATCC strain accession is unspecified, individual rus-operon proteins were not assayed, and no matched sterile 9K pH-1.7 leaching control was reported.
+  - uniprot_accession: UniProtKB:A0A254TZW7
+    entry_name: CEXA_ASPNG
+    protein_name: Citrate exporter A
+    gene_symbol: cexA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:5061
+      label: Aspergillus niger
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Reviewed Swiss-Prot major facilitator superfamily (MFS) plasma-membrane citrate exporter CexA (cexA; CEXA_ASPNG) mediating active extracellular secretion of citric acid by Aspergillus niger.
+    annotation_note: Reviewed Swiss-Prot entry (CEXA_ASPNG) grounded directly to species-level taxon Aspergillus niger (NCBITaxon:5061), matching the unsequenced species-level A. niger isolate. Represents the phosphate-concentrate-adapted Aspergillus niger isolate tested in modified Czapek-Dox medium (pH 7.5) on 75 um Florida phosphate tailings in Somasundaran et al. (2018).
+    evidence:
+    - source_ref: somasundaran2018
+      supports: partial
+      explanation: Reviewed Swiss-Prot Aspergillus niger plasma-membrane citrate exporter CexA (cexA) representing organic-acid secretion in the separate fungal shake-flask arm (phosphate-concentrate-adapted A. niger isolate in 250 mL modified Czapek-Dox medium at pH 7.5 with 1% pulp density of 75 um Florida phosphate tailings at 30 C and 150 rpm, reporting ~22.5% aggregate Arsenazo I rare earth signal in Figure 4) in Somasundaran et al. (2018); the fungal isolate lacks a strain or sequence accession, organic-acid concentrations were not measured in the tailings leachates, and no matched sterile leaching control was reported.
+  - uniprot_accession: UniProtKB:G3Y4N5
+    entry_name: CEXA_ASPNA
+    protein_name: Citrate exporter A
+    gene_symbol: cexA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:380704
+      label: Aspergillus niger ATCC 1015
+    reference_proteome_id: UP000006706
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Reviewed Swiss-Prot plasma-membrane MFS citrate exporter CexA (cexA, locus ASPNIDRAFT_44471; CEXA_ASPNA) in the citric-acid-producing reference strain Aspergillus niger ATCC 1015 (UP000006706).
+    annotation_note: Reviewed Swiss-Prot reference-proteome entry (CEXA_ASPNA; UP000006706; NCBITaxon:380704) paired with species-level UniProtKB:A0A254TZW7 (NCBITaxon:5061) as a strain-resolved reference proteome example for Aspergillus niger organic-acid export. Represents the phosphate-concentrate-adapted Aspergillus niger isolate tested in modified Czapek-Dox medium (pH 7.5) on 75 um Florida phosphate tailings in Somasundaran et al. (2018).
+    evidence:
+    - source_ref: somasundaran2018
+      supports: partial
+      explanation: Reviewed Swiss-Prot Aspergillus niger plasma-membrane citrate exporter CexA (cexA) representing organic-acid secretion in the separate fungal shake-flask arm (phosphate-concentrate-adapted A. niger isolate in 250 mL modified Czapek-Dox medium at pH 7.5 with 1% pulp density of 75 um Florida phosphate tailings at 30 C and 150 rpm, reporting ~22.5% aggregate Arsenazo I rare earth signal in Figure 4) in Somasundaran et al. (2018); the fungal isolate lacks a strain or sequence accession, organic-acid concentrations were not measured in the tailings leachates, and no matched sterile leaching control was reported.
+  evidence:
+  - source_ref: somasundaran2018
+    supports: support
+    explanation: Methods pp.54-55 and Figures 3-4 support the narrow observation that the authors tested the two named cultures separately on Florida phosphate tailings and reported rare earth signal in clarified liquid. The species labels are the authors' assignments; neither a strain accession nor sequence-based identification is supplied for the experimental organisms.
+  - source_ref: somasundaran2018
+    supports: partial
+    explanation: Figure 3 and the accompanying text report approximately 45% leached from tailings by day three in the bacterial arm, whereas Figure 4 and text report approximately 22.5% in the fungal arm. These are source-reported assay-based fractions, not independently validated yields or isolated-product recovery. The corresponding concentrate results, 70% and 42.5%, do not belong to tailings. Different media and pH and the absence of matched sterile leaching arms prevent interpreting the comparison as intrinsic species efficiency or proof of microbial necessity. Figure 3's caption identifies duplicate experiments; this does not establish the replication of every other experimental series.
+  - source_ref: somasundaran2018
+    supports: partial
+    explanation: Table 1 prints total tailings REE content as 304 ppm, while its listed elemental cells sum to 305 ppm; the concentrate cells sum to 889 ppm versus a printed total of 826 ppm. No corrected total is inferred. Separate particle-size and pulp-density experiments report tailings maxima of 48% and 38%, but Figure 8 labels pulp density mg/50 mL while methods and prose use g/50 mL. Together with inconsistent timing and inoculum wording, these discrepancies prevent adopting a single verified optimized recipe. The record preserves the reported time-series observations with these limits.
+  - source_ref: somasundaran2018
+    supports: context_only
+    explanation: Equations and discussion propose iron oxidation, ferric hydrolysis and fungal organic-acid complexation. They do not directly measure the relevant metabolites or isolate their causal contributions in these tailings experiments. Discussion p.60 also refers to monazite isolates ML3-1 and WE3-F in wording not reconciled with this study's stated methods; those strains, feed and concentrations are not attributed to the Florida tailings experiment.
+causal_graphs:
+- id: culture_associated_ree_leaching_graph
+  name: Separate Acidithiobacillus ferrooxidans (9K pH 1.7) and Aspergillus niger (Czapek-Dox pH 7.5) shake-flask rare earth leaching from Florida phosphate tailings
+  description: Causal pathway linking representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation proteins (Cyc2 AFE_3153/DN052_11975, Swiss-Prot rusticyanin AFE_3146, and Cyc1 AFE_3152 in reference proteomes UP000001362 and UP000248886) in the bacterial shake-flask arm (250 mL ferrous sulfate 9K medium at leaching pH 1.7, 1 mL inoculum at ~5 x 10^8 cells/mL, 1% pulp density of 75 um ground Florida clay-bearing phosphate tailings [304 ppm printed total REE in Table 1 vs 305 ppm cell sum], 30 C, 150 rpm) and reviewed Swiss-Prot Aspergillus niger citrate exporter CexA (UniProtKB:A0A254TZW7 and UniProtKB:G3Y4N5) in the separate fungal shake-flask arm (250 mL modified Czapek-Dox medium at pH 7.5, 1 mL culture vs 2 mL spore inoculum in methods, 1% pulp density of 75 um tailings, 30 C, 150 rpm) to clarified-leachate Arsenazo I colorimetric (~520 nm) aggregate rare earth signals of ~45% by day 3 in the bacterial arm (Figure 3; up to 48% in optimization plots) and ~22.5% in the fungal
+    arm (Figure 4; up to 38% in optimization plots) in Somasundaran et al. (2018), while preserving the absence of matched sterile leaching controls, unmeasured metabolite concentrations, and method/figure timing and unit discrepancies.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: culture_associated_ree_leaching
+  nodes:
+  - id: aferro_rus_operon_iron_oxidation_system
+    label: Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation complex (cyc2 AFE_3153 / DN052_11975; rus AFE_3146; cyc1 AFE_3152)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cyc2
+    description: Outer-membrane cytochrome c Cyc2 (AFE_3153 in UP000001362; DN052_11975 in UP000248886), periplasmic rusticyanin (AFE_3146, Swiss-Prot RUS_ACIF2), and Cyc1 (AFE_3152) representing ferrous-iron oxidation by the unspecified ATCC A. ferrooxidans culture in 9K medium at pH 1.7.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JAQ7
+      entry_name: B7JAQ7_ACIF2
+      protein_name: Cytochrome c
+      gene_symbol: cyc2
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      functional_role: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270, catalyzing primary extracellular electron extraction from soluble Fe(II) at low pH.
+      annotation_note: Grounded to type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270 / DSM 14882 / NCIMB 8455; NCBITaxon:243159) as a representative strain-level entry for species-level mechanism organism Acidithiobacillus ferrooxidans (NCBITaxon:920). Represents the unspecified ATCC Acidithiobacillus ferrooxidans culture tested in ferrous sulfate 9K medium (pH 1.7) on 75 um Florida phosphate tailings in Somasundaran et al. (2018).
+      evidence:
       - source_ref: somasundaran2018
         supports: partial
-        explanation: >-
-          Figure 3 and the accompanying text report approximately 45%
-          leached from tailings by day three in the bacterial arm, whereas
-          Figure 4 and text report approximately 22.5% in the fungal arm.
-          These are source-reported assay-based fractions, not independently
-          validated yields or isolated-product recovery. The corresponding
-          concentrate results, 70% and 42.5%, do not belong to tailings.
-          Different media and pH and the absence of matched sterile leaching
-          arms prevent interpreting the comparison as intrinsic species
-          efficiency or proof of microbial necessity. Figure 3's caption
-          identifies duplicate experiments; this does not establish the
-          replication of every other experimental series.
+        explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein supporting ferrous-iron oxidation in the bacterial shake-flask arm (1 mL stationary-phase inoculum at ~5 x 10^8 cells/mL in 250 mL ferrous sulfate 9K medium adjusted to leaching pH 1.7 with 1% pulp density of 75 um ground Florida phosphate tailings at 30 C and 150 rpm, reporting ~45% aggregate Arsenazo I rare earth signal by day 3 in Figure 3) in Somasundaran et al. (2018); the ATCC strain accession is unspecified, individual rus-operon proteins were not assayed, and no matched sterile 9K pH-1.7 leaching control was reported.
+    - uniprot_accession: UniProtKB:A0A2W1KH68
+      entry_name: A0A2W1KH68_ACIFR
+      protein_name: Cytochrome C
+      gene_symbol: DN052_11975
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+      reference_proteome_id: UP000248886
+      functional_role: Outer-membrane c-type cytochrome Cyc2 homolog (locus DN052_11975) in the species-level Acidithiobacillus ferrooxidans DSM 16523 reference proteome (UP000248886; NCBITaxon:920) mediating initial extracellular Fe(II) oxidation.
+      annotation_note: Grounded to species-level reference proteome UP000248886 (Acidithiobacillus ferrooxidans DSM 16523; NCBITaxon:920), providing direct species-taxon parity with mechanism organism NCBITaxon:920 alongside the ATCC 23270 rus-operon entries. Represents the unspecified ATCC Acidithiobacillus ferrooxidans culture tested in ferrous sulfate 9K medium (pH 1.7) on 75 um Florida phosphate tailings in Somasundaran et al. (2018).
+      evidence:
       - source_ref: somasundaran2018
         supports: partial
-        explanation: >-
-          Table 1 prints total tailings REE content as 304 ppm, while its
-          listed elemental cells sum to 305 ppm; the concentrate cells sum
-          to 889 ppm versus a printed total of 826 ppm. No corrected total
-          is inferred. Separate particle-size and pulp-density experiments
-          report tailings maxima of 48% and 38%, but Figure 8 labels pulp
-          density mg/50 mL while methods and prose use g/50 mL. Together
-          with inconsistent timing and inoculum wording, these discrepancies
-          prevent adopting a single verified optimized recipe. The record
-          preserves the reported time-series observations with these limits.
+        explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein supporting ferrous-iron oxidation in the bacterial shake-flask arm (1 mL stationary-phase inoculum at ~5 x 10^8 cells/mL in 250 mL ferrous sulfate 9K medium adjusted to leaching pH 1.7 with 1% pulp density of 75 um ground Florida phosphate tailings at 30 C and 150 rpm, reporting ~45% aggregate Arsenazo I rare earth signal by day 3 in Figure 3) in Somasundaran et al. (2018); the ATCC strain accession is unspecified, individual rus-operon proteins were not assayed, and no matched sterile 9K pH-1.7 leaching control was reported.
+    - uniprot_accession: UniProtKB:B7JAQ0
+      entry_name: RUS_ACIF2
+      protein_name: Rusticyanin
+      gene_symbol: rus
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR000923
+      - InterPro:IPR028871
+      - InterPro:IPR050845
+      - InterPro:IPR033138
+      - InterPro:IPR008972
+      - InterPro:IPR001243
+      pfam_ids:
+      - Pfam:PF00127
+      ncbifam_ids:
+      - NCBIfam:TIGR03095
+      go_terms:
+      - id: GO:0042597
+        label: periplasmic space
+      - id: GO:0005507
+        label: copper ion binding
+      - id: GO:0009055
+        label: electron transfer activity
+      functional_role: Reviewed Swiss-Prot periplasmic blue-copper protein rusticyanin (rus, locus AFE_3146; RUS_ACIF2) shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) during aerobic Fe(II) oxidation.
+      annotation_note: Reviewed Swiss-Prot entry (RUS_ACIF2) in type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270; NCBITaxon:243159). Represents the unspecified ATCC Acidithiobacillus ferrooxidans culture tested in ferrous sulfate 9K medium (pH 1.7) on 75 um Florida phosphate tailings in Somasundaran et al. (2018).
+      evidence:
       - source_ref: somasundaran2018
-        supports: context_only
-        explanation: >-
-          Equations and discussion propose iron oxidation, ferric hydrolysis
-          and fungal organic-acid complexation. They do not directly measure
-          the relevant metabolites or isolate their causal contributions in
-          these tailings experiments. Discussion p.60 also refers to monazite
-          isolates ML3-1 and WE3-F in wording not reconciled with this study's
-          stated methods; those strains, feed and concentrations are not
-          attributed to the Florida tailings experiment.
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein supporting ferrous-iron oxidation in the bacterial shake-flask arm (1 mL stationary-phase inoculum at ~5 x 10^8 cells/mL in 250 mL ferrous sulfate 9K medium adjusted to leaching pH 1.7 with 1% pulp density of 75 um ground Florida phosphate tailings at 30 C and 150 rpm, reporting ~45% aggregate Arsenazo I rare earth signal by day 3 in Figure 3) in Somasundaran et al. (2018); the ATCC strain accession is unspecified, individual rus-operon proteins were not assayed, and no matched sterile 9K pH-1.7 leaching control was reported.
+    - uniprot_accession: UniProtKB:B7JAQ6
+      entry_name: B7JAQ6_ACIF2
+      protein_name: Cytochrome c552
+      gene_symbol: cyc1
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR009056
+      - InterPro:IPR036909
+      - InterPro:IPR024167
+      - InterPro:IPR050597
+      pfam_ids:
+      - Pfam:PF00034
+      go_terms:
+      - id: GO:0042597
+        label: periplasmic space
+      - id: GO:0009055
+        label: electron transfer activity
+      - id: GO:0020037
+        label: heme binding
+      - id: GO:0005506
+        label: iron ion binding
+      functional_role: Periplasmic diheme cytochrome c4 Cyc1 (cyc1, locus AFE_3152) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 transferring electrons from rusticyanin (AFE_3146) to the inner-membrane aa3-type cytochrome c oxidase.
+      annotation_note: Grounded to type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270; NCBITaxon:243159). Represents the unspecified ATCC Acidithiobacillus ferrooxidans culture tested in ferrous sulfate 9K medium (pH 1.7) on 75 um Florida phosphate tailings in Somasundaran et al. (2018).
+      evidence:
+      - source_ref: somasundaran2018
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein supporting ferrous-iron oxidation in the bacterial shake-flask arm (1 mL stationary-phase inoculum at ~5 x 10^8 cells/mL in 250 mL ferrous sulfate 9K medium adjusted to leaching pH 1.7 with 1% pulp density of 75 um ground Florida phosphate tailings at 30 C and 150 rpm, reporting ~45% aggregate Arsenazo I rare earth signal by day 3 in Figure 3) in Somasundaran et al. (2018); the ATCC strain accession is unspecified, individual rus-operon proteins were not assayed, and no matched sterile 9K pH-1.7 leaching control was reported.
+  - id: aniger_cexa_citrate_exporter
+    label: Aspergillus niger plasma-membrane MFS citrate exporter CexA (cexA; CEXA_ASPNG / CEXA_ASPNA)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cexA
+    description: Reviewed Swiss-Prot MFS citrate exporter CexA (UniProtKB:A0A254TZW7 in NCBITaxon:5061; UniProtKB:G3Y4N5 in ATCC 1015 UP000006706) representing organic-acid export by the phosphate-concentrate-adapted A. niger isolate in modified Czapek-Dox medium (pH 7.5).
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A254TZW7
+      entry_name: CEXA_ASPNG
+      protein_name: Citrate exporter A
+      gene_symbol: cexA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:5061
+        label: Aspergillus niger
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Reviewed Swiss-Prot major facilitator superfamily (MFS) plasma-membrane citrate exporter CexA (cexA; CEXA_ASPNG) mediating active extracellular secretion of citric acid by Aspergillus niger.
+      annotation_note: Reviewed Swiss-Prot entry (CEXA_ASPNG) grounded directly to species-level taxon Aspergillus niger (NCBITaxon:5061), matching the unsequenced species-level A. niger isolate. Represents the phosphate-concentrate-adapted Aspergillus niger isolate tested in modified Czapek-Dox medium (pH 7.5) on 75 um Florida phosphate tailings in Somasundaran et al. (2018).
+      evidence:
+      - source_ref: somasundaran2018
+        supports: partial
+        explanation: Reviewed Swiss-Prot Aspergillus niger plasma-membrane citrate exporter CexA (cexA) representing organic-acid secretion in the separate fungal shake-flask arm (phosphate-concentrate-adapted A. niger isolate in 250 mL modified Czapek-Dox medium at pH 7.5 with 1% pulp density of 75 um Florida phosphate tailings at 30 C and 150 rpm, reporting ~22.5% aggregate Arsenazo I rare earth signal in Figure 4) in Somasundaran et al. (2018); the fungal isolate lacks a strain or sequence accession, organic-acid concentrations were not measured in the tailings leachates, and no matched sterile leaching control was reported.
+    - uniprot_accession: UniProtKB:G3Y4N5
+      entry_name: CEXA_ASPNA
+      protein_name: Citrate exporter A
+      gene_symbol: cexA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:380704
+        label: Aspergillus niger ATCC 1015
+      reference_proteome_id: UP000006706
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Reviewed Swiss-Prot plasma-membrane MFS citrate exporter CexA (cexA, locus ASPNIDRAFT_44471; CEXA_ASPNA) in the citric-acid-producing reference strain Aspergillus niger ATCC 1015 (UP000006706).
+      annotation_note: Reviewed Swiss-Prot reference-proteome entry (CEXA_ASPNA; UP000006706; NCBITaxon:380704) paired with species-level UniProtKB:A0A254TZW7 (NCBITaxon:5061) as a strain-resolved reference proteome example for Aspergillus niger organic-acid export. Represents the phosphate-concentrate-adapted Aspergillus niger isolate tested in modified Czapek-Dox medium (pH 7.5) on 75 um Florida phosphate tailings in Somasundaran et al. (2018).
+      evidence:
+      - source_ref: somasundaran2018
+        supports: partial
+        explanation: Reviewed Swiss-Prot Aspergillus niger plasma-membrane citrate exporter CexA (cexA) representing organic-acid secretion in the separate fungal shake-flask arm (phosphate-concentrate-adapted A. niger isolate in 250 mL modified Czapek-Dox medium at pH 7.5 with 1% pulp density of 75 um Florida phosphate tailings at 30 C and 150 rpm, reporting ~22.5% aggregate Arsenazo I rare earth signal in Figure 4) in Somasundaran et al. (2018); the fungal isolate lacks a strain or sequence accession, organic-acid concentrations were not measured in the tailings leachates, and no matched sterile leaching control was reported.
+  - id: bacterial_9k_and_fungal_czapek_dox_leach_media
+    label: Separate bacterial (9K medium, pH 1.7) and fungal (modified Czapek-Dox medium, pH 7.5) shake-flask leach liquors (250 mL, 1% pulp density, 30 C, 150 rpm)
+    node_type: CHEMICAL_ENTITY
+    description: 'Two distinct laboratory leaching media incubated separately with 75 um ground Florida phosphate tailings (received size ~147 um) at 1% pulp density in 500-mL flasks (250 mL liquid, 30 C, 150 rpm): ferrous sulfate 9K medium at pH 1.7 for A. ferrooxidans (6-day series in Figure 3 vs 2-3 d in methods) and modified Czapek-Dox medium at pH 7.5 for A. niger (5-day series in Figure 4 vs 24 h in methods), without matched uninoculated leaching controls.'
+    protein_grounding_status: NOT_APPLICABLE
+  - id: clarified_leachate_arsenazo_ree_signal
+    label: Clarified-leachate Arsenazo I (~520 nm) aggregate rare earth signal (~45% bacterial in Fig. 3; ~22.5% fungal in Fig. 4; 48%/38% in size/density series)
+    node_type: CHEMICAL_ENTITY
+    description: 'Operational aggregate rare earth colorimetric signal measured with Arsenazo I near 520 nm after Whatman No. 1 filtration and centrifugation at 7000 rpm for >10 min: ~45% by day 3 in the bacterial tailings arm (Figure 3, duplicate series) and ~22.5% in the fungal tailings arm (Figure 4), distinct from the phosphate-concentrate arms (70% and 42.5%) and subject to Table 1 sum discrepancies (304 vs 305 ppm) and Figure 8 pulp-density unit conflicts (mg/50 mL vs g/50 mL).'
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: aferro_rus_operon_iron_oxidation_system
+    target: bacterial_9k_and_fungal_czapek_dox_leach_media
+    predicate: produces
+    relationship: proposed Fe(II) oxidation and ferric hydrolysis in the pH-1.7 9K bacterial shake-flask arm
+    description: Inoculated A. ferrooxidans (~5 x 10^8 cells/mL, 1 mL in 250 mL) grows in ferrous sulfate 9K medium adjusted to leaching pH 1.7; equations and discussion propose Fe(II) oxidation and ferric hydrolysis, though dissolved Fe(III)/acid trajectories were not directly measured in the tailings flasks.
+    evidence:
+    - source_ref: somasundaran2018
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein supporting ferrous-iron oxidation in the bacterial shake-flask arm (1 mL stationary-phase inoculum at ~5 x 10^8 cells/mL in 250 mL ferrous sulfate 9K medium adjusted to leaching pH 1.7 with 1% pulp density of 75 um ground Florida phosphate tailings at 30 C and 150 rpm, reporting ~45% aggregate Arsenazo I rare earth signal by day 3 in Figure 3) in Somasundaran et al. (2018); the ATCC strain accession is unspecified, individual rus-operon proteins were not assayed, and no matched sterile 9K pH-1.7 leaching control was reported.
+  - source: aniger_cexa_citrate_exporter
+    target: bacterial_9k_and_fungal_czapek_dox_leach_media
+    predicate: transports
+    relationship: proposed fungal organic-acid secretion in the pH-7.5 modified Czapek-Dox shake-flask arm
+    description: Ore-adapted A. niger incubated in modified Czapek-Dox medium (initial pH 7.5 in Figure 4) is proposed to secrete organic-acid lixiviants; secreted organic acids were not directly quantified in the Florida tailings leachates.
+    evidence:
+    - source_ref: somasundaran2018
+      supports: partial
+      explanation: Reviewed Swiss-Prot Aspergillus niger plasma-membrane citrate exporter CexA (cexA) representing organic-acid secretion in the separate fungal shake-flask arm (phosphate-concentrate-adapted A. niger isolate in 250 mL modified Czapek-Dox medium at pH 7.5 with 1% pulp density of 75 um Florida phosphate tailings at 30 C and 150 rpm, reporting ~22.5% aggregate Arsenazo I rare earth signal in Figure 4) in Somasundaran et al. (2018); the fungal isolate lacks a strain or sequence accession, organic-acid concentrations were not measured in the tailings leachates, and no matched sterile leaching control was reported.
+  - source: bacterial_9k_and_fungal_czapek_dox_leach_media
+    target: clarified_leachate_arsenazo_ree_signal
+    predicate: dissolves
+    relationship: culture-associated rare earth mobilization into clarified leachate (~45% bacterial arm; ~22.5% fungal arm by Arsenazo I assay)
+    description: Separate incubation of 75 um Florida phosphate tailings (1% pulp density, 30 C, 150 rpm) yields reported aggregate Arsenazo I rare earth leaching signals of ~45% by day 3 in the bacterial 9K arm (Figure 3) and ~22.5% in the fungal Czapek-Dox arm (Figure 4), without matched sterile controls or element-resolved ICP validation.
+    evidence:
+    - source_ref: somasundaran2018
+      supports: support
+      explanation: Methods pp. 54-55 and Figures 3-4 document the separate bacterial (9K, pH 1.7) and fungal (modified Czapek-Dox, pH 7.5) shake-flask experiments on 75 um ground Florida phosphate tailings and report ~45% and ~22.5% aggregate Arsenazo I rare earth leaching signals.
+    - source_ref: somasundaran2018
+      supports: partial
+      explanation: Absence of matched sterile/acid-matched leaching controls (Figures 1-2 show pure-culture growth curves), aggregate Arsenazo I colorimetry (~520 nm) without element-resolved mass balance, Table 1 sum discrepancies (304 vs 305 ppm), and Figure 8 unit conflicts (mg/50 mL vs g/50 mL) prevent isolating a net microbial increment.
 curation_history:
-  - timestamp: '2026-10-16T04:26:58.190965Z'
-    curator: codex (GPT-6; codex)
-    action: CREATE
-    summary: Added process-defined phosphate tailings and qualified culture-associated leaching evidence with controls, assay and source-consistency limits.
-  - timestamp: '2026-10-16T04:35:42.936385Z'
-    curator: codex (GPT-6; codex)
-    action: EDIT
-    summary: Corrected the time-series particle size to 75 micrometres and the pure-culture growth-figure scope after independent review issue464.
+- timestamp: '2026-10-16T04:26:58.190965Z'
+  curator: codex (GPT-6; codex)
+  action: CREATE
+  summary: Added process-defined phosphate tailings and qualified culture-associated leaching evidence with controls, assay and source-consistency limits.
+- timestamp: '2026-10-16T04:35:42.936385Z'
+  curator: codex (GPT-6; codex)
+  action: EDIT
+  summary: Corrected the time-series particle size to 75 micrometres and the pure-culture growth-figure scope after independent review issue464.
+- timestamp: '2026-11-06T04:58:48Z'
+  curator: marcin
+  action: edit
+  summary: Add evidence-backed causal_graphs representation and 6 live-verified protein groundings (4 Acidithiobacillus ferrooxidans rus-operon proteins UniProtKB:B7JAQ7, UniProtKB:A0A2W1KH68, UniProtKB:B7JAQ0, UniProtKB:B7JAQ6 and 2 Swiss-Prot Aspergillus niger CexA citrate exporters UniProtKB:A0A254TZW7, UniProtKB:G3Y4N5) for culture_associated_ree_leaching.
 history_refs:
-  - history/records/phosphate-ore-tailings/2026-10-16T042651Z-codex-0ce69c.yaml
-  - history/records/phosphate-ore-tailings/2026-10-16T043521Z-codex-20f330.yaml
+- history/records/phosphate-ore-tailings/2026-10-16T042651Z-codex-0ce69c.yaml
+- history/records/phosphate-ore-tailings/2026-10-16T043521Z-codex-20f330.yaml
+- history/records/phosphate-ore-tailings/2026-11-06T045848Z-marcin-f88c10.yaml

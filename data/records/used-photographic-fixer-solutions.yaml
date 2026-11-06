@@ -1,99 +1,155 @@
 id: cmmmech:used-photographic-fixer-solutions
 name: Used photographic fixer solutions
 material_kind: secondary_resource
-description: >-
-  Silver-bearing liquid discarded after photographic fixing, represented here
-  by used black-and-white film fixer collected from a local processing unit.
-  This secondary feed is distinct from discarded solid films, unused fixer,
-  developer solutions and prepared silver salts. Its composition is
-  source-specific; constituent criticality is not inherited.
+description: Silver-bearing liquid discarded after photographic fixing, represented here by used black-and-white film fixer collected from a local processing unit. This secondary feed is distinct from discarded solid films, unused fixer, developer solutions and prepared silver salts. Its composition is source-specific; constituent criticality is not inherited.
 sources:
-  - id: pethkar2003
-    title: >-
-      Pethkar and Paknikar (2003). Thiosulfate biodegradation-silver biosorption
-      process for the treatment of photofilm processing wastewater. Process
-      Biochemistry 38:855-860. DOI 10.1016/S0032-9592(02)00054-7; complete
-      original text read through the author-shared six-page PDF web rendition,
-      with Table 1 and all six original publisher figures separately checked.
-    url: https://doi.org/10.1016/S0032-9592(02)00054-7
-    accessed_on: '2026-10-14'
-  - id: ncbi_thioparus
-    title: 'NCBI Taxonomy 931: Thiobacillus thioparus, species; does not identify MCM B-39'
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=931
-    accessed_on: '2026-10-14'
-  - id: ncbi_cladosporioides
-    title: 'NCBI Taxonomy 29917: Cladosporium cladosporioides, species; does not authenticate strain number 1'
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=29917
-    accessed_on: '2026-10-14'
+- id: pethkar2003
+  title: Pethkar and Paknikar (2003). Thiosulfate biodegradation-silver biosorption process for the treatment of photofilm processing wastewater. Process Biochemistry 38:855-860. DOI 10.1016/S0032-9592(02)00054-7; complete original text read through the author-shared six-page PDF web rendition, with Table 1 and all six original publisher figures separately checked.
+  url: https://doi.org/10.1016/S0032-9592(02)00054-7
+  accessed_on: '2026-10-14'
+- id: ncbi_thioparus
+  title: 'NCBI Taxonomy 931: Thiobacillus thioparus, species; does not identify MCM B-39'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=931
+  accessed_on: '2026-10-14'
+- id: ncbi_cladosporioides
+  title: 'NCBI Taxonomy 29917: Cladosporium cladosporioides, species; does not authenticate strain number 1'
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=29917
+  accessed_on: '2026-10-14'
 mechanisms:
-  - id: thiosulfate_oxidation_biosorption_then_electrowinning
-    name: Bacterial conditioning and fungal biosorption before chemical silver recovery
-    process: recovery
-    microbial: true
-    organisms:
-      - id: NCBITaxon:931
-        label: Thiobacillus thioparus
-      - id: NCBITaxon:29917
-        label: Cladosporium cladosporioides
-    description: >-
-      Thiobacillus thioparus MCM B-39 treated diluted fixer before silver
-      sorption onto harvested Cladosporium cladosporioides number 1 biomass
-      beads. Chemical elution and electrowinning followed; the final metallic
-      product was not produced by microbial reduction. Bead viability and
-      matrix composition are unresolved in this paper.
-    context: >-
-      Sections 2.1-2.4 describe 25 mL bacterial inoculum at 10^7 cells/mL
-      added to 250 mL nominally 1:10 diluted fixer, pH 6.5, approximately
-      25 degrees C and 120 rpm for four days. Centrifugation and filtration
-      preceded sorption. Section 2.7 then diluted treated liquid to nominal
-      100 mg Ag/L and passed it upwards through 3 g beads in a 10 cm by
-      1 cm internal-diameter column with 20 min retention. The fungal biomass
-      was grown separately, washed and granulated by a proprietary process.
-      Alcoholic cyanide elution and electrolysis at 0.8 V and 224 mA completed
-      the laboratory sequence; scale-up and economics were not established.
+- id: thiosulfate_oxidation_biosorption_then_electrowinning
+  name: Bacterial conditioning and fungal biosorption before chemical silver recovery
+  process: recovery
+  description: Thiobacillus thioparus MCM B-39 treated diluted fixer before silver sorption onto harvested Cladosporium cladosporioides number 1 biomass beads. Chemical elution and electrowinning followed; the final metallic product was not produced by microbial reduction. Bead viability and matrix composition are unresolved in this paper.
+  context: Sections 2.1-2.4 describe 25 mL bacterial inoculum at 10^7 cells/mL added to 250 mL nominally 1:10 diluted fixer, pH 6.5, approximately 25 degrees C and 120 rpm for four days. Centrifugation and filtration preceded sorption. Section 2.7 then diluted treated liquid to nominal 100 mg Ag/L and passed it upwards through 3 g beads in a 10 cm by 1 cm internal-diameter column with 20 min retention. The fungal biomass was grown separately, washed and granulated by a proprietary process. Alcoholic cyanide elution and electrolysis at 0.8 V and 224 mA completed the laboratory sequence; scale-up and economics were not established.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:931
+    label: Thiobacillus thioparus
+  - id: NCBITaxon:29917
+    label: Cladosporium cladosporioides
+  protein_examples:
+  - uniprot_accession: UniProtKB:U5TVQ7
+    entry_name: U5TVQ7_THITI
+    protein_name: Sulfate thioesterase/sulfate thiohydrolase
+    gene_symbol: soxB
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:931
+      label: Thiobacillus thioparus
+    interpro_ids:
+    - InterPro:IPR036907
+    - InterPro:IPR006179
+    - InterPro:IPR029052
+    functional_role: Periplasmic thiosulfohydrolase SoxB (soxB; Sulfate thioesterase/sulfate thiohydrolase; InterPro:IPR036907, InterPro:IPR006179) in the sulfur-oxidizing (Sox) multienzyme complex of Thiobacillus thioparus hydrolyzing S-sulfosulfanyl-L-cysteine to sulfate during thiosulfate oxidation.
+    annotation_note: Grounded to species-level UniProtKB entry U5TVQ7 (U5TVQ7_THITI; NCBITaxon:931; ncbi_thioparus) as a representative thiosulfate-oxidation enzyme for Thiobacillus thioparus MCM B-39 in Stage 1 conditioning of 1:10 diluted used photographic fixer (pH 6.5, ~25 C, 120 rpm, 4 days) in Pethkar and Paknikar (2003). Stage 2 silver biosorption used proprietarily granulated Cladosporium cladosporioides strain 1 (NCBITaxon:29917) biomass beads, for which no silver-binding protein entry exists in UniProtKB.
     evidence:
-      - source_ref: pethkar2003
-        supports: support
-        explanation: >-
-          Sections 2.2-2.4, Table 1 and Results pp.857-859 support real-waste
-          origin, thiosulfate depletion with sulfur/sulfate production and
-          subsequent silver recovery. The authors report 127 mg metallic
-          silver and 70% overall recovery. These are source-reported process
-          outcomes, not independently reconciled yields or product-purity
-          measurements. The bacterial step alone did not substantially
-          remove silver.
+    - source_ref: pethkar2003
+      supports: partial
+      explanation: Representative Thiobacillus thioparus (NCBITaxon:931) thiosulfate-oxidizing SoxB protein (soxB; UniProtKB:U5TVQ7; InterPro:IPR036907, InterPro:IPR006179) supporting Stage 1 aerobic biodegradation of complexing thiosulfate in 1:10 diluted used photographic fixer by T. thioparus MCM B-39 (25 mL inoculum at 10^7 cells/mL in 250 mL diluted fixer, pH 6.5, ~25 C, 120 rpm for 4 days, converting thiosulfate to elemental sulfur and 32.25 g/L sulfate in Table 1 [31.16 g/L in Results / 31.2 g/L in abstract]) prior to Cladosporium cladosporioides biomass-bead silver biosorption in Pethkar and Paknikar (2003); strain MCM B-39 lacks a strain-specific proteome and Sox enzymes were not directly assayed.
+  evidence:
+  - source_ref: pethkar2003
+    supports: support
+    explanation: Sections 2.2-2.4, Table 1 and Results pp.857-859 support real-waste origin, thiosulfate depletion with sulfur/sulfate production and subsequent silver recovery. The authors report 127 mg metallic silver and 70% overall recovery. These are source-reported process outcomes, not independently reconciled yields or product-purity measurements. The bacterial step alone did not substantially remove silver.
+  - source_ref: pethkar2003
+    supports: partial
+    explanation: Section 2.2 assigns 2.8 g Ag/L and 18.5 g thiosulfate/L before dilution, while Table 1 labels those concentrations as 1:10 diluted; Section 2.7 instead gives about 280 mg Ag/L after bacterial treatment. Sulfate is 32.25 g/L in Table 1 versus 31.16 in Results and 31.2 in the abstract. No repaired inventory or detection-limit-derived zero is inferred. Section 2.5 gives 1% ethanol in the eluent but Results gives 10%; the recipe remains unresolved. Cumulative column uptake is expressed per gram biomass in Results versus per gram beads in Methods; bead biomass fraction is unspecified.
+  - source_ref: pethkar2003
+    supports: partial
+    explanation: An uninoculated fixer control is specified, but its separate endpoint results are not presented. No matched untreated-fixer column, matrix-only control or independent replicate count is reported. Figures 1-6 concern prepared silver solutions, not real-feed recovery; plotted dose/time ranges and plateaus differ from some textual optimization claims. Fitted monolayer capacity is not cumulative column uptake, and model agreement does not establish a molecular binding mechanism. A complete process mass balance and phase/purity characterization of the recovered metal are unavailable.
+causal_graphs:
+- id: thiosulfate_oxidation_biosorption_then_electrowinning_graph
+  name: Thiobacillus thioparus Sox-mediated thiosulfate biodegradation, Cladosporium cladosporioides bead biosorption, and chemical elution/electrowinning of silver from used fixer
+  description: Causal pathway linking representative Thiobacillus thioparus (NCBITaxon:931) periplasmic thiosulfohydrolase SoxB (soxB, UniProtKB:U5TVQ7) in Stage 1 bacterial conditioning (25 mL T. thioparus MCM B-39 inoculum at 10^7 cells/mL in 250 mL nominally 1:10 diluted used photographic fixer at pH 6.5, ~25 C, and 120 rpm for 4 days, depleting complexing thiosulfate to elemental sulfur and 32.25 g/L sulfate in Table 1 [vs 31.16 g/L in Results and 31.2 g/L in abstract] without precipitating silver) to Stage 2 packed-column silver biosorption onto 3 g proprietarily granulated Cladosporium cladosporioides strain 1 (NCBITaxon:29917) biomass beads (10 cm x 1 cm ID column, 20 min retention, feed diluted to nominal 100 mg Ag/L) and Stage 3 abiotic alkaline alcoholic cyanide elution (1% ethanol in Section 2.5 vs 10% in Results) and electrowinning (0.8 V, 224 mA, yielding 127 mg metallic Ag and 70% reported overall recovery) in Pethkar and Paknikar (2003), while preserving the Table 1 vs Section
+    2.2/2.7 dilution-factor conflict (2.8 g Ag/L and 18.5 g thiosulfate/L vs ~280 mg Ag/L) and absence of matched uninoculated fixer endpoint controls.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: thiosulfate_oxidation_biosorption_then_electrowinning
+  nodes:
+  - id: thioparus_soxb_thiosulfate_oxidation
+    label: Thiobacillus thioparus periplasmic thiosulfohydrolase SoxB (soxB; U5TVQ7_THITI)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: soxB
+    description: Periplasmic sulfate thioesterase/thiohydrolase SoxB (UniProtKB:U5TVQ7; InterPro:IPR036907, InterPro:IPR006179) in Thiobacillus thioparus (NCBITaxon:931) representing Stage 1 aerobic oxidation of thiosulfate by T. thioparus MCM B-39 in 1:10 diluted used fixer (pH 6.5, ~25 C, 120 rpm, 4 days).
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:U5TVQ7
+      entry_name: U5TVQ7_THITI
+      protein_name: Sulfate thioesterase/sulfate thiohydrolase
+      gene_symbol: soxB
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:931
+        label: Thiobacillus thioparus
+      interpro_ids:
+      - InterPro:IPR036907
+      - InterPro:IPR006179
+      - InterPro:IPR029052
+      functional_role: Periplasmic thiosulfohydrolase SoxB (soxB; Sulfate thioesterase/sulfate thiohydrolase; InterPro:IPR036907, InterPro:IPR006179) in the sulfur-oxidizing (Sox) multienzyme complex of Thiobacillus thioparus hydrolyzing S-sulfosulfanyl-L-cysteine to sulfate during thiosulfate oxidation.
+      annotation_note: Grounded to species-level UniProtKB entry U5TVQ7 (U5TVQ7_THITI; NCBITaxon:931; ncbi_thioparus) as a representative thiosulfate-oxidation enzyme for Thiobacillus thioparus MCM B-39 in Stage 1 conditioning of 1:10 diluted used photographic fixer (pH 6.5, ~25 C, 120 rpm, 4 days) in Pethkar and Paknikar (2003). Stage 2 silver biosorption used proprietarily granulated Cladosporium cladosporioides strain 1 (NCBITaxon:29917) biomass beads, for which no silver-binding protein entry exists in UniProtKB.
+      evidence:
       - source_ref: pethkar2003
         supports: partial
-        explanation: >-
-          Section 2.2 assigns 2.8 g Ag/L and 18.5 g thiosulfate/L before
-          dilution, while Table 1 labels those concentrations as 1:10 diluted;
-          Section 2.7 instead gives about 280 mg Ag/L after bacterial treatment.
-          Sulfate is 32.25 g/L in Table 1 versus 31.16 in Results and 31.2
-          in the abstract. No repaired inventory or detection-limit-derived
-          zero is inferred. Section 2.5 gives 1% ethanol in the eluent but
-          Results gives 10%; the recipe remains unresolved. Cumulative column
-          uptake is expressed per gram biomass in Results versus per gram
-          beads in Methods; bead biomass fraction is unspecified.
-      - source_ref: pethkar2003
-        supports: partial
-        explanation: >-
-          An uninoculated fixer control is specified, but its separate endpoint
-          results are not presented. No matched untreated-fixer column,
-          matrix-only control or independent replicate count is reported.
-          Figures 1-6 concern prepared silver solutions, not real-feed recovery;
-          plotted dose/time ranges and plateaus differ from some textual
-          optimization claims. Fitted monolayer capacity is not cumulative
-          column uptake, and model agreement does not establish a molecular
-          binding mechanism. A complete process mass balance and phase/purity
-          characterization of the recovered metal are unavailable.
+        explanation: Representative Thiobacillus thioparus (NCBITaxon:931) thiosulfate-oxidizing SoxB protein (soxB; UniProtKB:U5TVQ7; InterPro:IPR036907, InterPro:IPR006179) supporting Stage 1 aerobic biodegradation of complexing thiosulfate in 1:10 diluted used photographic fixer by T. thioparus MCM B-39 (25 mL inoculum at 10^7 cells/mL in 250 mL diluted fixer, pH 6.5, ~25 C, 120 rpm for 4 days, converting thiosulfate to elemental sulfur and 32.25 g/L sulfate in Table 1 [31.16 g/L in Results / 31.2 g/L in abstract]) prior to Cladosporium cladosporioides biomass-bead silver biosorption in Pethkar and Paknikar (2003); strain MCM B-39 lacks a strain-specific proteome and Sox enzymes were not directly assayed.
+  - id: thiosulfate_depleted_conditioned_fixer_liquor
+    label: Thiosulfate-depleted conditioned fixer liquor (32.25 g/L sulfate in Table 1 vs 31.16/31.2 g/L in text; adjusted to nominal 100 mg Ag/L)
+    node_type: CHEMICAL_ENTITY
+    description: Clarified fixer supernatant after 4-day T. thioparus MCM B-39 oxidation, centrifugation, and filtration, where complexing thiosulfate (18.5 g/L in Section 2.2 vs Table 1 1:10 label) is converted to elemental sulfur and sulfate (32.25 g/L in Table 1; 31.16 g/L in Results; 31.2 g/L in abstract) to destabilize soluble Ag-thiosulfate complexes before dilution to nominal 100 mg Ag/L in Section 2.7.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: cladosporioides_granulated_bead_silver_biosorption
+    label: Cladosporium cladosporioides strain 1 granulated biomass-bead packed column (3 g beads, 10 cm x 1 cm ID, 20 min retention)
+    node_type: CELLULAR_STRUCTURE
+    description: Packed column containing 3 g proprietarily granulated Cladosporium cladosporioides number 1 (NCBITaxon:29917) biomass beads sorbing silver from upward-flowing conditioned fixer (20 min retention time); bead viability, binder matrix fraction, and per-gram-biomass vs per-gram-beads uptake denominators are unresolved in the paper.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: cyanide_eluted_electrowon_metallic_silver
+    label: Abiotically eluted and electrowon metallic silver product (alcoholic cyanide eluent; 0.8 V, 224 mA; 127 mg Ag, 70% reported recovery)
+    node_type: MATERIAL_OR_PHASE
+    description: Metallic silver (127 mg, 70% reported overall recovery) recovered from loaded C. cladosporioides beads by abiotic alkaline alcoholic cyanide elution (1% ethanol in Section 2.5 vs 10% ethanol in Results) followed by electrowinning at 0.8 V and 224 mA, without independent phase-purity or full mass-balance reconciliation.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: thioparus_soxb_thiosulfate_oxidation
+    target: thiosulfate_depleted_conditioned_fixer_liquor
+    predicate: degrades
+    relationship: Stage 1 bacterial oxidation of complexing thiosulfate to sulfur and sulfate in 1:10 diluted fixer
+    description: T. thioparus MCM B-39 oxidizes thiosulfate in 1:10 diluted fixer over 4 days at pH 6.5 and ~25 C, generating elemental sulfur and 32.25 g/L sulfate (Table 1; 31.16 g/L in Results) while leaving silver in solution.
+    evidence:
+    - source_ref: pethkar2003
+      supports: support
+      explanation: Sections 2.2-2.4, Table 1, and Results pp. 857-858 report thiosulfate depletion and sulfate/sulfur formation during 4-day T. thioparus MCM B-39 treatment of diluted fixer without substantial silver removal in the bacterial step.
+    - source_ref: pethkar2003
+      supports: partial
+      explanation: Section 2.2 vs Table 1 vs Section 2.7 conflict on whether 2.8 g Ag/L and 18.5 g thiosulfate/L represent undiluted or 1:10 diluted fixer (versus ~280 mg Ag/L after bacterial treatment), and the endpoint of the uninoculated fixer control is not reported.
+  - source: thiosulfate_depleted_conditioned_fixer_liquor
+    target: cladosporioides_granulated_bead_silver_biosorption
+    predicate: binds
+    relationship: Stage 2 packed-column sorption of silver freed from thiosulfate complexation onto C. cladosporioides beads
+    description: Conditioned fixer diluted to nominal 100 mg Ag/L is pumped upward through 3 g of granulated C. cladosporioides strain 1 beads (10 cm x 1 cm ID column, 20 min retention) to sorb silver.
+    evidence:
+    - source_ref: pethkar2003
+      supports: support
+      explanation: Section 2.7 and Results pp. 858-859 describe packed-column biosorption of silver from conditioned fixer onto 3 g C. cladosporioides biomass beads.
+    - source_ref: pethkar2003
+      supports: partial
+      explanation: Cumulative uptake is reported per gram biomass in Results versus per gram beads in Methods without specifying the proprietary granulation matrix fraction or testing an untreated-fixer column control.
+  - source: cladosporioides_granulated_bead_silver_biosorption
+    target: cyanide_eluted_electrowon_metallic_silver
+    predicate: transforms_into
+    relationship: Stage 3 abiotic alcoholic cyanide elution and electrowinning (0.8 V, 224 mA) yielding 127 mg metallic silver
+    description: Sorbed silver is chemically eluted from the fungal beads with alkaline alcoholic cyanide (1% vs 10% ethanol discrepancy) and abiotically electrowon at 0.8 V and 224 mA to recover 127 mg metallic silver (70% reported overall recovery).
+    evidence:
+    - source_ref: pethkar2003
+      supports: support
+      explanation: Sections 2.5-2.7 and Results p. 859 report alcoholic cyanide elution and electrolysis at 0.8 V and 224 mA yielding 127 mg metallic silver (70% overall recovery).
+    - source_ref: pethkar2003
+      supports: partial
+      explanation: Section 2.5 (1% ethanol) conflicts with Results (10% ethanol) on eluent composition, and metallic silver purity and a closed process mass balance are not reported.
 curation_history:
-  - timestamp: '2026-10-14T20:48:15.758449Z'
-    curator: Codex (GPT-6; Codex)
-    action: CREATE
-    summary: >-
-      Created the distinct used-fixer liquid resource and qualified laboratory
-      bacterial conditioning, fungal biomass sorption and abiotic silver
-      recovery sequence. Preserved source dilution, recipe, denominator and
-      control limitations; no criticality or industrial deployment inferred.
+- timestamp: '2026-10-14T20:48:15.758449Z'
+  curator: Codex (GPT-6; Codex)
+  action: CREATE
+  summary: Created the distinct used-fixer liquid resource and qualified laboratory bacterial conditioning, fungal biomass sorption and abiotic silver recovery sequence. Preserved source dilution, recipe, denominator and control limitations; no criticality or industrial deployment inferred.
+- timestamp: '2026-11-06T05:04:07Z'
+  curator: marcin
+  action: edit
+  summary: Add evidence-backed causal_graphs representation and live-verified Thiobacillus thioparus SoxB (UniProtKB:U5TVQ7) protein grounding for thiosulfate_oxidation_biosorption_then_electrowinning, distinguishing Stage 1 bacterial thiosulfate degradation, Stage 2 Cladosporium cladosporioides bead sorption, and Stage 3 abiotic cyanide elution/electrowinning.
 history_refs:
-  - history/records/used-photographic-fixer-solutions/2026-10-14T204823Z-codex-6c081d.yaml
+- history/records/used-photographic-fixer-solutions/2026-10-14T204823Z-codex-6c081d.yaml
+- history/records/used-photographic-fixer-solutions/2026-11-06T050407Z-marcin-6c2887.yaml
