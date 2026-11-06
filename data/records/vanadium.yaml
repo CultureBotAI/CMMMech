@@ -294,12 +294,12 @@ causal_graphs:
   - id: oxidized_metal_substrate
     label: Dissolved V(V) in defined bicarbonate/PIPES electrolyte
     node_type: CHEMICAL_ENTITY
-    description: Terminal electron acceptor substrate (Dissolved V(V) in defined bicarbonate/PIPES electrolyte) in kane_2026_bes.
+    description: Dissolved V(V) feed prepared from Na3V2O8 in 1% HCl in defined 30 mM bicarbonate, 10 mM PIPES, 30 mM ammonium acetate, and 40 mM NaCl electrolyte (44.1 mg/kg V at post-equilibration baseline Vbrr_0 in the biotic arm and 19.1 mg/kg V at BESVarr_0 in the abiotic arm) in kane_2026_bes.
     protein_grounding_status: NOT_APPLICABLE
   - id: reduced_metal_product
     label: Depleted aqueous V and cell/electrode-associated reduced vanadium species (unverified solid valence)
     node_type: MATERIAL_OR_PHASE
-    description: Resulting reduced product state (Depleted aqueous V and cell/electrode-associated reduced vanadium species (unverified solid valence)) in kane_2026_bes.
+    description: Partially depleted aqueous vanadium (34 mg/kg V at biotic endpoint BESV.brr_END vs 12.2 mg/kg V at abiotic endpoint BESVarr_END in T3_AqueousICPOES.csv) and working-electrode nitric-acid-extractable vanadium (Vbrr_WE in T6) without an assigned endpoint solid phase or valence in kane_2026_bes.
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cyma_dehydrogenase
@@ -315,29 +315,29 @@ causal_graphs:
     target: oxidized_metal_substrate
     predicate: reduces
     relationship: direct or flavin-mediated extracellular electron transfer
-    description: MtrC transfers electrons across the outer membrane interface to Dissolved V(V) in defined bicarbonate/PIPES electrolyte.
+    description: Outer-membrane decaheme cytochrome MtrC (SO_1778) delivers extracellular electrons across the MtrCAB porin-cytochrome conduit during bioelectrochemical reduction of dissolved V(V) feed in kane_2026_bes.
     evidence:
     - source_ref: kane_2026_bes
       supports: partial
-      explanation: MtrC participates in extracellular reduction of Dissolved V(V) in defined bicarbonate/PIPES electrolyte.
+      explanation: In the Shewanella oneidensis MR-1 bioelectrochemical reactor poised at -800 mV vs Ag/AgCl (T1_TableDefinitions.csv, T2_pH.csv), outer-membrane decaheme cytochrome MtrC (SO_1778) serves as the primary terminal reductase of the MtrCAB conduit during partial reduction and electrode partitioning of the dissolved V(V) feed (44.1 mg/kg V at Vbrr_0 to 34 mg/kg V at BESV.brr_END in T3_AqueousICPOES.csv).
   - source: omca_cytochrome
     target: oxidized_metal_substrate
     predicate: reduces
     relationship: cell-surface decaheme cytochrome reduction
-    description: OmcA transfers electrons at the cell-mineral/solution interface to Dissolved V(V) in defined bicarbonate/PIPES electrolyte.
+    description: Outer-membrane decaheme lipoprotein cytochrome OmcA (SO_1779) partners with the MtrCAB complex at the cell surface during bioelectrochemical reduction of dissolved V(V) feed in kane_2026_bes.
     evidence:
     - source_ref: kane_2026_bes
       supports: partial
-      explanation: OmcA contributes to extracellular reduction of Dissolved V(V) in defined bicarbonate/PIPES electrolyte.
+      explanation: In the Shewanella oneidensis MR-1 bioelectrochemical reactor poised at -800 mV vs Ag/AgCl (T1_TableDefinitions.csv, T2_pH.csv), outer-membrane decaheme cytochrome OmcA (SO_1779) provides parallel extracellular electron transfer capacity at the cell/electrode interface during partial reduction and electrode partitioning of the dissolved V(V) feed (44.1 mg/kg V at Vbrr_0 to 34 mg/kg V at BESV.brr_END in T3_AqueousICPOES.csv).
   - source: oxidized_metal_substrate
     target: reduced_metal_product
     predicate: transforms_into
     relationship: reductive valence transformation and phase formation
-    description: Extracellular electron transfer converts Dissolved V(V) in defined bicarbonate/PIPES electrolyte into Depleted aqueous V and cell/electrode-associated reduced vanadium species (unverified solid valence).
+    description: Bioelectrochemical reduction in the Shewanella oneidensis MR-1 reactor poised at -800 mV vs Ag/AgCl converts the dissolved V(V) feed into partially depleted aqueous V (34 mg/kg V at BESV.brr_END) and electrode-extractable V (Vbrr_WE) without an assigned endpoint solid phase in kane_2026_bes.
     evidence:
     - source_ref: kane_2026_bes
       supports: partial
-      explanation: Shewanella oneidensis MR-1 bioelectrochemical/anaerobic reduction converts Dissolved V(V) in defined bicarbonate/PIPES electrolyte into Depleted aqueous V and cell/electrode-associated reduced vanadium species (unverified solid valence) in kane_2026_bes.
+      explanation: In kane_2026_bes, aqueous ICP-OES (T3_AqueousICPOES.csv) records partial vanadium depletion from 44.1 mg/kg V at post-equilibration baseline Vbrr_0 to 34 mg/kg V at biotic endpoint BESV.brr_END alongside working-electrode nitric-acid-extractable V (Vbrr_WE in T6), while abiotic poised-electrode controls depleted aqueous V from 19.1 mg/kg (BESVarr_0) to 12.2 mg/kg (BESVarr_END) and SEM-EDS on page 7 of the 7-page T9_SEM.pdf (labelled solids from V phosphate-buffered culturing medium rather than the BES electrode) detected C, O, Na, Cl, Ca, and Pt without a labelled V peak.
 curation_history:
 - timestamp: '2026-10-09T04:48:39Z'
   curator: Codex (GPT-6; Codex)
@@ -359,9 +359,19 @@ curation_history:
   curator: claude
   action: edit
   summary: Normalized top-level key ordering in vanadium.yaml so sources precedes criticality per CANONICAL_RECORD_KEYS.
+- timestamp: '2026-11-05T23:46:52Z'
+  curator: marcin
+  action: edit
+  summary: 'Cycle 9 Stage 5 (#940, GRP-C9S5-001): Replace generic template descriptions on oxidized_metal_substrate and reduced_metal_product in mr1_bes_vanadium_reduction_graph and update edges[1..3] with lowercase study-specific prose grounded in kane_2026_bes T2/T3/T6/T7/T9.'
+- timestamp: '2026-11-06T00:34:38Z'
+  curator: marcin
+  action: edit
+  summary: 'Cycle 9 Stage 5 (#940, PR #943 review follow-up): Align working-electrode potential (-800 mV vs Ag/AgCl), table names (T1_TableDefinitions.csv, T2_pH.csv), and T9_SEM.pdf page 7 attribution in causal_graphs[0].edges[1..3] of vanadium.yaml with mechanisms[0].context and kane_2026_bes.'
 history_refs:
 - history/records/vanadium/2026-10-09T044839Z-codex-edb7c6.yaml
 - history/records/vanadium/2026-10-09T055005Z-codex-5af8f0.yaml
 - history/records/vanadium/2026-10-18T042750Z-antigravity-4f26d3.yaml
 - history/records/vanadium/2026-10-21T184653Z-claude-0ef708.yaml
 - history/records/vanadium/2026-10-30T222651Z-claude-598c16.yaml
+- history/records/vanadium/2026-11-05T234652Z-marcin-a29b5f.yaml
+- history/records/vanadium/2026-11-06T003438Z-marcin-12e729.yaml
