@@ -1,0 +1,289 @@
+# Primary-source scientific review of tancaite-ce (IMA:2009-097, status A, FeCe(MoO4)3*3H2O)
+
+- Review: 20261106T025000Z-tancaite-ce-round128-scientific-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-06T02:48:00Z
+- Finished UTC: 2026-11-06T02:50:00Z
+- Reviewer: antigravity / round128-scientific-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Tancaite-(Ce) (IMA:2009-097, status A, FeCe(MoO4)3*3H2O) passes primary-source scientific review (scientific_review: true) at SHA-256 d1dbec31c0288a209372b342a339c0ed9a063d5756b33e8debe48621bd8f17e2 against all bounded passages and rendered table PNGs of Bonaccorsi E and Orlandi P (2020) Tancaite-(Ce), ideally FeCe(MoO4)3*3H2O: description and average crystal structure, Eur. J. Mineral. 32:347-354, pp. 347-354, Tables 1-6, Figures 1-6 (22 bounded passages &lt;= 1,800 B across 8 full-PDF pages; 7 main-text pages / 19 passages, plus PNG renders of pages 2 and 6).
+
+## Scope And Provenance
+
+Primary-source scientific review of data/records/tancaite-ce.yaml (SHA-256 d1dbec31c0288a209372b342a339c0ed9a063d5756b33e8debe48621bd8f17e2) and its canonical CREATE history sidecar against all bounded primary-source passages and rendered table PNGs from Bonaccorsi E and Orlandi P (2020) Tancaite-(Ce), ideally FeCe(MoO4)3*3H2O: description and average crystal structure, Eur. J. Mineral. 32:347-354, pp. 347-354, Tables 1-6, Figures 1-6 (22 bounded passages &lt;= 1,800 B across 8 full-PDF pages; 7 main-text pages / 19 passages, plus PNG renders of pages 2 and 6) and the September 2026 IMA-CNMNC Master List (PDF p. 211).
+
+Selection: Round 128 newly admitted mineral record tancaite-ce
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 64b792b36bbc67623dd1e9d8d13ec382dd8607e2.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:tancaite-ce | data/records/tancaite-ce.yaml | maintained | Tancaite-(Ce) |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:tancaite-ce | Checked 693 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:tancaite-ce | Checked 1379 history record(s); 0 error(s). |
+
+## Scientific And Domain Assessments
+
+### Verification of IMA:2009-097 identity, Su Seinargiu type locality, ARL-SEMQ WDS chemistry, micro-Raman spectrum, Pm-3m subcell and R-3 supercell crystallography, and internal source discrepancies for tancaite-ce
+
+evidence: supported. Targets: cmmmech:tancaite-ce.
+
+All numeric, crystallographic, optical, spectroscopic, and chemical claims in data/records/tancaite-ce.yaml (SHA-256 d1dbec31c0288a209372b342a339c0ed9a063d5756b33e8debe48621bd8f17e2) match the bounded primary-source passages and rendered table PNGs of Bonaccorsi E and Orlandi P (2020) Tancaite-(Ce), ideally FeCe(MoO4)3*3H2O: description and average crystal structure, Eur. J. Mineral. 32:347-354, pp. 347-354, Tables 1-6, Figures 1-6 (22 bounded passages &lt;= 1,800 B across 8 full-PDF pages; 7 main-text pages / 19 passages, plus PNG renders of pages 2 and 6) and the September 2026 IMA Master List (p. 211).
+
+### Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE provenance
+
+provenance: supported. Targets: cmmmech:tancaite-ce.
+
+data/records/tancaite-ce.yaml accurately omits mechanisms (0 mechanisms) and explicitly discloses that no biological or microbial interaction data are reported in the type mineralogical description. Append-only CREATE history sidecar passes validation with 0 errors.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/tancaite-ce.yaml; Working-tree record data/records/tancaite-ce.yaml | supports | Working-tree record data/records/tancaite-ce.yaml captures IMA:2009-097 identity (symbol Tnc-Ce), Su Seinargiu (Sarroch, Sardinia, Italy) type locality, holotype 18911 (Pisa), Table 1 (p. 348) ARL-SEMQ WDS chemistry (10 points, MoO3 58.62, Fe2O3 11.29, Ce2O3 10.35, La2O3 5.04, Nd2O3 3.66, ThO2 2.58, Pr2O3 1.07, SiO2 0.34, Sm2O3 0.19, UO2 0.17, CaO 0.09, SrO 0.02, H2Ocalc 7.43 wt%, Total 100.85 wt%), micro-Raman bands at 1620 and 3430 cm-1 (Figure 2), cubic Pm-3m (#221) average subcell (a = 6.870(1) A, V = 324.2(1) A3, Z = 1, R1 = 0.0387) and trigonal R-3 (#148) 48-fold supercell (SCXRD a = 19.2901(3), c = 47.2510(5) A; PXRD a = 19.305(1), c = 47.438(5) A), primary-source discrepancies (192 observed vs 200 independent reflections; Table 4 caption attributing SCXRD supercell to PXRD; Dcalc 3.834 vs 3.738 g/cm3), and 0 mechanisms (SHA-256 d1dbec31c0288a209372b342a339c0ed9a063d5756b33e8debe48621bd8f17e2). |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List, PDF p. 211 | supports | Confirms Tancaite-(Ce), status A, IMA:2009-097, and primary reference in European Journal of Mineralogy. |
+| bonaccorsi_2020_tancaite_ce_primary | https://doi.org/10.5194/ejm-32-347-2020; Bonaccorsi E and Orlandi P (2020) Tancaite-(Ce), ideally FeCe(MoO4)3*3H2O: description and average crystal structure, Eur. J. Mineral. 32:347-354, pp. 347-354, Tables 1-6, Figures 1-6 (22 bounded passages &lt;= 1,800 B across 8 full-PDF pages; 7 main-text pages / 19 passages, plus PNG renders of pages 2 and 6) | supports | All bounded passages (&lt;= 1,800 B) and single-page 150-DPI PNG table renders inspected from Bonaccorsi E and Orlandi P (2020) Tancaite-(Ce), ideally FeCe(MoO4)3*3H2O: description and average crystal structure, Eur. J. Mineral. 32:347-354, pp. 347-354, Tables 1-6, Figures 1-6 (22 bounded passages &lt;= 1,800 B across 8 full-PDF pages; 7 main-text pages / 19 passages, plus PNG renders of pages 2 and 6), confirming verbatim title, type locality, type specimen repositories, chemical composition, unit-cell parameters, structure refinement, and documented internal source discrepancies. |
+| create_history | history/records/tancaite-ce/2026-11-06T024322Z-antigravity-f716a6.yaml; Canonical CREATE history sidecar history/records/tancaite-ce/2026-11-06T024322Z-antigravity-f716a6.yaml | supports | Canonical CREATE history sidecar (SHA-256 45cd0b2b8629e7cfd5cdf3368d0dfcbc1110d235d9b5d5bb96c6f8fde33dd1cd) matches record curation_history[0].timestamp and top-level record sections. |
+| validation | data/records/tancaite-ce.yaml; Real CLI validation via .venv/bin/cmmmech validate --require-records and .venv/bin/cmmmech validate-history --base main | supports | Checked 693 record(s); 0 failed. Checked 1379 history record(s); 0 error(s). |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed under the Round 128 bounded source-text workflow (scripts/index_bounded_pdf_passages.py, max 1,800 bytes per passage) plus single-page 150-DPI PNG table renders.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261106T025000Z-tancaite-ce-round128-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Primary-source scientific review of tancaite-ce (IMA:2009-097, status A, FeCe(MoO4)3*3H2O)
+started_at: '2026-11-06T02:48:00Z'
+finished_at: '2026-11-06T02:50:00Z'
+reviewer:
+  identity: antigravity / round128-scientific-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/tancaite-ce.yaml (SHA-256 d1dbec31c0288a209372b342a339c0ed9a063d5756b33e8debe48621bd8f17e2)
+    and its CREATE history sidecar against all bounded passages and single-page PNG
+    table renders of Bonaccorsi E and Orlandi P (2020) Tancaite-(Ce), ideally FeCe(MoO4)3*3H2O:
+    description and average crystal structure, Eur. J. Mineral. 32:347-354, pp. 347-354,
+    Tables 1-6, Figures 1-6 (22 bounded passages <= 1,800 B across 8 full-PDF pages;
+    7 main-text pages / 19 passages, plus PNG renders of pages 2 and 6) and the September
+    2026 IMA-CNMNC Master List (PDF p. 211).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 64b792b36bbc67623dd1e9d8d13ec382dd8607e2
+  state: working_tree
+  inputs:
+  - path: data/records/tancaite-ce.yaml
+    sha256: d1dbec31c0288a209372b342a339c0ed9a063d5756b33e8debe48621bd8f17e2
+    role: target
+  - path: history/records/tancaite-ce/2026-11-06T024322Z-antigravity-f716a6.yaml
+    sha256: 45cd0b2b8629e7cfd5cdf3368d0dfcbc1110d235d9b5d5bb96c6f8fde33dd1cd
+    role: context
+  - path: research/sources/round128-minerals/20261106T024500Z-source-investigation.json
+    sha256: 719d9bfac8c452d6c367e5b825459aa671923870a023af25d9ae4e3c59124d2b
+    role: context
+  - path: research/sources/round128-minerals/20261106T024500Z-source-investigation.md
+    sha256: 1dbf68f573243d539af512a7cc0d9ebefb5e91c1e7bdcf3b8a403c37033c2620
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:tancaite-ce
+  path: data/records/tancaite-ce.yaml
+  label: Tancaite-(Ce)
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/tancaite-ce.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/tancaite-ce/2026-11-06T024322Z-antigravity-f716a6.yaml
+    role: canonical_history
+scope:
+  description: 'Primary-source scientific review of data/records/tancaite-ce.yaml
+    (SHA-256 d1dbec31c0288a209372b342a339c0ed9a063d5756b33e8debe48621bd8f17e2) and
+    its canonical CREATE history sidecar against all bounded primary-source passages
+    and rendered table PNGs from Bonaccorsi E and Orlandi P (2020) Tancaite-(Ce),
+    ideally FeCe(MoO4)3*3H2O: description and average crystal structure, Eur. J. Mineral.
+    32:347-354, pp. 347-354, Tables 1-6, Figures 1-6 (22 bounded passages <= 1,800
+    B across 8 full-PDF pages; 7 main-text pages / 19 passages, plus PNG renders of
+    pages 2 and 6) and the September 2026 IMA-CNMNC Master List (PDF p. 211).'
+  selection: Round 128 newly admitted mineral record tancaite-ce
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:tancaite-ce
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/tancaite-ce.yaml
+  locator: Working-tree record data/records/tancaite-ce.yaml
+  accessed_at: '2026-11-06T02:49:00Z'
+  support: supports
+  summary: Working-tree record data/records/tancaite-ce.yaml captures IMA:2009-097
+    identity (symbol Tnc-Ce), Su Seinargiu (Sarroch, Sardinia, Italy) type locality,
+    holotype 18911 (Pisa), Table 1 (p. 348) ARL-SEMQ WDS chemistry (10 points, MoO3
+    58.62, Fe2O3 11.29, Ce2O3 10.35, La2O3 5.04, Nd2O3 3.66, ThO2 2.58, Pr2O3 1.07,
+    SiO2 0.34, Sm2O3 0.19, UO2 0.17, CaO 0.09, SrO 0.02, H2Ocalc 7.43 wt%, Total 100.85
+    wt%), micro-Raman bands at 1620 and 3430 cm-1 (Figure 2), cubic Pm-3m (#221) average
+    subcell (a = 6.870(1) A, V = 324.2(1) A3, Z = 1, R1 = 0.0387) and trigonal R-3
+    (#148) 48-fold supercell (SCXRD a = 19.2901(3), c = 47.2510(5) A; PXRD a = 19.305(1),
+    c = 47.438(5) A), primary-source discrepancies (192 observed vs 200 independent
+    reflections; Table 4 caption attributing SCXRD supercell to PXRD; Dcalc 3.834
+    vs 3.738 g/cm3), and 0 mechanisms (SHA-256 d1dbec31c0288a209372b342a339c0ed9a063d5756b33e8debe48621bd8f17e2).
+  snapshot_sha256: d1dbec31c0288a209372b342a339c0ed9a063d5756b33e8debe48621bd8f17e2
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 211
+  accessed_at: '2026-11-06T02:49:00Z'
+  support: supports
+  summary: Confirms Tancaite-(Ce), status A, IMA:2009-097, and primary reference in
+    European Journal of Mineralogy.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: bonaccorsi_2020_tancaite_ce_primary
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-32-347-2020
+  locator: 'Bonaccorsi E and Orlandi P (2020) Tancaite-(Ce), ideally FeCe(MoO4)3*3H2O:
+    description and average crystal structure, Eur. J. Mineral. 32:347-354, pp. 347-354,
+    Tables 1-6, Figures 1-6 (22 bounded passages <= 1,800 B across 8 full-PDF pages;
+    7 main-text pages / 19 passages, plus PNG renders of pages 2 and 6)'
+  accessed_at: '2026-11-06T02:49:00Z'
+  support: supports
+  summary: 'All bounded passages (<= 1,800 B) and single-page 150-DPI PNG table renders
+    inspected from Bonaccorsi E and Orlandi P (2020) Tancaite-(Ce), ideally FeCe(MoO4)3*3H2O:
+    description and average crystal structure, Eur. J. Mineral. 32:347-354, pp. 347-354,
+    Tables 1-6, Figures 1-6 (22 bounded passages <= 1,800 B across 8 full-PDF pages;
+    7 main-text pages / 19 passages, plus PNG renders of pages 2 and 6), confirming
+    verbatim title, type locality, type specimen repositories, chemical composition,
+    unit-cell parameters, structure refinement, and documented internal source discrepancies.'
+  snapshot_sha256: 091d52e1bf40a05f4dcd4bdad01c840326a8efae576b8c94a59cae35bd0a50b5
+- evidence_id: create_history
+  kind: record_content
+  reference: history/records/tancaite-ce/2026-11-06T024322Z-antigravity-f716a6.yaml
+  locator: Canonical CREATE history sidecar history/records/tancaite-ce/2026-11-06T024322Z-antigravity-f716a6.yaml
+  accessed_at: '2026-11-06T02:49:00Z'
+  support: supports
+  summary: Canonical CREATE history sidecar (SHA-256 45cd0b2b8629e7cfd5cdf3368d0dfcbc1110d235d9b5d5bb96c6f8fde33dd1cd)
+    matches record curation_history[0].timestamp and top-level record sections.
+  snapshot_sha256: 45cd0b2b8629e7cfd5cdf3368d0dfcbc1110d235d9b5d5bb96c6f8fde33dd1cd
+- evidence_id: validation
+  kind: validation
+  reference: data/records/tancaite-ce.yaml
+  locator: Real CLI validation via .venv/bin/cmmmech validate --require-records and
+    .venv/bin/cmmmech validate-history --base main
+  accessed_at: '2026-11-06T02:49:30Z'
+  support: supports
+  summary: Checked 693 record(s); 0 failed. Checked 1379 history record(s); 0 error(s).
+  snapshot_sha256: d1dbec31c0288a209372b342a339c0ed9a063d5756b33e8debe48621bd8f17e2
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: .venv/bin/cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 693 record(s); 0 failed.
+  target_ids:
+  - cmmmech:tancaite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: .venv/bin/cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1379 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:tancaite-ce
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA:2009-097 identity, Su Seinargiu type locality, ARL-SEMQ
+    WDS chemistry, micro-Raman spectrum, Pm-3m subcell and R-3 supercell crystallography,
+    and internal source discrepancies for tancaite-ce
+  outcome: supported
+  summary: 'All numeric, crystallographic, optical, spectroscopic, and chemical claims
+    in data/records/tancaite-ce.yaml (SHA-256 d1dbec31c0288a209372b342a339c0ed9a063d5756b33e8debe48621bd8f17e2)
+    match the bounded primary-source passages and rendered table PNGs of Bonaccorsi
+    E and Orlandi P (2020) Tancaite-(Ce), ideally FeCe(MoO4)3*3H2O: description and
+    average crystal structure, Eur. J. Mineral. 32:347-354, pp. 347-354, Tables 1-6,
+    Figures 1-6 (22 bounded passages <= 1,800 B across 8 full-PDF pages; 7 main-text
+    pages / 19 passages, plus PNG renders of pages 2 and 6) and the September 2026
+    IMA Master List (p. 211).'
+  target_ids:
+  - cmmmech:tancaite-ce
+  evidence_ids:
+  - owner
+  - ima_authority
+  - bonaccorsi_2020_tancaite_ce_primary
+- assessment_id: mechanism_absence_and_provenance_verification
+  area: provenance
+  topic: Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE
+    provenance
+  outcome: supported
+  summary: data/records/tancaite-ce.yaml accurately omits mechanisms (0 mechanisms)
+    and explicitly discloses that no biological or microbial interaction data are
+    reported in the type mineralogical description. Append-only CREATE history sidecar
+    passes validation with 0 errors.
+  target_ids:
+  - cmmmech:tancaite-ce
+  evidence_ids:
+  - owner
+  - bonaccorsi_2020_tancaite_ce_primary
+  - create_history
+  - validation
+findings: []
+actions: []
+summary: 'Tancaite-(Ce) (IMA:2009-097, status A, FeCe(MoO4)3*3H2O) passes primary-source
+  scientific review (scientific_review: true) at SHA-256 d1dbec31c0288a209372b342a339c0ed9a063d5756b33e8debe48621bd8f17e2
+  against all bounded passages and rendered table PNGs of Bonaccorsi E and Orlandi
+  P (2020) Tancaite-(Ce), ideally FeCe(MoO4)3*3H2O: description and average crystal
+  structure, Eur. J. Mineral. 32:347-354, pp. 347-354, Tables 1-6, Figures 1-6 (22
+  bounded passages <= 1,800 B across 8 full-PDF pages; 7 main-text pages / 19 passages,
+  plus PNG renders of pages 2 and 6).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed under the Round 128 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage) plus single-page 150-DPI PNG table renders.
+related_reviews: []
+```
