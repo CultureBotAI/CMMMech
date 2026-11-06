@@ -1,0 +1,1924 @@
+{
+  "created_at": "2026-10-21T09:07:21.973055+00:00",
+  "issue": 365,
+  "visit": 59,
+  "author": "Codex root",
+  "repository": "CultureBotAI/CMMMech",
+  "worktree": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-365",
+  "branch": "codex/issue-365-seawater-uranium-accounting",
+  "base": "1296ee20f2595d7d6a50e391f611c22435418906",
+  "decision": "Keep scientific gap open; source-only handoff; no owner/history edit",
+  "report": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-365/research/sources/issue-365-seawater-uranium-accounting/20261021T090721Z.md",
+    "bytes": 13627,
+    "sha256": "ac45bc7945e33dbd8c29acb11e2dd3d9ea5b1be6cee6d3cfbdeae2e3334ed10a"
+  },
+  "inputs": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-365/data/records/seawater.yaml",
+      "bytes": 8488,
+      "sha256": "3eca7555a6f0a9f377001f5968a9924b73d014179255a4c1d4a6bcf412850ec5"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-365/history/records/seawater/2026-10-15T183036Z-codex-708f2e.yaml",
+      "bytes": 841,
+      "sha256": "66315766ed6d0023bdd547504eebe936b66c728730bbd374352b203936f2e730"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-365/research/sources/round100-seawater/20261015T183320Z.md",
+      "bytes": 3840,
+      "sha256": "07a3f419d1ce2a4af90c163ed0541747302b48908634d98199e987d26c9d8ad0"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-365/research/sources/round100-seawater/20261015T183320Z.json",
+      "bytes": 14587,
+      "sha256": "1893e6b319fe65f68ebfbc3ff5649828d30277d69752c5d3e9dbc5ce688cd9f1"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-365/reviews/structured/20261015T184520Z-seawater-round100-independent/review.yaml",
+      "bytes": 16677,
+      "sha256": "d368b882af36221b9725e9e229d4bc833ae52d82630e739354799c748fc8f38c"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-365/src/cmmmech/schema/cmmmech.yaml",
+      "bytes": 15946,
+      "sha256": "105313f55214e4b81ce23a1338262c752c44017c8150fba8721d75826ec03932"
+    }
+  ],
+  "reconciliation": {
+    "directory": "/private/tmp/cmmmech-backlog-20261019-fmj36s/reconcile-365-20261021T085846Z",
+    "eligibility": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/reconcile-365-20261021T085846Z/eligibility.json",
+      "bytes": 569,
+      "sha256": "e1bcbfca4c1016b8f45017c3543f9d5c0307e24aed5e26aea0a10f8cd5ea3c9d"
+    }
+  },
+  "baseline_gates": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-365-baseline-gates.json",
+    "bytes": 1077,
+    "sha256": "931f74bc8d0654131668727c82182d8dc2fafc6ad1ffeaa1fbb64cab7bfe2756"
+  },
+  "acquisitions": [
+    {
+      "name": "main.xml",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6755527/fullTextXML",
+      "started_at": "2026-10-21T08:59:43.489432+00:00",
+      "status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6755527/fullTextXML",
+      "content_type": "application/xml",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/main.xml",
+      "bytes": 94692,
+      "sha256": "90995c1b02c92e2cb7dfd5c393f11b51d2cee50bc3647ffb26a616ffb337299b",
+      "pdf_magic": false,
+      "zip_magic": false,
+      "headers": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/main.xml.headers",
+      "completed_at": "2026-10-21T08:59:44.672880+00:00"
+    },
+    {
+      "name": "supplementary.zip",
+      "requested_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6755527/supplementaryFiles",
+      "started_at": "2026-10-21T08:59:43.490109+00:00",
+      "status": 200,
+      "resolved_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC6755527/supplementaryFiles",
+      "content_type": "application/zip",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary.zip",
+      "bytes": 1270315,
+      "sha256": "a5122b0f6b7151f2070b40d57f9a72c961f19be851835320eaeeafad408bcb05",
+      "pdf_magic": false,
+      "zip_magic": true,
+      "headers": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary.zip.headers",
+      "completed_at": "2026-10-21T08:59:59.711582+00:00"
+    },
+    {
+      "name": "main-wiley.pdf",
+      "requested_url": "https://advanced.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/advs.201900961",
+      "started_at": "2026-10-21T08:59:43.490626+00:00",
+      "status": 403,
+      "resolved_url": "https://advanced.onlinelibrary.wiley.com/doi/pdfdirect/10.1002/advs.201900961",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/main-wiley.pdf",
+      "bytes": 5627,
+      "sha256": "2838d99cad7cdba1594b2acbd7de74357e354bd34dacde10bbdf2c17148da8fc",
+      "pdf_magic": false,
+      "zip_magic": false,
+      "headers": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/main-wiley.pdf.headers",
+      "completed_at": "2026-10-21T08:59:43.554572+00:00"
+    },
+    {
+      "name": "crossref.json",
+      "requested_url": "https://api.crossref.org/works/10.1002/advs.201900961",
+      "started_at": "2026-10-21T08:59:43.554595+00:00",
+      "status": 200,
+      "resolved_url": "https://api.crossref.org/works/10.1002/advs.201900961",
+      "content_type": "application/json",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/crossref.json",
+      "bytes": 12260,
+      "sha256": "cb608cc1482abb649d18fd3fe75a154393c7676d4abb4dcc3dd79643f4dabe8f",
+      "pdf_magic": false,
+      "zip_magic": false,
+      "headers": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/crossref.json.headers",
+      "completed_at": "2026-10-21T08:59:43.883561+00:00"
+    },
+    {
+      "name": "genbank.gb",
+      "requested_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=MK092976.1,SNVA00000000.1&rettype=gb&retmode=text",
+      "started_at": "2026-10-21T08:59:43.883583+00:00",
+      "status": 200,
+      "resolved_url": "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/efetch.fcgi?db=nuccore&id=MK092976.1,SNVA00000000.1&rettype=gb&retmode=text",
+      "content_type": "text/plain",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/genbank.gb",
+      "bytes": 6991,
+      "sha256": "063391899a71fcb10abd3ff817302232afa8a868d2bcf8fb2d967e04ef31bd99",
+      "pdf_magic": false,
+      "zip_magic": false,
+      "headers": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/genbank.gb.headers",
+      "completed_at": "2026-10-21T08:59:44.156844+00:00"
+    },
+    {
+      "name": "oa.xml",
+      "requested_url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6755527",
+      "started_at": "2026-10-21T08:59:44.156863+00:00",
+      "status": 404,
+      "resolved_url": "https://www.ncbi.nlm.nih.gov/pmc/utils/oa/oa.fcgi?id=PMC6755527",
+      "content_type": "text/html; charset=ISO-8859-1",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/oa.xml",
+      "bytes": 1584,
+      "sha256": "6172b11a47586e83b8df50ee4e295fef62226b319e2fceb1d58554361345a95f",
+      "pdf_magic": false,
+      "zip_magic": false,
+      "headers": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/oa.xml.headers",
+      "completed_at": "2026-10-21T08:59:44.342739+00:00"
+    },
+    {
+      "name": "biosample.html",
+      "requested_url": "https://www.ncbi.nlm.nih.gov/biosample/SAMN11157971",
+      "started_at": "2026-10-21T09:02:18.895363+00:00",
+      "status": 200,
+      "resolved_url": "https://www.ncbi.nlm.nih.gov/biosample/SAMN11157971",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/biosample.html",
+      "bytes": 54675,
+      "sha256": "38188087caa6ab9558778c432d09b1024020607be0d4f0e8192566daf433db1c",
+      "pdf_magic": false,
+      "zip_magic": false,
+      "headers": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/biosample.html.headers",
+      "completed_at": "2026-10-21T09:02:19.765459+00:00"
+    },
+    {
+      "name": "taxonomy.html",
+      "requested_url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=492670&mode=info",
+      "started_at": "2026-10-21T09:02:18.895913+00:00",
+      "status": 200,
+      "resolved_url": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=492670&mode=info",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/taxonomy.html",
+      "bytes": 42502,
+      "sha256": "3b79df8e2576d073010a1775551165f3368034506abfbb1df04c73a0cda0e5d5",
+      "pdf_magic": false,
+      "zip_magic": false,
+      "headers": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/taxonomy.html.headers",
+      "completed_at": "2026-10-21T09:02:19.168423+00:00"
+    },
+    {
+      "name": "datacite-related.json",
+      "requested_url": "https://api.datacite.org/dois?query=relatedIdentifiers.relatedIdentifier:%2210.1002/advs.201900961%22&page%5Bsize%5D=25",
+      "started_at": "2026-10-21T09:02:18.896597+00:00",
+      "status": 200,
+      "resolved_url": "https://api.datacite.org/dois?query=relatedIdentifiers.relatedIdentifier:%2210.1002/advs.201900961%22&page%5Bsize%5D=25",
+      "content_type": "application/json; charset=utf-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/datacite-related.json",
+      "bytes": 198,
+      "sha256": "a7cf2c48c30722d0af69ea01a846cc423c1bd7e13af6e06e87fbb18b2cf84de0",
+      "pdf_magic": false,
+      "zip_magic": false,
+      "headers": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/datacite-related.json.headers",
+      "completed_at": "2026-10-21T09:02:19.616511+00:00"
+    }
+  ],
+  "acquisition_receipts": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/acquisition-01.json",
+      "bytes": 4438,
+      "sha256": "dc0516de81239915bbd6ac56ac75496b1c576083ff3e5b91c1b02b90ffbd348c"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/acquisition-02.json",
+      "bytes": 2315,
+      "sha256": "3af4d4c118e7acf7d6a2e6d6383ee0c4c6da3916f896038e9faa737e831406a1"
+    }
+  ],
+  "archive_inventory": [
+    {
+      "archive_member": "ADVS-6-1900961-g001.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g001.jpg",
+      "bytes": 78590,
+      "sha256": "86b4c25fa05604927b952ea2ecffd8d2519bf0b766e89c857317ebd0754637bf"
+    },
+    {
+      "archive_member": "ADVS-6-1900961-g005.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g005.jpg",
+      "bytes": 60969,
+      "sha256": "688583023b68a104fa08dd0a5901c06c81832e834d22e555b602257c8b17bb2c"
+    },
+    {
+      "archive_member": "ADVS-6-1900961-g004.gif",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g004.gif",
+      "bytes": 6219,
+      "sha256": "9034818435bb639b74c0596f0e1b77646d6dbaf93a902ca969a0382018fb328d"
+    },
+    {
+      "archive_member": "ADVS-6-1900961-g005.gif",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g005.gif",
+      "bytes": 8542,
+      "sha256": "afb57d12d2f8e2bcde840273a852efa8357479cead1f08ac720b4a154aa4982b"
+    },
+    {
+      "archive_member": "ADVS-6-1900961-s001.pdf",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-s001.pdf",
+      "bytes": 857064,
+      "sha256": "66c9bba47e8c117c6730832f0316539e39a73fbe1fbe3bcfff529847ce0535e9"
+    },
+    {
+      "archive_member": "ADVS-6-1900961-g002.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g002.jpg",
+      "bytes": 53796,
+      "sha256": "db28419c5913722fb84727be41b60d28ce43d57ed46523826dab9a31e38483f4"
+    },
+    {
+      "archive_member": "ADVS-6-1900961-g001.gif",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g001.gif",
+      "bytes": 10035,
+      "sha256": "6aade17477525ec0d90111c8badb84b5c92b653c281c6d36695ca5587ec30bab"
+    },
+    {
+      "archive_member": "ADVS-6-1900961-g006.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g006.jpg",
+      "bytes": 92999,
+      "sha256": "ba57c9b4f9864522436e7c9cc94129269a0ca6e729ca7df760eda21dd1844c61"
+    },
+    {
+      "archive_member": "ADVS-6-1900961-g003.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g003.jpg",
+      "bytes": 40548,
+      "sha256": "395535c845969edc3dc5d931660a98a8a39ed03ad2592675635e592f422846ce"
+    },
+    {
+      "archive_member": "ADVS-6-1900961-g002.gif",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g002.gif",
+      "bytes": 6397,
+      "sha256": "1379e5331326dba8e3847b18c282dd36a9bc9562c5210f0270a1161ad1bee0e4"
+    },
+    {
+      "archive_member": "ADVS-6-1900961-g003.gif",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g003.gif",
+      "bytes": 7009,
+      "sha256": "886fec27fbee1731e6bcea2296448284c740f09f5257ea36443c50b512b76f79"
+    },
+    {
+      "archive_member": "ADVS-6-1900961-g004.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g004.jpg",
+      "bytes": 90135,
+      "sha256": "6d2582656c06d6bea680b8f598bea0b6159c42ebf978cc511a985c4340285832"
+    },
+    {
+      "archive_member": "ADVS-6-1900961-g006.gif",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g006.gif",
+      "bytes": 6291,
+      "sha256": "19475364eb22311b91715590e35c79c4e9e3e90ab01cf4c7748a87e11c684eb2"
+    }
+  ],
+  "version_comparisons": [
+    {
+      "current": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/main.xml",
+        "bytes": 94692,
+        "sha256": "90995c1b02c92e2cb7dfd5c393f11b51d2cee50bc3647ffb26a616ffb337299b"
+      },
+      "prior_recorded": {
+        "path": "/private/tmp/cmm-round100-seawater-research/li2019-fulltext.xml",
+        "bytes": 94692,
+        "sha256": "90995c1b02c92e2cb7dfd5c393f11b51d2cee50bc3647ffb26a616ffb337299b"
+      },
+      "sha256_match": true,
+      "scope": "Current bytes compared with saved prior checksum; old raw file unavailable. Separate members not previously indexed are not claimed compared."
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/crossref.json",
+        "bytes": 12260,
+        "sha256": "cb608cc1482abb649d18fd3fe75a154393c7676d4abb4dcc3dd79643f4dabe8f"
+      },
+      "prior_recorded": {
+        "path": "/private/tmp/cmm-round100-seawater-research/li2019-crossref.json",
+        "bytes": 12260,
+        "sha256": "cb608cc1482abb649d18fd3fe75a154393c7676d4abb4dcc3dd79643f4dabe8f"
+      },
+      "sha256_match": true,
+      "scope": "Current bytes compared with saved prior checksum; old raw file unavailable. Separate members not previously indexed are not claimed compared."
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary.zip",
+        "bytes": 1270315,
+        "sha256": "a5122b0f6b7151f2070b40d57f9a72c961f19be851835320eaeeafad408bcb05"
+      },
+      "prior_recorded": {
+        "path": "/private/tmp/cmm-round100-seawater-research/supplementary.zip",
+        "bytes": 1270315,
+        "sha256": "0571a0c52481aefbebbd490221e369e1a6883766f5b01dee35cbac7c915e5980"
+      },
+      "sha256_match": false,
+      "scope": "Current bytes compared with saved prior checksum; old raw file unavailable. Separate members not previously indexed are not claimed compared."
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/taxonomy.html",
+        "bytes": 42502,
+        "sha256": "3b79df8e2576d073010a1775551165f3368034506abfbb1df04c73a0cda0e5d5"
+      },
+      "prior_recorded": {
+        "path": "/private/tmp/cmm-round100-seawater-research/taxonomy492670.html",
+        "bytes": 42502,
+        "sha256": "5caca513a26fbe33ab881aac04fd63961e28b7891e00f5c2279fd2ed4dda81e6"
+      },
+      "sha256_match": false,
+      "scope": "Current bytes compared with saved prior checksum; old raw file unavailable. Separate members not previously indexed are not claimed compared."
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/MK092976.1.gb",
+        "bytes": 3151,
+        "sha256": "b13cab6ccfd256d8e52811d83ffc380b044ae364bc62d06a5f4264558a017a71"
+      },
+      "prior_recorded": {
+        "path": "/private/tmp/cmm-round100-seawater-research/MK092976.1.gb",
+        "bytes": 3151,
+        "sha256": "b13cab6ccfd256d8e52811d83ffc380b044ae364bc62d06a5f4264558a017a71"
+      },
+      "sha256_match": true,
+      "scope": "Current bytes compared with saved prior checksum; old raw file unavailable. Separate members not previously indexed are not claimed compared."
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/SNVA00000000.1.gb",
+        "bytes": 3840,
+        "sha256": "7f84b13123d44a50029e3d0efc66c0d532cf84075088d47656012afe80491b31"
+      },
+      "prior_recorded": {
+        "path": "/private/tmp/cmm-round100-seawater-research/SNVA00000000.gb",
+        "bytes": 3840,
+        "sha256": "7f84b13123d44a50029e3d0efc66c0d532cf84075088d47656012afe80491b31"
+      },
+      "sha256_match": true,
+      "scope": "Current bytes compared with saved prior checksum; old raw file unavailable. Separate members not previously indexed are not claimed compared."
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-s001.pdf",
+        "bytes": 857064,
+        "sha256": "66c9bba47e8c117c6730832f0316539e39a73fbe1fbe3bcfff529847ce0535e9"
+      },
+      "prior_recorded": {
+        "path": "/private/tmp/cmm-round100-seawater-research/supplementary/ADVS-6-1900961-s001.pdf",
+        "bytes": 857064,
+        "sha256": "66c9bba47e8c117c6730832f0316539e39a73fbe1fbe3bcfff529847ce0535e9"
+      },
+      "sha256_match": true,
+      "scope": "Current bytes compared with saved prior checksum; old raw file unavailable. Separate members not previously indexed are not claimed compared."
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g002.jpg",
+        "bytes": 53796,
+        "sha256": "db28419c5913722fb84727be41b60d28ce43d57ed46523826dab9a31e38483f4"
+      },
+      "prior_recorded": {
+        "path": "/private/tmp/cmm-round100-seawater-research/supplementary/ADVS-6-1900961-g002.jpg",
+        "bytes": 53796,
+        "sha256": "db28419c5913722fb84727be41b60d28ce43d57ed46523826dab9a31e38483f4"
+      },
+      "sha256_match": true,
+      "scope": "Current bytes compared with saved prior checksum; old raw file unavailable. Separate members not previously indexed are not claimed compared."
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g003.jpg",
+        "bytes": 40548,
+        "sha256": "395535c845969edc3dc5d931660a98a8a39ed03ad2592675635e592f422846ce"
+      },
+      "prior_recorded": {
+        "path": "/private/tmp/cmm-round100-seawater-research/supplementary/ADVS-6-1900961-g003.jpg",
+        "bytes": 40548,
+        "sha256": "395535c845969edc3dc5d931660a98a8a39ed03ad2592675635e592f422846ce"
+      },
+      "sha256_match": true,
+      "scope": "Current bytes compared with saved prior checksum; old raw file unavailable. Separate members not previously indexed are not claimed compared."
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g001.jpg",
+        "bytes": 78590,
+        "sha256": "86b4c25fa05604927b952ea2ecffd8d2519bf0b766e89c857317ebd0754637bf"
+      },
+      "prior_recorded": {
+        "path": "/private/tmp/cmm-round100-seawater-research/supplementary/ADVS-6-1900961-g001.jpg",
+        "bytes": 78590,
+        "sha256": "86b4c25fa05604927b952ea2ecffd8d2519bf0b766e89c857317ebd0754637bf"
+      },
+      "sha256_match": true,
+      "scope": "Current bytes compared with saved prior checksum; old raw file unavailable. Separate members not previously indexed are not claimed compared."
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g004.jpg",
+        "bytes": 90135,
+        "sha256": "6d2582656c06d6bea680b8f598bea0b6159c42ebf978cc511a985c4340285832"
+      },
+      "prior_recorded": {
+        "path": "/private/tmp/cmm-round100-seawater-research/supplementary/ADVS-6-1900961-g004.jpg",
+        "bytes": 90135,
+        "sha256": "6d2582656c06d6bea680b8f598bea0b6159c42ebf978cc511a985c4340285832"
+      },
+      "sha256_match": true,
+      "scope": "Current bytes compared with saved prior checksum; old raw file unavailable. Separate members not previously indexed are not claimed compared."
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g005.jpg",
+        "bytes": 60969,
+        "sha256": "688583023b68a104fa08dd0a5901c06c81832e834d22e555b602257c8b17bb2c"
+      },
+      "prior_recorded": {
+        "path": "/private/tmp/cmm-round100-seawater-research/supplementary/ADVS-6-1900961-g005.jpg",
+        "bytes": 60969,
+        "sha256": "688583023b68a104fa08dd0a5901c06c81832e834d22e555b602257c8b17bb2c"
+      },
+      "sha256_match": true,
+      "scope": "Current bytes compared with saved prior checksum; old raw file unavailable. Separate members not previously indexed are not claimed compared."
+    },
+    {
+      "current": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g006.jpg",
+        "bytes": 92999,
+        "sha256": "ba57c9b4f9864522436e7c9cc94129269a0ca6e729ca7df760eda21dd1844c61"
+      },
+      "prior_recorded": {
+        "path": "/private/tmp/cmm-round100-seawater-research/supplementary/ADVS-6-1900961-g006.jpg",
+        "bytes": 92999,
+        "sha256": "ba57c9b4f9864522436e7c9cc94129269a0ca6e729ca7df760eda21dd1844c61"
+      },
+      "sha256_match": true,
+      "scope": "Current bytes compared with saved prior checksum; old raw file unavailable. Separate members not previously indexed are not claimed compared."
+    }
+  ],
+  "prior_path_checks": [
+    {
+      "path": "/private/tmp/cmm-round100-seawater-research/MK092976.1.gb",
+      "exists": false,
+      "scope": "Exact cited path only"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-seawater-research/SNVA00000000.gb",
+      "exists": false,
+      "scope": "Exact cited path only"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-seawater-research/acquisition-accessions.json",
+      "exists": false,
+      "scope": "Exact cited path only"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-seawater-research/acquisition-initial.json",
+      "exists": false,
+      "scope": "Exact cited path only"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-seawater-research/acquisition-supplement.json",
+      "exists": false,
+      "scope": "Exact cited path only"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-seawater-research/li2019-crossref.json",
+      "exists": false,
+      "scope": "Exact cited path only"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-seawater-research/li2019-fulltext.xml",
+      "exists": false,
+      "scope": "Exact cited path only"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-seawater-research/oa.xml",
+      "exists": false,
+      "scope": "Exact cited path only"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-seawater-research/supplementary.zip",
+      "exists": false,
+      "scope": "Exact cited path only"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-seawater-research/supplementary/ADVS-6-1900961-g001.jpg",
+      "exists": false,
+      "scope": "Exact cited path only"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-seawater-research/supplementary/ADVS-6-1900961-g002.jpg",
+      "exists": false,
+      "scope": "Exact cited path only"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-seawater-research/supplementary/ADVS-6-1900961-g003.jpg",
+      "exists": false,
+      "scope": "Exact cited path only"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-seawater-research/supplementary/ADVS-6-1900961-g004.jpg",
+      "exists": false,
+      "scope": "Exact cited path only"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-seawater-research/supplementary/ADVS-6-1900961-g005.jpg",
+      "exists": false,
+      "scope": "Exact cited path only"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-seawater-research/supplementary/ADVS-6-1900961-g006.jpg",
+      "exists": false,
+      "scope": "Exact cited path only"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-seawater-research/supplementary/ADVS-6-1900961-s001.pdf",
+      "exists": false,
+      "scope": "Exact cited path only"
+    },
+    {
+      "path": "/private/tmp/cmm-round100-seawater-research/taxonomy492670.html",
+      "exists": false,
+      "scope": "Exact cited path only"
+    }
+  ],
+  "dedup": {
+    "receipt": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/dedup.json",
+      "bytes": 544,
+      "sha256": "28a2c4f70fbb027ed612b0070a18bfc020287c17c4fc7cc03e3abaea24f1620b"
+    },
+    "output": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/dedup.txt",
+      "bytes": 13007,
+      "sha256": "b551ba96d04746be97235ec01eafd6cb7cc1ed20f11db5fba141f57817e3deb1"
+    },
+    "scope": "Ignored/hidden-inclusive followed named maintained roots; not machinewide"
+  },
+  "web_requests": [
+    {
+      "timestamp": "2026-10-21T08:59:07.163Z",
+      "provider": "web.run",
+      "request": {
+        "search_query": [
+          {
+            "q": "\"10.1002/advs.201900961\" correction OR corrigendum OR data"
+          },
+          {
+            "q": "\"Ultrafast Recovery of Uranium from Seawater\" \"9456.59\""
+          },
+          {
+            "q": "\"UUS-1\" \"625746\" uranium"
+          }
+        ],
+        "response_length": "long"
+      },
+      "response_key": "365web01",
+      "coverage": "Returned result window; no pagination, recency or domains parameter. Timestamp records call completion, not source publication."
+    },
+    {
+      "timestamp": "2026-10-21T09:00:09.655Z",
+      "provider": "web.run",
+      "request": {
+        "search_query": [
+          {
+            "q": "\"UUS-1\" \"uranium\" dataset correction"
+          },
+          {
+            "q": "\"9456.59\" uranium"
+          },
+          {
+            "q": "\"625746.40\" uranium"
+          },
+          {
+            "q": "\"SNVA00000000\" UUS-1"
+          }
+        ],
+        "response_length": "long"
+      },
+      "response_key": "365web02",
+      "coverage": "Returned result window only; no pagination, recency or domains parameter."
+    },
+    {
+      "timestamp": "2026-10-21T09:01:56.472Z",
+      "provider": "web.run",
+      "request": {
+        "open": [
+          {
+            "ref_id": "https://www.ncbi.nlm.nih.gov/biosample/SAMN11157971"
+          },
+          {
+            "ref_id": "https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=492670&mode=info"
+          },
+          {
+            "ref_id": "https://www.sciencedirect.com/science/article/abs/pii/S0304389422024165"
+          }
+        ],
+        "search_query": [
+          {
+            "q": "\"advs.201900961\" site:figshare.com OR site:zenodo.org OR site:data.mendeley.com"
+          },
+          {
+            "q": "\"UUS-1\" \"initial\" \"culture\" uranium correction"
+          }
+        ],
+        "response_length": "long"
+      },
+      "response_key": "365web03",
+      "coverage": "Returned results/opened pages only; no pagination, recency or domains parameter; literal query site filters retained."
+    }
+  ],
+  "web_responses": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/web-01.json",
+      "bytes": 28450,
+      "sha256": "df5f1a853f3339de76c6e449d124ab3b2611137ad148c91b613e55f00233b5c1"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/web-02.json",
+      "bytes": 21491,
+      "sha256": "243132563c85bc0fda44364af0d6361a0fdd7f16aa60c4ff6ca4234f5385020a"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/web-03.json",
+      "bytes": 32800,
+      "sha256": "4435dea4188292fae720686cce95cecb6b24ea09be51c383e057847b4bcd8533"
+    }
+  ],
+  "inspection": {
+    "inspected_at": "2026-10-21T09:07:21.973055+00:00",
+    "main": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/main.xml",
+      "bytes": 94692,
+      "sha256": "90995c1b02c92e2cb7dfd5c393f11b51d2cee50bc3647ffb26a616ffb337299b"
+    },
+    "main_scope": "Entire original JATS front matter, body, native MathML equation, captions, declarations, references and associated-data text. All six original JPG figures visually inspected. No clean publisher PDF acquired.",
+    "main_original_figures": [
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g001.jpg",
+        "bytes": 78590,
+        "sha256": "86b4c25fa05604927b952ea2ecffd8d2519bf0b766e89c857317ebd0754637bf"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g002.jpg",
+        "bytes": 53796,
+        "sha256": "db28419c5913722fb84727be41b60d28ce43d57ed46523826dab9a31e38483f4"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g003.jpg",
+        "bytes": 40548,
+        "sha256": "395535c845969edc3dc5d931660a98a8a39ed03ad2592675635e592f422846ce"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g004.jpg",
+        "bytes": 90135,
+        "sha256": "6d2582656c06d6bea680b8f598bea0b6159c42ebf978cc511a985c4340285832"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g005.jpg",
+        "bytes": 60969,
+        "sha256": "688583023b68a104fa08dd0a5901c06c81832e834d22e555b602257c8b17bb2c"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-g006.jpg",
+        "bytes": 92999,
+        "sha256": "ba57c9b4f9864522436e7c9cc94129269a0ca6e729ca7df760eda21dd1844c61"
+      }
+    ],
+    "supplement": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-s001.pdf",
+      "bytes": 857064,
+      "sha256": "66c9bba47e8c117c6730832f0316539e39a73fbe1fbe3bcfff529847ce0535e9"
+    },
+    "supplement_scope": "Complete nine-page PDF text and all nine original page renders; FiguresS1\u2013S5 and TablesS1/S2.",
+    "supplement_original_pages": [
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/si-pages/page-1.png",
+        "bytes": 70937,
+        "sha256": "97921271979a03be4affe9f17ac730357cef304a1327d489e656fea867657821"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/si-pages/page-2.png",
+        "bytes": 99835,
+        "sha256": "1f3a4ea203482611ed90b79f3fdbd22d4b3e6f97346aa83f994f05def972506e"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/si-pages/page-3.png",
+        "bytes": 99226,
+        "sha256": "51a40604b70acc6b0323561bc7f4f0ca6e8635ef72a6b7f26f018b50c7a1ff9e"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/si-pages/page-4.png",
+        "bytes": 94696,
+        "sha256": "0cbfbe1487f081a4334fadf2cd01f6652340c6c78981671e5df997d48f215c2f"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/si-pages/page-5.png",
+        "bytes": 207833,
+        "sha256": "5480b6ffae98b34bbc2999ba2c8d25d0e74175b7094fbdac60e7471bafed83ed"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/si-pages/page-6.png",
+        "bytes": 173254,
+        "sha256": "00b3576c05b98f5d25bd42edb8bc8b5b972da9b65636e327e22deda80ad15d3e"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/si-pages/page-7.png",
+        "bytes": 68152,
+        "sha256": "19f14504f40abfd0c2a60fb96517f4ab6f3166b1bae29a35d1f3b22c3b6a6deb"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/si-pages/page-8.png",
+        "bytes": 97795,
+        "sha256": "403adb4f12fff5df384ed0c22cfa359cae72fa53e6f0aa315abcb7fcce1ca109"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/si-pages/page-9.png",
+        "bytes": 107264,
+        "sha256": "536712047e69331f4010e4744858e26c7c848618f5f040fbe8ce0638124c9bd9"
+      }
+    ],
+    "authorities": [
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/genbank.gb",
+        "bytes": 6991,
+        "sha256": "063391899a71fcb10abd3ff817302232afa8a868d2bcf8fb2d967e04ef31bd99"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/MK092976.1.gb",
+        "bytes": 3151,
+        "sha256": "b13cab6ccfd256d8e52811d83ffc380b044ae364bc62d06a5f4264558a017a71"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/SNVA00000000.1.gb",
+        "bytes": 3840,
+        "sha256": "7f84b13123d44a50029e3d0efc66c0d532cf84075088d47656012afe80491b31"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/biosample.html",
+        "bytes": 54675,
+        "sha256": "38188087caa6ab9558778c432d09b1024020607be0d4f0e8192566daf433db1c"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/biosample.txt",
+        "bytes": 2879,
+        "sha256": "aebc2c0cadf2636ba1c5e8265fd3fcdb51c5ad5248af1eec22839b194ec30522"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/taxonomy.html",
+        "bytes": 42502,
+        "sha256": "3b79df8e2576d073010a1775551165f3368034506abfbb1df04c73a0cda0e5d5"
+      },
+      {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/taxonomy.txt",
+        "bytes": 5846,
+        "sha256": "478425665a012a83919276c961131b3e3432678d9e7696903d43682ff565f086"
+      }
+    ],
+    "limits": "Source observations, not experimental replication, sequence reannotation or independent species delimitation."
+  },
+  "numeric_audit": {
+    "source": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/supplementary/ADVS-6-1900961-s001.pdf",
+      "bytes": 857064,
+      "sha256": "66c9bba47e8c117c6730832f0316539e39a73fbe1fbe3bcfff529847ce0535e9"
+    },
+    "method": "Manually rekeyed from original SI PDF8/9 and visually checked; no chart digitization or raw replicate reconstruction.",
+    "table_s2": {
+      "locator": "PDF9",
+      "columns": [
+        "element",
+        "seawater_value",
+        "seawater_unit",
+        "wet_mgkg",
+        "dry_mgkg",
+        "initial_culture_mgkg",
+        "wet_ratio",
+        "dry_ratio",
+        "initial_ratio"
+      ],
+      "rows": [
+        {
+          "element": "Ca",
+          "seawater_value": "413.36",
+          "seawater_unit": "mg/kg",
+          "wet_mgkg": "1832.89",
+          "dry_mgkg": "23731.21",
+          "initial_culture_mgkg": "2601305.76",
+          "wet_ratio": "4.43",
+          "dry_ratio": "57.41",
+          "initial_ratio": "1290.88",
+          "seawater_mgkg_for_diagnostic": "413.36"
+        },
+        {
+          "element": "Li",
+          "seawater_value": "0.134",
+          "seawater_unit": "mg/kg",
+          "wet_mgkg": "0.27",
+          "dry_mgkg": "3.54",
+          "initial_culture_mgkg": "388.53",
+          "wet_ratio": "2.03",
+          "dry_ratio": "26.38",
+          "initial_ratio": "593.22",
+          "seawater_mgkg_for_diagnostic": "0.134"
+        },
+        {
+          "element": "Cr",
+          "seawater_value": "0.07",
+          "seawater_unit": "mg/kg",
+          "wet_mgkg": "14.64",
+          "dry_mgkg": "189.61",
+          "initial_culture_mgkg": "20784.69",
+          "wet_ratio": "220.55",
+          "dry_ratio": "2855.64",
+          "initial_ratio": "64209.73",
+          "seawater_mgkg_for_diagnostic": "0.07"
+        },
+        {
+          "element": "Cu",
+          "seawater_value": "0.30",
+          "seawater_unit": "ug/kg",
+          "wet_mgkg": "2.27",
+          "dry_mgkg": "29.48",
+          "initial_culture_mgkg": "3232.37",
+          "wet_ratio": "7591.85",
+          "dry_ratio": "98294.56",
+          "initial_ratio": "2210173.60",
+          "seawater_mgkg_for_diagnostic": "0.0003"
+        },
+        {
+          "element": "Fe",
+          "seawater_value": "2.80",
+          "seawater_unit": "ug/kg",
+          "wet_mgkg": "96.05",
+          "dry_mgkg": "1243.72",
+          "initial_culture_mgkg": "136330.96",
+          "wet_ratio": "34307.05",
+          "dry_ratio": "444186.09",
+          "initial_ratio": "9987616.20",
+          "seawater_mgkg_for_diagnostic": "0.0028"
+        },
+        {
+          "element": "K",
+          "seawater_value": "456.93",
+          "seawater_unit": "mg/kg",
+          "wet_mgkg": "6031.62",
+          "dry_mgkg": "78093.68",
+          "initial_culture_mgkg": "8560269.23",
+          "wet_ratio": "13.20",
+          "dry_ratio": "170.90",
+          "initial_ratio": "3842.93",
+          "seawater_mgkg_for_diagnostic": "456.93"
+        },
+        {
+          "element": "Na",
+          "seawater_value": "8500.90",
+          "seawater_unit": "mg/kg",
+          "wet_mgkg": "12499.34",
+          "dry_mgkg": "161833.68",
+          "initial_culture_mgkg": "17739461.54",
+          "wet_ratio": "1.47",
+          "dry_ratio": "19.037",
+          "initial_ratio": "428.05",
+          "seawater_mgkg_for_diagnostic": "8500.90"
+        },
+        {
+          "element": "Ni",
+          "seawater_value": "0.73",
+          "seawater_unit": "ug/kg",
+          "wet_mgkg": "5.52",
+          "dry_mgkg": "71.54",
+          "initial_culture_mgkg": "7841.94",
+          "wet_ratio": "7569.16",
+          "dry_ratio": "98000.72",
+          "initial_ratio": "2203566.50",
+          "seawater_mgkg_for_diagnostic": "0.00073"
+        },
+        {
+          "element": "U",
+          "seawater_value": "3.10",
+          "seawater_unit": "ug/kg",
+          "wet_mgkg": "16.51",
+          "dry_mgkg": "213.89",
+          "initial_culture_mgkg": "9456.59",
+          "wet_ratio": "5329.01",
+          "dry_ratio": "68996.77",
+          "initial_ratio": "625746.40",
+          "seawater_mgkg_for_diagnostic": "0.0031"
+        },
+        {
+          "element": "V",
+          "seawater_value": "1.20",
+          "seawater_unit": "ug/kg",
+          "wet_mgkg": "0.05",
+          "dry_mgkg": "0.68",
+          "initial_culture_mgkg": "75.05",
+          "wet_ratio": "44.07",
+          "dry_ratio": "570.60",
+          "initial_ratio": "12830.07",
+          "seawater_mgkg_for_diagnostic": "0.0012"
+        },
+        {
+          "element": "Zn",
+          "seawater_value": "0.08",
+          "seawater_unit": "mg/kg",
+          "wet_mgkg": "18.18",
+          "dry_mgkg": "235.42",
+          "initial_culture_mgkg": "25806.58",
+          "wet_ratio": "237.37",
+          "dry_ratio": "3073.40",
+          "initial_ratio": "69106.24",
+          "seawater_mgkg_for_diagnostic": "0.08"
+        },
+        {
+          "element": "Mg",
+          "seawater_value": "1132.90",
+          "seawater_unit": "mg/kg",
+          "wet_mgkg": "2265.01",
+          "dry_mgkg": "29325.94",
+          "initial_culture_mgkg": "3214575.68",
+          "wet_ratio": "1.99",
+          "dry_ratio": "25.88",
+          "initial_ratio": "582.04",
+          "seawater_mgkg_for_diagnostic": "1132.90"
+        },
+        {
+          "element": "S",
+          "seawater_value": "0.80",
+          "seawater_unit": "mg/kg",
+          "wet_mgkg": "1257.51",
+          "dry_mgkg": "16281.47",
+          "initial_culture_mgkg": "1784700.84",
+          "wet_ratio": "1579.78",
+          "dry_ratio": "20454.11",
+          "initial_ratio": "459914.96",
+          "seawater_mgkg_for_diagnostic": "0.80"
+        },
+        {
+          "element": "Si",
+          "seawater_value": "0.72",
+          "seawater_unit": "mg/kg",
+          "wet_mgkg": "2676.43",
+          "dry_mgkg": "34652.78",
+          "initial_culture_mgkg": "3798478.84",
+          "wet_ratio": "3698.77",
+          "dry_ratio": "47889.42",
+          "initial_ratio": "1076803.70",
+          "seawater_mgkg_for_diagnostic": "0.72"
+        },
+        {
+          "element": "P",
+          "seawater_value": "0.02",
+          "seawater_unit": "mg/kg",
+          "wet_mgkg": "4360.77",
+          "dry_mgkg": "56460.52",
+          "initial_culture_mgkg": "6188942.30",
+          "wet_ratio": "177990.70",
+          "dry_ratio": "2304511.27",
+          "initial_ratio": "51817413.60",
+          "seawater_mgkg_for_diagnostic": "0.02"
+        },
+        {
+          "element": "Mn",
+          "seawater_value": "1.30",
+          "seawater_unit": "ug/kg",
+          "wet_mgkg": "26.66",
+          "dry_mgkg": "345.24",
+          "initial_culture_mgkg": "37844.07",
+          "wet_ratio": "20511.69",
+          "dry_ratio": "265572.46",
+          "initial_ratio": "5971452.93",
+          "seawater_mgkg_for_diagnostic": "0.0013"
+        },
+        {
+          "element": "B",
+          "seawater_value": "3.28",
+          "seawater_unit": "mg/kg",
+          "wet_mgkg": "19.50",
+          "dry_mgkg": "252.47",
+          "initial_culture_mgkg": "27675.28",
+          "wet_ratio": "5.94",
+          "dry_ratio": "77.02",
+          "initial_ratio": "1731.79",
+          "seawater_mgkg_for_diagnostic": "3.28"
+        }
+      ],
+      "numeric_source_cells": 119,
+      "mixed_units": "Six seawater cells explicitly use micrograms/kg despite commonmg/kg header:Cu,Fe,Ni,U,V,Mn.",
+      "missing_or_censored_source_cells": 0
+    },
+    "table_s1": {
+      "locator": "PDF8",
+      "columns": [
+        "source compound label",
+        "source synthase type",
+        "source scaffold",
+        "size_kb",
+        "similarity_percent",
+        "source bioactivity label"
+      ],
+      "rows": [
+        [
+          "Butirosin",
+          "OtherKs",
+          "scaffold1",
+          "41.2",
+          "7",
+          "antibacterial"
+        ],
+        [
+          "Macrolactin",
+          "Terpene",
+          "scaffold1",
+          "86.1",
+          "100",
+          "antibacterial"
+        ],
+        [
+          "Bacilysin",
+          "Other",
+          "scaffold2",
+          "41.4",
+          "100",
+          "antibacterial"
+        ],
+        [
+          "Difficidin",
+          "Transatpks",
+          "Scaffold3",
+          "19.0",
+          "40",
+          "antibacterial"
+        ],
+        [
+          "Bacillibactin",
+          "Bacteriocin-Nrps",
+          "Scaffold4",
+          "66.8",
+          "100",
+          "siderophore"
+        ],
+        [
+          "Bacillaene",
+          "Transatpks-Nrps",
+          "Scaffold5",
+          "122.7",
+          "100",
+          "antibacterial"
+        ],
+        [
+          "Difficidin",
+          "Transatpks",
+          "Scaffold6",
+          "46.0",
+          "53",
+          "antibacterial"
+        ],
+        [
+          "Surfactin",
+          "Nrps",
+          "Scaffold9",
+          "55.5",
+          "82",
+          "multiple"
+        ],
+        [
+          "Fengcin",
+          "Transatpks-Nrps",
+          "Scaffold10",
+          "88.1",
+          "86",
+          "antifungal"
+        ],
+        [
+          "Plipastatin",
+          "Nrps",
+          "Scaffold15",
+          "22.4",
+          "46",
+          "antifungal"
+        ],
+        [
+          "Difficidin",
+          "Transatpks",
+          "Scaffold16",
+          "23.8",
+          "26",
+          "antibacterial"
+        ],
+        [
+          "Plipastatin",
+          "Nrps",
+          "Scaffold18",
+          "22.4",
+          "23",
+          "antifungal"
+        ],
+        [
+          "Fengcin",
+          "Transatpks-Nrps",
+          "Scaffold19",
+          "9.8",
+          "20",
+          "antifungal"
+        ]
+      ],
+      "numeric_source_cells": 26,
+      "limit": "Source predictions only; linewrapped synthase labels joined. FigureS4 has a differing macrolactin type; no pathway/protein mapping imported."
+    },
+    "row_diagnostics": [
+      {
+        "element": "Ca",
+        "kind": "wet_content_divided_by_printed_water",
+        "numerator": "1832.89",
+        "denominator_mgkg": "413.36",
+        "calculated_ratio": "4.434125217727888523321076060",
+        "printed_ratio": "4.43",
+        "relative_difference_percent": "0.093120039004255605441897500",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Ca",
+        "kind": "dry_content_divided_by_printed_water",
+        "numerator": "23731.21",
+        "denominator_mgkg": "413.36",
+        "calculated_ratio": "57.41051383781691503773950068",
+        "printed_ratio": "57.41",
+        "relative_difference_percent": "0.000895031905443368297336100",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Ca",
+        "kind": "initial_content_divided_by_printed_water",
+        "numerator": "2601305.76",
+        "denominator_mgkg": "413.36",
+        "calculated_ratio": "6293.075672537255660925101606",
+        "printed_ratio": "1290.88",
+        "relative_difference_percent": "387.5027634278364883587244055",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Ca",
+        "kind": "initial_to_dry_content_ratio_divided_by_initial_to_dry_enrichment_ratio",
+        "expression": "(2601305.76/23731.21)/(1290.88/57.41)",
+        "value": "4.874984001616165159059869603",
+        "limitation": "Cancels the printed water denominator but not rounding or unknown data lineage. Similar factors do not identify a correction or hidden denominator."
+      },
+      {
+        "element": "Li",
+        "kind": "wet_content_divided_by_printed_water",
+        "numerator": "0.27",
+        "denominator_mgkg": "0.134",
+        "calculated_ratio": "2.014925373134328358208955224",
+        "printed_ratio": "2.03",
+        "relative_difference_percent": "-0.7425924564370266892140283700",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Li",
+        "kind": "dry_content_divided_by_printed_water",
+        "numerator": "3.54",
+        "denominator_mgkg": "0.134",
+        "calculated_ratio": "26.41791044776119402985074627",
+        "printed_ratio": "26.38",
+        "relative_difference_percent": "0.143709051407103979722313400",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Li",
+        "kind": "initial_content_divided_by_printed_water",
+        "numerator": "388.53",
+        "denominator_mgkg": "0.134",
+        "calculated_ratio": "2899.477611940298507462686567",
+        "printed_ratio": "593.22",
+        "relative_difference_percent": "388.7693624524288640744894924",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Li",
+        "kind": "initial_to_dry_content_ratio_divided_by_initial_to_dry_enrichment_ratio",
+        "expression": "(388.53/3.54)/(593.22/26.38)",
+        "value": "4.880679646102654915802809032",
+        "limitation": "Cancels the printed water denominator but not rounding or unknown data lineage. Similar factors do not identify a correction or hidden denominator."
+      },
+      {
+        "element": "Cr",
+        "kind": "wet_content_divided_by_printed_water",
+        "numerator": "14.64",
+        "denominator_mgkg": "0.07",
+        "calculated_ratio": "209.1428571428571428571428571",
+        "printed_ratio": "220.55",
+        "relative_difference_percent": "-5.172134598568513780483855320",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Cr",
+        "kind": "dry_content_divided_by_printed_water",
+        "numerator": "189.61",
+        "denominator_mgkg": "0.07",
+        "calculated_ratio": "2708.714285714285714285714286",
+        "printed_ratio": "2855.64",
+        "relative_difference_percent": "-5.145106325927437832299789680",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Cr",
+        "kind": "initial_content_divided_by_printed_water",
+        "numerator": "20784.69",
+        "denominator_mgkg": "0.07",
+        "calculated_ratio": "296924.1428571428571428571429",
+        "printed_ratio": "64209.73",
+        "relative_difference_percent": "362.4285803057307002269860703",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Cr",
+        "kind": "initial_to_dry_content_ratio_divided_by_initial_to_dry_enrichment_ratio",
+        "expression": "(20784.69/189.61)/(64209.73/2855.64)",
+        "value": "4.875115688755760623159819371",
+        "limitation": "Cancels the printed water denominator but not rounding or unknown data lineage. Similar factors do not identify a correction or hidden denominator."
+      },
+      {
+        "element": "Cu",
+        "kind": "wet_content_divided_by_printed_water",
+        "numerator": "2.27",
+        "denominator_mgkg": "0.0003",
+        "calculated_ratio": "7566.666666666666666666666667",
+        "printed_ratio": "7591.85",
+        "relative_difference_percent": "-0.3317153702105986463554118300",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Cu",
+        "kind": "dry_content_divided_by_printed_water",
+        "numerator": "29.48",
+        "denominator_mgkg": "0.0003",
+        "calculated_ratio": "98266.66666666666666666666667",
+        "printed_ratio": "98294.56",
+        "relative_difference_percent": "-0.0283772910050498555905162300",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Cu",
+        "kind": "initial_content_divided_by_printed_water",
+        "numerator": "3232.37",
+        "denominator_mgkg": "0.0003",
+        "calculated_ratio": "10774566.66666666666666666667",
+        "printed_ratio": "2210173.60",
+        "relative_difference_percent": "387.4986592305087105676525441",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Cu",
+        "kind": "initial_to_dry_content_ratio_divided_by_initial_to_dry_enrichment_ratio",
+        "expression": "(3232.37/29.48)/(2210173.60/98294.56)",
+        "value": "4.876370374116634221310864014",
+        "limitation": "Cancels the printed water denominator but not rounding or unknown data lineage. Similar factors do not identify a correction or hidden denominator."
+      },
+      {
+        "element": "Fe",
+        "kind": "wet_content_divided_by_printed_water",
+        "numerator": "96.05",
+        "denominator_mgkg": "0.0028",
+        "calculated_ratio": "34303.57142857142857142857143",
+        "printed_ratio": "34307.05",
+        "relative_difference_percent": "-0.0101395235922978763007270200",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Fe",
+        "kind": "dry_content_divided_by_printed_water",
+        "numerator": "1243.72",
+        "denominator_mgkg": "0.0028",
+        "calculated_ratio": "444185.7142857142857142857143",
+        "printed_ratio": "444186.09",
+        "relative_difference_percent": "-0.0000845848832668951236824400",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Fe",
+        "kind": "initial_content_divided_by_printed_water",
+        "numerator": "136330.96",
+        "denominator_mgkg": "0.0028",
+        "calculated_ratio": "48689628.57142857142857142857",
+        "printed_ratio": "9987616.20",
+        "relative_difference_percent": "387.4999959592817696436055339",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Fe",
+        "kind": "initial_to_dry_content_ratio_divided_by_initial_to_dry_enrichment_ratio",
+        "expression": "(136330.96/1243.72)/(9987616.20/444186.09)",
+        "value": "4.875004083109330650834325568",
+        "limitation": "Cancels the printed water denominator but not rounding or unknown data lineage. Similar factors do not identify a correction or hidden denominator."
+      },
+      {
+        "element": "K",
+        "kind": "wet_content_divided_by_printed_water",
+        "numerator": "6031.62",
+        "denominator_mgkg": "456.93",
+        "calculated_ratio": "13.20031514674020090604687808",
+        "printed_ratio": "13.20",
+        "relative_difference_percent": "0.002387475304552318536955200",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "K",
+        "kind": "dry_content_divided_by_printed_water",
+        "numerator": "78093.68",
+        "denominator_mgkg": "456.93",
+        "calculated_ratio": "170.9095047381436981594554965",
+        "printed_ratio": "170.90",
+        "relative_difference_percent": "0.005561578785077916591864500",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "K",
+        "kind": "initial_content_divided_by_printed_water",
+        "numerator": "8560269.23",
+        "denominator_mgkg": "456.93",
+        "calculated_ratio": "18734.31210469875035563434224",
+        "printed_ratio": "3842.93",
+        "relative_difference_percent": "387.5007378406255215586633699",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "K",
+        "kind": "initial_to_dry_content_ratio_divided_by_initial_to_dry_enrichment_ratio",
+        "expression": "(8560269.23/78093.68)/(3842.93/170.90)",
+        "value": "4.874736266108250839734435506",
+        "limitation": "Cancels the printed water denominator but not rounding or unknown data lineage. Similar factors do not identify a correction or hidden denominator."
+      },
+      {
+        "element": "Na",
+        "kind": "wet_content_divided_by_printed_water",
+        "numerator": "12499.34",
+        "denominator_mgkg": "8500.90",
+        "calculated_ratio": "1.470354903598442517851051065",
+        "printed_ratio": "1.47",
+        "relative_difference_percent": "0.024143101934865159935446600",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Na",
+        "kind": "dry_content_divided_by_printed_water",
+        "numerator": "161833.68",
+        "denominator_mgkg": "8500.90",
+        "calculated_ratio": "19.03724076274276841275629639",
+        "printed_ratio": "19.037",
+        "relative_difference_percent": "0.001264709475066516553534600",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Na",
+        "kind": "initial_content_divided_by_printed_water",
+        "numerator": "17739461.54",
+        "denominator_mgkg": "8500.90",
+        "calculated_ratio": "2086.774522697596725052641485",
+        "printed_ratio": "428.05",
+        "relative_difference_percent": "387.5071890427746116230911073",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Na",
+        "kind": "initial_to_dry_content_ratio_divided_by_initial_to_dry_enrichment_ratio",
+        "expression": "(17739461.54/161833.68)/(428.05/19.037)",
+        "value": "4.875010235711384611827278347",
+        "limitation": "Cancels the printed water denominator but not rounding or unknown data lineage. Similar factors do not identify a correction or hidden denominator."
+      },
+      {
+        "element": "Ni",
+        "kind": "wet_content_divided_by_printed_water",
+        "numerator": "5.52",
+        "denominator_mgkg": "0.00073",
+        "calculated_ratio": "7561.643835616438356164383562",
+        "printed_ratio": "7569.16",
+        "relative_difference_percent": "-0.0992998481147398632822722500",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Ni",
+        "kind": "dry_content_divided_by_printed_water",
+        "numerator": "71.54",
+        "denominator_mgkg": "0.00073",
+        "calculated_ratio": "9.8E+4",
+        "printed_ratio": "98000.72",
+        "relative_difference_percent": "-0.0007346884798397399529309600",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Ni",
+        "kind": "initial_content_divided_by_printed_water",
+        "numerator": "7841.94",
+        "denominator_mgkg": "0.00073",
+        "calculated_ratio": "10742383.56164383561643835616",
+        "printed_ratio": "2203566.50",
+        "relative_difference_percent": "387.4998581455942271966085961",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Ni",
+        "kind": "initial_to_dry_content_ratio_divided_by_initial_to_dry_enrichment_ratio",
+        "expression": "(7841.94/71.54)/(2203566.50/98000.72)",
+        "value": "4.875034397772050927868492247",
+        "limitation": "Cancels the printed water denominator but not rounding or unknown data lineage. Similar factors do not identify a correction or hidden denominator."
+      },
+      {
+        "element": "U",
+        "kind": "wet_content_divided_by_printed_water",
+        "numerator": "16.51",
+        "denominator_mgkg": "0.0031",
+        "calculated_ratio": "5325.806451612903225806451613",
+        "printed_ratio": "5329.01",
+        "relative_difference_percent": "-0.0601152631932905773032587100",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "U",
+        "kind": "dry_content_divided_by_printed_water",
+        "numerator": "213.89",
+        "denominator_mgkg": "0.0031",
+        "calculated_ratio": "68996.77419354838709677419355",
+        "printed_ratio": "68996.77",
+        "relative_difference_percent": "0.000006077890873872464165400",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "U",
+        "kind": "initial_content_divided_by_printed_water",
+        "numerator": "9456.59",
+        "denominator_mgkg": "0.0031",
+        "calculated_ratio": "3050512.903225806451612903226",
+        "printed_ratio": "625746.40",
+        "relative_difference_percent": "387.4998726681937685319329406",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "U",
+        "kind": "initial_to_dry_content_ratio_divided_by_initial_to_dry_enrichment_ratio",
+        "expression": "(9456.59/213.89)/(625746.40/68996.77)",
+        "value": "4.874998430384852983532476775",
+        "limitation": "Cancels the printed water denominator but not rounding or unknown data lineage. Similar factors do not identify a correction or hidden denominator."
+      },
+      {
+        "element": "V",
+        "kind": "wet_content_divided_by_printed_water",
+        "numerator": "0.05",
+        "denominator_mgkg": "0.0012",
+        "calculated_ratio": "41.66666666666666666666666667",
+        "printed_ratio": "44.07",
+        "relative_difference_percent": "-5.453445276454126011648135530",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "V",
+        "kind": "dry_content_divided_by_printed_water",
+        "numerator": "0.68",
+        "denominator_mgkg": "0.0012",
+        "calculated_ratio": "566.6666666666666666666666667",
+        "printed_ratio": "570.60",
+        "relative_difference_percent": "-0.6893328659890174085757681900",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "V",
+        "kind": "initial_content_divided_by_printed_water",
+        "numerator": "75.05",
+        "denominator_mgkg": "0.0012",
+        "calculated_ratio": "62541.66666666666666666666667",
+        "printed_ratio": "12830.07",
+        "relative_difference_percent": "387.4616168630932385144170427",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "V",
+        "kind": "initial_to_dry_content_ratio_divided_by_initial_to_dry_enrichment_ratio",
+        "expression": "(75.05/0.68)/(12830.07/570.60)",
+        "value": "4.908451739683782386405759374",
+        "limitation": "Cancels the printed water denominator but not rounding or unknown data lineage. Similar factors do not identify a correction or hidden denominator."
+      },
+      {
+        "element": "Zn",
+        "kind": "wet_content_divided_by_printed_water",
+        "numerator": "18.18",
+        "denominator_mgkg": "0.08",
+        "calculated_ratio": "227.25",
+        "printed_ratio": "237.37",
+        "relative_difference_percent": "-4.263386274592408476218561740",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Zn",
+        "kind": "dry_content_divided_by_printed_water",
+        "numerator": "235.42",
+        "denominator_mgkg": "0.08",
+        "calculated_ratio": "2942.75",
+        "printed_ratio": "3073.40",
+        "relative_difference_percent": "-4.250992386282293225743476280",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Zn",
+        "kind": "initial_content_divided_by_printed_water",
+        "numerator": "25806.58",
+        "denominator_mgkg": "0.08",
+        "calculated_ratio": "322582.25",
+        "printed_ratio": "69106.24",
+        "relative_difference_percent": "366.7917832022115513736530883",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Zn",
+        "kind": "initial_to_dry_content_ratio_divided_by_initial_to_dry_enrichment_ratio",
+        "expression": "(25806.58/235.42)/(69106.24/3073.40)",
+        "value": "4.875160535192173925721809200",
+        "limitation": "Cancels the printed water denominator but not rounding or unknown data lineage. Similar factors do not identify a correction or hidden denominator."
+      },
+      {
+        "element": "Mg",
+        "kind": "wet_content_divided_by_printed_water",
+        "numerator": "2265.01",
+        "denominator_mgkg": "1132.90",
+        "calculated_ratio": "1.999302674552034601465266131",
+        "printed_ratio": "1.99",
+        "relative_difference_percent": "0.467471083016814143983222700",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Mg",
+        "kind": "dry_content_divided_by_printed_water",
+        "numerator": "29325.94",
+        "denominator_mgkg": "1132.90",
+        "calculated_ratio": "25.88572689557772089328272575",
+        "printed_ratio": "25.88",
+        "relative_difference_percent": "0.022128653700621689655045400",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Mg",
+        "kind": "initial_content_divided_by_printed_water",
+        "numerator": "3214575.68",
+        "denominator_mgkg": "1132.90",
+        "calculated_ratio": "2837.475222879336216788772178",
+        "printed_ratio": "582.04",
+        "relative_difference_percent": "387.5051925777156581658944708",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Mg",
+        "kind": "initial_to_dry_content_ratio_divided_by_initial_to_dry_enrichment_ratio",
+        "expression": "(3214575.68/29325.94)/(582.04/25.88)",
+        "value": "4.873973381086195535162163930",
+        "limitation": "Cancels the printed water denominator but not rounding or unknown data lineage. Similar factors do not identify a correction or hidden denominator."
+      },
+      {
+        "element": "S",
+        "kind": "wet_content_divided_by_printed_water",
+        "numerator": "1257.51",
+        "denominator_mgkg": "0.80",
+        "calculated_ratio": "1571.8875",
+        "printed_ratio": "1579.78",
+        "relative_difference_percent": "-0.4995948802997885781564521600",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "S",
+        "kind": "dry_content_divided_by_printed_water",
+        "numerator": "16281.47",
+        "denominator_mgkg": "0.80",
+        "calculated_ratio": "20351.8375",
+        "printed_ratio": "20454.11",
+        "relative_difference_percent": "-0.5000095335362917281661240700",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "S",
+        "kind": "initial_content_divided_by_printed_water",
+        "numerator": "1784700.84",
+        "denominator_mgkg": "0.80",
+        "calculated_ratio": "2230876.05",
+        "printed_ratio": "459914.96",
+        "relative_difference_percent": "385.0627276833960782662951429",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "S",
+        "kind": "initial_to_dry_content_ratio_divided_by_initial_to_dry_enrichment_ratio",
+        "expression": "(1784700.84/16281.47)/(459914.96/20454.11)",
+        "value": "4.875002755370972551459989866",
+        "limitation": "Cancels the printed water denominator but not rounding or unknown data lineage. Similar factors do not identify a correction or hidden denominator."
+      },
+      {
+        "element": "Si",
+        "kind": "wet_content_divided_by_printed_water",
+        "numerator": "2676.43",
+        "denominator_mgkg": "0.72",
+        "calculated_ratio": "3717.263888888888888888888889",
+        "printed_ratio": "3698.77",
+        "relative_difference_percent": "0.500001051400570700229776100",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Si",
+        "kind": "dry_content_divided_by_printed_water",
+        "numerator": "34652.78",
+        "denominator_mgkg": "0.72",
+        "calculated_ratio": "48128.86111111111111111111111",
+        "printed_ratio": "47889.42",
+        "relative_difference_percent": "0.499987494338229845153921500",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Si",
+        "kind": "initial_content_divided_by_printed_water",
+        "numerator": "3798478.84",
+        "denominator_mgkg": "0.72",
+        "calculated_ratio": "5275665.055555555555555555556",
+        "printed_ratio": "1076803.70",
+        "relative_difference_percent": "389.9374933012911782858431445",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Si",
+        "kind": "initial_to_dry_content_ratio_divided_by_initial_to_dry_enrichment_ratio",
+        "expression": "(3798478.84/34652.78)/(1076803.70/47889.42)",
+        "value": "4.875000539964169755223808342",
+        "limitation": "Cancels the printed water denominator but not rounding or unknown data lineage. Similar factors do not identify a correction or hidden denominator."
+      },
+      {
+        "element": "P",
+        "kind": "wet_content_divided_by_printed_water",
+        "numerator": "4360.77",
+        "denominator_mgkg": "0.02",
+        "calculated_ratio": "218038.5",
+        "printed_ratio": "177990.70",
+        "relative_difference_percent": "22.49993960358603005662655410",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "P",
+        "kind": "dry_content_divided_by_printed_water",
+        "numerator": "56460.52",
+        "denominator_mgkg": "0.02",
+        "calculated_ratio": "2823026",
+        "printed_ratio": "2304511.27",
+        "relative_difference_percent": "22.49998673254481415489020370",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "P",
+        "kind": "initial_content_divided_by_printed_water",
+        "numerator": "6188942.30",
+        "denominator_mgkg": "0.02",
+        "calculated_ratio": "309447115",
+        "printed_ratio": "51817413.60",
+        "relative_difference_percent": "497.1874964442455306183016437",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "P",
+        "kind": "initial_to_dry_content_ratio_divided_by_initial_to_dry_enrichment_ratio",
+        "expression": "(6188942.30/56460.52)/(51817413.60/2304511.27)",
+        "value": "4.875000498964050462011353087",
+        "limitation": "Cancels the printed water denominator but not rounding or unknown data lineage. Similar factors do not identify a correction or hidden denominator."
+      },
+      {
+        "element": "Mn",
+        "kind": "wet_content_divided_by_printed_water",
+        "numerator": "26.66",
+        "denominator_mgkg": "0.0013",
+        "calculated_ratio": "20507.69230769230769230769231",
+        "printed_ratio": "20511.69",
+        "relative_difference_percent": "-0.0194898241329325262438526000",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Mn",
+        "kind": "dry_content_divided_by_printed_water",
+        "numerator": "345.24",
+        "denominator_mgkg": "0.0013",
+        "calculated_ratio": "265569.2307692307692307692308",
+        "printed_ratio": "265572.46",
+        "relative_difference_percent": "-0.0012159509194706293080122800",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Mn",
+        "kind": "initial_content_divided_by_printed_water",
+        "numerator": "37844.07",
+        "denominator_mgkg": "0.0013",
+        "calculated_ratio": "29110823.07692307692307692308",
+        "printed_ratio": "5971452.93",
+        "relative_difference_percent": "387.4998332595594439873935853",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "Mn",
+        "kind": "initial_to_dry_content_ratio_divided_by_initial_to_dry_enrichment_ratio",
+        "expression": "(37844.07/345.24)/(5971452.93/265572.46)",
+        "value": "4.875057610903438943133866890",
+        "limitation": "Cancels the printed water denominator but not rounding or unknown data lineage. Similar factors do not identify a correction or hidden denominator."
+      },
+      {
+        "element": "B",
+        "kind": "wet_content_divided_by_printed_water",
+        "numerator": "19.50",
+        "denominator_mgkg": "3.28",
+        "calculated_ratio": "5.945121951219512195121951220",
+        "printed_ratio": "5.94",
+        "relative_difference_percent": "0.086228135008622813500862300",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "B",
+        "kind": "dry_content_divided_by_printed_water",
+        "numerator": "252.47",
+        "denominator_mgkg": "3.28",
+        "calculated_ratio": "76.97256097560975609756097561",
+        "printed_ratio": "77.02",
+        "relative_difference_percent": "-0.0615931243706101044391383900",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "B",
+        "kind": "initial_content_divided_by_printed_water",
+        "numerator": "27675.28",
+        "denominator_mgkg": "3.28",
+        "calculated_ratio": "8437.585365853658536585365854",
+        "printed_ratio": "1731.79",
+        "relative_difference_percent": "387.2175821464299098958514516",
+        "limitation": "Ratio of printed values only; rounding/unreported replicate calculations and normalization remain unresolved; not a corrected measurement."
+      },
+      {
+        "element": "B",
+        "kind": "initial_to_dry_content_ratio_divided_by_initial_to_dry_enrichment_ratio",
+        "expression": "(27675.28/252.47)/(1731.79/77.02)",
+        "value": "4.875178596280395446801022318",
+        "limitation": "Cancels the printed water denominator but not rounding or unknown data lineage. Similar factors do not identify a correction or hidden denominator."
+      }
+    ],
+    "global_diagnostics": [
+      {
+        "name": "initial culture unit conversion",
+        "expression": "9456.59/1000",
+        "value": "9.45659",
+        "unit": "mg U/g initial culture",
+        "limitation": "Not final biomass capacity."
+      },
+      {
+        "name": "final dry cell unit conversion",
+        "expression": "213.89/1000",
+        "value": "0.21389",
+        "unit": "mg U/g final dry cells",
+        "limitation": "Reported final concentration; not isolated product yield."
+      },
+      {
+        "name": "initial versus final dry reported concentration",
+        "expression": "9456.59/213.89",
+        "value": "44.21239889662910842021599888",
+        "unit": "ratio",
+        "limitation": "Different denominator and culture/media accounting; not an independent biomass measurement."
+      },
+      {
+        "name": "wet versus dry reported concentration",
+        "expression": "213.89/16.51",
+        "value": "12.95517867958812840702604482",
+        "unit": "ratio",
+        "limitation": "Using SI16.51 rather than prose16.52; not a measured moisture fraction."
+      },
+      {
+        "name": "total CFU versus concentration fold change",
+        "expression": "975.26/555.63",
+        "value": "1.755232798804960135341864190",
+        "unit": "volume ratio if same sampling basis",
+        "limitation": "Approximately1.76 agrees with prose; not dry mass or unmeasured final sample volumes."
+      },
+      {
+        "name": "added nutrients",
+        "expression": "25+15",
+        "value": "40",
+        "unit": "mg",
+        "limitation": "Nominal added solids; elemental U content and final compartment inventories unmeasured."
+      },
+      {
+        "name": "proteinase biomass loss",
+        "expression": "100-56.31",
+        "value": "43.69",
+        "unit": "percent of original dry weight",
+        "limitation": "Separate debris treatment; cannot identify a protein or natural-water pathway."
+      },
+      {
+        "name": "conditional U depletion for1kg water",
+        "expression": "3.10*24.33/100",
+        "value": "0.75423",
+        "unit": "ug U",
+        "limitation": "Assumes1kg water for the nominal1L, fixed concentration basis and no inputs/sampling; not observed uranium mass."
+      },
+      {
+        "name": "conditional capacity if all40mg nutrients enter denominator",
+        "expression": "(3.10*24.33/100)/40",
+        "value": "0.01885575",
+        "unit": "mg U/g initial nutrients",
+        "limitation": "Additional assumptions from preceding diagnostic and no other U source; exposes denominator sensitivity, not a replacement for9.46 or actual recovery."
+      }
+    ],
+    "diagnostic_count": 77,
+    "observations": [
+      "Printed wetU16.51mg/kg differs from prose16.52; no preferred corrected value.",
+      "All initial-culture ratios fail a direct identity with the corresponding content/water quotient. Water rounding can affect wet/dry calculations; no blanket correction selected.",
+      "Cross-column factors range from 4.873973381086195535162163930 to 4.908451739683782386405759374. Their similar scale does not establish an exact common constant, correction or hidden denominator; small printed values are sensitive to rounding.",
+      "SI contains published means/ratios and predicted genomic annotations, not underlying sample IDs, uncertainty sheets or compartment balances."
+    ]
+  },
+  "numeric_audit_artifact": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/numeric-audit.json",
+    "bytes": 43671,
+    "sha256": "54471eef97e9d7d2a22e3b5d5eb4d4fdedad9841f73cd8bee944617882dbaf55"
+  },
+  "authority_scope": "FreshGenBank,BioSample,NCBI species page checked; no sequence reanalysis or independent species delimitation",
+  "biosample": {
+    "accession": "SAMN11157971",
+    "sample_name": "UUS-1",
+    "sample_type": "cell culture",
+    "isolation_source": "seawater",
+    "collection_date": "2017-12-30",
+    "location": "China: Haikou",
+    "submission_date": "2019-03-18",
+    "limit": "Same submitter as WGS; no assay-water provenance or analysis date"
+  },
+  "datacite": {
+    "receipt": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/datacite-related.json",
+      "bytes": 198,
+      "sha256": "a7cf2c48c30722d0af69ea01a846cc423c1bd7e13af6e06e87fbb18b2cf84de0"
+    },
+    "total": 0,
+    "totalPages": 0,
+    "page": 1,
+    "scope": "ExactrelatedIdentifier DOIquery only"
+  },
+  "owner_proposal": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/owner-proposal.json",
+    "bytes": 1071,
+    "sha256": "c133e3ac56bfd5596d922220b0cdf5194e9ebe622bb1759ebff3de42e343bd14"
+  },
+  "owner_diff": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/owner-proposal.diff",
+    "bytes": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "raw_manifest": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-365/raw-manifest.json",
+    "bytes": 13638,
+    "sha256": "6e1891d904df9b63169901fe39dbe3cffeb8090132bfd30f42a30ff14dbe5dcb"
+  },
+  "schema_handoff": {
+    "decision": "unchanged",
+    "base": "1296ee20f2595d7d6a50e391f611c22435418906",
+    "owner": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-365/data/records/seawater.yaml",
+      "bytes": 8488,
+      "sha256": "3eca7555a6f0a9f377001f5968a9924b73d014179255a4c1d4a6bcf412850ec5"
+    },
+    "history": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-365/history/records/seawater/2026-10-15T183036Z-codex-708f2e.yaml",
+      "bytes": 841,
+      "sha256": "66315766ed6d0023bdd547504eebe936b66c728730bbd374352b203936f2e730"
+    },
+    "reason": "Original source inconsistencies persist; expanded ratio audit and linked BioSample do not supply authoritative correction, mass accounting or assay-water provenance. Existing qualifications remain appropriate.",
+    "schema_fields_if_future_evidence": [
+      "sources",
+      "mechanisms[].context",
+      "mechanisms[].evidence[].explanation"
+    ],
+    "observations": "No supported analyzed_on dates, sample-level mass basis or actual replicate join; no concentration observation import.",
+    "proposed_changes": []
+  },
+  "confirmed_repository_findings": [],
+  "limitations": [
+    "No authoritative denominator or published value correction",
+    "No matched no-cell uranium timecourse, nutrient/membrane blanks or complete compartment inventories",
+    "No actual assay-water collection site/date or analysis dates",
+    "No recovered product or identified binding protein",
+    "No clean publisher PDF; complete JATS plus original figures and SI inspected",
+    "Prior matching checksums do not equal direct inspection of absent old raw originals",
+    "Laterbiohybrid lead not complete-originalreview or correction"
+  ],
+  "final_validation": "Pending external final gate receipt and independent source review after freeze; no remote mutation."
+}
