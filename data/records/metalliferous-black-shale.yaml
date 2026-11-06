@@ -93,6 +93,37 @@ mechanisms:
     - source_ref: anjum_2009
       supports: partial
       explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein supporting aerobic oxidation of 160 mM FeSO4 substrate and indigenous shale iron by Pakistani hard-coal isolate A. ferrooxidans Heap-1 during 20-day shake-flask bioleaching (1% w/v M-921 Turbella black shale, <=200 mesh, 30 C, 100 rpm, initial pH 1.5, 2.0, and 2.5) in Anjum et al. (2009); strain Heap-1 lacks a public genome or 16S rRNA accession, individual rus-operon proteins were not directly assayed, and Table 3 day-20 dissolved concentrations show condition-dependent increments over thymol-sterilized controls (Mn 25.3 vs 19.5 mg/dm3 at pH 2.0 +Fe and 26.8 vs 24.0 mg/dm3 at pH 1.5 +Fe but 15.8 vs 17.85 mg/dm3 at pH 2.5 +Fe; Fe 103.00 vs 74.25 mg/dm3 at pH 1.5 without added Fe; Cu identical at 1.75 mg/dm3 in all iron-supplemented cultures and controls).
+  - uniprot_accession: UniProtKB:A0A2W1KP86
+    entry_name: A0A2W1KP86_ACIFR
+    protein_name: Rusticyanin
+    gene_symbol: DN052_11940
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:920
+      label: Acidithiobacillus ferrooxidans
+    reference_proteome_id: UP000248886
+    interpro_ids:
+    - InterPro:IPR000923
+    - InterPro:IPR028871
+    - InterPro:IPR050845
+    - InterPro:IPR033138
+    - InterPro:IPR008972
+    - InterPro:IPR001243
+    pfam_ids:
+    - Pfam:PF00127
+    ncbifam_ids:
+    - NCBIfam:TIGR03095
+    go_terms:
+    - id: GO:0005507
+      label: copper ion binding
+    - id: GO:0009055
+      label: electron transfer activity
+    functional_role: Periplasmic type-I blue-copper protein rusticyanin ortholog (ORF DN052_11940; 187 aa, RefSeq WP_012537622.1; PF00127, TIGR03095, GO:0005507 copper ion binding, GO:0009055 electron transfer activity) in the rus operon (DN052_11935-DN052_11975) of Acidithiobacillus ferrooxidans DSM 16523 (UP000248886; NCBITaxon:920), shuttling electrons from outer-membrane Cyc2 (DN052_11975) to periplasmic cytochrome c4 Cyc1 during aerobic Fe(II) oxidation.
+    annotation_note: Grounded to the orthologous 187-aa rus-operon rusticyanin entry (ORF DN052_11940; RefSeq WP_012537622.1) in the species-level Acidithiobacillus ferrooxidans DSM 16523 reference proteome UP000248886 (NCBITaxon:920), providing direct species-taxon parity with mechanism organism NCBITaxon:920 alongside reviewed Swiss-Prot type-strain entry B7JAQ0 (RUS_ACIF2, AFE_3146, UP000001362). Represents indigenous Pakistani hard-coal isolate Acidithiobacillus ferrooxidans Heap-1 (NBC, NIBGE, Faisalabad) tested with and without 160 mM FeSO4 on M-921 Turbella black shale in Anjum et al. (2009).
+    evidence:
+    - source_ref: anjum_2009
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein supporting aerobic oxidation of 160 mM FeSO4 substrate and indigenous shale iron by Pakistani hard-coal isolate A. ferrooxidans Heap-1 during 20-day shake-flask bioleaching (1% w/v M-921 Turbella black shale, <=200 mesh, 30 C, 100 rpm, initial pH 1.5, 2.0, and 2.5) in Anjum et al. (2009); strain Heap-1 lacks a public genome or 16S rRNA accession, individual rus-operon proteins were not directly assayed, and Table 3 day-20 dissolved concentrations show condition-dependent increments over thymol-sterilized controls (Mn 25.3 vs 19.5 mg/dm3 at pH 2.0 +Fe and 26.8 vs 24.0 mg/dm3 at pH 1.5 +Fe but 15.8 vs 17.85 mg/dm3 at pH 2.5 +Fe; Fe 103.00 vs 74.25 mg/dm3 at pH 1.5 without added Fe; Cu identical at 1.75 mg/dm3 in all iron-supplemented cultures and controls).
   - uniprot_accession: UniProtKB:B7JAQ6
     entry_name: B7JAQ6_ACIF2
     protein_name: Cytochrome c552
@@ -160,8 +191,8 @@ mechanisms:
 causal_graphs:
 - id: heap1_acid_leaching_comparison_graph
   name: Acidithiobacillus ferrooxidans Heap-1 rus-operon Fe(II) oxidation and pH/FeSO4-dependent metal solubilization from M-921 Turbella black shale
-  description: 'Causal pathway linking representative Acidithiobacillus ferrooxidans rus-operon proteins (Cyc2 AFE_3153/DN052_11975, Swiss-Prot rusticyanin AFE_3146, and Cyc1 AFE_3152 in reference proteomes UP000001362 and UP000248886) for Pakistani hard-coal isolate A. ferrooxidans Heap-1 (5 cm3 inoculum in 100 cm3 of 0.5 N H2SO4 medium with 1% w/v [<=200 mesh] M-921 Turbella yellow-trap black shale in 250-mL flasks at 30 +/- 1 C and 100 rpm for 20 days across initial pH 1.5, 2.0, and 2.5 with and without 160 mM FeSO4, paired against 2% thymol-in-methanol sterilized controls) to Table 3 day-20 dissolved metal outcomes (with 160 mM FeSO4: Mn 25.3 vs 19.5 mg/dm3 at pH 2.0 and 26.8 vs 24.0 mg/dm3 at pH 1.5, reversing to 15.8 vs 17.85 mg/dm3 at pH 2.5; Cu 1.75 mg/dm3 in every iron-supplemented culture and control with no microbial Cu advantage; Co 0.00 mg/dm3 in all iron-supplemented rows; without added FeSO4: Fe 103.00 vs 74.25 mg/dm3 at pH 1.5, 65.00 vs 65.50 mg/dm3 at pH 2.0, and 45.35 vs
-    53.30 mg/dm3 at pH 2.5, while unsupplemented non-iron cells are marked ND and p. 5262 states that only iron was analyzed in that medium) in Anjum et al. (2009).'
+  description: 'Causal pathway linking representative Acidithiobacillus ferrooxidans rus-operon proteins (Cyc2 AFE_3153/DN052_11975, Swiss-Prot rusticyanin AFE_3146 and DSM 16523 rusticyanin DN052_11940, and Cyc1 AFE_3152 in reference proteomes UP000001362 and UP000248886) for Pakistani hard-coal isolate A. ferrooxidans Heap-1 (5 cm3 inoculum in 100 cm3 of 0.5 N H2SO4 medium with 1% w/v [<=200 mesh] M-921 Turbella yellow-trap black shale in 250-mL flasks at 30 +/- 1 C and 100 rpm for 20 days across initial pH 1.5, 2.0, and 2.5 with and without 160 mM FeSO4, paired against 2% thymol-in-methanol sterilized controls) to Table 3 day-20 dissolved metal outcomes (with 160 mM FeSO4: Mn 25.3 vs 19.5 mg/dm3 at pH 2.0 and 26.8 vs 24.0 mg/dm3 at pH 1.5, reversing to 15.8 vs 17.85 mg/dm3 at pH 2.5; Cu 1.75 mg/dm3 in every iron-supplemented culture and control with no microbial Cu advantage; Co 0.00 mg/dm3 in all iron-supplemented rows; without added FeSO4: Fe 103.00 vs 74.25 mg/dm3 at pH 1.5, 65.00
+    vs 65.50 mg/dm3 at pH 2.0, and 45.35 vs 53.30 mg/dm3 at pH 2.5, while unsupplemented non-iron cells are marked ND and p. 5262 states that only iron was analyzed in that medium) in Anjum et al. (2009).'
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: heap1_acid_leaching_comparison
   nodes:
@@ -203,10 +234,10 @@ causal_graphs:
         supports: partial
         explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein supporting aerobic oxidation of 160 mM FeSO4 substrate and indigenous shale iron by Pakistani hard-coal isolate A. ferrooxidans Heap-1 during 20-day shake-flask bioleaching (1% w/v M-921 Turbella black shale, <=200 mesh, 30 C, 100 rpm, initial pH 1.5, 2.0, and 2.5) in Anjum et al. (2009); strain Heap-1 lacks a public genome or 16S rRNA accession, individual rus-operon proteins were not directly assayed, and Table 3 day-20 dissolved concentrations show condition-dependent increments over thymol-sterilized controls (Mn 25.3 vs 19.5 mg/dm3 at pH 2.0 +Fe and 26.8 vs 24.0 mg/dm3 at pH 1.5 +Fe but 15.8 vs 17.85 mg/dm3 at pH 2.5 +Fe; Fe 103.00 vs 74.25 mg/dm3 at pH 1.5 without added Fe; Cu identical at 1.75 mg/dm3 in all iron-supplemented cultures and controls).
   - id: aferro_rus_cyc1_periplasmic_relay
-    label: Periplasmic rusticyanin and diheme cytochrome c4 relay (rus AFE_3146; cyc1 AFE_3152)
+    label: Periplasmic rusticyanin and diheme cytochrome c4 relay (rus AFE_3146 / DN052_11940; cyc1 AFE_3152)
     node_type: GENE_OR_PROTEIN
     gene_symbol: rus
-    description: Reviewed Swiss-Prot periplasmic rusticyanin (AFE_3146, RUS_ACIF2) and Cyc1 (AFE_3152) in Acidithiobacillus ferrooxidans coupling oxidation of supplemented 160 mM FeSO4 and endogenous shale Fe(II) (41,115.6 ppm total Fe in Table 2) to O2 reduction at 30 C and 100 rpm.
+    description: Reviewed Swiss-Prot periplasmic rusticyanin (AFE_3146, RUS_ACIF2 in UP000001362; DN052_11940 in DSM 16523 UP000248886) and Cyc1 (AFE_3152) in Acidithiobacillus ferrooxidans coupling oxidation of supplemented 160 mM FeSO4 and endogenous shale Fe(II) (41,115.6 ppm total Fe in Table 2) to O2 reduction at 30 C and 100 rpm.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:B7JAQ0
@@ -238,6 +269,37 @@ causal_graphs:
         label: electron transfer activity
       functional_role: Reviewed Swiss-Prot periplasmic blue-copper protein rusticyanin (rus, locus AFE_3146; RUS_ACIF2) shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) during aerobic Fe(II) oxidation.
       annotation_note: Reviewed Swiss-Prot entry (RUS_ACIF2) in type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270; NCBITaxon:243159). Represents indigenous Pakistani hard-coal isolate Acidithiobacillus ferrooxidans Heap-1 (NBC, NIBGE, Faisalabad) tested with and without 160 mM FeSO4 on M-921 Turbella black shale in Anjum et al. (2009).
+      evidence:
+      - source_ref: anjum_2009
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein supporting aerobic oxidation of 160 mM FeSO4 substrate and indigenous shale iron by Pakistani hard-coal isolate A. ferrooxidans Heap-1 during 20-day shake-flask bioleaching (1% w/v M-921 Turbella black shale, <=200 mesh, 30 C, 100 rpm, initial pH 1.5, 2.0, and 2.5) in Anjum et al. (2009); strain Heap-1 lacks a public genome or 16S rRNA accession, individual rus-operon proteins were not directly assayed, and Table 3 day-20 dissolved concentrations show condition-dependent increments over thymol-sterilized controls (Mn 25.3 vs 19.5 mg/dm3 at pH 2.0 +Fe and 26.8 vs 24.0 mg/dm3 at pH 1.5 +Fe but 15.8 vs 17.85 mg/dm3 at pH 2.5 +Fe; Fe 103.00 vs 74.25 mg/dm3 at pH 1.5 without added Fe; Cu identical at 1.75 mg/dm3 in all iron-supplemented cultures and controls).
+    - uniprot_accession: UniProtKB:A0A2W1KP86
+      entry_name: A0A2W1KP86_ACIFR
+      protein_name: Rusticyanin
+      gene_symbol: DN052_11940
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+      reference_proteome_id: UP000248886
+      interpro_ids:
+      - InterPro:IPR000923
+      - InterPro:IPR028871
+      - InterPro:IPR050845
+      - InterPro:IPR033138
+      - InterPro:IPR008972
+      - InterPro:IPR001243
+      pfam_ids:
+      - Pfam:PF00127
+      ncbifam_ids:
+      - NCBIfam:TIGR03095
+      go_terms:
+      - id: GO:0005507
+        label: copper ion binding
+      - id: GO:0009055
+        label: electron transfer activity
+      functional_role: Periplasmic type-I blue-copper protein rusticyanin ortholog (ORF DN052_11940; 187 aa, RefSeq WP_012537622.1; PF00127, TIGR03095, GO:0005507 copper ion binding, GO:0009055 electron transfer activity) in the rus operon (DN052_11935-DN052_11975) of Acidithiobacillus ferrooxidans DSM 16523 (UP000248886; NCBITaxon:920), shuttling electrons from outer-membrane Cyc2 (DN052_11975) to periplasmic cytochrome c4 Cyc1 during aerobic Fe(II) oxidation.
+      annotation_note: Grounded to the orthologous 187-aa rus-operon rusticyanin entry (ORF DN052_11940; RefSeq WP_012537622.1) in the species-level Acidithiobacillus ferrooxidans DSM 16523 reference proteome UP000248886 (NCBITaxon:920), providing direct species-taxon parity with mechanism organism NCBITaxon:920 alongside reviewed Swiss-Prot type-strain entry B7JAQ0 (RUS_ACIF2, AFE_3146, UP000001362). Represents indigenous Pakistani hard-coal isolate Acidithiobacillus ferrooxidans Heap-1 (NBC, NIBGE, Faisalabad) tested with and without 160 mM FeSO4 on M-921 Turbella black shale in Anjum et al. (2009).
       evidence:
       - source_ref: anjum_2009
         supports: partial
@@ -288,7 +350,7 @@ causal_graphs:
     target: aferro_rus_cyc1_periplasmic_relay
     predicate: provides_electrons_to
     relationship: extracellular Fe(II) oxidation coupled to periplasmic rusticyanin/Cyc1 electron relay
-    description: Cyc2 (AFE_3153 / DN052_11975) oxidizes soluble Fe(II) and transfers electrons to periplasmic rusticyanin (AFE_3146) and Cyc1 (AFE_3152) in Acidithiobacillus ferrooxidans.
+    description: Cyc2 (AFE_3153 / DN052_11975) oxidizes soluble Fe(II) and transfers electrons to periplasmic rusticyanin (AFE_3146 / DN052_11940) and Cyc1 (AFE_3152) in Acidithiobacillus ferrooxidans.
     evidence:
     - source_ref: anjum_2009
       supports: partial
@@ -327,7 +389,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: 'Align metalliferous-black-shale.yaml protein_examples and causal_graphs with Table 3 in Anjum et al. (2009): Cu is 1.75 mg/dm3 across all iron-supplemented cultures and controls (no microbial Cu increment), Mn is higher at pH 2.0/1.5 +Fe (25.3 vs 19.5; 26.8 vs 24.0 mg/dm3) but lower at pH 2.5 +Fe (15.8 vs 17.85 mg/dm3), Fe is 103.00 vs 74.25 mg/dm3 at pH 1.5 -Fe, and unsupplemented non-iron cells are marked ND (p. 5262) (Issue #947).'
+- timestamp: '2026-11-06T07:39:42Z'
+  curator: marcin
+  action: edit
+  summary: Add live-verified species-level Acidithiobacillus ferrooxidans DSM 16523 reference-proteome rusticyanin ortholog (UniProtKB:A0A2W1KP86, DN052_11940, UP000248886, NCBITaxon:920) to metalliferous-black-shale.yaml (heap1_acid_leaching_comparison).
 history_refs:
 - history/records/metalliferous-black-shale/2026-10-11T170016Z-codex-9fdc2e.yaml
 - history/records/metalliferous-black-shale/2026-11-06T045848Z-marcin-25fe3d.yaml
 - history/records/metalliferous-black-shale/2026-11-06T062554Z-marcin-f8674b.yaml
+- history/records/metalliferous-black-shale/2026-11-06T073942Z-marcin-463b41.yaml

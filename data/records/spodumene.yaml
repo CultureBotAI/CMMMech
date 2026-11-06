@@ -94,6 +94,37 @@ mechanisms:
     - source_ref: kirk2024
       supports: partial
       explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein for the Bor Cu-Pb-Zn sulfide-ore isolate maintained on ferrous sulfate and inoculated (10 mL into 190 mL sterile basal nutrient solution with 2 g ~0.5 um Bikita, Zimbabwe spodumene-bearing powder [containing alpha-spodumene and quartz by qualitative XRD] at stable pH 1.8 and static 23 C for 30 days) in Kirk et al. (2024); despite higher solution Fe in the inoculated flasks from stock-culture carryover, dissolved lithium curves were low and similar in inoculated and uninoculated spodumene flasks, and post-leach spodumene residues were not examined by XRD (Section 2.5).
+  - uniprot_accession: UniProtKB:A0A2W1KP86
+    entry_name: A0A2W1KP86_ACIFR
+    protein_name: Rusticyanin
+    gene_symbol: DN052_11940
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:920
+      label: Acidithiobacillus ferrooxidans
+    reference_proteome_id: UP000248886
+    interpro_ids:
+    - InterPro:IPR000923
+    - InterPro:IPR028871
+    - InterPro:IPR050845
+    - InterPro:IPR033138
+    - InterPro:IPR008972
+    - InterPro:IPR001243
+    pfam_ids:
+    - Pfam:PF00127
+    ncbifam_ids:
+    - NCBIfam:TIGR03095
+    go_terms:
+    - id: GO:0005507
+      label: copper ion binding
+    - id: GO:0009055
+      label: electron transfer activity
+    functional_role: Periplasmic type-I blue-copper protein rusticyanin ortholog (ORF DN052_11940; 187 aa, RefSeq WP_012537622.1; PF00127, TIGR03095, GO:0005507 copper ion binding, GO:0009055 electron transfer activity) in the rus operon (DN052_11935-DN052_11975) of Acidithiobacillus ferrooxidans DSM 16523 (UP000248886; NCBITaxon:920), shuttling electrons from outer-membrane Cyc2 (DN052_11975) to periplasmic cytochrome c4 Cyc1 during aerobic Fe(II) oxidation.
+    annotation_note: Grounded to the orthologous 187-aa rus-operon rusticyanin entry (ORF DN052_11940; RefSeq WP_012537622.1) in the species-level Acidithiobacillus ferrooxidans DSM 16523 reference proteome UP000248886 (NCBITaxon:920), providing direct species-taxon parity with mechanism organism NCBITaxon:920 alongside reviewed Swiss-Prot type-strain entry B7JAQ0 (RUS_ACIF2, AFE_3146, UP000001362). Represents the unsequenced Bor sulfide-ore Acidithiobacillus ferrooxidans isolate inoculated into Bikita, Zimbabwe alpha-spodumene leaching flasks at pH 1.8 in Kirk et al. (2024).
+    evidence:
+    - source_ref: kirk2024
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein for the Bor Cu-Pb-Zn sulfide-ore isolate maintained on ferrous sulfate and inoculated (10 mL into 190 mL sterile basal nutrient solution with 2 g ~0.5 um Bikita, Zimbabwe spodumene-bearing powder [containing alpha-spodumene and quartz by qualitative XRD] at stable pH 1.8 and static 23 C for 30 days) in Kirk et al. (2024); despite higher solution Fe in the inoculated flasks from stock-culture carryover, dissolved lithium curves were low and similar in inoculated and uninoculated spodumene flasks, and post-leach spodumene residues were not examined by XRD (Section 2.5).
   - uniprot_accession: UniProtKB:B7JAQ6
     entry_name: B7JAQ6_ACIF2
     protein_name: Cytochrome c552
@@ -135,8 +166,8 @@ mechanisms:
 causal_graphs:
 - id: acidophile_spodumene_leaching_limit_graph
   name: Acidithiobacillus ferrooxidans inoculation and refractory low-extraction boundary of Bikita alpha-spodumene at pH 1.8
-  description: 'Causal pathway linking representative Acidithiobacillus ferrooxidans rus-operon proteins (Cyc2 AFE_3153/DN052_11975, Swiss-Prot rusticyanin AFE_3146, and Cyc1 AFE_3152 in reference proteomes UP000001362 and UP000248886) for the ferrous-sulfate-grown Bor sulfide-ore isolate (10 mL inoculum in 190 mL sterile basal nutrient solution with 2 g ball-milled ~0.5 um Bikita, Zimbabwe spodumene-bearing powder [containing alpha-spodumene and quartz by qualitative XRD; labeled 2% w/v though 2 g in 200 mL total liquid implies 1% w/v, so no normalized recovery percentage is calculated] in triplicate 250 mL flasks at static 23 C and stable pH 1.8 for 30 days without supplemental H2SO4 additions) to the refractory low-extraction boundary in Kirk et al. (2024): inoculated flasks contained higher dissolved Fe from ferrous-sulfate stock-culture carryover (Figure 5), but dissolved lithium curves remained low and similar in inoculated and uninoculated spodumene flasks (Figure 4, kirk2024_data_v1),
-    and Section 2.5 explicitly notes that post-leach spodumene residues were not examined by XRD.'
+  description: 'Causal pathway linking representative Acidithiobacillus ferrooxidans rus-operon proteins (Cyc2 AFE_3153/DN052_11975, Swiss-Prot rusticyanin AFE_3146 and DSM 16523 rusticyanin DN052_11940, and Cyc1 AFE_3152 in reference proteomes UP000001362 and UP000248886) for the ferrous-sulfate-grown Bor sulfide-ore isolate (10 mL inoculum in 190 mL sterile basal nutrient solution with 2 g ball-milled ~0.5 um Bikita, Zimbabwe spodumene-bearing powder [containing alpha-spodumene and quartz by qualitative XRD; labeled 2% w/v though 2 g in 200 mL total liquid implies 1% w/v, so no normalized recovery percentage is calculated] in triplicate 250 mL flasks at static 23 C and stable pH 1.8 for 30 days without supplemental H2SO4 additions) to the refractory low-extraction boundary in Kirk et al. (2024): inoculated flasks contained higher dissolved Fe from ferrous-sulfate stock-culture carryover (Figure 5), but dissolved lithium curves remained low and similar in inoculated and uninoculated spodumene
+    flasks (Figure 4, kirk2024_data_v1), and Section 2.5 explicitly notes that post-leach spodumene residues were not examined by XRD.'
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: acidophile-spodumene-leaching-limit
   nodes:
@@ -178,10 +209,10 @@ causal_graphs:
         supports: partial
         explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein for the Bor Cu-Pb-Zn sulfide-ore isolate maintained on ferrous sulfate and inoculated (10 mL into 190 mL sterile basal nutrient solution with 2 g ~0.5 um Bikita, Zimbabwe spodumene-bearing powder [containing alpha-spodumene and quartz by qualitative XRD] at stable pH 1.8 and static 23 C for 30 days) in Kirk et al. (2024); despite higher solution Fe in the inoculated flasks from stock-culture carryover, dissolved lithium curves were low and similar in inoculated and uninoculated spodumene flasks, and post-leach spodumene residues were not examined by XRD (Section 2.5).
   - id: aferro_rus_cyc1_periplasmic_relay
-    label: Periplasmic rusticyanin and diheme cytochrome c4 relay (rus AFE_3146; cyc1 AFE_3152)
+    label: Periplasmic rusticyanin and diheme cytochrome c4 relay (rus AFE_3146 / DN052_11940; cyc1 AFE_3152)
     node_type: GENE_OR_PROTEIN
     gene_symbol: rus
-    description: Reviewed Swiss-Prot periplasmic rusticyanin (AFE_3146, RUS_ACIF2) and Cyc1 (AFE_3152) in Acidithiobacillus ferrooxidans; higher dissolved Fe in the inoculated spodumene flasks (Figure 5) reflects carryover from the ferrous-sulfate maintenance culture.
+    description: Reviewed Swiss-Prot periplasmic rusticyanin (AFE_3146, RUS_ACIF2 in UP000001362; DN052_11940 in DSM 16523 UP000248886) and Cyc1 (AFE_3152) in Acidithiobacillus ferrooxidans; higher dissolved Fe in the inoculated spodumene flasks (Figure 5) reflects carryover from the ferrous-sulfate maintenance culture.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:B7JAQ0
@@ -213,6 +244,37 @@ causal_graphs:
         label: electron transfer activity
       functional_role: Reviewed Swiss-Prot periplasmic blue-copper protein rusticyanin (rus, locus AFE_3146; RUS_ACIF2) shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) during aerobic Fe(II) oxidation.
       annotation_note: Reviewed Swiss-Prot entry (RUS_ACIF2) in type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270; NCBITaxon:243159). Represents the unsequenced Bor sulfide-ore Acidithiobacillus ferrooxidans isolate inoculated into Bikita, Zimbabwe alpha-spodumene leaching flasks at pH 1.8 in Kirk et al. (2024).
+      evidence:
+      - source_ref: kirk2024
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein for the Bor Cu-Pb-Zn sulfide-ore isolate maintained on ferrous sulfate and inoculated (10 mL into 190 mL sterile basal nutrient solution with 2 g ~0.5 um Bikita, Zimbabwe spodumene-bearing powder [containing alpha-spodumene and quartz by qualitative XRD] at stable pH 1.8 and static 23 C for 30 days) in Kirk et al. (2024); despite higher solution Fe in the inoculated flasks from stock-culture carryover, dissolved lithium curves were low and similar in inoculated and uninoculated spodumene flasks, and post-leach spodumene residues were not examined by XRD (Section 2.5).
+    - uniprot_accession: UniProtKB:A0A2W1KP86
+      entry_name: A0A2W1KP86_ACIFR
+      protein_name: Rusticyanin
+      gene_symbol: DN052_11940
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+      reference_proteome_id: UP000248886
+      interpro_ids:
+      - InterPro:IPR000923
+      - InterPro:IPR028871
+      - InterPro:IPR050845
+      - InterPro:IPR033138
+      - InterPro:IPR008972
+      - InterPro:IPR001243
+      pfam_ids:
+      - Pfam:PF00127
+      ncbifam_ids:
+      - NCBIfam:TIGR03095
+      go_terms:
+      - id: GO:0005507
+        label: copper ion binding
+      - id: GO:0009055
+        label: electron transfer activity
+      functional_role: Periplasmic type-I blue-copper protein rusticyanin ortholog (ORF DN052_11940; 187 aa, RefSeq WP_012537622.1; PF00127, TIGR03095, GO:0005507 copper ion binding, GO:0009055 electron transfer activity) in the rus operon (DN052_11935-DN052_11975) of Acidithiobacillus ferrooxidans DSM 16523 (UP000248886; NCBITaxon:920), shuttling electrons from outer-membrane Cyc2 (DN052_11975) to periplasmic cytochrome c4 Cyc1 during aerobic Fe(II) oxidation.
+      annotation_note: Grounded to the orthologous 187-aa rus-operon rusticyanin entry (ORF DN052_11940; RefSeq WP_012537622.1) in the species-level Acidithiobacillus ferrooxidans DSM 16523 reference proteome UP000248886 (NCBITaxon:920), providing direct species-taxon parity with mechanism organism NCBITaxon:920 alongside reviewed Swiss-Prot type-strain entry B7JAQ0 (RUS_ACIF2, AFE_3146, UP000001362). Represents the unsequenced Bor sulfide-ore Acidithiobacillus ferrooxidans isolate inoculated into Bikita, Zimbabwe alpha-spodumene leaching flasks at pH 1.8 in Kirk et al. (2024).
       evidence:
       - source_ref: kirk2024
         supports: partial
@@ -263,7 +325,7 @@ causal_graphs:
     target: aferro_rus_cyc1_periplasmic_relay
     predicate: provides_electrons_to
     relationship: outer-membrane Cyc2 to periplasmic rusticyanin/Cyc1 electron relay in ferrous-sulfate-grown A. ferrooxidans inoculum
-    description: Cyc2 (AFE_3153 / DN052_11975) transfers electrons from ferrous iron to periplasmic rusticyanin (AFE_3146) and Cyc1 (AFE_3152) in the ferrous-sulfate-grown Bor A. ferrooxidans stock culture.
+    description: Cyc2 (AFE_3153 / DN052_11975) transfers electrons from ferrous iron to periplasmic rusticyanin (AFE_3146 / DN052_11940) and Cyc1 (AFE_3152) in the ferrous-sulfate-grown Bor A. ferrooxidans stock culture.
     evidence:
     - source_ref: kirk2024
       supports: partial
@@ -305,7 +367,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: 'Align spodumene.yaml protein_examples and causal_graphs strictly with curated acidophile-spodumene-leaching-limit evidence (qualitative Bikita alpha-spodumene/quartz XRD, 2 g in 190 mL medium + 10 mL inoculum pulp-density ambiguity, similar inoculated and uninoculated dissolved-Li trajectories with supports: refute, and Section 2.5 absence of post-leach spodumene XRD) (Issue #947).'
+- timestamp: '2026-11-06T07:39:42Z'
+  curator: marcin
+  action: edit
+  summary: Add live-verified species-level Acidithiobacillus ferrooxidans DSM 16523 reference-proteome rusticyanin ortholog (UniProtKB:A0A2W1KP86, DN052_11940, UP000248886, NCBITaxon:920) to spodumene.yaml (acidophile-spodumene-leaching-limit).
 history_refs:
 - history/records/spodumene/2026-10-11T090210Z-codex-51f93e.yaml
 - history/records/spodumene/2026-11-06T045848Z-marcin-b14df6.yaml
 - history/records/spodumene/2026-11-06T062554Z-marcin-843a6d.yaml
+- history/records/spodumene/2026-11-06T073942Z-marcin-b8aef0.yaml

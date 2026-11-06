@@ -39,6 +39,15 @@ mechanisms:
     - source_ref: ertan2026
       supports: partial
       explanation: Reviewed Swiss-Prot Aspergillus niger plasma-membrane MFS citrate exporter CexA (cexA) representing proposed organic-acid secretion during 31-day shake-flask bioleaching of <38 um Espey boron concentrator waste (colemanite, muscovite, quartz, and dolomite by XRD in Figure 1; 1 g waste [1% w/v] and 2.5 mL spore suspension [unspecified spore concentration] in 100 mL medium [100 g/L sucrose preculture] in 250 mL flasks at 30 C and 125 rpm, reporting day-31 extraction of ~79% Li, 37% Rb, and 30% Cs in Figure 2 / p. 4) by an unsequenced A. niger culture supplied by the Department of Molecular Biology and Genetics at Erzurum Technical University in Ertan (2026); organic-acid concentrations, solution speciation, and CexA expression were not measured, and no uninoculated or matched organic-acid leaching control series was included.
+    go_terms:
+    - id: GO:0005886
+      label: plasma membrane
+    - id: GO:0015137
+      label: citrate transmembrane transporter activity
+    - id: GO:0015746
+      label: citrate transport
+    - id: GO:0140115
+      label: export across plasma membrane
   - uniprot_accession: UniProtKB:G3Y4N5
     entry_name: CEXA_ASPNA
     protein_name: Citrate exporter A
@@ -47,6 +56,35 @@ mechanisms:
     target_organism:
       id: NCBITaxon:380704
       label: Aspergillus niger ATCC 1015
+    interpro_ids:
+    - InterPro:IPR011701
+    - InterPro:IPR020846
+    - InterPro:IPR036259
+    pfam_ids:
+    - Pfam:PF07690
+    functional_role: Reviewed Swiss-Prot plasma-membrane MFS citrate exporter CexA (cexA, ORF ASPNIDRAFT2_1165828 / ASPNIDRAFT_57285; CEXA_ASPNA; GO:0005886, GO:0015137, GO:0015746, GO:0140115) in the citric-acid-producing strain Aspergillus niger ATCC 1015 (NCBITaxon:380704).
+    annotation_note: Reviewed Swiss-Prot strain-resolved entry (CEXA_ASPNA, ORF ASPNIDRAFT2_1165828 / ASPNIDRAFT_57285; NCBITaxon:380704 Aspergillus niger ATCC 1015) paired with species-level UniProtKB:A0A254TZW7 (NCBITaxon:5061) and CBS 513.88 reference-proteome entry UniProtKB:A2R9K1 (UP000006706; NCBITaxon:425011) for Aspergillus niger organic-acid export. Represents the unsequenced Aspergillus niger culture (supplied by the Department of Molecular Biology and Genetics, Erzurum Technical University, pre-cultured 7 days on 100 g/L sucrose medium and incubated as 2.5 mL spore suspension with 1 g of <38 um Espey boron concentrator waste in 100 mL medium at 30 C and 125 rpm for 31 days) in Ertan (2026).
+    evidence:
+    - source_ref: ertan2026
+      supports: partial
+      explanation: Reviewed Swiss-Prot Aspergillus niger plasma-membrane MFS citrate exporter CexA (cexA) representing proposed organic-acid secretion during 31-day shake-flask bioleaching of <38 um Espey boron concentrator waste (colemanite, muscovite, quartz, and dolomite by XRD in Figure 1; 1 g waste [1% w/v] and 2.5 mL spore suspension [unspecified spore concentration] in 100 mL medium [100 g/L sucrose preculture] in 250 mL flasks at 30 C and 125 rpm, reporting day-31 extraction of ~79% Li, 37% Rb, and 30% Cs in Figure 2 / p. 4) by an unsequenced A. niger culture supplied by the Department of Molecular Biology and Genetics at Erzurum Technical University in Ertan (2026); organic-acid concentrations, solution speciation, and CexA expression were not measured, and no uninoculated or matched organic-acid leaching control series was included.
+    go_terms:
+    - id: GO:0005886
+      label: plasma membrane
+    - id: GO:0015137
+      label: citrate transmembrane transporter activity
+    - id: GO:0015746
+      label: citrate transport
+    - id: GO:0140115
+      label: export across plasma membrane
+  - uniprot_accession: UniProtKB:A2R9K1
+    entry_name: A2R9K1_ASPNC
+    protein_name: Citrate exporter A
+    gene_symbol: An17g01710
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:425011
+      label: Aspergillus niger CBS 513.88
     reference_proteome_id: UP000006706
     interpro_ids:
     - InterPro:IPR011701
@@ -54,12 +92,19 @@ mechanisms:
     - InterPro:IPR036259
     pfam_ids:
     - Pfam:PF07690
-    functional_role: Reviewed Swiss-Prot plasma-membrane MFS citrate exporter CexA (cexA, locus ASPNIDRAFT_44471; CEXA_ASPNA) in the citric-acid-producing reference strain Aspergillus niger ATCC 1015 (UP000006706).
-    annotation_note: Reviewed Swiss-Prot reference-proteome entry (CEXA_ASPNA; UP000006706; NCBITaxon:380704) paired with species-level UniProtKB:A0A254TZW7 (NCBITaxon:5061) as a strain-resolved reference proteome example for Aspergillus niger organic-acid export. Represents the unsequenced Aspergillus niger culture (supplied by the Department of Molecular Biology and Genetics, Erzurum Technical University, pre-cultured 7 days on 100 g/L sucrose medium and incubated as 2.5 mL spore suspension with 1 g of <38 um Espey boron concentrator waste in 100 mL medium at 30 C and 125 rpm for 31 days) in Ertan (2026).
+    go_terms:
+    - id: GO:0005886
+      label: plasma membrane
+    - id: GO:0015137
+      label: citrate transmembrane transporter activity
+    - id: GO:0140115
+      label: export across plasma membrane
+    functional_role: Plasma-membrane MFS citrate exporter CexA ortholog (ORF An17g01710; A2R9K1_ASPNC; PF07690, GO:0005886 plasma membrane, GO:0015137 citrate transmembrane transporter activity, GO:0140115 export across plasma membrane) in the Aspergillus niger CBS 513.88 reference proteome (UP000006706; NCBITaxon:425011).
+    annotation_note: Grounded to the reference-proteome Citrate exporter A ortholog (ORF An17g01710; A2R9K1_ASPNC) in Aspergillus niger CBS 513.88 (UP000006706; NCBITaxon:425011), complementing reviewed Swiss-Prot entries UniProtKB:A0A254TZW7 (CEXA_ASPNG; NCBITaxon:5061) and UniProtKB:G3Y4N5 (CEXA_ASPNA; NCBITaxon:380704). Represents the unsequenced Aspergillus niger culture (supplied by the Department of Molecular Biology and Genetics, Erzurum Technical University, pre-cultured 7 days on 100 g/L sucrose medium and incubated as 2.5 mL spore suspension with 1 g of <38 um Espey boron concentrator waste in 100 mL medium at 30 C and 125 rpm for 31 days) in Ertan (2026).
     evidence:
     - source_ref: ertan2026
       supports: partial
-      explanation: Reviewed Swiss-Prot Aspergillus niger plasma-membrane MFS citrate exporter CexA (cexA) representing proposed organic-acid secretion during 31-day shake-flask bioleaching of <38 um Espey boron concentrator waste (colemanite, muscovite, quartz, and dolomite by XRD in Figure 1; 1 g waste [1% w/v] and 2.5 mL spore suspension [unspecified spore concentration] in 100 mL medium [100 g/L sucrose preculture] in 250 mL flasks at 30 C and 125 rpm, reporting day-31 extraction of ~79% Li, 37% Rb, and 30% Cs in Figure 2 / p. 4) by an unsequenced A. niger culture supplied by the Department of Molecular Biology and Genetics at Erzurum Technical University in Ertan (2026); organic-acid concentrations, solution speciation, and CexA expression were not measured, and no uninoculated or matched organic-acid leaching control series was included.
+      explanation: Reference-proteome Aspergillus niger CBS 513.88 (NCBITaxon:425011; UP000006706) plasma-membrane MFS citrate exporter CexA ortholog (An17g01710; A2R9K1_ASPNC) representing proposed organic-acid secretion during 31-day shake-flask bioleaching of <38 um Espey boron concentrator waste (colemanite, muscovite, quartz, and dolomite by XRD in Figure 1; 1 g waste [1% w/v] and 2.5 mL spore suspension [unspecified spore concentration] in 100 mL medium [100 g/L sucrose preculture] in 250 mL flasks at 30 C and 125 rpm, reporting day-31 extraction of ~79% Li, 37% Rb, and 30% Cs in Figure 2 / p. 4) by an unsequenced A. niger culture supplied by the Department of Molecular Biology and Genetics at Erzurum Technical University in Ertan (2026); organic-acid concentrations, solution speciation, and CexA expression were not measured, and no uninoculated or matched organic-acid leaching control series was included.
   evidence:
   - source_ref: ertan2026
     supports: support
@@ -73,16 +118,16 @@ mechanisms:
 causal_graphs:
 - id: fungal_alkali_metal_mobilization_graph
   name: Aspergillus niger CexA-associated proposed organic-acid leaching and culture-associated Li, Rb, and Cs mobilization from Espey boron concentrator waste
-  description: 'Causal pathway linking reviewed Swiss-Prot Aspergillus niger plasma-membrane MFS citrate exporter CexA (UniProtKB:A0A254TZW7 in NCBITaxon:5061 and UniProtKB:G3Y4N5 in ATCC 1015 UP000006706) to proposed organic-acid dissolution and complexation during 31-day shake-flask bioleaching of <38 um pulverized minus-25-mm solid waste from the Espey concentrator (Eti Mine Boric Acid Operation, Emet, Kutahya, Turkey; containing colemanite, muscovite, quartz, and dolomite by XRD in Figure 1, with feed Li, Rb, and Cs in Table 1) by an A. niger culture from Erzurum Technical University (7-day preculture on 100 g/L sucrose; 250 mL flasks with 100 mL medium, 2.5 mL spore suspension of unspecified concentration, and 1 g waste [1% w/v] autoclaved at 121 C for 15 min and incubated at 30 C and 125 rpm, sampled on days 4, 10, 13, 18, 24, and 31): reaching reported day-31 extraction of ~79% Li, 37% Rb, and 30% Cs (Figure 2, p. 4) in Ertan (2026) (*Journal of Anatolian Environmental and Animal
-    Sciences* 11:1-8), while preserving the absence of uninoculated or matched organic-acid controls, unmeasured metabolite concentrations, day-24 Li text (43.71%) vs Figure 2 (~35%) conflict, Ertan (2023) pH citation overlap, and Figure 3d Rb kinetic ordinate discrepancy.'
+  description: 'Causal pathway linking reviewed Swiss-Prot Aspergillus niger plasma-membrane MFS citrate exporter CexA (reviewed Swiss-Prot UniProtKB:A0A254TZW7 in NCBITaxon:5061 and UniProtKB:G3Y4N5 in ATCC 1015 NCBITaxon:380704, plus CBS 513.88 reference-proteome ortholog UniProtKB:A2R9K1 An17g01710 in UP000006706) to proposed organic-acid dissolution and complexation during 31-day shake-flask bioleaching of <38 um pulverized minus-25-mm solid waste from the Espey concentrator (Eti Mine Boric Acid Operation, Emet, Kutahya, Turkey; containing colemanite, muscovite, quartz, and dolomite by XRD in Figure 1, with feed Li, Rb, and Cs in Table 1) by an A. niger culture from Erzurum Technical University (7-day preculture on 100 g/L sucrose; 250 mL flasks with 100 mL medium, 2.5 mL spore suspension of unspecified concentration, and 1 g waste [1% w/v] autoclaved at 121 C for 15 min and incubated at 30 C and 125 rpm, sampled on days 4, 10, 13, 18, 24, and 31): reaching reported day-31 extraction
+    of ~79% Li, 37% Rb, and 30% Cs (Figure 2, p. 4) in Ertan (2026) (*Journal of Anatolian Environmental and Animal Sciences* 11:1-8), while preserving the absence of uninoculated or matched organic-acid controls, unmeasured metabolite concentrations, day-24 Li text (43.71%) vs Figure 2 (~35%) conflict, Ertan (2023) pH citation overlap, and Figure 3d Rb kinetic ordinate discrepancy.'
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: fungal_alkali_metal_mobilization
   nodes:
   - id: aniger_cexa_citrate_exporter
-    label: Reviewed Swiss-Prot Aspergillus niger plasma-membrane MFS citrate exporter CexA (cexA; CEXA_ASPNG / CEXA_ASPNA)
+    label: Aspergillus niger plasma-membrane MFS citrate exporter CexA (cexA; CEXA_ASPNG / CEXA_ASPNA / An17g01710)
     node_type: GENE_OR_PROTEIN
     gene_symbol: cexA
-    description: Reviewed Swiss-Prot plasma-membrane MFS citrate exporter CexA (UniProtKB:A0A254TZW7 in NCBITaxon:5061; UniProtKB:G3Y4N5 in ATCC 1015 UP000006706) representing proposed organic-acid export by the Erzurum Technical University A. niger culture grown on 100 g/L sucrose medium.
+    description: Reviewed Swiss-Prot major facilitator superfamily (MFS) citrate exporter CexA (UniProtKB:A0A254TZW7 in NCBITaxon:5061; UniProtKB:G3Y4N5 in ATCC 1015 NCBITaxon:380704) and CBS 513.88 reference-proteome ortholog An17g01710 (UniProtKB:A2R9K1 in UP000006706, NCBITaxon:425011) representing extracellular organic-acid secretion by the Erzurum Technical University A. niger culture pre-cultured on 100 g/L sucrose medium for 7 days before 31-day bioleaching.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A0A254TZW7
@@ -105,6 +150,15 @@ causal_graphs:
       - source_ref: ertan2026
         supports: partial
         explanation: Reviewed Swiss-Prot Aspergillus niger plasma-membrane MFS citrate exporter CexA (cexA) representing proposed organic-acid secretion during 31-day shake-flask bioleaching of <38 um Espey boron concentrator waste (colemanite, muscovite, quartz, and dolomite by XRD in Figure 1; 1 g waste [1% w/v] and 2.5 mL spore suspension [unspecified spore concentration] in 100 mL medium [100 g/L sucrose preculture] in 250 mL flasks at 30 C and 125 rpm, reporting day-31 extraction of ~79% Li, 37% Rb, and 30% Cs in Figure 2 / p. 4) by an unsequenced A. niger culture supplied by the Department of Molecular Biology and Genetics at Erzurum Technical University in Ertan (2026); organic-acid concentrations, solution speciation, and CexA expression were not measured, and no uninoculated or matched organic-acid leaching control series was included.
+      go_terms:
+      - id: GO:0005886
+        label: plasma membrane
+      - id: GO:0015137
+        label: citrate transmembrane transporter activity
+      - id: GO:0015746
+        label: citrate transport
+      - id: GO:0140115
+        label: export across plasma membrane
     - uniprot_accession: UniProtKB:G3Y4N5
       entry_name: CEXA_ASPNA
       protein_name: Citrate exporter A
@@ -113,6 +167,35 @@ causal_graphs:
       target_organism:
         id: NCBITaxon:380704
         label: Aspergillus niger ATCC 1015
+      interpro_ids:
+      - InterPro:IPR011701
+      - InterPro:IPR020846
+      - InterPro:IPR036259
+      pfam_ids:
+      - Pfam:PF07690
+      functional_role: Reviewed Swiss-Prot plasma-membrane MFS citrate exporter CexA (cexA, ORF ASPNIDRAFT2_1165828 / ASPNIDRAFT_57285; CEXA_ASPNA; GO:0005886, GO:0015137, GO:0015746, GO:0140115) in the citric-acid-producing strain Aspergillus niger ATCC 1015 (NCBITaxon:380704).
+      annotation_note: Reviewed Swiss-Prot strain-resolved entry (CEXA_ASPNA, ORF ASPNIDRAFT2_1165828 / ASPNIDRAFT_57285; NCBITaxon:380704 Aspergillus niger ATCC 1015) paired with species-level UniProtKB:A0A254TZW7 (NCBITaxon:5061) and CBS 513.88 reference-proteome entry UniProtKB:A2R9K1 (UP000006706; NCBITaxon:425011) for Aspergillus niger organic-acid export. Represents the unsequenced Aspergillus niger culture (supplied by the Department of Molecular Biology and Genetics, Erzurum Technical University, pre-cultured 7 days on 100 g/L sucrose medium and incubated as 2.5 mL spore suspension with 1 g of <38 um Espey boron concentrator waste in 100 mL medium at 30 C and 125 rpm for 31 days) in Ertan (2026).
+      evidence:
+      - source_ref: ertan2026
+        supports: partial
+        explanation: Reviewed Swiss-Prot Aspergillus niger plasma-membrane MFS citrate exporter CexA (cexA) representing proposed organic-acid secretion during 31-day shake-flask bioleaching of <38 um Espey boron concentrator waste (colemanite, muscovite, quartz, and dolomite by XRD in Figure 1; 1 g waste [1% w/v] and 2.5 mL spore suspension [unspecified spore concentration] in 100 mL medium [100 g/L sucrose preculture] in 250 mL flasks at 30 C and 125 rpm, reporting day-31 extraction of ~79% Li, 37% Rb, and 30% Cs in Figure 2 / p. 4) by an unsequenced A. niger culture supplied by the Department of Molecular Biology and Genetics at Erzurum Technical University in Ertan (2026); organic-acid concentrations, solution speciation, and CexA expression were not measured, and no uninoculated or matched organic-acid leaching control series was included.
+      go_terms:
+      - id: GO:0005886
+        label: plasma membrane
+      - id: GO:0015137
+        label: citrate transmembrane transporter activity
+      - id: GO:0015746
+        label: citrate transport
+      - id: GO:0140115
+        label: export across plasma membrane
+    - uniprot_accession: UniProtKB:A2R9K1
+      entry_name: A2R9K1_ASPNC
+      protein_name: Citrate exporter A
+      gene_symbol: An17g01710
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:425011
+        label: Aspergillus niger CBS 513.88
       reference_proteome_id: UP000006706
       interpro_ids:
       - InterPro:IPR011701
@@ -120,12 +203,19 @@ causal_graphs:
       - InterPro:IPR036259
       pfam_ids:
       - Pfam:PF07690
-      functional_role: Reviewed Swiss-Prot plasma-membrane MFS citrate exporter CexA (cexA, locus ASPNIDRAFT_44471; CEXA_ASPNA) in the citric-acid-producing reference strain Aspergillus niger ATCC 1015 (UP000006706).
-      annotation_note: Reviewed Swiss-Prot reference-proteome entry (CEXA_ASPNA; UP000006706; NCBITaxon:380704) paired with species-level UniProtKB:A0A254TZW7 (NCBITaxon:5061) as a strain-resolved reference proteome example for Aspergillus niger organic-acid export. Represents the unsequenced Aspergillus niger culture (supplied by the Department of Molecular Biology and Genetics, Erzurum Technical University, pre-cultured 7 days on 100 g/L sucrose medium and incubated as 2.5 mL spore suspension with 1 g of <38 um Espey boron concentrator waste in 100 mL medium at 30 C and 125 rpm for 31 days) in Ertan (2026).
+      go_terms:
+      - id: GO:0005886
+        label: plasma membrane
+      - id: GO:0015137
+        label: citrate transmembrane transporter activity
+      - id: GO:0140115
+        label: export across plasma membrane
+      functional_role: Plasma-membrane MFS citrate exporter CexA ortholog (ORF An17g01710; A2R9K1_ASPNC; PF07690, GO:0005886 plasma membrane, GO:0015137 citrate transmembrane transporter activity, GO:0140115 export across plasma membrane) in the Aspergillus niger CBS 513.88 reference proteome (UP000006706; NCBITaxon:425011).
+      annotation_note: Grounded to the reference-proteome Citrate exporter A ortholog (ORF An17g01710; A2R9K1_ASPNC) in Aspergillus niger CBS 513.88 (UP000006706; NCBITaxon:425011), complementing reviewed Swiss-Prot entries UniProtKB:A0A254TZW7 (CEXA_ASPNG; NCBITaxon:5061) and UniProtKB:G3Y4N5 (CEXA_ASPNA; NCBITaxon:380704). Represents the unsequenced Aspergillus niger culture (supplied by the Department of Molecular Biology and Genetics, Erzurum Technical University, pre-cultured 7 days on 100 g/L sucrose medium and incubated as 2.5 mL spore suspension with 1 g of <38 um Espey boron concentrator waste in 100 mL medium at 30 C and 125 rpm for 31 days) in Ertan (2026).
       evidence:
       - source_ref: ertan2026
         supports: partial
-        explanation: Reviewed Swiss-Prot Aspergillus niger plasma-membrane MFS citrate exporter CexA (cexA) representing proposed organic-acid secretion during 31-day shake-flask bioleaching of <38 um Espey boron concentrator waste (colemanite, muscovite, quartz, and dolomite by XRD in Figure 1; 1 g waste [1% w/v] and 2.5 mL spore suspension [unspecified spore concentration] in 100 mL medium [100 g/L sucrose preculture] in 250 mL flasks at 30 C and 125 rpm, reporting day-31 extraction of ~79% Li, 37% Rb, and 30% Cs in Figure 2 / p. 4) by an unsequenced A. niger culture supplied by the Department of Molecular Biology and Genetics at Erzurum Technical University in Ertan (2026); organic-acid concentrations, solution speciation, and CexA expression were not measured, and no uninoculated or matched organic-acid leaching control series was included.
+        explanation: Reference-proteome Aspergillus niger CBS 513.88 (NCBITaxon:425011; UP000006706) plasma-membrane MFS citrate exporter CexA ortholog (An17g01710; A2R9K1_ASPNC) representing proposed organic-acid secretion during 31-day shake-flask bioleaching of <38 um Espey boron concentrator waste (colemanite, muscovite, quartz, and dolomite by XRD in Figure 1; 1 g waste [1% w/v] and 2.5 mL spore suspension [unspecified spore concentration] in 100 mL medium [100 g/L sucrose preculture] in 250 mL flasks at 30 C and 125 rpm, reporting day-31 extraction of ~79% Li, 37% Rb, and 30% Cs in Figure 2 / p. 4) by an unsequenced A. niger culture supplied by the Department of Molecular Biology and Genetics at Erzurum Technical University in Ertan (2026); organic-acid concentrations, solution speciation, and CexA expression were not measured, and no uninoculated or matched organic-acid leaching control series was included.
   - id: sucrose_precultured_aniger_leach_suspension
     label: 30 C shake-flask suspension (100 mL medium + 2.5 mL A. niger spore suspension + 1 g of <38 um Espey boron waste in 250 mL flasks, 125 rpm, 31 d)
     node_type: CHEMICAL_ENTITY
@@ -171,7 +261,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: 'Align boron-ore-concentration-tailings.yaml protein_examples and causal_graphs with curated fungal_alkali_metal_mobilization parameters (Ertan 2026, JAES 11:1-8; Erzurum Technical University A. niger culture; <38 um Espey waste with colemanite, muscovite, quartz, dolomite; 100 mL medium + 2.5 mL spore suspension + 1 g waste at 30 C, 125 rpm, 31 d; ~79% Li, 37% Rb, 30% Cs at day 31; no abiotic control or organic-acid quantification) (Issue #947).'
+- timestamp: '2026-11-06T07:39:41Z'
+  curator: marcin
+  action: edit
+  summary: Add live-verified Aspergillus niger CBS 513.88 reference-proteome CexA citrate exporter (UniProtKB:A2R9K1, An17g01710, UP000006706) and UniProtKB GO annotations (GO:0005886, GO:0015137, GO:0015746, GO:0140115) while correcting G3Y4N5 (ATCC 1015, ASPNIDRAFT2_1165828 / ASPNIDRAFT_57285) proteome attribution in boron-ore-concentration-tailings.yaml.
 history_refs:
 - history/records/boron-ore-concentration-tailings/2026-10-11T121340Z-codex-116c97.yaml
 - history/records/boron-ore-concentration-tailings/2026-11-06T050552Z-marcin-fedadb.yaml
 - history/records/boron-ore-concentration-tailings/2026-11-06T062133Z-marcin-28124a.yaml
+- history/records/boron-ore-concentration-tailings/2026-11-06T073941Z-marcin-3d731b.yaml
