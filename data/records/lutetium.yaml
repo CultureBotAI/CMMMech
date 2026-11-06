@@ -151,6 +151,35 @@ mechanisms:
     - source_ref: breuker_2020
       supports: partial
       explanation: Reviewed Swiss-Prot Bacillus subtilis subsp. subtilis str. 168 (NCBITaxon:224308; UP000001570) lipoteichoic acid synthase (ltaS2, ltaS1, yqgS, yvgJ) synthesizing cell-wall poly(glycerol phosphate) lipoteichoic acid (LTA) chains in the Gram-positive cell envelope of Bacillus subtilis ATCC 7003 (grown in FP medium at 30 C and 120 rpm for 2-4 days, washed twice in acidified water, and incubated at room temperature and pH 2.5 [HCl] with 5 g dry biomass/L in an eight-REE chloride solution [La, Ce, Nd, Gd, Dy, Er, Yb, Lu, each initially 15 umol/L], achieving 74% relative lutetium biosorption at 2 and 4 hours in Table S1 experiment 2 and Figure 2a) in Breuker et al. (2020); Section 3.1 leaves the dominant acidic-pH binding chemistry unresolved and individual LtaS paralogs were not genetically mutated.
+  - uniprot_accession: UniProtKB:P13485
+    entry_name: TAGF_BACSU
+    protein_name: Teichoic acid poly(glycerol phosphate) polymerase
+    gene_symbol: tagF
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:224308
+      label: Bacillus subtilis subsp. subtilis str. 168
+    reference_proteome_id: UP000001570
+    ec_numbers:
+    - EC:2.7.8.12
+    interpro_ids:
+    - InterPro:IPR007554
+    - InterPro:IPR043148
+    - InterPro:IPR043149
+    - InterPro:IPR051612
+    pfam_ids:
+    - Pfam:PF04464
+    go_terms:
+    - id: GO:0005886
+      label: plasma membrane
+    - id: GO:0047355
+      label: CDP-glycerol glycerophosphotransferase activity
+    functional_role: Reviewed Swiss-Prot wall teichoic acid poly(glycerol phosphate) polymerase TagF (tagF, locus BSU35720; TAGF_BACSU; EC:2.7.8.12; GO:0005886, GO:0047355) polymerizing glycerol-phosphate units from CDP-glycerol during wall teichoic acid (WTA) biosynthesis in Bacillus subtilis.
+    annotation_note: Reviewed Swiss-Prot entry in reference proteome UP000001570 (Bacillus subtilis subsp. subtilis str. 168; NCBITaxon:224308) grounded as a strain-resolved representative for species-level mechanism organism Bacillus subtilis ATCC 7003 (NCBITaxon:1423; atcc_7003 / ncbi_bsubtilis), grown in FP medium at 30 C and 120 rpm for 2-4 days, washed twice in acidified water, and tested at 5 g dry biomass/L and pH 2.5 (HCl) in an eight-REE chloride mixture (La, Ce, Nd, Gd, Dy, Er, Yb, Lu at 15 umol/L each, reporting 74% relative lutetium biosorption at 2 and 4 hours in Table S1 experiment 2 and Figure 2a) in Breuker et al. (2020).
+    evidence:
+    - source_ref: breuker_2020
+      supports: partial
+      explanation: Reviewed Swiss-Prot Bacillus subtilis subsp. subtilis str. 168 (NCBITaxon:224308; UP000001570) wall teichoic acid poly(glycerol phosphate) polymerase TagF (tagF, BSU35720; EC:2.7.8.12; GO:0005886, GO:0047355) synthesizing peptidoglycan-attached poly(glycerol phosphate) wall teichoic acid (WTA) chains alongside LtaS lipoteichoic acid synthases in the Gram-positive cell envelope of Bacillus subtilis ATCC 7003 (grown in FP medium at 30 C and 120 rpm for 2-4 days, washed twice in acidified water, and incubated at room temperature and pH 2.5 [HCl] with 5 g dry biomass/L in an eight-REE chloride solution [La, Ce, Nd, Gd, Dy, Er, Yb, Lu, each initially 15 umol/L], achieving 74% relative lutetium biosorption at 2 and 4 hours in Table S1 experiment 2 and Figure 2a) in Breuker et al. (2020); Section 3.1 leaves the dominant acidic-pH binding chemistry unresolved and tagF was not genetically mutated.
   evidence:
   - source_ref: breuker_2020_supp
     supports: support
@@ -170,10 +199,10 @@ causal_graphs:
   mechanism_ref: bsubtilis_acidic_mixture_biosorption
   nodes:
   - id: bsubtilis_ltas_lipoteichoic_acid_synthases
-    label: Reviewed Swiss-Prot lipoteichoic acid synthases LtaS2 (EC:2.7.8.-), LtaS1 (EC:2.7.8.46), YqgS (EC:2.7.8.46), and YvgJ (EC:2.7.8.-) in Bacillus subtilis
+    label: Reviewed Swiss-Prot Bacillus subtilis str. 168 lipoteichoic acid synthases (ltaS2, ltaS1, yqgS, yvgJ) and wall teichoic acid polymerase TagF (tagF)
     node_type: GENE_OR_PROTEIN
     gene_symbol: ltaS2
-    description: Four reviewed Swiss-Prot poly(glycerol phosphate) lipoteichoic acid synthases (ltaS2 UniProtKB:O34952 [EC:2.7.8.-], ltaS1 UniProtKB:Q797B3 [EC:2.7.8.46], yqgS UniProtKB:P54496 [EC:2.7.8.46], and yvgJ UniProtKB:O32206 [EC:2.7.8.-]) in B. subtilis reference proteome UP000001570 representing cell-wall LTA biosynthesis in FP-medium-grown B. subtilis ATCC 7003.
+    description: Four reviewed Swiss-Prot lipoteichoic acid synthases — LtaS2 (BSU07260, UniProtKB:O34952, EC:2.7.8.-), LtaS1 (BSU15260, UniProtKB:Q797B3, EC:2.7.8.46), YqgS (BSU24850, UniProtKB:P54496, EC:2.7.8.46), and YvgJ (BSU33380, UniProtKB:O32206, EC:2.7.8.-) — and wall teichoic acid poly(glycerol phosphate) polymerase TagF (BSU35720, UniProtKB:P13485, EC:2.7.8.12) in reference proteome UP000001570 (Bacillus subtilis subsp. subtilis str. 168; NCBITaxon:224308), synthesizing cell-envelope poly(glycerol phosphate) lipoteichoic and wall teichoic acids in B. subtilis.
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:O34952
@@ -280,6 +309,35 @@ causal_graphs:
       - source_ref: breuker_2020
         supports: partial
         explanation: Reviewed Swiss-Prot Bacillus subtilis subsp. subtilis str. 168 (NCBITaxon:224308; UP000001570) lipoteichoic acid synthase (ltaS2, ltaS1, yqgS, yvgJ) synthesizing cell-wall poly(glycerol phosphate) lipoteichoic acid (LTA) chains in the Gram-positive cell envelope of Bacillus subtilis ATCC 7003 (grown in FP medium at 30 C and 120 rpm for 2-4 days, washed twice in acidified water, and incubated at room temperature and pH 2.5 [HCl] with 5 g dry biomass/L in an eight-REE chloride solution [La, Ce, Nd, Gd, Dy, Er, Yb, Lu, each initially 15 umol/L], achieving 74% relative lutetium biosorption at 2 and 4 hours in Table S1 experiment 2 and Figure 2a) in Breuker et al. (2020); Section 3.1 leaves the dominant acidic-pH binding chemistry unresolved and individual LtaS paralogs were not genetically mutated.
+    - uniprot_accession: UniProtKB:P13485
+      entry_name: TAGF_BACSU
+      protein_name: Teichoic acid poly(glycerol phosphate) polymerase
+      gene_symbol: tagF
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:224308
+        label: Bacillus subtilis subsp. subtilis str. 168
+      reference_proteome_id: UP000001570
+      ec_numbers:
+      - EC:2.7.8.12
+      interpro_ids:
+      - InterPro:IPR007554
+      - InterPro:IPR043148
+      - InterPro:IPR043149
+      - InterPro:IPR051612
+      pfam_ids:
+      - Pfam:PF04464
+      go_terms:
+      - id: GO:0005886
+        label: plasma membrane
+      - id: GO:0047355
+        label: CDP-glycerol glycerophosphotransferase activity
+      functional_role: Reviewed Swiss-Prot wall teichoic acid poly(glycerol phosphate) polymerase TagF (tagF, locus BSU35720; TAGF_BACSU; EC:2.7.8.12; GO:0005886, GO:0047355) polymerizing glycerol-phosphate units from CDP-glycerol during wall teichoic acid (WTA) biosynthesis in Bacillus subtilis.
+      annotation_note: Reviewed Swiss-Prot entry in reference proteome UP000001570 (Bacillus subtilis subsp. subtilis str. 168; NCBITaxon:224308) grounded as a strain-resolved representative for species-level mechanism organism Bacillus subtilis ATCC 7003 (NCBITaxon:1423; atcc_7003 / ncbi_bsubtilis), grown in FP medium at 30 C and 120 rpm for 2-4 days, washed twice in acidified water, and tested at 5 g dry biomass/L and pH 2.5 (HCl) in an eight-REE chloride mixture (La, Ce, Nd, Gd, Dy, Er, Yb, Lu at 15 umol/L each, reporting 74% relative lutetium biosorption at 2 and 4 hours in Table S1 experiment 2 and Figure 2a) in Breuker et al. (2020).
+      evidence:
+      - source_ref: breuker_2020
+        supports: partial
+        explanation: Reviewed Swiss-Prot Bacillus subtilis subsp. subtilis str. 168 (NCBITaxon:224308; UP000001570) wall teichoic acid poly(glycerol phosphate) polymerase TagF (tagF, BSU35720; EC:2.7.8.12; GO:0005886, GO:0047355) synthesizing peptidoglycan-attached poly(glycerol phosphate) wall teichoic acid (WTA) chains alongside LtaS lipoteichoic acid synthases in the Gram-positive cell envelope of Bacillus subtilis ATCC 7003 (grown in FP medium at 30 C and 120 rpm for 2-4 days, washed twice in acidified water, and incubated at room temperature and pH 2.5 [HCl] with 5 g dry biomass/L in an eight-REE chloride solution [La, Ce, Nd, Gd, Dy, Er, Yb, Lu, each initially 15 umol/L], achieving 74% relative lutetium biosorption at 2 and 4 hours in Table S1 experiment 2 and Figure 2a) in Breuker et al. (2020); Section 3.1 leaves the dominant acidic-pH binding chemistry unresolved and tagF was not genetically mutated.
   - id: gram_positive_teichoic_phosphodiester_cell_wall
     label: Washed B. subtilis ATCC 7003 cell-envelope surface (FP medium at 30 C, 120 rpm, 2-4 d; washed twice in acidified water; 5 g dry biomass/L)
     node_type: CELLULAR_STRUCTURE
@@ -299,12 +357,12 @@ causal_graphs:
   - source: bsubtilis_ltas_lipoteichoic_acid_synthases
     target: gram_positive_teichoic_phosphodiester_cell_wall
     predicate: produces
-    relationship: biosynthesis of cell-wall poly(glycerol phosphate) lipoteichoic acid chains in B. subtilis
-    description: LtaS2 (EC:2.7.8.-), LtaS1 (EC:2.7.8.46), YqgS (EC:2.7.8.46), and YvgJ (EC:2.7.8.-) synthesize poly(glycerol phosphate) lipoteichoic acid in the Gram-positive cell wall of B. subtilis.
+    relationship: biosynthesis of cell-wall poly(glycerol phosphate) lipoteichoic and wall teichoic acid chains in B. subtilis
+    description: LtaS2 (EC:2.7.8.-), LtaS1 (EC:2.7.8.46), YqgS (EC:2.7.8.46), YvgJ (EC:2.7.8.-), and TagF (EC:2.7.8.12) synthesize poly(glycerol phosphate) lipoteichoic and wall teichoic acids in the Gram-positive cell wall of B. subtilis.
     evidence:
     - source_ref: breuker_2020
       supports: partial
-      explanation: Reviewed Swiss-Prot Bacillus subtilis subsp. subtilis str. 168 (NCBITaxon:224308; UP000001570) lipoteichoic acid synthase (ltaS2, ltaS1, yqgS, yvgJ) synthesizing cell-wall poly(glycerol phosphate) lipoteichoic acid (LTA) chains in the Gram-positive cell envelope of Bacillus subtilis ATCC 7003 (grown in FP medium at 30 C and 120 rpm for 2-4 days, washed twice in acidified water, and incubated at room temperature and pH 2.5 [HCl] with 5 g dry biomass/L in an eight-REE chloride solution [La, Ce, Nd, Gd, Dy, Er, Yb, Lu, each initially 15 umol/L], achieving 74% relative lutetium biosorption at 2 and 4 hours in Table S1 experiment 2 and Figure 2a) in Breuker et al. (2020); Section 3.1 leaves the dominant acidic-pH binding chemistry unresolved and individual LtaS paralogs were not genetically mutated.
+      explanation: Reviewed Swiss-Prot Bacillus subtilis subsp. subtilis str. 168 (NCBITaxon:224308; UP000001570) lipoteichoic acid synthases (ltaS2, ltaS1, yqgS, yvgJ) and wall teichoic acid poly(glycerol phosphate) polymerase TagF (tagF) synthesizing cell-wall poly(glycerol phosphate) teichoic acid chains in the Gram-positive cell envelope of Bacillus subtilis ATCC 7003 (grown in FP medium at 30 C and 120 rpm for 2-4 days, washed twice in acidified water, and incubated at room temperature and pH 2.5 [HCl] with 5 g dry biomass/L in an eight-REE chloride solution [La, Ce, Nd, Gd, Dy, Er, Yb, Lu, each initially 15 umol/L], achieving 74% relative lutetium biosorption at 2 and 4 hours in Table S1 experiment 2 and Figure 2a) in Breuker et al. (2020); Section 3.1 leaves the dominant acidic-pH binding chemistry unresolved and individual teichoic-acid biosynthesis genes were not genetically mutated.
   - source: gram_positive_teichoic_phosphodiester_cell_wall
     target: multielement_acidic_ree_solution_lu3
     predicate: binds
@@ -342,7 +400,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: 'Align lutetium.yaml protein_examples and causal_graphs with curated bsubtilis_acidic_mixture_biosorption parameters (FP medium, 30 C, 120 rpm, 2-4 d; 8-REE chloride mixture at 15 umol/L each, pH 2.5 HCl, 5 g dry biomass/L, 74% relative Lu biosorption at 2 and 4 h in Table S1 exp 2 / Fig 2a) and structured UniProtKB EC annotations (EC:2.7.8.- and EC:2.7.8.46) (Issue #947).'
+- timestamp: '2026-11-06T07:39:42Z'
+  curator: marcin
+  action: edit
+  summary: Add reviewed Swiss-Prot Bacillus subtilis subsp. subtilis str. 168 wall teichoic acid poly(glycerol phosphate) polymerase TagF (UniProtKB:P13485, tagF / BSU35720, EC:2.7.8.12, UP000001570) to lutetium.yaml.
 history_refs:
 - history/records/lutetium/2026-10-11T075300Z-codex-aa9d5e.yaml
 - history/records/lutetium/2026-11-06T050407Z-marcin-c8557b.yaml
 - history/records/lutetium/2026-11-06T062132Z-marcin-3d0649.yaml
+- history/records/lutetium/2026-11-06T073942Z-marcin-be6528.yaml

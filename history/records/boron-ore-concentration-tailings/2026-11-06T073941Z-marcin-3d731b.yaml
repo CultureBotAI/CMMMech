@@ -1,0 +1,31 @@
+history_version: 1
+target:
+  kind: record
+  slug: boron-ore-concentration-tailings
+  path: data/records/boron-ore-concentration-tailings.yaml
+session:
+  id: 2026-11-06T073941Z-marcin-3d731b
+  timestamp: '2026-11-06T07:39:41Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Add live-verified Aspergillus niger CBS 513.88 reference-proteome CexA citrate
+    exporter (UniProtKB:A2R9K1, An17g01710, UP000006706) and UniProtKB GO annotations (GO:0005886,
+    GO:0015137, GO:0015746, GO:0140115) while correcting G3Y4N5 (ATCC 1015, ASPNIDRAFT2_1165828
+    / ASPNIDRAFT_57285) proteome attribution in boron-ore-concentration-tailings.yaml.
+  details: Enriched causal_graphs[0].nodes[0] (aniger_cexa_citrate_exporter) and mechanisms[0].protein_examples
+    in boron-ore-concentration-tailings.yaml with live-verified UniProtKB:A2R9K1 (A2R9K1_ASPNC,
+    An17g01710, NCBITaxon:425011 Aspergillus niger CBS 513.88, UP000006706), added UniProtKB
+    GO terms (GO:0005886, GO:0015137, GO:0015746, GO:0140115) to A0A254TZW7 and G3Y4N5, and
+    corrected G3Y4N5 to cite its true ATCC 1015 ORFs ASPNIDRAFT2_1165828 / ASPNIDRAFT_57285
+    without UP000006706.
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs

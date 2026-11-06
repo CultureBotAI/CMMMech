@@ -46,6 +46,32 @@ mechanisms:
     - source_ref: pethkar2003
       supports: partial
       explanation: Representative Thiobacillus thioparus (NCBITaxon:931) thiosulfate-oxidizing SoxB protein (soxB; UniProtKB:U5TVQ7; InterPro:IPR036907, InterPro:IPR006179) supporting Stage 1 aerobic biodegradation of complexing thiosulfate in 1:10 diluted used photographic fixer by T. thioparus MCM B-39 (25 mL inoculum at 10^7 cells/mL in 250 mL diluted fixer, pH 6.5, ~25 C, 120 rpm for 4 days, converting thiosulfate to elemental sulfur and 32.25 g/L sulfate in Table 1 [31.16 g/L in Results / 31.2 g/L in abstract]) prior to Cladosporium cladosporioides biomass-bead silver biosorption in Pethkar and Paknikar (2003); strain MCM B-39 lacks a strain-specific proteome and Sox enzymes were not directly assayed.
+  - uniprot_accession: UniProtKB:U5TVR3
+    entry_name: U5TVR3_THITI
+    protein_name: Reverse-type dissimilatory siroheme sulfite reductase subunit A
+    gene_symbol: dsrA
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:931
+      label: Thiobacillus thioparus
+    interpro_ids:
+    - InterPro:IPR006067
+    - InterPro:IPR045854
+    pfam_ids:
+    - Pfam:PF01077
+    go_terms:
+    - id: GO:0020037
+      label: heme binding
+    - id: GO:0051536
+      label: iron-sulfur cluster binding
+    - id: GO:0016491
+      label: oxidoreductase activity
+    functional_role: Reverse-type dissimilatory siroheme sulfite reductase alpha subunit DsrA (dsrA; U5TVR3_THITI; InterPro:IPR006067, InterPro:IPR045854; Pfam:PF01077; GO:0020037, GO:0051536, GO:0016491) in Thiobacillus thioparus oxidizing elemental-sulfur intermediates to sulfite/sulfate alongside periplasmic SoxB during thiosulfate oxidation.
+    annotation_note: Grounded to species-level UniProtKB entry U5TVR3 (U5TVR3_THITI; NCBITaxon:931; ncbi_thioparus) alongside periplasmic SoxB (UniProtKB:U5TVQ7) as a representative sulfur-oxidation enzyme for Thiobacillus thioparus MCM B-39 in Stage 1 conditioning of 1:10 diluted used photographic fixer (pH 6.5, ~25 C, 120 rpm, 4 days, generating elemental sulfur and sulfate) in Pethkar and Paknikar (2003). Stage 2 silver biosorption used proprietarily granulated Cladosporium cladosporioides strain 1 (NCBITaxon:29917) biomass beads, for which no silver-binding protein entry exists in UniProtKB.
+    evidence:
+    - source_ref: pethkar2003
+      supports: partial
+      explanation: Representative Thiobacillus thioparus (NCBITaxon:931) reverse-type dissimilatory siroheme sulfite reductase subunit A (dsrA; UniProtKB:U5TVR3; InterPro:IPR006067, InterPro:IPR045854; Pfam:PF01077; GO:0020037, GO:0051536, GO:0016491) supporting Stage 1 aerobic biodegradation of complexing thiosulfate in 1:10 diluted used photographic fixer by T. thioparus MCM B-39 (25 mL inoculum at 10^7 cells/mL in 250 mL diluted fixer, pH 6.5, ~25 C, 120 rpm for 4 days, converting thiosulfate to elemental sulfur and 32.25 g/L sulfate in Table 1 [31.16 g/L in Results / 31.2 g/L in abstract]) prior to Cladosporium cladosporioides biomass-bead silver biosorption in Pethkar and Paknikar (2003); strain MCM B-39 lacks a strain-specific proteome and DsrA/Sox enzymes were not directly assayed.
   evidence:
   - source_ref: pethkar2003
     supports: support
@@ -59,16 +85,16 @@ mechanisms:
 causal_graphs:
 - id: thiosulfate_oxidation_biosorption_then_electrowinning_graph
   name: Thiobacillus thioparus Sox-mediated thiosulfate biodegradation, Cladosporium cladosporioides bead biosorption, and chemical elution/electrowinning of silver from used fixer
-  description: Causal pathway linking representative Thiobacillus thioparus (NCBITaxon:931) periplasmic thiosulfohydrolase SoxB (soxB, UniProtKB:U5TVQ7) in Stage 1 bacterial conditioning (25 mL T. thioparus MCM B-39 inoculum at 10^7 cells/mL in 250 mL nominally 1:10 diluted used photographic fixer at pH 6.5, ~25 C, and 120 rpm for 4 days, depleting complexing thiosulfate to elemental sulfur and 32.25 g/L sulfate in Table 1 [vs 31.16 g/L in Results and 31.2 g/L in abstract] without precipitating silver) to Stage 2 packed-column silver biosorption onto 3 g proprietarily granulated Cladosporium cladosporioides strain 1 (NCBITaxon:29917) biomass beads (10 cm x 1 cm ID column, 20 min retention, feed diluted to nominal 100 mg Ag/L) and Stage 3 abiotic alkaline alcoholic cyanide elution (1% ethanol in Section 2.5 vs 10% in Results) and electrowinning (0.8 V, 224 mA, yielding 127 mg metallic Ag and 70% reported overall recovery) in Pethkar and Paknikar (2003), while preserving the Table 1 vs Section
-    2.2/2.7 dilution-factor conflict (2.8 g Ag/L and 18.5 g thiosulfate/L vs ~280 mg Ag/L) and absence of matched uninoculated fixer endpoint controls.
+  description: Causal pathway linking representative Thiobacillus thioparus (NCBITaxon:931) periplasmic thiosulfohydrolase SoxB (soxB, UniProtKB:U5TVQ7) and reverse-type dissimilatory siroheme sulfite reductase subunit A (dsrA, UniProtKB:U5TVR3) in Stage 1 bacterial conditioning (25 mL T. thioparus MCM B-39 inoculum at 10^7 cells/mL in 250 mL nominally 1:10 diluted used photographic fixer at pH 6.5, ~25 C, and 120 rpm for 4 days, depleting complexing thiosulfate to elemental sulfur and 32.25 g/L sulfate in Table 1 [vs 31.16 g/L in Results and 31.2 g/L in abstract] without precipitating silver) to Stage 2 packed-column silver biosorption onto 3 g proprietarily granulated Cladosporium cladosporioides strain 1 (NCBITaxon:29917) biomass beads (10 cm x 1 cm ID column, 20 min retention, feed diluted to nominal 100 mg Ag/L) and Stage 3 abiotic alkaline alcoholic cyanide elution (1% ethanol in Section 2.5 vs 10% in Results) and electrowinning (0.8 V, 224 mA, yielding 127 mg metallic Ag and 70% reported
+    overall recovery) in Pethkar and Paknikar (2003), while preserving the Table 1 vs Section 2.2/2.7 dilution-factor conflict (2.8 g Ag/L and 18.5 g thiosulfate/L vs ~280 mg Ag/L) and absence of matched uninoculated fixer endpoint controls.
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: thiosulfate_oxidation_biosorption_then_electrowinning
   nodes:
   - id: thioparus_soxb_thiosulfate_oxidation
-    label: Thiobacillus thioparus periplasmic thiosulfohydrolase SoxB (soxB; U5TVQ7_THITI)
+    label: Thiobacillus thioparus periplasmic thiosulfohydrolase SoxB (soxB; U5TVQ7_THITI) and reverse sulfite reductase subunit DsrA (dsrA; U5TVR3_THITI)
     node_type: GENE_OR_PROTEIN
     gene_symbol: soxB
-    description: Periplasmic sulfate thioesterase/thiohydrolase SoxB (UniProtKB:U5TVQ7; InterPro:IPR036907, InterPro:IPR006179) in Thiobacillus thioparus (NCBITaxon:931) representing Stage 1 aerobic oxidation of thiosulfate by T. thioparus MCM B-39 in 1:10 diluted used fixer (pH 6.5, ~25 C, 120 rpm, 4 days).
+    description: Periplasmic sulfate thioesterase/thiohydrolase SoxB (soxB, UniProtKB:U5TVQ7; InterPro:IPR036907, InterPro:IPR006179) and reverse-type dissimilatory siroheme sulfite reductase subunit A (dsrA, UniProtKB:U5TVR3; InterPro:IPR006067, InterPro:IPR045854; Pfam:PF01077) in Thiobacillus thioparus (NCBITaxon:931) representing Stage 1 aerobic oxidation of thiosulfate to elemental sulfur and sulfate by T. thioparus MCM B-39 in 1:10 diluted used fixer (pH 6.5, ~25 C, 120 rpm, 4 days).
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:U5TVQ7
@@ -89,6 +115,32 @@ causal_graphs:
       - source_ref: pethkar2003
         supports: partial
         explanation: Representative Thiobacillus thioparus (NCBITaxon:931) thiosulfate-oxidizing SoxB protein (soxB; UniProtKB:U5TVQ7; InterPro:IPR036907, InterPro:IPR006179) supporting Stage 1 aerobic biodegradation of complexing thiosulfate in 1:10 diluted used photographic fixer by T. thioparus MCM B-39 (25 mL inoculum at 10^7 cells/mL in 250 mL diluted fixer, pH 6.5, ~25 C, 120 rpm for 4 days, converting thiosulfate to elemental sulfur and 32.25 g/L sulfate in Table 1 [31.16 g/L in Results / 31.2 g/L in abstract]) prior to Cladosporium cladosporioides biomass-bead silver biosorption in Pethkar and Paknikar (2003); strain MCM B-39 lacks a strain-specific proteome and Sox enzymes were not directly assayed.
+    - uniprot_accession: UniProtKB:U5TVR3
+      entry_name: U5TVR3_THITI
+      protein_name: Reverse-type dissimilatory siroheme sulfite reductase subunit A
+      gene_symbol: dsrA
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:931
+        label: Thiobacillus thioparus
+      interpro_ids:
+      - InterPro:IPR006067
+      - InterPro:IPR045854
+      pfam_ids:
+      - Pfam:PF01077
+      go_terms:
+      - id: GO:0020037
+        label: heme binding
+      - id: GO:0051536
+        label: iron-sulfur cluster binding
+      - id: GO:0016491
+        label: oxidoreductase activity
+      functional_role: Reverse-type dissimilatory siroheme sulfite reductase alpha subunit DsrA (dsrA; U5TVR3_THITI; InterPro:IPR006067, InterPro:IPR045854; Pfam:PF01077; GO:0020037, GO:0051536, GO:0016491) in Thiobacillus thioparus oxidizing elemental-sulfur intermediates to sulfite/sulfate alongside periplasmic SoxB during thiosulfate oxidation.
+      annotation_note: Grounded to species-level UniProtKB entry U5TVR3 (U5TVR3_THITI; NCBITaxon:931; ncbi_thioparus) alongside periplasmic SoxB (UniProtKB:U5TVQ7) as a representative sulfur-oxidation enzyme for Thiobacillus thioparus MCM B-39 in Stage 1 conditioning of 1:10 diluted used photographic fixer (pH 6.5, ~25 C, 120 rpm, 4 days, generating elemental sulfur and sulfate) in Pethkar and Paknikar (2003). Stage 2 silver biosorption used proprietarily granulated Cladosporium cladosporioides strain 1 (NCBITaxon:29917) biomass beads, for which no silver-binding protein entry exists in UniProtKB.
+      evidence:
+      - source_ref: pethkar2003
+        supports: partial
+        explanation: Representative Thiobacillus thioparus (NCBITaxon:931) reverse-type dissimilatory siroheme sulfite reductase subunit A (dsrA; UniProtKB:U5TVR3; InterPro:IPR006067, InterPro:IPR045854; Pfam:PF01077; GO:0020037, GO:0051536, GO:0016491) supporting Stage 1 aerobic biodegradation of complexing thiosulfate in 1:10 diluted used photographic fixer by T. thioparus MCM B-39 (25 mL inoculum at 10^7 cells/mL in 250 mL diluted fixer, pH 6.5, ~25 C, 120 rpm for 4 days, converting thiosulfate to elemental sulfur and 32.25 g/L sulfate in Table 1 [31.16 g/L in Results / 31.2 g/L in abstract]) prior to Cladosporium cladosporioides biomass-bead silver biosorption in Pethkar and Paknikar (2003); strain MCM B-39 lacks a strain-specific proteome and DsrA/Sox enzymes were not directly assayed.
   - id: thiosulfate_depleted_conditioned_fixer_liquor
     label: Thiosulfate-depleted conditioned fixer liquor (32.25 g/L sulfate in Table 1 vs 31.16/31.2 g/L in text; adjusted to nominal 100 mg Ag/L)
     node_type: CHEMICAL_ENTITY
@@ -150,6 +202,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Add evidence-backed causal_graphs representation and live-verified Thiobacillus thioparus SoxB (UniProtKB:U5TVQ7) protein grounding for thiosulfate_oxidation_biosorption_then_electrowinning, distinguishing Stage 1 bacterial thiosulfate degradation, Stage 2 Cladosporium cladosporioides bead sorption, and Stage 3 abiotic cyanide elution/electrowinning.
+- timestamp: '2026-11-06T07:39:42Z'
+  curator: marcin
+  action: edit
+  summary: Add live-verified Thiobacillus thioparus reverse-type dissimilatory siroheme sulfite reductase subunit A (UniProtKB:U5TVR3, dsrA, NCBITaxon:931) alongside SoxB (UniProtKB:U5TVQ7) in used-photographic-fixer-solutions.yaml.
 history_refs:
 - history/records/used-photographic-fixer-solutions/2026-10-14T204823Z-codex-6c081d.yaml
 - history/records/used-photographic-fixer-solutions/2026-11-06T050407Z-marcin-6c2887.yaml
+- history/records/used-photographic-fixer-solutions/2026-11-06T073942Z-marcin-4de9b3.yaml
