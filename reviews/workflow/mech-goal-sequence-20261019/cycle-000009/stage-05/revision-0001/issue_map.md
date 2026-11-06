@@ -2,7 +2,7 @@
 
 - **Run ID**: `mech-goal-sequence-20261019`
 - **Cycle / Stage / Revision**: Cycle `9`, Stage `5` (`resolve_review_findings`), Revision `1`
-- **Remediated Commit (`source_revision`)**: `ae4562b6149ad2bb0af3e52290329a8f7e58769b`
+- **Remediated Commit (`source_revision`)**: `7f671e363396cc864fc13d5461717c56d16b4aee`
 - **Predecessor Stage 4 Evidence**: `reviews/workflow/mech-goal-sequence-20261019/cycle-000009/stage-04/revision-0001/evidence.yaml`
 - **Post-Remediation Structured Review Bundle**: `reviews/structured/20261105T234500Z-cycle9-stage5-remediation-verification/review.yaml` (`verdict: pass`, `0` open findings)
 
@@ -22,7 +22,9 @@
   - Updated `causal_graphs[0].nodes[3..4]` and `causal_graphs[0].edges[1..3]` in `data/records/uranium.yaml` and `data/records/vanadium.yaml` via `scripts/curate_causal_graphs.py` (`curate_record_file`), qualifying `reduced_metal_product` in `uranium.yaml` as `'Depleted aqueous U and carbon-felt electrode-associated uranium deposits (unverified solid valence and phase)'` and `edges[3].evidence[0].supports: partial`.
   - Minted append-only `EDIT` history sidecars:
     - `history/records/uranium/2026-11-05T234652Z-marcin-a1c586.yaml`
+    - `history/records/uranium/2026-11-06T003438Z-marcin-a0558b.yaml`
     - `history/records/vanadium/2026-11-05T234652Z-marcin-a29b5f.yaml`
+    - `history/records/vanadium/2026-11-06T003438Z-marcin-12e729.yaml`
 
 ### 2. `GRP-C9S5-002` (`cmmmech-cycle9-stage4-finding-0002` -> Issue [#941](https://github.com/CultureBotAI/CMMMech/issues/941))
 - **Root Cause**: `data/records/rhodochrosite.yaml` (`mr1_mn_oxide_rhodochrosite_graph`) retained generic template wrappers on `nodes[3..4]`, stated `'in Ca-free artificial freshwater medium'` instead of the 1 L modified M1 medium (`~6.3 mM` colloidal MnO2, `20 mM` lactate, no added phosphate, pH 8 under N2) from Johnson et al. (2016) Methods pp. C-D, and interpolated capitalized node labels mid-sentence on `edges[1..3]`; `data/records/chlorite.yaml` (`mr1_chlorite_fe_reduction_graph`) similarly interpolated capitalized `'Chlorite-associated Fe(III) (ferroan clinochlore)'` mid-sentence with generic one-line explanations on `edges[1..2]`.
@@ -31,6 +33,7 @@
   - Minted append-only `EDIT` history sidecars:
     - `history/records/rhodochrosite/2026-11-05T234652Z-marcin-d651e4.yaml`
     - `history/records/chlorite/2026-11-05T234653Z-marcin-12e7f2.yaml`
+    - `history/records/chlorite/2026-11-06T003438Z-marcin-5a1086.yaml`
 
 ### 3. `GRP-C9S5-003` (`cmmmech-cycle9-stage4-finding-0003` -> Issue [#942](https://github.com/CultureBotAI/CMMMech/issues/942))
 - **Root Cause**: Across `data/records/asbolane.yaml`, `data/records/feitknechtite.yaml`, and `data/records/pyrochroite.yaml` (Buchanan 2021/2022 Chapter 4), `causal_graphs[0].nodes[2..3]` repeated their capitalized node labels in parenthetical template descriptions and `causal_graphs[0].description` and `causal_graphs[0].edges[0].description` interpolated those capitalized node labels mid-sentence.

@@ -2,7 +2,7 @@
 
 - **Run ID**: `mech-goal-sequence-20261019`
 - **Cycle / Stage / Revision**: Cycle `9`, Stage `5` (`resolve_review_findings`), Revision `1`
-- **Remediated Commit (`source_revision`)**: `ae4562b6149ad2bb0af3e52290329a8f7e58769b`
+- **Remediated Commit (`source_revision`)**: `7f671e363396cc864fc13d5461717c56d16b4aee`
 - **Post-Remediation Structured Review Bundle**: `reviews/structured/20261105T234500Z-cycle9-stage5-remediation-verification/review.yaml` (`verdict: pass`, `0` open findings)
 
 ## Validation Suite Results

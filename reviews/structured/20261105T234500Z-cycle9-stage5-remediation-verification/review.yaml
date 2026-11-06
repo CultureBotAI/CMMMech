@@ -12,7 +12,7 @@ scientific_review: true
 summary: 'Post-remediation verification review across all 7 CMMMech records modified in Cycle
   9 Stage 5 (2 element, 4 mineral, and 1 mineral_group records) resolving all 3 open Cycle 9 Stage
   4 review findings under GitHub Issues #940 (GRP-C9S5-001: uranium.yaml and vanadium.yaml Shewanella
-  oneidensis MR-1 bioelectrochemical reduction causal_graphs[0] updated with T2/T3/T6/T7/T8/T9
+  oneidensis MR-1 bioelectrochemical reduction causal_graphs[0] updated with T1/T1/T2/T3/T6/T8/T9
   source-specific descriptions on oxidized_metal_substrate and reduced_metal_product, qualified
   reduced_metal_product label and edges[3].evidence[0].supports: partial in uranium.yaml, and
   lowercase study-specific prose in edges[1..3]), #941 (GRP-C9S5-002: rhodochrosite.yaml and chlorite.yaml
@@ -32,14 +32,14 @@ reviewer:
   independence_basis: Cycle 9 Stage 5 post-remediation verification review (.claude/skills/review-yaml-category/SKILL.md)
     of the 7 remediated records against the immutable Cycle 9 Stage 4 review bundles.
 source:
-  git_revision: ae4562b6149ad2bb0af3e52290329a8f7e58769b
+  git_revision: 7f671e363396cc864fc13d5461717c56d16b4aee
   state: working_tree
   inputs:
   - path: data/records/asbolane.yaml
     sha256: 848b70e5da57342f8abd4558de7e52fb666d132a9f4fbef7ebcd460d75f79dd7
     role: target
   - path: data/records/chlorite.yaml
-    sha256: 92483cc3007f43acfe8c53f5fb540da77acf814ad0f6962de28c5b9a7a80a949
+    sha256: f26f20999e3df05bf5ce82b4fb141881e685d7f2a3bd43b69c577283dde26131
     role: target
   - path: data/records/feitknechtite.yaml
     sha256: 16b59b1f1d67f943d0c8c5edd8cd3730ea93bcde0a6e760b900b50bb05247f8a
@@ -51,10 +51,10 @@ source:
     sha256: f45318e8367ef5926dd7886befbd6d6fd43fcbb13777d636c22105cd1bde8f81
     role: target
   - path: data/records/uranium.yaml
-    sha256: 25d42515c1defef3ddd93641155a2feacbf7a3333040051b0949ce85d51d8eea
+    sha256: 02fb0f5a817a13f868dd9ebd0751021f279eafce8f30d7ee618c47f91bfb468e
     role: target
   - path: data/records/vanadium.yaml
-    sha256: 00e7534347e11a1b74958ceb894ae82f99c0cc61326c221ead540865e99ec18a
+    sha256: 0537c316f2f345b570468c97cc79b51bc447585f80a64858f3d7dace6d227c47
     role: target
   - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000009/stage-04/revision-0001/evidence.yaml
     sha256: 81b9c4a1c6a0c803d328938be3b1c7176c99225e8b94fa39d094ec238bcaf2b1
@@ -102,7 +102,7 @@ targets:
   kind: maintained
   semantic_digest:
     algorithm: yaml_canonical_sha256
-    sha256: 04eda6ff56201a828883e7993d0586b1cb0d8f2a3b9f1d0ff1063cb3e18eca69
+    sha256: 9d3d573bb5f96cbbb37df4520f6ba967f5de77cd4cd82811d41ab6e6c45d54ff
     description: SHA-256 of canonical sorted-key YAML parse of record
   owner_paths:
   - repository: CultureBotAI/CMMMech
@@ -154,7 +154,7 @@ targets:
   kind: maintained
   semantic_digest:
     algorithm: yaml_canonical_sha256
-    sha256: e08dc3b91c064c6cedc9d5fe9950917cc7faaa670545b93d1ea1337daecb0b48
+    sha256: a02e3eac6730f2109f8d5ac543227ba8a3304183fe2cc0e443d131b17588c467
     description: SHA-256 of canonical sorted-key YAML parse of record
   owner_paths:
   - repository: CultureBotAI/CMMMech
@@ -167,7 +167,7 @@ targets:
   kind: maintained
   semantic_digest:
     algorithm: yaml_canonical_sha256
-    sha256: 3d0c8e518f99a912f249eaf4b955ba2fbbe9cdfe9c02ff17dd457c99843d9ddc
+    sha256: b3886c4222d02e8b55c5abcbd1bd5655f25640d6dd637f678101457b844de070
     description: SHA-256 of canonical sorted-key YAML parse of record
   owner_paths:
   - repository: CultureBotAI/CMMMech
@@ -219,7 +219,7 @@ checks:
   status: passed
   required: true
   summary: 'Verified that oxidized_metal_substrate and reduced_metal_product in uranium.yaml and
-    vanadium.yaml carry source-specific T2/T3/T6/T8/T9 descriptions, uranium.yaml causal_graphs[0].nodes[4].label
+    vanadium.yaml carry source-specific T1/T2/T3/T6/T8/T9 descriptions, uranium.yaml causal_graphs[0].nodes[4].label
     is qualified as ''Depleted aqueous U and carbon-felt electrode-associated uranium deposits
     (unverified solid valence and phase)'' with supports: partial on edges[3], and edges[1..3]
     in both records use lowercase mid-sentence prose.'
@@ -294,28 +294,31 @@ evidence:
 - evidence_id: ev-kane2026
   kind: primary_source
   reference: https://doi.org/10.5066/P9ERLSM6
-  locator: Kane et al. (2026) USGS data release DOI:10.5066/P9ERLSM6, T2_Setup.csv, T3_AqueousICPOES.csv,
-    T6, T7_Chronoamperometry.csv, T8_XRD.csv, T9_SEM.pdf pp. 2-11
+  locator: Kane et al. (2026) USGS data release DOI:10.5066/P9ERLSM6, T1_TableDefinitions.csv,
+    T2_pH.csv, T3_AqueousICPOES.csv, T6_DigestRecovery.csv, T7_UV_Vis.csv, T8_XRD.csv, T9_SEM.pdf
+    pp. 2-7
   accessed_at: '2026-11-05T23:44:30Z'
   support: supports
-  summary: Confirms Shewanella oneidensis MR-1 BES setup (-800 mV vs Ag/AgCl for U, -500 mV vs
-    Ag/AgCl for V), aqueous U and V ICP-OES trajectories in biotic and abiotic arms, working-electrode
-    acid extracts, and unverified solid phase/valence.
+  summary: Confirms Shewanella oneidensis MR-1 BES setup (-800 mV vs saturated Ag/AgCl for both
+    U and V), aqueous U and V ICP-OES trajectories in biotic and abiotic arms, working-electrode
+    acid extracts, T9_SEM.pdf pp. 2-6 U electrode EDS and p. 7 solids from V phosphate-buffered
+    culturing medium, and unverified solid phase/valence.
 - evidence_id: ev-johnson2016-brookshaw2014
   kind: primary_source
   reference: https://doi.org/10.1021/acs.est.5b04834
   locator: Johnson et al. (2016) Environ. Sci. Technol. 50(8):4248-4258 (Methods pp. C-D, Figure
     2B, Table S2, Figures S4-S5) and Brookshaw et al. (2014) Am. Mineral. 99(8-9):1746-1754 (DOI:10.2138/am.2014.4774CCBY,
-    Figures 1B, 2C-D, Table 2)
+    Methods p. 1747, Figures 1B, 2C-D, Table 2)
   accessed_at: '2026-11-05T23:44:30Z'
   support: supports
   summary: Confirms 1 L modified M1 medium with ~6.3 mM poorly ordered colloidal MnO2, 20 mM lactate,
     no added phosphate, pH 8 under N2 and ~73% rhodochrosite + ~27% dissolved/adsorbed Mn(II)
-    at 12 h in Johnson et al. (2016), and 2.5 g/L unheated ferroan clinochlore in 30 mM NaHCO3
-    with 10 mM sodium lactate in Brookshaw et al. (2014).
+    at 12 h in Johnson et al. (2016), and <100 um unheated ferroan clinochlore powder at 1:40
+    solid-to-solution mass ratio in 30 mM NaHCO3 at pH 7 with 10 mM sodium lactate and 10 micromolar
+    AQDS in Brookshaw et al. (2014).
 - evidence_id: ev-buchanan2021
   kind: primary_source
-  reference: https://research.manchester.ac.uk/en/studentTheses/microbial-reduction-of-cobalt-and-nickel-bearing-manganese-oxides
+  reference: https://pure.manchester.ac.uk/ws/portalfiles/portal/261215972/FULL_TEXT.PDF
   locator: Buchanan (2021/2022) University of Manchester PhD thesis, Chapter 4, printed pp. 123-147,
     Figures 4.1-4.8
   accessed_at: '2026-11-05T23:44:30Z'
@@ -332,8 +335,8 @@ assessments:
   outcome: supported
   summary: 'Both Shewanella oneidensis MR-1 BES records (uranium.yaml and vanadium.yaml) now replace
     generic parenthetical template descriptions on oxidized_metal_substrate and reduced_metal_product
-    with kane_2026_bes T2/T3/T6/T8/T9-grounded descriptions, qualify reduced_metal_product in
-    uranium.yaml as ''Depleted aqueous U and carbon-felt electrode-associated uranium deposits
+    with kane_2026_bes T1/T2/T3/T6/T8/T9-grounded descriptions, qualify reduced_metal_product
+    in uranium.yaml as ''Depleted aqueous U and carbon-felt electrode-associated uranium deposits
     (unverified solid valence and phase)'' with supports: partial on edges[3], and use lowercase
     study-specific prose on edges[1..3].'
   target_ids:
@@ -414,7 +417,7 @@ findings:
   severity: minor
   status: resolved
   certainty: confirmed
-  title: Uranium and vanadium Shewanella oneidensis MR-1 BES records now have T2/T3/T6/T8/T9-grounded
+  title: Uranium and vanadium Shewanella oneidensis MR-1 BES records now have T1/T2/T3/T6/T8/T9-grounded
     node/edge descriptions and qualified uranium product state
   description: 'In data/records/uranium.yaml (cmmmech:uranium, element, Kane et al. 2026 USGS
     data release DOI:10.5066/P9ERLSM6; causal_graphs[0] mr1_bes_uranium_reduction_graph, lines
@@ -467,9 +470,9 @@ findings:
     role: maintained_record
   disposition_reason: 'Resolved under GitHub Issue #940 (GRP-C9S5-001): replaced generic template
     descriptions on oxidized_metal_substrate and reduced_metal_product in data/records/uranium.yaml
-    and data/records/vanadium.yaml with kane_2026_bes T2/T3/T6/T8/T9-specific descriptions, updated
-    uranium.yaml causal_graphs[0].nodes[4].label to ''Depleted aqueous U and carbon-felt electrode-associated
-    uranium deposits (unverified solid valence and phase)'' and causal_graphs[0].edges[3].evidence[0].supports
+    and data/records/vanadium.yaml with kane_2026_bes T1/T2/T3/T6/T8/T9-specific descriptions,
+    updated uranium.yaml causal_graphs[0].nodes[4].label to ''Depleted aqueous U and carbon-felt
+    electrode-associated uranium deposits (unverified solid valence and phase)'' and causal_graphs[0].edges[3].evidence[0].supports
     to ''partial'', and replaced capitalized mid-sentence node labels and generic one-line explanations
     in edges[1..3] with lowercase study-specific prose, with 2 append-only EDIT history sidecars.'
   previous_occurrences:
