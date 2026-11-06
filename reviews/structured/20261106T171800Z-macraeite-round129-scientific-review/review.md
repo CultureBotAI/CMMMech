@@ -11,11 +11,11 @@
 
 ## Summary
 
-Macraeite (IMA:2023-065, status A, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10*4H2O) passes primary-source scientific review (scientific_review: true) at SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822 against all bounded passages and rendered table PNGs of Grey IE, Hochleitner R, Rewitzer C, Kampf AR, MacRae CM, Gable RW, Mumme WG, Boer S, and Davidson AL (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10·4H2O, a new monoclinic windhoekite-type mineral from the Hagendorf-Süd pegmatite, Bavaria, Germany, Eur. J. Mineral. 36:267-278, pp. 267-278, Tables 1-6, Figures 1-9 (33 bounded passages &lt;= 1,800 B across 12 full-PDF pages; 10 main-text pages / 26 passages, plus PNG renders of pages 3 and 7).
+Macraeite (IMA:2023-065, status A, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10*4H2O) passes primary-source scientific review (scientific_review: true) at SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822 against all bounded passages and rendered table PNGs of Grey IE, Rewitzer C, Hochleitner R, Kampf AR, Boer S, Mumme WG, Wilson NC (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10 * 4H2O, a new monoclinic paulkerrite-group mineral, from the Cubos-Mesquitela-Mangualde pegmatite, Portugal. European Journal of Mineralogy 36:267-278, pp. 267-278, Tables 1-7, Figures 1-9 (33 bounded passages &lt;= 1,800 B across 12 full-PDF pages; 10 main-text pages / 26 passages, plus PNG renders of pages 3 and 7).
 
 ## Scope And Provenance
 
-Primary-source scientific review of data/records/macraeite.yaml (SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822) and its canonical CREATE history sidecar against all bounded primary-source passages and rendered table PNGs from Grey IE, Hochleitner R, Rewitzer C, Kampf AR, MacRae CM, Gable RW, Mumme WG, Boer S, and Davidson AL (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10·4H2O, a new monoclinic windhoekite-type mineral from the Hagendorf-Süd pegmatite, Bavaria, Germany, Eur. J. Mineral. 36:267-278, pp. 267-278, Tables 1-6, Figures 1-9 (33 bounded passages &lt;= 1,800 B across 12 full-PDF pages; 10 main-text pages / 26 passages, plus PNG renders of pages 3 and 7) and the September 2026 IMA-CNMNC Master List (PDF p. 131).
+Primary-source scientific review of data/records/macraeite.yaml (SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822) and its canonical history sidecars against all bounded primary-source passages and rendered table PNGs from Grey IE, Rewitzer C, Hochleitner R, Kampf AR, Boer S, Mumme WG, Wilson NC (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10 * 4H2O, a new monoclinic paulkerrite-group mineral, from the Cubos-Mesquitela-Mangualde pegmatite, Portugal. European Journal of Mineralogy 36:267-278, pp. 267-278, Tables 1-7, Figures 1-9 (33 bounded passages &lt;= 1,800 B across 12 full-PDF pages; 10 main-text pages / 26 passages, plus PNG renders of pages 3 and 7) and the September 2026 IMA-CNMNC Master List (PDF p. 130).
 
 Selection: Round 129 newly admitted mineral record macraeite
 Coverage: full; 1 reviewed / 1 in the declared population.
@@ -31,21 +31,21 @@ Working-tree hashes do not imply those bytes were committed.
 | Check | Status | Required | Targets | Result |
 | --- | --- | --- | --- | --- |
 | Strict corpus validation | passed | True | cmmmech:macraeite | Checked 698 record(s); 0 failed. |
-| Canonical history validation | passed | True | cmmmech:macraeite | Checked 1419 history record(s); 0 error(s). |
+| Canonical history validation | passed | True | cmmmech:macraeite | Checked 1421 history record(s); 0 error(s). |
 
 ## Scientific And Domain Assessments
 
-### Verification of IMA:2023-065 identity, Hagendorf-Süd (Germany) and Monte Rubio (Portugal) type localities, EPMA chemistry, monoclinic P21/c structure, and internal source discrepancies for macraeite
+### Verification of IMA:2023-065 identity (no IMA symbol assigned), type locality, type specimens, chemical composition, crystal structure, and internal source discrepancies for macraeite
 
 evidence: supported. Targets: cmmmech:macraeite.
 
-All numeric, crystallographic, optical, spectroscopic, and chemical claims in data/records/macraeite.yaml (SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822) match the bounded primary-source passages and rendered table PNGs of Grey et al. (2024) Eur. J. Mineral. 36:267-278 and the September 2026 IMA Master List (p. 131).
+All numeric, crystallographic, and chemical claims in data/records/macraeite.yaml (SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822) match the bounded primary-source passages and rendered table PNGs of Grey IE, Rewitzer C, Hochleitner R, Kampf AR, Boer S, Mumme WG, Wilson NC (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10 * 4H2O, a new monoclinic paulkerrite-group mineral, from the Cubos-Mesquitela-Mangualde pegmatite, Portugal. European Journal of Mineralogy 36:267-278 and the September 2026 IMA Master List (p. 130).
 
-### Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE provenance
+### Verification of 0 mechanisms (abiotic occurrence only) and append-only history provenance
 
 provenance: supported. Targets: cmmmech:macraeite.
 
-data/records/macraeite.yaml accurately omits mechanisms (0 mechanisms) and explicitly discloses that no biological or microbial interaction data are reported in the type mineralogical description. Append-only CREATE history sidecar passes validation with 0 errors.
+data/records/macraeite.yaml accurately omits mechanisms (0 mechanisms) and explicitly discloses that no biological or microbial interaction data are reported in the type mineralogical description. Append-only history sidecar(s) pass validation with 0 errors.
 
 ## Findings
 
@@ -60,11 +60,11 @@ No findings recorded within this review's declared scope.
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| owner | data/records/macraeite.yaml; Working-tree record data/records/macraeite.yaml | supports | Working-tree record data/records/macraeite.yaml captures IMA:2023-065 identity (symbol Mac), Hagendorf-Süd pegmatite (Bavaria, Germany) and Monte Rubio quarry (Portugal) type localities, holotype M56293 and cotype M56294 (Museums Victoria), Table 1 (p. 269) EPMA chemistry (12 points, empirical formula K0.92Mn1.56Mg0.33Zn0.08Ca0.02Fe3+1.91Al0.11Ti0.90(PO4)4.00F0.45(OH)0.35O1.03(H2O)14.66, total 100.01 wt%), monoclinic P21/c (#14) synchrotron structure (Table 3; a = 10.541(1) A, b = 20.545(1) A, c = 12.404(1) A, beta = 90.09(1) deg, V = 2686.3(3) A3, Z = 4, R1 = 0.0725, wR2 = 0.2116), primary-source discrepancies (Dcalc 2.38 / 2.39 vs 2.426 g/cm3; Table 1 analytical total 100.38 vs 100.37 wt% before -O=F), and 0 mechanisms (SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822). |
-| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List, PDF p. 131 | supports | Confirms Macraeite, status A, IMA:2023-065, symbol Mac, ideal formula [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10·4H2O, and single primary reference in European Journal of Mineralogy 36 (2024), 267. |
-| grey_2024_macraeite_primary | https://doi.org/10.5194/ejm-36-267-2024; Grey IE, Hochleitner R, Rewitzer C, Kampf AR, MacRae CM, Gable RW, Mumme WG, Boer S, and Davidson AL (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10·4H2O, a new monoclinic windhoekite-type mineral from the Hagendorf-Süd pegmatite, Bavaria, Germany, Eur. J. Mineral. 36:267-278, pp. 267-278, Tables 1-6, Figures 1-9 (33 bounded passages &lt;= 1,800 B across 12 full-PDF pages; 10 main-text pages / 26 passages, plus PNG renders of pages 3 and 7) | supports | All bounded passages (&lt;= 1,800 B) and single-page 150-DPI PNG table renders inspected from Grey et al. (2024), Eur. J. Mineral. 36:267-278 (33 bounded passages across 12 full-PDF pages; 10 main-text pages / 26 passages, plus PNG renders of pages 3 and 7), confirming verbatim title, type localities, type specimen repositories, chemical composition, unit-cell parameters, structure refinement, and documented internal source discrepancies. |
-| create_history | history/records/macraeite/2026-11-06T171120Z-antigravity-e5c8a1.yaml; Canonical CREATE history sidecar history/records/macraeite/2026-11-06T171120Z-antigravity-e5c8a1.yaml | supports | Canonical CREATE history sidecar (SHA-256 e72352428ed8466bcbc739cc8f32fe85dbba4b7b66e43bebb90937006a941968) matches record curation_history[0].timestamp and top-level record sections. |
-| validation | data/records/macraeite.yaml; Real CLI validation via .venv/bin/cmmmech validate --require-records and .venv/bin/cmmmech validate-history --base main | supports | Checked 698 record(s); 0 failed. Checked 1419 history record(s); 0 error(s). |
+| owner | data/records/macraeite.yaml; Working-tree record data/records/macraeite.yaml | supports | Working-tree record data/records/macraeite.yaml captures IMA:2023-065 identity (no IMA symbol assigned), Chao do Castanheiro mining concession dumps, Cubos-Mesquitela-Mangualde pegmatite (40 deg 35 min 13.7 sec N, 7 deg 45 min 04.3 sec W), Viseu district, Portugal, Holotype 76293 (Natural History Museum of Los Angeles County, USA); Cotype MSM 38050 (Bavarian State Collection for Mineralogy, SNSB, Munich, Germany), Table 1 (p. 269) EPMA chemistry (n = 17 analyses on 17 crystals: P2O5 29.55, MnO 14.63, Fe2O3 11.80, TiO2 9.85, K2O 4.14, Al2O3 1.65, F 1.04, MgO 0.35, H2Ocalc 28.90, -O=F -0.44, mean Total 101.47 wt%, bulk empirical formula K0.84Mn1.98Mg0.08Al0.31Fe3+1.42Ti4+1.18P4.00F0.53O32.63H30.92, structural formula A1[(H2O)0.83K0.17]Sigma1.00A2[K0.65(H2O)0.35]Sigma1.00M1(Mn2+1.98[]0.02)Sigma2.00M2(Fe3+1.09Al0.31Ti4+0.52Mg0.08)Sigma2.00M3(Ti4+0.66Fe3+0.34)Sigma1.00(PO4)4X[O0.87F0.53(OH)0.60]Sigma2.00(H2O)10*4H2O), monoclinic P21/c (#14) synchrotron 100 K single-crystal structure (Tables 3-7, pp. 273-277; a = 10.562(2) A, b = 20.725(4) A, c = 12.416(2) A, beta = 90.09(3) deg, V = 2717.8(9) A3, Z = 4, Robs = 0.047, wRobs = 0.063 for 4990 reflections with Io &gt; 3sigma(I); 300 K cell a = 10.5383(4) A, b = 20.7316(7) A, c = 12.4658(5) A, beta = 90.144(5) deg; powder cell a = 10.56(3) A, b = 20.70(3) A, c = 12.39(3) A, beta = 90.1(5) deg, V = 2708(11) A3; Dcalc = 2.39 g/cm3), documented primary-source discrepancies, and 0 mechanisms (SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822). |
+| ima_authority | https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf; IMA-CNMNC September 2026 Master List, PDF p. 130 | supports | Confirms Macraeite, status A, IMA:2023-065 (no IMA symbol assigned), formula [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10*4H2O, and single primary reference in Grey IE, Rewitzer C, Hochleitner R, Kampf AR, Boer S, Mumme WG, Wilson NC (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10 * 4H2O, a new monoclinic paulkerrite-group mineral, from the Cubos-Mesquitela-Mangualde pegmatite, Portugal. European Journal of Mineralogy 36:267-278. |
+| grey_2024_macraeite_primary | https://doi.org/10.5194/ejm-36-267-2024; Grey IE, Rewitzer C, Hochleitner R, Kampf AR, Boer S, Mumme WG, Wilson NC (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10 * 4H2O, a new monoclinic paulkerrite-group mineral, from the Cubos-Mesquitela-Mangualde pegmatite, Portugal. European Journal of Mineralogy 36:267-278, pp. 267-278, Tables 1-7, Figures 1-9 (33 bounded passages &lt;= 1,800 B across 12 full-PDF pages; 10 main-text pages / 26 passages, plus PNG renders of pages 3 and 7) | supports | All bounded passages (&lt;= 1,800 B) and single-page 150-DPI PNG table renders inspected from Grey IE, Rewitzer C, Hochleitner R, Kampf AR, Boer S, Mumme WG, Wilson NC (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10 * 4H2O, a new monoclinic paulkerrite-group mineral, from the Cubos-Mesquitela-Mangualde pegmatite, Portugal. European Journal of Mineralogy 36:267-278 (pp. 267-278, Tables 1-7, Figures 1-9 (33 bounded passages &lt;= 1,800 B across 12 full-PDF pages; 10 main-text pages / 26 passages, plus PNG renders of pages 3 and 7)), confirming verbatim title, authors, type locality, type specimen repositories, chemical composition, unit-cell parameters, structure refinement, and documented internal source discrepancies. |
+| canonical_history | history/records/macraeite/2026-11-06T171120Z-antigravity-e5c8a1.yaml; Canonical history sidecars (history/records/macraeite/2026-11-06T171120Z-antigravity-e5c8a1.yaml) | supports | Canonical history sidecar(s) (history/records/macraeite/2026-11-06T171120Z-antigravity-e5c8a1.yaml; latest SHA-256 e72352428ed8466bcbc739cc8f32fe85dbba4b7b66e43bebb90937006a941968) match record curation_history timestamps and top-level sections. |
+| validation | data/records/macraeite.yaml; Real CLI validation via .venv/bin/cmmmech validate --require-records and .venv/bin/cmmmech validate-history --base main | supports | Checked 698 record(s); 0 failed. Checked 1421 history record(s); 0 error(s). |
 
 ## Limits And Additional Notes
 
@@ -90,14 +90,14 @@ reviewer:
   independence: self_review
   independence_basis: Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
     verifying all scientific claims in data/records/macraeite.yaml (SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822)
-    and its CREATE history sidecar against all bounded passages and single-page PNG
-    table renders of Grey IE, Hochleitner R, Rewitzer C, Kampf AR, MacRae CM, Gable
-    RW, Mumme WG, Boer S, and Davidson AL (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10·4H2O,
-    a new monoclinic windhoekite-type mineral from the Hagendorf-Süd pegmatite, Bavaria,
-    Germany, Eur. J. Mineral. 36:267-278, pp. 267-278, Tables 1-6, Figures 1-9 (33
-    bounded passages <= 1,800 B across 12 full-PDF pages; 10 main-text pages / 26
-    passages, plus PNG renders of pages 3 and 7) and the September 2026 IMA-CNMNC
-    Master List (PDF p. 131).
+    and its canonical history sidecars against all bounded passages and single-page
+    PNG table renders of Grey IE, Rewitzer C, Hochleitner R, Kampf AR, Boer S, Mumme
+    WG, Wilson NC (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10 * 4H2O,
+    a new monoclinic paulkerrite-group mineral, from the Cubos-Mesquitela-Mangualde
+    pegmatite, Portugal. European Journal of Mineralogy 36:267-278, pp. 267-278, Tables
+    1-7, Figures 1-9 (33 bounded passages <= 1,800 B across 12 full-PDF pages; 10
+    main-text pages / 26 passages, plus PNG renders of pages 3 and 7) and the September
+    2026 IMA-CNMNC Master List (PDF p. 130).
 skill: .claude/skills/review-record/SKILL.md
 completion: completed
 verdict: pass_with_limitations
@@ -113,10 +113,10 @@ source:
     sha256: e72352428ed8466bcbc739cc8f32fe85dbba4b7b66e43bebb90937006a941968
     role: context
   - path: research/sources/round129-minerals/20261106T171500Z-source-investigation.json
-    sha256: cd4fea2c3c4c3355fcb3edae487eae9c45c5fca9791090841f838a3ecad5228f
+    sha256: 21fbb07c844316e2f946fdf6f82d48fda6f89a5d6e7ede808b744221a9c46dfd
     role: context
   - path: research/sources/round129-minerals/20261106T171500Z-source-investigation.md
-    sha256: bb5df07275c47b31b77a9c7347484997b2ab0b6dcfbe85ed076a7a177e295c94
+    sha256: a0cae61671288acd510e4e09e2298b748c96f00fe89a07f30f2f398fe6a4a362
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
@@ -136,14 +136,14 @@ targets:
 scope:
   description: Primary-source scientific review of data/records/macraeite.yaml (SHA-256
     1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822) and its canonical
-    CREATE history sidecar against all bounded primary-source passages and rendered
-    table PNGs from Grey IE, Hochleitner R, Rewitzer C, Kampf AR, MacRae CM, Gable
-    RW, Mumme WG, Boer S, and Davidson AL (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10·4H2O,
-    a new monoclinic windhoekite-type mineral from the Hagendorf-Süd pegmatite, Bavaria,
-    Germany, Eur. J. Mineral. 36:267-278, pp. 267-278, Tables 1-6, Figures 1-9 (33
-    bounded passages <= 1,800 B across 12 full-PDF pages; 10 main-text pages / 26
-    passages, plus PNG renders of pages 3 and 7) and the September 2026 IMA-CNMNC
-    Master List (PDF p. 131).
+    history sidecars against all bounded primary-source passages and rendered table
+    PNGs from Grey IE, Rewitzer C, Hochleitner R, Kampf AR, Boer S, Mumme WG, Wilson
+    NC (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10 * 4H2O, a new monoclinic
+    paulkerrite-group mineral, from the Cubos-Mesquitela-Mangualde pegmatite, Portugal.
+    European Journal of Mineralogy 36:267-278, pp. 267-278, Tables 1-7, Figures 1-9
+    (33 bounded passages <= 1,800 B across 12 full-PDF pages; 10 main-text pages /
+    26 passages, plus PNG renders of pages 3 and 7) and the September 2026 IMA-CNMNC
+    Master List (PDF p. 130).
   selection: Round 129 newly admitted mineral record macraeite
   coverage: full
   population_size: 1
@@ -156,51 +156,67 @@ evidence:
   locator: Working-tree record data/records/macraeite.yaml
   accessed_at: '2026-11-06T17:17:00Z'
   support: supports
-  summary: Working-tree record data/records/macraeite.yaml captures IMA:2023-065 identity
-    (symbol Mac), Hagendorf-Süd pegmatite (Bavaria, Germany) and Monte Rubio quarry
-    (Portugal) type localities, holotype M56293 and cotype M56294 (Museums Victoria),
-    Table 1 (p. 269) EPMA chemistry (12 points, empirical formula K0.92Mn1.56Mg0.33Zn0.08Ca0.02Fe3+1.91Al0.11Ti0.90(PO4)4.00F0.45(OH)0.35O1.03(H2O)14.66,
-    total 100.01 wt%), monoclinic P21/c (#14) synchrotron structure (Table 3; a =
-    10.541(1) A, b = 20.545(1) A, c = 12.404(1) A, beta = 90.09(1) deg, V = 2686.3(3)
-    A3, Z = 4, R1 = 0.0725, wR2 = 0.2116), primary-source discrepancies (Dcalc 2.38
-    / 2.39 vs 2.426 g/cm3; Table 1 analytical total 100.38 vs 100.37 wt% before -O=F),
-    and 0 mechanisms (SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822).
+  summary: 'Working-tree record data/records/macraeite.yaml captures IMA:2023-065
+    identity (no IMA symbol assigned), Chao do Castanheiro mining concession dumps,
+    Cubos-Mesquitela-Mangualde pegmatite (40 deg 35 min 13.7 sec N, 7 deg 45 min 04.3
+    sec W), Viseu district, Portugal, Holotype 76293 (Natural History Museum of Los
+    Angeles County, USA); Cotype MSM 38050 (Bavarian State Collection for Mineralogy,
+    SNSB, Munich, Germany), Table 1 (p. 269) EPMA chemistry (n = 17 analyses on 17
+    crystals: P2O5 29.55, MnO 14.63, Fe2O3 11.80, TiO2 9.85, K2O 4.14, Al2O3 1.65,
+    F 1.04, MgO 0.35, H2Ocalc 28.90, -O=F -0.44, mean Total 101.47 wt%, bulk empirical
+    formula K0.84Mn1.98Mg0.08Al0.31Fe3+1.42Ti4+1.18P4.00F0.53O32.63H30.92, structural
+    formula A1[(H2O)0.83K0.17]Sigma1.00A2[K0.65(H2O)0.35]Sigma1.00M1(Mn2+1.98[]0.02)Sigma2.00M2(Fe3+1.09Al0.31Ti4+0.52Mg0.08)Sigma2.00M3(Ti4+0.66Fe3+0.34)Sigma1.00(PO4)4X[O0.87F0.53(OH)0.60]Sigma2.00(H2O)10*4H2O),
+    monoclinic P21/c (#14) synchrotron 100 K single-crystal structure (Tables 3-7,
+    pp. 273-277; a = 10.562(2) A, b = 20.725(4) A, c = 12.416(2) A, beta = 90.09(3)
+    deg, V = 2717.8(9) A3, Z = 4, Robs = 0.047, wRobs = 0.063 for 4990 reflections
+    with Io > 3sigma(I); 300 K cell a = 10.5383(4) A, b = 20.7316(7) A, c = 12.4658(5)
+    A, beta = 90.144(5) deg; powder cell a = 10.56(3) A, b = 20.70(3) A, c = 12.39(3)
+    A, beta = 90.1(5) deg, V = 2708(11) A3; Dcalc = 2.39 g/cm3), documented primary-source
+    discrepancies, and 0 mechanisms (SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822).'
   snapshot_sha256: 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822
 - evidence_id: ima_authority
   kind: authority
   reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
-  locator: IMA-CNMNC September 2026 Master List, PDF p. 131
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 130
   accessed_at: '2026-11-06T17:17:00Z'
   support: supports
-  summary: Confirms Macraeite, status A, IMA:2023-065, symbol Mac, ideal formula [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10·4H2O,
-    and single primary reference in European Journal of Mineralogy 36 (2024), 267.
+  summary: Confirms Macraeite, status A, IMA:2023-065 (no IMA symbol assigned), formula
+    [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10*4H2O, and single primary reference in Grey
+    IE, Rewitzer C, Hochleitner R, Kampf AR, Boer S, Mumme WG, Wilson NC (2024) Macraeite,
+    [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10 * 4H2O, a new monoclinic paulkerrite-group
+    mineral, from the Cubos-Mesquitela-Mangualde pegmatite, Portugal. European Journal
+    of Mineralogy 36:267-278.
   snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
 - evidence_id: grey_2024_macraeite_primary
   kind: primary_source
   reference: https://doi.org/10.5194/ejm-36-267-2024
-  locator: Grey IE, Hochleitner R, Rewitzer C, Kampf AR, MacRae CM, Gable RW, Mumme
-    WG, Boer S, and Davidson AL (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10·4H2O,
-    a new monoclinic windhoekite-type mineral from the Hagendorf-Süd pegmatite, Bavaria,
-    Germany, Eur. J. Mineral. 36:267-278, pp. 267-278, Tables 1-6, Figures 1-9 (33
-    bounded passages <= 1,800 B across 12 full-PDF pages; 10 main-text pages / 26
-    passages, plus PNG renders of pages 3 and 7)
+  locator: Grey IE, Rewitzer C, Hochleitner R, Kampf AR, Boer S, Mumme WG, Wilson
+    NC (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10 * 4H2O, a new monoclinic
+    paulkerrite-group mineral, from the Cubos-Mesquitela-Mangualde pegmatite, Portugal.
+    European Journal of Mineralogy 36:267-278, pp. 267-278, Tables 1-7, Figures 1-9
+    (33 bounded passages <= 1,800 B across 12 full-PDF pages; 10 main-text pages /
+    26 passages, plus PNG renders of pages 3 and 7)
   accessed_at: '2026-11-06T17:17:00Z'
   support: supports
   summary: All bounded passages (<= 1,800 B) and single-page 150-DPI PNG table renders
-    inspected from Grey et al. (2024), Eur. J. Mineral. 36:267-278 (33 bounded passages
-    across 12 full-PDF pages; 10 main-text pages / 26 passages, plus PNG renders of
-    pages 3 and 7), confirming verbatim title, type localities, type specimen repositories,
-    chemical composition, unit-cell parameters, structure refinement, and documented
-    internal source discrepancies.
+    inspected from Grey IE, Rewitzer C, Hochleitner R, Kampf AR, Boer S, Mumme WG,
+    Wilson NC (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10 * 4H2O, a new
+    monoclinic paulkerrite-group mineral, from the Cubos-Mesquitela-Mangualde pegmatite,
+    Portugal. European Journal of Mineralogy 36:267-278 (pp. 267-278, Tables 1-7,
+    Figures 1-9 (33 bounded passages <= 1,800 B across 12 full-PDF pages; 10 main-text
+    pages / 26 passages, plus PNG renders of pages 3 and 7)), confirming verbatim
+    title, authors, type locality, type specimen repositories, chemical composition,
+    unit-cell parameters, structure refinement, and documented internal source discrepancies.
   snapshot_sha256: 6e0abe558c782b2619a2fe0d50e1ff14e863f57ff98a751e2ec78cdc3b3920de
-- evidence_id: create_history
+- evidence_id: canonical_history
   kind: record_content
   reference: history/records/macraeite/2026-11-06T171120Z-antigravity-e5c8a1.yaml
-  locator: Canonical CREATE history sidecar history/records/macraeite/2026-11-06T171120Z-antigravity-e5c8a1.yaml
+  locator: Canonical history sidecars (history/records/macraeite/2026-11-06T171120Z-antigravity-e5c8a1.yaml)
   accessed_at: '2026-11-06T17:17:00Z'
   support: supports
-  summary: Canonical CREATE history sidecar (SHA-256 e72352428ed8466bcbc739cc8f32fe85dbba4b7b66e43bebb90937006a941968)
-    matches record curation_history[0].timestamp and top-level record sections.
+  summary: Canonical history sidecar(s) (history/records/macraeite/2026-11-06T171120Z-antigravity-e5c8a1.yaml;
+    latest SHA-256 e72352428ed8466bcbc739cc8f32fe85dbba4b7b66e43bebb90937006a941968)
+    match record curation_history timestamps and top-level sections.
   snapshot_sha256: e72352428ed8466bcbc739cc8f32fe85dbba4b7b66e43bebb90937006a941968
 - evidence_id: validation
   kind: validation
@@ -209,7 +225,7 @@ evidence:
     .venv/bin/cmmmech validate-history --base main
   accessed_at: '2026-11-06T17:17:30Z'
   support: supports
-  summary: Checked 698 record(s); 0 failed. Checked 1419 history record(s); 0 error(s).
+  summary: Checked 698 record(s); 0 failed. Checked 1421 history record(s); 0 error(s).
   snapshot_sha256: 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822
 checks:
 - check_id: validate_records
@@ -229,7 +245,7 @@ checks:
   command: .venv/bin/cmmmech validate-history --base main
   status: passed
   required: true
-  summary: Checked 1419 history record(s); 0 error(s).
+  summary: Checked 1421 history record(s); 0 error(s).
   target_ids:
   - cmmmech:macraeite
   exit_code: 0
@@ -239,15 +255,17 @@ checks:
 assessments:
 - assessment_id: identity_and_primary_source_verification
   area: evidence
-  topic: Verification of IMA:2023-065 identity, Hagendorf-Süd (Germany) and Monte
-    Rubio (Portugal) type localities, EPMA chemistry, monoclinic P21/c structure,
-    and internal source discrepancies for macraeite
+  topic: Verification of IMA:2023-065 identity (no IMA symbol assigned), type locality,
+    type specimens, chemical composition, crystal structure, and internal source discrepancies
+    for macraeite
   outcome: supported
-  summary: All numeric, crystallographic, optical, spectroscopic, and chemical claims
-    in data/records/macraeite.yaml (SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822)
-    match the bounded primary-source passages and rendered table PNGs of Grey et al.
-    (2024) Eur. J. Mineral. 36:267-278 and the September 2026 IMA Master List (p.
-    131).
+  summary: All numeric, crystallographic, and chemical claims in data/records/macraeite.yaml
+    (SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822) match
+    the bounded primary-source passages and rendered table PNGs of Grey IE, Rewitzer
+    C, Hochleitner R, Kampf AR, Boer S, Mumme WG, Wilson NC (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10
+    * 4H2O, a new monoclinic paulkerrite-group mineral, from the Cubos-Mesquitela-Mangualde
+    pegmatite, Portugal. European Journal of Mineralogy 36:267-278 and the September
+    2026 IMA Master List (p. 130).
   target_ids:
   - cmmmech:macraeite
   evidence_ids:
@@ -256,30 +274,30 @@ assessments:
   - grey_2024_macraeite_primary
 - assessment_id: mechanism_absence_and_provenance_verification
   area: provenance
-  topic: Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE
+  topic: Verification of 0 mechanisms (abiotic occurrence only) and append-only history
     provenance
   outcome: supported
   summary: data/records/macraeite.yaml accurately omits mechanisms (0 mechanisms)
     and explicitly discloses that no biological or microbial interaction data are
-    reported in the type mineralogical description. Append-only CREATE history sidecar
-    passes validation with 0 errors.
+    reported in the type mineralogical description. Append-only history sidecar(s)
+    pass validation with 0 errors.
   target_ids:
   - cmmmech:macraeite
   evidence_ids:
   - owner
   - grey_2024_macraeite_primary
-  - create_history
+  - canonical_history
   - validation
 findings: []
 actions: []
 summary: 'Macraeite (IMA:2023-065, status A, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10*4H2O)
   passes primary-source scientific review (scientific_review: true) at SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822
-  against all bounded passages and rendered table PNGs of Grey IE, Hochleitner R,
-  Rewitzer C, Kampf AR, MacRae CM, Gable RW, Mumme WG, Boer S, and Davidson AL (2024)
-  Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10·4H2O, a new monoclinic windhoekite-type
-  mineral from the Hagendorf-Süd pegmatite, Bavaria, Germany, Eur. J. Mineral. 36:267-278,
-  pp. 267-278, Tables 1-6, Figures 1-9 (33 bounded passages <= 1,800 B across 12 full-PDF
-  pages; 10 main-text pages / 26 passages, plus PNG renders of pages 3 and 7).'
+  against all bounded passages and rendered table PNGs of Grey IE, Rewitzer C, Hochleitner
+  R, Kampf AR, Boer S, Mumme WG, Wilson NC (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10
+  * 4H2O, a new monoclinic paulkerrite-group mineral, from the Cubos-Mesquitela-Mangualde
+  pegmatite, Portugal. European Journal of Mineralogy 36:267-278, pp. 267-278, Tables
+  1-7, Figures 1-9 (33 bounded passages <= 1,800 B across 12 full-PDF pages; 10 main-text
+  pages / 26 passages, plus PNG renders of pages 3 and 7).'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes; an independent subagent PR review is executed prior to merge.'
