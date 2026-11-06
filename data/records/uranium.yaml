@@ -317,7 +317,7 @@ causal_graphs:
     evidence:
     - source_ref: kane_2026_bes
       supports: partial
-      explanation: In the Shewanella oneidensis MR-1 bioelectrochemical reactor poised at -800 mV vs Ag/AgCl (T2_Setup.csv, T7_Chronoamperometry.csv), outer-membrane decaheme cytochrome MtrC (SO_1778) serves as the primary terminal reductase of the MtrCAB conduit during reduction of the dissolved U(VI) feed (975 mg/kg U at BESU.8Vb_W.EQ to <0.1 mg/kg U at BESU.8Vb_W.END in T3_AqueousICPOES.csv).
+      explanation: In the Shewanella oneidensis MR-1 bioelectrochemical reactor poised at -800 mV vs Ag/AgCl (T1_TableDefinitions.csv, T2_pH.csv), outer-membrane decaheme cytochrome MtrC (SO_1778) serves as the primary terminal reductase of the MtrCAB conduit during reduction of the dissolved U(VI) feed (975 mg/kg U at BESU.8Vb_W.EQ to <0.1 mg/kg U at BESU.8Vb_W.END in T3_AqueousICPOES.csv).
   - source: omca_cytochrome
     target: oxidized_metal_substrate
     predicate: reduces
@@ -326,7 +326,7 @@ causal_graphs:
     evidence:
     - source_ref: kane_2026_bes
       supports: partial
-      explanation: In the Shewanella oneidensis MR-1 bioelectrochemical reactor poised at -800 mV vs Ag/AgCl (T2_Setup.csv, T7_Chronoamperometry.csv), outer-membrane decaheme cytochrome OmcA (SO_1779) provides parallel extracellular electron transfer capacity at the cell/electrode interface during reduction of the dissolved U(VI) feed (975 mg/kg U at BESU.8Vb_W.EQ to <0.1 mg/kg U at BESU.8Vb_W.END in T3_AqueousICPOES.csv).
+      explanation: In the Shewanella oneidensis MR-1 bioelectrochemical reactor poised at -800 mV vs Ag/AgCl (T1_TableDefinitions.csv, T2_pH.csv), outer-membrane decaheme cytochrome OmcA (SO_1779) provides parallel extracellular electron transfer capacity at the cell/electrode interface during reduction of the dissolved U(VI) feed (975 mg/kg U at BESU.8Vb_W.EQ to <0.1 mg/kg U at BESU.8Vb_W.END in T3_AqueousICPOES.csv).
   - source: oxidized_metal_substrate
     target: reduced_metal_product
     predicate: transforms_into
@@ -361,6 +361,10 @@ curation_history:
   curator: marcin
   action: edit
   summary: 'Cycle 9 Stage 5 (#940, GRP-C9S5-001): Replace generic template descriptions on oxidized_metal_substrate and reduced_metal_product in mr1_bes_uranium_reduction_graph, qualify reduced_metal_product label and edges[3].evidence[0].supports (''partial'') to match kane_2026_bes T3/T6/T8/T9 observations, and lowercase mid-sentence node-label interpolations in edges[1..3].'
+- timestamp: '2026-11-06T00:34:38Z'
+  curator: marcin
+  action: edit
+  summary: 'Cycle 9 Stage 5 (#940, PR #943 review follow-up): Replace (T2_Setup.csv, T7_Chronoamperometry.csv) with canonical kane_2026_bes table locators (T1_TableDefinitions.csv, T2_pH.csv) in causal_graphs[0].edges[1..2].evidence[0].explanation of uranium.yaml.'
 history_refs:
 - history/records/uranium/2026-10-09T044834Z-codex-003092.yaml
 - history/records/uranium/2026-10-09T054958Z-codex-6ae682.yaml
@@ -368,3 +372,4 @@ history_refs:
 - history/records/uranium/2026-10-21T184653Z-claude-8d44a4.yaml
 - history/records/uranium/2026-10-30T222651Z-claude-cd5fe1.yaml
 - history/records/uranium/2026-11-05T234652Z-marcin-a1c586.yaml
+- history/records/uranium/2026-11-06T003438Z-marcin-a0558b.yaml
