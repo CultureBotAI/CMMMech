@@ -12,8 +12,8 @@ reviewer:
   independence: self_review
   independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
     verifying the Cycle 10 Stage 2 causal_graphs and ProteinExample curation in data/records/lutetium.yaml
-    (SHA-256 95f99744ccfb5f09b2b55c64dde556f838581543163cc04adea05de60d69fcbe) against
-    live UniProtKB reference proteomes and cited primary source(s) (breuker_2020:
+    (SHA-256 350adaea260afbb5b67d558d4e11b6fd4b08a28df7878c88781faf32f5b20016) against
+    live UniProtKB reference-proteome grounding and cited primary source(s) (breuker_2020:
     Breuker, Ritter and Schippers (2020). Biosorption of Rare Earth Elements by Different
     Microorganisms in Acidic Solutions. Metals 10, 954; Sections 2.1–2.2 and 3.1,
     Table 1, Figures 1–4 and 7 (https://doi.org/10.3390/met10070954); breuker_2020_supp:
@@ -28,10 +28,13 @@ source:
   state: working_tree
   inputs:
   - path: data/records/lutetium.yaml
-    sha256: 95f99744ccfb5f09b2b55c64dde556f838581543163cc04adea05de60d69fcbe
+    sha256: 350adaea260afbb5b67d558d4e11b6fd4b08a28df7878c88781faf32f5b20016
     role: target
   - path: history/records/lutetium/2026-11-06T050407Z-marcin-c8557b.yaml
     sha256: 1f0335de9920de4d14b9f67fda6b95ef3ce25ad88a26cb7ba1447e4e1bf89aef
+    role: context
+  - path: history/records/lutetium/2026-11-06T062132Z-marcin-3d0649.yaml
+    sha256: 000846356b09750966562259bdf4e57a7e50e354310ce542c2b9a0bc1c0b92d4
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
@@ -48,12 +51,16 @@ targets:
   - repository: CultureBotAI/CMMMech
     path: history/records/lutetium/2026-11-06T050407Z-marcin-c8557b.yaml
     role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/lutetium/2026-11-06T062132Z-marcin-3d0649.yaml
+    role: canonical_history
 scope:
   description: 'Cycle 10 Stage 2 causal-graphs review of data/records/lutetium.yaml
-    (SHA-256 95f99744ccfb5f09b2b55c64dde556f838581543163cc04adea05de60d69fcbe) and
-    its canonical EDIT history sidecar (history/records/lutetium/2026-11-06T050407Z-marcin-c8557b.yaml)
-    verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding,
-    and primary-source evidence fidelity across causal_graph ''bsubtilis_acidic_mixture_biosorption_graph''
+    (SHA-256 350adaea260afbb5b67d558d4e11b6fd4b08a28df7878c88781faf32f5b20016) and
+    its canonical EDIT history sidecar(s) (history/records/lutetium/2026-11-06T050407Z-marcin-c8557b.yaml,
+    history/records/lutetium/2026-11-06T062132Z-marcin-3d0649.yaml) verifying causal-graph
+    node/edge topology, UniProtKB reference-proteome grounding, and primary-source
+    evidence fidelity across causal_graph ''bsubtilis_acidic_mixture_biosorption_graph''
     (mechanism_ref: bsubtilis_acidic_mixture_biosorption, 4 nodes / 3 edges; bsubtilis_ltas_lipoteichoic_acid_synthases:
     [UniProtKB:O34952 (ltaS2, LTAS2_BACSU, UP000001570), UniProtKB:Q797B3 (ltaS1,
     LTAS1_BACSU, UP000001570), UniProtKB:P54496 (yqgS, YQGS_BACSU, UP000001570), UniProtKB:O32206
@@ -70,7 +77,7 @@ evidence:
   locator: Working-tree record data/records/lutetium.yaml (causal_graphs and mechanisms[].protein_examples)
   accessed_at: '2026-11-06T05:05:45Z'
   support: supports
-  summary: 'Curated data/records/lutetium.yaml (SHA-256 95f99744ccfb5f09b2b55c64dde556f838581543163cc04adea05de60d69fcbe)
+  summary: 'Curated data/records/lutetium.yaml (SHA-256 350adaea260afbb5b67d558d4e11b6fd4b08a28df7878c88781faf32f5b20016)
     with causal_graph ''bsubtilis_acidic_mixture_biosorption_graph'' (mechanism_ref:
     bsubtilis_acidic_mixture_biosorption, 4 nodes / 3 edges; bsubtilis_ltas_lipoteichoic_acid_synthases:
     [UniProtKB:O34952 (ltaS2, LTAS2_BACSU, UP000001570), UniProtKB:Q797B3 (ltaS1,
@@ -78,7 +85,7 @@ evidence:
     (yvgJ, YVGJ_BACSU, UP000001570)]), achieving 100% parity between mechanisms[].protein_examples
     and causal_graphs[].nodes[].protein_examples and preserving source-faithful support
     levels and experimental caveats.'
-  snapshot_sha256: 95f99744ccfb5f09b2b55c64dde556f838581543163cc04adea05de60d69fcbe
+  snapshot_sha256: 350adaea260afbb5b67d558d4e11b6fd4b08a28df7878c88781faf32f5b20016
 - evidence_id: primary_source
   kind: primary_source
   reference: https://doi.org/10.3390/met10070954
@@ -119,6 +126,20 @@ evidence:
     ltaS1, UniProtKB:P54496 yqgS, UniProtKB:O32206 yvgJ; EC:2.7.8.40) for bsubtilis_acidic_mixture_biosorption
     (93.3 +/- 2.1% Lu removal at pH 2.51, OD600 = 1.0).'
   snapshot_sha256: 1f0335de9920de4d14b9f67fda6b95ef3ce25ad88a26cb7ba1447e4e1bf89aef
+- evidence_id: edit_history_2
+  kind: record_content
+  reference: history/records/lutetium/2026-11-06T062132Z-marcin-3d0649.yaml
+  locator: Canonical EDIT history sidecar history/records/lutetium/2026-11-06T062132Z-marcin-3d0649.yaml
+  accessed_at: '2026-11-06T05:05:45Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/lutetium/2026-11-06T062132Z-marcin-3d0649.yaml
+    (SHA-256 000846356b09750966562259bdf4e57a7e50e354310ce542c2b9a0bc1c0b92d4): Align
+    lutetium.yaml protein_examples and causal_graphs with curated bsubtilis_acidic_mixture_biosorption
+    parameters (FP medium, 30 C, 120 rpm, 2-4 d; 8-REE chloride mixture at 15 umol/L
+    each, pH 2.5 HCl, 5 g dry biomass/L, 74% relative Lu biosorption at 2 and 4 h
+    in Table S1 exp 2 / Fig 2a) and structured UniProtKB EC annotations (EC:2.7.8.-
+    and EC:2.7.8.46) (Issue #947).'
+  snapshot_sha256: 000846356b09750966562259bdf4e57a7e50e354310ce542c2b9a0bc1c0b92d4
 - evidence_id: validation
   kind: validation
   reference: data/records/lutetium.yaml
@@ -126,10 +147,10 @@ evidence:
     validate-history --base main
   accessed_at: '2026-11-06T05:05:45Z'
   support: supports
-  summary: data/records/lutetium.yaml and history/records/lutetium/2026-11-06T050407Z-marcin-c8557b.yaml
-    pass strict LinkML schema, protein_examples parity, and history validation with
-    0 errors.
-  snapshot_sha256: 95f99744ccfb5f09b2b55c64dde556f838581543163cc04adea05de60d69fcbe
+  summary: data/records/lutetium.yaml and history/records/lutetium/2026-11-06T050407Z-marcin-c8557b.yaml,
+    history/records/lutetium/2026-11-06T062132Z-marcin-3d0649.yaml pass strict LinkML
+    schema, protein_examples parity, and history validation with 0 errors.
+  snapshot_sha256: 350adaea260afbb5b67d558d4e11b6fd4b08a28df7878c88781faf32f5b20016
 checks:
 - check_id: validate_records
   name: Strict corpus validation
@@ -165,7 +186,7 @@ assessments:
     LTAS1_BACSU, UP000001570), UniProtKB:P54496 (yqgS, YQGS_BACSU, UP000001570), UniProtKB:O32206
     (yvgJ, YVGJ_BACSU, UP000001570)])'
   outcome: supported
-  summary: 'Curated data/records/lutetium.yaml (SHA-256 95f99744ccfb5f09b2b55c64dde556f838581543163cc04adea05de60d69fcbe)
+  summary: 'Curated data/records/lutetium.yaml (SHA-256 350adaea260afbb5b67d558d4e11b6fd4b08a28df7878c88781faf32f5b20016)
     with causal_graph ''bsubtilis_acidic_mixture_biosorption_graph'' (mechanism_ref:
     bsubtilis_acidic_mixture_biosorption, 4 nodes / 3 edges; bsubtilis_ltas_lipoteichoic_acid_synthases:
     [UniProtKB:O34952 (ltaS2, LTAS2_BACSU, UP000001570), UniProtKB:Q797B3 (ltaS1,
@@ -177,14 +198,14 @@ assessments:
     10, 954; Sections 2.1–2.2 and 3.1, Table 1, Figures 1–4 and 7 (https://doi.org/10.3390/met10070954);
     breuker_2020_supp: Breuker et al. (2020), supplementary material; Table S1 eight-REE
     experiment and Figures S1–S5 (https://mdpi-res.com/d_attachment/metals/metals-10-00954/article_deploy/metals-10-00954-s001.pdf).
-    Live-verified UniProtKB grounding across UniProtKB:O34952 (LTAS2_BACSU, Lipoteichoic
-    acid synthase 2, gene_symbol: ltaS2, SWISS_PROT, NCBITaxon:224308 Bacillus subtilis
-    subsp. subtilis str. 168, UP000001570); UniProtKB:Q797B3 (LTAS1_BACSU, Lipoteichoic
-    acid synthase 1, gene_symbol: ltaS1, SWISS_PROT, NCBITaxon:224308 Bacillus subtilis
-    subsp. subtilis str. 168, UP000001570); UniProtKB:P54496 (YQGS_BACSU, Minor lipoteichoic
-    acid synthase YqgS, gene_symbol: yqgS, SWISS_PROT, NCBITaxon:224308 Bacillus subtilis
-    subsp. subtilis str. 168, UP000001570); UniProtKB:O32206 (YVGJ_BACSU, putative
-    lipoteichoic acid primase YvgJ, gene_symbol: yvgJ, SWISS_PROT, NCBITaxon:224308
+    Live-verified UniProtKB reference-proteome grounding across UniProtKB:O34952 (LTAS2_BACSU,
+    Lipoteichoic acid synthase 2, gene_symbol: ltaS2, SWISS_PROT, NCBITaxon:224308
+    Bacillus subtilis subsp. subtilis str. 168, UP000001570); UniProtKB:Q797B3 (LTAS1_BACSU,
+    Lipoteichoic acid synthase 1, gene_symbol: ltaS1, SWISS_PROT, NCBITaxon:224308
+    Bacillus subtilis subsp. subtilis str. 168, UP000001570); UniProtKB:P54496 (YQGS_BACSU,
+    Minor lipoteichoic acid synthase YqgS, gene_symbol: yqgS, SWISS_PROT, NCBITaxon:224308
+    Bacillus subtilis subsp. subtilis str. 168, UP000001570); UniProtKB:O32206 (YVGJ_BACSU,
+    putative lipoteichoic acid primase YvgJ, gene_symbol: yvgJ, SWISS_PROT, NCBITaxon:224308
     Bacillus subtilis subsp. subtilis str. 168, UP000001570).'
   target_ids:
   - cmmmech:lutetium
@@ -193,22 +214,33 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
-  summary: data/records/lutetium.yaml was updated exclusively through scripts/curate_causal_graphs.py
-    (curate_record_file), producing append-only history sidecar history/records/lutetium/2026-11-06T050407Z-marcin-c8557b.yaml
-    (SHA-256 1f0335de9920de4d14b9f67fda6b95ef3ce25ad88a26cb7ba1447e4e1bf89aef) and
-    passing all LinkML and history validation gates.
+  summary: 'data/records/lutetium.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar(s) (history/records/lutetium/2026-11-06T050407Z-marcin-c8557b.yaml
+    (SHA-256 1f0335de9920de4d14b9f67fda6b95ef3ce25ad88a26cb7ba1447e4e1bf89aef): Add
+    evidence-backed causal_graphs representation and 4 reviewed Swiss-Prot Bacillus
+    subtilis lipoteichoic acid synthase groundings (UniProtKB:O34952 ltaS2, UniProtKB:Q797B3
+    ltaS1, UniProtKB:P54496 yqgS, UniProtKB:O32206 yvgJ; EC:2.7.8.40) for bsubtilis_acidic_mixture_biosorption
+    (93.3 +/- 2.1% Lu removal at pH 2.51, OD600 = 1.0).; history/records/lutetium/2026-11-06T062132Z-marcin-3d0649.yaml
+    (SHA-256 000846356b09750966562259bdf4e57a7e50e354310ce542c2b9a0bc1c0b92d4): Align
+    lutetium.yaml protein_examples and causal_graphs with curated bsubtilis_acidic_mixture_biosorption
+    parameters (FP medium, 30 C, 120 rpm, 2-4 d; 8-REE chloride mixture at 15 umol/L
+    each, pH 2.5 HCl, 5 g dry biomass/L, 74% relative Lu biosorption at 2 and 4 h
+    in Table S1 exp 2 / Fig 2a) and structured UniProtKB EC annotations (EC:2.7.8.-
+    and EC:2.7.8.46) (Issue #947).) and passing all LinkML and history validation
+    gates.'
   target_ids:
   - cmmmech:lutetium
   evidence_ids:
   - owner
   - edit_history
+  - edit_history_2
   - validation
 findings: []
 actions: []
 summary: 'Lutetium (cmmmech:lutetium) passes Cycle 10 Stage 2 causal-graphs review
-  (scientific_review: true) at SHA-256 95f99744ccfb5f09b2b55c64dde556f838581543163cc04adea05de60d69fcbe:
+  (scientific_review: true) at SHA-256 350adaea260afbb5b67d558d4e11b6fd4b08a28df7878c88781faf32f5b20016:
   Curated data/records/lutetium.yaml with causal_graph ''bsubtilis_acidic_mixture_biosorption_graph''
   (mechanism_ref: bsubtilis_acidic_mixture_biosorption, 4 nodes / 3 edges; bsubtilis_ltas_lipoteichoic_acid_synthases:
   [UniProtKB:O34952 (ltaS2, LTAS2_BACSU, UP000001570), UniProtKB:Q797B3 (ltaS1, LTAS1_BACSU,
@@ -233,6 +265,6 @@ limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes; an independent subagent PR review is executed prior to merge.'
 notes:
-- Executed during Cycle 10 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
-  for cmmmech:lutetium.
+- 'Executed during Cycle 10 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
+  for cmmmech:lutetium (including Issue #947 review-remediation updates).'
 related_reviews: []

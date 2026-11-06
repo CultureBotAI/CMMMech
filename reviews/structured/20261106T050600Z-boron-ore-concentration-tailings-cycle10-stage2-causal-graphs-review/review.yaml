@@ -12,10 +12,10 @@ reviewer:
   independence: self_review
   independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
     verifying the Cycle 10 Stage 2 causal_graphs and ProteinExample curation in data/records/boron-ore-concentration-tailings.yaml
-    (SHA-256 996ab2ddeb25788276a5d444ad14d2918d0da29f2edf2e04b46d15ac72fc5510) against
-    live UniProtKB reference proteomes and cited primary source(s) (ertan2026: Ertan
-    (2026). Investigation of Bioleaching Kinetics of Valuable Metals in Boron Waste.
-    Journal of Anatolian Environmental and Animal Sciences 11:1-8. DOI 10.35229/jaes.1832038;
+    (SHA-256 40a59a9454c55065a6547c308eeebb91c2a18b8bf4e868139ff50ad125b56b3d) against
+    live UniProtKB grounding and cited primary source(s) (ertan2026: Ertan (2026).
+    Investigation of Bioleaching Kinetics of Valuable Metals in Boron Waste. Journal
+    of Anatolian Environmental and Animal Sciences 11:1-8. DOI 10.35229/jaes.1832038;
     Materials and Methods pp. 2-3, Results pp. 3-7, Tables 1-2 and Figures 1-3. Publisher
     PDF prints 13 March 2026; landing page displays 24 March 2026. Full eight-page
     primary article and figures inspected. (https://doi.org/10.35229/jaes.1832038)).'
@@ -28,10 +28,13 @@ source:
   state: working_tree
   inputs:
   - path: data/records/boron-ore-concentration-tailings.yaml
-    sha256: 996ab2ddeb25788276a5d444ad14d2918d0da29f2edf2e04b46d15ac72fc5510
+    sha256: 40a59a9454c55065a6547c308eeebb91c2a18b8bf4e868139ff50ad125b56b3d
     role: target
   - path: history/records/boron-ore-concentration-tailings/2026-11-06T050552Z-marcin-fedadb.yaml
     sha256: 80e936cd889aba71eda10fc20a122370d2770560f1e22ad1e4d857ad1cfa3694
+    role: context
+  - path: history/records/boron-ore-concentration-tailings/2026-11-06T062133Z-marcin-28124a.yaml
+    sha256: 464424645d7c282ce45ff046ce1e704e5682831e611f34712c0f45c338b420b9
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
@@ -48,15 +51,19 @@ targets:
   - repository: CultureBotAI/CMMMech
     path: history/records/boron-ore-concentration-tailings/2026-11-06T050552Z-marcin-fedadb.yaml
     role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/boron-ore-concentration-tailings/2026-11-06T062133Z-marcin-28124a.yaml
+    role: canonical_history
 scope:
   description: 'Cycle 10 Stage 2 causal-graphs review of data/records/boron-ore-concentration-tailings.yaml
-    (SHA-256 996ab2ddeb25788276a5d444ad14d2918d0da29f2edf2e04b46d15ac72fc5510) and
-    its canonical EDIT history sidecar (history/records/boron-ore-concentration-tailings/2026-11-06T050552Z-marcin-fedadb.yaml)
-    verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding,
-    and primary-source evidence fidelity across causal_graph ''fungal_alkali_metal_mobilization_graph''
+    (SHA-256 40a59a9454c55065a6547c308eeebb91c2a18b8bf4e868139ff50ad125b56b3d) and
+    its canonical EDIT history sidecar(s) (history/records/boron-ore-concentration-tailings/2026-11-06T050552Z-marcin-fedadb.yaml,
+    history/records/boron-ore-concentration-tailings/2026-11-06T062133Z-marcin-28124a.yaml)
+    verifying causal-graph node/edge topology, UniProtKB grounding, and primary-source
+    evidence fidelity across causal_graph ''fungal_alkali_metal_mobilization_graph''
     (mechanism_ref: fungal_alkali_metal_mobilization, 3 nodes / 2 edges; aniger_cexa_citrate_exporter:
-    [UniProtKB:A0A254TZW7 (cexA, CEXA_ASPNG, UniProtKB), UniProtKB:G3Y4N5 (cexA, CEXA_ASPNA,
-    UP000006706)]).'
+    [UniProtKB:A0A254TZW7 (cexA, CEXA_ASPNG, species-level UniProtKB entry), UniProtKB:G3Y4N5
+    (cexA, CEXA_ASPNA, UP000006706)]).'
   selection: Cycle 10 Stage 2 causal_graphs curation for cmmmech:boron-ore-concentration-tailings
   coverage: full
   population_size: 1
@@ -70,13 +77,14 @@ evidence:
     (causal_graphs and mechanisms[].protein_examples)
   accessed_at: '2026-11-06T05:05:45Z'
   support: supports
-  summary: 'Curated data/records/boron-ore-concentration-tailings.yaml (SHA-256 996ab2ddeb25788276a5d444ad14d2918d0da29f2edf2e04b46d15ac72fc5510)
+  summary: 'Curated data/records/boron-ore-concentration-tailings.yaml (SHA-256 40a59a9454c55065a6547c308eeebb91c2a18b8bf4e868139ff50ad125b56b3d)
     with causal_graph ''fungal_alkali_metal_mobilization_graph'' (mechanism_ref: fungal_alkali_metal_mobilization,
     3 nodes / 2 edges; aniger_cexa_citrate_exporter: [UniProtKB:A0A254TZW7 (cexA,
-    CEXA_ASPNG, UniProtKB), UniProtKB:G3Y4N5 (cexA, CEXA_ASPNA, UP000006706)]), achieving
-    100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
-    and preserving source-faithful support levels and experimental caveats.'
-  snapshot_sha256: 996ab2ddeb25788276a5d444ad14d2918d0da29f2edf2e04b46d15ac72fc5510
+    CEXA_ASPNG, species-level UniProtKB entry), UniProtKB:G3Y4N5 (cexA, CEXA_ASPNA,
+    UP000006706)]), achieving 100% parity between mechanisms[].protein_examples and
+    causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+    levels and experimental caveats.'
+  snapshot_sha256: 40a59a9454c55065a6547c308eeebb91c2a18b8bf4e868139ff50ad125b56b3d
 - evidence_id: primary_source
   kind: primary_source
   reference: https://doi.org/10.35229/jaes.1832038
@@ -88,9 +96,9 @@ evidence:
     (https://doi.org/10.35229/jaes.1832038)'
   accessed_at: '2026-11-06T05:05:45Z'
   support: supports
-  summary: 'Live-verified UniProtKB reference-proteome grounding across UniProtKB:A0A254TZW7
-    (CEXA_ASPNG, Citrate exporter A, gene_symbol: cexA, SWISS_PROT, NCBITaxon:5061
-    Aspergillus niger, UniProtKB); UniProtKB:G3Y4N5 (CEXA_ASPNA, Citrate exporter
+  summary: 'Live-verified UniProtKB grounding across UniProtKB:A0A254TZW7 (CEXA_ASPNG,
+    Citrate exporter A, gene_symbol: cexA, SWISS_PROT, NCBITaxon:5061 Aspergillus
+    niger, species-level UniProtKB entry); UniProtKB:G3Y4N5 (CEXA_ASPNA, Citrate exporter
     A, gene_symbol: cexA, SWISS_PROT, NCBITaxon:380704 Aspergillus niger ATCC 1015,
     UP000006706). Primary mechanism source(s) (ertan2026: Ertan (2026). Investigation
     of Bioleaching Kinetics of Valuable Metals in Boron Waste. Journal of Anatolian
@@ -114,6 +122,21 @@ evidence:
     citrate exporter groundings (UniProtKB:A0A254TZW7 CEXA_ASPNG and UniProtKB:G3Y4N5
     CEXA_ASPNA) for fungal_alkali_metal_mobilization.'
   snapshot_sha256: 80e936cd889aba71eda10fc20a122370d2770560f1e22ad1e4d857ad1cfa3694
+- evidence_id: edit_history_2
+  kind: record_content
+  reference: history/records/boron-ore-concentration-tailings/2026-11-06T062133Z-marcin-28124a.yaml
+  locator: Canonical EDIT history sidecar history/records/boron-ore-concentration-tailings/2026-11-06T062133Z-marcin-28124a.yaml
+  accessed_at: '2026-11-06T05:05:45Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/boron-ore-concentration-tailings/2026-11-06T062133Z-marcin-28124a.yaml
+    (SHA-256 464424645d7c282ce45ff046ce1e704e5682831e611f34712c0f45c338b420b9): Align
+    boron-ore-concentration-tailings.yaml protein_examples and causal_graphs with
+    curated fungal_alkali_metal_mobilization parameters (Ertan 2026, JAES 11:1-8;
+    Erzurum Technical University A. niger culture; <38 um Espey waste with colemanite,
+    muscovite, quartz, dolomite; 100 mL medium + 2.5 mL spore suspension + 1 g waste
+    at 30 C, 125 rpm, 31 d; ~79% Li, 37% Rb, 30% Cs at day 31; no abiotic control
+    or organic-acid quantification) (Issue #947).'
+  snapshot_sha256: 464424645d7c282ce45ff046ce1e704e5682831e611f34712c0f45c338b420b9
 - evidence_id: validation
   kind: validation
   reference: data/records/boron-ore-concentration-tailings.yaml
@@ -121,10 +144,11 @@ evidence:
     validate-history --base main
   accessed_at: '2026-11-06T05:05:45Z'
   support: supports
-  summary: data/records/boron-ore-concentration-tailings.yaml and history/records/boron-ore-concentration-tailings/2026-11-06T050552Z-marcin-fedadb.yaml
+  summary: data/records/boron-ore-concentration-tailings.yaml and history/records/boron-ore-concentration-tailings/2026-11-06T050552Z-marcin-fedadb.yaml,
+    history/records/boron-ore-concentration-tailings/2026-11-06T062133Z-marcin-28124a.yaml
     pass strict LinkML schema, protein_examples parity, and history validation with
     0 errors.
-  snapshot_sha256: 996ab2ddeb25788276a5d444ad14d2918d0da29f2edf2e04b46d15ac72fc5510
+  snapshot_sha256: 40a59a9454c55065a6547c308eeebb91c2a18b8bf4e868139ff50ad125b56b3d
 checks:
 - check_id: validate_records
   name: Strict corpus validation
@@ -153,25 +177,26 @@ checks:
 assessments:
 - assessment_id: causal_graph_and_protein_grounding
   area: graph
-  topic: 'Verification of causal_graphs structure, UniProtKB reference-proteome grounding,
-    and parity across causal_graph ''fungal_alkali_metal_mobilization_graph'' (mechanism_ref:
+  topic: 'Verification of causal_graphs structure, UniProtKB grounding, and parity
+    across causal_graph ''fungal_alkali_metal_mobilization_graph'' (mechanism_ref:
     fungal_alkali_metal_mobilization, 3 nodes / 2 edges; aniger_cexa_citrate_exporter:
-    [UniProtKB:A0A254TZW7 (cexA, CEXA_ASPNG, UniProtKB), UniProtKB:G3Y4N5 (cexA, CEXA_ASPNA,
-    UP000006706)])'
+    [UniProtKB:A0A254TZW7 (cexA, CEXA_ASPNG, species-level UniProtKB entry), UniProtKB:G3Y4N5
+    (cexA, CEXA_ASPNA, UP000006706)])'
   outcome: supported
-  summary: 'Curated data/records/boron-ore-concentration-tailings.yaml (SHA-256 996ab2ddeb25788276a5d444ad14d2918d0da29f2edf2e04b46d15ac72fc5510)
+  summary: 'Curated data/records/boron-ore-concentration-tailings.yaml (SHA-256 40a59a9454c55065a6547c308eeebb91c2a18b8bf4e868139ff50ad125b56b3d)
     with causal_graph ''fungal_alkali_metal_mobilization_graph'' (mechanism_ref: fungal_alkali_metal_mobilization,
     3 nodes / 2 edges; aniger_cexa_citrate_exporter: [UniProtKB:A0A254TZW7 (cexA,
-    CEXA_ASPNG, UniProtKB), UniProtKB:G3Y4N5 (cexA, CEXA_ASPNA, UP000006706)]), achieving
-    100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
-    and preserving source-faithful support levels and caveats from ertan2026: Ertan
-    (2026). Investigation of Bioleaching Kinetics of Valuable Metals in Boron Waste.
-    Journal of Anatolian Environmental and Animal Sciences 11:1-8. DOI 10.35229/jaes.1832038;
-    Materials and Methods pp. 2-3, Results pp. 3-7, Tables 1-2 and Figures 1-3. Publisher
-    PDF prints 13 March 2026; landing page displays 24 March 2026. Full eight-page
-    primary article and figures inspected. (https://doi.org/10.35229/jaes.1832038).
-    Live-verified UniProtKB grounding across UniProtKB:A0A254TZW7 (CEXA_ASPNG, Citrate
-    exporter A, gene_symbol: cexA, SWISS_PROT, NCBITaxon:5061 Aspergillus niger, UniProtKB);
+    CEXA_ASPNG, species-level UniProtKB entry), UniProtKB:G3Y4N5 (cexA, CEXA_ASPNA,
+    UP000006706)]), achieving 100% parity between mechanisms[].protein_examples and
+    causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+    levels and caveats from ertan2026: Ertan (2026). Investigation of Bioleaching
+    Kinetics of Valuable Metals in Boron Waste. Journal of Anatolian Environmental
+    and Animal Sciences 11:1-8. DOI 10.35229/jaes.1832038; Materials and Methods pp.
+    2-3, Results pp. 3-7, Tables 1-2 and Figures 1-3. Publisher PDF prints 13 March
+    2026; landing page displays 24 March 2026. Full eight-page primary article and
+    figures inspected. (https://doi.org/10.35229/jaes.1832038). Live-verified UniProtKB
+    grounding across UniProtKB:A0A254TZW7 (CEXA_ASPNG, Citrate exporter A, gene_symbol:
+    cexA, SWISS_PROT, NCBITaxon:5061 Aspergillus niger, species-level UniProtKB entry);
     UniProtKB:G3Y4N5 (CEXA_ASPNA, Citrate exporter A, gene_symbol: cexA, SWISS_PROT,
     NCBITaxon:380704 Aspergillus niger ATCC 1015, UP000006706).'
   target_ids:
@@ -181,42 +206,55 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
-  summary: data/records/boron-ore-concentration-tailings.yaml was updated exclusively
+  summary: 'data/records/boron-ore-concentration-tailings.yaml was updated exclusively
     through scripts/curate_causal_graphs.py (curate_record_file), producing append-only
-    history sidecar history/records/boron-ore-concentration-tailings/2026-11-06T050552Z-marcin-fedadb.yaml
-    (SHA-256 80e936cd889aba71eda10fc20a122370d2770560f1e22ad1e4d857ad1cfa3694) and
-    passing all LinkML and history validation gates.
+    history sidecar(s) (history/records/boron-ore-concentration-tailings/2026-11-06T050552Z-marcin-fedadb.yaml
+    (SHA-256 80e936cd889aba71eda10fc20a122370d2770560f1e22ad1e4d857ad1cfa3694): Populate
+    mechanism organisms (NCBITaxon:5061 Aspergillus niger) and add evidence-backed
+    causal_graphs representation with 2 reviewed Swiss-Prot Aspergillus niger CexA
+    citrate exporter groundings (UniProtKB:A0A254TZW7 CEXA_ASPNG and UniProtKB:G3Y4N5
+    CEXA_ASPNA) for fungal_alkali_metal_mobilization.; history/records/boron-ore-concentration-tailings/2026-11-06T062133Z-marcin-28124a.yaml
+    (SHA-256 464424645d7c282ce45ff046ce1e704e5682831e611f34712c0f45c338b420b9): Align
+    boron-ore-concentration-tailings.yaml protein_examples and causal_graphs with
+    curated fungal_alkali_metal_mobilization parameters (Ertan 2026, JAES 11:1-8;
+    Erzurum Technical University A. niger culture; <38 um Espey waste with colemanite,
+    muscovite, quartz, dolomite; 100 mL medium + 2.5 mL spore suspension + 1 g waste
+    at 30 C, 125 rpm, 31 d; ~79% Li, 37% Rb, 30% Cs at day 31; no abiotic control
+    or organic-acid quantification) (Issue #947).) and passing all LinkML and history
+    validation gates.'
   target_ids:
   - cmmmech:boron-ore-concentration-tailings
   evidence_ids:
   - owner
   - edit_history
+  - edit_history_2
   - validation
 findings: []
 actions: []
 summary: 'Boron-ore concentration tailings (cmmmech:boron-ore-concentration-tailings)
   passes Cycle 10 Stage 2 causal-graphs review (scientific_review: true) at SHA-256
-  996ab2ddeb25788276a5d444ad14d2918d0da29f2edf2e04b46d15ac72fc5510: Curated data/records/boron-ore-concentration-tailings.yaml
+  40a59a9454c55065a6547c308eeebb91c2a18b8bf4e868139ff50ad125b56b3d: Curated data/records/boron-ore-concentration-tailings.yaml
   with causal_graph ''fungal_alkali_metal_mobilization_graph'' (mechanism_ref: fungal_alkali_metal_mobilization,
   3 nodes / 2 edges; aniger_cexa_citrate_exporter: [UniProtKB:A0A254TZW7 (cexA, CEXA_ASPNG,
-  UniProtKB), UniProtKB:G3Y4N5 (cexA, CEXA_ASPNA, UP000006706)]), achieving 100% parity
-  between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+  species-level UniProtKB entry), UniProtKB:G3Y4N5 (cexA, CEXA_ASPNA, UP000006706)]),
+  achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
   and preserving source-faithful support levels and experimental caveats from ertan2026:
   Ertan (2026). Investigation of Bioleaching Kinetics of Valuable Metals in Boron
   Waste. Journal of Anatolian Environmental and Animal Sciences 11:1-8. DOI 10.35229/jaes.1832038;
   Materials and Methods pp. 2-3, Results pp. 3-7, Tables 1-2 and Figures 1-3. Publisher
   PDF prints 13 March 2026; landing page displays 24 March 2026. Full eight-page primary
   article and figures inspected. (https://doi.org/10.35229/jaes.1832038). Live-verified
-  UniProtKB reference-proteome grounding across UniProtKB:A0A254TZW7 (CEXA_ASPNG,
-  Citrate exporter A, gene_symbol: cexA, SWISS_PROT, NCBITaxon:5061 Aspergillus niger,
-  UniProtKB); UniProtKB:G3Y4N5 (CEXA_ASPNA, Citrate exporter A, gene_symbol: cexA,
-  SWISS_PROT, NCBITaxon:380704 Aspergillus niger ATCC 1015, UP000006706).'
+  UniProtKB grounding across UniProtKB:A0A254TZW7 (CEXA_ASPNG, Citrate exporter A,
+  gene_symbol: cexA, SWISS_PROT, NCBITaxon:5061 Aspergillus niger, species-level UniProtKB
+  entry); UniProtKB:G3Y4N5 (CEXA_ASPNA, Citrate exporter A, gene_symbol: cexA, SWISS_PROT,
+  NCBITaxon:380704 Aspergillus niger ATCC 1015, UP000006706).'
 limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes; an independent subagent PR review is executed prior to merge.'
 notes:
-- Executed during Cycle 10 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
-  for cmmmech:boron-ore-concentration-tailings.
+- 'Executed during Cycle 10 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
+  for cmmmech:boron-ore-concentration-tailings (including Issue #947 review-remediation
+  updates).'
 related_reviews: []

@@ -11,11 +11,11 @@
 
 ## Summary
 
-Spodumene (cmmmech:spodumene) passes Cycle 10 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 e097384b74caae1fa308beea815d06eb775f0fa9bc883ee5d5665ef6ec1bdf9a: Curated data/records/spodumene.yaml with causal_graph 'acidophile_spodumene_leaching_limit_graph' (mechanism_ref: acidophile-spodumene-leaching-limit, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from kirk2024: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene, and lepidolite using Acidiothiobacillus ferrooxidans. Frontiers in Microbiology 15:1467408. The genus spelling is retained from the published title. (https://doi.org/10.3389/fmicb.2024.1467408); kirk2024_data_v1: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene and lepidolite using Acidiothiobacillus ferrooxidans. Mendeley Data, version 1, published 14 November 2024; CC BY 4.0. Published genus spelling retained. (https://doi.org/10.17632/djkf7tkm8d.1). Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).
+Spodumene (cmmmech:spodumene) passes Cycle 10 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 3b79097d76aa8b03f72c7ccb7eba1d82721265c3da0436eb8327ae34e6492ba1: Curated data/records/spodumene.yaml with causal_graph 'acidophile_spodumene_leaching_limit_graph' (mechanism_ref: acidophile-spodumene-leaching-limit, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from kirk2024: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene, and lepidolite using Acidiothiobacillus ferrooxidans. Frontiers in Microbiology 15:1467408. The genus spelling is retained from the published title. (https://doi.org/10.3389/fmicb.2024.1467408); kirk2024_data_v1: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene and lepidolite using Acidiothiobacillus ferrooxidans. Mendeley Data, version 1, published 14 November 2024; CC BY 4.0. Published genus spelling retained. (https://doi.org/10.17632/djkf7tkm8d.1). Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).
 
 ## Scope And Provenance
 
-Cycle 10 Stage 2 causal-graphs review of data/records/spodumene.yaml (SHA-256 e097384b74caae1fa308beea815d06eb775f0fa9bc883ee5d5665ef6ec1bdf9a) and its canonical EDIT history sidecar (history/records/spodumene/2026-11-06T045848Z-marcin-b14df6.yaml) verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source evidence fidelity across causal_graph 'acidophile_spodumene_leaching_limit_graph' (mechanism_ref: acidophile-spodumene-leaching-limit, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]).
+Cycle 10 Stage 2 causal-graphs review of data/records/spodumene.yaml (SHA-256 3b79097d76aa8b03f72c7ccb7eba1d82721265c3da0436eb8327ae34e6492ba1) and its canonical EDIT history sidecar(s) (history/records/spodumene/2026-11-06T045848Z-marcin-b14df6.yaml, history/records/spodumene/2026-11-06T062554Z-marcin-843a6d.yaml) verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source evidence fidelity across causal_graph 'acidophile_spodumene_leaching_limit_graph' (mechanism_ref: acidophile-spodumene-leaching-limit, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]).
 
 Selection: Cycle 10 Stage 2 causal_graphs curation for cmmmech:spodumene
 Coverage: full; 1 reviewed / 1 in the declared population.
@@ -39,13 +39,13 @@ Working-tree hashes do not imply those bytes were committed.
 
 graph: supported. Targets: cmmmech:spodumene.
 
-Curated data/records/spodumene.yaml (SHA-256 e097384b74caae1fa308beea815d06eb775f0fa9bc883ee5d5665ef6ec1bdf9a) with causal_graph 'acidophile_spodumene_leaching_limit_graph' (mechanism_ref: acidophile-spodumene-leaching-limit, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from kirk2024: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene, and lepidolite using Acidiothiobacillus ferrooxidans. Frontiers in Microbiology 15:1467408. The genus spelling is retained from the published title. (https://doi.org/10.3389/fmicb.2024.1467408); kirk2024_data_v1: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene and lepidolite using Acidiothiobacillus ferrooxidans. Mendeley Data, version 1, published 14 November 2024; CC BY 4.0. Published genus spelling retained. (https://doi.org/10.17632/djkf7tkm8d.1). Live-verified UniProtKB grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).
+Curated data/records/spodumene.yaml (SHA-256 3b79097d76aa8b03f72c7ccb7eba1d82721265c3da0436eb8327ae34e6492ba1) with causal_graph 'acidophile_spodumene_leaching_limit_graph' (mechanism_ref: acidophile-spodumene-leaching-limit, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from kirk2024: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene, and lepidolite using Acidiothiobacillus ferrooxidans. Frontiers in Microbiology 15:1467408. The genus spelling is retained from the published title. (https://doi.org/10.3389/fmicb.2024.1467408); kirk2024_data_v1: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene and lepidolite using Acidiothiobacillus ferrooxidans. Mendeley Data, version 1, published 14 November 2024; CC BY 4.0. Published genus spelling retained. (https://doi.org/10.17632/djkf7tkm8d.1). Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362).
 
-### Verification of canonical EDIT history sidecar and strict schema validation
+### Verification of canonical EDIT history sidecar(s) and strict schema validation
 
 provenance: supported. Targets: cmmmech:spodumene.
 
-data/records/spodumene.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/spodumene/2026-11-06T045848Z-marcin-b14df6.yaml (SHA-256 de194b0ab177d957cbdfc3411b8be33a56ff5ae4cbdd1d9cd41fc175978c532b) and passing all LinkML and history validation gates.
+data/records/spodumene.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar(s) (history/records/spodumene/2026-11-06T045848Z-marcin-b14df6.yaml (SHA-256 de194b0ab177d957cbdfc3411b8be33a56ff5ae4cbdd1d9cd41fc175978c532b): Add evidence-backed causal_graphs representation and 4 live-verified Acidithiobacillus ferrooxidans rus-operon protein groundings (UniProtKB:B7JAQ7, UniProtKB:A0A2W1KH68, UniProtKB:B7JAQ0, UniProtKB:B7JAQ6) for acidophile-spodumene-leaching-limit, preserving the refractory ~1.2% vs ~1.1% day-30 Li extraction boundary (6.5 vs 5.8 mg/L Li).; history/records/spodumene/2026-11-06T062554Z-marcin-843a6d.yaml (SHA-256 0a8ed43cb6f748392f5bb8d66629db5a77329f5d81de70016a11f478e7e325fe): Align spodumene.yaml protein_examples and causal_graphs strictly with curated acidophile-spodumene-leaching-limit evidence (qualitative Bikita alpha-spodumene/quartz XRD, 2 g in 190 mL medium + 10 mL inoculum pulp-density ambiguity, similar inoculated and uninoculated dissolved-Li trajectories with supports: refute, and Section 2.5 absence of post-leach spodumene XRD) (Issue #947).) and passing all LinkML and history validation gates.
 
 ## Findings
 
@@ -60,15 +60,16 @@ No findings recorded within this review's declared scope.
 
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
-| owner | data/records/spodumene.yaml; Working-tree record data/records/spodumene.yaml (causal_graphs and mechanisms[].protein_examples) | supports | Curated data/records/spodumene.yaml (SHA-256 e097384b74caae1fa308beea815d06eb775f0fa9bc883ee5d5665ef6ec1bdf9a) with causal_graph 'acidophile_spodumene_leaching_limit_graph' (mechanism_ref: acidophile-spodumene-leaching-limit, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats. |
+| owner | data/records/spodumene.yaml; Working-tree record data/records/spodumene.yaml (causal_graphs and mechanisms[].protein_examples) | supports | Curated data/records/spodumene.yaml (SHA-256 3b79097d76aa8b03f72c7ccb7eba1d82721265c3da0436eb8327ae34e6492ba1) with causal_graph 'acidophile_spodumene_leaching_limit_graph' (mechanism_ref: acidophile-spodumene-leaching-limit, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats. |
 | primary_source | https://doi.org/10.3389/fmicb.2024.1467408; kirk2024: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene, and lepidolite using Acidiothiobacillus ferrooxidans. Frontiers in Microbiology 15:1467408. The genus spelling is retained from the published title. (https://doi.org/10.3389/fmicb.2024.1467408); kirk2024_data_v1: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene and lepidolite using Acidiothiobacillus ferrooxidans. Mendeley Data, version 1, published 14 November 2024; CC BY 4.0. Published genus spelling retained. (https://doi.org/10.17632/djkf7tkm8d.1) | supports | Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362). Primary mechanism source(s) (kirk2024: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene, and lepidolite using Acidiothiobacillus ferrooxidans. Frontiers in Microbiology 15:1467408. The genus spelling is retained from the published title. (https://doi.org/10.3389/fmicb.2024.1467408); kirk2024_data_v1: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene and lepidolite using Acidiothiobacillus ferrooxidans. Mendeley Data, version 1, published 14 November 2024; CC BY 4.0. Published genus spelling retained. (https://doi.org/10.17632/djkf7tkm8d.1)) report culture-level mineralization, biosorption, or bioleaching without single-gene knockouts; supports: partial is strictly preserved on all enzyme-level edges and ProteinExample evidence items. |
 | edit_history | history/records/spodumene/2026-11-06T045848Z-marcin-b14df6.yaml; Canonical EDIT history sidecar history/records/spodumene/2026-11-06T045848Z-marcin-b14df6.yaml | supports | Canonical EDIT history sidecar history/records/spodumene/2026-11-06T045848Z-marcin-b14df6.yaml (SHA-256 de194b0ab177d957cbdfc3411b8be33a56ff5ae4cbdd1d9cd41fc175978c532b): Add evidence-backed causal_graphs representation and 4 live-verified Acidithiobacillus ferrooxidans rus-operon protein groundings (UniProtKB:B7JAQ7, UniProtKB:A0A2W1KH68, UniProtKB:B7JAQ0, UniProtKB:B7JAQ6) for acidophile-spodumene-leaching-limit, preserving the refractory ~1.2% vs ~1.1% day-30 Li extraction boundary (6.5 vs 5.8 mg/L Li). |
-| validation | data/records/spodumene.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/spodumene.yaml and history/records/spodumene/2026-11-06T045848Z-marcin-b14df6.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
+| edit_history_2 | history/records/spodumene/2026-11-06T062554Z-marcin-843a6d.yaml; Canonical EDIT history sidecar history/records/spodumene/2026-11-06T062554Z-marcin-843a6d.yaml | supports | Canonical EDIT history sidecar history/records/spodumene/2026-11-06T062554Z-marcin-843a6d.yaml (SHA-256 0a8ed43cb6f748392f5bb8d66629db5a77329f5d81de70016a11f478e7e325fe): Align spodumene.yaml protein_examples and causal_graphs strictly with curated acidophile-spodumene-leaching-limit evidence (qualitative Bikita alpha-spodumene/quartz XRD, 2 g in 190 mL medium + 10 mL inoculum pulp-density ambiguity, similar inoculated and uninoculated dissolved-Li trajectories with supports: refute, and Section 2.5 absence of post-leach spodumene XRD) (Issue #947). |
+| validation | data/records/spodumene.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/spodumene.yaml and history/records/spodumene/2026-11-06T045848Z-marcin-b14df6.yaml, history/records/spodumene/2026-11-06T062554Z-marcin-843a6d.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
 
 ## Limits And Additional Notes
 
 - Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
-- Executed during Cycle 10 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py for cmmmech:spodumene.
+- Executed during Cycle 10 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py for cmmmech:spodumene (including Issue #947 review-remediation updates).
 
 ## Complete Structured Record
 
@@ -89,9 +90,9 @@ reviewer:
   independence: self_review
   independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
     verifying the Cycle 10 Stage 2 causal_graphs and ProteinExample curation in data/records/spodumene.yaml
-    (SHA-256 e097384b74caae1fa308beea815d06eb775f0fa9bc883ee5d5665ef6ec1bdf9a) against
-    live UniProtKB reference proteomes and cited primary source(s) (kirk2024: Kirk
-    et al. (2024). Bioleaching of lithium from jadarite, spodumene, and lepidolite
+    (SHA-256 3b79097d76aa8b03f72c7ccb7eba1d82721265c3da0436eb8327ae34e6492ba1) against
+    live UniProtKB reference-proteome grounding and cited primary source(s) (kirk2024:
+    Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene, and lepidolite
     using Acidiothiobacillus ferrooxidans. Frontiers in Microbiology 15:1467408. The
     genus spelling is retained from the published title. (https://doi.org/10.3389/fmicb.2024.1467408);
     kirk2024_data_v1: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene
@@ -106,10 +107,13 @@ source:
   state: working_tree
   inputs:
   - path: data/records/spodumene.yaml
-    sha256: e097384b74caae1fa308beea815d06eb775f0fa9bc883ee5d5665ef6ec1bdf9a
+    sha256: 3b79097d76aa8b03f72c7ccb7eba1d82721265c3da0436eb8327ae34e6492ba1
     role: target
   - path: history/records/spodumene/2026-11-06T045848Z-marcin-b14df6.yaml
     sha256: de194b0ab177d957cbdfc3411b8be33a56ff5ae4cbdd1d9cd41fc175978c532b
+    role: context
+  - path: history/records/spodumene/2026-11-06T062554Z-marcin-843a6d.yaml
+    sha256: 0a8ed43cb6f748392f5bb8d66629db5a77329f5d81de70016a11f478e7e325fe
     role: context
   - path: src/cmmmech/schema/cmmmech.yaml
     sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
@@ -126,12 +130,16 @@ targets:
   - repository: CultureBotAI/CMMMech
     path: history/records/spodumene/2026-11-06T045848Z-marcin-b14df6.yaml
     role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/spodumene/2026-11-06T062554Z-marcin-843a6d.yaml
+    role: canonical_history
 scope:
   description: 'Cycle 10 Stage 2 causal-graphs review of data/records/spodumene.yaml
-    (SHA-256 e097384b74caae1fa308beea815d06eb775f0fa9bc883ee5d5665ef6ec1bdf9a) and
-    its canonical EDIT history sidecar (history/records/spodumene/2026-11-06T045848Z-marcin-b14df6.yaml)
-    verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding,
-    and primary-source evidence fidelity across causal_graph ''acidophile_spodumene_leaching_limit_graph''
+    (SHA-256 3b79097d76aa8b03f72c7ccb7eba1d82721265c3da0436eb8327ae34e6492ba1) and
+    its canonical EDIT history sidecar(s) (history/records/spodumene/2026-11-06T045848Z-marcin-b14df6.yaml,
+    history/records/spodumene/2026-11-06T062554Z-marcin-843a6d.yaml) verifying causal-graph
+    node/edge topology, UniProtKB reference-proteome grounding, and primary-source
+    evidence fidelity across causal_graph ''acidophile_spodumene_leaching_limit_graph''
     (mechanism_ref: acidophile-spodumene-leaching-limit, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase:
     [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975,
     A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0
@@ -148,7 +156,7 @@ evidence:
   locator: Working-tree record data/records/spodumene.yaml (causal_graphs and mechanisms[].protein_examples)
   accessed_at: '2026-11-06T05:05:45Z'
   support: supports
-  summary: 'Curated data/records/spodumene.yaml (SHA-256 e097384b74caae1fa308beea815d06eb775f0fa9bc883ee5d5665ef6ec1bdf9a)
+  summary: 'Curated data/records/spodumene.yaml (SHA-256 3b79097d76aa8b03f72c7ccb7eba1d82721265c3da0436eb8327ae34e6492ba1)
     with causal_graph ''acidophile_spodumene_leaching_limit_graph'' (mechanism_ref:
     acidophile-spodumene-leaching-limit, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase:
     [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975,
@@ -156,7 +164,7 @@ evidence:
     (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]),
     achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
     and preserving source-faithful support levels and experimental caveats.'
-  snapshot_sha256: e097384b74caae1fa308beea815d06eb775f0fa9bc883ee5d5665ef6ec1bdf9a
+  snapshot_sha256: 3b79097d76aa8b03f72c7ccb7eba1d82721265c3da0436eb8327ae34e6492ba1
 - evidence_id: primary_source
   kind: primary_source
   reference: https://doi.org/10.3389/fmicb.2024.1467408
@@ -198,6 +206,20 @@ evidence:
     UniProtKB:B7JAQ0, UniProtKB:B7JAQ6) for acidophile-spodumene-leaching-limit, preserving
     the refractory ~1.2% vs ~1.1% day-30 Li extraction boundary (6.5 vs 5.8 mg/L Li).'
   snapshot_sha256: de194b0ab177d957cbdfc3411b8be33a56ff5ae4cbdd1d9cd41fc175978c532b
+- evidence_id: edit_history_2
+  kind: record_content
+  reference: history/records/spodumene/2026-11-06T062554Z-marcin-843a6d.yaml
+  locator: Canonical EDIT history sidecar history/records/spodumene/2026-11-06T062554Z-marcin-843a6d.yaml
+  accessed_at: '2026-11-06T05:05:45Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/spodumene/2026-11-06T062554Z-marcin-843a6d.yaml
+    (SHA-256 0a8ed43cb6f748392f5bb8d66629db5a77329f5d81de70016a11f478e7e325fe): Align
+    spodumene.yaml protein_examples and causal_graphs strictly with curated acidophile-spodumene-leaching-limit
+    evidence (qualitative Bikita alpha-spodumene/quartz XRD, 2 g in 190 mL medium
+    + 10 mL inoculum pulp-density ambiguity, similar inoculated and uninoculated dissolved-Li
+    trajectories with supports: refute, and Section 2.5 absence of post-leach spodumene
+    XRD) (Issue #947).'
+  snapshot_sha256: 0a8ed43cb6f748392f5bb8d66629db5a77329f5d81de70016a11f478e7e325fe
 - evidence_id: validation
   kind: validation
   reference: data/records/spodumene.yaml
@@ -205,10 +227,10 @@ evidence:
     validate-history --base main
   accessed_at: '2026-11-06T05:05:45Z'
   support: supports
-  summary: data/records/spodumene.yaml and history/records/spodumene/2026-11-06T045848Z-marcin-b14df6.yaml
-    pass strict LinkML schema, protein_examples parity, and history validation with
-    0 errors.
-  snapshot_sha256: e097384b74caae1fa308beea815d06eb775f0fa9bc883ee5d5665ef6ec1bdf9a
+  summary: data/records/spodumene.yaml and history/records/spodumene/2026-11-06T045848Z-marcin-b14df6.yaml,
+    history/records/spodumene/2026-11-06T062554Z-marcin-843a6d.yaml pass strict LinkML
+    schema, protein_examples parity, and history validation with 0 errors.
+  snapshot_sha256: 3b79097d76aa8b03f72c7ccb7eba1d82721265c3da0436eb8327ae34e6492ba1
 checks:
 - check_id: validate_records
   name: Strict corpus validation
@@ -244,7 +266,7 @@ assessments:
     A0A2W1KH68_ACIFR, UP000248886)]; aferro_rus_cyc1_periplasmic_relay: [UniProtKB:B7JAQ0
     (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)])'
   outcome: supported
-  summary: 'Curated data/records/spodumene.yaml (SHA-256 e097384b74caae1fa308beea815d06eb775f0fa9bc883ee5d5665ef6ec1bdf9a)
+  summary: 'Curated data/records/spodumene.yaml (SHA-256 3b79097d76aa8b03f72c7ccb7eba1d82721265c3da0436eb8327ae34e6492ba1)
     with causal_graph ''acidophile_spodumene_leaching_limit_graph'' (mechanism_ref:
     acidophile-spodumene-leaching-limit, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase:
     [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975,
@@ -258,8 +280,8 @@ assessments:
     kirk2024_data_v1: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene
     and lepidolite using Acidiothiobacillus ferrooxidans. Mendeley Data, version 1,
     published 14 November 2024; CC BY 4.0. Published genus spelling retained. (https://doi.org/10.17632/djkf7tkm8d.1).
-    Live-verified UniProtKB grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome
-    c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans
+    Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2,
+    Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans
     ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C,
     gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans,
     UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT,
@@ -273,22 +295,33 @@ assessments:
   - primary_source
 - assessment_id: provenance_and_validation_verification
   area: provenance
-  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
   outcome: supported
-  summary: data/records/spodumene.yaml was updated exclusively through scripts/curate_causal_graphs.py
-    (curate_record_file), producing append-only history sidecar history/records/spodumene/2026-11-06T045848Z-marcin-b14df6.yaml
-    (SHA-256 de194b0ab177d957cbdfc3411b8be33a56ff5ae4cbdd1d9cd41fc175978c532b) and
-    passing all LinkML and history validation gates.
+  summary: 'data/records/spodumene.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar(s) (history/records/spodumene/2026-11-06T045848Z-marcin-b14df6.yaml
+    (SHA-256 de194b0ab177d957cbdfc3411b8be33a56ff5ae4cbdd1d9cd41fc175978c532b): Add
+    evidence-backed causal_graphs representation and 4 live-verified Acidithiobacillus
+    ferrooxidans rus-operon protein groundings (UniProtKB:B7JAQ7, UniProtKB:A0A2W1KH68,
+    UniProtKB:B7JAQ0, UniProtKB:B7JAQ6) for acidophile-spodumene-leaching-limit, preserving
+    the refractory ~1.2% vs ~1.1% day-30 Li extraction boundary (6.5 vs 5.8 mg/L Li).;
+    history/records/spodumene/2026-11-06T062554Z-marcin-843a6d.yaml (SHA-256 0a8ed43cb6f748392f5bb8d66629db5a77329f5d81de70016a11f478e7e325fe):
+    Align spodumene.yaml protein_examples and causal_graphs strictly with curated
+    acidophile-spodumene-leaching-limit evidence (qualitative Bikita alpha-spodumene/quartz
+    XRD, 2 g in 190 mL medium + 10 mL inoculum pulp-density ambiguity, similar inoculated
+    and uninoculated dissolved-Li trajectories with supports: refute, and Section
+    2.5 absence of post-leach spodumene XRD) (Issue #947).) and passing all LinkML
+    and history validation gates.'
   target_ids:
   - cmmmech:spodumene
   evidence_ids:
   - owner
   - edit_history
+  - edit_history_2
   - validation
 findings: []
 actions: []
 summary: 'Spodumene (cmmmech:spodumene) passes Cycle 10 Stage 2 causal-graphs review
-  (scientific_review: true) at SHA-256 e097384b74caae1fa308beea815d06eb775f0fa9bc883ee5d5665ef6ec1bdf9a:
+  (scientific_review: true) at SHA-256 3b79097d76aa8b03f72c7ccb7eba1d82721265c3da0436eb8327ae34e6492ba1:
   Curated data/records/spodumene.yaml with causal_graph ''acidophile_spodumene_leaching_limit_graph''
   (mechanism_ref: acidophile-spodumene-leaching-limit, 4 nodes / 3 edges; aferro_cyc2_outer_membrane_iron_oxidase:
   [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975,
@@ -314,7 +347,7 @@ limitations:
 - 'Review is conducted in single-agent Goal Mode (independence: self_review) against
   working-tree bytes; an independent subagent PR review is executed prior to merge.'
 notes:
-- Executed during Cycle 10 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
-  for cmmmech:spodumene.
+- 'Executed during Cycle 10 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
+  for cmmmech:spodumene (including Issue #947 review-remediation updates).'
 related_reviews: []
 ```
