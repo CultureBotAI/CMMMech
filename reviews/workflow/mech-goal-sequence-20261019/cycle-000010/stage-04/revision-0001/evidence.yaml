@@ -1,0 +1,108 @@
+schema_version: 1.0.0
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+run_id: mech-goal-sequence-20261019
+cycle: 10
+stage: 4
+revision: 1
+outcome: completed
+summary: Completed full-inventory Cycle 10 Stage 4 scientific and structural review of all 693
+  eligible CMMMech records at frozen commit 0ca12c227e69903577eb76e0ee8d0dbb0314fb20 across
+  6 disjoint material_kind cohort reviews (66 element, 442 mineral, 7 mineral_group, 36 commodity,
+  31 primary_resource, 111 secondary_resource), 1 cross-cohort causal_graphs/protein_examples
+  review (172 records), and 3 single-record reviews (calcite, brushite, strontianite). Preserved
+  3 open minor findings (cmmmech-cycle10-stage4-finding-0001, cmmmech-cycle10-stage4-finding-0002,
+  cmmmech-cycle10-stage4-finding-0003) across 6 distinct records for Stage 5 grouped remediation.
+source_revision: 0ca12c227e69903577eb76e0ee8d0dbb0314fb20
+scope_frozen_at: '2026-11-06T08:30:00Z'
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000009/stage-05/revision-0001/evidence.yaml
+  sha256: eee108b6558e5a36f31636cf96117daf4935c1893f4b9d1735dfae319fc633f6
+artifacts:
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000010/stage-04/revision-0001/review_report.md
+  sha256: 6e3517a4b3c8cba5235f36c071ca6d927158605213ebb004cb2c52fb776a6fe2
+  kind: review_report
+- path: reviews/workflow/mech-goal-sequence-20261019/cycle-000010/stage-04/revision-0001/review_findings.yaml
+  sha256: a0b42e544394e241eeb090d21317a734a485a85dc1e3c6536714dbff23c0e48f
+  kind: review_findings
+findings:
+- finding_id: cmmmech-cycle10-stage4-finding-0001
+  status: open
+  summary: 'Across the three Sporosarcina pasteurii DSM 33 Cornish geothermal-brine MICP pretreatment
+    records from Rehmanji et al. (2025, RSC Advances 15:43263-43274, DOI:10.1039/d5ra06824j,
+    rehmanji2025 / rehmanji2025_si) — data/records/calcite.yaml (cmmmech:calcite, mineral, causal_graphs[0]
+    pasteurii_geothermal_brine_calcite_graph, lines 236-385), data/records/vaterite.yaml (cmmmech:vaterite,
+    mineral, causal_graphs[0] pasteurii_geothermal_brine_vaterite_graph, lines 179-328), and
+    data/records/lithium-bearing-geothermal-brine.yaml (cmmmech:lithium-bearing-geothermal-brine,
+    primary_resource, causal_graphs[0] pasteurii_lithium_brine_pretreatment_graph, lines 174-324)
+    — nodes[2].description (dissolved_metal_cations; calcite.yaml lines 345-346, vaterite.yaml
+    lines 288-289, lithium-bearing-geothermal-brine.yaml lines 284-285) and nodes[3].description
+    (precipitated_mineral_phase; calcite.yaml lines 351-352, vaterite.yaml lines 294-295, lithium-bearing-geothermal-brine.yaml
+    lines 290-291) retain generic template descriptions repeating their capitalized node labels
+    verbatim in parentheses (''Dissolved cations (<Label>) undergoing carbonate/phosphate precipitation.''
+    and ''Solid mineral phase (<Label>) formed via ureolytic alkalinization.''), including the
+    inapplicable ''/phosphate'' wording (also present on edges[2].relationship: ''cation precipitation
+    with carbonate/phosphate'' at calcite.yaml line 378, vaterite.yaml line 321, and lithium-bearing-geothermal-brine.yaml
+    line 317) in a phosphate-free carbonate geothermal-brine experiment. Furthermore, edges[0].evidence[0].explanation
+    (calcite.yaml line 363, vaterite.yaml line 306, lithium-bearing-geothermal-brine.yaml line
+    302) retains the generic 70-character template string (''Ureolytic activity increases pH
+    and dissolved carbonate concentration.''), and edges[1..2] (calcite.yaml lines 364-385,
+    vaterite.yaml lines 307-328, lithium-bearing-geothermal-brine.yaml lines 303-324) interpolate
+    capitalized node labels mid-sentence with plural-subject singular-verb agreement (''Dissolved
+    Ca(II), Mg(II), Mn, and Sr ... precipitates into Precipitated ...'') and assert supports:
+    support with generic one-line explanations that omit the ex situ mixed-phase XRD assignment
+    (Figure S7 p. 24: vaterite phase 1, calcite phase 2, magnesite), absence of matched-pH chemical
+    or killed-cell controls, and ICP-OES aliquot / saturation-model caveats documented in mechanisms[...].evidence[2..3]
+    (supports: partial).'
+- finding_id: cmmmech-cycle10-stage4-finding-0002
+  status: open
+  summary: 'In data/records/brushite.yaml (cmmmech:brushite, mineral, Heveran et al. 2019 Scientific
+    Reports 9:14721, DOI:10.1038/s41598-019-51133-9; causal_graphs[0] ureolytic_brushite_calcite_phase_transition_graph,
+    lines 187-339), nodes[2].description (dissolved_metal_cations, lines 299-300) and nodes[3].description
+    (precipitated_mineral_phase, lines 305-306) retain generic template descriptions repeating
+    their capitalized node labels verbatim in parentheses (''Dissolved cations (Dissolved Ca(II)
+    and phosphate in acidic pre-mineralization solution) undergoing carbonate/phosphate precipitation.''
+    and ''Solid mineral phase (Brushite (CaHPO4·2H2O) and calcium carbonate co-precipitate)
+    formed via ureolytic alkalinization.''), where nodes[3].description and edges[1..2] (lines
+    318-339, supports: support) depict brushite as formed via ureolytic alkalinization even
+    though mechanisms[0] (lines 46-51, 68-89) explicitly establishes that brushite and apatite
+    precipitate initially in cell-free medium and nonureolytic Escherichia coli HB101 controls
+    (Figure 2D-E) as well as early HB101/ure-integration cultures (Figure 2B, Figure 3I-L) and
+    are subsequently replaced in bulk XRD by calcite as ureolytic alkalinization progresses
+    and dissolved phosphorus returns to solution (Figures 1G-H, 2B, 3; supports: partial), with
+    weak local Raman phosphate signals persisting at 7 d calcite indentation sites (Table 2).
+    Furthermore, edges[0].evidence[0].explanation (line 317) uses the generic 70-character template
+    string, edges[1..2] interpolate capitalized node labels mid-sentence with plural-subject
+    singular-verb grammar (''Dissolved Ca(II) and phosphate ... precipitates into ...''), and
+    edges[2].evidence[0].explanation (line 338) cites ''XRD/SEM-EDS'' whereas Heveran et al.
+    (2019) used XRD, SEM, Raman, and WDS (mechanisms[0].context line 63).'
+- finding_id: cmmmech-cycle10-stage4-finding-0003
+  status: open
+  summary: 'In data/records/strontianite.yaml (cmmmech:strontianite, mineral, Natalio & Maria
+    2024 ACS Appl. Mater. Interfaces 16(5):6327-6336, DOI:10.1021/acsami.3c13665; causal_graphs[0]
+    pasteurii_strontianite_pla_coating_graph, lines 190-338) and data/records/smithsonite.yaml
+    (cmmmech:smithsonite, mineral, Huang et al. 2025 Biogeotechnics 3:100106, DOI:10.1016/j.bgtech.2024.100106;
+    causal_graphs[0] pasteurii_smithsonite_precipitation_graph, lines 192-341), nodes[2].description
+    (strontianite.yaml lines 299-300) and nodes[3].description (strontianite.yaml line 305;
+    smithsonite.yaml lines 307-308) retain generic template descriptions repeating their capitalized
+    node labels in parentheses (''Dissolved cations (Dissolved Sr2+ (SrCl2) in urea-containing
+    medium) undergoing carbonate/phosphate precipitation.'' and ''Solid mineral phase (<Label>)
+    formed via ureolytic alkalinization...''), edges[2].relationship (strontianite.yaml line
+    331; smithsonite.yaml line 334) states ''cation precipitation with carbonate/phosphate''
+    despite both studies using phosphate-free chloride-urea media (SrCl2 and ZnCl2), edges[0].evidence[0].explanation
+    (strontianite.yaml line 316; smithsonite.yaml line 319) uses the generic 70-character template
+    string, and edges[1..2] (strontianite.yaml lines 317-338; smithsonite.yaml lines 320-341)
+    interpolate capitalized node labels mid-sentence with generic one-line explanations and
+    supports: support on edges[1] despite mechanisms[0] noting the absence of urease knockout/inhibition
+    or matched-pH abiotic controls (supports: partial). Additionally, in data/records/smithsonite.yaml,
+    edges[2].evidence[0].explanation (lines 340-341) cites ''XRD, FTIR, SEM-EDS, and solution
+    Zn depletion analysis in huang2025'', whereas mechanisms[0].evidence[0..1] (lines 66-87)
+    documents only powder XRD (PDF 08-0449 on 105 C-dried precipitate at 10 mmol/L Zn and 100
+    mmol/L urea, Figure 2U), AAS solution Zn removal (99.89% at 1 mmol/L Zn to 40.67% at 10
+    mmol/L Zn, Figure 2M), and Nessler ammonium / pH assays without FTIR or SEM-EDS.'
+groups: []
+carry_forward_ids:
+- cmmmech-cycle10-stage4-finding-0001
+- cmmmech-cycle10-stage4-finding-0002
+- cmmmech-cycle10-stage4-finding-0003
+infra_tasks: []
