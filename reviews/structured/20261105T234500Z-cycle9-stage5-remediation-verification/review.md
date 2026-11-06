@@ -1,0 +1,789 @@
+# Cycle 9 Stage 5 Post-Remediation Verification Review: 7 Remediated CMMMech Records
+
+- Review: 20261105T234500Z-cycle9-stage5-remediation-verification
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-05T23:44:00Z
+- Finished UTC: 2026-11-05T23:45:00Z
+- Reviewer: antigravity / cmmmech-cycle9-stage5-remediation-reviewer (self_review)
+- Completion: completed
+- Verdict: pass
+- Scientific review: true
+
+## Summary
+
+Post-remediation verification review across all 7 CMMMech records modified in Cycle 9 Stage 5 (2 element, 4 mineral, and 1 mineral_group records) resolving all 3 open Cycle 9 Stage 4 review findings under GitHub Issues #940 (GRP-C9S5-001: uranium.yaml and vanadium.yaml Shewanella oneidensis MR-1 bioelectrochemical reduction causal_graphs[0] updated with T2/T3/T6/T7/T8/T9 source-specific descriptions on oxidized_metal_substrate and reduced_metal_product, qualified reduced_metal_product label and edges[3].evidence[0].supports: partial in uranium.yaml, and lowercase study-specific prose in edges[1..3]), #941 (GRP-C9S5-002: rhodochrosite.yaml and chlorite.yaml Shewanella oneidensis MR-1 causal_graphs[0] updated to align nodes[3..4] descriptions in rhodochrosite.yaml with Johnson et al. 2016 modified M1 medium and XRD/XAS product characterization and to replace capitalized mid-sentence node labels and generic one-line explanations in edges[1..3] of rhodochrosite.yaml and edges[1..2] of chlorite.yaml), and #942 (GRP-C9S5-003: asbolane.yaml, feitknechtite.yaml, and pyrochroite.yaml Geobacter sulfurreducens Chapter 4 causal_graphs[0] updated to replace parenthetical label-repeating template descriptions on nodes[2..3] and lowercase mid-sentence node-label interpolations in causal_graphs[0].description and edges[0].description). All 7 records pass strict validation, history validation, and page rendering checks with 0 open findings.
+
+## Scope And Provenance
+
+All 7 distinct CMMMech records affected by the 3 Cycle 9 Stage 4 findings carried into Stage 5 (2 Shewanella oneidensis MR-1 BES element records in GRP-C9S5-001 / #940, 2 Shewanella oneidensis MR-1 mineral/mineral_group records in GRP-C9S5-002 / #941, and 3 Geobacter sulfurreducens Mn/Co/Ni oxide/hydroxide mineral records in GRP-C9S5-003 / #942).
+
+Selection: cycle9_stage4_open_finding_targets
+Coverage: full; 7 reviewed / 7 in the declared population.
+Source: working_tree at Git base ae4562b6149ad2bb0af3e52290329a8f7e58769b.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:asbolane | data/records/asbolane.yaml | maintained | Asbolane |
+| cmmmech:chlorite | data/records/chlorite.yaml | maintained | Chlorite group |
+| cmmmech:feitknechtite | data/records/feitknechtite.yaml | maintained | Feitknechtite |
+| cmmmech:pyrochroite | data/records/pyrochroite.yaml | maintained | Pyrochroite |
+| cmmmech:rhodochrosite | data/records/rhodochrosite.yaml | maintained | Rhodochrosite |
+| cmmmech:uranium | data/records/uranium.yaml | maintained | Uranium |
+| cmmmech:vanadium | data/records/vanadium.yaml | maintained | Vanadium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict LinkML and semantic record validation | passed | True | cmmmech:asbolane, cmmmech:chlorite, cmmmech:feitknechtite, cmmmech:pyrochroite, cmmmech:rhodochrosite, cmmmech:uranium, cmmmech:vanadium | All 688 records (including all 7 remediated records) pass .venv/bin/cmmmech validate --require-records with 0 errors. |
+| Append-only history sidecar validation | passed | True | cmmmech:asbolane, cmmmech:chlorite, cmmmech:feitknechtite, cmmmech:pyrochroite, cmmmech:rhodochrosite, cmmmech:uranium, cmmmech:vanadium | All 7 new EDIT history sidecars and existing history sidecars pass .venv/bin/cmmmech validate-history --base main with 0 errors. |
+| Kane et al. (2026) BES uranium.yaml and vanadium.yaml causal_graphs[0] concordance (#940) | passed | True | cmmmech:uranium, cmmmech:vanadium | Verified that oxidized_metal_substrate and reduced_metal_product in uranium.yaml and vanadium.yaml carry source-specific T2/T3/T6/T8/T9 descriptions, uranium.yaml causal_graphs[0].nodes[4].label is qualified as 'Depleted aqueous U and carbon-felt electrode-associated uranium deposits (unverified solid valence and phase)' with supports: partial on edges[3], and edges[1..3] in both records use lowercase mid-sentence prose. |
+| Johnson et al. (2016) rhodochrosite.yaml and Brookshaw et al. (2014) chlorite.yaml causal_graphs[0] concordance (#941) | passed | True | cmmmech:rhodochrosite, cmmmech:chlorite | Verified that rhodochrosite.yaml causal_graphs[0].nodes[3..4] describe the modified M1 medium (~6.3 mM colloidal MnO2, 20 mM lactate, no added phosphate, pH 8 under N2) and XRD/XAS-verified rhodochrosite (~73%) + dissolved/adsorbed Mn(II) (~27%), and edges[1..3] of rhodochrosite.yaml and edges[1..2] of chlorite.yaml use lowercase mid-sentence node labels and study-specific evidence explanations. |
+| Buchanan (2021/2022) Chapter 4 asbolane.yaml, feitknechtite.yaml, and pyrochroite.yaml causal_graphs[0] concordance (#942) | passed | True | cmmmech:asbolane, cmmmech:feitknechtite, cmmmech:pyrochroite | Verified that nodes[2..3] across asbolane.yaml, feitknechtite.yaml, and pyrochroite.yaml replace parenthetical label-repeating template descriptions with Chapter 4 assay and ICP-MS/XRD/XAS/SXM product descriptions, and causal_graphs[0].description and edges[0].description use lowercase mid-sentence substrate/product references. |
+
+## Scientific And Domain Assessments
+
+### Kane et al. (2026) BES uranium.yaml and vanadium.yaml causal_graphs[0] node/edge descriptions and uranium product qualification (GRP-C9S5-001, #940)
+
+graph: supported. Targets: cmmmech:uranium, cmmmech:vanadium.
+
+Both Shewanella oneidensis MR-1 BES records (uranium.yaml and vanadium.yaml) now replace generic parenthetical template descriptions on oxidized_metal_substrate and reduced_metal_product with kane_2026_bes T2/T3/T6/T8/T9-grounded descriptions, qualify reduced_metal_product in uranium.yaml as 'Depleted aqueous U and carbon-felt electrode-associated uranium deposits (unverified solid valence and phase)' with supports: partial on edges[3], and use lowercase study-specific prose on edges[1..3].
+
+### Johnson et al. (2016) rhodochrosite.yaml and Brookshaw et al. (2014) chlorite.yaml causal_graphs[0] medium alignment and edge prose (GRP-C9S5-002, #941)
+
+graph: supported. Targets: cmmmech:rhodochrosite, cmmmech:chlorite.
+
+rhodochrosite.yaml causal_graphs[0].nodes[3..4] now accurately describe the 1 L deoxygenated modified M1 medium (~6.3 mM poorly ordered colloidal MnO2, 20 mM lactate, no added phosphate, pH 8 under N2) and the 12 h synchrotron XRD and Mn K-edge XAS product state (~73% rhodochrosite and ~27% aqueous/particle-associated Mn(II)), and edges[1..3] of rhodochrosite.yaml and edges[1..2] of chlorite.yaml use lowercase mid-sentence node labels and study-specific evidence explanations.
+
+### Buchanan (2021/2022) Chapter 4 asbolane.yaml, feitknechtite.yaml, and pyrochroite.yaml causal_graphs[0] node/edge descriptions (GRP-C9S5-003, #942)
+
+graph: supported. Targets: cmmmech:asbolane, cmmmech:feitknechtite, cmmmech:pyrochroite.
+
+All three Geobacter sulfurreducens Chapter 4 mineral records (asbolane.yaml, feitknechtite.yaml, and pyrochroite.yaml) now replace parenthetical label-repeating template descriptions on nodes[2..3] with Chapter 4 assay and ICP-MS/XRD/XAS/SXM product descriptions, and use lowercase mid-sentence substrate/product references in causal_graphs[0].description and edges[0].description.
+
+## Findings
+
+### cmmmech-cycle9-stage4-finding-0001: Uranium and vanadium Shewanella oneidensis MR-1 BES records now have T2/T3/T6/T8/T9-grounded node/edge descriptions and qualified uranium product state
+
+minor / resolved / confirmed; issue key: cmmmech.shewanella-mr1-bes-uranium-vanadium.template-node-descriptions-and-unqualified-uranium-product-label.
+
+In data/records/uranium.yaml (cmmmech:uranium, element, Kane et al. 2026 USGS data release DOI:10.5066/P9ERLSM6; causal_graphs[0] mr1_bes_uranium_reduction_graph, lines 197-338) and data/records/vanadium.yaml (cmmmech:vanadium, element, Kane et al. 2026 USGS data release DOI:10.5066/P9ERLSM6; causal_graphs[0] mr1_bes_vanadium_reduction_graph, lines 199-340), oxidized_metal_substrate (uranium.yaml line 295, vanadium.yaml line 297) and reduced_metal_product (uranium.yaml line 300, vanadium.yaml line 302) retain generic template descriptions repeating their capitalized node labels in parentheses ('Terminal electron acceptor substrate (&lt;Label&gt;) in kane_2026_bes.' and 'Resulting reduced product state (&lt;Label&gt;) in kane_2026_bes.'), and edges[1..3] (uranium.yaml lines 316, 320, 325, 329, 334, 338; vanadium.yaml lines 318, 322, 327, 331, 336, 340) interpolate those capitalized labels mid-sentence with generic one-line evidence explanations ('MtrC participates in extracellular reduction of ...', 'OmcA contributes to extracellular reduction of ...', 'Shewanella oneidensis MR-1 bioelectrochemical/anaerobic reduction converts ...') that omit the exact T3/T6/T7/T8/T9 observations. Furthermore, in data/records/uranium.yaml, causal_graphs[0].nodes[4].label ('Cell-associated reduced U(IV) precipitate', line 298) and causal_graphs[0].edges[3] (supports: support, lines 330-338) assert a reduced U(IV) precipitate with full support, whereas mechanisms[0].description (line 35) and mechanisms[0].evidence[0..2] (lines 114-120) explicitly state that kane_2026_bes (T3_AqueousICPOES.csv, T6, T8_XRD.csv, T9_SEM.pdf pp. 2-6) documents aqueous U depletion (975 mg/kg at BESU.8Vb_W.EQ to &lt;0.1 mg/kg at BESU.8Vb_W.END in biotic vs 914 -&gt; 0.819 mg/kg in abiotic) and U-labelled EDS electrode deposits without assigning a crystalline mineral phase or U(IV) oxidation state and with abiotic removal limiting microbial attribution (supports: partial).
+
+Disposition: Resolved under GitHub Issue #940 (GRP-C9S5-001): replaced generic template descriptions on oxidized_metal_substrate and reduced_metal_product in data/records/uranium.yaml and data/records/vanadium.yaml with kane_2026_bes T2/T3/T6/T8/T9-specific descriptions, updated uranium.yaml causal_graphs[0].nodes[4].label to 'Depleted aqueous U and carbon-felt electrode-associated uranium deposits (unverified solid valence and phase)' and causal_graphs[0].edges[3].evidence[0].supports to 'partial', and replaced capitalized mid-sentence node labels and generic one-line explanations in edges[1..3] with lowercase study-specific prose, with 2 append-only EDIT history sidecars.
+
+### cmmmech-cycle9-stage4-finding-0002: Rhodochrosite and chlorite Shewanella oneidensis MR-1 records now have aligned medium/product node descriptions and lowercase study-specific edge prose
+
+minor / resolved / confirmed; issue key: cmmmech.shewanella-mr1-rhodochrosite-chlorite.medium-mismatch-template-descriptions-and-capitalized-edge-labels.
+
+In data/records/rhodochrosite.yaml (cmmmech:rhodochrosite, mineral, Johnson et al. 2016 Environ. Sci. Technol. 50(8):4248-4258, DOI:10.1021/acs.est.5b04834; causal_graphs[0] mr1_mn_oxide_rhodochrosite_graph, lines 203-362), nodes[3].description (oxidized_metal_substrate, lines 313-314) and nodes[4].description (reduced_metal_product, lines 319-320) retain generic template wrappers ('Terminal electron acceptor substrate (...) in johnson2016.' and 'Resulting reduced product state (...) in johnson2016.'), nodes[3].description states 'in Ca-free artificial freshwater medium' whereas mechanisms[0].context (line 55) and Johnson et al. (2016) Methods pp. C-D specify a stirred 1 L modified M1 medium (~6.3 mM freshly synthesized poorly ordered colloidal MnO2, 20 mM lactate, no added phosphate, pH 8 under N2), and edges[1..3] (lines 338, 342, 347, 351, 356-357) interpolate capitalized 'Colloidal Mn(IV) oxide' and 'Biogenic rhodochrosite (MnCO3) precipitates and dissolved Mn(II)' mid-sentence with generic one-line explanations on edges[1..2]. Similarly, in data/records/chlorite.yaml (cmmmech:chlorite, mineral_group, Brookshaw et al. 2014 Am. Mineral. 99(8-9):1746-1754, DOI:10.2138/am.2014.4774CCBY; causal_graphs[0] mr1_chlorite_fe_reduction_graph, lines 168-335), edges[1..2] (lines 305-306, 310-311, 316-317, 321-322) interpolate capitalized 'Chlorite-associated Fe(III) (ferroan clinochlore)' mid-sentence with generic one-line explanations.
+
+Disposition: Resolved under GitHub Issue #941 (GRP-C9S5-002): replaced generic template wrappers and aligned medium/product descriptions on causal_graphs[0].nodes[3..4] in data/records/rhodochrosite.yaml with Johnson et al. (2016) modified M1 medium and XRD/XAS results, and replaced capitalized mid-sentence node labels and generic one-line explanations in edges[1..3] of rhodochrosite.yaml and edges[1..2] of data/records/chlorite.yaml with lowercase study-specific prose, with 2 append-only EDIT history sidecars.
+
+### cmmmech-cycle9-stage4-finding-0003: Asbolane, feitknechtite, and pyrochroite Geobacter sulfurreducens records now have Chapter 4-specific node descriptions and lowercase mid-sentence graph/edge prose
+
+minor / resolved / confirmed; issue key: cmmmech.geobacter-buchanan-manganese-minerals.template-node-descriptions-and-capitalized-graph-edge-labels.
+
+Across the three Geobacter sulfurreducens synthetic Co/Ni-asbolane bioreduction records from Buchanan (2021/2022, University of Manchester PhD thesis, Chapter 4, printed pp. 115-158, Figures 4.1-4.8) — data/records/asbolane.yaml (cmmmech:asbolane, causal_graphs[0] geobacter_associated_reductive_transformation_graph, lines 172-293), data/records/feitknechtite.yaml (cmmmech:feitknechtite, causal_graphs[0] geobacter_feitknechtite_phase_formation_graph, lines 164-285), and data/records/pyrochroite.yaml (cmmmech:pyrochroite, causal_graphs[0] geobacter_pyrochroite_phase_formation_graph, lines 160-281) — nodes[2] (asbolane.yaml lines 248-249, feitknechtite.yaml lines 240-241, pyrochroite.yaml lines 236-237) and nodes[3] (asbolane.yaml lines 255-256, feitknechtite.yaml lines 247-248, pyrochroite.yaml lines 242-243) use generic template descriptions that repeat their capitalized node labels verbatim in parentheses ('Starting synthetic Co/Ni-asbolane mineral suspension (&lt;Label&gt;) incubated anaerobically with Geobacter sulfurreducens.' and 'Reduced product assemblage (&lt;Label&gt;) observed in Chapter 4 of Buchanan (2021/2022).'), and causal_graphs[0].description (asbolane.yaml lines 174-177, feitknechtite.yaml lines 166-169, pyrochroite.yaml lines 162-165) plus edges[0].description (asbolane.yaml lines 263-264, feitknechtite.yaml lines 255-256, pyrochroite.yaml lines 250-251) interpolate those capitalized node labels mid-sentence ('... reduction of Synthetic Co/Ni-asbolane suspension ... into Supernatant Mn, Co, and Ni ...' / 'Transient feitknechtite-assigned ...' / 'Pyrochroite-assigned ...').
+
+Disposition: Resolved under GitHub Issue #942 (GRP-C9S5-003): replaced parenthetical label-repeating template descriptions on causal_graphs[0].nodes[2..3] and lowercased mid-sentence node-label interpolations in causal_graphs[0].description and causal_graphs[0].edges[0].description across data/records/asbolane.yaml, data/records/feitknechtite.yaml, and data/records/pyrochroite.yaml, with 3 append-only EDIT history sidecars.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+- retain: cmmmech:asbolane, cmmmech:chlorite, cmmmech:feitknechtite, cmmmech:pyrochroite, cmmmech:rhodochrosite, cmmmech:uranium, cmmmech:vanadium. All 7 remediated records represent distinct material entities (2 elements, 4 IMA-approved minerals, and 1 mineral group) with disjoint identifiers and provenance; cohort boundaries from Cycle 9 Stage 4 are retained unchanged.
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| ev-stage4-evidence | reviews/workflow/mech-goal-sequence-20261019/cycle-000009/stage-04/revision-0001/evidence.yaml; findings[0..2] (cmmmech-cycle9-stage4-finding-0001..0003) | supports | Verified the 3 open Cycle 9 Stage 4 review findings and their 7 distinct target records. |
+| ev-stage4-findings | reviews/workflow/mech-goal-sequence-20261019/cycle-000009/stage-04/revision-0001/review_findings.yaml; findings[0..2] root-cause groups, issue_keys, and structured_review_bundles | supports | Confirmed exact Stage 4 finding IDs, issue_key identifiers, previous review_id occurrences, and target record lists. |
+| ev-schema | src/cmmmech/schema/cmmmech.yaml; classes.MaterialRecord, classes.CausalGraph, classes.CausalNode, classes.CausalEdge | supports | Canonical LinkML schema defining MaterialRecord and CausalGraph/CausalNode/CausalEdge structure. |
+| ev-kane2026 | https://doi.org/10.5066/P9ERLSM6; Kane et al. (2026) USGS data release DOI:10.5066/P9ERLSM6, T2_Setup.csv, T3_AqueousICPOES.csv, T6, T7_Chronoamperometry.csv, T8_XRD.csv, T9_SEM.pdf pp. 2-11 | supports | Confirms Shewanella oneidensis MR-1 BES setup (-800 mV vs Ag/AgCl for U, -500 mV vs Ag/AgCl for V), aqueous U and V ICP-OES trajectories in biotic and abiotic arms, working-electrode acid extracts, and unverified solid phase/valence. |
+| ev-johnson2016-brookshaw2014 | https://doi.org/10.1021/acs.est.5b04834; Johnson et al. (2016) Environ. Sci. Technol. 50(8):4248-4258 (Methods pp. C-D, Figure 2B, Table S2, Figures S4-S5) and Brookshaw et al. (2014) Am. Mineral. 99(8-9):1746-1754 (DOI:10.2138/am.2014.4774CCBY, Figures 1B, 2C-D, Table 2) | supports | Confirms 1 L modified M1 medium with ~6.3 mM poorly ordered colloidal MnO2, 20 mM lactate, no added phosphate, pH 8 under N2 and ~73% rhodochrosite + ~27% dissolved/adsorbed Mn(II) at 12 h in Johnson et al. (2016), and 2.5 g/L unheated ferroan clinochlore in 30 mM NaHCO3 with 10 mM sodium lactate in Brookshaw et al. (2014). |
+| ev-buchanan2021 | https://research.manchester.ac.uk/en/studentTheses/microbial-reduction-of-cobalt-and-nickel-bearing-manganese-oxides; Buchanan (2021/2022) University of Manchester PhD thesis, Chapter 4, printed pp. 123-147, Figures 4.1-4.8 | supports | Confirms 5 mL synthetic Co/Ni-asbolane suspension (nominally 2 mmol/L Mn in 10 mM bicarbonate buffer) incubated anaerobically at 30 °C with 10 mM sodium acetate and washed Geobacter sulfurreducens cells (OD600 0.6) under N2:CO2 80:20, and 1, 17, and 72 h ICP-MS, powder-XRD, XAS, and SXM observations. |
+
+## Limits And Additional Notes
+
+- This verification review is scoped to the 7 records remediated in Cycle 9 Stage 5; the remaining 681 records were verified with 0 open findings in the immutable Cycle 9 Stage 4 review bundles.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261105T234500Z-cycle9-stage5-remediation-verification
+title: 'Cycle 9 Stage 5 Post-Remediation Verification Review: 7 Remediated CMMMech
+  Records'
+repository: CultureBotAI/CMMMech
+kind: category
+started_at: '2026-11-05T23:44:00Z'
+finished_at: '2026-11-05T23:45:00Z'
+skill: .claude/skills/review-yaml-category/SKILL.md
+completion: completed
+verdict: pass
+scientific_review: true
+summary: 'Post-remediation verification review across all 7 CMMMech records modified
+  in Cycle 9 Stage 5 (2 element, 4 mineral, and 1 mineral_group records) resolving
+  all 3 open Cycle 9 Stage 4 review findings under GitHub Issues #940 (GRP-C9S5-001:
+  uranium.yaml and vanadium.yaml Shewanella oneidensis MR-1 bioelectrochemical reduction
+  causal_graphs[0] updated with T2/T3/T6/T7/T8/T9 source-specific descriptions on
+  oxidized_metal_substrate and reduced_metal_product, qualified reduced_metal_product
+  label and edges[3].evidence[0].supports: partial in uranium.yaml, and lowercase
+  study-specific prose in edges[1..3]), #941 (GRP-C9S5-002: rhodochrosite.yaml and
+  chlorite.yaml Shewanella oneidensis MR-1 causal_graphs[0] updated to align nodes[3..4]
+  descriptions in rhodochrosite.yaml with Johnson et al. 2016 modified M1 medium and
+  XRD/XAS product characterization and to replace capitalized mid-sentence node labels
+  and generic one-line explanations in edges[1..3] of rhodochrosite.yaml and edges[1..2]
+  of chlorite.yaml), and #942 (GRP-C9S5-003: asbolane.yaml, feitknechtite.yaml, and
+  pyrochroite.yaml Geobacter sulfurreducens Chapter 4 causal_graphs[0] updated to
+  replace parenthetical label-repeating template descriptions on nodes[2..3] and lowercase
+  mid-sentence node-label interpolations in causal_graphs[0].description and edges[0].description).
+  All 7 records pass strict validation, history validation, and page rendering checks
+  with 0 open findings.'
+reviewer:
+  identity: antigravity / cmmmech-cycle9-stage5-remediation-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Cycle 9 Stage 5 post-remediation verification review (.claude/skills/review-yaml-category/SKILL.md)
+    of the 7 remediated records against the immutable Cycle 9 Stage 4 review bundles.
+source:
+  git_revision: ae4562b6149ad2bb0af3e52290329a8f7e58769b
+  state: working_tree
+  inputs:
+  - path: data/records/asbolane.yaml
+    sha256: 848b70e5da57342f8abd4558de7e52fb666d132a9f4fbef7ebcd460d75f79dd7
+    role: target
+  - path: data/records/chlorite.yaml
+    sha256: 92483cc3007f43acfe8c53f5fb540da77acf814ad0f6962de28c5b9a7a80a949
+    role: target
+  - path: data/records/feitknechtite.yaml
+    sha256: 16b59b1f1d67f943d0c8c5edd8cd3730ea93bcde0a6e760b900b50bb05247f8a
+    role: target
+  - path: data/records/pyrochroite.yaml
+    sha256: cf7faa6d67a88e405e8937aee1f05764333c40bb8f58d8960dfb29b601c18fbd
+    role: target
+  - path: data/records/rhodochrosite.yaml
+    sha256: f45318e8367ef5926dd7886befbd6d6fd43fcbb13777d636c22105cd1bde8f81
+    role: target
+  - path: data/records/uranium.yaml
+    sha256: 25d42515c1defef3ddd93641155a2feacbf7a3333040051b0949ce85d51d8eea
+    role: target
+  - path: data/records/vanadium.yaml
+    sha256: 00e7534347e11a1b74958ceb894ae82f99c0cc61326c221ead540865e99ec18a
+    role: target
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000009/stage-04/revision-0001/evidence.yaml
+    sha256: 81b9c4a1c6a0c803d328938be3b1c7176c99225e8b94fa39d094ec238bcaf2b1
+    role: context
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000009/stage-04/revision-0001/review_findings.yaml
+    sha256: 15199b54eb0b306af42e55f8a7fbb3ec1b4d370bbade0d70e2d5f8ab9a2bf0d8
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+scope:
+  description: 'All 7 distinct CMMMech records affected by the 3 Cycle 9 Stage 4 findings
+    carried into Stage 5 (2 Shewanella oneidensis MR-1 BES element records in GRP-C9S5-001
+    / #940, 2 Shewanella oneidensis MR-1 mineral/mineral_group records in GRP-C9S5-002
+    / #941, and 3 Geobacter sulfurreducens Mn/Co/Ni oxide/hydroxide mineral records
+    in GRP-C9S5-003 / #942).'
+  selection: cycle9_stage4_open_finding_targets
+  coverage: full
+  population_size: 7
+  reviewed_target_ids:
+  - cmmmech:asbolane
+  - cmmmech:chlorite
+  - cmmmech:feitknechtite
+  - cmmmech:pyrochroite
+  - cmmmech:rhodochrosite
+  - cmmmech:uranium
+  - cmmmech:vanadium
+targets:
+- target_id: cmmmech:asbolane
+  path: data/records/asbolane.yaml
+  label: Asbolane
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 4cdffd9f0fb4366cf7b98e92799153f28901013b5c730239fec39d1d2bab6624
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/asbolane.yaml
+    role: maintained_record
+- target_id: cmmmech:chlorite
+  path: data/records/chlorite.yaml
+  label: Chlorite group
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 04eda6ff56201a828883e7993d0586b1cb0d8f2a3b9f1d0ff1063cb3e18eca69
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/chlorite.yaml
+    role: maintained_record
+- target_id: cmmmech:feitknechtite
+  path: data/records/feitknechtite.yaml
+  label: Feitknechtite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 0854bb38efa1243b52ec13852204219246a7f91a999338699a949e0eea8fae96
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/feitknechtite.yaml
+    role: maintained_record
+- target_id: cmmmech:pyrochroite
+  path: data/records/pyrochroite.yaml
+  label: Pyrochroite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 5875469597abd5bc35e2b3fccbf45ae5d21fc5b4a388ef942e43e5f68f3f4da4
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/pyrochroite.yaml
+    role: maintained_record
+- target_id: cmmmech:rhodochrosite
+  path: data/records/rhodochrosite.yaml
+  label: Rhodochrosite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 6b832b21fa8d2040ee40f0fa74c7789c3d296c5c4b419b2e429f49a4604fceda
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/rhodochrosite.yaml
+    role: maintained_record
+- target_id: cmmmech:uranium
+  path: data/records/uranium.yaml
+  label: Uranium
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: e08dc3b91c064c6cedc9d5fe9950917cc7faaa670545b93d1ea1337daecb0b48
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/uranium.yaml
+    role: maintained_record
+- target_id: cmmmech:vanadium
+  path: data/records/vanadium.yaml
+  label: Vanadium
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 3d0c8e518f99a912f249eaf4b955ba2fbbe9cdfe9c02ff17dd457c99843d9ddc
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/vanadium.yaml
+    role: maintained_record
+checks:
+- check_id: chk-validate-records
+  name: Strict LinkML and semantic record validation
+  status: passed
+  required: true
+  summary: All 688 records (including all 7 remediated records) pass .venv/bin/cmmmech
+    validate --require-records with 0 errors.
+  target_ids:
+  - cmmmech:asbolane
+  - cmmmech:chlorite
+  - cmmmech:feitknechtite
+  - cmmmech:pyrochroite
+  - cmmmech:rhodochrosite
+  - cmmmech:uranium
+  - cmmmech:vanadium
+  command: .venv/bin/cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-validate-history
+  name: Append-only history sidecar validation
+  status: passed
+  required: true
+  summary: All 7 new EDIT history sidecars and existing history sidecars pass .venv/bin/cmmmech
+    validate-history --base main with 0 errors.
+  target_ids:
+  - cmmmech:asbolane
+  - cmmmech:chlorite
+  - cmmmech:feitknechtite
+  - cmmmech:pyrochroite
+  - cmmmech:rhodochrosite
+  - cmmmech:uranium
+  - cmmmech:vanadium
+  command: .venv/bin/cmmmech validate-history --base main
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-grp1-kane2026-uranium-vanadium-bes-graphs
+  name: Kane et al. (2026) BES uranium.yaml and vanadium.yaml causal_graphs[0] concordance
+    (#940)
+  status: passed
+  required: true
+  summary: 'Verified that oxidized_metal_substrate and reduced_metal_product in uranium.yaml
+    and vanadium.yaml carry source-specific T2/T3/T6/T8/T9 descriptions, uranium.yaml
+    causal_graphs[0].nodes[4].label is qualified as ''Depleted aqueous U and carbon-felt
+    electrode-associated uranium deposits (unverified solid valence and phase)'' with
+    supports: partial on edges[3], and edges[1..3] in both records use lowercase mid-sentence
+    prose.'
+  target_ids:
+  - cmmmech:uranium
+  - cmmmech:vanadium
+  evidence_ids:
+  - ev-kane2026
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-grp2-johnson2016-brookshaw2014-rhodochrosite-chlorite-graphs
+  name: Johnson et al. (2016) rhodochrosite.yaml and Brookshaw et al. (2014) chlorite.yaml
+    causal_graphs[0] concordance (#941)
+  status: passed
+  required: true
+  summary: Verified that rhodochrosite.yaml causal_graphs[0].nodes[3..4] describe
+    the modified M1 medium (~6.3 mM colloidal MnO2, 20 mM lactate, no added phosphate,
+    pH 8 under N2) and XRD/XAS-verified rhodochrosite (~73%) + dissolved/adsorbed
+    Mn(II) (~27%), and edges[1..3] of rhodochrosite.yaml and edges[1..2] of chlorite.yaml
+    use lowercase mid-sentence node labels and study-specific evidence explanations.
+  target_ids:
+  - cmmmech:rhodochrosite
+  - cmmmech:chlorite
+  evidence_ids:
+  - ev-johnson2016-brookshaw2014
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-grp3-buchanan2021-manganese-minerals-graphs
+  name: Buchanan (2021/2022) Chapter 4 asbolane.yaml, feitknechtite.yaml, and pyrochroite.yaml
+    causal_graphs[0] concordance (#942)
+  status: passed
+  required: true
+  summary: Verified that nodes[2..3] across asbolane.yaml, feitknechtite.yaml, and
+    pyrochroite.yaml replace parenthetical label-repeating template descriptions with
+    Chapter 4 assay and ICP-MS/XRD/XAS/SXM product descriptions, and causal_graphs[0].description
+    and edges[0].description use lowercase mid-sentence substrate/product references.
+  target_ids:
+  - cmmmech:asbolane
+  - cmmmech:feitknechtite
+  - cmmmech:pyrochroite
+  evidence_ids:
+  - ev-buchanan2021
+  - ev-stage4-findings
+  - ev-schema
+evidence:
+- evidence_id: ev-stage4-evidence
+  kind: record_content
+  reference: reviews/workflow/mech-goal-sequence-20261019/cycle-000009/stage-04/revision-0001/evidence.yaml
+  locator: findings[0..2] (cmmmech-cycle9-stage4-finding-0001..0003)
+  accessed_at: '2026-11-05T23:44:30Z'
+  support: supports
+  summary: Verified the 3 open Cycle 9 Stage 4 review findings and their 7 distinct
+    target records.
+  snapshot_sha256: 81b9c4a1c6a0c803d328938be3b1c7176c99225e8b94fa39d094ec238bcaf2b1
+- evidence_id: ev-stage4-findings
+  kind: record_content
+  reference: reviews/workflow/mech-goal-sequence-20261019/cycle-000009/stage-04/revision-0001/review_findings.yaml
+  locator: findings[0..2] root-cause groups, issue_keys, and structured_review_bundles
+  accessed_at: '2026-11-05T23:44:30Z'
+  support: supports
+  summary: Confirmed exact Stage 4 finding IDs, issue_key identifiers, previous review_id
+    occurrences, and target record lists.
+  snapshot_sha256: 15199b54eb0b306af42e55f8a7fbb3ec1b4d370bbade0d70e2d5f8ab9a2bf0d8
+- evidence_id: ev-schema
+  kind: record_content
+  reference: src/cmmmech/schema/cmmmech.yaml
+  locator: classes.MaterialRecord, classes.CausalGraph, classes.CausalNode, classes.CausalEdge
+  accessed_at: '2026-11-05T23:44:30Z'
+  support: supports
+  summary: Canonical LinkML schema defining MaterialRecord and CausalGraph/CausalNode/CausalEdge
+    structure.
+  snapshot_sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+- evidence_id: ev-kane2026
+  kind: primary_source
+  reference: https://doi.org/10.5066/P9ERLSM6
+  locator: Kane et al. (2026) USGS data release DOI:10.5066/P9ERLSM6, T2_Setup.csv,
+    T3_AqueousICPOES.csv, T6, T7_Chronoamperometry.csv, T8_XRD.csv, T9_SEM.pdf pp.
+    2-11
+  accessed_at: '2026-11-05T23:44:30Z'
+  support: supports
+  summary: Confirms Shewanella oneidensis MR-1 BES setup (-800 mV vs Ag/AgCl for U,
+    -500 mV vs Ag/AgCl for V), aqueous U and V ICP-OES trajectories in biotic and
+    abiotic arms, working-electrode acid extracts, and unverified solid phase/valence.
+- evidence_id: ev-johnson2016-brookshaw2014
+  kind: primary_source
+  reference: https://doi.org/10.1021/acs.est.5b04834
+  locator: Johnson et al. (2016) Environ. Sci. Technol. 50(8):4248-4258 (Methods pp.
+    C-D, Figure 2B, Table S2, Figures S4-S5) and Brookshaw et al. (2014) Am. Mineral.
+    99(8-9):1746-1754 (DOI:10.2138/am.2014.4774CCBY, Figures 1B, 2C-D, Table 2)
+  accessed_at: '2026-11-05T23:44:30Z'
+  support: supports
+  summary: Confirms 1 L modified M1 medium with ~6.3 mM poorly ordered colloidal MnO2,
+    20 mM lactate, no added phosphate, pH 8 under N2 and ~73% rhodochrosite + ~27%
+    dissolved/adsorbed Mn(II) at 12 h in Johnson et al. (2016), and 2.5 g/L unheated
+    ferroan clinochlore in 30 mM NaHCO3 with 10 mM sodium lactate in Brookshaw et
+    al. (2014).
+- evidence_id: ev-buchanan2021
+  kind: primary_source
+  reference: https://research.manchester.ac.uk/en/studentTheses/microbial-reduction-of-cobalt-and-nickel-bearing-manganese-oxides
+  locator: Buchanan (2021/2022) University of Manchester PhD thesis, Chapter 4, printed
+    pp. 123-147, Figures 4.1-4.8
+  accessed_at: '2026-11-05T23:44:30Z'
+  support: supports
+  summary: Confirms 5 mL synthetic Co/Ni-asbolane suspension (nominally 2 mmol/L Mn
+    in 10 mM bicarbonate buffer) incubated anaerobically at 30 °C with 10 mM sodium
+    acetate and washed Geobacter sulfurreducens cells (OD600 0.6) under N2:CO2 80:20,
+    and 1, 17, and 72 h ICP-MS, powder-XRD, XAS, and SXM observations.
+assessments:
+- assessment_id: assess-grp1-kane2026-uranium-vanadium
+  area: graph
+  topic: 'Kane et al. (2026) BES uranium.yaml and vanadium.yaml causal_graphs[0] node/edge
+    descriptions and uranium product qualification (GRP-C9S5-001, #940)'
+  outcome: supported
+  summary: 'Both Shewanella oneidensis MR-1 BES records (uranium.yaml and vanadium.yaml)
+    now replace generic parenthetical template descriptions on oxidized_metal_substrate
+    and reduced_metal_product with kane_2026_bes T2/T3/T6/T8/T9-grounded descriptions,
+    qualify reduced_metal_product in uranium.yaml as ''Depleted aqueous U and carbon-felt
+    electrode-associated uranium deposits (unverified solid valence and phase)'' with
+    supports: partial on edges[3], and use lowercase study-specific prose on edges[1..3].'
+  target_ids:
+  - cmmmech:uranium
+  - cmmmech:vanadium
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-kane2026
+  - ev-schema
+  metrics:
+  - name: grp1_kane2026_bes_graph_concordance
+    value: 1.0
+    unit: fraction
+    definition: Fraction of GRP-C9S5-001 records with source-specific substrate/product
+      node descriptions, qualified U product state, and lowercase study-specific edge
+      prose
+    denominator: 2
+    minimum: 0.0
+    maximum: 1.0
+- assessment_id: assess-grp2-johnson2016-brookshaw2014-rhodochrosite-chlorite
+  area: graph
+  topic: 'Johnson et al. (2016) rhodochrosite.yaml and Brookshaw et al. (2014) chlorite.yaml
+    causal_graphs[0] medium alignment and edge prose (GRP-C9S5-002, #941)'
+  outcome: supported
+  summary: rhodochrosite.yaml causal_graphs[0].nodes[3..4] now accurately describe
+    the 1 L deoxygenated modified M1 medium (~6.3 mM poorly ordered colloidal MnO2,
+    20 mM lactate, no added phosphate, pH 8 under N2) and the 12 h synchrotron XRD
+    and Mn K-edge XAS product state (~73% rhodochrosite and ~27% aqueous/particle-associated
+    Mn(II)), and edges[1..3] of rhodochrosite.yaml and edges[1..2] of chlorite.yaml
+    use lowercase mid-sentence node labels and study-specific evidence explanations.
+  target_ids:
+  - cmmmech:rhodochrosite
+  - cmmmech:chlorite
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-johnson2016-brookshaw2014
+  - ev-schema
+  metrics:
+  - name: grp2_rhodochrosite_chlorite_graph_concordance
+    value: 1.0
+    unit: fraction
+    definition: Fraction of GRP-C9S5-002 records with aligned medium/product node
+      descriptions and lowercase study-specific edge prose
+    denominator: 2
+    minimum: 0.0
+    maximum: 1.0
+- assessment_id: assess-grp3-buchanan2021-manganese-minerals
+  area: graph
+  topic: 'Buchanan (2021/2022) Chapter 4 asbolane.yaml, feitknechtite.yaml, and pyrochroite.yaml
+    causal_graphs[0] node/edge descriptions (GRP-C9S5-003, #942)'
+  outcome: supported
+  summary: All three Geobacter sulfurreducens Chapter 4 mineral records (asbolane.yaml,
+    feitknechtite.yaml, and pyrochroite.yaml) now replace parenthetical label-repeating
+    template descriptions on nodes[2..3] with Chapter 4 assay and ICP-MS/XRD/XAS/SXM
+    product descriptions, and use lowercase mid-sentence substrate/product references
+    in causal_graphs[0].description and edges[0].description.
+  target_ids:
+  - cmmmech:asbolane
+  - cmmmech:feitknechtite
+  - cmmmech:pyrochroite
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-buchanan2021
+  - ev-schema
+  metrics:
+  - name: grp3_buchanan2021_manganese_minerals_concordance
+    value: 1.0
+    unit: fraction
+    definition: Fraction of GRP-C9S5-003 records with Chapter 4-specific node descriptions
+      and lowercase mid-sentence graph/edge prose
+    denominator: 3
+    minimum: 0.0
+    maximum: 1.0
+findings:
+- finding_id: cmmmech-cycle9-stage4-finding-0001
+  issue_key: cmmmech.shewanella-mr1-bes-uranium-vanadium.template-node-descriptions-and-unqualified-uranium-product-label
+  category: graph
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Uranium and vanadium Shewanella oneidensis MR-1 BES records now have T2/T3/T6/T8/T9-grounded
+    node/edge descriptions and qualified uranium product state
+  description: 'In data/records/uranium.yaml (cmmmech:uranium, element, Kane et al.
+    2026 USGS data release DOI:10.5066/P9ERLSM6; causal_graphs[0] mr1_bes_uranium_reduction_graph,
+    lines 197-338) and data/records/vanadium.yaml (cmmmech:vanadium, element, Kane
+    et al. 2026 USGS data release DOI:10.5066/P9ERLSM6; causal_graphs[0] mr1_bes_vanadium_reduction_graph,
+    lines 199-340), oxidized_metal_substrate (uranium.yaml line 295, vanadium.yaml
+    line 297) and reduced_metal_product (uranium.yaml line 300, vanadium.yaml line
+    302) retain generic template descriptions repeating their capitalized node labels
+    in parentheses (''Terminal electron acceptor substrate (<Label>) in kane_2026_bes.''
+    and ''Resulting reduced product state (<Label>) in kane_2026_bes.''), and edges[1..3]
+    (uranium.yaml lines 316, 320, 325, 329, 334, 338; vanadium.yaml lines 318, 322,
+    327, 331, 336, 340) interpolate those capitalized labels mid-sentence with generic
+    one-line evidence explanations (''MtrC participates in extracellular reduction
+    of ...'', ''OmcA contributes to extracellular reduction of ...'', ''Shewanella
+    oneidensis MR-1 bioelectrochemical/anaerobic reduction converts ...'') that omit
+    the exact T3/T6/T7/T8/T9 observations. Furthermore, in data/records/uranium.yaml,
+    causal_graphs[0].nodes[4].label (''Cell-associated reduced U(IV) precipitate'',
+    line 298) and causal_graphs[0].edges[3] (supports: support, lines 330-338) assert
+    a reduced U(IV) precipitate with full support, whereas mechanisms[0].description
+    (line 35) and mechanisms[0].evidence[0..2] (lines 114-120) explicitly state that
+    kane_2026_bes (T3_AqueousICPOES.csv, T6, T8_XRD.csv, T9_SEM.pdf pp. 2-6) documents
+    aqueous U depletion (975 mg/kg at BESU.8Vb_W.EQ to <0.1 mg/kg at BESU.8Vb_W.END
+    in biotic vs 914 -> 0.819 mg/kg in abiotic) and U-labelled EDS electrode deposits
+    without assigning a crystalline mineral phase or U(IV) oxidation state and with
+    abiotic removal limiting microbial attribution (supports: partial).'
+  target_ids:
+  - cmmmech:uranium
+  - cmmmech:vanadium
+  field_paths:
+  - causal_graphs[0].nodes[3].description
+  - causal_graphs[0].nodes[4].label
+  - causal_graphs[0].nodes[4].description
+  - causal_graphs[0].edges[1].description
+  - causal_graphs[0].edges[1].evidence[0].explanation
+  - causal_graphs[0].edges[2].description
+  - causal_graphs[0].edges[2].evidence[0].explanation
+  - causal_graphs[0].edges[3].description
+  - causal_graphs[0].edges[3].evidence[0].supports
+  - causal_graphs[0].edges[3].evidence[0].explanation
+  - curation_history
+  - history_refs
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-kane2026
+  - ev-schema
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/uranium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/vanadium.yaml
+    role: maintained_record
+  disposition_reason: 'Resolved under GitHub Issue #940 (GRP-C9S5-001): replaced generic
+    template descriptions on oxidized_metal_substrate and reduced_metal_product in
+    data/records/uranium.yaml and data/records/vanadium.yaml with kane_2026_bes T2/T3/T6/T8/T9-specific
+    descriptions, updated uranium.yaml causal_graphs[0].nodes[4].label to ''Depleted
+    aqueous U and carbon-felt electrode-associated uranium deposits (unverified solid
+    valence and phase)'' and causal_graphs[0].edges[3].evidence[0].supports to ''partial'',
+    and replaced capitalized mid-sentence node labels and generic one-line explanations
+    in edges[1..3] with lowercase study-specific prose, with 2 append-only EDIT history
+    sidecars.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T202000Z-cycle9-stage4-element-cohort-review
+    finding_id: cmmmech-cycle9-stage4-finding-0001
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T202006Z-cycle9-stage4-causal-graphs-cohort-review
+    finding_id: cmmmech-cycle9-stage4-finding-0001
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T202007Z-uranium-cycle9-stage4-record-review
+    finding_id: cmmmech-cycle9-stage4-finding-0001
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/940
+- finding_id: cmmmech-cycle9-stage4-finding-0002
+  issue_key: cmmmech.shewanella-mr1-rhodochrosite-chlorite.medium-mismatch-template-descriptions-and-capitalized-edge-labels
+  category: graph
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Rhodochrosite and chlorite Shewanella oneidensis MR-1 records now have aligned
+    medium/product node descriptions and lowercase study-specific edge prose
+  description: In data/records/rhodochrosite.yaml (cmmmech:rhodochrosite, mineral,
+    Johnson et al. 2016 Environ. Sci. Technol. 50(8):4248-4258, DOI:10.1021/acs.est.5b04834;
+    causal_graphs[0] mr1_mn_oxide_rhodochrosite_graph, lines 203-362), nodes[3].description
+    (oxidized_metal_substrate, lines 313-314) and nodes[4].description (reduced_metal_product,
+    lines 319-320) retain generic template wrappers ('Terminal electron acceptor substrate
+    (...) in johnson2016.' and 'Resulting reduced product state (...) in johnson2016.'),
+    nodes[3].description states 'in Ca-free artificial freshwater medium' whereas
+    mechanisms[0].context (line 55) and Johnson et al. (2016) Methods pp. C-D specify
+    a stirred 1 L modified M1 medium (~6.3 mM freshly synthesized poorly ordered colloidal
+    MnO2, 20 mM lactate, no added phosphate, pH 8 under N2), and edges[1..3] (lines
+    338, 342, 347, 351, 356-357) interpolate capitalized 'Colloidal Mn(IV) oxide'
+    and 'Biogenic rhodochrosite (MnCO3) precipitates and dissolved Mn(II)' mid-sentence
+    with generic one-line explanations on edges[1..2]. Similarly, in data/records/chlorite.yaml
+    (cmmmech:chlorite, mineral_group, Brookshaw et al. 2014 Am. Mineral. 99(8-9):1746-1754,
+    DOI:10.2138/am.2014.4774CCBY; causal_graphs[0] mr1_chlorite_fe_reduction_graph,
+    lines 168-335), edges[1..2] (lines 305-306, 310-311, 316-317, 321-322) interpolate
+    capitalized 'Chlorite-associated Fe(III) (ferroan clinochlore)' mid-sentence with
+    generic one-line explanations.
+  target_ids:
+  - cmmmech:rhodochrosite
+  - cmmmech:chlorite
+  field_paths:
+  - causal_graphs[0].nodes[3].description
+  - causal_graphs[0].nodes[4].description
+  - causal_graphs[0].edges[1].description
+  - causal_graphs[0].edges[1].evidence[0].explanation
+  - causal_graphs[0].edges[2].description
+  - causal_graphs[0].edges[2].evidence[0].explanation
+  - causal_graphs[0].edges[3].description
+  - causal_graphs[0].edges[3].evidence[0].explanation
+  - curation_history
+  - history_refs
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-johnson2016-brookshaw2014
+  - ev-schema
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/rhodochrosite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/chlorite.yaml
+    role: maintained_record
+  disposition_reason: 'Resolved under GitHub Issue #941 (GRP-C9S5-002): replaced generic
+    template wrappers and aligned medium/product descriptions on causal_graphs[0].nodes[3..4]
+    in data/records/rhodochrosite.yaml with Johnson et al. (2016) modified M1 medium
+    and XRD/XAS results, and replaced capitalized mid-sentence node labels and generic
+    one-line explanations in edges[1..3] of rhodochrosite.yaml and edges[1..2] of
+    data/records/chlorite.yaml with lowercase study-specific prose, with 2 append-only
+    EDIT history sidecars.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T202001Z-cycle9-stage4-mineral-cohort-review
+    finding_id: cmmmech-cycle9-stage4-finding-0002
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T202002Z-cycle9-stage4-mineral-group-cohort-review
+    finding_id: cmmmech-cycle9-stage4-finding-0002
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T202006Z-cycle9-stage4-causal-graphs-cohort-review
+    finding_id: cmmmech-cycle9-stage4-finding-0002
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T202008Z-rhodochrosite-cycle9-stage4-record-review
+    finding_id: cmmmech-cycle9-stage4-finding-0002
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/941
+- finding_id: cmmmech-cycle9-stage4-finding-0003
+  issue_key: cmmmech.geobacter-buchanan-manganese-minerals.template-node-descriptions-and-capitalized-graph-edge-labels
+  category: graph
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Asbolane, feitknechtite, and pyrochroite Geobacter sulfurreducens records
+    now have Chapter 4-specific node descriptions and lowercase mid-sentence graph/edge
+    prose
+  description: Across the three Geobacter sulfurreducens synthetic Co/Ni-asbolane
+    bioreduction records from Buchanan (2021/2022, University of Manchester PhD thesis,
+    Chapter 4, printed pp. 115-158, Figures 4.1-4.8) — data/records/asbolane.yaml
+    (cmmmech:asbolane, causal_graphs[0] geobacter_associated_reductive_transformation_graph,
+    lines 172-293), data/records/feitknechtite.yaml (cmmmech:feitknechtite, causal_graphs[0]
+    geobacter_feitknechtite_phase_formation_graph, lines 164-285), and data/records/pyrochroite.yaml
+    (cmmmech:pyrochroite, causal_graphs[0] geobacter_pyrochroite_phase_formation_graph,
+    lines 160-281) — nodes[2] (asbolane.yaml lines 248-249, feitknechtite.yaml lines
+    240-241, pyrochroite.yaml lines 236-237) and nodes[3] (asbolane.yaml lines 255-256,
+    feitknechtite.yaml lines 247-248, pyrochroite.yaml lines 242-243) use generic
+    template descriptions that repeat their capitalized node labels verbatim in parentheses
+    ('Starting synthetic Co/Ni-asbolane mineral suspension (<Label>) incubated anaerobically
+    with Geobacter sulfurreducens.' and 'Reduced product assemblage (<Label>) observed
+    in Chapter 4 of Buchanan (2021/2022).'), and causal_graphs[0].description (asbolane.yaml
+    lines 174-177, feitknechtite.yaml lines 166-169, pyrochroite.yaml lines 162-165)
+    plus edges[0].description (asbolane.yaml lines 263-264, feitknechtite.yaml lines
+    255-256, pyrochroite.yaml lines 250-251) interpolate those capitalized node labels
+    mid-sentence ('... reduction of Synthetic Co/Ni-asbolane suspension ... into Supernatant
+    Mn, Co, and Ni ...' / 'Transient feitknechtite-assigned ...' / 'Pyrochroite-assigned
+    ...').
+  target_ids:
+  - cmmmech:asbolane
+  - cmmmech:feitknechtite
+  - cmmmech:pyrochroite
+  field_paths:
+  - causal_graphs[0].description
+  - causal_graphs[0].nodes[2].description
+  - causal_graphs[0].nodes[3].description
+  - causal_graphs[0].edges[0].description
+  - curation_history
+  - history_refs
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-buchanan2021
+  - ev-schema
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/asbolane.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/feitknechtite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/pyrochroite.yaml
+    role: maintained_record
+  disposition_reason: 'Resolved under GitHub Issue #942 (GRP-C9S5-003): replaced parenthetical
+    label-repeating template descriptions on causal_graphs[0].nodes[2..3] and lowercased
+    mid-sentence node-label interpolations in causal_graphs[0].description and causal_graphs[0].edges[0].description
+    across data/records/asbolane.yaml, data/records/feitknechtite.yaml, and data/records/pyrochroite.yaml,
+    with 3 append-only EDIT history sidecars.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T202001Z-cycle9-stage4-mineral-cohort-review
+    finding_id: cmmmech-cycle9-stage4-finding-0003
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T202006Z-cycle9-stage4-causal-graphs-cohort-review
+    finding_id: cmmmech-cycle9-stage4-finding-0003
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261105T202009Z-asbolane-cycle9-stage4-record-review
+    finding_id: cmmmech-cycle9-stage4-finding-0003
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/942
+actions: []
+boundary_decisions:
+- action: retain
+  target_ids:
+  - cmmmech:asbolane
+  - cmmmech:chlorite
+  - cmmmech:feitknechtite
+  - cmmmech:pyrochroite
+  - cmmmech:rhodochrosite
+  - cmmmech:uranium
+  - cmmmech:vanadium
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-schema
+  rationale: All 7 remediated records represent distinct material entities (2 elements,
+    4 IMA-approved minerals, and 1 mineral group) with disjoint identifiers and provenance;
+    cohort boundaries from Cycle 9 Stage 4 are retained unchanged.
+limitations:
+- This verification review is scoped to the 7 records remediated in Cycle 9 Stage
+  5; the remaining 681 records were verified with 0 open findings in the immutable
+  Cycle 9 Stage 4 review bundles.
+```
