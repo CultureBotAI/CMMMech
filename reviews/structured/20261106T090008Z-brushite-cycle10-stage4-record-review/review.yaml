@@ -1,0 +1,200 @@
+schema_version: 1.0.0
+review_id: 20261106T090008Z-brushite-cycle10-stage4-record-review
+title: 'Cycle 10 Stage 4 record review: cmmmech:brushite (Brushite)'
+repository: CultureBotAI/CMMMech
+kind: record
+started_at: '2026-11-06T08:40:00Z'
+finished_at: '2026-11-06T09:00:08Z'
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'Reviewed data/records/brushite.yaml (cmmmech:brushite) at commit 0ca12c227e69903577eb76e0ee8d0dbb0314fb20.
+  Verified IMA mineral identity (CaHPO4·2H2O, grandfathered 1865), Heveran et al.
+  (2019, Sci. Rep. 9:14721, DOI:10.1038/s41598-019-51133-9) calcium-phosphate to calcite
+  phase-evolution mechanism, all synchronized UniProtKB protein_examples (UreC UniProtKB:P41020,
+  UreB UniProtKB:P41021, UreA UniProtKB:P41022), and causal_graphs[0] (ureolytic_brushite_calcite_phase_transition_graph).
+  Identified 1 minor graph finding (cmmmech-cycle10-stage4-finding-0002: nodes[2..3]
+  and edges[0..2] retain generic template descriptions, portray initial cell-free
+  brushite as formed via ureolytic alkalinization, and cite SEM-EDS instead of XRD/SEM/Raman/WDS)
+  for Stage 5 grouped remediation.'
+reviewer:
+  identity: antigravity / cmmmech-cycle10-stage4-record-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of Cycle 10 Stage 4 record_review
+    (.claude/skills/review-yaml-record/SKILL.md) against frozen commit 0ca12c227e69903577eb76e0ee8d0dbb0314fb20.
+source:
+  git_revision: 0ca12c227e69903577eb76e0ee8d0dbb0314fb20
+  state: git_commit
+  inputs:
+  - path: data/records/brushite.yaml
+    sha256: 5fa1540a07d369151fcb28abea980998c964745f3bbd5f2ee7fa6ef0c2400f8c
+    role: target
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+  - path: src/cmmmech/validation.py
+    sha256: edf999adb3da7dceadcc340b5561663a7fb56dfd1178992633a1a7ad1abcb937
+    role: context
+scope:
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:brushite
+  selection: data/records/brushite.yaml at 0ca12c227e69903577eb76e0ee8d0dbb0314fb20
+  description: Single-record Cycle 10 Stage 4 audit of cmmmech:brushite.
+targets:
+- target_id: cmmmech:brushite
+  path: data/records/brushite.yaml
+  kind: maintained
+  label: Brushite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/brushite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+checks:
+- check_id: cmmmech-validate-brushite
+  name: cmmmech validate brushite.yaml
+  status: passed
+  required: true
+  command: .venv/bin/cmmmech validate data/records/brushite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:brushite
+  evidence_ids:
+  - ev-brushite-file
+  summary: data/records/brushite.yaml passes LinkML structural, semantic, and canonical
+    top-level key-order validation with 0 errors.
+assessments:
+- assessment_id: assess-brushite-heveran2019-graph-and-proteins
+  topic: Ureolytic calcium-phosphate to calcite transition causal graph and UreABC
+    groundings
+  area: graph
+  outcome: supported
+  target_ids:
+  - cmmmech:brushite
+  evidence_ids:
+  - ev-brushite-file
+  - ev-brushite-heveran2019
+  summary: All Sporosarcina pasteurii UreABC UniProtKB protein_examples are accurately
+    grounded and synchronized between mechanisms[0] and causal_graphs[0]. However,
+    nodes[2..3] and edges[0..2] retain generic template descriptions, depict brushite
+    as formed via ureolytic alkalinization rather than forming initially (including
+    in cell-free controls) and transitioning to calcite, and cite SEM-EDS instead
+    of XRD/SEM/Raman/WDS.
+findings:
+- finding_id: cmmmech-cycle10-stage4-finding-0002
+  issue_key: cmmmech.heveran2019-brushite.template-descriptions-and-cell-free-brushite-directionality
+  title: Ureolytic causal graph in brushite.yaml retains generic template node/edge
+    descriptions, portrays cell-free initial brushite as formed via ureolytic alkalinization,
+    and cites SEM-EDS instead of XRD/SEM/Raman/WDS
+  severity: minor
+  category: graph
+  certainty: confirmed
+  status: open
+  target_ids:
+  - cmmmech:brushite
+  field_paths:
+  - causal_graphs[0].nodes[2].description
+  - causal_graphs[0].nodes[3].description
+  - causal_graphs[0].edges[0].evidence[0].explanation
+  - causal_graphs[0].edges[1].description
+  - causal_graphs[0].edges[1].evidence[0].supports
+  - causal_graphs[0].edges[1].evidence[0].explanation
+  - causal_graphs[0].edges[2].description
+  - causal_graphs[0].edges[2].evidence[0].supports
+  - causal_graphs[0].edges[2].evidence[0].explanation
+  evidence_ids:
+  - ev-brushite-file
+  - ev-brushite-heveran2019
+  description: 'In data/records/brushite.yaml (cmmmech:brushite, mineral, Heveran
+    et al. 2019 Scientific Reports 9:14721, DOI:10.1038/s41598-019-51133-9; causal_graphs[0]
+    ureolytic_brushite_calcite_phase_transition_graph, lines 187-339), nodes[2].description
+    (dissolved_metal_cations, lines 299-300) and nodes[3].description (precipitated_mineral_phase,
+    lines 305-306) retain generic template descriptions repeating their capitalized
+    node labels verbatim in parentheses (''Dissolved cations (Dissolved Ca(II) and
+    phosphate in acidic pre-mineralization solution) undergoing carbonate/phosphate
+    precipitation.'' and ''Solid mineral phase (Brushite (CaHPO4·2H2O) and calcium
+    carbonate co-precipitate) formed via ureolytic alkalinization.''), where nodes[3].description
+    and edges[1..2] (lines 318-339, supports: support) depict brushite as formed via
+    ureolytic alkalinization even though mechanisms[0] (lines 46-51, 68-89) explicitly
+    establishes that brushite and apatite precipitate initially in cell-free medium
+    and nonureolytic Escherichia coli HB101 controls (Figure 2D-E) as well as early
+    HB101/ure-integration cultures (Figure 2B, Figure 3I-L) and are subsequently replaced
+    in bulk XRD by calcite as ureolytic alkalinization progresses and dissolved phosphorus
+    returns to solution (Figures 1G-H, 2B, 3; supports: partial), with weak local
+    Raman phosphate signals persisting at 7 d calcite indentation sites (Table 2).
+    Furthermore, edges[0].evidence[0].explanation (line 317) uses the generic 70-character
+    template string, edges[1..2] interpolate capitalized node labels mid-sentence
+    with plural-subject singular-verb grammar (''Dissolved Ca(II) and phosphate ...
+    precipitates into ...''), and edges[2].evidence[0].explanation (line 338) cites
+    ''XRD/SEM-EDS'' whereas Heveran et al. (2019) used XRD, SEM, Raman, and WDS (mechanisms[0].context
+    line 63). In this scope, 1 record(s) (brushite) are affected.'
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/brushite.yaml
+    role: maintained_record
+actions:
+- action_id: act-refine-heveran2019-brushite-phase-transition-graph
+  finding_ids:
+  - cmmmech-cycle10-stage4-finding-0002
+  target_ids:
+  - cmmmech:brushite
+  description: Replace generic template descriptions on nodes[2..3] and edges[0..2]
+    in data/records/brushite.yaml with source-specific prose from Heveran et al. (2019)
+    that accurately distinguishes initial cell-free/early-culture brushite and apatite
+    precipitation from subsequent ureolytic pH-driven phase replacement by calcite
+    and phosphorus return to solution, set edges[1..2].evidence[0].supports to partial,
+    and replace 'XRD/SEM-EDS' with XRD, SEM, Raman, and WDS plus ICP-OES/Elan DRC-e
+    solution analysis during Stage 5 grouped remediation with canonical history provenance.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/brushite.yaml
+    role: maintained_record
+  acceptance_checks:
+  - nodes[2..3].description and edges[0..2] in brushite.yaml accurately describe initial
+    brushite/apatite precipitation (including cell-free and nonureolytic HB101 controls)
+    and subsequent ureolytic replacement by calcite with dissolved P return without
+    template label duplication.
+  - 'edges[1..2] in brushite.yaml use lowercase mid-sentence prose, plural verb agreement,
+    supports: partial, and cite XRD, SEM, Raman/WDS, and solution Ca/P analysis rather
+    than SEM-EDS.'
+  - Matching EDIT history sidecar exists in history/records/brushite/ and passes just
+    check.
+evidence:
+- evidence_id: ev-brushite-file
+  kind: record_content
+  reference: data/records/brushite.yaml
+  locator: mechanisms[0] (lines 39-96); causal_graphs[0] (lines 187-339)
+  accessed_at: '2026-11-06T09:00:08Z'
+  support: supports
+  summary: Inspected data/records/brushite.yaml, verifying mechanisms[0] (lines 39-96)
+    against causal_graphs[0].nodes[2..3] (lines 296-307) and causal_graphs[0].edges[0..2]
+    (lines 309-339).
+- evidence_id: ev-brushite-heveran2019
+  kind: primary_source
+  reference: DOI:10.1038/s41598-019-51133-9
+  locator: Heveran et al. 2019 Scientific Reports 9:14721, Methods pp. 10-11, Figures
+    1-4, Table 2
+  accessed_at: '2026-11-06T09:00:08Z'
+  support: supports
+  summary: Heveran et al. (2019) document brushite and apatite precipitation in cell-free
+    medium and nonureolytic E. coli HB101 controls (Figure 2D-E) and early HB101/ure-integration
+    cultures (Figure 2B), followed by bulk XRD replacement by calcite and return of
+    dissolved phosphorus to solution as ureolytic pH rises (Figures 1G-H, 2B, 3),
+    characterized by XRD, SEM, Raman, and WDS.
+limitations:
+- data/records/brushite.yaml retains generic template node/edge descriptions, portrays
+  initial cell-free brushite as formed via ureolytic alkalinization, and cites SEM-EDS
+  instead of XRD/SEM/Raman/WDS in causal_graphs[0] (tracked as open finding cmmmech-cycle10-stage4-finding-0002
+  for Stage 5 remediation).
+notes: []

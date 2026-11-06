@@ -1,0 +1,209 @@
+schema_version: 1.0.0
+review_id: 20261106T090007Z-calcite-cycle10-stage4-record-review
+title: 'Cycle 10 Stage 4 record review: cmmmech:calcite (Calcite)'
+repository: CultureBotAI/CMMMech
+kind: record
+started_at: '2026-11-06T08:38:00Z'
+finished_at: '2026-11-06T09:00:07Z'
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'Reviewed data/records/calcite.yaml (cmmmech:calcite) at commit 0ca12c227e69903577eb76e0ee8d0dbb0314fb20.
+  Verified mineral identity (trigonal CaCO3, grandfathered 1845), both microbial carbonate-formation
+  mechanisms (Bian et al. 2024 Sporosarcina sp. DW018 Tb co-precipitation and Rehmanji
+  et al. 2025 Sporosarcina pasteurii DSM 33 Cornish geothermal-brine pretreatment),
+  all synchronized UniProtKB protein_examples (UreC UniProtKB:P41020, UreB UniProtKB:P41021,
+  UreA UniProtKB:P41022), and causal_graphs[0] (pasteurii_geothermal_brine_calcite_graph).
+  Identified 1 minor graph finding (cmmmech-cycle10-stage4-finding-0001: nodes[2..3]
+  retain generic template descriptions repeating their capitalized labels and mentioning
+  ''/phosphate'', edges[0] uses a generic 70-character explanation, and edges[1..2]
+  interpolate capitalized labels mid-sentence with singular verb ''precipitates''
+  and supports: support) for Stage 5 grouped remediation.'
+reviewer:
+  identity: antigravity / cmmmech-cycle10-stage4-record-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of Cycle 10 Stage 4 record_review
+    (.claude/skills/review-yaml-record/SKILL.md) against frozen commit 0ca12c227e69903577eb76e0ee8d0dbb0314fb20.
+source:
+  git_revision: 0ca12c227e69903577eb76e0ee8d0dbb0314fb20
+  state: git_commit
+  inputs:
+  - path: data/records/calcite.yaml
+    sha256: 8c1378d02bf991926c80747de98d6db4caed0248fd105c70832cbd1d60964b7f
+    role: target
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+  - path: src/cmmmech/validation.py
+    sha256: edf999adb3da7dceadcc340b5561663a7fb56dfd1178992633a1a7ad1abcb937
+    role: context
+scope:
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:calcite
+  selection: data/records/calcite.yaml at 0ca12c227e69903577eb76e0ee8d0dbb0314fb20
+  description: Single-record Cycle 10 Stage 4 audit of cmmmech:calcite.
+targets:
+- target_id: cmmmech:calcite
+  path: data/records/calcite.yaml
+  kind: maintained
+  label: Calcite
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/calcite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+checks:
+- check_id: cmmmech-validate-calcite
+  name: cmmmech validate calcite.yaml
+  status: passed
+  required: true
+  command: .venv/bin/cmmmech validate data/records/calcite.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:calcite
+  evidence_ids:
+  - ev-calcite-file
+  summary: data/records/calcite.yaml passes LinkML structural, semantic, and canonical
+    top-level key-order validation with 0 errors.
+assessments:
+- assessment_id: assess-calcite-pasteurii-graph-and-proteins
+  topic: Sporosarcina pasteurii DSM 33 Cornish geothermal-brine calcite causal graph
+    and UreABC groundings
+  area: graph
+  outcome: supported
+  target_ids:
+  - cmmmech:calcite
+  evidence_ids:
+  - ev-calcite-file
+  - ev-calcite-rehmanji2025
+  summary: 'All Sporosarcina pasteurii UreABC UniProtKB protein_examples are accurately
+    grounded and synchronized between mechanisms[1] and causal_graphs[0]. However,
+    nodes[2..3] and edges[0..2] retain generic template descriptions, ''/phosphate''
+    wording, mid-sentence capitalized label interpolations, singular verb ''precipitates'',
+    and unqualified supports: support.'
+findings:
+- finding_id: cmmmech-cycle10-stage4-finding-0001
+  issue_key: cmmmech.pasteurii-rehmanji2025-geothermal-brine.template-node-edge-descriptions-and-phosphate-mislabelling
+  title: Sporosarcina pasteurii Cornish geothermal-brine causal graphs in calcite.yaml,
+    vaterite.yaml, and lithium-bearing-geothermal-brine.yaml retain generic template
+    node/edge descriptions, erroneous carbonate/phosphate wording, and unqualified
+    edge support
+  severity: minor
+  category: graph
+  certainty: confirmed
+  status: open
+  target_ids:
+  - cmmmech:calcite
+  field_paths:
+  - causal_graphs[0].nodes[2].description
+  - causal_graphs[0].nodes[3].description
+  - causal_graphs[0].edges[0].evidence[0].explanation
+  - causal_graphs[0].edges[1].description
+  - causal_graphs[0].edges[1].evidence[0].supports
+  - causal_graphs[0].edges[1].evidence[0].explanation
+  - causal_graphs[0].edges[2].relationship
+  - causal_graphs[0].edges[2].description
+  - causal_graphs[0].edges[2].evidence[0].supports
+  - causal_graphs[0].edges[2].evidence[0].explanation
+  evidence_ids:
+  - ev-calcite-file
+  - ev-calcite-rehmanji2025
+  description: 'Across the three Sporosarcina pasteurii DSM 33 Cornish geothermal-brine
+    MICP pretreatment records from Rehmanji et al. (2025, RSC Advances 15:43263-43274,
+    DOI:10.1039/d5ra06824j, rehmanji2025 / rehmanji2025_si) — data/records/calcite.yaml
+    (cmmmech:calcite, mineral, causal_graphs[0] pasteurii_geothermal_brine_calcite_graph,
+    lines 236-385), data/records/vaterite.yaml (cmmmech:vaterite, mineral, causal_graphs[0]
+    pasteurii_geothermal_brine_vaterite_graph, lines 179-328), and data/records/lithium-bearing-geothermal-brine.yaml
+    (cmmmech:lithium-bearing-geothermal-brine, primary_resource, causal_graphs[0]
+    pasteurii_lithium_brine_pretreatment_graph, lines 174-324) — nodes[2].description
+    (dissolved_metal_cations; calcite.yaml lines 345-346, vaterite.yaml lines 288-289,
+    lithium-bearing-geothermal-brine.yaml lines 284-285) and nodes[3].description
+    (precipitated_mineral_phase; calcite.yaml lines 351-352, vaterite.yaml lines 294-295,
+    lithium-bearing-geothermal-brine.yaml lines 290-291) retain generic template descriptions
+    repeating their capitalized node labels verbatim in parentheses (''Dissolved cations
+    (<Label>) undergoing carbonate/phosphate precipitation.'' and ''Solid mineral
+    phase (<Label>) formed via ureolytic alkalinization.''), including the inapplicable
+    ''/phosphate'' wording (also present on edges[2].relationship: ''cation precipitation
+    with carbonate/phosphate'' at calcite.yaml line 378, vaterite.yaml line 321, and
+    lithium-bearing-geothermal-brine.yaml line 317) in a phosphate-free carbonate
+    geothermal-brine experiment. Furthermore, edges[0].evidence[0].explanation (calcite.yaml
+    line 363, vaterite.yaml line 306, lithium-bearing-geothermal-brine.yaml line 302)
+    retains the generic 70-character template string (''Ureolytic activity increases
+    pH and dissolved carbonate concentration.''), and edges[1..2] (calcite.yaml lines
+    364-385, vaterite.yaml lines 307-328, lithium-bearing-geothermal-brine.yaml lines
+    303-324) interpolate capitalized node labels mid-sentence with plural-subject
+    singular-verb agreement (''Dissolved Ca(II), Mg(II), Mn, and Sr ... precipitates
+    into Precipitated ...'') and assert supports: support with generic one-line explanations
+    that omit the ex situ mixed-phase XRD assignment (Figure S7 p. 24: vaterite phase
+    1, calcite phase 2, magnesite), absence of matched-pH chemical or killed-cell
+    controls, and ICP-OES aliquot / saturation-model caveats documented in mechanisms[...].evidence[2..3]
+    (supports: partial). In this scope, 1 record(s) (calcite) are affected.'
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/calcite.yaml
+    role: maintained_record
+actions:
+- action_id: act-refine-pasteurii-rehmanji2025-geothermal-brine-graphs
+  finding_ids:
+  - cmmmech-cycle10-stage4-finding-0001
+  target_ids:
+  - cmmmech:calcite
+  description: Replace generic parenthetical template descriptions and erroneous '/phosphate'
+    wording on dissolved_metal_cations, precipitated_mineral_phase, and edges[2].relationship,
+    qualify edges[1..2].evidence[0].supports to partial to match the mixed-phase XRD
+    and control/aliquot limitations in rehmanji2025 / rehmanji2025_si, and replace
+    mid-sentence capitalized node labels, plural-subject singular-verb grammar, and
+    generic edge explanations with study-specific prose in data/records/calcite.yaml,
+    data/records/vaterite.yaml, and data/records/lithium-bearing-geothermal-brine.yaml
+    during Stage 5 grouped remediation with canonical history provenance.
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/calcite.yaml
+    role: maintained_record
+  acceptance_checks:
+  - nodes[2..3].description and edges[2].relationship in calcite.yaml, vaterite.yaml,
+    and lithium-bearing-geothermal-brine.yaml remove template label duplication and
+    '/phosphate' wording.
+  - 'edges[0..2] in calcite.yaml, vaterite.yaml, and lithium-bearing-geothermal-brine.yaml
+    use lowercase mid-sentence prose, plural verb agreement (''precipitate into''),
+    and rehmanji2025/rehmanji2025_si-specific explanations with supports: partial
+    on edges[1..2].'
+  - Matching EDIT history sidecars exist in history/records/ and pass just check.
+evidence:
+- evidence_id: ev-calcite-file
+  kind: record_content
+  reference: data/records/calcite.yaml
+  locator: mechanisms[1] (lines 99-148); causal_graphs[0] (lines 236-385)
+  accessed_at: '2026-11-06T09:00:07Z'
+  support: supports
+  summary: Inspected data/records/calcite.yaml, verifying mechanisms[1] (lines 99-148)
+    against causal_graphs[0].nodes[2..3] (lines 342-353) and causal_graphs[0].edges[0..2]
+    (lines 355-385).
+- evidence_id: ev-calcite-rehmanji2025
+  kind: primary_source
+  reference: DOI:10.1039/d5ra06824j
+  locator: Rehmanji et al. 2025 RSC Advances 15:43263-43274, Sections 2.1-2.2, 4.1-4.7,
+    Figures 1-2, SI Tables S1-S2/S7, Figures S5/S7
+  accessed_at: '2026-11-06T09:00:07Z'
+  support: supports
+  summary: Rehmanji et al. (2025) report ex situ powder XRD assignment of calcite
+    (phase 2) alongside vaterite (phase 1) and magnesite in mixed solids from 24 h
+    Sporosarcina pasteurii DSM 33 treatment of Cornish geothermal brine with 500 mM
+    urea (Figure S7 p. 24), without matched-pH chemical or killed-cell controls.
+limitations:
+- data/records/calcite.yaml retains generic template node/edge descriptions, '/phosphate'
+  wording, mid-sentence capitalized label interpolations, and unqualified edge support
+  in causal_graphs[0] (tracked as open finding cmmmech-cycle10-stage4-finding-0001
+  for Stage 5 remediation).
+notes: []
