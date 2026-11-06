@@ -3,7 +3,7 @@
 - **Run ID**: `mech-goal-sequence-20261019`
 - **Cycle / Stage**: Cycle 10, Stage 1 (`add_records`)
 - **Timestamp (UTC)**: `2026-11-06T02:45:00Z`
-- **Corpus Progression**: `688 -> 693` records (`+5`), `1374 -> 1379` history sidecars (`+5` `CREATE`), `1100 -> 1105` structured reviews (`+5`)
+- **Corpus Progression**: `688 -> 693` records (`+5`), `1374 -> 1380` history sidecars (`+5` `CREATE`, `+1` `EDIT`), `1100 -> 1106` structured reviews (`+6`)
 
 ## 1. Bounded Frontier Search & Citation Verification Protocol
 
@@ -23,7 +23,7 @@ We inspected the five open-access *European Journal of Mineralogy* single-refere
 
 | Record Path | Bytes | Record SHA-256 | History Sidecar Path | Bytes | Sidecar SHA-256 |
 | :--- | ---: | :--- | :--- | ---: | :--- |
-| `data/records/pilanesbergite.yaml` | `6,839` | `9dd912aa9464c6064c17acd326af1a34572ebb99857d4266f4eca53a0d4c620b` | `history/records/pilanesbergite/2026-11-06T024318Z-antigravity-7389b1.yaml` | `1,008` | `4fbc7ddfb4dad89ec6f99b2da5862d8920661a839d7533f4cd013e624362b26d` |
+| `data/records/pilanesbergite.yaml` | `8,602` | `f91385ad97acd223ccc3fc1d3c952c26a205f67242a5fa29e84ac1fd50056df2` | `history/records/pilanesbergite/2026-11-06T024318Z-antigravity-7389b1.yaml` (`CREATE`) + `history/records/pilanesbergite/2026-11-06T034437Z-antigravity-663d65.yaml` (`EDIT`) | `1,008` / `1,405` | `4fbc7ddfb4dad89ec6f99b2da5862d8920661a839d7533f4cd013e624362b26d` / `5978476245b1ea17461cf146bdf0588554ef498efb91b8fd838bd58b12b616fc` |
 | `data/records/luxembourgite.yaml` | `5,966` | `025aa43b48e777f0d30e9e8f4e88e88054bbaeaa835cf91877e60bbd9bdf0646` | `history/records/luxembourgite/2026-11-06T024320Z-antigravity-583019.yaml` | `1,008` | `5dd20a298c1980a114416cdd491d22925f035b7298d74e9462e7b1dab1034e9c` |
 | `data/records/tancaite-ce.yaml` | `5,911` | `d1dbec31c0288a209372b342a339c0ed9a063d5756b33e8debe48621bd8f17e2` | `history/records/tancaite-ce/2026-11-06T024322Z-antigravity-f716a6.yaml` | `1,009` | `45cd0b2b8629e7cfd5cdf3368d0dfcbc1110d235d9b5d5bb96c6f8fde33dd1cd` |
 | `data/records/argentotennantite-fe.yaml` | `6,170` | `f916d62155c5f593cc96f4cd99a5bc2c723b328d371d93326d282837d2c87c47` | `history/records/argentotennantite-fe/2026-11-06T024323Z-antigravity-e20b4d.yaml` | `1,036` | `f1d707c4b8ea562ee0548c10f7f1c23e8aad1d6c3cef15c8f3f38476550e8cf7` |
@@ -33,7 +33,8 @@ We inspected the five open-access *European Journal of Mineralogy* single-refere
 
 1. **`pilanesbergite`** (Dal Bo et al. 2024):
    - Figure 2 (p. 76) uses the mineral symbol `Pbt` for pilanesbergite, whereas the September 2026 IMA-CNMNC Master List (p. 173) assigns `Pbg`.
-   - Table 1 (p. 77) prints the EPMA mean oxide/halogen total (`n = 15` points on 7 grains) as `102.13 wt%` and `99.80 wt%` after `-O=F` (`2.33 wt%`), whereas the arithmetic sum of the 14 printed mean constituent values is `102.15 wt%` and `99.82 wt%` after `-O=F`.
+   - The Abstract (p. 73) and Section 3 (p. 74) report `Dcalc = 3.40 g cm-3` alongside `Dmeas = 3.47 g cm-3`, whereas Table 3 (p. 79) reports `Calculated density = 3.49 g cm-3`.
+   - Table 1 (p. 77) prints the EPMA mean oxide/halogen total (`n = 15` analyses, `5 um` beam) as `102.13 wt%` and `99.80 wt%` after `-O=F` (`2.33 wt%`), whereas the arithmetic sum of the 14 printed mean constituent values is `102.15 wt%` and `99.82 wt%` after `-O=F`.
    - Section 6.1 (p. 77) refers to the anionic sites as `"The W1 (O4) and W2 (F) sites"`, whereas Tables 4 (p. 80) and 7 (p. 81) identify `W1` as `O8 (W1)`.
    - Table 4 (p. 80) prints `Ueq` for site `X3 (Fe)` as `0.349(4)` Å², a decimal-place typographical error relative to `X1 (Ti) = 0.00650(5)`, `X2 (Ca) = 0.00926(7)`, and `X4 (Na) = 0.0120(1)` Å².
 2. **`luxembourgite`** (Philippo et al. 2020):
