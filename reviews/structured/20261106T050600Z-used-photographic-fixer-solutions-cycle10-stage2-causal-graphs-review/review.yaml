@@ -1,0 +1,219 @@
+schema_version: 1.0.0
+review_id: 20261106T050600Z-used-photographic-fixer-solutions-cycle10-stage2-causal-graphs-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 10 Stage 2 causal-graphs review of Used photographic fixer solutions
+  (cmmmech:used-photographic-fixer-solutions)
+started_at: '2026-11-06T05:05:30Z'
+finished_at: '2026-11-06T05:06:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle10-stage2-causal-graphs-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 10 Stage 2 causal_graphs and ProteinExample curation in data/records/used-photographic-fixer-solutions.yaml
+    (SHA-256 749902e02072a5bbdeba7b7de333ea57fbcf98cae95ae16ea362e49083364ccb) against
+    live UniProtKB reference proteomes and cited primary source(s) (pethkar2003: Pethkar
+    and Paknikar (2003). Thiosulfate biodegradation-silver biosorption process for
+    the treatment of photofilm processing wastewater. Process Biochemistry 38:855-860.
+    DOI 10.1016/S0032-9592(02)00054-7; complete original text read through the author-shared
+    six-page PDF web rendition, with Table 1 and all six original publisher figures
+    separately checked. (https://doi.org/10.1016/S0032-9592(02)00054-7)).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 0fbb411bcb9bba9d4871d7791d5a13ebc4b50723
+  state: working_tree
+  inputs:
+  - path: data/records/used-photographic-fixer-solutions.yaml
+    sha256: 749902e02072a5bbdeba7b7de333ea57fbcf98cae95ae16ea362e49083364ccb
+    role: target
+  - path: history/records/used-photographic-fixer-solutions/2026-11-06T050407Z-marcin-6c2887.yaml
+    sha256: 766a76933543966d0a05b37ac06e0080b591788e743902460c9d7a92d4cbaf66
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:used-photographic-fixer-solutions
+  path: data/records/used-photographic-fixer-solutions.yaml
+  label: Used photographic fixer solutions
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/used-photographic-fixer-solutions.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/used-photographic-fixer-solutions/2026-11-06T050407Z-marcin-6c2887.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 10 Stage 2 causal-graphs review of data/records/used-photographic-fixer-solutions.yaml
+    (SHA-256 749902e02072a5bbdeba7b7de333ea57fbcf98cae95ae16ea362e49083364ccb) and
+    its canonical EDIT history sidecar (history/records/used-photographic-fixer-solutions/2026-11-06T050407Z-marcin-6c2887.yaml)
+    verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding,
+    and primary-source evidence fidelity across causal_graph ''thiosulfate_oxidation_biosorption_then_electrowinning_graph''
+    (mechanism_ref: thiosulfate_oxidation_biosorption_then_electrowinning, 4 nodes
+    / 3 edges; thioparus_soxb_thiosulfate_oxidation: [UniProtKB:U5TVQ7 (soxB, U5TVQ7_THITI,
+    UniProtKB)]).'
+  selection: Cycle 10 Stage 2 causal_graphs curation for cmmmech:used-photographic-fixer-solutions
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:used-photographic-fixer-solutions
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/used-photographic-fixer-solutions.yaml
+  locator: Working-tree record data/records/used-photographic-fixer-solutions.yaml
+    (causal_graphs and mechanisms[].protein_examples)
+  accessed_at: '2026-11-06T05:05:45Z'
+  support: supports
+  summary: 'Curated data/records/used-photographic-fixer-solutions.yaml (SHA-256 749902e02072a5bbdeba7b7de333ea57fbcf98cae95ae16ea362e49083364ccb)
+    with causal_graph ''thiosulfate_oxidation_biosorption_then_electrowinning_graph''
+    (mechanism_ref: thiosulfate_oxidation_biosorption_then_electrowinning, 4 nodes
+    / 3 edges; thioparus_soxb_thiosulfate_oxidation: [UniProtKB:U5TVQ7 (soxB, U5TVQ7_THITI,
+    UniProtKB)]), achieving 100% parity between mechanisms[].protein_examples and
+    causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+    levels and experimental caveats.'
+  snapshot_sha256: 749902e02072a5bbdeba7b7de333ea57fbcf98cae95ae16ea362e49083364ccb
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://doi.org/10.1016/S0032-9592(02)00054-7
+  locator: 'pethkar2003: Pethkar and Paknikar (2003). Thiosulfate biodegradation-silver
+    biosorption process for the treatment of photofilm processing wastewater. Process
+    Biochemistry 38:855-860. DOI 10.1016/S0032-9592(02)00054-7; complete original
+    text read through the author-shared six-page PDF web rendition, with Table 1 and
+    all six original publisher figures separately checked. (https://doi.org/10.1016/S0032-9592(02)00054-7)'
+  accessed_at: '2026-11-06T05:05:45Z'
+  support: supports
+  summary: 'Live-verified UniProtKB reference-proteome grounding across UniProtKB:U5TVQ7
+    (U5TVQ7_THITI, Sulfate thioesterase/sulfate thiohydrolase, gene_symbol: soxB,
+    TREMBL, NCBITaxon:931 Thiobacillus thioparus, UniProtKB). Primary mechanism source(s)
+    (pethkar2003: Pethkar and Paknikar (2003). Thiosulfate biodegradation-silver biosorption
+    process for the treatment of photofilm processing wastewater. Process Biochemistry
+    38:855-860. DOI 10.1016/S0032-9592(02)00054-7; complete original text read through
+    the author-shared six-page PDF web rendition, with Table 1 and all six original
+    publisher figures separately checked. (https://doi.org/10.1016/S0032-9592(02)00054-7))
+    report culture-level mineralization, biosorption, or bioleaching without single-gene
+    knockouts; supports: partial is strictly preserved on all enzyme-level edges and
+    ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/used-photographic-fixer-solutions/2026-11-06T050407Z-marcin-6c2887.yaml
+  locator: Canonical EDIT history sidecar history/records/used-photographic-fixer-solutions/2026-11-06T050407Z-marcin-6c2887.yaml
+  accessed_at: '2026-11-06T05:05:45Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/used-photographic-fixer-solutions/2026-11-06T050407Z-marcin-6c2887.yaml
+    (SHA-256 766a76933543966d0a05b37ac06e0080b591788e743902460c9d7a92d4cbaf66): Add
+    evidence-backed causal_graphs representation and live-verified Thiobacillus thioparus
+    SoxB (UniProtKB:U5TVQ7) protein grounding for thiosulfate_oxidation_biosorption_then_electrowinning,
+    distinguishing Stage 1 bacterial thiosulfate degradation, Stage 2 Cladosporium
+    cladosporioides bead sorption, and Stage 3 abiotic cyanide elution/electrowinning.'
+  snapshot_sha256: 766a76933543966d0a05b37ac06e0080b591788e743902460c9d7a92d4cbaf66
+- evidence_id: validation
+  kind: validation
+  reference: data/records/used-photographic-fixer-solutions.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-06T05:05:45Z'
+  support: supports
+  summary: data/records/used-photographic-fixer-solutions.yaml and history/records/used-photographic-fixer-solutions/2026-11-06T050407Z-marcin-6c2887.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: 749902e02072a5bbdeba7b7de333ea57fbcf98cae95ae16ea362e49083364ccb
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 693 record(s); 0 failed.
+  target_ids:
+  - cmmmech:used-photographic-fixer-solutions
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:used-photographic-fixer-solutions
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_protein_grounding
+  area: graph
+  topic: 'Verification of causal_graphs structure, UniProtKB reference-proteome grounding,
+    and parity across causal_graph ''thiosulfate_oxidation_biosorption_then_electrowinning_graph''
+    (mechanism_ref: thiosulfate_oxidation_biosorption_then_electrowinning, 4 nodes
+    / 3 edges; thioparus_soxb_thiosulfate_oxidation: [UniProtKB:U5TVQ7 (soxB, U5TVQ7_THITI,
+    UniProtKB)])'
+  outcome: supported
+  summary: 'Curated data/records/used-photographic-fixer-solutions.yaml (SHA-256 749902e02072a5bbdeba7b7de333ea57fbcf98cae95ae16ea362e49083364ccb)
+    with causal_graph ''thiosulfate_oxidation_biosorption_then_electrowinning_graph''
+    (mechanism_ref: thiosulfate_oxidation_biosorption_then_electrowinning, 4 nodes
+    / 3 edges; thioparus_soxb_thiosulfate_oxidation: [UniProtKB:U5TVQ7 (soxB, U5TVQ7_THITI,
+    UniProtKB)]), achieving 100% parity between mechanisms[].protein_examples and
+    causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+    levels and caveats from pethkar2003: Pethkar and Paknikar (2003). Thiosulfate
+    biodegradation-silver biosorption process for the treatment of photofilm processing
+    wastewater. Process Biochemistry 38:855-860. DOI 10.1016/S0032-9592(02)00054-7;
+    complete original text read through the author-shared six-page PDF web rendition,
+    with Table 1 and all six original publisher figures separately checked. (https://doi.org/10.1016/S0032-9592(02)00054-7).
+    Live-verified UniProtKB grounding across UniProtKB:U5TVQ7 (U5TVQ7_THITI, Sulfate
+    thioesterase/sulfate thiohydrolase, gene_symbol: soxB, TREMBL, NCBITaxon:931 Thiobacillus
+    thioparus, UniProtKB).'
+  target_ids:
+  - cmmmech:used-photographic-fixer-solutions
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: data/records/used-photographic-fixer-solutions.yaml was updated exclusively
+    through scripts/curate_causal_graphs.py (curate_record_file), producing append-only
+    history sidecar history/records/used-photographic-fixer-solutions/2026-11-06T050407Z-marcin-6c2887.yaml
+    (SHA-256 766a76933543966d0a05b37ac06e0080b591788e743902460c9d7a92d4cbaf66) and
+    passing all LinkML and history validation gates.
+  target_ids:
+  - cmmmech:used-photographic-fixer-solutions
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Used photographic fixer solutions (cmmmech:used-photographic-fixer-solutions)
+  passes Cycle 10 Stage 2 causal-graphs review (scientific_review: true) at SHA-256
+  749902e02072a5bbdeba7b7de333ea57fbcf98cae95ae16ea362e49083364ccb: Curated data/records/used-photographic-fixer-solutions.yaml
+  with causal_graph ''thiosulfate_oxidation_biosorption_then_electrowinning_graph''
+  (mechanism_ref: thiosulfate_oxidation_biosorption_then_electrowinning, 4 nodes /
+  3 edges; thioparus_soxb_thiosulfate_oxidation: [UniProtKB:U5TVQ7 (soxB, U5TVQ7_THITI,
+  UniProtKB)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+  and preserving source-faithful support levels and experimental caveats from pethkar2003:
+  Pethkar and Paknikar (2003). Thiosulfate biodegradation-silver biosorption process
+  for the treatment of photofilm processing wastewater. Process Biochemistry 38:855-860.
+  DOI 10.1016/S0032-9592(02)00054-7; complete original text read through the author-shared
+  six-page PDF web rendition, with Table 1 and all six original publisher figures
+  separately checked. (https://doi.org/10.1016/S0032-9592(02)00054-7). Live-verified
+  UniProtKB reference-proteome grounding across UniProtKB:U5TVQ7 (U5TVQ7_THITI, Sulfate
+  thioesterase/sulfate thiohydrolase, gene_symbol: soxB, TREMBL, NCBITaxon:931 Thiobacillus
+  thioparus, UniProtKB).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 10 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
+  for cmmmech:used-photographic-fixer-solutions.
+related_reviews: []

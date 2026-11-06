@@ -1,148 +1,340 @@
 id: cmmmech:lithium
 name: Lithium
 material_kind: element
-description: >-
-  The element Li, distinct from dissolved lithium ions, Li-bearing mineral
-  species or groups, and battery materials. The US designation below concerns
-  the named lithium commodity in the 2025 list, not every Li-containing resource.
+description: The element Li, distinct from dissolved lithium ions, Li-bearing mineral species or groups, and battery materials. The US designation below concerns the named lithium commodity in the 2025 list, not every Li-containing resource.
 identifiers:
-  - id: CHEBI:30145
-    label: lithium atom
+- id: CHEBI:30145
+  label: lithium atom
 sources:
-  - id: kirk2024
-    title: >-
-      Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene, and
-      lepidolite using Acidiothiobacillus ferrooxidans. Frontiers in Microbiology
-      15:1467408. The genus spelling is retained from the published title.
-    url: https://doi.org/10.3389/fmicb.2024.1467408
-    accessed_on: '2026-10-09'
-  - id: chebi_lithium
-    title: 'ChEBI CHEBI:30145 - lithium atom'
-    url: https://www.ebi.ac.uk/chebi/CHEBI:30145
-    accessed_on: '2026-10-09'
-  - id: ncbi_ferrooxidans
-    title: 'NCBI Taxonomy 920 - Acidithiobacillus ferrooxidans (species)'
-    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
-    accessed_on: '2026-10-09'
-  - id: usgs2025
-    title: >-
-      USGS (2025). Final 2025 List of Critical Minerals. Federal Register
-      90:50494-50497, document 2025-19813.
-    url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
-    accessed_on: '2026-10-09'
-  - id: eu2024
-    title: >-
-      Regulation (EU) 2024/1252 of 11 April 2024. Original Official Journal text,
-      3 May 2024; Annex II, Section 1(s), lithium, page 57 of 67.
-    url: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401252
-    accessed_on: '2026-10-09'
-  - id: kirk2024_data_v1
-    title: >-
-      Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene and
-      lepidolite using Acidiothiobacillus ferrooxidans. Mendeley Data, version 1,
-      published 14 November 2024; CC BY 4.0. Published genus spelling retained.
-    url: https://doi.org/10.17632/djkf7tkm8d.1
-    accessed_on: '2026-10-09'
+- id: kirk2024
+  title: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene, and lepidolite using Acidiothiobacillus ferrooxidans. Frontiers in Microbiology 15:1467408. The genus spelling is retained from the published title.
+  url: https://doi.org/10.3389/fmicb.2024.1467408
+  accessed_on: '2026-10-09'
+- id: chebi_lithium
+  title: ChEBI CHEBI:30145 - lithium atom
+  url: https://www.ebi.ac.uk/chebi/CHEBI:30145
+  accessed_on: '2026-10-09'
+- id: ncbi_ferrooxidans
+  title: NCBI Taxonomy 920 - Acidithiobacillus ferrooxidans (species)
+  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=920&mode=info
+  accessed_on: '2026-10-09'
+- id: usgs2025
+  title: USGS (2025). Final 2025 List of Critical Minerals. Federal Register 90:50494-50497, document 2025-19813.
+  url: https://www.govinfo.gov/content/pkg/FR-2025-11-07/html/2025-19813.htm
+  accessed_on: '2026-10-09'
+- id: eu2024
+  title: Regulation (EU) 2024/1252 of 11 April 2024. Original Official Journal text, 3 May 2024; Annex II, Section 1(s), lithium, page 57 of 67.
+  url: https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:L_202401252
+  accessed_on: '2026-10-09'
+- id: kirk2024_data_v1
+  title: Kirk et al. (2024). Bioleaching of lithium from jadarite, spodumene and lepidolite using Acidiothiobacillus ferrooxidans. Mendeley Data, version 1, published 14 November 2024; CC BY 4.0. Published genus spelling retained.
+  url: https://doi.org/10.17632/djkf7tkm8d.1
+  accessed_on: '2026-10-09'
 criticality:
-  - jurisdiction: United States of America
-    list_name: USGS Final List of Critical Minerals
-    edition: '2025; Federal Register 90:50494-50497'
-    classification: critical
-    source_ref: usgs2025
-  - jurisdiction: European Union
-    list_name: Regulation (EU) 2024/1252, Annex II, Section 1(s), lithium
-    edition: '2024 original act; OJ L 2024/1252, 3 May 2024'
-    classification: critical
-    source_ref: eu2024
+- jurisdiction: United States of America
+  list_name: USGS Final List of Critical Minerals
+  edition: 2025; Federal Register 90:50494-50497
+  classification: critical
+  source_ref: usgs2025
+- jurisdiction: European Union
+  list_name: Regulation (EU) 2024/1252, Annex II, Section 1(s), lithium
+  edition: 2024 original act; OJ L 2024/1252, 3 May 2024
+  classification: critical
+  source_ref: eu2024
 mechanisms:
-  - id: acidophile_jadarite_bearing_material_leaching
-    name: Transient microbial enhancement of Li release from jadarite-bearing material
-    process: bioleaching
-    microbial: true
-    organisms:
-      - id: NCBITaxon:920
-        label: Acidithiobacillus ferrooxidans
-    description: >-
-      Inoculation accelerated Li solubilization from a jadarite-bearing sample
-      relative to uninoculated acidic medium during part of a laboratory time
-      course. The uninoculated control reached similar dissolved Li by day 30,
-      and sulfuric-acid-only leaching released more Li. Biofilm involvement was
-      suggested, without establishing a unique molecular cause.
-    context: >-
-      Live in-lab ore-derived culture was reported as At. ferrooxidans, without
-      a strain accession. The species identifier normalizes the reported name
-      to Acidithiobacillus ferrooxidans; the title and abstract spell the genus
-      Acidiothiobacillus. This mapping does not independently identify the culture.
-      Ground Jadar Valley material contained jadarite, dolomite and probertite,
-      with possible unidentified Li-bearing phases. Triplicate biotic flasks
-      ran statically at 23 degrees C for 30 days, targeting pH 1.8; addition of
-      jadarite raised pH immediately and required repeated sulfuric acid doses.
-      Acid additions differed between treatments, limiting attribution of the
-      observed difference solely to biology. Methods state 2 g powder,
-      190 mL basal medium and 10 mL inoculum but label this 2% w/v; those amounts
-      imply 1% w/v. The discrepancy is unresolved and no normalized yield is
-      curated. No purified Li product or industrial heap operation was demonstrated.
+- id: acidophile_jadarite_bearing_material_leaching
+  name: Transient microbial enhancement of Li release from jadarite-bearing material
+  process: bioleaching
+  description: Inoculation accelerated Li solubilization from a jadarite-bearing sample relative to uninoculated acidic medium during part of a laboratory time course. The uninoculated control reached similar dissolved Li by day 30, and sulfuric-acid-only leaching released more Li. Biofilm involvement was suggested, without establishing a unique molecular cause.
+  context: Live in-lab ore-derived culture was reported as At. ferrooxidans, without a strain accession. The species identifier normalizes the reported name to Acidithiobacillus ferrooxidans; the title and abstract spell the genus Acidiothiobacillus. This mapping does not independently identify the culture. Ground Jadar Valley material contained jadarite, dolomite and probertite, with possible unidentified Li-bearing phases. Triplicate biotic flasks ran statically at 23 degrees C for 30 days, targeting pH 1.8; addition of jadarite raised pH immediately and required repeated sulfuric acid doses. Acid additions differed between treatments, limiting attribution of the observed difference solely to biology. Methods state 2 g powder, 190 mL basal medium and 10 mL inoculum but label this 2% w/v; those amounts imply 1% w/v. The discrepancy is unresolved and no normalized yield is curated. No purified Li product or industrial heap operation was demonstrated.
+  microbial: true
+  organisms:
+  - id: NCBITaxon:920
+    label: Acidithiobacillus ferrooxidans
+  protein_examples:
+  - uniprot_accession: UniProtKB:B7JAQ7
+    entry_name: B7JAQ7_ACIF2
+    protein_name: Cytochrome c
+    gene_symbol: cyc2
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    functional_role: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270, catalyzing primary extracellular electron extraction from soluble Fe(II) at low pH.
+    annotation_note: Grounded to type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270 / DSM 14882 / NCIMB 8455; NCBITaxon:243159) as a representative strain-level entry for species-level mechanism organism Acidithiobacillus ferrooxidans (NCBITaxon:920). Represents the unsequenced Bor sulfide-ore Acidithiobacillus ferrooxidans isolate inoculated into jadarite-bearing and spodumene-bearing lithium silicate leaching flasks in Kirk et al. (2024).
     evidence:
-      - source_ref: kirk2024
-        supports: support
-        explanation: >-
-          Sections 2.1-2.3 and 3.1-3.2, Fig. 1 and Table 1 support the scoped
-          ICP-OES dissolved-Li comparison and mixed substrate identity.
-          Acid leaching contributed substantially in all treatments.
+    - source_ref: kirk2024
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein for the Bor sulfide-ore isolate maintained on ferrous sulfate and inoculated (10 mL into 190 mL basal medium with 2 g Jadar Basin jadarite-bearing feed or Bikita spodumene feed at static 23 C for 30 days) in Kirk et al. (2024); neither mineral feed showed a statistically resolved positive microbial lithium-leaching increment over uninoculated pH-1.8 acid controls (190 vs 210 mg/L Li for jadarite with 13.5 mL cumulative 0.5 M H2SO4 additions; 6.5 vs 5.8 mg/L Li for refractory spodumene).
+  - uniprot_accession: UniProtKB:A0A2W1KH68
+    entry_name: A0A2W1KH68_ACIFR
+    protein_name: Cytochrome C
+    gene_symbol: DN052_11975
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:920
+      label: Acidithiobacillus ferrooxidans
+    reference_proteome_id: UP000248886
+    functional_role: Outer-membrane c-type cytochrome Cyc2 homolog (locus DN052_11975) in the species-level Acidithiobacillus ferrooxidans DSM 16523 reference proteome (UP000248886; NCBITaxon:920) mediating initial extracellular Fe(II) oxidation.
+    annotation_note: Grounded to species-level reference proteome UP000248886 (Acidithiobacillus ferrooxidans DSM 16523; NCBITaxon:920), providing direct species-taxon parity with mechanism organism NCBITaxon:920 alongside the ATCC 23270 rus-operon entries. Represents the unsequenced Bor sulfide-ore Acidithiobacillus ferrooxidans isolate inoculated into jadarite-bearing and spodumene-bearing lithium silicate leaching flasks in Kirk et al. (2024).
+    evidence:
+    - source_ref: kirk2024
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein for the Bor sulfide-ore isolate maintained on ferrous sulfate and inoculated (10 mL into 190 mL basal medium with 2 g Jadar Basin jadarite-bearing feed or Bikita spodumene feed at static 23 C for 30 days) in Kirk et al. (2024); neither mineral feed showed a statistically resolved positive microbial lithium-leaching increment over uninoculated pH-1.8 acid controls (190 vs 210 mg/L Li for jadarite with 13.5 mL cumulative 0.5 M H2SO4 additions; 6.5 vs 5.8 mg/L Li for refractory spodumene).
+  - uniprot_accession: UniProtKB:B7JAQ0
+    entry_name: RUS_ACIF2
+    protein_name: Rusticyanin
+    gene_symbol: rus
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR000923
+    - InterPro:IPR028871
+    - InterPro:IPR050845
+    - InterPro:IPR033138
+    - InterPro:IPR008972
+    - InterPro:IPR001243
+    pfam_ids:
+    - Pfam:PF00127
+    ncbifam_ids:
+    - NCBIfam:TIGR03095
+    go_terms:
+    - id: GO:0042597
+      label: periplasmic space
+    - id: GO:0005507
+      label: copper ion binding
+    - id: GO:0009055
+      label: electron transfer activity
+    functional_role: Reviewed Swiss-Prot periplasmic blue-copper protein rusticyanin (rus, locus AFE_3146; RUS_ACIF2) shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) during aerobic Fe(II) oxidation.
+    annotation_note: Reviewed Swiss-Prot entry (RUS_ACIF2) in type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270; NCBITaxon:243159). Represents the unsequenced Bor sulfide-ore Acidithiobacillus ferrooxidans isolate inoculated into jadarite-bearing and spodumene-bearing lithium silicate leaching flasks in Kirk et al. (2024).
+    evidence:
+    - source_ref: kirk2024
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein for the Bor sulfide-ore isolate maintained on ferrous sulfate and inoculated (10 mL into 190 mL basal medium with 2 g Jadar Basin jadarite-bearing feed or Bikita spodumene feed at static 23 C for 30 days) in Kirk et al. (2024); neither mineral feed showed a statistically resolved positive microbial lithium-leaching increment over uninoculated pH-1.8 acid controls (190 vs 210 mg/L Li for jadarite with 13.5 mL cumulative 0.5 M H2SO4 additions; 6.5 vs 5.8 mg/L Li for refractory spodumene).
+  - uniprot_accession: UniProtKB:B7JAQ6
+    entry_name: B7JAQ6_ACIF2
+    protein_name: Cytochrome c552
+    gene_symbol: cyc1
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:243159
+      label: Acidithiobacillus ferrooxidans ATCC 23270
+    reference_proteome_id: UP000001362
+    interpro_ids:
+    - InterPro:IPR009056
+    - InterPro:IPR036909
+    - InterPro:IPR024167
+    - InterPro:IPR050597
+    pfam_ids:
+    - Pfam:PF00034
+    go_terms:
+    - id: GO:0042597
+      label: periplasmic space
+    - id: GO:0009055
+      label: electron transfer activity
+    - id: GO:0020037
+      label: heme binding
+    - id: GO:0005506
+      label: iron ion binding
+    functional_role: Periplasmic diheme cytochrome c4 Cyc1 (cyc1, locus AFE_3152) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 transferring electrons from rusticyanin (AFE_3146) to the inner-membrane aa3-type cytochrome c oxidase.
+    annotation_note: Grounded to type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270; NCBITaxon:243159). Represents the unsequenced Bor sulfide-ore Acidithiobacillus ferrooxidans isolate inoculated into jadarite-bearing and spodumene-bearing lithium silicate leaching flasks in Kirk et al. (2024).
+    evidence:
+    - source_ref: kirk2024
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein for the Bor sulfide-ore isolate maintained on ferrous sulfate and inoculated (10 mL into 190 mL basal medium with 2 g Jadar Basin jadarite-bearing feed or Bikita spodumene feed at static 23 C for 30 days) in Kirk et al. (2024); neither mineral feed showed a statistically resolved positive microbial lithium-leaching increment over uninoculated pH-1.8 acid controls (190 vs 210 mg/L Li for jadarite with 13.5 mL cumulative 0.5 M H2SO4 additions; 6.5 vs 5.8 mg/L Li for refractory spodumene).
+  evidence:
+  - source_ref: kirk2024
+    supports: support
+    explanation: Sections 2.1-2.3 and 3.1-3.2, Fig. 1 and Table 1 support the scoped ICP-OES dissolved-Li comparison and mixed substrate identity. Acid leaching contributed substantially in all treatments.
+  - source_ref: kirk2024
+    supports: partial
+    explanation: 'Section 3.2 limits the advantage to a transient comparison: by day 30 the uninoculated control was similar, and acid-only leaching remained higher. Sections 3.3-3.4 and Figs. 4-5 report no material microbial enhancement for the tested spodumene- and lepidolite-bearing samples. The lepidolite sample name is retained without treating it as a unique mineral species. The result cannot be generalized to all Li ores.'
+  - source_ref: kirk2024_data_v1
+    supports: partial
+    explanation: The eight-file version 1 deposit was acquired and its issuing hashes verified. Jadarite day-30 values are consistent with the reported control convergence and higher acid-only result, but quantitative verification remains limited. Bioleaching workbook headers use mg/kg rather than the paper's mg/L; mineral-digestion units also require reconciliation. In Jadarite bioleaching results from ICP-OES.xlsx, Jadarite!F5 and F7 do not equal the arithmetic means of the labelled replicate cells C:E. Standalone spodumene and lepidolite workbooks contain identical Li replicate blocks at Sheet1!C3:E12, requiring provenance clarification before independent comparison. These are unresolved mappings and inconsistencies, not identified corrections or specific refutations of the paper's qualitative comparisons. The files provide no loading or per-flask acid-dose ledger to resolve the published contradictions. No deposited number was corrected or imported as a normalized yield or quantitative
+      benchmark.
+causal_graphs:
+- id: acidophile_jadarite_bearing_material_leaching_graph
+  name: Acidithiobacillus ferrooxidans inoculation and comparative acid-dominated lithium mobilization from jadarite- versus spodumene-bearing feeds
+  description: Causal pathway linking representative Acidithiobacillus ferrooxidans rus-operon proteins (Cyc2 AFE_3153/DN052_11975, Swiss-Prot rusticyanin AFE_3146, and Cyc1 AFE_3152 in reference proteomes UP000001362 and UP000248886) for the ferrous-sulfate-grown Bor sulfide-ore isolate (10 mL inoculum in 190 mL sterile basal medium with 2 g mineral powder [labeled 2% w/v though 2 g in 200 mL total liquid is 1% w/v] at static 23 C for 30 days targeting pH 1.8) to contrasting lithium (CHEBI:30145) release from Jadar Basin jadarite-bearing feed (190 mg/L Li [~42%] inoculated vs 210 mg/L Li [~46%] uninoculated control after 13.5 mL cumulative 0.5 M H2SO4 additions) and refractory Bikita spodumene (6.5 mg/L Li [~1.2%] inoculated vs 5.8 mg/L Li [~1.1%] uninoculated control at stable pH 1.8 without supplemental acid) in Kirk et al. (2024).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: acidophile_jadarite_bearing_material_leaching
+  nodes:
+  - id: aferro_cyc2_outer_membrane_iron_oxidase
+    label: Acidithiobacillus ferrooxidans outer-membrane cytochrome c Cyc2 (cyc2 AFE_3153; DN052_11975)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cyc2
+    description: Outer-membrane monoheme cytochrome c Cyc2 (AFE_3153 in ATCC 23270 UP000001362; DN052_11975 in DSM 16523 UP000248886) representing the ferrous-sulfate-grown Bor A. ferrooxidans stock culture inoculated into jadarite and spodumene leaching flasks.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JAQ7
+      entry_name: B7JAQ7_ACIF2
+      protein_name: Cytochrome c
+      gene_symbol: cyc2
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      functional_role: Outer-membrane monoheme cytochrome c Cyc2 (cyc2, locus AFE_3153) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270, catalyzing primary extracellular electron extraction from soluble Fe(II) at low pH.
+      annotation_note: Grounded to type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270 / DSM 14882 / NCIMB 8455; NCBITaxon:243159) as a representative strain-level entry for species-level mechanism organism Acidithiobacillus ferrooxidans (NCBITaxon:920). Represents the unsequenced Bor sulfide-ore Acidithiobacillus ferrooxidans isolate inoculated into jadarite-bearing and spodumene-bearing lithium silicate leaching flasks in Kirk et al. (2024).
+      evidence:
       - source_ref: kirk2024
         supports: partial
-        explanation: >-
-          Section 3.2 limits the advantage to a transient comparison: by day 30
-          the uninoculated control was similar, and acid-only leaching remained
-          higher. Sections 3.3-3.4 and Figs. 4-5 report no material microbial
-          enhancement for the tested spodumene- and lepidolite-bearing samples.
-          The lepidolite sample name is retained without treating it as a unique
-          mineral species. The result cannot be generalized to all Li ores.
-      - source_ref: kirk2024_data_v1
+        explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein for the Bor sulfide-ore isolate maintained on ferrous sulfate and inoculated (10 mL into 190 mL basal medium with 2 g Jadar Basin jadarite-bearing feed or Bikita spodumene feed at static 23 C for 30 days) in Kirk et al. (2024); neither mineral feed showed a statistically resolved positive microbial lithium-leaching increment over uninoculated pH-1.8 acid controls (190 vs 210 mg/L Li for jadarite with 13.5 mL cumulative 0.5 M H2SO4 additions; 6.5 vs 5.8 mg/L Li for refractory spodumene).
+    - uniprot_accession: UniProtKB:A0A2W1KH68
+      entry_name: A0A2W1KH68_ACIFR
+      protein_name: Cytochrome C
+      gene_symbol: DN052_11975
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:920
+        label: Acidithiobacillus ferrooxidans
+      reference_proteome_id: UP000248886
+      functional_role: Outer-membrane c-type cytochrome Cyc2 homolog (locus DN052_11975) in the species-level Acidithiobacillus ferrooxidans DSM 16523 reference proteome (UP000248886; NCBITaxon:920) mediating initial extracellular Fe(II) oxidation.
+      annotation_note: Grounded to species-level reference proteome UP000248886 (Acidithiobacillus ferrooxidans DSM 16523; NCBITaxon:920), providing direct species-taxon parity with mechanism organism NCBITaxon:920 alongside the ATCC 23270 rus-operon entries. Represents the unsequenced Bor sulfide-ore Acidithiobacillus ferrooxidans isolate inoculated into jadarite-bearing and spodumene-bearing lithium silicate leaching flasks in Kirk et al. (2024).
+      evidence:
+      - source_ref: kirk2024
         supports: partial
-        explanation: >-
-          The eight-file version 1 deposit was acquired and its issuing hashes
-          verified. Jadarite day-30 values are consistent with the reported
-          control convergence and higher acid-only result, but quantitative
-          verification remains limited. Bioleaching workbook headers use mg/kg
-          rather than the paper's mg/L; mineral-digestion units also require
-          reconciliation. In Jadarite bioleaching results from ICP-OES.xlsx,
-          Jadarite!F5 and F7 do not equal the arithmetic means of the labelled
-          replicate cells C:E. Standalone spodumene and lepidolite workbooks
-          contain identical Li replicate blocks at Sheet1!C3:E12, requiring
-          provenance clarification before independent comparison. These are
-          unresolved mappings and inconsistencies, not identified corrections
-          or specific refutations of the paper's qualitative comparisons.
-          The files provide no loading or per-flask acid-dose ledger to resolve
-          the published contradictions. No deposited number was corrected or
-          imported as a normalized yield or quantitative benchmark.
+        explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein for the Bor sulfide-ore isolate maintained on ferrous sulfate and inoculated (10 mL into 190 mL basal medium with 2 g Jadar Basin jadarite-bearing feed or Bikita spodumene feed at static 23 C for 30 days) in Kirk et al. (2024); neither mineral feed showed a statistically resolved positive microbial lithium-leaching increment over uninoculated pH-1.8 acid controls (190 vs 210 mg/L Li for jadarite with 13.5 mL cumulative 0.5 M H2SO4 additions; 6.5 vs 5.8 mg/L Li for refractory spodumene).
+  - id: aferro_rus_cyc1_periplasmic_relay
+    label: Periplasmic rusticyanin and diheme cytochrome c4 relay (rus AFE_3146; cyc1 AFE_3152)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: rus
+    description: Reviewed Swiss-Prot periplasmic rusticyanin (AFE_3146, RUS_ACIF2) and Cyc1 (AFE_3152) in Acidithiobacillus ferrooxidans coupling Fe(II) oxidation in the stock inoculum to O2 reduction; neither mineral feed was supplemented with exogenous Fe(II) or reduced sulfur during the 30-day leach.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:B7JAQ0
+      entry_name: RUS_ACIF2
+      protein_name: Rusticyanin
+      gene_symbol: rus
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR000923
+      - InterPro:IPR028871
+      - InterPro:IPR050845
+      - InterPro:IPR033138
+      - InterPro:IPR008972
+      - InterPro:IPR001243
+      pfam_ids:
+      - Pfam:PF00127
+      ncbifam_ids:
+      - NCBIfam:TIGR03095
+      go_terms:
+      - id: GO:0042597
+        label: periplasmic space
+      - id: GO:0005507
+        label: copper ion binding
+      - id: GO:0009055
+        label: electron transfer activity
+      functional_role: Reviewed Swiss-Prot periplasmic blue-copper protein rusticyanin (rus, locus AFE_3146; RUS_ACIF2) shuttling electrons from outer-membrane Cyc2 (AFE_3153) to periplasmic cytochrome c4 Cyc1 (AFE_3152) during aerobic Fe(II) oxidation.
+      annotation_note: Reviewed Swiss-Prot entry (RUS_ACIF2) in type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270; NCBITaxon:243159). Represents the unsequenced Bor sulfide-ore Acidithiobacillus ferrooxidans isolate inoculated into jadarite-bearing and spodumene-bearing lithium silicate leaching flasks in Kirk et al. (2024).
+      evidence:
+      - source_ref: kirk2024
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein for the Bor sulfide-ore isolate maintained on ferrous sulfate and inoculated (10 mL into 190 mL basal medium with 2 g Jadar Basin jadarite-bearing feed or Bikita spodumene feed at static 23 C for 30 days) in Kirk et al. (2024); neither mineral feed showed a statistically resolved positive microbial lithium-leaching increment over uninoculated pH-1.8 acid controls (190 vs 210 mg/L Li for jadarite with 13.5 mL cumulative 0.5 M H2SO4 additions; 6.5 vs 5.8 mg/L Li for refractory spodumene).
+    - uniprot_accession: UniProtKB:B7JAQ6
+      entry_name: B7JAQ6_ACIF2
+      protein_name: Cytochrome c552
+      gene_symbol: cyc1
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:243159
+        label: Acidithiobacillus ferrooxidans ATCC 23270
+      reference_proteome_id: UP000001362
+      interpro_ids:
+      - InterPro:IPR009056
+      - InterPro:IPR036909
+      - InterPro:IPR024167
+      - InterPro:IPR050597
+      pfam_ids:
+      - Pfam:PF00034
+      go_terms:
+      - id: GO:0042597
+        label: periplasmic space
+      - id: GO:0009055
+        label: electron transfer activity
+      - id: GO:0020037
+        label: heme binding
+      - id: GO:0005506
+        label: iron ion binding
+      functional_role: Periplasmic diheme cytochrome c4 Cyc1 (cyc1, locus AFE_3152) in the rus operon of Acidithiobacillus ferrooxidans ATCC 23270 transferring electrons from rusticyanin (AFE_3146) to the inner-membrane aa3-type cytochrome c oxidase.
+      annotation_note: Grounded to type-strain reference proteome UP000001362 (Acidithiobacillus ferrooxidans ATCC 23270; NCBITaxon:243159). Represents the unsequenced Bor sulfide-ore Acidithiobacillus ferrooxidans isolate inoculated into jadarite-bearing and spodumene-bearing lithium silicate leaching flasks in Kirk et al. (2024).
+      evidence:
+      - source_ref: kirk2024
+        supports: partial
+        explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein for the Bor sulfide-ore isolate maintained on ferrous sulfate and inoculated (10 mL into 190 mL basal medium with 2 g Jadar Basin jadarite-bearing feed or Bikita spodumene feed at static 23 C for 30 days) in Kirk et al. (2024); neither mineral feed showed a statistically resolved positive microbial lithium-leaching increment over uninoculated pH-1.8 acid controls (190 vs 210 mg/L Li for jadarite with 13.5 mL cumulative 0.5 M H2SO4 additions; 6.5 vs 5.8 mg/L Li for refractory spodumene).
+  - id: ph18_sulfuric_acid_leaching_media
+    label: Static 23 C basal leaching media targeting pH 1.8 (13.5 mL cumulative 0.5 M H2SO4 for jadarite vs unbuffered pH 1.8 for spodumene)
+    node_type: CHEMICAL_ENTITY
+    description: Basal nutrient media (190 mL + 10 mL inoculum + 2 g mineral feed at 23 C for 30 days) where carbonate/borate buffering in the Jadar Basin jadarite feed required 13.5 mL cumulative 0.5 M (1 N) H2SO4 additions in both inoculated and uninoculated flasks, while Bikita spodumene remained at pH 1.8 without supplemental acid.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: mobilized_aqueous_lithium_ion_outcomes
+    label: 'Dissolved Li outcome: 190 vs 210 mg/L Li (~42% vs ~46%) from jadarite and 6.5 vs 5.8 mg/L Li (~1.2% vs ~1.1%) from spodumene at day 30'
+    node_type: CHEMICAL_ENTITY
+    description: 'Contrasting day-30 aqueous lithium (CHEBI:30145) release in Table 4 and kirk2024_data_v1: acid-soluble jadarite released 190 mg/L Li (~42%) in the inoculated arm versus 210 mg/L Li (~46%) in the acid control (converting solid jadarite to 82.6% boric acid and 17.4% amorphous silica), whereas refractory alpha-spodumene released only 6.5 mg/L Li (~1.2%) inoculated versus 5.8 mg/L Li (~1.1%) control within the ~10% error-bar uncertainty.'
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: aferro_cyc2_outer_membrane_iron_oxidase
+    target: aferro_rus_cyc1_periplasmic_relay
+    predicate: provides_electrons_to
+    relationship: outer-membrane Cyc2 to periplasmic rusticyanin/Cyc1 electron relay in ferrous-sulfate-grown A. ferrooxidans inoculum
+    description: Cyc2 (AFE_3153 / DN052_11975) transfers electrons from ferrous iron to periplasmic rusticyanin (AFE_3146) and Cyc1 (AFE_3152) in the ferrous-sulfate-maintained Bor A. ferrooxidans inoculum.
+    evidence:
+    - source_ref: kirk2024
+      supports: partial
+      explanation: Representative Acidithiobacillus ferrooxidans rus-operon Fe(II)-oxidation protein for the Bor sulfide-ore isolate maintained on ferrous sulfate and inoculated (10 mL into 190 mL basal medium with 2 g Jadar Basin jadarite-bearing feed or Bikita spodumene feed at static 23 C for 30 days) in Kirk et al. (2024); neither mineral feed showed a statistically resolved positive microbial lithium-leaching increment over uninoculated pH-1.8 acid controls (190 vs 210 mg/L Li for jadarite with 13.5 mL cumulative 0.5 M H2SO4 additions; 6.5 vs 5.8 mg/L Li for refractory spodumene).
+  - source: aferro_rus_cyc1_periplasmic_relay
+    target: ph18_sulfuric_acid_leaching_media
+    predicate: modulates
+    relationship: inoculation of 10 mL ferrous-sulfate-grown A. ferrooxidans culture into pH-1.8 sulfuric acid leaching flasks
+    description: Addition of 10 mL live A. ferrooxidans culture to 190 mL basal medium at pH 1.8 accompanies 13.5 mL cumulative 0.5 M H2SO4 additions in the buffered jadarite series and unbuffered pH 1.8 exposure in the spodumene series.
+    evidence:
+    - source_ref: kirk2024
+      supports: partial
+      explanation: Sections 2.1-2.3 and Table 1 describe the 10 mL ferrous-sulfate-grown A. ferrooxidans inoculum and pH 1.8 sulfuric-acid maintenance across jadarite and spodumene flasks.
+    - source_ref: kirk2024_data_v1
+      supports: support
+      explanation: The raw data workbook records 13.5 mL cumulative 1 N (0.5 M) H2SO4 added to the jadarite flasks and 0 mL supplemental acid added to the spodumene flasks.
+  - source: ph18_sulfuric_acid_leaching_media
+    target: mobilized_aqueous_lithium_ion_outcomes
+    predicate: dissolves
+    relationship: mineral-specific acid dissolution releasing ~42-46% Li from jadarite versus ~1.1-1.2% Li from refractory spodumene
+    description: Sulfuric-acid attack dissolves jadarite to yield 190 mg/L Li (inoculated) vs 210 mg/L Li (control) at day 30, while Bikita alpha-spodumene resists dissolution (6.5 vs 5.8 mg/L Li at day 30), demonstrating mineral-matrix control without a resolved microbial leaching increment.
+    evidence:
+    - source_ref: kirk2024
+      supports: support
+      explanation: Table 4 and Figures 4-5 report day-30 dissolved Li of 190 mg/L (~42%) inoculated vs 210 mg/L (~46%) control for jadarite and 6.5 mg/L (~1.2%) inoculated vs 5.8 mg/L (~1.1%) control for spodumene.
+    - source_ref: kirk2024_data_v1
+      supports: support
+      explanation: Workbook leachate series confirm the day-30 Li concentrations and ~10% relative uncertainty across both mineral feeds.
 curation_history:
-  - timestamp: '2026-10-09T04:47:22Z'
-    curator: Codex (GPT-6; Codex)
-    action: record_creation
-    summary: >-
-      Curated the lithium element identity, USGS 2025 designation and conditional
-      laboratory bioleaching evidence. Retained control convergence, null effects,
-      uncertain strain identity and loading/acid limitations; no normalized
-      yield was imported. Independent review remains a separate artifact.
-  - timestamp: '2026-10-09T05:49:13Z'
-    curator: Codex (GPT-6; Codex)
-    action: criticality_extension
-    summary: >-
-      Added the historical EU 2024 Annex II critical designation for lithium
-      from the authentic original act. Kept the battery-grade strategic listing
-      separate and preserved all existing scientific claims. Independent review
-      remains a separate artifact.
-  - timestamp: '2026-10-09T05:52:36Z'
-    curator: Codex (GPT-6; Codex)
-    action: evidence_extension
-    summary: >-
-      Added the acquired Mendeley version 1 source and partial evidence preserving
-      unresolved units, aggregate calculations, replicate provenance and loading
-      or acid-dose attribution. Retained paper-scoped qualitative claims and
-      existing designations without importing quantitative benchmarks. Independent
-      review remains a separate artifact.
+- timestamp: '2026-10-09T04:47:22Z'
+  curator: Codex (GPT-6; Codex)
+  action: record_creation
+  summary: Curated the lithium element identity, USGS 2025 designation and conditional laboratory bioleaching evidence. Retained control convergence, null effects, uncertain strain identity and loading/acid limitations; no normalized yield was imported. Independent review remains a separate artifact.
+- timestamp: '2026-10-09T05:49:13Z'
+  curator: Codex (GPT-6; Codex)
+  action: criticality_extension
+  summary: Added the historical EU 2024 Annex II critical designation for lithium from the authentic original act. Kept the battery-grade strategic listing separate and preserved all existing scientific claims. Independent review remains a separate artifact.
+- timestamp: '2026-10-09T05:52:36Z'
+  curator: Codex (GPT-6; Codex)
+  action: evidence_extension
+  summary: Added the acquired Mendeley version 1 source and partial evidence preserving unresolved units, aggregate calculations, replicate provenance and loading or acid-dose attribution. Retained paper-scoped qualitative claims and existing designations without importing quantitative benchmarks. Independent review remains a separate artifact.
+- timestamp: '2026-11-06T04:58:48Z'
+  curator: marcin
+  action: edit
+  summary: Add evidence-backed causal_graphs representation and 4 live-verified Acidithiobacillus ferrooxidans rus-operon protein groundings (UniProtKB:B7JAQ7, UniProtKB:A0A2W1KH68, UniProtKB:B7JAQ0, UniProtKB:B7JAQ6) for acidophile_jadarite_bearing_material_leaching, contrasting jadarite (190 vs 210 mg/L Li) and spodumene (6.5 vs 5.8 mg/L Li) day-30 acid-control outcomes.
 history_refs:
-  - history/records/lithium/2026-10-09T044722Z-codex-d41ec5.yaml
-  - history/records/lithium/2026-10-09T054913Z-codex-bca3b0.yaml
-  - history/records/lithium/2026-10-09T055236Z-codex-f9b211.yaml
+- history/records/lithium/2026-10-09T044722Z-codex-d41ec5.yaml
+- history/records/lithium/2026-10-09T054913Z-codex-bca3b0.yaml
+- history/records/lithium/2026-10-09T055236Z-codex-f9b211.yaml
+- history/records/lithium/2026-11-06T045848Z-marcin-94ecd0.yaml

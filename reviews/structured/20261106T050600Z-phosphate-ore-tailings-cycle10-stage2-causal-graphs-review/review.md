@@ -1,0 +1,336 @@
+# Cycle 10 Stage 2 causal-graphs review of Phosphate-ore tailings (cmmmech:phosphate-ore-tailings)
+
+- Review: 20261106T050600Z-phosphate-ore-tailings-cycle10-stage2-causal-graphs-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-06T05:05:30Z
+- Finished UTC: 2026-11-06T05:06:00Z
+- Reviewer: antigravity / cmmmech-cycle10-stage2-causal-graphs-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Phosphate-ore tailings (cmmmech:phosphate-ore-tailings) passes Cycle 10 Stage 2 causal-graphs review (scientific_review: true) at SHA-256 75eac32c431b01d8adb442834615d581510d6e4636285c0c704db393e2309243: Curated data/records/phosphate-ore-tailings.yaml with causal_graph 'culture_associated_ree_leaching_graph' (mechanism_ref: culture_associated_ree_leaching, 4 nodes / 3 edges; aferro_rus_operon_iron_oxidation_system: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886), UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]; aniger_cexa_citrate_exporter: [UniProtKB:A0A254TZW7 (cexA, CEXA_ASPNG, UniProtKB), UniProtKB:G3Y4N5 (cexA, CEXA_ASPNA, UP000006706)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats from somasundaran2018: Somasundaran P, Hussien S, Patra P and El Shall H (2018). Environmentally Benign Bio-Leaching Extraction of Rare Earth Elements from Non-Conventional Resources. Annals of Microbiology and Research 2(1):54-60. DOI 10.36959/958/570. Complete seven-page publisher PDF inspected, including methods pp.54-55, Table 1 and Figures 1-8. Tailings and concentrate results are separate experimental feeds. (https://scholars.direct/Articles/microbiology/amr-2-009.pdf). Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A254TZW7 (CEXA_ASPNG, Citrate exporter A, gene_symbol: cexA, SWISS_PROT, NCBITaxon:5061 Aspergillus niger, UniProtKB); UniProtKB:G3Y4N5 (CEXA_ASPNA, Citrate exporter A, gene_symbol: cexA, SWISS_PROT, NCBITaxon:380704 Aspergillus niger ATCC 1015, UP000006706).
+
+## Scope And Provenance
+
+Cycle 10 Stage 2 causal-graphs review of data/records/phosphate-ore-tailings.yaml (SHA-256 75eac32c431b01d8adb442834615d581510d6e4636285c0c704db393e2309243) and its canonical EDIT history sidecar (history/records/phosphate-ore-tailings/2026-11-06T045848Z-marcin-f88c10.yaml) verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding, and primary-source evidence fidelity across causal_graph 'culture_associated_ree_leaching_graph' (mechanism_ref: culture_associated_ree_leaching, 4 nodes / 3 edges; aferro_rus_operon_iron_oxidation_system: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886), UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]; aniger_cexa_citrate_exporter: [UniProtKB:A0A254TZW7 (cexA, CEXA_ASPNG, UniProtKB), UniProtKB:G3Y4N5 (cexA, CEXA_ASPNA, UP000006706)]).
+
+Selection: Cycle 10 Stage 2 causal_graphs curation for cmmmech:phosphate-ore-tailings
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: working_tree at Git base 0fbb411bcb9bba9d4871d7791d5a13ebc4b50723.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:phosphate-ore-tailings | data/records/phosphate-ore-tailings.yaml | maintained | Phosphate-ore tailings |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| Strict corpus validation | passed | True | cmmmech:phosphate-ore-tailings | Checked 693 record(s); 0 failed. |
+| Canonical history validation | passed | True | cmmmech:phosphate-ore-tailings | All history sidecars pass validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Verification of causal_graphs structure, UniProtKB reference-proteome grounding, and parity across causal_graph 'culture_associated_ree_leaching_graph' (mechanism_ref: culture_associated_ree_leaching, 4 nodes / 3 edges; aferro_rus_operon_iron_oxidation_system: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886), UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]; aniger_cexa_citrate_exporter: [UniProtKB:A0A254TZW7 (cexA, CEXA_ASPNG, UniProtKB), UniProtKB:G3Y4N5 (cexA, CEXA_ASPNA, UP000006706)])
+
+graph: supported. Targets: cmmmech:phosphate-ore-tailings.
+
+Curated data/records/phosphate-ore-tailings.yaml (SHA-256 75eac32c431b01d8adb442834615d581510d6e4636285c0c704db393e2309243) with causal_graph 'culture_associated_ree_leaching_graph' (mechanism_ref: culture_associated_ree_leaching, 4 nodes / 3 edges; aferro_rus_operon_iron_oxidation_system: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886), UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]; aniger_cexa_citrate_exporter: [UniProtKB:A0A254TZW7 (cexA, CEXA_ASPNG, UniProtKB), UniProtKB:G3Y4N5 (cexA, CEXA_ASPNA, UP000006706)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and caveats from somasundaran2018: Somasundaran P, Hussien S, Patra P and El Shall H (2018). Environmentally Benign Bio-Leaching Extraction of Rare Earth Elements from Non-Conventional Resources. Annals of Microbiology and Research 2(1):54-60. DOI 10.36959/958/570. Complete seven-page publisher PDF inspected, including methods pp.54-55, Table 1 and Figures 1-8. Tailings and concentrate results are separate experimental feeds. (https://scholars.direct/Articles/microbiology/amr-2-009.pdf). Live-verified UniProtKB grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A254TZW7 (CEXA_ASPNG, Citrate exporter A, gene_symbol: cexA, SWISS_PROT, NCBITaxon:5061 Aspergillus niger, UniProtKB); UniProtKB:G3Y4N5 (CEXA_ASPNA, Citrate exporter A, gene_symbol: cexA, SWISS_PROT, NCBITaxon:380704 Aspergillus niger ATCC 1015, UP000006706).
+
+### Verification of canonical EDIT history sidecar and strict schema validation
+
+provenance: supported. Targets: cmmmech:phosphate-ore-tailings.
+
+data/records/phosphate-ore-tailings.yaml was updated exclusively through scripts/curate_causal_graphs.py (curate_record_file), producing append-only history sidecar history/records/phosphate-ore-tailings/2026-11-06T045848Z-marcin-f88c10.yaml (SHA-256 24d7dd9dd0b0aa7b1cb725c8b18dec2bb6b8fa61e5278a071db1f101fea37170) and passing all LinkML and history validation gates.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| owner | data/records/phosphate-ore-tailings.yaml; Working-tree record data/records/phosphate-ore-tailings.yaml (causal_graphs and mechanisms[].protein_examples) | supports | Curated data/records/phosphate-ore-tailings.yaml (SHA-256 75eac32c431b01d8adb442834615d581510d6e4636285c0c704db393e2309243) with causal_graph 'culture_associated_ree_leaching_graph' (mechanism_ref: culture_associated_ree_leaching, 4 nodes / 3 edges; aferro_rus_operon_iron_oxidation_system: [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR, UP000248886), UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]; aniger_cexa_citrate_exporter: [UniProtKB:A0A254TZW7 (cexA, CEXA_ASPNG, UniProtKB), UniProtKB:G3Y4N5 (cexA, CEXA_ASPNA, UP000006706)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples and preserving source-faithful support levels and experimental caveats. |
+| primary_source | https://scholars.direct/Articles/microbiology/amr-2-009.pdf; somasundaran2018: Somasundaran P, Hussien S, Patra P and El Shall H (2018). Environmentally Benign Bio-Leaching Extraction of Rare Earth Elements from Non-Conventional Resources. Annals of Microbiology and Research 2(1):54-60. DOI 10.36959/958/570. Complete seven-page publisher PDF inspected, including methods pp.54-55, Table 1 and Figures 1-8. Tailings and concentrate results are separate experimental feeds. (https://scholars.direct/Articles/microbiology/amr-2-009.pdf) | supports | Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A254TZW7 (CEXA_ASPNG, Citrate exporter A, gene_symbol: cexA, SWISS_PROT, NCBITaxon:5061 Aspergillus niger, UniProtKB); UniProtKB:G3Y4N5 (CEXA_ASPNA, Citrate exporter A, gene_symbol: cexA, SWISS_PROT, NCBITaxon:380704 Aspergillus niger ATCC 1015, UP000006706). Primary mechanism source(s) (somasundaran2018: Somasundaran P, Hussien S, Patra P and El Shall H (2018). Environmentally Benign Bio-Leaching Extraction of Rare Earth Elements from Non-Conventional Resources. Annals of Microbiology and Research 2(1):54-60. DOI 10.36959/958/570. Complete seven-page publisher PDF inspected, including methods pp.54-55, Table 1 and Figures 1-8. Tailings and concentrate results are separate experimental feeds. (https://scholars.direct/Articles/microbiology/amr-2-009.pdf)) report culture-level mineralization, biosorption, or bioleaching without single-gene knockouts; supports: partial is strictly preserved on all enzyme-level edges and ProteinExample evidence items. |
+| edit_history | history/records/phosphate-ore-tailings/2026-11-06T045848Z-marcin-f88c10.yaml; Canonical EDIT history sidecar history/records/phosphate-ore-tailings/2026-11-06T045848Z-marcin-f88c10.yaml | supports | Canonical EDIT history sidecar history/records/phosphate-ore-tailings/2026-11-06T045848Z-marcin-f88c10.yaml (SHA-256 24d7dd9dd0b0aa7b1cb725c8b18dec2bb6b8fa61e5278a071db1f101fea37170): Add evidence-backed causal_graphs representation and 6 live-verified protein groundings (4 Acidithiobacillus ferrooxidans rus-operon proteins UniProtKB:B7JAQ7, UniProtKB:A0A2W1KH68, UniProtKB:B7JAQ0, UniProtKB:B7JAQ6 and 2 Swiss-Prot Aspergillus niger CexA citrate exporters UniProtKB:A0A254TZW7, UniProtKB:G3Y4N5) for culture_associated_ree_leaching. |
+| validation | data/records/phosphate-ore-tailings.yaml; Real CLI validation via python -m cmmmech validate --require-records and validate-history --base main | supports | data/records/phosphate-ore-tailings.yaml and history/records/phosphate-ore-tailings/2026-11-06T045848Z-marcin-f88c10.yaml pass strict LinkML schema, protein_examples parity, and history validation with 0 errors. |
+
+## Limits And Additional Notes
+
+- Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes; an independent subagent PR review is executed prior to merge.
+- Executed during Cycle 10 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py for cmmmech:phosphate-ore-tailings.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261106T050600Z-phosphate-ore-tailings-cycle10-stage2-causal-graphs-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 10 Stage 2 causal-graphs review of Phosphate-ore tailings (cmmmech:phosphate-ore-tailings)
+started_at: '2026-11-06T05:05:30Z'
+finished_at: '2026-11-06T05:06:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle10-stage2-causal-graphs-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying the Cycle 10 Stage 2 causal_graphs and ProteinExample curation in data/records/phosphate-ore-tailings.yaml
+    (SHA-256 75eac32c431b01d8adb442834615d581510d6e4636285c0c704db393e2309243) against
+    live UniProtKB reference proteomes and cited primary source(s) (somasundaran2018:
+    Somasundaran P, Hussien S, Patra P and El Shall H (2018). Environmentally Benign
+    Bio-Leaching Extraction of Rare Earth Elements from Non-Conventional Resources.
+    Annals of Microbiology and Research 2(1):54-60. DOI 10.36959/958/570. Complete
+    seven-page publisher PDF inspected, including methods pp.54-55, Table 1 and Figures
+    1-8. Tailings and concentrate results are separate experimental feeds. (https://scholars.direct/Articles/microbiology/amr-2-009.pdf)).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 0fbb411bcb9bba9d4871d7791d5a13ebc4b50723
+  state: working_tree
+  inputs:
+  - path: data/records/phosphate-ore-tailings.yaml
+    sha256: 75eac32c431b01d8adb442834615d581510d6e4636285c0c704db393e2309243
+    role: target
+  - path: history/records/phosphate-ore-tailings/2026-11-06T045848Z-marcin-f88c10.yaml
+    sha256: 24d7dd9dd0b0aa7b1cb725c8b18dec2bb6b8fa61e5278a071db1f101fea37170
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:phosphate-ore-tailings
+  path: data/records/phosphate-ore-tailings.yaml
+  label: Phosphate-ore tailings
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/phosphate-ore-tailings.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/phosphate-ore-tailings/2026-11-06T045848Z-marcin-f88c10.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 10 Stage 2 causal-graphs review of data/records/phosphate-ore-tailings.yaml
+    (SHA-256 75eac32c431b01d8adb442834615d581510d6e4636285c0c704db393e2309243) and
+    its canonical EDIT history sidecar (history/records/phosphate-ore-tailings/2026-11-06T045848Z-marcin-f88c10.yaml)
+    verifying causal-graph node/edge topology, UniProtKB reference-proteome grounding,
+    and primary-source evidence fidelity across causal_graph ''culture_associated_ree_leaching_graph''
+    (mechanism_ref: culture_associated_ree_leaching, 4 nodes / 3 edges; aferro_rus_operon_iron_oxidation_system:
+    [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975,
+    A0A2W1KH68_ACIFR, UP000248886), UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362),
+    UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]; aniger_cexa_citrate_exporter:
+    [UniProtKB:A0A254TZW7 (cexA, CEXA_ASPNG, UniProtKB), UniProtKB:G3Y4N5 (cexA, CEXA_ASPNA,
+    UP000006706)]).'
+  selection: Cycle 10 Stage 2 causal_graphs curation for cmmmech:phosphate-ore-tailings
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:phosphate-ore-tailings
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/phosphate-ore-tailings.yaml
+  locator: Working-tree record data/records/phosphate-ore-tailings.yaml (causal_graphs
+    and mechanisms[].protein_examples)
+  accessed_at: '2026-11-06T05:05:45Z'
+  support: supports
+  summary: 'Curated data/records/phosphate-ore-tailings.yaml (SHA-256 75eac32c431b01d8adb442834615d581510d6e4636285c0c704db393e2309243)
+    with causal_graph ''culture_associated_ree_leaching_graph'' (mechanism_ref: culture_associated_ree_leaching,
+    4 nodes / 3 edges; aferro_rus_operon_iron_oxidation_system: [UniProtKB:B7JAQ7
+    (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR,
+    UP000248886), UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6
+    (cyc1, B7JAQ6_ACIF2, UP000001362)]; aniger_cexa_citrate_exporter: [UniProtKB:A0A254TZW7
+    (cexA, CEXA_ASPNG, UniProtKB), UniProtKB:G3Y4N5 (cexA, CEXA_ASPNA, UP000006706)]),
+    achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and experimental caveats.'
+  snapshot_sha256: 75eac32c431b01d8adb442834615d581510d6e4636285c0c704db393e2309243
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://scholars.direct/Articles/microbiology/amr-2-009.pdf
+  locator: 'somasundaran2018: Somasundaran P, Hussien S, Patra P and El Shall H (2018).
+    Environmentally Benign Bio-Leaching Extraction of Rare Earth Elements from Non-Conventional
+    Resources. Annals of Microbiology and Research 2(1):54-60. DOI 10.36959/958/570.
+    Complete seven-page publisher PDF inspected, including methods pp.54-55, Table
+    1 and Figures 1-8. Tailings and concentrate results are separate experimental
+    feeds. (https://scholars.direct/Articles/microbiology/amr-2-009.pdf)'
+  accessed_at: '2026-11-06T05:05:45Z'
+  support: supports
+  summary: 'Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7
+    (B7JAQ7_ACIF2, Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus
+    ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR,
+    Cytochrome C, gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus
+    ferrooxidans, UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol:
+    rus, SWISS_PROT, NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362);
+    UniProtKB:B7JAQ6 (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159
+    Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A254TZW7
+    (CEXA_ASPNG, Citrate exporter A, gene_symbol: cexA, SWISS_PROT, NCBITaxon:5061
+    Aspergillus niger, UniProtKB); UniProtKB:G3Y4N5 (CEXA_ASPNA, Citrate exporter
+    A, gene_symbol: cexA, SWISS_PROT, NCBITaxon:380704 Aspergillus niger ATCC 1015,
+    UP000006706). Primary mechanism source(s) (somasundaran2018: Somasundaran P, Hussien
+    S, Patra P and El Shall H (2018). Environmentally Benign Bio-Leaching Extraction
+    of Rare Earth Elements from Non-Conventional Resources. Annals of Microbiology
+    and Research 2(1):54-60. DOI 10.36959/958/570. Complete seven-page publisher PDF
+    inspected, including methods pp.54-55, Table 1 and Figures 1-8. Tailings and concentrate
+    results are separate experimental feeds. (https://scholars.direct/Articles/microbiology/amr-2-009.pdf))
+    report culture-level mineralization, biosorption, or bioleaching without single-gene
+    knockouts; supports: partial is strictly preserved on all enzyme-level edges and
+    ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/phosphate-ore-tailings/2026-11-06T045848Z-marcin-f88c10.yaml
+  locator: Canonical EDIT history sidecar history/records/phosphate-ore-tailings/2026-11-06T045848Z-marcin-f88c10.yaml
+  accessed_at: '2026-11-06T05:05:45Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/phosphate-ore-tailings/2026-11-06T045848Z-marcin-f88c10.yaml
+    (SHA-256 24d7dd9dd0b0aa7b1cb725c8b18dec2bb6b8fa61e5278a071db1f101fea37170): Add
+    evidence-backed causal_graphs representation and 6 live-verified protein groundings
+    (4 Acidithiobacillus ferrooxidans rus-operon proteins UniProtKB:B7JAQ7, UniProtKB:A0A2W1KH68,
+    UniProtKB:B7JAQ0, UniProtKB:B7JAQ6 and 2 Swiss-Prot Aspergillus niger CexA citrate
+    exporters UniProtKB:A0A254TZW7, UniProtKB:G3Y4N5) for culture_associated_ree_leaching.'
+  snapshot_sha256: 24d7dd9dd0b0aa7b1cb725c8b18dec2bb6b8fa61e5278a071db1f101fea37170
+- evidence_id: validation
+  kind: validation
+  reference: data/records/phosphate-ore-tailings.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and
+    validate-history --base main
+  accessed_at: '2026-11-06T05:05:45Z'
+  support: supports
+  summary: data/records/phosphate-ore-tailings.yaml and history/records/phosphate-ore-tailings/2026-11-06T045848Z-marcin-f88c10.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with
+    0 errors.
+  snapshot_sha256: 75eac32c431b01d8adb442834615d581510d6e4636285c0c704db393e2309243
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 693 record(s); 0 failed.
+  target_ids:
+  - cmmmech:phosphate-ore-tailings
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:phosphate-ore-tailings
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_protein_grounding
+  area: graph
+  topic: 'Verification of causal_graphs structure, UniProtKB reference-proteome grounding,
+    and parity across causal_graph ''culture_associated_ree_leaching_graph'' (mechanism_ref:
+    culture_associated_ree_leaching, 4 nodes / 3 edges; aferro_rus_operon_iron_oxidation_system:
+    [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975,
+    A0A2W1KH68_ACIFR, UP000248886), UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362),
+    UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]; aniger_cexa_citrate_exporter:
+    [UniProtKB:A0A254TZW7 (cexA, CEXA_ASPNG, UniProtKB), UniProtKB:G3Y4N5 (cexA, CEXA_ASPNA,
+    UP000006706)])'
+  outcome: supported
+  summary: 'Curated data/records/phosphate-ore-tailings.yaml (SHA-256 75eac32c431b01d8adb442834615d581510d6e4636285c0c704db393e2309243)
+    with causal_graph ''culture_associated_ree_leaching_graph'' (mechanism_ref: culture_associated_ree_leaching,
+    4 nodes / 3 edges; aferro_rus_operon_iron_oxidation_system: [UniProtKB:B7JAQ7
+    (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975, A0A2W1KH68_ACIFR,
+    UP000248886), UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362), UniProtKB:B7JAQ6
+    (cyc1, B7JAQ6_ACIF2, UP000001362)]; aniger_cexa_citrate_exporter: [UniProtKB:A0A254TZW7
+    (cexA, CEXA_ASPNG, UniProtKB), UniProtKB:G3Y4N5 (cexA, CEXA_ASPNA, UP000006706)]),
+    achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and caveats from somasundaran2018:
+    Somasundaran P, Hussien S, Patra P and El Shall H (2018). Environmentally Benign
+    Bio-Leaching Extraction of Rare Earth Elements from Non-Conventional Resources.
+    Annals of Microbiology and Research 2(1):54-60. DOI 10.36959/958/570. Complete
+    seven-page publisher PDF inspected, including methods pp.54-55, Table 1 and Figures
+    1-8. Tailings and concentrate results are separate experimental feeds. (https://scholars.direct/Articles/microbiology/amr-2-009.pdf).
+    Live-verified UniProtKB grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2, Cytochrome
+    c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans
+    ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C,
+    gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans,
+    UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT,
+    NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6
+    (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus
+    ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A254TZW7 (CEXA_ASPNG, Citrate
+    exporter A, gene_symbol: cexA, SWISS_PROT, NCBITaxon:5061 Aspergillus niger, UniProtKB);
+    UniProtKB:G3Y4N5 (CEXA_ASPNA, Citrate exporter A, gene_symbol: cexA, SWISS_PROT,
+    NCBITaxon:380704 Aspergillus niger ATCC 1015, UP000006706).'
+  target_ids:
+  - cmmmech:phosphate-ore-tailings
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar and strict schema validation
+  outcome: supported
+  summary: data/records/phosphate-ore-tailings.yaml was updated exclusively through
+    scripts/curate_causal_graphs.py (curate_record_file), producing append-only history
+    sidecar history/records/phosphate-ore-tailings/2026-11-06T045848Z-marcin-f88c10.yaml
+    (SHA-256 24d7dd9dd0b0aa7b1cb725c8b18dec2bb6b8fa61e5278a071db1f101fea37170) and
+    passing all LinkML and history validation gates.
+  target_ids:
+  - cmmmech:phosphate-ore-tailings
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Phosphate-ore tailings (cmmmech:phosphate-ore-tailings) passes Cycle 10
+  Stage 2 causal-graphs review (scientific_review: true) at SHA-256 75eac32c431b01d8adb442834615d581510d6e4636285c0c704db393e2309243:
+  Curated data/records/phosphate-ore-tailings.yaml with causal_graph ''culture_associated_ree_leaching_graph''
+  (mechanism_ref: culture_associated_ree_leaching, 4 nodes / 3 edges; aferro_rus_operon_iron_oxidation_system:
+  [UniProtKB:B7JAQ7 (cyc2, B7JAQ7_ACIF2, UP000001362), UniProtKB:A0A2W1KH68 (DN052_11975,
+  A0A2W1KH68_ACIFR, UP000248886), UniProtKB:B7JAQ0 (rus, RUS_ACIF2, UP000001362),
+  UniProtKB:B7JAQ6 (cyc1, B7JAQ6_ACIF2, UP000001362)]; aniger_cexa_citrate_exporter:
+  [UniProtKB:A0A254TZW7 (cexA, CEXA_ASPNG, UniProtKB), UniProtKB:G3Y4N5 (cexA, CEXA_ASPNA,
+  UP000006706)]), achieving 100% parity between mechanisms[].protein_examples and
+  causal_graphs[].nodes[].protein_examples and preserving source-faithful support
+  levels and experimental caveats from somasundaran2018: Somasundaran P, Hussien S,
+  Patra P and El Shall H (2018). Environmentally Benign Bio-Leaching Extraction of
+  Rare Earth Elements from Non-Conventional Resources. Annals of Microbiology and
+  Research 2(1):54-60. DOI 10.36959/958/570. Complete seven-page publisher PDF inspected,
+  including methods pp.54-55, Table 1 and Figures 1-8. Tailings and concentrate results
+  are separate experimental feeds. (https://scholars.direct/Articles/microbiology/amr-2-009.pdf).
+  Live-verified UniProtKB reference-proteome grounding across UniProtKB:B7JAQ7 (B7JAQ7_ACIF2,
+  Cytochrome c, gene_symbol: cyc2, TREMBL, NCBITaxon:243159 Acidithiobacillus ferrooxidans
+  ATCC 23270, UP000001362); UniProtKB:A0A2W1KH68 (A0A2W1KH68_ACIFR, Cytochrome C,
+  gene_symbol: DN052_11975, TREMBL, NCBITaxon:920 Acidithiobacillus ferrooxidans,
+  UP000248886); UniProtKB:B7JAQ0 (RUS_ACIF2, Rusticyanin, gene_symbol: rus, SWISS_PROT,
+  NCBITaxon:243159 Acidithiobacillus ferrooxidans ATCC 23270, UP000001362); UniProtKB:B7JAQ6
+  (B7JAQ6_ACIF2, Cytochrome c552, gene_symbol: cyc1, TREMBL, NCBITaxon:243159 Acidithiobacillus
+  ferrooxidans ATCC 23270, UP000001362); UniProtKB:A0A254TZW7 (CEXA_ASPNG, Citrate
+  exporter A, gene_symbol: cexA, SWISS_PROT, NCBITaxon:5061 Aspergillus niger, UniProtKB);
+  UniProtKB:G3Y4N5 (CEXA_ASPNA, Citrate exporter A, gene_symbol: cexA, SWISS_PROT,
+  NCBITaxon:380704 Aspergillus niger ATCC 1015, UP000006706).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 10 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py
+  for cmmmech:phosphate-ore-tailings.
+related_reviews: []
+```

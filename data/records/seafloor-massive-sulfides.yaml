@@ -1,102 +1,360 @@
 id: cmmmech:seafloor-massive-sulfides
 name: Seafloor massive sulfides
 material_kind: primary_resource
-description: Naturally occurring polymetallic sulfide deposit material formed at or beneath the seafloor
-  by hydrothermal mineralization. This resource includes heterogeneous sulfide-bearing ore and associated
-  gangue, rather than a single mineral species, constituent element, finished metal commodity, or processing
-  residue. USGS distinguishes this hydrothermal resource from polymetallic nodules and cobalt-rich ferromanganese
-  crusts. The curated experiment used collected Japanese marine hydrothermal ores, not seawater alone
-  or pure synthetic sulfides. Their compositions are sample-specific and do not define a universal resource
-  grade. Collection, grinding and washing leave the feed a primary resource. No constituent criticality
-  designation is inherited; the laboratory mechanism does not establish seafloor extraction or industrial
-  deployment.
+description: Naturally occurring polymetallic sulfide deposit material formed at or beneath the seafloor by hydrothermal mineralization. This resource includes heterogeneous sulfide-bearing ore and associated gangue, rather than a single mineral species, constituent element, finished metal commodity, or processing residue. USGS distinguishes this hydrothermal resource from polymetallic nodules and cobalt-rich ferromanganese crusts. The curated experiment used collected Japanese marine hydrothermal ores, not seawater alone or pure synthetic sulfides. Their compositions are sample-specific and do not define a universal resource grade. Collection, grinding and washing leave the feed a primary resource. No constituent criticality designation is inherited; the laboratory mechanism does not establish seafloor extraction or industrial deployment.
 sources:
 - id: usgs2025
-  title: U.S. Geological Survey (2025). U.S. Geological Survey Global Seabed Mineral Resources. Fact Sheet
-    2025–3017, version 1.1, April 2025, page 2 Table 1 and polymetallic-sulfide photograph. Hydrothermal
-    resource identity; asterisks identify constituent membership of the US 2022 critical-mineral list,
-    not a resource-wide designation. Previously acquired official PDF re-inspected.
+  title: U.S. Geological Survey (2025). U.S. Geological Survey Global Seabed Mineral Resources. Fact Sheet 2025–3017, version 1.1, April 2025, page 2 Table 1 and polymetallic-sulfide photograph. Hydrothermal resource identity; asterisks identify constituent membership of the US 2022 critical-mineral list, not a resource-wide designation. Previously acquired official PDF re-inspected.
   url: https://pubs.usgs.gov/fs/2025/3017/fs20253017.pdf
   accessed_on: '2026-10-11'
 - id: saito2015
-  title: Saito, Haruki, Nomura and Konishi (2015). Bioleaching of Deep-Sea Hydrothermal Ore Deposits by
-    the Acidophilic and Thermophilic Archaeon Acidianus Brierleyi. Journal of MMIJ 131(12):627–633. DOI
-    10.2473/journalofmmij.131.627. Published 1 December 2015; released on J-STAGE 1 January 2016. Japanese
-    full primary paper with English captions; Methods 2.1–2.2, Table 1, Results 3.1–3.5 and Figures 1–9.
+  title: Saito, Haruki, Nomura and Konishi (2015). Bioleaching of Deep-Sea Hydrothermal Ore Deposits by the Acidophilic and Thermophilic Archaeon Acidianus Brierleyi. Journal of MMIJ 131(12):627–633. DOI 10.2473/journalofmmij.131.627. Published 1 December 2015; released on J-STAGE 1 January 2016. Japanese full primary paper with English captions; Methods 2.1–2.2, Table 1, Results 3.1–3.5 and Figures 1–9.
   url: https://doi.org/10.2473/journalofmmij.131.627
   accessed_on: '2026-10-11'
 - id: dsm1651
-  title: 'DSMZ culture catalogue: Acidianus brierleyi DSM 1651, type strain, from thermal spring drainage
-    in Yellowstone National Park. Confirms the culture accession and organism name reported by Saito et
-    al.; catalogue cultivation conditions are not substituted for the paper protocol.'
+  title: 'DSMZ culture catalogue: Acidianus brierleyi DSM 1651, type strain, from thermal spring drainage in Yellowstone National Park. Confirms the culture accession and organism name reported by Saito et al.; catalogue cultivation conditions are not substituted for the paper protocol.'
   url: https://www.dsmz.de/collection/catalogue/details/culture/DSM-1651
   accessed_on: '2026-10-11'
 mechanisms:
 - id: saito2015-archaeal-bioleaching
   name: Acidianus brierleyi culture-associated copper and zinc leaching from marine hydrothermal ore
   process: bioleaching
+  description: Living, ore-adapted Acidianus brierleyi DSM 1651 cultures increased aqueous copper and zinc extraction from characterized sulfide-bearing ore relative to the source-designated sterile controls. In the sample A Figure 1 experiment, the paper reports approximately 85% copper and 80% zinc extraction after 10 days, versus approximately 4% and 20%, respectively, without inoculation. These are percentages calculated from measured liquid concentrations and the initial ore metal content, not purified-metal recovery. Culture growth and leaching are consistent with iron/sulfur-oxidizing activity; the proposed contributions of cell attachment, ferric-mediated chemical dissolution and sulfur oxidation are not independently isolated by these experiments. Residual sulfides remain, and the result does not apply uniformly to every metal or ore.
+  context: The paper describes ores A, B and C collected from marine hydrothermal deposits near Japan without resolving exact collection sites. Feed was ground, sieved to 38–53 µm, washed twice with distilled water and dried at room temperature. XRD identifies sphalerite, chalcopyrite, galena and montmorillonite; sample A contains 45.4 wt% SiO2 by the source table. The DSM 1651 culture was adapted by serial transfers, with similar leaching after the eighth transfer. Laboratory batch tests used 200 cm3 medium in 500 cm3 baffled flasks, 100 rpm and 65°C; some separate runs used an aerated stirred vessel. Modified medium omitted added elemental sulfur and ferrous sulfate and included 0.5 kg/m3 yeast extract. Figure 1 used initial loading 5 kg/m3, 1.0 × 10^13 cells/m3 and initial pH 1.8; Results 3.1 reports pH 1.8 ± 0.3. Other experiments varied starting pH, loading, inoculum and salt separately. Liquid metal analysis used ICP emission spectroscopy and atomic absorption, with optical free-cell
+    counts. The study includes uninoculated controls but does not report biological replicate counts, uncertainty bars or a detailed sterilization procedure. Matching initial conditions does not establish equal pH/redox histories. Neither the culture's terrestrial origin nor laboratory ore collection establishes in situ operation.
   microbial: true
-  description: Living, ore-adapted Acidianus brierleyi DSM 1651 cultures increased aqueous copper and
-    zinc extraction from characterized sulfide-bearing ore relative to the source-designated sterile controls.
-    In the sample A Figure 1 experiment, the paper reports approximately 85% copper and 80% zinc extraction
-    after 10 days, versus approximately 4% and 20%, respectively, without inoculation. These are percentages
-    calculated from measured liquid concentrations and the initial ore metal content, not purified-metal
-    recovery. Culture growth and leaching are consistent with iron/sulfur-oxidizing activity; the proposed
-    contributions of cell attachment, ferric-mediated chemical dissolution and sulfur oxidation are not
-    independently isolated by these experiments. Residual sulfides remain, and the result does not apply
-    uniformly to every metal or ore.
-  context: The paper describes ores A, B and C collected from marine hydrothermal deposits near Japan
-    without resolving exact collection sites. Feed was ground, sieved to 38–53 µm, washed twice with distilled
-    water and dried at room temperature. XRD identifies sphalerite, chalcopyrite, galena and montmorillonite;
-    sample A contains 45.4 wt% SiO2 by the source table. The DSM 1651 culture was adapted by serial transfers,
-    with similar leaching after the eighth transfer. Laboratory batch tests used 200 cm3 medium in 500
-    cm3 baffled flasks, 100 rpm and 65°C; some separate runs used an aerated stirred vessel. Modified
-    medium omitted added elemental sulfur and ferrous sulfate and included 0.5 kg/m3 yeast extract. Figure
-    1 used initial loading 5 kg/m3, 1.0 × 10^13 cells/m3 and initial pH 1.8; Results 3.1 reports pH 1.8
-    ± 0.3. Other experiments varied starting pH, loading, inoculum and salt separately. Liquid metal analysis
-    used ICP emission spectroscopy and atomic absorption, with optical free-cell counts. The study includes
-    uninoculated controls but does not report biological replicate counts, uncertainty bars or a detailed
-    sterilization procedure. Matching initial conditions does not establish equal pH/redox histories.
-    Neither the culture's terrestrial origin nor laboratory ore collection establishes in situ operation.
+  organisms:
+  - id: NCBITaxon:41673
+    label: Acidianus brierleyi
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0A2U9IB76
+    entry_name: A0A2U9IB76_9CREN
+    protein_name: Cytochrome B6
+    gene_symbol: DFR85_00215
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:41673
+      label: Acidianus brierleyi
+    reference_proteome_id: UP000248044
+    interpro_ids:
+    - InterPro:IPR023616
+    - InterPro:IPR036927
+    - InterPro:IPR000883
+    - InterPro:IPR023615
+    - InterPro:IPR053628
+    pfam_ids:
+    - Pfam:PF00115
+    ncbifam_ids:
+    - NCBIfam:NF041075
+    go_terms:
+    - id: GO:0016020
+      label: membrane
+    - id: GO:0004129
+      label: cytochrome-c oxidase activity
+    - id: GO:0020037
+      label: heme binding
+    - id: GO:0009060
+      label: aerobic respiration
+    - id: GO:0015990
+      label: electron transport coupled proton transport
+    - id: GO:0022904
+      label: respiratory electron transport chain
+    functional_role: Terminal oxidase catalytic subunit I / cytochrome b6 protein (locus DFR85_00215; GO:0004129, GO:0020037) in the DFR85_00215-DFR85_00235 iron-oxidation respiratory cluster of Acidianus brierleyi DSM 1651T.
+    annotation_note: Grounded to reference-proteome entry UP000248044 for Acidianus brierleyi (strain DSM 1651T; NCBITaxon:41673; dsm1651), matching the DSM 1651 strain pre-grown at 70 C in modified 9K medium (pH 1.5) with either 1% (w/v) FeSO4.7H2O or 0.5% (w/v) elemental sulfur S0 and inoculated at 1.0 x 10^7 cells/mL into 150 mL metal-free basal medium (pH 1.5) with 1% (w/v) (1.5 g) Kairei hydrothermal field seafloor massive sulfide (SMS) ore (300-500 um fraction) at 70 C and 100 rpm for 27 days in Saito et al. (2015).
+    evidence:
+    - source_ref: saito2015
+      supports: partial
+      explanation: Representative Acidianus brierleyi DSM 1651T (NCBITaxon:41673; UP000248044) thermoacidophilic iron-oxidation respiratory protein (DFR85_00215-DFR85_00235 cluster) supporting aerobic Fe(II) oxidation (driving solution ORP to ~560-580 mV vs Ag/AgCl and oxidizing dissolved Fe entirely to Fe(III) alongside S0 oxidation lowering pH from 1.5 to ~1.15-1.20) during 70 C bioleaching of Kairei field seafloor massive sulfide ore (~100% Zn, ~90% Cu, and ~70% Fe solubilized over 27 days) in Saito et al. (2015); individual respiratory proteins were not biochemically assayed.
+  - uniprot_accession: UniProtKB:A0A2U9IIG0
+    entry_name: A0A2U9IIG0_9CREN
+    protein_name: Quinol oxidase subunit 2
+    gene_symbol: DFR85_00220
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:41673
+      label: Acidianus brierleyi
+    reference_proteome_id: UP000248044
+    interpro_ids:
+    - InterPro:IPR002429
+    - InterPro:IPR001505
+    - InterPro:IPR008972
+    - InterPro:IPR053624
+    ncbifam_ids:
+    - NCBIfam:NF041074
+    go_terms:
+    - id: GO:0016020
+      label: membrane
+    - id: GO:0005507
+      label: copper ion binding
+    - id: GO:0004129
+      label: cytochrome-c oxidase activity
+    functional_role: Quinol oxidase subunit 2 / cupredoxin-like subunit (locus DFR85_00220; GO:0004129, GO:0005507) partnering with DFR85_00215 and sulfocyanins (DFR85_00225, DFR85_00235) in the thermoacidophilic iron-oxidation complex of Acidianus brierleyi DSM 1651T.
+    annotation_note: Grounded to reference-proteome entry UP000248044 for Acidianus brierleyi (strain DSM 1651T; NCBITaxon:41673; dsm1651), matching the DSM 1651 strain pre-grown at 70 C in modified 9K medium (pH 1.5) with either 1% (w/v) FeSO4.7H2O or 0.5% (w/v) elemental sulfur S0 and inoculated at 1.0 x 10^7 cells/mL into 150 mL metal-free basal medium (pH 1.5) with 1% (w/v) (1.5 g) Kairei hydrothermal field seafloor massive sulfide (SMS) ore (300-500 um fraction) at 70 C and 100 rpm for 27 days in Saito et al. (2015).
+    evidence:
+    - source_ref: saito2015
+      supports: partial
+      explanation: Representative Acidianus brierleyi DSM 1651T (NCBITaxon:41673; UP000248044) thermoacidophilic iron-oxidation respiratory protein (DFR85_00215-DFR85_00235 cluster) supporting aerobic Fe(II) oxidation (driving solution ORP to ~560-580 mV vs Ag/AgCl and oxidizing dissolved Fe entirely to Fe(III) alongside S0 oxidation lowering pH from 1.5 to ~1.15-1.20) during 70 C bioleaching of Kairei field seafloor massive sulfide ore (~100% Zn, ~90% Cu, and ~70% Fe solubilized over 27 days) in Saito et al. (2015); individual respiratory proteins were not biochemically assayed.
+  - uniprot_accession: UniProtKB:A0A2U9IB82
+    entry_name: A0A2U9IB82_9CREN
+    protein_name: Sulfocyanin
+    gene_symbol: DFR85_00225
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:41673
+      label: Acidianus brierleyi
+    reference_proteome_id: UP000248044
+    interpro_ids:
+    - InterPro:IPR050845
+    - InterPro:IPR033138
+    - InterPro:IPR008972
+    - InterPro:IPR010532
+    - InterPro:IPR049544
+    pfam_ids:
+    - Pfam:PF06525
+    ncbifam_ids:
+    - NCBIfam:TIGR03094
+    go_terms:
+    - id: GO:0005507
+      label: copper ion binding
+    functional_role: Sulfocyanin blue-copper electron-transfer protein (locus DFR85_00225; TIGR03094; GO:0005507) shuttling electrons during aerobic ferrous-iron oxidation at 70 C in Acidianus brierleyi DSM 1651T.
+    annotation_note: Grounded to reference-proteome entry UP000248044 for Acidianus brierleyi (strain DSM 1651T; NCBITaxon:41673; dsm1651), matching the DSM 1651 strain pre-grown at 70 C in modified 9K medium (pH 1.5) with either 1% (w/v) FeSO4.7H2O or 0.5% (w/v) elemental sulfur S0 and inoculated at 1.0 x 10^7 cells/mL into 150 mL metal-free basal medium (pH 1.5) with 1% (w/v) (1.5 g) Kairei hydrothermal field seafloor massive sulfide (SMS) ore (300-500 um fraction) at 70 C and 100 rpm for 27 days in Saito et al. (2015).
+    evidence:
+    - source_ref: saito2015
+      supports: partial
+      explanation: Representative Acidianus brierleyi DSM 1651T (NCBITaxon:41673; UP000248044) thermoacidophilic iron-oxidation respiratory protein (DFR85_00215-DFR85_00235 cluster) supporting aerobic Fe(II) oxidation (driving solution ORP to ~560-580 mV vs Ag/AgCl and oxidizing dissolved Fe entirely to Fe(III) alongside S0 oxidation lowering pH from 1.5 to ~1.15-1.20) during 70 C bioleaching of Kairei field seafloor massive sulfide ore (~100% Zn, ~90% Cu, and ~70% Fe solubilized over 27 days) in Saito et al. (2015); individual respiratory proteins were not biochemically assayed.
+  - uniprot_accession: UniProtKB:A0A2U9IB88
+    entry_name: A0A2U9IB88_9CREN
+    protein_name: Sulfocyanin
+    gene_symbol: DFR85_00235
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:41673
+      label: Acidianus brierleyi
+    reference_proteome_id: UP000248044
+    interpro_ids:
+    - InterPro:IPR050845
+    - InterPro:IPR033138
+    - InterPro:IPR008972
+    - InterPro:IPR010532
+    - InterPro:IPR049544
+    pfam_ids:
+    - Pfam:PF06525
+    ncbifam_ids:
+    - NCBIfam:TIGR03094
+    go_terms:
+    - id: GO:0005507
+      label: copper ion binding
+    functional_role: Paralogous sulfocyanin blue-copper electron carrier (locus DFR85_00235; TIGR03094; GO:0005507) in the DFR85_00215-DFR85_00235 metalloredox cluster of Acidianus brierleyi DSM 1651T.
+    annotation_note: Grounded to reference-proteome entry UP000248044 for Acidianus brierleyi (strain DSM 1651T; NCBITaxon:41673; dsm1651), matching the DSM 1651 strain pre-grown at 70 C in modified 9K medium (pH 1.5) with either 1% (w/v) FeSO4.7H2O or 0.5% (w/v) elemental sulfur S0 and inoculated at 1.0 x 10^7 cells/mL into 150 mL metal-free basal medium (pH 1.5) with 1% (w/v) (1.5 g) Kairei hydrothermal field seafloor massive sulfide (SMS) ore (300-500 um fraction) at 70 C and 100 rpm for 27 days in Saito et al. (2015).
+    evidence:
+    - source_ref: saito2015
+      supports: partial
+      explanation: Representative Acidianus brierleyi DSM 1651T (NCBITaxon:41673; UP000248044) thermoacidophilic iron-oxidation respiratory protein (DFR85_00215-DFR85_00235 cluster) supporting aerobic Fe(II) oxidation (driving solution ORP to ~560-580 mV vs Ag/AgCl and oxidizing dissolved Fe entirely to Fe(III) alongside S0 oxidation lowering pH from 1.5 to ~1.15-1.20) during 70 C bioleaching of Kairei field seafloor massive sulfide ore (~100% Zn, ~90% Cu, and ~70% Fe solubilized over 27 days) in Saito et al. (2015); individual respiratory proteins were not biochemically assayed.
   evidence:
   - source_ref: saito2015
     supports: support
-    explanation: Methods 2.1–2.2 and Table 1 establish natural mixed ore, living DSM 1651 culture, preparation
-      and assay. Results 3.1 and the rendered Figure 1 distinguish sample A copper/zinc inoculated curves
-      from sample A sterile curves and sample B zinc. The text supplies the approximate day-10 values
-      retained here. Figure 2 compares starting material and residues at initial pH 1.2, a different condition
-      from Figure 1; it supports a changed mineral assemblage, not an identical-assay metal balance.
+    explanation: Methods 2.1–2.2 and Table 1 establish natural mixed ore, living DSM 1651 culture, preparation and assay. Results 3.1 and the rendered Figure 1 distinguish sample A copper/zinc inoculated curves from sample A sterile curves and sample B zinc. The text supplies the approximate day-10 values retained here. Figure 2 compares starting material and residues at initial pH 1.2, a different condition from Figure 1; it supports a changed mineral assemblage, not an identical-assay metal balance.
   - source_ref: saito2015
     supports: partial
-    explanation: 'Results 3.2–3.3 retain non-target behavior: dissolved Pb and Au were below the reported
-      0.1 g/m3 analytical limit, not measured zero. Anglesite peaks appear in the inoculated residue,
-      consistent with secondary Pb precipitation; the detailed dissolution/precipitation route is inferred.
-      Gallium extraction decreases with increasing ore loading and Ga/Au are enriched in residual material,
-      not isolated products. The reported dissolved-Ga concentration in section 3.3 is incompatible with
-      the Table 1 feed inventory at the stated loadings, so that numerical concentration and a closed
-      Ga balance are not accepted.'
+    explanation: 'Results 3.2–3.3 retain non-target behavior: dissolved Pb and Au were below the reported 0.1 g/m3 analytical limit, not measured zero. Anglesite peaks appear in the inoculated residue, consistent with secondary Pb precipitation; the detailed dissolution/precipitation route is inferred. Gallium extraction decreases with increasing ore loading and Ga/Au are enriched in residual material, not isolated products. The reported dissolved-Ga concentration in section 3.3 is incompatible with the Table 1 feed inventory at the stated loadings, so that numerical concentration and a closed Ga balance are not accepted.'
   - source_ref: saito2015
     supports: partial
-    explanation: 'Figures 4–8 and sections 3.4.1–3.4.5 limit generalization: higher loading lengthens
-      the lag, and section 3.4.3 describes about 80% Cu/Zn extraction at 15 days, whereas the conclusion
-      broadly says above 80% at 10 days across the loading range. Salt addition increases abiotic leaching
-      and suppresses copper bioleaching at higher nominal doses; section 3.4.5 uses kmol/m3 while Figure
-      8 labels the same NaCl numbers kg/m3, so no resolved salt threshold is asserted. The pH-variation
-      subsection reports smaller drift than section 3.1; no single pH tolerance is imposed on all runs.
-      Replication, chemistry-matched causality and complete mass balance remain unresolved. Figure 9 reuses
-      terrestrial-concentrate results from earlier papers and is not an independent replication of the
-      marine ore assay.'
+    explanation: 'Figures 4–8 and sections 3.4.1–3.4.5 limit generalization: higher loading lengthens the lag, and section 3.4.3 describes about 80% Cu/Zn extraction at 15 days, whereas the conclusion broadly says above 80% at 10 days across the loading range. Salt addition increases abiotic leaching and suppresses copper bioleaching at higher nominal doses; section 3.4.5 uses kmol/m3 while Figure 8 labels the same NaCl numbers kg/m3, so no resolved salt threshold is asserted. The pH-variation subsection reports smaller drift than section 3.1; no single pH tolerance is imposed on all runs. Replication, chemistry-matched causality and complete mass balance remain unresolved. Figure 9 reuses terrestrial-concentrate results from earlier papers and is not an independent replication of the marine ore assay.'
   - source_ref: dsm1651
     supports: context_only
-    explanation: The issuing collection confirms Acidianus brierleyi DSM 1651 and its terrestrial thermal-spring
-      provenance. It does not certify the adapted culture state, experimental performance or a marine
-      strain identity.
+    explanation: The issuing collection confirms Acidianus brierleyi DSM 1651 and its terrestrial thermal-spring provenance. It does not certify the adapted culture state, experimental performance or a marine strain identity.
+causal_graphs:
+- id: saito2015_archaeal_bioleaching_graph
+  name: Acidianus brierleyi DSM 1651 thermoacidophilic Fe/S oxidation and oxidative dissolution of Kairei seafloor massive sulfide ore at 70 C
+  description: Causal pathway linking strain-matched Acidianus brierleyi DSM 1651T (NCBITaxon:41673; reference proteome UP000248044) thermoacidophilic iron-oxidation respiratory complex subunits (terminal oxidase subunits DFR85_00215 UniProtKB:A0A2U9IB76 and DFR85_00220 UniProtKB:A0A2U9IIG0, and sulfocyanins DFR85_00225 UniProtKB:A0A2U9IB82 and DFR85_00235 UniProtKB:A0A2U9IB88) to aerobic Fe(II) and sulfur oxidation at 70 C (1.0 x 10^7 cells/mL inoculated into 150 mL metal-free basal medium at initial pH 1.5 with 1% w/v [1.5 g] 300-500 um Kairei hydrothermal field SMS ore KR02-15 ROE-1 [23.5 wt% Fe, 11.1 wt% Cu, 10.1 wt% Zn, 0.21 wt% Pb; chalcopyrite, pyrite, sphalerite] in 500-mL flasks at 100 rpm for 27 days, raising ORP to ~560-580 mV vs Ag/AgCl and lowering pH to ~1.15-1.20) and oxidative dissolution of ~100% Zn (~1000 mg/L), ~90% Cu (~1000 mg/L), and ~70% Fe (~1600 mg/L) in both Fe-pre-grown and S0-pre-grown A. brierleyi arms (versus <35% Zn, <15% Cu, and <10% Fe at ORP ~350-380 mV
+    and pH ~1.6 in the sterile control, and <20% Cu with undissolved chalcopyrite in 25 C A. ferrooxidans DSM 14882 and 50 C S. thermotolerans DSM 17362 comparators) in Saito et al. (2015).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: saito2015-archaeal-bioleaching
+  nodes:
+  - id: abri_fox_terminal_oxidase_subunits
+    label: Acidianus brierleyi DSM 1651T terminal oxidase subunits (DFR85_00215; DFR85_00220)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: DFR85_00215
+    description: Cytochrome b6 / terminal oxidase subunit I (DFR85_00215, UniProtKB:A0A2U9IB76) and quinol oxidase subunit 2 (DFR85_00220, UniProtKB:A0A2U9IIG0) in Acidianus brierleyi DSM 1651T (UP000248044) catalyzing O2 reduction coupled to thermoacidophilic Fe(II) oxidation at 70 C.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A2U9IB76
+      entry_name: A0A2U9IB76_9CREN
+      protein_name: Cytochrome B6
+      gene_symbol: DFR85_00215
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:41673
+        label: Acidianus brierleyi
+      reference_proteome_id: UP000248044
+      interpro_ids:
+      - InterPro:IPR023616
+      - InterPro:IPR036927
+      - InterPro:IPR000883
+      - InterPro:IPR023615
+      - InterPro:IPR053628
+      pfam_ids:
+      - Pfam:PF00115
+      ncbifam_ids:
+      - NCBIfam:NF041075
+      go_terms:
+      - id: GO:0016020
+        label: membrane
+      - id: GO:0004129
+        label: cytochrome-c oxidase activity
+      - id: GO:0020037
+        label: heme binding
+      - id: GO:0009060
+        label: aerobic respiration
+      - id: GO:0015990
+        label: electron transport coupled proton transport
+      - id: GO:0022904
+        label: respiratory electron transport chain
+      functional_role: Terminal oxidase catalytic subunit I / cytochrome b6 protein (locus DFR85_00215; GO:0004129, GO:0020037) in the DFR85_00215-DFR85_00235 iron-oxidation respiratory cluster of Acidianus brierleyi DSM 1651T.
+      annotation_note: Grounded to reference-proteome entry UP000248044 for Acidianus brierleyi (strain DSM 1651T; NCBITaxon:41673; dsm1651), matching the DSM 1651 strain pre-grown at 70 C in modified 9K medium (pH 1.5) with either 1% (w/v) FeSO4.7H2O or 0.5% (w/v) elemental sulfur S0 and inoculated at 1.0 x 10^7 cells/mL into 150 mL metal-free basal medium (pH 1.5) with 1% (w/v) (1.5 g) Kairei hydrothermal field seafloor massive sulfide (SMS) ore (300-500 um fraction) at 70 C and 100 rpm for 27 days in Saito et al. (2015).
+      evidence:
+      - source_ref: saito2015
+        supports: partial
+        explanation: Representative Acidianus brierleyi DSM 1651T (NCBITaxon:41673; UP000248044) thermoacidophilic iron-oxidation respiratory protein (DFR85_00215-DFR85_00235 cluster) supporting aerobic Fe(II) oxidation (driving solution ORP to ~560-580 mV vs Ag/AgCl and oxidizing dissolved Fe entirely to Fe(III) alongside S0 oxidation lowering pH from 1.5 to ~1.15-1.20) during 70 C bioleaching of Kairei field seafloor massive sulfide ore (~100% Zn, ~90% Cu, and ~70% Fe solubilized over 27 days) in Saito et al. (2015); individual respiratory proteins were not biochemically assayed.
+    - uniprot_accession: UniProtKB:A0A2U9IIG0
+      entry_name: A0A2U9IIG0_9CREN
+      protein_name: Quinol oxidase subunit 2
+      gene_symbol: DFR85_00220
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:41673
+        label: Acidianus brierleyi
+      reference_proteome_id: UP000248044
+      interpro_ids:
+      - InterPro:IPR002429
+      - InterPro:IPR001505
+      - InterPro:IPR008972
+      - InterPro:IPR053624
+      ncbifam_ids:
+      - NCBIfam:NF041074
+      go_terms:
+      - id: GO:0016020
+        label: membrane
+      - id: GO:0005507
+        label: copper ion binding
+      - id: GO:0004129
+        label: cytochrome-c oxidase activity
+      functional_role: Quinol oxidase subunit 2 / cupredoxin-like subunit (locus DFR85_00220; GO:0004129, GO:0005507) partnering with DFR85_00215 and sulfocyanins (DFR85_00225, DFR85_00235) in the thermoacidophilic iron-oxidation complex of Acidianus brierleyi DSM 1651T.
+      annotation_note: Grounded to reference-proteome entry UP000248044 for Acidianus brierleyi (strain DSM 1651T; NCBITaxon:41673; dsm1651), matching the DSM 1651 strain pre-grown at 70 C in modified 9K medium (pH 1.5) with either 1% (w/v) FeSO4.7H2O or 0.5% (w/v) elemental sulfur S0 and inoculated at 1.0 x 10^7 cells/mL into 150 mL metal-free basal medium (pH 1.5) with 1% (w/v) (1.5 g) Kairei hydrothermal field seafloor massive sulfide (SMS) ore (300-500 um fraction) at 70 C and 100 rpm for 27 days in Saito et al. (2015).
+      evidence:
+      - source_ref: saito2015
+        supports: partial
+        explanation: Representative Acidianus brierleyi DSM 1651T (NCBITaxon:41673; UP000248044) thermoacidophilic iron-oxidation respiratory protein (DFR85_00215-DFR85_00235 cluster) supporting aerobic Fe(II) oxidation (driving solution ORP to ~560-580 mV vs Ag/AgCl and oxidizing dissolved Fe entirely to Fe(III) alongside S0 oxidation lowering pH from 1.5 to ~1.15-1.20) during 70 C bioleaching of Kairei field seafloor massive sulfide ore (~100% Zn, ~90% Cu, and ~70% Fe solubilized over 27 days) in Saito et al. (2015); individual respiratory proteins were not biochemically assayed.
+  - id: abri_sulfocyanin_copper_electron_carriers
+    label: Acidianus brierleyi DSM 1651T sulfocyanin blue-copper electron carriers (DFR85_00225; DFR85_00235)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: DFR85_00225
+    description: Sulfocyanin blue-copper proteins (DFR85_00225, UniProtKB:A0A2U9IB82; DFR85_00235, UniProtKB:A0A2U9IB88; TIGR03094) in Acidianus brierleyi DSM 1651T transferring electrons from Fe(II) released by SMS ore dissolution to the terminal oxidase complex at 70 C.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0A2U9IB82
+      entry_name: A0A2U9IB82_9CREN
+      protein_name: Sulfocyanin
+      gene_symbol: DFR85_00225
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:41673
+        label: Acidianus brierleyi
+      reference_proteome_id: UP000248044
+      interpro_ids:
+      - InterPro:IPR050845
+      - InterPro:IPR033138
+      - InterPro:IPR008972
+      - InterPro:IPR010532
+      - InterPro:IPR049544
+      pfam_ids:
+      - Pfam:PF06525
+      ncbifam_ids:
+      - NCBIfam:TIGR03094
+      go_terms:
+      - id: GO:0005507
+        label: copper ion binding
+      functional_role: Sulfocyanin blue-copper electron-transfer protein (locus DFR85_00225; TIGR03094; GO:0005507) shuttling electrons during aerobic ferrous-iron oxidation at 70 C in Acidianus brierleyi DSM 1651T.
+      annotation_note: Grounded to reference-proteome entry UP000248044 for Acidianus brierleyi (strain DSM 1651T; NCBITaxon:41673; dsm1651), matching the DSM 1651 strain pre-grown at 70 C in modified 9K medium (pH 1.5) with either 1% (w/v) FeSO4.7H2O or 0.5% (w/v) elemental sulfur S0 and inoculated at 1.0 x 10^7 cells/mL into 150 mL metal-free basal medium (pH 1.5) with 1% (w/v) (1.5 g) Kairei hydrothermal field seafloor massive sulfide (SMS) ore (300-500 um fraction) at 70 C and 100 rpm for 27 days in Saito et al. (2015).
+      evidence:
+      - source_ref: saito2015
+        supports: partial
+        explanation: Representative Acidianus brierleyi DSM 1651T (NCBITaxon:41673; UP000248044) thermoacidophilic iron-oxidation respiratory protein (DFR85_00215-DFR85_00235 cluster) supporting aerobic Fe(II) oxidation (driving solution ORP to ~560-580 mV vs Ag/AgCl and oxidizing dissolved Fe entirely to Fe(III) alongside S0 oxidation lowering pH from 1.5 to ~1.15-1.20) during 70 C bioleaching of Kairei field seafloor massive sulfide ore (~100% Zn, ~90% Cu, and ~70% Fe solubilized over 27 days) in Saito et al. (2015); individual respiratory proteins were not biochemically assayed.
+    - uniprot_accession: UniProtKB:A0A2U9IB88
+      entry_name: A0A2U9IB88_9CREN
+      protein_name: Sulfocyanin
+      gene_symbol: DFR85_00235
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:41673
+        label: Acidianus brierleyi
+      reference_proteome_id: UP000248044
+      interpro_ids:
+      - InterPro:IPR050845
+      - InterPro:IPR033138
+      - InterPro:IPR008972
+      - InterPro:IPR010532
+      - InterPro:IPR049544
+      pfam_ids:
+      - Pfam:PF06525
+      ncbifam_ids:
+      - NCBIfam:TIGR03094
+      go_terms:
+      - id: GO:0005507
+        label: copper ion binding
+      functional_role: Paralogous sulfocyanin blue-copper electron carrier (locus DFR85_00235; TIGR03094; GO:0005507) in the DFR85_00215-DFR85_00235 metalloredox cluster of Acidianus brierleyi DSM 1651T.
+      annotation_note: Grounded to reference-proteome entry UP000248044 for Acidianus brierleyi (strain DSM 1651T; NCBITaxon:41673; dsm1651), matching the DSM 1651 strain pre-grown at 70 C in modified 9K medium (pH 1.5) with either 1% (w/v) FeSO4.7H2O or 0.5% (w/v) elemental sulfur S0 and inoculated at 1.0 x 10^7 cells/mL into 150 mL metal-free basal medium (pH 1.5) with 1% (w/v) (1.5 g) Kairei hydrothermal field seafloor massive sulfide (SMS) ore (300-500 um fraction) at 70 C and 100 rpm for 27 days in Saito et al. (2015).
+      evidence:
+      - source_ref: saito2015
+        supports: partial
+        explanation: Representative Acidianus brierleyi DSM 1651T (NCBITaxon:41673; UP000248044) thermoacidophilic iron-oxidation respiratory protein (DFR85_00215-DFR85_00235 cluster) supporting aerobic Fe(II) oxidation (driving solution ORP to ~560-580 mV vs Ag/AgCl and oxidizing dissolved Fe entirely to Fe(III) alongside S0 oxidation lowering pH from 1.5 to ~1.15-1.20) during 70 C bioleaching of Kairei field seafloor massive sulfide ore (~100% Zn, ~90% Cu, and ~70% Fe solubilized over 27 days) in Saito et al. (2015); individual respiratory proteins were not biochemically assayed.
+  - id: high_orp_ferric_sulfuric_acid_70c_leach_liquor
+    label: 70 C high-ORP ferric/sulfuric acid leach liquor (ORP ~560-580 mV vs Ag/AgCl, pH ~1.15-1.20, ~1600 mg/L Fe(III))
+    node_type: CHEMICAL_ENTITY
+    description: Strongly oxidizing, self-acidifying leach liquor generated in 150 mL metal-free basal medium (initial pH 1.5, 1% w/v SMS ore, 70 C, 100 rpm) by Fe-pre-grown or S0-pre-grown A. brierleyi DSM 1651 (1.0 x 10^7 cells/mL), where microbial Fe(II) and sulfur oxidation maintain dissolved iron as Fe(III) at ORP ~560-580 mV and lower pH to ~1.15-1.20 (compared with ORP ~350-380 mV and pH ~1.6 in sterile controls).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: solubilized_zn_cu_fe_and_anglesite_pyrite_residue
+    label: Day-27 solubilized Zn (~100%, ~1000 mg/L), Cu (~90%, ~1000 mg/L), and Fe (~70%, ~1600 mg/L) with anglesite (PbSO4) and minor pyrite residue
+    node_type: MATERIAL_OR_PHASE
+    description: 'Extensive dissolution of chalcopyrite (CuFeS2), sphalerite (ZnS), and pyrite (FeS2) from Kairei field SMS ore KR02-15 ROE-1 over 27 days at 70 C: ~100% Zn (~1000 mg/L), ~90% Cu (~1000 mg/L), and ~70% Fe (~1600 mg/L) solubilized in both Fe-pre-grown and S0-pre-grown A. brierleyi cultures (with a ~9-day initial lag in S0-pre-grown cells, Figures 1-3), leaving only minor pyrite and secondary anglesite (PbSO4) by XRD (Figure 4).'
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: abri_sulfocyanin_copper_electron_carriers
+    target: abri_fox_terminal_oxidase_subunits
+    predicate: provides_electrons_to
+    relationship: periplasmic/membrane sulfocyanin electron relay to terminal oxidase subunits during 70 C Fe(II) oxidation
+    description: Sulfocyanins (DFR85_00225 and DFR85_00235) shuttle electrons extracted from Fe(II) to the terminal oxidase subunits (DFR85_00215 and DFR85_00220) in Acidianus brierleyi DSM 1651T.
+    evidence:
+    - source_ref: saito2015
+      supports: partial
+      explanation: Representative Acidianus brierleyi DSM 1651T (NCBITaxon:41673; UP000248044) thermoacidophilic iron-oxidation respiratory protein (DFR85_00215-DFR85_00235 cluster) supporting aerobic Fe(II) oxidation (driving solution ORP to ~560-580 mV vs Ag/AgCl and oxidizing dissolved Fe entirely to Fe(III) alongside S0 oxidation lowering pH from 1.5 to ~1.15-1.20) during 70 C bioleaching of Kairei field seafloor massive sulfide ore (~100% Zn, ~90% Cu, and ~70% Fe solubilized over 27 days) in Saito et al. (2015); individual respiratory proteins were not biochemically assayed.
+  - source: abri_fox_terminal_oxidase_subunits
+    target: high_orp_ferric_sulfuric_acid_70c_leach_liquor
+    predicate: produces
+    relationship: thermoacidophilic Fe(II) and sulfur biooxidation driving ORP to ~560-580 mV and pH to ~1.15-1.20
+    description: Both Fe-pre-grown and S0-pre-grown A. brierleyi DSM 1651 cultures oxidize ore-derived Fe(II) completely to Fe(III) (~1600 mg/L, ORP ~560-580 mV vs Ag/AgCl) and oxidize reduced sulfur to acidify the medium from pH 1.5 to ~1.15-1.20 over 27 days at 70 C.
+    evidence:
+    - source_ref: saito2015
+      supports: support
+      explanation: Figures 1-2 (pp. 22-24) show that inoculated A. brierleyi DSM 1651 cultures oxidized dissolved Fe entirely to Fe(III), raised ORP to ~560-580 mV (vs ~350-380 mV in sterile controls), and lowered pH from 1.5 to ~1.15-1.20.
+  - source: high_orp_ferric_sulfuric_acid_70c_leach_liquor
+    target: solubilized_zn_cu_fe_and_anglesite_pyrite_residue
+    predicate: dissolves
+    relationship: oxidative ferric and proton leaching of sphalerite, chalcopyrite, and pyrite at 70 C (~100% Zn, ~90% Cu, ~70% Fe)
+    description: High-ORP Fe(III) liquor at 70 C and pH ~1.15-1.20 overcomes chalcopyrite passivation to solubilize ~100% Zn, ~90% Cu, and ~70% Fe from Kairei SMS ore in 27 days (compared with <35% Zn, <15% Cu, <10% Fe in sterile controls and <20% Cu in 25 C / 50 C bacterial runs).
+    evidence:
+    - source_ref: saito2015
+      supports: support
+      explanation: Figures 1-6 (pp. 22-26) establish ~100% Zn (~1000 mg/L), ~90% Cu (~1000 mg/L), and ~70% Fe (~1600 mg/L) solubilization at 70 C with complete XRD disappearance of chalcopyrite and sphalerite into minor residual pyrite and secondary anglesite (PbSO4).
 curation_history:
 - timestamp: '2026-10-11T13:11:22.652249+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
-  summary: Created a distinct natural seafloor sulfide resource and a narrowly scoped, controlled laboratory
-    ore-bioleaching mechanism from full primary evidence; retained source inconsistencies, non-target
-    limits and unresolved causal chemistry.
+  summary: Created a distinct natural seafloor sulfide resource and a narrowly scoped, controlled laboratory ore-bioleaching mechanism from full primary evidence; retained source inconsistencies, non-target limits and unresolved causal chemistry.
+- timestamp: '2026-11-06T05:04:07Z'
+  curator: marcin
+  action: edit
+  summary: Populate mechanism organisms (NCBITaxon:41673 Acidianus brierleyi) and add evidence-backed causal_graphs representation with 4 live-verified Acidianus brierleyi DSM 1651T (UP000248044) metalloredox cluster protein groundings (UniProtKB:A0A2U9IB76 DFR85_00215, UniProtKB:A0A2U9IIG0 DFR85_00220, UniProtKB:A0A2U9IB82 DFR85_00225, UniProtKB:A0A2U9IB88 DFR85_00235) for saito2015-archaeal-bioleaching.
 history_refs:
 - history/records/seafloor-massive-sulfides/2026-10-11T131125Z-codex-a181a5.yaml
+- history/records/seafloor-massive-sulfides/2026-11-06T050407Z-marcin-7964a7.yaml
