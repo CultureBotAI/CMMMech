@@ -1,0 +1,651 @@
+schema_version: 1.0.0
+review_id: 20261106T145500Z-cycle10-stage5-remediation-verification
+title: 'Cycle 10 Stage 5 Post-Remediation Verification Review: 6 Remediated CMMMech
+  Records'
+repository: CultureBotAI/CMMMech
+kind: category
+started_at: '2026-11-06T14:54:00Z'
+finished_at: '2026-11-06T14:55:00Z'
+skill: .claude/skills/review-yaml-category/SKILL.md
+completion: completed
+verdict: pass
+scientific_review: true
+summary: 'Post-remediation verification review across all 6 CMMMech records modified
+  in Cycle 10 Stage 5 (5 mineral and 1 primary_resource records) resolving all 3 open
+  Cycle 10 Stage 4 review findings under GitHub Issues #950 (GRP-C10S5-001: calcite.yaml,
+  vaterite.yaml, and lithium-bearing-geothermal-brine.yaml Rehmanji et al. 2025 causal_graphs[0]
+  updated with source-specific node/edge descriptions, removal of inapplicable ''/phosphate''
+  wording, and supports: partial on edges[1..2]), #951 (GRP-C10S5-002: brushite.yaml
+  Heveran et al. 2019 causal_graphs[0] updated to clarify initial cell-free/control
+  brushite and apatite precipitation followed by bulk XRD replacement by calcite as
+  pH rises and dissolved P returns to solution, supports: partial on edges[1..2],
+  and XRD/SEM/Raman/WDS analytical modalities), and #952 (GRP-C10S5-003: strontianite.yaml
+  Natalio & Maria 2024 and smithsonite.yaml Huang et al. 2025 causal_graphs[0] updated
+  to replace template descriptions, remove ''/phosphate'' wording on chloride-urea
+  systems, set supports: partial on edges[1], and align smithsonite.yaml edges[2]
+  with powder XRD PDF 08-0449, AAS Zn removal, and Nessler/pH assays). All 6 records
+  pass strict validation, history validation, and page rendering checks with 0 open
+  findings.'
+reviewer:
+  identity: antigravity / cmmmech-cycle10-stage5-remediation-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Cycle 10 Stage 5 post-remediation verification review (.claude/skills/review-yaml-category/SKILL.md)
+    of the 6 remediated records against the immutable Cycle 10 Stage 4 review bundles.
+source:
+  git_revision: 9e14224d8bee0865a43f15eda28c0d01351c3c47
+  state: working_tree
+  inputs:
+  - path: data/records/brushite.yaml
+    sha256: dec5c219dc7b3718c7362cbc01b4f8fa09be1eac05d2b909ad2ed6fd675811da
+    role: target
+  - path: data/records/calcite.yaml
+    sha256: 248ef894c4ae4443f301609137ac54314ea4acdfd86cb9f4cf4d74d50508bf48
+    role: target
+  - path: data/records/lithium-bearing-geothermal-brine.yaml
+    sha256: 94d9b81f61dd307f3f3e52e33f036a0a6d6e34b07b7670b3c27360e4505e704c
+    role: target
+  - path: data/records/smithsonite.yaml
+    sha256: f753da8abfec3c533f4db5e21992f4db547c883337d081c2bd0e1f83e6ea6059
+    role: target
+  - path: data/records/strontianite.yaml
+    sha256: 61d2884f0ae85bfe5ae98aa7225f49e17f0bcf0697e30bc95527a3d2db939967
+    role: target
+  - path: data/records/vaterite.yaml
+    sha256: b6bd7aa02866b565e3bd787f9bbf4852bd3c89246673b545f173a8970c6acbe8
+    role: target
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000010/stage-04/revision-0001/evidence.yaml
+    sha256: 32b1c7236e2946c878d23d7a7823ebd4e34985dd0d636e7b9629e9a55da7716f
+    role: context
+  - path: reviews/workflow/mech-goal-sequence-20261019/cycle-000010/stage-04/revision-0001/review_findings.yaml
+    sha256: a0b42e544394e241eeb090d21317a734a485a85dc1e3c6536714dbff23c0e48f
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+scope:
+  description: 'All 6 distinct CMMMech records affected by the 3 Cycle 10 Stage 4
+    findings carried into Stage 5 (3 Rehmanji et al. 2025 geothermal-brine records
+    in GRP-C10S5-001 / #950, 1 Heveran et al. 2019 brushite record in GRP-C10S5-002
+    / #951, and 2 Sporosarcina pasteurii strontianite/smithsonite records in GRP-C10S5-003
+    / #952).'
+  selection: cycle10_stage4_open_finding_targets
+  coverage: full
+  population_size: 6
+  reviewed_target_ids:
+  - cmmmech:brushite
+  - cmmmech:calcite
+  - cmmmech:lithium-bearing-geothermal-brine
+  - cmmmech:smithsonite
+  - cmmmech:strontianite
+  - cmmmech:vaterite
+targets:
+- target_id: cmmmech:brushite
+  path: data/records/brushite.yaml
+  label: Brushite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: f7402ae3247a9ac6f38040ee422b64178c25d4ce2084dd0a50515e643fabcfc4
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/brushite.yaml
+    role: maintained_record
+- target_id: cmmmech:calcite
+  path: data/records/calcite.yaml
+  label: Calcite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: eab0d47710558ea669b460f53c3e0cbd7a413e48f5465900f6af829a1cc750dd
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/calcite.yaml
+    role: maintained_record
+- target_id: cmmmech:lithium-bearing-geothermal-brine
+  path: data/records/lithium-bearing-geothermal-brine.yaml
+  label: Lithium-bearing geothermal brine
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: cc1306fe3f627ee0267bc9820177abb659c6e6f5ce0f260bee7b13d3b49143e7
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lithium-bearing-geothermal-brine.yaml
+    role: maintained_record
+- target_id: cmmmech:smithsonite
+  path: data/records/smithsonite.yaml
+  label: Smithsonite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: fa817c651507827ed7b245d12b9d1273e1ae9411943be6e9999d94164885012b
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/smithsonite.yaml
+    role: maintained_record
+- target_id: cmmmech:strontianite
+  path: data/records/strontianite.yaml
+  label: Strontianite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: 086ecb9eb9b08e5d11518487bdd06a23cbc801fbc67859f8174b6a7cf3534bae
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/strontianite.yaml
+    role: maintained_record
+- target_id: cmmmech:vaterite
+  path: data/records/vaterite.yaml
+  label: Vaterite
+  record_class: MaterialRecord
+  kind: maintained
+  semantic_digest:
+    algorithm: yaml_canonical_sha256
+    sha256: d55b52345330231d4fedc48e8b7ad3ee484109850843155f346a8d1a9ad0c870
+    description: SHA-256 of canonical sorted-key YAML parse of record
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/vaterite.yaml
+    role: maintained_record
+checks:
+- check_id: chk-validate-records
+  name: Strict LinkML and semantic record validation
+  status: passed
+  required: true
+  summary: All 693 records (including all 6 remediated records) pass .venv/bin/cmmmech
+    validate --require-records with 0 errors.
+  target_ids:
+  - cmmmech:brushite
+  - cmmmech:calcite
+  - cmmmech:lithium-bearing-geothermal-brine
+  - cmmmech:smithsonite
+  - cmmmech:strontianite
+  - cmmmech:vaterite
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-validate-history
+  name: Append-only history sidecar validation
+  status: passed
+  required: true
+  summary: All 6 new EDIT history sidecars and existing history sidecars pass .venv/bin/cmmmech
+    validate-history --base main with 0 errors.
+  target_ids:
+  - cmmmech:brushite
+  - cmmmech:calcite
+  - cmmmech:lithium-bearing-geothermal-brine
+  - cmmmech:smithsonite
+  - cmmmech:strontianite
+  - cmmmech:vaterite
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-grp1-rehmanji2025-geothermal-brine-graphs
+  name: Rehmanji et al. (2025) calcite, vaterite, and lithium-bearing-geothermal-brine
+    causal_graphs[0] concordance (#950)
+  status: passed
+  required: true
+  summary: 'Verified that nodes[2..3].description, edges[0..2], and edges[2].relationship
+    across calcite.yaml, vaterite.yaml, and lithium-bearing-geothermal-brine.yaml
+    remove template wrappers and ''/phosphate'' wording, use lowercase study-specific
+    prose, and set supports: partial on edges[1..2].'
+  target_ids:
+  - cmmmech:calcite
+  - cmmmech:vaterite
+  - cmmmech:lithium-bearing-geothermal-brine
+  evidence_ids:
+  - ev-rehmanji2025
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-grp2-heveran2019-brushite-graph
+  name: Heveran et al. (2019) brushite.yaml causal_graphs[0] concordance (#951)
+  status: passed
+  required: true
+  summary: 'Verified that brushite.yaml causal_graphs[0].nodes[2..3] and edges[0..2]
+    accurately describe initial cell-free/control brushite and apatite precipitation
+    followed by bulk XRD replacement by calcite as pH rises and dissolved P returns
+    to solution, with supports: partial on edges[1..2] and XRD/SEM/Raman/WDS modalities.'
+  target_ids:
+  - cmmmech:brushite
+  evidence_ids:
+  - ev-heveran2019
+  - ev-stage4-findings
+  - ev-schema
+- check_id: chk-grp3-strontianite-smithsonite-graphs
+  name: Natalio & Maria (2024) strontianite.yaml and Huang et al. (2025) smithsonite.yaml
+    causal_graphs[0] concordance (#952)
+  status: passed
+  required: true
+  summary: 'Verified that strontianite.yaml and smithsonite.yaml causal_graphs[0]
+    remove template wrappers and ''/phosphate'' wording, set supports: partial on
+    edges[1], and cite only powder XRD (PDF 08-0449), AAS solution Zn removal, and
+    Nessler/pH assays on smithsonite.yaml edges[2].'
+  target_ids:
+  - cmmmech:strontianite
+  - cmmmech:smithsonite
+  evidence_ids:
+  - ev-natalio2024-huang2025
+  - ev-stage4-findings
+  - ev-schema
+evidence:
+- evidence_id: ev-stage4-evidence
+  kind: record_content
+  reference: reviews/workflow/mech-goal-sequence-20261019/cycle-000010/stage-04/revision-0001/evidence.yaml
+  locator: findings[0..2] (cmmmech-cycle10-stage4-finding-0001..0003)
+  accessed_at: '2026-11-06T14:54:30Z'
+  support: supports
+  summary: Verified the 3 open Cycle 10 Stage 4 review findings and their 6 distinct
+    target records.
+  snapshot_sha256: 32b1c7236e2946c878d23d7a7823ebd4e34985dd0d636e7b9629e9a55da7716f
+- evidence_id: ev-stage4-findings
+  kind: record_content
+  reference: reviews/workflow/mech-goal-sequence-20261019/cycle-000010/stage-04/revision-0001/review_findings.yaml
+  locator: findings[0..2] root-cause groups, issue_keys, and structured_review_bundles
+  accessed_at: '2026-11-06T14:54:30Z'
+  support: supports
+  summary: Confirmed exact Stage 4 finding IDs, issue_key identifiers, previous review_id
+    occurrences, and target record lists.
+  snapshot_sha256: a0b42e544394e241eeb090d21317a734a485a85dc1e3c6536714dbff23c0e48f
+- evidence_id: ev-schema
+  kind: record_content
+  reference: src/cmmmech/schema/cmmmech.yaml
+  locator: classes.MaterialRecord, classes.CausalGraph, classes.CausalNode, classes.CausalEdge
+  accessed_at: '2026-11-06T14:54:30Z'
+  support: supports
+  summary: Canonical LinkML schema defining MaterialRecord and CausalGraph/CausalNode/CausalEdge
+    structure.
+  snapshot_sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+- evidence_id: ev-rehmanji2025
+  kind: primary_source
+  reference: https://doi.org/10.1039/d5ra06824j
+  locator: Rehmanji et al. (2025) RSC Advances 15:43263-43274, Sections 2.1-2.2, 4.1-4.7,
+    Figures 1-2, Table S1, Figure S5, Figure S7 p. 24, Table S7, Table S9
+  accessed_at: '2026-11-06T14:54:30Z'
+  support: supports
+  summary: Confirms Cornish geothermal brine MICP pretreatment with S. pasteurii DSM
+    33 and 500 mM urea, ex situ 60 °C-dried mixed carbonate XRD assignment (vaterite
+    phase 1, calcite phase 2, magnesite), and control/aliquot caveats.
+- evidence_id: ev-heveran2019
+  kind: primary_source
+  reference: https://doi.org/10.1038/s41598-019-51133-9
+  locator: Heveran et al. (2019) Scientific Reports 9:14721, Figures 1G-H, 2B, 2D-E,
+    3I-L, Table 2, Methods p. 10
+  accessed_at: '2026-11-06T14:54:30Z'
+  support: supports
+  summary: Confirms initial brushite/apatite precipitation in cell-free medium, nonureolytic
+    E. coli HB101 controls, and early lower-urease HB101/ure-integration cultures
+    followed by bulk XRD replacement by calcite as pH rises and dissolved P returns
+    to solution, characterized by XRD, SEM, Raman, and WDS.
+- evidence_id: ev-natalio2024-huang2025
+  kind: primary_source
+  reference: https://doi.org/10.1021/acsami.3c13665
+  locator: Natalio & Maria (2024) ACS Appl. Mater. Interfaces 16(5):6327-6336 (Figures
+    3a-c, 4a-b, Figure S4) and Huang et al. (2025) Biogeotechnics 3:100106 (DOI:10.1016/j.bgtech.2024.100106,
+    Figures 2M-P, 2U)
+  accessed_at: '2026-11-06T14:54:30Z'
+  support: supports
+  summary: Confirms SrCl2-urea PLA coating by S. pasteurii DSM 33 (XRD, FTIR, SEM,
+    polarized microscopy) in Natalio & Maria (2024) and ZnCl2-urea tube precipitation
+    by S. pasteurii BNCC337394 (powder XRD PDF 08-0449 on 105 °C-dried solid, AAS
+    Zn removal, Nessler/pH assays) in Huang et al. (2025).
+assessments:
+- assessment_id: assess-grp1-rehmanji2025-geothermal-brine
+  area: graph
+  topic: 'Rehmanji et al. (2025) calcite.yaml, vaterite.yaml, and lithium-bearing-geothermal-brine.yaml
+    causal_graphs[0] remediation (GRP-C10S5-001, #950)'
+  outcome: supported
+  summary: 'All 3 Cornish geothermal-brine MICP records now carry source-specific
+    node and edge descriptions without template wrappers or ''/phosphate'' wording,
+    lowercase mid-sentence prose, and supports: partial on edges[1..2].'
+  target_ids:
+  - cmmmech:calcite
+  - cmmmech:vaterite
+  - cmmmech:lithium-bearing-geothermal-brine
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-rehmanji2025
+  - ev-schema
+  metrics:
+  - name: grp1_rehmanji2025_geothermal_brine_graph_concordance
+    value: 1.0
+    unit: fraction
+    definition: 'Fraction of GRP-C10S5-001 records with source-specific node/edge
+      descriptions, carbonate-only relationship, and supports: partial on edges[1..2]'
+    denominator: 3
+    minimum: 0.0
+    maximum: 1.0
+- assessment_id: assess-grp2-heveran2019-brushite
+  area: graph
+  topic: 'Heveran et al. (2019) brushite.yaml causal_graphs[0] remediation (GRP-C10S5-002,
+    #951)'
+  outcome: supported
+  summary: 'brushite.yaml causal_graphs[0] now accurately describes initial brushite/apatite
+    precipitation in cell-free, nonureolytic, and early lower-urease cultures followed
+    by bulk XRD replacement by calcite as pH rises and dissolved P returns to solution,
+    with supports: partial on edges[1..2] and XRD/SEM/Raman/WDS modalities.'
+  target_ids:
+  - cmmmech:brushite
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-heveran2019
+  - ev-schema
+  metrics:
+  - name: grp2_heveran2019_brushite_graph_concordance
+    value: 1.0
+    unit: fraction
+    definition: 'Fraction of GRP-C10S5-002 records with aligned initial brushite/apatite
+      to calcite phase-transition descriptions, supports: partial, and XRD/SEM/Raman/WDS
+      modalities'
+    denominator: 1
+    minimum: 0.0
+    maximum: 1.0
+- assessment_id: assess-grp3-strontianite-smithsonite
+  area: graph
+  topic: 'Natalio & Maria (2024) strontianite.yaml and Huang et al. (2025) smithsonite.yaml
+    causal_graphs[0] remediation (GRP-C10S5-003, #952)'
+  outcome: supported
+  summary: 'strontianite.yaml and smithsonite.yaml causal_graphs[0] now remove template
+    wrappers and ''/phosphate'' wording, set supports: partial on edges[1], and cite
+    only powder XRD (PDF 08-0449), AAS solution Zn removal, and Nessler/pH assays
+    on smithsonite.yaml edges[2].'
+  target_ids:
+  - cmmmech:strontianite
+  - cmmmech:smithsonite
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-natalio2024-huang2025
+  - ev-schema
+  metrics:
+  - name: grp3_strontianite_smithsonite_graph_concordance
+    value: 1.0
+    unit: fraction
+    definition: 'Fraction of GRP-C10S5-003 records with chloride-urea carbonate-only
+      relationship, supports: partial on edges[1], and source-matched analytical modalities'
+    denominator: 2
+    minimum: 0.0
+    maximum: 1.0
+findings:
+- finding_id: cmmmech-cycle10-stage4-finding-0001
+  issue_key: cmmmech.pasteurii-rehmanji2025-geothermal-brine.template-node-edge-descriptions-and-phosphate-mislabelling
+  category: graph
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: 'Rehmanji et al. (2025) Cornish geothermal-brine records now have source-specific
+    node/edge descriptions, carbonate-only relationship, and supports: partial'
+  description: 'Across the three Sporosarcina pasteurii DSM 33 Cornish geothermal-brine
+    MICP pretreatment records from Rehmanji et al. (2025, RSC Advances 15:43263-43274,
+    DOI:10.1039/d5ra06824j, rehmanji2025 / rehmanji2025_si) — data/records/calcite.yaml
+    (cmmmech:calcite, mineral, causal_graphs[0] pasteurii_geothermal_brine_calcite_graph,
+    lines 236-385), data/records/vaterite.yaml (cmmmech:vaterite, mineral, causal_graphs[0]
+    pasteurii_geothermal_brine_vaterite_graph, lines 179-328), and data/records/lithium-bearing-geothermal-brine.yaml
+    (cmmmech:lithium-bearing-geothermal-brine, primary_resource, causal_graphs[0]
+    pasteurii_lithium_brine_pretreatment_graph, lines 174-324) — nodes[2].description
+    (dissolved_metal_cations; calcite.yaml lines 345-346, vaterite.yaml lines 288-289,
+    lithium-bearing-geothermal-brine.yaml lines 284-285) and nodes[3].description
+    (precipitated_mineral_phase; calcite.yaml lines 351-352, vaterite.yaml lines 294-295,
+    lithium-bearing-geothermal-brine.yaml lines 290-291) retain generic template descriptions
+    repeating their capitalized node labels verbatim in parentheses (''Dissolved cations
+    (<Label>) undergoing carbonate/phosphate precipitation.'' and ''Solid mineral
+    phase (<Label>) formed via ureolytic alkalinization.''), including the inapplicable
+    ''/phosphate'' wording (also present on edges[2].relationship: ''cation precipitation
+    with carbonate/phosphate'' at calcite.yaml line 378, vaterite.yaml line 321, and
+    lithium-bearing-geothermal-brine.yaml line 317) in a phosphate-free carbonate
+    geothermal-brine experiment. Furthermore, edges[0].evidence[0].explanation (calcite.yaml
+    line 363, vaterite.yaml line 306, lithium-bearing-geothermal-brine.yaml line 302)
+    retains the generic 70-character template string (''Ureolytic activity increases
+    pH and dissolved carbonate concentration.''), and edges[1..2] (calcite.yaml lines
+    364-385, vaterite.yaml lines 307-328, lithium-bearing-geothermal-brine.yaml lines
+    303-324) interpolate capitalized node labels mid-sentence with plural-subject
+    singular-verb agreement (''Dissolved Ca(II), Mg(II), Mn, and Sr ... precipitates
+    into Precipitated ...'') and assert supports: support with generic one-line explanations
+    that omit the ex situ mixed-phase XRD assignment (Figure S7 p. 24: vaterite phase
+    1, calcite phase 2, magnesite), absence of matched-pH chemical or killed-cell
+    controls, and ICP-OES aliquot / saturation-model caveats documented in mechanisms[...].evidence[2..3]
+    (supports: partial).'
+  target_ids:
+  - cmmmech:calcite
+  - cmmmech:vaterite
+  - cmmmech:lithium-bearing-geothermal-brine
+  field_paths:
+  - causal_graphs[0].nodes[2].description
+  - causal_graphs[0].nodes[3].description
+  - causal_graphs[0].edges[0].evidence[0].explanation
+  - causal_graphs[0].edges[1].description
+  - causal_graphs[0].edges[1].evidence[0].supports
+  - causal_graphs[0].edges[1].evidence[0].explanation
+  - causal_graphs[0].edges[2].relationship
+  - causal_graphs[0].edges[2].description
+  - causal_graphs[0].edges[2].evidence[0].supports
+  - causal_graphs[0].edges[2].evidence[0].explanation
+  - curation_history
+  - history_refs
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-rehmanji2025
+  - ev-schema
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/calcite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/vaterite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lithium-bearing-geothermal-brine.yaml
+    role: maintained_record
+  disposition_reason: 'Resolved under GitHub Issue #950 (GRP-C10S5-001): replaced
+    generic template descriptions on nodes[2..3] and edges[0..2], removed inapplicable
+    ''/phosphate'' wording, and set supports: partial on edges[1..2] across calcite.yaml,
+    vaterite.yaml, and lithium-bearing-geothermal-brine.yaml with 3 append-only EDIT
+    history sidecars.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261106T090001Z-cycle10-stage4-mineral-cohort-review
+    finding_id: cmmmech-cycle10-stage4-finding-0001
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261106T090004Z-cycle10-stage4-primary-resource-cohort-review
+    finding_id: cmmmech-cycle10-stage4-finding-0001
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261106T090006Z-cycle10-stage4-causal-graphs-cohort-review
+    finding_id: cmmmech-cycle10-stage4-finding-0001
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261106T090007Z-calcite-cycle10-stage4-record-review
+    finding_id: cmmmech-cycle10-stage4-finding-0001
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/950
+- finding_id: cmmmech-cycle10-stage4-finding-0002
+  issue_key: cmmmech.heveran2019-brushite.template-descriptions-and-cell-free-brushite-directionality
+  category: graph
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Heveran et al. (2019) brushite.yaml causal_graphs[0] now clarifies initial
+    cell-free/control brushite precipitation, calcite replacement, and XRD/SEM/Raman/WDS
+    modalities
+  description: 'In data/records/brushite.yaml (cmmmech:brushite, mineral, Heveran
+    et al. 2019 Scientific Reports 9:14721, DOI:10.1038/s41598-019-51133-9; causal_graphs[0]
+    ureolytic_brushite_calcite_phase_transition_graph, lines 187-339), nodes[2].description
+    (dissolved_metal_cations, lines 299-300) and nodes[3].description (precipitated_mineral_phase,
+    lines 305-306) retain generic template descriptions repeating their capitalized
+    node labels verbatim in parentheses (''Dissolved cations (Dissolved Ca(II) and
+    phosphate in acidic pre-mineralization solution) undergoing carbonate/phosphate
+    precipitation.'' and ''Solid mineral phase (Brushite (CaHPO4·2H2O) and calcium
+    carbonate co-precipitate) formed via ureolytic alkalinization.''), where nodes[3].description
+    and edges[1..2] (lines 318-339, supports: support) depict brushite as formed via
+    ureolytic alkalinization even though mechanisms[0] (lines 46-51, 68-89) explicitly
+    establishes that brushite and apatite precipitate initially in cell-free medium
+    and nonureolytic Escherichia coli HB101 controls (Figure 2D-E) as well as early
+    HB101/ure-integration cultures (Figure 2B, Figure 3I-L) and are subsequently replaced
+    in bulk XRD by calcite as ureolytic alkalinization progresses and dissolved phosphorus
+    returns to solution (Figures 1G-H, 2B, 3; supports: partial), with weak local
+    Raman phosphate signals persisting at 7 d calcite indentation sites (Table 2).
+    Furthermore, edges[0].evidence[0].explanation (line 317) uses the generic 70-character
+    template string, edges[1..2] interpolate capitalized node labels mid-sentence
+    with plural-subject singular-verb grammar (''Dissolved Ca(II) and phosphate ...
+    precipitates into ...''), and edges[2].evidence[0].explanation (line 338) cites
+    ''XRD/SEM-EDS'' whereas Heveran et al. (2019) used XRD, SEM, Raman, and WDS (mechanisms[0].context
+    line 63).'
+  target_ids:
+  - cmmmech:brushite
+  field_paths:
+  - causal_graphs[0].nodes[2].description
+  - causal_graphs[0].nodes[3].description
+  - causal_graphs[0].edges[0].evidence[0].explanation
+  - causal_graphs[0].edges[1].relationship
+  - causal_graphs[0].edges[1].description
+  - causal_graphs[0].edges[1].evidence[0].supports
+  - causal_graphs[0].edges[1].evidence[0].explanation
+  - causal_graphs[0].edges[2].description
+  - causal_graphs[0].edges[2].evidence[0].supports
+  - causal_graphs[0].edges[2].evidence[0].explanation
+  - curation_history
+  - history_refs
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-heveran2019
+  - ev-schema
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/brushite.yaml
+    role: maintained_record
+  disposition_reason: 'Resolved under GitHub Issue #951 (GRP-C10S5-002): updated causal_graphs[0].nodes[2..3].description
+    and causal_graphs[0].edges[0..2] in data/records/brushite.yaml to document initial
+    brushite/apatite precipitation in cell-free, nonureolytic, and early lower-urease
+    cultures followed by bulk XRD replacement by calcite as pH rises and dissolved
+    P returns to solution, with supports: partial on edges[1..2], XRD/SEM/Raman/WDS
+    modalities, and an append-only EDIT history sidecar.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261106T090001Z-cycle10-stage4-mineral-cohort-review
+    finding_id: cmmmech-cycle10-stage4-finding-0002
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261106T090006Z-cycle10-stage4-causal-graphs-cohort-review
+    finding_id: cmmmech-cycle10-stage4-finding-0002
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261106T090008Z-brushite-cycle10-stage4-record-review
+    finding_id: cmmmech-cycle10-stage4-finding-0002
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/951
+- finding_id: cmmmech-cycle10-stage4-finding-0003
+  issue_key: cmmmech.pasteurii-strontianite-smithsonite.template-descriptions-and-uncharacterized-modality-claims
+  category: graph
+  severity: minor
+  status: resolved
+  certainty: confirmed
+  title: Natalio & Maria (2024) strontianite.yaml and Huang et al. (2025) smithsonite.yaml
+    causal_graphs[0] now have source-matched node/edge descriptions and analytical
+    modalities
+  description: 'In data/records/strontianite.yaml (cmmmech:strontianite, mineral,
+    Natalio & Maria 2024 ACS Appl. Mater. Interfaces 16(5):6327-6336, DOI:10.1021/acsami.3c13665;
+    causal_graphs[0] pasteurii_strontianite_pla_coating_graph, lines 190-338) and
+    data/records/smithsonite.yaml (cmmmech:smithsonite, mineral, Huang et al. 2025
+    Biogeotechnics 3:100106, DOI:10.1016/j.bgtech.2024.100106; causal_graphs[0] pasteurii_smithsonite_precipitation_graph,
+    lines 192-341), nodes[2].description (strontianite.yaml lines 299-300) and nodes[3].description
+    (strontianite.yaml line 305; smithsonite.yaml lines 307-308) retain generic template
+    descriptions repeating their capitalized node labels in parentheses (''Dissolved
+    cations (Dissolved Sr2+ (SrCl2) in urea-containing medium) undergoing carbonate/phosphate
+    precipitation.'' and ''Solid mineral phase (<Label>) formed via ureolytic alkalinization...''),
+    edges[2].relationship (strontianite.yaml line 331; smithsonite.yaml line 334)
+    states ''cation precipitation with carbonate/phosphate'' despite both studies
+    using phosphate-free chloride-urea media (SrCl2 and ZnCl2), edges[0].evidence[0].explanation
+    (strontianite.yaml line 316; smithsonite.yaml line 319) uses the generic 70-character
+    template string, and edges[1..2] (strontianite.yaml lines 317-338; smithsonite.yaml
+    lines 320-341) interpolate capitalized node labels mid-sentence with generic one-line
+    explanations and supports: support on edges[1] despite mechanisms[0] noting the
+    absence of urease knockout/inhibition or matched-pH abiotic controls (supports:
+    partial). Additionally, in data/records/smithsonite.yaml, edges[2].evidence[0].explanation
+    (lines 340-341) cites ''XRD, FTIR, SEM-EDS, and solution Zn depletion analysis
+    in huang2025'', whereas mechanisms[0].evidence[0..1] (lines 66-87) documents only
+    powder XRD (PDF 08-0449 on 105 C-dried precipitate at 10 mmol/L Zn and 100 mmol/L
+    urea, Figure 2U), AAS solution Zn removal (99.89% at 1 mmol/L Zn to 40.67% at
+    10 mmol/L Zn, Figure 2M), and Nessler ammonium / pH assays without FTIR or SEM-EDS.'
+  target_ids:
+  - cmmmech:strontianite
+  - cmmmech:smithsonite
+  field_paths:
+  - causal_graphs[0].nodes[2].description
+  - causal_graphs[0].nodes[3].description
+  - causal_graphs[0].edges[0].evidence[0].explanation
+  - causal_graphs[0].edges[1].description
+  - causal_graphs[0].edges[1].evidence[0].supports
+  - causal_graphs[0].edges[1].evidence[0].explanation
+  - causal_graphs[0].edges[2].relationship
+  - causal_graphs[0].edges[2].description
+  - causal_graphs[0].edges[2].evidence[0].explanation
+  - curation_history
+  - history_refs
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-natalio2024-huang2025
+  - ev-schema
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/strontianite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: data/records/smithsonite.yaml
+    role: maintained_record
+  disposition_reason: 'Resolved under GitHub Issue #952 (GRP-C10S5-003): replaced
+    generic template descriptions on nodes[2..3] and edges[0..2], removed ''/phosphate''
+    wording on edges[2].relationship, set supports: partial on edges[1], and updated
+    smithsonite.yaml edges[2].evidence[0].explanation to cite only powder XRD (PDF
+    08-0449), AAS solution Zn removal, and Nessler/pH assays, with 2 append-only EDIT
+    history sidecars.'
+  previous_occurrences:
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261106T090001Z-cycle10-stage4-mineral-cohort-review
+    finding_id: cmmmech-cycle10-stage4-finding-0003
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261106T090006Z-cycle10-stage4-causal-graphs-cohort-review
+    finding_id: cmmmech-cycle10-stage4-finding-0003
+  - repository: CultureBotAI/CMMMech
+    review_id: 20261106T090009Z-strontianite-cycle10-stage4-record-review
+    finding_id: cmmmech-cycle10-stage4-finding-0003
+  external_issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/952
+actions: []
+boundary_decisions:
+- action: retain
+  target_ids:
+  - cmmmech:brushite
+  - cmmmech:calcite
+  - cmmmech:lithium-bearing-geothermal-brine
+  - cmmmech:smithsonite
+  - cmmmech:strontianite
+  - cmmmech:vaterite
+  evidence_ids:
+  - ev-stage4-evidence
+  - ev-stage4-findings
+  - ev-schema
+  rationale: All 6 remediated records represent distinct material entities (5 IMA-approved
+    minerals and 1 natural geothermal-brine primary resource) with disjoint identifiers
+    and provenance; cohort boundaries from Cycle 10 Stage 4 are retained unchanged.
+limitations:
+- This verification review is scoped to the 6 records remediated in Cycle 10 Stage
+  5; the remaining 687 records were verified with 0 open findings in the immutable
+  Cycle 10 Stage 4 review bundles.
