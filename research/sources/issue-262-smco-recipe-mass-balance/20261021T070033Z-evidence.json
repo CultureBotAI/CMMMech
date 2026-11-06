@@ -1,0 +1,1232 @@
+{
+  "timestamp": "2026-10-21T07:00:33.761905+00:00",
+  "author": "Codex /root",
+  "kind": "source_investigation",
+  "base": "2da10d95a72146ee0c69cb91fe303348fbadb638",
+  "branch": "codex/issue-262-smco-recipe-mass-balance",
+  "owner": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-262/data/records/samarium-cobalt-magnet-scrap.yaml",
+    "bytes": 9298,
+    "sha256": "794b64eec162fb182c5fef373478ee0962c32a710748524469266aac34588e4d"
+  },
+  "owner_unchanged": true,
+  "decision": "Source-only handoff; scientific issue262 remains unresolved",
+  "report": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-262/research/sources/issue-262-smco-recipe-mass-balance/20261021T070033Z.md",
+    "bytes": 11784,
+    "sha256": "302379c78902a1387376d5d69ec3b1c3b1aa33d929c7893d6fb46e97b36ff978"
+  },
+  "reconciliation": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/reconcile-262-20261021T065451Z/receipt.json",
+    "bytes": 286,
+    "sha256": "af45ae4e4666287d11ffb2194f7961498a9e7ab525e7ff0ebf524aa26652a1c9"
+  },
+  "related_issue": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-262-related-260.json",
+    "bytes": 5024,
+    "sha256": "3355d4bcd8baf40f1781e09810fcd85b342d2499f8896493447800ec103af207"
+  },
+  "related_comments": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-262-related-260-comments.json",
+    "bytes": 4,
+    "sha256": "cf1cbb66a638b4860a516671fb74850e6ccf787fe6c4c8d29e9c04efe880bd05"
+  },
+  "context": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-262/research/sources/round79-resources/20261014T185212Z.md",
+      "bytes": 7272,
+      "sha256": "79f8cbb6d5361f67b655937cf57c9f0f1ec3db89ee764696103b4c584612f113"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-262/research/sources/round79-resources/20261014T185212Z.json",
+      "bytes": 37690,
+      "sha256": "48a539ab1686032ffab988d2bb8742e8d233e2f1891e60736890f45dbee73465"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-262/research/sources/round79-resources/20261014T185931Z-final.md",
+      "bytes": 2114,
+      "sha256": "61fec3afeda46d0864fdb35ec096c15870a5c7670b32ce34882efc44602a4db4"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-262/research/sources/round79-resources/20261014T185931Z-final.json",
+      "bytes": 3735,
+      "sha256": "8ba906d93b0c94e2a02ec814ff11d029cdbbb7d89ba5e5288fbdb94797d1c98b"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-262/reviews/structured/20261014T185757Z-samarium-cobalt-magnet-scrap-round79-initial/review.yaml",
+      "bytes": 7073,
+      "sha256": "52157391ad39b6002374865d7c18f3aca34e3f0c552da91d383fd6f36ee473f8"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-262/reviews/structured/20261014T191104Z-samarium-cobalt-magnet-scrap-round79-final-resolution/review.yaml",
+      "bytes": 16293,
+      "sha256": "f3201e84875c597024a97186e61e95e8e3954bca69851d452f890dc3d353b2ce"
+    }
+  ],
+  "queries": [
+    {
+      "provider": "web.run search_query",
+      "queries": [
+        "\"10.1021/acsomega.0c04132\" correction corrigendum retraction",
+        "\"Process Flowsheet Development for Separation of Sm, Co, Cu, and Fe from Magnet Scrap\" data supplementary",
+        "\"Nayak\" \"12.47\" \"Sm2O3\" magnet"
+      ],
+      "coverage": "first returned result set, no pagination",
+      "response": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/web-search-1.txt",
+        "bytes": 30015,
+        "sha256": "759e2c03422df0cbc474f48725a74b6cc2a839e5433757f96972e47a48b47208"
+      }
+    },
+    {
+      "provider": "web.run search_query",
+      "queries": [
+        "\"0c04132\" \"dataset\"",
+        "\"0c04132\" \"correction\"",
+        "\"Sm\" \"84.83\" \"Nayak\"",
+        "\"Process Flowsheet\" \"Magnet Scrap\" \"erratum\""
+      ],
+      "coverage": "first returned result set, no pagination",
+      "response": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/web-search-2.txt",
+        "bytes": 21367,
+        "sha256": "f8cd1a2035caa7320ab80c8849ce595cd885da94db1d108c1e8e7dc1ccf0f690"
+      }
+    }
+  ],
+  "dedup": {
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "-n",
+      "samarium-cobalt-magnet-scrap|0c04132|PMC7807480",
+      "data",
+      "research",
+      "reviews",
+      "history",
+      "docs",
+      ".claude",
+      ".agents"
+    ],
+    "cwd": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-262",
+    "exit_code": 0,
+    "lines": 440,
+    "paths": [
+      "data/embeddings/corpus_map.json",
+      "data/records/samarium-cobalt-magnet-scrap.yaml",
+      "history/records/samarium-cobalt-magnet-scrap/2026-10-14T184942Z-codex-b95702.yaml",
+      "history/records/samarium-cobalt-magnet-scrap/2026-10-14T185838Z-codex-5ba52e.yaml",
+      "research/ingests/round100-checks-20261015/cmm-round100-final-gates.json",
+      "research/ingests/round100-checks-20261015/cmm-round100-local-coverage.json",
+      "research/ingests/round101-checks-20261015/cmm-round101-display-checks.json",
+      "research/ingests/round101-checks-20261015/cmm-round101-final-gates.json",
+      "research/ingests/round101-checks-20261015/cmm-round101-local-coverage.json",
+      "research/ingests/round102-checks-20261015/cmm-round102-display-checks.json",
+      "research/ingests/round102-checks-20261015/cmm-round102-final-gates.json",
+      "research/ingests/round102-checks-20261015/cmm-round102-local-coverage.json",
+      "research/ingests/round103-checks-20261015/cmm-round103-final-gates.json",
+      "research/ingests/round103-checks-20261015/cmm-round103-local-coverage.json",
+      "research/ingests/round104-checks-20261015/cmm-round104-final-gates.json",
+      "research/ingests/round104-checks-20261015/cmm-round104-local-coverage.json",
+      "research/ingests/round105-checks-20261015/cmm-round105-final-gates.json",
+      "research/ingests/round105-checks-20261015/cmm-round105-local-coverage.json",
+      "research/ingests/round106-checks-20261015/cmm-round106-final-gates.json",
+      "research/ingests/round106-checks-20261015/cmm-round106-local-coverage.json",
+      "research/ingests/round107-checks-20261016/cmm-round107-final-gates.json",
+      "research/ingests/round107-checks-20261016/cmm-round107-local-coverage.json",
+      "research/ingests/round108-checks-20261016/cmm-round108-final-gates-corrected.json",
+      "research/ingests/round108-checks-20261016/cmm-round108-final-gates.json",
+      "research/ingests/round108-checks-20261016/cmm-round108-local-coverage.json",
+      "research/ingests/round109-checks-20261016/cmm-round109-final-gates.json",
+      "research/ingests/round109-checks-20261016/cmm-round109-local-coverage.json",
+      "research/ingests/round79-checks-20261014/final-gates-corrected.json",
+      "research/ingests/round79-checks-20261014/final-gates.json",
+      "research/ingests/round79-checks-20261014/local-coverage.json",
+      "research/ingests/round79-frontier-20261014.json",
+      "research/ingests/round79-frontier-20261014.md",
+      "research/ingests/round80-checks-20261014/final-gates.json",
+      "research/ingests/round80-checks-20261014/local-coverage.json",
+      "research/ingests/round81-checks-20261014/final-gates.json",
+      "research/ingests/round81-checks-20261014/local-coverage.json",
+      "research/ingests/round82-checks-20261014/final-gates.json",
+      "research/ingests/round82-checks-20261014/local-coverage.json",
+      "research/ingests/round83-checks-20261014/final-gates-corrected.json",
+      "research/ingests/round83-checks-20261014/local-coverage.json",
+      "research/ingests/round83-checks-20261014/superseded-precorrection-gates.json",
+      "research/ingests/round84-checks-20261014/final-gates.json",
+      "research/ingests/round84-checks-20261014/local-coverage.json",
+      "research/ingests/round85-checks-20261015/final-gates.json",
+      "research/ingests/round85-checks-20261015/local-coverage.json",
+      "research/ingests/round86-checks-20261015/final-gates.json",
+      "research/ingests/round86-checks-20261015/local-coverage.json",
+      "research/ingests/round87-checks-20261015/final-gates.json",
+      "research/ingests/round87-checks-20261015/local-coverage.json",
+      "research/ingests/round88-checks-20261015/final-gates.json",
+      "research/ingests/round88-checks-20261015/local-coverage.json",
+      "research/ingests/round89-checks-20261015/final-gates.json",
+      "research/ingests/round89-checks-20261015/local-coverage.json",
+      "research/ingests/round90-checks-20261015/final-gates.json",
+      "research/ingests/round90-checks-20261015/local-coverage.json",
+      "research/ingests/round91-checks-20261015/final-gates.json",
+      "research/ingests/round91-checks-20261015/local-coverage.json",
+      "research/ingests/round92-checks-20261015/final-gates.json",
+      "research/ingests/round92-checks-20261015/local-coverage.json",
+      "research/ingests/round93-checks-20261015/final-gates.json",
+      "research/ingests/round93-checks-20261015/initial-gates.json",
+      "research/ingests/round93-checks-20261015/local-coverage.json",
+      "research/ingests/round94-checks-20261015/final-gates.json",
+      "research/ingests/round94-checks-20261015/local-coverage.json",
+      "research/ingests/round95-checks-20261015/final-gates.json",
+      "research/ingests/round95-checks-20261015/initial-gates.json",
+      "research/ingests/round95-checks-20261015/local-coverage.json",
+      "research/ingests/round96-checks-20261015/final-gates.json",
+      "research/ingests/round96-checks-20261015/local-coverage.json",
+      "research/ingests/round97-checks-20261015/final-gates.json",
+      "research/ingests/round97-checks-20261015/local-coverage.json",
+      "research/ingests/round98-checks-20261015/final-gates.json",
+      "research/ingests/round98-checks-20261015/local-coverage.json",
+      "research/ingests/round99-checks-20261015/final-gates-corrected.json",
+      "research/ingests/round99-checks-20261015/final-gates.json",
+      "research/ingests/round99-checks-20261015/local-coverage.json",
+      "research/sources/round109-borates/20261016T024803Z-source-investigation.json",
+      "research/sources/round79-resources/20261014T185212Z.json",
+      "research/sources/round79-resources/20261014T185212Z.md",
+      "research/sources/round79-resources/20261014T185931Z-final.json",
+      "research/sources/round79-resources/20261014T185931Z-final.md",
+      "reviews/publication/20261014-round79/20261014T185611Z-publication-final.json",
+      "reviews/publication/20261014-round79/20261014T190533Z-assembly-static-peer.json",
+      "reviews/publication/20261014-round79/helper-config.json",
+      "reviews/publication/20261014-round79/issues.json",
+      "reviews/publication/20261014-round81/20261014T205727Z-readme-initial.README.md",
+      "reviews/publication/20261015-round102/20261015T203752Z-separation-display-successor.json",
+      "reviews/publication/20261015-round95/operational-static/cmm-round95-report-static-expanded-20261015T130412Z.README.md",
+      "reviews/publication/20261015-round98/20261015T163642Z-package-audit.json",
+      "reviews/publication/20261015-round99/20261015T174452Z-package-audit.json",
+      "reviews/publication/20261015-round99/20261015T175444Z-package-audit-recovery.json",
+      "reviews/structured/20261014T185757Z-samarium-cobalt-magnet-scrap-round79-initial/review.md",
+      "reviews/structured/20261014T185757Z-samarium-cobalt-magnet-scrap-round79-initial/review.yaml",
+      "reviews/structured/20261014T191104Z-samarium-cobalt-magnet-scrap-round79-final-resolution/review.md",
+      "reviews/structured/20261014T191104Z-samarium-cobalt-magnet-scrap-round79-final-resolution/review.yaml"
+    ],
+    "raw_path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/dedup.txt",
+    "sha256": "d5998a17988dd47c8cda5c6c4ec57ec7f0bb1748559e764a16324539311b9c11"
+  },
+  "historical_roots": [
+    {
+      "path": "/private/tmp/cmm-round79-frontier-research",
+      "exists": false,
+      "is_symlink": false
+    },
+    {
+      "path": "/private/tmp/cmm-round24-frontier-raw",
+      "exists": false,
+      "is_symlink": false
+    },
+    {
+      "path": "/private/tmp/cmm-round77-resources-research",
+      "exists": false,
+      "is_symlink": false
+    },
+    {
+      "path": "/private/tmp/cmm-round10-nb-ta-raw",
+      "exists": false,
+      "is_symlink": false
+    },
+    {
+      "path": "/private/tmp/cmm-round21-pcb-raw",
+      "exists": false,
+      "is_symlink": false
+    }
+  ],
+  "acquisition": [
+    {
+      "name": "main.xml",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7807480/fullTextXML",
+      "acquired_at": "2026-10-21T06:55:53.195177+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7807480/fullTextXML",
+      "content_type": "application/xml",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/main.xml",
+      "bytes": 92698,
+      "sha256": "bb5a3553c82d2b50d38025b7dbf5e2a532e75274baac739523d44286de8bf7e5",
+      "signature": "<?xml version=\"1.0\" encoding=\"UTF-8"
+    },
+    {
+      "name": "supplementary.zip",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7807480/supplementaryFiles",
+      "acquired_at": "2026-10-21T06:55:53.195770+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/europepmc/webservices/rest/PMC7807480/supplementaryFiles",
+      "content_type": "application/zip",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/supplementary.zip",
+      "bytes": 796384,
+      "sha256": "a58cf12a6552a88389f3530f949fa673204f7aa8d731ae9d96dd24680f6ae75f",
+      "signature": "PK\u0003\u0004\u0014\u0000\b\b\b\u0000\ufffd>U]\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0000\u0012\u0000\u0000\u0000ao0c0"
+    },
+    {
+      "name": "crossref.json",
+      "url": "https://api.crossref.org/works/10.1021/acsomega.0c04132",
+      "acquired_at": "2026-10-21T06:55:53.195977+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1021/acsomega.0c04132",
+      "content_type": "application/json",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/crossref.json",
+      "bytes": 14447,
+      "sha256": "07d6e84b268c4157bf8e05fe1e33f8444cf24920eb98a72862f8262b95d51a6d",
+      "signature": "{\"status\":\"ok\",\"message-type\":\"work"
+    },
+    {
+      "name": "pmc.html",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7807480/",
+      "acquired_at": "2026-10-21T06:55:53.196157+00:00",
+      "status": 200,
+      "final_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7807480/",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/pmc.html",
+      "bytes": 186224,
+      "sha256": "ffa4e365bb02cf1740be5d13e25e0d11911c76423888a5e086ba9c593606fac6",
+      "signature": "\n<!DOCTYPE html>\n<html lang=\"en\" >\n"
+    },
+    {
+      "name": "publisher.html",
+      "url": "https://pubs.acs.org/doi/10.1021/acsomega.0c04132",
+      "acquired_at": "2026-10-21T06:55:53.196292+00:00",
+      "status": 403,
+      "final_url": "https://pubs.acs.org/doi/10.1021/acsomega.0c04132",
+      "content_type": "text/html; charset=UTF-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/publisher.html",
+      "bytes": 5497,
+      "sha256": "3bfa769d5e1f822f2d33f6d00edf81fef823612dd74fe6f618ad662266b4a010",
+      "signature": "<!DOCTYPE html><html lang=\"en-US\"><"
+    },
+    {
+      "name": "pubmed.html",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/33458471/",
+      "acquired_at": "2026-10-21T06:55:53.242945+00:00",
+      "status": 203,
+      "final_url": "https://pubmed.ncbi.nlm.nih.gov/33458471/",
+      "content_type": "text/html; charset=utf-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/pubmed.html",
+      "bytes": 5590,
+      "sha256": "ccb917c5a75825c4b249ec630152139efa40a2cb7e184a8d865b4d6510ec1922",
+      "signature": "<!doctype html>\n<html lang=\"en\">\n<h"
+    },
+    {
+      "name": "biostudies.json",
+      "url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/S-EPMC7807480",
+      "acquired_at": "2026-10-21T06:55:53.402227+00:00",
+      "status": 200,
+      "final_url": "https://www.ebi.ac.uk/biostudies/api/v1/studies/S-EPMC7807480",
+      "content_type": "application/json;charset=UTF-8",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/biostudies.json",
+      "bytes": 4133,
+      "sha256": "9fcc18aca7389357d3f2e837f1448de8b7d86762aee8ec6bdfce8e9dd86dcb4e",
+      "signature": "{\n  \"accno\" : \"S-EPMC7807480\",\n  \"a"
+    }
+  ],
+  "followup_acquisition": [
+    {
+      "url": "https://www.ebi.ac.uk/biostudies/files/S-EPMC7807480/ao0c04132_si_001.pdf",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/biostudies-si.pdf",
+      "acquired_at": "2026-10-21T06:57:31.002375+00:00",
+      "exit_code": 0,
+      "response": "200\napplication/pdf\nhttps://ftp.ebi.ac.uk/pub/databases/biostudies/S-EPMC/480/S-EPMC7807480/Files/ao0c04132_si_001.pdf",
+      "stderr": "",
+      "bytes": 151441,
+      "sha256": "1f58f60bee41b114e059faafb895d6cd870b715dd05e1ef238a7850097d511ac",
+      "signature": "%PDF-1.5\r%\ufffd\ufffd\ufffd\ufffd\r\n24 0 obj\r"
+    },
+    {
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC7807480/pdf/ao0c04132.pdf",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/main.pdf",
+      "acquired_at": "2026-10-21T06:57:31.006367+00:00",
+      "exit_code": 0,
+      "response": "200\ntext/html; charset=utf-8\nhttps://pmc.ncbi.nlm.nih.gov/articles/PMC7807480/pdf/ao0c04132.pdf",
+      "stderr": "",
+      "bytes": 1817,
+      "sha256": "a4921e7f59187471782bac69f4e7648666b56cbe568752e9f33e82904bc6b3ab",
+      "signature": "\n\n\n\n<html>\n  <head>\n    <"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/0f6767a392f6/ao0c04132_0003.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0003.jpg",
+      "acquired_at": "2026-10-21T06:57:31.006969+00:00",
+      "exit_code": 0,
+      "response": "200\nimage/jpeg\nhttps://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/0f6767a392f6/ao0c04132_0003.jpg",
+      "stderr": "",
+      "bytes": 47881,
+      "sha256": "17609059465485ef15c26b6db3ee55a1664d31177d3e6dc0315f8161b6c8f0d0",
+      "signature": "\ufffd\ufffd\ufffd\ufffd\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0002X\u0002X\u0000\u0000\ufffd\ufffd\u0017\ufffdP"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/2588dcff485e/ao0c04132_m002.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_m002.jpg",
+      "acquired_at": "2026-10-21T06:57:31.011304+00:00",
+      "exit_code": 0,
+      "response": "200\nimage/jpeg\nhttps://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/2588dcff485e/ao0c04132_m002.jpg",
+      "stderr": "",
+      "bytes": 5528,
+      "sha256": "f3c70d90c8d98899054b409f0379c3d9312716dbfddcf381ddc68e2dcc445eed",
+      "signature": "\ufffd\ufffd\ufffd\ufffd\u0000\u0010JFIF\u0000\u0001\u0001\u0000\u0000\u0001\u0000\u0001\u0000\u0000\ufffd\ufffd\u0000C\u0000"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/3752bde0c8ae/ao0c04132_0002.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0002.jpg",
+      "acquired_at": "2026-10-21T06:57:31.014026+00:00",
+      "exit_code": 0,
+      "response": "200\nimage/jpeg\nhttps://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/3752bde0c8ae/ao0c04132_0002.jpg",
+      "stderr": "",
+      "bytes": 69588,
+      "sha256": "a6687bc5ecf185ec9e2260a688c0c26a0b4a2b4b187426f3b02b5e826080dd5a",
+      "signature": "\ufffd\ufffd\ufffd\ufffd\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0001,\u0001,\u0000\u0000\ufffd\ufffd\u0015nP"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/46cef5e1d417/ao0c04132_0010.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0010.jpg",
+      "acquired_at": "2026-10-21T06:57:31.016516+00:00",
+      "exit_code": 0,
+      "response": "200\nimage/jpeg\nhttps://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/46cef5e1d417/ao0c04132_0010.jpg",
+      "stderr": "",
+      "bytes": 50574,
+      "sha256": "7bea76e4a14aedef8cfdd63eb4a6df8aeaa5b0f3b389b15f7f503bdb21f84fe8",
+      "signature": "\ufffd\ufffd\ufffd\ufffd\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0002X\u0002X\u0000\u0000\ufffd\ufffd\u0016\ufffdP"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/539bf1df4c0b/ao0c04132_0009.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0009.jpg",
+      "acquired_at": "2026-10-21T06:57:31.187543+00:00",
+      "exit_code": 0,
+      "response": "200\nimage/jpeg\nhttps://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/539bf1df4c0b/ao0c04132_0009.jpg",
+      "stderr": "",
+      "bytes": 52348,
+      "sha256": "77d594990d4f33d501e8bb3b503228e65334ad479cc180d07636e137147e298d",
+      "signature": "\ufffd\ufffd\ufffd\ufffd\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0002X\u0002X\u0000\u0000\ufffd\ufffd\u0017\ufffdP"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/60d2a14df79a/ao0c04132_0006.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0006.jpg",
+      "acquired_at": "2026-10-21T06:57:31.296140+00:00",
+      "exit_code": 0,
+      "response": "200\nimage/jpeg\nhttps://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/60d2a14df79a/ao0c04132_0006.jpg",
+      "stderr": "",
+      "bytes": 52997,
+      "sha256": "c9ed2bc00d5bd5292b96a6cfba8979799a41f85752ff8d8527f9db558a3b3e77",
+      "signature": "\ufffd\ufffd\ufffd\ufffd\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0002X\u0002X\u0000\u0000\ufffd\ufffd\u0018\ufffdP"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/727a059b1501/ao0c04132_0011.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0011.jpg",
+      "acquired_at": "2026-10-21T06:57:31.303368+00:00",
+      "exit_code": 0,
+      "response": "200\nimage/jpeg\nhttps://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/727a059b1501/ao0c04132_0011.jpg",
+      "stderr": "",
+      "bytes": 62880,
+      "sha256": "2ce2e7c33b623b7253aa5aa38e81d1188d11b1f27e683db57f7f441d59a83699",
+      "signature": "\ufffd\ufffd\ufffd\ufffd\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0002X\u0002X\u0000\u0000\ufffd\ufffd\u001b\ufffdP"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/813c55cece80/ao0c04132_m003.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_m003.jpg",
+      "acquired_at": "2026-10-21T06:57:31.315434+00:00",
+      "exit_code": 0,
+      "response": "200\nimage/jpeg\nhttps://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/813c55cece80/ao0c04132_m003.jpg",
+      "stderr": "",
+      "bytes": 5358,
+      "sha256": "ba40d3e7faa257a4b759ddb82e976a63f72c7bf1701598b0398f6ec472cb56e2",
+      "signature": "\ufffd\ufffd\ufffd\ufffd\u0000\u0010JFIF\u0000\u0001\u0001\u0000\u0000\u0001\u0000\u0001\u0000\u0000\ufffd\ufffd\u0000C\u0000"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/9565ed9ef55f/ao0c04132_0013.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0013.jpg",
+      "acquired_at": "2026-10-21T06:57:31.351454+00:00",
+      "exit_code": 0,
+      "response": "200\nimage/jpeg\nhttps://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/9565ed9ef55f/ao0c04132_0013.jpg",
+      "stderr": "",
+      "bytes": 81060,
+      "sha256": "c822d9a189f29bd964bd663f31e976be16bc02147f82e7aced2543b5a910d83d",
+      "signature": "\ufffd\ufffd\ufffd\ufffd\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0002X\u0002X\u0000\u0000\ufffd\ufffd\u001e\u0018P"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/9787f54bc2e3/ao0c04132_0012.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0012.jpg",
+      "acquired_at": "2026-10-21T06:57:31.435240+00:00",
+      "exit_code": 0,
+      "response": "200\nimage/jpeg\nhttps://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/9787f54bc2e3/ao0c04132_0012.jpg",
+      "stderr": "",
+      "bytes": 56106,
+      "sha256": "1f4e4c9940734f34e559733206a1fb30786759a43712d2c9646004cd0aebecd3",
+      "signature": "\ufffd\ufffd\ufffd\ufffd\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0004\ufffd\u0004\ufffd\u0000\u0000\ufffd\ufffd\u001d\ufffdP"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/9a532c98990d/ao0c04132_0007.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0007.jpg",
+      "acquired_at": "2026-10-21T06:57:31.437608+00:00",
+      "exit_code": 0,
+      "response": "200\nimage/jpeg\nhttps://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/9a532c98990d/ao0c04132_0007.jpg",
+      "stderr": "",
+      "bytes": 52143,
+      "sha256": "98bc45131020f22e0213c2e57922ca680c485ba81c8cb50113e4a092fe0fe34f",
+      "signature": "\ufffd\ufffd\ufffd\ufffd\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0002X\u0002X\u0000\u0000\ufffd\ufffd\u0016\ufffdP"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/b70b8c98be1d/ao0c04132_0004.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0004.jpg",
+      "acquired_at": "2026-10-21T06:57:31.577263+00:00",
+      "exit_code": 0,
+      "response": "200\nimage/jpeg\nhttps://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/b70b8c98be1d/ao0c04132_0004.jpg",
+      "stderr": "",
+      "bytes": 46347,
+      "sha256": "478bd7520bf60ba12849096dc5b75448e2183336bc9458e2f773c2c15ad8235d",
+      "signature": "\ufffd\ufffd\ufffd\ufffd\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0002X\u0002X\u0000\u0000\ufffd\ufffd\u0017TP"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/bd046d60876f/ao0c04132_0014.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0014.jpg",
+      "acquired_at": "2026-10-21T06:57:31.620295+00:00",
+      "exit_code": 0,
+      "response": "200\nimage/jpeg\nhttps://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/bd046d60876f/ao0c04132_0014.jpg",
+      "stderr": "",
+      "bytes": 109244,
+      "sha256": "a37a03cfe0c96e239f7fef1713b2a2fa84d79e0d77a1975d829d71c03f08badf",
+      "signature": "\ufffd\ufffd\ufffd\ufffd\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0001,\u0001,\u0000\u0000\ufffd\ufffd$jP"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/d50d31abbba9/ao0c04132_0005.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0005.jpg",
+      "acquired_at": "2026-10-21T06:57:31.656111+00:00",
+      "exit_code": 0,
+      "response": "200\nimage/jpeg\nhttps://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/d50d31abbba9/ao0c04132_0005.jpg",
+      "stderr": "",
+      "bytes": 53738,
+      "sha256": "fa2ddb7b1a2216343770c69d49977bf7b847cf69f9272656d6f45ccc4833356f",
+      "signature": "\ufffd\ufffd\ufffd\ufffd\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0002X\u0002X\u0000\u0000\ufffd\ufffd\u0019\ufffdP"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/dc4c49f6c7d7/ao0c04132_m001.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_m001.jpg",
+      "acquired_at": "2026-10-21T06:57:31.670127+00:00",
+      "exit_code": 0,
+      "response": "200\nimage/jpeg\nhttps://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/dc4c49f6c7d7/ao0c04132_m001.jpg",
+      "stderr": "",
+      "bytes": 4035,
+      "sha256": "62c9f2008c8c9ca8bdbc77957bda9ff18516a17be0574ae1056f5bdbe17c195c",
+      "signature": "\ufffd\ufffd\ufffd\ufffd\u0000\u0010JFIF\u0000\u0001\u0001\u0000\u0000\u0001\u0000\u0001\u0000\u0000\ufffd\ufffd\u0000C\u0000"
+    },
+    {
+      "url": "https://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/e9ad79717cd7/ao0c04132_0008.jpg",
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0008.jpg",
+      "acquired_at": "2026-10-21T06:57:31.734215+00:00",
+      "exit_code": 0,
+      "response": "200\nimage/jpeg\nhttps://cdn.ncbi.nlm.nih.gov/pmc/blobs/e421/7807480/e9ad79717cd7/ao0c04132_0008.jpg",
+      "stderr": "",
+      "bytes": 55254,
+      "sha256": "e2cd0a12bd676b6aba67cbf2e0c89e1806e4ffa3fb1c124bd9f74b06853b515e",
+      "signature": "\ufffd\ufffd\ufffd\ufffd\u0000\u0010JFIF\u0000\u0001\u0001\u0001\u0002X\u0002X\u0000\u0000\ufffd\ufffd\u0017\ufffdP"
+    }
+  ],
+  "version_comparison": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/main.xml",
+      "bytes": 92698,
+      "sha256": "bb5a3553c82d2b50d38025b7dbf5e2a532e75274baac739523d44286de8bf7e5",
+      "historical_artifact_name": "smco2021.xml",
+      "historical_sha256": [
+        "bb5a3553c82d2b50d38025b7dbf5e2a532e75274baac739523d44286de8bf7e5"
+      ],
+      "identical_to_historical": true
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/biostudies-si.pdf",
+      "bytes": 151441,
+      "sha256": "1f58f60bee41b114e059faafb895d6cd870b715dd05e1ef238a7850097d511ac",
+      "historical_artifact_name": "ao0c04132_si_001.pdf",
+      "historical_sha256": [
+        "1f58f60bee41b114e059faafb895d6cd870b715dd05e1ef238a7850097d511ac"
+      ],
+      "identical_to_historical": true
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0002.jpg",
+      "bytes": 69588,
+      "sha256": "a6687bc5ecf185ec9e2260a688c0c26a0b4a2b4b187426f3b02b5e826080dd5a",
+      "historical_artifact_name": "ao0c04132_0002.jpg",
+      "historical_sha256": [
+        "a6687bc5ecf185ec9e2260a688c0c26a0b4a2b4b187426f3b02b5e826080dd5a"
+      ],
+      "identical_to_historical": true
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0003.jpg",
+      "bytes": 47881,
+      "sha256": "17609059465485ef15c26b6db3ee55a1664d31177d3e6dc0315f8161b6c8f0d0",
+      "historical_artifact_name": "ao0c04132_0003.jpg",
+      "historical_sha256": [
+        "17609059465485ef15c26b6db3ee55a1664d31177d3e6dc0315f8161b6c8f0d0"
+      ],
+      "identical_to_historical": true
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0004.jpg",
+      "bytes": 46347,
+      "sha256": "478bd7520bf60ba12849096dc5b75448e2183336bc9458e2f773c2c15ad8235d",
+      "historical_artifact_name": "ao0c04132_0004.jpg",
+      "historical_sha256": [
+        "478bd7520bf60ba12849096dc5b75448e2183336bc9458e2f773c2c15ad8235d"
+      ],
+      "identical_to_historical": true
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0005.jpg",
+      "bytes": 53738,
+      "sha256": "fa2ddb7b1a2216343770c69d49977bf7b847cf69f9272656d6f45ccc4833356f",
+      "historical_artifact_name": "ao0c04132_0005.jpg",
+      "historical_sha256": [
+        "fa2ddb7b1a2216343770c69d49977bf7b847cf69f9272656d6f45ccc4833356f"
+      ],
+      "identical_to_historical": true
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0006.jpg",
+      "bytes": 52997,
+      "sha256": "c9ed2bc00d5bd5292b96a6cfba8979799a41f85752ff8d8527f9db558a3b3e77",
+      "historical_artifact_name": "ao0c04132_0006.jpg",
+      "historical_sha256": [
+        "c9ed2bc00d5bd5292b96a6cfba8979799a41f85752ff8d8527f9db558a3b3e77"
+      ],
+      "identical_to_historical": true
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0007.jpg",
+      "bytes": 52143,
+      "sha256": "98bc45131020f22e0213c2e57922ca680c485ba81c8cb50113e4a092fe0fe34f",
+      "historical_artifact_name": "ao0c04132_0007.jpg",
+      "historical_sha256": [
+        "98bc45131020f22e0213c2e57922ca680c485ba81c8cb50113e4a092fe0fe34f"
+      ],
+      "identical_to_historical": true
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0008.jpg",
+      "bytes": 55254,
+      "sha256": "e2cd0a12bd676b6aba67cbf2e0c89e1806e4ffa3fb1c124bd9f74b06853b515e",
+      "historical_artifact_name": "ao0c04132_0008.jpg",
+      "historical_sha256": [
+        "e2cd0a12bd676b6aba67cbf2e0c89e1806e4ffa3fb1c124bd9f74b06853b515e"
+      ],
+      "identical_to_historical": true
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0009.jpg",
+      "bytes": 52348,
+      "sha256": "77d594990d4f33d501e8bb3b503228e65334ad479cc180d07636e137147e298d",
+      "historical_artifact_name": "ao0c04132_0009.jpg",
+      "historical_sha256": [
+        "77d594990d4f33d501e8bb3b503228e65334ad479cc180d07636e137147e298d"
+      ],
+      "identical_to_historical": true
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0010.jpg",
+      "bytes": 50574,
+      "sha256": "7bea76e4a14aedef8cfdd63eb4a6df8aeaa5b0f3b389b15f7f503bdb21f84fe8",
+      "historical_artifact_name": "ao0c04132_0010.jpg",
+      "historical_sha256": [
+        "7bea76e4a14aedef8cfdd63eb4a6df8aeaa5b0f3b389b15f7f503bdb21f84fe8"
+      ],
+      "identical_to_historical": true
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0011.jpg",
+      "bytes": 62880,
+      "sha256": "2ce2e7c33b623b7253aa5aa38e81d1188d11b1f27e683db57f7f441d59a83699",
+      "historical_artifact_name": "ao0c04132_0011.jpg",
+      "historical_sha256": [
+        "2ce2e7c33b623b7253aa5aa38e81d1188d11b1f27e683db57f7f441d59a83699"
+      ],
+      "identical_to_historical": true
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0012.jpg",
+      "bytes": 56106,
+      "sha256": "1f4e4c9940734f34e559733206a1fb30786759a43712d2c9646004cd0aebecd3",
+      "historical_artifact_name": "ao0c04132_0012.jpg",
+      "historical_sha256": [
+        "1f4e4c9940734f34e559733206a1fb30786759a43712d2c9646004cd0aebecd3"
+      ],
+      "identical_to_historical": true
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0013.jpg",
+      "bytes": 81060,
+      "sha256": "c822d9a189f29bd964bd663f31e976be16bc02147f82e7aced2543b5a910d83d",
+      "historical_artifact_name": "ao0c04132_0013.jpg",
+      "historical_sha256": [
+        "c822d9a189f29bd964bd663f31e976be16bc02147f82e7aced2543b5a910d83d"
+      ],
+      "identical_to_historical": true
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0014.jpg",
+      "bytes": 109244,
+      "sha256": "a37a03cfe0c96e239f7fef1713b2a2fa84d79e0d77a1975d829d71c03f08badf",
+      "historical_artifact_name": "ao0c04132_0014.jpg",
+      "historical_sha256": [
+        "a37a03cfe0c96e239f7fef1713b2a2fa84d79e0d77a1975d829d71c03f08badf"
+      ],
+      "identical_to_historical": true
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_m001.jpg",
+      "bytes": 4035,
+      "sha256": "62c9f2008c8c9ca8bdbc77957bda9ff18516a17be0574ae1056f5bdbe17c195c",
+      "historical_artifact_name": "ao0c04132_m001.jpg",
+      "historical_sha256": [
+        "62c9f2008c8c9ca8bdbc77957bda9ff18516a17be0574ae1056f5bdbe17c195c"
+      ],
+      "identical_to_historical": true
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_m002.jpg",
+      "bytes": 5528,
+      "sha256": "f3c70d90c8d98899054b409f0379c3d9312716dbfddcf381ddc68e2dcc445eed",
+      "historical_artifact_name": "ao0c04132_m002.jpg",
+      "historical_sha256": [
+        "f3c70d90c8d98899054b409f0379c3d9312716dbfddcf381ddc68e2dcc445eed"
+      ],
+      "identical_to_historical": true
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_m003.jpg",
+      "bytes": 5358,
+      "sha256": "ba40d3e7faa257a4b759ddb82e976a63f72c7bf1701598b0398f6ec472cb56e2",
+      "historical_artifact_name": "ao0c04132_m003.jpg",
+      "historical_sha256": [
+        "ba40d3e7faa257a4b759ddb82e976a63f72c7bf1701598b0398f6ec472cb56e2"
+      ],
+      "identical_to_historical": true
+    }
+  ],
+  "archive_members": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0009.jpg",
+      "bytes": 52348,
+      "sha256": "77d594990d4f33d501e8bb3b503228e65334ad479cc180d07636e137147e298d",
+      "historical_matches": [
+        true
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_m001.gif",
+      "bytes": 1895,
+      "sha256": "689527db3f44b4f71a1496cf823550f8fdb67d2b1d119ee39a88fd4828de8ef1",
+      "historical_matches": []
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0006.jpg",
+      "bytes": 52997,
+      "sha256": "c9ed2bc00d5bd5292b96a6cfba8979799a41f85752ff8d8527f9db558a3b3e77",
+      "historical_matches": [
+        true
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_m001.jpg",
+      "bytes": 4035,
+      "sha256": "62c9f2008c8c9ca8bdbc77957bda9ff18516a17be0574ae1056f5bdbe17c195c",
+      "historical_matches": [
+        true
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0007.gif",
+      "bytes": 8659,
+      "sha256": "3edb5a908f9571d90656610ea7c676d6927b338d5c6b543071f8253bfc312e3d",
+      "historical_matches": []
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0002.gif",
+      "bytes": 11369,
+      "sha256": "fac1deee8b65e01a39123616a4325401ebc6bdab942c37fe63dfd322bdd1b277",
+      "historical_matches": []
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_m003.gif",
+      "bytes": 1784,
+      "sha256": "6d67337c7126a76f013569d647c1e6a6f1c9912e87d7f835000b43c075bd9b37",
+      "historical_matches": []
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0008.jpg",
+      "bytes": 55254,
+      "sha256": "e2cd0a12bd676b6aba67cbf2e0c89e1806e4ffa3fb1c124bd9f74b06853b515e",
+      "historical_matches": [
+        true
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0005.gif",
+      "bytes": 9510,
+      "sha256": "cbb4053d897755df08a06054dd25257784fbb2e216b3c145c89733c436ff5666",
+      "historical_matches": []
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_m002.jpg",
+      "bytes": 5528,
+      "sha256": "f3c70d90c8d98899054b409f0379c3d9312716dbfddcf381ddc68e2dcc445eed",
+      "historical_matches": [
+        true
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0010.jpg",
+      "bytes": 50574,
+      "sha256": "7bea76e4a14aedef8cfdd63eb4a6df8aeaa5b0f3b389b15f7f503bdb21f84fe8",
+      "historical_matches": [
+        true
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0012.jpg",
+      "bytes": 56106,
+      "sha256": "1f4e4c9940734f34e559733206a1fb30786759a43712d2c9646004cd0aebecd3",
+      "historical_matches": [
+        true
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0014.gif",
+      "bytes": 17556,
+      "sha256": "29374d8aca35acf90d2b04386a2faf64037791faec8f3b325d073ab339621fb1",
+      "historical_matches": []
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0002.jpg",
+      "bytes": 69588,
+      "sha256": "a6687bc5ecf185ec9e2260a688c0c26a0b4a2b4b187426f3b02b5e826080dd5a",
+      "historical_matches": [
+        true
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0012.gif",
+      "bytes": 10429,
+      "sha256": "eae11accb8cb1c475930b92e68352cd68bca4da274bbf20d2eeb724e7c0fe27d",
+      "historical_matches": []
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0003.gif",
+      "bytes": 8683,
+      "sha256": "4319d9b8fd603f61e3835e4ba36ed5fdd67b90b3fef14e3f4ee0ce452650a1f1",
+      "historical_matches": []
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0004.gif",
+      "bytes": 9020,
+      "sha256": "93f452ed325deba29e8d915f7bde1b00ceefbd546477f6e8b4f49818daf5d729",
+      "historical_matches": []
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0005.jpg",
+      "bytes": 53738,
+      "sha256": "fa2ddb7b1a2216343770c69d49977bf7b847cf69f9272656d6f45ccc4833356f",
+      "historical_matches": [
+        true
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0013.jpg",
+      "bytes": 81060,
+      "sha256": "c822d9a189f29bd964bd663f31e976be16bc02147f82e7aced2543b5a910d83d",
+      "historical_matches": [
+        true
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_m003.jpg",
+      "bytes": 5358,
+      "sha256": "ba40d3e7faa257a4b759ddb82e976a63f72c7bf1701598b0398f6ec472cb56e2",
+      "historical_matches": [
+        true
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0010.gif",
+      "bytes": 8469,
+      "sha256": "12efed1333510e8545320e97d98b8f4c04ab4dec4371144be41c62fe7dccd781",
+      "historical_matches": []
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0003.jpg",
+      "bytes": 47881,
+      "sha256": "17609059465485ef15c26b6db3ee55a1664d31177d3e6dc0315f8161b6c8f0d0",
+      "historical_matches": [
+        true
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0004.jpg",
+      "bytes": 46347,
+      "sha256": "478bd7520bf60ba12849096dc5b75448e2183336bc9458e2f773c2c15ad8235d",
+      "historical_matches": [
+        true
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_si_001.pdf",
+      "bytes": 151441,
+      "sha256": "1f58f60bee41b114e059faafb895d6cd870b715dd05e1ef238a7850097d511ac",
+      "historical_matches": [
+        true
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0006.gif",
+      "bytes": 9253,
+      "sha256": "1304d32bf2b6be0a3cf9f2a11d568fe555feffdc5831b0efa471cda2482b5bb8",
+      "historical_matches": []
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_m002.gif",
+      "bytes": 1646,
+      "sha256": "aa9f0bd1c591c2486e11d0f57ff986be7be35829e864061fcd999662d74ca3b5",
+      "historical_matches": []
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0007.jpg",
+      "bytes": 52143,
+      "sha256": "98bc45131020f22e0213c2e57922ca680c485ba81c8cb50113e4a092fe0fe34f",
+      "historical_matches": [
+        true
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0011.gif",
+      "bytes": 9896,
+      "sha256": "fc2ca35887d73c122a52a171724c04f8a520b73224b73c1b92678227e43a08ff",
+      "historical_matches": []
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0009.gif",
+      "bytes": 8630,
+      "sha256": "63ca4af39376485e287131d837c7e68618add3b05ebca04cda0ca27c0010c349",
+      "historical_matches": []
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0008.gif",
+      "bytes": 8681,
+      "sha256": "350cb497032d2d44dae965160eef23c6ad58531f79e057c3dabe018321eb19bc",
+      "historical_matches": []
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0013.gif",
+      "bytes": 11104,
+      "sha256": "d8686f456a8ad863789a04168a771142e0ae160e05ea810edbf33078e4ea24a2",
+      "historical_matches": []
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0014.jpg",
+      "bytes": 109244,
+      "sha256": "a37a03cfe0c96e239f7fef1713b2a2fa84d79e0d77a1975d829d71c03f08badf",
+      "historical_matches": [
+        true
+      ]
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/files/ao0c04132_0011.jpg",
+      "bytes": 62880,
+      "sha256": "2ce2e7c33b623b7253aa5aa38e81d1188d11b1f27e683db57f7f441d59a83699",
+      "historical_matches": [
+        true
+      ]
+    }
+  ],
+  "diagnostics": {
+    "kind": "conditional curator arithmetic, not observed measurements or source correction",
+    "constants_g_per_mol": {
+      "Sm": 150.36,
+      "O": 15.999,
+      "C": 12.011,
+      "Na": 22.99,
+      "S": 32.06,
+      "H": 1.008
+    },
+    "assumptions": [
+      "Main 32.2 percent Sm applies to printed Table S3 20 g feed; actual batch equivalence unverified",
+      "Printed 12.47 g product is anhydrous pure Sm2O3 as claimed; no purity measurement inferred",
+      "Formula arithmetic uses approximate rounded atomic masses; hydrate/impurity composition not repaired",
+      "0.8+0.15+0.05 L is recipe addition arithmetic, not measurement of final volume"
+    ],
+    "feed_Sm_g": 6.44,
+    "oxide_Sm_mass_fraction": 0.8623611696590645,
+    "Sm_in_printed_12_47g_pure_oxide_g": 10.753643785648535,
+    "implied_recovery_percent": 166.9820463610021,
+    "maximum_pure_oxide_from_feed_g": 7.4678687150837995,
+    "claimed_84_83pct_Sm_g": 5.463052,
+    "pure_oxide_at_claimed_recovery_g": 6.334993031005587,
+    "liquor_0_92L_6_34gL_Sm_g": 5.8328,
+    "liquor_inventory_percent_of_feed": 90.57142857142856,
+    "conditional_94_19pct_precip_Sm_g": 5.493914319999999,
+    "conditional_precip_percent_of_feed": 85.30922857142855,
+    "Sm_in_13_99g_pure_NaSm_SO4_2_H2O_g": 5.485430416948082,
+    "Sm_in_13_45g_pure_anhydrous_Sm2_C2O4_3_g": 7.161597382315758,
+    "printed_volumes_L": [
+      0.8,
+      0.15,
+      0.05
+    ],
+    "sum_printed_volumes_L": 1.0,
+    "nominal_peroxide_added_volume_fraction_percent": 5.0,
+    "Na2SO4_46g_in_0_92L_g_per_L": 50.0,
+    "double_sulfate_13_99g_in_0_28L_g_per_L": 49.96428571428571,
+    "result": "Oxide/feed mass mismatch survives. Nominal volume and loading arithmetic agrees with some recipe labels but does not establish stock concentration, final volume, purity, losses or corrected yield."
+  },
+  "selected_visuals": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/si-3.png",
+      "bytes": 134527,
+      "sha256": "a202e2f77062269f7ba0bd62a097ad2464068dd361f91d06b33708d75a7f8a12"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/si-4.png",
+      "bytes": 116543,
+      "sha256": "ab109f34f992ffa2adafb43f14ab38418efd9fc997eaafff69c1d83bfe92d0af"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0008.jpg",
+      "bytes": 55254,
+      "sha256": "e2cd0a12bd676b6aba67cbf2e0c89e1806e4ffa3fb1c124bd9f74b06853b515e"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0013.jpg",
+      "bytes": 81060,
+      "sha256": "c822d9a189f29bd964bd663f31e976be16bc02147f82e7aced2543b5a910d83d"
+    }
+  ],
+  "derived_and_receipts": [
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/acquire-followup.py",
+      "bytes": 1350,
+      "sha256": "deff2a245f4ebd784f560429f321c4c99c4693f59c235723358c0ec373b2b9e7"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/acquire.py",
+      "bytes": 1559,
+      "sha256": "88ba921570ea24fcd3a82a607265a37ac150b5153fc615ad29e38631918ea16f"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/acquisition-followup.json",
+      "bytes": 11514,
+      "sha256": "3c402906f1fbfadddee5ff4b1c6e46e581f17f88a139249507a32eab322eb5c7"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/acquisition.json",
+      "bytes": 3994,
+      "sha256": "16cf92043fb6a8d68278477a121880c7072b5030867e169066da90ac55e5bed4"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0002.jpg",
+      "bytes": 69588,
+      "sha256": "a6687bc5ecf185ec9e2260a688c0c26a0b4a2b4b187426f3b02b5e826080dd5a"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0003.jpg",
+      "bytes": 47881,
+      "sha256": "17609059465485ef15c26b6db3ee55a1664d31177d3e6dc0315f8161b6c8f0d0"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0004.jpg",
+      "bytes": 46347,
+      "sha256": "478bd7520bf60ba12849096dc5b75448e2183336bc9458e2f773c2c15ad8235d"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0005.jpg",
+      "bytes": 53738,
+      "sha256": "fa2ddb7b1a2216343770c69d49977bf7b847cf69f9272656d6f45ccc4833356f"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0006.jpg",
+      "bytes": 52997,
+      "sha256": "c9ed2bc00d5bd5292b96a6cfba8979799a41f85752ff8d8527f9db558a3b3e77"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0007.jpg",
+      "bytes": 52143,
+      "sha256": "98bc45131020f22e0213c2e57922ca680c485ba81c8cb50113e4a092fe0fe34f"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0008.jpg",
+      "bytes": 55254,
+      "sha256": "e2cd0a12bd676b6aba67cbf2e0c89e1806e4ffa3fb1c124bd9f74b06853b515e"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0009.jpg",
+      "bytes": 52348,
+      "sha256": "77d594990d4f33d501e8bb3b503228e65334ad479cc180d07636e137147e298d"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0010.jpg",
+      "bytes": 50574,
+      "sha256": "7bea76e4a14aedef8cfdd63eb4a6df8aeaa5b0f3b389b15f7f503bdb21f84fe8"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0011.jpg",
+      "bytes": 62880,
+      "sha256": "2ce2e7c33b623b7253aa5aa38e81d1188d11b1f27e683db57f7f441d59a83699"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0012.jpg",
+      "bytes": 56106,
+      "sha256": "1f4e4c9940734f34e559733206a1fb30786759a43712d2c9646004cd0aebecd3"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0013.jpg",
+      "bytes": 81060,
+      "sha256": "c822d9a189f29bd964bd663f31e976be16bc02147f82e7aced2543b5a910d83d"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_0014.jpg",
+      "bytes": 109244,
+      "sha256": "a37a03cfe0c96e239f7fef1713b2a2fa84d79e0d77a1975d829d71c03f08badf"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_m001.jpg",
+      "bytes": 4035,
+      "sha256": "62c9f2008c8c9ca8bdbc77957bda9ff18516a17be0574ae1056f5bdbe17c195c"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_m002.jpg",
+      "bytes": 5528,
+      "sha256": "f3c70d90c8d98899054b409f0379c3d9312716dbfddcf381ddc68e2dcc445eed"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/ao0c04132_m003.jpg",
+      "bytes": 5358,
+      "sha256": "ba40d3e7faa257a4b759ddb82e976a63f72c7bf1701598b0398f6ec472cb56e2"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/biostudies-si.pdf",
+      "bytes": 151441,
+      "sha256": "1f58f60bee41b114e059faafb895d6cd870b715dd05e1ef238a7850097d511ac"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/biostudies.json",
+      "bytes": 4133,
+      "sha256": "9fcc18aca7389357d3f2e837f1448de8b7d86762aee8ec6bdfce8e9dd86dcb4e"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/crossref.json",
+      "bytes": 14447,
+      "sha256": "07d6e84b268c4157bf8e05fe1e33f8444cf24920eb98a72862f8262b95d51a6d"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/dedup-stderr.txt",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/dedup.json",
+      "bytes": 7551,
+      "sha256": "ee92eebaf9bb02b9df4c3b7a21832091788460c0d1f725d7255aeb62877bc88b"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/extracted-files.json",
+      "bytes": 8085,
+      "sha256": "67f55c2475ac960b1109787f1abb8569226cd1cc25e52703548cdca274728044"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/historical-root-check.json",
+      "bytes": 541,
+      "sha256": "c39c71f5e5f4bb9f84d6e917910d368266c57a3654c908dc2663288cb76db55d"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/main-text.txt",
+      "bytes": 34208,
+      "sha256": "3d8164fd70a2a11f43e23d605611ab1c881bebf5500caf6bf0c5b1fe9d92a885"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/main.pdf",
+      "bytes": 1817,
+      "sha256": "a4921e7f59187471782bac69f4e7648666b56cbe568752e9f33e82904bc6b3ab"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/main.xml",
+      "bytes": 92698,
+      "sha256": "bb5a3553c82d2b50d38025b7dbf5e2a532e75274baac739523d44286de8bf7e5"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/mass-balance-diagnostics.json",
+      "bytes": 1768,
+      "sha256": "43a1867baa1a6b0ce227ad890101fc87ac53eba3c6218d0a1c5d54483e80a98f"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/pmc.html",
+      "bytes": 186224,
+      "sha256": "ffa4e365bb02cf1740be5d13e25e0d11911c76423888a5e086ba9c593606fac6"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/publisher.html",
+      "bytes": 5497,
+      "sha256": "3bfa769d5e1f822f2d33f6d00edf81fef823612dd74fe6f618ad662266b4a010"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/pubmed.html",
+      "bytes": 5590,
+      "sha256": "ccb917c5a75825c4b249ec630152139efa40a2cb7e184a8d865b4d6510ec1922"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/si-3.png",
+      "bytes": 134527,
+      "sha256": "a202e2f77062269f7ba0bd62a097ad2464068dd361f91d06b33708d75a7f8a12"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/si-4.png",
+      "bytes": 116543,
+      "sha256": "ab109f34f992ffa2adafb43f14ab38418efd9fc997eaafff69c1d83bfe92d0af"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/si-text.txt",
+      "bytes": 4147,
+      "sha256": "17400aa049f9187755a70bc0fd96602230842c02f90393707a166f65c0ed7642"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/supplementary.zip",
+      "bytes": 796384,
+      "sha256": "a58cf12a6552a88389f3530f949fa673204f7aa8d731ae9d96dd24680f6ae75f"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/version-comparison.json",
+      "bytes": 7169,
+      "sha256": "52e180ed4e09abff8708489d8be0f8b8f37fc84358dc5c2ac2ca7bba1b829a55"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/web-search-1.txt",
+      "bytes": 30015,
+      "sha256": "759e2c03422df0cbc474f48725a74b6cc2a839e5433757f96972e47a48b47208"
+    },
+    {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-262/web-search-2.txt",
+      "bytes": 21367,
+      "sha256": "f8cd1a2035caa7320ab80c8849ce595cd885da94db1d108c1e8e7dc1ccf0f690"
+    }
+  ],
+  "validation": {
+    "baseline": {
+      "exit_code": 0,
+      "session": 95610,
+      "log": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-262-baseline-check.log",
+        "bytes": 589,
+        "sha256": "fdd9bded280d67ec927b6771d968de7058223ffe82cc996113f54b9a453cff42"
+      },
+      "passed": 327,
+      "empty_parameter_skips": 3,
+      "records": 616,
+      "histories": 744
+    },
+    "final": "pending",
+    "independent_review": "pending"
+  },
+  "reuse": "Original XML states CC-BY-NC-ND; raw evidence outside Git; no bulk redistribution."
+}
