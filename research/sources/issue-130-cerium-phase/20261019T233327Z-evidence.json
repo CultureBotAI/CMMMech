@@ -1,0 +1,417 @@
+{
+  "assessed_at": "2026-10-19T23:33:27Z",
+  "actor": {
+    "name": "codex",
+    "model": "GPT-6",
+    "agent": "/root/investigate_130",
+    "tool": "codex"
+  },
+  "issue": "https://github.com/CultureBotAI/CMMMech/issues/130",
+  "branch": "codex/issue-130-cerium-phase",
+  "base": "a272f29d32ad36fa0bb398ed866aeb0ab1b3cd8b",
+  "decision": "source_only_deferred; complete Jiang 2010 article, figures and any supplements remain unavailable; phase assignment unresolved",
+  "new_evidence": [
+    "NTU institutional record supplies abstract metadata; its public bundles API lists one LICENSE bundle and no original manuscript bundle.",
+    "Reacquired 2017 complete publisher PDF has the same SHA-256 as the prior dossier. Page 17 explicitly calls Jiang 2010 Ce particles rhabdophane; page 2 qualifies incomplete identification from diffuse diffraction and amorphous material. This conflicts with the 2010 abstract monazite label and does not itself resolve the phase.",
+    "New bibliographic thesis lead M. Jiang, Kyushu University, 2012 remains unlocated; inspected Mingyu catalogue search has 13 unrelated results."
+  ],
+  "unchanged_owners": [
+    {
+      "path": "data/records/monazite-ce.yaml",
+      "sha256": "4e852e05387e59e4581bd379ba832bd0b1b67cb7fc32d8bcfccaa862d29a6bae"
+    },
+    {
+      "path": "data/records/rhabdophane-ce.yaml",
+      "sha256": "cf5c8567e2e3cda02fa829d521ab7deda870b77a1091ff41dd8dcc8da7883f89"
+    },
+    {
+      "path": "data/records/cerium.yaml",
+      "sha256": "a48a2c7890bd6d45058532736484d14d650599e6c7aadc5751faf0f6b9d63766"
+    }
+  ],
+  "prospective_owner_limit": "cerium.yaml has October 18, 2026 curation; the two-day skip applies if future evidence warrants using that owner. No curation is proposed now.",
+  "local_dedup": {
+    "command": [
+      "rg",
+      "--no-ignore",
+      "--hidden",
+      "--follow",
+      "--json",
+      "-i",
+      "10\\.1016/j\\.chemgeo\\.2010\\.07\\.010|chemgeo\\.2010\\.07\\.010|S0009254110002603|Biological nano.mineralization of Ce phosphate|10\\.3390/min7050084|Ochiai",
+      "data/records",
+      "research",
+      "reviews",
+      "history"
+    ],
+    "worktree": "/private/tmp/cmmmech-backlog-20261019-fmj36s/issue-130",
+    "hidden_ignored": true,
+    "symlinks": "followed within named roots",
+    "match_lines": 35,
+    "matching_files": 11,
+    "raw": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/dedup.jsonl",
+      "bytes": 56893288,
+      "sha256": "f0f1a94a8e55acafc91904a1a0a030633c4e299a70b661d6e9e808bfb18bdcd3"
+    },
+    "stderr": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/dedup.stderr",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "limits": "Binary detection remained enabled; not a machine-wide inventory or fresh decoding of every old binary. Download search limited to directly cited relevant roots and task directory.",
+    "prior_artifact_recheck": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/prior-artifact-recheck.json",
+      "bytes": 4840,
+      "sha256": "849b4c26a4ab55e605b959508cb18ddb5a5334db16f3c558d8a3dcb30aa18c84"
+    },
+    "focused_download_root_receipt": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/referenced-roots-focused.json",
+      "bytes": 868,
+      "sha256": "08df46131b849f5da41a0c6d9b718ee6b00e115375b735caa802618e4a4c7142"
+    }
+  },
+  "queries": [
+    {
+      "provider": "web.run search_query",
+      "date_utc": "2026-10-19",
+      "queries": [
+        "\"10.1016/j.chemgeo.2010.07.010\" pdf",
+        "\"Biological nano-mineralization of Ce phosphate\" manuscript",
+        "\"Biological nano-mineralization\" site:kyushu-u.ac.jp",
+        "\"10.3390/min7050084\""
+      ],
+      "filters": "Exact query operators only; no additional recency/domain filter",
+      "coverage": "One returned result batch; no pagination; not exhaustive",
+      "raw_response": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/search130a.txt",
+        "bytes": 28075,
+        "sha256": "5456b2feb7f738e6d12c280a0a1bc3c1143a43bc9a5a3fb4d1b0c9eae02c3736"
+      }
+    },
+    {
+      "provider": "web.run search_query",
+      "date_utc": "2026-10-19",
+      "queries": [
+        "\"Biological nano-mineralization of Ce phosphate\" filetype:pdf -site:researchgate.net",
+        "\"Biological nano-mineralization\" site:catalog.lib.kyushu-u.ac.jp",
+        "\"Jiang\" \"Ce phosphate\" \"2010\" manuscript",
+        "\"10.1016/j.chemgeo.2010.07.010\" supplementary"
+      ],
+      "filters": "Exact query operators only; no additional recency/domain filter",
+      "coverage": "One returned result batch; no pagination; not exhaustive",
+      "raw_response": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/search130c.txt",
+        "bytes": 26206,
+        "sha256": "551757d4a3f4a046dbcdfc3b3fa589daa7ff8a3fe3b85195e3abf417400670f6"
+      }
+    },
+    {
+      "provider": "web.run search_query",
+      "date_utc": "2026-10-19",
+      "queries": [
+        "\"Jiang\" \"yeast\" \"cerium\" thesis",
+        "\"Jiang\" \"Ce phosphate\" \"pdf\" -site:researchgate.net -site:mdpi.com",
+        "\"Biological nano-mineralization\" site:repository.kulib.kyoto-u.ac.jp OR site:catalog.lib.kyushu-u.ac.jp OR site:ir.library.osaka-u.ac.jp",
+        "\"Jiang\" \"cerium\" \"Utsunomiya\" thesis"
+      ],
+      "filters": "Exact query operators only; no additional recency/domain filter",
+      "coverage": "One returned result batch; no pagination; not exhaustive",
+      "raw_response": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/search130d.txt",
+        "bytes": 27857,
+        "sha256": "b5181515231ef87db2831ff8e2b31a5e19740961796ec3af70a22dba9e9afab6"
+      }
+    },
+    {
+      "provider": "web.run search_query",
+      "date_utc": "2026-10-19",
+      "queries": [
+        "\"Jiang Mingyu\" \"Kyushu\" thesis 2012",
+        "\"Mingyu Jiang\" thesis biomineralization",
+        "\"Jiang\" \"Biomineralization\" site:catalog.lib.kyushu-u.ac.jp",
+        "\"姜\" \"明宇\" 九州 博士"
+      ],
+      "filters": "Exact query operators only; no additional recency/domain filter",
+      "coverage": "One returned result batch; no pagination; not exhaustive",
+      "raw_response": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/search130e.txt",
+        "bytes": 27454,
+        "sha256": "e8b858fb1b6408a3c7fb65b4408bf036c562c13e94b158f91e3b61338b535c24"
+      }
+    },
+    {
+      "provider": "web.run search_query",
+      "date_utc": "2026-10-19",
+      "queries": [
+        "\"Jiang\" \"rare earth\" \"thesis\" Kyushu",
+        "\"Mingyu\" site:catalog.lib.kyushu-u.ac.jp",
+        "\"蒋明宇\" 博士",
+        "\"2012\" \"Biomineralization\" \"Kyushu\" thesis"
+      ],
+      "filters": "Exact query operators only; no additional recency/domain filter",
+      "coverage": "One returned result batch; no pagination; not exhaustive",
+      "raw_response": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/search130f.txt",
+        "bytes": 25179,
+        "sha256": "c0ca0b770ebcf8118e36d9f0a24b0c3b466ee4d191cecb0097a3f4d8d8ed7006"
+      }
+    },
+    {
+      "provider": "web.run search_query",
+      "date_utc": "2026-10-19",
+      "queries": [
+        "\"10.1016/j.chemgeo.2010.07.010\" correction OR erratum OR retraction",
+        "\"Biological nano-mineralization of Ce phosphate\" correction OR retraction",
+        "\"10.3390/min7050084\" correction OR erratum OR retraction",
+        "\"Crystal Chemistry and Stability of Hydrated Rare-Earth Phosphates\" correction OR retraction"
+      ],
+      "filters": "Exact query operators only; no additional recency/domain filter",
+      "coverage": "One returned result batch; no pagination; not exhaustive",
+      "raw_response": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/search130notices.txt",
+        "bytes": 30644,
+        "sha256": "d9be40c3ad4387bdf2a4fa1088011a78c5d8198b7690fcbd01726891aea20c0c"
+      }
+    },
+    {
+      "provider": "web.run search_query",
+      "date_utc": "2026-10-19",
+      "queries": [
+        "\"Mingyu Jiang\" dissertation Kyushu phosphate",
+        "\"Mingyu Jiang\" \"thesis\" mineralization",
+        "\"Jiang\" \"希土類\" \"九州大学\""
+      ],
+      "filters": "Exact query operators only; no additional recency/domain filter",
+      "coverage": "One returned result batch; no pagination; not exhaustive",
+      "raw_response": {
+        "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/search130g.txt",
+        "bytes": 29296,
+        "sha256": "908fae956c5ef283ab257334c154f42984f014d72db556c54f8684bf275171ff"
+      }
+    }
+  ],
+  "query_count": 27,
+  "acquisitions": [
+    {
+      "name": "crossref2010.json",
+      "url": "https://api.crossref.org/works/10.1016%2Fj.chemgeo.2010.07.010",
+      "accessed_at": "2026-10-19T23:31:35.963252+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.1016%2Fj.chemgeo.2010.07.010",
+      "content_type": "application/json",
+      "bytes": 21168,
+      "sha256": "8fd3a78d6886913e9245ff4fb8ae90d86089634e1e4c9c92de4604403db8f31c",
+      "pdf_magic": false,
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/crossref2010.json"
+    },
+    {
+      "name": "crossref2017.json",
+      "url": "https://api.crossref.org/works/10.3390%2Fmin7050084",
+      "accessed_at": "2026-10-19T23:31:35.964145+00:00",
+      "status": 200,
+      "final_url": "https://api.crossref.org/works/10.3390%2Fmin7050084",
+      "content_type": "application/json",
+      "bytes": 24006,
+      "sha256": "fd24ae19c66e67d787b68f2b6ae4b8dfc4ce9e7dfb96fe0ab52ddf4095bc49bb",
+      "pdf_magic": false,
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/crossref2017.json"
+    },
+    {
+      "name": "openalex2010.json",
+      "url": "https://api.openalex.org/works/https://doi.org/10.1016/j.chemgeo.2010.07.010",
+      "accessed_at": "2026-10-19T23:31:35.964450+00:00",
+      "status": 200,
+      "final_url": "https://api.openalex.org/works/https://doi.org/10.1016/j.chemgeo.2010.07.010",
+      "content_type": "application/json",
+      "bytes": 22018,
+      "sha256": "b8e897790ac2bea4b5cef51ddb5ae863ccdcbcce0fc49ad7865a65f892c9924c",
+      "pdf_magic": false,
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/openalex2010.json"
+    },
+    {
+      "name": "ntu2010.html",
+      "url": "https://scholars.lib.ntu.edu.tw/entities/publication/50901efe-805b-4cdc-aa19-5c0efeef7b43",
+      "accessed_at": "2026-10-19T23:31:35.964686+00:00",
+      "status": 200,
+      "final_url": "https://scholars.lib.ntu.edu.tw/entities/publication/50901efe-805b-4cdc-aa19-5c0efeef7b43",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 546274,
+      "sha256": "f3d5caed0e26fbef19182f6b0183ffd84f292d08a08d82b642e2451817509929",
+      "pdf_magic": false,
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/ntu2010.html"
+    },
+    {
+      "name": "ochiai2017.pdf",
+      "url": "https://mdpi-res.com/d_attachment/minerals/minerals-07-00084/article_deploy/minerals-07-00084.pdf",
+      "accessed_at": "2026-10-19T23:31:36.330598+00:00",
+      "status": 200,
+      "final_url": "https://mdpi-res.com/d_attachment/minerals/minerals-07-00084/article_deploy/minerals-07-00084.pdf",
+      "content_type": "application/pdf",
+      "bytes": 19589960,
+      "sha256": "173638b4c824e568e00472270abd8090b7c232b89db16f876879e357acd1cf21",
+      "pdf_magic": true,
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/ochiai2017.pdf"
+    },
+    {
+      "name": "kyushu-lab.html",
+      "url": "https://chem.kyushu-univ.jp/ircl/utu-e/",
+      "accessed_at": "2026-10-19T23:31:36.366881+00:00",
+      "status": 404,
+      "final_url": "https://chem.kyushu-univ.jp/ircl/utu-e/",
+      "content_type": "text/html; charset=iso-8859-1",
+      "bytes": 236,
+      "sha256": "9448f8a1159c9b14e3e1b9d8eab1a6ddf88d26e1f888a34cef430c756e4e6e1e",
+      "pdf_magic": false,
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/kyushu-lab.html"
+    },
+    {
+      "name": "ntu-bundles.json",
+      "url": "https://scholars.lib.ntu.edu.tw/server/api/core/items/50901efe-805b-4cdc-aa19-5c0efeef7b43/bundles",
+      "accessed_at": "2026-10-19T23:32:04.890862+00:00",
+      "status": 200,
+      "final_url": "https://scholars.lib.ntu.edu.tw/server/api/core/items/50901efe-805b-4cdc-aa19-5c0efeef7b43/bundles",
+      "content_type": "application/hal+json;charset=UTF-8",
+      "bytes": 1335,
+      "sha256": "cc0a7d774162e26cbf4efea480bbc49100f781c860b67ba1b3a6a50fed3e8aa1",
+      "pdf_magic": false,
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/ntu-bundles.json"
+    },
+    {
+      "name": "ochiai2017-si-landing.html",
+      "url": "https://www.mdpi.com/2075-163X/7/5/84/s1",
+      "accessed_at": "2026-10-19T23:32:04.891426+00:00",
+      "status": 403,
+      "final_url": "https://www.mdpi.com/2075-163X/7/5/84/s1",
+      "content_type": "text/html",
+      "bytes": 405,
+      "sha256": "2324402863b202a58c6e1d9aeb8568c61f77778c78f8386cc722f58331510a83",
+      "pdf_magic": false,
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/ochiai2017-si-landing.html"
+    },
+    {
+      "name": "kyushu-cv.pdf",
+      "url": "https://chem.kyushu-univ.jp/ircl/utu-e/Utsunomiya%20CV%2026.pdf",
+      "accessed_at": "2026-10-19T23:32:04.891566+00:00",
+      "status": 404,
+      "final_url": "https://chem.kyushu-univ.jp/ircl/utu-e/Utsunomiya%20CV%2026.pdf",
+      "content_type": "text/html; charset=iso-8859-1",
+      "bytes": 236,
+      "sha256": "9448f8a1159c9b14e3e1b9d8eab1a6ddf88d26e1f888a34cef430c756e4e6e1e",
+      "pdf_magic": false,
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/kyushu-cv.pdf"
+    },
+    {
+      "name": "elsevier2010.txt",
+      "url": "https://api.elsevier.com/content/article/PII:S0009254110002603?httpAccept=text/plain",
+      "accessed_at": "2026-10-19T23:32:04.891657+00:00",
+      "status": 429,
+      "final_url": "https://api.elsevier.com/content/article/PII:S0009254110002603?httpAccept=text/plain",
+      "content_type": "application/xml",
+      "bytes": 269,
+      "sha256": "014f5627185fdf2f35989a519f597faf243a4c79ca0520e44ce092f9e6dcfdd7",
+      "pdf_magic": false,
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/elsevier2010.txt"
+    },
+    {
+      "name": "ochiai2017-si.pdf",
+      "url": "https://mdpi-res.com/d_attachment/minerals/minerals-07-00084/supplementary/minerals-07-00084-s001.pdf",
+      "accessed_at": "2026-10-19T23:32:47.466884+00:00",
+      "status": 404,
+      "final_url": "https://mdpi-res.com/d_attachment/minerals/minerals-07-00084/supplementary/minerals-07-00084-s001.pdf",
+      "content_type": "text/html",
+      "bytes": 146,
+      "sha256": "55f7d9e99b8e2d4e0e193b2f0275501e6d9c1ebd29cadbea6a0da48a8587e3e0",
+      "pdf_magic": false,
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/ochiai2017-si.pdf"
+    },
+    {
+      "name": "kyushu-catalog-mingyu.html",
+      "url": "https://catalog.lib.kyushu-u.ac.jp/opac_search/?lang=1&amode=2&appname=kyudai&kywd=Mingyu",
+      "accessed_at": "2026-10-19T23:32:47.467364+00:00",
+      "status": 200,
+      "final_url": "https://catalog.lib.kyushu-u.ac.jp/opac_search/?lang=1&amode=2&appname=kyudai&kywd=Mingyu",
+      "content_type": "text/html; charset=utf-8",
+      "bytes": 261497,
+      "sha256": "bbf91374ce8b36742a7310200bedbed8094ed97c7b30ac898ac3a7015c4750eb",
+      "pdf_magic": false,
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/kyushu-catalog-mingyu.html"
+    },
+    {
+      "name": "jiang-profile.html",
+      "url": "https://english.qdio.cas.cn/people2016/faculty_and_staff2016/201907/t20190719_213442.html",
+      "accessed_at": "2026-10-19T23:32:47.467599+00:00",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: self-signed certificate (_ssl.c:1082)>"
+    }
+  ],
+  "web_open_results": [
+    {
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S0009254110002603",
+      "result": "403; indexed result is partial article material, not acquired complete original"
+    },
+    {
+      "url": "https://www.mdpi.com/2075-163X/7/5/84",
+      "result": "429; complete PDF acquired through public publisher CDN"
+    },
+    {
+      "url": "https://catalog.lib.kyushu-u.ac.jp/opac_search/?lang=1&amode=2&appname=kyudai&kywd=Mingyu",
+      "result": "web tool inaccessible; direct public request succeeded, 13 unrelated results inspected"
+    },
+    {
+      "url": "https://english.qdio.cas.cn/people2016/faculty_and_staff2016/201907/t20190719_213442.html",
+      "result": "web open 502; direct request certificate verification failed; search-index profile is only a lead"
+    }
+  ],
+  "2017_inspection": {
+    "source": "https://doi.org/10.3390/min7050084",
+    "complete_pdf_acquired": true,
+    "pdf": {
+      "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/ochiai2017.pdf",
+      "bytes": 19589960,
+      "sha256": "173638b4c824e568e00472270abd8090b7c232b89db16f876879e357acd1cf21"
+    },
+    "same_sha256_as_prior": true,
+    "read_scope": "Title/abstract, Introduction, Methods sections 2.1-2.3, Discussion 4.1-4.3, Implications, references 20-21 and license; targeted phase-qualification assessment, not full review of all 2017 results",
+    "visually_inspected_pdf_pages": [
+      2,
+      14,
+      17
+    ],
+    "supplement_status": "Not acquired; article identifies Figures S1-S2; landing 403 and one guessed standard publisher CDN filename 404",
+    "source_role": "Primary abiotic experiment; retrospective interpretation of 2010 biological particles",
+    "critical_limit": "2017 measurements and beam effects on heavy-REE specimens cannot be attributed to 2010 yeast-associated Ce particles"
+  },
+  "2010_unavailable": [
+    "Complete original methods and figures/tables",
+    "Whether original supplementary files exist and their contents",
+    "Particle-resolved diffraction indexing, reference patterns and hydration",
+    "Actual strain, biomass state, viability, washing and phosphorus carryover",
+    "Matched abiotic, killed-cell, cell-free and phosphorus-release controls",
+    "Initial concentrations, complete timepoints, replication, analytical denominators and mass balances",
+    "Specimen preparation, drying, beam exposure and any beam-induced phase changes"
+  ],
+  "notices": {
+    "crossref_2010": {
+      "relation": {},
+      "update_to": null
+    },
+    "crossref_2017": {
+      "relation": {},
+      "update_to": null
+    },
+    "openalex_2010_is_retracted": false,
+    "query_batch": "search130notices",
+    "conclusion": "No formal notice identified in bounded checks; absence not proven. 2017 discussion is not a formal correction."
+  },
+  "rights": {
+    "jiang2010": "Full-text redistribution rights unknown; Crossref TDM link is not an open full-text redistribution license.",
+    "ochiai2017": "Publisher PDF page 21 and Crossref: CC BY 4.0",
+    "raw_storage": "Outside Git; no copyrighted full text committed"
+  },
+  "raw_manifest": {
+    "path": "/private/tmp/cmmmech-backlog-20261019-fmj36s/sources-130/raw-manifest.json",
+    "bytes": 7138,
+    "sha256": "975713bb0f2d7344a2a3431175660809caf541b296868281d0586465670b2d98"
+  },
+  "validation": "Paired JSON parse, artifact hashes, named-owner HEAD equality, local Markdown links and diff whitespace checked locally after writing. No record edits, canonical history, acceptance review or record-validation claim. Parent owns branch gates and publication decisions."
+}
