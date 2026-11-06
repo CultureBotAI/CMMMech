@@ -1,0 +1,211 @@
+schema_version: 1.0.0
+review_id: 20261106T171800Z-macraeite-round129-scientific-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Primary-source scientific review of macraeite (IMA:2023-065, status A, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10*4H2O)
+started_at: '2026-11-06T17:16:00Z'
+finished_at: '2026-11-06T17:18:00Z'
+reviewer:
+  identity: antigravity / round129-scientific-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md
+    verifying all scientific claims in data/records/macraeite.yaml (SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822)
+    and its CREATE history sidecar against all bounded passages and single-page PNG
+    table renders of Grey IE, Hochleitner R, Rewitzer C, Kampf AR, MacRae CM, Gable
+    RW, Mumme WG, Boer S, and Davidson AL (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10·4H2O,
+    a new monoclinic windhoekite-type mineral from the Hagendorf-Süd pegmatite, Bavaria,
+    Germany, Eur. J. Mineral. 36:267-278, pp. 267-278, Tables 1-6, Figures 1-9 (33
+    bounded passages <= 1,800 B across 12 full-PDF pages; 10 main-text pages / 26
+    passages, plus PNG renders of pages 3 and 7) and the September 2026 IMA-CNMNC
+    Master List (PDF p. 131).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: c1af9264c4cf1ca794f9514a9b4c453e87885466
+  state: working_tree
+  inputs:
+  - path: data/records/macraeite.yaml
+    sha256: 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822
+    role: target
+  - path: history/records/macraeite/2026-11-06T171120Z-antigravity-e5c8a1.yaml
+    sha256: e72352428ed8466bcbc739cc8f32fe85dbba4b7b66e43bebb90937006a941968
+    role: context
+  - path: research/sources/round129-minerals/20261106T171500Z-source-investigation.json
+    sha256: cd4fea2c3c4c3355fcb3edae487eae9c45c5fca9791090841f838a3ecad5228f
+    role: context
+  - path: research/sources/round129-minerals/20261106T171500Z-source-investigation.md
+    sha256: bb5df07275c47b31b77a9c7347484997b2ab0b6dcfbe85ed076a7a177e295c94
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:macraeite
+  path: data/records/macraeite.yaml
+  label: Macraeite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/macraeite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/macraeite/2026-11-06T171120Z-antigravity-e5c8a1.yaml
+    role: canonical_history
+scope:
+  description: 'Primary-source scientific review of data/records/macraeite.yaml
+    (SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822) and
+    its canonical CREATE history sidecar against all bounded primary-source passages
+    and rendered table PNGs from Grey IE, Hochleitner R, Rewitzer C, Kampf AR, MacRae
+    CM, Gable RW, Mumme WG, Boer S, and Davidson AL (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10·4H2O,
+    a new monoclinic windhoekite-type mineral from the Hagendorf-Süd pegmatite, Bavaria,
+    Germany, Eur. J. Mineral. 36:267-278, pp. 267-278, Tables 1-6, Figures 1-9 (33
+    bounded passages <= 1,800 B across 12 full-PDF pages; 10 main-text pages / 26
+    passages, plus PNG renders of pages 3 and 7) and the September 2026 IMA-CNMNC
+    Master List (PDF p. 131).'
+  selection: Round 129 newly admitted mineral record macraeite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:macraeite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/macraeite.yaml
+  locator: Working-tree record data/records/macraeite.yaml
+  accessed_at: '2026-11-06T17:17:00Z'
+  support: supports
+  summary: Working-tree record data/records/macraeite.yaml captures IMA:2023-065 identity
+    (symbol Mac), Hagendorf-Süd pegmatite (Bavaria, Germany) and Monte Rubio quarry
+    (Portugal) type localities, holotype M56293 and cotype M56294 (Museums Victoria),
+    Table 1 (p. 269) EPMA chemistry (12 points, empirical formula K0.92Mn1.56Mg0.33Zn0.08Ca0.02Fe3+1.91Al0.11Ti0.90(PO4)4.00F0.45(OH)0.35O1.03(H2O)14.66,
+    total 100.01 wt%), monoclinic P21/c (#14) synchrotron structure (Table 3; a =
+    10.541(1) A, b = 20.545(1) A, c = 12.404(1) A, beta = 90.09(1) deg, V = 2686.3(3)
+    A3, Z = 4, R1 = 0.0725, wR2 = 0.2116), primary-source discrepancies (Dcalc 2.38
+    / 2.39 vs 2.426 g/cm3; Table 1 analytical total 100.38 vs 100.37 wt% before -O=F),
+    and 0 mechanisms (SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822).
+  snapshot_sha256: 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822
+- evidence_id: ima_authority
+  kind: authority
+  reference: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+  locator: IMA-CNMNC September 2026 Master List, PDF p. 131
+  accessed_at: '2026-11-06T17:17:00Z'
+  support: supports
+  summary: Confirms Macraeite, status A, IMA:2023-065, symbol Mac, ideal formula [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10·4H2O,
+    and single primary reference in European Journal of Mineralogy 36 (2024), 267.
+  snapshot_sha256: 2257c653491b346669ee5d38c98226a2bddbec0562a3675043730a01ca146973
+- evidence_id: grey_2024_macraeite_primary
+  kind: primary_source
+  reference: https://doi.org/10.5194/ejm-36-267-2024
+  locator: 'Grey IE, Hochleitner R, Rewitzer C, Kampf AR, MacRae CM, Gable RW, Mumme
+    WG, Boer S, and Davidson AL (2024) Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10·4H2O,
+    a new monoclinic windhoekite-type mineral from the Hagendorf-Süd pegmatite, Bavaria,
+    Germany, Eur. J. Mineral. 36:267-278, pp. 267-278, Tables 1-6, Figures 1-9 (33
+    bounded passages <= 1,800 B across 12 full-PDF pages; 10 main-text pages / 26
+    passages, plus PNG renders of pages 3 and 7)'
+  accessed_at: '2026-11-06T17:17:00Z'
+  support: supports
+  summary: 'All bounded passages (<= 1,800 B) and single-page 150-DPI PNG table renders
+    inspected from Grey et al. (2024), Eur. J. Mineral. 36:267-278 (33 bounded passages
+    across 12 full-PDF pages; 10 main-text pages / 26 passages, plus PNG renders of
+    pages 3 and 7), confirming verbatim title, type localities, type specimen repositories,
+    chemical composition, unit-cell parameters, structure refinement, and documented
+    internal source discrepancies.'
+  snapshot_sha256: 6e0abe558c782b2619a2fe0d50e1ff14e863f57ff98a751e2ec78cdc3b3920de
+- evidence_id: create_history
+  kind: record_content
+  reference: history/records/macraeite/2026-11-06T171120Z-antigravity-e5c8a1.yaml
+  locator: Canonical CREATE history sidecar history/records/macraeite/2026-11-06T171120Z-antigravity-e5c8a1.yaml
+  accessed_at: '2026-11-06T17:17:00Z'
+  support: supports
+  summary: Canonical CREATE history sidecar (SHA-256 e72352428ed8466bcbc739cc8f32fe85dbba4b7b66e43bebb90937006a941968)
+    matches record curation_history[0].timestamp and top-level record sections.
+  snapshot_sha256: e72352428ed8466bcbc739cc8f32fe85dbba4b7b66e43bebb90937006a941968
+- evidence_id: validation
+  kind: validation
+  reference: data/records/macraeite.yaml
+  locator: Real CLI validation via .venv/bin/cmmmech validate --require-records and
+    .venv/bin/cmmmech validate-history --base main
+  accessed_at: '2026-11-06T17:17:30Z'
+  support: supports
+  summary: Checked 698 record(s); 0 failed. Checked 1419 history record(s); 0 error(s).
+  snapshot_sha256: 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: .venv/bin/cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 698 record(s); 0 failed.
+  target_ids:
+  - cmmmech:macraeite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: .venv/bin/cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1419 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:macraeite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: identity_and_primary_source_verification
+  area: evidence
+  topic: Verification of IMA:2023-065 identity, Hagendorf-Süd (Germany) and Monte
+    Rubio (Portugal) type localities, EPMA chemistry, monoclinic P21/c structure,
+    and internal source discrepancies for macraeite
+  outcome: supported
+  summary: 'All numeric, crystallographic, optical, spectroscopic, and chemical claims
+    in data/records/macraeite.yaml (SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822)
+    match the bounded primary-source passages and rendered table PNGs of Grey et al.
+    (2024) Eur. J. Mineral. 36:267-278 and the September 2026 IMA Master List (p.
+    131).'
+  target_ids:
+  - cmmmech:macraeite
+  evidence_ids:
+  - owner
+  - ima_authority
+  - grey_2024_macraeite_primary
+- assessment_id: mechanism_absence_and_provenance_verification
+  area: provenance
+  topic: Verification of 0 mechanisms (abiotic occurrence only) and append-only CREATE
+    provenance
+  outcome: supported
+  summary: data/records/macraeite.yaml accurately omits mechanisms (0 mechanisms)
+    and explicitly discloses that no biological or microbial interaction data are
+    reported in the type mineralogical description. Append-only CREATE history sidecar
+    passes validation with 0 errors.
+  target_ids:
+  - cmmmech:macraeite
+  evidence_ids:
+  - owner
+  - grey_2024_macraeite_primary
+  - create_history
+  - validation
+findings: []
+actions: []
+summary: 'Macraeite (IMA:2023-065, status A, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10*4H2O)
+  passes primary-source scientific review (scientific_review: true) at SHA-256 1d06cfe408539e3b3eabb7611c0145110428d6706b4fec4b7942519b2f7ca822
+  against all bounded passages and rendered table PNGs of Grey IE, Hochleitner R,
+  Rewitzer C, Kampf AR, MacRae CM, Gable RW, Mumme WG, Boer S, and Davidson AL (2024)
+  Macraeite, [(H2O)K]Mn2(Fe2Ti)(PO4)4[O(OH)](H2O)10·4H2O, a new monoclinic windhoekite-type
+  mineral from the Hagendorf-Süd pegmatite, Bavaria, Germany, Eur. J. Mineral. 36:267-278,
+  pp. 267-278, Tables 1-6, Figures 1-9 (33 bounded passages <= 1,800 B across 12 full-PDF
+  pages; 10 main-text pages / 26 passages, plus PNG renders of pages 3 and 7).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against
+  working-tree bytes; an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed under the Round 129 bounded source-text workflow (scripts/index_bounded_pdf_passages.py,
+  max 1,800 bytes per passage) plus single-page 150-DPI PNG table renders.
+related_reviews: []
