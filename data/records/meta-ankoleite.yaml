@@ -185,7 +185,7 @@ mechanisms:
 causal_graphs:
   - id: yeast_uranyl_phosphate_precipitation_graph
     name: Kluyveromyces lactis IFO1267 glycerol 2-phosphate hydrolysis and mixed uranyl-phosphate precipitation with meta-ankoleite XRD assignment
-    description: Causal pathway linking Kluyveromyces lactis NRRL Y-1140 (= IFO 1267 / NBRC 1267) acid, alkaline, and inorganic diphosphate phosphatases (PHO5 UniProtKB:P52289, KLLA0B14839g UniProtKB:P08540, KLLA0_E12827g UniProtKB:Q6CNG1, IPP1 UniProtKB:P13998) to hydrolysis of 30 mM glycerol 2-phosphate and orthophosphate generation during 120-h growth of K. lactis IFO1267 with 1 mM UO2(NO3)2 in modified Burkholder's medium (30 C, 180 rpm, darkness; endpoint pH 5.5 vs 7.0 uninoculated control in Table 3) and cell-associated precipitation of mixed uranyl-phosphate solids assigned by XRD to meta-ankoleite alongside chernikovite, bassetite, and uramphite (Liang, Csetenyi & Gadd, 2016, Figure 3b and Table 5).
+    description: Causal pathway linking Kluyveromyces lactis NRRL Y-1140 (= IFO 1267 / NBRC 1267) acid and alkaline phosphomonoesterases (PHO5 UniProtKB:P52289, KLLA0B14839g UniProtKB:P08540, KLLA0_E12827g UniProtKB:Q6CNG1, hydrolyzing organic phosphate monoesters) and cytoplasmic inorganic pyrophosphatase (IPP1 UniProtKB:P13998, hydrolyzing inorganic diphosphate to orthophosphate in cellular phosphate metabolism) to hydrolysis of 30 mM glycerol 2-phosphate and orthophosphate generation during 120-h growth of K. lactis IFO1267 with 1 mM UO2(NO3)2 in modified Burkholder's medium (30 C, 180 rpm, darkness; endpoint pH 5.5 vs 7.0 uninoculated control in Table 3) and cell-associated precipitation of mixed uranyl-phosphate solids assigned by XRD to meta-ankoleite alongside chernikovite, bassetite, and uramphite (Liang, Csetenyi & Gadd, 2016, Figure 3b and Table 5).
     scope: REPRESENTATIVE_EXAMPLE
     mechanism_ref: yeast_uranyl_phosphate_precipitation
     nodes:
@@ -344,12 +344,12 @@ causal_graphs:
       - source: kluyveromyces_lactis_phosphatases
         target: hydrolyzed_orthophosphate_from_g2p
         predicate: catalyzes
-        relationship: hydrolysis of 30 mM glycerol 2-phosphate to inorganic orthophosphate during 120-h growth at 30 C
-        description: Kluyveromyces lactis phosphatases hydrolyze 30 mM glycerol 2-phosphate (sole phosphorus source in modified Burkholder's medium) to release free inorganic orthophosphate as culture pH drops to 5.5.
+        relationship: phosphomonoesterase hydrolysis of 30 mM glycerol 2-phosphate and diphosphatase orthophosphate turnover during 120-h growth at 30 C
+        description: Kluyveromyces lactis acid and alkaline phosphomonoesterases (PHO5, KLLA0B14839g, KLLA0_E12827g) hydrolyze 30 mM glycerol 2-phosphate (sole supplied phosphorus source in modified Burkholder's medium) while cytoplasmic inorganic pyrophosphatase (IPP1) hydrolyzes inorganic diphosphate to orthophosphate in cellular phosphate metabolism, releasing free inorganic orthophosphate as culture pH drops to 5.5.
         evidence:
           - source_ref: liang2016
             supports: partial
-            explanation: Liang, Csetenyi & Gadd (2016) report phosphate release and culture acidification to pH 5.5 (Table 3) during 120-h K. lactis IFO1267 growth on 30 mM G2P + 1 mM UO2(NO3)2; support is partial because phosphatase activity was inferred without enzyme-inhibitor, purified-enzyme, or gene-knockout tests.
+            explanation: Liang, Csetenyi & Gadd (2016) report orthophosphate release and culture acidification to pH 5.5 (Table 3) during 120-h K. lactis IFO1267 growth on 30 mM G2P + 1 mM UO2(NO3)2; support is partial because phosphatase and pyrophosphatase (IPP1) activities were inferred without enzyme-inhibitor, purified-enzyme, or gene-knockout tests.
       - source: hydrolyzed_orthophosphate_from_g2p
         target: yeast_associated_mixed_uranyl_phosphate_precipitate
         predicate: drives
@@ -381,7 +381,12 @@ curation_history:
     curator: marcin
     action: edit
     summary: Add Kluyveromyces lactis Swiss-Prot Inorganic pyrophosphatase (IPP1, UniProtKB:P13998) to meta-ankoleite.yaml
+  - timestamp: '2026-11-09T19:15:45Z'
+    curator: marcin
+    action: edit
+    summary: Distinguish G2P phosphomonoesterases from IPP1 inorganic pyrophosphatase in meta-ankoleite.yaml causal graph (#977)
 history_refs:
   - history/records/meta-ankoleite/2026-10-14T215054Z-codex-feca24.yaml
   - history/records/meta-ankoleite/2026-11-09T162856Z-marcin-7461bc.yaml
   - history/records/meta-ankoleite/2026-11-09T183630Z-marcin-67dc79.yaml
+  - history/records/meta-ankoleite/2026-11-09T191545Z-marcin-b30911.yaml

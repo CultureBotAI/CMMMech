@@ -392,11 +392,11 @@ causal_graphs:
         target: c7_12_urea_hydrolysis_alkalinity
         predicate: catalyzes
         relationship: urea hydrolysis and culture pH elevation over 48 h at 30 C
-        description: Urease activity in strain C7-12 hydrolyzes supplied urea (20-30 g/L in LB broth), consuming urea and elevating culture pH.
+        description: Urease complex (UreABC activated by nickel-incorporation accessory GTPase UreG) in strain C7-12 hydrolyzes supplied urea (20-30 g/L in LB broth), consuming urea and elevating culture pH.
         evidence:
           - source_ref: yang2026
             supports: partial
-            explanation: Sections 3.1-3.3 and Figures 2-5 of Yang et al. (2026) track urea consumption and pH changes in C7-12 cultures across 0-30 g/L urea doses; support is partial because no 16S/genome accession was deposited and ureABC genes or urease-inhibitor controls were not tested.
+            explanation: Sections 3.1-3.3 and Figures 2-5 of Yang et al. (2026) track urea consumption and pH changes in C7-12 cultures across 0-30 g/L urea doses; support is partial because no 16S/genome accession was deposited and ureABC/ureG genes or urease-inhibitor controls were not tested.
       - source: c7_12_urea_hydrolysis_alkalinity
         target: cell_associated_tentative_otavite_particles
         predicate: drives
@@ -428,7 +428,12 @@ curation_history:
     curator: marcin
     action: edit
     summary: Add Serratia ureilytica UreG accessory metallochaperone (UniProtKB:A0ABU0VEJ2) to otavite.yaml
+  - timestamp: '2026-11-09T19:15:45Z'
+    curator: marcin
+    action: edit
+    summary: Align causal edge with Serratia UreABC-UreG complex in otavite.yaml (#977)
 history_refs:
   - history/records/otavite/2026-10-14T204913Z-codex-40f49f.yaml
   - history/records/otavite/2026-11-09T161813Z-marcin-74abd9.yaml
   - history/records/otavite/2026-11-09T183630Z-marcin-63efad.yaml
+  - history/records/otavite/2026-11-09T191545Z-marcin-e68ddd.yaml

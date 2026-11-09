@@ -75,7 +75,7 @@ mechanisms:
         evidence:
           - source_ref: kang2016
             supports: partial
-            explanation: Kang et al. (2016) isolated urease-producing Sporosarcina soli B-22 on BPU agar (20 g/L urea; Figures 1-3) and assigned a minor azurite feature alongside malachite, calcite, and copper carbonate in the Figure 7 XRD pattern of BPU-grown B-22 precipitate; individual ureC/ureB/ureA genes were not sequenced, mutated, or inhibited, and no matched-pH abiotic or killed-cell azurite control was reported.
+            explanation: Kang et al. (2016) isolated urease-producing Sporosarcina soli B-22 on BPU agar (20 g/L urea; Figures 1-3) and assigned a minor azurite feature alongside malachite, calcite, and copper carbonate in the Figure 7 XRD pattern of BPU-grown B-22 precipitate; individual ureC/ureB/ureA/ureG genes were not sequenced, mutated, or inhibited, and no matched-pH abiotic or killed-cell azurite control was reported.
           - source_ref: uniprot_sporosarcina_soli_ureabc
             supports: partial
             explanation: UniProtKB:A0ABW0TKM3 (A0ABW0TKM3_9BACL) in Sporosarcina soli reference proteome UP001596109 (NCBITaxon:334736) encodes Urease subunit alpha (ureC; EC 3.5.1.5).
@@ -256,7 +256,7 @@ causal_graphs:
             evidence:
               - source_ref: kang2016
                 supports: partial
-                explanation: Kang et al. (2016) isolated urease-producing Sporosarcina soli B-22 on BPU agar (20 g/L urea; Figures 1-3) and assigned a minor azurite feature alongside malachite, calcite, and copper carbonate in the Figure 7 XRD pattern of BPU-grown B-22 precipitate; individual ureC/ureB/ureA genes were not sequenced, mutated, or inhibited, and no matched-pH abiotic or killed-cell azurite control was reported.
+                explanation: Kang et al. (2016) isolated urease-producing Sporosarcina soli B-22 on BPU agar (20 g/L urea; Figures 1-3) and assigned a minor azurite feature alongside malachite, calcite, and copper carbonate in the Figure 7 XRD pattern of BPU-grown B-22 precipitate; individual ureC/ureB/ureA/ureG genes were not sequenced, mutated, or inhibited, and no matched-pH abiotic or killed-cell azurite control was reported.
               - source_ref: uniprot_sporosarcina_soli_ureabc
                 supports: partial
                 explanation: UniProtKB:A0ABW0TKM3 (A0ABW0TKM3_9BACL) in Sporosarcina soli reference proteome UP001596109 (NCBITaxon:334736) encodes Urease subunit alpha (ureC; EC 3.5.1.5).
@@ -390,11 +390,11 @@ causal_graphs:
         target: bpu_ya_ureolytic_carbonate_alkalinity
         predicate: catalyzes
         relationship: urea hydrolysis to ammonium and carbonate with culture pH increase
-        description: Sporosarcina soli B-22 urease activity hydrolyzes supplied urea in BPU/YA media, increasing solution pH and carbonate/hydroxide alkalinity.
+        description: Urease complex (UreABC activated by nickel-incorporation accessory GTPase UreG) in Sporosarcina soli B-22 hydrolyzes supplied urea in BPU/YA media, generating carbonate alkalinity and elevating culture pH.
         evidence:
           - source_ref: kang2016
             supports: partial
-            explanation: Figures 1-3 and Figure 8 of Kang et al. (2016) document urease activity, copper tolerance, and culture pH rise for isolate B-22; support is partial because individual ureABC genes were not directly assayed or mutated and the KJ485701.1 sequence is labelled B7-22 rather than B-22.
+            explanation: Figures 1-3 and 8 of Kang et al. (2016) report urease activity and culture pH elevation for Sporosarcina soli B-22; support is partial because individual ureABC/ureG genes were not directly assayed or mutated and Figure 7 (BPU) and Figure 8 (YA) use different media and protocols.
       - source: bpu_ya_ureolytic_carbonate_alkalinity
         target: mixed_carbonate_precipitate_with_minor_azurite
         predicate: drives
@@ -430,8 +430,13 @@ curation_history:
     curator: marcin
     action: edit
     summary: Add Sporosarcina soli UreG accessory metallochaperone (UniProtKB:A0ABW0TNU4) to azurite.yaml
+  - timestamp: '2026-11-09T19:15:45Z'
+    curator: marcin
+    action: edit
+    summary: Align ureC evidence and causal edge with UreABC-UreG complex in azurite.yaml (#977)
 history_refs:
   - history/records/azurite/2026-10-15T012057Z-codex-d55d50.yaml
   - history/records/azurite/2026-10-22T132123Z-claude-d10b5a.yaml
   - history/records/azurite/2026-11-09T161812Z-marcin-c02523.yaml
   - history/records/azurite/2026-11-09T183630Z-marcin-220682.yaml
+  - history/records/azurite/2026-11-09T191545Z-marcin-55bb22.yaml

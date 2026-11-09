@@ -403,11 +403,11 @@ causal_graphs:
         target: tk2d_ammonium_and_carbonate_alkalinity
         predicate: catalyzes
         relationship: urea hydrolysis and NH4+ accumulation in 20 g/L urea saline medium
-        description: Urease activity in Bacillus sp. TK2d hydrolyzes 20 g/L urea in 10% marine broth 2216 (3% NaCl), accumulating dissolved ammonium and carbonate.
+        description: Urease complex (UreABC activated by nickel-incorporation accessory GTPase UreG) in Bacillus sp. TK2d hydrolyzes 20 g/L urea in 10% marine broth 2216 (3% NaCl), accumulating dissolved ammonium and carbonate.
         evidence:
           - source_ref: horiike_2017
             supports: partial
-            explanation: Figures 1-2 of Horiike et al. (2017) show ammonium accumulation accompanying soluble Sr and Ca depletion in TK2d cultures; support is partial because no ureABC knockout or urease-inhibitor control was performed and other urease-positive isolates failed to remove Sr effectively.
+            explanation: Figures 1-2 of Horiike et al. (2017) show ammonium accumulation accompanying soluble Sr and Ca depletion in TK2d cultures; support is partial because no ureABC/ureG knockout or urease-inhibitor control was performed and other urease-positive isolates failed to remove Sr effectively.
       - source: tk2d_ammonium_and_carbonate_alkalinity
         target: biogenic_sr_ca_carbonate_precipitate
         predicate: drives
@@ -443,8 +443,13 @@ curation_history:
     curator: marcin
     action: edit
     summary: Add reviewed Swiss-Prot Bacillus UreG accessory metallochaperone (UniProtKB:Q07403) to strontium.yaml
+  - timestamp: '2026-11-09T19:15:45Z'
+    curator: marcin
+    action: edit
+    summary: Align causal edge with Bacillus UreABC-UreG complex in strontium.yaml (#977)
 history_refs:
   - history/records/strontium/2026-10-11T065059Z-codex-390f8d.yaml
   - history/records/strontium/2026-10-30T103605Z-claude-d72ab5.yaml
   - history/records/strontium/2026-11-09T161813Z-marcin-f7c945.yaml
   - history/records/strontium/2026-11-09T183630Z-marcin-82b301.yaml
+  - history/records/strontium/2026-11-09T191545Z-marcin-0a3699.yaml

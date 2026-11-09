@@ -91,7 +91,7 @@ mechanisms:
         evidence:
           - source_ref: bian2024
             supports: partial
-            explanation: Bian et al. (2024) measured urease activity in Lysinibacillus sp. DW018 (Table 2) and assigned calcite XRD peaks after 2 h in a 25 mM CaCl2 + 2% urea + 400 uM Tb(III) assay (Figure 7); support is partial because rapid 10-min Tb depletion (98.28%) preceded resolved calcite XRD peaks and also occurred without added Ca, and ureABC genes were not mutated.
+            explanation: Bian et al. (2024) measured urease activity in Lysinibacillus sp. DW018 (Table 2) and assigned calcite XRD peaks after 2 h in a 25 mM CaCl2 + 2% urea + 400 uM Tb(III) assay (Figure 7); support is partial because rapid 10-min Tb depletion (98.28%) preceded resolved calcite XRD peaks and also occurred without added Ca, and ureABC/ureG genes were not mutated.
           - source_ref: uniprot_lysinibacillus_ureabc
             supports: partial
             explanation: UniProtKB:A0ACG7VEY6 (A0ACG7VEY6_9BACI) in Lysinibacillus fusiformis reference proteome UP000318769 (NCBITaxon:28031) provides a congeneric reference-proteome representative for Urease subunit alpha (ureC; EC 3.5.1.5) in genus Lysinibacillus (NCBITaxon:400634).
@@ -498,7 +498,7 @@ causal_graphs:
             evidence:
               - source_ref: bian2024
                 supports: partial
-                explanation: Bian et al. (2024) measured urease activity in Lysinibacillus sp. DW018 (Table 2) and assigned calcite XRD peaks after 2 h in a 25 mM CaCl2 + 2% urea + 400 uM Tb(III) assay (Figure 7); support is partial because rapid 10-min Tb depletion (98.28%) preceded resolved calcite XRD peaks and also occurred without added Ca, and ureABC genes were not mutated.
+                explanation: Bian et al. (2024) measured urease activity in Lysinibacillus sp. DW018 (Table 2) and assigned calcite XRD peaks after 2 h in a 25 mM CaCl2 + 2% urea + 400 uM Tb(III) assay (Figure 7); support is partial because rapid 10-min Tb depletion (98.28%) preceded resolved calcite XRD peaks and also occurred without added Ca, and ureABC/ureG genes were not mutated.
               - source_ref: uniprot_lysinibacillus_ureabc
                 supports: partial
                 explanation: UniProtKB:A0ACG7VEY6 (A0ACG7VEY6_9BACI) in Lysinibacillus fusiformis reference proteome UP000318769 (NCBITaxon:28031) provides a congeneric reference-proteome representative for Urease subunit alpha (ureC; EC 3.5.1.5) in genus Lysinibacillus (NCBITaxon:400634).
@@ -632,11 +632,11 @@ causal_graphs:
         target: dw018_urea_hydrolysis_alkalinity
         predicate: catalyzes
         relationship: hydrolysis of 2% urea by washed DW018 biomass at 37 C
-        description: Urease activity in washed Lysinibacillus sp. DW018 biomass hydrolyzes supplied 2% urea to ammonium and carbonate ions.
+        description: Urease complex (UreABC activated by nickel-incorporation accessory GTPase UreG) in washed Lysinibacillus sp. DW018 biomass hydrolyzes supplied 2% urea to ammonium and carbonate ions.
         evidence:
           - source_ref: bian2024
             supports: partial
-            explanation: Table 2 of Bian et al. (2024) measures urease activity in Lysinibacillus sp. DW018 across heat-pretreatment temperatures; support is partial because individual ureABC genes were not sequenced or mutated and heat-pretreatment Table 1-2 assays do not match the simultaneous hot-reaction conditions in Figure 3.
+            explanation: Table 2 of Bian et al. (2024) measures urease activity in Lysinibacillus sp. DW018 across heat-pretreatment temperatures; support is partial because individual ureABC/ureG genes were not sequenced or mutated and heat-pretreatment Table 1-2 assays do not match the simultaneous hot-reaction conditions in Figure 3.
       - source: dw018_urea_hydrolysis_alkalinity
         target: dw018_2h_calcite_bearing_precipitate
         predicate: drives
@@ -680,6 +680,10 @@ curation_history:
     curator: marcin
     action: edit
     summary: Add Lysinibacillus UreG accessory metallochaperone (UniProtKB:A0ACG7VDN2) to dw018_calcite_in_terbium_assay in calcite.yaml
+  - timestamp: '2026-11-09T19:15:45Z'
+    curator: marcin
+    action: edit
+    summary: Align ureC evidence and DW018 causal edge with UreABC-UreG complex in calcite.yaml (#977)
 history_refs:
   - history/records/calcite/2026-10-14T121905Z-codex-bcd6cf.yaml
   - history/records/calcite/2026-10-18T042750Z-antigravity-adc287.yaml
@@ -687,3 +691,4 @@ history_refs:
   - history/records/calcite/2026-11-06T145838Z-marcin-f0ecb2.yaml
   - history/records/calcite/2026-11-09T161813Z-marcin-9b2ff3.yaml
   - history/records/calcite/2026-11-09T183630Z-marcin-0e4ec3.yaml
+  - history/records/calcite/2026-11-09T191545Z-marcin-fd3845.yaml

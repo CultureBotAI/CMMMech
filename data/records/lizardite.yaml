@@ -511,12 +511,12 @@ causal_graphs:
         target: c4_10_lizardite_medium_acidification_and_biofilm
         predicate: produces
         relationship: acidogenic metabolism and culture acidification during C4-10 growth in glucose-containing MgSO4-free BHm
-        description: Representative acid-metabolism enzymes (citA, pckA, glcB, acsA_2) in Priestia aryabhattai C4-10 support organic-acid production and culture acidification relative to uninoculated controls during incubation in glucose-containing MgSO4-free BHm.
+        description: Representative acid-metabolism enzymes (citA, pckA, glcB, acsA_2) and co-localized TCA-cycle malate dehydrogenase (mdh / HNP21_003257) in Priestia aryabhattai C4-10 support organic-acid production and culture acidification relative to uninoculated controls during incubation in glucose-containing MgSO4-free BHm.
         evidence:
           - source_ref: sheng_2026
             supports: partial
-            explanation: Figure 2B and Table 1 of Sheng et al. (2026) document culture acidification in C4-10 lizardite flasks and acid-metabolism gene upregulation in the separate 8-h biotite transcriptome arm; support is partial because the transcriptome was measured on biotite (0.5 mL inoculum) rather than lizardite (1.5 mL inoculum) and no gene-knockout tests were performed. While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to 43.8-fold at 8 h with vs without lizardite
-              in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at R^2 = 0.807-0.978, P = 0.001-0.038 in Fig. 7 and Fig. S7A).
+            explanation: Figure 2B and Table 1 of Sheng et al. (2026) document culture acidification in C4-10 lizardite flasks and acid-metabolism gene upregulation (citA, pckA, glcB, acsA_2) in the separate 8-h biotite transcriptome arm; support is partial because the transcriptome was measured on biotite (0.5 mL inoculum) rather than lizardite (1.5 mL inoculum), mdh (HNP21_003257) is included as a co-localized TCA-cycle malate dehydrogenase in the HNP21_003255-HNP21_003257 locus rather than a Table 1 DEG or RT-qPCR target, and no gene-knockout tests were performed. While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and
+              glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to 43.8-fold at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at R^2 = 0.807-0.978, P = 0.001-0.038 in Fig. 7 and Fig. S7A).
       - source: c4_10_lizardite_medium_acidification_and_biofilm
         target: lizardite_feed_75_150_um
         predicate: solubilizes
@@ -552,8 +552,13 @@ curation_history:
     curator: marcin
     action: edit
     summary: Add Priestia aryabhattai Malate dehydrogenase (mdh, UniProtKB:A0A0J6SZC4) to lizardite.yaml
+  - timestamp: '2026-11-09T19:15:45Z'
+    curator: marcin
+    action: edit
+    summary: Align causal edge description and evidence explanation with mdh (HNP21_003257) in lizardite.yaml (#977)
 history_refs:
   - history/records/lizardite/2026-10-11T102453Z-codex-c8e63a.yaml
   - history/records/lizardite/2026-11-09T162856Z-marcin-ac480e.yaml
   - history/records/lizardite/2026-11-09T172114Z-marcin-decca2.yaml
   - history/records/lizardite/2026-11-09T183630Z-marcin-24576d.yaml
+  - history/records/lizardite/2026-11-09T191545Z-marcin-6fac51.yaml

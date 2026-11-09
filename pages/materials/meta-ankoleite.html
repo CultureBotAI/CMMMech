@@ -238,7 +238,7 @@
         <a href="#mechanism-yeast_uranyl_phosphate_precipitation" class="badge" style="text-decoration: none;">Mechanism: <code>yeast_uranyl_phosphate_precipitation</code></a>
       </div>
     </div>
-    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking Kluyveromyces lactis NRRL Y-1140 (= IFO 1267 / NBRC 1267) acid, alkaline, and inorganic diphosphate phosphatases (PHO5 UniProtKB:P52289, KLLA0B14839g UniProtKB:P08540, KLLA0_E12827g UniProtKB:Q6CNG1, IPP1 UniProtKB:P13998) to hydrolysis of 30 mM glycerol 2-phosphate and orthophosphate generation during 120-h growth of K. lactis IFO1267 with 1 mM UO2(NO3)2 in modified Burkholder&#39;s medium (30 C, 180 rpm, darkness; endpoint pH 5.5 vs 7.0 uninoculated control in Table 3) and cell-associated precipitation of mixed uranyl-phosphate solids assigned by XRD to meta-ankoleite alongside chernikovite, bassetite, and uramphite (Liang, Csetenyi &amp; Gadd, 2016, Figure 3b and Table 5).</p>
+    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking Kluyveromyces lactis NRRL Y-1140 (= IFO 1267 / NBRC 1267) acid and alkaline phosphomonoesterases (PHO5 UniProtKB:P52289, KLLA0B14839g UniProtKB:P08540, KLLA0_E12827g UniProtKB:Q6CNG1, hydrolyzing organic phosphate monoesters) and cytoplasmic inorganic pyrophosphatase (IPP1 UniProtKB:P13998, hydrolyzing inorganic diphosphate to orthophosphate in cellular phosphate metabolism) to hydrolysis of 30 mM glycerol 2-phosphate and orthophosphate generation during 120-h growth of K. lactis IFO1267 with 1 mM UO2(NO3)2 in modified Burkholder&#39;s medium (30 C, 180 rpm, darkness; endpoint pH 5.5 vs 7.0 uninoculated control in Table 3) and cell-associated precipitation of mixed uranyl-phosphate solids assigned by XRD to meta-ankoleite alongside chernikovite, bassetite, and uramphite (Liang, Csetenyi &amp; Gadd, 2016, Figure 3b and Table 5).</p>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (4):</strong>
     <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
@@ -334,8 +334,8 @@
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Edges (3):</strong>
     <ul style="margin: .4rem 0 0; padding-left: 1.2rem; font-size: .88rem;">
       <li style="margin-bottom: .35rem;">
-        <code>kluyveromyces_lactis_phosphatases</code> &rarr; <strong>hydrolysis of 30 mM glycerol 2-phosphate to inorganic orthophosphate during 120-h growth at 30 C</strong> (<code>catalyzes</code>) &rarr; <code>hydrolyzed_orthophosphate_from_g2p</code>
-: Kluyveromyces lactis phosphatases hydrolyze 30 mM glycerol 2-phosphate (sole phosphorus source in modified Burkholder&#39;s medium) to release free inorganic orthophosphate as culture pH drops to 5.5.[<a href="#source-liang2016"><code>liang2016</code></a>]      </li>
+        <code>kluyveromyces_lactis_phosphatases</code> &rarr; <strong>phosphomonoesterase hydrolysis of 30 mM glycerol 2-phosphate and diphosphatase orthophosphate turnover during 120-h growth at 30 C</strong> (<code>catalyzes</code>) &rarr; <code>hydrolyzed_orthophosphate_from_g2p</code>
+: Kluyveromyces lactis acid and alkaline phosphomonoesterases (PHO5, KLLA0B14839g, KLLA0_E12827g) hydrolyze 30 mM glycerol 2-phosphate (sole supplied phosphorus source in modified Burkholder&#39;s medium) while cytoplasmic inorganic pyrophosphatase (IPP1) hydrolyzes inorganic diphosphate to orthophosphate in cellular phosphate metabolism, releasing free inorganic orthophosphate as culture pH drops to 5.5.[<a href="#source-liang2016"><code>liang2016</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
         <code>hydrolyzed_orthophosphate_from_g2p</code> &rarr; <strong>uranyl-phosphate supersaturation and cell-surface biomineralization</strong> (<code>drives</code>) &rarr; <code>yeast_associated_mixed_uranyl_phosphate_precipitate</code>
 : Released orthophosphate reacts with dissolved uranyl at the yeast cell surface to precipitate mixed uranyl-phosphate minerals assigned by XRD to meta-ankoleite, chernikovite, bassetite, and uramphite (Figures 2f and 3b, Table 5).[<a href="#source-liang2016"><code>liang2016</code></a>]      </li>
@@ -412,6 +412,12 @@
         <td><span class="badge">edit</span></td>
         <td>Add Kluyveromyces lactis Swiss-Prot Inorganic pyrophosphatase (IPP1, UniProtKB:P13998) to meta-ankoleite.yaml</td>
       </tr>
+      <tr>
+        <td><code>2026-11-09T19:15:45Z</code></td>
+        <td>marcin</td>
+        <td><span class="badge">edit</span></td>
+        <td>Distinguish G2P phosphomonoesterases from IPP1 inorganic pyrophosphatase in meta-ankoleite.yaml causal graph (#977)</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -421,7 +427,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (703 materials · 609 mechanisms · latest curation 2026-11-09 · corpus digest <code>8241c3cd821a</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (703 materials · 609 mechanisms · latest curation 2026-11-09 · corpus digest <code>3a6fa646901a</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·

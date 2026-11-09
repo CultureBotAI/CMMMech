@@ -1,0 +1,28 @@
+history_version: 1
+target:
+  kind: record
+  slug: strontium
+  path: data/records/strontium.yaml
+session:
+  id: 2026-11-09T191545Z-marcin-0a3699
+  timestamp: '2026-11-09T19:15:45Z'
+  actors:
+    - name: marcin
+      type: ai_agent
+      model: claude-opus-4-6
+      agent_tool: antigravity
+events:
+  - type: EDIT
+    outcome: changed
+    summary: Align causal edge with Bacillus UreABC-UreG complex in strontium.yaml (#977)
+    details: Updated causal_graphs[0].edges[0].description and evidence[0].explanation in data/records/strontium.yaml
+      to include ureG alongside ureABC (#977).
+    sections:
+      - causal_graphs
+      - curation_history
+      - history_refs
+links:
+  issues:
+    - https://github.com/CultureBotAI/CMMMech/issues/977
+  prs:
+    - https://github.com/CultureBotAI/CMMMech/pull/976
