@@ -1,0 +1,30 @@
+history_version: 1
+target:
+  kind: record
+  slug: lizardite
+  path: data/records/lizardite.yaml
+session:
+  id: 2026-11-09T191545Z-marcin-6fac51
+  timestamp: '2026-11-09T19:15:45Z'
+  actors:
+    - name: marcin
+      type: ai_agent
+      model: claude-opus-4-6
+      agent_tool: antigravity
+events:
+  - type: EDIT
+    outcome: changed
+    summary: Align causal edge description and evidence explanation with mdh (HNP21_003257) in
+      lizardite.yaml (#977)
+    details: Updated causal_graphs[0].edges[0].description and evidence[0].explanation in data/records/lizardite.yaml
+      to explicitly include co-localized TCA-cycle Malate dehydrogenase (mdh / HNP21_003257) and
+      note that it is not a Table 1 DEG or RT-qPCR target (#977).
+    sections:
+      - causal_graphs
+      - curation_history
+      - history_refs
+links:
+  issues:
+    - https://github.com/CultureBotAI/CMMMech/issues/977
+  prs:
+    - https://github.com/CultureBotAI/CMMMech/pull/976

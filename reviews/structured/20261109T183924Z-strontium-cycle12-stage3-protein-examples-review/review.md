@@ -1,0 +1,187 @@
+# Cycle 12 Stage 3 protein_examples scientific review of cmmmech:strontium (Strontium)
+
+- Review: 20261109T183924Z-strontium-cycle12-stage3-protein-examples-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-09T18:38:54Z
+- Finished UTC: 2026-11-09T18:39:24Z
+- Reviewer: marcin (antigravity claude-opus-4-6) (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Verified Cycle 12 Stage 3 protein_examples enrichment for cmmmech:strontium (Strontium): added UniProtKB:Q07403 (UREG_BACSB, reviewed Swiss-Prot Urease accessory protein UreG, ureG, Bacillus sp. TB-90 NCBITaxon:36824) to both mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples with exact UniProt REST API metadata, qualified supports: partial evidence on horiike_2017 and uniprot_bacillus_subtilis_ureabc, and canonical history sidecar history/records/strontium/2026-11-09T183630Z-marcin-82b301.yaml.
+
+## Scope And Provenance
+
+Single-record scientific and structural review of data/records/strontium.yaml after Cycle 12 Stage 3 protein_examples enrichment.
+
+Selection: Modified record data/records/strontium.yaml in Cycle 12 Stage 3.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: git_commit at Git base 58ca607539fede2288c3bc368978e6c8cd086c5a.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:strontium | data/records/strontium.yaml | maintained | Strontium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| CMMMech schema and reference validation | passed | True | cmmmech:strontium | uv run cmmmech validate --require-records passed (703 records, 0 failed). |
+| CMMMech history sidecar validation | passed | True | cmmmech:strontium | uv run cmmmech validate-history --base main passed with history/records/strontium/2026-11-09T183630Z-marcin-82b301.yaml. |
+
+## Scientific And Domain Assessments
+
+### UniProtKB protein_examples grounding and causal-graph node parity
+
+grounding: supported. Targets: cmmmech:strontium.
+
+Verified UniProtKB:Q07403 (UREG_BACSB, reviewed Swiss-Prot Urease accessory protein UreG, ureG, Bacillus sp. TB-90 NCBITaxon:36824) in both mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples with identical metadata and supports: partial qualification.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| ev_record | data/records/strontium.yaml | supports | Inspected data/records/strontium.yaml (sha256 49722aba900002fbc6c5f9d0cf15bbc22e54c264f2c326c821f43d2e3aab5422) and history sidecar history/records/strontium/2026-11-09T183630Z-marcin-82b301.yaml. |
+| ev_uniprot | sources[uniprot_bacillus_subtilis_ureabc] and sources[horiike_2017] in data/records/strontium.yaml | supports | Live-queried UniProt REST API for UniProtKB:Q07403 (UREG_BACSB, reviewed Swiss-Prot Urease accessory protein UreG, ureG, Bacillus sp. TB-90 NCBITaxon:36824) and verified accession, entry_name, entry_status, target_organism, reference_proteome_id, EC/InterPro/Pfam/NCBIfam/GO cross-references, and partial evidence qualification against horiike_2017. |
+
+## Limits And Additional Notes
+
+- Primary experimental source (horiike_2017) does not perform single-gene knockout or purified-enzyme assays for the grounded protein example; supports: partial and REPRESENTATIVE_EXAMPLE scope are explicitly preserved.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261109T183924Z-strontium-cycle12-stage3-protein-examples-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 12 Stage 3 protein_examples scientific review of cmmmech:strontium (Strontium)
+started_at: '2026-11-09T18:38:54Z'
+finished_at: '2026-11-09T18:39:24Z'
+reviewer:
+  identity: marcin (antigravity claude-opus-4-6)
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Post-curation structured review of Cycle 12 Stage 3 protein_examples
+    enrichment prior to independent subagent adversarial review.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'Verified Cycle 12 Stage 3 protein_examples enrichment for cmmmech:strontium
+  (Strontium): added UniProtKB:Q07403 (UREG_BACSB, reviewed Swiss-Prot Urease accessory
+  protein UreG, ureG, Bacillus sp. TB-90 NCBITaxon:36824) to both mechanisms[].protein_examples
+  and causal_graphs[].nodes[].protein_examples with exact UniProt REST API metadata,
+  qualified supports: partial evidence on horiike_2017 and uniprot_bacillus_subtilis_ureabc,
+  and canonical history sidecar history/records/strontium/2026-11-09T183630Z-marcin-82b301.yaml.'
+source:
+  git_revision: 58ca607539fede2288c3bc368978e6c8cd086c5a
+  state: git_commit
+  inputs:
+  - path: data/records/strontium.yaml
+    sha256: 49722aba900002fbc6c5f9d0cf15bbc22e54c264f2c326c821f43d2e3aab5422
+    role: target
+  - path: history/records/strontium/2026-11-09T183630Z-marcin-82b301.yaml
+    sha256: 51f08054d2a6ec2389b5f75d113d8cd9ee8508d2c9f97a2b2f26d228d775ea6b
+    role: context
+scope:
+  description: Single-record scientific and structural review of data/records/strontium.yaml
+    after Cycle 12 Stage 3 protein_examples enrichment.
+  selection: Modified record data/records/strontium.yaml in Cycle 12 Stage 3.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:strontium
+targets:
+- target_id: cmmmech:strontium
+  path: data/records/strontium.yaml
+  label: Strontium
+  record_class: CriticalMineralRecord
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/strontium.yaml
+    role: record
+checks:
+- check_id: cmmmech_validate
+  name: CMMMech schema and reference validation
+  status: passed
+  required: true
+  summary: uv run cmmmech validate --require-records passed (703 records, 0 failed).
+  target_ids:
+  - cmmmech:strontium
+  command: uv run cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev_record
+  - ev_uniprot
+- check_id: cmmmech_validate_history
+  name: CMMMech history sidecar validation
+  status: passed
+  required: true
+  summary: uv run cmmmech validate-history --base main passed with history/records/strontium/2026-11-09T183630Z-marcin-82b301.yaml.
+  target_ids:
+  - cmmmech:strontium
+  command: uv run cmmmech validate-history --base main
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev_record
+evidence:
+- evidence_id: ev_record
+  kind: record_content
+  reference: data/records/strontium.yaml
+  accessed_at: '2026-11-09T18:39:24Z'
+  support: supports
+  summary: Inspected data/records/strontium.yaml (sha256 49722aba900002fbc6c5f9d0cf15bbc22e54c264f2c326c821f43d2e3aab5422)
+    and history sidecar history/records/strontium/2026-11-09T183630Z-marcin-82b301.yaml.
+  snapshot_sha256: 49722aba900002fbc6c5f9d0cf15bbc22e54c264f2c326c821f43d2e3aab5422
+- evidence_id: ev_uniprot
+  kind: database
+  reference: sources[uniprot_bacillus_subtilis_ureabc] and sources[horiike_2017] in
+    data/records/strontium.yaml
+  accessed_at: '2026-11-09T18:39:24Z'
+  support: supports
+  summary: Live-queried UniProt REST API for UniProtKB:Q07403 (UREG_BACSB, reviewed
+    Swiss-Prot Urease accessory protein UreG, ureG, Bacillus sp. TB-90 NCBITaxon:36824)
+    and verified accession, entry_name, entry_status, target_organism, reference_proteome_id,
+    EC/InterPro/Pfam/NCBIfam/GO cross-references, and partial evidence qualification
+    against horiike_2017.
+assessments:
+- assessment_id: assess_grounding
+  area: grounding
+  topic: UniProtKB protein_examples grounding and causal-graph node parity
+  outcome: supported
+  summary: 'Verified UniProtKB:Q07403 (UREG_BACSB, reviewed Swiss-Prot Urease accessory
+    protein UreG, ureG, Bacillus sp. TB-90 NCBITaxon:36824) in both mechanisms[].protein_examples
+    and causal_graphs[].nodes[].protein_examples with identical metadata and supports:
+    partial qualification.'
+  target_ids:
+  - cmmmech:strontium
+  evidence_ids:
+  - ev_record
+  - ev_uniprot
+findings: []
+actions: []
+limitations:
+- 'Primary experimental source (horiike_2017) does not perform single-gene knockout
+  or purified-enzyme assays for the grounded protein example; supports: partial and
+  REPRESENTATIVE_EXAMPLE scope are explicitly preserved.'
+```

@@ -1,0 +1,31 @@
+history_version: 1
+target:
+  kind: record
+  slug: meta-ankoleite
+  path: data/records/meta-ankoleite.yaml
+session:
+  id: 2026-11-09T191545Z-marcin-b30911
+  timestamp: '2026-11-09T19:15:45Z'
+  actors:
+    - name: marcin
+      type: ai_agent
+      model: claude-opus-4-6
+      agent_tool: antigravity
+events:
+  - type: EDIT
+    outcome: changed
+    summary: Distinguish G2P phosphomonoesterases from IPP1 inorganic pyrophosphatase in meta-ankoleite.yaml
+      causal graph (#977)
+    details: Updated causal_graphs[0].description and causal_graphs[0].edges[0] in data/records/meta-ankoleite.yaml
+      to distinguish phosphomonoesterase hydrolysis of 30 mM glycerol 2-phosphate (PHO5, KLLA0B14839g,
+      KLLA0_E12827g) from intracellular diphosphate-to-orthophosphate turnover by IPP1 (EC 3.6.1.1)
+      (#977).
+    sections:
+      - causal_graphs
+      - curation_history
+      - history_refs
+links:
+  issues:
+    - https://github.com/CultureBotAI/CMMMech/issues/977
+  prs:
+    - https://github.com/CultureBotAI/CMMMech/pull/976
