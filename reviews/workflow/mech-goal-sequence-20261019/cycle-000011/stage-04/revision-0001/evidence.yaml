@@ -1,0 +1,74 @@
+schema_version: 1.0.0
+run_id: mech-goal-sequence-20261019
+cycle: 11
+stage: 4
+revision: 1
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+source_revision: 794684703f77385b6e9bca32167f6c8d1e5e29bf
+scope_frozen_at: '2026-11-09T04:15:09Z'
+outcome: completed
+summary: Completed full-inventory Cycle 11 Stage 4 scientific and structural review
+  of all 698 eligible CMMMech records at frozen commit 794684703f77385b6e9bca32167f6c8d1e5e29bf
+  across 6 disjoint material_kind cohort reviews (66 element, 447 mineral, 7 mineral_group,
+  36 commodity, 31 primary_resource, 111 secondary_resource), 1 cross-cohort causal_graphs/protein_examples
+  review (182 records), and 3 single-record reviews (enstatite, metacinnabar, scandium),
+  including the 5 Cycle 11 Stage 1 new Round 129 IMA mineral records and 10 Cycle
+  11 Stage 2/3 causal-graph and UniProtKB grounding expansions. Preserved 3 open minor
+  findings (cmmmech-cycle11-stage4-finding-0001, cmmmech-cycle11-stage4-finding-0002,
+  cmmmech-cycle11-stage4-finding-0003) across 5 records (enstatite, olivine-group,
+  dunite, metacinnabar, scandium) for Stage 5 grouped remediation.
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000010/stage-05/revision-0001/evidence.yaml
+  sha256: cd657ac93cf80c4fca8689814ba69985bdd7affe69ee6cc138a2f00907ef0c1b
+artifacts:
+- kind: review_report
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000011/stage-04/revision-0001/review_report.md
+  sha256: bd7fb427879582fbbdd3dbf8e4fb8c3e51e92dc9b2a8d2dc75ffb5b1e7b11e5e
+- kind: review_findings
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000011/stage-04/revision-0001/review_findings.yaml
+  sha256: dad2a81c17845edcfcbacfdb59eaa9575c8b0f11b9ba28d5b8af1eb6d82061a7
+findings:
+- finding_id: cmmmech-cycle11-stage4-finding-0001
+  status: open
+  summary: 'Across the three Gluconobacter oxydans whole-culture biolixiviant silicate
+    bioleaching records — data/records/enstatite.yaml (cmmmech:enstatite, mineral,
+    Klug et al. 2026), data/records/olivine-group.yaml (cmmmech:olivine-group, mineral_group,
+    Klug et al. 2026), and data/records/dunite.yaml (cmmmech:dunite, primary_resource,
+    Lee et al. 2025) — enstatite.yaml causal_graphs[0].nodes[4].description retains
+    the generic parenthetical template string repeating the capitalized node label,
+    edges[0..2] in enstatite.yaml and olivine-group.yaml and edges[1..2] in dunite.yaml
+    retain generic one-line template explanations, and dunite.yaml asserts unqualified
+    supports: support on pqqC (UniProtKB:Q9L3B2) and gdh (UniProtKB:P27175) protein_examples
+    and edges[1..2] despite whole-culture comparisons without single-gene pqqC/mgdh
+    knockouts.'
+- finding_id: cmmmech-cycle11-stage4-finding-0002
+  status: open
+  summary: 'In data/records/metacinnabar.yaml (cmmmech:metacinnabar, mineral, Vazquez-Rodriguez
+    et al. 2015), mechanisms[0].protein_examples[0] and causal_graphs[0].nodes[0].protein_examples[0]
+    for UniProtKB:U5TVQ7 (soxB) state that Vazquez-Rodriguez et al. (2015) studied
+    pure-culture dissolution of ''synthetic metacinnabar (beta-HgS)'' whereas primary
+    pure-culture incubations (Figures 3-5, Table 1) used 2 g/L ground natural museum
+    metacinnabar (<250 um, with pyritic inclusions), causal_graphs[0].nodes[1].description
+    omits feed specifics, edges[1] asserts supports: support for soluble Hg(II) accumulation
+    despite low aqueous Hg in viable cultures and chemical Hg release/S0 carryover
+    in controls, and edges[0..3] retain generic one-line explanations.'
+- finding_id: cmmmech-cycle11-stage4-finding-0003
+  status: open
+  summary: 'In data/records/scandium.yaml (cmmmech:scandium, element, Dong et al.
+    2024), mechanisms[0].protein_examples[0] and causal_graphs[0].nodes[0].protein_examples[0]
+    for UniProtKB:C5B164 (Mex-LanM) assert supports: support with ''mild acid stripping''
+    over ''competing transition/base metals'' whereas Dong et al. (2024) Section 3.4
+    and Figures 3C and 5E-F loaded a synthetic pH 3.0 16-REE chloride mixture and
+    eluted Sc(III) at above 99 mol% purity among REEs and above 99% two-step yield
+    (~94.5% Sc yield at 30 mM malonate) using stepwise 30 mM and 50 mM malonate at
+    pH 5.0 without a matched Sc-only resin-without-LanM control (supports: partial),
+    and causal_graphs[0].description, nodes[1..2], and edges[0..1] describe the synthetic
+    16-REE chloride feed as a ''mixed leachate feed'' / ''multi-metal leachate'' with
+    unqualified supports: support on edges[0].'
+carry_forward_ids:
+- cmmmech-cycle11-stage4-finding-0001
+- cmmmech-cycle11-stage4-finding-0002
+- cmmmech-cycle11-stage4-finding-0003
+groups: []
+infra_tasks: []
