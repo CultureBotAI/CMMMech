@@ -1,0 +1,295 @@
+# Cycle 12 Stage 4 record review: cmmmech:praseodymium (Praseodymium)
+
+- Review: 20261109T203009Z-praseodymium-cycle12-stage4-record-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-09T20:29:00Z
+- Finished UTC: 2026-11-09T20:30:09Z
+- Reviewer: antigravity / cmmmech-cycle12-stage4-record-reviewer (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Reviewed data/records/praseodymium.yaml (cmmmech:praseodymium) at commit f145e25990270f79cb760bb68e900595df4d308c (alongside companion immobilized-lanmodulin record cmmmech:rare-earth-element-commodities). Verified element identity (CHEBI:49828 praseodymium atom), USGS 2025 criticality, and the agarose-immobilized Melba-LanM (o-36) vs Mex-LanM (o-621, UniProtKB:C5B164) chromatographic Pr/La separation mechanism from Diep et al. (2026, Nature Chemical Biology 22:829-839, DOI:10.1038/s41589-026-02176-3). Identified 1 minor graph finding (cmmmech-cycle12-stage4-finding-0003: abbreviated 77-87 char node/edge descriptions and supports: support explanations omitting 0.8 mL vs 0.4 mL repeat-column batch variance, Mex-LanM co-elution, and summed-eluate yield denominators, paired with cmmmech:rare-earth-element-commodities) for Stage 5 grouped remediation.
+
+## Scope And Provenance
+
+Single-record/pair Cycle 12 Stage 4 audit of cmmmech:praseodymium.
+
+Selection: data/records/praseodymium.yaml at f145e25990270f79cb760bb68e900595df4d308c
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: git_commit at Git base f145e25990270f79cb760bb68e900595df4d308c.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:praseodymium | data/records/praseodymium.yaml | maintained | Praseodymium |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| cmmmech validate data/records/praseodymium.yaml | passed | True | cmmmech:praseodymium | data/records/praseodymium.yaml passes LinkML structural, semantic, and canonical top-level key-order validation with 0 errors. |
+
+## Scientific And Domain Assessments
+
+### Immobilized Melba-LanM (o-36) and Mex-LanM (o-621) column separation causal graph
+
+graph: supported. Targets: cmmmech:praseodymium.
+
+Protein groundings (Mex-LanM C5B164 and UNGROUNDED Melba-LanM o-36) are accurately mapped. However, causal_graphs[0] in praseodymium.yaml (nodes[2..3], edges[0..2]) retains abbreviated explanations and supports: support polarity omitting key experimental and denominator caveats documented in mechanisms[0].
+
+## Findings
+
+### cmmmech-cycle12-stage4-finding-0003: Immobilized-lanmodulin column causal graphs in praseodymium.yaml and rare-earth-element-commodities.yaml retain abbreviated node/edge explanations and omit replicate-batch, immobilized-dimer minority, and summed-eluate denominator caveats
+
+minor / open / confirmed; issue key: cmmmech.diep2026-mattocks2023-lanmodulin-graphs.abbreviated-edge-evidence-and-batch-dimer-qualifications.
+
+In data/records/praseodymium.yaml (cmmmech:praseodymium, element, Diep et al. 2026 Nature Chemical Biology 22:829-839, DOI:10.1038/s41589-026-02176-3, diep2026; causal_graphs[0] melba_mex_lanm_pr_la_separation_graph, lines 71-148) and data/records/rare-earth-element-commodities.yaml (cmmmech:rare-earth-element-commodities, commodity, Mattocks et al. 2023 Nature 618:87-93, DOI:10.1038/s41586-023-05945-5, mattocks_2023 / mattocks_2023_si / mattocks_2023_fig4_data; causal_graphs[0] hans_lanm_r100k_nd_dy_separation_graph, lines 101-198), immobilized-lanmodulin causal-graph nodes and edges retain abbreviated 71-to-119-character descriptions and evidence explanations that omit key experimental parameters and partial-support caveats documented in mechanisms[0]: (1) in praseodymium.yaml, nodes[2].description (equimolar_pr_la_feed, line 114, 86 chars) and nodes[3].description (resolved_pr3_eluate, line 119, 77 chars) omit the 0.8 mL agarose column (0.5 x 5 cm, pre-equilibrated with 10 mM glycine pH 3.0), 0.4 mM Pr(III) + 0.4 mM La(III) synthetic binary feed (loaded 2 min at ~0.32 mL/min, 10% capacity), pH 2.4 (140 min) then pH 1.5 (25 min) elution, and the single-run Figure 6d Pr fraction result (99.97 mol% Pr purity / 83.16% fraction recovery across bed volumes 48-80) versus the three independent 0.4 mL repeat columns with a new protein batch at pH 2.5 then pH 1.5 (96.5 +/- 0.2 mol% Pr purity and 72.0 +/- 5.8% yield across fractions 53-93 in Extended Data Figure 8d), while edges[0..2] (lines 122-148) carry 82-to-87-character evidence[0].explanation strings with supports: support on edges[0] and edges[2] that omit the Extended Data Figure 8d batch/scale conditionality, the summed-eluate denominator in Source Data Figure 6 (sheet o36 Agarose La-Pr) rather than an independent feed-to-product mass balance, and comparator Mex-LanM (o-621) co-elution of Pr and La; and (2) in rare-earth-element-commodities.yaml, mechanisms[0].protein_examples[0].evidence[0] (lines 63-65), nodes[0].protein_examples[0].evidence[0] (lines 130-132), and edges[0] (lines 172-180, 119-char explanation) assert supports: support and cooperative dimer/EF-hand discrimination without the qualification in mechanisms[0].evidence[1] (lines 92-93, supports: partial) that Page 92 and Extended Data Figure 6 explicitly distinguish solution dimerization from column behavior because functional dimers may occur in only a minority of immobilized protein units and no bare-agarose control is reported, edges[1].evidence[0].explanation (line 189, 71 chars) omits the Extended Data Figure 6 wild-type Hans-LanM (83.6% Dy purity / 98.1% yield; 99.8% Nd purity / 98.5% yield) and monomeric Mex-LanM comparisons, and edges[2].evidence[0] (lines 196-198) asserts supports: support without noting the mattocks_2023_fig4_data summed-eluate yield denominator (SUM(H32:H43)/SUM(H32:H51) = 99.3964% vs printed 99.3% for Dy; SUM(G44:G51)/SUM(G32:G51) = 99.8% for Nd), binary molar-share purity definition, and Table S16 vs workbook Nd SD discrepancy (4.4 vs ~15.1942) documented in mechanisms[0].evidence[0,3]. In this scope, 1 record(s) (praseodymium) are affected.
+
+## Recommended Actions And Acceptance Checks
+
+### act-refine-diep2026-mattocks2023-lanmodulin-column-graphs
+
+Update data/records/praseodymium.yaml (nodes[2..3] and edges[0..2], setting edges[0] and edges[2] to supports: partial) and data/records/rare-earth-element-commodities.yaml (mechanisms[0].protein_examples[0].evidence[0], nodes[0].protein_examples[0].evidence[0], and edges[0..2], setting protein_examples[0], edges[0], and edges[2] to supports: partial) so that node descriptions and edge evidence explanations incorporate full column parameters, replicate-column/batch variance (Extended Data Figure 8d in diep2026), immobilized-dimer minority and bare-agarose control caveats (Page 92 and Extended Data Figure 6 in mattocks_2023), and summed-eluate yield denominator / binary molar-share purity qualifications during Stage 5 grouped remediation with canonical history provenance.
+
+- praseodymium.yaml causal_graphs[0].nodes[2..3] and edges[0..2] specify the 0.8 mL vs 0.4 mL column parameters, Figure 6d vs Extended Data Figure 8d Pr purity/yield metrics, and summed-eluate denominator with supports: partial on edges[0..2].
+- rare-earth-element-commodities.yaml mechanisms[0].protein_examples[0], causal_graphs[0].nodes[0].protein_examples[0], and causal_graphs[0].edges[0..2] are synchronized with supports: partial and include the Page 92 immobilized-dimer minority, Extended Data Figure 6 wild-type comparator, and mattocks_2023_fig4_data summed-eluate denominator caveats.
+- Matching EDIT history sidecars exist in history/records/ and pass just check.
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| ev-lanmodulin-files | data/records/praseodymium.yaml; mechanisms[0] (lines 32-69); causal_graphs[0] (lines 71-148) | supports | Inspected data/records/praseodymium.yaml (and companion record data/records/rare-earth-element-commodities.yaml), comparing mechanisms[0].context and evidence against protein_examples and causal_graphs[0]. |
+| ev-lanmodulin-diep2026-mattocks2023 | DOI:10.1038/s41589-026-02176-3; Diep et al. 2026 Figure 6d, Extended Data Figure 8c-d, Source Data Figure 6 | supports | Diep et al. (2026) report 99.97 mol% Pr purity / 83.16% summed-eluate recovery on a single 0.8 mL column (Figure 6d) vs 96.5 +/- 0.2 mol% purity / 72.0 +/- 5.8% yield across three 0.4 mL repeat columns (Extended Data Figure 8d). |
+
+## Limits And Additional Notes
+
+- data/records/praseodymium.yaml (and companion record data/records/rare-earth-element-commodities.yaml) retains abbreviated node/edge explanations and supports: support polarity omitting repeat-column batch variance and summed-eluate yield denominators (tracked as open finding cmmmech-cycle12-stage4-finding-0003 for Stage 5 remediation).
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261109T203009Z-praseodymium-cycle12-stage4-record-review
+title: 'Cycle 12 Stage 4 record review: cmmmech:praseodymium (Praseodymium)'
+repository: CultureBotAI/CMMMech
+kind: record
+started_at: '2026-11-09T20:29:00Z'
+finished_at: '2026-11-09T20:30:09Z'
+skill: .claude/skills/review-yaml-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'Reviewed data/records/praseodymium.yaml (cmmmech:praseodymium) at commit
+  f145e25990270f79cb760bb68e900595df4d308c (alongside companion immobilized-lanmodulin
+  record cmmmech:rare-earth-element-commodities). Verified element identity (CHEBI:49828
+  praseodymium atom), USGS 2025 criticality, and the agarose-immobilized Melba-LanM
+  (o-36) vs Mex-LanM (o-621, UniProtKB:C5B164) chromatographic Pr/La separation mechanism
+  from Diep et al. (2026, Nature Chemical Biology 22:829-839, DOI:10.1038/s41589-026-02176-3).
+  Identified 1 minor graph finding (cmmmech-cycle12-stage4-finding-0003: abbreviated
+  77-87 char node/edge descriptions and supports: support explanations omitting 0.8
+  mL vs 0.4 mL repeat-column batch variance, Mex-LanM co-elution, and summed-eluate
+  yield denominators, paired with cmmmech:rare-earth-element-commodities) for Stage
+  5 grouped remediation.'
+reviewer:
+  identity: antigravity / cmmmech-cycle12-stage4-record-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Single-agent Goal Mode execution of Cycle 12 Stage 4 record_review
+    (.claude/skills/review-yaml-record/SKILL.md) against frozen commit f145e25990270f79cb760bb68e900595df4d308c.
+source:
+  git_revision: f145e25990270f79cb760bb68e900595df4d308c
+  state: git_commit
+  inputs:
+  - path: data/records/praseodymium.yaml
+    sha256: 2aeae056f98b9571f9c38cf6bd1fb7249db9217c5f750f3de01c93b9bc594545
+    role: target
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+  - path: src/cmmmech/validation.py
+    sha256: edf999adb3da7dceadcc340b5561663a7fb56dfd1178992633a1a7ad1abcb937
+    role: context
+scope:
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:praseodymium
+  selection: data/records/praseodymium.yaml at f145e25990270f79cb760bb68e900595df4d308c
+  description: Single-record/pair Cycle 12 Stage 4 audit of cmmmech:praseodymium.
+targets:
+- target_id: cmmmech:praseodymium
+  path: data/records/praseodymium.yaml
+  kind: maintained
+  label: Praseodymium
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/praseodymium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/schema/cmmmech.yaml
+    role: schema
+  - repository: CultureBotAI/CMMMech
+    path: src/cmmmech/validation.py
+    role: validator
+checks:
+- check_id: cmmmech-validate-praseodymium
+  name: cmmmech validate data/records/praseodymium.yaml
+  status: passed
+  required: true
+  command: .venv/bin/cmmmech validate data/records/praseodymium.yaml
+  exit_code: 0
+  expected_exit_code: 0
+  target_ids:
+  - cmmmech:praseodymium
+  evidence_ids:
+  - ev-lanmodulin-files
+  summary: data/records/praseodymium.yaml passes LinkML structural, semantic, and
+    canonical top-level key-order validation with 0 errors.
+assessments:
+- assessment_id: assess-lanmodulin-column-graphs-and-proteins
+  topic: Immobilized Melba-LanM (o-36) and Mex-LanM (o-621) column separation causal
+    graph
+  area: graph
+  outcome: supported
+  target_ids:
+  - cmmmech:praseodymium
+  evidence_ids:
+  - ev-lanmodulin-files
+  - ev-lanmodulin-diep2026-mattocks2023
+  summary: 'Protein groundings (Mex-LanM C5B164 and UNGROUNDED Melba-LanM o-36) are
+    accurately mapped. However, causal_graphs[0] in praseodymium.yaml (nodes[2..3],
+    edges[0..2]) retains abbreviated explanations and supports: support polarity omitting
+    key experimental and denominator caveats documented in mechanisms[0].'
+findings:
+- finding_id: cmmmech-cycle12-stage4-finding-0003
+  issue_key: cmmmech.diep2026-mattocks2023-lanmodulin-graphs.abbreviated-edge-evidence-and-batch-dimer-qualifications
+  title: Immobilized-lanmodulin column causal graphs in praseodymium.yaml and rare-earth-element-commodities.yaml
+    retain abbreviated node/edge explanations and omit replicate-batch, immobilized-dimer
+    minority, and summed-eluate denominator caveats
+  severity: minor
+  category: graph
+  certainty: confirmed
+  status: open
+  target_ids:
+  - cmmmech:praseodymium
+  field_paths:
+  - causal_graphs[0].nodes[2].description
+  - causal_graphs[0].nodes[3].description
+  - causal_graphs[0].edges[0].description
+  - causal_graphs[0].edges[0].evidence[0].supports
+  - causal_graphs[0].edges[0].evidence[0].explanation
+  - causal_graphs[0].edges[1].description
+  - causal_graphs[0].edges[1].evidence[0].explanation
+  - causal_graphs[0].edges[2].description
+  - causal_graphs[0].edges[2].evidence[0].supports
+  - causal_graphs[0].edges[2].evidence[0].explanation
+  evidence_ids:
+  - ev-lanmodulin-files
+  - ev-lanmodulin-diep2026-mattocks2023
+  description: 'In data/records/praseodymium.yaml (cmmmech:praseodymium, element,
+    Diep et al. 2026 Nature Chemical Biology 22:829-839, DOI:10.1038/s41589-026-02176-3,
+    diep2026; causal_graphs[0] melba_mex_lanm_pr_la_separation_graph, lines 71-148)
+    and data/records/rare-earth-element-commodities.yaml (cmmmech:rare-earth-element-commodities,
+    commodity, Mattocks et al. 2023 Nature 618:87-93, DOI:10.1038/s41586-023-05945-5,
+    mattocks_2023 / mattocks_2023_si / mattocks_2023_fig4_data; causal_graphs[0] hans_lanm_r100k_nd_dy_separation_graph,
+    lines 101-198), immobilized-lanmodulin causal-graph nodes and edges retain abbreviated
+    71-to-119-character descriptions and evidence explanations that omit key experimental
+    parameters and partial-support caveats documented in mechanisms[0]: (1) in praseodymium.yaml,
+    nodes[2].description (equimolar_pr_la_feed, line 114, 86 chars) and nodes[3].description
+    (resolved_pr3_eluate, line 119, 77 chars) omit the 0.8 mL agarose column (0.5
+    x 5 cm, pre-equilibrated with 10 mM glycine pH 3.0), 0.4 mM Pr(III) + 0.4 mM La(III)
+    synthetic binary feed (loaded 2 min at ~0.32 mL/min, 10% capacity), pH 2.4 (140
+    min) then pH 1.5 (25 min) elution, and the single-run Figure 6d Pr fraction result
+    (99.97 mol% Pr purity / 83.16% fraction recovery across bed volumes 48-80) versus
+    the three independent 0.4 mL repeat columns with a new protein batch at pH 2.5
+    then pH 1.5 (96.5 +/- 0.2 mol% Pr purity and 72.0 +/- 5.8% yield across fractions
+    53-93 in Extended Data Figure 8d), while edges[0..2] (lines 122-148) carry 82-to-87-character
+    evidence[0].explanation strings with supports: support on edges[0] and edges[2]
+    that omit the Extended Data Figure 8d batch/scale conditionality, the summed-eluate
+    denominator in Source Data Figure 6 (sheet o36 Agarose La-Pr) rather than an independent
+    feed-to-product mass balance, and comparator Mex-LanM (o-621) co-elution of Pr
+    and La; and (2) in rare-earth-element-commodities.yaml, mechanisms[0].protein_examples[0].evidence[0]
+    (lines 63-65), nodes[0].protein_examples[0].evidence[0] (lines 130-132), and edges[0]
+    (lines 172-180, 119-char explanation) assert supports: support and cooperative
+    dimer/EF-hand discrimination without the qualification in mechanisms[0].evidence[1]
+    (lines 92-93, supports: partial) that Page 92 and Extended Data Figure 6 explicitly
+    distinguish solution dimerization from column behavior because functional dimers
+    may occur in only a minority of immobilized protein units and no bare-agarose
+    control is reported, edges[1].evidence[0].explanation (line 189, 71 chars) omits
+    the Extended Data Figure 6 wild-type Hans-LanM (83.6% Dy purity / 98.1% yield;
+    99.8% Nd purity / 98.5% yield) and monomeric Mex-LanM comparisons, and edges[2].evidence[0]
+    (lines 196-198) asserts supports: support without noting the mattocks_2023_fig4_data
+    summed-eluate yield denominator (SUM(H32:H43)/SUM(H32:H51) = 99.3964% vs printed
+    99.3% for Dy; SUM(G44:G51)/SUM(G32:G51) = 99.8% for Nd), binary molar-share purity
+    definition, and Table S16 vs workbook Nd SD discrepancy (4.4 vs ~15.1942) documented
+    in mechanisms[0].evidence[0,3]. In this scope, 1 record(s) (praseodymium) are
+    affected.'
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/praseodymium.yaml
+    role: maintained_record
+actions:
+- action_id: act-refine-diep2026-mattocks2023-lanmodulin-column-graphs
+  finding_ids:
+  - cmmmech-cycle12-stage4-finding-0003
+  target_ids:
+  - cmmmech:praseodymium
+  description: 'Update data/records/praseodymium.yaml (nodes[2..3] and edges[0..2],
+    setting edges[0] and edges[2] to supports: partial) and data/records/rare-earth-element-commodities.yaml
+    (mechanisms[0].protein_examples[0].evidence[0], nodes[0].protein_examples[0].evidence[0],
+    and edges[0..2], setting protein_examples[0], edges[0], and edges[2] to supports:
+    partial) so that node descriptions and edge evidence explanations incorporate
+    full column parameters, replicate-column/batch variance (Extended Data Figure
+    8d in diep2026), immobilized-dimer minority and bare-agarose control caveats (Page
+    92 and Extended Data Figure 6 in mattocks_2023), and summed-eluate yield denominator
+    / binary molar-share purity qualifications during Stage 5 grouped remediation
+    with canonical history provenance.'
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/praseodymium.yaml
+    role: maintained_record
+  acceptance_checks:
+  - 'praseodymium.yaml causal_graphs[0].nodes[2..3] and edges[0..2] specify the 0.8
+    mL vs 0.4 mL column parameters, Figure 6d vs Extended Data Figure 8d Pr purity/yield
+    metrics, and summed-eluate denominator with supports: partial on edges[0..2].'
+  - 'rare-earth-element-commodities.yaml mechanisms[0].protein_examples[0], causal_graphs[0].nodes[0].protein_examples[0],
+    and causal_graphs[0].edges[0..2] are synchronized with supports: partial and include
+    the Page 92 immobilized-dimer minority, Extended Data Figure 6 wild-type comparator,
+    and mattocks_2023_fig4_data summed-eluate denominator caveats.'
+  - Matching EDIT history sidecars exist in history/records/ and pass just check.
+evidence:
+- evidence_id: ev-lanmodulin-files
+  kind: record_content
+  reference: data/records/praseodymium.yaml
+  locator: mechanisms[0] (lines 32-69); causal_graphs[0] (lines 71-148)
+  accessed_at: '2026-11-09T20:30:09Z'
+  support: supports
+  summary: Inspected data/records/praseodymium.yaml (and companion record data/records/rare-earth-element-commodities.yaml),
+    comparing mechanisms[0].context and evidence against protein_examples and causal_graphs[0].
+- evidence_id: ev-lanmodulin-diep2026-mattocks2023
+  kind: primary_source
+  reference: DOI:10.1038/s41589-026-02176-3
+  locator: Diep et al. 2026 Figure 6d, Extended Data Figure 8c-d, Source Data Figure
+    6
+  accessed_at: '2026-11-09T20:30:09Z'
+  support: supports
+  summary: Diep et al. (2026) report 99.97 mol% Pr purity / 83.16% summed-eluate recovery
+    on a single 0.8 mL column (Figure 6d) vs 96.5 +/- 0.2 mol% purity / 72.0 +/- 5.8%
+    yield across three 0.4 mL repeat columns (Extended Data Figure 8d).
+limitations:
+- 'data/records/praseodymium.yaml (and companion record data/records/rare-earth-element-commodities.yaml)
+  retains abbreviated node/edge explanations and supports: support polarity omitting
+  repeat-column batch variance and summed-eluate yield denominators (tracked as open
+  finding cmmmech-cycle12-stage4-finding-0003 for Stage 5 remediation).'
+notes: []
+```

@@ -1,0 +1,69 @@
+schema_version: 1.0.0
+run_id: mech-goal-sequence-20261019
+cycle: 12
+stage: 4
+revision: 1
+repository_key: cmmmech
+github_repository: CultureBotAI/CMMMech
+source_revision: f145e25990270f79cb760bb68e900595df4d308c
+scope_frozen_at: '2026-11-09T20:30:09Z'
+outcome: completed
+summary: Completed full-inventory Cycle 12 Stage 4 scientific and structural review
+  of all 703 eligible CMMMech records at frozen commit f145e25990270f79cb760bb68e900595df4d308c
+  across 6 disjoint material_kind cohort reviews (66 element, 452 mineral, 7 mineral_group,
+  36 commodity, 31 primary_resource, 111 secondary_resource), 1 cross-cohort causal_graphs/protein_examples
+  review (191 records), and 3 single-record reviews (anatase, selenium, praseodymium),
+  including the 5 Cycle 12 Stage 1 new Round 130 IMA mineral records and 10 Cycle
+  12 Stage 2/3 causal-graph and UniProtKB grounding expansions. Preserved 3 open minor
+  findings (cmmmech-cycle12-stage4-finding-0001, cmmmech-cycle12-stage4-finding-0002,
+  cmmmech-cycle12-stage4-finding-0003) across 4 records (anatase, selenium, praseodymium,
+  rare-earth-element-commodities) for Stage 5 grouped remediation.
+previous_evidence:
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000011/stage-05/revision-0001/evidence.yaml
+  sha256: 5b577d2c72d575efb32c022ae3bbda5835b1db7e0e66061d62b4647b41e05618
+artifacts:
+- kind: review_report
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000012/stage-04/revision-0001/review_report.md
+  sha256: 73dc5fea3df31e661c764d95908397dabbc8f05a34e5b78001ab10dd4a9d973c
+- kind: review_findings
+  path: reviews/workflow/mech-goal-sequence-20261019/cycle-000012/stage-04/revision-0001/review_findings.yaml
+  sha256: 614e193497e3225c77787134c74d4d3a56c228cda0b92276132acf3579e42f87
+findings:
+- finding_id: cmmmech-cycle12-stage4-finding-0001
+  status: open
+  summary: In data/records/anatase.yaml (cmmmech:anatase, mineral, Ping et al. 2016),
+    mechanisms[0].protein_examples[0..1], causal_graphs[0].nodes[0..1].protein_examples[0],
+    and causal_graphs[0].edges[0..1] name 'pET28a-INP-silaffin' and state that 'non-engineered
+    E. coli controls were not included', contradicting mechanisms[0].context (pET(INP-nR5)
+    with n = 1, 3, 5 R5 repeats in E. coli BL21(DE3)) and mechanisms[0].evidence[2]
+    (INP-only comparator cells tested in Figures S2 and S4b, while matched cell-free
+    precursor and live-vs-killed controls were omitted); additionally, nodes[1,3]
+    and edges[0,2] omit proposed-mechanism, 37 C / 80 C / 600 C air-vs-argon, and
+    PDF 21-1271/21-1272 qualifications.
+- finding_id: cmmmech-cycle12-stage4-finding-0002
+  status: open
+  summary: 'In data/records/selenium.yaml (cmmmech:selenium, element, Li et al. 2014
+    and Klonowska et al. 2005), causal_graphs[0] and protein_examples[0..1] (UniProtKB:P83223
+    FccA, UniProtKB:Q8E8S0 CymA) use abbreviated 75-90 char explanations and supports:
+    support polarity stating direct periplasmic FccA catalysis and periplasmic/cell-envelope
+    Se(0) accumulation, omitting conditional deletion kinetics (0.54 +/- 0.13 vs 1.35
+    +/- 0.05 umol/h in Figure 2), absence of complementation or purified-FccA assays,
+    substantial residual reduction in delta-cymA (Figure 4; klonowska_2005), and predominantly
+    intracellular plus smaller surface particle localization (Figure 5 TEM/EDX and
+    48 h Se 3d XPS; Table 1 ICP-AES balance).'
+- finding_id: cmmmech-cycle12-stage4-finding-0003
+  status: open
+  summary: 'In data/records/praseodymium.yaml (cmmmech:praseodymium, element, Diep
+    et al. 2026) and data/records/rare-earth-element-commodities.yaml (cmmmech:rare-earth-element-commodities,
+    commodity, Mattocks et al. 2023), immobilized-lanmodulin column causal graphs
+    retain abbreviated 71-119 char node/edge descriptions and supports: support explanations
+    omitting 0.8 mL vs 0.4 mL repeat-column batch variance (Figure 6d vs Extended
+    Data Figure 8d in diep2026), Page 92 / Extended Data Figure 6 immobilized-dimer
+    minority and bare-agarose control caveats in mattocks_2023, and summed-eluate
+    yield denominator / binary molar-share purity qualifications.'
+carry_forward_ids:
+- cmmmech-cycle12-stage4-finding-0001
+- cmmmech-cycle12-stage4-finding-0002
+- cmmmech-cycle12-stage4-finding-0003
+groups: []
+infra_tasks: []
