@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed data/records/metacinnabar.yaml (cmmmech:metacinnabar) at commit 794684703f77385b6e9bca32167f6c8d1e5e29bf. Verified mineral identity (cubic beta-HgS, IMA symbol Mcin, grandfathered 1870), the Thiobacillus thioparus ATCC 8158 oxidative dissolution and Hg volatilization mechanism from Vazquez-Rodriguez et al. (2015, Frontiers in Microbiology 6:596, DOI:10.3389/fmicb.2015.00596), both synchronized UniProtKB protein_examples (SoxB UniProtKB:U5TVQ7 and MerA UniProtKB:A0A7W8EC74), and causal_graphs[0] (thioparus_soxb_mera_metacinnabar_graph). Identified 1 minor graph finding (cmmmech-cycle11-stage4-finding-0002: SoxB protein_examples[0] evidence states 'synthetic metacinnabar (beta-HgS)' whereas primary pure-culture incubations used 2 g/L ground natural museum metacinnabar &lt;250 um, nodes[1].description omits feed specifics, edges[1] asserts supports: support for soluble Hg(II) accumulation, and edges[0..3] retain generic one-line explanations) for Stage 5 grouped remediation.
+Reviewed data/records/metacinnabar.yaml (cmmmech:metacinnabar) at commit 794684703f77385b6e9bca32167f6c8d1e5e29bf. Verified mineral identity (cubic beta-HgS, grandfathered 1870), the Thiobacillus thioparus ATCC 8158 oxidative dissolution and Hg volatilization mechanism from Vazquez-Rodriguez et al. (2015, Frontiers in Microbiology 6:596, DOI:10.3389/fmicb.2015.00596), both synchronized UniProtKB protein_examples (Thiobacillus thioparus SoxB UniProtKB:U5TVQ7 and Thiobacillus denitrificans ATCC 25259 MerA UniProtKB:Q3SJ73), and causal_graphs[0] (thioparus_soxb_mera_metacinnabar_graph). Identified 1 minor graph finding (cmmmech-cycle11-stage4-finding-0002: SoxB protein_examples[0] evidence states 'synthetic metacinnabar (beta-HgS)' whereas primary pure-culture incubations used 2 g/L ground natural museum metacinnabar &lt;250 um, nodes[1].description omits feed specifics, edges[1] asserts supports: support for soluble Hg(II) accumulation, and edges[0..3] retain generic one-line explanations) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -38,7 +38,7 @@ Working-tree hashes do not imply those bytes were committed.
 
 graph: supported. Targets: cmmmech:metacinnabar.
 
-Both Thiobacillus thioparus UniProtKB protein_examples (U5TVQ7 SoxB, A0A7W8EC74 MerA) are synchronized between mechanisms[0] and causal_graphs[0]. However, SoxB protein_examples[0] misstates the primary natural museum metacinnabar feed as synthetic beta-HgS, and causal_graphs[0] nodes[1] and edges[0..3] retain generic one-line explanations and unqualified soluble-Hg(II) accumulation support on edges[1].
+Both UniProtKB protein_examples (U5TVQ7 SoxB in Thiobacillus thioparus and Q3SJ73 MerA in Thiobacillus denitrificans ATCC 25259) are synchronized between mechanisms[0] and causal_graphs[0]. However, SoxB protein_examples[0] misstates the primary natural museum metacinnabar feed as synthetic beta-HgS, and causal_graphs[0] nodes[1] and edges[0..3] retain generic one-line explanations and unqualified soluble-Hg(II) accumulation support on edges[1].
 
 ## Findings
 
@@ -90,15 +90,15 @@ verdict: pass_with_limitations
 scientific_review: true
 summary: 'Reviewed data/records/metacinnabar.yaml (cmmmech:metacinnabar) at commit
   794684703f77385b6e9bca32167f6c8d1e5e29bf. Verified mineral identity (cubic beta-HgS,
-  IMA symbol Mcin, grandfathered 1870), the Thiobacillus thioparus ATCC 8158 oxidative
-  dissolution and Hg volatilization mechanism from Vazquez-Rodriguez et al. (2015,
-  Frontiers in Microbiology 6:596, DOI:10.3389/fmicb.2015.00596), both synchronized
-  UniProtKB protein_examples (SoxB UniProtKB:U5TVQ7 and MerA UniProtKB:A0A7W8EC74),
-  and causal_graphs[0] (thioparus_soxb_mera_metacinnabar_graph). Identified 1 minor
-  graph finding (cmmmech-cycle11-stage4-finding-0002: SoxB protein_examples[0] evidence
-  states ''synthetic metacinnabar (beta-HgS)'' whereas primary pure-culture incubations
-  used 2 g/L ground natural museum metacinnabar <250 um, nodes[1].description omits
-  feed specifics, edges[1] asserts supports: support for soluble Hg(II) accumulation,
+  grandfathered 1870), the Thiobacillus thioparus ATCC 8158 oxidative dissolution
+  and Hg volatilization mechanism from Vazquez-Rodriguez et al. (2015, Frontiers in
+  Microbiology 6:596, DOI:10.3389/fmicb.2015.00596), both synchronized UniProtKB protein_examples
+  (Thiobacillus thioparus SoxB UniProtKB:U5TVQ7 and Thiobacillus denitrificans ATCC
+  25259 MerA UniProtKB:Q3SJ73), and causal_graphs[0] (thioparus_soxb_mera_metacinnabar_graph).
+  Identified 1 minor graph finding (cmmmech-cycle11-stage4-finding-0002: SoxB protein_examples[0]
+  evidence states ''synthetic metacinnabar (beta-HgS)'' whereas primary pure-culture
+  incubations used 2 g/L ground natural museum metacinnabar <250 um, nodes[1].description
+  omits feed specifics, edges[1] asserts supports: support for soluble Hg(II) accumulation,
   and edges[0..3] retain generic one-line explanations) for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle11-stage4-record-reviewer
@@ -167,11 +167,12 @@ assessments:
   evidence_ids:
   - ev-metacinnabar-file
   - ev-metacinnabar-vazquez2015
-  summary: Both Thiobacillus thioparus UniProtKB protein_examples (U5TVQ7 SoxB, A0A7W8EC74
-    MerA) are synchronized between mechanisms[0] and causal_graphs[0]. However, SoxB
-    protein_examples[0] misstates the primary natural museum metacinnabar feed as
-    synthetic beta-HgS, and causal_graphs[0] nodes[1] and edges[0..3] retain generic
-    one-line explanations and unqualified soluble-Hg(II) accumulation support on edges[1].
+  summary: Both UniProtKB protein_examples (U5TVQ7 SoxB in Thiobacillus thioparus
+    and Q3SJ73 MerA in Thiobacillus denitrificans ATCC 25259) are synchronized between
+    mechanisms[0] and causal_graphs[0]. However, SoxB protein_examples[0] misstates
+    the primary natural museum metacinnabar feed as synthetic beta-HgS, and causal_graphs[0]
+    nodes[1] and edges[0..3] retain generic one-line explanations and unqualified
+    soluble-Hg(II) accumulation support on edges[1].
 findings:
 - finding_id: cmmmech-cycle11-stage4-finding-0002
   issue_key: cmmmech.vazquez-rodriguez2015-metacinnabar.natural-vs-synthetic-feed-and-aqueous-hg-edge-support

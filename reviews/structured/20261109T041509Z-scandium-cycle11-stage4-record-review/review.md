@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed data/records/scandium.yaml (cmmmech:scandium) at commit 794684703f77385b6e9bca32167f6c8d1e5e29bf. Verified CHEBI identity (CHEBI:33330 scandium atom), 3 dated jurisdiction-scoped criticality entries (US 2025, EU 2023, Australia 2024), the immobilized Methylorubrum extorquens AM1 lanmodulin (Mex-LanM, UniProtKB:C5B164) chromatographic separation mechanism from Dong et al. (2024, Separation and Purification Technology 333:125919, DOI:10.1016/j.seppur.2023.125919), and causal_graphs[0] (immobilized_mex_lanm_scandium_separation_graph). Identified 1 minor graph finding (cmmmech-cycle11-stage4-finding-0003: Mex-LanM protein_examples[0] evidence asserts supports: support with 'mild acid stripping' over 'transition/base metals' instead of stepwise 30 mM and 50 mM malonate elution at pH 5.0 from a synthetic 16-REE chloride feed, and causal_graphs[0] describes the synthetic 16-REE feed as a 'mixed leachate feed' / 'multi-metal leachate' with unqualified supports: support on edges[0]) for Stage 5 grouped remediation.
+Reviewed data/records/scandium.yaml (cmmmech:scandium) at commit 794684703f77385b6e9bca32167f6c8d1e5e29bf. Verified CHEBI identity (CHEBI:33330 scandium atom), its dated jurisdiction-scoped criticality entry (United States of America, USGS Final List of Critical Minerals 2025, usgs2025), the immobilized Methylorubrum extorquens AM1 lanmodulin (Mex-LanM, UniProtKB:C5B164) chromatographic separation mechanism from Dong et al. (2024, Separation and Purification Technology 333:125919, DOI:10.1016/j.seppur.2023.125919), and causal_graphs[0] (immobilized_mex_lanm_scandium_separation_graph). Identified 1 minor graph finding (cmmmech-cycle11-stage4-finding-0003: Mex-LanM protein_examples[0] evidence asserts supports: support with 'mild acid stripping' over 'transition/base metals' instead of stepwise 30 mM and 50 mM malonate elution at pH 5.0 from a synthetic 16-REE chloride feed, and causal_graphs[0] describes the synthetic 16-REE feed as a 'mixed leachate feed' / 'multi-metal leachate' with unqualified supports: support on edges[0]) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -52,7 +52,7 @@ In data/records/scandium.yaml (cmmmech:scandium, element, Dong et al. 2024 Separ
 
 ### act-refine-dong2024-scandium-mex-lanm-graph-and-protein-evidence
 
-Update mechanisms[0].protein_examples[0].evidence[0] and causal_graphs[0].nodes[0].protein_examples[0].evidence[0] in data/records/scandium.yaml to supports: partial with synchronized prose describing selective Sc(III) retention from a synthetic pH 3.0 16-REE chloride mixture and stepwise 30 mM / 50 mM malonate elution at pH 5.0 (95.4% purity, Figures 3C and 5E-F, Table S9/S10), and update causal_graphs[0].description, nodes[1..2], and edges[0..1] (with supports: partial on edges[0]) during Stage 5 grouped remediation with canonical history provenance.
+Update mechanisms[0].protein_examples[0].evidence[0] and causal_graphs[0].nodes[0].protein_examples[0].evidence[0] in data/records/scandium.yaml to supports: partial with synchronized prose describing selective Sc(III) retention from a synthetic pH 3.0 16-REE chloride mixture and stepwise 30 mM / 50 mM malonate elution at pH 5.0 (above 99 mol% purity among REEs and above 99% two-step yield; ~94.5% Sc yield at 30 mM malonate, Figures 3C and 5E-F, Table S9/S10), and update causal_graphs[0].description, nodes[1..2], and edges[0..1] (with supports: partial on edges[0]) during Stage 5 grouped remediation with canonical history provenance.
 
 - mechanisms[0].protein_examples[0] and causal_graphs[0].nodes[0].protein_examples[0] in scandium.yaml are synchronized with supports: partial and specify stepwise pH 5.0 malonate elution (30 mM and 50 mM) from a synthetic 16-REE chloride feed rather than mild acid stripping.
 - causal_graphs[0].description, nodes[1..2], and edges[0..1] in scandium.yaml accurately describe the synthetic pH 3.0 16-REE chloride feed (0.4 mM nominal / 0.2430 mM sum in Table S9/S10) and qualify edges[0].evidence[0].supports to partial.
@@ -66,7 +66,7 @@ Update mechanisms[0].protein_examples[0].evidence[0] and causal_graphs[0].nodes[
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
 | ev-scandium-file | data/records/scandium.yaml; mechanisms[0] (lines 36-74); causal_graphs[0] (lines 78-140) | supports | Inspected data/records/scandium.yaml, comparing mechanisms[0].description, context, and evidence[0..1] (lines 39-73) against protein_examples[0] (lines 64-66, 109-111) and causal_graphs[0] (lines 78-140). |
-| ev-scandium-dong2024 | DOI:10.1016/j.seppur.2023.125919; Dong et al. 2024 Separation and Purification Technology 333:125919, Section 3.4, Figures 3C and 5E-F, Supplement Table S9/S10 | supports | Dong et al. (2024) loaded a synthetic pH 3.0 16-REE chloride mixture (nominal 0.4 mM total REE in Figure 5; 0.2430 mM sum with 23.8 +/- 1.1 uM Sc in Table S9/S10) onto a 3.3 uM LanM-agarose column and eluted Sc(III) at 95.4% purity using stepwise 30 mM and 50 mM malonate at pH 5.0. |
+| ev-scandium-dong2024 | DOI:10.1016/j.seppur.2023.125919; Dong et al. 2024 Separation and Purification Technology 333:125919, Section 3.4, Figures 3C and 5E-F, Supplement Table S9/S10 | supports | Dong et al. (2024) loaded a synthetic pH 3.0 16-REE chloride mixture (nominal 0.4 mM total REE in Figure 5; 0.2430 mM sum with 23.8 +/- 1.1 uM Sc in Table S9/S10) onto an agarose resin column with immobilized Mex-LanM and eluted Sc(III) at above 99 mol% purity among REEs and above 99% yield for the two-step malonate process (~94.5% Sc yield at 30 mM malonate and ~98.9% La yield at 50 mM malonate at pH 5.0). |
 
 ## Limits And Additional Notes
 
@@ -89,17 +89,18 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 summary: 'Reviewed data/records/scandium.yaml (cmmmech:scandium) at commit 794684703f77385b6e9bca32167f6c8d1e5e29bf.
-  Verified CHEBI identity (CHEBI:33330 scandium atom), 3 dated jurisdiction-scoped
-  criticality entries (US 2025, EU 2023, Australia 2024), the immobilized Methylorubrum
-  extorquens AM1 lanmodulin (Mex-LanM, UniProtKB:C5B164) chromatographic separation
-  mechanism from Dong et al. (2024, Separation and Purification Technology 333:125919,
-  DOI:10.1016/j.seppur.2023.125919), and causal_graphs[0] (immobilized_mex_lanm_scandium_separation_graph).
-  Identified 1 minor graph finding (cmmmech-cycle11-stage4-finding-0003: Mex-LanM
-  protein_examples[0] evidence asserts supports: support with ''mild acid stripping''
-  over ''transition/base metals'' instead of stepwise 30 mM and 50 mM malonate elution
-  at pH 5.0 from a synthetic 16-REE chloride feed, and causal_graphs[0] describes
-  the synthetic 16-REE feed as a ''mixed leachate feed'' / ''multi-metal leachate''
-  with unqualified supports: support on edges[0]) for Stage 5 grouped remediation.'
+  Verified CHEBI identity (CHEBI:33330 scandium atom), its dated jurisdiction-scoped
+  criticality entry (United States of America, USGS Final List of Critical Minerals
+  2025, usgs2025), the immobilized Methylorubrum extorquens AM1 lanmodulin (Mex-LanM,
+  UniProtKB:C5B164) chromatographic separation mechanism from Dong et al. (2024, Separation
+  and Purification Technology 333:125919, DOI:10.1016/j.seppur.2023.125919), and causal_graphs[0]
+  (immobilized_mex_lanm_scandium_separation_graph). Identified 1 minor graph finding
+  (cmmmech-cycle11-stage4-finding-0003: Mex-LanM protein_examples[0] evidence asserts
+  supports: support with ''mild acid stripping'' over ''transition/base metals'' instead
+  of stepwise 30 mM and 50 mM malonate elution at pH 5.0 from a synthetic 16-REE chloride
+  feed, and causal_graphs[0] describes the synthetic 16-REE feed as a ''mixed leachate
+  feed'' / ''multi-metal leachate'' with unqualified supports: support on edges[0])
+  for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle11-stage4-record-reviewer
   kind: agent
@@ -240,9 +241,10 @@ actions:
   description: 'Update mechanisms[0].protein_examples[0].evidence[0] and causal_graphs[0].nodes[0].protein_examples[0].evidence[0]
     in data/records/scandium.yaml to supports: partial with synchronized prose describing
     selective Sc(III) retention from a synthetic pH 3.0 16-REE chloride mixture and
-    stepwise 30 mM / 50 mM malonate elution at pH 5.0 (95.4% purity, Figures 3C and
-    5E-F, Table S9/S10), and update causal_graphs[0].description, nodes[1..2], and
-    edges[0..1] (with supports: partial on edges[0]) during Stage 5 grouped remediation
+    stepwise 30 mM / 50 mM malonate elution at pH 5.0 (above 99 mol% purity among
+    REEs and above 99% two-step yield; ~94.5% Sc yield at 30 mM malonate, Figures
+    3C and 5E-F, Table S9/S10), and update causal_graphs[0].description, nodes[1..2],
+    and edges[0..1] (with supports: partial on edges[0]) during Stage 5 grouped remediation
     with canonical history provenance.'
   owner_paths:
   - repository: CultureBotAI/CMMMech
@@ -277,8 +279,10 @@ evidence:
   support: supports
   summary: Dong et al. (2024) loaded a synthetic pH 3.0 16-REE chloride mixture (nominal
     0.4 mM total REE in Figure 5; 0.2430 mM sum with 23.8 +/- 1.1 uM Sc in Table S9/S10)
-    onto a 3.3 uM LanM-agarose column and eluted Sc(III) at 95.4% purity using stepwise
-    30 mM and 50 mM malonate at pH 5.0.
+    onto an agarose resin column with immobilized Mex-LanM and eluted Sc(III) at above
+    99 mol% purity among REEs and above 99% yield for the two-step malonate process
+    (~94.5% Sc yield at 30 mM malonate and ~98.9% La yield at 50 mM malonate at pH
+    5.0).
 limitations:
 - 'data/records/scandium.yaml misdescribes stepwise pH 5.0 malonate elution from a
   synthetic 16-REE chloride feed as mild acid stripping over transition/base metals

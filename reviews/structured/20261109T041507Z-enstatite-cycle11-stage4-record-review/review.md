@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed data/records/enstatite.yaml (cmmmech:enstatite) at commit 794684703f77385b6e9bca32167f6c8d1e5e29bf. Verified mineral identity (orthorhombic Mg2Si2O6, IMA symbol En, IMA:1988 s.p.), the Gluconobacter oxydans NRRL B-58 and engineered B58 delta-pstS, P112:mgdh mixed olivine/enstatite bioleaching mechanism from Klug et al. (2026, Scientific Reports 16:25317, DOI:10.1038/s41598-026-63817-0), all 4 synchronized UniProtKB protein_examples (PstS paralogs UniProtKB:Q5FTI1 and UniProtKB:Q5FSF4, PqqC UniProtKB:Q9L3B2, Gdh UniProtKB:P27175), and causal_graphs[0] (gluconobacter_enstatite_bioleaching_graph). Identified 1 minor graph finding (cmmmech-cycle11-stage4-finding-0001: nodes[4].description retains the generic parenthetical template string repeating the capitalized node label, and edges[0..2].evidence[0].explanation retain generic one-line template explanations) for Stage 5 grouped remediation.
+Reviewed data/records/enstatite.yaml (cmmmech:enstatite) at commit 794684703f77385b6e9bca32167f6c8d1e5e29bf. Verified mineral identity (orthorhombic Mg2Si2O6, IMA symbol En, IMA:1988 s.p.), the engineered Gluconobacter oxydans B58 delta-pstS, P112:mgdh mixed olivine/enstatite bioleaching mechanism from Klug et al. (2026, Scientific Reports 16:25317, DOI:10.1038/s41598-026-63817-0), all 4 synchronized UniProtKB protein_examples (PstS paralogs UniProtKB:Q5FTI1 and UniProtKB:Q5FSF4, PqqC UniProtKB:Q9L3B2, Gdh UniProtKB:P27175), and causal_graphs[0] (gluconobacter_enstatite_bioleaching_graph). Identified 1 minor graph finding (cmmmech-cycle11-stage4-finding-0001: nodes[4].description retains the generic parenthetical template string repeating the capitalized node label, and edges[0..2].evidence[0].explanation retain generic one-line template explanations) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -46,7 +46,7 @@ All 4 Gluconobacter oxydans 621H UniProtKB protein_examples (Q5FTI1, Q5FSF4, Q9L
 
 minor / open / confirmed; issue key: cmmmech.gluconobacter-enstatite-olivine-dunite.template-node-edge-explanations-and-pqqc-gdh-support.
 
-Across the three Gluconobacter oxydans whole-culture biolixiviant silicate bioleaching records — data/records/enstatite.yaml (cmmmech:enstatite, mineral, Klug et al. 2026 Scientific Reports 16:25317, DOI:10.1038/s41598-026-63817-0, klug_2026; causal_graphs[0] gluconobacter_enstatite_bioleaching_graph, lines 143-321), data/records/olivine-group.yaml (cmmmech:olivine-group, mineral_group, Klug et al. 2026, klug_2026; causal_graphs[0] gluconobacter_olivine_bioleaching_graph, lines 143-321), and data/records/dunite.yaml (cmmmech:dunite, primary_resource, Lee et al. 2025 Scientific Reports 15:15134, DOI:10.1038/s41598-025-99655-9, lee2025; causal_graphs[0] gluconobacter_dunite_bioleaching_graph, lines 159-349) — data/records/enstatite.yaml nodes[4].description (enstatite_mixed_feed, line 269) retains the generic parenthetical template string repeating the capitalized node label verbatim ('Starting solid substrate (Enstatite-bearing mixed silicate feed) exposed to the acidic biolixiviant.') instead of specifying the ~40 um milled, ultrasonically washed 69 wt% olivine / 31 wt% enstatite mixed silicate powder leached at 5% w/v (0.5 g per 10 mL liquid) without a pure-enstatite control (mechanisms[0].context, lines 31-32). Furthermore, edges[1].evidence[0].explanation (line 294 in enstatite.yaml and olivine-group.yaml; line 310 in dunite.yaml) and edges[2].evidence[0].explanation (line 303 in enstatite.yaml and olivine-group.yaml; line 319 in dunite.yaml) retain identical generic one-line template strings ('PQQ-dependent glucose dehydrogenase activity drives gluconic-acid biolixiviant production in Gluconobacter oxydans.' and 'Periplasmic glucose oxidation by G. oxydans generates the acidic gluconic-acid-rich biolixiviant.'), and edges[0].evidence[0].explanation in enstatite.yaml and olivine-group.yaml (line 285) omits that the engineered strain combined pstS deletion with the P112:mgdh promoter swap. Additionally, in data/records/dunite.yaml, mechanisms[0].protein_examples[2..3].evidence[0] (lines 105-107 and 130-132 for UniProtKB:Q9L3B2 pqqC and UniProtKB:P27175 gdh), causal_graphs[0].nodes[1..2].protein_examples[0].evidence[0] (lines 242-244 and 274-276), and causal_graphs[0].edges[1..2].evidence[0] (lines 308-310 and 317-319) assert supports: support with generic template explanations, whereas Lee et al. (2025) compared wild-type G. oxydans NRRL B-58 (initial pH 2.39 +/- 0.02) and engineered B58 delta-pstS, P112:mgdh (initial pH 2.01 +/- 0.02) whole-culture biolixiviants without single-gene knockouts or purified-enzyme assays isolating pqqC or mgdh (supports: partial, matching enstatite.yaml and olivine-group.yaml). In this scope, 1 record(s) (enstatite) are affected.
+Across the three Gluconobacter oxydans whole-culture biolixiviant silicate bioleaching records — data/records/enstatite.yaml (cmmmech:enstatite, mineral, Klug et al. 2026 Scientific Reports 16:25317, DOI:10.1038/s41598-026-63817-0, klug_2026; causal_graphs[0] gluconobacter_enstatite_bioleaching_graph, lines 143-321), data/records/olivine-group.yaml (cmmmech:olivine-group, mineral_group, Klug et al. 2026, klug_2026; causal_graphs[0] gluconobacter_olivine_bioleaching_graph, lines 143-321), and data/records/dunite.yaml (cmmmech:dunite, primary_resource, Lee et al. 2025 Scientific Reports 15:15134, DOI:10.1038/s41598-025-99655-9, lee2025; causal_graphs[0] gluconobacter_dunite_bioleaching_graph, lines 159-337) — data/records/enstatite.yaml nodes[4].description (enstatite_mixed_feed, line 269) retains the generic parenthetical template string repeating the capitalized node label verbatim ('Starting solid substrate (Enstatite-bearing mixed silicate feed) exposed to the acidic biolixiviant.') instead of specifying the ~40 um milled, ultrasonically washed 69 wt% olivine / 31 wt% enstatite mixed silicate powder leached at 5% w/v (0.5 g per 10 mL liquid) without a pure-enstatite control (mechanisms[0].context, lines 31-32). Furthermore, edges[1].evidence[0].explanation (line 294 in enstatite.yaml and olivine-group.yaml; line 310 in dunite.yaml) and edges[2].evidence[0].explanation (line 303 in enstatite.yaml and olivine-group.yaml; line 319 in dunite.yaml) retain identical generic one-line template strings ('PQQ-dependent glucose dehydrogenase activity drives gluconic-acid biolixiviant production in Gluconobacter oxydans.' and 'Periplasmic glucose oxidation by G. oxydans generates the acidic gluconic-acid-rich biolixiviant.'), and edges[0].evidence[0].explanation in enstatite.yaml and olivine-group.yaml (line 285) omits that the engineered strain combined pstS deletion with the P112:mgdh promoter swap. Additionally, in data/records/dunite.yaml, mechanisms[0].protein_examples[2..3].evidence[0] (lines 105-107 and 130-132 for UniProtKB:Q9L3B2 pqqC and UniProtKB:P27175 gdh), causal_graphs[0].nodes[1..2].protein_examples[0].evidence[0] (lines 242-244 and 274-276), and causal_graphs[0].edges[1..2].evidence[0] (lines 308-310 and 317-319) assert supports: support with generic template explanations, whereas Lee et al. (2025) compared wild-type G. oxydans NRRL B-58 (initial pH 2.39 +/- 0.02) and engineered B58 delta-pstS, P112:mgdh (initial pH 2.01 +/- 0.02) whole-culture biolixiviants without single-gene knockouts or purified-enzyme assays isolating pqqC or mgdh (supports: partial, matching enstatite.yaml and olivine-group.yaml). In this scope, 1 record(s) (enstatite) are affected.
 
 ## Recommended Actions And Acceptance Checks
 
@@ -67,7 +67,7 @@ Replace the generic parenthetical template description on enstatite.yaml nodes[4
 | Evidence | Reference / locator | Support | Observation |
 | --- | --- | --- | --- |
 | ev-enstatite-file | data/records/enstatite.yaml; mechanisms[0] (lines 28-141); causal_graphs[0] (lines 143-321) | supports | Inspected data/records/enstatite.yaml, verifying mechanisms[0] (lines 28-141) against causal_graphs[0].nodes[4] (lines 266-269) and causal_graphs[0].edges[0..2] (lines 277-303). |
-| ev-enstatite-klug2026 | DOI:10.1038/s41598-026-63817-0; Klug et al. 2026 Scientific Reports 16:25317, Figures 1-2, Tables S3-S4, S10, Methods | supports | Klug et al. (2026) leached a ~40 um milled, ultrasonically washed 69 wt% olivine / 31 wt% enstatite mixed silicate powder (5% w/v) with whole-culture biolixiviants from wild-type G. oxydans B58 and engineered B58 delta-pstS, P112:mgdh. |
+| ev-enstatite-klug2026 | DOI:10.1038/s41598-026-63817-0; Klug et al. 2026 Scientific Reports 16:25317, Figures 1-2, Tables S3-S4, S10, Methods | supports | Klug et al. (2026) leached a ~40 um milled, ultrasonically washed 69 wt% olivine / 31 wt% enstatite mixed silicate powder (5% w/v) with cell-containing and cell-free biolixiviants produced by engineered G. oxydans B58 delta-pstS, P112:mgdh. |
 
 ## Limits And Additional Notes
 
@@ -91,15 +91,14 @@ verdict: pass_with_limitations
 scientific_review: true
 summary: 'Reviewed data/records/enstatite.yaml (cmmmech:enstatite) at commit 794684703f77385b6e9bca32167f6c8d1e5e29bf.
   Verified mineral identity (orthorhombic Mg2Si2O6, IMA symbol En, IMA:1988 s.p.),
-  the Gluconobacter oxydans NRRL B-58 and engineered B58 delta-pstS, P112:mgdh mixed
-  olivine/enstatite bioleaching mechanism from Klug et al. (2026, Scientific Reports
-  16:25317, DOI:10.1038/s41598-026-63817-0), all 4 synchronized UniProtKB protein_examples
-  (PstS paralogs UniProtKB:Q5FTI1 and UniProtKB:Q5FSF4, PqqC UniProtKB:Q9L3B2, Gdh
-  UniProtKB:P27175), and causal_graphs[0] (gluconobacter_enstatite_bioleaching_graph).
-  Identified 1 minor graph finding (cmmmech-cycle11-stage4-finding-0001: nodes[4].description
-  retains the generic parenthetical template string repeating the capitalized node
-  label, and edges[0..2].evidence[0].explanation retain generic one-line template
-  explanations) for Stage 5 grouped remediation.'
+  the engineered Gluconobacter oxydans B58 delta-pstS, P112:mgdh mixed olivine/enstatite
+  bioleaching mechanism from Klug et al. (2026, Scientific Reports 16:25317, DOI:10.1038/s41598-026-63817-0),
+  all 4 synchronized UniProtKB protein_examples (PstS paralogs UniProtKB:Q5FTI1 and
+  UniProtKB:Q5FSF4, PqqC UniProtKB:Q9L3B2, Gdh UniProtKB:P27175), and causal_graphs[0]
+  (gluconobacter_enstatite_bioleaching_graph). Identified 1 minor graph finding (cmmmech-cycle11-stage4-finding-0001:
+  nodes[4].description retains the generic parenthetical template string repeating
+  the capitalized node label, and edges[0..2].evidence[0].explanation retain generic
+  one-line template explanations) for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle11-stage4-record-reviewer
   kind: agent
@@ -210,7 +209,7 @@ findings:
     al. 2026, klug_2026; causal_graphs[0] gluconobacter_olivine_bioleaching_graph,
     lines 143-321), and data/records/dunite.yaml (cmmmech:dunite, primary_resource,
     Lee et al. 2025 Scientific Reports 15:15134, DOI:10.1038/s41598-025-99655-9, lee2025;
-    causal_graphs[0] gluconobacter_dunite_bioleaching_graph, lines 159-349) — data/records/enstatite.yaml
+    causal_graphs[0] gluconobacter_dunite_bioleaching_graph, lines 159-337) — data/records/enstatite.yaml
     nodes[4].description (enstatite_mixed_feed, line 269) retains the generic parenthetical
     template string repeating the capitalized node label verbatim (''Starting solid
     substrate (Enstatite-bearing mixed silicate feed) exposed to the acidic biolixiviant.'')
@@ -286,8 +285,9 @@ evidence:
   accessed_at: '2026-11-09T04:15:07Z'
   support: supports
   summary: Klug et al. (2026) leached a ~40 um milled, ultrasonically washed 69 wt%
-    olivine / 31 wt% enstatite mixed silicate powder (5% w/v) with whole-culture biolixiviants
-    from wild-type G. oxydans B58 and engineered B58 delta-pstS, P112:mgdh.
+    olivine / 31 wt% enstatite mixed silicate powder (5% w/v) with cell-containing
+    and cell-free biolixiviants produced by engineered G. oxydans B58 delta-pstS,
+    P112:mgdh.
 limitations:
 - data/records/enstatite.yaml retains a generic parenthetical template description
   on causal_graphs[0].nodes[4].description and generic one-line template explanations

@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 66 element records in data/records/*.yaml at commit 794684703f77385b6e9bca32167f6c8d1e5e29bf, including the 2 Cycle 11 Stage 2 (PR #960, commit df061de7) and Stage 3 (PR #963, commit 79468470) element causal-graph and UniProtKB grounding expansions (cmmmech:thallium and cmmmech:titanium). Verified CHEBI identifiers, dated jurisdiction-scoped criticality entries across 64/66 records (with helium and potash explicitly documenting why elemental CHEBI entries omit parent-commodity criticality), primary-source-supported microbial mechanisms across 63/66 records (66 microbial mechanisms total, 0 abiotic), causal_graphs across 30/66 records (31 graphs, 60 GENE_OR_PROTEIN nodes: 57 GROUNDED across 29 records and 3 UNGROUNDED across cmmmech:erbium, cmmmech:gold, and cmmmech:terbium), and live-verified UniProtKB protein_examples across 29/30 records (54 unique accessions). Identified 1 minor graph finding in 1 element record (cmmmech-cycle11-stage4-finding-0003 on cmmmech:scandium) for Stage 5 grouped remediation.
+Reviewed all 66 element records in data/records/*.yaml at commit 794684703f77385b6e9bca32167f6c8d1e5e29bf, including the 2 Cycle 11 Stage 2 (PR #960, commit df061de7) and Stage 3 (PR #963, commit 79468470) element causal-graph and UniProtKB grounding expansions (cmmmech:thallium and cmmmech:titanium). Verified CHEBI identifiers, dated jurisdiction-scoped criticality entries across 64/66 records (with cmmmech:gold and cmmmech:thallium omitting criticality where the reviewed lists do not designate them), primary-source-supported microbial mechanisms across 63/66 records (66 microbial mechanisms total, 0 abiotic), causal_graphs across 30/66 records (31 graphs, 60 GENE_OR_PROTEIN nodes: 57 GROUNDED across 29 records and 3 UNGROUNDED across cmmmech:erbium, cmmmech:gold, and cmmmech:terbium), and live-verified UniProtKB protein_examples across 29/30 records (54 unique accessions). Identified 1 minor graph finding in 1 element record (cmmmech-cycle11-stage4-finding-0003 on cmmmech:scandium) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -118,7 +118,7 @@ In data/records/scandium.yaml (cmmmech:scandium, element, Dong et al. 2024 Separ
 
 ### act-refine-dong2024-scandium-mex-lanm-graph-and-protein-evidence
 
-Update mechanisms[0].protein_examples[0].evidence[0] and causal_graphs[0].nodes[0].protein_examples[0].evidence[0] in data/records/scandium.yaml to supports: partial with synchronized prose describing selective Sc(III) retention from a synthetic pH 3.0 16-REE chloride mixture and stepwise 30 mM / 50 mM malonate elution at pH 5.0 (95.4% purity, Figures 3C and 5E-F, Table S9/S10), and update causal_graphs[0].description, nodes[1..2], and edges[0..1] (with supports: partial on edges[0]) during Stage 5 grouped remediation with canonical history provenance.
+Update mechanisms[0].protein_examples[0].evidence[0] and causal_graphs[0].nodes[0].protein_examples[0].evidence[0] in data/records/scandium.yaml to supports: partial with synchronized prose describing selective Sc(III) retention from a synthetic pH 3.0 16-REE chloride mixture and stepwise 30 mM / 50 mM malonate elution at pH 5.0 (above 99 mol% purity among REEs and above 99% two-step yield; ~94.5% Sc yield at 30 mM malonate, Figures 3C and 5E-F, Table S9/S10), and update causal_graphs[0].description, nodes[1..2], and edges[0..1] (with supports: partial on edges[0]) during Stage 5 grouped remediation with canonical history provenance.
 
 - mechanisms[0].protein_examples[0] and causal_graphs[0].nodes[0].protein_examples[0] in scandium.yaml are synchronized with supports: partial and specify stepwise pH 5.0 malonate elution (30 mM and 50 mM) from a synthetic 16-REE chloride feed rather than mild acid stripping.
 - causal_graphs[0].description, nodes[1..2], and edges[0..1] in scandium.yaml accurately describe the synthetic pH 3.0 16-REE chloride feed (0.4 mM nominal / 0.2430 mM sum in Table S9/S10) and qualify edges[0].evidence[0].supports to partial.
@@ -137,7 +137,7 @@ Update mechanisms[0].protein_examples[0].evidence[0] and causal_graphs[0].nodes[
 
 ## Limits And Additional Notes
 
-- 3 of 66 element records (astatine, francium, polonium) are short-lived radioactive elements lacking published microbial extraction or transformation studies.
+- 3 of 66 element records (beryllium, helium, promethium) currently lack published microbial extraction, bioleaching, or biotransformation mechanism entries in the corpus.
 - 3 GENE_OR_PROTEIN nodes across 3 element causal graphs are explicitly marked UNGROUNDED because the cited primary studies did not sequence the strain or identify a specific protein: cmmmech:erbium (methylorubrum_extorquens_am1_er3_biosorption_graph node am1_surface_phosphoryl_carboxyl_ligands), cmmmech:gold (delftia_au3_biomineralization_graph node delftibactin_nrps_complex), and cmmmech:terbium (sporosarcina_dw018_tb3_micp_graph node dw018_urease_system).
 - Cohort covers 100% (66/66) of element records in data/records/*.yaml at commit 794684703f77385b6e9bca32167f6c8d1e5e29bf.
 
@@ -161,11 +161,11 @@ summary: 'Reviewed all 66 element records in data/records/*.yaml at commit 79468
   including the 2 Cycle 11 Stage 2 (PR #960, commit df061de7) and Stage 3 (PR #963,
   commit 79468470) element causal-graph and UniProtKB grounding expansions (cmmmech:thallium
   and cmmmech:titanium). Verified CHEBI identifiers, dated jurisdiction-scoped criticality
-  entries across 64/66 records (with helium and potash explicitly documenting why
-  elemental CHEBI entries omit parent-commodity criticality), primary-source-supported
-  microbial mechanisms across 63/66 records (66 microbial mechanisms total, 0 abiotic),
-  causal_graphs across 30/66 records (31 graphs, 60 GENE_OR_PROTEIN nodes: 57 GROUNDED
-  across 29 records and 3 UNGROUNDED across cmmmech:erbium, cmmmech:gold, and cmmmech:terbium),
+  entries across 64/66 records (with cmmmech:gold and cmmmech:thallium omitting criticality
+  where the reviewed lists do not designate them), primary-source-supported microbial
+  mechanisms across 63/66 records (66 microbial mechanisms total, 0 abiotic), causal_graphs
+  across 30/66 records (31 graphs, 60 GENE_OR_PROTEIN nodes: 57 GROUNDED across 29
+  records and 3 UNGROUNDED across cmmmech:erbium, cmmmech:gold, and cmmmech:terbium),
   and live-verified UniProtKB protein_examples across 29/30 records (54 unique accessions).
   Identified 1 minor graph finding in 1 element record (cmmmech-cycle11-stage4-finding-0003
   on cmmmech:scandium) for Stage 5 grouped remediation.'
@@ -1687,9 +1687,10 @@ actions:
   description: 'Update mechanisms[0].protein_examples[0].evidence[0] and causal_graphs[0].nodes[0].protein_examples[0].evidence[0]
     in data/records/scandium.yaml to supports: partial with synchronized prose describing
     selective Sc(III) retention from a synthetic pH 3.0 16-REE chloride mixture and
-    stepwise 30 mM / 50 mM malonate elution at pH 5.0 (95.4% purity, Figures 3C and
-    5E-F, Table S9/S10), and update causal_graphs[0].description, nodes[1..2], and
-    edges[0..1] (with supports: partial on edges[0]) during Stage 5 grouped remediation
+    stepwise 30 mM / 50 mM malonate elution at pH 5.0 (above 99 mol% purity among
+    REEs and above 99% two-step yield; ~94.5% Sc yield at 30 mM malonate, Figures
+    3C and 5E-F, Table S9/S10), and update causal_graphs[0].description, nodes[1..2],
+    and edges[0..1] (with supports: partial on edges[0]) during Stage 5 grouped remediation
     with canonical history provenance.'
   owner_paths:
   - repository: CultureBotAI/CMMMech
@@ -1726,8 +1727,9 @@ evidence:
     a synthetic 16-REE chloride feed, and causal_graphs[0] describes the synthetic
     16-REE feed as a ''mixed leachate feed'' / ''multi-metal leachate''.'
 limitations:
-- 3 of 66 element records (astatine, francium, polonium) are short-lived radioactive
-  elements lacking published microbial extraction or transformation studies.
+- 3 of 66 element records (beryllium, helium, promethium) currently lack published
+  microbial extraction, bioleaching, or biotransformation mechanism entries in the
+  corpus.
 - '3 GENE_OR_PROTEIN nodes across 3 element causal graphs are explicitly marked UNGROUNDED
   because the cited primary studies did not sequence the strain or identify a specific
   protein: cmmmech:erbium (methylorubrum_extorquens_am1_er3_biosorption_graph node
