@@ -1,0 +1,250 @@
+schema_version: 1.0.0
+review_id: 20261109T032700Z-thallium-cycle11-stage3-issue964-remediation-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: 'Cycle 11 Stage 3 Issue #964 remediation review of Thallium (cmmmech:thallium)'
+started_at: '2026-11-09T03:23:00Z'
+finished_at: '2026-11-09T03:27:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle11-stage3-protein-examples-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md verifying
+    the Cycle 11 Stage 3 Issue #964 remediated UniProtKB ProteinExample curation in data/records/thallium.yaml
+    (SHA-256 0183150b963b97fb4331893297061086fdd168bd0c27027f651101233153b260) against live UniProtKB
+    REST API grounding and cited primary source (smeaton2012_chapter4: Smeaton CM (2012), University of
+    Windsor PhD dissertation, Investigating the Susceptibility of Jarosite Minerals to Reductive Dissolution
+    by a Dissimilatory Metal Reducing Bacterium (Shewanella putrefaciens CN32). Chapter 4, printed pages
+    113-148 (PDF 138-173), main text, Figures 4.1-4.3, Tables S4.1-S4.4 and Figures S4.1-S4.7. Author
+    primary account of the same experiment, not independent replication. (https://www.collectionscanada.gc.ca/obj/thesescanada/vol2/002/NR78584.PDF)).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: f622889fbaf868e6f444fa93e4ce9790d45a9514
+  state: working_tree
+  inputs:
+  - path: data/records/thallium.yaml
+    sha256: 0183150b963b97fb4331893297061086fdd168bd0c27027f651101233153b260
+    role: target
+  - path: history/records/thallium/2026-11-09T023713Z-marcin-d3111b.yaml
+    sha256: e5104826de8736c5b190f5af54fc46343c8864a84b00c7354a7306b3e2843f6a
+    role: context
+  - path: history/records/thallium/2026-11-09T032336Z-marcin-80f4d9.yaml
+    sha256: 78cea1ae073e8910a3c25785812df1325f1b1b747376cd9604e3e24fdebe8a3f
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:thallium
+  path: data/records/thallium.yaml
+  label: Thallium
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/thallium.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/thallium/2026-11-09T023713Z-marcin-d3111b.yaml
+    role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/thallium/2026-11-09T032336Z-marcin-80f4d9.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 11 Stage 3 Issue #964 remediation review of data/records/thallium.yaml (SHA-256
+    0183150b963b97fb4331893297061086fdd168bd0c27027f651101233153b260) and its canonical EDIT history sidecar(s)
+    (history/records/thallium/2026-11-09T023713Z-marcin-d3111b.yaml, history/records/thallium/2026-11-09T032336Z-marcin-80f4d9.yaml)
+    verifying live UniProtKB protein grounding, source-faithful evidence explanations, reference-proteome
+    and Swiss-Prot parity, and causal-edge descriptions across causal_graph ''cn32_tl_jarosite_mobilization_graph''
+    (mechanism_ref: cn32_associated_tl_mobilization, 5 nodes / 4 edges; ccme_maturation: [UniProtKB:A4YBV6
+    (ccmE, CCME_SHEPC, NCBITaxon:319224), UniProtKB:A0ABX8XC47 (ccmE, A0ABX8XC47_SHEPU, UP000827084)];
+    cyma_dehydrogenase: [UniProtKB:A0ABX8XAW9 (cymA, A0ABX8XAW9_SHEPU, UP000827084)]; mtrc_reductase:
+    [UniProtKB:A0ABX8XFE6 (K3G22_06995, A0ABX8XFE6_SHEPU, UP000827084)]).'
+  selection: 'Cycle 11 Stage 3 Issue #964 protein_examples remediation for cmmmech:thallium'
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:thallium
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/thallium.yaml
+  locator: Working-tree record data/records/thallium.yaml (mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples)
+  accessed_at: '2026-11-09T03:27:00Z'
+  support: supports
+  summary: 'Curated and remediated data/records/thallium.yaml (SHA-256 0183150b963b97fb4331893297061086fdd168bd0c27027f651101233153b260)
+    with causal_graph ''cn32_tl_jarosite_mobilization_graph'' (mechanism_ref: cn32_associated_tl_mobilization,
+    5 nodes / 4 edges; ccme_maturation: [UniProtKB:A4YBV6 (ccmE, CCME_SHEPC, NCBITaxon:319224), UniProtKB:A0ABX8XC47
+    (ccmE, A0ABX8XC47_SHEPU, UP000827084)]; cyma_dehydrogenase: [UniProtKB:A0ABX8XAW9 (cymA, A0ABX8XAW9_SHEPU,
+    UP000827084)]; mtrc_reductase: [UniProtKB:A0ABX8XFE6 (K3G22_06995, A0ABX8XFE6_SHEPU, UP000827084)]),
+    achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving strictly entry-specific, source-faithful explanations and caveats.'
+  snapshot_sha256: 0183150b963b97fb4331893297061086fdd168bd0c27027f651101233153b260
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://www.collectionscanada.gc.ca/obj/thesescanada/vol2/002/NR78584.PDF
+  locator: 'smeaton2012_chapter4: Smeaton CM (2012), University of Windsor PhD dissertation, Investigating
+    the Susceptibility of Jarosite Minerals to Reductive Dissolution by a Dissimilatory Metal Reducing
+    Bacterium (Shewanella putrefaciens CN32). Chapter 4, printed pages 113-148 (PDF 138-173), main text,
+    Figures 4.1-4.3, Tables S4.1-S4.4 and Figures S4.1-S4.7. Author primary account of the same experiment,
+    not independent replication. (https://www.collectionscanada.gc.ca/obj/thesescanada/vol2/002/NR78584.PDF)'
+  accessed_at: '2026-11-09T03:27:00Z'
+  support: supports
+  summary: 'Live-verified UniProtKB grounding across UniProtKB:A4YBV6 (CCME_SHEPC, Cytochrome c-type biogenesis
+    protein CcmE, gene_symbol: ccmE, SWISS_PROT, NCBITaxon:319224 Shewanella putrefaciens CN-32); UniProtKB:A0ABX8XC47
+    (A0ABX8XC47_SHEPU, Cytochrome c-type biogenesis protein CcmE, gene_symbol: ccmE, TREMBL, NCBITaxon:24
+    Shewanella putrefaciens, UP000827084); UniProtKB:A0ABX8XAW9 (A0ABX8XAW9_SHEPU, Cytochrome c-type protein,
+    gene_symbol: cymA, TREMBL, NCBITaxon:24 Shewanella putrefaciens, UP000827084); UniProtKB:A0ABX8XFE6
+    (A0ABX8XFE6_SHEPU, OmcA/MtrC family decaheme c-type cytochrome, gene_symbol: K3G22_06995, TREMBL,
+    NCBITaxon:24 Shewanella putrefaciens, UP000827084). Primary mechanism source (smeaton2012_chapter4:
+    Smeaton CM (2012), University of Windsor PhD dissertation, Investigating the Susceptibility of Jarosite
+    Minerals to Reductive Dissolution by a Dissimilatory Metal Reducing Bacterium (Shewanella putrefaciens
+    CN32). Chapter 4, printed pages 113-148 (PDF 138-173), main text, Figures 4.1-4.3, Tables S4.1-S4.4
+    and Figures S4.1-S4.7. Author primary account of the same experiment, not independent replication.
+    (https://www.collectionscanada.gc.ca/obj/thesescanada/vol2/002/NR78584.PDF)) parameters, analytical
+    denominators, and source-level caveats are strictly preserved on all nodes, edges, and ProteinExample
+    evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/thallium/2026-11-09T023713Z-marcin-d3111b.yaml
+  locator: Canonical EDIT history sidecar history/records/thallium/2026-11-09T023713Z-marcin-d3111b.yaml
+  accessed_at: '2026-11-09T03:27:00Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/thallium/2026-11-09T023713Z-marcin-d3111b.yaml
+    (SHA-256 e5104826de8736c5b190f5af54fc46343c8864a84b00c7354a7306b3e2843f6a): Add live-verified species-level
+    Shewanella putrefaciens reference-proteome CcmE (UniProtKB:A0ABX8XC47, K3G22_00975, UP000827084, NCBITaxon:24)
+    to thallium.yaml (cn32_associated_tl_mobilization / cn32_tl_jarosite_mobilization_graph) alongside
+    exact-strain Swiss-Prot UniProtKB:A4YBV6 (Cycle 11 Stage 3).'
+  snapshot_sha256: e5104826de8736c5b190f5af54fc46343c8864a84b00c7354a7306b3e2843f6a
+- evidence_id: edit_history_2
+  kind: record_content
+  reference: history/records/thallium/2026-11-09T032336Z-marcin-80f4d9.yaml
+  locator: Canonical EDIT history sidecar history/records/thallium/2026-11-09T032336Z-marcin-80f4d9.yaml
+  accessed_at: '2026-11-09T03:27:00Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/thallium/2026-11-09T032336Z-marcin-80f4d9.yaml
+    (SHA-256 78cea1ae073e8910a3c25785812df1325f1b1b747376cd9604e3e24fdebe8a3f): Fix UniProtKB:A0ABX8XC47
+    evidence explanation in thallium.yaml to accurately describe the unreviewed TrEMBL UP000827084 species-level
+    S. putrefaciens CcmE entry (K3G22_00975) (Issue #964).'
+  snapshot_sha256: 78cea1ae073e8910a3c25785812df1325f1b1b747376cd9604e3e24fdebe8a3f
+- evidence_id: validation
+  kind: validation
+  reference: data/records/thallium.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and validate-history --base
+    main
+  accessed_at: '2026-11-09T03:27:00Z'
+  support: supports
+  summary: data/records/thallium.yaml and history/records/thallium/2026-11-09T023713Z-marcin-d3111b.yaml,
+    history/records/thallium/2026-11-09T032336Z-marcin-80f4d9.yaml pass strict LinkML schema, protein_examples
+    parity, and history validation with 0 errors.
+  snapshot_sha256: 0183150b963b97fb4331893297061086fdd168bd0c27027f651101233153b260
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 698 record(s); 0 failed.
+  target_ids:
+  - cmmmech:thallium
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: All history sidecars pass validation with 0 errors.
+  target_ids:
+  - cmmmech:thallium
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: protein_grounding_and_graph_parity
+  area: graph
+  topic: 'Verification of remediated UniProtKB protein_examples grounding and causal-graph parity across
+    causal_graph ''cn32_tl_jarosite_mobilization_graph'' (mechanism_ref: cn32_associated_tl_mobilization,
+    5 nodes / 4 edges; ccme_maturation: [UniProtKB:A4YBV6 (ccmE, CCME_SHEPC, NCBITaxon:319224), UniProtKB:A0ABX8XC47
+    (ccmE, A0ABX8XC47_SHEPU, UP000827084)]; cyma_dehydrogenase: [UniProtKB:A0ABX8XAW9 (cymA, A0ABX8XAW9_SHEPU,
+    UP000827084)]; mtrc_reductase: [UniProtKB:A0ABX8XFE6 (K3G22_06995, A0ABX8XFE6_SHEPU, UP000827084)])'
+  outcome: supported
+  summary: 'Remediated data/records/thallium.yaml (SHA-256 0183150b963b97fb4331893297061086fdd168bd0c27027f651101233153b260)
+    under Issue #964 with causal_graph ''cn32_tl_jarosite_mobilization_graph'' (mechanism_ref: cn32_associated_tl_mobilization,
+    5 nodes / 4 edges; ccme_maturation: [UniProtKB:A4YBV6 (ccmE, CCME_SHEPC, NCBITaxon:319224), UniProtKB:A0ABX8XC47
+    (ccmE, A0ABX8XC47_SHEPU, UP000827084)]; cyma_dehydrogenase: [UniProtKB:A0ABX8XAW9 (cymA, A0ABX8XAW9_SHEPU,
+    UP000827084)]; mtrc_reductase: [UniProtKB:A0ABX8XFE6 (K3G22_06995, A0ABX8XFE6_SHEPU, UP000827084)]),
+    achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving entry-specific, source-faithful support levels and caveats from smeaton2012_chapter4:
+    Smeaton CM (2012), University of Windsor PhD dissertation, Investigating the Susceptibility of Jarosite
+    Minerals to Reductive Dissolution by a Dissimilatory Metal Reducing Bacterium (Shewanella putrefaciens
+    CN32). Chapter 4, printed pages 113-148 (PDF 138-173), main text, Figures 4.1-4.3, Tables S4.1-S4.4
+    and Figures S4.1-S4.7. Author primary account of the same experiment, not independent replication.
+    (https://www.collectionscanada.gc.ca/obj/thesescanada/vol2/002/NR78584.PDF). Live-verified UniProtKB
+    grounding across UniProtKB:A4YBV6 (CCME_SHEPC, Cytochrome c-type biogenesis protein CcmE, gene_symbol:
+    ccmE, SWISS_PROT, NCBITaxon:319224 Shewanella putrefaciens CN-32); UniProtKB:A0ABX8XC47 (A0ABX8XC47_SHEPU,
+    Cytochrome c-type biogenesis protein CcmE, gene_symbol: ccmE, TREMBL, NCBITaxon:24 Shewanella putrefaciens,
+    UP000827084); UniProtKB:A0ABX8XAW9 (A0ABX8XAW9_SHEPU, Cytochrome c-type protein, gene_symbol: cymA,
+    TREMBL, NCBITaxon:24 Shewanella putrefaciens, UP000827084); UniProtKB:A0ABX8XFE6 (A0ABX8XFE6_SHEPU,
+    OmcA/MtrC family decaheme c-type cytochrome, gene_symbol: K3G22_06995, TREMBL, NCBITaxon:24 Shewanella
+    putrefaciens, UP000827084).'
+  target_ids:
+  - cmmmech:thallium
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
+  outcome: supported
+  summary: 'data/records/thallium.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar(s) (history/records/thallium/2026-11-09T023713Z-marcin-d3111b.yaml
+    (SHA-256 e5104826de8736c5b190f5af54fc46343c8864a84b00c7354a7306b3e2843f6a: Add live-verified species-level
+    Shewanella putrefaciens reference-proteome CcmE (UniProtKB:A0ABX8XC47, K3G22_00975, UP000827084, NCBITaxon:24)
+    to thallium.yaml (cn32_associated_tl_mobilization / cn32_tl_jarosite_mobilization_graph) alongside
+    exact-strain Swiss-Prot UniProtKB:A4YBV6 (Cycle 11 Stage 3).); history/records/thallium/2026-11-09T032336Z-marcin-80f4d9.yaml
+    (SHA-256 78cea1ae073e8910a3c25785812df1325f1b1b747376cd9604e3e24fdebe8a3f: Fix UniProtKB:A0ABX8XC47
+    evidence explanation in thallium.yaml to accurately describe the unreviewed TrEMBL UP000827084 species-level
+    S. putrefaciens CcmE entry (K3G22_00975) (Issue #964).)) and passing all LinkML and history validation
+    gates.'
+  target_ids:
+  - cmmmech:thallium
+  evidence_ids:
+  - owner
+  - edit_history
+  - edit_history_2
+  - validation
+findings: []
+actions: []
+summary: 'Thallium (cmmmech:thallium) passes Cycle 11 Stage 3 Issue #964 remediation review (scientific_review:
+  true) at SHA-256 0183150b963b97fb4331893297061086fdd168bd0c27027f651101233153b260: Remediated data/records/thallium.yaml
+  with causal_graph ''cn32_tl_jarosite_mobilization_graph'' (mechanism_ref: cn32_associated_tl_mobilization,
+  5 nodes / 4 edges; ccme_maturation: [UniProtKB:A4YBV6 (ccmE, CCME_SHEPC, NCBITaxon:319224), UniProtKB:A0ABX8XC47
+  (ccmE, A0ABX8XC47_SHEPU, UP000827084)]; cyma_dehydrogenase: [UniProtKB:A0ABX8XAW9 (cymA, A0ABX8XAW9_SHEPU,
+  UP000827084)]; mtrc_reductase: [UniProtKB:A0ABX8XFE6 (K3G22_06995, A0ABX8XFE6_SHEPU, UP000827084)]),
+  achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+  and preserving entry-specific, source-faithful support levels and experimental caveats from smeaton2012_chapter4:
+  Smeaton CM (2012), University of Windsor PhD dissertation, Investigating the Susceptibility of Jarosite
+  Minerals to Reductive Dissolution by a Dissimilatory Metal Reducing Bacterium (Shewanella putrefaciens
+  CN32). Chapter 4, printed pages 113-148 (PDF 138-173), main text, Figures 4.1-4.3, Tables S4.1-S4.4
+  and Figures S4.1-S4.7. Author primary account of the same experiment, not independent replication. (https://www.collectionscanada.gc.ca/obj/thesescanada/vol2/002/NR78584.PDF).
+  Live-verified UniProtKB grounding across UniProtKB:A4YBV6 (CCME_SHEPC, Cytochrome c-type biogenesis
+  protein CcmE, gene_symbol: ccmE, SWISS_PROT, NCBITaxon:319224 Shewanella putrefaciens CN-32); UniProtKB:A0ABX8XC47
+  (A0ABX8XC47_SHEPU, Cytochrome c-type biogenesis protein CcmE, gene_symbol: ccmE, TREMBL, NCBITaxon:24
+  Shewanella putrefaciens, UP000827084); UniProtKB:A0ABX8XAW9 (A0ABX8XAW9_SHEPU, Cytochrome c-type protein,
+  gene_symbol: cymA, TREMBL, NCBITaxon:24 Shewanella putrefaciens, UP000827084); UniProtKB:A0ABX8XFE6
+  (A0ABX8XFE6_SHEPU, OmcA/MtrC family decaheme c-type cytochrome, gene_symbol: K3G22_06995, TREMBL, NCBITaxon:24
+  Shewanella putrefaciens, UP000827084).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes;
+  an independent subagent PR review is executed prior to merge.'
+notes:
+- 'Executed during Cycle 11 Stage 3 (protein_examples) Issue #964 remediation using scripts/curate_causal_graphs.py
+  for cmmmech:thallium, succeeding 20261109T023800Z-thallium-cycle11-stage3-protein-examples-review.'
+related_reviews: []

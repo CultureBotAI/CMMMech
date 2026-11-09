@@ -55,7 +55,7 @@ mechanisms:
     entry_status: SWISS_PROT
     target_organism:
       id: NCBITaxon:211586
-      label: Shewanella oneidensis (strain ATCC 700550 / JCM 31522 / CIP 106686 / LMG 19005 / NCIMB 14063 / MR-1)
+      label: Shewanella oneidensis MR-1
     reference_proteome_id: UP000008186
     ec_numbers:
     - EC:7.1.1.8
@@ -85,7 +85,7 @@ mechanisms:
     evidence:
     - source_ref: jung_2022
       supports: partial
-      explanation: Representative Shewanella vesiculosa reference-proteome (UP001477278, NCBITaxon:518738) inner-membrane tetraheme cytochrome CymA (ABHN84_13755) coupling lactate oxidation to extracellular electron transfer during cold (0 and 4 C) bioreduction of IMt-1 illite by an Antarctic isolate assigned to Shewanella vesiculosa in jung_2022; individual cytochrome genes were not mutated.
+      explanation: Reviewed Swiss-Prot model Shewanella oneidensis MR-1 reference-proteome (UP000008186, NCBITaxon:211586) inner-membrane tetraheme cytochrome CymA (SO_4591) paired alongside exact-species Shewanella vesiculosa UP001477278 UniProtKB:A0ABV0FR77 (ABHN84_13755), coupling lactate oxidation to extracellular electron transfer during cold (0 and 4 C) bioreduction of IMt-1 illite by an Antarctic isolate assigned to Shewanella vesiculosa in jung_2022; individual cytochrome genes were not mutated.
   - uniprot_accession: UniProtKB:A0ABV0FV81
     entry_name: A0ABV0FV81_9GAMM
     protein_name: OmcA/MtrC family decaheme c-type cytochrome
@@ -187,7 +187,7 @@ causal_graphs:
       entry_status: SWISS_PROT
       target_organism:
         id: NCBITaxon:211586
-        label: Shewanella oneidensis (strain ATCC 700550 / JCM 31522 / CIP 106686 / LMG 19005 / NCIMB 14063 / MR-1)
+        label: Shewanella oneidensis MR-1
       reference_proteome_id: UP000008186
       ec_numbers:
       - EC:7.1.1.8
@@ -217,7 +217,7 @@ causal_graphs:
       evidence:
       - source_ref: jung_2022
         supports: partial
-        explanation: Representative Shewanella vesiculosa reference-proteome (UP001477278, NCBITaxon:518738) inner-membrane tetraheme cytochrome CymA (ABHN84_13755) coupling lactate oxidation to extracellular electron transfer during cold (0 and 4 C) bioreduction of IMt-1 illite by an Antarctic isolate assigned to Shewanella vesiculosa in jung_2022; individual cytochrome genes were not mutated.
+        explanation: Reviewed Swiss-Prot model Shewanella oneidensis MR-1 reference-proteome (UP000008186, NCBITaxon:211586) inner-membrane tetraheme cytochrome CymA (SO_4591) paired alongside exact-species Shewanella vesiculosa UP001477278 UniProtKB:A0ABV0FR77 (ABHN84_13755), coupling lactate oxidation to extracellular electron transfer during cold (0 and 4 C) bioreduction of IMt-1 illite by an Antarctic isolate assigned to Shewanella vesiculosa in jung_2022; individual cytochrome genes were not mutated.
   - id: mtrc_reductase
     label: MtrC family outer-membrane decaheme cytochrome c (ABHN84_14495)
     node_type: GENE_OR_PROTEIN
@@ -304,7 +304,7 @@ causal_graphs:
     target: imt1_illite_substrate
     predicate: reduces
     relationship: extracellular decaheme cytochrome reduction of phyllosilicate Fe(III)
-    description: CymA (ABHN84_13755 / SO_4591) transfers electrons from the inner-membrane menaquinol pool to outer-membrane OmcA (ABHN84_14500).
+    description: Outer-membrane decaheme cytochrome MtrC (ABHN84_14495) transfers electrons to structural Fe(III) in <2 micrometre IMt-1 illite at 0 and 4 C.
     evidence:
     - source_ref: jung_2022
       supports: partial
@@ -340,7 +340,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: Add live-verified reviewed Swiss-Prot Shewanella oneidensis MR-1 reference-proteome CymA (UniProtKB:Q8E8S0, CYMA_SHEON, SO_4591, UP000008186, NCBITaxon:211586) to illite.yaml (cold_imt1_reduction) alongside S. vesiculosa UP001477278 UniProtKB:A0ABV0FR77 (Cycle 11 Stage 3).
+- timestamp: '2026-11-09T03:26:22Z'
+  curator: marcin
+  action: edit
+  summary: 'Restore causal_graphs[0].edges[1].description (mtrc_reductase -> imt1_illite_substrate) and fix UniProtKB:Q8E8S0 evidence explanation and NCBITaxon:211586 label in illite.yaml (Issue #964).'
 history_refs:
 - history/records/illite/2026-10-14T163249Z-codex-b0a6a1.yaml
 - history/records/illite/2026-11-09T004432Z-marcin-f8d577.yaml
 - history/records/illite/2026-11-09T023713Z-marcin-85dcdb.yaml
+- history/records/illite/2026-11-09T032622Z-marcin-ac3b65.yaml

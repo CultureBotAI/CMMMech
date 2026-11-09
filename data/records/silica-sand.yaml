@@ -56,7 +56,7 @@ mechanisms:
     entry_status: SWISS_PROT
     target_organism:
       id: NCBITaxon:211586
-      label: Shewanella oneidensis (strain ATCC 700550 / JCM 31522 / CIP 106686 / LMG 19005 / NCIMB 14063 / MR-1)
+      label: Shewanella oneidensis MR-1
     reference_proteome_id: UP000008186
     ec_numbers:
     - EC:7.1.1.8
@@ -86,7 +86,7 @@ mechanisms:
     evidence:
     - source_ref: yahaya2012
       supports: partial
-      explanation: Representative Shewanella putrefaciens reference-proteome (UP000827084) inner-membrane tetraheme cytochrome CymA (K3G22_18680) coupling lactate oxidation to periplasmic electron transfer during resting-cell reduction of Fe(III) impurity phases on Silica 3 glass sand by Shewanella putrefaciens CIP8040 in yahaya2012; individual cytochrome genes were not mutated.
+      explanation: Reviewed Swiss-Prot model Shewanella oneidensis MR-1 reference-proteome (UP000008186, NCBITaxon:211586) inner-membrane tetraheme cytochrome CymA (SO_4591) paired alongside species-level Shewanella putrefaciens UP000827084 UniProtKB:A0ABX8XAW9 (K3G22_18680), coupling lactate oxidation to periplasmic electron transfer during resting-cell reduction of Fe(III) impurity phases on Silica 3 glass sand by Shewanella putrefaciens CIP8040 in yahaya2012; individual cytochrome genes were not mutated.
   - uniprot_accession: UniProtKB:A0ABX8XFX2
     entry_name: A0ABX8XFX2_SHEPU
     protein_name: DmsE family decaheme c-type cytochrome
@@ -192,7 +192,7 @@ causal_graphs:
       entry_status: SWISS_PROT
       target_organism:
         id: NCBITaxon:211586
-        label: Shewanella oneidensis (strain ATCC 700550 / JCM 31522 / CIP 106686 / LMG 19005 / NCIMB 14063 / MR-1)
+        label: Shewanella oneidensis MR-1
       reference_proteome_id: UP000008186
       ec_numbers:
       - EC:7.1.1.8
@@ -222,7 +222,7 @@ causal_graphs:
       evidence:
       - source_ref: yahaya2012
         supports: partial
-        explanation: Representative Shewanella putrefaciens reference-proteome (UP000827084) inner-membrane tetraheme cytochrome CymA (K3G22_18680) coupling lactate oxidation to periplasmic electron transfer during resting-cell reduction of Fe(III) impurity phases on Silica 3 glass sand by Shewanella putrefaciens CIP8040 in yahaya2012; individual cytochrome genes were not mutated.
+        explanation: Reviewed Swiss-Prot model Shewanella oneidensis MR-1 reference-proteome (UP000008186, NCBITaxon:211586) inner-membrane tetraheme cytochrome CymA (SO_4591) paired alongside species-level Shewanella putrefaciens UP000827084 UniProtKB:A0ABX8XAW9 (K3G22_18680), coupling lactate oxidation to periplasmic electron transfer during resting-cell reduction of Fe(III) impurity phases on Silica 3 glass sand by Shewanella putrefaciens CIP8040 in yahaya2012; individual cytochrome genes were not mutated.
   - id: mtra_conduit
     label: MtrA family periplasmic decaheme cytochrome c (K3G22_06990)
     node_type: GENE_OR_PROTEIN
@@ -350,8 +350,13 @@ curation_history:
   curator: marcin
   action: edit
   summary: Add live-verified reviewed Swiss-Prot Shewanella oneidensis MR-1 reference-proteome CymA (UniProtKB:Q8E8S0, CYMA_SHEON, SO_4591, UP000008186, NCBITaxon:211586) to silica-sand.yaml (resting_shewanella_silica_sand_iron_reduction) alongside S. putrefaciens UP000827084 UniProtKB:A0ABX8XAW9 (Cycle 11 Stage 3).
+- timestamp: '2026-11-09T03:26:23Z'
+  curator: marcin
+  action: edit
+  summary: 'Fix UniProtKB:Q8E8S0 evidence explanation and standardize NCBITaxon:211586 label in silica-sand.yaml to accurately describe the reviewed Swiss-Prot S. oneidensis MR-1 CymA entry (SO_4591) (Issue #964).'
 history_refs:
 - history/records/silica-sand/2026-10-15T000631Z-codex-5ebae5.yaml
 - history/records/silica-sand/2026-11-09T004432Z-marcin-81d753.yaml
 - history/records/silica-sand/2026-11-09T012834Z-marcin-37cf56.yaml
 - history/records/silica-sand/2026-11-09T023713Z-marcin-a18ecb.yaml
+- history/records/silica-sand/2026-11-09T032623Z-marcin-f6e48b.yaml
