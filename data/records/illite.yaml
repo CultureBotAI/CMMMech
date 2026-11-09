@@ -1,86 +1,265 @@
 id: cmmmech:illite
 name: Illite group
 material_kind: mineral_group
-description: Illite is represented as a mineral group, as designated in the IMA compendium nomenclature
-  table, rather than an ideal single species or an undifferentiated clay commodity. The experimental material
-  is the source-designated IMt-1 illite preparation. Its measured behavior is not transferred from the
-  separate nontronite and montmorillonite studies that reported mixed illite-like transformation products.
-  No phase-pure endmember, universal formula or constituent criticality designation is asserted.
+description: Illite is represented as a mineral group, as designated in the IMA compendium nomenclature table, rather than an ideal single species or an undifferentiated clay commodity. The experimental material is the source-designated IMt-1 illite preparation. Its measured behavior is not transferred from the separate nontronite and montmorillonite studies that reported mixed illite-like transformation products. No phase-pure endmember, universal formula or constituent criticality designation is asserted.
 sources:
 - id: ima_compendium_2019
-  title: Schertl, Mills and Maresch, editors (2019 copyright). A Compendium of IMA-Approved Mineral Nomenclature,
-    prepared for IMA2018. PDF p34 reproduces Whitney and Evans (2010), Abbreviations for names of rock-forming
-    minerals, DOI 10.2138/am.2010.3371; Table 1 marks chlorite and illite GROUP. Historical nomenclature
-    table, not a 2026 species approval.
+  title: Schertl, Mills and Maresch, editors (2019 copyright). A Compendium of IMA-Approved Mineral Nomenclature, prepared for IMA2018. PDF p34 reproduces Whitney and Evans (2010), Abbreviations for names of rock-forming minerals, DOI 10.2138/am.2010.3371; Table 1 marks chlorite and illite GROUP. Historical nomenclature table, not a 2026 species approval.
   url: https://cnmnc.units.it/ima_reports/2%20IMA-Nomenclature-e-Booklet-2019-1.pdf
   accessed_on: '2026-10-14'
 - id: jung_2022
-  title: Jung, Chung, Ko, Moon, Suh and Kim (2022). A microbial driver of clay mineral weathering and
-    bioavailable Fe source under low-temperature conditions. Frontiers in Microbiology 13:980078. DOI
-    10.3389/fmicb.2022.980078; PMCID PMC9441888. Complete ten-page original, Methods pp2-3, Figures 1-6
-    and Tables 1-2.
+  title: Jung, Chung, Ko, Moon, Suh and Kim (2022). A microbial driver of clay mineral weathering and bioavailable Fe source under low-temperature conditions. Frontiers in Microbiology 13:980078. DOI 10.3389/fmicb.2022.980078; PMCID PMC9441888. Complete ten-page original, Methods pp2-3, Figures 1-6 and Tables 1-2.
   url: https://doi.org/10.3389/fmicb.2022.980078
   accessed_on: '2026-10-14'
 - id: ncbi_vesiculosa
-  title: NCBI Taxonomy 518738, Shewanella vesiculosa, species; current taxonomy XML inspected 14 October
-    2026. Species mapping does not identify the unnamed experimental isolate as type strain M7.
+  title: NCBI Taxonomy 518738, Shewanella vesiculosa, species; current taxonomy XML inspected 14 October 2026. Species mapping does not identify the unnamed experimental isolate as type strain M7.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=518738&mode=Info
   accessed_on: '2026-10-14'
 mechanisms:
 - id: cold_imt1_reduction
   name: Low-temperature culture-associated reduction and alteration of IMt-1 illite
   process: redox_transformation
-  description: Cultures assigned by the authors to Shewanella vesiculosa increased measured iron reduction
-    and operationally dissolved total iron relative to uninoculated IMt-1 controls at low temperature.
-    Diffraction broadening and altered particle surfaces accompany the response. The paper interprets
-    these observations as reductive dissolution and secondary precipitation; exclusive structural-iron
-    provenance and a complete recovery mass balance remain unestablished.
-  context: The Clay Minerals Society IMt-1 material was size-separated below 2 micrometres by gravitational
-    settling and freeze-dried. An unnamed Antarctic isolate from the King Sejong Station area was grown
-    in LB at 15 degrees C for seven days, washed three times, and inoculated at approximately 10^7 CFU/mL.
-    Laboratory bottles contained 100 mL nitrogen-purged M1 medium, 4 g/L IMt-1 and nominal 20 mM sodium
-    lactate, buffered with MOPS to pH 6, at 0 or 4 degrees C for up to 24 weeks. No strain accession or
-    sequence-based verification is supplied. Samples were frozen at minus 70 degrees C and thawed before
-    analysis. Acid/HF digestion followed by phenanthroline measured Fe(II)/total Fe; centrifuged, 0.45-micrometre-filtered
-    liquid was analyzed by ICP-AES for total iron, not specifically Fe(II). Triplicate analytical sets
-    are stated, without clear independent-bottle replication.
+  description: Cultures assigned by the authors to Shewanella vesiculosa increased measured iron reduction and operationally dissolved total iron relative to uninoculated IMt-1 controls at low temperature. Diffraction broadening and altered particle surfaces accompany the response. The paper interprets these observations as reductive dissolution and secondary precipitation; exclusive structural-iron provenance and a complete recovery mass balance remain unestablished.
+  context: The Clay Minerals Society IMt-1 material was size-separated below 2 micrometres by gravitational settling and freeze-dried. An unnamed Antarctic isolate from the King Sejong Station area was grown in LB at 15 degrees C for seven days, washed three times, and inoculated at approximately 10^7 CFU/mL. Laboratory bottles contained 100 mL nitrogen-purged M1 medium, 4 g/L IMt-1 and nominal 20 mM sodium lactate, buffered with MOPS to pH 6, at 0 or 4 degrees C for up to 24 weeks. No strain accession or sequence-based verification is supplied. Samples were frozen at minus 70 degrees C and thawed before analysis. Acid/HF digestion followed by phenanthroline measured Fe(II)/total Fe; centrifuged, 0.45-micrometre-filtered liquid was analyzed by ICP-AES for total iron, not specifically Fe(II). Triplicate analytical sets are stated, without clear independent-bottle replication.
   microbial: true
   organisms:
   - id: NCBITaxon:518738
     label: Shewanella vesiculosa
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0ABV0FR77
+    entry_name: A0ABV0FR77_9GAMM
+    protein_name: Cytochrome c-type protein
+    gene_symbol: ABHN84_13755
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:518738
+      label: Shewanella vesiculosa
+    reference_proteome_id: UP001477278
+    interpro_ids:
+    - InterPro:IPR051174
+    - InterPro:IPR036280
+    - InterPro:IPR024717
+    - InterPro:IPR005126
+    - InterPro:IPR038266
+    pfam_ids:
+    - Pfam:PF03264
+    functional_role: Inner-membrane tetraheme c-type menaquinol dehydrogenase CymA (ORF ABHN84_13755 in the Shewanella vesiculosa reference proteome UP001477278) transferring electrons from lactate-reduced menaquinol into the periplasmic c-type cytochrome network.
+    evidence:
+    - source_ref: jung_2022
+      supports: partial
+      explanation: Representative Shewanella vesiculosa reference-proteome (UP001477278, NCBITaxon:518738) inner-membrane tetraheme cytochrome CymA (ABHN84_13755) coupling lactate oxidation to extracellular electron transfer during cold (0 and 4 C) bioreduction of IMt-1 illite by an Antarctic isolate assigned to Shewanella vesiculosa in jung_2022; individual cytochrome genes were not mutated.
+  - uniprot_accession: UniProtKB:A0ABV0FV81
+    entry_name: A0ABV0FV81_9GAMM
+    protein_name: OmcA/MtrC family decaheme c-type cytochrome
+    gene_symbol: ABHN84_14495
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:518738
+      label: Shewanella vesiculosa
+    reference_proteome_id: UP001477278
+    interpro_ids:
+    - InterPro:IPR020014
+    - InterPro:IPR054337
+    - InterPro:IPR054334
+    - InterPro:IPR036280
+    pfam_ids:
+    - Pfam:PF22113
+    - Pfam:PF22111
+    ncbifam_ids:
+    - NCBIfam:TIGR03507
+    functional_role: Outer-membrane cell-surface decaheme c-type cytochrome MtrC (ORF ABHN84_14495 in the Shewanella vesiculosa reference proteome UP001477278; NCBIfam:TIGR03507) serving as a terminal extracellular reductase for structural Fe(III) in phyllosilicates.
+    evidence:
+    - source_ref: jung_2022
+      supports: partial
+      explanation: Representative Shewanella vesiculosa reference-proteome (UP001477278, NCBITaxon:518738) outer-membrane decaheme cytochrome MtrC (ABHN84_14495; TIGR03507) delivering extracellular electrons to <2 micrometre IMt-1 illite at 0 and 4 C in jung_2022; individual cytochrome genes were not mutated.
+  - uniprot_accession: UniProtKB:A0ABV0FRM6
+    entry_name: A0ABV0FRM6_9GAMM
+    protein_name: OmcA/MtrC family decaheme c-type cytochrome
+    gene_symbol: ABHN84_14500
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:518738
+      label: Shewanella vesiculosa
+    reference_proteome_id: UP001477278
+    interpro_ids:
+    - InterPro:IPR020014
+    - InterPro:IPR054337
+    - InterPro:IPR036280
+    - InterPro:IPR054336
+    pfam_ids:
+    - Pfam:PF22113
+    - Pfam:PF22112
+    ncbifam_ids:
+    - NCBIfam:TIGR03507
+    functional_role: Outer-membrane surface decaheme lipoprotein cytochrome c OmcA (ORF ABHN84_14500 in the Shewanella vesiculosa reference proteome UP001477278; Pfam:PF22112, NCBIfam:TIGR03507) partnering with MtrC in cell-surface mineral Fe(III) reduction.
+    evidence:
+    - source_ref: jung_2022
+      supports: partial
+      explanation: Representative Shewanella vesiculosa reference-proteome (UP001477278, NCBITaxon:518738) outer-membrane decaheme cytochrome OmcA (ABHN84_14500; PF22112) partnering with MtrC during cold (0 and 4 C) bioreduction of <2 micrometre IMt-1 illite in jung_2022; individual cytochrome genes were not mutated.
   evidence:
   - source_ref: jung_2022
     supports: support
-    explanation: Figures 1-2 distinguish inoculated 0/4-degree treatments from no-cell controls. The 4-degree
-      reduction trajectory peaks early and then decreases before recovering; both biotic trajectories
-      end near the source-reported 3.1% reduction at 24 weeks. Dissolved total iron rises through eight
-      weeks and subsequently decreases, so the result is not monotonic accumulation. These conditional
-      assay results establish culture-associated redox/mobilization, not a purified iron product or measured
-      biological uptake.
+    explanation: Figures 1-2 distinguish inoculated 0/4-degree treatments from no-cell controls. The 4-degree reduction trajectory peaks early and then decreases before recovering; both biotic trajectories end near the source-reported 3.1% reduction at 24 weeks. Dissolved total iron rises through eight weeks and subsequently decreases, so the result is not monotonic accumulation. These conditional assay results establish culture-associated redox/mobilization, not a purified iron product or measured biological uptake.
   - source_ref: jung_2022
     supports: partial
-    explanation: Figures 3-5 and Table 2 support broadened illite peaks, changed morphology and source-assigned
-      vivianite in the 4-degree biotic residue after 24 weeks. Limited diffraction peaks plus Fe-P-O EDS
-      do not establish phase purity, quantitative conversion or exclusive origin of product iron. The
-      medium contains phosphate and a metal supplement, and the paper does not provide phase-resolved
-      Fe accounting or a complete recipe. Its claim that IMt-1 is the sole electron acceptor is retained
-      as source design, not experimentally proved exclusivity; Table 1 additionally lists selenate. Proposed
-      electron transfer in Figure 6 is a schematic, not a direct measurement.
+    explanation: Figures 3-5 and Table 2 support broadened illite peaks, changed morphology and source-assigned vivianite in the 4-degree biotic residue after 24 weeks. Limited diffraction peaks plus Fe-P-O EDS do not establish phase purity, quantitative conversion or exclusive origin of product iron. The medium contains phosphate and a metal supplement, and the paper does not provide phase-resolved Fe accounting or a complete recipe. Its claim that IMt-1 is the sole electron acceptor is retained as source design, not experimentally proved exclusivity; Table 1 additionally lists selenate. Proposed electron transfer in Figure 6 is a schematic, not a direct measurement.
   - source_ref: jung_2022
     supports: partial
-    explanation: Dithionite produced more operational Fe reduction and dissolved iron than the microbial
-      treatments, but its two-hour duration is not time-matched to the multiweek cultures. Table 1 marks
-      clay and dithionite without medium for that arm, whereas Methods say it was prepared similarly except
-      for cells. The same table lists 2 M lactate/formate without clarifying stock versus final concentrations,
-      in conflict with the prose nominal 20 mM lactate. Figure 4 labels K/(K+Ca), whereas Results use
-      K/(K+2Ca); both chemical and biotic panels show the same final ratio, despite Discussion claiming
-      greater biotic K enrichment. No differential K enrichment, exact complete medium recipe, pure-illite
-      Fe yield or ocean/industrial-scale performance is inferred.
+    explanation: Dithionite produced more operational Fe reduction and dissolved iron than the microbial treatments, but its two-hour duration is not time-matched to the multiweek cultures. Table 1 marks clay and dithionite without medium for that arm, whereas Methods say it was prepared similarly except for cells. The same table lists 2 M lactate/formate without clarifying stock versus final concentrations, in conflict with the prose nominal 20 mM lactate. Figure 4 labels K/(K+Ca), whereas Results use K/(K+2Ca); both chemical and biotic panels show the same final ratio, despite Discussion claiming greater biotic K enrichment. No differential K enrichment, exact complete medium recipe, pure-illite Fe yield or ocean/industrial-scale performance is inferred.
+causal_graphs:
+- id: shewanella_vesiculosa_imt1_illite_reduction_graph
+  name: Shewanella vesiculosa psychrotolerant reduction of Fe(III) in IMt-1 illite at 0 and 4 C
+  description: Causal pathway linking Shewanella vesiculosa CymA, MtrC, and OmcA multiheme cytochromes to psychrotolerant reduction (~3.1% operational HF/H2SO4-phenanthroline Fe reduction after 24 weeks at 0 and 4 C) of size-fractionated (<2 micrometre) Clay Minerals Society IMt-1 illite.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: cold_imt1_reduction
+  nodes:
+  - id: cyma_dehydrogenase
+    label: CymA inner-membrane tetraheme cytochrome c (ABHN84_13755)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: ABHN84_13755
+    description: Inner-membrane menaquinol dehydrogenase routing electrons from lactate oxidation to the periplasmic Mtr pathway in Shewanella vesiculosa.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0ABV0FR77
+      entry_name: A0ABV0FR77_9GAMM
+      protein_name: Cytochrome c-type protein
+      gene_symbol: ABHN84_13755
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:518738
+        label: Shewanella vesiculosa
+      reference_proteome_id: UP001477278
+      interpro_ids:
+      - InterPro:IPR051174
+      - InterPro:IPR036280
+      - InterPro:IPR024717
+      - InterPro:IPR005126
+      - InterPro:IPR038266
+      pfam_ids:
+      - Pfam:PF03264
+      functional_role: Inner-membrane tetraheme c-type menaquinol dehydrogenase CymA (ORF ABHN84_13755 in the Shewanella vesiculosa reference proteome UP001477278) transferring electrons from lactate-reduced menaquinol into the periplasmic c-type cytochrome network.
+      evidence:
+      - source_ref: jung_2022
+        supports: partial
+        explanation: Representative Shewanella vesiculosa reference-proteome (UP001477278, NCBITaxon:518738) inner-membrane tetraheme cytochrome CymA (ABHN84_13755) coupling lactate oxidation to extracellular electron transfer during cold (0 and 4 C) bioreduction of IMt-1 illite by an Antarctic isolate assigned to Shewanella vesiculosa in jung_2022; individual cytochrome genes were not mutated.
+  - id: mtrc_reductase
+    label: MtrC family outer-membrane decaheme cytochrome c (ABHN84_14495)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: ABHN84_14495
+    description: Outer-membrane surface decaheme cytochrome c delivering extracellular electrons to IMt-1 illite structural Fe(III).
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0ABV0FV81
+      entry_name: A0ABV0FV81_9GAMM
+      protein_name: OmcA/MtrC family decaheme c-type cytochrome
+      gene_symbol: ABHN84_14495
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:518738
+        label: Shewanella vesiculosa
+      reference_proteome_id: UP001477278
+      interpro_ids:
+      - InterPro:IPR020014
+      - InterPro:IPR054337
+      - InterPro:IPR054334
+      - InterPro:IPR036280
+      pfam_ids:
+      - Pfam:PF22113
+      - Pfam:PF22111
+      ncbifam_ids:
+      - NCBIfam:TIGR03507
+      functional_role: Outer-membrane cell-surface decaheme c-type cytochrome MtrC (ORF ABHN84_14495 in the Shewanella vesiculosa reference proteome UP001477278; NCBIfam:TIGR03507) serving as a terminal extracellular reductase for structural Fe(III) in phyllosilicates.
+      evidence:
+      - source_ref: jung_2022
+        supports: partial
+        explanation: Representative Shewanella vesiculosa reference-proteome (UP001477278, NCBITaxon:518738) outer-membrane decaheme cytochrome MtrC (ABHN84_14495; TIGR03507) delivering extracellular electrons to <2 micrometre IMt-1 illite at 0 and 4 C in jung_2022; individual cytochrome genes were not mutated.
+  - id: omca_reductase
+    label: OmcA family outer-membrane decaheme cytochrome c (ABHN84_14500)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: ABHN84_14500
+    description: Outer-membrane decaheme lipoprotein cytochrome c acting with MtrC at the cell-mineral interface.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0ABV0FRM6
+      entry_name: A0ABV0FRM6_9GAMM
+      protein_name: OmcA/MtrC family decaheme c-type cytochrome
+      gene_symbol: ABHN84_14500
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:518738
+        label: Shewanella vesiculosa
+      reference_proteome_id: UP001477278
+      interpro_ids:
+      - InterPro:IPR020014
+      - InterPro:IPR054337
+      - InterPro:IPR036280
+      - InterPro:IPR054336
+      pfam_ids:
+      - Pfam:PF22113
+      - Pfam:PF22112
+      ncbifam_ids:
+      - NCBIfam:TIGR03507
+      functional_role: Outer-membrane surface decaheme lipoprotein cytochrome c OmcA (ORF ABHN84_14500 in the Shewanella vesiculosa reference proteome UP001477278; Pfam:PF22112, NCBIfam:TIGR03507) partnering with MtrC in cell-surface mineral Fe(III) reduction.
+      evidence:
+      - source_ref: jung_2022
+        supports: partial
+        explanation: Representative Shewanella vesiculosa reference-proteome (UP001477278, NCBITaxon:518738) outer-membrane decaheme cytochrome OmcA (ABHN84_14500; PF22112) partnering with MtrC during cold (0 and 4 C) bioreduction of <2 micrometre IMt-1 illite in jung_2022; individual cytochrome genes were not mutated.
+  - id: imt1_illite_substrate
+    label: Size-fractionated (<2 micrometre) Clay Minerals Society IMt-1 illite (4 g/L) at pH 6 and 0 or 4 C
+    node_type: MATERIAL_OR_PHASE
+    description: Size-fractionated (<2 micrometre) Clay Minerals Society IMt-1 illite at 4 g/L in 100 mL N2-purged M1 medium buffered with MOPS to pH 6 with nominal 20 mM sodium lactate (retaining Table 1's conflicting 2 M lactate/formate and selenate entries) and ~10^7 CFU/mL of an unnamed Antarctic isolate assigned to Shewanella vesiculosa at 0 or 4 C in jung_2022.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: partially_reduced_illite_and_fe_phases
+    label: Partially reduced IMt-1 illite (~3.1% operational Fe reduction at 24 weeks at 0 and 4 C), transient <0.45 micrometre dissolved Fe, and secondary Fe-P-O precipitates at 4 C
+    node_type: MATERIAL_OR_PHASE
+    description: Partially bioreduced IMt-1 illite reaching ~3.1% operational Fe reduction (HF/H2SO4 digestion + 1,10-phenanthroline Fe(II)/total Fe) at 24 weeks at both 0 and 4 C (versus near-flat abiotic controls), accompanied by non-monotonic <0.45 micrometre dissolved Fe peaking at 8 weeks, illite XRD peak broadening, and SEM-EDS Fe-P-O secondary precipitates assigned to vivianite at 4 C in jung_2022.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cyma_dehydrogenase
+    target: mtrc_reductase
+    predicate: provides_electrons_to
+    relationship: trans-periplasmic respiratory electron transfer
+    description: Inner-membrane CymA transfers electrons from lactate-reduced menaquinol to the outer-membrane MtrC decaheme cytochrome conduit.
+    evidence:
+    - source_ref: jung_2022
+      supports: partial
+      explanation: In anaerobic M1 medium incubations of Shewanella vesiculosa with nominal 20 mM sodium lactate and 4 g/L IMt-1 illite at 0 and 4 C (jung_2022), respiratory electrons from lactate oxidation are routed via CymA to outer-membrane decaheme cytochromes.
+  - source: mtrc_reductase
+    target: imt1_illite_substrate
+    predicate: reduces
+    relationship: extracellular decaheme cytochrome reduction of phyllosilicate Fe(III)
+    description: Outer-membrane decaheme cytochrome MtrC (ABHN84_14495) transfers electrons to structural Fe(III) in <2 micrometre IMt-1 illite at 0 and 4 C.
+    evidence:
+    - source_ref: jung_2022
+      supports: partial
+      explanation: During 24-week anoxic incubations of 4 g/L <2 micrometre IMt-1 illite at pH 6 with ~10^7 CFU/mL Shewanella vesiculosa at 0 and 4 C (jung_2022 Figure 1), outer-membrane decaheme cytochrome MtrC serves as a primary terminal reductase of the Shewanella Mtr pathway.
+  - source: omca_reductase
+    target: imt1_illite_substrate
+    predicate: reduces
+    relationship: cell-surface decaheme lipoprotein cytochrome reduction
+    description: Outer-membrane decaheme cytochrome OmcA (ABHN84_14500) partners with MtrC at the cell surface during reduction of IMt-1 illite Fe(III).
+    evidence:
+    - source_ref: jung_2022
+      supports: partial
+      explanation: During 24-week anoxic incubations of 4 g/L <2 micrometre IMt-1 illite at pH 6 with ~10^7 CFU/mL Shewanella vesiculosa at 0 and 4 C (jung_2022 Figure 1), outer-membrane decaheme cytochrome OmcA acts alongside MtrC in extracellular mineral Fe(III) reduction.
+  - source: imt1_illite_substrate
+    target: partially_reduced_illite_and_fe_phases
+    predicate: transforms_into
+    relationship: low-extent psychrotolerant Fe(III) reduction and secondary Fe-P-O precipitation
+    description: Psychrotolerant bioreduction reduces ~3.1% of operational IMt-1 illite Fe over 24 weeks at 0 and 4 C, releasing transient <0.45 micrometre Fe, K, Al, and Si and forming secondary Fe-P-O precipitates at 4 C.
+    evidence:
+    - source_ref: jung_2022
+      supports: support
+      explanation: Figures 1-5 of jung_2022 show operational Fe reduction reaching ~3.1% after 24 weeks at both 0 and 4 C (with faster initial kinetics at 4 C), non-monotonic <0.45 micrometre dissolved Fe peaking at 8 weeks before declining as secondary Fe-P-O precipitates (assigned by the authors to vivianite at 4 C) form; Table 1's conflicting 2 M lactate/formate and selenate entries and lack of an isolate accession are retained.
 curation_history:
 - timestamp: '2026-10-14T16:33:06.577518+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
-  summary: Created illite-group owner from complete primary microbial experiments with explicit source,
-    phase and assay limitations.
+  summary: Created illite-group owner from complete primary microbial experiments with explicit source, phase and assay limitations.
+- timestamp: '2026-11-09T00:44:32Z'
+  curator: marcin
+  action: edit
+  summary: Ground Shewanella vesiculosa cold IMt-1 illite reduction to verified UniProtKB entries (A0ABV0FR77, A0ABV0FV81, A0ABV0FRM6) and add causal_graphs.
 history_refs:
 - history/records/illite/2026-10-14T163249Z-codex-b0a6a1.yaml
+- history/records/illite/2026-11-09T004432Z-marcin-f8d577.yaml
