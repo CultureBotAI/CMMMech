@@ -1,169 +1,351 @@
 id: cmmmech:manganite
 name: Manganite
 material_kind: mineral
-description: >-
-  Manganite is the manganese(III) oxide hydroxide mineral MnO(OH), listed
-  as grandfathered in the September 2026 IMA-CNMNC list. The year 1826
-  is its historical date, not an IMA approval accession. It is distinct
-  from elemental manganese, manganese ore, the MnO2 minerals pyrolusite
-  and ramsdellite, and other MnOOH polymorphs. The experiment below used
-  laboratory-prepared material assigned to manganite by the source, not
-  natural ore or a certified phase-pure mineral reference. No criticality
-  designation is inherited from manganese.
+description: Manganite is the manganese(III) oxide hydroxide mineral MnO(OH), listed as grandfathered in the September 2026 IMA-CNMNC list. The year 1826 is its historical date, not an IMA approval accession. It is distinct from elemental manganese, manganese ore, the MnO2 minerals pyrolusite and ramsdellite, and other MnOOH polymorphs. The experiment below used laboratory-prepared material assigned to manganite by the source, not natural ore or a certified phase-pure mineral reference. No criticality designation is inherited from manganese.
 sources:
 - id: ima_2026_09
-  title: >-
-    IMA-CNMNC. The New IMA List of Minerals, September 2026. Manganite
-    row, PDF page 134; introductory status/date definitions and terms.
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Manganite row, PDF page 134; introductory status/date definitions and terms.
   url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
   accessed_on: '2026-10-14'
 - id: manganite_handbook
-  title: >-
-    Mineralogical Society of America, Handbook of Mineralogy. Manganite,
-    one-page entry, Mineral Data Publishing 2001-2005 version 1; mineral
-    identity, monoclinic structure, composition and polymorphism.
+  title: Mineralogical Society of America, Handbook of Mineralogy. Manganite, one-page entry, Mineral Data Publishing 2001-2005 version 1; mineral identity, monoclinic structure, composition and polymorphism.
   url: https://handbookofmineralogy.org/pdfs/manganite.pdf
   accessed_on: '2026-10-14'
 - id: larsen1998
-  title: >-
-    Larsen, Little, Nealson, Ray, Stone and Tian (1998). Manganite reduction
-    by Shewanella putrefaciens MR-4. American Mineralogist 83:1564-1572.
-    Complete nine-page original, methods, Figures 1-9 and Table 1.
+  title: Larsen, Little, Nealson, Ray, Stone and Tian (1998). Manganite reduction by Shewanella putrefaciens MR-4. American Mineralogist 83:1564-1572. Complete nine-page original, methods, Figures 1-9 and Table 1.
   url: https://doi.org/10.2138/am-1998-11-1244
   accessed_on: '2026-10-14'
 - id: larsen1998_original
-  title: >-
-    RRUFF document archive. Complete American Mineralogist 83:1564-1572
-    original PDF of Larsen et al. (1998), AM83_1564.pdf.
+  title: RRUFF document archive. Complete American Mineralogist 83:1564-1572 original PDF of Larsen et al. (1998), AM83_1564.pdf.
   url: https://www.rruff.net/doclib/am/vol83/AM83_1564.pdf
   accessed_on: '2026-10-14'
 - id: ncbi_mr4
-  title: >-
-    NCBI Taxonomy 60480, current name Shewanella sp. MR-4, a strain-labelled
-    unclassified Shewanella taxon with species rank; Datasets response.
+  title: NCBI Taxonomy 60480, current name Shewanella sp. MR-4, a strain-labelled unclassified Shewanella taxon with species rank; Datasets response.
   url: https://api.ncbi.nlm.nih.gov/datasets/v2/taxonomy/taxon/60480/dataset_report
   accessed_on: '2026-10-14'
 mechanisms:
 - id: mr4_associated_manganite_reductive_dissolution
   name: Anaerobic MR-4-associated reductive dissolution of synthetic manganite
   process: redox_transformation
+  description: Living MR-4 cultures increased filtered dissolved manganese from source-assigned synthetic manganite in anaerobic laboratory incubations. The authors interpret this as Mn(III)-to-Mn(II) reductive dissolution. Uninoculated, heat-killed, oxygen-exposed and dialysis-separated comparisons strongly limited release under the tested conditions. This supports a culture-associated process with contact and metabolic dependencies in this assay, not a universal requirement for direct electron transfer, an identified reductase, pure-phase mass balance, isolated manganese product or industrial recovery.
+  context: Larsen1998 calls the culture Shewanella putrefaciens MR-4; the current NCBI name is Shewanella sp. MR-4, not an authenticated sequence match to the historical laboratory stock. Cells were serially acclimated, centrifuged and resuspended in defined M1 medium containing 30 mM lactate without the casamino acids used during pregrowth. Standard experiments used 250 mL open flasks inside a 10% H2/90% N2 anaerobic chamber at reported 27 degrees C, medium adjusted to pH 7.4, nominal 200 micromol/L MnOOH and 5 x 10^6 cells/mL unless varied. The H2 atmosphere means the no-added-carbon arm is not an electron-donor-free system. Manganite was prepared from MnSO4, H2O2 and NH3, heated at 95 degrees C for six hours, washed hot and cold and stored frozen. The paper gives needle morphology and a synthesis recipe but no batch-specific diffraction refinement, quantified phase purity or measured composition. Separate pH and temperature arms used sealed 50 mL serum bottles and only two sampling times.
   microbial: true
   organisms:
   - id: NCBITaxon:60480
     label: Shewanella sp. MR-4
-  description: >-
-    Living MR-4 cultures increased filtered dissolved manganese from
-    source-assigned synthetic manganite in anaerobic laboratory incubations.
-    The authors interpret this as Mn(III)-to-Mn(II) reductive dissolution.
-    Uninoculated, heat-killed, oxygen-exposed and dialysis-separated
-    comparisons strongly limited release under the tested conditions.
-    This supports a culture-associated process with contact and metabolic
-    dependencies in this assay, not a universal requirement for direct
-    electron transfer, an identified reductase, pure-phase mass balance,
-    isolated manganese product or industrial recovery.
-  context: >-
-    Larsen1998 calls the culture Shewanella putrefaciens MR-4; the current
-    NCBI name is Shewanella sp. MR-4, not an authenticated sequence match
-    to the historical laboratory stock. Cells were serially acclimated,
-    centrifuged and resuspended in defined M1 medium containing 30 mM
-    lactate without the casamino acids used during pregrowth. Standard
-    experiments used 250 mL open flasks inside a 10% H2/90% N2 anaerobic
-    chamber at reported 27 degrees C, medium adjusted to pH 7.4, nominal
-    200 micromol/L MnOOH and 5 x 10^6 cells/mL unless varied. The H2
-    atmosphere means the no-added-carbon arm is not an electron-donor-free
-    system. Manganite was prepared from MnSO4, H2O2 and NH3, heated at
-    95 degrees C for six hours, washed hot and cold and stored frozen.
-    The paper gives needle morphology and a synthesis recipe but no
-    batch-specific diffraction refinement, quantified phase purity or
-    measured composition. Separate pH and temperature arms used sealed
-    50 mL serum bottles and only two sampling times.
+  protein_examples:
+  - uniprot_accession: UniProtKB:Q0HNQ5
+    entry_name: CCMA_SHESM
+    protein_name: Cytochrome c biogenesis ATP-binding export protein CcmA
+    gene_symbol: ccmA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:60480
+      label: Shewanella sp. MR-4
+    ec_numbers:
+    - EC:7.6.2.5
+    interpro_ids:
+    - InterPro:IPR003593
+    - InterPro:IPR003439
+    - InterPro:IPR005895
+    - InterPro:IPR027417
+    pfam_ids:
+    - Pfam:PF00005
+    ncbifam_ids:
+    - NCBIfam:NF010061
+    - NCBIfam:TIGR01189
+    functional_role: ATP-binding subunit CcmA (EC 7.6.2.5; locus Shewmr4_0231) of the System I heme exporter CcmABCD in Shewanella sp. MR-4, required for periplasmic heme delivery during maturation of multiheme c-type cytochromes.
+    evidence:
+    - source_ref: larsen1998
+      supports: partial
+      explanation: Reviewed Swiss-Prot System I cytochrome c biogenesis ATPase CcmA (Shewmr4_0231) from exact strain Shewanella sp. MR-4 (NCBITaxon:60480), essential for maturing the outer-membrane multiheme c-type cytochromes mediating contact-dependent reductive dissolution of synthetic manganite at pH 7.4 in larsen1998; individual ccm or mtr genes were not mutated.
+  - uniprot_accession: UniProtKB:Q0HNQ9
+    entry_name: CCME_SHESM
+    protein_name: Cytochrome c-type biogenesis protein CcmE
+    gene_symbol: ccmE
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:60480
+      label: Shewanella sp. MR-4
+    interpro_ids:
+    - InterPro:IPR004329
+    - InterPro:IPR036127
+    - InterPro:IPR012340
+    pfam_ids:
+    - Pfam:PF03100
+    ncbifam_ids:
+    - NCBIfam:NF009638
+    - NCBIfam:NF009729
+    functional_role: Periplasmic heme-chaperone CcmE (locus Shewmr4_0227) of the System I cytochrome c maturation machinery in Shewanella sp. MR-4, required for covalent heme attachment to multiheme c-type cytochromes of the CymA-MtrCAB pathway.
+    evidence:
+    - source_ref: larsen1998
+      supports: partial
+      explanation: Reviewed Swiss-Prot System I cytochrome c maturation chaperone CcmE (Shewmr4_0227) from exact strain Shewanella sp. MR-4 (NCBITaxon:60480), required for assembling functional multiheme cytochromes for contact-dependent manganite reduction at pH 7.4 in larsen1998; individual ccm or mtr genes were not mutated.
+  - uniprot_accession: UniProtKB:Q8E8S0
+    entry_name: CYMA_SHEON
+    protein_name: Tetraheme c-type cytochrome CymA
+    gene_symbol: cymA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:211586
+      label: Shewanella oneidensis MR-1
+    reference_proteome_id: UP000008186
+    ec_numbers:
+    - EC:7.1.1.8
+    interpro_ids:
+    - InterPro:IPR051174
+    - InterPro:IPR036280
+    - InterPro:IPR024717
+    - InterPro:IPR005126
+    - InterPro:IPR038266
+    pfam_ids:
+    - Pfam:PF03264
+    functional_role: Inner-membrane tetraheme c-type menaquinol dehydrogenase CymA (EC 7.1.1.8; SO_4591) transferring electrons from lactate-reduced menaquinol to periplasmic and outer-membrane electron-transfer pathways.
+    annotation_note: Grounded to the reviewed Shewanella oneidensis MR-1 reference-proteome (UP000008186, NCBITaxon:211586) CymA ortholog alongside exact-strain Shewanella sp. MR-4 (NCBITaxon:60480) Swiss-Prot CcmA/CcmE entries because unreviewed TrEMBL entries for Shewanella sp. MR-4 are not retained in active UniProtKB.
+    evidence:
+    - source_ref: larsen1998
+      supports: partial
+      explanation: Representative reviewed Shewanella CymA menaquinol dehydrogenase (SO_4591) coupling 30 mM lactate oxidation to periplasmic electron transfer during Shewanella sp. MR-4 manganite reduction at pH 7.4 in larsen1998; paired with exact-strain MR-4 Swiss-Prot CcmA/CcmE entries because MR-4 TrEMBL cytochrome entries were retired by UniProtKB.
+  - uniprot_accession: UniProtKB:Q8EG34
+    entry_name: Q8EG34_SHEON
+    protein_name: Extracellular iron oxide respiratory system surface decaheme cytochrome c component MtrC
+    gene_symbol: mtrC
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:211586
+      label: Shewanella oneidensis MR-1
+    reference_proteome_id: UP000008186
+    interpro_ids:
+    - InterPro:IPR020014
+    - InterPro:IPR054337
+    - InterPro:IPR054334
+    - InterPro:IPR036280
+    pfam_ids:
+    - Pfam:PF22113
+    - Pfam:PF22111
+    functional_role: Outer-membrane surface decaheme c-type cytochrome MtrC (SO_1778) mediating contact-dependent extracellular electron transfer to solid Mn(III/IV) and Fe(III) oxyhydroxides.
+    annotation_note: Grounded to the Shewanella oneidensis MR-1 reference-proteome (UP000008186, NCBITaxon:211586) MtrC ortholog alongside exact-strain Shewanella sp. MR-4 (NCBITaxon:60480) Swiss-Prot CcmA/CcmE entries because unreviewed TrEMBL entries for Shewanella sp. MR-4 are not retained in active UniProtKB.
+    evidence:
+    - source_ref: larsen1998
+      supports: partial
+      explanation: Representative Shewanella reference-proteome outer-membrane decaheme cytochrome MtrC (SO_1778) consistent with the contact-dependent manganite reduction observed in larsen1998 Figure 3 (where dialysis-bag separation suppressed Mn dissolution at pH 7.4); individual cytochrome genes were not mutated.
   evidence:
   - source_ref: larsen1998
     supports: support
-    explanation: >-
-      Figures 1-3 and Results on pages 1566-1567 show increasing filtered
-      manganese with active cultures and much smaller release in no-cell,
-      killed-cell, oxygen, CCCP and no-contact comparisons. Figure 3
-      groups several negative controls in one symbol series; the no-added-
-      carbon arm still releases manganese before its rate decreases. The
-      dialysis experiment supports a contact dependency under its protocol,
-      not exclusion of every diffusible mediator in other systems. Table 1
-      shows strong inhibition by CCCP and HgCl2, but weak HQNO inhibition
-      and zero reported cyanide inhibition; not all tested inhibitors
-      suppress release. No enzyme, gene or electron-transfer pathway was
-      experimentally identified.
+    explanation: Figures 1-3 and Results on pages 1566-1567 show increasing filtered manganese with active cultures and much smaller release in no-cell, killed-cell, oxygen, CCCP and no-contact comparisons. Figure 3 groups several negative controls in one symbol series; the no-added- carbon arm still releases manganese before its rate decreases. The dialysis experiment supports a contact dependency under its protocol, not exclusion of every diffusible mediator in other systems. Table 1 shows strong inhibition by CCCP and HgCl2, but weak HQNO inhibition and zero reported cyanide inhibition; not all tested inhibitors suppress release. No enzyme, gene or electron-transfer pathway was experimentally identified.
   - source_ref: larsen1998
     supports: partial
-    explanation: >-
-      Methods on pages 1565-1566 measure 0.2 micrometre-filtered, acidified
-      samples by flame atomic absorption. This is dissolved-element
-      quantification interpreted as Mn(II), not direct oxidation-state
-      speciation. Three samples per flask and repeated instrument readings
-      measure subsampling/analytical variability; they do not establish
-      three independent culture replicates. The paper reports a repeated
-      standard treatment but Figure 1's duplicate series is labelled
-      100 micromol/L, whereas the methods' repeated treatment is
-      200 micromol/L. Complete eventual reduction is stated with data
-      not shown. No complete manganese/product mass balance or isolated
-      recovery yield is adopted.
+    explanation: Methods on pages 1565-1566 measure 0.2 micrometre-filtered, acidified samples by flame atomic absorption. This is dissolved-element quantification interpreted as Mn(II), not direct oxidation-state speciation. Three samples per flask and repeated instrument readings measure subsampling/analytical variability; they do not establish three independent culture replicates. The paper reports a repeated standard treatment but Figure 1's duplicate series is labelled 100 micromol/L, whereas the methods' repeated treatment is 200 micromol/L. Complete eventual reduction is stated with data not shown. No complete manganese/product mass balance or isolated recovery yield is adopted.
   - source_ref: larsen1998
     supports: partial
-    explanation: >-
-      Table 1 on page 1568 records inoculated versus no-cell dissolved
-      manganese means of 101.3 versus 103.1 micromol/L at pH 4 and
-      39.4 versus 44.0 micromol/L at pH 5. These acidic arms do not
-      demonstrate a positive microbial increment; acid-driven release
-      predominates. At pH 7.4, means are 12.2 versus 1.2 micromol/L.
-      These selected table means retain their units and arm identities,
-      without being treated as recovery percentages or independent
-      biological replicates. The table omits net-reduction entries for
-      the two acidic arms rather than reporting negative values.
+    explanation: Table 1 on page 1568 records inoculated versus no-cell dissolved manganese means of 101.3 versus 103.1 micromol/L at pH 4 and 39.4 versus 44.0 micromol/L at pH 5. These acidic arms do not demonstrate a positive microbial increment; acid-driven release predominates. At pH 7.4, means are 12.2 versus 1.2 micromol/L. These selected table means retain their units and arm identities, without being treated as recovery percentages or independent biological replicates. The table omits net-reduction entries for the two acidic arms rather than reporting negative values.
   - source_ref: larsen1998
     supports: partial
-    explanation: >-
-      The abstract calls the optimum pH 7.0 and 26 degrees C; methods
-      list pH 7.4 and temperatures 4, 27, 37 and 44 degrees C; Table 1
-      labels the largest measured net temperature response 26 degrees C;
-      the discussion instead says around 35 degrees C. No precise optimal
-      temperature or pH is asserted. Figure 2 specifies a 100-fold cell
-      range, while the results text says 300-fold and gives slightly
-      different sampling times. These discrepancies are not silently
-      reconciled into a kinetic model.
+    explanation: The abstract calls the optimum pH 7.0 and 26 degrees C; methods list pH 7.4 and temperatures 4, 27, 37 and 44 degrees C; Table 1 labels the largest measured net temperature response 26 degrees C; the discussion instead says around 35 degrees C. No precise optimal temperature or pH is asserted. Figure 2 specifies a 100-fold cell range, while the results text says 300-fold and gives slightly different sampling times. These discrepancies are not silently reconciled into a kinetic model.
   - source_ref: larsen1998
     supports: partial
-    explanation: >-
-      Figure 4 shows manganite-associated manganese release intermediate
-      between the tested birnessite and pyrolusite preparations. The
-      estimated manganite area of 0.9-2.5 m2/g is microscopy-derived,
-      not a direct BET measurement. Different surface areas, morphology,
-      chemistry and crystallinity confound an intrinsic mineral ranking;
-      the authors explicitly call for better area measurements. This
-      comparison does not duplicate a new birnessite or pyrolusite owner.
+    explanation: Figure 4 shows manganite-associated manganese release intermediate between the tested birnessite and pyrolusite preparations. The estimated manganite area of 0.9-2.5 m2/g is microscopy-derived, not a direct BET measurement. Different surface areas, morphology, chemistry and crystallinity confound an intrinsic mineral ranking; the authors explicitly call for better area measurements. This comparison does not duplicate a new birnessite or pyrolusite owner.
   - source_ref: larsen1998
     supports: partial
-    explanation: >-
-      Figures 5-9 compare uninoculated particles with colonized material
-      using wet fixed ESEM and dehydrated, gold-coated SEM. Cell-associated
-      coatings and close contact support biofilm association, but their
-      composition and causal role in reduction remain undetermined.
-      Polysaccharide chemistry is a proposed interpretation. Figure 8
-      is labelled approximately 75% reduced in its caption but described
-      as greater than 90% in the results; neither is used as a quantified
-      recovery endpoint. Sample washing, fixation and dehydration limit
-      inference about native hydrated surface architecture.
+    explanation: Figures 5-9 compare uninoculated particles with colonized material using wet fixed ESEM and dehydrated, gold-coated SEM. Cell-associated coatings and close contact support biofilm association, but their composition and causal role in reduction remain undetermined. Polysaccharide chemistry is a proposed interpretation. Figure 8 is labelled approximately 75% reduced in its caption but described as greater than 90% in the results; neither is used as a quantified recovery endpoint. Sample washing, fixation and dehydration limit inference about native hydrated surface architecture.
   - source_ref: ncbi_mr4
     supports: context_only
-    explanation: >-
-      NCBI 60480 resolves the current strain-labelled name and its placement
-      under unclassified Shewanella. It does not turn the historical
-      S. putrefaciens designation into a verified modern species assignment
-      or establish this phenotype for all Shewanella.
+    explanation: NCBI 60480 resolves the current strain-labelled name and its placement under unclassified Shewanella. It does not turn the historical S. putrefaciens designation into a verified modern species assignment or establish this phenotype for all Shewanella.
+causal_graphs:
+- id: mr4_manganite_reductive_dissolution_graph
+  name: Shewanella sp. MR-4 contact-dependent reductive dissolution of synthetic manganite at pH 7.4
+  description: Causal pathway linking Shewanella sp. MR-4 System I cytochrome c biogenesis (CcmA, CcmE) and CymA-MtrC cell-surface extracellular electron transfer to contact-dependent reductive dissolution of synthetic manganite (MnOOH) with 30 mM lactate at pH 7.4.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: mr4_associated_manganite_reductive_dissolution
+  nodes:
+  - id: ccma_exporter
+    label: CcmA cytochrome c biogenesis ATP-binding export protein (Shewmr4_0231)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: ccmA
+    description: ATP-binding cassette subunit CcmA (EC 7.6.2.5) of the System I heme exporter in Shewanella sp. MR-4.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q0HNQ5
+      entry_name: CCMA_SHESM
+      protein_name: Cytochrome c biogenesis ATP-binding export protein CcmA
+      gene_symbol: ccmA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:60480
+        label: Shewanella sp. MR-4
+      ec_numbers:
+      - EC:7.6.2.5
+      interpro_ids:
+      - InterPro:IPR003593
+      - InterPro:IPR003439
+      - InterPro:IPR005895
+      - InterPro:IPR027417
+      pfam_ids:
+      - Pfam:PF00005
+      ncbifam_ids:
+      - NCBIfam:NF010061
+      - NCBIfam:TIGR01189
+      functional_role: ATP-binding subunit CcmA (EC 7.6.2.5; locus Shewmr4_0231) of the System I heme exporter CcmABCD in Shewanella sp. MR-4, required for periplasmic heme delivery during maturation of multiheme c-type cytochromes.
+      evidence:
+      - source_ref: larsen1998
+        supports: partial
+        explanation: Reviewed Swiss-Prot System I cytochrome c biogenesis ATPase CcmA (Shewmr4_0231) from exact strain Shewanella sp. MR-4 (NCBITaxon:60480), essential for maturing the outer-membrane multiheme c-type cytochromes mediating contact-dependent reductive dissolution of synthetic manganite at pH 7.4 in larsen1998; individual ccm or mtr genes were not mutated.
+  - id: ccme_maturation
+    label: CcmE cytochrome c-type biogenesis protein (Shewmr4_0227)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: ccmE
+    description: Periplasmic System I heme chaperone CcmE in Shewanella sp. MR-4 delivering heme for covalent attachment to multiheme c-type cytochromes.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q0HNQ9
+      entry_name: CCME_SHESM
+      protein_name: Cytochrome c-type biogenesis protein CcmE
+      gene_symbol: ccmE
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:60480
+        label: Shewanella sp. MR-4
+      interpro_ids:
+      - InterPro:IPR004329
+      - InterPro:IPR036127
+      - InterPro:IPR012340
+      pfam_ids:
+      - Pfam:PF03100
+      ncbifam_ids:
+      - NCBIfam:NF009638
+      - NCBIfam:NF009729
+      functional_role: Periplasmic heme-chaperone CcmE (locus Shewmr4_0227) of the System I cytochrome c maturation machinery in Shewanella sp. MR-4, required for covalent heme attachment to multiheme c-type cytochromes of the CymA-MtrCAB pathway.
+      evidence:
+      - source_ref: larsen1998
+        supports: partial
+        explanation: Reviewed Swiss-Prot System I cytochrome c maturation chaperone CcmE (Shewmr4_0227) from exact strain Shewanella sp. MR-4 (NCBITaxon:60480), required for assembling functional multiheme cytochromes for contact-dependent manganite reduction at pH 7.4 in larsen1998; individual ccm or mtr genes were not mutated.
+  - id: cyma_dehydrogenase
+    label: CymA inner-membrane tetraheme cytochrome c (representative Shewanella ortholog SO_4591)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cymA
+    description: Inner-membrane menaquinol dehydrogenase coupling 30 mM lactate oxidation to periplasmic electron transfer.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q8E8S0
+      entry_name: CYMA_SHEON
+      protein_name: Tetraheme c-type cytochrome CymA
+      gene_symbol: cymA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:211586
+        label: Shewanella oneidensis MR-1
+      reference_proteome_id: UP000008186
+      ec_numbers:
+      - EC:7.1.1.8
+      interpro_ids:
+      - InterPro:IPR051174
+      - InterPro:IPR036280
+      - InterPro:IPR024717
+      - InterPro:IPR005126
+      - InterPro:IPR038266
+      pfam_ids:
+      - Pfam:PF03264
+      functional_role: Inner-membrane tetraheme c-type menaquinol dehydrogenase CymA (EC 7.1.1.8; SO_4591) transferring electrons from lactate-reduced menaquinol to periplasmic and outer-membrane electron-transfer pathways.
+      annotation_note: Grounded to the reviewed Shewanella oneidensis MR-1 reference-proteome (UP000008186, NCBITaxon:211586) CymA ortholog alongside exact-strain Shewanella sp. MR-4 (NCBITaxon:60480) Swiss-Prot CcmA/CcmE entries because unreviewed TrEMBL entries for Shewanella sp. MR-4 are not retained in active UniProtKB.
+      evidence:
+      - source_ref: larsen1998
+        supports: partial
+        explanation: Representative reviewed Shewanella CymA menaquinol dehydrogenase (SO_4591) coupling 30 mM lactate oxidation to periplasmic electron transfer during Shewanella sp. MR-4 manganite reduction at pH 7.4 in larsen1998; paired with exact-strain MR-4 Swiss-Prot CcmA/CcmE entries because MR-4 TrEMBL cytochrome entries were retired by UniProtKB.
+  - id: mtrc_reductase
+    label: MtrC outer-membrane decaheme cytochrome c (representative Shewanella ortholog SO_1778)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: mtrC
+    description: Cell-surface decaheme cytochrome c mediating contact-dependent electron transfer to solid MnOOH.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:Q8EG34
+      entry_name: Q8EG34_SHEON
+      protein_name: Extracellular iron oxide respiratory system surface decaheme cytochrome c component MtrC
+      gene_symbol: mtrC
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:211586
+        label: Shewanella oneidensis MR-1
+      reference_proteome_id: UP000008186
+      interpro_ids:
+      - InterPro:IPR020014
+      - InterPro:IPR054337
+      - InterPro:IPR054334
+      - InterPro:IPR036280
+      pfam_ids:
+      - Pfam:PF22113
+      - Pfam:PF22111
+      functional_role: Outer-membrane surface decaheme c-type cytochrome MtrC (SO_1778) mediating contact-dependent extracellular electron transfer to solid Mn(III/IV) and Fe(III) oxyhydroxides.
+      annotation_note: Grounded to the Shewanella oneidensis MR-1 reference-proteome (UP000008186, NCBITaxon:211586) MtrC ortholog alongside exact-strain Shewanella sp. MR-4 (NCBITaxon:60480) Swiss-Prot CcmA/CcmE entries because unreviewed TrEMBL entries for Shewanella sp. MR-4 are not retained in active UniProtKB.
+      evidence:
+      - source_ref: larsen1998
+        supports: partial
+        explanation: Representative Shewanella reference-proteome outer-membrane decaheme cytochrome MtrC (SO_1778) consistent with the contact-dependent manganite reduction observed in larsen1998 Figure 3 (where dialysis-bag separation suppressed Mn dissolution at pH 7.4); individual cytochrome genes were not mutated.
+  - id: manganite_substrate
+    label: Synthetic manganite (gamma-MnOOH, nominal 200 micromolar in methods vs 100 micromolar duplicate label in Figure 1) at pH 7.4
+    node_type: MATERIAL_OR_PHASE
+    description: Synthetic manganite (MnOOH precipitated from MnSO4, H2O2, and NH3 at 95 C for 6 h; nominal 200 micromolar in methods vs 100 micromolar duplicate label in Figure 1) incubated in 250 mL open flasks under 10% H2 / 90% N2 at 27 C in defined M1 medium with 30 mM lactate and 5 x 10^6 cells/mL Shewanella sp. MR-4 at initial pH 7.4 in larsen1998.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: dissolved_mn_product
+    label: Filtered <0.2 micrometre dissolved Mn at pH 7.4 (mean 12.2 micromolar inoculated vs 1.2 micromolar abiotic control in Table 1)
+    node_type: CHEMICAL_ENTITY
+    description: 'Filterable (<0.2 micrometre) dissolved Mn measured by flame AAS at pH 7.4 in larsen1998: mean 12.2 micromolar in MR-4 inoculated flasks versus 1.2 micromolar in uninoculated controls across seven time points (Table 1; up to ~35 micromolar peak in Figure 1), whereas pH 4 and pH 5 arms were dominated by abiotic proton-promoted dissolution (101.3 vs 103.1 micromolar and 39.4 vs 44.0 micromolar).'
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: ccma_exporter
+    target: ccme_maturation
+    predicate: supplies_substrate_for
+    relationship: ATP-dependent periplasmic heme export for CcmE loading
+    description: System I ABC transporter subunit CcmA (Shewmr4_0231) drives heme export to load the periplasmic heme chaperone CcmE (Shewmr4_0227) in Shewanella sp. MR-4.
+    evidence:
+    - source_ref: larsen1998
+      supports: partial
+      explanation: Maturation of multiheme c-type cytochromes in Shewanella sp. MR-4 (NCBITaxon:60480) requires the System I CcmABCD/CcmE heme export and ligation complex (Shewmr4_0231 and Shewmr4_0227).
+  - source: ccme_maturation
+    target: cyma_dehydrogenase
+    predicate: positively_regulates
+    relationship: covalent heme maturation of c-type cytochromes
+    description: Heme chaperone CcmE (Shewmr4_0227) matures CymA and outer-membrane decaheme cytochromes required for anaerobic Mn(III) reduction.
+    evidence:
+    - source_ref: larsen1998
+      supports: partial
+      explanation: Dissimilatory Mn(III) reduction by Shewanella sp. MR-4 in defined M1 medium with 30 mM lactate at 27 C under 10% H2 / 90% N2 (larsen1998) depends on CcmE-matured c-type cytochromes.
+  - source: cyma_dehydrogenase
+    target: mtrc_reductase
+    predicate: provides_electrons_to
+    relationship: trans-periplasmic respiratory electron transfer
+    description: Inner-membrane CymA transfers electrons from lactate-reduced menaquinol to outer-membrane decaheme cytochrome MtrC.
+    evidence:
+    - source_ref: larsen1998
+      supports: partial
+      explanation: In Shewanella sp. MR-4 anoxic incubations with 30 mM lactate and synthetic manganite at pH 7.4 (larsen1998), respiratory electrons from lactate oxidation are routed via CymA to cell-surface decaheme cytochromes.
+  - source: mtrc_reductase
+    target: manganite_substrate
+    predicate: reduces
+    relationship: direct contact-dependent cell-surface Mn(III) reduction
+    description: Outer-membrane decaheme cytochrome MtrC transfers electrons directly to solid synthetic manganite (MnOOH) at pH 7.4 when cells have physical contact with the mineral.
+    evidence:
+    - source_ref: larsen1998
+      supports: partial
+      explanation: Figure 3 of larsen1998 demonstrates that enclosing synthetic manganite inside a dialysis bag at pH 7.4 strongly suppresses Mn dissolution relative to free-contact Shewanella sp. MR-4 cultures (with AFM in Figures 4-6 showing cell-sized dissolution pits on manganite surfaces), supporting contact-dependent outer-membrane electron transfer.
+  - source: manganite_substrate
+    target: dissolved_mn_product
+    predicate: transforms_into
+    relationship: reductive dissolution of MnOOH to filterable Mn(II)
+    description: Microbial reduction of synthetic manganite at pH 7.4 increases <0.2 micrometre dissolved Mn tenfold over abiotic controls (mean 12.2 vs 1.2 micromolar in Table 1).
+    evidence:
+    - source_ref: larsen1998
+      supports: support
+      explanation: Table 1 and Figure 1 of larsen1998 report a time-averaged <0.2 micrometre dissolved Mn concentration of 12.2 micromolar in MR-4 inoculated flasks versus 1.2 micromolar in no-cell controls at pH 7.4 (ANOVA p = 0.0029), whereas pH 4, 5, and 6 arms showed no statistically significant microbial enhancement over abiotic dissolution; the 200 vs 100 micromolar initial MnOOH figure/text discrepancy is retained.
 curation_history:
 - timestamp: '2026-10-14T06:24:24Z'
   curator: codex (GPT-6; Codex)
   action: CREATE
-  summary: >-
-    Add mineral identity and source-qualified synthetic manganite reduction
-    by MR-4, retaining controls, source contradictions and scale limits.
+  summary: Add mineral identity and source-qualified synthetic manganite reduction by MR-4, retaining controls, source contradictions and scale limits.
+- timestamp: '2026-11-09T00:44:32Z'
+  curator: marcin
+  action: edit
+  summary: Ground Shewanella sp. MR-4 manganite reductive dissolution to verified UniProtKB entries (Q0HNQ5, Q0HNQ9, Q8E8S0, Q8EG34) and add causal_graphs.
 history_refs:
 - history/records/manganite/2026-10-14T062347Z-codex-9f9289.yaml
+- history/records/manganite/2026-11-09T004432Z-marcin-66de84.yaml

@@ -1,142 +1,271 @@
 id: cmmmech:silica-sand
 name: Natural silica-sand feed
 material_kind: primary_resource
-description: >-
-  Naturally occurring quartz-rich sand or disaggregated sandstone used as an
-  industrial-mineral feed, represented here by two distinct English quarry
-  samples. Yahaya's Silica 2 was a purple-red Oakamoor/Moneystone rock sample
-  disaggregated to sand-grade powder; Silica 3 was yellow, uncemented Lower
-  Greensand from Grandcourt near King's Lynn. The latter's XRD was dominated
-  by quartz with minor phases assigned as kaolinite and feldspar. These are
-  heterogeneous geological feeds, not the mineral species quartz, elemental
-  silicon, spent foundry sand or a purity-defined silica product. The two
-  samples' compositions and assay outcomes are not pooled. No constituent's
-  criticality designation is transferred to this resource.
+description: Naturally occurring quartz-rich sand or disaggregated sandstone used as an industrial-mineral feed, represented here by two distinct English quarry samples. Yahaya's Silica 2 was a purple-red Oakamoor/Moneystone rock sample disaggregated to sand-grade powder; Silica 3 was yellow, uncemented Lower Greensand from Grandcourt near King's Lynn. The latter's XRD was dominated by quartz with minor phases assigned as kaolinite and feldspar. These are heterogeneous geological feeds, not the mineral species quartz, elemental silicon, spent foundry sand or a purity-defined silica product. The two samples' compositions and assay outcomes are not pooled. No constituent's criticality designation is transferred to this resource.
 sources:
 - id: yahaya2012
-  title: >-
-    Yahaya, S. Bacterial removal of iron impurities to increase the quality
-    and value of industrial minerals. Newcastle University PhD thesis,
-    repository issue year 2012; cover and declaration dated September 2011.
-    Complete 297-page official PDF acquired; this claim assessment covers
-    Chapter 2 methods and Chapter 5 silica microcosms, including all its
-    figures and tables. The deposited artifact visibly retains tracked edits,
-    comments and overlapping section/figure numbers. Printed pages and figure
-    subjects below disambiguate locators; this is not a clean journal edition.
+  title: Yahaya, S. Bacterial removal of iron impurities to increase the quality and value of industrial minerals. Newcastle University PhD thesis, repository issue year 2012; cover and declaration dated September 2011. Complete 297-page official PDF acquired; this claim assessment covers Chapter 2 methods and Chapter 5 silica microcosms, including all its figures and tables. The deposited artifact visibly retains tracked edits, comments and overlapping section/figure numbers. Printed pages and figure subjects below disambiguate locators; this is not a clean journal edition.
   url: https://theses.ncl.ac.uk/jspui/handle/10443/1346
   accessed_on: '2026-10-15'
 - id: ncbi_putrefaciens
-  title: >-
-    NCBI Taxonomy 24, Shewanella putrefaciens, current species-level record.
-    This identifier resolves the species name, not a verified genome or the
-    identity of the thesis's particular stored culture.
+  title: NCBI Taxonomy 24, Shewanella putrefaciens, current species-level record. This identifier resolves the species name, not a verified genome or the identity of the thesis's particular stored culture.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=24&mode=Info
   accessed_on: '2026-10-15'
 - id: jcm_cip8040
-  title: >-
-    RIKEN JCM catalogue, Shewanella putrefaciens JCM 20190T, listing CIP 80.40
-    among equivalent type-strain collection designations. This corroborates
-    the thesis spelling CIP8040 as a culture designation; it does not verify
-    that the experimental culture was independently sequence-confirmed.
+  title: RIKEN JCM catalogue, Shewanella putrefaciens JCM 20190T, listing CIP 80.40 among equivalent type-strain collection designations. This corroborates the thesis spelling CIP8040 as a culture designation; it does not verify that the experimental culture was independently sequence-confirmed.
   url: https://www.jcm.riken.jp/cgi-bin/jcm/jcm_number?JCM=20190
   accessed_on: '2026-10-15'
 mechanisms:
 - id: resting_shewanella_silica_sand_iron_reduction
   name: Resting-cell-associated reduction of iron in natural silica sand
   process: redox_transformation
+  description: Washed, viable Shewanella putrefaciens cells designated CIP8040 were associated with increased HCl-extractable Fe(II) in anaerobic silica-sand microcosms relative to the displayed blank. This is consistent with reduction of feed-associated Fe(III), with lactate supplied as an electron donor. It does not establish a particular iron-mineral source, a unique electron-transfer pathway, dissolved-only iron release, isolated iron recovery or industrial deployment.
+  context: The accepted core experiment used the source's Silica 3 from Grandcourt, collected in July 2008; its feed identity is distinct from Oakamoor Silica 2. Chapter 2 describes a nongrowth assay with washed stationary-phase cells, 80 mL minimal saline medium containing 0.9% NaCl and normally 10 mM lactate, in sealed, sterilized bottles purged with oxygen-free N2. Working pH was described as approximately 7.1-7.3, with dark incubation and 60 rpm shaking. The cell-density comparison used 2.5 g Silica 3, 3.5 or 7 mL stock suspension and 30 degrees C; the stock concentration was reported as 1.2 plus or minus 0.4 times 10^8 cells or CFU per mL, not the final reactor cell density. Its figure reports standard errors for three replicates. The separate AQDS comparison used 2.4 g Silica 3 and 4 mL stock cells at 30 degrees C, with or without the generally specified 100 micromolar AQDS. These arms are not pooled as identical assays. General methods describe blanks as cell-free or cell-and-donor-free
+    without clearly mapping the two formulations to every figure; therefore a fully matched lactate-containing abiotic control is not assumed. For Fe(II) analysis, 1 mL unfiltered sample was mixed with 1 mL 2 M HCl for about 24 hours, filtered at 0.2 micrometres and analyzed using 1,10-phenanthroline at 510 nm. The endpoint includes acid-extractable solid-associated as well as soluble Fe(II). These laboratory microcosms do not establish a complete mass balance or a recovered product yield.
   microbial: true
   organisms:
   - id: NCBITaxon:24
     label: Shewanella putrefaciens
-  description: >-
-    Washed, viable Shewanella putrefaciens cells designated CIP8040 were
-    associated with increased HCl-extractable Fe(II) in anaerobic silica-sand
-    microcosms relative to the displayed blank. This is consistent with
-    reduction of feed-associated Fe(III), with lactate supplied as an electron
-    donor. It does not establish a particular iron-mineral source, a unique
-    electron-transfer pathway, dissolved-only iron release, isolated iron
-    recovery or industrial deployment.
-  context: >-
-    The accepted core experiment used the source's Silica 3 from Grandcourt,
-    collected in July 2008; its feed identity is distinct from Oakamoor
-    Silica 2. Chapter 2 describes a nongrowth assay with washed stationary-phase
-    cells, 80 mL minimal saline medium containing 0.9% NaCl and normally
-    10 mM lactate, in sealed, sterilized bottles purged with oxygen-free N2.
-    Working pH was described as approximately 7.1-7.3, with dark incubation
-    and 60 rpm shaking. The cell-density comparison used 2.5 g Silica 3,
-    3.5 or 7 mL stock suspension and 30 degrees C; the stock concentration
-    was reported as 1.2 plus or minus 0.4 times 10^8 cells or CFU per mL,
-    not the final reactor cell density. Its figure reports standard errors
-    for three replicates. The separate AQDS comparison used 2.4 g Silica 3
-    and 4 mL stock cells at 30 degrees C, with or without the generally
-    specified 100 micromolar AQDS. These arms are not pooled as identical
-    assays. General methods describe blanks as cell-free or cell-and-donor-free
-    without clearly mapping the two formulations to every figure; therefore
-    a fully matched lactate-containing abiotic control is not assumed.
-    For Fe(II) analysis, 1 mL unfiltered sample was mixed with 1 mL 2 M HCl
-    for about 24 hours, filtered at 0.2 micrometres and analyzed using
-    1,10-phenanthroline at 510 nm. The endpoint includes acid-extractable
-    solid-associated as well as soluble Fe(II). These laboratory microcosms
-    do not establish a complete mass balance or a recovered product yield.
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0ABX8XAW9
+    entry_name: A0ABX8XAW9_SHEPU
+    protein_name: Cytochrome c-type protein
+    gene_symbol: cymA
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:24
+      label: Shewanella putrefaciens
+    reference_proteome_id: UP000827084
+    interpro_ids:
+    - InterPro:IPR051174
+    - InterPro:IPR036280
+    - InterPro:IPR024717
+    - InterPro:IPR005126
+    - InterPro:IPR038266
+    pfam_ids:
+    - Pfam:PF03264
+    functional_role: Inner-membrane tetraheme c-type menaquinol dehydrogenase CymA (ORF K3G22_18680 in the Shewanella putrefaciens reference proteome UP000827084) transferring electrons from lactate-reduced menaquinol to periplasmic and outer-membrane c-type cytochromes.
+    evidence:
+    - source_ref: yahaya2012
+      supports: partial
+      explanation: Representative Shewanella putrefaciens reference-proteome (UP000827084) inner-membrane tetraheme cytochrome CymA (K3G22_18680) coupling lactate oxidation to periplasmic electron transfer during resting-cell reduction of Fe(III) impurity phases on Silica 3 glass sand by Shewanella putrefaciens CIP8040 in yahaya2012; individual cytochrome genes were not mutated.
+  - uniprot_accession: UniProtKB:A0ABX8XFX2
+    entry_name: A0ABX8XFX2_SHEPU
+    protein_name: DmsE family decaheme c-type cytochrome
+    gene_symbol: K3G22_06990
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:24
+      label: Shewanella putrefaciens
+    reference_proteome_id: UP000827084
+    interpro_ids:
+    - InterPro:IPR053875
+    - InterPro:IPR020015
+    - InterPro:IPR036280
+    - InterPro:IPR010177
+    pfam_ids:
+    - Pfam:PF22678
+    - Pfam:PF09699
+    ncbifam_ids:
+    - NCBIfam:TIGR03508
+    - NCBIfam:TIGR01905
+    functional_role: Periplasmic decaheme c-type cytochrome MtrA (ORF K3G22_06990 in the Shewanella putrefaciens reference proteome UP000827084; NCBIfam:TIGR03508) relaying electrons across the outer-membrane porin-cytochrome conduit to MtrC.
+    evidence:
+    - source_ref: yahaya2012
+      supports: partial
+      explanation: Representative Shewanella putrefaciens reference-proteome (UP000827084) periplasmic decaheme cytochrome MtrA (K3G22_06990; TIGR03508) relaying electrons across the outer membrane during CIP8040 reduction of Silica 3 Fe(III) impurities in yahaya2012; individual cytochrome genes were not mutated.
+  - uniprot_accession: UniProtKB:A0ABX8XFE6
+    entry_name: A0ABX8XFE6_SHEPU
+    protein_name: OmcA/MtrC family decaheme c-type cytochrome
+    gene_symbol: K3G22_06995
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:24
+      label: Shewanella putrefaciens
+    reference_proteome_id: UP000827084
+    interpro_ids:
+    - InterPro:IPR020014
+    - InterPro:IPR054337
+    - InterPro:IPR054334
+    - InterPro:IPR036280
+    pfam_ids:
+    - Pfam:PF22113
+    - Pfam:PF22111
+    ncbifam_ids:
+    - NCBIfam:TIGR03507
+    functional_role: Outer-membrane cell-surface decaheme c-type cytochrome MtrC (ORF K3G22_06995 in the Shewanella putrefaciens reference proteome UP000827084; NCBIfam:TIGR03507) serving as terminal extracellular reductase for Fe(III) oxide impurities and AQDS electron shuttles.
+    evidence:
+    - source_ref: yahaya2012
+      supports: partial
+      explanation: Representative Shewanella putrefaciens reference-proteome (UP000827084) outer-membrane decaheme cytochrome MtrC (K3G22_06995; TIGR03507) delivering extracellular electrons to Silica 3 Fe(III) impurities directly and via 100 micromolar AQDS in yahaya2012; individual cytochrome genes were not mutated.
   evidence:
   - source_ref: yahaya2012
     supports: support
-    explanation: >-
-      Chapter 2 sections 2.2.2, 2.4.3-2.4.5 and 2.5.7, printed pages 31-40
-      (PDF pages 50-59), establish the separate feeds, cell preparation and
-      extraction assay. Chapter 5 cell-density comparison, printed pages
-      110-111 (PDF pages 129-130; Figure 5.2), shows greater extractable
-      Fe(II) with 7 mL than with 3.5 mL CIP8040 suspension and a lower,
-      nonzero blank. The text reports day-one concentrations of 0.24 and
-      0.12 mmol/L respectively. These are assay concentrations, not rates
-      or percentages recovered. The differing inoculum volumes and incompletely
-      specified blank composition limit a unique causal interpretation.
+    explanation: Chapter 2 sections 2.2.2, 2.4.3-2.4.5 and 2.5.7, printed pages 31-40 (PDF pages 50-59), establish the separate feeds, cell preparation and extraction assay. Chapter 5 cell-density comparison, printed pages 110-111 (PDF pages 129-130; Figure 5.2), shows greater extractable Fe(II) with 7 mL than with 3.5 mL CIP8040 suspension and a lower, nonzero blank. The text reports day-one concentrations of 0.24 and 0.12 mmol/L respectively. These are assay concentrations, not rates or percentages recovered. The differing inoculum volumes and incompletely specified blank composition limit a unique causal interpretation.
   - source_ref: yahaya2012
     supports: partial
-    explanation: >-
-      Chapter 5 printed pages 111-115 (PDF pages 130-134), AQDS-presence
-      comparison Figure 5.3 and the AQDS/NOM/no-shuttle comparison Figure 5.5,
-      show little early AQDS benefit and only modest later differences in
-      Silica 3. The Figure 5.3 text reports 0.224 mmol/L with AQDS and
-      0.186 mmol/L without it after 15 days. This does not support a universal
-      requirement for, or large enhancement by, the added shuttle. Figure 5.4
-      is excluded from a feed-specific quantitative inference because its
-      surrounding discussion concerns Silica 3 while its caption says Silica
-      Sand 2. Proposed direct contact, pore accessibility and cell-surface
-      inhibition were not independently established by these comparisons.
+    explanation: Chapter 5 printed pages 111-115 (PDF pages 130-134), AQDS-presence comparison Figure 5.3 and the AQDS/NOM/no-shuttle comparison Figure 5.5, show little early AQDS benefit and only modest later differences in Silica 3. The Figure 5.3 text reports 0.224 mmol/L with AQDS and 0.186 mmol/L without it after 15 days. This does not support a universal requirement for, or large enhancement by, the added shuttle. Figure 5.4 is excluded from a feed-specific quantitative inference because its surrounding discussion concerns Silica 3 while its caption says Silica Sand 2. Proposed direct contact, pore accessibility and cell-surface inhibition were not independently established by these comparisons.
   - source_ref: yahaya2012
     supports: partial
-    explanation: >-
-      Chapter 5 printed pages 109-110 (PDF pages 128-129), strain-screen
-      Figure 5.1, instead concerns 2.5 g Oakamoor Silica 2 with 10 mM lactate
-      and 100 micromolar AQDS at a caption-specified 20 degrees C. Its four
-      displayed curves include a much lower response for source-designated
-      S. loihica than for the other tested cultures. This separate screen
-      cannot establish identical behavior across strains or be transferred
-      quantitatively to the Grandcourt 30-degree-C experiment. The generic
-      culture list is not used to invent an additional tested silica strain.
+    explanation: Chapter 5 printed pages 109-110 (PDF pages 128-129), strain-screen Figure 5.1, instead concerns 2.5 g Oakamoor Silica 2 with 10 mM lactate and 100 micromolar AQDS at a caption-specified 20 degrees C. Its four displayed curves include a much lower response for source-designated S. loihica than for the other tested cultures. This separate screen cannot establish identical behavior across strains or be transferred quantitatively to the Grandcourt 30-degree-C experiment. The generic culture list is not used to invent an additional tested silica strain.
   - source_ref: yahaya2012
     supports: partial
-    explanation: >-
-      Chapter 5 printed pages 121-126 (PDF pages 140-145), Figures 5.10-5.15
-      and Tables 5.1-5.2, constrain the mineralogical interpretation. Before/
-      after XRD of Silica 3 did not show an obvious new crystalline product;
-      FTIR changes also occurred in the blank. Local EDX lists Fe in the
-      blank but not the biotreated table, without a detection limit or bulk
-      recovery balance. This is not complete iron removal. SEM images show
-      surface differences but do not identify a uniquely dissolved iron phase.
-      The displayed Mossbauer spectrum is of untreated Silica 3 only, not a
-      measured before/after oxidation-state conversion. None of these
-      observations establishes purified silica quality or a specific genetic
-      mechanism. The deposited document's editorial uncertainties further
-      warrant preserving these narrow interpretations.
+    explanation: Chapter 5 printed pages 121-126 (PDF pages 140-145), Figures 5.10-5.15 and Tables 5.1-5.2, constrain the mineralogical interpretation. Before/ after XRD of Silica 3 did not show an obvious new crystalline product; FTIR changes also occurred in the blank. Local EDX lists Fe in the blank but not the biotreated table, without a detection limit or bulk recovery balance. This is not complete iron removal. SEM images show surface differences but do not identify a uniquely dissolved iron phase. The displayed Mossbauer spectrum is of untreated Silica 3 only, not a measured before/after oxidation-state conversion. None of these observations establishes purified silica quality or a specific genetic mechanism. The deposited document's editorial uncertainties further warrant preserving these narrow interpretations.
+causal_graphs:
+- id: shewanella_silica_sand_fe_reduction_graph
+  name: Shewanella putrefaciens CIP8040 resting-cell reduction of iron impurities in Silica 3 glass sand
+  description: Causal pathway linking Shewanella putrefaciens CymA, MtrA, and MtrC multiheme cytochromes to extracellular reduction of Fe(III)-bearing impurity phases in Grandcourt Lower Greensand silica sand (Silica 3) in minimal saline medium with lactate, without or with 100 micromolar AQDS.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: resting_shewanella_silica_sand_iron_reduction
+  nodes:
+  - id: cyma_dehydrogenase
+    label: CymA inner-membrane tetraheme cytochrome c (K3G22_18680)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cymA
+    description: Inner-membrane menaquinol dehydrogenase routing electrons from lactate oxidation to the periplasmic Mtr pathway in Shewanella putrefaciens.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0ABX8XAW9
+      entry_name: A0ABX8XAW9_SHEPU
+      protein_name: Cytochrome c-type protein
+      gene_symbol: cymA
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:24
+        label: Shewanella putrefaciens
+      reference_proteome_id: UP000827084
+      interpro_ids:
+      - InterPro:IPR051174
+      - InterPro:IPR036280
+      - InterPro:IPR024717
+      - InterPro:IPR005126
+      - InterPro:IPR038266
+      pfam_ids:
+      - Pfam:PF03264
+      functional_role: Inner-membrane tetraheme c-type menaquinol dehydrogenase CymA (ORF K3G22_18680 in the Shewanella putrefaciens reference proteome UP000827084) transferring electrons from lactate-reduced menaquinol to periplasmic and outer-membrane c-type cytochromes.
+      evidence:
+      - source_ref: yahaya2012
+        supports: partial
+        explanation: Representative Shewanella putrefaciens reference-proteome (UP000827084) inner-membrane tetraheme cytochrome CymA (K3G22_18680) coupling lactate oxidation to periplasmic electron transfer during resting-cell reduction of Fe(III) impurity phases on Silica 3 glass sand by Shewanella putrefaciens CIP8040 in yahaya2012; individual cytochrome genes were not mutated.
+  - id: mtra_conduit
+    label: MtrA family periplasmic decaheme cytochrome c (K3G22_06990)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: K3G22_06990
+    description: Periplasmic decaheme cytochrome c bridging CymA and the outer-membrane decaheme cytochrome MtrC.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0ABX8XFX2
+      entry_name: A0ABX8XFX2_SHEPU
+      protein_name: DmsE family decaheme c-type cytochrome
+      gene_symbol: K3G22_06990
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:24
+        label: Shewanella putrefaciens
+      reference_proteome_id: UP000827084
+      interpro_ids:
+      - InterPro:IPR053875
+      - InterPro:IPR020015
+      - InterPro:IPR036280
+      - InterPro:IPR010177
+      pfam_ids:
+      - Pfam:PF22678
+      - Pfam:PF09699
+      ncbifam_ids:
+      - NCBIfam:TIGR03508
+      - NCBIfam:TIGR01905
+      functional_role: Periplasmic decaheme c-type cytochrome MtrA (ORF K3G22_06990 in the Shewanella putrefaciens reference proteome UP000827084; NCBIfam:TIGR03508) relaying electrons across the outer-membrane porin-cytochrome conduit to MtrC.
+      evidence:
+      - source_ref: yahaya2012
+        supports: partial
+        explanation: Representative Shewanella putrefaciens reference-proteome (UP000827084) periplasmic decaheme cytochrome MtrA (K3G22_06990; TIGR03508) relaying electrons across the outer membrane during CIP8040 reduction of Silica 3 Fe(III) impurities in yahaya2012; individual cytochrome genes were not mutated.
+  - id: mtrc_reductase
+    label: MtrC family outer-membrane decaheme cytochrome c (K3G22_06995)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: K3G22_06995
+    description: Outer-membrane surface decaheme cytochrome c transferring electrons to silica-sand Fe(III) impurity coatings directly and via 100 micromolar AQDS.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0ABX8XFE6
+      entry_name: A0ABX8XFE6_SHEPU
+      protein_name: OmcA/MtrC family decaheme c-type cytochrome
+      gene_symbol: K3G22_06995
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:24
+        label: Shewanella putrefaciens
+      reference_proteome_id: UP000827084
+      interpro_ids:
+      - InterPro:IPR020014
+      - InterPro:IPR054337
+      - InterPro:IPR054334
+      - InterPro:IPR036280
+      pfam_ids:
+      - Pfam:PF22113
+      - Pfam:PF22111
+      ncbifam_ids:
+      - NCBIfam:TIGR03507
+      functional_role: Outer-membrane cell-surface decaheme c-type cytochrome MtrC (ORF K3G22_06995 in the Shewanella putrefaciens reference proteome UP000827084; NCBIfam:TIGR03507) serving as terminal extracellular reductase for Fe(III) oxide impurities and AQDS electron shuttles.
+      evidence:
+      - source_ref: yahaya2012
+        supports: partial
+        explanation: Representative Shewanella putrefaciens reference-proteome (UP000827084) outer-membrane decaheme cytochrome MtrC (K3G22_06995; TIGR03507) delivering extracellular electrons to Silica 3 Fe(III) impurities directly and via 100 micromolar AQDS in yahaya2012; individual cytochrome genes were not mutated.
+  - id: silica3_fe3_impurities
+    label: Fe(III)-bearing impurity phases on Grandcourt Lower Greensand silica sand (Silica 3, 2.4 to 2.5 g per 80 mL)
+    node_type: MATERIAL_OR_PHASE
+    description: Iron-bearing impurity coatings and accessory grains on natural Grandcourt Lower Greensand silica sand (Silica 3; 2.5 g in Figure 5.2 or 2.4 g in Figure 5.3 in 80 mL 0.9% NaCl minimal saline medium at pH ~7.1-7.3 with 10 mM lactate, oxygen-free N2, 30 C, dark, 60 rpm) incubated with washed stationary-phase Shewanella putrefaciens CIP8040 in yahaya2012.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: hcl_extractable_fe2_product
+    label: 0.5 N HCl-extractable Fe(II) from bioreduced Silica 3 (0.12 to 0.24 mmol/L at day 1; 0.186 mmol/L without AQDS vs 0.224 mmol/L with 100 micromolar AQDS at day 15)
+    node_type: CHEMICAL_ENTITY
+    description: '0.5 N HCl-extractable Fe(II) measured by ferrozine assay in yahaya2012: 0.12 mmol/L (3.5 mL cell stock) and 0.24 mmol/L (7 mL cell stock of 1.2 +/- 0.4 x 10^8 cells/mL) at day 1 vs lower nonzero abiotic blank (Figure 5.2), and 0.224 mmol/L with 100 micromolar AQDS vs 0.186 mmol/L without AQDS at day 15 (Figure 5.3; single-bottle runs without error bars).'
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: cyma_dehydrogenase
+    target: mtra_conduit
+    predicate: provides_electrons_to
+    relationship: inner-membrane to periplasmic electron transfer
+    description: Inner-membrane CymA transfers electrons from lactate-reduced menaquinol to periplasmic decaheme cytochrome MtrA.
+    evidence:
+    - source_ref: yahaya2012
+      supports: partial
+      explanation: In Shewanella putrefaciens CIP8040 resting-cell incubations with 10 mM lactate in 0.9% NaCl minimal saline medium (yahaya2012 Chapter 5), respiratory electrons from lactate oxidation enter the periplasmic Mtr pathway via CymA.
+  - source: mtra_conduit
+    target: mtrc_reductase
+    predicate: provides_electrons_to
+    relationship: trans-outer-membrane porin-cytochrome electron relay
+    description: Periplasmic MtrA relays electrons across the outer membrane to cell-surface decaheme cytochrome MtrC.
+    evidence:
+    - source_ref: yahaya2012
+      supports: partial
+      explanation: Across the Shewanella putrefaciens MtrCAB outer-membrane conduit, MtrA (K3G22_06990) transfers electrons to surface-exposed MtrC (K3G22_06995) during anaerobic Fe(III) reduction on Silica 3 sand in yahaya2012.
+  - source: mtrc_reductase
+    target: silica3_fe3_impurities
+    predicate: reduces
+    relationship: direct and AQDS-shuttled extracellular electron transfer
+    description: Outer-membrane decaheme cytochrome MtrC reduces Fe(III)-bearing impurity phases on Silica 3 glass sand directly and via 100 micromolar AQDS.
+    evidence:
+    - source_ref: yahaya2012
+      supports: partial
+      explanation: In 80 mL minimal saline batch reactors at 30 C and 60 rpm containing 2.5 g (Figure 5.2) or 2.4 g (Figure 5.3) Silica 3 sand and washed Shewanella putrefaciens CIP8040 cells (yahaya2012 Chapter 5), extracellular electron transfer reduces sand-associated Fe(III) impurities, with 100 micromolar AQDS accelerating Fe(II) production.
+  - source: silica3_fe3_impurities
+    target: hcl_extractable_fe2_product
+    predicate: transforms_into
+    relationship: reductive conversion of sand Fe(III) impurities to HCl-extractable Fe(II)
+    description: Bioreduction of Silica 3 Fe(III) impurities yields 0.12 to 0.24 mmol/L HCl-extractable Fe(II) at day 1 (Figure 5.2) and 0.186 mmol/L (no AQDS) to 0.224 mmol/L (+100 micromolar AQDS) at day 15 (Figure 5.3).
+    evidence:
+    - source_ref: yahaya2012
+      supports: support
+      explanation: Figures 5.2 and 5.3 of yahaya2012 show 0.5 N HCl-extractable Fe(II) reaching 0.12 and 0.24 mmol/L at day 1 with 3.5 and 7 mL CIP8040 inocula (vs a lower nonzero uninoculated blank reflecting native Fe(II) in Silica 3) and 0.224 mmol/L with 100 micromolar AQDS vs 0.186 mmol/L without AQDS at day 15; bulk sand beneficiation or complete deferrizing was not demonstrated in the Shewanella assay.
 curation_history:
 - timestamp: '2026-10-15T00:06:20.077904+00:00'
   curator: codex (GPT-6; codex)
   action: CREATE
-  summary: >-
-    Curated the distinct natural silica-sand resource and a bounded primary
-    resting-cell iron-redox assay, preserving quarry-specific conditions,
-    extraction endpoint, controls, null effects and deposited-source limits.
+  summary: Curated the distinct natural silica-sand resource and a bounded primary resting-cell iron-redox assay, preserving quarry-specific conditions, extraction endpoint, controls, null effects and deposited-source limits.
+- timestamp: '2026-11-09T00:44:32Z'
+  curator: marcin
+  action: edit
+  summary: Ground Shewanella putrefaciens CIP8040 Silica 3 iron reduction to verified UniProtKB entries (A0ABX8XAW9, A0ABX8XFX2, A0ABX8XFE6) and add causal_graphs.
 history_refs:
 - history/records/silica-sand/2026-10-15T000631Z-codex-5ebae5.yaml
+- history/records/silica-sand/2026-11-09T004432Z-marcin-81d753.yaml

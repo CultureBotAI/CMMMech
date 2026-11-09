@@ -1,162 +1,280 @@
 id: cmmmech:feroxyhyte
 name: Feroxyhyte
 material_kind: mineral
-description: >-
-  Feroxyhyte is the iron(III) oxyhydroxide mineral species Fe3+O(OH),
-  listed as approved with IMA number 1975-032 in the September 2026
-  IMA-CNMNC list. The curated experiment used chemically synthesized
-  feroxyhyte, described as delta-prime FeOOH, rather than a natural ore.
-  This mineral identity is distinct from other FeOOH polymorphs, elemental
-  iron and the mixed secondary solids formed during the experiment.
-  No constituent-element criticality or industrial recovery is inferred.
+description: Feroxyhyte is the iron(III) oxyhydroxide mineral species Fe3+O(OH), listed as approved with IMA number 1975-032 in the September 2026 IMA-CNMNC list. The curated experiment used chemically synthesized feroxyhyte, described as delta-prime FeOOH, rather than a natural ore. This mineral identity is distinct from other FeOOH polymorphs, elemental iron and the mixed secondary solids formed during the experiment. No constituent-element criticality or industrial recovery is inferred.
 identifiers:
 - id: IMA:1975-032
   label: Feroxyhyte
 sources:
 - id: ima_2026_09
-  title: >-
-    IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 68,
-    Feroxyhyte row; page 1 column and approval-status definitions.
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. PDF page 68, Feroxyhyte row; page 1 column and approval-status definitions.
   url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
   accessed_on: '2026-10-14'
 - id: oloughlin_2021
-  title: >-
-    O'Loughlin, Boyanov, Gorski, Scherer and Kemner (2021). Effects of
-    Fe(III) Oxide Mineralogy and Phosphate on Fe(II) Secondary Mineral
-    Formation during Microbial Iron Reduction. Minerals 11(2):149.
-    DOI 10.3390/min11020149. Complete 43-page original publisher PDF;
-    Sections 2.1-2.3, 3.7 and 4.1-4.4; Figures 22-24 and Tables 4-5.
+  title: O'Loughlin, Boyanov, Gorski, Scherer and Kemner (2021). Effects of Fe(III) Oxide Mineralogy and Phosphate on Fe(II) Secondary Mineral Formation during Microbial Iron Reduction. Minerals 11(2):149. DOI 10.3390/min11020149. Complete 43-page original publisher PDF; Sections 2.1-2.3, 3.7 and 4.1-4.4; Figures 22-24 and Tables 4-5.
   url: https://doi.org/10.3390/min11020149
   accessed_on: '2026-10-14'
 - id: ncbi_cn32
-  title: >-
-    NCBI Taxonomy 319224, Shewanella putrefaciens CN-32. Named-strain
-    identity; equivalent names include Shewanella putrefaciens strain
-    CN-32. This does not authenticate the experimental stock.
+  title: NCBI Taxonomy 319224, Shewanella putrefaciens CN-32. Named-strain identity; equivalent names include Shewanella putrefaciens strain CN-32. This does not authenticate the experimental stock.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=319224
   accessed_on: '2026-10-14'
 - id: atcc_cn32
-  title: >-
-    ATCC BAA-453, Shewanella putrefaciens, strain designation CN-32
-    [OCM 576, SMCC 576W]. Resolves the collection identifier for the named
-    strain, unlike the BAA-543 number printed in the experimental paper.
+  title: ATCC BAA-453, Shewanella putrefaciens, strain designation CN-32 [OCM 576, SMCC 576W]. Resolves the collection identifier for the named strain, unlike the BAA-543 number printed in the experimental paper.
   url: https://www.atcc.org/products/baa-453
   accessed_on: '2026-10-14'
 - id: atcc_baa543
-  title: >-
-    ATCC BAA-543, Cellulomonas sp., strain ES5. Authority evidence that
-    the BAA-543 identifier printed beside CN32 in the paper refers to a
-    different organism; the experimental stock cannot be independently
-    authenticated from that conflicting citation.
+  title: ATCC BAA-543, Cellulomonas sp., strain ES5. Authority evidence that the BAA-543 identifier printed beside CN32 in the paper refers to a different organism; the experimental stock cannot be independently authenticated from that conflicting citation.
   url: https://www.atcc.org/products/baa-543
   accessed_on: '2026-10-14'
 mechanisms:
 - id: cn32_feroxyhyte_reductive_transformation
   name: Culture-associated feroxyhyte reduction and condition-dependent secondary minerals
   process: redox_transformation
+  description: Laboratory cultures reported as S. putrefaciens CN32 produced acid-extractable Fe(II) from synthetic feroxyhyte and secondary solids assigned to magnetite and chukanovite without added phosphate. AQDS accelerated the initial Fe(II) increase without a reported significant increase in the final amount in phosphate-free cultures. Phosphate additions in AQDS-containing cultures slowed initial Fe(II) production and changed the later phase distribution; the high-phosphate treatment yielded green-rust and vivianite assignments. These observations support conditional reductive transformation, not complete conversion of every Fe(III) atom to Fe(II), a demonstrated gene pathway or isolated iron recovery.
+  context: Section 2.1 describes peroxide oxidation of synthetic Fe(OH)2 to feroxyhyte, followed by repeated washing, drying at 60 degrees C and grinding through a 200-mesh sieve; phase identity was checked by pXRD. Duplicate 160 mL serum bottles contained 100 mL defined mineral medium, 80 mM Fe(III) as feroxyhyte and 75 mM formate. Medium was adjusted to pH 7.5 before sterilization and addition of filter-sterilized reagents; this is not a controlled constant-pH trajectory. Inoculated bottles were argon-sparged and incubated on a roller drum at 30 degrees C in darkness. Late-log-phase cultures were added to approximately 5 x 10^9 cells/mL as printed. The 2021 paper delegates the complete basal-medium and inoculum preparation to earlier references; those inherited recipes were not reconstructed here. The named strain is mapped to CN-32, but Section 2.2 prints ATCC BAA-543 whereas the authority assigns CN-32 to BAA-453 and BAA-543 to Cellulomonas sp. ES5; this discrepancy remains an experimental-provenance
+    limitation. Treatments were no added phosphate without or with 100 micromolar AQDS, and 500 micromolar or 5 mM phosphate with 100 micromolar AQDS. No phosphate-amended, AQDS-free arm was included. Total Fe(II) was measured by ferrozine after one-week HCl extraction of suspension, with extra acid for magnetite-containing samples; it is not dissolved Fe(II) alone. Anoxic handling, pXRD, SEM and selected Mossbauer fits characterized solids. Figure 23 includes a sterile-control diffraction trace, but a matched sterile Fe(II) time series and complete control amendment/time details are not supplied with these results.
   microbial: true
   organisms:
   - id: NCBITaxon:319224
     label: Shewanella putrefaciens CN-32
-  description: >-
-    Laboratory cultures reported as S. putrefaciens CN32 produced
-    acid-extractable Fe(II) from synthetic feroxyhyte and secondary solids
-    assigned to magnetite and chukanovite without added phosphate. AQDS
-    accelerated the initial Fe(II) increase without a reported significant
-    increase in the final amount in phosphate-free cultures. Phosphate
-    additions in AQDS-containing cultures slowed initial Fe(II) production
-    and changed the later phase distribution; the high-phosphate treatment
-    yielded green-rust and vivianite assignments. These observations support
-    conditional reductive transformation, not complete conversion of every
-    Fe(III) atom to Fe(II), a demonstrated gene pathway or isolated iron recovery.
-  context: >-
-    Section 2.1 describes peroxide oxidation of synthetic Fe(OH)2 to
-    feroxyhyte, followed by repeated washing, drying at 60 degrees C and
-    grinding through a 200-mesh sieve; phase identity was checked by pXRD.
-    Duplicate 160 mL serum bottles contained 100 mL defined mineral medium,
-    80 mM Fe(III) as feroxyhyte and 75 mM formate. Medium was adjusted to
-    pH 7.5 before sterilization and addition of filter-sterilized reagents;
-    this is not a controlled constant-pH trajectory. Inoculated bottles
-    were argon-sparged and incubated on a roller drum at 30 degrees C in
-    darkness. Late-log-phase cultures were added to approximately
-    5 x 10^9 cells/mL as printed. The 2021 paper delegates the complete
-    basal-medium and inoculum preparation to earlier references; those
-    inherited recipes were not reconstructed here. The named strain is
-    mapped to CN-32, but Section 2.2 prints ATCC BAA-543 whereas the
-    authority assigns CN-32 to BAA-453 and BAA-543 to Cellulomonas sp. ES5;
-    this discrepancy remains an experimental-provenance limitation.
-    Treatments were no added phosphate without or with 100 micromolar
-    AQDS, and 500 micromolar or 5 mM phosphate with 100 micromolar AQDS.
-    No phosphate-amended, AQDS-free arm was included. Total Fe(II) was
-    measured by ferrozine after one-week HCl extraction of suspension,
-    with extra acid for magnetite-containing samples; it is not dissolved
-    Fe(II) alone. Anoxic handling, pXRD, SEM and selected Mossbauer fits
-    characterized solids. Figure 23 includes a sterile-control diffraction
-    trace, but a matched sterile Fe(II) time series and complete control
-    amendment/time details are not supplied with these results.
+  protein_examples:
+  - uniprot_accession: UniProtKB:A4YBV6
+    entry_name: CCME_SHEPC
+    protein_name: Cytochrome c-type biogenesis protein CcmE
+    gene_symbol: ccmE
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:319224
+      label: Shewanella putrefaciens CN-32
+    interpro_ids:
+    - InterPro:IPR004329
+    - InterPro:IPR036127
+    - InterPro:IPR012340
+    pfam_ids:
+    - Pfam:PF03100
+    ncbifam_ids:
+    - NCBIfam:NF009638
+    - NCBIfam:NF009729
+    functional_role: Periplasmic heme-chaperone CcmE (locus Sputcn32_3731) of the System I cytochrome c maturation machinery in Shewanella putrefaciens CN-32, required for covalent heme attachment to multiheme c-type cytochromes of the CymA-MtrCAB extracellular electron-transfer pathway.
+    evidence:
+    - source_ref: oloughlin_2021
+      supports: partial
+      explanation: Reviewed Swiss-Prot System I cytochrome c maturation chaperone CcmE (Sputcn32_3731) from exact strain Shewanella putrefaciens CN-32 (NCBITaxon:319224), required for holo-cytochrome c maturation during CN-32 bioreduction of 80 mM synthetic feroxyhyte (delta'-FeOOH) with 75 mM formate in oloughlin_2021; individual cytochrome genes were not mutated.
+  - uniprot_accession: UniProtKB:A0ABX8XAW9
+    entry_name: A0ABX8XAW9_SHEPU
+    protein_name: Cytochrome c-type protein
+    gene_symbol: cymA
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:24
+      label: Shewanella putrefaciens
+    reference_proteome_id: UP000827084
+    interpro_ids:
+    - InterPro:IPR051174
+    - InterPro:IPR036280
+    - InterPro:IPR024717
+    - InterPro:IPR005126
+    - InterPro:IPR038266
+    pfam_ids:
+    - Pfam:PF03264
+    functional_role: Inner-membrane tetraheme c-type menaquinol dehydrogenase CymA (ORF K3G22_18680 in the Shewanella putrefaciens reference proteome UP000827084) transferring electrons from the inner-membrane menaquinol pool to periplasmic and outer-membrane c-type cytochromes.
+    annotation_note: Grounded to the species-level Shewanella putrefaciens reference proteome (UP000827084, NCBITaxon:24) CymA ortholog because active UniProtKB retains only reviewed Swiss-Prot entries under strain Shewanella putrefaciens CN-32 (NCBITaxon:319224).
+    evidence:
+    - source_ref: oloughlin_2021
+      supports: partial
+      explanation: Representative Shewanella putrefaciens reference-proteome (UP000827084) inner-membrane tetraheme cytochrome CymA (K3G22_18680) routing electrons from formate-reduced menaquinol during CN-32 bioreduction of 80 mM synthetic feroxyhyte in oloughlin_2021; species-level ortholog used because CN-32 TrEMBL entries are not retained in active UniProtKB.
+  - uniprot_accession: UniProtKB:A0ABX8XFE6
+    entry_name: A0ABX8XFE6_SHEPU
+    protein_name: OmcA/MtrC family decaheme c-type cytochrome
+    gene_symbol: K3G22_06995
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:24
+      label: Shewanella putrefaciens
+    reference_proteome_id: UP000827084
+    interpro_ids:
+    - InterPro:IPR020014
+    - InterPro:IPR054337
+    - InterPro:IPR054334
+    - InterPro:IPR036280
+    pfam_ids:
+    - Pfam:PF22113
+    - Pfam:PF22111
+    ncbifam_ids:
+    - NCBIfam:TIGR03507
+    functional_role: Outer-membrane cell-surface decaheme c-type cytochrome MtrC (ORF K3G22_06995 in the Shewanella putrefaciens reference proteome UP000827084; NCBIfam:TIGR03507) serving as a terminal extracellular reductase for Fe(III)-bearing mineral and AQDS electron acceptors.
+    annotation_note: Grounded to the species-level Shewanella putrefaciens reference proteome (UP000827084, NCBITaxon:24) MtrC ortholog because active UniProtKB retains only reviewed Swiss-Prot entries under strain Shewanella putrefaciens CN-32 (NCBITaxon:319224).
+    evidence:
+    - source_ref: oloughlin_2021
+      supports: partial
+      explanation: Representative Shewanella putrefaciens reference-proteome (UP000827084) outer-membrane decaheme cytochrome MtrC (K3G22_06995; TIGR03507) mediating extracellular electron transfer to 80 mM synthetic feroxyhyte (directly and via 100 micromolar AQDS) in oloughlin_2021; species-level ortholog used because CN-32 TrEMBL entries are not retained in active UniProtKB.
   evidence:
   - source_ref: oloughlin_2021
     supports: support
-    explanation: >-
-      Section 3.7, Figure 22 and Table 4 show an early plateau near 24 mM
-      acid-extractable Fe(II) in both phosphate-free cultures. Table 4
-      reports final values of 24.28 +/- 2.10 mM without AQDS and
-      24.51 +/- 6.02 mM with AQDS at day 78, approximately 30 percent of
-      the initially supplied 80 mM Fe(III). The paper's description of
-      essentially complete bioreduction within 11 days therefore cannot
-      mean reduction of all initial Fe(III) to Fe(II). AQDS changes the
-      initial rate, and Section 4.2 explicitly reports no significant
-      final-extent difference for feroxyhyte. The fitted maximum sustained
-      rates are not instantaneous rates or enzyme-specific measurements.
+    explanation: Section 3.7, Figure 22 and Table 4 show an early plateau near 24 mM acid-extractable Fe(II) in both phosphate-free cultures. Table 4 reports final values of 24.28 +/- 2.10 mM without AQDS and 24.51 +/- 6.02 mM with AQDS at day 78, approximately 30 percent of the initially supplied 80 mM Fe(III). The paper's description of essentially complete bioreduction within 11 days therefore cannot mean reduction of all initial Fe(III) to Fe(II). AQDS changes the initial rate, and Section 4.2 explicitly reports no significant final-extent difference for feroxyhyte. The fitted maximum sustained rates are not instantaneous rates or enzyme-specific measurements.
   - source_ref: oloughlin_2021
     supports: support
-    explanation: >-
-      Figure 23 compares the sterile-control feroxyhyte pattern with
-      inoculated solids assigned to magnetite and chukanovite in the
-      phosphate-free and 500 micromolar phosphate treatments. At 5 mM
-      phosphate the assigned products are carbonate green rust and
-      vivianite. Figure 24 supplies morphology, not standalone phase proof;
-      Table 4 marks the high-phosphate SEM green-rust assignment with a
-      question mark and supplies no Mossbauer result for that arm.
-      Table 5's selected AQDS and AQDS-plus-500-micromolar-phosphate fits
-      support magnetite/chukanovite mixtures; their relative spectral areas
-      are not whole-feed mass recovery percentages.
+    explanation: Figure 23 compares the sterile-control feroxyhyte pattern with inoculated solids assigned to magnetite and chukanovite in the phosphate-free and 500 micromolar phosphate treatments. At 5 mM phosphate the assigned products are carbonate green rust and vivianite. Figure 24 supplies morphology, not standalone phase proof; Table 4 marks the high-phosphate SEM green-rust assignment with a question mark and supplies no Mossbauer result for that arm. Table 5's selected AQDS and AQDS-plus-500-micromolar-phosphate fits support magnetite/chukanovite mixtures; their relative spectral areas are not whole-feed mass recovery percentages.
   - source_ref: oloughlin_2021
     supports: partial
-    explanation: >-
-      Table 4 reports 55.07 +/- 2.92 and 59.93 +/- 1.65 mM final Fe(II)
-      at day 156 for the 500 micromolar and 5 mM phosphate treatments,
-      respectively. These longer-duration endpoints must not be treated
-      as a same-day comparison with day-78 phosphate-free endpoints.
-      Figure 23 labels the actual plotted patterns as day 78 or day 156,
-      consistent with Table 4, while its caption says 46 days. That
-      unresolved caption conflict is retained rather than assigning a
-      fabricated common harvest date. No residual feroxyhyte was identified
-      in the inoculated diffraction patterns, but nondetection and mixed
-      Fe(II)/Fe(III) products do not establish total iron reduction or a
-      quantitative pure-phase yield.
+    explanation: Table 4 reports 55.07 +/- 2.92 and 59.93 +/- 1.65 mM final Fe(II) at day 156 for the 500 micromolar and 5 mM phosphate treatments, respectively. These longer-duration endpoints must not be treated as a same-day comparison with day-78 phosphate-free endpoints. Figure 23 labels the actual plotted patterns as day 78 or day 156, consistent with Table 4, while its caption says 46 days. That unresolved caption conflict is retained rather than assigning a fabricated common harvest date. No residual feroxyhyte was identified in the inoculated diffraction patterns, but nondetection and mixed Fe(II)/Fe(III) products do not establish total iron reduction or a quantitative pure-phase yield.
   - source_ref: oloughlin_2021
     supports: partial
-    explanation: >-
-      Sterile-control diffraction supports retention of the starting phase
-      under one control condition; the absence of a reported matched
-      sterile Fe(II) trajectory and fully specified control arms limits
-      quantification of the microbial increment. No killed-cell, cell-free
-      metabolite or mutant comparison resolves biological necessity or a
-      particular electron-transfer pathway. Dissolution-reprecipitation is
-      inferred from changed morphology in Section 4.1, not directly traced.
-      All phosphate arms also contain AQDS, so phosphate effects cannot be
-      generalized to shuttle-free systems. The study demonstrates laboratory
-      solid transformation, with no isolated iron product, natural-ore
-      performance or industrial deployment established.
+    explanation: Sterile-control diffraction supports retention of the starting phase under one control condition; the absence of a reported matched sterile Fe(II) trajectory and fully specified control arms limits quantification of the microbial increment. No killed-cell, cell-free metabolite or mutant comparison resolves biological necessity or a particular electron-transfer pathway. Dissolution-reprecipitation is inferred from changed morphology in Section 4.1, not directly traced. All phosphate arms also contain AQDS, so phosphate effects cannot be generalized to shuttle-free systems. The study demonstrates laboratory solid transformation, with no isolated iron product, natural-ore performance or industrial deployment established.
+causal_graphs:
+- id: cn32_feroxyhyte_reduction_graph
+  name: Shewanella putrefaciens CN-32 reductive transformation of synthetic feroxyhyte
+  description: Causal pathway linking Shewanella putrefaciens CN-32 cytochrome c maturation (CcmE) and CymA-MtrC extracellular electron transfer to reductive transformation of 80 mM synthetic feroxyhyte (delta'-FeOOH) into magnetite, chukanovite, carbonate green rust, and vivianite depending on phosphate regime.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: cn32_feroxyhyte_reductive_transformation
+  nodes:
+  - id: ccme_maturation
+    label: CcmE cytochrome c-type biogenesis protein (Sputcn32_3731)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: ccmE
+    description: Periplasmic System I heme chaperone CcmE in Shewanella putrefaciens CN-32 required for covalent heme ligation into respiratory c-type cytochromes.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A4YBV6
+      entry_name: CCME_SHEPC
+      protein_name: Cytochrome c-type biogenesis protein CcmE
+      gene_symbol: ccmE
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:319224
+        label: Shewanella putrefaciens CN-32
+      interpro_ids:
+      - InterPro:IPR004329
+      - InterPro:IPR036127
+      - InterPro:IPR012340
+      pfam_ids:
+      - Pfam:PF03100
+      ncbifam_ids:
+      - NCBIfam:NF009638
+      - NCBIfam:NF009729
+      functional_role: Periplasmic heme-chaperone CcmE (locus Sputcn32_3731) of the System I cytochrome c maturation machinery in Shewanella putrefaciens CN-32, required for covalent heme attachment to multiheme c-type cytochromes of the CymA-MtrCAB extracellular electron-transfer pathway.
+      evidence:
+      - source_ref: oloughlin_2021
+        supports: partial
+        explanation: Reviewed Swiss-Prot System I cytochrome c maturation chaperone CcmE (Sputcn32_3731) from exact strain Shewanella putrefaciens CN-32 (NCBITaxon:319224), required for holo-cytochrome c maturation during CN-32 bioreduction of 80 mM synthetic feroxyhyte (delta'-FeOOH) with 75 mM formate in oloughlin_2021; individual cytochrome genes were not mutated.
+  - id: cyma_dehydrogenase
+    label: CymA inner-membrane tetraheme cytochrome c (K3G22_18680)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: cymA
+    description: Inner-membrane menaquinol dehydrogenase coupling formate oxidation to periplasmic electron transport in Shewanella putrefaciens.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0ABX8XAW9
+      entry_name: A0ABX8XAW9_SHEPU
+      protein_name: Cytochrome c-type protein
+      gene_symbol: cymA
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:24
+        label: Shewanella putrefaciens
+      reference_proteome_id: UP000827084
+      interpro_ids:
+      - InterPro:IPR051174
+      - InterPro:IPR036280
+      - InterPro:IPR024717
+      - InterPro:IPR005126
+      - InterPro:IPR038266
+      pfam_ids:
+      - Pfam:PF03264
+      functional_role: Inner-membrane tetraheme c-type menaquinol dehydrogenase CymA (ORF K3G22_18680 in the Shewanella putrefaciens reference proteome UP000827084) transferring electrons from the inner-membrane menaquinol pool to periplasmic and outer-membrane c-type cytochromes.
+      annotation_note: Grounded to the species-level Shewanella putrefaciens reference proteome (UP000827084, NCBITaxon:24) CymA ortholog because active UniProtKB retains only reviewed Swiss-Prot entries under strain Shewanella putrefaciens CN-32 (NCBITaxon:319224).
+      evidence:
+      - source_ref: oloughlin_2021
+        supports: partial
+        explanation: Representative Shewanella putrefaciens reference-proteome (UP000827084) inner-membrane tetraheme cytochrome CymA (K3G22_18680) routing electrons from formate-reduced menaquinol during CN-32 bioreduction of 80 mM synthetic feroxyhyte in oloughlin_2021; species-level ortholog used because CN-32 TrEMBL entries are not retained in active UniProtKB.
+  - id: mtrc_reductase
+    label: MtrC family outer-membrane decaheme cytochrome c (K3G22_06995)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: K3G22_06995
+    description: Outer-membrane decaheme cytochrome c transferring electrons to synthetic feroxyhyte directly and via 100 micromolar AQDS.
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0ABX8XFE6
+      entry_name: A0ABX8XFE6_SHEPU
+      protein_name: OmcA/MtrC family decaheme c-type cytochrome
+      gene_symbol: K3G22_06995
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:24
+        label: Shewanella putrefaciens
+      reference_proteome_id: UP000827084
+      interpro_ids:
+      - InterPro:IPR020014
+      - InterPro:IPR054337
+      - InterPro:IPR054334
+      - InterPro:IPR036280
+      pfam_ids:
+      - Pfam:PF22113
+      - Pfam:PF22111
+      ncbifam_ids:
+      - NCBIfam:TIGR03507
+      functional_role: Outer-membrane cell-surface decaheme c-type cytochrome MtrC (ORF K3G22_06995 in the Shewanella putrefaciens reference proteome UP000827084; NCBIfam:TIGR03507) serving as a terminal extracellular reductase for Fe(III)-bearing mineral and AQDS electron acceptors.
+      annotation_note: Grounded to the species-level Shewanella putrefaciens reference proteome (UP000827084, NCBITaxon:24) MtrC ortholog because active UniProtKB retains only reviewed Swiss-Prot entries under strain Shewanella putrefaciens CN-32 (NCBITaxon:319224).
+      evidence:
+      - source_ref: oloughlin_2021
+        supports: partial
+        explanation: Representative Shewanella putrefaciens reference-proteome (UP000827084) outer-membrane decaheme cytochrome MtrC (K3G22_06995; TIGR03507) mediating extracellular electron transfer to 80 mM synthetic feroxyhyte (directly and via 100 micromolar AQDS) in oloughlin_2021; species-level ortholog used because CN-32 TrEMBL entries are not retained in active UniProtKB.
+  - id: feroxyhyte_substrate
+    label: Synthetic feroxyhyte (delta'-FeOOH, 80 mM Fe(III)) with 75 mM formate
+    node_type: MATERIAL_OR_PHASE
+    description: Synthetic feroxyhyte (delta'-FeOOH, 80 mM Fe(III)) incubated in duplicate 160 mL serum bottles containing 100 mL defined mineral medium (initial pH 7.5, argon-sparged, 75 mM formate, ~5 x 10^9 cells/mL CN-32, 30 C, dark) across 0, 100, 500, and 5000 micromolar phosphate regimes in oloughlin_2021.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: feroxyhyte_secondary_phases
+    label: HCl-extractable Fe(II) (24.28 to 59.93 mM) and secondary magnetite, chukanovite, carbonate green rust, and vivianite
+    node_type: MATERIAL_OR_PHASE
+    description: 'Solid-dominated Fe(II) mineral assemblage produced from feroxyhyte bioreduction: 24.28 +/- 2.10 mM (unamended) and 24.51 +/- 6.02 mM (+100 micromolar AQDS) 1-week-HCl-extractable Fe(II) at day 78 (~30% of initial 80 mM Fe(III), forming magnetite and chukanovite), and 55.07 +/- 2.92 mM (500 micromolar phosphate + AQDS) to 59.93 +/- 1.65 mM (5 mM phosphate + AQDS) Fe(II) at day 156 (with carbonate green rust and vivianite at 5 mM phosphate) in oloughlin_2021.'
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: ccme_maturation
+    target: cyma_dehydrogenase
+    predicate: positively_regulates
+    relationship: covalent heme maturation of c-type cytochromes
+    description: System I heme chaperone CcmE (Sputcn32_3731) matures the c-type cytochromes required for anaerobic Fe(III) respiration in Shewanella putrefaciens CN-32.
+    evidence:
+    - source_ref: oloughlin_2021
+      supports: partial
+      explanation: Dissimilatory reduction of 80 mM Fe(III) as synthetic feroxyhyte by Shewanella putrefaciens CN-32 (~5 x 10^9 cells/mL, 75 mM formate, 30 C in oloughlin_2021) relies on System I CcmE-matured multiheme c-type cytochromes; the paper's ATCC BAA-543 vs ATCC BAA-453 strain-number discrepancy is retained.
+  - source: cyma_dehydrogenase
+    target: mtrc_reductase
+    predicate: provides_electrons_to
+    relationship: trans-periplasmic respiratory electron transfer
+    description: Inner-membrane CymA transfers electrons from formate-derived menaquinol to the outer-membrane decaheme cytochrome MtrC.
+    evidence:
+    - source_ref: oloughlin_2021
+      supports: partial
+      explanation: In Shewanella putrefaciens CN-32 anoxic incubations with 75 mM formate and 80 mM synthetic feroxyhyte (oloughlin_2021), CymA couples inner-membrane menaquinol oxidation to the outer-membrane Mtr cytochrome conduit.
+  - source: mtrc_reductase
+    target: feroxyhyte_substrate
+    predicate: reduces
+    relationship: direct and AQDS-shuttled extracellular electron transfer
+    description: Outer-membrane decaheme cytochrome MtrC delivers electrons to 80 mM synthetic feroxyhyte directly and via 100 micromolar AQDS in defined mineral medium.
+    evidence:
+    - source_ref: oloughlin_2021
+      supports: partial
+      explanation: Across phosphate-free and phosphate-amended (100, 500, and 5000 micromolar) serum bottles containing 80 mM synthetic feroxyhyte, 75 mM formate, and ~5 x 10^9 cells/mL CN-32 without or with 100 micromolar AQDS (oloughlin_2021 Table 1, Figures 17-22, Tables S1 and S10), extracellular electron transfer reduces feroxyhyte Fe(III) to Fe(II).
+  - source: feroxyhyte_substrate
+    target: feroxyhyte_secondary_phases
+    predicate: transforms_into
+    relationship: reductive transformation to mixed-valence and ferrous secondary minerals
+    description: Bioreduction of synthetic feroxyhyte yields 24.28 to 24.51 mM Fe(II) at day 78 (magnetite and chukanovite) without phosphate and 55.07 to 59.93 mM Fe(II) at day 156 at 500 to 5000 micromolar phosphate + AQDS (with carbonate green rust and vivianite at 5 mM phosphate).
+    evidence:
+    - source_ref: oloughlin_2021
+      supports: support
+      explanation: Table S1 and Figures 17-22 of oloughlin_2021 document 24.28 +/- 2.10 mM (no AQDS) and 24.51 +/- 6.02 mM (+100 micromolar AQDS) 1-week-HCl-extractable Fe(II) at day 78 without phosphate (forming magnetite and chukanovite), and 55.07 +/- 2.92 mM (500 micromolar phosphate + AQDS) and 59.93 +/- 1.65 mM (5 mM phosphate + AQDS) Fe(II) at day 156 (with transient carbonate green rust, vivianite, chukanovite, and magnetite at 5 mM phosphate); the Figure 23 caption vs plot timeline discrepancy (46 days vs 78/156 days) is retained.
 curation_history:
 - timestamp: '2026-10-14T06:28:06Z'
   curator: codex
   action: created
-  summary: >-
-    Added species-grounded feroxyhyte with conditional CN32 culture-associated
-    reduction from the complete 2021 original. Preserved sterile-XRD versus
-    unreported kinetic controls, partial Fe(III) reduction, unlike endpoints,
-    caption and strain-accession conflicts, and phase-identification limits.
+  summary: Added species-grounded feroxyhyte with conditional CN32 culture-associated reduction from the complete 2021 original. Preserved sterile-XRD versus unreported kinetic controls, partial Fe(III) reduction, unlike endpoints, caption and strain-accession conflicts, and phase-identification limits.
+- timestamp: '2026-11-09T00:39:32Z'
+  curator: marcin
+  action: edit
+  summary: Ground Shewanella putrefaciens CN-32 feroxyhyte reductive transformation to verified UniProtKB entries (A4YBV6, A0ABX8XAW9, A0ABX8XFE6) and add causal_graphs.
 history_refs:
 - history/records/feroxyhyte/2026-10-14T062756Z-codex-bd8d5e.yaml
+- history/records/feroxyhyte/2026-11-09T003932Z-marcin-252a2e.yaml
