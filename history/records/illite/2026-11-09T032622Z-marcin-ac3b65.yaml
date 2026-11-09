@@ -1,0 +1,32 @@
+history_version: 1
+target:
+  kind: record
+  slug: illite
+  path: data/records/illite.yaml
+session:
+  id: 2026-11-09T032622Z-marcin-ac3b65
+  timestamp: '2026-11-09T03:26:22Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Restore causal_graphs[0].edges[1].description (mtrc_reductase -> imt1_illite_substrate)
+    and fix UniProtKB:Q8E8S0 evidence explanation and NCBITaxon:211586 label in illite.yaml
+    (Issue #964).'
+  details: 'Restore causal_graphs[0].edges[1].description (mtrc_reductase -> imt1_illite_substrate)
+    and fix UniProtKB:Q8E8S0 evidence explanation and NCBITaxon:211586 label in illite.yaml
+    (Issue #964).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/964
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/963
