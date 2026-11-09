@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 452 mineral records in data/records/*.yaml at commit f145e25990270f79cb760bb68e900595df4d308c, including the 5 Cycle 12 Stage 1 (PR #972) Round 130 IMA mineral additions (berthierine, chamosite, cronstedtite, fayalite, greenalite), the 7 Cycle 12 Stage 2 (PR #974) and Stage 3 (PR #976) mineral causal-graph and UniProtKB grounding expansions (lizardite, meta-ankoleite, azurite, calcite, otavite, vaterite, and additional mechanism graphs), and verifying resolution of Cycle 11 Stage 4 findings 0001..0002 on enstatite and metacinnabar (PR #970). 285/452 mineral records contain primary-source-supported mechanisms (158 records with microbial mechanisms and 127 records with abiotic-only mechanisms; 343 mechanisms total: 179 microbial and 164 abiotic), 84/452 contain causal_graphs (89 graphs, 147 GENE_OR_PROTEIN nodes: 144 GROUNDED and 3 UNGROUNDED), and 82/84 carry live-verified UniProtKB protein_examples across 116 unique accessions. Identified 1 minor graph finding in 1 mineral record (cmmmech-cycle12-stage4-finding-0001 on cmmmech:anatase) for Stage 5 grouped remediation.
+Reviewed all 452 mineral records in data/records/*.yaml at commit f145e25990270f79cb760bb68e900595df4d308c, including the 5 Cycle 12 Stage 1 (PR #972, commit 7449fa912) Round 130 EJM critical-element mineral additions (heimite IMA:2022-019, keutschite IMA:2014-038, spaltiite IMA:2014-012, tianhuixinite IMA:2022-081, zhenruite IMA:2022-050), the 7 Cycle 12 Stage 2 (PR #974, commit 122cb72c6) and Stage 3 (PR #976, commit f145e2599) mineral causal-graph and UniProtKB grounding expansions (azurite, calcite, chernikovite, hematite, lizardite, meta-ankoleite, otavite), and verifying resolution of Cycle 11 Stage 4 findings 0001..0002 on enstatite and metacinnabar (PR #970). 285/452 mineral records contain primary-source-supported mechanisms (158 records with microbial mechanisms and 127 records with abiotic-only mechanisms; 343 mechanisms total: 179 microbial and 164 abiotic), 84/452 contain causal_graphs (89 graphs, 147 GENE_OR_PROTEIN nodes: 144 GROUNDED and 3 UNGROUNDED), and 82/84 carry live-verified UniProtKB protein_examples across 116 unique accessions. Identified 1 minor graph finding in 1 mineral record (cmmmech-cycle12-stage4-finding-0001 on cmmmech:anatase) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -544,18 +544,19 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 summary: 'Reviewed all 452 mineral records in data/records/*.yaml at commit f145e25990270f79cb760bb68e900595df4d308c,
-  including the 5 Cycle 12 Stage 1 (PR #972) Round 130 IMA mineral additions (berthierine,
-  chamosite, cronstedtite, fayalite, greenalite), the 7 Cycle 12 Stage 2 (PR #974)
-  and Stage 3 (PR #976) mineral causal-graph and UniProtKB grounding expansions (lizardite,
-  meta-ankoleite, azurite, calcite, otavite, vaterite, and additional mechanism graphs),
-  and verifying resolution of Cycle 11 Stage 4 findings 0001..0002 on enstatite and
-  metacinnabar (PR #970). 285/452 mineral records contain primary-source-supported
-  mechanisms (158 records with microbial mechanisms and 127 records with abiotic-only
-  mechanisms; 343 mechanisms total: 179 microbial and 164 abiotic), 84/452 contain
-  causal_graphs (89 graphs, 147 GENE_OR_PROTEIN nodes: 144 GROUNDED and 3 UNGROUNDED),
-  and 82/84 carry live-verified UniProtKB protein_examples across 116 unique accessions.
-  Identified 1 minor graph finding in 1 mineral record (cmmmech-cycle12-stage4-finding-0001
-  on cmmmech:anatase) for Stage 5 grouped remediation.'
+  including the 5 Cycle 12 Stage 1 (PR #972, commit 7449fa912) Round 130 EJM critical-element
+  mineral additions (heimite IMA:2022-019, keutschite IMA:2014-038, spaltiite IMA:2014-012,
+  tianhuixinite IMA:2022-081, zhenruite IMA:2022-050), the 7 Cycle 12 Stage 2 (PR
+  #974, commit 122cb72c6) and Stage 3 (PR #976, commit f145e2599) mineral causal-graph
+  and UniProtKB grounding expansions (azurite, calcite, chernikovite, hematite, lizardite,
+  meta-ankoleite, otavite), and verifying resolution of Cycle 11 Stage 4 findings
+  0001..0002 on enstatite and metacinnabar (PR #970). 285/452 mineral records contain
+  primary-source-supported mechanisms (158 records with microbial mechanisms and 127
+  records with abiotic-only mechanisms; 343 mechanisms total: 179 microbial and 164
+  abiotic), 84/452 contain causal_graphs (89 graphs, 147 GENE_OR_PROTEIN nodes: 144
+  GROUNDED and 3 UNGROUNDED), and 82/84 carry live-verified UniProtKB protein_examples
+  across 116 unique accessions. Identified 1 minor graph finding in 1 mineral record
+  (cmmmech-cycle12-stage4-finding-0001 on cmmmech:anatase) for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle12-stage4-cohort-reviewer
   kind: agent

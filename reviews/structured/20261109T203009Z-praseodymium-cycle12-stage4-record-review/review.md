@@ -183,10 +183,6 @@ findings:
   target_ids:
   - cmmmech:praseodymium
   field_paths:
-  - mechanisms[0].protein_examples[0].evidence[0].supports
-  - mechanisms[0].protein_examples[0].evidence[0].explanation
-  - causal_graphs[0].nodes[0].protein_examples[0].evidence[0].supports
-  - causal_graphs[0].nodes[0].protein_examples[0].evidence[0].explanation
   - causal_graphs[0].nodes[2].description
   - causal_graphs[0].nodes[3].description
   - causal_graphs[0].edges[0].description

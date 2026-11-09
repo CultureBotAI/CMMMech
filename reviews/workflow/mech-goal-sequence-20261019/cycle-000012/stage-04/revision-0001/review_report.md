@@ -18,37 +18,37 @@ All **703 / 703 eligible records** in `data/records/*.yaml` at frozen commit `f1
 
 | Cohort (`material_kind`) | Population | Reviewed | With Criticality | With Mechanisms (Microbial / Abiotic-only; Total Mechs) | With `causal_graphs` (Graphs / Nodes / Edges) | `GENE_OR_PROTEIN` Nodes (`GROUNDED` / `UNGROUNDED`) | With `protein_examples` (Unique UniProtKB Accessions) | Open Findings |
 | --- | ---: | ---: | ---: | ---: | ---: | ---: | ---: | ---: |
-| `element` | 66 | 66 (100%) | 64 | 63 (63 / 0; 66 mechs) | 31 (32 / 149 / 117) | 61 (58 / 3) | 30 (58) | 2 (`finding-0002`: `selenium`; `finding-0003`: `praseodymium`) |
-| `mineral` | 452 | 452 (100%) | 0 | 285 (158 / 127; 343 mechs) | 84 (89 / 393 / 304) | 147 (144 / 3) | 82 (116) | 1 (`finding-0001`: `anatase`) |
-| `mineral_group` | 7 | 7 (100%) | 0 | 7 (7 / 0; 7 mechs) | 5 (5 / 23 / 18) | 11 (11 / 0) | 5 (22) | 0 |
-| `commodity` | 36 | 36 (100%) | 26 | 6 (6 / 0; 6 mechs) | 4 (4 / 16 / 12) | 6 (6 / 0) | 4 (6) | 1 (`finding-0003`: `rare-earth-element-commodities`) |
-| `primary_resource` | 31 | 31 (100%) | 0 | 31 (29 / 2; 42 mechs) | 16 (17 / 80 / 63) | 34 (34 / 0) | 16 (46) | 0 |
-| `secondary_resource` | 111 | 111 (100%) | 0 | 108 (85 / 23; 145 mechs) | 51 (54 / 252 / 198) | 102 (102 / 0) | 51 (43) | 0 |
+| `element` | 66 | 66 (100%) | 64 | 63 (63 / 0; 66 mechs) | 31 (32 / 141 / 109) | 61 (58 / 3) | 30 (58) | 2 (`finding-0002`: `selenium`; `finding-0003`: `praseodymium`) |
+| `mineral` | 452 | 452 (100%) | 0 | 285 (158 / 127; 343 mechs) | 84 (89 / 390 / 301) | 147 (144 / 3) | 82 (116) | 1 (`finding-0001`: `anatase`) |
+| `mineral_group` | 7 | 7 (100%) | 0 | 7 (7 / 0; 7 mechs) | 5 (5 / 24 / 19) | 11 (11 / 0) | 5 (22) | 0 |
+| `commodity` | 36 | 36 (100%) | 26 | 6 (6 / 0; 6 mechs) | 4 (4 / 18 / 14) | 6 (6 / 0) | 4 (6) | 1 (`finding-0003`: `rare-earth-element-commodities`) |
+| `primary_resource` | 31 | 31 (100%) | 0 | 31 (29 / 2; 42 mechs) | 16 (17 / 82 / 65) | 34 (34 / 0) | 16 (46) | 0 |
+| `secondary_resource` | 111 | 111 (100%) | 0 | 108 (85 / 23; 145 mechs) | 51 (54 / 258 / 204) | 102 (102 / 0) | 51 (43) | 0 |
 | **Total (Disjoint Corpus)** | **703** | **703 (100%)** | **90** | **500 (348 / 152; 609 mechs)** | **191 (201 / 913 / 712)** | **361 (355 / 6)** | **188 (175 unique across corpus)** | **3 unique findings across 4 records** |
 
 ### Cycle 12 Stage 1–3 Additions & Cycle 11 Stage 5 Remediations Verified
 
 1. **Cycle 11 Stage 5 Remediations (`PR #970`, commit `fa873bb0`)**:
    - Verified complete resolution of `cmmmech-cycle11-stage4-finding-0001` (`enstatite`, `olivine-group`, `dunite`), `cmmmech-cycle11-stage4-finding-0002` (`metacinnabar`), and `cmmmech-cycle11-stage4-finding-0003` (`scandium`).
-2. **Cycle 12 Stage 1 Additions (`PR #972`, commit `d3b14981`)**:
-   - Verified all 5 new Round 130 IMA mineral species records (`berthierine` `IMA:1959 s.p.`, `chamosite` `IMA:1962 s.p.`, `cronstedtite` `IMA:1821`, `fayalite` `IMA:1840`, `greenalite` `IMA:1903`).
-3. **Cycle 12 Stage 2 & Stage 3 Causal-Graph & UniProtKB Grounding Expansions (`PR #974`, commit `0b494e98`; `PR #976`, commit `f145e259`)**:
-   - Verified all 10 newly expanded records (`berthierine`, `chamosite`, `biotite`, `lizardite`, `meta-ankoleite`, `azurite`, `calcite`, `otavite`, `strontium`, `vaterite`), confirming 100% synchronization between `mechanisms[i].protein_examples` and `causal_graphs[j].nodes[k].protein_examples` (40 `GENE_OR_PROTEIN` nodes grounded across 28 unique verified UniProtKB accessions, including Stage 3 remediation of Issue `#977`).
+2. **Cycle 12 Stage 1 Additions (`PR #972`, commit `7449fa912`)**:
+   - Verified all 5 new Round 130 EJM critical-element mineral species records (`heimite` `IMA:2022-019`, `keutschite` `IMA:2014-038`, `spaltiite` `IMA:2014-012`, `tianhuixinite` `IMA:2022-081`, `zhenruite` `IMA:2022-050`).
+3. **Cycle 12 Stage 2 & Stage 3 Causal-Graph & UniProtKB Grounding Expansions (`PR #974`, commit `122cb72c6`; `PR #976`, commit `f145e2599`)**:
+   - Verified all 10 newly expanded records (`azurite`, `biotite`, `calcite`, `chernikovite`, `hematite`, `lizardite`, `meta-ankoleite`, `otavite`, `potassium-feldspar`, `strontium`), confirming 100% synchronization between `mechanisms[i].protein_examples` and `causal_graphs[j].nodes[k].protein_examples` (`11` grounded `GENE_OR_PROTEIN` nodes across `11` `causal_graphs` and `52` `protein_examples` spanning `39` unique verified UniProtKB accessions, including Stage 3 remediation of Issue `#977`).
 
 ## 2. Native Structured Review Bundles Persisted
 
 | Review ID | Scope | Targets | `review.yaml` SHA-256 | `review.md` SHA-256 |
 | --- | --- | ---: | --- | --- |
-| `20261109T203000Z-cycle12-stage4-element-cohort-review` | `element` | 66 | `1e1109f56e9554eed13370b7ec4b5d3f7d3a2df15130c285ed75fc0df9732c7c` | `f9916b0a644aec882e5441049fe2d39a1a2ddd6e6833c69e4a7a2dba1091bc03` |
-| `20261109T203001Z-cycle12-stage4-mineral-cohort-review` | `mineral` | 452 | `5af4d888f7f9adde4585efe5842db1dfb7fa9c73bba31cc095ee54ccd00aaadc` | `b1526c5fb55b096428ad0e8832e7a62ec3a591832bc602817970adce1fbd21b5` |
-| `20261109T203002Z-cycle12-stage4-mineral-group-cohort-review` | `mineral_group` | 7 | `81c015792d3cb60257beafcace538bade46c1485796b069a3fd9d0121c4c6fe5` | `2b99c89f2b2659b5ae02d72b45beb682394e7b00f5b598da97eb237fec491020` |
-| `20261109T203003Z-cycle12-stage4-commodity-cohort-review` | `commodity` | 36 | `9627aa42a7e152caaaebab7b8b9a908b576c3d9425bd3b29912d723aa9a215be` | `303f8e17b73b7ec781391915d322615f0ebf7044c61c71ac52310f46ef3d8b5f` |
-| `20261109T203004Z-cycle12-stage4-primary-resource-cohort-review` | `primary_resource` | 31 | `7d829dd643893c7c5d114501e882c2a5dfe32699c276524ef3160741000d6823` | `935170c334d64a9e451a4529b45f863299980b7a974f11556bcd191716c1d618` |
-| `20261109T203005Z-cycle12-stage4-secondary-resource-cohort-review` | `secondary_resource` | 111 | `881a9e6a5d89871f70c06569d41bc7d75030e67b741c66cbaf1994b046034baa` | `97bb5d7533ebcb7226311f1b82ca450f9efe0fe5d8bf5609da2b977bd77739f7` |
-| `20261109T203006Z-cycle12-stage4-causal-graphs-cohort-review` | `causal_graphs (cross-cohort)` | 191 | `bfbab13879eb6fef272c319302ebeca51f9a251eed6c36281102bee22d8f5c9a` | `7faf42670b0f598207938bb1d454bc7d65b3920b095ac954f9f93022c8d7b1b2` |
+| `20261109T203000Z-cycle12-stage4-element-cohort-review` | `element` | 66 | `8ca225f2e9ea68552ccdf225e6fda79186d082929b0d8ef1c360f5507648a96a` | `50dcd3de8e88bab7506bf5458826d901f6a1b147ee9e0b7788d6588fb2f28629` |
+| `20261109T203001Z-cycle12-stage4-mineral-cohort-review` | `mineral` | 452 | `d5adc1a3595573c5d7719856c647c1a428647705dc3e5ce65e13b5bb8d5b966d` | `104ec9859f55cdc16657af58e471116a1c407e373c7f23480f9bac1dac0e8b56` |
+| `20261109T203002Z-cycle12-stage4-mineral-group-cohort-review` | `mineral_group` | 7 | `5ab5b2ba61fc9980cc77a5af854699cac01377b1c7e6cab2c5eaa294a1d85c0b` | `dbdfa0d87ab71fcc4273415436065b633afb99f6ecd2d51f50d5763c25906fa7` |
+| `20261109T203003Z-cycle12-stage4-commodity-cohort-review` | `commodity` | 36 | `dd3847d45a2c6e88ac96c80e95078d3922e0a1dc1f060756fc2c3b2cf2b562f3` | `e51def639a4ebfa140a0cb99f32bf24e2d82c32552519799436c5910c3119c7e` |
+| `20261109T203004Z-cycle12-stage4-primary-resource-cohort-review` | `primary_resource` | 31 | `8ee63aa5c37474fd8b5d1644858c9812e941cd0b32b0089bb2f1f15661907833` | `2caf8fd0c2037b6ea3070f592e517a2daa81fd6bb01124ee715aef06c3c6c77d` |
+| `20261109T203005Z-cycle12-stage4-secondary-resource-cohort-review` | `secondary_resource` | 111 | `d003aab49afaf12455bddba04cc70b54feb4a61a935d04b399e6cce833c8444a` | `d0f86c662da0a26a232e2574281b4d9d6f900549131855a3c4de88f5555fffaf` |
+| `20261109T203006Z-cycle12-stage4-causal-graphs-cohort-review` | `causal_graphs (cross-cohort)` | 191 | `7630520d8859ff7b51c0dd74eadbd874d1ba51a0b4469c10d815610c4f849432` | `0d0aa8bff3b9eca5f8e4020262aafdf21a386c27e03f9394bca86b5b8e6a64a1` |
 | `20261109T203007Z-anatase-cycle12-stage4-record-review` | `record: cmmmech:anatase` | 1 | `36597335dd39329052e0ce5c3b34829f870fe4ea1954476d32444c66ce47175a` | `1b6432e21c5c5da266af61621cb770260b3775f45df7cbb33d8ae6b2797a4fac` |
 | `20261109T203008Z-selenium-cycle12-stage4-record-review` | `record: cmmmech:selenium` | 1 | `0a071de4420cd38820062b9dc6936574ad5cc40f20e18ad7258da2e54ecee4e2` | `b505e20ef4836d3113c96115ffa7eb018d444f99a93222f7945963b760e9cead` |
-| `20261109T203009Z-praseodymium-cycle12-stage4-record-review` | `record: cmmmech:praseodymium` | 1 | `3bad94d1108498300d5a05e29dea6382fbf2198728d4e04aa3f9755d37292233` | `4716fce0dc85651a3233672f38833176d466b886a4bc8bd9c793798b6d333b7e` |
+| `20261109T203009Z-praseodymium-cycle12-stage4-record-review` | `record: cmmmech:praseodymium` | 1 | `0ff64c228cd91b054e97d9cf1408013dcdea12f897a388f6e63980d4fcbcec70` | `a3130559b4224381b95b3e4c33aaf16f6bfa8658d645c44e35d5415c2891b4c8` |
 
 ## 3. Open Findings Preserved for Stage 5 Grouped Remediation (`carry_forward_ids`)
 

@@ -10,19 +10,20 @@ completion: completed
 verdict: pass_with_limitations
 scientific_review: true
 summary: 'Reviewed all 66 element records in data/records/*.yaml at commit f145e25990270f79cb760bb68e900595df4d308c,
-  including the Cycle 12 Stage 2 (PR #974) and Stage 3 (PR #976) causal-graph and
-  UniProtKB grounding expansion on cmmmech:strontium (pasteurii_strontium_carbonate_ureolytic_graph
-  grounded to Sporosarcina pasteurii UreABC P04173, Q9Z369, Q9Z370 and UreE Q9Z368)
-  and verifying resolution of Cycle 11 Stage 4 finding 0003 on cmmmech:scandium (PR
-  #970). Verified CHEBI identifiers, dated jurisdiction-scoped criticality entries
-  across 64/66 records, primary-source-supported microbial mechanisms across 63/66
-  records (66 microbial mechanisms total, 0 abiotic), causal_graphs across 31/66 records
-  (32 graphs, 61 GENE_OR_PROTEIN nodes: 58 GROUNDED across 30 records and 3 UNGROUNDED
-  across cmmmech:erbium, cmmmech:gold, and cmmmech:terbium, plus UNGROUNDED nodes
-  in manganese and praseodymium paired with GROUNDED nodes), and live-verified UniProtKB
-  protein_examples across 30/31 records (58 unique accessions). Identified 2 minor
-  graph findings across 2 element records (cmmmech-cycle12-stage4-finding-0002 on
-  cmmmech:selenium and cmmmech-cycle12-stage4-finding-0003 on cmmmech:praseodymium)
+  including the Cycle 12 Stage 2 (PR #974, commit 122cb72c6) and Stage 3 (PR #976,
+  commit f145e2599) causal-graph and UniProtKB grounding expansion on cmmmech:strontium
+  (tk2d_sr_biomineralization_graph grounded to Bacillus subtilis strain 168 UreC P77837,
+  UreB P71035, UreA P75030, and Bacillus sp. TB-90 UreG Q07403) and verifying resolution
+  of Cycle 11 Stage 4 finding 0003 on cmmmech:scandium (PR #970). Verified CHEBI identifiers,
+  dated jurisdiction-scoped criticality entries across 64/66 records, primary-source-supported
+  microbial mechanisms across 63/66 records (66 microbial mechanisms total, 0 abiotic),
+  causal_graphs across 31/66 records (32 graphs, 61 GENE_OR_PROTEIN nodes: 58 GROUNDED
+  across 30 records and 3 UNGROUNDED across cmmmech:iron ax17_extracellular_fe3_reductase_system
+  ungrounded-only, cmmmech:manganese mopa_heme_peroxidase paired with 2 GROUNDED nodes,
+  and cmmmech:praseodymium melba_lanm_o36 paired with 1 GROUNDED node), and live-verified
+  UniProtKB protein_examples across 30/31 records (58 unique accessions). Identified
+  2 minor graph findings across 2 element records (cmmmech-cycle12-stage4-finding-0002
+  on cmmmech:selenium and cmmmech-cycle12-stage4-finding-0003 on cmmmech:praseodymium)
   for Stage 5 grouped remediation.'
 reviewer:
   identity: antigravity / cmmmech-cycle12-stage4-cohort-reviewer
@@ -1563,10 +1564,6 @@ findings:
   target_ids:
   - cmmmech:praseodymium
   field_paths:
-  - mechanisms[0].protein_examples[0].evidence[0].supports
-  - mechanisms[0].protein_examples[0].evidence[0].explanation
-  - causal_graphs[0].nodes[0].protein_examples[0].evidence[0].supports
-  - causal_graphs[0].nodes[0].protein_examples[0].evidence[0].explanation
   - causal_graphs[0].nodes[2].description
   - causal_graphs[0].nodes[3].description
   - causal_graphs[0].edges[0].description

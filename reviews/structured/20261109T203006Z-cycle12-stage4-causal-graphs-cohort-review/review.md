@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 191 records in data/records/*.yaml that carry causal_graphs at commit f145e25990270f79cb760bb68e900595df4d308c (31 element, 84 mineral, 5 mineral_group, 4 commodity, 16 primary_resource, 51 secondary_resource), including the 10 records expanded in Cycle 12 Stage 2 (PR #974) and Stage 3 (PR #976): berthierine, chamosite, biotite, lizardite, meta-ankoleite, azurite, calcite, otavite, strontium, and vaterite, as well as the 5 records remediated in Cycle 11 Stage 5 (PR #970): enstatite, olivine-group, dunite, metacinnabar, and scandium. Across the 191 records, there are 201 causal_graphs, 913 nodes, 712 edges, and 361 GENE_OR_PROTEIN nodes (355 GROUNDED across 188 records and 6 UNGROUNDED across 6 records), with 688 mechanism-level and 688 node-level protein_examples (1,376 total, 100% synchronized) spanning 175 unique live-verified UniProtKB accessions (41 SWISS_PROT, 134 TREMBL). Identified 3 minor graph findings across 4 records (cmmmech-cycle12-stage4-finding-0001 on cmmmech:anatase; cmmmech-cycle12-stage4-finding-0002 on cmmmech:selenium; and cmmmech-cycle12-stage4-finding-0003 on cmmmech:praseodymium and cmmmech:rare-earth-element-commodities) for Stage 5 grouped remediation.
+Reviewed all 191 records in data/records/*.yaml that carry causal_graphs at commit f145e25990270f79cb760bb68e900595df4d308c (31 element, 84 mineral, 5 mineral_group, 4 commodity, 16 primary_resource, 51 secondary_resource), including the 10 records expanded in Cycle 12 Stage 2 (PR #974, commit 122cb72c6) and Stage 3 (PR #976, commit f145e2599): azurite, biotite, calcite, chernikovite, hematite, lizardite, meta-ankoleite, otavite, potassium-feldspar, and strontium (11 grounded GENE_OR_PROTEIN nodes across 11 causal_graphs and 52 protein_examples spanning 39 unique verified UniProtKB accessions), as well as the 5 records remediated in Cycle 11 Stage 5 (PR #970): enstatite, olivine-group, dunite, metacinnabar, and scandium. Across the 191 records, there are 201 causal_graphs, 913 nodes, 712 edges, and 361 GENE_OR_PROTEIN nodes (355 GROUNDED across 188 records and 6 UNGROUNDED across 6 records), with 688 mechanism-level and 688 node-level protein_examples (1,376 total, 100% synchronized) spanning 175 unique live-verified UniProtKB accessions (41 SWISS_PROT, 134 TREMBL). Identified 3 minor graph findings across 4 records (cmmmech-cycle12-stage4-finding-0001 on cmmmech:anatase; cmmmech-cycle12-stage4-finding-0002 on cmmmech:selenium; and cmmmech-cycle12-stage4-finding-0003 on cmmmech:praseodymium and cmmmech:rare-earth-element-commodities) for Stage 5 grouped remediation.
 
 ## Scope And Provenance
 
@@ -315,8 +315,10 @@ scientific_review: true
 summary: 'Reviewed all 191 records in data/records/*.yaml that carry causal_graphs
   at commit f145e25990270f79cb760bb68e900595df4d308c (31 element, 84 mineral, 5 mineral_group,
   4 commodity, 16 primary_resource, 51 secondary_resource), including the 10 records
-  expanded in Cycle 12 Stage 2 (PR #974) and Stage 3 (PR #976): berthierine, chamosite,
-  biotite, lizardite, meta-ankoleite, azurite, calcite, otavite, strontium, and vaterite,
+  expanded in Cycle 12 Stage 2 (PR #974, commit 122cb72c6) and Stage 3 (PR #976, commit
+  f145e2599): azurite, biotite, calcite, chernikovite, hematite, lizardite, meta-ankoleite,
+  otavite, potassium-feldspar, and strontium (11 grounded GENE_OR_PROTEIN nodes across
+  11 causal_graphs and 52 protein_examples spanning 39 unique verified UniProtKB accessions),
   as well as the 5 records remediated in Cycle 11 Stage 5 (PR #970): enstatite, olivine-group,
   dunite, metacinnabar, and scandium. Across the 191 records, there are 201 causal_graphs,
   913 nodes, 712 edges, and 361 GENE_OR_PROTEIN nodes (355 GROUNDED across 188 records

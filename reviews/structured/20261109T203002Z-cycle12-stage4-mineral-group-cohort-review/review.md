@@ -11,7 +11,7 @@
 
 ## Summary
 
-Reviewed all 7 mineral_group records in data/records/*.yaml at commit f145e25990270f79cb760bb68e900595df4d308c (bastnaesite, biotite, chlorite, illite, olivine-group, potassium-feldspar, vermiculite), including the Cycle 12 Stage 2 (PR #974) and Stage 3 (PR #976) causal-graph and UniProtKB grounding expansion on cmmmech:biotite (subtilis_npr_ywpj_biotite_weathering_graph grounded to Bacillus subtilis 168 NprE P68736 and YwpJ P94592) and verifying resolution of Cycle 11 Stage 4 finding 0001 on cmmmech:olivine-group (PR #970). All 7/7 mineral_group records contain primary-source-supported microbial mechanisms (7 mechanisms total), and 5/7 contain causal_graphs (5 graphs, 11 GENE_OR_PROTEIN nodes: 11 GROUNDED and 0 UNGROUNDED) grounded to 22 unique UniProtKB accessions. Confirmed 0 open findings in this cohort.
+Reviewed all 7 mineral_group records in data/records/*.yaml at commit f145e25990270f79cb760bb68e900595df4d308c (bastnaesite, biotite, chlorite, illite, olivine-group, potassium-feldspar, vermiculite), including the Cycle 12 Stage 2 (PR #974, commit 122cb72c6) and Stage 3 (PR #976, commit f145e2599) causal-graph and UniProtKB grounding expansions on cmmmech:biotite (c4_10_biotite_dissolution_graph grounded to Cupriavidus / Cupriavidus necator UniProtKB:A0A7W3RFI1, A0A1S2C101, A0A7W3RDZ1, A0A7W3NBV8, A0A0J6SZC4) and cmmmech:potassium-feldspar (pma2_2_potassium_feldspar_dissolution_graph grounded to Bacillus subtilis / Gottfriedia luciferensis UniProtKB:P52932, D5DTY8, A0A0B6ASU1, A0A0B6ACY5, A0A0B6AS33, A0A0B6APG1, A0A0B6ANB3), and verifying resolution of Cycle 11 Stage 4 finding 0001 on cmmmech:olivine-group (PR #970). All 7/7 mineral_group records contain primary-source-supported microbial mechanisms (7 mechanisms total), and 5/7 contain causal_graphs (5 graphs, 11 GENE_OR_PROTEIN nodes: 11 GROUNDED and 0 UNGROUNDED) grounded to 22 unique UniProtKB accessions. Confirmed 0 open findings in this cohort.
 
 ## Scope And Provenance
 
@@ -86,9 +86,12 @@ verdict: pass_with_limitations
 scientific_review: true
 summary: 'Reviewed all 7 mineral_group records in data/records/*.yaml at commit f145e25990270f79cb760bb68e900595df4d308c
   (bastnaesite, biotite, chlorite, illite, olivine-group, potassium-feldspar, vermiculite),
-  including the Cycle 12 Stage 2 (PR #974) and Stage 3 (PR #976) causal-graph and
-  UniProtKB grounding expansion on cmmmech:biotite (subtilis_npr_ywpj_biotite_weathering_graph
-  grounded to Bacillus subtilis 168 NprE P68736 and YwpJ P94592) and verifying resolution
+  including the Cycle 12 Stage 2 (PR #974, commit 122cb72c6) and Stage 3 (PR #976,
+  commit f145e2599) causal-graph and UniProtKB grounding expansions on cmmmech:biotite
+  (c4_10_biotite_dissolution_graph grounded to Cupriavidus / Cupriavidus necator UniProtKB:A0A7W3RFI1,
+  A0A1S2C101, A0A7W3RDZ1, A0A7W3NBV8, A0A0J6SZC4) and cmmmech:potassium-feldspar (pma2_2_potassium_feldspar_dissolution_graph
+  grounded to Bacillus subtilis / Gottfriedia luciferensis UniProtKB:P52932, D5DTY8,
+  A0A0B6ASU1, A0A0B6ACY5, A0A0B6AS33, A0A0B6APG1, A0A0B6ANB3), and verifying resolution
   of Cycle 11 Stage 4 finding 0001 on cmmmech:olivine-group (PR #970). All 7/7 mineral_group
   records contain primary-source-supported microbial mechanisms (7 mechanisms total),
   and 5/7 contain causal_graphs (5 graphs, 11 GENE_OR_PROTEIN nodes: 11 GROUNDED and

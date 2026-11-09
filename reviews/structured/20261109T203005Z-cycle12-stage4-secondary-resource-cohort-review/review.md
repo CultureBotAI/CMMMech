@@ -169,7 +169,7 @@ No findings recorded within this review's declared scope.
 
 ## Limits And Additional Notes
 
-- 3 of 111 secondary_resource records (coal-gangue, copper-converter-slag, zinc-leach-residue) are industrial byproduct/waste feedstock entries awaiting primary mechanism curation.
+- 3 of 111 secondary_resource records (oil-and-gas-produced-water, spent-vegetable-oil-hydrogenation-catalyst, theisen-sludge) are industrial byproduct/waste feedstock entries awaiting primary mechanism curation.
 - 23 of 111 secondary_resource records currently document abiotic hydrometallurgical or solvometallurgical baseline mechanisms without published microbial bioleaching counterparts.
 - Cohort covers 100% (111/111) of secondary_resource records in data/records/*.yaml at commit f145e25990270f79cb760bb68e900595df4d308c.
 
@@ -2601,8 +2601,9 @@ evidence:
   summary: Full programmatic and source-backed audit of all 111 secondary_resource
     records at commit f145e25990270f79cb760bb68e900595df4d308c.
 limitations:
-- 3 of 111 secondary_resource records (coal-gangue, copper-converter-slag, zinc-leach-residue)
-  are industrial byproduct/waste feedstock entries awaiting primary mechanism curation.
+- 3 of 111 secondary_resource records (oil-and-gas-produced-water, spent-vegetable-oil-hydrogenation-catalyst,
+  theisen-sludge) are industrial byproduct/waste feedstock entries awaiting primary
+  mechanism curation.
 - 23 of 111 secondary_resource records currently document abiotic hydrometallurgical
   or solvometallurgical baseline mechanisms without published microbial bioleaching
   counterparts.
