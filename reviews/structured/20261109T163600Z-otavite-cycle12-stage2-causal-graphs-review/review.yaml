@@ -1,0 +1,210 @@
+schema_version: 1.0.0
+review_id: 20261109T163600Z-otavite-cycle12-stage2-causal-graphs-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 12 Stage 2 causal-graphs review of Otavite (cmmmech:otavite)
+started_at: '2026-11-09T16:15:00Z'
+finished_at: '2026-11-09T16:36:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle12-stage2-causal-graphs-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md verifying
+    the Cycle 12 Stage 2 causal_graphs and ProteinExample curation in data/records/otavite.yaml (SHA-256
+    58f66f26b95b8b331ec2502054f92654aefb8673a5be91d67a76302d28808e15) against live UniProtKB grounding
+    and cited primary source (yang2026: Yang, Q., Li, X., Cao, J., He, S., He, C., Tu, C., Zhou, K., Liang,
+    X. and Zhan, F. (2026). Urea-Mediated Biomineralization and Adsorption of Heavy-Metal Ions in Solution
+    by the Urease-Producing Bacteria C7-12. Microorganisms 14(1), 171. Complete 17-page original, Figures
+    1-11, Tables 1-2, and official two-page supplement with Table S1 and Figures S1-S5. (https://doi.org/10.3390/microorganisms14010171)).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 7449fa912e2d92f8aff400481ee75b49edbb685e
+  state: working_tree
+  inputs:
+  - path: data/records/otavite.yaml
+    sha256: 58f66f26b95b8b331ec2502054f92654aefb8673a5be91d67a76302d28808e15
+    role: target
+  - path: history/records/otavite/2026-11-09T161813Z-marcin-74abd9.yaml
+    sha256: 9de137b75016e8dfe5107aa5479b42e2ec42a11d6f3618ceba4f1794ebbdbf32
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:otavite
+  path: data/records/otavite.yaml
+  label: Otavite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/otavite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/otavite/2026-11-09T161813Z-marcin-74abd9.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 12 Stage 2 causal-graphs review of data/records/otavite.yaml (SHA-256 58f66f26b95b8b331ec2502054f92654aefb8673a5be91d67a76302d28808e15)
+    and its canonical EDIT history sidecar(s) (history/records/otavite/2026-11-09T161813Z-marcin-74abd9.yaml)
+    verifying causal-graph node/edge topology, live UniProtKB grounding, and primary-source evidence fidelity
+    across causal_graph ''c7_12_tentative_otavite_precipitation_graph'' (mechanism_ref: c7_12_tentative_otavite_precipitation,
+    4 nodes / 3 edges; serratia_ureabc_complex: [UniProtKB:A0ABU0VDC7 (ureC, A0ABU0VDC7_9GAMM, UP001177872),
+    UniProtKB:A0ABU0VDC2 (ureB, A0ABU0VDC2_9GAMM, UP001177872), UniProtKB:A0A9X9BY98 (ureA, A0A9X9BY98_9GAMM,
+    UP001177872)]).'
+  selection: Cycle 12 Stage 2 causal_graphs curation for cmmmech:otavite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:otavite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/otavite.yaml
+  locator: Working-tree record data/records/otavite.yaml (causal_graphs and mechanisms[].protein_examples)
+  accessed_at: '2026-11-09T16:36:00Z'
+  support: supports
+  summary: 'Curated data/records/otavite.yaml (SHA-256 58f66f26b95b8b331ec2502054f92654aefb8673a5be91d67a76302d28808e15)
+    with causal_graph ''c7_12_tentative_otavite_precipitation_graph'' (mechanism_ref: c7_12_tentative_otavite_precipitation,
+    4 nodes / 3 edges; serratia_ureabc_complex: [UniProtKB:A0ABU0VDC7 (ureC, A0ABU0VDC7_9GAMM, UP001177872),
+    UniProtKB:A0ABU0VDC2 (ureB, A0ABU0VDC2_9GAMM, UP001177872), UniProtKB:A0A9X9BY98 (ureA, A0A9X9BY98_9GAMM,
+    UP001177872)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and experimental caveats.'
+  snapshot_sha256: 58f66f26b95b8b331ec2502054f92654aefb8673a5be91d67a76302d28808e15
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://doi.org/10.3390/microorganisms14010171
+  locator: 'yang2026: Yang, Q., Li, X., Cao, J., He, S., He, C., Tu, C., Zhou, K., Liang, X. and Zhan,
+    F. (2026). Urea-Mediated Biomineralization and Adsorption of Heavy-Metal Ions in Solution by the Urease-Producing
+    Bacteria C7-12. Microorganisms 14(1), 171. Complete 17-page original, Figures 1-11, Tables 1-2, and
+    official two-page supplement with Table S1 and Figures S1-S5. (https://doi.org/10.3390/microorganisms14010171)'
+  accessed_at: '2026-11-09T16:36:00Z'
+  support: supports
+  summary: 'Live-verified UniProtKB grounding across UniProtKB:A0ABU0VDC7 (A0ABU0VDC7_9GAMM, Urease subunit
+    alpha, gene_symbol: ureC, TREMBL, NCBITaxon:300181 Serratia ureilytica, UP001177872); UniProtKB:A0ABU0VDC2
+    (A0ABU0VDC2_9GAMM, Urease subunit beta, gene_symbol: ureB, TREMBL, NCBITaxon:300181 Serratia ureilytica,
+    UP001177872); UniProtKB:A0A9X9BY98 (A0A9X9BY98_9GAMM, Urease subunit gamma, gene_symbol: ureA, TREMBL,
+    NCBITaxon:300181 Serratia ureilytica, UP001177872). Primary mechanism source (yang2026: Yang, Q.,
+    Li, X., Cao, J., He, S., He, C., Tu, C., Zhou, K., Liang, X. and Zhan, F. (2026). Urea-Mediated Biomineralization
+    and Adsorption of Heavy-Metal Ions in Solution by the Urease-Producing Bacteria C7-12. Microorganisms
+    14(1), 171. Complete 17-page original, Figures 1-11, Tables 1-2, and official two-page supplement
+    with Table S1 and Figures S1-S5. (https://doi.org/10.3390/microorganisms14010171)) parameters, analytical
+    denominators, and source-level caveats are strictly preserved on all nodes, edges, and ProteinExample
+    evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/otavite/2026-11-09T161813Z-marcin-74abd9.yaml
+  locator: Canonical EDIT history sidecar history/records/otavite/2026-11-09T161813Z-marcin-74abd9.yaml
+  accessed_at: '2026-11-09T16:36:00Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/otavite/2026-11-09T161813Z-marcin-74abd9.yaml
+    (SHA-256 9de137b75016e8dfe5107aa5479b42e2ec42a11d6f3618ceba4f1794ebbdbf32): Add c7_12_tentative_otavite_precipitation_graph
+    causal graph and ground c7_12_tentative_otavite_precipitation to congeneric Serratia ureilytica reference-proteome
+    UreABC subunits (UniProtKB:A0ABU0VDC7, UniProtKB:A0ABU0VDC2, UniProtKB:A0A9X9BY98)'
+  snapshot_sha256: 9de137b75016e8dfe5107aa5479b42e2ec42a11d6f3618ceba4f1794ebbdbf32
+- evidence_id: validation
+  kind: validation
+  reference: data/records/otavite.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and validate-history --base
+    main
+  accessed_at: '2026-11-09T16:36:00Z'
+  support: supports
+  summary: data/records/otavite.yaml and history/records/otavite/2026-11-09T161813Z-marcin-74abd9.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with 0 errors.
+  snapshot_sha256: 58f66f26b95b8b331ec2502054f92654aefb8673a5be91d67a76302d28808e15
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 703 record(s); 0 failed.
+  target_ids:
+  - cmmmech:otavite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1484 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:otavite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_protein_grounding
+  area: graph
+  topic: 'Verification of causal_graphs structure, UniProtKB grounding, and parity across causal_graph
+    ''c7_12_tentative_otavite_precipitation_graph'' (mechanism_ref: c7_12_tentative_otavite_precipitation,
+    4 nodes / 3 edges; serratia_ureabc_complex: [UniProtKB:A0ABU0VDC7 (ureC, A0ABU0VDC7_9GAMM, UP001177872),
+    UniProtKB:A0ABU0VDC2 (ureB, A0ABU0VDC2_9GAMM, UP001177872), UniProtKB:A0A9X9BY98 (ureA, A0A9X9BY98_9GAMM,
+    UP001177872)])'
+  outcome: supported
+  summary: 'Curated data/records/otavite.yaml (SHA-256 58f66f26b95b8b331ec2502054f92654aefb8673a5be91d67a76302d28808e15)
+    with causal_graph ''c7_12_tentative_otavite_precipitation_graph'' (mechanism_ref: c7_12_tentative_otavite_precipitation,
+    4 nodes / 3 edges; serratia_ureabc_complex: [UniProtKB:A0ABU0VDC7 (ureC, A0ABU0VDC7_9GAMM, UP001177872),
+    UniProtKB:A0ABU0VDC2 (ureB, A0ABU0VDC2_9GAMM, UP001177872), UniProtKB:A0A9X9BY98 (ureA, A0A9X9BY98_9GAMM,
+    UP001177872)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and caveats from yang2026: Yang, Q., Li, X., Cao, J.,
+    He, S., He, C., Tu, C., Zhou, K., Liang, X. and Zhan, F. (2026). Urea-Mediated Biomineralization and
+    Adsorption of Heavy-Metal Ions in Solution by the Urease-Producing Bacteria C7-12. Microorganisms
+    14(1), 171. Complete 17-page original, Figures 1-11, Tables 1-2, and official two-page supplement
+    with Table S1 and Figures S1-S5. (https://doi.org/10.3390/microorganisms14010171). Live-verified UniProtKB
+    grounding across UniProtKB:A0ABU0VDC7 (A0ABU0VDC7_9GAMM, Urease subunit alpha, gene_symbol: ureC,
+    TREMBL, NCBITaxon:300181 Serratia ureilytica, UP001177872); UniProtKB:A0ABU0VDC2 (A0ABU0VDC2_9GAMM,
+    Urease subunit beta, gene_symbol: ureB, TREMBL, NCBITaxon:300181 Serratia ureilytica, UP001177872);
+    UniProtKB:A0A9X9BY98 (A0A9X9BY98_9GAMM, Urease subunit gamma, gene_symbol: ureA, TREMBL, NCBITaxon:300181
+    Serratia ureilytica, UP001177872).'
+  target_ids:
+  - cmmmech:otavite
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
+  outcome: supported
+  summary: 'data/records/otavite.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar(s) (history/records/otavite/2026-11-09T161813Z-marcin-74abd9.yaml
+    (SHA-256 9de137b75016e8dfe5107aa5479b42e2ec42a11d6f3618ceba4f1794ebbdbf32: Add c7_12_tentative_otavite_precipitation_graph
+    causal graph and ground c7_12_tentative_otavite_precipitation to congeneric Serratia ureilytica reference-proteome
+    UreABC subunits (UniProtKB:A0ABU0VDC7, UniProtKB:A0ABU0VDC2, UniProtKB:A0A9X9BY98))) and passing all
+    LinkML and history validation gates.'
+  target_ids:
+  - cmmmech:otavite
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Otavite (cmmmech:otavite) passes Cycle 12 Stage 2 causal-graphs review (scientific_review: true)
+  at SHA-256 58f66f26b95b8b331ec2502054f92654aefb8673a5be91d67a76302d28808e15: Curated data/records/otavite.yaml
+  with causal_graph ''c7_12_tentative_otavite_precipitation_graph'' (mechanism_ref: c7_12_tentative_otavite_precipitation,
+  4 nodes / 3 edges; serratia_ureabc_complex: [UniProtKB:A0ABU0VDC7 (ureC, A0ABU0VDC7_9GAMM, UP001177872),
+  UniProtKB:A0ABU0VDC2 (ureB, A0ABU0VDC2_9GAMM, UP001177872), UniProtKB:A0A9X9BY98 (ureA, A0A9X9BY98_9GAMM,
+  UP001177872)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+  and preserving source-faithful support levels and experimental caveats from yang2026: Yang, Q., Li,
+  X., Cao, J., He, S., He, C., Tu, C., Zhou, K., Liang, X. and Zhan, F. (2026). Urea-Mediated Biomineralization
+  and Adsorption of Heavy-Metal Ions in Solution by the Urease-Producing Bacteria C7-12. Microorganisms
+  14(1), 171. Complete 17-page original, Figures 1-11, Tables 1-2, and official two-page supplement with
+  Table S1 and Figures S1-S5. (https://doi.org/10.3390/microorganisms14010171). Live-verified UniProtKB
+  grounding across UniProtKB:A0ABU0VDC7 (A0ABU0VDC7_9GAMM, Urease subunit alpha, gene_symbol: ureC, TREMBL,
+  NCBITaxon:300181 Serratia ureilytica, UP001177872); UniProtKB:A0ABU0VDC2 (A0ABU0VDC2_9GAMM, Urease subunit
+  beta, gene_symbol: ureB, TREMBL, NCBITaxon:300181 Serratia ureilytica, UP001177872); UniProtKB:A0A9X9BY98
+  (A0A9X9BY98_9GAMM, Urease subunit gamma, gene_symbol: ureA, TREMBL, NCBITaxon:300181 Serratia ureilytica,
+  UP001177872).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes;
+  an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 12 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py for cmmmech:otavite.
+related_reviews: []

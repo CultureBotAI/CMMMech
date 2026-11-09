@@ -1,0 +1,35 @@
+history_version: 1
+target:
+  kind: record
+  slug: biotite
+  path: data/records/biotite.yaml
+session:
+  id: 2026-11-09T172114Z-marcin-1128be
+  timestamp: '2026-11-09T17:21:14Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Add RT-qPCR target-gene expression and dissolved-Fe correlation scope (Figures
+    4, 6, S6, Table 2) from Sheng et al. (2026) to biotite.yaml (#975)
+  details: Updated sources[sheng_2026], mechanisms[0].protein_examples, and causal_graphs[0]
+    in data/records/biotite.yaml to document the direct 5-9 h and 6/8 h RT-qPCR assays of
+    the 7 selected Table 1 DEGs (lutA_2 ABDD91_RS13400, actP ABDD91_RS04670, glgC, gtaB_3,
+    02676, levE, glnQ) and their positive correlations with dissolved Fe (3.12-5.43 uM, R^2
+    = 0.8213-0.9706, P = 0.0022-0.0340; Figures 4, 6, S6, Table 2) alongside the 8-h biotite
+    transcriptome (#975).
+  sections:
+  - sources
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/975
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/974

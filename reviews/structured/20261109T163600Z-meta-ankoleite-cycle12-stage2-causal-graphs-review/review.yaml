@@ -1,0 +1,212 @@
+schema_version: 1.0.0
+review_id: 20261109T163600Z-meta-ankoleite-cycle12-stage2-causal-graphs-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 12 Stage 2 causal-graphs review of Meta-ankoleite (cmmmech:meta-ankoleite)
+started_at: '2026-11-09T16:15:00Z'
+finished_at: '2026-11-09T16:36:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle12-stage2-causal-graphs-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md verifying
+    the Cycle 12 Stage 2 causal_graphs and ProteinExample curation in data/records/meta-ankoleite.yaml
+    (SHA-256 2e0860da97cff9efafd931db125be9cba6e8dcf020e6bf3d3f41972e342aba40) against live UniProtKB
+    grounding and cited primary source (liang2016: Liang, Csetenyi and Gadd (2016). Uranium bioprecipitation
+    mediated by yeasts utilizing organic phosphorus substrates. Applied Microbiology and Biotechnology
+    100, 5141-5151. DOI 10.1007/s00253-016-7327-9. Complete 35-page accepted-manuscript text inspected
+    through the Dundee web parser, with all four original publisher figures and five publisher HTML tables
+    inspected separately. A local full-article PDF was not acquired. (https://doi.org/10.1007/s00253-016-7327-9)).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: 7449fa912e2d92f8aff400481ee75b49edbb685e
+  state: working_tree
+  inputs:
+  - path: data/records/meta-ankoleite.yaml
+    sha256: 2e0860da97cff9efafd931db125be9cba6e8dcf020e6bf3d3f41972e342aba40
+    role: target
+  - path: history/records/meta-ankoleite/2026-11-09T162856Z-marcin-7461bc.yaml
+    sha256: 6e633d13a4112f2c164fd8736b43d10c21e2d74f84eff9eab8b45de81b311dfc
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:meta-ankoleite
+  path: data/records/meta-ankoleite.yaml
+  label: Meta-ankoleite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/meta-ankoleite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/meta-ankoleite/2026-11-09T162856Z-marcin-7461bc.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 12 Stage 2 causal-graphs review of data/records/meta-ankoleite.yaml (SHA-256 2e0860da97cff9efafd931db125be9cba6e8dcf020e6bf3d3f41972e342aba40)
+    and its canonical EDIT history sidecar(s) (history/records/meta-ankoleite/2026-11-09T162856Z-marcin-7461bc.yaml)
+    verifying causal-graph node/edge topology, live UniProtKB grounding, and primary-source evidence fidelity
+    across causal_graph ''yeast_uranyl_phosphate_precipitation_graph'' (mechanism_ref: yeast_uranyl_phosphate_precipitation,
+    4 nodes / 3 edges; kluyveromyces_lactis_phosphatases: [UniProtKB:P52289 (PHO5, PPA5_KLULA, UP000000598),
+    UniProtKB:P08540 (KLLA0B14839g, PHOX_KLULA, UP000000598), UniProtKB:Q6CNG1 (KLLA0_E12827g, Q6CNG1_KLULA,
+    UP000000598)]).'
+  selection: Cycle 12 Stage 2 causal_graphs curation for cmmmech:meta-ankoleite
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:meta-ankoleite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/meta-ankoleite.yaml
+  locator: Working-tree record data/records/meta-ankoleite.yaml (causal_graphs and mechanisms[].protein_examples)
+  accessed_at: '2026-11-09T16:36:00Z'
+  support: supports
+  summary: 'Curated data/records/meta-ankoleite.yaml (SHA-256 2e0860da97cff9efafd931db125be9cba6e8dcf020e6bf3d3f41972e342aba40)
+    with causal_graph ''yeast_uranyl_phosphate_precipitation_graph'' (mechanism_ref: yeast_uranyl_phosphate_precipitation,
+    4 nodes / 3 edges; kluyveromyces_lactis_phosphatases: [UniProtKB:P52289 (PHO5, PPA5_KLULA, UP000000598),
+    UniProtKB:P08540 (KLLA0B14839g, PHOX_KLULA, UP000000598), UniProtKB:Q6CNG1 (KLLA0_E12827g, Q6CNG1_KLULA,
+    UP000000598)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and experimental caveats.'
+  snapshot_sha256: 2e0860da97cff9efafd931db125be9cba6e8dcf020e6bf3d3f41972e342aba40
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://doi.org/10.1007/s00253-016-7327-9
+  locator: 'liang2016: Liang, Csetenyi and Gadd (2016). Uranium bioprecipitation mediated by yeasts utilizing
+    organic phosphorus substrates. Applied Microbiology and Biotechnology 100, 5141-5151. DOI 10.1007/s00253-016-7327-9.
+    Complete 35-page accepted-manuscript text inspected through the Dundee web parser, with all four original
+    publisher figures and five publisher HTML tables inspected separately. A local full-article PDF was
+    not acquired. (https://doi.org/10.1007/s00253-016-7327-9)'
+  accessed_at: '2026-11-09T16:36:00Z'
+  support: supports
+  summary: 'Live-verified UniProtKB grounding across UniProtKB:P52289 (PPA5_KLULA, Repressible acid phosphatase,
+    gene_symbol: PHO5, SWISS_PROT, NCBITaxon:284590 Kluyveromyces lactis NRRL Y-1140, UP000000598); UniProtKB:P08540
+    (PHOX_KLULA, Probable acid phosphatase, gene_symbol: KLLA0B14839g, SWISS_PROT, NCBITaxon:284590 Kluyveromyces
+    lactis NRRL Y-1140, UP000000598); UniProtKB:Q6CNG1 (Q6CNG1_KLULA, Alkaline phosphatase, gene_symbol:
+    KLLA0_E12827g, TREMBL, NCBITaxon:284590 Kluyveromyces lactis NRRL Y-1140, UP000000598). Primary mechanism
+    source (liang2016: Liang, Csetenyi and Gadd (2016). Uranium bioprecipitation mediated by yeasts utilizing
+    organic phosphorus substrates. Applied Microbiology and Biotechnology 100, 5141-5151. DOI 10.1007/s00253-016-7327-9.
+    Complete 35-page accepted-manuscript text inspected through the Dundee web parser, with all four original
+    publisher figures and five publisher HTML tables inspected separately. A local full-article PDF was
+    not acquired. (https://doi.org/10.1007/s00253-016-7327-9)) parameters, analytical denominators, and
+    source-level caveats are strictly preserved on all nodes, edges, and ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/meta-ankoleite/2026-11-09T162856Z-marcin-7461bc.yaml
+  locator: Canonical EDIT history sidecar history/records/meta-ankoleite/2026-11-09T162856Z-marcin-7461bc.yaml
+  accessed_at: '2026-11-09T16:36:00Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/meta-ankoleite/2026-11-09T162856Z-marcin-7461bc.yaml
+    (SHA-256 6e633d13a4112f2c164fd8736b43d10c21e2d74f84eff9eab8b45de81b311dfc): Add yeast_uranyl_phosphate_precipitation_graph
+    causal graph and ground yeast_uranyl_phosphate_precipitation to Kluyveromyces lactis NRRL Y-1140 (=
+    IFO 1267) phosphatases (UniProtKB:P52289, UniProtKB:P08540, UniProtKB:Q6CNG1)'
+  snapshot_sha256: 6e633d13a4112f2c164fd8736b43d10c21e2d74f84eff9eab8b45de81b311dfc
+- evidence_id: validation
+  kind: validation
+  reference: data/records/meta-ankoleite.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and validate-history --base
+    main
+  accessed_at: '2026-11-09T16:36:00Z'
+  support: supports
+  summary: data/records/meta-ankoleite.yaml and history/records/meta-ankoleite/2026-11-09T162856Z-marcin-7461bc.yaml
+    pass strict LinkML schema, protein_examples parity, and history validation with 0 errors.
+  snapshot_sha256: 2e0860da97cff9efafd931db125be9cba6e8dcf020e6bf3d3f41972e342aba40
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 703 record(s); 0 failed.
+  target_ids:
+  - cmmmech:meta-ankoleite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1484 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:meta-ankoleite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_protein_grounding
+  area: graph
+  topic: 'Verification of causal_graphs structure, UniProtKB grounding, and parity across causal_graph
+    ''yeast_uranyl_phosphate_precipitation_graph'' (mechanism_ref: yeast_uranyl_phosphate_precipitation,
+    4 nodes / 3 edges; kluyveromyces_lactis_phosphatases: [UniProtKB:P52289 (PHO5, PPA5_KLULA, UP000000598),
+    UniProtKB:P08540 (KLLA0B14839g, PHOX_KLULA, UP000000598), UniProtKB:Q6CNG1 (KLLA0_E12827g, Q6CNG1_KLULA,
+    UP000000598)])'
+  outcome: supported
+  summary: 'Curated data/records/meta-ankoleite.yaml (SHA-256 2e0860da97cff9efafd931db125be9cba6e8dcf020e6bf3d3f41972e342aba40)
+    with causal_graph ''yeast_uranyl_phosphate_precipitation_graph'' (mechanism_ref: yeast_uranyl_phosphate_precipitation,
+    4 nodes / 3 edges; kluyveromyces_lactis_phosphatases: [UniProtKB:P52289 (PHO5, PPA5_KLULA, UP000000598),
+    UniProtKB:P08540 (KLLA0B14839g, PHOX_KLULA, UP000000598), UniProtKB:Q6CNG1 (KLLA0_E12827g, Q6CNG1_KLULA,
+    UP000000598)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and caveats from liang2016: Liang, Csetenyi and Gadd
+    (2016). Uranium bioprecipitation mediated by yeasts utilizing organic phosphorus substrates. Applied
+    Microbiology and Biotechnology 100, 5141-5151. DOI 10.1007/s00253-016-7327-9. Complete 35-page accepted-manuscript
+    text inspected through the Dundee web parser, with all four original publisher figures and five publisher
+    HTML tables inspected separately. A local full-article PDF was not acquired. (https://doi.org/10.1007/s00253-016-7327-9).
+    Live-verified UniProtKB grounding across UniProtKB:P52289 (PPA5_KLULA, Repressible acid phosphatase,
+    gene_symbol: PHO5, SWISS_PROT, NCBITaxon:284590 Kluyveromyces lactis NRRL Y-1140, UP000000598); UniProtKB:P08540
+    (PHOX_KLULA, Probable acid phosphatase, gene_symbol: KLLA0B14839g, SWISS_PROT, NCBITaxon:284590 Kluyveromyces
+    lactis NRRL Y-1140, UP000000598); UniProtKB:Q6CNG1 (Q6CNG1_KLULA, Alkaline phosphatase, gene_symbol:
+    KLLA0_E12827g, TREMBL, NCBITaxon:284590 Kluyveromyces lactis NRRL Y-1140, UP000000598).'
+  target_ids:
+  - cmmmech:meta-ankoleite
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecar(s) and strict schema validation
+  outcome: supported
+  summary: 'data/records/meta-ankoleite.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecar(s) (history/records/meta-ankoleite/2026-11-09T162856Z-marcin-7461bc.yaml
+    (SHA-256 6e633d13a4112f2c164fd8736b43d10c21e2d74f84eff9eab8b45de81b311dfc: Add yeast_uranyl_phosphate_precipitation_graph
+    causal graph and ground yeast_uranyl_phosphate_precipitation to Kluyveromyces lactis NRRL Y-1140 (=
+    IFO 1267) phosphatases (UniProtKB:P52289, UniProtKB:P08540, UniProtKB:Q6CNG1))) and passing all LinkML
+    and history validation gates.'
+  target_ids:
+  - cmmmech:meta-ankoleite
+  evidence_ids:
+  - owner
+  - edit_history
+  - validation
+findings: []
+actions: []
+summary: 'Meta-ankoleite (cmmmech:meta-ankoleite) passes Cycle 12 Stage 2 causal-graphs review (scientific_review:
+  true) at SHA-256 2e0860da97cff9efafd931db125be9cba6e8dcf020e6bf3d3f41972e342aba40: Curated data/records/meta-ankoleite.yaml
+  with causal_graph ''yeast_uranyl_phosphate_precipitation_graph'' (mechanism_ref: yeast_uranyl_phosphate_precipitation,
+  4 nodes / 3 edges; kluyveromyces_lactis_phosphatases: [UniProtKB:P52289 (PHO5, PPA5_KLULA, UP000000598),
+  UniProtKB:P08540 (KLLA0B14839g, PHOX_KLULA, UP000000598), UniProtKB:Q6CNG1 (KLLA0_E12827g, Q6CNG1_KLULA,
+  UP000000598)]), achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+  and preserving source-faithful support levels and experimental caveats from liang2016: Liang, Csetenyi
+  and Gadd (2016). Uranium bioprecipitation mediated by yeasts utilizing organic phosphorus substrates.
+  Applied Microbiology and Biotechnology 100, 5141-5151. DOI 10.1007/s00253-016-7327-9. Complete 35-page
+  accepted-manuscript text inspected through the Dundee web parser, with all four original publisher figures
+  and five publisher HTML tables inspected separately. A local full-article PDF was not acquired. (https://doi.org/10.1007/s00253-016-7327-9).
+  Live-verified UniProtKB grounding across UniProtKB:P52289 (PPA5_KLULA, Repressible acid phosphatase,
+  gene_symbol: PHO5, SWISS_PROT, NCBITaxon:284590 Kluyveromyces lactis NRRL Y-1140, UP000000598); UniProtKB:P08540
+  (PHOX_KLULA, Probable acid phosphatase, gene_symbol: KLLA0B14839g, SWISS_PROT, NCBITaxon:284590 Kluyveromyces
+  lactis NRRL Y-1140, UP000000598); UniProtKB:Q6CNG1 (Q6CNG1_KLULA, Alkaline phosphatase, gene_symbol:
+  KLLA0_E12827g, TREMBL, NCBITaxon:284590 Kluyveromyces lactis NRRL Y-1140, UP000000598).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes;
+  an independent subagent PR review is executed prior to merge.'
+notes:
+- Executed during Cycle 12 Stage 2 (causal_graphs) using scripts/curate_causal_graphs.py for cmmmech:meta-ankoleite.
+related_reviews: []

@@ -1,0 +1,34 @@
+history_version: 1
+target:
+  kind: record
+  slug: chernikovite
+  path: data/records/chernikovite.yaml
+session:
+  id: 2026-11-09T172114Z-marcin-ef9090
+  timestamp: '2026-11-09T17:21:14Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Clarify multi-domain TrEMBL gene-model annotation note for UniProtKB:A0A364KM61
+    (BHQ10_000639) in chernikovite.yaml (#975)
+  details: Updated annotation_note for UniProtKB:A0A364KM61 (BHQ10_000639) in data/records/chernikovite.yaml
+    to document that BHQ10_000639 is a multi-domain TrEMBL gene model in UP000249363 fusing
+    a purple acid phosphatase metallophosphoesterase domain (IPR005109/PF00149, GO:0003993)
+    with adjacent mannosyltransferase (PF03452, GO:0000009) and mitochondrial carrier (PF00153)
+    domains, and that only the purple acid phosphatase module serves as the functional proxy
+    for upstream phosphate-rock solubilization (#975).
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/975
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/974

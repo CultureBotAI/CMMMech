@@ -35,6 +35,10 @@ sources:
   title: NCBI Taxonomy 1474, Sporosarcina pasteurii, species.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1474&mode=Info
   accessed_on: '2026-10-14'
+- id: uniprot_lysinibacillus_ureabc
+  title: 'UniProtKB reference proteome UP000318769 (Lysinibacillus fusiformis, NCBITaxon:28031): Urease subunits alpha (ureC, UniProtKB:A0ACG7VEY6), beta (ureB, UniProtKB:A0ACG7VDY8), and gamma (ureA, UniProtKB:A0ACG7VDH1).'
+  url: https://www.uniprot.org/uniprotkb?query=(proteome:UP000318769)+AND+(ureA+OR+ureB+OR+ureC)
+  accessed_on: '2026-11-09'
 mechanisms:
 - id: dw018_calcite_in_terbium_assay
   name: Calcite formation in a calcium-supplemented DW018 terbium assay
@@ -46,6 +50,126 @@ mechanisms:
   organisms:
   - id: NCBITaxon:400634
     label: Lysinibacillus
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0ACG7VEY6
+    entry_name: A0ACG7VEY6_9BACI
+    protein_name: Urease subunit alpha
+    gene_symbol: ureC
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:28031
+      label: Lysinibacillus fusiformis
+    reference_proteome_id: UP000318769
+    ec_numbers:
+    - EC:3.5.1.5
+    interpro_ids:
+    - InterPro:IPR006680
+    - InterPro:IPR011059
+    - InterPro:IPR032466
+    - InterPro:IPR011612
+    - InterPro:IPR017950
+    - InterPro:IPR005848
+    - InterPro:IPR017951
+    - InterPro:IPR029754
+    pfam_ids:
+    - Pfam:PF01979
+    - Pfam:PF00449
+    ncbifam_ids:
+    - NCBIfam:NF009686
+    - NCBIfam:TIGR01792
+    go_terms:
+    - id: GO:0005737
+      label: cytoplasm
+    - id: GO:0016151
+      label: nickel cation binding
+    - id: GO:0009039
+      label: urease activity
+    - id: GO:0043419
+      label: urea catabolic process
+    functional_role: Catalytic alpha subunit (UreC; EC 3.5.1.5) of the nickel-dependent Lysinibacillus urease complex hydrolyzing urea to ammonia and carbamate/carbonate.
+    annotation_note: Grounded to congeneric reference-proteome entry UP000318769 from Lysinibacillus fusiformis (NCBITaxon:28031), representing genus-level isolate Lysinibacillus sp. DW018 (NCBITaxon:400634; ionic rare-earth tailings isolate from Gannan, China, lacking a strain-specific proteome in UniProtKB) in Bian et al. (2024).
+    evidence:
+    - source_ref: bian2024
+      supports: partial
+      explanation: Bian et al. (2024) measured urease activity in Lysinibacillus sp. DW018 (Table 2) and assigned calcite XRD peaks after 2 h in a 25 mM CaCl2 + 2% urea + 400 uM Tb(III) assay (Figure 7); support is partial because rapid 10-min Tb depletion (98.28%) preceded resolved calcite XRD peaks and also occurred without added Ca, and ureABC genes were not mutated.
+    - source_ref: uniprot_lysinibacillus_ureabc
+      supports: partial
+      explanation: UniProtKB:A0ACG7VEY6 (A0ACG7VEY6_9BACI) in Lysinibacillus fusiformis reference proteome UP000318769 (NCBITaxon:28031) provides a congeneric reference-proteome representative for Urease subunit alpha (ureC; EC 3.5.1.5) in genus Lysinibacillus (NCBITaxon:400634).
+  - uniprot_accession: UniProtKB:A0ACG7VDY8
+    entry_name: A0ACG7VDY8_9BACI
+    protein_name: Urease subunit beta
+    gene_symbol: ureB
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:28031
+      label: Lysinibacillus fusiformis
+    reference_proteome_id: UP000318769
+    ec_numbers:
+    - EC:3.5.1.5
+    interpro_ids:
+    - InterPro:IPR002019
+    - InterPro:IPR036461
+    - InterPro:IPR050069
+    pfam_ids:
+    - Pfam:PF00699
+    ncbifam_ids:
+    - NCBIfam:NF009682
+    - NCBIfam:TIGR00192
+    go_terms:
+    - id: GO:0035550
+      label: urease complex
+    - id: GO:0009039
+      label: urease activity
+    - id: GO:0043419
+      label: urea catabolic process
+    functional_role: Beta subunit (UreB; EC 3.5.1.5) of the heterotrimeric Lysinibacillus nickel-dependent urease complex.
+    annotation_note: Grounded to congeneric reference-proteome entry UP000318769 from Lysinibacillus fusiformis (NCBITaxon:28031), representing genus-level isolate Lysinibacillus sp. DW018 (NCBITaxon:400634) in Bian et al. (2024).
+    evidence:
+    - source_ref: bian2024
+      supports: partial
+      explanation: Bian et al. (2024) reported urease activity in washed Lysinibacillus sp. DW018 cells (Table 2) and calcite diffraction peaks at 2 h in 25 mM CaCl2 + 2% urea (Figure 7), without ureB gene perturbation or proof that urease-driven calcite precipitation caused the rapid 10-min Tb removal.
+    - source_ref: uniprot_lysinibacillus_ureabc
+      supports: partial
+      explanation: UniProtKB:A0ACG7VDY8 (A0ACG7VDY8_9BACI) in Lysinibacillus fusiformis reference proteome UP000318769 (NCBITaxon:28031) provides a congeneric reference-proteome representative for Urease subunit beta (ureB; EC 3.5.1.5) in genus Lysinibacillus (NCBITaxon:400634).
+  - uniprot_accession: UniProtKB:A0ACG7VDH1
+    entry_name: A0ACG7VDH1_9BACI
+    protein_name: Urease subunit gamma
+    gene_symbol: ureA
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:28031
+      label: Lysinibacillus fusiformis
+    reference_proteome_id: UP000318769
+    ec_numbers:
+    - EC:3.5.1.5
+    interpro_ids:
+    - InterPro:IPR012010
+    - InterPro:IPR002026
+    - InterPro:IPR036463
+    - InterPro:IPR050069
+    pfam_ids:
+    - Pfam:PF00547
+    ncbifam_ids:
+    - NCBIfam:NF009712
+    - NCBIfam:TIGR00193
+    go_terms:
+    - id: GO:0005737
+      label: cytoplasm
+    - id: GO:0016151
+      label: nickel cation binding
+    - id: GO:0009039
+      label: urease activity
+    - id: GO:0043419
+      label: urea catabolic process
+    functional_role: Gamma subunit (UreA; EC 3.5.1.5) of the heterotrimeric Lysinibacillus nickel-dependent urease complex.
+    annotation_note: Grounded to congeneric reference-proteome entry UP000318769 from Lysinibacillus fusiformis (NCBITaxon:28031), representing genus-level isolate Lysinibacillus sp. DW018 (NCBITaxon:400634) in Bian et al. (2024).
+    evidence:
+    - source_ref: bian2024
+      supports: partial
+      explanation: Bian et al. (2024) reported urease activity in washed Lysinibacillus sp. DW018 cells (Table 2) and calcite diffraction peaks at 2 h in 25 mM CaCl2 + 2% urea (Figure 7), without ureA gene perturbation or proof that urease-driven calcite precipitation caused the rapid 10-min Tb removal.
+    - source_ref: uniprot_lysinibacillus_ureabc
+      supports: partial
+      explanation: UniProtKB:A0ACG7VDH1 (A0ACG7VDH1_9BACI) in Lysinibacillus fusiformis reference proteome UP000318769 (NCBITaxon:28031) provides a congeneric reference-proteome representative for Urease subunit gamma (ureA; EC 3.5.1.5) in genus Lysinibacillus (NCBITaxon:400634).
   evidence:
   - source_ref: bian2024
     supports: support
@@ -286,6 +410,181 @@ causal_graphs:
     - source_ref: rehmanji2025
       supports: partial
       explanation: Figure 1, Figure 2, Table S1, Figure S5, and Figure S7 (p. 24) show depletion of measured Ca, Mg, Mn, and Sr and ex situ powder-XRD assignment of calcite (phase 2), vaterite (phase 1), and magnesite in 60 °C-dried treatment solids; support is partial because Section 4.4 does not specify solid/liquid separation for every ICP-OES aliquot, Figure S5 trajectories differ from Figure 1, and phase-specific cation partitioning into calcite was not quantified.
+- id: dw018_calcite_in_terbium_assay_graph
+  name: Lysinibacillus sp. DW018 ureolytic calcite formation in a calcium- and urea-supplemented Tb(III) assay
+  description: Causal pathway linking representative Lysinibacillus UreABC urease subunits (UniProtKB:A0ACG7VEY6, UniProtKB:A0ACG7VDY8, UniProtKB:A0ACG7VDH1) to urea hydrolysis in washed Lysinibacillus sp. DW018 suspensions (OD600 1.0, 2% urea, 25 mM CaCl2, 400 uM Tb(III), 37 C) and powder-XRD assignment of calcite at 2 h (Bian et al., 2024, Figure 7), while preserving that rapid 10-min solution Tb depletion (98.28%) preceded resolved calcite diffraction peaks and also occurred without added calcium.
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: dw018_calcite_in_terbium_assay
+  nodes:
+  - id: lysinibacillus_ureabc_complex
+    label: Lysinibacillus UreABC urease complex (ureC, ureB, ureA)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: ureABC
+    description: Heterotrimeric nickel-dependent urease complex (EC 3.5.1.5; UreC UniProtKB:A0ACG7VEY6, UreB UniProtKB:A0ACG7VDY8, UreA UniProtKB:A0ACG7VDH1 from congeneric Lysinibacillus fusiformis reference proteome UP000318769) representing measured urease activity in washed Lysinibacillus sp. DW018 biomass (Table 2).
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0ACG7VEY6
+      entry_name: A0ACG7VEY6_9BACI
+      protein_name: Urease subunit alpha
+      gene_symbol: ureC
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:28031
+        label: Lysinibacillus fusiformis
+      reference_proteome_id: UP000318769
+      ec_numbers:
+      - EC:3.5.1.5
+      interpro_ids:
+      - InterPro:IPR006680
+      - InterPro:IPR011059
+      - InterPro:IPR032466
+      - InterPro:IPR011612
+      - InterPro:IPR017950
+      - InterPro:IPR005848
+      - InterPro:IPR017951
+      - InterPro:IPR029754
+      pfam_ids:
+      - Pfam:PF01979
+      - Pfam:PF00449
+      ncbifam_ids:
+      - NCBIfam:NF009686
+      - NCBIfam:TIGR01792
+      go_terms:
+      - id: GO:0005737
+        label: cytoplasm
+      - id: GO:0016151
+        label: nickel cation binding
+      - id: GO:0009039
+        label: urease activity
+      - id: GO:0043419
+        label: urea catabolic process
+      functional_role: Catalytic alpha subunit (UreC; EC 3.5.1.5) of the nickel-dependent Lysinibacillus urease complex hydrolyzing urea to ammonia and carbamate/carbonate.
+      annotation_note: Grounded to congeneric reference-proteome entry UP000318769 from Lysinibacillus fusiformis (NCBITaxon:28031), representing genus-level isolate Lysinibacillus sp. DW018 (NCBITaxon:400634; ionic rare-earth tailings isolate from Gannan, China, lacking a strain-specific proteome in UniProtKB) in Bian et al. (2024).
+      evidence:
+      - source_ref: bian2024
+        supports: partial
+        explanation: Bian et al. (2024) measured urease activity in Lysinibacillus sp. DW018 (Table 2) and assigned calcite XRD peaks after 2 h in a 25 mM CaCl2 + 2% urea + 400 uM Tb(III) assay (Figure 7); support is partial because rapid 10-min Tb depletion (98.28%) preceded resolved calcite XRD peaks and also occurred without added Ca, and ureABC genes were not mutated.
+      - source_ref: uniprot_lysinibacillus_ureabc
+        supports: partial
+        explanation: UniProtKB:A0ACG7VEY6 (A0ACG7VEY6_9BACI) in Lysinibacillus fusiformis reference proteome UP000318769 (NCBITaxon:28031) provides a congeneric reference-proteome representative for Urease subunit alpha (ureC; EC 3.5.1.5) in genus Lysinibacillus (NCBITaxon:400634).
+    - uniprot_accession: UniProtKB:A0ACG7VDY8
+      entry_name: A0ACG7VDY8_9BACI
+      protein_name: Urease subunit beta
+      gene_symbol: ureB
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:28031
+        label: Lysinibacillus fusiformis
+      reference_proteome_id: UP000318769
+      ec_numbers:
+      - EC:3.5.1.5
+      interpro_ids:
+      - InterPro:IPR002019
+      - InterPro:IPR036461
+      - InterPro:IPR050069
+      pfam_ids:
+      - Pfam:PF00699
+      ncbifam_ids:
+      - NCBIfam:NF009682
+      - NCBIfam:TIGR00192
+      go_terms:
+      - id: GO:0035550
+        label: urease complex
+      - id: GO:0009039
+        label: urease activity
+      - id: GO:0043419
+        label: urea catabolic process
+      functional_role: Beta subunit (UreB; EC 3.5.1.5) of the heterotrimeric Lysinibacillus nickel-dependent urease complex.
+      annotation_note: Grounded to congeneric reference-proteome entry UP000318769 from Lysinibacillus fusiformis (NCBITaxon:28031), representing genus-level isolate Lysinibacillus sp. DW018 (NCBITaxon:400634) in Bian et al. (2024).
+      evidence:
+      - source_ref: bian2024
+        supports: partial
+        explanation: Bian et al. (2024) reported urease activity in washed Lysinibacillus sp. DW018 cells (Table 2) and calcite diffraction peaks at 2 h in 25 mM CaCl2 + 2% urea (Figure 7), without ureB gene perturbation or proof that urease-driven calcite precipitation caused the rapid 10-min Tb removal.
+      - source_ref: uniprot_lysinibacillus_ureabc
+        supports: partial
+        explanation: UniProtKB:A0ACG7VDY8 (A0ACG7VDY8_9BACI) in Lysinibacillus fusiformis reference proteome UP000318769 (NCBITaxon:28031) provides a congeneric reference-proteome representative for Urease subunit beta (ureB; EC 3.5.1.5) in genus Lysinibacillus (NCBITaxon:400634).
+    - uniprot_accession: UniProtKB:A0ACG7VDH1
+      entry_name: A0ACG7VDH1_9BACI
+      protein_name: Urease subunit gamma
+      gene_symbol: ureA
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:28031
+        label: Lysinibacillus fusiformis
+      reference_proteome_id: UP000318769
+      ec_numbers:
+      - EC:3.5.1.5
+      interpro_ids:
+      - InterPro:IPR012010
+      - InterPro:IPR002026
+      - InterPro:IPR036463
+      - InterPro:IPR050069
+      pfam_ids:
+      - Pfam:PF00547
+      ncbifam_ids:
+      - NCBIfam:NF009712
+      - NCBIfam:TIGR00193
+      go_terms:
+      - id: GO:0005737
+        label: cytoplasm
+      - id: GO:0016151
+        label: nickel cation binding
+      - id: GO:0009039
+        label: urease activity
+      - id: GO:0043419
+        label: urea catabolic process
+      functional_role: Gamma subunit (UreA; EC 3.5.1.5) of the heterotrimeric Lysinibacillus nickel-dependent urease complex.
+      annotation_note: Grounded to congeneric reference-proteome entry UP000318769 from Lysinibacillus fusiformis (NCBITaxon:28031), representing genus-level isolate Lysinibacillus sp. DW018 (NCBITaxon:400634) in Bian et al. (2024).
+      evidence:
+      - source_ref: bian2024
+        supports: partial
+        explanation: Bian et al. (2024) reported urease activity in washed Lysinibacillus sp. DW018 cells (Table 2) and calcite diffraction peaks at 2 h in 25 mM CaCl2 + 2% urea (Figure 7), without ureA gene perturbation or proof that urease-driven calcite precipitation caused the rapid 10-min Tb removal.
+      - source_ref: uniprot_lysinibacillus_ureabc
+        supports: partial
+        explanation: UniProtKB:A0ACG7VDH1 (A0ACG7VDH1_9BACI) in Lysinibacillus fusiformis reference proteome UP000318769 (NCBITaxon:28031) provides a congeneric reference-proteome representative for Urease subunit gamma (ureA; EC 3.5.1.5) in genus Lysinibacillus (NCBITaxon:400634).
+  - id: dw018_urea_hydrolysis_alkalinity
+    label: Urea hydrolysis and carbonate alkalinity in 2% urea + 25 mM CaCl2 + 400 uM Tb(III) DW018 suspension
+    node_type: CHEMICAL_ENTITY
+    description: Ammonium and carbonate alkalinity generated by washed Lysinibacillus sp. DW018 cells (OD600 1.0 in 30 mL sterile saline) incubated at 37 C with 2% urea, 25 mM CaCl2, and 400 uM Tb(III).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: supplied_calcium_and_terbium_ions
+    label: Supplied 25 mM Ca(II) (as CaCl2) and 400 uM Tb(III) in synthetic saline assay
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved 25 mM CaCl2 and 400 uM Tb(III) supplied to washed Lysinibacillus sp. DW018 cells in 30 mL synthetic solution at 37 C (rapid supernatant Tb depletion of 98.28% occurred by 10 min and also without added CaCl2 in Figures 2 and 5).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: dw018_2h_calcite_bearing_precipitate
+    label: Freeze-dried 2-h cell-bearing precipitate with XRD-assigned calcite peaks and SEM-EDS Ca/Tb association
+    node_type: MATERIAL_OR_PHASE
+    description: Ex situ freeze-dried solid harvested after 2 h in the 25 mM CaCl2 + 2% urea + 400 uM Tb(III) DW018 assay, showing calcite powder-XRD peaks (Figure 7, absent in the 10-min trace) and cell-associated Ca/Tb signals by SEM-EDS (Figure 8) without proving Tb incorporation into the calcite lattice.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: lysinibacillus_ureabc_complex
+    target: dw018_urea_hydrolysis_alkalinity
+    predicate: catalyzes
+    relationship: hydrolysis of 2% urea by washed DW018 biomass at 37 C
+    description: Urease activity in washed Lysinibacillus sp. DW018 biomass hydrolyzes supplied 2% urea to ammonium and carbonate ions.
+    evidence:
+    - source_ref: bian2024
+      supports: partial
+      explanation: Table 2 of Bian et al. (2024) measures urease activity in Lysinibacillus sp. DW018 across heat-pretreatment temperatures; support is partial because individual ureABC genes were not sequenced or mutated and heat-pretreatment Table 1-2 assays do not match the simultaneous hot-reaction conditions in Figure 3.
+  - source: dw018_urea_hydrolysis_alkalinity
+    target: dw018_2h_calcite_bearing_precipitate
+    predicate: drives
+    relationship: carbonate supersaturation and 2-h calcite crystallization in Ca-supplemented DW018 assay
+    description: Carbonate alkalinity generated in the 2% urea + 25 mM CaCl2 DW018 suspension drives formation of XRD-resolved calcite peaks by 2 h (whereas no calcite peaks are resolved at 10 min in Figure 7).
+    evidence:
+    - source_ref: bian2024
+      supports: partial
+      explanation: Sections 2.5/2.7 and 3.5.1 and Figure 7 (p. 8) establish calcite XRD peaks in the 2-h MICP solid compared with starting cells, 10-min MICP, and no-urea/no-Ca adsorption traces; support is partial because no matched-pH cell-free or killed-biomass XRD phase control was reported.
+  - source: supplied_calcium_and_terbium_ions
+    target: dw018_2h_calcite_bearing_precipitate
+    predicate: incorporates_into
+    relationship: CaCO3 calcite crystallization at 2 h alongside cell-surface/amorphous Tb association
+    description: Supplied 25 mM Ca(II) precipitates into calcite crystals by 2 h while 400 uM Tb(III) is rapidly depleted from solution within 10 min (98.28%) and co-localizes with cell-bearing solids by SEM-EDS (Figure 8) without demonstrated calcite-lattice substitution.
+    evidence:
+    - source_ref: bian2024
+      supports: partial
+      explanation: Figures 2, 5, 7, and 8 show rapid 10-min supernatant Tb depletion (including with zero added Ca), resolved calcite XRD peaks only at 2 h, and Ca/Tb elemental mapping on fixed/freeze-dried solids; calcite formation therefore does not explain the rapid 10-min Tb depletion or prove Tb substitution into calcite.
 curation_history:
 - timestamp: '2026-10-14T12:19:25Z'
   curator: codex (GPT-6; codex)
@@ -303,8 +602,13 @@ curation_history:
   curator: marcin
   action: edit
   summary: 'Resolve Cycle 10 Stage 4 finding cmmmech-cycle10-stage4-finding-0001 (#950): replace template node/edge descriptions, remove /phosphate wording, and qualify supports: partial on Rehmanji et al. (2025) geothermal-brine causal graph.'
+- timestamp: '2026-11-09T16:18:13Z'
+  curator: marcin
+  action: edit
+  summary: Add dw018_calcite_in_terbium_assay_graph causal graph and ground dw018_calcite_in_terbium_assay to Lysinibacillus reference-proteome UreABC subunits (UniProtKB:A0ACG7VEY6, UniProtKB:A0ACG7VDY8, UniProtKB:A0ACG7VDH1)
 history_refs:
 - history/records/calcite/2026-10-14T121905Z-codex-bcd6cf.yaml
 - history/records/calcite/2026-10-18T042750Z-antigravity-adc287.yaml
 - history/records/calcite/2026-10-21T184653Z-claude-6d1382.yaml
 - history/records/calcite/2026-11-06T145838Z-marcin-f0ecb2.yaml
+- history/records/calcite/2026-11-09T161813Z-marcin-9b2ff3.yaml
