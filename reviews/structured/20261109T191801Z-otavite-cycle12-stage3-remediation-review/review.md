@@ -1,0 +1,187 @@
+# Cycle 12 Stage 3 post-remediation scientific review of cmmmech:otavite (Otavite)
+
+- Review: 20261109T191801Z-otavite-cycle12-stage3-remediation-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-09T19:17:31Z
+- Finished UTC: 2026-11-09T19:18:01Z
+- Reviewer: marcin (antigravity claude-opus-4-6) (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Verified post-remediation state of cmmmech:otavite (Otavite) for Issue #977 (PR #976): Aligned causal_graphs[0].edges[0] description and evidence explanation with the Serratia UreABC-UreG complex (#977). Confirmed exact parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples for UniProtKB:A0ABU0VEJ2 (A0ABU0VEJ2_9GAMM, Urease accessory protein UreG, ureG, ORF Q6237_00195, Serratia ureilytica UP001177872) and canonical history sidecar history/records/otavite/2026-11-09T191545Z-marcin-e68ddd.yaml.
+
+## Scope And Provenance
+
+Single-record scientific and structural review of data/records/otavite.yaml after Cycle 12 Stage 3 remediation (#977).
+
+Selection: Remediated record data/records/otavite.yaml in Cycle 12 Stage 3 (#977).
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: git_commit at Git base f6fb0663d893c4fe03c82d3fb75fb3c12194252d.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:otavite | data/records/otavite.yaml | maintained | Otavite |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| CMMMech schema and reference validation | passed | True | cmmmech:otavite | uv run cmmmech validate --require-records passed (703 records, 0 failed). |
+| CMMMech history sidecar validation | passed | True | cmmmech:otavite | uv run cmmmech validate-history --base main passed with history/records/otavite/2026-11-09T191545Z-marcin-e68ddd.yaml. |
+
+## Scientific And Domain Assessments
+
+### UniProtKB protein_examples grounding, causal-graph node parity, and causal-edge consistency
+
+grounding: supported. Targets: cmmmech:otavite.
+
+Aligned causal_graphs[0].edges[0] description and evidence explanation with the Serratia UreABC-UreG complex (#977). Verified UniProtKB:A0ABU0VEJ2 (A0ABU0VEJ2_9GAMM, Urease accessory protein UreG, ureG, ORF Q6237_00195, Serratia ureilytica UP001177872) in both mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples with identical metadata and supports: partial qualification.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| ev_record | data/records/otavite.yaml | supports | Inspected data/records/otavite.yaml (sha256 09e74facb8bc4ac9271814df7fdc9073a44762456be39dc0c25bb264f26de635) and history sidecar history/records/otavite/2026-11-09T191545Z-marcin-e68ddd.yaml. |
+| ev_uniprot | sources[uniprot_serratia_ureilytica_ureabc] and sources[yang2026] in data/records/otavite.yaml | supports | Verified UniProtKB:A0ABU0VEJ2 (A0ABU0VEJ2_9GAMM, Urease accessory protein UreG, ureG, ORF Q6237_00195, Serratia ureilytica UP001177872) and causal-edge alignment against yang2026 and uniprot_serratia_ureilytica_ureabc (#977). |
+
+## Limits And Additional Notes
+
+- Primary experimental source (yang2026) does not perform single-gene knockout or purified-enzyme assays for the grounded protein example; supports: partial and REPRESENTATIVE_EXAMPLE scope are explicitly preserved.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261109T191801Z-otavite-cycle12-stage3-remediation-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 12 Stage 3 post-remediation scientific review of cmmmech:otavite (Otavite)
+started_at: '2026-11-09T19:17:31Z'
+finished_at: '2026-11-09T19:18:01Z'
+reviewer:
+  identity: marcin (antigravity claude-opus-4-6)
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Post-remediation structured review of Cycle 12 Stage 3 record
+    state after resolving Issue #977, prior to independent subagent re-review.'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'Verified post-remediation state of cmmmech:otavite (Otavite) for Issue #977
+  (PR #976): Aligned causal_graphs[0].edges[0] description and evidence explanation
+  with the Serratia UreABC-UreG complex (#977). Confirmed exact parity between mechanisms[].protein_examples
+  and causal_graphs[].nodes[].protein_examples for UniProtKB:A0ABU0VEJ2 (A0ABU0VEJ2_9GAMM,
+  Urease accessory protein UreG, ureG, ORF Q6237_00195, Serratia ureilytica UP001177872)
+  and canonical history sidecar history/records/otavite/2026-11-09T191545Z-marcin-e68ddd.yaml.'
+source:
+  git_revision: f6fb0663d893c4fe03c82d3fb75fb3c12194252d
+  state: git_commit
+  inputs:
+  - path: data/records/otavite.yaml
+    sha256: 09e74facb8bc4ac9271814df7fdc9073a44762456be39dc0c25bb264f26de635
+    role: target
+  - path: history/records/otavite/2026-11-09T191545Z-marcin-e68ddd.yaml
+    sha256: 0923f57ff26f4592dde45a8703539a8c1eb03cda6eccd466125c3a501872cdd2
+    role: context
+scope:
+  description: Single-record scientific and structural review of data/records/otavite.yaml
+    after Cycle 12 Stage 3 remediation (#977).
+  selection: Remediated record data/records/otavite.yaml in Cycle 12 Stage 3 (#977).
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:otavite
+targets:
+- target_id: cmmmech:otavite
+  path: data/records/otavite.yaml
+  label: Otavite
+  record_class: CriticalMineralRecord
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/otavite.yaml
+    role: record
+checks:
+- check_id: cmmmech_validate
+  name: CMMMech schema and reference validation
+  status: passed
+  required: true
+  summary: uv run cmmmech validate --require-records passed (703 records, 0 failed).
+  target_ids:
+  - cmmmech:otavite
+  command: uv run cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev_record
+  - ev_uniprot
+- check_id: cmmmech_validate_history
+  name: CMMMech history sidecar validation
+  status: passed
+  required: true
+  summary: uv run cmmmech validate-history --base main passed with history/records/otavite/2026-11-09T191545Z-marcin-e68ddd.yaml.
+  target_ids:
+  - cmmmech:otavite
+  command: uv run cmmmech validate-history --base main
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev_record
+evidence:
+- evidence_id: ev_record
+  kind: record_content
+  reference: data/records/otavite.yaml
+  accessed_at: '2026-11-09T19:18:01Z'
+  support: supports
+  summary: Inspected data/records/otavite.yaml (sha256 09e74facb8bc4ac9271814df7fdc9073a44762456be39dc0c25bb264f26de635)
+    and history sidecar history/records/otavite/2026-11-09T191545Z-marcin-e68ddd.yaml.
+  snapshot_sha256: 09e74facb8bc4ac9271814df7fdc9073a44762456be39dc0c25bb264f26de635
+- evidence_id: ev_uniprot
+  kind: database
+  reference: sources[uniprot_serratia_ureilytica_ureabc] and sources[yang2026] in
+    data/records/otavite.yaml
+  accessed_at: '2026-11-09T19:18:01Z'
+  support: supports
+  summary: Verified UniProtKB:A0ABU0VEJ2 (A0ABU0VEJ2_9GAMM, Urease accessory protein
+    UreG, ureG, ORF Q6237_00195, Serratia ureilytica UP001177872) and causal-edge
+    alignment against yang2026 and uniprot_serratia_ureilytica_ureabc (#977).
+assessments:
+- assessment_id: assess_grounding
+  area: grounding
+  topic: UniProtKB protein_examples grounding, causal-graph node parity, and causal-edge
+    consistency
+  outcome: supported
+  summary: 'Aligned causal_graphs[0].edges[0] description and evidence explanation
+    with the Serratia UreABC-UreG complex (#977). Verified UniProtKB:A0ABU0VEJ2 (A0ABU0VEJ2_9GAMM,
+    Urease accessory protein UreG, ureG, ORF Q6237_00195, Serratia ureilytica UP001177872)
+    in both mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    with identical metadata and supports: partial qualification.'
+  target_ids:
+  - cmmmech:otavite
+  evidence_ids:
+  - ev_record
+  - ev_uniprot
+findings: []
+actions: []
+limitations:
+- 'Primary experimental source (yang2026) does not perform single-gene knockout or
+  purified-enzyme assays for the grounded protein example; supports: partial and REPRESENTATIVE_EXAMPLE
+  scope are explicitly preserved.'
+```
