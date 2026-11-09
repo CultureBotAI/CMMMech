@@ -1,125 +1,359 @@
 id: cmmmech:otavite
 name: Otavite
 material_kind: mineral
-description: Otavite is the cadmium carbonate mineral CdCO3 in the calcite group,
-  distinct from elemental cadmium, dissolved Cd ions, cadmium sulfides and
-  unspecified cadmium-bearing precipitates. The September 2026 IMA list gives
-  grandfathered status and original-description year 1906, not a unique approval
-  accession. The curated laboratory study tentatively assigns a cell-associated
-  synthetic precipitate to otavite; it does not establish a pure mineral product
-  or the origin of natural otavite. No cadmium criticality designation is inherited.
+description: Otavite is the cadmium carbonate mineral CdCO3 in the calcite group, distinct from elemental cadmium, dissolved Cd ions, cadmium sulfides and unspecified cadmium-bearing precipitates. The September 2026 IMA list gives grandfathered status and original-description year 1906, not a unique approval accession. The curated laboratory study tentatively assigns a cell-associated synthetic precipitate to otavite; it does not establish a pure mineral product or the origin of natural otavite. No cadmium criticality designation is inherited.
 sources:
 - id: ima_2026_09
-  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Otavite row,
-    PDF page 161; page 1 defines grandfathered status and original-description
-    years. Retained complete original rechecked.
+  title: IMA-CNMNC. The New IMA List of Minerals, September 2026. Otavite row, PDF page 161; page 1 defines grandfathered status and original-description years. Retained complete original rechecked.
   url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
   accessed_on: '2026-10-14'
 - id: handbook_otavite
-  title: Handbook of Mineralogy. Otavite, version 1 (2001-2005), complete
-    one-page species entry, crystal data, synthetic powder pattern and calcite
-    group assignment. Identity context, not a microbial experiment.
+  title: Handbook of Mineralogy. Otavite, version 1 (2001-2005), complete one-page species entry, crystal data, synthetic powder pattern and calcite group assignment. Identity context, not a microbial experiment.
   url: https://www.handbookofmineralogy.org/pdfs/otavite.pdf
   accessed_on: '2026-10-14'
 - id: yang2026
-  title: Yang, Q., Li, X., Cao, J., He, S., He, C., Tu, C., Zhou, K., Liang, X.
-    and Zhan, F. (2026). Urea-Mediated Biomineralization and Adsorption of
-    Heavy-Metal Ions in Solution by the Urease-Producing Bacteria C7-12.
-    Microorganisms 14(1), 171. Complete 17-page original, Figures 1-11,
-    Tables 1-2, and official two-page supplement with Table S1 and Figures S1-S5.
+  title: Yang, Q., Li, X., Cao, J., He, S., He, C., Tu, C., Zhou, K., Liang, X. and Zhan, F. (2026). Urea-Mediated Biomineralization and Adsorption of Heavy-Metal Ions in Solution by the Urease-Producing Bacteria C7-12. Microorganisms 14(1), 171. Complete 17-page original, Figures 1-11, Tables 1-2, and official two-page supplement with Table S1 and Figures S1-S5.
   url: https://doi.org/10.3390/microorganisms14010171
   accessed_on: '2026-10-14'
 - id: ncbi_serratia
-  title: NCBI Taxonomy 615. Serratia marcescens, species-rank entry. This
-    mapping does not identify or independently authenticate experimental strain C7-12.
+  title: NCBI Taxonomy 615. Serratia marcescens, species-rank entry. This mapping does not identify or independently authenticate experimental strain C7-12.
   url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=615&mode=Info
   accessed_on: '2026-10-14'
+- id: uniprot_serratia_ureilytica_ureabc
+  title: 'UniProtKB reference proteome UP001177872 (Serratia ureilytica, NCBITaxon:300181): Urease subunits alpha (ureC, UniProtKB:A0ABU0VDC7), beta (ureB, UniProtKB:A0ABU0VDC2), and gamma (ureA, UniProtKB:A0A9X9BY98).'
+  url: https://www.uniprot.org/uniprotkb?query=(proteome:UP001177872)+AND+(ureA+OR+ureB+OR+ureC)
+  accessed_on: '2026-11-09'
 mechanisms:
 - id: c7_12_tentative_otavite_precipitation
   name: Tentative otavite formation associated with a ureolytic bacterial culture
   process: biomineralization
+  description: Urease-producing strain C7-12 removed dissolved cadmium from laboratory broth and developed cell-associated particles whose XRD signal the authors considered most likely otavite. Urea consumption, increasing pH and operational cadmium fractions are consistent with carbonate precipitation occurring alongside adsorption. The phase assignment remains tentative, and neither microbial necessity nor a phase-specific recovery yield was established.
+  context: Yang2026 Sections 2.1-2.8 and 3.1 describe C7-12 isolated among urease-producing bacteria from maize rhizosphere soil in a lead-zinc mining area. The authors assigned Serratia marcescens from a 100% 16S sequence match and reported deposit GDMCC65568; the complete article and supplement supply no sequence accession, and the deposit is retained as author-reported. NCBITaxon:615 maps the species name, not the strain or deposit. LB contained 5 g/L yeast extract, 10 g/L peptone and 5 g/L NaCl. The initial screening used 100 mL broth with 30 g/L urea, 2% inoculum, 30 degrees C and 160 rpm for 48 hours. One-factor-at-a-time experiments then selected the separate Table 2 conditions of 1 mg/L initial Cd, 20 g/L urea, 2% inoculum, initial pH 6, 30 degrees C and 48 hours. Experiments were described as triplicated. These are supplied soluble-Cd laboratory cultures, not natural otavite dissolution or ore extraction. The main text does not identify the Cd stock salt or fully describe XRD sample
+    preparation; Section 2.8 identifies a Rigaku Ultima IV instrument. The separate soil-extract experiments are not the phase-specific basis of this mechanism.
   microbial: true
   organisms:
   - id: NCBITaxon:615
     label: Serratia marcescens
-  description: Urease-producing strain C7-12 removed dissolved cadmium from
-    laboratory broth and developed cell-associated particles whose XRD signal
-    the authors considered most likely otavite. Urea consumption, increasing pH
-    and operational cadmium fractions are consistent with carbonate precipitation
-    occurring alongside adsorption. The phase assignment remains tentative,
-    and neither microbial necessity nor a phase-specific recovery yield was established.
-  context: Yang2026 Sections 2.1-2.8 and 3.1 describe C7-12 isolated among
-    urease-producing bacteria from maize rhizosphere soil in a lead-zinc mining
-    area. The authors assigned Serratia marcescens from a 100% 16S sequence
-    match and reported deposit GDMCC65568; the complete article and supplement
-    supply no sequence accession, and the deposit is retained as author-reported.
-    NCBITaxon:615 maps the species name, not the strain or deposit. LB contained
-    5 g/L yeast extract, 10 g/L peptone and 5 g/L NaCl. The initial screening
-    used 100 mL broth with 30 g/L urea, 2% inoculum, 30 degrees C and 160 rpm
-    for 48 hours. One-factor-at-a-time experiments then selected the separate
-    Table 2 conditions of 1 mg/L initial Cd, 20 g/L urea, 2% inoculum,
-    initial pH 6, 30 degrees C and 48 hours. Experiments were described as
-    triplicated. These are supplied soluble-Cd laboratory cultures, not
-    natural otavite dissolution or ore extraction. The main text does not
-    identify the Cd stock salt or fully describe XRD sample preparation;
-    Section 2.8 identifies a Rigaku Ultima IV instrument. The separate
-    soil-extract experiments are not the phase-specific basis of this mechanism.
+  protein_examples:
+  - uniprot_accession: UniProtKB:A0ABU0VDC7
+    entry_name: A0ABU0VDC7_9GAMM
+    protein_name: Urease subunit alpha
+    gene_symbol: ureC
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:300181
+      label: Serratia ureilytica
+    reference_proteome_id: UP001177872
+    ec_numbers:
+    - EC:3.5.1.5
+    interpro_ids:
+    - InterPro:IPR006680
+    - InterPro:IPR011059
+    - InterPro:IPR032466
+    - InterPro:IPR011612
+    - InterPro:IPR017950
+    - InterPro:IPR005848
+    - InterPro:IPR017951
+    - InterPro:IPR029754
+    pfam_ids:
+    - Pfam:PF01979
+    - Pfam:PF00449
+    ncbifam_ids:
+    - NCBIfam:NF009686
+    - NCBIfam:NF009834
+    - NCBIfam:TIGR01792
+    go_terms:
+    - id: GO:0005737
+      label: cytoplasm
+    - id: GO:0016151
+      label: nickel cation binding
+    - id: GO:0009039
+      label: urease activity
+    - id: GO:0043419
+      label: urea catabolic process
+    functional_role: Catalytic alpha subunit (UreC; EC 3.5.1.5) of the nickel-dependent Serratia urease complex hydrolyzing urea into ammonia and carbamate/carbonate.
+    annotation_note: Grounded to congeneric reference-proteome entry UP001177872 from urease-positive Serratia ureilytica (NCBITaxon:300181), representing the urease-producing rhizosphere isolate C7-12 assigned by Yang et al. (2026) to Serratia marcescens (NCBITaxon:615; GDMCC65568 without a published 16S or genome accession, whereas reference Serratia marcescens proteomes in UniProtKB lack canonical ureABC operons).
+    evidence:
+    - source_ref: yang2026
+      supports: partial
+      explanation: Yang et al. (2026) isolated urease-producing strain C7-12 (assigned to Serratia marcescens) in LB broth with 20-30 g/L urea and tentatively assigned two weak 48-h XRD reflections at 23.49 and 30.28 degrees (ICSD 01-072-1939) to otavite (CdCO3, Figure 7B) alongside 84.61 +/- 5.81% supernatant Cd removal at 1 mg/L initial Cd and 20 g/L urea (Table 2); ureC was not sequenced, mutated, or inhibited.
+    - source_ref: uniprot_serratia_ureilytica_ureabc
+      supports: partial
+      explanation: UniProtKB:A0ABU0VDC7 (A0ABU0VDC7_9GAMM) in Serratia ureilytica reference proteome UP001177872 (NCBITaxon:300181) provides a congeneric Serratia reference-proteome representative for Urease subunit alpha (ureC; EC 3.5.1.5).
+  - uniprot_accession: UniProtKB:A0ABU0VDC2
+    entry_name: A0ABU0VDC2_9GAMM
+    protein_name: Urease subunit beta
+    gene_symbol: ureB
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:300181
+      label: Serratia ureilytica
+    reference_proteome_id: UP001177872
+    ec_numbers:
+    - EC:3.5.1.5
+    interpro_ids:
+    - InterPro:IPR002019
+    - InterPro:IPR036461
+    - InterPro:IPR050069
+    pfam_ids:
+    - Pfam:PF00699
+    ncbifam_ids:
+    - NCBIfam:NF009682
+    - NCBIfam:TIGR00192
+    go_terms:
+    - id: GO:0035550
+      label: urease complex
+    - id: GO:0009039
+      label: urease activity
+    - id: GO:0043419
+      label: urea catabolic process
+    functional_role: Beta subunit (UreB; EC 3.5.1.5) of the heterotrimeric Serratia nickel-dependent urease complex.
+    annotation_note: Grounded to congeneric reference-proteome entry UP001177872 from urease-positive Serratia ureilytica (NCBITaxon:300181), representing urease-producing isolate C7-12 assigned to Serratia marcescens (NCBITaxon:615) in Yang et al. (2026).
+    evidence:
+    - source_ref: yang2026
+      supports: partial
+      explanation: Yang et al. (2026) correlated urea dose (0-30 g/L), culture pH elevation, and operational extracellular Cd fractions with tentative otavite XRD reflections at 23.49 and 30.28 degrees (Figures 2-7, Table 2), without ureB gene perturbation or matched abiotic/killed-cell controls.
+    - source_ref: uniprot_serratia_ureilytica_ureabc
+      supports: partial
+      explanation: UniProtKB:A0ABU0VDC2 (A0ABU0VDC2_9GAMM) in Serratia ureilytica reference proteome UP001177872 (NCBITaxon:300181) provides a congeneric Serratia reference-proteome representative for Urease subunit beta (ureB; EC 3.5.1.5).
+  - uniprot_accession: UniProtKB:A0A9X9BY98
+    entry_name: A0A9X9BY98_9GAMM
+    protein_name: Urease subunit gamma
+    gene_symbol: ureA
+    entry_status: TREMBL
+    target_organism:
+      id: NCBITaxon:300181
+      label: Serratia ureilytica
+    reference_proteome_id: UP001177872
+    ec_numbers:
+    - EC:3.5.1.5
+    interpro_ids:
+    - InterPro:IPR012010
+    - InterPro:IPR002026
+    - InterPro:IPR036463
+    - InterPro:IPR050069
+    pfam_ids:
+    - Pfam:PF00547
+    ncbifam_ids:
+    - NCBIfam:NF009712
+    - NCBIfam:TIGR00193
+    go_terms:
+    - id: GO:0005737
+      label: cytoplasm
+    - id: GO:0016151
+      label: nickel cation binding
+    - id: GO:0009039
+      label: urease activity
+    - id: GO:0043419
+      label: urea catabolic process
+    functional_role: Gamma subunit (UreA; EC 3.5.1.5) of the heterotrimeric Serratia nickel-dependent urease complex.
+    annotation_note: Grounded to congeneric reference-proteome entry UP001177872 from urease-positive Serratia ureilytica (NCBITaxon:300181), representing urease-producing isolate C7-12 assigned to Serratia marcescens (NCBITaxon:615) in Yang et al. (2026).
+    evidence:
+    - source_ref: yang2026
+      supports: partial
+      explanation: Yang et al. (2026) correlated urea dose (0-30 g/L), culture pH elevation, and operational extracellular Cd fractions with tentative otavite XRD reflections at 23.49 and 30.28 degrees (Figures 2-7, Table 2), without ureA gene perturbation or matched abiotic/killed-cell controls.
+    - source_ref: uniprot_serratia_ureilytica_ureabc
+      supports: partial
+      explanation: UniProtKB:A0A9X9BY98 (A0A9X9BY98_9GAMM) in Serratia ureilytica reference proteome UP001177872 (NCBITaxon:300181) provides a congeneric Serratia reference-proteome representative for Urease subunit gamma (ureA; EC 3.5.1.5).
   evidence:
   - source_ref: yang2026
     supports: partial
-    explanation: Section 3.3.4 and Figure 7B compare C7-12 before and after
-      Cd treatment at 48 hours. The authors assign two weak reflections at
-      23.49 and 30.28 degrees to CdCO3 using a reference pattern they label
-      ICSD 01-072-1939, and describe the surface substance as most likely
-      otavite. The displayed signal occurs on a substantial bacterial
-      background. No phase fraction, refined structure, isolated pure product
-      or raw diffraction dataset is supplied. Figure 6 shows particles and
-      C, N, O and Cd by SEM-EDS, while Figure 7A shows FTIR changes; these
-      observations alone do not distinguish a crystalline mineral species.
-      The record retains the source's provisional assignment rather than
-      treating CdCO3 composition as conclusive identification.
+    explanation: Section 3.3.4 and Figure 7B compare C7-12 before and after Cd treatment at 48 hours. The authors assign two weak reflections at 23.49 and 30.28 degrees to CdCO3 using a reference pattern they label ICSD 01-072-1939, and describe the surface substance as most likely otavite. The displayed signal occurs on a substantial bacterial background. No phase fraction, refined structure, isolated pure product or raw diffraction dataset is supplied. Figure 6 shows particles and C, N, O and Cd by SEM-EDS, while Figure 7A shows FTIR changes; these observations alone do not distinguish a crystalline mineral species. The record retains the source's provisional assignment rather than treating CdCO3 composition as conclusive identification.
   - source_ref: yang2026
     supports: support
-    explanation: Sections 2.5-2.6 and 3.2, Figures 2-3 and Table 2 support
-      dissolved-Cd removal under the stated culture conditions. Table 2
-      reports 84.61 plus or minus 5.81 percent removal for the optimized
-      single-Cd treatment. The denominator is initial solution Cd, compared
-      with Cd remaining in the centrifuged supernatant measured by flame
-      atomic absorption, not a mass of purified otavite or recovered cadmium.
-      Other one-factor screening percentages refer to different conditions
-      and are not substituted for this table result. No field or industrial
-      deployment is demonstrated.
+    explanation: Sections 2.5-2.6 and 3.2, Figures 2-3 and Table 2 support dissolved-Cd removal under the stated culture conditions. Table 2 reports 84.61 plus or minus 5.81 percent removal for the optimized single-Cd treatment. The denominator is initial solution Cd, compared with Cd remaining in the centrifuged supernatant measured by flame atomic absorption, not a mass of purified otavite or recovered cadmium. Other one-factor screening percentages refer to different conditions and are not substituted for this table result. No field or industrial deployment is demonstrated.
   - source_ref: yang2026
     supports: partial
-    explanation: Figures 2-5 compare Cd concentrations and urea doses,
-      including zero-urea treatment with residual Cd removal; Figures 6-7
-      include cells without added Cd. The inspected complete main and
-      supplement do not describe matched uninoculated, pH-matched chemical,
-      killed-cell or urease-inhibited precipitation controls. Urea-related
-      trends and correlations therefore do not isolate a uniquely biological
-      contribution or demonstrate that viable cells are required at the
-      moment of precipitation. Section 4.2 itself calls for bacterial
-      survival measurements. Enzyme-specific causation and a measured
-      intracellular transport pathway are not established.
+    explanation: Figures 2-5 compare Cd concentrations and urea doses, including zero-urea treatment with residual Cd removal; Figures 6-7 include cells without added Cd. The inspected complete main and supplement do not describe matched uninoculated, pH-matched chemical, killed-cell or urease-inhibited precipitation controls. Urea-related trends and correlations therefore do not isolate a uniquely biological contribution or demonstrate that viable cells are required at the moment of precipitation. Section 4.2 itself calls for bacterial survival measurements. Enzyme-specific causation and a measured intracellular transport pathway are not established.
   - source_ref: yang2026
     supports: partial
-    explanation: Section 2.7, Figure 4 and supplementary Figure S2 define
-      operational fractions from supernatant, flask-wall wash, EDTA-labelled
-      surface extraction and digested pellet. Extracellular precipitation is
-      calculated by subtraction from total Cd; it is not a direct
-      otavite-specific measurement. Section 4.2 acknowledges nonselective
-      extraction and possible speciation changes. These fractions do not
-      establish intracellular localization or quantify how much removed Cd
-      entered otavite. Sections 3.4-3.5 and Figures 8-11 concern distinct
-      soil-solution arms with other source-assigned phases and possible
-      inherited microminerals; their removal rates are not otavite yields.
-      Although Section 3.3.4 invokes a solubility product to suggest
-      environmental stability, Section 4.3 identifies long-term stability
-      testing as future work, so durability is not treated as measured here.
+    explanation: Section 2.7, Figure 4 and supplementary Figure S2 define operational fractions from supernatant, flask-wall wash, EDTA-labelled surface extraction and digested pellet. Extracellular precipitation is calculated by subtraction from total Cd; it is not a direct otavite-specific measurement. Section 4.2 acknowledges nonselective extraction and possible speciation changes. These fractions do not establish intracellular localization or quantify how much removed Cd entered otavite. Sections 3.4-3.5 and Figures 8-11 concern distinct soil-solution arms with other source-assigned phases and possible inherited microminerals; their removal rates are not otavite yields. Although Section 3.3.4 invokes a solubility product to suggest environmental stability, Section 4.3 identifies long-term stability testing as future work, so durability is not treated as measured here.
+causal_graphs:
+- id: c7_12_tentative_otavite_precipitation_graph
+  name: Ureolytic strain C7-12 urea hydrolysis and tentative cell-associated otavite (CdCO3) precipitation
+  description: Causal pathway linking representative Serratia UreABC urease subunits (UniProtKB:A0ABU0VDC7, UniProtKB:A0ABU0VDC2, UniProtKB:A0A9X9BY98) to urea hydrolysis, pH elevation, and tentative powder-XRD assignment of cell-associated otavite (CdCO3; two weak reflections at 23.49 and 30.28 degrees on a bacterial background in Figure 7B) alongside biosorption during 48-h cultivation of strain C7-12 (author-assigned to Serratia marcescens) in LB broth with 20 g/L urea and 1 mg/L initial Cd (Yang et al., 2026).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: c7_12_tentative_otavite_precipitation
+  nodes:
+  - id: serratia_ureabc_complex
+    label: Serratia UreABC urease complex (ureC, ureB, ureA)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: ureABC
+    description: Heterotrimeric nickel-dependent urease complex (EC 3.5.1.5; UreC UniProtKB:A0ABU0VDC7, UreB UniProtKB:A0ABU0VDC2, UreA UniProtKB:A0A9X9BY98 from congeneric Serratia ureilytica reference proteome UP001177872) representing urease activity of maize-rhizosphere isolate C7-12 (author-assigned to Serratia marcescens, GDMCC65568).
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:A0ABU0VDC7
+      entry_name: A0ABU0VDC7_9GAMM
+      protein_name: Urease subunit alpha
+      gene_symbol: ureC
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:300181
+        label: Serratia ureilytica
+      reference_proteome_id: UP001177872
+      ec_numbers:
+      - EC:3.5.1.5
+      interpro_ids:
+      - InterPro:IPR006680
+      - InterPro:IPR011059
+      - InterPro:IPR032466
+      - InterPro:IPR011612
+      - InterPro:IPR017950
+      - InterPro:IPR005848
+      - InterPro:IPR017951
+      - InterPro:IPR029754
+      pfam_ids:
+      - Pfam:PF01979
+      - Pfam:PF00449
+      ncbifam_ids:
+      - NCBIfam:NF009686
+      - NCBIfam:NF009834
+      - NCBIfam:TIGR01792
+      go_terms:
+      - id: GO:0005737
+        label: cytoplasm
+      - id: GO:0016151
+        label: nickel cation binding
+      - id: GO:0009039
+        label: urease activity
+      - id: GO:0043419
+        label: urea catabolic process
+      functional_role: Catalytic alpha subunit (UreC; EC 3.5.1.5) of the nickel-dependent Serratia urease complex hydrolyzing urea into ammonia and carbamate/carbonate.
+      annotation_note: Grounded to congeneric reference-proteome entry UP001177872 from urease-positive Serratia ureilytica (NCBITaxon:300181), representing the urease-producing rhizosphere isolate C7-12 assigned by Yang et al. (2026) to Serratia marcescens (NCBITaxon:615; GDMCC65568 without a published 16S or genome accession, whereas reference Serratia marcescens proteomes in UniProtKB lack canonical ureABC operons).
+      evidence:
+      - source_ref: yang2026
+        supports: partial
+        explanation: Yang et al. (2026) isolated urease-producing strain C7-12 (assigned to Serratia marcescens) in LB broth with 20-30 g/L urea and tentatively assigned two weak 48-h XRD reflections at 23.49 and 30.28 degrees (ICSD 01-072-1939) to otavite (CdCO3, Figure 7B) alongside 84.61 +/- 5.81% supernatant Cd removal at 1 mg/L initial Cd and 20 g/L urea (Table 2); ureC was not sequenced, mutated, or inhibited.
+      - source_ref: uniprot_serratia_ureilytica_ureabc
+        supports: partial
+        explanation: UniProtKB:A0ABU0VDC7 (A0ABU0VDC7_9GAMM) in Serratia ureilytica reference proteome UP001177872 (NCBITaxon:300181) provides a congeneric Serratia reference-proteome representative for Urease subunit alpha (ureC; EC 3.5.1.5).
+    - uniprot_accession: UniProtKB:A0ABU0VDC2
+      entry_name: A0ABU0VDC2_9GAMM
+      protein_name: Urease subunit beta
+      gene_symbol: ureB
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:300181
+        label: Serratia ureilytica
+      reference_proteome_id: UP001177872
+      ec_numbers:
+      - EC:3.5.1.5
+      interpro_ids:
+      - InterPro:IPR002019
+      - InterPro:IPR036461
+      - InterPro:IPR050069
+      pfam_ids:
+      - Pfam:PF00699
+      ncbifam_ids:
+      - NCBIfam:NF009682
+      - NCBIfam:TIGR00192
+      go_terms:
+      - id: GO:0035550
+        label: urease complex
+      - id: GO:0009039
+        label: urease activity
+      - id: GO:0043419
+        label: urea catabolic process
+      functional_role: Beta subunit (UreB; EC 3.5.1.5) of the heterotrimeric Serratia nickel-dependent urease complex.
+      annotation_note: Grounded to congeneric reference-proteome entry UP001177872 from urease-positive Serratia ureilytica (NCBITaxon:300181), representing urease-producing isolate C7-12 assigned to Serratia marcescens (NCBITaxon:615) in Yang et al. (2026).
+      evidence:
+      - source_ref: yang2026
+        supports: partial
+        explanation: Yang et al. (2026) correlated urea dose (0-30 g/L), culture pH elevation, and operational extracellular Cd fractions with tentative otavite XRD reflections at 23.49 and 30.28 degrees (Figures 2-7, Table 2), without ureB gene perturbation or matched abiotic/killed-cell controls.
+      - source_ref: uniprot_serratia_ureilytica_ureabc
+        supports: partial
+        explanation: UniProtKB:A0ABU0VDC2 (A0ABU0VDC2_9GAMM) in Serratia ureilytica reference proteome UP001177872 (NCBITaxon:300181) provides a congeneric Serratia reference-proteome representative for Urease subunit beta (ureB; EC 3.5.1.5).
+    - uniprot_accession: UniProtKB:A0A9X9BY98
+      entry_name: A0A9X9BY98_9GAMM
+      protein_name: Urease subunit gamma
+      gene_symbol: ureA
+      entry_status: TREMBL
+      target_organism:
+        id: NCBITaxon:300181
+        label: Serratia ureilytica
+      reference_proteome_id: UP001177872
+      ec_numbers:
+      - EC:3.5.1.5
+      interpro_ids:
+      - InterPro:IPR012010
+      - InterPro:IPR002026
+      - InterPro:IPR036463
+      - InterPro:IPR050069
+      pfam_ids:
+      - Pfam:PF00547
+      ncbifam_ids:
+      - NCBIfam:NF009712
+      - NCBIfam:TIGR00193
+      go_terms:
+      - id: GO:0005737
+        label: cytoplasm
+      - id: GO:0016151
+        label: nickel cation binding
+      - id: GO:0009039
+        label: urease activity
+      - id: GO:0043419
+        label: urea catabolic process
+      functional_role: Gamma subunit (UreA; EC 3.5.1.5) of the heterotrimeric Serratia nickel-dependent urease complex.
+      annotation_note: Grounded to congeneric reference-proteome entry UP001177872 from urease-positive Serratia ureilytica (NCBITaxon:300181), representing urease-producing isolate C7-12 assigned to Serratia marcescens (NCBITaxon:615) in Yang et al. (2026).
+      evidence:
+      - source_ref: yang2026
+        supports: partial
+        explanation: Yang et al. (2026) correlated urea dose (0-30 g/L), culture pH elevation, and operational extracellular Cd fractions with tentative otavite XRD reflections at 23.49 and 30.28 degrees (Figures 2-7, Table 2), without ureA gene perturbation or matched abiotic/killed-cell controls.
+      - source_ref: uniprot_serratia_ureilytica_ureabc
+        supports: partial
+        explanation: UniProtKB:A0A9X9BY98 (A0A9X9BY98_9GAMM) in Serratia ureilytica reference proteome UP001177872 (NCBITaxon:300181) provides a congeneric Serratia reference-proteome representative for Urease subunit gamma (ureA; EC 3.5.1.5).
+  - id: c7_12_urea_hydrolysis_alkalinity
+    label: Urea consumption, ammonium release, and pH elevation in C7-12 LB + 20 g/L urea broth
+    node_type: CHEMICAL_ENTITY
+    description: Ammonium and carbonate alkalinity generated during 48-h incubation (30 C, 160 rpm, initial pH 6, 2% inoculum) of strain C7-12 in 100 mL LB broth supplemented with 20 g/L urea (or 0-30 g/L urea in screening arms).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: dissolved_cadmium_in_lb_broth
+    label: Dissolved Cd(II) in LB broth (1 mg/L optimized Table 2 condition; 84.61 +/- 5.81% supernatant removal at 48 h)
+    node_type: CHEMICAL_ENTITY
+    description: 'Soluble Cd(II) supplied in 100 mL LB broth (optimized single-Cd Table 2 condition: 1 mg/L initial Cd, 20 g/L urea, initial pH 6, 30 C, 48 h, showing 84.61 +/- 5.81% flame-AAS supernatant depletion alongside residual removal in zero-urea controls).'
+    protein_grounding_status: NOT_APPLICABLE
+  - id: cell_associated_tentative_otavite_particles
+    label: Cell-associated Cd-bearing particles with tentative otavite (CdCO3) XRD reflections at 23.49 and 30.28 degrees
+    node_type: MATERIAL_OR_PHASE
+    description: Cell-surface particles formed after 48 h of C7-12 Cd treatment showing SEM-EDS C/N/O/Cd signals (Figure 6) and two weak powder-XRD reflections at 23.49 and 30.28 degrees on a bacterial background tentatively assigned by the authors to otavite (CdCO3, ICSD 01-072-1939; Figure 7B), occurring alongside non-mineral biosorption without a refined phase fraction.
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: serratia_ureabc_complex
+    target: c7_12_urea_hydrolysis_alkalinity
+    predicate: catalyzes
+    relationship: urea hydrolysis and culture pH elevation over 48 h at 30 C
+    description: Urease activity in strain C7-12 hydrolyzes supplied urea (20-30 g/L in LB broth), consuming urea and elevating culture pH.
+    evidence:
+    - source_ref: yang2026
+      supports: partial
+      explanation: Sections 3.1-3.3 and Figures 2-5 of Yang et al. (2026) track urea consumption and pH changes in C7-12 cultures across 0-30 g/L urea doses; support is partial because no 16S/genome accession was deposited and ureABC genes or urease-inhibitor controls were not tested.
+  - source: c7_12_urea_hydrolysis_alkalinity
+    target: cell_associated_tentative_otavite_particles
+    predicate: drives
+    relationship: carbonate alkalinization promoting tentative cell-surface CdCO3 precipitation alongside biosorption
+    description: Urea-mediated pH rise and carbonate generation increase the operational extracellular Cd precipitation fraction and are associated with two weak 48-h XRD reflections tentatively assigned to otavite (CdCO3).
+    evidence:
+    - source_ref: yang2026
+      supports: partial
+      explanation: Section 3.3.4 and Figure 7B assign two weak reflections at 23.49 and 30.28 degrees to CdCO3 (ICSD 01-072-1939) as most likely otavite, and Figure 4/S2 show urea-dependent shifts in operational Cd fractions; support is partial because the XRD assignment is tentative on a high bacterial background and matched abiotic, pH-matched, or killed-cell controls were not reported.
+  - source: dissolved_cadmium_in_lb_broth
+    target: cell_associated_tentative_otavite_particles
+    predicate: incorporates_into
+    relationship: partitioning of removed dissolved Cd into cell-associated tentative otavite and biosorbed fractions
+    description: Dissolved Cd(II) depleted from C7-12 culture supernatant (84.61 +/- 5.81% at 1 mg/L initial Cd and 20 g/L urea in Table 2) partitions into cell-associated Cd-bearing particles (tentatively assigned to otavite in Figure 7B) as well as EDTA-extractable surface and residual fractions.
+    evidence:
+    - source_ref: yang2026
+      supports: partial
+      explanation: Table 2, Figures 2-4, and Figures 6-7 document 84.61 +/- 5.81% supernatant Cd removal, operational fractionation (supernatant, flask-wall wash, EDTA wash, digested pellet, and subtraction-derived extracellular precipitate), SEM-EDS Cd particles, and tentative CdCO3 XRD peaks; residual Cd removal also occurred at zero urea and phase-specific otavite yield was not quantified.
 curation_history:
 - timestamp: '2026-10-14T20:49:08Z'
   curator: codex (GPT-6; codex)
   action: CREATE
   summary: Created a distinct otavite mineral owner from complete Yang2026 primary and official SI, preserving tentative phase assignment, culture and strain boundaries, unmatched causal controls and solution-removal denominators.
+- timestamp: '2026-11-09T16:18:13Z'
+  curator: marcin
+  action: edit
+  summary: Add c7_12_tentative_otavite_precipitation_graph causal graph and ground c7_12_tentative_otavite_precipitation to congeneric Serratia ureilytica reference-proteome UreABC subunits (UniProtKB:A0ABU0VDC7, UniProtKB:A0ABU0VDC2, UniProtKB:A0A9X9BY98)
 history_refs:
 - history/records/otavite/2026-10-14T204913Z-codex-40f49f.yaml
+- history/records/otavite/2026-11-09T161813Z-marcin-74abd9.yaml

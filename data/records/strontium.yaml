@@ -26,6 +26,10 @@ sources:
   title: DDBJ/GenBank LC034238.2 - Bacillus sp. TK2d partial 16S ribosomal RNA gene, 1463 bp; strain TK2d, marine sediment, Japan. Links taxon 1630002 and Horiike et al. 2017.
   url: https://www.ncbi.nlm.nih.gov/nuccore/LC034238.2
   accessed_on: '2026-10-11'
+- id: uniprot_bacillus_subtilis_ureabc
+  title: 'UniProtKB reviewed Swiss-Prot reference proteome UP000001570 (Bacillus subtilis subsp. subtilis str. 168, NCBITaxon:224308): Urease subunits alpha (ureC, UniProtKB:P77837), beta (ureB, UniProtKB:P71035), and gamma (ureA, UniProtKB:P75030).'
+  url: https://www.uniprot.org/uniprotkb?query=(proteome:UP000001570)+AND+(reviewed:true)+AND+(ureA+OR+ureB+OR+ureC)
+  accessed_on: '2026-11-09'
 criticality:
 - jurisdiction: European Union
   list_name: Critical raw materials, Regulation (EU) 2024/1252, Annex II, Section 1
@@ -43,6 +47,127 @@ mechanisms:
   organisms:
   - id: NCBITaxon:1630002
     label: Bacillus sp. TK2d
+  protein_examples:
+  - uniprot_accession: UniProtKB:P77837
+    entry_name: URE1_BACSU
+    protein_name: Urease subunit alpha
+    gene_symbol: ureC
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:224308
+      label: Bacillus subtilis subsp. subtilis str. 168
+    reference_proteome_id: UP000001570
+    ec_numbers:
+    - EC:3.5.1.5
+    interpro_ids:
+    - InterPro:IPR006680
+    - InterPro:IPR011059
+    - InterPro:IPR032466
+    - InterPro:IPR011612
+    - InterPro:IPR017950
+    - InterPro:IPR005848
+    - InterPro:IPR017951
+    - InterPro:IPR029754
+    pfam_ids:
+    - Pfam:PF01979
+    - Pfam:PF00449
+    ncbifam_ids:
+    - NCBIfam:NF009685
+    - NCBIfam:NF009686
+    - NCBIfam:TIGR01792
+    go_terms:
+    - id: GO:0005737
+      label: cytoplasm
+    - id: GO:0016151
+      label: nickel cation binding
+    - id: GO:0009039
+      label: urease activity
+    - id: GO:0043419
+      label: urea catabolic process
+    functional_role: Catalytic alpha subunit (UreC; EC 3.5.1.5) of the nickel-dependent Bacillus urease complex hydrolyzing urea into ammonia and carbamate/carbonate.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001570 from type species Bacillus subtilis subsp. subtilis str. 168 (NCBITaxon:224308), representing congeneric halophilic marine-sediment isolate Bacillus sp. TK2d (NCBITaxon:1630002; represented in GenBank only by partial 16S rRNA sequence LC034238.2 with no proteome in UniProtKB) in Horiike et al. (2017).
+    evidence:
+    - source_ref: horiike_2017
+      supports: partial
+      explanation: Horiike et al. (2017) isolated urease-producing halophilic Bacillus sp. TK2d in 10% marine broth 2216 (3.74 g/L) with 3% NaCl, 20 g/L urea, and 1.0 mM SrCl2, observing ammonium accumulation and soluble Sr decline from 1.0 mM to 0.13 mM at day 2 and <1.0e-7 mol/L after day 4 (Figures 1-2); ureC was not sequenced, mutated, or inhibited, and other urease-positive isolates did not remove Sr effectively.
+    - source_ref: uniprot_bacillus_subtilis_ureabc
+      supports: partial
+      explanation: Reviewed Swiss-Prot entry UniProtKB:P77837 (URE1_BACSU) in Bacillus subtilis str. 168 reference proteome UP000001570 (NCBITaxon:224308) provides a congeneric reference-proteome representative for Urease subunit alpha (ureC; EC 3.5.1.5) in genus Bacillus.
+  - uniprot_accession: UniProtKB:P71035
+    entry_name: URE2_BACSU
+    protein_name: Urease subunit beta
+    gene_symbol: ureB
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:224308
+      label: Bacillus subtilis subsp. subtilis str. 168
+    reference_proteome_id: UP000001570
+    ec_numbers:
+    - EC:3.5.1.5
+    interpro_ids:
+    - InterPro:IPR002019
+    - InterPro:IPR036461
+    - InterPro:IPR050069
+    pfam_ids:
+    - Pfam:PF00699
+    ncbifam_ids:
+    - NCBIfam:NF009682
+    - NCBIfam:TIGR00192
+    go_terms:
+    - id: GO:0035550
+      label: urease complex
+    - id: GO:0009039
+      label: urease activity
+    - id: GO:0043419
+      label: urea catabolic process
+    functional_role: Beta subunit (UreB; EC 3.5.1.5) of the heterotrimeric Bacillus nickel-dependent urease complex.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001570 from Bacillus subtilis subsp. subtilis str. 168 (NCBITaxon:224308), representing congeneric isolate Bacillus sp. TK2d (NCBITaxon:1630002) in Horiike et al. (2017).
+    evidence:
+    - source_ref: horiike_2017
+      supports: partial
+      explanation: Horiike et al. (2017) documented ammonium accumulation from 20 g/L urea and Sr incorporation into biogenic carbonate precipitates (52% Day 5 and 87% Day 10 SrCO3-like XANES fractions in Table 1) in Bacillus sp. TK2d cultures at 3% NaCl, without ureB perturbation or urease-inhibitor controls.
+    - source_ref: uniprot_bacillus_subtilis_ureabc
+      supports: partial
+      explanation: Reviewed Swiss-Prot entry UniProtKB:P71035 (URE2_BACSU) in Bacillus subtilis str. 168 reference proteome UP000001570 (NCBITaxon:224308) provides a congeneric reference-proteome representative for Urease subunit beta (ureB; EC 3.5.1.5) in genus Bacillus.
+  - uniprot_accession: UniProtKB:P75030
+    entry_name: URE3_BACSU
+    protein_name: Urease subunit gamma
+    gene_symbol: ureA
+    entry_status: SWISS_PROT
+    target_organism:
+      id: NCBITaxon:224308
+      label: Bacillus subtilis subsp. subtilis str. 168
+    reference_proteome_id: UP000001570
+    ec_numbers:
+    - EC:3.5.1.5
+    interpro_ids:
+    - InterPro:IPR012010
+    - InterPro:IPR002026
+    - InterPro:IPR036463
+    - InterPro:IPR050069
+    pfam_ids:
+    - Pfam:PF00547
+    ncbifam_ids:
+    - NCBIfam:NF009712
+    - NCBIfam:TIGR00193
+    go_terms:
+    - id: GO:0005737
+      label: cytoplasm
+    - id: GO:0016151
+      label: nickel cation binding
+    - id: GO:0009039
+      label: urease activity
+    - id: GO:0043419
+      label: urea catabolic process
+    functional_role: Gamma subunit (UreA; EC 3.5.1.5) of the heterotrimeric Bacillus nickel-dependent urease complex.
+    annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001570 from Bacillus subtilis subsp. subtilis str. 168 (NCBITaxon:224308), representing congeneric isolate Bacillus sp. TK2d (NCBITaxon:1630002) in Horiike et al. (2017).
+    evidence:
+    - source_ref: horiike_2017
+      supports: partial
+      explanation: Horiike et al. (2017) documented ammonium accumulation from 20 g/L urea and Sr incorporation into biogenic carbonate precipitates (52% Day 5 and 87% Day 10 SrCO3-like XANES fractions in Table 1) in Bacillus sp. TK2d cultures at 3% NaCl, without ureA perturbation or urease-inhibitor controls.
+    - source_ref: uniprot_bacillus_subtilis_ureabc
+      supports: partial
+      explanation: Reviewed Swiss-Prot entry UniProtKB:P75030 (URE3_BACSU) in Bacillus subtilis str. 168 reference proteome UP000001570 (NCBITaxon:224308) provides a congeneric reference-proteome representative for Urease subunit gamma (ureA; EC 3.5.1.5) in genus Bacillus.
   evidence:
   - source_ref: horiike_2017
     supports: support
@@ -56,6 +181,183 @@ mechanisms:
   - source_ref: horiike_2017
     supports: partial
     explanation: Figure 1b shows a modest Mg concentration change although the Results describe no decrease; the defensible comparison is much stronger depletion of Sr and Ca, not exact Mg exclusion from all phases. EDS nondetection in selected carbonate material has an approximately 0.1% weight/weight detection limit and does not establish zero Mg throughout the precipitate. Long-term leaching stability, isolated-metal yield and deployment are untested in this study. The linked supplement was not acquired after bounded PMC, publisher and Europe PMC attempts; claims here rely on the inspected main text, Table 1 and main Figures 1-6, not an independent reassessment of supplementary micrographs or chemical-control curves.
+causal_graphs:
+- id: tk2d_sr_biomineralization_graph
+  name: Bacillus sp. TK2d ureolytic carbonate alkalinization and soluble strontium incorporation into mixed carbonate precipitates
+  description: Causal pathway linking representative Bacillus UreABC urease subunits (UniProtKB:P77837, UniProtKB:P71035, UniProtKB:P75030) to urea hydrolysis and ammonium/carbonate generation in Bacillus sp. TK2d cultures (3.74 g/L marine broth 2216, 30 g/L NaCl, 20 g/L urea, 1.0 mM SrCl2, 30 C, 120 rpm) and soluble Sr depletion (to 0.13 mM at day 2 and <1.0e-7 mol/L after day 4 at 0.3-3% NaCl) into extracellular aragonite-like Ca/Sr carbonate precipitates with two-standard Sr K-edge XANES fits of 52% SrCO3-like (day 5) and 87% SrCO3-like (day 10) coordination alongside residual SrCl2-like fractions (Horiike et al., 2017).
+  scope: REPRESENTATIVE_EXAMPLE
+  mechanism_ref: tk2d_sr_biomineralization
+  nodes:
+  - id: bacillus_ureabc_complex
+    label: Bacillus UreABC urease complex (ureC, ureB, ureA)
+    node_type: GENE_OR_PROTEIN
+    gene_symbol: ureABC
+    description: Heterotrimeric nickel-dependent urease complex (EC 3.5.1.5; reviewed Swiss-Prot UreC UniProtKB:P77837, UreB UniProtKB:P71035, UreA UniProtKB:P75030 from congeneric Bacillus subtilis str. 168 reference proteome UP000001570) representing ureolytic activity of halophilic marine-sediment isolate Bacillus sp. TK2d (NCBITaxon:1630002).
+    protein_grounding_status: GROUNDED
+    protein_examples:
+    - uniprot_accession: UniProtKB:P77837
+      entry_name: URE1_BACSU
+      protein_name: Urease subunit alpha
+      gene_symbol: ureC
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:224308
+        label: Bacillus subtilis subsp. subtilis str. 168
+      reference_proteome_id: UP000001570
+      ec_numbers:
+      - EC:3.5.1.5
+      interpro_ids:
+      - InterPro:IPR006680
+      - InterPro:IPR011059
+      - InterPro:IPR032466
+      - InterPro:IPR011612
+      - InterPro:IPR017950
+      - InterPro:IPR005848
+      - InterPro:IPR017951
+      - InterPro:IPR029754
+      pfam_ids:
+      - Pfam:PF01979
+      - Pfam:PF00449
+      ncbifam_ids:
+      - NCBIfam:NF009685
+      - NCBIfam:NF009686
+      - NCBIfam:TIGR01792
+      go_terms:
+      - id: GO:0005737
+        label: cytoplasm
+      - id: GO:0016151
+        label: nickel cation binding
+      - id: GO:0009039
+        label: urease activity
+      - id: GO:0043419
+        label: urea catabolic process
+      functional_role: Catalytic alpha subunit (UreC; EC 3.5.1.5) of the nickel-dependent Bacillus urease complex hydrolyzing urea into ammonia and carbamate/carbonate.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001570 from type species Bacillus subtilis subsp. subtilis str. 168 (NCBITaxon:224308), representing congeneric halophilic marine-sediment isolate Bacillus sp. TK2d (NCBITaxon:1630002; represented in GenBank only by partial 16S rRNA sequence LC034238.2 with no proteome in UniProtKB) in Horiike et al. (2017).
+      evidence:
+      - source_ref: horiike_2017
+        supports: partial
+        explanation: Horiike et al. (2017) isolated urease-producing halophilic Bacillus sp. TK2d in 10% marine broth 2216 (3.74 g/L) with 3% NaCl, 20 g/L urea, and 1.0 mM SrCl2, observing ammonium accumulation and soluble Sr decline from 1.0 mM to 0.13 mM at day 2 and <1.0e-7 mol/L after day 4 (Figures 1-2); ureC was not sequenced, mutated, or inhibited, and other urease-positive isolates did not remove Sr effectively.
+      - source_ref: uniprot_bacillus_subtilis_ureabc
+        supports: partial
+        explanation: Reviewed Swiss-Prot entry UniProtKB:P77837 (URE1_BACSU) in Bacillus subtilis str. 168 reference proteome UP000001570 (NCBITaxon:224308) provides a congeneric reference-proteome representative for Urease subunit alpha (ureC; EC 3.5.1.5) in genus Bacillus.
+    - uniprot_accession: UniProtKB:P71035
+      entry_name: URE2_BACSU
+      protein_name: Urease subunit beta
+      gene_symbol: ureB
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:224308
+        label: Bacillus subtilis subsp. subtilis str. 168
+      reference_proteome_id: UP000001570
+      ec_numbers:
+      - EC:3.5.1.5
+      interpro_ids:
+      - InterPro:IPR002019
+      - InterPro:IPR036461
+      - InterPro:IPR050069
+      pfam_ids:
+      - Pfam:PF00699
+      ncbifam_ids:
+      - NCBIfam:NF009682
+      - NCBIfam:TIGR00192
+      go_terms:
+      - id: GO:0035550
+        label: urease complex
+      - id: GO:0009039
+        label: urease activity
+      - id: GO:0043419
+        label: urea catabolic process
+      functional_role: Beta subunit (UreB; EC 3.5.1.5) of the heterotrimeric Bacillus nickel-dependent urease complex.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001570 from Bacillus subtilis subsp. subtilis str. 168 (NCBITaxon:224308), representing congeneric isolate Bacillus sp. TK2d (NCBITaxon:1630002) in Horiike et al. (2017).
+      evidence:
+      - source_ref: horiike_2017
+        supports: partial
+        explanation: Horiike et al. (2017) documented ammonium accumulation from 20 g/L urea and Sr incorporation into biogenic carbonate precipitates (52% Day 5 and 87% Day 10 SrCO3-like XANES fractions in Table 1) in Bacillus sp. TK2d cultures at 3% NaCl, without ureB perturbation or urease-inhibitor controls.
+      - source_ref: uniprot_bacillus_subtilis_ureabc
+        supports: partial
+        explanation: Reviewed Swiss-Prot entry UniProtKB:P71035 (URE2_BACSU) in Bacillus subtilis str. 168 reference proteome UP000001570 (NCBITaxon:224308) provides a congeneric reference-proteome representative for Urease subunit beta (ureB; EC 3.5.1.5) in genus Bacillus.
+    - uniprot_accession: UniProtKB:P75030
+      entry_name: URE3_BACSU
+      protein_name: Urease subunit gamma
+      gene_symbol: ureA
+      entry_status: SWISS_PROT
+      target_organism:
+        id: NCBITaxon:224308
+        label: Bacillus subtilis subsp. subtilis str. 168
+      reference_proteome_id: UP000001570
+      ec_numbers:
+      - EC:3.5.1.5
+      interpro_ids:
+      - InterPro:IPR012010
+      - InterPro:IPR002026
+      - InterPro:IPR036463
+      - InterPro:IPR050069
+      pfam_ids:
+      - Pfam:PF00547
+      ncbifam_ids:
+      - NCBIfam:NF009712
+      - NCBIfam:TIGR00193
+      go_terms:
+      - id: GO:0005737
+        label: cytoplasm
+      - id: GO:0016151
+        label: nickel cation binding
+      - id: GO:0009039
+        label: urease activity
+      - id: GO:0043419
+        label: urea catabolic process
+      functional_role: Gamma subunit (UreA; EC 3.5.1.5) of the heterotrimeric Bacillus nickel-dependent urease complex.
+      annotation_note: Grounded to reviewed Swiss-Prot reference-proteome entry UP000001570 from Bacillus subtilis subsp. subtilis str. 168 (NCBITaxon:224308), representing congeneric isolate Bacillus sp. TK2d (NCBITaxon:1630002) in Horiike et al. (2017).
+      evidence:
+      - source_ref: horiike_2017
+        supports: partial
+        explanation: Horiike et al. (2017) documented ammonium accumulation from 20 g/L urea and Sr incorporation into biogenic carbonate precipitates (52% Day 5 and 87% Day 10 SrCO3-like XANES fractions in Table 1) in Bacillus sp. TK2d cultures at 3% NaCl, without ureA perturbation or urease-inhibitor controls.
+      - source_ref: uniprot_bacillus_subtilis_ureabc
+        supports: partial
+        explanation: Reviewed Swiss-Prot entry UniProtKB:P75030 (URE3_BACSU) in Bacillus subtilis str. 168 reference proteome UP000001570 (NCBITaxon:224308) provides a congeneric reference-proteome representative for Urease subunit gamma (ureA; EC 3.5.1.5) in genus Bacillus.
+  - id: tk2d_ammonium_and_carbonate_alkalinity
+    label: Ammonium accumulation and carbonate generation in 20 g/L urea + 3% NaCl marine broth
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved NH4+ and carbonate ions produced from 20 g/L urea during shaking cultivation (30 C, 120 rpm) of Bacillus sp. TK2d in 10% marine broth 2216 (3.74 g/L) at 30 g/L (3%) NaCl.
+    protein_grounding_status: NOT_APPLICABLE
+  - id: soluble_strontium_in_saline_medium
+    label: Soluble Sr(II) (1.0 mM SrCl2) and marine-broth Ca(II) in 3% NaCl medium (declining to 0.13 mM Sr at day 2 and <1.0e-7 mol/L after day 4)
+    node_type: CHEMICAL_ENTITY
+    description: Dissolved Sr(II) supplied at 1.0 mM as reagent SrCl2 together with Ca(II) in 0.45-um-filtered 10% marine broth 2216 (3% NaCl), measured by ICP-AES after centrifugation and 0.2-um filtration (much weaker Sr removal occurred at 5-10% NaCl in Figure 2).
+    protein_grounding_status: NOT_APPLICABLE
+  - id: biogenic_sr_ca_carbonate_precipitate
+    label: Extracellular aragonite-like Sr/Ca carbonate precipitates (52% Day 5 and 87% Day 10 SrCO3-like XANES fits with residual SrCl2-like fraction)
+    node_type: MATERIAL_OR_PHASE
+    description: Cell-associated and extracellular Sr- and Ca-bearing precipitates formed in Bacillus sp. TK2d cultures, exhibiting electron-diffraction d-spacings consistent with aragonite (Figures 3-5) and two-standard Sr XANES linear-combination fits of 52% SrCO3-like / 48% SrCl2-like at day 5 and 87% SrCO3-like / 13% SrCl2-like at day 10 (Table 1).
+    protein_grounding_status: NOT_APPLICABLE
+  edges:
+  - source: bacillus_ureabc_complex
+    target: tk2d_ammonium_and_carbonate_alkalinity
+    predicate: catalyzes
+    relationship: urea hydrolysis and NH4+ accumulation in 20 g/L urea saline medium
+    description: Urease activity in Bacillus sp. TK2d hydrolyzes 20 g/L urea in 10% marine broth 2216 (3% NaCl), accumulating dissolved ammonium and carbonate.
+    evidence:
+    - source_ref: horiike_2017
+      supports: partial
+      explanation: Figures 1-2 of Horiike et al. (2017) show ammonium accumulation accompanying soluble Sr and Ca depletion in TK2d cultures; support is partial because no ureABC knockout or urease-inhibitor control was performed and other urease-positive isolates failed to remove Sr effectively.
+  - source: tk2d_ammonium_and_carbonate_alkalinity
+    target: biogenic_sr_ca_carbonate_precipitate
+    predicate: drives
+    relationship: carbonate supersaturation and extracellular Ca/Sr carbonate mineralization at 0.3-3% NaCl
+    description: Ureolytic ammonium and carbonate generation promote precipitation of extracellular aragonite-like Ca/Sr carbonate solids in TK2d cultures at 0.3-3% NaCl.
+    evidence:
+    - source_ref: horiike_2017
+      supports: partial
+      explanation: Figures 1-5 and Table 1 document ammonium accumulation and aragonite-like Ca/Sr carbonate precipitates with increasing SrCO3-like XANES fractions (52% at day 5 to 87% at day 10); support is partial because no time-resolved broth pH series or chemistry-matched abiotic pH control was reported and Sr removal dropped sharply at 5-10% NaCl.
+  - source: soluble_strontium_in_saline_medium
+    target: biogenic_sr_ca_carbonate_precipitate
+    predicate: incorporates_into
+    relationship: depletion of soluble Sr from 1.0 mM to <1.0e-7 mol/L and incorporation into mixed SrCO3-like/SrCl2-like solid environments
+    description: Soluble Sr(II) in 3% NaCl medium declines from 1.0 mM to 0.13 mM at day 2 and below 1.0e-7 mol/L after day 4 as Sr incorporates into cell-associated P-rich and extracellular aragonite-like Ca/Sr carbonate precipitates (52% Day 5 and 87% Day 10 SrCO3-like XANES fits).
+    evidence:
+    - source_ref: horiike_2017
+      supports: partial
+      explanation: Figures 1-5 and Table 1 support soluble Sr depletion (<1.0e-7 mol/L after day 4 at 3% NaCl) and two-standard XANES fits (52% and 87% SrCO3-like at days 5 and 10 with 48% and 13% SrCl2-like remainder); support is partial because XANES fractions are model-dependent spectral fits rather than pure strontianite yields or isolated metal recovery.
 curation_history:
 - timestamp: '2026-10-11T06:51:22.828619Z'
   curator: Codex (GPT-6; Codex)
@@ -65,6 +367,11 @@ curation_history:
   curator: claude
   action: edit
   summary: Normalize top-level curation_history/history_refs YAML key order in strontium.yaml (#864)
+- timestamp: '2026-11-09T16:18:13Z'
+  curator: marcin
+  action: edit
+  summary: Add tk2d_sr_biomineralization_graph causal graph and ground tk2d_sr_biomineralization to congeneric Bacillus subtilis Swiss-Prot UreABC subunits (UniProtKB:P77837, UniProtKB:P71035, UniProtKB:P75030)
 history_refs:
 - history/records/strontium/2026-10-11T065059Z-codex-390f8d.yaml
 - history/records/strontium/2026-10-30T103605Z-claude-d72ab5.yaml
+- history/records/strontium/2026-11-09T161813Z-marcin-f7c945.yaml
