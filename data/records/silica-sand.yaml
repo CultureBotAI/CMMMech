@@ -216,9 +216,9 @@ causal_graphs:
     description: Iron-bearing impurity coatings and accessory grains on natural Grandcourt Lower Greensand silica sand (Silica 3; 2.5 g in Figure 5.2 or 2.4 g in Figure 5.3 in 80 mL 0.9% NaCl minimal saline medium at pH ~7.1-7.3 with 10 mM lactate, oxygen-free N2, 30 C, dark, 60 rpm) incubated with washed stationary-phase Shewanella putrefaciens CIP8040 in yahaya2012.
     protein_grounding_status: NOT_APPLICABLE
   - id: hcl_extractable_fe2_product
-    label: 0.5 N HCl-extractable Fe(II) from bioreduced Silica 3 (0.12 to 0.24 mmol/L at day 1; 0.186 mmol/L without AQDS vs 0.224 mmol/L with 100 micromolar AQDS at day 15)
+    label: 2 M HCl-extractable Fe(II) from bioreduced Silica 3 (0.12 to 0.24 mmol/L at day 1; 0.186 mmol/L without AQDS vs 0.224 mmol/L with 100 micromolar AQDS at day 15)
     node_type: CHEMICAL_ENTITY
-    description: '0.5 N HCl-extractable Fe(II) measured by ferrozine assay in yahaya2012: 0.12 mmol/L (3.5 mL cell stock) and 0.24 mmol/L (7 mL cell stock of 1.2 +/- 0.4 x 10^8 cells/mL) at day 1 vs lower nonzero abiotic blank (Figure 5.2), and 0.224 mmol/L with 100 micromolar AQDS vs 0.186 mmol/L without AQDS at day 15 (Figure 5.3; single-bottle runs without error bars).'
+    description: '2 M HCl-extractable Fe(II) (1 mL unfiltered sample mixed with 1 mL 2 M HCl for ~24 h, 0.2 micrometre filtered, and analyzed with 1,10-phenanthroline at 510 nm) in yahaya2012: 0.12 mmol/L (3.5 mL cell stock) and 0.24 mmol/L (7 mL cell stock of 1.2 +/- 0.4 x 10^8 cells/mL) at day 1 vs lower nonzero abiotic blank (Figure 5.2), and 0.224 mmol/L with 100 micromolar AQDS vs 0.186 mmol/L without AQDS at day 15 (Figure 5.3, with little early AQDS benefit and only modest day-15 differences across Figures 5.3 and 5.5).'
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: cyma_dehydrogenase
@@ -247,16 +247,16 @@ causal_graphs:
     evidence:
     - source_ref: yahaya2012
       supports: partial
-      explanation: In 80 mL minimal saline batch reactors at 30 C and 60 rpm containing 2.5 g (Figure 5.2) or 2.4 g (Figure 5.3) Silica 3 sand and washed Shewanella putrefaciens CIP8040 cells (yahaya2012 Chapter 5), extracellular electron transfer reduces sand-associated Fe(III) impurities, with 100 micromolar AQDS accelerating Fe(II) production.
+      explanation: In 80 mL minimal saline batch reactors at 30 C and 60 rpm containing 2.5 g (Figure 5.2) or 2.4 g (Figure 5.3) Silica 3 sand and washed Shewanella putrefaciens CIP8040 cells (yahaya2012 Chapter 5), extracellular electron transfer reduces sand-associated Fe(III) impurities, with 100 micromolar AQDS showing little early benefit and a modest day-15 increase (0.224 vs 0.186 mmol/L in Figure 5.3; see also Figure 5.5).
   - source: silica3_fe3_impurities
     target: hcl_extractable_fe2_product
     predicate: transforms_into
     relationship: reductive conversion of sand Fe(III) impurities to HCl-extractable Fe(II)
-    description: Bioreduction of Silica 3 Fe(III) impurities yields 0.12 to 0.24 mmol/L HCl-extractable Fe(II) at day 1 (Figure 5.2) and 0.186 mmol/L (no AQDS) to 0.224 mmol/L (+100 micromolar AQDS) at day 15 (Figure 5.3).
+    description: Bioreduction of Silica 3 Fe(III) impurities yields 0.12 to 0.24 mmol/L 2 M HCl-extractable Fe(II) at day 1 (Figure 5.2) and 0.186 mmol/L (no AQDS) to 0.224 mmol/L (+100 micromolar AQDS) at day 15 (Figure 5.3).
     evidence:
     - source_ref: yahaya2012
       supports: support
-      explanation: Figures 5.2 and 5.3 of yahaya2012 show 0.5 N HCl-extractable Fe(II) reaching 0.12 and 0.24 mmol/L at day 1 with 3.5 and 7 mL CIP8040 inocula (vs a lower nonzero uninoculated blank reflecting native Fe(II) in Silica 3) and 0.224 mmol/L with 100 micromolar AQDS vs 0.186 mmol/L without AQDS at day 15; bulk sand beneficiation or complete deferrizing was not demonstrated in the Shewanella assay.
+      explanation: Figures 5.2, 5.3, and 5.5 of yahaya2012 show 2 M HCl-extractable Fe(II) (measured by 1,10-phenanthroline at 510 nm) reaching 0.12 and 0.24 mmol/L at day 1 with 3.5 and 7 mL CIP8040 inocula (vs a lower nonzero uninoculated blank reflecting native Fe(II) in Silica 3) and 0.224 mmol/L with 100 micromolar AQDS vs 0.186 mmol/L without AQDS at day 15; bulk sand beneficiation or complete deferrizing was not demonstrated in the Shewanella assay.
 curation_history:
 - timestamp: '2026-10-15T00:06:20.077904+00:00'
   curator: codex (GPT-6; codex)
@@ -266,6 +266,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Ground Shewanella putrefaciens CIP8040 Silica 3 iron reduction to verified UniProtKB entries (A0ABX8XAW9, A0ABX8XFX2, A0ABX8XFE6) and add causal_graphs.
+- timestamp: '2026-11-09T01:28:34Z'
+  curator: marcin
+  action: edit
+  summary: 'Cycle 11 Stage 2 (#961, PR #960 review): Align 2 M HCl extraction, 1,10-phenanthroline at 510 nm assay, and modest day-15 AQDS effect in shewanella_silica_sand_fe_reduction_graph.'
 history_refs:
 - history/records/silica-sand/2026-10-15T000631Z-codex-5ebae5.yaml
 - history/records/silica-sand/2026-11-09T004432Z-marcin-81d753.yaml
+- history/records/silica-sand/2026-11-09T012834Z-marcin-37cf56.yaml

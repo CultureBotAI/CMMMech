@@ -61,8 +61,8 @@ mechanisms:
     functional_role: 3,4-Dihydroxy-2-butanone 4-phosphate synthase RibB (EC 4.1.99.12; ORF NCTC10738_01464 in the Shewanella algae reference proteome UP000254069) catalyzing a committed step in biosynthesis of secreted riboflavin electron shuttles.
     evidence:
     - source_ref: li_2026
-      supports: support
-      explanation: Figures 5d-e and S6 of li_2026 show that engineered riboflavin overproduction (RF strain) and exogenous riboflavin addition in Shewanella algae MCC 1A11468 increase redox peak and potentiostatic current densities during reductive depassivation of the TiO2 passive film on commercially pure titanium.
+      supports: partial
+      explanation: Figures 5d-e of li_2026 show that engineered riboflavin overproduction (RF strain) and exogenous riboflavin addition in Shewanella algae MCC 1A11468 increase redox peak and potentiostatic current densities during reductive depassivation of the TiO2 passive film on commercially pure titanium; rated partial for the native S. algae RibB enzyme because the RF construct overexpressed heterologous Shewanella oneidensis MR-1 riboflavin synthesis genes in S. algae rather than directly mutating native S. algae ribB.
   - uniprot_accession: UniProtKB:A0A379YK58
     entry_name: A0A379YK58_9GAMM
     protein_name: Riboflavin synthase
@@ -88,8 +88,8 @@ mechanisms:
     functional_role: Riboflavin synthase RibE (EC 2.5.1.9; ORF NCTC10738_00180 in the Shewanella algae reference proteome UP000254069) catalyzing the terminal dismutation of 6,7-dimethyl-8-ribityllumazine to riboflavin.
     evidence:
     - source_ref: li_2026
-      supports: support
-      explanation: Figures 5d-e and S6 of li_2026 demonstrate that riboflavin overproduction (RF strain) and exogenous riboflavin supplementation in Shewanella algae MCC 1A11468 accelerate extracellular electron transfer and passive-film reduction on commercially pure titanium.
+      supports: partial
+      explanation: Figures 5d-e of li_2026 demonstrate that engineered riboflavin overproduction (RF strain) and exogenous riboflavin supplementation in Shewanella algae MCC 1A11468 accelerate extracellular electron transfer and passive-film reduction on commercially pure titanium; rated partial for the native S. algae RibE enzyme because the RF construct overexpressed heterologous Shewanella oneidensis MR-1 riboflavin synthesis genes in S. algae rather than directly mutating native S. algae ribE_1.
   - uniprot_accession: UniProtKB:A0A380C6D3
     entry_name: A0A380C6D3_9GAMM
     protein_name: Decaheme c-type cytochrome, OmcA/MtrC family
@@ -161,8 +161,8 @@ causal_graphs:
       functional_role: 3,4-Dihydroxy-2-butanone 4-phosphate synthase RibB (EC 4.1.99.12; ORF NCTC10738_01464 in the Shewanella algae reference proteome UP000254069) catalyzing a committed step in biosynthesis of secreted riboflavin electron shuttles.
       evidence:
       - source_ref: li_2026
-        supports: support
-        explanation: Figures 5d-e and S6 of li_2026 show that engineered riboflavin overproduction (RF strain) and exogenous riboflavin addition in Shewanella algae MCC 1A11468 increase redox peak and potentiostatic current densities during reductive depassivation of the TiO2 passive film on commercially pure titanium.
+        supports: partial
+        explanation: Figures 5d-e of li_2026 show that engineered riboflavin overproduction (RF strain) and exogenous riboflavin addition in Shewanella algae MCC 1A11468 increase redox peak and potentiostatic current densities during reductive depassivation of the TiO2 passive film on commercially pure titanium; rated partial for the native S. algae RibB enzyme because the RF construct overexpressed heterologous Shewanella oneidensis MR-1 riboflavin synthesis genes in S. algae rather than directly mutating native S. algae ribB.
   - id: ribe_synthase
     label: RibE riboflavin synthase (NCTC10738_00180)
     node_type: GENE_OR_PROTEIN
@@ -195,8 +195,8 @@ causal_graphs:
       functional_role: Riboflavin synthase RibE (EC 2.5.1.9; ORF NCTC10738_00180 in the Shewanella algae reference proteome UP000254069) catalyzing the terminal dismutation of 6,7-dimethyl-8-ribityllumazine to riboflavin.
       evidence:
       - source_ref: li_2026
-        supports: support
-        explanation: Figures 5d-e and S6 of li_2026 demonstrate that riboflavin overproduction (RF strain) and exogenous riboflavin supplementation in Shewanella algae MCC 1A11468 accelerate extracellular electron transfer and passive-film reduction on commercially pure titanium.
+        supports: partial
+        explanation: Figures 5d-e of li_2026 demonstrate that engineered riboflavin overproduction (RF strain) and exogenous riboflavin supplementation in Shewanella algae MCC 1A11468 accelerate extracellular electron transfer and passive-film reduction on commercially pure titanium; rated partial for the native S. algae RibE enzyme because the RF construct overexpressed heterologous Shewanella oneidensis MR-1 riboflavin synthesis genes in S. algae rather than directly mutating native S. algae ribE_1.
   - id: secreted_riboflavin_shuttle
     label: Secreted and exogenous riboflavin electron shuttle
     node_type: CHEMICAL_ENTITY
@@ -253,8 +253,8 @@ causal_graphs:
     description: RibB (EC 4.1.99.12) synthesizes 3,4-dihydroxy-2-butanone 4-phosphate feeding lumazine and riboflavin synthesis by RibE (EC 2.5.1.9) in Shewanella algae.
     evidence:
     - source_ref: li_2026
-      supports: support
-      explanation: Engineered riboflavin overproduction in Shewanella algae MCC 1A11468 (RF construct in li_2026 Figures 5d-e and S6) increases extracellular flavin-mediated electron transfer to the titanium passive film.
+      supports: partial
+      explanation: Engineered riboflavin overproduction in Shewanella algae MCC 1A11468 (the RF construct overexpressing heterologous S. oneidensis MR-1 riboflavin genes in S. algae in li_2026 Figures 5d-e) and exogenous riboflavin addition increase extracellular flavin-mediated electron transfer to the titanium passive film.
   - source: ribe_synthase
     target: secreted_riboflavin_shuttle
     predicate: produces
@@ -262,8 +262,8 @@ causal_graphs:
     description: Riboflavin synthase RibE produces riboflavin secreted by Shewanella algae biofilms as an extracellular electron shuttle.
     evidence:
     - source_ref: li_2026
-      supports: support
-      explanation: Figures 5d-e and S6 of li_2026 show that both genetic riboflavin overproduction (RF strain) and exogenous riboflavin addition elevate anodic/cathodic redox peaks and corrosion current on commercially pure titanium.
+      supports: partial
+      explanation: Figures 5d-e of li_2026 show that both engineered riboflavin overproduction (RF construct overexpressing heterologous S. oneidensis MR-1 riboflavin genes in S. algae) and exogenous riboflavin addition elevate anodic/cathodic redox peaks and corrosion current on commercially pure titanium.
   - source: mtrc_reductase
     target: secreted_riboflavin_shuttle
     predicate: reduces
@@ -277,7 +277,7 @@ causal_graphs:
     target: native_tio2_passive_film
     predicate: reduces
     relationship: flavin-mediated extracellular reduction of Ti(IV) oxide passive film
-    description: Reduced riboflavin transfers electrons to Ti(IV) in the native TiO2 passive film on commercially pure titanium, promoted by carbon-starvation biofilm adherence and localized sub-biofilm acidification.
+    description: Reduced riboflavin transfers electrons to Ti(IV) in the native TiO2 passive film on commercially pure titanium under sub-biofilm oxygen depletion.
     evidence:
     - source_ref: li_2026
       supports: support
@@ -300,6 +300,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Ground Shewanella algae MCC 1A11468 titanium passive-film reduction to verified UniProtKB entries (A0A379ZBW0, A0A379YK58, A0A380C6D3) and add causal_graphs.
+- timestamp: '2026-11-09T01:28:34Z'
+  curator: marcin
+  action: edit
+  summary: 'Cycle 11 Stage 2 (#961, PR #960 review): Set native S. algae ribB/ribE_1 support to partial (noting heterologous S. oneidensis MR-1 RF construct), remove uninspected S6 citation, and align edges[3] description in titanium.yaml.'
 history_refs:
 - history/records/titanium/2026-10-11T072403Z-codex-e6ce1c.yaml
 - history/records/titanium/2026-11-09T004432Z-marcin-892580.yaml
+- history/records/titanium/2026-11-09T012834Z-marcin-bb60df.yaml

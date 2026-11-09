@@ -222,7 +222,7 @@ causal_graphs:
   - id: feroxyhyte_substrate
     label: Synthetic feroxyhyte (delta'-FeOOH, 80 mM Fe(III)) with 75 mM formate
     node_type: MATERIAL_OR_PHASE
-    description: Synthetic feroxyhyte (delta'-FeOOH, 80 mM Fe(III)) incubated in duplicate 160 mL serum bottles containing 100 mL defined mineral medium (initial pH 7.5, argon-sparged, 75 mM formate, ~5 x 10^9 cells/mL CN-32, 30 C, dark) across 0, 100, 500, and 5000 micromolar phosphate regimes in oloughlin_2021.
+    description: Synthetic feroxyhyte (delta'-FeOOH, 80 mM Fe(III)) incubated in duplicate 160 mL serum bottles containing 100 mL defined mineral medium (initial pH 7.5, argon-sparged, 75 mM formate, ~5 x 10^9 cells/mL CN-32, 30 C, dark) across treatments with no added phosphate (without or with 100 micromolar AQDS) and 500 micromolar or 5 mM phosphate with 100 micromolar AQDS in oloughlin_2021 Section 3.7.
     protein_grounding_status: NOT_APPLICABLE
   - id: feroxyhyte_secondary_phases
     label: HCl-extractable Fe(II) (24.28 to 59.93 mM) and secondary magnetite, chukanovite, carbonate green rust, and vivianite
@@ -256,7 +256,7 @@ causal_graphs:
     evidence:
     - source_ref: oloughlin_2021
       supports: partial
-      explanation: Across phosphate-free and phosphate-amended (100, 500, and 5000 micromolar) serum bottles containing 80 mM synthetic feroxyhyte, 75 mM formate, and ~5 x 10^9 cells/mL CN-32 without or with 100 micromolar AQDS (oloughlin_2021 Table 1, Figures 17-22, Tables S1 and S10), extracellular electron transfer reduces feroxyhyte Fe(III) to Fe(II).
+      explanation: Across phosphate-free (without or with 100 micromolar AQDS) and phosphate-amended (500 micromolar or 5 mM phosphate with 100 micromolar AQDS) serum bottles containing 80 mM synthetic feroxyhyte, 75 mM formate, and ~5 x 10^9 cells/mL CN-32 (oloughlin_2021 Section 3.7, Figures 22-24, and Tables 4-5), extracellular electron transfer reduces feroxyhyte Fe(III) to Fe(II).
   - source: feroxyhyte_substrate
     target: feroxyhyte_secondary_phases
     predicate: transforms_into
@@ -265,7 +265,7 @@ causal_graphs:
     evidence:
     - source_ref: oloughlin_2021
       supports: support
-      explanation: Table S1 and Figures 17-22 of oloughlin_2021 document 24.28 +/- 2.10 mM (no AQDS) and 24.51 +/- 6.02 mM (+100 micromolar AQDS) 1-week-HCl-extractable Fe(II) at day 78 without phosphate (forming magnetite and chukanovite), and 55.07 +/- 2.92 mM (500 micromolar phosphate + AQDS) and 59.93 +/- 1.65 mM (5 mM phosphate + AQDS) Fe(II) at day 156 (with transient carbonate green rust, vivianite, chukanovite, and magnetite at 5 mM phosphate); the Figure 23 caption vs plot timeline discrepancy (46 days vs 78/156 days) is retained.
+      explanation: Section 3.7, Figures 22-24, and Tables 4-5 of oloughlin_2021 document 24.28 +/- 2.10 mM (no AQDS) and 24.51 +/- 6.02 mM (+100 micromolar AQDS) 1-week-HCl-extractable Fe(II) at day 78 without phosphate (forming magnetite and chukanovite), and 55.07 +/- 2.92 mM (500 micromolar phosphate + AQDS, forming magnetite and chukanovite) and 59.93 +/- 1.65 mM (5 mM phosphate + AQDS, where Table 4 assigns carbonate green rust, marked with a question mark on SEM, and vivianite) Fe(II) at day 156; the Figure 23 caption vs plot timeline discrepancy (46 days vs 78/156 days) is retained.
 curation_history:
 - timestamp: '2026-10-14T06:28:06Z'
   curator: codex
@@ -275,6 +275,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Ground Shewanella putrefaciens CN-32 feroxyhyte reductive transformation to verified UniProtKB entries (A4YBV6, A0ABX8XAW9, A0ABX8XFE6) and add causal_graphs.
+- timestamp: '2026-11-09T01:28:33Z'
+  curator: marcin
+  action: edit
+  summary: 'Cycle 11 Stage 2 (#961, PR #960 review): Align feroxyhyte phosphate regimes (0, 500 uM, 5 mM), Section 3.7/Figures 22-24/Tables 4-5 locators, and 5 mM phosphate product assignments in cn32_feroxyhyte_reduction_graph.'
 history_refs:
 - history/records/feroxyhyte/2026-10-14T062756Z-codex-bd8d5e.yaml
 - history/records/feroxyhyte/2026-11-09T003932Z-marcin-252a2e.yaml
+- history/records/feroxyhyte/2026-11-09T012833Z-marcin-f6af89.yaml

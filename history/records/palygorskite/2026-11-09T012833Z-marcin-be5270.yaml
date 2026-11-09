@@ -1,0 +1,30 @@
+history_version: 1
+target:
+  kind: record
+  slug: palygorskite
+  path: data/records/palygorskite.yaml
+session:
+  id: 2026-11-09T012833Z-marcin-be5270
+  timestamp: '2026-11-09T01:28:33Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Cycle 11 Stage 2 (#961, PR #960 review): Align PFl-1 pretreatment description,
+    DCP dissolved-Fe assay, and XRD phase check in cn32_palygorskite_fe_reduction_graph.'
+  details: 'Resolved PR #960 review Finding 6 on palygorskite.yaml by aligning the PFl-1 pretreatment
+    steps with mechanisms[0].context and replacing ICP-AES and SEM-EDS/FTIR with the documented
+    DCP (+/-0.03 mmol/L error) and XRD characterizations from bishop_2010_thesis.'
+  sections:
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/961
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/960

@@ -289,7 +289,7 @@ causal_graphs:
   - id: dissolved_mn_product
     label: Filtered <0.2 micrometre dissolved Mn at pH 7.4 (mean 12.2 micromolar inoculated vs 1.2 micromolar abiotic control in Table 1)
     node_type: CHEMICAL_ENTITY
-    description: 'Filterable (<0.2 micrometre) dissolved Mn measured by flame AAS at pH 7.4 in larsen1998: mean 12.2 micromolar in MR-4 inoculated flasks versus 1.2 micromolar in uninoculated controls across seven time points (Table 1; up to ~35 micromolar peak in Figure 1), whereas pH 4 and pH 5 arms were dominated by abiotic proton-promoted dissolution (101.3 vs 103.1 micromolar and 39.4 vs 44.0 micromolar).'
+    description: 'Filterable (<0.2 micrometre) dissolved Mn measured by flame AAS at pH 7.4 in larsen1998: mean 12.2 +/- 9.9 micromol/L in MR-4 inoculated flasks versus 1.2 +/- 0.8 micromol/L in uninoculated controls across the two-sampling-time pH comparison in Table 1 (alongside the 170 h time courses in Figures 1-3), whereas pH 4 (101.3 +/- 21.7 vs 103.1 +/- 18.8 micromol/L) and pH 5 (39.4 +/- 11.4 vs 44.0 +/- 13.7 micromol/L) arms were dominated by abiotic proton-promoted dissolution.'
     protein_grounding_status: NOT_APPLICABLE
   edges:
   - source: ccma_exporter
@@ -327,7 +327,7 @@ causal_graphs:
     evidence:
     - source_ref: larsen1998
       supports: partial
-      explanation: Figure 3 of larsen1998 demonstrates that enclosing synthetic manganite inside a dialysis bag at pH 7.4 strongly suppresses Mn dissolution relative to free-contact Shewanella sp. MR-4 cultures (with AFM in Figures 4-6 showing cell-sized dissolution pits on manganite surfaces), supporting contact-dependent outer-membrane electron transfer.
+      explanation: Figure 3 of larsen1998 demonstrates that enclosing synthetic manganite inside a dialysis bag at pH 7.4 strongly suppresses Mn dissolution relative to free-contact Shewanella sp. MR-4 cultures (with wet fixed ESEM and dehydrated, gold-coated SEM in Figures 5-9 showing close cell attachment and cell-associated precipitate coatings on manganite surfaces, while Figure 4 compares manganite against birnessite and pyrolusite), supporting contact-dependent outer-membrane electron transfer.
   - source: manganite_substrate
     target: dissolved_mn_product
     predicate: transforms_into
@@ -336,7 +336,7 @@ causal_graphs:
     evidence:
     - source_ref: larsen1998
       supports: support
-      explanation: Table 1 and Figure 1 of larsen1998 report a time-averaged <0.2 micrometre dissolved Mn concentration of 12.2 micromolar in MR-4 inoculated flasks versus 1.2 micromolar in no-cell controls at pH 7.4 (ANOVA p = 0.0029), whereas pH 4, 5, and 6 arms showed no statistically significant microbial enhancement over abiotic dissolution; the 200 vs 100 micromolar initial MnOOH figure/text discrepancy is retained.
+      explanation: Table 1 and Figures 1-3 of larsen1998 report 12.2 +/- 9.9 micromol/L <0.2 micrometre dissolved Mn in MR-4 inoculated serum bottles versus 1.2 +/- 0.8 micromol/L in uninoculated controls at pH 7.4 across the two-sampling-time pH series (and sustained microbial Mn dissolution over the 170 h open-flask time courses at pH 7.4), whereas pH 4 (101.3 +/- 21.7 vs 103.1 +/- 18.8 micromol/L) and pH 5 (39.4 +/- 11.4 vs 44.0 +/- 13.7 micromol/L) arms showed no microbial enhancement over abiotic dissolution; the 200 vs 100 micromol/L initial MnOOH figure/text discrepancy is retained.
 curation_history:
 - timestamp: '2026-10-14T06:24:24Z'
   curator: codex (GPT-6; Codex)
@@ -346,6 +346,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Ground Shewanella sp. MR-4 manganite reductive dissolution to verified UniProtKB entries (Q0HNQ5, Q0HNQ9, Q8E8S0, Q8EG34) and add causal_graphs.
+- timestamp: '2026-11-09T01:28:33Z'
+  curator: marcin
+  action: edit
+  summary: 'Cycle 11 Stage 2 (#961, PR #960 review): Align larsen1998 ESEM/SEM Figures 5-9 observations and two-sampling-time pH 4/5/7.4 Table 1 values in mr4_manganite_reductive_dissolution_graph.'
 history_refs:
 - history/records/manganite/2026-10-14T062347Z-codex-9f9289.yaml
 - history/records/manganite/2026-11-09T004432Z-marcin-66de84.yaml
+- history/records/manganite/2026-11-09T012833Z-marcin-ab8657.yaml

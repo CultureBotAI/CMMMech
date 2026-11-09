@@ -231,7 +231,7 @@ causal_graphs:
   - id: pfl1_palygorskite_substrate
     label: Pretreated 0.02-0.5 micrometre PFl-1 palygorskite structural Fe(III) (7 g/L clay)
     node_type: MATERIAL_OR_PHASE
-    description: Pretreated (NaOAc pH 5, H2O2, dithionite-citrate-bicarbonate, and H2O2 reoxidation; 96-h vs 72-h prose discrepancy retained) 0.02-0.5 micrometre Clay Minerals Society PFl-1 palygorskite at 7 g/L in 30 mM bicarbonate buffer (pH 7) with nominal 0.2 mM lactate and ~1.92 x 10^7 cells/mL CN-32 at 37 C and 60 rpm in bishop_2010_thesis.
+    description: Pretreated (treated with dithionite-citrate-bicarbonate for 10 minutes, acid-washed, homoionized, and reoxidized before use; 96-h vs 72-h reoxidation prose discrepancy retained) 0.02-0.5 micrometre Clay Minerals Society PFl-1 palygorskite at 7 g/L in 30 mM bicarbonate buffer (pH 7) with nominal 0.2 mM lactate and ~1.92 x 10^7 cells/mL CN-32 at 37 C and 60 rpm in bishop_2010_thesis.
     protein_grounding_status: NOT_APPLICABLE
   - id: reduced_palygorskite_fe2
     label: Solid-associated reduced structural Fe(II) in PFl-1 palygorskite (2.65% without AQDS; 4.17% with 0.1 mM AQDS; 0.002 mmol/L dissolved Fe)
@@ -274,7 +274,7 @@ causal_graphs:
     evidence:
     - source_ref: bishop_2010_thesis
       supports: support
-      explanation: Figure 8H (mislabeled 8F in prose) and Table 3 of bishop_2010_thesis report 2.65% (no AQDS) and 4.17% (+0.1 mM AQDS) Fe(III) reduction by 1,10-phenanthroline assay after ~2 weeks at 37 C, while ICP-AES dissolved Fe remained 0.002 mmol/L in both abiotic control and +AQDS bioreduced arms and SEM-EDS/FTIR showed no major structural breakdown.
+      explanation: Figure 8H (mislabeled 8F in prose) and Table 3 of bishop_2010_thesis report 2.65% (no AQDS) and 4.17% (+0.1 mM AQDS) Fe(III) reduction by 1,10-phenanthroline assay after ~2 weeks at 37 C, while DCP dissolved Fe remained 0.002 mmol/L in both abiotic control and +AQDS bioreduced arms (within the stated +/-0.03 mmol/L DCP error) and XRD showed no discernible new PFl-1 phase.
 curation_history:
 - timestamp: '2026-10-14T18:02:49.045937Z'
   curator: codex (GPT-6; codex)
@@ -284,6 +284,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Ground Shewanella putrefaciens CN-32 PFl-1 palygorskite iron reduction to verified UniProtKB entries (A4YBV6, A0ABX8XAW9, A0ABX8XFE6) and add causal_graphs.
+- timestamp: '2026-11-09T01:28:33Z'
+  curator: marcin
+  action: edit
+  summary: 'Cycle 11 Stage 2 (#961, PR #960 review): Align PFl-1 pretreatment description, DCP dissolved-Fe assay, and XRD phase check in cn32_palygorskite_fe_reduction_graph.'
 history_refs:
 - history/records/palygorskite/2026-10-14T180310Z-codex-9cb144.yaml
 - history/records/palygorskite/2026-11-09T003933Z-marcin-05402f.yaml
+- history/records/palygorskite/2026-11-09T012833Z-marcin-be5270.yaml

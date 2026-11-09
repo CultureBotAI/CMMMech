@@ -223,7 +223,7 @@ causal_graphs:
   - id: plumbojarosite_substrate
     label: Synthetic plumbojarosite (0.0500 +/- 0.0013 g in 16 mL modified M1 medium with 24 mM lactate)
     node_type: MATERIAL_OR_PHASE
-    description: Synthetic Pb-jarosite (0.0500 +/- 0.0013 g; hydronium-substituted formula variants between main thesis and SI retained) incubated with ~0.016 g wet Shewanella putrefaciens CN-32 cells in 16 mL phosphate-free modified M1 medium (24 mM sodium lactate, 20 mM PIPES pH 7.3) under 96% N2 / 4% H2 through nominal 768 h in smeaton2012_chapter2.
+    description: Synthetic Pb-jarosite (0.0500 +/- 0.0013 g; powder diffraction matched to ICDD 00-039-1353 Pb0.5Fe3(SO4)2(OH)6 in SI S1 / Figure S1) incubated with ~0.016 g wet Shewanella putrefaciens CN-32 cells in 16 mL phosphate-free modified M1 medium (24 mM sodium lactate, 20 mM PIPES pH 7.3) under 96% N2 / 4% H2 through nominal 768 h in smeaton2012_chapter2.
     protein_grounding_status: NOT_APPLICABLE
   - id: fe2_release_and_pb_granules
     label: Filtered <0.20 micrometre Fe(II) (~197 micromolar at nominal 768 h) and cell-associated Pb-enriched granules (dissolved Pb <0.09 micromolar)
@@ -257,7 +257,7 @@ causal_graphs:
     evidence:
     - source_ref: smeaton2012_chapter2
       supports: partial
-      explanation: In 20 mL tubes containing 0.0500 +/- 0.0013 g synthetic plumbojarosite and ~0.016 g wet CN-32 cells in 16 mL modified M1 medium with 24 mM sodium lactate and 20 mM PIPES at initial pH 7.3 (smeaton2012_chapter2 Figure 2.2), extracellular electron transfer reduces jarosite Fe(III) to dissolved Fe(II).
+      explanation: In 20 mL tubes containing 0.0500 +/- 0.0013 g synthetic plumbojarosite and ~0.016 g wet CN-32 cells in 16 mL modified M1 medium with 24 mM sodium lactate and 20 mM PIPES at initial pH 7.3 (smeaton2012_chapter2 Figure 2.1), extracellular electron transfer reduces jarosite Fe(III) to dissolved Fe(II).
   - source: plumbojarosite_substrate
     target: fe2_release_and_pb_granules
     predicate: transforms_into
@@ -266,10 +266,10 @@ causal_graphs:
     evidence:
     - source_ref: smeaton2012_chapter2
       supports: support
-      explanation: Figure 2.2 and TEM-EDS analyses in smeaton2012_chapter2 show <0.20 micrometre filtered Fe(II) rising to ~197 micromolar at nominal 768 h (192/408/768 h vs 198/400/776 h sampling-hour variants retained) compared with near-baseline sterile controls, while dissolved Pb transiently increased at 24 h before falling below 0.09 micromolar as electron-dense cell-associated Pb-enriched granules formed (TEM fixation in 0.1 M phosphate buffer prevents assigning granule P to in-situ phosphate biomineralization).
+      explanation: Figure 2.1 and microscopy in Figures 2.2-2.3 of smeaton2012_chapter2 show <0.20 micrometre filtered Fe(II) rising to ~197 micromolar at nominal 768 h (192/408/768 h vs 198/400/776 h sampling-hour variants retained) compared with near-baseline sterile controls, while dissolved Pb transiently increased at 24 h before falling below 0.09 micromolar as electron-dense cell-associated Pb-enriched granules formed (TEM fixation in 0.1 M phosphate buffer prevents assigning granule P to in-situ phosphate biomineralization).
     - source_ref: smeaton2009_si
       supports: partial
-      explanation: Supplemental Text S1 and Table S1 of smeaton2009_si document the synthetic plumbojarosite digest composition and formula variants underlying the CN-32 reductive dissolution experiments.
+      explanation: Supporting Information S1-S3, S5, Tables S1-S5, and Figures S1-S3 of smeaton2009_si document the synthetic plumbojarosite XRD characterization (matching ICDD 00-039-1353), geochemical modeling, and TEM-EDS/SAED constraints underlying the CN-32 reductive dissolution experiments.
 curation_history:
 - timestamp: '2026-10-15T09:30:48.984608+00:00'
   curator: codex (GPT-6; codex)
@@ -279,6 +279,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Ground Shewanella putrefaciens CN-32 plumbojarosite reductive dissolution to verified UniProtKB entries (A4YBV6, A0ABX8XAW9, A0ABX8XFE6) and add causal_graphs.
+- timestamp: '2026-11-09T01:28:34Z'
+  curator: marcin
+  action: edit
+  summary: 'Cycle 11 Stage 2 (#961, PR #960 review): Align Figure 2.1 vs Figures 2.2-2.3 locators and ICDD 00-039-1353 XRD characterization in cn32_plumbojarosite_dissolution_graph.'
 history_refs:
 - history/records/plumbojarosite/2026-10-15T093059Z-codex-21e4bf.yaml
 - history/records/plumbojarosite/2026-11-09T003933Z-marcin-71db84.yaml
+- history/records/plumbojarosite/2026-11-09T012834Z-marcin-ee86c8.yaml

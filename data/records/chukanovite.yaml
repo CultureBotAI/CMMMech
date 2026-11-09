@@ -269,7 +269,7 @@ causal_graphs:
     evidence:
     - source_ref: oloughlin_2021
       supports: partial
-      explanation: During 1060-day anoxic incubations of 80 mM Fe(III) as synthetic goethite with 75 mM formate and ~5 x 10^9 cells/mL Shewanella putrefaciens CN-32 without added phosphate (without or with 100 micromolar AQDS; oloughlin_2021 Table 1, Figures 1, 2, 5, and S4), extracellular electron transfer reduces goethite Fe(III) to Fe(II).
+      explanation: During 1060-day anoxic incubations of 80 mM Fe(III) as synthetic goethite with 75 mM formate and ~5 x 10^9 cells/mL Shewanella putrefaciens CN-32 without added phosphate (without or with 100 micromolar AQDS; oloughlin_2021 Sections 2.1-2.3, 3.3 and 4.1-4.3, Tables 2-3, and Figures 6-8), extracellular electron transfer reduces goethite Fe(III) to Fe(II).
   - source: goethite_substrate
     target: chukanovite_product
     predicate: transforms_into
@@ -278,10 +278,10 @@ causal_graphs:
     evidence:
     - source_ref: oloughlin_2021
       supports: support
-      explanation: XRD, SEM, and Mossbauer spectroscopy at day 1060 (oloughlin_2021 Figures 2 and 5, Tables 1 and S4) show chukanovite accounting for 20.0% (no AQDS) and 27.4% (+100 micromolar AQDS) of 140 K fitted spectral area alongside residual goethite; the 500 micromolar phosphate + 100 micromolar AQDS day-744 condition is retained as internally inconsistent between Figure 2, Table 1, and Figure 5.
+      explanation: XRD, SEM, and Mossbauer spectroscopy at day 1060 (oloughlin_2021 Sections 3.3 and 4.1-4.3, Tables 2-3, and Figures 6-8) show chukanovite accounting for 20.0% (no AQDS) and 27.4% (+100 micromolar AQDS) of 140 K fitted spectral area alongside residual goethite; the 500 micromolar phosphate + 100 micromolar AQDS day-744 condition is retained as internally inconsistent between Section 3.3, Table 2, and Section 4.3.
     - source_ref: oloughlin_2019
       supports: partial
-      explanation: Under otherwise comparable CN-32 + 75 mM formate + 100 micromolar AQDS + 25 mM NaCl or Na2SO4 conditions over 62 days, synthetic lepidocrocite transformed to carbonate green rust followed by secondary chukanovite and magnetite (oloughlin_2019 Figures 2-5 and Table 1), whereas Bayferrox 943 lepidocrocite formed carbonate green rust without chukanovite.
+      explanation: Section 4.2 of oloughlin_2019 explicitly reports that chukanovite was not observed in any of that study's commercial Bayferrox 943 lepidocrocite bioreduction systems (which formed carbonate green rust and transient sulfate green rust in the 62-day formate/AQDS chloride and sulfate arms and siderite in other electron-donor arms), bounding cross-mineral extrapolation of the 2021 goethite result.
 curation_history:
 - timestamp: '2026-10-14T18:00:20.421680+00:00'
   curator: codex (GPT-6; /root)
@@ -295,7 +295,12 @@ curation_history:
   curator: marcin
   action: edit
   summary: Ground Shewanella putrefaciens CN-32 goethite-to-chukanovite transformation to verified UniProtKB entries (A4YBV6, A0ABX8XAW9, A0ABX8XFE6) and add causal_graphs.
+- timestamp: '2026-11-09T01:28:33Z'
+  curator: marcin
+  action: edit
+  summary: 'Cycle 11 Stage 2 (#961, PR #960 review): Align oloughlin_2021 goethite section/table/figure locators and oloughlin_2019 non-observation of chukanovite on edges[2..3] of cn32_goethite_chukanovite_graph.'
 history_refs:
 - history/records/chukanovite/2026-10-14T180019Z-codex-787c6d.yaml
 - history/records/chukanovite/2026-10-14T181208Z-codex-27307c.yaml
 - history/records/chukanovite/2026-11-09T003932Z-marcin-8653b9.yaml
+- history/records/chukanovite/2026-11-09T012833Z-marcin-b0f713.yaml

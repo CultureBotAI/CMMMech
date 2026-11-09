@@ -1,0 +1,33 @@
+history_version: 1
+target:
+  kind: record
+  slug: feroxyhyte
+  path: data/records/feroxyhyte.yaml
+session:
+  id: 2026-11-09T012833Z-marcin-f6af89
+  timestamp: '2026-11-09T01:28:33Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: 'Cycle 11 Stage 2 (#961, PR #960 review): Align feroxyhyte phosphate regimes (0,
+    500 uM, 5 mM), Section 3.7/Figures 22-24/Tables 4-5 locators, and 5 mM phosphate product
+    assignments in cn32_feroxyhyte_reduction_graph.'
+  details: 'Resolved PR #960 review Finding 3 on feroxyhyte.yaml by removing 100 micromolar
+    (the AQDS concentration) from the phosphate list, citing Section 3.7, Figures 22-24, and
+    Tables 4-5 of oloughlin_2021, and distinguishing the 0/500 uM phosphate products (magnetite,
+    chukanovite) from the 5 mM phosphate products (carbonate green rust marked ? on SEM, and
+    vivianite).'
+  sections:
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/961
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/960
