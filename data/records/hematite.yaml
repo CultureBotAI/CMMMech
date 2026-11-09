@@ -3,598 +3,699 @@ name: Hematite
 material_kind: mineral
 description: Hematite is the Fe2O3 mineral species listed as approved (A), with 1971 special-procedure status, in the IMA-CNMNC September 2026 master list. It is distinct from iron element, iron-ore commodities, other Fe2O3 polymorphs and mixed iron-bearing feeds. The experimental author-designated hematite below has substantial non-Fe oxide components; its bulk Fe2O3 percentage is not a quantified hematite phase abundance. No constituent criticality designation is inherited.
 sources:
-- id: ima_2026_09
-  title: IMA-CNMNC master list, September 2026, PDF p92 Hematite row and explanatory status definitions; retained official PDF reinspected 11 October 2026. The entry 1971 s.p. is special-procedure history, not an asserted external identifier.
-  url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
-  accessed_on: '2026-10-11'
-- id: dong_2026
-  title: 'Dong, Zhang, Yu, Sheng, He and Sheng (2026). Genomic traits, transcriptional responses, and metabolic activities determine functional divergence in mineral dissolution between Priestia megaterium PMA2-2 and Priestia flexa PMD1-1. Applied and Environmental Microbiology 92(9):e01201-26. DOI 10.1128/aem.01201-26; Methods: Bacterial strains, minerals, and media; Biotite dissolution experiment; Dissolution of other minerals and gene expression analysis; Results: Generalizability; Figure 5; supplement Tables S6-S7 (pp11-12).'
-  url: https://doi.org/10.1128/aem.01201-26
-  accessed_on: '2026-10-11'
-- id: ncbi_pma2_2
-  title: NCBI GenBank CM125967.1, Priestia megaterium strain PMA2-2 chromosome; source feature and BioSample SAMN50659134 link inspected 11 October 2026. The species identifier does not identify the strain by itself.
-  url: https://www.ncbi.nlm.nih.gov/nuccore/CM125967.1
-  accessed_on: '2026-10-11'
-- id: ncbi_megaterium
-  title: NCBI Taxonomy 1404, Priestia megaterium, species; taxonomy browser and taxonomy XML inspected 11 October 2026.
-  url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1404&mode=Info
-  accessed_on: '2026-10-11'
-- id: uniprot_priestia_megaterium_mineral_genes
-  title: 'UniProtKB Priestia megaterium entries for the six RT-qPCR mineral-dissolution-related genes in Dong et al. (2026) Figure 5 / Table 2: Stage 0 sporulation protein A (spo0A, UniProtKB:P52932, NCBITaxon:1404), acetate--CoA ligase (acsA, UniProtKB:D5DTY8, proteome UP000000935, NCBITaxon:545693), and Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) UDP-N-acetyl-D-mannosamine dehydrogenase (wecC, UniProtKB:A0A0B6ASU1), Diaminopimelate decarboxylase (lysA, UniProtKB:A0A0B6ACY5), Flagellar basal-body rod protein FlgF (flgF, UniProtKB:A0A0B6AS33), and Glycerol phosphate lipoteichoic acid synthase 1 (ltaS1, UniProtKB:A0A0B6APG1).'
-  url: https://www.uniprot.org/uniprotkb?query=(accession:P52932+OR+accession:D5DTY8+OR+accession:A0A0B6ASU1+OR+accession:A0A0B6ACY5+OR+accession:A0A0B6AS33+OR+accession:A0A0B6APG1)
-  accessed_on: '2026-11-09'
+  - id: ima_2026_09
+    title: IMA-CNMNC master list, September 2026, PDF p92 Hematite row and explanatory status definitions; retained official PDF reinspected 11 October 2026. The entry 1971 s.p. is special-procedure history, not an asserted external identifier.
+    url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
+    accessed_on: '2026-10-11'
+  - id: dong_2026
+    title: 'Dong, Zhang, Yu, Sheng, He and Sheng (2026). Genomic traits, transcriptional responses, and metabolic activities determine functional divergence in mineral dissolution between Priestia megaterium PMA2-2 and Priestia flexa PMD1-1. Applied and Environmental Microbiology 92(9):e01201-26. DOI 10.1128/aem.01201-26; Methods: Bacterial strains, minerals, and media; Biotite dissolution experiment; Dissolution of other minerals and gene expression analysis; Results: Generalizability; Figure 5; supplement Tables S6-S7 (pp11-12).'
+    url: https://doi.org/10.1128/aem.01201-26
+    accessed_on: '2026-10-11'
+  - id: ncbi_pma2_2
+    title: NCBI GenBank CM125967.1, Priestia megaterium strain PMA2-2 chromosome; source feature and BioSample SAMN50659134 link inspected 11 October 2026. The species identifier does not identify the strain by itself.
+    url: https://www.ncbi.nlm.nih.gov/nuccore/CM125967.1
+    accessed_on: '2026-10-11'
+  - id: ncbi_megaterium
+    title: NCBI Taxonomy 1404, Priestia megaterium, species; taxonomy browser and taxonomy XML inspected 11 October 2026.
+    url: https://www.ncbi.nlm.nih.gov/Taxonomy/Browser/wwwtax.cgi?id=1404&mode=Info
+    accessed_on: '2026-10-11'
+  - id: uniprot_priestia_megaterium_mineral_genes
+    title: 'UniProtKB Priestia megaterium entries for the six RT-qPCR mineral-dissolution-related genes in Dong et al. (2026) Figure 5 / Table 2: Stage 0 sporulation protein A (spo0A, Swiss-Prot UniProtKB:P52932, NCBITaxon:1404; and type-strain reference proteome UP000031829 BG04_1367, UniProtKB:A0A0B6ANB3, NCBITaxon:1348623), acetate--CoA ligase (acsA, UniProtKB:D5DTY8, proteome UP000000935, NCBITaxon:545693), and Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) UDP-N-acetyl-D-mannosamine dehydrogenase (wecC, UniProtKB:A0A0B6ASU1), Diaminopimelate decarboxylase (lysA, UniProtKB:A0A0B6ACY5), Flagellar basal-body rod protein FlgF (flgF, UniProtKB:A0A0B6AS33), and Glycerol phosphate lipoteichoic acid synthase 1 (ltaS1, UniProtKB:A0A0B6APG1).'
+    url: https://www.uniprot.org/uniprotkb?query=(accession:P52932+OR+accession:A0A0B6ANB3+OR+accession:D5DTY8+OR+accession:A0A0B6ASU1+OR+accession:A0A0B6ACY5+OR+accession:A0A0B6AS33+OR+accession:A0A0B6APG1)
+    accessed_on: '2026-11-09'
 mechanisms:
-- id: pma2_2_hematite_dissolution
-  name: PMA2-2 culture-associated iron mobilization from a hematite feed
-  process: bioleaching
-  description: PMA2-2 cultures produced higher filtered Fe concentrations than uninoculated hematite-feed controls during a short laboratory assay. Culture acidification accompanied this mobilization; the individual chemical and cellular contributions remain unresolved.
-  context: 'Living Priestia megaterium PMA2-2, isolated from Dracaena cochinchinensis rhizosphere soil in Purple Mountain, Nanjing, China, was precultured in LB for 12 hours at 37 degrees C and 160 rpm, harvested, washed and resuspended in 0.85% NaCl. The other-mineral assays followed the dissolution protocol: triplicate 220 mL flasks with 60 mL sterilized glucose minimal medium, 0.60 g of 75-150 micrometre mineral feed and 0.2 mL of 10^8 cells/mL suspension, incubated at 37 degrees C and 160 rpm, with separate flasks for 12- and 24-hour endpoints. Medium preparation pH was 7.0; its stated composition was 0.015% MgSO4.7H2O, 0.05% Na2HPO4.2H2O, 0.025% (NH4)2SO4, 0.01% KNO3 and 0.5% glucose. Element measurements used ICP-OES after centrifugation and 0.45 micrometre polyethersulfone filtration of a 10 mL aliquot; these are operationally filtered total-element concentrations, without oxidation-state resolution. Feed origin, cleaning procedure and quantitative phase analysis were not specified
-    in the inspected methods and supplement. Table S7 reports 86.58% Fe2O3 and 9.82% SiO2, with other minor oxides, for the hematite feed. The organism is linked to GenBank CM125967.1; the paper''s duplicated accession in its first Methods paragraph is not used to identify the comparator strain.'
-  microbial: true
-  organisms:
-  - id: NCBITaxon:1404
-    label: Priestia megaterium
-  protein_examples:
-  - uniprot_accession: UniProtKB:P52932
-    entry_name: SP0A_PRIMG
-    protein_name: Stage 0 sporulation protein A
-    gene_symbol: spo0A
-    entry_status: SWISS_PROT
-    target_organism:
-      id: NCBITaxon:1404
-      label: Priestia megaterium
-    functional_role: Stage 0 sporulation protein A (Spo0A) master response regulator controlling biofilm formation and stationary-phase/sporulation transcription in Priestia megaterium.
-    go_terms:
-    - id: GO:0005737
-      label: cytoplasm
-    - id: GO:0005509
-      label: calcium ion binding
-    - id: GO:0003677
-      label: DNA binding
-    - id: GO:0003700
-      label: DNA-binding transcription factor activity
-    - id: GO:0051606
-      label: detection of stimulus
-    - id: GO:0000160
-      label: phosphorelay signal transduction system
-    - id: GO:0042173
-      label: regulation of sporulation resulting in formation of a cellular spore
-    interpro_ids:
-    - InterPro:IPR011006
-    - InterPro:IPR016032
-    - InterPro:IPR001789
-    - InterPro:IPR014879
-    - InterPro:IPR012052
-    - InterPro:IPR052048
-    - InterPro:IPR036388
-    pfam_ids:
-    - Pfam:PF00072
-    - Pfam:PF08769
-    ncbifam_ids:
-    - NCBIfam:TIGR02875
-    annotation_note: 'Grounded to Swiss-Prot Priestia megaterium (NCBITaxon:1404) Stage 0 sporulation protein A (spo0A, UniProtKB:P52932), corresponding to Table 1 gene4504 (spo0A, Biofilm formation / Sporulation, Log2FC 4.4, P < 0.001) and the 12-h RT-qPCR gene spo0A induced by hematite in Figure 5 (Table 2 primers spo0A-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2 (GenBank: CM125967.1).'
-    evidence:
-    - source_ref: dong_2026
-      supports: partial
-      explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR induction of spo0A (Table 1 gene4504, sporulation transcription factor) in Priestia megaterium PMA2-2 cultured in 60 mL GMM with 0.6 g hematite (75-150 um) relative to mineral-free GMM, accompanying culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because RT-qPCR expression association does not establish gene necessity and detailed RNA-seq/metabolomics/acid-buffer assays were restricted to biotite.
-    - source_ref: uniprot_priestia_megaterium_mineral_genes
-      supports: partial
-      explanation: 'Reviewed Swiss-Prot entry UniProtKB:P52932 (SP0A_PRIMG) encodes Stage 0 sporulation protein A (spo0A) in Priestia megaterium (NCBITaxon:1404), providing a species-level reference proxy for strain PMA2-2 (GenBank: CM125967.1).'
-  - uniprot_accession: UniProtKB:D5DTY8
-    entry_name: D5DTY8_PRIM1
-    protein_name: acetate--CoA ligase
-    gene_symbol: acsA
-    entry_status: TREMBL
-    target_organism:
-      id: NCBITaxon:545693
-      label: Priestia megaterium QM B1551
-    reference_proteome_id: UP000000935
-    functional_role: Acetate--CoA ligase (EC 6.2.1.1; acsA) interconverting acetate and acetyl-CoA in bacterial organic-acid metabolism.
-    ec_numbers:
-    - EC:6.2.1.1
-    go_terms:
-    - id: GO:0005829
-      label: cytosol
-    - id: GO:0003987
-      label: acetyl-CoA synthetase activity
-    - id: GO:0006085
-      label: acetyl-CoA biosynthetic process
-    interpro_ids:
-    - InterPro:IPR045851
-    - InterPro:IPR025110
-    - InterPro:IPR020845
-    - InterPro:IPR000873
-    - InterPro:IPR042099
-    pfam_ids:
-    - Pfam:PF00501
-    - Pfam:PF13193
-    ncbifam_ids:
-    - NCBIfam:NF003313
-    annotation_note: 'Grounded to Priestia megaterium reference proteome UP000000935 (strain ATCC 12872 / QM B1551, NCBITaxon:545693) acetate--CoA ligase (acsA, UniProtKB:D5DTY8), representing Table 1 gene2536 (acs, Acyl-CoA ligase, Organic acid metabolism: Acetate, Log2FC 5.6, P < 0.001) and the 12-h RT-qPCR gene acs induced by hematite in Figure 5 (Table 2 primers acs-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.'
-    evidence:
-    - source_ref: dong_2026
-      supports: partial
-      explanation: 'Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR upregulation of acs (Table 1 gene2536, Acyl-CoA ligase in organic acid/acetate metabolism) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, alongside culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because strain PMA2-2 (GenBank: CM125967.1) lacks its own UniProt proteome and no gene-knockout or pH-matched abiotic control was tested on hematite.'
-    - source_ref: uniprot_priestia_megaterium_mineral_genes
-      supports: partial
-      explanation: UniProtKB:D5DTY8 (D5DTY8_PRIM1) in Priestia megaterium QM B1551 reference proteome UP000000935 (NCBITaxon:545693) encodes acetate--CoA ligase (acsA; EC 6.2.1.1).
-  - uniprot_accession: UniProtKB:A0A0B6ASU1
-    entry_name: A0A0B6ASU1_PRIM2
-    protein_name: UDP-N-acetyl-D-mannosamine dehydrogenase
-    gene_symbol: wecC
-    entry_status: TREMBL
-    target_organism:
-      id: NCBITaxon:1348623
-      label: Priestia megaterium NBRC 15308 = ATCC 14581
-    reference_proteome_id: UP000031829
-    functional_role: UDP-N-acetyl-D-mannosamine dehydrogenase WecC (EC 1.1.1.336; wecC) catalyzing NAD-dependent oxidation in exopolysaccharide (EPS) and cell-surface polysaccharide biosynthesis.
-    ec_numbers:
-    - EC:1.1.1.336
-    go_terms:
-    - id: GO:0051287
-      label: NAD binding
-    - id: GO:0016628
-      label: oxidoreductase activity, acting on the CH-CH group of donors, NAD or NADP as acceptor
-    - id: GO:0089714
-      label: UDP-N-acetyl-D-mannosamine dehydrogenase activity
-    - id: GO:0000271
-      label: polysaccharide biosynthetic process
-    interpro_ids:
-    - InterPro:IPR008927
-    - InterPro:IPR036291
-    - InterPro:IPR017476
-    - InterPro:IPR014027
-    - InterPro:IPR036220
-    - InterPro:IPR014026
-    - InterPro:IPR001732
-    - InterPro:IPR028359
-    pfam_ids:
-    - Pfam:PF00984
-    - Pfam:PF03720
-    - Pfam:PF03721
-    ncbifam_ids:
-    - NCBIfam:TIGR03026
-    annotation_note: Grounded to Priestia megaterium type-strain reference proteome UP000031829 (strain NBRC 15308 = ATCC 14581, NCBITaxon:1348623) UDP-N-acetyl-D-mannosamine dehydrogenase (wecC, UniProtKB:A0A0B6ASU1), representing Table 1 gene5180 (wecC, Nucleotide sugar dehydrogenase, EPS biosynthesis, Log2FC 4.1, P < 0.001) and the 12-h RT-qPCR gene wecC induced by hematite in Figure 5 (Table 2 primers wecC-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.
-    evidence:
-    - source_ref: dong_2026
-      supports: partial
-      explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR upregulation of wecC (Table 1 gene5180, nucleotide sugar dehydrogenase in EPS biosynthesis) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, accompanying culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because expression association does not establish gene necessity.
-    - source_ref: uniprot_priestia_megaterium_mineral_genes
-      supports: partial
-      explanation: UniProtKB:A0A0B6ASU1 (A0A0B6ASU1_PRIM2) in Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) encodes UDP-N-acetyl-D-mannosamine dehydrogenase (wecC; EC 1.1.1.336).
-  - uniprot_accession: UniProtKB:A0A0B6ACY5
-    entry_name: A0A0B6ACY5_PRIM2
-    protein_name: Diaminopimelate decarboxylase
-    gene_symbol: lysA
-    entry_status: TREMBL
-    target_organism:
-      id: NCBITaxon:1348623
-      label: Priestia megaterium NBRC 15308 = ATCC 14581
-    reference_proteome_id: UP000031829
-    functional_role: Diaminopimelate decarboxylase LysA (EC 4.1.1.20; lysA) catalyzing the terminal step of L-lysine biosynthesis from meso-2,6-diaminopimelate.
-    ec_numbers:
-    - EC:4.1.1.20
-    go_terms:
-    - id: GO:0008836
-      label: diaminopimelate decarboxylase activity
-    - id: GO:0030170
-      label: pyridoxal phosphate binding
-    - id: GO:0009085
-      label: L-lysine biosynthetic process
-    interpro_ids:
-    - InterPro:IPR009006
-    - InterPro:IPR002986
-    - InterPro:IPR022643
-    - InterPro:IPR022644
-    - InterPro:IPR000183
-    - InterPro:IPR029066
-    pfam_ids:
-    - Pfam:PF02784
-    - Pfam:PF00278
-    ncbifam_ids:
-    - NCBIfam:TIGR01048
-    annotation_note: 'Grounded to Priestia megaterium type-strain reference proteome UP000031829 (strain NBRC 15308 = ATCC 14581, NCBITaxon:1348623) diaminopimelate decarboxylase (lysA, UniProtKB:A0A0B6ACY5), representing Table 1 gene4437 (lysA, Amino acid metabolism: Lysine, Log2FC 5.4, P < 0.001) and the 12-h RT-qPCR gene lysA induced by hematite in Figure 5 (Table 2 primers lysA-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.'
-    evidence:
-    - source_ref: dong_2026
-      supports: partial
-      explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR upregulation of lysA (Table 1 gene4437, diaminopimelate decarboxylase) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, alongside culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because functional necessity was not tested by mutagenesis.
-    - source_ref: uniprot_priestia_megaterium_mineral_genes
-      supports: partial
-      explanation: UniProtKB:A0A0B6ACY5 (A0A0B6ACY5_PRIM2) in Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) encodes Diaminopimelate decarboxylase (lysA; EC 4.1.1.20).
-  - uniprot_accession: UniProtKB:A0A0B6AS33
-    entry_name: A0A0B6AS33_PRIM2
-    protein_name: Flagellar basal-body rod protein FlgF
-    gene_symbol: flgF
-    entry_status: TREMBL
-    target_organism:
-      id: NCBITaxon:1348623
-      label: Priestia megaterium NBRC 15308 = ATCC 14581
-    reference_proteome_id: UP000031829
-    functional_role: Flagellar basal-body rod protein FlgF (flgF) involved in bacterial-type flagellar hook-basal body assembly and motility toward mineral surfaces.
-    go_terms:
-    - id: GO:0030694
-      label: bacterial-type flagellum basal body, rod
-    - id: GO:0009424
-      label: bacterial-type flagellum hook
-    - id: GO:0005829
-      label: cytosol
-    - id: GO:0071978
-      label: bacterial-type flagellum-dependent swarming motility
-    interpro_ids:
-    - InterPro:IPR001444
-    - InterPro:IPR019776
-    - InterPro:IPR020013
-    - InterPro:IPR010930
-    - InterPro:IPR037925
-    - InterPro:IPR012836
-    - InterPro:IPR053967
-    pfam_ids:
-    - Pfam:PF00460
-    - Pfam:PF06429
-    - Pfam:PF22692
-    ncbifam_ids:
-    - NCBIfam:TIGR03506
-    - NCBIfam:TIGR02490
-    - NCBIfam:NF009278
-    annotation_note: Grounded to Priestia megaterium type-strain reference proteome UP000031829 (strain NBRC 15308 = ATCC 14581, NCBITaxon:1348623) flagellar basal-body rod protein FlgF (flgF, UniProtKB:A0A0B6AS33), representing Table 1 gene5191 (flgF, Flagellar assembly, Log2FC 5.4, P < 0.001) and the 12-h RT-qPCR gene flgF induced by hematite in Figure 5 (Table 2 primers flgF-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.
-    evidence:
-    - source_ref: dong_2026
-      supports: partial
-      explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR upregulation of flgF (Table 1 gene5191, flagellar hook-basal body protein) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, accompanying culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because gene necessity was not functionally validated.
-    - source_ref: uniprot_priestia_megaterium_mineral_genes
-      supports: partial
-      explanation: UniProtKB:A0A0B6AS33 (A0A0B6AS33_PRIM2) in Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) encodes Flagellar basal-body rod protein FlgF (flgF).
-  - uniprot_accession: UniProtKB:A0A0B6APG1
-    entry_name: A0A0B6APG1_PRIM2
-    protein_name: Glycerol phosphate lipoteichoic acid synthase 1
-    gene_symbol: ltaS1
-    entry_status: TREMBL
-    target_organism:
-      id: NCBITaxon:1348623
-      label: Priestia megaterium NBRC 15308 = ATCC 14581
-    reference_proteome_id: UP000031829
-    functional_role: Glycerol phosphate lipoteichoic acid synthase 1 (ltaS1) participating in Gram-positive cell-wall lipoteichoic acid biosynthesis.
-    go_terms:
-    - id: GO:0005576
-      label: extracellular region
-    - id: GO:0005886
-      label: plasma membrane
-    interpro_ids:
-    - InterPro:IPR017850
-    - InterPro:IPR012160
-    - InterPro:IPR060270
-    - InterPro:IPR050448
-    - InterPro:IPR000917
-    pfam_ids:
-    - Pfam:PF27449
-    - Pfam:PF00884
-    annotation_note: Grounded to Priestia megaterium type-strain reference proteome UP000031829 (strain NBRC 15308 = ATCC 14581, NCBITaxon:1348623) glycerol phosphate lipoteichoic acid synthase 1 (ltaS1, UniProtKB:A0A0B6APG1), representing the lipoteichoic acid synthase family gene ltaS identified among upregulated cell-wall biosynthesis DEGs in Fig. S6D and positively correlated (P < 0.05) with cell-wall exometabolites (ADP ribose and adenosine diphosphate ribose) in the 12-h biotite multi-omics network (Fig. S8), and significantly induced at 12 h by hematite in RT-qPCR Figure 5 (Table 2 primers ltaS-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.
-    evidence:
-    - source_ref: dong_2026
-      supports: partial
-      explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR induction of ltaS (lipoteichoic acid synthase family protein, upregulated in the 12-h biotite transcriptome Fig. S6D, correlated at P < 0.05 with cell-wall exometabolites ADP ribose and adenosine diphosphate ribose in Fig. S8, and reaching its highest 12-h RT-qPCR relative expression in the hematite treatment across tested minerals in Figure 5) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, alongside culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because expression association does not prove single-gene necessity.
-    - source_ref: uniprot_priestia_megaterium_mineral_genes
-      supports: partial
-      explanation: UniProtKB:A0A0B6APG1 (A0A0B6APG1_PRIM2) in Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) encodes Glycerol phosphate lipoteichoic acid synthase 1 (ltaS1).
-  evidence:
-  - source_ref: dong_2026
-    supports: support
-    explanation: Supplement Table S6 (p11; mean +/- SD, n=3) reports filtered Fe of 25.95 +/- 0.90 and 71.43 +/- 1.56 micromol/L at 12 and 24 hours with PMA2-2, versus 0.04 +/- 0.00 micromol/L at both uninoculated endpoints. Culture pH was 4.69 +/- 0.05 and 4.66 +/- 0.06, versus control pH 7.16 +/- 0.04 and 7.12 +/- 0.05. These values support culture-associated mobilization from the stated impure feed; the rounded control SD is not proof of analytical exactness.
-  - source_ref: dong_2026
-    supports: partial
-    explanation: Uninoculated feed controls establish the conditional culture-associated difference, but no pH-matched or killed-cell hematite/feldspar comparator separates acidification from other effects. The acid-buffer comparison, detailed transcriptomics, metabolomics, EPS and biofilm assays concern biotite; their quantitative or causal results are not transferred to this feed. Figure 5 reports a separate 12-hour RT-qPCR response to this mineral; expression associations do not demonstrate gene necessity, and the Discussion explicitly calls for functional validation. No isolated-metal product, whole-feed recovery percentage, mineral-specific mass balance or industrial deployment is demonstrated.
-causal_graphs:
-- id: pma2_2_hematite_dissolution_graph
-  name: Priestia megaterium PMA2-2 mineral-inducible gene response, culture acidification, and iron mobilization from hematite feed
-  description: 'Causal pathway linking the six mineral-inducible genes verified by 12-h RT-qPCR on hematite in Priestia megaterium PMA2-2 (Figure 5 and Table 2 of Dong et al., 2026: spo0A / UniProtKB:P52932, acs / acsA UniProtKB:D5DTY8, wecC / UniProtKB:A0A0B6ASU1, lysA / UniProtKB:A0A0B6ACY5, flgF / UniProtKB:A0A0B6AS33, and ltaS / ltaS1 UniProtKB:A0A0B6APG1, induced 1.4- to 395-fold across tested minerals with ltaS peaking in hematite) to culture-associated acidification of glucose minimal medium (pH 4.69 +/- 0.05 at 12 h and 4.66 +/- 0.06 at 24 h vs 7.16 +/- 0.04 and 7.12 +/- 0.05 in uninoculated controls, Table S6) and 0.45-um-filtered Fe mobilization (25.95 +/- 0.90 and 71.43 +/- 1.56 uM at 12 and 24 h vs 0.04 +/- 0.00 uM in controls) from 0.60 g hematite feed (75-150 um; 86.58% Fe2O3, 9.82% SiO2, Table S7), while preserving that no pH-matched abiotic hematite control or gene knockout was performed.'
-  scope: REPRESENTATIVE_EXAMPLE
-  mechanism_ref: pma2_2_hematite_dissolution
-  nodes:
-  - id: pma2_2_hematite_induced_gene_module
-    label: Priestia megaterium mineral-inducible gene module on hematite (spo0A, acs/acsA, wecC, lysA, flgF, ltaS/ltaS1)
-    node_type: GENE_OR_PROTEIN
-    gene_symbol: spo0A
-    description: 'Six mineral-dissolution-associated genes upregulated at 12 h by RT-qPCR in Priestia megaterium PMA2-2 grown with 0.60 g hematite feed in 60 mL GMM (Figure 5, Table 1, Table 2): Stage 0 sporulation protein A (spo0A, UniProtKB:P52932), acetate--CoA ligase (acs/acsA, UniProtKB:D5DTY8), UDP-N-acetyl-D-mannosamine dehydrogenase (wecC, UniProtKB:A0A0B6ASU1), diaminopimelate decarboxylase (lysA, UniProtKB:A0A0B6ACY5), flagellar basal-body rod protein FlgF (flgF, UniProtKB:A0A0B6AS33), and glycerol phosphate lipoteichoic acid synthase 1 (ltaS/ltaS1, UniProtKB:A0A0B6APG1).'
-    protein_grounding_status: GROUNDED
-    protein_examples:
-    - uniprot_accession: UniProtKB:P52932
-      entry_name: SP0A_PRIMG
-      protein_name: Stage 0 sporulation protein A
-      gene_symbol: spo0A
-      entry_status: SWISS_PROT
-      target_organism:
-        id: NCBITaxon:1404
+  - id: pma2_2_hematite_dissolution
+    name: PMA2-2 culture-associated iron mobilization from a hematite feed
+    process: bioleaching
+    description: PMA2-2 cultures produced higher filtered Fe concentrations than uninoculated hematite-feed controls during a short laboratory assay. Culture acidification accompanied this mobilization; the individual chemical and cellular contributions remain unresolved.
+    context: 'Living Priestia megaterium PMA2-2, isolated from Dracaena cochinchinensis rhizosphere soil in Purple Mountain, Nanjing, China, was precultured in LB for 12 hours at 37 degrees C and 160 rpm, harvested, washed and resuspended in 0.85% NaCl. The other-mineral assays followed the dissolution protocol: triplicate 220 mL flasks with 60 mL sterilized glucose minimal medium, 0.60 g of 75-150 micrometre mineral feed and 0.2 mL of 10^8 cells/mL suspension, incubated at 37 degrees C and 160 rpm, with separate flasks for 12- and 24-hour endpoints. Medium preparation pH was 7.0; its stated composition was 0.015% MgSO4.7H2O, 0.05% Na2HPO4.2H2O, 0.025% (NH4)2SO4, 0.01% KNO3 and 0.5% glucose. Element measurements used ICP-OES after centrifugation and 0.45 micrometre polyethersulfone filtration of a 10 mL aliquot; these are operationally filtered total-element concentrations, without oxidation-state resolution. Feed origin, cleaning procedure and quantitative phase analysis were not specified
+      in the inspected methods and supplement. Table S7 reports 86.58% Fe2O3 and 9.82% SiO2, with other minor oxides, for the hematite feed. The organism is linked to GenBank CM125967.1; the paper''s duplicated accession in its first Methods paragraph is not used to identify the comparator strain.'
+    microbial: true
+    organisms:
+      - id: NCBITaxon:1404
         label: Priestia megaterium
-      functional_role: Stage 0 sporulation protein A (Spo0A) master response regulator controlling biofilm formation and stationary-phase/sporulation transcription in Priestia megaterium.
-      go_terms:
-      - id: GO:0005737
-        label: cytoplasm
-      - id: GO:0005509
-        label: calcium ion binding
-      - id: GO:0003677
-        label: DNA binding
-      - id: GO:0003700
-        label: DNA-binding transcription factor activity
-      - id: GO:0051606
-        label: detection of stimulus
-      - id: GO:0000160
-        label: phosphorelay signal transduction system
-      - id: GO:0042173
-        label: regulation of sporulation resulting in formation of a cellular spore
-      interpro_ids:
-      - InterPro:IPR011006
-      - InterPro:IPR016032
-      - InterPro:IPR001789
-      - InterPro:IPR014879
-      - InterPro:IPR012052
-      - InterPro:IPR052048
-      - InterPro:IPR036388
-      pfam_ids:
-      - Pfam:PF00072
-      - Pfam:PF08769
-      ncbifam_ids:
-      - NCBIfam:TIGR02875
-      annotation_note: 'Grounded to Swiss-Prot Priestia megaterium (NCBITaxon:1404) Stage 0 sporulation protein A (spo0A, UniProtKB:P52932), corresponding to Table 1 gene4504 (spo0A, Biofilm formation / Sporulation, Log2FC 4.4, P < 0.001) and the 12-h RT-qPCR gene spo0A induced by hematite in Figure 5 (Table 2 primers spo0A-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2 (GenBank: CM125967.1).'
-      evidence:
-      - source_ref: dong_2026
-        supports: partial
-        explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR induction of spo0A (Table 1 gene4504, sporulation transcription factor) in Priestia megaterium PMA2-2 cultured in 60 mL GMM with 0.6 g hematite (75-150 um) relative to mineral-free GMM, accompanying culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because RT-qPCR expression association does not establish gene necessity and detailed RNA-seq/metabolomics/acid-buffer assays were restricted to biotite.
-      - source_ref: uniprot_priestia_megaterium_mineral_genes
-        supports: partial
-        explanation: 'Reviewed Swiss-Prot entry UniProtKB:P52932 (SP0A_PRIMG) encodes Stage 0 sporulation protein A (spo0A) in Priestia megaterium (NCBITaxon:1404), providing a species-level reference proxy for strain PMA2-2 (GenBank: CM125967.1).'
-    - uniprot_accession: UniProtKB:D5DTY8
-      entry_name: D5DTY8_PRIM1
-      protein_name: acetate--CoA ligase
-      gene_symbol: acsA
-      entry_status: TREMBL
-      target_organism:
-        id: NCBITaxon:545693
-        label: Priestia megaterium QM B1551
-      reference_proteome_id: UP000000935
-      functional_role: Acetate--CoA ligase (EC 6.2.1.1; acsA) interconverting acetate and acetyl-CoA in bacterial organic-acid metabolism.
-      ec_numbers:
-      - EC:6.2.1.1
-      go_terms:
-      - id: GO:0005829
-        label: cytosol
-      - id: GO:0003987
-        label: acetyl-CoA synthetase activity
-      - id: GO:0006085
-        label: acetyl-CoA biosynthetic process
-      interpro_ids:
-      - InterPro:IPR045851
-      - InterPro:IPR025110
-      - InterPro:IPR020845
-      - InterPro:IPR000873
-      - InterPro:IPR042099
-      pfam_ids:
-      - Pfam:PF00501
-      - Pfam:PF13193
-      ncbifam_ids:
-      - NCBIfam:NF003313
-      annotation_note: 'Grounded to Priestia megaterium reference proteome UP000000935 (strain ATCC 12872 / QM B1551, NCBITaxon:545693) acetate--CoA ligase (acsA, UniProtKB:D5DTY8), representing Table 1 gene2536 (acs, Acyl-CoA ligase, Organic acid metabolism: Acetate, Log2FC 5.6, P < 0.001) and the 12-h RT-qPCR gene acs induced by hematite in Figure 5 (Table 2 primers acs-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.'
-      evidence:
-      - source_ref: dong_2026
-        supports: partial
-        explanation: 'Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR upregulation of acs (Table 1 gene2536, Acyl-CoA ligase in organic acid/acetate metabolism) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, alongside culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because strain PMA2-2 (GenBank: CM125967.1) lacks its own UniProt proteome and no gene-knockout or pH-matched abiotic control was tested on hematite.'
-      - source_ref: uniprot_priestia_megaterium_mineral_genes
-        supports: partial
-        explanation: UniProtKB:D5DTY8 (D5DTY8_PRIM1) in Priestia megaterium QM B1551 reference proteome UP000000935 (NCBITaxon:545693) encodes acetate--CoA ligase (acsA; EC 6.2.1.1).
-    - uniprot_accession: UniProtKB:A0A0B6ASU1
-      entry_name: A0A0B6ASU1_PRIM2
-      protein_name: UDP-N-acetyl-D-mannosamine dehydrogenase
-      gene_symbol: wecC
-      entry_status: TREMBL
-      target_organism:
-        id: NCBITaxon:1348623
-        label: Priestia megaterium NBRC 15308 = ATCC 14581
-      reference_proteome_id: UP000031829
-      functional_role: UDP-N-acetyl-D-mannosamine dehydrogenase WecC (EC 1.1.1.336; wecC) catalyzing NAD-dependent oxidation in exopolysaccharide (EPS) and cell-surface polysaccharide biosynthesis.
-      ec_numbers:
-      - EC:1.1.1.336
-      go_terms:
-      - id: GO:0051287
-        label: NAD binding
-      - id: GO:0016628
-        label: oxidoreductase activity, acting on the CH-CH group of donors, NAD or NADP as acceptor
-      - id: GO:0089714
-        label: UDP-N-acetyl-D-mannosamine dehydrogenase activity
-      - id: GO:0000271
-        label: polysaccharide biosynthetic process
-      interpro_ids:
-      - InterPro:IPR008927
-      - InterPro:IPR036291
-      - InterPro:IPR017476
-      - InterPro:IPR014027
-      - InterPro:IPR036220
-      - InterPro:IPR014026
-      - InterPro:IPR001732
-      - InterPro:IPR028359
-      pfam_ids:
-      - Pfam:PF00984
-      - Pfam:PF03720
-      - Pfam:PF03721
-      ncbifam_ids:
-      - NCBIfam:TIGR03026
-      annotation_note: Grounded to Priestia megaterium type-strain reference proteome UP000031829 (strain NBRC 15308 = ATCC 14581, NCBITaxon:1348623) UDP-N-acetyl-D-mannosamine dehydrogenase (wecC, UniProtKB:A0A0B6ASU1), representing Table 1 gene5180 (wecC, Nucleotide sugar dehydrogenase, EPS biosynthesis, Log2FC 4.1, P < 0.001) and the 12-h RT-qPCR gene wecC induced by hematite in Figure 5 (Table 2 primers wecC-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.
-      evidence:
-      - source_ref: dong_2026
-        supports: partial
-        explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR upregulation of wecC (Table 1 gene5180, nucleotide sugar dehydrogenase in EPS biosynthesis) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, accompanying culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because expression association does not establish gene necessity.
-      - source_ref: uniprot_priestia_megaterium_mineral_genes
-        supports: partial
-        explanation: UniProtKB:A0A0B6ASU1 (A0A0B6ASU1_PRIM2) in Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) encodes UDP-N-acetyl-D-mannosamine dehydrogenase (wecC; EC 1.1.1.336).
-    - uniprot_accession: UniProtKB:A0A0B6ACY5
-      entry_name: A0A0B6ACY5_PRIM2
-      protein_name: Diaminopimelate decarboxylase
-      gene_symbol: lysA
-      entry_status: TREMBL
-      target_organism:
-        id: NCBITaxon:1348623
-        label: Priestia megaterium NBRC 15308 = ATCC 14581
-      reference_proteome_id: UP000031829
-      functional_role: Diaminopimelate decarboxylase LysA (EC 4.1.1.20; lysA) catalyzing the terminal step of L-lysine biosynthesis from meso-2,6-diaminopimelate.
-      ec_numbers:
-      - EC:4.1.1.20
-      go_terms:
-      - id: GO:0008836
-        label: diaminopimelate decarboxylase activity
-      - id: GO:0030170
-        label: pyridoxal phosphate binding
-      - id: GO:0009085
-        label: L-lysine biosynthetic process
-      interpro_ids:
-      - InterPro:IPR009006
-      - InterPro:IPR002986
-      - InterPro:IPR022643
-      - InterPro:IPR022644
-      - InterPro:IPR000183
-      - InterPro:IPR029066
-      pfam_ids:
-      - Pfam:PF02784
-      - Pfam:PF00278
-      ncbifam_ids:
-      - NCBIfam:TIGR01048
-      annotation_note: 'Grounded to Priestia megaterium type-strain reference proteome UP000031829 (strain NBRC 15308 = ATCC 14581, NCBITaxon:1348623) diaminopimelate decarboxylase (lysA, UniProtKB:A0A0B6ACY5), representing Table 1 gene4437 (lysA, Amino acid metabolism: Lysine, Log2FC 5.4, P < 0.001) and the 12-h RT-qPCR gene lysA induced by hematite in Figure 5 (Table 2 primers lysA-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.'
-      evidence:
-      - source_ref: dong_2026
-        supports: partial
-        explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR upregulation of lysA (Table 1 gene4437, diaminopimelate decarboxylase) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, alongside culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because functional necessity was not tested by mutagenesis.
-      - source_ref: uniprot_priestia_megaterium_mineral_genes
-        supports: partial
-        explanation: UniProtKB:A0A0B6ACY5 (A0A0B6ACY5_PRIM2) in Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) encodes Diaminopimelate decarboxylase (lysA; EC 4.1.1.20).
-    - uniprot_accession: UniProtKB:A0A0B6AS33
-      entry_name: A0A0B6AS33_PRIM2
-      protein_name: Flagellar basal-body rod protein FlgF
-      gene_symbol: flgF
-      entry_status: TREMBL
-      target_organism:
-        id: NCBITaxon:1348623
-        label: Priestia megaterium NBRC 15308 = ATCC 14581
-      reference_proteome_id: UP000031829
-      functional_role: Flagellar basal-body rod protein FlgF (flgF) involved in bacterial-type flagellar hook-basal body assembly and motility toward mineral surfaces.
-      go_terms:
-      - id: GO:0030694
-        label: bacterial-type flagellum basal body, rod
-      - id: GO:0009424
-        label: bacterial-type flagellum hook
-      - id: GO:0005829
-        label: cytosol
-      - id: GO:0071978
-        label: bacterial-type flagellum-dependent swarming motility
-      interpro_ids:
-      - InterPro:IPR001444
-      - InterPro:IPR019776
-      - InterPro:IPR020013
-      - InterPro:IPR010930
-      - InterPro:IPR037925
-      - InterPro:IPR012836
-      - InterPro:IPR053967
-      pfam_ids:
-      - Pfam:PF00460
-      - Pfam:PF06429
-      - Pfam:PF22692
-      ncbifam_ids:
-      - NCBIfam:TIGR03506
-      - NCBIfam:TIGR02490
-      - NCBIfam:NF009278
-      annotation_note: Grounded to Priestia megaterium type-strain reference proteome UP000031829 (strain NBRC 15308 = ATCC 14581, NCBITaxon:1348623) flagellar basal-body rod protein FlgF (flgF, UniProtKB:A0A0B6AS33), representing Table 1 gene5191 (flgF, Flagellar assembly, Log2FC 5.4, P < 0.001) and the 12-h RT-qPCR gene flgF induced by hematite in Figure 5 (Table 2 primers flgF-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.
-      evidence:
-      - source_ref: dong_2026
-        supports: partial
-        explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR upregulation of flgF (Table 1 gene5191, flagellar hook-basal body protein) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, accompanying culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because gene necessity was not functionally validated.
-      - source_ref: uniprot_priestia_megaterium_mineral_genes
-        supports: partial
-        explanation: UniProtKB:A0A0B6AS33 (A0A0B6AS33_PRIM2) in Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) encodes Flagellar basal-body rod protein FlgF (flgF).
-    - uniprot_accession: UniProtKB:A0A0B6APG1
-      entry_name: A0A0B6APG1_PRIM2
-      protein_name: Glycerol phosphate lipoteichoic acid synthase 1
-      gene_symbol: ltaS1
-      entry_status: TREMBL
-      target_organism:
-        id: NCBITaxon:1348623
-        label: Priestia megaterium NBRC 15308 = ATCC 14581
-      reference_proteome_id: UP000031829
-      functional_role: Glycerol phosphate lipoteichoic acid synthase 1 (ltaS1) participating in Gram-positive cell-wall lipoteichoic acid biosynthesis.
-      go_terms:
-      - id: GO:0005576
-        label: extracellular region
-      - id: GO:0005886
-        label: plasma membrane
-      interpro_ids:
-      - InterPro:IPR017850
-      - InterPro:IPR012160
-      - InterPro:IPR060270
-      - InterPro:IPR050448
-      - InterPro:IPR000917
-      pfam_ids:
-      - Pfam:PF27449
-      - Pfam:PF00884
-      annotation_note: Grounded to Priestia megaterium type-strain reference proteome UP000031829 (strain NBRC 15308 = ATCC 14581, NCBITaxon:1348623) glycerol phosphate lipoteichoic acid synthase 1 (ltaS1, UniProtKB:A0A0B6APG1), representing the lipoteichoic acid synthase family gene ltaS identified among upregulated cell-wall biosynthesis DEGs in Fig. S6D and positively correlated (P < 0.05) with cell-wall exometabolites (ADP ribose and adenosine diphosphate ribose) in the 12-h biotite multi-omics network (Fig. S8), and significantly induced at 12 h by hematite in RT-qPCR Figure 5 (Table 2 primers ltaS-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.
-      evidence:
-      - source_ref: dong_2026
-        supports: partial
-        explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR induction of ltaS (lipoteichoic acid synthase family protein, upregulated in the 12-h biotite transcriptome Fig. S6D, correlated at P < 0.05 with cell-wall exometabolites ADP ribose and adenosine diphosphate ribose in Fig. S8, and reaching its highest 12-h RT-qPCR relative expression in the hematite treatment across tested minerals in Figure 5) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, alongside culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because expression association does not prove single-gene necessity.
-      - source_ref: uniprot_priestia_megaterium_mineral_genes
-        supports: partial
-        explanation: UniProtKB:A0A0B6APG1 (A0A0B6APG1_PRIM2) in Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) encodes Glycerol phosphate lipoteichoic acid synthase 1 (ltaS1).
-  - id: pma2_2_gmm_culture_acidification_hematite
-    label: PMA2-2 glucose minimal medium acidification (pH 4.69 +/- 0.05 at 12 h and 4.66 +/- 0.06 at 24 h vs control pH 7.16-7.12)
-    node_type: CHEMICAL_ENTITY
-    description: Culture-associated acidification of 60 mL glucose minimal medium (0.5% glucose, initial pH 7.0) inoculated with 0.2 mL of 10^8 cells/mL Priestia megaterium PMA2-2 to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) compared with pH 7.16 +/- 0.04 and 7.12 +/- 0.05 in uninoculated hematite-feed controls (Table S6).
-    protein_grounding_status: NOT_APPLICABLE
-  - id: hematite_feed_75_150_um
-    label: Author-designated hematite feed (0.60 g per 60 mL GMM, 75-150 um; 86.58% Fe2O3, 9.82% SiO2, Table S7)
-    node_type: MATERIAL_OR_PHASE
-    description: Author-designated hematite mineral feed (75-150 um particle size, 0.60 g in 60 mL GMM; Table S7 bulk oxides 86.58% Fe2O3 and 9.82% SiO2 plus minor oxides, without quantitative phase analysis).
-    protein_grounding_status: NOT_APPLICABLE
-  - id: filtered_fe_in_hematite_supernatant
-    label: 0.45-um-filtered Fe in hematite culture supernatant (25.95 +/- 0.90 uM at 12 h and 71.43 +/- 1.56 uM at 24 h vs 0.04 +/- 0.00 uM control)
-    node_type: CHEMICAL_ENTITY
-    description: Operationally dissolved Fe measured by ICP-OES after centrifugation and 0.45-um polyethersulfone filtration at 12 h (25.95 +/- 0.90 uM) and 24 h (71.43 +/- 1.56 uM) in PMA2-2 hematite cultures versus 0.04 +/- 0.00 uM in uninoculated controls (Table S6, n=3).
-    protein_grounding_status: NOT_APPLICABLE
-  edges:
-  - source: pma2_2_hematite_induced_gene_module
-    target: pma2_2_gmm_culture_acidification_hematite
-    predicate: modulates
-    relationship: hematite-induced organic-acid/EPS/biofilm/cell-wall gene response accompanying GMM acidification to pH 4.66-4.69
-    description: Induction of organic-acid metabolism (acs), EPS/biofilm formation (wecC, spo0A), amino-acid metabolism (lysA), motility (flgF), and cell-wall lipoteichoic acid synthesis (ltaS) in hematite-exposed PMA2-2 accompanies culture acidification of GMM to pH 4.69 (12 h) and 4.66 (24 h).
+    protein_examples:
+      - uniprot_accession: UniProtKB:P52932
+        entry_name: SP0A_PRIMG
+        protein_name: Stage 0 sporulation protein A
+        gene_symbol: spo0A
+        entry_status: SWISS_PROT
+        target_organism:
+          id: NCBITaxon:1404
+          label: Priestia megaterium
+        functional_role: Stage 0 sporulation protein A (Spo0A) master response regulator controlling biofilm formation and stationary-phase/sporulation transcription in Priestia megaterium.
+        go_terms:
+          - id: GO:0005737
+            label: cytoplasm
+          - id: GO:0005509
+            label: calcium ion binding
+          - id: GO:0003677
+            label: DNA binding
+          - id: GO:0003700
+            label: DNA-binding transcription factor activity
+          - id: GO:0051606
+            label: detection of stimulus
+          - id: GO:0000160
+            label: phosphorelay signal transduction system
+          - id: GO:0042173
+            label: regulation of sporulation resulting in formation of a cellular spore
+        interpro_ids:
+          - InterPro:IPR011006
+          - InterPro:IPR016032
+          - InterPro:IPR001789
+          - InterPro:IPR014879
+          - InterPro:IPR012052
+          - InterPro:IPR052048
+          - InterPro:IPR036388
+        pfam_ids:
+          - Pfam:PF00072
+          - Pfam:PF08769
+        ncbifam_ids:
+          - NCBIfam:TIGR02875
+        annotation_note: 'Grounded to Swiss-Prot Priestia megaterium (NCBITaxon:1404) Stage 0 sporulation protein A (spo0A, UniProtKB:P52932), corresponding to Table 1 gene4504 (spo0A, Biofilm formation / Sporulation, Log2FC 4.4, P < 0.001) and the 12-h RT-qPCR gene spo0A induced by hematite in Figure 5 (Table 2 primers spo0A-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2 (GenBank: CM125967.1).'
+        evidence:
+          - source_ref: dong_2026
+            supports: partial
+            explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR induction of spo0A (Table 1 gene4504, sporulation transcription factor) in Priestia megaterium PMA2-2 cultured in 60 mL GMM with 0.6 g hematite (75-150 um) relative to mineral-free GMM, accompanying culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because RT-qPCR expression association does not establish gene necessity and detailed RNA-seq/metabolomics/acid-buffer assays were restricted to biotite.
+          - source_ref: uniprot_priestia_megaterium_mineral_genes
+            supports: partial
+            explanation: 'Reviewed Swiss-Prot entry UniProtKB:P52932 (SP0A_PRIMG) encodes Stage 0 sporulation protein A (spo0A) in Priestia megaterium (NCBITaxon:1404), providing a species-level reference proxy for strain PMA2-2 (GenBank: CM125967.1).'
+      - uniprot_accession: UniProtKB:D5DTY8
+        entry_name: D5DTY8_PRIM1
+        protein_name: acetate--CoA ligase
+        gene_symbol: acsA
+        entry_status: TREMBL
+        target_organism:
+          id: NCBITaxon:545693
+          label: Priestia megaterium QM B1551
+        reference_proteome_id: UP000000935
+        functional_role: Acetate--CoA ligase (EC 6.2.1.1; acsA) interconverting acetate and acetyl-CoA in bacterial organic-acid metabolism.
+        ec_numbers:
+          - EC:6.2.1.1
+        go_terms:
+          - id: GO:0005829
+            label: cytosol
+          - id: GO:0003987
+            label: acetyl-CoA synthetase activity
+          - id: GO:0006085
+            label: acetyl-CoA biosynthetic process
+        interpro_ids:
+          - InterPro:IPR045851
+          - InterPro:IPR025110
+          - InterPro:IPR020845
+          - InterPro:IPR000873
+          - InterPro:IPR042099
+        pfam_ids:
+          - Pfam:PF00501
+          - Pfam:PF13193
+        ncbifam_ids:
+          - NCBIfam:NF003313
+        annotation_note: 'Grounded to Priestia megaterium reference proteome UP000000935 (strain ATCC 12872 / QM B1551, NCBITaxon:545693) acetate--CoA ligase (acsA, UniProtKB:D5DTY8), representing Table 1 gene2536 (acs, Acyl-CoA ligase, Organic acid metabolism: Acetate, Log2FC 5.6, P < 0.001) and the 12-h RT-qPCR gene acs induced by hematite in Figure 5 (Table 2 primers acs-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.'
+        evidence:
+          - source_ref: dong_2026
+            supports: partial
+            explanation: 'Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR upregulation of acs (Table 1 gene2536, Acyl-CoA ligase in organic acid/acetate metabolism) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, alongside culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because strain PMA2-2 (GenBank: CM125967.1) lacks its own UniProt proteome and no gene-knockout or pH-matched abiotic control was tested on hematite.'
+          - source_ref: uniprot_priestia_megaterium_mineral_genes
+            supports: partial
+            explanation: UniProtKB:D5DTY8 (D5DTY8_PRIM1) in Priestia megaterium QM B1551 reference proteome UP000000935 (NCBITaxon:545693) encodes acetate--CoA ligase (acsA; EC 6.2.1.1).
+      - uniprot_accession: UniProtKB:A0A0B6ASU1
+        entry_name: A0A0B6ASU1_PRIM2
+        protein_name: UDP-N-acetyl-D-mannosamine dehydrogenase
+        gene_symbol: wecC
+        entry_status: TREMBL
+        target_organism:
+          id: NCBITaxon:1348623
+          label: Priestia megaterium NBRC 15308 = ATCC 14581
+        reference_proteome_id: UP000031829
+        functional_role: UDP-N-acetyl-D-mannosamine dehydrogenase WecC (EC 1.1.1.336; wecC) catalyzing NAD-dependent oxidation in exopolysaccharide (EPS) and cell-surface polysaccharide biosynthesis.
+        ec_numbers:
+          - EC:1.1.1.336
+        go_terms:
+          - id: GO:0051287
+            label: NAD binding
+          - id: GO:0016628
+            label: oxidoreductase activity, acting on the CH-CH group of donors, NAD or NADP as acceptor
+          - id: GO:0089714
+            label: UDP-N-acetyl-D-mannosamine dehydrogenase activity
+          - id: GO:0000271
+            label: polysaccharide biosynthetic process
+        interpro_ids:
+          - InterPro:IPR008927
+          - InterPro:IPR036291
+          - InterPro:IPR017476
+          - InterPro:IPR014027
+          - InterPro:IPR036220
+          - InterPro:IPR014026
+          - InterPro:IPR001732
+          - InterPro:IPR028359
+        pfam_ids:
+          - Pfam:PF00984
+          - Pfam:PF03720
+          - Pfam:PF03721
+        ncbifam_ids:
+          - NCBIfam:TIGR03026
+        annotation_note: Grounded to Priestia megaterium type-strain reference proteome UP000031829 (strain NBRC 15308 = ATCC 14581, NCBITaxon:1348623) UDP-N-acetyl-D-mannosamine dehydrogenase (wecC, UniProtKB:A0A0B6ASU1), representing Table 1 gene5180 (wecC, Nucleotide sugar dehydrogenase, EPS biosynthesis, Log2FC 4.1, P < 0.001) and the 12-h RT-qPCR gene wecC induced by hematite in Figure 5 (Table 2 primers wecC-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.
+        evidence:
+          - source_ref: dong_2026
+            supports: partial
+            explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR upregulation of wecC (Table 1 gene5180, nucleotide sugar dehydrogenase in EPS biosynthesis) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, accompanying culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because expression association does not establish gene necessity.
+          - source_ref: uniprot_priestia_megaterium_mineral_genes
+            supports: partial
+            explanation: UniProtKB:A0A0B6ASU1 (A0A0B6ASU1_PRIM2) in Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) encodes UDP-N-acetyl-D-mannosamine dehydrogenase (wecC; EC 1.1.1.336).
+      - uniprot_accession: UniProtKB:A0A0B6ACY5
+        entry_name: A0A0B6ACY5_PRIM2
+        protein_name: Diaminopimelate decarboxylase
+        gene_symbol: lysA
+        entry_status: TREMBL
+        target_organism:
+          id: NCBITaxon:1348623
+          label: Priestia megaterium NBRC 15308 = ATCC 14581
+        reference_proteome_id: UP000031829
+        functional_role: Diaminopimelate decarboxylase LysA (EC 4.1.1.20; lysA) catalyzing the terminal step of L-lysine biosynthesis from meso-2,6-diaminopimelate.
+        ec_numbers:
+          - EC:4.1.1.20
+        go_terms:
+          - id: GO:0008836
+            label: diaminopimelate decarboxylase activity
+          - id: GO:0030170
+            label: pyridoxal phosphate binding
+          - id: GO:0009085
+            label: L-lysine biosynthetic process
+        interpro_ids:
+          - InterPro:IPR009006
+          - InterPro:IPR002986
+          - InterPro:IPR022643
+          - InterPro:IPR022644
+          - InterPro:IPR000183
+          - InterPro:IPR029066
+        pfam_ids:
+          - Pfam:PF02784
+          - Pfam:PF00278
+        ncbifam_ids:
+          - NCBIfam:TIGR01048
+        annotation_note: 'Grounded to Priestia megaterium type-strain reference proteome UP000031829 (strain NBRC 15308 = ATCC 14581, NCBITaxon:1348623) diaminopimelate decarboxylase (lysA, UniProtKB:A0A0B6ACY5), representing Table 1 gene4437 (lysA, Amino acid metabolism: Lysine, Log2FC 5.4, P < 0.001) and the 12-h RT-qPCR gene lysA induced by hematite in Figure 5 (Table 2 primers lysA-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.'
+        evidence:
+          - source_ref: dong_2026
+            supports: partial
+            explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR upregulation of lysA (Table 1 gene4437, diaminopimelate decarboxylase) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, alongside culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because functional necessity was not tested by mutagenesis.
+          - source_ref: uniprot_priestia_megaterium_mineral_genes
+            supports: partial
+            explanation: UniProtKB:A0A0B6ACY5 (A0A0B6ACY5_PRIM2) in Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) encodes Diaminopimelate decarboxylase (lysA; EC 4.1.1.20).
+      - uniprot_accession: UniProtKB:A0A0B6AS33
+        entry_name: A0A0B6AS33_PRIM2
+        protein_name: Flagellar basal-body rod protein FlgF
+        gene_symbol: flgF
+        entry_status: TREMBL
+        target_organism:
+          id: NCBITaxon:1348623
+          label: Priestia megaterium NBRC 15308 = ATCC 14581
+        reference_proteome_id: UP000031829
+        functional_role: Flagellar basal-body rod protein FlgF (flgF) involved in bacterial-type flagellar hook-basal body assembly and motility toward mineral surfaces.
+        go_terms:
+          - id: GO:0030694
+            label: bacterial-type flagellum basal body, rod
+          - id: GO:0009424
+            label: bacterial-type flagellum hook
+          - id: GO:0005829
+            label: cytosol
+          - id: GO:0071978
+            label: bacterial-type flagellum-dependent swarming motility
+        interpro_ids:
+          - InterPro:IPR001444
+          - InterPro:IPR019776
+          - InterPro:IPR020013
+          - InterPro:IPR010930
+          - InterPro:IPR037925
+          - InterPro:IPR012836
+          - InterPro:IPR053967
+        pfam_ids:
+          - Pfam:PF00460
+          - Pfam:PF06429
+          - Pfam:PF22692
+        ncbifam_ids:
+          - NCBIfam:TIGR03506
+          - NCBIfam:TIGR02490
+          - NCBIfam:NF009278
+        annotation_note: Grounded to Priestia megaterium type-strain reference proteome UP000031829 (strain NBRC 15308 = ATCC 14581, NCBITaxon:1348623) flagellar basal-body rod protein FlgF (flgF, UniProtKB:A0A0B6AS33), representing Table 1 gene5191 (flgF, Flagellar assembly, Log2FC 5.4, P < 0.001) and the 12-h RT-qPCR gene flgF induced by hematite in Figure 5 (Table 2 primers flgF-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.
+        evidence:
+          - source_ref: dong_2026
+            supports: partial
+            explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR upregulation of flgF (Table 1 gene5191, flagellar hook-basal body protein) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, accompanying culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because gene necessity was not functionally validated.
+          - source_ref: uniprot_priestia_megaterium_mineral_genes
+            supports: partial
+            explanation: UniProtKB:A0A0B6AS33 (A0A0B6AS33_PRIM2) in Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) encodes Flagellar basal-body rod protein FlgF (flgF).
+      - uniprot_accession: UniProtKB:A0A0B6APG1
+        entry_name: A0A0B6APG1_PRIM2
+        protein_name: Glycerol phosphate lipoteichoic acid synthase 1
+        gene_symbol: ltaS1
+        entry_status: TREMBL
+        target_organism:
+          id: NCBITaxon:1348623
+          label: Priestia megaterium NBRC 15308 = ATCC 14581
+        reference_proteome_id: UP000031829
+        functional_role: Glycerol phosphate lipoteichoic acid synthase 1 (ltaS1) participating in Gram-positive cell-wall lipoteichoic acid biosynthesis.
+        go_terms:
+          - id: GO:0005576
+            label: extracellular region
+          - id: GO:0005886
+            label: plasma membrane
+        interpro_ids:
+          - InterPro:IPR017850
+          - InterPro:IPR012160
+          - InterPro:IPR060270
+          - InterPro:IPR050448
+          - InterPro:IPR000917
+        pfam_ids:
+          - Pfam:PF27449
+          - Pfam:PF00884
+        annotation_note: Grounded to Priestia megaterium type-strain reference proteome UP000031829 (strain NBRC 15308 = ATCC 14581, NCBITaxon:1348623) glycerol phosphate lipoteichoic acid synthase 1 (ltaS1, UniProtKB:A0A0B6APG1), representing the lipoteichoic acid synthase family gene ltaS identified among upregulated cell-wall biosynthesis DEGs in Fig. S6D and positively correlated (P < 0.05) with cell-wall exometabolites (ADP ribose and adenosine diphosphate ribose) in the 12-h biotite multi-omics network (Fig. S8), and significantly induced at 12 h by hematite in RT-qPCR Figure 5 (Table 2 primers ltaS-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.
+        evidence:
+          - source_ref: dong_2026
+            supports: partial
+            explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR induction of ltaS (lipoteichoic acid synthase family protein, upregulated in the 12-h biotite transcriptome Fig. S6D, correlated at P < 0.05 with cell-wall exometabolites ADP ribose and adenosine diphosphate ribose in Fig. S8, and reaching its highest 12-h RT-qPCR relative expression in the hematite treatment across tested minerals in Figure 5) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, alongside culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because expression association does not prove single-gene necessity.
+          - source_ref: uniprot_priestia_megaterium_mineral_genes
+            supports: partial
+            explanation: UniProtKB:A0A0B6APG1 (A0A0B6APG1_PRIM2) in Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) encodes Glycerol phosphate lipoteichoic acid synthase 1 (ltaS1).
+      - uniprot_accession: UniProtKB:A0A0B6ANB3
+        entry_name: A0A0B6ANB3_PRIM2
+        protein_name: Stage 0 sporulation protein A
+        gene_symbol: spo0A
+        entry_status: TREMBL
+        target_organism:
+          id: NCBITaxon:1348623
+          label: Priestia megaterium NBRC 15308 = ATCC 14581
+        reference_proteome_id: UP000031829
+        functional_role: Stage 0 sporulation protein A (Spo0A; spo0A / BG04_1367) master response regulator in the Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome controlling biofilm formation and sporulation transcription.
+        go_terms:
+          - id: GO:0005737
+            label: cytoplasm
+          - id: GO:0005509
+            label: calcium ion binding
+          - id: GO:0003677
+            label: DNA binding
+          - id: GO:0003700
+            label: DNA-binding transcription factor activity
+          - id: GO:0051606
+            label: detection of stimulus
+          - id: GO:0000160
+            label: phosphorelay signal transduction system
+          - id: GO:0042173
+            label: regulation of sporulation resulting in formation of a cellular spore
+          - id: GO:0030435
+            label: sporulation resulting in formation of a cellular spore
+        interpro_ids:
+          - InterPro:IPR011006
+          - InterPro:IPR016032
+          - InterPro:IPR001789
+          - InterPro:IPR014879
+          - InterPro:IPR012052
+          - InterPro:IPR052048
+          - InterPro:IPR036388
+        pfam_ids:
+          - Pfam:PF00072
+          - Pfam:PF08769
+        ncbifam_ids:
+          - NCBIfam:TIGR02875
+        annotation_note: 'Grounded to Priestia megaterium type-strain reference proteome UP000031829 (strain NBRC 15308 = ATCC 14581, NCBITaxon:1348623) Stage 0 sporulation protein A (spo0A, ORF BG04_1367, UniProtKB:A0A0B6ANB3), providing UP000031829 reference-proteome parity with wecC, lysA, flgF, and ltaS1 alongside species-level reviewed Swiss-Prot UniProtKB:P52932 for Table 1 gene4504 (spo0A, Biofilm formation / Sporulation, Log2FC 4.4, P < 0.001) and the 12-h RT-qPCR gene spo0A induced by hematite in Figure 5 (Table 2 primers spo0A-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2 (GenBank: CM125967.1).'
+        evidence:
+          - source_ref: dong_2026
+            supports: partial
+            explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR induction of spo0A (Table 1 gene4504, sporulation transcription factor) in Priestia megaterium PMA2-2 cultured in 60 mL GMM with 0.6 g hematite (75-150 um) relative to mineral-free GMM, accompanying culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because RT-qPCR expression association does not establish gene necessity.
+          - source_ref: uniprot_priestia_megaterium_mineral_genes
+            supports: partial
+            explanation: UniProtKB:A0A0B6ANB3 (A0A0B6ANB3_PRIM2) in Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) encodes Stage 0 sporulation protein A (spo0A, ORF BG04_1367).
     evidence:
-    - source_ref: dong_2026
-      supports: partial
-      explanation: Figure 5, Table 2, and Table S6 of Dong et al. (2026) document 12-h RT-qPCR induction of spo0A, acs, wecC, lysA, flgF, and ltaS on hematite alongside culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h); support is partial because RT-qPCR correlation does not demonstrate gene necessity and detailed metabolomics/RNA-seq were conducted on biotite.
-  - source: pma2_2_gmm_culture_acidification_hematite
-    target: hematite_feed_75_150_um
-    predicate: solubilizes
-    relationship: culture-associated dissolution of the 86.58% Fe2O3 / 9.82% SiO2 hematite feed at 37 C and 160 rpm
-    description: Acidified PMA2-2 GMM cultures (pH 4.69-4.66) promote iron mobilization from the 0.60 g hematite feed (75-150 um) over 12-24 h at 37 C and 160 rpm compared with uninoculated controls (pH 7.16-7.12).
-    evidence:
-    - source_ref: dong_2026
-      supports: partial
-      explanation: Table S6 shows concurrent culture acidification and elevated filtered Fe relative to uninoculated hematite controls; support is partial because no pH-matched abiotic buffer or killed-cell hematite control separates proton-promoted dissolution from cellular attachment or chelation.
-  - source: hematite_feed_75_150_um
-    target: filtered_fe_in_hematite_supernatant
-    predicate: produces
-    relationship: release of 0.45-um-filtered Fe (25.95 +/- 0.90 uM at 12 h; 71.43 +/- 1.56 uM at 24 h)
-    description: Mobilization from the 0.60 g hematite feed in PMA2-2 cultures yields 25.95 +/- 0.90 uM (12 h) and 71.43 +/- 1.56 uM (24 h) filtered Fe versus 0.04 +/- 0.00 uM in uninoculated controls (Table S6).
-    evidence:
-    - source_ref: dong_2026
-      supports: support
-      explanation: Supplement Table S6 (p. 11, mean +/- SD, n=3) directly reports 0.45-um-filtered ICP-OES Fe concentrations of 25.95 +/- 0.90 uM (12 h) and 71.43 +/- 1.56 uM (24 h) with PMA2-2 versus 0.04 +/- 0.00 uM at both uninoculated endpoints.
+      - source_ref: dong_2026
+        supports: support
+        explanation: Supplement Table S6 (p11; mean +/- SD, n=3) reports filtered Fe of 25.95 +/- 0.90 and 71.43 +/- 1.56 micromol/L at 12 and 24 hours with PMA2-2, versus 0.04 +/- 0.00 micromol/L at both uninoculated endpoints. Culture pH was 4.69 +/- 0.05 and 4.66 +/- 0.06, versus control pH 7.16 +/- 0.04 and 7.12 +/- 0.05. These values support culture-associated mobilization from the stated impure feed; the rounded control SD is not proof of analytical exactness.
+      - source_ref: dong_2026
+        supports: partial
+        explanation: Uninoculated feed controls establish the conditional culture-associated difference, but no pH-matched or killed-cell hematite/feldspar comparator separates acidification from other effects. The acid-buffer comparison, detailed transcriptomics, metabolomics, EPS and biofilm assays concern biotite; their quantitative or causal results are not transferred to this feed. Figure 5 reports a separate 12-hour RT-qPCR response to this mineral; expression associations do not demonstrate gene necessity, and the Discussion explicitly calls for functional validation. No isolated-metal product, whole-feed recovery percentage, mineral-specific mass balance or industrial deployment is demonstrated.
+causal_graphs:
+  - id: pma2_2_hematite_dissolution_graph
+    name: Priestia megaterium PMA2-2 mineral-inducible gene response, culture acidification, and iron mobilization from hematite feed
+    description: 'Causal pathway linking the six mineral-inducible genes verified by 12-h RT-qPCR on hematite in Priestia megaterium PMA2-2 (Figure 5 and Table 2 of Dong et al., 2026: spo0A / UniProtKB:P52932 and UP000031829 UniProtKB:A0A0B6ANB3, acs / acsA UniProtKB:D5DTY8, wecC / UniProtKB:A0A0B6ASU1, lysA / UniProtKB:A0A0B6ACY5, flgF / UniProtKB:A0A0B6AS33, and ltaS / ltaS1 UniProtKB:A0A0B6APG1, induced 1.4- to 395-fold across tested minerals with ltaS peaking in hematite) to culture-associated acidification of glucose minimal medium (pH 4.69 +/- 0.05 at 12 h and 4.66 +/- 0.06 at 24 h vs 7.16 +/- 0.04 and 7.12 +/- 0.05 in uninoculated controls, Table S6) and 0.45-um-filtered Fe mobilization (25.95 +/- 0.90 and 71.43 +/- 1.56 uM at 12 and 24 h vs 0.04 +/- 0.00 uM in controls) from 0.60 g hematite feed (75-150 um; 86.58% Fe2O3, 9.82% SiO2, Table S7), while preserving that no pH-matched abiotic hematite control or gene knockout was performed.'
+    scope: REPRESENTATIVE_EXAMPLE
+    mechanism_ref: pma2_2_hematite_dissolution
+    nodes:
+      - id: pma2_2_hematite_induced_gene_module
+        label: Priestia megaterium mineral-inducible gene module on hematite (spo0A, acs/acsA, wecC, lysA, flgF, ltaS/ltaS1)
+        node_type: GENE_OR_PROTEIN
+        gene_symbol: spo0A
+        description: 'Six mineral-dissolution-associated genes upregulated at 12 h by RT-qPCR in Priestia megaterium PMA2-2 grown with 0.60 g hematite feed in 60 mL GMM (Figure 5, Table 1, Table 2): Stage 0 sporulation protein A (spo0A, Swiss-Prot UniProtKB:P52932 and type-strain UP000031829 BG04_1367 UniProtKB:A0A0B6ANB3), acetate--CoA ligase (acs/acsA, UniProtKB:D5DTY8), UDP-N-acetyl-D-mannosamine dehydrogenase (wecC, UniProtKB:A0A0B6ASU1), diaminopimelate decarboxylase (lysA, UniProtKB:A0A0B6ACY5), flagellar basal-body rod protein FlgF (flgF, UniProtKB:A0A0B6AS33), and glycerol phosphate lipoteichoic acid synthase 1 (ltaS/ltaS1, UniProtKB:A0A0B6APG1).'
+        protein_grounding_status: GROUNDED
+        protein_examples:
+          - uniprot_accession: UniProtKB:P52932
+            entry_name: SP0A_PRIMG
+            protein_name: Stage 0 sporulation protein A
+            gene_symbol: spo0A
+            entry_status: SWISS_PROT
+            target_organism:
+              id: NCBITaxon:1404
+              label: Priestia megaterium
+            functional_role: Stage 0 sporulation protein A (Spo0A) master response regulator controlling biofilm formation and stationary-phase/sporulation transcription in Priestia megaterium.
+            go_terms:
+              - id: GO:0005737
+                label: cytoplasm
+              - id: GO:0005509
+                label: calcium ion binding
+              - id: GO:0003677
+                label: DNA binding
+              - id: GO:0003700
+                label: DNA-binding transcription factor activity
+              - id: GO:0051606
+                label: detection of stimulus
+              - id: GO:0000160
+                label: phosphorelay signal transduction system
+              - id: GO:0042173
+                label: regulation of sporulation resulting in formation of a cellular spore
+            interpro_ids:
+              - InterPro:IPR011006
+              - InterPro:IPR016032
+              - InterPro:IPR001789
+              - InterPro:IPR014879
+              - InterPro:IPR012052
+              - InterPro:IPR052048
+              - InterPro:IPR036388
+            pfam_ids:
+              - Pfam:PF00072
+              - Pfam:PF08769
+            ncbifam_ids:
+              - NCBIfam:TIGR02875
+            annotation_note: 'Grounded to Swiss-Prot Priestia megaterium (NCBITaxon:1404) Stage 0 sporulation protein A (spo0A, UniProtKB:P52932), corresponding to Table 1 gene4504 (spo0A, Biofilm formation / Sporulation, Log2FC 4.4, P < 0.001) and the 12-h RT-qPCR gene spo0A induced by hematite in Figure 5 (Table 2 primers spo0A-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2 (GenBank: CM125967.1).'
+            evidence:
+              - source_ref: dong_2026
+                supports: partial
+                explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR induction of spo0A (Table 1 gene4504, sporulation transcription factor) in Priestia megaterium PMA2-2 cultured in 60 mL GMM with 0.6 g hematite (75-150 um) relative to mineral-free GMM, accompanying culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because RT-qPCR expression association does not establish gene necessity and detailed RNA-seq/metabolomics/acid-buffer assays were restricted to biotite.
+              - source_ref: uniprot_priestia_megaterium_mineral_genes
+                supports: partial
+                explanation: 'Reviewed Swiss-Prot entry UniProtKB:P52932 (SP0A_PRIMG) encodes Stage 0 sporulation protein A (spo0A) in Priestia megaterium (NCBITaxon:1404), providing a species-level reference proxy for strain PMA2-2 (GenBank: CM125967.1).'
+          - uniprot_accession: UniProtKB:D5DTY8
+            entry_name: D5DTY8_PRIM1
+            protein_name: acetate--CoA ligase
+            gene_symbol: acsA
+            entry_status: TREMBL
+            target_organism:
+              id: NCBITaxon:545693
+              label: Priestia megaterium QM B1551
+            reference_proteome_id: UP000000935
+            functional_role: Acetate--CoA ligase (EC 6.2.1.1; acsA) interconverting acetate and acetyl-CoA in bacterial organic-acid metabolism.
+            ec_numbers:
+              - EC:6.2.1.1
+            go_terms:
+              - id: GO:0005829
+                label: cytosol
+              - id: GO:0003987
+                label: acetyl-CoA synthetase activity
+              - id: GO:0006085
+                label: acetyl-CoA biosynthetic process
+            interpro_ids:
+              - InterPro:IPR045851
+              - InterPro:IPR025110
+              - InterPro:IPR020845
+              - InterPro:IPR000873
+              - InterPro:IPR042099
+            pfam_ids:
+              - Pfam:PF00501
+              - Pfam:PF13193
+            ncbifam_ids:
+              - NCBIfam:NF003313
+            annotation_note: 'Grounded to Priestia megaterium reference proteome UP000000935 (strain ATCC 12872 / QM B1551, NCBITaxon:545693) acetate--CoA ligase (acsA, UniProtKB:D5DTY8), representing Table 1 gene2536 (acs, Acyl-CoA ligase, Organic acid metabolism: Acetate, Log2FC 5.6, P < 0.001) and the 12-h RT-qPCR gene acs induced by hematite in Figure 5 (Table 2 primers acs-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.'
+            evidence:
+              - source_ref: dong_2026
+                supports: partial
+                explanation: 'Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR upregulation of acs (Table 1 gene2536, Acyl-CoA ligase in organic acid/acetate metabolism) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, alongside culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because strain PMA2-2 (GenBank: CM125967.1) lacks its own UniProt proteome and no gene-knockout or pH-matched abiotic control was tested on hematite.'
+              - source_ref: uniprot_priestia_megaterium_mineral_genes
+                supports: partial
+                explanation: UniProtKB:D5DTY8 (D5DTY8_PRIM1) in Priestia megaterium QM B1551 reference proteome UP000000935 (NCBITaxon:545693) encodes acetate--CoA ligase (acsA; EC 6.2.1.1).
+          - uniprot_accession: UniProtKB:A0A0B6ASU1
+            entry_name: A0A0B6ASU1_PRIM2
+            protein_name: UDP-N-acetyl-D-mannosamine dehydrogenase
+            gene_symbol: wecC
+            entry_status: TREMBL
+            target_organism:
+              id: NCBITaxon:1348623
+              label: Priestia megaterium NBRC 15308 = ATCC 14581
+            reference_proteome_id: UP000031829
+            functional_role: UDP-N-acetyl-D-mannosamine dehydrogenase WecC (EC 1.1.1.336; wecC) catalyzing NAD-dependent oxidation in exopolysaccharide (EPS) and cell-surface polysaccharide biosynthesis.
+            ec_numbers:
+              - EC:1.1.1.336
+            go_terms:
+              - id: GO:0051287
+                label: NAD binding
+              - id: GO:0016628
+                label: oxidoreductase activity, acting on the CH-CH group of donors, NAD or NADP as acceptor
+              - id: GO:0089714
+                label: UDP-N-acetyl-D-mannosamine dehydrogenase activity
+              - id: GO:0000271
+                label: polysaccharide biosynthetic process
+            interpro_ids:
+              - InterPro:IPR008927
+              - InterPro:IPR036291
+              - InterPro:IPR017476
+              - InterPro:IPR014027
+              - InterPro:IPR036220
+              - InterPro:IPR014026
+              - InterPro:IPR001732
+              - InterPro:IPR028359
+            pfam_ids:
+              - Pfam:PF00984
+              - Pfam:PF03720
+              - Pfam:PF03721
+            ncbifam_ids:
+              - NCBIfam:TIGR03026
+            annotation_note: Grounded to Priestia megaterium type-strain reference proteome UP000031829 (strain NBRC 15308 = ATCC 14581, NCBITaxon:1348623) UDP-N-acetyl-D-mannosamine dehydrogenase (wecC, UniProtKB:A0A0B6ASU1), representing Table 1 gene5180 (wecC, Nucleotide sugar dehydrogenase, EPS biosynthesis, Log2FC 4.1, P < 0.001) and the 12-h RT-qPCR gene wecC induced by hematite in Figure 5 (Table 2 primers wecC-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.
+            evidence:
+              - source_ref: dong_2026
+                supports: partial
+                explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR upregulation of wecC (Table 1 gene5180, nucleotide sugar dehydrogenase in EPS biosynthesis) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, accompanying culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because expression association does not establish gene necessity.
+              - source_ref: uniprot_priestia_megaterium_mineral_genes
+                supports: partial
+                explanation: UniProtKB:A0A0B6ASU1 (A0A0B6ASU1_PRIM2) in Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) encodes UDP-N-acetyl-D-mannosamine dehydrogenase (wecC; EC 1.1.1.336).
+          - uniprot_accession: UniProtKB:A0A0B6ACY5
+            entry_name: A0A0B6ACY5_PRIM2
+            protein_name: Diaminopimelate decarboxylase
+            gene_symbol: lysA
+            entry_status: TREMBL
+            target_organism:
+              id: NCBITaxon:1348623
+              label: Priestia megaterium NBRC 15308 = ATCC 14581
+            reference_proteome_id: UP000031829
+            functional_role: Diaminopimelate decarboxylase LysA (EC 4.1.1.20; lysA) catalyzing the terminal step of L-lysine biosynthesis from meso-2,6-diaminopimelate.
+            ec_numbers:
+              - EC:4.1.1.20
+            go_terms:
+              - id: GO:0008836
+                label: diaminopimelate decarboxylase activity
+              - id: GO:0030170
+                label: pyridoxal phosphate binding
+              - id: GO:0009085
+                label: L-lysine biosynthetic process
+            interpro_ids:
+              - InterPro:IPR009006
+              - InterPro:IPR002986
+              - InterPro:IPR022643
+              - InterPro:IPR022644
+              - InterPro:IPR000183
+              - InterPro:IPR029066
+            pfam_ids:
+              - Pfam:PF02784
+              - Pfam:PF00278
+            ncbifam_ids:
+              - NCBIfam:TIGR01048
+            annotation_note: 'Grounded to Priestia megaterium type-strain reference proteome UP000031829 (strain NBRC 15308 = ATCC 14581, NCBITaxon:1348623) diaminopimelate decarboxylase (lysA, UniProtKB:A0A0B6ACY5), representing Table 1 gene4437 (lysA, Amino acid metabolism: Lysine, Log2FC 5.4, P < 0.001) and the 12-h RT-qPCR gene lysA induced by hematite in Figure 5 (Table 2 primers lysA-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.'
+            evidence:
+              - source_ref: dong_2026
+                supports: partial
+                explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR upregulation of lysA (Table 1 gene4437, diaminopimelate decarboxylase) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, alongside culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because functional necessity was not tested by mutagenesis.
+              - source_ref: uniprot_priestia_megaterium_mineral_genes
+                supports: partial
+                explanation: UniProtKB:A0A0B6ACY5 (A0A0B6ACY5_PRIM2) in Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) encodes Diaminopimelate decarboxylase (lysA; EC 4.1.1.20).
+          - uniprot_accession: UniProtKB:A0A0B6AS33
+            entry_name: A0A0B6AS33_PRIM2
+            protein_name: Flagellar basal-body rod protein FlgF
+            gene_symbol: flgF
+            entry_status: TREMBL
+            target_organism:
+              id: NCBITaxon:1348623
+              label: Priestia megaterium NBRC 15308 = ATCC 14581
+            reference_proteome_id: UP000031829
+            functional_role: Flagellar basal-body rod protein FlgF (flgF) involved in bacterial-type flagellar hook-basal body assembly and motility toward mineral surfaces.
+            go_terms:
+              - id: GO:0030694
+                label: bacterial-type flagellum basal body, rod
+              - id: GO:0009424
+                label: bacterial-type flagellum hook
+              - id: GO:0005829
+                label: cytosol
+              - id: GO:0071978
+                label: bacterial-type flagellum-dependent swarming motility
+            interpro_ids:
+              - InterPro:IPR001444
+              - InterPro:IPR019776
+              - InterPro:IPR020013
+              - InterPro:IPR010930
+              - InterPro:IPR037925
+              - InterPro:IPR012836
+              - InterPro:IPR053967
+            pfam_ids:
+              - Pfam:PF00460
+              - Pfam:PF06429
+              - Pfam:PF22692
+            ncbifam_ids:
+              - NCBIfam:TIGR03506
+              - NCBIfam:TIGR02490
+              - NCBIfam:NF009278
+            annotation_note: Grounded to Priestia megaterium type-strain reference proteome UP000031829 (strain NBRC 15308 = ATCC 14581, NCBITaxon:1348623) flagellar basal-body rod protein FlgF (flgF, UniProtKB:A0A0B6AS33), representing Table 1 gene5191 (flgF, Flagellar assembly, Log2FC 5.4, P < 0.001) and the 12-h RT-qPCR gene flgF induced by hematite in Figure 5 (Table 2 primers flgF-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.
+            evidence:
+              - source_ref: dong_2026
+                supports: partial
+                explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR upregulation of flgF (Table 1 gene5191, flagellar hook-basal body protein) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, accompanying culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because gene necessity was not functionally validated.
+              - source_ref: uniprot_priestia_megaterium_mineral_genes
+                supports: partial
+                explanation: UniProtKB:A0A0B6AS33 (A0A0B6AS33_PRIM2) in Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) encodes Flagellar basal-body rod protein FlgF (flgF).
+          - uniprot_accession: UniProtKB:A0A0B6APG1
+            entry_name: A0A0B6APG1_PRIM2
+            protein_name: Glycerol phosphate lipoteichoic acid synthase 1
+            gene_symbol: ltaS1
+            entry_status: TREMBL
+            target_organism:
+              id: NCBITaxon:1348623
+              label: Priestia megaterium NBRC 15308 = ATCC 14581
+            reference_proteome_id: UP000031829
+            functional_role: Glycerol phosphate lipoteichoic acid synthase 1 (ltaS1) participating in Gram-positive cell-wall lipoteichoic acid biosynthesis.
+            go_terms:
+              - id: GO:0005576
+                label: extracellular region
+              - id: GO:0005886
+                label: plasma membrane
+            interpro_ids:
+              - InterPro:IPR017850
+              - InterPro:IPR012160
+              - InterPro:IPR060270
+              - InterPro:IPR050448
+              - InterPro:IPR000917
+            pfam_ids:
+              - Pfam:PF27449
+              - Pfam:PF00884
+            annotation_note: Grounded to Priestia megaterium type-strain reference proteome UP000031829 (strain NBRC 15308 = ATCC 14581, NCBITaxon:1348623) glycerol phosphate lipoteichoic acid synthase 1 (ltaS1, UniProtKB:A0A0B6APG1), representing the lipoteichoic acid synthase family gene ltaS identified among upregulated cell-wall biosynthesis DEGs in Fig. S6D and positively correlated (P < 0.05) with cell-wall exometabolites (ADP ribose and adenosine diphosphate ribose) in the 12-h biotite multi-omics network (Fig. S8), and significantly induced at 12 h by hematite in RT-qPCR Figure 5 (Table 2 primers ltaS-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2.
+            evidence:
+              - source_ref: dong_2026
+                supports: partial
+                explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR induction of ltaS (lipoteichoic acid synthase family protein, upregulated in the 12-h biotite transcriptome Fig. S6D, correlated at P < 0.05 with cell-wall exometabolites ADP ribose and adenosine diphosphate ribose in Fig. S8, and reaching its highest 12-h RT-qPCR relative expression in the hematite treatment across tested minerals in Figure 5) in Priestia megaterium PMA2-2 exposed to 0.6 g hematite in 60 mL GMM, alongside culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because expression association does not prove single-gene necessity.
+              - source_ref: uniprot_priestia_megaterium_mineral_genes
+                supports: partial
+                explanation: UniProtKB:A0A0B6APG1 (A0A0B6APG1_PRIM2) in Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) encodes Glycerol phosphate lipoteichoic acid synthase 1 (ltaS1).
+          - uniprot_accession: UniProtKB:A0A0B6ANB3
+            entry_name: A0A0B6ANB3_PRIM2
+            protein_name: Stage 0 sporulation protein A
+            gene_symbol: spo0A
+            entry_status: TREMBL
+            target_organism:
+              id: NCBITaxon:1348623
+              label: Priestia megaterium NBRC 15308 = ATCC 14581
+            reference_proteome_id: UP000031829
+            functional_role: Stage 0 sporulation protein A (Spo0A; spo0A / BG04_1367) master response regulator in the Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome controlling biofilm formation and sporulation transcription.
+            go_terms:
+              - id: GO:0005737
+                label: cytoplasm
+              - id: GO:0005509
+                label: calcium ion binding
+              - id: GO:0003677
+                label: DNA binding
+              - id: GO:0003700
+                label: DNA-binding transcription factor activity
+              - id: GO:0051606
+                label: detection of stimulus
+              - id: GO:0000160
+                label: phosphorelay signal transduction system
+              - id: GO:0042173
+                label: regulation of sporulation resulting in formation of a cellular spore
+              - id: GO:0030435
+                label: sporulation resulting in formation of a cellular spore
+            interpro_ids:
+              - InterPro:IPR011006
+              - InterPro:IPR016032
+              - InterPro:IPR001789
+              - InterPro:IPR014879
+              - InterPro:IPR012052
+              - InterPro:IPR052048
+              - InterPro:IPR036388
+            pfam_ids:
+              - Pfam:PF00072
+              - Pfam:PF08769
+            ncbifam_ids:
+              - NCBIfam:TIGR02875
+            annotation_note: 'Grounded to Priestia megaterium type-strain reference proteome UP000031829 (strain NBRC 15308 = ATCC 14581, NCBITaxon:1348623) Stage 0 sporulation protein A (spo0A, ORF BG04_1367, UniProtKB:A0A0B6ANB3), providing UP000031829 reference-proteome parity with wecC, lysA, flgF, and ltaS1 alongside species-level reviewed Swiss-Prot UniProtKB:P52932 for Table 1 gene4504 (spo0A, Biofilm formation / Sporulation, Log2FC 4.4, P < 0.001) and the 12-h RT-qPCR gene spo0A induced by hematite in Figure 5 (Table 2 primers spo0A-QF/QR) of Dong et al. (2026) in Priestia megaterium PMA2-2 (GenBank: CM125967.1).'
+            evidence:
+              - source_ref: dong_2026
+                supports: partial
+                explanation: Figure 5 and Table 2 of Dong et al. (2026) report significant 12-h RT-qPCR induction of spo0A (Table 1 gene4504, sporulation transcription factor) in Priestia megaterium PMA2-2 cultured in 60 mL GMM with 0.6 g hematite (75-150 um) relative to mineral-free GMM, accompanying culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) and filtered Fe mobilization of 25.95 +/- 0.90 and 71.43 +/- 1.56 uM vs 0.04 +/- 0.00 uM in uninoculated controls (Table S6); support is partial because RT-qPCR expression association does not establish gene necessity.
+              - source_ref: uniprot_priestia_megaterium_mineral_genes
+                supports: partial
+                explanation: UniProtKB:A0A0B6ANB3 (A0A0B6ANB3_PRIM2) in Priestia megaterium NBRC 15308 = ATCC 14581 reference proteome UP000031829 (NCBITaxon:1348623) encodes Stage 0 sporulation protein A (spo0A, ORF BG04_1367).
+      - id: pma2_2_gmm_culture_acidification_hematite
+        label: PMA2-2 glucose minimal medium acidification (pH 4.69 +/- 0.05 at 12 h and 4.66 +/- 0.06 at 24 h vs control pH 7.16-7.12)
+        node_type: CHEMICAL_ENTITY
+        description: Culture-associated acidification of 60 mL glucose minimal medium (0.5% glucose, initial pH 7.0) inoculated with 0.2 mL of 10^8 cells/mL Priestia megaterium PMA2-2 to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h) compared with pH 7.16 +/- 0.04 and 7.12 +/- 0.05 in uninoculated hematite-feed controls (Table S6).
+        protein_grounding_status: NOT_APPLICABLE
+      - id: hematite_feed_75_150_um
+        label: Author-designated hematite feed (0.60 g per 60 mL GMM, 75-150 um; 86.58% Fe2O3, 9.82% SiO2, Table S7)
+        node_type: MATERIAL_OR_PHASE
+        description: Author-designated hematite mineral feed (75-150 um particle size, 0.60 g in 60 mL GMM; Table S7 bulk oxides 86.58% Fe2O3 and 9.82% SiO2 plus minor oxides, without quantitative phase analysis).
+        protein_grounding_status: NOT_APPLICABLE
+      - id: filtered_fe_in_hematite_supernatant
+        label: 0.45-um-filtered Fe in hematite culture supernatant (25.95 +/- 0.90 uM at 12 h and 71.43 +/- 1.56 uM at 24 h vs 0.04 +/- 0.00 uM control)
+        node_type: CHEMICAL_ENTITY
+        description: Operationally dissolved Fe measured by ICP-OES after centrifugation and 0.45-um polyethersulfone filtration at 12 h (25.95 +/- 0.90 uM) and 24 h (71.43 +/- 1.56 uM) in PMA2-2 hematite cultures versus 0.04 +/- 0.00 uM in uninoculated controls (Table S6, n=3).
+        protein_grounding_status: NOT_APPLICABLE
+    edges:
+      - source: pma2_2_hematite_induced_gene_module
+        target: pma2_2_gmm_culture_acidification_hematite
+        predicate: modulates
+        relationship: hematite-induced organic-acid/EPS/biofilm/cell-wall gene response accompanying GMM acidification to pH 4.66-4.69
+        description: Induction of organic-acid metabolism (acs), EPS/biofilm formation (wecC, spo0A), amino-acid metabolism (lysA), motility (flgF), and cell-wall lipoteichoic acid synthesis (ltaS) in hematite-exposed PMA2-2 accompanies culture acidification of GMM to pH 4.69 (12 h) and 4.66 (24 h).
+        evidence:
+          - source_ref: dong_2026
+            supports: partial
+            explanation: Figure 5, Table 2, and Table S6 of Dong et al. (2026) document 12-h RT-qPCR induction of spo0A, acs, wecC, lysA, flgF, and ltaS on hematite alongside culture acidification to pH 4.69 +/- 0.05 (12 h) and 4.66 +/- 0.06 (24 h); support is partial because RT-qPCR correlation does not demonstrate gene necessity and detailed metabolomics/RNA-seq were conducted on biotite.
+      - source: pma2_2_gmm_culture_acidification_hematite
+        target: hematite_feed_75_150_um
+        predicate: solubilizes
+        relationship: culture-associated dissolution of the 86.58% Fe2O3 / 9.82% SiO2 hematite feed at 37 C and 160 rpm
+        description: Acidified PMA2-2 GMM cultures (pH 4.69-4.66) promote iron mobilization from the 0.60 g hematite feed (75-150 um) over 12-24 h at 37 C and 160 rpm compared with uninoculated controls (pH 7.16-7.12).
+        evidence:
+          - source_ref: dong_2026
+            supports: partial
+            explanation: Table S6 shows concurrent culture acidification and elevated filtered Fe relative to uninoculated hematite controls; support is partial because no pH-matched abiotic buffer or killed-cell hematite control separates proton-promoted dissolution from cellular attachment or chelation.
+      - source: hematite_feed_75_150_um
+        target: filtered_fe_in_hematite_supernatant
+        predicate: produces
+        relationship: release of 0.45-um-filtered Fe (25.95 +/- 0.90 uM at 12 h; 71.43 +/- 1.56 uM at 24 h)
+        description: Mobilization from the 0.60 g hematite feed in PMA2-2 cultures yields 25.95 +/- 0.90 uM (12 h) and 71.43 +/- 1.56 uM (24 h) filtered Fe versus 0.04 +/- 0.00 uM in uninoculated controls (Table S6).
+        evidence:
+          - source_ref: dong_2026
+            supports: support
+            explanation: Supplement Table S6 (p. 11, mean +/- SD, n=3) directly reports 0.45-um-filtered ICP-OES Fe concentrations of 25.95 +/- 0.90 uM (12 h) and 71.43 +/- 1.56 uM (24 h) with PMA2-2 versus 0.04 +/- 0.00 uM at both uninoculated endpoints.
 curation_history:
-- timestamp: '2026-10-11T11:14:04.745666Z'
-  curator: codex (GPT-6; codex)
-  action: CREATE
-  summary: Created hematite identity and primary PMA2-2 culture-associated dissolution record with feed, control and causal limits.
-- timestamp: '2026-11-09T16:34:32Z'
-  curator: marcin
-  action: edit
-  summary: Add pma2_2_hematite_dissolution_graph causal graph and ground pma2_2_hematite_dissolution to Priestia megaterium Figure 5 RT-qPCR mineral-dissolution proteins (UniProtKB:P52932, UniProtKB:D5DTY8, UniProtKB:A0A0B6ASU1, UniProtKB:A0A0B6ACY5, UniProtKB:A0A0B6AS33, UniProtKB:A0A0B6APG1)
-- timestamp: '2026-11-09T17:21:14Z'
-  curator: marcin
-  action: edit
-  summary: Align UniProtKB:P52932 species-proxy support level to partial and add Fig. S6D/S8 ltaS context in hematite.yaml (#975)
+  - timestamp: '2026-10-11T11:14:04.745666Z'
+    curator: codex (GPT-6; codex)
+    action: CREATE
+    summary: Created hematite identity and primary PMA2-2 culture-associated dissolution record with feed, control and causal limits.
+  - timestamp: '2026-11-09T16:34:32Z'
+    curator: marcin
+    action: edit
+    summary: Add pma2_2_hematite_dissolution_graph causal graph and ground pma2_2_hematite_dissolution to Priestia megaterium Figure 5 RT-qPCR mineral-dissolution proteins (UniProtKB:P52932, UniProtKB:D5DTY8, UniProtKB:A0A0B6ASU1, UniProtKB:A0A0B6ACY5, UniProtKB:A0A0B6AS33, UniProtKB:A0A0B6APG1)
+  - timestamp: '2026-11-09T17:21:14Z'
+    curator: marcin
+    action: edit
+    summary: Align UniProtKB:P52932 species-proxy support level to partial and add Fig. S6D/S8 ltaS context in hematite.yaml (#975)
+  - timestamp: '2026-11-09T18:36:30Z'
+    curator: marcin
+    action: edit
+    summary: Add Priestia megaterium UP000031829 reference-proteome Spo0A (BG04_1367, UniProtKB:A0A0B6ANB3) to hematite.yaml
 history_refs:
-- history/records/hematite/2026-10-11T111406Z-codex-f219a6.yaml
-- history/records/hematite/2026-11-09T163432Z-marcin-3d42c2.yaml
-- history/records/hematite/2026-11-09T172114Z-marcin-224152.yaml
+  - history/records/hematite/2026-10-11T111406Z-codex-f219a6.yaml
+  - history/records/hematite/2026-11-09T163432Z-marcin-3d42c2.yaml
+  - history/records/hematite/2026-11-09T172114Z-marcin-224152.yaml
+  - history/records/hematite/2026-11-09T183630Z-marcin-3f77bb.yaml
