@@ -1,0 +1,35 @@
+history_version: 1
+target:
+  kind: record
+  slug: lizardite
+  path: data/records/lizardite.yaml
+session:
+  id: 2026-11-09T172114Z-marcin-decca2
+  timestamp: '2026-11-09T17:21:14Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Add lizardite RT-qPCR target-gene expression and dissolved-Mg correlation scope
+    (Figures 5, 7, S7, Table 2) from Sheng et al. (2026) to lizardite.yaml (#975)
+  details: Updated sources[sheng_2026], mechanisms[0].protein_examples, and causal_graphs[0]
+    in data/records/lizardite.yaml to document the direct 4-8 h and 6/8 h RT-qPCR assays on
+    lizardite of the 7 selected Table 1 DEGs (lutA_2 ABDD91_RS13400, actP ABDD91_RS04670,
+    glgC, gtaB_3, 02676, levE, glnQ; 1.7- to 23.1-fold at 6 h and 3.3- to 43.8-fold at 8 h
+    in Fig. S7B; R^2 = 0.807-0.978, P = 0.001-0.038 with 1.34-1.90 mM dissolved Mg in Fig.
+    7 and Fig. S7A) alongside the separate biotite RNA-seq scope (#975).
+  sections:
+  - sources
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/975
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/974

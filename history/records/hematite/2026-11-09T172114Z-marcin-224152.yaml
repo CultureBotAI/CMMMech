@@ -1,0 +1,33 @@
+history_version: 1
+target:
+  kind: record
+  slug: hematite
+  path: data/records/hematite.yaml
+session:
+  id: 2026-11-09T172114Z-marcin-224152
+  timestamp: '2026-11-09T17:21:14Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Align UniProtKB:P52932 species-proxy support level to partial and add Fig. S6D/S8
+    ltaS context in hematite.yaml (#975)
+  details: 'Updated UniProtKB:P52932 (spo0A) uniprot_priestia_megaterium_mineral_genes evidence
+    in data/records/hematite.yaml from supports: support to supports: partial to match species-level
+    proxy semantics for strain PMA2-2 (CM125967.1), and enriched UniProtKB:A0A0B6APG1 (ltaS1
+    / ltaS) with its Fig. S6D cell-wall DEG and Fig. S8 exometabolite correlation context
+    from Dong et al. (2026) (#975).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/975
+  prs:
+  - https://github.com/CultureBotAI/CMMMech/pull/974

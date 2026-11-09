@@ -1,0 +1,241 @@
+schema_version: 1.0.0
+review_id: 20261109T172200Z-lizardite-cycle12-stage2-issue975-rereview
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 12 Stage 2 post-remediation review (#975) of Lizardite (cmmmech:lizardite)
+started_at: '2026-11-09T17:20:00Z'
+finished_at: '2026-11-09T17:22:00Z'
+reviewer:
+  identity: antigravity / cmmmech-cycle12-stage2-causal-graphs-reviewer
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: 'Single-agent Goal Mode execution of .claude/skills/review-record/SKILL.md verifying
+    the Issue #975 post-remediation state of data/records/lizardite.yaml (SHA-256 52e398b5f032ad8975625e0d1b0016a78e85200a24ed77500a200d318ea672f1)
+    against live UniProtKB grounding and cited primary source (sheng_2026: Sheng, Zheng, Yang, Dong, He
+    and Sheng (2026). Silicate minerals enhance the expression of genes related to mineral dissolution
+    by Priestia aryabhattai strain C4-10. Applied and Environmental Microbiology 92(2):e02554-25. DOI
+    10.1128/aem.02554-25; Figures 2, 5, and 7, Tables 1-2, Fig. S7, Materials and Methods, and supplemental
+    methods pp1-2. (https://doi.org/10.1128/aem.02554-25)).'
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+source:
+  git_revision: f3b1cc70981859b389d29f02e3f1bafdc0f0ea6c
+  state: working_tree
+  inputs:
+  - path: data/records/lizardite.yaml
+    sha256: 52e398b5f032ad8975625e0d1b0016a78e85200a24ed77500a200d318ea672f1
+    role: target
+  - path: history/records/lizardite/2026-11-09T162856Z-marcin-ac480e.yaml
+    sha256: 6423219ca629ea42be63b36bdf3b9f6b94898d2171a632025c496c9e90ea0fff
+    role: context
+  - path: history/records/lizardite/2026-11-09T172114Z-marcin-decca2.yaml
+    sha256: 61e634da1c21e926aa9481dd82d51e58d8a29a9d3e23f4dfc857fcb294e133ce
+    role: context
+  - path: src/cmmmech/schema/cmmmech.yaml
+    sha256: 8141cecb3e1abf908515fd86c21da808c6b2d611a83eaaea20da80e2018ed781
+    role: context
+targets:
+- target_id: cmmmech:lizardite
+  path: data/records/lizardite.yaml
+  label: Lizardite
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/lizardite.yaml
+    role: maintained_record
+  - repository: CultureBotAI/CMMMech
+    path: history/records/lizardite/2026-11-09T162856Z-marcin-ac480e.yaml
+    role: canonical_history
+  - repository: CultureBotAI/CMMMech
+    path: history/records/lizardite/2026-11-09T172114Z-marcin-decca2.yaml
+    role: canonical_history
+scope:
+  description: 'Cycle 12 Stage 2 post-remediation (#975) review of data/records/lizardite.yaml (SHA-256
+    52e398b5f032ad8975625e0d1b0016a78e85200a24ed77500a200d318ea672f1) and its canonical EDIT history sidecars
+    (history/records/lizardite/2026-11-09T162856Z-marcin-ac480e.yaml, history/records/lizardite/2026-11-09T172114Z-marcin-decca2.yaml)
+    verifying causal-graph node/edge topology, live UniProtKB grounding, and primary-source evidence fidelity
+    across causal_graph ''c4_10_lizardite_dissolution_graph'' (mechanism_ref: c4_10_lizardite_dissolution,
+    4 nodes / 3 edges; c4_10_representative_acid_metabolism_enzymes: [UniProtKB:A0A7W3RFI1 (HNP21_003255,
+    A0A7W3RFI1_PRIAR, UP000543174), UniProtKB:A0A1S2C101 (pckA, A0A1S2C101_PRIAR, UP000543174), UniProtKB:A0A7W3RDZ1
+    (glcB, A0A7W3RDZ1_PRIAR, UP000543174), UniProtKB:A0A7W3NBV8 (HNP21_003214, A0A7W3NBV8_PRIAR, UP000543174)]).'
+  selection: 'Cycle 12 Stage 2 Issue #975 post-remediation review for cmmmech:lizardite'
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:lizardite
+evidence:
+- evidence_id: owner
+  kind: record_content
+  reference: data/records/lizardite.yaml
+  locator: Working-tree record data/records/lizardite.yaml (causal_graphs and mechanisms[].protein_examples)
+  accessed_at: '2026-11-09T17:22:00Z'
+  support: supports
+  summary: 'Remediated data/records/lizardite.yaml (SHA-256 52e398b5f032ad8975625e0d1b0016a78e85200a24ed77500a200d318ea672f1)
+    under Issue #975 with causal_graph ''c4_10_lizardite_dissolution_graph'' (mechanism_ref: c4_10_lizardite_dissolution,
+    4 nodes / 3 edges; c4_10_representative_acid_metabolism_enzymes: [UniProtKB:A0A7W3RFI1 (HNP21_003255,
+    A0A7W3RFI1_PRIAR, UP000543174), UniProtKB:A0A1S2C101 (pckA, A0A1S2C101_PRIAR, UP000543174), UniProtKB:A0A7W3RDZ1
+    (glcB, A0A7W3RDZ1_PRIAR, UP000543174), UniProtKB:A0A7W3NBV8 (HNP21_003214, A0A7W3NBV8_PRIAR, UP000543174)]),
+    achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and experimental caveats.'
+  snapshot_sha256: 52e398b5f032ad8975625e0d1b0016a78e85200a24ed77500a200d318ea672f1
+- evidence_id: primary_source
+  kind: primary_source
+  reference: https://doi.org/10.1128/aem.02554-25
+  locator: 'sheng_2026: Sheng, Zheng, Yang, Dong, He and Sheng (2026). Silicate minerals enhance the expression
+    of genes related to mineral dissolution by Priestia aryabhattai strain C4-10. Applied and Environmental
+    Microbiology 92(2):e02554-25. DOI 10.1128/aem.02554-25; Figures 2, 5, and 7, Tables 1-2, Fig. S7,
+    Materials and Methods, and supplemental methods pp1-2. (https://doi.org/10.1128/aem.02554-25)'
+  accessed_at: '2026-11-09T17:22:00Z'
+  support: supports
+  summary: 'Live-verified UniProtKB grounding across UniProtKB:A0A7W3RFI1 (A0A7W3RFI1_PRIAR, Citrate synthase,
+    gene_symbol: HNP21_003255, TREMBL, NCBITaxon:412384 Priestia aryabhattai, UP000543174); UniProtKB:A0A1S2C101
+    (A0A1S2C101_PRIAR, Phosphoenolpyruvate carboxykinase (ATP), gene_symbol: pckA, TREMBL, NCBITaxon:412384
+    Priestia aryabhattai, UP000543174); UniProtKB:A0A7W3RDZ1 (A0A7W3RDZ1_PRIAR, Malate synthase G, gene_symbol:
+    glcB, TREMBL, NCBITaxon:412384 Priestia aryabhattai, UP000543174); UniProtKB:A0A7W3NBV8 (A0A7W3NBV8_PRIAR,
+    acetate--CoA ligase, gene_symbol: HNP21_003214, TREMBL, NCBITaxon:412384 Priestia aryabhattai, UP000543174).
+    Primary mechanism source (sheng_2026: Sheng, Zheng, Yang, Dong, He and Sheng (2026). Silicate minerals
+    enhance the expression of genes related to mineral dissolution by Priestia aryabhattai strain C4-10.
+    Applied and Environmental Microbiology 92(2):e02554-25. DOI 10.1128/aem.02554-25; Figures 2, 5, and
+    7, Tables 1-2, Fig. S7, Materials and Methods, and supplemental methods pp1-2. (https://doi.org/10.1128/aem.02554-25))
+    parameters, RT-qPCR/multi-omics scope, and source-level caveats are strictly preserved on all nodes,
+    edges, and ProteinExample evidence items.'
+- evidence_id: edit_history
+  kind: record_content
+  reference: history/records/lizardite/2026-11-09T162856Z-marcin-ac480e.yaml
+  locator: Canonical EDIT history sidecar history/records/lizardite/2026-11-09T162856Z-marcin-ac480e.yaml
+  accessed_at: '2026-11-09T17:22:00Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/lizardite/2026-11-09T162856Z-marcin-ac480e.yaml
+    (SHA-256 6423219ca629ea42be63b36bdf3b9f6b94898d2171a632025c496c9e90ea0fff): Add c4_10_lizardite_dissolution_graph
+    causal graph and ground c4_10_lizardite_dissolution to Priestia aryabhattai reference-proteome acid-metabolism
+    enzymes (UniProtKB:A0A7W3RFI1, UniProtKB:A0A1S2C101, UniProtKB:A0A7W3RDZ1, UniProtKB:A0A7W3NBV8)'
+  snapshot_sha256: 6423219ca629ea42be63b36bdf3b9f6b94898d2171a632025c496c9e90ea0fff
+- evidence_id: edit_history_2
+  kind: record_content
+  reference: history/records/lizardite/2026-11-09T172114Z-marcin-decca2.yaml
+  locator: Canonical EDIT history sidecar history/records/lizardite/2026-11-09T172114Z-marcin-decca2.yaml
+  accessed_at: '2026-11-09T17:22:00Z'
+  support: supports
+  summary: 'Canonical EDIT history sidecar history/records/lizardite/2026-11-09T172114Z-marcin-decca2.yaml
+    (SHA-256 61e634da1c21e926aa9481dd82d51e58d8a29a9d3e23f4dfc857fcb294e133ce): Add lizardite RT-qPCR
+    target-gene expression and dissolved-Mg correlation scope (Figures 5, 7, S7, Table 2) from Sheng et
+    al. (2026) to lizardite.yaml (#975)'
+  snapshot_sha256: 61e634da1c21e926aa9481dd82d51e58d8a29a9d3e23f4dfc857fcb294e133ce
+- evidence_id: validation
+  kind: validation
+  reference: data/records/lizardite.yaml
+  locator: Real CLI validation via python -m cmmmech validate --require-records and validate-history --base
+    main
+  accessed_at: '2026-11-09T17:22:00Z'
+  support: supports
+  summary: data/records/lizardite.yaml and history/records/lizardite/2026-11-09T162856Z-marcin-ac480e.yaml,
+    history/records/lizardite/2026-11-09T172114Z-marcin-decca2.yaml pass strict LinkML schema, protein_examples
+    parity, and history validation with 0 errors.
+  snapshot_sha256: 52e398b5f032ad8975625e0d1b0016a78e85200a24ed77500a200d318ea672f1
+checks:
+- check_id: validate_records
+  name: Strict corpus validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate --require-records
+  status: passed
+  required: true
+  summary: Checked 703 record(s); 0 failed.
+  target_ids:
+  - cmmmech:lizardite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+- check_id: validate_history
+  name: Canonical history validation
+  command: PYTHONPATH=src .venv/bin/python -m cmmmech validate-history --base main
+  status: passed
+  required: true
+  summary: Checked 1489 history record(s); 0 error(s).
+  target_ids:
+  - cmmmech:lizardite
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - validation
+assessments:
+- assessment_id: causal_graph_and_protein_grounding
+  area: graph
+  topic: 'Verification of causal_graphs structure, UniProtKB grounding, and parity across causal_graph
+    ''c4_10_lizardite_dissolution_graph'' (mechanism_ref: c4_10_lizardite_dissolution, 4 nodes / 3 edges;
+    c4_10_representative_acid_metabolism_enzymes: [UniProtKB:A0A7W3RFI1 (HNP21_003255, A0A7W3RFI1_PRIAR,
+    UP000543174), UniProtKB:A0A1S2C101 (pckA, A0A1S2C101_PRIAR, UP000543174), UniProtKB:A0A7W3RDZ1 (glcB,
+    A0A7W3RDZ1_PRIAR, UP000543174), UniProtKB:A0A7W3NBV8 (HNP21_003214, A0A7W3NBV8_PRIAR, UP000543174)])
+    after Issue #975 remediation'
+  outcome: supported
+  summary: 'Remediated data/records/lizardite.yaml (SHA-256 52e398b5f032ad8975625e0d1b0016a78e85200a24ed77500a200d318ea672f1)
+    under Issue #975 with causal_graph ''c4_10_lizardite_dissolution_graph'' (mechanism_ref: c4_10_lizardite_dissolution,
+    4 nodes / 3 edges; c4_10_representative_acid_metabolism_enzymes: [UniProtKB:A0A7W3RFI1 (HNP21_003255,
+    A0A7W3RFI1_PRIAR, UP000543174), UniProtKB:A0A1S2C101 (pckA, A0A1S2C101_PRIAR, UP000543174), UniProtKB:A0A7W3RDZ1
+    (glcB, A0A7W3RDZ1_PRIAR, UP000543174), UniProtKB:A0A7W3NBV8 (HNP21_003214, A0A7W3NBV8_PRIAR, UP000543174)]),
+    achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    and preserving source-faithful support levels and caveats from sheng_2026: Sheng, Zheng, Yang, Dong,
+    He and Sheng (2026). Silicate minerals enhance the expression of genes related to mineral dissolution
+    by Priestia aryabhattai strain C4-10. Applied and Environmental Microbiology 92(2):e02554-25. DOI
+    10.1128/aem.02554-25; Figures 2, 5, and 7, Tables 1-2, Fig. S7, Materials and Methods, and supplemental
+    methods pp1-2. (https://doi.org/10.1128/aem.02554-25). Live-verified UniProtKB grounding across UniProtKB:A0A7W3RFI1
+    (A0A7W3RFI1_PRIAR, Citrate synthase, gene_symbol: HNP21_003255, TREMBL, NCBITaxon:412384 Priestia
+    aryabhattai, UP000543174); UniProtKB:A0A1S2C101 (A0A1S2C101_PRIAR, Phosphoenolpyruvate carboxykinase
+    (ATP), gene_symbol: pckA, TREMBL, NCBITaxon:412384 Priestia aryabhattai, UP000543174); UniProtKB:A0A7W3RDZ1
+    (A0A7W3RDZ1_PRIAR, Malate synthase G, gene_symbol: glcB, TREMBL, NCBITaxon:412384 Priestia aryabhattai,
+    UP000543174); UniProtKB:A0A7W3NBV8 (A0A7W3NBV8_PRIAR, acetate--CoA ligase, gene_symbol: HNP21_003214,
+    TREMBL, NCBITaxon:412384 Priestia aryabhattai, UP000543174).'
+  target_ids:
+  - cmmmech:lizardite
+  evidence_ids:
+  - owner
+  - primary_source
+- assessment_id: provenance_and_validation_verification
+  area: provenance
+  topic: Verification of canonical EDIT history sidecars and strict schema validation
+  outcome: supported
+  summary: 'data/records/lizardite.yaml was updated exclusively through scripts/curate_causal_graphs.py
+    (curate_record_file), producing append-only history sidecars (history/records/lizardite/2026-11-09T162856Z-marcin-ac480e.yaml
+    (SHA-256 6423219ca629ea42be63b36bdf3b9f6b94898d2171a632025c496c9e90ea0fff: Add c4_10_lizardite_dissolution_graph
+    causal graph and ground c4_10_lizardite_dissolution to Priestia aryabhattai reference-proteome acid-metabolism
+    enzymes (UniProtKB:A0A7W3RFI1, UniProtKB:A0A1S2C101, UniProtKB:A0A7W3RDZ1, UniProtKB:A0A7W3NBV8));
+    history/records/lizardite/2026-11-09T172114Z-marcin-decca2.yaml (SHA-256 61e634da1c21e926aa9481dd82d51e58d8a29a9d3e23f4dfc857fcb294e133ce:
+    Add lizardite RT-qPCR target-gene expression and dissolved-Mg correlation scope (Figures 5, 7, S7,
+    Table 2) from Sheng et al. (2026) to lizardite.yaml (#975))) and passing all LinkML and history validation
+    gates.'
+  target_ids:
+  - cmmmech:lizardite
+  evidence_ids:
+  - owner
+  - edit_history
+  - edit_history_2
+  - validation
+findings: []
+actions: []
+summary: 'Lizardite (cmmmech:lizardite) passes Cycle 12 Stage 2 post-remediation (#975) review (scientific_review:
+  true) at SHA-256 52e398b5f032ad8975625e0d1b0016a78e85200a24ed77500a200d318ea672f1: Remediated data/records/lizardite.yaml
+  with causal_graph ''c4_10_lizardite_dissolution_graph'' (mechanism_ref: c4_10_lizardite_dissolution,
+  4 nodes / 3 edges; c4_10_representative_acid_metabolism_enzymes: [UniProtKB:A0A7W3RFI1 (HNP21_003255,
+  A0A7W3RFI1_PRIAR, UP000543174), UniProtKB:A0A1S2C101 (pckA, A0A1S2C101_PRIAR, UP000543174), UniProtKB:A0A7W3RDZ1
+  (glcB, A0A7W3RDZ1_PRIAR, UP000543174), UniProtKB:A0A7W3NBV8 (HNP21_003214, A0A7W3NBV8_PRIAR, UP000543174)]),
+  achieving 100% parity between mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+  and preserving source-faithful support levels and experimental caveats from sheng_2026: Sheng, Zheng,
+  Yang, Dong, He and Sheng (2026). Silicate minerals enhance the expression of genes related to mineral
+  dissolution by Priestia aryabhattai strain C4-10. Applied and Environmental Microbiology 92(2):e02554-25.
+  DOI 10.1128/aem.02554-25; Figures 2, 5, and 7, Tables 1-2, Fig. S7, Materials and Methods, and supplemental
+  methods pp1-2. (https://doi.org/10.1128/aem.02554-25). Live-verified UniProtKB grounding across UniProtKB:A0A7W3RFI1
+  (A0A7W3RFI1_PRIAR, Citrate synthase, gene_symbol: HNP21_003255, TREMBL, NCBITaxon:412384 Priestia aryabhattai,
+  UP000543174); UniProtKB:A0A1S2C101 (A0A1S2C101_PRIAR, Phosphoenolpyruvate carboxykinase (ATP), gene_symbol:
+  pckA, TREMBL, NCBITaxon:412384 Priestia aryabhattai, UP000543174); UniProtKB:A0A7W3RDZ1 (A0A7W3RDZ1_PRIAR,
+  Malate synthase G, gene_symbol: glcB, TREMBL, NCBITaxon:412384 Priestia aryabhattai, UP000543174); UniProtKB:A0A7W3NBV8
+  (A0A7W3NBV8_PRIAR, acetate--CoA ligase, gene_symbol: HNP21_003214, TREMBL, NCBITaxon:412384 Priestia
+  aryabhattai, UP000543174).'
+limitations:
+- 'Review is conducted in single-agent Goal Mode (independence: self_review) against working-tree bytes;
+  an independent subagent PR re-review is executed prior to merge.'
+notes:
+- 'Executed during Cycle 12 Stage 2 (causal_graphs) following Issue #975 review remediation for cmmmech:lizardite
+  (PR #974 follow-up to 20261109T163600Z-lizardite-cycle12-stage2-causal-graphs-review).'
+related_reviews: []

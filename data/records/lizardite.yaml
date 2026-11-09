@@ -8,7 +8,7 @@ sources:
   url: https://cnmnc.units.it/files/editor/IMA_Master_List_(2026-09).pdf
   accessed_on: '2026-10-11'
 - id: sheng_2026
-  title: Sheng, Zheng, Yang, Dong, He and Sheng (2026). Silicate minerals enhance the expression of genes related to mineral dissolution by Priestia aryabhattai strain C4-10. Applied and Environmental Microbiology 92(2):e02554-25. DOI 10.1128/aem.02554-25; Figure 2, Materials and Methods, and supplemental methods pp1-2.
+  title: Sheng, Zheng, Yang, Dong, He and Sheng (2026). Silicate minerals enhance the expression of genes related to mineral dissolution by Priestia aryabhattai strain C4-10. Applied and Environmental Microbiology 92(2):e02554-25. DOI 10.1128/aem.02554-25; Figures 2, 5, and 7, Tables 1-2, Fig. S7, Materials and Methods, and supplemental methods pp1-2.
   url: https://doi.org/10.1128/aem.02554-25
   accessed_on: '2026-10-11'
 - id: ncbi_priestia
@@ -67,11 +67,13 @@ mechanisms:
     - id: GO:0006099
       label: tricarboxylic acid cycle
     functional_role: Citrate synthase (HNP21_003255) catalyzing condensation of acetyl-CoA and oxaloacetate to citrate in bacterial organic-acid metabolism.
-    annotation_note: Grounded to Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) citrate synthase (HNP21_003255, UniProtKB:A0A7W3RFI1), representing the Table 1 Acid-metabolism gene citA (Gene03098) identified in the separate 8-h biotite transcriptome of Priestia aryabhattai C4-10 (GCA_039631325.1) as a representative acidogenic enzyme for C4-10 lizardite dissolution in Sheng et al. (2026).
+    annotation_note: Grounded to Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) citrate synthase (HNP21_003255, UniProtKB:A0A7W3RFI1), representing the Table 1 Acid-metabolism gene citA (Gene03098) identified in the separate 8-h biotite transcriptome of Priestia aryabhattai C4-10 (GCA_039631325.1) as a representative acidogenic enzyme for C4-10 lizardite dissolution in Sheng et al. (2026). While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to
+      43.8-fold at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at R^2 = 0.807-0.978, P = 0.001-0.038 in Fig. 7 and Fig. S7A).
     evidence:
     - source_ref: sheng_2026
       supports: partial
-      explanation: Sheng et al. (2026) showed that Priestia aryabhattai C4-10 acidified MgSO4-free BHm (Figure 2B) and increased Mg (1.80-2.60 mM) and Si (0.82-1.27 mM) from 0.6 g lizardite over 8-48 h (Figure 2A), while Table 1 identified 169-fold citA (Gene03098) upregulation in the separate 8-h biotite transcriptome arm; the biotite transcriptome is not pooled as a direct lizardite expression measurement and gene necessity was not tested.
+      explanation: Sheng et al. (2026) showed that Priestia aryabhattai C4-10 acidified MgSO4-free BHm (Figure 2B) and increased Mg (1.80-2.60 mM) and Si (0.82-1.27 mM) from 0.6 g lizardite over 8-48 h (Figure 2A), while Table 1 identified 169-fold citA (Gene03098) upregulation in the separate 8-h biotite transcriptome arm; the biotite transcriptome is not pooled as a direct lizardite expression measurement and gene necessity was not tested. While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation
+        at 6 h and 3.3- to 43.8-fold at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at R^2 = 0.807-0.978, P = 0.001-0.038 in Fig. 7 and Fig. S7A).
     - source_ref: uniprot_priestia_aryabhattai_acids
       supports: partial
       explanation: UniProtKB:A0A7W3RFI1 (A0A7W3RFI1_PRIAR) in Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) encodes Citrate synthase (HNP21_003255).
@@ -106,11 +108,13 @@ mechanisms:
     - id: GO:0006094
       label: gluconeogenesis
     functional_role: ATP-dependent phosphoenolpyruvate carboxykinase PckA (EC 4.1.1.49; pckA) participating in organic-acid and carbohydrate metabolism.
-    annotation_note: Grounded to Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) phosphoenolpyruvate carboxykinase (ATP) (pckA, UniProtKB:A0A1S2C101), representing Table 1 Acid-metabolism gene pckA (Gene04826) from the separate biotite transcriptome of strain C4-10 in Sheng et al. (2026).
+    annotation_note: Grounded to Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) phosphoenolpyruvate carboxykinase (ATP) (pckA, UniProtKB:A0A1S2C101), representing Table 1 Acid-metabolism gene pckA (Gene04826) from the separate biotite transcriptome of strain C4-10 in Sheng et al. (2026). While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to 43.8-fold at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved
+      Mg at R^2 = 0.807-0.978, P = 0.001-0.038 in Fig. 7 and Fig. S7A).
     evidence:
     - source_ref: sheng_2026
       supports: partial
-      explanation: Sheng et al. (2026) demonstrated culture acidification and Mg/Si release during C4-10 lizardite dissolution (Figure 2A-B) and identified pckA (Gene04826, 46.49-fold) in the separate biotite transcriptome arm (Table 1), without lizardite-specific RNA-seq or gene-knockout validation.
+      explanation: Sheng et al. (2026) demonstrated culture acidification and Mg/Si release during C4-10 lizardite dissolution (Figure 2A-B) and identified pckA (Gene04826, 46.49-fold) in the separate biotite transcriptome arm (Table 1), without lizardite-specific RNA-seq or gene-knockout validation. While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to 43.8-fold at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at R^2
+        = 0.807-0.978, P = 0.001-0.038 in Fig. 7 and Fig. S7A).
     - source_ref: uniprot_priestia_aryabhattai_acids
       supports: partial
       explanation: UniProtKB:A0A1S2C101 (A0A1S2C101_PRIAR) in Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) encodes Phosphoenolpyruvate carboxykinase (ATP) (pckA; EC 4.1.1.49).
@@ -154,11 +158,13 @@ mechanisms:
     - id: GO:0006097
       label: glyoxylate cycle
     functional_role: Malate synthase G (EC 2.3.3.9; glcB) catalyzing L-malate synthesis from glyoxylate and acetyl-CoA.
-    annotation_note: Grounded to Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) malate synthase G (glcB, UniProtKB:A0A7W3RDZ1), representing Table 1 Acid-metabolism gene glcB (Gene02911) from the separate biotite transcriptome of strain C4-10 in Sheng et al. (2026).
+    annotation_note: Grounded to Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) malate synthase G (glcB, UniProtKB:A0A7W3RDZ1), representing Table 1 Acid-metabolism gene glcB (Gene02911) from the separate biotite transcriptome of strain C4-10 in Sheng et al. (2026). While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to 43.8-fold at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at R^2 = 0.807-0.978,
+      P = 0.001-0.038 in Fig. 7 and Fig. S7A).
     evidence:
     - source_ref: sheng_2026
       supports: partial
-      explanation: Sheng et al. (2026) reported culture acidification during C4-10 lizardite dissolution (Figure 2B) and glcB (Gene02911, 11.98-fold) upregulation in the separate biotite transcriptome arm (Table 1), without lizardite-specific transcriptomics or knockout tests.
+      explanation: Sheng et al. (2026) reported culture acidification during C4-10 lizardite dissolution (Figure 2B) and glcB (Gene02911, 11.98-fold) upregulation in the separate biotite transcriptome arm (Table 1), without lizardite-specific transcriptomics or knockout tests. While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to 43.8-fold at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at R^2 = 0.807-0.978, P = 0.001-0.038
+        in Fig. 7 and Fig. S7A).
     - source_ref: uniprot_priestia_aryabhattai_acids
       supports: partial
       explanation: UniProtKB:A0A7W3RDZ1 (A0A7W3RDZ1_PRIAR) in Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) encodes Malate synthase G (glcB; EC 2.3.3.9).
@@ -192,11 +198,13 @@ mechanisms:
     - id: GO:0006085
       label: acetyl-CoA biosynthetic process
     functional_role: Acetate--CoA ligase (EC 6.2.1.1; HNP21_003214) participating in bacterial acetate/organic-acid metabolism.
-    annotation_note: Grounded to Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) acetate--CoA ligase (HNP21_003214, UniProtKB:A0A7W3NBV8), representing Table 1 Acid-metabolism gene acsA_2 (Gene04776) from the separate biotite transcriptome of strain C4-10 in Sheng et al. (2026).
+    annotation_note: Grounded to Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) acetate--CoA ligase (HNP21_003214, UniProtKB:A0A7W3NBV8), representing Table 1 Acid-metabolism gene acsA_2 (Gene04776) from the separate biotite transcriptome of strain C4-10 in Sheng et al. (2026). While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to 43.8-fold at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at R^2
+      = 0.807-0.978, P = 0.001-0.038 in Fig. 7 and Fig. S7A).
     evidence:
     - source_ref: sheng_2026
       supports: partial
-      explanation: Sheng et al. (2026) reported culture acidification during C4-10 lizardite dissolution (Figure 2B) and acsA_2 (Gene04776, 6.14-fold) upregulation in the separate biotite transcriptome arm (Table 1), without lizardite-specific transcriptomics or knockout tests.
+      explanation: Sheng et al. (2026) reported culture acidification during C4-10 lizardite dissolution (Figure 2B) and acsA_2 (Gene04776, 6.14-fold) upregulation in the separate biotite transcriptome arm (Table 1), without lizardite-specific transcriptomics or knockout tests. While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to 43.8-fold at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at R^2 = 0.807-0.978, P = 0.001-0.038
+        in Fig. 7 and Fig. S7A).
     - source_ref: uniprot_priestia_aryabhattai_acids
       supports: partial
       explanation: UniProtKB:A0A7W3NBV8 (A0A7W3NBV8_PRIAR) in Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) encodes acetate--CoA ligase (HNP21_003214; EC 6.2.1.1).
@@ -210,7 +218,8 @@ mechanisms:
 causal_graphs:
 - id: c4_10_lizardite_dissolution_graph
   name: Priestia aryabhattai C4-10 culture acidification, surface colonization, and lizardite Mg/Si mobilization
-  description: Causal pathway linking representative Priestia aryabhattai acid-metabolism enzymes (Citrate synthase UniProtKB:A0A7W3RFI1, Phosphoenolpyruvate carboxykinase PckA UniProtKB:A0A1S2C101, Malate synthase G GlcB UniProtKB:A0A7W3RDZ1, and acetate--CoA ligase UniProtKB:A0A7W3NBV8, identified in the separate Table 1 biotite transcriptome of strain C4-10) to culture acidification (Figure 2B dip and partial rebound relative to pH ~7.6 uninoculated lizardite controls), EPS/biofilm formation (3.52-5.15 g/L EPS, Figure 2D-E), and increased ICP-OES Mg (1.80-2.60 mM) and Si (0.82-1.27 mM) concentrations from 8 to 48 h in MgSO4-free BHm supplemented with 0.6 g lizardite (Sheng et al., 2026, Figure 2A), without pooling the separate biotite transcriptome as a direct lizardite expression measurement or claiming gene necessity.
+  description: Causal pathway linking representative Priestia aryabhattai acid-metabolism enzymes (Citrate synthase UniProtKB:A0A7W3RFI1, Phosphoenolpyruvate carboxykinase PckA UniProtKB:A0A1S2C101, Malate synthase G GlcB UniProtKB:A0A7W3RDZ1, and acetate--CoA ligase UniProtKB:A0A7W3NBV8, identified in the separate Table 1 biotite transcriptome of strain C4-10) to culture acidification (Figure 2B dip and partial rebound relative to pH ~7.6 uninoculated lizardite controls), EPS/biofilm formation (3.52-5.15 g/L EPS, Figure 2D-E), and increased ICP-OES Mg (1.80-2.60 mM) and Si (0.82-1.27 mM) concentrations from 8 to 48 h in MgSO4-free BHm supplemented with 0.6 g lizardite (Sheng et al., 2026, Figure 2A), without pooling the separate biotite transcriptome as a direct lizardite expression measurement or claiming gene necessity. While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table
+    1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to 43.8-fold at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at R^2 = 0.807-0.978, P = 0.001-0.038 in Fig. 7 and Fig. S7A).
   scope: REPRESENTATIVE_EXAMPLE
   mechanism_ref: c4_10_lizardite_dissolution
   nodes:
@@ -218,7 +227,8 @@ causal_graphs:
     label: Priestia aryabhattai acid-metabolism enzymes (citA / HNP21_003255, pckA, glcB, acsA_2 / HNP21_003214)
     node_type: GENE_OR_PROTEIN
     gene_symbol: glcB
-    description: Priestia aryabhattai reference-proteome (UP000543174) Citrate synthase (UniProtKB:A0A7W3RFI1), Phosphoenolpyruvate carboxykinase (ATP) (pckA, UniProtKB:A0A1S2C101), Malate synthase G (glcB, UniProtKB:A0A7W3RDZ1), and acetate--CoA ligase (UniProtKB:A0A7W3NBV8) representing the Table 1 Acid-metabolism pathway identified in strain C4-10 (assayed transcriptomically in the separate 8-h biotite arm).
+    description: Priestia aryabhattai reference-proteome (UP000543174) Citrate synthase (UniProtKB:A0A7W3RFI1), Phosphoenolpyruvate carboxykinase (ATP) (pckA, UniProtKB:A0A1S2C101), Malate synthase G (glcB, UniProtKB:A0A7W3RDZ1), and acetate--CoA ligase (UniProtKB:A0A7W3NBV8) representing the Table 1 Acid-metabolism pathway identified in strain C4-10 (assayed transcriptomically in the separate 8-h biotite arm). While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to 43.8-fold
+      at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at R^2 = 0.807-0.978, P = 0.001-0.038 in Fig. 7 and Fig. S7A).
     protein_grounding_status: GROUNDED
     protein_examples:
     - uniprot_accession: UniProtKB:A0A7W3RFI1
@@ -254,11 +264,13 @@ causal_graphs:
       - id: GO:0006099
         label: tricarboxylic acid cycle
       functional_role: Citrate synthase (HNP21_003255) catalyzing condensation of acetyl-CoA and oxaloacetate to citrate in bacterial organic-acid metabolism.
-      annotation_note: Grounded to Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) citrate synthase (HNP21_003255, UniProtKB:A0A7W3RFI1), representing the Table 1 Acid-metabolism gene citA (Gene03098) identified in the separate 8-h biotite transcriptome of Priestia aryabhattai C4-10 (GCA_039631325.1) as a representative acidogenic enzyme for C4-10 lizardite dissolution in Sheng et al. (2026).
+      annotation_note: Grounded to Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) citrate synthase (HNP21_003255, UniProtKB:A0A7W3RFI1), representing the Table 1 Acid-metabolism gene citA (Gene03098) identified in the separate 8-h biotite transcriptome of Priestia aryabhattai C4-10 (GCA_039631325.1) as a representative acidogenic enzyme for C4-10 lizardite dissolution in Sheng et al. (2026). While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to
+        43.8-fold at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at R^2 = 0.807-0.978, P = 0.001-0.038 in Fig. 7 and Fig. S7A).
       evidence:
       - source_ref: sheng_2026
         supports: partial
-        explanation: Sheng et al. (2026) showed that Priestia aryabhattai C4-10 acidified MgSO4-free BHm (Figure 2B) and increased Mg (1.80-2.60 mM) and Si (0.82-1.27 mM) from 0.6 g lizardite over 8-48 h (Figure 2A), while Table 1 identified 169-fold citA (Gene03098) upregulation in the separate 8-h biotite transcriptome arm; the biotite transcriptome is not pooled as a direct lizardite expression measurement and gene necessity was not tested.
+        explanation: Sheng et al. (2026) showed that Priestia aryabhattai C4-10 acidified MgSO4-free BHm (Figure 2B) and increased Mg (1.80-2.60 mM) and Si (0.82-1.27 mM) from 0.6 g lizardite over 8-48 h (Figure 2A), while Table 1 identified 169-fold citA (Gene03098) upregulation in the separate 8-h biotite transcriptome arm; the biotite transcriptome is not pooled as a direct lizardite expression measurement and gene necessity was not tested. While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation
+          at 6 h and 3.3- to 43.8-fold at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at R^2 = 0.807-0.978, P = 0.001-0.038 in Fig. 7 and Fig. S7A).
       - source_ref: uniprot_priestia_aryabhattai_acids
         supports: partial
         explanation: UniProtKB:A0A7W3RFI1 (A0A7W3RFI1_PRIAR) in Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) encodes Citrate synthase (HNP21_003255).
@@ -293,11 +305,13 @@ causal_graphs:
       - id: GO:0006094
         label: gluconeogenesis
       functional_role: ATP-dependent phosphoenolpyruvate carboxykinase PckA (EC 4.1.1.49; pckA) participating in organic-acid and carbohydrate metabolism.
-      annotation_note: Grounded to Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) phosphoenolpyruvate carboxykinase (ATP) (pckA, UniProtKB:A0A1S2C101), representing Table 1 Acid-metabolism gene pckA (Gene04826) from the separate biotite transcriptome of strain C4-10 in Sheng et al. (2026).
+      annotation_note: Grounded to Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) phosphoenolpyruvate carboxykinase (ATP) (pckA, UniProtKB:A0A1S2C101), representing Table 1 Acid-metabolism gene pckA (Gene04826) from the separate biotite transcriptome of strain C4-10 in Sheng et al. (2026). While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to 43.8-fold at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved
+        Mg at R^2 = 0.807-0.978, P = 0.001-0.038 in Fig. 7 and Fig. S7A).
       evidence:
       - source_ref: sheng_2026
         supports: partial
-        explanation: Sheng et al. (2026) demonstrated culture acidification and Mg/Si release during C4-10 lizardite dissolution (Figure 2A-B) and identified pckA (Gene04826, 46.49-fold) in the separate biotite transcriptome arm (Table 1), without lizardite-specific RNA-seq or gene-knockout validation.
+        explanation: Sheng et al. (2026) demonstrated culture acidification and Mg/Si release during C4-10 lizardite dissolution (Figure 2A-B) and identified pckA (Gene04826, 46.49-fold) in the separate biotite transcriptome arm (Table 1), without lizardite-specific RNA-seq or gene-knockout validation. While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to 43.8-fold at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at
+          R^2 = 0.807-0.978, P = 0.001-0.038 in Fig. 7 and Fig. S7A).
       - source_ref: uniprot_priestia_aryabhattai_acids
         supports: partial
         explanation: UniProtKB:A0A1S2C101 (A0A1S2C101_PRIAR) in Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) encodes Phosphoenolpyruvate carboxykinase (ATP) (pckA; EC 4.1.1.49).
@@ -341,11 +355,13 @@ causal_graphs:
       - id: GO:0006097
         label: glyoxylate cycle
       functional_role: Malate synthase G (EC 2.3.3.9; glcB) catalyzing L-malate synthesis from glyoxylate and acetyl-CoA.
-      annotation_note: Grounded to Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) malate synthase G (glcB, UniProtKB:A0A7W3RDZ1), representing Table 1 Acid-metabolism gene glcB (Gene02911) from the separate biotite transcriptome of strain C4-10 in Sheng et al. (2026).
+      annotation_note: Grounded to Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) malate synthase G (glcB, UniProtKB:A0A7W3RDZ1), representing Table 1 Acid-metabolism gene glcB (Gene02911) from the separate biotite transcriptome of strain C4-10 in Sheng et al. (2026). While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to 43.8-fold at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at R^2 = 0.807-0.978,
+        P = 0.001-0.038 in Fig. 7 and Fig. S7A).
       evidence:
       - source_ref: sheng_2026
         supports: partial
-        explanation: Sheng et al. (2026) reported culture acidification during C4-10 lizardite dissolution (Figure 2B) and glcB (Gene02911, 11.98-fold) upregulation in the separate biotite transcriptome arm (Table 1), without lizardite-specific transcriptomics or knockout tests.
+        explanation: Sheng et al. (2026) reported culture acidification during C4-10 lizardite dissolution (Figure 2B) and glcB (Gene02911, 11.98-fold) upregulation in the separate biotite transcriptome arm (Table 1), without lizardite-specific transcriptomics or knockout tests. While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to 43.8-fold at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at R^2 = 0.807-0.978, P = 0.001-0.038
+          in Fig. 7 and Fig. S7A).
       - source_ref: uniprot_priestia_aryabhattai_acids
         supports: partial
         explanation: UniProtKB:A0A7W3RDZ1 (A0A7W3RDZ1_PRIAR) in Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) encodes Malate synthase G (glcB; EC 2.3.3.9).
@@ -379,11 +395,13 @@ causal_graphs:
       - id: GO:0006085
         label: acetyl-CoA biosynthetic process
       functional_role: Acetate--CoA ligase (EC 6.2.1.1; HNP21_003214) participating in bacterial acetate/organic-acid metabolism.
-      annotation_note: Grounded to Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) acetate--CoA ligase (HNP21_003214, UniProtKB:A0A7W3NBV8), representing Table 1 Acid-metabolism gene acsA_2 (Gene04776) from the separate biotite transcriptome of strain C4-10 in Sheng et al. (2026).
+      annotation_note: Grounded to Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) acetate--CoA ligase (HNP21_003214, UniProtKB:A0A7W3NBV8), representing Table 1 Acid-metabolism gene acsA_2 (Gene04776) from the separate biotite transcriptome of strain C4-10 in Sheng et al. (2026). While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to 43.8-fold at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at
+        R^2 = 0.807-0.978, P = 0.001-0.038 in Fig. 7 and Fig. S7A).
       evidence:
       - source_ref: sheng_2026
         supports: partial
-        explanation: Sheng et al. (2026) reported culture acidification during C4-10 lizardite dissolution (Figure 2B) and acsA_2 (Gene04776, 6.14-fold) upregulation in the separate biotite transcriptome arm (Table 1), without lizardite-specific transcriptomics or knockout tests.
+        explanation: Sheng et al. (2026) reported culture acidification during C4-10 lizardite dissolution (Figure 2B) and acsA_2 (Gene04776, 6.14-fold) upregulation in the separate biotite transcriptome arm (Table 1), without lizardite-specific transcriptomics or knockout tests. While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to 43.8-fold at 8 h with vs without lizardite in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at R^2 = 0.807-0.978, P =
+          0.001-0.038 in Fig. 7 and Fig. S7A).
       - source_ref: uniprot_priestia_aryabhattai_acids
         supports: partial
         explanation: UniProtKB:A0A7W3NBV8 (A0A7W3NBV8_PRIAR) in Priestia aryabhattai reference proteome UP000543174 (NCBITaxon:412384) encodes acetate--CoA ligase (HNP21_003214; EC 6.2.1.1).
@@ -411,7 +429,8 @@ causal_graphs:
     evidence:
     - source_ref: sheng_2026
       supports: partial
-      explanation: Figure 2B and Table 1 of Sheng et al. (2026) document culture acidification in C4-10 lizardite flasks and acid-metabolism gene upregulation in the separate 8-h biotite transcriptome arm; support is partial because the transcriptome was measured on biotite (0.5 mL inoculum) rather than lizardite (1.5 mL inoculum) and no gene-knockout tests were performed.
+      explanation: Figure 2B and Table 1 of Sheng et al. (2026) document culture acidification in C4-10 lizardite flasks and acid-metabolism gene upregulation in the separate 8-h biotite transcriptome arm; support is partial because the transcriptome was measured on biotite (0.5 mL inoculum) rather than lizardite (1.5 mL inoculum) and no gene-knockout tests were performed. While whole-transcriptome RNA-seq in Table 1 (PRJNA1312293, 0.5-mL inoculum) was performed on biotite-grown cells, Sheng et al. (2026) directly assayed 7 selected Table 1 DEGs—including Acid-metabolism genes lutA_2 (Gene02671 / ABDD91_RS13400, 9.96-fold in Table 1) and actP (Gene00930 / ABDD91_RS04670, 3.73-fold in Table 1) plus glgC (ABDD91_RS24435), gtaB_3 (ABDD91_RS07585), 02676 (ABDD91_RS13425), levE (ABDD91_RS07970), and glnQ (ABDD91_RS01610)—by RT-qPCR (Table 2, 1.5-mL inoculum) during lizardite dissolution (4-8 h, Fig. 5; 1.7- to 23.1-fold upregulation at 6 h and 3.3- to 43.8-fold at 8 h with vs without lizardite
+        in Fig. S7B; correlating positively with 1.34-1.90 mM dissolved Mg at R^2 = 0.807-0.978, P = 0.001-0.038 in Fig. 7 and Fig. S7A).
   - source: c4_10_lizardite_medium_acidification_and_biofilm
     target: lizardite_feed_75_150_um
     predicate: solubilizes
@@ -439,6 +458,11 @@ curation_history:
   curator: marcin
   action: edit
   summary: Add c4_10_lizardite_dissolution_graph causal graph and ground c4_10_lizardite_dissolution to Priestia aryabhattai reference-proteome acid-metabolism enzymes (UniProtKB:A0A7W3RFI1, UniProtKB:A0A1S2C101, UniProtKB:A0A7W3RDZ1, UniProtKB:A0A7W3NBV8)
+- timestamp: '2026-11-09T17:21:14Z'
+  curator: marcin
+  action: edit
+  summary: Add lizardite RT-qPCR target-gene expression and dissolved-Mg correlation scope (Figures 5, 7, S7, Table 2) from Sheng et al. (2026) to lizardite.yaml (#975)
 history_refs:
 - history/records/lizardite/2026-10-11T102453Z-codex-c8e63a.yaml
 - history/records/lizardite/2026-11-09T162856Z-marcin-ac480e.yaml
+- history/records/lizardite/2026-11-09T172114Z-marcin-decca2.yaml
