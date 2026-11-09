@@ -1,0 +1,188 @@
+# Cycle 12 Stage 3 protein_examples scientific review of cmmmech:biotite (Biotite mica series)
+
+- Review: 20261109T183924Z-biotite-cycle12-stage3-protein-examples-review
+- Repository: CultureBotAI/CMMMech
+- Started UTC: 2026-11-09T18:38:54Z
+- Finished UTC: 2026-11-09T18:39:24Z
+- Reviewer: marcin (antigravity claude-opus-4-6) (self_review)
+- Completion: completed
+- Verdict: pass_with_limitations
+- Scientific review: true
+
+## Summary
+
+Verified Cycle 12 Stage 3 protein_examples enrichment for cmmmech:biotite (Biotite mica series): added UniProtKB:A0A0J6SZC4 (A0A0J6SZC4_PRIAR, Malate dehydrogenase, mdh, ORF HNP21_003257, EC:1.1.1.37, Priestia aryabhattai UP000543174) to both mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples with exact UniProt REST API metadata, qualified supports: partial evidence on sheng_2026 and uniprot_priestia_aryabhattai_acids, and canonical history sidecar history/records/biotite/2026-11-09T183630Z-marcin-ba332f.yaml.
+
+## Scope And Provenance
+
+Single-record scientific and structural review of data/records/biotite.yaml after Cycle 12 Stage 3 protein_examples enrichment.
+
+Selection: Modified record data/records/biotite.yaml in Cycle 12 Stage 3.
+Coverage: full; 1 reviewed / 1 in the declared population.
+Source: git_commit at Git base 58ca607539fede2288c3bc368978e6c8cd086c5a.
+Working-tree hashes do not imply those bytes were committed.
+
+| Target | Path / selector | Kind | Label |
+| --- | --- | --- | --- |
+| cmmmech:biotite | data/records/biotite.yaml | maintained | Biotite mica series |
+
+## Validation
+
+| Check | Status | Required | Targets | Result |
+| --- | --- | --- | --- | --- |
+| CMMMech schema and reference validation | passed | True | cmmmech:biotite | uv run cmmmech validate --require-records passed (703 records, 0 failed). |
+| CMMMech history sidecar validation | passed | True | cmmmech:biotite | uv run cmmmech validate-history --base main passed with history/records/biotite/2026-11-09T183630Z-marcin-ba332f.yaml. |
+
+## Scientific And Domain Assessments
+
+### UniProtKB protein_examples grounding and causal-graph node parity
+
+grounding: supported. Targets: cmmmech:biotite.
+
+Verified UniProtKB:A0A0J6SZC4 (A0A0J6SZC4_PRIAR, Malate dehydrogenase, mdh, ORF HNP21_003257, EC:1.1.1.37, Priestia aryabhattai UP000543174) in both mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples with identical metadata and supports: partial qualification.
+
+## Findings
+
+No findings recorded within this review's declared scope.
+
+## Recommended Actions And Acceptance Checks
+
+## Category Boundaries
+
+
+## Evidence
+
+| Evidence | Reference / locator | Support | Observation |
+| --- | --- | --- | --- |
+| ev_record | data/records/biotite.yaml | supports | Inspected data/records/biotite.yaml (sha256 09a395ca6073eaf0e051162e34acb8c310841ed92167b456445cd47ff224917e) and history sidecar history/records/biotite/2026-11-09T183630Z-marcin-ba332f.yaml. |
+| ev_uniprot | sources[uniprot_priestia_aryabhattai_acids] and sources[sheng_2026] in data/records/biotite.yaml | supports | Live-queried UniProt REST API for UniProtKB:A0A0J6SZC4 (A0A0J6SZC4_PRIAR, Malate dehydrogenase, mdh, ORF HNP21_003257, EC:1.1.1.37, Priestia aryabhattai UP000543174) and verified accession, entry_name, entry_status, target_organism, reference_proteome_id, EC/InterPro/Pfam/NCBIfam/GO cross-references, and partial evidence qualification against sheng_2026. |
+
+## Limits And Additional Notes
+
+- Primary experimental source (sheng_2026) does not perform single-gene knockout or purified-enzyme assays for the grounded protein example; supports: partial and REPRESENTATIVE_EXAMPLE scope are explicitly preserved.
+
+## Complete Structured Record
+
+The sibling review.yaml is authoritative.
+
+```yaml
+schema_version: 1.0.0
+review_id: 20261109T183924Z-biotite-cycle12-stage3-protein-examples-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 12 Stage 3 protein_examples scientific review of cmmmech:biotite (Biotite
+  mica series)
+started_at: '2026-11-09T18:38:54Z'
+finished_at: '2026-11-09T18:39:24Z'
+reviewer:
+  identity: marcin (antigravity claude-opus-4-6)
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Post-curation structured review of Cycle 12 Stage 3 protein_examples
+    enrichment prior to independent subagent adversarial review.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'Verified Cycle 12 Stage 3 protein_examples enrichment for cmmmech:biotite
+  (Biotite mica series): added UniProtKB:A0A0J6SZC4 (A0A0J6SZC4_PRIAR, Malate dehydrogenase,
+  mdh, ORF HNP21_003257, EC:1.1.1.37, Priestia aryabhattai UP000543174) to both mechanisms[].protein_examples
+  and causal_graphs[].nodes[].protein_examples with exact UniProt REST API metadata,
+  qualified supports: partial evidence on sheng_2026 and uniprot_priestia_aryabhattai_acids,
+  and canonical history sidecar history/records/biotite/2026-11-09T183630Z-marcin-ba332f.yaml.'
+source:
+  git_revision: 58ca607539fede2288c3bc368978e6c8cd086c5a
+  state: git_commit
+  inputs:
+  - path: data/records/biotite.yaml
+    sha256: 09a395ca6073eaf0e051162e34acb8c310841ed92167b456445cd47ff224917e
+    role: target
+  - path: history/records/biotite/2026-11-09T183630Z-marcin-ba332f.yaml
+    sha256: 8d56f5b873953cf9e8eb61fad2725d49fb98dec84cb116c570dbeb9785098dfc
+    role: context
+scope:
+  description: Single-record scientific and structural review of data/records/biotite.yaml
+    after Cycle 12 Stage 3 protein_examples enrichment.
+  selection: Modified record data/records/biotite.yaml in Cycle 12 Stage 3.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:biotite
+targets:
+- target_id: cmmmech:biotite
+  path: data/records/biotite.yaml
+  label: Biotite mica series
+  record_class: CriticalMineralRecord
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/biotite.yaml
+    role: record
+checks:
+- check_id: cmmmech_validate
+  name: CMMMech schema and reference validation
+  status: passed
+  required: true
+  summary: uv run cmmmech validate --require-records passed (703 records, 0 failed).
+  target_ids:
+  - cmmmech:biotite
+  command: uv run cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev_record
+  - ev_uniprot
+- check_id: cmmmech_validate_history
+  name: CMMMech history sidecar validation
+  status: passed
+  required: true
+  summary: uv run cmmmech validate-history --base main passed with history/records/biotite/2026-11-09T183630Z-marcin-ba332f.yaml.
+  target_ids:
+  - cmmmech:biotite
+  command: uv run cmmmech validate-history --base main
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev_record
+evidence:
+- evidence_id: ev_record
+  kind: record_content
+  reference: data/records/biotite.yaml
+  accessed_at: '2026-11-09T18:39:24Z'
+  support: supports
+  summary: Inspected data/records/biotite.yaml (sha256 09a395ca6073eaf0e051162e34acb8c310841ed92167b456445cd47ff224917e)
+    and history sidecar history/records/biotite/2026-11-09T183630Z-marcin-ba332f.yaml.
+  snapshot_sha256: 09a395ca6073eaf0e051162e34acb8c310841ed92167b456445cd47ff224917e
+- evidence_id: ev_uniprot
+  kind: database
+  reference: sources[uniprot_priestia_aryabhattai_acids] and sources[sheng_2026] in
+    data/records/biotite.yaml
+  accessed_at: '2026-11-09T18:39:24Z'
+  support: supports
+  summary: Live-queried UniProt REST API for UniProtKB:A0A0J6SZC4 (A0A0J6SZC4_PRIAR,
+    Malate dehydrogenase, mdh, ORF HNP21_003257, EC:1.1.1.37, Priestia aryabhattai
+    UP000543174) and verified accession, entry_name, entry_status, target_organism,
+    reference_proteome_id, EC/InterPro/Pfam/NCBIfam/GO cross-references, and partial
+    evidence qualification against sheng_2026.
+assessments:
+- assessment_id: assess_grounding
+  area: grounding
+  topic: UniProtKB protein_examples grounding and causal-graph node parity
+  outcome: supported
+  summary: 'Verified UniProtKB:A0A0J6SZC4 (A0A0J6SZC4_PRIAR, Malate dehydrogenase,
+    mdh, ORF HNP21_003257, EC:1.1.1.37, Priestia aryabhattai UP000543174) in both
+    mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples with
+    identical metadata and supports: partial qualification.'
+  target_ids:
+  - cmmmech:biotite
+  evidence_ids:
+  - ev_record
+  - ev_uniprot
+findings: []
+actions: []
+limitations:
+- 'Primary experimental source (sheng_2026) does not perform single-gene knockout
+  or purified-enzyme assays for the grounded protein example; supports: partial and
+  REPRESENTATIVE_EXAMPLE scope are explicitly preserved.'
+```

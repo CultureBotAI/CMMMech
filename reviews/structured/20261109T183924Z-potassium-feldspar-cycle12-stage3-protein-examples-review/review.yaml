@@ -1,0 +1,120 @@
+schema_version: 1.0.0
+review_id: 20261109T183924Z-potassium-feldspar-cycle12-stage3-protein-examples-review
+kind: record
+repository: CultureBotAI/CMMMech
+title: Cycle 12 Stage 3 protein_examples scientific review of cmmmech:potassium-feldspar
+  (Potassium feldspar family)
+started_at: '2026-11-09T18:38:54Z'
+finished_at: '2026-11-09T18:39:24Z'
+reviewer:
+  identity: marcin (antigravity claude-opus-4-6)
+  kind: agent
+  model: claude-opus-4-6
+  independence: self_review
+  independence_basis: Post-curation structured review of Cycle 12 Stage 3 protein_examples
+    enrichment prior to independent subagent adversarial review.
+skill: .claude/skills/review-record/SKILL.md
+completion: completed
+verdict: pass_with_limitations
+scientific_review: true
+summary: 'Verified Cycle 12 Stage 3 protein_examples enrichment for cmmmech:potassium-feldspar
+  (Potassium feldspar family): added UniProtKB:A0A0B6ANB3 (A0A0B6ANB3_PRIM2, Stage
+  0 sporulation protein A, spo0A, ORF BG04_1367, Priestia megaterium NBRC 15308 =
+  ATCC 14581 UP000031829) to both mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+  with exact UniProt REST API metadata, qualified supports: partial evidence on dong_2026
+  and uniprot_priestia_megaterium_mineral_genes, and canonical history sidecar history/records/potassium-feldspar/2026-11-09T183630Z-marcin-6fd903.yaml.'
+source:
+  git_revision: 58ca607539fede2288c3bc368978e6c8cd086c5a
+  state: git_commit
+  inputs:
+  - path: data/records/potassium-feldspar.yaml
+    sha256: 6c4dee768591f440937a17b938ac151682125db38e9214535a67c696af1fa9af
+    role: target
+  - path: history/records/potassium-feldspar/2026-11-09T183630Z-marcin-6fd903.yaml
+    sha256: bc767c132f1e8c89d897c73977e885267d01c2cc0731b7c6f31a11143557b9e7
+    role: context
+scope:
+  description: Single-record scientific and structural review of data/records/potassium-feldspar.yaml
+    after Cycle 12 Stage 3 protein_examples enrichment.
+  selection: Modified record data/records/potassium-feldspar.yaml in Cycle 12 Stage
+    3.
+  coverage: full
+  population_size: 1
+  reviewed_target_ids:
+  - cmmmech:potassium-feldspar
+targets:
+- target_id: cmmmech:potassium-feldspar
+  path: data/records/potassium-feldspar.yaml
+  label: Potassium feldspar family
+  record_class: CriticalMineralRecord
+  kind: maintained
+  owner_paths:
+  - repository: CultureBotAI/CMMMech
+    path: data/records/potassium-feldspar.yaml
+    role: record
+checks:
+- check_id: cmmmech_validate
+  name: CMMMech schema and reference validation
+  status: passed
+  required: true
+  summary: uv run cmmmech validate --require-records passed (703 records, 0 failed).
+  target_ids:
+  - cmmmech:potassium-feldspar
+  command: uv run cmmmech validate --require-records
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev_record
+  - ev_uniprot
+- check_id: cmmmech_validate_history
+  name: CMMMech history sidecar validation
+  status: passed
+  required: true
+  summary: uv run cmmmech validate-history --base main passed with history/records/potassium-feldspar/2026-11-09T183630Z-marcin-6fd903.yaml.
+  target_ids:
+  - cmmmech:potassium-feldspar
+  command: uv run cmmmech validate-history --base main
+  exit_code: 0
+  expected_exit_code: 0
+  evidence_ids:
+  - ev_record
+evidence:
+- evidence_id: ev_record
+  kind: record_content
+  reference: data/records/potassium-feldspar.yaml
+  accessed_at: '2026-11-09T18:39:24Z'
+  support: supports
+  summary: Inspected data/records/potassium-feldspar.yaml (sha256 6c4dee768591f440937a17b938ac151682125db38e9214535a67c696af1fa9af)
+    and history sidecar history/records/potassium-feldspar/2026-11-09T183630Z-marcin-6fd903.yaml.
+  snapshot_sha256: 6c4dee768591f440937a17b938ac151682125db38e9214535a67c696af1fa9af
+- evidence_id: ev_uniprot
+  kind: database
+  reference: sources[uniprot_priestia_megaterium_mineral_genes] and sources[dong_2026]
+    in data/records/potassium-feldspar.yaml
+  accessed_at: '2026-11-09T18:39:24Z'
+  support: supports
+  summary: Live-queried UniProt REST API for UniProtKB:A0A0B6ANB3 (A0A0B6ANB3_PRIM2,
+    Stage 0 sporulation protein A, spo0A, ORF BG04_1367, Priestia megaterium NBRC
+    15308 = ATCC 14581 UP000031829) and verified accession, entry_name, entry_status,
+    target_organism, reference_proteome_id, EC/InterPro/Pfam/NCBIfam/GO cross-references,
+    and partial evidence qualification against dong_2026.
+assessments:
+- assessment_id: assess_grounding
+  area: grounding
+  topic: UniProtKB protein_examples grounding and causal-graph node parity
+  outcome: supported
+  summary: 'Verified UniProtKB:A0A0B6ANB3 (A0A0B6ANB3_PRIM2, Stage 0 sporulation protein
+    A, spo0A, ORF BG04_1367, Priestia megaterium NBRC 15308 = ATCC 14581 UP000031829)
+    in both mechanisms[].protein_examples and causal_graphs[].nodes[].protein_examples
+    with identical metadata and supports: partial qualification.'
+  target_ids:
+  - cmmmech:potassium-feldspar
+  evidence_ids:
+  - ev_record
+  - ev_uniprot
+findings: []
+actions: []
+limitations:
+- 'Primary experimental source (dong_2026) does not perform single-gene knockout or
+  purified-enzyme assays for the grounded protein example; supports: partial and REPRESENTATIVE_EXAMPLE
+  scope are explicitly preserved.'
