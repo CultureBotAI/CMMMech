@@ -1,0 +1,32 @@
+history_version: 1
+target:
+  kind: record
+  slug: scandium
+  path: data/records/scandium.yaml
+session:
+  id: 2026-11-09T111134Z-marcin-689379
+  timestamp: '2026-11-09T11:11:34Z'
+  actors:
+  - name: marcin
+    type: ai_agent
+    model: claude-opus-4-6
+    agent_tool: antigravity
+events:
+- type: EDIT
+  outcome: changed
+  summary: Align Mex-LanM protein_examples and causal_graphs[0] in scandium with dong2024
+    synthetic 16-REE feed and pH 5.0 malonate elution (#969)
+  details: 'Updated mechanisms[0].protein_examples[0] and causal_graphs[0].nodes[0].protein_examples[0]
+    for UniProtKB:C5B164 (lanM / Mex-LanM) to supports: partial with synchronized prose specifying
+    selective Sc(III) retention from a synthetic pH 3.0 16-REE chloride mixture and stepwise
+    30 mM / 50 mM malonate elution at pH 5.0 (Figures 3C and 5E-F, Table S9/S10), and updated
+    causal_graphs[0].description, nodes[1..2], and edges[0..1] (with supports: partial on
+    edges[0]) under GRP-C11S5-003 (#969).'
+  sections:
+  - mechanisms
+  - causal_graphs
+  - curation_history
+  - history_refs
+links:
+  issues:
+  - https://github.com/CultureBotAI/CMMMech/issues/969

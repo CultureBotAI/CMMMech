@@ -210,7 +210,7 @@
         <a href="#mechanism-immobilized_lanmodulin_scandium_separation" class="badge" style="text-decoration: none;">Mechanism: <code>immobilized_lanmodulin_scandium_separation</code></a>
       </div>
     </div>
-    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking column-immobilized Methylorubrum extorquens AM1 lanmodulin (Mex-LanM, UniProtKB:C5B164) to selective coordination of Sc(III) from mixed leachates and pH-controlled desorption.</p>
+    <p style="margin: .5rem 0; font-size: .94rem;">Causal pathway linking agarose-immobilized Methylorubrum extorquens AM1 lanmodulin (Mex-LanM, UniProtKB:C5B164) to selective column capture of Sc(III) from a synthetic pH 3.0 16-REE chloride feed and equimolar Sc/La mixtures followed by stepwise pH 5.0 malonate elution.</p>
 
     <strong style="font-size: .86rem; color: var(--muted); text-transform: uppercase; letter-spacing: .05em;">Causal Nodes (3):</strong>
     <table style="margin: .4rem 0 .8rem; font-size: .88rem;">
@@ -245,7 +245,7 @@
         </tr>
         <tr id="causal-node-immobilized_mex_lanm_scandium_separation_graph-mixed_scandium_feed">
           <td>
-            <strong>Mixed Sc(III)-bearing leachate feed</strong><br>
+            <strong>Synthetic pH 3.0 16-REE chloride feed containing Sc(III)</strong><br>
             <code style="font-size: .78rem; color: var(--muted);">mixed_scandium_feed</code>
           </td>
           <td>
@@ -253,7 +253,7 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Acidic feed solution containing Sc(III) and competing non-target cations.</div>          </td>
+<div>Synthetic pH 3.0 chloride-salt solution containing Sc(III) (23.8 +/- 1.1 uM Sc within a 16-REE mixture of 0.4 mM nominal / 0.2430 mM sum total REE in supplement Table S10, labeled Table S9 in the Figure 5 caption, plus equimolar Sc/La column feed in Figure 3C) resembling selected leachate compositions.</div>          </td>
         </tr>
         <tr id="causal-node-immobilized_mex_lanm_scandium_separation_graph-purified_scandium_eluate">
           <td>
@@ -265,7 +265,7 @@
             <br><span class="badge" style="font-size: .72rem; margin-top: .2rem;">NOT_APPLICABLE</span>
           </td>
           <td>
-<div>Resolved Sc(III) fraction recovered at &gt;99% yield and &gt;99% purity from mixed leachate feed (Figure 5) and separated early with 30 mM malonate (pH 5.0, ~94.5% Sc yield) ahead of La(III) (50 mM malonate, pH 5.0, ~98.9% La yield) in binary Sc/La column tests.</div>          </td>
+<div>Aqueous Sc(III) eluate fraction recovered at &gt;99% two-step yield and &gt;99 mol% purity among REEs from the synthetic 16-REE chloride feed using stepwise 30 mM and 50 mM malonate at pH 5.0 (Figure 5E-F) and desorbed early at 30 mM malonate (pH 5.0, ~94.5% Sc yield) ahead of La(III) (50 mM malonate, pH 5.0, ~98.9% La yield, Figure 3C).</div>          </td>
         </tr>
       </tbody>
     </table>
@@ -274,10 +274,10 @@
     <ul style="margin: .4rem 0 0; padding-left: 1.2rem; font-size: .88rem;">
       <li style="margin-bottom: .35rem;">
         <code>mex_lanm_protein</code> &rarr; <strong>high-affinity EF-hand coordination of Sc(III)</strong> (<code>binds</code>) &rarr; <code>mixed_scandium_feed</code>
-: Immobilized Mex-LanM selectively coordinates Sc(III) at low pH while rejecting base-metal interferents.[<a href="#source-dong2024"><code>dong2024</code></a>]      </li>
+: Column-immobilized Mex-LanM-GSGC coordinates Sc(III) from the synthetic pH 3.0 16-REE chloride feed loaded to 70% column capacity on a 0.9 mL agarose bed.[<a href="#source-dong2024"><code>dong2024</code></a>]      </li>
       <li style="margin-bottom: .35rem;">
-        <code>mixed_scandium_feed</code> &rarr; <strong>selective column capture and desorption of Sc(III) from multi-metal leachate and binary Sc/REE mixtures</strong> (<code>transforms_into</code>) &rarr; <code>purified_scandium_eluate</code>
-: Immobilized Mex-LanM column recovers Sc(III) at &gt;99% yield and &gt;99% purity from mixed multi-metal leachate feed (Figure 5) and selectively desorbs Sc(III) (~94.5% yield) with 30 mM malonate (pH 5.0) before La(III) (~98.9% yield with 50 mM malonate, pH 5.0) in equimolar Sc/La separation tests.[<a href="#source-dong2024"><code>dong2024</code></a>]      </li>
+        <code>mixed_scandium_feed</code> &rarr; <strong>selective column capture and stepwise pH 5.0 malonate desorption of Sc(III) from synthetic 16-REE chloride and binary Sc/La feeds</strong> (<code>transforms_into</code>) &rarr; <code>purified_scandium_eluate</code>
+: Immobilized Mex-LanM column recovers Sc(III) at &gt;99% two-step yield and &gt;99 mol% purity among REEs from the synthetic pH 3.0 16-REE chloride feed using stepwise 30 mM and 50 mM malonate at pH 5.0 (Figure 5E-F) and selectively desorbs Sc(III) (~94.5% yield at 30 mM malonate, pH 5.0) ahead of La(III) (~98.9% yield at 50 mM malonate, pH 5.0) in binary Sc/La column tests (Figure 3C).[<a href="#source-dong2024"><code>dong2024</code></a>]      </li>
     </ul>
   </div>
 </div>
@@ -355,6 +355,12 @@
         <td><span class="badge">edit</span></td>
         <td>Normalized top-level key ordering in scandium.yaml so sources precedes criticality per CANONICAL_RECORD_KEYS.</td>
       </tr>
+      <tr>
+        <td><code>2026-11-09T11:11:34Z</code></td>
+        <td>marcin</td>
+        <td><span class="badge">edit</span></td>
+        <td>Align Mex-LanM protein_examples and causal_graphs[0] in scandium with dong2024 synthetic 16-REE feed and pH 5.0 malonate elution (#969)</td>
+      </tr>
     </tbody>
   </table>
 </div>
@@ -364,7 +370,7 @@
 </p>
 </main>
 <footer>
-  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (698 materials · 609 mechanisms · latest curation 2026-11-09 · corpus digest <code>e533fe8d6d34</code>)</p>
+  <p><strong>CMMMech</strong> · Critical Materials and Minerals Mechanism Ontology · data: <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a> · code: <a href="https://github.com/CultureBotAI/CMMMech/blob/main/LICENSE-CODE">BSD-3-Clause</a> · <a href="../index.json" download>Download index.json</a> · <a href="../corpus_map.json" download>Download corpus_map.json</a> · <a href="https://github.com/CultureBotAI/CMMMech/blob/main/src/cmmmech/schema/cmmmech.yaml">LinkML schema</a> · generated by <code>scripts/render_pages.py</code> (698 materials · 609 mechanisms · latest curation 2026-11-09 · corpus digest <code>6a9b35ddc871</code>)</p>
   <p class="fam">
     <a href="https://culturebotai.github.io/CultureMech/">CultureMech</a> ·
     <a href="https://culturebotai.github.io/MediaIngredientMech/">MediaIngredientMech</a> ·
